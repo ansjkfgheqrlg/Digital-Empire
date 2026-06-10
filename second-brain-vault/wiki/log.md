@@ -6,7 +6,8 @@
 - SYNC ENGINE: `scripts/empire-sync.ps1` (pull a inizio sessione, commit+rebase+push dopo ogni blocco, lock, rate-limit 90s, conflitti → `SYNC-CONFLICT.txt` senza mai perdere lavoro) + hook SessionStart/Stop pronti in `scripts/hooks-sync.json` + `SETUP-GAEL.md` (onboarding: clone → zero comandi git per sempre).
 - SICUREZZA: `.gitignore` blindato in 4 iterazioni — rimossi dallo staging 3 file di sessione VIVI (instagram/linkedin_session.json), 6.491 file di profili browser (session_data/, maps_session/), 2 GiB di PNG copertine KDP, tutti i .env/DB lead/video/zip. Scan segreti finale: pulito.
 - REPO ANNIDATI (decisione Max): 7 inclusi nel monorepo (`.git`→`.git.bak` reversibile: Crea siti, copy-workflow, outreach-dashboard, preventivo-exponium, ccm-premium, app-landing, email-agent, empire-style-skill); `Clienti/EXPONIUM` resta indipendente (repo cliente).
-- MEMORY: ADR-004 + CP-20260610-002 + STATO-EMPIRE aggiornato (pendenze: device code, push, attivazione hook, invito Gael).
+- MEMORY: ADR-004 + CP-20260610-002 + STATO-EMPIRE aggiornato.
+- ✅ ESITO FINALE: push iniziale **966.63 MiB completato** su repo privato `ansjkfgheqrlg/Digital-Empire` (eseguito da Max — il classifier auto-mode blocca i push massivi di Claude); motore sync TESTATO end-to-end (commit `sync(Max)` arrivato su GitHub in automatico, 0 conflitti). Pendenze: Max incolla blocco hooks in `.claude/settings.json` (Claude non può editarlo per policy), invito Gael come collaborator.
 
 ## [2026-06-10] — COPY: Script cold outreach definitivo (call + email APSOC+V)
 

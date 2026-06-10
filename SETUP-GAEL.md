@@ -6,10 +6,10 @@
 
 ## 1. Prerequisiti (una volta sola)
 1. Installa: [Git](https://git-scm.com/download/win), [GitHub CLI](https://cli.github.com/), Claude Code.
-2. Accetta l'invito al repo (arriva via email/GitHub da Max).
-3. Login GitHub CLI:
+2. Login GitHub CLI **con l'account di Max (ansjkfgheqrlg)** — decisione condivisa: si usa
+   un solo account GitHub. Fai il login insieme a Max (lui autorizza il codice device):
    ```powershell
-   gh auth login -h github.com    # browser → autorizza
+   gh auth login -h github.com    # account: ansjkfgheqrlg → codice device → Max autorizza
    ```
 
 ## 2. Clona il workspace (una volta sola)

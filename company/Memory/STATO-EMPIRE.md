@@ -17,8 +17,9 @@ Roadmap completa: `PIANO-MAESTRO/08-ROADMAP-FASI.md`.
 - **GitHub monorepo + sync Max↔Gael (ADR-004, CP-002): ✅ LIVE** — repo privato
   `ansjkfgheqrlg/Digital-Empire`, push iniziale 966.63 MiB completato (2026-06-10 21:27).
   PENDENTI: (a) Max incolla blocco hooks in `.claude/settings.json` (contenuto pronto,
-  Claude non può editarlo per policy auto-mode), (b) invito Gael come collaborator
-  (serve username GitHub), (c) Gael esegue SETUP-GAEL.md sul suo PC.
+  Claude non può editarlo per policy auto-mode), (b) Gael esegue SETUP-GAEL.md sul suo PC
+  — DECISIONE Max 2026-06-10: Gael usa l'account GitHub di Max (ansjkfgheqrlg), niente
+  invito collaborator; identità distinte solo via git user.name (Max/Gael).
 - ✅ ME-0/ME-1 + review coerenza + wiki: COMPLETATI (CP-001).
 
 ## Blocchi / pending noti
