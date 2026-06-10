@@ -14,10 +14,11 @@ Roadmap completa: `PIANO-MAESTRO/08-ROADMAP-FASI.md`.
   wiki `projects/Exponium/Exponium_Content_Factory_Studio.md`.
 
 ## Lavori in corso
-- **GitHub monorepo + sync Max↔Gael (ADR-004, CP-002):** repo locale PRONTO (commit e166a34,
-  10.634 file, 967 MiB, zero segreti). IN ATTESA: (a) Max autorizza device code GitHub per
-  ansjkfgheqrlg, (b) push + creazione repo privato, (c) attivazione hook SessionStart/Stop
-  (blocco pronto in `scripts/hooks-sync.json`), (d) invito Gael (serve suo username GitHub).
+- **GitHub monorepo + sync Max↔Gael (ADR-004, CP-002): ✅ LIVE** — repo privato
+  `ansjkfgheqrlg/Digital-Empire`, push iniziale 966.63 MiB completato (2026-06-10 21:27).
+  PENDENTI: (a) Max incolla blocco hooks in `.claude/settings.json` (contenuto pronto,
+  Claude non può editarlo per policy auto-mode), (b) invito Gael come collaborator
+  (serve username GitHub), (c) Gael esegue SETUP-GAEL.md sul suo PC.
 - ✅ ME-0/ME-1 + review coerenza + wiki: COMPLETATI (CP-001).
 
 ## Blocchi / pending noti

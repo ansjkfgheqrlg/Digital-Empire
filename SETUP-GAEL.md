@@ -15,7 +15,7 @@
 ## 2. Clona il workspace (una volta sola)
 ```powershell
 cd $env:USERPROFILE\Desktop
-gh repo clone ansjkfgheqrlg/digital-empire "Digital Empire"
+gh repo clone ansjkfgheqrlg/Digital-Empire "Digital Empire"
 cd "Digital Empire"
 git config user.name  "Gael"
 git config user.email "<email-di-gael>"
