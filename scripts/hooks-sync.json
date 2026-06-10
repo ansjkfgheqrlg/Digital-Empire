@@ -1,0 +1,27 @@
+{
+  "_istruzioni": "Blocco 'hooks' da aggiungere a .claude/settings.json del progetto Digital Empire (ADR-004). Attiva: pull automatico a inizio sessione + push automatico a fine risposta (max 1/90s via rate-limit nello script).",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/empire-sync.ps1 -Mode pull",
+            "timeout": 90
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/empire-sync.ps1 -Mode push",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,228 @@
+# Digital Empire — Web Creation System
+> Navigazione master del sistema. Tutto il sistema è qui.
+
+---
+
+## Struttura del Progetto
+
+```
+Crea siti/
+├── README.md                         ← questo file
+├── OPUS-CONTEXT.md                   ← stato sessione OPUS
+│
+├── agents/                           ← 19 agenti AI (6 categorie)
+│   ├── orchestrators/                ← agenti master
+│   ├── market/                       ← audit marketing (5 sub-agenti)
+│   ├── omega/                        ← sistema OMEGA (2 agenti)
+│   ├── site-build/                   ← build HTML/CSS/JS (3 agenti)
+│   ├── site-copy/                    ← copywriting (3 agenti)
+│   └── site-qa/                      ← quality assurance (4 agenti)
+│
+├── skills/                           ← 35 skill (14 categorie)
+│   ├── opus/                         ← OPUS ultra-premium (6 file + 8 template AG)
+│   ├── site/ + site-*/               ← creazione siti (14 skill)
+│   ├── market/ + market-*/           ← marketing suite (15 skill)
+│   ├── brand-guidelines/             ← brand & colori
+│   ├── canvas-design/                ← arte visiva PNG/PDF
+│   ├── frontend-design/              ← UI production-grade
+│   ├── omega-create/                 ← generazione file OMEGA
+│   ├── skill-creator/                ← crea nuove skill
+│   └── theme-factory/                ← temi CSS pronti (9 temi)
+│
+└── system/                           ← documentazione sistema
+    ├── ARCHITETTURA-SISTEMA-SITE.md  ← architettura completa
+    └── ACTIVATION-GUIDE.md           ← come attivare i file
+```
+
+---
+
+## Comandi Principali
+
+| Comando | Sistema | Cosa fa |
+|---------|---------|---------|
+| `/opus new <nome>` | OPUS | Avvia workflow ultra-premium (21 fasi) |
+| `/opus status` | OPUS | Stato progetto corrente |
+| `/site brief` | Site | Inizia nuovo sito standard |
+| `/site` | Site | Dashboard progetto |
+| `/market audit <url>` | Market | Audit marketing completo |
+| `/market` | Market | Tutti i 14 comandi marketing |
+
+---
+
+## Agenti (19 totali)
+
+### Orchestrators (`agents/orchestrators/`)
+| File | Ruolo | Modello |
+|------|-------|---------|
+| `cc-master.md` | Orchestratore strategico OPDV Framework | Default |
+| `opus-director.md` | Master OPUS — guida 21 fasi ultra-premium | Opus (Gold #B8860B) |
+
+### Market Agents (`agents/market/`)
+| File | Ruolo |
+|------|-------|
+| `market-competitive.md` | Analisi competitiva |
+| `market-content.md` | Content & messaging audit |
+| `market-conversion.md` | CRO — Conversion Rate Optimization |
+| `market-strategy.md` | Brand & growth strategy |
+| `market-technical.md` | Technical SEO audit |
+
+### Omega Agents (`agents/omega/`)
+| File | Ruolo |
+|------|-------|
+| `omega-executor.md` | Genera file uno per uno (sistema OMEGA) |
+| `omega-verifier.md` | Quality gate 8 punti |
+
+### Site Build Agents (`agents/site-build/`)
+| File | Ruolo | Esecuzione |
+|------|-------|------------|
+| `site-build-shell.md` | Template HTML condiviso + navbar/footer | PRIMO |
+| `site-build-pages.md` | Pagine HTML interior | parallelo con interactions |
+| `site-build-interactions.md` | `js/interactions.js` — UI behaviors | parallelo con pages |
+
+### Site Copy Agents (`agents/site-copy/`)
+| File | Ruolo |
+|------|-------|
+| `site-copy-hero.md` | Headline, H1/H2, CTA above-the-fold |
+| `site-copy-body.md` | Body copy, features, about, FAQ |
+| `site-copy-meta.md` | SEO meta, OG, alt text, schema FAQ |
+
+### Site QA Agents (`agents/site-qa/`)
+| File | Ruolo |
+|------|-------|
+| `site-qa-html.md` | HTML validity, semantica, heading hierarchy |
+| `site-qa-accessibility.md` | WCAG 2.1 AA, ARIA, contrasto, keyboard |
+| `site-qa-performance.md` | Core Web Vitals, LCP, CLS, render-blocking |
+| `site-qa-mobile.md` | Responsive, touch targets, cross-browser |
+
+---
+
+## Skill (35 totali)
+
+### OPUS Ultra-Premium (`skills/opus/`)
+| File | Contenuto |
+|------|-----------|
+| `SKILL.md` | Entry point `/opus` + dashboard |
+| `OPUS-PROCESS.md` | Il cervello — tutte le 21 fasi con ogni sub-step |
+| `ANTI-AI-BLACKLIST.md` | Font/colori/pattern vietati |
+| `POLISH-LOOP-PROTOCOL.md` | 7 pass iterativi di rifinitura |
+| `TYPOGRAPHY-SYSTEM.md` | Scale Perfect Fourth + Bold Word System |
+| `OPUS-STATUS-template.md` | Template tracking progetto |
+| `templates/ag-design-manifesto.md` | AG-1: Design Manifesto (Fase 4.1) |
+| `templates/ag-atmosphere.md` | AG-2: Atmosphere (Fase 4.5) |
+| `templates/ag-token-review.md` | AG-3: Token Review (Fase 4.7) |
+| `templates/ag-typography.md` | AG-4: Typography Deep Dive (Fase 5.2) |
+| `templates/ag-copy.md` | AG-5: Copy Refinement (Fase 6.2) |
+| `templates/ag-motion.md` | AG-6: Motion Concepts (Fase 8.1) |
+| `templates/ag-polish.md` | AG-7: Polish Review finale (Fase 9.7) |
+| `templates/ag-launch.md` | AG-8: Launch Announcement (Fase 12.2) |
+
+### Site Creation Suite (`skills/site/` + `skills/site-*/`)
+| Skill | Comando | Output |
+|-------|---------|--------|
+| `site` | `/site` | Dashboard + orchestratore |
+| `site-brief` | `/site brief` | `SITE-BRIEF.md` |
+| `site-stack` | `/site stack` | `SITE-STACK.md` |
+| `site-plan` | `/site plan` | `SITE-PLAN.md` |
+| `site-design` | `/site design` | `SITE-DESIGN.md` + tokens + style guide |
+| `site-copy` | `/site copy` | `SITE-COPY.md` (3 agenti paralleli) |
+| `site-build` | `/site build` | HTML + CSS + JS |
+| `site-animate` | `/site animate` | `js/animations.js` |
+| `site-3d` | `/site 3d` | Three.js / React Three Fiber |
+| `site-seo` | `/site seo` | sitemap + robots + SEO-AUDIT |
+| `site-qa` | `/site qa` | `QA-REPORT.md` (4 agenti paralleli) |
+| `site-deploy` | `/site deploy` | config + DEPLOY-CHECKLIST |
+| `site-components` | `/site components` | componenti UI isolati |
+| `site-report` | `/site report` | `SITE-REPORT.md` |
+
+### Marketing Suite (`skills/market/` + `skills/market-*/`)
+| Skill | Comando |
+|-------|---------|
+| `market` | `/market` — orchestratore 14 comandi |
+| `market-audit` | `/market audit <url>` — 5 agenti paralleli |
+| `market-ads` | `/market ads` |
+| `market-brand` | `/market brand` |
+| `market-competitors` | `/market competitors` |
+| `market-copy` | `/market copy` |
+| `market-emails` | `/market emails` |
+| `market-funnel` | `/market funnel` |
+| `market-landing` | `/market landing` |
+| `market-launch` | `/market launch` |
+| `market-proposal` | `/market proposal` |
+| `market-report` | `/market report` |
+| `market-report-pdf` | `/market report-pdf` |
+| `market-seo` | `/market seo` |
+| `market-social` | `/market social` |
+
+### Design & Branding
+| Skill | Comando |
+|-------|---------|
+| `brand-guidelines` | `/brand-guidelines` — colori e tipografia |
+| `canvas-design` | `/canvas-design` — arte visiva PNG/PDF |
+| `frontend-design` | `/frontend-design` — UI production-grade |
+
+### Utility
+| Skill | Comando |
+|-------|---------|
+| `omega-create` | `/omega-create` — sistema OMEGA |
+| `skill-creator` | `/skill-creator` — crea nuove skill |
+| `theme-factory` | `/theme-factory` — 9 temi CSS pronti |
+
+---
+
+## OPUS — 21 Fasi
+
+| Fase | Nome | Skill usata |
+|------|------|-------------|
+| 0 | Initialization | — |
+| 1 | Discovery | `/site brief` |
+| 2 | Technical Architecture | `/site stack` |
+| 2.5 | Visual Assets Strategy | — |
+| 3 | Information Architecture | `/site plan` |
+| 4 | Design System | `/site design` |
+| 4A | Silver-Metallic Colors | — |
+| 4B | Section Dividers | — |
+| 4C | Block & Card Design | — |
+| 4D | Grain Texture System | — |
+| 5 | Typography Mastery | — |
+| 5A | Text Visual Design | — |
+| 6 | Content & Copy | `/site copy` |
+| 7 | Build | `/site build` |
+| 7.5 | Conversion Engineering | — |
+| 8 | Motion Engineering | `/site animate` |
+| 9 | Anti-AI Polish Loop (7 pass) | — |
+| 10 | Technical SEO | `/site seo` |
+| 11 | Quality Assurance | `/site qa` |
+| 12 | Deployment + GDPR + GA4 | `/site deploy` |
+| 13 | Delivery | `/site report` |
+
+> Dettaglio completo: `skills/opus/OPUS-PROCESS.md`
+
+---
+
+## Anti-Gravity — 8 Momenti
+
+| # | Fase | Template | Scopo |
+|---|------|----------|-------|
+| AG-1 | 4.1 | `ag-design-manifesto.md` | Espansione movimento visivo |
+| AG-2 | 4.5 | `ag-atmosphere.md` | Micro-dettagli premium settore |
+| AG-3 | 4.7 | `ag-token-review.md` | Critica anti-AI ai design tokens |
+| AG-4 | 5.2 | `ag-typography.md` | Combinazioni tipografiche sorprendenti |
+| AG-5 | 6.2 | `ag-copy.md` | Varianti headline A/B |
+| AG-6 | 8.1 | `ag-motion.md` | Idee animazioni innovative |
+| AG-7 | 9.7 | `ag-polish.md` | Cosa ancora sembra AI? |
+| AG-8 | 12.2 | `ag-launch.md` | Social posts + email lancio |
+
+---
+
+## Principi OPUS (sempre attivi)
+
+1. **Silver-Mixed** — ogni colore ha saturazione -20-35% + silver undertones
+2. **Grain obbligatoria** — SVG feTurbulence su ogni sfondo, opacity 4-6%
+3. **Anti-AI Blacklist** — Inter/Roboto/Arial vietati, purple gradient vietato
+4. **Polish Loop 7 pass** — minimum 5, standard 7
+5. **Desktop-first** — CSS desktop come base, 768px per mobile overrides
+6. **Lowercase** — H1/H2/H3 tutti sentence case
+7. **Bold Word System** — 1-3 parole peso 600 per frase, skeleton test
+8. **Dual theme** — dark/light toggle sempre incluso
+
+> Blacklist completa: `skills/opus/ANTI-AI-BLACKLIST.md`

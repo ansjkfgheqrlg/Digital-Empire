@@ -1,0 +1,53 @@
+# social_performance
+            
+> Path: [[Map - Skill_And_Agenti|SKILL & Agenti > SKILL > Skill - script video lancio CCM]]
+
+## Content
+
+[
+    {
+        "script_id": "demo_script_1",
+        "platform": "TikTok",
+        "hook_type": "Affermazione_Shock",
+        "last_update": "2026-04-23 13:34",
+        "views": 3000,
+        "likes": 150,
+        "comments": 10,
+        "saves": 45,
+        "shares": 5,
+        "engagement_rate_pct": 7.0,
+        "save_rate_pct": 1.5,
+        "viral_score": 365.0
+    },
+    {
+        "script_id": "demo_script_1",
+        "platform": "IG_Reel",
+        "hook_type": "Affermazione_Shock",
+        "last_update": "2026-04-23 13:34",
+        "views": 1200,
+        "likes": 60,
+        "comments": 4,
+        "saves": 30,
+        "shares": 2,
+        "engagement_rate_pct": 8.0,
+        "save_rate_pct": 2.5,
+        "viral_score": 194.0
+    },
+    {
+        "script_id": "demo_script_2",
+        "platform": "TikTok",
+        "hook_type": "Lista_Risorse",
+        "last_update": "2026-04-23 13:34",
+        "views": 8000,
+        "likes": 400,
+        "comments": 30,
+        "saves": 200,
+        "shares": 40,
+        "engagement_rate_pct": 8.38,
+        "save_rate_pct": 2.5,
+        "viral_score": 1380.0
+    }
+]
+
+## Collegamenti Correlati
+- [[Map - Agenti|Agenti Area]]

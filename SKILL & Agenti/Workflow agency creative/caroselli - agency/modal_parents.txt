@@ -1,0 +1,39 @@
+[*] Warning element is visible.
+
+[
+  {
+    "level": 0,
+    "tagName": "SPAN",
+    "className": "lb-k-V-r",
+    "role": "heading",
+    "html_start": "<span class=\"lb-k-V-r\" id=\":6a\" role=\"heading\">Creare in una cartella condivisa?</span>"
+  },
+  {
+    "level": 1,
+    "tagName": "DIV",
+    "className": "lb-k-V lb-k-V-xt",
+    "role": null,
+    "html_start": "<div class=\"lb-k-V lb-k-V-xt\"><span class=\"lb-k-V-r\" id=\":6a\" role=\"heading\">Creare in una cartella condivisa?</span><span class=\"lb-k-V-va a-k-V-va-qd-j\" role=\"button\" tabindex=\"0\" aria-label=\"Chiudi\" data-tooltip=\"Chiudi\"><svg class=\"a-k-V-va-qd\" x=\"0px\" y=\"0px\" width=\"10px\" height=\"10px\" viewBox="
+  },
+  {
+    "level": 2,
+    "tagName": "DIV",
+    "className": "lb-k g-ge",
+    "role": "alertdialog",
+    "html_start": "<div class=\"lb-k g-ge\" tabindex=\"0\" role=\"alertdialog\" aria-labelledby=\":6a\" aria-describedby=\":6a.msg\" style=\"left: 359px; top: 262.5px;\"><div class=\"lb-k-V lb-k-V-xt\"><span class=\"lb-k-V-r\" id=\":6a\" role=\"heading\">Creare in una cartella condivisa?</span><span class=\"lb-k-V-va a-k-V-va-qd-j\" role=\""
+  },
+  {
+    "level": 3,
+    "tagName": "BODY",
+    "className": "yYWAMb a-s-Xc-ag-fa-Te vhoiae KkxPLb a-b-uoC0bf",
+    "role": null,
+    "html_start": "<body class=\"yYWAMb a-s-Xc-ag-fa-Te vhoiae KkxPLb a-b-uoC0bf\" jsaction=\"u0pjoe:.CLIENT;UjQMac:.CLIENT;F2UR4:.CLIENT;r5B0yc:.CLIENT;jgTyVb:.CLIENT\"><iframe tabindex=\"-1\" style=\"position: absolute; width: 9em; height: 9em; top: -99em;\" aria-hidden=\"true\"></iframe><input type=\"text\" id=\"drive-hist-stat"
+  },
+  {
+    "level": 4,
+    "tagName": "HTML",
+    "className": "a-Lk a-Cs-pRMmEf-D-B hMukDb",
+    "role": null,
+    "html_start": "<html lang=\"it\" dir=\"ltr\" class=\"a-Lk a-Cs-pRMmEf-D-B hMukDb\"><head><script type=\"text/javascript\" id=\"www-widgetapi-script\" src=\"https://youtube.googleapis.com/s/player/e1bd44b2/www-widgetapi.vflset/www-widgetapi.js\" async=\"\" nonce=\"\"></script><script src=\"https://apis.google.com/_/scs/abc-static/_"
+  }
+]

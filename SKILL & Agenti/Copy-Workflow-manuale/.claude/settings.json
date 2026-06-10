@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Utente/Desktop/**)",
+      "Bash(python -c ' *)",
+      "Bash(Select-Object Name)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Utente\\\\.claude\\\\skills\\\\content-forge\" -Recurse | Where-Object {!$_.PSIsContainer} | Measure-Object | Select-Object -ExpandProperty Count)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Utente\\\\Desktop\\\\qui tutto\\\\Digital Empire\\\\SKILL & Agenti\\\\Content-forge\\\\skill - FINALE\" -Force | ForEach-Object { $_.Name + \" [\" + $_.LastWriteTime + \"]\" })",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Utente\\\\Desktop\\\\qui tutto\\\\Digital Empire\\\\SKILL & Agenti\\\\Content-forge\\\\skill - FINALE\\\\2.0\" -Force | ForEach-Object { $_.Name + \" [\" + $_.LastWriteTime + \"]\" })",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Utente\\\\Desktop\\\\qui tutto\\\\Digital Empire\\\\SKILL & Agenti\\\\Content-forge\\\\skill - FINALE\\\\2.0\\\\_extracted\" -Force | ForEach-Object { $_.Name })",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Utente\\\\Desktop\\\\qui tutto\\\\Digital Empire\\\\SKILL & Agenti\\\\Content-forge\\\\skill - FINALE\\\\2.0\\\\_extracted\\\\content-forge\" | ForEach-Object { $_.Name })",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Utente\\\\Desktop\\\\qui tutto\\\\Digital Empire\\\\SKILL & Agenti\\\\Content-forge\\\\skill - FINALE\\\\2.0\\\\_extracted\\\\content-forge\" -Recurse | Where-Object {!$_.PSIsContainer} | Measure-Object | Select-Object -ExpandProperty Count)",
+      "PowerShell(gh repo view fragolina97/Content-forge-master --json name,description,updatedAt,defaultBranchRef)",
+      "PowerShell(gh repo view fragolina97/Skill-Content-Forge --json name,description,updatedAt,defaultBranchRef)",
+      "PowerShell(gh repo rename content-forge2.0 --repo fragolina97/Content-forge-master --yes)",
+      "PowerShell(gh repo view fragolina97/content-forge2.0 --json name,url,updatedAt)",
+      "Edit(~/.claude/skills/content-forge/**)",
+      "PowerShell(gh auth status)",
+      "PowerShell($env:GH_TOKEN2 = \"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\"; $headers = @{Authorization = \"token $env:GH_TOKEN2\"}; $response = Invoke-RestMethod -Uri \"https://api.github.com/user\" -Headers $headers; $response.login)",
+      "PowerShell($env:GH_TOKEN2 = \"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\"; $headers = @{Authorization = \"token $env:GH_TOKEN2\"}; Invoke-RestMethod -Uri \"https://api.github.com/search/repositories?q=content-forge+user:ansjkfgheqrlg\" -Headers $headers | Select-Object -ExpandProperty items | Select-Object name, html_url)",
+      "PowerShell($env:GH_TOKEN2 = \"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\"; $headers = @{Authorization = \"token $env:GH_TOKEN2\"; \"Content-Type\" = \"application/json\"}; $body = '{\"name\":\"content-forge2.0\",\"description\":\"Transforms raw content into operational artifacts: agents, skills, workflows, orchestration layers, wiki. Never summarizes — always expands.\",\"private\":false}'; Invoke-RestMethod -Uri \"https://api.github.com/user/repos\" -Method POST -Headers $headers -Body $body | Select-Object name, html_url, full_name)",
+      "PowerShell($env:GH_TOKEN2 = \"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\"; $headers = @{Authorization = \"token $env:GH_TOKEN2\"}; Invoke-RestMethod -Uri \"https://api.github.com/repos/ansjkfgheqrlg/content-forge2.0\" -Headers $headers | Select-Object name, html_url, full_name)",
+      "PowerShell($token = \"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\"; $headers = @{Authorization = \"token $token\"; \"Content-Type\" = \"application/json\"}; $body = @{name=\"content-forge2.0\"; description=\"Transforms raw content into operational artifacts: agents, skills, workflows, orchestration layers, wiki. Never summarizes — always expands.\"; private=$false} | ConvertTo-Json; $r = Invoke-WebRequest -Uri \"https://api.github.com/user/repos\" -Method POST -Headers $headers -Body $body -UseBasicParsing; $r.StatusCode; \\($r.Content | ConvertFrom-Json\\).html_url)",
+      "PowerShell($token = \"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\"; $headers = @{Authorization = \"token $token\"}; $repos = Invoke-RestMethod -Uri \"https://api.github.com/user/repos?per_page=50\" -Headers $headers; $repos | Select-Object name, html_url | Format-Table)",
+      "PowerShell($token = \"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\"; $headers = @{Authorization = \"token $token\"}; $r = Invoke-RestMethod -Uri \"https://api.github.com/repos/ansjkfgheqrlg/content-forge2.0\" -Headers $headers; \"Repo: \" + $r.name; \"Files nel branch main:\"; $commits = Invoke-RestMethod -Uri \"https://api.github.com/repos/ansjkfgheqrlg/content-forge2.0/git/trees/main?recursive=1\" -Headers $headers; $commits.tree.Count)",
+      "PowerShell($token = \"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\"; $headers = @{Authorization = \"token $token\"}; $repos = Invoke-RestMethod -Uri \"https://api.github.com/user/repos?per_page=50\" -Headers $headers; $repos | Select-Object name, private | Format-Table)",
+      "Bash(xcopy \"c:\\\\Users\\\\Utente\\\\Desktop\\\\qui tutto\\\\Digital Empire\\\\SKILL & Agenti\\\\Copy-Workflow-manuale\\\\copy-workflow\" \"C:\\\\Users\\\\Utente\\\\.claude\\\\skills\\\\copy-workflow\" /E /I /H /Y)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\second-brain-vault\\wiki\\tools",
+      "c:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\second-brain-vault\\wiki",
+      "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\Content-forge\\skill - FINALE\\2.0",
+      "C:\\Users\\Utente\\.claude\\skills\\content-forge",
+      "C:\\Users\\Utente\\.claude\\skills"
+    ]
+  }
+}

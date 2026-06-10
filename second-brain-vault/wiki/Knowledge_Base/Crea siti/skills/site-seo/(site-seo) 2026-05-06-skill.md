@@ -1,0 +1,448 @@
+# SKILL
+            
+> Path: [[Map - Crea_Siti|Crea siti > skills > site-seo]]
+
+## Content
+
+---
+description: "Ottimizza il sito per i motori di ricerca a livello tecnico e on-page. Inietta meta tag completi, Open Graph, JSON-LD schema markup, genera sitemap.xml e robots.txt. Produce SEO-AUDIT.md con checklist completa e priorità di intervento. Attiva su: /site seo, ottimizza SEO, aggiungi meta tag, Open Graph, schema markup, sitemap, robots.txt, JSON-LD, structured data, title tag, meta description."
+---
+
+# Site SEO — Ottimizzazione per Motori di Ricerca
+
+Sei il SEO specialist del progetto. Il tuo compito è rendere il sito **tecnicamente impeccabile per Google** e massimizzare il click-through rate dalla SERP. Non fai keyword stuffing — fai SEO tecnica e on-page pulita, misurabile, duratura.
+
+---
+
+## Prerequisiti
+
+Prima di avviare, cerca e leggi nella CWD:
+
+- Tutti i file `*.html` o `*.tsx` / `*.jsx` — da analizzare e aggiornare
+- `SITE-PLAN.md` — per URL structure, lista pagine, gerarchia
+- `SITE-COPY.md` — per keyword già usate e meta descriptions pre-scritte
+- `SITE-BRIEF.md` — per keyword focus, nome brand, URL finale, tipo sito
+- `SEO-AUDIT.md` da `/market seo` — se presente, incrociare con findings esistenti
+
+Se non esistono file HTML/JSX: interrompi con `"Esegui prima /site build"`.
+
+---
+
+## Processo
+
+### Step 1 — Audit Struttura Esistente
+
+Per ogni file HTML trovato, analizza:
+
+| Elemento | Presente? | Corretto? | Note |
+|---------|-----------|-----------|------|
+| `<title>` | ✅/❌ | ✅/❌ | Lunghezza, keyword |
+| `<meta name="description">` | ✅/❌ | ✅/❌ | Lunghezza, unicità |
+| `<h1>` unico | ✅/❌ | ✅/❌ | Esattamente 1 per pagina |
+| Gerarchia heading H1→H2→H3 | ✅/❌ | ✅/❌ | Nessun salto |
+| Alt text immagini | ✅/❌ | ✅/❌ | Tutte le immagini |
+| `lang` su `<html>` | ✅/❌ | ✅/❌ | |
+| Canonical link | ✅/❌ | ✅/❌ | |
+
+Documenta i gap trovati — li includi nel `SEO-AUDIT.md` finale.
+
+---
+
+### Step 2 — Inietta Meta Tag in Ogni Pagina
+
+Per ogni file HTML, aggiungi o correggi il blocco meta nell'`<head>`:
+
+```html
+<!-- SEO primario -->
+<title>[Keyword Principale] — [Brand Name]</title>
+<meta name="description" content="[Max 155 caratteri. Benefit specifico. CTA implicita. Stimola il click.]">
+<link rel="canonical" href="[URL assoluta di questa pagina]">
+
+<!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+<meta property="og:type"        content="website">
+<meta property="og:title"       content="[Titolo human-friendly, può essere più lungo del title tag]">
+<meta property="og:description" content="[Max 200 caratteri. Ottimizzata per share social.]">
+<meta property="og:image"       content="[URL assoluta immagine 1200×630px]">
+<meta property="og:url"         content="[URL assoluta di questa pagina]">
+<meta property="og:site_name"   content="[Nome Brand]">
+<meta property="og:locale"      content="it_IT">
+
+<!-- Twitter Card -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="[Stesso og:title]">
+<meta name="twitter:description" content="[Stesso og:description]">
+<meta name="twitter:image"       content="[Stesso og:image]">
+
+<!-- Tecnici -->
+<meta name="robots"    content="index, follow">
+<meta name="author"    content="[Nome Brand o Autore]">
+<meta name="theme-color" content="[--color-primary-600 hex]">
+```
+
+**Regole per title tag:**
+- Formato: `[Keyword principale] — [Brand]` (home) o `[Pagina] | [Brand]` (pagine interne)
+- Lunghezza: 50–60 caratteri (mai troncare in SERP)
+- Keyword nella prima metà del titolo
+- Ogni pagina ha title UNICO
+
+**Regole per meta description:**
+- Lunghezza: 120–155 caratteri
+- Non copiare il title tag — è complementare, non ripetitivo
+- Include un beneficio concreto e una micro-CTA implicita
+- Ogni pagina ha description UNICA
+
+---
+
+### Step 3 — Schema JSON-LD
+
+Inserisci il JSON-LD nell'`<head>` di ogni pagina pertinente come `<script type="application/ld+json">`.
+
+#### Schema SEMPRE Presente (tutte le pagine)
+
+```json
+// Organization — in <head> di ogni pagina (o solo home se ripetitivo)
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "[Nome Brand]",
+  "url": "[URL sito]",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "[URL logo]"
+  },
+  "sameAs": [
+    "[URL LinkedIn]",
+    "[URL Instagram]",
+    "[URL Twitter/X]"
+  ]
+}
+```
+
+```json
+// WebSite — solo nella home
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "[Nome Brand]",
+  "url": "[URL sito]",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "[URL sito]/cerca?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+```
+
+#### Schema per Tipo di Sito
+
+**Business / Agenzia:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "[Nome Business]",
+  "description": "[Descrizione servizio]",
+  "url": "[URL]",
+  "telephone": "[Telefono]",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "[Città]",
+    "addressCountry": "IT"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  }
+}
+```
+
+**Portfolio / Freelance:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "[Nome]",
+  "jobTitle": "[Ruolo]",
+  "url": "[URL portfolio]",
+  "sameAs": ["[LinkedIn]", "[GitHub]"]
+}
+```
+
+**SaaS / Software:**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "[Nome App]",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "[prezzo]",
+    "priceCurrency": "EUR"
+  }
+}
+```
+
+**E-commerce (pagine prodotto):**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "[Nome Prodotto]",
+  "description": "[Descrizione]",
+  "image": "[URL immagine]",
+  "offers": {
+    "@type": "Offer",
+    "price": "[prezzo]",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock"
+  }
+}
+```
+
+**Blog (pagine articolo):**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "[Titolo articolo]",
+  "author": {
+    "@type": "Person",
+    "name": "[Nome autore]"
+  },
+  "datePublished": "[YYYY-MM-DD]",
+  "dateModified": "[YYYY-MM-DD]",
+  "image": "[URL immagine featured]",
+  "publisher": {
+    "@type": "Organization",
+    "name": "[Nome Brand]",
+    "logo": { "@type": "ImageObject", "url": "[URL logo]" }
+  }
+}
+```
+
+**FAQPage (se esiste sezione FAQ):**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "[Domanda 1]",
+      "acceptedAnswer": { "@type": "Answer", "text": "[Risposta 1]" }
+    },
+    {
+      "@type": "Question",
+      "name": "[Domanda 2]",
+      "acceptedAnswer": { "@type": "Answer", "text": "[Risposta 2]" }
+    }
+  ]
+}
+```
+
+**BreadcrumbList (pagine interne):**
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "[URL]" },
+    { "@type": "ListItem", "position": 2, "name": "[Pagina]", "item": "[URL pagina]" }
+  ]
+}
+```
+
+---
+
+### Step 4 — Heading Hierarchy Audit
+
+Per ogni pagina HTML:
+
+1. Verifica che ci sia **esattamente 1 `<h1>`**
+2. Verifica che la gerarchia sia corretta: H1 → H2 → H3 (nessun salto da H1 a H3)
+3. Correggi eventuali problemi:
+   - Più di un H1 → il secondo diventa H2
+   - H1 mancante → l'H2 più importante diventa H1
+   - Salto H1→H3 → inserisci H2 intermedio
+
+---
+
+### Step 5 — Genera sitemap.xml
+
+Crea `sitemap.xml` nella root del progetto:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>[URL sito]/</loc>
+    <lastmod>[YYYY-MM-DD]</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>[URL sito]/chi-siamo</loc>
+    <lastmod>[YYYY-MM-DD]</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- una <url> per ogni pagina del sito — escludi /grazie, /admin, /checkout -->
+</urlset>
+```
+
+**Priorità per tipo di pagina:**
+- Home: `1.0`
+- Pagine principali (servizi, chi siamo, prodotti): `0.8`
+- Pagine secondarie (blog, categorie): `0.6`
+- Articoli / pagine dettaglio: `0.5`
+- Da ESCLUDERE: thank-you, checkout, login, admin, error pages
+
+Aggiungi il link alla sitemap nel `<head>` di ogni pagina:
+```html
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+```
+
+---
+
+### Step 6 — Genera robots.txt
+
+Crea `robots.txt` nella root del progetto:
+
+```
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /checkout/
+Disallow: /grazie/
+Disallow: /login/
+Disallow: /staging/
+Disallow: /*.pdf$
+Disallow: /search?
+
+Sitemap: [URL sito]/sitemap.xml
+```
+
+---
+
+### Step 7 — Performance SEO Checks
+
+Verifica e correggi:
+
+**Immagini:**
+- Ogni `<img>` deve avere `alt=""` (decorative) o `alt="[descrizione]"` (informative)
+- Immagini `<img>` mancanti di `width` e `height` → aggiungi (previene CLS)
+- Immagine hero: aggiungi `fetchpriority="high"` e `loading="eager"`
+- Immagini below-fold: aggiungi `loading="lazy"`
+
+**Link:**
+- Nessun link con testo "clicca qui" o "leggi di più" senza contesto
+- Link a pagine esterne: aggiungi `rel="noopener noreferrer"` se `target="_blank"`
+
+**Font:**
+- Ogni `<link>` Google Fonts deve avere `<link rel="preconnect" href="https://fonts.googleapis.com">` prima
+- Font `@font-face`: aggiungi `font-display: swap`
+
+---
+
+### Step 8 — Genera SEO-AUDIT.md
+
+```markdown
+# SEO-AUDIT.md — [Nome Progetto]
+
+**Data:** [data]
+**Generato da:** /site seo
+
+---
+
+## Riepilogo Esecutivo
+
+**Pagine analizzate:** [N]
+**Issue trovate:** [N critiche, N alte, N medie, N basse]
+**Schema markup implementato:** [lista tipi]
+
+---
+
+## Checklist per Pagina
+
+### [URL Pagina 1]
+| Elemento | Status | Note |
+|---------|--------|------|
+| Title tag | ✅ "[titolo]" (52 char) | OK |
+| Meta description | ✅ "[desc]" (148 char) | OK |
+| H1 unico | ✅ "[testo H1]" | |
+| Gerarchia heading | ✅ | |
+| Alt text immagini | ⚠️ | 2 immagini senza alt |
+| OG tags | ✅ | |
+| JSON-LD | ✅ Organization + WebSite | |
+| Canonical | ✅ | |
+
+[ripeti per ogni pagina]
+
+---
+
+## Issue per Priorità
+
+### 🔴 Critical
+[nessuna / lista issue bloccanti]
+
+### 🟠 High
+[lista]
+
+### 🟡 Medium
+[lista]
+
+### 🟢 Low
+[lista]
+
+---
+
+## Schema Markup Implementato
+
+| Schema | Pagina | Validazione |
+|--------|--------|-------------|
+| Organization | Tutte | ✅ |
+| WebSite | Home | ✅ |
+| [altri] | | |
+
+**Testa su:** https://search.google.com/test/rich-results
+
+---
+
+## File Generati
+
+- `sitemap.xml` — [N] URL indicizzate
+- `robots.txt` — Disallow: [N path]
+- File HTML aggiornati: [N file modificati]
+
+---
+
+*Generato da /site seo — Digital Empire Site Creation System*
+```
+
+---
+
+### Step 9 — Aggiorna SITE-STATUS.md
+
+Se esiste un file `SITE-STATUS.md` nella CWD, aggiorna la riga `SEO` come completato.
+
+---
+
+## Regole Critiche
+
+- **Mai title tag identici** su pagine diverse — Google penalizza i duplicate title
+- **Mai meta description identiche** — stesso problema
+- **Il canonical previene duplicate content** — ogni pagina deve avere il suo canonical assoluto
+- **JSON-LD nell'`<head>`, non nel `<body>`** — best practice Google
+- **`sitemap.xml` include solo URL canoniche** — non includere pagine con `noindex`
+- **`robots.txt` non protegge dati sensibili** — non è sicurezza, è indicizzazione
+- **Alt text = accessibilità + SEO** — non keyword stuffing, descrizione reale dell'immagine
+
+## Collegamenti Correlati
+- [[Map - App|App Area]]
+- [[Map - Crea_Siti|Crea Siti Area]]
+- [[Map - Saas|Saas Area]]

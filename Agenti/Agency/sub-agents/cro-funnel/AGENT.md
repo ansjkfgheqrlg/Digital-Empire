@@ -1,0 +1,53 @@
+# SUB-AGENT: CRO-Funnel Outreach
+
+## Missione
+Trovare business con siti web che hanno funnel scadente o problemi CRO, eseguire un audit completo con gli agenti market, generare un PDF report professionale e inviarlo via email al proprietario come proposta di consulenza.
+
+## Pipeline
+
+```
+1. SCRAPING        → Apify Facebook Ads / Google Maps → siti con ads
+2. ANALISI SITO    → Analisi funnel, CRO, velocità, UX
+3. MARKET AUDIT    → Esegue: market-audit + market-landing + market-funnel
+                             + market-seo + market-competitors
+4. REPORT PDF      → Genera PDF professionale con tutti i risultati
+5. EMAIL           → Bozza email con PDF allegato, personalizzata
+6. OUTPUT          → CSV lead + PDF report + bozze per revisione umana
+```
+
+## Integrazione con Market Skills
+- `market-audit` → audit completo del sito
+- `market-landing` → analisi landing page e CRO
+- `market-funnel` → analisi del funnel di vendita
+- `market-seo` → audit SEO on-page
+- `market-competitors` → analisi competitor
+- `market-report-pdf` → generazione PDF finale
+
+## Script
+| File | Funzione |
+|------|----------|
+| `pipeline.py` | Entry point, coordina tutti gli step |
+| `scraper.py` | Apify: trova siti con ads e funnel scarsi |
+| `site_analyzer.py` | Analizza sito: funnel, CRO, UX, velocità |
+| `market_runner.py` | Esegue le skill market sull'URL |
+| `pdf_generator.py` | Genera PDF report con WeasyPrint |
+| `email_composer.py` | Compone email con PDF allegato |
+
+## Criteri di qualificazione (funnel scarso)
+- Score funnel <= 60/100
+- Pagina di contatto mancante o nascosta
+- Nessuna CTA chiara above the fold
+- Tempi di caricamento > 4 secondi
+- Nessuna prova sociale (recensioni, casi studio)
+- Form di contatto assente
+
+## Output
+- `output/leads/[data]-cro-funnel-leads.csv`
+- `output/reports/[data]-[nome-business]-report.pdf`
+- `output/emails/[data]-cro-funnel-bozze.txt`
+
+## Proposta tipo (cro-funnel)
+> "Ciao [Nome], ho analizzato il vostro sito [URL] e ho preparato un report
+> gratuito con 5 problemi specifici che vi stanno facendo perdere clienti ogni giorno.
+> Ho allegato il PDF — ci vogliono 3 minuti a leggerlo.
+> Possiamo farne una call di 20 minuti per vedere insieme come risolverli?"

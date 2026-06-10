@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @font-face {
+    font-family: 'Hero';
+    src: url('{{FONT_PATH}}/{{FONT_HERO_FILE}}.ttf');
+  }
+  @font-face {
+    font-family: 'Bold';
+    src: url('{{FONT_PATH}}/{{FONT_BOLD_FILE}}.ttf');
+  }
+  @font-face {
+    font-family: 'Regular';
+    src: url('{{FONT_PATH}}/{{FONT_REGULAR_FILE}}.ttf');
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+    position: relative;
+    background: {{BG_COLOR}};
+  }
+
+  /* === GRANA CINEMATOGRAFICA === */
+  .grain {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 100;
+    mix-blend-mode: overlay;
+    opacity: {{GRAIN_OPACITY}};
+  }
+
+  .grain::before {
+    content: '';
+    position: absolute;
+    top: -200%; left: -200%;
+    width: 500%; height: 500%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' seed='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    background-size: 300px 300px;
+  }
+
+  /* === VIGNETTATURA === */
+  .vignette {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 40%,
+      rgba(0,0,0,{{VIGNETTE_INTENSITY}}) 100%
+    );
+    pointer-events: none;
+    z-index: 99;
+  }
+
+  /* === CONTENUTO === */
+  .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: {{PADDING}};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  /* === TIPOGRAFIA === */
+  .text-small {
+    font-family: 'Regular', sans-serif;
+    font-size: {{SIZE_SMALL}};
+    color: {{TEXT_SECONDARY}};
+    margin-bottom: 16px;
+    line-height: {{LINE_HEIGHT_BODY}};
+  }
+
+  .text-hero {
+    font-family: 'Hero', sans-serif;
+    font-size: {{SIZE_HERO}};
+    line-height: {{LINE_HEIGHT_HERO}};
+    letter-spacing: {{LETTER_SPACING_HERO}};
+    text-transform: lowercase;
+  }
+
+  /* Le parole nel testo hero hanno gradiente inline via span — nessun colore qui */
+
+  /* === SFONDO IMMAGINE === */
+  .bg-image {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: {{IMAGE_FILTER}};
+    z-index: 1;
+  }
+
+  .bg-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: {{BG_OVERLAY_GRADIENT}};
+    z-index: 2;
+  }
+
+  /* === LOGO WATERMARK === */
+  .logo-watermark {
+    position: absolute;
+    bottom: 28px;
+    right: 28px;
+    z-index: 200;
+    opacity: {{LOGO_OPACITY}};
+  }
+
+  .logo-watermark img {
+    width: {{LOGO_SIZE}};
+    height: {{LOGO_SIZE}};
+    border-radius: 50%;
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Sfondo immagine (opzionale) -->
+  {{BG_IMAGE_BLOCK}}
+
+  <!-- Contenuto slide -->
+  <div class="content">
+    {{SLIDE_CONTENT}}
+  </div>
+
+  <!-- Effetti -->
+  <div class="vignette"></div>
+  <div class="grain"></div>
+
+  <!-- Logo watermark -->
+  {{LOGO_BLOCK}}
+
+</body>
+</html>

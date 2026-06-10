@@ -1,0 +1,97 @@
+# Piano di Sviluppo: Creazione della Skill "Master Architect"
+
+Questo piano descrive come costruire e implementare la skill "Master Architect" nell'ecosistema, senza scriverne ancora il codice finale. Segue la struttura standard delle skill presenti nella cartella `.agents/skills`.
+
+## Fase 1: Strutturazione della Cartella e Metadati
+- [ ] Creare la directory `.agents/skills/master-architect/`.
+- [ ] Creare il file `SKILL.md` definendo i metadati YAML:
+  ```yaml
+  name: master-architect
+  description: Progetta architetture di sistema perfette, gerarchie di agenti, ecosistemi complessi e piani di implementazione a prova di proiettile.
+  intent: Guidare l'utente nella progettazione di un ecosistema AI, definendo topologie di sciame, barriere di contesto e layer di orchestrazione.
+  type: interactive
+  ```
+
+## Fase 2: Definizione del Modello Interattivo (L'Intervista Architetturale)
+La skill dovrà funzionare come un'intervista diagnostica e progettuale (simile a `context-engineering-advisor`).
+- [ ] **Step 1: Scope & Vision:** La skill chiede all'utente l'obiettivo finale dell'ecosistema.
+- [ ] **Step 2: Component Breakdown:** La skill scompone l'obiettivo in domini di responsabilità (chi fa cosa).
+- [ ] **Step 3: Topology Design:** La skill propone la migliore struttura di swarm (pipeline, gerarchica, maglia).
+- [ ] **Step 4: Memory & Context:** La skill definisce come fluiscono le informazioni senza causare "context stuffing".
+
+## Fase 3: Template dei Risultati (Gli Output)
+La skill non deve solo dare consigli, ma produrre artefatti tangibili e "perfetti".
+- [ ] Definire il template per il **Documento di Architettura (ADR - Architecture Decision Record)**.
+- [ ] Definire il template per la **Mappa degli Agenti (Agents Topology Map)**.
+- [ ] Definire il template per il **Piano di Esecuzione (PLAN-XX.md)**.
+
+## Fase 4: Integrazione nell'Ecosistema AION
+- [ ] Istruire la skill su come agganciarsi a `@claude-flow/cli` per tradurre l'architettura pensata in comandi di inizializzazione reali (es. `npx @claude-flow/cli swarm init --topology hierarchical`).
+- [ ] Definire le regole affinché il Master Architect imposti correttamente i file `CLAUDE.md` e la struttura di directory per i nuovi progetti.
+
+## Fase 5: Collaudo e Perfezionamento
+- [ ] Testare la skill chiedendole di progettare un ecosistema di agenti per il Customer Service.
+- [ ] Verificare che il piano generato includa limiti di contesto stretti e protocolli di comunicazione asincroni (SendMessage).
+- [ ] Affinare il prompt di sistema della skill per renderlo inflessibile sulle "cattive pratiche" (es. rifiutarsi di creare un "super-agente tuttofare", imponendo invece la scomposizione in sub-agenti).
+
+# Analisi Morale e Strutturale dell'Ecosistema "AION Studio"
+
+Questa analisi esplora il significato profondo, l'etica sistemica e l'architettura filosofica dell'Ecosistema Content Factory.
+
+## 1. La Filosofia dell'Orchestrazione (Dal Caos alla Sinfonia)
+L'ecosistema non è una semplice collezione di script, ma una **"Azienda di Agenti"** (Agentic Intelligent Orchestration Network). A livello morale, rappresenta il passaggio dal *lavoro umano come fatica esecutiva* al *lavoro umano come direzione creativa*. 
+- **La Gerarchia (L3 -> L2 -> L1):** I 29 team non operano nel caos probabilistico degli LLM, ma sono imbrigliati in una struttura di responsabilità chiara. Ogni agente ha un compito preciso e un limite di autorità. Questa "gabbia d'oro" garantisce che l'intelligenza artificiale sia focalizzata e utile, non dispersiva o allucinata.
+- **Il Principio di Responsabilità:** L'orchestrazione ("conductor", "dispatch") separa chi decide da chi esegue e da chi controlla ("qa"). Questo riflette una morale organizzativa umana sana, proiettata su entità digitali.
+
+## 2. Il Rispetto dell'Attenzione (Context Engineering)
+Come evidenziato dalle skill dell'ecosistema, c'è un profondo rispetto per l'"Attenzione" intesa come risorsa scarsa e preziosa. Il rifiuto del "Context Stuffing" (buttare tutto nel prompt sperando che l'AI capisca) è una presa di posizione etica sull'ingegneria: **il rumore è il nemico della ragione**. L'ecosistema pretende che la conoscenza sia strutturata, distillata e servita solo quando serve ("Just-in-time retrieval").
+
+## 3. L'Ecosistema come Estensione del Sé (Soul ID & Higgsfield)
+L'integrazione di strumenti come Higgsfield per la creazione di "Soul ID" (modelli basati sull'identità) tocca un punto nevralgico: la digitalizzazione dell'identità. L'ecosistema permette di replicare, scalare e manipolare l'estetica e la presenza umana. La morale qui risiede nel **controllo dell'utente sulla propria rappresentazione** e nella capacità della Factory di mantenere una coerenza d'identità attraverso i vari media (immagini, video, motion).
+
+## 4. Memoria e Apprendimento Iterativo
+L'infrastruttura di memoria (checkpoint, ADR, hooks) significa che l'ecosistema *impara*. Non è uno strumento usa-e-getta, ma un'entità in evoluzione. L'etica sistemica qui è la **persistenza del valore**: ogni errore corretto diventa saggezza strutturale (memoria procedurale).
+
+## 5. Sintesi Morale
+L'Ecosistema AION Studio incarna l'ideale del **"Centauro Digitale"**: l'umano fornisce la Visione e la scintilla originaria (il "brief UGC"), mentre la macchina fornisce l'estensione infinita del braccio operativo. L'architettura perfetta non è quella che elimina l'uomo, ma quella che lo eleva al ruolo di puro Architetto e Direttore d'Orchestra, eliminando l'attrito tra il pensiero e la sua manifestazione fisica.
+
+
+# Contesto e Base di Conoscenza: Skill "Master Architect"
+
+Questa è la base di conoscenza fondamentale che la futura skill "Master Architect" dovrà assimilare per progettare ecosistemi, gerarchie di agenti e piani di implementazione perfetti.
+
+## 1. Principi Fondamentali dell'Architettura Agente
+Per creare "perfette architettature", il Master Architect deve basarsi su questi assiomi:
+- **Principio di Singola Responsabilità (Agent-Level):** Nessun agente deve fare due cose. Se un agente fa ricerca e scrive codice, l'architettura è fallata. Crea due agenti e un coordinatore.
+- **Topologie di Rete Determinate:**
+  - *Pipeline (A -> B -> C):* Per processi trasformativi lineari (es. Idea -> Copy -> Video -> QA).
+  - *Supervisor/Fan-out (Lead -> Workers):* Per compiti paralleli (es. Lead chiede a 3 agenti di ricercare 3 competitor, poi sintetizza).
+  - *Hierarchical-Mesh:* Per ecosistemi complessi (L3 Direzione -> L2 Team -> L1 Worker), usato in AION Studio.
+- **Comunicazione "SendMessage-First":** Gli agenti non condividono uno stato globale mutabile (che genera caos). Comunicano scambiandosi messaggi strutturati. Il passaggio di consegne è esplicito.
+
+## 2. Il Ciclo "Research -> Plan -> Reset -> Implement"
+L'architettura perfetta previene il "Context Rot" (marciume del contesto) imponendo barriere di memoria:
+1. Ricerca (caos ampiamente tollerato).
+2. Pianificazione (sintesi ad alta densità, creazione di `PLAN-XX.md`).
+3. **RESET (svuotamento totale della memoria a breve termine).**
+4. Implementazione (esecuzione pulita basata SOLO sul piano).
+
+## 3. Gestione della Memoria Architetturale
+Il Master Architect deve strutturare gli ecosistemi su due layer di memoria:
+- **Procedurale (Come si fanno le cose):** SOP (Standard Operating Procedures), `CLAUDE.md`, regole fisse.
+- **Dichiarativa (I fatti):** Database vettoriali, `MEMORY-INDEX.md`, stato dell'arte del progetto.
+
+## 4. Astrazioni Obbligatorie in un Ecosistema
+Ogni ecosistema disegnato dal Master Architect DEVE prevedere:
+- **Orchestration Layer:** Il "cervello" che alloca risorse e dispaccia task (es. `conductor`, `dispatch`).
+- **Memory Layer:** Persistenza dello stato (checkpoint, registri di log).
+- **Tool/Skill Bridge:** Interfacce standardizzate (CLI o API) affinché gli agenti possano usare strumenti (es. `hf-studio` per la generazione media).
+- **QA/Verification Gate:** Meccanismi di controllo qualità integrati prima dell'output finale.
+
+## 5. Formattazione dei Piani (I "Perfetti Piani")
+La skill dovrà generare file di piano (`PLAN-XXX.md`) che non siano semplici "to-do list", ma documenti di ingegneria:
+- **Vision & Scope:** Cosa si fa e cosa NON si fa.
+- **Architettura di Rete:** Quali agenti vengono spawnati e come comunicano.
+- **Context Boundaries:** Quale contesto viene fornito a quale agente (evitare Context Stuffing).
+- **Execution Graph:** Ordine cronologico delle operazioni.
+- **Fallback & Recovery:** Cosa succede se l'agente X fallisce il task.

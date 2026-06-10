@@ -1,0 +1,143 @@
+2026-05-14 16:54:52,836  ============================================================
+2026-05-14 16:54:52,836  INSTAGRAM REPAIR RUN  2026-05-14 16:54:52
+2026-05-14 16:54:52,836  ============================================================
+2026-05-14 16:54:52,836  Lead con DM sbagliati da riparare: 9
+2026-05-14 16:54:52,837    @businessmentality2026: 'Gap tra bravura e visibilità online.  Perdi contatti qualifi'...
+2026-05-14 16:54:52,837    @crea.illtuo_impero: 'Perdita di contatti qualificati. Analisi gratuita dei 3 punt'...
+2026-05-14 16:54:52,837    @digitalsuccess_coach_global: 'Perditi contatti qualificati? Scopri 3 punti di perdita. Ana'...
+2026-05-14 16:54:52,837    @focus.ambizioso: 'Ecco un\'opzione di revisione del messaggio:  "Costo per call'...
+2026-05-14 16:54:52,837    @digitalsuccess_coach: 'Sei molto focalizzato sulla qualità. Il tuo tasso conversion'...
+2026-05-14 16:54:52,837    @cjl.studio: 'Ecco una possibile revisione del messaggio:  "Max, @cjl.stud'...
+2026-05-14 16:54:52,838    @beatricemerzi_digitalstrategy: '"Sei molto focalizzato sulla qualità del servizio, ma c\'è se'...
+2026-05-14 16:54:52,838    @gianlucontent: '"Focalizzato sulla qualità, gap online?  Il tuo tasso conver'...
+2026-05-14 16:54:52,838    @donaldmiller: '"Chi lavora bene nel suo campo ha quasi sempre clienti soddi'...
+2026-05-14 16:54:55,049  Verifica sessione Instagram...
+2026-05-14 16:55:03,735    Sessione valida [OK]
+2026-05-14 16:55:03,735  
+[1/9] Riparazione @businessmentality2026
+2026-05-14 16:55:03,738    Apro DM con @businessmentality2026...
+2026-05-14 16:55:15,242    Messaggio sbagliato trovato @ (1102, 677)
+2026-05-14 16:55:21,185    Bottone opzioni messaggio non trovato dopo hover
+2026-05-14 16:55:21,185    @businessmentality2026: unsend fallito — invio comunque il nuovo messaggio
+2026-05-14 16:55:21,896  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:55:22,166  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:55:22,436  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:55:22,439    Nuovo msg (17 parole): 'Ciao Mentalità\nFocalizzato sulla qualità, gap online?\nPerdi contatti q'...
+2026-05-14 16:55:52,707    @businessmentality2026: nuovo DM inviato [OK]
+2026-05-14 16:56:18,089  
+[2/9] Riparazione @crea.illtuo_impero
+2026-05-14 16:56:18,093    Apro DM con @crea.illtuo_impero...
+2026-05-14 16:56:29,868    Messaggio sbagliato trovato @ (1092, 657)
+2026-05-14 16:56:35,855    Bottone opzioni messaggio non trovato dopo hover
+2026-05-14 16:56:35,855    @crea.illtuo_impero: unsend fallito — invio comunque il nuovo messaggio
+2026-05-14 16:56:36,157  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:56:36,546  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:56:36,821  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:56:36,823    Nuovo msg (28 parole): 'Ciao Crea\nChi lavora bene ha clienti soddisfatti\nperdi contatti qualif'...
+2026-05-14 16:57:09,368    @crea.illtuo_impero: nuovo DM inviato [OK]
+2026-05-14 16:57:49,156  
+[3/9] Riparazione @digitalsuccess_coach_global
+2026-05-14 16:57:49,162    Apro DM con @digitalsuccess_coach_global...
+2026-05-14 16:58:00,711    Messaggio sbagliato trovato @ (1092, 584)
+2026-05-14 16:58:06,697    Bottone opzioni messaggio non trovato dopo hover
+2026-05-14 16:58:06,699    @digitalsuccess_coach_global: unsend fallito — invio comunque il nuovo messaggio
+2026-05-14 16:58:06,760  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 16:58:06,960  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:58:06,993  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 16:58:07,207  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:58:07,244  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 16:58:07,452  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:58:07,454    Nuovo msg (66 parole): 'Ciao Success\n\nChi lavora bene nel suo campo ha clienti soddisfatti, ma'...
+2026-05-14 16:58:50,398    @digitalsuccess_coach_global: nuovo DM inviato [OK]
+2026-05-14 16:59:27,127  
+[4/9] Riparazione @focus.ambizioso
+2026-05-14 16:59:27,133    Apro DM con @focus.ambizioso...
+2026-05-14 16:59:38,887    Messaggio sbagliato trovato @ (1099, 667)
+2026-05-14 16:59:44,838    Bottone opzioni messaggio non trovato dopo hover
+2026-05-14 16:59:44,838    @focus.ambizioso: unsend fallito — invio comunque il nuovo messaggio
+2026-05-14 16:59:44,909  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 16:59:45,063  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:59:45,104  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 16:59:45,289  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:59:45,331  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 16:59:45,561  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 16:59:45,567    Nuovo msg (51 parole): 'Ciao Focus\n\nChiudi quasi tutte le call con chi ti conosce già, ma il 6'...
+2026-05-14 17:00:22,751    @focus.ambizioso: nuovo DM inviato [OK]
+2026-05-14 17:01:04,575  
+[5/9] Riparazione @digitalsuccess_coach
+2026-05-14 17:01:04,578    Apro DM con @digitalsuccess_coach...
+2026-05-14 17:01:16,097    Messaggio sbagliato trovato @ (1092, 572)
+2026-05-14 17:01:22,068    Bottone opzioni messaggio non trovato dopo hover
+2026-05-14 17:01:22,068    @digitalsuccess_coach: unsend fallito — invio comunque il nuovo messaggio
+2026-05-14 17:01:22,173  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:01:22,173  Retrying request to /chat/completions in 12.000000 seconds
+2026-05-14 17:01:34,233  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:01:34,414  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:01:34,445  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:01:34,754  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:01:34,788  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:01:34,941  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:01:34,941    Nuovo msg (64 parole): 'Ciao Digital\n\nQuando lavori bene nel tuo campo, ma non ti vedi online,'...
+2026-05-14 17:02:17,341    @digitalsuccess_coach: nuovo DM inviato [OK]
+2026-05-14 17:02:49,761  
+[6/9] Riparazione @cjl.studio
+2026-05-14 17:02:49,765    Apro DM con @cjl.studio...
+2026-05-14 17:03:01,338    Messaggio sbagliato trovato @ (1099, 667)
+2026-05-14 17:03:07,295    Bottone opzioni messaggio non trovato dopo hover
+2026-05-14 17:03:07,296    @cjl.studio: unsend fallito — invio comunque il nuovo messaggio
+2026-05-14 17:03:07,553  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:03:07,591  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:03:07,932  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:03:07,969  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:03:08,136  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:03:08,136    Nuovo msg (70 parole): 'Ciao Cameron\nChi lavora come freelancer nel marketing spesso si trova '...
+2026-05-14 17:03:53,005    @cjl.studio: nuovo DM inviato [OK]
+2026-05-14 17:04:32,478  
+[7/9] Riparazione @beatricemerzi_digitalstrategy
+2026-05-14 17:04:32,482    Apro DM con @beatricemerzi_digitalstrategy...
+2026-05-14 17:04:44,109    Messaggio sbagliato trovato @ (1092, 497)
+2026-05-14 17:04:50,047    Bottone opzioni messaggio non trovato dopo hover
+2026-05-14 17:04:50,047    @beatricemerzi_digitalstrategy: unsend fallito — invio comunque il nuovo messaggio
+2026-05-14 17:04:50,180  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:04:50,346  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:04:50,395  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:04:50,583  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:04:50,627  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:04:50,781  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:04:50,782    Nuovo msg (43 parole): 'Ciao Beatrice\n\nIspirazione: chi lavora bene nel suo campo ha clienti s'...
+2026-05-14 17:05:29,155    @beatricemerzi_digitalstrategy: nuovo DM inviato [OK]
+2026-05-14 17:06:05,743  
+[8/9] Riparazione @gianlucontent
+2026-05-14 17:06:05,746    Apro DM con @gianlucontent...
+2026-05-14 17:06:17,557    Messaggio sbagliato trovato @ (1092, 667)
+2026-05-14 17:06:23,500    Bottone opzioni messaggio non trovato dopo hover
+2026-05-14 17:06:23,500    @gianlucontent: unsend fallito — invio comunque il nuovo messaggio
+2026-05-14 17:06:23,597  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:06:23,759  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:23,791  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:06:24,012  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:24,043  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:06:24,308  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:06:24,309    Nuovo msg (56 parole): 'Ciao Gianluca\n\nChi lavora bene ha clienti soddisfatti, ma il suo valor'...
+2026-05-14 17:07:04,709    @gianlucontent: nuovo DM inviato [OK]
+2026-05-14 17:07:48,529  
+[9/9] Riparazione @donaldmiller
+2026-05-14 17:07:48,535    Apro DM con @donaldmiller...
+2026-05-14 17:08:00,645    Messaggio sbagliato trovato @ (1092, 557)
+2026-05-14 17:08:06,579    Bottone opzioni messaggio non trovato dopo hover
+2026-05-14 17:08:06,579    @donaldmiller: unsend fallito — invio comunque il nuovo messaggio
+2026-05-14 17:08:06,867  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:06,912  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:08:07,197  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:07,242  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-14 17:08:07,642  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 17:08:07,642    Nuovo msg (35 parole): 'Ciao Business\n\nChi lavora bene online? Hai sicuramente notato che ogni'...
+2026-05-14 17:08:42,562    @donaldmiller: nuovo DM inviato [OK]
+2026-05-14 17:08:45,410  
+============================================================
+2026-05-14 17:08:45,410  REPAIR COMPLETATO
+2026-05-14 17:08:45,410    Riparati correttamente:  9
+2026-05-14 17:08:45,411    Unsend fallito (inviato nuovo):  0
+2026-05-14 17:08:45,411    Invio nuovo fallito:     0
+2026-05-14 17:08:45,411    Errori gravi:            0
+2026-05-14 17:08:45,411  ============================================================

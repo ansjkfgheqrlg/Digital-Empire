@@ -1,0 +1,287 @@
+
+=======================================================
+  emails_ready.json — riepilogo
+=======================================================
+  Da inviare   : 40
+  Già inviate  : 0
+  Con errori   : 105
+  Blacklist    : 1 indirizzi bloccati
+  Delay        : 90s tra invii (~60min tot)
+=======================================================
+
+ANTEPRIMA prime 3 email:
+
+  [psicologo] Bologna 1 Psicologo
+  To     : info@psicologobologna1.it
+  Oggetto: Il tuo sito è un'opportunità persa per pazienti a Bologna
+
+  [palestra] Firenze 1 Palestra
+  To     : info@palestrafirenze1.it
+  Oggetto: Come Firenze 1 Palestra sta perdendo clienti a causa del tuo sito web
+
+  [estetica] Napoli 2 Estetica
+  To     : info@esteticanapoli2.it
+  Oggetto: Prenotazioni last-minute persi da Napoli 2 Estetica
+
+AUTO: invio 40 email senza conferma interattiva.
+
+
+Inizio invio (40 email, cap 50/giorno)...
+
+[01/40] Bologna 1 Psicologo
+         To     : info@psicologobologna1.it
+         Oggetto: Il tuo sito è un'opportunità persa per pazienti a Bologna
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6fff9ab8sm175766055e9.2 - gsmtp')
+         Attendo 90s...
+[02/40] Firenze 1 Palestra
+         To     : info@palestrafirenze1.it
+         Oggetto: Come Firenze 1 Palestra sta perdendo clienti a causa del tuo
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-454917d57aesm23976905f8f.26 - gsmtp')
+         Attendo 90s...
+[03/40] Napoli 2 Estetica
+         To     : info@esteticanapoli2.it
+         Oggetto: Prenotazioni last-minute persi da Napoli 2 Estetica
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e702e0bf2sm292136955e9.4 - gsmtp')
+         Attendo 90s...
+[04/40] Bari 1 Studio
+         To     : info@commercialistabari1.it
+         Oggetto: Il tuo sito web di Bari 1 Studio si carica lentamente
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6d8efc35sm100724015e9.2 - gsmtp')
+         Attendo 90s...
+[05/40] Verona 2 Studio Medico
+         To     : info@studiomedicoverona2.it
+         Oggetto: Il tuo sito è una vetrina: come attirare i pazienti di Veron
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6d8946a5sm95285665e9.0 - gsmtp')
+         Attendo 90s...
+[06/40] Roma 3 Studio Legale
+         To     : info@legaleroma3.it
+         Oggetto: Sito base senza prenotazione online
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-45491da03a7sm24078444f8f.33 - gsmtp')
+         Attendo 90s...
+[07/40] Milano 3 Fisio
+         To     : info@fisiomilano3.it
+         Oggetto: Prenotazioni online per pazienti di Milano 3 Fisio
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-45491ca383asm23356651f8f.28 - gsmtp')
+         Attendo 90s...
+[08/40] Napoli 2 Psicologo
+         To     : info@psicologonapoli2.it
+         Oggetto: Sito di Napoli 2 Psicologo troppo essenziale
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e702e5614sm170791535e9.9 - gsmtp')
+         Attendo 90s...
+[09/40] Torino 2 Palestra
+         To     : info@palestratorino2.it
+         Oggetto: Sito di Torino 2 Palestra: un'opportunità persa
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6fff9c91sm177612765e9.1 - gsmtp')
+         Attendo 90s...
+[10/40] Bologna 2 Estetica
+         To     : info@esteticabologna2.it
+         Oggetto: Il 30% degli slot vuoti a Bologna 2 Estetica potrebbe essere
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6d89af2esm59224655e9.0 - gsmtp')
+         Attendo 90s...
+[11/40] Milano 2 Studio
+         To     : info@commercialistamilano2.it
+         Oggetto: Sito informativo di Milano 2 Studio: come migliorarlo
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e702e6d41sm215214555e9.7 - gsmtp')
+         Attendo 90s...
+[12/40] Roma 3 Studio Medico
+         To     : info@studiomedicoroma3.it
+         Oggetto: Il 62% dei pazienti a Roma cerca cure mediche tra le 18 e le
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e702e5516sm258710005e9.7 - gsmtp')
+         Attendo 90s...
+[13/40] Napoli 2 Studio Legale
+         To     : info@legalenapoli2.it
+         Oggetto: Il tuo sito di avvocato a Napoli è solo una vetrina
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6fff9c91sm178065135e9.1 - gsmtp')
+         Attendo 90s...
+[14/40] Firenze 2 Fisio
+         To     : info@fisiofirenze2.it
+         Oggetto: Sito di Firenze 2 Fisio: 15 prezzi a rischio per ogni ora ch
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e702e042dsm175827685e9.5 - gsmtp')
+         Attendo 90s...
+[15/40] Roma 2 Psicologo
+         To     : info@psicologoroma2.it
+         Oggetto: Il tuo sito di psicologia a Roma manca un elemento essenzial
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-454916df968sm24457131f8f.25 - gsmtp')
+         Attendo 90s...
+[16/40] Torino 2 Estetica
+         To     : info@esteticatorino2.it
+         Oggetto: Sito solo vetrina a Torino 2 Estetica
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e7041c4e8sm163221635e9.14 - gsmtp')
+         Attendo 90s...
+[17/40] Roma 2 Studio
+         To     : info@commercialistaroma2.it
+         Oggetto: Il tuo sito di         Oggetto: Il tuo sito di psicologia a Roma manca un elemento essenzial
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-454917d57aesm24111989f8f.26 - gsmtp')
+         Attendo 90s...
+[18/42] Torino 2 Estetica
+         To     : info@esteticatorino2.it
+         Oggetto: Sito solo vetrina a Torino 2 Estetica
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6d8d6988sm56969765e9.5 - gsmtp')
+         Attendo 90s...
+[19/42] Roma 2 Studio
+         To     : info@commercialistaroma2.it
+         Oggetto: Il tuo sito di commercialista a Roma 2 Studio non cattura cl
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6d8d69a0sm58092695e9.2 - gsmtp')
+         Attendo 90s...
+[20/42] Napoli 2 Studio Medico
+         To     : info@studiomediconapoli2.it
+         Oggetto: Sito informativo di Napoli 2 Studio Medico: ottimizzazione p
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6fff9c91sm178601455e9.1 - gsmtp')
+         Attendo 90s...
+[21/42] Torino 2 Studio Legale
+         To     : info@legaletorino2.it
+         Oggetto: Il tuo sito web è essenziale per i tuoi clienti a Torino
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e702ec426sm162891095e9.10 - gsmtp')
+         Attendo 90s...
+[22/42] Firenze 2 Psicologo
+         To     : info@psicologofirenze2.it
+         Oggetto: Il tuo sito web di Firenze 2 Psicologo non convince i tuoi p
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e701e9585sm165183185e9.5 - gsmtp')
+         Attendo 90s...
+[23/42] Bologna 3 Palestra
+         To     : info@palestrabologna3.it
+         Oggetto: Il tuo sito informativo non convince i potenziali iscritti a
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e702e042dsm176473285e9.5 - gsmtp')
+         Attendo 90s...
+[24/42] Milano 2 Estetica
+         To     : info@esteticamilano2.it
+         Oggetto: Sistema di prenotazione last-minute per clienti di Milano 2 
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-45491e94c0fsm24587310f8f.32 - gsmtp')
+         Attendo 90s...
+[25/42] Firenze 2 Studio
+         To     : info@commercialistafirenze2.it
+         Oggetto: Il tuo sito di Firenze 2 Studio è una sola vetrina: come rac
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-45491da03a7sm24225557f8f.33 - gsmtp')
+         Attendo 90s...
+[26/42] Roma 4 Studio Medico
+         To     : info@studiomedicoroma4.it
+         Oggetto: Il tuo sito a Roma si perde pazienti a causa della mancanza 
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6fff9c91sm179152755e9.1 - gsmtp')
+         Attendo 90s...
+[27/42] Milano 5 Studio Legale
+         To     : info@legalemilano5.it
+         Oggetto: Il tuo sito informativo per avvocati a Milano non convince i
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6db1e1a1sm56677665e9.34 - gsmtp')
+         Attendo 90s...
+[28/42] Torino 3 Fisio
+         To     : info@fisiotorino3.it
+         Oggetto: La tua porta di ingresso online manca a Torino 3 Fisio
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e7040a9a9sm292600125e9.9 - gsmtp')
+         Attendo 90s...
+[29/42] Firenze 2 Palestra
+         To     : info@palestrafirenze2.it
+         Oggetto: Sito di Firenze 2 Palestra: come non conquistare gli iscritt
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-45491ca2fd6sm24664591f8f.30 - gsmtp')
+         Attendo 90s...
+[30/42] Studio Legale Marone
+         To     : info@studiomarone.com
+         Oggetto: Studio Legale Marone: il 70% dei nuovi clienti perde tempo i
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6f9fc89asm179482035e9.0 - gsmtp')
+         Attendo 90s...
+[31/42] Studio Legale Civale
+         To     : avvocato@studiocivale.it
+         Oggetto: Sito informativo di Studio Legale Civale: come migliorare l'
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-4549120ec0asm23376109f8f.17 - gsmtp')
+         Attendo 90s...
+[32/42] Studio Tosi Morrone Isoppo
+         To     : info@studiolegaletosimorroneisoppo.it
+         Oggetto: Studio Tosi Morrone Isoppo: come migliorare l'esperienza dei
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6fff9c91sm179727715e9.1 - gsmtp')
+         Attendo 90s...
+[33/42] Studio Spiniello
+         To     : info@studiospiniello.it
+         Oggetto: Stato digitale di Studio Spiniello: come migliorare l'esperi
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6db0b95asm78191155e9.9 - gsmtp')
+         Attendo 90s...
+[34/42] Studio Legale Romano
+         To     : info@studiolegaleromano.it
+         Oggetto: Sito informativo senza booking online - Studio Legale Romano
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e702ec599sm153441035e9.11 - gsmtp')
+         Attendo 90s...
+[35/42] Studio Medico Specialistico
+         To     : info@medicosemi.it
+         Oggetto: Il tuo sito medico senza prenotazione online a Milano
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e6d895781sm103076865e9.0 - gsmtp')
+         Attendo 90s...
+[36/42] Centro Beauty Roma
+         To     : info@beautyroma.it
+         Oggetto: Prenotazione last-minute per clienti del Centro Beauty Roma
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e7040a9a9sm293924445e9.9 - gsmtp')
+         Attendo 90s...
+[37/42] Fit Firenze
+         To     : info@fitfirenze.it
+         Oggetto: Il 90% dei potenziali iscritti a Fit Firenze lascia il sito 
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e7041067dsm159100315e9.13 - gsmtp')
+         Attendo 90s...
+[38/42] Studio Legale Celeste 2
+         To     : info@studiolegaleceleste2.it
+         Oggetto: Sito web informativo senza prenotazione online
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-4548ec6c79fsm25349971f8f.15 - gsmtp')
+         Attendo 90s...
+[39/42] Studio Dott. Grigio 2
+         To     : info@studiogrigio2.it
+         Oggetto: Il tuo sito web a Napoli non convince i clienti
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e7041defesm174653405e9.15 - gsmtp')
+         Attendo 90s...
+[40/42] Studio Dott. Viola 2
+         To     : info@studioviola2.it
+         Oggetto: Il tuo sito web di Studio Dott. Viola 2 non è pronto per il 
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-4548e4bb87bsm23220530f8f.2 - gsmtp')
+         Attendo 90s...
+[41/42] Studio Dott. Bianco 3
+         To     : info@studiobianco3.it
+         Oggetto: Sito web essenziale per Studio Dott. Bianco 3
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e702e5516sm262486615e9.7 - gsmtp')
+         Attendo 90s...
+[42/42] Centro Beauty Firenze 2
+         To     : info@beautyfirenze2.it
+         Oggetto: Risparmia tempo e guadagna clienti prenotando online
+         From   : max.infoproducer@gmail.com
+         ERRORE SMTP: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-48e702e5614sm173982935e9.9 - gsmtp')
+
+=======================================================
+RISULTATO: 0 inviate | 42 errori
+Log aggiornato: emails_b6_ready.json
+=======================================================
+

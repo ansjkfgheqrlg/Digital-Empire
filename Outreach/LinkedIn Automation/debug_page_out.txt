@@ -1,0 +1,17 @@
+Carico pagina ricerca...
+
+1. Link /in/ dopo 15s di attesa: 0
+
+2. Script/code tags con dati JSON: 0
+
+3. Slug /in/... trovati nell'HTML: 0
+
+4. JSON API responses catturate: 30
+   Di cui con 'search/cluster/people': 1
+   https://www.linkedin.com/litms/api/metadata/user
+   https://www.linkedin.com/sensorCollect/?action=reportMetrics
+   https://platform.linkedin.com/litms/allowlist/voyager-web-global
+   https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&variables=(memberIdentity:ACoAA
+   https://www.linkedin.com/voyager/api/voyagerGlobalAlerts?adHocAlerts=true&alertWithActions=true&q=fi
+
+5. Prima search response salvata: c:\Users\Utente\Desktop\qui tutto\Digital Empire\Outreach\LinkedIn Automation\debug_search_response.json

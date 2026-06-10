@@ -1,0 +1,51 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "section:(copy)",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "section:(funnel)",
+      "color": {
+        "a": 1,
+        "rgb": 14979306
+      }
+    },
+    {
+      "query": "section:(Andrei)",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "section:(skill)",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -1,
+  "nodeSizeMultiplier": 1.10882352941176,
+  "lineSizeMultiplier": 2.4143598615917,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10.2768166089965,
+  "linkStrength": 0,
+  "linkDistance": 258,
+  "scale": 0.41366041862725256,
+  "close": true
+}

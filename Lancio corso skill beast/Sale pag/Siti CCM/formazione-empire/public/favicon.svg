@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c77a"/>
+      <stop offset="50%" stop-color="#c9a55b"/>
+      <stop offset="100%" stop-color="#6b5020"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="22" fill="#121110"/>
+  <text x="50" y="68" text-anchor="middle" font-family="Onest, system-ui, -apple-system, sans-serif" font-size="58" font-weight="900" fill="url(#g)">F</text>
+</svg>

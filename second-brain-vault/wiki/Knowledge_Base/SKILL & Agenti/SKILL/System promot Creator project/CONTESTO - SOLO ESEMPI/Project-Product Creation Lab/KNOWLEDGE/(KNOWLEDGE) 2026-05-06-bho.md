@@ -1,0 +1,1180 @@
+# bho
+            
+> Path: [[Map - Skill_And_Agenti|SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Product Creation Lab > KNOWLEDGE]]
+
+## Content
+
+# ═══════════════════════════════════════════════════════════════
+# 📄 CROSS_POLLINATION_ENGINE.md
+# ═══════════════════════════════════════════════════════════════
+# Versione: 1.0
+# Categoria: CORE_LOGIC
+# Priorità: P0 — BLOCCANTE
+# Dipendenze: TEMPLATE_ARCHITETTURA.md, PIPELINE_OVERVIEW.md,
+#             STANDARD_QUALITA.md
+# Referenziato da: Custom Instructions §2 (Processi di
+#                  Ragionamento), §5 (Utilizzo Knowledge Base),
+#                  §8 (Workflow Operativi)
+# ═══════════════════════════════════════════════════════════════
+
+
+# ═══════════════════════════════════════════════════════════════
+# 📋 SCOPO
+# ═══════════════════════════════════════════════════════════════
+
+# Questo file contiene il MOTORE OPERATIVO COMPLETO della
+# cross-pollination tra i 3 pillar di Digital Empire + i 2
+# satellite. Definisce:
+#
+# 1. I 12 flussi bidirezionali di sinergia
+# 2. La logica di selezione delle azioni settimanali
+# 3. Il sistema di scoring dell'efficacia
+# 4. I protocolli di tracking e misurazione
+# 5. L'algoritmo di prioritizzazione delle azioni
+# 6. I template di reporting cross-pillar
+#
+# La cross-pollination è il MOLTIPLICATORE di Digital Empire.
+# Senza di essa, i 3 pillar sono 3 business separati.
+# Con essa, ogni pillar alimenta gli altri creando un
+# effetto compound interest.
+#
+# Principio fondamentale:
+# "1 azione cross-pillar a settimana × 52 settimane =
+#  compound interest che nessun competitor può replicare."
+
+
+# ═══════════════════════════════════════════════════════════════
+# 📖 CONTENUTO PRINCIPALE
+# ═══════════════════════════════════════════════════════════════
+
+
+# ───────────────────────────────────────────────────────────────
+# SEZIONE 1: MAPPA DEI 12 FLUSSI BIDIREZIONALI
+# ───────────────────────────────────────────────────────────────
+
+# Architettura completa di tutte le sinergie possibili.
+# Ogni flusso è un canale attraverso cui valore, contenuto,
+# lead o autorità passano da un pillar all'altro.
+
+CROSS_POLLINATION_FLOWS = {
+
+    # ═══════════════════════════════════════════════════════
+    # BLOCCO A: AGENZIA CRO ↔ INFO-BUSINESS
+    # ═══════════════════════════════════════════════════════
+
+    "FLOW_A1": {
+        "id": "A1",
+        "nome": "Agency → Info: Domande Ricorrenti Clienti",
+        "direzione": "AGENZIA_CRO → INFO_BUSINESS",
+        "cosa_passa": "Domande, dubbi e obiezioni che i clienti "
+                      "dell'agenzia fanno ripetutamente durante "
+                      "briefing, call e sprint review",
+        "valore_generato": "Ogni domanda ricorrente è una VALIDAZIONE "
+                           "di mercato gratuita. Se 7 clienti su 10 "
+                           "chiedono la stessa cosa, c'è domanda per "
+                           "un prodotto info su quel topic.",
+        "azione_operativa": {
+            "trigger": "Ogni briefing o call con cliente agenzia",
+            "step": [
+                "1. Durante il briefing, annota OGNI domanda del "
+                "cliente che non riguarda strettamente il progetto "
+                "in corso (es: 'Come gestisco le obiezioni sul "
+                "prezzo?', 'Come faccio retargeting?', 'Come "
+                "scrivo email che convertono?')",
+                "2. A fine giornata, trascrivi le domande nel "
+                "registro domande (vedi template sotto)",
+                "3. Ogni 2 settimane: rivedi il registro. Le "
+                "domande che appaiono ≥3 volte → trasferisci al "
+                "backlog idee di Info-Biz HQ (P7)",
+                "4. Valuta l'idea con lo scoring framework del "
+                "Product Creation Lab (P8)"
+            ],
+            "frequenza": "CONTINUO (raccolta) + BISETTIMANALE (review)",
+            "output": "Idee prodotto validate dal mercato reale"
+        },
+        "esempio_concreto": {
+            "situazione": "Durante 3 briefing diversi, i clienti "
+                          "chiedono: 'Ma come faccio a capire se il "
+                          "mio copy sulla landing page funziona?'",
+            "azione": "Trasferisci al backlog info-biz → valuta → "
+                      "crea mini-corso 'Landing Page Copy Audit: "
+                      "Il Framework in 7 Step per Valutare e "
+                      "Migliorare il Copy della Tua Landing'",
+            "risultato": "Prodotto info che risolve un problema "
+                         "reale, già validato da clienti paganti"
+        },
+        "metrica_tracking": "domande_raccolte_mese",
+        "metrica_conversione": "domande_diventate_prodotto_trimestre"
+    },
+
+    "FLOW_A2": {
+        "id": "A2",
+        "nome": "Agency → Info: Framework Interni Productizzati",
+        "direzione": "AGENZIA_CRO → INFO_BUSINESS",
+        "cosa_passa": "Framework, checklist, template e processi "
+                      "interni sviluppati per l'agenzia che possono "
+                      "essere trasformati in prodotti info",
+        "valore_generato": "I framework interni sono il tuo IP "
+                           "(Intellectual Property). Già testati "
+                           "su clienti reali. Già validati dai "
+                           "risultati. Trasformarli in prodotti "
+                           "info è il modo più efficiente di creare "
+                           "prodotti: zero ricerca aggiuntiva.",
+        "azione_operativa": {
+            "trigger": "Fine trimestre (durante retrospettiva) o "
+                       "quando crei un nuovo framework interno",
+            "step": [
+                "1. Lista tutti i framework/checklist/template "
+                "usati con i clienti dell'agenzia",
+                "2. Per ogni framework, rispondi: 'Un freelancer "
+                "o marketer potrebbe usare questo DA SOLO senza "
+                "il mio supporto?'",
+                "3. Se SÌ → è un candidato prodotto info",
+                "4. Valuta con scoring P8: domanda di mercato, "
+                "unicità, complessità di creazione",
+                "5. Se score >60 → inserisci nella roadmap "
+                "prodotti info-biz"
+            ],
+            "frequenza": "TRIMESTRALE",
+            "output": "Framework interni trasformati in prodotti"
+        },
+        "esempio_concreto": {
+            "situazione": "Hai creato una checklist CRO a 40 punti "
+                          "che usi con ogni cliente per l'audit",
+            "azione": "Trasforma in: (1) PDF gratuito 'CRO "
+                      "Checklist Light - 15 Punti' come lead "
+                      "magnet, (2) Corso completo 'CRO Audit "
+                      "Masterclass - 40 Punti + Video Walkthrough' "
+                      "come prodotto a pagamento",
+            "risultato": "Lead magnet per lista email + prodotto "
+                         "info da €97-197"
+        },
+        "metrica_tracking": "framework_interni_totali",
+        "metrica_conversione": "framework_diventati_prodotto_anno"
+    },
+
+    "FLOW_A3": {
+        "id": "A3",
+        "nome": "Agency → Info: Casi Studio con Metriche",
+        "direzione": "AGENZIA_CRO → INFO_BUSINESS",
+        "cosa_passa": "Risultati documentati dei progetti agenzia "
+                      "(CR prima/dopo, uplift %, interventi eseguiti, "
+                      "timeline, lezioni apprese)",
+        "valore_generato": "I casi studio sono la MONETA più preziosa "
+                           "nel marketing digitale. Dimostrano "
+                           "competenza con PROVE. Usabili in: webinar, "
+                           "sales page, email, video, proposte.",
+        "azione_operativa": {
+            "trigger": "Ogni progetto agenzia completato",
+            "step": [
+                "1. Compila il template caso studio (sotto)",
+                "2. Chiedi al cliente il permesso di condividere "
+                "(anche in forma anonima se necessario)",
+                "3. Inserisci nella libreria casi studio",
+                "4. Tagga per: settore, tipo intervento, uplift "
+                "ottenuto, dimensione azienda",
+                "5. Usa nei materiali info-biz: webinar (2-3 casi "
+                "per webinar), sales page (1 caso per sezione "
+                "social proof), email (1 caso per email bridge)"
+            ],
+            "frequenza": "PER OGNI PROGETTO COMPLETATO",
+            "output": "Libreria casi studio in crescita continua"
+        },
+        "template_caso_studio": {
+            "titolo": "[Settore] — Da [X]% a [Y]% di CR in [N] giorni",
+            "campi": [
+                "cliente_anonimizzato: str",
+                "settore: str",
+                "situazione_iniziale: str",
+                "cr_prima: float",
+                "cr_dopo: float",
+                "uplift_percentuale: float",
+                "interventi_principali: list[str]",
+                "timeline_giorni: int",
+                "revenue_impatto_stimato: float",
+                "lezione_chiave: str",
+                "testimonial_cliente: str (opzionale)",
+                "permesso_condivisione: bool"
+            ]
+        },
+        "metrica_tracking": "casi_studio_documentati_totali",
+        "metrica_conversione": "casi_studio_usati_in_materiali_info"
+    },
+
+    "FLOW_A4": {
+        "id": "A4",
+        "nome": "Info → Agency: Studenti come Lead Agenzia",
+        "direzione": "INFO_BUSINESS → AGENZIA_CRO",
+        "cosa_passa": "Studenti dei corsi info che hanno aziende "
+                      "con traffico e potrebbero beneficiare dei "
+                      "servizi dell'agenzia CRO",
+        "valore_generato": "Lead PRE-RISCALDATI. Hanno già studiato "
+                           "con te, ti conoscono, si fidano. Il close "
+                           "rate di questi lead è 3-5x superiore a "
+                           "qualsiasi altra fonte.",
+        "azione_operativa": {
+            "trigger": "Fine corso/percorso info + trimestrale",
+            "step": [
+                "1. A fine corso/percorso: invia EMAIL BRIDGE "
+                "(vedi template sotto)",
+                "2. L'email bridge NON è una vendita aggressiva. "
+                "È un'offerta naturale: 'Hai imparato a farlo. "
+                "Se vuoi che il mio team lo faccia PER TE, "
+                "con garanzia di risultato, prenota una call.'",
+                "3. Trimestrale: segmenta la lista studenti per "
+                "'ha un'azienda con traffico > X visite/mese'",
+                "4. Invia offerta audit CRO gratuito a questo "
+                "segmento",
+                "5. Traccia: quanti studenti → lead agenzia → "
+                "clienti chiusi"
+            ],
+            "frequenza": "PER OGNI FINE CORSO + TRIMESTRALE",
+            "output": "Lead qualificati pre-riscaldati per agenzia"
+        },
+        "template_email_bridge": {
+            "subject": "Il prossimo step (solo se hai [condizione])",
+            "struttura": [
+                "HOOK: 'Hai completato [Corso]. Ora sai esattamente "
+                "cosa serve per [risultato].'",
+                "BRIDGE: 'Ma so che implementare tutto da soli "
+                "richiede tempo, competenze del team, e la "
+                "capacità di eseguire senza errori costosi.'",
+                "OFFER: 'Se hai un'azienda con almeno [X] visite "
+                "al mese e vuoi che il mio team faccia tutto "
+                "questo PER TE, con risultati misurabili...'",
+                "CTA: 'Prenota una call strategica gratuita di "
+                "30 minuti: [LINK]'",
+                "PS: 'Questo NON è per tutti. È solo per chi ha "
+                "già traffico e vuole moltiplicare le conversioni "
+                "senza assumere un team interno.'"
+            ]
+        },
+        "metrica_tracking": "studenti_che_ricevono_email_bridge",
+        "metrica_conversione": "studenti_diventati_lead_agenzia"
+    },
+
+    "FLOW_A5": {
+        "id": "A5",
+        "nome": "Info → Agency: Autorità Costruita",
+        "direzione": "INFO_BUSINESS → AGENZIA_CRO",
+        "cosa_passa": "L'autorità e la percezione di expertise "
+                      "costruita attraverso corsi, webinar, "
+                      "contenuti info",
+        "valore_generato": "Quando un prospect dell'agenzia cerca "
+                           "il tuo nome e trova corsi, video, "
+                           "testimonial di studenti → la trust è "
+                           "già costruita PRIMA della call. Close "
+                           "rate più alto. Obiezioni ridotte.",
+        "azione_operativa": {
+            "trigger": "Continuo (strutturale)",
+            "step": [
+                "1. Nel documento strategico che invii ai prospect "
+                "agenzia, includi sezione 'Risorse Educative' con "
+                "link a: corsi gratuiti, video YouTube, PDF",
+                "2. Nella firma email professionale, aggiungi: "
+                "'Autore di [Nome Corso] | [N]+ studenti formati'",
+                "3. Nella pagina 'Chi sono' del sito agenzia, "
+                "sezione dedicata ai corsi e alla community",
+                "4. Durante la sales call, menziona: 'Ho formato "
+                "[N]+ professionisti su questo tema. Ho visto "
+                "centinaia di casi.'"
+            ],
+            "frequenza": "SETUP UNA VOLTA + aggiornamento trimestrale",
+            "output": "Trust pre-costruita che riduce il ciclo di vendita"
+        },
+        "metrica_tracking": "menzioni_corsi_in_materiali_agenzia",
+        "metrica_conversione": "riduzione_ciclo_vendita_medio"
+    },
+
+    # ═══════════════════════════════════════════════════════
+    # BLOCCO B: YOUTUBE ↔ INFO-BUSINESS
+    # ═══════════════════════════════════════════════════════
+
+    "FLOW_B1": {
+        "id": "B1",
+        "nome": "YouTube → Info: Lead verso PDF/Funnel",
+        "direzione": "YOUTUBE → INFO_BUSINESS",
+        "cosa_passa": "Viewer di YouTube che cliccano CTA verso "
+                      "lead magnet (PDF gratuiti) e entrano nel "
+                      "funnel info-business",
+        "valore_generato": "Lead ORGANICI a costo zero. Già educati "
+                           "dal video. Già consapevoli del problema. "
+                           "Conversion rate del funnel più alto "
+                           "rispetto a traffico paid freddo.",
+        "azione_operativa": {
+            "trigger": "Ogni video pubblicato",
+            "step": [
+                "1. OGNI video deve avere una CTA verso un lead "
+                "magnet specifico e rilevante al topic del video",
+                "2. CTA nel video (verbale): 'Se vuoi il framework "
+                "completo di quello che ho spiegato oggi, scarica "
+                "il PDF gratuito — link in descrizione'",
+                "3. CTA nella descrizione: link con UTM univoco "
+                "per quel video (utm_source=youtube&utm_medium="
+                "video&utm_campaign=[video_id])",
+                "4. CTA nel commento pinnato: ripeti il link",
+                "5. Allinea i topic dei video con i topic dei "
+                "prodotti nel catalogo info-biz"
+            ],
+            "frequenza": "OGNI VIDEO",
+            "output": "Flusso costante di lead organici → lista email"
+        },
+        "utm_structure": {
+            "template": "utm_source=youtube&utm_medium=video"
+                        "&utm_campaign={video_slug}"
+                        "&utm_content={cta_position}",
+            "cta_positions": ["description", "pinned_comment",
+                              "end_screen", "card"],
+            "esempio": "https://tuodominio.com/pdf-cro-checklist"
+                       "?utm_source=youtube&utm_medium=video"
+                       "&utm_campaign=5-errori-landing-page"
+                       "&utm_content=description"
+        },
+        "metrica_tracking": "click_link_descrizione_per_video",
+        "metrica_conversione": "lead_da_youtube_mese"
+    },
+
+    "FLOW_B2": {
+        "id": "B2",
+        "nome": "YouTube → Info: Commenti come Idee Prodotto",
+        "direzione": "YOUTUBE → INFO_BUSINESS",
+        "cosa_passa": "Domande e commenti dei viewer che rivelano "
+                      "bisogni, dubbi e problemi non risolti",
+        "valore_generato": "I commenti YouTube sono focus group "
+                           "gratuiti. Le domande ricorrenti = "
+                           "validazione di domanda per nuovi "
+                           "prodotti info.",
+        "azione_operativa": {
+            "trigger": "Settimanale (ogni lunedì)",
+            "step": [
+                "1. Leggi TUTTI i nuovi commenti della settimana",
+                "2. Identifica domande ricorrenti o richieste "
+                "di approfondimento",
+                "3. Categorizza: (a) rispondibile in un commento, "
+                "(b) richiede un video dedicato, (c) richiede "
+                "un prodotto info",
+                "4. Categoria (c) → trasferisci al backlog idee "
+                "Info-Biz HQ",
+                "5. Rispondi SEMPRE ai commenti (engagement + "
+                "algoritmo YouTube)"
+            ],
+            "frequenza": "SETTIMANALE",
+            "output": "Idee prodotto + engagement YouTube"
+        },
+        "metrica_tracking": "commenti_analizzati_settimana",
+        "metrica_conversione": "commenti_diventati_idea_prodotto"
+    },
+
+    "FLOW_B3": {
+        "id": "B3",
+        "nome": "Info → YouTube: Lanci come Content",
+        "direzione": "INFO_BUSINESS → YOUTUBE",
+        "cosa_passa": "Ogni lancio di prodotto info genera 3-5 "
+                      "video potenziali per YouTube",
+        "valore_generato": "Contenuto autentico, con numeri reali, "
+                           "che attrae sia chi vuole imparare il "
+                           "marketing sia chi vuole lanciare prodotti "
+                           "propri. Performance content.",
+        "azione_operativa": {
+            "trigger": "Ogni lancio prodotto info",
+            "step": [
+                "1. PRE-LANCIO: video 'Sto per lanciare [X] — "
+                "ecco la strategia' (behind the scenes)",
+                "2. DURANTE: video 'Day [N] del lancio — "
+                "cosa sta succedendo' (solo se il lancio è "
+                "significativo)",
+                "3. POST-LANCIO: video 'Ho lanciato [X]: "
+                "risultati, numeri, lezioni' (il più importante)",
+                "4. LEZIONI: video 'Gli [N] errori che ho fatto "
+                "nel lancio di [X]' (vulnerability content)",
+                "5. ESTRATTO: prendi il webinar registrato e "
+                "spezzalo in 3-5 clip da 8-15 minuti → video "
+                "YouTube autonomi"
+            ],
+            "frequenza": "PER OGNI LANCIO",
+            "output": "3-5 video YouTube per lancio"
+        },
+        "metrica_tracking": "video_generati_da_lanci",
+        "metrica_conversione": "views_totali_video_lancio"
+    },
+
+    "FLOW_B4": {
+        "id": "B4",
+        "nome": "Info → YouTube: Materiale Corsi → Shorts",
+        "direzione": "INFO_BUSINESS → YOUTUBE",
+        "cosa_passa": "Concetti chiave dai corsi info trasformati "
+                      "in YouTube Shorts di 60 secondi",
+        "valore_generato": "1 corso = 10-20 Shorts potenziali. "
+                           "Content a costo marginale zero. Gli "
+                           "Shorts alimentano l'algoritmo Discovery "
+                           "e portano nuovi iscritti al canale.",
+        "azione_operativa": {
+            "trigger": "Ogni nuovo corso/modulo pubblicato",
+            "step": [
+                "1. Per ogni modulo del corso, identifica i "
+                "'one-liner' — concetti esprimibili in <60 sec",
+                "2. Per ogni one-liner, scrivi uno script Short: "
+                "HOOK (3 sec) + CONTENUTO (45 sec) + CTA (12 sec)",
+                "3. La CTA dello Short punta al video lungo "
+                "correlato O al lead magnet correlato",
+                "4. Batch produce: registra tutti gli Shorts di "
+                "un corso in una sessione",
+                "5. Pubblica 2-3 Shorts/settimana distribuiti"
+            ],
+            "frequenza": "PER OGNI CORSO + batch production",
+            "output": "10-20 Shorts per corso"
+        },
+        "metrica_tracking": "shorts_generati_da_corsi",
+        "metrica_conversione": "iscritti_da_shorts_mese"
+    },
+
+    # ═══════════════════════════════════════════════════════
+    # BLOCCO C: YOUTUBE ↔ AGENZIA CRO
+    # ═══════════════════════════════════════════════════════
+
+    "FLOW_C1": {
+        "id": "C1",
+        "nome": "YouTube → Agency: Trust Pre-Costruita",
+        "direzione": "YOUTUBE → AGENZIA_CRO",
+        "cosa_passa": "Prospect dell'agenzia che guardano i video "
+                      "PRIMA della sales call → arrivano alla call "
+                      "con trust già costruita",
+        "valore_generato": "Close rate 2-3x superiore rispetto a "
+                           "prospect freddi. Ciclo di vendita "
+                           "accorciato. Obiezioni ridotte.",
+        "azione_operativa": {
+            "trigger": "Strutturale + per ogni nuova proposta",
+            "step": [
+                "1. Nella email di conferma call, includi: "
+                "'Prima della nostra call, ti consiglio di "
+                "guardare questi 2-3 video dove spiego il mio "
+                "approccio: [link playlist]'",
+                "2. Crea una PLAYLIST YouTube dedicata: "
+                "'Per Imprenditori — Come Aumentiamo le "
+                "Conversioni dei Nostri Clienti'",
+                "3. La playlist include: 2-3 casi studio, "
+                "1 video sul processo, 1 video su chi sei",
+                "4. Nella proposta scritta, link alla playlist",
+                "5. Traccia: il prospect ha guardato i video "
+                "prima della call? (chiedi all'inizio della call)"
+            ],
+            "frequenza": "SETUP + ogni nuova proposta",
+            "output": "Trust pre-call → close rate superiore"
+        },
+        "metrica_tracking": "prospect_che_guardano_video_pre_call",
+        "metrica_conversione": "close_rate_prospect_video_vs_no_video"
+    },
+
+    "FLOW_C2": {
+        "id": "C2",
+        "nome": "Agency → YouTube: Casi Studio come Video",
+        "direzione": "AGENZIA_CRO → YOUTUBE",
+        "cosa_passa": "Ogni progetto completato diventa 1-2 video "
+                      "YouTube (caso studio + lezioni)",
+        "valore_generato": "Il content più potente possibile: "
+                           "risultati REALI con numeri REALI. "
+                           "Nessun competitor può copiarlo perché "
+                           "sono i TUOI risultati.",
+        "azione_operativa": {
+            "trigger": "Ogni progetto agenzia completato",
+            "step": [
+                "1. Dal template caso studio (FLOW_A3), estrai "
+                "il materiale per il video",
+                "2. Video tipo 1: 'Come abbiamo portato [Azienda] "
+                "dal [X]% al [Y]% di CR in [N] giorni' — "
+                "racconta la storia completa",
+                "3. Video tipo 2: 'I [N] errori che uccidono il "
+                "CR (visti in [X] audit)' — aggrega le lezioni "
+                "di più progetti",
+                "4. Video tipo 3: 'Il framework che usiamo per "
+                "[risultato]' — spiegazione del processo",
+                "5. Usa dati reali (anonimizzati se necessario)"
+            ],
+            "frequenza": "PER OGNI PROGETTO COMPLETATO",
+            "output": "1-2 video YouTube per progetto"
+        },
+        "metrica_tracking": "video_caso_studio_pubblicati",
+        "metrica_conversione": "lead_agenzia_da_video_caso_studio"
+    },
+
+    # ═══════════════════════════════════════════════════════
+    # BLOCCO D: SATELLITE → ECOSYSTEM
+    # ═══════════════════════════════════════════════════════
+
+    "FLOW_D1": {
+        "id": "D1",
+        "nome": "KDP → Info-Biz: Lettori come Lead",
+        "direzione": "KDP → INFO_BUSINESS",
+        "cosa_passa": "Lettori dei libri KDP che seguono il link "
+                      "nel libro e diventano lead nella lista email",
+        "valore_generato": "Canale di acquisizione lead a costo zero "
+                           "con un pubblico già interessato al topic. "
+                           "Il libro fa da 'filtro qualità': chi lo "
+                           "legge è già motivato.",
+        "azione_operativa": {
+            "trigger": "Ogni libro KDP pubblicato",
+            "step": [
+                "1. In OGNI libro, inserisci nella prima pagina "
+                "e nell'ultima: CTA verso lead magnet",
+                "2. Testo tipo: 'Per approfondire con video, "
+                "template ed esercizi pratici, visita [link] "
+                "e scarica la guida gratuita complementare.'",
+                "3. Il link punta a una landing dedicata con "
+                "UTM: utm_source=kindle&utm_medium=book"
+                "&utm_campaign={book_slug}",
+                "4. La landing offre un PDF complementare al "
+                "libro (non il libro stesso ripetuto)",
+                "5. Dal PDF → entra nel funnel email standard"
+            ],
+            "frequenza": "SETUP per ogni libro",
+            "output": "Lead organici da Amazon/KDP"
+        },
+        "metrica_tracking": "click_link_da_libri_kdp",
+        "metrica_conversione": "lead_da_kdp_mese"
+    },
+
+    "FLOW_D2": {
+        "id": "D2",
+        "nome": "KDP → Info-Biz: Validazione Topic",
+        "direzione": "KDP → INFO_BUSINESS",
+        "cosa_passa": "Dati di vendita KDP come segnale di domanda "
+                      "di mercato per prodotti info",
+        "valore_generato": "Se un libro KDP vende bene → il topic "
+                           "ha domanda → crea un corso info su "
+                           "quel topic con confidence alta.",
+        "azione_operativa": {
+            "trigger": "Trimestrale (review KDP)",
+            "step": [
+                "1. Analizza vendite KDP per libro",
+                "2. Identifica i top 3 libri per revenue",
+                "3. Per ogni top performer: esiste già un "
+                "prodotto info su quel topic?",
+                "4. Se NO → candidato forte per nuovo prodotto "
+                "info (domanda già validata)",
+                "5. Se SÌ → il libro è un funnel di acquisizione "
+                "per quel prodotto (aggiungi CTA specifiche)"
+            ],
+            "frequenza": "TRIMESTRALE",
+            "output": "Topic validati per nuovi prodotti info"
+        },
+        "metrica_tracking": "libri_kdp_revenue_per_topic",
+        "metrica_conversione": "topic_kdp_diventati_prodotto_info"
+    }
+}
+
+
+# ───────────────────────────────────────────────────────────────
+# SEZIONE 2: ALGORITMO DI SELEZIONE AZIONE SETTIMANALE
+# ───────────────────────────────────────────────────────────────
+
+# Ogni lunedì, il Command Center deve scegliere 1 azione
+# cross-pillar da eseguire. Questo algoritmo guida la scelta.
+
+def select_weekly_cross_action(
+    pillar_status: dict,
+    last_actions: list,
+    pending_triggers: list,
+    current_okr_gaps: dict
+) -> dict:
+    """
+    Seleziona l'azione cross-pillar della settimana.
+
+    Args:
+        pillar_status: {pillar: "🟢"|"🟡"|"🔴"} per ogni pillar
+        last_actions: ultime 4 azioni cross eseguite (1 mese)
+        pending_triggers: trigger attivi (es: "progetto completato",
+                          "corso lanciato", "video pubblicato")
+        current_okr_gaps: {kr_id: gap_percentuale} per ogni KR
+
+    Returns:
+        Dizionario con: azione selezionata, flusso, priorità, step
+    """
+
+    # STEP 1: Controlla trigger attivi (hanno priorità)
+    # Se c'è un trigger specifico, l'azione collegata è prioritaria
+    trigger_action_map = {
+        "progetto_agenzia_completato": ["A3", "C2"],
+        "corso_info_completato": ["A4", "B4"],
+        "lancio_info_completato": ["B3"],
+        "video_pubblicato": ["B1"],
+        "libro_kdp_pubblicato": ["D1"],
+        "trimestre_concluso": ["A2", "D2"],
+        "briefing_con_domande": ["A1"]
+    }
+
+    if pending_triggers:
+        for trigger in pending_triggers:
+            if trigger in trigger_action_map:
+                flow_ids = trigger_action_map[trigger]
+                return {
+                    "source": "TRIGGER",
+                    "flow_id": flow_ids[0],
+                    "flow": CROSS_POLLINATION_FLOWS[
+                        f"FLOW_{flow_ids[0]}"
+                    ],
+                    "reason": f"Trigger attivo: {trigger}"
+                }
+
+    # STEP 2: Controlla gap OKR cross-pollination
+    # Se un KR cross-poll è molto indietro, prioritizza
+    # le azioni che lo muovono
+    kr_cross_flows = {
+        "kr_studenti_to_lead_agenzia": ["A4", "A5"],
+        "kr_clienti_to_corso": ["A1", "A2", "A3"],
+        "kr_lead_da_youtube": ["B1", "B2", "C1"]
+    }
+
+    max_gap_kr = max(current_okr_gaps.items(),
+                     key=lambda x: x[1], default=None)
+    if max_gap_kr and max_gap_kr[1] > 30:
+        kr_id = max_gap_kr[0]
+        if kr_id in kr_cross_flows:
+            flow_ids = kr_cross_flows[kr_id]
+            # Scegli il flusso meno recente
+            least_recent = _find_least_recent(
+                flow_ids, last_actions
+            )
+            return {
+                "source": "OKR_GAP",
+                "flow_id": least_recent,
+                "flow": CROSS_POLLINATION_FLOWS[
+                    f"FLOW_{least_recent}"
+                ],
+                "reason": f"KR gap critico: {kr_id} ({max_gap_kr[1]}%)"
+            }
+
+    # STEP 3: Distribuzione equilibrata
+    # Se non ci sono trigger né gap critici, scegli il flusso
+    # che non è stato attivato da più tempo
+    all_flow_ids = [f"A{i}" for i in range(1, 6)] + \
+                   [f"B{i}" for i in range(1, 5)] + \
+                   [f"C{i}" for i in range(1, 3)] + \
+                   [f"D{i}" for i in range(1, 3)]
+
+    least_recent_overall = _find_least_recent(
+        all_flow_ids, last_actions
+    )
+    return {
+        "source": "ROTATION",
+        "flow_id": least_recent_overall,
+        "flow": CROSS_POLLINATION_FLOWS[
+            f"FLOW_{least_recent_overall}"
+        ],
+        "reason": "Rotazione equilibrata — flusso più vecchio"
+    }
+
+
+def _find_least_recent(
+    flow_ids: list, last_actions: list
+) -> str:
+    """Trova il flusso che non viene attivato da più tempo."""
+    for fid in flow_ids:
+        if fid not in [a.get("flow_id") for a in last_actions]:
+            return fid
+    return flow_ids[0]
+
+
+# ───────────────────────────────────────────────────────────────
+# SEZIONE 3: SISTEMA DI SCORING EFFICACIA CROSS-POLLINATION
+# ───────────────────────────────────────────────────────────────
+
+SCORING_CONFIG = {
+    "versione": "1.0",
+    "descrizione": "Sistema di scoring per misurare quanto "
+                   "efficacemente le sinergie cross-pillar "
+                   "stanno funzionando",
+
+    "score_components": {
+        "frequenza_azioni": {
+            "peso": 0.25,
+            "calcolo": "azioni_eseguite_mese / 4",
+            "soglia_verde": 1.0,
+            "soglia_gialla": 0.5,
+            "soglia_rossa": 0.25,
+            "max_score": 100
+        },
+        "distribuzione_flussi": {
+            "peso": 0.20,
+            "calcolo": "flussi_unici_attivati_trimestre / 12",
+            "soglia_verde": 0.5,
+            "soglia_gialla": 0.25,
+            "soglia_rossa": 0.08,
+            "max_score": 100
+        },
+        "conversione_bridge": {
+            "peso": 0.30,
+            "calcolo": "conversioni_cross_pillar / lead_totali",
+            "soglia_verde": 0.05,
+            "soglia_gialla": 0.02,
+            "soglia_rossa": 0.005,
+            "max_score": 100
+        },
+        "revenue_cross": {
+            "peso": 0.25,
+            "calcolo": "revenue_da_cross_pollination / "
+                       "revenue_totale",
+            "soglia_verde": 0.10,
+            "soglia_gialla": 0.05,
+            "soglia_rossa": 0.01,
+            "max_score": 100
+        }
+    },
+
+    "score_totale": {
+        "calcolo": "somma_pesata(componenti)",
+        "interpretazione": {
+            "80_100": "🟢 ECCELLENTE — Le sinergie stanno "
+                      "moltiplicando il valore dell'ecosistema",
+            "50_79": "🟡 BUONO — Sinergie attive ma c'è margine "
+                     "di miglioramento",
+            "25_49": "🟡 SUFFICIENTE — Alcune sinergie funzionano "
+                     "ma molte sono dormienti",
+            "0_24": "🔴 CRITICO — I pillar stanno operando in "
+                    "isolamento. Intervento immediato necessario."
+        }
+    }
+}
+
+
+def calculate_cross_pollination_score(
+    azioni_mese: int,
+    flussi_unici_trimestre: int,
+    conversioni_cross: int,
+    lead_totali: int,
+    revenue_cross: float,
+    revenue_totale: float
+) -> dict:
+    """
+    Calcola lo score complessivo di efficacia
+    della cross-pollination.
+
+    Returns:
+        Dizionario con score per componente,
+        score totale, e interpretazione.
+    """
+    config = SCORING_CONFIG["score_components"]
+
+    # Componente 1: Frequenza
+    freq_raw = azioni_mese / 4
+    freq_score = min(freq_raw * 100, 100)
+
+    # Componente 2: Distribuzione
+    dist_raw = flussi_unici_trimestre / 12
+    dist_score = min(dist_raw * 100, 100)
+
+    # Componente 3: Conversione bridge
+    if lead_totali > 0:
+        conv_raw = conversioni_cross / lead_totali
+        conv_score = min(conv_raw / 0.05 * 100, 100)
+    else:
+        conv_score = 0
+
+    # Componente 4: Revenue cross
+    if revenue_totale > 0:
+        rev_raw = revenue_cross / revenue_totale
+        rev_score = min(rev_raw / 0.10 * 100, 100)
+    else:
+        rev_score = 0
+
+    # Score totale pesato
+    total = (
+        freq_score * config["frequenza_azioni"]["peso"] +
+        dist_score * config["distribuzione_flussi"]["peso"] +
+        conv_score * config["conversione_bridge"]["peso"] +
+        rev_score * config["revenue_cross"]["peso"]
+    )
+
+    # Interpretazione
+    if total >= 80:
+        status = "🟢 ECCELLENTE"
+    elif total >= 50:
+        status = "🟡 BUONO"
+    elif total >= 25:
+        status = "🟡 SUFFICIENTE"
+    else:
+        status = "🔴 CRITICO"
+
+    return {
+        "componenti": {
+            "frequenza": round(freq_score, 1),
+            "distribuzione": round(dist_score, 1),
+            "conversione": round(conv_score, 1),
+            "revenue": round(rev_score, 1)
+        },
+        "score_totale": round(total, 1),
+        "status": status,
+        "raccomandazioni": _generate_recommendations(
+            freq_score, dist_score,
+            conv_score, rev_score
+        )
+    }
+
+
+def _generate_recommendations(
+    freq: float, dist: float,
+    conv: float, rev: float
+) -> list:
+    """Genera raccomandazioni basate sui sotto-score."""
+    recs = []
+    if freq < 50:
+        recs.append(
+            "FREQUENZA BASSA: Non stai eseguendo abbastanza "
+            "azioni cross-pillar. Obiettivo minimo: 1/settimana. "
+            "Blocca 15 minuti ogni lunedì nel calendario."
+        )
+    if dist < 50:
+        recs.append(
+            "DISTRIBUZIONE SBILANCIATA: Stai usando solo "
+            "pochi flussi. Esplora i flussi che non hai mai "
+            "attivato. Consulta la mappa completa."
+        )
+    if conv < 50:
+        recs.append(
+            "CONVERSIONE BASSA: Le azioni cross non stanno "
+            "generando risultati misurabili. Rivedi i template "
+            "delle email bridge e i CTA nei video."
+        )
+    if rev < 50:
+        recs.append(
+            "REVENUE CROSS BASSO: Le sinergie non si "
+            "traducono in revenue. Verifica che i bridge "
+            "offer siano attivi e i funnel funzionino."
+        )
+    if not recs:
+        recs.append(
+            "OTTIMO LAVORO: Tutte le componenti sono sane. "
+            "Mantieni la cadenza e cerca di ottimizzare i "
+            "flussi con performance migliore."
+        )
+    return recs
+
+
+# ───────────────────────────────────────────────────────────────
+# SEZIONE 4: REGISTRO AZIONI E TRACKING
+# ───────────────────────────────────────────────────────────────
+
+# Template per il registro settimanale delle azioni cross-pillar.
+# Ogni azione viene registrata con: data, flusso attivato,
+# azione specifica, risultato, e follow-up necessario.
+
+REGISTRO_TEMPLATE = {
+    "versione": "1.0",
+    "entry_schema": {
+        "data": "YYYY-MM-DD",
+        "settimana": "W[NN] del [YYYY]",
+        "flow_id": "A1|A2|...|D2",
+        "flow_nome": "str — nome del flusso attivato",
+        "azione_eseguita": "str — descrizione specifica "
+                           "dell'azione fatta",
+        "tempo_investito": "int — minuti spesi",
+        "risultato_immediato": "str — cosa è successo subito",
+        "risultato_atteso": "str — cosa dovrebbe succedere "
+                            "nelle prossime settimane",
+        "follow_up_necessario": "str | None — se serve "
+                                "un'azione aggiuntiva",
+        "follow_up_data": "YYYY-MM-DD | None",
+        "metrica_impattata": "str — quale metrica questa "
+                             "azione dovrebbe muovere"
+    },
+    "esempio_entry": {
+        "data": "2025-01-13",
+        "settimana": "W03 del 2025",
+        "flow_id": "B3",
+        "flow_nome": "Info → YouTube: Lanci come Content",
+        "azione_eseguita": "Estratte 3 clip da 12 min dal "
+                           "webinar 'CRO Fundamentals' "
+                           "registrato il 08/01. Create "
+                           "thumbnail. Programmate per "
+                           "pubblicazione martedì, giovedì, "
+                           "sabato.",
+        "tempo_investito": 45,
+        "risultato_immediato": "3 video pronti per "
+                               "pubblicazione",
+        "risultato_atteso": "~500-1000 views per video, "
+                            "10-20 nuovi iscritti, 5-10 "
+                            "click su link descrizione",
+        "follow_up_necessario": "Controllare performance "
+                                "dopo 7 giorni",
+        "follow_up_data": "2025-01-20",
+        "metrica_impattata": "lead_da_youtube_mese"
+    }
+}
+
+
+# ───────────────────────────────────────────────────────────────
+# SEZIONE 5: COMPOUND INTEREST CALCULATOR
+# ───────────────────────────────────────────────────────────────
+
+# Questo modello dimostra l'effetto compound delle azioni
+# cross-pillar nel tempo. Serve per motivare la costanza
+# e per le retrospettive trimestrali.
+
+def calculate_compound_effect(
+    azioni_per_settimana: float,
+    settimane: int,
+    tasso_conversione_medio: float,
+    valore_medio_conversione: float
+) -> dict:
+    """
+    Calcola l'effetto compound delle azioni cross-pillar.
+
+    Args:
+        azioni_per_settimana: media azioni cross eseguite/sett
+        settimane: orizzonte temporale in settimane
+        tasso_conversione_medio: % di azioni che generano
+                                 una conversione misurabile
+        valore_medio_conversione: € medio per conversione
+
+    Returns:
+        Proiezione con effetto compound
+
+    Esempio:
+        1 azione/settimana × 52 settimane ×
+        10% conversione × €200/conversione =
+        €1.040 di revenue aggiuntivo nel primo anno.
+        Ma con compound (ogni azione costruisce sulle
+        precedenti), il valore reale è 1.5-2x superiore.
+    """
+    azioni_totali = azioni_per_settimana * settimane
+    conversioni_lineari = azioni_totali * tasso_conversione_medio
+    revenue_lineare = conversioni_lineari * valore_medio_conversione
+
+    # Compound factor: le azioni precedenti aumentano
+    # l'efficacia delle successive (trust cumulata,
+    # contenuti che rankano, lista che cresce)
+    compound_factor = 1.0
+    compound_increment = 0.02  # +2% efficacia per settimana
+    revenue_compound = 0.0
+
+    for week in range(settimane):
+        weekly_revenue = (
+            azioni_per_settimana *
+            tasso_conversione_medio *
+            valore_medio_conversione *
+            compound_factor
+        )
+        revenue_compound += weekly_revenue
+        compound_factor += compound_increment
+
+    return {
+        "azioni_totali": round(azioni_totali),
+        "revenue_lineare": round(revenue_lineare, 2),
+        "revenue_compound": round(revenue_compound, 2),
+        "moltiplicatore": round(
+            revenue_compound / max(revenue_lineare, 1), 2
+        ),
+        "messaggio": f"Con {azioni_per_settimana} azione/sett "
+                     f"per {settimane} settimane: "
+                     f"€{round(revenue_compound, 2)} di revenue "
+                     f"cross-pillar (vs €{round(revenue_lineare, 2)} "
+                     f"senza compound). "
+                     f"Moltiplicatore: {round(revenue_compound / max(revenue_lineare, 1), 2)}x"
+    }
+
+
+# ───────────────────────────────────────────────────────────────
+# SEZIONE 6: PROTOCOLLI OPERATIVI PER CADENZA
+# ───────────────────────────────────────────────────────────────
+
+PROTOCOLLI_CADENZA = {
+    "settimanale": {
+        "nome": "Lunedì Cross-Pollination",
+        "durata_minuti": 15,
+        "step": [
+            "1. Apri il registro azioni (SEZIONE 4)",
+            "2. Controlla follow-up della settimana scorsa",
+            "3. Apri la mappa dei 12 flussi (SEZIONE 1)",
+            "4. Esegui l'algoritmo di selezione (SEZIONE 2): "
+            "ci sono trigger attivi? Gap OKR? Rotazione?",
+            "5. Scegli 1 azione e ESEGUILA ora (non dopo)",
+            "6. Registra nel registro azioni",
+            "7. Imposta reminder per follow-up se necessario"
+        ],
+        "output": "1 azione cross-pillar eseguita e registrata"
+    },
+    "mensile": {
+        "nome": "Cross-Pollination Report Mensile",
+        "durata_minuti": 15,
+        "step": [
+            "1. Conta azioni cross eseguite nel mese (target: ≥4)",
+            "2. Lista i flussi attivati (target: ≥3 flussi diversi)",
+            "3. Compila bridge metrics nella dashboard: "
+            "studenti→lead, clienti→corso, YT→info, KDP→info",
+            "4. Calcola score cross-pollination (SEZIONE 3)",
+            "5. Se score <50 → identifica 1 azione correttiva "
+            "per il mese prossimo"
+        ],
+        "output": "Cross-pollination report nel dashboard mensile"
+    },
+    "trimestrale": {
+        "nome": "Cross-Pollination Audit Trimestrale",
+        "durata_minuti": 30,
+        "step": [
+            "1. Calcola score cross-pollination trimestrale",
+            "2. Analizza: quali flussi hanno generato più valore?",
+            "3. Analizza: quali flussi sono rimasti dormienti?",
+            "4. Calcola compound effect (SEZIONE 5) con dati reali",
+            "5. Aggiorna OKR cross-pollination per Q+1",
+            "6. Identifica 2-3 flussi da potenziare nel prossimo Q",
+            "7. Identifica 1-2 nuovi flussi da sperimentare"
+        ],
+        "output": "Audit completo + OKR cross aggiornati"
+    }
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+# 🔧 COME UTILIZZARE QUESTO FILE
+# ═══════════════════════════════════════════════════════════════
+
+# QUANDO CONSULTARLO:
+# 1. Ogni LUNEDÌ → per scegliere l'azione cross-pillar
+#    della settimana (usa SEZIONE 1 + SEZIONE 2)
+# 2. Ogni PRIMO LUNEDÌ DEL MESE → per il report mensile
+#    cross-pollination (usa SEZIONE 3 + SEZIONE 4)
+# 3. Ogni FINE TRIMESTRE → per l'audit trimestrale
+#    (usa SEZIONE 3 + SEZIONE 5 + SEZIONE 6)
+# 4. Quando l'utente chiede "quale sinergia attivare?" →
+#    esegui l'algoritmo di SEZIONE 2
+# 5. Quando l'utente chiede "come stanno le sinergie?" →
+#    calcola lo score di SEZIONE 3
+# 6. Quando l'utente chiede come collegare 2 pillar →
+#    cerca il flusso specifico in SEZIONE 1
+
+# COME INTEGRARLO NELLA RISPOSTA:
+# - Quando suggerisci un'azione cross-pillar, cita sempre
+#   il FLOW_ID (es: "Attiva il flusso A4 — Studenti come
+#   Lead Agenzia")
+# - Quando compili il dashboard, popola la sezione
+#   "Cross-Pollination Report" con i dati del SEZIONE 4
+# - Quando fai gap analysis sugli OKR cross-pollination,
+#   usa lo score di SEZIONE 3 come riferimento
+# - Quando l'utente vuole capire il valore delle sinergie,
+#   usa il compound calculator di SEZIONE 5
+
+
+# ═══════════════════════════════════════════════════════════════
+# 🔗 COLLEGAMENTI
+# ═══════════════════════════════════════════════════════════════
+
+# → TEMPLATE_PRODUZIONE.md: template dashboard contiene la
+#   sezione "Cross-Pollination Report" che viene popolata
+#   con i dati di questo file
+#
+# → TEMPLATE_ARCHITETTURA.md: definisce i 3 pillar e la
+#   gerarchia che questo file usa come base per i flussi
+#
+# → PIPELINE_OVERVIEW.md: le 5 cadenze operative includono
+#   i protocolli cross-pollination definiti qui in SEZIONE 6
+#
+# → STANDARD_QUALITA.md: le metriche cross-pollination sono
+#   tra i KPI Empire-level definiti lì
+#
+# → Custom Instructions §2.2: il sotto-processo "Selezione
+#   Azione Cross-Pillar" referenzia l'algoritmo di SEZIONE 2
+#
+# → Custom Instructions §8.1: il workflow settimanale include
+#   il protocollo "Lunedì Cross-Pollination" di SEZIONE 6
+
+
+# ═══════════════════════════════════════════════════════════════
+# 💡 ESEMPI PRATICI
+# ═══════════════════════════════════════════════════════════════
+
+# ESEMPIO 1: Lunedì mattina, selezione azione settimanale
+#
+# Input utente: "È lunedì. Quale azione cross-pillar faccio?"
+#
+# Processo AI:
+# 1. Chiedi: "Ci sono trigger attivi questa settimana?
+#    (progetto completato, corso lanciato, video pubblicato...)"
+# 2. Utente: "Ho completato un progetto agenzia venerdì"
+# 3. Trigger match: "progetto_agenzia_completato" → flussi A3, C2
+# 4. Suggerimento: "Questa settimana attiva il FLUSSO A3
+#    (Casi Studio con Metriche):
+#    - Compila il template caso studio per il progetto appena
+#      completato
+#    - Chiedi il permesso al cliente per la condivisione
+#    - Inserisci nella libreria casi studio
+#    Tempo stimato: 20-30 minuti.
+#    Questo caso studio alimenterà: webinar info-biz,
+#    video YouTube, sales page."
+#
+# ESEMPIO 2: Report mensile cross-pollination
+#
+# Input utente: "Facciamo il report cross-pollination di gennaio"
+#
+# Processo AI:
+# 1. Chiedi i dati: azioni eseguite, flussi usati, bridge metrics
+# 2. Calcola score con la funzione di SEZIONE 3
+# 3. Output:
+#    "CROSS-POLLINATION SCORE — Gennaio 2025
+#     Frequenza: 75/100 (3 azioni su 4 target)
+#     Distribuzione: 50/100 (6 flussi su 12 attivati nel Q)
+#     Conversione: 40/100 (2% bridge rate)
+#     Revenue cross: 30/100 (3% del revenue totale)
+#     SCORE TOTALE: 47.5/100 — 🟡 SUFFICIENTE
+#     Raccomandazione: Aumenta la frequenza a 4/4 settimane
+#     e rivedi i template email bridge per migliorare
+#     la conversione."
+#
+# ESEMPIO 3: Compound effect per motivazione
+#
+# Input utente: "Quanto vale davvero fare cross-pollination?"
+#
+# Processo AI:
+# Usa calculate_compound_effect con parametri conservativi:
+# - 1 azione/settimana
+# - 52 settimane
+# - 10% tasso conversione
+# - €200 valore medio
+#
+# Output:
+# "Con 1 azione cross-pillar alla settimana per un anno:
+#  - Azioni totali: 52
+#  - Revenue lineare: €1.040
+#  - Revenue con compound: €1.586
+#  - Moltiplicatore: 1.53x
+#  MA il valore reale è ancora superiore perché include:
+#  - Trust cumulata (non misurabile in €)
+#  - Content library in crescita
+#  - Lista email che cresce organicamente
+#  - Effetto network: ogni pillar che cresce fa crescere
+#    gli altri esponenzialmente"
+
+
+# ═══════════════════════════════════════════════════════════════
+# ⚠️ NOTE E AVVERTENZE
+# ═══════════════════════════════════════════════════════════════
+
+# 1. NON tutte le 12 sinergie vanno attivate ogni mese.
+#    L'obiettivo è 1 a settimana con ROTAZIONE, non
+#    sovraccaricare il sistema.
+#
+# 2. La gerarchia dei pillar si applica anche qui:
+#    se l'agenzia è 🔴, le azioni cross-pillar si fermano.
+#    Prima risolvi il core, poi attiva le sinergie.
+#
+# 3. I bridge metrics (studenti→lead, clienti→corso, ecc.)
+#    richiedono 3-6 mesi per mostrare risultati significativi.
+#    Non giudicare l'efficacia prima di questo periodo.
+#
+# 4. Il compound calculator è un modello SEMPLIFICATO.
+#    Il valore reale delle sinergie include componenti
+#    non quantificabili (brand, trust, network effects).
+#
+# 5. Se l'utente non ha ancora tutti i pillar attivi
+#    (es: info-business non ancora lanciato), adatta:
+#    attiva solo i flussi dei pillar esistenti e metti
+#    gli altri in "standby — da attivare quando il pillar
+#    è operativo".
+#
+# 6. Il registro azioni (SEZIONE 4) è CRITICO. Se non
+#    viene compilato, dopo 2 mesi non sai più cosa hai
+#    fatto e cosa funziona. Compilalo SUBITO dopo ogni
+#    azione, non "dopo".
+
+## Collegamenti Correlati
+- [[Map - Agenti|Agenti Area]]
+- [[Map - App|App Area]]
+- [[Map - Prove|Prove Area]]

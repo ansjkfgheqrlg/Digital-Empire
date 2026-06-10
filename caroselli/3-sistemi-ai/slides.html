@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8"/>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@1&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:#050505;
+  font-family:'Onest',sans-serif;
+  -webkit-font-smoothing:antialiased;
+  display:flex;flex-direction:column;
+  align-items:center;gap:60px;padding:60px;
+}
+
+/* ── SLIDE BASE ── */
+.slide{
+  position:relative;
+  width:1080px;height:1350px;
+  overflow:hidden;color:#fff;
+  isolation:isolate;flex-shrink:0;
+  background:
+    radial-gradient(90% 55% at 50% -6%, rgba(251,70,4,0.22) 0%, transparent 52%),
+    radial-gradient(60% 45% at 88% 108%, rgba(251,70,4,0.12) 0%, transparent 50%),
+    linear-gradient(165deg,#161412 0%,#0c0b0a 45%,#070605 100%);
+  font-family:'Onest',sans-serif;
+}
+
+/* ── GRAIN ── exact match to landing globals.css grain-fine */
+.grain-a,.grain-b{
+  position:absolute;inset:-50%;
+  pointer-events:none;
+}
+.grain-a{
+  z-index:60;opacity:0.55;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+.grain-b{
+  z-index:61;opacity:0.28;mix-blend-mode:hard-light;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='2.1' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1.3 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* ── VIGNETTE ── */
+.vignette{
+  position:absolute;inset:0;z-index:2;pointer-events:none;
+  box-shadow:inset 0 0 240px 70px rgba(0,0,0,0.55);
+}
+
+/* ── CORNER BRACKETS ── */
+.c-tl,.c-br{position:absolute;width:58px;height:58px;pointer-events:none;z-index:10;}
+.c-tl::before,.c-br::before{content:"";position:absolute;inset:0;border:2.5px solid #ff6a2e;filter:drop-shadow(0 0 10px rgba(251,70,4,0.65));}
+.c-tl{top:30px;left:30px;}
+.c-tl::before{border-right:0;border-bottom:0;border-top-left-radius:10px;}
+.c-br{bottom:30px;right:30px;}
+.c-br::before{border-left:0;border-top:0;border-bottom-right-radius:10px;}
+
+/* ── CONTENT WRAPPER ── */
+.content{
+  position:relative;z-index:5;
+  display:flex;flex-direction:column;
+  height:100%;padding:82px 86px;
+}
+
+/* ── TOP BAR ── */
+.topbar{display:flex;align-items:center;justify-content:space-between;}
+.brand{
+  display:flex;align-items:center;gap:10px;
+  font-size:13.5px;font-weight:800;
+  letter-spacing:0.22em;text-transform:uppercase;
+  color:rgba(255,255,255,0.72);
+}
+.brand-dot{
+  width:7px;height:7px;border-radius:50%;
+  background:#fb4604;box-shadow:0 0 10px rgba(251,70,4,0.85);
+}
+.pageno{font-size:13.5px;font-weight:700;letter-spacing:0.14em;color:rgba(255,255,255,0.32);}
+.pageno b{color:rgba(255,255,255,0.72);}
+.spacer{flex:1 1 auto;}
+
+/* ── TEXT GRADIENTS ── exact from landing globals.css */
+.text-silver-white{
+  background:linear-gradient(180deg,#ffffff 0%,#e8e3ef 35%,#b5afbd 72%,#8a8594 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.text-silver-orange{
+  background:linear-gradient(135deg,#ffffff 0%,#d9d4e1 20%,#fb4604 55%,#ff8a4a 78%,#ffffff 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.serif{font-family:'Instrument Serif',Georgia,serif;font-style:italic;}
+
+/* ── BUBBLE ORANGE ── */
+.bubble-orange{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:10px 22px;border-radius:9999px;
+  background:linear-gradient(135deg,#fb4604 0%,#ff6a2e 100%);
+  color:#fff;font-weight:700;font-size:14px;letter-spacing:0.02em;
+  box-shadow:0 8px 28px -10px rgba(251,70,4,0.7);
+  align-self:flex-start;
+}
+.b-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.9);}
+
+/* ── DIVIDER ── exact from landing globals.css */
+.divider{
+  width:100%;height:5px;border:0;
+  background:linear-gradient(90deg,transparent 0%,#d9d4e1 12%,#ffffff 28%,#ff8a4a 48%,#fb4604 55%,#ff8a4a 62%,#ffffff 78%,#d9d4e1 88%,transparent 100%);
+  box-shadow:0 0 22px rgba(251,70,4,0.45),0 0 44px rgba(251,70,4,0.18);
+  border-radius:3px;flex-shrink:0;
+}
+
+/* ── CARD SILVER-ORANGE ── exact from landing globals.css */
+.card-so{
+  border-radius:20px;padding:30px 30px;
+  background:linear-gradient(145deg,#ffffff 0%,#f6f3f8 22%,#ece7f0 45%,#f2d9c8 70%,#ffc7a3 88%,#ffb284 100%);
+  border:1px solid rgba(255,255,255,0.92);
+  box-shadow:0 28px 65px -28px rgba(251,70,4,0.3),0 8px 28px -10px rgba(19,19,19,0.22),inset 0 1px 0 rgba(255,255,255,0.95);
+  color:#0a0a0a;
+}
+
+/* ── CARD DARK ── */
+.card-dark{
+  border-radius:18px;padding:26px 28px;
+  background:linear-gradient(160deg,#2a2724 0%,#1c1a17 50%,#0e0d0c 100%);
+  border:1px solid rgba(220,216,210,0.18);
+  box-shadow:inset 0 1px 0 rgba(240,235,225,0.10),0 12px 38px -14px rgba(0,0,0,0.75);
+  color:#fff;
+}
+
+/* ── STAT CARD ── */
+.stat-card{
+  border-radius:18px;padding:30px 24px;
+  background:linear-gradient(145deg,#ffffff 0%,#f6f3f8 22%,#ece7f0 45%,#f2d9c8 70%,#ffb284 100%);
+  border:1px solid rgba(255,255,255,0.90);
+  box-shadow:0 18px 48px -18px rgba(251,70,4,0.28),0 6px 18px -8px rgba(19,19,19,0.18),inset 0 1px 0 rgba(255,255,255,0.95);
+  color:#0a0a0a;
+  display:flex;flex-direction:column;gap:6px;
+}
+.stat-v{
+  font-size:54px;font-weight:900;letter-spacing:-0.048em;line-height:1;
+  background:linear-gradient(165deg,#0a0a0a 0%,#3a1a0a 50%,#6a2c10 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.stat-l{font-size:11.5px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:rgba(10,10,10,0.58);}
+.stat-d{font-size:13.5px;font-weight:500;color:rgba(10,10,10,0.68);margin-top:3px;line-height:1.4;}
+
+/* ── STEP NUM ── */
+.step-n{
+  width:44px;height:44px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,#fb4604 0%,#ff6a2e 100%);
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;font-weight:900;color:#fff;
+  box-shadow:0 8px 24px -10px rgba(251,70,4,0.65);
+}
+
+/* ── PAGINATOR ── */
+.paginator{display:flex;align-items:center;justify-content:center;gap:9px;}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.18);}
+.dot.on{background:#fb4604;box-shadow:0 0 10px rgba(251,70,4,0.7);width:22px;border-radius:4px;}
+
+/* ── EYEBROW ── */
+.eyebrow{font-size:11.5px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.40);display:block;margin-bottom:18px;}
+
+/* ── NUMBERED ICON ── */
+.num-icon{
+  width:42px;height:42px;border-radius:12px;flex-shrink:0;
+  background:rgba(251,70,4,0.14);border:1.5px solid rgba(251,70,4,0.32);
+  display:flex;align-items:center;justify-content:center;
+  font-size:17px;font-weight:900;color:#fb4604;
+}
+
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════
+     SLIDE 1 — COVER
+══════════════════════════════════ -->
+<div id="s1" class="slide">
+  <div class="grain-a"></div><div class="grain-b"></div>
+  <div class="vignette"></div>
+  <div class="c-tl"></div><div class="c-br"></div>
+
+  <div class="content">
+    <div class="topbar">
+      <div class="brand"><div class="brand-dot"></div>Digital Empire</div>
+      <div class="pageno"><b>1</b>&nbsp;/&nbsp;5</div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <!-- Headline block -->
+    <div style="display:flex;flex-direction:column;gap:0;margin-bottom:52px;">
+      <div class="bubble-orange" style="margin-bottom:28px;"><span class="b-dot"></span>Sistema AI · In produzione</div>
+
+      <h1 class="text-silver-white" style="font-size:126px;font-weight:900;line-height:0.88;letter-spacing:-0.048em;">
+        3 sistemi
+      </h1>
+      <h1 class="text-silver-white" style="font-size:126px;font-weight:900;line-height:0.88;letter-spacing:-0.048em;margin-bottom:18px;">
+        AI
+      </h1>
+      <p class="serif text-silver-orange" style="font-size:68px;line-height:1.1;letter-spacing:-0.02em;">
+        che lavorano<br/>al posto tuo.
+      </p>
+    </div>
+
+    <hr class="divider" style="margin-bottom:46px;"/>
+
+    <!-- 3 stat cards -->
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;">
+      <div class="stat-card">
+        <div class="stat-v">300+</div>
+        <div class="stat-l">ore / mese</div>
+        <div class="stat-d">liberate dall'automazione</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-v">7</div>
+        <div class="stat-l">giorni</div>
+        <div class="stat-d">dalla chiamata al live</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-v">€0</div>
+        <div class="stat-l">canone</div>
+        <div class="stat-d">codice tuo per sempre</div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="paginator">
+      <div class="dot on"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     SLIDE 2 — IL PROBLEMA
+══════════════════════════════════ -->
+<div id="s2" class="slide">
+  <div class="grain-a"></div><div class="grain-b"></div>
+  <div class="vignette"></div>
+  <div class="c-tl"></div><div class="c-br"></div>
+
+  <div class="content">
+    <div class="topbar">
+      <div class="brand"><div class="brand-dot"></div>Digital Empire</div>
+      <div class="pageno"><b>2</b>&nbsp;/&nbsp;5</div>
+    </div>
+
+    <div style="margin-top:58px;margin-bottom:42px;">
+      <span class="eyebrow">Il problema reale</span>
+      <h2 class="text-silver-white" style="font-size:72px;font-weight:900;line-height:0.92;letter-spacing:-0.038em;margin-bottom:20px;">
+        Il tuo tempo<br/>è il collo di<br/>bottiglia.
+      </h2>
+      <p class="serif text-silver-orange" style="font-size:32px;line-height:1.35;letter-spacing:-0.01em;">
+        E un competitor con l'AI<br/>non ha questo problema.
+      </p>
+    </div>
+
+    <!-- Pain cards -->
+    <div style="display:flex;flex-direction:column;gap:13px;margin-bottom:40px;">
+      <div class="card-dark" style="display:flex;align-items:flex-start;gap:18px;">
+        <div class="num-icon">1</div>
+        <div>
+          <div style="font-size:17px;font-weight:800;color:#fff;margin-bottom:5px;line-height:1.2;">Outreach manuale = 3–4 ore al giorno</div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.60);line-height:1.55;">DM, follow-up, qualifica: tutto tempo che non scala e non dorme mai.</div>
+        </div>
+      </div>
+      <div class="card-dark" style="display:flex;align-items:flex-start;gap:18px;">
+        <div class="num-icon">2</div>
+        <div>
+          <div style="font-size:17px;font-weight:800;color:#fff;margin-bottom:5px;line-height:1.2;">Contenuti inconsistenti</div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.60);line-height:1.55;">Pubblichi quando hai tempo, non quando il pubblico è pronto ad ascoltarti.</div>
+        </div>
+      </div>
+      <div class="card-dark" style="display:flex;align-items:flex-start;gap:18px;">
+        <div class="num-icon">3</div>
+        <div>
+          <div style="font-size:17px;font-weight:800;color:#fff;margin-bottom:5px;line-height:1.2;">Conoscenza dispersa</div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.60);line-height:1.55;">SOPs, risposte, risorse: nella testa o in Notion non indicizzato.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote block -->
+    <div class="card-so" style="text-align:center;padding:28px 32px;">
+      <p style="font-family:'Instrument Serif',serif;font-style:italic;font-size:23px;color:#0a0a0a;line-height:1.45;font-weight:500;">
+        "Il competitor non deve essere più bravo.<br/>
+        Gli basta avere un sistema che<br/><strong style="color:#7a2a05;font-style:normal;">lavora mentre lui dorme.</strong>"
+      </p>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="paginator">
+      <div class="dot"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     SLIDE 3 — I 3 SISTEMI
+══════════════════════════════════ -->
+<div id="s3" class="slide">
+  <div class="grain-a"></div><div class="grain-b"></div>
+  <div class="vignette"></div>
+  <div class="c-tl"></div><div class="c-br"></div>
+
+  <div class="content">
+    <div class="topbar">
+      <div class="brand"><div class="brand-dot"></div>Digital Empire</div>
+      <div class="pageno"><b>3</b>&nbsp;/&nbsp;5</div>
+    </div>
+
+    <div style="margin-top:52px;margin-bottom:36px;">
+      <span class="eyebrow">Le 3 factory</span>
+      <h2 style="font-size:66px;font-weight:900;line-height:0.92;letter-spacing:-0.036em;">
+        <span class="text-silver-white">Tre sistemi.</span><br/>
+        <span class="serif text-silver-orange" style="font-size:58px;">Un'unica operatività</span><br/>
+        <span class="text-silver-white">che gira da sola.</span>
+      </h2>
+    </div>
+
+    <!-- 3 system cards -->
+    <div style="display:flex;flex-direction:column;gap:15px;">
+      <!-- Outreach Factory -->
+      <div style="border-radius:18px;padding:26px 28px;
+        background:linear-gradient(155deg,#5a1200 0%,#8c2800 28%,#c43800 62%,#6a1600 100%);
+        border:1.5px solid rgba(255,100,40,0.55);
+        box-shadow:0 0 60px -18px rgba(180,40,0,0.7),0 20px 55px -20px rgba(0,0,0,0.85);
+        display:flex;justify-content:space-between;align-items:flex-start;gap:16px;">
+        <div style="flex:1;">
+          <div style="font-size:10.5px;font-weight:800;letter-spacing:0.20em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:9px;">01 · Outreach Factory</div>
+          <div style="font-size:21px;font-weight:800;color:#fff;line-height:1.15;margin-bottom:8px;">DM, follow-up e qualifica.<br/>Automatici.</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.60);line-height:1.45;">Gmail · Instagram DM · Notifiche Slack live</div>
+        </div>
+        <div style="text-align:right;flex-shrink:0;">
+          <div style="font-size:50px;font-weight:900;color:#fff;letter-spacing:-0.044em;line-height:1;">312</div>
+          <div style="font-size:10.5px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.50);">msg / giorno</div>
+        </div>
+      </div>
+
+      <!-- Content Factory -->
+      <div style="border-radius:18px;padding:26px 28px;
+        background:linear-gradient(155deg,#3c2200 0%,#6a4000 28%,#9e6400 62%,#4e2e00 100%);
+        border:1.5px solid rgba(255,200,80,0.48);
+        box-shadow:0 0 60px -18px rgba(140,90,0,0.65),0 20px 55px -20px rgba(0,0,0,0.85);
+        display:flex;justify-content:space-between;align-items:flex-start;gap:16px;">
+        <div style="flex:1;">
+          <div style="font-size:10.5px;font-weight:800;letter-spacing:0.20em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:9px;">02 · Content Factory</div>
+          <div style="font-size:21px;font-weight:800;color:#fff;line-height:1.15;margin-bottom:8px;">Caroselli, script e caption.<br/>Su autopilota.</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.60);line-height:1.45;">Brief → Carosello Drive · Script Reels · Tag</div>
+        </div>
+        <div style="text-align:right;flex-shrink:0;">
+          <div style="font-size:50px;font-weight:900;color:#fff;letter-spacing:-0.044em;line-height:1;">24</div>
+          <div style="font-size:10.5px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.50);">pezzi / giorno</div>
+        </div>
+      </div>
+
+      <!-- Second Brain -->
+      <div style="border-radius:18px;padding:26px 28px;
+        background:linear-gradient(155deg,#001c44 0%,#003480 28%,#0054b4 62%,#002260 100%);
+        border:1.5px solid rgba(100,180,255,0.48);
+        box-shadow:0 0 60px -18px rgba(0,50,180,0.7),0 20px 55px -20px rgba(0,0,0,0.85);
+        display:flex;justify-content:space-between;align-items:flex-start;gap:16px;">
+        <div style="flex:1;">
+          <div style="font-size:10.5px;font-weight:800;letter-spacing:0.20em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:9px;">03 · Second Brain</div>
+          <div style="font-size:21px;font-weight:800;color:#fff;line-height:1.15;margin-bottom:8px;">Tutta la tua conoscenza,<br/>sempre disponibile.</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.60);line-height:1.45;">Notion · Google Drive · Risposta in 0.3s</div>
+        </div>
+        <div style="text-align:right;flex-shrink:0;">
+          <div style="font-size:50px;font-weight:900;color:#fff;letter-spacing:-0.044em;line-height:1;">1.4k</div>
+          <div style="font-size:10.5px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.50);">query / giorno</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="paginator">
+      <div class="dot"></div><div class="dot"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     SLIDE 4 — COME FUNZIONA
+══════════════════════════════════ -->
+<div id="s4" class="slide">
+  <div class="grain-a"></div><div class="grain-b"></div>
+  <div class="vignette"></div>
+  <div class="c-tl"></div><div class="c-br"></div>
+
+  <div class="content">
+    <div class="topbar">
+      <div class="brand"><div class="brand-dot"></div>Digital Empire</div>
+      <div class="pageno"><b>4</b>&nbsp;/&nbsp;5</div>
+    </div>
+
+    <div style="margin-top:56px;margin-bottom:40px;">
+      <span class="eyebrow">Il processo</span>
+      <h2 style="font-size:90px;font-weight:900;line-height:0.88;letter-spacing:-0.042em;margin-bottom:18px;">
+        <span class="text-silver-white">Setup in</span><br/>
+        <span class="text-silver-orange">7 giorni.</span>
+      </h2>
+      <p style="font-size:18px;color:rgba(255,255,255,0.60);line-height:1.55;max-width:580px;">
+        Dalla chiamata al sistema live. Costruiamo sui tuoi tool esistenti: zero migrazioni, zero disruption.
+      </p>
+    </div>
+
+    <hr class="divider" style="margin-bottom:42px;"/>
+
+    <!-- Steps -->
+    <div style="display:flex;flex-direction:column;gap:20px;margin-bottom:40px;">
+      <div style="display:flex;align-items:flex-start;gap:20px;">
+        <div class="step-n">1</div>
+        <div>
+          <div style="font-size:18px;font-weight:800;color:#fff;margin-bottom:5px;">Chiamata strategica</div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.58);line-height:1.55;">Audit dei processi. Identifichiamo i 3 colli di bottiglia e i sistemi da costruire.</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:20px;">
+        <div class="step-n">2</div>
+        <div>
+          <div style="font-size:18px;font-weight:800;color:#fff;margin-bottom:5px;">Build & integrazione</div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.58);line-height:1.55;">Costruiamo i sistemi AI sui tuoi tool esistenti. Nessuna migrazione, nessuna disruption.</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:20px;">
+        <div class="step-n">3</div>
+        <div>
+          <div style="font-size:18px;font-weight:800;color:#fff;margin-bottom:5px;">Deploy + handoff</div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.58);line-height:1.55;">Il sistema è live. Il codice è tuo. Zero canone mensile, zero dipendenza da noi.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ownership card -->
+    <div class="card-so" style="display:flex;align-items:center;gap:20px;padding:26px 30px;">
+      <div style="width:46px;height:46px;border-radius:50%;flex-shrink:0;
+        background:linear-gradient(135deg,#fb4604 0%,#ff6a2e 100%);
+        display:flex;align-items:center;justify-content:center;
+        box-shadow:0 8px 24px -10px rgba(251,70,4,0.60);">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+          <path d="M4 11.5L9 16.5L18 7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <div style="font-size:16px;font-weight:800;color:#0a0a0a;margin-bottom:4px;">Codice tuo per sempre</div>
+        <div style="font-size:13.5px;color:rgba(10,10,10,0.62);line-height:1.5;">Zero abbonamenti. Il sistema rimane operativo anche se smetti di lavorare con noi.</div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="paginator">
+      <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot on"></div><div class="dot"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     SLIDE 5 — CTA
+══════════════════════════════════ -->
+<div id="s5" class="slide">
+  <div class="grain-a"></div><div class="grain-b"></div>
+  <div class="vignette"></div>
+  <div class="c-tl"></div><div class="c-br"></div>
+
+  <div class="content">
+    <div class="topbar">
+      <div class="brand"><div class="brand-dot"></div>Digital Empire</div>
+      <div class="pageno"><b>5</b>&nbsp;/&nbsp;5</div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <!-- Headline -->
+    <div style="display:flex;flex-direction:column;gap:22px;margin-bottom:44px;">
+      <span class="eyebrow" style="margin-bottom:0;">Prossimo step</span>
+      <h2 style="font-size:96px;font-weight:900;line-height:0.88;letter-spacing:-0.044em;">
+        <span class="text-silver-white">La finestra</span><br/>
+        <span class="serif text-silver-orange" style="font-size:80px;">è ancora aperta.</span>
+      </h2>
+      <p style="font-size:19px;color:rgba(255,255,255,0.68);line-height:1.55;max-width:680px;">
+        Ogni settimana senza sistemi AI è una settimana regalata al competitor che li ha già.
+      </p>
+      <hr class="divider" style="width:260px;margin:0;"/>
+    </div>
+
+    <!-- CTA block -->
+    <div class="card-so" style="padding:36px 38px;">
+      <div style="font-size:11.5px;font-weight:800;letter-spacing:0.20em;text-transform:uppercase;color:#6a2c10;margin-bottom:16px;">Chiamata strategica gratuita</div>
+      <div style="font-size:27px;font-weight:900;color:#0a0a0a;line-height:1.1;margin-bottom:10px;">45 minuti · Audit live · Zero impegno</div>
+      <div style="font-size:14.5px;color:rgba(10,10,10,0.60);line-height:1.55;margin-bottom:26px;">Analizziamo i tuoi processi insieme e capiamo quali sistemi ti servono. Nessuna pressione.</div>
+
+      <!-- CTA button -->
+      <div style="padding:18px 22px;border-radius:14px;
+        background:linear-gradient(135deg,#fb4604 0%,#ff6a2e 100%);
+        text-align:center;color:#fff;font-weight:800;font-size:17px;letter-spacing:0.01em;
+        box-shadow:0 10px 32px -10px rgba(251,70,4,0.7),inset 0 1px 0 rgba(255,255,255,0.22);
+        margin-bottom:18px;">
+        Prenota la chiamata &rarr;
+      </div>
+
+      <!-- Social proof row -->
+      <div style="display:flex;align-items:center;justify-content:center;gap:22px;">
+        <div style="font-size:12.5px;color:rgba(10,10,10,0.50);font-weight:600;">Setup 7 giorni</div>
+        <div style="width:1px;height:13px;background:rgba(10,10,10,0.18);"></div>
+        <div style="font-size:12.5px;color:rgba(10,10,10,0.50);font-weight:600;">Zero canone</div>
+        <div style="width:1px;height:13px;background:rgba(10,10,10,0.18);"></div>
+        <div style="font-size:12.5px;color:rgba(10,10,10,0.50);font-weight:600;">Codice tuo</div>
+      </div>
+    </div>
+
+    <!-- Bottom handle -->
+    <div style="display:flex;align-items:center;justify-content:center;margin-top:28px;">
+      <div style="font-size:13px;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.35);text-transform:uppercase;">
+        @digitalempire · Link in bio
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="paginator">
+      <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot on"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

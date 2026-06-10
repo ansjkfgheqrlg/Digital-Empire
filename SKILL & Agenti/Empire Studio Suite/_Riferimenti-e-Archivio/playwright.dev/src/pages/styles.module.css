@@ -1,0 +1,183 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+/* Hero */
+.heroBanner {
+  background: linear-gradient(170deg, #1a1d23 0%, #2b3137 40%, #1e2b1f 100%);
+  padding: 5rem 0;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(69, 186, 75, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.heroTitle {
+  font-size: 60px;
+}
+.heroSubtitle {
+  font-size: 20px;
+  opacity: 0.85;
+  max-width: 700px;
+  margin: 0.5rem 0 1.5rem;
+}
+.heroSubtitle a {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.2s;
+}
+.heroSubtitle a:hover {
+  text-decoration-color: #fff;
+}
+.highlight {
+  color: #45ba4b;
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 3rem 0;
+  }
+  .heroTitle {
+    font-size: 36px;
+  }
+  .heroSubtitle {
+    font-size: 16px;
+  }
+}
+
+.buttons {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.getStarted {
+  background: linear-gradient(135deg, #45ba4b 0%, #3da843 100%);
+  line-height: 1em;
+  text-decoration: none !important;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 00;
+  padding: 14px 26px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.getStarted:hover {
+  color: #2b3137;
+}
+
+/* Path cards */
+.pathCards {
+  padding: 3rem 0;
+}
+.pathCard {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.pathCard h3 {
+  margin-bottom: 0.5rem;
+}
+.pathCard p {
+  color: var(--ifm-color-emphasis-700);
+  flex-grow: 1;
+}
+.installCode {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+.pathCardLink {
+  margin-top: 0.5rem;
+}
+.pathCardLink a {
+  font-weight: 600;
+}
+
+/* Feature sections */
+.featureSection {
+  padding: 3rem 0;
+}
+.featureSectionAlt {
+  background: var(--ifm-color-emphasis-100);
+}
+html[data-theme='dark'] .featureSectionAlt {
+  background: rgba(255, 255, 255, 0.03);
+}
+.featureSectionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 28px;
+}
+.featureSectionContent h4 {
+  margin-bottom: 0.25rem;
+}
+.featureSectionContent p {
+  color: var(--ifm-color-emphasis-700);
+}
+.featureSectionContent p a {
+  text-decoration: underline;
+}
+
+/* Cross-browser */
+.crossBrowser {
+  padding: 3rem 0;
+}
+.crossBrowserText {
+  max-width: 600px;
+  margin: 1rem auto 0;
+  font-size: 16px;
+  color: var(--ifm-color-emphasis-700);
+}
+.crossBrowserText a {
+  text-decoration: underline;
+}
+
+/* Logos */
+.logosSection {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+html[data-theme='dark'] .logosSection {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.logosColumn {
+  text-align: center;
+  margin: 5rem 0;
+}
+ul.logosList {
+  list-style: none;
+  margin: 40px 0 20px;
+  padding: 0;
+}
+ul.logosList li {
+  display: inline-block;
+  margin: 0 20px;
+}
+ul.logosList li img {
+  max-width: 100px;
+  max-height: 65px;
+}
+
+img {
+  height: auto;
+}

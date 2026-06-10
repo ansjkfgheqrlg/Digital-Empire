@@ -1,0 +1,136 @@
+# SKILL
+            
+> Path: [[Map - Skill_And_Agenti|SKILL & Agenti > agent-factory > skills > agent-architect]]
+
+## Content
+
+---
+name: agent-architect
+description: This skill should be used when the user wants to "design an agent", "plan an agent architecture", "create a complex agent", "what sub-agents do I need", "how to structure a multi-agent system", "design the blueprint for an agent", "create a powerful AI agent from scratch", or when the user describes a complex workflow and needs to turn it into a complete agent architecture. Always trigger this skill FIRST before writing any code or system prompts — it defines the foundation everything else is built on. Use whenever the user mentions building, designing, or architecting anything agent-related, even if they just describe a goal and say "make me an agent for this".
+version: 1.0.0
+---
+
+# Agent Architect
+
+This is the first skill in the agent-factory pipeline. Its job is to transform a vague idea or complex goal into a precise, documented architecture blueprint that the other skills (system-prompt-forge, agent-builder, agent-quality-sentinel) can execute from.
+
+Do not skip this skill and go straight to writing system prompts. A system prompt without architecture is a house without foundations.
+
+## When to use this skill
+
+Trigger this skill at the START of any agent creation project, especially when:
+- The agent has more than one responsibility
+- The agent will coordinate other sub-agents
+- The agent needs to interact with external tools, APIs, or data
+- The user says "I want a big/complex/powerful agent"
+
+## The Architecture Process
+
+### Phase 1: Extract Intent
+
+Before designing anything, extract the complete intent from the user. Ask targeted questions:
+
+1. **Core mission**: What is the single most important thing this agent must do?
+2. **Inputs**: What does it receive? (user messages, files, data, API responses)
+3. **Outputs**: What must it produce? (text, code, files, decisions, API calls)
+4. **Constraints**: What must it never do? What are the hard limits?
+5. **Scale**: How complex is this? Single-agent or multi-agent orchestration?
+6. **Context**: What domain is this in? (marketing, coding, sales, research...)
+
+Do not ask all questions at once. Start with the core mission, then drill down.
+
+### Phase 2: Classify the Architecture Type
+
+Based on the extracted intent, classify the architecture. Consult `references/architecture-patterns.md` for complete pattern library.
+
+**Quick classification:**
+
+| Complexity | Pattern | When to use |
+|---|---|---|
+| Simple | Single Agent | One clear responsibility, linear workflow |
+| Medium | Specialist + Orchestrator | 2-4 sub-agents each doing one thing |
+| High | Multi-layer Orchestration | Complex pipeline, parallel processing, conditional routing |
+| Maximum | Swarm | Unlimited parallel agents, dynamic spawning |
+
+For the user's "grande e potente" agent: default to Multi-layer Orchestration unless scope suggests otherwise.
+
+### Phase 3: Design the Blueprint
+
+Produce a complete Architecture Blueprint document with these sections:
+
+```markdown
+# Agent Architecture Blueprint: [AGENT NAME]
+
+## Mission Statement
+[One sentence. What does this agent DO and for WHOM.]
+
+## Architecture Type
+[Single / Specialist+Orchestrator / Multi-layer / Swarm]
+
+## Agent Map
+[List every agent in the system]
+- **[name]** (model: opus/sonnet/haiku) — [one-line role]
+- **[name]** (model: ...) — [one-line role]
+
+## Data Flow
+[How information moves through the system, step by step]
+1. User sends X
+2. Orchestrator receives X, routes to [agent-A]
+3. [agent-A] produces Y, passes to [agent-B]
+...
+
+## Tool Matrix
+| Agent | Tools Needed | Why |
+|-------|-------------|-----|
+| [name] | Read, Grep, Bash | [reason] |
+
+## Model Assignment Strategy
+[Justify model choice for each agent: opus for reasoning/judgment, sonnet for balance, haiku for speed/parsing]
+
+## Edge Cases & Failure Modes
+- If [X happens]: agent should [do Y]
+- If [API fails]: fallback is [Z]
+
+## Inter-Agent Communication Protocol
+[How agents pass data: structured JSON / plain text / files]
+
+## Quality Gates
+[What must be true before output is considered complete]
+```
+
+### Phase 4: Validate the Blueprint
+
+Before handing off to system-prompt-forge, run this checklist:
+
+- [ ] Every agent has exactly ONE primary responsibility
+- [ ] No circular dependencies between agents
+- [ ] Failure modes are documented
+- [ ] Model choices are justified (not all opus unless truly needed)
+- [ ] Tool access follows least-privilege principle
+- [ ] The orchestrator is clearly identified (if multi-agent)
+- [ ] Output format is explicitly defined
+
+### Phase 5: Hand Off
+
+After completing the blueprint, explicitly tell the user:
+
+> "Architecture is ready. The next step is **system-prompt-forge** to write the system prompts for each agent in this blueprint. Say 'write the system prompts' to continue."
+
+## Key Principles
+
+**One agent, one responsibility.** An agent that does 10 things does 0 things well. If an agent's description needs the word "and" more than twice, split it.
+
+**Orchestrators orchestrate, they do not execute.** The main orchestrator routes, decides, and assembles. It does not write code, search the web, or format output. Specialists do the work.
+
+**Model cost follows cognitive load.** Use opus only where deep reasoning or judgment is needed. Haiku for parsing, formatting, classification. Sonnet for balanced tasks. Wrong model choice = wasted money or poor quality.
+
+**Design for failure first.** Every integration point is a potential failure point. Document what the agent does when things go wrong before documenting what it does when things go right.
+
+## Additional Resources
+
+- **`references/architecture-patterns.md`** — Complete library of agent architecture patterns with examples
+- **`references/complexity-matrix.md`** — Decision matrix to determine architecture type from requirements
+
+## Collegamenti Correlati
+- [[Map - Agenti|Agenti Area]]
+- [[Map - App|App Area]]

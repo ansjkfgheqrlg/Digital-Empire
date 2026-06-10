@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(FONT_DIR=\"c:/Users/Utente/Desktop/qui tutto/Digital Empire/Workfolw crea caroselli à/carousel-factory/brands/mentalita-brutale/assets/fonts\" curl -L \"https://github.com/google/fonts/raw/main/ofl/anton/Anton-Regular.ttf\" -o \"$FONT_DIR/Anton-Regular.ttf\")",
+      "Read(//c/Users/Utente/Desktop/qui tutto/Digital Empire/Workfolw crea caroselli à/$FONT_DIR/**)",
+      "Bash(node scripts/generate.js context/examples/example-carousel-2.json)"
+    ]
+  }
+}

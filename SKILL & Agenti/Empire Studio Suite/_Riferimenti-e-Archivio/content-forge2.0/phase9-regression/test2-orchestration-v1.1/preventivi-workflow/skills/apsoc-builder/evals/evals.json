@@ -1,0 +1,25 @@
+{
+  "skill_name": "apsoc-builder",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Test apsoc-builder case 1",
+      "expected_output": "..."
+    },
+    {
+      "id": 2,
+      "prompt": "Test apsoc-builder case 2",
+      "expected_output": "..."
+    },
+    {
+      "id": 3,
+      "prompt": "Test apsoc-builder case 3",
+      "expected_output": "..."
+    },
+    {
+      "id": 4,
+      "prompt": "Test apsoc-builder case 4",
+      "expected_output": "..."
+    }
+  ]
+}

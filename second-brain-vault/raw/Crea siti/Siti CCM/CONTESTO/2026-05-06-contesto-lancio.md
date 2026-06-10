@@ -1,0 +1,8483 @@
+# Contesto-lancio
+
+> Source: File system (`Crea siti\Siti CCM\CONTESTO\Contesto-lancio.md`)
+> Collected: 2026-05-06
+> Published: Unknown
+
+FASE 0 — DECISIONE STRATEGICA
+Progetto: 🧠 P9 Strategy Command Center
+
+Skill:    S.O.M.
+
+▸ L'idea passa il filtro anti-ADD? (5 domande)
+▸ È allineata agli OKR del trimestre?
+▸ L'agenzia è stabile (🟢)?
+  Se no → ferma tutto, prima l'agenzia.
+
+
+
+FASE 1 — VALIDAZIONE IDEA
+Progetto: 📚 P7 Infobusiness HQ
+
+Skill:    S.O.M.
+
+▸ Compila Product Idea Backlog (scoring 5 criteri /100)
+▸ Score ≥60 → vai al test di validazione 7 giorni
+▸ Scelta formato + fascia prezzo ipotizzata
+▸ Validazione MVP prima di creare qualsiasi cosa
+
+# ═══════════════════════════════════════════════════════════════
+# 📦 KB_01 — PRODUCT PIPELINE
+# ═══════════════════════════════════════════════════════════════
+# Versione: 1.0
+# Categoria: CORE_LOGIC
+# Priorità: P0
+# Dipendenze: Nessuna (file fondazionale)
+# Referenziato da: CUSTOM_INSTRUCTIONS — Sezione 3, 4, 5
+# ═══════════════════════════════════════════════════════════════
+
+
+# ──────────────────────────────────────────────────────
+# 📋 COME UTILIZZARE QUESTO FILE
+# ──────────────────────────────────────────────────────
+
+Questo file è la mappa operativa completa della pipeline di Product Creation Lab.
+Usalo per:
+1. Capire quale fase/step attivare in base alla situazione attuale
+2. Verificare i tempi per tipo di prodotto
+3. Ricevere il brief di partenza e sapere cosa fare esattamente
+4. Navigare verso il file KB corretto per ogni step
+
+Ogni volta che l'utente avvia una nuova pipeline o chiede "da dove inizio?",
+consulta prima questo file per il routing corretto.
+
+
+# ──────────────────────────────────────────────────────
+# 🏗️ PIPELINE COMPLETA — PRODUCT CREATION LAB
+# ──────────────────────────────────────────────────────
+
+```
+INPUT OBBLIGATORIO: Brief validato da P7 Info-Business HQ
+─────────────────────────────────────────────────────────
+Contiene:
+├── Idea con score ≥60/100
+├── Validazione MVP positiva (almeno 5 persone hanno detto "sì, lo comprerei")
+├── Target definito (non "chiunque voglia imparare X")
+├── Formato scelto (PDF / Ebook / Mini-corso / Corso / Percorso)
+└── Fascia prezzo ipotizzata (anche se approssimativa)
+
+Se il brief non è disponibile → vai alla sezione "Edge case 7.7"
+delle Custom Instructions prima di procedere.
+```
+
+## FASE 1: ARCHITETTURA DEL PRODOTTO
+
+**Obiettivo**: Definire CHE COSA crei prima di creare qualsiasi contenuto.
+**Durata**: 2-8 ore (varia per tipo di prodotto)
+**Output finale**: Outline dettagliato approvato, pronto per la produzione
+**File KB di riferimento**: `KB_02_RICERCA_PRE_PRODUZIONE.md`, `KB_03_LEARNING_PATH_ENGINE.md`, `KB_07_STANDARD_PER_TIPO.md`
+
+---
+
+### Step 1.1 — Ricerca Pre-Produzione
+
+**Durata**: 1-4 ore
+**File KB**: `KB_02_RICERCA_PRE_PRODUZIONE.md`
+**Output**: Tabella con 15+ frasi esatte del target, 5+ pain point, 3+ gap competitor
+
+**Cosa fare:**
+1. Ricerca su Reddit (pain point, frasi esatte, domande ricorrenti)
+2. Ricerca su YouTube (commenti video popolari, domande, cosa manca)
+3. Ricerca su Amazon/Udemy (review negative competitor — solo 1-2 stelle)
+4. Compila la Mappa Gap Competitor (cosa fanno / cosa NON fanno / cosa farà il TUO prodotto)
+
+**Regola non negoziabile**: Non si procede al Step 1.2 senza aver completato questo step.
+
+**Come sai che è completo:**
+- Hai almeno 15 frasi esatte del target (con URL fonte)
+- Hai identificato almeno 5 pain point distinti
+- Hai analizzato almeno 3 prodotti competitor
+- Hai trovato almeno 3 gap che i competitor non coprono
+- Puoi rispondere: "Perché il nostro prodotto è chiaramente migliore/diverso?"
+
+---
+
+### Step 1.2 — Learning Path PRIMA→DOPO
+
+**Durata**: 30-90 minuti
+**File KB**: `KB_03_LEARNING_PATH_ENGINE.md`
+**Output**: Template PRIMA→DOPO compilato + lista trasformazioni intermedie per modulo
+
+**Cosa fare:**
+1. Definisci lo STATO PRIMA (cosa non sa, non ha, come si sente)
+2. Definisci lo STATO DOPO (cosa sa fare, cosa ha, come si sente)
+3. Progetta il PERCORSO: sequenza di trasformazioni intermedie
+4. Ogni modulo = 1 trasformazione (massimo 7 moduli, ideale 5)
+5. Verifica: ogni modulo ha un output pratico che lo studente produce?
+
+**Regola non negoziabile**: Se non riesci a formulare "Da [stato prima] a [stato dopo]" per ogni modulo → quel modulo non è pronto.
+
+---
+
+### Step 1.3 — Outline Dettagliato
+
+**Durata**: 1-3 ore
+**File KB**: `KB_03_LEARNING_PATH_ENGINE.md`
+**Output**: Outline completo con: 3 lezioni per modulo, template previsti, esercizi, checkpoint
+
+**Cosa fare:**
+Per ogni modulo, compila il template di outline che include:
+- Trasformazione del modulo (Da → A)
+- Struttura lezioni (concetto → framework → applicazione)
+- Per ogni lezione: obiettivo, contenuto, esempio, errore comune, durata
+- Materiali: template, checklist, esercizio, esempio compilato
+- Checkpoint di fine modulo (domande di autoverifica)
+
+---
+
+### Step 1.4 — Verifica Standard per Tipo
+
+**Durata**: 15-30 minuti
+**File KB**: `KB_07_STANDARD_PER_TIPO.md`
+**Output**: Conferma che l'outline rispetta gli standard minimi per il tipo di prodotto
+
+**Cosa fare:**
+1. Consulta la tabella standard in `KB_07_STANDARD_PER_TIPO.md`
+2. Verifica che l'outline rispetti tutti i requisiti minimi per il formato scelto
+3. Se mancano elementi obbligatori → aggiungili prima di procedere
+
+**Output Fase 1**: Outline dettagliato approvato — PRONTO PER LA PRODUZIONE
+
+---
+
+## FASE 2: PRODUZIONE DEI CONTENUTI
+
+**Obiettivo**: Creare tutto il contenuto del prodotto.
+**Durata**: 4-80 ore (varia enormemente per tipo)
+**Output finale**: Contenuto prodotto completo (testi, video, template, esercizi, assemblato)
+**File KB di riferimento**: `KB_04_PRODUZIONE_CONTENUTI.md`
+
+---
+
+### Step 2.1 — Scrittura Contenuti
+
+**Durata**: 4-40 ore (varia per tipo)
+**File KB**: `KB_04_PRODUZIONE_CONTENUTI.md`
+
+**Per ogni lezione, applica il processo a 6 passi:**
+1. Rileggi l'outline (2 min)
+2. Brain dump — scrivi tutto senza editare (10-15 min)
+3. Struttura — organizza in: concetto → perché conta → come funziona → esempio → errore → applicazione (10 min)
+4. Prima stesura completa (20-60 min)
+5. Crea il template/esercizio collegato (15-30 min)
+6. Review: "Uno studente che non sa nulla, dopo questa lezione, saprebbe FARE la cosa?" (10-15 min)
+
+---
+
+### Step 2.2 — Produzione Video (per corsi e mini-corsi)
+
+**Durata**: 3-20 ore
+**File KB**: `KB_04_PRODUZIONE_CONTENUTI.md`
+
+**Tipi di video da produrre:**
+- Talking head (volto): spiegazioni, storytelling, intro moduli
+- Screen recording: demo, walkthrough template, tutorial
+- Slide + voiceover: framework, sistemi, step
+- Misto: alternanza per mantenere attenzione
+
+**Regola batch recording**: Non registrare 1 lezione al giorno. Registra TUTTE le lezioni talking head di un modulo in 1 giorno, poi tutti gli screen recording, poi edita tutto.
+
+---
+
+### Step 2.3 — Creazione Template e Materiali Scaricabili
+
+**Durata**: 2-10 ore
+**File KB**: `KB_04_PRODUZIONE_CONTENUTI.md`
+
+**Per ogni template:**
+- Nome + modulo di appartenenza
+- Scopo in 1 riga
+- Istruzioni per ogni campo (COSA compilare, non solo dove)
+- Template vuoto da compilare
+- Esempio compilato completo
+- Criteri di autovalutazione
+
+---
+
+### Step 2.4 — Assemblaggio Prodotto
+
+**Durata**: 1-5 ore
+**File KB**: `KB_04_PRODUZIONE_CONTENUTI.md`
+
+**Checklist assemblaggio modulo:**
+□ Tutte le lezioni video registrate e editate
+□ Template scaricabile creato (con esempio compilato)
+□ Esercizio scritto con istruzioni chiare
+□ Checklist fine modulo pronta
+□ PDF riassuntivo del modulo (1-2 pagine)
+□ Ordine lezioni verificato
+
+**Checklist assemblaggio prodotto completo:**
+□ Welcome video (2-3 min)
+□ Roadmap visuale del percorso
+□ Tutti i file in cartella organizzata
+□ Pagina di accesso testata
+□ Email di onboarding scritta
+
+**Output Fase 2**: Prodotto completo assemblato sulla piattaforma — PRONTO PER LA QUALITÀ
+
+---
+
+## FASE 3: QUALITÀ & PACKAGING
+
+**Obiettivo**: Verificare, correggere, impacchettare e consegnare.
+**Durata**: 1-8 ore
+**Output finale**: Prodotto approvato + Documento Handoff per P4 Launch Command
+**File KB di riferimento**: `KB_05_QUALITY_SYSTEM.md`, `KB_06_PACKAGING_HANDOFF.md`
+
+---
+
+### Step 3.1 — Quality Check Interno
+
+**Durata**: 1-3 ore
+**File KB**: `KB_05_QUALITY_SYSTEM.md`
+
+**Aree da verificare:**
+1. Chiarezza (ogni lezione ha UN obiettivo, linguaggio accessibile, nessun presupposto non spiegato)
+2. Praticità (ogni modulo ha output concreto, template compilabili, esercizi step-by-step)
+3. Completezza (nessun buco, learning path senza salti, "cosa fare adesso" alla fine)
+4. Qualità Tecnica — solo per video (audio, volume, messa a fuoco, transizioni)
+5. Differenziazione (almeno 3 elementi che competitor non offrono, framework proprietario con nome)
+
+**6 Red Flag assoluti** (se UNO è presente → non consegnare):
+❌ Lezione senza output pratico
+❌ Template senza esempio compilato
+❌ Concetto chiave non spiegato
+❌ Audio incomprensibile
+❌ Link o file non funzionante
+❌ Salto logico tra moduli
+
+---
+
+### Step 3.2 — Beta Test (SOLO per prodotti ≥€97)
+
+**Durata**: 7-10 giorni
+**File KB**: `KB_05_QUALITY_SYSTEM.md`
+
+**Per prodotti sotto €97**: il quality check interno è sufficiente.
+
+**Processo beta test:**
+1. Seleziona 3-5 beta tester dal target (dalla lista email)
+2. Offri accesso gratuito in cambio di feedback dettagliato + testimonial
+3. Dai 7-10 giorni per completare il corso
+4. Invia il questionario a 10 domande (in KB_05)
+5. Interpreta i risultati secondo la guida (in KB_05)
+6. Regola: se 2+ tester segnalano lo stesso problema → è reale → fixalo
+
+---
+
+### Step 3.3 — Fix & Polish
+
+**Durata**: 1-4 ore (varia in base ai problemi trovati)
+**File KB**: `KB_05_QUALITY_SYSTEM.md`
+
+**Checklist fix:**
+□ Correggi i problemi identificati nel quality check
+□ Ri-registra lezioni con feedback negativo
+□ Aggiungi contenuto mancante segnalato
+□ Migliora template confusi
+□ Verifica tutti i link e i file scaricabili
+□ Fai un ultimo passaggio completo dall'inizio alla fine
+□ Tutto funziona → PRODOTTO APPROVATO
+
+---
+
+### Step 3.4 — Packaging & Consegna a P4
+
+**Durata**: 1-2 ore
+**File KB**: `KB_06_PACKAGING_HANDOFF.md`
+
+**Delivery Package per Launch Command:**
+□ Prodotto completo caricato sulla piattaforma
+□ Tutti i file scaricabili organizzati
+□ Email di onboarding scritta e testata
+□ Welcome video attivo
+□ Roadmap visuale del percorso
+□ Lista bullet "cosa ottieni" (per la sales page)
+□ Lista moduli con descrizione breve (per il pitch)
+□ 3-5 screenshot/preview del prodotto
+□ Testimonial beta tester (se raccolti)
+□ FAQ studenti dal beta test
+
+**Compila il Documento Handoff** (template completo in `KB_06_PACKAGING_HANDOFF.md`).
+
+**Output Fase 3**: Prodotto approvato consegnato a P4 Launch Command — PIPELINE COMPLETATA
+
+
+# ──────────────────────────────────────────────────────
+# ⏱️ FLUSSI PER TIPO DI PRODOTTO
+# ──────────────────────────────────────────────────────
+
+## PDF Gratuito (Lead Magnet) — ~7 ore totali
+
+| Giorno | Attività | Tempo | Output |
+|---|---|---|---|
+| 1 | Ricerca pre-produzione (Reddit, YT, competitor) | 1.5h | Ricerca compilata |
+| 1 | Learning path + outline (1 framework, 3-5 sezioni) | 1h | Outline approvato |
+| 2 | Scrittura contenuto completo | 2.5h | Testo finito |
+| 2 | Creazione template/checklist + esempio compilato | 1h | Template pronto |
+| 3 | Design in Canva/Google Doc + quality check | 1h | PDF finale |
+
+**Standard minimi**: 8-20 pagine, 1 framework chiaro, 1 template/checklist, design professionale, CTA verso prodotto successivo.
+**Beta test**: NO.
+
+---
+
+## Ebook (€4,99-47) — ~20 ore totali
+
+| Fase | Attività | Tempo | Output |
+|---|---|---|---|
+| Architettura | Ricerca + outline completo | 4h | Outline approvato |
+| Produzione | Scrittura capitoli (ogni capitolo: concetto + applicazione) | 10-15h | Testo finito |
+| Qualità | Quality check + design + editing | 3h | Ebook finale |
+
+**Standard minimi**: 40-80 pagine (€4,99-19,99), 80-150 pagine (€19,99-47), minimo 3 template, 5 esempi concreti compilati, sommario navigabile.
+**Beta test**: NO.
+
+---
+
+## Mini-Corso (€15-47) — ~15 ore totali
+
+| Giorno | Attività | Tempo | Output |
+|---|---|---|---|
+| 1 | Ricerca pre-produzione | 1.5h | Ricerca compilata |
+| 1 | Learning path + outline (3-5 lezioni) | 1.5h | Outline approvato |
+| 2-3 | Scrittura script lezioni | 4h | Script pronti |
+| 3-4 | Registrazione video (batch) | 3h | Video grezzi |
+| 4-5 | Editing + creazione template | 3h | Materiali pronti |
+| 5 | Assemblaggio + quality check + PDF riassuntivo | 2h | Mini-corso live |
+
+**Standard minimi**: 3-5 video (45-90 min totali), 1 PDF riassuntivo scaricabile, 1-2 template, 1 esercizio guidato, ogni video <20 min, qualità audio impeccabile.
+**Beta test**: NO.
+
+---
+
+## Corso Completo (€97-297) — ~40 ore totali
+
+| Settimana | Attività | Tempo | Output |
+|---|---|---|---|
+| 1 | Ricerca pre-produzione approfondita | 4h | Ricerca completa |
+| 1 | Learning path + outline tutti i moduli | 4h | Outline approvato |
+| 2 | Scrittura script lezioni (tutti i moduli) | 12h | Script finiti |
+| 2-3 | Creazione template + esercizi + esempi | 6h | Materiali pronti |
+| 3 | Registrazione video (batch per modulo) | 6h | Video grezzi |
+| 3-4 | Editing + assemblaggio piattaforma | 4h | Corso caricato |
+| 4 | Quality check + welcome video + roadmap | 2h | QC completo |
+| 4 | Beta test: invio a 3-5 tester | 1h | Beta avviato |
+| 5 | Fix post-beta + packaging finale | 3h | Prodotto consegnato |
+
+**Standard minimi**: 4-6 moduli, 15-30 lezioni, ogni lezione 5-15 min, minimo 5 template scaricabili, 1 esercizio/modulo, 1 esempio compilato/modulo, checklist fine modulo, PDF riassuntivo/modulo, welcome video + roadmap visuale.
+**Beta test**: SÌ, obbligatorio.
+
+---
+
+## Percorso Premium (€497-997) — ~70+ ore totali
+
+Come il corso completo, più:
+
+| Aggiuntivo | Dettaglio |
+|---|---|
+| Moduli | 6-10 totali |
+| Contenuto | 8-15 ore totale |
+| Live | Sessioni Q&A / coaching settimanali |
+| Community | Gruppo privato (Telegram, Discord, Skool) |
+| Feedback | Personalizzato su esercizi degli studenti |
+| Case study | Almeno 3 approfonditi |
+| Aggiornamenti | Inclusi per 12 mesi |
+| Supporto | Via email o chat |
+| Percorso | Guidato settimana per settimana con roadmap |
+
+**Beta test**: SÌ, obbligatorio. Con almeno 5 tester.
+
+
+# ──────────────────────────────────────────────────────
+# 🔗 RELAZIONI CON ALTRI FILE KB
+# ──────────────────────────────────────────────────────
+
+| File | Quando entra in gioco | Dipendenza |
+|---|---|---|
+| `KB_02_RICERCA_PRE_PRODUZIONE.md` | Step 1.1 (prima di tutto) | Prerequisito per KB_03 |
+| `KB_03_LEARNING_PATH_ENGINE.md` | Step 1.2 e 1.3 | Richiede KB_02 completato |
+| `KB_04_PRODUZIONE_CONTENUTI.md` | Fase 2 intera | Richiede Fase 1 completata |
+| `KB_05_QUALITY_SYSTEM.md` | Fase 3 intera | Richiede Fase 2 completata |
+| `KB_06_PACKAGING_HANDOFF.md` | Step 3.4 finale | Richiede KB_05 superato |
+| `KB_07_STANDARD_PER_TIPO.md` | Step 1.4 (verifica) e all'occorrenza | Consultazione trasversale |
+| `KB_08_METRICHE_KPI.md` | Post-lancio (dopo consegna a P4) | Consultazione post-produzione |
+
+
+# ──────────────────────────────────────────────────────
+# ⚠️ REGOLE NON NEGOZIABILI
+# ──────────────────────────────────────────────────────
+
+1. **Zero produzione senza ricerca** (Step 1.1 sempre prima di tutto)
+2. **Zero moduli senza trasformazione definita** (Da → A obbligatorio)
+3. **Zero lezioni senza output pratico** (lo studente produce qualcosa)
+4. **Zero template senza esempio compilato** (mai template vuoto)
+5. **Zero consegna con red flag** (anche uno solo blocca tutto)
+6. **Beta test obbligatorio per ≥€97** (non è negoziabile)
+7. **Massimo 7 moduli per corso** (oltre 7 = 2 corsi separati)
+8. **Standard per tipo rispettati** (vedi KB_07 prima di procedere)
+
+
+FASE 2 — RICERCA TARGET
+Progetto: 🎓 P6 Marketing University
+
+Skill:    Client Research Engine
+
+▸ Reddit, YouTube, Amazon, competitor
+▸ Pain point map (scoring I×F×A)
+▸ Obiezioni top 10 (scoring F×I)
+▸ TOV document (20-30 frasi esatte del target)
+▸ Gap competitor: cosa non offrono
+
+
+
+FASE 3 — CREAZIONE PRODOTTO
+Progetto: 📦 P8 Product Creation Lab
+
+Skill:   Client Research Engine (come reference)
+          Digital Empire Brand Voice
+          CRO Copy Architect (per materiali interni)
+
+▸ Learning path (da PRIMA a DOPO)
+▸ Outline modulare con trasformazioni
+▸ Template + esercizi + esempi compilati
+▸ Test Deprivazione applicato al LM
+▸ Beta test (se prodotto ≥€97)
+▸ Documento Handoff verso P4
+
+Outline claude code mastery
+
+# ═══════════════════════════════════════════════════════════════
+# 📦 OUTLINE COMPLETO — CLAUDE CODE MASTERY
+# ═══════════════════════════════════════════════════════════════
+# Versione: 1.0
+# Fase: 3 — Creazione Prodotto (Step 1.3)
+# Formato: Percorso Premium (€497+)
+# Target: 18-30 anni, non-tecnico, vuole skill vendibile
+# Video: Talking head + Screen recording
+# Durata totale stimata: ~11 ore video + esercizi
+# ═══════════════════════════════════════════════════════════════
+
+
+# ──────────────────────────────────────────────────────
+# RECAP LEARNING PATH — PRIMA→DOPO
+# ──────────────────────────────────────────────────────
+
+STATO PRIMA → STATO DOPO (sintesi)
+
+| Prima | Dopo |
+|---|---|
+| Usa ChatGPT per domande base | Costruisce sistemi AI complessi con Claude Code |
+| Non sa cos'è un agente AI | Progetta e orchestra agenti multi-step |
+| Non sa programmare e si sente tagliato fuori | Costruisce senza scrivere codice, con file di istruzione |
+| Ha zero progetti da mostrare | Ha 3 progetti portfolio dimostrabili |
+| Non sa come monetizzare l'AI | Ha un'offerta chiara, un portfolio e i primi prospect contattati |
+
+PERCORSO: Mod 0 → Mod 1 → Mod 2 → Mod 3 → Mod 4 → Mod 5
+(ogni modulo è prerequisito del successivo)
+
+
+# ══════════════════════════════════════════════════════════════
+# MODULO 0: SETUP — IL TUO PRIMO AGENTE IN 10 MINUTI
+# ══════════════════════════════════════════════════════════════
+
+TRASFORMAZIONE DI QUESTO MODULO:
+Da: "Non ho Claude Code installato, non so cosa sia il terminale, non ho mai fatto nulla di tecnico"
+A:  "Ho Claude Code funzionante sul mio computer e ho creato il mio primo output AI in meno di 10 minuti"
+
+DURATA STIMATA: 35 minuti video + 15 minuti esercizio
+
+───────────────────────────────────────────────────────────
+LEZIONE 0.1 — Perché Claude Code e Non ChatGPT (tipo: concetto chiave)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente capisce la differenza tra "chattare con l'AI"
+│   e "costruire sistemi con l'AI" — e perché questa differenza è il suo vantaggio competitivo
+├── Contenuto:
+│   ├── ChatGPT = conversazione. Claude Code = costruzione. La differenza
+│   │   è come usare Google Maps vs progettare un percorso logistico per un'azienda.
+│   │   Uno è un utente, l'altro è un professionista.
+│   ├── Le 3 cose che Claude Code fa e ChatGPT no: accesso al file system,
+│   │   esecuzione di codice sul tuo computer, memoria persistente tramite
+│   │   file di istruzione (CLAUDE.md). Questo significa che Claude Code
+│   │   può COSTRUIRE cose, non solo rispondere.
+│   └── Il mercato: chi sa "usare ChatGPT" = tutti. Chi sa "costruire
+│       sistemi con Claude Code" = quasi nessuno in Italia. Questa asimmetria
+│       è la tua finestra di opportunità.
+├── Esempio concreto: Screen recording — stesso task fatto con ChatGPT (copia-incolla
+│   manuale, 15 minuti, risultato mediocre) vs Claude Code (1 comando, 30 secondi,
+│   output strutturato salvato in un file pronto all'uso). Il task: creare un'analisi
+│   di 5 competitor con tabella comparativa.
+├── Errore comune: "Claude Code è per programmatori"
+│   → Correzione: Claude Code scrive il codice per te. Tu scrivi istruzioni
+│     in italiano. Il tuo lavoro è pensare e progettare, non programmare.
+│     Mostro un esempio di istruzione in italiano puro che produce un risultato complesso.
+├── Output pratico: Lo studente scrive una lista di 3 task che oggi fa manualmente
+│   e che Claude Code potrebbe automatizzare (li userà nei moduli successivi)
+└── Durata: 10 min
+
+───────────────────────────────────────────────────────────
+LEZIONE 0.2 — Installazione Guidata Step-by-Step (tipo: tutorial pratico)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente ha Claude Code installato e funzionante sul suo computer
+├── Contenuto (screen recording passo-passo):
+│   ├── Step 1 — Prerequisiti: installare Node.js (link diretto, versione esatta,
+│   │   screen recording su Mac E Windows). Tempo: 3 minuti.
+│   ├── Step 2 — Installazione Claude Code: comando esatto nel terminale
+│   │   (npm install -g @anthropic-ai/claude-code). Mostro cosa appare,
+│   │   come verificare che funzioni, come risolvere i 3 errori più comuni.
+│   ├── Step 3 — Primo avvio: aprire Claude Code, autenticazione,
+│   │   primo comando di test ("Crea un file con 5 idee per un business
+│   │   di automazione AI"). Mostro il risultato in tempo reale.
+│   └── Step 4 — Troubleshooting rapido: i 5 errori più comuni all'installazione
+│       con soluzione copia-incolla per ciascuno (permessi, versione Node
+│       sbagliata, path non configurato, ecc.)
+├── Template incluso: ✅ "Checklist Installazione Claude Code" — PDF stampabile
+│   con tutti gli step, comandi copia-incolla, link diretti, soluzioni errori
+├── Errore comune: "Installo ma non funziona e mi blocco"
+│   → Correzione: La checklist ha una sezione "Se non funziona" con 5 soluzioni
+│     ai problemi più frequenti + link al canale supporto community
+├── Output pratico: Claude Code installato e funzionante. Il primo file creato da Claude Code
+│   è salvato sul computer dello studente.
+└── Durata: 15 min
+
+───────────────────────────────────────────────────────────
+LEZIONE 0.3 — Il Tuo Primo Agente in 10 Minuti (tipo: applicazione pratica)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente crea il suo primo output complesso con Claude Code
+│   e sperimenta la differenza rispetto a ChatGPT
+├── Esercizio guidato (screen recording + lo studente replica):
+│   ├── Step 1: Apri il terminale nella cartella del tuo primo progetto
+│   ├── Step 2: Lancia Claude Code
+│   ├── Step 3: Dai questa istruzione esatta: "Analizza il sito [URL di un
+│   │   competitor a scelta dello studente]. Crea un report con: punti di forza,
+│   │   punti deboli, 5 suggerimenti di miglioramento. Salva tutto in un file
+│   │   report.md con formattazione professionale."
+│   ├── Step 4: Guarda Claude Code lavorare — nota come naviga, analizza, scrive
+│   └── Step 5: Apri il file generato e valuta il risultato
+├── Esempio compilato: ✅ Mostro l'esercizio fatto da me su un sito reale
+│   (un e-commerce italiano piccolo). Il report generato da Claude Code diventa
+│   il modello di riferimento per lo studente.
+├── Criteri autovalutazione:
+│   ├── "Hai fatto bene se: Claude Code ha prodotto un file report.md leggibile"
+│   ├── "Hai fatto bene se: il report contiene almeno 5 osservazioni specifiche sul sito"
+│   └── "Hai fatto bene se: hai capito la differenza tra 'chiedere a ChatGPT' e
+│       'far lavorare Claude Code sul tuo computer'"
+└── Durata: 10 min
+
+───────────────────────────────────────────────────────────
+MATERIALI DI QUESTO MODULO
+───────────────────────────────────────────────────────────
+├── □ Template: "Checklist Installazione Claude Code" — PDF con step, comandi, troubleshooting
+├── □ Checklist: "Setup Completato?" — 6 verifiche post-installazione
+├── □ Esercizio: "Il Mio Primo Agente" — analisi competitor guidata
+├── □ Esempio compilato: Report competitor generato da Claude Code (caso reale e-commerce IT)
+└── □ PDF riassuntivo: "Da ChatGPT a Claude Code — Le 3 Differenze Che Contano"
+
+───────────────────────────────────────────────────────────
+CHECKPOINT DI FINE MODULO
+───────────────────────────────────────────────────────────
+Lo studente può rispondere "Sì" a tutte queste domande?
+□ "So spiegare in 1 frase perché Claude Code è diverso da ChatGPT?"
+□ "Ho Claude Code installato e funzionante sul mio computer?"
+□ "Ho creato il mio primo file con Claude Code (report competitor)?"
+□ "Ho identificato 3 task che oggi faccio a mano e che Claude Code può automatizzare?"
+□ "Sono pronto per il Modulo 1 dove imparerò a dare istruzioni strutturate?"
+
+
+# ══════════════════════════════════════════════════════════════
+# MODULO 1: FONDAMENTA — PARLA LA LINGUA DI CLAUDE CODE
+# ══════════════════════════════════════════════════════════════
+
+TRASFORMAZIONE DI QUESTO MODULO:
+Da: "Uso Claude Code come un chatbot — scrivo prompt generici e ottengo risultati casuali"
+A:  "So dare istruzioni precise con CLAUDE.md, gestisco il contesto, e ottengo output prevedibili e di alta qualità ogni volta"
+
+DURATA STIMATA: 55 minuti video + 30 minuti esercizio
+
+───────────────────────────────────────────────────────────
+LEZIONE 1.1 — Come Pensa Claude Code (tipo: concetto chiave)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente capisce il modello mentale di Claude Code —
+│   context window, istruzioni persistenti, file system — e perché
+│   "prompt migliore" non basta
+├── Contenuto:
+│   ├── Il concetto di "context window": Claude Code non ricorda tutto.
+│   │   Ha una finestra di attenzione. Quello che ci metti dentro determina
+│   │   la qualità dell'output. È come dare un brief a un freelancer:
+│   │   brief vago = risultato vago.
+│   ├── Le 3 leve di controllo: comandi (cosa fai ora), CLAUDE.md (chi sei
+│   │   e come lavori — persistente), contesto di progetto (i file nella
+│   │   cartella). Queste 3 leve insieme = output prevedibile.
+│   └── Perché il "prompt engineering" classico non basta con Claude Code:
+│       non stai chattando, stai configurando un sistema. La differenza
+│       è come scrivere un messaggio vs scrivere un manuale operativo.
+├── Esempio concreto: Screen recording — stesso task ("scrivi 5 post Instagram
+│   per un brand di fitness") fatto con prompt generico vs con CLAUDE.md
+│   configurato (tono, target, formato, esempi). Differenza visibile nell'output.
+├── Errore comune: "Scrivo prompt sempre più lunghi per ottenere risultati migliori"
+│   → Correzione: La lunghezza del prompt non è il problema. Il problema è
+│     che le istruzioni non sono strutturate. Un CLAUDE.md di 30 righe batte
+│     un prompt di 500 parole ogni volta.
+├── Output pratico: Lo studente mappa le sue "3 leve" per un progetto a scelta:
+│   cosa metterebbe nei comandi, cosa nel CLAUDE.md, quali file di contesto
+│   servirebbero.
+└── Durata: 12 min
+
+───────────────────────────────────────────────────────────
+LEZIONE 1.2 — Il Framework CLAUDE.md (tipo: framework/sistema)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente sa scrivere un CLAUDE.md efficace usando il framework I.C.R.O.
+├── Framework: I.C.R.O. (Identità — Contesto — Regole — Output)
+│   ├── I — Identità: Chi è Claude Code in questo progetto. Non "sei un assistente"
+│   │   ma "sei un copywriter specializzato in e-commerce D2C con esperienza
+│   │   in email marketing". Più specifico = output migliore.
+│   ├── C — Contesto: Background del progetto. Target, settore, obiettivi,
+│   │   vincoli. "Il target sono donne 25-40 che comprano skincare naturale
+│   │   online. Budget medio €50-80. Pain point: non si fidano degli ingredienti."
+│   ├── R — Regole: Cosa fare SEMPRE e cosa NON fare MAI. Formato output,
+│   │   tono di voce, lunghezza, struttura. "Scrivi sempre in italiano.
+│   │   Max 150 parole per post. Mai usare emoji. Includi sempre una CTA."
+│   └── O — Output: Formato esatto dell'output desiderato. "Ogni post deve
+│       avere: Hook (1 riga) → Corpo (3-5 righe) → CTA (1 riga). Salvali
+│       in un file posts.md con heading per ogni post."
+├── Demo/walkthrough: Screen recording — costruisco un CLAUDE.md completo
+│   per un progetto reale (un sistema di content creation per un personal trainer).
+│   Mostro: come lo scrivo, dove lo salvo, come Claude Code lo legge automaticamente,
+│   la differenza nell'output prima e dopo.
+├── Template incluso: ✅ "Template CLAUDE.md — Framework I.C.R.O." — file .md
+│   con struttura pronta, istruzioni per ogni sezione, 3 esempi per settori diversi
+│   (e-commerce, servizi, personal brand)
+├── Output pratico: Lo studente ha il suo primo CLAUDE.md scritto e funzionante
+│   per un progetto personale
+└── Durata: 18 min
+
+───────────────────────────────────────────────────────────
+LEZIONE 1.3 — Comandi Avanzati e Context Management (tipo: applicazione pratica)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente padroneggia i comandi essenziali di Claude Code
+│   e sa gestire il contesto per ottenere output consistenti su progetti complessi
+├── Contenuto (screen recording con esercizio guidato):
+│   ├── I 10 comandi che userai ogni giorno: /init, /add, /compact, /clear,
+│   │   /cost, /doctor, /memory, /review, /status, /help — per ognuno:
+│   │   cosa fa, quando usarlo, esempio pratico
+│   ├── Context management: come Claude Code decide cosa "sa" in ogni momento.
+│   │   La regola: meno contesto irrilevante = output migliore.
+│   │   Come aggiungere file specifici, come escludere cartelle, come usare
+│   │   .claudeignore per tenere pulito il contesto
+│   └── Il workflow quotidiano: la sequenza operativa che userai sempre —
+│       1) Apri progetto → 2) Claude Code carica CLAUDE.md → 3) Verifica
+│       contesto → 4) Dai istruzione specifica → 5) Review output →
+│       6) Itera se necessario
+├── Esercizio:
+│   ├── Istruzioni: "Prendi il CLAUDE.md che hai scritto nella lezione 1.2.
+│   │   Apri Claude Code nella cartella del progetto. Usa il comando /add per
+│   │   aggiungere un file di contesto. Dai un'istruzione che produce un output
+│   │   strutturato (es: una lista di 10 idee per contenuti). Verifica che
+│   │   l'output rispetti le regole del tuo CLAUDE.md."
+│   ├── Input richiesto: CLAUDE.md dalla lezione 1.2 + almeno 1 file di contesto
+│   └── Output atteso: Un output strutturato di Claude Code che dimostra
+│       che il CLAUDE.md viene rispettato (tono, formato, regole)
+├── Esempio compilato: ✅ Mostro il mio workflow completo su un progetto Digital Empire:
+│   CLAUDE.md per content creation → aggiungo file brief cliente → lancio task
+│   "crea 5 post LinkedIn" → mostro come l'output rispetta identità, tono e formato
+├── Criteri autovalutazione:
+│   ├── "Hai fatto bene se: l'output di Claude Code rispetta il tono definito nel tuo CLAUDE.md"
+│   ├── "Hai fatto bene se: sai usare almeno 5 comandi senza consultare la guida"
+│   └── "Hai fatto bene se: riesci a spiegare a qualcuno cos'è un CLAUDE.md in 30 secondi"
+└── Durata: 25 min
+
+───────────────────────────────────────────────────────────
+MATERIALI DI QUESTO MODULO
+───────────────────────────────────────────────────────────
+├── □ Template: "CLAUDE.md — Framework I.C.R.O." — file .md con struttura + 3 esempi settoriali
+├── □ Template: "Cheat Sheet Comandi Claude Code" — PDF 1 pagina con i 10 comandi essenziali + uso
+├── □ Checklist: "Il Mio CLAUDE.md è Completo?" — 8 verifiche per un CLAUDE.md efficace
+├── □ Esercizio: "Il Mio Primo Workflow" — CLAUDE.md + contesto + output strutturato
+├── □ Esempio compilato: CLAUDE.md di Digital Empire per content creation (caso reale)
+└── □ PDF riassuntivo: "Le 3 Leve di Controllo + Framework I.C.R.O. — Sintesi Modulo 1"
+
+───────────────────────────────────────────────────────────
+CHECKPOINT DI FINE MODULO
+───────────────────────────────────────────────────────────
+Lo studente può rispondere "Sì" a tutte queste domande?
+□ "So spiegare la differenza tra prompt, CLAUDE.md e contesto di progetto?"
+□ "Ho scritto un CLAUDE.md completo con il framework I.C.R.O.?"
+□ "So usare almeno 5 comandi avanzati di Claude Code?"
+□ "Ho prodotto un output strutturato che rispetta le regole del mio CLAUDE.md?"
+□ "Sono pronto per il Modulo 2 dove imparerò a creare Skill personalizzate?"
+
+
+# ══════════════════════════════════════════════════════════════
+# MODULO 2: SKILL BUILDER — CREA SISTEMI RIUTILIZZABILI
+# ══════════════════════════════════════════════════════════════
+
+TRASFORMAZIONE DI QUESTO MODULO:
+Da: "Non so cos'è una Skill, ogni volta che uso Claude Code parto da zero e scrivo istruzioni da capo"
+A:  "Creo file SKILL.md completi che trasformano Claude Code in uno specialista per qualsiasi task — e ho una libreria di 5+ Skill pronte all'uso"
+
+DURATA STIMATA: 70 minuti video + 45 minuti esercizio
+
+───────────────────────────────────────────────────────────
+LEZIONE 2.1 — Cos'è una Skill e Perché Cambia Tutto (tipo: concetto chiave)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente capisce che le Skill sono il "prodotto" che costruirà
+│   e venderà — non sono un accessorio, sono la competenza core
+├── Contenuto:
+│   ├── Una Skill è un file di istruzioni (SKILL.md) che trasforma Claude Code
+│   │   in uno specialista per un task specifico. Come un playbook operativo:
+│   │   Claude Code lo legge e sa esattamente cosa fare, come farlo, e che
+│   │   output produrre. Senza Skill = generalista. Con Skill = specialista.
+│   ├── La differenza tra CLAUDE.md e SKILL.md: CLAUDE.md = configurazione
+│   │   generale del progetto (chi sei, come lavori). SKILL.md = competenza
+│   │   specifica per un task (come scrivere email di vendita, come analizzare
+│   │   un sito, come generare report). Un progetto ha 1 CLAUDE.md e molte Skill.
+│   └── Perché le Skill sono il tuo asset vendibile: un freelancer che "sa
+│       usare l'AI" è generico. Un professionista che ha una libreria di 20 Skill
+│       personalizzate per settore è un AI Builder. Le Skill sono il tuo portfolio,
+│       il tuo vantaggio, il motivo per cui un cliente paga te e non usa ChatGPT.
+├── Esempio concreto: Mostro 3 Skill diverse in azione sullo stesso progetto:
+│   1) Skill "Email Sequence Writer" — genera sequenza email di vendita
+│   2) Skill "Competitor Analyzer" — produce analisi competitor strutturata
+│   3) Skill "Content Calendar Builder" — crea calendario editoriale mensile
+│   Lo studente vede come la stessa base (Claude Code) produce output
+│   radicalmente diversi in base alla Skill caricata.
+├── Errore comune: "Le Skill sono solo prompt più lunghi"
+│   → Correzione: Un prompt è una richiesta. Una Skill è un sistema completo:
+│     ha trigger (quando si attiva), istruzioni (come lavora), template
+│     (cosa produce), regole (cosa evitare), esempi (standard di qualità).
+│     È la differenza tra dire a qualcuno "fammi un caffè" vs dargli un
+│     manuale da barista con ricette, temperature e standard.
+├── Output pratico: Lo studente identifica 3 task ricorrenti nella sua vita/lavoro
+│   che trasformerà in Skill nei prossimi esercizi
+└── Durata: 12 min
+
+───────────────────────────────────────────────────────────
+LEZIONE 2.2 — Il Framework S.K.I.L.L. per Scrivere Skill Perfette (tipo: framework/sistema)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente sa scrivere un file SKILL.md completo ed efficace
+│   usando un framework strutturato
+├── Framework: S.K.I.L.L. (Scopo — Knowledge — Istruzioni — Limiti — Layout output)
+│   ├── S — Scopo: Cosa fa questa Skill, in 1-2 frasi. Quando si attiva.
+│   │   Esempio: "Questa Skill scrive sequenze email di vendita per lanci
+│   │   di info-prodotti. Si attiva quando l'utente chiede email di lancio."
+│   ├── K — Knowledge: Conoscenze di base che la Skill deve avere. Framework,
+│   │   best practice, dati, contesto di settore. Esempio: "Conosce il framework
+│   │   PAS per email. Sa che l'oggetto è l'elemento più critico. Benchmark:
+│   │   open rate target >25%, CTR >3%."
+│   ├── I — Istruzioni: Il processo step-by-step che Claude Code deve seguire.
+│   │   Non generico ma specifico. Esempio: "Step 1: Chiedi target, prodotto,
+│   │   prezzo, data lancio. Step 2: Scrivi 7 email in sequenza. Step 3: Per
+│   │   ogni email includi: oggetto (max 50 char), preview text, corpo, CTA."
+│   ├── L — Limiti: Cosa la Skill NON deve fare. Vincoli di tono, lunghezza,
+│   │   formato. Esempio: "Mai usare clickbait nell'oggetto. Mai email >300
+│   │   parole. Mai più di 1 CTA per email. Mai tono aggressivo."
+│   └── L — Layout output: Il formato esatto dell'output. Come deve apparire
+│       il risultato. Esempio: "Output in formato .md con: Titolo sequenza →
+│       Per ogni email: [Numero] [Oggetto] [Preview] [Corpo] [CTA] [Note
+│       per il mittente]. Alla fine: calendario invio consigliato."
+├── Demo/walkthrough: Screen recording — scrivo una Skill completa da zero
+│   per "Social Media Caption Writer" (target: e-commerce skincare).
+│   Mostro ogni sezione del framework S.K.I.L.L. compilata, poi lancio
+│   la Skill e mostro il risultato.
+├── Template incluso: ✅ "Template SKILL.md — Framework S.K.I.L.L." — file .md
+│   con struttura pronta, istruzioni per ogni sezione, annotazioni su cosa
+│   funziona e cosa evitare. Include 2 esempi compilati completi.
+├── Output pratico: Lo studente ha scritto la sua prima SKILL.md completa
+│   per uno dei 3 task identificati nella lezione 2.1
+└── Durata: 22 min
+
+───────────────────────────────────────────────────────────
+LEZIONE 2.3 — Skill Avanzate: Trigger, Catene e Specializzazione (tipo: concetto + demo)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente padroneggia le tecniche avanzate per Skill potenti:
+│   trigger intelligenti, catene di Skill, specializzazione per settore
+├── Contenuto:
+│   ├── Trigger intelligenti: come definire QUANDO una Skill si attiva.
+│   │   Non solo "quando l'utente lo chiede" ma pattern matching: se l'utente
+│   │   menziona "email" + "lancio" → attiva la Skill Email Sequence.
+│   │   Questo rende il sistema proattivo, non reattivo.
+│   ├── Catene di Skill: come una Skill può richiamare un'altra. Esempio:
+│   │   "Skill Ricerca Competitor" → output → input per "Skill Copy Writer"
+│   │   → output → input per "Skill Email Builder". Il risultato: un sistema
+│   │   che in 3 step produce una sequenza email basata su ricerca reale.
+│   └── Specializzazione per settore: la stessa Skill "base" (es: Content Writer)
+│       personalizzata per 3 settori diversi. Mostro come creare varianti
+│       settoriali cambiando Knowledge e Limiti, mantenendo la struttura.
+│       Questo è il "prodotto" che venderai: Skill pre-configurate per settore.
+├── Esempio concreto: Screen recording — dimostro una catena di 3 Skill
+│   che produce un piano contenuti completo per un cliente immaginario.
+│   Input: "brief del cliente" → Output: piano editoriale + 10 post scritti + calendario.
+├── Errore comune: "Creo una Skill gigante che fa tutto"
+│   → Correzione: Una Skill deve fare UNA COSA BENE. Se fa troppe cose,
+│     perde qualità. Meglio 5 Skill specializzate che 1 Skill-tuttofare.
+│     Regola: se la descrizione dello Scopo supera le 3 righe, stai mettendo
+│     troppo dentro. Spezza in 2 Skill.
+├── Output pratico: Lo studente ha scritto 2 Skill aggiuntive (totale 3)
+│   e ha creato almeno 1 catena tra 2 Skill
+└── Durata: 18 min
+
+───────────────────────────────────────────────────────────
+LEZIONE 2.4 — Costruisci la Tua Libreria di Skill (tipo: applicazione pratica)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente esce con una libreria di 5+ Skill funzionanti,
+│   organizzate in una cartella strutturata, pronte all'uso
+├── Esercizio:
+│   ├── Istruzioni:
+│   │   Step 1: Scegli 2 Skill aggiuntive dalla lista suggerita (vedi template)
+│   │   Step 2: Scrivi ciascuna usando il framework S.K.I.L.L.
+│   │   Step 3: Testa ogni Skill — lancia Claude Code, attiva la Skill, verifica output
+│   │   Step 4: Organizza tutte le Skill nella struttura cartelle standard:
+│   │          /skills/[nome-skill]/SKILL.md
+│   │   Step 5: Crea un file INDEX.md che elenca tutte le tue Skill con
+│   │          nome, scopo, trigger, status (testata/da testare)
+│   ├── Input richiesto: Le 3 Skill delle lezioni precedenti + la lista suggerita
+│   │   di Skill per ispirazione
+│   └── Output atteso: Cartella /skills/ con 5+ SKILL.md + file INDEX.md
+├── Esempio compilato: ✅ La mia libreria Skill di Digital Empire:
+│   10 Skill organizzate con INDEX.md — lo studente vede un modello
+│   professionale di come organizzare e documentare le proprie Skill
+├── Template incluso: ✅ "Lista 15 Skill Pronte All'Uso" — 15 idee di Skill
+│   con Scopo e Knowledge pre-compilati. Lo studente sceglie, personalizza,
+│   e completa con Istruzioni, Limiti, Layout.
+├── Criteri autovalutazione:
+│   ├── "Hai fatto bene se: hai almeno 5 Skill nella cartella /skills/"
+│   ├── "Hai fatto bene se: ogni Skill ha tutte le 5 sezioni del framework S.K.I.L.L."
+│   └── "Hai fatto bene se: hai testato ogni Skill e l'output è coerente con lo Scopo"
+└── Durata: 18 min (video) + 45 min (esercizio autonomo)
+
+───────────────────────────────────────────────────────────
+MATERIALI DI QUESTO MODULO
+───────────────────────────────────────────────────────────
+├── □ Template: "SKILL.md — Framework S.K.I.L.L." — file .md con struttura + 2 esempi completi
+├── □ Template: "Lista 15 Skill Pronte All'Uso" — 15 idee pre-compilate (Scopo + Knowledge)
+├── □ Template: "INDEX.md — Organizza la Tua Libreria Skill" — file indice con campi standard
+├── □ Checklist: "La Mia Skill è Completa?" — 10 verifiche per una Skill professionale
+├── □ Esercizio: "Costruisci 5 Skill" — istruzioni step-by-step + criteri
+├── □ Esempio compilato: Libreria Skill Digital Empire (10 Skill + INDEX.md)
+└── □ PDF riassuntivo: "Framework S.K.I.L.L. + Guida Trigger e Catene — Sintesi Modulo 2"
+
+───────────────────────────────────────────────────────────
+CHECKPOINT DI FINE MODULO
+───────────────────────────────────────────────────────────
+Lo studente può rispondere "Sì" a tutte queste domande?
+□ "So spiegare la differenza tra CLAUDE.md e SKILL.md?"
+□ "So scrivere una SKILL.md completa con il framework S.K.I.L.L.?"
+□ "Ho una libreria di almeno 5 Skill funzionanti e organizzate?"
+□ "So creare una catena tra 2+ Skill per output complessi?"
+□ "Sono pronto per il Modulo 3 dove costruirò workflow multi-step e agenti?"
+
+
+# ══════════════════════════════════════════════════════════════
+# MODULO 3: WORKFLOW & AGENTI — ORCHESTRA SISTEMI COMPLESSI
+# ══════════════════════════════════════════════════════════════
+
+TRASFORMAZIONE DI QUESTO MODULO:
+Da: "So creare Skill singole ma non so come collegarle in flussi complessi — faccio tutto manualmente step by step"
+A:  "Progetto workflow multi-step e orchestro agenti specializzati che collaborano su progetti complessi — un sistema fa in 10 minuti quello che prima richiedeva 3 ore"
+
+DURATA STIMATA: 65 minuti video + 40 minuti esercizio
+
+───────────────────────────────────────────────────────────
+LEZIONE 3.1 — Il Mindset dell'Architetto AI (tipo: concetto chiave)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente passa da "operatore" (fa task uno alla volta)
+│   ad "architetto" (progetta sistemi che fanno task in sequenza)
+├── Contenuto:
+│   ├── L'upgrade mentale: fino a qui hai costruito strumenti singoli (Skill).
+│   │   Ora impari a costruire CATENE DI MONTAGGIO. È la differenza tra un
+│   │   artigiano che fa 1 sedia alla volta e chi progetta la fabbrica.
+│   │   Il tuo valore di mercato fa un salto: non vendi più "task" ma "sistemi".
+│   ├── Il principio Input → Processo → Output → Input successivo: ogni step
+│   │   di un workflow produce un output che diventa l'input del passo dopo.
+│   │   Esempio: Ricerca (output: lista pain point) → Copy (input: pain point
+│   │   → output: headline) → Email (input: headline → output: sequenza).
+│   └── Quando un workflow batte il lavoro manuale: la regola del 3x.
+│       Se un task lo farai più di 3 volte → automatizzalo. Se richiede
+│       più di 3 step manuali → crea un workflow. Se serve a più di 3
+│       clienti → è un prodotto vendibile.
+├── Esempio concreto: Mostro il "prima e dopo" di un progetto reale:
+│   PRIMA: 3 ore di lavoro manuale (ricerca + scrittura + formattazione)
+│   DOPO: 1 workflow da 10 minuti che produce lo stesso output.
+│   Mostro il risparmio di tempo e la consistenza del risultato.
+├── Errore comune: "Automatizzare tutto — anche i task che faccio 1 volta"
+│   → Correzione: Non tutto va automatizzato. La regola del 3x ti salva
+│     dal "tool-hoarding" (accumulare automazioni inutili). Se lo fai 1 volta
+│     → fallo a mano. Se lo fai 3+ volte → costruisci il workflow.
+├── Output pratico: Lo studente mappa 2 processi della sua vita/lavoro che
+│   richiedono 3+ step manuali e li disegna come workflow (su carta o documento)
+└── Durata: 12 min
+
+───────────────────────────────────────────────────────────
+LEZIONE 3.2 — Il Framework W.O.R.K. per Progettare Workflow (tipo: framework/sistema)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente sa progettare un workflow multi-step strutturato
+│   prima di costruirlo — nessun workflow improvvisato
+├── Framework: W.O.R.K. (What — Order — Resources — Kickoff)
+│   ├── W — What: Definisci l'output finale desiderato. "Cosa deve uscire
+│   │   alla fine del workflow?" Esempio: "Una sequenza di 7 email di lancio
+│   │   basata su ricerca reale del target e competitor."
+│   ├── O — Order: Mappa la sequenza degli step. Ogni step = 1 Skill o
+│   │   1 azione specifica. Disegna il flusso: Step 1 → Step 2 → Step 3.
+│   │   Regola: massimo 5 step per workflow. Se sono di più → spezza in 2.
+│   ├── R — Resources: Per ogni step, identifica: quale Skill serve? Quale
+│   │   input riceve? Quale output produce? Servono file esterni?
+│   └── K — Kickoff: L'istruzione iniziale che avvia tutto il workflow.
+│       Deve essere 1 comando chiaro che Claude Code può eseguire.
+│       Esempio: "Avvia il workflow Content System: analizza [URL brief],
+│       produci piano editoriale, scrivi i primi 5 post."
+├── Demo/walkthrough: Screen recording — progetto e costruisco un workflow
+│   completo "Content System" in tempo reale:
+│   Step 1: Skill "Brief Analyzer" (analizza il brief del cliente)
+│   Step 2: Skill "Content Strategist" (produce piano editoriale)
+│   Step 3: Skill "Post Writer" (scrive i post)
+│   Mostro il file di orchestrazione che collega le 3 Skill.
+├── Template incluso: ✅ "Template Workflow — Framework W.O.R.K." — documento
+│   con canvas di progettazione (tabella step × input × Skill × output)
+│   + 2 workflow pre-progettati da personalizzare
+├── Output pratico: Lo studente ha progettato 1 workflow completo su carta/doc
+│   usando il framework W.O.R.K. (lo costruirà nella lezione successiva)
+└── Durata: 20 min
+
+───────────────────────────────────────────────────────────
+LEZIONE 3.3 — Costruisci il Tuo Primo Workflow Funzionante (tipo: applicazione pratica)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente costruisce, testa e ottimizza un workflow
+│   multi-step completo che gira su Claude Code
+├── Esercizio:
+│   ├── Istruzioni:
+│   │   Step 1: Prendi il workflow progettato nella lezione 3.2
+│   │   Step 2: Verifica che ogni Skill necessaria esista nella tua libreria
+│   │          (se manca → creala con il framework S.K.I.L.L.)
+│   │   Step 3: Crea il file di orchestrazione: un documento che dice a Claude Code
+│   │          l'ordine degli step, quali Skill usare, come passare l'output
+│   │          di uno step come input del successivo
+│   │   Step 4: Lancia il workflow con un caso reale (non inventato)
+│   │   Step 5: Valuta l'output finale — è all'altezza di quello che faresti
+│   │          manualmente in 3 ore? Se no → identifica lo step debole e migliora
+│   │          la Skill corrispondente
+│   ├── Input richiesto: Workflow progettato (lezione 3.2) + Skill dalla libreria (Mod 2)
+│   └── Output atteso: 1 workflow funzionante che produce un output complesso
+│       (es: piano contenuti + 5 post scritti + calendario)
+├── Esempio compilato: ✅ Il workflow "Content System" di Digital Empire:
+│   3 Skill collegate → output: piano editoriale + 10 post + calendario mensile.
+│   Mostro il file di orchestrazione, l'output finale, e il confronto
+│   tempo manuale vs workflow (3 ore vs 12 minuti).
+├── Criteri autovalutazione:
+│   ├── "Hai fatto bene se: il workflow gira senza errori dall'inizio alla fine"
+│   ├── "Hai fatto bene se: l'output finale è comparabile a quello che faresti in 3+ ore"
+│   └── "Hai fatto bene se: sai identificare quale step migliorare se l'output è debole"
+└── Durata: 15 min (video guida) + 40 min (esercizio autonomo)
+
+───────────────────────────────────────────────────────────
+LEZIONE 3.4 — Agenti Specializzati e Orchestrazione (tipo: concetto avanzato + demo)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente capisce come progettare agenti con "personalità"
+│   diverse e farli collaborare — il livello che separa un utente da un builder
+├── Contenuto:
+│   ├── Cos'è un agente: un'istanza di Claude Code con un ruolo specifico
+│   │   definito da CLAUDE.md + Skill dedicate. Non è "un altro chatbot" —
+│   │   è un collaboratore specializzato. Esempio: "Agente Ricercatore" vs
+│   │   "Agente Copywriter" vs "Agente Revisore" — stessa AI, ruoli diversi.
+│   ├── Pattern di orchestrazione: come far collaborare 2+ agenti.
+│   │   Pattern 1 — Sequenziale: A produce → B riceve e lavora → C finalizza
+│   │   Pattern 2 — Parallelo: A e B lavorano in contemporanea su parti diverse → C assembla
+│   │   Pattern 3 — Review: A produce → B revisa e corregge → A riscrive
+│   └── Quando usare agenti vs workflow semplice: se il task richiede
+│       "personalità" diverse (es: creativo vs analitico) → agenti.
+│       Se è una sequenza di step tecnici → workflow. Regola pratica:
+│       se devi cambiare il "tono" del CLAUDE.md tra uno step e l'altro → agenti.
+├── Demo/walkthrough: Screen recording — costruisco un sistema a 3 agenti
+│   per un progetto cliente: Agente Ricercatore (analitico, raccoglie dati)
+│   → Agente Copywriter (creativo, scrive il copy) → Agente Revisore
+│   (critico, trova errori e migliora). Mostro come l'output è superiore
+│   a un singolo prompt perché ogni agente è ottimizzato per il suo ruolo.
+├── Errore comune: "Creo 10 agenti per ogni progetto"
+│   → Correzione: Il 90% dei task si risolve con 1-3 agenti. L'over-engineering
+│     è il nemico della produttività. Start simple → aggiungi agenti solo
+│     quando l'output di un singolo agente non è sufficiente.
+├── Output pratico: Lo studente ha un sistema a 2 agenti funzionante
+│   (Agente Produttore + Agente Revisore) per un task a sua scelta
+└── Durata: 18 min
+
+───────────────────────────────────────────────────────────
+MATERIALI DI QUESTO MODULO
+───────────────────────────────────────────────────────────
+├── □ Template: "Workflow Canvas — Framework W.O.R.K." — doc con tabella step × input × Skill × output
+├── □ Template: "2 Workflow Pre-Progettati" — Content System + Client Report (da personalizzare)
+├── □ Template: "Agente Base" — CLAUDE.md pre-configurato per 3 ruoli (Ricercatore, Writer, Revisore)
+├── □ Checklist: "Il Mio Workflow è Pronto?" — 8 verifiche prima di lanciare
+├── □ Esercizio: "Costruisci il Tuo Primo Workflow" — progettazione + costruzione + test
+├── □ Esempio compilato: Workflow "Content System" Digital Empire (3 Skill + output completo)
+└── □ PDF riassuntivo: "W.O.R.K. Framework + Pattern Orchestrazione Agenti — Sintesi Modulo 3"
+
+───────────────────────────────────────────────────────────
+CHECKPOINT DI FINE MODULO
+───────────────────────────────────────────────────────────
+Lo studente può rispondere "Sì" a tutte queste domande?
+□ "So progettare un workflow multi-step con il framework W.O.R.K.?"
+□ "Ho costruito almeno 1 workflow funzionante che collega 2+ Skill?"
+□ "So spiegare la differenza tra workflow sequenziale, parallelo e review?"
+□ "Ho un sistema a 2 agenti che collaborano su un progetto?"
+□ "Sono pronto per il Modulo 4 dove costruirò 3 progetti portfolio?"
+
+
+# ══════════════════════════════════════════════════════════════
+# MODULO 4: PROGETTI REALI — COSTRUISCI IL TUO PORTFOLIO
+# ══════════════════════════════════════════════════════════════
+
+TRASFORMAZIONE DI QUESTO MODULO:
+Da: "Ho la competenza tecnica (Skill, workflow, agenti) ma zero progetti da mostrare a un potenziale cliente"
+A:  "Ho 3 progetti completi nel mio portfolio che dimostrano capacità concrete: content system, analisi dati, automazione business"
+
+DURATA STIMATA: 75 minuti video + 90 minuti esercizio (il modulo più "pratico")
+
+───────────────────────────────────────────────────────────
+LEZIONE 4.1 — Il Portfolio dell'AI Builder (tipo: concetto chiave)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente capisce che il portfolio è il suo strumento di vendita #1
+│   e sa quali progetti dimostrano le competenze che i clienti pagano
+├── Contenuto:
+│   ├── Perché il portfolio batte il CV: nessuno assume un "AI specialist"
+│   │   basandosi su una lista di competenze. Ti assumono perché VEDONO
+│   │   cosa sai fare. Il portfolio è il tuo proof — mostra, non raccontare.
+│   ├── I 3 tipi di progetto che dimostrano valore: 1) Content System
+│   │   (produzione contenuti automatizzata — il più richiesto), 2) Data/Analysis
+│   │   (analisi e report — il più impressionante), 3) Business Automation
+│   │   (processi interni — il più vendibile alle aziende).
+│   └── La regola del "Case Study in 60 secondi": ogni progetto nel portfolio
+│       deve essere spiegabile in 60 secondi: Problema → Soluzione AI → Risultato.
+│       Se non riesci a spiegarlo in 60 secondi, il progetto è troppo complesso
+│       o troppo vago per il portfolio.
+├── Esempio concreto: Mostro 3 portfolio di AI Builder internazionali
+│   (anonimizzati se necessario) — cosa funziona, cosa non funziona,
+│   come strutturano i case study.
+├── Errore comune: "Metto tutto nel portfolio — anche i test"
+│   → Correzione: Il portfolio non è un archivio. Massimo 5-7 progetti,
+│     ciascuno curato. Meglio 3 progetti eccellenti che 10 mediocri.
+│     Qualità > quantità. Ogni progetto deve avere: contesto, problema,
+│     soluzione, risultato, screenshot/demo.
+├── Output pratico: Lo studente sceglie i 3 progetti che costruirà e compila
+│   il "Brief Progetto" per ciascuno (problema → soluzione → output atteso)
+└── Durata: 10 min
+
+───────────────────────────────────────────────────────────
+LEZIONE 4.2 — Progetto 1: Content System Automatizzato (tipo: progetto guidato)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente costruisce un sistema che produce contenuti multi-piattaforma
+│   (blog + social + email) partendo da un singolo brief
+├── Progetto guidato (screen recording completo):
+│   ├── Il problema: un freelancer/business spende 8-10 ore/settimana a creare
+│   │   contenuti per social, blog, newsletter. Vuole ridurre a 2 ore
+│   │   senza sacrificare qualità.
+│   ├── La soluzione:
+│   │   Step 1: Skill "Content Brief Analyzer" — analizza un brief/idea
+│   │          e produce content angles + key messages
+│   │   Step 2: Skill "Blog Post Writer" — scrive un articolo lungo (800-1200 parole)
+│   │   Step 3: Skill "Social Adapter" — prende l'articolo e produce
+│   │          5 post social (3 LinkedIn, 2 Instagram caption)
+│   │   Step 4: Skill "Newsletter Builder" — prende gli highlight e produce
+│   │          1 email newsletter
+│   │   Workflow: 4 Skill in sequenza, 1 comando per avviare tutto
+│   ├── Il risultato: input = 1 idea in 2 righe → output = 1 articolo + 5 post + 1 newsletter
+├── Template incluso: ✅ Tutte le 4 Skill pre-scritte (da personalizzare per il proprio settore)
+├── Output pratico: Lo studente ha il Content System funzionante e personalizzato
+│   per il suo settore/niche + tutti gli output generati come sample
+└── Durata: 25 min (video) + 30 min (esercizio)
+
+───────────────────────────────────────────────────────────
+LEZIONE 4.3 — Progetto 2: Analisi e Report Automatizzati (tipo: progetto guidato)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente costruisce un sistema che analizza dati/competitor/mercato
+│   e produce report professionali
+├── Progetto guidato (screen recording completo):
+│   ├── Il problema: un'azienda vuole un report competitor ogni mese.
+│   │   Manualmente richiede 4-6 ore di ricerca + 2 ore di formattazione.
+│   ├── La soluzione:
+│   │   Step 1: Skill "Web Researcher" — raccoglie dati da fonti specifiche
+│   │          (siti competitor, social, review)
+│   │   Step 2: Skill "Data Analyzer" — organizza i dati in categorie
+│   │          (pricing, posizionamento, contenuti, punti deboli)
+│   │   Step 3: Skill "Report Builder" — produce un report strutturato
+│   │          con executive summary, grafici testuali, raccomandazioni
+│   │   Workflow: 3 Skill + output in formato .md professionale
+│   ├── Il risultato: input = lista 5 competitor → output = report 10 pagine
+│       con analisi + raccomandazioni + action items
+├── Template incluso: ✅ Le 3 Skill pre-scritte + template report con struttura standard
+├── Output pratico: Lo studente ha il sistema di analisi funzionante
+│   con un report prodotto su competitor reali del suo settore
+└── Durata: 20 min (video) + 30 min (esercizio)
+
+───────────────────────────────────────────────────────────
+LEZIONE 4.4 — Progetto 3: Automazione Business Process (tipo: progetto guidato)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente costruisce un sistema che automatizza un processo
+│   business ripetitivo (il tipo di progetto più vendibile alle aziende)
+├── Progetto guidato (screen recording completo):
+│   ├── Il problema: un business riceve email da lead/prospect e deve
+│   │   qualificarli, rispondere, e organizzare le informazioni. Oggi è
+│   │   tutto manuale → lento, inconsistente, perde lead.
+│   ├── La soluzione:
+│   │   Step 1: Skill "Lead Qualifier" — analizza il messaggio del lead,
+│   │          classifica (hot/warm/cold), estrae informazioni chiave
+│   │   Step 2: Skill "Response Drafter" — bozza la risposta appropriata
+│   │          in base alla qualifica (template diversi per hot/warm/cold)
+│   │   Step 3: Skill "CRM Updater" — organizza le info in formato
+│   │          strutturato (nome, azienda, bisogno, qualifica, prossima azione)
+│   │   Workflow: 3 Skill → output: risposta pronta + scheda lead compilata
+│   ├── Il risultato: input = testo email del lead → output = risposta
+│       pronta da inviare + scheda CRM compilata. Da 15 min/lead a 2 min/lead.
+├── Template incluso: ✅ Le 3 Skill pre-scritte + struttura scheda CRM
+├── Output pratico: Lo studente ha il sistema di automazione funzionante
+│   con 3 lead processati come esempio
+└── Durata: 20 min (video) + 30 min (esercizio)
+
+───────────────────────────────────────────────────────────
+MATERIALI DI QUESTO MODULO
+───────────────────────────────────────────────────────────
+├── □ Template: "Brief Progetto Portfolio" — 1 pagina: problema → soluzione → output
+├── □ Template: "Content System" — 4 Skill pre-scritte + workflow orchestration
+├── □ Template: "Analysis System" — 3 Skill pre-scritte + template report
+├── □ Template: "Business Automation System" — 3 Skill pre-scritte + template scheda CRM
+├── □ Template: "Portfolio Page Template" — struttura per presentare ogni progetto
+│   (contesto → problema → soluzione → risultato → demo/screenshot)
+├── □ Checklist: "Il Mio Progetto è Portfolio-Ready?" — 8 verifiche
+├── □ Esercizio: 3 progetti guidati (il modulo stesso è l'esercizio)
+├── □ Esempio compilato: I 3 progetti fatti da me con output completi
+└── □ PDF riassuntivo: "I 3 Progetti Portfolio — Cosa Hai Costruito e Come Presentarlo"
+
+───────────────────────────────────────────────────────────
+CHECKPOINT DI FINE MODULO
+───────────────────────────────────────────────────────────
+Lo studente può rispondere "Sì" a tutte queste domande?
+□ "Ho completato il Content System e ho un output da mostrare?"
+□ "Ho completato il sistema di Analisi/Report e ho un report di esempio?"
+□ "Ho completato il sistema di Automazione Business e ho un caso processato?"
+□ "Posso spiegare ciascun progetto in 60 secondi (Problema → Soluzione → Risultato)?"
+□ "Sono pronto per il Modulo 5 dove imparerò a vendere questa competenza?"
+
+
+# ══════════════════════════════════════════════════════════════
+# MODULO 5: MONETIZZAZIONE — TRASFORMA LA SKILL IN CLIENTI
+# ══════════════════════════════════════════════════════════════
+
+TRASFORMAZIONE DI QUESTO MODULO:
+Da: "So costruire sistemi AI ma non so come venderli — non ho offerta, non ho portfolio online, non so dove trovare clienti"
+A:  "Ho un'offerta chiara con pricing, un portfolio online con 3 progetti, e ho contattato i primi 10 prospect qualificati"
+
+DURATA STIMATA: 60 minuti video + 60 minuti esercizio
+
+───────────────────────────────────────────────────────────
+LEZIONE 5.1 — L'Offerta dell'AI Builder (tipo: concetto chiave)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente definisce un'offerta chiara, specifica e vendibile
+│   — non "faccio AI" ma un servizio concreto con prezzo
+├── Contenuto:
+│   ├── I 3 modelli di business per un AI Builder:
+│   │   1) Progetto una tantum: "Ti costruisco un sistema AI per [risultato]" — €500-2000
+│   │   2) Retainer mensile: "Gestisco e miglioro i tuoi sistemi AI" — €300-800/mese
+│   │   3) Prodotto: "Vendo Skill/workflow pre-configurati per [settore]" — €50-200/pacchetto
+│   │   Consiglio per chi inizia: modello 1 (progetto) per i primi 3-5 clienti,
+│   │   poi evolvi verso modello 2 (retainer) per revenue ricorrente.
+│   ├── Come definire il prezzo: formula ROI. Se il tuo sistema risparmia
+│   │   al cliente 10 ore/mese × €30/ora = €300/mese di valore.
+│   │   Il tuo prezzo = 30-50% del valore generato. In questo caso: €100-150/mese
+│   │   (retainer) o €500-800 (progetto una tantum).
+│   └── L'offerta in 1 frase: "[Costruisco/Creo] [tipo sistema] per [target]
+│       che [risultato misurabile] in [tempo]." Esempio: "Creo sistemi di
+│       content automation per freelancer che riducono il tempo di produzione
+│       contenuti del 70% in 2 settimane."
+├── Esempio concreto: Mostro 3 offerte reali di AI Builder che funzionano
+│   (trovate su Upwork, Fiverr, LinkedIn) con analisi di cosa le rende efficaci
+├── Errore comune: "Offro 'consulenza AI' senza specificare cosa faccio"
+│   → Correzione: "Consulenza AI" non vende. "Ti costruisco un sistema che
+│     produce 30 post al mese in 2 ore invece di 20" vende. Specifico batte
+│     generico. Sempre.
+├── Template incluso: ✅ "Offerta AI Builder — Canvas" — 1 pagina con: target,
+│   problema, soluzione, risultato, prezzo, garanzia, CTA
+├── Output pratico: Lo studente ha la sua offerta scritta in 1 frase
+│   + il canvas compilato con tutti i dettagli
+└── Durata: 15 min
+
+───────────────────────────────────────────────────────────
+LEZIONE 5.2 — Portfolio Online in 1 Ora (tipo: framework/sistema)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente crea un portfolio online professionale per mostrare
+│   i 3 progetti del Modulo 4 — senza bisogno di saper fare siti web
+├── Framework: Portfolio 3C (Competenza — Case Study — Contatto)
+│   ├── C1 — Competenza: 1 sezione "Chi sono e cosa faccio" — la tua offerta
+│   │   in 1 frase + 3 bullet point con i servizi specifici
+│   ├── C2 — Case Study: 1 sezione per ogni progetto portfolio — struttura:
+│   │   Problema (2 righe) → Soluzione (2 righe) → Risultato (1 riga con numero)
+│   │   → Screenshot/demo (visuale)
+│   └── C3 — Contatto: 1 CTA chiara — "Vuoi un sistema simile? Scrivimi qui"
+│       con link diretto (email, LinkedIn, form)
+├── Demo/walkthrough: Screen recording — costruisco un portfolio completo
+│   usando Notion (versione pubblica) o Carrd (1 pagina, gratuito).
+│   Mostro: come strutturare, come inserire i case study, come rendere
+│   la pagina condivisibile con un link professionale.
+├── Template incluso: ✅ "Portfolio Notion Template" — pagina Notion duplicabile
+│   con struttura 3C pre-impostata + istruzioni per personalizzare.
+│   Alternativa: template Carrd con la stessa struttura.
+├── Output pratico: Lo studente ha il portfolio online pubblicato con i 3 progetti
+│   del Modulo 4 — link condivisibile pronto
+└── Durata: 18 min
+
+───────────────────────────────────────────────────────────
+LEZIONE 5.3 — Trova i Primi 10 Clienti (tipo: applicazione pratica)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente identifica 10 prospect qualificati e scrive
+│   il primo messaggio di outreach personalizzato
+├── Contenuto:
+│   ├── Dove trovare clienti che pagano per AI automation:
+│   │   Canale 1 — LinkedIn: cerca "founder", "marketing manager", "content manager"
+│   │   in aziende con 5-50 dipendenti. Filtra per chi posta regolarmente
+│   │   (hanno bisogno di contenuti → hanno il problema che risolvi).
+│   │   Canale 2 — Upwork/Fiverr: cerca "AI automation", "content automation",
+│   │   "workflow automation". Guarda i lavori pubblicati. Rispondi con portfolio.
+│   │   Canale 3 — Community: gruppi Facebook/Telegram di imprenditori,
+│   │   freelancer, marketer. Offri valore gratuito (mini-audit) → converti.
+│   ├── Il messaggio di primo contatto — Template DAN (Dimostrazione — Angolo — Next step):
+│   │   D — Dimostrazione: "Ho costruito un sistema che [risultato]. Ecco un esempio: [link portfolio]"
+│   │   A — Angolo: "Ho notato che [osservazione specifica sul prospect]. Potrebbe
+│   │       beneficiare di [soluzione specifica]."
+│   │   N — Next step: "Vuoi che ti mostri come funzionerebbe per [la tua azienda]?
+│   │       Mi basta una call di 15 minuti."
+│   └── La regola del 10-3-1: manda 10 messaggi personalizzati → 3 rispondono
+│       → 1 diventa cliente. I numeri funzionano solo se i messaggi sono
+│       personalizzati (non template copia-incolla).
+├── Esercizio:
+│   ├── Istruzioni:
+│   │   Step 1: Scegli 1 canale (LinkedIn consigliato per iniziare)
+│   │   Step 2: Identifica 10 prospect che hanno il problema che risolvi
+│   │   Step 3: Per ognuno, scrivi 1 osservazione specifica (cosa noti del loro business)
+│   │   Step 4: Usa il template DAN per scrivere il primo messaggio personalizzato
+│   │   Step 5: Invia almeno 3 messaggi questa settimana
+│   ├── Input richiesto: Offerta definita (lezione 5.1) + Portfolio online (lezione 5.2)
+│   └── Output atteso: Lista 10 prospect qualificati + 3 messaggi personalizzati inviati
+├── Esempio compilato: ✅ 3 messaggi DAN scritti da me per 3 prospect diversi
+│   (freelancer, piccola agenzia, e-commerce) — lo studente vede come personalizzare
+├── Template incluso: ✅ "Lista Prospect + Outreach Tracker" — Google Sheet con:
+│   Nome | Azienda | Canale | Osservazione | Messaggio | Data invio | Risposta | Status
+├── Criteri autovalutazione:
+│   ├── "Hai fatto bene se: hai 10 nomi reali con osservazione specifica per ciascuno"
+│   ├── "Hai fatto bene se: ogni messaggio è personalizzato (non copia-incolla)"
+│   └── "Hai fatto bene se: hai inviato almeno 3 messaggi entro 48 ore"
+└── Durata: 22 min (video) + 60 min (esercizio)
+
+───────────────────────────────────────────────────────────
+LEZIONE 5.4 — La Prima Call con il Cliente (tipo: bonus pratico)
+───────────────────────────────────────────────────────────
+├── Obiettivo: Lo studente sa gestire la prima call conoscitiva e convertire
+│   un prospect interessato in un cliente pagante
+├── Contenuto:
+│   ├── La struttura della call in 4 fasi (20 minuti totali):
+│   │   Fase 1 — Discovery (5 min): "Raccontami: che problema hai con [topic]?
+│   │   Quanto tempo/soldi ti costa oggi?"
+│   │   Fase 2 — Demo (7 min): "Guarda — questo è un sistema che ho costruito
+│   │   per [caso simile]. Funziona così: [mostra portfolio/demo live]"
+│   │   Fase 3 — Proposta (5 min): "Per il tuo caso specifico, ecco cosa
+│   │   farei: [3 bullet]. Il costo è €[X]. Include: [deliverable]."
+│   │   Fase 4 — Chiusura (3 min): "Ha senso per te? Se sì, ti mando
+│   │   il brief domani e iniziamo [data]."
+│   ├── Le 3 obiezioni che sentirai sempre e come rispondere:
+│   │   "È troppo costoso" → confronto con costo alternativa (fare da soli, assumere)
+│   │   "Non sono sicuro che funzioni" → "Progetto pilota: 1 sistema, prezzo ridotto,
+│   │      se funziona continuiamo"
+│   │   "Devo pensarci" → "Capisco. Ti mando un riassunto scritto. Ti scrivo
+│   │      giovedì per sapere se hai dubbi."
+│   └── Follow-up post-call: manda il riassunto entro 2 ore. Segui dopo 3 giorni.
+│       Se non risponde dopo 2 follow-up → next.
+├── Template incluso: ✅ "Script Prima Call — 4 Fasi" — documento con frasi
+│   esatte per ogni fase + gestione 3 obiezioni + template follow-up email
+├── Output pratico: Lo studente ha lo script preparato per la sua prima call
+└── Durata: 15 min
+
+───────────────────────────────────────────────────────────
+MATERIALI DI QUESTO MODULO
+───────────────────────────────────────────────────────────
+├── □ Template: "Offerta AI Builder — Canvas" — 1 pagina con tutti i dettagli offerta
+├── □ Template: "Portfolio Notion Template" — pagina duplicabile con struttura 3C
+├── □ Template: "Messaggio Outreach — Framework DAN" — struttura + 3 esempi compilati
+├── □ Template: "Lista Prospect + Outreach Tracker" — Google Sheet strutturato
+├── □ Template: "Script Prima Call — 4 Fasi" — frasi esatte + obiezioni + follow-up
+├── □ Checklist: "Sono Pronto a Vendere?" — 10 verifiche pre-lancio commerciale
+├── □ Esercizio: "I Miei Primi 10 Prospect" — lista + 3 messaggi inviati
+├── □ Esempio compilato: 3 messaggi DAN reali + 1 proposta commerciale reale
+└── □ PDF riassuntivo: "Da Builder a Business — Il Tuo Piano d'Azione 30 Giorni"
+
+───────────────────────────────────────────────────────────
+CHECKPOINT DI FINE MODULO
+───────────────────────────────────────────────────────────
+Lo studente può rispondere "Sì" a tutte queste domande?
+□ "Ho un'offerta scritta in 1 frase con prezzo definito?"
+□ "Ho un portfolio online con 3 progetti e link condivisibile?"
+□ "Ho una lista di 10 prospect qualificati?"
+□ "Ho inviato almeno 3 messaggi di outreach personalizzati?"
+□ "Ho lo script pronto per la prima call conoscitiva?"
+□ "Ho un piano d'azione per i prossimi 30 giorni?"
+
+
+# ══════════════════════════════════════════════════════════════
+# RIEPILOGO MATERIALI COMPLETO
+# ══════════════════════════════════════════════════════════════
+
+## Conteggio Totale
+
+| Elemento | Quantità | Standard Premium (min) | Status |
+|---|---|---|---|
+| Moduli | 6 (+ Mod 0) | 6-10 | ✅ |
+| Lezioni totali | 21 | 15-30 | ✅ |
+| Durata video totale | ~360 min (~6 ore video) + esercizi | 8-15 ore (con esercizi: ~10h) | ✅ |
+| Template scaricabili | 18 | ≥5 | ✅✅✅ |
+| Esercizi con output | 7 (1 per modulo + esercizi nelle lezioni) | ≥1/modulo | ✅ |
+| Esempi compilati | 7+ | ≥1/modulo | ✅ |
+| Checklist fine modulo | 6 | 1/modulo | ✅ |
+| PDF riassuntivi | 6 | 1/modulo | ✅ |
+| Welcome video | Da produrre | Obbligatorio | ⬜ |
+| Roadmap visuale | Da produrre | Obbligatoria | ⬜ |
+| Email onboarding | Da scrivere | Obbligatoria | ⬜ |
+
+## Lista Completa Template (18 template)
+
+| # | Template | Modulo | Tipo |
+|---|---------|--------|------|
+| 1 | Checklist Installazione Claude Code | 0 | PDF |
+| 2 | CLAUDE.md — Framework I.C.R.O. | 1 | File .md |
+| 3 | Cheat Sheet Comandi Claude Code | 1 | PDF |
+| 4 | SKILL.md — Framework S.K.I.L.L. | 2 | File .md |
+| 5 | Lista 15 Skill Pronte All'Uso | 2 | Doc |
+| 6 | INDEX.md — Organizza la Tua Libreria | 2 | File .md |
+| 7 | Workflow Canvas — Framework W.O.R.K. | 3 | Doc |
+| 8 | 2 Workflow Pre-Progettati | 3 | File .md |
+| 9 | Agente Base (3 ruoli) | 3 | File .md |
+| 10 | Brief Progetto Portfolio | 4 | Doc |
+| 11 | Content System (4 Skill) | 4 | File .md |
+| 12 | Analysis System (3 Skill) | 4 | File .md |
+| 13 | Business Automation System (3 Skill) | 4 | File .md |
+| 14 | Portfolio Page Template | 4 | Notion/Carrd |
+| 15 | Offerta AI Builder — Canvas | 5 | Doc |
+| 16 | Portfolio Notion Template — 3C | 5 | Notion |
+| 17 | Messaggio Outreach — Framework DAN | 5 | Doc |
+| 18 | Script Prima Call — 4 Fasi | 5 | Doc |
+
+## Framework Proprietari Creati (4 framework)
+
+| Framework | Modulo | Applicazione |
+|-----------|--------|-------------|
+| I.C.R.O. | 1 | Scrivere CLAUDE.md efficaci |
+| S.K.I.L.L. | 2 | Scrivere SKILL.md complete |
+| W.O.R.K. | 3 | Progettare workflow multi-step |
+| DAN | 5 | Scrivere messaggi outreach |
+
+## Percorso Studente Consigliato (6 settimane)
+
+| Settimana | Moduli | Ore impegno | Output |
+|---|---|---|---|
+| 1 | Mod 0 + Mod 1 | 3-4h | Claude Code installato + CLAUDE.md + primi comandi |
+| 2 | Mod 2 | 4-5h | 5+ Skill nella libreria personale |
+| 3 | Mod 3 | 4-5h | 1 workflow + 1 sistema agenti funzionante |
+| 4 | Mod 4 (Progetto 1 + 2) | 4-5h | Content System + Analysis System |
+| 5 | Mod 4 (Progetto 3) + Mod 5 (lezioni 1-2) | 4-5h | Business Automation + offerta + portfolio |
+| 6 | Mod 5 (lezioni 3-4) | 3-4h | 10 prospect + 3 messaggi inviati + script call |
+
+
+# ══════════════════════════════════════════════════════════════
+# GAP COMPETITOR COPERTI
+# ══════════════════════════════════════════════════════════════
+
+| Gap identificato nella ricerca | Come il corso lo copre |
+|---|---|
+| Nessuno insegna Claude Code come SKILL VENDIBILE | Modulo 5 interamente dedicato: offerta + portfolio + outreach + call |
+| Nessuno combina mindset "skill = libertà" con AI avanzata | Mod 0 apre con "perché questa è la skill che non scade" + Mod 5 chiude con piano business |
+| Nessuno mostra come creare AGENTI PERSONALIZZATI e venderli | Mod 2 (Skill), Mod 3 (Agenti/Workflow), Mod 4 (3 progetti vendibili) |
+| Nessuno offre community + supporto + percorso per €497 | Percorso 6 settimane + community + call mensile + aggiornamenti inclusi |
+| I corsi sono troppo tecnici O troppo superficiali | Target non-tecnico + 4 framework proprietari + 18 template + 3 progetti guidati |
+
+# ══════════════════════════════════════════════════════════════
+# PROSSIMI STEP
+# ══════════════════════════════════════════════════════════════
+
+□ STEP 1.4 — Verifica finale standard per tipo (check vs KB_07)
+□ FASE 2 — Produzione contenuti: scrittura script lezioni (processo 6 passi da KB_04)
+□ Template: compilare tutti i 18 template con esempi
+□ Esercizi: scrivere istruzioni complete + criteri autovalutazione dettagliati
+□ Welcome video: script + registrazione
+□ Roadmap visuale: design grafico del percorso 6 settimane
+□ Email onboarding: scrittura + setup automazione
+□ Beta test: selezione 5 tester + questionario 10 domande
+
+
+DELIVERABLE COMPLETO 
+
+
+
+TEMPLATE 01: Checklist Installazione Claude Code
+Modulo: 0 — Setup Scopo: Lo studente segue gli step uno per uno e arriva a Claude Code funzionante senza bloccarsi. Formato: PDF stampabile (1 pagina fronte/retro)
+═══════════════════════════════════════════════════
+CHECKLIST INSTALLAZIONE CLAUDE CODE
+═══════════════════════════════════════════════════
+
+
+PRE-REQUISITI
+□ Computer con macOS, Windows 10+ o Linux
+□ Connessione internet stabile
+□ Account Anthropic attivo (console.anthropic.com)
+
+
+STEP 1 — INSTALLA NODE.JS
+□ Vai su: https://nodejs.org
+□ Scarica la versione LTS (quella raccomandata)
+□ Installa seguendo le istruzioni a schermo
+□ Verifica: apri il terminale e scrivi: node --version
+   → Deve apparire un numero (es: v20.x.x)
+   ⚠️ Se non appare → riavvia il terminale e riprova
+   ⚠️ Se ancora non funziona → vedi TROUBLESHOOTING sotto
+
+
+STEP 2 — INSTALLA CLAUDE CODE
+□ Nel terminale scrivi (copia-incolla esatto):
+   npm install -g @anthropic-ai/claude-code
+□ Attendi il completamento (può richiedere 1-2 minuti)
+□ Verifica: scrivi: claude --version
+   → Deve apparire un numero di versione
+   ⚠️ Errore "permission denied" → su Mac/Linux: sudo npm install -g @anthropic-ai/claude-code
+   ⚠️ Errore "command not found" → vedi TROUBLESHOOTING
+
+
+STEP 3 — PRIMO AVVIO
+□ Crea una cartella per il tuo primo progetto:
+   mkdir primo-progetto && cd primo-progetto
+□ Lancia Claude Code: claude
+□ Autenticati con il tuo account Anthropic
+□ Primo test: scrivi "Crea un file hello.md con una presentazione di te stesso"
+□ Controlla che il file sia stato creato nella cartella
+
+
+STEP 4 — VERIFICA FINALE
+□ Claude Code si avvia senza errori
+□ Ho creato almeno 1 file con Claude Code
+□ So dove trovare i file che Claude Code crea (nella cartella del progetto)
+
+
+TROUBLESHOOTING (5 problemi più comuni)
+─────────────────────────────────────
+1. "node: command not found"
+   → Riavvia il terminale. Se persiste: reinstalla Node.js
+     e assicurati di spuntare "Add to PATH" durante l'installazione.
+
+
+2. "npm: permission denied"
+   → Mac/Linux: usa sudo davanti al comando
+   → Windows: apri il terminale come Amministratore
+
+
+3. "claude: command not found" dopo installazione
+   → Chiudi e riapri il terminale. Se persiste:
+     npm list -g @anthropic-ai/claude-code (verifica installazione)
+
+
+4. Errore di autenticazione
+   → Verifica di avere un account su console.anthropic.com
+   → Controlla di avere credito API disponibile
+
+
+5. "EACCES: permission denied" durante installazione
+   → Configura npm per evitare sudo:
+     mkdir ~/.npm-global
+     npm config set prefix '~/.npm-global'
+     Aggiungi al tuo .bashrc o .zshrc:
+     export PATH=~/.npm-global/bin:$PATH
+
+
+STATUS: □ Setup completato — pronto per il Modulo 1
+
+─────────────────────────────────────────────────────────
+ESERCIZIO MODULO 0: "Il Mio Primo Agente"
+Obiettivo: Lo studente crea il suo primo output complesso con Claude Code. Tempo: 15 minuti Prerequisiti: Claude Code installato e funzionante
+═══════════════════════════════════════════════════
+ESERCIZIO: IL MIO PRIMO AGENTE
+═══════════════════════════════════════════════════
+
+
+ISTRUZIONI STEP-BY-STEP:
+
+
+1. SCEGLI UN SITO DA ANALIZZARE
+   Prendi il sito di un competitor nel tuo settore
+   (o un sito che conosci bene). Copia l'URL.
+
+
+2. APRI CLAUDE CODE
+   Nel terminale:
+   mkdir analisi-competitor && cd analisi-competitor
+   claude
+
+
+3. DAI QUESTA ISTRUZIONE (copia-incolla e sostituisci l'URL):
+   "Analizza il sito [INSERISCI URL]. Crea un file report.md
+   con questa struttura:
+   - Panoramica del sito (cosa fa, per chi)
+   - 5 punti di forza
+   - 5 punti deboli
+   - 3 opportunità di miglioramento
+   - Conclusione con raccomandazione principale
+   Usa un tono professionale e formattazione chiara."
+
+
+4. OSSERVA CLAUDE CODE AL LAVORO
+   Nota: come analizza il sito, come struttura l'output,
+   come crea il file automaticamente nella cartella.
+
+
+5. APRI E VALUTA IL REPORT
+   Apri il file report.md con un editor di testo.
+   Leggi il risultato.
+
+
+CRITERI DI AUTOVALUTAZIONE:
+□ Claude Code ha prodotto un file report.md leggibile
+□ Il report contiene almeno 5 osservazioni specifiche sul sito
+□ Il report ha una struttura chiara con sezioni separate
+□ Capisci la differenza tra "chiedere a ChatGPT" e
+  "far lavorare Claude Code sul tuo computer"
+
+ESEMPIO COMPILATO — Report Competitor
+# Report Analisi Competitor — FitnessPro.it
+
+
+## Panoramica
+FitnessPro.it è un e-commerce italiano di integratori e attrezzatura
+per il fitness. Target: uomini 25-45 che si allenano regolarmente.
+Offre ~200 prodotti con spedizione in Italia.
+
+
+## 5 Punti di Forza
+1. Catalogo ampio con filtri per obiettivo (massa, definizione, resistenza)
+2. Schede prodotto dettagliate con tabelle nutrizionali
+3. Blog attivo con 2-3 articoli/settimana (SEO)
+4. Recensioni verificate su ogni prodotto (media 4.2/5)
+5. Chat live attiva durante orario lavorativo
+
+
+## 5 Punti Deboli
+1. Hero section homepage generica — nessuna proposta di valore chiara
+2. Checkout in 4 step — troppi passaggi, probabile drop-off
+3. Nessun programma fedeltà o incentivo al riacquisto
+4. Mobile: menù di navigazione confuso, CTA poco visibili
+5. Email di recupero carrello assente (testato con carrello abbandonato)
+
+
+## 3 Opportunità di Miglioramento
+1. Aggiungere quiz "Trova il tuo integratore" → aumenta engagement
+   e riduce paralisi della scelta
+2. Semplificare checkout a 2 step → riduzione stimata drop-off 15-20%
+3. Implementare sequenza email post-acquisto con cross-sell
+   basato sugli acquisti precedenti
+
+
+## Conclusione
+Il sito ha fondamenta solide (catalogo, contenuti, social proof)
+ma perde conversioni nel checkout e nella retention.
+Priorità: ottimizzare il checkout mobile e implementare
+email automation post-acquisto.
+
+──────────────────────────────────────────────────────
+MODULO 1 — FONDAMENTA
+──────────────────────────────────────────────────────
+TEMPLATE 02: CLAUDE.md — Framework I.C.R.O.
+Modulo: 1 — Fondamenta Scopo: Lo studente compila un CLAUDE.md completo che dà a Claude Code identità, contesto, regole e formato output. Formato: File .md (copia nella root del progetto)
+═══════════════════════════════════════════════════
+TEMPLATE CLAUDE.md — FRAMEWORK I.C.R.O.
+═══════════════════════════════════════════════════
+
+
+ISTRUZIONI: Compila ogni sezione. Sostituisci tutto
+il testo tra [parentesi quadre]. Salva come CLAUDE.md
+nella cartella root del tuo progetto.
+
+
+─────────────────────────────────────────────────────
+
+
+# IDENTITÀ
+
+
+Sei [RUOLO SPECIFICO — es: un copywriter specializzato in email marketing per e-commerce D2C].
+Il tuo livello di competenza è [LIVELLO — es: esperto con 10 anni di esperienza].
+Il tuo stile è [STILE — es: diretto, orientato ai risultati, zero fuffa].
+
+
+[Aggiungi 2-3 frasi che definiscono la "personalità" di Claude Code
+per questo progetto. Non "sei un assistente" ma un ruolo specifico
+con competenze definite.]
+
+
+# CONTESTO
+
+
+## Progetto
+[Descrivi il progetto in 2-3 righe: cosa stai facendo, per chi, perché]
+
+
+## Target
+- Chi sono: [Descrizione in 1 riga]
+- Problema principale: [Il problema che risolvi per loro]
+- Linguaggio: [Come parlano — formale/informale/tecnico/colloquiale]
+
+
+## Vincoli
+- [Vincolo 1 — es: budget limitato, deadline, settore regolamentato]
+- [Vincolo 2]
+- [Vincolo 3]
+
+
+# REGOLE
+
+
+## Fai SEMPRE:
+- [Regola 1 — es: Scrivi in italiano]
+- [Regola 2 — es: Includi almeno 1 esempio concreto per ogni concetto]
+- [Regola 3 — es: Usa frasi sotto le 20 parole]
+- [Regola 4 — es: Ogni output deve avere un'azione immediata per il lettore]
+
+
+## NON fare MAI:
+- [Divieto 1 — es: Non usare gergo tecnico senza spiegazione]
+- [Divieto 2 — es: Non scrivere paragrafi oltre le 4 righe]
+- [Divieto 3 — es: Non usare emoji]
+
+
+# OUTPUT
+
+
+## Formato standard:
+[Descrivi esattamente come deve apparire l'output.
+Es: "Ogni post ha: Hook (1 riga) → Corpo (3-5 righe) → CTA (1 riga).
+Salva in un file .md con heading H2 per ogni post."]
+
+
+## Naming convention file:
+[Es: YYYY-MM-DD_tipo_argomento.md → 2026-03-28_post_instagram_lancio.md]
+
+ESEMPIO COMPILATO — CLAUDE.md per Content Creator Fitness
+# IDENTITÀ
+
+
+Sei un content strategist specializzato in fitness e wellness per
+il mercato italiano. Hai 8 anni di esperienza nella creazione di
+contenuti per personal trainer e palestre.
+Il tuo stile è motivazionale ma pratico: ispiri all'azione, non
+alla riflessione passiva. Parli come un coach, non come un professore.
+
+
+# CONTESTO
+
+
+## Progetto
+Creo contenuti settimanali per il profilo Instagram di Marco Fit
+(personal trainer, 12k follower). Obiettivo: crescita organica
++ lead generation per il suo programma di coaching online a €197/mese.
+
+
+## Target
+- Chi sono: Uomini 25-35, lavoratori sedentari, vogliono rimettersi in forma
+- Problema principale: Iniziano ma mollano dopo 2-3 settimane
+- Linguaggio: Informale, diretto, "da spogliatoio" ma rispettoso
+
+
+## Vincoli
+- Max 5 post/settimana (3 feed + 2 stories)
+- Marco registra video max 2 volte/settimana (batch)
+- No contenuti su diete specifiche (non è nutrizionista)
+
+
+# REGOLE
+
+
+## Fai SEMPRE:
+- Scrivi in italiano colloquiale (come se parlassi a un amico)
+- Ogni post inizia con un hook che interrompe lo scroll (domanda o affermazione provocatoria)
+- Includi 1 consiglio azionabile ("Fai questo oggi: ...")
+- Usa "tu" diretto — mai "voi" o forme impersonali
+- Chiudi con CTA: "Salva questo post" o "Link in bio per il programma"
+
+
+## NON fare MAI:
+- Non usare termini scientifici senza traduzione semplice
+- Non scrivere caption oltre le 150 parole
+- Non promettere risultati specifici ("perdi 10 kg in 30 giorni")
+- Non menzionare competitor o prodotti di altri
+
+
+# OUTPUT
+
+
+## Formato standard:
+Ogni post ha:
+- HOOK: 1 riga che cattura (domanda o affermazione forte)
+- CORPO: 4-8 righe con il contenuto principale
+- CTA: 1 riga con azione specifica
+- HASHTAG: 5-8 hashtag rilevanti
+
+
+Salva ogni settimana in un unico file:
+settimana_[N]_contenuti.md con heading H2 per ogni post.
+
+
+## Naming convention file:
+settimana_01_contenuti.md, settimana_02_contenuti.md, ecc.
+
+─────────────────────────────────────────────────────────
+TEMPLATE 03: Cheat Sheet Comandi Claude Code
+Modulo: 1 — Fondamenta Scopo: Riferimento rapido stampabile con i 10 comandi essenziali. Formato: PDF 1 pagina
+═══════════════════════════════════════════════════
+CHEAT SHEET — COMANDI ESSENZIALI CLAUDE CODE
+═══════════════════════════════════════════════════
+
+
+COMANDI DI NAVIGAZIONE
+──────────────────────
+/init         Inizializza un nuovo progetto nella cartella corrente.
+              USA QUANDO: inizi un progetto da zero.
+              ESEMPIO: /init → Claude crea la struttura base.
+
+
+/add [file]   Aggiunge un file al contesto della conversazione.
+              USA QUANDO: vuoi che Claude legga/analizzi un file specifico.
+              ESEMPIO: /add brief-cliente.md → Claude lo legge e lo usa.
+
+
+/status       Mostra lo stato corrente: file nel contesto, token usati.
+              USA QUANDO: vuoi capire "cosa sa" Claude in questo momento.
+
+
+COMANDI DI GESTIONE CONTESTO
+─────────────────────────────
+/compact      Comprime la conversazione mantenendo il contesto essenziale.
+              USA QUANDO: la conversazione diventa lunga e Claude
+              inizia a "dimenticare" cose dette prima.
+
+
+/clear        Pulisce tutto il contesto. Ricomincia da zero.
+              USA QUANDO: cambi completamente argomento/progetto.
+
+
+/memory       Mostra le memorie persistenti salvate.
+              USA QUANDO: vuoi verificare cosa Claude ricorderà
+              tra una sessione e l'altra.
+
+
+COMANDI DI UTILITÀ
+──────────────────
+/cost         Mostra il costo della sessione corrente in token/crediti.
+              USA QUANDO: vuoi monitorare il consumo.
+
+
+/doctor       Diagnostica problemi di configurazione.
+              USA QUANDO: qualcosa non funziona come previsto.
+
+
+/review       Chiede a Claude di revisionare il proprio output.
+              USA QUANDO: vuoi una seconda passata di qualità.
+
+
+/help         Mostra tutti i comandi disponibili.
+              USA QUANDO: non ricordi un comando specifico.
+
+
+WORKFLOW QUOTIDIANO
+───────────────────
+1. cd [cartella-progetto]
+2. claude                    → Claude carica CLAUDE.md automaticamente
+3. /status                   → Verifica cosa ha nel contesto
+4. /add [file necessari]     → Aggiungi file rilevanti
+5. [Dai la tua istruzione]   → Claude lavora
+6. Rivedi output → Itera se necessario
+7. /compact                  → Se la sessione è lunga
+
+
+REGOLA D'ORO: Meno contesto irrilevante = Output migliore.
+Non aggiungere file "per sicurezza". Aggiungi solo ciò che serve.
+
+─────────────────────────────────────────────────────────
+ESERCIZIO MODULO 1: "Il Mio Primo Workflow"
+═══════════════════════════════════════════════════
+ESERCIZIO: IL MIO PRIMO WORKFLOW STRUTTURATO
+═══════════════════════════════════════════════════
+
+
+OBIETTIVO: Produrre un output strutturato con Claude Code
+che dimostri il rispetto del tuo CLAUDE.md.
+
+
+TEMPO: 20 minuti
+
+
+PREREQUISITI:
+- CLAUDE.md scritto con framework I.C.R.O. (lezione 1.2)
+- Claude Code funzionante
+
+
+ISTRUZIONI:
+
+
+1. PREPARA LA CARTELLA
+   mkdir primo-workflow && cd primo-workflow
+
+
+2. COPIA IL TUO CLAUDE.md NELLA CARTELLA
+   cp [percorso]/CLAUDE.md .
+
+
+3. CREA UN FILE DI CONTESTO
+   Crea un file brief.md con queste informazioni:
+   - Chi è il cliente/progetto (2 righe)
+   - Cosa deve essere prodotto (2 righe)
+   - 3 vincoli specifici
+
+
+4. LANCIA CLAUDE CODE
+   claude
+
+
+5. VERIFICA IL CONTESTO
+   /status → Claude deve mostrare CLAUDE.md nel contesto
+
+
+6. AGGIUNGI IL BRIEF
+   /add brief.md
+
+
+7. DAI L'ISTRUZIONE
+   "Leggi il brief e produci [TIPO OUTPUT — es: 5 post LinkedIn].
+   Segui le regole del CLAUDE.md per tono, formato e struttura.
+   Salva tutto in un file output.md"
+
+
+8. VALUTA L'OUTPUT
+   Apri output.md e verifica:
+   □ Il tono corrisponde a quello definito nell'Identità?
+   □ Il formato rispetta le Regole (lunghezza, struttura)?
+   □ L'output segue il Layout definito nella sezione Output?
+
+
+CRITERI DI AUTOVALUTAZIONE:
+□ L'output rispetta il tono del CLAUDE.md (verificabile confrontando)
+□ La struttura dell'output segue il formato definito nella sezione Output
+□ Nessuna delle regole "NON fare MAI" è stata violata
+□ Sai usare almeno 5 comandi senza consultare la cheat sheet
+
+──────────────────────────────────────────────────────
+MODULO 2 — SKILL BUILDER
+──────────────────────────────────────────────────────
+TEMPLATE 04: SKILL.md — Framework S.K.I.L.L.
+Modulo: 2 — Skill Builder Scopo: Lo studente crea file SKILL.md professionali e completi. Formato: File .md
+═══════════════════════════════════════════════════
+TEMPLATE SKILL.md — FRAMEWORK S.K.I.L.L.
+═══════════════════════════════════════════════════
+
+
+ISTRUZIONI: Compila ogni sezione. Salva come SKILL.md
+nella cartella /skills/[nome-skill]/SKILL.md
+
+
+─────────────────────────────────────────────────────
+
+
+# [NOME SKILL — es: Email Sequence Writer]
+
+
+## S — SCOPO
+
+
+Questa Skill [COSA FA — in 1-2 frasi].
+
+
+Si attiva quando l'utente [TRIGGER — es: chiede di scrivere
+una sequenza email / menziona "email" + "lancio" / ecc.].
+
+
+Risultato finale: [OUTPUT PRINCIPALE — es: una sequenza di 7 email
+di lancio pronte all'invio con oggetto, corpo e CTA per ciascuna].
+
+
+## K — KNOWLEDGE
+
+
+Conoscenze di base che questa Skill applica:
+
+
+Framework di riferimento:
+- [Framework 1 — es: PAS (Problem-Agitation-Solution) per email di apertura]
+- [Framework 2 — es: Urgenza + Scarsità per email di chiusura]
+
+
+Best practice:
+- [Best practice 1 — es: L'oggetto determina il 70% dell'apertura. Max 50 caratteri.]
+- [Best practice 2 — es: 1 email = 1 obiettivo. Mai più di 1 CTA per email.]
+- [Best practice 3 — es: Le email di lancio seguono un arco narrativo:
+  curiosità → educazione → offerta → urgenza → chiusura]
+
+
+Benchmark:
+- [Metrica 1 — es: Open rate target: >25%]
+- [Metrica 2 — es: CTR target: >3%]
+
+
+## I — ISTRUZIONI
+
+
+Processo step-by-step che Claude Code deve seguire:
+
+
+Step 1: [AZIONE — es: Chiedi all'utente: target, prodotto, prezzo,
+        data lancio, durata lancio, angolo principale]
+Step 2: [AZIONE — es: Scrivi la sequenza di 7 email nell'ordine:
+        Email 1 (Curiosità) → Email 2 (Educazione) → Email 3 (Storia) →
+        Email 4 (Offerta) → Email 5 (FAQ/Obiezioni) → Email 6 (Urgenza) →
+        Email 7 (Ultima chiamata)]
+Step 3: [AZIONE — es: Per ogni email includi: numero, giorno invio,
+        oggetto (max 50 char), preview text (max 90 char), corpo
+        (max 300 parole), CTA (1 sola), note per il mittente]
+Step 4: [AZIONE — es: Alla fine della sequenza aggiungi: calendario
+        invio consigliato + suggerimenti per A/B test sugli oggetti]
+
+
+## L — LIMITI
+
+
+Cosa questa Skill NON deve fare:
+
+
+- [Limite 1 — es: Mai scrivere oggetti clickbait che promettono cose non nel prodotto]
+- [Limite 2 — es: Mai email oltre 300 parole — la brevità vince in email]
+- [Limite 3 — es: Mai più di 1 CTA per email]
+- [Limite 4 — es: Mai tono aggressivo o manipolatorio — urgenza reale, non FOMO artificiale]
+- [Limite 5 — es: Mai usare "Caro/a [Nome]" — usa "Ciao [Nome]" o nessun saluto]
+
+
+## L — LAYOUT OUTPUT
+
+
+Formato esatto dell'output prodotto:
+
+
+[Descrivi la struttura del file finale. Es:]
+
+
+```markdown
+# Sequenza Email — [Nome Lancio]
+
+
+## Email 1 — Curiosità | Giorno: [Data]
+**Oggetto**: [max 50 char]
+**Preview**: [max 90 char]
+
+
+[Corpo email — max 300 parole]
+
+
+**CTA**: [Testo CTA + link]
+
+
+**Note per il mittente**: [Suggerimenti su timing, A/B test, ecc.]
+
+
+---
+
+
+## Email 2 — Educazione | Giorno: [Data]
+[...]
+
+
+---
+
+
+## Calendario Invio
+| # | Tipo | Giorno | Ora consigliata |
+|---|------|--------|-----------------|
+| 1 | Curiosità | Lun | 9:00 |
+[...]
+
+
+## Suggerimenti A/B Test
+- Oggetto Email 1: Variante A: "[...]" vs Variante B: "[...]"
+[...]
+
+
+
+### ESEMPIO COMPILATO — Skill "Social Media Caption Writer"
+
+
+```markdown
+# Social Media Caption Writer
+
+
+## S — SCOPO
+
+
+Questa Skill scrive caption per post social media (Instagram e LinkedIn)
+ottimizzate per engagement e conversione.
+
+
+Si attiva quando l'utente chiede post social, caption, contenuti
+per Instagram o LinkedIn, o menziona "piano editoriale" + "social".
+
+
+Risultato finale: un set di caption pronte alla pubblicazione con hook,
+corpo, CTA e hashtag per ogni piattaforma.
+
+
+## K — KNOWLEDGE
+
+
+Framework di riferimento:
+- Hook → Story → Insight → CTA (per post educativi)
+- Problema → Agitazione → Soluzione (per post di vendita)
+- Opinione controversa → Argomentazione → Invito al dibattito (per engagement)
+
+
+Best practice:
+- Il hook determina se il post viene letto. Deve interrompere lo scroll in 1 riga.
+- Instagram: max 125 parole per caption ottimale. LinkedIn: max 200 parole.
+- 1 post = 1 messaggio. Mai 2 concetti nello stesso post.
+- La CTA deve essere un'azione specifica ("Salva questo post" >
+  "Condividi con un amico" > "Link in bio").
+
+
+Benchmark:
+- Engagement rate target Instagram: >3% sui follower
+- Engagement rate target LinkedIn: >5% sulle impressioni
+- Save rate Instagram: >2% (il segnale più importante per l'algoritmo)
+
+
+## I — ISTRUZIONI
+
+
+Step 1: Chiedi all'utente: settore/niche, target, obiettivo del post
+        (educazione, vendita, engagement, autorità), piattaforma
+Step 2: Genera 3 varianti di hook per il post
+Step 3: Scrivi la caption completa usando la variante di hook più forte
+Step 4: Aggiungi CTA appropriata e hashtag
+Step 5: Se richiesti più post, mantieni coerenza di tono ma varia
+        gli hook e le strutture
+
+
+## L — LIMITI
+
+
+- Mai usare emoji nei primi 3 caratteri del hook (sembrare spam)
+- Mai più di 8 hashtag per post
+- Mai caption oltre 200 parole su Instagram (150 è ideale)
+- Mai CTA generiche ("seguimi per altri contenuti") — sempre specifiche
+- Mai tono predicatorio o superiore
+- Mai usare "In questo post imparerai..." (noioso, prevedibile)
+
+
+## L — LAYOUT OUTPUT
+
+
+```markdown
+# Post [PIATTAFORMA] — [TOPIC]
+
+
+## Hook (3 varianti)
+1. [Hook variante A]
+2. [Hook variante B]
+3. [Hook variante C]
+→ Consigliata: variante [X] perché [motivazione in 1 riga]
+
+
+## Caption
+[Hook scelto]
+
+
+[Corpo — 4-8 righe]
+
+
+[CTA]
+
+
+## Hashtag
+[5-8 hashtag separati da spazio]
+
+
+## Note
+- Orario pubblicazione consigliato: [giorno + ora]
+- Visual suggerito: [tipo di immagine/video che funziona con questa caption]
+
+
+
+─────────────────────────────────────────────────────────
+
+
+## TEMPLATE 05: Lista 15 Skill Pronte All'Uso
+
+
+**Modulo**: 2 — Skill Builder
+**Scopo**: Ispirazione + punto di partenza. Lo studente sceglie, personalizza e completa.
+
+
+
+═══════════════════════════════════════════════════ 15 SKILL PRONTE ALL'USO — SCEGLI, PERSONALIZZA, LANCIA ═══════════════════════════════════════════════════
+Per ogni Skill sotto trovi: Scopo e Knowledge pre-compilati. Tu aggiungi: Istruzioni, Limiti e Layout Output specifici per il tuo settore.
+CONTENT & COPY ──────────────
+Blog Post Writer Scopo: Scrive articoli blog SEO-friendly da 800-1500 parole Knowledge: Struttura H1→H2→H3, keyword density 1-2%, meta description <160 char, internal linking
+
+
+Email Sequence Writer Scopo: Crea sequenze email (lancio, nurture, onboarding) Knowledge: Framework PAS per email, open rate benchmark >25%, 1 CTA per email, oggetto <50 char
+
+
+Social Media Caption Writer Scopo: Scrive caption Instagram/LinkedIn/TikTok Knowledge: Hook-first, max 150 parole IG / 200 LinkedIn, CTA specifica, 5-8 hashtag
+
+
+Ad Copy Generator Scopo: Scrive copy per Facebook Ads, Google Ads, LinkedIn Ads Knowledge: Headline <40 char, body <125 char (FB), AIDA framework, test A/B su hook e CTA
+
+
+Newsletter Builder Scopo: Crea newsletter settimanali/mensili strutturate Knowledge: 1 tema principale, 3 sezioni max, preview text ottimizzato, CTA verso contenuto approfondito
+
+
+ANALISI & RICERCA ───────────────── 6. Competitor Analyzer Scopo: Analizza 3-5 competitor e produce report comparativo Knowledge: Matrice forze/debolezze, gap analysis, pricing comparison, content audit
+Market Research Assistant Scopo: Ricerca trend, audience insights, opportunità di mercato Knowledge: Fonti primarie (survey) e secondarie (report), segmentazione target, dimensionamento mercato (TAM/SAM/SOM)
+
+
+Review Analyzer Scopo: Analizza recensioni (Amazon, Trustpilot, G2) ed estrae insight Knowledge: Sentiment analysis, categorizzazione pain point (I×F×A), estrazione frasi esatte del target
+
+
+BUSINESS & OPERATIONS ───────────────────── 9. Lead Qualifier Scopo: Classifica lead in hot/warm/cold e suggerisce azione Knowledge: Criteri ICP matching, segnali di urgenza, scoring system a punti
+Meeting Notes Processor Scopo: Trasforma note grezze in action items strutturati Knowledge: Formato chi/cosa/quando, prioritizzazione MoSCoW, follow-up automatici
+
+
+Proposal Writer Scopo: Crea proposte commerciali personalizzate per prospect Knowledge: Struttura problema→soluzione→risultato→prezzo→garanzia, personalizzazione per settore
+
+
+Report Builder Scopo: Produce report strutturati (settimanali, mensili, per cliente) Knowledge: Executive summary prima, dati→insight→raccomandazione, grafici testuali, action items
+
+
+PRODUTTIVITÀ PERSONALE ────────────────────── 13. Daily Planner Scopo: Organizza la giornata in blocchi di tempo con priorità Knowledge: Time blocking, regola 80/20, deep work vs shallow work, energia circadiana
+Content Repurposer Scopo: Trasforma 1 contenuto lungo in 5-7 micro-contenuti per piattaforme diverse Knowledge: Adattamento formato per piattaforma, mantenimento messaggio core, regole lunghezza per canale
+
+
+Learning Notes Organizer Scopo: Struttura appunti di studio in formato azionabile Knowledge: Metodo Zettelkasten semplificato, atomic notes, collegamenti tra concetti, action items per ogni nota
+
+
+
+
+─────────────────────────────────────────────────────────
+
+
+## TEMPLATE 06: INDEX.md — Organizza la Tua Libreria Skill
+
+
+
+═══════════════════════════════════════════════════ INDEX.md — LA MIA LIBRERIA SKILL ═══════════════════════════════════════════════════
+Ultimo aggiornamento: [DATA] Totale Skill: [N]
+#
+Nome Skill
+Scopo (1 riga)
+Trigger
+Status
+1
+[Nome]
+[Cosa fa]
+[Quando si attiva]
+✅ Testata / ⚠️ Da testare
+2
+
+
+
+
+
+
+
+
+3
+
+
+
+
+
+
+
+
+4
+
+
+
+
+
+
+
+
+5
+
+
+
+
+
+
+
+
+
+STRUTTURA CARTELLE: /skills/ ├── email-sequence-writer/ │ └── SKILL.md ├── competitor-analyzer/ │ └── SKILL.md ├── social-caption-writer/ │ └── SKILL.md ├── [nome-skill]/ │ └── SKILL.md └── INDEX.md (questo file)
+NOTE:
+Ogni Skill ha la propria cartella
+Il file si chiama sempre SKILL.md (maiuscolo)
+Testare ogni Skill con almeno 2 casi diversi prima di marcarla ✅
+
+
+─────────────────────────────────────────────────────────
+
+
+## ESERCIZIO MODULO 2: "Costruisci 5 Skill"
+
+
+
+═══════════════════════════════════════════════════ ESERCIZIO: COSTRUISCI LA TUA LIBRERIA DI 5 SKILL ═══════════════════════════════════════════════════
+OBIETTIVO: Avere una libreria di 5+ Skill funzionanti, organizzate e testate.
+TEMPO: 45-60 minuti
+PREREQUISITI:
+Framework S.K.I.L.L. padroneggiato (lezione 2.2)
+3 Skill già scritte durante le lezioni 2.1-2.3
+Lista 15 Skill come ispirazione
+ISTRUZIONI:
+SCEGLI 2 SKILL AGGIUNTIVE dalla Lista 15 Scegli quelle più utili per il TUO lavoro/settore.
+
+
+SCRIVI CIASCUNA con il framework S.K.I.L.L. Per ogni Skill compila tutte le 5 sezioni. Usa gli esempi come riferimento ma personalizza per il tuo caso.
+
+
+TESTA OGNI SKILL (anche le 3 delle lezioni): Per ogni Skill: a) Crea una cartella dedicata: /skills/[nome-skill]/ b) Salva il file come SKILL.md c) Lancia Claude Code con la Skill attiva d) Dai un'istruzione di test reale (non inventata) e) Valuta l'output: rispetta Scopo, Regole, Layout? f) Se no → modifica la Skill e ri-testa
+
+
+ORGANIZZA la struttura cartelle: /skills/ ├── [skill-1]/SKILL.md ├── [skill-2]/SKILL.md ├── [skill-3]/SKILL.md ├── [skill-4]/SKILL.md ├── [skill-5]/SKILL.md └── INDEX.md
+
+
+COMPILA l'INDEX.md con tutte le 5 Skill
+
+
+CRITERI DI AUTOVALUTAZIONE: □ Ho almeno 5 Skill nella cartella /skills/ □ Ogni Skill ha tutte le 5 sezioni del framework S.K.I.L.L. □ Ho testato ogni Skill con un caso reale (non inventato) □ L'output di ogni Skill è coerente con lo Scopo definito □ L'INDEX.md è compilato e aggiornato
+
+
+
+
+# ──────────────────────────────────────────────────────
+# MODULO 3 — WORKFLOW & AGENTI
+# ──────────────────────────────────────────────────────
+
+
+## TEMPLATE 07: Workflow Canvas — Framework W.O.R.K.
+
+
+**Modulo**: 3 — Workflow & Agenti
+**Scopo**: Progettare un workflow prima di costruirlo. Nessun workflow improvvisato.
+
+
+
+═══════════════════════════════════════════════════ WORKFLOW CANVAS — FRAMEWORK W.O.R.K. ═══════════════════════════════════════════════════
+NOME WORKFLOW: ________________________________
+W — WHAT (output finale) ───────────────────────── Cosa deve uscire alla fine del workflow? [Descrivi l'output finale in 2-3 righe — specifico e misurabile]
+Esempio: "Una sequenza di 7 email di lancio basata su ricerca reale del target, con oggetti, corpo e CTA per ogni email + calendario invio."
+O — ORDER (sequenza step) ─────────────────────────
+Step
+Azione
+Skill usata
+Input
+Output
+1
+[Cosa succede]
+[Nome Skill]
+[Da dove viene l'input]
+[Cosa produce]
+2
+[Cosa succede]
+[Nome Skill]
+[Output step 1]
+[Cosa produce]
+3
+[Cosa succede]
+[Nome Skill]
+[Output step 2]
+[Cosa produce]
+4
+[Cosa succede]
+[Nome Skill]
+[Output step 3]
+[Output finale]
+
+Regola: MAX 5 step per workflow. Se servono di più → spezza in 2 workflow.
+R — RESOURCES (cosa serve) ────────────────────────── Skill necessarie (esistono nella mia libreria?): □ [Skill 1] — Status: ✅ Esiste / ⬜ Da creare □ [Skill 2] — Status: ✅ / ⬜ □ [Skill 3] — Status: ✅ / ⬜
+File di contesto necessari: □ [File 1 — es: brief-cliente.md] □ [File 2 — es: ricerca-target.md]
+K — KICKOFF (comando di avvio) ────────────────────────────── L'istruzione iniziale che avvia tutto il workflow:
+"[Scrivi qui il comando esatto che darai a Claude Code. Es: Avvia il workflow Content System: leggi il brief in brief.md, analizza il target, crea il piano editoriale e scrivi i primi 5 post. Salva tutto in output/]"
+
+
+### ESEMPIO COMPILATO — Workflow "Content System"
+
+
+
+NOME WORKFLOW: Content System
+W — WHAT Dato 1 brief/idea in 2 righe, produce: 1 articolo blog (800-1200 parole) + 5 post social (3 LinkedIn + 2 Instagram) + 1 email newsletter. Tutto coerente nel messaggio ma adattato per piattaforma.
+O — ORDER
+Step
+Azione
+Skill
+Input
+Output
+1
+Analizza brief, estrai content angles e key messages
+Content Brief Analyzer
+brief.md
+angles.md (3 angoli + 5 key messages)
+2
+Scrivi articolo blog completo
+Blog Post Writer
+angles.md
+articolo.md (800-1200 parole SEO)
+3
+Adatta in 5 post social
+Social Caption Writer
+articolo.md + angles.md
+post-social.md (3 LinkedIn + 2 IG)
+4
+Crea newsletter con highlight
+Newsletter Builder
+articolo.md + angles.md
+newsletter.md (1 email)
+
+R — RESOURCES □ Content Brief Analyzer — ✅ Esiste □ Blog Post Writer — ✅ Esiste □ Social Caption Writer — ✅ Esiste □ Newsletter Builder — ✅ Esiste File: brief.md (dal cliente o creato da me)
+K — KICKOFF "Leggi il brief in brief.md. Analizza il contenuto e identifica 3 angoli e 5 key messages. Poi scrivi:
+Un articolo blog di 800-1200 parole
+3 post LinkedIn e 2 caption Instagram
+1 email newsletter con gli highlight Salva ogni output in un file separato nella cartella output/"
+
+
+─────────────────────────────────────────────────────────
+
+
+## TEMPLATE 08: 2 Workflow Pre-Progettati
+
+
+Inclusi nel file del Template 07 come varianti aggiuntive:
+
+
+**Workflow A — Client Report System**
+
+
+
+W: Report competitor per cliente (10 pagine strutturate) O: Web Researcher → Data Analyzer → Report Builder (3 step) R: 3 Skill + URL competitor del cliente K: "Analizza i competitor [URL1, URL2, URL3]. Produci un report con: executive summary, analisi per competitor, confronto, raccomandazioni. Salva in report-[cliente].md"
+
+
+**Workflow B — Lead Processing System**
+
+
+
+W: Classifica lead + bozza risposta + scheda CRM O: Lead Qualifier → Response Drafter → CRM Updater (3 step) R: 3 Skill + testo email/messaggio del lead K: "Leggi il messaggio in lead-input.md. Classifica il lead (hot/warm/cold). Scrivi la bozza risposta appropriata. Compila la scheda CRM. Salva tutto in lead-output.md"
+
+
+─────────────────────────────────────────────────────────
+
+
+## TEMPLATE 09: Agente Base (3 ruoli)
+
+
+**Modulo**: 3 — Workflow & Agenti
+**Scopo**: CLAUDE.md pre-configurati per 3 ruoli di agente.
+
+
+
+═══════════════════════════════════════════════════ AGENTE 1 — IL RICERCATORE ═══════════════════════════════════════════════════
+IDENTITÀ
+Sei un ricercatore analitico. Il tuo lavoro è raccogliere, organizzare e sintetizzare informazioni. Non inventi mai dati. Se non trovi un'informazione, lo dici esplicitamente. Il tuo output è sempre strutturato in tabelle e bullet point.
+REGOLE
+Cita sempre la fonte di ogni dato
+Organizza le informazioni per categoria, non cronologicamente
+Evidenzia gap informativi: "Non ho trovato dati su [X]"
+Output sempre in formato .md con tabelle
+OUTPUT
+File .md con: Executive Summary (5 righe) → Dati raccolti (organizzati per categoria) → Gap informativi → Fonti consultate
+═══════════════════════════════════════════════════ AGENTE 2 — IL COPYWRITER ═══════════════════════════════════════════════════
+IDENTITÀ
+Sei un copywriter creativo specializzato in conversione. Scrivi per persuadere, non per informare. Ogni frase deve avvicinare il lettore all'azione. Il tuo stile è diretto, emotivo ma credibile — mai manipolatorio.
+REGOLE
+Ogni testo inizia con un hook che interrompe lo scroll
+Frasi brevi. Max 15 parole. 1 concetto per frase.
+Usa il linguaggio del target (non il tuo)
+Ogni testo finisce con 1 CTA specifica e azionabile
+OUTPUT
+File .md con: Hook → Corpo → CTA. Per ogni variante: nota sul perché funziona + target specifico a cui parla
+═══════════════════════════════════════════════════ AGENTE 3 — IL REVISORE ═══════════════════════════════════════════════════
+IDENTITÀ
+Sei un editor critico e costruttivo. Il tuo lavoro è trovare errori, incoerenze, punti deboli e suggerire miglioramenti specifici. Non riscrivi tutto — indichi esattamente COSA cambiare e PERCHÉ.
+REGOLE
+Per ogni problema trovato: cosa c'è → perché è un problema → come fixarlo
+Dai un voto da 1 a 10 per: chiarezza, persuasione, struttura
+Evidenzia le parti forti (non solo i problemi)
+Max 10 correzioni per revisione (le più impattanti prima)
+OUTPUT
+File .md con: Voto complessivo → Top 3 punti forti → Top 5 problemi (con fix suggerito per ciascuno) → Versione corretta delle parti critiche
+
+
+
+
+# ──────────────────────────────────────────────────────
+# MODULO 4 — PROGETTI REALI
+# ──────────────────────────────────────────────────────
+
+
+## TEMPLATE 10: Brief Progetto Portfolio
+
+
+
+═══════════════════════════════════════════════════ BRIEF PROGETTO PORTFOLIO ═══════════════════════════════════════════════════
+NOME PROGETTO: ________________________________
+TIPO: □ Content System □ Analisi/Report □ Business Automation
+IL PROBLEMA (in 2 righe): Chi ha questo problema? [Target] Qual è il problema specifico? [Descrizione] Quanto costa in tempo/soldi oggi? [Quantificazione]
+LA SOLUZIONE (in 2 righe): Cosa costruisco? [Sistema/workflow/agente] Quale risultato produce? [Output concreto]
+STACK TECNICO:
+Skill utilizzate: [Lista Skill]
+Workflow: [N step]
+Agenti (se usati): [Quali ruoli]
+RISULTATO MISURABILE:
+PRIMA: [tempo/costo/effort manuale]
+DOPO: [tempo/costo/effort con il sistema]
+RISPARMIO: [calcolo concreto]
+COME LO PRESENTO NEL PORTFOLIO: Titolo: [1 riga che dice il risultato, non la tecnica] Descrizione: [3 righe: problema → soluzione → risultato] Screenshot/Demo: [Cosa mostro visivamente]
+
+
+## TEMPLATE 11-12-13: Le 3 Skill pre-scritte per ogni progetto
+
+
+Queste sono incluse nell'outline completo già consegnato
+(Content System = 4 Skill, Analysis System = 3 Skill,
+Business Automation = 3 Skill).
+
+
+Ogni set di Skill è un file .md unico con tutte le Skill
+del progetto + il file di orchestrazione del workflow.
+
+
+─────────────────────────────────────────────────────────
+
+
+## TEMPLATE 14: Portfolio Page Template
+
+
+
+═══════════════════════════════════════════════════ PORTFOLIO AI BUILDER — STRUTTURA 3C ═══════════════════════════════════════════════════
+Struttura per Notion (pagina pubblica) o Carrd (1 pagina).
+───────────────────────────────────────────────────── SEZIONE C1 — COMPETENZA ─────────────────────────────────────────────────────
+[Il tuo nome] [Titolo: "AI Builder — Costruisco sistemi di automazione AI per [target]"]
+Cosa faccio (3 servizi): → [Servizio 1 — es: Sistemi di content automation] → [Servizio 2 — es: Analisi competitor e report automatizzati] → [Servizio 3 — es: Automazione processi interni]
+───────────────────────────────────────────────────── SEZIONE C2 — CASE STUDY (×3) ─────────────────────────────────────────────────────
+PROGETTO 1: [TITOLO — risultato, non tecnica] Problema: [2 righe — chi aveva il problema e cosa costava] Soluzione: [2 righe — cosa ho costruito e come funziona] Risultato: [1 riga con numero — es: "Da 8 ore/settimana a 2 ore"] [Screenshot o GIF demo]
+PROGETTO 2: [...] PROGETTO 3: [...]
+───────────────────────────────────────────────────── SEZIONE C3 — CONTATTO ─────────────────────────────────────────────────────
+Vuoi un sistema simile per il tuo business? → [CTA — es: "Scrivimi su LinkedIn" / "Prenota una call gratuita"] [Link diretto]
+
+
+
+
+# ──────────────────────────────────────────────────────
+# MODULO 5 — MONETIZZAZIONE
+# ──────────────────────────────────────────────────────
+
+
+## TEMPLATE 15: Offerta AI Builder — Canvas
+
+
+
+═══════════════════════════════════════════════════ OFFERTA AI BUILDER — CANVAS ═══════════════════════════════════════════════════
+LA MIA OFFERTA IN 1 FRASE: "[Costruisco/Creo] [TIPO SISTEMA] per [TARGET] che [RISULTATO MISURABILE] in [TEMPO]."
+─────────────────────────────────────────────────────
+TARGET IDEALE:
+Chi è: [Ruolo + settore + dimensione azienda]
+Problema: [Il problema specifico che risolvo per loro]
+Segnali: [Come li riconosco — cosa postano, cosa cercano]
+SERVIZIO:
+Cosa costruisco: [Deliverable specifico]
+Come funziona: [3 step del processo]
+Cosa include: [Lista deliverable — Skill, workflow, setup, training]
+Cosa NON include: [Per evitare scope creep]
+PRICING:
+Modello: □ Progetto one-shot □ Retainer mensile □ Prodotto
+Prezzo: €[N]
+Calcolo ROI per il cliente: Risparmio [N] ore/mese × €[costo orario] = €[valore]/mese Il mio prezzo = [30-50%] del valore → €[prezzo]
+GARANZIA: [Tipo — es: "Se il sistema non funziona come promesso nei primi 14 giorni, ti rimborso il 100%"]
+PROCESSO DI VENDITA:
+[Come trovo il prospect]
+[Come lo contatto — canale + messaggio]
+[Come gestisco la call — 4 fasi]
+[Come chiudo — proposta + follow-up]
+
+
+### ESEMPIO COMPILATO
+
+
+
+LA MIA OFFERTA IN 1 FRASE: "Creo sistemi di content automation per freelancer e piccole agenzie che riducono il tempo di produzione contenuti del 70% in 2 settimane."
+TARGET IDEALE:
+Chi è: Freelancer copywriter/marketer o piccola agenzia (2-5 persone)
+Problema: Passano 8-12 ore/settimana a creare contenuti ripetitivi
+Segnali: Postano irregolarmente, si lamentano del tempo sui social
+SERVIZIO:
+Cosa costruisco: Content System automatizzato (4 Skill + workflow)
+Come funziona: 1) Briefing (30 min) → 2) Costruzione (3-5 giorni) → 3) Training + Handover (1 sessione 60 min)
+Cosa include: 4 Skill personalizzate, workflow testato, sessione di training, 2 settimane di supporto post-consegna
+Cosa NON include: Gestione social, creazione visual, copywriting manuale oltre il sistema
+PRICING:
+Modello: Progetto one-shot
+Prezzo: €800
+Calcolo ROI: Risparmio 6 ore/settimana × €25/ora × 4 settimane = €600/mese di valore. Il sistema si ripaga in <6 settimane.
+GARANZIA: "Se il sistema non produce almeno il 50% dell'output promesso dopo 2 settimane di utilizzo, ti rimborso il 100%."
+
+
+─────────────────────────────────────────────────────────
+
+
+## TEMPLATE 17: Messaggio Outreach — Framework DAN
+
+
+
+═══════════════════════════════════════════════════ MESSAGGIO OUTREACH — FRAMEWORK DAN ═══════════════════════════════════════════════════
+STRUTTURA:
+D — DIMOSTRAZIONE (mostra cosa sai fare) "Ho costruito un sistema che [risultato concreto]. [Link al portfolio / screenshot / esempio]."
+A — ANGOLO (perché LUI/LEI specificamente) "Ho notato che [osservazione specifica e personale sul prospect — qualcosa che hai visto sul suo profilo, sito o contenuti]."
+N — NEXT STEP (azione semplice e a basso rischio) "Ti interessa vedere come funzionerebbe per [il tuo caso]? Mi bastano 15 minuti per mostrartelo."
+REGOLE:
+Max 80 parole totali
+Mai "Ciao, mi presento, sono..." — vai dritto al punto
+L'osservazione (A) deve essere REALE e SPECIFICA
+Il next step (N) deve essere a basso rischio (15 min, gratuito)
+
+
+### ESEMPIO COMPILATO — 3 Messaggi DAN Reali
+
+
+
+PROSPECT 1 — Freelancer copywriter (LinkedIn) ────────────────────────────────────────────── "Ho costruito un sistema che trasforma 1 brief in 1 articolo + 5 post social + 1 newsletter in 12 minuti. Ecco un esempio: [link portfolio].
+Ho visto che pubblichi contenuti su LinkedIn 2-3 volte a settimana — quanto tempo ti prende preparare tutto?
+Se vuoi, ti mostro come funziona il sistema in 15 minuti. Nessun impegno."
+PROSPECT 2 — Piccola agenzia marketing (Email) ────────────────────────────────────────────── "Ho un sistema che produce report competitor strutturati in 10 minuti invece di 4-6 ore. Ecco un esempio: [link].
+Ho visto sul vostro sito che offrite analisi di mercato ai vostri clienti — immagino sia un lavoro ricorrente che richiede molte ore.
+Vi interessa una demo di 15 minuti per vedere come funzionerebbe per i vostri clienti?"
+PROSPECT 3 — E-commerce manager (Instagram DM) ────────────────────────────────────────────── "Ciao! Ho costruito un sistema AI che qualifica i lead automaticamente e prepara le risposte — da 15 min/lead a 2 min/lead. Demo qui: [link].
+Ho visto che ricevi molti DM e commenti sui prodotti — rispondi ancora a mano?
+Se vuoi, ti faccio vedere come funziona in 15 min. Zero impegno."
+
+
+─────────────────────────────────────────────────────────
+
+
+## TEMPLATE 18: Script Prima Call — 4 Fasi
+
+
+
+═══════════════════════════════════════════════════ SCRIPT PRIMA CALL — 4 FASI (20 MINUTI) ═══════════════════════════════════════════════════
+FASE 1 — DISCOVERY (5 min) ─────────────────────────
+"Grazie per il tempo. Prima di mostrarti qualsiasi cosa, voglio capire la tua situazione. Due domande rapide:"
+Domanda 1: "Qual è il task che ti porta via più tempo ogni settimana nel tuo lavoro?"
+Domanda 2: "Se potessi eliminarlo o ridurlo del 70%, cosa faresti con quel tempo?"
+[Prendi appunti. Le risposte diventano il tuo pitch.]
+FASE 2 — DEMO (7 min) ──────────────────────
+"Perfetto. Allora guarda — ecco un sistema che ho costruito per [caso simile al suo]."
+[Condividi schermo. Mostra il portfolio project più rilevante per il suo caso. Fai girare il workflow in tempo reale se possibile.]
+"Come vedi, il sistema fa [X] automaticamente. Input: [cosa metti dentro]. Output: [cosa esce]. Tempo: [quanto ci mette]."
+FASE 3 — PROPOSTA (5 min) ─────────────────────────
+"Per il tuo caso specifico, farei questo:"
+[Deliverable 1 — specifico per il suo problema]
+[Deliverable 2]
+[Deliverable 3]
+"Il costo è €[X]. Include: costruzione del sistema, personalizzazione per il tuo caso, 1 sessione di training, e 2 settimane di supporto."
+"In base a quello che mi hai detto, risparmi circa [N] ore a settimana. Il sistema si ripaga in [N settimane]."
+FASE 4 — CHIUSURA (3 min) ─────────────────────────
+Se interessato: "Ha senso per te? Se sì, ti mando un brief domani con i dettagli. Iniziamo [data]."
+Se "devo pensarci": "Capisco. Ti mando un riassunto scritto con tutto quello di cui abbiamo parlato. Ti scrivo giovedì per sapere se hai dubbi."
+Se "è troppo costoso": "Capisco. Possiamo partire con un progetto pilota più piccolo: [1 solo sistema] a €[prezzo ridotto]. Se funziona, estendiamo."
+─────────────────────────────────────────────────
+TEMPLATE EMAIL FOLLOW-UP (da inviare entro 2 ore):
+Oggetto: Riassunto della nostra call + prossimi step
+[Nome],
+grazie per la call.
+Riassunto di quello che abbiamo discusso:
+Il tuo problema: [problema in 1 riga — usa le SUE parole]
+La soluzione proposta: [cosa costruirei — 3 bullet]
+Il risultato atteso: [risparmio tempo/costo]
+Investimento: €[X]
+Prossimi step: → [Se ha detto sì]: Ti mando il brief entro domani. Iniziamo [data]. → [Se deve pensarci]: Prendi il tempo che ti serve. Ti scrivo [giorno] per sapere se hai domande.
+A presto, [Nome]
+
+
+
+
+# ══════════════════════════════════════════════════════════════
+#
+#   PARTE 2 — TEST DEPRIVAZIONE LEAD MAGNET
+#
+# ══════════════════════════════════════════════════════════════
+
+
+## Analisi Lead Magnet con Principio Deprivazione
+
+
+Il principio: il lead magnet deve dare abbastanza valore da
+far pensare "se il gratuito è così, il corso sarà incredibile",
+ma creare un GAP chiaro che solo il corso completo riempie.
+
+
+### Lead Magnet Proposto: "Il Framework I.C.R.O. — Come Dare Istruzioni Perfette a Claude Code"
+
+
+**Formato**: PDF 12-15 pagine
+**Framework incluso**: I.C.R.O. (Identità — Contesto — Regole — Output)
+**Perché proprio I.C.R.O.**: è il framework del Modulo 1. È immediatamente
+applicabile (lo studente può usarlo in 10 minuti). È il "ponte" verso
+le Skill (Modulo 2) — dopo aver scritto un CLAUDE.md, il desiderio
+naturale è: "OK funziona, ma come creo SISTEMI riutilizzabili?"
+
+
+### Test Deprivazione Applicato
+
+
+| Cosa il LM DÀ (valore immediato) | Cosa il LM NON DÀ (gap → corso) |
+|---|---|
+| ✅ Framework I.C.R.O. completo con 4 sezioni spiegate | ❌ Framework S.K.I.L.L. per creare Skill (Mod 2) |
+| ✅ Template CLAUDE.md compilabile | ❌ Template SKILL.md + libreria 15 Skill pronte (Mod 2) |
+| ✅ 1 esempio compilato (settore fitness) | ❌ 10+ Skill compilate per settori diversi |
+| ✅ Checklist "Il mio CLAUDE.md è completo?" | ❌ Framework W.O.R.K. per workflow multi-step (Mod 3) |
+| ✅ Concetto "3 Leve di Controllo" | ❌ Come orchestrare agenti specializzati (Mod 3) |
+| ✅ 1 caso pratico da replicare | ❌ 3 progetti portfolio completi (Mod 4) |
+| ✅ Comprensione di cosa si può fare | ❌ Come vendere questa competenza + trovare clienti (Mod 5) |
+
+
+### Verifica del Gap
+
+
+**Il lettore dopo il LM può**: scrivere un CLAUDE.md efficace
+e ottenere output migliori da Claude Code. Questo è un risultato
+REALE e immediato — non è un teaser vuoto.
+
+
+**Il lettore dopo il LM NON può**: creare Skill riutilizzabili,
+costruire workflow automatizzati, orchestrare agenti, costruire
+un portfolio, vendere questa competenza. Questi sono i 4 livelli
+successivi che solo il corso dà.
+
+
+**Il gap è naturale**: dopo aver scritto il primo CLAUDE.md e visto
+funzionare, la domanda spontanea è "Come faccio a rendere questo
+riutilizzabile e venderlo?" — il corso risponde esattamente a questo.
+
+
+### Struttura PDF Lead Magnet (12-15 pagine)
+
+
+
+Pagina 1 — Cover "Il Framework I.C.R.O. — Come Dare Istruzioni Perfette a Claude Code (e Ottenere Output 10x Migliori)" Per: chi usa l'AI come un chatbot e vuole passare a costruire sistemi.
+Pagina 2-3 — Il Problema "Perché i tuoi prompt non funzionano (e cosa fare al posto loro)" → Usa pain point #1 e #2 dalla ricerca: "Non so quale skill imparare"
+"Tutti parlano di AI ma nessuno spiega COME monetizzarla" → La distinzione: utente ChatGPT vs costruttore di sistemi
+Pagina 4 — L'Errore Principale "Il mito del prompt perfetto: perché prompt più lunghi non producono risultati migliori" → Il vero problema non è il prompt — è la mancanza di istruzioni strutturate e persistenti
+Pagina 5-9 — Il Framework I.C.R.O. I = Identità (1.5 pagine): come definire CHI è Claude Code in questo progetto + esempio compilato C = Contesto (1 pagina): come dare background + esempio R = Regole (1 pagina): SEMPRE vs MAI + esempio O = Output (1 pagina): formato esatto + esempio
+Pagina 10 — Template CLAUDE.md Template compilabile + istruzioni per ogni campo
+Pagina 11 — Esempio Compilato Completo CLAUDE.md per content creator fitness (caso reale dal corso)
+Pagina 12 — Checklist "Il Mio CLAUDE.md è Completo?" 8 domande di verifica
+Pagina 13 — Il Prossimo Livello (CTA) "Ora sai dare istruzioni perfette. Ma cosa succederebbe se potessi creare SISTEMI RIUTILIZZABILI che lavorano per te? Nel corso Claude Code Mastery impari a costruire Skill, workflow e agenti — e a vendere questa competenza come servizio. [CTA verso waitlist o sales page]"
+
+
+### Metriche Target (da KB_07)
+
+
+| Metrica | Target |
+|---|---|
+| Tasso download dalla landing | >35% |
+| Click CTA interna (verso corso) | >10% |
+| Lettori che finiscono il PDF | >60% |
+
+
+### Red Flag Check
+
+
+□ ✅ 1 framework chiaro con nome proprietario (I.C.R.O.)
+□ ✅ 1 template compilabile con esempio compilato
+□ ✅ CTA chiara verso il corso a pagamento
+□ ✅ Tempo lettura: ~20 minuti (nel range 15-30)
+□ ✅ Output pratico immediato (CLAUDE.md funzionante)
+□ ✅ Il gratuito non cannibalizza il corso (dà Mod 1, non Mod 2-5)
+□ ✅ Il gap verso il corso è naturale e desiderabile
+
+
+
+
+# ══════════════════════════════════════════════════════════════
+#
+#   PARTE 3 — DOCUMENTO HANDOFF PER P4 LAUNCH COMMAND
+#
+# ══════════════════════════════════════════════════════════════
+
+
+
+═══════════════════════════════════════════════════════════════ DOCUMENTO HANDOFF — PRODUCT CREATION LAB → LAUNCH COMMAND ═══════════════════════════════════════════════════════════════ Data: 28 Marzo 2026 Prodotto: Claude Code Mastery Status: ⚠️ Architettura completata — In attesa produzione contenuti ═══════════════════════════════════════════════════════════════
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SEZIONE A — DATI PRODOTTO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TITOLO DEFINITIVO: Claude Code Mastery — Da Utente AI a Builder di Sistemi
+TITOLO ALTERNATIVO (per test A/B): "Il Corso che Trasforma Claude Code nella Tua Skill Più Vendibile"
+TIPO: Percorso Premium
+CONTENUTO:
+Moduli: 6 + Modulo 0 (Setup)
+Lezioni totali: 21
+Durata totale video: ~6 ore di video + ~5 ore di esercizi = ~11 ore totali
+Template scaricabili: 18
+Esercizi pratici: 7 (1 per modulo + esercizi integrati nelle lezioni)
+Esempi compilati: 7+ (almeno 1 per modulo, molti template hanno esempio proprio)
+Framework proprietari: 4 (I.C.R.O., S.K.I.L.L., W.O.R.K., DAN)
+FORMATO VIDEO: Talking head + Screen recording
+PIATTAFORMA: [DA DEFINIRE — Skool / Teachable / Kajabi / Circle]
+ACCESSO POST-ACQUISTO: Automatico via email
+PREREQUISITI PER LO STUDENTE:
+Computer (Mac/Windows/Linux) con connessione internet
+Account Anthropic (console.anthropic.com)
+Nessuna competenza di programmazione richiesta
+Livello: da principiante assoluto a intermedio
+Tempo richiesto: 3-5 ore/settimana per 6 settimane
+DURATA PERCORSO: 6 settimane (ritmo consigliato)
+PREZZO CONSIGLIATO: €497 PREZZO MINIMO ACCETTABILE: €397 (early bird / founding members) MOTIVAZIONE PRICING: Il mercato italiano ha due fasce: corsi base €20-216 (Udemy, AI Play, IA per Tutti) e formazione enterprise €1000+ (DataMasters, NobleProg). Nessuno offre un percorso premium per non-tecnici con community, call e aggiornamenti a €497. Il gap è aperto. Lo stack value target è ≥3x: 18 template + 4 framework + 3 progetti + community + call
+aggiornamenti = valore percepito €1500+. €497 = rapporto 3:1.
+Rischio: brand awareness zero al lancio. Mitigazione: founding members a €397 per i primi 20 studenti + garanzia 30 giorni.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SEZIONE B — TARGET E POSIZIONAMENTO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TARGET PRIMARIO:
+Chi è: Giovani 18-30, prevalentemente maschi. Studenti universitari, neolaureati senza direzione, lavoratori dipendenti insoddisfatti, aspiranti freelancer. Audience tipo Andrei Pascu.
+Dove si trova: Instagram (pagine business/mindset), TikTok (tutorial AI, "come guadagnare online"), YouTube ("business online Italia"), Telegram (community gratuite business/marketing)
+Livello tecnico: Zero-basico. Usano ChatGPT. Non programmano.
+Awareness: Problem-Aware / Solution-Aware parziale. Sanno che l'AI è importante. Non sanno che "creare sistemi AI" è una skill vendibile.
+SEGNALI DI ACQUISTO:
+Segue creator come Andrei Pascu, pagine di business/mindset
+Cerca "come guadagnare con l'AI" / "skill AI vendibile"
+Ha provato ChatGPT ma si è fermato a "e poi?"
+Vede l'AI come opportunità ma non sa da dove iniziare
+PROBLEMA (in linguaggio del target — frasi esatte dalla ricerca): "Tutti parlano di AI ma nessuno ti spiega COME monetizzarla davvero" "Non so programmare e penso di essere tagliato fuori" "Ho comprato corsi che non mi hanno insegnato a guadagnare"
+POSIZIONAMENTO (1 frase): "Il primo corso italiano che ti insegna a creare agenti AI, skill e flussi di lavoro con Claude Code — e a vendere questa competenza come servizio."
+TRASFORMAZIONE PRIMA→DOPO (1 frase per la sales page): "Da utente ChatGPT che non sa quale skill imparare → a AI Builder con 3 progetti nel portfolio, un'offerta definita, e i primi clienti contattati. In 6 settimane."
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SEZIONE C — PUNTI DI FORZA E DIFFERENZIAZIONE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TOP 3 DIFFERENZIATORI (rispetto a TUTTI i competitor):
+UNICO CORSO ITALIANO CHE INSEGNA CLAUDE CODE COME SKILL VENDIBILE I competitor (AI Play, IA per Tutti, Udemy) insegnano "come usarlo per te stesso". Noi insegniamo come costruire sistemi E come venderli come servizio (Modulo 5 intero dedicato).
+
+
+4 FRAMEWORK PROPRIETARI (non esistono altrove)
+
+
+I.C.R.O. (Identità-Contesto-Regole-Output) → per CLAUDE.md
+S.K.I.L.L. (Scopo-Knowledge-Istruzioni-Limiti-Layout) → per SKILL.md
+W.O.R.K. (What-Order-Resources-Kickoff) → per workflow
+DAN (Dimostrazione-Angolo-Next step) → per outreach clienti Nessun competitor offre framework strutturati per Claude Code.
+3 PROGETTI PORTFOLIO PRONTI (non teoria — prodotti finiti) Lo studente esce con 3 sistemi funzionanti dimostrabili: Content System, Analysis System, Business Automation. Nessun competitor fa costruire un portfolio vendibile nel corso.
+
+
+GAP COMPETITOR COPERTI: ✅ Nessuno combina il mindset "skill = libertà" con AI avanzata ✅ Nessuno mostra come creare AGENTI PERSONALIZZATI e venderli ✅ Nessuno offre community + supporto + percorso per €497 in questo spazio ✅ I corsi sono troppo tecnici O troppo superficiali — noi siamo nel mezzo
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SEZIONE D — OBIEZIONI PRINCIPALI E RISPOSTE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OBIEZIONE 1: "€497 è troppo — ci sono tutorial gratis su YouTube" → RISPOSTA: I tutorial gratuiti ti insegnano comandi singoli. Il corso ti dà un SISTEMA: 4 framework, 18 template, 3 progetti portfolio, e la parte che nessun tutorial copre — come VENDERE questa competenza. Calcolo ROI: 1 solo cliente trovato con il Modulo 5 ripaga il corso 2x. → DOVE GESTIRLA: Stack value nella sales page + calcolo ROI esplicito
+OBIEZIONE 2: "Chi sei tu? Non ti conosco" → RISPOSTA: Gestire PRIMA del lancio con contenuti gratuiti (tutorial YouTube, post social, live demo). Al momento del lancio, chi arriva sulla sales page deve averti già visto fare cose concrete. → DOVE GESTIRLA: Pre-lancio content (Fase 8) + lead magnet con framework I.C.R.O.
+OBIEZIONE 3: "Claude Code cambia ogni mese — il corso sarà obsoleto" → RISPOSTA: "Non insegno uno strumento, insegno un METODO. I 4 framework (I.C.R.O., S.K.I.L.L., W.O.R.K., DAN) funzionano indipendentemente dall'aggiornamento. + Aggiornamenti inclusi: quando Claude Code cambia, il corso viene aggiornato." → DOVE GESTIRLA: Posizionamento nel copy + "aggiornamenti inclusi" nello stack
+OBIEZIONE 4: "Non so programmare, non è per me" → RISPOSTA: "Claude Code scrive il codice per te. Tu scrivi istruzioni in italiano. Se sai scrivere un brief, sai usare Claude Code." → DOVE GESTIRLA: Hero section sales page + FAQ + Modulo 0 come proof (il setup è accessibile — mostra lo screen recording)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SEZIONE E — CONTENUTO DETTAGLIATO ("Cosa Ottieni") ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MODULI: ✅ Modulo 0: SETUP — Claude Code installato e primo agente in 10 minuti ✅ Modulo 1: FONDAMENTA — Padroneggia CLAUDE.md e i comandi con il framework I.C.R.O. ✅ Modulo 2: SKILL BUILDER — Crea Skill personalizzate con il framework S.K.I.L.L. ✅ Modulo 3: WORKFLOW & AGENTI — Orchestra sistemi complessi con il framework W.O.R.K. ✅ Modulo 4: PROGETTI REALI — Costruisci 3 progetti portfolio dimostrabili ✅ Modulo 5: MONETIZZAZIONE — Offerta, portfolio online, primi 10 clienti
+TEMPLATE E MATERIALI: ✅ Template: "CLAUDE.md — Framework I.C.R.O." — Dai istruzioni perfette a Claude Code ✅ Template: "SKILL.md — Framework S.K.I.L.L." — Crea Skill professionali riutilizzabili ✅ Template: "Workflow Canvas — Framework W.O.R.K." — Progetta workflow prima di costruirli ✅ Template: "Lista 15 Skill Pronte All'Uso" — Scegli, personalizza e lancia ✅ Template: "Offerta AI Builder Canvas" — Definisci la tua offerta con pricing ✅ Template: "Messaggio Outreach — Framework DAN" — Contatta i primi clienti ✅ Template: "Script Prima Call — 4 Fasi" — Chiudi il primo cliente ✅ Template: "Portfolio Page Template" — Portfolio online in 1 ora ✅ + 10 template aggiuntivi (cheat sheet, checklist, brief, Skill pre-scritte) ✅ Checklist: 6 checklist di fine modulo con autoverifica ✅ Esercizi guidati: 7 esercizi con istruzioni step-by-step e criteri di autovalutazione
+INCLUSO NEL PERCORSO PREMIUM: ✅ Community privata (Telegram/Discord) ✅ 1 call di gruppo/mese ✅ Aggiornamenti a vita (disinneschi obiezione obsolescenza) ✅ Supporto via community entro 24-48h ✅ Roadmap settimanale guidata (6 settimane)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SEZIONE F — FRASI DAI BETA TESTER ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⬜ DA RACCOGLIERE — Beta test non ancora effettuato.
+Nota per P4: le frasi dei beta tester arriveranno dopo la produzione dei contenuti e il beta test (stimato: +4-6 settimane).
+Nel frattempo, per il copy pre-lancio usare:
+Frasi del target dalla ricerca (Sezione B)
+Demo live come proof (il contenuto gratuito pre-lancio)
+Framework proprietari come differenziatore
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SEZIONE G — FAQ ANTICIPATE (basate sulla ricerca, pre-beta) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FAQ 1: D: "Devo saper programmare?" R: "No. Claude Code scrive il codice per te. Tu scrivi istruzioni in italiano — come dare un brief a un collaboratore. Se sai scrivere un messaggio, sai usare Claude Code."
+FAQ 2: D: "Claude Code è gratuito?" R: "Claude Code è un tool di Anthropic. Richiede un account con credito API. Il costo medio per un uso regolare è circa €20-50/mese. Il corso ti insegna anche a ottimizzare i costi."
+FAQ 3: D: "Il corso si aggiorna quando Claude Code cambia?" R: "Sì. Gli aggiornamenti sono inclusi. Quando Claude Code rilascia nuove feature, il corso viene aggiornato. I 4 framework del corso funzionano indipendentemente dagli aggiornamenti tecnici."
+FAQ 4: D: "Quanto tempo serve per completare il corso?" R: "Il percorso è pensato per 6 settimane, con 3-5 ore/settimana. Puoi andare più veloce o più lento — hai accesso illimitato."
+FAQ 5: D: "Posso davvero trovare clienti con questa competenza?" R: "Il Modulo 5 è interamente dedicato a questo. Esci con un'offerta definita, un portfolio online, 10 prospect identificati e lo script per la prima call. Non è teoria — è un sistema che esegui."
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SEZIONE H — NOTE SPECIALI PER IL LANCIO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ATTENZIONE A:
+L'audience parte da ZERO — nessuna lista email, nessun follower. Tutto il pre-lancio deve costruire audience e fiducia contemporaneamente. Consigliato: almeno 4-6 settimane di contenuto gratuito prima dell'apertura vendite.
+
+
+€497 senza brand awareness è una vendita che richiede PROOF VISIVO. Il proof più forte non sono testimonial (non ne abbiamo) ma DEMO LIVE. Ogni contenuto pre-lancio deve mostrare Claude Code in azione. Suggerimento: almeno 3 video YouTube/TikTok dove costruisci qualcosa in tempo reale prima del lancio.
+
+
+Il target di Andrei Pascu COMPRA PERCHÉ VEDE FARE. Non perché legge copy persuasivo. Il webinar deve essere una demo live, non una presentazione con slide.
+
+
+I 4 framework proprietari (I.C.R.O., S.K.I.L.L., W.O.R.K., DAN) sono il vero differenziatore. Nessun competitor li ha. Usateli come titoli di sezione nella sales page e come angolo nei contenuti pre-lancio.
+
+
+NON DIRE (cose che non sono nel corso):
+Non promettere guadagni specifici ("guadagnerai €X al mese")
+Non dire che è "senza sforzo" — richiede 3-5 ore/settimana per 6 settimane
+Non promettere che i clienti arriveranno automaticamente — il Modulo 5 dà il sistema, ma lo studente deve eseguire
+LEAD MAGNET:
+PDF "Il Framework I.C.R.O." — 12-15 pagine
+Dà: framework completo per CLAUDE.md + template + esempio compilato
+Gap naturale verso il corso: il LM copre il Modulo 1, il corso dà Moduli 2-5 (Skill, Workflow, Portfolio, Monetizzazione)
+CTA: verso waitlist / pre-lancio community
+SUGGERIMENTO ANGOLO DI LANCIO: "La skill che l'AI non può rubarti — perché sei tu a costruire l'AI." Questo angolo risuona con i pain point #1 (quale skill imparare) e #4 (paura di essere rimpiazzato) ed è unico nel mercato italiano.
+Angolo alternativo per test: "Da utente ChatGPT a costruttore di sistemi AI — il corso che il mercato italiano non ha ancora."
+═══════════════════════════════════════════════════════════════ FIRMA: Product Creation Lab — Digital Empire Data consegna: 28 Marzo 2026 Status: ⚠️ ARCHITETTURA COMPLETATA — PRODUZIONE IN CORSO Prossimo aggiornamento: post-produzione contenuti + post-beta test ═══════════════════════════════════════════════════════════════
+
+
+
+
+# ══════════════════════════════════════════════════════════════
+# PROSSIMI STEP
+# ══════════════════════════════════════════════════════════════
+
+
+PIPELINE FASE 3 — STATUS:
+
+
+□ ✅ Step 1.1 — Ricerca pre-produzione (COMPLETATA — report allegato)
+□ ✅ Step 1.2 — Learning Path PRIMA→DOPO (COMPLETATO)
+□ ✅ Step 1.3 — Outline Dettagliato (COMPLETATO — 21 lezioni, 6 moduli)
+□ ✅ Step 1.4 — Verifica Standard per Tipo (VERIFICATO — tutti i requisiti Premium soddisfatti)
+□ ✅ Template + Esercizi + Esempi (COMPLETATI — 18 template, 7 esercizi)
+□ ✅ Lead Magnet — Test Deprivazione (COMPLETATO — PDF I.C.R.O.)
+□ ✅ Documento Handoff v1 (COMPLETATO — aggiornamento post-beta necessario)
+
+
+□ ⬜ Step 2.1 — Scrittura script lezioni (processo 6 passi da KB_04)
+□ ⬜ Step 2.2 — Produzione video (batch recording)
+□ ⬜ Step 2.3 — Creazione materiali scaricabili (template finali in Canva/Notion)
+□ ⬜ Step 2.4 — Assemblaggio prodotto su piattaforma
+□ ⬜ Step 3.1 — Quality check (5 aree da KB_05)
+□ ⬜ Step 3.2 — Beta test (5 tester, 7-10 giorni)
+□ ⬜ Step 3.3 — Fix & Polish
+□ ⬜ Step 3.4 — Handoff v2 (con testimonial beta) → P4 Launch Command
+
+
+FASE 4 — PRICING
+
+Skill:    Product Pricing Strategist
+
+▸ Fascia base (tipo prodotto × target × competitor)
+▸ Stack value con 3 formule (rapporto ≥3x)
+▸ Anchor pricing (3 tipi)
+▸ Struttura bonus (libreria 4 categorie)
+▸ Garanzia per fascia prezzo
+▸ Coerenza con Product Ladder
+
+Pricing strategy ccm
+═══════════════════════════════════════════════════════════════
+PRICING STRATEGY — CLAUDE CODE MASTERY
+═══════════════════════════════════════════════════════════════
+Skill: Product Pricing Strategist
+Fase: 4 — Pricing
+Data: 28 Marzo 2026
+Input: Documento Handoff P8 + Report Ricerca Fase 2
+Output: Prezzo finale + Stack Value + Anchor + Bonus + Garanzia
+═══════════════════════════════════════════════════════════════
+STEP 1 — FASCIA BASE (Tipo × Target × Competitor)
+──────────────────────────────────────────────────────
+Fattore A: Tipo di Prodotto
+Tipo: Percorso Premium Fascia naturale: €497-997
+Fattore B: Moltiplicatore Target
+Target: Giovani 18-30, studenti/neolaureati/aspiranti freelancer. Inizio carriera, budget limitato, nessuna esperienza lavorativa significativa.
+Moltiplicatore: ×0.5-0.7 (studenti/junior/freelancer inizio carriera)
+Calcolo: €497 × 0.7 = €348 | €997 × 0.5 = €499
+→ Range da moltiplicatore: €348-499
+Fattore C: Analisi Competitor
+┌──────────────────────────┬────────┬──────────────────────────┬──────────────────────────┐
+│ Competitor               │ Prezzo │ Cosa include             │ Punto debole             │
+├──────────────────────────┼────────┼──────────────────────────┼──────────────────────────┤
+│ Andrei Pascu             │ ~€434  │ Claude Speedrun +        │ Insegna copywriting,     │
+│ (Claude Speedrun +       │        │ Funnel Operator.         │ non AI come skill        │
+│ Funnel Operator)         │        │ Mentorship + community.  │ vendibile. Target =      │
+│                          │        │ Copy come skill.         │ stesso, skill diversa.   │
+├──────────────────────────┼────────┼──────────────────────────┼──────────────────────────┤
+│ AI Play                  │ ~€216  │ 7 lezioni Claude Code.   │ Target generico. Non     │
+│ (Giada Franceschini)     │ /anno  │ Speaker TEDx. Brand.     │ insegna monetizzazione.  │
+│                          │        │                          │ Niente community attiva. │
+├──────────────────────────┼────────┼──────────────────────────┼──────────────────────────┤
+│ IA per Tutti             │ ~€216  │ 16 corsi AI. Community   │ Troppo ampio (16 corsi). │
+│ (Andrea Fantucchio)      │ /anno  │ 500+. Newsletter.        │ Claude Code è 1 di tanti.│
+│                          │        │                          │ Zero profondità.         │
+├──────────────────────────┼────────┼──────────────────────────┼──────────────────────────┤
+│ Udemy (Claude Code IT)   │ €20-50 │ Corso base. Nessun       │ Qualità bassa. Zero      │
+│                          │        │ supporto. Generalista.   │ community. Generico.     │
+├──────────────────────────┼────────┼──────────────────────────┼──────────────────────────┤
+│ DataMasters              │ €300-  │ Corsi tecnici AI.        │ Per developer. Target    │
+│                          │ 1500+  │ Webinar. Credibile.      │ completamente diverso.   │
+├──────────────────────────┼────────┼──────────────────────────┼──────────────────────────┤
+│ Corsi no-code/n8n vari   │ €97-   │ Automazioni senza code.  │ Tool diversi (n8n ≠      │
+│                          │ 297    │ Community.               │ Claude Code). Overlap    │
+│                          │        │                          │ parziale.                │
+├──────────────────────────┼────────┼──────────────────────────┼──────────────────────────┤
+│ MEDIA (competitor        │ ~€230  │                          │                          │
+│ diretti accessibili)     │        │                          │                          │
+│ MEDIA (incl. premium)    │ ~€405  │                          │                          │
+└──────────────────────────┴────────┴──────────────────────────┴──────────────────────────┘
+
+Analisi Posizionamento
+Il mercato ha 2 cluster:
+Cluster basso (€20-216): Udemy, AI Play, IA per Tutti — generalisti, utility
+Cluster alto (€300-1500+): DataMasters, NobleProg — tecnici, enterprise
+Il gap: nessuno tra €216 e €1000 offre un percorso Claude Code per non-tecnici con community + monetizzazione.
+Andrei Pascu è il benchmark diretto — stessa audience, ~€434. Ma vende copywriting, non AI. Il suo prezzo valida che il target PAGA €400+ per una skill vendibile con mentorship.
+Decisione Fascia Base
+Formula: Tipo (Percorso Premium €497-997) × Target (×0.7) = €348-698
+Benchmark competitor diretto: Andrei ~€434
+Gap di mercato: nessuno tra €216 e €1000 per questo target/prodotto
+
+→ FASCIA BASE SELEZIONATA: €397-497
+
+Motivazione strategica:
+€397 (Lancio 1 — Founding Members):
+Sotto Andrei (€434) → posizionamento "accessibile ma premium"
+1.8x sopra AI Play/IA per Tutti (€216) → chiaramente un prodotto diverso
+Coerente con budget target 18-30 (pagabile in 2-3 rate)
+Primo lancio senza brand → prezzo di lancio ridotto è strategico
+€497 (Lancio 2+ — Prezzo Target):
+Sopra Andrei → posizionamento "premium, skill diversa"
+Giustificato da: 4 framework proprietari + 3 progetti portfolio + monetizzazione (nessun competitor ha questo)
+Si sostiene con testimonial dal Lancio 1
+PREZZO LANCIO 1: €397 PREZZO TARGET (Lancio 2+): €497 PREZZO MINIMO EARLY BIRD (primi 48h): €297
+STEP 2 — STACK VALUE (rapporto ≥3x)
+Valore Base — 3 Formule Calcolate
+Formula A — "Valore del Risultato" "Se questa competenza ti permette di trovare anche solo 1 cliente da €500-800 (progetto one-shot come insegnato nel Modulo 5), quanto vale quel risultato?" → Valore: €500-800 per IL PRIMO cliente. → Potenziale 12 mesi: 1 cliente/mese × €500 = €6.000/anno → Valore Formula A: €800 (conservativo — solo il primo cliente)
+Formula B — "Costo dell'Alternativa" "Quanto costerebbe imparare tutto questo da autodidatta o con consulente?" → Autodidatta: 6 mesi di trial & error × 3h/settimana = 78 ore → Valore orario target (€15-25/h): 78h × €20 = €1.560 → Consulente AI 1:1: €100/h × 15h per lo stesso percorso = €1.500 → Valore Formula B: €1.500
+Formula C — "Risparmio di Tempo" "Quanti mesi di tentativi risparmia?" → 6 mesi condensati in 6 settimane guidate → 78h di tempo risparmiato × €20/h = €1.560 → Valore Formula C: €1.560
+Formula scelta: B (€1.500) — la più alta E la più credibile per il target (confronto con "imparare da solo per 6 mesi").
+Stack Value Completo
+═══════════════════════════════════════════════════
+STACK VALUE — CLAUDE CODE MASTERY
+═══════════════════════════════════════════════════
+
+PRODOTTO BASE: Claude Code Mastery — Percorso Completo
+├── 6 moduli + Modulo 0, 21 lezioni, ~11 ore (video + esercizi)
+├── 4 framework proprietari (I.C.R.O., S.K.I.L.L., W.O.R.K., DAN)
+├── 18 template scaricabili con esempi compilati
+├── 7 esercizi guidati con criteri autovalutazione
+├── 3 progetti portfolio completi
+├── Roadmap 6 settimane + welcome video
+└── Valore base (Formula B — Costo Alternativa): €1.500
+
+BONUS 1: Libreria 15 Skill Pronte All'Uso
+├── 15 file SKILL.md pre-compilati (Scopo + Knowledge) per
+│   4 categorie: Content & Copy, Analisi & Ricerca,
+│   Business & Operations, Produttività Personale
+├── Personalizzabili per qualsiasi settore
+├── Risparmia 20+ ore di scrittura Skill da zero
+└── Valore: €197
+
+BONUS 2: Kit Portfolio "Pronto in 1 Ora"
+├── Template Notion duplicabile con struttura 3C completa
+├── 3 case study pre-strutturati (solo da personalizzare)
+├── Template proposta commerciale per il primo cliente
+├── Risparmia il tempo di costruire un portfolio da zero
+└── Valore: €147
+
+BONUS 3: Community Privata + 1 Call di Gruppo/Mese (3 mesi)
+├── Accesso alla community (Telegram/Discord) per domande,
+│   feedback su Skill/workflow, networking con altri builder
+├── 1 call live al mese: Q&A su casi specifici degli studenti
+├── Supporto entro 24-48h su blocchi tecnici
+└── Valore: €297
+
+BONUS 4 (Solo Lancio — Urgenza): Sessione Strategica 1:1 (30 min)
+├── Solo per chi acquista nei primi 7 giorni di lancio
+├── 30 minuti 1:1 per impostare il tuo percorso personalizzato:
+│   quale settore targetizzare, quali Skill creare per prime,
+│   come posizionare la tua offerta
+├── Sparisce dopo il lancio. Per sempre.
+└── Valore: €197
+
+─────────────────────────────────────────────────────
+VALORE TOTALE:     €2.338
+PREZZO LANCIO 1:   €397
+SCONTO:            83%
+RAPPORTO V/P:      5.9x ✅ (target 5-8x: centrato)
+─────────────────────────────────────────────────────
+
+Verifica senza Bonus 4 (post-lancio):
+VALORE SENZA B4:   €2.141
+PREZZO TARGET:     €497
+RAPPORTO V/P:      4.3x ✅ (sopra il minimo 3x)
+═══════════════════════════════════════════════════
+
+Verifica Regole Bonus
+Regola
+Status
+Dettaglio
+Ogni bonus collegato al risultato
+✅
+B1: accelera creazione Skill. B2: accelera monetizzazione. B3: supporto implementazione. B4: personalizzazione percorso.
+Valore soli bonus > prezzo
+✅
+Bonus totali €838 > €397 (prezzo lancio)
+Max 3-4 bonus
+✅
+4 bonus (B4 solo per lancio, poi 3 permanenti)
+Almeno 1 subito applicabile
+✅
+B1 (15 Skill pronte) + B2 (template portfolio) sono usabili dal giorno 1
+Valori credibili e difendibili
+✅
+B1: 15 Skill × €13 ciascuna = €197 (ragionevole). B3: €99/mese × 3 mesi ≈ €297. B4: call 1:1 a €197 per 30 min è coerente con il mercato.
+
+
+STEP 3 — ANCHOR PRICING (3 Tipi)
+──────────────────────────────────────────────────────
+Anchor A — "Valore Totale" (per sales page)
+"Il valore totale di tutto quello che ricevi — corso, 18 template,
+4 framework, 3 progetti portfolio, community, call mensili e la
+libreria di 15 Skill pronte — è di €2.338.
+
+Ma il prezzo oggi non è €2.338.
+Non è nemmeno €997.
+
+Il prezzo per i Founding Members è €397."
+
+Anchor B — "Alternativa" (per webinar)
+"L'alternativa è imparare da solo. Ci vogliono 6 mesi minimo.
+78 ore di tentativi, tutorial sbagliati, documentazione in inglese,
+Skill che non funzionano. Il costo? €1.500 di tempo perso
+(e ancora non sai come vendere la skill).
+
+Oppure: 6 settimane guidate. Tutto strutturato. Template pronti.
+3 progetti nel portfolio. Sistema per trovare clienti.
+€397."
+
+Anchor C — "Risultato/ROI" (per email follow-up)
+"Se con questo corso trovi anche solo UN cliente da €500
+(e il Modulo 5 ti insegna esattamente come farlo), il corso
+si è ripagato e ti resta €103 di profitto.
+
+Ma il punto non è 1 cliente.
+Il punto è che hai una skill che puoi vendere
+per i prossimi 5-10 anni.
+
+€397 per una skill che genera €500-800 per singolo progetto.
+Il ROI non è 2x. È potenzialmente 50x nel primo anno."
+
+Ordine di Presentazione nel Pitch
+1. Anchor B (Alternativa) — apri con il costo del "non comprare"
+2. Anchor A (Valore Totale) — mostra lo stack, rivela il prezzo
+3. Anchor C (ROI) — chiudi con il calcolo del ritorno
+
+──────────────────────────────────────────────────────
+STEP 4 — GARANZIA
+──────────────────────────────────────────────────────
+Fascia €397-497 → Garanzia di Risultato — 30 giorni
+Dalla matrice: fascia €497-997 → Garanzia di Risultato 60 gg. Ma: primo lancio, zero brand, target giovane con budget limitato. Adatto: 30 giorni (non 60) perché il corso è di 6 settimane — 30 giorni copre i primi 4 moduli. Abbastanza per valutare.
+Garanzia Definitiva
+Nome: "Garanzia Builder o Rimborsato"
+GARANZIA BUILDER O RIMBORSATO — 30 GIORNI
+
+"Segui il corso per 30 giorni. Completa i primi 4 moduli.
+Se dopo aver costruito le tue Skill e il tuo primo workflow
+non senti che questa è la skill giusta per te, ti rimborso
+tutto con una sola email. Nessuna domanda, nessuna procedura.
+
+Perché lo faccio? Perché se non funziona per te, non voglio
+i tuoi soldi. Il mio obiettivo è creare AI Builder che diventano
+i miei casi studio — non clienti insoddisfatti."
+
+Processo: manda email a [indirizzo] → rimborso entro 48 ore.
+
+Perché 30 giorni e non 60
+Fattore
+30 gg
+60 gg
+Il corso dura 6 settimane
+Copre i primi 4/6 moduli — abbastanza
+Copre tutto — generoso ma rischioso
+Brand awareness = zero
+Rischio refund già alto — 30 gg contiene il rischio
+60 gg con zero brand = refund rate potenzialmente alto
+Target giovane
+Decide veloce — 30 gg è abbondante
+60 gg non cambia la decisione
+Standard fascia €397
+Coerente (la matrice indica 30 gg per €197-297, 60 gg per €497+)
+Più generoso del necessario per il prezzo di lancio
+
+Regola: se al Lancio 2 il prezzo sale a €497, la garanzia passa a 60 giorni.
+Monitoraggio Refund
+Refund Rate
+Azione
+<5%
+Mantieni la garanzia. Tutto ok.
+5-10%
+Analizza: è il prodotto o il target sbagliato?
+10-15%
+STOP — rivedi il Modulo 1-2 (dove lo studente si blocca)
+>15%
+Ferma le vendite. Intervento strutturale.
+
+──────────────────────────────────────────────────────
+STEP 5 — PRODUCT LADDER + ESCALATION LANCI
+──────────────────────────────────────────────────────
+Product Ladder di Digital Empire — Con Claude Code Mastery
+L0: €0       PDF "Framework I.C.R.O." (lead magnet)
+              ↓ salto: ∞ (da gratuito — naturale)
+L1: €17-27   [DA CREARE] Mini-corso "I Tuoi Primi 3 Agenti AI in 1 Ora"
+              ↓ salto: ~15-25x (da €0 — accettabile da gratuito)
+L2: [vuoto]  Nessun prodotto nella fascia €47-197
+              ↓
+L3: €397     Claude Code Mastery — Percorso Premium (Lancio 1)
+              ↓ salto da L1: ~15-23x ← ⚠️ ATTENZIONE
+              ↓
+Bridge: €2.000+ Servizio agenzia CRO (Conversion Sprint)
+              ↓ salto da L3: ~5x ← ✅ OK
+
+Diagnosi del Salto L1 → L3
+Problema: il salto da €17-27 a €397 è ~15-23x. La regola dice max 10x.
+3 opzioni per risolvere:
+OPZIONE A — Inserisci un prodotto L2 (€97-147)
+Crea un mini-corso intermedio: "Claude Code Fast Start — Costruisci la Tua Prima Skill in 3 Ore" a €97.
+Contenuto: Modulo 0 + Modulo 1 + primi 30 min del Modulo 2
+Funziona come "versione assaggio" del percorso completo
+Chi compra L2 ha diritto a upgrade a L3 pagando la differenza (€300)
+Salti: L1 (€27) → L2 (€97) = 3.6x ✅ | L2 (€97) → L3 (€397) = 4.1x ✅
+OPZIONE B — Alza il prezzo di L1 a €47
+Un mini-corso a €47 riduce il salto: €47 → €397 = 8.4x. Appena sotto il limite di 10x. Accettabile.
+OPZIONE C — Ignora il salto per il Lancio 1
+Il target arriva da contenuti gratuiti (YouTube, TikTok, lead magnet). Il percorso reale è: PDF gratuito → contenuto YouTube → webinar → €397. Il webinar funziona da "prodotto intermedio" in termini di trust-building, anche se non è un prodotto a pagamento.
+RACCOMANDAZIONE: Opzione A (prodotto L2 a €97) — ma DOPO il Lancio 1.
+Per il Lancio 1: procedi con Opzione C. Il webinar live con demo fa da bridge di fiducia. Il target di Andrei Pascu è abituato a salti simili (contenuto gratuito → €434 mentorship).
+Per il Lancio 2: crea il mini-corso L2 a €97 con il contenuto dei Moduli 0+1. Questo ti dà: revenue aggiuntiva, lead qualificati per il percorso completo, e una product ladder pulita.
+Product Ladder Post-Lancio 2 (target)
+L0: €0       PDF "Framework I.C.R.O."
+L1: €27      Mini-corso "3 Agenti AI in 1 Ora"
+L2: €97      "Claude Code Fast Start" (Mod 0+1+inizio 2)
+L3: €497     Claude Code Mastery — Percorso Premium
+Bridge: €2.000+ Conversion Sprint (servizio agenzia CRO)
+
+Salti: L0→L1: ∞  |  L1→L2: 3.6x ✅  |  L2→L3: 5.1x ✅  |  L3→Bridge: 4x ✅
+
+Escalation tra Lanci
+LANCIO 1 (inaugurale): €297 early bird (48h) → €397 standard
+├── Obiettivo: 15-25 studenti + testimonial
+├── Giustificazione: "È la prima volta. Prezzo speciale per i Founding Members."
+├── Bonus esclusivo: Sessione 1:1 (30 min) per chi entra nei primi 7 giorni
+└── Al termine: raccogli testimonial, case study, NPS
+
+LANCIO 2 (consolidamento): €497
+├── Obiettivo: 30-50 studenti
+├── Giustificazione: "Il corso ha dimostrato valore. 
+│   [N] studenti, [risultati]. Il prezzo riflette il prodotto migliorato."
+├── Aggiunta: testimonial del Lancio 1 nella sales page
+├── Aggiunta: mini-corso L2 a €97 come entry point
+└── Garanzia: sale a 60 giorni (coerente con fascia €497)
+
+LANCIO 3+ (maturità): €497-597
+├── Prezzo stabile o +20% se aggiungi moduli/contenuti
+├── Versione evergreen possibile
+└── Aggiornamenti a vita come promesso
+
+──────────────────────────────────────────────────────
+RIEPILOGO OFFERTA COMPLETA
+──────────────────────────────────────────────────────
+═══════════════════════════════════════════════════════════
+OFFERTA — CLAUDE CODE MASTERY
+═══════════════════════════════════════════════════════════
+
+PRODOTTO: Claude Code Mastery — Da Utente AI a Builder di Sistemi
+TIPO: Percorso Premium
+
+CONTENUTO BASE:
+✅ 6 moduli + Modulo 0 (21 lezioni, ~11 ore)     Valore: €1.500
+✅ 4 framework proprietari (I.C.R.O., S.K.I.L.L.,
+   W.O.R.K., DAN)
+✅ 18 template con esempi compilati
+✅ 3 progetti portfolio completi
+✅ Aggiornamenti a vita
+
+BONUS 1: Libreria 15 Skill Pronte All'Uso          Valore: €197
+BONUS 2: Kit Portfolio "Pronto in 1 Ora"           Valore: €147
+BONUS 3: Community + Call Mensile (3 mesi)          Valore: €297
+BONUS 4: Sessione 1:1 — 30 min (SOLO LANCIO)       Valore: €197
+
+─────────────────────────────────────────────────────────
+VALORE TOTALE:                                     €2.338
+─────────────────────────────────────────────────────────
+
+PREZZO EARLY BIRD (primi 48h):     €297
+PREZZO LANCIO 1 (Founding Members): €397
+PREZZO LANCIO 2+ (standard):       €497
+
+GARANZIA: "Builder o Rimborsato" — 30 giorni
+(sale a 60 gg dal Lancio 2 a €497)
+
+RAPPORTO VALORE/PREZZO:
+  Early Bird:    7.9x ✅
+  Lancio 1:      5.9x ✅
+  Lancio 2+:     4.3x ✅ (senza B4)
+──────────────────────────────────────────────────────
+CHECKLIST QUALITÀ PRICING (dalla Skill)
+──────────────────────────────────────────────────────
+FASCIA BASE:
+☑ Tipo prodotto identificato (Percorso Premium)
+☑ Moltiplicatore target applicato (×0.7 per junior)
+☑ 6 competitor analizzati con tabella
+☑ Posizionamento scelto: sotto Andrei al lancio, sopra al L2
+☑ Fascia coerente con funnel (webinar + follow-up + possibile call)
+
+STACK VALUE:
+☑ Valore base calcolato con 3 formule (scelta: Formula B €1.500)
+☑ Rapporto ≥3x (5.9x al Lancio 1, 4.3x al Lancio 2)
+☑ 4 bonus (B4 solo per lancio, poi 3 permanenti)
+☑ Ogni bonus collegato al risultato
+☑ 2 bonus subito applicabili (B1 libreria Skill, B2 kit portfolio)
+☑ Valori credibili e difendibili
+☑ Valore soli bonus (€838) > prezzo lancio (€397)
+
+ANCHOR PRICING:
+☑ 3 anchor definiti (Valore Totale, Alternativa, ROI)
+☑ Anchor presentato PRIMA del prezzo (ordine: B → A → C)
+☑ Sconto 83% al Lancio 1 — significativo e credibile
+
+GARANZIA:
+☑ Proporzionata alla fascia (30 gg per €397, 60 gg per €497)
+☑ Nome memorabile ("Builder o Rimborsato")
+☑ Durata specifica (30 giorni)
+☑ Processo semplice (1 email → rimborso in 48h)
+
+PRODUCT LADDER:
+☑ Prezzo è coerente con la ladder (L3 = €397-497)
+⚠ Salto L1→L3 = 15x (sopra limite 10x) — risolto con piano L2 post-Lancio 1
+☑ Nessun salto critico nella ladder target post-Lancio 2
+
+──────────────────────────────────────────────────────
+PITCH PRICING PER IL WEBINAR (script pronto)
+──────────────────────────────────────────────────────
+[DOPO LA DEMO — transizione al prezzo]
+
+"Adesso la domanda è: quanto costa tutto questo?
+
+Prima, facciamo i conti.
+
+L'ALTERNATIVA:
+Puoi imparare da solo. Ti servono circa 6 mesi.
+78 ore di tentativi, tutorial in inglese, Skill che non funzionano.
+Il costo? €1.500 di tempo — e alla fine ancora non sai
+come trovare clienti.
+
+Oppure puoi fare tutto in 6 settimane.
+
+COSA RICEVI:
+- Il corso completo: 6 moduli, 21 lezioni, 4 framework che non
+  trovi da nessuna parte (I.C.R.O., S.K.I.L.L., W.O.R.K., DAN)
+                                              Valore: €1.500
+
+- Libreria di 15 Skill pronte all'uso — le apri e funzionano
+                                              Valore: €197
+
+- Kit Portfolio completo — il tuo sito è online in 1 ora,
+  con 3 progetti pronti da mostrare ai clienti
+                                              Valore: €147
+
+- Community privata + 1 call al mese per 3 mesi
+                                              Valore: €297
+
+[PAUSA]
+
+Il valore totale è €2.141.
+
+Ma il prezzo non è €2.141.
+Non è nemmeno €997.
+Non è €697.
+
+Il prezzo per i Founding Members di Claude Code Mastery è €397.
+
+€397 per diventare un AI Builder con portfolio, offerta
+e sistema per trovare clienti.
+
+E se lo fai nei prossimi 7 giorni, aggiungo una sessione
+strategica 1:1 con me — 30 minuti per impostare il tuo
+percorso personalizzato. Valore €197. Inclusa.
+
+[PAUSA]
+
+Ma non è finita. C'è la Garanzia Builder o Rimborsato.
+
+Segui il corso per 30 giorni. Completa i primi 4 moduli.
+Se non senti che questa è la skill giusta per te —
+ti rimborso tutto con una email. Zero domande.
+
+Il rischio è zero. Il potenziale è una skill che vale
+€500-800 per ogni singolo cliente che trovi.
+
+Anche UN solo cliente ripaga il corso e ti avanza €100.
+Ma il punto non è 1 cliente. Il punto è che hai una competenza
+che cresce di valore ogni mese che passa.
+
+[CTA]
+
+Clicca il link qui sotto. Entra adesso.
+I posti a €397 sono limitati ai primi [N] Founding Members.
+Dopo, il prezzo sale a €497 — per sempre."
+
+──────────────────────────────────────────────────────
+NOTE PER P4 LAUNCH COMMAND
+──────────────────────────────────────────────────────
+Il prezzo early bird (€297) dura MASSIMO 48 ore. È un incentivo per la lista più calda. Non estendere.
+
+
+Il Bonus 4 (sessione 1:1) sparisce dopo i primi 7 giorni. Questo è il driver di urgenza principale. Deve sparire davvero.
+
+
+Opzione pagamento rateale: 2 rate da €199 (per €397) o 3 rate da €149. Il target giovane ha budget limitato — le rate rimuovono un'obiezione di cassa, non di prezzo.
+
+
+Dopo il Lancio 1, creare il mini-corso L2 a €97 ("Claude Code Fast Start") con il contenuto dei Moduli 0+1. Questo sistema la product ladder e crea un entry point per chi non è pronto per il percorso completo.
+
+
+La garanzia sale a 60 giorni quando il prezzo sale a €497 (Lancio 2). Comunicarlo come "upgrade della garanzia" nel copy del Lancio 2.
+
+
+
+FASE 5 — ARCHITETTURA FUNNEL
+
+Skill:    Launch Funnel Architect
+
+▸ Tipo funnel in base al prezzo:
+  €97-297 → Funnel Unico Perfetto Standard
+  €497-997 → Funnel Unico Perfetto Completo
+▸ Mappa pagine + biforcazioni + routing
+▸ Tag system completo (naming convention)
+▸ Mappa automazioni
+▸ Brief copy → porta in Fase 6 (CRO Copy Architect)
+▸ Trigger map email → porta in Fase 7 (Email Sequence Master)
+▸ Brief VSL → porta in Fase 6 (VSL Script Builder)
+
+Architettura funnel ccm
+═══════════════════════════════════════════════════════════════ ARCHITETTURA FUNNEL — CLAUDE CODE MASTERY
+═══════════════════════════════════════════════════════════════
+Skill: Launch Funnel Architect
+Fase: 5 — Architettura Funnel
+Data: 28 Marzo 2026
+Tipo: Funnel Unico Perfetto COMPLETO (€497-997)
+Input: Outline corso + Pricing Strategy + Report Ricerca
+Output: 7 deliverable per lo Sprint Produzione (Fasi 6+7+8)
+═══════════════════════════════════════════════════════════════
+──────────────────────────────────────────────────────
+1. TIPO DI FUNNEL SELEZIONATO
+──────────────────────────────────────────────────────
+Decisione
+PREZZO LANCIO 1: €397 (early bird €297)
+PREZZO TARGET:   €497
+
+Matrice decisionale:
+€497-997 → FUNNEL UNICO PERFETTO COMPLETO
+
+Anche se il Lancio 1 è a €397 (fascia €297-497), il prezzo
+target è €497 e il prodotto è un Percorso Premium.
+→ Si usa il Completo, non lo Standard.
+
+Differenze Completo vs Standard
+Elemento
+Standard (€97-297)
+COMPLETO (questo funnel)
+Webinar
+75-90 min
+90-120 min
+Storie nel webinar
+1-2
+3 dettagliate
+Chiamate consulente
+Consigliate
+Obbligatorie
+WhatsApp
+Consigliato
+Attivo e gestito
+Follow-up post-webinar
+Solo email
+Email + DM 1:1
+Call gratuita
+No
+Sì (15 min per lead caldi)
+Urgenza
+Prezzo temporaneo
+Posti limitati (reale)
+
+Piattaforme
+Componente
+Tool
+Note
+Email marketing
+ActiveCampaign
+Automazioni + tag system
+Landing page
+Carrd (o Systeme.io)
+1 pagina, veloce, €19/anno
+Checkout
+Stripe
+Integrato con AC via webhook
+Webinar
+Zoom
+Live, registrato per replay
+Community
+Telegram / Discord
+Gratuito, diretto
+WhatsApp
+Manuale (poi Spoki)
+Al lancio: gestisci a mano
+Booking call
+Cal.com o Calendly
+Per call 15 min gratuite
+Hosting corso
+Skool / Teachable
+Da decidere
+
+──────────────────────────────────────────────────────
+2. MAPPA FUNNEL — PAGINE + BIFORCAZIONI + ROUTING
+──────────────────────────────────────────────────────
+Architettura Completa
+═══════════════════════════════════════════════════════════════
+            MAPPA FUNNEL — CLAUDE CODE MASTERY
+═══════════════════════════════════════════════════════════════
+
+TRAFFICO (YouTube, TikTok, IG, Ads)
+│
+▼
+┌─────────────────────────────────────┐
+│  STEP 1 — LANDING PAGE OPT-IN      │
+│  "Il Framework I.C.R.O."           │
+│  CTA: Nome + Email → Scarica PDF   │
+│  CR target: >30%                    │
+│  TAG: pdf-framework-icro            │
+│  PIXEL: Lead                        │
+└──────────────┬──────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────┐
+│  STEP 2 — PAGINA UPSELL            │
+│  Mini-corso "3 Agenti AI in 1 Ora" │
+│  VSL: 3-5 min                       │
+│  Prezzo: €27                        │
+│  CR target: >5%                     │
+└──────┬─────────────────┬────────────┘
+       │                 │
+   COMPRA            NON COMPRA
+       │                 │
+       ▼                 │
+  TAG: buyer             │
+  TAG: cliente-          │
+  minicorso-ccm          │
+  PIXEL: Purchase €27    │
+  Email: ricevuta        │
+  +24h: email VSL evento │
+       │                 │
+       └────────┬────────┘
+                │
+                ▼
+┌─────────────────────────────────────┐
+│  STEP 3 — PAGINA VSL EVENTO        │
+│  "Come Diventare AI Builder in 6    │
+│   Settimane — Workshop Gratuito"    │
+│  VSL: 8-12 min                      │
+│  + Sales page lunga sotto           │
+│  CTA: Iscriviti Gratuitamente       │
+│  CR target: >15%                    │
+└──────┬─────────────────┬────────────┘
+       │                 │
+    ISCRIVE         NON ISCRIVE
+       │                 │
+       ▼                 ▼
+┌──────────────┐  ┌───────────────┐
+│  STEP 4      │  │ TAG: nurture- │
+│  FORM WEBINAR│  │ settimanale   │
+│  Nome+Email  │  │ → Nurture     │
+│  +Telefono   │  │ 1 email/sett  │
+│  (obbligo)   │  └───────────────┘
+└──────┬───────┘
+       │
+       ▼
+  TAG: iscritto-webinar-ccm
+  TAG: webinar-attesa
+  PIXEL: WebinarRegistration
+  → Thank You Page + Calendario
+       │
+       ▼
+┌─────────────────────────────────────┐
+│  STEP 5 — SEQUENZA PRE-WEBINAR     │
+│                                     │
+│  📧 EMAIL: 1/giorno fino al webinar│
+│  📱 WHATSAPP: +1h, -24h, -1h      │
+│  📞 CHIAMATA: entro 24-48h        │
+│     + reminder -1/-2gg (score 8+)  │
+│                                     │
+│  SCORING ENGAGEMENT:                │
+│  1-3/10 → engagement-basso         │
+│  4-7/10 → engagement-medio         │
+│  8-10/10 → engagement-alto         │
+│                                     │
+│  Show rate target: >30%             │
+└──────────────┬──────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────┐
+│  STEP 6 — WEBINAR LIVE             │
+│  90-120 min                         │
+│  3 storie dettagliate              │
+│  Demo live Claude Code              │
+│  Pitch + offerta + CTA             │
+│  (→ Webinar Script Master)          │
+└──────┬─────────────────┬────────────┘
+       │                 │
+   COMPRA           NON COMPRA
+       │                 │
+       ▼                 │
+┌──────────────┐         │
+│  CLIENTE     │    ┌────┴────────────────┐
+│  TAG: buyer  │    │                     │
+│  TAG: cliente│    PARTECIPATO      NO-SHOW
+│  -corso-ccm  │    │                     │
+│  Onboarding  │    ▼                     ▼
+│  + Accesso   │  TAG: partecipato-   TAG: non-
+│  PIXEL:      │  webinar-ccm         presentato-ccm
+│  Purchase    │    │                     │
+│  €397        │    │  Email replay       │  "Mi dispiace"
+└──────────────┘    │  + DM 1:1           │  + link replay
+                    │                     │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+               ┌─────────────────────────────────┐
+               │  STEP 7 — FOLLOW-UP POST-WEBINAR│
+               │                                 │
+               │  TAG: post-webinar-followup      │
+               │  📧 5 email in 5 giorni         │
+               │  📱 DM 1:1 (engagement alto)    │
+               │  📞 Call 15 min (engagement alto)│
+               │  TAG (se prenota): call-prenotata│
+               │  (→ Email Sequence Master)       │
+               └──────┬──────────────┬────────────┘
+                      │              │
+                   COMPRA       NON COMPRA
+                      │              │
+                      ▼              ▼
+               ┌──────────┐  ┌───────────────────┐
+               │ CLIENTE  │  │  STEP 8 — NURTURE │
+               │ (come    │  │  TAG: nurture-     │
+               │ sopra)   │  │  settimanale       │
+               └──────────┘  │  1 email/settimana │
+                             │  Ogni 3-4: invito  │
+                             │  soft al prossimo  │
+                             │  webinar/lancio    │
+                             └───────────────────┘
+
+═══════════════════════════════════════════════════════════════
+
+Lista Pagine da Creare
+#
+Pagina
+URL suggerito
+Obiettivo
+CTA
+P1
+Landing Opt-in
+/framework-icro
+Cattura email
+"Scarica il PDF Gratuito"
+P2
+Upsell Mini-corso
+/offerta-speciale
+Vendita €27
+"Sì, Voglio il Mini-Corso"
+P3
+VSL Evento
+/workshop-ai-builder
+Iscrizione webinar
+"Iscriviti Gratuitamente"
+P4
+Thank You Webinar
+/grazie-webinar
+Conferma + calendario
+"Aggiungi al Calendario"
+P5
+Sales Page Corso
+/claude-code-mastery
+Vendita €397
+"Inizia il Percorso"
+P6
+Checkout
+/checkout (Stripe)
+Pagamento
+"Completa l'Acquisto"
+P7
+Thank You Acquisto
+/benvenuto
+Onboarding
+"Accedi al Corso"
+P8
+Replay Webinar
+/replay
+Recupero no-show
+"Guarda il Replay"
+
+──────────────────────────────────────────────────────
+3. TAG SYSTEM — NAMING CONVENTION COMPLETA
+──────────────────────────────────────────────────────
+Convenzione: [categoria]-[specifico]-[dettaglio] — tutto minuscolo, trattini.
+Tag per Categoria
+Fonte Ingresso
+Tag
+Quando si applica
+Rimuovere
+pdf-framework-icro
+Download lead magnet
+Mai
+
+Acquisti
+Tag
+Quando si applica
+Rimuovere
+buyer
+Primo acquisto qualsiasi (globale)
+Mai
+cliente-minicorso-ccm
+Acquisto mini-corso €27
+Mai
+cliente-corso-ccm
+Acquisto corso €397/€497
+Mai
+
+Posizione Funnel
+Tag
+Quando si applica
+Rimuovere
+iscritto-webinar-ccm
+Iscrizione al webinar
+Mai
+partecipato-webinar-ccm
+Post-webinar (manuale)
+Mai
+visto-replay-ccm
+Ha aperto email replay
+Mai
+non-presentato-ccm
+Era iscritto, non si presenta
+Mai
+
+Engagement
+Tag
+Quando si applica
+Rimuovere
+engagement-alto
+Apre email + risponde WA + compra mini-corso (8-10/10)
+Ricalcola pre-lancio
+engagement-medio
+Apre email OPPURE risponde WA (4-7/10)
+Ricalcola pre-lancio
+engagement-basso
+Non apre, non risponde (1-3/10)
+Ricalcola pre-lancio
+
+Segmento
+Tag
+Quando si applica
+Rimuovere
+webinar-attesa
+Iscritto, in attesa
+Quando il webinar finisce
+post-webinar-followup
+In sequenza follow-up 5 gg
+A fine sequenza
+nurture-settimanale
+Non ha convertito, riceve valore
+Al prossimo lancio (riattiva)
+call-prenotata
+Ha prenotato call 15 min
+Dopo la call
+
+Speciali
+Tag
+Quando si applica
+Rimuovere
+bridge-servizio
+Interesse per Conversion Sprint
+Mai
+testimonial-raccolto
+Ha dato testimonial
+Mai
+
+Mappa Tag nel Funnel
+Opt-in          → + pdf-framework-icro
+Compra upsell   → + buyer, + cliente-minicorso-ccm
+Iscrive webinar → + iscritto-webinar-ccm, + webinar-attesa
+Scoring         → + engagement-[livello]
+Partecipa       → + partecipato-webinar-ccm
+No-show         → + non-presentato-ccm
+Compra corso    → + buyer, + cliente-corso-ccm
+                  - RIMUOVI: webinar-attesa, post-webinar-followup
+Non compra      → + post-webinar-followup
+Fine follow-up  → + nurture-settimanale
+                  - RIMUOVI: post-webinar-followup
+Prenota call    → + call-prenotata
+
+──────────────────────────────────────────────────────
+4. MAPPA AUTOMAZIONI
+──────────────────────────────────────────────────────
+Automazione 1 — Opt-in + Delivery PDF
+TRIGGER: Submit form opt-in (P1)
+├── [Immediato] Aggiungi a lista principale (AC)
+├── [Immediato] TAG: pdf-framework-icro
+├── [Entro 2 min] Email #1: Benvenuto + link PDF
+├── [Immediato] Redirect → P2 (Upsell)
+└── [Immediato] PIXEL: Lead
+
+Automazione 2 — Upsell Mini-corso
+TRIGGER A: Acquisto completato (Stripe webhook)
+├── [Immediato] TAG: buyer + cliente-minicorso-ccm
+├── [Immediato] Email: Ricevuta + link accesso mini-corso
+├── [Immediato] Redirect → Pagina conferma con teaser webinar
+├── [Immediato] PIXEL: Purchase €27
+└── [+24h] Email: link VSL evento (P3)
+
+TRIGGER B: Click "No grazie"
+└── [Immediato] Redirect → P3 (VSL Evento)
+
+Automazione 3 — Iscrizione Webinar
+TRIGGER: Submit form iscrizione webinar (P4)
+├── [Immediato] TAG: iscritto-webinar-ccm + webinar-attesa
+├── [Immediato] Redirect → Thank You Page (P4) + calendario
+├── [Immediato] Start sequenza pre-webinar (→ Email Sequence Master)
+├── [Entro 1h] WhatsApp benvenuto:
+│   "Ciao [Nome] 👋 Ti seguo io per il workshop.
+│   Qual è la sfida principale che stai cercando
+│   di risolvere con l'AI?"
+├── [Entro 24-48h] Task: chiamata consulente
+│   Script: "Conferma iscrizione + Cosa ti ha spinto a iscriverti? → ANNOTA"
+├── [Immediato] PIXEL: WebinarRegistration
+│
+│   REMINDER AUTOMATICI:
+├── [-24h] Email reminder + WhatsApp reminder
+├── [-3h] Email reminder
+├── [-1h] Email + WhatsApp con link Zoom
+└── [-30min] Email ultimo reminder
+
+Automazione 4 — Post-Webinar (3 rami)
+TRIGGER A: Acquisto corso (Stripe webhook)
+├── [Immediato] TAG: buyer + cliente-corso-ccm
+├── [Immediato] RIMUOVI: webinar-attesa, post-webinar-followup
+├── [Immediato] STOP tutte le automazioni follow-up
+├── [Immediato] Email: Onboarding + accesso corso
+├── [Immediato] PIXEL: Purchase €397
+└── [+7gg] Email: "Come sta andando il Modulo 1?"
+
+TRIGGER B: Partecipato + NON comprato (manuale post-webinar)
+├── [Immediato] TAG: partecipato-webinar-ccm + post-webinar-followup
+├── [+1gg] Email: replay + recap offerta
+├── [+1gg] Start sequenza follow-up (5 email in 5 gg → Email Sequence Master)
+└── [+1gg] DM 1:1 personalizzato (solo engagement-alto):
+    "Ciao [Nome], ho visto che eri al workshop.
+    Hai domande su quello che abbiamo visto?
+    Posso offrirti una call di 15 min per parlarne."
+
+TRIGGER C: No-show (manuale post-webinar)
+├── [Immediato] TAG: non-presentato-ccm + post-webinar-followup
+├── [+1gg] Email: "Mi dispiace non averti visto" + link replay
+├── [+1gg] Start sequenza follow-up (5 email in 5 gg)
+└── [+2gg] WhatsApp: "Ciao [Nome], ti sei perso il workshop!
+    Ho registrato tutto. Ecco il replay: [LINK]"
+
+Automazione 5 — Call Gratuita (solo lead caldi)
+TRIGGER: Lead con engagement-alto + non ha comprato + post-webinar
+├── [+2gg] Email: Offerta call gratuita 15 min
+│   "Ciao [Nome], ho un'idea per il tuo caso specifico.
+│   Ti va una call di 15 min? Zero impegno. [LINK CALENDLY]"
+├── [Se prenota] TAG: call-prenotata
+├── [Pre-call] Email reminder con link
+└── [Post-call] Se compra → Automazione 4A
+                Se non compra → Automazione 6
+
+Automazione 6 — Nurture Lungo Termine
+TRIGGER: Fine sequenza follow-up senza acquisto
+├── [Immediato] TAG: nurture-settimanale
+├── [Immediato] RIMUOVI: post-webinar-followup
+├── [Immediato] Start sequenza nurture (1 email/settimana di valore)
+│   Ogni 3-4 email: invito soft al prossimo webinar
+└── Al prossimo lancio: questa lista è il PRIMO pubblico da attivare
+
+Pixel / Tracking Events
+Evento
+Trigger
+Dove
+Valore
+Lead
+Submit form opt-in
+P1 Thank you redirect
+—
+Purchase
+Acquisto mini-corso
+P2 Conferma Stripe
+€27
+WebinarRegistration
+Submit form webinar
+P4 Thank you
+—
+Purchase
+Acquisto corso
+P6 Conferma Stripe
+€397/€497
+
+──────────────────────────────────────────────────────
+5. BRIEF COPY — PER FASE 6
+──────────────────────────────────────────────────────
+5A — Brief per CRO Copy Architect
+Pagina 1: Landing Opt-in (PDF Framework I.C.R.O.)
+BRIEF COPY — LANDING OPT-IN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+POSIZIONE NEL FUNNEL: Step 1 — primo contatto
+OBIETTIVO: Cattura Nome + Email (CR target >30%)
+FRAMEWORK COPY: headline benefit + bullet specifici
+TARGET: Giovani 18-30, usano ChatGPT, non sanno
+        come monetizzare l'AI
+LIVELLO AWARENESS: Problem-Aware
+
+HEADLINE (formula): "Come [risultato] anche se [obiezione]"
+Angolo: Il framework per dare istruzioni perfette a Claude Code
+Obiezione da gestire: "non so programmare"
+
+BULLET (5): ogni bullet = 1 beneficio specifico del PDF.
+NON "Capitolo 3: I comandi" ma "Come dare istruzioni
+in italiano che producono output 10x migliori (pagina 7)"
+
+SOCIAL PROOF: "[N]+ persone l'hanno già scaricato"
+(aggiungere dopo le prime 50-100 iscrizioni)
+
+VINCOLI:
+- ZERO navigazione, ZERO link esterni
+- Solo form: Nome + Email
+- CTA: "Scarica il PDF Gratuito"
+- Mobile-first
+- Caricamento <3 secondi
+
+TONO: Digital Empire Brand Voice — diretto, concreto,
+zero fuffa, urgenza reale (non FOMO artificiale)
+
+Pagina 2: Sales Page Corso (€397)
+BRIEF COPY — SALES PAGE CORSO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+POSIZIONE NEL FUNNEL: Post-webinar (link in CTA webinar
++ email follow-up)
+OBIETTIVO: Vendita €397 (CR target >3% da chi vede la pagina)
+FRAMEWORK COPY: APP-SOC completo
+TARGET: Chi ha partecipato al webinar O visto il replay.
+        Livello awareness: ALTO (sa il problema, conosce
+        la soluzione, valuta se comprare)
+
+SEZIONI OBBLIGATORIE (ordine APP-SOC):
+
+A — ATTENZIONE (hero section):
+  Headline: trasformazione in 1 frase
+  "Da utente ChatGPT a AI Builder con portfolio e clienti.
+  In 6 settimane."
+  Sub: chi è per chi + risultato tangibile
+  VSL embed (rimanda alla VSL vendita sotto)
+
+P — PROBLEMA:
+  Pain point #1: "Non sai quale skill imparare"
+  Pain point #2: "Tutti parlano di AI, nessuno spiega COME"
+  Pain point #4: "Paura di essere rimpiazzato"
+  Usa le frasi esatte del target dalla ricerca.
+  Chiudi con: "E se esistesse una skill che l'AI non può
+  rubarti — perché sei tu a costruire l'AI?"
+
+S — SOLUZIONE + PROMESSA:
+  "Claude Code Mastery è il primo corso italiano che..."
+  Presenta i 4 framework (I.C.R.O., S.K.I.L.L., W.O.R.K., DAN)
+  Mostra il percorso 6 settimane (roadmap visuale)
+  Stack value completo:
+    Corso base (€1.500) + B1 (€197) + B2 (€147) + B3 (€297)
+    + B4 solo lancio (€197) = €2.338
+  Prezzo: €397 (founding members)
+
+O — OBIEZIONI:
+  FAQ section con le 4 obiezioni principali:
+  1. "€397 è troppo" → calcolo ROI
+  2. "Non so programmare" → Claude scrive il codice per te
+  3. "Il corso diventerà obsoleto" → framework + aggiornamenti
+  4. "Chi sei tu?" → demo + contenuti gratuiti come proof
+
+C — CTA:
+  "Inizia il Percorso — €397" (link a Stripe checkout)
+  + "Garanzia Builder o Rimborsato — 30 giorni"
+  + Rate: "oppure 2 rate da €199"
+
+ELEMENTI EXTRA:
+  - Sezione "Per chi è / Per chi NON è"
+  - Sezione "Cosa ottieni" (lista moduli + template + bonus)
+  - Social proof: testimonial beta (quando disponibili)
+  - Timer countdown (se urgenza basata su data)
+  - Posti limitati: "Founding Members: [N] posti rimasti su [N]"
+
+TONO: Brand Voice + urgenza reale + proof by doing
+
+Pagina 3: Upsell Mini-corso (€27)
+BRIEF COPY — PAGINA UPSELL
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+POSIZIONE: Step 2 — immediatamente dopo opt-in
+OBIETTIVO: Vendita mini-corso €27 (CR target >5%)
+AWARENESS: Appena entrato — ha scaricato il PDF ma
+           non l'ha ancora letto
+
+MESSAGGIO TOP: "Il tuo PDF sta arrivando nella tua
+casella email entro 5 minuti."
+
+POSIZIONAMENTO: "Il PDF è la mappa. Questo mini-corso
+è il navigatore guidato — in 1 ora costruisci i tuoi
+primi 3 agenti AI, passo dopo passo."
+
+VSL: 3-5 min (→ vedi Brief VSL sotto)
+
+BULLET (4):
+1. Beneficio applicazione pratica
+2. Beneficio step-by-step
+3. Beneficio errori da evitare
+4. Beneficio template extra
+
+CTA: "Sì, Voglio il Mini-Corso — €27"
+DECLINE: "No grazie, voglio solo il PDF" (link visibile)
+
+Pagina 4: VSL Evento / Webinar
+BRIEF COPY — PAGINA VSL EVENTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+POSIZIONE: Step 3 — dopo upsell (comprato o no)
+OBIETTIVO: Iscrizione webinar (CR target >15%)
+AWARENESS: Ha il PDF. Forse ha il mini-corso. Conosce
+           Claude Code a livello base.
+
+HEADLINE: "Come Diventare AI Builder in 6 Settimane
+— Workshop Gratuito Live"
+Formula: "Come [risultato] in [tempo] anche se [obiezione]"
+
+VSL: 8-12 min (→ vedi Brief VSL sotto)
+
+SALES PAGE SOTTO LA VSL (per chi non guarda il video):
+- Per chi è (3 profili: studente, freelancer, dipendente insoddisfatto)
+- Cosa imparerai (3-5 punti — non spoilerare tutto il webinar)
+- Data + Ora + Durata
+- "Bonus: chi partecipa live riceve [X]" (incentivo show rate)
+- CTA: "Iscriviti Gratuitamente"
+
+FORM: Nome + Email + Telefono (obbligatorio)
+Testo sopra form: "Posti limitati a [N] partecipanti"
+
+5B — Brief per Webinar Script Master
+BRIEF WEBINAR — PER WEBINAR SCRIPT MASTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRODOTTO: Claude Code Mastery — €397 (Lancio 1)
+DURATA: 90-120 minuti
+FORMATO: Live su Zoom, registrato per replay
+TIPO: Demo-first (il target compra perché VEDE FARE)
+
+LIVELLO AWARENESS PARTECIPANTI:
+Alto — hanno scaricato il PDF, forse comprato il mini-corso,
+ricevuto 3-7 email, forse parlato al telefono/WhatsApp.
+Non partire da zero.
+
+STRUTTURA CONSIGLIATA (dal report ricerca):
+- Il webinar DEVE essere una demo live, non slide.
+- Il target di Andrei Pascu compra perché vede qualcuno FARE.
+- Mostra Claude Code in azione: costruisci qualcosa in tempo reale.
+
+3 STORIE (richieste dal Funnel Completo):
+1. La TUA storia: da utente ChatGPT a AI Builder
+2. Lo studente ideale (avatar): il percorso che farà nel corso
+3. Il caso studio: un progetto costruito con Claude Code
+   (es: Content System che produce 30 post in 12 minuti)
+
+PITCH:
+- Stack value: €2.338
+- Anchor B (Alternativa) → Anchor A (Stack) → Anchor C (ROI)
+- Prezzo: €397 (founding members)
+- Bonus urgenza: sessione 1:1 per chi acquista entro 7 giorni
+- Garanzia: "Builder o Rimborsato" 30 giorni
+- Posti limitati: [N] founding members
+- Rate: 2 × €199
+
+OBIEZIONI DA GESTIRE NEL Q&A:
+1. "Non so programmare" → demo live lo dimostra
+2. "€397 è troppo" → ROI calcolo (1 cliente = €500+)
+3. "Claude Code cambia" → framework permanenti + aggiornamenti
+4. "Posso imparare da solo" → 6 mesi vs 6 settimane
+
+DATI DAL REPORT RICERCA:
+- Pain point top: "Non so quale skill imparare" (score 125)
+- Obiezione top: "€497+ è troppo, ci sono gratis su YT" (score 25)
+- Leva emotiva più forte: "La skill che l'AI non può rubarti"
+- Proof più forte: DEMO LIVE (non testimonial — non ne abbiamo)
+
+──────────────────────────────────────────────────────
+6. TRIGGER MAP EMAIL — PER FASE 7
+──────────────────────────────────────────────────────
+Per Email Sequence Master
+TRIGGER MAP EMAIL — CLAUDE CODE MASTERY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SEQUENZA 1 — INDOTTRINAMENTO POST OPT-IN (3 email)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Trigger: TAG pdf-framework-icro applicato
+Condizione: NON ha iscritto-webinar-ccm
+Obiettivo: Educare + spingere verso iscrizione webinar
+
+Email 1.1 | +0 min  | Benvenuto + PDF + "chi sono"
+Email 1.2 | +1 gg   | Valore: "Il concetto #1 del PDF che cambia tutto"
+Email 1.3 | +2 gg   | Invito al webinar + link P3
+
+Se dopo Email 1.3 non iscrive al webinar:
+→ TAG: nurture-settimanale → Sequenza Nurture
+
+SEQUENZA 2 — PRE-WEBINAR (5-7 email)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Trigger: TAG iscritto-webinar-ccm applicato
+Obiettivo: Massimizzare show rate (target >30%)
+Parallelo: WhatsApp + Chiamate consulente
+
+Email 2.1 | +0 min  | Conferma iscrizione + data/ora + "salva in calendario"
+Email 2.2 | +1 gg   | Contenuto valore: "Cosa vedremo + perché è diverso"
+Email 2.3 | +2 gg   | Storia: "Come ho scoperto questa skill"
+Email 2.4 | +3 gg   | Social proof / anticipazione: "Ecco cosa costruiremo live"
+Email 2.5 | -24h    | Reminder: "Domani ci vediamo. Preparati."
+Email 2.6 | -3h     | Reminder: "Tra 3 ore si inizia"
+Email 2.7 | -1h     | Ultimo reminder + link Zoom
+
+SEQUENZA 3 — POST-WEBINAR PARTECIPANTI (5 email in 5 gg)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Trigger: TAG partecipato-webinar-ccm + NON ha cliente-corso-ccm
+Condizione EXIT: se acquista → STOP immediato
+Obiettivo: Conversione (target >5% dei partecipanti)
+
+Email 3.1 | +1 gg   | Replay + recap offerta + link sales page
+Email 3.2 | +2 gg   | Gestione obiezione #1 (prezzo) + calcolo ROI
+Email 3.3 | +3 gg   | Gestione obiezione #3 (obsolescenza) + framework permanenti
+Email 3.4 | +4 gg   | Caso studio / demo supplementare + urgenza (posti)
+Email 3.5 | +5 gg   | Ultima chiamata + countdown + scadenza founding members
+
+SEQUENZA 4 — POST-WEBINAR NO-SHOW (5 email in 5 gg)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Trigger: TAG non-presentato-ccm + NON ha cliente-corso-ccm
+Condizione EXIT: se acquista → STOP immediato
+Obiettivo: Far guardare il replay → poi conversione
+
+Email 4.1 | +1 gg   | "Mi dispiace non averti visto" + link replay
+Email 4.2 | +2 gg   | "Ecco il momento più importante del workshop" + timestamp
+Email 4.3 | +3 gg   | Gestione obiezione + link replay + link sales page
+Email 4.4 | +4 gg   | Caso studio / risultato concreto
+Email 4.5 | +5 gg   | Ultima chiamata + "il replay scade tra 24h"
+
+SEQUENZA 5 — ONBOARDING ACQUIRENTI (3 email)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Trigger: TAG cliente-corso-ccm applicato
+Obiettivo: Attivazione + completamento Modulo 0+1
+
+Email 5.1 | +0 min  | Accesso confermato + link Modulo 1 + roadmap 6 settimane
+Email 5.2 | +3 gg   | "Come sta andando il Modulo 0? Ecco un tip per il Modulo 1"
+Email 5.3 | +7 gg   | "Hai completato il primo esercizio? Condividilo nella community"
+
+SEQUENZA 6 — NURTURE LUNGO TERMINE (loop settimanale)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Trigger: TAG nurture-settimanale applicato
+Obiettivo: Mantenere relazione + riattivare al prossimo lancio
+
+1 email/settimana: puro valore (tutorial, tip, insight su AI)
+Ogni 3-4 email: invito soft ("Ho fatto una nuova demo — guardala qui")
+Al prossimo lancio: questa lista è il PRIMO pubblico da attivare
+
+Tabella Riepilogativa
+Seq
+Nome
+# Email
+Trigger
+Obiettivo
+S1
+Indottrinamento
+3
+Opt-in PDF
+Iscrivere al webinar
+S2
+Pre-webinar
+5-7
+Iscrizione webinar
+Show rate >30%
+S3
+Follow-up partecipanti
+5
+Partecipato + non comprato
+Conversione
+S4
+Follow-up no-show
+5
+No-show
+Replay → Conversione
+S5
+Onboarding
+3
+Acquisto corso
+Attivazione studente
+S6
+Nurture
+Loop
+Non ha convertito
+Relazione + riattivazione
+TOTALE
+
+
+~24-26 email
+
+
+
+
+
+──────────────────────────────────────────────────────
+7. BRIEF VSL — PER FASE 6
+──────────────────────────────────────────────────────
+Per VSL Script Builder
+VSL 1 — Mini-corso Upsell (Step 2)
+BRIEF VSL — UPSELL MINI-CORSO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+POSIZIONE: Step 2 — dopo opt-in, prima di VSL evento
+DURATA: 3-5 minuti
+SCOPO: Vendere il mini-corso "3 Agenti AI in 1 Ora" a €27
+TARGET: Appena iscritto. Non ha ancora letto il PDF.
+        Awareness: bassa-media. Sa che l'AI è importante
+        ma non sa ancora cosa può fare con Claude Code.
+
+STRUTTURA:
+0:00-0:30 — HOOK: "Il PDF che stai per leggere ti dà
+            il framework. Ma c'è un modo per accelerare
+            tutto — e costruire i tuoi primi 3 agenti AI
+            in meno di 1 ora."
+0:30-1:30 — PROBLEMA: "Il PDF ti mostra il COSA.
+            Ma il COME richiede che tu ci provi da solo,
+            facendo errori, cercando su Google, perdendo ore.
+            Il mini-corso elimina quel gap."
+1:30-3:00 — SOLUZIONE: "In 1 ora, con me che ti guido
+            passo per passo sullo schermo, costruisci
+            3 agenti funzionanti. Agente 1: [X].
+            Agente 2: [Y]. Agente 3: [Z]."
+3:00-4:00 — OFFERTA: "Il mini-corso costa €27. Meno
+            di una pizza. Includi: 3 video, 1 template,
+            1 esercizio guidato."
+4:00-4:30 — CTA: "Clicca il bottone qui sotto.
+            Il tuo PDF è già nella tua casella.
+            Il mini-corso è il tuo acceleratore."
+
+TONO: Entusiasmo contenuto. Non vendita aggressiva.
+"Ti offro un'opzione per andare più veloce."
+Il "no grazie" deve essere facile e visibile.
+
+VSL 2 — Evento / Webinar (Step 3)
+BRIEF VSL — EVENTO / WEBINAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+POSIZIONE: Step 3 — dopo upsell (comprato o no)
+DURATA: 8-12 minuti
+SCOPO: Convincere il lead a iscriversi al webinar live
+TARGET: Ha il PDF (forse il mini-corso). Sa che Claude Code
+        è potente ma non sa ancora come trasformarlo in skill
+        vendibile.
+        Awareness: media.
+
+STRUTTURA:
+0:00-2:00 — COSA VEDRAI: "In questo workshop gratuito
+            ti mostro LIVE come costruire un sistema AI
+            completo con Claude Code — dal primo comando
+            al primo cliente. Non slide. Demo reale."
+2:00-5:00 — PERCHÉ È DIVERSO: "Non è un altro webinar
+            dove ti spiego la teoria dell'AI. In 90 minuti
+            mi vedi costruire un sistema che in Italia
+            nessuno ti ha mai mostrato. 4 framework che
+            non esistono altrove. E alla fine ti porto
+            dal 'capisco l'AI' al 'so costruire e vendere
+            sistemi AI'."
+5:00-8:00 — CHI SONO + CREDIBILITÀ: "Mi chiamo [Nome].
+            Gestisco Digital Empire, un'agenzia CRO.
+            Ho costruito [N] Skill personalizzate che
+            mi fanno risparmiare [N] ore a settimana.
+            [Mostra screen recording veloce — 30 sec max
+            — di Claude Code che produce qualcosa di
+            visivamente impressionante]"
+8:00-10:00 — CASO STUDIO: "Guarda: questo è il Content
+             System che ho costruito. Input: 1 idea in 2
+             righe. Output: 1 articolo + 5 post + 1
+             newsletter. Tempo: 12 minuti. Prima? 3 ore.
+             Al workshop ti mostro come l'ho fatto."
+10:00-12:00 — CTA: "Il workshop è gratuito. [Data] alle
+              [ora]. Posti limitati a [N] partecipanti.
+              Iscriviti adesso — sotto il video c'è il form.
+              Nome, email, telefono. Ci vediamo live."
+
+TONO: Autorevolezza + concretezza. Mostra, non raccontare.
+Ogni affermazione è accompagnata da un visual o una demo.
+Zero hype. Zero promesse vaghe.
+
+──────────────────────────────────────────────────────
+CHECKLIST PRE-LANCIO
+──────────────────────────────────────────────────────
+ARCHITETTURA
+□ Tipo funnel coerente con prezzo (Completo per €397-497)
+□ Ogni pagina ha 1 obiettivo e 1 CTA
+□ Biforcazioni definite e mappate
+□ Piano B per chi non converte a ogni step (nurture)
+
+LANDING OPT-IN
+□ Headline con beneficio + obiezione gestita
+□ 5 bullet specifici
+□ Mockup PDF professionale
+□ Form: Nome + Email (no telefono a questo step)
+□ CTA: "Scarica il PDF Gratuito"
+□ Zero navigazione, zero link esterni
+□ Mobile responsive, <3 secondi
+
+UPSELL
+□ "Il tuo PDF sta arrivando" visibile in alto
+□ VSL 3-5 min funzionante
+□ "No grazie" visibile (non nascosto)
+□ Checkout fluido (Stripe, 1 pagina)
+
+VSL EVENTO
+□ VSL 8-12 min funzionante
+□ Sales page lunga sotto
+□ Data + Ora + Durata visibili
+□ CTA almeno 2 volte nella pagina
+
+FORM WEBINAR
+□ Nome + Email + Telefono (obbligatorio)
+□ Scarcity legittima
+
+TAG SYSTEM
+□ Ogni step ha il suo tag
+□ Convenzione [categoria]-[specifico] rispettata
+□ Tag buyer globale configurato
+□ Segmenti configurati in ActiveCampaign
+
+AUTOMAZIONI
+□ Email benvenuto parte entro 2 min
+□ PDF scaricabile dal link
+□ Tag si applicano a ogni azione
+□ Sequenza pre-webinar attiva
+□ WhatsApp parte entro 1h dall'iscrizione
+□ Task chiamata consulente si crea
+□ Reminder: -24h, -3h, -1h, -30min
+□ Sequenza post-webinar pronta
+
+PIXEL / TRACKING
+□ Lead → opt-in
+□ Purchase → mini-corso
+□ WebinarRegistration → iscrizione
+□ Purchase → corso
+□ UTM funzionanti su ogni link
+
+EXTRA COMPLETO
+□ Chiamate consulente configurate
+□ WhatsApp attivo con template pronti
+□ Script chiamata pronto
+□ Cal.com per call 15 min configurato
+□ Template DM 1:1 pronti
+
+TEST END-TO-END (3 percorsi)
+□ Opt-in → Compra upsell → Iscrive → Email → Link Zoom → ✓
+□ Opt-in → NON compra → Iscrive → Email → Link Zoom → ✓
+□ Opt-in → NON compra → NON iscrive → Nurture → ✓
+
+🚨 RED FLAGS — Se presente, NON lanciare
+❌ Link rotto nel funnel
+❌ Tag non si applica
+❌ Email non parte o parte doppia
+❌ Checkout con errore
+❌ Pixel non traccia
+❌ Pagina >5 sec su mobile
+❌ Email benvenuto non consegna PDF
+
+──────────────────────────────────────────────────────
+RIEPILOGO DELIVERABLE PER SPRINT PRODUZIONE
+──────────────────────────────────────────────────────
+FASE 6 — COPY FUNNEL (→ CRO Copy Architect + VSL Script Builder)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Ordine di produzione:
+1. Sales page corso €397 (framework APP-SOC) ← Brief 5A
+2. Landing page opt-in ← Brief 5A
+3. VSL mini-corso 3-5 min ← Brief 7, VSL 1
+4. VSL evento 8-12 min ← Brief 7, VSL 2
+5. Webinar script 90-120 min ← Brief 5B (→ Webinar Script Master)
+6. Pagina upsell + checkout copy ← Brief 5A
+7. Thank you pages + conferme ← Brief 5A
+
+FASE 7 — SEQUENZE EMAIL (→ Email Sequence Master)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Input: Trigger Map (Sezione 6 di questo documento)
+Sequenze da scrivere:
+S1. Indottrinamento post opt-in (3 email)
+S2. Pre-webinar (5-7 email)
+S3. Follow-up partecipanti (5 email)
+S4. Follow-up no-show (5 email)
+S5. Onboarding acquirenti (3 email)
+S6. Nurture lungo termine (template loop)
+Totale: ~24-26 email
+
+FASE 8 — CONTENUTO PRE-LANCIO (→ YouTube + Short-Form + Social)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Da definire con YouTube Script Factory + Short-Form Script Engine.
+Minimo raccomandato (dal report ricerca):
+- 3 video YouTube (demo Claude Code in azione)
+- 9+ short-form TikTok/IG
+- Lead magnet PDF Framework I.C.R.O. pronto
+- Bridge page dedicata
+Timeline: almeno 4-6 settimane prima dell'apertura vendite
+
+
+
+
+
+FASE 6 — COPY FUNNEL
+Progetto: ⚡P1  Agency Operations
+
+Skill:   CRO Copy Architect
+          VSL Script Builder
+          Webinar Script Master
+
+Ordine di scrittura:
+1. Sales page (framework APSPOC)
+2. Landing page opt-in
+3. VSL mini-corso (3-5 min)
+4. VSL evento (8-12 min)
+5. Webinar script (framework Webinar Milionario System)
+6. Thank you page + checkout copy
+01 sales page apspoc
+
+# ═══════════════════════════════════════════════════════════════
+# DELIVERABLE #1 — SALES PAGE APSPOC
+# ═══════════════════════════════════════════════════════════════
+# CLAUDE CODE MASTERY — FASE 6 COPY FUNNEL
+# ═══════════════════════════════════════════════════════════════
+ 
+## HEADER OUTPUT
+ 
+CLIENT: Digital Empire (prodotto proprio)
+FORMATO: Sales page lunga
+FRAMEWORK USATO: APP-SOC completo
+FASE PROCESSO: 6 — Implementazione & Copy
+DATA: 29/03/2026
+LIVELLO CONSAPEVOLEZZA: Solution-Aware / Product-Aware (post-webinar)
+POSIZIONE FUNNEL: Post-webinar (link in CTA webinar + email follow-up)
+APPROCCIO PERSUASIONE: Bilanciato (storytelling per emozione + DR per logica)
+DATI RICERCA: Sì — pain points mappati, obiezioni scored, TOV estratto, competitor analizzati
+METRICA OBIETTIVO: CR >3% da chi vede la pagina post-webinar
+PAIN EXPRESSION: Esplicito (il target ammette apertamente di non sapere quale skill imparare e di sentirsi tagliato fuori dall'AI)
+ 
+---
+ 
+# ═══════════════════════════════════════════════════════════════
+# SEZIONE A: ATTENZIONE — HERO SECTION (ABOVE THE FOLD)
+# ═══════════════════════════════════════════════════════════════
+ 
+## COPY:
+ 
+**[SUPER-HEADLINE — piccola, sopra la headline principale]**
+Il primo corso italiano su Claude Code che ti insegna a costruire sistemi AI — e a vendere questa competenza come servizio.
+ 
+**[HEADLINE H1]**
+Da utente ChatGPT a AI Builder con portfolio e clienti.
+In 6 settimane.
+ 
+**[SUB-HEADLINE]**
+Per chi vuole trasformare l'AI nella propria skill più vendibile — anche se non sa programmare e non ha mai costruito nulla di tecnico.
+ 
+**[EMBED VSL O VIDEO DEMO]**
+[Qui si inserisce la VSL vendita — 8-12 min oppure replay del webinar editato]
+ 
+**[MICRO-CTA ABOVE THE FOLD]**
+[ Inizia il Percorso — €397 →]
+Garanzia "Builder o Rimborsato" — 30 giorni. Zero rischio.
+ 
+---
+ 
+**PERCHÉ QUESTA SCELTA:**
+- Strategia headline: FORMULA 4 — Prima/Dopo ("Da X a Y") + timeframe specifico. Il target post-webinar ha già visto la demo — ora vuole sapere il percorso concreto.
+- Angolo: trasformazione identitaria ("utente" → "builder"). Non vendiamo un corso — vendiamo un nuovo ruolo professionale.
+- Pain point esplicito: il target ammette di "non sapere quale skill imparare" (score 125). La headline risponde direttamente: ecco la skill, ecco il percorso, ecco il timeframe.
+- "anche se non sa programmare" nella sub-headline gestisce l'obiezione #4 prima che si formi.
+- Super-headline posiziona come UNICO nel mercato italiano — differenziatore #1 dal report ricerca.
+- Micro-CTA per chi è già convinto dal webinar e vuole agire subito.
+ 
+**VARIANTI HEADLINE A/B:**
+ 
+| # | Variante | Strategia | Angolo |
+|---|----------|-----------|--------|
+| H1 | Da utente ChatGPT a AI Builder con portfolio e clienti. In 6 settimane. | Prima/Dopo + timeframe | Trasformazione identitaria |
+| H2 | La skill che l'AI non può rubarti — perché sei tu a costruire l'AI. | Provocazione + USP | Paura rimpiazzamento (pain #4) |
+| H3 | 4 framework. 3 progetti. 1 competenza vendibile. Zero codice. | Numeri + curiosità | Concretezza + obiezione programmazione |
+ 
+**RACCOMANDAZIONE:** Testa H1 vs H2. H1 è più diretta e specifica (Formula 4 — Prima/Dopo), ideale per traffico post-webinar che sa già cosa offri. H2 è più emotiva e provocatoria, ideale se il traffico è più freddo (es: ads dirette alla sales page).
+ 
+ 
+# ═══════════════════════════════════════════════════════════════
+# SEZIONE "PER CHI È" (bridge hero → problema)
+# ═══════════════════════════════════════════════════════════════
+ 
+## COPY:
+ 
+**Questo percorso è per te se:**
+ 
+→ Sai che l'AI è il futuro, ma non sai da dove iniziare concretamente
+→ Hai usato ChatGPT ma ti sei fermato a "e poi?"
+→ Non sai programmare e pensi che questo ti tagli fuori
+→ Vuoi una competenza vendibile — non un altro corso da mettere nel cassetto
+→ Sei stanco di sentire parlare di AI senza che nessuno ti spieghi COME monetizzarla
+ 
+**Non è per te se:**
+ 
+→ Sei già un developer esperto che cerca un corso avanzato di programmazione
+→ Vuoi un trucchetto per "fare soldi facili con l'AI" senza lavorare
+→ Non sei disposto a dedicare 3-5 ore a settimana per 6 settimane
+ 
+---
+ 
+**PERCHÉ QUESTA SCELTA:**
+- Posizionata subito dopo l'hero per auto-qualificazione immediata. Chi arriva dal webinar si riconosce nei bullet.
+- Ogni bullet "per te se" corrisponde a un pain point dalla ricerca: "non so da dove iniziare" (pain #1), "mi sono fermato dopo ChatGPT", "non so programmare" (pain #3), "voglio una skill vendibile", "nessuno spiega COME" (pain #2).
+- La sezione "non è per te" paradossalmente aumenta la fiducia (pattern: commitment & consistency). Dimostra che non stai vendendo a chiunque.
+- Brand Voice: frasi brevi, "tu" diretto, zero buzzword, orientato all'azione.
+ 
+ 
+# ═══════════════════════════════════════════════════════════════
+# SEZIONE P: PROBLEMA — AMPLIFICAZIONE PAIN POINT
+# ═══════════════════════════════════════════════════════════════
+ 
+## COPY:
+ 
+**Il problema non è l'AI. Il problema è che tutti ne parlano e nessuno ti dice cosa FARE.**
+ 
+Apri LinkedIn: "L'AI cambierà tutto." Apri TikTok: "Impara l'AI o resterai indietro." Apri YouTube: "10 tool AI che devi conoscere."
+ 
+E tu? Tu hai provato ChatGPT. Hai generato qualche testo. Hai fatto qualche domanda. E poi ti sei fermato. Perché tra "usare ChatGPT" e "avere una competenza vendibile" c'è un canyon.
+ 
+E quel canyon non lo chiudi guardando tutorial.
+ 
+Ecco cosa succede davvero:
+ 
+**Il costo di non avere una skill AI concreta:**
+→ Guardi i creator che monetizzano l'AI e pensi "come fanno?"
+→ Compri corsi generici che ti insegnano 15 tool diversi — ma non a costruire nulla
+→ Provi a usare l'AI per lavoro ma i risultati sono mediocri, inconsistenti, non vendibili
+→ Il tempo passa. La finestra si chiude. Chi impara adesso si posiziona. Chi aspetta rincorre.
+ 
+Il vero problema non è che non sai usare l'AI.
+Il vero problema è che nessuno ti ha insegnato a COSTRUIRE CON l'AI.
+ 
+C'è una differenza enorme tra chiedere qualcosa a ChatGPT e costruire un sistema che lavora per te — un sistema che puoi mostrare a un cliente e fargli pagare €500-800.
+ 
+Quella differenza ha un nome: Claude Code.
+E quel ponte — da utente a builder — ha un percorso: questo.
+ 
+---
+ 
+**PERCHÉ QUESTA SCELTA:**
+- Tecnica: Agitazione a 3 livelli (Situazione → Conseguenze → Emozione).
+- LIVELLO 1 (situazione): descrivo la realtà quotidiana del target — bombardato da contenuti AI ma senza direzione. Uso il linguaggio esatto dalla ricerca: "e poi?", "come fanno?".
+- LIVELLO 2 (conseguenze): 4 bullet con conseguenze concrete — non astratte. Ognuna corrisponde a un pain point mappato. Il bullet "chi impara adesso si posiziona" attiva loss aversion (pattern persuasione).
+- LIVELLO 3 (emozione): il ponte logico — il problema non è l'AI, è che nessuno insegna a COSTRUIRE. Questo posiziona la soluzione come inevitabile.
+- Pain point esplicito: il target ammette apertamente di "non sapere quale skill imparare" e di sentirsi "tagliato fuori". Lo dico con le loro parole.
+- Il bridge "Quella differenza ha un nome: Claude Code" è la transizione naturale verso la sezione Soluzione.
+- Brand Voice: diretto (prima frase = già il punto), conversazionale ("E tu?"), specifico (€500-800), anti-fuffa (niente "sblocca il tuo potenziale").
+ 
+ 
+# ═══════════════════════════════════════════════════════════════
+# SEZIONE P: PROMESSA / SOLUZIONE
+# ═══════════════════════════════════════════════════════════════
+ 
+## COPY:
+ 
+**Claude Code Mastery è il percorso che ti porta da "uso ChatGPT per fare domande" a "costruisco sistemi AI e li vendo come servizio."**
+ 
+Non è un altro corso che ti mostra 20 tool. Non è teoria sull'intelligenza artificiale. Non è un tutorial da guardare e dimenticare.
+ 
+È un percorso di 6 settimane dove costruisci — con le tue mani, sul tuo computer, con progetti reali.
+ 
+**Ecco come funziona:**
+ 
+**Settimana 1-2 → FONDAMENTA**
+Installi Claude Code (ti guido io, step by step — zero codice necessario). Impari a dare istruzioni strutturate con il framework I.C.R.O. (Identità — Contesto — Regole — Output). Dopo 2 settimane: Claude Code fa quello che gli dici, ogni volta, con output prevedibili.
+ 
+**Settimana 3 → SISTEMI**
+Crei le tue prime Skill personalizzate con il framework S.K.I.L.L. (Scopo — Knowledge — Istruzioni — Limiti — Layout). Una Skill trasforma Claude Code da generalista a specialista per un task specifico. Ne costruisci 5. Poi le colleghi in workflow automatizzati con il framework W.O.R.K.
+ 
+**Settimana 4-5 → PORTFOLIO**
+Costruisci 3 progetti reali che diventano il tuo portfolio vendibile:
+→ Un Content System che produce 1 articolo + 5 post + 1 newsletter in 12 minuti
+→ Un sistema di Analisi Competitor che genera report professionali in 10 minuti invece di 6 ore
+→ Un sistema di Automazione Business che processa lead in 2 minuti invece di 15
+ 
+**Settimana 6 → MONETIZZAZIONE**
+Definisci la tua offerta con pricing. Crei il portfolio online in 1 ora. Identifichi 10 prospect qualificati. Scrivi e invii i primi messaggi di outreach con il framework DAN (Dimostrazione — Angolo — Next step). Prepari lo script per la prima call.
+ 
+**Cosa NON è questo corso:**
+→ Non è un corso di programmazione (Claude Code scrive il codice — tu scrivi istruzioni in italiano)
+→ Non è una raccolta di tutorial (è un percorso sequenziale con esercizi e output concreti)
+→ Non è teoria sull'AI (al termine hai 3 progetti funzionanti, non appunti)
+ 
+---
+ 
+**PERCHÉ QUESTA SCELTA:**
+- Struttura: IL PONTE (transizione) → LA SOLUZIONE (processo in 4 fasi) → DIFFERENZIAZIONE (cosa NON è).
+- Il ponte apre con una frase che riprende esattamente il gap descritto nella sezione Problema: "da uso ChatGPT a costruisco sistemi AI".
+- Il processo è presentato come timeline settimana per settimana — il target vede esattamente cosa succede e quando. Questo riduce l'ansia da "non so cosa aspettarmi".
+- I 4 framework proprietari (I.C.R.O., S.K.I.L.L., W.O.R.K., DAN) sono espansi con acronimi. Questo è il differenziatore #2 — nessun competitor li ha.
+- I 3 progetti portfolio hanno risultati specifici (12 minuti, 10 minuti, 2 minuti) — non vaghi. Brand Voice: specifico batte generico.
+- La sezione "Cosa NON è" gestisce preventivamente 3 obiezioni: "è per programmatori" (no), "è un tutorial" (no), "è teoria" (no). Ogni negazione corrisponde a un'obiezione mappata.
+- Storytelling + DR bilanciati: la timeline settimanale è DR (logica, step concreti). I risultati dei progetti sono DR (numeri specifici). Il "costruisci con le tue mani" è storytelling (emozione, ownership).
+ 
+ 
+# ═══════════════════════════════════════════════════════════════
+# SEZIONE "COSA OTTIENI" — STACK VALUE
+# ═══════════════════════════════════════════════════════════════
+ 
+## COPY:
+ 
+**Ecco tutto quello che ricevi dentro Claude Code Mastery:**
+ 
+**IL PERCORSO COMPLETO**
+✅ 6 moduli + Modulo 0 (Setup) — 21 lezioni, ~11 ore tra video ed esercizi
+✅ 4 framework proprietari che non trovi altrove:
+  → I.C.R.O. — per dare istruzioni perfette a Claude Code
+  → S.K.I.L.L. — per creare Skill professionali riutilizzabili
+  → W.O.R.K. — per progettare workflow multi-step
+  → DAN — per contattare i tuoi primi clienti
+✅ 18 template scaricabili con esempi compilati (non template vuoti — compilati)
+✅ 7 esercizi guidati con criteri di autovalutazione
+✅ 3 progetti portfolio completi — costruiti da te, pronti da mostrare
+✅ Roadmap 6 settimane con ritmo consigliato
+✅ Aggiornamenti a vita — quando Claude Code cambia, il corso si aggiorna
+ 
+Valore: €1.500
+ 
+**BONUS 1 — Libreria 15 Skill Pronte All'Uso**
+15 file SKILL.md pre-compilati per 4 categorie (Content, Analisi, Business, Produttività). Li apri e funzionano. Li personalizzi per il tuo settore. Ti risparmi 20+ ore di lavoro.
+ 
+Valore: €197
+ 
+**BONUS 2 — Kit Portfolio "Pronto in 1 Ora"**
+Template Notion duplicabile con struttura 3C (Competenza — Case Study — Contatto). 3 case study pre-strutturati da personalizzare. Template proposta commerciale per il primo cliente.
+ 
+Valore: €147
+ 
+**BONUS 3 — Community Privata + 1 Call di Gruppo al Mese (3 mesi)**
+Accesso alla community per domande, feedback e networking con altri builder. 1 call live al mese: Q&A sui tuoi casi specifici. Supporto entro 24-48h sui blocchi tecnici.
+ 
+Valore: €297
+ 
+**🔒 BONUS 4 — Solo per chi entra nei primi 7 giorni**
+**Sessione Strategica 1:1 (30 minuti)**
+30 minuti con me per impostare il tuo percorso: quale settore targetizzare, quali Skill creare per prime, come posizionare la tua offerta. Dopo i 7 giorni, questo bonus sparisce. Per sempre.
+ 
+Valore: €197
+ 
+---
+ 
+**PERCHÉ QUESTA SCELTA:**
+- Lo stack value segue l'ordine: prodotto base (con espansione dei 4 framework) → 4 bonus in ordine di importanza decrescente.
+- Ogni bonus ha: cosa ottieni (specifico), perché ti serve (beneficio), valore economico.
+- I framework sono espansi con acronimi — sono il differenziatore principale. Il target li ha già sentiti nel webinar, qui li rivede come conferma.
+- "Template compilati, non vuoti" — gestisce l'obiezione implicita "i template dei corsi sono sempre vuoti e inutili".
+- "Aggiornamenti a vita" — gestisce obiezione #3 (obsolescenza).
+- Bonus 4 con scadenza 7 giorni — urgenza REALE (non fake). È il driver di urgenza principale del lancio.
+- Pattern: Anchoring. Ogni componente ha un valore attribuito, il totale si somma prima di rivelare il prezzo.
+ 
+ 
+# ═══════════════════════════════════════════════════════════════
+# SEZIONE S: SOCIAL PROOF
+# ═══════════════════════════════════════════════════════════════
+ 
+## COPY:
+ 
+**⚠️ NOTA: Sezione da aggiornare post-beta test con testimonial reali.**
+ 
+**[Versione Lancio 1 — senza testimonial]**
+ 
+**Cosa puoi verificare adesso:**
+ 
+→ **I framework li hai già visti funzionare.** Se hai scaricato il PDF I.C.R.O. e hai provato a scrivere il tuo primo CLAUDE.md — hai visto la differenza. Il corso ti porta dal Modulo 1 (quello che hai provato gratis) ai Moduli 2-5 (Skill, workflow, portfolio, clienti).
+ 
+→ **La demo l'hai vista con i tuoi occhi.** Nel workshop hai visto Claude Code costruire un sistema in tempo reale. Non slide — demo. Quello che hai visto è il Modulo 3 del corso. Dentro ci sono anche i Moduli 4 e 5 dove lo fai tu e impari a venderlo.
+ 
+→ **I numeri parlano da soli.** Il Content System che hai visto produce 1 articolo + 5 post + 1 newsletter in 12 minuti. L'analisi competitor in 10 minuti invece di 6 ore. Il lead processing in 2 minuti invece di 15. Questi non sono numeri teorici — li hai visti girare.
+ 
+**[Placeholder per Lancio 2+]**
+→ Qui andranno 3-5 testimonial con struttura: "Ero scettico perché [obiezione]. Poi [cosa è successo]. Risultato: [metrica specifica]."
+→ Loghi / numeri aggregati: "[N] studenti hanno completato il percorso"
+ 
+---
+ 
+**PERCHÉ QUESTA SCELTA:**
+- Lancio 1 = zero testimonial. Non possiamo inventarne. La scelta strategica è usare il proof che abbiamo: il lead magnet (che il target ha già usato), la demo live del webinar (che ha visto), e i numeri dei progetti (che ha visto funzionare).
+- Ogni bullet richiama un'esperienza che il target ha GIÀ AVUTO con noi — questo è più forte di un testimonial generico perché è la SUA esperienza.
+- La struttura "verificabile adesso" è DR pura — non chiediamo di fidarsi, chiediamo di ricordare quello che ha visto.
+- Post-beta: aggiornare con testimonial reali seguendo il pattern indicato nel placeholder.
+ 
+ 
+# ═══════════════════════════════════════════════════════════════
+# SEZIONE — L'INVESTIMENTO (PRICING)
+# ═══════════════════════════════════════════════════════════════
+ 
+## COPY:
+ 
+**Facciamo i conti.**
+ 
+L'alternativa è imparare da solo. Ci vogliono 6 mesi minimo. 78 ore di tutorial in inglese, documentazione da decifrare, tentativi che non funzionano, Skill che vanno riscritte 5 volte.
+ 
+Il costo? Almeno €1.500 di tempo perso. E alla fine di quei 6 mesi, sai costruire qualcosa — ma non sai ancora come venderlo.
+ 
+Oppure: 6 settimane guidate. 4 framework. 18 template. 3 progetti nel portfolio. E un sistema per trovare clienti dal primo mese.
+ 
+**Il valore totale di tutto quello che ricevi:**
+ 
+| Componente | Valore |
+|---|---|
+| Percorso completo (6 moduli, 21 lezioni, 4 framework, 18 template) | €1.500 |
+| Bonus 1 — Libreria 15 Skill | €197 |
+| Bonus 2 — Kit Portfolio | €147 |
+| Bonus 3 — Community + Call mensili (3 mesi) | €297 |
+| Bonus 4 — Sessione 1:1 (solo primi 7 giorni) | €197 |
+| **TOTALE** | **€2.338** |
+ 
+**Ma il prezzo non è €2.338.**
+Non è €997.
+Non è €697.
+ 
+**Il prezzo per i Founding Members è €397.**
+ 
+[ Inizia il Percorso — €397 → ]
+ 
+Oppure 2 rate da €199.
+ 
+---
+ 
+**Il calcolo che conta:**
+ 
+Se con questo corso trovi anche solo 1 cliente da €500 (e il Modulo 5 ti insegna esattamente come), il corso si è ripagato e ti restano €103.
+ 
+Ma il punto non è 1 cliente.
+Il punto è che hai una competenza che vale €500-800 per ogni singolo progetto. Ogni mese. Per i prossimi 5-10 anni.
+ 
+€397 per una skill che non scade.
+ 
+---
+ 
+**PERCHÉ QUESTA SCELTA:**
+- Ordine anchor: B (Alternativa — costo del non comprare) → A (Valore Totale — stack) → C (ROI — calcolo ritorno). Questo ordine è definito nel Pricing Strategy.
+- Anchor B apre con "facciamo i conti" — Brand Voice: diretto, specifico, anti-fuffa. Il confronto 6 mesi vs 6 settimane è il più forte perché il target sa che è vero.
+- La tabella stack value è DR pura — numeri, componenti, totale. Nessuna emozione qui, solo logica.
+- Il reveal del prezzo segue il pattern classico: valore alto → eliminazione progressiva → prezzo reale. Funziona perché il target ha appena visto €2.338 e la mente si ancora a quel numero.
+- Il calcolo ROI (1 cliente = €500, corso ripagato) è la giustificazione logica. La frase finale "una skill che non scade" è la chiusura emotiva. Bilanciato ST/DR.
+- Rate da €199 — rimuove l'obiezione di cassa per il target giovane con budget limitato.
+ 
+ 
+# ═══════════════════════════════════════════════════════════════
+# SEZIONE O: OBIEZIONI (FAQ)
+# ═══════════════════════════════════════════════════════════════
+ 
+## COPY:
+ 
+**Domande che probabilmente ti stai facendo**
+ 
+**"€397 è troppo — ci sono tutorial gratis su YouTube."**
+ 
+I tutorial gratuiti ti insegnano un comando alla volta. Non ti danno un sistema. Non ti insegnano a creare Skill riutilizzabili. Non ti costruiscono un portfolio. E soprattutto — nessun tutorial ti insegna come VENDERE questa competenza.
+ 
+Il corso ha 4 framework proprietari che non esistono altrove, 18 template pronti all'uso e un intero modulo dedicato a trovare i primi clienti. Se 1 solo cliente (da €500+) ripaga l'investimento — qual è il vero costo di NON farlo?
+ 
+---
+ 
+**"Non so programmare. Non è per me."**
+ 
+Claude Code scrive il codice per te. Tu scrivi istruzioni in italiano — come dare un brief a un collaboratore.
+ 
+Nel Modulo 0 vedi l'installazione passo per passo (su Mac e Windows). Il primo output lo produci in 10 minuti. Se sai scrivere un messaggio, sai usare Claude Code. Punto.
+ 
+---
+ 
+**"Claude Code cambia ogni mese — il corso diventerà obsoleto."**
+ 
+I comandi possono cambiare. I 4 framework no.
+ 
+I.C.R.O. ti insegna a strutturare istruzioni. S.K.I.L.L. ti insegna a creare sistemi riutilizzabili. W.O.R.K. ti insegna a progettare workflow. DAN ti insegna a vendere. Questi funzionano indipendentemente dalla versione di Claude Code.
+ 
+E comunque: gli aggiornamenti sono inclusi. Quando qualcosa cambia, il corso si aggiorna. Già incluso nel prezzo.
+ 
+---
+ 
+**"Chi sei tu? Non ti conosco."**
+ 
+Giusta domanda. Gestisco Digital Empire, un'agenzia CRO (ottimizzazione conversioni). Ho costruito l'intero sistema operativo dell'agenzia su Claude Code — Skill personalizzate, workflow automatizzati, sistemi di produzione contenuti.
+ 
+Non sono un "guru dell'AI". Sono una persona che usa Claude Code ogni giorno per costruire cose reali e che ha sistematizzato quel metodo in 4 framework insegnabili.
+ 
+La prova? Il framework I.C.R.O. lo hai già testato con il PDF gratuito. La demo l'hai vista al workshop. Giudica dai risultati, non dal nome.
+ 
+---
+ 
+**"Claude Code è gratuito? Costa?"**
+ 
+Claude Code richiede un account Anthropic con credito API. Il costo medio per un uso regolare è circa €20-50 al mese. Il corso ti insegna anche a ottimizzare i costi.
+ 
+---
+ 
+**"Quanto tempo serve per completare il corso?"**
+ 
+Il percorso è pensato per 6 settimane, con 3-5 ore a settimana. Puoi andare più veloce o più lento — hai accesso illimitato.
+ 
+---
+ 
+**"Posso davvero trovare clienti con questa competenza?"**
+ 
+Il Modulo 5 è interamente dedicato a questo. Non è una lezione generica su "come vendere". Esci con: un'offerta definita con pricing, un portfolio online con 3 progetti, 10 prospect identificati, 3 messaggi di outreach inviati, e lo script per la prima call.
+ 
+È un sistema che esegui, non teoria che leggi.
+ 
+---
+ 
+**PERCHÉ QUESTA SCELTA:**
+- 7 FAQ ordinate per importanza (dalla ricerca: obiezione #1 prezzo score 25, poi competenza tecnica, obsolescenza, credibilità).
+- Ogni FAQ segue il framework CPB (Claim-Proof-Benefit) della skill CRO Copy Architect:
+ - Claim: affermazione che smonta l'obiezione
+ - Proof: dato, esempio, logica che supporta
+ - Benefit: cosa ci guadagna il lettore
+- FAQ "€397 è troppo" → chiusa con ROI flip ("qual è il costo di NON farlo?"). Pattern: loss aversion.
+- FAQ "Non so programmare" → chiusa con "Punto." — Brand Voice: autorevole, diretto, nessun hedge language.
+- FAQ "Chi sei tu?" → gestita con onestà ("non sono un guru") + prova verificabile (PDF + workshop). Questo è l'approccio più forte con zero brand awareness.
+- La FAQ finale sulla monetizzazione chiude con specificità estrema (5 deliverable concreti) — questa è la FAQ che converte chi esita.
+ 
+ 
+# ═══════════════════════════════════════════════════════════════
+# SEZIONE — GARANZIA
+# ═══════════════════════════════════════════════════════════════
+ 
+## COPY:
+ 
+**Garanzia "Builder o Rimborsato" — 30 giorni**
+ 
+Segui il corso per 30 giorni. Completa i primi 4 moduli. Se dopo aver costruito le tue Skill e il tuo primo workflow non senti che questa è la skill giusta per te — ti rimborso tutto con una email. Nessuna domanda. Nessuna procedura.
+ 
+Perché lo faccio? Perché se non funziona per te, non voglio i tuoi soldi. Il mio obiettivo è creare AI Builder che portano risultati — non collezionare pagamenti.
+ 
+Manda un'email. Rimborso entro 48 ore.
+ 
+---
+ 
+**PERCHÉ QUESTA SCELTA:**
+- Nome memorabile: "Builder o Rimborsato" — riprende l'identità del corso (AI Builder).
+- Condizione specifica: "Completa i primi 4 moduli." — non è una garanzia incondizionata (riduce il rischio di refund opportunistici) ma è ragionevole.
+- Il "Perché lo faccio?" aggiunge un livello di autenticità — il target giovane è allergico alle garanzie che "suonano troppo belle".
+- Brand Voice: diretto ("Manda un'email. Rimborso entro 48 ore."), zero fuffa, zero legalese.
+ 
+ 
+# ═══════════════════════════════════════════════════════════════
+# SEZIONE C: CTA FINALE
+# ═══════════════════════════════════════════════════════════════
+ 
+## COPY:
+ 
+**Hai due opzioni.**
+ 
+Opzione A: Chiudi questa pagina. Torni alla tua routine. Continui a guardare tutorial. Tra 6 mesi sei esattamente dove sei oggi — con qualche tool in più che non sai come vendere.
+ 
+Opzione B: Entri in Claude Code Mastery. Tra 6 settimane hai 3 progetti nel portfolio, un'offerta definita, e i primi prospect contattati. Hai una competenza che vale €500-800 per ogni progetto. E una skill che l'AI non può rubarti — perché sei tu a costruire l'AI.
+ 
+**[ Inizia il Percorso — €397 → ]**
+ 
+Oppure 2 rate da €199.
+ 
+Garanzia "Builder o Rimborsato" — 30 giorni.
+Posti Founding Members limitati a [N].
+ 
+---
+ 
+**[ULTIMO ELEMENTO — urgenza reale]**
+ 
+⏰ Il Bonus 4 (Sessione Strategica 1:1) è disponibile solo per chi entra nei primi 7 giorni.
+Dopo, sparisce. Per sempre.
+ 
+---
+ 
+**PERCHÉ QUESTA SCELTA:**
+- Struttura "2 opzioni" — pattern commitment & consistency. Presentare le alternative rende la scelta esplicita. Opzione A = perdita (loss aversion). Opzione B = trasformazione.
+- La CTA ripete lo stesso bottone dell'hero ("Inizia il Percorso — €397") — stessa azione, framing diverso. Qui il framing è post-obiezioni: il lettore ha avuto risposta a tutti i dubbi.
+- Rate + garanzia sotto il bottone — riduttori di friction per chi esita.
+- Urgenza finale = Bonus 4 con deadline. È reale (dal Pricing Strategy: "deve sparire davvero"). Non è fake scarcity.
+- "Posti Founding Members limitati a [N]" — scarcity reale se il numero è effettivamente limitato.
+ 
+ 
+# ═══════════════════════════════════════════════════════════════
+# SEZIONE — FOOTER TRUST
+# ═══════════════════════════════════════════════════════════════
+ 
+## COPY:
+ 
+Digital Empire
+[email di supporto]
+P.IVA [numero]
+Privacy Policy | Termini e Condizioni
+ 
+---
+ 
+ 
+# ═══════════════════════════════════════════════════════════════
+# FOOTER OUTPUT — AUDIT E VARIANTI
+# ═══════════════════════════════════════════════════════════════
+ 
+## VARIANTI HEADLINE (3)
+ 
+| # | Variante | Strategia | Angolo | Dato ricerca |
+|---|----------|-----------|--------|-------------|
+| H1 | Da utente ChatGPT a AI Builder con portfolio e clienti. In 6 settimane. | Prima/Dopo + timeframe | Trasformazione identitaria | Pain #1: "non so quale skill" (score 125) |
+| H2 | La skill che l'AI non può rubarti — perché sei tu a costruire l'AI. | Provocazione + USP | Paura rimpiazzamento + differenziatore | Pain #4: "paura di essere rimpiazzato" |
+| H3 | 4 framework. 3 progetti. 1 competenza vendibile. Zero codice. | Numeri + curiosità | Concretezza + obiezione programmazione | Obiezione #4 + differenziatore #2 |
+ 
+## VARIANTI CTA (3)
+ 
+| # | Variante | Focus |
+|---|----------|-------|
+| C1 | Inizia il Percorso — €397 | Beneficio (percorso = trasformazione) |
+| C2 | Diventa AI Builder — €397 | Identità (il ruolo, non il corso) |
+| C3 | Costruisci la Tua Skill — €397 | De-risk (skill = asset che rimane tuo) |
+ 
+## SUGGERIMENTI A/B TEST
+ 
+| Test | Cosa testare | Ipotesi | Metrica | Durata min |
+|---|---|---|---|---|
+| 1 | Headline H1 vs H2 | H1 (specifica) converte meglio con traffico post-webinar; H2 (emotiva) meglio con traffico freddo | CR pagina | 500 visitatori/variante |
+| 2 | CTA C1 vs C2 | C2 (identità) potrebbe avere CTR superiore perché il target aspira a un RUOLO, non a un corso | CTR bottone | 300 click/variante |
+| 3 | Con Bonus 4 countdown vs Senza | L'urgenza reale (sessione 1:1) aumenta il CR senza danneggiare la percezione del brand | CR + refund rate | 7 giorni |
+ 
+## AUDIT SCORE
+ 
+| Area | Score | Note |
+|---|---|---|
+| A — Attenzione | 9/10 | Headline specifica, sub-headline con obiezione, micro-CTA. Manca solo visual anchor (dipende da produzione). |
+| P — Problema | 9/10 | 3 livelli di agitazione, linguaggio target, bridge naturale. Forte. |
+| P — Promessa | 10/10 | Timeline specifica, 4 framework espansi, 3 progetti con numeri, sezione "cosa NON è". Completa. |
+| S — Social Proof | 5/10 | Debole per assenza testimonial. Compensata con proof esperienziale (PDF, demo, numeri). Da aggiornare post-beta. |
+| O — Obiezioni | 9/10 | 7 FAQ, tutte con CPB. Coprono le 4 obiezioni principali + 3 FAQ pratiche. |
+| C — CTA | 9/10 | Pattern 2 opzioni, urgenza reale, riduttori friction. Rate incluse. |
+| **TOTALE** | **34/40** | ✅ Sopra la soglia minima (28/40). Area critica: social proof — priorità post-beta. |
+ 
+## CHECK OBIEZIONI GENERATE
+ 
+| Obiezione potenziale | Gestita? | Dove |
+|---|---|---|
+| "€397 è troppo per un target giovane" | ✅ | FAQ #1 + ROI + rate |
+| "Non so programmare" | ✅ | Sub-headline + FAQ #2 + sezione "Per chi è" |
+| "Il corso diventerà obsoleto" | ✅ | FAQ #3 + "aggiornamenti a vita" nello stack |
+| "Non ti conosco" | ✅ | FAQ #4 + proof esperienziale |
+| "Come faccio a sapere se funziona senza testimonial?" | ✅ | Social proof esperienziale (PDF + demo + numeri) |
+| "Devo pagare anche Claude Code (API)?" | ✅ | FAQ #5 |
+| "Ho poco tempo" | ✅ | FAQ #6 + "3-5 ore/settimana" + sezione "Per chi è" |
+| "Posso davvero trovare clienti?" | ✅ | FAQ #7 con 5 deliverable specifici |
+ 
+→ ✅ Tutte le obiezioni identificate sono gestite nel copy.
+ 
+## BILANCIAMENTO STORYTELLING / DIRECT RESPONSE
+ 
+| Sezione | ST | DR | Equilibrio |
+|---|---|---|---|
+| Hero | 20% | 80% | ✅ DR dominante — giusto per post-webinar |
+| Problema | 60% | 40% | ✅ ST per emozione, DR per conseguenze |
+| Soluzione | 30% | 70% | ✅ Timeline è DR, "costruisci con le tue mani" è ST |
+| Stack Value | 5% | 95% | ✅ DR puro — numeri e componenti |
+| Pricing | 40% | 60% | ✅ Bilanciato — anchor (DR) + "skill che non scade" (ST) |
+| FAQ | 10% | 90% | ✅ DR dominante — CPB framework |
+| CTA finale | 50% | 50% | ✅ Bilanciato — 2 opzioni (ST) + rate/garanzia (DR) |
+ 
+→ ✅ Bilanciamento complessivo: 30% ST / 70% DR — coerente con target post-webinar (alto awareness, serve più logica che emozione).
+ 
+## DIPENDENZE E NOTE
+ 
+**Da produrre prima di pubblicare:**
+- [ ] VSL vendita (8-12 min) da embeddare nell'hero — Deliverable #4
+- [ ] Visual: mockup corso, screenshot framework, roadmap grafica
+- [ ] [N] posti Founding Members: definire numero reale
+- [ ] URL checkout Stripe con integrazione ActiveCampaign
+- [ ] Privacy policy e Termini e Condizioni
+- [ ] Post-beta: inserire 3-5 testimonial reali nella sezione Social Proof
+ 
+**Elementi dal brief rispettati:**
+- ✅ Framework APP-SOC completo
+- ✅ Headline con trasformazione
+- ✅ Pain points dalla ricerca con frasi esatte
+- ✅ 4 framework proprietari espansi
+- ✅ Stack value €2.338 con anchor pricing
+- ✅ 4 obiezioni principali gestite + 3 FAQ pratiche
+- ✅ Garanzia "Builder o Rimborsato" 30 giorni
+- ✅ CTA con rate e urgenza reale (Bonus 4)
+- ✅ Sezione "Per chi è / Per chi NON è"
+- ✅ Brand Voice Digital Empire applicata: diretto, conversazionale, specifico, anti-fuffa
+ 
+**Nota per Fase 7 (Email Sequence Master):**
+Le email follow-up post-webinar (Sequenza 3 e 4) devono avere message match con questa sales page. In particolare: l'email #2 gestisce obiezione prezzo (stesso angolo FAQ #1), l'email #3 gestisce obsolescenza (stesso angolo FAQ #3).
+
+
+Sequenze email per Cloud Codemasters
+
+MAPPING TRIGGER MAP → SEQUENZE EMAIL
+TRIGGER MAP FASE 5              →  SEQUENZE EMAIL MASTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+S1 Indottrinamento (3 email)  ─┐
+                                ├→ SEQUENZA 1: PRE-LANCIO
+S2 Pre-webinar (7 email)      ─┘   (10 email totali)
+
+S3 Post-webinar partecip. (5) ─┐
+                                ├→ SEQUENZA 2: LANCIO LIVE
+S4 Post-webinar no-show (5)   ─┘   (10 email, 2 rami)
+
+Fine S3/S4 senza acquisto     ──→ SEQUENZA 3: FOLLOW-UP
+                                   NON ACQUIRENTI (3 email)
+
+S5 Onboarding (3 email)       ──→ SEQUENZA 4: ONBOARDING
+                                   ACQUIRENTI (3 email)
+
+S6 Nurture (loop)             ──→ BONUS: template loop
+PANORAMICA COMPLETA — TUTTE LE SEQUENZE
+SeqNome# EmailTrigger ACCondizione EXITObiettivo1AIndottrinamento3TAG: pdf-framework-icroSe iscrive al webinar → STOP, passa a 1BEducare + iscrivere al webinar1BPre-webinar7TAG: iscritto-webinar-ccmWebinar completatoShow rate >30%2APost-webinar (partecipanti)5TAG: partecipato-webinar-ccm + NON cliente-corso-ccmSe acquista → STOPConversione2BPost-webinar (no-show)5TAG: non-presentato-ccm + NON cliente-corso-ccmSe acquista → STOPReplay → Conversione3Follow-up non acquirenti3Fine Seq 2A/2B senza acquisto—Nurture + waitlist prossimo lancio4Onboarding acquirenti3TAG: cliente-corso-ccm—Attivazione + completamento Mod 0-1
+Piattaforma: ActiveCampaign
+Prodotto: Claude Code Mastery — €397 (Founding Members) | Early bird €297 (48h)
+Lead Magnet: PDF "Il Framework I.C.R.O."
+
+SEQUENZA 1A — INDOTTRINAMENTO POST OPT-IN (3 email)
+Trigger: TAG pdf-framework-icro applicato
+Condizione: NON ha TAG iscritto-webinar-ccm
+Obiettivo: Educare + costruire credibilità + spingere verso iscrizione webinar
+EXIT: Se si iscrive al webinar → STOP questa sequenza, parte Sequenza 1B
+Panoramica Sequenza 1A
+EmailTimingOggettoScopoTagIND-1+0 minEcco il tuo PDF (e una cosa importante)Delivery PDF + chi sono + aspettativaindottrinamento:benvenutoIND-2+1 giornoIl concetto del PDF che cambia tuttoValore puro: il principio #1 di I.C.R.O.indottrinamento:valoreIND-3+2 giorniHo qualcosa di gratuito per te (live)Invito al webinarindottrinamento:invito-webinar
+
+EMAIL IND-1 — Delivery + Chi Sono
+Oggetto: Ecco il tuo PDF (e una cosa importante)
+Oggetto B (test): Il PDF è qui — leggilo prima di stasera
+[Nome],
+
+Il tuo PDF "Il Framework I.C.R.O." è qui:
+👉 [LINK DOWNLOAD PDF]
+
+12 pagine. Un framework. Zero fuffa.
+
+Dopo averlo letto saprai dare istruzioni a Claude Code
+che producono output 10 volte migliori di un prompt generico.
+Ma non leggerlo "quando hai tempo" — leggilo oggi.
+
+Due cose su di me, così sai chi ti scrive.
+
+Mi chiamo [Nome]. Gestisco Digital Empire, un'agenzia
+di ottimizzazione conversioni. Ho costruito l'intero sistema
+operativo dell'agenzia su Claude Code: Skill personalizzate,
+workflow automatizzati, sistemi che producono in 12 minuti
+quello che prima richiedeva 3 ore.
+
+Non sono un guru dell'AI. Sono una persona che usa Claude Code
+ogni giorno per costruire cose reali — e che ha trasformato
+quel metodo in qualcosa di insegnabile.
+
+Quello che troverai in questa lista:
+- 1 email di valore ogni 2-3 giorni (niente spam)
+- Strategie concrete su Claude Code che non trovi nei tutorial
+- Zero pitch aggressivi
+
+Inizia dal PDF. Domani ti mando il concetto #1 che cambia tutto.
+
+[Nome]
+
+PS: Rispondimi con una riga — qual è la cosa che vorresti
+automatizzare per prima con l'AI? Ti rispondo personalmente.
+CTA: Link download PDF
+Tag: indottrinamento:benvenuto (se apre)
+
+EMAIL IND-2 — Il Concetto Chiave
+Oggetto: Il concetto del PDF che cambia tutto
+Oggetto B (test): Hai letto pagina 5? Ecco perché conta
+[Nome],
+
+Se hai letto il PDF, hai visto il framework I.C.R.O.
+(Identità — Contesto — Regole — Output).
+
+C'è un concetto lì dentro che vale più di tutti gli altri.
+
+È questo: Claude Code non è un chatbot.
+È un sistema che configuri.
+
+La differenza è come scrivere un messaggio a qualcuno
+vs scrivere un manuale operativo per un collaboratore.
+
+Il messaggio funziona una volta.
+Il manuale funziona ogni volta.
+
+Quando scrivi un CLAUDE.md con il framework I.C.R.O.,
+stai scrivendo quel manuale. Claude Code lo legge,
+lo interiorizza, e da quel momento produce output
+coerenti, prevedibili, di qualità — ogni volta che lo usi.
+
+La maggior parte delle persone scrive prompt sempre
+più lunghi sperando in risultati migliori.
+
+Il problema non è la lunghezza. È la struttura.
+
+Un CLAUDE.md di 30 righe ben strutturato batte
+un prompt di 500 parole — ogni singola volta.
+
+Se non l'hai ancora fatto: apri il PDF, vai a pagina 5,
+e compila il template. Ci metti 10 minuti.
+Poi torna qui e dimmi cosa è cambiato nell'output.
+
+[Nome]
+
+PS: Domani ti mando qualcosa di gratuito che porta
+questo concetto al livello successivo. Tieni d'occhio la casella.
+CTA: Nessuna CTA (email di puro valore)
+Tag: indottrinamento:valore (se apre)
+
+EMAIL IND-3 — Invito al Webinar
+Oggetto: Ho qualcosa di gratuito per te (live)
+Oggetto B (test): [Data]: ti mostro tutto in diretta
+[Nome],
+
+Il PDF ti ha dato il framework I.C.R.O.
+Sai come dare istruzioni strutturate a Claude Code.
+
+Ma ecco la domanda che mi fanno tutti dopo:
+
+"Ok, funziona. E adesso? Come faccio a creare
+SISTEMI riutilizzabili? Come trasformo questo
+in qualcosa di vendibile?"
+
+Ho la risposta. E te la mostro gratis — live.
+
+Il [DATA] alle [ORA] tengo un workshop gratuito:
+
+"Come Diventare AI Builder in 6 Settimane"
+
+Non è un webinar con slide. È una demo live.
+
+Mi vedi costruire un sistema AI completo con Claude Code
+in tempo reale — dal primo comando al risultato finale.
+Niente teoria. Niente slide. Solo costruzione.
+
+Cosa vedrai:
+1. Come creare Skill personalizzate (sistemi riutilizzabili)
+2. Come collegare più Skill in un workflow automatizzato
+3. Come trasformare tutto questo in una competenza vendibile
+
+Durata: 90-120 minuti + Q&A.
+Replay disponibile per 48 ore.
+
+Iscriviti qui: [LINK ISCRIZIONE WEBINAR]
+
+[Nome]
+
+PS: Se hai già provato a usare il framework I.C.R.O.
+e hai visto la differenza — quello che mostro al workshop
+è il livello successivo. Lo stesso salto, moltiplicato per 10.
+CTA: Iscriviti al Workshop Gratuito →
+Tag: indottrinamento:invito-webinar (se clicca)
+Automazione: Se si iscrive → TAG iscritto-webinar-ccm → STOP Sequenza 1A → START Sequenza 1B
+
+SEQUENZA 1B — PRE-WEBINAR (7 email)
+Trigger: TAG iscritto-webinar-ccm applicato
+Obiettivo: Massimizzare show rate (target >30%)
+Parallelo: WhatsApp benvenuto (+1h), chiamata consulente (+24-48h)
+EXIT: Webinar completato → rami 2A o 2B
+Panoramica Sequenza 1B
+EmailTimingOggettoScopoTagPRE-1+0 minConfermato — segna questa dataConferma + calendario + aspettativaprewebinar:confermatoPRE-2+1 giornoCosa vedremo (e perché è diverso)Contenuto valore + anticipazioneprewebinar:anticipazionePRE-3+2 giorniCome ho scoperto questa skillStoria personale PRIMA→CLICK→DOPOprewebinar:storiaPRE-4+3 giorniEcco cosa costruiremo liveAnticipazione demo + social proofprewebinar:demo-previewPRE-5-24hDomani ci vediamo — preparatiReminder + preparazioneprewebinar:reminder-24hPRE-6-3hTra 3 ore si iniziaReminder urgenteprewebinar:reminder-3hPRE-7-1hIl link Zoom è qui — ci vediamo tra pocoUltimo reminder + linkprewebinar:reminder-1h
+
+EMAIL PRE-1 — Conferma Iscrizione
+Oggetto: Confermato — segna questa data
+[Nome],
+
+Sei dentro. Il workshop è confermato.
+
+📅 Data: [DATA]
+⏰ Ora: [ORA]
+📍 Dove: Zoom (il link lo ricevi 1 ora prima)
+⏱ Durata: 90-120 minuti + Q&A
+
+Aggiungilo al calendario adesso: [LINK CALENDARIO]
+
+Cosa aspettarti:
+Non è un webinar con slide. Mi vedrai costruire
+un sistema AI completo con Claude Code — in tempo reale,
+sul mio schermo. Tu guardi, prendi nota, e al Q&A
+mi fai tutte le domande che vuoi.
+
+Come prepararti:
+Se non l'hai ancora fatto, leggi il PDF "Il Framework I.C.R.O."
+che hai scaricato. Il workshop parte da lì e va molto oltre.
+
+A [DATA].
+
+[Nome]
+
+PS: Se hai già letto il PDF e provato a scrivere
+il tuo primo CLAUDE.md — portalo al workshop.
+Ti mostro come trasformarlo in qualcosa di 10x più potente.
+CTA: Aggiungi al Calendario →
+Tag: prewebinar:confermato
+
+EMAIL PRE-2 — Anticipazione Contenuto
+Oggetto: Cosa vedremo (e perché è diverso da tutto il resto)
+[Nome],
+
+Ti dico subito cosa NON vedrai al workshop di [GIORNO]:
+
+❌ Slide con definizioni di AI
+❌ Lista di 20 tool da provare
+❌ Teoria su "il futuro del lavoro"
+
+Ecco cosa vedrai:
+
+Me. Claude Code aperto. Un progetto da zero.
+
+In 90 minuti costruisco un sistema che prende
+1 idea scritta in 2 righe e produce:
+→ 1 articolo blog
+→ 5 post social
+→ 1 newsletter
+
+Tempo: 12 minuti. Non 3 ore. 12 minuti.
+
+E non è magia — è metodo. 4 framework specifici
+che ho sviluppato e che non trovi in nessun tutorial.
+
+Ma la parte che ti interessa di più è la fine:
+ti mostro come questa competenza diventa un servizio
+vendibile a €500-800 per progetto.
+
+Quello è il salto che nessuno ti ha mai mostrato.
+
+[GIORNO], [ORA]. Zoom. Sii puntuale — inizio in orario.
+
+[Nome]
+CTA: Nessuna CTA (email di anticipazione)
+Tag: prewebinar:anticipazione
+
+EMAIL PRE-3 — Storia Personale
+Oggetto: Come ho scoperto la skill che non scade
+[Nome],
+
+Un anno fa facevo la stessa cosa che probabilmente fai tu:
+usavo ChatGPT per scrivere cose. Copia, incolla, aggiusta a mano.
+
+Il risultato? Mediocre. Inconsistente.
+Ogni volta ripartivo da zero.
+
+Poi ho scoperto Claude Code. E la prima cosa che ho pensato
+è stata: "Questo è per programmatori. Non fa per me."
+
+Mi sbagliavo.
+
+Claude Code non richiede di scrivere codice.
+Richiede di scrivere istruzioni. In italiano.
+
+Il momento in cui tutto è cambiato: ho scritto il mio primo
+file CLAUDE.md — 30 righe di istruzioni strutturate.
+Da quel momento, Claude Code sapeva chi era, cosa doveva fare,
+e come produrre l'output.
+
+Non era più un chatbot. Era un collaboratore configurato.
+
+In 3 mesi ho costruito l'intero sistema operativo della mia
+agenzia su Claude Code. Skill personalizzate per ogni task.
+Workflow che collegano 3-4 Skill in sequenza. Agenti specializzati
+che collaborano su progetti complessi.
+
+Tempo risparmiato: ore. Ogni giorno.
+
+Al workshop di [GIORNO] ti mostro esattamente come funziona.
+Non la teoria — la pratica. Sullo schermo. In tempo reale.
+
+[Nome]
+
+PS: Se "non so programmare" è il motivo per cui esiti —
+al workshop vedrai che scrivo tutto in italiano.
+Zero codice. Solo istruzioni strutturate.
+CTA: Nessuna CTA
+Tag: prewebinar:storia
+
+EMAIL PRE-4 — Preview Demo
+Oggetto: Ecco cosa costruiremo live [GIORNO]
+[Nome],
+
+Tra [N] giorni ci vediamo al workshop.
+
+Ti anticipo quello che vedrai sullo schermo:
+
+DEMO 1 — Il Content System (minuto ~20)
+Input: 1 idea in 2 righe.
+Output: 1 articolo + 5 post + 1 newsletter.
+Tempo: 12 minuti.
+Vedrai le 4 Skill che lo compongono e come lavorano insieme.
+
+DEMO 2 — Da zero a Skill funzionante (minuto ~50)
+Costruisco una Skill da zero — davanti a te.
+Vedrai il framework S.K.I.L.L. in azione.
+5 sezioni, 10 minuti, una Skill che funziona
+ogni volta che la attivi.
+
+DEMO 3 — Come si vende tutto questo (minuto ~80)
+Ti mostro come un progetto come il Content System
+diventa un servizio vendibile a €500-800.
+Portfolio, offerta, primo messaggio al cliente.
+Non teoria — template e struttura pronti.
+
+Se hai già letto il PDF I.C.R.O. e provato il framework,
+il workshop è il passo successivo naturale.
+
+Dal "dare istruzioni perfette" al "costruire sistemi
+e venderli come servizio."
+
+[GIORNO], [ORA]. Non mancare.
+
+[Nome]
+CTA: Nessuna CTA
+Tag: prewebinar:demo-preview
+
+EMAIL PRE-5 — Reminder -24h
+Oggetto: Domani ci vediamo — preparati
+[Nome],
+
+Domani, [ORA].
+
+Workshop: "Come Diventare AI Builder in 6 Settimane"
+
+3 cose da fare prima di domani:
+
+1. Rileggi il PDF I.C.R.O. (anche solo le pagine 5-9)
+2. Prepara una domanda che vuoi farmi durante il Q&A
+3. Tieni il computer a portata di mano — potresti voler
+   provare qualcosa in tempo reale mentre mostro
+
+Il link Zoom lo ricevi 1 ora prima dell'inizio.
+
+A domani.
+
+[Nome]
+
+PS: Chi partecipa live avrà accesso al replay per 48 ore.
+Ma il Q&A è solo per chi c'è in diretta.
+CTA: Nessuna CTA
+Tag: prewebinar:reminder-24h
+
+EMAIL PRE-6 — Reminder -3h
+Oggetto: Tra 3 ore si inizia
+[Nome],
+
+Tra 3 ore: workshop live.
+
+📅 Oggi, [ORA]
+📍 Zoom — il link arriva tra 2 ore
+⏱ 90-120 min + Q&A
+
+Inizio in orario. Se arrivi tardi perdi la prima demo
+(Content System — la più impressionante).
+
+A tra poco.
+
+[Nome]
+CTA: Nessuna CTA
+Tag: prewebinar:reminder-3h
+
+EMAIL PRE-7 — Reminder -1h + Link
+Oggetto: Il link Zoom è qui — ci vediamo tra poco
+[Nome],
+
+Tra 1 ora iniziamo.
+
+Il link Zoom è qui: [LINK ZOOM]
+
+Clicca qualche minuto prima dell'inizio per testare
+audio e video.
+
+Preparati a prendere appunti — oggi costruisco
+davanti a te. Niente slide.
+
+A subito.
+
+[Nome]
+CTA: Entra nel Workshop → [LINK ZOOM]
+Tag: prewebinar:reminder-1h
+
+CHECKLIST QUALITÀ — PARTE 1
+SEQUENZA 1A (Indottrinamento):
+☑ Email IND-1 include link PDF funzionante
+☑ Nessuna email contiene pitch di vendita
+☑ Email IND-3 contiene CTA verso iscrizione webinar
+☑ EXIT condition: se iscrive al webinar → STOP
+
+SEQUENZA 1B (Pre-webinar):
+☑ Email PRE-1 include data/ora/link calendario
+☑ Le email costruiscono anticipazione progressiva
+☑ Almeno 1 storia personale (PRE-3)
+☑ Almeno 1 preview concreto del contenuto (PRE-4)
+☑ Reminder a -24h, -3h, -1h con link Zoom nell'ultima
+☑ Nessuna email supera le 250 parole
+☑ Frequenza: max 1/giorno (tranne giorno webinar: 2)
+☑ Tono: Digital Empire Brand Voice rispettato
+
+
+FASE 7 — SEQUENZE EMAIL
+Progetto: ⚡P1  Agency Operations
+
+Skill:    Email Sequence Master
+
+▸ Input: trigger map dal Launch Funnel Architect
+▸ Sequenza 1: Pre-lancio waitlist (5-7 email)
+▸ Sequenza 2: Lancio live (7-10 email)
+▸ Sequenza 3: Follow-up non acquirenti
+▸ Sequenza 4: Onboarding acquirenti
+
+
+
+FASE 8 — CONTENUTO PRE-LANCIO
+═══════════════════════════════════════════════════════════════
+FASE 8 — CONTENUTO PRE-LANCIO
+CLAUDE CODE MASTERY (CCM) — €397 Founding Members
+Digital Empire | 02/04/2026
+═══════════════════════════════════════════════════════════════
+PANORAMICA STRATEGICA
+Prodotto: Claude Code Mastery — corso 6 settimane, 6 moduli + Mod 0, 21 lezioni, 4 framework (I.C.R.O., S.K.I.L.L., W.O.R.K., DAN) Prezzo: €397 Founding Members | Early bird €297 (48h) Lead Magnet: PDF "Il Framework I.C.R.O." (12 pagine) Webinar: "Come Diventare AI Builder in 6 Settimane" — workshop live con demo Funnel: Opt-in PDF → Indottrinamento (3 email) → Pre-webinar (7 email) → Webinar → Sales page → Acquisto Target: Persone che vogliono trasformare l'AI nella skill più vendibile — non programmatori
+Deliverable di questa Fase
+#
+Deliverable
+Status
+1
+Validazione Lead Magnet (Test Deprivazione)
+✅ In questo documento
+2
+Naming LM (3 opzioni + test)
+✅ In questo documento
+3
+Bridge Page Copy (YouTube → opt-in)
+✅ In questo documento
+4
+VIDEO 1 — Anchor (70%) — Scheda completa
+✅ In questo documento
+5
+VIDEO 2 — Shift (20%) — Scheda completa
+✅ In questo documento
+6
+VIDEO 3 — Conversion (10%) — Scheda Audit
+✅ In questo documento
+7
+9 Short-Form Scripts TikTok/IG
+✅ In questo documento
+8
+Tag System + integrazione funnel
+✅ In questo documento
+9
+Timeline implementazione
+✅ In questo documento
+
+Content Mix Risultante
+Video
+Tipo Mix
+Pillar
+Topic
+VIDEO 1
+Anchor (70%)
+AI & Automazione
+Come automatizzare i tuoi contenuti con Claude Code
+VIDEO 2
+Shift (20%)
+AI & Mindset
+Perché imparare 20 tool AI è la strategia sbagliata
+VIDEO 3
+Conversion (10%)
+AI & Demo Live
+Costruisco un sistema AI completo — LIVE
+
+Nota pillar: CCM introduce un nuovo pillar temporaneo ("AI & Automazione / AI Building") che si affianca ai 5 pillar CRO del canale. I 3 video pre-lancio vivono in questo pillar. Post-lancio, il contenuto AI si integra come sotto-pillar di Pillar 3 (Traffico & Acquisizione → automazione) e Pillar 5 (Mindset & Strategia → nuove competenze).
+═══════════════════════════════════════════════════════════════
+SEZIONE 1 — VALIDAZIONE LEAD MAGNET
+═══════════════════════════════════════════════════════════════
+1.1 — Test di Deprivazione: PDF "Il Framework I.C.R.O."
+Il LM è un PDF di 12 pagine che insegna a dare istruzioni strutturate a Claude Code usando il framework I.C.R.O. (Identità — Contesto — Regole — Output). Include 1 template compilabile.
+╔═══════════════════════════════════════════════════════════╗
+║                  TEST DI DEPRIVAZIONE                                                                                                                               ║
+║           LM: PDF "Il Framework I.C.R.O."                 ║
+╠═══════════════════════════════════════════════════════════╣
+║                                                           ║
+║  DOMANDA 1: Risolve un problema STRETTO e SPECIFICO?     ║
+║  ✅ SÌ — Risolve SOLO "come dare istruzioni strutturate   ║
+║  a Claude Code" (1 step). Non insegna a creare Skill,    ║
+║  workflow, portfolio, né a monetizzare.                    ║
+║                                                           ║
+║  DOMANDA 2: Rivela un problema più grande?                ║
+║  ✅ SÌ — Dopo aver scritto il primo CLAUDE.md, il lead    ║
+║  scopre che: (a) l'output migliora drasticamente, ma      ║
+║  (b) non sa creare sistemi riutilizzabili (Skill),        ║
+║  (c) non sa collegare più Skill in workflow,               ║
+║  (d) non sa come vendere questa competenza.               ║
+║  → "Funziona! Ma come faccio a scalare questo?"           ║
+║                                                           ║
+║  DOMANDA 3: Il problema più grande = offerta core?         ║
+║  ✅ SÌ — CCM insegna esattamente i 3 step successivi:     ║
+║  Skill (S.K.I.L.L.) → Workflow (W.O.R.K.) →              ║
+║  Monetizzazione (DAN). Il gap rivelato = il corso.        ║
+║                                                           ║
+║  DOMANDA 4: Il LM NON soddisfa il bisogno core?           ║
+║  ✅ SÌ — Il PDF dà 1 framework su 4. Il lead sa dare      ║
+║  istruzioni, ma non sa costruire sistemi, non sa creare    ║
+║  un portfolio, non sa trovare clienti. È "affamato".       ║
+║                                                           ║
+║  → ESITO: ✅ SUPERA — 4/4 SÌ                              ║
+║                                                           ║
+║  FUNZIONE PSICOLOGICA: ONE STEP OF MANY                    ║
+║  Il PDF dà 1 step (istruzioni strutturate) di un          ║
+║  processo a 4 step (istruzioni → skill → workflow →        ║
+║  monetizzazione). Il lead applica, funziona, e capisce    ║
+║  che mancano gli altri 3 step.                            ║
+║                                                           ║
+║  DELIVERY: Information (PDF con framework + template)      ║
+║  FORMATO: PDF 12 pagine                                    ║
+╚═══════════════════════════════════════════════════════════╝
+
+1.2 — Naming (3 opzioni con formule Hormozi)
+Il nome attuale "Il Framework I.C.R.O." è funzionale ma non segue nessuna formula Hormozi. Lo teniamo come nome interno/acronimo, ma il nome di download deve essere testato.
+#
+Formula
+Nome Proposto
+Meccanismo
+A
+F1: Numero + Outcome + Timeframe
+"4 istruzioni per far produrre a Claude Code output 10x migliori — in 10 minuti"
+Il numero (4) rende concreto. "10x migliori" è la promessa. "10 minuti" abbassa la resistenza.
+B
+F2: How to X without Y even if Z
+"Come dare istruzioni a Claude Code che funzionano ogni volta — senza scrivere codice, anche se non hai mai usato l'AI"
+Rimuove le 2 obiezioni principali (codice, esperienza zero).
+C
+F4: The [adj] [type] that [result]
+"Il Framework I.C.R.O. — il metodo in 1 pagina che trasforma Claude Code nel tuo collaboratore perfetto"
+L'aggettivo "in 1 pagina" rende immediato. "Collaboratore perfetto" è la promessa identitaria.
+
+Test suggerito: Poll IG Stories con le 3 opzioni (24h). Oppure DM a 10 persone dalla lista email con domanda: "Quale di questi scaricheresti?". Minimo 20 risposte per decidere.
+Raccomandazione: Il nome C mantiene l'acronimo I.C.R.O. (già usato nella sales page e nelle email) + aggiunge formula Hormozi. Se il test conferma, usare C come nome primario e A come variante per A/B test sulla bridge page.
+1.3 — CTA Interna al PDF
+Alla fine del PDF (pagina 11-12), dopo il template compilabile:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Hai appena imparato a dare istruzioni strutturate
+a Claude Code. È 1 dei 4 framework del sistema completo.
+
+Gli altri 3:
+→ S.K.I.L.L. — Creare sistemi riutilizzabili
+→ W.O.R.K. — Collegare più sistemi in workflow automatizzati
+→ DAN — Vendere questa competenza come servizio
+
+Il [DATA] ti mostro tutti e 4 in azione — live, sul mio schermo.
+Workshop gratuito: "Come Diventare AI Builder in 6 Settimane"
+
+[ISCRIVITI AL WORKSHOP GRATUITO →]
+
+═══════════════════════════════════════════════════════════════
+SEZIONE 2 — BRIDGE PAGE COPY
+═══════════════════════════════════════════════════════════════
+Bridge page DEDICATA al traffico YouTube. Non usa la landing page dei social ads. URL: digitalempire.com/yt/framework-icro
+╔══════════════════════════════════════════════════════════╗
+║   BRIDGE PAGE — TRAFFICO YOUTUBE → OPT-IN PDF I.C.R.O.  ║
+╠══════════════════════════════════════════════════════════╣
+║                                                          ║
+║  HEADLINE:                                               ║
+║  "Il Framework I.C.R.O. — il metodo in 1 pagina che     ║
+║  trasforma Claude Code nel tuo collaboratore perfetto"   ║
+║                                                          ║
+║  SUB-HEADLINE:                                           ║
+║  "Il companion gratuito del video. 12 pagine.            ║
+║  1 framework. 1 template pronto."                        ║
+║                                                          ║
+║  BULLET 1:                                               ║
+║  ● Il framework I.C.R.O. in 4 step — la struttura       ║
+║    esatta per dare istruzioni che producono output       ║
+║    prevedibili e di qualità ogni volta                    ║
+║                                                          ║
+║  BULLET 2:                                               ║
+║  ● 1 template CLAUDE.md compilabile — lo compili         ║
+║    in 10 minuti e da quel momento Claude Code            ║
+║    produce output 10x migliori                            ║
+║                                                          ║
+║  BULLET 3:                                               ║
+║  ● Per chi usa l'AI ma non sa come andare oltre          ║
+║    "copia-incolla da ChatGPT" — zero codice richiesto    ║
+║                                                          ║
+║  BULLET 4:                                               ║
+║  ● 12 pagine, 10 minuti di lettura — applicabile        ║
+║    dal primo minuto                                       ║
+║                                                          ║
+║  FORM:                                                    ║
+║  [Nome]  [Email]                                         ║
+║  [ Scarica il Framework I.C.R.O. — Gratis → ]            ║
+║                                                          ║
+║  SOTTO IL FORM (1 riga):                                  ║
+║  "Niente spam. 1 email di valore ogni 2-3 giorni.        ║
+║  Cancellati quando vuoi."                                ║
+║                                                          ║
+║  URL: digitalempire.com/yt/framework-icro                ║
+║                                                          ║
+╚══════════════════════════════════════════════════════════╝
+
+Post opt-in: Redirect alla pagina upsell €15 (se presente) oppure alla thank you page con conferma email + CTA al webinar. Il TAG pdf-framework-icro si applica in ActiveCampaign e innesca la Sequenza 1A (Indottrinamento).
+
+═══════════════════════════════════════════════════════════════
+SEZIONE 3 — VIDEO 1: ANCHOR (70%)
+═══════════════════════════════════════════════════════════════
+╔══════════════════════════════════════════════════════════╗
+║   SCHEDA LEAD MAGNET                                     ║
+║   Video: "Come Automatizzare i Tuoi Contenuti con        ║
+║          Claude Code (12 Minuti, Zero Codice)"           ║
+╠══════════════════════════════════════════════════════════╣
+║                                                          ║
+║   TIPO VIDEO: Azione (come fare X step-by-step)          ║
+║   CONTENT MIX: Anchor (70%) — SEO, evergreen             ║
+║   PILLAR: AI & Automazione (pre-lancio CCM)              ║
+║   DURATA STIMATA: 14-18 minuti                           ║
+║   TARGET VIEWER: Imprenditori/creator/freelance che      ║
+║   usano l'AI per contenuti ma sprecano ore a fare        ║
+║   copia-incolla da ChatGPT, uno per uno                  ║
+║   OFFERTA CORE: CCM percorso premium (via webinar)       ║
+║                                                          ║
+║   FUNZIONE LM: One Step of Many                          ║
+║   Il video mostra IL RISULTATO del Content System        ║
+║   (12 min → articolo + 5 post + newsletter).             ║
+║   Il PDF insegna a dare istruzioni strutturate           ║
+║   (1 step). Ma per costruire il Content System           ║
+║   servono Skill + Workflow (altri 2 step = CCM).         ║
+║                                                          ║
+║   TEST DI DEPRIVAZIONE:                                  ║
+║   ✅ Problema stretto e specifico? SÌ — come             ║
+║      dare istruzioni strutturate a Claude Code           ║
+║   ✅ Risolvendolo, rivela problema più grande? SÌ —       ║
+║      il lead vede che le istruzioni sono solo 1/4         ║
+║      del sistema per costruire automazioni               ║
+║   ✅ Problema più grande = offerta core? SÌ — CCM        ║
+║      insegna i 4 framework completi                      ║
+║   ✅ LM NON soddisfa il bisogno core? SÌ — il PDF        ║
+║      non insegna a creare Skill, workflow, né a vendere  ║
+║   → ESITO: PASSA                                         ║
+║                                                          ║
+║   DELIVERY: Information (PDF)                             ║
+║   FORMATO: PDF 12 pagine "Il Framework I.C.R.O."        ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   HOOK (primi 5-8 secondi):                              ║
+║                                                          ║
+║   Formula: Data Shock + Dimostrazione                     ║
+║   "In questo video ti mostro come ho creato un           ║
+║   articolo, 5 post social e una newsletter in 12         ║
+║   minuti. Non con ChatGPT. Con un sistema che ho         ║
+║   costruito su Claude Code. E non ho scritto una         ║
+║   riga di codice."                                       ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   SETUP (secondi 8-60):                                  ║
+║                                                          ║
+║   "Prima che tu pensi 'è roba da programmatori':         ║
+║   no. Claude Code non richiede di scrivere codice.       ║
+║   Richiede di scrivere istruzioni. In italiano.          ║
+║   La differenza tra usare ChatGPT e usare Claude         ║
+║   Code è questa: ChatGPT è un chatbot. Claude Code       ║
+║   è un collaboratore che configuri una volta e che        ║
+║   lavora come gli hai detto — ogni volta.                ║
+║                                                          ║
+║   Oggi ti faccio vedere 3 cose:                          ║
+║   1. Come funziona il Content System che ho costruito    ║
+║   2. IL PRINCIPIO che lo fa funzionare — che puoi        ║
+║      applicare anche senza il sistema completo           ║
+║   3. Come iniziare anche tu in 10 minuti, oggi"         ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   CONTENUTO CORE (~minuto 2-12):                         ║
+║                                                          ║
+║   BLOCCO 1 (min 2-5): LA DEMO                            ║
+║   Screen recording: mostri l'input (2 righe di idea)     ║
+║   e l'output (articolo + 5 post + newsletter).           ║
+║   Mostri il timer: 12 minuti.                            ║
+║   "Questo è il risultato. Adesso ti spiego il            ║
+║   PRINCIPIO che lo rende possibile."                     ║
+║                                                          ║
+║   BLOCCO 2 (min 5-8): IL PRINCIPIO — I.C.R.O.           ║
+║   Spieghi il framework a livello concettuale:            ║
+║   → Identità: chi è Claude Code per il tuo progetto     ║
+║   → Contesto: cosa sa del tuo business                    ║
+║   → Regole: come deve comportarsi                         ║
+║   → Output: cosa deve produrre e in che formato          ║
+║   "Quando dai queste 4 informazioni, Claude Code         ║
+║   smette di essere un chatbot generico e diventa         ║
+║   un collaboratore specializzato."                       ║
+║                                                          ║
+║   [CTA SOFT al 30% — QUI — vedi sotto]                   ║
+║                                                          ║
+║   BLOCCO 3 (min 8-12): APPLICAZIONE PRATICA              ║
+║   Mostri come scrivere un CLAUDE.md basilare con         ║
+║   le 4 sezioni di I.C.R.O. Mostri prima/dopo            ║
+║   dell'output con e senza il file.                       ║
+║   "Ora, questo è 1 framework. Il Content System          ║
+║   che hai visto all'inizio ne usa 4. Ma tutto            ║
+║   parte da qui."                                         ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   CTA SOFT (30% del video — ~minuto 5, 12 sec):         ║
+║                                                          ║
+║   "A proposito di I.C.R.O. — ho preparato un PDF        ║
+║   gratuito con il framework completo e un template       ║
+║   che compili in 10 minuti. Primo link in descrizione."  ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   CTA HARD (fine video, ~20 sec):                        ║
+║                                                          ║
+║   "Se vuoi il framework I.C.R.O. già pronto con          ║
+║   il template da compilare, scaricalo gratis dal         ║
+║   primo link in descrizione. Ci metti 10 minuti          ║
+║   a compilarlo e da quel momento ogni output di          ║
+║   Claude Code è un livello diverso. Lo scaricano         ║
+║   in 30 secondi."                                        ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   CTA INCOSCIENTI (2, da 3-5 sec ciascuna):             ║
+║                                                          ║
+║   1) [Minuto ~3, durante la demo]: "...e se vuoi        ║
+║   provare tu stesso, c'è il template in descrizione."   ║
+║                                                          ║
+║   2) [Minuto ~10, durante applicazione]: "...il         ║
+║   template nel PDF ti guida passo passo — link           ║
+║   qui sotto."                                            ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   PINNED COMMENT:                                        ║
+║                                                          ║
+║   "📥 IL FRAMEWORK I.C.R.O. — PDF GRATUITO              ║
+║                                                          ║
+║   Il metodo in 4 step per dare istruzioni a Claude       ║
+║   Code che producono output 10x migliori.                ║
+║                                                          ║
+║   Scaricalo → digitalempire.com/yt/framework-icro        ║
+║                                                          ║
+║   (12 pagine, 10 min, template incluso)"                 ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   DESCRIZIONE VIDEO (prime 3 righe — above fold):        ║
+║                                                          ║
+║   Riga 1: 📥 Scarica il Framework I.C.R.O. (gratis)     ║
+║           → digitalempire.com/yt/framework-icro          ║
+║   Riga 2: Il metodo in 4 step per trasformare Claude     ║
+║           Code nel tuo collaboratore perfetto.            ║
+║   Riga 3: [vuota]                                        ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   TAG EMAIL:                                             ║
+║   ● "Origine: YouTube Organico"                          ║
+║   ● "YT-LM: PDF Framework ICRO"                          ║
+║   ● "YT-Video: content-system-claude-code"                ║
+║   ● "YT-Tipo: Azione"                                    ║
+║   ● "YT-Pillar: AI-Automazione"                          ║
+║                                                          ║
+║   CTA INTERNA AL LM (pagina 11 del PDF):                 ║
+║   "Hai 1 framework su 4. Gli altri 3 li mostro live.     ║
+║   Workshop gratuito → [link iscrizione webinar]"         ║
+║   → Collegata a: webinar CCM                              ║
+║                                                          ║
+║   TITOLI A/B TEST:                                       ║
+║   T1: "Come Automatizzare i Tuoi Contenuti con Claude    ║
+║        Code (12 Minuti, Zero Codice)"                    ║
+║   T2: "Ho Creato 7 Contenuti in 12 Minuti con Claude    ║
+║        Code — Ti Mostro Come"                            ║
+║   T3: "Il Sistema che Produce Articoli + Post + Email    ║
+║        in 12 Minuti (con Claude Code)"                   ║
+║                                                          ║
+╚══════════════════════════════════════════════════════════╝
+
+
+═══════════════════════════════════════════════════════════════
+SEZIONE 4 — VIDEO 2: SHIFT (20%)
+═══════════════════════════════════════════════════════════════
+╔══════════════════════════════════════════════════════════╗
+║   SCHEDA LEAD MAGNET                                     ║
+║   Video: "Perché Imparare 20 Tool AI È la Strategia     ║
+║          Sbagliata (e Cosa Fare Invece)"                 ║
+╠══════════════════════════════════════════════════════════╣
+║                                                          ║
+║   TIPO VIDEO: Educativo (cambia prospettiva)             ║
+║   CONTENT MIX: Shift (20%) — cambio di credenza          ║
+║   PILLAR: AI & Mindset (pre-lancio CCM)                  ║
+║   DURATA STIMATA: 10-14 minuti                           ║
+║   TARGET VIEWER: Persone che hanno provato 5-10 tool     ║
+║   AI diversi, si sentono sopraffatte, non hanno          ║
+║   costruito nulla di concreto                            ║
+║   OFFERTA CORE: CCM percorso premium (via webinar)       ║
+║                                                          ║
+║   FUNZIONE LM: Reveal a Problem                          ║
+║   Il video cambia la prospettiva ("il problema non è      ║
+║   quale tool, è che non sai COSTRUIRE sistemi").          ║
+║   Il PDF rivela AL LEAD il suo problema specifico:       ║
+║   non ha un framework per dare istruzioni strutturate,   ║
+║   quindi OGNI tool produce output mediocri.               ║
+║                                                          ║
+║   TEST DI DEPRIVAZIONE:                                  ║
+║   ✅ Problema stretto? SÌ — "le tue istruzioni           ║
+║      non sono strutturate"                                ║
+║   ✅ Rivela problema più grande? SÌ — il lead scopre     ║
+║      che il gap non è il tool ma il metodo per           ║
+║      costruire sistemi riutilizzabili                     ║
+║   ✅ Collegato all'offerta core? SÌ — CCM insegna        ║
+║      il metodo completo in 4 framework                    ║
+║   ✅ LM NON soddisfa il bisogno core? SÌ — il PDF        ║
+║      dà solo il framework base, non i 3 avanzati         ║
+║   → ESITO: PASSA                                         ║
+║                                                          ║
+║   DELIVERY: Information (PDF)                             ║
+║   FORMATO: PDF 12 pagine "Il Framework I.C.R.O."        ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   HOOK (primi 5-8 secondi):                              ║
+║                                                          ║
+║   Formula: Provocazione                                   ║
+║   "Più tool AI impari, meno competente diventi.          ║
+║   Lo so — è controintuitivo. Ma è la ragione per         ║
+║   cui il 90% delle persone che usano l'AI non ha         ║
+║   ancora costruito nulla di vendibile. Ti spiego          ║
+║   perché."                                               ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   SETUP (secondi 8-60):                                  ║
+║                                                          ║
+║   "Ogni settimana esce un tool AI nuovo. Ogni            ║
+║   settimana qualcuno ti dice 'devi imparare questo'.     ║
+║   Il risultato? Sai usare 15 tool a livello base.        ║
+║   Non sai costruire nulla a livello avanzato.            ║
+║   Il problema non è il tool. Il problema è               ║
+║   l'approccio. E oggi ti mostro quello diverso."         ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   CONTENUTO CORE (~minuto 2-10):                         ║
+║                                                          ║
+║   BLOCCO 1 (min 2-4): LA TRAPPOLA DEL COLLEZIONISTA     ║
+║   → Presenti il pattern: tutorial → prova → risultato    ║
+║     mediocre → prossimo tool → ripeti                     ║
+║   → Spieghi perché: nessun tool da solo produce          ║
+║     output professionali senza ISTRUZIONI STRUTTURATE    ║
+║   → "Il tool è il pennello. Ma senza tecnica, è un      ║
+║     pennello in mano a chi non sa dipingere."            ║
+║                                                          ║
+║   BLOCCO 2 (min 4-7): L'APPROCCIO OPPOSTO               ║
+║   → Presenti la differenza: UTENTE vs BUILDER            ║
+║   → Utente: usa il tool → chiede cose → riceve output   ║
+║   → Builder: CONFIGURA il tool → crea SISTEMI →          ║
+║     i sistemi producono output ogni volta                ║
+║   → "L'utente riparte da zero ogni volta. Il builder     ║
+║     costruisce una volta e usa per sempre."               ║
+║                                                          ║
+║   [CTA SOFT al 30% — QUI — vedi sotto]                   ║
+║                                                          ║
+║   BLOCCO 3 (min 7-10): COME INIZIARE                     ║
+║   → Presenti il concetto di "istruzioni strutturate"     ║
+║   → Mostri l'esempio: prompt generico vs CLAUDE.md       ║
+║     con I.C.R.O. → differenza nell'output                ║
+║   → "Questo è il primo step. Da qui nascono i sistemi.  ║
+║     Ma senza questo primo step, nessun tool funziona."   ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   CTA SOFT (30% del video — ~minuto 4, 10 sec):         ║
+║                                                          ║
+║   "Su questo punto — ho messo il framework esatto        ║
+║   in un PDF gratuito. Si chiama I.C.R.O. e ci            ║
+║   metti 10 minuti a leggerlo. Primo link in              ║
+║   descrizione."                                          ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   CTA HARD (fine video, ~22 sec):                        ║
+║                                                          ║
+║   "Se oggi hai capito che il problema non è il tool      ║
+║   ma il metodo — il passo successivo è scaricare il      ║
+║   Framework I.C.R.O. dal primo link in descrizione.      ║
+║   12 pagine, un template da compilare, e in 10 minuti    ║
+║   il tuo modo di usare l'AI cambia per sempre. Lo        ║
+║   scaricano in 30 secondi."                               ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   CTA INCOSCIENTI (2, da 3-5 sec ciascuna):             ║
+║                                                          ║
+║   1) [Minuto ~3]: "...e questo framework lo trovi        ║
+║   nel PDF gratuito in descrizione."                      ║
+║                                                          ║
+║   2) [Minuto ~8, durante l'esempio]: "...nel PDF         ║
+║   c'è il template per provarlo subito."                  ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   PINNED COMMENT:                                        ║
+║                                                          ║
+║   "📥 IL FRAMEWORK I.C.R.O. — PDF GRATUITO              ║
+║                                                          ║
+║   Il primo step per passare da UTENTE AI a BUILDER.      ║
+║   4 istruzioni strutturate. 1 template. 10 minuti.      ║
+║                                                          ║
+║   Scaricalo → digitalempire.com/yt/framework-icro        ║
+║                                                          ║
+║   (Zero codice, zero esperienza richiesta)"              ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   DESCRIZIONE VIDEO (prime 3 righe — above fold):        ║
+║                                                          ║
+║   Riga 1: 📥 Scarica il Framework I.C.R.O. (gratis)     ║
+║           → digitalempire.com/yt/framework-icro          ║
+║   Riga 2: Da utente AI a builder: il primo step          ║
+║           concreto — 12 pagine, 10 minuti.               ║
+║   Riga 3: [vuota]                                        ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   TAG EMAIL:                                             ║
+║   ● "Origine: YouTube Organico"                          ║
+║   ● "YT-LM: PDF Framework ICRO"                          ║
+║   ● "YT-Video: 20-tool-strategia-sbagliata"              ║
+║   ● "YT-Tipo: Educativo"                                 ║
+║   ● "YT-Pillar: AI-Mindset"                              ║
+║                                                          ║
+║   TITOLI A/B TEST:                                       ║
+║   T1: "Perché Imparare 20 Tool AI È la Strategia        ║
+║        Sbagliata (e Cosa Fare Invece)"                   ║
+║   T2: "Smetti di Collezionare Tool AI — Inizia a        ║
+║        Costruire Sistemi"                                ║
+║   T3: "L'Errore che il 90% delle Persone Fa con l'AI    ║
+║        (e Come Evitarlo)"                                ║
+║                                                          ║
+╚══════════════════════════════════════════════════════════╝
+
+
+═══════════════════════════════════════════════════════════════
+SEZIONE 5 — VIDEO 3: CONVERSION (10%)
+═══════════════════════════════════════════════════════════════
+╔══════════════════════════════════════════════════════════╗
+║   SCHEDA VIDEO AUDIT / DEMO LIVE                         ║
+║   Video: "Costruisco un Sistema AI Completo in 15        ║
+║          Minuti — LIVE (Claude Code Demo)"               ║
+╠══════════════════════════════════════════════════════════╣
+║                                                          ║
+║   TIPO: VIDEO AUDIT/DEMO — NESSUN LM ESTERNO            ║
+║   CONTENT MIX: Conversion (10%) — CTA diretta            ║
+║   Il video stesso è il lead magnet (MOFU del funnel).    ║
+║   Il viewer vede COME costruisci un sistema e vuole      ║
+║   imparare a farlo per il suo business.                  ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   HOOK (primi 5 secondi):                                ║
+║                                                          ║
+║   "Adesso costruisco un sistema AI completo —            ║
+║   da zero a funzionante — mentre tu guardi.              ║
+║   Niente slide. Niente teoria. Solo il mio schermo."     ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   STRUTTURA DEMO (~15-20 minuti):                        ║
+║                                                          ║
+║   MIN 0-2: Setup — cosa costruiremo e perché             ║
+║   "Costruisco un sistema di Analisi Competitor.          ║
+║   Input: 1 URL. Output: report completo con punti        ║
+║   di forza, debolezze, e 3 azioni che puoi rubare.      ║
+║   Tempo obiettivo: sotto i 10 minuti."                   ║
+║                                                          ║
+║   MIN 2-5: Scrivo il CLAUDE.md con I.C.R.O.              ║
+║   Mostri live come strutturi le istruzioni.              ║
+║   "Ecco il framework I.C.R.O. — se l'hai scaricato      ║
+║   dal PDF sai già cosa sto facendo."                     ║
+║                                                          ║
+║   MIN 5-10: Creo la Skill con S.K.I.L.L.                 ║
+║   Costruisci la Skill specializzata live.                ║
+║   "Questo è il framework S.K.I.L.L. — è il secondo      ║
+║   dei 4. Trasforma Claude Code da generalista a          ║
+║   specialista per UN task specifico."                     ║
+║                                                          ║
+║   MIN 10-14: Test e risultato                             ║
+║   Lanci il sistema, mostri il report generato.           ║
+║   "Input: 1 URL. Output: report professionale.           ║
+║   Tempo: 8 minuti. E questo sistema adesso funziona      ║
+║   ogni volta che lo attivo."                              ║
+║                                                          ║
+║   MIN 14-16: Il bridge verso l'offerta                    ║
+║   "Quello che hai visto è il livello 2 — Skill.          ║
+║   C'è un livello 3 (Workflow — collegare più Skill)      ║
+║   e un livello 4 (Monetizzazione — vendere questo        ║
+║   come servizio). Il [DATA] ti mostro tutti e 4          ║
+║   in un workshop gratuito di 90 minuti."                 ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   CTA HARD (fine video, ~25 sec):                        ║
+║                                                          ║
+║   "Se vuoi imparare a costruire sistemi come questo      ║
+║   — e a venderli come servizio — il [DATA] alle          ║
+║   [ORA] tengo un workshop gratuito dove ti mostro        ║
+║   il percorso completo. Iscriviti dal link in            ║
+║   descrizione — 90 minuti, demo live, Q&A.               ║
+║   I posti sono limitati perché è su Zoom."                ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   PINNED COMMENT:                                        ║
+║                                                          ║
+║   "🔴 WORKSHOP GRATUITO: Come Diventare AI Builder       ║
+║   in 6 Settimane                                         ║
+║                                                          ║
+║   [DATA] alle [ORA] — Demo live, Q&A, zero pitch.        ║
+║                                                          ║
+║   Iscriviti → [LINK ISCRIZIONE WEBINAR]                   ║
+║                                                          ║
+║   (90 min + Q&A, replay disponibile 48h)"                ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   DESCRIZIONE VIDEO (prime 3 righe):                     ║
+║                                                          ║
+║   Riga 1: 🔴 Workshop Gratuito [DATA]: Come Diventare   ║
+║           AI Builder → [LINK ISCRIZIONE]                  ║
+║   Riga 2: Demo live: costruisco un sistema AI in 15      ║
+║           minuti con Claude Code — zero codice.           ║
+║   Riga 3: [vuota]                                        ║
+║                                                          ║
+║   ─────────────────────────────────────────────          ║
+║   TAG (per chi si iscrive al webinar via questo video):  ║
+║   ● "Origine: YouTube Organico"                          ║
+║   ● "YT-Video: demo-live-sistema-ai"                     ║
+║   ● "YT-Tipo: Conversion-Demo"                           ║
+║   ● "YT-Pillar: AI-Demo-Live"                            ║
+║   ● "iscritto-webinar-ccm" (applicato da AC)             ║
+║                                                          ║
+║   TITOLI A/B TEST:                                       ║
+║   T1: "Costruisco un Sistema AI Completo in 15           ║
+║        Minuti — LIVE"                                    ║
+║   T2: "Da Zero a Sistema Funzionante con Claude          ║
+║        Code — Demo Live Completa"                        ║
+║   T3: "Ti Mostro Come Costruire con l'AI (Non            ║
+║        Tutorial — Demo Reale)"                           ║
+║                                                          ║
+╚══════════════════════════════════════════════════════════╝
+
+
+═══════════════════════════════════════════════════════════════
+SEZIONE 6 — 9 SHORT-FORM SCRIPTS (TikTok + IG Reels)
+═══════════════════════════════════════════════════════════════
+Piano Editoriale Pre-Lancio — 3 Settimane × 3 Short/Settimana
+#
+Settimana
+Pilastro
+Tipo
+Durata
+Topic
+SF-1
+Sett 1
+Opinione Forte
+Educativo
+60s
+La trappola dei 20 tool AI
+SF-2
+Sett 1
+Quick Win
+Azione
+30s
+1 istruzione che cambia l'output di Claude
+SF-3
+Sett 1
+Risultati
+Prova
+45s
+Prima/dopo: output con e senza I.C.R.O.
+SF-4
+Sett 2
+Teardown
+Azione
+45s
+Teardown: prompt generico vs strutturato
+SF-5
+Sett 2
+Opinione Forte
+Educativo
+60s
+"Non sai programmare? Meglio."
+SF-6
+Sett 2
+Quick Win
+Azione
+30s
+Come scrivere un CLAUDE.md in 3 minuti
+SF-7
+Sett 3
+Risultati
+Prova
+60s
+7 contenuti in 12 minuti (demo veloce)
+SF-8
+Sett 3
+Teardown
+Azione
+45s
+L'errore #1 che le persone fanno con Claude Code
+SF-9
+Sett 3
+Trend Hook
+Trend
+15s
+"L'AI non ti sostituirà. Chi COSTRUISCE con l'AI sì."
+
+
+SF-1 — La Trappola dei 20 Tool AI (60s, Educativo)
+SCRIPT SF-1
+
+B1 — HOOK (3 sec):
+"Più tool AI impari, meno competente diventi."
+
+B2 — TENSION (7 sec):
+"Lo so — sembra il contrario.
+Ma pensa a cosa fai davvero: provi un tool,
+risultato mediocre, passi al prossimo.
+Ripeti. Da mesi."
+
+B3 — PAYLOAD (42 sec):
+"Il problema non è il tool. Il problema è l'approccio.
+
+C'è una differenza enorme tra USARE un tool
+e COSTRUIRE con un tool.
+
+Chi usa — chiede cose a ChatGPT. Ogni volta da zero.
+Chi costruisce — crea SISTEMI che funzionano
+ogni volta che li attivi.
+
+Io ho costruito l'intero sistema operativo
+della mia agenzia su un tool solo: Claude Code.
+Non perché sia 'il migliore'. Ma perché ho
+smesso di collezionare e ho iniziato a costruire.
+
+1 tool. 4 framework. Sistemi che producono
+in 12 minuti quello che prima richiedeva 3 ore."
+
+B4 — CTA (8 sec):
+"Se vuoi iniziare da quel primo framework —
+si chiama I.C.R.O. e l'ho messo in un PDF gratuito.
+Link in bio."
+
+CAPTION:
+"Smetti di collezionare tool AI.
+Inizia a costruire sistemi.
+📥 PDF gratuito in bio"
+
+HASHTAG:
+#claudecode #aibuilder #digitalempire #toolai #automazione
+
+HOOK VARIANTI:
+V1: "Ho cancellato 15 tool AI. Ne ho tenuto 1."
+V2: "Il 90% delle persone usa l'AI nel modo sbagliato."
+
+PRODUCTION NOTES:
+- Face to camera, espressione seria sull'hook
+- Screen recording rapido (~5 sec) dei sistemi che girano
+- Testo sovrimpresso sui punti chiave
+
+
+SF-2 — 1 Istruzione che Cambia Tutto (30s, Azione)
+SCRIPT SF-2
+
+B1 — HOOK (3 sec):
+"1 frase che cambia completamente l'output di Claude Code."
+
+B2 — TENSION (5 sec):
+"La maggior parte delle persone scrive
+'fammi un articolo su X'. Il risultato? Generico.
+Ecco cosa scrivo io:"
+
+B3 — PAYLOAD (17 sec):
+"Invece di dire COSA fare, dico CHI ESSERE.
+
+'Sei un copywriter senior specializzato in
+[settore]. Scrivi in prima persona, frasi brevi,
+con 1 esempio concreto per ogni punto.'
+
+Stessa richiesta. Output completamente diverso.
+
+Perché? Perché Claude Code non risponde a comandi.
+Risponde a un'IDENTITÀ."
+
+B4 — CTA (5 sec):
+"Questo è 1 dei 4 step del framework I.C.R.O.
+PDF gratuito — link in bio."
+
+CAPTION:
+"Il segreto non è il prompt. È l'identità.
+📥 Framework I.C.R.O. in bio — gratis"
+
+HOOK VARIANTI:
+V1: "Non scrivere mai 'fammi un articolo' a Claude Code."
+V2: "Questa frase trasforma Claude Code da mediocre a senior."
+
+
+SF-3 — Prima/Dopo con I.C.R.O. (45s, Prova)
+SCRIPT SF-3
+
+B1 — HOOK (3 sec):
+"Stesso tool. Stessa richiesta. Risultato completamente diverso."
+
+B2 — TENSION (5 sec):
+"Ti mostro cosa cambia quando dai istruzioni
+strutturate a Claude Code invece di un prompt generico."
+
+B3 — PAYLOAD (30 sec):
+[Screen recording - split screen]
+
+"PRIMA — prompt generico:
+'Scrivi un post LinkedIn sulla CRO.'
+Risultato: generico, piatto, uguale a 10.000 altri post.
+
+DOPO — con il framework I.C.R.O.:
+Identità definita. Contesto del business.
+Regole di stile. Formato output specifico.
+
+Risultato: specifico, con dati, nel tono giusto,
+pronto da pubblicare.
+
+Stessa richiesta. 4 righe di istruzioni in più.
+Differenza: abissale."
+
+B4 — CTA (7 sec):
+"Il framework si chiama I.C.R.O. e l'ho messo
+in un PDF gratuito con il template pronto.
+Link in bio — lo compili in 10 minuti."
+
+CAPTION:
+"Il prompt non è il problema. La struttura sì.
+📥 Framework I.C.R.O. gratis — link in bio"
+
+HOOK VARIANTI:
+V1: "Ecco perché i tuoi output AI fanno schifo."
+V2: "4 righe di istruzioni. Output 10x migliore. Ti faccio vedere."
+
+
+SF-4 — Teardown: Prompt Generico vs Strutturato (45s, Azione)
+SCRIPT SF-4
+
+B1 — HOOK (3 sec):
+"Teardown: il tuo prompt vs il mio."
+
+B2 — TENSION (5 sec):
+"Prendo il prompt tipico che le persone scrivono
+a Claude Code — e ti faccio vedere cosa cambio."
+
+B3 — PAYLOAD (30 sec):
+[Screen recording]
+
+"Prompt tipico: 'Analizza il mio sito e dammi
+suggerimenti per migliorare le conversioni.'
+
+Problema 1: Claude Code non sa chi è.
+Problema 2: Non sa il tuo settore.
+Problema 3: Non sa in che formato vuoi l'output.
+
+Il mio approccio: prima scrivo un file CLAUDE.md
+con 4 sezioni — Identità, Contesto, Regole, Output.
+Poi faccio la richiesta.
+
+Claude Code legge quel file. Lo interiorizza.
+E da quel momento ogni risposta è coerente,
+specifica, professionale. Ogni volta."
+
+B4 — CTA (7 sec):
+"Vuoi provare? Il template CLAUDE.md è nel
+PDF gratuito in bio. 10 minuti e sei operativo."
+
+CAPTION:
+"Il problema non è Claude Code. È come gli parli.
+📥 PDF + template in bio"
+
+HOOK VARIANTI:
+V1: "Il 95% dei prompt che vedo sono inutili. Ecco perché."
+V2: "Non scrivere MAI un prompt senza fare prima questa cosa."
+
+
+SF-5 — "Non Sai Programmare? Meglio." (60s, Educativo)
+SCRIPT SF-5
+
+B1 — HOOK (3 sec):
+"Non sai programmare? Con Claude Code è un vantaggio."
+
+B2 — TENSION (7 sec):
+"Sembra una provocazione. Non lo è.
+Claude Code scrive il codice per te.
+Tu scrivi una cosa diversa: istruzioni.
+E chi sa scrivere istruzioni chiare
+ottiene risultati migliori di chi sa programmare."
+
+B3 — PAYLOAD (42 sec):
+"Te lo spiego.
+
+Un programmatore tende a dire a Claude Code
+COME fare le cose. Specifica il linguaggio,
+la libreria, l'approccio tecnico.
+
+Chi non programma dice COSA vuole ottenere.
+Descrive il risultato. Il contesto. Le regole.
+
+E Claude Code? Lavora meglio con il COSA.
+Perché ha già in memoria ogni approccio tecnico.
+Gli manca il contesto del TUO business.
+
+Io ho costruito l'intero sistema operativo
+della mia agenzia su Claude Code.
+Scrivo tutto in italiano. Zero codice.
+Solo istruzioni strutturate.
+
+Il framework si chiama I.C.R.O.
+4 sezioni. 30 righe. E Claude Code
+diventa il tuo collaboratore più affidabile."
+
+B4 — CTA (8 sec):
+"Ho messo il framework in un PDF gratuito
+con un template che compili in 10 minuti.
+Link in bio — scaricalo adesso."
+
+CAPTION:
+"Claude Code non richiede codice.
+Richiede istruzioni chiare. In italiano.
+📥 Framework I.C.R.O. gratis in bio"
+
+HOOK VARIANTI:
+V1: "Il programmatore è svantaggiato con Claude Code. Ecco perché."
+V2: "Non scrivo una riga di codice. Costruisco sistemi AI."
+
+
+SF-6 — CLAUDE.md in 3 Minuti (30s, Azione)
+SCRIPT SF-6
+
+B1 — HOOK (3 sec):
+"Un file da 30 righe che cambia tutto."
+
+B2 — TENSION (5 sec):
+"Si chiama CLAUDE.md. Lo scrivi una volta.
+Da quel momento Claude Code sa esattamente
+cosa fare — ogni volta."
+
+B3 — PAYLOAD (17 sec):
+[Screen recording veloce]
+
+"4 sezioni:
+I — Identità: chi è Claude Code per questo progetto
+C — Contesto: cosa sa del tuo business
+R — Regole: come deve comportarsi
+O — Output: cosa deve produrre
+
+30 righe. 3 minuti per scriverlo.
+Da quel momento: output prevedibili, coerenti,
+di qualità. Sempre."
+
+B4 — CTA (5 sec):
+"Il template pronto è nel PDF gratuito in bio.
+Compilalo e prova."
+
+CAPTION:
+"30 righe → output 10x migliori.
+📥 Template CLAUDE.md in bio"
+
+HOOK VARIANTI:
+V1: "Scrivi questo file PRIMA di usare Claude Code."
+V2: "Il file che il 99% delle persone non sa che esiste."
+
+
+SF-7 — 7 Contenuti in 12 Minuti (60s, Prova)
+SCRIPT SF-7
+
+B1 — HOOK (3 sec):
+"7 contenuti. 12 minuti. Ti faccio vedere."
+
+B2 — TENSION (7 sec):
+"1 articolo blog. 5 post social. 1 newsletter.
+Da 1 idea scritta in 2 righe.
+Non è magia — è un sistema che ho costruito
+su Claude Code."
+
+B3 — PAYLOAD (42 sec):
+[Screen recording — demo veloce, time-lapse]
+
+"Ecco come funziona.
+
+Step 1: scrivo l'idea in 2 righe.
+'Come il framework I.C.R.O. migliora gli output di Claude Code.'
+
+Step 2: il Content System parte.
+4 Skill collegate in sequenza.
+Skill 1 espande l'idea in outline.
+Skill 2 scrive l'articolo.
+Skill 3 adatta in 5 post.
+Skill 4 crea la newsletter.
+
+Step 3: output pronti.
+1 articolo — 1.200 parole, strutturato, nel mio tono.
+5 post — adattati per LinkedIn, Instagram, TikTok.
+1 newsletter — pronta da inviare.
+
+Tempo: 12 minuti dal primo comando all'ultimo file.
+Prima? 3 ore minimo. Se andava bene.
+
+Il segreto non è il tool. È il SISTEMA.
+4 Skill che lavorano insieme."
+
+B4 — CTA (8 sec):
+"Il primo step per costruire sistemi così è
+dare istruzioni strutturate. Il framework si
+chiama I.C.R.O. — PDF gratuito in bio."
+
+CAPTION:
+"12 minuti. 7 contenuti. 1 sistema.
+📥 Inizia dal Framework I.C.R.O. — link in bio"
+
+HOOK VARIANTI:
+V1: "Ho sostituito 3 ore di lavoro con 12 minuti."
+V2: "Il sistema che produce i miei contenuti. Demo completa."
+
+
+SF-8 — Errore #1 con Claude Code (45s, Azione)
+SCRIPT SF-8
+
+B1 — HOOK (3 sec):
+"L'errore #1 che le persone fanno con Claude Code."
+
+B2 — TENSION (5 sec):
+"Lo fanno tutti. Anche io all'inizio.
+Ed è la ragione per cui i risultati
+sono mediocri e inconsistenti."
+
+B3 — PAYLOAD (30 sec):
+"L'errore: trattare Claude Code come un chatbot.
+
+Scrivi una richiesta. Ricevi una risposta.
+Non ti piace. Riscrivi. Rispondi.
+Ogni conversazione è un round di boxe.
+
+Il modo corretto: configurarlo PRIMA di chiedere.
+
+Scrivi un file CLAUDE.md con 4 informazioni:
+chi è, cosa sa, come deve comportarsi, cosa deve produrre.
+
+Claude Code legge quel file all'inizio di ogni sessione.
+Da quel momento non è più un chatbot.
+È un collaboratore configurato.
+
+La differenza? Un chatbot ti risponde.
+Un collaboratore configurato ti serve."
+
+B4 — CTA (7 sec):
+"Il framework per configurarlo si chiama I.C.R.O.
+PDF gratuito con template — link in bio."
+
+CAPTION:
+"Non è un chatbot. È un collaboratore da configurare.
+📥 Framework I.C.R.O. in bio"
+
+HOOK VARIANTI:
+V1: "Stai usando Claude Code come ChatGPT. Ecco il problema."
+V2: "Se Claude Code ti dà output mediocri — non è colpa sua."
+
+
+SF-9 — Trend: Chi Costruisce con l'AI (15s, Trend)
+SCRIPT SF-9
+
+B1 — HOOK (2 sec):
+"L'AI non ti sostituirà."
+
+B2 — TENSION (3 sec):
+"Chi COSTRUISCE con l'AI — quello sì."
+
+B3 — PAYLOAD (5 sec):
+"Utente AI: chiede cose.
+Builder AI: costruisce sistemi.
+La differenza? €500-800 per progetto."
+
+B4 — CTA (5 sec):
+"Primo step per diventare builder —
+PDF gratuito in bio."
+
+CAPTION:
+"Utente AI → Builder AI.
+📥 Il primo step è in bio"
+
+PRODUCTION NOTES:
+- Formato trend: testo sovrimpresso, montaggio rapido
+- Musica di tendenza
+- Face to camera seria sull'hook, sorriso sul CTA
+
+
+═══════════════════════════════════════════════════════════════
+SEZIONE 7 — TAG SYSTEM + INTEGRAZIONE FUNNEL
+═══════════════════════════════════════════════════════════════
+7.1 — Mappa TAG ActiveCampaign per Lead da YouTube
+LEAD ENTRA DA YOUTUBE (bridge page opt-in)
+         │
+         ▼
+TAG OBBLIGATORI (automatici):
+├── "Origine: YouTube Organico"
+├── "pdf-framework-icro"
+└── "YT-Video: [slug-video]"       ← identifica da QUALE video
+
+TAG CONDIZIONALI (da UTM o form hidden field):
+├── "YT-Tipo: [Azione/Educativo/Riprova/Conversion]"
+└── "YT-Pillar: [AI-Automazione/AI-Mindset/AI-Demo-Live]"
+
+POST OPT-IN:
+├── Redirect → pagina upsell €15 (se esiste)
+│    └── Se acquista: TAG "upsell-ccm-acquistato"
+│
+├── Sequenza 1A (Indottrinamento) parte automaticamente
+│    └── Se si iscrive al webinar: TAG "iscritto-webinar-ccm"
+│         └── STOP Sequenza 1A → START Sequenza 1B (Pre-webinar)
+│
+└── Nurture settimanale (se non si iscrive dopo Seq 1A)
+
+7.2 — UTM per Tracciamento Video-Specifico
+Ogni video ha un URL bridge page con UTM distinto:
+Video
+URL Bridge Page
+VIDEO 1 (Anchor)
+digitalempire.com/yt/framework-icro?utm_source=youtube&utm_medium=organic&utm_campaign=ccm-prelancio&utm_content=content-system
+VIDEO 2 (Shift)
+digitalempire.com/yt/framework-icro?utm_source=youtube&utm_medium=organic&utm_campaign=ccm-prelancio&utm_content=20-tool-sbagliato
+VIDEO 3 (Conversion)
+Nessun bridge page — link diretto a iscrizione webinar con utm_content=demo-live
+
+7.3 — Integrazione con Email Sequence Esistente
+Le 10 email della Sequenza 1A + 1B (dal documento fornito) sono già scritte e pronte. I lead da YouTube entrano nel medesimo percorso:
+YouTube → Bridge Page → Opt-in
+    │
+    ▼
+TAG "pdf-framework-icro" → Sequenza 1A (IND-1, IND-2, IND-3)
+    │
+    ├── Se si iscrive al webinar → TAG "iscritto-webinar-ccm"
+    │   → Sequenza 1B (PRE-1 ... PRE-7)
+    │
+    └── Se NON si iscrive → Nurture con inviti soft
+
+Differenziazione lead YouTube vs altri canali: Il TAG "Origine: YouTube Organico" permette di:
+Misurare il 3x conversion advantage dei lead YouTube
+Segmentare le email di nurture con contenuti video-specifici
+Calcolare il Revenue per View nel dashboard KB_10
+
+═══════════════════════════════════════════════════════════════
+SEZIONE 8 — TIMELINE IMPLEMENTAZIONE
+═══════════════════════════════════════════════════════════════
+SETTIMANA -3 (dal lancio webinar)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUN  □ Finalizza PDF I.C.R.O. (se non completato)
+     □ Naming test: lancia poll IG Stories (3 opzioni)
+     □ Crea bridge page su digitalempire.com/yt/framework-icro
+     □ Testa: click link → opt-in → email ricevuta? (end-to-end)
+
+MAR  □ Scrivi script VIDEO 1 (Anchor) con questa scheda
+     □ Pubblica SF-1 su TikTok
+     □ Adatta SF-1 per IG Reel
+
+MER  □ Registra VIDEO 1
+     □ Pubblica SF-2 su TikTok
+     □ Adatta SF-2 per IG Reel
+
+GIO  □ Editing VIDEO 1
+     □ Pubblica SF-3 su TikTok + IG
+     □ Prepara descrizione + pinned VIDEO 1
+
+VEN  □ Pubblica VIDEO 1 su YouTube
+     □ Verifica: link descrizione → bridge page → opt-in → email
+     □ Risultato naming test → nome vincitore
+
+SETTIMANA -2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUN  □ Scrivi script VIDEO 2 (Shift) con questa scheda
+     □ Pubblica SF-4 su TikTok + IG
+
+MAR  □ Registra VIDEO 2
+     □ Pubblica SF-5 su TikTok + IG
+
+MER  □ Editing VIDEO 2 + pubblica su YouTube
+     □ Pubblica SF-6 su TikTok + IG
+
+GIO  □ Scrivi script VIDEO 3 (Conversion/Demo)
+     □ Prepara demo: quale sistema costruire live
+
+VEN  □ Registra VIDEO 3 (demo live, 1 take possibilmente)
+     □ Check dati: lead da VIDEO 1 + short-form
+
+SETTIMANA -1
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUN  □ Editing VIDEO 3 + pubblica su YouTube
+     □ Pubblica SF-7 su TikTok + IG
+
+MAR  □ Pubblica SF-8 su TikTok + IG
+     □ Check: quanti lead totali da YouTube?
+     □ Check: quanti iscritti webinar da YouTube?
+
+MER  □ Pubblica SF-9 su TikTok + IG
+     □ Ultima push iscrizioni webinar
+
+GIO  □ Sequenza pre-webinar in corso (automatica)
+     □ Prepara webinar
+
+VEN  □ Webinar "Come Diventare AI Builder in 6 Settimane"
+     □ Post-webinar: attiva Sequenza 2A/2B
+
+
+═══════════════════════════════════════════════════════════════
+SEZIONE 9 — METRICHE E KPI TARGET
+═══════════════════════════════════════════════════════════════
+KPI Target per il Pre-Lancio (3 settimane)
+Metrica
+Target
+Formula
+Views totali 3 video YouTube
+>5.000
+Somma views 28gg
+CTR link descrizione
+>3%
+Click / Views
+Conversion rate bridge page
+>30%
+Opt-in / Click
+Lead totali da YouTube
+>50
+Opt-in dalla bridge page
+Iscritti webinar da YouTube
+>20
+TAG "iscritto-webinar-ccm" + "Origine: YT"
+Show rate webinar (lead YT)
+>35%
+Presenti / Iscritti da YT
+Views totali short-form
+>10.000
+Somma views 9 short
+Lead da short-form (link in bio)
+>15
+Opt-in da TikTok/IG
+
+Revenue Projection (da YouTube)
+Scenario conservativo (50% dei target):
+2.500 views × 2% CTR = 50 click
+50 × 30% conv = 15 lead
+15 × 40% webinar = 6 iscritti
+6 × 50% show = 3 presenti
+3 × 30% premium = ~1 cliente × €397 = €397
+
+Scenario target (100%):
+5.000 views × 3% CTR = 150 click
+150 × 30% conv = 45 lead
+45 × 45% webinar = 20 iscritti
+20 × 35% show = 7 presenti
+7 × 15% premium = 1 cliente × €397 = €397
+
++ lead da short-form: 15 lead × stesso funnel
+
+Revenue atteso Lancio 1 (solo YouTube):
+€397-794 (1-2 clienti diretti da YouTube)
+
+Nota: Il valore vero dei video YouTube è il compounding. Dopo il lancio, i 3 video continuano a generare lead 24/7 per i lanci successivi. Il ROI reale si misura su 6-12 mesi, non su 3 settimane.
+FASE 8 — Contenuto Pre-Lancio CCM | YouTube Lead Engine (P2) | Digital Empire | 02/04/2026
+
+
+
+
+Progetto: 🎥P2 YouTube Lead Engine
+
+Skill:   YouTube Script Factory PRO
+          Short-Form Script Engine
+          Social Growth Engine
+          YouTube Lead Magnet Engine
+
+▸ 3 video YouTube (Anchor 70% / Shift 20% / Conversion 10%)
+▸ 9+ short-form TikTok/IG
+▸ Lead magnet per YouTube con Test Deprivazione
+▸ Bridge page dedicata
+
+
+FASE 9 — ESECUZIONE LANCIO
+Progetto: 🚀 P4  Launch Command
+
+Skill:   Sales Call Closer (se high-ticket ≥€497)
+           YouTube Script Factory PRO (video annuncio)
+
+▸ Launch Brief compilato (6 sezioni)
+▸ Warm-up 7 giorni
+▸ Day 0: apertura funnel
+▸ Giorno W: Webinar live
+▸ Post-webinar: follow-up 5 giorni
+▸ Chiusura carrello
+▸ Report metriche giornaliero:
+  Opt-in rate / Show rate / CR webinar / Revenue
+
+
+LAUNCH COMMAND  CLAUDE CODE MASTERY (CCM)
+Fase 9 — Esecuzione Lancio
+Prodotto: Claude Code Mastery — Percorso Premium 6 Settimane
+Prezzo: €397 Founding Members | Early Bird €297 (prime 48h)
+Prezzo anchor: €2.338 (stack value)
+Garanzia: "Builder o Rimborsato" — 30 giorni
+Rate: 2 × €199
+═══════════════════════════════════════════════════════════════
+
+DELIVERABLE 1 — LAUNCH BRIEF COMPILATO (6 Sezioni)
+SEZIONE A: IL PRODOTTO
+Campo
+Dato
+Nome
+Claude Code Mastery (CCM)
+Tipo
+Percorso Premium — 6 settimane guidate
+Contenuto
+6 moduli (0-5), 21 lezioni, ~11h video + esercizi, 18 template scaricabili
+4 Framework proprietari
+I.C.R.O. (CLAUDE.md) · S.K.I.L.L. (Skill) · W.O.R.K. (Workflow) · DAN (Outreach)
+Prezzo lancio
+€397 Founding Members
+Early bird
+€297 — prime 48h dopo apertura carrello
+Prezzo anchor
+€2.338 (stack value totale)
+Rate
+2 × €199
+Garanzia
+"Builder o Rimborsato" — 30 giorni
+Piattaforma corso
+Da definire (Skool / Teachable / Custom)
+Piattaforma email
+ActiveCampaign
+Checkout
+Stripe
+
+Moduli del corso:
+#
+Modulo
+Trasformazione
+Durata stimata
+0
+Setup — Il Tuo Primo Agente in 10 Minuti
+Da "non ho CC installato" a "primo output in 10 min"
+35 min video + 15 min esercizio
+1
+Fondamenta — Parla la Lingua di Claude Code
+Da "prompt generici" a "istruzioni precise con CLAUDE.md e framework I.C.R.O."
+55 min + 30 min
+2
+Skill Builder — Crea Sistemi Riutilizzabili
+Da "parto da zero ogni volta" a "libreria 5+ Skill con framework S.K.I.L.L."
+70 min + 45 min
+3
+Workflow & Agenti — Orchestra Sistemi Complessi
+Da "step manuali" a "workflow multi-step + agenti collaboranti con W.O.R.K."
+65 min + 40 min
+4
+Progetti Reali — Costruisci il Tuo Portfolio
+Da "zero progetti" a "3 progetti portfolio dimostrabili"
+75 min + 90 min
+5
+Monetizzazione — Trasforma la Skill in Clienti
+Da "non so vendere" a "offerta + portfolio + 10 prospect + framework DAN"
+60 min + 60 min
+
+Bonus inclusi:
+#
+Bonus
+Valore percepito
+B1
+Libreria 15 Skill Pronte All'Uso (pre-compilate)
+€197
+B2
+Template Pack (18 template operativi)
+€147
+B3
+Community Privata Telegram + supporto
+€297
+B4
+Sessione 1:1 di 30 min (solo founding members, primi 7 giorni)
+€197
+
+
+Stack totale
+€2.338
+
+Stack value breakdown per il pitch:
+Corso completo (6 moduli, 21 lezioni, 11h)     €1.500
+Bonus B1 — Libreria 15 Skill                    €197
+Bonus B2 — Template Pack (18 template)           €147
+Bonus B3 — Community privata                     €297
+Bonus B4 — Sessione 1:1 (solo lancio)           €197
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+VALORE TOTALE                                   €2.338
+PREZZO FOUNDING MEMBERS                          €397
+EARLY BIRD (prime 48h)                           €297
+
+
+SEZIONE B: IL TARGET
+ICP in 1 frase: Giovane 18-30 anni che usa Claude/AI ogni giorno per lavoro o side project, sa che esistono agenti e automazioni ma non sa costruire sistemi vendibili — vuole una skill concreta, richiesta e monetizzabile.
+Pain point #1: "Uso Claude ogni giorno ma lo sfrutto al 20%. Vedo altri vendere automazione AI a €10K e non capisco come arrivarci."
+Pain point #2: "Ho provato a creare agenti ma mi blocco. Tutorial sparsi su YouTube, documentazione incompleta, zero framework strutturato."
+Pain point #3: "Il mercato AI si muove veloce. Se non imparo ora, tra 6 mesi sarò già indietro rispetto ai competitor."
+Obiezione #1 (la più frequente): "€397 è troppo — ci sono tutorial gratis su YouTube." → Risposta: "YouTube ti dà pezzi sparsi. In 6 mesi di trial & error forse arrivi dove il corso ti porta in 6 settimane. Un solo progetto venduto a €500+ = ROI positivo. 2 rate da €199 se preferisci."
+Obiezione #2: "Non so programmare." → Risposta: "Claude Code scrive il codice per te. Tu scrivi istruzioni in italiano. Nel webinar lo dimostro live."
+Obiezione #3: "Diventerà obsoleto." → Risposta: "Insegno framework e principi, non trucchetti. Aggiornamenti inclusi per sempre."
+Proof/caso studio disponibile: No testimonial diretti (primo lancio). Proof principale = DEMO LIVE nel webinar. Proof secondario = i 3 video YouTube pre-lancio + framework proprietari.
+Stato PRIMA → DOPO:
+Prima
+Dopo
+Usa ChatGPT per domande base
+Costruisce sistemi AI complessi con Claude Code
+Non sa cos'è un agente AI
+Progetta e orchestra agenti multi-step
+Zero progetti da mostrare
+3 progetti portfolio dimostrabili
+Non sa monetizzare
+Offerta chiara + portfolio online + primi 10 prospect contattati
+
+
+SEZIONE C: IL FUNNEL
+Tipo: Funnel Unico Perfetto COMPLETO (€497-997 — applicato anche a €397 perché prezzo target è €497)
+TRAFFICO (YouTube, TikTok, IG)
+    │
+    ▼
+STEP 1 — LANDING OPT-IN
+"Il Framework I.C.R.O." (PDF gratuito)
+Nome + Email → TAG: pdf-framework-icro
+CR target: >30%
+    │
+    ▼
+STEP 2 — UPSELL MINI-CORSO
+"3 Agenti AI in 1 Ora" — €27
+VSL 3-5 min
+CR target: >5%
+    │
+    ▼
+STEP 3 — PAGINA VSL EVENTO
+"Come Diventare AI Builder in 6 Settimane"
+VSL 8-12 min + sales page sotto
+CTA: Iscriviti Gratuitamente
+CR target: >15%
+    │
+    ▼
+STEP 4 — FORM WEBINAR
+Nome + Email + Telefono
+TAG: iscritto-webinar-ccm
+    │
+    ▼
+STEP 5 — SEQUENZA PRE-WEBINAR
+Email 1/giorno + WhatsApp + Chiamata
+Show rate target: >30%
+    │
+    ▼
+STEP 6 — WEBINAR LIVE (90-120 min)
+Demo live + 3 storie + Pitch
+    │
+    ├── COMPRA → Onboarding + Accesso corso
+    │
+    └── NON COMPRA → Follow-up 5 giorni
+                      (Email + DM 1:1 + Call 15 min)
+
+Webinar:
+Titolo: "Come Diventare AI Builder in 6 Settimane — Workshop Gratuito Live"
+Grande promessa: "Ti mostro live come costruire un sistema AI completo — dal primo comando al primo cliente"
+3 Pilastri: (1) Framework 3 Domande, (2) Live Build Agente, (3) Orchestrazione Invisibile
+Piattaforma: Zoom
+Bonus urgenza: Sessione 1:1 per chi acquista entro 7 giorni dal webinar
+Sequenze email (già scritte — 24-26 email totali):
+S1: Indottrinamento post opt-in (3 email)
+S2: Pre-webinar (5-7 email)
+S3: Follow-up partecipanti (5 email)
+S4: Follow-up no-show (5 email)
+S5: Onboarding acquirenti (3 email)
+S6: Nurture lungo termine (loop settimanale)
+
+SEZIONE D: DATE CRITICHE
+Milestone
+Data
+Giorno
+Note
+Inizio warm-up
+02/04/2026
+G-7
+OGGI — pubblica primo teaser
+Apertura funnel
+09/04/2026
+G0
+Mercoledì — landing opt-in + upsell + VSL evento LIVE
+Lead capture attivo
+09/04 → 19/05
+G0 → GW-1
+41 giorni di raccolta lead — critico per lista da zero
+Webinar live
+20/05/2026
+GW
+Mercoledì sera — ore da definire (suggerito 20:30)
+Chiusura carrello founding members
+25/05/2026
+GW+5
+Lunedì — ultimo giorno per prezzo €397
+Post-lancio / retrospettiva
+26/05 → 30/05
+GW+6 → GW+10
+Analisi + setup evergreen
+
+Nota chiave: 41 giorni tra G0 e GW è un asset, non un problema. Hai bisogno di quel tempo per costruire lista da zero. Ogni giorno di lead capture conta.
+Timeline dettagliata warm-up (G-7 a G-1):
+Giorno
+Data
+Attività
+G-7
+Gio 02/04
+Pubblica video YouTube #1 (dei 3 pronti). Teaser social: "Sta per arrivare qualcosa"
+G-6
+Ven 03/04
+2 short-form TikTok/IG (dei 9 pronti). Story: behind the scenes
+G-5
+Sab 04/04
+Video YouTube #2. 1 short-form. Post social: "Il problema che risolvo"
+G-4
+Dom 05/04
+2 short-form. Test end-to-end funnel (OGGI — non dopo)
+G-3
+Lun 06/04
+Video YouTube #3. 2 short-form. Email "domani si apre" (se hai qualsiasi lista)
+G-2
+Mar 07/04
+2 short-form. Social: "Domani apro qualcosa — preparati". Fix bug dal test G-4
+G-1
+Mer 08/04
+Ultimo teaser. Countdown. Verifica finale: landing + checkout + email + tracking
+
+Timeline lead capture (G0 a GW-1):
+Periodo
+Attività
+Obiettivo
+G0-G7 (9-16 Apr)
+Funnel aperto. Post social quotidiani. 3-5 short-form/settimana
+Primi 50-100 opt-in
+G8-G21 (17-30 Apr)
+Contenuti YT + short-form continuano. Lead nurture attivo. Email S1 gira
+100-200 opt-in cumulativi
+G22-G35 (1-14 Mag)
+Intensifica. Annuncio webinar a tutti i lead. Iscrizioni webinar aperte
+200-400 opt-in. 50-120 iscritti webinar
+G36-G41 (15-19 Mag)
+Reminder webinar aggressivi. WhatsApp + chiamate ai lead caldi
+Massimizza show rate
+GW (20 Mag)
+WEBINAR LIVE
+Target: 15-40 presenti
+
+
+SEZIONE E: METRICHE TARGET
+Premessa critica: Parti da ZERO audience. I target sono calibrati su questa realtà — non su liste da 5.000 contatti.
+Stage
+Target
+⚠️ Warning
+🔴 Critico
+Azione se 🔴
+Opt-in rate (landing)
+>30%
+15-30%
+<15%
+Test 3 headline. Riduci form. Verifica traffico source
+Opt-in totali (41 giorni)
+200-400
+100-200
+<100
+Intensifica contenuti social. Considera micro-ads €50-100
+Upsell rate (mini-corso €27)
+>5%
+2-5%
+<2%
+Accorcia VSL. Rafforza ponte PDF→mini-corso
+Iscritti webinar (su opt-in)
+>25%
+15-25%
+<15%
+Riscrivi headline evento. Aggiungi caso studio
+Show rate webinar
+>30%
+20-30%
+<20%
+SMS/WA reminder. Audio WA personale. Chiamate
+Retention webinar (fino al pitch)
+>60%
+40-60%
+<40%
+Accorcia intro. Quick win nei primi 10 min
+Conv. live webinar (su presenti)
+>5%
+2-5%
+<2%
+Email recap chiara. Gestisci obiezione #1 via DM. Offri call
+Conv. post-webinar (su non acquirenti)
+>3%
+1-3%
+<1%
+Segmenta follow-up. Spingi replay + call gratuita
+Call→acquisto
+>30%
+15-30%
+<15%
+Migliora qualificazione pre-call. Focus costo inazione
+Refund rate
+<10%
+10-15%
+>15%
+FERMA. Problema prodotto o aspettative
+
+Scenario realistico (primo lancio da zero):
+FUNNEL METRICS — SCENARIO REALISTICO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Contenuti pubblicati (41 giorni):     ~60 (3 YT + 30 short-form + social)
+Impression stimate:                    15.000-40.000
+Click verso landing:                   500-1.500
+Opt-in (30% CR):                       150-450
+Mini-corso €27 venduti (5%):           8-23  → Revenue: €216-€621
+Iscritti webinar (25%):                40-110
+Presenti live (35%):                   14-39
+Rimasti al pitch (70%):                10-27
+Acquisti live (8%):                    1-2
+Acquisti post-webinar follow-up:       1-3
+Call gratuite prenotate:               2-5
+Call→acquisto (30%):                   1-2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+VENDITE CCM TOTALI:                    3-7
+REVENUE CCM:                           €891-€2.779 (mix €297/€397)
+REVENUE MINI-CORSO:                    €216-€621
+REVENUE TOTALE LANCIO:                 €1.107-€3.400
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Revenue target per questo lancio:
+Minimo accettabile: €900 (3 vendite CCM)
+Realistico: €2.000 (5 vendite CCM + mini-corsi)
+Stretch: €4.000+ (8+ vendite CCM)
+
+SEZIONE F: RISORSE E PIATTAFORME
+Componente
+Tool
+Stato
+Email marketing
+ActiveCampaign
+Da configurare tag + automazioni
+Landing page
+Da definire (Carrd / Systeme.io / Custom)
+Da costruire
+Checkout
+Stripe
+Da configurare
+Webinar
+Zoom
+Da configurare
+Community
+Telegram / Discord
+Da creare
+WhatsApp
+Manuale
+Attivo
+Booking call
+Cal.com / Calendly
+Da configurare
+Hosting corso
+Da decidere (Skool / Teachable)
+Da configurare
+Team
+Solo fondatore
+—
+Budget ads
+€0 (solo organico)
+—
+
+Asset già pronti (da Fasi 1-8):
+✅ Outline corso completo (6 moduli, 21 lezioni)
+✅ Architettura funnel completa (mappa, biforcazioni, routing)
+✅ Sales page copy APSPOC
+✅ 4 sequenze email complete (24-26 email)
+✅ 3 video YouTube
+✅ 9 short-form TikTok/IG
+✅ Bridge page
+✅ Tag system ActiveCampaign completo
+✅ Brief copy per tutte le pagine
+✅ Brief VSL mini-corso e evento
+✅ Brief webinar script
+✅ Trigger map email
+Asset da produrre prima di G0 (9 aprile):
+⬜ Landing page opt-in (sviluppo + deploy)
+⬜ Pagina upsell mini-corso (sviluppo)
+⬜ Pagina VSL evento (sviluppo)
+⬜ Form iscrizione webinar + Thank You page
+⬜ Sales page sviluppata (copy pronto, va implementata)
+⬜ Checkout Stripe configurato
+⬜ Email delivery PDF configurata in AC
+⬜ Tag system implementato in AC
+⬜ Automazioni AC attive
+⬜ PDF lead magnet "Framework I.C.R.O." (il PDF stesso)
+⬜ VSL mini-corso registrata (3-5 min)
+⬜ VSL evento registrata (8-12 min)
+⬜ Test end-to-end (3 percorsi)
+
+DELIVERABLE 2 — PIANO WARM-UP 7 GIORNI (G-7 a G-1)
+Fase: HYPE MODE Periodo: 02 Aprile → 08 Aprile 2026 Obiettivo: Creare anticipazione + pubblicare contenuti + preparare il funnel per G0 Regola chiave: NON svelare il prodotto. NON dare il link. Solo curiosità.
+Giorno
+Data
+Canale
+Contenuto
+Obiettivo
+Timing
+G-7
+Gio 02/04
+YouTube
+Pubblica Video YT #1 (il più "anchor" dei 3)
+Posizionamento + primi spettatori
+Mattina 10:00
+
+
+
+
+TikTok/IG
+Short-form #1: hook sul problema ("Usi Claude al 20%")
+Curiosità
+Pomeriggio 14:00
+
+
+
+
+Story IG
+Teaser criptico: "Sto preparando qualcosa che non esiste in Italia"
+FOMO
+Sera 20:00
+G-6
+Ven 03/04
+TikTok/IG
+Short-form #2: "Cosa fanno gli AI Builder che tu non fai"
+Agitazione problema
+Mattina 11:00
+
+
+
+
+TikTok/IG
+Short-form #3: mini-demo Claude Code (15 sec wow moment)
+Authority + curiosità
+Pomeriggio 15:00
+
+
+
+
+Story IG
+Behind the scenes: screenshot del corso (blurrato)
+Anticipazione
+Sera 21:00
+G-5
+Sab 04/04
+YouTube
+Pubblica Video YT #2 (educativo/shift)
+Valore + iscritti
+Mattina 10:00
+
+
+
+
+TikTok/IG
+Short-form #4: "Il framework che ha cambiato tutto" (teaser I.C.R.O.)
+Curiosità sul metodo
+Pomeriggio 14:00
+
+
+
+
+TECNICO
+TEST END-TO-END FUNNEL — 3 percorsi
+Non negoziabile
+Sera
+G-4
+Dom 05/04
+TikTok/IG
+Short-form #5: risultato impressionante con Claude Code
+Wow factor
+Mattina 11:00
+
+
+
+
+TikTok/IG
+Short-form #6: "Tra 3 giorni..." (countdown)
+Urgenza
+Pomeriggio 16:00
+
+
+
+
+TECNICO
+Fix bug dal test end-to-end
+Funnel pulito
+Tutto il giorno se serve
+G-3
+Lun 06/04
+YouTube
+Pubblica Video YT #3 (conversion — il più "vendita")
+Authority + spinta
+Mattina 10:00
+
+
+
+
+TikTok/IG
+Short-form #7: "Perché nessuno te lo insegna in Italia"
+Differenziazione
+Pomeriggio 14:00
+
+
+
+
+TikTok/IG
+Short-form #8: FAQ anticipata "Ma devo saper programmare?"
+Obiezione gestita
+Sera 19:00
+G-2
+Mar 07/04
+TikTok/IG
+Short-form #9: "Domani cambia tutto" (countdown finale)
+Hype massimo
+Mattina 11:00
+
+
+
+
+Story IG
+Countdown: "24 ore" + domanda "Chi è pronto?"
+Engagement
+Sera 20:00
+
+
+
+
+TECNICO
+Verifica finale: landing + checkout + email + tracking
+Zero errori a G0
+Pomeriggio
+G-1
+Mer 08/04
+Story IG
+"Domani mattina. Ore 10. Preparati."
+Tensione finale
+Sera 21:00
+
+
+
+
+TECNICO
+Pre-schedule post G0 se possibile. Prepara copy email G0
+Esecuzione fluida domani
+Pomeriggio
+
+
+
+
+PERSONALE
+Riposa. Domani è Day 0.
+Energia
+Sera
+
+Regole warm-up (TASSATIVE):
+MAI menzionare il nome del prodotto prima di G0
+MAI dare link di acquisto/opt-in prima di G0
+Ogni contenuto deve chiudersi con curiosità, non con risposta
+Se qualcuno chiede "cos'è?" in DM → "Lo scopri mercoledì. Segui per non perderti nulla"
+Non pubblicare più di 3 contenuti/giorno — qualità > quantità
+
+DELIVERABLE 3 — CHECKLIST DAY 0 (Apertura Funnel)
+CHECKLIST DAY 0 — APERTURA FUNNEL CCM
+Data: Mercoledì 9 Aprile 2026
+Fase: LANCIO — War Room Mode ATTIVO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MATTINA (07:00 - 09:00) — VERIFICHE PRE-APERTURA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Landing page opt-in LIVE e raggiungibile
+□ Form funzionante (test con email reale)
+□ Email benvenuto + PDF si riceve entro 2 min
+□ PDF scaricabile dal link nell'email
+□ Redirect post opt-in → pagina upsell funzionante
+□ Pagina upsell mini-corso LIVE
+□ VSL mini-corso funzionante (play + audio)
+□ Checkout mini-corso €27 funzionante (test con Stripe test mode)
+□ "No grazie" porta a pagina VSL evento
+□ Pagina VSL evento LIVE
+□ VSL evento funzionante
+□ Form iscrizione webinar funzionante
+□ Thank You page webinar con link calendario
+□ Sales page corso LIVE (anche se non la spingi oggi)
+□ Checkout corso €397 funzionante
+□ TAG ActiveCampaign: pdf-framework-icro si applica a opt-in
+□ TAG: buyer + cliente-minicorso-ccm si applicano a acquisto €27
+□ TAG: iscritto-webinar-ccm si applica a iscrizione webinar
+□ Sequenza email S1 (indottrinamento) attiva in AC
+□ Pixel/tracking attivo (se configurato)
+□ Mobile test: tutte le pagine responsive
+□ Velocità: ogni pagina <3 secondi
+
+APERTURA (09:00 - 10:00) — GO LIVE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Pubblica post annuncio #1 (Instagram/TikTok)
+  → CTA: link alla landing page opt-in
+  → Copy: "È live. Il Framework I.C.R.O. è tuo — gratis.
+    [LINK]"
+□ Pubblica post annuncio #2 (LinkedIn/Twitter se attivi)
+□ Aggiorna bio su tutti i profili social con link landing
+□ Pubblica Story IG: "È APERTO 🔴" + swipe up/link
+□ Se hai anche 10 contatti email → manda email annuncio
+
+MONITORAGGIO (10:00 - 23:00)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Controlla primi opt-in entro 2 ore (anche 1 = segnale ok)
+□ Verifica che le email di benvenuto arrivino (controlla spam)
+□ Se qualcuno compra il mini-corso: verifica delivery
+□ Rispondi a OGNI DM/commento entro 30 minuti
+□ Annota: primi numeri del giorno
+
+SERA (21:00 - 22:00) — REPORT GIORNO 0
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Compila il report metriche (Deliverable 7)
+□ Opt-in Day 0: [N] — è sopra o sotto aspettativa?
+□ Mini-corso venduti: [N]
+□ Problemi tecnici emersi: [lista]
+□ Fix prioritari per domani: [lista]
+□ Piano contenuti domani: [cosa pubblichi]
+
+EMERGENZE — SE QUALCOSA SI ROMPE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Se link rotto:
+→ Fix immediato. Se non fixabile in 5 min → metti
+  link diretto al PDF via Google Drive temporaneo
+
+Se email non arriva:
+→ Controlla spam. Se non c'è → verifica trigger AC.
+  Piano B: manda email manualmente ai primi opt-in
+
+Se checkout non funziona:
+→ Fix Stripe. Se non fixabile → disattiva upsell,
+  manda tutti alla VSL evento. Non bloccare il funnel
+  per un upsell.
+
+Se ZERO opt-in dopo 4 ore:
+→ Verifica che il link funzioni (chiedi a un amico).
+  Se funziona → problema di traffico, non di funnel.
+  Pubblica 2 contenuti extra. Spingi in DM ai tuoi
+  contatti diretti.
+
+
+DELIVERABLE 4 — CHECKLIST GIORNO WEBINAR LIVE (GW)
+CHECKLIST GIORNO WEBINAR — CLAUDE CODE MASTERY
+Data: Mercoledì 20 Maggio 2026
+GW — War Room Mode MASSIMO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+48H PRIMA (GW-2: Lunedì 18 Maggio)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WEBINAR:
+□ Script webinar finalizzato e provato almeno 1 volta
+□ Slide pronte (se usate) — se demo live: progetto demo preparato
+□ Zoom configurato: link generato, recording abilitato
+□ Link Zoom testato da browser + app
+□ Claude Code aperto e funzionante per la demo live
+□ Progetto demo pre-configurato (non improvvisare live)
+□ Backup: hotspot telefono se internet cade
+□ Backup: presentazione offline (se slide)
+
+COMUNICAZIONE:
+□ Email reminder GW-2 inviata ("Tra 2 giorni: il workshop")
+□ Messaggio Telegram/WA: reminder GW-2
+□ Chiamate ai lead con engagement-alto (score 8+/10)
+
+OFFERTA:
+□ Sales page verificata: prezzo corretto (€297 early bird / €397)
+□ Checkout Stripe testato
+□ Badge "BONUS WEBINAR: sessione 1:1 se acquisti entro 7 giorni" visibile
+□ Deadline calcolata: 27 Maggio 2026 (GW+7)
+□ Email post-webinar #1 (replay + offerta) pre-scritta
+□ Messaggio Telegram post-webinar pre-scritto
+□ Template DM 1:1 per lead caldi pre-scritto
+
+24H PRIMA (GW-1: Martedì 19 Maggio)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Email reminder -24h inviata
+□ WhatsApp reminder a tutti gli iscritti con telefono
+□ Messaggio Telegram: "Domani alle [ORA]. Link: [ZOOM]"
+□ Prova generale: apri Zoom, condividi schermo, testa audio
+□ Verifica: Claude Code funziona sulla macchina che userai
+□ Prepara acqua, snack, appunti/cheat sheet
+
+GIORNO DEL WEBINAR (GW: Mercoledì 20 Maggio)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MATTINA:
+□ Email reminder mattina: "Stasera alle [ORA]: il workshop"
+□ Messaggio Telegram: "STASERA! Link Zoom: [LINK]"
+□ Social post: "Stasera ore [ORA] — workshop live. Ultimi posti."
+□ Verifica: nessun problema tecnico emerso durante la notte
+
+3H PRIMA:
+□ Email reminder -3h
+□ WhatsApp reminder: "Tra 3 ore si parte!"
+□ Chiudi tutte le app non necessarie sul computer
+□ Apri Zoom, testa audio/video, condivisione schermo
+□ Apri Claude Code, verifica che il progetto demo funzioni
+□ Illuminazione ok, sfondo ok, webcam ok
+
+1H PRIMA:
+□ Email reminder -1h + link Zoom
+□ WhatsApp: "Tra 1 ora. Link: [ZOOM]. Entra 5 min prima."
+□ Messaggio Telegram: "🚀 Tra 1 ORA!"
+□ Acqua sulla scrivania. Telefono in silenzioso. Casa silenziosa.
+□ Apri presentazione/demo. Tutto pronto.
+
+30 MIN PRIMA:
+□ Email: "Stiamo per iniziare"
+□ Telegram: "🔴 LIVE TRA 30 MINUTI! [LINK]"
+□ Entra nella stanza Zoom. Attiva recording.
+
+5 MIN PRIMA:
+□ Telegram: "🔴 LIVE TRA 5 MINUTI! Entra ORA: [LINK]"
+□ Respira. Sei preparato.
+
+DURANTE IL WEBINAR:
+□ Inizia PUNTUALE (non aspettare i ritardatari più di 2 min)
+□ Recording attivo
+□ Segui lo script — non improvvisare il pitch
+□ Demo live: fai vedere Claude Code in azione
+□ Nota le domande che arrivano in chat
+□ Al pitch: mostra il prezzo, i bonus, la garanzia
+□ Gestisci le obiezioni dal Q&A
+□ Annuncia il bonus sessione 1:1 (7 giorni)
+□ CTA finale: "Il link è [URL]. Chi compra stasera ha il prezzo early bird €297"
+
+ENTRO 30 MIN DOPO IL WEBINAR:
+□ Salva la registrazione
+□ Messaggio Telegram: replay + link offerta + bonus 7 giorni
+□ Email post-webinar #1 inviata (o schedulata per +1h)
+□ DM personali ai lead engagement-alto: "Ti è piaciuto? Domande?"
+□ Annota: quanti presenti, quanti acquisti live, domande principali, obiezioni emerse
+
+SERA (entro 2h dalla fine):
+□ Report rapido: presenti [N], acquisti live [N], revenue [€]
+□ Verifica: chi ha comprato riceve onboarding email?
+□ Pianifica follow-up domani: lista lead caldi per DM/call
+
+
+DELIVERABLE 5 — PIANO FOLLOW-UP 5 GIORNI POST-WEBINAR
+Periodo: GW+1 → GW+5 (21 Maggio → 25 Maggio 2026) Fase: WAR ROOM MODE — ogni giorno conta Obiettivo: Massimizzare conversioni post-webinar. Target: 60-70% delle vendite totali vengono DOPO il webinar.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GW+1 — MERCOLEDÌ 21 MAGGIO — "IL REPLAY"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OBIETTIVO: Far guardare il replay a chi non c'era +
+           convertire chi era indeciso
+
+MATTINA (09:00):
+□ Email 3.1 (partecipanti): Replay + recap offerta + link sales page
+□ Email 4.1 (no-show): "Mi dispiace non averti visto" + link replay
+□ WhatsApp no-show: "Ciao [Nome], ti sei perso il workshop!
+  Ho registrato tutto. Ecco il replay: [LINK]"
+
+POMERIGGIO (14:00-18:00):
+□ DM 1:1 personalizzati ai 5-10 lead con engagement-alto:
+  "Ciao [Nome], ho visto che eri al workshop.
+  Hai domande su quello che abbiamo visto?
+  Posso offrirti una call di 15 min per parlarne."
+□ Rispondi a ogni domanda ricevuta via email/DM/Telegram
+
+SERA (20:00):
+□ Post social: "Il workshop è finito. 🔥 Recap delle 3 cose
+  più importanti che abbiamo visto..." (valore, non vendita)
+□ Monitoraggio: vendite post-webinar [N], replay views [N]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GW+2 — GIOVEDÌ 22 MAGGIO — "L'OBIEZIONE PREZZO"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OBIETTIVO: Gestire la #1 obiezione (prezzo) con calcolo ROI
+
+MATTINA (09:00):
+□ Email 3.2 (partecipanti): Gestione obiezione prezzo +
+  calcolo ROI (1 progetto venduto a €500+ = ROI positivo)
+□ Email 4.2 (no-show): "Il momento più importante del workshop"
+  + timestamp replay + link sales page
+
+POMERIGGIO (14:00-18:00):
+□ WhatsApp ai lead che hanno aperto email ma non cliccato:
+  "Ciao [Nome], hai visto il replay? Se hai dubbi sul corso,
+  scrivimi — ti spiego cosa include e se fa per te."
+□ Offri call gratuita 15 min ai lead più caldi:
+  "[Nome], ho un'idea per il tuo caso. Ti va una call veloce?
+  Zero impegno. [LINK CALENDLY]"
+
+SERA:
+□ Monitoraggio: vendite cumulative [N], call prenotate [N]
+□ Se early bird €297 scade oggi (48h post-apertura carrello):
+  → Email + WA + Telegram: "Ultime ore per €297.
+    Da domani: €397. [LINK]"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GW+3 — VENERDÌ 23 MAGGIO — "LA PROVA"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OBIETTIVO: Mostrare proof tangibile — demo, caso studio,
+           risultato concreto
+
+MATTINA (09:00):
+□ Email 3.3 (partecipanti): Gestione obiezione obsolescenza
+  + framework permanenti + aggiornamenti inclusi
+□ Email 4.3 (no-show): Obiezione + link replay + link sales page
+
+POMERIGGIO:
+□ Post social: mini-demo Claude Code (30-60 sec video)
+  che mostra un risultato wow — tipo "da 0 a sistema funzionante
+  in 5 minuti". Link in bio.
+□ Follow-up call con chi ha prenotato ieri
+□ Esegui le call → gestisci con lo script preparato
+
+SERA:
+□ Monitoraggio: vendite cumulative [N], call fatte [N],
+  call→acquisto [N]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GW+4 — SABATO 24 MAGGIO — "L'URGENZA"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OBIETTIVO: Creare urgenza reale — domani si chiude
+
+MATTINA (09:00):
+□ Email 3.4 (partecipanti): Caso studio / demo supplementare
+  + urgenza ("domani chiude il carrello founding members")
+  + posti limitati
+□ Email 4.4 (no-show): Caso studio + "il replay scade domani"
+
+POMERIGGIO (14:00-18:00):
+□ DM finali ai lead indecisi (quelli che hanno cliccato
+  ma non comprato):
+  "Ciao [Nome], ho visto che hai guardato la pagina del corso.
+  C'è qualcosa che ti frena? Dimmi e ti rispondo al volo."
+□ WhatsApp ai lead caldi non ancora convertiti:
+  "Ultima possibilità per il prezzo founding members.
+  Domani il carrello si chiude. [LINK]"
+
+SERA:
+□ Post social: "Ultime 24 ore. Poi il prezzo cambia."
+□ Story IG: countdown 24h
+□ Monitoraggio: vendite cumulative [N]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GW+5 — DOMENICA 25 MAGGIO — "LAST CALL + CHIUSURA"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OBIETTIVO: Ultimo push + chiusura pulita + transizione
+           al post-lancio
+
+MATTINA (09:00):
+□ Email 3.5 (partecipanti): "Ultima chiamata" + countdown
+  + recap completo offerta + scadenza founding members stasera
+□ Email 4.5 (no-show): "Ultima chance + il replay scade oggi"
+
+POMERIGGIO (14:00):
+□ WhatsApp FINALE ai lead engagement-alto:
+  "Ciao [Nome], stasera si chiude. Se vuoi entrare come
+  founding member, è adesso. [LINK]"
+□ Post social: "Ultime ore. Stasera chiudo."
+□ Story IG: "Ultime 3 ore"
+
+SERA — CHIUSURA (21:00-23:00):
+□ Email "Il carrello è chiuso": [vedi Deliverable 6]
+□ WhatsApp finale: "Chiuso. Grazie a chi è entrato.
+  Per chi non è entrato: ci vediamo nei contenuti gratuiti."
+□ Disattiva prezzo founding members (o rimuovi pagina/redirect)
+□ Aggiorna sales page: "Founding Members esaurito"
+  (o prepara per prezzo standard €497)
+
+POST-CHIUSURA:
+□ Report finale lancio: vendite totali, revenue, metriche
+□ Lista clienti con email onboarding confermato
+□ Pianifica retrospettiva per GW+7
+
+
+DELIVERABLE 6 — CHECKLIST CHIUSURA CARRELLO
+CHECKLIST CHIUSURA CARRELLO — CCM FOUNDING MEMBERS
+Data: Domenica 25 Maggio 2026 (GW+5) — ore 23:59
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRE-CHIUSURA (entro le 18:00)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Email "ultime ore" inviata (mattina)
+□ WhatsApp finali inviati ai lead indecisi
+□ DM finali a chi ha mostrato interesse
+□ Tutti i messaggi follow-up del piano 5 giorni completati
+□ Risposto a tutti i DM/email/domande ricevute
+□ Call gratuite rimanenti completate
+
+CHIUSURA TECNICA (23:00-00:00)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Disattiva il link di checkout founding members
+  OPPURE aggiorna prezzo Stripe da €397 a €497
+□ Se hai una landing/sales page dedicata al lancio:
+  aggiorna con "Founding Members esaurito"
+  o redirect alla versione evergreen
+□ Rimuovi badge "BONUS: sessione 1:1" dalla sales page
+  (il bonus era solo per founding members)
+□ Verifica: se qualcuno prova a comprare DOPO la chiusura,
+  cosa vede? (non deve vedere errore — deve vedere
+  "Founding Members chiuso, prezzo standard €497")
+
+EMAIL FINALE (23:59 o il giorno dopo mattina)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Email "Il carrello founding members è chiuso"
+  Segmento: TUTTI i lead che NON hanno comprato
+  (TAG: NOT cliente-corso-ccm)
+
+  Testo:
+  "Ciao [Nome],
+
+  Il carrello founding members per Claude Code Mastery
+  è ufficialmente chiuso.
+
+  Grazie a chi è entrato — ci vediamo dentro al corso.
+
+  Per chi non è entrato: nessun problema.
+  Il corso resterà disponibile al prezzo standard (€497)
+  e continuerò a pubblicare contenuti gratuiti ogni settimana.
+
+  Se hai domande o vuoi essere avvisato della prossima
+  opportunità speciale, rispondi a questa email.
+
+  A presto,
+  [Nome]"
+
+□ Email conferma agli ACQUIRENTI:
+  "Benvenuto nel gruppo founding members!
+  Il percorso inizia [data]. Ecco i prossimi step: [link onboarding]"
+
+POST-CHIUSURA — VERIFICHE
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Tutti gli acquirenti hanno ricevuto email onboarding?
+□ Tutti hanno accesso al corso/piattaforma?
+□ Tag AC corretti: tutti i buyer hanno cliente-corso-ccm?
+□ Sequenza S5 (onboarding) attiva per tutti i clienti?
+□ Sequenza S6 (nurture) attiva per non acquirenti?
+□ Tutti i DM/email pendenti gestiti?
+
+METRICHE FINALI DA RACCOGLIERE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Opt-in totali (G0→GW+5): [N]
+□ Mini-corso €27 venduti: [N] → Revenue: €[X]
+□ Iscritti webinar: [N]
+□ Presenti webinar: [N] → Show rate: [X]%
+□ Vendite CCM totali: [N]
+  ├── A €297 (early bird): [N]
+  ├── A €397 (founding): [N]
+  └── Revenue CCM: €[X]
+□ Revenue totale lancio: €[X]
+□ Refund richiesti: [N] ([X]%)
+□ Call prenotate: [N] → Call fatte: [N] → Convertite: [N]
+□ Revenue netto (dopo Stripe fees): €[X]
+
+TRANSIZIONE A POST-LANCIO
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ TAG nurture-settimanale applicato a tutti i non acquirenti
+□ RIMUOVI: post-webinar-followup (sequenza finita)
+□ Sequenza nurture attiva (1 email/settimana di valore)
+□ Carrello standard €497 attivo (se vuoi vendita evergreen)
+□ Calendario retrospettiva: GW+7 (27 Maggio)
+
+
+DELIVERABLE 7 — TEMPLATE REPORT METRICHE GIORNALIERO
+═══════════════════════════════════════════════════
+REPORT METRICHE — CLAUDE CODE MASTERY
+═══════════════════════════════════════════════════
+Data: [GG/MM/AAAA]
+Giorno: [G+X / GW / GW+X]
+Fase: [Pre-Lancio / Warm-Up / Lancio / Post-Webinar]
+═══════════════════════════════════════════════════
+
+METRICHE FUNNEL
+┌───────────────────────┬────────┬────────┬─────────┐
+│ Stage                 │ Target │ Oggi   │ Status  │
+├───────────────────────┼────────┼────────┼─────────┤
+│ Opt-in oggi           │ [N/gg] │ [N]    │ ✅⚠️🔴 │
+│ Opt-in cumulativi     │ [N]    │ [N]    │ ✅⚠️🔴 │
+│ Opt-in rate (landing) │ >30%   │ [X]%   │ ✅⚠️🔴 │
+│ Mini-corso venduti    │ >5% oI │ [N]    │ ✅⚠️🔴 │
+│ Iscritti webinar      │ [N]    │ [N]    │ ✅⚠️🔴 │
+│ [Solo GW] Presenti    │ [N]    │ [N]    │ ✅⚠️🔴 │
+│ [Solo GW] Show rate   │ >30%   │ [X]%   │ ✅⚠️🔴 │
+│ Vendite CCM oggi      │ [N]    │ [N]    │ ✅⚠️🔴 │
+│ Vendite CCM cumulative│ [N]    │ [N]    │ ✅⚠️🔴 │
+└───────────────────────┴────────┴────────┴─────────┘
+
+REVENUE
+┌───────────────────────┬────────┬────────┐
+│ Fonte                 │ Oggi   │ Cumul. │
+├───────────────────────┼────────┼────────┤
+│ Mini-corso €27        │ €[X]   │ €[X]   │
+│ CCM €297 (early bird) │ €[X]   │ €[X]   │
+│ CCM €397 (founding)   │ €[X]   │ €[X]   │
+│ Revenue lordo         │ €[X]   │ €[X]   │
+│ Refund                │ €[X]   │ €[X]   │
+│ Revenue netto         │ €[X]   │ €[X]   │
+└───────────────────────┴────────┴────────┘
+
+ENGAGEMENT
+┌───────────────────────┬────────┐
+│ Metrica               │ Oggi   │
+├───────────────────────┼────────┤
+│ Email open rate       │ [X]%   │
+│ Email click rate      │ [X]%   │
+│ WA response rate      │ [X]%   │
+│ DM inviati            │ [N]    │
+│ DM risposte ricevute  │ [N]    │
+│ Call prenotate        │ [N]    │
+│ Call fatte            │ [N]    │
+│ Call → acquisto       │ [N]    │
+└───────────────────────┴────────┘
+
+CONTENUTI PUBBLICATI OGGI
+┌───────────────────────┬──────────┬──────────┐
+│ Contenuto             │ Canale   │ Risultato│
+├───────────────────────┼──────────┼──────────┤
+│ [Titolo/tipo]         │ [YT/TT]  │ [views]  │
+│ [Titolo/tipo]         │ [IG/LI]  │ [views]  │
+└───────────────────────┴──────────┴──────────┘
+
+COLLO DI BOTTIGLIA
+━━━━━━━━━━━━━━━━━━
+Stage più debole: [________________]
+Causa più probabile: [________________]
+
+FIX PRIORITARIO
+━━━━━━━━━━━━━━━
+1. [Azione] → entro [tempo]
+2. [Azione] → entro [tempo]
+
+VERIFICA FIX
+━━━━━━━━━━━━
+Come capisco se ha funzionato: [________________]
+Entro quando: [________________]
+
+NOTE DEL GIORNO
+━━━━━━━━━━━━━━
+[Cosa è andato bene]
+[Cosa è andato male]
+[Feedback/domande ricevute]
+[Decisioni prese]
+
+PROSSIME 24H — TOP 3 PRIORITÀ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. [________________]
+2. [________________]
+3. [________________]
+
+═══════════════════════════════════════════════════
+
+Come usare questo template:
+Compilalo OGNI SERA durante la fase lancio (G0→GW+5)
+Durante la fase lead capture (G0→GW-1): compilalo 2-3 volte/settimana
+Ogni compilazione: max 10 minuti
+Se una metrica è 🔴: la FIX è la priorità #1 del giorno dopo
+Archivia ogni report — servirà per la retrospettiva
+Soglie per gli status:
+✅ = sopra target o in linea
+⚠️ = sotto target ma sopra soglia critica (vedi Sezione E)
+🔴 = sotto soglia critica → azione immediata richiesta
+
+RIEPILOGO ESECUTIVO — COSA FARE ADESSO
+Oggi è G-7. Il warm-up inizia ORA.
+Priorità immediate — prossime 48h:
+#
+Task
+Tempo
+Deadline
+1
+Pubblica Video YouTube #1 + 1 short-form
+30 min (contenuti già pronti)
+OGGI
+2
+Finalizza e testa la landing page opt-in
+3-4h
+Sabato 05/04
+3
+Configura email benvenuto + delivery PDF in AC
+2h
+Sabato 05/04
+4
+Finalizza pagina upsell + VSL mini-corso
+3h
+Domenica 06/04
+5
+Finalizza pagina VSL evento + form webinar
+3h
+Lunedì 07/04
+6
+Configura checkout Stripe (€27 + €397)
+1h
+Lunedì 07/04
+7
+Test end-to-end (3 percorsi)
+2h
+Martedì 07/04 — NON NEGOZIABILE
+8
+Fix bug dal test
+2-4h
+Martedì 08/04
+9
+G0: APERTURA FUNNEL
+—
+Mercoledì 09/04
+
+La domanda critica: Il PDF lead magnet "Il Framework I.C.R.O." è pronto? Se no, è la priorità #0 — senza PDF il funnel non parte.
+Dimmi: (1) il PDF è pronto? (2) le pagine del funnel sono sviluppate o solo il copy è pronto?
+
+
+
+FASE 10 — POST-LANCIO & EVERGREEN
+Progetto: 📚 P7  Info-Business HQ
+                 🧠 P9  Strategy Command Center
+
+Skill:      S.O.M.
+          Launch Funnel Architect (conversione evergreen)
+          CRO Copy Architect (ottimizzazione A/B)
+
+▸ Retrospettiva lancio → metriche → lezioni
+▸ Decisione: KEEP / UPDATE / RELAUNCH / RETIRE
+▸ Setup evergreen (rimuovi date, trigger by registration)
+▸ Aggiornamento catalogo in Info-Business HQ
+▸ Aggiornamento OKR in Strategy Command Center
+▸ Cross-pollination attiva (casi studio → YouTube,
+  studenti → bridge verso agenzia)
+
+
+
+
+CALENDARIO OPERATIVO COMPLETO
+CLOUD CODE MASTERY
+Dal 6 Aprile al 25 Maggio 2026 — Ogni singolo task
+LEGENDA:
+👤 = TU (Maximilian)
+🤝 = Gael
+⚡ = PRIORITÀ ASSOLUTA (se non lo fai, il funnel non parte)
+🎥 = Richiede registrazione video/audio
+💻 = Task tecnico (setup piattaforma/tool)
+📝 = Task di scrittura/copy
+📱 = Pubblicazione social
+⏱ = Tempo stimato
+REGOLA: Se un task ha ⚡, si fa PRIMA di tutto il resto.
+Se sei in ritardo, taglia i task 📱 ma MAI i task ⚡.
+
+FASE 1 — SPRINT SETUP (6-9 Aprile)
+Obiettivo: Costruire TUTTO il funnel tecnico da zero
+Ore disponibili: 4 giorni × 10h = 40h (tu) + 40h (Gael)
+LUNEDÌ 6 APRILE — G-3 | "BUILD DAY 1"
+MATTINA (08:00 - 13:00) — Setup Infrastruttura
+
+08:00-08:30 | ⚡💻 👤 DECISIONE PIATTAFORME (non rimandare  decidi ORA)
+Hosting corso: Skool o Teachable? → SCEGLI
+Landing page: Carrd (veloce, €19/anno) o Systeme.io (gratis, più complesso)? → Raccomandazione: Carrd per landing + Systeme.io per upsell/evento → Oppure: tutto su Systeme.io se vuoi un solo tool
+Booking call: Cal.com (gratis)
+Output: 3 decisioni scritte su un foglio
+
+08:30-09:30 | ⚡💻 👤 SETUP STRIPE
+Crea account Stripe (se non l'hai)
+Crea prodotto "Mini-Corso AI Builder" → €27
+Crea prodotto "Claude Code Mastery — Early Bird" → €297
+Crea prodotto "Claude Code Mastery — Founding Members" → €397
+Crea prodotto "Claude Code Mastery — 2 Rate" → €199 (ricorrente 2 mesi)
+Testa: pagamento test con carta test funziona?
+Output: 4 link checkout Stripe funzionanti
+
+09:30-10:30 | ⚡💻 🤝 SETUP ACTIVECAMPAIGN
+Crea account (se non l'hai) — 14 giorni trial gratuiti
+Crea lista: "CCM — Lead"
+Crea lista: "CCM — Clienti"
+Crea i TAG (copia esattamente): 
+□ pdf-framework-icro 
+□ iscritto-webinar-ccm 
+□ partecipato-webinar-ccm 
+□ non-presentato-ccm 
+□ cliente-corso-ccm 
+□ cliente-minicorso-ccm 
+□ upsell-ccm-acquistato 
+□ indottrinamento:benvenuto 
+□ indottrinamento:valore 
+□ indottrinamento:invito-webinar 
+□ prewebinar:confermato 
+□ Origine: YouTube Organico 
+□ Origine: TikTok 
+□ Origine: Instagram
+Output: lista + tag pronti in AC
+
+10:30-11:30 | ⚡💻 👤 SETUP ACTIVECAMPAIGN AUTOMAZIONI
+Automazione 1: "Opt-in PDF" Trigger: TAG pdf-framework-icro applicato → Invia email IND-1 (delivery PDF) immediatamente → Wait 1 giorno → Invia IND-2 → Wait 1 giorno → Invia IND-3 → Condizione: Se TAG iscritto-webinar-ccm → STOP
+Automazione 2: "Pre-Webinar" Trigger: TAG iscritto-webinar-ccm applicato → Invia PRE-1 immediatamente → Wait 1 giorno → PRE-2... (segui la sequenza) → I reminder -24h, -3h, -1h vanno schedulati sulla DATA del webinar (20 maggio)
+Output: 2 automazioni attive
+
+11:30-13:00 | ⚡💻 🤝 INSERISCI TUTTE LE EMAIL IN ACTIVECAMPAIGN
+Copia le 10 email (IND-1, IND-2, IND-3, PRE-1...PRE-7) dal documento che hai già
+Per ogni email: oggetto, oggetto B (test), corpo, link
+Placeholder da sostituire dopo: [LINK DOWNLOAD PDF] → lo avrai dopo la landing page [LINK ISCRIZIONE WEBINAR] → lo avrai dopo la pagina evento [LINK ZOOM] → lo avrai dopo setup Zoom [DATA] → 20 Maggio 2026 [ORA] → 20:30
+POMERIGGIO (14:00 - 19:00) — Costruzione Pagine
+
+14:00-16:00 | ⚡💻 👤 COSTRUISCI LANDING PAGE OPT-IN
+URL: digitalempire.com/yt/framework-icro (o su Carrd/Systeme)
+Contenuto: copia ESATTO dalla Bridge Page Copy (Fase 8) → Headline: "Il Framework I.C.R.O. — il metodo in 1 pagina..." → Sub-headline: "Il companion gratuito del video..." → 4 bullet → Form: Nome + Email → Bottone: "Scarica il Framework I.C.R.O.  Gratis" → Sotto: "Niente spam..."
+Collega il form ad ActiveCampaign → Quando opt-in → applica TAG pdf-framework-icro
+TESTA: compila il form → ricevi email → PDF scaricabile?
+Output: landing page LIVE e funzionante
+
+16:00-17:30 | ⚡💻 👤 COSTRUISCI PAGINA UPSELL MINI-CORSO
+Si apre DOPO l'opt-in (redirect automatico)
+Contenuto: → Headline: "Aspetta  prima di scaricare il PDF..." → Sub: "Ho preparato qualcosa che accelera tutto" → Descrizione mini-corso "3 Agenti AI in 1 Ora" (3-5 video brevi) → Prezzo: €27 (barrato €47) → Bottone "Sì, lo voglio  €27" → Link "No grazie, voglio solo il PDF" → redirect a pagina VSL evento
+Checkout Stripe €27 integrato
+Se acquisto → TAG cliente-minicorso-ccm
+Output: pagina upsell LIVE
+
+17:30-19:00 | ⚡💻 🤝 COSTRUISCI PAGINA VSL EVENTO + FORM WEBINAR
+Si apre: (a) dopo "no grazie" sull'upsell, (b) dal link diretto nelle email
+Contenuto: → Headline: "Come Diventare AI Builder in 6 Settimane" → Sub: "Workshop Gratuito Live — Demo + Q&A" → Placeholder per VSL (8-12 min) per ora metti un testo placeholder → Bullet: cosa vedrai (3 demo, framework, monetizzazione) → Form: Nome + Email + Telefono → Bottone: "Iscriviti Gratuitamente" → Data: Mercoledì 20 Maggio 2026 ore 20:30
+Quando iscrizione → TAG iscritto-webinar-ccm
+Redirect a Thank You Page con: → "Sei iscritto! Segna la data: 20 Maggio ore 20:30" → Link Google Calendar → "Il link Zoom lo ricevi 1 ora prima via email"
+Output: pagina evento + thank you page LIVE
+SERA (19:30 - 22:00) — Sales Page
+
+19:30-22:00 | ⚡💻 👤 COSTRUISCI SALES PAGE (v1)
+URL: digitalempire.com/ccm (o equivalente)
+Contenuto: copia ESATTO dalla Sales Page APSPOC (Fase 6) → Hero section + Per chi è + Problema + Soluzione → Stack value + Pricing + Obiezioni + Garanzia + CTA
+Integra bottone checkout Stripe (€397 + €297 early bird + rate)
+Non serve essere perfetta esteticamente oggi serve essere LIVE
+Domani la migliori
+Output: sales page LIVE (anche se grezza)
+TASK AIUTANTE IN PARALLELO (tutto il giorno)
+
+🤝 MATTINA:
+Setup Zoom per webinar (account Pro se serve  €13.33/mese) → Crea meeting ricorrente per 20 Maggio ore 20:30 → Abilita recording → Genera link Zoom fisso
+Setup Cal.com per booking call gratuite → Crea evento "Consulenza AI Builder  15 min" → Slot: 10:00-12:00 e 15:00-17:00, dal 21 al 25 Maggio → Conferma automatica via email
+
+🤝 POMERIGGIO:
+Personalizza il PDF I.C.R.O.: → Sostituisci [Nome] con il nome reale → Sostituisci [INSERISCI LINK ISCRIZIONE WEBINAR] con il link reale (una volta che la pagina evento è pronta) → Carica il PDF su Google Drive / hosting e genera link scaricabile
+Inserisci il link PDF nell'email IND-1 in ActiveCampaign
+Inserisci il link Zoom nelle email PRE-7 in ActiveCampaign
+Inserisci il link Cal.com dove necessario
+
+🤝 SERA:
+Crea gruppo Telegram "Cloud Code Mastery  Founding Members" → Descrizione, regole, messaggio di benvenuto → Link di invito (non pubblico  lo dai solo ai clienti)
+MARTEDÌ 7 APRILE — G-2 | "BUILD DAY 2"
+MATTINA (08:00 - 13:00)
+
+08:00-09:00 | ⚡💻 👤 FIX + MIGLIORA SALES PAGE
+Rivedi la sales page costruita ieri sera
+Migliora formattazione, spaziature, leggibilità
+Aggiungi elementi visual: box colorati, separatori, icone
+Verifica: ogni sezione APSPOC è presente e leggibile?
+Testa su mobile: tutto responsive?
+Output: sales page v2 — presentabile
+
+09:00-10:30 | ⚡💻 👤 TEST END-TO-END  3 PERCORSI (NON NEGOZIABILE)
+PERCORSO A: Opt-in → PDF ricevuto → Upsell → "No grazie" → Pagina evento → Iscrizione webinar → Thank you + Calendar
+PERCORSO B: Opt-in → PDF ricevuto → Upsell → Acquisto €27 → Conferma → Pagina evento
+PERCORSO C: Link diretto sales page → Acquisto €397 → Conferma → Onboarding
+Per OGNI percorso verifica: □ Tag AC applicati correttamente? □ Email ricevute (non in spam)? □ Link nel PDF funzionano? □ Checkout funziona? □ Redirect funzionano? □ Mobile funziona?
+Annota TUTTI i bug trovati
+Output: lista bug
+
+10:30-13:00 | ⚡💻 👤+🤝 FIX TUTTI I BUG
+Correggi ogni problema trovato nel test
+Ri-testa i percorsi corretti
+Non andare avanti finché i 3 percorsi non funzionano al 100%
+Output: funnel 100% funzionante
+POMERIGGIO (14:00 - 19:00) — Contenuti Video
+
+14:00-15:30 | 🎥 👤 REGISTRA VIDEO YOUTUBE #1 (Anchor)
+Script: "Come Automatizzare i Tuoi Contenuti con Claude Code"
+Lo script completo è nella Fase 8 — SEGUILO
+Setup: webcam + screen recording (OBS o Loom)
+Registra la demo del Content System (prepara prima il progetto CC)
+Durata target: 14-18 minuti
+Non cercare la perfezione  registra 1-2 take e usa il migliore
+Output: file video grezzo
+
+15:30-17:00 | 🎥 👤 REGISTRA VIDEO YOUTUBE #2 (Shift)
+Script: "Perché Imparare 20 Tool AI È la Strategia Sbagliata"
+Questo è più "talking head" — meno screen recording
+Prepara la slide/visual per la parte "Utente vs Builder"
+Durata target: 10-14 minuti
+Output: file video grezzo
+
+17:00-18:30 | 🎥 👤 REGISTRA VIDEO YOUTUBE #3 (Conversion)
+Script: "Costruisco un Sistema AI Completo in 15 Minuti  LIVE"
+Questo è TUTTO screen recording con voiceover
+PREPARA IL PROGETTO DEMO PRIMA di registrare: → Apri Claude Code → Prepara il sistema di Analisi Competitor → Fai 1 prova "a secco" per assicurarti che funziona
+Registra in 1 take (o max 2)
+Durata target: 15-20 minuti
+Output: file video grezzo
+
+18:30-19:00 | 🎥 👤 REGISTRA 3 SHORT-FORM (batch)
+SF-1: "Più tool AI impari, meno competente diventi" (60s)
+SF-2: "1 frase che cambia completamente l'output" (30s)
+SF-3: "Stesso tool. Stessa richiesta. Risultato diverso." (45s)
+Script completi nella Fase 8  SEGUILI
+Face to camera + screen recording dove indicato
+Output: 3 file video grezzi
+SERA (19:30 - 22:00)
+
+19:30-22:00 | 🎥 👤 REGISTRA ALTRI 3 SHORT-FORM (batch)
+SF-4: "Teardown: il tuo prompt vs il mio" (45s)
+SF-5: "Non sai programmare? Con Claude Code è un vantaggio" (60s)
+SF-6: "Un file da 30 righe che cambia tutto" (30s)
+Output: 3 file video grezzi
+TASK AIUTANTE IN PARALLELO
+🤝 TUTTO IL GIORNO: EDITING VIDEO YOUTUBE #1
+Taglia intro/outro
+Aggiungi testo sovrimpresso sui punti chiave
+Aggiungi B-roll screen recording dove necessario
+Aggiungi musica di sottofondo (bassa)
+Esporta in 1080p
+Prepara thumbnail (Canva): → Testo grande: "7 Contenuti in 12 Minuti" → Face shot o screenshot Claude Code → Colori: blu + bianco su sfondo scuro
+Prepara descrizione + pinned comment (dal documento Fase 8)
+Output: Video #1 pronto per upload
+MERCOLEDÌ 8 APRILE — G-1 | "FINAL CHECK DAY"
+MATTINA (08:00 - 13:00)
+
+08:00-09:30 | 🎥 👤 REGISTRA ULTIMI 3 SHORT-FORM (batch)
+SF-7: "7 contenuti. 12 minuti. Ti faccio vedere." (60s)
+SF-8: "L'errore #1 che le persone fanno con Claude Code" (45s)
+SF-9: "L'AI non ti sostituirà." (15s — trend format)
+Output: 3 file video grezzi
+TOTALE: 9 short-form registrati ✅
+
+09:30-10:30 | 💻 👤 PUBBLICA VIDEO YOUTUBE #1
+Upload su YouTube
+Titolo: "Come Automatizzare i Tuoi Contenuti con Claude Code (12 Minuti, Zero Codice)"
+Descrizione: copia dalla Fase 8 (prime 3 righe above fold)
+Pinned comment: copia dalla Fase 8
+Tag YouTube: claude code, automazione ai, content system, ai builder, claude code tutorial italiano
+Thumbnail: quella preparata dall'aiutante
+VERIFICA: link in descrizione → bridge page → opt-in funziona?
+Output: Video #1 LIVE su YouTube
+
+10:30-11:30 | 📱 👤 PUBBLICA PRIMI SHORT-FORM
+TikTok: SF-1 (la trappola dei 20 tool)
+Instagram Reel: SF-1 (adattato)
+Aggiungi link in bio TikTok → landing page
+Aggiungi link in bio IG → landing page (o Linktree con link landing)
+Output: primi contenuti social LIVE
+
+11:30-13:00 | ⚡💻 👤 VERIFICA FINALE COMPLETA
+Ri-testa i 3 percorsi end-to-end
+Verifica OGNI link: PDF, landing, upsell, evento, sales, checkout
+Verifica email: IND-1 arriva con PDF? Link nel PDF funzionano?
+Verifica mobile: tutte le pagine ok?
+Verifica AC: tag si applicano? Automazioni partono?
+Lista finale bug → FIX IMMEDIATO
+Output: tutto funzionante, zero errori
+POMERIGGIO (14:00 - 19:00)
+
+14:00-15:00 | 💻 👤 SETUP PROFILI SOCIAL (se non fatto)
+Bio Instagram: aggiorna con link landing + "AI Builder | Claude Code"
+Bio TikTok: aggiorna con link landing
+Bio LinkedIn: aggiorna (se usi LinkedIn)
+Foto profilo coerente su tutti i canali
+Output: profili pronti
+
+15:00-16:30 | 📝 👤 PREPARA COPY PER G0 (domani)
+Post annuncio #1 Instagram/TikTok: "È live. Il Framework I.C.R.O. è tuo  gratis. [LINK]"
+3-4 righe che spiegano cos'è
+Post annuncio #2 LinkedIn (se attivo)
+Story IG: "È APERTO 🔴" con link
+Pre-schedule tutto (se possibile) per domani mattina 10:00
+Output: copy G0 pronto
+
+16:30-19:00 | 💻 🤝 EDITING RIMANENTI
+Editing Video YouTube #2 + thumbnail + descrizione
+Editing Video YouTube #3 + thumbnail + descrizione
+Editing short-form SF-2, SF-3, SF-4 (taglio, testo, caption)
+Output: Video #2 e #3 pronti per upload nei prossimi giorni
+SERA (19:30 - 21:00)
+19:30-20:00 | 👤 ULTIMO CHECK MENTALE
+Rileggi il Launch Brief
+Rileggi la checklist Day 0 (Deliverable 3)
+Tutto è in ordine?
+Vai a dormire presto domani è G0
+
+20:00-21:00 | 🤝 EDITING short-form SF-5, SF-6, SF-7, SF-8, SF-9
+Taglio, testo sovrimpresso, caption, hashtag
+Esporta tutti in formato TikTok (9:16, 1080x1920)
+Output: 9 short-form pronti per pubblicazione programmata
+
+FASE 2  APERTURA FUNNEL + LEAD CAPTURE
+(9 Aprile  19 Maggio | 41 giorni)
+GIOVEDÌ 9 APRILE — G0 | "LAUNCH DAY" 
+MATTINA (07:00 - 10:00) — PRE-APERTURA
+07:00-08:00 | ⚡💻 👤 VERIFICHE FINALI (segui Checklist Day 0 — Deliverable 3) □ Landing page LIVE e raggiungibile □ Form funzionante (test con email reale) □ Email benvenuto + PDF si riceve entro 2 min □ PDF scaricabile □ Redirect post opt-in → upsell funzionante □ Pagina upsell LIVE □ Checkout €27 funzionante □ Pagina VSL evento LIVE □ Form webinar funzionante □ Thank you page webinar con link calendario □ Sales page LIVE □ Checkout €397 funzionante □ Tag AC tutti funzionanti □ Automazione email attiva □ Mobile: tutto responsive
+08:00-08:30 | ⚡💻 👤 AGGIORNA TUTTI I LINK
+Inserisci link Zoom nelle email (se non fatto)
+Inserisci data webinar "20 Maggio 2026, ore 20:30" ovunque
+Verifica che il link Cal.com per le call sia attivo
+Verifica che il PDF I.C.R.O. abbia il link webinar corretto
+09:00 — GO LIVE 🔴
+
+09:00-10:00 | 📱 👤 PUBBLICA ANNUNCIO DI APERTURA □ Post Instagram: "È live. Il Framework I.C.R.O. è tuo — gratis. [LINK]" □ Story IG: "È APERTO 🔴" + link □ Post TikTok: short-form SF-2 o post dedicato con link in bio □ Post LinkedIn (se attivo) □ Aggiorna bio su TUTTI i profili con link landing □ Se hai QUALSIASI lista email (anche 10 contatti) → manda email annuncio
+GIORNATA (10:00 - 22:00) — MONITORAGGIO
+
+10:00-13:00 | 📱 👤
+Pubblica short-form SF-2 su TikTok
+Pubblica short-form SF-3 su IG Reel
+Rispondi a OGNI commento/DM entro 30 minuti
+Monitora: primi opt-in arrivati?
+14:00-18:00 | 💻 👤+🤝
+Verifica che le email di benvenuto arrivino (controlla spam)
+Se qualcuno compra il mini-corso → verifica delivery
+Monitora AC: tag applicati? Automazione partita?
+🤝: Editing video YouTube se ancora necessario
+18:00-19:00 | 📱 👤
+Story IG: "Primo giorno e già [N] persone hanno scaricato il framework" (anche se sono 3 — il numero non importa, il momentum sì)
+21:00-22:00 | 📝 👤 REPORT GIORNO 0 (usa il template Deliverable 7)
+Opt-in Day 0: [N]
+Mini-corso venduti: [N]
+Problemi tecnici: [lista]
+Fix per domani: [lista]
+Piano contenuti domani: [cosa pubblichi]
+VENERDÌ 10 APRILE — G1
+
+08:00-09:00 | 📱 👤
+Pubblica short-form SF-4 su TikTok
+Pubblica short-form SF-3 su TikTok (se non pubblicato ieri)
+09:00-10:00 | 💻 👤
+Upload Video YouTube #2 (Shift)
+Descrizione + pinned comment dalla Fase 8
+Verifica link in descrizione
+10:00-13:00 | 📝 👤
+Rispondi a DM e commenti
+Se PS dell'email IND-1 ha generato risposte ("qual è la cosa che vorresti automatizzare?") → rispondi a TUTTE personalmente
+14:00-16:00 | 🎥 👤 REGISTRA VSL MINI-CORSO (3-5 min)
+Script dal brief VSL (Fase 5/6)
+Screen recording + voiceover
+Mostra 1 agente costruito in tempo reale (wow moment)
+Output: VSL mini-corso registrata
+16:00-18:00 | 🎥 👤 REGISTRA VSL EVENTO (8-12 min)
+Script dal brief VSL (Fase 5/6)
+Mix talking head + screen recording
+Mostra: cosa vedranno al workshop, 3 demo preview, perché è diverso
+Output: VSL evento registrata
+18:00-19:00 | 🤝
+Editing VSL mini-corso
+Editing VSL evento
+Upload su pagine rispettive (upsell + evento)
+21:00 | 📝 👤 Report giornaliero (5 min)
+SABATO 11 APRILE — G2
+
+08:00-09:00 | 📱 👤
+Pubblica SF-5 su TikTok + IG
+09:00-11:00 | 💻 👤
+Verifica VSL caricate sulle pagine (mini-corso + evento)
+Testa: il percorso con VSL funziona?
+Fix se necessario
+11:00-13:00 | 📝 👤 CONTENUTO DI VALORE (non vendita)
+Scrivi 1 post LinkedIn lungo: tutorial/insight su Claude Code (estratto dal contenuto del Video #1 o #2)
+Pubblica
+14:00-16:00 | 📱 👤
+Pubblica SF-6 su TikTok + IG
+Story IG: behind the scenes (screenshot Claude Code in azione)
+Rispondi a DM/commenti
+16:00-18:00 | 🤝
+Monitora metriche: opt-in, email open rate
+Se opt-in rate <15% sulla landing → segnala (fix headline lunedì)
+21:00 | Report giornaliero
+DOMENICA 12 APRILE — G3
+
+Giornata più leggera — ma NON fermarti.
+09:00-10:00 | 📱 👤
+Pubblica SF-7 su TikTok + IG
+10:00-12:00 | 📝 👤
+Rispondi a tutti i DM/commenti accumulati
+Se qualcuno ha risposto alla domanda "cosa vorresti automatizzare?" nell'email → rispondi personalmente
+14:00-15:00 | 💻 👤
+Upload Video YouTube #3 (Conversion) se non fatto
+Descrizione + pinned comment dalla Fase 8
+15:00-17:00 | 📝 👤 BATCH WRITE: scrivi 5 caption per i prossimi post social
+2 post educativi (mini-tutorial Claude Code)
+2 post risultato (screenshot output, before/after)
+1 post personale (la tua storia con Claude Code)
+21:00 | Report giornaliero
+SETTIMANA 2: 14-20 APRILE (G5-G11)
+Obiettivo: ritmo costante, 50+ opt-in cumulativi
+ROUTINE SETTIMANALE DA ORA IN POI (G5 → GW-1)
+Ogni giorno, MINIMO:
+MATTINA (30-45 min):
+□ Pubblica 1 short-form o post social (da quelli già pronti o nuovi) □ Rispondi a DM/commenti del giorno prima □ Check rapido metriche AC (opt-in, open rate)
+POMERIGGIO (1-2 ore):
+□ Crea 1 contenuto nuovo per domani (carosello, post, mini-tutorial) □ Rispondi a email/domande dei lead □ Se è giorno di email automatica → verifica che sia partita
+SERA (15 min):
+□ Report giornaliero rapido (opt-in oggi, cumulativi, problemi)
+
+LUNEDÌ 14 APRILE — G5
+📱 Pubblica SF-8 su TikTok + IG
+📝 Scrivi 2 nuovi short-form script (temi dalla lista commenti/DM)
+💻 Check metriche settimanali: → Opt-in totali: siamo sopra/sotto target? → Email open rate: sopra 30%? → Problemi emersi questa settimana? → Contenuto con più views/engagement?
+📝 Pianifica contenuti settimana 2
+MARTEDÌ 15 APRILE — G6
+📱 Pubblica SF-9 su TikTok + IG
+🎥 Registra 3 nuovi short-form (temi emersi dalla community/commenti)
+📝 Scrivi 1 post LinkedIn approfondito
+MERCOLEDÌ 16 APRILE — G7
+📱 Pubblica 1 nuovo short-form
+📝 Contenuto educativo: carosello IG "4 errori con Claude Code"
+💻 🤝 Editing nuovi short-form
+GIOVEDÌ 17 APRILE — G8
+📱 Pubblica 1 short-form + 1 carosello IG
+📝 Crea 1 contenuto YouTube (opzionale — video più corto, 5-8 min) Tema suggerito: "Come ho costruito [X] con Claude Code in [N] minuti"
+💻 Monitora: quanti lead si sono iscritti al webinar dalla Seq 1A?
+VENERDÌ 18 APRILE — G9
+📱 Pubblica 1 short-form
+📝 Rispondi a TUTTI i DM e commenti accumulati
+📝 Scrivi 1 email manuale alla lista (valore puro, no vendita): "3 cose che ho imparato questa settimana su Claude Code"
+SABATO 19 APRILE — G10
+📱 Pubblica 1 contenuto (post o reel)
+📝 Review settimanale: cosa ha funzionato, cosa no, cosa cambiare
+DOMENICA 20 APRILE — G11
+📱 1 contenuto leggero (story o post personale)
+📝 Pianifica settimana 3
+🔎 Monitora: opt-in cumulativi = ? (target: 50-100)
+SETTIMANA 3: 21-27 APRILE (G12-G18)
+Obiettivo: 100+ opt-in cumulativi, primi iscritti webinar
+ROUTINE IDENTICA + QUESTE AGGIUNTE:
+LUNEDÌ 21: Pubblica video YouTube 
+#4 (opzionale  se hai tempo) MARTEDÌ 22: 🎥 Batch record 3-5 nuovi short-form MERCOLEDÌ 23: Pubblica 2 short-form GIOVEDÌ 24: Post "Il webinar si avvicina ti sei iscritto?" → CTA verso pagina evento VENERDÌ 25: Email manuale alla lista: "Il workshop del 20 Maggio" → Per chi non è ancora iscritto al webinar SABATO 26: Review metriche settimanali DOMENICA 27: Pianifica settimana 4
+
+⚠️ CHECK CRITICO FINE SETTIMANA 3:
+Opt-in totali: siamo a 100+? → Se <100: INTENSIFICA contenuti (2 post/giorno) → Se <50: Considera micro-budget ads (€50-100 su IG/TikTok)
+Iscritti webinar: siamo a 20+? → Se <20: L'email IND-3 sta funzionando? Test headline diversa → Manda email diretta a TUTTA la lista: invito al webinar
+SETTIMANA 4: 28 APRILE 4 MAGGIO (G19-G25)
+Obiettivo: 150+ opt-in, 40+ iscritti webinar
+ROUTINE + INTENSIFICAZIONE:
+2 contenuti social/giorno (1 mattina, 1 pomeriggio)
+🎥 Registra 3-5 nuovi short-form a inizio settimana
+📝 1 email alla lista ogni 3-4 giorni (alternare valore + invito webinar)
+LUNEDÌ 28: 2 short-form + post educativo MARTEDÌ 29: 🎥 Batch record + 1 post MERCOLEDÌ 30: 2 short-form + email "Il workshop è tra 3 settimane" GIOVEDÌ 1 MAG: 1 contenuto (festa molti online) VENERDÌ 2: 2 short-form + post SABATO 3: Review metriche DOMENICA 4: Pianifica settimana 5 + prepara intensificazione webinar
+SETTIMANA 5: 5-11 MAGGIO (G26-G32)
+Obiettivo: 200+ opt-in, 60+ iscritti webinar
+ROUTINE + PUSH ISCRIZIONI WEBINAR:
+Ogni contenuto social da ora ha CTA → webinar (non più solo PDF)
+Email 2 volte/settimana: valore + invito webinar
+LUNEDÌ 5: 2 short-form. Email: "Tra 15 giorni ti mostro tutto live" MARTEDÌ 6: 🎥 Batch record 3-5 nuovi short MERCOLEDÌ 7: 2 short-form. Post: "Cosa vedrai al workshop" GIOVEDÌ 8: 1 contenuto. Email: valore puro (tutorial Claude Code) VENERDÌ 9: 2 short-form. Post: "Il workshop è tra 11 giorni" SABATO 10: Review + conta iscritti webinar DOMENICA 11: Prepara settimana finale pre-webinar
+
+⚠️ CHECK CRITICO:
+Iscritti webinar < 40? → Email URGENTE a tutta la lista
+Opt-in < 150? → Ads €50-100 su contenuto migliore → landing
+SETTIMANA 6: 12-18 MAGGIO (G33-G39)
+Obiettivo: massimizzare iscrizioni + preparare webinar
+LUNEDÌ 12 MAGGIO — G33
+08:00-10:00 | 📱 👤
+2 short-form: "Il workshop è tra 8 giorni" + contenuto valore 10:00-12:00 | 📝 👤
+Email a TUTTA la lista: "Ultima settimana per iscriverti al workshop gratuito"
+Include: cosa vedranno, 3 demo preview, data/ora 14:00-17:00 | 🎥 👤
+🎥 PROVA GENERALE WEBINAR #1 → Apri lo script webinar (Fase 6) → Leggi ad alta voce dall'inizio alla fine (non registrare, solo prova) → Segna i punti dove esiti o non sei fluido → Prepara il progetto Claude Code per la demo live: ▸ Apri Claude Code ▸ Crea il progetto "Demo Workshop" con tutto pre-configurato ▸ Testa la demo che farai: funziona? Quanto tempo ci mette? ▸ Se >15 minuti → semplifica la demo → Output: lista fix allo script + demo testata
+MARTEDÌ 13 MAGGIO — G34
+📱 2 short-form
+📝 Email: "Ecco cosa costruiremo live mercoledì prossimo" (preview demo)
+🤝 Prepara slide webinar (se le usi) in Canva/Google Slides
+MERCOLEDÌ 14 MAGGIO — G35
+📱 2 short-form. Post: "6 giorni al workshop"
+📝 DM personali a 10-15 lead con engagement alto: "Ciao [nome], ti sei iscritto al workshop del 20? Se no, ecco il link"
+💻 Verifica: automazione pre-webinar AC è pronta per i reminder?
+GIOVEDÌ 15 MAGGIO — G36
+📱 2 short-form
+📝 Email: valore puro (ultimo contenuto prima del webinar push)
+🎥 PROVA GENERALE WEBINAR #2 → Registra questa volta (anche solo audio) per riascoltarti → Cronometra: sei nei 90-120 minuti? → Prova il pitch: sei fluido sul prezzo + bonus + garanzia? → Prova le risposte alle obiezioni previste nel Q&A
+VENERDÌ 16 MAGGIO — G37
+📱 1 short-form. Post: "4 giorni"
+📝 Email: "Il workshop è martedì prossimo sei dentro?" (per chi NON ha tag iscritto-webinar-ccm)
+💻 Verifica Zoom: link funziona, recording abilitato
+🤝 Prepara template DM post-webinar per lead caldi
+SABATO 17 MAGGIO — G38
+📱 1 contenuto leggero
+📝 Prepara TUTTI i messaggi post-webinar: → Email 3.1 partecipanti (replay + offerta) → Email 4.1 no-show (replay) → Messaggio Telegram post-webinar → Template DM 1:1 per lead caldi → WhatsApp per no-show
+Output: tutto pre-scritto, pronto da inviare
+DOMENICA 18 MAGGIO — G39
+📱 Post: "Tra 2 giorni  il workshop che cambia tutto"
+💻 Verifica FINALE: tutto il funnel post-webinar è pronto? 
+□ Email Seq 2A (partecipanti) caricata in AC? 
+□ Email Seq 2B (no-show) caricata in AC? 
+□ Email Seq 3 (non acquirenti) caricata in AC? 
+□ Email Seq 4 (onboarding) caricata in AC? 
+□ Sales page aggiornata con "BONUS WEBINAR: sessione 1:1"? 
+□ Checkout funzionante? 
+□ Onboarding email pronta? 
+□ Accesso corso/piattaforma pronto per i clienti?
+📝 Prepara script WhatsApp per i reminder
+SETTIMANA 7: 19-25 MAGGIO WEBINAR + FOLLOW-UP + CLOSE
+LUNEDÌ 19 MAGGIO — GW-1 | "VIGILIA"
+
+08:00-09:00 | 📝 👤
+Email reminder -24h: "Domani ci vediamo  preparati"
+WhatsApp a TUTTI gli iscritti con telefono: "Ciao [nome], domani alle 20:30 ci vediamo. Link: [ZOOM]. A domani!"
+Messaggio Telegram (se hai gruppo): "Domani sera. Workshop live."
+09:00-11:00 | 🎥 👤 PROVA GENERALE FINALE
+Apri Zoom. Condividi schermo. Testa audio.
+Apri Claude Code. Verifica demo funziona.
+Fai il run-through completo (anche veloce  30 min condensati)
+Verifica: timer, acqua, appunti, cheat sheet pronti
+11:00-12:00 | 💻 👤
+Verifica: early bird €297 è attivo nel checkout? (Se l'early bird parte dalla sera del webinar, preparalo ora)
+Verifica: badge "BONUS sessione 1:1 per chi acquista entro 7 giorni" visibile
+Calcola deadline bonus: 27 Maggio 2026
+14:00-16:00 | 📱 👤
+Post social: "Domani sera. Ore 20:30. Workshop live."
+Story IG: countdown
+Ultimo short-form se ne hai uno pronto
+16:00-18:00 | 🤝
+Pre-schedule email reminder -3h (domani 17:30)
+Pre-schedule email reminder -1h (domani 19:30)
+Pre-schedule messaggio Telegram per -3h e -1h
+SERA:
+Cena leggera. Riposa. Domani è il giorno.
+MARTEDÌ 20 MAGGIO  GW | "WEBINAR DAY" 🔴
+MATTINA
+08:00-09:00 | 📝 👤
+Email reminder mattina: "Stasera alle 20:30: il workshop"
+Messaggio Telegram: "STASERA! Link Zoom: [LINK]"
+Post social: "Stasera ore 20:30  workshop live. Ultimi posti."
+09:00-12:00 | 👤
+NON lavorare su altro. Ripassa lo script.
+Prepara l'ambiente: 
+□ Scrivania pulita 
+□ Illuminazione ok 
+□ Webcam posizionata 
+□ Sfondo ok 
+□ Computer carico / alimentato 
+□ Claude Code aperto 
+□ Progetto demo pre-configurato e testato
+POMERIGGIO
+14:00-15:00 | 👤
+Ultimo ripasso pitch + prezzi + bonus + garanzia
+Prepara appunti/cheat sheet vicino allo schermo (fuori inquadratura)
+17:30 | 📝 🤝
+Email reminder -3h (automatica o manuale)
+WhatsApp: "Tra 3 ore si parte!"
+19:00 | 📝 🤝
+Email reminder -1h + link Zoom
+WhatsApp: "Tra 1 ora. Link: [ZOOM]. Entra 5 min prima."
+Telegram: "🚀 Tra 1 ORA!"
+19:30 | 💻 👤
+Chiudi TUTTE le app non necessarie
+Apri Zoom. Entra nella stanza.
+Attiva recording.
+Acqua sulla scrivania. Telefono in silenzioso.
+19:55 | 👤
+Telegram: "🔴 LIVE TRA 5 MINUTI! Entra ORA: [LINK]"
+Respira. Sei preparato.
+20:30 — WEBINAR LIVE (90-120 min)
+□ Inizia PUNTUALE (max 2 min di attesa) 
+□ Recording ATTIVO □ Segui lo script  non improvvisare il pitch 
+□ Demo live: mostra Claude Code in azione 
+□ Nota le domande in chat (🤝 aiutante monitora la chat) 
+□ Al pitch: prezzo + bonus + garanzia + CTA 
+□ Gestisci obiezioni nel Q&A □ Annuncia: "Chi compra stasera ha il prezzo early bird €297" □ Annuncia: "Bonus sessione 1:1 per chi entra entro 7 giorni" 
+□ CTA finale: "Il link è [URL]. €297 stasera, €397 da dopodomani."
+🤝 AIUTANTE DURANTE IL WEBINAR:
+□ Monitora chat Zoom 
+□ Rispondi alle domande base in chat 
+□ Segna le domande importanti per il Q&A 
+□ Segna chi scrive "interessato" / "quanto costa" / domande sull'offerta 
+□ Appena qualcuno compra: verifica onboarding email
+SUBITO DOPO IL WEBINAR (22:30-23:30)
+22:30-23:00 | 👤 
+□ Salva la registrazione Zoom 
+□ Messaggio Telegram: "Grazie a chi c'era! 🔥 Ecco il replay: [LINK] L'offerta founding members è attiva. Link: [SALES PAGE] Bonus sessione 1:1 per chi entra entro il 27 Maggio."
+23:00-23:30 | 🤝 
+□ Email post-webinar #1 (Seq 2A per partecipanti): → Replay + link offerta + countdown bonus 7 giorni → Se pre-scritta: basta inviarla/attivarla in AC 
+□ Email no-show (Seq 2B): → "Mi dispiace non averti visto" + link replay 
+□ Report rapido: → Presenti: [N] → Acquisti live: [N] → Revenue: €[X] → Domande/obiezioni principali emerse
+23:30 | 👤 
+□ Verifica: chi ha comprato ha ricevuto onboarding? 
+□ Verifica: accesso al corso/piattaforma funziona?
+□ Vai a dormire. Domani inizia il follow-up.
+MERCOLEDÌ 21 MAGGIO — GW+1 | "IL REPLAY"
+
+(Segui il Piano Follow-Up 5 Giorni  Deliverable 5)
+09:00 | 📝 👤+🤝 
+□ Email 3.1 partecipanti: replay + recap offerta 
+□ Email 4.1 no-show: replay + "mi dispiace" □ WhatsApp no-show: "Ciao [nome], ecco il replay: [LINK]"
+14:00-18:00 | 📝 👤 
+□ DM 1:1 ai 5-10 lead con engagement alto: "Ciao [nome], ho visto che eri al workshop. Hai domande? Posso offrirti una call di 15 min per parlarne." 
+□ Rispondi a OGNI domanda ricevuta
+20:00 | 📱 👤
+ □ Post social: recap 3 cose del workshop (valore, non vendita)
+21:00 | Report: vendite post-webinar [N], replay views [N]
+GIOVEDÌ 22 MAGGIO — GW+2 | "OBIEZIONE PREZZO"
+
+09:00 | 📝
+□ Email 3.2 partecipanti: gestione obiezione prezzo + calcolo ROI 
+□ Email 4.2 no-show: "Il momento più importante del workshop" + timestamp
+14:00-18:00 | 📝 👤
+□ WhatsApp a chi ha aperto email ma non cliccato: "Ciao [nome], hai dubbi sul corso? Scrivimi." 
+□ Offri call gratuite 15 min ai lead più caldi 
+□ Esegui call prenotate
+⚠️ Se early bird €297 scade oggi (48h post-apertura): → Email + WA + Telegram: "Ultime ore per €297. Da domani: €397."
+21:00 | Report: vendite cumulative, call prenotate
+VENERDÌ 23 MAGGIO — GW+3 | "LA PROVA"
+
+09:00 | 📝
+ □ Email 3.3 partecipanti: obiezione obsolescenza + framework permanenti 
+□ Email 4.3 no-show: obiezione + replay
+14:00-18:00 | 📱+📝 👤
+ □ Post social: mini-demo Claude Code (30-60 sec, wow moment)
+ □ Follow-up call con chi ha prenotato 
+□ Esegui le call → gestisci con script
+21:00 | Report: vendite cumulative, call fatte, call→acquisto
+SABATO 24 MAGGIO — GW+4 | "URGENZA"
+
+09:00 | 📝 □ Email 3.4 partecipanti: urgenza "domani si chiude" 
+□ Email 4.4 no-show: "il replay scade domani"
+14:00-18:00 | 📝 👤
+ □ DM finali a lead indecisi (chi ha cliccato ma non comprato): "Ciao [nome], c'è qualcosa che ti frena? Dimmi e ti rispondo." 
+□ WhatsApp ai lead caldi: "Ultima possibilità founding members."
+20:00 | 📱
+ □ Post social: "Ultime 24 ore. Poi il prezzo cambia."
+ □ Story IG: countdown 24h
+DOMENICA 25 MAGGIO — GW+5 | "LAST CALL + CHIUSURA" 🔒
+
+09:00 | 📝 □ Email 3.5: "Ultima chiamata" + recap offerta + scadenza STASERA 
+□ Email 4.5: "Ultima chance" + replay scade oggi
+14:00 | 📝 👤
+□ WhatsApp FINALE ai lead engagement-alto: "Ciao [nome], stasera si chiude. [LINK]"
+□ Post social: "Ultime ore. Stasera chiudo." 
+□ Story IG: "Ultime 3 ore"
+21:00-23:00 — CHIUSURA CARRELLO
+(Segui Checklist Chiusura Carrello  Deliverable 6)
+□ Email "Il carrello founding members è chiuso" a tutti i non-acquirenti 
+□ WhatsApp: "Chiuso. Grazie a chi è entrato."
+□ Disattiva prezzo €397 → aggiorna a €497 (o rimuovi pagina) 
+□ Rimuovi badge sessione 1:1 dalla sales page
+□ Verifica: tutti i clienti hanno ricevuto onboarding? 
+□ Verifica: tutti hanno accesso al corso?
+□ Tag AC: tutti i buyer hanno cliente-corso-ccm?
+□ Sequenza S5 onboarding attiva per clienti? □ Sequenza S6 nurture attiva per non acquirenti?
+23:00-23:30 — REPORT FINALE
+□ COMPILA REPORT FINALE LANCIO:
+Opt-in totali (G0→GW+5): [N] Mini-corso €27 venduti: [N] → Revenue: €[X] Iscritti webinar: [N] Presenti webinar: [N] → Show rate: [X]% Vendite CCM totali: [N]  A €297 (early bird): [N]  A €397 (founding): [N]  Revenue CCM: €[X] Revenue totale lancio: €[X] Refund richiesti: [N] Call prenotate: [N] → Call fatte: [N] → Convertite: [N] Revenue netto (dopo Stripe fees): €[X]
+□ Salva questo report → serve per la Fase 10 (retrospettiva)
+□ Calendario retrospettiva: Martedì 27 Maggio
+RIEPILOGO CONTENUTI DA PRODURRE — TOTALE
+GIÀ PRONTI (copy/script):
+✅ 3 script video YouTube (dalla Fase 8) 
+✅ 9 script short-form (dalla Fase 8) 
+✅ Sales page copy (dalla Fase 6) 
+✅ 10 email Seq 1A + 1B (dalla Fase 7)
+✅ Email Seq 2A, 2B, 3, 4 (dalla Fase 7)
+✅ Bridge page copy (dalla Fase 8) 
+✅ PDF I.C.R.O. (appena creato)
+DA REGISTRARE/PRODURRE:
+□ 3 video YouTube (registrazione + editing) → Martedì 7 Aprile 
+□ 9 short-form (registrazione + editing) → 7-8 Aprile
+□ VSL mini-corso 3-5 min → Venerdì 10 Aprile
+□ VSL evento 8-12 min → Venerdì 10 Aprile
+□ ~15-20 contenuti social aggiuntivi (settimane 2-6) → ongoing
+□ Webinar live → 20 Maggio
+DA COSTRUIRE (TECH):
+□ Landing page opt-in → Lunedì 6 Aprile 
+□ Pagina upsell mini-corso → Lunedì 6 Aprile
+□ Pagina VSL evento + form webinar + thank you → Lunedì 6 Aprile 
+□ Sales page (implementazione) → Lunedì 6 sera 
+□ Setup Stripe (4 prodotti) → Lunedì 6 Aprile
+□ Setup ActiveCampaign (tag + automazioni + email) → Lunedì 6 Aprile 
+□ Setup Zoom → Lunedì 6 Aprile (aiutante) 
+□ Setup Cal.com → Lunedì 6 Aprile (aiutante)
+□ Gruppo Telegram → Lunedì 6 Aprile (aiutante)
+□ Bridge page YouTube (se separata dalla landing) → Lunedì 6 Aprile
+DA PREPARARE (WEBINAR):
+□ Script webinar finalizzato → hai già il brief dalla Fase 6
+□ Slide/demo preparata → Lunedì 12 Maggio (prova #1) 
+□ Prova generale #1 → Lunedì 12 Maggio 
+□ Prova generale #2 → Giovedì 15 Maggio
+□ Prova generale #3 (finale) → Lunedì 19 Maggio
+
+METRICHE CHECKPOINT — QUANDO PREOCCUPARSI
+Data
+Metrica
+✅ OK
+⚠️ Warning
+🔴 Azione
+12 Apr (G3)
+Opt-in
+>10
+5-10
+<5 → verifica landing + link
+20 Apr (G11)
+Opt-in
+>50
+25-50
+<25 → intensifica contenuti
+27 Apr (G18)
+Opt-in
+>100
+50-100
+<50 → micro-ads €50-100
+4 Mag (G25)
+Opt-in
+>150
+100-150
+<100 → ads + DM outreach
+11 Mag (G32)
+Iscritti web.
+>50
+30-50
+<30 → email push + DM
+18 Mag (G39)
+Iscritti web.
+>80
+50-80
+<50 → WA + chiamate
+20 Mag (GW)
+Presenti
+>25
+15-25
+<15 → è ok, fai il tuo meglio
+25 Mag (GW+5)
+Vendite CCM
+>5
+3-5
+<3 → retrospettiva
+
+
+REGOLE D'ORO PER TUTTO IL PERIODO
+MAI saltare un giorno senza pubblicare almeno 1 contenuto
+MAI lasciare un DM senza risposta per più di 12 ore
+MAI rimandare il test end-to-end (fallo il 7 Aprile, NON dopo)
+Se qualcosa si rompe nel funnel → fix PRIMA di pubblicare contenuti
+Se le metriche sono 🔴 → l'azione correttiva è la priorità #1
+Il webinar è l'evento più importante — le prove generali NON sono opzionali
+Il follow-up post-webinar genera il 60-70% delle vendite — non mollare dopo il live
+Ogni sera: 10 minuti di report. Non di più, non di meno.
+L'aiutante gestisce editing + tech. Tu gestisci contenuto + relazioni.
+Se sei in dubbio su cosa fare → pubblica un contenuto di valore.

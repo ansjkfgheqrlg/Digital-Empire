@@ -1,0 +1,7 @@
+{
+  "css.validate": false,
+  "html.validate.styles": false,
+  "files.associations": {
+    "carousel-factory/templates/*.html": "html"
+  }
+}

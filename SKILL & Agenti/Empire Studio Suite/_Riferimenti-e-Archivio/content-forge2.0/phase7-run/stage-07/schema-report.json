@@ -1,0 +1,11 @@
+{
+  "verdict": "PASS",
+  "target": "skill",
+  "schema_version": "0.2.0-draft",
+  "checks": [],
+  "summary_counts": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  }
+}

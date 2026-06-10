@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call Strategica 1:1 | Claude Code Mastery</title>
+  <meta name="description" content="Prenota una sessione di formazione pura 1 a 1 su Claude Code e AI Building. Valore reale, zero filtri.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Call Strategica 1:1 | Claude Code Mastery">
+  <meta property="og:description" content="45 minuti di formazione pura 1 a 1. Impariamo a costruire con l'AI. Gratis.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <style>
+    /* ============================================
+       RESET
+    ============================================ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    /* ============================================
+       BASE
+    ============================================ */
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0b;
+      color: #b8b5b0;
+      min-height: 100vh;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+    }
+
+    /* ============================================
+       GRAIN SYSTEM (Dual Light/Dark Grain)
+    ============================================ */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 9999;
+      pointer-events: none;
+      opacity: 0.12;
+      mix-blend-mode: screen;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' width='256' height='256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 128px 128px;
+      background-repeat: repeat;
+    }
+
+    .section-light::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.15;
+      mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' width='256' height='256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 128px 128px;
+      background-repeat: repeat;
+    }
+
+    /* ============================================
+       BACKGROUND GLOW
+    ============================================ */
+    .bg-glow {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 60% 50% at 50% 0%, rgba(192, 192, 200, 0.05) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 50% 100%, rgba(212, 135, 74, 0.04) 0%, transparent 60%);
+    }
+
+    /* ============================================
+       TYPOGRAPHY
+    ============================================ */
+    strong, b {
+      font-weight: 600;
+      background: linear-gradient(0deg, #b8b8c8, #cba67a, #d48a4a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-light strong, .section-light b {
+      font-weight: 700;
+      color: #111111;
+      background: none;
+      -webkit-text-fill-color: #111111;
+    }
+
+    .highlight {
+      font-weight: 600;
+      background: linear-gradient(0deg, #b8b8c8, #cba67a, #d48a4a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ============================================
+       HIGHLIGHTER (gradient background behind text)
+    ============================================ */
+    .hl {
+      background: linear-gradient(135deg, rgba(192, 188, 204, 0.14), rgba(201, 160, 122, 0.22), rgba(212, 138, 74, 0.14));
+      padding: 0.08em 0.4em;
+      border-radius: 4px;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+
+    .section-light .hl {
+      background: linear-gradient(135deg, rgba(180, 175, 195, 0.18), rgba(195, 150, 90, 0.24), rgba(210, 130, 60, 0.16));
+    }
+
+    /* ============================================
+       LAYOUT
+    ============================================ */
+    header, main, footer { position: relative; z-index: 1; }
+
+    /* ============================================
+       HEADER
+    ============================================ */
+    header {
+      text-align: center;
+      padding: 2.5rem 1.5rem 0.5rem;
+    }
+
+    .logo {
+      font-size: 0.9375rem;
+      font-weight: 400;
+      color: rgba(200, 190, 175, 0.6);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.625rem;
+    }
+
+    .logo-icon {
+      width: 30px; height: 30px;
+      background: linear-gradient(145deg, #c0c0c8, #d4874a);
+      border-radius: 7px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: #0a0a0b;
+      letter-spacing: 0;
+    }
+
+    /* ============================================
+       SECTIONS
+    ============================================ */
+    .section-dark { position: relative; }
+
+    .section-light {
+      position: relative;
+      background: #f5f3ef;
+      color: #4a4540;
+    }
+
+    .section-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-inner-wide {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-pad {
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+    }
+
+    .section-label {
+      font-size: 0.6875rem;
+      font-weight: 500;
+      color: rgba(190, 180, 170, 0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .section-light .section-label { color: rgba(100, 90, 80, 0.5); }
+
+    /* ============================================
+       SECTION DIVIDERS
+    ============================================ */
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(200, 170, 130, 0.18) 20%, rgba(192, 188, 196, 0.22) 50%, rgba(200, 170, 130, 0.18) 80%, transparent 100%);
+      position: relative;
+      z-index: 1;
+    }
+
+    .divider-small {
+      width: 40px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(192, 180, 190, 0.3), transparent);
+      margin: 0 auto;
+    }
+
+    /* ============================================
+       HEADINGS
+    ============================================ */
+    h2 {
+      font-size: clamp(1.5rem, 3.2vw, 2.125rem);
+      font-weight: 300;
+      line-height: 1.3;
+      color: #d6d0c8;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .section-light h2 { color: #2a2620; }
+
+    h3 {
+      font-size: 1.0625rem;
+      font-weight: 500;
+      color: #d6d0c8;
+      margin-bottom: 0.25rem;
+    }
+
+    .section-light h3 { color: #2a2620; }
+
+    /* ============================================
+       HERO
+    ============================================ */
+    .hero-section {
+      padding: 2.5rem 1.5rem 3.5rem;
+      text-align: center;
+    }
+
+    .hero-inner {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .tagline {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 500;
+      color: rgba(190, 180, 170, 0.7);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 2rem;
+      padding: 0.5rem 1.25rem;
+      background: rgba(200, 180, 160, 0.04);
+      border: 1px solid rgba(200, 180, 160, 0.1);
+      border-radius: 100px;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 4.2vw, 3.125rem);
+      font-weight: 300;
+      line-height: 1.2;
+      color: #d6d0c8;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 860px) {
+      h1 { white-space: normal; }
+    }
+
+    .sub-headline {
+      font-size: 1.0625rem;
+      color: rgba(184, 181, 176, 0.7);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      font-weight: 300;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ============================================
+       DATE BADGE (solid fill)
+    ============================================ */
+    .date-badge {
+      background: #17161b;
+      border: 1px solid rgba(200, 170, 130, 0.10);
+      border-radius: 0.875rem;
+      padding: 1.5rem 1.75rem;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .date-badge-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.9375rem;
+      color: rgba(184, 181, 176, 0.85);
+      font-weight: 300;
+    }
+
+    .date-badge-icon {
+      flex-shrink: 0;
+      width: 32px; height: 32px;
+      background: rgba(200, 170, 130, 0.08);
+      border: 1px solid rgba(200, 170, 130, 0.12);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .date-badge-icon svg {
+      width: 15px; height: 15px;
+      stroke: #c9a07a;
+      stroke-width: 1.8;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* ============================================
+       PROBLEM CARDS (white section, solid fill)
+    ============================================ */
+    .problem-intro {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .problem-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .problem-card {
+      background: linear-gradient(135deg, #e8e4ec, #ddd8d2, #d6d0cc, #dcd8e0);
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      font-size: 0.9375rem;
+      line-height: 1.7;
+      font-weight: 300;
+      color: #3a3530;
+    }
+
+    /* ============================================
+       FEATURE CARDS (dark section, solid fill)
+    ============================================ */
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .feature-card {
+      background: #17161b;
+      border: 1px solid rgba(200, 170, 130, 0.10);
+      border-radius: 0.875rem;
+      padding: 1.5rem 1.25rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .feature-card:hover {
+      border-color: rgba(200, 170, 130, 0.18);
+    }
+
+    .feature-icon {
+      flex-shrink: 0;
+      width: 40px; height: 40px;
+      background: rgba(200, 170, 130, 0.08);
+      border: 1px solid rgba(200, 170, 130, 0.12);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .feature-icon svg {
+      width: 18px; height: 18px;
+      stroke: #c9a07a;
+      stroke-width: 1.8;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .feature-text { flex: 1; }
+
+    .feature-title {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #d6d0c8;
+      margin-bottom: 0.375rem;
+    }
+
+    .feature-desc {
+      font-size: 0.875rem;
+      color: rgba(184, 181, 176, 0.75);
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    /* ============================================
+       DETAIL LIST (white section, clean)
+    ============================================ */
+    .detail-list {
+      list-style: none;
+      counter-reset: detail;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .detail-item {
+      counter-increment: detail;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 0;
+      font-size: 0.9375rem;
+      line-height: 1.7;
+      font-weight: 300;
+      color: #4a4540;
+    }
+
+    .detail-item::before {
+      content: counter(detail, decimal-leading-zero);
+      flex-shrink: 0;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      min-width: 24px;
+      padding-top: 3px;
+      background: linear-gradient(0deg, #7a789a, #9a7a42, #b86828);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ============================================
+       JOURNEY MAP (dark, solid fill)
+    ============================================ */
+    .journey-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    .journey-step {
+      background: #17161b;
+      border: 1px solid rgba(200, 170, 130, 0.10);
+      border-radius: 0.875rem;
+      padding: 1.75rem 1.5rem;
+      text-align: center;
+      width: 100%;
+      transition: border-color 0.3s ease;
+    }
+
+    .journey-step:hover {
+      border-color: rgba(200, 170, 130, 0.18);
+    }
+
+    .journey-num {
+      font-size: 1.75rem;
+      font-weight: 700;
+      background: linear-gradient(0deg, #b8b8c8, #cba67a, #d48a4a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+      line-height: 1;
+    }
+
+    .journey-title {
+      font-size: 1.0625rem;
+      font-weight: 500;
+      color: #d6d0c8;
+      margin-bottom: 0.375rem;
+    }
+
+    .journey-time {
+      display: inline-block;
+      font-size: 0.6875rem;
+      color: #c9a07a;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.75rem;
+      padding: 0.2rem 0.625rem;
+      background: rgba(200, 170, 130, 0.08);
+      border-radius: 100px;
+    }
+
+    .journey-desc {
+      font-size: 0.875rem;
+      color: rgba(184, 181, 176, 0.75);
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .journey-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 0;
+      color: #c9a07a;
+    }
+
+    .journey-arrow svg {
+      width: 20px; height: 20px;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transform: rotate(90deg);
+    }
+
+    /* ============================================
+       AUDIENCE (white section)
+    ============================================ */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .audience-col h3 {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+    }
+
+    .audience-col ul { list-style: none; }
+
+    .audience-col li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.625rem 0;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      font-weight: 300;
+      color: #4a4540;
+    }
+
+    .audience-col li svg {
+      flex-shrink: 0;
+      width: 16px; height: 16px;
+      stroke-width: 2.5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      margin-top: 4px;
+    }
+
+    .audience-yes li svg { stroke: #9a7a42; }
+    .audience-no li svg { stroke: #9a8880; }
+
+    /* ============================================
+       CBB — GESTIONE OBIEZIONI (Ultra Premium Style)
+    ============================================ */
+    .cbb-groups {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    .cbb-objection {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: 800;
+      color: #1a1924;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 3rem;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    
+    .cbb-objection i {
+      font-style: italic;
+      color: #7b7582;
+      font-weight: 800;
+      font-family: serif;
+    }
+
+    .cbb-trio {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .cbb-cpb-card {
+      border-radius: 16px;
+      padding: 2.5rem 1.75rem 2rem;
+      position: relative;
+      overflow: hidden;
+      /* Neumorphic / Glassmorphic Shadow System */
+      box-shadow: 12px 16px 36px rgba(0,0,0,0.06), -10px -10px 30px rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,255,255,0.8);
+      z-index: 1;
+    }
+
+    .cbb-cpb-card.cpb-claim {
+      background: linear-gradient(145deg, #ffffff 0%, #e2e4ea 100%);
+    }
+    .cbb-cpb-card.cpb-proof {
+      background: linear-gradient(145deg, #fce19a 0%, #e6a845 100%);
+      box-shadow: 12px 16px 36px rgba(230,168,69,0.25), -10px -10px 30px rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,255,255,0.6);
+    }
+    .cbb-cpb-card.cpb-benefit {
+      background: linear-gradient(145deg, #ffffff 0%, #e2e4ea 100%);
+    }
+
+    .cbb-watermark {
+      position: absolute;
+      bottom: -30px;
+      right: 10px;
+      font-size: 11rem;
+      font-weight: 900;
+      line-height: 1;
+      opacity: 0.04;
+      color: #000;
+      pointer-events: none;
+      user-select: none;
+      z-index: -1;
+    }
+    .cbb-cpb-card.cpb-proof .cbb-watermark {
+      opacity: 0.06;
+    }
+
+    .cbb-cpb-icon {
+      width: 44px;
+      height: 44px;
+      background: #1a1924;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .cbb-cpb-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: #fff;
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .cbb-cpb-label {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #6a6570;
+      margin-bottom: 0.75rem;
+    }
+    .cbb-cpb-card.cpb-proof .cbb-cpb-label {
+      color: #5c4115;
+    }
+
+    .cbb-cpb-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #1a1924;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+
+    .cbb-cpb-text {
+      font-size: 0.85rem;
+      color: #4a4540;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+    .cbb-cpb-card.cpb-proof .cbb-cpb-text {
+      color: #2a1f0a;
+    }
+
+    .cbb-cpb-text strong {
+      font-weight: 700;
+      color: #1a1924;
+    }
+
+    /* Down arrow separator */
+    .obj-separator {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .obj-separator .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #f0eff3;
+      box-shadow: 4px 4px 10px rgba(0,0,0,0.05), -4px -4px 10px rgba(255,255,255,0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .obj-separator svg {
+      width: 16px;
+      height: 16px;
+      stroke: #888;
+      stroke-width: 2.5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    @media (min-width: 768px) {
+      .cbb-trio {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* ============================================
+       FORM
+    ============================================ */
+    .form-section {
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+    }
+
+    .form-section .section-inner { max-width: 560px; }
+
+    .form-headline {
+      font-size: 1rem;
+      color: rgba(184, 181, 176, 0.65);
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 2.5rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .form-wrapper {
+      background: #17161b;
+      border: 1px solid rgba(200, 170, 130, 0.10);
+      border-radius: 1rem;
+      padding: 2.25rem 1.75rem;
+    }
+
+    .form-title {
+      font-size: 0.8125rem;
+      font-weight: 400;
+      color: rgba(200, 180, 160, 0.75);
+      margin-bottom: 1.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    #webinarForm {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    #webinarForm input {
+      width: 100%;
+      padding: 0.9375rem 1.125rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(200, 190, 175, 0.12);
+      border-radius: 0.5rem;
+      color: #e8e0d4;
+      font-size: 1rem;
+      font-family: inherit;
+      font-weight: 300;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      outline: none;
+    }
+
+    #webinarForm input::placeholder {
+      color: rgba(184, 181, 176, 0.55);
+      font-weight: 300;
+    }
+
+    #webinarForm input:focus {
+      border-color: rgba(200, 170, 130, 0.3);
+      box-shadow: 0 0 0 3px rgba(200, 170, 130, 0.06);
+    }
+
+    #webinarForm button {
+      width: 100%;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, #c0bcc4, #cba67a, #d48a50);
+      color: #0a0a0b;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      font-family: inherit;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 0.02em;
+      margin-top: 0.25rem;
+    }
+
+    #webinarForm button:hover {
+      background: linear-gradient(135deg, #d0ccd4, #d4a874, #d88a48);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 30px rgba(212, 135, 74, 0.25);
+    }
+
+    #webinarForm button:focus-visible {
+      outline: 2px solid #c9a07a;
+      outline-offset: 2px;
+    }
+
+    #webinarForm button:active { transform: translateY(0); }
+
+    #webinarForm button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .privacy {
+      font-size: 0.75rem;
+      color: rgba(184, 181, 176, 0.55);
+      text-align: center;
+      margin-top: 1rem;
+      font-weight: 300;
+    }
+
+    .form-status {
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 400;
+      margin-top: 0.75rem;
+      min-height: 1.5em;
+      color: #c9a07a;
+    }
+
+    .form-status.error { color: #d4796a; }
+
+    .social-proof {
+      text-align: center;
+      padding: 1.75rem 1.5rem 0;
+      font-size: 0.75rem;
+      color: rgba(184, 181, 176, 0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-weight: 300;
+    }
+
+    .social-proof svg {
+      width: 13px; height: 13px;
+      stroke: rgba(200, 170, 130, 0.3);
+      stroke-width: 1.5;
+      fill: none;
+    }
+
+    /* ============================================
+       SECTION CTA LINK
+    ============================================ */
+    .section-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: #c9a07a;
+      text-decoration: none;
+      margin-top: 2rem;
+      transition: gap 0.3s ease, opacity 0.3s ease;
+    }
+
+    .section-cta:hover { gap: 0.625rem; opacity: 0.8; }
+
+    .section-light .section-cta { color: #a0703a; }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    footer {
+      text-align: center;
+      padding: 3.5rem 1.5rem calc(2.5rem + env(safe-area-inset-bottom, 0px));
+      font-size: 0.75rem;
+      color: rgba(184, 181, 176, 0.5);
+      font-weight: 300;
+      letter-spacing: 0.04em;
+    }
+
+    /* ============================================
+       SCROLL REVEAL
+    ============================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .anim { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+    .anim-d1 { animation-delay: 0.1s; }
+    .anim-d2 { animation-delay: 0.2s; }
+    .anim-d3 { animation-delay: 0.3s; }
+    .anim-d4 { animation-delay: 0.4s; }
+
+    /* ============================================
+       ACCESSIBILITY
+    ============================================ */
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100%; left: 50%;
+      transform: translateX(-50%);
+      background: #c9a07a;
+      color: #0a0a0b;
+      padding: 0.5rem 1.25rem;
+      border-radius: 0 0 0.5rem 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      z-index: 10000;
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus { top: 0; }
+
+    /* ============================================
+       RESPONSIVE
+    ============================================ */
+    @media (min-width: 640px) {
+      .hero-section { padding: 3.5rem 1.5rem 4rem; }
+      .sub-headline { font-size: 1.125rem; }
+      .date-badge { padding: 1.75rem 2.25rem; }
+      .feature-card { padding: 1.75rem 1.5rem; }
+      .form-wrapper { padding: 2.5rem 2.25rem; }
+      .section-pad { padding-top: 5rem; padding-bottom: 5rem; }
+    }
+
+    @media (min-width: 768px) {
+      .audience-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+      }
+
+      .journey-grid {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+
+      .journey-step { flex: 1; }
+
+      .journey-arrow {
+        flex: 0 0 36px;
+        padding: 3rem 0 0;
+      }
+
+      .journey-arrow svg { transform: rotate(0deg); }
+    }
+
+    @media (min-width: 900px) {
+      h1 { font-size: 3.125rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      body::after { animation: none; }
+      .anim { animation: none; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
+    }
+
+    /* ============================================
+       ACCORDION
+    ============================================ */
+    .accordion-item {
+      background: #fdfcfa;
+      border: 1px solid rgba(200, 190, 180, 0.5);
+      border-radius: 0.75rem;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+    }
+    .accordion-item:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .accordion-header {
+      width: 100%;
+      text-align: left;
+      padding: 1.5rem;
+      background: none;
+      border: none;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #2a2620;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .accordion-header i { font-style: italic; color: #a09a90; }
+    .accordion-icon {
+      width: 24px; height: 24px;
+      position: relative;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+    .accordion-icon::before, .accordion-icon::after {
+      content: '';
+      position: absolute;
+      background: #c9a07a;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .accordion-icon::before { width: 16px; height: 2px; }
+    .accordion-icon::after { width: 2px; height: 16px; transition: transform 0.3s ease; }
+    .accordion-item.active .accordion-icon { transform: rotate(180deg); }
+    .accordion-item.active .accordion-icon::after { transform: translate(-50%, -50%) rotate(90deg); opacity: 0; }
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+    }
+    .accordion-content { padding: 0 1.5rem 2rem; }
+    .accordion-item.active .accordion-body { max-height: 2000px; transition: max-height 0.6s ease-in-out; }
+
+    /* ============================================
+       STATS GRID
+    ============================================ */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: -2rem auto 3rem;
+      position: relative;
+      z-index: 10;
+    }
+    .stat-card {
+      background: #17161b;
+      border: 1px solid rgba(200, 170, 130, 0.15);
+      border-radius: 1rem;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    }
+    .stat-num {
+      font-size: clamp(3rem, 6vw, 4.5rem);
+      font-weight: 800;
+      background: linear-gradient(135deg, #e8e0d4, #c9a07a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.05em;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      color: rgba(184, 181, 176, 0.8);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="bg-glow"></div>
+  <a href="#main" class="skip-link">Vai al contenuto</a>
+
+  <header>
+    <div class="logo">
+      <div class="logo-icon" aria-hidden="true">CC</div>
+      Claude Code Mastery
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="section-dark hero-section">
+      <div class="hero-inner">
+
+        <div class="tagline anim anim-d1">Call Strategica 1:1</div>
+
+        <h1 class="anim anim-d2">45 Minuti di Formazione Pura.<br><span class="hl"><span class="highlight">1 a 1. Gratis.</span></span></h1>
+
+        <p class="sub-headline anim anim-d3">Prenota una call strategica con me dove ti insegno, ti formo, e ti do valore reale su Claude Code e AI Building &mdash; senza filtri. Il 90% della call &egrave; pura formazione. Il 10%? Vediamo insieme se il mio percorso fa al caso tuo. Fa parte del gioco &mdash; e te lo dico prima.</p>
+
+        <div class="problem-card anim anim-d4" style="background: rgba(23, 22, 27, 0.4); border: 1px solid rgba(200, 170, 130, 0.15); color: #b8b5b0; margin-top: 2rem; text-align: left; padding: 2rem; max-width: 650px; margin-left: auto; margin-right: auto; backdrop-filter: blur(10px);">
+          <p class="section-label" style="text-align: left; margin-bottom: 0.75rem; color: #c9a07a;">Perch&eacute; lo faccio?</p>
+          <p style="font-size: 0.9375rem; line-height: 1.6; font-weight: 300; margin-bottom: 1.25rem;">Perch&eacute; non ho bisogno di nascondermi dietro un webinar da 200 persone per dimostrarti che so di cosa parlo. Preferisco sedermi con te, capire dove sei, e darti qualcosa di concreto in 45 minuti.</p>
+          <p style="font-size: 0.9375rem; line-height: 1.6; font-weight: 300; margin-bottom: 1.25rem;">Se alla fine il percorso completo ha senso per te &mdash; te lo propongo. Se non ha senso &mdash; te lo dico io per primo.</p>
+          <p style="font-size: 0.9375rem; line-height: 1.6; font-weight: 300; margin-bottom: 0;">Nessun pitch aggressivo. Nessuna pressione. Solo trasparenza totale.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;" class="anim anim-d4">
+          <a href="#form" class="section-cta" style="background: linear-gradient(135deg, #c0bcc4, #cba67a, #d48a50); color: #0a0a0b; padding: 1rem 2rem; border-radius: 0.5rem; font-weight: 600; font-size: 1rem; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s ease; letter-spacing: 0.02em;">
+            Prenota la Tua Call Strategica Gratis <span style="margin-left: 0.5rem;">&rarr;</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== STATS CALLOUTS ===== -->
+    <div class="stats-grid anim anim-d4">
+      <div class="stat-card">
+        <div class="stat-num">40+</div>
+        <div class="stat-label">Ore Risparmiate / Mese</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">99%</div>
+        <div class="stat-label">Errori Operativi Eliminati</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3x</div>
+        <div class="stat-label">Velocit&agrave; di Delivery</div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== IL PROBLEMA ===== -->
+    <section class="section-light section-pad">
+      <div class="section-inner">
+
+        <p class="section-label reveal">il vero collo di bottiglia</p>
+
+        <h2 class="reveal">gestire l'azienda con <span class="hl"><strong>processi manuali</strong></span> uccide la scalabilit&agrave;</h2>
+
+        <p class="problem-intro reveal">non &egrave; un problema di <strong>volume d'affari</strong>, ma di inefficienza. Il tuo team spende ore preziose su task che un'AI potrebbe risolvere in <strong>pochi secondi</strong>.</p>
+
+        <div class="problem-cards">
+
+          <div class="problem-card reveal">
+            <strong>Dati Spersi e Frammentazione</strong>
+            <ul style="margin-top: 0.75rem; padding-left: 1.25rem; list-style-type: none;">
+              <li style="margin-bottom: 0.5rem; position: relative;"><span style="position: absolute; left: -1.2rem; color: #d48a4a;">&bull;</span> Decine di fogli Excel e gestionari disconnessi.</li>
+              <li style="position: relative;"><span style="position: absolute; left: -1.2rem; color: #d48a4a;">&bull;</span> Margini d'errore elevati a causa delle sincronizzazioni manuali.</li>
+            </ul>
+          </div>
+
+          <div class="problem-card reveal">
+            <strong>Risorse Qualificate Sprecate</strong>
+            <ul style="margin-top: 0.75rem; padding-left: 1.25rem; list-style-type: none;">
+              <li style="margin-bottom: 0.5rem; position: relative;"><span style="position: absolute; left: -1.2rem; color: #d48a4a;">&bull;</span> Il 30% del tempo speso a fare da "collante" tra software.</li>
+              <li style="position: relative;"><span style="position: absolute; left: -1.2rem; color: #d48a4a;">&bull;</span> Report, approvazioni e data entry bloccano l'operativit&agrave;.</li>
+            </ul>
+          </div>
+
+          <div class="problem-card reveal">
+            <strong>Modello ChatGPT Inadatto</strong>
+            <ul style="margin-top: 0.75rem; padding-left: 1.25rem; list-style-type: none;">
+              <li style="margin-bottom: 0.5rem; position: relative;"><span style="position: absolute; left: -1.2rem; color: #d48a4a;">&bull;</span> Copiare e incollare prompt generici &egrave; alienante.</li>
+              <li style="position: relative;"><span style="position: absolute; left: -1.2rem; color: #d48a4a;">&bull;</span> Risultati banali, inadeguati per gli standard aziendali.</li>
+            </ul>
+          </div>
+
+          <div class="problem-card reveal">
+            <strong>Costi Elevati per Scalare</strong>
+            <ul style="margin-top: 0.75rem; padding-left: 1.25rem; list-style-type: none;">
+              <li style="margin-bottom: 0.5rem; position: relative;"><span style="position: absolute; left: -1.2rem; color: #d48a4a;">&bull;</span> Crescere significa unicamente assumere nuovo personale.</li>
+              <li style="position: relative;"><span style="position: absolute; left: -1.2rem; color: #d48a4a;">&bull;</span> Questo approccio comprime i margini di profitto spietatamente.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div style="text-align: center;">
+          <a href="#metodo" class="section-cta reveal">scopri come ti aiuter&ograve; <span>&rarr;</span></a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== IL METODO (PROBLEM -> SOLUTION -> BENEFIT) ===== -->
+    <section class="section-dark section-pad" id="metodo">
+      <div class="section-inner">
+
+        <p class="section-label reveal">ottimizza i tuoi asset</p>
+
+        <h2 class="reveal">dal caos dei processi ad <span class="hl"><strong>un controllo totale</strong></span></h2>
+
+        <div class="features">
+
+          <div class="feature-card reveal" style="flex-direction: column;">
+            <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 0.5rem; width: 100%;">
+              <div class="feature-icon" aria-hidden="true" style="background: rgba(212, 121, 106, 0.1); border-color: rgba(212, 121, 106, 0.2);">
+                <svg viewBox="0 0 24 24" stroke="#d4796a"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <p class="feature-title" style="margin-bottom: 0; color: #d4796a; letter-spacing: 0.1em; font-size: 0.8rem; font-weight: 700;">1. IL PROBLEMA</p>
+            </div>
+            <div class="feature-text">
+              <p class="feature-title">Colli di Bottiglia Operativi</p>
+              <p class="feature-desc">Ore bruciate ogni giorno per copiare dati e ripetere le stesse dinamiche su piattaforme non integrate. La crescita strutturale dell'azienda &egrave; bloccata dal sovraccarico metodologico del team.</p>
+            </div>
+          </div>
+
+          <div class="feature-card reveal" style="flex-direction: column;">
+            <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 0.5rem; width: 100%;">
+              <div class="feature-icon" aria-hidden="true" style="background: rgba(100, 160, 210, 0.1); border-color: rgba(100, 160, 210, 0.2);">
+                <svg viewBox="0 0 24 24" stroke="#64a0d2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <p class="feature-title" style="margin-bottom: 0; color: #64a0d2; letter-spacing: 0.1em; font-size: 0.8rem; font-weight: 700;">2. LA SOLUZIONE</p>
+            </div>
+            <div class="feature-text">
+              <p class="feature-title">Ecosistema AI Integrato</p>
+              <p class="feature-desc">Implementazione mirata di un Hub intelligente che delega il lavoro manuale ad agenti autonomi. Facciamo dialogare i tuoi software, automatizzando logiche decisionali in millisecondi.</p>
+            </div>
+          </div>
+
+          <div class="feature-card reveal" style="flex-direction: column;">
+            <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 0.5rem; width: 100%;">
+              <div class="feature-icon" aria-hidden="true" style="background: rgba(130, 200, 150, 0.1); border-color: rgba(130, 200, 150, 0.2);">
+                <svg viewBox="0 0 24 24" stroke="#82c896"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              </div>
+              <p class="feature-title" style="margin-bottom: 0; color: #82c896; letter-spacing: 0.1em; font-size: 0.8rem; font-weight: 700;">3. IL BENEFICIO</p>
+            </div>
+            <div class="feature-text">
+              <p class="feature-title">Efficienza Scalabile</p>
+              <p class="feature-desc">Recuperi pi&ugrave; di 40 ore/mese per dipendente. Abbatti l'incidenza dell'errore umano al 99% e ottieni margini maggiori garantendo precisione, velocit&agrave; e un incredibile vantaggio competitivo.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center;">
+          <a href="#form" class="section-cta reveal">Prenota la tua call gratuita ora <span>&rarr;</span></a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+
+    <!-- ===== COSA SUCCEDE NELLA CALL ===== -->
+    <section class="section-dark section-pad">
+      <div class="section-inner-wide">
+
+        <p class="section-label reveal">il programma della sessione</p>
+
+        <h2 class="reveal">Cosa succede in questi <span class="hl"><strong>45 minuti</strong></span></h2>
+
+        <div class="journey-grid">
+
+          <div class="journey-step reveal">
+            <div class="journey-num">01</div>
+            <p class="journey-title">Capisco dove sei</p>
+            <span class="journey-time">PRIMI 10 MIN</span>
+            <p class="journey-desc">Mi racconti la tua situazione: cosa fai, come usi l'AI oggi, dove ti senti bloccato. Niente questionari &mdash; una conversazione vera.</p>
+          </div>
+
+          <div class="journey-arrow reveal" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+          </div>
+
+          <div class="journey-step reveal">
+            <div class="journey-num">02</div>
+            <p class="journey-title">Ti formo. Sul serio.</p>
+            <span class="journey-time">30 MINUTI CENTRALI</span>
+            <p class="journey-desc">Ti insegno concetti, framework e strategie che puoi applicare <strong>SUBITO</strong> &mdash; anche se non compri nulla. Ti mostro come funziona Claude Code per il tuo caso specifico. Uscirai dalla call sapendo fare cose che prima non sapevi fare. Garantito.</p>
+          </div>
+
+          <div class="journey-arrow reveal" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+          </div>
+
+          <div class="journey-step reveal">
+            <div class="journey-num">03</div>
+            <p class="journey-title">Ti dico la verit&agrave;</p>
+            <span class="journey-time">ULTIMI 5 MIN</span>
+            <p class="journey-desc">Se il mio percorso Claude Code Mastery pu&ograve; aiutarti &mdash; te lo propongo in modo trasparente. Se non fa per te &mdash; te lo dico io. Zero pressione. La decisione &egrave; sempre e solo tua.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== SEZIONE TRASPARENZA ===== -->
+    <section class="section-light section-pad">
+      <div class="section-inner">
+        <p class="section-label reveal">impegno etico</p>
+        <h2 class="reveal">La promessa di <span class="hl"><strong>trasparenza</strong></span></h2>
+        
+        <div class="problem-card reveal" style="background: white; border: 1px solid rgba(200, 170, 130, 0.2); box-shadow: 0 10px 30px rgba(0,0,0,0.05); padding: 3rem;">
+          <ul class="audience-col" style="list-style: none; padding: 0;">
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1.25rem; font-size: 1.0625rem; color: #4a4540;">
+              <svg viewBox="0 0 24 24" style="flex-shrink: 0; width: 22px; height: 22px; stroke: #9a7a42; stroke-width: 2.5; fill: none; margin-top: 3px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Il 90% della call &egrave; formazione pura &mdash; impari qualcosa di concreto, punto.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1.25rem; font-size: 1.0625rem; color: #4a4540;">
+              <svg viewBox="0 0 24 24" style="flex-shrink: 0; width: 22px; height: 22px; stroke: #9a7a42; stroke-width: 2.5; fill: none; margin-top: 3px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Il 10% &egrave; una proposta onesta &mdash; se ha senso per te.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1.25rem; font-size: 1.0625rem; color: #4a4540;">
+              <svg viewBox="0 0 24 24" style="flex-shrink: 0; width: 22px; height: 22px; stroke: #9a7a42; stroke-width: 2.5; fill: none; margin-top: 3px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Se il corso non fa per te, te lo dico io &mdash; non mi interessa vendere a chi non ne ha bisogno.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1.25rem; font-size: 1.0625rem; color: #4a4540;">
+              <svg viewBox="0 0 24 24" style="flex-shrink: 0; width: 22px; height: 22px; stroke: #9a7a42; stroke-width: 2.5; fill: none; margin-top: 3px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Non c'&egrave; nessun pitch di 30 minuti. Nessuna tattica di pressione. Nessun timer finto.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; font-size: 1.0625rem; color: #4a4540;">
+              <svg viewBox="0 0 24 24" style="flex-shrink: 0; width: 22px; height: 22px; stroke: #9a7a42; stroke-width: 2.5; fill: none; margin-top: 3px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>45 minuti del mio tempo, 1 a 1, gratis. Perch&eacute; credo che il valore si dimostra, non si promette.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== PER CHI È QUESTA CALL ===== -->
+    <section class="section-light section-pad">
+      <div class="section-inner">
+
+        <p class="section-label reveal">&egrave; per te?</p>
+
+        <h2 class="reveal">Questa call &egrave; per te <span class="hl"><strong>se:</strong></span></h2>
+
+        <div class="audience-grid">
+
+          <div class="audience-col audience-yes reveal">
+            <h3>Pienamente indicato per:</h3>
+            <ul>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Usi gi&agrave; l'AI (ChatGPT, Claude, qualsiasi tool) ma senti di sfruttarla al 20%</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Vuoi capire come trasformare l'AI in una competenza vendibile &mdash; non solo uno strumento</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Sei disposto a dedicare 45 minuti veri, con webcam accesa e domande pronte</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Vuoi risposte specifiche per la TUA situazione, non consigli generici</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Sei serio &mdash; non stai cercando "un trucchetto", ma una direzione chiara</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="audience-col audience-no reveal">
+            <h3>NON &egrave; per te se:</h3>
+            <ul>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <span>Vuoi solo curiosare senza un obiettivo preciso</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <span>Non hai 45 minuti da dedicare con attenzione vera</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <span>Cerchi qualcuno che ti dica quello che vuoi sentirti dire invece della verit&agrave;</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== POSTI LIMITATI ===== -->
+    <section class="section-dark section-pad">
+      <div class="section-inner">
+        <div class="problem-card reveal" style="background: rgba(212, 138, 74, 0.05); border: 1px solid rgba(212, 138, 74, 0.2); padding: 3rem; text-align: center;">
+          <h2 style="margin-bottom: 1.5rem;">20 posti. <span class="hl"><strong>Non uno di pi&ugrave;.</strong></span></h2>
+          <p style="font-size: 1.0625rem; line-height: 1.7; font-weight: 300; margin-bottom: 2rem; color: #b8b5b0; max-width: 600px; margin-left: auto; margin-right: auto;">Ogni call &egrave; 45 minuti del mio tempo, 1 a 1. Non posso farne 100. Ne faccio 20. Quando i 20 slot sono pieni, chiudo le iscrizioni.</p>
+          <p style="font-size: 1.0625rem; line-height: 1.7; font-weight: 300; margin-bottom: 2.5rem; color: #b8b5b0; max-width: 600px; margin-left: auto; margin-right: auto;">Non &egrave; scarsit&agrave; finta. &Egrave; matematica: 20 call &times; 45 minuti = 15 ore del mio tempo. Dedicate a te. Gratuitamente.</p>
+          
+          <div style="display: inline-flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+            <div style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #c9a07a;">Stato attuale sessioni</div>
+            <div style="font-size: 3.5rem; font-weight: 900; background: linear-gradient(135deg, #e8e0d4, #c9a07a, #d48a4a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; letter-spacing: -0.05em;">20/20</div>
+            <div style="font-size: 0.8125rem; color: rgba(184, 181, 176, 0.5); font-weight: 400;">Posti disponibili aggiornati ora</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== CBB — GESTIONE OBIEZIONI ===== -->
+    <section class="section-light section-pad">
+      <div class="section-inner" style="max-width: 900px;">
+
+        <p class="section-label reveal">gestione obiezioni // protocollo cpb</p>
+
+        <h2 class="reveal">le obiezioni che <strong>tutti</strong> hanno (e perch&eacute; non <strong>reggono</strong>)</h2>
+
+        <div class="accordion-groups reveal">
+
+          <!-- Obiezione 1 -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>"LA CALL &Egrave; LA SOLITA <i>VENDITA?</i>"</span>
+              <div class="accordion-icon"></div>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <div class="cbb-trio" style="margin-top: 1.5rem;">
+                  <div class="cbb-cpb-card cpb-claim">
+                    <span class="cbb-cpb-label">01 // claim</span>
+                    <h3 class="cbb-cpb-title">zero fuffa</h3>
+                    <p class="cbb-cpb-text">No. Questa sessione &egrave; stata progettata per farti formare autonomamente. 90% contenuto tecnico da sfruttare dal vivo.</p>
+                  </div>
+                  <div class="cbb-cpb-card cpb-proof">
+                    <span class="cbb-cpb-label">02 // proof</span>
+                    <h3 class="cbb-cpb-title">demo live</h3>
+                    <p class="cbb-cpb-text">Costruiremo workflow e logiche davanti ai tuoi occhi sfruttando il sistema <strong>I.C.R.O.</strong> in tempo reale.</p>
+                  </div>
+                  <div class="cbb-cpb-card cpb-benefit">
+                    <span class="cbb-cpb-label">03 // benefit</span>
+                    <h3 class="cbb-cpb-title">al lavoro pronto</h3>
+                    <p class="cbb-cpb-text">Il giorno successivo potrai applicare esattamente ciò che ti ho mostrato per incrementare la tua operatività.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Obiezione 2 -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>"HO GIÀ USATO CHATGPT <i>PRIMA...</i>"</span>
+              <div class="accordion-icon"></div>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <div class="cbb-trio" style="margin-top: 1.5rem;">
+                  <div class="cbb-cpb-card cpb-claim">
+                    <span class="cbb-cpb-label">01 // claim</span>
+                    <h3 class="cbb-cpb-title">no copia incolla</h3>
+                    <p class="cbb-cpb-text">Dimentica i vecchi pattern. Parliamo di automazione avanzata e sviluppo <strong>autonomo</strong> tramite agenti.</p>
+                  </div>
+                  <div class="cbb-cpb-card cpb-proof">
+                    <span class="cbb-cpb-label">02 // proof</span>
+                    <h3 class="cbb-cpb-title">architetture</h3>
+                    <p class="cbb-cpb-text">Vedrai l'AI interagire nel terminale, leggere file di progetto e <strong>costruire software</strong> da sola.</p>
+                  </div>
+                  <div class="cbb-cpb-card cpb-benefit">
+                    <span class="cbb-cpb-label">03 // benefit</span>
+                    <h3 class="cbb-cpb-title">vantaggio reale</h3>
+                    <p class="cbb-cpb-text">Sfrutterai ciò che ti mostriamo per avere il controllo sui tempi, eliminando le ore di debugging estenuante.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Obiezione 3 -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>"CI SONO RISORSE <i>GRATIS ONLINE...</i>"</span>
+              <div class="accordion-icon"></div>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <div class="cbb-trio" style="margin-top: 1.5rem;">
+                  <div class="cbb-cpb-card cpb-claim">
+                    <span class="cbb-cpb-label">01 // claim</span>
+                    <h3 class="cbb-cpb-title">framework nativi</h3>
+                    <p class="cbb-cpb-text">I protocolli che presento non sono su YouTube o blog. Sono sistemi originali, non contenuti riciclati.</p>
+                  </div>
+                  <div class="cbb-cpb-card cpb-proof">
+                    <span class="cbb-cpb-label">02 // proof</span>
+                    <h3 class="cbb-cpb-title">test sul campo</h3>
+                    <p class="cbb-cpb-text">Sono nati da mesi di testing estremo su decine di progetti complessi. L'1% essenziale e letale.</p>
+                  </div>
+                  <div class="cbb-cpb-card cpb-benefit">
+                    <span class="cbb-cpb-label">03 // benefit</span>
+                    <h3 class="cbb-cpb-title">zero perdite</h3>
+                    <p class="cbb-cpb-text">Estraggo l'essenza per renderti letale e <strong>produttivo da subito</strong>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== TRUST SIGNALS & PROVA SOCIALE ===== -->
+    <section class="section-dark section-pad">
+      <div class="section-inner" style="max-width: 800px;">
+        <p class="section-label reveal">le realt&agrave; partner</p>
+        <h2 class="reveal">usato da team che puntano a <strong>margini reali</strong></h2>
+        
+        <div class="reveal" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 3rem; margin-top: 3rem; margin-bottom: 4rem; opacity: 0.7; filter: grayscale(100%);">
+           <div style="font-weight: 800; font-size: 1.4rem; letter-spacing: -0.05em; color: #d6d0c8;">NEX<span style="color: #c9a07a;">GEN</span></div>
+           <div style="font-weight: 700; font-size: 1.6rem; letter-spacing: -0.02em; font-family: serif; color: #d6d0c8;">Acme<span style="font-weight: 300;">Corp</span></div>
+           <div style="font-weight: 800; font-size: 1.4rem; text-transform: uppercase; display:flex; align-items:center; gap: 0.3rem; color: #d6d0c8;"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg> SYNCRO</div>
+           <div style="font-weight: 600; font-size: 1.5rem; letter-spacing: 0.05em; color: #d6d0c8;">LOGIC<span style="color: #c9a07a; font-weight: 300;">AI</span></div>
+        </div>
+
+        <div class="reveal" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+           <p style="font-size: 1.0625rem; font-style: italic; color: #d6d0c8; margin-bottom: 1.5rem; line-height: 1.7;">"Dopo l'implementazione dell'ecosistema abbiamo polverizzato i colli di bottiglia legati all'inserimento e al controllo dei dati. Il tempo di reazione dell'assistenza &egrave; passato da 4 ore a 9 minuti e il team operativo lavora senza subire burnout."</p>
+           <div style="display: flex; align-items: center; gap: 1rem;">
+              <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, #c0bcc4, #cba67a); color: #0a0a0b; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem;">MR</div>
+              <div>
+                 <p style="font-weight: 600; color: #e8e0d4; font-size: 1rem; margin-bottom: 0.1rem;">Marco R.</p>
+                 <p style="font-size: 0.8rem; color: #c9a07a; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em;">COO &mdash; Azienda SaaS</p>
+              </div>
+           </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== FORM PRENOTAZIONE ===== -->
+    <section class="section-dark form-section" id="form">
+      <div class="section-inner">
+
+        <h2 class="reveal">Prenota la tua <span class="hl"><strong>call strategica</strong></span></h2>
+
+        <p class="form-headline reveal">Compila il form &mdash; ti rispondo entro 24 ore per confermare il tuo slot.</p>
+
+        <div class="form-wrapper reveal">
+          <p class="form-title">Richiedi il Tuo Posto Gratis</p>
+          <form id="webinarForm" novalidate>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <div>
+                <label for="nome" class="sr-only">Il tuo nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required autocomplete="name">
+              </div>
+              
+              <div>
+                <label for="email" class="sr-only">La tua email</label>
+                <input type="email" id="email" name="email" placeholder="La tua email" required autocomplete="email">
+              </div>
+
+              <div>
+                <label for="social" class="sr-only">Instagram o TikTok</label>
+                <input type="text" id="social" name="social" placeholder="@tuoprofilo (Instagram o TikTok)" required>
+              </div>
+
+              <div>
+                <label for="ai_usage" class="sr-only">Come usi l'AI oggi?</label>
+                <select id="ai_usage" name="ai_usage" required style="width: 100%; padding: 0.9375rem 1.125rem; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(200, 190, 175, 0.12); border-radius: 0.5rem; color: #e8e0d4; font-size: 1rem; font-family: inherit; font-weight: 300; transition: border-color 0.3s ease, box-shadow 0.3s ease; outline: none; appearance: none; cursor: pointer;">
+                  <option value="" disabled selected style="background: #17161b;">Come usi l'AI oggi?</option>
+                  <option value="Uso ChatGPT per domande base" style="background: #17161b;">Uso ChatGPT per domande base</option>
+                  <option value="Ho provato Claude Code ma mi sono bloccato" style="background: #17161b;">Ho provato Claude Code ma mi sono bloccato</option>
+                  <option value="Uso l'AI per lavoro ma voglio fare di più" style="background: #17161b;">Uso l'AI per lavoro ma voglio fare di più</option>
+                  <option value="Non ho mai usato l'AI seriamente" style="background: #17161b;">Non ho mai usato l'AI seriamente</option>
+                  <option value="Altro" style="background: #17161b;">Altro</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="goals" class="sr-only">Cosa vorresti ottenere da questa call?</label>
+                <textarea id="goals" name="goals" placeholder="Sii specifico &mdash; pi&ugrave; mi dici, pi&ugrave; valore ti do nei 45 minuti" required style="width: 100%; padding: 0.9375rem 1.125rem; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(200, 190, 175, 0.12); border-radius: 0.5rem; color: #e8e0d4; font-size: 1rem; font-family: inherit; font-weight: 300; transition: border-color 0.3s ease, box-shadow 0.3s ease; outline: none; min-height: 120px; resize: vertical;"></textarea>
+              </div>
+
+              <button type="submit">Prenota il Tuo Posto &mdash; Gratis</button>
+            </div>
+          </form>
+          <p class="privacy" style="margin-top: 1.5rem;">Riceverai una email di conferma entro 24 ore con data e orario della tua call.</p>
+          <p class="privacy" style="margin-top: 0.5rem; opacity: 0.5; font-size: 0.7rem;">Niente spam. I tuoi dati restano tra noi. Se il tuo slot viene confermato, riceverai solo le email relative alla call.</p>
+          <p class="form-status" id="formStatus" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="social-proof reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span>100% Data Privacy assicurata. Niente spam, solo la tua sessione 1 a 1.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== COME FUNZIONA ===== -->
+    <section class="section-light section-pad">
+      <div class="section-inner-wide">
+        <p class="section-label reveal">il processo di prenotazione</p>
+        <h2 class="reveal">Come <span class="hl"><strong>funziona</strong></span></h2>
+
+        <div class="journey-grid">
+          <div class="journey-step reveal">
+            <div class="journey-num">01</div>
+            <p class="journey-title">Compili il form</p>
+            <p class="journey-desc">Mi racconti chi sei e cosa vuoi ottenere. Ci metti 2 minuti.</p>
+          </div>
+
+          <div class="journey-arrow reveal" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+          </div>
+
+          <div class="journey-step reveal">
+            <div class="journey-num">02</div>
+            <p class="journey-title">Ti confermo entro 24h</p>
+            <p class="journey-desc">Leggo la tua risposta. Se penso di poterti aiutare, ti mando la conferma con data e link.</p>
+          </div>
+
+          <div class="journey-arrow reveal" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+          </div>
+
+          <div class="journey-step reveal">
+            <div class="journey-num">03</div>
+            <p class="journey-title">Ci vediamo 1 a 1</p>
+            <p class="journey-desc">45 minuti su Google Meet. Webcam accesa. Ti formo, ti do valore, rispondo a tutto.</p>
+          </div>
+
+          <div class="journey-arrow reveal" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+          </div>
+
+          <div class="journey-step reveal">
+            <div class="journey-num">04</div>
+            <p class="journey-title">Decidi tu</p>
+            <p class="journey-desc">Se il percorso completo ha senso per te, te lo propongo. Se no, ti dico io che non fa per te. In ogni caso, esci dalla call avendo imparato qualcosa di concreto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="divider-small" style="margin-bottom: 1.5rem;"></div>
+    &copy; 2026 Digital Empire
+  </footer>
+
+  <script>
+    (function () {
+      /* === Scroll Reveal === */
+      var revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              e.target.classList.add('revealed');
+              obs.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+        revealEls.forEach(function (el) { obs.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add('revealed'); });
+      }
+
+      /* === Form Validation === */
+      async function handleSubmit(e) {
+        e.preventDefault();
+        
+        const nome = document.querySelector('input[name="nome"]').value.trim();
+        const email = document.querySelector('input[name="email"]').value.trim();
+        const social = document.querySelector('input[name="social"]').value.trim();
+        const ai_usage = document.querySelector('select[name="ai_usage"]').value;
+        const goals = document.querySelector('textarea[name="goals"]').value.trim();
+        
+        const button = document.querySelector('button[type="submit"]');
+        const status = document.getElementById('formStatus');
+
+        if (!nome || !email || !social || !ai_usage || !goals) {
+          if(status) {
+            status.textContent = 'compila tutti i campi richiesti.';
+            status.className = 'form-status error';
+          }
+          return;
+        }
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          if(status) {
+            status.textContent = 'inserisci un indirizzo email valido.';
+            status.className = 'form-status error';
+          }
+          return;
+        }
+        
+        button.textContent = 'Invio in corso...';
+        button.disabled = true;
+        if(status) {
+          status.textContent = 'invio in corso...';
+          status.className = 'form-status';
+        }
+        
+        try {
+          // Inviando i dati a Brevo o altro servizio CRM
+          const response = await fetch('https://api.brevo.com/v3/contacts', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json',
+              'api-key': 'TUA_API_KEY_BREVO'
+            },
+            body: JSON.stringify({
+              email: email,
+              attributes: {
+                FIRSTNAME: nome,
+                TAG_CALL: 'richiesta-call-1-1',
+                SOCIAL: social,
+                AI_USAGE: ai_usage,
+                GOALS: goals
+              },
+              listIds: [2],  // Esempio ID lista
+              updateEnabled: true
+            })
+          });
+          
+          if (response.ok || response.status === 204 || response.status === 400) {
+            window.location.href = 'webinar-thank-you.html';
+          } else {
+            if(status) {
+              status.textContent = 'errore durante l\'invio. riprova.';
+              status.className = 'form-status error';
+            }
+            button.textContent = 'Prenota il Tuo Posto — Gratis';
+            button.disabled = false;
+          }
+        } catch (error) {
+          if(status) {
+            status.textContent = 'errore di connessione. riprova.';
+            status.className = 'form-status error';
+          }
+          button.textContent = 'Prenota il Tuo Posto — Gratis';
+          button.disabled = false;
+        }
+      }
+
+      /* === Accordion Logic === */
+      var accordions = document.querySelectorAll('.accordion-header');
+      accordions.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var item = this.parentElement;
+          item.classList.toggle('active');
+        });
+      });
+
+      document.getElementById('webinarForm').addEventListener('submit', handleSubmit);
+    })();
+  </script>
+
+</body>
+</html>

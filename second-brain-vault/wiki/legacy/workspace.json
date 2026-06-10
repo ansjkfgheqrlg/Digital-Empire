@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "729e4a32a3b208e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "c57b45854d37ce66",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "543eb9bd023fa83c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista grafo"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1b64028aa5c03fd7",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5abc330929666e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6b4cc7bdf7697a5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora risorse"
+            }
+          },
+          {
+            "id": "a5f0466504a2779c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "ab35b74ec059fd01",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Segnalibri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c6ceacab087249a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "789a90610776a22a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b16ed14abb14bc0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti"
+            }
+          },
+          {
+            "id": "2bc14753e1fb765d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita"
+            }
+          },
+          {
+            "id": "2fa1ff26f5832018",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "db8f60139db447c0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Tutte le proprietà"
+            }
+          },
+          {
+            "id": "38ac7fa084541944",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Crea nuova Base": false
+    }
+  },
+  "active": "543eb9bd023fa83c",
+  "lastOpenFiles": [
+    "log.md.tmp.35096.1777977505242",
+    "concepts/UI_Dark_On_Dark_Fix.md",
+    "log.md",
+    "Outreach/GENERATION VIA COLD EMAIL.md",
+    "Outreach",
+    "index.md",
+    "projects/Agency_Agent_Orchestration_System.md",
+    "projects/InfoBusiness/Webinar_Strategy.md",
+    "projects/Outreach_System_Decision_Log.md",
+    "concepts/Concept_Human_Voice_QA.md",
+    "concepts/Concept_Human_Voice_QA.md.tmp.34540.1777579199737",
+    "concepts/Concept_APSOC_Email_Application.md",
+    "tools/Tool_Outreach_MultiTeam_System.md",
+    "entities/Andrei_Pascu.md",
+    "log.md.tmp.34540.1777560484953",
+    "entities/Vendi_la_Skill_Course.md",
+    "entities/Manuale_Claude_Code_Product.md",
+    "concepts/Funnel_Optimization_Framework.md",
+    "concepts/LinkedIn_Cold_Outreach_Methodology.md",
+    "concepts/Info_Product_Value_Ladder.md",
+    "concepts/Customer_Acquisition_Funnel.md",
+    "concepts/Concept_Sales_Funnel_Design.md",
+    "concepts/Concept_Lead_Qualification_Methodology.md",
+    "concepts/Concept_Email_Outreach_Strategy.md",
+    "concepts/Concept_Direct_Response_Framework.md",
+    "concepts/Concept_Copywriting_Framework.md",
+    "concepts/Concept_Conversion_Rate_Optimization.md",
+    "concepts/LLM_Wiki_Pattern.md",
+    "FINAL_ORCHESTRATOR_COMPLETION_REPORT.md",
+    "Empire Brain/Senza nome.canvas"
+  ]
+}

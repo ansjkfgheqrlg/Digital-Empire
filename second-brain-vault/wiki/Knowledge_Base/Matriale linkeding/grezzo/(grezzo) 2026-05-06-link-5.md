@@ -1,0 +1,146 @@
+# link 5
+            
+> Path: [[Map - Matriale_Linkeding|Matriale linkeding > grezzo]]
+
+## Content
+
+Every time I refresh LinkedIn, my feed is  flooded with new content. That's not surprising  
+considering there are now 1.2 billion users  contributing around 2 million posts, articles,  
+and videos to the platform each day. Compare  that traffic to platforms like Google Search  
+and Facebook. And LinkedIn clearly doesn't reach  as many eyeballs. But look at this. The cost per  
+click of LinkedIn ads is significantly higher.  Why pay more for less? Well, ads perform really  
+well on LinkedIn. Marketers report conversion  rates two times higher on LinkedIn than other  
+platforms. So even though you're spending more on  each ad, you can generally expect a lower customer  
+acquisition cost. But still, if you are investing  more, you want to be sure your ads connect,  
+right? So the question is, what's the secret to  reaching and converting leads on LinkedIn? Well,  
+I spent the last few weeks looking at brands  that are absolutely crushing it on LinkedIn. I've  
+deconstructed their profiles, their campaigns, and  I think I figured out what some of their secrets  
+are. So, let's look at what the best brands are  doing so you can figure out how to apply that to  
+your own marketing efforts. Before I do, HubSpot  offers what I think is a pretty great playbook for  
+LinkedIn ads. So, if it's your first time running  a campaign, or maybe you've tried and failed in  
+the past, I highly recommend checking out the link  below to download this guide. At the beginning  
+of my research for this video, I looked at the 50  most followed brands on LinkedIn and it was clear  
+that no one begins with ads. It's all about the  company page. Optimize this and you can increase  
+weekly views by 30% according to LinkedIn. The  best brands all do the following. Number one,  
+a fully built profile. Let's take a look at one  of my favorites, Notion, and see exactly how they  
+built out their LinkedIn page. To start, take a  look at the cohesive and clear branding. Without  
+reading anything, we already have a feel for  who Notion is. And the positioning segment here,  
+it tells us what kind of company Notion is and  how it benefits customers. Go to the about and  
+you'll see the basics are there. But what I love  most about this profile is how they've made use  
+of other pages, especially the product page.  Seriously, there are so many built-in features  
+that LinkedIn offers. From connecting with other  customers to showcasing top rated features,  
+all of the information here practically mirrors  what a potential customer might find on Notion's  
+website. And that's very intentional. Think about  it. Your customer might never make it to your  
+website, so why not give them the information on  LinkedIn? Once your company page is built out,  
+focus on engaging your audience organically. Which  brings me to point number two, organic engagement.  
+Notion has had a lot of success here, too. Almost  every employee uses a notion branded illustration  
+as their profile photo. It's adorable. It's also  a simple way to tie individual thought leadership  
+back to the brand. And in 2024, Notion took this  one step further by inviting its community to  
+transform their LinkedIn profile photos into their  own Notion themed illustrations. The campaign  
+generated 11,000 reactions within 24 hours of  the launch without any paid media, and it was  
+a clever way to allow people to share their love  and enthusiasm for the brand. The point is, there  
+are lots of ways to engage customers organically,  and it's important to explore your brand voice to  
+see what resonates with your audience and what  doesn't before switching to paid media. Why pay  
+for things when you don't even know if they work?  Which leads to my final insight. Number three,  
+post content weekly. Only 1% of LinkedIn users  post regularly. Yet, these active contributors  
+generate a staggering 9 billion impressions.  While it might seem like everyone is posting,  
+the vast majority are not doing so regularly.  This means there's ample room for you to stand  
+out and share your expertise. A content calendar  that commits both company and leadership to  
+posting at least two times a week is how you earn  visibility in LinkedIn. It won't happen overnight,  
+but regular content pays off in the long run. It's  also the best way to try out different content,  
+see what ideas hit and what formats don't.  By consistently putting out content, you'll  
+start to get a real feel for what resonates, and  sometimes the results will totally surprise you.  
+Those insights are gold and worth the occasional  flop. Once your company profile is optimized,  
+your network is engaged, and you have a solid  understanding of the kind of content that  
+connects with your audience, you're ready to run  ad campaigns. I know it's a lot, but trust me,  
+it's so worth it in getting that foundation  in place. LinkedIn offers different types  
+of campaigns based on your goals. And so, you'll  need to decide what do you want your audience to  
+do. If you only want your audience to see your  ad, choose awareness. This measures success by  
+impressions. And for what it's worth, it's not the  best use of LinkedIn given the lower traffic and  
+fact that LinkedIn is known for converting leads,  which is the perfect transition for the next goal,  
+consideration. This is all about getting your  audience to take an action so they then learn  
+more about what you do, typically clicking the  ad, which brings them to your website. This is  
+a great way to get on customers radars. The last  option is conversion, which is all about getting  
+a customer to take a desired action on your  website. This could be purchasing an item or  
+subscribing to your newsletter. Whatever it is,  you gain a new lead or customer through their  
+action. Once you have your goal set, you need  to determine who are you targeting. One brand  
+that's nailing this on LinkedIn is Adobe. Just  think about their different customers. There's  
+creatives like designers and editors using Adobe  tools for artistic projects. There's marketers  
+who use tools like Adobe Analytics to measure  campaign performance. And then there's even  
+it who rely on Adobe for unifying customer data.  When Adobe runs ads, they're carefully considering  
+which products and content are most relevant to  which audiences. Filmmakers aren't getting white  
+papers for 2024 personalization trends. That's for  marketers. Think about who your product is for,  
+their title, age, interest, but don't get too  specific. Otherwise, your target pool will be too  
+small. It's best to aim for a target audience over  50,000. When you have your goal and know who the  
+ads are for, it's time to create the ads. LinkedIn  has quite a few different formats to choose from.  
+There's sponsored content. These largely appear  in user feeds and blend in with organic posts.  
+There's dynamic ads, which appear prominently in  the right hand sidebar. And last, there's message  
+conversation ads. The name says it all. These  ads pop up in your LinkedIn messages to appear  
+as if someone is trying to talk directly to you.  We're going to focus on two formats. Single image  
+sponsored content because these have the highest  click-through rate of all the different formats on  
+LinkedIn, even video, and message ads because they  can have an open rate of up to 55%, which is way  
+better than the average email campaign. Let's take  a look at an example from Adobe for a closer look.  
+Now, their exact style might not be for everyone,  but their core approach is worth studying. Just  
+look at the message. It hits on a big pain point  that's incredibly relevant to their audience. And  
+then they cleverly leverage a stock image to prove  their value proposition. One quick glance tells  
+you everything you need to know about what they're  offering and how they add value. Now, let's talk  
+about message ads. There's two critical pieces  of copy to consider. Number one, subject line,  
+and number two, the body. Let's start with subject  line. Ensuring the value of what you're offering,  
+be both specific and concise. What do I mean  by that? Okay, here's a few examples within my  
+own LinkedIn messages. The first one here,  I never open it. Okay, it it's it's just a  
+rhetorical question that tells me nothing about  the offer. Do they have a role for me or is it  
+kind of some software to help in the job search?  I I don't know. And like most folks on LinkedIn,  
+I just I don't have time to care. The second  one seems specific, but I don't know the brand,  
+so I have no idea what this is. And before they  get to the value, it's hit with an ellipses.  
+This isn't a cliffhanger. It's just too long.  The best of the three is this one. They cleverly  
+leverage brand recognition and the parenthetical  makes it feel like this offer isn't made all too  
+often. It's specific with a little personality  to boot. Okay, now let's talk about message  
+body. Here's a cool example from data bricks. They  wanted people to sign up for an event and tested  
+three different LinkedIn messages. Two versions  start with open-ended questions, but the third one  
+was super direct. It put the event details and  registration link right in the first sentence.  
+that direct approach, it nearly doubled  their click-through rate and conversions. So,  
+there are two big takeaways here. First, always AB  test your messages. Let the data show you what's  
+really working. Second, and just as important,  don't bury the leak. Get straight to the point  
+with your offer. Put the most important info right  up front so your audience can't miss it. Then,  
+add any extra context below. Once you're  confident in the content, you're ready to  
+roll out your campaign. And that means spending  ad dollars. And when you look at your budget,  
+there's one thing you should be asking yourself.  How much leeway will you give LinkedIn to optimize  
+your spend automatically? You see, LinkedIn is  smart. It knows when activity on the platform is  
+higher than normal and paces how your budget  is spent over the course of the campaign to  
+maximize your ROI. So, if you have a campaign  running continuously with a daily budget of $50,  
+you might see certain days when LinkedIn hits the  daily max spend and other days when it's lower.  
+Now imagine if you increase the daily budget.  You'll likely see the days where the max was  
+hitting his limit go even higher while other days  are unchanged. These variations can be as high as  
+50%. If your marketing budget is a bit tight,  you can always add a lifetime max spend. For a  
+continuous campaign, this will typically reduce  that high variation day-to-day. Another option  
+is to run your campaign on a fixed schedule. You  choose the start and end date and then either the  
+budget to be spent over that period or daily max  within that period. Either way, the campaign will  
+practice the lifetime pacing to ensure your ads  appear on the platform over that entire week. Once  
+your campaign is launched and running, you can  celebrate, but just for a minute. Because now you  
+need to monitor your campaign, specifically your  KPIs. If the campaign isn't performing, you should  
+check out two things. Number one, your audience  segmentation to see if there's disconnect. And  
+number two, your content to try new creative  messaging and imagery. Imagine if Adobe saw  
+their creativity for all campaign underperforming  amongst senior creatives. What do they do in this  
+hypothetical? They'd look at other segments  like young upand cominging creatives where  
+maybe the campaign is having more success and if  that's true, reallocate budget to that segment.  
+But maybe the campaign isn't performing well for  any segment. So now it's time to look under the  
+hood of your creative. No need to go back to the  drawing board. Try small tweaks first and AB test  
+it. You might find that a particular image wasn't  connecting or maybe the messaging or call to  
+action needed some context or just an little extra  push. No matter what you discover, it's important  
+to consistently evaluate your campaign. So recap,  although LinkedIn ads might have a higher upfront  
+cost, they often lead to more conversions and a  lower customer acquisition cost. The secret to  
+making them work isn't just about spending money.  It's about being strategic. First, lock in your  
+foundation by optimizing your company page and  building an organic content strategy to understand  
+what resonates with your audience. Once that's  solid, you can start running ads. Choose a clear  
+goal, target your audience precisely, and learn  from the brands that are killing it. Seriously,  
+study the content that they make and take what  works for them into your content. Finally,  
+manage your budget smartly and most importantly,  continuously monitor your campaign's performance  
+to prove your investment is paying off. And  remember to check out HubSpot's playbook or  
+LinkedIn ads because it's packed full of even  more information that we didn't have time to  
+cover. I'd love to hear in the comments what your  biggest takeaways were. And thanks for watching.
+
+## Collegamenti Correlati
+- [[Map - App|App Area]]
+- [[Map - General|General Area]]
+- [[Map - Matriale_Linkeding|Matriale Linkeding Area]]
+- [[Map - Prove|Prove Area]]

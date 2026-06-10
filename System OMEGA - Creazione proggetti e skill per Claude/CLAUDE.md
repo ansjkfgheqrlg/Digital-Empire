@@ -1,0 +1,115 @@
+# System OMEGA — Creazione Progetti e Skill per Claude
+
+## Scopo
+Questo è il sistema di produzione del Digital Empire per creare progetti e skill da caricare su **Claude Browser** (claude.ai). Ogni progetto/skill viene generato file per file, verificato automaticamente, e consegnato con istruzioni precise su dove caricarlo.
+
+## Regola fondamentale
+**Non creare nulla senza il comando esplicito dell'utente.** Il sistema è in standby finché non viene invocato.
+
+## Architettura = Fonte di Verità — REGOLA ASSOLUTA
+
+**Per ogni progetto o skill da creare, la prima cosa da fare è trovare e leggere la sezione corrispondente in:**
+```
+Achittetatura Progetti e Skill Info Business.md
+```
+
+Questa è la fonte primaria al 100%. Struttura, file da generare, sezioni, contenuti, workflow — tutto viene dall'architettura. Non dalla memoria, non dalla conoscenza generale, non da ciò che sembra logico. **Dall'architettura.**
+
+Questo vale sia quando l'executor parte formalmente via `/omega-create`, sia quando si lavora direttamente nella conversazione. Se si sta generando un file di un progetto/skill e non si è ancora letta la sezione corrispondente nell'architettura → fermarsi, leggerla, poi procedere.
+
+Lavorare senza aver letto l'architettura significa inventare. Inventare produce output sbagliati.
+
+---
+
+## Principio di miglioramento continuo — OBBLIGATORIO
+**Prima di ogni creazione (progetto o skill), leggi e studia TUTTI gli esempi in:**
+```
+System promot Creator project\CONTESTO - SOLO ESEMPI\
+```
+Non uno. Non "quelli simili". **Tutti, ogni volta, senza eccezioni.**
+Questa cartella esiste precisamente per questo scopo: guidare ogni nuova generazione con la conoscenza di tutti gli output precedenti. Ogni nuovo file deve essere migliore di tutti quelli già creati. L'executor non può iniziare a generare prima di aver completato questo studio.
+
+## Lettura Attività temporanea — OBBLIGATORIA AD OGNI SESSIONE
+
+**All'inizio di ogni sessione in questa directory, e prima di qualsiasi creazione, leggi:**
+```
+Attività temporanea\
+```
+Questo file contiene il contesto operativo corrente: quale processo è attivo, in quale fase siamo, quali progetti/skill sono coinvolti e come si connettono tra loro.
+
+**Questo vale SEMPRE** — sia quando lavoro tramite il sistema formale `/omega-create`, sia quando lavoro direttamente nel contesto della conversazione. Non c'è eccezione. Senza questo contesto, è impossibile capire perché si sta creando una specifica skill o progetto, a quale fase del processo appartiene, e quali dipendenze ha con gli altri elementi.
+
+---
+
+## Comando principale
+
+```
+/omega-create project "Nome Progetto"
+/omega-create skill "Nome Skill"
+```
+
+**Esempi:**
+```
+/omega-create skill "S.O.M."
+/omega-create project "P7 Info-Business HQ"
+/omega-create skill "Product Pricing Strategist"
+```
+
+---
+
+## Agenti disponibili (`.claude/agents/`)
+
+| Agente | Ruolo |
+|--------|-------|
+| `omega-executor` | Genera i file uno alla volta seguendo la metodologia OMEGA |
+| `omega-verifier` | Controlla ogni file generato prima di procedere al successivo |
+
+Questi agenti **non si invocano direttamente** — vengono lanciati automaticamente dalla skill `/omega-create`.
+
+---
+
+## File chiave del progetto
+
+| File | Descrizione |
+|------|-------------|
+| `Achittetatura Progetti e Skill Info Business.md` | Architettura completa di tutti i progetti e skill (16.000+ righe) — fonte di verità |
+| `System promot Creator project/System prompt - creator project.md` | Sistema prompt OMEGA — standard di generazione file |
+| `System promot Creator project/CONTESTO - SOLO ESEMPI/` | Esempi di progetti già completati (P6, P8, P9) |
+| `Attività temporanea/` | Task corrente — aggiorna questo file per cambiare contesto operativo |
+| `REGOLE.md` | Regole operative del sistema |
+
+---
+
+## Output
+
+I file generati vengono salvati in:
+```
+Output\[NomeProgetto]\
+├── CUSTOM_INSTRUCTIONS.md   → va nelle "Istruzioni progetto" di Claude Browser
+├── PROJECT_MAP.md           → riferimento locale (non si carica)
+└── KNOWLEDGE_BASE\
+    ├── KB_01_*.md           → va nella sezione "Knowledge" di Claude Browser
+    ├── KB_02_*.md
+    └── ...
+```
+
+---
+
+## Task corrente: Processo Lanci (10 fasi)
+
+**Già completati:**
+- ✅ P6 Marketing University
+- ✅ P8 Product Creation Lab
+- ✅ P9 Strategy Command Center
+
+**Da creare (ordine consigliato):**
+1. `S.O.M.` — skill permanente fondamentale
+2. `P7 Info-Business HQ`
+3. `P4 Launch Command`
+4. `Webinar Script Master`
+5. `Launch Funnel Architect`
+6. `VSL Script Builder`
+7. `Product Pricing Strategist`
+8. `YouTube Lead Magnet Engine`
+9. `Social Growth Engine`
+10. `Short-Form Script Engine`

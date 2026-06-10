@@ -1,0 +1,37 @@
+book:
+  title: "Le 48 Leggi dei Maestri Dimenticati"
+  subtitle: "48 Storie. 48 Leggi. Una per te."
+  author: "Digital Empire"
+  year: 2025
+  language: "it"
+
+page:
+  width: "6in"
+  height: "9in"
+  margins:
+    top: "0.75in"
+    bottom: "0.5in"
+    inner: "0.75in"
+    outer: "0.5in"
+
+typography:
+  body_font: "Crimson Text"
+  body_font_fallback: "Georgia, serif"
+  body_size: "11pt"
+  line_height: 1.4
+  chapter_title_size: "24pt"
+  subtitle_size: "14pt"
+  chapter_number_size: "14pt"
+
+images:
+  api: "openai"
+  model: "dall-e-3"
+  size: "1024x1792"
+  quality: "hd"
+  style: "natural"
+
+output:
+  format: "pdf"
+  filename: "48_leggi_maestri_dimenticati"
+  draft: "output/book_draft.pdf"
+  final: "output/book_final.pdf"

@@ -1,0 +1,59 @@
+/**
+ * Copyright (c) Microsoft Corporation.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import React, { type ReactNode } from 'react';
+import Link from '@docusaurus/Link';
+import { useLocation } from '@docusaurus/router';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import styles from './styles.module.css';
+
+interface NavLink {
+  label: string;
+  href: string;
+}
+
+interface NavigationProps {
+  links: NavLink[];
+}
+
+function Navigation({ links }: NavigationProps) {
+  const location = useLocation();
+  
+  return (
+    <nav className="container">
+      <ul className={styles.nav}>
+        {links.map((link, i) => {
+          const baseHref = useBaseUrl(link.href);
+          const isActive = location.pathname === baseHref || 
+                          location.pathname.startsWith(baseHref + '/');
+          
+          return (
+            <li key={i} className={`${styles.links} ${isActive ? styles.active : ''}`}>
+              <Link 
+                href={link.href}
+                aria-current={isActive ? 'page' : undefined}
+              >
+                {link.label}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
+  );
+}
+
+export default Navigation;

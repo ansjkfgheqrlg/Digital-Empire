@@ -1,0 +1,30 @@
+==================================================
+TEST 1: /mynetwork/people-you-may-know/
+Link /in/ trovati: 30
+  https://www.linkedin.com/in/antonio-crapanzano-533b78259/
+  https://www.linkedin.com/in/elisa-lignoli/
+  https://www.linkedin.com/in/cesaresalgaro/
+  https://www.linkedin.com/in/virginia-raggi-2a9167221/
+  https://www.linkedin.com/in/claudio-lauretti/
+  https://www.linkedin.com/in/marco-lavazza-it/
+  https://www.linkedin.com/in/marcelloascani/
+  https://www.linkedin.com/in/simone-di-cino-828555385/
+  https://www.linkedin.com/in/yamilmarquez/
+  https://www.linkedin.com/in/simone-ragni-53b1aa88/
+
+==================================================
+TEST 2: Feed principale /feed/
+Link /in/ trovati: 5
+  https://www.linkedin.com/in/digital-empire-492363361/
+  https://www.linkedin.com/in/marcomontemagno/
+  https://www.linkedin.com/in/angelo-greco/
+  https://www.linkedin.com/in/giorgiameloni/
+  https://www.linkedin.com/in/vincenzo-schettini-29826744/
+
+==================================================
+TEST 3: Search HTML - URN ACoAA patterns
+URN ACoAA trovati: 10
+URN fsd_profile trovati: 0
+data-member-id/anon/view attrs: 0
+
+=== FINE TEST ===

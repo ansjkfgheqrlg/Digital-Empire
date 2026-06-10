@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://content-forge/schemas/skill.schema.json",
+  "title": "Skill target output structure (Anthropic skill-creator compliant)",
+  "description": "Forma canonica per skill prodotte da B4. Validata da C3 contro la guida ufficiale.",
+  "type": "object",
+  "schema_version": "0.2.0-draft",
+  "properties": {
+    "skill_md_max_lines": {
+      "type": "integer",
+      "const": 500
+    },
+    "frontmatter_required_keys": {
+      "type": "array",
+      "const": [
+        "name",
+        "description"
+      ]
+    },
+    "description_pushy_markers": {
+      "type": "array",
+      "const": [
+        "make sure",
+        "whenever",
+        "even if",
+        "always",
+        "use this"
+      ]
+    },
+    "evals_initial_count_range": {
+      "type": "array",
+      "const": [
+        4,
+        6
+      ]
+    },
+    "optional_directories": {
+      "type": "array",
+      "const": [
+        "agents",
+        "references",
+        "scripts",
+        "assets/templates",
+        "assets/examples"
+      ]
+    }
+  }
+}

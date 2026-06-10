@@ -1,0 +1,250 @@
+# SOP-SITE
+            
+> Path: [[Map - Crea_Siti|Crea siti > system]]
+
+## Content
+
+# SOP — Site Creation Standard Workflow
+> Standard Operating Procedure per la creazione di siti web standard.
+> Versione: 1.0 | Sistema: /site | Comando avvio: `/site brief`
+
+---
+
+## Quando Usare /site (invece di /opus)
+
+| Situazione | Usa |
+|-----------|-----|
+| Landing page veloce (1-3 giorni) | `/site` |
+| Sito business standard, PMI | `/site` |
+| Prototipo o MVP | `/site` |
+| Progetto con budget percepito < €3.000 | `/site` |
+| Sito ultra-premium, coaching, corso online | `/opus` |
+| Vuoi brand davvero distintivo, non generico | `/opus` |
+
+---
+
+## Flusso Completo
+
+```
+1. /site brief          →  SITE-BRIEF.md
+2. /site stack          →  SITE-STACK.md
+3. /site plan           →  SITE-PLAN.md
+         ↓ [parallelo]
+4. /site design         →  SITE-DESIGN.md + design-tokens.css
+   /site copy           →  SITE-COPY.md
+         ↓
+5. /site build          →  index.html + CSS + JS
+6. /site animate        →  js/animations.js
+         ↓ [parallelo]
+7. /site seo            →  sitemap.xml + robots.txt + SEO-AUDIT.md
+   /site qa             →  QA-REPORT.md (4 agenti)
+         ↓
+8. /site deploy         →  DEPLOY-CHECKLIST.md
+9. /site report         →  SITE-REPORT.md
+```
+
+---
+
+## Procedura Passo per Passo
+
+### Step 1 — Brief
+```
+/site brief
+```
+Rispondo alle domande di opus-director / site-brief:
+- Tipo di sito (business, portfolio, ecommerce, blog, landing)
+- Obiettivo principale (lead, vendita, visibilità, branding)
+- Audience target
+- Brand esistente o da creare
+- Stack preferito o lasciare decidere
+- Pagine necessarie
+- Riferimenti estetici (URL da analizzare)
+- Timeline e budget indicativo
+
+**Output:** `SITE-BRIEF.md` — documento base di tutto il progetto.
+
+---
+
+### Step 2 — Stack
+```
+/site stack
+```
+Legge `SITE-BRIEF.md` e raccomanda:
+
+| Path | Stack | Quando |
+|------|-------|--------|
+| **A** | HTML puro + CSS + Vanilla JS | Siti statici, massima velocità, controllo estetico |
+| **B** | Next.js + React + Tailwind | App interattiva, blog con CMS, dashboard |
+| **C** | Monorepo (Turborepo) | SaaS multi-prodotto, sistema complesso |
+
+**Output:** `SITE-STACK.md` con comandi di installazione pronti.
+
+---
+
+### Step 3 — Plan
+```
+/site plan
+```
+Legge brief + stack → produce architettura informativa completa:
+- Sitemap con URL scheme
+- Wireframe testuale sezione per sezione
+- Inventario componenti
+- Gerarchia navigazione
+
+**Output:** `SITE-PLAN.md` — il documento che tutti gli step successivi usano come riferimento.
+
+---
+
+### Step 4 — Design + Copy (parallelo)
+Lancia entrambi contemporaneamente:
+
+```
+/site design
+/site copy
+```
+
+**Design** invoca `frontend-design` per:
+- Filosofia estetica + mood board
+- Palette colori (dark + light mode)
+- Tipografia (heading + body + mono)
+- Spacing scale
+- Componenti UI chiave
+- Output: `SITE-DESIGN.md` + `design-tokens.css`
+
+**Copy** lancia 3 agenti in parallelo:
+- `site-copy-hero` → H1, H2, subheadline, CTA
+- `site-copy-body` → tutte le sezioni body
+- `site-copy-meta` → SEO meta, OG, alt text
+- Output: `SITE-COPY.md`
+
+---
+
+### Step 5 — Build
+```
+/site build
+```
+Sequenza agenti:
+1. `site-build-shell` → template HTML condiviso, navbar, footer, CSS base, JS skeleton
+2. [parallelo] `site-build-pages` → pagine HTML
+2. [parallelo] `site-build-interactions` → `js/interactions.js`
+
+**Output:** file HTML, CSS, JS completi e funzionanti nel browser.
+
+---
+
+### Step 6 — Animazioni
+```
+/site animate
+```
+Aggiunge motion design al sito costruito:
+- Scroll triggers (elementi che entrano in scena)
+- Page transitions
+- Micro-interazioni (hover, click, focus)
+- Libreria scelta automaticamente: GSAP (HTML puro), Motion (React), Anime.js (micro)
+
+**Output:** `js/animations.js`
+
+---
+
+### Step 7 — SEO + QA (parallelo)
+Lancia entrambi contemporaneamente:
+
+```
+/site seo
+/site qa
+```
+
+**SEO:**
+- Meta tag + OG su tutte le pagine
+- JSON-LD schema markup
+- `sitemap.xml` + `robots.txt`
+- Output: `SEO-AUDIT.md`
+
+**QA** (4 agenti paralleli):
+- HTML validity + semantica
+- WCAG 2.1 AA accessibility
+- Core Web Vitals performance
+- Mobile responsiveness
+- Output: `QA-REPORT.md` con score 0-100
+
+**Gate di avanzamento:** nessun issue Critical prima del deploy.
+
+---
+
+### Step 8 — Deploy
+```
+/site deploy vercel
+/site deploy netlify
+/site deploy github-pages
+```
+- Genera file di configurazione piattaforma
+- Verifica QA non abbia blockers
+- Checklist pre-lancio
+- **Output:** `DEPLOY-CHECKLIST.md`
+
+---
+
+### Step 9 — Report
+```
+/site report
+```
+- Report finale da consegnare al cliente
+- Aggrega: decisioni design, design system, QA results, deploy checklist
+- **Output:** `SITE-REPORT.md`
+
+---
+
+## Comandi Extra
+
+| Comando | Quando |
+|---------|--------|
+| `/site components` | Aggiungere un componente singolo post-lancio |
+| `/site animate` | Aggiungere/modificare animazioni |
+| `/site 3d` | Aggiungere scena Three.js/React Three Fiber |
+| `/site qa` | Re-eseguire QA dopo modifiche |
+| `/site seo` | Aggiornare SEO dopo nuovi contenuti |
+
+---
+
+## Struttura Cartella Progetto
+
+```
+<nome-progetto>/
+├── SITE-BRIEF.md
+├── SITE-STACK.md
+├── SITE-PLAN.md
+├── SITE-DESIGN.md
+├── SITE-COPY.md
+├── SEO-AUDIT.md
+├── QA-REPORT.md
+├── DEPLOY-CHECKLIST.md
+├── SITE-REPORT.md
+├── design-tokens.css
+├── index.html
+├── css/
+│   └── styles.css
+└── js/
+    ├── interactions.js
+    └── animations.js
+```
+
+---
+
+## Checklist Lancio Rapida
+
+- [ ] QA score ≥ 80/100
+- [ ] Nessun Critical nel QA-REPORT
+- [ ] Accessibility: contrasto ≥ 4.5:1 ovunque
+- [ ] Mobile: touch targets ≥ 44px
+- [ ] SEO: meta title + description su ogni pagina
+- [ ] Performance: no render-blocking resources
+- [ ] Deploy: HTTPS attivo, redirect www→root
+- [ ] Analytics: GA4 o Plausible attivi
+- [ ] Privacy: cookie banner + Privacy Policy
+- [ ] Form: tutti i form testati in produzione
+
+## Collegamenti Correlati
+- [[Map - Agenti|Agenti Area]]
+- [[Map - App|App Area]]
+- [[Map - Crea_Siti|Crea Siti Area]]
+- [[Map - Saas|Saas Area]]

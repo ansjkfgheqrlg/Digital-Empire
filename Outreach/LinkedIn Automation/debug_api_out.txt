@@ -1,0 +1,30 @@
+Navigando alla ricerca LinkedIn...
+
+Totale API calls catturate: 24
+  [200] https://www.linkedin.com/search/results/people/?keywords=avvocato+Milano
+  [200] https://www.linkedin.com/litms/api/metadata/user
+  [200] https://www.linkedin.com/litms/api/events/tms-load
+  [200] https://www.linkedin.com/flagship-web/feed/
+  [200] https://www.linkedin.com/voyager/api/voyagerGlobalAlerts?adHocAlerts=true&alertWithActions=true&q=findAlerts
+  [200] https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&queryId=voyagerFeedDashThirdPartyIdSyncs.e9d3044f7a
+  [200] https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&variables=(memberIdentity:ACoAAFnucO4B6-xR2IyUhnm0U
+  [200] https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&variables=()&queryId=voyagerFeedDashGlobalNavs.c10f
+  [200] https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&variables=()&queryId=voyagerDashMySettings.7ea6de34
+  [200] https://www.linkedin.com/voyager/api/voyagerIdentityDashNotificationCards?decorationId=com.linkedin.voyager.dash.deco.id
+  [200] https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&variables=(pageKey:messaging_realtime,slotId:onboar
+  [200] https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&variables=(featureAccessTypes:List(CAN_ACCESS_AWAY_
+  [200] https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&variables=(pageKey:messaging_presence,slotId:onboar
+  [200] https://www.linkedin.com/voyager/api/voyagerOrganizationDashPageMailbox/?count=3&q=admin
+  [200] https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&variables=(featureAccessTypes:List(CAN_ACCESS_RECRU
+  [200] https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&variables=()&queryId=voyagerMessagingDashMessagingS
+  [200] https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&variables=(featureAccessTypes:List(CAN_ACCESS_SALES
+  [200] https://www.linkedin.com/voyager/api/voyagerMessagingGraphQL/graphql?queryId=messengerConversations.0d5e6781bbee71c3e51c
+  [200] https://www.linkedin.com/voyager/api/messaging/dash/presenceStatuses
+  [200] https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&queryId=voyagerMessagingDashAwayStatusV2.ee0ba3add6
+  [200] https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&queryId=voyagerMessagingDashAffiliatedMailboxes.da7
+  [200] https://www.linkedin.com/voyager/api/voyagerMessagingGraphQL/graphql?queryId=messengerMailboxCounts.fc528a5a81a76dff212a
+  [200] https://www.linkedin.com/voyager/api/voyagerMessagingDashConversationNudges
+  [200] https://www.linkedin.com/voyager/api/voyagerNotificationsDashBadgingItemCounts
+
+--- Ricerca call con 'search' nell'URL ---
+  https://www.linkedin.com/search/results/people/?keywords=avvocato+Milano

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire Carousel - Digital Empire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background: #2a2a2a;
+            --foreground: #f9f9f9;
+            --ink: #1c1c1c;
+            --ink-2: #0a0a0a;
+            --paper: #fafafa;
+            --grey: #e8e8e6;
+            --orange: #fb4604;
+            --orange-bright: #ff6a2e;
+            --orange-deep: #c9370a;
+            --silver: #d9d4e1;
+            --silver-bright: #ffffff;
+            --silver-dim: #8a8594;
+            --border: rgba(249, 249, 249, 0.1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: #111;
+            font-family: 'Inter', sans-serif;
+            color: var(--foreground);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding: 40px 0;
+        }
+
+        /* Slide Container: 1080x1350 ratio */
+        .slide {
+            width: 540px; /* scaled down for preview, but maintain ratio */
+            height: 675px;
+            background: var(--background);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            border: 1px solid var(--border);
+        }
+
+        /* Grain Effect */
+        .grain {
+            position: absolute;
+            inset: -50%;
+            pointer-events: none;
+            z-index: 10;
+            opacity: 0.4;
+            mix-blend-mode: overlay;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.08;
+            letter-spacing: -0.025em;
+            margin-bottom: 20px;
+            z-index: 20;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.025em;
+            margin-bottom: 15px;
+            z-index: 20;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--silver-dim);
+            margin-bottom: 20px;
+            z-index: 20;
+        }
+
+        .hl {
+            display: inline;
+            padding: 0.1em 0.3em;
+            color: #ffffff;
+            background: linear-gradient(180deg, #ff6a2e 0%, #fb4604 55%, #c9370a 100%);
+            box-shadow: 0 4px 15px rgba(251,70,4,0.4);
+            border-radius: 2px;
+        }
+
+        /* Components */
+        .bubble {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 20px;
+            z-index: 20;
+        }
+        .bubble-orange {
+            background: linear-gradient(135deg, #fb4604 0%, #ff6a2e 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(251,70,4,0.3);
+        }
+        .bubble-silver {
+            background: linear-gradient(135deg, #ffffff 0%, #d9d4e1 50%, #8a8594 100%);
+            color: var(--ink);
+        }
+
+        .corner-bracket {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            z-index: 15;
+        }
+        .corner-tl { top: 30px; left: 30px; border-top: 3px solid var(--orange); border-left: 3px solid var(--orange); border-top-left-radius: 8px; }
+        .corner-tr { top: 30px; right: 30px; border-top: 3px solid var(--orange); border-right: 3px solid var(--orange); border-top-right-radius: 8px; }
+        .corner-bl { bottom: 30px; left: 30px; border-bottom: 3px solid var(--orange); border-left: 3px solid var(--orange); border-bottom-left-radius: 8px; }
+        .corner-br { bottom: 30px; right: 30px; border-bottom: 3px solid var(--orange); border-right: 3px solid var(--orange); border-bottom-right-radius: 8px; }
+
+        .feature-list {
+            list-style: none;
+            margin-top: 20px;
+            z-index: 20;
+        }
+        .feature-list li {
+            font-size: 18px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--foreground);
+        }
+        .feature-list li::before {
+            content: "✦";
+            color: var(--orange);
+            font-weight: bold;
+        }
+
+        .cta-button {
+            margin-top: auto;
+            background: var(--orange);
+            color: white;
+            padding: 18px 30px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(251,70,4,0.4);
+            z-index: 20;
+        }
+
+        /* Specific Slide Variations */
+        .bg-ink { background: var(--ink); }
+        .bg-orange { background: var(--orange); color: white; }
+        .bg-orange p { color: rgba(255,255,255,0.8); }
+        .bg-silver { background: var(--silver); color: var(--ink); }
+        .bg-silver p { color: var(--ink-2); opacity: 0.8; }
+
+        .text-silver-orange {
+            background: linear-gradient(135deg, #ffffff 0%, #d9d4e1 20%, #fb4604 55%, #ff8a4a 78%, #ffffff 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Cover -->
+    <div class="slide bg-ink">
+        <div class="grain"></div>
+        <div class="corner-tl"></div><div class="corner-tr"></div>
+        <div class="corner-bl"></div><div class="corner-br"></div>
+        
+        <div class="bubble bubble-orange">Sistemi AI Proprietari</div>
+        <h1>Smetti di fare <span class="hl">tutto a mano.</span></h1>
+        <p>Tre motori AI installati sui tuoi server per l'outreach, la produzione contenuti e la memoria del business.</p>
+        <div style="margin-top: 40px; font-weight: 700; font-size: 24px; color: var(--orange);">Digital Empire</div>
+    </div>
+
+    <!-- Slide 2: The Problem -->
+    <div class="slide bg-ink">
+        <div class="grain"></div>
+        <div class="bubble bubble-silver">Il Problema</div>
+        <h2>Il tuo business è <span class="hl">ostaggio</span> della manualità?</h2>
+        <ul class="feature-list">
+            <li>L'outreach ti prosciuga tempo ed energie.</li>
+            <li>Ogni lancio richiede settimane di copy.</li>
+            <li>L'AI dimentica tutto tra una sessione e l'altra.</li>
+            <li>Dipendi da SaaS instabili con canoni mensili.</li>
+        </ul>
+        <p style="margin-top: 30px;">C'è un modo per automatizzare l'eccellenza senza perdere il controllo.</p>
+    </div>
+
+    <!-- Slide 3: Outreach Factory -->
+    <div class="slide bg-ink">
+        <div class="grain"></div>
+        <div class="corner-tl"></div><div class="corner-tr"></div>
+        <div class="bubble bubble-orange">01. OUTREACH FACTORY</div>
+        <h2>Acquisisci clienti <br><span class="hl">in automatico, 24/7</span></h2>
+        <p>Gmail e Social Media su pilota automatico. Il sistema estrae lead, personalizza i messaggi e invia centinaia di email al giorno.</p>
+        <ul class="feature-list">
+            <li>300+ email/gg su Gmail + Social</li>
+            <li>Comportamento umano (Zero Ban)</li>
+            <li>Qualificazione AI dei lead caldi</li>
+            <li>Zero canoni mensili</li>
+        </ul>
+    </div>
+
+    <!-- Slide 4: Content Factory -->
+    <div class="slide bg-ink">
+        <div class="grain"></div>
+        <div class="corner-tl"></div><div class="corner-tr"></div>
+        <div class="bubble bubble-orange">02. CONTENT FACTORY</div>
+        <h2>Genera e pubblica <br><span class="hl">contenuti in automatico</span></h2>
+        <p>L'AI genera il copy, il motore costruisce le grafiche e organizza tutto. Settimane di contenuti in pochi minuti.</p>
+        <ul class="feature-list">
+            <li>Caroselli IG generati via AI</li>
+            <li>Script Video & Caption automatiche</li>
+            <li>Organizzazione su Google Drive</li>
+            <li>Framework CRO applicato al copy</li>
+        </ul>
+    </div>
+
+    <!-- Slide 5: Second Brain -->
+    <div class="slide bg-ink">
+        <div class="grain"></div>
+        <div class="corner-tl"></div><div class="corner-tr"></div>
+        <div class="bubble bubble-orange">03. SECOND BRAIN</div>
+        <h2>L'AI che <span class="hl">conosce davvero</span> il tuo business</h2>
+        <p>Una knowledge base interconnessa che dà all'LLM il contesto permanente: clienti, processi e brand voice.</p>
+        <ul class="feature-list">
+            <li>Knowledge Graph proprietario</li>
+            <li>Memoria Permanente del business</li>
+            <li>Context Engineering avanzato</li>
+            <li>Mai più spiegazioni ripetitive all'AI</li>
+        </ul>
+    </div>
+
+    <!-- Slide 6: The Edge -->
+    <div class="slide bg-orange">
+        <div class="grain"></div>
+        <div class="bubble bubble-silver">Il Vantaggio Empire</div>
+        <h1 style="color: white;">Codice tuo <span style="text-decoration: underline;">per sempre.</span></h1>
+        <p style="color: white; font-size: 22px;">Non è un altro SaaS. È infrastruttura d'acciaio installata sui <strong>tuoi server</strong>.</p>
+        <ul class="feature-list" style="color: white;">
+            <li>Zero abbonamenti mensili</li>
+            <li>Proprietà intellettuale totale</li>
+            <li>Privacy e sicurezza massima</li>
+            <li>Scalabilità senza limiti di costi</li>
+        </ul>
+    </div>
+
+    <!-- Slide 7: CTA -->
+    <div class="slide bg-ink">
+        <div class="grain"></div>
+        <div class="corner-tl"></div><div class="corner-tr"></div>
+        <div class="corner-bl"></div><div class="corner-br"></div>
+        
+        <div class="bubble bubble-orange">Ultimo Step</div>
+        <h2>Pronto a <span class="hl">scalare</span> l'operatività?</h2>
+        <p>Prendiamo l'infrastruttura che uso ogni giorno e la cuciamo su misura per il tuo brand.</p>
+        
+        <a href="https://calendly.com/max-infoproducer/30min" class="cta-button">Prenota Call Strategica</a>
+        <p style="text-align: center; margin-top: 20px; font-size: 14px;">Solo per Creator, Coach & Business Owner</p>
+    </div>
+
+</body>
+</html>

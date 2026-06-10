@@ -1,0 +1,117 @@
+# _INDEX
+            
+> Path: [[Map - Crea_Siti|Crea siti > agents]]
+
+## Content
+
+# Agents Index — Digital Empire
+> 19 agenti AI specializzati. Organizzati in 6 categorie. Tutti attivabili via `Agent tool`.
+
+---
+
+## Orchestrators (`orchestrators/`)
+> Master controller — coordinano l'intero sistema
+
+| Agente | File | Modello | Colore | Ruolo |
+|--------|------|---------|--------|-------|
+| **cc-master** | `cc-master.md` | Default | — | Framework OPDV: Osserva → Pianifica → Delega → Verifica. Coordina tutti gli altri agenti strategicamente. |
+| **opus-director** | `opus-director.md` | Opus | `#B8860B` Gold | Master workflow OPUS 21 fasi. Guida, verifica gates qualità, attiva Anti-Gravity nei momenti chiave. |
+
+---
+
+## Market Agents (`market/`)
+> Attivati da `/market audit <url>` — 5 in parallelo simultaneo
+
+| Agente | File | Specializzazione |
+|--------|------|-----------------|
+| **market-competitive** | `market-competitive.md` | Analisi competitiva: posizionamento, differenziazione, benchmark settore |
+| **market-content** | `market-content.md` | Content audit: messaging, narrativa, coerenza brand, gap di contenuto |
+| **market-conversion** | `market-conversion.md` | CRO: funnel, friction points, CTA effectiveness, trust signals |
+| **market-strategy** | `market-strategy.md` | Brand strategy: identità, growth opportunities, canali, audience |
+| **market-technical** | `market-technical.md` | Technical SEO: core web vitals, indexability, structured data, performance |
+
+**Output combinato:** score 0-100 + priorità di intervento per categoria.
+
+---
+
+## Omega Agents (`omega/`)
+> Sistema OMEGA — generazione di skill/agenti per Claude Code
+
+| Agente | File | Ruolo |
+|--------|------|-------|
+| **omega-executor** | `omega-executor.md` | Genera file OMEGA uno per uno: analizza, crea, struttura skill/agenti pronti |
+| **omega-verifier** | `omega-verifier.md` | Quality gate 8 punti: verifica che ogni file generato soddisfi gli standard |
+
+---
+
+## Site Build Agents (`site-build/`)
+> Attivati da `/site build` — shell prima, poi pages + interactions in parallelo
+
+| Agente | File | Input | Output | Ordine |
+|--------|------|-------|--------|--------|
+| **site-build-shell** | `site-build-shell.md` | SITE-PLAN + SITE-DESIGN + SITE-COPY | Template HTML condiviso, navbar, footer, CSS base, JS skeleton | **PRIMO** (blocca gli altri) |
+| **site-build-pages** | `site-build-pages.md` | Shell template + SITE-COPY | Tutte le pagine HTML interior | parallelo con interactions |
+| **site-build-interactions** | `site-build-interactions.md` | Shell template | `js/interactions.js` (menu mobile, form, tabs, carousel, counters) | parallelo con pages |
+
+---
+
+## Site Copy Agents (`site-copy/`)
+> Attivati da `/site copy` — tutti e 3 in parallelo simultaneo
+
+| Agente | File | Specializzazione | Output in SITE-COPY.md |
+|--------|------|-----------------|----------------------|
+| **site-copy-hero** | `site-copy-hero.md` | H1/H2 pairs, subheadline, primary CTA, tagline brand — above the fold | Sezione HERO di ogni pagina |
+| **site-copy-body** | `site-copy-body.md` | Features-to-benefits, social proof, about narrative, FAQ, mid-page content | Tutte le sezioni body |
+| **site-copy-meta** | `site-copy-meta.md` | Title tag, meta description, OG copy, alt text, FAQ schema markup | Sezione SEO/META |
+
+---
+
+## Site QA Agents (`site-qa/`)
+> Attivati da `/site qa` — tutti e 4 in parallelo simultaneo
+
+| Agente | File | Standard | Score |
+|--------|------|----------|-------|
+| **site-qa-html** | `site-qa-html.md` | HTML5 validity, heading hierarchy, landmark regions, semantica | 25% del totale |
+| **site-qa-accessibility** | `site-qa-accessibility.md` | WCAG 2.1 AA, ARIA, keyboard nav, contrasto colori, focus management | 30% del totale |
+| **site-qa-performance** | `site-qa-performance.md` | Core Web Vitals (LCP/CLS/INP), render-blocking, ottimizzazione immagini | 25% del totale |
+| **site-qa-mobile** | `site-qa-mobile.md` | Responsive breakpoints, touch targets 44px+, iOS/Android, cross-browser | 20% del totale |
+
+**Formula score QA:** `HTML(25%) + Accessibility(30%) + Performance(25%) + Mobile(20%)`
+
+---
+
+## Riepilogo Attivazione
+
+| Categoria | N. Agenti | Quando vengono usati |
+|-----------|-----------|---------------------|
+| orchestrators | 2 | Sempre attivi — coordinano il sistema |
+| market | 5 | `/market audit` — tutti e 5 paralleli |
+| omega | 2 | `/omega-create` — generazione skill |
+| site-build | 3 | `/site build` — shell poi 2 paralleli |
+| site-copy | 3 | `/site copy` — tutti e 3 paralleli |
+| site-qa | 4 | `/site qa` — tutti e 4 paralleli |
+| **TOTALE** | **19** | — |
+
+---
+
+## Come Aggiungere un Nuovo Agente
+
+1. Crea il file `.md` nella sottocartella appropriata (o creane una nuova)
+2. Usa la struttura frontmatter:
+   ```
+   ---
+   name: nome-agente
+   description: Descrizione per il tool routing (cruciale — Claude la legge)
+   model: sonnet | opus | haiku  (opzionale)
+   color: "#hexcode"  (opzionale)
+   ---
+
+   [system prompt dell'agente]
+   ```
+3. Copia in `.claude/agents/`: `cp agents/<cat>/nome-agente.md ~/.claude/agents/`
+4. Verifica che compaia nella lista agenti disponibili
+
+## Collegamenti Correlati
+- [[Map - Agenti|Agenti Area]]
+- [[Map - App|App Area]]
+- [[Map - Crea_Siti|Crea Siti Area]]

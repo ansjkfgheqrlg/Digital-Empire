@@ -1,0 +1,1631 @@
+# 🏛️ Digital Empire - Master Index
+
+Benvenuto nella tua Knowledge Base iper-organizzata. Tutto il materiale di Digital Empire è stato categorizzato preservando la struttura originale dei file.
+
+## 🗺️ Aree Strategiche (Mappe Master)
+- [[Map - Agency-Empire|Agency-Empire]]
+- [[Map - Agency_Page|Agency_Page]]
+- [[Map - Agency_Page_-_Copia|Agency_Page_-_Copia]]
+- [[Map - Agenti|Agenti]]
+- [[Map - App|App]]
+- [[Map - Bho|Bho]]
+- [[Map - Crea_Siti|Crea_Siti]]
+- [[Map - Formazzione|Formazzione]]
+- [[Map - General|General]]
+- [[Map - Infobusiness|Infobusiness]]
+- [[Map - Kdp_-_Prodottti_Digitali|Kdp_-_Prodottti_Digitali]]
+- [[Map - Lancio_Corso_Skill_Beast|Lancio_Corso_Skill_Beast]]
+- [[Map - Lanco_Ebook|Lanco_Ebook]]
+- [[Map - Marketing_And_Ai|Marketing_And_Ai]]
+- [[Map - Marketmind|Marketmind]]
+- [[Map - Matriale_Linkeding|Matriale_Linkeding]]
+- [[Map - Outreach|Outreach]]
+- [[Map - Progetti_Claude|Progetti_Claude]]
+- [[Map - Prove|Prove]]
+- [[Map - Saas|Saas]]
+- [[Map - Skill_And_Agenti|Skill_And_Agenti]]
+- [[Map - System_Omega_-_Creazione_Proggetti_E_Skill_Per_Claude|System_Omega_-_Creazione_Proggetti_E_Skill_Per_Claude]]
+- [[Map - Workflow-Libri|Workflow-Libri]]
+- [[Map - Workfolw_Crea_Caroselli_À|Workfolw_Crea_Caroselli_À]]
+
+---
+
+## 🏭 Riferimenti Architetturali (Sistemi Costruiti)
+- [[projects/Piano_Maestro_EMPIRE_OS|🏛️ PIANO MAESTRO EMPIRE OS]] — **IL piano fondativo di Digital Empire Group** (2026-06-10): holding di 10 ecosistemi di agenti AI, 10 dossier esecutivi in `PIANO-MAESTRO/`, roadmap F1→F12. Ecosistema 10 MEMORY già costruito (`company/Memory/` — memory-first obbligatorio: interroga prima, checkpoint dopo). Fase corrente: F1.
+- [[projects/Exponium/Exponium_Content_Factory_Studio|Exponium Content Factory (AION GROUP)]] — Holding AI enterprise per lancio Exponium. 6 ecosistemi, 8 reparti, Corporate Backbone, 68 quality check, pipeline UGC reale testata (2026-05-29). **Modello architettonico di riferimento per Digital Empire.**
+
+---
+
+## 🛠️ Tool & Sistemi Operativi
+
+### AI Orchestration
+- [[tools/Tool_ClaudeFlow_Orchestration|Claude-Flow V3 (Ruflo) — Multi-Agent Orchestration]] — 138 skill estratte. 15 installate in Claude Code. Architettura: swarm + AgentDB + SPARC. **Installato in globale `ruflo@3.10.13` (npm -g) il 2026-05-30** — comando disponibile ovunque (≠ vendor snapshot, che è solo archivio).
+
+### Modelli AI — Aggiornamenti
+- [[sources/Source_Claude_Opus_48_7_Casi_Uso|Claude Opus 4.8 — 7 Casi d'Uso Reali + Prompt]] — Video ingerito 2026-06-08. Dynamic Workflows (agenti paralleli), Effort Controls (low/high/max), System Entries API. Pricing: $5/$25 per M token standard, Fast Mode 2.5× a $10/$50. OSWorld 82.3%, Mind2Web 84%.
+- [[sources/Source_Claude_Design_Beggiato|Claude Design — Metodo in 4 Passi (Giovanni Beggiato)]] — Video ingerito 2026-06-09. Design System → Template → Skills → Lead Magnet. Anti-pattern "vibe design" (490k token → 0). skill-creator, featuresheet:cheat-skill, self-check visivo, Thought Leader Funnel, Founder Authority Stack, 25 Social Media Manager skills.
+
+### Metodologie di Sviluppo
+- [[concepts/SPARC_Methodology|SPARC Methodology]] — Spec → Pseudocode → Architecture → Refinement → Completion. Adottato per tutti i capitoli Exponium.
+- [[concepts/AgentDB_Memory_System|AgentDB Memory System]] — Sistema di memoria vettoriale HNSW per il Second Brain. Architettura per Cap.9 Exponium.
+- [[concepts/Swarm_Orchestration_Pattern|Swarm Orchestration Pattern]] — Multi-agent coordination: parallel scrapers, hierarchical teams. Cap.6+ Exponium.
+
+### Analisi e Sintesi
+- [[synthesis/ClaudeFlow_Exponium_Applications|Claude-Flow → Exponium: Mapping Completo]] — Come ogni pattern claude-flow si applica ai 3 prodotti Exponium.
+
+### Copywriting
+- [[tools/Tool_Copy_Workflow_Orchestration|Copy Workflow Orchestration Layer]] — Sistema completo APSOC: 8 agenti, 6 skill, 4 workflow, 4 template. Entry point: `/copywriting`
+
+### Framework
+- [[concepts/Framework_Cold_Outreach_APSOC|Framework Cold Outreach APSOC+V]] — APSOC per cold email e DM (Barnum/Rainbow)
+
+---
+
+## 📚 Tutti i Documenti (Indice Alfabetico per Area)
+
+### Area: Agency-Empire
+- [[Knowledge_Base/agency-empire/(agency-empire) 2026-05-06-package|package]] — *(agency-empire)*
+- [[Knowledge_Base/agency-empire/(agency-empire) 2026-05-06-package-lock|package-lock]] — *(agency-empire)*
+- [[Knowledge_Base/agency-empire/(agency-empire) 2026-05-06-tsconfig|tsconfig]] — *(agency-empire)*
+- [[Knowledge_Base/agency-empire/(agency-empire) 2026-05-06-vercel-output|vercel-output]] — *(agency-empire)*
+- [[Knowledge_Base/agency-empire/.netlify/(.netlify) 2026-05-06-state|state]] — *(agency-empire > .netlify)*
+- [[Knowledge_Base/agency-empire/.netlify/edge-functions/(edge-functions) 2026-05-06-manifest|manifest]] — *(agency-empire > .netlify > edge-functions)*
+- [[Knowledge_Base/agency-empire/.netlify/functions/(functions) 2026-05-06-manifest|manifest]] — *(agency-empire > .netlify > functions)*
+-  — *(agency-empire > .netlify > functions-internal > ___netlify-server-handler)*
+-  — *(agency-empire > .netlify > functions-internal > ___netlify-server-handler)*
+-  — *(agency-empire > .netlify > functions-internal > ___netlify-server-handler)*
+-  — *(agency-empire > .netlify > functions-internal > ___netlify-server-handler > .netlify)*
+- [[Knowledge_Base/agency-empire/.netlify/plugins/(plugins) 2026-05-06-package|package]] — *(agency-empire > .netlify > plugins)*
+- [[Knowledge_Base/agency-empire/.netlify/plugins/(plugins) 2026-05-06-package-lock|package-lock]] — *(agency-empire > .netlify > plugins)*
+- [[Knowledge_Base/agency-empire/.vercel/(.vercel) 2026-05-06-readme|README]] — *(agency-empire > .vercel)*
+- [[Knowledge_Base/agency-empire/.vercel/(.vercel) 2026-05-06-project|project]] — *(agency-empire > .vercel)*
+- [[Knowledge_Base/agency-empire/out/(out) 2026-05-06-next-page|__next.__PAGE__]] — *(agency-empire > out)*
+- [[Knowledge_Base/agency-empire/out/(out) 2026-05-06-next-full|__next._full]] — *(agency-empire > out)*
+- [[Knowledge_Base/agency-empire/out/(out) 2026-05-06-next-head|__next._head]] — *(agency-empire > out)*
+- [[Knowledge_Base/agency-empire/out/(out) 2026-05-06-next-index|__next._index]] — *(agency-empire > out)*
+- [[Knowledge_Base/agency-empire/out/(out) 2026-05-06-next-tree|__next._tree]] — *(agency-empire > out)*
+- [[Knowledge_Base/agency-empire/out/(out) 2026-05-06-not-found|_not-found]] — *(agency-empire > out)*
+- [[Knowledge_Base/agency-empire/out/(out) 2026-05-06-index|index]] — *(agency-empire > out)*
+- [[Knowledge_Base/agency-empire/out/_not-found/(_not-found) 2026-05-06-next-full|__next._full]] — *(agency-empire > out > _not-found)*
+- [[Knowledge_Base/agency-empire/out/_not-found/(_not-found) 2026-05-06-next-head|__next._head]] — *(agency-empire > out > _not-found)*
+- [[Knowledge_Base/agency-empire/out/_not-found/(_not-found) 2026-05-06-next-index|__next._index]] — *(agency-empire > out > _not-found)*
+- [[Knowledge_Base/agency-empire/out/_not-found/(_not-found) 2026-05-06-next-not-found|__next._not-found]] — *(agency-empire > out > _not-found)*
+- [[Knowledge_Base/agency-empire/out/_not-found/(_not-found) 2026-05-06-next-tree|__next._tree]] — *(agency-empire > out > _not-found)*
+- [[Knowledge_Base/agency-empire/out/_not-found/__next._not-found/(__next._not-found) 2026-05-06-page|__PAGE__]] — *(agency-empire > out > _not-found > __next._not-found)*
+
+### Area: Agency_Page
+- [[Knowledge_Base/Agency page/(Agency page) 2026-05-06-readme|README]] — *(Agency page)*
+- [[Knowledge_Base/Agency page/(Agency page) 2026-05-06-metadata|metadata]] — *(Agency page)*
+- [[Knowledge_Base/Agency page/(Agency page) 2026-05-06-package|package]] — *(Agency page)*
+- [[Knowledge_Base/Agency page/(Agency page) 2026-05-06-tsconfig|tsconfig]] — *(Agency page)*
+
+### Area: Agency_Page_-_Copia
+- [[Knowledge_Base/Agency page - Copia/(Agency page - Copia) 2026-05-06-cpb-gestioneobiezioni|CPB_Gestioneobiezioni]] — *(Agency page - Copia)*
+- [[Knowledge_Base/Agency page - Copia/(Agency page - Copia) 2026-05-06-readme|README]] — *(Agency page - Copia)*
+- [[Knowledge_Base/Agency page - Copia/(Agency page - Copia) 2026-05-06-metadata|metadata]] — *(Agency page - Copia)*
+- [[Knowledge_Base/Agency page - Copia/(Agency page - Copia) 2026-05-06-package|package]] — *(Agency page - Copia)*
+- [[Knowledge_Base/Agency page - Copia/(Agency page - Copia) 2026-05-06-package-lock|package-lock]] — *(Agency page - Copia)*
+- [[Knowledge_Base/Agency page - Copia/(Agency page - Copia) 2026-05-06-tsconfig|tsconfig]] — *(Agency page - Copia)*
+- [[Knowledge_Base/Agency page - Copia/.netlify/(.netlify) 2026-05-06-state|state]] — *(Agency page - Copia > .netlify)*
+
+### Area: Agenti
+- [[Knowledge_Base/Agenti/(Agenti) 2026-05-06-marketing-audit|MARKETING-AUDIT]] — *(Agenti)*
+- [[Knowledge_Base/Agenti/(Agenti) 2026-05-06-marketing-report-andrei-copy-com|MARKETING-REPORT-andrei-copy-com]] — *(Agenti)*
+- [[Knowledge_Base/Agenti/(Agenti) 2026-05-06-struttura|struttura]] — *(Agenti)*
+- [[Knowledge_Base/Agenti/Agency/(Agency) 2026-05-06-requirements|requirements]] — *(Agenti > Agency)*
+- [[Knowledge_Base/Agenti/Agency/agents/(agents) 2026-05-06-market-competitive|market-competitive]] — *(Agenti > Agency > agents)*
+- [[Knowledge_Base/Agenti/Agency/agents/(agents) 2026-05-06-market-content|market-content]] — *(Agenti > Agency > agents)*
+- [[Knowledge_Base/Agenti/Agency/agents/(agents) 2026-05-06-market-conversion|market-conversion]] — *(Agenti > Agency > agents)*
+- [[Knowledge_Base/Agenti/Agency/agents/(agents) 2026-05-06-market-strategy|market-strategy]] — *(Agenti > Agency > agents)*
+- [[Knowledge_Base/Agenti/Agency/agents/(agents) 2026-05-06-market-technical|market-technical]] — *(Agenti > Agency > agents)*
+- [[Knowledge_Base/Agenti/Agency/orchestrator/(orchestrator) 2026-05-06-agent|AGENT]] — *(Agenti > Agency > orchestrator)*
+- [[Knowledge_Base/Agenti/Agency/output/(output) 2026-05-06-process-log|process_log]] — *(Agenti > Agency > output)*
+- [[Knowledge_Base/Agenti/Agency/output/(output) 2026-05-06-test-pdf|test_pdf]] — *(Agenti > Agency > output)*
+- [[Knowledge_Base/Agenti/Agency/outreach/(outreach) 2026-05-06-claude|CLAUDE]] — *(Agenti > Agency > outreach)*
+- [[Knowledge_Base/Agenti/Agency/outreach/(outreach) 2026-05-06-requirements|requirements]] — *(Agenti > Agency > outreach)*
+- [[Knowledge_Base/Agenti/Agency/outreach/(outreach) 2026-05-06-script-chiamata-freddo|script_chiamata_freddo]] — *(Agenti > Agency > outreach)*
+- [[Knowledge_Base/Agenti/Agency/outreach/rules/(rules) 2026-05-06-01-ricerca-no-sito|01_ricerca_no_sito]] — *(Agenti > Agency > outreach > rules)*
+- [[Knowledge_Base/Agenti/Agency/outreach/rules/(rules) 2026-05-06-02-ricerca-ads-funnel-scarsi|02_ricerca_ads_funnel_scarsi]] — *(Agenti > Agency > outreach > rules)*
+- [[Knowledge_Base/Agenti/Agency/outreach/rules/(rules) 2026-05-06-03-qualifica-lead|03_qualifica_lead]] — *(Agenti > Agency > outreach > rules)*
+- [[Knowledge_Base/Agenti/Agency/outreach/rules/(rules) 2026-05-06-04-drafta-email|04_drafta_email]] — *(Agenti > Agency > outreach > rules)*
+- [[Knowledge_Base/Agenti/Agency/outreach/rules/(rules) 2026-05-06-04b-invia-email|04b_invia_email]] — *(Agenti > Agency > outreach > rules)*
+- [[Knowledge_Base/Agenti/Agency/outreach/rules/(rules) 2026-05-06-05-traccia-outreach|05_traccia_outreach]] — *(Agenti > Agency > outreach > rules)*
+- [[Knowledge_Base/Agenti/Agency/outreach/rules/(rules) 2026-05-06-06-ricerca-ai-prospects|06_ricerca_ai_prospects]] — *(Agenti > Agency > outreach > rules)*
+- [[Knowledge_Base/Agenti/Agency/skills/market/(market) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-ads/(market-ads) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-ads)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-audit/(market-audit) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-audit)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-brand/(market-brand) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-brand)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-competitors/(market-competitors) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-competitors)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-copy/(market-copy) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-copy)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-emails/(market-emails) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-emails)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-funnel/(market-funnel) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-funnel)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-landing/(market-landing) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-landing)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-launch/(market-launch) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-launch)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-proposal/(market-proposal) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-proposal)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-report/(market-report) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-report)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-report-pdf/(market-report-pdf) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-report-pdf)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-seo/(market-seo) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-seo)*
+- [[Knowledge_Base/Agenti/Agency/skills/market-social/(market-social) 2026-05-06-skill|SKILL]] — *(Agenti > Agency > skills > market-social)*
+- [[Knowledge_Base/Agenti/Agency/sub-agents/ai-implementation/(ai-implementation) 2026-05-06-agent|AGENT]] — *(Agenti > Agency > sub-agents > ai-implementation)*
+- [[Knowledge_Base/Agenti/Agency/sub-agents/cro-funnel/(cro-funnel) 2026-05-06-agent|AGENT]] — *(Agenti > Agency > sub-agents > cro-funnel)*
+- [[Knowledge_Base/Agenti/Agency/sub-agents/no-website/(no-website) 2026-05-06-agent|AGENT]] — *(Agenti > Agency > sub-agents > no-website)*
+- [[Knowledge_Base/Agenti/Agency/templates/(templates) 2026-05-06-content-calendar|content-calendar]] — *(Agenti > Agency > templates)*
+- [[Knowledge_Base/Agenti/Agency/templates/(templates) 2026-05-06-email-launch|email-launch]] — *(Agenti > Agency > templates)*
+- [[Knowledge_Base/Agenti/Agency/templates/(templates) 2026-05-06-email-nurture|email-nurture]] — *(Agenti > Agency > templates)*
+- [[Knowledge_Base/Agenti/Agency/templates/(templates) 2026-05-06-email-welcome|email-welcome]] — *(Agenti > Agency > templates)*
+- [[Knowledge_Base/Agenti/Agency/templates/(templates) 2026-05-06-launch-checklist|launch-checklist]] — *(Agenti > Agency > templates)*
+- [[Knowledge_Base/Agenti/Agency/templates/(templates) 2026-05-06-proposal-template|proposal-template]] — *(Agenti > Agency > templates)*
+
+### Area: App
+- [[Knowledge_Base/App/(App) 2026-05-06-ti-sei-bloccato-per-via-del-fine-to|Ti sei bloccato per via del fine to]] — *(App)*
+
+### Area: Bho
+- [[Knowledge_Base/bho/(bho) 2026-05-06-adesso-va-aggiunto-un-intera-sezion|Adesso va aggiunto un'intera sezion]] — *(bho)*
+- [[Knowledge_Base/bho/(bho) 2026-05-06-prompt-per-continuo-costruzione-piattaforma-corso|prompt per Continuo costruzione piattaforma corso.]] — *(bho)*
+
+### Area: Crea_Siti
+- [[Knowledge_Base/Crea siti/(Crea siti) 2026-05-06-opus-context|OPUS-CONTEXT]] — *(Crea siti)*
+- [[Knowledge_Base/Crea siti/(Crea siti) 2026-05-06-readme|README]] — *(Crea siti)*
+- [[Knowledge_Base/Crea siti/Siti CCM/(Siti CCM) 2026-05-06-qa-accessibility|QA-ACCESSIBILITY]] — *(Crea siti > Siti CCM)*
+- [[Knowledge_Base/Crea siti/Siti CCM/(Siti CCM) 2026-05-06-qa-html|QA-HTML]] — *(Crea siti > Siti CCM)*
+- [[Knowledge_Base/Crea siti/Siti CCM/(Siti CCM) 2026-05-06-qa-mobile|QA-MOBILE]] — *(Crea siti > Siti CCM)*
+- [[Knowledge_Base/Crea siti/Siti CCM/(Siti CCM) 2026-05-06-qa-performance|QA-PERFORMANCE]] — *(Crea siti > Siti CCM)*
+- [[Knowledge_Base/Crea siti/Siti CCM/CONTESTO/(CONTESTO) 2026-05-06-contesto-lancio|Contesto-lancio]] — *(Crea siti > Siti CCM > CONTESTO)*
+- [[Knowledge_Base/Crea siti/Siti CCM/CONTESTO/(CONTESTO) 2026-05-06-leandignpage-prompt|Leandignpage-prompt]] — *(Crea siti > Siti CCM > CONTESTO)*
+- [[Knowledge_Base/Crea siti/agents/(agents) 2026-05-06-index|_INDEX]] — *(Crea siti > agents)*
+- [[Knowledge_Base/Crea siti/agents/market/(market) 2026-05-06-market-competitive|market-competitive]] — *(Crea siti > agents > market)*
+- [[Knowledge_Base/Crea siti/agents/market/(market) 2026-05-06-market-content|market-content]] — *(Crea siti > agents > market)*
+- [[Knowledge_Base/Crea siti/agents/market/(market) 2026-05-06-market-conversion|market-conversion]] — *(Crea siti > agents > market)*
+- [[Knowledge_Base/Crea siti/agents/market/(market) 2026-05-06-market-strategy|market-strategy]] — *(Crea siti > agents > market)*
+- [[Knowledge_Base/Crea siti/agents/market/(market) 2026-05-06-market-technical|market-technical]] — *(Crea siti > agents > market)*
+- [[Knowledge_Base/Crea siti/agents/omega/(omega) 2026-05-06-omega-executor|omega-executor]] — *(Crea siti > agents > omega)*
+- [[Knowledge_Base/Crea siti/agents/omega/(omega) 2026-05-06-omega-verifier|omega-verifier]] — *(Crea siti > agents > omega)*
+- [[Knowledge_Base/Crea siti/agents/orchestrators/(orchestrators) 2026-05-06-cc-master|cc-master]] — *(Crea siti > agents > orchestrators)*
+- [[Knowledge_Base/Crea siti/agents/orchestrators/(orchestrators) 2026-05-06-opus-director|opus-director]] — *(Crea siti > agents > orchestrators)*
+- [[Knowledge_Base/Crea siti/agents/site-build/(site-build) 2026-05-06-site-build-interactions|site-build-interactions]] — *(Crea siti > agents > site-build)*
+- [[Knowledge_Base/Crea siti/agents/site-build/(site-build) 2026-05-06-site-build-pages|site-build-pages]] — *(Crea siti > agents > site-build)*
+- [[Knowledge_Base/Crea siti/agents/site-build/(site-build) 2026-05-06-site-build-shell|site-build-shell]] — *(Crea siti > agents > site-build)*
+- [[Knowledge_Base/Crea siti/agents/site-copy/(site-copy) 2026-05-06-site-copy-body|site-copy-body]] — *(Crea siti > agents > site-copy)*
+- [[Knowledge_Base/Crea siti/agents/site-copy/(site-copy) 2026-05-06-site-copy-hero|site-copy-hero]] — *(Crea siti > agents > site-copy)*
+- [[Knowledge_Base/Crea siti/agents/site-copy/(site-copy) 2026-05-06-site-copy-meta|site-copy-meta]] — *(Crea siti > agents > site-copy)*
+- [[Knowledge_Base/Crea siti/agents/site-qa/(site-qa) 2026-05-06-site-qa-accessibility|site-qa-accessibility]] — *(Crea siti > agents > site-qa)*
+- [[Knowledge_Base/Crea siti/agents/site-qa/(site-qa) 2026-05-06-site-qa-html|site-qa-html]] — *(Crea siti > agents > site-qa)*
+- [[Knowledge_Base/Crea siti/agents/site-qa/(site-qa) 2026-05-06-site-qa-mobile|site-qa-mobile]] — *(Crea siti > agents > site-qa)*
+- [[Knowledge_Base/Crea siti/agents/site-qa/(site-qa) 2026-05-06-site-qa-performance|site-qa-performance]] — *(Crea siti > agents > site-qa)*
+- [[Knowledge_Base/Crea siti/skills/(skills) 2026-05-06-index|_INDEX]] — *(Crea siti > skills)*
+- [[Knowledge_Base/Crea siti/skills/brand-guidelines/(brand-guidelines) 2026-05-06-license|LICENSE]] — *(Crea siti > skills > brand-guidelines)*
+- [[Knowledge_Base/Crea siti/skills/brand-guidelines/(brand-guidelines) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > brand-guidelines)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/(canvas-design) 2026-05-06-license|LICENSE]] — *(Crea siti > skills > canvas-design)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/(canvas-design) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > canvas-design)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-arsenalsc-ofl|ArsenalSC-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-bigshoulders-ofl|BigShoulders-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-boldonse-ofl|Boldonse-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-bricolagegrotesque-ofl|BricolageGrotesque-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-crimsonpro-ofl|CrimsonPro-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-dmmono-ofl|DMMono-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-ericaone-ofl|EricaOne-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-geistmono-ofl|GeistMono-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-gloock-ofl|Gloock-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-ibmplexmono-ofl|IBMPlexMono-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-instrumentsans-ofl|InstrumentSans-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-italiana-ofl|Italiana-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-jetbrainsmono-ofl|JetBrainsMono-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-jura-ofl|Jura-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-librebaskerville-ofl|LibreBaskerville-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-lora-ofl|Lora-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-nationalpark-ofl|NationalPark-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-nothingyoucoulddo-ofl|NothingYouCouldDo-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-outfit-ofl|Outfit-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-pixelifysans-ofl|PixelifySans-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-poiretone-ofl|PoiretOne-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-redhatmono-ofl|RedHatMono-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-silkscreen-ofl|Silkscreen-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-smoochsans-ofl|SmoochSans-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-tektur-ofl|Tektur-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-worksans-ofl|WorkSans-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/canvas-design/canvas-fonts/(canvas-fonts) 2026-05-06-youngserif-ofl|YoungSerif-OFL]] — *(Crea siti > skills > canvas-design > canvas-fonts)*
+- [[Knowledge_Base/Crea siti/skills/frontend-design/(frontend-design) 2026-05-06-license|LICENSE]] — *(Crea siti > skills > frontend-design)*
+- [[Knowledge_Base/Crea siti/skills/frontend-design/(frontend-design) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > frontend-design)*
+- [[Knowledge_Base/Crea siti/skills/market/(market) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market)*
+- [[Knowledge_Base/Crea siti/skills/market/templates/(templates) 2026-05-06-content-calendar|content-calendar]] — *(Crea siti > skills > market > templates)*
+- [[Knowledge_Base/Crea siti/skills/market/templates/(templates) 2026-05-06-email-launch|email-launch]] — *(Crea siti > skills > market > templates)*
+- [[Knowledge_Base/Crea siti/skills/market/templates/(templates) 2026-05-06-email-nurture|email-nurture]] — *(Crea siti > skills > market > templates)*
+- [[Knowledge_Base/Crea siti/skills/market/templates/(templates) 2026-05-06-email-welcome|email-welcome]] — *(Crea siti > skills > market > templates)*
+- [[Knowledge_Base/Crea siti/skills/market/templates/(templates) 2026-05-06-launch-checklist|launch-checklist]] — *(Crea siti > skills > market > templates)*
+- [[Knowledge_Base/Crea siti/skills/market/templates/(templates) 2026-05-06-proposal-template|proposal-template]] — *(Crea siti > skills > market > templates)*
+- [[Knowledge_Base/Crea siti/skills/market-ads/(market-ads) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-ads)*
+- [[Knowledge_Base/Crea siti/skills/market-audit/(market-audit) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-audit)*
+- [[Knowledge_Base/Crea siti/skills/market-brand/(market-brand) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-brand)*
+- [[Knowledge_Base/Crea siti/skills/market-competitors/(market-competitors) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-competitors)*
+- [[Knowledge_Base/Crea siti/skills/market-copy/(market-copy) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-copy)*
+- [[Knowledge_Base/Crea siti/skills/market-emails/(market-emails) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-emails)*
+- [[Knowledge_Base/Crea siti/skills/market-funnel/(market-funnel) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-funnel)*
+- [[Knowledge_Base/Crea siti/skills/market-landing/(market-landing) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-landing)*
+- [[Knowledge_Base/Crea siti/skills/market-launch/(market-launch) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-launch)*
+- [[Knowledge_Base/Crea siti/skills/market-proposal/(market-proposal) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-proposal)*
+- [[Knowledge_Base/Crea siti/skills/market-report/(market-report) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-report)*
+- [[Knowledge_Base/Crea siti/skills/market-report-pdf/(market-report-pdf) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-report-pdf)*
+- [[Knowledge_Base/Crea siti/skills/market-seo/(market-seo) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-seo)*
+- [[Knowledge_Base/Crea siti/skills/market-social/(market-social) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > market-social)*
+- [[Knowledge_Base/Crea siti/skills/omega-create/(omega-create) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > omega-create)*
+- [[Knowledge_Base/Crea siti/skills/opus/(opus) 2026-05-06-anti-ai-blacklist|ANTI-AI-BLACKLIST]] — *(Crea siti > skills > opus)*
+- [[Knowledge_Base/Crea siti/skills/opus/(opus) 2026-05-06-opus-process|OPUS-PROCESS]] — *(Crea siti > skills > opus)*
+- [[Knowledge_Base/Crea siti/skills/opus/(opus) 2026-05-06-opus-status-template|OPUS-STATUS-template]] — *(Crea siti > skills > opus)*
+- [[Knowledge_Base/Crea siti/skills/opus/(opus) 2026-05-06-polish-loop-protocol|POLISH-LOOP-PROTOCOL]] — *(Crea siti > skills > opus)*
+- [[Knowledge_Base/Crea siti/skills/opus/(opus) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > opus)*
+- [[Knowledge_Base/Crea siti/skills/opus/(opus) 2026-05-06-typography-system|TYPOGRAPHY-SYSTEM]] — *(Crea siti > skills > opus)*
+- [[Knowledge_Base/Crea siti/skills/opus/templates/(templates) 2026-05-06-ag-atmosphere|ag-atmosphere]] — *(Crea siti > skills > opus > templates)*
+- [[Knowledge_Base/Crea siti/skills/opus/templates/(templates) 2026-05-06-ag-copy|ag-copy]] — *(Crea siti > skills > opus > templates)*
+- [[Knowledge_Base/Crea siti/skills/opus/templates/(templates) 2026-05-06-ag-design-manifesto|ag-design-manifesto]] — *(Crea siti > skills > opus > templates)*
+- [[Knowledge_Base/Crea siti/skills/opus/templates/(templates) 2026-05-06-ag-launch|ag-launch]] — *(Crea siti > skills > opus > templates)*
+- [[Knowledge_Base/Crea siti/skills/opus/templates/(templates) 2026-05-06-ag-motion|ag-motion]] — *(Crea siti > skills > opus > templates)*
+- [[Knowledge_Base/Crea siti/skills/opus/templates/(templates) 2026-05-06-ag-polish|ag-polish]] — *(Crea siti > skills > opus > templates)*
+- [[Knowledge_Base/Crea siti/skills/opus/templates/(templates) 2026-05-06-ag-token-review|ag-token-review]] — *(Crea siti > skills > opus > templates)*
+- [[Knowledge_Base/Crea siti/skills/opus/templates/(templates) 2026-05-06-ag-typography|ag-typography]] — *(Crea siti > skills > opus > templates)*
+- [[Knowledge_Base/Crea siti/skills/site/(site) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site)*
+- [[Knowledge_Base/Crea siti/skills/site-3d/(site-3d) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-3d)*
+- [[Knowledge_Base/Crea siti/skills/site-animate/(site-animate) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-animate)*
+- [[Knowledge_Base/Crea siti/skills/site-brief/(site-brief) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-brief)*
+- [[Knowledge_Base/Crea siti/skills/site-build/(site-build) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-build)*
+- [[Knowledge_Base/Crea siti/skills/site-components/(site-components) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-components)*
+- [[Knowledge_Base/Crea siti/skills/site-copy/(site-copy) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-copy)*
+- [[Knowledge_Base/Crea siti/skills/site-deploy/(site-deploy) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-deploy)*
+- [[Knowledge_Base/Crea siti/skills/site-design/(site-design) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-design)*
+- [[Knowledge_Base/Crea siti/skills/site-plan/(site-plan) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-plan)*
+- [[Knowledge_Base/Crea siti/skills/site-qa/(site-qa) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-qa)*
+- [[Knowledge_Base/Crea siti/skills/site-report/(site-report) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-report)*
+- [[Knowledge_Base/Crea siti/skills/site-seo/(site-seo) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-seo)*
+- [[Knowledge_Base/Crea siti/skills/site-stack/(site-stack) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > site-stack)*
+- [[Knowledge_Base/Crea siti/skills/skill-creator/(skill-creator) 2026-05-06-license|LICENSE]] — *(Crea siti > skills > skill-creator)*
+- [[Knowledge_Base/Crea siti/skills/skill-creator/(skill-creator) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > skill-creator)*
+- [[Knowledge_Base/Crea siti/skills/skill-creator/agents/(agents) 2026-05-06-analyzer|analyzer]] — *(Crea siti > skills > skill-creator > agents)*
+- [[Knowledge_Base/Crea siti/skills/skill-creator/agents/(agents) 2026-05-06-comparator|comparator]] — *(Crea siti > skills > skill-creator > agents)*
+- [[Knowledge_Base/Crea siti/skills/skill-creator/agents/(agents) 2026-05-06-grader|grader]] — *(Crea siti > skills > skill-creator > agents)*
+- [[Knowledge_Base/Crea siti/skills/skill-creator/references/(references) 2026-05-06-schemas|schemas]] — *(Crea siti > skills > skill-creator > references)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/(theme-factory) 2026-05-06-license|LICENSE]] — *(Crea siti > skills > theme-factory)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/(theme-factory) 2026-05-06-skill|SKILL]] — *(Crea siti > skills > theme-factory)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/(theme-factory) 2026-05-06-theme-showcase|theme-showcase]] — *(Crea siti > skills > theme-factory)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/themes/(themes) 2026-05-06-arctic-frost|arctic-frost]] — *(Crea siti > skills > theme-factory > themes)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/themes/(themes) 2026-05-06-botanical-garden|botanical-garden]] — *(Crea siti > skills > theme-factory > themes)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/themes/(themes) 2026-05-06-desert-rose|desert-rose]] — *(Crea siti > skills > theme-factory > themes)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/themes/(themes) 2026-05-06-forest-canopy|forest-canopy]] — *(Crea siti > skills > theme-factory > themes)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/themes/(themes) 2026-05-06-golden-hour|golden-hour]] — *(Crea siti > skills > theme-factory > themes)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/themes/(themes) 2026-05-06-midnight-galaxy|midnight-galaxy]] — *(Crea siti > skills > theme-factory > themes)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/themes/(themes) 2026-05-06-modern-minimalist|modern-minimalist]] — *(Crea siti > skills > theme-factory > themes)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/themes/(themes) 2026-05-06-ocean-depths|ocean-depths]] — *(Crea siti > skills > theme-factory > themes)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/themes/(themes) 2026-05-06-sunset-boulevard|sunset-boulevard]] — *(Crea siti > skills > theme-factory > themes)*
+- [[Knowledge_Base/Crea siti/skills/theme-factory/themes/(themes) 2026-05-06-tech-innovation|tech-innovation]] — *(Crea siti > skills > theme-factory > themes)*
+- [[Knowledge_Base/Crea siti/system/(system) 2026-05-06-activation-guide|ACTIVATION-GUIDE]] — *(Crea siti > system)*
+- [[Knowledge_Base/Crea siti/system/(system) 2026-05-06-architettura-sistema-site|ARCHITETTURA-SISTEMA-SITE]] — *(Crea siti > system)*
+- [[Knowledge_Base/Crea siti/system/(system) 2026-05-06-sop-marketing|SOP-MARKETING]] — *(Crea siti > system)*
+- [[Knowledge_Base/Crea siti/system/(system) 2026-05-06-sop-opus|SOP-OPUS]] — *(Crea siti > system)*
+- [[Knowledge_Base/Crea siti/system/(system) 2026-05-06-sop-site|SOP-SITE]] — *(Crea siti > system)*
+
+### Area: Formazzione
+-  — *(Formazzione)*
+-  — *(Formazzione)*
+- [[Knowledge_Base/Formazzione/Agency Scalping/(Agency Scalping) 2026-05-06-14-milioni-all-anno-agency-scalping|$14 MILIONI ALL'ANNO _ Agency scalping]] — *(Formazzione > Agency Scalping)*
+- [[Knowledge_Base/Formazzione/Agency Scalping/(Agency Scalping) 2026-05-06-agenzia-smma-da-zero-nel-20262728-03|Agenzia SMMA da Zero nel 20262728 - 03]] — *(Formazzione > Agency Scalping)*
+-  — *(Formazzione > Agency Scalping)*
+- [[Knowledge_Base/Formazzione/Agency Scalping/(Agency Scalping) 2026-05-06-ricerca-perplexity-scalping-agency|Ricerca Perplexity _ Scalping Agency]] — *(Formazzione > Agency Scalping)*
+- [[Knowledge_Base/Formazzione/Agency Scalping/(Agency Scalping) 2026-05-06-scalping-agency|Scalping Agency]] — *(Formazzione > Agency Scalping)*
+- [[Knowledge_Base/Formazzione/Agency Scalping/(Agency Scalping) 2026-05-06-scalping-agency-02|Scalping Agency - 02]] — *(Formazzione > Agency Scalping)*
+- [[Knowledge_Base/Formazzione/Agency Scalping/(Agency Scalping) 2026-05-06-l-momento-d-oro-del-marketing-digitale|l Momento d'Oro del Marketing Digitale]] — *(Formazzione > Agency Scalping)*
+- [[Knowledge_Base/Formazzione/Claude code/(Claude code) 2026-05-06-manuale-completo-di-claude-code-per-il-business-1|MANUALE COMPLETO DI CLAUDE CODE PER IL BUSINESS]] — *(Formazzione > Claude code)*
+- [[Knowledge_Base/Formazzione/Claude code/(Claude code) 2026-05-06-manuale-completo-di-claude-code-per-il-business|MANUALE COMPLETO DI CLAUDE CODE PER IL BUSINESS]] — *(Formazzione > Claude code)*
+- [[Knowledge_Base/Formazzione/Outreach/(Outreach) 2026-05-06-framework-outreach|FRAMEWORK  OUTREACH]] — *(Formazzione > Outreach)*
+- [[Knowledge_Base/Formazzione/Outreach/(Outreach) 2026-05-06-outreach-con-loom|OUTREACH CON LOOM]] — *(Formazzione > Outreach)*
+-  — *(Formazzione > Outreach)*
+- [[Knowledge_Base/Formazzione/Outreach/(Outreach) 2026-05-06-outreach-loom-milione-di-dollari|_Outreach Loom _  Milione di Dollari ]] — *(Formazzione > Outreach)*
+- [[Knowledge_Base/Formazzione/Storytelling/(Storytelling) 2026-05-06-storytelling-formazione|storytelling formazione]] — *(Formazzione > Storytelling)*
+- [[Knowledge_Base/Formazzione/Youtube/(Youtube) 2026-05-06-rebdere-youtube-un-lead-magnet|Rebdere YOUTUBE un Lead magnet]] — *(Formazzione > Youtube)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-1-fondamenta-e/(parte-1-fondamenta-e) overview|PARTE 1 — FONDAMENTA E]] — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-1-introduzione-a-claude)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-1-introduzione-a-claude)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-1-introduzione-a-claude)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-1-introduzione-a-claude)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-1-introduzione-a-claude)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-1-introduzione-a-claude)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-1-introduzione-a-claude)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-1-introduzione-a-claude)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-1-introduzione-a-claude)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-2-piani-di-abbonamento-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-2-piani-di-abbonamento-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-2-piani-di-abbonamento-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-2-piani-di-abbonamento-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-2-piani-di-abbonamento-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-2-piani-di-abbonamento-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-2-piani-di-abbonamento-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-2-piani-di-abbonamento-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-3-metodi-di-accesso-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-3-metodi-di-accesso-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-3-metodi-di-accesso-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-3-metodi-di-accesso-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-3-metodi-di-accesso-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-3-metodi-di-accesso-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-3-metodi-di-accesso-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-3-metodi-di-accesso-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-4-la-documentazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-4-la-documentazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-4-la-documentazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-4-la-documentazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-4-la-documentazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-4-la-documentazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-4-la-documentazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-1-fondamenta-e > capitolo-4-la-documentazione)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-10-/(parte-10-) overview|PARTE 10 —]] — *(Formazzione > manuale-completo-claude-code-business > parte-10-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-10- > capitolo-35)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-10- > capitolo-35)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-10- > capitolo-35)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-10- > capitolo-35)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-10-/capitolo-35/(capitolo-35) overview|CAPITOLO 35]] — *(Formazzione > manuale-completo-claude-code-business > parte-10- > capitolo-35)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-10-funzionalità-avanzate-e-deployment)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-10-funzionalità-avanzate-e-deployment > capitolo-35-hooks-automazione-basata-su-eventi)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-10-funzionalità-avanzate-e-deployment > capitolo-36-auto-memory-e-persistenza-tra-sessioni)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-10-funzionalità-avanzate-e-deployment > capitolo-37-git-worktrees-e-version-control)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-10-funzionalità-avanzate-e-deployment > capitolo-38-deployment-e-monetizzazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-5-installazione-di)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-5-installazione-di)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-5-installazione-di)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-5-installazione-di)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-5-installazione-di)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-5-installazione-di)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-5-installazione-di)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-5-installazione-di)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-5-installazione-di)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-6-gli-ide-vs-code-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-6-gli-ide-vs-code-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-6-gli-ide-vs-code-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-6-gli-ide-vs-code-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-6-gli-ide-vs-code-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-6-gli-ide-vs-code-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-6-gli-ide-vs-code-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-6-gli-ide-vs-code-e)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-7-il-terminal-come)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-7-il-terminal-come)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-7-il-terminal-come)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-7-il-terminal-come)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-7-il-terminal-come)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-7-il-terminal-come)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-7-il-terminal-come)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-7-il-terminal-come)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-7-il-terminal-come)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-8-configurazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-8-configurazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-8-configurazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-8-configurazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-8-configurazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-8-configurazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-8-configurazione)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-2-installazione-e > capitolo-8-configurazione)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-4-/(parte-4-) overview|PARTE 4 —]] — *(Formazzione > manuale-completo-claude-code-business > parte-4-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-13-tre-metodi-per)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-13-tre-metodi-per)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-13-tre-metodi-per)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-13-tre-metodi-per)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-13-tre-metodi-per)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-13-tre-metodi-per)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-13-tre-metodi-per)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-13-tre-metodi-per)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-14-il-ciclo)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-14-il-ciclo)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-14-il-ciclo)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-14-il-ciclo)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-14-il-ciclo)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-14-il-ciclo)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-14-il-ciclo)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-14-il-ciclo)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-15-il-metodo-screenshot)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-15-il-metodo-screenshot)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-15-il-metodo-screenshot)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-15-il-metodo-screenshot)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-15-il-metodo-screenshot)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-15-il-metodo-screenshot)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-4- > capitolo-16-costruire)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-5-/(parte-5-) overview|PARTE 5 —]] — *(Formazzione > manuale-completo-claude-code-business > parte-5-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-17-le-quattro-modalità)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-17-le-quattro-modalità)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-17-le-quattro-modalità)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-17-le-quattro-modalità)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-17-le-quattro-modalità)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-17-le-quattro-modalità)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-17-le-quattro-modalità)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-17-le-quattro-modalità)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-17-le-quattro-modalità)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-18-plan-mode-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-18-plan-mode-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-18-plan-mode-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-18-plan-mode-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-18-plan-mode-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-18-plan-mode-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-18-plan-mode-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-18-plan-mode-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-18-plan-mode-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-19-bypass-permission-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-19-bypass-permission-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-19-bypass-permission-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-19-bypass-permission-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-19-bypass-permission-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-19-bypass-permission-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-19-bypass-permission-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-19-bypass-permission-)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-5- > capitolo-19-bypass-permission-)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-6-context/(parte-6-context) overview|PARTE 6 — CONTEXT]] — *(Formazzione > manuale-completo-claude-code-business > parte-6-context)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-20)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-20)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-20)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-20)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-6-context/capitolo-20/(capitolo-20) overview|CAPITOLO 20]] — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-20)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-21)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-21)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-21)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-6-context/capitolo-21/(capitolo-21) overview|CAPITOLO 21]] — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-21)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-22)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-22)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-22)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-6-context/capitolo-22/(capitolo-22) overview|CAPITOLO 22]] — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-22)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-23)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-23)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-23)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-23)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-23)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-6-context/capitolo-23/(capitolo-23) overview|CAPITOLO 23]] — *(Formazzione > manuale-completo-claude-code-business > parte-6-context > capitolo-23)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-7-sub-agenti/(parte-7-sub-agenti) overview|PARTE 7 — SUB-AGENTI]] — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-24)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-24)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-24)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-24)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-24)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-24)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-7-sub-agenti/capitolo-24/(capitolo-24) overview|CAPITOLO 24]] — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-24)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-25)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-25)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-25)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-7-sub-agenti/capitolo-25/(capitolo-25) overview|CAPITOLO 25]] — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-25)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-26)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-7-sub-agenti/capitolo-26/(capitolo-26) overview|CAPITOLO 26]] — *(Formazzione > manuale-completo-claude-code-business > parte-7-sub-agenti > capitolo-26)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-8-il/(parte-8-il) overview|PARTE 8 — IL]] — *(Formazzione > manuale-completo-claude-code-business > parte-8-il)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-27)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-27)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-27)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-27)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-8-il/capitolo-27/(capitolo-27) overview|CAPITOLO 27]] — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-27)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-28)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-28)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-28)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-28)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-8-il/capitolo-28/(capitolo-28) overview|CAPITOLO 28]] — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-28)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-29)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-29)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-8-il/capitolo-29/(capitolo-29) overview|CAPITOLO 29]] — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-29)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-30)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-30)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-30)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-30)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-8-il/capitolo-30/(capitolo-30) overview|CAPITOLO 30]] — *(Formazzione > manuale-completo-claude-code-business > parte-8-il > capitolo-30)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-9-mcp/(parte-9-mcp) overview|PARTE 9 — MCP]] — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-31)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-31)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-31)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-9-mcp/capitolo-31/(capitolo-31) overview|CAPITOLO 31]] — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-31)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-32)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-32)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-32)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-9-mcp/capitolo-32/(capitolo-32) overview|CAPITOLO 32]] — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-32)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-33)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-33)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-33)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-9-mcp/capitolo-33/(capitolo-33) overview|CAPITOLO 33]] — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-33)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-34)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-34)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-34)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-34)*
+- [[Knowledge_Base/Formazzione/manuale-completo-claude-code-business/parte-9-mcp/capitolo-34/(capitolo-34) overview|CAPITOLO 34]] — *(Formazzione > manuale-completo-claude-code-business > parte-9-mcp > capitolo-34)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-dei-casi-duso-quotidiani)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-dei-casi-duso-quotidiani)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-dei-casi-duso-quotidiani)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-36)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-36)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-36)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-37)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-37)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-37)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-37)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-38)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-38)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-38)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-38)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-38)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-38)*
+-  — *(Formazzione > manuale-completo-claude-code-business > parte-delle-volte-gli-hook-garantiscono-questa-affidabilità-per-le-parti-critiche-del-workflow > capitolo-38)*
+
+### Area: General
+- [[Knowledge_Base/general/(general) 2026-05-06-claude|CLAUDE]] — *(general)*
+- [[Knowledge_Base/general/(general) 2026-05-06-cpb|CPB ]] — *(general)*
+- [[Knowledge_Base/general/(general) 2026-05-06-digital-empire-brand-voice-guide-v2-0|DIGITAL EMPIRE – BRAND VOICE GUIDE v2.0]] — *(general)*
+- [[Knowledge_Base/general/(general) 2026-05-06-materiale-agency-diglital-empire|Materiale Agency - Diglital Empire]] — *(general)*
+- [[Knowledge_Base/general/(general) 2026-05-06-panoramica-completa-digital-empire-agency|PANORAMICA COMPLETA – DIGITAL EMPIRE AGENCY]] — *(general)*
+- [[Knowledge_Base/general/(general) 2026-05-06-senza-nome|Senza nome]] — *(general)*
+- [[Knowledge_Base/general/(general) 2026-05-06-sistema-gestione-clienti-ap-sales|Sistema gestione clienti - AP Sales]] — *(general)*
+- [[Knowledge_Base/general/(general) 2026-05-06-strategia-ebook-kpd-pr-tiktock-2|Strategia Ebook _ Kpd - pr. TikTock (2)]] — *(general)*
+- [[Knowledge_Base/general/(general) 2026-05-06-wiki-secondbrain|Wiki-secondBrain]] — *(general)*
+- [[Knowledge_Base/general/(general) 2026-05-06-lancio|lancio]] — *(general)*
+
+### Area: Infobusiness
+- [[Knowledge_Base/InfoBusiness/(InfoBusiness) 2026-05-06-catalogo-prodotti-attuale-info-bu|CATALOGO PRODOTTI ATTUALE — Info-Bu]] — *(InfoBusiness)*
+- [[Knowledge_Base/InfoBusiness/(InfoBusiness) 2026-05-06-funnel-unico-perfetto-versione-step-by-step-definitiva|Funnel Unico Perfetto – Versione Step by Step Definitiva]] — *(InfoBusiness)*
+- [[Knowledge_Base/InfoBusiness/Webinar/(Webinar) 2026-05-06-webinar-esempio-di-apertura-con-storytelling-prima-parte|WEBINAR – Esempio di apertura con storytelling (prima parte)]] — *(InfoBusiness > Webinar)*
+- [[Knowledge_Base/InfoBusiness/Webinar/(Webinar) 2026-05-06-webinar-evento|WEBINAR_EVENTO]] — *(InfoBusiness > Webinar)*
+- [[Knowledge_Base/InfoBusiness/Webinar/(Webinar) 2026-05-06-webinar-evento-1|WEBINAR_EVENTO (1)]] — *(InfoBusiness > Webinar)*
+
+### Area: Kdp_-_Prodottti_Digitali
+- [[Knowledge_Base/KDP - prodottti digitali/GPT - KDP Carousel Factory/Conoscenza/(Conoscenza) 2026-05-06-regole-universali|Regole Universali]] — *(KDP - prodottti digitali > GPT - KDP Carousel Factory > Conoscenza)*
+- [[Knowledge_Base/KDP - prodottti digitali/GPT - KDP Carousel Factory/Istruzioni/(Istruzioni) 2026-05-06-|═══════════════════════════════════]] — *(KDP - prodottti digitali > GPT - KDP Carousel Factory > Istruzioni)*
+- [[Knowledge_Base/KDP - prodottti digitali/LIBRO 1/(LIBRO 1) 2026-05-06-le-48-leggi-dei-maestri-dimenticati-libro|Le 48 leggi dei maestri dimenticati.LIBRO]] — *(KDP - prodottti digitali > LIBRO 1)*
+- [[Knowledge_Base/KDP - prodottti digitali/LIBRO 2/(LIBRO 2) 2026-05-06-questo-pdf|questo.pdf]] — *(KDP - prodottti digitali > LIBRO 2)*
+- [[Knowledge_Base/KDP - prodottti digitali/LIBRO 4/immg/(immg) 2026-05-06-bosco-thriller-copertina-e-book|Bosco Thriller Copertina E-Book]] — *(KDP - prodottti digitali > LIBRO 4 > immg)*
+- [[Knowledge_Base/KDP - prodottti digitali/LIBRO 4/immg/(immg) 2026-05-06-mente-immobile|MENTE IMMOBILE]] — *(KDP - prodottti digitali > LIBRO 4 > immg)*
+- [[Knowledge_Base/KDP - prodottti digitali/LIBRO 4/immg/(immg) 2026-05-06-mente-immobile-1|MENTE IMMOBILE (1)]] — *(KDP - prodottti digitali > LIBRO 4 > immg)*
+- [[Knowledge_Base/KDP - prodottti digitali/LIBRO 4/immg/(immg) 2026-05-06-is|is]] — *(KDP - prodottti digitali > LIBRO 4 > immg)*
+- [[Knowledge_Base/KDP - prodottti digitali/LIBRO 4/immg/(immg) 2026-05-06-questo|questo]] — *(KDP - prodottti digitali > LIBRO 4 > immg)*
+- [[Knowledge_Base/KDP - prodottti digitali/LIBRO 4/immg/(immg) 2026-05-06-rrrr|rrrr]] — *(KDP - prodottti digitali > LIBRO 4 > immg)*
+- [[Knowledge_Base/KDP - prodottti digitali/LIBRO 5 - POTERE/(LIBRO 5 - POTERE) 2026-05-06-il-potere-nero|IL POTERE NERO]] — *(KDP - prodottti digitali > LIBRO 5 - POTERE)*
+-  — *(KDP - prodottti digitali > LIBRO 5 - POTERE > caroselli)*
+- [[Knowledge_Base/KDP - prodottti digitali/Leanding Page/email-agent/(email-agent) 2026-05-06-ebook|ebook]] — *(KDP - prodottti digitali > Leanding Page > email-agent)*
+- [[Knowledge_Base/KDP - prodottti digitali/Leanding Page/email-agent/(email-agent) 2026-05-06-requirements|requirements]] — *(KDP - prodottti digitali > Leanding Page > email-agent)*
+- [[Knowledge_Base/KDP - prodottti digitali/Leanding Page/email-agent/(email-agent) 2026-05-06-runtime|runtime]] — *(KDP - prodottti digitali > Leanding Page > email-agent)*
+-  — *(KDP - prodottti digitali > Progetto KDP su Claude Code)*
+-  — *(KDP - prodottti digitali > Progetto KDP su Claude Code)*
+-  — *(KDP - prodottti digitali > Progetto KDP su Claude Code)*
+-  — *(KDP - prodottti digitali > Progetto KDP su Claude Code > CONTESTO > Libri)*
+-  — *(KDP - prodottti digitali > Progetto KDP su Claude Code > CONTESTO > Strategie)*
+- [[Knowledge_Base/KDP - prodottti digitali/Progetto KDP su Claude Code/SKILL/(SKILL) 2026-05-06-skill|skill]] — *(KDP - prodottti digitali > Progetto KDP su Claude Code > SKILL)*
+
+### Area: Lancio_Corso_Skill_Beast
+- [[Knowledge_Base/Lancio corso skill beast/(Lancio corso skill beast) 2026-05-06-framework-icro-digital-empire|Framework_ICRO_Digital_Empire]] — *(Lancio corso skill beast)*
+- [[Knowledge_Base/Lancio corso skill beast/(Lancio corso skill beast) 2026-05-06-processo-lancio|processo lancio]] — *(Lancio corso skill beast)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/(Leanding Page CCM) 2026-05-06-qa-accessibility|QA-ACCESSIBILITY]] — *(Lancio corso skill beast > Leanding Page CCM)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/(Leanding Page CCM) 2026-05-06-qa-html|QA-HTML]] — *(Lancio corso skill beast > Leanding Page CCM)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/(Leanding Page CCM) 2026-05-06-qa-mobile|QA-MOBILE]] — *(Lancio corso skill beast > Leanding Page CCM)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/(Leanding Page CCM) 2026-05-06-qa-performance|QA-PERFORMANCE]] — *(Lancio corso skill beast > Leanding Page CCM)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/(Leanding Page CCM) 2026-05-06-vsl-sales-page-ccm|VSL-sales-page-CCM]] — *(Lancio corso skill beast > Leanding Page CCM)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/CONTESTO/(CONTESTO) 2026-05-06-contesto-lancio|Contesto-lancio]] — *(Lancio corso skill beast > Leanding Page CCM > CONTESTO)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/CONTESTO/(CONTESTO) 2026-05-06-leandignpage-prompt|Leandignpage-prompt]] — *(Lancio corso skill beast > Leanding Page CCM > CONTESTO)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/(ccm-premium) 2026-05-06-agents|AGENTS]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/(ccm-premium) 2026-05-06-claude|CLAUDE]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/(ccm-premium) 2026-05-06-readme|README]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/(ccm-premium) 2026-05-06-components|components]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/(ccm-premium) 2026-05-06-package|package]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/(ccm-premium) 2026-05-06-package-lock|package-lock]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/(ccm-premium) 2026-05-06-tsconfig|tsconfig]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/(.netlify) 2026-05-06-state|state]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/plugins/(plugins) 2026-05-06-package|package]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > plugins)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/plugins/(plugins) 2026-05-06-package-lock|package-lock]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > plugins)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/(static) 2026-05-06-next-page|__next.__PAGE__]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/(static) 2026-05-06-next-full|__next._full]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/(static) 2026-05-06-next-head|__next._head]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/(static) 2026-05-06-next-index|__next._index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/(static) 2026-05-06-next-tree|__next._tree]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/(static) 2026-05-06-index|index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > _not-found)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > _not-found)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > _not-found)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > _not-found)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > _not-found)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > _not-found)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > _not-found > __next._not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/call/(call) 2026-05-06-next-full|__next._full]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/call/(call) 2026-05-06-next-head|__next._head]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/call/(call) 2026-05-06-next-index|__next._index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/call/(call) 2026-05-06-next-tree|__next._tree]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/call/(call) 2026-05-06-next-call|__next.call]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/call/(call) 2026-05-06-index|index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > call > __next.call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > installazione-guidata)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > installazione-guidata)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > installazione-guidata)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > installazione-guidata)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > installazione-guidata)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > installazione-guidata)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > installazione-guidata > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > installazione-guidata > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > installazione-guidata > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > installazione-guidata > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > perche-claude-code)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > perche-claude-code)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > perche-claude-code)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > perche-claude-code)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > perche-claude-code)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > perche-claude-code)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > perche-claude-code > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > perche-claude-code > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > perche-claude-code > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > perche-claude-code > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > primo-agente)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > primo-agente)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > primo-agente)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > primo-agente)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > primo-agente)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > primo-agente)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > primo-agente > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > primo-agente > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > primo-agente > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 0 > primo-agente > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > comandi-avanzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > comandi-avanzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > comandi-avanzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > comandi-avanzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > comandi-avanzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > comandi-avanzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > comandi-avanzati > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > comandi-avanzati > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > comandi-avanzati > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > comandi-avanzati > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > come-pensa-claude)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > come-pensa-claude)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > come-pensa-claude)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > come-pensa-claude)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > come-pensa-claude)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > come-pensa-claude)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > come-pensa-claude > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > come-pensa-claude > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > come-pensa-claude > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > come-pensa-claude > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > framework-claude-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > framework-claude-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > framework-claude-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > framework-claude-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > framework-claude-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > framework-claude-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > framework-claude-md > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > framework-claude-md > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > framework-claude-md > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 1 > framework-claude-md > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > cosa-e-una-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > cosa-e-una-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > cosa-e-una-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > cosa-e-una-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > cosa-e-una-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > cosa-e-una-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > cosa-e-una-skill > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > cosa-e-una-skill > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > cosa-e-una-skill > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > cosa-e-una-skill > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > framework-skill-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > framework-skill-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > framework-skill-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > framework-skill-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > framework-skill-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > framework-skill-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > framework-skill-md > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > framework-skill-md > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > framework-skill-md > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > framework-skill-md > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > libreria-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > libreria-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > libreria-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > libreria-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > libreria-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > libreria-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > libreria-skill > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > libreria-skill > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > libreria-skill > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > libreria-skill > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > skill-avanzate)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > skill-avanzate)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > skill-avanzate)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > skill-avanzate)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > skill-avanzate)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > skill-avanzate)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > skill-avanzate > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > skill-avanzate > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > skill-avanzate > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 2 > skill-avanzate > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > agenti-specializzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > agenti-specializzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > agenti-specializzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > agenti-specializzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > agenti-specializzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > agenti-specializzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > agenti-specializzati > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > agenti-specializzati > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > agenti-specializzati > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > agenti-specializzati > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > framework-work)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > framework-work)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > framework-work)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > framework-work)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > framework-work)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > framework-work)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > framework-work > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > framework-work > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > framework-work > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > framework-work > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > mindset-architetto)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > mindset-architetto)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > mindset-architetto)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > mindset-architetto)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > mindset-architetto)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > mindset-architetto)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > mindset-architetto > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > mindset-architetto > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > mindset-architetto > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > mindset-architetto > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > primo-workflow)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > primo-workflow)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > primo-workflow)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > primo-workflow)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > primo-workflow)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > primo-workflow)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > primo-workflow > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > primo-workflow > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > primo-workflow > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 3 > primo-workflow > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > analisi-report)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > analisi-report)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > analisi-report)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > analisi-report)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > analisi-report)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > analisi-report)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > analisi-report > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > analisi-report > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > analisi-report > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > analisi-report > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > business-automation)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > business-automation)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > business-automation)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > business-automation)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > business-automation)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > business-automation)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > business-automation > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > business-automation > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > business-automation > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > business-automation > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > content-system)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > content-system)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > content-system)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > content-system)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > content-system)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > content-system)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > content-system > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > content-system > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > content-system > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > content-system > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > portfolio-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > portfolio-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > portfolio-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > portfolio-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > portfolio-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > portfolio-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > portfolio-builder > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > portfolio-builder > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > portfolio-builder > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 4 > portfolio-builder > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > offerta-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > offerta-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > offerta-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > offerta-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > offerta-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > offerta-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > offerta-builder > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > offerta-builder > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > offerta-builder > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > offerta-builder > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > portfolio-online)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > portfolio-online)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > portfolio-online)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > portfolio-online)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > portfolio-online)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > portfolio-online)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > portfolio-online > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > portfolio-online > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > portfolio-online > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > portfolio-online > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > prima-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > prima-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > prima-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > prima-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > prima-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > prima-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > prima-call > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > prima-call > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > prima-call > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > prima-call > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > primi-clienti)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > primi-clienti)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > primi-clienti)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > primi-clienti)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > primi-clienti)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > primi-clienti)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > primi-clienti > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > primi-clienti > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > primi-clienti > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > .netlify > static > platform > course > 5 > primi-clienti > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > Agency page - Copia)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > Agency page - Copia)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > Agency page - Copia)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > Agency page - Copia)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > Agency page - Copia)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > Agency page - Copia)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > Agency page - Copia > .netlify)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/dist-call/(dist-call) 2026-05-06-next-full|__next._full]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > dist-call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/dist-call/(dist-call) 2026-05-06-next-head|__next._head]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > dist-call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/dist-call/(dist-call) 2026-05-06-next-index|__next._index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > dist-call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/dist-call/(dist-call) 2026-05-06-next-tree|__next._tree]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > dist-call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/dist-call/(dist-call) 2026-05-06-next-call|__next.call]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > dist-call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/dist-call/(dist-call) 2026-05-06-index|index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > dist-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > dist-call > __next.call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/(out) 2026-05-06-next-page|__next.__PAGE__]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/(out) 2026-05-06-next-full|__next._full]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/(out) 2026-05-06-next-head|__next._head]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/(out) 2026-05-06-next-index|__next._index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/(out) 2026-05-06-next-tree|__next._tree]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/(out) 2026-05-06-index|index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/_not-found/(_not-found) 2026-05-06-next-full|__next._full]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > _not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/_not-found/(_not-found) 2026-05-06-next-head|__next._head]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > _not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/_not-found/(_not-found) 2026-05-06-next-index|__next._index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > _not-found)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > _not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/_not-found/(_not-found) 2026-05-06-next-tree|__next._tree]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > _not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/_not-found/(_not-found) 2026-05-06-index|index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > _not-found)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > _not-found > __next._not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/call/(call) 2026-05-06-next-full|__next._full]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/call/(call) 2026-05-06-next-head|__next._head]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/call/(call) 2026-05-06-next-index|__next._index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/call/(call) 2026-05-06-next-tree|__next._tree]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/call/(call) 2026-05-06-next-call|__next.call]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/call/(call) 2026-05-06-index|index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/call/__next.call/(__next.call) 2026-05-06-page|__PAGE__]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > call > __next.call)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/platform/(platform) 2026-05-06-next-full|__next._full]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/platform/(platform) 2026-05-06-next-head|__next._head]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/platform/(platform) 2026-05-06-next-index|__next._index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/platform/(platform) 2026-05-06-next-tree|__next._tree]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/platform/(platform) 2026-05-06-next-platform|__next.platform]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/platform/(platform) 2026-05-06-index|index]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > installazione-guidata)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > installazione-guidata)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > installazione-guidata)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > installazione-guidata)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > installazione-guidata)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > installazione-guidata)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > installazione-guidata > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > installazione-guidata > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > installazione-guidata > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > installazione-guidata > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > perche-claude-code)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > perche-claude-code)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > perche-claude-code)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > perche-claude-code)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > perche-claude-code)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > perche-claude-code)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > perche-claude-code > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > perche-claude-code > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > perche-claude-code > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > perche-claude-code > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > primo-agente)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > primo-agente)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > primo-agente)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > primo-agente)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > primo-agente)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > primo-agente)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > primo-agente > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > primo-agente > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > primo-agente > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 0 > primo-agente > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > comandi-avanzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > comandi-avanzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > comandi-avanzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > comandi-avanzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > comandi-avanzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > comandi-avanzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > comandi-avanzati > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > comandi-avanzati > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > comandi-avanzati > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > comandi-avanzati > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > come-pensa-claude)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > come-pensa-claude)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > come-pensa-claude)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > come-pensa-claude)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > come-pensa-claude)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > come-pensa-claude)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > come-pensa-claude > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > come-pensa-claude > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > come-pensa-claude > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > come-pensa-claude > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > framework-claude-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > framework-claude-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > framework-claude-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > framework-claude-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > framework-claude-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > framework-claude-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > framework-claude-md > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > framework-claude-md > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > framework-claude-md > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 1 > framework-claude-md > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > cosa-e-una-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > cosa-e-una-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > cosa-e-una-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > cosa-e-una-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > cosa-e-una-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > cosa-e-una-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > cosa-e-una-skill > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > cosa-e-una-skill > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > cosa-e-una-skill > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > cosa-e-una-skill > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > framework-skill-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > framework-skill-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > framework-skill-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > framework-skill-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > framework-skill-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > framework-skill-md)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > framework-skill-md > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > framework-skill-md > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > framework-skill-md > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > framework-skill-md > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > libreria-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > libreria-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > libreria-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > libreria-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > libreria-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > libreria-skill)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > libreria-skill > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > libreria-skill > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > libreria-skill > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > libreria-skill > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > skill-avanzate)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > skill-avanzate)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > skill-avanzate)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > skill-avanzate)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > skill-avanzate)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > skill-avanzate)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > skill-avanzate > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > skill-avanzate > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > skill-avanzate > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 2 > skill-avanzate > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > agenti-specializzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > agenti-specializzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > agenti-specializzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > agenti-specializzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > agenti-specializzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > agenti-specializzati)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > agenti-specializzati > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > agenti-specializzati > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > agenti-specializzati > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > agenti-specializzati > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > framework-work)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > framework-work)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > framework-work)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > framework-work)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > framework-work)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > framework-work)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > framework-work > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > framework-work > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > framework-work > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > framework-work > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > mindset-architetto)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > mindset-architetto)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > mindset-architetto)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > mindset-architetto)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > mindset-architetto)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > mindset-architetto)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > mindset-architetto > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > mindset-architetto > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > mindset-architetto > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > mindset-architetto > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > primo-workflow)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > primo-workflow)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > primo-workflow)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > primo-workflow)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > primo-workflow)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > primo-workflow)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > primo-workflow > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > primo-workflow > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > primo-workflow > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 3 > primo-workflow > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > analisi-report)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > analisi-report)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > analisi-report)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > analisi-report)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > analisi-report)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > analisi-report)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > analisi-report > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > analisi-report > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > analisi-report > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > analisi-report > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > business-automation)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > business-automation)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > business-automation)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > business-automation)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > business-automation)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > business-automation)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > business-automation > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > business-automation > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > business-automation > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > business-automation > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > content-system)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > content-system)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > content-system)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > content-system)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > content-system)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > content-system)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > content-system > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > content-system > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > content-system > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > content-system > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > portfolio-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > portfolio-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > portfolio-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > portfolio-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > portfolio-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > portfolio-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > portfolio-builder > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > portfolio-builder > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > portfolio-builder > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 4 > portfolio-builder > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > offerta-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > offerta-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > offerta-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > offerta-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > offerta-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > offerta-builder)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > offerta-builder > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > offerta-builder > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > offerta-builder > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > offerta-builder > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > portfolio-online)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > portfolio-online)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > portfolio-online)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > portfolio-online)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > portfolio-online)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > portfolio-online)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > portfolio-online > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > portfolio-online > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > portfolio-online > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > portfolio-online > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > prima-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > prima-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > prima-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > prima-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > prima-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > prima-call)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > prima-call > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > prima-call > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > prima-call > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > prima-call > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > primi-clienti)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > primi-clienti)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > primi-clienti)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > primi-clienti)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > primi-clienti)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > primi-clienti)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > primi-clienti > __next.platform)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > primi-clienti > __next.platform > course)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > primi-clienti > __next.platform > course > $d$moduleId)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > out > platform > course > 5 > primi-clienti > __next.platform > course > $d$moduleId > $d$lessonSlug)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/ccm-premium/reference/(reference) 2026-05-06-design|design]] — *(Lancio corso skill beast > Leanding Page CCM > ccm-premium > reference)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/(astrowind) 2026-05-06-license|LICENSE]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/(astrowind) 2026-05-06-readme|README]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/(astrowind) 2026-05-06-package|package]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/(astrowind) 2026-05-06-package-lock|package-lock]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/(astrowind) 2026-05-06-sandbox-config|sandbox.config]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/(astrowind) 2026-05-06-tsconfig|tsconfig]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/(astrowind) 2026-05-06-vercel|vercel]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/(astrowind) 2026-05-06-vscode-tailwind|vscode.tailwind]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/.vscode/(.vscode) 2026-05-06-extensions|extensions]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind > .vscode)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/.vscode/(.vscode) 2026-05-06-launch|launch]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind > .vscode)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/.vscode/(.vscode) 2026-05-06-settings|settings]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind > .vscode)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind > .vscode > astrowind)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/public/(public) 2026-05-06-robots|robots]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind > public)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind > src > data > post)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind > src > data > post)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/src/data/post/(post) 2026-05-06-landing|landing]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind > src > data > post)*
+-  — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind > src > data > post)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/src/pages/(pages) 2026-05-06-privacy|privacy]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind > src > pages)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/src/pages/(pages) 2026-05-06-terms|terms]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind > src > pages)*
+- [[Knowledge_Base/Lancio corso skill beast/Leanding Page CCM/templates/astrowind/vendor/(vendor) 2026-05-06-readme|README]] — *(Lancio corso skill beast > Leanding Page CCM > templates > astrowind > vendor)*
+- [[Knowledge_Base/Lancio corso skill beast/MJ- classifica/(MJ- classifica) 2026-05-06-app-system-prompt|APP_SYSTEM_PROMPT]] — *(Lancio corso skill beast > MJ- classifica)*
+- [[Knowledge_Base/Lancio corso skill beast/MJ- classifica/(MJ- classifica) 2026-05-06-package|package]] — *(Lancio corso skill beast > MJ- classifica)*
+- [[Knowledge_Base/Lancio corso skill beast/MJ- classifica/(MJ- classifica) 2026-05-06-package-lock|package-lock]] — *(Lancio corso skill beast > MJ- classifica)*
+- [[Knowledge_Base/Lancio corso skill beast/MJ- classifica/(MJ- classifica) 2026-05-06-tsconfig|tsconfig]] — *(Lancio corso skill beast > MJ- classifica)*
+- [[Knowledge_Base/Lancio corso skill beast/Page/Mentalità Business/7/(7) 2026-05-06-ti-posso-dire-la-verita-ho-visto-m|Ti posso dire la verità, ho visto m]] — *(Lancio corso skill beast > Page > Mentalità Business > 7)*
+-  — *(Lancio corso skill beast > Page > Page Crea il tuo impero > Video)*
+-  — *(Lancio corso skill beast > Page > Page Crea il tuo impero > Video)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/(Siti CCM) 2026-05-06-qa-accessibility|QA-ACCESSIBILITY]] — *(Lancio corso skill beast > Sale pag > Siti CCM)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/(Siti CCM) 2026-05-06-qa-html|QA-HTML]] — *(Lancio corso skill beast > Sale pag > Siti CCM)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/(Siti CCM) 2026-05-06-qa-mobile|QA-MOBILE]] — *(Lancio corso skill beast > Sale pag > Siti CCM)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/(Siti CCM) 2026-05-06-qa-performance|QA-PERFORMANCE]] — *(Lancio corso skill beast > Sale pag > Siti CCM)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/(Siti CCM) 2026-05-06-data|data]] — *(Lancio corso skill beast > Sale pag > Siti CCM)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/CONTESTO/(CONTESTO) 2026-05-06-contesto-lancio|Contesto-lancio]] — *(Lancio corso skill beast > Sale pag > Siti CCM > CONTESTO)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/CONTESTO/(CONTESTO) 2026-05-06-leandignpage-prompt|Leandignpage-prompt]] — *(Lancio corso skill beast > Sale pag > Siti CCM > CONTESTO)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/ccm-elite-ultimate/(ccm-elite-ultimate) 2026-05-06-package|package]] — *(Lancio corso skill beast > Sale pag > Siti CCM > ccm-elite-ultimate)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/ccm-full-empire/(ccm-full-empire) 2026-05-06-package|package]] — *(Lancio corso skill beast > Sale pag > Siti CCM > ccm-full-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/ccm-full-empire/(ccm-full-empire) 2026-05-06-package-lock|package-lock]] — *(Lancio corso skill beast > Sale pag > Siti CCM > ccm-full-empire)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > ccm-sale-page-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/ccm-sale-page-empire/(ccm-sale-page-empire) 2026-05-06-package|package]] — *(Lancio corso skill beast > Sale pag > Siti CCM > ccm-sale-page-empire)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > ccm-sale-page-empire)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > ccm-sale-page-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/(formazione-empire) 2026-05-06-handoff|HANDOFF]] — *(Lancio corso skill beast > Sale pag > Siti CCM > formazione-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/(formazione-empire) 2026-05-06-package|package]] — *(Lancio corso skill beast > Sale pag > Siti CCM > formazione-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/(formazione-empire) 2026-05-06-package-lock|package-lock]] — *(Lancio corso skill beast > Sale pag > Siti CCM > formazione-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/(formazione-empire) 2026-05-06-tsconfig|tsconfig]] — *(Lancio corso skill beast > Sale pag > Siti CCM > formazione-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/(icro-empire) 2026-05-06-components|components]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/(icro-empire) 2026-05-06-package|package]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/(icro-empire) 2026-05-06-package-lock|package-lock]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/(icro-empire) 2026-05-06-tsconfig|tsconfig]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/(out) 2026-05-06-next-page|__next.__PAGE__]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/(out) 2026-05-06-next-full|__next._full]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/(out) 2026-05-06-next-head|__next._head]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/(out) 2026-05-06-next-index|__next._index]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/(out) 2026-05-06-next-tree|__next._tree]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/(out) 2026-05-06-index|index]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/_not-found/(_not-found) 2026-05-06-next-full|__next._full]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out > _not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/_not-found/(_not-found) 2026-05-06-next-head|__next._head]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out > _not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/_not-found/(_not-found) 2026-05-06-next-index|__next._index]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out > _not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/_not-found/(_not-found) 2026-05-06-next-tree|__next._tree]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out > _not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/_not-found/(_not-found) 2026-05-06-index|index]] — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > icro-empire > out > _not-found > __next._not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/(index_backup-empire) 2026-05-06-package|package]] — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/(index_backup-empire) 2026-05-06-tsconfig|tsconfig]] — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/.netlify/(.netlify) 2026-05-06-state|state]] — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > plugins)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > plugins)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/.netlify/static/(static) 2026-05-06-index|index]] — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > .netlify > static > _not-found > __next._not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/out/(out) 2026-05-06-next-page|__next.__PAGE__]] — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/out/(out) 2026-05-06-next-full|__next._full]] — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/out/(out) 2026-05-06-next-head|__next._head]] — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/out/(out) 2026-05-06-next-index|__next._index]] — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/out/(out) 2026-05-06-next-tree|__next._tree]] — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/out/(out) 2026-05-06-index|index]] — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out > _not-found)*
+-  — *(Lancio corso skill beast > Sale pag > Siti CCM > index_backup-empire > out > _not-found > __next._not-found)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/ccm-sale-page-empire/(ccm-sale-page-empire) 2026-05-06-package|package]] — *(Lancio corso skill beast > Sale pag > ccm-sale-page-empire)*
+- [[Knowledge_Base/Lancio corso skill beast/Sale pag/ccm-sale-page-empire/(ccm-sale-page-empire) 2026-05-06-tsconfig|tsconfig]] — *(Lancio corso skill beast > Sale pag > ccm-sale-page-empire)*
+
+### Area: Lanco_Ebook
+- [[Knowledge_Base/Lanco ebook/Sito- Leanding page/(Sito- Leanding page) 2026-05-06-gemini|Gemini]] — *(Lanco ebook > Sito- Leanding page)*
+
+### Area: Marketing_And_Ai
+- [[Knowledge_Base/Marketing & Ai/Marketing & Ai/(Marketing & Ai) 2026-05-06-benvenuto|Benvenuto]] — *(Marketing & Ai > Marketing & Ai)*
+
+### Area: Marketmind
+- [[Knowledge_Base/MarketMind/docs/(docs) 2026-05-06-prd|PRD]] — *(MarketMind > docs)*
+
+### Area: Matriale_Linkeding
+- [[Knowledge_Base/Matriale linkeding/(Matriale linkeding) 2026-05-06-guida-completa-all-acquisizione-cli|GUIDA COMPLETA ALL'ACQUISIZIONE CLI]] — *(Matriale linkeding)*
+- [[Knowledge_Base/Matriale linkeding/(Matriale linkeding) 2026-05-06-risorsa-linkeding-01|Risorsa linkeding 01]] — *(Matriale linkeding)*
+- [[Knowledge_Base/Matriale linkeding/(Matriale linkeding) 2026-05-06-risorsa-linkeding-02|Risorsa linkeding 02]] — *(Matriale linkeding)*
+- [[Knowledge_Base/Matriale linkeding/(Matriale linkeding) 2026-05-06-risorsa-linkeding-03|Risorsa linkeding 03]] — *(Matriale linkeding)*
+- [[Knowledge_Base/Matriale linkeding/(Matriale linkeding) 2026-05-06-risorsa-linkeding-04|Risorsa linkeding 04]] — *(Matriale linkeding)*
+- [[Knowledge_Base/Matriale linkeding/(Matriale linkeding) 2026-05-06-risorsa-linkeding-05|Risorsa linkeding 05]] — *(Matriale linkeding)*
+- [[Knowledge_Base/Matriale linkeding/grezzo/(grezzo) 2026-05-06-senza-titolo|Senza titolo]] — *(Matriale linkeding > grezzo)*
+- [[Knowledge_Base/Matriale linkeding/grezzo/(grezzo) 2026-05-06-link|link]] — *(Matriale linkeding > grezzo)*
+- [[Knowledge_Base/Matriale linkeding/grezzo/(grezzo) 2026-05-06-link-2|link 2]] — *(Matriale linkeding > grezzo)*
+- [[Knowledge_Base/Matriale linkeding/grezzo/(grezzo) 2026-05-06-link-3|link 3]] — *(Matriale linkeding > grezzo)*
+- [[Knowledge_Base/Matriale linkeding/grezzo/(grezzo) 2026-05-06-link-4|link 4]] — *(Matriale linkeding > grezzo)*
+- [[Knowledge_Base/Matriale linkeding/grezzo/(grezzo) 2026-05-06-link-5|link 5]] — *(Matriale linkeding > grezzo)*
+- [[Knowledge_Base/Matriale linkeding/grezzo/(grezzo) 2026-05-06-link-6|link 6]] — *(Matriale linkeding > grezzo)*
+- [[Knowledge_Base/Matriale linkeding/grezzo/(grezzo) 2026-05-06-link-7|link 7]] — *(Matriale linkeding > grezzo)*
+- [[Knowledge_Base/Matriale linkeding/grezzo/(grezzo) 2026-05-06-link-8|link 8]] — *(Matriale linkeding > grezzo)*
+
+### Area: Outreach
+-  — *(Outreach > Formazione)*
+- [[Knowledge_Base/Outreach/Outreach Workflow/(Outreach Workflow) 2026-05-06-architettura-completa|ARCHITETTURA_COMPLETA]] — *(Outreach > Outreach Workflow)*
+- [[Knowledge_Base/Outreach/Outreach Workflow/(Outreach Workflow) 2026-05-06-setup|SETUP]] — *(Outreach > Outreach Workflow)*
+- [[Knowledge_Base/Outreach/Outreach Workflow/(Outreach Workflow) 2026-05-06-leads-trovati|leads_trovati]] — *(Outreach > Outreach Workflow)*
+- [[Knowledge_Base/Outreach/Outreach Workflow/(Outreach Workflow) 2026-05-06-requirements|requirements]] — *(Outreach > Outreach Workflow)*
+
+### Area: Progetti_Claude
+-  — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 1)*
+-  — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 1)*
+-  — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 1 > Webinar)*
+- [[Knowledge_Base/Progetti Claude/Info-Business-HQ_Knowledge/Priorità 1/Webinar/(Webinar) 2026-05-06-webinar-evento|WEBINAR_EVENTO]] — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 1 > Webinar)*
+- [[Knowledge_Base/Progetti Claude/Info-Business-HQ_Knowledge/Priorità 1/Webinar/(Webinar) 2026-05-06-webinar-evento-1|WEBINAR_EVENTO (1)]] — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 1 > Webinar)*
+-  — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2)*
+-  — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2)*
+-  — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2)*
+-  — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2)*
+-  — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2)*
+-  — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2)*
+- [[Knowledge_Base/Progetti Claude/Info-Business-HQ_Knowledge/Priorità 2/(Priorità 2) 2026-05-06-scalping-agency|Scalping Agency]] — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2)*
+- [[Knowledge_Base/Progetti Claude/Info-Business-HQ_Knowledge/Priorità 2/(Priorità 2) 2026-05-06-scalping-agency-02|Scalping Agency - 02]] — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2)*
+-  — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2)*
+- [[Knowledge_Base/Progetti Claude/Info-Business-HQ_Knowledge/Priorità 2/(Priorità 2) 2026-05-06-storytelling-formazione|storytelling formazione]] — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2)*
+- [[Knowledge_Base/Progetti Claude/Info-Business-HQ_Knowledge/Priorità 2/Outreach/(Outreach) 2026-05-06-framework-outreach|FRAMEWORK  OUTREACH]] — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2 > Outreach)*
+- [[Knowledge_Base/Progetti Claude/Info-Business-HQ_Knowledge/Priorità 2/Outreach/(Outreach) 2026-05-06-outreach-con-loom|OUTREACH CON LOOM]] — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2 > Outreach)*
+-  — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2 > Outreach)*
+-  — *(Progetti Claude > Info-Business-HQ_Knowledge > Priorità 2 > Outreach)*
+-  — *(Progetti Claude > 📁 Agency Operations — Knowledge Files)*
+-  — *(Progetti Claude > 📁 Agency Operations — Knowledge Files)*
+-  — *(Progetti Claude > 📁 Agency Operations — Knowledge Files)*
+-  — *(Progetti Claude > 📁 Agency Operations — Knowledge Files)*
+-  — *(Progetti Claude > 📁 Agency Operations — Knowledge Files)*
+-  — *(Progetti Claude > 📁 Agency Operations — Knowledge Files > Priorita alta)*
+-  — *(Progetti Claude > 📁 Agency Operations — Knowledge Files > Priorita alta)*
+-  — *(Progetti Claude > 📁 Agency Operations — Knowledge Files > Priorita alta)*
+
+### Area: Prove
+- [[Knowledge_Base/prove/(prove) 2026-05-06-system|System]] — *(prove)*
+
+### Area: Saas
+- [[Knowledge_Base/SaaS/Agents_and_Skills/(Agents_and_Skills) 2026-05-06-agent-copywriter|Agent_Copywriter]] — *(SaaS > Agents_and_Skills)*
+- [[Knowledge_Base/SaaS/Agents_and_Skills/(Agents_and_Skills) 2026-05-06-agent-ui-engineer|Agent_UI_Engineer]] — *(SaaS > Agents_and_Skills)*
+- [[Knowledge_Base/SaaS/Agents_and_Skills/(Agents_and_Skills) 2026-05-06-skill-neon-dark-premium|Skill_neon-dark-premium]] — *(SaaS > Agents_and_Skills)*
+- [[Knowledge_Base/SaaS/app-landing/(app-landing) 2026-05-06-agents|AGENTS]] — *(SaaS > app-landing)*
+- [[Knowledge_Base/SaaS/app-landing/(app-landing) 2026-05-06-claude|CLAUDE]] — *(SaaS > app-landing)*
+- [[Knowledge_Base/SaaS/app-landing/(app-landing) 2026-05-06-readme|README]] — *(SaaS > app-landing)*
+- [[Knowledge_Base/SaaS/app-landing/(app-landing) 2026-05-06-package|package]] — *(SaaS > app-landing)*
+- [[Knowledge_Base/SaaS/app-landing/(app-landing) 2026-05-06-package-lock|package-lock]] — *(SaaS > app-landing)*
+- [[Knowledge_Base/SaaS/app-landing/(app-landing) 2026-05-06-tsconfig|tsconfig]] — *(SaaS > app-landing)*
+
+### Area: Skill_And_Agenti
+- [[Knowledge_Base/SKILL & Agenti/(SKILL & Agenti) 2026-05-06-conoscienza|CONOSCIENZA]] — *(SKILL & Agenti)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/(Agente Max) 2026-05-06-memoria-sessione|MEMORIA-SESSIONE]] — *(SKILL & Agenti > SKILL > Agente Max)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/.claude-plugin/(.claude-plugin) 2026-05-06-plugin|plugin]] — *(SKILL & Agenti > SKILL > Agente Max > .claude-plugin)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/agents/(agents) 2026-05-06-cc-master|cc-master]] — *(SKILL & Agenti > SKILL > Agente Max > agents)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/knowledge/(knowledge) 2026-05-06-conoscienza|CONOSCIENZA]] — *(SKILL & Agenti > SKILL > Agente Max > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/knowledge/(knowledge) 2026-05-06-k01-fondamenta|K01-fondamenta]] — *(SKILL & Agenti > SKILL > Agente Max > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/knowledge/(knowledge) 2026-05-06-k02-installazione|K02-installazione]] — *(SKILL & Agenti > SKILL > Agente Max > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/knowledge/(knowledge) 2026-05-06-k03-progetti|K03-progetti]] — *(SKILL & Agenti > SKILL > Agente Max > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/knowledge/(knowledge) 2026-05-06-k04-permessi|K04-permessi]] — *(SKILL & Agenti > SKILL > Agente Max > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/knowledge/(knowledge) 2026-05-06-k05-context|K05-context]] — *(SKILL & Agenti > SKILL > Agente Max > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/knowledge/(knowledge) 2026-05-06-k06-sub-agenti|K06-sub-agenti]] — *(SKILL & Agenti > SKILL > Agente Max > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/knowledge/(knowledge) 2026-05-06-k07-skill-system|K07-skill-system]] — *(SKILL & Agenti > SKILL > Agente Max > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/knowledge/(knowledge) 2026-05-06-k08-mcp|K08-mcp]] — *(SKILL & Agenti > SKILL > Agente Max > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/knowledge/(knowledge) 2026-05-06-k09-avanzate|K09-avanzate]] — *(SKILL & Agenti > SKILL > Agente Max > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/skills/(skills) 2026-05-06-agent-forge|agent-forge]] — *(SKILL & Agenti > SKILL > Agente Max > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/skills/(skills) 2026-05-06-claude-md-builder|claude-md-builder]] — *(SKILL & Agenti > SKILL > Agente Max > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/skills/(skills) 2026-05-06-context-doctor|context-doctor]] — *(SKILL & Agenti > SKILL > Agente Max > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/skills/(skills) 2026-05-06-mcp-installer|mcp-installer]] — *(SKILL & Agenti > SKILL > Agente Max > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/skills/(skills) 2026-05-06-skill-forge|skill-forge]] — *(SKILL & Agenti > SKILL > Agente Max > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/skills/(skills) 2026-05-06-system-auditor|system-auditor]] — *(SKILL & Agenti > SKILL > Agente Max > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Agente Max/skills/(skills) 2026-05-06-workflow-architect|workflow-architect]] — *(SKILL & Agenti > SKILL > Agente Max > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/PROMPT ENGEGNIRING-SKILL/(PROMPT ENGEGNIRING-SKILL) 2026-05-06-role-definition-3|# ROLE DEFINITION (3)]] — *(SKILL & Agenti > SKILL > PROMPT ENGEGNIRING-SKILL)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/PROMPT ENGEGNIRING-SKILL/(PROMPT ENGEGNIRING-SKILL) 2026-05-06-esempio-prompt-2|Esempio prompt (2)]] — *(SKILL & Agenti > SKILL > PROMPT ENGEGNIRING-SKILL)*
+-  — *(SKILL & Agenti > SKILL > PROMPT ENGEGNIRING-SKILL)*
+-  — *(SKILL & Agenti > SKILL > PROMPT ENGEGNIRING-SKILL)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/PROMPT ENGEGNIRING-SKILL/(PROMPT ENGEGNIRING-SKILL) 2026-05-06-istruzzioni|Istruzzioni]] — *(SKILL & Agenti > SKILL > PROMPT ENGEGNIRING-SKILL)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/PROMPT ENGEGNIRING-SKILL/(PROMPT ENGEGNIRING-SKILL) 2026-05-06-system-identity-4|_system_identity_ (4)]] — *(SKILL & Agenti > SKILL > PROMPT ENGEGNIRING-SKILL)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/PROMPT ENGEGNIRING-SKILL/(PROMPT ENGEGNIRING-SKILL) 2026-05-06-specs-claude|specs_claude]] — *(SKILL & Agenti > SKILL > PROMPT ENGEGNIRING-SKILL)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/PROMPT ENGEGNIRING-SKILL/(PROMPT ENGEGNIRING-SKILL) 2026-05-06-specs-gemini|specs_gemini]] — *(SKILL & Agenti > SKILL > PROMPT ENGEGNIRING-SKILL)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/PROMPT ENGEGNIRING-SKILL/(PROMPT ENGEGNIRING-SKILL) 2026-05-06-specs-grok|specs_grok]] — *(SKILL & Agenti > SKILL > PROMPT ENGEGNIRING-SKILL)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/PROMPT ENGEGNIRING-SKILL/(PROMPT ENGEGNIRING-SKILL) 2026-05-06-specs-openai|specs_openai]] — *(SKILL & Agenti > SKILL > PROMPT ENGEGNIRING-SKILL)*
+-  — *(SKILL & Agenti > SKILL > Skill - CRO - Short-Form Script Engine.skill)*
+-  — *(SKILL & Agenti > SKILL > Skill - CRO - Short-Form Script Engine.skill > references > references)*
+-  — *(SKILL & Agenti > SKILL > Skill - CRO - Short-Form Script Engine.skill > references > references)*
+-  — *(SKILL & Agenti > SKILL > Skill - CRO - Short-Form Script Engine.skill > references > references)*
+-  — *(SKILL & Agenti > SKILL > Skill - CRO - Short-Form Script Engine.skill > references > references)*
+-  — *(SKILL & Agenti > SKILL > Skill - CRO - Short-Form Script Engine.skill > references > references)*
+-  — *(SKILL & Agenti > SKILL > Skill - CRO - Short-Form Script Engine.skill > references > references)*
+-  — *(SKILL & Agenti > SKILL > Skill - CRO - Short-Form Script Engine.skill > references > references)*
+-  — *(SKILL & Agenti > SKILL > Skill - CRO - Short-Form Script Engine.skill > references > references)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill - script video lancio CCM/(Skill - script video lancio CCM) 2026-05-06-skill|Skill]] — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM)*
+-  — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM)*
+-  — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill - script video lancio CCM/(Skill - script video lancio CCM) 2026-05-06-lancio|lancio]] — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill - script video lancio CCM/(Skill - script video lancio CCM) 2026-05-06-offerte|offerte]] — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM)*
+-  — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM)*
+-  — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM)*
+-  — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM)*
+-  — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM)*
+-  — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM)*
+-  — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM > output_scripts)*
+-  — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM > output_scripts)*
+-  — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM > output_scripts)*
+-  — *(SKILL & Agenti > SKILL > Skill - script video lancio CCM > output_scripts)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill - skill creator/(Skill - skill creator) 2026-05-06-name-skill-creator|name skill-creator]] — *(SKILL & Agenti > SKILL > Skill - skill creator)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill CRO - Funnel Architect.md/(Skill CRO - Funnel Architect) 2026-05-06-skill|Skill]] — *(SKILL & Agenti > SKILL > Skill CRO - Funnel Architect.md)*
+-  — *(SKILL & Agenti > SKILL > Skill CRO - Ricerca)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill CRO - Ricerca/(Skill CRO - Ricerca) 2026-05-06-filosofia-della-ricerca|FILOSOFIA DELLA RICERCA]] — *(SKILL & Agenti > SKILL > Skill CRO - Ricerca)*
+-  — *(SKILL & Agenti > SKILL > Skill CRO - Ricerca)*
+-  — *(SKILL & Agenti > SKILL > Skill CRO - Ricerca)*
+-  — *(SKILL & Agenti > SKILL > Skill CRO - Ricerca)*
+-  — *(SKILL & Agenti > SKILL > Skill CRO - Ricerca)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill CRO - Ricerca/(Skill CRO - Ricerca) 2026-05-06-skill|SKILL]] — *(SKILL & Agenti > SKILL > Skill CRO - Ricerca)*
+-  — *(SKILL & Agenti > SKILL > Skill CRO - Ricerca)*
+-  — *(SKILL & Agenti > SKILL > Skill CRO - Ricerca)*
+-  — *(SKILL & Agenti > SKILL > Skill CRO - Strategy social (Ig-tiktok))*
+-  — *(SKILL & Agenti > SKILL > Skill CRO - Youtube - Lead magnet)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill CRO - call/(Skill CRO - call) 2026-05-06-sales-call-closer-skill-completa-2|SALES_CALL_CLOSER_SKILL_COMPLETA (2)]] — *(SKILL & Agenti > SKILL > Skill CRO - call)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill CRO - call/(Skill CRO - call) 2026-05-06-skill-cro-call|Skill CRO-Call]] — *(SKILL & Agenti > SKILL > Skill CRO - call)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill empire-premium-style/(Skill empire-premium-style) 2026-05-06-skill|SKILL]] — *(SKILL & Agenti > SKILL > Skill empire-premium-style)*
+-  — *(SKILL & Agenti > SKILL > Skill empire-premium-style)*
+-  — *(SKILL & Agenti > SKILL > Skill empire-premium-style > digital-empire-lms)*
+-  — *(SKILL & Agenti > SKILL > Skill empire-premium-style > digital-empire-lms)*
+-  — *(SKILL & Agenti > SKILL > Skill empire-premium-style > digital-empire-lms)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill empire-premium-style/references/(references) 2026-05-06-build-playbook|build-playbook]] — *(SKILL & Agenti > SKILL > Skill empire-premium-style > references)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill empire-premium-style/references/(references) 2026-05-06-components|components]] — *(SKILL & Agenti > SKILL > Skill empire-premium-style > references)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill empire-premium-style/references/(references) 2026-05-06-layout-template|layout-template]] — *(SKILL & Agenti > SKILL > Skill empire-premium-style > references)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill empire-premium-style/references/(references) 2026-05-06-package-json|package.json]] — *(SKILL & Agenti > SKILL > Skill empire-premium-style > references)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Skill empire-premium-style/references/(references) 2026-05-06-section-patterns|section-patterns]] — *(SKILL & Agenti > SKILL > Skill empire-premium-style > references)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Product Creation Lab)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Product Creation Lab > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Product Creation Lab > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Product Creation Lab > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Product Creation Lab > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Product Creation Lab > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Product Creation Lab > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Product Creation Lab > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Product Creation Lab > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Product Creation Lab > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Product Creation Lab > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(SKILL & Agenti > SKILL > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Web Builder/knowledge/(knowledge) 2026-05-06-wk01-design-system|WK01-design-system]] — *(SKILL & Agenti > SKILL > Web Builder > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/(Website Creator) 2026-05-06-system-prompt|system-prompt]] — *(SKILL & Agenti > SKILL > Website Creator)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/.claude-plugin/(.claude-plugin) 2026-05-06-plugin|plugin]] — *(SKILL & Agenti > SKILL > Website Creator > .claude-plugin)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/agents/(agents) 2026-05-06-copy-writer|copy-writer]] — *(SKILL & Agenti > SKILL > Website Creator > agents)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/agents/(agents) 2026-05-06-section-coder|section-coder]] — *(SKILL & Agenti > SKILL > Website Creator > agents)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/agents/(agents) 2026-05-06-web-master|web-master]] — *(SKILL & Agenti > SKILL > Website Creator > agents)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/knowledge/(knowledge) 2026-05-06-k00-cosmic-law|K00-cosmic-law]] — *(SKILL & Agenti > SKILL > Website Creator > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/knowledge/(knowledge) 2026-05-06-k01-design-laws|K01-design-laws]] — *(SKILL & Agenti > SKILL > Website Creator > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/knowledge/(knowledge) 2026-05-06-k02-grain-system|K02-grain-system]] — *(SKILL & Agenti > SKILL > Website Creator > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/knowledge/(knowledge) 2026-05-06-k03-divider-library|K03-divider-library]] — *(SKILL & Agenti > SKILL > Website Creator > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/knowledge/(knowledge) 2026-05-06-k04-color-system|K04-color-system]] — *(SKILL & Agenti > SKILL > Website Creator > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/knowledge/(knowledge) 2026-05-06-k05-typography|K05-typography]] — *(SKILL & Agenti > SKILL > Website Creator > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/knowledge/(knowledge) 2026-05-06-k06-animations|K06-animations]] — *(SKILL & Agenti > SKILL > Website Creator > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/knowledge/(knowledge) 2026-05-06-k07-section-templates|K07-section-templates]] — *(SKILL & Agenti > SKILL > Website Creator > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/knowledge/(knowledge) 2026-05-06-k08-agency-patterns|K08-agency-patterns]] — *(SKILL & Agenti > SKILL > Website Creator > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/knowledge/(knowledge) 2026-05-06-k09-category-ebook|K09-category-ebook]] — *(SKILL & Agenti > SKILL > Website Creator > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/knowledge/(knowledge) 2026-05-06-k10-category-saas|K10-category-saas]] — *(SKILL & Agenti > SKILL > Website Creator > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/knowledge/(knowledge) 2026-05-06-k11-category-physical|K11-category-physical]] — *(SKILL & Agenti > SKILL > Website Creator > knowledge)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/skills/(skills) 2026-05-06-brief-intake|brief-intake]] — *(SKILL & Agenti > SKILL > Website Creator > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/skills/(skills) 2026-05-06-copy-engine|copy-engine]] — *(SKILL & Agenti > SKILL > Website Creator > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/skills/(skills) 2026-05-06-divider-forge|divider-forge]] — *(SKILL & Agenti > SKILL > Website Creator > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/skills/(skills) 2026-05-06-quality-gate|quality-gate]] — *(SKILL & Agenti > SKILL > Website Creator > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/skills/(skills) 2026-05-06-section-forge|section-forge]] — *(SKILL & Agenti > SKILL > Website Creator > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/Website Creator/skills/(skills) 2026-05-06-site-architect|site-architect]] — *(SKILL & Agenti > SKILL > Website Creator > skills)*
+- [[Knowledge_Base/SKILL & Agenti/SKILL/book optimizer-SKILL/(book optimizer-SKILL) 2026-05-06-skill-book-optimizer|SKILL_BOOK_OPTIMIZER]] — *(SKILL & Agenti > SKILL > book optimizer-SKILL)*
+-  — *(SKILL & Agenti > SKILL > 📁 Skill — CRO Copy Architect — Knowledge Files)*
+-  — *(SKILL & Agenti > SKILL > 📁 Skill — CRO Copy Architect — Knowledge Files)*
+-  — *(SKILL & Agenti > SKILL > 📁 Skill — CRO Copy Architect — Knowledge Files)*
+-  — *(SKILL & Agenti > SKILL > 📁 Skill — CRO Copy Architect — Knowledge Files)*
+-  — *(SKILL & Agenti > SKILL > 📁 Skill — CRO Copy Architect — Knowledge Files)*
+-  — *(SKILL & Agenti > SKILL > 📁 Skill — CRO Copy Architect — Knowledge Files)*
+-  — *(SKILL & Agenti > SKILL > 📁 Skill — CRO Copy Architect — Knowledge Files)*
+-  — *(SKILL & Agenti > SKILL > 📁 Skill — CRO Copy Architect — Knowledge Files)*
+- [[Knowledge_Base/SKILL & Agenti/agent-factory/(agent-factory) 2026-05-06-readme|README]] — *(SKILL & Agenti > agent-factory)*
+- [[Knowledge_Base/SKILL & Agenti/agent-factory/.claude-plugin/(.claude-plugin) 2026-05-06-plugin|plugin]] — *(SKILL & Agenti > agent-factory > .claude-plugin)*
+- [[Knowledge_Base/SKILL & Agenti/agent-factory/skills/agent-architect/(agent-architect) 2026-05-06-skill|SKILL]] — *(SKILL & Agenti > agent-factory > skills > agent-architect)*
+-  — *(SKILL & Agenti > agent-factory > skills > agent-architect > references)*
+- [[Knowledge_Base/SKILL & Agenti/agent-factory/skills/agent-architect/references/(references) 2026-05-06-complexity-matrix|complexity-matrix]] — *(SKILL & Agenti > agent-factory > skills > agent-architect > references)*
+- [[Knowledge_Base/SKILL & Agenti/agent-factory/skills/agent-builder/(agent-builder) 2026-05-06-skill|SKILL]] — *(SKILL & Agenti > agent-factory > skills > agent-builder)*
+- [[Knowledge_Base/SKILL & Agenti/agent-factory/skills/agent-builder/references/(references) 2026-05-06-plugin-structure|plugin-structure]] — *(SKILL & Agenti > agent-factory > skills > agent-builder > references)*
+- [[Knowledge_Base/SKILL & Agenti/agent-factory/skills/agent-quality-sentinel/(agent-quality-sentinel) 2026-05-06-skill|SKILL]] — *(SKILL & Agenti > agent-factory > skills > agent-quality-sentinel)*
+-  — *(SKILL & Agenti > agent-factory > skills > agent-quality-sentinel > references)*
+- [[Knowledge_Base/SKILL & Agenti/agent-factory/skills/system-prompt-forge/(system-prompt-forge) 2026-05-06-skill|SKILL]] — *(SKILL & Agenti > agent-factory > skills > system-prompt-forge)*
+-  — *(SKILL & Agenti > agent-factory > skills > system-prompt-forge > references)*
+-  — *(SKILL & Agenti > agent-factory > skills > system-prompt-forge > references)*
+
+### Area: System_Omega_-_Creazione_Proggetti_E_Skill_Per_Claude
+-  — *(System OMEGA - Creazione proggetti e skill per Claude)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Attività temporanea)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > Output > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Brand Voice > Brand Voice.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Brand Voice > Brand Voice.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Brand Voice > Brand Voice.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Brand Voice > Brand Voice.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Brand Voice > Brand Voice.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Client Research Engine > Client Research Engine > Client Research Engine.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Client Research Engine > Client Research Engine > Client Research Engine.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Client Research Engine > Client Research Engine > Client Research Engine.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Client Research Engine > Client Research Engine > Client Research Engine.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Client Research Engine > Client Research Engine > Client Research Engine.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Client Research Engine > Client Research Engine > Client Research Engine.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Client Research Engine > Client Research Engine > Client Research Engine.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Client Research Engine > Client Research Engine.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Email Sequence Master.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Email Sequence Master.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Email Sequence Master.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Email Sequence Master.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Email Sequence Master.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > PRD Architect OS.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Creation Lab)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Creation Lab)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Creation Lab > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Creation Lab > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Creation Lab > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Creation Lab > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Creation Lab > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Creation Lab > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Creation Lab > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Creation Lab > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Pricing Strategist.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Pricing Strategist.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Pricing Strategist.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Pricing Strategist.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Product Pricing Strategist.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Marketing University.md > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Project-Strategy Command Center > KNOWLEDGE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Sales Call Closer.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Sales Call Closer.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Sales Call Closer.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Sales Call Closer.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Sales Call Closer.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Sales Call Closer.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > VSL Script Builder.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > VSL Script Builder.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > VSL Script Builder.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > VSL Script Builder.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > VSL Script Builder.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Webinar Script Master.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Webinar Script Master.skill)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Webinar Script Master.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Webinar Script Master.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > Webinar Script Master.skill > references)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > YouTube Lead Engine > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > YouTube Lead Engine > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > YouTube Lead Engine > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > YouTube Lead Engine > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > YouTube Lead Engine > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > YouTube Lead Engine > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > CONTESTO - SOLO ESEMPI > YouTube Lead Engine > KNOWLEDGE_BASE)*
+-  — *(System OMEGA - Creazione proggetti e skill per Claude > System promot Creator project > System prompt - creator project)*
+
+### Area: Workflow-Libri
+- [[Knowledge_Base/Workflow-libri/(Workflow-libri) 2026-05-06-claude|CLAUDE]] — *(Workflow-libri)*
+- [[Knowledge_Base/Workflow-libri/(Workflow-libri) 2026-05-06-libro-1|LIBRO 1]] — *(Workflow-libri)*
+- [[Knowledge_Base/Workflow-libri/(Workflow-libri) 2026-05-06-requirements|requirements]] — *(Workflow-libri)*
+- [[Knowledge_Base/Workflow-libri/(Workflow-libri) 2026-05-06-piano-completo-sistema-multi-age|📚 Piano Completo Sistema Multi-Age]] — *(Workflow-libri)*
+- [[Knowledge_Base/Workflow-libri/agents/(agents) 2026-05-06-agent-image-generator|AGENT_IMAGE_GENERATOR]] — *(Workflow-libri > agents)*
+- [[Knowledge_Base/Workflow-libri/agents/(agents) 2026-05-06-agent-layout|AGENT_LAYOUT]] — *(Workflow-libri > agents)*
+- [[Knowledge_Base/Workflow-libri/agents/(agents) 2026-05-06-agent-qa|AGENT_QA]] — *(Workflow-libri > agents)*
+- [[Knowledge_Base/Workflow-libri/input/(input) 2026-05-06-manuscript|manuscript]] — *(Workflow-libri > input)*
+- [[Knowledge_Base/Workflow-libri/output/(output) 2026-05-06-book-draft|book_draft]] — *(Workflow-libri > output)*
+- [[Knowledge_Base/Workflow-libri/output/(output) 2026-05-06-book-final|book_final]] — *(Workflow-libri > output)*
+- [[Knowledge_Base/Workflow-libri/output/(output) 2026-05-06-build-log|build_log]] — *(Workflow-libri > output)*
+- [[Knowledge_Base/Workflow-libri/output/(output) 2026-05-06-image-generation-log|image_generation_log]] — *(Workflow-libri > output)*
+- [[Knowledge_Base/Workflow-libri/output/(output) 2026-05-06-layout-log|layout_log]] — *(Workflow-libri > output)*
+- [[Knowledge_Base/Workflow-libri/output/(output) 2026-05-06-qa-log|qa_log]] — *(Workflow-libri > output)*
+- [[Knowledge_Base/Workflow-libri/output/(output) 2026-05-06-qa-report|qa_report]] — *(Workflow-libri > output)*
+
+### Area: Workfolw_Crea_Caroselli_À
+- [[Knowledge_Base/Workfolw crea caroselli à/(Workfolw crea caroselli à) 2026-05-06-paino-da-fare|paino da fare]] — *(Workfolw crea caroselli à)*
+- [[Knowledge_Base/Workfolw crea caroselli à/.vscode/(.vscode) 2026-05-06-settings|settings]] — *(Workfolw crea caroselli à > .vscode)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/(carousel-factory) 2026-05-06-claude|CLAUDE]] — *(Workfolw crea caroselli à > carousel-factory)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/(carousel-factory) 2026-05-06-package|package]] — *(Workfolw crea caroselli à > carousel-factory)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/(carousel-factory) 2026-05-06-package-lock|package-lock]] — *(Workfolw crea caroselli à > carousel-factory)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/brands/brand-agency/(brand-agency) 2026-05-06-config|config]] — *(Workfolw crea caroselli à > carousel-factory > brands > brand-agency)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/brands/brand-education/(brand-education) 2026-05-06-config|config]] — *(Workfolw crea caroselli à > carousel-factory > brands > brand-education)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/brands/brand-personal/(brand-personal) 2026-05-06-config|config]] — *(Workfolw crea caroselli à > carousel-factory > brands > brand-personal)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/brands/mentalita-brutale/(mentalita-brutale) 2026-05-06-config|config]] — *(Workfolw crea caroselli à > carousel-factory > brands > mentalita-brutale)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/context/(context) 2026-05-06-prompt-system|PROMPT-SYSTEM]] — *(Workfolw crea caroselli à > carousel-factory > context)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/context/(context) 2026-05-06-system|SYSTEM]] — *(Workfolw crea caroselli à > carousel-factory > context)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/context/(context) 2026-05-06-copywriting-rules|copywriting-rules]] — *(Workfolw crea caroselli à > carousel-factory > context)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/context/(context) 2026-05-06-cta-formulas|cta-formulas]] — *(Workfolw crea caroselli à > carousel-factory > context)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/context/(context) 2026-05-06-hook-formulas|hook-formulas]] — *(Workfolw crea caroselli à > carousel-factory > context)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/context/(context) 2026-05-06-slide-types|slide-types]] — *(Workfolw crea caroselli à > carousel-factory > context)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/context/examples/(examples) 2026-05-06-example-carousel-1|example-carousel-1]] — *(Workfolw crea caroselli à > carousel-factory > context > examples)*
+- [[Knowledge_Base/Workfolw crea caroselli à/carousel-factory/context/examples/(examples) 2026-05-06-example-carousel-2|example-carousel-2]] — *(Workfolw crea caroselli à > carousel-factory > context > examples)*
+-  — *(Workfolw crea caroselli à > carousel-factory > output > 2026-03-22-il-90-dei-freelance-fallisce-per-questo-motivo)*

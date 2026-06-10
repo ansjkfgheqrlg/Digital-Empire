@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '{print $NF}')",
+      "Read(//tmp/**)",
+      "Bash(xargs grep *)",
+      "Edit(~/.claude/skills/wiki-context/**)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(python3 -c \"import json; f=open\\('C:/Users/Utente/.claude/settings.json'\\); d=json.load\\(f\\); print\\('JSON valid'\\); print\\('Hook event:', list\\(d.get\\('hooks',{}\\).keys\\(\\)\\)\\)\")",
+      "PowerShell($content = Get-Content 'C:\\\\Users\\\\Utente\\\\.claude\\\\settings.json' -Raw -Encoding UTF8; try { $null = $content | ConvertFrom-Json; Write-Host \"JSON valid\"; $hooks = \\($content | ConvertFrom-Json\\).hooks; Write-Host \"Hook events: $\\($hooks.PSObject.Properties.Name -join ', '\\)\" } catch { Write-Host \"ERROR: $_\" })",
+      "Bash(bash -c \"pwd | grep -qi 'Digital Empire' && printf '{\\\\\"hookSpecificOutput\\\\\":{\\\\\"hookEventName\\\\\":\\\\\"UserPromptSubmit\\\\\",\\\\\"additionalContext\\\\\":\\\\\"WIKI-FIRST ATTIVO: Sei nella directory Digital Empire.\\\\\"}}' || printf '{}'\")",
+      "Read(//c/Users/Utente/Desktop/**)",
+      "Bash(bash -c \"pwd | grep -qi 'Digital Empire' && printf '{\\\\\"hookSpecificOutput\\\\\":{\\\\\"hookEventName\\\\\":\\\\\"UserPromptSubmit\\\\\",\\\\\"additionalContext\\\\\":\\\\\"WIKI-FIRST ATTIVO\\\\\"}}' || printf '{}'\")",
+      "Bash(python -c \"import openai; import requests; import dotenv; print\\('OK - tutti i pacchetti presenti'\\)\")",
+      "Bash(python run.py --target 10 --anteprima)",
+      "Bash(set PYTHONIOENCODING=utf-8)",
+      "Bash(python -X utf8 run.py --target 10 --anteprima)",
+      "Bash(python -c ' *)",
+      "Bash(python -X utf8 test_pipeline.py)",
+      "Bash(python -X utf8 -c ' *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Utente\\.claude"
+    ]
+  }
+}

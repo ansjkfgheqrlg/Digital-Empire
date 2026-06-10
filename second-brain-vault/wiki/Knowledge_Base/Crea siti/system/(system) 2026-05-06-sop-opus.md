@@ -1,0 +1,307 @@
+# SOP-OPUS
+            
+> Path: [[Map - Crea_Siti|Crea siti > system]]
+
+## Content
+
+# SOP — OPUS Ultra-Premium Workflow
+> Standard Operating Procedure per la creazione di siti web di livello $50.000.
+> Versione: 1.0 | Sistema: OPUS | Comando avvio: `/opus new <nome>`
+
+---
+
+## Quando Usare OPUS
+
+Usa OPUS (invece di `/site`) quando:
+- Il sito deve posizionarsi come brand premium o luxury
+- Budget percepito del cliente > €5.000
+- Obiettivo: info business, corso online, coaching 1:1, consulenza premium
+- Hai tempo per il workflow completo (non una landing page veloce)
+- Vuoi risultati che non sembrino "fatti con AI"
+
+---
+
+## Prerequisiti
+
+- [ ] Anti-Gravity (AG) attivo e pronto per i momenti chiave
+- [ ] opus-director attivo in `.claude/agents/`
+- [ ] Skill OPUS attiva in `.claude/skills/`
+- [ ] 2+ ore di tempo disponibile per il progetto
+
+---
+
+## Le 21 Fasi — Panoramica
+
+```
+FASE 0   → Initialization
+FASE 1   → Discovery
+FASE 2   → Technical Architecture
+FASE 2.5 → Visual Assets Strategy
+FASE 3   → Information Architecture
+FASE 4   → Design System
+  4A     → Silver-Metallic Colors
+  4B     → Section Dividers
+  4C     → Block & Card Design
+  4D     → Grain Texture System
+  [AG-1] → Design Manifesto (Anti-Gravity)
+  [AG-2] → Atmosphere (Anti-Gravity)
+  [AG-3] → Token Review (Anti-Gravity)
+FASE 5   → Typography Mastery
+  5A     → Text Visual Design
+  [AG-4] → Typography Deep Dive (Anti-Gravity)
+FASE 6   → Content & Copy
+  [AG-5] → Copy Refinement (Anti-Gravity)
+FASE 7   → Build
+FASE 7.5 → Conversion Engineering
+FASE 8   → Motion Engineering
+  [AG-6] → Motion Concepts (Anti-Gravity)
+FASE 9   → Polish Loop (7 pass Anti-AI)
+  [AG-7] → Polish Review (Anti-Gravity)
+FASE 10  → Technical SEO
+FASE 11  → Quality Assurance
+FASE 12  → Deployment + GDPR + GA4
+  [AG-8] → Launch Announcement (Anti-Gravity)
+FASE 13  → Delivery
+```
+
+---
+
+## Procedura Passo per Passo
+
+### FASE 0 — Initialization
+```
+/opus new <nome-progetto>
+```
+- opus-director crea `OPUS-STATUS.md` nella cartella progetto
+- Tutti i 21 step impostati a ⏳ Pending
+- Chiede: nome progetto, settore, URL riferimenti
+
+---
+
+### FASE 1 — Discovery
+```
+/site brief
+```
+- Intervista strutturata: obiettivo, audience, brand, pagine, budget, timeline
+- Output: `SITE-BRIEF.md`
+- Gate OPUS-1: brief completo prima di avanzare
+
+---
+
+### FASE 2 — Technical Architecture
+```
+/site stack
+```
+- Analizza brief → raccomanda stack (PATH A: HTML puro / PATH B: Next.js / PATH C: Monorepo)
+- Default OPUS: PATH A (HTML puro, massimo controllo estetico)
+- Output: `SITE-STACK.md`
+
+---
+
+### FASE 2.5 — Visual Assets Strategy
+- Identifica: foto necessarie, illustrazioni, icone, video background
+- Decide: Unsplash / Pexels / stock personalizzato / shooting
+- Documenta in brief appendice
+
+---
+
+### FASE 3 — Information Architecture
+```
+/site plan
+```
+- PATH A default: 15 sezioni in ordine direct-response validato
+- Output: `SITE-PLAN.md` con sitemap, wireframe testuale, componenti
+
+---
+
+### FASE 4 — Design System
+```
+/site design
+```
+Poi manualmente, seguendo `skills/opus/OPUS-PROCESS.md`:
+
+**4A — Silver-Metallic Colors**
+- Ogni colore: saturazione -20-35% + silver undertones
+- Vietato: pure black (#000), pure white (#fff)
+- Usa HSL per mixare argento: `hsl(H, S-25%, L)`
+
+**4B — Section Dividers**
+- Almeno 3 tecniche diverse (wave, diagonal, grain, overlap)
+- Mai bordi retti orizzontali come separatori
+
+**4C — Block & Card Design**
+- Cards: border-radius 2-8px (no pill), subtle shadow, grain interna
+- Backgrounds: mai piatti, sempre texture o gradiente micro
+
+**4D — Grain Texture System** (obbligatorio)
+```css
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,...feTurbulence...");
+  background-size: 180px 180px;
+  opacity: 0.045;   /* dark: 4-6%, light: 2.5-3.5% */
+  pointer-events: none;
+  z-index: 9999;
+}
+```
+- SVG feTurbulence (mai PNG grain)
+- `position: fixed` su `body::before`
+- `background-size` ≤ 200px
+
+**[AG-1] Design Manifesto** — usa `skills/opus/templates/ag-design-manifesto.md`
+**[AG-2] Atmosphere** — usa `skills/opus/templates/ag-atmosphere.md`
+**[AG-3] Token Review** — usa `skills/opus/templates/ag-token-review.md`
+
+Output: `SITE-DESIGN.md` + `design-tokens.css`
+
+---
+
+### FASE 5 — Typography Mastery
+Regole obbligatorie:
+- Scale Perfect Fourth (ratio 1.333): `xs` 0.75rem → `5xl` 5.61rem
+- Vietati: Inter, Roboto, Arial, Helvetica, system-ui
+- H1/H2/H3: sempre sentence case (mai Title Case)
+- Bold Word System: 1-3 parole peso 600 per frase (no 700)
+- Skeleton test: rimuovi tutti i testi → la gerarchia visiva deve reggere
+
+**[AG-4] Typography** — usa `skills/opus/templates/ag-typography.md`
+
+Reference completa: `skills/opus/TYPOGRAPHY-SYSTEM.md`
+
+---
+
+### FASE 6 — Content & Copy
+```
+/site copy
+```
+- 3 agenti paralleli: hero + body + meta
+- Output: `SITE-COPY.md`
+
+**[AG-5] Copy Refinement** — usa `skills/opus/templates/ag-copy.md`
+- Porta il tuo H1 attuale → AG-5 genera 5 varianti + versione "dolore nascosto"
+
+---
+
+### FASE 7 — Build
+```
+/site build
+```
+- site-build-shell → template HTML + navbar + footer + CSS base
+- [poi in parallelo] site-build-pages + site-build-interactions
+
+Desktop-first: CSS desktop come base, `@media (max-width: 768px)` per mobile.
+
+---
+
+### FASE 7.5 — Conversion Engineering
+- Aggiungi: sticky CTA bar, exit-intent popup, social proof dinamica
+- Verifica: ogni sezione ha una CTA visibile entro 2 scroll
+- Test: rimuovi tutto il copy → la struttura guida ancora l'occhio?
+
+---
+
+### FASE 8 — Motion Engineering
+```
+/site animate
+```
+**[AG-6] Motion Concepts** — usa `skills/opus/templates/ag-motion.md`
+- Priorità: 1 firma visiva memorabile, micro-interazioni sui hover
+- Regola: motion serve la narrativa, non la distrae
+
+---
+
+### FASE 9 — Polish Loop (7 pass Anti-AI)
+Segui `skills/opus/POLISH-LOOP-PROTOCOL.md`:
+
+| Pass | Focus | Durata stimata |
+|------|-------|----------------|
+| 1 | Anti-AI check (font, colori, pattern vietati) | 15 min |
+| 2 | Typography refinement | 20 min |
+| 3 | Spacing & rhythm | 15 min |
+| 4 | Color + Grain quality gate | 20 min |
+| 5 | Component states (hover, focus, active) | 15 min |
+| 6 | Motion polish | 10 min |
+| 7 | Detail sweep finale | 20 min |
+
+**[AG-7] Polish** — usa `skills/opus/templates/ag-polish.md`
+- Il più importante: "cosa ancora sembra AI?"
+
+---
+
+### FASE 10 — Technical SEO
+```
+/site seo
+```
+- Meta tag completi, Open Graph, JSON-LD schema
+- `sitemap.xml` + `robots.txt`
+- Output: `SEO-AUDIT.md`
+
+---
+
+### FASE 11 — Quality Assurance
+```
+/site qa
+```
+- 4 agenti paralleli: HTML + Accessibility + Performance + Mobile
+- Score minimo OPUS: 85/100
+- Tutti i Critical bloccano il deploy
+
+---
+
+### FASE 12 — Deployment
+```
+/site deploy vercel
+```
+- Configura: Vercel / Netlify / GitHub Pages
+- Aggiungi: GDPR cookie banner, Privacy Policy, GA4
+- Output: `DEPLOY-CHECKLIST.md`
+
+**[AG-8] Launch** — usa `skills/opus/templates/ag-launch.md`
+- Genera: social posts, email lancio, bio aggiornata, piano 7 giorni
+
+---
+
+### FASE 13 — Delivery
+```
+/site report
+```
+- Report finale cliente
+- Output: `SITE-REPORT.md`
+
+---
+
+## Controllo Qualità OPUS
+
+### I 5 Principi Non Negoziabili
+1. **Grain presente** su ogni sfondo — opacity 4-6% dark, 2.5-3.5% light
+2. **Nessun colore puro** — sempre silver-mixed (-20-35% saturazione)
+3. **Nessun font AI-generic** — Inter/Roboto/Arial vietati
+4. **Bold Word System** attivo — 1-3 parole peso 600 per frase
+5. **Polish Loop minimo 5 pass** — standard 7
+
+### Domanda Finale di Verifica
+> "Se questo sito fosse fatto da uno studio design con 15 anni di esperienza, sarebbe orgoglioso di firmarlo?"
+
+Se la risposta è "forse" o "no" → torna al Polish Loop.
+
+---
+
+## Template Tracking
+Copia `skills/opus/OPUS-STATUS-template.md` → `<nome-progetto>/OPUS-STATUS.md`
+Aggiorna ad ogni fase completata.
+
+---
+
+## Riferimenti
+- Processo completo: `skills/opus/OPUS-PROCESS.md`
+- Tipografia: `skills/opus/TYPOGRAPHY-SYSTEM.md`
+- Anti-AI Blacklist: `skills/opus/ANTI-AI-BLACKLIST.md`
+- Polish Loop: `skills/opus/POLISH-LOOP-PROTOCOL.md`
+- Tutti gli AG template: `skills/opus/templates/`
+
+## Collegamenti Correlati
+- [[Map - Agenti|Agenti Area]]
+- [[Map - App|App Area]]
+- [[Map - Crea_Siti|Crea Siti Area]]

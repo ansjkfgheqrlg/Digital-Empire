@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Code Mastery | Sales Page — Diventa un AI Builder</title>
+  <meta name="description"
+    content="Il percorso definitivo per dominare Claude Code e costruire asset aziendali scalabili con l'AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================
+       RESET & CORE
+    ============================================ */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0b;
+      color: #b8b5b0;
+      min-height: 100vh;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* ============================================
+       GRAIN SYSTEM (Dual Light/Dark Noise)
+    ============================================ */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      pointer-events: none;
+      opacity: 0.12;
+      mix-blend-mode: screen;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' width='256' height='256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 128px 128px;
+      background-repeat: repeat;
+    }
+
+    /* Noise Layer 2 (Overlay for depth) */
+    .grain-overlay {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.05;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    /* ============================================
+       BACKGROUND GLOWS
+    ============================================ */
+    .bg-glow {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 60% 50% at 50% 0%, rgba(212, 135, 74, 0.05) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 50% 100%, rgba(192, 166, 122, 0.04) 0%, transparent 60%);
+    }
+
+    /* ============================================
+       TYPOGRAPHY (Framework I.C.R.O. Standard)
+    ============================================ */
+    h1, h2, h3, h4 {
+      color: #e8e6e3;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    strong, b {
+      font-weight: 600;
+      background: linear-gradient(135deg, #cba67a, #d48a4a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .highlight-gold {
+      background: linear-gradient(135deg, #cba67a, #d48a4a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hl {
+      background: linear-gradient(135deg, rgba(192, 188, 204, 0.1), rgba(201, 160, 122, 0.15), rgba(212, 138, 74, 0.1));
+      padding: 0.1em 0.3em;
+      border-radius: 4px;
+    }
+
+    /* ============================================
+       LAYOUT COMPONENTS
+    ============================================ */
+    header, main, footer, section {
+      position: relative;
+      z-index: 10;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .container-narrow {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      padding: 10rem 0;
+    }
+
+    /* ============================================
+       HERO SECTION
+    ============================================ */
+    .hero {
+      padding-top: 12rem;
+      padding-bottom: 6rem;
+      text-align: center;
+    }
+
+    .pre-headline {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #d48a4a;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      margin-bottom: 2rem;
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: rgba(212, 138, 74, 0.03);
+      border: 1px solid rgba(212, 138, 74, 0.1);
+      border-radius: 100px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 7vw, 5.5rem);
+      font-weight: 800;
+      margin-bottom: 2.5rem;
+      line-height: 0.95;
+      animation: fadeInUp 1s ease-out 0.2s both;
+    }
+
+    .hero p.sub-headline {
+      font-size: clamp(1.125rem, 2.8vw, 1.4rem);
+      color: rgba(184, 181, 176, 0.7);
+      max-width: 800px;
+      margin: 0 auto 4.5rem;
+      font-weight: 300;
+      line-height: 1.6;
+      animation: fadeInUp 1s ease-out 0.4s both;
+    }
+
+    /* VSL FRAME */
+    .vsl-container {
+      max-width: 960px;
+      margin: 0 auto 6rem;
+      position: relative;
+      animation: fadeInUp 1.2s ease-out 0.6s both;
+    }
+
+    .vsl-frame {
+      aspect-ratio: 16/9;
+      background: #17161b;
+      border: 1px solid rgba(200, 170, 130, 0.15);
+      border-radius: 2.5rem;
+      box-shadow: 
+        0 40px 100px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(255, 255, 255, 0.03);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .vsl-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(212, 135, 74, 0.1), transparent 70%);
+      pointer-events: none;
+    }
+
+    .play-trigger {
+      width: 80px;
+      height: 80px;
+      background: rgba(13, 13, 14, 0.8);
+      border: 1px solid rgba(212, 138, 74, 0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .play-trigger:hover {
+      transform: scale(1.1);
+      background: #d48a4a;
+    }
+
+    .play-trigger svg {
+      margin-left: 4px;
+      fill: #d48a4a;
+      transition: fill 0.4s ease;
+    }
+
+    .play-trigger:hover svg {
+      fill: #0a0a0b;
+    }
+
+    /* ============================================
+       CTA SYSTEM
+    ============================================ */
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #cba67a, #d48a4a);
+      color: #0d0d0e !important;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.125rem;
+      padding: 1.75rem 4.5rem;
+      border-radius: 1.25rem;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 15px 45px rgba(212, 138, 74, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 30px 70px rgba(212, 138, 74, 0.4);
+      filter: brightness(1.1);
+    }
+
+    /* ============================================
+       PROBLEM SECTION (Il Canyon)
+    ============================================ */
+    .problem-section {
+      background: #0d0d0f;
+      border-top: 1px solid rgba(255, 255, 255, 0.02);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+    }
+
+    .narrative-container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .narrative-p {
+      font-size: 1.375rem;
+      color: rgba(184, 181, 176, 0.85);
+      font-weight: 300;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+
+    .big-callout {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      color: #e8e6e3;
+      margin: 6rem 0;
+      text-align: center;
+      line-height: 1.1;
+    }
+
+    /* ============================================
+       PER CHI È / NON È (Neumorphic Contrast)
+    ============================================ */
+    .audience-sections {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      margin-top: 4rem;
+    }
+
+    .audience-card {
+      background: rgba(23, 22, 27, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      border-radius: 2rem;
+      padding: 4rem;
+      transition: border-color 0.4s ease;
+    }
+
+    .audience-card.yes {
+      border-left: 6px solid #d48a4a;
+    }
+
+    .audience-card.no {
+      border-left: 6px solid rgba(184, 181, 176, 0.2);
+      opacity: 0.7;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-top: 2rem;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.125rem;
+      color: rgba(184, 181, 176, 0.8);
+    }
+
+    .check-list li svg {
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+
+    /* ============================================
+       ROADMAP (Scrollytelling)
+    ============================================ */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 5rem auto 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 14px; top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, rgba(212, 138, 74, 0.4) 15%, rgba(212, 138, 74, 0.4) 85%, transparent);
+    }
+
+    .step-item {
+      padding-left: 70px;
+      padding-bottom: 8rem;
+      position: relative;
+      opacity: 0.25;
+      transform: translateX(20px);
+      transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .step-item.is-visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .step-marker {
+      position: absolute;
+      left: 0; top: 10px;
+      width: 30px; height: 30px;
+      background: #0a0a0b;
+      border: 2px solid rgba(212, 138, 74, 0.2);
+      border-radius: 50%;
+      z-index: 5;
+      transition: all 0.6s ease;
+    }
+
+    .step-item.is-visible .step-marker {
+      background: #d48a4a;
+      border-color: #d48a4a;
+      box-shadow: 0 0 25px rgba(212, 138, 74, 0.6);
+      transform: scale(1.2);
+    }
+
+    .step-content h3 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #e8e6e3;
+    }
+
+    .week-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #d48a4a;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    /* ============================================
+       PRICING STACK (High Value Table)
+    ============================================ */
+    .pricing-stack {
+      background: linear-gradient(165deg, #131316 0%, #0a0a0b 100%);
+      border: 1px solid rgba(212, 138, 74, 0.2);
+      border-radius: 3rem;
+      padding: 6rem 4rem;
+      box-shadow: 0 60px 150px rgba(0, 0, 0, 0.8);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stack-title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .stack-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 5rem;
+    }
+
+    .stack-table td {
+      padding: 1.75rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      font-size: 1.25rem;
+      color: rgba(184, 181, 176, 0.9);
+    }
+
+    .stack-table .val-price {
+      text-align: right;
+      font-weight: 600;
+      color: #e8e6e3;
+      font-family: 'Inter', monospace;
+    }
+
+    .total-row td {
+      border-top: 2px solid rgba(212, 138, 74, 0.3) !important;
+      border-bottom: none;
+      padding-top: 3rem;
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: #bfbdb9;
+    }
+
+    .price-action {
+      text-align: center;
+    }
+
+    .strike-price {
+      font-size: 1.75rem;
+      text-decoration: line-through;
+      color: rgba(184, 181, 176, 0.3);
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .main-price {
+      font-size: clamp(4.5rem, 12vw, 7.5rem);
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      color: #e8e6e3;
+      line-height: 1;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ============================================
+       DOMANDE CPB (Claim Proof Benefit)
+    ============================================ */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5rem;
+      margin-top: 6rem;
+    }
+
+    .cpb-unit {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .cpb-card {
+      padding: 3rem;
+      border-radius: 1.5rem;
+      position: relative;
+    }
+
+    .cpb-card.claim { 
+      background: rgba(255, 255, 255, 0.02); 
+      border: 1px solid rgba(255, 255, 255, 0.05); 
+    }
+    .cpb-card.proof { 
+      background: rgba(212, 138, 74, 0.06); 
+      border: 1px solid rgba(212, 138, 74, 0.15); 
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+    .cpb-card.benefit { 
+      background: rgba(255, 255, 255, 0.02); 
+      border: 1px solid rgba(255, 255, 255, 0.05); 
+    }
+
+    .tag-label {
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      color: #d48a4a;
+      margin-bottom: 1.25rem;
+      display: block;
+    }
+
+    /* ============================================
+       GUARANTEE & FOOTER
+    ============================================ */
+    .guarantee {
+      background: linear-gradient(135deg, rgba(23, 22, 27, 0.8), rgba(212, 138, 74, 0.04));
+      border: 1px solid #d48a4a;
+      border-radius: 2.5rem;
+      padding: 6rem 4rem;
+      text-align: center;
+      margin-top: 6rem;
+    }
+
+    .option-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 5rem;
+      text-align: left;
+    }
+
+    .option-box {
+      background: rgba(23, 22, 27, 0.3);
+      padding: 3rem;
+      border-radius: 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .option-box.optimal {
+      border-color: rgba(212, 138, 74, 0.3);
+      background: rgba(212, 138, 74, 0.02);
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (min-width: 960px) {
+      .audience-sections { grid-template-columns: 1fr 1fr; }
+      .cpb-unit { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 6rem 0; }
+      .hero { padding-top: 8rem; }
+      .pricing-stack { padding: 4rem 2rem; }
+      .audience-card { padding: 2.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grain-overlay"></div>
+  <div class="bg-glow"></div>
+
+  <!-- HERO -->
+  <header class="hero container">
+    <span class="pre-headline">6 Weeks Intense AI Protocol</span>
+    <h1>Smetti di interrogare l'IA.<br><span class="highlight-gold">Inizia a comandarla.</span></h1>
+    <p class="sub-headline">
+      Sostituisci la frustrazione dei "prompt a caso" con un protocollo ingegneristico. In sole 6 settimane, costruirai il tuo asset aziendale più redditizio trasformando Claude nel tuo collaboratore instancabile.
+    </p>
+
+    <div class="vsl-container">
+      <div class="vsl-frame">
+        <div class="vsl-overlay"></div>
+        <img src="claude_code_mastery_hero.png" alt="Claude Code Mastery Hero" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+        <div class="play-trigger" style="position: absolute;">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+      </div>
+      <p style="margin-top: 2rem; color: rgba(184, 181, 176, 0.4); font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">
+        Guarda la VSL: Da zero a AI Builder (12:45)
+      </p>
+    </div>
+
+    <div>
+      <a href="#pricing" class="cta-button">SCEGLI LA LIBERTÀ — ENTRA ORA</a>
+      <span class="cta-subtext">Garanzia di Risultato 30 Giorni | Accesso Founder Members</span>
+    </div>
+  </header>
+
+  <!-- IL CANYON DEL PROBLEMA -->
+  <section class="problem-section">
+    <div class="container">
+      <div class="narrative-container">
+        <span class="section-label">The Conflict</span>
+        <div class="narrative-p">
+          Hai provato ChatGPT. Hai fatto qualche domanda. Forse hai anche comprato un corso da 47€ che ti ha dato "1000 prompt per il marketing".
+        </div>
+        <div class="narrative-p">
+          <strong>Ed è qui che casca l'asino.</strong>
+        </div>
+        <div class="narrative-p">
+          Il web è pieno di persone che "usano l'AI". Ma c'è un canyon enorme tra chi chiede a Claude di scrivere un'email e chi <b>costruisce sistemi autonomi</b> che sostituiscono intere giornate di lavoro manuale.
+        </div>
+        <div class="narrative-p">
+          Se i tuoi risultati sono banali, inconsistenti o richiedono più tempo per essere corretti che per essere scritti da zero... non è colpa tua. È colpa di chi ti insegna a "parlare" con l'AI invece di <b>architettare l'output</b>.
+        </div>
+      </div>
+
+      <div class="big-callout">
+        Il 95% degli utenti resta sulla riva della speranza.<br>
+        <span class="highlight-gold">Tu costruirai il ponte della struttura.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PER CHI È / NON È -->
+  <section class="container">
+    <span class="section-label">Alignment Review</span>
+    <h2 class="text-center">Questo percorso non è per tutti.<br>Assicurati di essere nel posto giusto.</h2>
+    
+    <div class="audience-sections">
+      <div class="audience-card yes">
+        <h3>Fai per noi se:</h3>
+        <ul class="check-list">
+          <li>
+            <svg width="20" height="20" fill="none" stroke="#d48a4a" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Vuoi una competenza vendibile e reale, non chiacchiere teoriche.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" fill="none" stroke="#d48a4a" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Sei un professionista che vuole recuperare 10+ ore a settimana ogni singola settimana.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" fill="none" stroke="#d48a4a" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Vuoi costruire asset (bot, workflow, agenti) invece di scrivere prompt casuali.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="audience-card no">
+        <h3>NON fa per te se:</h3>
+        <ul class="check-list">
+          <li>
+            <svg width="20" height="20" fill="none" stroke="rgba(184, 181, 176, 0.3)" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            <span>Cerchi la formula magica per "fare soldi domani" senza sforzo.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" fill="none" stroke="rgba(184, 181, 176, 0.3)" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            <span>Non hai intenzione di sporcarti le mani con la logica (anche se usiamo strumenti user-friendly).</span>
+          </li>
+          <li>
+            <svg width="20" height="20" fill="none" stroke="rgba(184, 181, 176, 0.3)" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            <span>Pensi che l'AI sostituirà il tuo cervello invece di potenziarlo esponenzialmente.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP SCROLLYTELLING -->
+  <section class="container roadmap-section">
+    <span class="section-label">The Transformation</span>
+    <h2 class="text-center">6 Settimane per diventare un AI Builder</h2>
+    
+    <div class="timeline">
+      <div class="step-item">
+        <div class="step-marker"></div>
+        <div class="step-content">
+          <span class="week-label">Settimana 1-2: Protocollo I.C.R.O.</span>
+          <h3>Dimentica i prompt. Impari l'architettura.</h3>
+          <p>Identità, Contesto, Regole e Output. Impari a blindare Claude rendendolo matematicamente preciso. Niente più allucinazioni, solo esecuzione chirurgica.</p>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-marker"></div>
+        <div class="step-content">
+          <span class="week-label">Settimana 3-4: Le 7 CORE SKILLS</span>
+          <h3>Costruiamo i tuoi reparti aziendali.</h3>
+          <p>Dall'analisi dati massiva alla creazione di copy che "suona esattamente come te". Creiamo specialisti verticali che gestiscono la tua burocrazia mentale.</p>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-marker"></div>
+        <div class="step-content">
+          <span class="week-label">Settimana 5-6: Ecosistema W.O.R.K.</span>
+          <h3>L'automazione prende vita.</h3>
+          <p>Colleghiamo i pezzi. Impari a connettere Claude a strumenti esterni (Database, Email, Calendari) per creare flussi che lavorano in totale autonomia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING STACK -->
+  <section id="pricing" class="container">
+    <div class="pricing-stack">
+      <h2 class="stack-title">L'Offerta Definitiva <span class="highlight-gold">Founders Only</span></h2>
+      <table class="stack-table">
+        <tr>
+          <td class="value-name">Masterclass Claude Code Mastery (22 Lezioni HD)</td>
+          <td class="val-price">€1.497</td>
+        </tr>
+        <tr>
+          <td class="value-name">Framework Protocol I.C.R.O. (Template Vault)</td>
+          <td class="val-price">€497</td>
+        </tr>
+        <tr>
+          <td class="value-name bonus-flag">BONUS: Mastermind Privato "The Builders"</td>
+          <td class="val-price">€247</td>
+        </tr>
+        <tr>
+          <td class="value-name bonus-flag">BONUS: Update Live Mensili (12 Mesi inclusi)</td>
+          <td class="val-price">€97</td>
+        </tr>
+        <tr class="total-row">
+          <td>Valore Totale Effettivo</td>
+          <td class="val-price">€2.338</td>
+        </tr>
+      </table>
+
+      <div class="price-action">
+        <span class="strike-price">Valore Reale: €2.338</span>
+        <div class="main-price">€397</div>
+        <a href="#" class="cta-button">SÌ, VOGLIO IMPUGNARE L'AI</a>
+        <p style="margin-top: 2rem; color: #d48a4a; font-weight: 700;">Risparmi €1.941 se entri in questa finestra di lancio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ CPB -->
+  <section class="container">
+    <span class="section-label">Objections Overruled</span>
+    <h2 class="text-center">Protocollo Gestione Dubbi (CPB)</h2>
+    
+    <div class="faq-grid">
+      <!-- Obiezione 1 -->
+      <div class="cpb-unit">
+        <div class="cpb-card claim">
+          <span class="tag-label">Claim</span>
+          <p><strong>"Ho già provato corsi AI e sono deludenti."</strong></p>
+        </div>
+        <div class="cpb-card proof">
+          <span class="tag-label">Proof</span>
+          <p>Questo non è un corso di "prompteria". È un percorso di ingegneria del lavoro. Costruiamo 3 asset reali durante le 6 settimane.</p>
+        </div>
+        <div class="cpb-card benefit">
+          <span class="tag-label">Benefit</span>
+          <p>Non avrai più una lista di prompt inutili, ma sistemi pronti che ti fanno risparmiare 40 ore al mese.</p>
+        </div>
+      </div>
+
+      <!-- Obiezione 2 -->
+      <div class="cpb-unit">
+        <div class="cpb-card claim">
+          <span class="tag-label">Claim</span>
+          <p><strong>"Non ho competenze tecniche di programmazione."</strong></p>
+        </div>
+        <div class="cpb-card proof">
+          <span class="tag-label">Proof</span>
+          <p>Il 70% dei nostri studenti era a zero. Usiamo l'AI per scrivere la logica. Se sai scrivere una mail, sai seguire il nostro metodo.</p>
+        </div>
+        <div class="cpb-card benefit">
+          <span class="tag-label">Benefit</span>
+          <p>Ottieni poteri da software engineer senza dover passare anni a studiare codici complessi. L'AI è il tuo traduttore simultaneo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANZIA & CHIUSURA -->
+  <footer class="container-narrow">
+    <div class="guarantee">
+      <h2 style="margin-bottom: 2rem;">Garanzia "Builder o Rimborsato"</h2>
+      <p class="narrative-p" style="font-size: 1.25rem;">
+        Entra. Guarda le prime 2 settimane. Se non senti che la tua testa sta esplodendo per le possibilità che ti stiamo aprendo, scrivici. Ti restituiamo tutto, senza domande. <b>Zero rischi, tutto valore.</b>
+      </p>
+    </div>
+
+    <div class="option-grid">
+      <div class="option-box">
+        <p style="color: rgba(184, 181, 176, 0.4);"><b>Opzione A:</b> Rimani nella massa, indovini prompt e speri che l'AI non faccia danni o non ti sostituisca.</p>
+      </div>
+      <div class="option-box optimal">
+        <p><b>Opzione B:</b> Adotti il protocollo dei Builder e diventi l'Architetto dei tuoi sistemi profittevoli. <b>Scegli ora.</b></p>
+      </div>
+    </div>
+
+    <div style="margin-top: 6rem; text-align: center;">
+      <a href="#pricing" class="cta-button">SCEGLI L'OPZIONE B — ENTRA ADESSO</a>
+      <p style="margin-top: 4rem; font-size: 0.75rem; color: rgba(184, 181, 176, 0.3); text-transform: uppercase; letter-spacing: 0.2em;">
+        &copy; 2026 Digital Empire | Claude Code Mastery™
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Intersection Observer for Timeline and Fade Effects
+    const observerOptions = {
+      threshold: 0.2,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.step-item').forEach(el => observer.observe(el));
+  </script>
+</body>
+
+</html>

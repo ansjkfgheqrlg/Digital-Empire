@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code Mastery | Tech-Lux Edition</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-ink: #1c1c1c;
+            --color-ink-2: #0a0a0a;
+            --color-paper: #fafafa;
+            --color-grey: #e8e8e6;
+            --color-orange: #fb4604;
+            --color-silver: #d9d4e1;
+            --font-sans: 'Onest', sans-serif;
+        }
+
+        :root {
+            --background: #2a2a2a;
+            --foreground: #f9f9f9;
+            --primary: #fb4604;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--foreground);
+            font-family: 'Onest', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* GRAIN */
+        .grain-fine::before {
+            content: ""; position: fixed; inset: -50%; pointer-events: none; z-index: 100; opacity: 0.55; mix-blend-mode: overlay;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+        }
+        .grain-fine::after {
+            content: ""; position: fixed; inset: -50%; pointer-events: none; z-index: 101; opacity: 0.28; mix-blend-mode: hard-light;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='2.1' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.3 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+        }
+
+        .text-silver-orange {
+            background: linear-gradient(135deg, #ffffff 0%, #d9d4e1 20%, #fb4604 55%, #ff8a4a 78%, #ffffff 100%);
+            -webkit-background-clip: text; background-clip: text; color: transparent;
+        }
+
+        .btn-orange {
+            display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; border-radius: 12px;
+            font-weight: 600; color: #ffffff; background: #fb4604; border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0 40px 0 rgba(251, 70, 4, 0.35); transition: transform 0.25s, filter 0.25s;
+        }
+        .btn-orange:hover { transform: translateY(-1px); filter: brightness(1.1); }
+
+        .bubble-orange {
+            background: linear-gradient(135deg, #fb4604 0%, #ff6a2e 100%); color: #ffffff;
+            border-radius: 9999px; padding: 0.4rem 1rem; font-weight: 600; font-size: 0.875rem;
+            display: inline-flex; align-items: center; gap: 0.4rem;
+        }
+
+        .card-dark {
+            border: 1px solid rgba(249, 249, 249, 0.14);
+            background: radial-gradient(120% 80% at 0% 0%, rgba(251,70,4,0.09) 0%, transparent 55%), linear-gradient(180deg, #1a1a1a 0%, #121212 100%);
+            border-radius: 20px; padding: 2.5rem 2.25rem; box-shadow: 0 40px 80px -40px rgba(0,0,0,0.9);
+        }
+
+        .card-paper {
+            border: 1px solid rgba(19,19,19,0.12); background: #ffffff; border-radius: 22px; padding: 2.5rem;
+            box-shadow: 0 40px 70px -32px rgba(19,19,19,0.22); color: #1c1c1c;
+        }
+
+        .marquee-inner { animation: marquee 30s linear infinite; }
+        @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+        .reveal { opacity: 0; transform: translateY(20px); }
+
+        .silver-chip {
+            position: absolute; display: flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1rem;
+            border-radius: 14px; background: white; border: 1px solid rgba(255,255,255,0.9);
+            color: #1c1c1c; font-size: 0.78rem; font-weight: 600; box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .step-num {
+            width: 3rem; height: 3rem; border-radius: 12px; background: #fb4604; color: white;
+            display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body class="grain-fine">
+
+    <!-- HERO -->
+    <section class="bg-ink relative overflow-hidden border-b border-white/10 pt-16">
+        <div class="overflow-hidden py-3 border-b border-white/5 opacity-40">
+            <div class="marquee-inner flex gap-10 whitespace-nowrap text-[10px] uppercase tracking-[0.3em]">
+                <div class="flex items-center gap-10">
+                    <span>Claude Code Mastery</span> <span class="text-orange">✦</span>
+                    <span>Tech-Lux Edition</span> <span class="text-orange">✦</span>
+                    <span>Digital Empire</span> <span class="text-orange">✦</span>
+                    <span>Claude Code Mastery</span> <span class="text-orange">✦</span>
+                    <span>Tech-Lux Edition</span> <span class="text-orange">✦</span>
+                    <span>Digital Empire</span> <span class="text-orange">✦</span>
+                    <span>Claude Code Mastery</span> <span class="text-orange">✦</span>
+                    <span>Tech-Lux Edition</span> <span class="text-orange">✦</span>
+                    <span>Digital Empire</span> <span class="text-orange">✦</span>
+                </div>
+                <div class="flex items-center gap-10">
+                    <span>Claude Code Mastery</span> <span class="text-orange">✦</span>
+                    <span>Tech-Lux Edition</span> <span class="text-orange">✦</span>
+                    <span>Digital Empire</span> <span class="text-orange">✦</span>
+                    <span>Claude Code Mastery</span> <span class="text-orange">✦</span>
+                    <span>Tech-Lux Edition</span> <span class="text-orange">✦</span>
+                    <span>Digital Empire</span> <span class="text-orange">✦</span>
+                    <span>Claude Code Mastery</span> <span class="text-orange">✦</span>
+                    <span>Tech-Lux Edition</span> <span class="text-orange">✦</span>
+                    <span>Digital Empire</span> <span class="text-orange">✦</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 py-24 md:py-36 text-center relative">
+            <div class="silver-chip top-10 left-0"><strong>No-Code</strong> Approach</div>
+            <div class="silver-chip top-20 right-0"><strong>6 Settimane</strong></div>
+
+            <div class="reveal">
+                <span class="bubble-orange mb-8">✦ Il primo percorso italiano su Claude Code</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.05] tracking-tight mt-8 reveal">
+                <span class="text-white">Da AI User a</span><br/>
+                <span class="text-silver-orange">System Architect.</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mt-10 mb-12 reveal">
+                Smetti di chattare con l'AI. Inizia a costruire sistemi deterministici che liberano tempo e generano profitto.
+            </p>
+
+            <div class="reveal">
+                <a href="#offer" class="btn-orange text-lg">Inizia il Percorso per €397</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="bg-ink py-24 border-b border-white/5">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+            <div class="card-dark text-center reveal">
+                <div class="text-6xl font-extrabold text-orange mb-2">89%</div>
+                <div class="text-xs uppercase tracking-widest text-white/40">Sistemi proprietari</div>
+            </div>
+            <div class="card-dark text-center reveal">
+                <div class="text-6xl font-extrabold text-orange mb-2">+313%</div>
+                <div class="text-xs uppercase tracking-widest text-white/40">Produttività</div>
+            </div>
+            <div class="card-dark text-center reveal">
+                <div class="text-6xl font-extrabold text-orange mb-2">68%</div>
+                <div class="text-xs uppercase tracking-widest text-white/40">Mercato Vergine</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEMS (PAPER) -->
+    <section class="bg-paper py-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-bold text-ink">Il problema non è saper programmare.<br/>
+                <span class="text-orange italic">È saper Architekturare.</span></h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card-paper reveal">
+                    <h3 class="text-2xl font-bold mb-4">L'approccio "Chat"</h3>
+                    <p class="text-ink/60 leading-relaxed mb-6">Apri Claude, chiedi, speri. Ricevi codice che non capisci. Se si rompe, torni nel loop. Risultato: Tempo perso.</p>
+                </div>
+                <div class="card-paper border-orange reveal" style="background:#fb4604; color:white;">
+                    <h3 class="text-2xl font-bold mb-4">L'approccio "System"</h3>
+                    <p class="opacity-80 leading-relaxed mb-6">Usi Claude Code per operare sul FS. Costruisci Agenti e Skill. Il sistema non allucina. Risultato: Profitto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="bg-ink py-24 border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl font-bold text-center mb-16 reveal text-white">6 Settimane per la <span class="text-orange">Mastery.</span></h2>
+            
+            <div class="space-y-6">
+                <div class="card-dark flex gap-6 items-center reveal">
+                    <div class="step-num shrink-0">1</div>
+                    <div><h4 class="text-xl font-bold text-orange">Deep Dive Claude Code</h4><p class="text-white/60">Configurazione e primi workflow deterministici.</p></div>
+                </div>
+                <div class="card-dark flex gap-6 items-center reveal">
+                    <div class="step-num shrink-0">2</div>
+                    <div><h4 class="text-xl font-bold text-orange">Architecting Agentic Systems</h4><p class="text-white/60">Come pensare a blocchi e non a prompt.</p></div>
+                </div>
+                <div class="card-dark flex gap-6 items-center reveal">
+                    <div class="step-num shrink-0">3</div>
+                    <div><h4 class="text-xl font-bold text-orange">Sub-Agents & Memory</h4><p class="text-white/60">Sistemi che ricordano e agiscono da soli.</p></div>
+                </div>
+                <div class="card-dark flex gap-6 items-center reveal">
+                    <div class="step-num shrink-0">4</div>
+                    <div><h4 class="text-xl font-bold text-orange">Integration & MCP</h4><p class="text-white/60">Connetti il tuo sistema al mondo esterno.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="bg-ink-2 py-32 text-center border-t border-white/5">
+        <div class="reveal">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-10 text-white">Pronto a diventare un<br/><span class="text-silver-orange">System Architect?</span></h2>
+            <a href="#offer" class="btn-orange text-xl scale-110">Accedi a Claude Code Mastery</a>
+            <p class="mt-10 text-white/30 text-sm tracking-widest uppercase">Posti limitati per la coorte 2026</p>
+        </div>
+    </section>
+
+    <script>
+        // Smooth Scroll
+        const lenis = new Lenis();
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        // GSAP Reveal
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils.toArray(".reveal").forEach((el, i) => {
+            gsap.to(el, {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: "power4.out",
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 90%",
+                }
+            });
+        });
+    </script>
+</body>
+</html>

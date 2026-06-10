@@ -1,0 +1,11 @@
+{
+  "skill_name": "beast-preventivi",
+  "evals": [
+    {"id": 1, "prompt": "ADS non converte", "expected_output": "..."},
+    {"id": 2, "prompt": "quanto costa whatsapp", "expected_output": "..."},
+    {"id": 3, "prompt": "studio dentistico", "expected_output": "..."},
+    {"id": 4, "prompt": "obiezione prezzo", "expected_output": "..."},
+    {"id": 5, "prompt": "cliente unaware", "expected_output": "..."},
+    {"id": 6, "prompt": "B2B high-ticket", "expected_output": "..."}
+  ]
+}

@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --color-ink: #1c1c1c;
+  --color-ink-2: #0a0a0a;
+  --color-paper: #fafafa;
+  --color-grey: #e8e8e6;
+  --color-orange: #fb4604;
+  --color-silver: #d9d4e1;
+}
+
+:root {
+  --background: #2a2a2a;
+  --foreground: #f9f9f9;
+  --font-sans: 'Onest', sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Elite Grain System - Mandatory as per Skill */
+body::before {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.18;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 10000;
+  opacity: 0.12;
+  mix-blend-mode: hard-light;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='2.1' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.3 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+.text-silver-orange {
+  background: linear-gradient(135deg, #ffffff 0%, #d9d4e1 20%, #fb4604 55%, #ff8a4a 78%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-silver-white {
+  background: linear-gradient(180deg, #ffffff 0%, #d9d4e1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-silver-black {
+  background: linear-gradient(180deg, #1c1c1c 0%, #3a3a3a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hl-block {
+  @apply bg-orange/10 text-orange border-b border-orange/30 px-1 font-semibold;
+}
+
+.bubble-orange {
+  @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-br from-orange to-[#ff6a2e] text-white text-[11px] font-extrabold uppercase tracking-widest shadow-[0_10px_30px_-10px_rgba(251,70,4,0.6)];
+}
+
+.bubble-ink {
+  @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ink text-white text-[11px] font-extrabold uppercase tracking-widest border border-white/10;
+}
+
+.bubble-silver {
+  @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white text-ink text-[11px] font-extrabold uppercase tracking-widest border border-ink/10;
+}
+
+.card-dark {
+  @apply relative p-10 md:p-14 rounded-[28px] bg-gradient-to-b from-[#1a1a1a] to-[#111111] border border-white/10 shadow-[0_60px_120px_-40px_rgba(0,0,0,1)];
+  background-image: radial-gradient(140% 100% at 0% 0%, rgba(251,70,4,0.1) 0%, transparent 60%), linear-gradient(180deg, #1a1a1a 0%, #111111 100%);
+}
+
+.card-paper {
+  @apply p-10 md:p-14 rounded-[28px] bg-white border border-ink/10 shadow-[0_50px_100px_-50px_rgba(0,0,0,0.2)];
+}
+
+.card-silver-orange {
+  @apply p-10 md:p-14 rounded-[28px] bg-gradient-to-br from-white to-grey border border-white shadow-[0_50px_100px_-50px_rgba(0,0,0,0.25)];
+}
+
+.card-orange {
+  @apply p-10 md:p-14 rounded-[28px] bg-gradient-to-br from-orange to-[#ff6a2e] text-white border border-white/20 shadow-[0_50px_100px_-50px_rgba(251,70,4,0.5)];
+}
+
+.btn-orange {
+  @apply inline-flex items-center gap-2.5 px-10 py-4.5 rounded-[16px] bg-orange text-white font-extrabold transition-all duration-300 shadow-[0_0_50px_0_rgba(251,70,4,0.4)] hover:shadow-[0_0_80px_0_rgba(251,70,4,0.6)] hover:-translate-y-1 active:scale-95;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 50px 0 rgba(251, 70, 4, 0.4), inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.btn-orange--lg {
+  @apply px-12 py-6 text-2xl;
+}
+
+.section {
+  @apply py-32 md:py-48;
+}
+
+.section-border-t {
+  @apply border-t border-white/5;
+}
+
+.step-num {
+  @apply w-14 h-14 flex items-center justify-center rounded-[14px] bg-orange text-white font-black text-2xl;
+}
+
+.silver-chip {
+  @apply absolute flex items-center gap-3 px-5 py-3 rounded-[18px] bg-gradient-to-br from-white to-[#f4f1f7] border border-white/90 text-ink text-[13px] font-extrabold shadow-[0_25px_50px_-15px_rgba(0,0,0,0.4)] z-20;
+}
+.silver-chip .dot {
+  @apply w-2 h-2 rounded-full bg-orange shadow-[0_0_12px_#fb4604];
+}
+
+.marquee-container {
+  @apply border-b border-white/10 overflow-hidden py-4;
+}
+
+.marquee-inner {
+  @apply flex gap-16 whitespace-nowrap text-[10px] sm:text-[11px] font-black uppercase tracking-[0.4em] text-white/40;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.pre-headline {
+  @apply text-[11px] font-black uppercase tracking-[0.3em] text-white/30 mb-6;
+}

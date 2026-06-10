@@ -1,0 +1,112 @@
+# REGOLE
+            
+> Path: [[Map - System_Omega_-_Creazione_Proggetti_E_Skill_Per_Claude|System OMEGA - Creazione proggetti e skill per Claude]]
+
+## Content
+
+Allora il tuo ruolo è quello di creare Progetti per Claude Browser Ti dico così semplicemente per il fatto che li utilizzerò su Claude Browser.
+Non credo che sia necessario averli anche su Claude code Ma comunque Fammi sapere un tuo parere.
+
+Quello che devi sapere è che ti ho fornito tutta l'architettatura completa O meglio, tutte le archi dettature base Di progetti e skill Di categoria Info Business Tutti quelli vanno creati, anche se la maggior parte molti sono già stati creati, quelli ovviamente no. 
+
+Tu non puoi agire in autonomia creando Un progetto e poi, iniziando a crearne un'altro e poi iniziare a creare una skill assolutamente no, io ti dico quando devi creare e che cosa Voglio che crei un comando Che posso utilizzare per avviare la creazione di una skill e di un progetto Inoltre voglio dirti che quando parte con la creazione La creazione si divide in tante parti Perché in teoria tu generi un file alla volta, ma ti devi dare il via da solo, io non devo confermarti il via per ogni file, tu devi partire in autonomia e andare avanti in autonomia Quando completi un file Ci deve essere un agente che deve ancora creare Che controlla e quell'agente ti dà il via Quindi la cosa che potresti fare è creare un agente Esecutore, quello che appunto agisce e crea Quando completa un file, un agente controlla E gli dà il comando per continuare E così, fino a che non finisce tutto il progetto Tutta la creazione di tutti i file oppure tutta la skill.
+
+Quindi, di fatto devi creare Due agenti Credo che non ci sia bisogno di creare qualche skill Intendo skill che utilizzi tu per fare questo lavoro, insomma...
+
+---
+
+## PRINCIPIO FONDAMENTALE — STUDIO CONTESTO PRIMA DI OGNI CREAZIONE
+
+> **REGOLA N.1 DEL SISTEMA OMEGA — NON NEGOZIABILE**
+>
+> Ogni volta che si crea un progetto o una skill — OGNI SINGOLA VOLTA, SENZA ECCEZIONI —
+> l'executor deve prima leggere e analizzare **TUTTI** gli esempi presenti nella cartella:
+>
+> ```
+> System promot Creator project\CONTESTO - SOLO ESEMPI\
+> ```
+>
+> **Non uno. Non quelli simili. TUTTI.**
+>
+> Questa cartella esiste proprio per questo: accumulare esempi reali che
+> guidano ogni nuova creazione. Il sistema OMEGA migliora solo se ogni
+> nuovo output viene costruito sopra la conoscenza di tutti quelli precedenti.
+>
+> **Procedura**: `ls CONTESTO` → leggi ogni progetto/skill presente →
+> studia struttura, format, tono, densità esempi → poi inizia a generare.
+>
+> Saltare questo step produce output peggiori. È vietato.
+
+---
+
+## REGOLE AGGIUNTIVE (aggiornamento)
+
+### OUTPUT DOPPIO — OBBLIGATORIO
+
+Ogni progetto o skill generato deve essere salvato in DUE posizioni:
+
+1. **Cartella Output principale** (una cartella separata per ogni progetto/skill):
+   ```
+   Output\[NomeProgetto]\
+   ├── CUSTOM_INSTRUCTIONS.md
+   ├── PROJECT_MAP.md
+   └── KNOWLEDGE_BASE\
+       ├── KB_01_*.md
+       └── ...
+   ```
+
+2. **Copia nel CONTESTO** (per ampliare il contesto disponibile ai futuri agenti):
+   ```
+   System promot Creator project\CONTESTO - SOLO ESEMPI\[NomeProgetto]\
+   ├── CUSTOM_INSTRUCTIONS.md
+   ├── PROJECT_MAP.md
+   └── KNOWLEDGE_BASE\
+       ├── KB_01_*.md
+       └── ...
+   ```
+
+**Motivo**: La copia nel CONTESTO permette all'executor di usare i progetti appena creati come esempi di riferimento per le creazioni successive, migliorando progressivamente la qualità dell'output.
+
+Questa regola è valida per TUTTI i progetti e TUTTE le skill, senza eccezioni.
+
+---
+
+### FILE COMPLETO PER SKILL — OBBLIGATORIO
+
+Ogni volta che viene creata una **skill** (type=skill), il processo deve produrre SEMPRE due output:
+
+1. **Cartella `.skill` con struttura completa:**
+   ```
+   Output\[Nome Skill].skill\
+   ├── [Nome Skill].md              ← file principale con YAML frontmatter
+   ├── references\
+   │   ├── *.md                     ← file di riferimento dettagliati
+   └── scripts-py\
+       └── *.py                     ← script Python di supporto
+   ```
+
+2. **File unico `[Nome Skill] - COMPLETO.md`** nella stessa cartella `.skill\`:
+   Contiene **tutto** il contenuto della skill in un solo file — istruzioni, framework, template, esempi, script Python inline in blocchi di codice. Deve essere un file standalone che può essere caricato su Claude Browser come Knowledge file unico.
+
+**Entrambi gli output sono obbligatori per ogni skill, senza eccezioni.**
+Il file COMPLETO viene salvato anche nella posizione CONTESTO (output doppio).
+
+---
+
+### LETTURA DIGITAL EMPIRE — OBBLIGATORIA
+
+Prima di generare qualsiasi file, l'executor **deve sempre** esplorare la cartella:
+
+```
+c:\Users\Utente\Desktop\qui tutto\Digital Empire\
+```
+
+e leggere tutto il materiale rilevante che trova (PDF, .md, .txt, .skill, ecc.) per estrarne valore e incorporarlo nella generazione.
+
+**L'architettura rimane la fonte primaria al 100%**, ma tutto il materiale reale presente in Digital Empire (funnel, webinar, guide, esempi, prompt, skill esistenti) va usato come contesto e conoscenza aggiuntiva per arricchire i file generati con esempi reali, framework collaudati e linguaggio autentico del Digital Empire.
+
+Questa regola vale per OGNI creazione, senza eccezioni.
+
+## Collegamenti Correlati
+- [[Map - Agenti|Agenti Area]]
+- [[Map - App|App Area]]

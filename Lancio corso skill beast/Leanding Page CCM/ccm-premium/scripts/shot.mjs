@@ -1,0 +1,10 @@
+import { chromium } from "@playwright/test";
+const b = await chromium.launch();
+const c = await b.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1.5 });
+const p = await c.newPage();
+await p.goto("http://localhost:3000", { waitUntil: "networkidle", timeout: 60000 });
+await p.waitForTimeout(1500);
+await p.screenshot({ path: "reference/ccm-hero.png" });
+await p.screenshot({ path: "reference/ccm-full.png", fullPage: true });
+console.log("shot ok");
+await b.close();

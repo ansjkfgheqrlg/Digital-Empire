@@ -1,0 +1,109 @@
+# ============================================================
+# EMPIRE OS — .gitignore del monorepo Digital Empire
+# Regola: conoscenza, codice, piani, wiki = TRACCIATI.
+# Segreti, sessioni browser, build, vendor, media giganti = NO.
+# ============================================================
+
+# --- SEGRETI E CREDENZIALI (mai su GitHub) ---
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+**/credentials.json
+**/token.json
+**/client_secret*.json
+*.pem
+*.key
+*.session
+*session*.json
+**/*session*.json
+**/sessions/
+**/cookies*.json
+**/cookies*.pkl
+*.pickle
+token*.pickle
+
+# --- PROFILI BROWSER / SESSIONI AUTOMAZIONE (cookie, history, cache) ---
+maps_session/
+**/maps_session/
+session_data/
+**/session_data/
+**/chrome-profile*/
+**/browser-data*/
+**/User Data/
+**/Default/Cache/
+**/Default/Cookies*
+
+# --- DATI OPERATIVI LOCALI CON PII (lead DB: per-macchina, non si sincronizza) ---
+Outreach/**/*.db
+Outreach/**/*.sqlite*
+
+# --- BUILD / DIPENDENZE ---
+node_modules/
+.next/
+out/
+dist/
+build/
+.turbo/
+.vercel/
+.netlify/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.cache/
+
+# --- RUNTIME ORCHESTRAZIONE (per-macchina) ---
+.claude-flow/
+.swarm/
+.hive-mind/
+.ruflo/
+
+# --- CLAUDE CODE: locale sì-ignora, condiviso sì-traccia ---
+.claude/settings.local.json
+
+# --- OBSIDIAN (stato UI per-macchina) ---
+.obsidian/
+
+# --- MEDIA PESANTI (restano locali — GitHub limite 100MB/file) ---
+*.mp4
+*.mov
+*.webm
+*.avi
+*.mkv
+
+# --- ARCHIVI (contenuto già estratto accanto) ---
+*.zip
+*.7z
+*.rar
+*.skill
+
+# --- FILE SINGOLI > 100MB (bloccherebbero il push) ---
+KDP - prodottti digitali/Leanding Page/email-agent/ebook.pdf
+Workflow-libri/output/book_final.pdf
+Workflow-libri/output/book_draft.pdf
+
+# --- ASSET IMMAGINE GIGANTI KDP (2 GiB di copertine 2820x4500: restano locali/Drive) ---
+KDP - prodottti digitali/**/*.png
+KDP - prodottti digitali/**/*.psd
+
+# --- VENDOR / CLONI ESTERNI (ri-clonabili, non nostri) ---
+SKILL & Agenti/github-repos/
+SKILL & Agenti/ruflo-main-extracted/
+SKILL & Agenti/caveman-extracted/
+Lancio corso skill beast/Leanding Page CCM/templates/astrowind/
+
+# --- REPO GIT ANNIDATI (decisione Max 2026-06-10, ADR-004):
+#     7 ex-repo inclusi nel monorepo (loro .git rinominato .git.bak, reversibile).
+#     EXPONIUM resta fuori: è il repo condiviso col cliente (exponium-client). ---
+Clienti/EXPONIUM/
+.git.bak/
+**/.git.bak/
+
+# --- RUMORE OS / LOG ---
+*.log
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*

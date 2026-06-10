@@ -1,0 +1,1493 @@
+@import "tailwindcss";
+
+/* ============================================================
+   TOKENS — palette brand Agency (cream-navy gradient + purple)
+   ============================================================ */
+@theme inline {
+  /* Backgrounds */
+  --color-ink:           #0d0d0d;
+  --color-ink-2:         #040404;
+  --color-paper:         #faf6ee;
+  --color-paper-deep:    #f5efdf;
+  --color-grey:          #ebe5d6;
+  --color-grey-deep:     #ddd4be;
+
+  /* Brand primary — orange (CCM palette) */
+  --color-gold:          #fb4604;   /* brand orange */
+  --color-gold-pure:     #fb4604;   /* brand orange alias */
+  --color-gold-bright:   #ff6a2e;   /* brand orange bright */
+  --color-gold-deep:     #c9370a;   /* brand orange deep */
+  --color-gold-classic:  #ff8a4a;   /* brand orange light */
+  --color-gold-shadow:   #6a2c10;   /* brand orange shadow */
+
+  /* Brand secondary — purple (kept as design accent) */
+  --color-purple:        #a855f7;
+  --color-purple-bright: #c084fc;
+  --color-purple-deep:   #7e22ce;
+
+  /* Silver palette */
+  --color-silver:        #d9d4e1;
+  --color-silver-bright: #ffffff;
+  --color-silver-dim:    #8a8594;
+  --color-platinum:      #f1f5f9;
+
+  /* Accent rosso (X icons, alert) */
+  --color-alert:         #DC2F37;
+
+  /* Spacing scale */
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+  --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+  --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
+  --space-16: 4rem; --space-20: 5rem; --space-24: 6rem; --space-32: 8rem;
+
+  /* Easing signature */
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-overshoot: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Fonts */
+  --font-sans: var(--font-onest);
+  --font-display: var(--font-cinzel);
+  --font-accent: var(--font-playfair);
+}
+
+/* ============================================================
+   ROOT — text rendering & scrollbar
+   ============================================================ */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: #0d0d0d;
+  scrollbar-color: #fb4604 #0d0d0d;
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "ss01", "cv11", "kern", "liga";
+  letter-spacing: -0.005em;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+/* Webkit scrollbar custom */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0d0d0d; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff6a2e, #fb4604 50%, #c9370a);
+  border-radius: 5px;
+  border: 2px solid #131313;
+}
+::-webkit-scrollbar-thumb:hover { filter: brightness(1.25); }
+
+/* Selection custom */
+::selection { background: rgba(251,70,4,0.35); color: #ffffff; }
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid #fb4604;
+  outline-offset: 4px;
+  border-radius: 6px;
+  transition: outline-offset 0.15s ease;
+}
+button:focus-visible, a:focus-visible { outline-offset: 6px; }
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: none;
+  border-color: #fb4604;
+  box-shadow: 0 0 0 3px rgba(251,70,4,0.25);
+}
+
+/* ============================================================
+   GRAIN — 4 LAYER SYSTEM (impeccabile)
+   ============================================================ */
+
+/* Layer 1: GROSSA (overlay — visibile sia su scuro che su chiaro) */
+.grain-fine::before {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.55;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch' seed='2'/><feColorMatrix values='0 0 0 0 0.80 0 0 0 0 0.78 0 0 0 0 0.76 0 0 0 0.65 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 240px 240px;
+  will-change: opacity;
+}
+
+/* Layer 2: FINE (hard-light — texture intensa, visibilissima) */
+.grain-fine::after {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  z-index: 101;
+  pointer-events: none;
+  opacity: 0.30;
+  mix-blend-mode: hard-light;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.80' numOctaves='3' stitchTiles='stitch' seed='5'/><feColorMatrix values='0 0 0 0 0.90 0 0 0 0 0.88 0 0 0 0 0.86 0 0 0 0.50 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 180px 180px;
+  will-change: opacity;
+}
+
+/* Layer 3: PAPER FIBER (verticale subtle) */
+.fiber-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  pointer-events: none;
+  opacity: 0.18;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='800'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='0.9 0.05' numOctaves='2' seed='8'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.0 0'/></filter><rect width='100%25' height='100%25' filter='url(%23f)'/></svg>");
+  background-size: 400px 800px;
+}
+
+/* Layer 4: VIGNETTE — disabilitato (eccesso di ombra ai bordi) */
+.vignette-layer {
+  display: none;
+}
+
+/* Mobile: disabilita layer 3 e 4 per perf */
+@media (max-width: 768px) {
+  .fiber-layer, .vignette-layer { display: none; }
+}
+
+/* Safari fallback (no mix-blend-mode su fixed) */
+@supports not (mix-blend-mode: overlay) {
+  .grain-fine::before, .grain-fine::after {
+    mix-blend-mode: normal;
+    opacity: 0.18;
+  }
+}
+
+/* ============================================================
+   BACKGROUND SYSTEM (anti-flat con sub-mesh)
+   ============================================================ */
+
+.bg-ink {
+  background:
+    radial-gradient(80% 50% at 20% 10%, rgba(251,70,4,0.06) 0%, transparent 55%),
+    radial-gradient(60% 40% at 80% 80%, rgba(0,0,0,0.20) 0%, transparent 65%),
+    linear-gradient(180deg, #1c1c1c 0%, #161616 100%);
+  color: #ffffff;
+}
+
+.bg-ink-alt {
+  background:
+    radial-gradient(80% 50% at 80% 10%, rgba(251,70,4,0.05) 0%, transparent 60%),
+    linear-gradient(180deg, #1a1a1a 0%, #141414 100%);
+  color: #ffffff;
+}
+
+.bg-ink-2 {
+  background:
+    radial-gradient(100% 60% at 50% 0%, rgba(251,70,4,0.05) 0%, transparent 50%),
+    linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
+  color: #f9f9f9;
+}
+
+.bg-paper {
+  background:
+    /* Grain fine — alta frequenza, navy scurissimo */
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.45' numOctaves='3' stitchTiles='stitch' seed='16'/><feColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.10 0 0 0 0 0.14 0 0 0 0.18 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"),
+    /* Grain medio — frequenza media, fibre di carta */
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch' seed='13'/><feColorMatrix values='0 0 0 0 0.08 0 0 0 0 0.08 0 0 0 0 0.12 0 0 0 0.26 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"),
+    linear-gradient(180deg, #ffffff 0%, #fdfcfa 100%);
+  background-size: 180px 180px, 260px 260px, 100% 100%;
+  background-blend-mode: multiply, multiply, normal;
+  color: #1c1c1c;
+}
+
+.bg-grey {
+  background: linear-gradient(180deg, #f5f5f3 0%, #ececea 100%);
+  color: #1c1c1c;
+}
+
+/* Sfondo bianco */
+.bg-white-section {
+  background: #ffffff;
+  color: #1c1c1c;
+}
+
+/* ============================================================
+   TEXT GRADIENTS
+   ============================================================ */
+
+/* Silver-cromato per accenti su sfondo SCURO — palette CCM orange */
+.text-silver-gold {
+  background-image: linear-gradient(135deg,
+    #ffffff 0%,
+    #d9d4e1 20%,
+    #fb4604 55%,
+    #ff8a4a 78%,
+    #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* H1 line 1 su sfondo bianco: nero ink profondo */
+.text-brand-navy {
+  background-image: linear-gradient(180deg,
+    #3a3a3a 0%,
+    #1c1c1c 55%,
+    #0a0a0a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Accento corsivo su sfondo bianco/chiaro — orange */
+.text-brand-accent {
+  background-image: linear-gradient(135deg,
+    #fb4604 0%,
+    #e03a00 35%,
+    #ff6a2e 65%,
+    #c9370a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.text-silver-white {
+  background-image: linear-gradient(180deg,
+    #ffffff 0%,
+    #f0ebf6 25%,
+    #c8c2d4 60%,
+    #8a8594 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.text-silver-black {
+  background-image: linear-gradient(180deg,
+    #3a3a3a 0%,
+    #1c1c1c 50%,
+    #0a0a0a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.text-silver-purple {
+  background-image: linear-gradient(135deg,
+    #f0ebf6 0%,
+    #d9d4e1 30%,
+    #c084fc 60%,
+    #a855f7 85%,
+    #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.text-gold-pure  { color: #fb4604; }
+.text-gold-bright { color: #ff6a2e; }
+.text-purple-pure { color: #a855f7; }
+
+.font-accent  { font-family: var(--font-accent), serif; font-style: italic; }
+.font-display { font-family: var(--font-display), serif; }
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.btn-gold {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  background: #fb4604;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow:
+    0 0 40px 0 rgba(251,70,4,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.18);
+  transition:
+    transform 0.25s var(--ease-out-quint),
+    box-shadow 0.25s,
+    filter 0.25s;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn-gold:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+  box-shadow:
+    0 0 60px 0 rgba(251,70,4,0.50),
+    inset 0 1px 0 rgba(255,255,255,0.22);
+}
+.btn-gold:active {
+  transform: translateY(0);
+}
+.btn-gold::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.btn-gold:active::after {
+  opacity: 1;
+  transition: none;
+}
+.btn-gold--lg { padding: 1rem 1.9rem; font-size: 1rem; }
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  color: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px);
+  transition: all 0.25s var(--ease-out-quint);
+  cursor: pointer;
+}
+.btn-ghost:hover {
+  border-color: rgba(251,70,4,0.60);
+  color: #fb4604;
+  background: rgba(251,70,4,0.06);
+}
+
+.btn-ghost-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  color: rgba(251,70,4,0.85);
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(251,70,4,0.25);
+  transition: all 0.25s var(--ease-out-quint);
+  cursor: pointer;
+}
+.btn-ghost-light:hover {
+  border-color: rgba(251,70,4,0.55);
+  color: #fb4604;
+  background: rgba(251,70,4,0.08);
+}
+
+/* ============================================================
+   BUBBLES (label pill)
+   ============================================================ */
+
+/* Bubble brand: orange — CCM palette */
+.bubble-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, #fb4604 0%, #ff6a2e 100%);
+  color: #ffffff;
+  border-radius: 9999px;
+  padding: 0.35rem 0.875rem;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 8px 24px -10px rgba(251,70,4,0.60);
+}
+
+.bubble-silver {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, #ffffff 0%, #d9d4e1 50%, #8a8594 100%);
+  color: #0a0a0a;
+  border-radius: 9999px;
+  padding: 0.35rem 0.875rem;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  box-shadow: 0 8px 24px -10px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.7);
+}
+
+.bubble-ink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #1c1c1c;
+  color: #f9f9f9;
+  border-radius: 9999px;
+  padding: 0.35rem 0.875rem;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  border: 1px solid rgba(249,249,249,0.14);
+}
+
+.bubble-purple {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%);
+  color: #ffffff;
+  border-radius: 9999px;
+  padding: 0.35rem 0.875rem;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  box-shadow: 0 8px 24px -10px rgba(168,85,247,0.55), inset 0 1px 0 rgba(255,255,255,0.25);
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+
+.card-dark {
+  position: relative;
+  border: 1px solid rgba(249,249,249,0.14);
+  background:
+    radial-gradient(120% 80% at 0% 0%, rgba(251,70,4,0.09) 0%, transparent 55%),
+    linear-gradient(180deg, #1a1a1a 0%, #121212 100%);
+  border-radius: 22px;
+  padding: 2rem 1.85rem;
+  box-shadow: 0 40px 80px -40px rgba(0,0,0,0.9);
+  transition:
+    border-color 0.4s,
+    transform 0.4s var(--ease-out-quint),
+    box-shadow 0.4s var(--ease-out-quint);
+  will-change: transform;
+}
+.card-dark:hover {
+  border-color: rgba(251,70,4,0.35);
+  transform: translateY(-4px);
+  box-shadow:
+    0 50px 100px -40px rgba(0,0,0,0.95),
+    0 0 0 1px rgba(251,70,4,0.20);
+}
+
+/* Card bordeaux scuro — "senza workflow" / "non lavoriamo con te" */
+.card-dark-red {
+  position: relative;
+  border: 1.5px solid rgba(220,47,55,0.42);
+  background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.35' numOctaves='3' stitchTiles='stitch' seed='3'/><feColorMatrix values='0 0 0 0 0.90 0 0 0 0 0.88 0 0 0 0 0.86 0 0 0 0.28 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"),
+    radial-gradient(120% 80% at 0% 0%, rgba(220,47,55,0.22) 0%, transparent 55%),
+    linear-gradient(155deg, #380c0e 0%, #260808 55%, #180404 100%);
+  background-size: 200px 200px, 100% 100%, 100% 100%;
+  background-blend-mode: screen, normal, normal;
+  border-radius: 22px;
+  padding: 2rem 1.85rem;
+  color: #ffffff;
+  box-shadow:
+    0 1px 0 rgba(220,47,55,0.22) inset,
+    0 -1px 0 rgba(0,0,0,0.52) inset,
+    0 0 28px rgba(200,30,30,0.12) inset,        /* inner red glow */
+    0 12px 44px -8px rgba(180,20,20,0.55);      /* strong drop shadow */
+  transition:
+    border-color 0.4s,
+    transform 0.5s cubic-bezier(0.22,1,0.36,1),
+    box-shadow 0.4s;
+  will-change: transform;
+}
+.card-dark-red:hover {
+  border-color: rgba(220,47,55,0.62);
+  transform: translateY(-5px);
+  box-shadow:
+    0 1px 0 rgba(220,47,55,0.28) inset,
+    0 -1px 0 rgba(0,0,0,0.52) inset,
+    0 0 38px rgba(200,30,30,0.16) inset,
+    0 20px 52px -10px rgba(180,20,20,0.65);
+}
+
+.card-paper {
+  position: relative;
+  border: 1px solid rgba(19,19,19,0.12);
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 2rem 1.85rem;
+  box-shadow: 0 40px 70px -32px rgba(19,19,19,0.22);
+  transition:
+    transform 0.4s var(--ease-out-quint),
+    box-shadow 0.4s var(--ease-out-quint),
+    border-color 0.4s;
+  will-change: transform;
+  color: #1c1c1c;
+}
+.card-paper:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 50px 90px -32px rgba(19,19,19,0.3);
+}
+
+/* Card gold — silver chiaro con accento orange */
+.card-gold {
+  position: relative;
+  border-radius: 22px;
+  padding: 2rem 1.85rem;
+  background:
+    radial-gradient(120% 80% at 0% 0%, rgba(255,255,255,0.60) 0%, transparent 52%),
+    linear-gradient(135deg, #ffffff 0%, #f4f1f7 40%, #ffd8c0 75%, #ffb284 100%);
+  border: 1px solid rgba(255,255,255,0.85);
+  color: #1c1c1c;
+  box-shadow:
+    0 40px 80px -32px rgba(251,70,4,0.25),
+    0 10px 30px -10px rgba(19,19,19,0.18),
+    0 2px 0 rgba(255,255,255,0.95) inset,
+    0 -2px 0 rgba(201,55,10,0.08) inset;
+  transition:
+    transform 0.5s var(--ease-out-quint),
+    box-shadow 0.5s var(--ease-out-quint);
+  will-change: transform;
+}
+.card-gold:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 55px 100px -32px rgba(251,70,4,0.40),
+    0 14px 34px -12px rgba(19,19,19,0.25),
+    0 2px 0 rgba(255,255,255,0.98) inset,
+    0 -2px 0 rgba(201,55,10,0.10) inset;
+}
+
+/* Card silver-orange — ricetta CCM: silver chiaro → arancio, testo scuro */
+.card-silver-gold {
+  position: relative;
+  border-radius: 22px;
+  padding: 2rem 1.85rem;
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #f6f3f8 22%,
+      #ece7f0 45%,
+      #f2d9c8 70%,
+      #ffc7a3 88%,
+      #ffb284 100%
+    );
+  border: 1px solid rgba(255,255,255,0.9);
+  box-shadow:
+    0 30px 70px -30px rgba(251,70,4,0.3),
+    0 10px 30px -10px rgba(19,19,19,0.22),
+    inset 0 1px 0 rgba(255,255,255,0.95);
+  color: #0a0a0a;
+  transition:
+    transform 0.5s cubic-bezier(0.22,1,0.36,1),
+    box-shadow 0.5s cubic-bezier(0.22,1,0.36,1);
+  will-change: transform;
+}
+.card-silver-gold:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 45px 90px -35px rgba(251,70,4,0.5),
+    0 14px 34px -12px rgba(19,19,19,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.95);
+}
+.card-silver-gold h3,
+.card-silver-gold h4 {
+  color: #0a0a0a;
+  font-weight: 800;
+}
+.card-silver-gold p,
+.card-silver-gold li,
+.card-silver-gold span:not(.bubble-ink):not(.bubble-orange) {
+  color: #111111;
+  font-weight: 500;
+}
+
+/* ============================================================
+   CARD SILVER-PURPLE — argento mischiato a viola, ricolma di grana
+   Per le card "diagnosi del problema" (sezione DiagnosiCRO)
+   ============================================================ */
+
+.card-silver-purple {
+  position: relative;
+  isolation: isolate;
+  border-radius: 22px;
+  padding: 1.5rem 1.35rem;
+  background:
+    /* grana fine sopra il gradiente — seed diverso per varietà */
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.35' numOctaves='3' stitchTiles='stitch' seed='12'/><feColorMatrix values='0 0 0 0 0.90 0 0 0 0 0.88 0 0 0 0 0.86 0 0 0 0.28 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"),
+    radial-gradient(90% 60% at 8% 10%, rgba(255,255,255,0.18) 0%, transparent 48%),
+    linear-gradient(150deg,
+      #d4d0e4 0%,
+      #b090d8 16%,
+      #8848e0 34%,
+      #5820a0 54%,
+      #3a1278 76%,
+      #1e0850 100%);
+  background-size: 180px 180px, 100% 100%, 100% 100%;
+  background-blend-mode: screen, normal, normal;
+  /* Bordo bianco definito — leggermente meno spesso per eleganza */
+  border: 1.5px solid rgba(255,255,255,0.70);
+  color: #ffffff;
+  box-shadow:
+    /* outer ring sottile */
+    0 0 0 1px rgba(200,176,232,0.30),
+    /* highlight top per volume */
+    0 2px 0 rgba(255,255,255,0.50) inset,
+    /* shadow bottom per profondità */
+    0 -2px 0 rgba(0,0,0,0.38) inset,
+    /* glow viola medio */
+    0 0 32px -6px rgba(126,72,184,0.45),
+    /* drop shadow viola ricco */
+    0 24px 50px -16px rgba(88,32,160,0.65);
+  transition:
+    transform 0.4s var(--ease-out-quint),
+    box-shadow 0.4s var(--ease-out-quint),
+    border-color 0.4s;
+  will-change: transform;
+}
+.card-silver-purple:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,255,255,0.85);
+  box-shadow:
+    0 0 0 1px rgba(200,176,232,0.35),
+    0 2px 0 rgba(255,255,255,0.55) inset,
+    0 -2px 0 rgba(0,0,0,0.38) inset,
+    0 0 40px -6px rgba(126,72,184,0.55),
+    0 36px 64px -16px rgba(88,32,160,0.75);
+}
+/* Testo: massima leggibilità */
+.card-silver-purple h3,
+.card-silver-purple h4 {
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.50);
+  font-weight: 700;
+}
+.card-silver-purple p {
+  color: #ffffff;
+  opacity: 0.96;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.35);
+  font-weight: 400;
+}
+.card-silver-purple span:not(.bubble-ink):not(.bubble-gold):not(.bubble-silver) {
+  color: #ffffff;
+}
+
+/* ============================================================
+   CARD BRAND PORTFOLIO — gradient blu navy + crema-oro + argento
+   Per le card "lavori / portfolio" (sezione Portfolio)
+   ============================================================ */
+
+.card-brand-portfolio {
+  position: relative;
+  isolation: isolate;
+  border-radius: 22px;
+  padding: 1.65rem 1.5rem;
+  background:
+    /* grana fine sopra — alpha boosted, overlay blend */
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.35' numOctaves='3' stitchTiles='stitch' seed='9'/><feColorMatrix values='0 0 0 0 0.90 0 0 0 0 0.88 0 0 0 0 0.86 0 0 0 0.28 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"),
+    radial-gradient(75% 55% at 6% 8%, rgba(255,255,255,0.30) 0%, transparent 48%),
+    linear-gradient(145deg,
+      #d4d0e4 0%,
+      #9090d0 18%,
+      #4878f8 40%,
+      #1840b0 65%,
+      #041228 100%);
+  background-size: 180px 180px, 100% 100%, 100% 100%;
+  background-blend-mode: screen, normal, normal;
+  border: 1px solid rgba(251,70,4,0.45);
+  color: #ffffff;
+  box-shadow:
+    0 2px 0 rgba(255,255,255,0.52) inset,
+    0 -2px 0 rgba(0,0,30,0.45) inset,
+    0 45px 80px -24px rgba(0,0,0,0.65);
+  transition:
+    transform 0.4s var(--ease-out-quint),
+    box-shadow 0.4s var(--ease-out-quint),
+    border-color 0.4s;
+  will-change: transform;
+}
+.card-brand-portfolio:hover {
+  transform: translateY(-4px);
+  border-color: rgba(251,70,4,0.85);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.60) inset,
+    0 -1px 0 rgba(0,0,30,0.38) inset,
+    0 28px 55px -14px rgba(0,0,0,0.55);
+}
+
+/* Variante "in arrivo" — card placeholder dark, sobria, niente gradiente brand */
+.card-brand-portfolio-soon {
+  position: relative;
+  border-radius: 22px;
+  padding: 1.65rem 1.5rem;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.015) 100%);
+  border: 1px dashed rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.05) inset,
+    0 8px 22px -10px rgba(0,0,0,0.45);
+  transition:
+    border-color 0.4s,
+    background 0.4s;
+}
+.card-brand-portfolio-soon:hover {
+  border-color: rgba(251,70,4,0.32);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+}
+
+/* ============================================================
+   CARD CPB — gestione obiezioni (Claim · Proof · Benefit)
+   Blocchi vetrosi nettamente bordati, sempre visibili sul bg-grey.
+   ============================================================ */
+
+/* CLAIM e BENEFIT — bianco solido con grain chiarissimo */
+.card-cpb {
+  position: relative;
+  border-radius: 22px;
+  padding: 1.65rem 1.5rem;
+  background: #ffffff;
+  border: 1px solid rgba(19,19,19,0.12);
+  color: #1c1c1c;
+  box-shadow:
+    0 2px 0 rgba(255,255,255,0.98) inset,
+    0 40px 70px -32px rgba(19,19,19,0.22);
+  transition:
+    transform 0.4s var(--ease-out-quint),
+    box-shadow 0.4s var(--ease-out-quint),
+    border-color 0.4s;
+  will-change: transform;
+}
+.card-cpb:hover {
+  transform: translateY(-3px);
+  border-color: rgba(251,70,4,0.30);
+  box-shadow:
+    0 2px 0 rgba(255,255,255,0.98) inset,
+    0 50px 90px -32px rgba(19,19,19,0.30);
+}
+
+/* PROOF (highlighted) — gradiente orange: silver → arancio */
+.card-cpb-highlight {
+  position: relative;
+  border-radius: 22px;
+  padding: 1.65rem 1.5rem;
+  background:
+    radial-gradient(110% 75% at 0% 0%, rgba(255,255,255,0.60) 0%, transparent 52%),
+    linear-gradient(150deg,
+      #ffffff 0%,
+      #fff3ee 22%,
+      #ffddc4 45%,
+      #ffc09e 68%,
+      #ffb284 88%,
+      #fb9a60 100%);
+  border: 1.5px solid rgba(251,70,4,0.35);
+  color: #0a0a0a;
+  box-shadow:
+    0 2px 0 rgba(255,255,255,0.98) inset,
+    0 -2px 0 rgba(201,55,10,0.12) inset,
+    0 0 0 1px rgba(251,70,4,0.08),
+    0 22px 44px -18px rgba(251,70,4,0.30);
+  transition:
+    transform 0.4s var(--ease-out-quint),
+    box-shadow 0.4s var(--ease-out-quint),
+    border-color 0.4s;
+  will-change: transform;
+}
+.card-cpb-highlight:hover {
+  transform: translateY(-3px);
+  border-color: rgba(251,70,4,0.55);
+  box-shadow:
+    0 2px 0 rgba(255,255,255,0.98) inset,
+    0 -2px 0 rgba(201,55,10,0.12) inset,
+    0 0 0 1px rgba(251,70,4,0.14),
+    0 32px 60px -18px rgba(251,70,4,0.45);
+}
+
+/* ============================================================
+   STAT CARD SILVER — ricetta CCM esatta: bianco/silver su sfondo scuro
+   ============================================================ */
+
+.stat-card-silver {
+  position: relative;
+  border-radius: 22px;
+  padding: 2.75rem 2rem;
+  text-align: center;
+  background: radial-gradient(120% 100% at 0% 0%, #ffffff 0%, #f4f1f7 45%, #d9d4e1 100%);
+  border: 1px solid rgba(255,255,255,0.85);
+  box-shadow:
+    0 30px 70px -30px rgba(19,19,19,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.95);
+  color: #1c1c1c;
+  transition:
+    transform 0.5s cubic-bezier(0.22,1,0.36,1),
+    box-shadow 0.5s cubic-bezier(0.22,1,0.36,1);
+  will-change: transform;
+}
+.stat-card-silver:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 45px 90px -32px rgba(19,19,19,0.38),
+    inset 0 1px 0 rgba(255,255,255,0.95);
+}
+
+/* ============================================================
+   LIQUID GLASS BLOCKS (navbar floating)
+   ============================================================ */
+
+@layer components {
+.glass-block {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.85rem;
+  border-radius: 16px;
+  background:
+    /* fine grain over the glass */
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.7' numOctaves='3' stitchTiles='stitch' seed='6'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"),
+    linear-gradient(155deg, rgba(255,255,255,0.78) 0%, rgba(255,255,255,0.55) 45%, rgba(251,70,4,0.12) 100%);
+  background-size: 140px 140px, 100% 100%;
+  background-blend-mode: overlay, normal;
+  border: 1px solid rgba(255,255,255,0.85);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.95) inset,
+    0 -1px 0 rgba(0,0,0,0.06) inset,
+    0 8px 22px -10px rgba(0,0,0,0.18),
+    0 0 0 1px rgba(0,0,0,0.06);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+}
+
+/* ============================================================
+   SILVER CHIPS (floating)
+   ============================================================ */
+
+/* Silver-chip — ricetta CCM esatta: pill CHIARO/silver con testo navy scuro.
+   Contrasto massimo su sfondo dark. */
+.silver-chip {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.7rem 1rem;
+  border-radius: 14px;
+  background: radial-gradient(130% 110% at 0% 0%,
+    #ffffff 0%,
+    #f4f1f7 45%,
+    #d9d4e1 100%);
+  border: 1px solid rgba(255,255,255,0.9);
+  box-shadow:
+    0 24px 50px -22px rgba(19,19,19,0.30),
+    inset 0 1px 0 rgba(255,255,255,0.95);
+  color: #1c1c1c;
+  text-shadow: none;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  z-index: 5;
+  pointer-events: none;
+  transition: transform 0.5s cubic-bezier(0.22,1,0.36,1);
+  white-space: nowrap;
+}
+.silver-chip strong { font-weight: 800; color: #1c1c1c; }
+.silver-chip .dot {
+  width: 7px; height: 7px;
+  border-radius: 9999px;
+  background: #fb4604;                          /* orange dot */
+  box-shadow: 0 0 10px rgba(251,70,4,0.85);     /* orange glow */
+}
+
+@keyframes chip-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+.silver-chip.float-a { animation: chip-float 5.5s ease-in-out infinite; }
+.silver-chip.float-b { animation: chip-float 6.5s ease-in-out infinite 0.8s; }
+.silver-chip.float-c { animation: chip-float 7s ease-in-out infinite 1.5s; }
+.silver-chip.float-d { animation: chip-float 6s ease-in-out infinite 2.2s; }
+
+/* hidden on small screens */
+@media (max-width: 1024px) {
+  .silver-chip { display: none; }
+}
+
+/* ============================================================
+   PRE-HEADLINE & HIGHLIGHT BLOCK
+   ============================================================ */
+
+.pre-headline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #fb4604;
+}
+.pre-headline::before, .pre-headline::after {
+  content: "";
+  width: 28px; height: 1px;
+  background: linear-gradient(90deg, transparent, #fb4604, transparent);
+}
+
+/* Pre-headline su sfondo bianco: orange */
+.pre-headline-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #fb4604;
+}
+.pre-headline-dark::before, .pre-headline-dark::after {
+  content: "";
+  width: 28px; height: 1px;
+  background: linear-gradient(90deg, transparent, #fb4604, transparent);
+}
+
+/* Highlight block — orange: testo bianco su sfondo arancio */
+.hl-block {
+  display: inline;
+  padding: 0.18em 0.34em;
+  color: #ffffff;
+  background: #fb4604;
+  box-shadow:
+    0 8px 30px -10px rgba(251,70,4,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.20);
+  border-radius: 3px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  font-weight: 600;
+}
+
+/* ============================================================
+   CORNER BRACKETS (CTA finale + sez Garanzia mini)
+   ============================================================ */
+
+/* Corner brackets — abilitati (come CCM, con navy/cream brand) */
+.corner-bracket {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+  display: none;  /* visibili solo md+ */
+}
+@media (min-width: 768px) {
+  .corner-bracket { display: block; }
+}
+.corner-bracket::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(251,70,4,0.55);
+  border-radius: 5px;
+  filter: drop-shadow(0 0 8px rgba(251,70,4,0.40));
+}
+.corner-tl { top: 18px; left: 18px; }
+.corner-tl::before {
+  border-right: 0; border-bottom: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.corner-tr { top: 18px; right: 18px; }
+.corner-tr::before {
+  border-left: 0; border-bottom: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.corner-bl { bottom: 18px; left: 18px; }
+.corner-bl::before {
+  border-right: 0; border-top: 0;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.corner-br { bottom: 18px; right: 18px; }
+.corner-br::before {
+  border-left: 0; border-top: 0;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Mini corner — disabilitato */
+.corner-mini {
+  display: none !important;
+}
+
+/* ============================================================
+   STEP NUMBER (timeline)
+   ============================================================ */
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem; height: 2.75rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #fb4604 0%, #ff6a2e 55%, #c9370a 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.125rem;
+  font-family: var(--font-display), serif;
+  letter-spacing: 0;
+  box-shadow:
+    0 0 32px rgba(251,70,4,0.55),
+    0 0 12px rgba(255,106,46,0.30),
+    inset 0 1px 0 rgba(255,255,255,0.45),
+    inset 0 -1px 0 rgba(100,20,0,0.35);
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   MARQUEE
+   ============================================================ */
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+.marquee-fast {
+  animation: marquee 22s linear infinite;
+}
+
+/* ============================================================
+   DIVIDERS
+   ============================================================ */
+
+/* Hairline minimale (per inside-section o sub-divider) */
+.divider-hairline {
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(251,70,4,0.18) 25%,
+    rgba(251,70,4,0.30) 50%,
+    rgba(251,70,4,0.18) 75%,
+    transparent 100%);
+}
+
+.divider-hairline-silver {
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255,255,255,0.12) 50%,
+    transparent 100%);
+}
+
+/* Signature divider — argento → crema-sage → navy → argento : la firma del brand
+   Spessa, ricolma di grana, sempre visibile su sfondo bianco o scuro */
+.divider-silver-navy {
+  position: relative;
+  width: 100%;
+  height: 14px;
+  border: 0;
+  background:
+    /* grana fine sopra il gradiente */
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='14'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.6' numOctaves='3' stitchTiles='stitch' seed='4'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"),
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(217,212,225,0.0) 4%,
+      #d9d4e1 14%,
+      #ffffff 26%,
+      #ffd0b0 42%,
+      #fb4604 50%,
+      #c9370a 55%,
+      #fb4604 60%,
+      #ffd0b0 72%,
+      #ffffff 84%,
+      #d9d4e1 92%,
+      transparent 100%
+    );
+  background-blend-mode: overlay, normal;
+  background-size: 160px 14px, 100% 100%;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.55),
+    inset 0 -1px 0 rgba(0,0,30,0.35),
+    0 0 24px rgba(251,70,4,0.22),
+    0 0 48px rgba(251,70,4,0.08);
+}
+.divider-silver-navy::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 50%;
+  height: 1px;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.85) 50%, transparent);
+  pointer-events: none;
+}
+.divider-silver-navy::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  bottom: -10px;
+  height: 10px;
+  background: linear-gradient(180deg, rgba(251,70,4,0.08) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Glow seam (sezione transition ink↔paper) */
+.glow-seam {
+  position: relative;
+  height: 4rem;
+  margin-block: -2rem;
+  pointer-events: none;
+  z-index: 10;
+  overflow: hidden;
+}
+.glow-seam::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #fb4604 30%, #c9370a 70%, transparent);
+  opacity: 0.35;
+}
+.glow-seam::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 5rem;
+  background: radial-gradient(ellipse at center, rgba(251,70,4,0.12) 0%, rgba(201,55,10,0.06) 50%, transparent 80%);
+  filter: blur(20px);
+}
+
+/* Glass border */
+.section-glass-top {
+  border-top: 1px solid rgba(255,255,255,0.6);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.8),
+    0 -20px 40px -20px rgba(0,0,0,0.15);
+}
+
+/* ============================================================
+   GLOW AMBIENT (radial bg)
+   ============================================================ */
+
+.glow-gold-amb {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(251,70,4,0.22) 0%, rgba(201,55,10,0.08) 40%, transparent 70%);
+  filter: blur(60px);
+  border-radius: 50%;
+}
+
+.glow-purple-amb {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(168,85,247,0.20) 0%, rgba(168,85,247,0.08) 40%, transparent 70%);
+  filter: blur(50px);
+  border-radius: 50%;
+}
+
+/* ============================================================
+   SECTIONS (spacing)
+   ============================================================ */
+
+.section {
+  padding-block: clamp(3.25rem, 6.5vw, 5rem);
+  position: relative;
+}
+.section-tight {
+  padding-block: clamp(2.5rem, 4vw, 3.5rem);
+  position: relative;
+}
+.section-airy {
+  padding-block: clamp(4rem, 8vw, 6.5rem);
+  position: relative;
+}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans), sans-serif;
+  font-feature-settings: "ss01", "cv11", "kern", "liga";
+  text-wrap: balance;
+}
+h1 {
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+h2 {
+  font-size: clamp(1.65rem, 3.8vw, 2.9rem);
+  line-height: 1.10;
+  letter-spacing: -0.022em;
+  font-weight: 700;
+}
+h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+  line-height: 1.20;
+  letter-spacing: -0.018em;
+  font-weight: 600;
+}
+h4 {
+  font-size: clamp(1rem, 1.75vw, 1.3rem);
+  line-height: 1.30;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+/* ============================================================
+   FAQ ACCORDION
+   ============================================================ */
+
+.faq-item {
+  border-bottom: 1px solid rgba(19,19,19,0.08);
+}
+.faq-item:first-child {
+  border-top: 1px solid rgba(19,19,19,0.08);
+}
+.faq-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 1.25rem 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #0a0a0a;
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+.faq-trigger:hover { color: #fb4604; }
+.faq-trigger[data-state="open"] .faq-icon { transform: rotate(180deg); }
+.faq-icon {
+  transition: transform 0.35s var(--ease-out-quint);
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+.faq-content {
+  overflow: hidden;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  font-weight: 300;
+  color: rgba(10,10,10,0.75);
+  padding-bottom: 1.5rem;
+}
+
+/* ============================================================
+   FORM
+   ============================================================ */
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-field label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.65);
+}
+.form-input {
+  padding: 0.75rem 0.875rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  color: #f9f9f9;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: all 0.25s var(--ease-out-quint);
+}
+.form-input::placeholder { color: rgba(255,255,255,0.30); }
+.form-input:hover { border-color: rgba(255,255,255,0.25); }
+.form-input:focus {
+  outline: none;
+  border-color: #fb4604;
+  background: rgba(251,70,4,0.04);
+  box-shadow: 0 0 0 3px rgba(251,70,4,0.18);
+}
+.form-textarea { min-height: 120px; resize: vertical; }
+.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'><path d='M1 1l5 5 5-5' stroke='%23fb4604' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+  position: relative;
+  z-index: 50;
+}
+.form-select option {
+  background: rgba(10, 10, 10, 0.95);
+  color: #f9f9f9;
+  padding: 8px;
+}
+
+/* ============================================================
+   CONIC SPIN BORDER (card hover decoration)
+   ============================================================ */
+
+@property --conic-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.card-paper.with-conic-glow,
+.card-dark.with-conic-glow {
+  position: relative;
+}
+.card-paper.with-conic-glow:hover::before,
+.card-dark.with-conic-glow:hover::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: conic-gradient(from var(--conic-angle), transparent, #fb4604, #ff6a2e, transparent 30%);
+  animation: conic-spin 2.5s linear infinite;
+  z-index: -1;
+  filter: blur(2px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+@keyframes conic-spin {
+  to { --conic-angle: 360deg; }
+}
+
+/* ============================================================
+   UTILITY
+   ============================================================ */
+.container-tight  { max-width: 48rem; margin-inline: auto; padding-inline: 1.5rem; }
+.container-default { max-width: 64rem; margin-inline: auto; padding-inline: 1.5rem; }
+.container-wide    { max-width: 80rem; margin-inline: auto; padding-inline: 1.5rem; }
+.container-full    { max-width: 90rem; margin-inline: auto; padding-inline: 1.5rem; }
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.15s !important;
+  }
+  .grain-fine::before, .grain-fine::after {
+    opacity: 0.25 !important;
+  }
+  .silver-chip { animation: none !important; }
+}
+
+/* Safari fallback (no mix-blend-mode overlay su fixed) */
+@supports not (mix-blend-mode: overlay) {
+  .grain-fine::before, .grain-fine::after {
+    mix-blend-mode: normal;
+    opacity: 0.12;
+  }
+}
+
+/* ============================================================
+   MOBILE OVERRIDES — max-width 767px (sotto il breakpoint md)
+   REGOLA: questi stili NON toccano md:/lg:/xl: — solo mobile
+   ============================================================ */
+
+@media (max-width: 767px) {
+
+  /* Container: padding laterale più stretto su 375px */
+  .container-tight,
+  .container-default,
+  .container-wide,
+  .container-full {
+    padding-inline: 1.25rem;
+  }
+
+  /* ── CARD PADDING ── tutte le card riducono il padding interno
+     su desktop: 2.5rem 2.25rem (40px / 36px) → mobile: 1.4rem 1.2rem (22px / 19px) */
+  .card-dark,
+  .card-paper,
+  .card-gold,
+  .card-silver-gold {
+    padding: 1.4rem 1.2rem;
+    border-radius: 16px;
+  }
+
+  .card-silver-purple {
+    padding: 1.25rem 1.1rem;
+    border-radius: 14px;
+  }
+
+  .card-brand-portfolio,
+  .card-brand-portfolio-soon {
+    padding: 1.4rem 1.2rem;
+    border-radius: 16px;
+  }
+
+  .card-cpb,
+  .card-cpb-highlight {
+    padding: 1.4rem 1.2rem;
+    border-radius: 16px;
+  }
+
+  .stat-card-silver {
+    padding: 1.6rem 1.4rem;
+    border-radius: 16px;
+  }
+
+  /* ── STEP NUMBER ── leggermente più compatto su mobile */
+  .step-num {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  /* ── FAQ ── trigger padding e gap icon ridotti */
+  .faq-trigger {
+    padding: 1.1rem 0;
+    font-size: 1rem;
+  }
+  .faq-icon {
+    margin-left: 0.75rem;
+  }
+
+  /* ── BUBBLES ── testo bubble leggermente più piccolo */
+  .bubble-gold,
+  .bubble-silver,
+  .bubble-ink,
+  .bubble-purple {
+    font-size: 0.8125rem;
+    padding: 0.35rem 0.85rem;
+  }
+
+  /* ── GLOW AMB ── ridimensiona i glow su mobile */
+  .glow-gold-amb,
+  .glow-purple-amb {
+    opacity: 0.12 !important;
+  }
+
+  /* ── SEZIONI ── spacing verticale leggermente ridotto su mobile */
+  .section-airy {
+    padding-block: clamp(3.5rem, 8vw, 5rem);
+  }
+  .section {
+    padding-block: clamp(3rem, 6vw, 4.5rem);
+  }
+}

@@ -1,0 +1,59 @@
+<div style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+
+  <div class="text-small" style="margin-bottom: 40px;">
+    {{TESTO_PICCOLO}}
+  </div>
+
+  <!-- Nodi del diagramma: max 4 elementi connessi da frecce verticali -->
+  <div style="display: flex; flex-direction: column; gap: 0; width: 100%;">
+
+    <!-- Nodo 1 (evidenziato, accent) -->
+    <div style="
+      padding: 22px 32px;
+      background: rgba(139,0,0,0.18);
+      border: 2px solid {{ACCENT_1}};
+      border-radius: 12px;
+      font-family: 'Bold', sans-serif;
+      font-size: {{SIZE_MEDIUM}};
+      color: {{TEXT_PRIMARY}};
+    ">{{NODO_1}}</div>
+
+    <!-- Freccia 1→2 -->
+    <div style="padding: 6px 0 6px 48px; color: {{ACCENT_1}}; font-size: 36px; opacity: 0.7; line-height: 1;">↓</div>
+
+    <!-- Nodo 2 -->
+    <div style="
+      padding: 22px 32px;
+      background: rgba(255,255,255,0.04);
+      border: 2px solid rgba(192,192,192,0.3);
+      border-radius: 12px;
+      font-family: 'Bold', sans-serif;
+      font-size: {{SIZE_MEDIUM}};
+      color: {{TEXT_SECONDARY}};
+    ">{{NODO_2}}</div>
+
+    <!-- Freccia 2→3 -->
+    <div style="padding: 6px 0 6px 48px; color: {{ACCENT_1}}; font-size: 36px; opacity: 0.7; line-height: 1;">↓</div>
+
+    <!-- Nodo 3 -->
+    <div style="
+      padding: 22px 32px;
+      background: rgba(255,255,255,0.04);
+      border: 2px solid rgba(192,192,192,0.3);
+      border-radius: 12px;
+      font-family: 'Bold', sans-serif;
+      font-size: {{SIZE_MEDIUM}};
+      color: {{TEXT_SECONDARY}};
+    ">{{NODO_3}}</div>
+
+    <!-- Nodo 4 opzionale -->
+    {{NODO_4_BLOCK}}
+
+  </div>
+
+  <!-- Testo grande finale opzionale -->
+  <div class="text-hero" style="margin-top: 36px; font-size: {{SIZE_LARGE}};">
+    {{TESTO_GRANDE_HTML}}
+  </div>
+
+</div>

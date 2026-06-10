@@ -1,0 +1,90 @@
+2026-05-13 11:43:24,584  ============================================================
+2026-05-13 11:43:24,584  LINKEDIN REPLY CHECK  2026-05-13 11:43:24
+2026-05-13 11:43:24,584  Modalità: SUGGERIMENTI (read-only)
+2026-05-13 11:43:24,584  ============================================================
+2026-05-13 11:43:24,611  Lead monitorati (con messaggi inviati): 0
+2026-05-13 11:43:38,909    Conversazioni trovate: 2
+2026-05-13 11:43:41,182    Risposta da The LinkedIn Team: Ciao Digital,
+vorrei darti il benvenuto su LinkedIn. Lavoro ...
+2026-05-13 11:43:41,183  
+Risposte non lette trovate: 1
+2026-05-13 11:43:42,470  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 11:43:42,772  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 10:40:25,667  ============================================================
+2026-05-14 10:40:25,696  LINKEDIN REPLY CHECK  2026-05-14 10:40:25
+2026-05-14 10:40:25,696  Modalità: SUGGERIMENTI (read-only)
+2026-05-14 10:40:25,696  ============================================================
+2026-05-14 10:40:25,699  Lead monitorati (con messaggi inviati): 0
+2026-05-14 10:40:38,754    Conversazioni trovate: 0
+2026-05-14 10:40:38,754  
+Risposte non lette trovate: 0
+2026-05-14 10:40:41,729  COMPLETATO — 0 risposte generate
+2026-05-14 10:50:31,417  ============================================================
+2026-05-14 10:50:31,417  LINKEDIN REPLY CHECK  2026-05-14 10:50:31
+2026-05-14 10:50:31,417  Modalità: SUGGERIMENTI (read-only)
+2026-05-14 10:50:31,417  ============================================================
+2026-05-14 10:50:31,423  Lead monitorati (con messaggi inviati): 0
+2026-05-14 10:50:48,921    Conversazioni trovate: 0
+2026-05-14 10:50:48,921  
+Risposte non lette trovate: 0
+2026-05-14 10:51:01,378  COMPLETATO — 0 risposte generate
+2026-05-14 15:34:42,871  ============================================================
+2026-05-14 15:34:42,871  LINKEDIN REPLY CHECK  2026-05-14 15:34:42
+2026-05-14 15:34:42,872  Modalità: SUGGERIMENTI (read-only)
+2026-05-14 15:34:42,872  ============================================================
+2026-05-14 15:34:42,897  Lead monitorati (con messaggi inviati): 0
+2026-05-14 15:34:55,717    Errore apertura messaggi: Page.evaluate: Target page, context or browser has been closed
+2026-05-14 15:34:55,717  
+Risposte non lette trovate: 0
+2026-05-14 15:34:58,401  COMPLETATO — 0 risposte generate
+2026-05-15 11:05:08,178  ============================================================
+2026-05-15 11:05:08,179  LINKEDIN REPLY CHECK  2026-05-15 11:05:08
+2026-05-15 11:05:08,179  Modalità: SUGGERIMENTI (read-only)
+2026-05-15 11:05:08,179  ============================================================
+2026-05-15 11:05:08,202  Lead monitorati (con messaggi inviati): 0
+2026-05-15 11:05:40,518    Errore apertura messaggi: Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to "https://www.linkedin.com/messaging/", waiting until "domcontentloaded"
+
+2026-05-15 11:05:40,518  
+Risposte non lette trovate: 0
+2026-05-15 11:05:43,223  COMPLETATO — 0 risposte generate
+2026-05-15 21:35:47,114  ============================================================
+2026-05-15 21:35:47,115  LINKEDIN REPLY CHECK  2026-05-15 21:35:47
+2026-05-15 21:35:47,115  Modalità: SUGGERIMENTI (read-only)
+2026-05-15 21:35:47,115  ============================================================
+2026-05-15 21:35:47,124  Lead monitorati (con messaggi inviati): 0
+2026-05-15 21:36:11,593    Conversazioni trovate: 0
+2026-05-15 21:36:11,593  
+Risposte non lette trovate: 0
+2026-05-15 21:36:17,795  COMPLETATO — 0 risposte generate
+2026-05-16 15:04:36,652  ============================================================
+2026-05-16 15:04:36,653  LINKEDIN REPLY CHECK  2026-05-16 15:04:36
+2026-05-16 15:04:36,653  Modalità: SUGGERIMENTI (read-only)
+2026-05-16 15:04:36,653  ============================================================
+2026-05-16 15:04:36,656  Lead monitorati (con messaggi inviati): 0
+2026-05-16 15:04:53,083    Conversazioni trovate: 0
+2026-05-16 15:04:53,083  
+Risposte non lette trovate: 0
+2026-05-16 15:04:55,839  COMPLETATO — 0 risposte generate
+2026-05-18 11:11:05,868  ============================================================
+2026-05-18 11:11:05,868  LINKEDIN REPLY CHECK  2026-05-18 11:11:05
+2026-05-18 11:11:05,868  Modalità: SUGGERIMENTI (read-only)
+2026-05-18 11:11:05,868  ============================================================
+2026-05-18 11:11:05,884  Lead monitorati (con messaggi inviati): 0
+2026-05-18 11:11:21,387    Conversazioni trovate: 0
+2026-05-18 11:11:21,388  
+Risposte non lette trovate: 0
+2026-05-18 11:11:24,211  COMPLETATO — 0 risposte generate
+2026-06-03 18:29:23,981  ============================================================
+2026-06-03 18:29:23,981  LINKEDIN REPLY CHECK  2026-06-03 18:29:23
+2026-06-03 18:29:23,982  Modalità: SUGGERIMENTI (read-only)
+2026-06-03 18:29:23,982  ============================================================
+2026-06-03 18:29:23,987  Lead monitorati (con messaggi inviati): 0
+2026-06-03 18:29:46,944    Errore apertura messaggi: Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to "https://www.linkedin.com/messaging/", waiting until "domcontentloaded"
+
+2026-06-03 18:29:46,944  
+Risposte non lette trovate: 0
+2026-06-03 18:29:49,721  COMPLETATO — 0 risposte generate

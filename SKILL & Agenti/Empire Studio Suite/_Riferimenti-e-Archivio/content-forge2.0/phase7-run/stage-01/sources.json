@@ -1,0 +1,24 @@
+{
+  "total_sources": 1,
+  "total_words": 3041,
+  "total_words_after_cleaning": 3046,
+  "input_mode": "single",
+  "input_root": "phase7-run/inputs/source.md",
+  "sources": [
+    {
+      "id": "src-001",
+      "path": "phase7-run/inputs/source.md",
+      "relative_path": "manuale-4-obiezioni.md",
+      "size_bytes": 18967,
+      "word_count_original": 3041,
+      "word_count_cleaned": 3046,
+      "language_detected": "it",
+      "type_detected": "article",
+      "range_in_cleaned": [
+        0,
+        18916
+      ]
+    }
+  ],
+  "skipped_files": []
+}

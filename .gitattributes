@@ -1,0 +1,3 @@
+# Nessuna conversione di fine-riga: i file viaggiano byte-per-byte
+# (evita churn CRLF/LF tra il PC di Max e quello di Gael)
+* -text

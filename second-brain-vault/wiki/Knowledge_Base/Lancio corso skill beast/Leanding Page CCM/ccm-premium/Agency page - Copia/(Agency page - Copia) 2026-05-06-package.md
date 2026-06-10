@@ -1,0 +1,37 @@
+# package
+            
+> Path: [[Map - Lancio_Corso_Skill_Beast|Lancio corso skill beast > Leanding Page CCM > ccm-premium > Agency page - Copia]]
+
+## Content
+
+{
+  "name": "digital-empire-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && npx netlify deploy --dir=dist --prod"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^11.0.8",
+    "lucide-react": "^0.344.0",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6"
+  }
+}
+
+## Collegamenti Correlati
+- [[Map - Lancio_Corso_Skill_Beast|Lancio Corso Skill Beast Area]]

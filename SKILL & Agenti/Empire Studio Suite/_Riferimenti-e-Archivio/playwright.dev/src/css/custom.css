@@ -1,0 +1,157 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root[data-theme='dark'] {
+  --ifm-color-primary: #45ba4b;
+  --ifm-color-primary-dark: #3ea744;
+  --ifm-color-primary-darker: #3b9e40;
+  --ifm-color-primary-darkest: #308235;
+  --ifm-color-primary-light: #58c15d;
+  --ifm-color-primary-lighter: #61c466;
+  --ifm-color-primary-lightest: #7dcf81;
+  --ifm-code-font-size: 95%;
+}
+
+:root[data-theme='light'] {
+  --ifm-color-primary: #1a7e1f;
+  --ifm-color-primary-dark: #17711c;
+  --ifm-color-primary-darker: #166b1a;
+  --ifm-color-primary-darkest: #125816;
+  --ifm-color-primary-light: #1d8b22;
+  --ifm-color-primary-lighter: #1e9124;
+  --ifm-color-primary-lightest: #22a428;
+  --ifm-code-font-size: 95%;
+  --ifm-blockquote-color: initial;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.header-github-link:hover,
+.twitter-link:hover {
+  opacity: 0.6;
+}
+
+.header-github-link:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
+}
+
+html[data-theme='dark'] .header-github-link:before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
+}
+
+.header-discord-link:before {
+  content: '';
+  width: 24px;
+  height: 19px;
+  display: flex;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 71 55' fill='000000' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M60.105 4.898A58.55 58.55 0 0 0 45.653.415a.22.22 0 0 0-.233.11 40.784 40.784 0 0 0-1.8 3.697c-5.456-.817-10.886-.817-16.23 0-.485-1.164-1.201-2.587-1.828-3.697a.228.228 0 0 0-.233-.11 58.386 58.386 0 0 0-14.451 4.483.207.207 0 0 0-.095.082C1.578 18.73-.944 32.144.293 45.39a.244.244 0 0 0 .093.167c6.073 4.46 11.955 7.167 17.729 8.962a.23.23 0 0 0 .249-.082 42.08 42.08 0 0 0 3.627-5.9.225.225 0 0 0-.123-.312 38.772 38.772 0 0 1-5.539-2.64.228.228 0 0 1-.022-.378c.372-.279.744-.569 1.1-.862a.22.22 0 0 1 .23-.03c11.619 5.304 24.198 5.304 35.68 0a.219.219 0 0 1 .233.027c.356.293.728.586 1.103.865a.228.228 0 0 1-.02.378 36.384 36.384 0 0 1-5.54 2.637.227.227 0 0 0-.121.315 47.249 47.249 0 0 0 3.624 5.897.225.225 0 0 0 .249.084c5.801-1.794 11.684-4.502 17.757-8.961a.228.228 0 0 0 .092-.164c1.48-15.315-2.48-28.618-10.497-40.412a.18.18 0 0 0-.093-.084Zm-36.38 32.427c-3.497 0-6.38-3.211-6.38-7.156 0-3.944 2.827-7.156 6.38-7.156 3.583 0 6.438 3.24 6.382 7.156 0 3.945-2.827 7.156-6.381 7.156Zm23.593 0c-3.498 0-6.38-3.211-6.38-7.156 0-3.944 2.826-7.156 6.38-7.156 3.582 0 6.437 3.24 6.38 7.156 0 3.945-2.798 7.156-6.38 7.156Z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath d='M0 0h71v55H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
+    no-repeat;
+}
+
+html[data-theme='dark'] .header-discord-link:before {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 71 55' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M60.105 4.898A58.55 58.55 0 0 0 45.653.415a.22.22 0 0 0-.233.11 40.784 40.784 0 0 0-1.8 3.697c-5.456-.817-10.886-.817-16.23 0-.485-1.164-1.201-2.587-1.828-3.697a.228.228 0 0 0-.233-.11 58.386 58.386 0 0 0-14.451 4.483.207.207 0 0 0-.095.082C1.578 18.73-.944 32.144.293 45.39a.244.244 0 0 0 .093.167c6.073 4.46 11.955 7.167 17.729 8.962a.23.23 0 0 0 .249-.082 42.08 42.08 0 0 0 3.627-5.9.225.225 0 0 0-.123-.312 38.772 38.772 0 0 1-5.539-2.64.228.228 0 0 1-.022-.378c.372-.279.744-.569 1.1-.862a.22.22 0 0 1 .23-.03c11.619 5.304 24.198 5.304 35.68 0a.219.219 0 0 1 .233.027c.356.293.728.586 1.103.865a.228.228 0 0 1-.02.378 36.384 36.384 0 0 1-5.54 2.637.227.227 0 0 0-.121.315 47.249 47.249 0 0 0 3.624 5.897.225.225 0 0 0 .249.084c5.801-1.794 11.684-4.502 17.757-8.961a.228.228 0 0 0 .092-.164c1.48-15.315-2.48-28.618-10.497-40.412a.18.18 0 0 0-.093-.084Zm-36.38 32.427c-3.497 0-6.38-3.211-6.38-7.156 0-3.944 2.827-7.156 6.38-7.156 3.583 0 6.438 3.24 6.382 7.156 0 3.945-2.827 7.156-6.381 7.156Zm23.593 0c-3.498 0-6.38-3.211-6.38-7.156 0-3.944 2.826-7.156 6.38-7.156 3.582 0 6.437 3.24 6.38 7.156 0 3.945-2.798 7.156-6.38 7.156Z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath d='M0 0h71v55H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
+    no-repeat;
+}
+
+
+.list-anchor-link {
+  /* Navbar height */
+  top: -65px;
+  position: relative;
+}
+
+a.list-anchor {
+  padding-left: 5px;
+  opacity: 0;
+  transition: opacity var(--ifm-transition-fast);
+}
+
+li:hover > a.list-anchor,
+li:hover > p > a.list-anchor {
+  opacity: 1;
+}
+
+.yt-lite > button.lty-playbtn {
+  cursor: pointer;
+  border: none;
+  background-color: red;
+}
+
+.html-card-code .theme-code-block {
+  border: none !important;
+  border-radius: var(--ifm-code-border-radius) !important;
+  box-shadow: none !important;
+  margin-bottom: 0 !important;
+}
+
+x-search {
+  visibility: hidden;
+}
+
+/* Navbar logo uses ThemedComponent which sets display:none as base,
+   relying on [data-theme] selectors to show. This causes flicker
+   during navigation. Force it always visible since we use one logo. */
+.navbar__brand img {
+  display: initial !important;
+}
+
+
+/* ----------------------------------------------------------------------------
+   Algolia DocSearch — brand colour alignment
+   DocSearch v4 ships Algolia-blue/indigo accents and navy dark-mode surfaces
+   that clash with the Playwright palette. Docusaurus maps
+   --docsearch-primary-color to --ifm-color-primary (green), but the v4 accent
+   variables below are NOT mapped and keep their defaults, so we override them.
+   `:root:root` raises specificity above DocSearch's own later-injected `:root`
+   without needing !important. The Algolia logo stays blue on purpose: its SVG
+   uses hardcoded fills and the free tier requires the mark to stay unmodified.
+---------------------------------------------------------------------------- */
+:root:root {
+  /* Blue -> Playwright green: magnifier, search/back icons, links, hit marks */
+  --docsearch-highlight-color: var(--ifm-color-primary);
+  /* Selected result row + action hover: blue tint -> green tint */
+  --docsearch-hit-highlight-color: rgba(26, 126, 31, 0.1);
+  --docsearch-soft-primary-color: rgba(26, 126, 31, 0.1);
+  /* Indigo-tinted greys -> neutral */
+  --docsearch-muted-color: #666c77;
+  --docsearch-secondary-text-color: #5e6a75;
+  --docsearch-icon-color: #5e6a75;
+  --docsearch-subtle-color: #e3e3e7;
+}
+
+:root[data-theme='dark'] {
+  /* Navy/indigo surfaces -> neutral Playwright dark */
+  --docsearch-modal-background: #242526;
+  --docsearch-hit-background: #1b1b1d;
+  --docsearch-background-color: #1b1b1d;
+  --docsearch-text-color: #e3e3e3;
+  --docsearch-secondary-text-color: #a0a6ad;
+  --docsearch-icon-color: #a0a6ad;
+  --docsearch-subtle-color: #2a2a2c;
+  /* Brighter green tint for the selected row on dark backgrounds */
+  --docsearch-hit-highlight-color: rgba(69, 186, 75, 0.12);
+  --docsearch-soft-primary-color: rgba(69, 186, 75, 0.12);
+}
+
+/* The "no results" magnifier icon ships with a hardcoded indigo stroke
+   attribute (stroke="#5a5e9a") instead of reading a variable, so it ignores
+   the palette above. Neutralise it to match the other DocSearch icons. */
+.DocSearch-NoResults svg {
+  stroke: var(--docsearch-icon-color);
+}

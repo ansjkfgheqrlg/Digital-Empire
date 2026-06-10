@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="{{ config.book.language }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="{{ config.book.author }}">
+    <meta name="title" content="{{ config.book.title }}">
+    <title>{{ config.book.title }}</title>
+    <style>
+    {{ css_content }}
+    </style>
+</head>
+<body>
+
+<!-- Stringa nascosta per header "titolo libro" -->
+<span class="book-title-string">{{ config.book.title }}</span>
+
+<!-- ============================================================
+     FRONTESPIZIO
+     ============================================================ -->
+<div class="title-page">
+    <div class="book-title">{{ config.book.title }}</div>
+    <div class="title-divider"></div>
+    <div class="book-subtitle">{{ config.book.subtitle }}</div>
+    <div class="title-divider"></div>
+    <div class="book-author">{{ config.book.author }}</div>
+</div>
+
+<!-- ============================================================
+     PAGINA COPYRIGHT
+     ============================================================ -->
+<div class="copyright-page">
+    <p>Copyright &copy; {{ config.book.year }} {{ config.book.author }}</p>
+    <p>Tutti i diritti riservati.</p>
+    <p>Nessuna parte di questa pubblicazione pu&ograve; essere riprodotta,
+    distribuita o trasmessa in qualsiasi forma o con qualsiasi mezzo,
+    incluse fotocopie, registrazioni o altri metodi elettronici o meccanici,
+    senza il previo consenso scritto dell&rsquo;autore.</p>
+    <p>&nbsp;</p>
+    <p>Prima edizione: {{ config.book.year }}</p>
+</div>
+
+<!-- ============================================================
+     INDICE
+     ============================================================ -->
+<div class="toc-page">
+    <h2>Indice</h2>
+    {% for chapter in chapters %}
+    <div class="toc-entry">
+        <div>
+            <span class="toc-chapter-num">Capitolo {{ chapter.number }}</span>
+            <span class="toc-title">{{ chapter.title }}</span>
+        </div>
+        <span class="toc-dots"></span>
+        <span class="toc-page-num">{{ chapter.toc_page }}</span>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Pagina bianca per far iniziare Capitolo 1 su pagina dispari -->
+<div class="blank-page"></div>
+
+<!-- ============================================================
+     CAPITOLI
+     ============================================================ -->
+{% for chapter in chapters %}
+
+<!-- Pagina immagine Capitolo {{ chapter.number }} -->
+<div class="image-page">
+    {% if chapter.image_path %}
+    <img src="{{ chapter.image_path }}" alt="Capitolo {{ chapter.number }}: {{ chapter.title }}">
+    {% else %}
+    <div class="image-placeholder">
+        <p>IMMAGINE MANCANTE<br>Capitolo {{ chapter.number }}<br>{{ chapter.title }}</p>
+    </div>
+    {% endif %}
+</div>
+
+<!-- Pagina titolo Capitolo {{ chapter.number }} -->
+<div class="chapter-title-page">
+    <div class="chapter-number">Capitolo {{ chapter.number }}</div>
+    <div class="chapter-number-divider"></div>
+    <h1 class="chapter-title">{{ chapter.title }}</h1>
+</div>
+
+<!-- Testo Capitolo {{ chapter.number }} -->
+<div class="chapter-content">
+{{ chapter.html_content }}
+</div>
+
+{% endfor %}
+
+<!-- ============================================================
+     PAGINA FINALE
+     ============================================================ -->
+<div class="blank-page"></div>
+
+</body>
+</html>

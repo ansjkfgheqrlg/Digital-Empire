@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code Mastery | Tech-Lux Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #000000;
+            --accent: #FF4D2D;
+            --accent-glow: rgba(255, 77, 45, 0.4);
+            --silver: #E5E5E5;
+            --silver-dark: #C0C0C0;
+            --text-main: #FFFFFF;
+            --text-dim: #94A3B8;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --grain-opacity: 0.25;
+            --transition: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* --- BASIC RESET --- */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-family: 'Inter', sans-serif; background: var(--bg-deep); }
+        body { background: var(--bg-deep); color: var(--text-main); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+        /* --- GRAIN SYSTEM --- */
+        @keyframes grain {
+            0%, 100% { transform: translate(0, 0); }
+            10% { transform: translate(-1%, -1%); }
+            20% { transform: translate(1%, 1%); }
+            30% { transform: translate(-2%, 0); }
+            40% { transform: translate(2%, 2%); }
+            50% { transform: translate(-1%, -2%); }
+            60% { transform: translate(1%, 2%); }
+            70% { transform: translate(0, 1%); }
+            80% { transform: translate(-2%, 2%); }
+            90% { transform: translate(1%, -2%); }
+        }
+
+        body::after {
+            content: "";
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 9999;
+            opacity: var(--grain-opacity);
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            mix-blend-mode: overlay;
+        }
+
+        /* --- REVEAL ANIMATIONS --- */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--transition); }
+        .reveal.revealed { opacity: 1; transform: translateY(0); }
+
+        /* --- LAYOUT --- */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; position: relative; }
+        .section-pad { padding: 8rem 0; }
+        .flex-center { display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column; }
+
+        /* --- BORDERS & DIVIDERS --- */
+        .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--glass-border), transparent); margin: 0 auto; max-width: 80%; }
+
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.04em; }
+        strong { color: #fff; font-weight: 800; }
+        .silver-hl { color: var(--silver-dark); font-weight: 500; font-size: 0.85em; letter-spacing: 0.2em; text-transform: uppercase; }
+        .eyebrow { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.25em; color: var(--text-dim); margin-bottom: 2rem; display: block; }
+        
+        .hero-title { font-size: clamp(3rem, 10vw, 6rem); font-weight: 900; text-transform: uppercase; margin-bottom: 3rem; }
+        .hero-title span { 
+            background: linear-gradient(135deg, #fff 0%, var(--accent) 50%, #fff 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 8s linear infinite;
+        }
+        @keyframes shimmer { to { background-position: 200% center; } }
+
+        /* --- BUTTONS --- */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 1.5rem 3.5rem; background: var(--accent); color: #fff;
+            text-decoration: none; font-weight: 900; text-transform: uppercase;
+            letter-spacing: 0.05em; border-radius: 4px; font-size: 1.1rem;
+            transition: all 0.4s var(--transition); position: relative;
+            box-shadow: 0 10px 40px rgba(255, 77, 45, 0.2);
+        }
+        .btn:hover { transform: scale(1.05) translateY(-4px); box-shadow: 0 20px 60px var(--accent-glow); filter: brightness(1.1); }
+        .btn-subtext { margin-top: 1.5rem; color: var(--text-dim); font-size: 0.8rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.1em; }
+
+        /* --- HERO FLOATING TAGS --- */
+        .floating-tag {
+            position: absolute; padding: 0.6rem 1.2rem; background: rgba(255,255,255,0.05);
+            border: 1px solid var(--glass-border); border-radius: 100px;
+            font-size: 0.7rem; font-weight: 700; color: var(--silver);
+            text-transform: uppercase; letter-spacing: 0.1em; backdrop-filter: blur(8px);
+            animation: float 6s ease-in-out infinite; z-index: 10;
+        }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+
+        /* --- GLASS CARDS --- */
+        .glass-card { background: var(--glass); border: 1px solid var(--glass-border); border-radius: 8px; backdrop-filter: blur(20px); transition: all 0.4s var(--transition); }
+        .glass-card:hover { border-color: rgba(255, 77, 45, 0.4); transform: translateY(-10px); }
+
+        /* --- SCIENCE STATS --- */
+        .science-stats { background: #050505; }
+        .stat-row { display: grid; grid-template-columns: 250px 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem; }
+        .donut { 
+            width: 180px; height: 180px; border-radius: 50%;
+            background: conic-gradient(var(--accent) var(--perc), #1a1a1a 0);
+            position: relative; display: flex; align-items: center; justify-content: center;
+        }
+        .donut::after { content: attr(data-label); position: absolute; width: 140px; height: 140px; background: #050505; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 900; color: var(--accent); }
+        
+        .bar-chart-vertical { height: 180px; display: flex; align-items: flex-end; gap: 1rem; width: 180px; justify-content: center; }
+        .bar-v { width: 40px; background: #1a1a1a; border-radius: 4px; position: relative; transition: height 1s var(--transition); }
+        .bar-v span { position: absolute; top: -30px; left: 50%; transform: translateX(-50%); font-weight: 900; font-size: 0.8rem; }
+        .bar-v.active { background: var(--accent); box-shadow: 0 0 30px var(--accent-glow); }
+
+        /* --- MASTERY MAP --- */
+        .map-workflow { position: relative; padding: 4rem 0; width: 100%; max-width: 800px; margin: 0 auto; }
+        .map-workflow::before { content: ""; position: absolute; left: 25px; top: 0; bottom: 0; width: 2px; background: var(--glass-border); }
+        .map-step { display: flex; gap: 3rem; margin-bottom: 4rem; position: relative; }
+        .map-waypoint { width: 52px; height: 52px; border-radius: 12px; background: #000; border: 2px solid var(--glass-border); flex-shrink: 0; position: relative; z-index: 2; transition: all 0.4s var(--transition); display: flex; align-items: center; justify-content: center; font-weight: 900; color: var(--text-dim); }
+        .map-step:hover .map-waypoint { border-color: var(--accent); color: var(--accent); box-shadow: 0 0 20px var(--accent-glow); transform: scale(1.1) rotate(45deg); }
+        .map-step:hover .map-waypoint span { transform: rotate(-45deg); }
+        .map-label { font-size: 0.7rem; color: var(--accent); font-weight: 800; text-transform: uppercase; margin-bottom: 0.5rem; display: block; }
+        .map-chapters { list-style: none; margin-top: 1rem; color: var(--text-dim); font-size: 0.9rem; }
+        .map-chapters li::before { content: "→"; margin-right: 0.5rem; color: var(--accent); }
+
+        /* --- POWER DECK --- */
+        .deck-viewport { height: 500px; perspective: 2000px; display: flex; justify-content: center; align-items: center; }
+        .deck-stack { position: relative; width: 260px; height: 380px; transform-style: preserve-3d; cursor: pointer; }
+        .deck-card { position: absolute; inset: 0; background: #080808; border: 1px solid var(--glass-border); border-radius: 12px; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.7s var(--transition); box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
+        .deck-card:nth-child(1) { transform: rotate(0deg) translateZ(40px); }
+        .deck-card:nth-child(2) { transform: rotate(5deg) scale(0.95); opacity: 0.8; }
+        .deck-card:nth-child(3) { transform: rotate(-5deg) scale(0.95); opacity: 0.8; }
+        .deck-card:nth-child(4) { transform: rotate(10deg) scale(0.9); opacity: 0.6; }
+        
+        .deck-stack:hover .deck-card:nth-child(1) { transform: translateX(-320px) rotate(-10deg) translateZ(100px); }
+        .deck-stack:hover .deck-card:nth-child(2) { transform: translateX(-110px) rotate(-3deg) translateZ(80px); }
+        .deck-stack:hover .deck-card:nth-child(3) { transform: translateX(110px) rotate(3deg) translateZ(80px); }
+        .deck-stack:hover .deck-card:nth-child(4) { transform: translateX(320px) rotate(10deg) translateZ(100px); }
+        
+        .card-rank { font-size: 1.5rem; font-weight: 900; color: var(--accent); line-height: 1; }
+        .card-title-playing { font-size: 1.25rem; font-weight: 800; text-transform: uppercase; margin: 2rem 0 1rem; color: #fff; }
+
+        /* --- OBJECTIONS --- */
+        .objection-group { margin-bottom: 8rem; }
+        .responses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+        .response-card { padding: 3rem 2rem; position: relative; overflow: hidden; height: 100%; display: flex; flex-direction: column; }
+        .card-watermark { position: absolute; bottom: -20px; right: 0; font-size: 12rem; font-weight: 900; color: rgba(255,255,255,0.02); line-height: 1; pointer-events: none; }
+        .card-gold { background: linear-gradient(135deg, #FFD700 0%, #B8860B 100%); color: #000; border: none; }
+        .card-gold .card-rank, .card-gold strong, .card-gold h3 { color: #000; }
+        .card-gold .card-watermark { color: rgba(0,0,0,0.05); }
+
+        /* --- FAQ --- */
+        .accordion-item { border: 1px solid var(--glass-border); border-radius: 8px; margin-bottom: 1rem; overflow: hidden; }
+        .accordion-header { width: 100%; padding: 1.5rem 2rem; background: var(--glass); border: none; color: #fff; text-align: left; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.3s; }
+        .accordion-header:hover { background: rgba(255,255,255,0.06); }
+        .accordion-icon { width: 24px; height: 24px; position: relative; }
+        .accordion-icon::before, .accordion-icon::after { content: ""; position: absolute; background: var(--accent); transition: transform 0.3s; }
+        .accordion-icon::before { width: 100%; height: 2px; top: 11px; left: 0; }
+        .accordion-icon::after { width: 2px; height: 100%; left: 11px; top: 0; }
+        .accordion-item.active .accordion-icon::after { transform: rotate(90deg); opacity: 0; }
+        .accordion-body { max-height: 0; overflow: hidden; transition: max-height 0.4s var(--transition); background: rgba(0,0,0,0.2); }
+        .accordion-item.active .accordion-body { max-height: 500px; }
+        .accordion-content { padding: 2rem; color: var(--text-dim); line-height: 1.7; }
+
+        /* --- LIGHT SECTIONS --- */
+        .section-light { 
+            background: var(--silver); 
+            color: #1a1a1a; 
+            --text-dim: #4B5563; 
+            --glass-border: rgba(0,0,0,0.1); 
+        }
+        .section-light h2, .section-light h3, .section-light h4, .section-light strong { color: #000 !important; }
+        .section-light p { color: #374151; }
+        .section-light .eyebrow { color: rgba(0,0,0,0.5); }
+        .section-light .divider { background: rgba(0,0,0,0.1); }
+        .section-light .glass-card { background: rgba(0,0,0,0.03); border-color: rgba(0,0,0,0.1); color: #1a1a1a; }
+        .section-light .glass-card:hover { border-color: var(--accent); }
+        .section-light .map-chapters { color: #4B5563; }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .responses-grid, .stat-row { grid-template-columns: 1fr; }
+            .hero-title { font-size: 3rem; }
+            .deck-stack { transform: scale(0.8); }
+            .floating-tag { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <!-- HERO SECTION -->
+    <section class="section-pad" style="min-height: 100vh; display: flex; align-items: center;">
+        <div class="container flex-center">
+            <!-- Floating Tags -->
+            <div class="floating-tag" style="top: -20%; left: -10%; animation-delay: 0s;">No-Code approach</div>
+            <div class="floating-tag" style="top: 10%; right: -5%; animation-delay: 1s;">Posti Founding Members limitati</div>
+            <div class="floating-tag" style="bottom: 0%; left: -5%; animation-delay: 2s;">Garanzia 30 giorni</div>
+            <div class="floating-tag" style="top: 40%; left: -15%; animation-delay: 0.5s;">Bonus 1:1 incluso</div>
+
+            <span class="eyebrow reveal">Il primo percorso italiano su Claude Code</span>
+            <h1 class="hero-title reveal">
+                Da AI User a<br><span>System Architect</span>
+                <div class="silver-hl" style="margin-top: 2rem;">In 6 settimane di formazione pura</div>
+            </h1>
+            <p class="reveal" style="max-width: 750px; margin-bottom: 4rem; font-size: 1.25rem; color: var(--text-dim); font-weight: 300;">
+                Per chi vuole smettere di "chattare" con l'AI e iniziare a <strong>costruire sistemi</strong> che generano profitto e liberano tempo.
+            </p>
+            <div class="reveal">
+                <a href="#pricing" class="btn">Inizia il Percorso per €397</a>
+                <div style="margin-top: 1.5rem;">
+                    <a href="#mastery-map" style="color: var(--accent); text-decoration: none; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; border-bottom: 1px solid var(--accent); padding-bottom: 4px;">Vedi la Mappa dei Capitoli ↓</a>
+                </div>
+                <div class="btn-subtext">Garanzia "Builder o Rimborsato" — 30 giorni. Zero rischio.</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SCIENCE STATS -->
+    <section class="section-pad science-stats">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                <span class="eyebrow">...La scienza parla chiaro:</span>
+                <h2 style="font-size: 3rem;">SISTEMI AI CUSTOM = PIÙ MARGINE</h2>
+                <span style="color: var(--accent); font-weight: 900; letter-spacing: 0.3em; margin-top: 1rem; display: block;">(E QUINDI MENO SPRECHI)</span>
+            </div>
+
+            
+            <div class="stat-row reveal">
+                <div class="stat-visual">
+                    
+                    <div class="donut" style="--perc: 89%;" data-label="89%"></div>
+                    
+                </div>
+                <div class="stat-info">
+                    <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: #fff;">89% dei leader crede nella costruzione AI proprietaria</h3>
+                    <p style="color: var(--text-dim); font-size: 1.1rem; max-width: 700px;">"ChatGPT standard" è l'antitesi della scalabilità. I leader vogliono sistemi che girano sui loro dati, con le loro regole. Chi sa costruirli oggi, controlla il mercato di domani.</p>
+                </div>
+            </div>
+            
+            <div class="stat-row reveal">
+                <div class="stat-visual">
+                    
+                    <div class="bar-chart-vertical">
+                        <div class="bar-v" style="height: 30%;"><span>30%</span></div>
+                        <div class="bar-v active" style="height: 100%;"><span>+313%</span></div>
+                    </div>
+                    
+                </div>
+                <div class="stat-info">
+                    <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: #fff;">313% in più di produttività con AI Strategica</h3>
+                    <p style="color: var(--text-dim); font-size: 1.1rem; max-width: 700px;">Non è un miglioramento incrementale. È un cambio di specie. Automatizzare un intero reparto con Claude Code significa moltiplicare per 3 la capacità di delivery senza assumere nuovo personale.</p>
+                </div>
+            </div>
+            
+            <div class="stat-row reveal">
+                <div class="stat-visual">
+                    
+                    <div class="donut" style="--perc: 68%;" data-label="68%"></div>
+                    
+                </div>
+                <div class="stat-info">
+                    <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: #fff;">68% delle aziende non ha un workflow AI ripetibile</h3>
+                    <p style="color: var(--text-dim); font-size: 1.1rem; max-width: 700px;">Vanno "a casaccio". Chiedono cose all'AI e sperano che funzioni. Questo crea debito tecnico e spreco di tempo. Il tuo ruolo come Architect è eliminare questa incertezza.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- AUDIENCE GRID -->
+    <section class="section-light section-pad">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
+                <span class="eyebrow">Il paradigma</span>
+                <h2 style="font-size: 3.5rem;">Il tuo percorso in 6 settimane; per te se:</h2>
+            </div>
+            <div class="responses-grid reveal">
+                <div class="glass-card response-card">
+                    <h3 style="margin-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 1rem;">Pienamente indicato per:</h3>
+                    <ul style="list-style: none;">
+                        
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
+                            <span style="color: var(--accent); font-weight: 900;">✓</span>
+                            <span>Sai che l'AI è il futuro, ma non sai da dove iniziare concretamente.</span>
+                        </li>
+                        
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
+                            <span style="color: var(--accent); font-weight: 900;">✓</span>
+                            <span>Hai usato ChatGPT ma ti sei fermato al "e poi?" senza finalizzare nulla.</span>
+                        </li>
+                        
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
+                            <span style="color: var(--accent); font-weight: 900;">✓</span>
+                            <span>Non sai programmare e pensi che questo ti tagli fuori dal mercato.</span>
+                        </li>
+                        
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
+                            <span style="color: var(--accent); font-weight: 900;">✓</span>
+                            <span>Vuoi una <strong>competenza vendibile</strong> — non un altro corso da mettere nel cassetto.</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="glass-card response-card" style="opacity: 0.7;">
+                    <h3 style="margin-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 1rem;">NON è per te se:</h3>
+                    <ul style="list-style: none;">
+                        
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
+                            <span style="color: #666; font-weight: 900;">✕</span>
+                            <span>Sei già un developer esperto che cerca un corso avanzato di Python.</span>
+                        </li>
+                        
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
+                            <span style="color: #666; font-weight: 900;">✕</span>
+                            <span>Vuoi un trucchetto per "fare soldi facili con l'AI" senza lavorare.</span>
+                        </li>
+                        
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
+                            <span style="color: #666; font-weight: 900;">✕</span>
+                            <span>Non sei disposto a dedicare 3-5 ore a settimana per 6 settimane.</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEMS -->
+    <section class="section-pad">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
+                <span class="eyebrow">Il vero collo di bottiglia</span>
+                <h2 style="font-size: 3.5rem;">Il problema non è l'AI. Il problema è che tutti ne parlano e nessuno ti dice <span>cosa FARE</span>.</h2>
+                <p style="color: var(--text-dim); font-size: 1.25rem; max-width: 700px; margin: 2rem auto;">Apri LinkedIn: "L'AI cambierà tutto." Apri YouTube: "10 tool AI che devi conoscere." E poi? Tu hai provato ChatGPT. Hai fatto qualche domanda. E ti sei fermato.</p>
+            </div>
+            <div class="responses-grid reveal">
+                
+                <div class="glass-card response-card" style="padding: 2.5rem;">
+                    <h4 style="font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 1rem;">L'illusione del Prompt Manuale</h4>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Tra "usare l'app" e avere una competenza vendibile c'è un canyon. Non lo chiudi guardando tutorial gratuiti che ti insegnano solo a chattare.</p>
+                </div>
+                
+                <div class="glass-card response-card" style="padding: 2.5rem;">
+                    <h4 style="font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 1rem;">La paralisi della scelta</h4>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Compri corsi generici che ti mostrano 15 tool diversi, ma nessuno ti insegna a <strong>costruire un sistema</strong> che risolve problemi aziendali.</p>
+                </div>
+                
+                <div class="glass-card response-card" style="padding: 2.5rem;">
+                    <h4 style="font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 1rem;">Risultati inconsistenti</h4>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Provi a usare l'AI per lavoro ma i risultati sono mediocri, banali, e assolutamente non presentabili a un cliente pagante.</p>
+                </div>
+                
+                <div class="glass-card response-card" style="padding: 2.5rem;">
+                    <h4 style="font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 1rem;">L'onda che passa</h4>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Il tempo passa. La finestra si chiude. Chi impara <strong>ADESSO</strong> si posiziona come Architect. Chi aspetta, rincorrerà per sempre.</p>
+                </div>
+                
+            </div>
+            <div class="reveal glass-card" style="margin-top: 6rem; padding: 4rem; text-align: center; border-color: var(--accent-glow);">
+                <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Il <strong>vero problema</strong>?</h2>
+                <p style="font-size: 1.25rem; color: var(--text-dim); max-width: 800px; margin: 0 auto 2rem;">Nessuno ti ha insegnato a <strong>COSTRUIRE CON</strong> l'AI. C'è una differenza enorme tra chiedere qualcosa a ChatGPT e progettare un sistema che lavora per te, un sistema che puoi vendere per €500 o €800.</p>
+                <p style="font-size: 1.5rem; font-weight: 900; color: var(--accent);">Quella differenza si chiama <strong>Claude Code</strong>. E quel ponte ha un nome: questo percorso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUE HIERARCHY -->
+    <section class="section-light section-pad">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
+                <span class="eyebrow">La gerarchia del valore</span>
+                <h2 style="font-size: 3.5rem;">Perché "chattare" con l'AI oggi vale <strong>zero</strong></h2>
+            </div>
+            <div class="responses-grid reveal">
+                
+                <div class="glass-card response-card ">
+                    <span class="eyebrow" style="margin-bottom: 1rem; ">Livello 1</span>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Prompting Manuale</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 3rem;">È quello che fanno tutti. Apri ChatGPT, scrivi una domanda, ricevi una risposta mediocre. È una commodity: chiunque può farlo, quindi nessuno te lo pagherà mai.</p>
+                    <div style="margin-top: auto; font-size: 2rem; font-weight: 900;">€0</div>
+                </div>
+                
+                <div class="glass-card response-card ">
+                    <span class="eyebrow" style="margin-bottom: 1rem; ">Livello 2</span>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">AI Automation</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 3rem;">Usi tool terzi (come Make o Zapier) per connettere le app. Utile, ma fragile e limitato a quello che i tool ti permettono di fare. Sei un "assemblatore", non un costruttore.</p>
+                    <div style="margin-top: auto; font-size: 2rem; font-weight: 900;">€200/500</div>
+                </div>
+                
+                <div class="glass-card response-card card-gold">
+                    <span class="eyebrow" style="margin-bottom: 1rem; color: rgba(0,0,0,0.5);">Livello 3</span>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">AI Architecture</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 3rem;"><strong>Questo è Claude Code.</strong> Costruisci sistemi deterministici, agenti specializzati e workflow proprietari sul tuo computer. Non usi le app dei giganti: costruisci le tue. Qui il valore è infinito.</p>
+                    <div style="margin-top: auto; font-size: 2rem; font-weight: 900;">€2000+</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- PILLARS -->
+    <section class="section-pad">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                <span class="eyebrow">Differenziazione radicale</span>
+                <h2 style="font-size: 4rem;">Perché <strong>Mastery</strong>?</h2>
+            </div>
+            <div class="responses-grid reveal">
+                
+                <div class="flex-center" style="text-align: left; align-items: flex-start;">
+                    <h4 style="font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--accent); padding-bottom: 1rem; width: 100%;">Siamo <strong>Ingegneri</strong>,<br>non artisti.</h4>
+                    <p style="color: var(--text-dim); font-size: 1.05rem;">L'eccellenza non è un atto, ma un'abitudine organizzativa. Ogni nostro progetto segue un'architettura rigorosa e processi millimetrici che non lasciano nulla al caso.</p>
+                </div>
+                
+                <div class="flex-center" style="text-align: left; align-items: flex-start;">
+                    <h4 style="font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--accent); padding-bottom: 1rem; width: 100%;">Vendiamo <strong>Profitto</strong>,<br>non like.</h4>
+                    <p style="color: var(--text-dim); font-size: 1.05rem;">Sfruttiamo l'intelligenza artificiale in modo estremamente architettato per massimizzare ogni singolo risultato. Non giochiamo con i prompt, costruiamo infrastrutture AI che dominano il mercato.</p>
+                </div>
+                
+                <div class="flex-center" style="text-align: left; align-items: flex-start;">
+                    <h4 style="font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--accent); padding-bottom: 1rem; width: 100%;">Creiamo <strong>Imperi</strong>,<br>non siti.</h4>
+                    <p style="color: var(--text-dim); font-size: 1.05rem;">Un sito web è statico. Un impero digitale è dinamico, scalabile e domina il mercato. Non cerchiamo clienti a cui inviare fatture, ma partner con cui scalare vette.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section-pad" style="background: #080808;">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                <span class="eyebrow">Il programma</span>
+                <h2 style="font-size: 4rem;">Claude Code Mastery: la <strong>roadmap</strong> di 6 settimane</h2>
+                <p style="color: var(--text-dim); font-size: 1.25rem; margin-top: 2rem;">Non è un corso teorico. È un bootcamp dove costruisci sistemi reali, sul tuo computer, con le tue mani.</p>
+            </div>
+            <div class="responses-grid reveal">
+                
+                <div class="glass-card response-card" style="padding: 3rem;">
+                    <div style="font-size: 3rem; font-weight: 900; color: var(--accent); line-height: 1; margin-bottom: 1rem;">01</div>
+                    <span class="eyebrow" style="color: var(--accent); margin-bottom: 1rem;">Settimane 1 e 2</span>
+                    <h3 style="margin-bottom: 1.5rem;">FONDAMENTA</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Installi Claude Code (guidato step-by-step). Impari a dare istruzioni deterministiche con il framework <strong>I.C.R.O.</strong> (Identità, Contesto, Regole, Output).</p>
+                    
+                </div>
+                
+                <div class="glass-card response-card" style="padding: 3rem;">
+                    <div style="font-size: 3rem; font-weight: 900; color: var(--accent); line-height: 1; margin-bottom: 1rem;">02</div>
+                    <span class="eyebrow" style="color: var(--accent); margin-bottom: 1rem;">Settimana 3</span>
+                    <h3 style="margin-bottom: 1.5rem;">SISTEMI</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Crei le tue prime Skill specializzate con il framework <strong>S.K.I.L.L.</strong> Trasformiamo Claude da generalista a esperto di dominio. Poi le colleghi nei workflow <strong>W.O.R.K.</strong></p>
+                    
+                </div>
+                
+                <div class="glass-card response-card" style="padding: 3rem;">
+                    <div style="font-size: 3rem; font-weight: 900; color: var(--accent); line-height: 1; margin-bottom: 1rem;">03</div>
+                    <span class="eyebrow" style="color: var(--accent); margin-bottom: 1rem;">Settimane 4 e 5</span>
+                    <h3 style="margin-bottom: 1.5rem;">PORTFOLIO</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Costruisci 3 progetti reali pronti da mostrare:</p>
+                    
+                    <ul style="margin-top: 1.5rem; list-style: none; color: var(--text-dim); font-size: 0.85rem;">
+                        
+                        <li style="margin-bottom: 0.5rem;">→ Content System Automatico</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">→ Analisi Competitor Enterprise</li>
+                        
+                        <li style="margin-bottom: 0.5rem;">→ Automazione Business Process</li>
+                        
+                    </ul>
+                    
+                </div>
+                
+                <div class="glass-card response-card" style="padding: 3rem;">
+                    <div style="font-size: 3rem; font-weight: 900; color: var(--accent); line-height: 1; margin-bottom: 1rem;">04</div>
+                    <span class="eyebrow" style="color: var(--accent); margin-bottom: 1rem;">Settimana 6</span>
+                    <h3 style="margin-bottom: 1.5rem;">MONETIZZAZIONE</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Definisci offerta e pricing. Crei il tuo portfolio digitale. Identifichi e contatti 10 prospect reali con il metodo <strong>DAN</strong> per ottenere la tua prima commessa.</p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- MASTERY MAP -->
+    <section class="section-pad" id="mastery-map">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                <span class="eyebrow">Curriculum completo</span>
+                <h2 style="font-size: 4rem;">La <strong>Mappa del Potere</strong>: all'interno di Mastery</h2>
+                <p style="color: var(--text-dim); font-size: 1.25rem; margin-top: 2rem;">Ogni nodo è un passo verso il tuo nuovo posizionamento. 21 lezioni verticali, 18 template scaricabili, 4 framework proprietari.</p>
+            </div>
+            <div class="map-workflow">
+                
+                <div class="map-step reveal">
+                    <div class="map-waypoint"><span>0</span></div>
+                    <div class="map-content">
+                        <span class="map-label">Modulo 0</span>
+                        <h3 style="font-size: 1.75rem; color: #fff;">Setup Rapido & Primo Agente</h3>
+                        <ul class="map-chapters">
+                            
+                            <li>Perché Claude Code batte ChatGPT</li>
+                            
+                            <li>Installazione GUIDATA (No-Code approach)</li>
+                            
+                            <li>Il tuo primo operatore AI in 10 minuti</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="map-step reveal">
+                    <div class="map-waypoint"><span>1</span></div>
+                    <div class="map-content">
+                        <span class="map-label">Modulo 1</span>
+                        <h3 style="font-size: 1.75rem; color: #fff;">Fondamenta: framework I.C.R.O.</h3>
+                        <ul class="map-chapters">
+                            
+                            <li>La "Lingua" di Claude: Context Mastery</li>
+                            
+                            <li>Framework I.C.R.O. per risultati deterministici</li>
+                            
+                            <li>Comandi Avanzati & Context Management</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="map-step reveal">
+                    <div class="map-waypoint"><span>2</span></div>
+                    <div class="map-content">
+                        <span class="map-label">Modulo 2</span>
+                        <h3 style="font-size: 1.75rem; color: #fff;">Skill builder: sistemi riutilizzabili</h3>
+                        <ul class="map-chapters">
+                            
+                            <li>L'AI come specialista (Framework S.K.I.L.L.)</li>
+                            
+                            <li>Trigger Proattivi e Librerie Custom</li>
+                            
+                            <li>Creazione della tua Libreria di 15+ Skill</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="map-step reveal">
+                    <div class="map-waypoint"><span>3</span></div>
+                    <div class="map-content">
+                        <span class="map-label">Modulo 3</span>
+                        <h3 style="font-size: 1.75rem; color: #fff;">Workflow & Agenti Collaborativi</h3>
+                        <ul class="map-chapters">
+                            
+                            <li>Framework W.O.R.K. per flussi multi-step</li>
+                            
+                            <li>Orchestrazione Agenti (Sequenziali vs Paralleli)</li>
+                            
+                            <li>Il Mindset dell'Architetto AI</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="map-step reveal">
+                    <div class="map-waypoint"><span>4</span></div>
+                    <div class="map-content">
+                        <span class="map-label">Modulo 4</span>
+                        <h3 style="font-size: 1.75rem; color: #fff;">Progetti reali: il portfolio</h3>
+                        <ul class="map-chapters">
+                            
+                            <li>Progetto 1: Content System Completo</li>
+                            
+                            <li>Progetto 2: Analisi & Report Enterprise</li>
+                            
+                            <li>Progetto 3: Business Process Automation</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="map-step reveal">
+                    <div class="map-waypoint"><span>5</span></div>
+                    <div class="map-content">
+                        <span class="map-label">Modulo 5</span>
+                        <h3 style="font-size: 1.75rem; color: #fff;">Monetizzazione & business</h3>
+                        <ul class="map-chapters">
+                            
+                            <li>Definizione offerta & pricing strategico</li>
+                            
+                            <li>Il Metodo D.A.N. per l'Outreach</li>
+                            
+                            <li>Script di Chiusura e Prima Call con Cliente</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- POWER DECK -->
+    <section class="section-pad science-stats">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
+                <span class="eyebrow">Il cuore del metodo</span>
+                <h2 style="font-size: 4rem;">I 4 Pilastri del <strong>Potere</strong></h2>
+                <p style="color: var(--text-dim); font-size: 1.1rem; margin-top: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">Ogni sistema che costruirai poggia su questi 4 asset proprietari. Non sono solo concetti, sono <strong>armi operative</strong>.</p>
+            </div>
+            <div class="deck-viewport reveal">
+                <div class="deck-stack">
+                    
+                    <div class="deck-card">
+                        <div class="card-rank">I<span class="card-suit">&loz;</span></div>
+                        <div class="flex-center">
+                            <h4 class="card-title-playing">I.C.R.O.</h4>
+                            <p class="card-desc-playing">L'anima del <strong>Context Engineering</strong>. Definisci identità e regole per trasformare Claude in un operatore infallibile.</p>
+                        </div>
+                        <div class="card-rank" style="transform: rotate(180deg); align-self: flex-end;">I<span class="card-suit">&loz;</span></div>
+                    </div>
+                    
+                    <div class="deck-card">
+                        <div class="card-rank">S<span class="card-suit">&spades;</span></div>
+                        <div class="flex-center">
+                            <h4 class="card-title-playing">S.K.I.L.L.</h4>
+                            <p class="card-desc-playing">Il cervello della <strong>Entity Logic</strong>. Costruisci librerie di competenze verticali che Claude richiama on-demand.</p>
+                        </div>
+                        <div class="card-rank" style="transform: rotate(180deg); align-self: flex-end;">S<span class="card-suit">&spades;</span></div>
+                    </div>
+                    
+                    <div class="deck-card">
+                        <div class="card-rank">W<span class="card-suit">&clubs;</span></div>
+                        <div class="flex-center">
+                            <h4 class="card-title-playing">W.O.R.K.</h4>
+                            <p class="card-desc-playing">I muscoli del <strong>Workflow Power</strong>. Connetti le skill in flussi automatici che divorano ore di lavoro manuale.</p>
+                        </div>
+                        <div class="card-rank" style="transform: rotate(180deg); align-self: flex-end;">W<span class="card-suit">&clubs;</span></div>
+                    </div>
+                    
+                    <div class="deck-card">
+                        <div class="card-rank">D<span class="card-suit">&hearts;</span></div>
+                        <div class="flex-center">
+                            <h4 class="card-title-playing">D.A.N.</h4>
+                            <p class="card-desc-playing">La chiave della <strong>Monetizzazione</strong>. Trasforma il tuo portfolio tecnico in commesse reali da €500+ a progetto.</p>
+                        </div>
+                        <div class="card-rank" style="transform: rotate(180deg); align-self: flex-end;">D<span class="card-suit">&hearts;</span></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex-center reveal" style="margin-top: 4rem;">
+                <p style="font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em;">Passa il mouse sul mazzo per sbloccare i pilastri</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ECOSYSTEM & BONUSES -->
+    <section class="section-light section-pad">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                <span class="eyebrow">Vantaggio competitivo</span>
+                <h2 style="font-size: 4rem;">Ecco l'<strong>ecosistema</strong> che ricevi <strong>subito</strong></h2>
+            </div>
+            <div class="reveal" style="max-width: 800px; margin: 0 auto 6rem;">
+                
+                <div style="display: flex; gap: 2rem; margin-bottom: 3rem; align-items: flex-start;">
+                    <div style="font-size: 1.25rem; font-weight: 900; opacity: 0.3;">01</div>
+                    <div>
+                        <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Il Percorso Formativo Master</h4>
+                        <p style="color: rgba(0,0,0,0.6); line-height: 1.7;">6 Moduli + Modulo 0 Setup. 21 video-lezioni ed esercizi pratici per un totale di 11 ore di documentazione tecnica ad alta densità.</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 2rem; margin-bottom: 3rem; align-items: flex-start;">
+                    <div style="font-size: 1.25rem; font-weight: 900; opacity: 0.3;">02</div>
+                    <div>
+                        <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">I 4 Framework Proprietari</h4>
+                        <p style="color: rgba(0,0,0,0.6); line-height: 1.7;">Metodologie originali per il controllo del flusso: I.C.R.O. per le istruzioni, S.K.I.L.L. per le entità, W.O.R.K. per i processi e DAN per l'outreach commerciale.</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 2rem; margin-bottom: 3rem; align-items: flex-start;">
+                    <div style="font-size: 1.25rem; font-weight: 900; opacity: 0.3;">03</div>
+                    <div>
+                        <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">18 Template e Asset Scaricabili</h4>
+                        <p style="color: rgba(0,0,0,0.6); line-height: 1.7;">Non devi inventare nulla. Ti diamo i file di configurazione e gli esempi compilati pronti da importare nel tuo ambiente di lavoro.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="responses-grid reveal">
+                
+                <div class="glass-card response-card " style="padding: 2.5rem;">
+                    <span class="eyebrow" style="margin-bottom: 1rem; ">Bonus #01</span>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">15 Skill Pronte all'Uso</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 2rem;">Libreria di file SKILL.md per Content, Analisi e Business. Li apri e funzionano. Risparmi 20+ ore di lavoro.</p>
+                    <div style="margin-top: auto; font-weight: 900; color: var(--accent);">Valore €197</div>
+                </div>
+                
+                <div class="glass-card response-card " style="padding: 2.5rem;">
+                    <span class="eyebrow" style="margin-bottom: 1rem; ">Bonus #02</span>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Kit Portfolio "Pronto in 1 Ora"</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 2rem;">Template Notion duplicabile 3C + 3 Case Study pre-strutturati da personalizzare per i tuoi clienti.</p>
+                    <div style="margin-top: auto; font-weight: 900; color: var(--accent);">Valore €147</div>
+                </div>
+                
+                <div class="glass-card response-card " style="padding: 2.5rem;">
+                    <span class="eyebrow" style="margin-bottom: 1rem; ">Bonus #03</span>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Community & Live Q&A</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 2rem;">Accesso per 3 mesi alla community privata. Una call di gruppo al mese per feedback diretto sui tuoi progetti.</p>
+                    <div style="margin-top: auto; font-weight: 900; color: var(--accent);">Valore €297</div>
+                </div>
+                
+                <div class="glass-card response-card card-gold" style="padding: 2.5rem;">
+                    <span class="eyebrow" style="margin-bottom: 1rem; color: rgba(0,0,0,0.5);">Solo Primi 7 Giorni</span>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Sessione Strategica 1:1</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 2rem;">30 minuti privati con me per impostare il tuo mercato target e il tuo posizionamento unico.</p>
+                    <div style="margin-top: auto; font-weight: 900; color: var(--accent);">Valore €197</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section-pad" id="pricing">
+        <div class="container flex-center">
+            <span class="eyebrow reveal">L'investimento</span>
+            <h2 class="reveal" style="font-size: 4rem; margin-bottom: 4rem;">Il <strong>valore reale</strong> di una skill <strong>perpetua</strong></h2>
+            
+            <div class="reveal flex-center" style="margin-bottom: 5rem;">
+                <span style="text-decoration: line-through; color: var(--text-dim); font-size: 1.5rem;">Valore Totale: &euro; 2338</span>
+                <span style="font-size: 1.5rem; margin: 1rem 0; color: var(--silver);">Offerta Founding Member</span>
+                <span style="font-size: 6rem; font-weight: 900; background: linear-gradient(180deg, #fff, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1;">&euro;397</span>
+            </div>
+
+            <div class="reveal flex-center">
+                <a href="#" class="btn">Sblocca il Mio Vantaggio Ora</a>
+                <span class="btn-subtext">Disponibili 2 rate da &euro;199 via Stripe/Klarna</span>
+            </div>
+
+            <div class="reveal glass-card" style="margin-top: 6rem; padding: 3rem; background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.2); max-width: 800px;">
+                <h3 style="color: #4ADE80; margin-bottom: 1rem;">Il Calcolo del R.O.I.</h3>
+                <p style="color: var(--text-dim);">Se nel Modulo 6 trovi anche solo <strong>un singolo cliente da &euro;500</strong> (e ti insegno esattamente come), il corso &egrave; gi&agrave; ripagato. Tutto quello che viene dopo &egrave; profitto puro basato su una competenza che non scade mai.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBJECTIONS -->
+    <section class="section-pad science-stats">
+        <div class="container">
+            
+            <div class="objection-group reveal">
+                <span class="eyebrow">--- GESTIONE OBIEZIONI // ELITE BUILDER</span>
+                <h2 style="font-size: 3rem;">"NON HO <strong>TEMPO</strong> PER UN ALTRO CORSO..."</h2>
+                <div class="responses-grid">
+                    
+                    <div class="glass-card response-card ">
+                        <span class="eyebrow" style="margin-bottom: 1rem; opacity: 0.5;">01 // CLAIM</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">L'AI È IL TUO MOLTIPLICATORE DI TEMPO.</h3>
+                        <p style="font-size: 0.95rem;">Non è "un'altra cosa da fare", è il sistema definitivo per smettere di fare tutto il resto manualmente. Ogni ora qui te ne ridà 10 indietro.</p>
+                        <div class="card-watermark">C</div>
+                    </div>
+                    
+                    <div class="glass-card response-card card-gold">
+                        <span class="eyebrow" style="margin-bottom: 1rem; opacity: 0.5;">02 // PROOF</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">AUTOMAZIONE 10X CON IL FRAMEWORK W.O.R.K.</h3>
+                        <p style="font-size: 0.95rem;">Applichi processi deterministici che riducono task complessi di 4 ore a soli 12 minuti di esecuzione AI. Risultati tangibili fin dal Modulo 1.</p>
+                        <div class="card-watermark">P</div>
+                    </div>
+                    
+                    <div class="glass-card response-card ">
+                        <span class="eyebrow" style="margin-bottom: 1rem; opacity: 0.5;">03 // BENEFIT</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">LIBERTÀ OPERATIVA TOTALE.</h3>
+                        <p style="font-size: 0.95rem;">Claude Code lavora in background mentre tu ti occupi della strategia e della vendita. Riprendi il controllo della tua agenda e dei tuoi margini.</p>
+                        <div class="card-watermark">B</div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="flex-center reveal" style="margin-bottom: 8rem; opacity: 0.3;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </div>
+            
+            
+            <div class="objection-group reveal">
+                <span class="eyebrow">--- GESTIONE OBIEZIONI // ELITE BUILDER</span>
+                <h2 style="font-size: 3rem;">"NON SONO UN <strong>PROGRAMMATORE</strong>, È TROPPO TECNICO..."</h2>
+                <div class="responses-grid">
+                    
+                    <div class="glass-card response-card ">
+                        <span class="eyebrow" style="margin-bottom: 1rem; opacity: 0.5;">01 // CLAIM</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">DALLA SINTASSI ALLA LOGICA DI SISTEMA.</h3>
+                        <p style="font-size: 0.95rem;">Non devi scrivere codice, devi imparare a progettarlo. Claude è il tuo braccio operativo infaticabile, tu sei la mente architettonica.</p>
+                        <div class="card-watermark">C</div>
+                    </div>
+                    
+                    <div class="glass-card response-card card-gold">
+                        <span class="eyebrow" style="margin-bottom: 1rem; opacity: 0.5;">02 // PROOF</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">IL FRAMEWORK I.C.R.O. COME BUSSOLA.</h3>
+                        <p style="font-size: 0.95rem;">Forniamo i binari per ottenere risultati professionali senza conoscere una riga di Python o Javascript. È Context Engineering, non programmazione.</p>
+                        <div class="card-watermark">P</div>
+                    </div>
+                    
+                    <div class="glass-card response-card ">
+                        <span class="eyebrow" style="margin-bottom: 1rem; opacity: 0.5;">03 // BENEFIT</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">POSIZIONAMENTO ELITE ARCHITECT.</h3>
+                        <p style="font-size: 0.95rem;">Ti posizioni sopra il 99% degli utenti AI. Diventi chi costruisce i sistemi proprietari, non chi si limita a "chattare" con un bot pubblico.</p>
+                        <div class="card-watermark">B</div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="flex-center reveal" style="margin-bottom: 8rem; opacity: 0.3;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </div>
+            
+            
+            <div class="objection-group reveal">
+                <span class="eyebrow">--- GESTIONE OBIEZIONI // ELITE BUILDER</span>
+                <h2 style="font-size: 3rem;">"IL <strong>PREZZO</strong> È TROPPO ALTO PER UN CORSO..."</h2>
+                <div class="responses-grid">
+                    
+                    <div class="glass-card response-card ">
+                        <span class="eyebrow" style="margin-bottom: 1rem; opacity: 0.5;">01 // CLAIM</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">VALORE DI MERCATO DI UN SINGOLO ASSET.</h3>
+                        <p style="font-size: 0.95rem;">Un solo sistema AI "Built-to-Order" venduto a un cliente aziendale copre 2 volte l'investimento totale del corso. Tutto il resto è margine.</p>
+                        <div class="card-watermark">C</div>
+                    </div>
+                    
+                    <div class="glass-card response-card card-gold">
+                        <span class="eyebrow" style="margin-bottom: 1rem; opacity: 0.5;">02 // PROOF</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">CASE STUDY RITORNO IMMEDIATO.</h3>
+                        <p style="font-size: 0.95rem;">I nostri Builder più focalizzati chiudono la prima commessa da €500 prima della fine delle 6 settimane di bootcamp. È matematica.</p>
+                        <div class="card-watermark">P</div>
+                    </div>
+                    
+                    <div class="glass-card response-card ">
+                        <span class="eyebrow" style="margin-bottom: 1rem; opacity: 0.5;">03 // BENEFIT</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">UNA SKILL PERPETUA E MONETIZZABILE.</h3>
+                        <p style="font-size: 0.95rem;">Non compri un video-corso, compri la capacità di stampare valore on-demand in un mercato vergine che ha fame di soluzioni AI reali.</p>
+                        <div class="card-watermark">B</div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-light section-pad">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                <span class="eyebrow">Domande frequenti</span>
+                <h2 style="font-size: 4rem;">Dubbi <strong>Comuni</strong> e <strong>Obiezioni</strong></h2>
+            </div>
+            <div class="reveal" style="max-width: 800px; margin: 0 auto;">
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>"€397 è troppo, ci sono tutorial gratis."</span>
+                        <div class="accordion-icon"></div>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">I tutorial ti insegnano un comando. Noi ti diamo un <strong>sistema architettonico</strong>. Insegnarti a "chattare" non serve a nulla, insegnarti a <strong>costruire asset vendibili</strong> è quello che fa la differenza tra un utente e un Builder professionista. Se un solo lavoro ripaga il corso, qual è il vero rischio?</div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>"Non so programmare. È per me?"</span>
+                        <div class="accordion-icon"></div>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Claude Code scrive il codice per te. Tu devi imparare a dare istruzioni come un Architect — come un capo cantiere che dirige operai qualificati. Se sai spiegare un concetto in italiano, sai usare Claude Code con i nostri framework.</div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>"Claude cambia ogni mese — il corso scadrà?"</span>
+                        <div class="accordion-icon"></div>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Gli strumenti cambiano, i <strong>principi dell'ingegneria di contesto</strong> no. I framework I.C.R.O. e S.K.I.L.L. funzionano indipendentemente dalla versione del modello. Inoltre, gli aggiornamenti base del corso sono inclusi senza costi aggiuntivi.</div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>"Come trovo davvero dei clienti?"</span>
+                        <div class="accordion-icon"></div>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Il Modulo 6 è dedicato interamente a questo. Non è teoria: creiamo l'offerta, il portfolio, e contattiamo attivamente prospect qualificati usando script ad alta conversione. È una pipeline pratica.</div>
+                    </div>
+                </div>
+                
+
+                <div class="glass-card flex-center reveal" style="margin-top: 6rem; padding: 4rem; background: #000; color: #fff; border-color: var(--accent);">
+                    <h3 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: #fff;">Garanzia "Builder o Rimborsato"</h3>
+                    <p style="color: var(--text-dim); font-size: 1.1rem; max-width: 600px;">Segui il corso per 30 giorni. Completa i primi 4 moduli. Se dopo aver costruito le tue Skill non senti che questa è la skill giusta per te, ti rimborsiamo tutto con una email. Nessuna domanda. Nessuna pressione.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section-pad">
+        <div class="container flex-center">
+            <h2 class="reveal" style="font-size: 4rem; margin-bottom: 6rem;">Adesso hai <strong>due opzioni</strong>.</h2>
+            
+            <div class="responses-grid reveal" style="margin-bottom: 6rem; width: 100%;">
+                
+                <div class="glass-card response-card" style="opacity: 0.5;  padding: 3rem;">
+                    <h3 style="font-size: 2rem; margin-bottom: 1.5rem;">Opzione A</h3>
+                    <p style="font-size: 1.1rem; color: var(--text-dim);">Chiudi questa pagina. Torni alla tua routine. Continui a usare l'AI in modo casuale e tra 6 mesi sei esattamente dove sei oggi, mentre altri hanno già conquistato il mercato.</p>
+                </div>
+                
+                <div class="glass-card response-card" style=" border-color: var(--accent); background: rgba(255, 77, 45, 0.05); padding: 3rem;">
+                    <h3 style="font-size: 2rem; margin-bottom: 1.5rem;">Opzione B</h3>
+                    <p style="font-size: 1.1rem; color: var(--text-dim);">Entri in Claude Code Mastery. Tra 6 settimane hai una competenza che vale €500 o €800 per progetto, un portfolio reale e una skill che l'AI non può rimpiazzare, perché sei tu a controllarla.</p>
+                </div>
+                
+            </div>
+
+            <div class="reveal flex-center">
+                <a href="#" class="btn">Deciso. Iniziamo.</a>
+                <p class="btn-subtext">Posti Founding Members limitati. Bonus 1:1 disponibile per i primi 7 giorni.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="section-pad" style="background: #000; border-top: 1px solid var(--glass-border); text-align: center;">
+    <div class="container">
+        <p style="color: var(--text-dim); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase;">
+            DIGITAL EMPIRE © 2026 | TUTTI I DIRITTI RISERVATI<br>
+            <a href="#" style="color: var(--accent); text-decoration: none; margin: 0 1rem;">Privacy Policy</a> • <a href="#" style="color: var(--accent); text-decoration: none; margin: 0 1rem;">Termini della Piattaforma</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+    (function() {
+        /* === Intersection Observer for Reveal === */
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        
+        revealEls.forEach(el => observer.observe(el));
+
+        /* === Accordion Logic === */
+        document.querySelectorAll('.accordion-header').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const wasActive = item.classList.contains('active');
+                
+                document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+                
+                if (!wasActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>

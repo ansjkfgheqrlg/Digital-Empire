@@ -1,0 +1,52 @@
+# config
+            
+> Path: [[Map - Workfolw_Crea_Caroselli_À|Workfolw crea caroselli à > carousel-factory > brands > brand-personal]]
+
+## Content
+
+{
+  "brand_name": "brand-personal",
+  "display_name": "Il tuo nome",
+  "instagram": "@tuohandle",
+  "colors": {
+    "background": "#1A1A1A",
+    "background_alt": "#111111",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#CCCCCC",
+    "text_muted": "#888888",
+    "accent_1": "#FF3B3B",
+    "accent_2": "#FFD700",
+    "accent_3": "#4A9EFF"
+  },
+  "typography": {
+    "font_hero": "Montserrat-Black",
+    "font_bold": "Montserrat-Bold",
+    "font_regular": "Montserrat-Regular",
+    "size_hero": "90px",
+    "size_large": "64px",
+    "size_medium": "36px",
+    "size_small": "24px",
+    "line_height_hero": "0.95",
+    "line_height_body": "1.3",
+    "letter_spacing_hero": "-2px",
+    "text_transform_hero": "lowercase"
+  },
+  "effects": {
+    "grain_opacity": 0.15,
+    "grain_intensity": "medium",
+    "text_shadow": "0 4px 30px rgba(0,0,0,0.8)",
+    "glow_accent": "0 0 40px rgba(255,59,59,0.3)",
+    "background_blur": "8px",
+    "vignette": true,
+    "vignette_intensity": 0.4
+  },
+  "layout": {
+    "canvas_width": 1080,
+    "canvas_height": 1080,
+    "padding": "60px",
+    "text_align": "left"
+  }
+}
+
+## Collegamenti Correlati
+- [[Map - Workfolw_Crea_Caroselli_À|Workfolw Crea Caroselli À Area]]

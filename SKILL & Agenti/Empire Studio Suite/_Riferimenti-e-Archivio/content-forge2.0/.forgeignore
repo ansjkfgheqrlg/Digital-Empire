@@ -1,0 +1,33 @@
+# Forge package exclusions
+# (sintassi compatibile con gitignore)
+
+# Phase 7 test run (dati di esempio, non vanno nella skill installabile)
+phase7-run/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Plan history (utile per repo dev, non per skill installata)
+# Lo lasciamo dentro per tracciabilità — commentato
+# PLAN.md
+# PLAN-v*.md
+
+# Phase 9+ self-improvement data (operativo, non parte della skill)
+failure-modes-log/logged/
+failure-modes-log/triaged/
+failure-modes-log/resolved/
+failure-modes-log/PHASE-*-CANDIDATES.md
+failure-modes-log/INDEX.md
+
+# (Manteniamo invece README.md e TEMPLATE.md di failure-modes-log/ — sono parte della docs della skill)

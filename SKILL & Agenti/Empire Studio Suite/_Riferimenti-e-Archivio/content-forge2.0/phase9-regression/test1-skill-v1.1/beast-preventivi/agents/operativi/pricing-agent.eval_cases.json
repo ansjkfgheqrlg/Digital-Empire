@@ -1,0 +1,126 @@
+{
+  "agent_name": "pricing-agent",
+  "model_under_test": "claude-sonnet-4",
+  "cases": [
+    {
+      "id": "happy-01",
+      "category": "happy",
+      "prompt": "Test case happy #1 per pricing-agent",
+      "expected_behavior": "L'agente esegue il task happy correttamente e handoff è pulito",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "happy-02",
+      "category": "happy",
+      "prompt": "Test case happy #2 per pricing-agent",
+      "expected_behavior": "L'agente esegue il task happy correttamente e handoff è pulito",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "happy-03",
+      "category": "happy",
+      "prompt": "Test case happy #3 per pricing-agent",
+      "expected_behavior": "L'agente esegue il task happy correttamente e handoff è pulito",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "happy-04",
+      "category": "happy",
+      "prompt": "Test case happy #4 per pricing-agent",
+      "expected_behavior": "L'agente esegue il task happy correttamente e handoff è pulito",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "edge-05",
+      "category": "edge",
+      "prompt": "Test case edge #5 per pricing-agent",
+      "expected_behavior": "L'agente esegue il task edge correttamente e handoff è pulito",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "edge-06",
+      "category": "edge",
+      "prompt": "Test case edge #6 per pricing-agent",
+      "expected_behavior": "L'agente esegue il task edge correttamente e handoff è pulito",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "edge-07",
+      "category": "edge",
+      "prompt": "Test case edge #7 per pricing-agent",
+      "expected_behavior": "L'agente esegue il task edge correttamente e handoff è pulito",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "failure-08",
+      "category": "failure",
+      "prompt": "Test case failure #8 per pricing-agent",
+      "expected_behavior": "L'agente esegue il task failure correttamente e handoff è pulito",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "failure-09",
+      "category": "failure",
+      "prompt": "Test case failure #9 per pricing-agent",
+      "expected_behavior": "L'agente esegue il task failure correttamente e handoff è pulito",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "constraint-10",
+      "category": "constraint",
+      "prompt": "Test case constraint #10 per pricing-agent",
+      "expected_behavior": "L'agente esegue il task constraint correttamente e handoff è pulito",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    }
+  ]
+}

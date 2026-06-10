@@ -1,0 +1,43 @@
+# package
+            
+> Path: [[Map - Lancio_Corso_Skill_Beast|Lancio corso skill beast > MJ- classifica]]
+
+## Content
+
+{
+  "name": "mj-classifica-empire",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.38.0",
+    "gsap": "^3.14.2",
+    "lenis": "^1.3.21",
+    "lucide-react": "^0.474.0",
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "tailwind-merge": "^3.0.1",
+    "tw-animate-css": "^1.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5"
+  }
+}
+
+## Collegamenti Correlati
+- [[Map - Lancio_Corso_Skill_Beast|Lancio Corso Skill Beast Area]]

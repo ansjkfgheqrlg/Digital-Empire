@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.project.title }} | {{ data.project.edition }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #000000;
+            --accent: #FF4D2D;
+            --accent-glow: rgba(255, 77, 45, 0.4);
+            --silver: #E5E5E5;
+            --silver-dark: #C0C0C0;
+            --text-main: #FFFFFF;
+            --text-dim: #94A3B8;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --grain-opacity: 0.25;
+            --transition: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* --- BASIC RESET --- */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-family: 'Inter', sans-serif; background: var(--bg-deep); }
+        body { background: var(--bg-deep); color: var(--text-main); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+        /* --- GRAIN SYSTEM --- */
+        @keyframes grain {
+            0%, 100% { transform: translate(0, 0); }
+            10% { transform: translate(-1%, -1%); }
+            20% { transform: translate(1%, 1%); }
+            30% { transform: translate(-2%, 0); }
+            40% { transform: translate(2%, 2%); }
+            50% { transform: translate(-1%, -2%); }
+            60% { transform: translate(1%, 2%); }
+            70% { transform: translate(0, 1%); }
+            80% { transform: translate(-2%, 2%); }
+            90% { transform: translate(1%, -2%); }
+        }
+
+        body::after {
+            content: "";
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 9999;
+            opacity: var(--grain-opacity);
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            mix-blend-mode: overlay;
+        }
+
+        /* --- REVEAL ANIMATIONS --- */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--transition); }
+        .reveal.revealed { opacity: 1; transform: translateY(0); }
+
+        /* --- LAYOUT --- */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; position: relative; }
+        .section-pad { padding: 8rem 0; }
+        .flex-center { display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column; }
+
+        /* --- BORDERS & DIVIDERS --- */
+        .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--glass-border), transparent); margin: 0 auto; max-width: 80%; }
+
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.04em; }
+        strong { color: #fff; font-weight: 800; }
+        .silver-hl { color: var(--silver-dark); font-weight: 500; font-size: 0.85em; letter-spacing: 0.2em; text-transform: uppercase; }
+        .eyebrow { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.25em; color: var(--text-dim); margin-bottom: 2rem; display: block; }
+        
+        .hero-title { font-size: clamp(3rem, 10vw, 6rem); font-weight: 900; text-transform: uppercase; margin-bottom: 3rem; }
+        .hero-title span { 
+            background: linear-gradient(135deg, #fff 0%, var(--accent) 50%, #fff 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 8s linear infinite;
+        }
+        @keyframes shimmer { to { background-position: 200% center; } }
+
+        /* --- BUTTONS --- */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 1.5rem 3.5rem; background: var(--accent); color: #fff;
+            text-decoration: none; font-weight: 900; text-transform: uppercase;
+            letter-spacing: 0.05em; border-radius: 4px; font-size: 1.1rem;
+            transition: all 0.4s var(--transition); position: relative;
+            box-shadow: 0 10px 40px rgba(255, 77, 45, 0.2);
+        }
+        .btn:hover { transform: scale(1.05) translateY(-4px); box-shadow: 0 20px 60px var(--accent-glow); filter: brightness(1.1); }
+        .btn-subtext { margin-top: 1.5rem; color: var(--text-dim); font-size: 0.8rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.1em; }
+
+        /* --- HERO FLOATING TAGS --- */
+        .floating-tag {
+            position: absolute; padding: 0.6rem 1.2rem; background: rgba(255,255,255,0.05);
+            border: 1px solid var(--glass-border); border-radius: 100px;
+            font-size: 0.7rem; font-weight: 700; color: var(--silver);
+            text-transform: uppercase; letter-spacing: 0.1em; backdrop-filter: blur(8px);
+            animation: float 6s ease-in-out infinite; z-index: 10;
+        }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+
+        /* --- GLASS CARDS --- */
+        .glass-card { background: var(--glass); border: 1px solid var(--glass-border); border-radius: 8px; backdrop-filter: blur(20px); transition: all 0.4s var(--transition); }
+        .glass-card:hover { border-color: rgba(255, 77, 45, 0.4); transform: translateY(-10px); }
+
+        /* --- SCIENCE STATS --- */
+        .science-stats { background: #050505; }
+        .stat-row { display: grid; grid-template-columns: 250px 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem; }
+        .donut { 
+            width: 180px; height: 180px; border-radius: 50%;
+            background: conic-gradient(var(--accent) var(--perc), #1a1a1a 0);
+            position: relative; display: flex; align-items: center; justify-content: center;
+        }
+        .donut::after { content: attr(data-label); position: absolute; width: 140px; height: 140px; background: #050505; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: 900; color: var(--accent); }
+        
+        .bar-chart-vertical { height: 180px; display: flex; align-items: flex-end; gap: 1rem; width: 180px; justify-content: center; }
+        .bar-v { width: 40px; background: #1a1a1a; border-radius: 4px; position: relative; transition: height 1s var(--transition); }
+        .bar-v span { position: absolute; top: -30px; left: 50%; transform: translateX(-50%); font-weight: 900; font-size: 0.8rem; }
+        .bar-v.active { background: var(--accent); box-shadow: 0 0 30px var(--accent-glow); }
+
+        /* --- MASTERY MAP --- */
+        .map-workflow { position: relative; padding: 4rem 0; width: 100%; max-width: 800px; margin: 0 auto; }
+        .map-workflow::before { content: ""; position: absolute; left: 25px; top: 0; bottom: 0; width: 2px; background: var(--glass-border); }
+        .map-step { display: flex; gap: 3rem; margin-bottom: 4rem; position: relative; }
+        .map-waypoint { width: 52px; height: 52px; border-radius: 12px; background: #000; border: 2px solid var(--glass-border); flex-shrink: 0; position: relative; z-index: 2; transition: all 0.4s var(--transition); display: flex; align-items: center; justify-content: center; font-weight: 900; color: var(--text-dim); }
+        .map-step:hover .map-waypoint { border-color: var(--accent); color: var(--accent); box-shadow: 0 0 20px var(--accent-glow); transform: scale(1.1) rotate(45deg); }
+        .map-step:hover .map-waypoint span { transform: rotate(-45deg); }
+        .map-label { font-size: 0.7rem; color: var(--accent); font-weight: 800; text-transform: uppercase; margin-bottom: 0.5rem; display: block; }
+        .map-chapters { list-style: none; margin-top: 1rem; color: var(--text-dim); font-size: 0.9rem; }
+        .map-chapters li::before { content: "→"; margin-right: 0.5rem; color: var(--accent); }
+
+        /* --- POWER DECK --- */
+        .deck-viewport { height: 500px; perspective: 2000px; display: flex; justify-content: center; align-items: center; }
+        .deck-stack { position: relative; width: 260px; height: 380px; transform-style: preserve-3d; cursor: pointer; }
+        .deck-card { position: absolute; inset: 0; background: #080808; border: 1px solid var(--glass-border); border-radius: 12px; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.7s var(--transition); box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
+        .deck-card:nth-child(1) { transform: rotate(0deg) translateZ(40px); }
+        .deck-card:nth-child(2) { transform: rotate(5deg) scale(0.95); opacity: 0.8; }
+        .deck-card:nth-child(3) { transform: rotate(-5deg) scale(0.95); opacity: 0.8; }
+        .deck-card:nth-child(4) { transform: rotate(10deg) scale(0.9); opacity: 0.6; }
+        
+        .deck-stack:hover .deck-card:nth-child(1) { transform: translateX(-320px) rotate(-10deg) translateZ(100px); }
+        .deck-stack:hover .deck-card:nth-child(2) { transform: translateX(-110px) rotate(-3deg) translateZ(80px); }
+        .deck-stack:hover .deck-card:nth-child(3) { transform: translateX(110px) rotate(3deg) translateZ(80px); }
+        .deck-stack:hover .deck-card:nth-child(4) { transform: translateX(320px) rotate(10deg) translateZ(100px); }
+        
+        .card-rank { font-size: 1.5rem; font-weight: 900; color: var(--accent); line-height: 1; }
+        .card-title-playing { font-size: 1.25rem; font-weight: 800; text-transform: uppercase; margin: 2rem 0 1rem; color: #fff; }
+
+        /* --- OBJECTIONS --- */
+        .objection-group { margin-bottom: 8rem; }
+        .responses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+        .response-card { padding: 3rem 2rem; position: relative; overflow: hidden; height: 100%; display: flex; flex-direction: column; }
+        .card-watermark { position: absolute; bottom: -20px; right: 0; font-size: 12rem; font-weight: 900; color: rgba(255,255,255,0.02); line-height: 1; pointer-events: none; }
+        .card-gold { background: linear-gradient(135deg, #FFD700 0%, #B8860B 100%); color: #000; border: none; }
+        .card-gold .card-rank, .card-gold strong, .card-gold h3 { color: #000; }
+        .card-gold .card-watermark { color: rgba(0,0,0,0.05); }
+
+        /* --- FAQ --- */
+        .accordion-item { border: 1px solid var(--glass-border); border-radius: 8px; margin-bottom: 1rem; overflow: hidden; }
+        .accordion-header { width: 100%; padding: 1.5rem 2rem; background: var(--glass); border: none; color: #fff; text-align: left; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.3s; }
+        .accordion-header:hover { background: rgba(255,255,255,0.06); }
+        .accordion-icon { width: 24px; height: 24px; position: relative; }
+        .accordion-icon::before, .accordion-icon::after { content: ""; position: absolute; background: var(--accent); transition: transform 0.3s; }
+        .accordion-icon::before { width: 100%; height: 2px; top: 11px; left: 0; }
+        .accordion-icon::after { width: 2px; height: 100%; left: 11px; top: 0; }
+        .accordion-item.active .accordion-icon::after { transform: rotate(90deg); opacity: 0; }
+        .accordion-body { max-height: 0; overflow: hidden; transition: max-height 0.4s var(--transition); background: rgba(0,0,0,0.2); }
+        .accordion-item.active .accordion-body { max-height: 500px; }
+        .accordion-content { padding: 2rem; color: var(--text-dim); line-height: 1.7; }
+
+        /* --- LIGHT SECTIONS --- */
+        .section-light { 
+            background: var(--silver); 
+            color: #1a1a1a; 
+            --text-dim: #4B5563; 
+            --glass-border: rgba(0,0,0,0.1); 
+        }
+        .section-light h2, .section-light h3, .section-light h4, .section-light strong { color: #000 !important; }
+        .section-light p { color: #374151; }
+        .section-light .eyebrow { color: rgba(0,0,0,0.5); }
+        .section-light .divider { background: rgba(0,0,0,0.1); }
+        .section-light .glass-card { background: rgba(0,0,0,0.03); border-color: rgba(0,0,0,0.1); color: #1a1a1a; }
+        .section-light .glass-card:hover { border-color: var(--accent); }
+        .section-light .map-chapters { color: #4B5563; }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .responses-grid, .stat-row { grid-template-columns: 1fr; }
+            .hero-title { font-size: 3rem; }
+            .deck-stack { transform: scale(0.8); }
+            .floating-tag { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <!-- HERO SECTION -->
+    <section class="section-pad" style="min-height: 100vh; display: flex; align-items: center;">
+        <div class="container flex-center">
+            <!-- Floating Tags -->
+            <div class="floating-tag" style="top: -20%; left: -10%; animation-delay: 0s;">{{ data.hero.tags[0] }}</div>
+            <div class="floating-tag" style="top: 10%; right: -5%; animation-delay: 1s;">{{ data.hero.tags[1] }}</div>
+            <div class="floating-tag" style="bottom: 0%; left: -5%; animation-delay: 2s;">{{ data.hero.tags[2] }}</div>
+            <div class="floating-tag" style="top: 40%; left: -15%; animation-delay: 0.5s;">{{ data.hero.tags[3] }}</div>
+
+            <span class="eyebrow reveal">{{ data.hero.tagline }}</span>
+            <h1 class="hero-title reveal">
+                {{ data.hero.headline_main }}<br><span>{{ data.hero.headline_accent }}</span>
+                <div class="silver-hl" style="margin-top: 2rem;">{{ data.hero.subheadline_silver }}</div>
+            </h1>
+            <p class="reveal" style="max-width: 750px; margin-bottom: 4rem; font-size: 1.25rem; color: var(--text-dim); font-weight: 300;">
+                {{ data.hero.description | safe }}
+            </p>
+            <div class="reveal">
+                <a href="#pricing" class="btn">{{ data.hero.cta_text }}</a>
+                <div style="margin-top: 1.5rem;">
+                    <a href="#mastery-map" style="color: var(--accent); text-decoration: none; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; border-bottom: 1px solid var(--accent); padding-bottom: 4px;">{{ data.hero.map_link_text }}</a>
+                </div>
+                <div class="btn-subtext">{{ data.hero.cta_subtext }}</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SCIENCE STATS -->
+    <section class="section-pad science-stats">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                <span class="eyebrow">{{ data.science_stats.headline }}</span>
+                <h2 style="font-size: 3rem;">{{ data.science_stats.subheadline }}</h2>
+                <span style="color: var(--accent); font-weight: 900; letter-spacing: 0.3em; margin-top: 1rem; display: block;">{{ data.science_stats.loss_text }}</span>
+            </div>
+
+            {% for stat in data.science_stats.entries %}
+            <div class="stat-row reveal">
+                <div class="stat-visual">
+                    {% if stat.type == 'donut' %}
+                    <div class="donut" style="--perc: {{ stat.value }};" data-label="{{ stat.value }}"></div>
+                    {% else %}
+                    <div class="bar-chart-vertical">
+                        <div class="bar-v" style="height: {{ stat.secondary_value }};"><span>{{ stat.secondary_value }}</span></div>
+                        <div class="bar-v active" style="height: 100%;"><span>{{ stat.value }}</span></div>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="stat-info">
+                    <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: #fff;">{{ stat.title }}</h3>
+                    <p style="color: var(--text-dim); font-size: 1.1rem; max-width: 700px;">{{ stat.text }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- AUDIENCE GRID -->
+    <section class="section-light section-pad">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
+                <span class="eyebrow">{{ data.audience.label }}</span>
+                <h2 style="font-size: 3.5rem;">{{ data.audience.title | safe }}</h2>
+            </div>
+            <div class="responses-grid reveal">
+                <div class="glass-card response-card">
+                    <h3 style="margin-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 1rem;">{{ data.audience.yes.title }}</h3>
+                    <ul style="list-style: none;">
+                        {% for item in data.audience.yes.entries %}
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
+                            <span style="color: var(--accent); font-weight: 900;">✓</span>
+                            <span>{{ item | safe }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="glass-card response-card" style="opacity: 0.7;">
+                    <h3 style="margin-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 1rem;">{{ data.audience.no.title }}</h3>
+                    <ul style="list-style: none;">
+                        {% for item in data.audience.no.entries %}
+                        <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
+                            <span style="color: #666; font-weight: 900;">✕</span>
+                            <span>{{ item | safe }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEMS -->
+    <section class="section-pad">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
+                <span class="eyebrow">{{ data.problems.label }}</span>
+                <h2 style="font-size: 3.5rem;">{{ data.problems.title | safe }}</h2>
+                <p style="color: var(--text-dim); font-size: 1.25rem; max-width: 700px; margin: 2rem auto;">{{ data.problems.intro }}</p>
+            </div>
+            <div class="responses-grid reveal">
+                {% for card in data.problems.cards %}
+                <div class="glass-card response-card" style="padding: 2.5rem;">
+                    <h4 style="font-size: 1.25rem; font-weight: 900; color: var(--accent); margin-bottom: 1rem;">{{ card.title }}</h4>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">{{ card.text }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="reveal glass-card" style="margin-top: 6rem; padding: 4rem; text-align: center; border-color: var(--accent-glow);">
+                <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">{{ data.problems.highlight.title | safe }}</h2>
+                <p style="font-size: 1.25rem; color: var(--text-dim); max-width: 800px; margin: 0 auto 2rem;">{{ data.problems.highlight.text | safe }}</p>
+                <p style="font-size: 1.5rem; font-weight: 900; color: var(--accent);">{{ data.problems.highlight.footer | safe }}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUE HIERARCHY -->
+    <section class="section-light section-pad">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
+                <span class="eyebrow">{{ data.hierarchy.label }}</span>
+                <h2 style="font-size: 3.5rem;">{{ data.hierarchy.title | safe }}</h2>
+            </div>
+            <div class="responses-grid reveal">
+                {% for level in data.hierarchy.levels %}
+                <div class="glass-card response-card {% if level.premium %}card-gold{% endif %}">
+                    <span class="eyebrow" style="margin-bottom: 1rem; {% if level.premium %}color: rgba(0,0,0,0.5);{% endif %}">{{ level.label }}</span>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">{{ level.title }}</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 3rem;">{{ level.description | safe }}</p>
+                    <div style="margin-top: auto; font-size: 2rem; font-weight: 900;">{{ level.price }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- PILLARS -->
+    <section class="section-pad">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                <span class="eyebrow">{{ data.pillars.label }}</span>
+                <h2 style="font-size: 4rem;">{{ data.pillars.title | safe }}</h2>
+            </div>
+            <div class="responses-grid reveal">
+                {% for pillar in data.pillars.entries %}
+                <div class="flex-center" style="text-align: left; align-items: flex-start;">
+                    <h4 style="font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--accent); padding-bottom: 1rem; width: 100%;">{{ pillar.title | safe }}</h4>
+                    <p style="color: var(--text-dim); font-size: 1.05rem;">{{ pillar.text }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section-pad" style="background: #080808;">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                <span class="eyebrow">{{ data.roadmap.label }}</span>
+                <h2 style="font-size: 4rem;">{{ data.roadmap.title | safe }}</h2>
+                <p style="color: var(--text-dim); font-size: 1.25rem; margin-top: 2rem;">{{ data.roadmap.intro }}</p>
+            </div>
+            <div class="responses-grid reveal">
+                {% for step in data.roadmap.steps %}
+                <div class="glass-card response-card" style="padding: 3rem;">
+                    <div style="font-size: 3rem; font-weight: 900; color: var(--accent); line-height: 1; margin-bottom: 1rem;">{{ step.id }}</div>
+                    <span class="eyebrow" style="color: var(--accent); margin-bottom: 1rem;">{{ step.time }}</span>
+                    <h3 style="margin-bottom: 1.5rem;">{{ step.title }}</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">{{ step.description | safe }}</p>
+                    {% if step.list %}
+                    <ul style="margin-top: 1.5rem; list-style: none; color: var(--text-dim); font-size: 0.85rem;">
+                        {% for item in step.list %}
+                        <li style="margin-bottom: 0.5rem;">→ {{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- MASTERY MAP -->
+    <section class="section-pad" id="mastery-map">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                <span class="eyebrow">{{ data.mastery_map.label }}</span>
+                <h2 style="font-size: 4rem;">{{ data.mastery_map.title | safe }}</h2>
+                <p style="color: var(--text-dim); font-size: 1.25rem; margin-top: 2rem;">{{ data.mastery_map.intro }}</p>
+            </div>
+            <div class="map-workflow">
+                {% for module in data.mastery_map.modules %}
+                <div class="map-step reveal">
+                    <div class="map-waypoint"><span>{{ module.id }}</span></div>
+                    <div class="map-content">
+                        <span class="map-label">Modulo {{ module.id }}</span>
+                        <h3 style="font-size: 1.75rem; color: #fff;">{{ module.title }}</h3>
+                        <ul class="map-chapters">
+                            {% for chapter in module.chapters %}
+                            <li>{{ chapter }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- POWER DECK -->
+    <section class="section-pad science-stats">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
+                <span class="eyebrow">{{ data.power_deck.label }}</span>
+                <h2 style="font-size: 4rem;">{{ data.power_deck.title | safe }}</h2>
+                <p style="color: var(--text-dim); font-size: 1.1rem; margin-top: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">{{ data.power_deck.intro }}</p>
+            </div>
+            <div class="deck-viewport reveal">
+                <div class="deck-stack">
+                    {% for card in data.power_deck.cards %}
+                    <div class="deck-card">
+                        <div class="card-rank">{{ card.rank }}<span class="card-suit">&{{ card.suit }};</span></div>
+                        <div class="flex-center">
+                            <h4 class="card-title-playing">{{ card.title }}</h4>
+                            <p class="card-desc-playing">{{ card.description | safe }}</p>
+                        </div>
+                        <div class="card-rank" style="transform: rotate(180deg); align-self: flex-end;">{{ card.rank }}<span class="card-suit">&{{ card.suit }};</span></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="flex-center reveal" style="margin-top: 4rem;">
+                <p style="font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em;">{{ data.power_deck.hover_hint }}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ECOSYSTEM & BONUSES -->
+    <section class="section-light section-pad">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                <span class="eyebrow">{{ data.ecosystem.label }}</span>
+                <h2 style="font-size: 4rem;">{{ data.ecosystem.title | safe }}</h2>
+            </div>
+            <div class="reveal" style="max-width: 800px; margin: 0 auto 6rem;">
+                {% for item in data.ecosystem.entries %}
+                <div style="display: flex; gap: 2rem; margin-bottom: 3rem; align-items: flex-start;">
+                    <div style="font-size: 1.25rem; font-weight: 900; opacity: 0.3;">0{{ loop.index }}</div>
+                    <div>
+                        <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">{{ item.title }}</h4>
+                        <p style="color: rgba(0,0,0,0.6); line-height: 1.7;">{{ item.text }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="responses-grid reveal">
+                {% for bonus in data.ecosystem.bonuses %}
+                <div class="glass-card response-card {% if bonus.limited %}card-gold{% endif %}" style="padding: 2.5rem;">
+                    <span class="eyebrow" style="margin-bottom: 1rem; {% if bonus.limited %}color: rgba(0,0,0,0.5);{% endif %}">{% if bonus.limited %}{{ bonus.limited }}{% else %}Bonus #{{ bonus.id }}{% endif %}</span>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">{{ bonus.title }}</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 2rem;">{{ bonus.text }}</p>
+                    <div style="margin-top: auto; font-weight: 900; color: var(--accent);">Valore {{ bonus.value }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section-pad" id="pricing">
+        <div class="container flex-center">
+            <span class="eyebrow reveal">L'investimento</span>
+            <h2 class="reveal" style="font-size: 4rem; margin-bottom: 4rem;">Il <strong>valore reale</strong> di una skill <strong>perpetua</strong></h2>
+            
+            <div class="reveal flex-center" style="margin-bottom: 5rem;">
+                <span style="text-decoration: line-through; color: var(--text-dim); font-size: 1.5rem;">Valore Totale: &euro; {{ data.project.total_value }}</span>
+                <span style="font-size: 1.5rem; margin: 1rem 0; color: var(--silver);">Offerta Founding Member</span>
+                <span style="font-size: 6rem; font-weight: 900; background: linear-gradient(180deg, #fff, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1;">&euro;{{ data.project.base_price }}</span>
+            </div>
+
+            <div class="reveal flex-center">
+                <a href="#" class="btn">Sblocca il Mio Vantaggio Ora</a>
+                <span class="btn-subtext">Disponibili 2 rate da &euro;199 via Stripe/Klarna</span>
+            </div>
+
+            <div class="reveal glass-card" style="margin-top: 6rem; padding: 3rem; background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.2); max-width: 800px;">
+                <h3 style="color: #4ADE80; margin-bottom: 1rem;">Il Calcolo del R.O.I.</h3>
+                <p style="color: var(--text-dim);">Se nel Modulo 6 trovi anche solo <strong>un singolo cliente da &euro;500</strong> (e ti insegno esattamente come), il corso &egrave; gi&agrave; ripagato. Tutto quello che viene dopo &egrave; profitto puro basato su una competenza che non scade mai.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBJECTIONS -->
+    <section class="section-pad science-stats">
+        <div class="container">
+            {% for group in data.objections.groups %}
+            <div class="objection-group reveal">
+                <span class="eyebrow">{{ data.objections.label }}</span>
+                <h2 style="font-size: 3rem;">{{ group.title | safe }}</h2>
+                <div class="responses-grid">
+                    {% for resp in group.responses %}
+                    <div class="glass-card response-card {% if resp.watermark == 'P' %}card-gold{% endif %}">
+                        <span class="eyebrow" style="margin-bottom: 1rem; opacity: 0.5;">0{{ loop.index }} // {{ resp.type | upper }}</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">{{ resp.title }}</h3>
+                        <p style="font-size: 0.95rem;">{{ resp.text }}</p>
+                        <div class="card-watermark">{{ resp.watermark }}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% if not loop.last %}
+            <div class="flex-center reveal" style="margin-bottom: 8rem; opacity: 0.3;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-light section-pad">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 6rem;">
+                <span class="eyebrow">{{ data.faq.label }}</span>
+                <h2 style="font-size: 4rem;">{{ data.faq.title | safe }}</h2>
+            </div>
+            <div class="reveal" style="max-width: 800px; margin: 0 auto;">
+                {% for item in data.faq.entries %}
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>{{ item.q | safe }}</span>
+                        <div class="accordion-icon"></div>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-content">{{ item.a | safe }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="glass-card flex-center reveal" style="margin-top: 6rem; padding: 4rem; background: #000; color: #fff; border-color: var(--accent);">
+                    <h3 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: #fff;">{{ data.faq.guarantee.title }}</h3>
+                    <p style="color: var(--text-dim); font-size: 1.1rem; max-width: 600px;">{{ data.faq.guarantee.text }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section-pad">
+        <div class="container flex-center">
+            <h2 class="reveal" style="font-size: 4rem; margin-bottom: 6rem;">{{ data.final_cta.title | safe }}</h2>
+            
+            <div class="responses-grid reveal" style="margin-bottom: 6rem; width: 100%;">
+                {% for opt in data.final_cta.options %}
+                <div class="glass-card response-card" style="{% if opt.dim %}opacity: 0.5;{% endif %} {% if opt.highlight %}border-color: var(--accent); background: rgba(255, 77, 45, 0.05);{% endif %} padding: 3rem;">
+                    <h3 style="font-size: 2rem; margin-bottom: 1.5rem;">{{ opt.title }}</h3>
+                    <p style="font-size: 1.1rem; color: var(--text-dim);">{{ opt.text }}</p>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="reveal flex-center">
+                <a href="#" class="btn">{{ data.final_cta.button_text }}</a>
+                <p class="btn-subtext">{{ data.final_cta.subtext }}</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="section-pad" style="background: #000; border-top: 1px solid var(--glass-border); text-align: center;">
+    <div class="container">
+        <p style="color: var(--text-dim); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase;">
+            DIGITAL EMPIRE © 2026 | TUTTI I DIRITTI RISERVATI<br>
+            <a href="#" style="color: var(--accent); text-decoration: none; margin: 0 1rem;">Privacy Policy</a> • <a href="#" style="color: var(--accent); text-decoration: none; margin: 0 1rem;">Termini della Piattaforma</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+    (function() {
+        /* === Intersection Observer for Reveal === */
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        
+        revealEls.forEach(el => observer.observe(el));
+
+        /* === Accordion Logic === */
+        document.querySelectorAll('.accordion-header').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const wasActive = item.classList.contains('active');
+                
+                document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+                
+                if (!wasActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>

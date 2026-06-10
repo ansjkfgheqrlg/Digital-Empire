@@ -1,0 +1,86 @@
+{
+  "kind": "single-video",
+  "id": "uU3M_NJ70XE",
+  "title": "Claude Opus 4.8 è una Follia: 7 Casi d’Uso Reali (+ Prompt)",
+  "url": "https://www.youtube.com/watch?v=uU3M_NJ70XE",
+  "duration_sec": 931,
+  "uploader": "GabrySolution",
+  "chapters": [
+    {
+      "start": 0.0,
+      "title": "Intro"
+    },
+    {
+      "start": 43.0,
+      "title": "Il Debutto di Opus 4.8"
+    },
+    {
+      "start": 100.0,
+      "title": "Il Livello di sforzo"
+    },
+    {
+      "start": 157.0,
+      "title": "Test da prendere con le pinze"
+    },
+    {
+      "start": 183.0,
+      "title": "Il Modello Più Sincero"
+    },
+    {
+      "start": 252.0,
+      "title": "Mythos in ARRIVO"
+    },
+    {
+      "start": 327.0,
+      "title": "Difetti della 4.7"
+    },
+    {
+      "start": 381.0,
+      "title": "Colpa del Modello?"
+    },
+    {
+      "start": 424.0,
+      "title": "Le 5 Lezioni"
+    },
+    {
+      "start": 597.0,
+      "title": "1 - Capire un progetto di codice"
+    },
+    {
+      "start": 634.0,
+      "title": "2 - Caccia al Bug Difficile"
+    },
+    {
+      "start": 660.0,
+      "title": "3 - Costruire una Funzione"
+    },
+    {
+      "start": 690.0,
+      "title": "4 - Analizzare Documenti Lunghi"
+    },
+    {
+      "start": 717.0,
+      "title": "5 - Scrivere con la tua Voce"
+    },
+    {
+      "start": 741.0,
+      "title": "6 - Automatizzare i File Cowork"
+    },
+    {
+      "start": 766.0,
+      "title": "7 -Trasformare i Dati Grezzi"
+    },
+    {
+      "start": 815.0,
+      "title": "Pro e Contro di Opus 4.8"
+    }
+  ],
+  "subs": [
+    "runs\\opus48-casi-uso\\uU3M_NJ70XE.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\opus48-casi-uso\\uU3M_NJ70XE.webp"
+  ],
+  "ingested_at": "2026-06-08T15:17:48",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=uU3M_NJ70XE"
+}

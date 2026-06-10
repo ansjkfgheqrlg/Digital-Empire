@@ -1,0 +1,209 @@
+images:
+  # CAPITOLO 1 — GLI ESILIATI
+
+  - chapter: 1
+    prompt: "Dante Alighieri as a medieval exile wandering through the Italian countryside at night, dramatic oil painting style, flickering torch in hand, exhausted yet determined expression, distant city lights of Florence behind him, dark brooding atmosphere, Renaissance art style, 4k, highly detailed, no text in image"
+    style_notes: "Esilio, resilienza, fuoco interiore — il poeta senza casa che brucia dentro"
+
+  - chapter: 2
+    prompt: "Napoleon Bonaparte alone on the rocky cliffs of Saint Helena island, dramatic oil painting style, stormy Atlantic ocean in the background, military coat worn but proud posture, dictating memoirs into the void, intense gaze toward the horizon, 4k, no text in image"
+    style_notes: "Prigionia, volontà indistruttibile — l'imperatore sconfitto che non si arrende"
+
+  - chapter: 3
+    prompt: "Victor Hugo writing furiously by candlelight in a stone house on the island of Guernsey, dramatic oil painting style, dark sea visible through the window, defiant expression, stacks of manuscript pages around him, stormy sky outside, 4k, no text in image"
+    style_notes: "Esilio e resistenza — la penna come arma contro la tirannia"
+
+  - chapter: 4
+    prompt: "Ovid the Roman poet sitting alone at the edge of a frozen Black Sea shore in Tomis, dramatic oil painting style, his toga inadequate against the cold, writing on papyrus by moonlight, longing expression, desolate barbarian landscape, 4k, no text in image"
+    style_notes: "Confino ai confini del mondo — il genio che sopravvive al silenzio"
+
+  - chapter: 5
+    prompt: "Seneca the Stoic philosopher writing in a sparse stone room on the island of Corsica, dramatic oil painting style, single oil lamp, mountains visible through a small window, serene yet powerful expression, surrounded by scrolls, 4k, no text in image"
+    style_notes: "Il tempo tolto come dono — la filosofia nasce dall'esilio"
+
+  - chapter: 6
+    prompt: "Aleksandr Solzhenitsyn writing secretly in a small wooden house in the Soviet Union, dramatic oil painting style, winter landscape outside, worn face of a survivor, hidden manuscripts under floorboards, determined and defiant gaze, cold Siberian light, 4k, no text in image"
+    style_notes: "La verità contro l'impero — un uomo solo che abbatte una bugia di stato"
+
+  - chapter: 7
+    prompt: "Sun Yat-sen addressing a crowd of Chinese expatriates in a foreign city, dramatic oil painting style, passionate speech gestures, traditional and modern clothing mix, revolutionary banners, urban early 20th century setting, 4k, no text in image"
+    style_notes: "Il rivoluzionario senza patria che fonda una nazione dall'esilio"
+
+  - chapter: 8
+    prompt: "Jose Marti writing revolutionary poetry in a New York tenement room, dramatic oil painting style, night scene, worn suit, passionate expression, Cuban flag in background, pen in hand, exile's longing mixed with fire, 4k, no text in image"
+    style_notes: "Il poeta che accende una rivoluzione con le parole"
+
+  # CAPITOLO 2 — GLI STRATEGHI SILENZIOSI
+
+  - chapter: 9
+    prompt: "Sun Tzu in ancient Chinese general's armor, sitting cross-legged studying bamboo scrolls before a battle, dramatic oil painting style, candlelight, mountains in background, calm and calculating expression, ink and brush nearby, 4k, no text in image"
+    style_notes: "La vittoria senza combattere — la mente come suprema arma da guerra"
+
+  - chapter: 10
+    prompt: "Niccolo Machiavelli writing The Prince at his candle-lit desk in a rural farmhouse, dramatic oil painting style, Renaissance robes, shadows on stone walls, intense focused expression, quill pen, political manuscripts scattered around, 4k, no text in image"
+    style_notes: "Il potere svelato — l'esule che scrive il manuale che nessun potente oserebbe scrivere"
+
+  - chapter: 11
+    prompt: "Otto von Bismarck seated at a large diplomatic table in 19th century Prussia, dramatic oil painting style, military uniform with medals, enormous mustache, cold calculating eyes over documents and maps, chess pieces visible symbolically, 4k, no text in image"
+    style_notes: "L'architettura del potere — parole precise come cannonate"
+
+  - chapter: 12
+    prompt: "Themistocles the Athenian admiral standing on a warship bow watching the Persian fleet advance at Salamis, dramatic oil painting style, stormy sea, burning ships in background, bronze armor, determined tactical expression, 480 BC setting, 4k, no text in image"
+    style_notes: "La debolezza trasformata in trappola — il campo di battaglia scelto dall'astuzia"
+
+  - chapter: 13
+    prompt: "Zhuge Liang seated alone on the open city walls playing a guqin lute while a massive enemy army approaches in the distance, dramatic oil painting style, white silk robes, incense burning, serene smile of supreme confidence, ancient Chinese setting, 4k, no text in image"
+    style_notes: "L'immobilità come arma — la reputazione terrorizza più di mille soldati"
+
+  - chapter: 14
+    prompt: "Scipio Africanus in Roman general armor standing on the North African coast before the Battle of Zama, dramatic oil painting style, Mediterranean light, Roman eagle standards behind him, strategic confidence in his expression, Carthage visible in the distance, 4k, no text in image"
+    style_notes: "Attaccare dove nessuno si aspetta — il colpo laterale che ribalta l'invincibile"
+
+  - chapter: 15
+    prompt: "Chanakya the ancient Indian strategist whispering strategy to young Chandragupta Maurya in a firelit forest clearing, dramatic oil painting style, brahmin robes, ancient India setting, scroll and stylus, calculating eyes, shadows of a vast empire forming, 4k, no text in image"
+    style_notes: "Il potere nell'ombra — il burattinaio che non siede mai sul trono"
+
+  - chapter: 16
+    prompt: "Cardinal Richelieu at his private desk in the Palais Cardinal reading intercepted diplomatic letters by candlelight, dramatic oil painting style, red cardinal robes, sharp intelligent eyes, maps of France and Europe spread out, quill in hand, 17th century Paris, 4k, no text in image"
+    style_notes: "Chi controlla l'informazione controlla tutto — la rete invisibile del potere"
+
+  # CAPITOLO 3 — I TRADITI
+
+  - chapter: 17
+    prompt: "Julius Caesar in the Roman Senate moments before the assassination, dramatic oil painting style, his toga beginning to be grabbed, betrayal visible in faces around him, marble columns and statues, Brutus visible with dagger, blood red toga contrast, 4k, no text in image"
+    style_notes: "Il tradimento definitivo — il potere assoluto e il coltello dell'amico"
+
+  - chapter: 18
+    prompt: "Nikola Tesla alone in his dark New York hotel room with pigeons at the window, dramatic oil painting style, elderly gaunt face illuminated by electrical sparks from his coil invention, greatness and poverty coexisting, lonely genius setting, 4k, no text in image"
+    style_notes: "Il genio derubato — la luce accesa del mondo da un uomo dimenticato"
+
+  - chapter: 19
+    prompt: "Galileo Galilei in house arrest at his Arcetri villa, dramatically lit oil painting style, nearly blind eyes turned toward the night sky through a small window, his telescope nearby, defiant yet weary expression, quill in hand still writing, 4k, no text in image"
+    style_notes: "La verità non ha bisogno del permesso — la terra si muove anche in silenzio"
+
+  - chapter: 20
+    prompt: "Alan Turing in a 1950s British university office working on a mechanical computing machine, dramatic oil painting style, intense mathematical focus, equations on chalkboard behind him, solitary genius at work, subtle tension of a man persecuted by his era, 4k, no text in image"
+    style_notes: "Il salvatore invisibile — punito per ciò che amava mentre salvava milioni"
+
+  - chapter: 21
+    prompt: "Socrates in an ancient Athenian prison cell surrounded by grieving disciples, dramatic oil painting style, calm serene face as he drinks the hemlock cup, golden afternoon light through barred window, philosophical dignity in the face of death, 4k, no text in image"
+    style_notes: "Morire per le proprie idee — la coerenza come ultimo atto di libertà"
+
+  - chapter: 22
+    prompt: "Giordano Bruno bound to a stake in Campo de Fiori Rome about to be burned, dramatic oil painting style, defiant upward gaze, flames beginning to rise, crowd watching in darkness, his eyes fixed on something beyond this world, 4k, no text in image"
+    style_notes: "Bruciare piuttosto che mentire — la visione che non può essere spenta"
+
+  - chapter: 23
+    prompt: "Ludwig van Beethoven composing the Ninth Symphony in his Vienna apartment completely deaf, dramatically lit oil painting style, quill moving furiously across manuscript paper, anguished yet transcendent expression, ear horns scattered, musical genius in silent darkness, 4k, no text in image"
+    style_notes: "Creare ciò che non puoi sentire — il limite più grande diventa il capolavoro più grande"
+
+  - chapter: 24
+    prompt: "Nicolaus Copernicus in his stone cathedral tower study in Frauenburg, dramatic oil painting style, aging face by candlelight, heliocentric model diagram on table, the De Revolutionibus manuscript before him, astronomical instruments, knowing he holds a truth that will outlive him, 4k, no text in image"
+    style_notes: "Scegliere il momento — la verità pubblicata nell'unico istante in cui non può essere punita"
+
+  # CAPITOLO 4 — I COSTRUTTORI
+
+  - chapter: 25
+    prompt: "A young Temujin as a teenager surviving alone on the Mongolian steppe in winter, dramatic oil painting style, fierce determined eyes, wolf skin cloak, snow-covered landscape, campfire in darkness, the future conqueror with nothing but survival instinct, 4k, no text in image"
+    style_notes: "Dal nulla all'impero — l'orfano che diventa padrone del mondo"
+
+  - chapter: 26
+    prompt: "Alexander the Great leading a cavalry charge at the Battle of Gaugamela, dramatic oil painting style, bronze armor and white horse, dust and chaos of battle, pointing sword forward, young face burning with purpose and conquest, Persian army before him, 4k, no text in image"
+    style_notes: "La velocità come strategia — chi non si ferma mai lascia il mondo senza fiato"
+
+  - chapter: 27
+    prompt: "Augustus Caesar in modest Roman toga walking through a transformed Rome at dusk, dramatic oil painting style, marble temples he commissioned in the background, calm eyes of absolute power hiding behind the humble posture of the first citizen, Mediterranean light, 4k, no text in image"
+    style_notes: "La pazienza come forma più alta di potere — il potere che non sembra potere"
+
+  - chapter: 28
+    prompt: "Cyrus the Great entering the gates of Babylon peacefully as crowds of freed peoples welcome him, dramatic oil painting style, magnificent Persian armor, people celebrating, a sense of liberation rather than conquest, ancient Mesopotamian setting, 4k, no text in image"
+    style_notes: "Vincere senza distruggere — il conquistatore che libera invece di schiavizzare"
+
+  - chapter: 29
+    prompt: "Charlemagne seated in his court at Aachen receiving scholars and illuminated manuscripts from across Europe, dramatic oil painting style, iron crown and warrior's build contradicting the books and pens around him, candlelit medieval hall, 4k, no text in image"
+    style_notes: "Il barbaro che salva la civiltà — costruire sopra invece di distruggere"
+
+  - chapter: 30
+    prompt: "Peter the Great Tsar of Russia working as a common carpenter in a Dutch shipyard incognito, dramatic oil painting style, towering figure in worker's clothes, enormous hands gripping ship tools, curiosity and hunger for knowledge in his face, 17th century Netherlands, 4k, no text in image"
+    style_notes: "Imparare col corpo — il re che si fa operaio per trasformare un impero"
+
+  - chapter: 31
+    prompt: "Marcus Aurelius Roman Emperor writing his Meditations alone in a military tent on the Danube frontier at night, dramatic oil painting style, imperial purple cloak over armor, single oil lamp, philosophical expression of a man governing his own soul, 4k, no text in image"
+    style_notes: "Prima di governare il mondo, governa te stesso — il filosofo sul trono"
+
+  - chapter: 32
+    prompt: "Emperor Hadrian walking along his completed Wall in Britannia at dawn, dramatic oil painting style, surveying the edge of the Roman Empire with calm satisfaction, soldiers on the wall behind him, misty Celtic landscape beyond, the wisdom of knowing where to stop, 4k, no text in image"
+    style_notes: "Sapere dove fermarsi — il confine come forza, non debolezza"
+
+  # CAPITOLO 5 — GLI INVINCIBILI
+
+  - chapter: 33
+    prompt: "Spartacus gladiator leading a charge of freed slaves against Roman legions in the Italian hills, dramatic oil painting style, broken chains visible on wrists, shield and gladius, fierce expression of someone with nothing to lose and everything to fight for, 4k, no text in image"
+    style_notes: "La libertà si prende, non si chiede — lo schiavo che fa tremare Roma"
+
+  - chapter: 34
+    prompt: "King Leonidas of Sparta with his three hundred warriors in a narrow mountain pass at Thermopylae, dramatic oil painting style, bronze Spartan shields forming a wall, Persian arrows darkening the sky, calm fearless expression, knowing they will die and choosing glory, 4k, no text in image"
+    style_notes: "Non conta quanti siete — trecento uomini, gloria eterna"
+
+  - chapter: 35
+    prompt: "Joan of Arc on horseback leading the French army through Orleans with her white banner, dramatic oil painting style, full armor glinting in morning light, passionate upward gaze, soldiers following with renewed faith, 15th century France, 4k, no text in image"
+    style_notes: "La convinzione batte l'esperienza — la contadina che guidò un esercito"
+
+  - chapter: 36
+    prompt: "Miyamoto Musashi in a dramatic duel on the island of Ganryu wielding a wooden oar, dramatic oil painting style, serene focused expression against a skilled opponent, dawn breaking over the sea, absolute stillness before the killing blow, 4k, no text in image"
+    style_notes: "Padroneggiare una cosa — il samurai che non perse mai con la preparazione totale"
+
+  - chapter: 37
+    prompt: "Attila the Hun on horseback surveying a vast burning European city from a hilltop, dramatic oil painting style, imposing armored figure against a sky lit by fires, his army stretching to the horizon, the ancient world trembling before him, 5th century AD, 4k, no text in image"
+    style_notes: "La reputazione arriva prima di te — il terrore come arma strategica"
+
+  - chapter: 38
+    prompt: "William Wallace at the Battle of Stirling Bridge rallying Scottish highlanders against English heavy cavalry, dramatic oil painting style, massive warrior with sword raised, passionate battle cry, stone bridge and river below, freedom against overwhelming odds, 4k, no text in image"
+    style_notes: "Libertà a qualunque prezzo — il cavaliere minore che sfidò un impero"
+
+  - chapter: 39
+    prompt: "Saladin Sultan at the gates of Jerusalem in 1187 ordering mercy for the defeated Christian prisoners, dramatic oil painting style, magnanimous gesture contrasting with surrounding war devastation, Islamic crescent armor, golden afternoon light, honorable conqueror, 4k, no text in image"
+    style_notes: "Vincere con nobiltà — il conquistatore che scrive la storia col rispetto"
+
+  - chapter: 40
+    prompt: "Hannibal Barca leading war elephants across a snowy Alpine mountain pass, dramatic oil painting style, Carthaginian general on an elephant's back, treacherous cliffs and blizzard, determination in his face choosing the impossible route, 4k, no text in image"
+    style_notes: "L'ostacolo più grande è la strada più efficace — le Alpi come capolavoro strategico"
+
+  # CAPITOLO 6 — I VISIONARI
+
+  - chapter: 41
+    prompt: "Leonardo da Vinci in his Renaissance workshop surrounded by flying machine sketches anatomical drawings and paintings in progress, dramatic oil painting style, intense curious eyes examining a bird in flight, quill in hand, multiple half-finished masterpieces visible, 4k, no text in image"
+    style_notes: "Non aspettare che il mondo ti capisca — il genio che vede 500 anni avanti"
+
+  - chapter: 42
+    prompt: "Marco Polo on the Silk Road desert caravan route approaching the glittering palaces of Kublai Khan's Cathay, dramatic oil painting style, young Venetian merchant exhausted but awestruck, camels and foreign landscapes, the discovery of an entire unknown world, 4k, no text in image"
+    style_notes: "Chi va dove nessuno va trova ciò che nessuno trova — il coraggio dell'ignoto"
+
+  - chapter: 43
+    prompt: "Confucius teaching a small group of students from different social classes under an ancient tree in ancient China, dramatic oil painting style, wise elderly face, scroll in hand, gesture of patient wisdom, humble setting, the weight of ideas that will outlast empires, 4k, no text in image"
+    style_notes: "Insegnare con l'esempio — le parole che governano ancora miliardi"
+
+  - chapter: 44
+    prompt: "Diogenes the Cynic philosopher in his famous barrel with a lantern in broad Athens daylight confronting the powerful, dramatic oil painting style, ragged cloak, sardonic expression, wealthy citizens discomfited by his simplicity, ancient Athenian agora setting, 4k, no text in image"
+    style_notes: "Possedere meno controllare di più — la libertà totale del nulla"
+
+  - chapter: 45
+    prompt: "Epictetus the freed slave philosopher teaching Roman senators and generals in his modest school in Nicopolis, dramatic oil painting style, lame leg visible, calm commanding presence despite humble dress, students leaning forward to catch his words, contrast of power and wisdom, 4k, no text in image"
+    style_notes: "Controlla solo ciò che puoi controllare — lo schiavo che insegnò la libertà ai padroni del mondo"
+
+  - chapter: 46
+    prompt: "Cleopatra being dramatically revealed from an unrolled carpet at the feet of Julius Caesar in Alexandria, dramatic oil painting style, regal poise despite the surprise entrance, intelligence in her eyes, Egyptian gold jewelry, Roman marble palace, a queen taking command of the most powerful man in the world, 4k, no text in image"
+    style_notes: "Usa ogni risorsa che hai senza vergogna — gli scacchi con gli imperi"
+
+  - chapter: 47
+    prompt: "Frederick the Great of Prussia playing the flute alone in Sans-Souci palace at night after a victorious battle, dramatic oil painting style, military uniform still on, musical score illuminated by candles, the warrior-philosopher in a rare moment of private peace, 18th century opulence, 4k, no text in image"
+    style_notes: "La preparazione batte il talento — il ragazzo col flauto che vinse la guerra"
+
+  - chapter: 48
+    prompt: "Ramses II overseeing the colossal construction of Abu Simbel with giant statues of himself being carved from sandstone cliffs, dramatic oil painting style, Egyptian pharaoh in full regalia, workers around him, the deliberate construction of an eternal narrative, ancient Nile setting, 4k, no text in image"
+    style_notes: "Controlla la narrativa e controlli la realtà — il faraone che si fece dio per l'eternità"
+
+  # CAPITOLO 7 — LA TUA LEGGE
+  - chapter: 49
+    prompt: "A solitary person sitting at a desk by a window at night writing in a journal, dramatic oil painting style, single candle illuminating the page, the weight of a personal decision being made, blank book open with a pen ready, intimate and powerful moment of self-definition, 4k, no text in image"
+    style_notes: "La 49ª legge — quella che scrivi tu"

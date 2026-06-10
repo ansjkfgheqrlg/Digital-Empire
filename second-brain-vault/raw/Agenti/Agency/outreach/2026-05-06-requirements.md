@@ -1,0 +1,30 @@
+# requirements
+
+> Source: File system (`Agenti\Agency\outreach\requirements.txt`)
+> Collected: 2026-05-06
+> Published: Unknown
+
+# ============================================================
+# requirements.txt — Agente Outreach
+# Installa con: pip install -r requirements.txt
+# ============================================================
+
+# HTTP e web scraping
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==5.1.0
+
+# Google APIs (solo Sheets, per qualify/draft/track — non serve per i workflow di ricerca)
+google-api-python-client==2.118.0
+google-auth==2.28.1
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.0
+
+# Anthropic / Claude
+anthropic==0.40.0
+
+# Variabili d'ambiente
+python-dotenv==1.0.1
+
+# Utilità
+urllib3==2.2.1

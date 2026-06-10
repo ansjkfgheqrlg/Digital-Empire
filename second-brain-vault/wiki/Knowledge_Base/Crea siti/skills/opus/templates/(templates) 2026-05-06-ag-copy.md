@@ -1,0 +1,87 @@
+# ag-copy
+            
+> Path: [[Map - Crea_Siti|Crea siti > skills > opus > templates]]
+
+## Content
+
+# AG-5 — Copy Refinement
+> Momento Anti-Gravity #5 | Fase 6.2 — Copy Quality Gate
+> Usa questo template dopo il quality gate del copy per raffinare headline e varianti A/B.
+
+---
+
+## Quando usare questo template
+
+**Fase:** 6.2 — dopo che i 3 agenti copy hanno prodotto SITE-COPY.md e il quality gate è passato
+**Obiettivo:** raffinare le headline più importanti, creare varianti A/B, scavare più in profondità emotivamente
+
+---
+
+## Struttura del Prompt AG-5
+
+```
+Sei un copywriter direct-response con 20 anni di esperienza in info business e lanci.
+Rivedi e raffina questo copy per un sito [tipo sito]:
+
+CONTESTO:
+Prodotto/Offerta: [cosa si vende — es. "corso di fotografia professionale, 8 settimane, €1.497"]
+Audience: [persona principale — età, situazione, dolore principale, desiderio principale]
+Tono del brand: [asse formale/informale, serio/giocoso, tecnico/umano, riservato/audace]
+Obiezione principale del target: [la più grande resistenza all'acquisto]
+Trasformazione promessa: [da dove a dove — "da [situazione A] a [situazione B]"]
+
+HEADLINE HERO ATTUALE (H1):
+"[headline attuale]"
+
+SUBHEADLINE ATTUALE (H2):
+"[subheadline attuale]"
+
+CTA PRINCIPALE ATTUALE:
+"[testo CTA]"
+
+SEZIONE PROMISE/VALUE PROP (corpo):
+"[copia il paragrafo principale della sezione Promise o Value Prop]"
+
+---
+
+CHIEDO:
+1. CRITICA DIRETTA: Cosa non funziona nell'headline attuale? Sii brutale.
+   Poi: perché un concorrente diretto potrebbe usare la stessa headline?
+   (Se la risposta è "sì, potrebbe" → è troppo generica)
+
+2. VARIANTI HEADLINE A/B: Scrivi 5 varianti alternative per H1.
+   Mix di approcci: logico / emozionale / provocatorio / specifico / storytelling
+   Per ognuna: 1 riga di spiegazione su quale leva psicologica usa.
+
+3. VERSIONE EMOZIONALE PROFONDA: Riscrivi H1 + H2 toccando il dolore più profondo
+   (non quello di superficie) del target. Il dolore che non dicono ad alta voce.
+   Es: non "voglio più clienti" ma "ho paura che la mia idea non funzionerà mai"
+
+4. OBIEZIONE PRINCIPALE: Scrivi 3 modi diversi per gestire [obiezione principale]
+   direttamente nel copy (non nasconderla — affrontarla). Stile diretto, non corporate.
+
+5. CTA POWER VARIATIONS: Scrivi 5 varianti di CTA per il bottone principale.
+   Evita: "Scopri di più", "Inizia ora", "Clicca qui".
+   Includi: verbo + beneficio specifico + riduzione del rischio (in max 5 parole)
+
+6. BOLD WORD CHECK: Nel paragrafo [sezione Promise] che ti ho dato,
+   le parole in grassetto (<strong>) sono quelle giuste?
+   Rifai il paragrafo applicando il Bold Word System correttamente.
+```
+
+---
+
+## Come usare l'output
+
+1. **Scegli** la variante headline più forte — porta in SITE-COPY.md come headline principale
+2. **Salva** le varianti A/B come alternative per test futuro (sezione "Varianti" in SITE-COPY.md)
+3. **Applica** la versione emozionale profonda alla sezione Problem/Agitation
+4. **Integra** la gestione dell'obiezione nella sezione FAQ o in un blocco dedicato
+5. **Aggiorna** il bold word system in tutti i paragrafi del corpo
+
+Di' a opus-director: "AG-5 completato, copy raffinato" → procede Fase 7 Build.
+
+## Collegamenti Correlati
+- [[Map - Agenti|Agenti Area]]
+- [[Map - App|App Area]]
+- [[Map - Crea_Siti|Crea Siti Area]]

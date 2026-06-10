@@ -1,0 +1,12 @@
+{
+  "name": "agent-factory",
+  "version": "1.0.0",
+  "description": "A pipeline of 4 skills that collaborate to design, write, build, and validate professional Claude Code agents from scratch.",
+  "author": "Digital Empire",
+  "skills": [
+    "skills/agent-architect",
+    "skills/system-prompt-forge",
+    "skills/agent-builder",
+    "skills/agent-quality-sentinel"
+  ]
+}
