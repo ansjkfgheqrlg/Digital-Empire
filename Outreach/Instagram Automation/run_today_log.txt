@@ -8412,3 +8412,123 @@ Call log:
 2026-06-09 10:22:16,007    Follow-up F2:      0
 2026-06-09 10:22:16,007    Lead totali in DB: 2995
 2026-06-09 10:22:16,007  ============================================================
+2026-06-11 10:58:36,750  ============================================================
+2026-06-11 10:58:36,750  INSTAGRAM DAILY RUN  2026-06-11 10:58:36
+2026-06-11 10:58:36,751  ============================================================
+2026-06-11 10:58:47,778  Verifica sessione Instagram...
+2026-06-11 10:58:56,462    Sessione valida [OK]
+2026-06-11 10:58:56,523  DM oggi: 0/30 (rimangono: 30)
+2026-06-11 10:58:56,523  Follow-up oggi: 0/20 (rimangono: 20)
+2026-06-11 10:58:56,524  FASE 0 — Sub-agents: Scout massivo + Qualifier + Similar Scout
+2026-06-11 10:58:56,524    [A] Hashtag Scout (10 hashtag × 25 profili)...
+2026-06-11 10:59:20,372    [SCOUT] #businesscoach: 3 API + 1 script + 0 URL = 4 candidati
+2026-06-11 10:59:20,373    [SCOUT] #businesscoach: 4 profili selezionati (max 25)
+2026-06-11 10:59:20,386    [SCOUT] Pool totale: 1 candidati
+2026-06-11 10:59:47,807    [SCOUT] #imprenditoreitaliano: 3 API + 1 script + 0 URL = 4 candidati
+2026-06-11 10:59:47,807    [SCOUT] #imprenditoreitaliano: 4 profili selezionati (max 25)
+2026-06-11 10:59:47,810    [SCOUT] Pool totale: 2 candidati
+2026-06-11 11:00:15,630    [SCOUT] #growthhacking: 4 API + 1 script + 0 URL = 5 candidati
+2026-06-11 11:00:15,630    [SCOUT] #growthhacking: 5 profili selezionati (max 25)
+2026-06-11 11:00:15,633    [SCOUT] Pool totale: 4 candidati
+2026-06-11 11:00:44,452    [SCOUT] #marketingdigitale: 4 API + 1 script + 0 URL = 5 candidati
+2026-06-11 11:00:44,452    [SCOUT] #marketingdigitale: 5 profili selezionati (max 25)
+2026-06-11 11:00:44,454    [SCOUT] Pool totale: 5 candidati
+2026-06-11 11:01:12,631    [SCOUT] #adsspecialist: 4 API + 1 script + 0 URL = 5 candidati
+2026-06-11 11:01:12,632    [SCOUT] #adsspecialist: 5 profili selezionati (max 25)
+2026-06-11 11:01:12,633    [SCOUT] Pool totale: 6 candidati
+2026-06-11 11:01:40,533    [SCOUT] #personalbranding: 4 API + 1 script + 0 URL = 5 candidati
+2026-06-11 11:01:40,534    [SCOUT] #personalbranding: 5 profili selezionati (max 25)
+2026-06-11 11:01:40,539    [SCOUT] Pool totale: 7 candidati
+2026-06-11 11:02:07,596    [SCOUT] #formatoreonline: 3 API + 1 script + 0 URL = 4 candidati
+2026-06-11 11:02:07,598    [SCOUT] #formatoreonline: 4 profili selezionati (max 25)
+2026-06-11 11:02:07,600    [SCOUT] Pool totale: 7 candidati
+2026-06-11 11:02:44,993    [SCOUT] #agenziamarketing: 4 API + 1 script + 0 URL = 5 candidati
+2026-06-11 11:02:44,993    [SCOUT] #agenziamarketing: 5 profili selezionati (max 25)
+2026-06-11 11:02:44,997    [SCOUT] Pool totale: 8 candidati
+2026-06-11 11:03:12,362    [SCOUT] #businessmentor: 4 API + 1 script + 0 URL = 5 candidati
+2026-06-11 11:03:12,362    [SCOUT] #businessmentor: 5 profili selezionati (max 25)
+2026-06-11 11:03:12,364    [SCOUT] Pool totale: 9 candidati
+2026-06-11 11:03:40,928    [SCOUT] #socialmediaconsulente: 5 API + 1 script + 0 URL = 6 candidati
+2026-06-11 11:03:40,929    [SCOUT] #socialmediaconsulente: 6 profili selezionati (max 25)
+2026-06-11 11:03:40,930    [SCOUT] Pool totale: 10 candidati
+2026-06-11 11:03:46,329  [SCOUT] Completato — 10 candidati da 10 hashtag
+2026-06-11 11:03:46,329    [A] Scout completato: 10 candidati grezzi
+2026-06-11 11:03:46,329    [B] Profile Qualifier (max 60 profili)...
+2026-06-11 11:03:49,740    [QUAL] @snapl.in: bio_score=0 target=False dm=False bio='Snaplin - Customer Success Management'
+2026-06-11 11:04:02,111    [QUAL] @adarshxdesign: bio_score=0 target=False dm=False bio='Adarsh | Designer & Creative Educator'
+2026-06-11 11:04:08,468    [QUAL] @pellinidigital: bio_score=0 target=False dm=False bio='9 seguiti'
+2026-06-11 11:04:25,875    [QUAL] @the.krista.k: bio_score=0 target=False dm=False bio='Krista Kowalczyk | Photo Organizing Advo'
+2026-06-11 11:04:31,322    [QUAL] @logodiffusion: bio_score=0 target=False dm=False bio='Logo Diffusion'
+2026-06-11 11:04:38,175    [QUAL] @cookwithfez: bio_score=0 target=False dm=False bio='Federico Polizzi'
+2026-06-11 11:04:44,550    [QUAL] @drmorgancorso_official: bio_score=3 target=True dm=True bio='Dr Morgan Corso | Mental Coach & Formato'
+2026-06-11 11:04:44,550    [QUAL] QUALIFICATO @drmorgancorso_official (score 3)
+2026-06-11 11:04:46,460  [QUAL] Completato — 1 qualificati su 10 visitati (10/10)
+2026-06-11 11:04:46,460    [B] Qualificati: 1 pronti per DM
+2026-06-11 11:04:46,502    [C] Similar Accounts Scout (top 5 profili qualificati)...
+2026-06-11 11:05:00,895    [SIMILAR] @drmorgancorso_official: 4 API + 5 DOM → 2 nuovi suggeriti
+2026-06-11 11:05:04,115  [SIMILAR] Completato — 2 nuovi candidati da 1 profili visitati
+2026-06-11 11:05:04,115    [C] Account simili trovati: 2
+2026-06-11 11:05:04,149  FASE 0 completata — 3 lead pronti nel pool
+2026-06-11 11:05:04,149  FASE 1 — Ricerca legacy da hashtag (backup)
+2026-06-11 11:05:18,976    #socialmediaconsulente: 4 username da API network
+2026-06-11 11:05:19,001    #socialmediaconsulente: 1 username da script embedded
+2026-06-11 11:05:19,015    #socialmediaconsulente: 0 username da URL, 30 post link
+2026-06-11 11:05:19,016    #socialmediaconsulente: @daydoes3d
+2026-06-11 11:05:19,016    #socialmediaconsulente: @frisoninside
+2026-06-11 11:05:19,016    #socialmediaconsulente: @_marco_cmp_92_
+2026-06-11 11:05:19,016    #socialmediaconsulente: 3 profili validi (candidati: 5)
+2026-06-11 11:05:41,359    #growthhacking: 5 username da API network
+2026-06-11 11:05:41,364    #growthhacking: 1 username da script embedded
+2026-06-11 11:05:41,368    #growthhacking: 0 username da URL, 30 post link
+2026-06-11 11:05:41,368    #growthhacking: @cookwithfez
+2026-06-11 11:05:41,369    #growthhacking: 1 profili validi (candidati: 6)
+2026-06-11 11:06:05,429    #corsionline: 5 username da API network
+2026-06-11 11:06:05,435    #corsionline: 1 username da script embedded
+2026-06-11 11:06:05,439    #corsionline: 0 username da URL, 24 post link
+2026-06-11 11:06:05,439    #corsionline: 0 profili validi (candidati: 6)
+2026-06-11 11:06:05,439    #corsionline: 0 trovati — rate limit o struttura IG aggiornata
+2026-06-11 11:06:26,600    #agenziamarketing: 4 username da API network
+2026-06-11 11:06:26,605    #agenziamarketing: 1 username da script embedded
+2026-06-11 11:06:26,610    #agenziamarketing: 0 username da URL, 24 post link
+2026-06-11 11:06:26,610    #agenziamarketing: @amit_.editz
+2026-06-11 11:06:26,610    #agenziamarketing: 1 profili validi (candidati: 5)
+2026-06-11 11:06:48,834    #adsspecialist: 4 username da API network
+2026-06-11 11:06:48,840    #adsspecialist: 1 username da script embedded
+2026-06-11 11:06:48,843    #adsspecialist: 0 username da URL, 30 post link
+2026-06-11 11:06:48,844    #adsspecialist: 0 profili validi (candidati: 5)
+2026-06-11 11:06:48,844    #adsspecialist: 0 trovati — rate limit o struttura IG aggiornata
+2026-06-11 11:07:09,163    #webagencyitalia: 4 username da API network
+2026-06-11 11:07:09,168    #webagencyitalia: 1 username da script embedded
+2026-06-11 11:07:09,172    #webagencyitalia: 0 username da URL, 30 post link
+2026-06-11 11:07:09,172    #webagencyitalia: @giuseppe_digitalmarketing
+2026-06-11 11:07:09,173    #webagencyitalia: 1 profili validi (candidati: 5)
+2026-06-11 11:07:31,564    #businessmentor: 4 username da API network
+2026-06-11 11:07:31,570    #businessmentor: 1 username da script embedded
+2026-06-11 11:07:31,574    #businessmentor: 0 username da URL, 24 post link
+2026-06-11 11:07:31,574    #businessmentor: 0 profili validi (candidati: 5)
+2026-06-11 11:07:31,574    #businessmentor: 0 trovati — rate limit o struttura IG aggiornata
+2026-06-11 11:07:53,114    #businessonline: 4 username da API network
+2026-06-11 11:07:53,119    #businessonline: 1 username da script embedded
+2026-06-11 11:07:53,123    #businessonline: 0 username da URL, 24 post link
+2026-06-11 11:07:53,124    #businessonline: 0 profili validi (candidati: 5)
+2026-06-11 11:07:53,124    #businessonline: 0 trovati — rate limit o struttura IG aggiornata
+2026-06-11 11:08:01,876    Nuovi lead trovati: 6 | Totale DB: 3004
+2026-06-11 11:08:01,876  FASE 2 — Invio DM (rimangono: 30)
+2026-06-11 11:08:01,877    Lead da processare: 2223 (1 qualified + 2222 new)
+2026-06-11 11:08:10,977  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-11 11:08:11,706  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-11 11:08:11,994  HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-11 11:08:17,232    [WARN] RATE LIMIT rilevato: 'Si è verificato un errore' — fermando le azioni
+2026-06-11 11:08:19,759    Screenshot debug: c:\Users\Utente\Desktop\qui tutto\Digital Empire\Outreach\Instagram Automation\debug_rate_limit_110817.png
+2026-06-11 11:08:19,759    Rate limit durante invio DM — stop
+2026-06-11 11:08:19,760  FASE 2 completata — DM inviati oggi: 0
+2026-06-11 11:08:19,760  FASE 3 saltata — rate limit attivo
+2026-06-11 11:08:19,760  FASE 4 saltata — rate limit attivo
+2026-06-11 11:08:22,661  ============================================================
+2026-06-11 11:08:22,662  INSTAGRAM DAILY COMPLETATO
+2026-06-11 11:08:22,662    DM primo contatto: 0
+2026-06-11 11:08:22,662    Follow-up F1:      0
+2026-06-11 11:08:22,662    Follow-up F2:      0
+2026-06-11 11:08:22,662    Lead totali in DB: 3004
+2026-06-11 11:08:22,662    ⚠ Rate limit Instagram rilevato — domani riprova con calma
+2026-06-11 11:08:22,662  ============================================================
