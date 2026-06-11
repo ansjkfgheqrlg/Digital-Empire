@@ -19,8 +19,10 @@ Obiettivo fase: 0 cartelle vuote, 0 file magri, ogni agente con scheda
 completa stile CF (identità, responsabilità, I/O, come ragiona, KPI, escalation).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- **MAX SI FERMA (2026-06-11 pomeriggio). IL TESTIMONE PASSA A GAEL.** Il blocco
-  "Max scrive in company/" è RIMOSSO: dopo il reset delle 19:50, `company/` è di Gael.
+- **GAEL/swarm sta scrivendo in `company/Ecosistemi/`, Mandato, Board-CSuite, Backbone,
+  Sentinels, Guilds, Gerarchia, org (F1-bis arricchimento, da 2026-06-11 sera).**
+  Max: NON toccare queste cartelle finche' questo blocco non sparisce dallo STATO.
+  Memory/ e 01-agency/ restano fuori dal perimetro swarm (sicure).
 
 ## ▶️ ISTRUZIONI PER GAEL (prossima sessione, dopo le 19:50)
 **Task: completare F1-bis (arricchimento massivo company/) col NUOVO METODO.**
