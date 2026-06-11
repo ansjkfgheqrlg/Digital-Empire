@@ -23,5 +23,29 @@
     "additionalDirectories": [
       "C:\\Users\\Utente\\.claude"
     ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/empire-sync.ps1 -Mode pull",
+            "timeout": 90
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/empire-sync.ps1 -Mode push",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
   }
 }
