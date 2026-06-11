@@ -53,7 +53,14 @@ Poi cancella questo file.
     Write-Output "EMPIRE-SYNC: conflitto rilevato - vedi SYNC-CONFLICT.txt"
 }
 
+function Test-Online {
+    # GitHub raggiungibile? Se no: niente sync, niente falsi allarmi (si riprova al prossimo giro)
+    git ls-remote --exit-code origin HEAD 2>$null | Out-Null
+    return ($LASTEXITCODE -eq 0)
+}
+
 function Do-Pull {
+    if (-not (Test-Online)) { Write-Output "EMPIRE-SYNC: offline, salto (riprovo al prossimo giro)"; return $true }
     git fetch origin 2>$null | Out-Null
     $rebase = git pull --rebase --autostash origin main 2>&1
     if ($LASTEXITCODE -ne 0) {
@@ -75,6 +82,14 @@ function Do-Push {
 
     # Commit solo se c'e' qualcosa di nuovo
     $dirty = git status --porcelain 2>$null
+    if ($dirty) {
+        git add -A 2>$null | Out-Null
+        $who = git config user.name
+        git commit -m "sync($who): aggiornamento automatico $(Get-Date -Format 'yyyy-MM-dd HH:mm')" 2>$null | Out-Null
+    }
+    # Offline? Il commit locale e' fatto (lavoro al sicuro), push al prossimo giro
+    if (-not (Test-Online)) { Write-Output "EMPIRE-SYNC: offline, commit locale ok - push rimandato"; return $true }
+    $dirty = $null
     if ($dirty) {
         git add -A 2>$null | Out-Null
         $who = git config user.name
