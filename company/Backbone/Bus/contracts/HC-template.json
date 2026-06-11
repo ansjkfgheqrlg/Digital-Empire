@@ -1,0 +1,42 @@
+{
+  "_schema": "empire-handoff-contract-v1",
+  "_doc": "Contratto standard per handoff tra ecosistemi EMPIRE OS. Copia e compila per ogni handoff.",
+
+  "from": {
+    "ecosystem": "01-AGENCY",
+    "agent": "outreach-executor",
+    "task_id": "T-2026-001"
+  },
+
+  "to": {
+    "ecosystem": "04-MARKETING",
+    "agent": "copy-apsoc-writer",
+    "queue": "company/Backbone/Bus/handoffs/"
+  },
+
+  "payload": {
+    "type": "lead_qualificato",
+    "data": {
+      "nome_azienda": "",
+      "settore": "",
+      "pain_point_emerso": "",
+      "budget_stimato": "",
+      "urgenza": "alta | media | bassa"
+    },
+    "files": [],
+    "context_refs": []
+  },
+
+  "acceptance_criteria": [
+    "Copy APSOC score >= 80",
+    "Messaggio personalizzato sul pain_point_emerso",
+    "CTA con link booking Calendly"
+  ],
+
+  "metadata": {
+    "created_at": "YYYY-MM-DDTHH:MM:SSZ",
+    "due_at": "YYYY-MM-DDTHH:MM:SSZ",
+    "priority": "P1 | P2 | P3",
+    "status": "pending | in_progress | completed | rejected"
+  }
+}

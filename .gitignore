@@ -101,6 +101,12 @@ Clienti/EXPONIUM/
 .git.bak/
 **/.git.bak/
 
+# --- RUFLO / CLAUDE-FLOW RUNTIME (database locali, non condivisi) ---
+memory.db
+ruvector.db
+*.sqlite
+.claude/memory.db
+
 # --- RUMORE OS / LOG ---
 *.log
 Thumbs.db

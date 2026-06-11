@@ -1,0 +1,236 @@
+# registro-agenti.yaml — Identity-HR Registry v1
+# Fonte di verità per tutti gli agenti censiti in EMPIRE OS.
+# Aggiornare quando si aggiunge un agente. Schema: company/Gerarchia/README.md
+
+version: "1.0"
+updated: "2026-06-11"
+maintainer: "Identity-HR (Backbone)"
+
+# ── BOARD / C-SUITE (L0) ─────────────────────────────────────────
+
+board:
+
+  - id: CEO-001
+    name: Empire Conductor
+    role: CEO
+    tier: T3-Opus
+    level: L0
+    file: company/Board-CSuite/CEO-Empire-Conductor.md
+    reports_to: LX-Mandato
+    supervises: [tutti-gli-ecosistemi]
+    responsabilita: orchestrazione hive-mind, decisioni strategiche, gate qualità finale
+    input_schema: "{task, context, priority, deadline}"
+    output_schema: "{result, next_steps, handoffs[], cost_estimate}"
+    status: active
+
+  - id: COO-001
+    name: COO Empire
+    role: COO
+    tier: T2-Sonnet
+    level: L0
+    file: company/Board-CSuite/COO.md
+    reports_to: CEO-001
+    supervises: [09-OPERATIONS, backbone-health, sync]
+    responsabilita: operatività quotidiana, backbone health, sync Max-Gael
+    status: active
+
+  - id: CTO-001
+    name: CTO Empire
+    role: CTO
+    tier: T2-Sonnet  # T3-Opus per decisioni architetturali
+    level: L0
+    file: company/Board-CSuite/CTO.md
+    reports_to: CEO-001
+    supervises: [06-PLATFORM, 07-FORGE]
+    responsabilita: architettura tecnica, security gate, wrap-first invariant
+    invariant: "wrap mai riscrittura (ADR-003)"
+    status: active
+
+  - id: CMO-001
+    name: CMO Empire
+    role: CMO
+    tier: T2-Sonnet  # T3-Opus per strategy
+    level: L0
+    file: company/Board-CSuite/CMO.md
+    reports_to: CEO-001
+    supervises: [03-CONTENT-FACTORY, 04-MARKETING]
+    responsabilita: APSOC standard owner, brand voice, copy gate
+    gate: "APSOC >= 80 standard, >= 85 sales page"
+    status: active
+
+  - id: CRO-001
+    name: CRO Empire
+    role: CRO
+    tier: T2-Sonnet  # T3-Opus per deal review
+    level: L0
+    file: company/Board-CSuite/CRO.md
+    reports_to: CEO-001
+    supervises: [01-AGENCY, 02-INFO-BUSINESS]
+    responsabilita: revenue blockers, conversion, lancio prodotti
+    blockers_noti:
+      - "Token FB scaduto (outreach scraper)"
+      - "Manuale Claude Code prezzo non definito"
+    status: active
+
+  - id: CFO-001
+    name: CFO Empire
+    role: CFO
+    tier: T1-Haiku  # T2-Sonnet per analisi complesse
+    level: L0
+    file: company/Board-CSuite/CFO.md
+    reports_to: CEO-001
+    supervises: [budget, Cost-Sentinel]
+    responsabilita: budget guard, dry-run enforcer, 3-tier routing
+    invariant: "dry-run prima di spendere (pattern #3)"
+    routing_table:
+      T1_Haiku: "QA, classificazione, task ripetitivi"
+      T2_Sonnet: "produzione standard, copy, analisi"
+      T3_Opus: "strategia, architettura, decisioni critiche"
+    status: active
+
+  - id: CF-001
+    name: Chief Forge
+    role: Chief-Forge
+    tier: T3-Opus  # T2-Sonnet per skill standard
+    level: L0
+    file: company/Board-CSuite/Chief-Forge.md
+    reports_to: CEO-001
+    supervises: [07-FORGE, guilds, skills]
+    responsabilita: factory skill/agenti/team, MKD mandatory, P0 skill list
+    p0_skills:
+      - empire-context
+      - outreach-executor
+      - copy-apsoc-writer
+      - content-formatter
+      - wiki-ingestor
+      - cost-guard
+      - quality-checker
+      - brand-voice-sentinel
+      - handoff-router
+      - memory-writer
+    status: active
+
+# ── BACKBONE AGENTI (L1 trasversale) ────────────────────────────
+
+backbone:
+
+  - id: BB-BUS-001
+    name: Handoff Router
+    role: Bus Operator
+    tier: T1-Haiku
+    level: L1-backbone
+    namespace: backbone.bus
+    responsabilita: instrada handoff tra ecosistemi, verifica schema HC-v1
+    queue_path: company/Backbone/Bus/handoffs/
+    contracts_path: company/Backbone/Bus/contracts/
+    status: defined  # non ancora deployato
+
+  - id: BB-BRAIN-001
+    name: Memory Writer
+    role: Brain Operator
+    tier: T1-Haiku
+    level: L1-backbone
+    namespace: backbone.brain
+    responsabilita: scrive/legge AgentDB per tutti i 10 namespace ecosistema
+    namespaces_attivi: []  # popolato da ruflo memory init
+    status: defined
+
+# ── GUILDS (L1 trasversale) ──────────────────────────────────────
+
+guilds:
+
+  - id: GUILD-PROMPT-001
+    name: Prompt Guild
+    role: Guild Leader
+    tier: T2-Sonnet
+    file: company/Guilds/Prompt-Guild/README.md
+    status: defined
+
+  - id: GUILD-COPY-001
+    name: Copy-APSOC Guild
+    role: Guild Leader
+    tier: T2-Sonnet
+    file: company/Guilds/Copy-APSOC-Guild/README.md
+    status: defined
+
+  - id: GUILD-QUALITY-001
+    name: Quality Guild
+    role: Guild Leader
+    tier: T2-Sonnet
+    file: company/Guilds/Quality-Guild/README.md
+    status: defined
+
+  - id: GUILD-COST-001
+    name: Cost Guild
+    role: Guild Leader
+    tier: T1-Haiku
+    file: company/Guilds/Cost-Guild/README.md
+    status: defined
+
+  - id: GUILD-DESIGN-001
+    name: Design Guild
+    role: Guild Leader
+    tier: T2-Sonnet
+    file: company/Guilds/Design-Guild/README.md
+    status: defined
+
+# ── SENTINELS (L1 trasversale) ───────────────────────────────────
+
+sentinels:
+
+  - id: SENT-COST-001
+    name: Cost Sentinel
+    role: Sentinel
+    tier: T1-Haiku
+    file: company/Sentinels/Cost-Sentinel/README.md
+    supervisore: CFO-001
+    vigila: ogni spesa API/crediti, attiva dry-run se > €0.50/call
+    status: defined
+
+  - id: SENT-QUALITY-001
+    name: Quality Sentinel
+    role: Sentinel
+    tier: T2-Sonnet
+    file: company/Sentinels/Quality-Sentinel/README.md
+    supervisore: CMO-001
+    vigila: APSOC score < 80, output senza proof
+    status: defined
+
+  - id: SENT-DRIFT-001
+    name: Drift Sentinel
+    role: Sentinel
+    tier: T1-Haiku
+    file: company/Sentinels/Drift-Sentinel/README.md
+    supervisore: CTO-001
+    vigila: modifiche a sistemi attivi senza ADR
+    status: defined
+
+  - id: SENT-SECURITY-001
+    name: Security Sentinel
+    role: Sentinel
+    tier: T2-Sonnet
+    file: company/Sentinels/Security-Sentinel/README.md
+    supervisore: CTO-001
+    vigila: segreti nel repo, credenziali esposte
+    status: defined
+
+  - id: SENT-BRANDVOICE-001
+    name: BrandVoice Sentinel
+    role: Sentinel
+    tier: T1-Haiku
+    file: company/Sentinels/BrandVoice-Sentinel/README.md
+    supervisore: CMO-001
+    vigila: claim senza prova, tono passivo, canoni mensili promessi
+    status: defined
+
+# ── STATISTICHE ──────────────────────────────────────────────────
+
+stats:
+  totale_agenti: 19
+  board: 7
+  backbone: 2
+  guilds: 5
+  sentinels: 5
+  status_active: 7
+  status_defined: 12
+  note: "Gli agenti 'defined' sono censiti ma non ancora deployati come team ruflo."

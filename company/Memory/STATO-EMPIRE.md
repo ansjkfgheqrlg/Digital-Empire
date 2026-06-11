@@ -1,10 +1,13 @@
 # 📍 STATO EMPIRE — aggiornato 2026-06-11
 
 ## Fase roadmap corrente
-**F1 — Scaffolding EMPIRE OS** (appena iniziata: task 1.0 MEMORY in costruzione).
-Roadmap completa: `PIANO-MAESTRO/08-ROADMAP-FASI.md`.
+**F2 -- Backbone operativo: COMPLETATO** (2026-06-11).
+Prossima: F3 (vedi `PIANO-MAESTRO/08-ROADMAP-FASI.md`).
 
-## Cosa è stato fatto (ultimo evento in cima)
+## Cosa e' stato fatto (ultimo evento in cima)
+- 2026-06-11 — **F2 BACKBONE OPERATIVO COMPLETATO** (Gael, CP-20260611-002):
+  ruflo v3.10.41 installato, BUS (handoffs+HC-template), BRAIN (10 namespace),
+  registro-agenti.yaml (19 agenti), verify-empire.ps1 PASS 59/59.
 - 2026-06-11 — **F1 SCAFFOLDING EMPIRE OS COMPLETATO** (Gael, CP-20260611-001):
   task 1.1–1.7 completati. `company/` navigabile: GRUPPO.md, Mandato, Board-CSuite (7 agenti),
   10 Ecosistemi (ECOSISTEMA.md + BACKBONE.md + 4 sottocartelle ognuno), Backbone (6 componenti),
@@ -34,13 +37,13 @@ Roadmap completa: `PIANO-MAESTRO/08-ROADMAP-FASI.md`.
 - Ingestione Empire Studio canali YouTube riferimento (@Legamidiamore, @dosementale) —
   NON ancora fatta, è task 7.0 / F-MB1. Sessione dedicata.
 
-## ▶️ RIPRESA DA (per la prossima sessione)
+## RIPRESA DA (per la prossima sessione)
 1. Caricare questo file + INDEX.md (memory-first).
-2. **F1 COMPLETATO** ✅ — gate PASS 92/92.
-3. **Iniziare F2 — Backbone operativo:**
-   - 2.1 `ruflo init` nella root `Digital Empire/` (o `company/`) + daemon + memory init
-   - 2.2 Skill `empire-context` — verificare se aggiornare con nuova struttura F1
-   - 2.3 BUS: cartelle `Backbone/Bus/handoffs/` + contratto JSON standard
-   - 2.4 BRAIN: `ruflo memory init --namespace <eco>` per ognuno dei 10 ecosistemi
-   - 2.5 GOVERNANCE: `verify-empire.sh` v1 (check struttura + Mandato + zero orfani)
-   - 2.6 IDENTITY-HR: `registro-agenti.yaml` unico con Board censito
+2. **F1 COMPLETATO** -- gate PASS 92/92.
+3. **F2 COMPLETATO** -- gate PASS 59/59.
+4. **Priorita' immediate:**
+   - Risolvere Token FB scaduto (outreach scraper) -- blocca revenue 01-AGENCY
+   - Decidere prezzo Manuale Claude Code -- blocca lancio 02-INFO-BUSINESS
+   - YouTube ingestion @Legamidiamore + @dosementale -- task 7.0/F-MB1, sessione dedicata
+5. **Prossima fase F3:** vedi `PIANO-MAESTRO/08-ROADMAP-FASI.md` per task esatti.
+   Candidati: primo workflow agentico reale (outreach wrapper), Empire Studio setup.

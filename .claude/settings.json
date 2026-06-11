@@ -18,7 +18,11 @@
       "Bash(python -X utf8 run.py --target 10 --anteprima)",
       "Bash(python -c ' *)",
       "Bash(python -X utf8 test_pipeline.py)",
-      "Bash(python -X utf8 -c ' *)"
+      "Bash(python -X utf8 -c ' *)",
+      "Bash(npx @claude-flow*)",
+      "Bash(npx claude-flow*)",
+      "Bash(node .claude/*)",
+      "mcp__claude-flow__*"
     ],
     "additionalDirectories": [
       "C:\\Users\\Utente\\.claude"
@@ -47,5 +51,10 @@
         ]
       }
     ]
+  },
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "CLAUDE_FLOW_V3_ENABLED": "true",
+    "CLAUDE_FLOW_HOOKS_ENABLED": "true"
   }
 }
