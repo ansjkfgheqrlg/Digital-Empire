@@ -19,6 +19,8 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260611-007](checkpoints/CP-20260611-007.md) — F4 GATE VERDE: ciclo dry-run end-to-end CY-20260611-001 (Gael) — gate PASS 113/113
+- [CP-20260611-006](checkpoints/CP-20260611-006.md) — F4 B2 wrap 4 WF outreach come L3 + agency-trace.ps1 (Gael) — gate PASS 107/107
 - [CP-20260611-005](checkpoints/CP-20260611-005.md) — Metodo 9 passi (ADR-006) + handover a Gael; F1-bis arricchimento a metà (session limit)
 - [CP-20260611-004](checkpoints/CP-20260611-004.md) — F4 AGENCY live B1 completato (Gael) — gate PASS 97/97
 - [CP-20260611-003](checkpoints/CP-20260611-003.md) — F3 Migrazione asset completato (Gael) — gate PASS 70/70

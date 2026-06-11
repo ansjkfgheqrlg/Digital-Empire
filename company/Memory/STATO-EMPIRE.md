@@ -40,8 +40,17 @@ completa stile CF (identità, responsabilità, I/O, come ragiona, KPI, escalatio
    Vietato agli agenti: toccare Memory/, 01-agency/, skills-map.yaml, wiki/log.md.
 4. Dopo F1-bis: prossima fase = F4 B2 (wrap formale WF outreach come team L3, SENZA
    bisogno del token FB — slot pronto, ADR-005).
+   **NOTA GAEL 20:30: B2 GIÀ COMPLETATO (CP-006) + gate F4 VERDE con ciclo dry (CP-007),
+   fatti in parallelo prima di ricevere questo handover. Dopo F1-bis si va a B3/F5.**
 
 ## Cosa e' stato fatto (ultimo evento in cima)
+- 2026-06-11 — **F4 GATE VERDE** (Gael, CP-20260611-007): ciclo dry-run CY-20260611-001
+  end-to-end (19 eventi trace.jsonl, 4 HC attraversati, 3 gate PASS) registrato in
+  state.json. Criterio ADR-005 (slot pronto + test dry). verify: PASS 113/113.
+  Lavorato SOLO in Memory/, scripts/, .claude/skills/ (rispettato blocco swarm).
+- 2026-06-11 — **F4 B2 WRAP OUTREACH COMPLETATO** (Gael, CP-20260611-006): 4 team L3
+  in company/01-agency/A2-ACQUISIZIONE/L3/ (creati prima del blocco swarm, file NUOVI)
+  + scripts/agency-trace.ps1 (logger trace testato). Runtime outreach INVARIATO (ADR-003).
 - 2026-06-11 — **F4 B1 AGENCY LIVE INFRASTRUTTURA COMPLETATO** (Gael, CP-20260611-004):
   company/01-agency/ con 6 reparti L2 (BACKBONE.md + handoffs), state.json + trace.jsonl schema,
   4 HC intra-agency, 9 nuove skill FORGE. Gate: PASS 97/97.
@@ -85,12 +94,15 @@ completa stile CF (identità, responsabilità, I/O, come ragiona, KPI, escalatio
 2. **F1 COMPLETATO** -- gate PASS 92/92.
 3. **F2 COMPLETATO** -- gate PASS 59/59.
 4. **F3 COMPLETATO** -- gate PASS 70/70.
-5. **F4 B1 COMPLETATO** -- gate PASS 97/97.
-   Infrastruttura AGENCY live pronta: 6 reparti, 4 HC intra-agency, state.json, 9 skill.
-6. **Prossime azioni F4 (B2-B7):**
-   - SBLOCCARE: rinnovare Token FB (Max) -- WF-OUTREACH-INSTAGRAM sospeso
-   - SBLOCCARE: decidere prezzo Manuale Claude Code (Max) -- blocca lancio 02-INFO-BUSINESS
-   - B2: wrap formale WF outreach come team L3 con trace.jsonl events
-   - B3: primo preventivo reale con discovery-call-brief + proposal-gate
-   - Gate F4 definitivo: primo ciclo reale tracciato in state.json
+5. **F4 GATE VERDE** -- verify PASS 113/113 (CP-004 B1, CP-006 B2, CP-007 ciclo dry).
+   AGENCY live: 6 reparti, 4 HC, 4 wrap L3 outreach, state.json+trace.jsonl validati
+   con ciclo dry CY-20260611-001, 9 skill F4, agency-trace.ps1 operativo.
+6. **Prossime azioni:**
+   - **PRIORITA' (handover Max): F1-bis arricchimento company/ col metodo 9 passi (ADR-006)**
+     -- vedi ISTRUZIONI PER GAEL sopra. Il blocco swarm Max e' rimosso: company/ e' di Gael.
+   - B3 reale: prima call vera -> discovery-call-brief -> beast-preventivi -> proposal-gate
+   - Primo ciclo REALE: stesso pattern di CY-20260611-001 con dry_run: false
+   - Backlog (ADR-005, non bloccanti): B-001 token FB (runbook in WF-OUTREACH-INSTAGRAM.md),
+     B-002/B-003 prezzi via team-prezzi
+   - F5: prossima fase roadmap (vedi PIANO-MAESTRO/08-ROADMAP-FASI.md) dopo fine swarm F1-bis
 7. **YouTube ingestion** @Legamidiamore + @dosementale -- task 7.0/F-MB1, sessione dedicata

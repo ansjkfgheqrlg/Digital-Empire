@@ -176,7 +176,34 @@ $traceFile = Join-Path $COMPANY "Memory\state\agency\trace.jsonl"
 if (Test-Path $traceFile) {
     $traceLines = (Get-Content $traceFile -Encoding UTF8 | Measure-Object -Line).Lines
     Check "trace.jsonl: almeno 1 evento ($traceLines righe)" ($traceLines -ge 1)
+
+    # Gate F4 (ADR-005, test dry): un ciclo completo con tutti e 4 gli HC attraversati
+    $tr = Get-Content $traceFile -Raw -Encoding UTF8
+    Check "Gate F4: HC-A1-A2-leads attraversato"        ($tr -match "HC-A1-A2-leads")
+    Check "Gate F4: HC-A2-A3-call attraversato"         ($tr -match "HC-A2-A3-call")
+    Check "Gate F4: HC-A3-A4-contratto attraversato"    ($tr -match "HC-A3-A4-contratto")
+    Check "Gate F4: HC-A4-A6-testimonianza attraversato" ($tr -match "HC-A4-A6-testimonianza")
+    Check "Gate F4: almeno 1 gate_passed nel trace"     ($tr -match "gate_passed")
 }
+if (Test-Path $stateFile) {
+    $st2 = Get-Content $stateFile -Raw -Encoding UTF8
+    Check "Gate F4: almeno 1 ciclo completato in state.json" ($st2 -match '"id":\s*"CY-')
+}
+
+# B2: wrap L3 dei 4 WF outreach (runtime invariato)
+$l3Dir = Join-Path $agencyDir "A2-ACQUISIZIONE\L3"
+Check "A2 L3/WF-OUTREACH-EMAIL.md"                (Test-Path (Join-Path $l3Dir "WF-OUTREACH-EMAIL.md"))
+Check "A2 L3/WF-OUTREACH-LINKEDIN.md"             (Test-Path (Join-Path $l3Dir "WF-OUTREACH-LINKEDIN.md"))
+Check "A2 L3/WF-OUTREACH-INSTAGRAM.md"            (Test-Path (Join-Path $l3Dir "WF-OUTREACH-INSTAGRAM.md"))
+Check "A2 L3/WF-REPLY-FOLLOWUP.md"                (Test-Path (Join-Path $l3Dir "WF-REPLY-FOLLOWUP.md"))
+Check "agency-trace.ps1 esiste"                   (Test-Path (Join-Path $ROOT "scripts\agency-trace.ps1"))
+
+# B2: runtime outreach INTATTO (ADR-003 - i file chiave devono esistere dove sono)
+Check "Runtime: orchestrator.py intatto"          (Test-Path (Join-Path $ROOT "Outreach\Outreach Workflow\agents\orchestrator.py"))
+Check "Runtime: bibbia_team.py intatto"           (Test-Path (Join-Path $ROOT "Outreach\Outreach Workflow\agents\bibbia_team.py"))
+Check "Runtime: sender.py intatto"                (Test-Path (Join-Path $ROOT "Outreach\Outreach Workflow\agents\sender.py"))
+Check "Runtime: LinkedIn 01_scrape_leads.py"      (Test-Path (Join-Path $ROOT "Outreach\LinkedIn Automation\01_scrape_leads.py"))
+Check "Runtime: Instagram config.py"              (Test-Path (Join-Path $ROOT "Outreach\Instagram Automation\config.py"))
 
 # Skills F4 (9 nuove)
 $skillsF4 = @(

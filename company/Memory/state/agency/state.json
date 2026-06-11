@@ -1,10 +1,38 @@
 {
   "_schema": "agency-state-v1",
-  "updated_at": "2026-06-11T00:00:00Z",
+  "updated_at": "2026-06-11T18:14:10Z",
 
   "cycles": {
     "active": [],
-    "completed": [],
+    "completed": [
+      {
+        "id": "CY-20260611-001",
+        "dry_run": true,
+        "lead_id": "DRYRUN-001",
+        "lead_nome_azienda": "DryRun-Client-01 (TEST - non reale)",
+        "lead_nicchia": "test",
+        "created_at": "2026-06-11T18:13:12Z",
+        "status": "closed",
+        "prodotto": "outreach_factory",
+        "valore_eur": 4000,
+        "steps": {
+          "outreach": { "started_at": "2026-06-11T18:13:30Z", "completed_at": "2026-06-11T18:13:30Z", "channel": "email", "reply_type": "INTERESSATO" },
+          "call": { "scheduled_at": "2026-06-11T18:13:31Z", "completed_at": "2026-06-11T18:13:31Z", "brief_doc": "dry-run (T-discovery-brief)" },
+          "proposal": { "sent_at": "2026-06-11T18:13:53Z", "value_eur": 4000, "product": "outreach_factory", "gate_passed": true, "win_loss": "win" },
+          "contratto": { "signed_at": "2026-06-11T18:13:53Z", "payment_confirmed_at": "2026-06-11T18:13:53Z" },
+          "delivery": { "started_at": "2026-06-11T18:13:54Z", "completed_at": "2026-06-11T18:13:54Z", "uat_signed_at": "2026-06-11T18:13:54Z", "gate_passed": true },
+          "supporto_90gg": { "started_at": "2026-06-11T18:14:09Z", "ends_at": "2026-09-09T18:14:09Z", "tickets_open": 0 },
+          "testimonianza": { "collected_at": "2026-06-11T18:14:10Z", "case_study_published_at": null, "upsell_sent_at": "2026-06-11T18:14:10Z" }
+        },
+        "handoffs": [
+          { "hc": "HC-A1-A2-leads", "sent_at": "2026-06-11T18:13:12Z", "accepted_at": "2026-06-11T18:13:12Z" },
+          { "hc": "HC-A2-A3-call", "sent_at": "2026-06-11T18:13:31Z", "accepted_at": "2026-06-11T18:13:31Z" },
+          { "hc": "HC-A3-A4-contratto", "sent_at": "2026-06-11T18:13:53Z", "accepted_at": "2026-06-11T18:13:54Z" },
+          { "hc": "HC-A4-A6-testimonianza", "sent_at": "2026-06-11T18:14:09Z", "accepted_at": "2026-06-11T18:14:10Z" }
+        ],
+        "notes": "CICLO DRY-RUN per gate F4 (ADR-005: slot pronto + test dry). Nessun invio reale, nessuna spesa. Valida: schema state, 4 HC, 3 gate (Bibbia, Preventivo, Delivery), trace end-to-end."
+      }
+    ],
     "failed": []
   },
 
@@ -48,14 +76,13 @@
     }
   },
 
-  "blockers": [
+  "blockers": [],
+  "backlog_refs": [
     {
       "id": "B-001",
-      "desc": "Token FB scaduto: outreach Instagram bloccato (WF-OUTREACH-INSTAGRAM sospeso)",
-      "owner": "Max",
-      "reparto": "A2-ACQUISIZIONE",
-      "since": "2026-06-11",
-      "action": "Rinnovare token FB in Meta Developer Console; aggiornare .env locale; non va in git"
+      "desc": "Token FB scaduto: WF-OUTREACH-INSTAGRAM in slot-pronto (wrap completo, riattivazione = solo token)",
+      "ref": "company/Memory/BACKLOG.md",
+      "nota_adr005": "NON bloccante: email e LinkedIn girano; runbook sblocco nel wrap WF-OUTREACH-INSTAGRAM.md"
     }
   ]
 }
