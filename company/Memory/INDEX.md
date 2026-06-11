@@ -14,6 +14,7 @@
 - [ADR-004](decisions/ADR-004-github-monorepo-sync.md) — Monorepo GitHub ansjkfgheqrlg/digital-empire + sync automatico bidirezionale Max↔Gael
 
 ## Checkpoint
+- [CP-20260611-003](checkpoints/CP-20260611-003.md) — F3 Migrazione asset completato (Gael) — gate PASS 70/70
 - [CP-20260611-002](checkpoints/CP-20260611-002.md) — F2 Backbone operativo completato (Gael) — gate PASS 59/59
 - [CP-20260611-001](checkpoints/CP-20260611-001.md) — F1 Scaffolding EMPIRE OS completato (Gael) — gate PASS 92/92
 - [CP-20260610-001](checkpoints/CP-20260610-001.md) — Prodotto PIANO-MAESTRO completo (10 dossier, swarm 7 agenti + conductor)

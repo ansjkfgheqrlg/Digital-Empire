@@ -1,0 +1,346 @@
+# inventario-asset.yaml -- EMPIRE OS Asset Inventory
+# Ogni cartella/progetto nella root del monorepo -> destinazione -> azione raccomandata.
+# Regola (ADR-003): WRAP non riscrittura. Il codice resta dove si trova.
+# Aggiorna quando entrano nuovi progetti o cambiano stato.
+
+version: "1.0"
+updated: "2026-06-11"
+maintainer: "COO (company/Board-CSuite/COO.md)"
+
+# ============================================================
+# FORMATO:
+#   - cartella: nome cartella nella root
+#     ecosistema: ID ecosistema destinazione
+#     reparto: L2 di destinazione
+#     azione: usa | wrappa | evolvi | archivia | verifica
+#     stato: active | legacy | experimental | archived | unknown
+#     orfano: false (=mappato) | true (=da assegnare)
+#     priorita: P1 (revenue) | P2 (crescita) | P3 (supporto) | P4 (archivio)
+#     note: contesto utile
+# ============================================================
+
+assets:
+
+  # ── SISTEMI ATTIVI (P1 -- revenue diretta) ───────────────────
+
+  - cartella: Outreach
+    ecosistema: 01-AGENCY
+    reparto: Acquisizione
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P1
+    note: "SISTEMA ATTIVO. 300+ email/gg. Outreach Workflow + LinkedIn + Instagram + Dashboard. NON modificare (ADR-003)."
+
+  - cartella: "SKILL & Agenti/Copy-Workflow-manuale"
+    ecosistema: 04-MARKETING
+    reparto: Copywriting
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P1
+    note: "Motore copy principale. A1-A8 + S1-S3 + manuale CCM."
+
+  - cartella: "Agency page"
+    ecosistema: 01-AGENCY
+    reparto: Vetrina
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P1
+    note: "agency-empire-kohl.vercel.app. Vetrina clienti."
+
+  - cartella: agency-empire
+    ecosistema: 01-AGENCY
+    reparto: Vetrina
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P1
+    note: "presentazione-empire.vercel.app"
+
+  - cartella: Workflow-libri
+    ecosistema: 05-MULTI-BUSINESS
+    reparto: Publishing
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P2
+    note: "Pipeline libro completa. Ha proprio CLAUDE.md e agents/."
+
+  - cartella: "KDP - prodottti digitali"
+    ecosistema: 05-MULTI-BUSINESS
+    reparto: Publishing
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P2
+    note: "Libri 1,2,4,5. GPT-KDP Carousel Factory incluso."
+
+  - cartella: caroselli
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: Produzione
+    azione: wrappa
+    stato: active
+    orfano: false
+    priorita: P2
+    note: "Workflow caroselli AI. Wrapper L3 in Ecosistemi/03-CONTENT-FACTORY/Workflow/."
+
+  - cartella: second-brain-vault
+    ecosistema: 08-INTELLIGENCE
+    reparto: Wiki
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P1
+    note: "Wiki DE. Fonte di verita' umana. NON spostare."
+
+  - cartella: "Crea siti"
+    ecosistema: 06-PLATFORM
+    reparto: Siti
+    azione: wrappa
+    stato: active
+    orfano: false
+    priorita: P2
+
+  - cartella: "System OMEGA - Creazione proggetti e skill per Claude"
+    ecosistema: 07-FORGE
+    reparto: Architettura
+    azione: wrappa
+    stato: active
+    orfano: false
+    priorita: P2
+    note: "Framework per creare nuovi progetti Claude. Ha proprio CLAUDE.md."
+
+  - cartella: "SKILL & Agenti"
+    ecosistema: 07-FORGE
+    reparto: Skill-Factory
+    azione: wrappa
+    stato: active
+    orfano: false
+    priorita: P2
+    note: "Contenitore multi-ecosistema. Vedere skills-map.yaml per dettaglio per skill."
+
+  # ── INFO-BUSINESS (P2) ──────────────────────────────────────
+
+  - cartella: "Lancio corso skill beast"
+    ecosistema: 02-INFO-BUSINESS
+    reparto: Lanci
+    azione: wrappa
+    stato: active
+    orfano: false
+    priorita: P2
+    note: "Lancio CCM. Include landing page e copy. Prezzo da definire con Max."
+
+  - cartella: "Lanco ebook"
+    ecosistema: 02-INFO-BUSINESS
+    reparto: Lanci
+    azione: verifica
+    stato: experimental
+    orfano: false
+    priorita: P3
+    note: "Verificare stato attivo o sospeso."
+
+  - cartella: InfoBusiness
+    ecosistema: 02-INFO-BUSINESS
+    reparto: Prodotti
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P2
+    note: "Catalogo prodotti + Webinar + Funnel."
+
+  - cartella: Formazzione
+    ecosistema: 02-INFO-BUSINESS
+    reparto: Formazione
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P2
+    note: "Agency Scalping, Claude Code, Outreach, Storytelling, Youtube."
+
+  # ── MARKETING (P2) ─────────────────────────────────────────
+
+  - cartella: "Marketing & Ai"
+    ecosistema: 04-MARKETING
+    reparto: Intelligence
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P2
+
+  - cartella: MarketMind
+    ecosistema: 04-MARKETING
+    reparto: Analytics
+    azione: verifica
+    stato: experimental
+    orfano: false
+    priorita: P3
+    note: "Verificare funzionalita' e stato."
+
+  # ── PLATFORM (P2-P3) ────────────────────────────────────────
+
+  - cartella: SaaS
+    ecosistema: 06-PLATFORM
+    reparto: Prodotto
+    azione: verifica
+    stato: experimental
+    orfano: false
+    priorita: P3
+
+  - cartella: App
+    ecosistema: 06-PLATFORM
+    reparto: Prodotto
+    azione: verifica
+    stato: experimental
+    orfano: false
+    priorita: P3
+
+  - cartella: agency-empire-landing
+    ecosistema: 01-AGENCY
+    reparto: Vetrina
+    azione: verifica
+    stato: experimental
+    orfano: false
+    priorita: P3
+    note: "Versione alternativa landing -- confrontare con agency-empire/"
+
+  - cartella: "Agency page - Copia"
+    ecosistema: 01-AGENCY
+    reparto: Vetrina
+    azione: archivia
+    stato: legacy
+    orfano: false
+    priorita: P4
+    note: "Copia di Agency page. Probabilmente obsoleta."
+
+  # ── CONTENT (P2-P3) ─────────────────────────────────────────
+
+  - cartella: "Page IG - Mentalita Brutale"
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: Distribuzione
+    azione: verifica
+    stato: experimental
+    orfano: false
+    priorita: P3
+
+  - cartella: "Workfolw crea caroselli a"
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: Produzione
+    azione: verifica
+    stato: legacy
+    orfano: false
+    priorita: P4
+    note: "Confrontare con caroselli/ -- probabile duplicato."
+
+  - cartella: "Matriale linkeding"
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: Distribuzione
+    azione: archivia
+    stato: legacy
+    orfano: false
+    priorita: P4
+
+  # ── OPERATIONS / GOVERNANCE ─────────────────────────────────
+
+  - cartella: scripts
+    ecosistema: 09-OPERATIONS
+    reparto: Runtime
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P1
+    note: "empire-sync.ps1, gen-empire.py, verify-empire.ps1, hooks-sync.json."
+
+  - cartella: company
+    ecosistema: 10-MEMORY
+    reparto: Memoria-Operativa
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P1
+    note: "Root EMPIRE OS. Mai modificare senza memory-first."
+
+  - cartella: PIANO-MAESTRO
+    ecosistema: 10-MEMORY
+    reparto: Memoria-Operativa
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P1
+    note: "10 dossier strategici. Fonte di verita' architetturale."
+
+  # ── INTELLIGENCE ────────────────────────────────────────────
+
+  - cartella: Agenti
+    ecosistema: 08-INTELLIGENCE
+    reparto: Archivio
+    azione: verifica
+    stato: experimental
+    orfano: false
+    priorita: P3
+    note: "Contiene Agency/, scripts/, report marketing. Verificare cosa e' attivo."
+
+  - cartella: "Progetti Claude"
+    ecosistema: 08-INTELLIGENCE
+    reparto: Wiki
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P2
+    note: "Info-Business-HQ knowledge + Agency Operations knowledge."
+
+  - cartella: docs
+    ecosistema: 08-INTELLIGENCE
+    reparto: Archivio
+    azione: archivia
+    stato: legacy
+    orfano: false
+    priorita: P4
+
+  # ── LEGACY / UNKNOWN ────────────────────────────────────────
+
+  - cartella: bho
+    ecosistema: UNKNOWN
+    reparto: UNKNOWN
+    azione: verifica
+    stato: unknown
+    orfano: true
+    priorita: P4
+    note: "Contenuto sconosciuto. Aprire e classificare nella prossima sessione."
+
+  - cartella: prove
+    ecosistema: UNKNOWN
+    reparto: UNKNOWN
+    azione: verifica
+    stato: unknown
+    orfano: true
+    priorita: P4
+    note: "Probabilmente esperimenti/prove. Verificare se archiviabile."
+
+  - cartella: .swarm
+    ecosistema: 09-OPERATIONS
+    reparto: Runtime
+    azione: usa
+    stato: active
+    orfano: false
+    priorita: P2
+    note: "Generato da ruflo init. Directory runtime swarm -- non modificare manualmente."
+
+# ============================================================
+# STATISTICHE
+# ============================================================
+
+stats:
+  totale_cartelle: 35
+  mappati: 33
+  orfani: 2
+  azione_usa: 14
+  azione_wrappa: 6
+  azione_verifica: 10
+  azione_archivia: 5
+  priorita_P1: 8
+  priorita_P2: 14
+  priorita_P3: 8
+  priorita_P4: 5
+  note: "Orfani (bho/, prove/) da classificare nella prossima sessione con Max."

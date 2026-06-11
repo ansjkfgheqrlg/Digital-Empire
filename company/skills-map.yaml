@@ -1,0 +1,516 @@
+# skills-map.yaml -- EMPIRE OS Skills & Workflow Registry
+# Mappa ogni skill/workflow esistente al suo ecosistema, reparto e team.
+# Regola (ADR-003): il codice/file RESTA dove si trova. Questo e' un registro, non uno spostamento.
+# Aggiorna questo file ogni volta che nasce una nuova skill o workflow.
+
+version: "1.0"
+updated: "2026-06-11"
+maintainer: "Chief-Forge (company/Board-CSuite/Chief-Forge.md)"
+
+# ============================================================
+# FORMATO:
+#   - id: identificativo univoco slug
+#     nome: nome leggibile
+#     percorso: path relativo dalla root del monorepo
+#     ecosistema: ID ecosistema (01-AGENCY ... 10-MEMORY)
+#     reparto: nome del reparto L2
+#     tipo: skill | workflow | tool | agente | knowledge
+#     stato: active | legacy | experimental | archived
+#     note: contesto utile
+# ============================================================
+
+skills_and_workflows:
+
+  # ── 01-AGENCY / Acquisizione ─────────────────────────────────
+
+  - id: outreach-workflow
+    nome: Outreach Workflow (email + LinkedIn + Instagram)
+    percorso: Outreach/Outreach Workflow/
+    ecosistema: 01-AGENCY
+    reparto: Acquisizione
+    tipo: workflow
+    stato: active
+    note: "SISTEMA ATTIVO -- non modificare senza ADR (ADR-003). 300+ email/gg."
+
+  - id: linkedin-automation
+    nome: LinkedIn Automation
+    percorso: Outreach/LinkedIn Automation/
+    ecosistema: 01-AGENCY
+    reparto: Acquisizione
+    tipo: tool
+    stato: active
+    note: "Dipende da token LinkedIn -- verificare scadenza."
+
+  - id: instagram-automation
+    nome: Instagram Automation
+    percorso: Outreach/Instagram Automation/
+    ecosistema: 01-AGENCY
+    reparto: Acquisizione
+    tipo: tool
+    stato: active
+    note: "Sessione instagram_session.json -- locale, non nel repo."
+
+  - id: outreach-dashboard
+    nome: Outreach Dashboard Premium
+    percorso: Outreach/outreach-dashboard-premium/
+    ecosistema: 01-AGENCY
+    reparto: Acquisizione
+    tipo: tool
+    stato: active
+    note: "Dashboard monitoraggio campagne. AVVIA-DASHBOARD.bat."
+
+  - id: agency-landing
+    nome: Agency Landing Page (presentazione-empire)
+    percorso: agency-empire/
+    ecosistema: 01-AGENCY
+    reparto: Vetrina
+    tipo: tool
+    stato: active
+    note: "Deployata su presentazione-empire.vercel.app"
+
+  - id: agency-landing-v2
+    nome: Agency Landing Page v2
+    percorso: agency-empire-landing/
+    ecosistema: 01-AGENCY
+    reparto: Vetrina
+    tipo: tool
+    stato: experimental
+    note: "Versione alternativa landing -- verificare stato deployment."
+
+  - id: agency-page
+    nome: Agency Page (React)
+    percorso: Agency page/
+    ecosistema: 01-AGENCY
+    reparto: Vetrina
+    tipo: tool
+    stato: active
+    note: "agency-empire-kohl.vercel.app"
+
+  - id: skill-cro-call
+    nome: Skill CRO -- Call (gestione chiamate commerciali)
+    percorso: "SKILL & Agenti/SKILL/Skill CRO - call/"
+    ecosistema: 01-AGENCY
+    reparto: Vendita
+    tipo: skill
+    stato: active
+
+  - id: skill-cro-funnel
+    nome: Skill CRO -- Funnel Architect
+    percorso: "SKILL & Agenti/SKILL/Skill CRO - Funnel Architect.md"
+    ecosistema: 01-AGENCY
+    reparto: Vendita
+    tipo: skill
+    stato: active
+
+  - id: skill-cro-ricerca
+    nome: Skill CRO -- Ricerca (prospect research)
+    percorso: "SKILL & Agenti/SKILL/Skill CRO - Ricerca/"
+    ecosistema: 01-AGENCY
+    reparto: Acquisizione
+    tipo: skill
+    stato: active
+
+  - id: beast-preventivi
+    nome: Beast Preventivi (generatore preventivi)
+    percorso: "Agenti/Agency/"
+    ecosistema: 01-AGENCY
+    reparto: Vendita
+    tipo: agente
+    stato: experimental
+    note: "Verificare contenuto cartella Agenti/Agency/"
+
+  # ── 02-INFO-BUSINESS / Lanci + Formazione ────────────────────
+
+  - id: lancio-corso-skill-beast
+    nome: Lancio Corso Skill Beast (CCM)
+    percorso: Lancio corso skill beast/
+    ecosistema: 02-INFO-BUSINESS
+    reparto: Lanci
+    tipo: workflow
+    stato: active
+    note: "Include landing page, copy, assets. Prezzo da definire."
+
+  - id: lancio-ebook
+    nome: Lancio Ebook
+    percorso: Lanco ebook/
+    ecosistema: 02-INFO-BUSINESS
+    reparto: Lanci
+    tipo: workflow
+    stato: experimental
+    note: "Verificare stato progetto."
+
+  - id: infobusiness-catalog
+    nome: Catalogo Prodotti InfoBusiness
+    percorso: InfoBusiness/CATALOGO PRODOTTI ATTUALE — Info-Bu.md
+    ecosistema: 02-INFO-BUSINESS
+    reparto: Prodotti
+    tipo: knowledge
+    stato: active
+
+  - id: formazione-agency-scalping
+    nome: Formazione Agency Scalping
+    percorso: Formazzione/Agency Scalping/
+    ecosistema: 02-INFO-BUSINESS
+    reparto: Formazione
+    tipo: knowledge
+    stato: active
+
+  - id: skill-youtube-lead-magnet
+    nome: Skill CRO -- YouTube Lead Magnet
+    percorso: "SKILL & Agenti/SKILL/Skill CRO - Youtube - Lead magnet/"
+    ecosistema: 02-INFO-BUSINESS
+    reparto: Formazione
+    tipo: skill
+    stato: active
+
+  # ── 03-CONTENT-FACTORY / Produzione ─────────────────────────
+
+  - id: caroselli-workflow
+    nome: Workflow Caroselli (AI-generated)
+    percorso: caroselli/
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: Produzione
+    tipo: workflow
+    stato: active
+    note: "3-sistemi-ai. Dipende da brand_kit."
+
+  - id: workflow-caroselli-alt
+    nome: Workflow Crea Caroselli (alternativo)
+    percorso: "Workfolw crea caroselli a/"
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: Produzione
+    tipo: workflow
+    stato: legacy
+    note: "Verificare se supera caroselli/ principale."
+
+  - id: page-ig-mentalita
+    nome: Page IG Mentalita Brutale
+    percorso: Page IG - Mentalita Brutale/
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: Distribuzione
+    tipo: workflow
+    stato: experimental
+
+  - id: skill-script-video
+    nome: Skill -- Script Video Lancio CCM
+    percorso: "SKILL & Agenti/SKILL/Skill - script video lancio CCM/"
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: Video
+    tipo: skill
+    stato: active
+
+  - id: workflow-canva
+    nome: Workflow Agency Creative (Canva)
+    percorso: "SKILL & Agenti/Workflow agency creative/"
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: Produzione
+    tipo: workflow
+    stato: experimental
+
+  - id: materiale-linkedin
+    nome: Materiale LinkedIn
+    percorso: Matriale linkeding/
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: Distribuzione
+    tipo: knowledge
+    stato: legacy
+
+  # ── 04-MARKETING / Copywriting ───────────────────────────────
+
+  - id: copy-workflow
+    nome: Copy Workflow Manuale (A1-A8, S1-S3)
+    percorso: "SKILL & Agenti/Copy-Workflow-manuale/copy-workflow/"
+    ecosistema: 04-MARKETING
+    reparto: Copywriting
+    tipo: workflow
+    stato: active
+    note: "MOTORE COPY PRINCIPALE. Include il manuale + script cold outreach."
+
+  - id: skill-cro-strategy-social
+    nome: Skill CRO -- Strategy Social (IG + TikTok)
+    percorso: "SKILL & Agenti/SKILL/Skill CRO - Strategy social (Ig-tiktok)/"
+    ecosistema: 04-MARKETING
+    reparto: Social
+    tipo: skill
+    stato: active
+
+  - id: marketing-ai-knowledge
+    nome: Marketing & AI Knowledge Base
+    percorso: Marketing & Ai/
+    ecosistema: 04-MARKETING
+    reparto: Intelligence
+    tipo: knowledge
+    stato: active
+
+  - id: marketmind
+    nome: MarketMind
+    percorso: MarketMind/
+    ecosistema: 04-MARKETING
+    reparto: Analytics
+    tipo: tool
+    stato: experimental
+    note: "Verificare contenuto e stato."
+
+  # ── 05-MULTI-BUSINESS / Publishing ───────────────────────────
+
+  - id: workflow-libri
+    nome: Workflow Libri (pipeline libro completo)
+    percorso: Workflow-libri/
+    ecosistema: 05-MULTI-BUSINESS
+    reparto: Publishing
+    tipo: workflow
+    stato: active
+    note: "Include agents/, scripts/, templates/. Ha proprio CLAUDE.md."
+
+  - id: kdp-prodotti
+    nome: KDP Prodotti Digitali
+    percorso: KDP - prodottti digitali/
+    ecosistema: 05-MULTI-BUSINESS
+    reparto: Publishing
+    tipo: workflow
+    stato: active
+    note: "Libri 1,2,4,5+. Include GPT-KDP Carousel Factory."
+
+  - id: formazione-youtube
+    nome: Formazione YouTube (canali riferimento)
+    percorso: Formazzione/Youtube/
+    ecosistema: 05-MULTI-BUSINESS
+    reparto: YouTube
+    tipo: knowledge
+    stato: active
+    note: "TASK 7.0 F3: ingestione @Legamidiamore + @dosementale -- sessione dedicata."
+
+  # ── 06-PLATFORM / Siti + App ─────────────────────────────────
+
+  - id: crea-siti
+    nome: Crea Siti (web builder portfolio)
+    percorso: Crea siti/
+    ecosistema: 06-PLATFORM
+    reparto: Siti
+    tipo: workflow
+    stato: active
+    note: "Include Siti CCM."
+
+  - id: empire-style
+    nome: Empire Style (design system)
+    percorso: "SKILL & Agenti/empire-style/"
+    ecosistema: 06-PLATFORM
+    reparto: Design
+    tipo: tool
+    stato: active
+
+  - id: skill-empire-premium-style
+    nome: Skill Empire Premium Style
+    percorso: "SKILL & Agenti/SKILL/Skill empire-premium-style/"
+    ecosistema: 06-PLATFORM
+    reparto: Design
+    tipo: skill
+    stato: active
+
+  - id: web-builder-skill
+    nome: Skill Web Builder
+    percorso: "SKILL & Agenti/SKILL/Web Builder/"
+    ecosistema: 06-PLATFORM
+    reparto: Siti
+    tipo: skill
+    stato: active
+
+  - id: website-creator-skill
+    nome: Skill Website Creator
+    percorso: "SKILL & Agenti/SKILL/Website Creator/"
+    ecosistema: 06-PLATFORM
+    reparto: Siti
+    tipo: skill
+    stato: active
+
+  - id: saas
+    nome: SaaS Projects
+    percorso: SaaS/
+    ecosistema: 06-PLATFORM
+    reparto: Prodotto
+    tipo: workflow
+    stato: experimental
+    note: "Verificare contenuto e stato attivo."
+
+  - id: app
+    nome: App Projects
+    percorso: App/
+    ecosistema: 06-PLATFORM
+    reparto: Prodotto
+    tipo: workflow
+    stato: experimental
+
+  # ── 07-FORGE / Skill + Agenti ────────────────────────────────
+
+  - id: skill-creator
+    nome: Skill Creator (genera nuove skill)
+    percorso: "SKILL & Agenti/SKILL/Skill - skill creator/"
+    ecosistema: 07-FORGE
+    reparto: Skill-Factory
+    tipo: skill
+    stato: active
+    note: "Strumento per generare nuove skill. Core della FORGE."
+
+  - id: system-omega
+    nome: System OMEGA (architettura progetti + skill)
+    percorso: System OMEGA - Creazione proggetti e skill per Claude/
+    ecosistema: 07-FORGE
+    reparto: Architettura
+    tipo: workflow
+    stato: active
+    note: "Ha proprio CLAUDE.md. Framework per creare nuovi progetti Claude."
+
+  - id: skill-master-architecture
+    nome: Skill Master Architecture
+    percorso: "SKILL & Agenti/Skill Master Architecture/"
+    ecosistema: 07-FORGE
+    reparto: Architettura
+    tipo: skill
+    stato: active
+
+  - id: agent-factory
+    nome: Agent Factory
+    percorso: "SKILL & Agenti/agent-factory/"
+    ecosistema: 07-FORGE
+    reparto: Agenti
+    tipo: tool
+    stato: experimental
+
+  - id: skill-prompt-engineering
+    nome: Skill Prompt Engineering
+    percorso: "SKILL & Agenti/SKILL/PROMPT ENGEGNIRING-SKILL/"
+    ecosistema: 07-FORGE
+    reparto: Prompt-Guild
+    tipo: skill
+    stato: active
+
+  - id: agente-max
+    nome: Agente Max (persona AI)
+    percorso: "SKILL & Agenti/SKILL/Agente Max/"
+    ecosistema: 07-FORGE
+    reparto: Agenti
+    tipo: agente
+    stato: experimental
+
+  - id: skill-contradiction-analyzer
+    nome: Skill Contradiction Analyzer
+    percorso: "SKILL & Agenti/Skill Contradiction Analyzer/"
+    ecosistema: 07-FORGE
+    reparto: Quality-Guild
+    tipo: skill
+    stato: active
+
+  - id: book-optimizer-skill
+    nome: Skill Book Optimizer
+    percorso: "SKILL & Agenti/SKILL/book optimizer-SKILL/"
+    ecosistema: 07-FORGE
+    reparto: Skill-Factory
+    tipo: skill
+    stato: active
+
+  # ── 08-INTELLIGENCE / Wiki + Studio ─────────────────────────
+
+  - id: second-brain-vault
+    nome: Second Brain Vault (wiki DE)
+    percorso: second-brain-vault/
+    ecosistema: 08-INTELLIGENCE
+    reparto: Wiki
+    tipo: knowledge
+    stato: active
+    note: "Fonte di verita' umana. Operativa. NON spostare."
+
+  - id: empire-studio
+    nome: Empire Studio Suite (ingestione video)
+    percorso: "SKILL & Agenti/Empire Studio Suite/"
+    ecosistema: 08-INTELLIGENCE
+    reparto: Ingestione
+    tipo: tool
+    stato: experimental
+    note: "TASK 7.0: ingestione canali YouTube riferimento. Sessione dedicata."
+
+  - id: docs
+    nome: Docs (documentazione varia)
+    percorso: docs/
+    ecosistema: 08-INTELLIGENCE
+    reparto: Archivio
+    tipo: knowledge
+    stato: legacy
+
+  - id: progetti-claude
+    nome: Progetti Claude (knowledge files)
+    percorso: Progetti Claude/
+    ecosistema: 08-INTELLIGENCE
+    reparto: Wiki
+    tipo: knowledge
+    stato: active
+
+  # ── 09-OPERATIONS / Runtime ──────────────────────────────────
+
+  - id: avvia-scripts
+    nome: Script AVVIA-* (launcher operativi)
+    percorso: Outreach/AVVIA-*.bat
+    ecosistema: 09-OPERATIONS
+    reparto: Runtime
+    tipo: tool
+    stato: active
+    note: "AVVIA-DASHBOARD.bat, AVVIA-EMAIL-LIVE.bat. Parte del sistema outreach attivo."
+
+  - id: empire-sync
+    nome: Empire Sync (GitHub sync bidirezionale)
+    percorso: scripts/empire-sync.ps1
+    ecosistema: 09-OPERATIONS
+    reparto: Runtime
+    tipo: tool
+    stato: active
+    note: "ADR-004. Eseguito da hook SessionStart/Stop."
+
+  - id: gen-empire
+    nome: Gen Empire (generatore struttura)
+    percorso: scripts/gen-empire.py
+    ecosistema: 09-OPERATIONS
+    reparto: Governance
+    tipo: tool
+    stato: active
+
+  - id: verify-empire
+    nome: Verify Empire (health check)
+    percorso: scripts/verify-empire.ps1
+    ecosistema: 09-OPERATIONS
+    reparto: Governance
+    tipo: tool
+    stato: active
+
+  # ── 10-MEMORY / Archivio operativo ───────────────────────────
+
+  - id: memory-empire
+    nome: Memory Empire (company/Memory/)
+    percorso: company/Memory/
+    ecosistema: 10-MEMORY
+    reparto: Memoria-Operativa
+    tipo: knowledge
+    stato: active
+    note: "CP, ADR, STATO-EMPIRE, INDEX. Interrogare PRIMA di ogni task."
+
+# ============================================================
+# ASSET NON ANCORA CLASSIFICATI (da verificare con Max)
+# ============================================================
+
+da_classificare:
+  - percorso: bho/
+    note: "Contenuto sconosciuto -- verificare."
+  - percorso: prove/
+    note: "Prove/esperimenti -- probabilmente legacy."
+  - percorso: .swarm/
+    note: "Generato da ruflo init. Runtime, non modificare."
+
+# ============================================================
+# STATISTICHE
+# ============================================================
+
+stats:
+  totale_mappati: 51
+  active: 29
+  experimental: 12
+  legacy: 4
+  knowledge: 6
+  da_classificare: 3

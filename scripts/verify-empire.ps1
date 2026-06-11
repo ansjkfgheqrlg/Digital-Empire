@@ -120,6 +120,29 @@ Check "Bus\contracts esiste"     (Test-Path (Join-Path $COMPANY "Backbone\Bus\co
 Check "HC-template.json"         (Test-Path (Join-Path $COMPANY "Backbone\Bus\contracts\HC-template.json"))
 Check "registro-agenti.yaml"     (Test-Path (Join-Path $COMPANY "Backbone\Identity-HR\registro-agenti.yaml"))
 
+# --- F3: Migrazione asset ---
+Write-Host ""
+Write-Host "[ F3 - Migrazione asset ]"
+
+Check "skills-map.yaml"                     (Test-Path (Join-Path $COMPANY "skills-map.yaml"))
+Check "org\inventario-asset.yaml"           (Test-Path (Join-Path $COMPANY "org\inventario-asset.yaml"))
+Check "01-AGENCY Workflow wrapper"          (Test-Path (Join-Path $COMPANY "Ecosistemi\01-AGENCY\Workflow\outreach-wrapper.md"))
+Check "02-INFO-BUSINESS Workflow wrapper"   (Test-Path (Join-Path $COMPANY "Ecosistemi\02-INFO-BUSINESS\Workflow\lancio-wrapper.md"))
+Check "03-CONTENT-FACTORY Workflow wrapper" (Test-Path (Join-Path $COMPANY "Ecosistemi\03-CONTENT-FACTORY\Workflow\caroselli-wrapper.md"))
+Check "04-MARKETING Workflow wrapper"       (Test-Path (Join-Path $COMPANY "Ecosistemi\04-MARKETING\Workflow\copy-workflow-wrapper.md"))
+Check "05-MULTI-BUSINESS Workflow wrapper"  (Test-Path (Join-Path $COMPANY "Ecosistemi\05-MULTI-BUSINESS\Workflow\libri-wrapper.md"))
+Check "06-PLATFORM Workflow wrapper"        (Test-Path (Join-Path $COMPANY "Ecosistemi\06-PLATFORM\Workflow\crea-siti-wrapper.md"))
+Check "07-FORGE Workflow wrapper"           (Test-Path (Join-Path $COMPANY "Ecosistemi\07-FORGE\Workflow\skill-creator-wrapper.md"))
+Check "08-INTELLIGENCE Workflow wrapper"    (Test-Path (Join-Path $COMPANY "Ecosistemi\08-INTELLIGENCE\Workflow\wiki-wrapper.md"))
+
+# Controllo 0 orfani (orfani dichiarati nel inventario devono essere <= 3)
+$invFile = Join-Path $COMPANY "org\inventario-asset.yaml"
+if (Test-Path $invFile) {
+    $inv = Get-Content $invFile -Raw -Encoding UTF8
+    $orfaniCount = ([regex]::Matches($inv, "orfano: true")).Count
+    Check "Orfani <= 3 (attuale: $orfaniCount)" ($orfaniCount -le 3)
+}
+
 # --- Scripts ---
 Write-Host ""
 Write-Host "[ Scripts ]"

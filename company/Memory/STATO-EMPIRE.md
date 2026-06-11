@@ -1,10 +1,13 @@
 # 📍 STATO EMPIRE — aggiornato 2026-06-11
 
 ## Fase roadmap corrente
-**F2 -- Backbone operativo: COMPLETATO** (2026-06-11).
-Prossima: F3 (vedi `PIANO-MAESTRO/08-ROADMAP-FASI.md`).
+**F3 -- Migrazione asset: COMPLETATO** (2026-06-11).
+Prossima: F4 AGENCY live (vedi `PIANO-MAESTRO/08-ROADMAP-FASI.md`).
 
 ## Cosa e' stato fatto (ultimo evento in cima)
+- 2026-06-11 — **F3 MIGRAZIONE ASSET COMPLETATO** (Gael, CP-20260611-003):
+  51 skill/workflow mappate in skills-map.yaml, 35 cartelle in inventario-asset.yaml,
+  8 wrapper L3 (Ecosistemi/<eco>/Workflow/). Gate: PASS 70/70.
 - 2026-06-11 — **F2 BACKBONE OPERATIVO COMPLETATO** (Gael, CP-20260611-002):
   ruflo v3.10.41 installato, BUS (handoffs+HC-template), BRAIN (10 namespace),
   registro-agenti.yaml (19 agenti), verify-empire.ps1 PASS 59/59.
@@ -45,5 +48,9 @@ Prossima: F3 (vedi `PIANO-MAESTRO/08-ROADMAP-FASI.md`).
    - Risolvere Token FB scaduto (outreach scraper) -- blocca revenue 01-AGENCY
    - Decidere prezzo Manuale Claude Code -- blocca lancio 02-INFO-BUSINESS
    - YouTube ingestion @Legamidiamore + @dosementale -- task 7.0/F-MB1, sessione dedicata
-5. **Prossima fase F3:** vedi `PIANO-MAESTRO/08-ROADMAP-FASI.md` per task esatti.
-   Candidati: primo workflow agentico reale (outreach wrapper), Empire Studio setup.
+5. **F3 COMPLETATO** -- gate PASS 70/70.
+6. **Prossima fase F4 -- AGENCY live:**
+   - Flusso revenue completo: lead->outreach->call->preventivo->contratto->delivery->upsell
+   - Prerequisito: sbloccare Token FB + decidere prezzo CCM
+   - Dettaglio: `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY.md`
+   - Gate F4: un ciclo completo reale tracciato in state.json + trace.jsonl
