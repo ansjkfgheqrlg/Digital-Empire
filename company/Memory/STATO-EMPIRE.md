@@ -1,9 +1,21 @@
 # STATO EMPIRE -- aggiornato 2026-06-11 (pomeriggio)
 
 ## Fase roadmap corrente
-**F1-bis — ARRICCHIMENTO MASSIVO `company/` (IN CORSO, Max + swarm 6 agenti).**
-Controllo qualità post-F1..F4B1: scaffolding = scheletro (97 file, 11 cartelle vuote,
-README Sentinel magri). Obiettivo: 0 cartelle vuote, 0 file magri, ogni agente con scheda
+**F1-bis — ARRICCHIMENTO MASSIVO `company/` — INTERROTTO A METÀ (session limit Claude,
+reset 19:50 Europe/Rome, 2026-06-11).** Tutti e 6 gli agenti swarm morti sul limite.
+⚠️ L'account Claude è CONDIVISO Max+Gael: fino alle 19:50 nessuno dei due può lavorare con Claude.
+
+**RIPRESA (dopo le 19:50) — rilanciare swarm arricchimento, prompt IDEMPOTENTI
+(verificano l'esistente prima di scrivere). Stato atterrato per cartella:**
+| Cartella | File | Stato |
+|---|---|---|
+| 07-FORGE 8 · 09-OPERATIONS 7 · Board-CSuite 8 · Backbone 10 | — | parziali buoni |
+| 01-AGENCY 6 · 03-CONTENT-FACTORY 5 · Sentinels 6 · Guilds 6 | — | parziali |
+| 02-INFO-BUSINESS 3 · 04-MARKETING 3 · 05-MULTI-BUSINESS 3 · 06-PLATFORM 3 · 08-INTELLIGENCE 3 · Mandato 2 · 10-MEMORY 2 · Gerarchia 1 | — | quasi vuoti |
+Gate finale invariato: 0 cartelle vuote, 0 file <15 righe, schede agente complete.
+Fonti: dossier PIANO-MAESTRO 0X corrispondenti. Vietato toccare Memory/ e wiki/log.md (agenti).
+
+Obiettivo fase: 0 cartelle vuote, 0 file magri, ogni agente con scheda
 completa stile CF (identità, responsabilità, I/O, come ragiona, KPI, escalation).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)

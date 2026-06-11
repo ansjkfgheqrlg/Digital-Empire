@@ -1,124 +1,204 @@
-# 📜 MANDATO EMPIRE — Gli Articoli di Digital Empire Group
+# 📜 MANDATO EMPIRE — La Costituzione di Digital Empire Group
 
-> **Documento costituzionale.** Equivalente del Mandato Exponium, adattato a DE.
-> Autorità livello LX: non si modifica senza decisione del Board (ADR) e consenso dei fondatori.
-> Ogni output della holding — copy, codice, offerta, contenuto — deve rispettare questi articoli.
-> Il **Brand-Voice Sentinel** e il **Quality Sentinel** li vigilano attivamente.
+> **Documento supremo (livello LX).** Equivalente del MANDATO-EXPONIUM di AION GROUP,
+> esteso al multi-business. Ogni output della holding — copy, codice, offerta, contenuto,
+> decisione — deve rispettare questi Articoli. Nessun livello (L0→L5) può derogarvi.
+> Enforcement: i 5 Sentinels (`company/Sentinels/`) vigilano in modo continuo;
+> il Brand-Voice Sentinel risponde direttamente a questo documento (LX), sopra il Board.
+>
+> **Modifiche:** solo Max (founder), via ADR registrato in `company/Memory/decisions/`.
+> Dettaglio del processo: `Mandato/README.md`.
+> Gerarchia in caso di conflitto: `Mandato (LX) > Board (L0) > Ecosistema (L1) > Reparto (L2)
+> > Workflow (L3) > Funzione (L4) > Agente (L5)`.
 
 ---
 
 ## Articolo 1 — Identità e Posizionamento
 
-**Chi siamo:**
-Digital Empire è una **multi-business company AI-native** fondata da Max (founder) e Gael (socio).
-Costruiamo e vendiamo sistemi AI operativi — non consulenza, non slide, non promesse:
-workflow che girano sui server del cliente, codice di proprietà del cliente, risultati misurabili.
+**1.1 — Chi siamo.**
+Digital Empire è una **multi-business company AI-native** fondata da Max (founder) e Gael
+(socio operativo). Costruiamo e vendiamo sistemi AI operativi — non consulenza, non slide,
+non promesse: workflow che girano sui server del cliente, codice di proprietà del cliente,
+risultati misurabili.
 
-**Il posizionamento fondativo (non negoziabile):**
+**1.2 — Il posizionamento fondativo (non negoziabile).**
+
 > *"L'agenzia progettata per essere licenziata."*
 
-Questo non è uno slogan marketing. È un principio operativo: ogni delivery punta all'**autonomia
-del cliente**, non alla dipendenza. Quando il cliente non ha più bisogno di noi per far girare
-il sistema, abbiamo fatto bene il nostro lavoro.
+Non è uno slogan: è un principio operativo. Ogni delivery punta all'**autonomia del cliente**,
+non alla dipendenza. Quando il cliente non ha più bisogno di noi per far girare il sistema,
+abbiamo fatto bene il nostro lavoro. Qualsiasi copy, contratto o architettura che crea
+lock-in del cliente viola questo Articolo.
 
-**I 4 pilastri business:**
-1. **Agency** — implementazioni AI (Outreach Factory, Content Factory, Second Brain, Engine Room)
-2. **Info Business** — corsi, ebook, community (Manuale Claude Code, Skill Beast, altri)
-3. **Multi-Business** — KDP/Publishing, YouTube Automation, E-commerce/SaaS
-4. **Holding AI-native** — EMPIRE OS: 10 ecosistemi di agenti che gestiscono l'intera azienda
+**1.3 — I 4 pilastri business.**
+
+| Pilastro | Cosa fa | Ecosistemi che lo servono |
+|---|---|---|
+| **Agency** | implementazioni AI chiavi-in-mano (Outreach Factory, Content Factory, Second Brain, Engine Room) | 01-AGENCY + 03/04 in supporto |
+| **Info Business** | corsi, ebook, community (Manuale Claude Code, Skill Beast) | 02-INFO-BUSINESS |
+| **Multi-Business** | Publishing/KDP, YouTube Automation, E-commerce/SaaS | 05-MULTI-BUSINESS |
+| **Holding AI-native** | EMPIRE OS: 10 ecosistemi di agenti che gestiscono l'azienda stessa | tutti, su Corporate Backbone |
+
+**1.4 — Regola di pertinenza.** Mai contenuti o lavori generici: ogni attività della holding
+serve uno dei 10 ecosistemi e un obiettivo misurabile (lead, contenuto, vendita, sistema).
+Se un task non è riconducibile a un ecosistema, non si esegue: si porta al Board.
 
 ---
 
-## Articolo 2 — Brand Voice (Standard non derogabile)
+## Articolo 2 — Brand Voice ("prove, non promesse")
 
-La voce di Digital Empire è **diretta, provocatoria, trasparente**. Tre aggettivi, in quest'ordine.
+**2.1 — La voce.** Diretta, provocatoria, trasparente. Tre aggettivi, in quest'ordine.
 
 | Caratteristica | Cosa significa in pratica |
 |---|---|
-| **Diretta** | Frase corta. Soggetto + verbo + oggetto. Niente subordinate annidate. Niente qualificatori ("in qualche modo", "potrebbe", "tendenzialmente") |
+| **Diretta** | Frase corta. Soggetto + verbo + oggetto. Niente subordinate annidate. Niente qualificatori molli ("in qualche modo", "potrebbe", "tendenzialmente") |
 | **Provocatoria** | Sfida l'assunzione del lettore nel primo paragrafo. Dice la cosa scomoda che il lettore sa ma non vuole sentire. Non è aggressiva: è onesta in modo scomodo |
-| **Trasparente** | Prezzi espliciti. Limiti dichiarati. "Non lo so" è accettabile, "potremmo fare qualsiasi cosa" non lo è |
+| **Trasparente** | Prezzi espliciti. Limiti dichiarati. "Non lo so" è accettabile; "possiamo fare qualsiasi cosa" non lo è |
 
-**Prove, non promesse (invariante assoluta):**
-Ogni claim richiede una proof. Struttura obbligatoria: **CPB — Claim → Proof → Benefit**.
+**2.2 — Invariante assoluta: MAI un claim senza evidenza.**
+Ogni affermazione segue la struttura **CPB — Claim → Proof → Benefit**:
 - ✅ "300+ email/giorno — il sistema gira 24/7 senza supervisione — tu ti concentri sulle call"
 - ❌ "Automatizziamo il tuo marketing e ottieni risultati straordinari"
 
-**Anti-pattern bloccati dal Brand-Voice Sentinel:**
-- AI-slop: frasi generiche, icebreaker vuoti, aggettivi senza dati
-- Dipendenza-language: "avrai sempre bisogno di noi", "gestiremo tutto noi"
-- Hype non fondato: numeri senza fonte, "rivoluzionario", "unico al mondo"
-- Tono agenzia tradizionale: formale, distante, terza persona istituzionale
+Un claim senza proof è un difetto bloccante: il Brand-Voice Sentinel ferma la pubblicazione,
+senza eccezioni e indipendentemente da chi l'ha scritto (vale anche per il Board).
+
+**2.3 — Anti-pattern bloccati (lista di enforcement del Brand-Voice Sentinel).**
+- **AI-slop:** frasi generiche, icebreaker vuoti, aggettivi senza dati.
+- **Dependency-language:** "avrai sempre bisogno di noi", "gestiremo tutto noi" — viola Art.1.2.
+- **Hype non fondato:** numeri senza fonte, "rivoluzionario", "unico al mondo".
+- **Tono agenzia tradizionale:** formale, distante, terza persona istituzionale.
+- **Canoni impliciti:** qualsiasi frase che suggerisca abbonamenti ricorrenti — viola Art.3.
+
+**2.4 — Framework di scrittura.** Il copy di conversione usa **APSOC**
+(Attenzione → Problema → Soluzione → Obiezioni → CTA) come spina dorsale.
+Riferimento operativo: skill `cro-copy-architect` + wiki
+`concepts/Framework_Cold_Outreach_APSOC.md`. P sempre prima di S (violazione = −15 al gate).
 
 ---
 
-## Articolo 3 — Pricing Policy (Invariante)
+## Articolo 3 — Offerta e Pricing Policy
 
-| Regola | Dettaglio |
-|---|---|
-| **One-time, zero canoni** | Ogni prodotto/servizio ha un prezzo una-tantum. Non esistono abbonamenti mensili sulle implementazioni agency. Mai contraddire questa regola in nessun copy o preventivo |
-| **Codice di proprietà del cliente** | Il codice consegnato appartiene al cliente. Non vendiamo licenze d'uso, vendiamo ownership |
-| **Prezzi pubblici e fissi** | Outreach Factory €4.000 · Content Factory €3.500 · Second Brain €2.500 · Engine Room (bundle) €8.000. Sconti solo via bundle — mai sul singolo prodotto senza ok fondatori |
-| **Setup 7 giorni** | Ogni implementazione viene completata in 7 giorni lavorativi. Se non è rispettabile, si comunica prima della firma |
-| **Supporto 90 giorni** | Incluso nel prezzo. Dopo 90gg: accordo separato |
+**3.1 — Listino corrente (pubblico e fisso).**
 
----
+| Prodotto | Prezzo one-time | Contenuto |
+|---|---|---|
+| Outreach Factory | €4.000 | outreach automatizzato (email 300+/gg, LinkedIn, Instagram) sul server del cliente |
+| Content Factory | €3.500 | produzione contenuti AI (caroselli, script, caption) |
+| Second Brain | €2.500 | knowledge base a grafo + memoria per LLM |
+| **Engine Room** (bundle) | €8.000 | tutti e 3 |
 
-## Articolo 4 — Standard di Qualità (Gate APSOC)
+Comuni a tutte le implementazioni: **setup 7 giorni lavorativi** (se non rispettabile, si
+comunica prima della firma) · **90 giorni di supporto inclusi** (oltre: accordo separato).
 
-**Framework APSOC** è la spina dorsale di ogni copy prodotto da DE:
-`A`ttenzione → `P`roblema → `S`oluzione → `O`biezioni → `C`TA
+**3.2 — Invarianti pricing (mai contraddirle, in nessun copy e in nessun preventivo).**
+1. **One-time, zero canoni.** Nessun abbonamento mensile sulle implementazioni agency.
+2. **Codice di proprietà del cliente.** Vendiamo ownership, non licenze d'uso.
+3. **Sconti solo via bundle** — mai sul singolo prodotto senza approvazione di Max.
 
-Gate obbligatori (non derogabili):
-- **Score A8 ≥ 80/100** — ogni copy standard
-- **Score A8 ≥ 85/100** — sales page e proposta commerciale
-- **Ordine P prima di S** — violazione = −15 automatico, no eccezioni
-- **Brand gate G2 (Brand-Voice Sentinel)** — checklist binaria: voce ✓ · prove ✓ · APSOC ✓ · pricing ✓ · zero AI-slop ✓
+**3.3 — Chi decide i prezzi (ADR-005, punto 4).**
+Le decisioni di prezzo non si improvvisano e non si chiedono a Max una per una:
+- il **team prezzi** (motori: skill `pricing` + `beast-preventivi`) **propone** prezzi e
+  bundle con razionale documentato;
+- **Max approva a lotti**; nessun prezzo nuovo è pubblico finché non è approvato;
+- ogni variazione di listino approvata → ADR + aggiornamento di questo Articolo.
 
-**Per il codice:**
-- Zero bug bloccanti in produzione senza mitigazione documentata
-- Ogni sistema nuovo ha modalità dry-run (stima costo senza effetti reali)
-- Cost guard attivo prima di ogni spesa API/crediti
-- Segreti (API key, sessioni browser) mai nel repo Git
-
----
-
-## Articolo 5 — Regole Operative Non Negoziabili (13 Pattern)
-
-I 13 pattern architetturali che governano come DE costruisce e opera.
-Dettaglio tecnico: `PIANO-MAESTRO/00-PIANO-MAESTRO.md` §6.
-
-**Top 5 (sempre attivi):**
-
-1. **Memory-first (#13)** — Prima di ogni task: interroga `company/Memory/` (STATO-EMPIRE + INDEX). Dopo ogni task: scrivi checkpoint. Nessun task è "fatto" senza checkpoint.
-
-2. **Wiki-first (#12)** — La wiki `second-brain-vault/wiki/` è la fonte di verità leggibile dall'uomo. Ogni operazione logga in `wiki/log.md`. AgentDB è l'indice semantico per gli agenti.
-
-3. **Wrap, mai riscrittura (#ADR-003)** — I sistemi attivi (outreach in produzione) non si riscrivono né si toccano finché il sostituto non è validato e pronto. Si wrappano. Prima di toccare qualsiasi workflow esistente: verifica su disco che esista davvero.
-
-4. **Dry-run prima di spendere (#3)** — Nessuna spesa API/crediti senza ok esplicito dei fondatori. Ogni workflow nuovo ha modalità stima-costo.
-
-5. **Gate qualità obbligatorio (#4)** — Niente esce senza QA gate. Copy: APSOC ≥80 + brand gate. Codice: verify.sh verde. Contenuto: revisione umana nelle prime fasi.
+**3.4 — Prodotti info e multi-business.** Stessi principi: prezzo proposto dal team prezzi,
+approvato da Max, dichiarato in chiaro. Un prodotto senza prezzo approvato non si lancia —
+ma non blocca la costruzione dell'infrastruttura (ADR-005: slot pronto, prezzo nel BACKLOG).
 
 ---
 
-## Articolo 6 — Governance e Modifiche al Mandato
+## Articolo 4 — Qualità (gate non bypassabili)
 
-**Chi può modificare questo documento:**
-Solo i fondatori (Max e Gael) via decisione documentata in `company/Memory/decisions/ADR-*.md`.
-Ogni modifica produce un nuovo ADR con: contesto → decisione → conseguenze → chi ha deciso → data.
+**4.1 — Principio.** Niente esce da Digital Empire senza passare i gate. **I gate non sono
+bypassabili**: nessun flag `--skip`, nessuna eccezione inline. Le uniche vie sono (a)
+correggere, oppure (b) deroga registrata dal Board via hive-mind raft, depositata in
+`Memory/decisions/`. Gate bypassati: 0, per definizione (KPI del Backbone).
 
-**Conflitti tra ecosistemi:**
-Il Board/C-Suite risolve via hive-mind consensus. Il CEO/Empire-Conductor ha voto decisivo in caso di stallo.
+**4.2 — Gate copy (APSOC).**
+- Score **≥ 80/100** su ogni copy standard (audit: skill `cro-copy-architect`).
+- Score **≥ 85/100** su sales page e proposte commerciali.
+- Struttura completa: P prima di S (violazione = −15 automatico, senza eccezioni).
+- **Brand gate G2** (Brand-Voice Sentinel): checklist binaria — voce ✓ · prove ✓ ·
+  APSOC ✓ · pricing ✓ · zero AI-slop ✓.
 
-**Priorità gerarchica in caso di conflitto:**
-`Mandato (LX) > Board (L0) > Ecosistema (L1) > Reparto (L2) > Workflow (L3) > Agente (L5)`
+**4.3 — Gate codice e sistemi.**
+- Ogni sistema nuovo ha **modalità dry-run** (stima costi ed effetti senza eseguire) —
+  pattern #3: **dry-run sempre prima di spendere**; nessuna spesa API/crediti senza ok esplicito.
+- `verify-empire` (Governance, 5 categorie: struttura · brand · APSOC · costi · sicurezza)
+  verde prima di ogni chiusura di fase.
+- Zero bug bloccanti in produzione senza mitigazione documentata.
+- I sistemi attivi non si riscrivono: si wrappano (ADR-003) — il sostituto va validato
+  PRIMA di toccare l'originale.
 
-Un Sentinel può bloccare qualsiasi livello se viola il Mandato, indipendentemente dalla gerarchia.
+**4.4 — Gate contenuti.** Revisione umana obbligatoria prima della pubblicazione nelle fasi
+F1-F7; pubblicazione automatica solo dopo decisione Board che la autorizza per quel canale.
 
 ---
 
-## Checklist Brand Gate (uso operativo — copia questa checklist nei gate QA)
+## Articolo 5 — Memory-first e Wiki-first (ADR-002, pattern #12 e #13)
+
+**5.1 — Memory-first (pattern #13, non negoziabile).**
+- PRIMA di ogni task: leggere `company/Memory/INDEX.md` + `STATO-EMPIRE.md` e gli ADR
+  attivi sull'area toccata. Mai contraddire un ADR in silenzio: o lo si rispetta, o si
+  propone un nuovo ADR.
+- DOPO ogni task chiuso: checkpoint in `Memory/checkpoints/CP-YYYYMMDD-NNN.md` (template
+  in `Memory/templates/`) + aggiornamento di STATO-EMPIRE.
+- **Nessun task è "fatto" finché non è salvato in Memory.**
+
+**5.2 — Wiki-first (pattern #12).**
+- La wiki `second-brain-vault/wiki/` è la **fonte di verità leggibile dall'uomo**;
+  AgentDB è solo l'indice semantico per gli agenti.
+- In caso di conflitto wiki ↔ AgentDB: **vince la wiki**; AgentDB si reindicizza.
+- Ogni operazione rilevante logga in `wiki/log.md` (il lag di sync è vigilato dal
+  Drift-Sentinel, KPI < 24h).
+
+**5.3 — Decisioni.** Ogni decisione architetturale o di policy → ADR con contesto,
+decisione, conseguenze, decisore, data e contradiction-check contro gli ADR attivi.
+
+---
+
+## Articolo 6 — Multi-tenant by design (pattern #11)
+
+**6.1 — Principio.** Lo stesso motore serve Digital Empire, i clienti agency, i canali
+YouTube e i libri KDP. Per questo **ogni workflow accetta `brand_kit` + `icp` come input
+obbligatori**: un handoff senza brand_kit dichiarato è invalido (il coordinator lo rifiuta).
+
+**6.2 — Conseguenze operative.**
+- Nessun valore hard-coded di brand/voce/palette dentro i workflow: tutto arriva dal brand_kit.
+- Il brand_kit di default è `DE` (questo Mandato + design system empire-style,
+  ink/paper/orange `#fb4604`); per i clienti vale il LORO brand kit, caricato a inizio lavoro.
+- I costi si attribuiscono anche per brand/cliente (`cost-attribution` multi-tenant in
+  Observability): si deve sempre poter rispondere a "quanto costa servire il cliente X?".
+- Il Mandato vincola COME lavoriamo per i clienti (qualità, sicurezza, trasparenza), non la
+  LORO voce: il brand_kit del cliente governa il suo tono; i gate di qualità restano nostri.
+
+---
+
+## Articolo 7 — Sicurezza (zero segreti, PII protetta)
+
+**7.1 — Zero segreti nel repo (assoluto).**
+API key, token, password, sessioni browser, credenziali: **mai** in Git. Vivono in `.env`
+locali e file ignorati (`.gitignore` blindato, ADR-004). Un segreto committato = incidente:
+blocco push immediato, rotazione credenziale, deposito in `patterns/incidents/`.
+
+**7.2 — PII protetta.**
+Ogni output destinato all'esterno (email, DM, report, contenuti) passa scan PII
+(`aidefence_has_pii` o checklist equivalente). I dati dei lead e dei clienti non lasciano
+i sistemi autorizzati e non finiscono in contenuti pubblici.
+
+**7.3 — Supply-chain e perimetro.**
+- Skill, dipendenze e vendor nuovi: verificati prima dell'adozione (scan + review).
+- Permessi anomali o comportamenti fuori profilo di un agente → quarantena e scan completo.
+- Repo cliente separati dal monorepo (es. `Clienti/EXPONIUM` = repo a parte).
+
+**7.4 — Enforcement.** Il Security-Sentinel ha autorità di blocco immediato su push e invii;
+escalation: CTO → CEO (consenso byzantine se si sospetta compromissione).
+
+---
+
+## Checklist Brand Gate (uso operativo — da copiare nei gate QA)
 
 ```
 [ ] Voce: diretta, provocatoria, trasparente — niente qualificatori molli
@@ -126,13 +206,16 @@ Un Sentinel può bloccare qualsiasi livello se viola il Mandato, indipendentemen
 [ ] Struttura APSOC rispettata — P appare prima di S
 [ ] Pricing one-time e corretto — nessun abbonamento mensile implicito
 [ ] Zero AI-slop — niente frasi generiche, icebreaker vuoti, aggettivi senza numeri
-[ ] Autonomia del cliente — niente dipendency-language
+[ ] Autonomia del cliente — niente dependency-language
+[ ] brand_kit + icp dichiarati (multi-tenant, Art.6)
 [ ] Segreti fuori dal repo — nessuna key/sessione in git
 [ ] Checkpoint scritto in Memory dopo questo task
 ```
 
 ---
 
-*Creato: 2026-06-11 · Autorità: LX (fondatori Max + Gael)*
-*ADR fondativo: `company/Memory/decisions/ADR-001-empire-os-10-ecosistemi.md`*
-*Fonte: `PIANO-MAESTRO/00-PIANO-MAESTRO.md` §1, §6 · `04-ECOSISTEMA-MARKETING.md` §8*
+*Versione: 2.0 (F1-bis) · Aggiornato: 2026-06-11 · Autorità: LX — approva solo Max, via ADR*
+*ADR collegati: ADR-001 (10 ecosistemi) · ADR-002 (memory-first) · ADR-003 (wrap) ·
+ADR-004 (monorepo/sync) · ADR-005 (backlog + team prezzi)*
+*Fonti: `PIANO-MAESTRO/00-PIANO-MAESTRO.md` §1 §6 · `07-BACKBONE-RUFLO-SKILLS.md` §1.3 §4 ·
+skill `empire-context`*
