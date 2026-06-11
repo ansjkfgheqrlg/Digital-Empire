@@ -161,6 +161,11 @@ Dettaglio nel dossier `05-ECOSISTEMA-MULTIBUSINESS.md`. **Gate F7:** primo video
 
 ## Regole di esecuzione (ogni fase)
 
+⚠️ **AGGIORNAMENTO ADR-006 (2026-06-11):** ogni fase si esegue col **Ciclo di Fase Empire
+a 9 passi** — documento canonico `10-METODO-CICLO-FASE.md` (RECALL → SPEC → PRE-MORTEM →
+BUILD con swarm → GATE → REVIEW indipendente → TEST → COMMIT → RETRO). Le regole sotto
+restano valide e sono inglobate nel ciclo.
+
 0. **MEMORY-FIRST (pattern #13, non negoziabile):** prima di QUALSIASI task interrogare
    `company/Memory/` (INDEX + STATO-EMPIRE + CP/ADR rilevanti); dopo OGNI task scrivere
    checkpoint CP. Nessun task è chiuso senza CP-id.

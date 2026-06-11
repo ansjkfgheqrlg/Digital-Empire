@@ -66,6 +66,13 @@ Roadmap 12 fasi con gate: dossier 08. **Fase corrente: vedi STATO-EMPIRE.md.**
 
 ## 4. Le regole non negoziabili (i 13 pattern — dettaglio in 00-PIANO-MAESTRO §6)
 
+**METODO (ADR-006):** ogni fase di costruzione segue il **Ciclo di Fase Empire a 9 passi**
+(`PIANO-MAESTRO/10-METODO-CICLO-FASE.md`): RECALL → SPEC → PRE-MORTEM → BUILD → GATE →
+REVIEW indipendente → TEST → COMMIT → RETRO. **Swarm obbligatorio** su ≥2 aree disgiunte —
+vale identico per Max e per Gael (stesso account, stesse capacità: lo swarm lo lancia
+Claude Code via Agent tool, chiunque sia l'utente). Prompt sempre idempotenti.
+Coordinamento via blocco ⚠️ in STATO-EMPIRE pushato PRIMA del build.
+
 Le 5 che servono SEMPRE:
 1. **Memory-first (#13)**: vedi §0.
 2. **Wiki-first (#12)**: leggi `second-brain-vault/wiki/index.md` + `log.md`; ogni operazione

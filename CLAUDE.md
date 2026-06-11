@@ -13,6 +13,15 @@
 
 **Nessun task è "fatto" finché non è salvato in Memory.** Dossier: `PIANO-MAESTRO/09-ECOSISTEMA-MEMORY.md`.
 
+## REGOLA UNO: CICLO DI FASE A 9 PASSI (ADR-006 — vale per Max E per Gael)
+
+Ogni fase di costruzione segue `PIANO-MAESTRO/10-METODO-CICLO-FASE.md`:
+**RECALL → SPEC → PRE-MORTEM → BUILD → GATE → REVIEW indipendente → TEST → COMMIT → RETRO.**
+- **Swarm obbligatorio** quando il lavoro copre ≥2 aree disgiunte (Agent tool, agenti paralleli in background, prompt IDEMPOTENTI).
+- PRIMA di un build grosso: blocco ⚠️ COORDINAMENTO in `company/Memory/STATO-EMPIRE.md` + push (l'altro socio non deve collidere).
+- Budget-guard: <20% risorse sessione → chiudere con COMMIT, non aprire build nuovi.
+- Item minori → `company/Memory/BACKLOG.md` (ADR-005), mai fermare la costruzione.
+
 ## REGOLA FONDAMENTALE: WIKI-FIRST
 
 **Questa directory è il quartier generale di Digital Empire.**

@@ -19,9 +19,27 @@ Obiettivo fase: 0 cartelle vuote, 0 file magri, ogni agente con scheda
 completa stile CF (identità, responsabilità, I/O, come ragiona, KPI, escalation).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- **Max/swarm sta scrivendo in TUTTA `company/` (tranne Memory/)** — Gael: NON toccare
-  `company/` finché questo blocco non sparisce dallo STATO. Lavora altrove
-  (es. Outreach/ runtime, secondbrain, o pausa). Fine prevista: prossimo CP.
+- **MAX SI FERMA (2026-06-11 pomeriggio). IL TESTIMONE PASSA A GAEL.** Il blocco
+  "Max scrive in company/" è RIMOSSO: dopo il reset delle 19:50, `company/` è di Gael.
+
+## ▶️ ISTRUZIONI PER GAEL (prossima sessione, dopo le 19:50)
+**Task: completare F1-bis (arricchimento massivo company/) col NUOVO METODO.**
+1. NOVITÀ da leggere prima (pull automatico già fatto dagli hook):
+   `PIANO-MAESTRO/10-METODO-CICLO-FASE.md` (metodo a 9 passi, ADR-006 — sostituisce
+   "fase→controllo→avanti"), ADR-005 (minori→BACKLOG), CLAUDE.md aggiornato.
+2. Esegui il ciclo a 9 passi su F1-bis: RECALL (questo file) → SPEC (DONE WHEN: 0 cartelle
+   vuote, 0 file <15 righe, schede agente complete per TUTTI i roster dei dossier) →
+   PRE-MORTEM (lezione CP-005: agenti muoiono → prompt idempotenti; budget-guard 20%) →
+   BUILD: **swarm 6 agenti in background** su cartelle disgiunte, stessi compiti della
+   tabella sotto, prompt che VERIFICANO L'ESISTENTE prima di scrivere → GATE (scan vuote/
+   magri) → REVIEW indipendente (1 agente legge 5 file a caso vs dossier) → TEST amnesia →
+   COMMIT (CP + questo file + wiki log + push) → RETRO.
+3. Assegnazione swarm (fonte = dossier PIANO-MAESTRO corrispondente):
+   A1: Ecosistemi/01+02 · A2: 03+04 · A3: 05+06 · A4: 07+08 · A5: 09+10+Gerarchia ·
+   A6: Mandato+Board-CSuite+Backbone+Sentinels+Guilds+GRUPPO.md+org.
+   Vietato agli agenti: toccare Memory/, 01-agency/, skills-map.yaml, wiki/log.md.
+4. Dopo F1-bis: prossima fase = F4 B2 (wrap formale WF outreach come team L3, SENZA
+   bisogno del token FB — slot pronto, ADR-005).
 
 ## Cosa e' stato fatto (ultimo evento in cima)
 - 2026-06-11 — **F4 B1 AGENCY LIVE INFRASTRUTTURA COMPLETATO** (Gael, CP-20260611-004):

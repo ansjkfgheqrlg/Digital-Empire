@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-11] — METODO: Ciclo di Fase Empire a 9 passi (ADR-006) + handover Max→Gael
+
+- CREATO: `PIANO-MAESTRO/10-METODO-CICLO-FASE.md` — il metodo "fase→controllo→avanti" arricchito a 9 passi chirurgici (RECALL→SPEC→PRE-MORTEM→BUILD con swarm obbligatorio→GATE deterministico→REVIEW indipendente→TEST funzionale/amnesia→COMMIT→RETRO) + regole trasversali (idempotenza, coordinamento via STATO, budget-guard 20%, una fase per ciclo) + checklist per CP. Origine: direttiva Max + lezioni reali (CP-001 scritture concorrenti, CP-005 swarm morto su session limit).
+- CODIFICATO in: ADR-006, CLAUDE.md progetto (REGOLA UNO — Gael la eredita via repo), 08-ROADMAP regole, skill empire-context. Chiarito: Gael ha capacità swarm IDENTICHE a Max (stesso account/skill) — ora obbligo per entrambi.
+- HANDOVER: Max si ferma; F1-bis (arricchimento massivo company/, interrotto a metà dal session limit 19:50 con 6 agenti morti) riprende GAEL con istruzioni passo-passo in STATO-EMPIRE. CP-20260611-005.
+
 ## [2026-06-11] — BUILD: F1 Scaffolding EMPIRE OS completato (Gael, CP-20260611-001)
 
 - BUILD: `company/` ora navigabile con struttura completa — task 1.1–1.7 di F1 tutti completati.
