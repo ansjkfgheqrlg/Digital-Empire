@@ -15,7 +15,8 @@
 
 ## Checkpoint
 - [CP-20260610-001](checkpoints/CP-20260610-001.md) — Prodotto PIANO-MAESTRO completo (10 dossier, swarm 7 agenti + conductor)
-- [CP-20260610-002](checkpoints/CP-20260610-002.md) — GitHub monorepo + sync setup (repo locale pronto, push pendente)
+- [CP-20260610-002](checkpoints/CP-20260610-002.md) — GitHub monorepo + sync: LIVE (push 966 MiB + motore testato)
+- [CP-20260610-003](checkpoints/CP-20260610-003.md) — Skill `empire-context` creata (project-level, condivisa con Gael via repo)
 
 ## Piani
 - [PIANI.md](plans/PIANI.md) — registro piani versionati (→ PIANO-MAESTRO/)

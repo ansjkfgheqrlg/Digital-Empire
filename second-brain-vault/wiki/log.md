@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-06-10] — SKILL: `empire-context` creata e installata (project-level, per Max + Gael)
+
+- CREATA: `.claude/skills/empire-context/SKILL.md` — la knowledge base aziendale per agenti/sessioni (equivalente DE di exponium-context, deliverable anticipato del dossier 07 §3.2.1): identità+offerta+prezzi, mappa 10 ecosistemi→dossier, top-5 pattern operativi (memory-first, wiki-first, wrap-non-riscrittura, dry-run, gate), sistema sync ADR-004, sezione "se l'utente è Gael" (guida passo-passo + coordinamento anti-collisione via STATO-EMPIRE), mappa file di verità, storia del progetto.
+- INSTALLAZIONE: livello PROGETTO (viaggia col repo) — le skill non si sincronizzano via account Claude; il monorepo è il canale: Gael la riceve attiva col primo pull. Memory: CP-20260610-003. → 1 skill creata.
+
 ## [2026-06-10] — INFRA: Monorepo GitHub `digital-empire` + sync automatico Max↔Gael (ADR-004)
 
 - BUILD: repo git nella root di `Digital Empire/` — branch main, commit iniziale **10.634 file / 967 MiB**, destinazione repo privato `ansjkfgheqrlg/digital-empire` (scelta esplicita Max; token in rinnovo via device flow).
