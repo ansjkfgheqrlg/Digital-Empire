@@ -1,0 +1,79 @@
+{
+  "_schema": "HC-v1",
+  "_id": "HC-A3-A4-contratto",
+  "_version": "1.0",
+  "_created": "2026-06-11",
+  "description": "A3-PREVENTIVI -> A4-DELIVERY: contratto firmato, avvio delivery",
+
+  "from": {
+    "ecosystem": "01-AGENCY",
+    "reparto": "A3-PREVENTIVI",
+    "agent": "AG-A3-COORD",
+    "task_id": "WF-PREVENTIVO"
+  },
+  "to": {
+    "ecosystem": "01-AGENCY",
+    "reparto": "A4-DELIVERY",
+    "agent": "AG-A4-COORD",
+    "queue": "delivery_queue"
+  },
+
+  "payload": {
+    "type": "contratto_firmato",
+    "data": {
+      "cycle_id": "CY-YYYYMMDD-NNN",
+      "client_id": "string",
+      "nome_azienda": "string",
+      "prodotto": "outreach_factory | content_factory | second_brain | engine_room",
+      "valore_eur": 0,
+      "pagamento_confermato": true,
+      "brief_tecnico": {
+        "problema_principale": "string",
+        "awareness_level": "aware | unaware",
+        "stack_attuale": "string",
+        "ambiente_server": "string (OS, hosting, accessi disponibili)",
+        "vincoli_noti": "string",
+        "deadline_richiesta": "string | null"
+      },
+      "brand_kit": {
+        "nome_brand": "string",
+        "tono": "string",
+        "target_cliente_finale": "string",
+        "colori_principali": "string | null"
+      },
+      "icp_cliente": {
+        "nicchia": "string",
+        "size": "string",
+        "problema_principale": "string"
+      },
+      "contratto_firmato_at": "ISO 8601",
+      "gate_preventivo_passed": true
+    },
+    "files": ["path/proposta.pdf", "path/contratto.pdf"],
+    "context_refs": [
+      "agency/proposals/<proposal_id>",
+      "agency/clients/<client_id>"
+    ]
+  },
+
+  "acceptance_criteria": [
+    "gate_preventivo_passed = true",
+    "pagamento_confermato = true",
+    "brief_tecnico.ambiente_server compilato",
+    "brand_kit compilato",
+    "prodotto nel catalogo: outreach_factory | content_factory | second_brain | engine_room"
+  ],
+
+  "failure_handling": {
+    "on_reject": "A4 segnala campo mancante; A3 integra brief tecnico",
+    "on_timeout": "alert AG-A4-COORD se delivery non inizia entro 48h da pagamento"
+  },
+
+  "metadata": {
+    "priority": "critical",
+    "status": "template",
+    "frequenza": "per-evento",
+    "pii": true,
+    "pii_note": "client_id e dati aziendali: aidefence_has_pii prima dello store"
+  }
+}

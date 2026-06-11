@@ -1,0 +1,61 @@
+{
+  "_schema": "agency-state-v1",
+  "updated_at": "2026-06-11T00:00:00Z",
+
+  "cycles": {
+    "active": [],
+    "completed": [],
+    "failed": []
+  },
+
+  "kpi": {
+    "a1": {
+      "leads_qualified_today": 0,
+      "pct_qualifica": 0.0,
+      "note": "baseline da misurare dal giorno 1"
+    },
+    "a2": {
+      "email_sent_today": 0,
+      "li_sent_today": 0,
+      "ig_sent_today": 0,
+      "reply_rate": 0.0,
+      "positive_reply_rate": 0.0,
+      "calls_booked_week": 0,
+      "note": "cap attivi: email <=500/gg 100/h; LI 20+20+30; IG 30 DM/gg (bloccato: token FB scaduto)"
+    },
+    "a3": {
+      "avg_call_to_proposal_h": 0,
+      "win_rate": 0.0,
+      "avg_deal_value_eur": 0,
+      "proposals_sent_total": 0,
+      "note": "target: <=48h call->preventivo"
+    },
+    "a4": {
+      "avg_delivery_days": 0,
+      "uat_first_pass_rate": 0.0,
+      "tickets_resolved_in_sla_pct": 0.0,
+      "deliveries_completed_total": 0,
+      "note": "target: <=7gg delivery"
+    },
+    "a5": {
+      "copy_bibbia_pass_first_try_pct": 0.0,
+      "note": "baseline da misurare"
+    },
+    "a6": {
+      "case_studies_total": 0,
+      "inbound_calls_month": 0,
+      "testimonials_total": 0
+    }
+  },
+
+  "blockers": [
+    {
+      "id": "B-001",
+      "desc": "Token FB scaduto: outreach Instagram bloccato (WF-OUTREACH-INSTAGRAM sospeso)",
+      "owner": "Max",
+      "reparto": "A2-ACQUISIZIONE",
+      "since": "2026-06-11",
+      "action": "Rinnovare token FB in Meta Developer Console; aggiornare .env locale; non va in git"
+    }
+  ]
+}

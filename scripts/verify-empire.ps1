@@ -143,6 +143,57 @@ if (Test-Path $invFile) {
     Check "Orfani <= 3 (attuale: $orfaniCount)" ($orfaniCount -le 3)
 }
 
+# --- F4: AGENCY live ---
+Write-Host ""
+Write-Host "[ F4 - AGENCY live ]"
+
+$agencyDir = Join-Path $COMPANY "01-agency"
+Check "01-agency/ esiste"                         (Test-Path $agencyDir)
+Check "01-agency/BACKBONE.md"                     (Test-Path (Join-Path $agencyDir "BACKBONE.md"))
+
+$reparti = @("A1-RICERCA","A2-ACQUISIZIONE","A3-PREVENTIVI","A4-DELIVERY","A5-COPY-INTERNO","A6-MARKETING-INTERNO")
+foreach ($r in $reparti) {
+    Check "01-agency/$r/BACKBONE.md"              (Test-Path (Join-Path $agencyDir "$r\BACKBONE.md"))
+}
+
+Check "A1 handoffs/HC-A1-A2-leads.json"           (Test-Path (Join-Path $agencyDir "A1-RICERCA\handoffs\HC-A1-A2-leads.json"))
+Check "A2 handoffs/HC-A2-A3-call.json"            (Test-Path (Join-Path $agencyDir "A2-ACQUISIZIONE\handoffs\HC-A2-A3-call.json"))
+Check "A3 handoffs/HC-A3-A4-contratto.json"       (Test-Path (Join-Path $agencyDir "A3-PREVENTIVI\handoffs\HC-A3-A4-contratto.json"))
+Check "A4 handoffs/HC-A4-A6-testimonianza.json"   (Test-Path (Join-Path $agencyDir "A4-DELIVERY\handoffs\HC-A4-A6-testimonianza.json"))
+
+Check "Memory/state/agency/README.md"             (Test-Path (Join-Path $COMPANY "Memory\state\agency\README.md"))
+Check "Memory/state/agency/state.json"            (Test-Path (Join-Path $COMPANY "Memory\state\agency\state.json"))
+Check "Memory/state/agency/trace.jsonl"           (Test-Path (Join-Path $COMPANY "Memory\state\agency\trace.jsonl"))
+
+$stateFile = Join-Path $COMPANY "Memory\state\agency\state.json"
+if (Test-Path $stateFile) {
+    $st = Get-Content $stateFile -Raw -Encoding UTF8
+    Check "state.json: schema agency-state-v1"    ($st -match "agency-state-v1")
+    Check "state.json: kpi presenti"              ($st -match '"kpi"')
+}
+
+$traceFile = Join-Path $COMPANY "Memory\state\agency\trace.jsonl"
+if (Test-Path $traceFile) {
+    $traceLines = (Get-Content $traceFile -Encoding UTF8 | Measure-Object -Line).Lines
+    Check "trace.jsonl: almeno 1 evento ($traceLines righe)" ($traceLines -ge 1)
+}
+
+# Skills F4 (9 nuove)
+$skillsF4 = @(
+    ".claude\skills\discovery-call-brief\SKILL.md",
+    ".claude\skills\proposal-gate\SKILL.md",
+    ".claude\skills\delivery-playbook\SKILL.md",
+    ".claude\skills\client-handover\SKILL.md",
+    ".claude\skills\support-90\SKILL.md",
+    ".claude\skills\outreach-reply-triage\SKILL.md",
+    ".claude\skills\icp-radar\SKILL.md",
+    ".claude\skills\case-study-forge\SKILL.md",
+    ".claude\skills\upsell-mapper\SKILL.md"
+)
+foreach ($sk in $skillsF4) {
+    Check "Skill $sk" (Test-Path (Join-Path $ROOT $sk))
+}
+
 # --- Scripts ---
 Write-Host ""
 Write-Host "[ Scripts ]"

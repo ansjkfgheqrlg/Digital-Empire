@@ -1,0 +1,60 @@
+{
+  "_schema": "HC-v1",
+  "_id": "HC-A2-A3-call",
+  "_version": "1.0",
+  "_created": "2026-06-11",
+  "description": "A2-ACQUISIZIONE -> A3-PREVENTIVI: lead ha prenotato discovery call",
+
+  "from": {
+    "ecosystem": "01-AGENCY",
+    "reparto": "A2-ACQUISIZIONE",
+    "agent": "AG-A2-COORD",
+    "task_id": "WF-REPLY-FOLLOWUP"
+  },
+  "to": {
+    "ecosystem": "01-AGENCY",
+    "reparto": "A3-PREVENTIVI",
+    "agent": "AG-A3-COORD",
+    "queue": "call_booked"
+  },
+
+  "payload": {
+    "type": "call_booking",
+    "data": {
+      "cycle_id": "CY-YYYYMMDD-NNN",
+      "lead_id": "string",
+      "lead_nome_azienda": "string",
+      "lead_nicchia": "string",
+      "call_scheduled_at": "ISO 8601",
+      "canale_outreach": "email | linkedin | instagram",
+      "thread_conversazione": "string (testo riassunto, NO PII identificative dettagliate)",
+      "triage_result": "interessato",
+      "note": "string"
+    },
+    "files": [],
+    "context_refs": [
+      "company/01-agency/A2-ACQUISIZIONE/BACKBONE.md",
+      "agency/leads/<lead_id>"
+    ]
+  },
+
+  "acceptance_criteria": [
+    "triage_result = 'interessato' (non obiezione / no / oof)",
+    "call_scheduled_at nel futuro (non passata)",
+    "lead_id presente in leads.db",
+    "dossier pre-call preparato da AG-A3-BRIEF-W entro call_scheduled_at"
+  ],
+
+  "failure_handling": {
+    "on_reject": "ritorna ad A2 per follow-up; log motivo rifiuto",
+    "on_timeout": "se call non avviene: A2 manda follow-up rescheduling; log ghost"
+  },
+
+  "metadata": {
+    "priority": "high",
+    "status": "template",
+    "frequenza": "per-evento",
+    "pii": true,
+    "pii_note": "aidefence_has_pii prima dello store di thread_conversazione"
+  }
+}

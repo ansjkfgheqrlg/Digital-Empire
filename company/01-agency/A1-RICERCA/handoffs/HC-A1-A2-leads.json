@@ -1,0 +1,64 @@
+{
+  "_schema": "HC-v1",
+  "_id": "HC-A1-A2-leads",
+  "_version": "1.0",
+  "_created": "2026-06-11",
+  "description": "A1-RICERCA -> A2-ACQUISIZIONE: consegna lead qualificati per outreach",
+
+  "from": {
+    "ecosystem": "01-AGENCY",
+    "reparto": "A1-RICERCA",
+    "agent": "AG-A1-COORD",
+    "task_id": "WF-LEAD-SOURCING"
+  },
+  "to": {
+    "ecosystem": "01-AGENCY",
+    "reparto": "A2-ACQUISIZIONE",
+    "agent": "AG-A2-COORD",
+    "queue": "leads_ready"
+  },
+
+  "payload": {
+    "type": "lead_batch",
+    "data": {
+      "leads": [
+        {
+          "lead_id": "string",
+          "nome_azienda": "string",
+          "contatto_nome": "string",
+          "email": "string | null",
+          "linkedin_url": "string | null",
+          "instagram_handle": "string | null",
+          "nicchia": "string",
+          "score_icp": 0,
+          "canali_disponibili": ["email", "linkedin", "instagram"],
+          "note_qualifica": "string"
+        }
+      ]
+    },
+    "files": [],
+    "context_refs": [
+      "company/01-agency/A1-RICERCA/BACKBONE.md",
+      "Agenti/Agency/outreach/rules/"
+    ]
+  },
+
+  "acceptance_criteria": [
+    "qualifier_score >= soglia ICP attiva",
+    "almeno 1 canale di contatto valido (email | linkedin | instagram)",
+    "deduplication verificata vs leads.db",
+    "nicchia identificata"
+  ],
+
+  "failure_handling": {
+    "on_reject": "lead torna in A1 per arricchimento o scarto",
+    "on_timeout": "alert AG-A2-COORD; log in agency/leads"
+  },
+
+  "metadata": {
+    "priority": "high",
+    "status": "template",
+    "frequenza": "batch giornaliero",
+    "pii": false
+  }
+}

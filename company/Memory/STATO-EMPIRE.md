@@ -1,10 +1,13 @@
-# 📍 STATO EMPIRE — aggiornato 2026-06-11
+# STATO EMPIRE -- aggiornato 2026-06-11
 
 ## Fase roadmap corrente
-**F3 -- Migrazione asset: COMPLETATO** (2026-06-11).
-Prossima: F4 AGENCY live (vedi `PIANO-MAESTRO/08-ROADMAP-FASI.md`).
+**F4 -- AGENCY live: B1 infrastruttura COMPLETATO** (2026-06-11).
+Gate verify: PASS 97/97. Ciclo reale pendente (blocker B-001: token FB).
 
 ## Cosa e' stato fatto (ultimo evento in cima)
+- 2026-06-11 — **F4 B1 AGENCY LIVE INFRASTRUTTURA COMPLETATO** (Gael, CP-20260611-004):
+  company/01-agency/ con 6 reparti L2 (BACKBONE.md + handoffs), state.json + trace.jsonl schema,
+  4 HC intra-agency, 9 nuove skill FORGE. Gate: PASS 97/97.
 - 2026-06-11 — **F3 MIGRAZIONE ASSET COMPLETATO** (Gael, CP-20260611-003):
   51 skill/workflow mappate in skills-map.yaml, 35 cartelle in inventario-asset.yaml,
   8 wrapper L3 (Ecosistemi/<eco>/Workflow/). Gate: PASS 70/70.
@@ -44,13 +47,13 @@ Prossima: F4 AGENCY live (vedi `PIANO-MAESTRO/08-ROADMAP-FASI.md`).
 1. Caricare questo file + INDEX.md (memory-first).
 2. **F1 COMPLETATO** -- gate PASS 92/92.
 3. **F2 COMPLETATO** -- gate PASS 59/59.
-4. **Priorita' immediate:**
-   - Risolvere Token FB scaduto (outreach scraper) -- blocca revenue 01-AGENCY
-   - Decidere prezzo Manuale Claude Code -- blocca lancio 02-INFO-BUSINESS
-   - YouTube ingestion @Legamidiamore + @dosementale -- task 7.0/F-MB1, sessione dedicata
-5. **F3 COMPLETATO** -- gate PASS 70/70.
-6. **Prossima fase F4 -- AGENCY live:**
-   - Flusso revenue completo: lead->outreach->call->preventivo->contratto->delivery->upsell
-   - Prerequisito: sbloccare Token FB + decidere prezzo CCM
-   - Dettaglio: `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY.md`
-   - Gate F4: un ciclo completo reale tracciato in state.json + trace.jsonl
+4. **F3 COMPLETATO** -- gate PASS 70/70.
+5. **F4 B1 COMPLETATO** -- gate PASS 97/97.
+   Infrastruttura AGENCY live pronta: 6 reparti, 4 HC intra-agency, state.json, 9 skill.
+6. **Prossime azioni F4 (B2-B7):**
+   - SBLOCCARE: rinnovare Token FB (Max) -- WF-OUTREACH-INSTAGRAM sospeso
+   - SBLOCCARE: decidere prezzo Manuale Claude Code (Max) -- blocca lancio 02-INFO-BUSINESS
+   - B2: wrap formale WF outreach come team L3 con trace.jsonl events
+   - B3: primo preventivo reale con discovery-call-brief + proposal-gate
+   - Gate F4 definitivo: primo ciclo reale tracciato in state.json
+7. **YouTube ingestion** @Legamidiamore + @dosementale -- task 7.0/F-MB1, sessione dedicata

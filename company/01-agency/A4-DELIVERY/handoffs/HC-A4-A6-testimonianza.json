@@ -1,0 +1,66 @@
+{
+  "_schema": "HC-v1",
+  "_id": "HC-A4-A6-testimonianza",
+  "_version": "1.0",
+  "_created": "2026-06-11",
+  "description": "A4-DELIVERY -> A6-MARKETING-INTERNO: delivery completata, avvio raccolta testimonianza e upsell",
+
+  "from": {
+    "ecosystem": "01-AGENCY",
+    "reparto": "A4-DELIVERY",
+    "agent": "AG-A4-COORD",
+    "task_id": "WF-SUPPORTO-90GG"
+  },
+  "to": {
+    "ecosystem": "01-AGENCY",
+    "reparto": "A6-MARKETING-INTERNO",
+    "agent": "AG-A6-COORD",
+    "queue": "testimonianza_queue"
+  },
+
+  "payload": {
+    "type": "delivery_completata",
+    "data": {
+      "cycle_id": "CY-YYYYMMDD-NNN",
+      "client_id": "string",
+      "nome_azienda": "string",
+      "prodotto": "outreach_factory | content_factory | second_brain | engine_room",
+      "delivery_completed_at": "ISO 8601",
+      "uat_signed_at": "ISO 8601",
+      "gate_delivery_passed": true,
+      "metriche_reali": {
+        "giorni_delivery": 0,
+        "note_performance": "string (metriche verificabili, no stime)"
+      },
+      "supporto_90gg_ends_at": "ISO 8601",
+      "segnale_positivo": true,
+      "note": "string"
+    },
+    "files": ["path/uat_firmata.pdf"],
+    "context_refs": [
+      "agency/clients/<client_id>",
+      "agency/delivery/<client_id>"
+    ]
+  },
+
+  "acceptance_criteria": [
+    "gate_delivery_passed = true",
+    "uat_signed_at presente",
+    "metriche_reali verificabili (non inventate)",
+    "segnale_positivo = true (richiesto per attivare upsell-mapper)",
+    "supporto_90gg_ends_at calcolato correttamente"
+  ],
+
+  "failure_handling": {
+    "on_reject": "A6 non avvia raccolta; A4 risolve gate pendente",
+    "on_no_signal": "T-upsell-mapper NON si attiva; solo T-proof-collector con follow-up soft"
+  },
+
+  "metadata": {
+    "priority": "high",
+    "status": "template",
+    "frequenza": "per-evento (fine delivery)",
+    "pii": true,
+    "pii_note": "aidefence_has_pii prima dello store di dati cliente"
+  }
+}
