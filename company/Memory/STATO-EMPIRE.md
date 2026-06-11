@@ -1,10 +1,15 @@
-# 📍 STATO EMPIRE — aggiornato 2026-06-10
+# 📍 STATO EMPIRE — aggiornato 2026-06-11
 
 ## Fase roadmap corrente
 **F1 — Scaffolding EMPIRE OS** (appena iniziata: task 1.0 MEMORY in costruzione).
 Roadmap completa: `PIANO-MAESTRO/08-ROADMAP-FASI.md`.
 
 ## Cosa è stato fatto (ultimo evento in cima)
+- 2026-06-11 — **F1 SCAFFOLDING EMPIRE OS COMPLETATO** (Gael, CP-20260611-001):
+  task 1.1–1.7 completati. `company/` navigabile: GRUPPO.md, Mandato, Board-CSuite (7 agenti),
+  10 Ecosistemi (ECOSISTEMA.md + BACKBONE.md + 4 sottocartelle ognuno), Backbone (6 componenti),
+  Guilds (5), Sentinels (5), Gerarchia, `scripts/gen-empire.py`.
+  Gate F1: `python scripts/gen-empire.py --check` → PASS 92/92.
 - 2026-06-10 — **PIANO-MAESTRO completo**: 10 file in `Digital Empire/PIANO-MAESTRO/`
   (00 master, 01-05 ecosistemi business, 06 core, 07 backbone+ruflo+skills,
   08 roadmap 12 fasi, 09 MEMORY). Prodotto con swarm di 7 agenti paralleli + conductor.
@@ -31,6 +36,11 @@ Roadmap completa: `PIANO-MAESTRO/08-ROADMAP-FASI.md`.
 
 ## ▶️ RIPRESA DA (per la prossima sessione)
 1. Caricare questo file + INDEX.md (memory-first).
-2. Completare F1: task 1.1-1.7 (scaffolding `company/` completo: GRUPPO.md, Mandato,
-   Board-CSuite, 10 Ecosistemi, Backbone, Guilds, Sentinels, gen-empire.py).
-3. Poi F2 (Backbone operativo: ruflo init, skill empire-context, verify-empire.sh).
+2. **F1 COMPLETATO** ✅ — gate PASS 92/92.
+3. **Iniziare F2 — Backbone operativo:**
+   - 2.1 `ruflo init` nella root `Digital Empire/` (o `company/`) + daemon + memory init
+   - 2.2 Skill `empire-context` — verificare se aggiornare con nuova struttura F1
+   - 2.3 BUS: cartelle `Backbone/Bus/handoffs/` + contratto JSON standard
+   - 2.4 BRAIN: `ruflo memory init --namespace <eco>` per ognuno dei 10 ecosistemi
+   - 2.5 GOVERNANCE: `verify-empire.sh` v1 (check struttura + Mandato + zero orfani)
+   - 2.6 IDENTITY-HR: `registro-agenti.yaml` unico con Board censito

@@ -1,5 +1,20 @@
 # Wiki Log
 
+## [2026-06-11] — BUILD: F1 Scaffolding EMPIRE OS completato (Gael, CP-20260611-001)
+
+- BUILD: `company/` ora navigabile con struttura completa — task 1.1–1.7 di F1 tutti completati.
+- CREATO: `company/GRUPPO.md` (organigramma holding, LX→L5, 10 ecosistemi, Backbone, Guilds, Sentinels).
+- CREATO: `company/Mandato/MANDATO-EMPIRE.md` (documento costituzionale LX: identità, brand voice, pricing policy, gate APSOC, 13 pattern, governance, checklist brand gate).
+- CREATO: `company/Board-CSuite/` — 7 schede agente complete (CEO/COO/CTO/CMO/CRO/CFO/Chief-Forge): identità, responsabilità, I/O JSON, processo decisionale, KPI, escalation. + README Board.
+- CREATO: `company/Ecosistemi/` — 10 ecosistemi (01-AGENCY…10-MEMORY): ECOSISTEMA.md + BACKBONE.md + 4 sottocartelle (Reparti/, Workflow/, Funzioni/, Agenti/) per ognuno. Contenuto: missione, reparti L2, workflow principali, asset esistenti, collegamento backbone.
+- CREATO: `company/Backbone/` — 6 componenti (Bus, Brain, Governance, Identity-HR, Observability, Coordination) + README master: funzione, struttura, stato build, dipendenze.
+- CREATO: `company/Guilds/` — 5 Guild (Prompt, Copy/APSOC, Quality, Cost, Design) con README per ognuna.
+- CREATO: `company/Sentinels/` — 5 Sentinel (Cost, Quality, Drift, Security, BrandVoice) con README per ognuno.
+- CREATO: `company/Gerarchia/README.md` — schema LX→L5 con albero completo e schema canonico team.
+- CREATO: `scripts/gen-empire.py` — generatore/verifier struttura; gate F1: PASS 92/92.
+- RISOLTO: staging anomalo all'inizio sessione (~10.639 file staged per deletion) — annullato con `git restore --staged .`, nessun dato perso.
+- MEMORY: CP-20260611-001 + STATO-EMPIRE + INDEX aggiornati. → ~70 file/cartelle creati.
+
 ## [2026-06-10] — SKILL: `empire-context` creata e installata (project-level, per Max + Gael)
 
 - CREATA: `.claude/skills/empire-context/SKILL.md` — la knowledge base aziendale per agenti/sessioni (equivalente DE di exponium-context, deliverable anticipato del dossier 07 §3.2.1): identità+offerta+prezzi, mappa 10 ecosistemi→dossier, top-5 pattern operativi (memory-first, wiki-first, wrap-non-riscrittura, dry-run, gate), sistema sync ADR-004, sezione "se l'utente è Gael" (guida passo-passo + coordinamento anti-collisione via STATO-EMPIRE), mappa file di verità, storia del progetto.
