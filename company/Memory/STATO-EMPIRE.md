@@ -1,8 +1,15 @@
-# STATO EMPIRE -- aggiornato 2026-06-11
+# STATO EMPIRE -- aggiornato 2026-06-11 (pomeriggio)
 
 ## Fase roadmap corrente
-**F4 -- AGENCY live: B1 infrastruttura COMPLETATO** (2026-06-11).
-Gate verify: PASS 97/97. Ciclo reale pendente (blocker B-001: token FB).
+**F1-bis — ARRICCHIMENTO MASSIVO `company/` (IN CORSO, Max + swarm 6 agenti).**
+Controllo qualità post-F1..F4B1: scaffolding = scheletro (97 file, 11 cartelle vuote,
+README Sentinel magri). Obiettivo: 0 cartelle vuote, 0 file magri, ogni agente con scheda
+completa stile CF (identità, responsabilità, I/O, come ragiona, KPI, escalation).
+
+## ⚠️ COORDINAMENTO (anti-collisione)
+- **Max/swarm sta scrivendo in TUTTA `company/` (tranne Memory/)** — Gael: NON toccare
+  `company/` finché questo blocco non sparisce dallo STATO. Lavora altrove
+  (es. Outreach/ runtime, secondbrain, o pausa). Fine prevista: prossimo CP.
 
 ## Cosa e' stato fatto (ultimo evento in cima)
 - 2026-06-11 — **F4 B1 AGENCY LIVE INFRASTRUTTURA COMPLETATO** (Gael, CP-20260611-004):
@@ -37,11 +44,11 @@ Gate verify: PASS 97/97. Ciclo reale pendente (blocker B-001: token FB).
 - ✅ ME-0/ME-1 + review coerenza + wiki: COMPLETATI (CP-001).
 
 ## Blocchi / pending noti
-- Token FB scaduto (outreach scraper) — da rinnovare (vedi dossier 01, fase B0).
-- Catalogo InfoBusiness: Manuale Claude Code con prezzo "NON LO SO" + doppio ruolo
-  contraddittorio (prodotto vs lead magnet) — bloccante fase B1 dossier 02.
+- **NESSUN BLOCCO STRUTTURALE.** Item minori (token FB, prezzo manuale, team-prezzi, ecc.)
+  → spostati in `BACKLOG.md` per direttiva Max (ADR-005): non fermano MAI la costruzione.
+  Le fasi si riformulano per aggirarli (slot pronti + test dry).
 - Ingestione Empire Studio canali YouTube riferimento (@Legamidiamore, @dosementale) —
-  NON ancora fatta, è task 7.0 / F-MB1. Sessione dedicata.
+  task 7.0 / F-MB1, sessione dedicata (questo è strutturale per F7, non per F4-F6).
 
 ## RIPRESA DA (per la prossima sessione)
 1. Caricare questo file + INDEX.md (memory-first).
