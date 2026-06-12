@@ -30,10 +30,22 @@ Obiettivo fase: 0 cartelle vuote, 0 file magri, ogni agente con scheda
 completa stile CF (identità, responsabilità, I/O, come ragiona, KPI, escalation).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- **GAEL/swarm sta scrivendo in `company/Ecosistemi/`, Mandato, Board-CSuite, Backbone,
-  Sentinels, Guilds, Gerarchia, org (F1-bis arricchimento, da 2026-06-11 sera).**
-  Max: NON toccare queste cartelle finche' questo blocco non sparisce dallo STATO.
-  Memory/ e 01-agency/ restano fuori dal perimetro swarm (sicure).
+- Swarm Gael FERMATO 2026-06-12 (crediti finiti). Nessuno swarm attivo ora.
+
+## ▶️ RIPRESA F1-bis (Gael, prossima sessione — crediti finiti 2026-06-12)
+**Stato:** F1-bis quasi completo. Swarm notte 11/06: 11 cartelle riempite (+109 file,
+commit 3829f1c). Mini-swarm 12/06 fermato a meta' su stop crediti DOPO il fix permessi
+(`Write(company/**)` + `Edit(company/**)` aggiunti a .claude/settings.json — ORA i
+subagent possono scrivere).
+**Per chiudere F1-bis:**
+1. Scan gate: cartelle vuote residue in company/Ecosistemi/ (erano 15, il mini-swarm
+   ne ha riempite alcune prima dello stop — rimisurare con lo scan PowerShell).
+2. Rilanciare 1-3 agenti SOLO sulle cartelle ancora vuote (prompt idempotenti, fonte
+   dossier PIANO-MAESTRO; scope tipico: 02-INFO-BUSINESS, 04-MARKETING, 05-MULTI-BUSINESS,
+   06-PLATFORM, 08-INTELLIGENCE Agenti, 10-MEMORY).
+3. Gate: 0 cartelle vuote, 0 file <15 righe -> review 5 file a campione -> CP + STATO +
+   wiki/log.md + push (ciclo 9 passi, passi 4-8).
+4. Poi (ADR-007): prossima fase = V2-2 dossier v2, NON F5.
 
 ## ▶️ ISTRUZIONI PER GAEL (prossima sessione, dopo le 19:50)
 **Task: completare F1-bis (arricchimento massivo company/) col NUOVO METODO.**
