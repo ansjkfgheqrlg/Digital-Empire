@@ -44,6 +44,12 @@ Un agente/occhio **DIVERSO da chi ha costruito** fa review a campione del CONTEN
 (il gate 4 misura la forma, questo la sostanza): 3-5 file a caso, coerenza col dossier
 di riferimento, qualità reale, niente testo riempitivo. Chi costruisce non si approva da solo.
 
+### 5-bis. REVIEW MAXIMILIAN (ADR-007 — da quando l'organo esiste, fase V2-3)
+L'organo MAXIMILIAN risponde a UNA domanda: **"Max approverebbe questo?"** — scala
+abbastanza grande? abbastanza chirurgico? è "un file markdown" travestito? cosa avrebbe
+chiesto IN PIÙ? Se boccia: si torna al passo 3. Finché l'organo non esiste, il conductor
+applica manualmente i tratti del corpus (`company/Memory/maximilian-corpus/`).
+
 ### 6. TEST FUNZIONALE / "AMNESIA"
 La fase produce qualcosa di **usabile**, non solo presente:
 - Documentazione/org → test amnesia: una sessione fredda (o l'altro socio) capisce e naviga solo leggendo?

@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-11] — 🚨 PIANO V2: Direttiva di Scala di Max (ADR-007) + corpus MAXIMILIAN
+
+- DIRETTIVA (Max, analisi completa workspace): la scala v1 è superata — "stiamo costruendo un'AZIENDA". Nuova unità di misura: **1 workflow fatto bene = il Content Factory di Exponium intero**. Board C-Suite: ogni figura (CEO, CFO, CTO, CMO, CRO, COO, Chief-Forge) = workflow CF-grade con ≥10 agenti, principi, regole, script .py, skill proprie (~70 agenti). Ogni reparto = team 6-10 agenti con gerarchia + 1-5 workflow CF-grade; reparti Agency da ampliare; mega-reparti (Info Business, Content Factory) = aziende interne. Mandato → ecosistema di governo (team custodi + multi-workflow, comanda le Sentinelle). Sentinelle multi-workflow. Guilds drasticamente migliorate. Memory promossa ma da potenziare per la scala. Knowledge ingestion: tutte le cartelle formazione del workspace (Formazzione/, Marketing & Ai/, SKILL & Agenti/, InfoBusiness/...) si trasformano in organi interni.
+- NUOVO ORGANO **MAXIMILIAN** (LX, sopra il Board): ≥8 agenti che incarnano carattere/standard/decisioni di Max, addestrati sul corpus integrale (`company/Memory/maximilian-corpus/` — prima entry: direttiva di oggi, parole integrali). Nuovo passo 5-bis del metodo: review "Max approverebbe?".
+- CODIFICATO: `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` (incl. roadmap V2-0…V2-8 + obbligo skill-architettura) + ADR-007 + CP-20260611-008. STATO-EMPIRE con banner pivot per Gael (F1-bis in corso vale come base; poi V2-2 dossier v2 → V2-3 organo Maximilian). Zero collisioni: lavorato solo in PIANO-MAESTRO/ e Memory/ (company/ lockata dallo swarm di Gael); nessun secondo swarm (budget account condiviso). → 4 file creati, 4 aggiornati.
+
 ## [2026-06-11] — METODO: Ciclo di Fase Empire a 9 passi (ADR-006) + handover Max→Gael
 
 - CREATO: `PIANO-MAESTRO/10-METODO-CICLO-FASE.md` — il metodo "fase→controllo→avanti" arricchito a 9 passi chirurgici (RECALL→SPEC→PRE-MORTEM→BUILD con swarm obbligatorio→GATE deterministico→REVIEW indipendente→TEST funzionale/amnesia→COMMIT→RETRO) + regole trasversali (idempotenza, coordinamento via STATO, budget-guard 20%, una fase per ciclo) + checklist per CP. Origine: direttiva Max + lezioni reali (CP-001 scritture concorrenti, CP-005 swarm morto su session limit).

@@ -1,4 +1,15 @@
-# STATO EMPIRE -- aggiornato 2026-06-11 (pomeriggio)
+# STATO EMPIRE -- aggiornato 2026-06-11 (sera — DIRETTIVA V2)
+
+## 🚨 PIVOT V2 (ADR-007 — leggere PRIMA di qualsiasi cosa)
+Max ha dettato la **Direttiva di Scala**: `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md`.
+In sintesi: 1 workflow = Content Factory Exponium intero · Board C-Suite = 7 workflow da
+≥10 agenti l'uno · ogni reparto = team 6-10 agenti + 1-5 workflow CF-grade · Mandato =
+ecosistema di governo · Sentinelle multi-workflow · Guilds ricche · nuovo organo
+**MAXIMILIAN** (team che incarna Max, corpus in `Memory/maximilian-corpus/`) · knowledge
+ingestion delle cartelle formazione · roadmap V2-0…V2-8. **Lo standard v1 è superato.**
+→ Per GAEL: il tuo F1-bis in corso VALE (è la base, completalo pure) — ma la fase dopo
+NON è più F5: è **V2-2 (dossier v2)** poi **V2-3 (organo MAXIMILIAN)**, vedi roadmap §10
+del piano V2. Niente nuove strutture a standard v1 da ora in poi.
 
 ## Fase roadmap corrente
 **F1-bis — ARRICCHIMENTO MASSIVO `company/` — INTERROTTO A METÀ (session limit Claude,
