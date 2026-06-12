@@ -22,7 +22,9 @@
       "Bash(npx @claude-flow*)",
       "Bash(npx claude-flow*)",
       "Bash(node .claude/*)",
-      "mcp__claude-flow__*"
+      "mcp__claude-flow__*",
+      "Write(company/**)",
+      "Edit(company/**)"
     ],
     "additionalDirectories": [
       "C:\\Users\\Utente\\.claude"
