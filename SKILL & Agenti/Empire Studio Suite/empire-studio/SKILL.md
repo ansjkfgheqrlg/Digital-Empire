@@ -27,13 +27,20 @@ risultato sia nella **wiki di Digital Empire** sia nella skill **Memory Empire**
 ---
 
 ## Invarianti (non negoziabili)
+0. **SESSION INIT OBBLIGATORIO**: PRIMA di qualsiasi azione, leggi
+   `company/Memory/INDEX.md` + `company/Memory/STATO-EMPIRE.md` + `RULES.md`.
+   Violazione = blocco immediato da compliance-auditor.
 1. **NO-STUB**: niente agenti/skill finti. `validator.py` e' il cancello.
 2. **NO-FINTO**: se Claude non ha guardato il frame, non scrive cosa contiene. `➕` per inferenze.
-3. **Il video va visto**: frame reali (ffmpeg) + visione di Claude, non transcript da solo.
+3. **Il video va visto**: frame reali (ffmpeg, --interval 2) + visione di Claude su TUTTI i frame.
 4. **CLI-only, no API, no paid**: yt-dlp, ffmpeg, playwright, python. Visione = Claude.
 5. **Memory-first (P10)**: `memory_manager.py` dopo ogni azione, 16 categorie reali.
 6. **Tracciabilita' (P12)**: ogni atomo -> `video-id#ts + frame-NNN.png` o `file:riga`.
 7. **content-forge -> wiki**: l'output finale e' nella wiki di Digital Empire.
+8. **MEMORY EMPIRE OBBLIGATORIO (Stages C-H) dopo OGNI video**: nessun video e' "fatto"
+   senza che knowledge/<video-id>/ sia scritto integro E enrichment-research sia eseguito.
+   Il silent-observer conta video vs Memory Empire calls. Se N_video > N_ME → ALERT.
+   Fonte regole: `RULES.md`. Guardiano: compliance-auditor + silent-observer WATCH-001.
 
 ## Come funziona (sintesi)
 Tu dai un link/percorso. Il **Conductor** (L1) sceglie il reparto e la strategia,

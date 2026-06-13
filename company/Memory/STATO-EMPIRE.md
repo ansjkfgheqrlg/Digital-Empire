@@ -69,6 +69,14 @@ subagent possono scrivere).
    fatti in parallelo prima di ricevere questo handover. Dopo F1-bis si va a B3/F5.**
 
 ## Cosa e' stato fatto (ultimo evento in cima)
+- 2026-06-13 — **FIX ARCHITETTURA EMPIRE STUDIO** (Max, CP-20260613-001):
+  Errore critico: Memory Empire omesso dal pipeline in sessione studio Andrei Pascu.
+  Fix: RULES.md creato (checklist non negoziabili + KNOWN ERRORS registry),
+  compliance-auditor + error-triage-controller + silent-observer aggiornati con
+  Memory Empire guard esplicito + WATCH-001 counter video vs ME calls.
+  SKILL.md aggiornato: invariante #0 (session-init) + invariante #8 (Memory Empire).
+  Run Andrei Pascu andrei-pascu-001: fermata a Stage 2 video 1 (9CuQI0Cr4Pg, 545 frame pronti).
+  Studio da riprendere: Cat 1-7 YouTube @Andrei Pascu (323 video totali, ~270 da studiare).
 - 2026-06-11 — **F4 GATE VERDE** (Gael, CP-20260611-007): ciclo dry-run CY-20260611-001
   end-to-end (19 eventi trace.jsonl, 4 HC attraversati, 3 gate PASS) registrato in
   state.json. Criterio ADR-005 (slot pronto + test dry). verify: PASS 113/113.
