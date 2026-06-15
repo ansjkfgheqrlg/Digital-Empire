@@ -4888,4 +4888,4 @@ Traceback (most recent call last):
     return open_func(self.baseFilename, self.mode,
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 PermissionError: [Errno 13] Permission denied: 'c:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Outreach\\LinkedIn Automation\\run_today_log.txt'
-^C^C
+^C^C^C
