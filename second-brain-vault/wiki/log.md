@@ -892,6 +892,10 @@ FASE 4: check DM LinkedIn (suggerimenti)
 - **Ben AI**: skills .md + Apify post engagers + Uniflow multi-channel
 - **Zubair Trabzada**: 14 skills VS Code, /sales-prospect lancia 5 sub-agenti paralleli
 
+## 2026-06-16
+- F1-bis COMPLETATO (Gael, CP-20260616-002): arricchimento massivo `company/` chiuso. Gate verde (0 cartelle vuote su 26 iniziali, 0 file <15 righe, 317 file totali), review indipendente PASS su 5 file a campione. I 10 ecosistemi hanno ora Reparti/Funzioni/Workflow/Agenti popolati con schede stile CF (identita, I/O, decision tree, KPI, escalation) ancorate ai dossier PIANO-MAESTRO. Prossima fase = V2-2 (dossier a scala v2, ADR-007), NON F5.
+- FIX integrita repo (Gael, CP-20260616-001): risolta collisione case-insensitive in `company/Ecosistemi/06-PLATFORM/Reparti/` (5 doppioni MAIUSCOLO/Title-Case che bloccavano i commit su Windows). Voci fantasma rimosse dall'indice, contenuto arricchito preservato. Regola naming swarm aggiunta in STATO-EMPIRE.
+
 ### TOOL STACK COMPLETO DOCUMENTATO
 - Apify: standard industry per LinkedIn scraping (no ban)
 - Claude Cowork: sostituisce Selenium, agisce come umano

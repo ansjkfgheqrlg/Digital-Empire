@@ -12,43 +12,19 @@ NON è più F5: è **V2-2 (dossier v2)** poi **V2-3 (organo MAXIMILIAN)**, vedi 
 del piano V2. Niente nuove strutture a standard v1 da ora in poi.
 
 ## Fase roadmap corrente
-**F1-bis — ARRICCHIMENTO MASSIVO `company/` — INTERROTTO A METÀ (session limit Claude,
-reset 19:50 Europe/Rome, 2026-06-11).** Tutti e 6 gli agenti swarm morti sul limite.
-⚠️ L'account Claude è CONDIVISO Max+Gael: fino alle 19:50 nessuno dei due può lavorare con Claude.
+**F1-bis — ARRICCHIMENTO MASSIVO `company/` — ✅ COMPLETATO (2026-06-16, Gael, CP-20260616-002).**
+Gate VERDE: 0 cartelle vuote (erano 26), 0 file <15 righe, 317 file totali.
+Review indipendente PASS (5 file a campione, contenuto dossier-grounded, zero filler).
 
-**RIPRESA (dopo le 19:50) — rilanciare swarm arricchimento, prompt IDEMPOTENTI
-(verificano l'esistente prima di scrivere). Stato atterrato per cartella:**
-| Cartella | File | Stato |
-|---|---|---|
-| 07-FORGE 8 · 09-OPERATIONS 7 · Board-CSuite 8 · Backbone 10 | — | parziali buoni |
-| 01-AGENCY 6 · 03-CONTENT-FACTORY 5 · Sentinels 6 · Guilds 6 | — | parziali |
-| 02-INFO-BUSINESS 3 · 04-MARKETING 3 · 05-MULTI-BUSINESS 3 · 06-PLATFORM 3 · 08-INTELLIGENCE 3 · Mandato 2 · 10-MEMORY 2 · Gerarchia 1 | — | quasi vuoti |
-Gate finale invariato: 0 cartelle vuote, 0 file <15 righe, schede agente complete.
-Fonti: dossier PIANO-MAESTRO 0X corrispondenti. Vietato toccare Memory/ e wiki/log.md (agenti).
-
-Obiettivo fase: 0 cartelle vuote, 0 file magri, ogni agente con scheda
-completa stile CF (identità, responsabilità, I/O, come ragiona, KPI, escalation).
+**Prossima fase = V2-2 (riscrittura dossier a scala v2), NON F5** — direttiva ADR-007.
+Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
+F1-bis (standard v1) è la BASE su cui V2 costruisce.
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- Swarm Gael FERMATO 2026-06-12 (crediti finiti). Nessuno swarm attivo ora.
-
-## ▶️ RIPRESA F1-bis (Gael, prossima sessione — crediti finiti 2026-06-12)
-**Stato:** F1-bis quasi completo. Swarm notte 11/06: 11 cartelle riempite (+109 file,
-commit 3829f1c). Mini-swarm 12/06 fermato a meta' su stop crediti DOPO il fix permessi
-(`Write(company/**)` + `Edit(company/**)` aggiunti a .claude/settings.json — ORA i
-subagent possono scrivere).
-**Per chiudere F1-bis:**
-1. Scan gate: cartelle vuote residue in company/Ecosistemi/ (erano 15, il mini-swarm
-   ne ha riempite alcune prima dello stop — rimisurare con lo scan PowerShell).
-2. Rilanciare 1-3 agenti SOLO sulle cartelle ancora vuote (prompt idempotenti, fonte
-   dossier PIANO-MAESTRO; scope tipico: 02-INFO-BUSINESS, 04-MARKETING, 05-MULTI-BUSINESS,
-   06-PLATFORM, 08-INTELLIGENCE Agenti, 10-MEMORY).
-   ⚠️ REGOLA NAMING (lezione CP-20260616-001): gli agenti DEVONO usare una grafia FISSA
-   per i nomi file (Title-Case consigliato, es. Web-Engineering.md), MAI mischiare
-   MAIUSCOLO/Title-Case → su Windows (core.ignorecase) genera doppioni che bloccano i commit.
-3. Gate: 0 cartelle vuote, 0 file <15 righe -> review 5 file a campione -> CP + STATO +
-   wiki/log.md + push (ciclo 9 passi, passi 4-8).
-4. Poi (ADR-007): prossima fase = V2-2 dossier v2, NON F5.
+- Nessuno swarm attivo. F1-bis chiuso. company/ libera.
+- REGOLA NAMING swarm (lezione CP-20260616-001): grafia file FISSA (Title-Case), mai
+  mischiare MAIUSCOLO/Title-Case → su Windows (core.ignorecase) genera doppioni che
+  bloccano i commit. Allowlist progetto include già `Write(company/**)` per gli swarm.
 
 ## ▶️ ISTRUZIONI PER GAEL (prossima sessione, dopo le 19:50)
 **Task: completare F1-bis (arricchimento massivo company/) col NUOVO METODO.**
