@@ -66,7 +66,12 @@ Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- Nessuno swarm attivo. Lotti 1-2 V2-2 chiusi (01,04,03,02 -V2 committati).
+- 🔴 **SWARM MAX ATTIVO (2026-06-16, STEP 1 Genesi Core):** 4 agenti su
+  `company/Genesi-Core/ARCHITETTURA/` (Agenti/ · Reparti/ · Schemi-Canonici/ · Workflow/).
+  GAEL: NON toccare `company/Genesi-Core/` finché questo blocco è rosso.
+- ⚠️ Conflitto git aperto (5 file `06-PLATFORM/Reparti` DU + autostash) — Max ha detto di
+  ignorarlo per ora; NON è stato risolto. Da sistemare prima del prossimo commit pulito.
+- Nessuno swarm Gael attivo. Lotti 1-2 V2-2 chiusi (01,04,03,02 -V2 committati).
 - I dossier v2 sono file NUOVI `-V2.md` accanto ai v1 (che restano riferimento, non toccati).
 - REGOLA NAMING swarm (lezione CP-20260616-001): grafia file FISSA (Title-Case), mai
   mischiare MAIUSCOLO/Title-Case → su Windows (core.ignorecase) genera doppioni che
