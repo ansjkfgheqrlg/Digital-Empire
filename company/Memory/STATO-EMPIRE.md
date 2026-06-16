@@ -100,6 +100,11 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
    fatti in parallelo prima di ricevere questo handover. Dopo F1-bis si va a B3/F5.**
 
 ## Cosa e' stato fatto (ultimo evento in cima)
+- 2026-06-16 — **STEP 4(c): blueprint Board via ARCHITETTURA** (Max, CP-20260616-010):
+  `company/Board-CSuite/_BLUEPRINT/` (8 file, 70 agenti progettati). PRIMO uso reale di WF-ARCH-DESIGN:
+  il Genesi Core lavora — ARCHITETTURA disegna la struttura delle 7 figure C-level (cartella-workflow
+  CF-grade, roster 10 + workflow + skill + handoff + struct-gate). Inline, 0 swarm (budget-light).
+  Next: STEP 4-heavy = FORGE costruisce il contenuto delle 7 figure (in attesa GO Max).
 - 2026-06-16 — **STEP 3: organo MAXIMILIAN costruito** (Max, CP-20260616-009): `company/MAXIMILIAN/`
   (15 file). Il team che incarna Max (8 agenti MX-*), review-gate 5-bis WF-REVIEW-MAXIMILIAN +
   skill `maximilian-standard-gate` (8 test binari + scoring deterministico + gate_check.py). Da ora

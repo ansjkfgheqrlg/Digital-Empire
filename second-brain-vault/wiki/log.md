@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-16] — 🧩 STEP 4(c): blueprint Board C-Suite via ARCHITETTURA (Max)
+
+- BOOTSTRAP: primo uso REALE dell'organo ARCHITETTURA (WF-ARCH-DESIGN). Il Genesi Core inizia a lavorare: ARCHITETTURA progetta la STRUTTURA delle 7 figure C-level prima che la FORGE costruisca il contenuto. La §8 della direttiva V2 ("ogni figura progettata con skill di architettura") è ora onorata.
+- COSTRUITO: `company/Board-CSuite/_BLUEPRINT/` (8 file, 436 righe). Un blueprint per figura (CEO, COO, CTO, CMO, CRO, CFO, Chief-Forge): forma scelta (cartella-workflow CF-grade, non file/reparto), roster 10 agenti, ≥2 workflow, skill proprie, handoff, KPI, struct-gate checklist, note per la FORGE. **70 agenti progettati**.
+- METODO: fatto INLINE dal conductor (Opus), 0 swarm → budget-light (scelta (c) di Max). I v1 Board (8 file singoli "INACCETTABILI") verranno sostituiti dalle cartelle-workflow nel build STEP 4-heavy. CP-20260616-010.
+- Next: STEP 4-heavy = FORGE costruisce il contenuto delle 7 figure dai blueprint (70 agenti reali) → MAXIMILIAN review 5-bis → in attesa GO di Max.
+
 ## [2026-06-16] — 👑 STEP 3: organo MAXIMILIAN costruito (Max)
 
 - COSTRUITO: `company/MAXIMILIAN/` (**15 file**) — il team LX che incarna Max (giudica/corregge/anticipa), accanto al Mandato, sopra il Board. 8 agenti MX-* (PRIME conductor + VISION/CRITIC/FAST/ANTICIPATE/STYLE/CHALLENGE/MEMORY) che parlano COME Max (ancorati al corpus integrale, non riassunti).
