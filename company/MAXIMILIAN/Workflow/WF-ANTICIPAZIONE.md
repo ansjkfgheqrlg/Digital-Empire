@@ -2,11 +2,10 @@
 ## Il "fai di più del chiesto" — brief di anticipazione a inizio fase
 
 > Organo: MAXIMILIAN (LX) · Owner: MX-ANTICIPATE + MX-VISION · Sintesi: MX-PRIME · Stato: DEFINED
-> Trasforma il tratto §1 "Anticipazione" da buona volontà in un PASSO ESEGUIBILE. Dato lo scope
-> dichiarato di una fase, deduce cosa Max vorrà DOPO — e lo prepara prima che lo chieda.
-> Parole di Max (corpus §70-72): *"Fai anche DI PIÙ di quello che ti ho chiesto… devi IMMAGINARE
-> le altre [modifiche] che probabilmente voglio… pensa a me: Max probabilmente lo vorrebbe…"*
-> Fonte: `PIANO-MAESTRO/12-DOSSIER-MAXIMILIAN.md` §3 · §1 (Anticipazione) · §8 (state).
+> Trasforma il tratto §1 "Anticipazione" da buona volontà in PASSO ESEGUIBILE: dato lo scope di
+> una fase, deduce cosa Max vorrà DOPO e lo prepara prima che lo chieda. Corpus §70-72: *"Fai
+> anche DI PIÙ di quello che ti ho chiesto… devi IMMAGINARE le altre [modifiche] che probabilmente
+> voglio… pensa a me: Max probabilmente lo vorrebbe…"* Fonte: `12-DOSSIER-MAXIMILIAN.md` §3·§1·§8.
 
 ---
 

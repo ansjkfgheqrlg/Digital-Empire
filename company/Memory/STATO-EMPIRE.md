@@ -100,6 +100,10 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
    fatti in parallelo prima di ricevere questo handover. Dopo F1-bis si va a B3/F5.**
 
 ## Cosa e' stato fatto (ultimo evento in cima)
+- 2026-06-16 — **STEP 3: organo MAXIMILIAN costruito** (Max, CP-20260616-009): `company/MAXIMILIAN/`
+  (15 file). Il team che incarna Max (8 agenti MX-*), review-gate 5-bis WF-REVIEW-MAXIMILIAN +
+  skill `maximilian-standard-gate` (8 test binari + scoring deterministico + gate_check.py). Da ora
+  ogni fase passa il "Max approverebbe?" prima del commit. Genesi Core+governo = 79 file. Next: STEP 4 Board.
 - 2026-06-16 — **STEP 2 GENESI CORE: FORGE completa** (Max, CP-20260616-008): `company/Genesi-Core/FORGE/`
   (34 file, 2264 righe, gate+review PASS). Reparto+ecosistema gemello di ARCHITETTURA: riceve il
   blueprint e costruisce il CONTENUTO. `Motori/Mappa-Motori.md` = 15 motori reali con path verificati

@@ -1,10 +1,9 @@
 # BLUEPRINT SKILL — maximilian-standard-gate
 
-> Questo è il BLUEPRINT (la STRUTTURA che la FORGE costruirà), NON la skill finale.
-> Forma: Skill (Schema-Skill canonico). Slug: `maximilian-standard-gate` (kebab, == cartella).
-> Scopo: rende MAXIMILIAN un GATE REALE e non una descrizione — checklist BINARIA/VERIFICABILE,
-> applicabile da chiunque, deterministica dove possibile. È la skill eseguita al passo 5 di
-> [[WF-REVIEW-MAXIMILIAN]]. Fonte: `12-DOSSIER-MAXIMILIAN.md` §1 (gli 8 test) · §4 (skill).
+> BLUEPRINT (la STRUTTURA che la FORGE costruirà), NON la skill finale. Forma: Skill (Schema-Skill).
+> Slug: `maximilian-standard-gate` (kebab, == cartella). Scopo: rende MAXIMILIAN un GATE REALE e non
+> una descrizione — checklist BINARIA/VERIFICABILE, applicabile da chiunque, deterministica dove
+> possibile. Eseguita al passo 5 di [[WF-REVIEW-MAXIMILIAN]]. Fonte: `12-DOSSIER-MAXIMILIAN.md` §1·§4.
 
 ---
 

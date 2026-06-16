@@ -2,10 +2,9 @@
 ## Il passo 5-bis del ciclo a 9 passi — "Max approverebbe questo?"
 
 > Organo: MAXIMILIAN (LX, accanto al Mandato) · Conductor: MX-PRIME · Stato: DEFINED
-> Il cuore operativo dell'organo. Un deliverable di fase entra; esce un **verdetto bloccante**
-> nella voce di Max. RIFAI = la fase NON si chiude. Come il Gate Bibbia: blocca, non suggerisce.
-> Fonte: `PIANO-MAESTRO/12-DOSSIER-MAXIMILIAN.md` §3 · §1 (i test) · §0 DONE WHEN.
-> Collega: [[10-METODO-CICLO-FASE]] passo 5-bis · [[maximilian-standard-gate]] · [[maximilian-voice]]
+> Il cuore operativo: un deliverable di fase entra, esce un **verdetto bloccante** nella voce di
+> Max. RIFAI = la fase NON si chiude. Come il Gate Bibbia: blocca, non suggerisce.
+> Fonte: `12-DOSSIER-MAXIMILIAN.md` §3 · §1 (i test) · §0. Collega: [[10-METODO-CICLO-FASE]] 5-bis.
 
 ---
 
@@ -98,21 +97,20 @@
 ---
 
 ## Innesto nel ciclo 9 passi
-Si inserisce come **passo 5-bis** ([[10-METODO-CICLO-FASE]]): dopo la REVIEW INDIPENDENTE (5,
-misura la sostanza vs dossier) e prima del COMMIT (7). Mandato e MAXIMILIAN sono complementari:
-il Mandato dirà "è LECITO?" (regole), MAXIMILIAN dice "è all'ALTEZZA?" (standard/scala). Un output
-può essere lecito ma bocciato qui, e viceversa (§6 dossier). Finché l'organo non esisteva, il
-conductor applicava i tratti del corpus a mano; da V2-3 lo fa questo workflow.
+Passo **5-bis** ([[10-METODO-CICLO-FASE]]): dopo la REVIEW INDIPENDENTE (5, sostanza vs dossier)
+e prima del COMMIT (7). Mandato e MAXIMILIAN sono complementari: Mandato = "è LECITO?", MAXIMILIAN
+= "è all'ALTEZZA?". Un output può essere lecito ma bocciato qui, e viceversa (§6 dossier). Da V2-3
+lo applica questo workflow; prima lo faceva il conductor a mano sui tratti del corpus.
 
 ---
 
 ## Dry-run
-Test reale (DONE WHEN §0.7): entra un deliverable v1 "fatto giusto per farlo" — un reparto
-descritto da un solo file markdown. MX-MEMORY recupera dal corpus *"il reparto ricerca è un
-semplice file markdown… INACCETTABILE… serve un TEAM di agenti (6-10) e un workflow"* (§32-38).
-MX-CRITIC FAIL su Standard+Visibilità; MX-VISION FAIL su Scala; MX-FAST conferma che NON è minuzia.
-MX-PRIME → `verdetto=RIFAI`, motivo nella voce di Max, `torna_a_passo:3`. Record ricostruibile a
-freddo da `maximilian/verdetti/<review_id>` (test-amnesia §8 dossier). L'organo BOCCIA come Max.
+Test reale (DONE WHEN §0.7): entra un deliverable v1 "fatto giusto per farlo" — un reparto =
+un solo file markdown. MX-MEMORY recupera dal corpus *"il reparto ricerca è un semplice file
+markdown… INACCETTABILE… serve un TEAM di agenti (6-10) e un workflow"* (§32-38). MX-CRITIC FAIL
+su Standard+Visibilità, MX-VISION FAIL su Scala, MX-FAST conferma che NON è minuzia. MX-PRIME →
+`verdetto=RIFAI`, motivo nella voce di Max, `torna_a_passo:3`. Record ricostruibile a freddo da
+`maximilian/verdetti/<review_id>` (test-amnesia §8). L'organo BOCCIA come Max.
 
 ---
 

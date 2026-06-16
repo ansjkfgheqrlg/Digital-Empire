@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-06-16] — 👑 STEP 3: organo MAXIMILIAN costruito (Max)
+
+- COSTRUITO: `company/MAXIMILIAN/` (**15 file**) — il team LX che incarna Max (giudica/corregge/anticipa), accanto al Mandato, sopra il Board. 8 agenti MX-* (PRIME conductor + VISION/CRITIC/FAST/ANTICIPATE/STYLE/CHALLENGE/MEMORY) che parlano COME Max (ancorati al corpus integrale, non riassunti).
+- PEZZO CHIAVE: `maximilian-standard-gate` — il review-gate 5-bis reso ESEGUIBILE: gli 8 tratti di Max (Scala, Standard chirurgico, Visibilità, Velocità, Ambizione, Delega, Anticipazione, "fai di più") come checklist binaria SÌ/NO + scoring deterministico ("RIFAI se ≥1 bloccante FAIL, nessuna media") + `gate_check.py` per i check oggettivi. Esempio = il test del dossier (reparto = 1 file .md → RIFAI). Da ora **nessuna fase si chiude senza il "Max approverebbe?"** (passo 5-bis del ciclo 9 passi).
+- WORKFLOW: WF-REVIEW-MAXIMILIAN (mesh valutazione → MX-PRIME sintetizza → APPROVA/RIFAI bloccante) + WF-ANTICIPAZIONE (brief "Max vorrà anche X,Y,Z" a inizio fase).
+- METODO: swarm 3 agenti Opus. MX-A errore server 500 a fine run (scritture già atomiche → 0 perdite). Gate 0 magri/troncati → PASS. Review (standard-gate) → gate binario reale → PASS. CP-20260616-009.
+- Genesi Core + governo ora = **79 file** (ARCHITETTURA 30 + FORGE 34 + MAXIMILIAN 15). Next: STEP 4 Board C-Suite.
+
 ## [2026-06-16] — 🏗️ STEP 2 GENESI CORE: FORGE completa (Max)
 
 - COSTRUITO: `company/Genesi-Core/FORGE/` (**34 file, 2264 righe**) — reparto+ecosistema gemello di ARCHITETTURA. La FORGE riceve il blueprint validato (HC-ARCH-FORGE) e costruisce il CONTENUTO dentro la struttura. 10 agenti `frg-*`, 5 reparti (SKILL/AGENT/WORKFLOW/ECOSYSTEM-WORKS + METHOD-GUARD), 9 workflow (G-FORGE0: no build senza blueprint PASS), 7 funzioni, ECOSISTEMA + BACKBONE.
