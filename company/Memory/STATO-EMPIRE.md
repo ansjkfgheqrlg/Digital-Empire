@@ -11,6 +11,42 @@ ingestion delle cartelle formazione · roadmap V2-0…V2-8. **Lo standard v1 è 
 NON è più F5: è **V2-2 (dossier v2)** poi **V2-3 (organo MAXIMILIAN)**, vedi roadmap §10
 del piano V2. Niente nuove strutture a standard v1 da ora in poi.
 
+## 🧭 DIREZIONE ATTIVA (2026-06-16, Max) — GENESI CORE prima di tutto
+Decisione strategica di Max: **basta espandere la mappa in orizzontale. Si costruisce il
+NUCLEO GENERATIVO vivo, poi l'azienda nasce da lì.** Ordine NON negoziabile:
+
+1. **ARCHITETTURA (reparto + ecosistema)** — NUOVO, gerarchia altissima. È "una specie di
+   FORGE specializzata SOLO nella struttura/architettura di OGNI artefatto che la FORGE crea"
+   (NON l'architettura dell'infra Empire — è architettura *per-artefatto*). È il **fulcro del
+   nucleo** di ogni operazione FORGE. Va definita e costruita al MILLIMETRO (architettura =
+   fondamenta, NON è il "loop di pianificazione" da evitare). Motori reali: `architect-agent`,
+   `prd-architect-os`, `agent-architecture`, SPARC, `Skill Master Architecture`, `agent-factory/`.
+2. **FORGE completa (reparto + ecosistema)** — costruita ATTORNO ad ARCHITETTURA come suo nucleo.
+   Oggi in `company/` è v1 magra (reparti = solo README stub). Da completare al millimetro + resa operativa.
+3. **MAXIMILIAN** — attivo e operativo per OGNI operazione/creazione (dossier 12 già pronto, build).
+4. **Board C-Suite intero** — come descritto nel messaggio-direttiva di Max (corpus Maximilian).
+5. **→ solo allora**: costruzione completa reparto-per-reparto.
+
+**Regola FORMA GIUSTA (Max 2026-06-16, NON meccanica):** NON ogni cosa è "reparto+ecosistema".
+Si sceglie la forma con INGEGNO, caso per caso: le cose grandi (FORGE, ARCHITETTURA) = reparto
+**+** ecosistema (o di più); altre = solo architettura di **team**, o un **principio**, o uno
+**stile**, o un **workflow**, o una **skill**. Mai stampare la stessa forma su tutto. Quando Max
+dice "reparto+ecosistema" per FORGE/ARCHITETTURA intende davvero entrambi — ma è quel caso, non una regola universale.
+
+**Coordinamento Max↔Gael (regola Max 2026-06-16):** quasi mai si lavora in contemporanea →
+a OGNI inizio sessione si LEGGE+AGGIORNA questo file (stato sempre corrente). Niente "non
+lavorate insieme": si lavora sempre, basta che lo stato sia aggiornato così non ci si scontra.
+
+**Substrato (proposto, da confermare all'attivazione):** nativo Claude Code (subagent
+`.claude/agents/` + skill + Agent tool) ORA; Ruflo come strato di scala DOPO. La fase 1-2
+(definizione ARCHITETTURA+FORGE) è substrato-agnostica: si wrappano motori reali già nativi.
+
+**Lezione 2026-06-16 (collisione case-insensitive):** lo swarm Sonnet di Max su F1-bis ha
+duplicato + collisato col lavoro (migliore) di Gael → conflitto git su 5 file 06-PLATFORM/Reparti.
+Lavoro Max scartato (superato da V2-2 Gael). Naming Title-Case FISSO obbligatorio (vedi sotto).
+
+---
+
 ## Fase roadmap corrente
 **V2-2 — DOSSIER v2 — IN CORSO (2026-06-16, Gael).** F1-bis ✅ COMPLETATO (CP-002).
 
