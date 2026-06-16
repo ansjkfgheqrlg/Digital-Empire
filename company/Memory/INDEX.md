@@ -23,6 +23,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260616-001](checkpoints/CP-20260616-001.md) — Fix collisione case-insensitive 06-PLATFORM/Reparti (5 doppioni MAIUSCOLO rimossi, contenuto arricchito preservato) — Gael
 - [CP-20260613-001](checkpoints/CP-20260613-001.md) — Fix critico Empire Studio: RULES.md + agenti verification aggiornati + run Andrei Pascu avviata
 - [CP-20260611-008](checkpoints/CP-20260611-008.md) — PIANO V2 Direttiva di Scala codificata (ADR-007) + corpus Maximilian + pivot roadmap V2
 - [CP-20260611-007](checkpoints/CP-20260611-007.md) — F4 GATE VERDE: ciclo dry-run end-to-end CY-20260611-001 (Gael) — gate PASS 113/113

@@ -43,6 +43,9 @@ subagent possono scrivere).
 2. Rilanciare 1-3 agenti SOLO sulle cartelle ancora vuote (prompt idempotenti, fonte
    dossier PIANO-MAESTRO; scope tipico: 02-INFO-BUSINESS, 04-MARKETING, 05-MULTI-BUSINESS,
    06-PLATFORM, 08-INTELLIGENCE Agenti, 10-MEMORY).
+   ⚠️ REGOLA NAMING (lezione CP-20260616-001): gli agenti DEVONO usare una grafia FISSA
+   per i nomi file (Title-Case consigliato, es. Web-Engineering.md), MAI mischiare
+   MAIUSCOLO/Title-Case → su Windows (core.ignorecase) genera doppioni che bloccano i commit.
 3. Gate: 0 cartelle vuote, 0 file <15 righe -> review 5 file a campione -> CP + STATO +
    wiki/log.md + push (ciclo 9 passi, passi 4-8).
 4. Poi (ADR-007): prossima fase = V2-2 dossier v2, NON F5.
