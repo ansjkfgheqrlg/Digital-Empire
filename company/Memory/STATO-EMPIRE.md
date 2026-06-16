@@ -29,7 +29,9 @@ Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- Nessuno swarm attivo. Lotto 1 V2-2 chiuso (01-AGENCY-V2, 04-MARKETING-V2 committati).
+- **GAEL/swarm V2-2 LOTTO 2 ATTIVO (2026-06-16):** scrive `PIANO-MAESTRO/03-...-V2.md` e
+  `02-...-V2.md` (mega-reparti Content Factory + Info Business). NON tocca i v1.
+  Max: non toccare PIANO-MAESTRO/03/02-*-V2.md finche' il blocco resta.
 - I dossier v2 sono file NUOVI `-V2.md` accanto ai v1 (che restano riferimento, non toccati).
 - REGOLA NAMING swarm (lezione CP-20260616-001): grafia file FISSA (Title-Case), mai
   mischiare MAIUSCOLO/Title-Case → su Windows (core.ignorecase) genera doppioni che
