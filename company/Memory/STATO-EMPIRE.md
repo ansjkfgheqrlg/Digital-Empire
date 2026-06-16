@@ -22,16 +22,15 @@ del piano V2. Niente nuove strutture a standard v1 da ora in poi.
 
 **V2-2 riscrittura dossier 01-09 a scala v2 (file NUOVI `-V2.md`, v1 intatti):**
 - ✅ Lotto 1 (CP-005): 01-AGENCY-V2 (10 reparti, ~75 agenti, 25 WF) + 04-MARKETING-V2 (6 reparti, ~49 agenti, 22 WF)
-- ⬜ Lotto 2: 03-CONTENT-FACTORY + 02-INFO-BUSINESS
-- ⬜ Lotto 3-4: 05-MULTI-BUSINESS, 06-CORE (→ valutare split in 4: Platform/Forge/Intelligence/Operations), 07-BACKBONE, 08-ROADMAP, 09-MEMORY
+- ✅ Lotto 2 (CP-006): 03-CONTENT-FACTORY-V2 (mega, 5 livelli, ~76 agenti, 23 WF) + 02-INFO-BUSINESS-V2 (mega, ~48 agenti, 15 WF)
+- ⬜ Lotto 3: 05-MULTI-BUSINESS + decisione split 06-CORE (Platform/Forge/Intelligence/Operations → 4 dossier v2?)
+- ⬜ Lotto 4: 07-BACKBONE, 08-ROADMAP, 09-MEMORY
 - Pattern confermato: swarm 2 agenti/lotto, acceptEdits, Title-Case, idempotente — non muore.
 Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis).
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- **GAEL/swarm V2-2 LOTTO 2 ATTIVO (2026-06-16):** scrive `PIANO-MAESTRO/03-...-V2.md` e
-  `02-...-V2.md` (mega-reparti Content Factory + Info Business). NON tocca i v1.
-  Max: non toccare PIANO-MAESTRO/03/02-*-V2.md finche' il blocco resta.
+- Nessuno swarm attivo. Lotti 1-2 V2-2 chiusi (01,04,03,02 -V2 committati).
 - I dossier v2 sono file NUOVI `-V2.md` accanto ai v1 (che restano riferimento, non toccati).
 - REGOLA NAMING swarm (lezione CP-20260616-001): grafia file FISSA (Title-Case), mai
   mischiare MAIUSCOLO/Title-Case → su Windows (core.ignorecase) genera doppioni che
