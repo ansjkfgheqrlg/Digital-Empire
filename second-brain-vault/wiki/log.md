@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-16] — 🏗️ STEP 2 GENESI CORE: FORGE completa (Max)
+
+- COSTRUITO: `company/Genesi-Core/FORGE/` (**34 file, 2264 righe**) — reparto+ecosistema gemello di ARCHITETTURA. La FORGE riceve il blueprint validato (HC-ARCH-FORGE) e costruisce il CONTENUTO dentro la struttura. 10 agenti `frg-*`, 5 reparti (SKILL/AGENT/WORKFLOW/ECOSYSTEM-WORKS + METHOD-GUARD), 9 workflow (G-FORGE0: no build senza blueprint PASS), 7 funzioni, ECOSISTEMA + BACKBONE.
+- PEZZO CHIAVE: `Motori/Mappa-Motori.md` — 15 motori REALI con path verificati (skill-creator, content-forge, agent-factory 4 sub-skill, architect-agent, prd-architect-os, sparc-methodology...). È ciò che rende la FORGE collegabile a macchine vere, non documentazione. ADR-003: si wrappano, non si riscrivono.
+- METODO: Dynamic Workflow, swarm 4 agenti Opus disgiunti, Title-Case fisso, idempotenti. Gate 0 vuote/0 magri → PASS. Review (Mappa-Motori) → motori reali verificati → PASS. CP-20260616-008.
+- GENESI CORE ora = **64 file, 4339 righe** (ARCHITETTURA 30 + FORGE 34). Nucleo generativo costruito. PENDENTE: push bloccato da conflitto git (Max risolve). Next: STEP 3 MAXIMILIAN.
+
 ## [2026-06-16] — 🏗️ STEP 1 GENESI CORE: organo ARCHITETTURA costruito (Max)
 
 - DIREZIONE (Max): basta espandere la mappa — si costruisce il **Genesi Core** vivo, poi l'azienda nasce da lì. Sequenza: **ARCHITETTURA → FORGE → MAXIMILIAN → Board C-Suite → poi reparto-per-reparto**. Correzione chiave: la "forma giusta" si sceglie con INGEGNO (non reparto+ecosistema meccanico su tutto; alcune cose = team, principio, stile, workflow, skill).

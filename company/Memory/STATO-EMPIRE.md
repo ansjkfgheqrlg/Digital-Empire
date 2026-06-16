@@ -100,6 +100,11 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
    fatti in parallelo prima di ricevere questo handover. Dopo F1-bis si va a B3/F5.**
 
 ## Cosa e' stato fatto (ultimo evento in cima)
+- 2026-06-16 — **STEP 2 GENESI CORE: FORGE completa** (Max, CP-20260616-008): `company/Genesi-Core/FORGE/`
+  (34 file, 2264 righe, gate+review PASS). Reparto+ecosistema gemello di ARCHITETTURA: riceve il
+  blueprint e costruisce il CONTENUTO. `Motori/Mappa-Motori.md` = 15 motori reali con path verificati
+  (skill-creator, content-forge, agent-factory, architect-agent...). Genesi Core ora = 64 file. PUSH
+  PENDENTE (conflitto git). Next: STEP 3 MAXIMILIAN.
 - 2026-06-16 — **STEP 1 GENESI CORE: organo ARCHITETTURA costruito** (Max, CP-20260616-007):
   dossier 14 + `company/Genesi-Core/ARCHITETTURA/` (30 file, 2075 righe, gate+review PASS).
   Swarm 4 agenti Opus, Dynamic Workflow. ARCHITETTURA = FORGE specializzata nella STRUTTURA;
