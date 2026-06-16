@@ -12,13 +12,18 @@ NON è più F5: è **V2-2 (dossier v2)** poi **V2-3 (organo MAXIMILIAN)**, vedi 
 del piano V2. Niente nuove strutture a standard v1 da ora in poi.
 
 ## Fase roadmap corrente
-**F1-bis — ARRICCHIMENTO MASSIVO `company/` — ✅ COMPLETATO (2026-06-16, Gael, CP-20260616-002).**
-Gate VERDE: 0 cartelle vuote (erano 26), 0 file <15 righe, 317 file totali.
-Review indipendente PASS (5 file a campione, contenuto dossier-grounded, zero filler).
+**V2-2 — DOSSIER v2 — IN CORSO (2026-06-16, Gael).** F1-bis ✅ COMPLETATO (CP-002).
 
-**Prossima fase = V2-2 (riscrittura dossier a scala v2), NON F5** — direttiva ADR-007.
+**V2-2 fatto finora:**
+- ✅ Dossier **MAXIMILIAN** (`PIANO-MAESTRO/12-DOSSIER-MAXIMILIAN.md`, CP-003): blueprint
+  organo LX (8 agenti, review-gate 5-bis, 2 workflow, 2 skill) — da costruire in V2-3.
+
+**V2-2 prossimi deliverable:**
+1. Dossier **MANDATO-ecosistema** (§3 piano V2) — l'altra nuova struttura v2.
+2. Riscrittura/ampliamento dossier 01-09 a scala v2 (swarm quando budget regge; naming
+   Title-Case fisso, prompt idempotenti, mai 2 swarm grossi insieme).
+3. Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — priorità alta, attiva il 5-bis).
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
-F1-bis (standard v1) è la BASE su cui V2 costruisce.
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
 - Nessuno swarm attivo. F1-bis chiuso. company/ libera.
