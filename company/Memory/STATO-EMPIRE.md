@@ -27,7 +27,9 @@ del piano V2. Niente nuove strutture a standard v1 da ora in poi.
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- Nessuno swarm attivo. F1-bis chiuso. company/ libera.
+- **GAEL/swarm V2-2 ATTIVO (2026-06-16):** scrive NUOVI file dossier v2 in `PIANO-MAESTRO/`
+  con suffisso `-V2.md` (lotto: 01-AGENCY, 04-MARKETING). NON tocca i dossier v1 esistenti
+  (restano riferimento). Max: non toccare PIANO-MAESTRO/*-V2.md finche' il blocco resta.
 - REGOLA NAMING swarm (lezione CP-20260616-001): grafia file FISSA (Title-Case), mai
   mischiare MAIUSCOLO/Title-Case → su Windows (core.ignorecase) genera doppioni che
   bloccano i commit. Allowlist progetto include già `Write(company/**)` per gli swarm.
