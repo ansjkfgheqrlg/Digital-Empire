@@ -66,38 +66,53 @@ Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- 🟢 **SWARM MAX CHIUSO (2026-06-16, STEP 1 Genesi Core FATTO):** organo ARCHITETTURA costruito
-  in `company/Genesi-Core/ARCHITETTURA/` (30 file, gate+review PASS, CP-20260616-007).
-- ⚠️ **Conflitto git ANCORA APERTO** (5 file `06-PLATFORM/Reparti` DU + autostash, da fix
-  collisione case) → blocca il commit/push pulito. Max ha scelto di ignorarlo per ora.
-  **PUSH PENDENTE:** i 30 file ARCHITETTURA + dossier 14 + CP-007 sono su disco ma NON pushati.
-  Fix: Max incolla `git reset --hard HEAD` + `git stash drop`, poi il sync hook pusha tutto.
-- Nessuno swarm Gael attivo. Lotti 1-2 V2-2 chiusi (01,04,03,02 -V2 committati).
+- 🟢 **GENESI CORE FATTO (Max, 2026-06-16) — tutto su origin, working tree pulito:**
+  STEP 1 ARCHITETTURA (30 file, CP-007) · STEP 2 FORGE (34 file, CP-008) · STEP 3 MAXIMILIAN
+  (15 file, CP-009) · STEP 4(c) blueprint Board (8 file, 70 agenti progettati, CP-010).
+- 🟢 **Conflitto git RISOLTO** (Max ha eseguito `git reset --hard HEAD` + `git stash drop`):
+  i 5 doppioni MAIUSCOLO superati buttati, tutto committato e pushato. Niente più pendente.
+- Nessuno swarm attivo. Lotti 1-2 V2-2 chiusi (01,04,03,02 -V2 committati).
 - I dossier v2 sono file NUOVI `-V2.md` accanto ai v1 (che restano riferimento, non toccati).
 - REGOLA NAMING swarm (lezione CP-20260616-001): grafia file FISSA (Title-Case), mai
   mischiare MAIUSCOLO/Title-Case → su Windows (core.ignorecase) genera doppioni che
   bloccano i commit. Allowlist progetto include già `Write(company/**)` per gli swarm.
 
-## ▶️ ISTRUZIONI PER GAEL (prossima sessione, dopo le 19:50)
-**Task: completare F1-bis (arricchimento massivo company/) col NUOVO METODO.**
-1. NOVITÀ da leggere prima (pull automatico già fatto dagli hook):
-   `PIANO-MAESTRO/10-METODO-CICLO-FASE.md` (metodo a 9 passi, ADR-006 — sostituisce
-   "fase→controllo→avanti"), ADR-005 (minori→BACKLOG), CLAUDE.md aggiornato.
-2. Esegui il ciclo a 9 passi su F1-bis: RECALL (questo file) → SPEC (DONE WHEN: 0 cartelle
-   vuote, 0 file <15 righe, schede agente complete per TUTTI i roster dei dossier) →
-   PRE-MORTEM (lezione CP-005: agenti muoiono → prompt idempotenti; budget-guard 20%) →
-   BUILD: **swarm 6 agenti in background** su cartelle disgiunte, stessi compiti della
-   tabella sotto, prompt che VERIFICANO L'ESISTENTE prima di scrivere → GATE (scan vuote/
-   magri) → REVIEW indipendente (1 agente legge 5 file a caso vs dossier) → TEST amnesia →
-   COMMIT (CP + questo file + wiki log + push) → RETRO.
-3. Assegnazione swarm (fonte = dossier PIANO-MAESTRO corrispondente):
-   A1: Ecosistemi/01+02 · A2: 03+04 · A3: 05+06 · A4: 07+08 · A5: 09+10+Gerarchia ·
-   A6: Mandato+Board-CSuite+Backbone+Sentinels+Guilds+GRUPPO.md+org.
-   Vietato agli agenti: toccare Memory/, 01-agency/, skills-map.yaml, wiki/log.md.
-4. Dopo F1-bis: prossima fase = F4 B2 (wrap formale WF outreach come team L3, SENZA
-   bisogno del token FB — slot pronto, ADR-005).
-   **NOTA GAEL 20:30: B2 GIÀ COMPLETATO (CP-006) + gate F4 VERDE con ciclo dry (CP-007),
-   fatti in parallelo prima di ricevere questo handover. Dopo F1-bis si va a B3/F5.**
+## ▶️ RIPRESA GAEL 2026-06-17 — STEP 4-HEAVY, poi NON FERMARTI MAI (direttiva Max)
+**Max ordina: domani prendi tu STEP 4-heavy e NON ti fermi — costruisci a catena, fase dopo
+fase, senza chiedere il permesso di continuare. Una fase finisce → CP → push → apri SUBITO la
+prossima. Ti fermi solo a budget-guard 20% (chiudi pulito) o se un GATE è rosso 2 volte.**
+
+### TASK IMMEDIATO — STEP 4-heavy: FORGE costruisce le 7 figure Board dai blueprint
+- **Fonte (già pronta):** `company/Board-CSuite/_BLUEPRINT/` — 7 blueprint (BP-CEO, BP-COO, BP-CTO,
+  BP-CMO, BP-CRO, BP-CFO, BP-Chief-Forge) + BP-INDEX. Ognuno ha roster 10 agenti, ≥2 workflow,
+  skill, handoff, struct-gate checklist, e l'albero cartella da costruire (template V2 §1).
+- **Cosa fare:** per ogni figura, la FORGE costruisce il CONTENUTO nella cartella
+  `company/Board-CSuite/<FIGURA>/` seguendo il template: `README.md`, `ARCHITETTURA.md`,
+  `agenti/` (le 10 schede del roster, CF-grade I/O JSON), `principi/`, `regole/`, `skills/`,
+  `scripts/`, `workflow/` (≥2), `kpi/`, `state/`. = ~70 agenti reali + ~14 workflow.
+- **Swarm (Dynamic Workflow, idempotente, Title-Case FISSO):** 7 agenti (1 per figura) o 4 batch
+  (2 figure ciascuno). Prompt: leggi il BP della figura → costruisci la cartella dal template →
+  riusa il v1 `Board-CSuite/<FIGURA>.md` come base del conductor/README. Scope bloccato a 1 figura.
+- **GATE:** ogni figura = struct-gate del suo BP (≥10 agenti, ≥2 workflow, 0 magri/0 vuote).
+- **REVIEW 5-bis (ORA ATTIVA — l'organo MAXIMILIAN esiste):** applica `company/MAXIMILIAN/Skill/
+  maximilian-standard-gate.md` → "Max approverebbe?" su 2-3 figure a campione. RIFAI → ricostruisci.
+- **COMMIT:** CP-20260617-NNN + STATO + wiki/log + push. **Poi NON ti fermi.**
+
+### CATENA NON-STOP (apri la prossima appena chiusa la precedente)
+1. **STEP 4-heavy** (sopra) — 7 figure Board reali.
+2. **STEP 5 — reparto-per-reparto:** costruisci il CONTENUTO V2 di ogni ecosistema dai dossier
+   `-V2.md` già pronti (01-AGENCY-V2, 04-MARKETING-V2, 03-CONTENT-FACTORY-V2, 02-INFO-BUSINESS-V2)
+   + completa i lotti dossier mancanti (05, split 06, 07/08/09). Un ecosistema per ciclo, swarm
+   interno per i reparti. Ogni reparto passa ARCHITETTURA(struttura)→FORGE(contenuto)→MAXIMILIAN(5-bis).
+3. Poi: Mandato-ecosistema operativo (dossier 13), Sentinelle, Guilds v2, knowledge ingestion.
+
+### REGOLE NON NEGOZIABILI (valgono per ogni ciclo)
+- Metodo 9 passi (`PIANO-MAESTRO/10-METODO-CICLO-FASE.md`) + passo 5-bis MAXIMILIAN (ora attivo).
+- Swarm IDEMPOTENTI (verifica l'esistente prima di scrivere — gli agenti muoiono). Title-Case FISSO
+  (lezione collisione Windows CP-20260616-001): MAI mischiare MAIUSCOLO/Title-Case → doppioni che bloccano i commit.
+- Confine Genesi Core: ARCHITETTURA = struttura, FORGE = contenuto. Non reinventare strutture: usa i BP/dossier.
+- Memory-first: RECALL questo file all'inizio, CP+push dopo OGNI fase. Coordinamento: aggiorna SEMPRE questo file.
+- Budget-guard 20%: sotto soglia chiudi col COMMIT, NON aprire build nuovi (riparti la sessione dopo).
 
 ## Cosa e' stato fatto (ultimo evento in cima)
 - 2026-06-16 — **STEP 4(c): blueprint Board via ARCHITETTURA** (Max, CP-20260616-010):
