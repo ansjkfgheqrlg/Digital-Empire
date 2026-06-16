@@ -20,16 +20,17 @@ del piano V2. Niente nuove strutture a standard v1 da ora in poi.
 - ✅ Dossier **MANDATO-ecosistema** (`PIANO-MAESTRO/13-DOSSIER-MANDATO-ECOSISTEMA.md`, CP-004):
   blueprint governo (6 custodi, 3 workflow, comando Sentinelle, contradiction-check) — build V2-5.
 
-**V2-2 prossimo/ultimo deliverable:**
-1. Riscrittura/ampliamento dossier 01-09 a scala v2 (parte SWARM — quando il budget regge;
-   naming Title-Case fisso, prompt idempotenti, mai 2 swarm grossi insieme). Questo chiude V2-2.
-2. Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — priorità alta, attiva il 5-bis).
+**V2-2 riscrittura dossier 01-09 a scala v2 (file NUOVI `-V2.md`, v1 intatti):**
+- ✅ Lotto 1 (CP-005): 01-AGENCY-V2 (10 reparti, ~75 agenti, 25 WF) + 04-MARKETING-V2 (6 reparti, ~49 agenti, 22 WF)
+- ⬜ Lotto 2: 03-CONTENT-FACTORY + 02-INFO-BUSINESS
+- ⬜ Lotto 3-4: 05-MULTI-BUSINESS, 06-CORE (→ valutare split in 4: Platform/Forge/Intelligence/Operations), 07-BACKBONE, 08-ROADMAP, 09-MEMORY
+- Pattern confermato: swarm 2 agenti/lotto, acceptEdits, Title-Case, idempotente — non muore.
+Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis).
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- **GAEL/swarm V2-2 ATTIVO (2026-06-16):** scrive NUOVI file dossier v2 in `PIANO-MAESTRO/`
-  con suffisso `-V2.md` (lotto: 01-AGENCY, 04-MARKETING). NON tocca i dossier v1 esistenti
-  (restano riferimento). Max: non toccare PIANO-MAESTRO/*-V2.md finche' il blocco resta.
+- Nessuno swarm attivo. Lotto 1 V2-2 chiuso (01-AGENCY-V2, 04-MARKETING-V2 committati).
+- I dossier v2 sono file NUOVI `-V2.md` accanto ai v1 (che restano riferimento, non toccati).
 - REGOLA NAMING swarm (lezione CP-20260616-001): grafia file FISSA (Title-Case), mai
   mischiare MAIUSCOLO/Title-Case → su Windows (core.ignorecase) genera doppioni che
   bloccano i commit. Allowlist progetto include già `Write(company/**)` per gli swarm.

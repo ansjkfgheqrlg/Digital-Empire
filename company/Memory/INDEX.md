@@ -23,6 +23,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260616-005](checkpoints/CP-20260616-005.md) — V2-2 lotto 1: dossier v2 AGENCY (10 reparti/75 agenti) + MARKETING (6 reparti/49 agenti) — Gael
 - [CP-20260616-004](checkpoints/CP-20260616-004.md) — V2-2: dossier MANDATO-ecosistema (PIANO-MAESTRO/13) — blueprint governo per V2-5 — Gael
 - [CP-20260616-003](checkpoints/CP-20260616-003.md) — V2-2 AVVIATA: dossier MAXIMILIAN (PIANO-MAESTRO/12) — blueprint organo per V2-3 — Gael
 - [CP-20260616-002](checkpoints/CP-20260616-002.md) — F1-bis COMPLETATO: gate verde (0 vuote, 0 magri, 317 file) + review pass; prossima V2-2 — Gael
