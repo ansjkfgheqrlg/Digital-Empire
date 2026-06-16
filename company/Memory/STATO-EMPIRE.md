@@ -14,15 +14,16 @@ del piano V2. Niente nuove strutture a standard v1 da ora in poi.
 ## Fase roadmap corrente
 **V2-2 — DOSSIER v2 — IN CORSO (2026-06-16, Gael).** F1-bis ✅ COMPLETATO (CP-002).
 
-**V2-2 fatto finora:**
+**V2-2 fatto finora — i 2 dossier NUOVI sono completi:**
 - ✅ Dossier **MAXIMILIAN** (`PIANO-MAESTRO/12-DOSSIER-MAXIMILIAN.md`, CP-003): blueprint
-  organo LX (8 agenti, review-gate 5-bis, 2 workflow, 2 skill) — da costruire in V2-3.
+  organo LX (8 agenti, review-gate 5-bis, 2 workflow, 2 skill) — build in V2-3.
+- ✅ Dossier **MANDATO-ecosistema** (`PIANO-MAESTRO/13-DOSSIER-MANDATO-ECOSISTEMA.md`, CP-004):
+  blueprint governo (6 custodi, 3 workflow, comando Sentinelle, contradiction-check) — build V2-5.
 
-**V2-2 prossimi deliverable:**
-1. Dossier **MANDATO-ecosistema** (§3 piano V2) — l'altra nuova struttura v2.
-2. Riscrittura/ampliamento dossier 01-09 a scala v2 (swarm quando budget regge; naming
-   Title-Case fisso, prompt idempotenti, mai 2 swarm grossi insieme).
-3. Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — priorità alta, attiva il 5-bis).
+**V2-2 prossimo/ultimo deliverable:**
+1. Riscrittura/ampliamento dossier 01-09 a scala v2 (parte SWARM — quando il budget regge;
+   naming Title-Case fisso, prompt idempotenti, mai 2 swarm grossi insieme). Questo chiude V2-2.
+2. Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — priorità alta, attiva il 5-bis).
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
