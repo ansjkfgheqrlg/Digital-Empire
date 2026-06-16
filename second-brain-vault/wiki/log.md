@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-16] — 🏗️ STEP 1 GENESI CORE: organo ARCHITETTURA costruito (Max)
+
+- DIREZIONE (Max): basta espandere la mappa — si costruisce il **Genesi Core** vivo, poi l'azienda nasce da lì. Sequenza: **ARCHITETTURA → FORGE → MAXIMILIAN → Board C-Suite → poi reparto-per-reparto**. Correzione chiave: la "forma giusta" si sceglie con INGEGNO (non reparto+ecosistema meccanico su tutto; alcune cose = team, principio, stile, workflow, skill).
+- COSTRUITO: `PIANO-MAESTRO/14-DOSSIER-ARCHITETTURA.md` (blueprint) + `company/Genesi-Core/ARCHITETTURA/` (**30 file, 2075 righe**). ARCHITETTURA = FORGE specializzata SOLO nella STRUTTURA: disegna al millimetro la forma di ogni artefatto che la FORGE crea (9 schemi canonici), poi passa il blueprint alla FORGE che ci mette il CONTENUTO. Confine ferreo struttura/contenuto. Catena: richiesta → ARCHITETTURA → FORGE → MAXIMILIAN → Mandato → VIVO.
+- METODO: Dynamic Workflow, swarm 4 agenti Opus su cartelle disgiunte (Agenti 8 · Reparti 6 · Schemi-Canonici 10 · Workflow 4 + ECOSISTEMA + BACKBONE), naming Title-Case fisso (zero collisioni), idempotenti. Gate: 0 vuote/0 magri → PASS. Review indipendente (Schema-Skill + WF-ARCH-DESIGN): sostanza vera, cross-ref coerenti → PASS. CP-20260616-007.
+- PENDENTE: push bloccato da conflitto git aperto (5 file 06-PLATFORM/Reparti) — Max lo risolve poi. → 2 file creati (dossier 14, CP-007) + 30 file organo + 3 aggiornati (STATO, INDEX, log).
+
 ## [2026-06-11] — 🚨 PIANO V2: Direttiva di Scala di Max (ADR-007) + corpus MAXIMILIAN
 
 - DIRETTIVA (Max, analisi completa workspace): la scala v1 è superata — "stiamo costruendo un'AZIENDA". Nuova unità di misura: **1 workflow fatto bene = il Content Factory di Exponium intero**. Board C-Suite: ogni figura (CEO, CFO, CTO, CMO, CRO, COO, Chief-Forge) = workflow CF-grade con ≥10 agenti, principi, regole, script .py, skill proprie (~70 agenti). Ogni reparto = team 6-10 agenti con gerarchia + 1-5 workflow CF-grade; reparti Agency da ampliare; mega-reparti (Info Business, Content Factory) = aziende interne. Mandato → ecosistema di governo (team custodi + multi-workflow, comanda le Sentinelle). Sentinelle multi-workflow. Guilds drasticamente migliorate. Memory promossa ma da potenziare per la scala. Knowledge ingestion: tutte le cartelle formazione del workspace (Formazzione/, Marketing & Ai/, SKILL & Agenti/, InfoBusiness/...) si trasformano in organi interni.

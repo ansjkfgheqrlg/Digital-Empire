@@ -66,11 +66,12 @@ Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- 🔴 **SWARM MAX ATTIVO (2026-06-16, STEP 1 Genesi Core):** 4 agenti su
-  `company/Genesi-Core/ARCHITETTURA/` (Agenti/ · Reparti/ · Schemi-Canonici/ · Workflow/).
-  GAEL: NON toccare `company/Genesi-Core/` finché questo blocco è rosso.
-- ⚠️ Conflitto git aperto (5 file `06-PLATFORM/Reparti` DU + autostash) — Max ha detto di
-  ignorarlo per ora; NON è stato risolto. Da sistemare prima del prossimo commit pulito.
+- 🟢 **SWARM MAX CHIUSO (2026-06-16, STEP 1 Genesi Core FATTO):** organo ARCHITETTURA costruito
+  in `company/Genesi-Core/ARCHITETTURA/` (30 file, gate+review PASS, CP-20260616-007).
+- ⚠️ **Conflitto git ANCORA APERTO** (5 file `06-PLATFORM/Reparti` DU + autostash, da fix
+  collisione case) → blocca il commit/push pulito. Max ha scelto di ignorarlo per ora.
+  **PUSH PENDENTE:** i 30 file ARCHITETTURA + dossier 14 + CP-007 sono su disco ma NON pushati.
+  Fix: Max incolla `git reset --hard HEAD` + `git stash drop`, poi il sync hook pusha tutto.
 - Nessuno swarm Gael attivo. Lotti 1-2 V2-2 chiusi (01,04,03,02 -V2 committati).
 - I dossier v2 sono file NUOVI `-V2.md` accanto ai v1 (che restano riferimento, non toccati).
 - REGOLA NAMING swarm (lezione CP-20260616-001): grafia file FISSA (Title-Case), mai
@@ -99,6 +100,11 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
    fatti in parallelo prima di ricevere questo handover. Dopo F1-bis si va a B3/F5.**
 
 ## Cosa e' stato fatto (ultimo evento in cima)
+- 2026-06-16 — **STEP 1 GENESI CORE: organo ARCHITETTURA costruito** (Max, CP-20260616-007):
+  dossier 14 + `company/Genesi-Core/ARCHITETTURA/` (30 file, 2075 righe, gate+review PASS).
+  Swarm 4 agenti Opus, Dynamic Workflow. ARCHITETTURA = FORGE specializzata nella STRUTTURA;
+  sceglie la FORMA GIUSTA (skill/agente/team/principio/stile/workflow/doc/reparto/ecosistema)
+  con ingegno e passa il blueprint alla FORGE. PUSH PENDENTE (conflitto git aperto). Next: STEP 2 FORGE.
 - 2026-06-13 — **FIX ARCHITETTURA EMPIRE STUDIO** (Max, CP-20260613-001):
   Errore critico: Memory Empire omesso dal pipeline in sessione studio Andrei Pascu.
   Fix: RULES.md creato (checklist non negoziabili + KNOWN ERRORS registry),

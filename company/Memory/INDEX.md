@@ -23,6 +23,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260616-007](checkpoints/CP-20260616-007.md) — STEP 1 Genesi Core: organo ARCHITETTURA costruito (dossier 14 + 30 file, gate+review PASS) — Max
 - [CP-20260616-006](checkpoints/CP-20260616-006.md) — V2-2 lotto 2: dossier v2 mega-reparti CONTENT-FACTORY (5 livelli/76 agenti) + INFO-BUSINESS (48 agenti) — Gael
 - [CP-20260616-005](checkpoints/CP-20260616-005.md) — V2-2 lotto 1: dossier v2 AGENCY (10 reparti/75 agenti) + MARKETING (6 reparti/49 agenti) — Gael
 - [CP-20260616-004](checkpoints/CP-20260616-004.md) — V2-2: dossier MANDATO-ecosistema (PIANO-MAESTRO/13) — blueprint governo per V2-5 — Gael
