@@ -67,8 +67,8 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
 - 🔴 **GAEL/swarm STEP 4-heavy ATTIVO (2026-06-17):** la FORGE costruisce le figure Board in
-  `company/Board-CSuite/<FIGURA>/` dai blueprint. ✅ batch 1 (CEO+Chief-Forge, CP-001) ✅ batch 2
-  (CTO+COO, CP-002). 🔴 batch 3 in corso: **CMO + CRO** (resta solo CFO). Max: non toccare queste cartelle.
+  `company/Board-CSuite/<FIGURA>/` dai blueprint. ✅ batch 1 (CEO+Chief-Forge) ✅ batch 2 (CTO+COO)
+  ✅ batch 3 (CMO+CRO, CP-003). 🔴 batch 4 in corso: **CFO** (ultima figura). Max: non toccare queste cartelle.
 - 🟢 **GENESI CORE FATTO (Max, 2026-06-16) — tutto su origin, working tree pulito:**
   STEP 1 ARCHITETTURA (30 file, CP-007) · STEP 2 FORGE (34 file, CP-008) · STEP 3 MAXIMILIAN
   (15 file, CP-009) · STEP 4(c) blueprint Board (8 file, 70 agenti progettati, CP-010).
