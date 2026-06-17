@@ -68,7 +68,9 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 ## ⚠️ COORDINAMENTO (anti-collisione)
 - 🔴 **GAEL/swarm STEP 4-heavy ATTIVO (2026-06-17):** la FORGE costruisce le figure Board in
   `company/Board-CSuite/<FIGURA>/` dai blueprint. ✅ batch 1 (CEO+Chief-Forge) ✅ batch 2 (CTO+COO)
-  ✅ batch 3 (CMO+CRO, CP-003). 🔴 batch 4 in corso: **CFO** (ultima figura). Max: non toccare queste cartelle.
+  ✅ batch 3 (CMO+CRO, CP-003). 🟡 batch 4 **CFO PARZIALE** (~17 file, 4 agenti su 10: cfo-cost-sentinel,
+  cfo-roi-analyst, cfo-runway-tracker, cfo-memoria — mancano ~6 agenti + workflow/principi/regole/skills/scripts/kpi/state).
+  Stop pulito 2026-06-17 (crediti quasi esauriti, agente fermato). Lavoro committato come WIP. Max: non toccare queste cartelle.
 - 🟢 **GENESI CORE FATTO (Max, 2026-06-16) — tutto su origin, working tree pulito:**
   STEP 1 ARCHITETTURA (30 file, CP-007) · STEP 2 FORGE (34 file, CP-008) · STEP 3 MAXIMILIAN
   (15 file, CP-009) · STEP 4(c) blueprint Board (8 file, 70 agenti progettati, CP-010).
@@ -191,6 +193,20 @@ prossima. Ti fermi solo a budget-guard 20% (chiudi pulito) o se un GATE è rosso
   task 7.0 / F-MB1, sessione dedicata (questo è strutturale per F7, non per F4-F6).
 
 ## RIPRESA DA (per la prossima sessione)
+
+### 🟡 RIPRESA IMMEDIATA (2026-06-17, Gael — stop crediti) — STEP 4-heavy quasi finito
+- **6 figure Board su 7 COMPLETE e approvate**: CEO, Chief-Forge (CP-001), CTO, COO (CP-002),
+  CMO, CRO (CP-003). ~126 file, 60 agenti CF-grade. Tutte gate + 5-bis Maximilian APPROVA.
+- **CFO = ULTIMA, PARZIALE** in `company/Board-CSuite/CFO/`: fatti ~17 file e 4 agenti
+  (cfo-cost-sentinel, cfo-roi-analyst, cfo-runway-tracker, cfo-memoria) + principi/regole/workflow avviati.
+  **Mancano:** ~6 agenti (incl. cfo-conductor opus, budget-allocator, 3-tier-router, dry-run-guard, verificatore),
+  i workflow completi, e i file di supporto. Riferimento qualità: scheda `CEO-Empire-Conductor/agenti/ceo-priorita-arbiter.md`.
+  Blueprint: `_BLUEPRINT/BP-CFO.md`. CFO presidia: budget, cost guard, routing 3-tier, dry-run (Mandato Art.4.3).
+- **AZIONE NEXT:** rilancia 1 agente FORGE per COMPLETARE la CFO (prompt idempotente: "completa i file mancanti,
+  non ricreare gli esistenti") → gate (10 agenti/3 WF/0 magri/0 vuote/0 stub/v1 CFO.md intatto) → 5-bis → CP-004
+  = **STEP 4-heavy COMPLETO** (7 figure, ~70 agenti). Poi STEP 5 (contenuto ecosistemi dai dossier -V2).
+
+### Storico fasi F (completate)
 1. Caricare questo file + INDEX.md (memory-first).
 2. **F1 COMPLETATO** -- gate PASS 92/92.
 3. **F2 COMPLETATO** -- gate PASS 59/59.
