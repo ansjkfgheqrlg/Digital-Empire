@@ -23,6 +23,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260617-002](checkpoints/CP-20260617-002.md) — STEP 4-heavy batch 2: figure Board CTO + COO costruite (42 file, 20 agenti, 5-bis Maximilian APPROVA) — Gael
 - [CP-20260617-001](checkpoints/CP-20260617-001.md) — STEP 4-heavy batch 1: figure Board CEO + Chief-Forge costruite (42 file, 20 agenti, struct-gate + 5-bis Maximilian APPROVA) — Gael
 - [CP-20260616-010](checkpoints/CP-20260616-010.md) — STEP 4(c): blueprint Board via ARCHITETTURA (8 file, 70 agenti progettati, primo uso reale WF-ARCH-DESIGN) — Max
 - [CP-20260616-009](checkpoints/CP-20260616-009.md) — STEP 3: organo MAXIMILIAN (15 file, review-gate 5-bis + maximilian-standard-gate eseguibile, gate+review PASS) — Max
