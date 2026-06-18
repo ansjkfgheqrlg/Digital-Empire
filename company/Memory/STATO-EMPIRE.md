@@ -73,7 +73,11 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   ✅ **L2-5 Brand & Creative Strategy COMPLETATA (CP-20260618-003):** 17 file, 6 agenti CF-grade
   (BRAND-LEAD/BR1/BR2/BR3/BR4/BR-QA), 3 workflow (WF-BRAND-AUDIT/KIT-BUILD/EVOLUTION), principi,
   regole, skills, scripts, kpi, state — 0 stub, ancorato Mandato Art.2, skill brand-strategy-gate P0.
-  🔴 **PROSSIMO: L2.1 Copywriting** (delicato: Copy Workflow attivo ADR-003) o L2.2 Advertising.
+  ✅ **L2-2 Advertising COMPLETATA (CP-20260618-004):** 19 file, 8 agenti CF-grade, 3 WF, 0 stub, v1 AD1-4 intatti.
+  ✅ **L2-3 Email & Lifecycle COMPLETATA (CP-20260618-005):** 19 file, 7 agenti, 4 WF, 0 stub, PII Art.7.2, v1 E1-3 intatti.
+  **AVANZAMENTO 04-MARKETING: 4 reparti su 6** (L2-2, L2-3, L2-5, L2-6 ✅). Mancano: L2-1 Copywriting (DELICATO:
+  ingloba Copy Workflow Orchestration Layer attivo, ADR-003, da wrappare con cura) + L2-4 Analytics.
+  🔴 **PROSSIMO batch 3: L2-4 Analytics + L2-1 Copywriting** (quest'ultimo con istruzioni di wrap, non riscrittura).
   **MAX: non prendere 04-MARKETING.** AGENCY lasciata a sessione dedicata (outreach attivo, ADR-003).
 - 🟢 **STEP 4-heavy CHIUSO (2026-06-18):** Board C-Suite V2 = **7/7 figure complete** in
   `company/Board-CSuite/<FIGURA>/`. CEO+Chief-Forge (CP-20260617-001) · CTO+COO (CP-002) ·

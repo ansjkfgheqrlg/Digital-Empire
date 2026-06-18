@@ -23,6 +23,9 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260618-005](checkpoints/CP-20260618-005.md) — STEP 5 batch 2: L2.3 Email & Lifecycle costruita CF-grade (19 file, 7 agenti, 4 WF, 0 stub, PII Art.7.2) — Gael
+- [CP-20260618-004](checkpoints/CP-20260618-004.md) — STEP 5 batch 2: L2.2 Advertising costruita CF-grade (19 file, 8 agenti, 3 WF, 0 stub) — Gael
+- [CP-20260618-003](checkpoints/CP-20260618-003.md) — STEP 5 batch 1: L2.5 Brand & Creative Strategy costruita CF-grade (17 file, 6 agenti, 3 WF, 0 stub, Mandato Art.2) — Gael
 - [CP-20260618-002](checkpoints/CP-20260618-002.md) — STEP 5 batch 1: L2.6 Conversion Architecture costruita CF-grade (17 file, 6 agenti, 3 WF, 0 stub) — Gael
 - [CP-20260618-001](checkpoints/CP-20260618-001.md) — STEP 4-heavy CHIUSO: CFO completato → Board C-Suite V2 completa 7/7 (~70 agenti, 5-bis APPROVA) — Max
 - [CP-20260617-003](checkpoints/CP-20260617-003.md) — STEP 4-heavy batch 3: figure Board CMO + CRO costruite (42 file, 20 agenti, 5-bis Maximilian APPROVA) — Gael
