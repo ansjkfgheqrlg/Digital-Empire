@@ -66,6 +66,12 @@ Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
+- 🔴 **GAEL STEP 5 ATTIVO (2026-06-18, ~ora):** costruisco il CONTENUTO V2 dell'ecosistema
+  **04-MARKETING** dal dossier `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md`, reparto-per-reparto,
+  sotto `company/Ecosistemi/04-MARKETING/Reparti/<L2-N-Nome>/` (cartelle Title-Case, template figure Board).
+  🔴 **batch 1 in corso: L2-5 Brand & Creative + L2-6 Conversion Architecture** (i 2 reparti NUOVI v2,
+  greenfield, zero rischio ADR-003). **MAX: non prendere 04-MARKETING.** Lascio AGENCY a te o a sessione
+  dedicata (ha l'outreach attivo da wrappare). L2.1 Copywriting = delicato (ingloba Copy Workflow attivo), lo faccio dopo con cura.
 - 🟢 **STEP 4-heavy CHIUSO (2026-06-18):** Board C-Suite V2 = **7/7 figure complete** in
   `company/Board-CSuite/<FIGURA>/`. CEO+Chief-Forge (CP-20260617-001) · CTO+COO (CP-002) ·
   CMO+CRO (CP-003) · **CFO completato da Max (CP-20260618-001)** — ~70 agenti reali, 5-bis MAXIMILIAN APPROVA.
