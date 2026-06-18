@@ -23,6 +23,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260618-001](checkpoints/CP-20260618-001.md) — STEP 4-heavy CHIUSO: CFO completato → Board C-Suite V2 completa 7/7 (~70 agenti, 5-bis APPROVA) — Max
 - [CP-20260617-003](checkpoints/CP-20260617-003.md) — STEP 4-heavy batch 3: figure Board CMO + CRO costruite (42 file, 20 agenti, 5-bis Maximilian APPROVA) — Gael
 - [CP-20260617-002](checkpoints/CP-20260617-002.md) — STEP 4-heavy batch 2: figure Board CTO + COO costruite (42 file, 20 agenti, 5-bis Maximilian APPROVA) — Gael
 - [CP-20260617-001](checkpoints/CP-20260617-001.md) — STEP 4-heavy batch 1: figure Board CEO + Chief-Forge costruite (42 file, 20 agenti, struct-gate + 5-bis Maximilian APPROVA) — Gael

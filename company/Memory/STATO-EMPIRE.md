@@ -66,11 +66,9 @@ Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- 🔴 **GAEL/swarm STEP 4-heavy ATTIVO (2026-06-17):** la FORGE costruisce le figure Board in
-  `company/Board-CSuite/<FIGURA>/` dai blueprint. ✅ batch 1 (CEO+Chief-Forge) ✅ batch 2 (CTO+COO)
-  ✅ batch 3 (CMO+CRO, CP-003). 🟡 batch 4 **CFO PARZIALE** (~17 file, 4 agenti su 10: cfo-cost-sentinel,
-  cfo-roi-analyst, cfo-runway-tracker, cfo-memoria — mancano ~6 agenti + workflow/principi/regole/skills/scripts/kpi/state).
-  Stop pulito 2026-06-17 (crediti quasi esauriti, agente fermato). Lavoro committato come WIP. Max: non toccare queste cartelle.
+- 🟢 **STEP 4-heavy CHIUSO (2026-06-18):** Board C-Suite V2 = **7/7 figure complete** in
+  `company/Board-CSuite/<FIGURA>/`. CEO+Chief-Forge (CP-20260617-001) · CTO+COO (CP-002) ·
+  CMO+CRO (CP-003) · **CFO completato da Max (CP-20260618-001)** — ~70 agenti reali, 5-bis MAXIMILIAN APPROVA.
 - 🟢 **GENESI CORE FATTO (Max, 2026-06-16) — tutto su origin, working tree pulito:**
   STEP 1 ARCHITETTURA (30 file, CP-007) · STEP 2 FORGE (34 file, CP-008) · STEP 3 MAXIMILIAN
   (15 file, CP-009) · STEP 4(c) blueprint Board (8 file, 70 agenti progettati, CP-010).
@@ -87,7 +85,10 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 fase, senza chiedere il permesso di continuare. Una fase finisce → CP → push → apri SUBITO la
 prossima. Ti fermi solo a budget-guard 20% (chiudi pulito) o se un GATE è rosso 2 volte.**
 
-### TASK IMMEDIATO — STEP 4-heavy: FORGE costruisce le 7 figure Board dai blueprint
+### ✅ STEP 4-heavy COMPLETATO (2026-06-18, CP-20260618-001) — Board 7/7 figure, ~70 agenti.
+### → TASK IMMEDIATO ORA = STEP 5 (vedi CATENA NON-STOP punto 2). Lo STEP 4-heavy qui sotto è STORICO (fatto).
+
+### [STORICO/FATTO] STEP 4-heavy: FORGE costruisce le 7 figure Board dai blueprint
 - **Fonte (già pronta):** `company/Board-CSuite/_BLUEPRINT/` — 7 blueprint (BP-CEO, BP-COO, BP-CTO,
   BP-CMO, BP-CRO, BP-CFO, BP-Chief-Forge) + BP-INDEX. Ognuno ha roster 10 agenti, ≥2 workflow,
   skill, handoff, struct-gate checklist, e l'albero cartella da costruire (template V2 §1).
@@ -120,6 +121,9 @@ prossima. Ti fermi solo a budget-guard 20% (chiudi pulito) o se un GATE è rosso
 - Budget-guard 20%: sotto soglia chiudi col COMMIT, NON aprire build nuovi (riparti la sessione dopo).
 
 ## Cosa e' stato fatto (ultimo evento in cima)
+- 2026-06-18 — **STEP 4-heavy CHIUSO: Board C-Suite V2 completa 7/7** (Max, CP-20260618-001):
+  completato il CFO (4 file mancanti: kpi/skills/scripts/state → 10 agenti, 3 WF, 21 file, 0 magri),
+  5-bis MAXIMILIAN APPROVA. ~70 agenti Board reali. Next NON-STOP: STEP 5 reparto-per-reparto.
 - 2026-06-16 — **STEP 4(c): blueprint Board via ARCHITETTURA** (Max, CP-20260616-010):
   `company/Board-CSuite/_BLUEPRINT/` (8 file, 70 agenti progettati). PRIMO uso reale di WF-ARCH-DESIGN:
   il Genesi Core lavora — ARCHITETTURA disegna la struttura delle 7 figure C-level (cartella-workflow
