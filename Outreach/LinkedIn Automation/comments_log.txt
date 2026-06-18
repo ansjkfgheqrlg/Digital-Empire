@@ -1498,3 +1498,9 @@ COMMENT WARMER COMPLETATO — Commenti inviati: 33
 2026-06-11 09:00:17,940  Commenti da fare oggi: 30 (limite: 30)
 2026-06-11 09:00:48,586  Verifica sessione LinkedIn...
 2026-06-11 09:00:59,306  [ERRORE] Sessione LinkedIn scaduta. Esegui: python refresh_session.py
+2026-06-17 09:35:21,373  ============================================================
+2026-06-17 09:35:21,374  COMMENT WARMER  2026-06-17 09:35:21
+2026-06-17 09:35:21,374  ============================================================
+2026-06-17 09:35:21,406  Commenti da fare oggi: 30 (limite: 30)
+2026-06-17 09:35:39,817  Verifica sessione LinkedIn...
+2026-06-17 09:35:51,372  [ERRORE] Sessione LinkedIn scaduta. Esegui: python refresh_session.py
