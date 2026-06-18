@@ -79,6 +79,9 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   ingloba Copy Workflow Orchestration Layer attivo, ADR-003, da wrappare con cura) + L2-4 Analytics.
   🔴 **PROSSIMO batch 3: L2-4 Analytics + L2-1 Copywriting** (quest'ultimo con istruzioni di wrap, non riscrittura).
   **MAX: non prendere 04-MARKETING.** AGENCY lasciata a sessione dedicata (outreach attivo, ADR-003).
+- 🔴 **MAX STEP 5 ATTIVO (2026-06-18):** costruisco il CONTENUTO V2 di **02-INFO-BUSINESS** dal
+  dossier `PIANO-MAESTRO/02-ECOSISTEMA-INFOBUSINESS-V2.md`, 5 aree L2 (PROD/LANC/VEND/COMM/STRA),
+  swarm 5 agenti in `company/Ecosistemi/02-INFO-BUSINESS/Reparti/IB-L2-*/`. GAEL: tieni 04-MARKETING, NON toccare 02-INFO-BUSINESS.
 - 🟢 **STEP 4-heavy CHIUSO (2026-06-18):** Board C-Suite V2 = **7/7 figure complete** in
   `company/Board-CSuite/<FIGURA>/`. CEO+Chief-Forge (CP-20260617-001) · CTO+COO (CP-002) ·
   CMO+CRO (CP-003) · **CFO completato da Max (CP-20260618-001)** — ~70 agenti reali, 5-bis MAXIMILIAN APPROVA.
