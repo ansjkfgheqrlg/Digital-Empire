@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-06-18] — STEP 5: L2.5 Brand & Creative Strategy COSTRUITO (Gael, CP-20260618-003)
+
+- COSTRUITO: `company/Ecosistemi/04-MARKETING/Reparti/L2-5-Brand-Creative-Strategy/` (17 file, 0 stub).
+  Reparto NUOVO greenfield v2 — non esisteva nel v1. Custode operativo Mandato Art.2 (Brand Voice DE).
+- 6 agenti CF-grade: BRAND-LEAD (Opus, coordinator) + BR1 Positioning Strategist (Opus) +
+  BR2 Brand Voice Architect (Opus) + BR3 Creative Director (Sonnet) + BR4 Brand Analyst (Sonnet)
+  + BR-QA Brand Consistency Verifier (Sonnet, gate G5 bloccante).
+- 3 workflow CF-grade: WF-BRAND-AUDIT (audit positioning + voce + visual) + WF-BRAND-KIT-BUILD
+  (costruzione brand_kit per nuovo cliente/canale) + WF-BRAND-EVOLUTION (proposta evolutiva → ADR-bozza → solo Max approva Art.5.3).
+- Skill P0 `brand-strategy-gate` specificata (da forgiare via 07-FORGE in M1).
+- ADR-003 rispettato: file v1 04-MARKETING intatti. Naming Title-Case fisso.
+- STEP 5 avanzamento: 2/6 reparti 04-MARKETING completi (L2-6 + L2-5).
+
 ## [2026-06-18] — 🏛️ STEP 4-heavy CHIUSO: Board C-Suite V2 completa (7/7 figure)
 
 - Gael (17/06) ha costruito 6 figure dai blueprint via FORGE: CEO+Chief-Forge (CP-20260617-001), CTO+COO (CP-002), CMO+CRO (CP-003) — ognuna passata dalla review 5-bis MAXIMILIAN → APPROVA. CFO lasciato parziale su stop crediti.

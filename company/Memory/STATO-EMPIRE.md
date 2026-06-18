@@ -66,12 +66,15 @@ Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- 🔴 **GAEL STEP 5 ATTIVO (2026-06-18, ~ora):** costruisco il CONTENUTO V2 dell'ecosistema
-  **04-MARKETING** dal dossier `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md`, reparto-per-reparto,
-  sotto `company/Ecosistemi/04-MARKETING/Reparti/<L2-N-Nome>/` (cartelle Title-Case, template figure Board).
-  🔴 **batch 1 in corso: L2-5 Brand & Creative + L2-6 Conversion Architecture** (i 2 reparti NUOVI v2,
-  greenfield, zero rischio ADR-003). **MAX: non prendere 04-MARKETING.** Lascio AGENCY a te o a sessione
-  dedicata (ha l'outreach attivo da wrappare). L2.1 Copywriting = delicato (ingloba Copy Workflow attivo), lo faccio dopo con cura.
+- 🟡 **GAEL STEP 5 IN CORSO (2026-06-18):** costruisco il CONTENUTO V2 dell'ecosistema
+  **04-MARKETING** dal dossier `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING-V2.md`, reparto-per-reparto.
+  ✅ **L2-6 Conversion Architecture COMPLETATA (CP-20260618-002):** 17 file, 6 agenti CF-grade,
+  3 workflow, 0 stub — greenfield confermato.
+  ✅ **L2-5 Brand & Creative Strategy COMPLETATA (CP-20260618-003):** 17 file, 6 agenti CF-grade
+  (BRAND-LEAD/BR1/BR2/BR3/BR4/BR-QA), 3 workflow (WF-BRAND-AUDIT/KIT-BUILD/EVOLUTION), principi,
+  regole, skills, scripts, kpi, state — 0 stub, ancorato Mandato Art.2, skill brand-strategy-gate P0.
+  🔴 **PROSSIMO: L2.1 Copywriting** (delicato: Copy Workflow attivo ADR-003) o L2.2 Advertising.
+  **MAX: non prendere 04-MARKETING.** AGENCY lasciata a sessione dedicata (outreach attivo, ADR-003).
 - 🟢 **STEP 4-heavy CHIUSO (2026-06-18):** Board C-Suite V2 = **7/7 figure complete** in
   `company/Board-CSuite/<FIGURA>/`. CEO+Chief-Forge (CP-20260617-001) · CTO+COO (CP-002) ·
   CMO+CRO (CP-003) · **CFO completato da Max (CP-20260618-001)** — ~70 agenti reali, 5-bis MAXIMILIAN APPROVA.
@@ -127,6 +130,12 @@ prossima. Ti fermi solo a budget-guard 20% (chiudi pulito) o se un GATE è rosso
 - Budget-guard 20%: sotto soglia chiudi col COMMIT, NON aprire build nuovi (riparti la sessione dopo).
 
 ## Cosa e' stato fatto (ultimo evento in cima)
+- 2026-06-18 — **STEP 5 batch 1: L2.6 Conversion Architecture costruita CF-grade** (Gael, CP-20260618-002):
+  17 file greenfield in `company/Ecosistemi/04-MARKETING/Reparti/L2-6-Conversion-Architecture/`:
+  README + ARCHITETTURA + 6 agenti (conv-lead opus, CA1-CA4 sonnet, CA-QA verifier) + 3 workflow
+  (WF-FUNNEL-DESIGN, WF-CRO-SPRINT, WF-LANDING-AUDIT) + principi/regole/skills/scripts/kpi/state.
+  Confine esplicito: L2.6 = strategia funnel (NON scrive copy, NON implementa pagine).
+  Gate CA-QA bloccante, namespace `marketing/cro/*` definiti. 0 stub.
 - 2026-06-18 — **STEP 4-heavy CHIUSO: Board C-Suite V2 completa 7/7** (Max, CP-20260618-001):
   completato il CFO (4 file mancanti: kpi/skills/scripts/state → 10 agenti, 3 WF, 21 file, 0 magri),
   5-bis MAXIMILIAN APPROVA. ~70 agenti Board reali. Next NON-STOP: STEP 5 reparto-per-reparto.
