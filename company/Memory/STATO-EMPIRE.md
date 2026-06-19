@@ -75,10 +75,17 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   regole, skills, scripts, kpi, state — 0 stub, ancorato Mandato Art.2, skill brand-strategy-gate P0.
   ✅ **L2-2 Advertising COMPLETATA (CP-20260618-004):** 19 file, 8 agenti CF-grade, 3 WF, 0 stub, v1 AD1-4 intatti.
   ✅ **L2-3 Email & Lifecycle COMPLETATA (CP-20260618-005):** 19 file, 7 agenti, 4 WF, 0 stub, PII Art.7.2, v1 E1-3 intatti.
-  **AVANZAMENTO 04-MARKETING: 4 reparti su 6** (L2-2, L2-3, L2-5, L2-6 ✅). Mancano: L2-1 Copywriting (DELICATO:
-  ingloba Copy Workflow Orchestration Layer attivo, ADR-003, da wrappare con cura) + L2-4 Analytics.
-  🔴 **PROSSIMO batch 3: L2-4 Analytics + L2-1 Copywriting** (quest'ultimo con istruzioni di wrap, non riscrittura).
-  **MAX: non prendere 04-MARKETING.** AGENCY lasciata a sessione dedicata (outreach attivo, ADR-003).
+  ✅ **L2-4 Analytics COMPLETA (batch 3, 2026-06-18):** 18 file, 7 agenti CF-grade, 3 WF, 6/6 cartelle supporto,
+  0 magri, 0 stub reali. (CP-006 da formalizzare alla ripresa.)
+  🟡 **L2-1 Copywriting PARZIALE (batch 3, STOP session-limit 2026-06-18, reset 14:50 Roma):** core fatto =
+  README + ARCHITETTURA + 10 schede agente (wrapper A1-A8+COPY-MASTER+COPY-QA-LEAD) + 5 workflow su 6.
+  **MANCANO:** 1 workflow (il 6° tra WF-COPY-VSL/WF-COPY-SOCIAL) + 6 cartelle di supporto
+  (principi, regole, skills, scripts, kpi, state) + CP-007. **Motore Copy Workflow Orchestration Layer INTATTO
+  (ADR-003 rispettato dal wrap — verificato git status pulito su `SKILL & Agenti/Copy-Workflow-manuale/`).**
+  **AVANZAMENTO 04-MARKETING: 5 reparti su 6 completi** (L2-2, L2-3, L2-4, L2-5, L2-6 ✅; L2-1 parziale).
+  🔴 **RIPRESA (dopo 14:50): completare L2-1** — aggiungere il 6° workflow + i 6 file di supporto (template
+  identico agli altri reparti, vedi L2-4 come modello) → gate + 5-bis + CP-006(L2-4)+CP-007(L2-1) = 04-MARKETING COMPLETO.
+  Si può fare INLINE (7 file, no swarm). **MAX: non prendere 04-MARKETING.** AGENCY a sessione dedicata.
 - 🔴 **MAX STEP 5 ATTIVO (2026-06-18):** costruisco il CONTENUTO V2 di **02-INFO-BUSINESS** dal
   dossier `PIANO-MAESTRO/02-ECOSISTEMA-INFOBUSINESS-V2.md`, 5 aree L2 (PROD/LANC/VEND/COMM/STRA),
   swarm 5 agenti in `company/Ecosistemi/02-INFO-BUSINESS/Reparti/IB-L2-*/`. GAEL: tieni 04-MARKETING, NON toccare 02-INFO-BUSINESS.
