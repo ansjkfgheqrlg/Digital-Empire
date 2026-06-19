@@ -1,0 +1,21 @@
+﻿# Workfolw crea caroselli à MOC
+
+- [[(Workfolw crea caroselli à) 2026-05-06-paino-da-fare]]
+- [[(.vscode) 2026-05-06-settings]]
+- [[(carousel-factory) 2026-05-06-claude]]
+- [[(carousel-factory) 2026-05-06-package-lock]]
+- [[(carousel-factory) 2026-05-06-package]]
+- [[(brand-agency) 2026-05-06-config]]
+- [[(brand-education) 2026-05-06-config]]
+- [[(brand-personal) 2026-05-06-config]]
+- [[(mentalita-brutale) 2026-05-06-config]]
+- [[(context) 2026-05-06-copywriting-rules]]
+- [[(context) 2026-05-06-cta-formulas]]
+- [[(context) 2026-05-06-hook-formulas]]
+- [[(context) 2026-05-06-prompt-system]]
+- [[(context) 2026-05-06-slide-types]]
+- [[(context) 2026-05-06-system]]
+- [[(examples) 2026-05-06-example-carousel-1]]
+- [[(examples) 2026-05-06-example-carousel-2]]
+- [[(2026-03-22-il-90-dei-freelance-fallisce-per-questo-motivo) 2026-05-06-caption]]
+

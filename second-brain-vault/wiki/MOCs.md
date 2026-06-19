@@ -1,0 +1,11 @@
+﻿[[Inbox]]
+[[Projects]]
+[[Areas]]
+[[Resources]]
+[[Notes]]
+[[Daily Notes]]
+[[People]]
+[[Meetings]]
+[[Templates]]
+[[Archives]]
+
