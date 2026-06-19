@@ -82,9 +82,13 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   riscriverlo (ADR-003 — motore verificato git-pulito). L2-2/L2-3/L2-4/L2-5/L2-6 idem. CP batch 002→007.
   v1 schede e motore attivo intatti. **PROSSIMO ecosistema Gael:** da concordare — NON 02-INFO (Max lo sta facendo).
   Candidati liberi: 01-AGENCY (sessione dedicata, outreach attivo), 03-CONTENT-FACTORY (mega), 05-MULTI-BUSINESS.
-- 🔴 **MAX STEP 5 ATTIVO (2026-06-18):** costruisco il CONTENUTO V2 di **02-INFO-BUSINESS** dal
-  dossier `PIANO-MAESTRO/02-ECOSISTEMA-INFOBUSINESS-V2.md`, 5 aree L2 (PROD/LANC/VEND/COMM/STRA),
-  swarm 5 agenti in `company/Ecosistemi/02-INFO-BUSINESS/Reparti/IB-L2-*/`. GAEL: tieni 04-MARKETING, NON toccare 02-INFO-BUSINESS.
+- 🟡 **MAX STEP 5 — 02-INFO-BUSINESS PARZIALE (2026-06-18):** swarm 5 agenti morto sul **LIMITE
+  SETTIMANALE** (reset 22/06 4am Europe/Rome). MA hanno prodotto prima di morire — 5 reparti su disco:
+  IB-L2-PROD (12 file) · IB-L2-LANC (13) · IB-L2-VEND (13) · IB-L2-COMM (12) · IB-L2-STRA (10) = ~60 file.
+  Probabile mancano 2-4 file-cartella/reparto (kpi/scripts/skills/state — come fu per il CFO) + gate non fatto.
+  **DIVISIONE CONCORDATA (Max 2026-06-19): dopo reset 22/06 → MAX riprende e CHIUDE 02-INFO-BUSINESS
+  (scan magri/mancanti per reparto → completa → gate → 5-bis → CP), GAEL continua 03-CONTENT-FACTORY (R4→R8).**
+  GAEL: NON toccare 02-INFO-BUSINESS.
 - 🟢 **STEP 4-heavy CHIUSO (2026-06-18):** Board C-Suite V2 = **7/7 figure complete** in
   `company/Board-CSuite/<FIGURA>/`. CEO+Chief-Forge (CP-20260617-001) · CTO+COO (CP-002) ·
   CMO+CRO (CP-003) · **CFO completato da Max (CP-20260618-001)** — ~70 agenti reali, 5-bis MAXIMILIAN APPROVA.
