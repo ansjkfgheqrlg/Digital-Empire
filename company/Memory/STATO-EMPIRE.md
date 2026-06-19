@@ -71,9 +71,11 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   sotto `company/Ecosistemi/03-CONTENT-FACTORY/Reparti/<CF-RN-Nome>/` (Title-Case fisso).
   ✅ **batch 1 COMPLETO (CP-008/009):** CF-R0 Director (15 file, 7 agenti, contratto ordine multi-tenant) +
   CF-R1 Strategia & Brief (17 file, 8 agenti, WF-BRIEF/CALENDAR/TREND). Gate verde + 5-bis APPROVA, asset v1 intatti.
-  🔴 **batch 2 in apertura: CF-R2 Brand-Kit Registry + CF-R3 Produzione Video** (R3 wrappa hf/heygen-studio ATTIVI).
-  Restano poi: R4 Testuale, R5 Visual/Caroselli (wrappa carousel-factory), R6 QA&Gate, R7 Pubblicazione (wrappa
-  orchestratori), R8 Apprendimento. Diversi reparti wrappano asset ATTIVI → ADR-003. **MAX: non prendere 03-CONTENT-FACTORY.**
+  ✅ **batch 2 COMPLETO (CP-010/011):** CF-R2 Brand-Kit Registry (14 file, 6 agenti, multi-tenant) +
+  CF-R3 Produzione Video (20 file, 10 agenti, 4 WF, wrap hf/heygen-studio ATTIVI, dry-run Art.4.3). Gate verde + 5-bis APPROVA.
+  **AVANZAMENTO 03-CF: 4 reparti su 9** (CF-R0, R1, R2, R3 ✅).
+  🔴 **batch 3 in apertura: CF-R4 Testuale + CF-R5 Visual/Caroselli** (R5 wrappa carousel-factory ATTIVO).
+  Restano poi: R6 QA&Gate, R7 Pubblicazione (wrappa orchestratori), R8 Apprendimento. **MAX: non prendere 03-CONTENT-FACTORY.**
 - 🟢 **GAEL STEP 5 — 04-MARKETING COMPLETO (2026-06-18, CP-20260618-007):** PRIMO ecosistema V2
   interamente costruito. **6/6 reparti, 114 file, 44 agenti CF-grade, 22 workflow.** Tutti gate verde + 5-bis APPROVA.
   L2-1 Copywriting (24 file, 10 agenti, 6 WF) wrappa il Copy Workflow Orchestration Layer ATTIVO senza
