@@ -66,6 +66,11 @@ Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
+- 🔴 **GAEL STEP 5 ATTIVO ORA (2026-06-18):** dopo 04-MARKETING, costruisco **03-CONTENT-FACTORY**
+  (mega-reparto, CF-Director + R1-R8 in 3 aree) dal dossier `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md`,
+  sotto `company/Ecosistemi/03-CONTENT-FACTORY/Reparti/<CF-RN-Nome>/` (Title-Case fisso). 🔴 **batch 1 in corso:
+  CF-R0 Director + CF-R1 Strategia & Brief.** Diversi reparti wrappano asset ATTIVI (carousel-factory, hf/heygen-studio,
+  orchestratori publish) → ADR-003 wrap. **MAX: tu hai 02-INFO-BUSINESS — non prendere 03-CONTENT-FACTORY.**
 - 🟢 **GAEL STEP 5 — 04-MARKETING COMPLETO (2026-06-18, CP-20260618-007):** PRIMO ecosistema V2
   interamente costruito. **6/6 reparti, 114 file, 44 agenti CF-grade, 22 workflow.** Tutti gate verde + 5-bis APPROVA.
   L2-1 Copywriting (24 file, 10 agenti, 6 WF) wrappa il Copy Workflow Orchestration Layer ATTIVO senza
