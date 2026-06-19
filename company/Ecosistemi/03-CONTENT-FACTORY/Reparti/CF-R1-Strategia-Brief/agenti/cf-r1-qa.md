@@ -61,8 +61,8 @@ Il gate verifica la presenza E la validità minima di ogni campo:
 | `word_count` o `durata_stimata` | Almeno uno presente; deve essere numerico o range ("800-1200 parole", "45-60s") |
 | `icp_ref` | Riferimento al file icp.json dell'ordine (percorso o slug) |
 
-Un campo `null` conta come assente. Un campo con valore "da compilare", "segnaposto"
-o stringa vuota conta come FAIL su quel campo specifico.
+Un campo `null` conta come assente. Un campo con valore segnaposto non risolto
+(testo del template lasciato non sostituito) o stringa vuota conta come FAIL su quel campo specifico.
 
 ---
 

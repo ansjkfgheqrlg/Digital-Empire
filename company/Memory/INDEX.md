@@ -23,6 +23,8 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260619-009](checkpoints/CP-20260619-009.md) — STEP 5: 03-CONTENT-FACTORY CF-R1 Strategia & Brief costruita CF-grade (17 file, 8 agenti, 3 WF, 0 stub) — Gael
+- [CP-20260619-008](checkpoints/CP-20260619-008.md) — STEP 5: 03-CONTENT-FACTORY CF-R0 Director costruita CF-grade (15 file, 7 agenti, 2 WF, contratto ordine multi-tenant) — Gael
 - [CP-20260618-007](checkpoints/CP-20260618-007.md) — **04-MARKETING COMPLETO** (6/6 reparti, 114 file, 44 agenti): L2.1 Copywriting wrap motore attivo + chiusura ecosistema, 5-bis APPROVA — Gael
 - [CP-20260618-006](checkpoints/CP-20260618-006.md) — STEP 5 batch 3: L2.4 Analytics costruita CF-grade (18 file, 7 agenti, 3 WF, loop §4b) — Gael
 - [CP-20260618-005](checkpoints/CP-20260618-005.md) — STEP 5 batch 2: L2.3 Email & Lifecycle costruita CF-grade (19 file, 7 agenti, 4 WF, 0 stub, PII Art.7.2) — Gael
