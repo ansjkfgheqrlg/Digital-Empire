@@ -82,13 +82,12 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   riscriverlo (ADR-003 — motore verificato git-pulito). L2-2/L2-3/L2-4/L2-5/L2-6 idem. CP batch 002→007.
   v1 schede e motore attivo intatti. **PROSSIMO ecosistema Gael:** da concordare — NON 02-INFO (Max lo sta facendo).
   Candidati liberi: 01-AGENCY (sessione dedicata, outreach attivo), 03-CONTENT-FACTORY (mega), 05-MULTI-BUSINESS.
-- 🟡 **MAX STEP 5 — 02-INFO-BUSINESS PARZIALE (2026-06-18):** swarm 5 agenti morto sul **LIMITE
-  SETTIMANALE** (reset 22/06 4am Europe/Rome). MA hanno prodotto prima di morire — 5 reparti su disco:
-  IB-L2-PROD (12 file) · IB-L2-LANC (13) · IB-L2-VEND (13) · IB-L2-COMM (12) · IB-L2-STRA (10) = ~60 file.
-  Probabile mancano 2-4 file-cartella/reparto (kpi/scripts/skills/state — come fu per il CFO) + gate non fatto.
-  **DIVISIONE CONCORDATA (Max 2026-06-19): dopo reset 22/06 → MAX riprende e CHIUDE 02-INFO-BUSINESS
-  (scan magri/mancanti per reparto → completa → gate → 5-bis → CP), GAEL continua 03-CONTENT-FACTORY (R4→R8).**
-  GAEL: NON toccare 02-INFO-BUSINESS.
+- 🟢 **02-INFO-BUSINESS CHIUSO (Max, 2026-06-22 — CP-20260622-001):** 5/5 reparti V2 completi.
+  Swarm 5 agenti Opus ha aggiunto le 6 cartelle standard mancanti (kpi/principi/regole/scripts/skills/state)
+  + 4 workflow (PROD 3, STRA 1). **Reparti V2: 94 file, 42 agenti, 12 WF.** Gate struct VERDE
+  (10/10 template, 0 magri, 0 vuoti), 5-bis MAXIMILIAN APPROVA. Namespace `infobusiness/{prod,lanc,vend,comm,stra}`.
+  **MAX libero** per prossimo ecosistema (candidati: 05-MULTI-BUSINESS o split 06-CORE).
+  **GAEL: continua 03-CONTENT-FACTORY R4→R8 (02 è chiuso, non serve più toccarlo).**
 - 🟢 **STEP 4-heavy CHIUSO (2026-06-18):** Board C-Suite V2 = **7/7 figure complete** in
   `company/Board-CSuite/<FIGURA>/`. CEO+Chief-Forge (CP-20260617-001) · CTO+COO (CP-002) ·
   CMO+CRO (CP-003) · **CFO completato da Max (CP-20260618-001)** — ~70 agenti reali, 5-bis MAXIMILIAN APPROVA.
