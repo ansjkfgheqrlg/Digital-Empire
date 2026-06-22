@@ -86,8 +86,13 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   Swarm 5 agenti Opus ha aggiunto le 6 cartelle standard mancanti (kpi/principi/regole/scripts/skills/state)
   + 4 workflow (PROD 3, STRA 1). **Reparti V2: 94 file, 42 agenti, 12 WF.** Gate struct VERDE
   (10/10 template, 0 magri, 0 vuoti), 5-bis MAXIMILIAN APPROVA. Namespace `infobusiness/{prod,lanc,vend,comm,stra}`.
-  **MAX libero** per prossimo ecosistema (candidati: 05-MULTI-BUSINESS o split 06-CORE).
   **GAEL: continua 03-CONTENT-FACTORY R4→R8 (02 è chiuso, non serve più toccarlo).**
+- 🔴 **MAX ATTIVO — 01-AGENCY build CF-grade a BATCH (2026-06-22):** dossier `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md`
+  (10 reparti A1-A10, ~75 agenti). Reparti su disco erano vuoti.
+  **Batch 1 ✅ CHIUSO (CP-20260622-002): A1-Ricerca + A2-Acquisizione + A3-Preventivi** (58 file, 27 ag, 10 WF,
+  gate verde, 5-bis APPROVA). A2 wrappa il runtime outreach LIVE (ADR-003, intoccabile).
+  **Batch 2 prossimo: A4-Delivery + A5-Copywriting-Interno + A6-Marketing-Interno. Batch 3: A7-A10 (nuovi).**
+  ⚠️ Scrivo SOLO docs sotto `company/Ecosistemi/01-AGENCY/` — runtime NON si tocca. **GAEL: NON toccare 01-AGENCY.**
 - 🟢 **STEP 4-heavy CHIUSO (2026-06-18):** Board C-Suite V2 = **7/7 figure complete** in
   `company/Board-CSuite/<FIGURA>/`. CEO+Chief-Forge (CP-20260617-001) · CTO+COO (CP-002) ·
   CMO+CRO (CP-003) · **CFO completato da Max (CP-20260618-001)** — ~70 agenti reali, 5-bis MAXIMILIAN APPROVA.

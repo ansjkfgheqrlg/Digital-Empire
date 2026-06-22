@@ -23,6 +23,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260622-002](checkpoints/CP-20260622-002.md) — STEP 5: **01-AGENCY batch-1** (A1+A2+A3 CF-grade: 58 file, 27 agenti, 10 WF; A2 wrappa runtime outreach LIVE ADR-003; gate verde, 5-bis APPROVA) — Max
 - [CP-20260622-001](checkpoints/CP-20260622-001.md) — **02-INFO-BUSINESS CHIUSO** (5/5 reparti V2: 94 file, 42 agenti, 12 WF; +34 file = 6 cartelle std/reparto + 4 WF; gate verde, 5-bis APPROVA) — Max
 - [CP-20260619-011](checkpoints/CP-20260619-011.md) — STEP 5: 03-CONTENT-FACTORY CF-R3 Produzione Video costruita CF-grade (20 file, 10 agenti, 4 WF, wrap hf/heygen-studio, dry-run Art.4.3) — Gael
 - [CP-20260619-010](checkpoints/CP-20260619-010.md) — STEP 5: 03-CONTENT-FACTORY CF-R2 Brand-Kit Registry costruita CF-grade (14 file, 6 agenti, 2 WF, multi-tenant) — Gael
