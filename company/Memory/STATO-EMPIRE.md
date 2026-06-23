@@ -77,9 +77,11 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   ✅ **batch 3 COMPLETO (CP-012/013):** CF-R4 Produzione Testuale (18 file, 8 agenti, 4 WF, confine CF/MARKETING) +
   CF-R5 Visual & Design/Caroselli (20 file, 10 agenti, 4 WF, wrap carousel-factory ATTIVO). Gate verde + 5-bis APPROVA.
   Completati dopo il reset col rilancio di 2 agenti idempotenti (aggiunto solo il mancante).
-  **AVANZAMENTO 03-CF: 6 reparti su 9** (CF-R0,R1,R2,R3,R4,R5 ✅).
-  🔴 **batch 4 in apertura: CF-R6 QA&Gate + CF-R7 Pubblicazione** (R7 wrappa orchestratori publish ATTIVI).
-  Resta poi batch 5: CF-R8 Apprendimento + chiusura ecosistema. **MAX: non prendere 03-CONTENT-FACTORY.**
+  ✅ **batch 4 COMPLETO (CP-014/015):** CF-R6 QA&Gate (17 file, 8 agenti, 3 WF, INDIPENDENTE dalla produzione) +
+  CF-R7 Pubblicazione (18 file, 8 agenti, 4 WF, wrap orchestratori publish ATTIVI, review umana obbligatoria). Gate verde + 5-bis APPROVA.
+  **AVANZAMENTO 03-CF: 8 reparti su 9** (CF-R0→R7 ✅).
+  🔴 **batch 5 (ULTIMO) in apertura: CF-R8 Apprendimento & Ottimizzazione** → poi 03-CONTENT-FACTORY COMPLETO (9/9).
+  **MAX: non prendere 03-CONTENT-FACTORY.**
 - 🟢 **GAEL STEP 5 — 04-MARKETING COMPLETO (2026-06-18, CP-20260618-007):** PRIMO ecosistema V2
   interamente costruito. **6/6 reparti, 114 file, 44 agenti CF-grade, 22 workflow.** Tutti gate verde + 5-bis APPROVA.
   L2-1 Copywriting (24 file, 10 agenti, 6 WF) wrappa il Copy Workflow Orchestration Layer ATTIVO senza
