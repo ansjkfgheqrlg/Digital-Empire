@@ -74,8 +74,14 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   ✅ **batch 2 COMPLETO (CP-010/011):** CF-R2 Brand-Kit Registry (14 file, 6 agenti, multi-tenant) +
   CF-R3 Produzione Video (20 file, 10 agenti, 4 WF, wrap hf/heygen-studio ATTIVI, dry-run Art.4.3). Gate verde + 5-bis APPROVA.
   **AVANZAMENTO 03-CF: 4 reparti su 9** (CF-R0, R1, R2, R3 ✅).
-  🔴 **batch 3 in apertura: CF-R4 Testuale + CF-R5 Visual/Caroselli** (R5 wrappa carousel-factory ATTIVO).
-  Restano poi: R6 QA&Gate, R7 Pubblicazione (wrappa orchestratori), R8 Apprendimento. **MAX: non prendere 03-CONTENT-FACTORY.**
+  🟡 **batch 3 PARZIALE (STOP session-limit 2026-06-22, reset 20:30 Roma):** CF-R4 Testuale e
+  CF-R5 Visual/Caroselli hanno ciascuno README + ARCHITETTURA + 7 schede agente, ma **MANCANO:
+  i workflow (CF-R4: 4 WF-ARTICOLO/NEWSLETTER/SCRIPT/REPURPOSING; CF-R5: 4 WF-CAROSELLO/THUMBNAIL/
+  GRAFICA-STATICA/BRANDKIT-VISUAL), le cartelle principi/scripts/kpi/state, gli agenti residui
+  (CF-R4 manca 1: cf-r4-headline o simile; CF-R5 mancano 3 dei 10), e i CP-012/013.** Partiale committato.
+  Carousel-factory e asset attivi INTATTI. RIPRESA (dopo 20:30): completare CF-R4 e CF-R5 — workflow +
+  supporto + agenti residui (modello: CF-R3 già fatto) → gate + 5-bis + CP-012/013. Poi batch 4 (R6+R7), batch 5 (R8).
+  **AVANZAMENTO 03-CF: 4 reparti completi su 9 + 2 parziali.** **MAX: non prendere 03-CONTENT-FACTORY.**
 - 🟢 **GAEL STEP 5 — 04-MARKETING COMPLETO (2026-06-18, CP-20260618-007):** PRIMO ecosistema V2
   interamente costruito. **6/6 reparti, 114 file, 44 agenti CF-grade, 22 workflow.** Tutti gate verde + 5-bis APPROVA.
   L2-1 Copywriting (24 file, 10 agenti, 6 WF) wrappa il Copy Workflow Orchestration Layer ATTIVO senza
