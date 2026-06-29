@@ -98,10 +98,12 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   **GAEL: continua 03-CONTENT-FACTORY R4→R8 (02 è chiuso, non serve più toccarlo).**
 - 🔴 **MAX ATTIVO — 01-AGENCY build CF-grade a BATCH (2026-06-22):** dossier `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md`
   (10 reparti A1-A10, ~75 agenti). Reparti su disco erano vuoti.
-  **Batch 1 ✅ CHIUSO (CP-20260622-002): A1-Ricerca + A2-Acquisizione + A3-Preventivi** (58 file, 27 ag, 10 WF,
-  gate verde, 5-bis APPROVA). A2 wrappa il runtime outreach LIVE (ADR-003, intoccabile).
-  **Batch 2 prossimo: A4-Delivery + A5-Copywriting-Interno + A6-Marketing-Interno. Batch 3: A7-A10 (nuovi).**
+  **Batch 1 ✅ CHIUSO (CP-20260622-002): A1+A2+A3** (58 file, 27 ag, 10 WF). A2 wrappa runtime outreach LIVE (ADR-003).
+  **Batch 2 ✅ CHIUSO (CP-20260623-001): A4-Delivery + A5-Copywriting + A6-Marketing** (51 file, 21 ag, 9 WF,
+  gate verde, 5-bis APPROVA). A5 riusa Gate Bibbia di A2 (pattern 6). **AVANZAMENTO 01-AGENCY: 6/10.**
+  **Batch 3 IN CORSO: A7-Account-Mgmt + A8-Closing + A9-Partnership + A10-QA-Cliente (nuovi, cartelle da creare) → chiude 10/10.**
   ⚠️ Scrivo SOLO docs sotto `company/Ecosistemi/01-AGENCY/` — runtime NON si tocca. **GAEL: NON toccare 01-AGENCY.**
+  📌 LEZIONE: un solo swarm Opus per volta (account condiviso) — batch-2 era morto col session-limit mentre Gael swarmava 03.
 - 🟢 **STEP 4-heavy CHIUSO (2026-06-18):** Board C-Suite V2 = **7/7 figure complete** in
   `company/Board-CSuite/<FIGURA>/`. CEO+Chief-Forge (CP-20260617-001) · CTO+COO (CP-002) ·
   CMO+CRO (CP-003) · **CFO completato da Max (CP-20260618-001)** — ~70 agenti reali, 5-bis MAXIMILIAN APPROVA.
