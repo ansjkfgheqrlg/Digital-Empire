@@ -11,3 +11,4 @@
 | B-003 | Team agenti PREZZI | skill `pricing` (installata) come motore + beast-preventivi; team L4 in 04-MARKETING/Analytics o 02-INFO-BUSINESS/Vendite; propone prezzi data-driven, Max approva | fase F5/F6 | ⬜ |
 | B-004 | Gael: completare `git config user.email` reale | cosmetico (firma commit) | mai bloccante | ⬜ |
 | B-005 | Estendere skill `empire-context` con references/ (Mandato esteso, brand guide, listino) | previsto da dossier 07 §3.2.1 | fase F2-bis/B3 backbone | ⬜ |
+| B-006 | Pulire 5 stub v1 in `03-CONTENT-FACTORY/Reparti/` (Strategia, Produzione-Video, Produzione-Testuale, Visual-Design, Pubblicazione — README singoli del F1-bis 2026-06-11) | superati dalle cartelle v2 `CF-RN-*` complete; sono solo README orfani che sporcano il gate. Da archiviare/rimuovere con ok (non creati in questa sessione) | pulizia, non urgente | ⬜ |

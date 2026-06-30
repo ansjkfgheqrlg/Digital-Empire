@@ -26,6 +26,7 @@
 - [CP-20260623-001](checkpoints/CP-20260623-001.md) — STEP 5: **01-AGENCY batch-2** (A4-Delivery+A5-Copy+A6-Marketing CF-grade: 51 file, 21 agenti, 9 WF; A5 riusa Gate Bibbia A2 pattern-6; gate verde, 5-bis APPROVA → 01-AGENCY 6/10) — Max
 - [CP-20260622-002](checkpoints/CP-20260622-002.md) — STEP 5: **01-AGENCY batch-1** (A1+A2+A3 CF-grade: 58 file, 27 agenti, 10 WF; A2 wrappa runtime outreach LIVE ADR-003; gate verde, 5-bis APPROVA) — Max
 - [CP-20260622-001](checkpoints/CP-20260622-001.md) — **02-INFO-BUSINESS CHIUSO** (5/5 reparti V2: 94 file, 42 agenti, 12 WF; +34 file = 6 cartelle std/reparto + 4 WF; gate verde, 5-bis APPROVA) — Max
+- [CP-20260619-016](checkpoints/CP-20260619-016.md) — **03-CONTENT-FACTORY COMPLETO** (9/9 reparti, 158 file, 71 agenti, 28 WF): CF-R8 Apprendimento (ULTIMO) + chiusura ecosistema, 5-bis APPROVA — Gael
 - [CP-20260619-015](checkpoints/CP-20260619-015.md) — STEP 5: 03-CONTENT-FACTORY CF-R7 Pubblicazione & Distribuzione costruita CF-grade (18 file, 8 agenti, 4 WF, wrap orchestratori publish, review umana) — Gael
 - [CP-20260619-014](checkpoints/CP-20260619-014.md) — STEP 5: 03-CONTENT-FACTORY CF-R6 QA & Gate costruita CF-grade (17 file, 8 agenti, 3 WF, indipendente dalla produzione) — Gael
 - [CP-20260619-013](checkpoints/CP-20260619-013.md) — STEP 5: 03-CONTENT-FACTORY CF-R5 Visual & Design / Caroselli costruita CF-grade (20 file, 10 agenti, 4 WF, wrap carousel-factory) — Gael

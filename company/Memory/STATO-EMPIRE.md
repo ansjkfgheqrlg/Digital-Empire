@@ -79,12 +79,11 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   Completati dopo il reset col rilancio di 2 agenti idempotenti (aggiunto solo il mancante).
   ✅ **batch 4 COMPLETO (CP-014/015):** CF-R6 QA&Gate (17 file, 8 agenti, 3 WF, INDIPENDENTE dalla produzione) +
   CF-R7 Pubblicazione (18 file, 8 agenti, 4 WF, wrap orchestratori publish ATTIVI, review umana obbligatoria). Gate verde + 5-bis APPROVA.
-  **AVANZAMENTO 03-CF: 8 reparti su 9 COMPLETI** (CF-R0→R7 ✅).
-  🟡 **CF-R8 Apprendimento APPENA AVVIATO (STOP richiesto da Gael 2026-06-22):** a terra solo `README.md`.
-  **RIPRESA: completare CF-R8** (manca tutto tranne README) — 6 agenti (cf-r8-coord/qa/hook/engine/reasoning/neural),
-  2 workflow (WF-PATTERN-DISTILLATION + WF-IMPROVEMENT-CYCLE), principi/scripts/kpi/state + CP-20260619-016.
-  Modello: CF-R6 già fatto. Lavoro piccolo, 1 agente idempotente o inline. → poi 03-CONTENT-FACTORY COMPLETO (9/9, ~71 agenti).
-  **MAX: non prendere 03-CONTENT-FACTORY.**
+  ✅ **CF-R8 Apprendimento COMPLETO (CP-20260619-016):** 14 file, 6 agenti, 2 WF (PATTERN-DISTILLATION + IMPROVEMENT-CYCLE), 0 stub.
+  🟢🟢 **03-CONTENT-FACTORY COMPLETO — 9/9 reparti (CP-016):** 158 file, **71 agenti CF-grade, 28 workflow.**
+  Gate verde + 5-bis APPROVA su tutti i 9 reparti. Asset attivi intatti (carousel-factory, hf/heygen-studio, orchestratori publish).
+  SECONDO ecosistema V2 completo di Gael (dopo 04-MARKETING). Nota: 5 stub v1 orfani nei Reparti/ → BACKLOG B-006 (pulizia).
+  **PROSSIMO ecosistema Gael:** da concordare — liberi 05-MULTI-BUSINESS (dossier da scrivere) o split 06. NON 01/02 (Max).
 - 🟢 **GAEL STEP 5 — 04-MARKETING COMPLETO (2026-06-18, CP-20260618-007):** PRIMO ecosistema V2
   interamente costruito. **6/6 reparti, 114 file, 44 agenti CF-grade, 22 workflow.** Tutti gate verde + 5-bis APPROVA.
   L2-1 Copywriting (24 file, 10 agenti, 6 WF) wrappa il Copy Workflow Orchestration Layer ATTIVO senza

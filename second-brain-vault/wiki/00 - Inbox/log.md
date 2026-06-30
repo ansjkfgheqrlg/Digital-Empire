@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-06-23] — 🏭 STEP 5: 03-CONTENT-FACTORY COMPLETO — 9/9 reparti (Gael, CP-20260619-016)
+
+- COSTRUITO: il secondo ecosistema V2 intero di Gael. `company/Ecosistemi/03-CONTENT-FACTORY/Reparti/` — mega-reparto con CF-Director (L0) + 8 reparti R1-R8 in 3 aree (Pre-Produzione, Produzione, Post-Produzione). **158 file, 71 agenti CF-grade, 28 workflow.**
+- METODO: 5 batch swarm (2 reparti/batch + 1 finale), ognuno gate struttura + 5-bis Maximilian APPROVA. Superati 2 stop session-limit completando inline/con agenti idempotenti. Asset ATTIVI wrappati senza riscrittura (ADR-003): carousel-factory, hf-studio, heygen-studio, orchestratori publish — tutti verificati git-puliti. Review umana obbligatoria pre-pubblicazione (CF-R7). QA indipendente dalla produzione (CF-R6).
+- STATO HOLDING: Board (70 ag) + 04-MARKETING (44 ag) + 03-CONTENT-FACTORY (71 ag) costruiti da Gael. In parallelo Max: 02-INFO-BUSINESS chiuso + 01-AGENCY 6/10. Coordinamento pulito, zero collisioni.
+- BACKLOG: B-006 — 5 stub v1 orfani nei Reparti/ (del F1-bis) da archiviare.
+- NEXT: prossimo ecosistema Gael da concordare (05-MULTI-BUSINESS o split 06).
+
 ## [2026-06-18] — STEP 5: L2.5 Brand & Creative Strategy COSTRUITO (Gael, CP-20260618-003)
 
 - COSTRUITO: `company/Ecosistemi/04-MARKETING/Reparti/L2-5-Brand-Creative-Strategy/` (17 file, 0 stub).
