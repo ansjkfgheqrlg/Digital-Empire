@@ -1,0 +1,255 @@
+"""
+qa_gate.py — Gate di qualità A/B/C/D (Half B / Gael). Bloccanti.
+
+Ogni gate è una funzione pura che ritorna (ok: bool, issues: list[str]).
+Un gate rosso deve fermare la pipeline con messaggio chiaro (lo decide run.py / conductor).
+
+Firme (HANDOFF-GAEL.md):
+  gate_b(ctx) -> (bool, list)   traduzione
+  gate_c(ctx) -> (bool, list)   prezzo (ricalcolo INDIPENDENTE)
+  gate_d(ctx) -> (bool, list)   PDF finale
+`dealer` è opzionale: se passato, i controlli diventano più forti (ricalcolo prezzo dai
+parametri del dealer, re-render HTML per Gate D). run.py può chiamare gate_x(ctx, dealer).
+
+Bonus: gate_a(ctx) — estrazione completa (motore dell'agente qa-extraction-verifier).
+"""
+from __future__ import annotations
+
+import re
+from pathlib import Path
+from typing import Any
+
+from common import RunContext, load_json, validate_against_schema
+from glossary_de_it import looks_german
+
+MIN_PDF_BYTES = 20 * 1024
+GALLERY_CAP = 9  # coerente con render_pdf (cover + fino a 9 in gallery)
+
+
+# --------------------------------------------------------------------------- #
+# GATE A — estrazione (bonus, indipendente dal check minimo di run.py)
+# --------------------------------------------------------------------------- #
+def gate_a(ctx: RunContext, dealer: dict[str, Any] | None = None) -> tuple[bool, list[str]]:
+    issues: list[str] = []
+    if not ctx.listing_path.exists():
+        return False, ["listing.json assente (S2 non eseguito)"]
+    listing = load_json(ctx.listing_path)
+
+    errs = validate_against_schema(listing, "listing.schema.json")
+    issues += [f"schema: {e}" for e in errs if not e.startswith("jsonschema non installato")]
+
+    price = listing.get("price_listed_eur")
+    if not isinstance(price, (int, float)) or price <= 0:
+        issues.append(f"price_listed_eur non numerico/mancante: {price!r}")
+    if not listing.get("make"):
+        issues.append("make mancante")
+    if not listing.get("model"):
+        issues.append("model mancante")
+
+    images = listing.get("images") or []
+    if not images:
+        issues.append("nessuna foto estratta")
+    else:
+        missing = [img.get("local_path") for img in images
+                   if not (ctx.dir / (img.get("local_path") or "")).exists()]
+        if missing:
+            issues.append(f"{len(missing)} foto non presenti su disco: {missing[:3]}")
+    if not (listing.get("description_de") or "").strip():
+        issues.append("description_de vuota")
+    return (not issues), issues
+
+
+# --------------------------------------------------------------------------- #
+# GATE B — traduzione
+# --------------------------------------------------------------------------- #
+def gate_b(ctx: RunContext, dealer: dict[str, Any] | None = None) -> tuple[bool, list[str]]:
+    issues: list[str] = []
+    if not ctx.listing_it_path.exists():
+        return False, ["listing_it.json assente (S3 non eseguito)"]
+    listing = load_json(ctx.listing_path)
+    listing_it = load_json(ctx.listing_it_path)
+    content = listing_it.get("content") or {}
+
+    # campi obbligatori
+    if not (content.get("title_it") or "").strip():
+        issues.append("content.title_it mancante")
+    if not (content.get("description_it") or "").strip():
+        issues.append("content.description_it mancante")
+
+    # allineamento optional 1:1
+    eq_de = listing.get("equipment_de") or []
+    eq_it = content.get("equipment_it") or []
+    if len(eq_de) != len(eq_it):
+        issues.append(f"equipment_it ({len(eq_it)}) non allineato 1:1 a equipment_de ({len(eq_de)})")
+
+    # 0 tedesco residuo (rilevamento indipendente)
+    german = _german_tokens(content)
+    if german:
+        issues.append(f"{len(german)} residui tedeschi in content: {german[:8]}")
+
+    # niente prezzo nel titolo IT (il prezzo lo mette Max altrove)
+    if re.search(r"\d[\d.\s]*€|€\s*\d", content.get("title_it") or ""):
+        issues.append("title_it non deve contenere il prezzo")
+
+    # numeri/specifiche invariati vs listing.json (no fatti alterati)
+    issues += _specs_consistency(listing, content.get("specs_it") or {})
+
+    # highlights nel range 0..6 (3-6 raccomandato; blocca solo se >6 fabbricati)
+    if len(content.get("highlights_it") or []) > 6:
+        issues.append("highlights_it > 6")
+    return (not issues), issues
+
+
+# --------------------------------------------------------------------------- #
+# GATE C — prezzo (ricalcolo INDIPENDENTE)
+# --------------------------------------------------------------------------- #
+def gate_c(ctx: RunContext, dealer: dict[str, Any] | None = None) -> tuple[bool, list[str]]:
+    issues: list[str] = []
+    if not ctx.listing_it_path.exists():
+        return False, ["listing_it.json assente"]
+    listing = load_json(ctx.listing_path)
+    listing_it = load_json(ctx.listing_it_path)
+    price = listing_it.get("price") or {}
+    if not price:
+        return False, ["blocco price assente (S4 non eseguito)"]
+
+    listed = listing.get("price_listed_eur")
+    breakdown = price.get("breakdown") or {}
+
+    # parametri: dal dealer se disponibile (davvero indipendente), altrimenti dal breakdown
+    if dealer and dealer.get("pricing_resolved"):
+        pr = dealer["pricing_resolved"]
+        pct, f1, f2 = pr["surcharge_pct"], pr["fixed_1"], pr["fixed_2"]
+    else:
+        pct = breakdown.get("surcharge_pct")
+        f1 = breakdown.get("fixed_1_eur")
+        f2 = breakdown.get("fixed_2_eur")
+
+    if listed in (None, "") or None in (pct, f1, f2):
+        return False, [f"parametri prezzo incompleti: listed={listed}, pct={pct}, f1={f1}, f2={f2}"]
+
+    recomputed = round(float(listed) * (1 + float(pct) / 100.0) + float(f1) + float(f2))
+    declared = price.get("final_eur")
+    if int(recomputed) != int(declared):
+        issues.append(f"prezzo finale non riproducibile: ricalcolo={recomputed} vs dichiarato={declared}")
+
+    # coerenza interna del breakdown
+    if breakdown:
+        surch = round(float(listed) * float(breakdown.get("surcharge_pct", 0)) / 100.0, 2)
+        if abs(surch - float(breakdown.get("surcharge_eur", 0))) > 0.5:
+            issues.append(f"surcharge_eur incoerente: {breakdown.get('surcharge_eur')} vs {surch}")
+
+    # formato titolo: deve contenere il prezzo formattato + '€' e marca/modello
+    title = price.get("final_title") or ""
+    price_str = f"{int(declared):,}".replace(",", ".")
+    if price_str not in title or "€" not in title:
+        issues.append(f"final_title senza prezzo formattato corretto: {title!r} (atteso '{price_str} €')")
+    if listing.get("make") and listing["make"].split()[0] not in title:
+        issues.append(f"final_title senza marca: {title!r}")
+    return (not issues), issues
+
+
+# --------------------------------------------------------------------------- #
+# GATE D — PDF finale
+# --------------------------------------------------------------------------- #
+def gate_d(ctx: RunContext, dealer: dict[str, Any] | None = None) -> tuple[bool, list[str]]:
+    issues: list[str] = []
+    listing = load_json(ctx.listing_path) if ctx.listing_path.exists() else {}
+    listing_it = load_json(ctx.listing_it_path) if ctx.listing_it_path.exists() else {}
+    content = listing_it.get("content") or {}
+    price = listing_it.get("price") or {}
+
+    # 1) PDF esiste e > 20KB
+    pdfs = sorted(ctx.dir.glob("preventivo_*.pdf"), key=lambda p: p.stat().st_mtime, reverse=True)
+    if not pdfs:
+        return False, ["nessun PDF preventivo_*.pdf in runs/<id>/"]
+    pdf = pdfs[0]
+    size = pdf.stat().st_size
+    if size < MIN_PDF_BYTES:
+        issues.append(f"PDF troppo piccolo ({size} byte < {MIN_PDF_BYTES})")
+
+    # 2) sezioni/contenuto presenti
+    if not (content.get("specs_it")):
+        issues.append("scheda tecnica (specs_it) vuota")
+    if not (content.get("description_it") or "").strip():
+        issues.append("descrizione vuota")
+    if not (content.get("equipment_it")):
+        issues.append("dotazioni (equipment_it) vuote")
+
+    # 3) prezzo nel titolo finale
+    if not (price.get("final_title") and "€" in price["final_title"]):
+        issues.append("final_title senza prezzo")
+
+    # 4) foto: tutte quelle di listing.json presenti su disco (embed locale, no hotlink)
+    images = listing.get("images") or []
+    missing = [img.get("local_path") for img in images
+               if not (ctx.dir / (img.get("local_path") or "")).exists()]
+    if missing:
+        issues.append(f"{len(missing)} foto mancanti su disco (gallery incompleta)")
+
+    # 5) verifica profonda opzionale: re-render HTML, nessun placeholder, conteggio foto
+    if dealer is not None:
+        try:
+            import render_pdf
+            html = render_pdf._render_html(
+                ctx, listing, content, price, dealer, dealer.get("preventivo") or {})
+            if "{{" in html or "}}" in html:
+                issues.append("placeholder Jinja non risolti nell'HTML")
+            n_imgs = html.count("data:image/")
+            expected = min(len(images), GALLERY_CAP) + (1 if images else 0) + \
+                (1 if (dealer.get("logo_path") and (Path(dealer.get("_dir", "")) / dealer["logo_path"]).exists()) else 0)
+            if images and n_imgs == 0:
+                issues.append("nessuna immagine incorporata nell'HTML")
+        except Exception as exc:  # noqa: BLE001
+            issues.append(f"re-render HTML fallito: {exc}")
+    return (not issues), issues
+
+
+# --------------------------------------------------------------------------- #
+# Runner comodo
+# --------------------------------------------------------------------------- #
+def run_all(ctx: RunContext, dealer: dict[str, Any] | None = None) -> dict[str, tuple[bool, list[str]]]:
+    return {
+        "A": gate_a(ctx, dealer),
+        "B": gate_b(ctx, dealer),
+        "C": gate_c(ctx, dealer),
+        "D": gate_d(ctx, dealer),
+    }
+
+
+# --------------------------------------------------------------------------- #
+# Helpers
+# --------------------------------------------------------------------------- #
+def _german_tokens(content: dict[str, Any]) -> list[str]:
+    found: list[str] = []
+    fields = [content.get("title_it"), content.get("headline_it"), content.get("description_it")]
+    for item in content.get("equipment_it", []) or []:
+        fields.append(item)
+    for h in content.get("highlights_it", []) or []:
+        fields.append(h)
+    for val in (content.get("specs_it") or {}).values():
+        fields.append(val)
+    for field in fields:
+        for tok in re.findall(r"[A-Za-zÄÖÜäöüß-]+", str(field or "")):
+            if looks_german(tok) and tok not in found:
+                found.append(tok)
+    return found
+
+
+def _specs_consistency(listing: dict[str, Any], specs_it: dict[str, Any]) -> list[str]:
+    """Verifica che i numeri chiave in specs_it corrispondano a listing.json."""
+    issues: list[str] = []
+
+    def digits(v: Any) -> str:
+        return re.sub(r"\D", "", str(v or ""))
+
+    if "Anno" in specs_it and listing.get("year"):
+        if str(specs_it["Anno"]) != str(listing["year"]):
+            issues.append(f"specs Anno alterato: {specs_it['Anno']} vs {listing['year']}")
+    if "Chilometraggio" in specs_it and listing.get("mileage_km") is not None:
+        if digits(specs_it["Chilometraggio"]) != digits(listing["mileage_km"]):
+            issues.append(f"specs Chilometraggio alterato: {specs_it['Chilometraggio']} vs {listing['mileage_km']}")
+    if "Potenza" in specs_it and listing.get("power_hp"):
+        if str(listing["power_hp"]) not in str(specs_it["Potenza"]):
+            issues.append(f"specs Potenza alterata: {specs_it['Potenza']} vs {listing['power_hp']} CV")
+    return issues

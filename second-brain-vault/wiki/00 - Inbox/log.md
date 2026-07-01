@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-07-01] — 🚗 CLIENTE Prof Autocad: PreventivoForge Half B COMPLETA (Gael, CP-20260701-001)
+
+- COSTRUITO: la metà "Contenuto · Output · Qualità" del primo prodotto cliente. `Clienti/Prof Autocad/preventivo-forge/` — S3 traduzione+copy (`translate_copy.py` + `glossary_de_it.py` ~150 termini), S5 render PDF (`render_pdf.py` + `templates/preventivo.html`, motore Playwright), QA `qa_gate.py` (Gate A/B/C/D bloccanti), 3 RULES (R3/R5/R6), 6 agenti CF-grade (42 file) + CATALOG.
+- VERIFICATO: test end-to-end reale `run.py --manual` (BMW 320d) → PDF 63 KB, **4 gate ALL GREEN** (0 tedesco residuo, prezzo 26.900→30.707 € ricalcolato indipendente), PDF ispezionato visivamente (9 sezioni, layout pulito). Struct gate 6×7 file PASS.
+- CONFINE (ADR-003): NON toccati run.py, schema/ (CONGELATO), scraper/parser/pricer di Max. Solo file nuovi. Traduzione deterministica → €0 API (gancio LLM OFF, Art.4.3 dry-run).
+- PENDING Max (non bloccante): wiring gate B/C/D in run.py (Half A). NEXT: primo run su URL mobile.de reale, poi ripresa scelta ecosistema Gael.
+- INGEST: 1 pagina wiki aggiornata (Project_Prof_Autocad_PreventivoForge → Half B done).
+
 ## [2026-06-23] — 🏭 STEP 5: 03-CONTENT-FACTORY COMPLETO — 9/9 reparti (Gael, CP-20260619-016)
 
 - COSTRUITO: il secondo ecosistema V2 intero di Gael. `company/Ecosistemi/03-CONTENT-FACTORY/Reparti/` — mega-reparto con CF-Director (L0) + 8 reparti R1-R8 in 3 aree (Pre-Produzione, Produzione, Post-Produzione). **158 file, 71 agenti CF-grade, 28 workflow.**

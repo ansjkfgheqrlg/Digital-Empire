@@ -1,13 +1,12 @@
 # STATO EMPIRE -- aggiornato 2026-06-30 (Max — CLIENTE Prof Autocad)
 
-## 🛑 GAEL — LEGGI PER PRIMO (2026-06-30, Max)
-**FERMATI: oggi NON costruire Digital Empire.** Pausa concordata sull'impero per un **lavoro cliente** (primo cliente ufficiale).
-**Tuo task ORA = Half B di PreventivoForge** (cliente Prof Autocad).
-→ Apri ed esegui: `Clienti/Prof Autocad/preventivo-forge/HANDOFF-GAEL.md`.
-In sintesi: costruisci **S3 traduzione+copy**, **S5 PDF preventivo**, i **4 agenti QA + qa_gate.py**,
-template `preventivo.html`, regole R3/R5/R6. **Half A (scraper/parser/pricer/regia) è GIÀ FATTA da Max e testata.**
-Contratto dati CONGELATO: `preventivo-forge/schema/listing.schema.json`. NON toccare Half A (solo wiring gate da concordare con Max).
-DoD: `python run.py "<url>"` produce il `preventivo_*.pdf` con gate verdi → CP + STATO + push.
+## ✅ GAEL — HALF B PreventivoForge FATTA (2026-07-01) — era il task del 2026-06-30 di Max
+**Task completato:** Half B di PreventivoForge (cliente Prof Autocad) COSTRUITA e verificata (CP-20260701-001).
+S3 traduzione+copy, S5 PDF preventivo, 4 agenti QA + `qa_gate.py`, template `preventivo.html`, R3/R5/R6, 6 agenti CF-grade.
+**DoD RAGGIUNTA:** `run.py --manual` (BMW 320d) → `preventivo_*.pdf` 63 KB, **4 gate ALL GREEN** → CP+STATO+push fatti.
+Half A (scraper/parser/pricer/regia) NON toccata (ADR-003). Schema CONGELATO rispettato.
+**PENDING MAX (non bloccante):** wiring gate B/C/D in `run.py` (Half A) + primo run su URL mobile.de REALE.
+**RIPRESA GAEL (dopo GO Max):** scelta prossimo ecosistema Empire (05-MULTI-BUSINESS / split 06).
 
 ## 🚨 PIVOT V2 (ADR-007 — leggere PRIMA di qualsiasi cosa)
 Max ha dettato la **Direttiva di Scala**: `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md`.
@@ -81,10 +80,13 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   Architettura: `Clienti/Prof Autocad/preventivo-forge/00-ARCHITETTURA-WORKFLOW.md`. Metodo: architect-agent (RBI) + content-forge + master-build-architecture.
   **✅ HALF A (Max) FATTA e testata:** scraper S1 (Playwright+fallback manuale), parser S2 (→`listing.json`, JSON-LD+DOM),
   pricer S4 (18.000→21.540 ✅), regia `run.py` (multi-tenant, gate A minimo, import difensivo Half B), schema CONGELATI, multi-tenant `dealers.py`, skill `/preventivo-auto`.
-  **⬜ HALF B (Gael) DA FARE:** S3 translate+copy, S5 PDF preventivo, 4 agenti QA + `qa_gate.py`, `templates/preventivo.html`, R3/R5/R6 → vedi `HANDOFF-GAEL.md`.
-  **✅ FONDAMENTA MAX FATTE (CP-20260630-003):** agenti CF-grade 7-file (conductor + op-scraper/op-parser/op-pricer) + CATALOG + R1/R2/R4 + orchestration (supervisor/routing/registry/policies) + CLAUDE.md cliente. **Half A COMPLETA.**
-  **RESTA A MAX (dopo Half B Gael):** wiring gate B/C/D in run.py, test e2e su annuncio reale via --manual, dati dealer in config.
-  Seam CONGELATO = `preventivo-forge/schema/listing.schema.json`. ⚠️ **GAEL: lavora SOLO su Half B; non toccare Half A.** Scope Max: SOLO sotto `Clienti/Prof Autocad/`.
+  **✅ FONDAMENTA MAX FATTE (CP-20260630-003):** agenti CF-grade 7-file Half A (conductor + op-scraper/op-parser/op-pricer) + CATALOG + R1/R2/R4 + orchestration (supervisor/routing/registry/policies) + CLAUDE.md cliente. **Half A COMPLETA.**
+  **✅ HALF B (Gael) COMPLETA e verificata (2026-07-01, CP-20260701-001):** S3 `translate_copy.py`+`glossary_de_it.py` (traduzione deterministica DE→IT ~150 termini),
+  S5 `render_pdf.py`+`templates/preventivo.html` (motore Playwright), QA `qa_gate.py` (Gate A/B/C/D bloccanti), RULES R3/R5/R6, 6 agenti CF-grade (42 file), CATALOG aggiornato (Half B ✅).
+  **Test end-to-end reale `run.py --manual` (BMW 320d) → PDF 63 KB, 4 gate ALL GREEN** (0 tedesco, prezzo 26.900→30.707 € ricalcolo indipendente), PDF ispezionato. €0 API (gancio LLM OFF, Art.4.3).
+  **🟢 PreventivoForge: Half A + Half B COMPLETE.** RESTA A MAX (non bloccante): (a) wiring gate B/C/D in `run.py` (3 chiamate dopo S3/S4/S5, passando `dealer` — vedi HANDOFF §Integrazione); (b) primo run su URL mobile.de REALE; (c) dati dealer reali in config.
+  Seam CONGELATO = `preventivo-forge/schema/listing.schema.json` (NON toccato). Scope Max/Gael: SOLO sotto `Clienti/Prof Autocad/`.
+  **RIPRESA GAEL dopo GO Max:** scelta prossimo ecosistema Empire (05-MULTI-BUSINESS / split 06).
 - 🔴 **GAEL STEP 5 ATTIVO ORA (2026-06-18):** dopo 04-MARKETING, costruisco **03-CONTENT-FACTORY**
   (mega-reparto, CF-Director + R1-R8 in 3 aree) dal dossier `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md`,
   sotto `company/Ecosistemi/03-CONTENT-FACTORY/Reparti/<CF-RN-Nome>/` (Title-Case fisso).

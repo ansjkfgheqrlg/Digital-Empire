@@ -1,0 +1,287 @@
+"""
+glossary_de_it.py — Glossario automotive DE→IT (Half B / Gael, S3).
+
+Fonte di verità per la traduzione deterministica di optional/dotazioni (`equipment_de`)
+e per il rilevamento di residui tedeschi (usato in modo INDIPENDENTE anche da qa_gate.py).
+
+Due tabelle:
+- PHRASES: frasi/termini composti (match prioritario, case-insensitive, più lungo prima).
+- WORDS:   singole parole (fallback token-per-token).
+
+Estendere liberamente: ogni voce aggiunta migliora la copertura di Gate B.
+Il seed copre i termini più frequenti negli annunci mobile.de.
+"""
+from __future__ import annotations
+
+import re
+
+# --------------------------------------------------------------------------- #
+# Frasi / termini composti (match prima delle singole parole). Chiavi lowercase.
+# --------------------------------------------------------------------------- #
+PHRASES: dict[str, str] = {
+    # seed dell'handoff
+    "anhängerkupplung (ahk)": "gancio traino",
+    "anhängerkupplung schwenkbar": "gancio traino estraibile",
+    "anhängerkupplung abnehmbar": "gancio traino removibile",
+    "led-scheinwerfer": "fari LED",
+    "led scheinwerfer": "fari LED",
+    "led-tagfahrlicht": "luci diurne LED",
+    "voll-led-scheinwerfer": "fari full LED",
+    "xenon-scheinwerfer": "fari allo xeno",
+    "bi-xenon": "bi-xeno",
+    "kurvenlicht": "fari adattivi in curva",
+    "nebelscheinwerfer": "fendinebbia",
+    "navigationssystem": "navigatore",
+    "navigationsvorbereitung": "predisposizione navigatore",
+    "klimaautomatik": "climatizzatore automatico",
+    "2-zonen-klimaautomatik": "climatizzatore automatico bizona",
+    "3-zonen-klimaautomatik": "climatizzatore automatico trizona",
+    "4-zonen-klimaautomatik": "climatizzatore automatico quadrizona",
+    "sitzheizung": "sedili riscaldati",
+    "sitzheizung vorn": "sedili anteriori riscaldati",
+    "sitzheizung hinten": "sedili posteriori riscaldati",
+    "sitzbelüftung": "sedili ventilati",
+    "lenkradheizung": "volante riscaldato",
+    "standheizung": "riscaldamento autonomo",
+    "rückfahrkamera": "telecamera posteriore",
+    "360°-kamera": "telecamera a 360°",
+    "360-kamera": "telecamera a 360°",
+    "einparkhilfe": "sensori di parcheggio",
+    "einparkhilfe vorne": "sensori di parcheggio anteriori",
+    "einparkhilfe hinten": "sensori di parcheggio posteriori",
+    "einparkhilfe vorne+hinten": "sensori di parcheggio ant.+post.",
+    "park distance control": "sensori di parcheggio",
+    "parklenkassistent": "assistente al parcheggio",
+    "panoramadach": "tetto panoramico",
+    "panorama-schiebedach": "tetto panoramico apribile",
+    "schiebedach": "tetto apribile",
+    "elektrisches schiebedach": "tetto apribile elettrico",
+    "tempomat": "cruise control",
+    "adaptiver tempomat": "cruise control adattivo",
+    "abstandstempomat": "cruise control adattivo",
+    "geschwindigkeitsregelanlage": "regolatore di velocità",
+    "geschwindigkeitsbegrenzer": "limitatore di velocità",
+    "lederausstattung": "interni in pelle",
+    "teillederausstattung": "interni in pelle e tessuto",
+    "kunstleder": "interni in similpelle",
+    "alcantara": "interni in alcantara",
+    "stoffausstattung": "interni in tessuto",
+    "sportsitze": "sedili sportivi",
+    "elektrische sitze": "sedili elettrici",
+    "elektrisch verstellbare sitze": "sedili regolabili elettricamente",
+    "memory-sitze": "sedili con memoria",
+    "memory-paket": "pacchetto memoria",
+    "beheizbares lenkrad": "volante riscaldato",
+    "multifunktionslenkrad": "volante multifunzione",
+    "lederlenkrad": "volante in pelle",
+    "head-up-display": "head-up display",
+    "digitales cockpit": "quadro strumenti digitale",
+    "virtual cockpit": "quadro strumenti digitale",
+    "schlüssellose zentralverriegelung": "chiusura centralizzata senza chiave",
+    "schlüsselloser zugang": "accesso senza chiave",
+    "keyless go": "accesso e avviamento senza chiave",
+    "keyless-go": "accesso e avviamento senza chiave",
+    "zentralverriegelung": "chiusura centralizzata",
+    "elektrische fensterheber": "alzacristalli elettrici",
+    "elektr. fensterheber": "alzacristalli elettrici",
+    "elektrische heckklappe": "portellone elettrico",
+    "elektr. heckklappe": "portellone elettrico",
+    "elektrisch anklappbare außenspiegel": "specchietti ripiegabili elettricamente",
+    "beheizbare außenspiegel": "specchietti riscaldati",
+    "abstandswarner": "avviso distanza di sicurezza",
+    "spurhalteassistent": "assistente mantenimento corsia",
+    "spurwechselassistent": "assistente cambio corsia",
+    "totwinkelassistent": "assistente angolo cieco",
+    "notbremsassistent": "assistente frenata di emergenza",
+    "verkehrszeichenerkennung": "riconoscimento segnali stradali",
+    "müdigkeitswarner": "rilevatore di stanchezza",
+    "berganfahrassistent": "assistente partenza in salita",
+    "regensensor": "sensore pioggia",
+    "lichtsensor": "sensore luci",
+    "start-stopp-automatik": "sistema start&stop",
+    "start/stopp-automatik": "sistema start&stop",
+    "schaltwippen": "palette al volante",
+    "sportfahrwerk": "assetto sportivo",
+    "luftfederung": "sospensioni pneumatiche",
+    "adaptives fahrwerk": "assetto adattivo",
+    "elektrische servolenkung": "servosterzo elettrico",
+    "servolenkung": "servosterzo",
+    "leichtmetallfelgen": "cerchi in lega",
+    "alufelgen": "cerchi in lega",
+    "winterreifen": "pneumatici invernali",
+    "sommerreifen": "pneumatici estivi",
+    "allwetterreifen": "pneumatici quattro stagioni",
+    "freisprecheinrichtung": "vivavoce",
+    "bluetooth-schnittstelle": "interfaccia Bluetooth",
+    "apple carplay": "Apple CarPlay",
+    "android auto": "Android Auto",
+    "dab-radio": "radio DAB",
+    "soundsystem": "impianto audio premium",
+    "isofix": "attacchi Isofix",
+    "nichtraucherfahrzeug": "veicolo non fumatori",
+    "scheckheftgepflegt": "tagliandi regolari certificati",
+    "garantie": "garanzia",
+    "gebrauchtwagengarantie": "garanzia auto usata",
+    "unfallfrei": "non incidentata",
+    "erste hand": "primo proprietario",
+    "zweite hand": "secondo proprietario",
+    "metallic-lackierung": "vernice metallizzata",
+    "metallic": "metallizzato",
+    "tagfahrlicht": "luci diurne",
+    "abstandsregeltempomat": "cruise control adattivo",
+    "innenraumfilter": "filtro abitacolo",
+    "raucherpaket": "pacchetto fumatori",
+    "winterpaket": "pacchetto invernale",
+    "sportpaket": "pacchetto sportivo",
+    "komfortpaket": "pacchetto comfort",
+    "assistenzpaket": "pacchetto assistenza alla guida",
+    # tipi di carrozzeria (Fahrzeugtyp)
+    "kombi": "Station Wagon",
+    "limousine": "Berlina",
+    "kleinwagen": "Utilitaria",
+    "geländewagen": "Fuoristrada",
+    "gelaendewagen": "Fuoristrada",
+    "cabrio": "Cabrio",
+    "cabriolet": "Cabrio",
+    "coupé": "Coupé",
+    "coupe": "Coupé",
+    "sportwagen": "Sportiva",
+    "van/kleinbus": "Van",
+    "van": "Van",
+    "pkw": "Autovettura",
+}
+
+# --------------------------------------------------------------------------- #
+# Singole parole (fallback). Chiavi lowercase.
+# --------------------------------------------------------------------------- #
+WORDS: dict[str, str] = {
+    "allrad": "trazione integrale",
+    "frontantrieb": "trazione anteriore",
+    "heckantrieb": "trazione posteriore",
+    "schaltgetriebe": "cambio manuale",
+    "automatik": "cambio automatico",
+    "automatikgetriebe": "cambio automatico",
+    "doppelkupplungsgetriebe": "cambio doppia frizione",
+    "klimaanlage": "climatizzatore",
+    "klimaautomatik": "climatizzatore automatico",
+    "sitzheizung": "sedili riscaldati",
+    "standheizung": "riscaldamento autonomo",
+    "navigationssystem": "navigatore",
+    "navi": "navigatore",
+    "rückfahrkamera": "telecamera posteriore",
+    "tempomat": "cruise control",
+    "panoramadach": "tetto panoramico",
+    "schiebedach": "tetto apribile",
+    "lederausstattung": "interni in pelle",
+    "leder": "pelle",
+    "teilleder": "pelle e tessuto",
+    "stoff": "tessuto",
+    "alcantara": "alcantara",
+    "xenon": "xeno",
+    "nebelscheinwerfer": "fendinebbia",
+    "sitzbelüftung": "sedili ventilati",
+    "lenkradheizung": "volante riscaldato",
+    "einparkhilfe": "sensori di parcheggio",
+    "rückfahrsensoren": "sensori posteriori",
+    "freisprecheinrichtung": "vivavoce",
+    "sprachsteuerung": "comandi vocali",
+    "regensensor": "sensore pioggia",
+    "lichtsensor": "sensore luci",
+    "nichtraucherfahrzeug": "veicolo non fumatori",
+    "garantie": "garanzia",
+    "unfallfrei": "non incidentata",
+    "scheckheftgepflegt": "tagliandi certificati",
+    "metallic": "metallizzato",
+    "alufelgen": "cerchi in lega",
+    "leichtmetallfelgen": "cerchi in lega",
+    "winterreifen": "pneumatici invernali",
+    "sommerreifen": "pneumatici estivi",
+    "isofix": "attacchi Isofix",
+    "bordcomputer": "computer di bordo",
+    "multifunktionslenkrad": "volante multifunzione",
+    "lederlenkrad": "volante in pelle",
+    "sportsitze": "sedili sportivi",
+    "sportfahrwerk": "assetto sportivo",
+    "luftfederung": "sospensioni pneumatiche",
+    "servolenkung": "servosterzo",
+    "zentralverriegelung": "chiusura centralizzata",
+    "wegfahrsperre": "immobilizzatore",
+    "airbag": "airbag",
+    "seitenairbag": "airbag laterali",
+    "kopfairbag": "airbag per la testa",
+    "esp": "ESP",
+    "abs": "ABS",
+    "isofix-befestigung": "attacchi Isofix",
+    "anhängerkupplung": "gancio traino",
+    "dachreling": "barre sul tetto",
+    "dachträger": "portapacchi",
+    "soundsystem": "impianto audio premium",
+    "subwoofer": "subwoofer",
+    "armlehne": "bracciolo",
+    "sitzheizung": "sedili riscaldati",
+    "beheizbar": "riscaldabile",
+    "elektrisch": "elettrico",
+    "elektrische": "elettrici",
+    "verstellbar": "regolabile",
+    "vorne": "anteriore",
+    "hinten": "posteriore",
+    "vorn": "anteriore",
+    "und": "e",
+    "mit": "con",
+    "inkl.": "incl.",
+    "inklusive": "incluso",
+    "schwarz": "nero",
+    "weiß": "bianco",
+    "grau": "grigio",
+    "silber": "argento",
+    "blau": "blu",
+    "rot": "rosso",
+    "grün": "verde",
+    "braun": "marrone",
+    "beige": "beige",
+    "gold": "oro",
+    "orange": "arancione",
+}
+
+# --------------------------------------------------------------------------- #
+# Rilevamento residui tedeschi (usato da qa_gate in modo indipendente).
+# Parole/indicatori tipicamente tedeschi che NON devono restare in output IT.
+# --------------------------------------------------------------------------- #
+GERMAN_STOPWORDS: frozenset[str] = frozenset({
+    "und", "mit", "ohne", "für", "der", "die", "das", "den", "dem", "des",
+    "ein", "eine", "einen", "einem", "einer", "ist", "sind", "wurde", "wird",
+    "nicht", "auch", "sehr", "oder", "aber", "wie", "bei", "vom", "zum", "zur",
+    "auf", "aus", "nach", "über", "unter", "vor", "hinten", "vorne", "vorn",
+    "inkl", "inklusive", "fahrzeug", "ausstattung", "neu", "gebraucht",
+    "scheckheftgepflegt", "unfallfrei", "garantie", "leder", "stoff", "schwarz",
+    "weiß", "grau", "silber", "blau", "rot", "elektrisch", "beheizbar",
+    "schiebedach", "sitzheizung", "klimaanlage", "navigationssystem",
+})
+
+# suffissi/pattern morfologici tedeschi frequenti (indizio forte)
+GERMAN_MORPHEMES: tuple[str, ...] = (
+    "ung", "heit", "keit", "schaft", "lich", "isch", "schein", "getriebe",
+    "fahrzeug", "sitz", "dach", "assistent", "automatik", "heizung", "kamera",
+    "scheinwerfer", "verriegelung", "fensterheber",
+)
+
+UMLAUT_RE = re.compile(r"[äöüßÄÖÜ]")
+
+
+def has_umlaut(text: str) -> bool:
+    return bool(UMLAUT_RE.search(text or ""))
+
+
+def looks_german(token: str) -> bool:
+    """Euristica INDIPENDENTE: True se il token sembra tedesco non tradotto."""
+    t = re.sub(r"[^\wäöüßÄÖÜ-]", "", (token or "")).lower()
+    if len(t) < 3:
+        return False
+    if has_umlaut(t):
+        return True
+    if t in GERMAN_STOPWORDS:
+        return True
+    # morfemi tedeschi lunghi (evita falsi positivi su parole IT corte)
+    if len(t) >= 6 and any(t.endswith(suf) or suf in t for suf in GERMAN_MORPHEMES):
+        return True
+    return False

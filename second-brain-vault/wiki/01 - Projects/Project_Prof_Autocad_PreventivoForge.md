@@ -3,7 +3,7 @@ Type: PROJECT
 Status: Active
 Tags: #cliente #automotive #workflow #preventivi #mobile-de #multi-tenant
 Created: 2026-06-30
-Last updated: 2026-06-30
+Last updated: 2026-07-01
 ---
 
 # Project — Prof Autocad · PreventivoForge
@@ -24,8 +24,13 @@ migliorato, **prezzo finale nel titolo** (`esposto ×1.03 +1500 +1500`). **Multi
 - Metodo: `architect-agent` (RBI) + `content-forge` (agenti 7-file) + repo `master-build-architecture`.
 
 ## Stato
-Half A runnable e testata (prezzo 18.000 → 21.540 ✅). Half B da costruire (Gael). Riferimento
-formato preventivo: PDF "Preventivo BMW Z4" del cliente (da rifornire).
+Half A runnable e testata (Max). **Half B COMPLETA e verificata (Gael, 2026-07-01, CP-20260701-001):**
+S3 traduzione+copy (glossario DE→IT deterministico ~150 termini), S5 render PDF (Playwright + template
+Jinja2), QA Gate A/B/C/D bloccanti, 3 RULES, 6 agenti CF-grade (42 file). Test end-to-end reale
+`run.py --manual` (BMW 320d) → PDF 63 KB, 4 gate ALL GREEN, prezzo 26.900→30.707 € (ricalcolo indipendente),
+PDF ispezionato. Confine ADR-003 rispettato (run.py/schema/Half A non toccati). Traduzione deterministica → €0 API.
+- **Pending (Max):** wiring gate B/C/D in `run.py`; primo run su URL mobile.de REALE.
+- Riferimento formato preventivo: PDF "Preventivo BMW Z4" del cliente (da rifornire per allineare lo stile).
 
 ## Connessioni
 - [[Digital_Empire_6_Phase_Process]]
