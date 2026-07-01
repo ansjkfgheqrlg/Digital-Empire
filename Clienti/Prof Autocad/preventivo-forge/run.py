@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import importlib
+import os
 import sys
 from pathlib import Path
 
@@ -133,6 +134,11 @@ def main() -> int:
             print("\n⛔ Gate D rosso: PDF NON consegnabile (vedi log).")
             return 7
         print(f"\n✅ Preventivo PDF: {pdf_path}")
+        try:
+            if os.name == "nt":
+                os.startfile(str(pdf_path))  # apre il PDF appena creato
+        except Exception:
+            pass
     else:
         ctx.set_step("S5_pdf_render", "skipped", "Half B non presente (handoff Gael)")
         _print_handoff_note(ctx)
