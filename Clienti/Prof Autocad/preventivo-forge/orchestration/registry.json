@@ -1,0 +1,37 @@
+{
+  "workflow": "preventivo-forge",
+  "version": "0.1",
+  "description": "mobile.de (DE) -> preventivo IT (PDF), multi-tenant. Split 50/50 Max(A)/Gael(B).",
+  "stages": [
+    { "id": "S1", "name": "scraping",        "agent": "op-scraper",         "script": "implementation/scraper.py",       "rule": "rules/R1-scraping.md",        "gate_after": "A", "owner": "Max",  "status": "done" },
+    { "id": "S2", "name": "parsing",         "agent": "op-parser",          "script": "implementation/parser.py",        "rule": "rules/R2-parsing.md",         "gate_after": "A", "owner": "Max",  "status": "done" },
+    { "id": "S3", "name": "translate_copy",  "agent": "op-translator-copy", "script": "implementation/translate_copy.py","rule": "rules/R3-translation-copy.md","gate_after": "B", "owner": "Gael", "status": "todo" },
+    { "id": "S4", "name": "pricing",         "agent": "op-pricer",          "script": "implementation/pricer.py",        "rule": "rules/R4-pricing.md",         "gate_after": "C", "owner": "Max",  "status": "done" },
+    { "id": "S5", "name": "pdf_render",      "agent": "op-pdf-renderer",    "script": "implementation/render_pdf.py",    "rule": "rules/R5-pdf-render.md",      "gate_after": "D", "owner": "Gael", "status": "todo" }
+  ],
+  "gates": [
+    { "id": "A", "after": "S2", "verifier": "qa-extraction-verifier",  "blocking": true, "owner": "Gael", "note": "check minimo built-in in run.py finche' l'agente non esiste" },
+    { "id": "B", "after": "S3", "verifier": "qa-translation-verifier", "blocking": true, "owner": "Gael" },
+    { "id": "C", "after": "S4", "verifier": "qa-price-verifier",       "blocking": true, "owner": "Gael" },
+    { "id": "D", "after": "S5", "verifier": "qa-output-reviewer",      "blocking": true, "owner": "Gael" }
+  ],
+  "agents": {
+    "conductor":             { "type": "regia",       "owner": "Max",  "status": "done", "dir": "agents/conductor" },
+    "op-scraper":            { "type": "operativo",   "owner": "Max",  "status": "done", "dir": "agents/operativi/op-scraper" },
+    "op-parser":             { "type": "operativo",   "owner": "Max",  "status": "done", "dir": "agents/operativi/op-parser" },
+    "op-pricer":             { "type": "operativo",   "owner": "Max",  "status": "done", "dir": "agents/operativi/op-pricer" },
+    "op-translator-copy":    { "type": "operativo",   "owner": "Gael", "status": "todo", "dir": "agents/operativi/op-translator-copy" },
+    "op-pdf-renderer":       { "type": "operativo",   "owner": "Gael", "status": "todo", "dir": "agents/operativi/op-pdf-renderer" },
+    "qa-extraction-verifier":{ "type": "verifica",    "owner": "Gael", "status": "todo", "dir": "agents/verifica/qa-extraction-verifier" },
+    "qa-translation-verifier":{"type": "verifica",    "owner": "Gael", "status": "todo", "dir": "agents/verifica/qa-translation-verifier" },
+    "qa-price-verifier":     { "type": "verifica",    "owner": "Gael", "status": "todo", "dir": "agents/verifica/qa-price-verifier" },
+    "qa-output-reviewer":    { "type": "verifica",    "owner": "Gael", "status": "todo", "dir": "agents/verifica/qa-output-reviewer" }
+  },
+  "contract": {
+    "S1_out": "runs/<id>/raw.json + runs/<id>/foto/",
+    "S2_out": "runs/<id>/listing.json (schema/listing.schema.json)",
+    "S3_out": "runs/<id>/listing_it.json .content (schema/listing_it.schema.json)",
+    "S4_out": "runs/<id>/listing_it.json .price",
+    "S5_out": "runs/<id>/preventivo_<marca-modello>.pdf"
+  }
+}

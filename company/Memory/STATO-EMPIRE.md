@@ -82,7 +82,8 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   **✅ HALF A (Max) FATTA e testata:** scraper S1 (Playwright+fallback manuale), parser S2 (→`listing.json`, JSON-LD+DOM),
   pricer S4 (18.000→21.540 ✅), regia `run.py` (multi-tenant, gate A minimo, import difensivo Half B), schema CONGELATI, multi-tenant `dealers.py`, skill `/preventivo-auto`.
   **⬜ HALF B (Gael) DA FARE:** S3 translate+copy, S5 PDF preventivo, 4 agenti QA + `qa_gate.py`, `templates/preventivo.html`, R3/R5/R6 → vedi `HANDOFF-GAEL.md`.
-  **RESTA A MAX (prossimo turno):** agenti CF-grade Half A 7-file (conductor, op-scraper, op-parser, op-pricer) + CATALOG + R1/R2/R4 + orchestration/.
+  **✅ FONDAMENTA MAX FATTE (CP-20260630-003):** agenti CF-grade 7-file (conductor + op-scraper/op-parser/op-pricer) + CATALOG + R1/R2/R4 + orchestration (supervisor/routing/registry/policies) + CLAUDE.md cliente. **Half A COMPLETA.**
+  **RESTA A MAX (dopo Half B Gael):** wiring gate B/C/D in run.py, test e2e su annuncio reale via --manual, dati dealer in config.
   Seam CONGELATO = `preventivo-forge/schema/listing.schema.json`. ⚠️ **GAEL: lavora SOLO su Half B; non toccare Half A.** Scope Max: SOLO sotto `Clienti/Prof Autocad/`.
 - 🔴 **GAEL STEP 5 ATTIVO ORA (2026-06-18):** dopo 04-MARKETING, costruisco **03-CONTENT-FACTORY**
   (mega-reparto, CF-Director + R1-R8 in 3 aree) dal dossier `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md`,

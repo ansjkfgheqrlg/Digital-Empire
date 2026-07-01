@@ -23,6 +23,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260630-003](checkpoints/CP-20260630-003.md) — **Prof Autocad: PreventivoForge Half A COMPLETA** (fondamenta: 4 agenti CF-grade 7-file + R1/R2/R4 + orchestration + CLAUDE.md cliente) — Max
 - [CP-20260630-002](checkpoints/CP-20260630-002.md) — **CLIENTE Prof Autocad: PreventivoForge Half A FATTA** (mobile.de DE → preventivo IT PDF, prezzo ×1.03+1500+1500, multi-tenant; scraper/parser/pricer/regia/skill `/preventivo-auto`, testato; Half B → Gael handoff) — Max
 - [CP-20260623-001](checkpoints/CP-20260623-001.md) — STEP 5: **01-AGENCY batch-2** (A4-Delivery+A5-Copy+A6-Marketing CF-grade: 51 file, 21 agenti, 9 WF; A5 riusa Gate Bibbia A2 pattern-6; gate verde, 5-bis APPROVA → 01-AGENCY 6/10) — Max
 - [CP-20260622-002](checkpoints/CP-20260622-002.md) — STEP 5: **01-AGENCY batch-1** (A1+A2+A3 CF-grade: 58 file, 27 agenti, 10 WF; A2 wrappa runtime outreach LIVE ADR-003; gate verde, 5-bis APPROVA) — Max
