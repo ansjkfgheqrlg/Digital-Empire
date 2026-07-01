@@ -13,7 +13,7 @@
     "source_url":   { "type": "string", "format": "uri", "description": "URL annuncio mobile.de" },
     "source_id":    { "type": "string", "description": "ID annuncio mobile.de (dalla URL)" },
     "scraped_at":   { "type": "string", "format": "date-time" },
-    "scrape_method":{ "type": "string", "enum": ["playwright", "manual"], "default": "playwright" },
+    "scrape_method":{ "type": "string", "enum": ["playwright", "chrome-cdp", "manual"], "default": "chrome-cdp" },
 
     "make":    { "type": "string", "description": "Marca, es. Mercedes-Benz" },
     "model":   { "type": "string", "description": "Modello, es. GLA 220" },

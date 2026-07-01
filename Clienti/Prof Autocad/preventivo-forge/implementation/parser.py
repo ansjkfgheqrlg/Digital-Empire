@@ -58,8 +58,12 @@ def parse(ctx: RunContext) -> dict[str, Any]:
         "raw_specs": {}, "seller": {}, "images": [], "warnings": warnings,
     }
 
-    _from_jsonld(listing, car)
-    _from_dom_attributes(listing, attrs)
+    ad = raw.get("initial_state_ad")
+    if ad:
+        _from_initial_state(listing, ad)          # dati veri mobile.de (primario)
+    else:
+        _from_jsonld(listing, car)                # fallback
+        _from_dom_attributes(listing, attrs)
     _finalize(listing, raw, dom, warnings)
 
     save_json(ctx.listing_path, listing)
@@ -71,6 +75,86 @@ def parse(ctx: RunContext) -> dict[str, Any]:
                         listing["make"], listing["model"], listing["price_listed_eur"])
     listing["_schema_errors"] = errs  # informativo per il conductor (non parte del contratto)
     return listing
+
+
+# --------------------------------------------------------------------------- #
+def _from_initial_state(listing: dict, ad: dict) -> None:
+    """Mappa il record REALE mobile.de (window.__INITIAL_STATE__ .ad) sullo schema."""
+    import html as _html
+
+    listing["make"] = ad.get("make") or listing["make"]
+    listing["model"] = ad.get("model") or listing["model"]
+    listing["title_de"] = ad.get("title") or ad.get("shortTitle") or listing["title_de"]
+
+    price = ad.get("price") or {}
+    if price.get("grossAmount") is not None:
+        listing["price_listed_eur"] = float(price["grossAmount"])
+        listing["price_is_gross"] = True
+    if price.get("vat"):
+        listing["vat_deductible"] = "mwst" in str(price["vat"]).lower()
+
+    attrs = {a.get("tag"): a.get("value") for a in ad.get("attributes", []) if a.get("tag")}
+    if "mileage" in attrs:
+        listing["mileage_km"] = _to_int(attrs["mileage"])
+    if "fuel" in attrs:
+        listing["fuel"] = _norm(FUEL_MAP, attrs["fuel"])
+    if "transmission" in attrs:
+        listing["gearbox"] = _norm(GEARBOX_MAP, attrs["transmission"])
+    if "numSeats" in attrs:
+        listing["seats"] = _to_int(attrs["numSeats"])
+    if "doorCount" in attrs:
+        nums = re.findall(r"\d+", str(attrs["doorCount"]))
+        if nums:
+            listing["doors"] = int(nums[-1])
+    if "color" in attrs:
+        listing["color"] = attrs["color"]
+    if "manufacturerColorName" in attrs:
+        listing["color_manufacturer"] = attrs["manufacturerColorName"]
+    if "interior" in attrs:
+        listing["interior"] = attrs["interior"]
+    if "emissionClass" in attrs:
+        listing["emission_class"] = attrs["emissionClass"]
+    if "category" in attrs:
+        listing["body_type"] = str(attrs["category"]).split(",")[0].strip()
+    if "trimLine" in attrs and not listing.get("variant"):
+        listing["variant"] = str(attrs["trimLine"]).strip()
+    if "firstRegistration" in attrs:
+        listing["first_registration"] = attrs["firstRegistration"]
+        y = re.search(r"(19|20)\d{2}", str(attrs["firstRegistration"]))
+        if y:
+            listing["year"] = int(y.group(0))
+    if "power" in attrs:
+        kw = re.search(r"(\d+)\s*kW", str(attrs["power"]))
+        ps = re.search(r"(\d+)\s*PS", str(attrs["power"]))
+        if kw:
+            listing["power_kw"] = int(kw.group(1))
+        if ps:
+            listing["power_hp"] = int(ps.group(1))
+    co2 = attrs.get("envkv.co2Emissions") or attrs.get("co2Emissions")
+    if co2:
+        listing["co2_g_km"] = _to_float(co2)
+
+    feats = [f for f in (ad.get("features") or []) if isinstance(f, str)]
+    listing["equipment_de"] = feats
+    if any("allrad" in f.lower() for f in feats):
+        listing["drivetrain"] = "Integrale"
+
+    desc = ad.get("htmlDescription") or ""
+    desc = re.sub(r"(?i)<br\s*/?>", "\n", desc)
+    desc = re.sub(r"(?i)</(p|li|ul|ol|div|h\d|tr)>", "\n", desc)
+    desc = re.sub(r"<[^>]+>", " ", desc)
+    desc = _html.unescape(desc)
+    desc = re.sub(r"[ \t]+", " ", desc)
+    listing["description_de"] = re.sub(r"\n{3,}", "\n\n", desc).strip()
+
+    def _scalar(v):
+        if isinstance(v, (list, tuple)):
+            return "; ".join(str(x) for x in v)
+        if isinstance(v, dict):
+            return "; ".join(f"{k}: {x}" for k, x in v.items())
+        return v
+    listing["raw_specs"] = {a.get("label"): _scalar(a.get("value"))
+                            for a in ad.get("attributes", []) if a.get("label")}
 
 
 # --------------------------------------------------------------------------- #

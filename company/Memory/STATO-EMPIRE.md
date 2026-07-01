@@ -84,7 +84,11 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   **✅ HALF B (Gael) COMPLETA e verificata (2026-07-01, CP-20260701-001):** S3 `translate_copy.py`+`glossary_de_it.py` (traduzione deterministica DE→IT ~150 termini),
   S5 `render_pdf.py`+`templates/preventivo.html` (motore Playwright), QA `qa_gate.py` (Gate A/B/C/D bloccanti), RULES R3/R5/R6, 6 agenti CF-grade (42 file), CATALOG aggiornato (Half B ✅).
   **Test end-to-end reale `run.py --manual` (BMW 320d) → PDF 63 KB, 4 gate ALL GREEN** (0 tedesco, prezzo 26.900→30.707 € ricalcolo indipendente), PDF ispezionato. €0 API (gancio LLM OFF, Art.4.3).
-  **🟢 PreventivoForge: COMPLETO e testato END-TO-END (Max, 2026-07-01, CP-20260701-002).** Gate B/C/D wirati in `run.py` (helper `_gate`), fix UTF-8 console. Test `--manual` GLA → PDF 60KB, **4 gate verdi**, 33.900→37.917 €, PDF ispezionato OK. RESTA (non bloccante): (a) validare scraping LIVE sul PC cliente (qui bloccato da anti-bot+IP datacenter — ambientale, non bug); (b) dati reali dealer in config; (c) allineare stile PDF al riferimento BMW Z4.
+  **🟢 PreventivoForge: FUNZIONA END-TO-END LIVE sul primo annuncio reale (Max, 2026-07-01, CP-20260701-003).**
+  Risolti 2 problemi critici: (1) **Akamai** bloccava lo scraping → ora **Chrome reale + CDP-attach** lo bypassa in automatico;
+  (2) mobile.de non ha JSON-LD auto → parser riscritto su `window.__INITIAL_STATE__` (dati veri). Gate B/C/D wirati in run.py, glossario esteso, fix UTF-8.
+  **Prova LIVE GLA (456259857): EXIT 0, 4 gate verdi, 26 foto, 0 tedesco, esposto 47.490 → finale 51.915 €, PDF 810KB con foto vere, ispezionato OK.** €0 API. Fixture regressione salvata.
+  RESTA (non bloccante): (a) macchina che gira = Chrome + IP residenziale; (b) traduzione deterministica long-tail → opz. backend LLM (decisione Max); (c) dati reali dealer in config; (d) stile PDF vs BMW Z4; (e) variant titolo perfezionabile.
   Seam CONGELATO = `preventivo-forge/schema/listing.schema.json` (NON toccato). Scope Max/Gael: SOLO sotto `Clienti/Prof Autocad/`.
   **RIPRESA GAEL dopo GO Max:** scelta prossimo ecosistema Empire (05-MULTI-BUSINESS / split 06).
 - 🔴 **GAEL STEP 5 ATTIVO ORA (2026-06-18):** dopo 04-MARKETING, costruisco **03-CONTENT-FACTORY**

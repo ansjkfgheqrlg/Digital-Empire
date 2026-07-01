@@ -135,6 +135,54 @@ PHRASES: dict[str, str] = {
     "sportpaket": "pacchetto sportivo",
     "komfortpaket": "pacchetto comfort",
     "assistenzpaket": "pacchetto assistenza alla guida",
+    # --- estensione copertura reale mobile.de ---
+    "ambiente-beleuchtung": "illuminazione d'ambiente",
+    "ambientebeleuchtung": "illuminazione d'ambiente",
+    "ambiente beleuchtung": "illuminazione d'ambiente",
+    "led-ambientebeleuchtung": "illuminazione d'ambiente a LED",
+    "fernlichtassistent": "assistente abbaglianti",
+    "adaptiver fernlichtassistent": "assistente abbaglianti adattivo",
+    "lordosenstütze": "supporto lombare",
+    "lordosenstuetze": "supporto lombare",
+    "panorama-dach": "tetto panoramico",
+    "panorama-glasdach": "tetto panoramico in vetro",
+    "panoramaglasdach": "tetto panoramico in vetro",
+    "multibeam led": "fari MULTIBEAM LED",
+    "multibeam-led": "fari MULTIBEAM LED",
+    "anhängevorrichtung": "gancio traino",
+    "anhängevorrichtung mit esp": "gancio traino con ESP",
+    "windschott": "frangivento",
+    "adaptives kurvenlicht": "fari adattivi in curva",
+    "totwinkel-assistent": "assistente angolo cieco",
+    "spurhalte-assistent": "assistente mantenimento corsia",
+    "verkehrsschild-erkennung": "riconoscimento segnali stradali",
+    "volldigitales instrumenten-display": "quadro strumenti digitale",
+    "volldigitales kombiinstrument": "quadro strumenti digitale",
+    "wärmedämmend dunkel getöntes glas": "vetri oscurati termoisolanti",
+    "getönte scheiben": "vetri oscurati",
+    "dachreling schwarz": "barre sul tetto nere",
+    "easy-pack heckklappe": "portellone Easy-Pack",
+    "beheizbare frontscheibe": "parabrezza riscaldato",
+    "allradantrieb": "trazione integrale",
+    "elektr. seitenspiegel": "specchietti laterali elettrici",
+    "elektrische seitenspiegel": "specchietti laterali elettrici",
+    "seitenspiegel": "specchietti laterali",
+    "innenspiegel autom. abblendend": "specchietto interno autoschermante",
+    "automatisch abblendender innenspiegel": "specchietto interno autoschermante",
+    "innenspiegel": "specchietto interno",
+    "notrufsystem": "sistema di chiamata d'emergenza",
+    "pannenkit": "kit riparazione pneumatici",
+    "reifenpannenset": "kit riparazione pneumatici",
+    "dieselpartikelfilter": "filtro antiparticolato",
+    "partikelfilter": "filtro antiparticolato",
+    "reifendruckkontrollsystem": "controllo pressione pneumatici",
+    "reifendruckkontrolle": "controllo pressione pneumatici",
+    "traktionskontrolle": "controllo di trazione",
+    "musikstreaming integriert": "streaming musicale integrato",
+    "induktionsladen für smartphones": "ricarica wireless per smartphone",
+    "induktionsladen": "ricarica a induzione",
+    "elektr. wegfahrsperre": "immobilizzatore elettronico",
+    "wegfahrsperre": "immobilizzatore",
     # tipi di carrozzeria (Fahrzeugtyp)
     "kombi": "Station Wagon",
     "limousine": "Berlina",
@@ -168,6 +216,33 @@ WORDS: dict[str, str] = {
     "standheizung": "riscaldamento autonomo",
     "navigationssystem": "navigatore",
     "navi": "navigatore",
+    "für": "per",
+    "beleuchtung": "illuminazione",
+    "fernlicht": "abbaglianti",
+    "kurvenlicht": "fari in curva",
+    "anhängevorrichtung": "gancio traino",
+    "windschott": "frangivento",
+    "getönt": "oscurato",
+    "getönte": "oscurati",
+    "getöntes": "oscurato",
+    "scheiben": "vetri",
+    "frontscheibe": "parabrezza",
+    "heckklappe": "portellone",
+    "wärmedämmend": "termoisolante",
+    "paket": "pacchetto",
+    "elektr": "elettrico",
+    "elektr.": "elettrico",
+    "allradantrieb": "trazione integrale",
+    "abblendend": "autoschermante",
+    "notrufsystem": "sistema chiamata emergenza",
+    "pannenkit": "kit riparazione",
+    "partikelfilter": "filtro antiparticolato",
+    "musikstreaming": "streaming musicale",
+    "integriert": "integrato",
+    "reifendruckkontrolle": "controllo pressione pneumatici",
+    "traktionskontrolle": "controllo di trazione",
+    "seitenspiegel": "specchietti laterali",
+    "innenspiegel": "specchietto interno",
     "rückfahrkamera": "telecamera posteriore",
     "tempomat": "cruise control",
     "panoramadach": "tetto panoramico",
@@ -258,11 +333,12 @@ GERMAN_STOPWORDS: frozenset[str] = frozenset({
     "schiebedach", "sitzheizung", "klimaanlage", "navigationssystem",
 })
 
-# suffissi/pattern morfologici tedeschi frequenti (indizio forte)
+# suffissi tedeschi FORTI: solo match a FINE parola (endswith), per evitare falsi
+# positivi su parole italiane (es. "telecamera", "assistente", "automatico").
 GERMAN_MORPHEMES: tuple[str, ...] = (
-    "ung", "heit", "keit", "schaft", "lich", "isch", "schein", "getriebe",
-    "fahrzeug", "sitz", "dach", "assistent", "automatik", "heizung", "kamera",
-    "scheinwerfer", "verriegelung", "fensterheber",
+    "ung", "heit", "keit", "schaft", "getriebe", "fahrzeug", "assistent",
+    "heizung", "scheinwerfer", "verriegelung", "fensterheber", "kupplung",
+    "antrieb", "system", "kontrolle", "filter", "spiegel", "laden",
 )
 
 UMLAUT_RE = re.compile(r"[äöüßÄÖÜ]")
@@ -282,6 +358,6 @@ def looks_german(token: str) -> bool:
     if t in GERMAN_STOPWORDS:
         return True
     # morfemi tedeschi lunghi (evita falsi positivi su parole IT corte)
-    if len(t) >= 6 and any(t.endswith(suf) or suf in t for suf in GERMAN_MORPHEMES):
+    if len(t) >= 6 and any(t.endswith(suf) for suf in GERMAN_MORPHEMES):
         return True
     return False

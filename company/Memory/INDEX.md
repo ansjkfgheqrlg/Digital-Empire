@@ -23,6 +23,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260701-003](checkpoints/CP-20260701-003.md) — **Prof Autocad: scraping LIVE mobile.de RISOLTO (Chrome+CDP bypassa Akamai) + parser su `__INITIAL_STATE__` + prova reale GLA** (EXIT 0, 4 gate verdi, 47.490→51.915 €, PDF 810KB foto vere) — Max
 - [CP-20260701-002](checkpoints/CP-20260701-002.md) — **Prof Autocad: PreventivoForge gate wiring + test END-TO-END** (Max): gate B/C/D in run.py + fix UTF-8; run --manual GLA → PDF 60KB, 4 gate verdi, 33.900→37.917 €. Live scrape bloccato solo da qui (anti-bot). — Max
 - [CP-20260701-001](checkpoints/CP-20260701-001.md) — **CLIENTE Prof Autocad · PreventivoForge Half B COMPLETA** (S3 translate+copy, S5 PDF Playwright, QA Gate A/B/C/D, R3/R5/R6, 6 agenti CF-grade/42 file; test run.py --manual BMW 320d → PDF 63KB, 4 gate ALL GREEN; ADR-003 rispettato, €0 API) — Gael
 - [CP-20260630-003](checkpoints/CP-20260630-003.md) — **Prof Autocad: PreventivoForge Half A COMPLETA** (fondamenta: 4 agenti CF-grade 7-file + R1/R2/R4 + orchestration + CLAUDE.md cliente) — Max
