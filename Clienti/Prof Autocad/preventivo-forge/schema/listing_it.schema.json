@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://digitalempire/annuncio-forge/listing_it.schema.json",
+  "title": "AnnuncioForge — Listing IT (arricchito)",
+  "description": "Output co-prodotto: campi TESTO da Half B (Gael, S3), campi PREZZO da Half A (Max, S4). I due step fanno MERGE su questo file. Contract congelato da Max.",
+  "type": "object",
+  "required": ["source_url", "make", "model", "price"],
+  "additionalProperties": false,
+  "properties": {
+    "source_url": { "type": "string", "format": "uri" },
+    "source_id":  { "type": ["string", "null"] },
+    "make":       { "type": "string" },
+    "model":      { "type": "string" },
+    "variant":    { "type": ["string", "null"] },
+
+    "generated_at": { "type": ["string", "null"], "format": "date-time" },
+
+    "_meta": {
+      "type": "object",
+      "description": "Tracciamento di chi ha riempito cosa.",
+      "additionalProperties": false,
+      "properties": {
+        "text_by":  { "type": ["string", "null"], "description": "es. op-translator-copy (Gael)" },
+        "price_by": { "type": ["string", "null"], "description": "es. op-pricer (Max)" }
+      }
+    },
+
+    "content": {
+      "type": "object",
+      "description": "RIEMPITO DA HALF B (Gael, S3). Traduzione fedele + copy migliorato. Nessun fatto inventato (deve derivare da listing.json).",
+      "required": ["title_it", "description_it"],
+      "additionalProperties": false,
+      "properties": {
+        "title_it":       { "type": "string", "description": "Titolo IT SENZA prezzo (il prezzo lo aggiunge Max in final_title)" },
+        "headline_it":    { "type": ["string", "null"], "description": "Riga d'apertura/gancio copy (opzionale)" },
+        "description_it": { "type": "string", "description": "Descrizione di vendita in italiano" },
+        "highlights_it":  { "type": "array", "items": { "type": "string" }, "description": "3-6 punti di forza (bullet)" },
+        "equipment_it":   { "type": "array", "items": { "type": "string" }, "description": "Optional tradotti, allineati 1:1 a equipment_de" },
+        "specs_it": {
+          "type": "object",
+          "description": "Scheda tecnica con label italiane (anno, km, alimentazione, cambio, potenza, ecc.)",
+          "additionalProperties": { "type": ["string", "number", "null"] }
+        }
+      }
+    },
+
+    "price": {
+      "type": "object",
+      "description": "RIEMPITO DA HALF A (Max, S4). Deterministico.",
+      "required": ["listed_eur", "final_eur", "final_title", "breakdown"],
+      "additionalProperties": false,
+      "properties": {
+        "listed_eur": { "type": "number", "minimum": 0 },
+        "final_eur":  { "type": "integer", "minimum": 0, "description": "round(listed*1.03 + 1500 + 1500)" },
+        "final_title":{ "type": "string", "description": "Titolo annuncio con prezzo, es. 'Mercedes-Benz GLA 220 d 4MATIC AMG Line 21.540 €'" },
+        "breakdown": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["listed_eur", "surcharge_pct", "surcharge_eur", "fixed_1_eur", "fixed_2_eur", "final_eur"],
+          "properties": {
+            "listed_eur":    { "type": "number" },
+            "surcharge_pct": { "type": "number" },
+            "surcharge_eur": { "type": "number" },
+            "fixed_1_eur":   { "type": "number" },
+            "fixed_2_eur":   { "type": "number" },
+            "final_eur":     { "type": "integer" }
+          }
+        }
+      }
+    }
+  }
+}

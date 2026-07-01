@@ -1,0 +1,15 @@
+# segreti e config locale
+.env
+# profilo browser persistente (sessione/cookie mobile.de)
+browser-profile/
+.playwright/
+# artefatti di run pesanti/transitori
+runs/*/foto/
+runs/*/*.pdf
+# python
+__pycache__/
+*.pyc
+*.pyo
+# log
+logs/*.log
+*.log

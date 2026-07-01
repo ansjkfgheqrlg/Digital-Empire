@@ -1,4 +1,13 @@
-# STATO EMPIRE -- aggiornato 2026-06-11 (sera — DIRETTIVA V2)
+# STATO EMPIRE -- aggiornato 2026-06-30 (Max — CLIENTE Prof Autocad)
+
+## 🛑 GAEL — LEGGI PER PRIMO (2026-06-30, Max)
+**FERMATI: oggi NON costruire Digital Empire.** Pausa concordata sull'impero per un **lavoro cliente** (primo cliente ufficiale).
+**Tuo task ORA = Half B di PreventivoForge** (cliente Prof Autocad).
+→ Apri ed esegui: `Clienti/Prof Autocad/preventivo-forge/HANDOFF-GAEL.md`.
+In sintesi: costruisci **S3 traduzione+copy**, **S5 PDF preventivo**, i **4 agenti QA + qa_gate.py**,
+template `preventivo.html`, regole R3/R5/R6. **Half A (scraper/parser/pricer/regia) è GIÀ FATTA da Max e testata.**
+Contratto dati CONGELATO: `preventivo-forge/schema/listing.schema.json`. NON toccare Half A (solo wiring gate da concordare con Max).
+DoD: `python run.py "<url>"` produce il `preventivo_*.pdf` con gate verdi → CP + STATO + push.
 
 ## 🚨 PIVOT V2 (ADR-007 — leggere PRIMA di qualsiasi cosa)
 Max ha dettato la **Direttiva di Scala**: `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md`.
@@ -66,6 +75,15 @@ Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
+- 🟣 **MAX — CLIENTE «Prof Autocad» — PreventivoForge (2026-06-30) — primo cliente ufficiale.**
+  Workflow: **annuncio mobile.de (DE) → PREVENTIVO italiano (PDF)**, prezzo finale `esposto×1.03+1500+1500` nel titolo,
+  **multi-concessionaria** (config per dealer in `preventivo-forge/concessionarie/<id>/`; prima = `prof-autocad`).
+  Architettura: `Clienti/Prof Autocad/preventivo-forge/00-ARCHITETTURA-WORKFLOW.md`. Metodo: architect-agent (RBI) + content-forge + master-build-architecture.
+  **✅ HALF A (Max) FATTA e testata:** scraper S1 (Playwright+fallback manuale), parser S2 (→`listing.json`, JSON-LD+DOM),
+  pricer S4 (18.000→21.540 ✅), regia `run.py` (multi-tenant, gate A minimo, import difensivo Half B), schema CONGELATI, multi-tenant `dealers.py`, skill `/preventivo-auto`.
+  **⬜ HALF B (Gael) DA FARE:** S3 translate+copy, S5 PDF preventivo, 4 agenti QA + `qa_gate.py`, `templates/preventivo.html`, R3/R5/R6 → vedi `HANDOFF-GAEL.md`.
+  **RESTA A MAX (prossimo turno):** agenti CF-grade Half A 7-file (conductor, op-scraper, op-parser, op-pricer) + CATALOG + R1/R2/R4 + orchestration/.
+  Seam CONGELATO = `preventivo-forge/schema/listing.schema.json`. ⚠️ **GAEL: lavora SOLO su Half B; non toccare Half A.** Scope Max: SOLO sotto `Clienti/Prof Autocad/`.
 - 🔴 **GAEL STEP 5 ATTIVO ORA (2026-06-18):** dopo 04-MARKETING, costruisco **03-CONTENT-FACTORY**
   (mega-reparto, CF-Director + R1-R8 in 3 aree) dal dossier `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md`,
   sotto `company/Ecosistemi/03-CONTENT-FACTORY/Reparti/<CF-RN-Nome>/` (Title-Case fisso).

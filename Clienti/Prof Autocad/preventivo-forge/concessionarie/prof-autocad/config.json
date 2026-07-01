@@ -1,0 +1,25 @@
+{
+  "dealer_id": "prof-autocad",
+  "display_name": "Prof Autocad",
+  "logo_path": "logo.png",
+  "contacts": {
+    "phone": "",
+    "email": "",
+    "address": "",
+    "website": ""
+  },
+  "pricing": {
+    "_formula": "finale = round(esposto * (1 + surcharge_pct/100) + fixed_1 + fixed_2)",
+    "surcharge_pct": 3,
+    "fixed_1": 1500,
+    "fixed_2": 1500
+  },
+  "preventivo": {
+    "language": "it",
+    "currency": "EUR",
+    "validity_days": 15,
+    "template": "default",
+    "footer_note": "Preventivo indicativo, salvo disponibilità. Prezzo chiavi in mano da confermare.",
+    "show_price_breakdown_to_customer": false
+  }
+}

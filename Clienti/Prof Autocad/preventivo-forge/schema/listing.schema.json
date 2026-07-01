@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://digitalempire/annuncio-forge/listing.schema.json",
+  "title": "AnnuncioForge — Listing (raw normalizzato)",
+  "description": "Data contract congelato. Half A (scraper+parser) lo produce; Half B (translate+pdf) lo consuma. NON cambiare senza aggiornare lo split in 00-ARCHITETTURA-WORKFLOW.md.",
+  "type": "object",
+  "required": [
+    "source_url", "scraped_at", "make", "model",
+    "price_listed_eur", "images", "description_de"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "source_url":   { "type": "string", "format": "uri", "description": "URL annuncio mobile.de" },
+    "source_id":    { "type": "string", "description": "ID annuncio mobile.de (dalla URL)" },
+    "scraped_at":   { "type": "string", "format": "date-time" },
+    "scrape_method":{ "type": "string", "enum": ["playwright", "manual"], "default": "playwright" },
+
+    "make":    { "type": "string", "description": "Marca, es. Mercedes-Benz" },
+    "model":   { "type": "string", "description": "Modello, es. GLA 220" },
+    "variant": { "type": ["string", "null"], "description": "Allestimento, es. 220 d 4MATIC AMG Line" },
+    "title_de":{ "type": ["string", "null"], "description": "Titolo originale tedesco" },
+
+    "year":              { "type": ["integer", "null"], "minimum": 1950, "maximum": 2100, "description": "Anno prima immatricolazione" },
+    "first_registration":{ "type": ["string", "null"], "description": "MM/AAAA come su mobile.de" },
+    "mileage_km":        { "type": ["integer", "null"], "minimum": 0 },
+
+    "price_listed_eur": { "type": "number", "minimum": 0, "description": "Prezzo ESPOSTO su mobile.de in EUR (base del calcolo prezzo finale)" },
+    "price_is_gross":   { "type": ["boolean", "null"], "description": "true se 'Bruttopreis' / IVA esposta" },
+    "vat_deductible":   { "type": ["boolean", "null"], "description": "MwSt. ausweisbar" },
+
+    "fuel":      { "type": ["string", "null"], "description": "Alimentazione (normalizzata IT-friendly: Diesel/Benzina/Ibrida/Elettrica/GPL/Metano)" },
+    "gearbox":   { "type": ["string", "null"], "description": "Cambio: Manuale/Automatico" },
+    "power_kw":  { "type": ["integer", "null"] },
+    "power_hp":  { "type": ["integer", "null"] },
+    "body_type": { "type": ["string", "null"], "description": "Carrozzeria: SUV/Berlina/Station Wagon/Coupé/Cabrio…" },
+    "drivetrain":{ "type": ["string", "null"], "description": "Trazione: Anteriore/Posteriore/Integrale" },
+    "doors":     { "type": ["integer", "null"] },
+    "seats":     { "type": ["integer", "null"] },
+    "color":     { "type": ["string", "null"] },
+    "color_manufacturer": { "type": ["string", "null"] },
+    "interior":  { "type": ["string", "null"] },
+    "emission_class": { "type": ["string", "null"] },
+    "co2_g_km":  { "type": ["number", "null"] },
+    "vin":       { "type": ["string", "null"] },
+
+    "equipment_de": {
+      "type": "array",
+      "description": "Lista optional/dotazioni in tedesco (verbatim dall'annuncio). Half B la traduce — NON aggiungere voci non presenti.",
+      "items": { "type": "string" }
+    },
+    "description_de": { "type": "string", "description": "Descrizione testuale originale (tedesco), verbatim" },
+
+    "raw_specs": {
+      "type": "object",
+      "description": "Coppie chiave-valore grezze (DE) dalla scheda tecnica, per audit/fallback.",
+      "additionalProperties": { "type": ["string", "number", "boolean", "null"] }
+    },
+
+    "seller": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name":     { "type": ["string", "null"] },
+        "type":     { "type": ["string", "null"], "description": "Händler/Privat" },
+        "location": { "type": ["string", "null"] },
+        "country":  { "type": ["string", "null"], "default": "DE" }
+      }
+    },
+
+    "images": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Tutte le foto dell'annuncio, in ordine. local_path è relativo a runs/<id>/.",
+      "items": {
+        "type": "object",
+        "required": ["index", "original_url", "local_path"],
+        "additionalProperties": false,
+        "properties": {
+          "index":        { "type": "integer", "minimum": 0 },
+          "original_url":  { "type": "string", "format": "uri" },
+          "local_path":    { "type": "string", "description": "es. foto/01.jpg" },
+          "width":         { "type": ["integer", "null"] },
+          "height":        { "type": ["integer", "null"] },
+          "is_cover":      { "type": "boolean", "default": false }
+        }
+      }
+    },
+
+    "warnings": {
+      "type": "array",
+      "description": "Note di estrazione non bloccanti (campo mancante, foto saltata, ecc.)",
+      "items": { "type": "string" }
+    }
+  }
+}
