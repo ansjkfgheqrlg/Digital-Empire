@@ -84,7 +84,7 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   **✅ HALF B (Gael) COMPLETA e verificata (2026-07-01, CP-20260701-001):** S3 `translate_copy.py`+`glossary_de_it.py` (traduzione deterministica DE→IT ~150 termini),
   S5 `render_pdf.py`+`templates/preventivo.html` (motore Playwright), QA `qa_gate.py` (Gate A/B/C/D bloccanti), RULES R3/R5/R6, 6 agenti CF-grade (42 file), CATALOG aggiornato (Half B ✅).
   **Test end-to-end reale `run.py --manual` (BMW 320d) → PDF 63 KB, 4 gate ALL GREEN** (0 tedesco, prezzo 26.900→30.707 € ricalcolo indipendente), PDF ispezionato. €0 API (gancio LLM OFF, Art.4.3).
-  **🟢 PreventivoForge: Half A + Half B COMPLETE.** RESTA A MAX (non bloccante): (a) wiring gate B/C/D in `run.py` (3 chiamate dopo S3/S4/S5, passando `dealer` — vedi HANDOFF §Integrazione); (b) primo run su URL mobile.de REALE; (c) dati dealer reali in config.
+  **🟢 PreventivoForge: COMPLETO e testato END-TO-END (Max, 2026-07-01, CP-20260701-002).** Gate B/C/D wirati in `run.py` (helper `_gate`), fix UTF-8 console. Test `--manual` GLA → PDF 60KB, **4 gate verdi**, 33.900→37.917 €, PDF ispezionato OK. RESTA (non bloccante): (a) validare scraping LIVE sul PC cliente (qui bloccato da anti-bot+IP datacenter — ambientale, non bug); (b) dati reali dealer in config; (c) allineare stile PDF al riferimento BMW Z4.
   Seam CONGELATO = `preventivo-forge/schema/listing.schema.json` (NON toccato). Scope Max/Gael: SOLO sotto `Clienti/Prof Autocad/`.
   **RIPRESA GAEL dopo GO Max:** scelta prossimo ecosistema Empire (05-MULTI-BUSINESS / split 06).
 - 🔴 **GAEL STEP 5 ATTIVO ORA (2026-06-18):** dopo 04-MARKETING, costruisco **03-CONTENT-FACTORY**

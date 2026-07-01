@@ -3,9 +3,9 @@
 # profilo browser persistente (sessione/cookie mobile.de)
 browser-profile/
 .playwright/
-# artefatti di run pesanti/transitori
-runs/*/foto/
-runs/*/*.pdf
+# artefatti di run (transitori, locali): si versiona solo la cartella vuota
+runs/*/
+!runs/.gitkeep
 # python
 __pycache__/
 *.pyc

@@ -21,6 +21,13 @@ import importlib
 import sys
 from pathlib import Path
 
+# console UTF-8 (su Windows cp1252 print di €/emoji va in UnicodeEncodeError)
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 # rende importabili i moduli in implementation/
 sys.path.insert(0, str(Path(__file__).resolve().parent / "implementation"))
 
@@ -59,6 +66,7 @@ def main() -> int:
     url = args.url or f"file://{Path(args.manual).resolve()}"
     ctx = RunContext(url, run_id=args.run_id)
     ctx.logger.info("=== PreventivoForge run %s | dealer=%s ===", ctx.run_id, dealer["display_name"])
+    qa = _optional("qa_gate")  # Half B: gate A/B/C/D (se presente)
 
     # ---- S1 SCRAPING -------------------------------------------------------
     ctx.set_step("S1_scraping", "running")
@@ -80,12 +88,9 @@ def main() -> int:
     ctx.set_step("S2_parsing", "done" if not schema_errs else "warning",
                  "; ".join(schema_errs[:3]))
 
-    # ---- GATE A (estrazione) ----------------------------------------------
-    if not _gate_extraction(ctx, listing):
-        ctx.set_step("GATE_A_extraction", "blocked", "estrazione incompleta")
-        ctx.logger.error("GATE A rosso: estrazione incompleta. Stop.")
+    # ---- GATE A (estrazione) — qa_gate.gate_a se presente, altrimenti check minimo ------
+    if not _gate(ctx, qa, "A", "gate_a", dealer, fallback=lambda: _gate_extraction(ctx, listing)):
         return 3
-    ctx.set_step("GATE_A_extraction", "passed")
 
     # ---- S3 TRANSLATE+COPY (Half B / Gael, opzionale) ----------------------
     translate = _optional("translate_copy")
@@ -95,6 +100,12 @@ def main() -> int:
         ctx.set_step("S3_translate_copy", "done")
     else:
         ctx.set_step("S3_translate_copy", "skipped", "Half B non presente (handoff Gael)")
+
+    # ---- GATE B (traduzione) — solo se S3 ha girato -----------------------
+    if translate and hasattr(translate, "translate"):
+        if not _gate(ctx, qa, "B", "gate_b", dealer):
+            ctx.logger.error("GATE B rosso: traduzione non conforme. Stop.")
+            return 5
 
     # ---- S4 PRICING (Half A / Max) ----------------------------------------
     ctx.set_step("S4_pricing", "running")
@@ -106,12 +117,21 @@ def main() -> int:
         ctx.logger.error("S4 fallito: %s", exc)
         return 4
 
+    # ---- GATE C (prezzo, ricalcolo indipendente) --------------------------
+    if not _gate(ctx, qa, "C", "gate_c", dealer):
+        ctx.logger.error("GATE C rosso: prezzo non riproducibile. Stop.")
+        return 6
+
     # ---- S5 PDF RENDER (Half B / Gael, opzionale) -------------------------
     render = _optional("render_pdf")
     if render and hasattr(render, "render"):
         ctx.set_step("S5_pdf_render", "running")
         pdf_path = render.render(ctx, dealer)
         ctx.set_step("S5_pdf_render", "done", str(pdf_path))
+        if not _gate(ctx, qa, "D", "gate_d", dealer):
+            ctx.logger.error("GATE D rosso: PDF non consegnabile.")
+            print("\n⛔ Gate D rosso: PDF NON consegnabile (vedi log).")
+            return 7
         print(f"\n✅ Preventivo PDF: {pdf_path}")
     else:
         ctx.set_step("S5_pdf_render", "skipped", "Half B non presente (handoff Gael)")
@@ -121,6 +141,25 @@ def main() -> int:
     print(f"  listing.json     -> {ctx.listing_path}")
     print(f"  listing_it.json  -> {ctx.listing_it_path}")
     return 0
+
+
+def _gate(ctx, qa, name: str, fn: str, dealer, fallback=None) -> bool:
+    """Esegue un gate di Half B (qa_gate) se presente; altrimenti fallback/skip."""
+    step = f"GATE_{name}"
+    if qa is not None and hasattr(qa, fn):
+        ok, issues = getattr(qa, fn)(ctx, dealer)
+        ctx.set_step(step, "passed" if ok else "blocked", "; ".join(issues[:5]))
+        if not ok:
+            ctx.logger.error("GATE %s rosso: %s", name, "; ".join(issues))
+        return ok
+    if fallback is not None:
+        ok = bool(fallback())
+        ctx.set_step(step, "passed" if ok else "blocked", "check minimo built-in")
+        if not ok:
+            ctx.logger.error("GATE %s rosso (check minimo).", name)
+        return ok
+    ctx.set_step(step, "skipped", "qa_gate assente")
+    return True
 
 
 def _gate_extraction(ctx: RunContext, listing: dict) -> bool:
