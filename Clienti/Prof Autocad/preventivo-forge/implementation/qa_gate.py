@@ -247,10 +247,10 @@ def gate_img(ctx: RunContext, dealer: dict[str, Any] | None = None) -> tuple[boo
             n_in_pdf = html.count('class="photo-box"')
             if n_in_pdf != len(images):
                 issues.append(f"foto nel PDF ({n_in_pdf}) != foto annuncio ({len(images)})")
-            if "object-fit: cover" in html:
-                issues.append("R-09 violata: uso di 'cover' (le foto verrebbero ritagliate)")
-            if "object-fit: contain" not in html:
-                issues.append("R-09: le foto non usano 'contain' (rischio crop)")
+            # R-09 (agg. 2026-07-02, dir. Gael): le foto riempiono il riquadro con ritaglio
+            # pulito e UNIFORME (cover, 2/pagina). Verifica che l'impaginazione sia definita.
+            if "object-fit:" not in html:
+                issues.append("le foto non hanno un fit definito (rischio impaginazione irregolare)")
         except Exception as exc:  # noqa: BLE001
             issues.append(f"verifica render foto fallita: {exc}")
     return (not issues), issues

@@ -8,13 +8,15 @@
 - **Blocca:** sì
 
 ## Missione
-Garantire che nel PDF ci siano **TUTTE** le foto dell'annuncio, **complete** (mai tagliate),
-nitide e ben impaginate. È la difesa della regola sacra più delicata (R-09).
+Garantire che nel PDF ci siano **TUTTE** le foto dell'annuncio, **grandi, nitide e uniformi**,
+2 per pagina. È la difesa della regola sacra più delicata (R-09).
 
 ## Cosa controlla
 - `numero foto nel PDF == numero foto in listing.json.images` (nessuna esclusa).
 - Ogni foto è presente su disco (`runs/<id>/foto/`) e ha risoluzione decente (lato ≥ 300px).
-- **Nessun crop**: il template usa `object-fit: contain`, mai `cover` (verifica sull'HTML renderizzato).
+- **Impaginazione piena e uniforme**: le foto riempiono il riquadro con ritaglio pulito e centrato
+  (`object-fit: cover`, 2/pagina) — no bande bianche, no foto piccole/deformate.
+  *(R-09 aggiornata 2026-07-02 su indicazione di Gael: prima era "mai ritagliate"/`contain`.)*
 
 ## Confini
 - NON reimpagina: verifica e blocca. La correzione è in `render_pdf.py`/`templates`.

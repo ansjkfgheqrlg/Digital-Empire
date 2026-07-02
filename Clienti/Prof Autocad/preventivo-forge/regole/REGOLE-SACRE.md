@@ -41,12 +41,17 @@ Sezione "Condizioni di garanzia" (barra scura) con elenco (es. Tagliandi certifi
 Blocco prezzo in stile modello: riga grande **"Totale in strada (Iva inclusa) € <finale>"** +
 righe di dettaglio del calcolo. Nota a piè: "Offerta valida salvo disponibilità del fornitore".
 
-## R-09 — IMMAGINI: TUTTE, COMPLETE, PERFETTE (regola critica)
+## R-09 — IMMAGINI: TUTTE, GRANDI, UNIFORMI (regola critica)
 - **TUTTE** le foto dell'annuncio devono essere nel PDF. Nessuna esclusa.
-- Le immagini **NON devono mai essere tagliate/croppate**: si vede l'auto per intero (fit completo, mai `cover`).
-- Grandezza **perfetta e uniforme**, ben visibili, alta qualità, proporzioni originali rispettate.
-- Impaginazione ordinata (nel modello: 2 foto grandi per pagina).
-- Verifica: `qa-immagini` controlla `numero foto nel PDF == numero foto annuncio` e che nessuna sia ritagliata.
+- **2 foto grandi per pagina**, dimensione **uniforme**, ben visibili, alta qualità.
+- Le foto **riempiono il riquadro** con un **ritaglio pulito e centrato** (`object-fit: cover`,
+  `object-position: center`): niente bande bianche, niente immagini piccole o deformate.
+  > ⚠️ **Aggiornamento 2026-07-02 (indicazione di Gael):** prima la regola imponeva "mai ritagliate"
+  > (`contain`), ma le foto risultavano piccole con bande bianche. Nuova direttiva: **ritaglio pulito
+  > che riempie il riquadro** (crop centrato uniforme), preferendo un layout pieno ed elegante.
+  > Il ritaglio centrato di foto in orizzontale mantiene comunque l'auto ben visibile.
+- Verifica: `qa-immagini` controlla `numero foto nel PDF == numero foto annuncio`, presenza su disco,
+  risoluzione decente e impaginazione uniforme (2/pagina, riquadro pieno).
 
 ## R-10 — ULTIMA PAGINA = SOLO LOGO
 L'ultima pagina contiene di nuovo **solo il logo** della concessionaria, centrato (chiusura).
