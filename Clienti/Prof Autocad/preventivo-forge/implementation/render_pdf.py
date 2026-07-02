@@ -72,6 +72,9 @@ def _render_html(ctx: RunContext, listing: dict, content: dict, price: dict,
                               for img in images) if u]
     photo_pages = [photo_uris[i:i + PHOTOS_PER_PAGE]
                    for i in range(0, len(photo_uris), PHOTOS_PER_PAGE)]
+    # R-09: MINIMO 2 foto per pagina. Se l'ultima resta con 1, la accorpa alla precedente (pagina da 3).
+    if len(photo_pages) >= 2 and len(photo_pages[-1]) == 1:
+        photo_pages[-2].extend(photo_pages.pop())
 
     ctx_data = {
         "accent": prev.get("accent_color", ACCENT),
