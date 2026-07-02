@@ -89,6 +89,10 @@ def run_pipeline(url: str, dealer: str, log_queue: "queue.Queue[str]" | None = N
     """Esegue la pipeline PreventivoForge su un URL. Ritorna (ok, pdf_path, messaggio).
     Cattura i log della pipeline nella coda (per mostrare i passaggi in diretta)."""
     os.chdir(BASE_DIR)  # run.py lavora con path relativi al progetto
+    # Scraping con Chrome VISIBILE (headful): l'anti-bot Akamai di mobile.de blocca l'headless.
+    # Su IP residenziale il browser reale di solito passa; se compare un captcha, l'utente lo risolve
+    # nella finestra. (Solo lo scraping S1 lo legge; il render PDF resta headless a parte.)
+    os.environ["PLAYWRIGHT_HEADLESS"] = "false"
     handler = None
     if log_queue is not None:
         handler = _QueueLogHandler(log_queue)
