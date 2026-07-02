@@ -1,11 +1,14 @@
 # STATO EMPIRE -- aggiornato 2026-06-30 (Max — CLIENTE Prof Autocad)
 
-## ✅ GAEL — HALF B PreventivoForge FATTA (2026-07-01) — era il task del 2026-06-30 di Max
-**Task completato:** Half B di PreventivoForge (cliente Prof Autocad) COSTRUITA e verificata (CP-20260701-001).
-S3 traduzione+copy, S5 PDF preventivo, 4 agenti QA + `qa_gate.py`, template `preventivo.html`, R3/R5/R6, 6 agenti CF-grade.
-**DoD RAGGIUNTA:** `run.py --manual` (BMW 320d) → `preventivo_*.pdf` 63 KB, **4 gate ALL GREEN** → CP+STATO+push fatti.
-Half A (scraper/parser/pricer/regia) NON toccata (ADR-003). Schema CONGELATO rispettato.
-**PENDING MAX (non bloccante):** wiring gate B/C/D in `run.py` (Half A) + primo run su URL mobile.de REALE.
+## ✅ GAEL — PreventivoForge Half B + APP DESKTOP FATTE (2026-07-02)
+**Half B (CP-20260701-001):** S3 traduzione+copy, S5 PDF, 4 QA + `qa_gate.py`, template, R3/R5/R6, 6 agenti CF-grade. 4 gate verdi.
+**App Desktop (CP-20260702-002, task "app per PC" di Max, guida §6):** `app.py` GUI Tkinter argento/minimal che wrappa `run.py`
+(link→PDF, avanzamento live, apre il PDF); `avvia-app.bat` (uso subito) + `build_exe.bat`+spec PyInstaller (.exe autonomo).
+**Motore PDF reso .exe-ready:** `render_pdf.py` ora rende via `cdp`/Chrome (no Playwright), con `--remote-allow-origins=*`.
+Selftest app→run: **Gate A/B/C/D verdi**, PDF via cdp-chrome. Half A NON toccata (cdp USATO, non modificato).
+**SEGNALATO A MAX (Half A, non bloccante):** (1) aggiungere `--remote-allow-origins=*` in `cdp.launch` (Chrome ≥111);
+(2) `--manual` col nuovo parser estrae dotazioni solo se l'HTML ha `window.__INITIAL_STATE__`. Dettagli in `preventivo-forge/APP-DESKTOP.md`.
+**PENDING (non bloccante):** build+test finale dell'.exe sull'ambiente reale.
 **RIPRESA GAEL (dopo GO Max):** scelta prossimo ecosistema Empire (05-MULTI-BUSINESS / split 06).
 
 ## 🚨 PIVOT V2 (ADR-007 — leggere PRIMA di qualsiasi cosa)

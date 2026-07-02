@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-07-02] — 🖥️ Prof Autocad: PreventivoForge App Desktop (GUI) + PDF .exe-ready (Gael, CP-20260702-002)
+
+- COSTRUITO: l'**app per PC** con interfaccia grafica (task di Max, guida §6). `app.py` — GUI Tkinter argento/minimal che avvolge `run.py` (incolli link mobile.de → avanzamento live → il PDF si apre da solo). `avvia-app.bat` (uso subito con Python) + `build_exe.bat`+`preventivo-forge.spec` (app `.exe` autonoma via PyInstaller, per il concessionario senza installare nulla). Guida `APP-DESKTOP.md`.
+- MOTORE PDF .exe-ready: `render_pdf.py` ora rende via `cdp`/Chrome (`Page.printToPDF`, no Playwright) — allinea l'obiettivo "app leggera" di Max. Fix Chrome ≥111: `--remote-allow-origins=*`.
+- VERIFICATO: selftest app→run su fixture `__INITIAL_STATE__` → **4 gate verdi**, PDF via cdp-chrome (81 KB); GUI costruita ok.
+- CONFINE ADR-003: Half A NON toccata (`cdp.py` USATO, non modificato). Segnalati a Max 2 rifiniti Half A (flag remote-allow-origins in cdp.launch; `--manual` richiede `__INITIAL_STATE__`).
+- INGEST: 1 pagina wiki aggiornata (progetto → app desktop).
+
 ## [2026-07-01] — 🚗 CLIENTE Prof Autocad: PreventivoForge Half B COMPLETA (Gael, CP-20260701-001)
 
 - COSTRUITO: la metà "Contenuto · Output · Qualità" del primo prodotto cliente. `Clienti/Prof Autocad/preventivo-forge/` — S3 traduzione+copy (`translate_copy.py` + `glossary_de_it.py` ~150 termini), S5 render PDF (`render_pdf.py` + `templates/preventivo.html`, motore Playwright), QA `qa_gate.py` (Gate A/B/C/D bloccanti), 3 RULES (R3/R5/R6), 6 agenti CF-grade (42 file) + CATALOG.

@@ -41,6 +41,25 @@ for _p in (IMPL_DIR, Path(getattr(sys, "_MEIPASS", BASE_DIR)) / "implementation"
         sys.path.insert(0, str(_p))
 
 
+def _fix_frozen_paths() -> None:
+    """Nell'.exe (frozen) i dati bundlati stanno in _MEIPASS (sola lettura). Le cartelle
+    SCRIVIBILI (runs/, logs/) devono stare ACCANTO all'eseguibile, non nel temp bundle.
+    common.py (Half A) le calcola da __file__ → qui le reindirizziamo senza toccare quel file."""
+    if not getattr(sys, "frozen", False):
+        return
+    try:
+        import common
+        common.RUNS_DIR = BASE_DIR / "runs"
+        common.LOGS_DIR = BASE_DIR / "logs"
+        common.RUNS_DIR.mkdir(parents=True, exist_ok=True)
+        common.LOGS_DIR.mkdir(parents=True, exist_ok=True)
+    except Exception:
+        pass
+
+
+_fix_frozen_paths()
+
+
 # --------------------------------------------------------------------------- #
 # Motore: esegue la pipeline (run.main) in-process
 # --------------------------------------------------------------------------- #

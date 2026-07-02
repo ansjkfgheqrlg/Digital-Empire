@@ -10,6 +10,10 @@ runs/*/
 __pycache__/
 *.pyc
 *.pyo
+# artefatti build App .exe (PyInstaller) — pesanti, non vanno in git
+build/
+dist/
+*.exe
 # log
 logs/*.log
 *.log
