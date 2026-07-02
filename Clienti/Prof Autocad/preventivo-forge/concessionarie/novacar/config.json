@@ -1,0 +1,33 @@
+{
+  "dealer_id": "novacar",
+  "display_name": "Novacar srl",
+  "logo_path": "logo.png",
+  "legal": {
+    "company": "Novacar srl",
+    "vat": "14411130967",
+    "registered_office": "via Carlo Poma 7, Milano, 20129"
+  },
+  "contacts": {
+    "phone": "352 000 3092",
+    "email": "novacarsrl.info@gmail.com",
+    "pec": "novacar-srl@legalmail.it",
+    "address": "via Carlo Poma 7, Milano, 20129",
+    "website": ""
+  },
+  "pricing": {
+    "_formula": "finale = round(esposto * (1 + surcharge_pct/100) + fixed_1 + fixed_2)",
+    "surcharge_pct": 3,
+    "fixed_1": 1500,
+    "fixed_2": 1500
+  },
+  "preventivo": {
+    "language": "it",
+    "currency": "EUR",
+    "validity_days": 15,
+    "template": "novacar",
+    "footer_note": "Offerta valida salvo disponibilità del fornitore",
+    "show_price_breakdown_to_customer": true,
+    "accent_color": "#2b2b2b",
+    "highlight_color": "#f2a200"
+  }
+}

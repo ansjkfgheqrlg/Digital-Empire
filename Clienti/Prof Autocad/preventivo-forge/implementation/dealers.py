@@ -15,7 +15,7 @@ from typing import Any
 from common import PROJECT_ROOT, load_config, load_json
 
 DEALERS_DIR = PROJECT_ROOT / "concessionarie"
-DEFAULT_DEALER = "prof-autocad"
+DEFAULT_DEALER = "novacar"
 
 
 def list_dealers() -> list[str]:

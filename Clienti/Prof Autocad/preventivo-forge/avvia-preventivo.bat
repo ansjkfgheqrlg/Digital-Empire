@@ -10,7 +10,7 @@ echo.
 echo Sto generando il preventivo...
 echo (si aprira' una finestra di Chrome: lasciala lavorare da sola, non chiuderla)
 echo.
-python run.py "%URL%" --dealer prof-autocad
+python run.py "%URL%" --dealer novacar
 echo.
 echo ============================================
 echo    FATTO. Il PDF si e' aperto da solo.

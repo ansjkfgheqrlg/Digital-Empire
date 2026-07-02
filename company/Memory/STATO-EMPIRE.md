@@ -77,6 +77,15 @@ Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
+- 🟠 **GAEL — TASK PRIORITARIO (2026-07-01): App .exe + PDF template Novacar.** Vedi
+  `Clienti/Prof Autocad/preventivo-forge/HANDOFF-GAEL-2.md` + regole inviolabili `.../regole/REGOLE-SACRE.md`.
+  In sintesi: (1) rifare `render_pdf.py`+`templates/` sul **modello Novacar** (pag.1 solo logo, logo in ogni pagina,
+  pag.2 dati azienda+scheda, pag.3 equip+garanzia+"Totale in strada", foto TUTTE e MAI tagliate, ultima pag. solo logo);
+  (2) `render_pdf` usa `cdp.py` (no Playwright, per l'.exe); (3) nuovo agente `qa-immagini` (Gate IMG, R-09);
+  (4) nuovo agente `qa-regole-checker` (Gate R, R-01…R-14); (5) **App .exe GUI minimal ARGENTO** (PyInstaller, no Python/Claude per il cliente).
+  ✅ **MAX ha già fatto:** scraping LIVE reale (Chrome+CDP), parser dati veri, `cdp.py`, dealer **novacar** (dati+logo reali),
+  rimosso placeholder "prof-autocad" (dealer default→novacar), `REGOLE-SACRE.md`, ecosistema `Memory/`, `avvia-preventivo.bat`.
+  ⚠️ Wiring Gate R/IMG in `run.py` = Max (dopo che Gael consegna i gate).
 - 🟣 **MAX — CLIENTE «Prof Autocad» — PreventivoForge (2026-06-30) — primo cliente ufficiale.**
   Workflow: **annuncio mobile.de (DE) → PREVENTIVO italiano (PDF)**, prezzo finale `esposto×1.03+1500+1500` nel titolo,
   **multi-concessionaria** (config per dealer in `preventivo-forge/concessionarie/<id>/`; prima = `prof-autocad`).
