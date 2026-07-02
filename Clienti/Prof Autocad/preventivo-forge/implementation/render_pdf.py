@@ -154,12 +154,19 @@ def _image_data_uri(path: Path | None, max_w: int) -> str | None:
 
 
 # --------------------------------------------------------------------------- #
-# HTML → PDF (Playwright preferito, WeasyPrint fallback)
+# HTML → PDF — motore agnostico: cdp (Chrome del PC) → Playwright → WeasyPrint
 # --------------------------------------------------------------------------- #
 def _html_to_pdf(html: str, out_path: Path, ctx: RunContext) -> str:
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # 1) Playwright
+    # 1) cdp — Chrome installato via DevTools (percorso di PRODUZIONE, .exe-ready senza Playwright).
+    try:
+        _html_to_pdf_cdp(html, out_path, ctx)
+        return "cdp-chrome"
+    except Exception as exc:  # noqa: BLE001
+        ctx.logger.warning("Render via Chrome/cdp non riuscito (%s), provo Playwright...", exc)
+
+    # 2) Playwright (dev)
     try:
         from playwright.sync_api import sync_playwright
 
@@ -178,7 +185,7 @@ def _html_to_pdf(html: str, out_path: Path, ctx: RunContext) -> str:
     except Exception as exc:  # noqa: BLE001
         ctx.logger.warning("Playwright PDF non disponibile (%s), provo WeasyPrint...", exc)
 
-    # 2) WeasyPrint
+    # 3) WeasyPrint (fallback)
     try:
         from weasyprint import HTML  # type: ignore
 
@@ -190,9 +197,61 @@ def _html_to_pdf(html: str, out_path: Path, ctx: RunContext) -> str:
         html_path.write_text(html, encoding="utf-8")
         raise RuntimeError(
             f"Nessun motore PDF disponibile. HTML salvato in {html_path}. "
-            f"Installa Playwright (`pip install playwright && playwright install chromium`) "
-            f"oppure WeasyPrint con le librerie GTK. Dettaglio: {exc}"
+            f"Serve Google Chrome installato (motore cdp) oppure Playwright/WeasyPrint. Dettaglio: {exc}"
         ) from exc
+
+
+def _launch_chrome_for_pdf(chrome: str, port: int, profile: str, url: str):
+    """Lancia Chrome headless per il render PDF con `--remote-allow-origins=*`
+    (Chrome ≥111 rifiuta la connessione WebSocket CDP senza questo flag → handshake 403).
+    NB: stesso flag utile a Half A/cdp.launch per lo scraping su Chrome recente (segnalato a Max)."""
+    import subprocess
+    args = [
+        chrome, f"--remote-debugging-port={port}", f"--user-data-dir={profile}",
+        "--remote-allow-origins=*",
+        "--no-first-run", "--no-default-browser-check",
+        "--disable-blink-features=AutomationControlled", "--disable-features=Translate",
+        "--headless=new", "--disable-gpu", "--hide-scrollbars", url,
+    ]
+    return subprocess.Popen(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
+def _html_to_pdf_cdp(html: str, out_path: Path, ctx: RunContext) -> None:
+    """Render via Chrome DevTools Protocol (modulo cdp di Half A). Nessuna dipendenza pesante:
+    usa il Google Chrome del PC. È il motore che permette l'app .exe (PyInstaller) senza Playwright."""
+    import tempfile
+    import cdp  # modulo Half A/Max: usato, non modificato
+
+    chrome = cdp.find_chrome()
+    if not chrome:
+        raise RuntimeError("Google Chrome non trovato sul PC.")
+
+    # HTML self-contained (immagini in base64) → file locale → Chrome lo apre e stampa in PDF
+    html_file = out_path.with_name(out_path.stem + "_print.html")
+    html_file.write_text(html, encoding="utf-8")
+
+    profile = tempfile.mkdtemp(prefix="pf-render-")
+    port = cdp.free_port()
+    ctx.logger.info("Render PDF via Chrome headless (cdp, porta %s)...", port)
+    proc = _launch_chrome_for_pdf(chrome, port, profile, html_file.as_uri())
+    page = None
+    try:
+        cdp.wait_devtools(port)
+        page = cdp.Page(port)
+        # attende che il documento sia pronto (immagini inline già presenti nel file)
+        page.wait_html(lambda h: "preventivo" in (h or "").lower() or len(h or "") > 2000, timeout=15)
+        pdf_bytes = page.print_pdf(print_background=True)
+        out_path.write_bytes(pdf_bytes)
+    finally:
+        if page is not None:
+            page.close()
+        cdp.kill_tree(proc)
+        try:
+            html_file.unlink(missing_ok=True)
+            import shutil
+            shutil.rmtree(profile, ignore_errors=True)
+        except Exception:
+            pass
 
 
 # --------------------------------------------------------------------------- #
