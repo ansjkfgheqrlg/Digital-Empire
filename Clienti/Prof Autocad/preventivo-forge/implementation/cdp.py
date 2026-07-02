@@ -64,6 +64,7 @@ def free_port() -> int:
 def launch(chrome: str, port: int, profile: str, headless: bool, url: str | None = None):
     args = [
         chrome, f"--remote-debugging-port={port}", f"--user-data-dir={profile}",
+        "--remote-allow-origins=*",  # Chrome >=111: necessario per il websocket CDP
         "--no-first-run", "--no-default-browser-check",
         "--disable-blink-features=AutomationControlled", "--disable-features=Translate",
     ]

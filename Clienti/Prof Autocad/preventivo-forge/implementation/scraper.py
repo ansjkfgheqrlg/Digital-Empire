@@ -87,6 +87,7 @@ def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | No
     profile = tempfile.mkdtemp(prefix="pf-chrome-")   # profilo dedicato per-run (evita lock/reuse)
     args = [
         chrome, f"--remote-debugging-port={port}", f"--user-data-dir={profile}",
+        "--remote-allow-origins=*",  # Chrome >=111: necessario per il client CDP
         "--no-first-run", "--no-default-browser-check", "--start-maximized",
         "--disable-blink-features=AutomationControlled", "--disable-features=Translate",
     ]
