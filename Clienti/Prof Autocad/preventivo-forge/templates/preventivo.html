@@ -4,169 +4,152 @@
 <meta charset="utf-8">
 <title>Preventivo — {{ title }}</title>
 <style>
-  @page { size: A4; margin: 14mm 12mm; }
-  * { box-sizing: border-box; }
-  body {
-    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-    color: #1c2430; font-size: 11px; line-height: 1.5; margin: 0;
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #1c1c1c; }
+  .page {
+    width: 210mm; min-height: 297mm; padding: 16mm 15mm 14mm 15mm;
+    position: relative; page-break-after: always; overflow: hidden;
   }
-  h1, h2, h3 { margin: 0; font-weight: 700; color: #0f1b2d; }
-  .muted { color: #6b7684; }
-  .accent { color: {{ accent }}; }
+  .page:last-child { page-break-after: auto; }
 
-  /* Header */
-  header {
-    display: flex; align-items: center; justify-content: space-between;
-    border-bottom: 3px solid {{ accent }}; padding-bottom: 10px; margin-bottom: 14px;
+  /* --- Pagine SOLO logo (cover + chiusura) --- */
+  .logo-only {
+    display: flex; align-items: center; justify-content: center;
+    min-height: 297mm; padding: 0;
   }
-  header .brand { display: flex; align-items: center; gap: 12px; }
-  header .logo { height: 46px; width: auto; object-fit: contain; }
-  header .dealer-name { font-size: 17px; font-weight: 700; }
-  header .contacts { text-align: right; font-size: 10px; color: #4a5566; }
-  header .contacts div { margin: 1px 0; }
+  .logo-only img { max-width: 62%; max-height: 46%; object-fit: contain; }
 
-  /* Titolo + prezzo */
-  .title-band {
-    background: #0f1b2d; color: #fff; border-radius: 8px;
-    padding: 12px 16px; display: flex; justify-content: space-between; align-items: center;
-    margin-bottom: 14px;
+  /* --- Header pagine di contenuto --- */
+  .head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8mm; }
+  .head .logo-sm { height: 78px; width: auto; object-fit: contain; }
+  .company { text-align: left; font-size: 10.5px; line-height: 1.5; font-style: italic; }
+  .company .name { font-style: italic; font-weight: 700; font-size: 12px; }
+  .company b { font-weight: 700; }
+
+  /* --- Titolo auto --- */
+  .car-title { font-size: 25px; font-weight: 600; color: #1c1c1c; margin: 4mm 0 8mm 0; }
+
+  /* --- Barra sezione scura --- */
+  .bar {
+    background: {{ accent }}; color: #ffffff; font-size: 13px; letter-spacing: .3px;
+    padding: 9px 14px; margin: 6mm 0 4mm 0;
   }
-  .title-band .car-title { font-size: 16px; font-weight: 700; }
-  .title-band .subtitle { font-size: 10px; color: #b8c2d0; margin-top: 2px; }
-  .title-band .price { font-size: 22px; font-weight: 800; white-space: nowrap; color: #fff; }
+  .bar.light { background: #d9d9d9; color: #1c1c1c; }
 
-  /* Cover */
-  .cover { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 14px; }
-
-  /* Layout a colonne */
-  .cols { display: flex; gap: 16px; margin-bottom: 14px; }
-  .col { flex: 1; }
-  .section-title {
-    font-size: 12px; text-transform: uppercase; letter-spacing: .5px;
-    color: {{ accent }}; border-bottom: 1px solid #e3e8ef; padding-bottom: 4px; margin-bottom: 8px;
-  }
-
-  /* Scheda tecnica */
+  /* --- Tabella scheda tecnica --- */
   table.specs { width: 100%; border-collapse: collapse; }
-  table.specs td { padding: 4px 6px; border-bottom: 1px solid #eef1f5; vertical-align: top; }
-  table.specs td.k { color: #6b7684; width: 46%; }
-  table.specs td.v { font-weight: 600; }
+  table.specs td { padding: 9px 14px; font-size: 12.5px; }
+  table.specs td.k { width: 46%; }
+  table.specs tr:nth-child(odd) td { background: #efefef; }
+  table.specs tr:nth-child(even) td { background: #ffffff; }
 
-  /* Highlights */
-  ul.highlights { list-style: none; padding: 0; margin: 0; }
-  ul.highlights li {
-    display: inline-block; background: #eef4ff; color: #14315f;
-    border-radius: 20px; padding: 4px 10px; margin: 0 4px 5px 0; font-size: 10px; font-weight: 600;
+  /* --- Elenchi --- */
+  ul.bullets { list-style: none; padding: 2mm 0 0 4mm; }
+  ul.bullets li { font-size: 12.5px; margin: 3px 0; padding-left: 16px; position: relative; }
+  ul.bullets li::before { content: "•"; position: absolute; left: 0; color: {{ accent }}; }
+  ul.sect { list-style: none; padding: 2mm 0 0 6mm; }
+  ul.sect li { font-size: 12.5px; margin: 3px 0; padding-left: 16px; position: relative; }
+  ul.sect li::before { content: "§"; position: absolute; left: 0; color: #6b6b6b; }
+
+  /* --- Blocco prezzo --- */
+  .total-row {
+    display: flex; justify-content: space-between; align-items: center;
+    background: #d9d9d9; padding: 12px 16px; margin-top: 4mm;
   }
+  .total-row .lbl { font-size: 18px; font-weight: 700; }
+  .total-row .val { font-size: 18px; font-weight: 700; }
+  table.price { width: 100%; border-collapse: collapse; }
+  table.price td { padding: 9px 16px; font-size: 12.5px; }
+  table.price tr:nth-child(odd) td { background: #efefef; }
+  table.price td.amt { text-align: right; white-space: nowrap; }
+  .price-note { font-size: 10.5px; color: #6b6b6b; margin-top: 6mm; padding-left: 6mm; }
+  .price-note::before { content: "§ "; color: #6b6b6b; }
 
-  /* Descrizione */
-  .description { text-align: justify; margin-bottom: 6px; }
-
-  /* Dotazioni */
-  ul.equipment { columns: 2; column-gap: 18px; padding-left: 16px; margin: 0; }
-  ul.equipment li { margin: 2px 0; break-inside: avoid; }
-
-  /* Gallery */
-  .gallery { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
-  .gallery img { width: 32%; height: 88px; object-fit: cover; border-radius: 5px; }
-
-  /* Box prezzo */
-  .price-box {
-    border: 1px solid #e3e8ef; border-radius: 8px; padding: 12px 14px; margin-top: 10px;
-    display: flex; justify-content: space-between; align-items: center; background: #f8fafc;
+  /* --- Pagine foto --- */
+  .photos { display: flex; flex-direction: column; gap: 8mm; margin-top: 4mm; }
+  .photo-box {
+    width: 100%; height: 118mm; display: flex; align-items: center; justify-content: center;
+    background: #ffffff;
   }
-  .price-box .final { font-size: 20px; font-weight: 800; color: #0f1b2d; }
-  table.breakdown { font-size: 10px; color: #4a5566; border-collapse: collapse; }
-  table.breakdown td { padding: 1px 8px 1px 0; }
-
-  footer {
-    margin-top: 16px; border-top: 1px solid #e3e8ef; padding-top: 8px;
-    font-size: 9px; color: #6b7684; text-align: center;
-  }
-  .avoid-break { break-inside: avoid; }
+  .photo-box img { max-width: 100%; max-height: 100%; object-fit: contain; }  /* MAI cover (R-09) */
 </style>
 </head>
 <body>
 
-  <header>
-    <div class="brand">
-      {% if logo_data_uri %}<img class="logo" src="{{ logo_data_uri }}" alt="logo">{% endif %}
-      <div class="dealer-name">{{ dealer_name }}</div>
-    </div>
-    <div class="contacts">
-      {% if contacts.phone %}<div>Tel: {{ contacts.phone }}</div>{% endif %}
-      {% if contacts.email %}<div>{{ contacts.email }}</div>{% endif %}
-      {% if contacts.address %}<div>{{ contacts.address }}</div>{% endif %}
-      {% if contacts.website %}<div>{{ contacts.website }}</div>{% endif %}
-    </div>
-  </header>
-
-  <div class="title-band">
-    <div>
-      <div class="car-title">{{ title }}</div>
-      {% if headline %}<div class="subtitle">{{ headline }}</div>{% endif %}
-    </div>
-    <div class="price">{{ price_display }}</div>
+  <!-- PAGINA 1 — SOLO LOGO (R-01) -->
+  <div class="page logo-only">
+    {% if logo_uri %}<img src="{{ logo_uri }}" alt="{{ company.name }}">{% endif %}
   </div>
 
-  {% if cover_data_uri %}<img class="cover" src="{{ cover_data_uri }}" alt="foto copertina">{% endif %}
+  <!-- PAGINA 2 — header + dati azienda + titolo + scheda tecnica (R-02..R-05) -->
+  <div class="page">
+    <div class="head">
+      {% if logo_uri %}<img class="logo-sm" src="{{ logo_uri }}" alt="logo">{% endif %}
+      <div class="company">
+        <div class="name">{{ company.name }}</div>
+        <div><b>P. IVA</b> {{ company.vat }}</div>
+        <div><b>Sede Legale:</b> {{ company.registered_office }}</div>
+        <div><b>cell.</b> {{ company.phone }}</div>
+        <div><b>e-mail</b>: {{ company.email }}</div>
+        {% if company.pec %}<div><b>PEC</b> {{ company.pec }}</div>{% endif %}
+      </div>
+    </div>
 
-  <div class="cols">
-    <div class="col avoid-break">
-      <div class="section-title">Scheda tecnica</div>
-      <table class="specs">
-        {% for k, v in specs.items() %}
-        <tr><td class="k">{{ k }}</td><td class="v">{{ v }}</td></tr>
-        {% endfor %}
-      </table>
-    </div>
-    <div class="col">
-      <div class="section-title">Punti di forza</div>
-      <ul class="highlights">
-        {% for h in highlights %}<li>{{ h }}</li>{% endfor %}
-      </ul>
-      <div class="section-title" style="margin-top:12px;">Descrizione</div>
-      <p class="description">{{ description }}</p>
-    </div>
+    <div class="car-title">{{ title }}</div>
+
+    <div class="bar">Scheda tecnica autovettura</div>
+    <table class="specs">
+      {% for row in specs %}
+      <tr><td class="k">{{ row.label }}</td><td class="v">{{ row.value }}</td></tr>
+      {% endfor %}
+    </table>
   </div>
 
-  {% if equipment %}
-  <div class="avoid-break">
-    <div class="section-title">Dotazioni ed equipaggiamenti</div>
-    <ul class="equipment">
+  <!-- PAGINA 3 — equipaggiamento + garanzia + prezzo (R-06..R-08) -->
+  <div class="page">
+    <div class="head">
+      {% if logo_uri %}<img class="logo-sm" src="{{ logo_uri }}" alt="logo">{% endif %}
+    </div>
+
+    <div class="bar">Equipaggiamento principale</div>
+    <ul class="bullets">
       {% for e in equipment %}<li>{{ e }}</li>{% endfor %}
     </ul>
-  </div>
-  {% endif %}
 
-  {% if gallery %}
-  <div class="avoid-break">
-    <div class="section-title" style="margin-top:12px;">Galleria fotografica</div>
-    <div class="gallery">
-      {% for img in gallery %}<img src="{{ img }}" alt="foto">{% endfor %}
-    </div>
-  </div>
-  {% endif %}
+    <div class="bar" style="margin-top:10mm;">Condizioni di garanzia</div>
+    <ul class="sect">
+      {% for w in warranty %}<li>{{ w }}</li>{% endfor %}
+    </ul>
 
-  <div class="price-box avoid-break">
-    <div>
-      <div class="muted" style="font-size:10px;">Prezzo chiavi in mano</div>
-      <div class="final">{{ price_display }}</div>
+    <div class="total-row" style="margin-top:12mm;">
+      <div class="lbl">Totale in strada (Iva inclusa)</div>
+      <div class="val">€ {{ price.total }}</div>
     </div>
-    {% if show_breakdown and breakdown %}
-    <table class="breakdown">
-      <tr><td>Prezzo esposto</td><td>{{ breakdown.listed }} €</td></tr>
-      <tr><td>Maggiorazione ({{ breakdown.pct }}%)</td><td>{{ breakdown.surcharge }} €</td></tr>
-      <tr><td>Servizi</td><td>{{ breakdown.fixed }} €</td></tr>
-      <tr><td><strong>Totale</strong></td><td><strong>{{ price_display }}</strong></td></tr>
+    <table class="price">
+      {% for line in price.lines %}
+      <tr><td>{{ line.label }}</td><td class="amt">{{ line.amount }} €</td></tr>
+      {% endfor %}
     </table>
-    {% endif %}
+    <div class="price-note">{{ price.note }}</div>
   </div>
 
-  <footer>
-    {% if validity_days %}Preventivo valido {{ validity_days }} giorni dalla data di emissione{% if generated_at %} ({{ generated_at }}){% endif %}. {% endif %}
-    {{ footer_note }}
-  </footer>
+  <!-- PAGINE FOTO — tutte, 2 per pagina, mai tagliate (R-09) -->
+  {% for pg in photo_pages %}
+  <div class="page">
+    <div class="head">
+      {% if logo_uri %}<img class="logo-sm" src="{{ logo_uri }}" alt="logo">{% endif %}
+    </div>
+    <div class="photos">
+      {% for img in pg %}<div class="photo-box"><img src="{{ img }}" alt="foto"></div>{% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <!-- ULTIMA PAGINA — SOLO LOGO (R-10) -->
+  <div class="page logo-only">
+    {% if logo_uri %}<img src="{{ logo_uri }}" alt="{{ company.name }}">{% endif %}
+  </div>
 
 </body>
 </html>

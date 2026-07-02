@@ -136,9 +136,9 @@ def _open_file(path: Path) -> None:
 def _list_dealers() -> list[str]:
     d = BASE_DIR / "concessionarie"
     if not d.exists():
-        return ["prof-autocad"]
+        return ["novacar"]
     out = sorted(p.name for p in d.iterdir() if (p / "config.json").exists())
-    return out or ["prof-autocad"]
+    return out or ["novacar"]
 
 
 # --------------------------------------------------------------------------- #
@@ -314,6 +314,6 @@ if __name__ == "__main__":
         foto = sys.argv[3] if len(sys.argv) > 3 else ""
         os.chdir(BASE_DIR)
         import run as run_mod
-        sys.argv = ["run.py", "--manual", html, "--foto", foto, "--dealer", "prof-autocad"]
+        sys.argv = ["run.py", "--manual", html, "--foto", foto, "--dealer", "novacar"]
         raise SystemExit(run_mod.main())
     raise SystemExit(main_gui())

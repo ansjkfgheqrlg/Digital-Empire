@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-07-02] — 🏁 Novacar: PDF modello Novacar + Gate sacri + App .exe COSTRUITA (Gael, CP-20260702-003)
+
+- COSTRUITO: HANDOFF-GAEL-2 completo. **PDF rifatto ESATTAMENTE sul modello Novacar srl** (cliente reale): pag.1 solo-logo, logo su ogni pagina, dati azienda (P.IVA/PEC), scheda tecnica 12 campi (barra scura/righe alternate), Equipaggiamento+Garanzia, "Totale in strada (Iva inclusa)" con dettaglio, foto 2/pagina **mai tagliate** (`contain`), ultima pagina solo-logo. Rispetta le 14 REGOLE-SACRE.
+- QUALITÀ: 2 nuovi Gate + agenti CF-grade — `qa-immagini` (Gate IMG, R-09: tutte le foto/intere) + `qa-regole-checker` (Gate R, R-01…R-14 → `regole-check.json`). Fix logo trasparente su bianco.
+- APP .EXE: `PreventivoForge.exe` costruita con PyInstaller e **validata** (`--selftest` → dealer Novacar, 4 gate verdi, PDF via Chrome/cdp senza Playwright). Il concessionario copia la cartella e doppio-click, senza installare nulla.
+- VERIFICA: selftest 6/6 gate verdi + 14/14 regole OK; PDF ispezionato = conforme al modello. Half A intatta (ADR-003). €0 API.
+- PENDING Max: wiring Gate IMG/R in run.py + storico-preventivi. INGEST: 1 pagina wiki (progetto → PDF Novacar + app .exe).
+
 ## [2026-07-02] — 🖥️ Prof Autocad: PreventivoForge App Desktop (GUI) + PDF .exe-ready (Gael, CP-20260702-002)
 
 - COSTRUITO: l'**app per PC** con interfaccia grafica (task di Max, guida §6). `app.py` — GUI Tkinter argento/minimal che avvolge `run.py` (incolli link mobile.de → avanzamento live → il PDF si apre da solo). `avvia-app.bat` (uso subito con Python) + `build_exe.bat`+`preventivo-forge.spec` (app `.exe` autonoma via PyInstaller, per il concessionario senza installare nulla). Guida `APP-DESKTOP.md`.

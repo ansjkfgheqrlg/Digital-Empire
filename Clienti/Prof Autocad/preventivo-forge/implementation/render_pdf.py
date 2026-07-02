@@ -22,11 +22,12 @@ from typing import Any
 from common import RunContext, load_json, slugify
 
 TEMPLATES_DIR = Path(__file__).resolve().parent.parent / "templates"
-ACCENT = "#c8102e"  # rosso sobrio; sovrascrivibile da dealer.preventivo.accent_color
+ACCENT = "#2b2b2b"        # barre scure (modello Novacar); override da dealer.preventivo.accent_color
+HIGHLIGHT = "#f2a200"     # arancione logo; override da dealer.preventivo.highlight_color
 
-COVER_MAX_W = 1400
-GALLERY_MAX_W = 800
-LOGO_MAX_W = 400
+PHOTO_MAX_W = 1500        # foto grandi e nitide (R-09), MAI ritagliate
+LOGO_MAX_W = 900          # logo nitido per pagina cover/chiusura
+PHOTOS_PER_PAGE = 2       # come nel modello
 
 
 # --------------------------------------------------------------------------- #
@@ -63,46 +64,104 @@ def _render_html(ctx: RunContext, listing: dict, content: dict, price: dict,
     )
     template = env.get_template("preventivo.html")
 
-    images = listing.get("images") or []
-    cover_uri = _image_data_uri(_resolve_image(ctx, images[0]) if images else None, COVER_MAX_W)
-    gallery = [
-        uri for uri in (
-            _image_data_uri(_resolve_image(ctx, img), GALLERY_MAX_W) for img in images[:9]
-        ) if uri
-    ]
     logo_uri = _image_data_uri(_resolve_logo(dealer), LOGO_MAX_W)
 
-    breakdown = price.get("breakdown") or {}
-    bd_view = None
-    if breakdown:
-        bd_view = {
-            "listed": _eur(breakdown.get("listed_eur")),
-            "pct": _num(breakdown.get("surcharge_pct")),
-            "surcharge": _eur(breakdown.get("surcharge_eur")),
-            "fixed": _eur((breakdown.get("fixed_1_eur") or 0) + (breakdown.get("fixed_2_eur") or 0)),
-        }
+    # foto: TUTTE, a coppie, incorporate (R-09)
+    images = listing.get("images") or []
+    photo_uris = [u for u in (_image_data_uri(_resolve_image(ctx, img), PHOTO_MAX_W)
+                              for img in images) if u]
+    photo_pages = [photo_uris[i:i + PHOTOS_PER_PAGE]
+                   for i in range(0, len(photo_uris), PHOTOS_PER_PAGE)]
 
     ctx_data = {
-        "accent": dealer.get("preventivo", {}).get("accent_color", ACCENT),
-        "dealer_name": dealer.get("display_name") or "Concessionaria",
-        "contacts": dealer.get("contacts") or {},
-        "logo_data_uri": logo_uri,
+        "accent": prev.get("accent_color", ACCENT),
+        "highlight": prev.get("highlight_color", HIGHLIGHT),
+        "logo_uri": logo_uri,
+        "company": _company_block(dealer),
         "title": content.get("title_it") or _fallback_title(listing),
-        "headline": content.get("headline_it"),
-        "price_display": _price_display(price),
-        "cover_data_uri": cover_uri,
-        "specs": content.get("specs_it") or {},
-        "highlights": content.get("highlights_it") or [],
-        "description": content.get("description_it") or "",
+        "specs": _specs_novacar(listing, content),
         "equipment": content.get("equipment_it") or [],
-        "gallery": gallery,
-        "show_breakdown": bool(prev.get("show_price_breakdown_to_customer")),
-        "breakdown": bd_view,
-        "validity_days": prev.get("validity_days"),
-        "footer_note": prev.get("footer_note") or "",
-        "generated_at": (listing_it_gen := listing.get("scraped_at")) and listing_it_gen[:10],
+        "warranty": prev.get("warranty") or ["Tagliandi certificati", "Chilometri certificati"],
+        "price": _price_novacar(price, prev),
+        "photo_pages": photo_pages,
     }
     return template.render(**ctx_data)
+
+
+def _company_block(dealer: dict) -> dict[str, Any]:
+    legal = dealer.get("legal") or {}
+    contacts = dealer.get("contacts") or {}
+    return {
+        "name": legal.get("company") or dealer.get("display_name") or "Concessionaria",
+        "vat": legal.get("vat") or "",
+        "registered_office": legal.get("registered_office") or contacts.get("address") or "",
+        "phone": contacts.get("phone") or "",
+        "email": contacts.get("email") or "",
+        "pec": contacts.get("pec") or "",
+    }
+
+
+def _specs_novacar(listing: dict, content: dict) -> list[dict[str, str]]:
+    """Scheda tecnica nell'ordine e con le label del modello Novacar (R-05)."""
+    specs_it = content.get("specs_it") or {}
+    kw, hp = listing.get("power_kw"), listing.get("power_hp")
+    if kw and hp:
+        potenza = f"{kw} kw/ {hp} cv"
+    elif hp:
+        potenza = f"{hp} cv"
+    elif kw:
+        potenza = f"{kw} kw"
+    else:
+        potenza = ""
+    prov = _provenienza(listing)
+    rows = [
+        ("Prima immatricolazione", listing.get("first_registration")),
+        ("Provenienza veicolo", prov),
+        ("Porte", listing.get("doors")),
+        ("Carburante", _lower(listing.get("fuel"))),
+        ("Potenza", potenza),
+        ("Tipo cambio", _lower(listing.get("gearbox"))),
+        ("Colore esterno", _lower(specs_it.get("Colore") or listing.get("color"))),
+        ("Colore e tipo interni", _lower(specs_it.get("Interni") or listing.get("interior"))),
+        ("Chilometraggio", f"{_eur(listing.get('mileage_km'))} Km" if listing.get("mileage_km") is not None else ""),
+        ("Numero posti", listing.get("seats")),
+        ("Classe emissioni", listing.get("emission_class")),
+        ("Tipo trazione", _lower(specs_it.get("Trazione") or listing.get("drivetrain"))),
+    ]
+    return [{"label": k, "value": ("" if v in (None, "") else str(v))} for k, v in rows]
+
+
+def _provenienza(listing: dict) -> str:
+    country = ((listing.get("seller") or {}).get("country") or "DE").upper()
+    mapping = {"DE": "tedesca", "FR": "francese", "IT": "italiana", "ES": "spagnola",
+               "NL": "olandese", "BE": "belga", "AT": "austriaca"}
+    return f"Usato d'importazione {mapping.get(country, 'estera')}"
+
+
+def _price_novacar(price: dict, prev: dict) -> dict[str, Any]:
+    bd = price.get("breakdown") or {}
+    lines: list[dict[str, str]] = []
+    if prev.get("show_price_breakdown_to_customer") and bd:
+        listed = bd.get("listed_eur")
+        surcharge = bd.get("surcharge_eur") or 0
+        f1 = bd.get("fixed_1_eur") or 0
+        f2 = bd.get("fixed_2_eur") or 0
+        lines.append({"label": "Prezzo autovettura", "amount": _eur(listed)})
+        if surcharge:
+            lines.append({"label": f"Maggiorazione ({_num(bd.get('surcharge_pct'))}%)", "amount": _eur(surcharge)})
+        if f1:
+            lines.append({"label": "Immatricolazione e pratiche", "amount": _eur(f1)})
+        if f2:
+            lines.append({"label": "Trasporto", "amount": _eur(f2)})
+    return {
+        "total": _eur(price.get("final_eur")),
+        "lines": lines,
+        "note": prev.get("footer_note") or "Offerta valida salvo disponibilità del fornitore",
+    }
+
+
+def _lower(v: Any) -> str:
+    return str(v).lower() if v not in (None, "") else ""
 
 
 # --------------------------------------------------------------------------- #
@@ -134,12 +193,18 @@ def _image_data_uri(path: Path | None, max_w: int) -> str | None:
         from PIL import Image
 
         with Image.open(path) as im:
-            im = im.convert("RGB")
+            # trasparenza (logo PNG) → composita su BIANCO, non su nero
+            if im.mode in ("RGBA", "LA") or (im.mode == "P" and "transparency" in im.info):
+                rgba = im.convert("RGBA")
+                bg = Image.new("RGBA", rgba.size, (255, 255, 255, 255))
+                im = Image.alpha_composite(bg, rgba).convert("RGB")
+            else:
+                im = im.convert("RGB")
             if im.width > max_w:
                 ratio = max_w / float(im.width)
                 im = im.resize((max_w, int(im.height * ratio)), Image.LANCZOS)
             buf = io.BytesIO()
-            im.save(buf, format="JPEG", quality=82, optimize=True)
+            im.save(buf, format="JPEG", quality=85, optimize=True)
             data = buf.getvalue()
         return "data:image/jpeg;base64," + base64.b64encode(data).decode("ascii")
     except Exception:

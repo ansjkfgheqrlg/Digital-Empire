@@ -206,6 +206,117 @@ def gate_d(ctx: RunContext, dealer: dict[str, Any] | None = None) -> tuple[bool,
 
 
 # --------------------------------------------------------------------------- #
+# GATE IMG — immagini (R-09, agente qa-immagini)
+# --------------------------------------------------------------------------- #
+MIN_IMG_SIDE = 300  # px lato minimo accettabile
+
+
+def gate_img(ctx: RunContext, dealer: dict[str, Any] | None = None) -> tuple[bool, list[str]]:
+    """R-09: TUTTE le foto nel PDF, presenti su disco, risoluzione decente, MAI ritagliate."""
+    issues: list[str] = []
+    if not ctx.listing_path.exists():
+        return False, ["listing.json assente"]
+    listing = load_json(ctx.listing_path)
+    images = listing.get("images") or []
+    if not images:
+        return False, ["nessuna foto nell'annuncio (R-09 richiede tutte le foto)"]
+
+    # presenza su disco + risoluzione
+    for img in images:
+        lp = img.get("local_path") or ""
+        p = ctx.dir / lp
+        if not p.exists():
+            issues.append(f"foto mancante su disco: {lp}")
+            continue
+        try:
+            from PIL import Image
+            with Image.open(p) as im:
+                if min(im.size) < MIN_IMG_SIDE:
+                    issues.append(f"foto {lp} bassa risoluzione {im.size}")
+        except Exception:
+            issues.append(f"foto {lp} illeggibile")
+
+    # conteggio nel PDF == n. foto annuncio + nessun crop (template usa 'contain')
+    if dealer is not None:
+        try:
+            import render_pdf
+            listing_it = load_json(ctx.listing_it_path) if ctx.listing_it_path.exists() else {}
+            html = render_pdf._render_html(ctx, listing, listing_it.get("content") or {},
+                                           listing_it.get("price") or {}, dealer,
+                                           dealer.get("preventivo") or {})
+            n_in_pdf = html.count('class="photo-box"')
+            if n_in_pdf != len(images):
+                issues.append(f"foto nel PDF ({n_in_pdf}) != foto annuncio ({len(images)})")
+            if "object-fit: cover" in html:
+                issues.append("R-09 violata: uso di 'cover' (le foto verrebbero ritagliate)")
+            if "object-fit: contain" not in html:
+                issues.append("R-09: le foto non usano 'contain' (rischio crop)")
+        except Exception as exc:  # noqa: BLE001
+            issues.append(f"verifica render foto fallita: {exc}")
+    return (not issues), issues
+
+
+# --------------------------------------------------------------------------- #
+# GATE R — regole sacre R-01…R-14 (agente qa-regole-checker)
+# --------------------------------------------------------------------------- #
+def gate_regole(ctx: RunContext, dealer: dict[str, Any] | None = None) -> tuple[bool, list[str]]:
+    """Verifica le REGOLE-SACRE una per una sul PDF/HTML e scrive runs/<id>/regole-check.json.
+    Richiede `dealer` per il re-render dell'HTML. Se assente, verifica solo il verificabile."""
+    listing = load_json(ctx.listing_path) if ctx.listing_path.exists() else {}
+    listing_it = load_json(ctx.listing_it_path) if ctx.listing_it_path.exists() else {}
+    content = listing_it.get("content") or {}
+    price = listing_it.get("price") or {}
+    report: dict[str, dict[str, Any]] = {}
+
+    html = ""
+    if dealer is not None:
+        try:
+            import render_pdf
+            html = render_pdf._render_html(ctx, listing, content, price, dealer,
+                                           dealer.get("preventivo") or {})
+        except Exception as exc:  # noqa: BLE001
+            report["_render"] = {"pass": False, "note": f"re-render fallito: {exc}"}
+
+    n_logo_only = html.count('class="page logo-only"')
+
+    def rule(rid: str, ok: bool, note: str = "") -> None:
+        report[rid] = {"pass": bool(ok), "note": note}
+
+    rule("R-01", n_logo_only >= 1, "prima pagina solo logo")
+    rule("R-02", 'class="logo-sm"' in html, "logo in ogni pagina di contenuto")
+    company = (dealer or {}).get("legal") or {}
+    rule("R-03", bool(company.get("vat")) and "P. IVA" in html and "PEC" in html, "dati azienda 2ª pagina")
+    rule("R-04", bool((content.get("title_it") or "").strip()) and 'class="car-title"' in html, "titolo vettura")
+    rule("R-05", "Scheda tecnica autovettura" in html, "scheda tecnica")
+    rule("R-06", "Equipaggiamento principale" in html and bool(content.get("equipment_it")), "equipaggiamento")
+    rule("R-07", "Condizioni di garanzia" in html, "condizioni di garanzia")
+    rule("R-08", "Totale in strada (Iva inclusa)" in html and bool(price.get("final_eur")), "prezzo totale in strada")
+    img_ok, img_issues = gate_img(ctx, dealer)
+    rule("R-09", img_ok, "; ".join(img_issues) if img_issues else "immagini tutte/complete/non tagliate")
+    rule("R-10", n_logo_only >= 2, "ultima pagina solo logo")
+    b_ok, b_issues = gate_b(ctx, dealer)
+    rule("R-11", b_ok, "; ".join(b_issues) if b_issues else "italiano, no tedesco, no invenzioni")
+    c_ok, c_issues = gate_c(ctx, dealer)
+    rule("R-12", c_ok and bool(listing.get("make")) and bool(listing.get("model")),
+         "; ".join(c_issues) if c_issues else "prezzo verificato + dati coerenti")
+    legal_name = (company.get("company") or "").strip()
+    rule("R-13", bool(legal_name) and (legal_name in html), "dati/logo/colori dal config concessionaria")
+    rule("R-14", all(v["pass"] for k, v in report.items() if k.startswith("R-") and k != "R-14"),
+         "nessun elemento mancante")
+
+    # scrive il report
+    try:
+        from common import save_json
+        save_json(ctx.dir / "regole-check.json", report)
+    except Exception:
+        pass
+
+    failed = [k for k, v in report.items() if k.startswith("R-") and not v["pass"]]
+    issues = [f"{k}: {report[k]['note']}" for k in failed]
+    return (not failed), issues
+
+
+# --------------------------------------------------------------------------- #
 # Runner comodo
 # --------------------------------------------------------------------------- #
 def run_all(ctx: RunContext, dealer: dict[str, Any] | None = None) -> dict[str, tuple[bool, list[str]]]:
@@ -214,6 +325,8 @@ def run_all(ctx: RunContext, dealer: dict[str, Any] | None = None) -> dict[str, 
         "B": gate_b(ctx, dealer),
         "C": gate_c(ctx, dealer),
         "D": gate_d(ctx, dealer),
+        "IMG": gate_img(ctx, dealer),
+        "R": gate_regole(ctx, dealer),
     }
 
 

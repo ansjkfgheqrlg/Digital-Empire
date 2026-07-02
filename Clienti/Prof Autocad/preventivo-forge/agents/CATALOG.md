@@ -24,6 +24,8 @@ Agenti CF-grade (7 file: `agent.md`, `system_prompt.md`, `tools.md`, `playbook.m
 | `qa-translation-verifier` | B | fedeltà traduzione, no DE residuo, no fatti inventati | Gael | ✅ |
 | `qa-price-verifier` | C | ricalcolo prezzo indipendente + formato titolo | Gael | ✅ |
 | `qa-output-reviewer` | D | PDF finale completo e corretto | Gael | ✅ |
+| `qa-immagini` | IMG | R-09: tutte le foto, complete, mai tagliate | Gael | ✅ |
+| `qa-regole-checker` | R | REGOLE-SACRE R-01…R-14 + `regole-check.json` | Gael | ✅ |
 
 Registro macchina: `../orchestration/registry.json`. Routing/escalation: `../orchestration/routing.md`.
 

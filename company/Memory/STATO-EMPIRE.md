@@ -1,14 +1,18 @@
 # STATO EMPIRE -- aggiornato 2026-06-30 (Max — CLIENTE Prof Autocad)
 
-## ✅ GAEL — PreventivoForge Half B + APP DESKTOP FATTE (2026-07-02)
-**Half B (CP-20260701-001):** S3 traduzione+copy, S5 PDF, 4 QA + `qa_gate.py`, template, R3/R5/R6, 6 agenti CF-grade. 4 gate verdi.
-**App Desktop (CP-20260702-002, task "app per PC" di Max, guida §6):** `app.py` GUI Tkinter argento/minimal che wrappa `run.py`
-(link→PDF, avanzamento live, apre il PDF); `avvia-app.bat` (uso subito) + `build_exe.bat`+spec PyInstaller (.exe autonomo).
-**Motore PDF reso .exe-ready:** `render_pdf.py` ora rende via `cdp`/Chrome (no Playwright), con `--remote-allow-origins=*`.
-Selftest app→run: **Gate A/B/C/D verdi**, PDF via cdp-chrome. Half A NON toccata (cdp USATO, non modificato).
-**SEGNALATO A MAX (Half A, non bloccante):** (1) aggiungere `--remote-allow-origins=*` in `cdp.launch` (Chrome ≥111);
-(2) `--manual` col nuovo parser estrae dotazioni solo se l'HTML ha `window.__INITIAL_STATE__`. Dettagli in `preventivo-forge/APP-DESKTOP.md`.
-**PENDING (non bloccante):** build+test finale dell'.exe sull'ambiente reale.
+## ✅ GAEL — PreventivoForge: PDF NOVACAR + Gate IMG/R + APP .EXE FATTE (2026-07-02)
+**HANDOFF-GAEL-2 COMPLETO (CP-20260702-003).** Cliente reale = **Novacar srl**.
+- **PDF rifatto sul modello Novacar** (`templates/preventivo.html` + `render_pdf.py`): pag.1 solo-logo, logo header ogni pagina,
+  pag.2 dati azienda(P.IVA/PEC)+titolo+scheda tecnica (12 campi, barra scura/righe alternate), pag.3 Equipaggiamento+Garanzia+
+  "Totale in strada (Iva inclusa)" con dettaglio, pagine foto 2/pagina **mai tagliate (`contain`)**, ultima pagina solo-logo. Fix logo su bianco.
+- **2 nuovi Gate + agenti CF-grade:** `gate_img` (Gate IMG, R-09) + `gate_regole` (Gate R, R-01…R-14 → `regole-check.json`);
+  agenti `qa-immagini` + `qa-regole-checker` (7 file each). CATALOG aggiornato.
+- **App .exe COSTRUITA e VALIDATA:** `dist/PreventivoForge/PreventivoForge.exe` (PyInstaller, gitignorato). `PreventivoForge.exe --selftest`
+  → dealer Novacar, 4 gate verdi, PDF via cdp/Chrome. App `app.py` default dealer=novacar.
+- **Verifica:** selftest **6/6 gate verdi (A,B,C,D,IMG,R)** + **14/14 REGOLE-SACRE OK**, PDF ispezionato = conforme al modello. €0 API.
+- Half A NON toccata (cdp/run.py/scraper/parser/pricer/schema intatti).
+**PENDING MAX (Half A, non bloccante):** (1) **wiring Gate IMG + Gate R in `run.py`** dopo S5 (2 chiamate con `dealer`);
+(2) `--remote-allow-origins=*` in `cdp.launch`; (3) storico in `Memory/storico-preventivi/` a ogni run reale.
 **RIPRESA GAEL (dopo GO Max):** scelta prossimo ecosistema Empire (05-MULTI-BUSINESS / split 06).
 
 ## 🚨 PIVOT V2 (ADR-007 — leggere PRIMA di qualsiasi cosa)
