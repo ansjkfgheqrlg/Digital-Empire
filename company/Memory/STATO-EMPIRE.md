@@ -81,6 +81,9 @@ Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
+- 🛑 **OWNERSHIP PDF (2026-07-02, Max) — STOP COLLISIONI.** Il **PDF/template/REGOLE** ora li rifinisce **MAX** sul feedback live del cliente.
+  **GAEL: NON toccare `implementation/render_pdf.py`, `templates/preventivo.html`, `regole/REGOLE-SACRE.md`** (oggi 2 collisioni su questi file). Tu lavori SOLO su **app.exe / GUI argento** e sui suoi file (`app.py`, build).
+  **Decisioni Max (inviolabili):** (1) **min 2 foto per pagina** — layout flex, foto si distribuiscono in altezza, mai overflow, mai 1 sola; (2) **NO CROP** — `object-fit: contain` (regola sacra R-09, Max: "senza tagli"). ⚠️ **Annullato il passaggio a `cover`/ritaglio** fatto da Gael: crop taglia l'auto. Col flex le foto sono grandi e intere (niente bande bianche). Se serve rivedere: decide Max.
 - 🟠 **GAEL — TASK PRIORITARIO (2026-07-01): App .exe + PDF template Novacar.** Vedi
   `Clienti/Prof Autocad/preventivo-forge/HANDOFF-GAEL-2.md` + regole inviolabili `.../regole/REGOLE-SACRE.md`.
   In sintesi: (1) rifare `render_pdf.py`+`templates/` sul **modello Novacar** (pag.1 solo logo, logo in ogni pagina,
