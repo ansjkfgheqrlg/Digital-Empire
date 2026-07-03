@@ -9,6 +9,20 @@
    si sincronizzano SOLO via questo stato: mai far partire nessuno da una versione vecchia. Standard: tutto impeccabile.
 
 
+## 🔴 MAX — PROSSIMO BUILD: ISPETTORATO GENERALE (Performance & Autocritica) — dossier 15 (2026-07-04)
+**Direttiva Max (CP-20260704-001): da ora l'Impero si AUTOCRITICA e AUTO-MIGLIORA. Piano = `PIANO-MAESTRO/15-DOSSIER-ISPETTORATO.md`.**
+- **Cosa:** nuovo organo trasversale di governo `company/Ispettorato/` — report COMPLETO dopo OGNI utilizzo,
+  analisi al millimetro, daily autocritica, **REGISTRO-ERRORI + gate anti-recidiva (mai lo stesso errore 2 volte)**.
+  Riporta agli alti ranghi: Board C-Suite + MAXIMILIAN + Max. Indipendente dalla produzione (misura, non costruisce).
+- **Roster:** 10 agenti CF-grade (isp-conductor, telemetry-collector, run-auditor, error-registrar, recidiva-sentinel,
+  kpi-analyst, report-forger, liaison-altiranghi, improvement-dispatcher, verifier) + 4 WF
+  (RUN-AUDIT · DAILY-AUTOCRITICA · RECIDIVA-GATE · REPORT-ALTIRANGHI). Backbone dati JSONL deterministico, €0 API.
+- **Fasi MAX (M1→M5):** M1 fondamenta+registro (migra KNOWN ERRORS+lezioni Memory) → M2 pilota PreventivoForge
+  (trace in `run.py` + run-report auto) → M3 reparto CF-grade (swarm) → M4 aggancio Impero (RECALL/RETRO, dossier 10,
+  handoff MAXIMILIAN/Board/Sentinelle/CF-R8) → M5 estensione (outreach + test negativo recidiva).
+- **Owner: SOLO MAX.** Gael NON coinvolto (resta su V2-2/V2-3). Confini anti-duplicazione nel dossier §4.
+**PROSSIMA AZIONE MAX: fase M1** (ciclo 9 passi, poi CP+STATO+push).
+
 ## ✅ MAX — PreventivoForge: FABBRICA multi-concessionario + KILL-SWITCH LIVE (2026-07-03, CP-002 esteso)
 **Pushato su main (`c488968`). Half A avanzata: da 1 cliente a FABBRICA di app clonate + abbonamento operativo.**
 - **Fabbrica `nuovo_concessionario.py`**: 1 comando → nuovo concessionario. Un MOTORE, N app. Cambia solo
