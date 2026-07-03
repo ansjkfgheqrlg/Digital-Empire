@@ -9,6 +9,18 @@
    si sincronizzano SOLO via questo stato: mai far partire nessuno da una versione vecchia. Standard: tutto impeccabile.
 
 
+## ✅ MAX — PreventivoForge: FABBRICA multi-concessionario + KILL-SWITCH LIVE (2026-07-03, CP-002 esteso)
+**Pushato su main (`c488968`). Half A avanzata: da 1 cliente a FABBRICA di app clonate + abbonamento operativo.**
+- **Fabbrica `nuovo_concessionario.py`**: 1 comando → nuovo concessionario. Un MOTORE, N app. Cambia solo
+  nome/dati/logo/prezzo/colori. Ogni app ha `brand.json` (titolo+dealer), si blocca sul suo dealer, PDF col suo stile.
+  **Testata a exe frozen**: app clonata "Test Auto srl" → dealer proprio, 6/6 gate verdi (poi artefatti puliti).
+- **Kill-switch LIVE**: Gist segreto creato (`gestione-licenze.py` = sospendi/attiva/stato via `gh`). `license_url` cucito
+  nel config Novacar. **Test dal vivo: sospendi→preventivo BLOCCATO (exit 10)→riattiva.** Max dice "X non paga" → Claude blocca+email.
+- **Skill `/nuovo-concessionario`** + doc `FABBRICA-CONCESSIONARI.md` (spiega tutto: fabbrica + kill-switch).
+- **App branding**: `app.py` legge `brand.json`; dealer caricabili anche da accanto all'exe (per app clonata). 2 file mod di app.py già avvisati.
+- Segreti locali (gitignorati): `licenze.config.json` (id gist), `.licenza_cache.json`, `Memory/storico-preventivi/*.pdf`.
+**RESIDUO:** firma codice per SmartScreen (opz.) · test su PC senza Chrome (msg errore).
+
 ## ✅ MAX — PreventivoForge: GATE IMG/R in run.py + KILL-SWITCH + STORICO + EXE ri-testata (2026-07-03)
 **CP-20260703-002. Chiuse TUTTE le PENDING MAX + consegna abbonabile pronta.**
 - **Gate IMG + Gate R cablati in `run.py`** (bloccanti dopo Gate D: exit 8=foto/R-09, 9=REGOLE-SACRE). Testati VERDI su run reale.
