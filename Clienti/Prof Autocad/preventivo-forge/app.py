@@ -53,11 +53,43 @@ def _fix_frozen_paths() -> None:
         common.LOGS_DIR = BASE_DIR / "logs"
         common.RUNS_DIR.mkdir(parents=True, exist_ok=True)
         common.LOGS_DIR.mkdir(parents=True, exist_ok=True)
+        # concessionari accanto all'exe (app clonata dalla fabbrica): se presente ha priorità
+        import dealers
+        _cand = BASE_DIR / "concessionarie"
+        if _cand.exists():
+            dealers.DEALERS_DIR = _cand
     except Exception:
         pass
 
 
 _fix_frozen_paths()
+
+
+# --------------------------------------------------------------------------- #
+# Brand (identità della singola app, per-concessionario)
+# --------------------------------------------------------------------------- #
+def _load_brand() -> dict:
+    """Ogni copia dell'app ha un `brand.json` accanto all'exe con il SUO concessionario:
+       {"dealer_id": "novacar", "display_name": "Novacar srl"}.
+    Assente (sviluppo) → default Novacar, non bloccato (mostra tutti i dealer)."""
+    default = {"dealer_id": "novacar", "display_name": "Novacar srl", "locked": False}
+    try:
+        import json as _json
+        p = BASE_DIR / "brand.json"
+        if p.exists():
+            b = _json.loads(p.read_text(encoding="utf-8"))
+            return {
+                "dealer_id": (b.get("dealer_id") or "novacar").strip(),
+                "display_name": (b.get("display_name") or "Novacar srl").strip(),
+                "locked": True,
+            }
+    except Exception:
+        pass
+    return default
+
+
+_BRAND = _load_brand()
+BRAND_TITLE = f"PreventivoForge — {_BRAND['display_name']}"
 
 
 # --------------------------------------------------------------------------- #
@@ -117,6 +149,9 @@ _CODE_MSG = {
     5: "traduzione non conforme, tedesco residuo (Gate B)",
     6: "prezzo non verificabile (Gate C)",
     7: "PDF non conforme alle regole (Gate D)",
+    8: "foto non conformi: mancanti o tagliate (Gate IMG / R-09)",
+    9: "PDF non conforme alle REGOLE-SACRE (Gate R)",
+    10: "abbonamento sospeso: contatta il fornitore per riattivare il servizio",
 }
 
 
@@ -188,11 +223,14 @@ def _open_file(path: Path) -> None:
 
 
 def _list_dealers() -> list[str]:
+    # app brandizzata (brand.json presente) → mostra SOLO il proprio concessionario
+    if _BRAND.get("locked"):
+        return [_BRAND["dealer_id"]]
     d = BASE_DIR / "concessionarie"
     if not d.exists():
-        return ["novacar"]
+        return [_BRAND["dealer_id"]]
     out = sorted(p.name for p in d.iterdir() if (p / "config.json").exists())
-    return out or ["novacar"]
+    return out or [_BRAND["dealer_id"]]
 
 
 # --------------------------------------------------------------------------- #
@@ -220,7 +258,7 @@ class PreventivoApp:
         self.q: "queue.Queue[str]" = queue.Queue()
         self._busy = False
 
-        root.title("PreventivoForge — Novacar srl")
+        root.title(BRAND_TITLE)
         root.configure(bg=C_BG)
         root.minsize(680, 560)
         try:
@@ -430,7 +468,7 @@ def main_webview() -> int:
     html = html_path.read_text(encoding="utf-8")
     api = _WebApi()
     webview.create_window(
-        "PreventivoForge — Novacar srl",
+        BRAND_TITLE,
         html=html, js_api=api,
         width=800, height=700, min_size=(700, 620),
         background_color="#e7ebee",
@@ -448,8 +486,14 @@ if __name__ == "__main__":
         _html = sys.argv[2] if len(sys.argv) > 2 else ""
         _foto = sys.argv[3] if len(sys.argv) > 3 else ""
         os.chdir(BASE_DIR)
+        # in .exe windowed sys.stdout è None → le print() di run.py crasherebbero:
+        # reindirizza su file così il selftest gira headless e lascia una traccia leggibile.
+        if sys.stdout is None or sys.stderr is None:
+            _logf = open(BASE_DIR / "selftest.log", "w", encoding="utf-8", buffering=1)
+            sys.stdout = _logf
+            sys.stderr = _logf
         import run as run_mod
-        sys.argv = ["run.py", "--manual", _html, "--foto", _foto, "--dealer", "novacar"]
+        sys.argv = ["run.py", "--manual", _html, "--foto", _foto, "--dealer", _BRAND["dealer_id"]]
         raise SystemExit(run_mod.main())
     # GUI premium (pywebview); se non disponibile → fallback Tkinter (nessun PC resta senza app)
     try:

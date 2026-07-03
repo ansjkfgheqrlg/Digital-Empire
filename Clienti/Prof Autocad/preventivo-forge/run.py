@@ -32,7 +32,7 @@ except Exception:
 # rende importabili i moduli in implementation/
 sys.path.insert(0, str(Path(__file__).resolve().parent / "implementation"))
 
-from common import RunContext  # noqa: E402
+from common import RunContext, load_json  # noqa: E402
 import dealers as dealers_mod  # noqa: E402
 import scraper  # noqa: E402
 import parser as parser_mod  # noqa: E402
@@ -68,6 +68,15 @@ def main() -> int:
     ctx = RunContext(url, run_id=args.run_id)
     ctx.logger.info("=== PreventivoForge run %s | dealer=%s ===", ctx.run_id, dealer["display_name"])
     qa = _optional("qa_gate")  # Half B: gate A/B/C/D (se presente)
+
+    # ---- LICENZA (kill-switch abbonamento) --------------------------------
+    import licenza
+    ok_lic, lic_msg = licenza.check_license(dealer)
+    ctx.logger.info("Licenza: %s", lic_msg)
+    if not ok_lic:
+        ctx.set_step("LICENSE", "blocked", lic_msg)
+        print(f"\n⛔ {lic_msg}")
+        return 10
 
     # ---- S1 SCRAPING -------------------------------------------------------
     ctx.set_step("S1_scraping", "running")
@@ -133,6 +142,18 @@ def main() -> int:
             ctx.logger.error("GATE D rosso: PDF non consegnabile.")
             print("\n⛔ Gate D rosso: PDF NON consegnabile (vedi log).")
             return 7
+        # ---- GATE IMG (R-09: foto tutte/complete/non tagliate) ----------------
+        if not _gate(ctx, qa, "IMG", "gate_img", dealer):
+            ctx.logger.error("GATE IMG rosso: foto non conformi (R-09).")
+            print("\n⛔ Gate IMG rosso: foto NON conformi (vedi log).")
+            return 8
+        # ---- GATE R (REGOLE-SACRE R-01…R-14) ----------------------------------
+        if not _gate(ctx, qa, "R", "gate_regole", dealer):
+            ctx.logger.error("GATE R rosso: REGOLE-SACRE violate.")
+            print("\n⛔ Gate R rosso: REGOLE-SACRE violate (vedi runs/<id>/regole-check.json).")
+            return 9
+        # ---- storico: copia il PDF consegnato in Memory/storico-preventivi/ ----
+        _archivia_storico(ctx, dealer, pdf_path)
         print(f"\n✅ Preventivo PDF: {pdf_path}")
         try:
             if os.name == "nt" and not os.environ.get("PF_NO_OPEN"):
@@ -178,6 +199,46 @@ def _gate_extraction(ctx: RunContext, listing: dict) -> bool:
     if not listing.get("make") or not listing.get("model"):
         ctx.logger.warning("Gate A: marca/modello incompleti (non bloccante).")
     return ok
+
+
+def _archivia_storico(ctx: RunContext, dealer: dict, pdf_path) -> None:
+    """Copia il PDF consegnato in Memory/storico-preventivi/ + sidecar JSON con i dati chiave.
+    Mai bloccante: se fallisce, il run resta valido (il PDF è già in runs/<id>/)."""
+    try:
+        import json
+        import shutil
+        from pathlib import Path as _P
+
+        storico = _P(__file__).resolve().parent / "Memory" / "storico-preventivi"
+        storico.mkdir(parents=True, exist_ok=True)
+
+        listing = load_json(ctx.listing_path) if ctx.listing_path.exists() else {}
+        listing_it = load_json(ctx.listing_it_path) if ctx.listing_it_path.exists() else {}
+        price = (listing_it.get("price") or {})
+        did = dealer.get("dealer_id") or dealer.get("id") or dealer.get("display_name") or "dealer"
+        make_model = f"{listing.get('make') or ''}-{listing.get('model') or 'auto'}".strip("-")
+
+        base = f"{ctx.run_id}_{did}_{make_model}".replace(" ", "-")
+        dst_pdf = storico / f"{base}.pdf"
+        shutil.copyfile(str(pdf_path), str(dst_pdf))
+
+        meta = {
+            "run_id": ctx.run_id,
+            "dealer": did,
+            "url": ctx.source_url,
+            "make": listing.get("make"),
+            "model": listing.get("model"),
+            "price_listed_eur": listing.get("price_listed_eur"),
+            "price_final_eur": price.get("final_eur"),
+            "final_title": price.get("final_title"),
+            "pdf": dst_pdf.name,
+            "created_at": ctx.run_id,
+        }
+        (storico / f"{base}.json").write_text(
+            json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
+        ctx.logger.info("Storico: preventivo archiviato in Memory/storico-preventivi/%s", dst_pdf.name)
+    except Exception as exc:  # noqa: BLE001
+        ctx.logger.warning("Storico non salvato (non bloccante): %s", exc)
 
 
 def _print_handoff_note(ctx: RunContext) -> None:

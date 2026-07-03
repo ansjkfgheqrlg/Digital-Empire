@@ -19,7 +19,7 @@ a = Analysis(
     ],
     hiddenimports=[
         # moduli pipeline (importati a runtime via sys.path)
-        'run', 'common', 'scraper', 'parser', 'pricer', 'dealers', 'cdp',
+        'run', 'common', 'scraper', 'parser', 'pricer', 'dealers', 'cdp', 'licenza',
         'translate_copy', 'render_pdf', 'qa_gate', 'glossary_de_it',
         # dipendenze terze
         'jinja2', 'PIL', 'PIL.Image', 'jsonschema', 'websocket', 'requests',

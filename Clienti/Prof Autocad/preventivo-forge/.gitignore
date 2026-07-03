@@ -1,5 +1,12 @@
 # segreti e config locale
 .env
+# cache stato licenza (kill-switch) — locale, non versionare
+.licenza_cache.json
+# config del Gist licenze (contiene l'id del gist) — locale
+licenze.config.json
+# storico preventivi: i PDF sono pesanti (binari) → solo su disco locale; in git resta il record JSON
+Memory/storico-preventivi/*.pdf
+selftest.log
 # profilo browser persistente (sessione/cookie mobile.de)
 browser-profile/
 .playwright/

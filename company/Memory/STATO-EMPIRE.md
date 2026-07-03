@@ -1,4 +1,26 @@
-# STATO EMPIRE -- aggiornato 2026-06-30 (Max — CLIENTE Prof Autocad)
+# STATO EMPIRE -- aggiornato 2026-07-03 (Max — CLIENTE Novacar)
+
+## 🛑 DIRETTIVE MAX ASSOLUTE (2026-07-03 — valgono sempre, leggere per prime)
+1. **Ordini su Gael = assoluti.** Ogni compito che Max assegna a Gael (o direttiva su di lui) è LEGGE, non preferenza.
+   → **ORDINE ATTIVO: Gael ha finito PreventivoForge e passa alla COSTRUZIONE DELL'IMPERO (V2-2/V2-3).** Appena Gael torna
+   online / chiede / propone altro: **BLOCCARLO SUBITO** e indirizzarlo all'Impero, non ad altro. NON tocca Half A (Max).
+2. **Aggiornare la versione ad OGNI messaggio, in automatico.** Ad ogni turno di Max E di Gael: leggere questo file + INDEX,
+   fare `git pull` (monorepo), e allinearli all'ULTIMA versione dello stato — senza aspettare che lo chiedano. I due soci
+   si sincronizzano SOLO via questo stato: mai far partire nessuno da una versione vecchia. Standard: tutto impeccabile.
+
+
+## ✅ MAX — PreventivoForge: GATE IMG/R in run.py + KILL-SWITCH + STORICO + EXE ri-testata (2026-07-03)
+**CP-20260703-002. Chiuse TUTTE le PENDING MAX + consegna abbonabile pronta.**
+- **Gate IMG + Gate R cablati in `run.py`** (bloccanti dopo Gate D: exit 8=foto/R-09, 9=REGOLE-SACRE). Testati VERDI su run reale.
+- **Storico automatico**: ogni PDF consegnato → `Memory/storico-preventivi/<run>_<dealer>_<auto>.pdf` + sidecar JSON (url/prezzo/titolo). Non bloccante.
+- **Kill-switch abbonamento = `implementation/licenza.py`** (mio, Half A). Controllo online (`LICENSE_URL` env o `dealer.license_url`) PRIMA di ogni preventivo:
+  sospeso→blocca (exit 10); grace su rete-giù; **anti-furbata** (cache: sospeso+offline RESTA bloccato). 6 scenari testati OK. Semplice: stato in un JSON pubblico (Gist) che Max aggiorna.
+- **`--remote-allow-origins=*` già presente in `cdp.launch`** (pending #2 = era già chiuso).
+- **EXE RICOSTRUITA + ri-testata FROZEN**: `dist/PreventivoForge/PreventivoForge.exe --selftest` → pipeline completa, **6/6 gate + 14/14 REGOLE verdi**, PDF 2.2MB via cdp-chrome, storico OK. Prova che il bundle risolve tutte le dipendenze e Chrome stampa da frozen.
+- **Guida consegna = `CONSEGNA-NOVACAR.md`**: requisiti PC concessionario (Chrome+linea normale), uso, SmartScreen, come ATTIVARE/SOSPENDERE il kill-switch via Gist.
+- **⚠️ Ho toccato `app.py` (Half B) per 2 righe difensive necessarie:** `_CODE_MSG` +codici 8/9/10; guard `sys.stdout is None` nel ramo `--selftest` (l'exe windowed crashava). Nient'altro di Half B toccato. Gael: allineati a questo.
+**GAEL LIBERO:** GUI premium approvata da Max ("esteticamente perfetta") → **riprendi l'Empire** (V2-2/V2-3, vedi sotto). NON toccare Half A (run.py/scraper/parser/pricer/cdp/licenza/schema).
+**RESIDUO consegna (non bloccante):** test su PC realmente pulito SENZA Chrome (verificare il messaggio d'errore guida l'utente) + eventuale firma codice per togliere SmartScreen.
 
 ## ✅ GAEL — PreventivoForge: PDF NOVACAR + Gate IMG/R + APP .EXE FATTE (2026-07-02)
 **HANDOFF-GAEL-2 COMPLETO (CP-20260702-003).** Cliente reale = **Novacar srl**.
