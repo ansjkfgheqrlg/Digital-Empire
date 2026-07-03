@@ -256,6 +256,9 @@ def translate(ctx: RunContext, dealer: dict[str, Any]) -> dict[str, Any]:
         "specs_it": specs_it,
     }
 
+    # riserva AI SOLO sui residui tedeschi (opzionale, €0; no-op se TRANSLATE_AI_KEY assente)
+    _ai_fill_residuals(listing, content, ctx)
+
     _merge_content(ctx, listing, content)
 
     # avviso non bloccante: residui tedeschi nel copy (Gate B poi decide)
@@ -327,6 +330,55 @@ def _german_residue(content: dict[str, Any]) -> list[str]:
             if looks_german(tok) and tok not in found:
                 found.append(tok)
     return found
+
+
+def _has_german(text: Any) -> bool:
+    return any(looks_german(tok) for tok in re.findall(r"[A-Za-zÄÖÜäöüß-]+", str(text or "")))
+
+
+def _ai_fill_residuals(listing: dict[str, Any], content: dict[str, Any], ctx) -> None:
+    """Riserva AI gratuita sui SOLI residui tedeschi (equipment + specs). Sicura:
+    se `ai_translate` non è configurata o fallisce, lascia tutto invariato (Gate B poi decide)."""
+    try:
+        import ai_translate
+    except Exception:
+        return
+    if not ai_translate.enabled():
+        return
+
+    eq_de = listing.get("equipment_de") or []
+    eq_it = list(content.get("equipment_it") or [])
+    specs = dict(content.get("specs_it") or {})
+
+    need: dict[str, tuple[str, Any]] = {}
+    for i, item in enumerate(eq_it):
+        if _has_german(item) and i < len(eq_de) and eq_de[i]:
+            need[str(eq_de[i])] = ("eq", i)
+    for k, v in specs.items():
+        if isinstance(v, str) and _has_german(v):
+            need[v] = ("spec", k)
+    if not need:
+        return
+
+    tr = ai_translate.translate_terms(list(need.keys()))
+    if not tr:
+        ctx.logger.info("S3: riserva AI non disponibile/vuota (resta glossario + Gate B).")
+        return
+
+    fixed = 0
+    for orig, (kind, ref) in need.items():
+        new = tr.get(orig)
+        if not new:
+            continue
+        if kind == "eq":
+            eq_it[ref] = new
+        else:
+            specs[ref] = new
+        fixed += 1
+    content["equipment_it"] = eq_it
+    content["specs_it"] = specs
+    if fixed:
+        ctx.logger.info("S3: riserva AI ha tradotto %d residui tedeschi.", fixed)
 
 
 def _maybe_llm_prose(listing: dict[str, Any]) -> str | None:

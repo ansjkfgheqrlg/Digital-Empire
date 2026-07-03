@@ -19,7 +19,10 @@
 - **Skill `/nuovo-concessionario`** + doc `FABBRICA-CONCESSIONARI.md` (spiega tutto: fabbrica + kill-switch).
 - **App branding**: `app.py` legge `brand.json`; dealer caricabili anche da accanto all'exe (per app clonata). 2 file mod di app.py già avvisati.
 - Segreti locali (gitignorati): `licenze.config.json` (id gist), `.licenza_cache.json`, `Memory/storico-preventivi/*.pdf`.
-**RESIDUO:** firma codice per SmartScreen (opz.) · test su PC senza Chrome (msg errore).
+- **Riserva AI traduzione (€0, opzionale)**: `implementation/ai_translate.py` (mio) + hook `_ai_fill_residuals` in
+  `translate_copy.py` (⚠️ Half B, 1 aggancio) — traduce i SOLI residui tedeschi con modello gratuito (NVIDIA NIM),
+  config da `.env` (`TRANSLATE_AI_KEY/URL/MODEL`). Spenta senza chiave = glossario+Gate B come prima. Testata (no-op + mock).
+**RESIDUO:** attivare riserva AI (serve chiave FREE, nessun costo) · firma codice SmartScreen (opz.) · test PC senza Chrome.
 
 ## ✅ MAX — PreventivoForge: GATE IMG/R in run.py + KILL-SWITCH + STORICO + EXE ri-testata (2026-07-03)
 **CP-20260703-002. Chiuse TUTTE le PENDING MAX + consegna abbonabile pronta.**
