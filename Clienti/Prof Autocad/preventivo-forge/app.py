@@ -359,15 +359,101 @@ def main_gui() -> int:
 
 
 # --------------------------------------------------------------------------- #
+# GUI PREMIUM — pywebview (HTML/CSS luxury) + bridge Python↔JS
+# --------------------------------------------------------------------------- #
+def _ui_html_path() -> Path | None:
+    for base in (BASE_DIR, Path(getattr(sys, "_MEIPASS", BASE_DIR))):
+        p = base / "ui" / "index.html"
+        if p.exists():
+            return p
+    return None
+
+
+class _WebApi:
+    """Ponte esposto al JS della finestra premium. La UI chiama generate()/poll()/dealers()."""
+
+    def __init__(self):
+        self.q: "queue.Queue[str]" = queue.Queue()
+        self._done = False
+        self._ok = False
+        self._pdf = ""
+        self._msg = ""
+        self._running = False
+
+    def dealers(self):
+        return _list_dealers()
+
+    def generate(self, url: str, dealer: str):
+        if self._running:
+            return {"error": "generazione già in corso"}
+        url = (url or "").strip()
+        if not url or "mobile.de" not in url.lower():
+            return {"error": "Incolla un link valido di mobile.de."}
+        self.q = queue.Queue()
+        self._done = self._ok = False
+        self._pdf = self._msg = ""
+        self._running = True
+        threading.Thread(target=self._worker, args=(url, dealer or "novacar"), daemon=True).start()
+        return {"started": True}
+
+    def _worker(self, url: str, dealer: str):
+        try:
+            ok, pdf, msg = run_pipeline(url, dealer, self.q)
+        except Exception as exc:  # noqa: BLE001
+            ok, pdf, msg = False, None, f"Errore: {exc}"
+        self._ok = ok
+        self._pdf = str(pdf) if pdf else ""
+        self._msg = msg or ""
+        self._done = True
+        self._running = False
+        if ok and pdf:
+            _open_file(Path(pdf))
+
+    def poll(self):
+        lines = []
+        try:
+            while True:
+                lines.append(self.q.get_nowait())
+        except queue.Empty:
+            pass
+        return {"lines": lines, "done": self._done, "ok": self._ok,
+                "pdf": self._pdf, "msg": self._msg, "running": self._running}
+
+
+def main_webview() -> int:
+    """Finestra premium HTML/CSS via pywebview. Alza RuntimeError se non disponibile → fallback Tkinter."""
+    import webview  # richiede pywebview + (Windows) Edge WebView2 runtime
+
+    html_path = _ui_html_path()
+    if not html_path:
+        raise RuntimeError("ui/index.html non trovato")
+    html = html_path.read_text(encoding="utf-8")
+    api = _WebApi()
+    webview.create_window(
+        "PreventivoForge — Novacar srl",
+        html=html, js_api=api,
+        width=800, height=700, min_size=(700, 620),
+        background_color="#e7ebee",
+    )
+    webview.start()
+    return 0
+
+
+# --------------------------------------------------------------------------- #
 # Entry point
 # --------------------------------------------------------------------------- #
 if __name__ == "__main__":
     if len(sys.argv) >= 2 and sys.argv[1] == "--selftest":
         # pipeline headless via fallback --manual (no GUI): verifica il wiring app→run
-        html = sys.argv[2] if len(sys.argv) > 2 else ""
-        foto = sys.argv[3] if len(sys.argv) > 3 else ""
+        _html = sys.argv[2] if len(sys.argv) > 2 else ""
+        _foto = sys.argv[3] if len(sys.argv) > 3 else ""
         os.chdir(BASE_DIR)
         import run as run_mod
-        sys.argv = ["run.py", "--manual", html, "--foto", foto, "--dealer", "novacar"]
+        sys.argv = ["run.py", "--manual", _html, "--foto", _foto, "--dealer", "novacar"]
         raise SystemExit(run_mod.main())
-    raise SystemExit(main_gui())
+    # GUI premium (pywebview); se non disponibile → fallback Tkinter (nessun PC resta senza app)
+    try:
+        _code = main_webview()
+    except Exception:
+        _code = main_gui()
+    raise SystemExit(_code)

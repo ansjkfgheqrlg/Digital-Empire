@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PreventivoForge — Novacar srl</title>
+<style>
+  :root{
+    --slate-900:#232c33; --slate-800:#2b353d; --slate-700:#37444d; --slate-600:#455a67;
+    --slate:#3c4a54; --slate-hover:#313d45; --ink:#1f2a30; --muted:#7b8894;
+    --silver-0:#ffffff; --silver-50:#f4f6f8; --silver-100:#eaeef1; --silver-200:#dbe1e6;
+    --line:#e3e8ec; --ok:#2f8a4e; --err:#c94b4b; --accent:#5b6f7d; --accent-2:#455a67;
+    --shadow: 0 10px 30px rgba(31,42,48,.10), 0 2px 8px rgba(31,42,48,.06);
+    --shadow-sm: 0 1px 2px rgba(31,42,48,.06), 0 1px 3px rgba(31,42,48,.05);
+    --r: 14px;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+  html,body{ height:100%; }
+  body{
+    font-family:"Segoe UI Variable Text","Segoe UI",Inter,system-ui,-apple-system,Roboto,Arial,sans-serif;
+    color:var(--ink);
+    background:
+      radial-gradient(1200px 600px at 15% -10%, #ffffff 0%, rgba(255,255,255,0) 55%),
+      linear-gradient(160deg,#eef1f4 0%, #e2e7eb 60%, #d7dee3 100%);
+    min-height:100%;
+    display:flex; flex-direction:column;
+    user-select:none;
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:relative; overflow:hidden;
+    background:linear-gradient(135deg,#2c363e 0%, #39464f 60%, #43525c 100%);
+    color:#fff; padding:26px 34px 24px;
+  }
+  header::after{ /* filo argento metallico */
+    content:""; position:absolute; left:0; right:0; bottom:0; height:2px;
+    background:linear-gradient(90deg,rgba(255,255,255,0) 0%, rgba(220,228,234,.85) 22%, rgba(255,255,255,.95) 50%, rgba(220,228,234,.85) 78%, rgba(255,255,255,0) 100%);
+  }
+  .brand{ font-family:"Segoe UI Variable Display","Segoe UI",Inter,system-ui,sans-serif;
+    font-weight:650; font-size:23px; letter-spacing:.2px; display:flex; align-items:center; gap:11px; }
+  .brand .dot{ width:9px; height:9px; border-radius:50%; background:linear-gradient(180deg,#cfd8de,#9fb0bb); box-shadow:0 0 0 4px rgba(207,216,222,.18); }
+  .brand small{ font-weight:400; font-size:12.5px; color:#c4cfd6; letter-spacing:.3px; }
+  .subtitle{ margin-top:6px; font-size:12.5px; color:#aeb9c2; letter-spacing:.2px; }
+
+  /* ---------- Corpo ---------- */
+  main{ flex:1; padding:24px 30px 8px; display:flex; flex-direction:column; gap:16px; }
+
+  .card{
+    background:var(--silver-0); border:1px solid var(--line); border-radius:var(--r);
+    box-shadow:var(--shadow); padding:20px 20px 18px;
+  }
+
+  label.field-label{
+    display:block; font-size:11px; font-weight:640; letter-spacing:.7px; text-transform:uppercase;
+    color:var(--muted); margin:0 0 8px 2px;
+  }
+
+  .input{
+    width:100%; font-size:14px; color:var(--ink); background:var(--silver-50);
+    border:1px solid var(--silver-200); border-radius:11px; padding:13px 14px;
+    transition:border-color .16s ease, box-shadow .16s ease, background .16s ease;
+    outline:none; user-select:text; font-family:inherit;
+  }
+  .input::placeholder{ color:#9aa6b1; }
+  .input:hover{ background:#fff; }
+  .input:focus{ background:#fff; border-color:var(--accent); box-shadow:0 0 0 4px rgba(91,111,125,.14); }
+
+  .row{ display:flex; gap:14px; align-items:flex-end; margin-top:14px; }
+  .row .grow{ flex:1; }
+
+  select.input{ appearance:none; cursor:pointer;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%237b8894' stroke-width='2.2'><path d='M6 9l6 6 6-6'/></svg>");
+    background-repeat:no-repeat; background-position:right 12px center; padding-right:34px;
+  }
+
+  .btn{
+    appearance:none; border:none; cursor:pointer; font-family:inherit;
+    font-size:14px; font-weight:640; letter-spacing:.2px; color:#fff;
+    padding:13px 22px; border-radius:11px; white-space:nowrap;
+    background:linear-gradient(180deg,#556775 0%, #3f4f5a 100%);
+    box-shadow:0 6px 16px rgba(50,66,77,.28), inset 0 1px 0 rgba(255,255,255,.10);
+    transition:transform .12s ease, box-shadow .16s ease, filter .16s ease;
+  }
+  .btn:hover{ filter:brightness(1.06); box-shadow:0 9px 22px rgba(50,66,77,.34), inset 0 1px 0 rgba(255,255,255,.12); }
+  .btn:active{ transform:translateY(1px); box-shadow:0 4px 12px rgba(50,66,77,.3); }
+  .btn[disabled]{ cursor:default; filter:grayscale(.25) brightness(.98); opacity:.7; box-shadow:var(--shadow-sm); }
+
+  /* progress + status */
+  .status{ display:flex; align-items:center; gap:9px; font-size:13px; color:var(--muted); min-height:20px; }
+  .status .ico{ width:16px; height:16px; flex:none; }
+  .status.ok{ color:var(--ok); } .status.err{ color:var(--err); } .status.run{ color:var(--accent-2); }
+
+  .progress{ height:6px; border-radius:6px; background:var(--silver-100); overflow:hidden; opacity:0; transition:opacity .2s ease; }
+  .progress.show{ opacity:1; }
+  .progress > i{ display:block; height:100%; width:36%; border-radius:6px;
+    background:linear-gradient(90deg,#7f93a1,#556775);
+    animation:slide 1.15s cubic-bezier(.6,.05,.35,.95) infinite; }
+  @keyframes slide{ 0%{ transform:translateX(-120%);} 100%{ transform:translateX(360%);} }
+
+  /* log */
+  .logwrap{ flex:1; display:flex; flex-direction:column; min-height:150px; }
+  .logwrap .cap{ font-size:11px; font-weight:640; letter-spacing:.7px; text-transform:uppercase; color:var(--muted); margin:0 0 7px 2px; }
+  .log{
+    flex:1; background:#212a30; color:#d7e0e6; border-radius:12px; padding:14px 15px;
+    font-family:"Cascadia Code","Consolas",ui-monospace,monospace; font-size:12px; line-height:1.6;
+    overflow:auto; white-space:pre-wrap; word-break:break-word; box-shadow:inset 0 1px 3px rgba(0,0,0,.25);
+    user-select:text;
+  }
+  .log .l-ok{ color:#8fe0a6; } .log .l-warn{ color:#f0c674; } .log .l-err{ color:#f2938c; } .log .l-dim{ color:#8a97a1; }
+
+  footer{ padding:10px 30px 16px; text-align:center; font-size:11px; color:#8a97a1; letter-spacing:.2px; }
+  footer b{ color:#6b7783; font-weight:600; }
+
+  .log::-webkit-scrollbar{ width:9px; } .log::-webkit-scrollbar-thumb{ background:#3c4750; border-radius:8px; }
+  .log::-webkit-scrollbar-track{ background:transparent; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="dot"></span>PreventivoForge <small>· Novacar srl</small></div>
+    <div class="subtitle">Da un annuncio mobile.de al preventivo PDF in italiano</div>
+  </header>
+
+  <main>
+    <div class="card">
+      <label class="field-label" for="url">Link annuncio mobile.de</label>
+      <input id="url" class="input" type="text" spellcheck="false"
+             placeholder="https://suchen.mobile.de/fahrzeuge/details.html?id=…">
+      <div class="row">
+        <div class="grow">
+          <label class="field-label" for="dealer">Concessionaria</label>
+          <select id="dealer" class="input"></select>
+        </div>
+        <button id="go" class="btn">Genera preventivo</button>
+      </div>
+    </div>
+
+    <div class="status run" id="status" style="color:var(--muted)">
+      Pronto. Incolla un link e premi «Genera preventivo».
+    </div>
+    <div class="progress" id="prog"><i></i></div>
+
+    <div class="logwrap">
+      <div class="cap">Avanzamento</div>
+      <div class="log" id="log"></div>
+    </div>
+  </main>
+
+  <footer>Serve <b>Google Chrome</b> installato · nessun costo per preventivo · il PDF si apre da solo</footer>
+
+<script>
+  const $ = s => document.querySelector(s);
+  const urlEl=$("#url"), dealerEl=$("#dealer"), goEl=$("#go"),
+        statusEl=$("#status"), progEl=$("#prog"), logEl=$("#log");
+  let polling=null, busy=false;
+
+  function setStatus(text, kind){ statusEl.textContent=text; statusEl.className="status "+(kind||""); }
+  function addLog(line){
+    const div=document.createElement("div");
+    const l=line.toLowerCase();
+    if(l.includes("error")||l.includes("errore")||l.includes("blocked")||l.includes("rosso")||l.includes("fermata")||l.includes("failed")||l.includes("fallito")) div.className="l-err";
+    else if(l.includes("warn")||l.includes("residui")||l.includes("attenzione")) div.className="l-warn";
+    else if(l.includes("passed")||l.includes("done")||l.includes("pronto")||l.includes("✅")||l.includes("verdi")) div.className="l-ok";
+    else if(l.includes("step")||l.includes("===")) div.className="l-dim";
+    div.textContent=line; logEl.appendChild(div); logEl.scrollTop=logEl.scrollHeight;
+  }
+  function ready(v){ busy=!v; goEl.disabled=!v; goEl.textContent=v?"Genera preventivo":"Generazione in corso…"; progEl.classList.toggle("show",!v); }
+
+  async function loadDealers(){
+    try{ const list=await window.pywebview.api.dealers();
+      dealerEl.innerHTML=""; (list||["novacar"]).forEach(d=>{ const o=document.createElement("option"); o.value=d; o.textContent=d; dealerEl.appendChild(o); });
+    }catch(e){}
+  }
+  function tick(){
+    window.pywebview.api.poll().then(s=>{
+      (s.lines||[]).forEach(addLog);
+      if(s.done){
+        clearInterval(polling); polling=null; ready(true);
+        if(s.ok){ setStatus("✓ "+(s.msg||"Preventivo pronto"),"ok"); if(s.pdf) addLog("PDF: "+s.pdf); }
+        else setStatus("✗ "+(s.msg||"Generazione interrotta — controlla il log"),"err");
+      }
+    }).catch(()=>{});
+  }
+  async function generate(){
+    if(busy) return;
+    const url=(urlEl.value||"").trim();
+    if(!url || !url.toLowerCase().includes("mobile.de")){ setStatus("Incolla un link valido di mobile.de.","err"); return; }
+    logEl.innerHTML=""; ready(false); setStatus("Sto generando il preventivo… (si aprirà Chrome, lascialo lavorare)","run");
+    try{ const r=await window.pywebview.api.generate(url, dealerEl.value);
+      if(r && r.error){ ready(true); setStatus("✗ "+r.error,"err"); return; }
+      polling=setInterval(tick,220);
+    }catch(e){ ready(true); setStatus("✗ Errore avvio: "+e,"err"); }
+  }
+
+  goEl.addEventListener("click",generate);
+  urlEl.addEventListener("keydown",e=>{ if(e.key==="Enter") generate(); });
+  window.addEventListener("pywebviewready",loadDealers);
+  // fallback se l'evento è già passato
+  setTimeout(()=>{ if(window.pywebview&&dealerEl.children.length===0) loadDealers(); }, 400);
+</script>
+</body>
+</html>

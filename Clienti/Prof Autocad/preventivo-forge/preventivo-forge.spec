@@ -15,6 +15,7 @@ a = Analysis(
         ('schema', 'schema'),
         ('concessionarie', 'concessionarie'),
         ('implementation', 'implementation'),
+        ('ui', 'ui'),
     ],
     hiddenimports=[
         # moduli pipeline (importati a runtime via sys.path)
@@ -23,6 +24,9 @@ a = Analysis(
         # dipendenze terze
         'jinja2', 'PIL', 'PIL.Image', 'jsonschema', 'websocket', 'requests',
         'bs4', 'lxml',
+        # GUI premium (pywebview) + backend Windows (Edge WebView2) e fallback Tkinter
+        'webview', 'webview.platforms.edgechromium', 'webview.platforms.winforms',
+        'clr_loader', 'tkinter',
     ],
     hookspath=[],
     hooksconfig={},
