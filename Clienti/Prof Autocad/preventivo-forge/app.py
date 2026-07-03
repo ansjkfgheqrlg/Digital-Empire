@@ -85,21 +85,57 @@ def _newest_pdf() -> Path | None:
     return pdfs[0] if pdfs else None
 
 
+class _StreamToQueue:
+    """File-like che inoltra ciò che la pipeline stampa (print/stdout) alla coda della GUI.
+    FONDAMENTALE: sotto pythonw/.exe `sys.stdout` è None → senza questo, le print() di run.py
+    vanno in crash e l'app 'non funziona'."""
+
+    def __init__(self, q):
+        self.q = q
+
+    def write(self, s):
+        s = (s or "").rstrip("\r\n")
+        if s and self.q is not None:
+            try:
+                self.q.put(s)
+            except Exception:
+                pass
+        return len(s or "")
+
+    def flush(self):
+        pass
+
+    def isatty(self):
+        return False
+
+
+# codice uscita run.py → messaggio umano
+_CODE_MSG = {
+    2: "scraping da mobile.de fallito (anti-bot Akamai o link non valido)",
+    3: "estrazione incompleta: mancano dati o foto (Gate A)",
+    4: "calcolo del prezzo fallito",
+    5: "traduzione non conforme, tedesco residuo (Gate B)",
+    6: "prezzo non verificabile (Gate C)",
+    7: "PDF non conforme alle regole (Gate D)",
+}
+
+
 def run_pipeline(url: str, dealer: str, log_queue: "queue.Queue[str]" | None = None) -> tuple[bool, Path | None, str]:
     """Esegue la pipeline PreventivoForge su un URL. Ritorna (ok, pdf_path, messaggio).
-    Cattura i log della pipeline nella coda (per mostrare i passaggi in diretta)."""
+    Reindirizza stdout/stderr sulla coda: mostra i passaggi in diretta E evita il crash
+    delle print() quando l'app gira senza console (pythonw / .exe)."""
     os.chdir(BASE_DIR)  # run.py lavora con path relativi al progetto
     # Scraping con Chrome VISIBILE (headful): l'anti-bot Akamai di mobile.de blocca l'headless.
-    # Su IP residenziale il browser reale di solito passa; se compare un captcha, l'utente lo risolve
-    # nella finestra. (Solo lo scraping S1 lo legge; il render PDF resta headless a parte.)
     os.environ["PLAYWRIGHT_HEADLESS"] = "false"
-    handler = None
-    if log_queue is not None:
-        handler = _QueueLogHandler(log_queue)
-        handler.setFormatter(logging.Formatter("%(message)s"))
-        logging.getLogger("annuncioforge").addHandler(handler)
-        logging.getLogger("annuncioforge").setLevel(logging.INFO)
+    os.environ["PF_NO_OPEN"] = "1"  # il PDF lo apre la GUI (evita doppia apertura)
 
+    out_bak, err_bak = sys.stdout, sys.stderr
+    # redirige se c'è una coda (mostra i passaggi in GUI) O se manca la console
+    # (pythonw/.exe: sys.stdout è None → le print() di run.py andrebbero in crash)
+    if log_queue is not None or sys.stdout is None or sys.stderr is None:
+        sink = _StreamToQueue(log_queue)
+        sys.stdout = sink
+        sys.stderr = sink
     try:
         import importlib
         # ricarica i moduli Half B (glossario/template/gate) così le correzioni si applicano
@@ -119,16 +155,22 @@ def run_pipeline(url: str, dealer: str, log_queue: "queue.Queue[str]" | None = N
         finally:
             sys.argv = argv_bak
         if code != 0:
-            return False, None, f"La pipeline si è fermata (codice {code}). Controlla il log qui sotto."
+            return False, None, "Non riuscito: " + _CODE_MSG.get(code, f"codice {code}") + ". Vedi il dettaglio sotto."
         pdf = _newest_pdf()
         if not pdf or not pdf.exists():
-            return False, None, "Pipeline conclusa ma PDF non trovato. Controlla il log."
+            return False, None, "Pipeline conclusa ma PDF non trovato. Vedi il dettaglio sotto."
         return True, pdf, f"Preventivo pronto: {pdf.name}"
     except Exception as exc:  # noqa: BLE001
+        import traceback
+        if log_queue is not None:
+            try:
+                log_queue.put("ERRORE: " + repr(exc))
+                log_queue.put(traceback.format_exc())
+            except Exception:
+                pass
         return False, None, f"Errore: {exc}"
     finally:
-        if handler is not None:
-            logging.getLogger("annuncioforge").removeHandler(handler)
+        sys.stdout, sys.stderr = out_bak, err_bak
 
 
 def _open_file(path: Path) -> None:

@@ -67,85 +67,65 @@ def scrape_manual(ctx: RunContext, html_path: str, foto_dir: str | None = None) 
 # Live fetch — Chrome reale + CDP (bypassa Akamai in automatico)
 # --------------------------------------------------------------------------- #
 def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | None]:
-    try:
-        from playwright.sync_api import sync_playwright  # type: ignore
-    except ImportError as exc:
-        raise RuntimeError(
-            "Playwright non installato. `pip install playwright` (client CDP) "
-            "oppure usa il fallback: run.py --manual <annuncio.html> <foto_dir>."
-        ) from exc
+    """Scraping via cdp.py (Chrome reale + CDP, NO Playwright): robusto ai reload della
+    challenge Akamai (Runtime.evaluate non va in crash mentre la pagina naviga)."""
+    import shutil
+    import tempfile
+    import cdp
 
-    chrome = cfg.get("chrome_path") or _find_chrome()
+    chrome = cfg.get("chrome_path") or cdp.find_chrome()
     if not chrome:
         raise RuntimeError(
             "Google Chrome non trovato. Installa Chrome o imposta CHROME_PATH in .env, "
             "oppure usa run.py --manual <annuncio.html> <foto_dir>."
         )
 
-    import tempfile
-    port = _free_port()
+    port = cdp.free_port()
     profile = tempfile.mkdtemp(prefix="pf-chrome-")   # profilo dedicato per-run (evita lock/reuse)
-    args = [
-        chrome, f"--remote-debugging-port={port}", f"--user-data-dir={profile}",
-        "--remote-allow-origins=*",  # Chrome >=111: necessario per il client CDP
-        "--no-first-run", "--no-default-browser-check", "--start-maximized",
-        "--disable-blink-features=AutomationControlled", "--disable-features=Translate",
-    ]
-    if cfg["headless"]:
-        args.append("--headless=new")
-    args.append(ctx.source_url)
-
     ctx.logger.info("Avvio Chrome reale (CDP :%d, headless=%s) su %s", port, cfg["headless"], chrome)
-    proc = subprocess.Popen(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    html, final_url = "", None
+    proc = cdp.launch(chrome, port, profile, headless=cfg["headless"], url=ctx.source_url)
+
+    html, final_url = "", ctx.source_url
     try:
-        _wait_devtools(port, timeout=45)   # attende che l'endpoint DevTools risponda
-        with sync_playwright() as pw:
-            browser = None
-            for _ in range(20):
-                try:
-                    browser = pw.chromium.connect_over_cdp(f"http://127.0.0.1:{port}")
-                    break
-                except Exception:
-                    time.sleep(0.5)
-            if browser is None:
-                raise RuntimeError("Impossibile connettersi a Chrome via CDP (DevTools non pronto).")
-
-            pctx = browser.contexts[0] if browser.contexts else browser.new_context()
-            page = pctx.pages[0] if pctx.pages else pctx.new_page()
-            _accept_consent(page, ctx)
-
+        cdp.wait_devtools(port, timeout=45)
+        page = cdp.Page(port)
+        try:
             deadline = time.time() + max(cfg["nav_timeout_ms"] / 1000.0, 45)
             while time.time() < deadline:
-                html = page.content()
-                low = html.lower()
-                ready = "window.__initial_state__" in low or "application/ld+json" in low
-                challenge = any(m in low for m in CHALLENGE_MARKERS)
-                if ready and not challenge and "zugriff verweigert" not in low:
-                    break
                 try:
-                    page.mouse.move(400, 300)
-                    page.mouse.wheel(0, 1200)
+                    cur = page.html()          # Runtime.evaluate: non crasha durante i reload
                 except Exception:
-                    pass
+                    cur = ""                   # pagina in navigazione → riprova
+                if cur:
+                    html = cur
+                    low = cur.lower()
+                    ready = "window.__initial_state__" in low or "application/ld+json" in low
+                    challenge = any(m in low for m in CHALLENGE_MARKERS)
+                    if ready and not challenge and "zugriff verweigert" not in low:
+                        break
+                page.scroll()
                 time.sleep(1.5)
-            _scroll_to_load_gallery(page)
-            html = page.content()
-            final_url = page.url
+            # scroll finale per il lazy-load della gallery, poi ultima lettura
+            for _ in range(5):
+                page.scroll(1600)
+                time.sleep(0.4)
             try:
-                browser.close()
+                cur = page.html()
+                if cur:
+                    html = cur
             except Exception:
                 pass
+        finally:
+            page.close()
     finally:
-        _kill_tree(proc)
+        cdp.kill_tree(proc)
         try:
-            import shutil
             shutil.rmtree(profile, ignore_errors=True)
         except Exception:
             pass
 
     low = html.lower()
-    if _looks_blocked(html) or any(m in low for m in CHALLENGE_MARKERS):
+    if not html or _looks_blocked(html) or any(m in low for m in CHALLENGE_MARKERS):
         raise RuntimeError(
             "mobile.de: challenge Akamai non superata automaticamente in questo run. "
             "Riprova (di solito passa con Google Chrome + IP residenziale), oppure usa il "

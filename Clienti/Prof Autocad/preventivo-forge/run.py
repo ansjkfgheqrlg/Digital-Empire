@@ -135,8 +135,8 @@ def main() -> int:
             return 7
         print(f"\n✅ Preventivo PDF: {pdf_path}")
         try:
-            if os.name == "nt":
-                os.startfile(str(pdf_path))  # apre il PDF appena creato
+            if os.name == "nt" and not os.environ.get("PF_NO_OPEN"):
+                os.startfile(str(pdf_path))  # apre il PDF (saltato se lo apre la GUI)
         except Exception:
             pass
     else:
