@@ -102,6 +102,14 @@ def run_pipeline(url: str, dealer: str, log_queue: "queue.Queue[str]" | None = N
 
     try:
         import importlib
+        # ricarica i moduli Half B (glossario/template/gate) così le correzioni si applicano
+        # al prossimo "Genera" senza ricostruire l'app (in .exe frozen il reload è no-op sicuro)
+        for _m in ("glossary_de_it", "translate_copy", "render_pdf", "qa_gate"):
+            if _m in sys.modules:
+                try:
+                    importlib.reload(sys.modules[_m])
+                except Exception:
+                    pass
         import run as run_mod
         importlib.reload(run_mod)  # nuovo RunContext/argv a ogni click
         argv_bak = sys.argv[:]
@@ -170,7 +178,7 @@ class PreventivoApp:
         self.q: "queue.Queue[str]" = queue.Queue()
         self._busy = False
 
-        root.title("PreventivoForge — Prof Autocad")
+        root.title("PreventivoForge — Novacar srl")
         root.configure(bg=C_BG)
         root.minsize(680, 560)
         try:
