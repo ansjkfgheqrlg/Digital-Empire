@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-07-03] — ✨ Novacar: GUI App PreventivoForge resa PREMIUM (Gael, CP-20260703-001)
+
+- COSTRUITO: priorità #1 di Max — alzare la qualità grafica dell'app. Motore grafico da Tkinter → **pywebview + HTML/CSS** (`ui/index.html`): UI luxury slate+argento (invariata come palette/layout, approvati), font di sistema premium (Segoe UI Variable), gradienti sobri, filo argento metallico, ombre morbide, focus-ring, hover fluidi, barra avanzamento animata, log scuro colorato. Titolo → "Novacar srl".
+- `app.py`: finestra premium via pywebview + bridge Python↔JS (generate/poll/dealers, log live, apre il PDF) + **fallback automatico Tkinter** (PC senza WebView2). Glossario: +Sitzeinstellung (sbloccava un preventivo Mercedes CLS reale).
+- VALIDATO: GUI premium confermata WebView2 in dev **e** nell'.exe (`dist/PreventivoForge/PreventivoForge.exe` ricostruito, 11 MB). Selftest pipeline verde. Prova reale precedente: Mercedes GLA 26 foto, 44.490→48.825 €.
+- CONFINE: **PDF/template/REGOLE NON toccati** (ownership Max, stop collisioni). Solo `app.py`+`ui/`+`spec`+glossario. INGEST: —.
+
 ## [2026-07-02] — 🏁 Novacar: PDF modello Novacar + Gate sacri + App .exe COSTRUITA (Gael, CP-20260702-003)
 
 - COSTRUITO: HANDOFF-GAEL-2 completo. **PDF rifatto ESATTAMENTE sul modello Novacar srl** (cliente reale): pag.1 solo-logo, logo su ogni pagina, dati azienda (P.IVA/PEC), scheda tecnica 12 campi (barra scura/righe alternate), Equipaggiamento+Garanzia, "Totale in strada (Iva inclusa)" con dettaglio, foto 2/pagina **mai tagliate** (`contain`), ultima pagina solo-logo. Rispetta le 14 REGOLE-SACRE.

@@ -23,6 +23,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260703-001](checkpoints/CP-20260703-001.md) — **Novacar: GUI App PREMIUM (pywebview HTML/CSS)** (Gael, priorità #1 Max): `ui/index.html` luxury slate+argento (font premium, gradienti/ombre/hover, log colorato), `app.py` pywebview + bridge + fallback Tkinter, titolo "Novacar srl", +glossario Sitzeinstellung. GUI premium confermata WebView2 (dev+.exe). PDF NON toccato (ownership Max). — Gael
 - [CP-20260702-003](checkpoints/CP-20260702-003.md) — **Novacar: PDF modello Novacar + Gate IMG/R + App .exe COSTRUITA** (Gael): template rifatto sul modello (R-01…R-14), `gate_img`+`gate_regole`+`regole-check.json`, 2 agenti QA (qa-immagini, qa-regole-checker), fix logo su bianco. Selftest 6/6 gate verdi + 14/14 regole OK; `PreventivoForge.exe` costruito e validato (dealer Novacar, PDF via cdp). — Gael
 - [CP-20260702-002](checkpoints/CP-20260702-002.md) — **Prof Autocad: App Desktop (GUI) + motore PDF .exe-ready** (Gael): `app.py` Tkinter argento wrappa run.py, `avvia-app.bat`, `build_exe.bat`+spec PyInstaller, `render_pdf` motore cdp/Chrome (no Playwright, flag remote-allow-origins). Selftest 4 gate verdi, PDF cdp-chrome. — Gael
 - [CP-20260701-003](checkpoints/CP-20260701-003.md) — **Prof Autocad: scraping LIVE mobile.de RISOLTO (Chrome+CDP bypassa Akamai) + parser su `__INITIAL_STATE__` + prova reale GLA** (EXIT 0, 4 gate verdi, 47.490→51.915 €, PDF 810KB foto vere) — Max

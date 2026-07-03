@@ -81,17 +81,14 @@ Poi V2-3 (build organo MAXIMILIAN dal dossier 12 — attiva il review-gate 5-bis
 Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
 
 ## ⚠️ COORDINAMENTO (anti-collisione)
-- 🔴 **GAEL — PRIORITÀ #1 ASSOLUTA (2026-07-02, ordine Max): ALZARE LA QUALITÀ GRAFICA DELL'APP `app.py` del 2000%.**
-  Max ha visto la GUI: **layout, blocchi, geometria = APPROVATI (non toccare la struttura)**; **il colore (slate scuro) va bene**.
-  MA la **qualità è bassa/dilettantesca** → va resa **altissima, premium, professionale**:
-  - **FONT:** eliminare il font di sistema Tkinter (dà l'aria "anni 2000"). Usare un font moderno e curato
-    (es. **Inter / Onest / Segoe UI Variable**) con gerarchia pesi/dimensioni/interlinea/tracking curata.
-  - **RESA/QUALITÀ:** rendering nitido (HiDPI/scaling), spaziature e padding raffinati, angoli/ombre/hover
-    eleganti, contrasto e micro-dettagli premium. Stessa palette (slate + argento), ma esecuzione di lusso.
-  - **TECNICA (consiglio):** Tkinter nativo è limitato per il "premium" → valutare **CustomTkinter** (widget moderni)
-    oppure **pywebview + HTML/CSS** (massima qualità, riusa skill `empire-premium-style`/`frontend-design`). L'.exe resta packaging-friendly.
-  - **Fix veloce:** titolo finestra dice ancora "Prof Autocad" → **"Novacar srl"**.
-  Deve restare **minimal, argento, elegante**. Riferimento livello: qualità Digital Empire (ccm-premium). **Prima cosa che fa Gael.**
+- 🟢 **GAEL — PRIORITÀ #1 FATTA (2026-07-03, CP-20260703-001): GUI App resa PREMIUM.**
+  Motore grafico passato da Tkinter → **pywebview + HTML/CSS** (`ui/index.html`): font di sistema premium
+  (Segoe UI Variable), palette slate+argento (invariata, approvata), gradienti/ombre/filo argento, focus-ring,
+  hover fluidi, barra avanzamento animata, log colorato, resa nitida WebView2. **Layout/struttura/colore invariati.**
+  `app.py`: finestra premium via pywebview + bridge + **fallback automatico Tkinter** (PC senza WebView2). Titolo → "Novacar srl".
+  Validato: GUI premium confermata WebView2 in **dev e nell'.exe** (`dist/PreventivoForge/PreventivoForge.exe` ricostruito).
+  Glossario: +Sitzeinstellung (sbloccava un preventivo Mercedes CLS reale). **PDF/template/REGOLE NON toccati (ownership Max).**
+  → Attende feedback resa (ritocchi tonalità/font/spaziature). Poi (GO Max): scelta ecosistema Empire.
 - 🛑 **OWNERSHIP PDF (2026-07-02, Max) — STOP COLLISIONI.** Il **PDF/template/REGOLE** ora li rifinisce **MAX** sul feedback live del cliente.
   **GAEL: NON toccare `implementation/render_pdf.py`, `templates/preventivo.html`, `regole/REGOLE-SACRE.md`** (oggi 2 collisioni su questi file). Tu lavori SOLO su **app.exe / GUI argento** e sui suoi file (`app.py`, build).
   **Decisioni Max (inviolabili):** (1) **min 2 foto per pagina** — layout flex, foto si distribuiscono in altezza, mai overflow, mai 1 sola; (2) **NO CROP** — `object-fit: contain` (regola sacra R-09, Max: "senza tagli"). ⚠️ **Annullato il passaggio a `cover`/ritaglio** fatto da Gael: crop taglia l'auto. Col flex le foto sono grandi e intere (niente bande bianche). Se serve rivedere: decide Max.
