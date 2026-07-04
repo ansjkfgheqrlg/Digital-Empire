@@ -27,13 +27,16 @@ Workflow multi-agente per il cliente **Prof Autocad** (automotive). Input: URL a
 - **Logging:** ogni step logga in `logs/` e appende a `runs/<id>/trace.jsonl`; stato in `runs/<id>/state.json`.
 - **Naming run:** `runs/<id>/` con `id = AF-YYYYMMDD-HHMMSS-<sourceid>`.
 
-## Stato build (2026-07-01)
-- **Half A (Max): COSTRUITA** — scraper, parser, pricer, conductor/regia, run.py, schema, skill.
-- **Half B (Gael): ✅ COMPLETA e verificata (CP-20260701-001)** — `translate_copy.py`+`glossary_de_it.py` (S3),
-  `render_pdf.py`+`templates/preventivo.html` (S5), `qa_gate.py` (Gate A/B/C/D), `rules/R3-R5-R6`,
-  6 agenti CF-grade in `agents/`. Test end-to-end `run.py --manual` (BMW 320d) → PDF, 4 gate verdi.
-- **Pending Max (non bloccante):** wiring gate B/C/D in `run.py` (3 chiamate dopo S3/S4/S5, vedi HANDOFF §Integrazione).
-- **Setup ambiente:** `pip install -r requirements.txt && playwright install chromium` (motore PDF = Playwright).
+## Stato build (2026-07-04) — CONSEGNA NOVACAR PRONTA
+- **Half A (Max): COMPLETA** — scraper (Chrome reale via `cdp.py`, ora off-screen), parser, pricer, regia `run.py`
+  (Gate A/B/C/D/IMG/R cablati + storico), schema, multi-tenant, **fabbrica `nuovo_concessionario.py`**,
+  **kill-switch `licenza.py`+`gestione-licenze.py`** (Gist), **riserva AI `ai_translate.py`** (Groq €0).
+- **Half B (Gael): COMPLETA** — `translate_copy.py`+`glossary_de_it.py` (S3), `render_pdf.py`+`templates/preventivo.html`
+  (S5, modello Novacar), `qa_gate.py` (A/B/C/D/IMG/R), app GUI premium pywebview. 6 gate + 14/14 REGOLE verdi.
+- **⚠️ File Half B toccati da Max** (vedi STATO-EMPIRE): `app.py` (filtro `_StreamToQueue`, `brand.json`, `_CODE_MSG`,
+  guard stdout, load `.env`) + `translate_copy.py` (hook `_ai_fill_residuals`). Estetica GUI e resto Half B invariati.
+- **Consegna:** `Consegna-Novacar/PreventivoForge-Novacar.zip` (exe autonoma). Guida `COME-CONSEGNARE-A-NOVACAR.md`.
+- **Setup dev:** `pip install -r requirements.txt` (+ opzionale `playwright install chromium`). Motore PDF/scraping = Chrome del PC via `cdp.py`.
 
 ## Convenzioni
 - Python: pathlib, type hints, docstring, try/except su I/O esterno.

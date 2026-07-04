@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-07-03 (Max — CLIENTE Novacar)
+# STATO EMPIRE -- aggiornato 2026-07-04 (Max — CLIENTE Novacar)
 
 ## 🛑 DIRETTIVE MAX ASSOLUTE (2026-07-03 — valgono sempre, leggere per prime)
 1. **Ordini su Gael = assoluti.** Ogni compito che Max assegna a Gael (o direttiva su di lui) è LEGGE, non preferenza.
@@ -8,6 +8,23 @@
    fare `git pull` (monorepo), e allinearli all'ULTIMA versione dello stato — senza aspettare che lo chiedano. I due soci
    si sincronizzano SOLO via questo stato: mai far partire nessuno da una versione vecchia. Standard: tutto impeccabile.
 
+
+## ✅ MAX — PreventivoForge: CONSEGNA A NOVACAR PRONTA (2026-07-04, ultimo su main `71a3859`)
+**Consegna in 2 giorni. Pacchetto UNICO pronto: `Clienti/Prof Autocad/Consegna-Novacar/PreventivoForge-Novacar.zip` (120 MB, gitignorato).**
+Dentro: exe + kill-switch (config Novacar con `license_url`) + riserva AI (.env con chiave Groq) + `LEGGIMI.txt`.
+Guida consegna passo-passo: `Clienti/Prof Autocad/COME-CONSEGNARE-A-NOVACAR.md`.
+- **Ultimi 2 fix (2026-07-04, testati):** (1) GUI mostra SOLO frasi pulite (milestone), non il log tecnico;
+  (2) Chrome scraping NASCOSTO (off-screen, resta headful → Akamai ok). Provato live: Hyundai i20 scrapato, PDF ok.
+- **Riserva AI traduzione ATTIVA** (Groq gratuito €0): glossario 99% + AI sui soli residui. Anche nelle app dealer.
+- **Kill-switch LIVE**: "X non paga" → Claude `gestione-licenze.py sospendi X` + email. Fabbrica app: `/nuovo-concessionario`.
+
+### ⚠️ GAEL — file Half B che MAX ha toccato (allineati se riprendi la GUI/traduzione)
+- **`app.py`** (tua): Max ha aggiunto — (a) `_StreamToQueue` ora **FILTRA** (solo milestone pulite, `_MILESTONES`);
+  (b) legge `brand.json` (titolo+dealer per app clonata) + `_list_dealers` bloccato sul dealer; (c) `_CODE_MSG` +8/9/10;
+  (d) guard `sys.stdout is None` nel ramo `--selftest`; (e) carica `.env` accanto all'exe (frozen). Estetica/layout GUI NON toccati.
+- **`translate_copy.py`** (tua): 1 solo hook `_ai_fill_residuals` dopo il glossario (riserva AI sui residui). Resto invariato.
+- Mai toccati: `render_pdf.py`, `templates/preventivo.html`, `glossary_de_it.py`, `qa_gate.py`, REGOLE-SACRE.
+**GAEL: resti su Impero V2-2/V2-3 (ordine assoluto). Se un domani riprendi la GUI, parti da questi file aggiornati.**
 
 ## 🔴 MAX — PROSSIMO BUILD: ISPETTORATO GENERALE (Performance & Autocritica) — dossier 15 (2026-07-04)
 **Direttiva Max (CP-20260704-001): da ora l'Impero si AUTOCRITICA e AUTO-MIGLIORA. Piano = `PIANO-MAESTRO/15-DOSSIER-ISPETTORATO.md`.**
