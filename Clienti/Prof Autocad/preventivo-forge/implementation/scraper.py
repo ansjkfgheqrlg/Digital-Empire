@@ -80,11 +80,11 @@ def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | No
             "oppure usa run.py --manual <annuncio.html> <foto_dir>."
         )
 
-    # La challenge Akamai è INTERMITTENTE → ritenta fino a 3 volte con Chrome fresco + backoff.
+    # La challenge Akamai è INTERMITTENTE → ritenta fino a 3 volte con Chrome fresco + backoff breve.
     attempts = 3
     for attempt in range(1, attempts + 1):
         port = cdp.free_port()
-        profile = tempfile.mkdtemp(prefix="pf-chrome-")   # profilo dedicato (evita lock/reuse)
+        profile = tempfile.mkdtemp(prefix="pf-chrome-")   # profilo dedicato per-tentativo
         ctx.logger.info("Avvio Chrome reale (CDP :%d, headless=%s, tentativo %d/%d) su %s",
                         port, cfg["headless"], attempt, attempts, chrome)
         proc = cdp.launch(chrome, port, profile, headless=cfg["headless"], url=ctx.source_url)
@@ -94,7 +94,9 @@ def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | No
             cdp.wait_devtools(port, timeout=45)
             page = cdp.Page(port)
             try:
-                deadline = time.time() + max(cfg["nav_timeout_ms"] / 1000.0, 45)
+                start = time.time()
+                deadline = start + max(cfg["nav_timeout_ms"] / 1000.0, 45)
+                got_state = False
                 while time.time() < deadline:
                     try:
                         cur = page.html()          # Runtime.evaluate: non crasha durante i reload
@@ -103,10 +105,15 @@ def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | No
                     if cur:
                         html = cur
                         low = cur.lower()
-                        ready = "window.__initial_state__" in low or "application/ld+json" in low
+                        if "window.__initial_state__" in low:
+                            got_state = True
+                        ready = got_state or "application/ld+json" in low
                         challenge = any(m in low for m in CHALLENGE_MARKERS)
                         if ready and not challenge and "zugriff verweigert" not in low:
                             break
+                    # bail VELOCE: bloccato da >20s senza dati → inutile aspettare, vai al retry
+                    if not got_state and (time.time() - start) > 20:
+                        break
                     page.scroll()
                     time.sleep(1.5)
                 # scroll finale per il lazy-load della gallery, poi ultima lettura
@@ -133,7 +140,7 @@ def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | No
             return html, final_url   # ✓ passata
 
         if attempt < attempts:
-            wait = 4 + attempt * 3   # backoff: 7s, 10s
+            wait = 3 + attempt * 2   # backoff breve: 5s, 7s
             ctx.logger.warning("mobile.de: challenge Akamai (tentativo %d/%d) — riprovo tra %ds...",
                                attempt, attempts, wait)
             time.sleep(wait)

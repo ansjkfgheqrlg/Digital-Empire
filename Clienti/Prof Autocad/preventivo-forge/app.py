@@ -159,6 +159,16 @@ class _StreamToQueue:
     def _emit(self, line):
         if self.q is None:
             return
+        low = line.lower()
+        # retry anti-bot: mostralo SEMPRE (non deduplicato) → l'utente vede che sta lavorando
+        if "riprovo tra" in low or ("tentativo" in low and "challenge" in low):
+            m = re.search(r"tentativo (\d+)/(\d+)", line)
+            tag = f" {m.group(1)}/{m.group(2)}" if m else ""
+            try:
+                self.q.put(f"🔄  L'anti-bot di mobile.de fa il difficile: ritento{tag}… (attendi)")
+            except Exception:
+                pass
+            return
         for key, friendly in _MILESTONES:
             if key in line and friendly not in self._seen:
                 self._seen.add(friendly)
