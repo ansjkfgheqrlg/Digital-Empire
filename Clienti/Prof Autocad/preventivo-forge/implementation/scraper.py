@@ -80,11 +80,27 @@ def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | No
             "oppure usa run.py --manual <annuncio.html> <foto_dir>."
         )
 
-    # La challenge Akamai è INTERMITTENTE → ritenta fino a 3 volte con Chrome fresco + backoff breve.
+    # Profilo Chrome PERSISTENTE (cartella fissa, riusata tra TUTTI i preventivi): tiene il cookie
+    # "via libera" di Akamai → dopo il PRIMO preventivo i successivi passano SENZA nuova challenge.
+    # È ciò che tiene l'IP pulito anche con molti preventivi al giorno. (Profilo NUOVO ogni volta =
+    # tante sessioni "bot" dallo stesso IP = blocco garantito → era la causa del blocco nei test.)
+    persistent_profile = None
+    try:
+        import common
+        _pb = common.RUNS_DIR.parent / "browser-profile"
+        _pb.mkdir(parents=True, exist_ok=True)
+        persistent_profile = str(_pb)
+    except Exception:
+        persistent_profile = None
+
+    # Challenge Akamai INTERMITTENTE → ritenta fino a 3 volte + backoff breve.
     attempts = 3
     for attempt in range(1, attempts + 1):
         port = cdp.free_port()
-        profile = tempfile.mkdtemp(prefix="pf-chrome-")   # profilo dedicato per-tentativo
+        if persistent_profile:
+            profile, is_temp = persistent_profile, False   # riusa il cookie "via libera"
+        else:
+            profile, is_temp = tempfile.mkdtemp(prefix="pf-chrome-"), True
         ctx.logger.info("Avvio Chrome reale (CDP :%d, headless=%s, tentativo %d/%d) su %s",
                         port, cfg["headless"], attempt, attempts, chrome)
         proc = cdp.launch(chrome, port, profile, headless=cfg["headless"], url=ctx.source_url)
@@ -130,10 +146,11 @@ def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | No
                 page.close()
         finally:
             cdp.kill_tree(proc)
-            try:
-                shutil.rmtree(profile, ignore_errors=True)
-            except Exception:
-                pass
+            if is_temp:
+                try:
+                    shutil.rmtree(profile, ignore_errors=True)
+                except Exception:
+                    pass
 
         low = html.lower()
         if html and not _looks_blocked(html) and not any(m in low for m in CHALLENGE_MARKERS):
