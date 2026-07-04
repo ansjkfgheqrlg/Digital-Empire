@@ -71,7 +71,9 @@ def launch(chrome: str, port: int, profile: str, headless: bool, url: str | None
     if headless:
         args += ["--headless=new", "--disable-gpu", "--hide-scrollbars"]
     else:
-        args.append("--start-maximized")
+        # headful ma NASCOSTO: finestra REALE (Akamai la vede viva, visibilityState=visible)
+        # ma spostata fuori dallo schermo → l'utente non la vede. Più pulito dell'headless.
+        args += ["--window-position=-32000,-32000", "--window-size=1280,1000"]
     if url:
         args.append(url)
     return subprocess.Popen(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

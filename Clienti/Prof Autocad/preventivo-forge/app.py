@@ -125,22 +125,47 @@ def _newest_pdf() -> Path | None:
     return pdfs[0] if pdfs else None
 
 
+# Frasi PULITE mostrate in GUI (il log tecnico completo resta comunque nei file logs/).
+_MILESTONES = [
+    ("=== PreventivoForge run", "▶️  Avvio…"),
+    ("S1_scraping -> running",  "🔎  Apro l'annuncio e scarico le foto…"),
+    ("S2_parsing -> running",   "📋  Leggo i dati dell'auto…"),
+    ("S3_translate_copy -> running", "🇮🇹  Traduco in italiano…"),
+    ("S4_pricing -> running",   "💶  Calcolo il prezzo…"),
+    ("S5_pdf_render -> running", "📄  Creo il preventivo PDF…"),
+    ("GATE_R -> passed",        "✅  Controllo qualità superato…"),
+]
+
+
 class _StreamToQueue:
-    """File-like che inoltra ciò che la pipeline stampa (print/stdout) alla coda della GUI.
-    FONDAMENTALE: sotto pythonw/.exe `sys.stdout` è None → senza questo, le print() di run.py
-    vanno in crash e l'app 'non funziona'."""
+    """File-like che FILTRA ciò che la pipeline stampa: alla GUI arrivano SOLO poche frasi
+    chiare (le milestone qui sopra), non il log tecnico (che resta nei file logs/).
+    Serve anche sotto pythonw/.exe dove sys.stdout è None (evita il crash delle print())."""
 
     def __init__(self, q):
         self.q = q
+        self._buf = ""
+        self._seen = set()
 
     def write(self, s):
-        s = (s or "").rstrip("\r\n")
-        if s and self.q is not None:
-            try:
-                self.q.put(s)
-            except Exception:
-                pass
-        return len(s or "")
+        s = s or ""
+        self._buf += s
+        while "\n" in self._buf:
+            line, self._buf = self._buf.split("\n", 1)
+            self._emit(line)
+        return len(s)
+
+    def _emit(self, line):
+        if self.q is None:
+            return
+        for key, friendly in _MILESTONES:
+            if key in line and friendly not in self._seen:
+                self._seen.add(friendly)
+                try:
+                    self.q.put(friendly)
+                except Exception:
+                    pass
+                return  # una sola frase per riga, il resto si scarta
 
     def flush(self):
         pass
