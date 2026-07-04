@@ -16,8 +16,11 @@ Guida consegna passo-passo: `Clienti/Prof Autocad/COME-CONSEGNARE-A-NOVACAR.md`.
 - **Fix 2026-07-04 (testati):** (1) GUI mostra SOLO frasi pulite (milestone), non il log tecnico;
   (2) Chrome scraping NASCOSTO (off-screen, resta headful → Akamai ok);
   (3) **MULTI-LINK fino a 10** (`run_batch` in app.py: ogni link isolato, tutti i PDF in 1 cartella; textarea in GUI);
-  (4) **retry Akamai 3x** in `scraper.py _fetch_live_cdp` (challenge intermittente → Chrome fresco + backoff).
+  (4) **retry Akamai 3x** in `scraper.py _fetch_live_cdp` (challenge intermittente → backoff);
+  (5) **PROFILO CHROME PERSISTENTE = anti-blocco IP** (`browser-profile/` fisso riusato: passa Akamai 1 volta →
+  riusa il cookie → niente re-challenge → IP pulito con 30+ preventivi/giorno). Bail veloce (fallisce ~1min non 5) + retry visibile in GUI.
   Provato live: retry tentativo1 bloccato→tentativo2 OK; batch mockato 3 link (1 fallito isolato) OK.
+  **NB anti-blocco:** rotazione IP gratis NON esiste (IP free = datacenter = Akamai blocca); soluzione €0 = cookie persistente. Proxy residenziali = a pagamento (solo se si scala a centinaia/giorno).
 - **Riserva AI traduzione ATTIVA** (Groq gratuito €0): glossario 99% + AI sui soli residui. Anche nelle app dealer.
 - **Kill-switch LIVE**: "X non paga" → Claude `gestione-licenze.py sospendi X` + email. Fabbrica app: `/nuovo-concessionario`.
 
