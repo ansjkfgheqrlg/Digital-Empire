@@ -140,6 +140,18 @@ def _impacchetta_app(a, cart: Path) -> None:
     conc.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(DEALERS_DIR / a.id / "config.json", conc / "config.json")
     shutil.copyfile(DEALERS_DIR / a.id / "logo.png", conc / "logo.png")
+
+    # .env con la riserva AI (chiave Groq gratuita) accanto all'exe del dealer
+    master_env = HERE / ".env"
+    ai_lines = []
+    if master_env.exists():
+        for line in master_env.read_text(encoding="utf-8", errors="replace").splitlines():
+            if line.startswith("TRANSLATE_AI_"):
+                ai_lines.append(line)
+    if ai_lines:
+        (dst / ".env").write_text("\n".join(ai_lines) + "\n", encoding="utf-8")
+        print("   riserva AI inclusa (.env con chiave Groq gratuita).")
+
     print(f"✅ app brandizzata pronta: Clienti/{a.nome}/App/PreventivoForge/PreventivoForge.exe")
 
 

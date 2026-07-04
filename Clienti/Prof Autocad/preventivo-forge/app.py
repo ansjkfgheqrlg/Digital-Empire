@@ -58,6 +58,14 @@ def _fix_frozen_paths() -> None:
         _cand = BASE_DIR / "concessionarie"
         if _cand.exists():
             dealers.DEALERS_DIR = _cand
+        # .env accanto all'exe (chiave riserva AI, ecc.) → in os.environ
+        try:
+            from dotenv import load_dotenv
+            _envf = BASE_DIR / ".env"
+            if _envf.exists():
+                load_dotenv(_envf)
+        except Exception:
+            pass
     except Exception:
         pass
 
