@@ -21,6 +21,10 @@ Guida consegna passo-passo: `Clienti/Prof Autocad/COME-CONSEGNARE-A-NOVACAR.md`.
   riusa il cookie → niente re-challenge → IP pulito con 30+ preventivi/giorno). Bail veloce (fallisce ~1min non 5) + retry visibile in GUI.
   Provato live: retry tentativo1 bloccato→tentativo2 OK; batch mockato 3 link (1 fallito isolato) OK.
   **NB anti-blocco:** rotazione IP gratis NON esiste (IP free = datacenter = Akamai blocca); soluzione €0 = cookie persistente. Proxy residenziali = a pagamento (solo se si scala a centinaia/giorno).
+  (6) **FIX CRITICO (2026-07-05, `07d4886`):** lo scraper ora ASPETTA i dati veri (`window.__INITIAL_STATE__`) e li PRETENDE
+  per dichiarare successo. Bug precedente (bail a 20s) afferrava la pagina prima del caricamento JS → PDF vuoto/Gate A rosso o falso
+  "anti-bot". Profilo persistente ora IBRIDO: tentativo 1 = fisso (cookie), retry = sessione fresca. **Testato live su hotspot:
+  Hyundai i20 20.990→24.620, 14 foto, 6 gate verdi, PDF in 35s al 1° tentativo.** L'app FUNZIONA (il blocco era mia regressione, non Akamai).
 - **Riserva AI traduzione ATTIVA** (Groq gratuito €0): glossario 99% + AI sui soli residui. Anche nelle app dealer.
 - **Kill-switch LIVE**: "X non paga" → Claude `gestione-licenze.py sospendi X` + email. Fabbrica app: `/nuovo-concessionario`.
 
