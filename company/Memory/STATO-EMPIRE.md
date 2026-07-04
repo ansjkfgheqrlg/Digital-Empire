@@ -33,10 +33,12 @@
 - **Skill `/nuovo-concessionario`** + doc `FABBRICA-CONCESSIONARI.md` (spiega tutto: fabbrica + kill-switch).
 - **App branding**: `app.py` legge `brand.json`; dealer caricabili anche da accanto all'exe (per app clonata). 2 file mod di app.py già avvisati.
 - Segreti locali (gitignorati): `licenze.config.json` (id gist), `.licenza_cache.json`, `Memory/storico-preventivi/*.pdf`.
-- **Riserva AI traduzione (€0, opzionale)**: `implementation/ai_translate.py` (mio) + hook `_ai_fill_residuals` in
-  `translate_copy.py` (⚠️ Half B, 1 aggancio) — traduce i SOLI residui tedeschi con modello gratuito (NVIDIA NIM),
-  config da `.env` (`TRANSLATE_AI_KEY/URL/MODEL`). Spenta senza chiave = glossario+Gate B come prima. Testata (no-op + mock).
-**RESIDUO:** attivare riserva AI (serve chiave FREE, nessun costo) · firma codice SmartScreen (opz.) · test PC senza Chrome.
+- **Riserva AI traduzione (€0) — ATTIVA**: `implementation/ai_translate.py` (mio) + hook `_ai_fill_residuals` in
+  `translate_copy.py` (⚠️ Half B, 1 aggancio) — traduce i SOLI residui tedeschi. Provider = **Groq gratuito**
+  (riuso chiave Outreach), config in `.env` (gitignorato). **Testato dal vivo**: 4/4 termini + auto-riparazione residuo reale;
+  sul GLA (glossario copre tutto) AI si attiva 0 volte (nessuna chiamata sprecata). `app.py` frozen carica `.env` accanto all'exe;
+  la fabbrica (`--build`) mette il `.env` con la chiave nelle app dei dealer → anche loro si auto-riparano (Max: stessa chiave Outreach).
+**RESIDUO:** firma codice SmartScreen (opz.) · test PC senza Chrome · [Max next = ISPETTORATO M1, vedi blocco in cima].
 
 ## ✅ MAX — PreventivoForge: GATE IMG/R in run.py + KILL-SWITCH + STORICO + EXE ri-testata (2026-07-03)
 **CP-20260703-002. Chiuse TUTTE le PENDING MAX + consegna abbonabile pronta.**

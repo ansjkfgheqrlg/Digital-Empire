@@ -1,0 +1,6 @@
+{
+  "//": "Dice all'editor (Pylance/Pyright) che i moduli stanno in implementation/ — caricati a runtime via sys.path.insert. Elimina i falsi 'modulo non trovato'.",
+  "extraPaths": ["implementation"],
+  "reportMissingImports": "none",
+  "reportMissingModuleSource": "none"
+}
