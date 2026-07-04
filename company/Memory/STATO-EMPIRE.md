@@ -13,15 +13,19 @@
 **Consegna in 2 giorni. Pacchetto UNICO pronto: `Clienti/Prof Autocad/Consegna-Novacar/PreventivoForge-Novacar.zip` (120 MB, gitignorato).**
 Dentro: exe + kill-switch (config Novacar con `license_url`) + riserva AI (.env con chiave Groq) + `LEGGIMI.txt`.
 Guida consegna passo-passo: `Clienti/Prof Autocad/COME-CONSEGNARE-A-NOVACAR.md`.
-- **Ultimi 2 fix (2026-07-04, testati):** (1) GUI mostra SOLO frasi pulite (milestone), non il log tecnico;
-  (2) Chrome scraping NASCOSTO (off-screen, resta headful → Akamai ok). Provato live: Hyundai i20 scrapato, PDF ok.
+- **Fix 2026-07-04 (testati):** (1) GUI mostra SOLO frasi pulite (milestone), non il log tecnico;
+  (2) Chrome scraping NASCOSTO (off-screen, resta headful → Akamai ok);
+  (3) **MULTI-LINK fino a 10** (`run_batch` in app.py: ogni link isolato, tutti i PDF in 1 cartella; textarea in GUI);
+  (4) **retry Akamai 3x** in `scraper.py _fetch_live_cdp` (challenge intermittente → Chrome fresco + backoff).
+  Provato live: retry tentativo1 bloccato→tentativo2 OK; batch mockato 3 link (1 fallito isolato) OK.
 - **Riserva AI traduzione ATTIVA** (Groq gratuito €0): glossario 99% + AI sui soli residui. Anche nelle app dealer.
 - **Kill-switch LIVE**: "X non paga" → Claude `gestione-licenze.py sospendi X` + email. Fabbrica app: `/nuovo-concessionario`.
 
 ### ⚠️ GAEL — file Half B che MAX ha toccato (allineati se riprendi la GUI/traduzione)
 - **`app.py`** (tua): Max ha aggiunto — (a) `_StreamToQueue` ora **FILTRA** (solo milestone pulite, `_MILESTONES`);
   (b) legge `brand.json` (titolo+dealer per app clonata) + `_list_dealers` bloccato sul dealer; (c) `_CODE_MSG` +8/9/10;
-  (d) guard `sys.stdout is None` nel ramo `--selftest`; (e) carica `.env` accanto all'exe (frozen). Estetica/layout GUI NON toccati.
+  (d) guard `sys.stdout is None` nel ramo `--selftest`; (e) carica `.env` accanto all'exe (frozen);
+  (f) **`run_batch`+`_parse_links` (multi-link max 10)** + input multi-riga (Tkinter `Text`, premium `<textarea>`). Estetica/layout GUI NON stravolti.
 - **`translate_copy.py`** (tua): 1 solo hook `_ai_fill_residuals` dopo il glossario (riserva AI sui residui). Resto invariato.
 - Mai toccati: `render_pdf.py`, `templates/preventivo.html`, `glossary_de_it.py`, `qa_gate.py`, REGOLE-SACRE.
 **GAEL: resti su Impero V2-2/V2-3 (ordine assoluto). Se un domani riprendi la GUI, parti da questi file aggiornati.**
