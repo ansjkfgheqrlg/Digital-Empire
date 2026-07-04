@@ -94,25 +94,26 @@ def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | No
         persistent_profile = None
 
     # Challenge Akamai INTERMITTENTE → ritenta fino a 3 volte + backoff breve.
+    html = ""
     attempts = 3
     for attempt in range(1, attempts + 1):
         port = cdp.free_port()
-        if persistent_profile:
-            profile, is_temp = persistent_profile, False   # riusa il cookie "via libera"
+        if persistent_profile and attempt == 1:
+            profile, is_temp = persistent_profile, False   # 1° tentativo: riusa il cookie "via libera" se c'è
         else:
-            profile, is_temp = tempfile.mkdtemp(prefix="pf-chrome-"), True
+            profile, is_temp = tempfile.mkdtemp(prefix="pf-chrome-"), True   # retry: sessione FRESCA (come versione provata)
         ctx.logger.info("Avvio Chrome reale (CDP :%d, headless=%s, tentativo %d/%d) su %s",
                         port, cfg["headless"], attempt, attempts, chrome)
         proc = cdp.launch(chrome, port, profile, headless=cfg["headless"], url=ctx.source_url)
 
-        html, final_url = "", ctx.source_url
+        html, final_url, got_state = "", ctx.source_url, False
         try:
             cdp.wait_devtools(port, timeout=45)
             page = cdp.Page(port)
             try:
                 start = time.time()
                 deadline = start + max(cfg["nav_timeout_ms"] / 1000.0, 45)
-                got_state = False
+                saw_challenge = False
                 while time.time() < deadline:
                     try:
                         cur = page.html()          # Runtime.evaluate: non crasha durante i reload
@@ -123,25 +124,28 @@ def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | No
                         low = cur.lower()
                         if "window.__initial_state__" in low:
                             got_state = True
-                        ready = got_state or "application/ld+json" in low
-                        challenge = any(m in low for m in CHALLENGE_MARKERS)
-                        if ready and not challenge and "zugriff verweigert" not in low:
-                            break
-                    # bail VELOCE: bloccato da >20s senza dati → inutile aspettare, vai al retry
-                    if not got_state and (time.time() - start) > 20:
+                        challenge = any(m in low for m in CHALLENGE_MARKERS) or "zugriff verweigert" in low
+                        if got_state and not challenge:
+                            break                  # abbiamo i DATI veri → fatto
+                        if challenge:
+                            saw_challenge = True
+                    # bail SOLO su challenge persistente (>18s senza dati) → retry con sessione fresca.
+                    # Una pagina vera ancora senza __INITIAL_STATE__ NON è un blocco: va ASPETTATA.
+                    if saw_challenge and not got_state and (time.time() - start) > 18:
                         break
                     page.scroll()
                     time.sleep(1.5)
-                # scroll finale per il lazy-load della gallery, poi ultima lettura
-                for _ in range(5):
-                    page.scroll(1600)
-                    time.sleep(0.4)
-                try:
-                    cur = page.html()
-                    if cur:
-                        html = cur
-                except Exception:
-                    pass
+                # scroll gallery + ultima lettura SOLO se abbiamo i dati (altrimenti inutile)
+                if got_state:
+                    for _ in range(5):
+                        page.scroll(1600)
+                        time.sleep(0.4)
+                    try:
+                        cur = page.html()
+                        if cur:
+                            html = cur
+                    except Exception:
+                        pass
             finally:
                 page.close()
         finally:
@@ -153,20 +157,28 @@ def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | No
                     pass
 
         low = html.lower()
-        if html and not _looks_blocked(html) and not any(m in low for m in CHALLENGE_MARKERS):
-            return html, final_url   # ✓ passata
+        blocked = _looks_blocked(html) or any(m in low for m in CHALLENGE_MARKERS)
+        # SUCCESSO solo con i DATI veri (window.__INITIAL_STATE__). Una pagina "pulita" ma senza
+        # dati (annuncio rimosso o JS non ancora caricato) NON è un successo.
+        if got_state and not blocked:
+            return html, final_url
 
         if attempt < attempts:
             wait = 3 + attempt * 2   # backoff breve: 5s, 7s
-            ctx.logger.warning("mobile.de: challenge Akamai (tentativo %d/%d) — riprovo tra %ds...",
-                               attempt, attempts, wait)
+            motivo = "anti-bot Akamai" if blocked else "dati non ancora caricati"
+            ctx.logger.warning("mobile.de: %s (tentativo %d/%d) — riprovo tra %ds...",
+                               motivo, attempt, attempts, wait)
             time.sleep(wait)
 
+    if _looks_blocked(html) or any(m in html.lower() for m in CHALLENGE_MARKERS):
+        raise RuntimeError(
+            "mobile.de: anti-bot Akamai non superato dopo più tentativi. Riprova tra poco "
+            "(di solito passa con IP di casa/hotspot pulito), oppure usa "
+            "run.py --manual <annuncio.html> <foto_dir>."
+        )
     raise RuntimeError(
-        "mobile.de: challenge Akamai non superata dopo più tentativi. "
-        "Riprova tra poco (di solito passa con Google Chrome + IP residenziale/di casa), oppure usa "
-        "il fallback: apri l'annuncio nel browser, salva la pagina come HTML e lancia "
-        "run.py --manual <annuncio.html> <foto_dir>."
+        "mobile.de: pagina caricata ma senza i dati dell'auto (annuncio forse rimosso/venduto, "
+        "oppure caricamento non completato). Verifica che il link sia valido e riprova."
     )
 
 
