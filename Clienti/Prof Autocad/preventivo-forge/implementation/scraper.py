@@ -80,59 +80,70 @@ def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | No
             "oppure usa run.py --manual <annuncio.html> <foto_dir>."
         )
 
-    port = cdp.free_port()
-    profile = tempfile.mkdtemp(prefix="pf-chrome-")   # profilo dedicato per-run (evita lock/reuse)
-    ctx.logger.info("Avvio Chrome reale (CDP :%d, headless=%s) su %s", port, cfg["headless"], chrome)
-    proc = cdp.launch(chrome, port, profile, headless=cfg["headless"], url=ctx.source_url)
+    # La challenge Akamai è INTERMITTENTE → ritenta fino a 3 volte con Chrome fresco + backoff.
+    attempts = 3
+    for attempt in range(1, attempts + 1):
+        port = cdp.free_port()
+        profile = tempfile.mkdtemp(prefix="pf-chrome-")   # profilo dedicato (evita lock/reuse)
+        ctx.logger.info("Avvio Chrome reale (CDP :%d, headless=%s, tentativo %d/%d) su %s",
+                        port, cfg["headless"], attempt, attempts, chrome)
+        proc = cdp.launch(chrome, port, profile, headless=cfg["headless"], url=ctx.source_url)
 
-    html, final_url = "", ctx.source_url
-    try:
-        cdp.wait_devtools(port, timeout=45)
-        page = cdp.Page(port)
+        html, final_url = "", ctx.source_url
         try:
-            deadline = time.time() + max(cfg["nav_timeout_ms"] / 1000.0, 45)
-            while time.time() < deadline:
-                try:
-                    cur = page.html()          # Runtime.evaluate: non crasha durante i reload
-                except Exception:
-                    cur = ""                   # pagina in navigazione → riprova
-                if cur:
-                    html = cur
-                    low = cur.lower()
-                    ready = "window.__initial_state__" in low or "application/ld+json" in low
-                    challenge = any(m in low for m in CHALLENGE_MARKERS)
-                    if ready and not challenge and "zugriff verweigert" not in low:
-                        break
-                page.scroll()
-                time.sleep(1.5)
-            # scroll finale per il lazy-load della gallery, poi ultima lettura
-            for _ in range(5):
-                page.scroll(1600)
-                time.sleep(0.4)
+            cdp.wait_devtools(port, timeout=45)
+            page = cdp.Page(port)
             try:
-                cur = page.html()
-                if cur:
-                    html = cur
+                deadline = time.time() + max(cfg["nav_timeout_ms"] / 1000.0, 45)
+                while time.time() < deadline:
+                    try:
+                        cur = page.html()          # Runtime.evaluate: non crasha durante i reload
+                    except Exception:
+                        cur = ""                   # pagina in navigazione → riprova
+                    if cur:
+                        html = cur
+                        low = cur.lower()
+                        ready = "window.__initial_state__" in low or "application/ld+json" in low
+                        challenge = any(m in low for m in CHALLENGE_MARKERS)
+                        if ready and not challenge and "zugriff verweigert" not in low:
+                            break
+                    page.scroll()
+                    time.sleep(1.5)
+                # scroll finale per il lazy-load della gallery, poi ultima lettura
+                for _ in range(5):
+                    page.scroll(1600)
+                    time.sleep(0.4)
+                try:
+                    cur = page.html()
+                    if cur:
+                        html = cur
+                except Exception:
+                    pass
+            finally:
+                page.close()
+        finally:
+            cdp.kill_tree(proc)
+            try:
+                shutil.rmtree(profile, ignore_errors=True)
             except Exception:
                 pass
-        finally:
-            page.close()
-    finally:
-        cdp.kill_tree(proc)
-        try:
-            shutil.rmtree(profile, ignore_errors=True)
-        except Exception:
-            pass
 
-    low = html.lower()
-    if not html or _looks_blocked(html) or any(m in low for m in CHALLENGE_MARKERS):
-        raise RuntimeError(
-            "mobile.de: challenge Akamai non superata automaticamente in questo run. "
-            "Riprova (di solito passa con Google Chrome + IP residenziale), oppure usa il "
-            "fallback: apri l'annuncio nel tuo browser, salva la pagina come HTML e lancia "
-            "run.py --manual <annuncio.html> <foto_dir>."
-        )
-    return html, final_url
+        low = html.lower()
+        if html and not _looks_blocked(html) and not any(m in low for m in CHALLENGE_MARKERS):
+            return html, final_url   # ✓ passata
+
+        if attempt < attempts:
+            wait = 4 + attempt * 3   # backoff: 7s, 10s
+            ctx.logger.warning("mobile.de: challenge Akamai (tentativo %d/%d) — riprovo tra %ds...",
+                               attempt, attempts, wait)
+            time.sleep(wait)
+
+    raise RuntimeError(
+        "mobile.de: challenge Akamai non superata dopo più tentativi. "
+        "Riprova tra poco (di solito passa con Google Chrome + IP residenziale/di casa), oppure usa "
+        "il fallback: apri l'annuncio nel browser, salva la pagina come HTML e lancia "
+        "run.py --manual <annuncio.html> <foto_dir>."
+    )
 
 
 def _find_chrome() -> str | None:

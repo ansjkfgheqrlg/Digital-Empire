@@ -17,6 +17,7 @@ from __future__ import annotations
 import logging
 import os
 import queue
+import re
 import sys
 import threading
 from pathlib import Path
@@ -255,6 +256,80 @@ def _open_file(path: Path) -> None:
         pass
 
 
+# --------------------------------------------------------------------------- #
+# Batch: fino a 10 link in una volta
+# --------------------------------------------------------------------------- #
+MAX_LINKS = 10
+
+
+def _parse_links(text: str) -> tuple[list[str], str]:
+    """Estrae i link mobile.de dal testo (uno per riga o separati da spazi).
+    Dedup, tiene l'ordine, massimo MAX_LINKS. Ritorna (links, nota)."""
+    seen: set[str] = set()
+    urls: list[str] = []
+    for tok in re.split(r"\s+", (text or "").strip()):
+        t = tok.strip().strip(",;")
+        if "mobile.de" in t.lower() and t not in seen:
+            seen.add(t)
+            urls.append(t)
+    note = ""
+    if len(urls) > MAX_LINKS:
+        note = f"Massimo {MAX_LINKS} link: uso i primi {MAX_LINKS} (ne hai messi {len(urls)})."
+        urls = urls[:MAX_LINKS]
+    return urls, note
+
+
+def run_batch(urls: list[str], dealer: str, log_queue: "queue.Queue[str] | None" = None) -> tuple[bool, "Path | None", str]:
+    """Esegue la pipeline su PIU' link (max 10). Ogni link è isolato: uno fallito NON ferma
+    gli altri. I PDF riusciti finiscono in un'unica cartella. Ritorna (ok_globale, out_dir, msg)."""
+    import shutil
+    from datetime import datetime
+
+    n = len(urls)
+    out_dir = BASE_DIR / f"preventivi_{datetime.now():%Y%m%d-%H%M%S}"
+    try:
+        out_dir.mkdir(parents=True, exist_ok=True)
+    except Exception:
+        out_dir = BASE_DIR
+
+    done: list[Path] = []
+    fail: list[int] = []
+    for i, url in enumerate(urls, 1):
+        if log_queue is not None:
+            log_queue.put(f"━━━━━━━━━━  Preventivo {i} di {n}  ━━━━━━━━━━")
+        try:
+            ok, pdf, msg = run_pipeline(url, dealer, log_queue)
+        except Exception as exc:  # noqa: BLE001
+            ok, pdf, msg = False, None, f"Errore: {exc}"
+        if ok and pdf and Path(pdf).exists():
+            dst = out_dir / f"{i:02d}_{Path(pdf).name}"
+            try:
+                shutil.copyfile(str(pdf), str(dst))
+            except Exception:
+                dst = Path(pdf)
+            done.append(dst)
+            if log_queue is not None:
+                log_queue.put(f"✅  Preventivo {i}/{n}: pronto")
+        else:
+            fail.append(i)
+            if log_queue is not None:
+                log_queue.put(f"⛔  Preventivo {i}/{n}: {msg}")
+
+    # apertura: 1 solo → il PDF; più di uno → la cartella con tutti i PDF
+    if n == 1 and done:
+        _open_file(done[0])
+    elif done:
+        _open_file(out_dir)
+
+    if done and not fail:
+        msg = f"Fatti tutti i {len(done)} preventivi." if n > 1 else "Preventivo pronto."
+    elif done and fail:
+        msg = f"Fatti {len(done)} su {n}. Non riusciti: {', '.join('#'+str(i) for i in fail)} (vedi log)."
+    else:
+        msg = f"Nessun preventivo generato su {n} link. Controlla i link e il log."
+    return (len(done) > 0), out_dir, msg
+
+
 def _list_dealers() -> list[str]:
     # app brandizzata (brand.json presente) → mostra SOLO il proprio concessionario
     if _BRAND.get("locked"):
@@ -318,14 +393,13 @@ class PreventivoApp:
         card.pack(fill="x", pady=(0, 14))
         pad = {"padx": 18, "pady": 6}
 
-        tk.Label(card, text="Link annuncio mobile.de", bg=C_CARD, fg=C_TEXT,
+        tk.Label(card, text="Link annunci mobile.de (fino a 10, uno per riga)", bg=C_CARD, fg=C_TEXT,
                  font=("Segoe UI Semibold", 11)).grid(row=0, column=0, sticky="w", **pad)
-        self.url_var = tk.StringVar()
-        self.url_entry = tk.Entry(card, textvariable=self.url_var, font=("Segoe UI", 11),
-                                  relief="flat", bg=C_LOGBG, fg=C_TEXT, insertbackground=C_TEXT)
-        self.url_entry.grid(row=1, column=0, columnspan=2, sticky="we", padx=18, pady=(0, 10),
-                            ipady=7)
-        self.url_entry.focus_set()
+        self.url_txt = tk.Text(card, height=5, font=("Segoe UI", 10), relief="flat",
+                               bg=C_LOGBG, fg=C_TEXT, insertbackground=C_TEXT, wrap="none",
+                               padx=8, pady=6)
+        self.url_txt.grid(row=1, column=0, columnspan=2, sticky="we", padx=18, pady=(0, 10))
+        self.url_txt.focus_set()
 
         tk.Label(card, text="Concessionaria", bg=C_CARD, fg=C_TEXT,
                  font=("Segoe UI Semibold", 11)).grid(row=2, column=0, sticky="w", padx=18)
@@ -342,7 +416,7 @@ class PreventivoApp:
         card.columnconfigure(0, weight=1)
 
         # Status
-        self.status = tk.Label(body, text="Pronto. Incolla un link e premi «Genera preventivo».",
+        self.status = tk.Label(body, text="Pronto. Incolla fino a 10 link (uno per riga) e premi «Genera».",
                                bg=C_BG, fg=C_MUTED, font=("Segoe UI", 10), anchor="w")
         self.status.pack(fill="x", pady=(0, 6))
 
@@ -381,20 +455,23 @@ class PreventivoApp:
     def _on_generate(self):
         if self._busy:
             return
-        url = self.url_var.get().strip()
-        if not url or "mobile.de" not in url:
-            self._set_status("Incolla un link valido di mobile.de.", C_ERR)
+        urls, note = _parse_links(self.url_txt.get("1.0", "end"))
+        if not urls:
+            self._set_status("Incolla almeno un link di mobile.de (uno per riga, max 10).", C_ERR)
             return
         self._busy = True
         self.btn.config(text="Generazione in corso…", bg=C_MUTED, state="disabled")
         self.logbox.config(state="normal"); self.logbox.delete("1.0", "end"); self.logbox.config(state="disabled")
-        self._set_status("Sto generando il preventivo… (si aprirà Chrome, lascialo lavorare)", C_ACCENT)
+        if note:
+            self._log("⚠️  " + note)
+        n = len(urls)
+        self._set_status(f"Genero {n} preventiv{'o' if n == 1 else 'i'}… (si aprirà Chrome, lascialo lavorare)", C_ACCENT)
         dealer = self.dealer_var.get()
-        threading.Thread(target=self._worker, args=(url, dealer), daemon=True).start()
+        threading.Thread(target=self._worker, args=(urls, dealer), daemon=True).start()
 
-    def _worker(self, url: str, dealer: str):
-        ok, pdf, msg = run_pipeline(url, dealer, self.q)
-        self.q.put(("__DONE__", ok, str(pdf) if pdf else "", msg))
+    def _worker(self, urls: list, dealer: str):
+        ok, out, msg = run_batch(urls, dealer, self.q)
+        self.q.put(("__DONE__", ok, str(out) if out else "", msg))
 
     def _drain_queue(self):
         try:
@@ -409,14 +486,13 @@ class PreventivoApp:
             pass
         self.root.after(120, self._drain_queue)
 
-    def _finish(self, ok: bool, pdf: str, msg: str):
+    def _finish(self, ok: bool, out: str, msg: str):
         self._busy = False
         self.btn.config(text="Genera preventivo", bg=C_ACCENT, state="normal")
         if ok:
             self._set_status("✓ " + msg, C_OK)
-            self._log("PDF: " + pdf)
-            if pdf:
-                _open_file(Path(pdf))
+            if out:
+                self._log("Cartella preventivi: " + out)  # (già aperta in automatico)
         else:
             self._set_status("✗ " + msg, C_ERR)
 
@@ -454,31 +530,34 @@ class _WebApi:
     def dealers(self):
         return _list_dealers()
 
-    def generate(self, url: str, dealer: str):
+    def generate(self, text: str, dealer: str):
         if self._running:
             return {"error": "generazione già in corso"}
-        url = (url or "").strip()
-        if not url or "mobile.de" not in url.lower():
-            return {"error": "Incolla un link valido di mobile.de."}
+        urls, note = _parse_links(text or "")
+        if not urls:
+            return {"error": "Incolla almeno un link di mobile.de (uno per riga, max 10)."}
         self.q = queue.Queue()
         self._done = self._ok = False
         self._pdf = self._msg = ""
         self._running = True
-        threading.Thread(target=self._worker, args=(url, dealer or "novacar"), daemon=True).start()
-        return {"started": True}
+        if note:
+            self.q.put("⚠️  " + note)
+        n = len(urls)
+        self.q.put(f"▶️  Avvio: {n} preventiv{'o' if n == 1 else 'i'} da generare…")
+        threading.Thread(target=self._worker, args=(urls, dealer or "novacar"), daemon=True).start()
+        return {"started": True, "count": n}
 
-    def _worker(self, url: str, dealer: str):
+    def _worker(self, urls: list, dealer: str):
         try:
-            ok, pdf, msg = run_pipeline(url, dealer, self.q)
+            ok, out, msg = run_batch(urls, dealer, self.q)
         except Exception as exc:  # noqa: BLE001
-            ok, pdf, msg = False, None, f"Errore: {exc}"
+            ok, out, msg = False, None, f"Errore: {exc}"
         self._ok = ok
-        self._pdf = str(pdf) if pdf else ""
+        self._pdf = str(out) if out else ""   # cartella coi PDF (o singolo PDF)
         self._msg = msg or ""
         self._done = True
         self._running = False
-        if ok and pdf:
-            _open_file(Path(pdf))
+        # apertura già gestita da run_batch (PDF singolo o cartella)
 
     def poll(self):
         lines = []

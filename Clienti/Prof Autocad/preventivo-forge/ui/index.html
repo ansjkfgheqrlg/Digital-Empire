@@ -67,6 +67,7 @@
   .input::placeholder{ color:#9aa6b1; }
   .input:hover{ background:#fff; }
   .input:focus{ background:#fff; border-color:var(--accent); box-shadow:0 0 0 4px rgba(91,111,125,.14); }
+  textarea.input{ resize:vertical; min-height:112px; line-height:1.5; }
 
   .row{ display:flex; gap:14px; align-items:flex-end; margin-top:14px; }
   .row .grow{ flex:1; }
@@ -121,14 +122,14 @@
 <body>
   <header>
     <div class="brand"><span class="dot"></span>PreventivoForge <small>· Novacar srl</small></div>
-    <div class="subtitle">Da un annuncio mobile.de al preventivo PDF in italiano</div>
+    <div class="subtitle">Da uno o più annunci mobile.de ai preventivi PDF in italiano (fino a 10)</div>
   </header>
 
   <main>
     <div class="card">
-      <label class="field-label" for="url">Link annuncio mobile.de</label>
-      <input id="url" class="input" type="text" spellcheck="false"
-             placeholder="https://suchen.mobile.de/fahrzeuge/details.html?id=…">
+      <label class="field-label" for="url">Link annunci mobile.de — fino a 10, uno per riga</label>
+      <textarea id="url" class="input" rows="5" spellcheck="false"
+             placeholder="Incolla fino a 10 link mobile.de, uno per riga…"></textarea>
       <div class="row">
         <div class="grow">
           <label class="field-label" for="dealer">Concessionaria</label>
@@ -149,7 +150,7 @@
     </div>
   </main>
 
-  <footer>Serve <b>Google Chrome</b> installato · nessun costo per preventivo · il PDF si apre da solo</footer>
+  <footer>Serve <b>Google Chrome</b> installato · nessun costo per preventivo · i PDF si aprono da soli</footer>
 
 <script>
   const $ = s => document.querySelector(s);
@@ -179,24 +180,27 @@
       (s.lines||[]).forEach(addLog);
       if(s.done){
         clearInterval(polling); polling=null; ready(true);
-        if(s.ok){ setStatus("✓ "+(s.msg||"Preventivo pronto"),"ok"); if(s.pdf) addLog("PDF: "+s.pdf); }
+        if(s.ok){ setStatus("✓ "+(s.msg||"Preventivo pronto"),"ok"); if(s.pdf) addLog("Cartella preventivi: "+s.pdf); }
         else setStatus("✗ "+(s.msg||"Generazione interrotta — controlla il log"),"err");
       }
     }).catch(()=>{});
   }
   async function generate(){
     if(busy) return;
-    const url=(urlEl.value||"").trim();
-    if(!url || !url.toLowerCase().includes("mobile.de")){ setStatus("Incolla un link valido di mobile.de.","err"); return; }
-    logEl.innerHTML=""; ready(false); setStatus("Sto generando il preventivo… (si aprirà Chrome, lascialo lavorare)","run");
-    try{ const r=await window.pywebview.api.generate(url, dealerEl.value);
+    const text=(urlEl.value||"");
+    const links=(text.match(/\S*mobile\.de\S*/gi)||[]);
+    if(links.length===0){ setStatus("Incolla almeno un link di mobile.de (uno per riga).","err"); return; }
+    const n=Math.min(links.length,10);
+    logEl.innerHTML=""; ready(false);
+    setStatus("Sto generando "+n+" preventiv"+(n===1?"o":"i")+"… (si aprirà Chrome, lascialo lavorare)","run");
+    try{ const r=await window.pywebview.api.generate(text, dealerEl.value);
       if(r && r.error){ ready(true); setStatus("✗ "+r.error,"err"); return; }
       polling=setInterval(tick,220);
     }catch(e){ ready(true); setStatus("✗ Errore avvio: "+e,"err"); }
   }
 
   goEl.addEventListener("click",generate);
-  urlEl.addEventListener("keydown",e=>{ if(e.key==="Enter") generate(); });
+  urlEl.addEventListener("keydown",e=>{ if(e.key==="Enter" && (e.ctrlKey||e.metaKey)) generate(); });
   window.addEventListener("pywebviewready",loadDealers);
   // fallback se l'evento è già passato
   setTimeout(()=>{ if(window.pywebview&&dealerEl.children.length===0) loadDealers(); }, 400);
