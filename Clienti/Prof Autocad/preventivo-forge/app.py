@@ -128,13 +128,12 @@ def _newest_pdf() -> Path | None:
 
 # Frasi PULITE mostrate in GUI (il log tecnico completo resta comunque nei file logs/).
 _MILESTONES = [
-    ("=== PreventivoForge run", "▶️  Avvio…"),
-    ("S1_scraping -> running",  "🔎  Apro l'annuncio e scarico le foto…"),
-    ("S2_parsing -> running",   "📋  Leggo i dati dell'auto…"),
-    ("S3_translate_copy -> running", "🇮🇹  Traduco in italiano…"),
-    ("S4_pricing -> running",   "💶  Calcolo il prezzo…"),
-    ("S5_pdf_render -> running", "📄  Creo il preventivo PDF…"),
-    ("GATE_R -> passed",        "✅  Controllo qualità superato…"),
+    ("S1_scraping -> running",  "Scaricamento foto…"),
+    ("S2_parsing -> running",   "Lettura dati…"),
+    ("S3_translate_copy -> running", "Traduzione in italiano…"),
+    ("S4_pricing -> running",   "Calcolo prezzo…"),
+    ("S5_pdf_render -> running", "Creazione PDF…"),
+    ("GATE_R -> passed",        "Controllo qualità…"),
 ]
 
 
@@ -160,23 +159,23 @@ class _StreamToQueue:
         if self.q is None:
             return
         low = line.lower()
-        # retry anti-bot: mostralo SEMPRE (non deduplicato) → l'utente vede che sta lavorando
-        if "riprovo tra" in low or ("tentativo" in low and "challenge" in low):
+        # retry anti-bot: aggiorna la fase corrente (l'utente vede che sta lavorando)
+        if "riprovo tra" in low or ("tentativo" in low and "challenge" in low) or ("anti-bot" in low and "riprovo" in low):
             m = re.search(r"tentativo (\d+)/(\d+)", line)
             tag = f" {m.group(1)}/{m.group(2)}" if m else ""
             try:
-                self.q.put(f"🔄  L'anti-bot di mobile.de fa il difficile: ritento{tag}… (attendi)")
+                self.q.put(("phase", f"Anti-bot: ritento{tag}…"))
             except Exception:
                 pass
             return
-        for key, friendly in _MILESTONES:
-            if key in line and friendly not in self._seen:
-                self._seen.add(friendly)
+        for key, label in _MILESTONES:
+            if key in line and label not in self._seen:
+                self._seen.add(label)
                 try:
-                    self.q.put(friendly)
+                    self.q.put(("phase", label))
                 except Exception:
                     pass
-                return  # una sola frase per riga, il resto si scarta
+                return  # una sola fase per riga, il resto si scarta
 
     def flush(self):
         pass
@@ -289,7 +288,7 @@ def _parse_links(text: str) -> tuple[list[str], str]:
     return urls, note
 
 
-def run_batch(urls: list[str], dealer: str, log_queue: "queue.Queue[str] | None" = None) -> tuple[bool, "Path | None", str]:
+def run_batch(urls: list[str], dealer: str, log_queue: "queue.Queue | None" = None) -> tuple[bool, "Path | None", str]:
     """Esegue la pipeline su PIU' link (max 10). Ogni link è isolato: uno fallito NON ferma
     gli altri. I PDF riusciti finiscono in un'unica cartella. Ritorna (ok_globale, out_dir, msg)."""
     import shutil
@@ -306,12 +305,18 @@ def run_batch(urls: list[str], dealer: str, log_queue: "queue.Queue[str] | None"
     fail: list[int] = []
     for i, url in enumerate(urls, 1):
         if log_queue is not None:
-            log_queue.put(f"━━━━━━━━━━  Preventivo {i} di {n}  ━━━━━━━━━━")
+            log_queue.put(("link", i, n))
         try:
             ok, pdf, msg = run_pipeline(url, dealer, log_queue)
         except Exception as exc:  # noqa: BLE001
             ok, pdf, msg = False, None, f"Errore: {exc}"
         if ok and pdf and Path(pdf).exists():
+            # salva SEMPRE nell'archivio (dal PDF originale in runs/<id>/, con foto e dati)
+            try:
+                import archivio
+                archivio.add(pdf)
+            except Exception:
+                pass
             dst = out_dir / f"{i:02d}_{Path(pdf).name}"
             try:
                 shutil.copyfile(str(pdf), str(dst))
@@ -319,11 +324,14 @@ def run_batch(urls: list[str], dealer: str, log_queue: "queue.Queue[str] | None"
                 dst = Path(pdf)
             done.append(dst)
             if log_queue is not None:
-                log_queue.put(f"✅  Preventivo {i}/{n}: pronto")
+                log_queue.put(("linkdone", i, n, True, ""))
         else:
             fail.append(i)
             if log_queue is not None:
-                log_queue.put(f"⛔  Preventivo {i}/{n}: {msg}")
+                log_queue.put(("linkdone", i, n, False, msg))
+
+    if log_queue is not None and done:
+        log_queue.put(("allpath", str(out_dir)))
 
     # apertura: 1 solo → il PDF; più di uno → la cartella con tutti i PDF
     if n == 1 and done:
@@ -487,9 +495,21 @@ class PreventivoApp:
         try:
             while True:
                 item = self.q.get_nowait()
-                if isinstance(item, tuple) and item and item[0] == "__DONE__":
-                    _, ok, pdf, msg = item
-                    self._finish(ok, pdf, msg)
+                if isinstance(item, tuple) and item:
+                    tag = item[0]
+                    if tag == "__DONE__":
+                        self._finish(item[1], item[2], item[3])
+                    elif tag == "link":
+                        self._log(f"Preventivo {item[1]}/{item[2]}: in corso…")
+                    elif tag == "phase":
+                        pass  # (fallback Tkinter: non mostra ogni singola fase)
+                    elif tag == "linkdone":
+                        i, n, ok = item[1], item[2], item[3]
+                        self._log(f"Preventivo {i}/{n}: " + ("Pronto" if ok else "Non riuscito"))
+                    elif tag == "allpath":
+                        self._log("Tutto caricato in: " + str(item[1]))
+                    else:
+                        self._log(str(item))
                 else:
                     self._log(str(item))
         except queue.Empty:
@@ -550,12 +570,9 @@ class _WebApi:
         self._done = self._ok = False
         self._pdf = self._msg = ""
         self._running = True
-        if note:
-            self.q.put("⚠️  " + note)
         n = len(urls)
-        self.q.put(f"▶️  Avvio: {n} preventiv{'o' if n == 1 else 'i'} da generare…")
         threading.Thread(target=self._worker, args=(urls, dealer or "novacar"), daemon=True).start()
-        return {"started": True, "count": n}
+        return {"started": True, "count": n, "note": note}
 
     def _worker(self, urls: list, dealer: str):
         try:
@@ -570,14 +587,30 @@ class _WebApi:
         # apertura già gestita da run_batch (PDF singolo o cartella)
 
     def poll(self):
-        lines = []
+        items = []
         try:
             while True:
-                lines.append(self.q.get_nowait())
+                items.append(self.q.get_nowait())
         except queue.Empty:
             pass
-        return {"lines": lines, "done": self._done, "ok": self._ok,
+        return {"items": items, "done": self._done, "ok": self._ok,
                 "pdf": self._pdf, "msg": self._msg, "running": self._running}
+
+    def archive(self):
+        """Voci dell'archivio (blocchi con foto/nome/prezzo) per la GUI."""
+        try:
+            import archivio
+            return archivio.entries()
+        except Exception:
+            return []
+
+    def open_pdf(self, path: str):
+        """Apre un PDF dell'archivio nel visualizzatore/browser."""
+        try:
+            _open_file(Path(path))
+            return {"ok": True}
+        except Exception as exc:  # noqa: BLE001
+            return {"ok": False, "error": str(exc)}
 
 
 def main_webview() -> int:

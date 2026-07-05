@@ -22,21 +22,14 @@
     background:
       radial-gradient(1200px 600px at 15% -10%, #ffffff 0%, rgba(255,255,255,0) 55%),
       linear-gradient(160deg,#eef1f4 0%, #e2e7eb 60%, #d7dee3 100%);
-    min-height:100%;
-    display:flex; flex-direction:column;
-    user-select:none;
+    min-height:100%; display:flex; flex-direction:column; user-select:none;
   }
 
   /* ---------- Header ---------- */
-  header{
-    position:relative;
-    background:linear-gradient(135deg,#2c363e 0%, #39464f 60%, #43525c 100%);
-    color:#fff; padding:24px 34px 22px;
-  }
-  header::after{ /* filo argento metallico */
-    content:""; position:absolute; left:0; right:0; bottom:0; height:2px;
-    background:linear-gradient(90deg,rgba(255,255,255,0) 0%, rgba(220,228,234,.85) 22%, rgba(255,255,255,.95) 50%, rgba(220,228,234,.85) 78%, rgba(255,255,255,0) 100%);
-  }
+  header{ position:relative; background:linear-gradient(135deg,#2c363e 0%, #39464f 60%, #43525c 100%);
+    color:#fff; padding:22px 34px 20px; }
+  header::after{ content:""; position:absolute; left:0; right:0; bottom:0; height:2px;
+    background:linear-gradient(90deg,rgba(255,255,255,0) 0%, rgba(220,228,234,.85) 22%, rgba(255,255,255,.95) 50%, rgba(220,228,234,.85) 78%, rgba(255,255,255,0) 100%); }
   .brand{ font-family:"Segoe UI Variable Display","Segoe UI",Inter,system-ui,sans-serif;
     font-weight:650; font-size:22px; line-height:1.3; letter-spacing:.2px;
     display:flex; align-items:center; flex-wrap:wrap; gap:6px 10px; min-width:0; overflow-wrap:anywhere; }
@@ -45,108 +38,130 @@
   .brand small{ font-weight:400; font-size:12.5px; color:#c4cfd6; letter-spacing:.3px; white-space:nowrap; }
   .subtitle{ margin-top:7px; font-size:12.5px; color:#aeb9c2; letter-spacing:.2px; }
 
+  .hbtn{ position:absolute; top:20px; appearance:none; cursor:pointer; font-family:inherit;
+    border:1px solid rgba(255,255,255,.22); background:rgba(255,255,255,.08); color:#eaf0f4;
+    font-size:13px; font-weight:600; letter-spacing:.2px; padding:8px 15px; border-radius:10px;
+    transition:background .15s ease, border-color .15s ease, transform .1s ease; }
+  .hbtn:hover{ background:rgba(255,255,255,.16); border-color:rgba(255,255,255,.4); }
+  .hbtn:active{ transform:translateY(1px); }
+  .hbtn.arch{ right:30px; }
+  .hbtn.back{ left:26px; display:none; width:40px; padding:8px 0; font-size:17px; }
+
   /* ---------- Corpo ---------- */
-  main{ flex:1; padding:24px 30px 8px; display:flex; flex-direction:column; gap:16px; }
+  main{ flex:1; padding:22px 30px 8px; display:flex; flex-direction:column; gap:16px; min-height:0; }
+  .view{ flex:1; display:flex; flex-direction:column; gap:16px; min-height:0; }
 
-  .card{
-    background:var(--silver-0); border:1px solid var(--line); border-radius:var(--r);
-    box-shadow:var(--shadow); padding:20px 20px 18px;
-  }
-
-  label.field-label{
-    display:block; font-size:11px; font-weight:640; letter-spacing:.7px; text-transform:uppercase;
-    color:var(--muted); margin:0 0 8px 2px;
-  }
-
-  .input{
-    width:100%; font-size:14px; color:var(--ink); background:var(--silver-50);
+  .card{ background:var(--silver-0); border:1px solid var(--line); border-radius:var(--r);
+    box-shadow:var(--shadow); padding:20px 20px 18px; }
+  label.field-label{ display:block; font-size:11px; font-weight:640; letter-spacing:.7px; text-transform:uppercase;
+    color:var(--muted); margin:0 0 8px 2px; }
+  .input{ width:100%; font-size:14px; color:var(--ink); background:var(--silver-50);
     border:1px solid var(--silver-200); border-radius:11px; padding:13px 14px;
-    transition:border-color .16s ease, box-shadow .16s ease, background .16s ease;
-    outline:none; user-select:text; font-family:inherit;
-  }
+    transition:border-color .16s ease, box-shadow .16s ease, background .16s ease; outline:none; user-select:text; font-family:inherit; }
   .input::placeholder{ color:#9aa6b1; }
   .input:hover{ background:#fff; }
   .input:focus{ background:#fff; border-color:var(--accent); box-shadow:0 0 0 4px rgba(91,111,125,.14); }
   textarea.input{ resize:vertical; min-height:112px; line-height:1.5; }
-
   .row{ display:flex; gap:14px; align-items:flex-end; margin-top:14px; }
   .row .grow{ flex:1; }
-
   select.input{ appearance:none; cursor:pointer;
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%237b8894' stroke-width='2.2'><path d='M6 9l6 6 6-6'/></svg>");
-    background-repeat:no-repeat; background-position:right 12px center; padding-right:34px;
-  }
-
-  .btn{
-    appearance:none; border:none; cursor:pointer; font-family:inherit;
-    font-size:14px; font-weight:640; letter-spacing:.2px; color:#fff;
+    background-repeat:no-repeat; background-position:right 12px center; padding-right:34px; }
+  .btn{ appearance:none; border:none; cursor:pointer; font-family:inherit; font-size:14px; font-weight:640; letter-spacing:.2px; color:#fff;
     padding:13px 22px; border-radius:11px; white-space:nowrap;
     background:linear-gradient(180deg,#556775 0%, #3f4f5a 100%);
     box-shadow:0 6px 16px rgba(50,66,77,.28), inset 0 1px 0 rgba(255,255,255,.10);
-    transition:transform .12s ease, box-shadow .16s ease, filter .16s ease;
-  }
+    transition:transform .12s ease, box-shadow .16s ease, filter .16s ease; }
   .btn:hover{ filter:brightness(1.06); box-shadow:0 9px 22px rgba(50,66,77,.34), inset 0 1px 0 rgba(255,255,255,.12); }
   .btn:active{ transform:translateY(1px); box-shadow:0 4px 12px rgba(50,66,77,.3); }
   .btn[disabled]{ cursor:default; filter:grayscale(.25) brightness(.98); opacity:.7; box-shadow:var(--shadow-sm); }
 
-  /* progress + status */
   .status{ display:flex; align-items:center; gap:9px; font-size:13px; color:var(--muted); min-height:20px; }
-  .status .ico{ width:16px; height:16px; flex:none; }
   .status.ok{ color:var(--ok); } .status.err{ color:var(--err); } .status.run{ color:var(--accent-2); }
-
   .progress{ height:6px; border-radius:6px; background:var(--silver-100); overflow:hidden; opacity:0; transition:opacity .2s ease; }
   .progress.show{ opacity:1; }
-  .progress > i{ display:block; height:100%; width:36%; border-radius:6px;
-    background:linear-gradient(90deg,#7f93a1,#556775);
+  .progress > i{ display:block; height:100%; width:36%; border-radius:6px; background:linear-gradient(90deg,#7f93a1,#556775);
     animation:slide 1.15s cubic-bezier(.6,.05,.35,.95) infinite; }
   @keyframes slide{ 0%{ transform:translateX(-120%);} 100%{ transform:translateX(360%);} }
 
-  /* log */
-  .logwrap{ flex:1; display:flex; flex-direction:column; min-height:150px; }
+  /* avanzamento COMPATTO: una riga per preventivo */
+  .logwrap{ flex:1; display:flex; flex-direction:column; min-height:140px; }
   .logwrap .cap{ font-size:11px; font-weight:640; letter-spacing:.7px; text-transform:uppercase; color:var(--muted); margin:0 0 7px 2px; }
-  .log{
-    flex:1; background:#212a30; color:#d7e0e6; border-radius:12px; padding:14px 15px;
-    font-family:"Cascadia Code","Consolas",ui-monospace,monospace; font-size:12px; line-height:1.6;
-    overflow:auto; white-space:pre-wrap; word-break:break-word; box-shadow:inset 0 1px 3px rgba(0,0,0,.25);
-    user-select:text;
-  }
-  .log .l-ok{ color:#8fe0a6; } .log .l-warn{ color:#f0c674; } .log .l-err{ color:#f2938c; } .log .l-dim{ color:#8a97a1; }
+  .log{ flex:1; background:#212a30; color:#d7e0e6; border-radius:12px; padding:12px 14px;
+    font-family:"Cascadia Code","Consolas",ui-monospace,monospace; font-size:12.5px; line-height:1.5;
+    overflow:auto; box-shadow:inset 0 1px 3px rgba(0,0,0,.25); user-select:text; }
+  .prow{ padding:3px 0; display:flex; gap:8px; align-items:baseline; }
+  .prow .pnum{ color:#aeb9c2; font-weight:600; white-space:nowrap; }
+  .prow .ph{ color:#d7e0e6; }
+  .prow.ok .ph{ color:#8fe0a6; font-weight:700; }
+  .prow.err .ph{ color:#f2938c; font-weight:700; }
+  .prow.allpath{ margin-top:8px; color:#9fb0bb; }
+  .prow.allpath b{ color:#cfd8de; font-weight:600; }
+
+  /* ---------- Archivio ---------- */
+  #viewArch{ display:none; }
+  .arch-head{ font-size:12px; color:var(--muted); margin:2px 2px 2px; letter-spacing:.2px; }
+  .arch-grid{ flex:1; overflow:auto; display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr));
+    gap:14px; padding:4px 2px 8px; align-content:start; }
+  .arch-card{ background:var(--silver-0); border:1px solid var(--line); border-radius:13px; overflow:hidden;
+    box-shadow:var(--shadow-sm); display:flex; flex-direction:column; transition:transform .12s ease, box-shadow .16s ease; }
+  .arch-card:hover{ transform:translateY(-2px); box-shadow:var(--shadow); }
+  .arch-thumb{ height:118px; background:#e7ecef center/cover no-repeat; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .arch-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .arch-info{ padding:10px 12px 12px; display:flex; flex-direction:column; gap:3px; }
+  .arch-title{ font-size:13px; font-weight:650; color:var(--ink); line-height:1.25;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .arch-price{ font-size:14px; font-weight:700; color:var(--accent-2); }
+  .arch-date{ font-size:11px; color:var(--muted); }
+  .arch-open{ margin-top:8px; appearance:none; border:none; cursor:pointer; font-family:inherit; font-size:12.5px; font-weight:640;
+    color:#fff; padding:9px 10px; border-radius:9px; background:linear-gradient(180deg,#556775 0%, #3f4f5a 100%);
+    box-shadow:0 3px 9px rgba(50,66,77,.25); transition:filter .15s ease, transform .1s ease; }
+  .arch-open:hover{ filter:brightness(1.07); } .arch-open:active{ transform:translateY(1px); }
+  .arch-empty{ grid-column:1/-1; color:var(--muted); font-size:13px; padding:24px 4px; text-align:center; }
 
   footer{ padding:10px 30px 16px; text-align:center; font-size:11px; color:#8a97a1; letter-spacing:.2px; }
   footer b{ color:#6b7783; font-weight:600; }
-
-  .log::-webkit-scrollbar{ width:9px; } .log::-webkit-scrollbar-thumb{ background:#3c4750; border-radius:8px; }
-  .log::-webkit-scrollbar-track{ background:transparent; }
+  .log::-webkit-scrollbar,.arch-grid::-webkit-scrollbar{ width:9px; }
+  .log::-webkit-scrollbar-thumb,.arch-grid::-webkit-scrollbar-thumb{ background:#c2cdd4; border-radius:8px; }
+  .log::-webkit-scrollbar-thumb{ background:#3c4750; }
+  .log::-webkit-scrollbar-track,.arch-grid::-webkit-scrollbar-track{ background:transparent; }
 </style>
 </head>
 <body>
   <header>
+    <button id="backBtn" class="hbtn back" title="Torna indietro">&#8592;</button>
     <div class="brand"><span class="dot"></span>PreventivoForge <small>· Novacar srl</small></div>
-    <div class="subtitle">Da uno o più annunci mobile.de ai preventivi PDF in italiano (fino a 10)</div>
+    <button id="archBtn" class="hbtn arch">Archivio</button>
+    <div class="subtitle" id="subtitle">Da uno o più annunci mobile.de ai preventivi PDF in italiano (fino a 10)</div>
   </header>
 
   <main>
-    <div class="card">
-      <label class="field-label" for="url">Link annunci mobile.de — fino a 10, uno per riga</label>
-      <textarea id="url" class="input" rows="5" spellcheck="false"
-             placeholder="Incolla fino a 10 link mobile.de, uno per riga…"></textarea>
-      <div class="row">
-        <div class="grow">
-          <label class="field-label" for="dealer">Concessionaria</label>
-          <select id="dealer" class="input"></select>
+    <!-- VISTA GENERA -->
+    <div class="view" id="viewGen">
+      <div class="card">
+        <label class="field-label" for="url">Link annunci mobile.de — fino a 10, uno per riga</label>
+        <textarea id="url" class="input" rows="5" spellcheck="false"
+               placeholder="Incolla fino a 10 link mobile.de, uno per riga…"></textarea>
+        <div class="row">
+          <div class="grow">
+            <label class="field-label" for="dealer">Concessionaria</label>
+            <select id="dealer" class="input"></select>
+          </div>
+          <button id="go" class="btn">Genera preventivo</button>
         </div>
-        <button id="go" class="btn">Genera preventivo</button>
+      </div>
+      <div class="status run" id="status" style="color:var(--muted)">Pronto. Incolla fino a 10 link e premi «Genera».</div>
+      <div class="progress" id="prog"><i></i></div>
+      <div class="logwrap">
+        <div class="cap">Avanzamento</div>
+        <div class="log" id="log"></div>
       </div>
     </div>
 
-    <div class="status run" id="status" style="color:var(--muted)">
-      Pronto. Incolla un link e premi «Genera preventivo».
-    </div>
-    <div class="progress" id="prog"><i></i></div>
-
-    <div class="logwrap">
-      <div class="cap">Avanzamento</div>
-      <div class="log" id="log"></div>
+    <!-- VISTA ARCHIVIO -->
+    <div class="view" id="viewArch">
+      <div class="arch-head" id="archHead">Archivio preventivi</div>
+      <div class="arch-grid" id="archGrid"></div>
     </div>
   </main>
 
@@ -155,33 +170,46 @@
 <script>
   const $ = s => document.querySelector(s);
   const urlEl=$("#url"), dealerEl=$("#dealer"), goEl=$("#go"),
-        statusEl=$("#status"), progEl=$("#prog"), logEl=$("#log");
-  let polling=null, busy=false;
+        statusEl=$("#status"), progEl=$("#prog"), logEl=$("#log"),
+        archBtn=$("#archBtn"), backBtn=$("#backBtn"),
+        viewGen=$("#viewGen"), viewArch=$("#viewArch");
+  let polling=null, busy=false, rows={}, curIdx=0;
 
-  function setStatus(text, kind){ statusEl.textContent=text; statusEl.className="status "+(kind||""); }
-  function addLog(line){
-    const div=document.createElement("div");
-    const l=line.toLowerCase();
-    if(l.includes("error")||l.includes("errore")||l.includes("blocked")||l.includes("rosso")||l.includes("fermata")||l.includes("failed")||l.includes("fallito")) div.className="l-err";
-    else if(l.includes("warn")||l.includes("residui")||l.includes("attenzione")) div.className="l-warn";
-    else if(l.includes("passed")||l.includes("done")||l.includes("pronto")||l.includes("✅")||l.includes("verdi")) div.className="l-ok";
-    else if(l.includes("step")||l.includes("===")) div.className="l-dim";
-    div.textContent=line; logEl.appendChild(div); logEl.scrollTop=logEl.scrollHeight;
-  }
+  const escapeHtml = s => String(s==null?"":s).replace(/[&<>"']/g, c=>({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[c]));
+  function setStatus(t,k){ statusEl.textContent=t; statusEl.className="status "+(k||""); }
   function ready(v){ busy=!v; goEl.disabled=!v; goEl.textContent=v?"Genera preventivo":"Generazione in corso…"; progEl.classList.toggle("show",!v); }
 
-  async function loadDealers(){
-    try{ const list=await window.pywebview.api.dealers();
-      dealerEl.innerHTML=""; (list||["novacar"]).forEach(d=>{ const o=document.createElement("option"); o.value=d; o.textContent=d; dealerEl.appendChild(o); });
-    }catch(e){}
+  // ---- avanzamento compatto: una riga per preventivo, aggiornata in place ----
+  function newRow(i,n){
+    const r=document.createElement("div"); r.className="prow";
+    r.innerHTML=`<span class="pnum">Preventivo ${i}/${n}:</span> <span class="ph">avvio…</span>`;
+    rows[i]=r; logEl.appendChild(r); logEl.scrollTop=logEl.scrollHeight; return r;
+  }
+  function handle(items){
+    (items||[]).forEach(it=>{
+      if(!Array.isArray(it)){ return; }
+      const tag=it[0];
+      if(tag==="link"){ curIdx=it[1]; newRow(it[1],it[2]); }
+      else if(tag==="phase"){ const r=rows[curIdx]; if(r) r.querySelector(".ph").textContent=it[1]; }
+      else if(tag==="linkdone"){
+        const r=rows[it[1]]||newRow(it[1],it[2]); const ph=r.querySelector(".ph");
+        if(it[3]){ ph.textContent="Pronto"; r.classList.remove("err"); r.classList.add("ok"); }
+        else { ph.textContent="Non riuscito"+(it[4]?" — "+it[4]:""); r.classList.remove("ok"); r.classList.add("err"); }
+        logEl.scrollTop=logEl.scrollHeight;
+      }
+      else if(tag==="allpath"){
+        const d=document.createElement("div"); d.className="prow allpath";
+        d.innerHTML=`Tutto caricato in <b>${escapeHtml(it[1])}</b>`;
+        logEl.appendChild(d); logEl.scrollTop=logEl.scrollHeight;
+      }
+    });
   }
   function tick(){
     window.pywebview.api.poll().then(s=>{
-      (s.lines||[]).forEach(addLog);
+      handle(s.items);
       if(s.done){
         clearInterval(polling); polling=null; ready(true);
-        if(s.ok){ setStatus("✓ "+(s.msg||"Preventivo pronto"),"ok"); if(s.pdf) addLog("Cartella preventivi: "+s.pdf); }
-        else setStatus("✗ "+(s.msg||"Generazione interrotta — controlla il log"),"err");
+        if(s.ok) setStatus("✓ "+(s.msg||"Fatto"),"ok"); else setStatus("✗ "+(s.msg||"Generazione interrotta — vedi avanzamento"),"err");
       }
     }).catch(()=>{});
   }
@@ -191,18 +219,56 @@
     const links=(text.match(/\S*mobile\.de\S*/gi)||[]);
     if(links.length===0){ setStatus("Incolla almeno un link di mobile.de (uno per riga).","err"); return; }
     const n=Math.min(links.length,10);
-    logEl.innerHTML=""; ready(false);
+    logEl.innerHTML=""; rows={}; curIdx=0; ready(false);
     setStatus("Sto generando "+n+" preventiv"+(n===1?"o":"i")+"… (si aprirà Chrome, lascialo lavorare)","run");
     try{ const r=await window.pywebview.api.generate(text, dealerEl.value);
       if(r && r.error){ ready(true); setStatus("✗ "+r.error,"err"); return; }
-      polling=setInterval(tick,220);
+      if(r && r.note){ const d=document.createElement("div"); d.className="prow allpath"; d.textContent="⚠ "+r.note; logEl.appendChild(d); }
+      polling=setInterval(tick,200);
     }catch(e){ ready(true); setStatus("✗ Errore avvio: "+e,"err"); }
+  }
+
+  // ---- Archivio ----
+  async function openArchive(){
+    let list=[];
+    try{ list=await window.pywebview.api.archive(); }catch(e){}
+    const grid=$("#archGrid"); grid.innerHTML="";
+    $("#archHead").textContent = (list&&list.length) ? (list.length+" preventivo"+(list.length===1?"":"i")+" in archivio") : "Archivio preventivi";
+    if(!list || !list.length){ grid.innerHTML='<div class="arch-empty">Nessun preventivo ancora. Genera un preventivo e comparirà qui.</div>'; }
+    (list||[]).forEach(e=>{
+      const c=document.createElement("div"); c.className="arch-card";
+      c.innerHTML=`
+        <div class="arch-thumb">${e.thumb?`<img src="${e.thumb}" alt="">`:''}</div>
+        <div class="arch-info">
+          <div class="arch-title">${escapeHtml(e.title)}</div>
+          <div class="arch-price">${escapeHtml(e.price||'')}</div>
+          <div class="arch-date">${escapeHtml(e.created||'')}</div>
+          <button class="arch-open">Apri il preventivo</button>
+        </div>`;
+      c.querySelector(".arch-open").addEventListener("click",()=>{ try{ window.pywebview.api.open_pdf(e.pdf); }catch(x){} });
+      grid.appendChild(c);
+    });
+    viewGen.style.display="none"; viewArch.style.display="flex";
+    archBtn.style.display="none"; backBtn.style.display="block";
+    $("#subtitle").textContent="Tutti i preventivi creati";
+  }
+  function closeArchive(){
+    viewArch.style.display="none"; viewGen.style.display="flex";
+    archBtn.style.display=""; backBtn.style.display="none";
+    $("#subtitle").textContent="Da uno o più annunci mobile.de ai preventivi PDF in italiano (fino a 10)";
+  }
+
+  async function loadDealers(){
+    try{ const list=await window.pywebview.api.dealers();
+      dealerEl.innerHTML=""; (list||["novacar"]).forEach(d=>{ const o=document.createElement("option"); o.value=d; o.textContent=d; dealerEl.appendChild(o); });
+    }catch(e){}
   }
 
   goEl.addEventListener("click",generate);
   urlEl.addEventListener("keydown",e=>{ if(e.key==="Enter" && (e.ctrlKey||e.metaKey)) generate(); });
+  archBtn.addEventListener("click",openArchive);
+  backBtn.addEventListener("click",closeArchive);
   window.addEventListener("pywebviewready",loadDealers);
-  // fallback se l'evento è già passato
   setTimeout(()=>{ if(window.pywebview&&dealerEl.children.length===0) loadDealers(); }, 400);
 </script>
 </body>

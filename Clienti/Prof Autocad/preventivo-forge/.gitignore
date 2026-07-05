@@ -7,6 +7,8 @@ licenze.config.json
 # storico preventivi: i PDF sono pesanti (binari) → solo su disco locale; in git resta il record JSON
 Memory/storico-preventivi/*.pdf
 selftest.log
+# archivio preventivi della GUI (PDF + miniature) — locale, si rigenera a ogni preventivo
+archivio/
 # profilo browser persistente (sessione/cookie mobile.de)
 browser-profile/
 .playwright/
