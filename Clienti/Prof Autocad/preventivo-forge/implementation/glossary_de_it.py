@@ -215,6 +215,10 @@ PHRASES: dict[str, str] = {
 # Singole parole (fallback). Chiavi lowercase.
 # --------------------------------------------------------------------------- #
 WORDS: dict[str, str] = {
+    "tüv": "revisione",
+    "hauptuntersuchung": "revisione",
+    "abgasuntersuchung": "controllo emissioni",
+    "vorbereitung": "predisposizione",
     "allrad": "trazione integrale",
     "frontantrieb": "trazione anteriore",
     "heckantrieb": "trazione posteriore",

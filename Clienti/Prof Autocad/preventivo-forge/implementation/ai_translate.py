@@ -45,8 +45,11 @@ def translate_terms(terms: list[str]) -> dict[str, str]:
 
     prompt = (
         "Sei un traduttore automobilistico DE→IT. Traduci in italiano corretto le seguenti "
-        "etichette di equipaggiamento/scheda auto. NON aggiungere, non inventare optional, non "
-        "spiegare. Rispondi SOLO con un oggetto JSON {\"originale\":\"traduzione\"} senza altro testo.\n"
+        "etichette di equipaggiamento/scheda auto. Localizza in italiano ANCHE le sigle e i nomi "
+        "di enti tedeschi (es. TÜV/HU → 'revisione', AU → 'controllo emissioni', ABE, Scheckheft "
+        "→ 'libretto tagliandi'). NON lasciare NESSUNA parola in tedesco. Non inventare optional, "
+        "non spiegare. Mantieni invariati numeri, unità (kW, CV, km) e nomi di modello. "
+        "Rispondi SOLO con un oggetto JSON {\"originale\":\"traduzione\"} senza altro testo.\n"
         + json.dumps(terms, ensure_ascii=False)
     )
     import time
