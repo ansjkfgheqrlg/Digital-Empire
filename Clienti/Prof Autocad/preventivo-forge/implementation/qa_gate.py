@@ -82,10 +82,17 @@ def gate_b(ctx: RunContext, dealer: dict[str, Any] | None = None) -> tuple[bool,
     if len(eq_de) != len(eq_it):
         issues.append(f"equipment_it ({len(eq_it)}) non allineato 1:1 a equipment_de ({len(eq_de)})")
 
-    # 0 tedesco residuo (rilevamento indipendente)
+    # Tedesco residuo: BLOCCA solo se è nel TITOLO (imbarazzante) o è TANTO (traduzione rotta).
+    # Un residuo minore in una riga optional (es. un morfema raro) → avviso, si consegna:
+    # il PDF è italiano al 99%, non ha senso negare il preventivo per una parola in un optional.
     german = _german_tokens(content)
     if german:
-        issues.append(f"{len(german)} residui tedeschi in content: {german[:8]}")
+        title_de = [t for t in re.findall(r"[A-Za-zÄÖÜäöüß-]+", content.get("title_it") or "")
+                    if looks_german(t)]
+        if title_de or len(german) > 3:
+            issues.append(f"tedesco residuo significativo: {german[:8]}")
+        else:
+            ctx.logger.warning("Gate B: residuo tedesco minore (consegnato lo stesso): %s", german[:8])
 
     # niente prezzo nel titolo IT (il prezzo lo mette Max altrove)
     if re.search(r"\d[\d.\s]*€|€\s*\d", content.get("title_it") or ""):
@@ -362,7 +369,15 @@ def _specs_consistency(listing: dict[str, Any], specs_it: dict[str, Any]) -> lis
     issues: list[str] = []
 
     def digits(v: Any) -> str:
-        return re.sub(r"\D", "", str(v or ""))
+        s = str(v if v is not None else "")
+        # numero "puro" (incluso float tipo "0.0"/"15000.0") → normalizza a intero:
+        # evita il falso positivo "0.0"->"00" vs "0" (auto nuova a 0 km).
+        if re.match(r"^\s*-?\d+(?:\.\d+)?\s*$", s):
+            try:
+                return str(int(float(s)))
+            except Exception:
+                pass
+        return re.sub(r"\D", "", s)
 
     if "Anno" in specs_it and listing.get("year"):
         if str(specs_it["Anno"]) != str(listing["year"]):

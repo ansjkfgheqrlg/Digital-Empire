@@ -49,24 +49,30 @@ def translate_terms(terms: list[str]) -> dict[str, str]:
         "spiegare. Rispondi SOLO con un oggetto JSON {\"originale\":\"traduzione\"} senza altro testo.\n"
         + json.dumps(terms, ensure_ascii=False)
     )
-    try:
-        import requests
-        resp = requests.post(
-            url,
-            timeout=TIMEOUT_S,
-            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-            json={
-                "model": model,
-                "temperature": 0.0,
-                "messages": [{"role": "user", "content": prompt}],
-            },
-        )
-        if resp.status_code != 200:
-            return {}
-        txt = resp.json()["choices"][0]["message"]["content"]
-        return _parse_json_obj(txt)
-    except Exception:
-        return {}
+    import time
+    import requests
+    # 3 tentativi: le chiamate possono fallire per rete/rate-limit → non lasciare residui per un blip.
+    for attempt in range(3):
+        try:
+            resp = requests.post(
+                url,
+                timeout=TIMEOUT_S,
+                headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+                json={
+                    "model": model,
+                    "temperature": 0.0,
+                    "messages": [{"role": "user", "content": prompt}],
+                },
+            )
+            if resp.status_code == 200:
+                out = _parse_json_obj(resp.json()["choices"][0]["message"]["content"])
+                if out:
+                    return out
+        except Exception:
+            pass
+        if attempt < 2:
+            time.sleep(1.5 + attempt)
+    return {}
 
 
 def _parse_json_obj(txt: str) -> dict[str, str]:
