@@ -1,13 +1,24 @@
-# STATO EMPIRE -- aggiornato 2026-07-04 (Max — CLIENTE Novacar)
+# STATO EMPIRE -- aggiornato 2026-07-05 (Max — Empire Studio + Novacar)
 
 ## 🛑 DIRETTIVE MAX ASSOLUTE (2026-07-03 — valgono sempre, leggere per prime)
 1. **Ordini su Gael = assoluti.** Ogni compito che Max assegna a Gael (o direttiva su di lui) è LEGGE, non preferenza.
-   → **ORDINE ATTIVO: Gael ha finito PreventivoForge e passa alla COSTRUZIONE DELL'IMPERO (V2-2/V2-3).** Appena Gael torna
-   online / chiede / propone altro: **BLOCCARLO SUBITO** e indirizzarlo all'Impero, non ad altro. NON tocca Half A (Max).
+   → **ORDINE ATTIVO (aggiornato da Max 2026-07-05, CP-20260705-002): FINESTRA DI LIBERO ARBITRIO PER GAEL
+   da lunedì 2026-07-06 a mercoledì 2026-07-08 COMPRESI.** In quei 3 giorni Gael decide LUI cosa fare:
+   può continuare PreventivoForge, fare test, risolvere problemi, o proseguire l'Impero — piena libertà, con buonsenso.
+   NON bloccarlo, NON reindirizzarlo. Restano valide le regole tecniche (ownership Half A/PDF di Max, schema congelato, coordinamento via questo file).
+   ⏰ **OGGI 2026-07-05 la finestra NON è ancora attiva**: vale ancora l'ordine precedente (Impero V2-2/V2-3, bloccarlo su altro).
+   ⏰ **Da giovedì 2026-07-09**: la finestra SCADE → torna l'ordine Impero, salvo nuovo ordine di Max.
 2. **Aggiornare la versione ad OGNI messaggio, in automatico.** Ad ogni turno di Max E di Gael: leggere questo file + INDEX,
    fare `git pull` (monorepo), e allinearli all'ULTIMA versione dello stato — senza aspettare che lo chiedano. I due soci
    si sincronizzano SOLO via questo stato: mai far partire nessuno da una versione vecchia. Standard: tutto impeccabile.
 
+
+## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 2/29 COMPLETATO (2026-07-05, CP-20260705-001)
+**RIPRESA DA: video 3/29 → `jgIgOPAnYNY` ("Come diventare un copywriter - tutorial COMPLETO")**
+Pipeline completata per qOK4WP82Bvo: Stage 1-5 + Stage 7 + Memory Empire C-H. 22 KA P12-traced. 3 wiki pages create.
+- **Top KA**: "il copy non cambia il prodotto, cambia quanti lo comprano" · conversion rate multiplier (1%→2%=revenue×2) · value gap dipendente €50k generati vs €1.2k ricevuti · 4 metodi pricing freelance · struttura video sales-education 7 fasi
+- **WATCH-001**: N_video=2, N_MemoryEmpire=2 → MATCH ✅
+- **Prossima azione**: Stage 1 su jgIgOPAnYNY (`yt_ingest.py` → download video → `frame_extractor.py --interval 2`)
 
 ## ✅ MAX — PreventivoForge: CONSEGNA A NOVACAR PRONTA (2026-07-04, ultimo su main `71a3859`)
 **Consegna in 2 giorni. Pacchetto UNICO pronto: `Clienti/Prof Autocad/Consegna-Novacar/PreventivoForge-Novacar.zip` (120 MB, gitignorato).**
