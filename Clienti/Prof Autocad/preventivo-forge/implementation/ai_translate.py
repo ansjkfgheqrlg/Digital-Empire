@@ -51,8 +51,9 @@ def translate_terms(terms: list[str]) -> dict[str, str]:
     )
     import time
     import requests
-    # 3 tentativi: le chiamate possono fallire per rete/rate-limit → non lasciare residui per un blip.
-    for attempt in range(3):
+    # 4 tentativi con gestione del RATE-LIMIT (429): in un batch le chiamate sono ravvicinate,
+    # non deve restare tedesco per un limite temporaneo → si attende e si ritenta.
+    for attempt in range(4):
         try:
             resp = requests.post(
                 url,
@@ -68,10 +69,15 @@ def translate_terms(terms: list[str]) -> dict[str, str]:
                 out = _parse_json_obj(resp.json()["choices"][0]["message"]["content"])
                 if out:
                     return out
+            elif resp.status_code == 429:  # rate limit → aspetta (Retry-After se c'è)
+                ra = (resp.headers.get("retry-after") or "").strip()
+                wait = float(ra) if ra.replace(".", "", 1).isdigit() else 8.0
+                time.sleep(min(wait, 15.0))
+                continue
         except Exception:
             pass
-        if attempt < 2:
-            time.sleep(1.5 + attempt)
+        if attempt < 3:
+            time.sleep(2.0 + attempt * 2.0)
     return {}
 
 

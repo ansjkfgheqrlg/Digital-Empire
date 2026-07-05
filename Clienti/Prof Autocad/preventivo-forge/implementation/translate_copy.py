@@ -242,6 +242,11 @@ def translate(ctx: RunContext, dealer: dict[str, Any]) -> dict[str, Any]:
 
     equipment_it = translate_equipment(listing.get("equipment_de", []))
     specs_it = build_specs_it(listing)
+
+    # riserva AI sulle FONTI (equip+scheda) PRIMA di costruire i campi derivati: così
+    # descrizione/highlights (che ne derivano) nascono già puliti, senza tedesco.
+    _ai_fix_sources(listing, equipment_it, specs_it, ctx)
+
     title_it = build_title_it(listing)
     highlights_it = build_highlights_it(listing, equipment_it)
     description_it = build_description_it(listing, equipment_it)
@@ -256,8 +261,8 @@ def translate(ctx: RunContext, dealer: dict[str, Any]) -> dict[str, Any]:
         "specs_it": specs_it,
     }
 
-    # riserva AI SOLO sui residui tedeschi (opzionale, €0; no-op se TRANSLATE_AI_KEY assente)
-    _ai_fill_residuals(listing, content, ctx)
+    # passata FINALE: qualunque tedesco rimasto in QUALSIASI campo → riserva AI (rete di sicurezza)
+    _ai_final_sweep(content, ctx)
 
     _merge_content(ctx, listing, content)
 
@@ -336,49 +341,88 @@ def _has_german(text: Any) -> bool:
     return any(looks_german(tok) for tok in re.findall(r"[A-Za-zÄÖÜäöüß-]+", str(text or "")))
 
 
-def _ai_fill_residuals(listing: dict[str, Any], content: dict[str, Any], ctx) -> None:
-    """Riserva AI gratuita sui SOLI residui tedeschi (equipment + specs). Sicura:
-    se `ai_translate` non è configurata o fallisce, lascia tutto invariato (Gate B poi decide)."""
+def _ai_fix_sources(listing: dict[str, Any], equipment_it: list, specs_it: dict, ctx) -> None:
+    """Riserva AI sulle FONTI (equipaggiamento + scheda) PRIMA di costruire descrizione/highlights,
+    così i campi derivati nascono GIÀ in italiano. Usa l'originale tedesco (qualità migliore).
+    Modifica le liste/dizionari in place. No-op se AI non configurata."""
     try:
         import ai_translate
     except Exception:
         return
     if not ai_translate.enabled():
         return
-
     eq_de = listing.get("equipment_de") or []
-    eq_it = list(content.get("equipment_it") or [])
-    specs = dict(content.get("specs_it") or {})
-
     need: dict[str, tuple[str, Any]] = {}
-    for i, item in enumerate(eq_it):
-        if _has_german(item) and i < len(eq_de) and eq_de[i]:
-            need[str(eq_de[i])] = ("eq", i)
-    for k, v in specs.items():
+    for i, item in enumerate(equipment_it):
+        if _has_german(item):
+            src = str(eq_de[i]) if i < len(eq_de) and eq_de[i] else str(item)
+            need[src] = ("eq", i)
+    for k, v in specs_it.items():
         if isinstance(v, str) and _has_german(v):
             need[v] = ("spec", k)
     if not need:
         return
-
     tr = ai_translate.translate_terms(list(need.keys()))
     if not tr:
-        ctx.logger.info("S3: riserva AI non disponibile/vuota (resta glossario + Gate B).")
+        ctx.logger.warning("S3: riserva AI muta sulle fonti (riprovo nella passata finale).")
         return
-
-    fixed = 0
+    n = 0
     for orig, (kind, ref) in need.items():
         new = tr.get(orig)
         if not new:
             continue
         if kind == "eq":
-            eq_it[ref] = new
+            equipment_it[ref] = new
         else:
-            specs[ref] = new
-        fixed += 1
-    content["equipment_it"] = eq_it
-    content["specs_it"] = specs
-    if fixed:
-        ctx.logger.info("S3: riserva AI ha tradotto %d residui tedeschi.", fixed)
+            specs_it[ref] = new
+        n += 1
+    if n:
+        ctx.logger.info("S3: riserva AI ha tradotto %d residui (fonti).", n)
+
+
+def _ai_final_sweep(content: dict[str, Any], ctx) -> None:
+    """RETE DI SICUREZZA: traduce QUALSIASI tedesco rimasto in QUALSIASI campo del copy
+    (equipment, specs, highlights, title, headline, description). Nessun residuo deve sfuggire."""
+    try:
+        import ai_translate
+    except Exception:
+        return
+    if not ai_translate.enabled():
+        return
+    eq = content.get("equipment_it") or []
+    hl = content.get("highlights_it") or []
+    specs = content.get("specs_it") or {}
+    todo: set = set()
+    for item in eq:
+        if _has_german(item):
+            todo.add(str(item))
+    for h in hl:
+        if _has_german(h):
+            todo.add(str(h))
+    for v in specs.values():
+        if isinstance(v, str) and _has_german(v):
+            todo.add(v)
+    for f in ("title_it", "headline_it", "description_it"):
+        val = content.get(f)
+        if isinstance(val, str) and _has_german(val):
+            todo.add(val)
+    if not todo:
+        return
+    tr = ai_translate.translate_terms(list(todo))
+    if not tr:
+        ctx.logger.warning("S3: riserva AI muta nella passata finale (Gate B decide).")
+        return
+
+    def fix(s):
+        return tr.get(s, s) if isinstance(s, str) else s
+
+    content["equipment_it"] = [fix(x) for x in eq]
+    content["highlights_it"] = [fix(x) for x in hl]
+    content["specs_it"] = {k: (fix(v) if isinstance(v, str) else v) for k, v in specs.items()}
+    for f in ("title_it", "headline_it", "description_it"):
+        if isinstance(content.get(f), str):
+            content[f] = fix(content[f])
+    ctx.logger.info("S3: passata finale AI — residui rimasti: %d", len(_german_residue(content)))
 
 
 def _maybe_llm_prose(listing: dict[str, Any]) -> str | None:
