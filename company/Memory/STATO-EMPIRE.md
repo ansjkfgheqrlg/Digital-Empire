@@ -11,6 +11,10 @@
 2. **Aggiornare la versione ad OGNI messaggio, in automatico.** Ad ogni turno di Max E di Gael: leggere questo file + INDEX,
    fare `git pull` (monorepo), e allinearli all'ULTIMA versione dello stato — senza aspettare che lo chiedano. I due soci
    si sincronizzano SOLO via questo stato: mai far partire nessuno da una versione vecchia. Standard: tutto impeccabile.
+3. **REGISTRO ERRORI = obbligatorio (Max 2026-07-05).** Ogni errore riscontrato in un progetto va scritto nel suo
+   registro con causa + fix + regola per NON ripeterlo. PreventivoForge: `Clienti/Prof Autocad/preventivo-forge/REGISTRO-ERRORI.md`
+   + `CHECKLIST-CONSEGNA.md`. **Prima di modificare/consegnare: leggerli. Mai commettere due volte lo stesso errore.**
+   Gael: se testi PreventivoForge e trovi un errore, registralo lì. Prendi sempre l'ULTIMA build (git pull / zip rigenerato).
 
 
 ## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 2/29 COMPLETATO (2026-07-05, CP-20260705-001)
