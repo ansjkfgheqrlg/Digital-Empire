@@ -24,7 +24,7 @@ Pipeline completata per qOK4WP82Bvo: Stage 1-5 + Stage 7 + Memory Empire C-H. 22
 - **WATCH-001**: N_video=2, N_MemoryEmpire=2 → MATCH ✅
 - **Prossima azione**: Stage 1 su jgIgOPAnYNY (`yt_ingest.py` → download video → `frame_extractor.py --interval 2`)
 
-## ✅ MAX — PreventivoForge: CONSEGNA A NOVACAR PRONTA (2026-07-04, ultimo su main `71a3859`)
+## ✅ MAX — PreventivoForge: CONSEGNA A NOVACAR PRONTA (agg. 2026-07-05, ultimo su main `063cd27`)
 **Consegna in 2 giorni. Pacchetto UNICO pronto: `Clienti/Prof Autocad/Consegna-Novacar/PreventivoForge-Novacar.zip` (120 MB, gitignorato).**
 Dentro: exe + kill-switch (config Novacar con `license_url`) + riserva AI (.env con chiave Groq) + `LEGGIMI.txt`.
 Guida consegna passo-passo: `Clienti/Prof Autocad/COME-CONSEGNARE-A-NOVACAR.md`.
@@ -40,17 +40,30 @@ Guida consegna passo-passo: `Clienti/Prof Autocad/COME-CONSEGNARE-A-NOVACAR.md`.
   per dichiarare successo. Bug precedente (bail a 20s) afferrava la pagina prima del caricamento JS → PDF vuoto/Gate A rosso o falso
   "anti-bot". Profilo persistente ora IBRIDO: tentativo 1 = fisso (cookie), retry = sessione fresca. **Testato live su hotspot:
   Hyundai i20 20.990→24.620, 14 foto, 6 gate verdi, PDF in 35s al 1° tentativo.** L'app FUNZIONA (il blocco era mia regressione, non Akamai).
-- **Riserva AI traduzione ATTIVA** (Groq gratuito €0): glossario 99% + AI sui soli residui. Anche nelle app dealer.
-- **Kill-switch LIVE**: "X non paga" → Claude `gestione-licenze.py sospendi X` + email. Fabbrica app: `/nuovo-concessionario`.
+- **AGGIORNAMENTI 05/07 (ultima build su main `063cd27`, zip rigenerato 120.7 MB):**
+  (7) **Traduzione AI COMPLETA** (`da9dfe6`,`db286b1`): AI su equip+scheda PRIMA di costruire descrizione/highlights +
+  passata FINALE su TUTTI i campi + 4 tentativi/gestione 429; glossario +TÜV/HU/AU/Vorbereitung. **Validato: 6 auto → 0 residui.**
+  (8) **Gate meno severi (solo difetti veri)** (`dff8a7d`,`d771d93`): Gate IMG non blocca su foto piccole del venditore;
+  Gate B blocca solo se tedesco nel titolo o abbondante; fix falso positivo km 0.0 (auto nuove).
+  (9) **GUI: avanzamento compatto + ARCHIVIO** (`9a0b3a4`): 1 riga/preventivo che si aggiorna ("Preventivo i/N: Pronto") +
+  "Tutto caricato in…"; bottone Archivio in alto a dx → griglia blocchi (foto/nome/prezzo/"Apri il preventivo") nella stessa
+  interfaccia + freccia ← indietro. Ogni PDF salvato in `archivio/` in automatico.
+  (10) **REGISTRO-ERRORI + CHECKLIST-CONSEGNA** (`063cd27`): 9 errori E1-E9 (causa+fix+regola). Direttiva #3 = obbligatori.
+- **Riserva AI traduzione ATTIVA** (Groq €0). **Kill-switch LIVE** ("X non paga" → blocco+email). Fabbrica: `/nuovo-concessionario`.
+- **Verificato oggi**: 5 auto scrapate→PDF (Hyundai/Skoda/Volvo/Land Rover/VW) · 6 auto tradotte→0 residui.
 
-### ⚠️ GAEL — file Half B che MAX ha toccato (allineati se riprendi la GUI/traduzione)
-- **`app.py`** (tua): Max ha aggiunto — (a) `_StreamToQueue` ora **FILTRA** (solo milestone pulite, `_MILESTONES`);
-  (b) legge `brand.json` (titolo+dealer per app clonata) + `_list_dealers` bloccato sul dealer; (c) `_CODE_MSG` +8/9/10;
-  (d) guard `sys.stdout is None` nel ramo `--selftest`; (e) carica `.env` accanto all'exe (frozen);
-  (f) **`run_batch`+`_parse_links` (multi-link max 10)** + input multi-riga (Tkinter `Text`, premium `<textarea>`). Estetica/layout GUI NON stravolti.
-- **`translate_copy.py`** (tua): 1 solo hook `_ai_fill_residuals` dopo il glossario (riserva AI sui residui). Resto invariato.
-- Mai toccati: `render_pdf.py`, `templates/preventivo.html`, `glossary_de_it.py`, `qa_gate.py`, REGOLE-SACRE.
-**GAEL: resti su Impero V2-2/V2-3 (ordine assoluto). Se un domani riprendi la GUI, parti da questi file aggiornati.**
+### ⚠️ GAEL — file Half B che MAX ha toccato (lista COMPLETA — allineati se riprendi GUI/traduzione)
+- **`app.py`**: `_StreamToQueue` (fasi compatte + retry visibile) · `run_batch`/`_parse_links` (multi-link 10 + eventi
+  strutturati link/phase/linkdone/allpath + salvataggio archivio) · `brand.json`/`_list_dealers` · `_CODE_MSG` 8/9/10 ·
+  guard stdout selftest · load `.env` frozen · bridge `archive()`/`open_pdf()` · input `<textarea>`/Tkinter `Text`.
+- **`ui/index.html`**: RISCRITTA — avanzamento compatto (1 riga/preventivo) + **vista Archivio** (griglia blocchi + toggle + back).
+- **`translate_copy.py`**: `_ai_fill_residuals` SOSTITUITO da `_ai_fix_sources` (AI sulle fonti prima dei derivati) + `_ai_final_sweep` (AI su tutti i campi).
+- **`qa_gate.py`**: `gate_img` (solo difetti veri) · `gate_b` (tolleranza residuo minore) · `_specs_consistency` (fix km numerico).
+- **`glossary_de_it.py`**: +TÜV/hauptuntersuchung/abgasuntersuchung/vorbereitung.
+- **NUOVI file (miei, Half A)**: `implementation/archivio.py` · `implementation/ai_translate.py` · `implementation/licenza.py` ·
+  `gestione-licenze.py` · `nuovo_concessionario.py` · `REGISTRO-ERRORI.md` · `CHECKLIST-CONSEGNA.md` · `COME-CONSEGNARE-A-NOVACAR.md`.
+- Mai toccati: `render_pdf.py`, `templates/preventivo.html`, REGOLE-SACRE, schema (congelato).
+**GAEL: prendi l'ULTIMA build (git pull / zip rigenerato). Se riprendi GUI/traduzione parti da questi file. Leggi `REGISTRO-ERRORI.md`.**
 
 ## 🔴 MAX — PROSSIMO BUILD: ISPETTORATO GENERALE (Performance & Autocritica) — dossier 15 (2026-07-04)
 **Direttiva Max (CP-20260704-001): da ora l'Impero si AUTOCRITICA e AUTO-MIGLIORA. Piano = `PIANO-MAESTRO/15-DOSSIER-ISPETTORATO.md`.**
