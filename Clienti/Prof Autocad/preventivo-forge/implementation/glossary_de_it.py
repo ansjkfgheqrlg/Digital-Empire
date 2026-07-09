@@ -377,3 +377,195 @@ def looks_german(token: str) -> bool:
     if len(t) >= 6 and any(t.endswith(suf) for suf in GERMAN_MORPHEMES):
         return True
     return False
+
+
+# =========================================================================== #
+# AMPLIAMENTO VOCABOLARIO (2026-07-03) — copertura ~totale annunci mobile.de
+# =========================================================================== #
+
+# --- MORFEMI BASE: mattoni per lo "spezza-parole" dei composti tedeschi ------
+# Usati da translate_copy._decompose(): una parola mai vista viene scomposta
+# in questi mattoni e tradotta (es. Sitzeinstellung = sitz+einstellung).
+MORPHEMES: dict[str, str] = {
+    # parti auto
+    "sitz": "sedile", "sitze": "sedili", "lenkrad": "volante", "rad": "ruota", "räder": "ruote",
+    "reifen": "pneumatici", "felge": "cerchio", "felgen": "cerchi", "tür": "porta", "türen": "porte",
+    "fenster": "finestrino", "scheibe": "vetro", "spiegel": "specchietto", "dach": "tetto",
+    "motor": "motore", "getriebe": "cambio", "bremse": "freno", "bremsen": "freni", "kupplung": "frizione",
+    "tank": "serbatoio", "auspuff": "scarico", "fahrwerk": "assetto", "federung": "sospensioni",
+    "achse": "asse", "kolben": "pistone", "zylinder": "cilindro", "turbo": "turbo",
+    "kamera": "telecamera", "sensor": "sensore", "sensoren": "sensori", "scheinwerfer": "fari",
+    "leuchte": "luce", "leuchten": "luci", "licht": "luce", "blinker": "indicatore",
+    "lenkung": "sterzo", "servolenkung": "servosterzo", "kotflügel": "parafango",
+    "stoßstange": "paraurti", "stossstange": "paraurti", "haube": "cofano", "klappe": "portello",
+    "heckklappe": "portellone", "kofferraum": "bagagliaio", "gepäckraum": "vano bagagli",
+    "armlehne": "bracciolo", "kopfstütze": "poggiatesta", "gurt": "cintura", "polster": "rivestimento",
+    # funzioni / sistemi
+    "heizung": "riscaldamento", "kühlung": "raffreddamento", "klima": "climatizzatore",
+    "klimaanlage": "climatizzatore", "lüftung": "ventilazione", "belüftung": "ventilazione",
+    "einstellung": "regolazione", "verstellung": "regolazione", "steuerung": "comando",
+    "regelung": "regolazione", "kontrolle": "controllo", "überwachung": "monitoraggio",
+    "erkennung": "riconoscimento", "warnung": "avviso", "warner": "avviso", "assistent": "assistente",
+    "assistenz": "assistenza", "system": "sistema", "anlage": "impianto", "automatik": "automatico",
+    "funktion": "funzione", "paket": "pacchetto", "speicher": "memoria", "memory": "memoria",
+    "verriegelung": "chiusura", "schließung": "chiusura", "sperre": "blocco", "zugang": "accesso",
+    "navigation": "navigazione", "kommunikation": "comunicazione", "verbindung": "connessione",
+    "beleuchtung": "illuminazione", "ausstattung": "dotazione", "einrichtung": "dispositivo",
+    "vorrichtung": "dispositivo", "vorbereitung": "predisposizione", "regler": "regolatore",
+    "begrenzer": "limitatore", "halter": "supporto", "halterung": "supporto", "stütze": "supporto",
+    "träger": "portapacchi", "kupplungs": "gancio", "anhänger": "rimorchio",
+    # materiali / colori base
+    "leder": "pelle", "stoff": "tessuto", "alcantara": "alcantara", "holz": "legno",
+    "aluminium": "alluminio", "chrom": "cromo", "metall": "metallo", "kunststoff": "plastica",
+    "glas": "vetro", "carbon": "carbonio",
+    "schwarz": "nero", "weiß": "bianco", "grau": "grigio", "silber": "argento", "blau": "blu",
+    "rot": "rosso", "grün": "verde", "braun": "marrone", "beige": "beige", "gelb": "giallo",
+    "orange": "arancione", "gold": "oro", "bronze": "bronzo", "anthrazit": "antracite",
+    # posizione / qualificatori (utili nei composti)
+    "vorder": "anteriore", "hinter": "posteriore", "seiten": "laterale", "mittel": "centrale",
+    "vorne": "anteriore", "hinten": "posteriore", "innen": "interno", "außen": "esterno",
+    "aussen": "esterno", "rück": "posteriore", "rückfahr": "retromarcia", "front": "anteriore",
+    "heck": "posteriore", "dach": "tetto", "boden": "pavimento", "voll": "completo",
+    "halb": "semi", "elektrisch": "elettrico", "elektr": "elettrico", "beheizbar": "riscaldabile",
+    "beheiz": "riscaldato", "beheizt": "riscaldato", "verstellbar": "regolabile", "klappbar": "ripiegabile",
+    "abnehmbar": "removibile", "schwenkbar": "estraibile", "automatisch": "automatico",
+    "adaptiv": "adattivo", "aktiv": "attivo", "digital": "digitale", "schlüssellos": "senza chiave",
+    # concetti auto
+    "geschwindigkeit": "velocità", "abstand": "distanza", "spur": "corsia", "wechsel": "cambio",
+    "halte": "mantenimento", "park": "parcheggio", "einpark": "parcheggio", "brems": "frenata",
+    "not": "emergenza", "notbrems": "frenata di emergenza", "kollision": "collisione",
+    "verkehr": "traffico", "verkehrs": "traffico", "zeichen": "segnale", "schild": "segnale",
+    "müdigkeit": "stanchezza", "totwinkel": "angolo cieco", "winkel": "angolo", "tot": "cieco",
+    "regen": "pioggia", "licht": "luce", "tag": "giorno", "nacht": "notte", "fern": "abbagliante",
+    "abblend": "anabbagliante", "kurven": "curva", "nebel": "fendinebbia",
+    "antrieb": "trazione", "allrad": "trazione integrale", "vorderrad": "trazione anteriore",
+    "hinterrad": "trazione posteriore", "verbrauch": "consumo", "leistung": "potenza",
+    "hubraum": "cilindrata", "drehmoment": "coppia", "emission": "emissioni", "abgas": "gas di scarico",
+    "kraftstoff": "carburante", "benzin": "benzina", "diesel": "diesel", "hybrid": "ibrido",
+    "elektro": "elettrico", "erdgas": "metano", "autogas": "GPL",
+    "komfort": "comfort", "sport": "sport", "winter": "invernale", "sommer": "estivo",
+    "sicherheit": "sicurezza", "sicherheits": "sicurezza", "schutz": "protezione",
+    "wagen": "vettura", "fahrzeug": "veicolo", "fahrer": "conducente", "beifahrer": "passeggero",
+    "personen": "persone", "gepäck": "bagagli", "raum": "vano", "kind": "bambino", "kinder": "bambini",
+    "sound": "audio", "lautsprecher": "altoparlanti", "radio": "radio", "bildschirm": "schermo",
+    "display": "display", "anzeige": "indicatore", "instrument": "strumento", "cockpit": "quadro strumenti",
+    "sitzheizung": "sedili riscaldati", "standheizung": "riscaldamento autonomo",
+    "multifunktion": "multifunzione", "multifunktions": "multifunzione",
+    "fensterheber": "alzacristalli", "zentralverriegelung": "chiusura centralizzata",
+}
+
+# --- FRASI aggiuntive (composti frequenti già "pronti") ----------------------
+EXTRA_PHRASES: dict[str, str] = {
+    "elektrische sitzverstellung": "regolazione elettrica dei sedili",
+    "elektrisch verstellbare sitze mit memory": "sedili elettrici con memoria",
+    "beheizbare frontscheibe": "parabrezza riscaldabile",
+    "beheizbares lederlenkrad": "volante in pelle riscaldato",
+    "multifunktions-lederlenkrad": "volante multifunzione in pelle",
+    "verkehrszeichenerkennung": "riconoscimento segnali stradali",
+    "spurhalteassistent": "assistente mantenimento corsia",
+    "spurverlassenswarnung": "avviso superamento corsia",
+    "notbremsassistent": "assistente frenata di emergenza",
+    "auffahrwarnsystem": "sistema avviso tamponamento",
+    "abstandsregeltempomat": "cruise control adattivo",
+    "berganfahrhilfe": "assistente partenza in salita",
+    "reifendruckkontrollsystem": "sistema controllo pressione pneumatici",
+    "reifendruckkontrolle": "controllo pressione pneumatici",
+    "geschwindigkeitsbegrenzungsanlage": "limitatore di velocità",
+    "aktive geschwindigkeitsregelanlage": "regolatore di velocità attivo",
+    "elektrische heckklappe": "portellone elettrico",
+    "elektrisch anklappbare außenspiegel": "specchietti ripiegabili elettricamente",
+    "schlüsselloses zugangssystem": "sistema di accesso senza chiave",
+    "schlüssellose zentralverriegelung": "chiusura centralizzata senza chiave",
+    "led-tagfahrlicht": "luci diurne a LED",
+    "adaptives kurvenlicht": "fari adattivi in curva",
+    "dynamische kurvenlichtfunktion": "fari dinamici in curva",
+    "panorama-glasschiebedach": "tetto panoramico apribile in vetro",
+    "durchladeeinrichtung": "vano passante posteriore",
+    "gepäckraumabdeckung": "copertura bagagliaio",
+    "umklappbare rücksitzbank": "sedili posteriori abbattibili",
+    "geteilt umklappbare rücksitze": "sedili posteriori abbattibili frazionati",
+    "isofix-aufnahmen": "attacchi Isofix",
+    "regensensor mit lichtsensor": "sensore pioggia e luci",
+    "start-stopp-system": "sistema start&stop",
+    "achtfach elektrisch verstellbare sitze": "sedili regolabili elettricamente",
+    "innenraumfilter": "filtro abitacolo",
+    "aktivkohlefilter": "filtro a carboni attivi",
+    "wärmeschutzverglasung": "vetri termici",
+    "getönte scheiben": "vetri oscurati",
+    "abgedunkelte scheiben": "vetri oscurati",
+}
+
+# --- PAROLE aggiuntive (singole) --------------------------------------------
+EXTRA_WORDS: dict[str, str] = {
+    # condizioni / stato annuncio
+    "gepflegt": "curata", "scheckheftgepflegt": "tagliandi certificati", "neuwertig": "come nuova",
+    "unfallfrei": "non incidentata", "fahrbereit": "marciante", "zugelassen": "immatricolata",
+    "erstzulassung": "prima immatricolazione", "vorbesitzer": "proprietari precedenti",
+    "hand": "mano", "garantie": "garanzia", "gewährleistung": "garanzia", "inspektion": "tagliando",
+    "inspektionen": "tagliandi", "service": "assistenza", "checkheft": "libretto tagliandi",
+    "nichtraucher": "non fumatori", "nichtraucherfahrzeug": "veicolo non fumatori",
+    "importfahrzeug": "veicolo d'importazione", "reimport": "reimportata", "jahreswagen": "km zero",
+    "vorführwagen": "auto dimostrativa", "gebraucht": "usata", "neu": "nuova", "neufahrzeug": "auto nuova",
+    "tüv": "revisione", "hu": "revisione", "au": "controllo emissioni",
+    # carrozzeria / tipo
+    "limousine": "berlina", "kombi": "station wagon", "kleinwagen": "utilitaria", "kleinwagen": "utilitaria",
+    "geländewagen": "fuoristrada", "cabriolet": "cabrio", "cabrio": "cabrio", "coupé": "coupé",
+    "roadster": "roadster", "van": "van", "kleinbus": "minibus", "pickup": "pick-up",
+    "schrägheck": "due volumi", "stufenheck": "tre volumi", "sportwagen": "sportiva",
+    # meccanica / dati
+    "schaltgetriebe": "cambio manuale", "handschaltung": "cambio manuale", "gangschaltung": "cambio",
+    "doppelkupplungsgetriebe": "cambio doppia frizione", "wandlerautomatik": "cambio automatico",
+    "vierradantrieb": "trazione integrale", "frontantrieb": "trazione anteriore",
+    "heckantrieb": "trazione posteriore", "zylinder": "cilindri", "türig": "porte", "sitzig": "posti",
+    "türer": "porte", "gänge": "marce", "gang": "marcia", "kw": "kW", "ps": "CV",
+    # comfort / interni
+    "klimaautomatik": "climatizzatore automatico", "klimaanlage": "climatizzatore",
+    "sitzheizung": "sedili riscaldati", "lenkradheizung": "volante riscaldato",
+    "ledersitze": "sedili in pelle", "sportsitze": "sedili sportivi", "komfortsitze": "sedili comfort",
+    "massagesitze": "sedili con massaggio", "belüftete": "ventilati", "beheizte": "riscaldati",
+    "ambientebeleuchtung": "illuminazione d'ambiente", "innenbeleuchtung": "illuminazione interna",
+    "make-up-spiegel": "specchietto di cortesia", "handschuhfach": "vano portaoggetti",
+    "becherhalter": "portabicchieri", "mittelarmlehne": "bracciolo centrale",
+    "panoramadach": "tetto panoramico", "schiebedach": "tetto apribile", "glasdach": "tetto in vetro",
+    # sicurezza / assistenza
+    "airbags": "airbag", "seitenairbags": "airbag laterali", "kopfairbags": "airbag per la testa",
+    "knieairbag": "airbag per le ginocchia", "wegfahrsperre": "immobilizzatore",
+    "alarmanlage": "antifurto", "diebstahlwarnanlage": "antifurto", "notbremsassistent": "assistente frenata",
+    "bremsassistent": "assistente frenata", "berganfahrassistent": "assistente partenza in salita",
+    "einparkhilfe": "sensori di parcheggio", "parksensoren": "sensori di parcheggio",
+    "rückfahrkamera": "telecamera posteriore", "umgebungskamera": "telecamera perimetrale",
+    "totwinkelassistent": "assistente angolo cieco", "müdigkeitswarner": "rilevatore di stanchezza",
+    "fernlichtassistent": "assistente abbaglianti", "regensensor": "sensore pioggia",
+    "lichtsensor": "sensore luci", "tempomat": "cruise control", "geschwindigkeitsregelanlage": "regolatore di velocità",
+    # multimedia
+    "navigationssystem": "navigatore", "navi": "navigatore", "bluetooth": "Bluetooth",
+    "freisprecheinrichtung": "vivavoce", "sprachsteuerung": "comandi vocali", "touchscreen": "touchscreen",
+    "bordcomputer": "computer di bordo", "soundsystem": "impianto audio", "subwoofer": "subwoofer",
+    "usb": "USB", "aux": "AUX", "dab": "DAB", "cd-wechsler": "caricatore CD",
+    "kabelloses": "wireless", "induktives": "a induzione", "ladeschale": "ricarica wireless",
+    # ruote / esterni
+    "leichtmetallfelgen": "cerchi in lega", "alufelgen": "cerchi in lega", "stahlfelgen": "cerchi in acciaio",
+    "winterreifen": "pneumatici invernali", "sommerreifen": "pneumatici estivi",
+    "allwetterreifen": "pneumatici quattro stagioni", "reserverad": "ruota di scorta",
+    "dachreling": "barre sul tetto", "dachträger": "portapacchi", "anhängerkupplung": "gancio traino",
+    "metalliclackierung": "vernice metallizzata", "metallic": "metallizzato", "lackierung": "verniciatura",
+    "nebelscheinwerfer": "fendinebbia", "xenon": "xeno", "bixenon": "bi-xeno", "matrix": "matrix",
+    # parole comuni nelle descrizioni
+    "fahrzeug": "veicolo", "zustand": "condizioni", "ausstattung": "dotazione", "farbe": "colore",
+    "preis": "prezzo", "verhandlungsbasis": "trattabile", "festpreis": "prezzo fisso",
+    "finanzierung": "finanziamento", "leasing": "leasing", "inzahlungnahme": "permuta",
+    "lieferung": "consegna", "verfügbar": "disponibile", "sofort": "subito", "wenige": "pochi",
+    "kilometer": "chilometri", "erstbesitz": "primo proprietario", "vollausstattung": "full optional",
+    "gepflegter": "curato", "top": "ottimo", "sehr": "molto", "guter": "buono", "gutem": "buono",
+    "guten": "buono", "hochwertig": "di pregio", "elegant": "elegante", "sportlich": "sportivo",
+    "komfortabel": "confortevole", "zuverlässig": "affidabile", "sparsam": "economico",
+    "und": "e", "mit": "con", "ohne": "senza", "für": "per", "sowie": "nonché", "inklusive": "incluso",
+    "inkl": "incl.", "bzw": "ovvero", "u": "e", "sonderausstattung": "optional",
+    "serienausstattung": "dotazione di serie", "extras": "extra", "diverse": "vari",
+}
+
+# fonde gli ampliamenti nelle tabelle principali (le voci nuove non sovrascrivono le esistenti)
+for _k, _v in EXTRA_PHRASES.items():
+    PHRASES.setdefault(_k, _v)
+for _k, _v in EXTRA_WORDS.items():
+    WORDS.setdefault(_k, _v)

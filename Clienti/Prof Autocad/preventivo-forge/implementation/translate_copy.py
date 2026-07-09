@@ -25,9 +25,14 @@ import re
 from typing import Any
 
 from common import RunContext, load_json, save_json
-from glossary_de_it import PHRASES, WORDS, looks_german
+from glossary_de_it import PHRASES, WORDS, MORPHEMES, looks_german
 
 _TOKEN_RE = re.compile(r"[A-Za-zÄÖÜäöüß]+|[^A-Za-zÄÖÜäöüß]+")
+
+# dizionario unico (parole + morfemi) per lo spezza-parole dei composti tedeschi
+_MORPH_ALL: dict[str, str] = {**MORPHEMES, **WORDS}
+_MORPH_KEYS = sorted(_MORPH_ALL.keys(), key=len, reverse=True)
+_LINKERS = ("", "s", "n", "es", "en", "e")  # Fugen (giunzioni) tedesche tra i pezzi del composto
 
 
 # --------------------------------------------------------------------------- #
@@ -62,10 +67,11 @@ def translate_term(term: str) -> str:
     if phrase is not None:
         return _preserve_case(raw, phrase)
 
-    # 2) match frase come sottostringa (ordina per lunghezza decrescente)
+    # 2) match frase MULTI-PAROLA come sottostringa (solo con spazio: evita di incollare
+    #    frammenti dentro un composto singolo, che invece va allo spezza-parole)
     out = raw
     low_restored = _restore_umlauts(low)
-    for de in sorted(PHRASES, key=len, reverse=True):
+    for de in sorted((p for p in PHRASES if " " in p), key=len, reverse=True):
         if de in low or de in low_restored:
             # sostituisce sia la forma ASCII sia quella con umlaut
             out = _sub_ci(out, de, PHRASES[de])
@@ -85,11 +91,54 @@ def _translate_words(text: str) -> str:
     rebuilt: list[str] = []
     for p in parts:
         translated = _lookup(WORDS, p.lower())
+        if translated is None:
+            # parola mai vista → prova a scomporre il composto tedesco nei suoi mattoni
+            translated = _decompose(p.lower())
         if translated is not None:
             rebuilt.append(_preserve_case(p, translated))
         else:
             rebuilt.append(p)
     return "".join(rebuilt)
+
+
+def _decompose(token: str, _memo: dict | None = None) -> str | None:
+    """Scompone un composto tedesco nei mattoni base (MORPHEMES+WORDS) e traduce.
+    Es. 'sitzeinstellung' → sitz+einstellung → 'sedile regolazione'. Ritorna None se
+    non riesce a coprire l'intera parola (così il token resta invariato, senza garbage)."""
+    token = _restore_umlauts(token)
+    if len(token) < 5:
+        return None
+    if _memo is None:
+        _memo = {}
+    n = len(token)
+
+    def seg(i: int):
+        if i == n:
+            return []
+        if i in _memo:
+            return _memo[i]
+        best = None
+        for k in _MORPH_KEYS:
+            lk = len(k)
+            if lk < 3 or i + lk > n:
+                continue
+            if token[i:i + lk] == k:
+                for link in _LINKERS:  # salta un'eventuale giunzione (Fugen-s/-n/-e)
+                    j = i + lk + len(link)
+                    if j <= n and token[i + lk:j] == link:
+                        rest = seg(j)
+                        if rest is not None:
+                            best = [_MORPH_ALL[k]] + rest
+                            break
+            if best is not None:
+                break
+        _memo[i] = best
+        return best
+
+    parts = seg(0)
+    if parts and len(parts) >= 2:
+        return " ".join(parts)
+    return None
 
 
 def _sub_ci(haystack: str, needle_lower: str, replacement: str) -> str:
