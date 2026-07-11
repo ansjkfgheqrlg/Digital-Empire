@@ -1,0 +1,31 @@
+{
+  "video_id": "sTCwYnWmgcQ",
+  "title": "Come diventare un copywriter con ZERO esperienza",
+  "creator": "Andrei Pascu",
+  "run": "andrei-pascu-001/cat1-copywriting",
+  "video_number": 5,
+  "total_cat": 29,
+  "ingestion_date": "2026-07-09",
+  "duration_sec": 749,
+  "duration_hms": "00:12:29",
+  "chapters": 5,
+  "subtitles": ["it"],
+  "frames_extracted": 375,
+  "frames_read": 12,
+  "frames_skipped": 0,
+  "frame_interval": 2,
+  "knowledge_atoms": 22,
+  "visual_passages": 0,
+  "stages_completed": ["S1", "S2", "S3", "S4", "S5", "S7"],
+  "no_finto_result": "PASS",
+  "p12_traceability": true,
+  "watch_001": {
+    "n_video": 5,
+    "n_memory_empire": 5,
+    "match": true
+  },
+  "wiki_pages_created": [
+    "sources/Source_Andrei_Pascu_Copywriter_Zero_Esperienza.md",
+    "concepts/Concept_Valore_Anticipato_Freelance.md"
+  ]
+}

@@ -45,7 +45,9 @@
   .hbtn:hover{ background:rgba(255,255,255,.16); border-color:rgba(255,255,255,.4); }
   .hbtn:active{ transform:translateY(1px); }
   .hbtn.arch{ right:30px; }
-  .hbtn.back{ left:26px; display:none; width:40px; padding:8px 0; font-size:17px; }
+  .hbtn.back{ right:30px; display:none; width:40px; height:40px; padding:0; font-size:18px;
+    align-items:center; justify-content:center; line-height:1; }
+  .hbtn.back.show{ display:flex; }
 
   /* ---------- Corpo ---------- */
   main{ flex:1; padding:22px 30px 8px; display:flex; flex-direction:column; gap:16px; min-height:0; }
@@ -249,12 +251,12 @@
       grid.appendChild(c);
     });
     viewGen.style.display="none"; viewArch.style.display="flex";
-    archBtn.style.display="none"; backBtn.style.display="block";
+    archBtn.style.display="none"; backBtn.classList.add("show");
     $("#subtitle").textContent="Tutti i preventivi creati";
   }
   function closeArchive(){
     viewArch.style.display="none"; viewGen.style.display="flex";
-    archBtn.style.display=""; backBtn.style.display="none";
+    archBtn.style.display=""; backBtn.classList.remove("show");
     $("#subtitle").textContent="Da uno o più annunci mobile.de ai preventivi PDF in italiano (fino a 10)";
   }
 

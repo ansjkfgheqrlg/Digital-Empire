@@ -1,0 +1,49 @@
+{
+  "video_id": "lQMO0LdeI2c",
+  "title": "Copywriter Analizza Copywriting (Live)",
+  "channel": "Andrei Pascu",
+  "run": "andrei-pascu-001/cat1-copywriting",
+  "video_number": "8/29",
+  "date_ingested": "2026-07-09",
+  "duration_sec": 2695,
+  "duration_human": "44:55",
+  "chapters": 0,
+  "subtitles": ["it"],
+  "format": "live-session-screen-share-pip",
+  "frames_total": 1348,
+  "frames_read": 13,
+  "frame_naming": "4-digit",
+  "frame_interval_sec": 2,
+  "frames_read_list": [
+    "frame-0001", "frame-0090", "frame-0170", "frame-0200", "frame-0413",
+    "frame-0722", "frame-0748", "frame-0845", "frame-0864", "frame-0931",
+    "frame-1073", "frame-1306", "frame-1348"
+  ],
+  "visual_passages": 6,
+  "knowledge_atoms": 29,
+  "sections": 8,
+  "brands_analyzed": ["McFit", "Dyson"],
+  "brands_announced_not_analyzed": ["Mercedes Benz", "DJI"],
+  "no_finto_pass": true,
+  "vtt_lines": 8545,
+  "vtt_coverage": "100%",
+  "watch_001": {
+    "n_video": 8,
+    "n_memory_empire": 8,
+    "status": "MATCH"
+  },
+  "key_concepts": [
+    "Hero Section",
+    "Semplicemente in forma (McFit slogan)",
+    "Brand Famoso Rule",
+    "Bounce Rate vs Exit Rate",
+    "Tech Stack Detection (Wappalyzer)",
+    "CPA → €50K-€100K risparmio",
+    "Headline ≠ Nome Prodotto",
+    "Slogan Vibes vs Direct Response",
+    "Customer Lifetime Value (CLV)",
+    "Loss Leader Strategy",
+    "Cross-sell e-commerce",
+    "Knowledge = Leva pricing"
+  ]
+}

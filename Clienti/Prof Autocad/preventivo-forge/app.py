@@ -532,6 +532,12 @@ def main_gui() -> int:
     root = tk.Tk()
     PreventivoApp(root)
     root.mainloop()
+    # finestra chiusa → svuota l'archivio (riparte vuoto alla prossima apertura)
+    try:
+        import archivio
+        archivio.clear()
+    except Exception:
+        pass
     return 0
 
 
@@ -629,6 +635,12 @@ def main_webview() -> int:
         background_color="#e7ebee",
     )
     webview.start()
+    # finestra chiusa → svuota l'archivio (riparte vuoto alla prossima apertura)
+    try:
+        import archivio
+        archivio.clear()
+    except Exception:
+        pass
     return 0
 
 

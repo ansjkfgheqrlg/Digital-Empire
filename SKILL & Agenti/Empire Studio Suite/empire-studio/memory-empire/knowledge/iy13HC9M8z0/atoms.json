@@ -1,0 +1,240 @@
+{
+  "video_id": "iy13HC9M8z0",
+  "total_atoms": 26,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "iy13HC9M8z0#0:00:18",
+      "frame": "frame-010.png",
+      "category": "concetto-base",
+      "chapter": "Intro",
+      "content": "Definizione copywriter: scrive testi persuasivi di vendita (pubblicita, siti web, social...)",
+      "tags": ["definizione", "copywriter", "persuasione"]
+    },
+    {
+      "id": "KA-02",
+      "source": "iy13HC9M8z0#0:00:30",
+      "frame": "frame-010.png",
+      "category": "authority-signal",
+      "chapter": "Intro",
+      "content": "Andrei pagato migliaia di euro per sales page, email, copy. Credenziale stabilita prima della critica AI.",
+      "tags": ["authority", "credenziali", "social-proof"]
+    },
+    {
+      "id": "KA-03",
+      "source": "iy13HC9M8z0#0:00:45",
+      "frame": "frame-010.png",
+      "category": "frame-video",
+      "chapter": "Intro",
+      "content": "Domanda core: ChatGPT puo sostituire il copywriter? Risposta breve: no. Risposta lunga: dipende dall'uso.",
+      "tags": ["AI", "ChatGPT", "copywriter", "sostituzione"]
+    },
+    {
+      "id": "KA-04",
+      "source": "iy13HC9M8z0#0:01:10",
+      "frame": "frame-050.png",
+      "category": "test-empirico",
+      "chapter": "Warm-up",
+      "content": "Baseline GPT: genera copy generico per corso copywriting e consulenza finanziaria. Output mediocre ma strutturato. Establishes AI floor.",
+      "tags": ["ChatGPT", "baseline", "test", "VP-002"]
+    },
+    {
+      "id": "KA-05",
+      "source": "iy13HC9M8z0#0:01:36",
+      "frame": "frame-050.png",
+      "category": "principio-tecnico",
+      "chapter": "Prompt 1",
+      "content": "Legge prompt-qualita: prompt vago produce output vago. Input specifico = output specifico. La qualita del prompt determina direttamente la qualita dell'output GPT.",
+      "tags": ["prompt-engineering", "specificita", "ChatGPT", "principio"]
+    },
+    {
+      "id": "KA-06",
+      "source": "iy13HC9M8z0#0:02:00",
+      "frame": "frame-070.png",
+      "category": "critica-framework",
+      "chapter": "Critica Prompt 1",
+      "content": "Paradosso GPT: questo Copy e ottimo e fantastico ma fa schifo. Copy formalmente strutturato ma sostanzialmente vuoto. Non sbagliato formalmente, sbagliato emotivamente e strategicamente.",
+      "tags": ["show-dont-tell", "critica", "emotivita", "ChatGPT", "VP-003"]
+    },
+    {
+      "id": "KA-07",
+      "source": "iy13HC9M8z0#0:02:15",
+      "frame": "frame-070.png",
+      "category": "principio-copy",
+      "chapter": "Critica Prompt 1",
+      "content": "Show don't tell violato nel GPT: 'materiali di alta qualita' = telling. Copywriter mostra QUALI materiali specifici, QUALE processo, QUALE risultato concreto. GPT dichiara la conclusione senza costruire il percorso.",
+      "tags": ["show-dont-tell", "specificita", "copy-principio", "VP-003"]
+    },
+    {
+      "id": "KA-08",
+      "source": "iy13HC9M8z0#0:02:30",
+      "frame": "frame-090.png",
+      "category": "struttura-copy",
+      "chapter": "Critica Prompt 1",
+      "content": "Struttura problema-soluzione mancante: buon copy agita problema con soluzioni attuali PRIMA di presentare il prodotto. GPT va subito a 'Siamo lieti di presentarvi' senza problema setup.",
+      "tags": ["struttura-copy", "problema-soluzione", "agitazione", "copy-framework"]
+    },
+    {
+      "id": "KA-09",
+      "source": "iy13HC9M8z0#0:02:45",
+      "frame": "frame-090.png",
+      "category": "principio-psicologico",
+      "chapter": "Critica Prompt 1",
+      "content": "Gap emotivita: non c'e la parte emotiva. Copy GPT e cerebrale/informativo. Acquisto e guidato da emozione. Copy deve attivare stato emotivo specifico prima di features.",
+      "tags": ["emotivita", "psicologia-acquisto", "limite-AI", "copy-principio"]
+    },
+    {
+      "id": "KA-10",
+      "source": "iy13HC9M8z0#0:04:20",
+      "frame": "frame-130.png",
+      "category": "principio-tecnico",
+      "chapter": "Prompt 2",
+      "content": "Prompt specifico migliora output: specificando tazza nera, alto ticket, mantenimento temperatura -> GPT include stile sofisticato, tecnologia avanzata, esperienza senza paragoni. Dimostrazione diretta: piu input specifico = piu output rilevante.",
+      "tags": ["prompt-engineering", "specificita", "ChatGPT", "test"]
+    },
+    {
+      "id": "KA-11",
+      "source": "iy13HC9M8z0#0:04:58",
+      "frame": "frame-150.png",
+      "category": "limite-AI",
+      "chapter": "Analisi Prompt 2",
+      "content": "Soffitto strutturale GPT: Prompt 2 migliora MA rimane molto generico e tornano i problemi di prima. Specificita del prompt non elimina gap strutturale AI. Il soffitto rimane anche col prompt migliore.",
+      "tags": ["limite-AI", "ChatGPT", "soffitto", "VP-004"]
+    },
+    {
+      "id": "KA-12",
+      "source": "iy13HC9M8z0#0:05:10",
+      "frame": "frame-150.png",
+      "category": "limite-AI",
+      "chapter": "Analisi Prompt 2",
+      "content": "Gap urgency/tempo: non ha gestito il tempo. GPT non crea naturalmente urgency, scarcity, timing. Copywriter umano inserisce pressione temporale istintivamente. Zero nel GPT output.",
+      "tags": ["urgency", "scarcity", "limite-AI", "timing"]
+    },
+    {
+      "id": "KA-13",
+      "source": "iy13HC9M8z0#0:05:20",
+      "frame": "frame-160.png",
+      "category": "meta-osservazione",
+      "chapter": "Analisi Prompt 2",
+      "content": "Paradosso impressione-conversione: Andrei genuinamente sorpreso da output 2, poi lo critica. La barra per impressionare un osservatore e bassa. La barra per convertire un cliente e alta. GPT supera la prima, non la seconda.",
+      "tags": ["meta", "conversione", "ChatGPT", "paradosso"]
+    },
+    {
+      "id": "KA-14",
+      "source": "iy13HC9M8z0#0:05:48",
+      "frame": "frame-175.png",
+      "category": "limite-AI",
+      "chapter": "AI vs Copywriter",
+      "content": "Gap linguaggio target: AI usa linguaggio universale neutro. Copywriter umano studia come parla il target specifico, usa le loro esatte parole, espressioni, gergo. Copy che usa linguaggio del target converte meglio.",
+      "tags": ["linguaggio-target", "limite-AI", "target", "ricerca"]
+    },
+    {
+      "id": "KA-15",
+      "source": "iy13HC9M8z0#0:06:00",
+      "frame": "frame-175.png",
+      "category": "limite-AI",
+      "chapter": "AI vs Copywriter",
+      "content": "Gap gestione obiezioni: AI non considera se una frase genera obiezioni. Copywriter anticipa e smonta obiezioni inline mentre scrive. GPT ignora questo layer completamente.",
+      "tags": ["obiezioni", "limite-AI", "vendita", "copy-strategico"]
+    },
+    {
+      "id": "KA-16",
+      "source": "iy13HC9M8z0#0:06:10",
+      "frame": "frame-175.png",
+      "category": "limite-AI",
+      "chapter": "AI vs Copywriter",
+      "content": "Gap creativita genuina: AI produce il centro statistico dei testi - la media ponderata di tutto il training. Non produce l'outlier creativo che fa vendere: angolo inatteso, metafora originale, struttura non convenzionale.",
+      "tags": ["creativita", "limite-AI", "originalita"]
+    },
+    {
+      "id": "KA-17",
+      "source": "iy13HC9M8z0#0:06:18",
+      "frame": "frame-175.png",
+      "category": "limite-AI",
+      "chapter": "AI vs Copywriter",
+      "content": "Gap emotivita autentica: AI descrive emozione, non la crea. Questa esperienza ti dara gioia (GPT) vs costruire narrativa che genera effettivamente gioia nel lettore (copywriter umano).",
+      "tags": ["emotivita", "limite-AI", "narrativa", "copy-principio"]
+    },
+    {
+      "id": "KA-18",
+      "source": "iy13HC9M8z0#0:06:25",
+      "frame": "frame-200.png",
+      "category": "limite-AI",
+      "chapter": "AI vs Copywriter",
+      "content": "Gap pensiero strategico: AI non analizza chi e il lettore, dove e nel funnel, cosa sa gia, quali sono le sue resistenze. Copywriter fa analisi strategica pre-scrittura. GPT va diretto al copy senza questa fase.",
+      "tags": ["pensiero-strategico", "limite-AI", "funnel", "target"]
+    },
+    {
+      "id": "KA-19",
+      "source": "iy13HC9M8z0#0:06:30",
+      "frame": "frame-200.png",
+      "category": "limite-AI",
+      "chapter": "AI vs Copywriter",
+      "content": "Gap ricerca vera: AI non fa ricerca di mercato reale. Non legge recensioni per trovare il linguaggio del target, non studia competitor, non analizza testimonial. Copywriter usa ricerca come materia prima del copy.",
+      "tags": ["ricerca", "limite-AI", "mercato", "linguaggio-target"]
+    },
+    {
+      "id": "KA-20",
+      "source": "iy13HC9M8z0#0:06:38",
+      "frame": "frame-200.png",
+      "category": "business-impact",
+      "chapter": "AI vs Copywriter",
+      "content": "Costo del copy generico: lasciando tantissimi soldi sul tavolo. Copy mediocre ha costo opportunita enorme. Ogni conversione persa = revenue non generata. Generic copy = money left on table, quantificabile.",
+      "tags": ["business", "conversione", "revenue", "costo-opportunita"]
+    },
+    {
+      "id": "KA-21",
+      "source": "iy13HC9M8z0#0:06:40",
+      "frame": "frame-200.png",
+      "category": "applicazione-pratica",
+      "chapter": "AI come tool",
+      "content": "AI per ricerca mercato: quanti tipi di tazze ci sono? Usa ChatGPT per mapping iniziale categoria prodotto, territori tematici, angoli esistenti. Strumento di research, non di scrittura.",
+      "tags": ["ChatGPT", "ricerca", "tool", "applicazione-pratica"]
+    },
+    {
+      "id": "KA-22",
+      "source": "iy13HC9M8z0#0:06:50",
+      "frame": "frame-230.png",
+      "category": "applicazione-pratica",
+      "chapter": "AI come tool",
+      "content": "AI come benchmark negativo: sapere cosa non fare, cosa e troppo generico, cosa e troppo semplice. Genera output GPT, identifica i cliche da evitare. Test: se il tuo copy suona come GPT -> troppo generico.",
+      "tags": ["ChatGPT", "benchmark", "tool", "cliche"]
+    },
+    {
+      "id": "KA-23",
+      "source": "iy13HC9M8z0#0:07:00",
+      "frame": "frame-230.png",
+      "category": "applicazione-pratica",
+      "chapter": "AI come tool",
+      "content": "AI come ispirazione strutturale: utile per format types, strutture alternative, organizzazione contenuto. Non copiare il testo, usa per ispirare struttura poi riempi con copy umano.",
+      "tags": ["ChatGPT", "struttura", "ispirazione", "tool"]
+    },
+    {
+      "id": "KA-24",
+      "source": "iy13HC9M8z0#0:07:10",
+      "frame": "frame-230.png",
+      "category": "strategia",
+      "chapter": "AI come tool",
+      "content": "AI come floor da superare: usa GPT per capire il livello base del mercato. Il tuo copy deve sistematicamente essere migliore di cio che GPT produce gratuitamente. Se non lo superi, il cliente non ha motivo di pagarti.",
+      "tags": ["strategia", "differenziazione", "ChatGPT", "qualita"]
+    },
+    {
+      "id": "KA-25",
+      "source": "iy13HC9M8z0#0:07:30",
+      "frame": "frame-230.png",
+      "category": "prospettiva-futura",
+      "chapter": "CTA",
+      "content": "Caveat futuro: tra 5 e 10 anni molto probabile che AI sia cosi avanzato da sostituire copywriter. Andrei non esclude sostituzione futura. Per ora (2023): il gap e reale e misurabile.",
+      "tags": ["futuro", "AI", "sostituzione", "prospettiva"]
+    },
+    {
+      "id": "KA-26",
+      "source": "iy13HC9M8z0#0:08:18",
+      "frame": "frame-250.png",
+      "category": "contenuto-serie",
+      "chapter": "Outro",
+      "content": "Parte 2 annunciata: analisi errori GPT. Pattern: Andrei usa AI come materiale educativo per mostrare cosa un copywriter vede che GPT non vede. Continua serie critica AI vs copy umano.",
+      "tags": ["serie", "parte-2", "critica-AI", "educational"]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "video_id": "6WMkz5Q8g6g",
+  "title": "4 consigli per scrivere TESTI PERSUASIVI & Copywriting",
+  "run": "andrei-pascu-001/cat1-copywriting",
+  "video_number": "6/29",
+  "ingested_at": "2026-07-09",
+  "duration_sec": 261,
+  "chapters": 6,
+  "total_frames": 131,
+  "frames_interval_sec": 2,
+  "frames_read_native": 11,
+  "frames_skipped": 120,
+  "visual_passages": [
+    {
+      "id": "VP-001",
+      "frames": ["frame-050", "frame-065", "frame-075"],
+      "timestamps": ["0:01:38", "0:02:08", "0:02:28"],
+      "description": "Andrei regge fisicamente Beats headphones (rosso/nero) come prop per esempio cuffie/cancellazione rumore"
+    },
+    {
+      "id": "VP-002",
+      "frames": ["frame-100"],
+      "timestamps": ["0:03:18"],
+      "description": "Andrei regge action cam nera (GoPro-like) come prop per esempio fare ricerca/mountain bikers"
+    },
+    {
+      "id": "VP-003",
+      "frames": ["frame-128"],
+      "timestamps": ["0:04:14"],
+      "description": "End card brand: schermata nera con testo bianco 'Andrei Pascu.'"
+    }
+  ],
+  "knowledge_atoms_count": 22,
+  "vtt_language": "it",
+  "setting": "dark home studio, condenser mic, beige t-shirt grafica, round glasses, gold chain, Apple Watch",
+  "no_finto_status": "PASS",
+  "watch_001": {
+    "n_video": 6,
+    "n_memory_empire": 6,
+    "status": "MATCH"
+  },
+  "stage_completed": ["S1", "S2", "S3", "S4", "S5", "S7", "ME-C", "ME-D", "ME-E", "ME-F", "ME-G", "ME-H"]
+}

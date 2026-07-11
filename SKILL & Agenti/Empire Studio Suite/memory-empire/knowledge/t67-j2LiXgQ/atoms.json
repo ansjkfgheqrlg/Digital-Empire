@@ -1,0 +1,160 @@
+{
+  "video_id": "t67-j2LiXgQ",
+  "total_atoms": 22,
+  "atoms": [
+    {
+      "id": "KA-001",
+      "source": "t67-j2LiXgQ#0:00:10",
+      "frame": "frame-001.png",
+      "category": "definizione",
+      "atom": "Copywriting = scrivere testo persuasivo che vende. Il copywriter NON è il designer, NON crea grafiche."
+    },
+    {
+      "id": "KA-002",
+      "source": "t67-j2LiXgQ#0:00:20",
+      "frame": "frame-001.png",
+      "category": "definizione",
+      "atom": "Copywriting ≠ copyright (protezione legale). Confusione comune da eliminare. Due domini completamente diversi."
+    },
+    {
+      "id": "KA-003",
+      "source": "t67-j2LiXgQ#0:02:38",
+      "frame": "frame-079.png + frame-085.png",
+      "category": "formati",
+      "atom": "4 formati principali copy: (1) email marketing, (2) FB/IG ads, (3) landing page, (4) VSL/copione. Coprono 80% lavoro freelance."
+    },
+    {
+      "id": "KA-004",
+      "source": "t67-j2LiXgQ#0:02:38",
+      "frame": "frame-079.png",
+      "category": "email-copy",
+      "atom": "Anatomia email copy (esempio reale Parola di Librai): corpo con valore per il lettore + 2 CTA tematici ('SCOPRI LO SPECIALE' / 'CONSIGLI DAI LIBRAI'). Email dà valore prima, poi converte."
+    },
+    {
+      "id": "KA-005",
+      "source": "t67-j2LiXgQ#0:02:50",
+      "frame": "frame-085.png",
+      "category": "ad-copy",
+      "atom": "Anatomia ad copy (esempio reale Torpado MTB/Marchisio): hook scarcity + brand social proof + urgency ('affrettati') + value prop (QUALITÀ-PREZZO) + CTA diretto email+telefono. Struttura direct response completa in un post."
+    },
+    {
+      "id": "KA-006",
+      "source": "t67-j2LiXgQ#0:04:00",
+      "frame": "frame-130.png",
+      "category": "meta-skill",
+      "atom": "Copy non è intuizione: 'per fare copy esistono strategie provate e tecniche'. Skill acquisibile con metodo, non dono innato."
+    },
+    {
+      "id": "KA-007",
+      "source": "t67-j2LiXgQ#0:05:30",
+      "frame": "frame-165.png",
+      "category": "struttura-testo",
+      "atom": "Struttura testo #1: paragrafi max 2-5 frasi. Blocchi più lunghi = muro di testo = lettore abbandona. Whitespace è persuasivo."
+    },
+    {
+      "id": "KA-008",
+      "source": "t67-j2LiXgQ#0:05:45",
+      "frame": "frame-165.png",
+      "category": "struttura-testo",
+      "atom": "Struttura testo #2: una sola idea per frase. Frasi brevi = più leggibili = più persuasive. Semplicità è scelta, non limitazione."
+    },
+    {
+      "id": "KA-009",
+      "source": "t67-j2LiXgQ#0:06:00",
+      "frame": "frame-165.png",
+      "category": "struttura-testo",
+      "atom": "Struttura testo #3: testo schematico > testo prosastico. Bullet point, liste, titoletti = testo scannable. Il lettore scanna prima di leggere."
+    },
+    {
+      "id": "KA-010",
+      "source": "t67-j2LiXgQ#0:06:15",
+      "frame": "frame-200.png",
+      "category": "struttura-testo",
+      "atom": "Anti-pattern 'tema delle medie': scuola insegna paragrafi densi e continui. Quel formato funziona per professori, NON per lettura online. Il copywriter deve disimpararlo."
+    },
+    {
+      "id": "KA-011",
+      "source": "t67-j2LiXgQ#0:07:40",
+      "frame": "frame-240.png",
+      "category": "psicologia-acquisto",
+      "atom": "Legge fondamentale: ogni acquisto risolve DOLORE (pain) o genera PIACERE (pleasure). Nessuna terza categoria."
+    },
+    {
+      "id": "KA-012",
+      "source": "t67-j2LiXgQ#0:07:50",
+      "frame": "frame-240.png",
+      "category": "psicologia-acquisto",
+      "atom": "Pain purchases: medicinali, occhiali, assicurazione. Pleasure purchases: gelato, Gucci, film, vacanza. La categoria determina la leva copy."
+    },
+    {
+      "id": "KA-013",
+      "source": "t67-j2LiXgQ#0:08:10",
+      "frame": "frame-240.png",
+      "category": "psicologia-acquisto",
+      "atom": "Regola operativa: prodotto risolve pain → amplifica pain. Prodotto dà pleasure → amplifica pleasure. Leva sbagliata = conversione bassa anche con copy tecnicamente eccellente."
+    },
+    {
+      "id": "KA-014",
+      "source": "t67-j2LiXgQ#0:09:35",
+      "frame": "frame-290.png",
+      "category": "struttura-copy",
+      "atom": "Copy structure Step 1 = ATTENZIONE. Hook cattura il lettore prima che abbandoni. Senza attenzione il resto del copy non viene letto. Gate obbligatorio."
+    },
+    {
+      "id": "KA-015",
+      "source": "t67-j2LiXgQ#0:09:50",
+      "frame": "frame-290.png",
+      "category": "struttura-copy",
+      "atom": "Copy structure Step 2 = PROBLEMA. Spiega il problema MEGLIO di quanto lo sappia fare il prospect stesso. Questo crea riconoscimento ('parla di me') e credibilità istantanea."
+    },
+    {
+      "id": "KA-016",
+      "source": "t67-j2LiXgQ#0:10:40",
+      "frame": "frame-290.png",
+      "category": "struttura-copy",
+      "atom": "Copy structure Step 3 = CTA. Dopo attenzione + problema amplificato, la CTA converte. Ordine obbligatorio: invertirlo abbassa drasticamente la conversione."
+    },
+    {
+      "id": "KA-017",
+      "source": "t67-j2LiXgQ#0:11:10",
+      "frame": "frame-340.png",
+      "category": "pain-amplification",
+      "atom": "Pain Amplification = 'premere sulla ferita'. Non menzionare il dolore: farlo sentire urgente, presente, intollerabile. Trasforma consapevolezza in motivazione."
+    },
+    {
+      "id": "KA-018",
+      "source": "t67-j2LiXgQ#0:11:25",
+      "frame": "frame-340.png",
+      "category": "urgency",
+      "atom": "Urgency = antidoto alla procrastinazione. 'Gli esseri umani rimandano' — default umano è 'lo faccio dopo'. Il copy deve creare motivo razionale o emotivo per agire ADESSO."
+    },
+    {
+      "id": "KA-019",
+      "source": "t67-j2LiXgQ#0:13:05",
+      "frame": "frame-399.png",
+      "category": "meta-esempio",
+      "atom": "Meta-esempio live: Andrei conclude con CTA corso (€249 ora, €690 dal 15 settembre). Usa urgency reale mentre insegna urgency. Il video stesso è copy — dimostrazione pratica del principio."
+    },
+    {
+      "id": "KA-020",
+      "source": "t67-j2LiXgQ#0:13:17",
+      "frame": "frame-399.png",
+      "category": "carriera",
+      "atom": "Copywriting come carriera freelance monetizzabile: skill insegnabile, vendibile come servizio, scalabile. Andrei vende corso €249-690 — questo video è il funnel."
+    },
+    {
+      "id": "KA-021",
+      "source": "t67-j2LiXgQ#0:09:55",
+      "frame": "frame-290.png",
+      "category": "ricerca",
+      "atom": "'Capire il problema meglio del cliente stesso' richiede ricerca profonda sulla voice of customer. Non è intuizione: è lavoro analitico PRE-scrittura."
+    },
+    {
+      "id": "KA-022",
+      "source": "t67-j2LiXgQ#0:01:00",
+      "frame": "frame-001.png",
+      "category": "percorso",
+      "atom": "Percorso entry-level copywriter: (1) studia tecniche provate, (2) scegli 1-2 formati, (3) applica, (4) offri come servizio freelance. Corso Andrei = shortcut validato."
+    }
+  ]
+}

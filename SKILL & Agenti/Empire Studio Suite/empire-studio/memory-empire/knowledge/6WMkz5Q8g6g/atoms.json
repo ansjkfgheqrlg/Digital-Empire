@@ -1,0 +1,207 @@
+{
+  "video_id": "6WMkz5Q8g6g",
+  "total_atoms": 22,
+  "atoms": [
+    {
+      "id": "KA-001",
+      "concept": "TOV adattivo al target",
+      "summary": "Parole e modo di parlare devono variare in base a chi hai davanti — imprenditore ≠ bambino",
+      "source": "6WMkz5Q8g6g#00:00:28",
+      "frame": "frames/frame-020.png",
+      "category": "linguaggio-target",
+      "chapter": "Cambia il tuo linguaggio"
+    },
+    {
+      "id": "KA-002",
+      "concept": "Ego dissolution nel copy",
+      "summary": "Il copywriter 'non esiste più' quando scrive — solo il target esiste",
+      "source": "6WMkz5Q8g6g#00:01:04",
+      "frame": "frames/frame-033.png",
+      "category": "mindset-copy",
+      "chapter": "Cambia il tuo linguaggio"
+    },
+    {
+      "id": "KA-003",
+      "concept": "Filtro personale = nemico del copy",
+      "summary": "Ognuno parla come se stesso per abitudine — questo filtro va rimosso completamente",
+      "source": "6WMkz5Q8g6g#00:00:38",
+      "frame": "frames/frame-020.png",
+      "category": "mindset-copy",
+      "chapter": "Cambia il tuo linguaggio"
+    },
+    {
+      "id": "KA-004",
+      "concept": "Chain linguaggio→empatia→vendita",
+      "summary": "Non parli come loro → non li capisci → non puoi vendere. Ogni link è necessario",
+      "source": "6WMkz5Q8g6g#00:01:13",
+      "frame": "frames/frame-037.png",
+      "category": "logica-vendita",
+      "chapter": "Parla come loro"
+    },
+    {
+      "id": "KA-005",
+      "concept": "Comprensione = priorità assoluta",
+      "summary": "Mettiti letteralmente nei panni di chi sta leggendo prima di scrivere",
+      "source": "6WMkz5Q8g6g#00:01:30",
+      "frame": "frames/frame-046.png",
+      "category": "empatia-target",
+      "chapter": "Parla come loro"
+    },
+    {
+      "id": "KA-006",
+      "concept": "Situazione d'uso come entry point emotivo",
+      "summary": "Racconta scenario concreto in cui il prodotto serve — crea film mentale nel lettore",
+      "source": "6WMkz5Q8g6g#00:02:08",
+      "frame": "frames/frame-065.png",
+      "category": "storytelling-copy",
+      "chapter": "Parla come loro"
+    },
+    {
+      "id": "KA-007",
+      "concept": "Contesto d'uso come trigger emotivo",
+      "summary": "Descrivi il 'momento problema' specifico (treno+casino+voglio musica) non il beneficio generico",
+      "source": "6WMkz5Q8g6g#00:01:55",
+      "frame": "frames/frame-058.png",
+      "category": "psicologia-acquisto",
+      "chapter": "Parla come loro"
+    },
+    {
+      "id": "KA-008",
+      "concept": "Prop fisico = copy embodied",
+      "summary": "Beats headphones reggeti in mano → prodotto tangibile, non astratto — tecniche dimostrative in video copy",
+      "source": "6WMkz5Q8g6g#00:01:38",
+      "frame": "frames/frame-050.png",
+      "category": "video-copy",
+      "chapter": "Parla come loro",
+      "visual_passage": "VP-001"
+    },
+    {
+      "id": "KA-009",
+      "concept": "Feature vs Benefit",
+      "summary": "La caratteristica descrive il prodotto; il vantaggio descrive cosa accade nella vita del cliente",
+      "source": "6WMkz5Q8g6g#00:02:13",
+      "frame": "frames/frame-067.png",
+      "category": "feature-vs-benefit",
+      "chapter": "Cancellazione del rumore"
+    },
+    {
+      "id": "KA-010",
+      "concept": "Feature fredda — non convince",
+      "summary": "'Cancellazione del rumore di quarta generazione' = tecnica senza emozione, non muove all'acquisto",
+      "source": "6WMkz5Q8g6g#00:02:21",
+      "frame": "frames/frame-071.png",
+      "category": "feature-vs-benefit",
+      "chapter": "Cancellazione del rumore"
+    },
+    {
+      "id": "KA-011",
+      "concept": "Benefit caldo con scenari vividi",
+      "summary": "'Riduce ambulanze, aereo, bambino, rumeno' — lista scenari specifici + umorismo per memorabilità",
+      "source": "6WMkz5Q8g6g#00:02:28",
+      "frame": "frames/frame-075.png",
+      "category": "feature-vs-benefit",
+      "chapter": "Cancellazione del rumore",
+      "visual_passage": "VP-001"
+    },
+    {
+      "id": "KA-012",
+      "concept": "Specificità vivida — lista 3-4 scenari",
+      "summary": "Lista benefit: inizia formale (ambulanze) → chiudi personale/umoristico (rumeno in fondo) per memorabilità",
+      "source": "6WMkz5Q8g6g#00:02:30",
+      "frame": "frames/frame-076.png",
+      "category": "tecniche-copy",
+      "chapter": "Cancellazione del rumore"
+    },
+    {
+      "id": "KA-013",
+      "concept": "Storytelling come meccanismo Feature→Benefit",
+      "summary": "Feature → 'immagina di essere su un treno…' → benefit. La storia è il ponte",
+      "source": "6WMkz5Q8g6g#00:02:08-00:02:32",
+      "frame": "frames/frame-065.png",
+      "category": "storytelling-copy",
+      "chapter": "Cancellazione del rumore"
+    },
+    {
+      "id": "KA-014",
+      "concept": "Research obbligatoria — sempre",
+      "summary": "'Non esiste situazione in cui non fare ricerca' — SOP pre-copy è aprire documento ricerca",
+      "source": "6WMkz5Q8g6g#00:02:41",
+      "frame": "frames/frame-082.png",
+      "category": "processo-copy",
+      "chapter": "Fare ricerca"
+    },
+    {
+      "id": "KA-015",
+      "concept": "Target linguistics research",
+      "summary": "Devi usare terminologia esatta del settore — raccogliere lessico target da forum/recensioni/commenti",
+      "source": "6WMkz5Q8g6g#00:03:11",
+      "frame": "frames/frame-096.png",
+      "category": "ricerca-target",
+      "chapter": "Fare ricerca"
+    },
+    {
+      "id": "KA-016",
+      "concept": "GoPro/mountain bikers — terminologia settoriale = credibilità",
+      "summary": "Usa 'grandangolare, footage dinamico' non 'telecamerina' quando parli con MTB community",
+      "source": "6WMkz5Q8g6g#00:03:05",
+      "frame": "frames/frame-100.png",
+      "category": "ricerca-target",
+      "chapter": "Fare ricerca",
+      "visual_passage": "VP-002"
+    },
+    {
+      "id": "KA-017",
+      "concept": "Research critica per prodotti sconosciuti",
+      "summary": "Se prodotto è nuovo per te → ricerca fondamentale (1h minimo per freelancer check)",
+      "source": "6WMkz5Q8g6g#00:03:23",
+      "frame": "frames/frame-102.png",
+      "category": "processo-copy",
+      "chapter": "Fare ricerca"
+    },
+    {
+      "id": "KA-018",
+      "concept": "Research utile anche per prodotti noti",
+      "summary": "Anche per prodotti già conosciuti → espande conoscenza + analisi competitiva",
+      "source": "6WMkz5Q8g6g#00:03:39",
+      "frame": "frames/frame-110.png",
+      "category": "processo-copy",
+      "chapter": "Fare ricerca"
+    },
+    {
+      "id": "KA-019",
+      "concept": "Competitive analysis come parte della ricerca",
+      "summary": "15 min analisi copy dei top 3 competitor per ogni brief — benchmark obbligatorio",
+      "source": "6WMkz5Q8g6g#00:03:44",
+      "frame": "frames/frame-113.png",
+      "category": "ricerca-competitor",
+      "chapter": "Fare ricerca"
+    },
+    {
+      "id": "KA-020",
+      "concept": "4 consigli come sistema integrato",
+      "summary": "Linguaggio → Comprensione → Feature→Benefit → Ricerca: catena causale, non tip separati",
+      "source": "6WMkz5Q8g6g#00:00:17-00:03:45",
+      "frame": "frames/frame-020.png",
+      "category": "framework",
+      "chapter": "meta"
+    },
+    {
+      "id": "KA-021",
+      "concept": "CTA urgenza deadline reale",
+      "summary": "'Mancano pochissimi giorni per acquistarlo a prezzo ridotto' — urgenza temporale nella promozione corsi",
+      "source": "6WMkz5Q8g6g#00:04:03",
+      "frame": "frames/frame-123.png",
+      "category": "cta-urgency",
+      "chapter": "Conclusioni"
+    },
+    {
+      "id": "KA-022",
+      "concept": "Content funnel: video fast → video lungo/corso",
+      "summary": "Short video = teaser con tip veloci → CTA a corso più completo. Modello per content DE",
+      "source": "6WMkz5Q8g6g#00:03:48",
+      "frame": "frames/frame-115.png",
+      "category": "content-strategy",
+      "chapter": "Conclusioni"
+    }
+  ]
+}

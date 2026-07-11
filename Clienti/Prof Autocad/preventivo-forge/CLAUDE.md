@@ -31,7 +31,7 @@ Workflow multi-agente per il cliente **Prof Autocad** (automotive). Input: URL a
 - **Half A (Max): COMPLETA** — scraper (Chrome reale via `cdp.py`, off-screen, **aspetta `__INITIAL_STATE__`**, **profilo
   persistente anti-blocco IP**, retry), parser, pricer, regia `run.py` (Gate A/B/C/D/IMG/R + storico), schema, multi-tenant,
   **fabbrica `nuovo_concessionario.py`**, **kill-switch `licenza.py`+`gestione-licenze.py`** (Gist), **riserva AI `ai_translate.py`**
-  (Groq €0), **archivio `archivio.py`**.
+  (Groq €0), **archivio `archivio.py`** (con `clear()` = si svuota a ogni chiusura app, cablata in `app.py` webview+Tkinter).
 - **Half B (Gael): COMPLETA** — `translate_copy.py`+`glossary_de_it.py` (S3), `render_pdf.py`+`templates/preventivo.html`
   (S5, modello Novacar), `qa_gate.py`, app GUI premium pywebview (multi-link 10, avanzamento compatto, **Archivio**).
 - **Novità 05/07**: traduzione AI su TUTTI i campi (6 auto → 0 residui) · gate solo su difetti veri · GUI avanzamento compatto
