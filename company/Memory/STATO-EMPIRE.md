@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-07-05 (Max — Empire Studio + Novacar)
+# STATO EMPIRE -- aggiornato 2026-07-09 (Max — Empire Studio cat1-copywriting)
 
 ## 🛑 DIRETTIVE MAX ASSOLUTE (2026-07-03 — valgono sempre, leggere per prime)
 1. **Ordini su Gael = assoluti.** Ogni compito che Max assegna a Gael (o direttiva su di lui) è LEGGE, non preferenza.
@@ -17,12 +17,53 @@
    Gael: se testi PreventivoForge e trovi un errore, registralo lì. Prendi sempre l'ULTIMA build (git pull / zip rigenerato).
 
 
+## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 8/29 COMPLETATO (2026-07-09, CP-20260709-008)
+**RIPRESA DA: video 9/29 — `IWCHN_mE2Vo` ("Copywriter Analizza Copywriting (Live) [ITA]") — Stage 1 avviato in background**
+Pipeline completata per lQMO0LdeI2c: Stage 1-5 + Stage 7 + Memory Empire C-H. 29 KA P12-traced. 2 wiki pages create. 6 VP schermo documentati. Live 44:55 — McFit+Dyson analizzati. Mercedes+DJI annunciati ma non analizzati.
+- **Top KA**: Brand Famoso Rule · CPA leva €5→€50K/anno · Headline≠Nome Prodotto · CLV Red Bull · Slogan Vibes vs DR · Knowledge=Pricing Leva
+- **Visual Passages**: VP-001 McFit Hero "SEMPLICEMENTE IN FORMA" · VP-002 Google "simply fit" · VP-003 McFit+ loyalty · VP-004 Dyson Airwrap headline errore · VP-005 trust badges · VP-006 v15s scarcity
+- **Nuovi Concetti**: Source_Andrei_Pascu_Copywriter_Analizza_Live.md + Concept_CLV_Customer_Lifetime_Value.md
+- **WATCH-001**: N_video=8, N_MemoryEmpire=8 → MATCH ✅
+
+## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 7/29 COMPLETATO (2026-07-09, CP-20260709-007)
+**RIPRESA DA: video 8/29 — `lQMO0LdeI2c` ("Copywriter Analyzes Copywriting — Live") — Stage 1+2 gia avviati**
+Pipeline completata per iy13HC9M8z0: Stage 1-5 + Stage 7 + Memory Empire C-H. 26 KA P12-traced. 2 wiki pages create. 4 VP ChatGPT screen documentati.
+- **Top KA**: "ottimo ma fa schifo" (paradosso GPT) · Show don't tell violato · 6 Gap AI (linguaggio/obiezioni/creativita/emotivita/strategico/ricerca) · GPT Ceiling Effect · AI-as-Floor Strategy
+- **Visual Passages**: VP-001 overlay "COPYWRITER" · VP-002 warm-up ChatGPT · VP-003 Prompt 1 tazze output (3 frame) · VP-004 Prompt 2 specifico output
+- **Nuovi Concetti**: Concept_AI_vs_Copywriter_Limiti_e_Usi.md (6 gap + 4 usi + checklist anti-GPT)
+- **WATCH-001**: N_video=7, N_MemoryEmpire=7 → MATCH ✅
+
+## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 6/29 COMPLETATO (2026-07-09, CP-20260709-006)
+**RIPRESA DA: video 7/29 — `iy13HC9M8z0` ("I corrected ChatGPT's copywriting")**
+Pipeline completata per 6WMkz5Q8g6g: Stage 1-5 + Stage 7 + Memory Empire C-H. 22 KA P12-traced. 2 wiki pages create.
+- **Top KA**: Feature vs Benefit (formula+formula lista) · Ego dissolution nel copy · Specificità vivida lista scenari · Research sempre obbligatoria · Props fisici in video copy
+- **Visual Passages**: VP-001 Beats headphones (frame-050/065/075) · VP-002 action cam GoPro-like (frame-100) · VP-003 end card brand
+- **Nuovo Concept**: Concept_Feature_vs_Benefit_Copy.md (con checklist audit + formula operativa)
+- **WATCH-001**: N_video=6, N_MemoryEmpire=6 → MATCH ✅
+
+## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 5/29 COMPLETATO (2026-07-09, CP-20260709-005)
+**RIPRESA DA: video 6/29 — `6WMkz5Q8g6g` (4 Tips for Writing Persuasive Texts & Copywriting)**
+Pipeline completata per sTCwYnWmgcQ: Stage 1-5 + Stage 7 + Memory Empire C-H. 22 KA P12-traced. 2 wiki pages create.
+- **Top KA**: "Tutto è copy" · Valore Anticipato · Pricing=valore-non-ore · Reputazione-online=copy · Metodo prodotti inventati
+- **Nuovo Concept**: Concept_Valore_Anticipato_Freelance.md
+- **WATCH-001**: N_video=5, N_MemoryEmpire=5 → MATCH ✅
+
+## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 4/29 COMPLETATO (2026-07-09, CP-20260709-004)
+**RIPRESA DA: video 5/29 — `sTCwYnWmgcQ` (How to Become a Copywriter with Zero Experience)**
+Pipeline completata per t67-j2LiXgQ: Stage 1-5 + Stage 7 + Memory Empire C-H. 22 KA P12-traced. 2 wiki pages create.
+- **Top KA**: Pain Amplification ("premi sulla ferita") · Urgency ("gli esseri umani rimandano") · Pain vs Pleasure (ogni acquisto) · Step 2 = spiega problema meglio del prospect · Meta-esempio live (corso €249→€690)
+- **Visual Passages**: frame-079 (email Parola di Librai) · frame-085 (ad Torpado MTB direct response completo)
+- **Nuovo Concept**: Concept_Pain_Amplification_Urgency_Copy.md
+- **WATCH-001**: N_video=4, N_MemoryEmpire=4 → MATCH ✅
+
+## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 3/29 COMPLETATO (2026-07-09, CP-20260709-003)
+Pipeline completata per jgIgOPAnYNY: Stage 1-5 + Stage 7 + Memory Empire C-H. 24 KA P12-traced. 3 wiki pages create.
+- **Top KA**: Formula APSOC (A/P/S/O/C) · "90% copywriter salta la ricerca" · YouTube reviews = voice of customer · briefing 7+1 elementi · "scrivi da ubriaco, rivedi da sobrio"
+- **WATCH-001**: N_video=3, N_MemoryEmpire=3 → MATCH ✅
+
 ## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 2/29 COMPLETATO (2026-07-05, CP-20260705-001)
-**RIPRESA DA: video 3/29 → `jgIgOPAnYNY` ("Come diventare un copywriter - tutorial COMPLETO")**
 Pipeline completata per qOK4WP82Bvo: Stage 1-5 + Stage 7 + Memory Empire C-H. 22 KA P12-traced. 3 wiki pages create.
-- **Top KA**: "il copy non cambia il prodotto, cambia quanti lo comprano" · conversion rate multiplier (1%→2%=revenue×2) · value gap dipendente €50k generati vs €1.2k ricevuti · 4 metodi pricing freelance · struttura video sales-education 7 fasi
 - **WATCH-001**: N_video=2, N_MemoryEmpire=2 → MATCH ✅
-- **Prossima azione**: Stage 1 su jgIgOPAnYNY (`yt_ingest.py` → download video → `frame_extractor.py --interval 2`)
 
 ## ✅ MAX — PreventivoForge: CONSEGNA A NOVACAR PRONTA (agg. 2026-07-05, ultimo su main `063cd27`)
 **Consegna in 2 giorni. Pacchetto UNICO pronto: `Clienti/Prof Autocad/Consegna-Novacar/PreventivoForge-Novacar.zip` (120 MB, gitignorato).**
@@ -51,6 +92,17 @@ Guida consegna passo-passo: `Clienti/Prof Autocad/COME-CONSEGNARE-A-NOVACAR.md`.
   (10) **REGISTRO-ERRORI + CHECKLIST-CONSEGNA** (`063cd27`): 9 errori E1-E9 (causa+fix+regola). Direttiva #3 = obbligatori.
 - **Riserva AI traduzione ATTIVA** (Groq €0). **Kill-switch LIVE** ("X non paga" → blocco+email). Fabbrica: `/nuovo-concessionario`.
 - **Verificato oggi**: 5 auto scrapate→PDF (Hyundai/Skoda/Volvo/Land Rover/VW) · 6 auto tradotte→0 residui.
+- **AGGIORNAMENTO 2026-07-09 (Max, CP-20260709-001): ARCHIVIO SI SVUOTA A OGNI CHIUSURA APP.**
+  `archivio.py` +`clear()` (cancella PDF-copia+miniature+indice, NON i PDF di output); `app.py` la chiama dopo chiusura
+  finestra (pywebview E Tkinter). **Exe consegna RIBUILDATO** (2026-07-09 10:15) → **zip rigenerato 117.4 MB**
+  (`Consegna-Novacar/PreventivoForge-Novacar.zip`, verificato: exe nuovo + `.env` + LEGGIMI + modulo con `def clear()`).
+  Test: clear() pieno→vuoto OK, `entries()` vuoto→[]. NB: svuota solo a chiusura pulita (X), non su crash/Task Manager.
+- **REGOLA GLOBALE PREZZO (Max 2026-07-09, CP-20260709-002): il 2° fisso (fixed_2=1500) è GUADAGNO, sommato a "Prezzo autovettura".**
+  Nel PDF: UNA sola voce servizi "**Immatricolazione, pratiche e trasporto**" = 1.500 (fixed_1); la voce "Trasporto" NON esiste più.
+  Il secondo 1.500 (fixed_2 = margine) **si somma alla voce "Prezzo autovettura"** (`listed + fixed_2`), così il guadagno
+  è indistinguibile dal prezzo auto e **le voci visibili tornano col totale**. Vale per OGNI preventivo/concessionario
+  (unico punto: `render_pdf.py::_price_novacar`, Half B). Totale `final_eur` invariato. ⚠️ **Gael**: `render_pdf.py` toccato da Max (lista sotto).
+  Test: Prezzo autovettura **17.450** (15.950+1.500) + Maggiorazione 478 + Immatr./pratiche/trasporto 1.500 = **TOTALE 19.428** (somma esatta).
 
 ### ⚠️ GAEL — file Half B che MAX ha toccato (lista COMPLETA — allineati se riprendi GUI/traduzione)
 - **`app.py`**: `_StreamToQueue` (fasi compatte + retry visibile) · `run_batch`/`_parse_links` (multi-link 10 + eventi
@@ -60,6 +112,9 @@ Guida consegna passo-passo: `Clienti/Prof Autocad/COME-CONSEGNARE-A-NOVACAR.md`.
 - **`translate_copy.py`**: `_ai_fill_residuals` SOSTITUITO da `_ai_fix_sources` (AI sulle fonti prima dei derivati) + `_ai_final_sweep` (AI su tutti i campi).
 - **`qa_gate.py`**: `gate_img` (solo difetti veri) · `gate_b` (tolleranza residuo minore) · `_specs_consistency` (fix km numerico).
 - **`glossary_de_it.py`**: +TÜV/hauptuntersuchung/abgasuntersuchung/vorbereitung.
+- **`render_pdf.py`** (2026-07-09): `_price_novacar` — voci prezzo cambiate per REGOLA GLOBALE Max: una sola voce
+  "Immatricolazione, pratiche e trasporto" (fixed_1); rimossa la voce "Trasporto" (fixed_2 = guadagno, solo nel totale).
+  Template/motore PDF NON toccati (itera `price.lines`, invariato).
 - **NUOVI file (miei, Half A)**: `implementation/archivio.py` · `implementation/ai_translate.py` · `implementation/licenza.py` ·
   `gestione-licenze.py` · `nuovo_concessionario.py` · `REGISTRO-ERRORI.md` · `CHECKLIST-CONSEGNA.md` · `COME-CONSEGNARE-A-NOVACAR.md`.
 - Mai toccati: `render_pdf.py`, `templates/preventivo.html`, REGOLE-SACRE, schema (congelato).
@@ -261,9 +316,16 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   **Batch 1 ✅ CHIUSO (CP-20260622-002): A1+A2+A3** (58 file, 27 ag, 10 WF). A2 wrappa runtime outreach LIVE (ADR-003).
   **Batch 2 ✅ CHIUSO (CP-20260623-001): A4-Delivery + A5-Copywriting + A6-Marketing** (51 file, 21 ag, 9 WF,
   gate verde, 5-bis APPROVA). A5 riusa Gate Bibbia di A2 (pattern 6). **AVANZAMENTO 01-AGENCY: 6/10.**
-  **Batch 3 IN CORSO: A7-Account-Mgmt + A8-Closing + A9-Partnership + A10-QA-Cliente (nuovi, cartelle da creare) → chiude 10/10.**
+  🟡 **Batch 3 PARZIALE (STOP session-limit 2026-06-23, reset 19:00 Roma):** i 4 agenti sono morti presto.
+  Stato ESATTO su disco (RIPRESA chirurgica — completare SOLO i mancanti, idempotente):
+  · **A7-Account-Management:** ✅ ARCHITETTURA.md + README.md — MANCA: agenti/ (roster §A7), kpi/principi/regole/scripts/skills/state, workflow/ (WF §A7). Namespace `agency/a7`.
+  · **A8-Closing:** ✅ ARCHITETTURA.md + README.md — MANCA: agenti/ (roster §A8), kpi/principi/regole/scripts/skills/state, workflow/ (WF §A8). Namespace `agency/a8`.
+  · **A9-Partnership-Referral:** ✅ solo README.md — MANCA: ARCHITETTURA.md + agenti/ + kpi/principi/regole/scripts/skills/state + workflow/. Namespace `agency/a9`.
+  · **A10-QA-Cliente:** ❌ cartella ASSENTE — costruire TUTTO da zero (offset dossier 491 limit 45). Namespace `agency/a10`.
+  Modello: reparti A1-A6 già fatti. Reference: `04-MARKETING/Reparti/L2-6-Conversion-Architecture/`. Dossier `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md` (A7 off=377/38, A8 off=415/38, A9 off=453/38, A10 off=491/45).
+  → completa → gate → 5-bis → CP → **01-AGENCY 10/10 CHIUSO.**
   ⚠️ Scrivo SOLO docs sotto `company/Ecosistemi/01-AGENCY/` — runtime NON si tocca. **GAEL: NON toccare 01-AGENCY.**
-  📌 LEZIONE: un solo swarm Opus per volta (account condiviso) — batch-2 era morto col session-limit mentre Gael swarmava 03.
+  📌 LEZIONE: un solo swarm Opus per volta (account condiviso).
 - 🟢 **STEP 4-heavy CHIUSO (2026-06-18):** Board C-Suite V2 = **7/7 figure complete** in
   `company/Board-CSuite/<FIGURA>/`. CEO+Chief-Forge (CP-20260617-001) · CTO+COO (CP-002) ·
   CMO+CRO (CP-003) · **CFO completato da Max (CP-20260618-001)** — ~70 agenti reali, 5-bis MAXIMILIAN APPROVA.
