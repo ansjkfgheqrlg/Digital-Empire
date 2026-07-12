@@ -42,10 +42,10 @@ Last updated: 2026-06-22
 
 ## Come si misurano
 
-- **Inviati/gg e cap:** letti dai contatori in `agency/02-acquisizione/{canale}/state.json`,
+- **Inviati/gg e cap:** letti dai contatori in `agency/a2/{canale}/state.json`,
   scritti dal sender / operatore canale a ogni run. Il cap residuo è la fonte di verità.
 - **Reply / positive reply rate:** AG-A2-TRIAGE classifica ogni risposta (reply_monitor.py +
-  skill `outreach-reply-triage`) e aggiorna i contatori in `agency/02-acquisizione/reply/`.
+  skill `outreach-reply-triage`) e aggiorna i contatori in `agency/a2/reply/`.
 - **Call prenotate:** AG-A2-BOOK registra ogni slot confermato prima dell'handoff `HC-AG-CL-01`.
 - **Gate Bibbia pass/fail:** AG-A2-QA registra ogni esito (PASS / FAIL + check fallito) nel
   namespace email/canale. Il rapporto pass/totale è il first-pass rate.

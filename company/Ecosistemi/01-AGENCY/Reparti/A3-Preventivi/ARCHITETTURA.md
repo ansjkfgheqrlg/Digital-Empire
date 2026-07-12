@@ -50,7 +50,7 @@ porta un giudizio non delegabile: orchestrazione, scrittura problem-first, gate 
 [A2: call avvenuta + trascrizione] · [A1: dossier pre-call]
          │
          ▼
-AG-A3-COORD — avvia countdown 48h; RECALL agency/03-preventivi + agency/reasoning
+AG-A3-COORD — avvia countdown 48h; RECALL agency/a3 + agency/reasoning
          │
          ▼
 AG-A3-BRIEF — brief (problema, awareness, stack, vincoli ambiente)
@@ -71,7 +71,7 @@ AG-A3-QA — Gate Preventivo (proposal-gate) — BLOCCA se non conforme
    → FAIL: diagnosi per item → rework AG-A3-PROP → re-gate (countdown resta)
          │
          ▼
-record in agency/03-preventivi → AG-A3-FUP (WF-FOLLOWUP-COMMERCIALE)
+record in agency/a3 → AG-A3-FUP (WF-FOLLOWUP-COMMERCIALE)
 ```
 
 ### 2.2 WF-FOLLOWUP-COMMERCIALE — presidio 10gg
@@ -112,11 +112,11 @@ gated e inviata in 48h. Tutto ciò che è prezzo, firma, delivery e relazione vi
 
 ---
 
-## 4. Namespace memoria — `agency/03-preventivi` + `agency/reasoning`
+## 4. Namespace memoria — `agency/a3` + `agency/reasoning`
 
 | Namespace | Contenuto | Owner scrittura |
 |---|---|---|
-| `agency/03-preventivi/` | Ogni preventivo: id, lead, prodotto, esito gate, data invio, stato (inviato/in_followup/win/loss) | AG-A3-COORD |
+| `agency/a3/` | Ogni preventivo: id, lead, prodotto, esito gate, data invio, stato (inviato/in_followup/win/loss) | AG-A3-COORD |
 | `agency/reasoning` | Win/loss con causa, categoria, nicchia; pattern del ReasoningBank | AG-A3-LEARN |
 
 **Regola di integrità:** ogni loss in `agency/reasoning` deve avere il campo `causa` popolato.
@@ -140,7 +140,7 @@ Un loss senza motivo non è un loss chiuso (alimenta WF-LOSS-ANALYSIS con dati i
 
 ## 6. State e ripartibilità
 
-Ogni esecuzione di `WF-PREVENTIVO` produce `agency/03-preventivi/{id}/state.json` con i campi:
+Ogni esecuzione di `WF-PREVENTIVO` produce `agency/a3/{id}/state.json` con i campi:
 - `preventivo_id` · `lead` · `prodotto` · `esito_gate` · `data_invio` · `stato`
 - `last_updated` — timestamp ultimo aggiornamento
 

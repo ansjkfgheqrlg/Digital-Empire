@@ -45,7 +45,7 @@ diventa un'esitazione davanti al cliente.
   "preventivo_id": "PREV-001",
   "call_datetime": "YYYY-MM-DDTHH:MM:SSZ",
   "fonti": {
-    "preventivo": "agency/03-preventivi/PREV-001",
+    "preventivo": "agency/a3/PREV-001",
     "dossier_lead": "agency/a1/dossier/LEAD-001",
     "obiezioni": "output AG-A8-OBJ",
     "script": "output AG-A8-SCRIPT"

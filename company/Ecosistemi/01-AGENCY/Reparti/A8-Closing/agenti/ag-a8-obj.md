@@ -46,7 +46,7 @@ AG-A8-LEARN come gap. Inventare una risposta è un fallimento di gate, non una s
   "icp": "PMI servizi | agenzia | e-commerce | ...",
   "awareness_level": "unaware | problem-aware | solution-aware | product-aware",
   "prodotto": "Outreach Factory | Content Factory | Second Brain | Engine Room",
-  "preventivo_ref": "agency/03-preventivi/PREV-001",
+  "preventivo_ref": "agency/a3/PREV-001",
   "libreria_obiezioni": "output ag-a5-obj (A5)",
   "prove_disponibili": ["case study", "numeri misurati", "clausole", "demo"]
 }

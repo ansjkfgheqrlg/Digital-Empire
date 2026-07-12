@@ -319,7 +319,17 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   + 4 workflow (PROD 3, STRA 1). **Reparti V2: 94 file, 42 agenti, 12 WF.** Gate struct VERDE
   (10/10 template, 0 magri, 0 vuoti), 5-bis MAXIMILIAN APPROVA. Namespace `infobusiness/{prod,lanc,vend,comm,stra}`.
   **GAEL: continua 03-CONTENT-FACTORY R4→R8 (02 è chiuso, non serve più toccarlo).**
-- 🔴 **MAX ATTIVO — 01-AGENCY build CF-grade a BATCH (2026-06-22):** dossier `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md`
+- 🏁 **01-AGENCY CHIUSO — 10/10 reparti (Max, 2026-07-11 — CP-20260711-002).** TERZO ecosistema completo.
+  **182 file · 74 agenti · 28 workflow · 23.635 righe.** Gate VERDE, 5-bis MAXIMILIAN APPROVA.
+  A1-A6 (batch 1-2) + A7-Account-Mgmt, A8-Closing, A9-Partnership-Referral, A10-QA-Cliente (batch 3).
+  A2 wrappa il runtime outreach LIVE (ADR-003, intoccabile). A10 = audit INDIPENDENTE (audita, non costruisce).
+  **2 difetti veri trovati dal gate e chiusi:** (1) namespace divergente (87 occorrenze) → canonico `agency/a<N>`,
+  mappa autoritativa in `company/Ecosistemi/01-AGENCY/NAMESPACE.md`; (2) 6 README v1 stantii (roster inesistente)
+  → riscritti CF-grade. **MAX libero per il prossimo ecosistema.**
+  📌 **RETRO — regole nuove vincolanti:** (a) swarm = **WRITE-EARLY** (struttura inline, letture minime, scrivi
+  file-per-file subito: da 1 file/21 tool_use a 16 file/20); (b) **l'idempotenza va SOSPESA contro i residui v1**
+  (i file v1 vanno SUPERATI esplicitamente, non skippati); (c) un solo swarm Opus per volta (account condiviso).
+- 🗄️ *(storico)* **MAX — 01-AGENCY build a BATCH:** dossier `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md`
   (10 reparti A1-A10, ~75 agenti). Reparti su disco erano vuoti.
   **Batch 1 ✅ CHIUSO (CP-20260622-002): A1+A2+A3** (58 file, 27 ag, 10 WF). A2 wrappa runtime outreach LIVE (ADR-003).
   **Batch 2 ✅ CHIUSO (CP-20260623-001): A4-Delivery + A5-Copywriting + A6-Marketing** (51 file, 21 ag, 9 WF,

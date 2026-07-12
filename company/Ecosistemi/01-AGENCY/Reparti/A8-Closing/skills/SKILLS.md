@@ -23,7 +23,7 @@ Last updated: 2026-07-11
   "input": {
     "lead_id": "LEAD-001",
     "dossier_lead": "agency/a1/dossier/LEAD-001",
-    "preventivo_ref": "agency/03-preventivi/PREV-001",
+    "preventivo_ref": "agency/a3/PREV-001",
     "call_type": "discovery | closing",
     "awareness_level": "unaware | problem-aware | solution-aware | product-aware"
   },

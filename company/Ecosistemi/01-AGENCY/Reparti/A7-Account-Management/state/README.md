@@ -9,7 +9,7 @@ Last updated: 2026-07-11
 # state — Namespace AgentDB `agency/a7`
 
 > Namespace radice del reparto: **`agency/a7`** (alias esteso in `ARCHITETTURA.md §4`:
-> `agency/07-account`). Le due forme indicano lo stesso spazio: `a7` è la chiave AgentDB,
+> `agency/a7`). Le due forme indicano lo stesso spazio: `a7` è la chiave AgentDB,
 > `07-account` la sua etichetta leggibile nel dossier.
 >
 > **Lo state è la memoria del reparto.** Un cliente, una relazione, un rischio esistono solo se

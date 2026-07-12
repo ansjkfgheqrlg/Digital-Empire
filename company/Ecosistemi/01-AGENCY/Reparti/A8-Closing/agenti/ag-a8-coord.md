@@ -49,7 +49,7 @@ promessa senza prova costa il contratto e brucia il posizionamento della holding
   "call_type": "discovery | closing",
   "thread_conversazione": "agency/a2/threads/LEAD-001 (da ag-a2-book)",
   "dossier_lead": "agency/a1/dossier/LEAD-001 (da ag-a1-brief)",
-  "preventivo_ref": "agency/03-preventivi/PREV-001 (da ag-a3-prop)"
+  "preventivo_ref": "agency/a3/PREV-001 (da ag-a3-prop)"
 }
 ```
 

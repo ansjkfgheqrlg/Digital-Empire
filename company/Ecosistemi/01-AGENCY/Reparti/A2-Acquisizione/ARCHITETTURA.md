@@ -97,7 +97,7 @@ parte solo se il check N è PASS. Un FAIL a qualsiasi check blocca l'intero mess
 | 3 | **No dependency-language** | Nessun linguaggio che crea dipendenza dall'agenzia ("non potrete farcela senza di noi"); tono da "agenzia progettata per essere licenziata" | presenza di dependency-language / promesse non provabili |
 
 **Verdetto:** PASS solo se tutti e 3 i check sono PASS. Il gate è binario — niente "quasi".
-L'esito (PASS/FAIL + check fallito + nota) si registra in `agency/02-acquisizione/email/` (o canale corrispondente).
+L'esito (PASS/FAIL + check fallito + nota) si registra in `agency/a2/email/` (o canale corrispondente).
 
 ---
 
@@ -123,22 +123,22 @@ L'esito (PASS/FAIL + check fallito + nota) si registra in `agency/02-acquisizion
   "canale_origine": "email | linkedin | instagram",
   "stato": "call_confermata",
   "slot_confermato": "YYYY-MM-DDTHH:MM",
-  "thread_ref": "agency/02-acquisizione/reply/{thread_id}",
+  "thread_ref": "agency/a2/reply/{thread_id}",
   "anagrafica_aperta": "HC-AG-AM-01 → A7"
 }
 ```
 
 ---
 
-## 5. Namespace memoria — `agency/02-acquisizione/` + `agency/outreach`
+## 5. Namespace memoria — `agency/a2/` + `agency/outreach`
 
 | Namespace | Path AgentDB | Contenuto | Owner scrittura |
 |---|---|---|---|
 | Outreach (cross-canale) | `agency/outreach` | Template attivi, performance per variante, log invii | AG-A2-SEND + AG-A2-WRITE |
-| Email | `agency/02-acquisizione/email/` | Per batch: n. inviati, bounce, esiti gate Bibbia (pass/fail) | AG-A2-SEND |
-| LinkedIn | `agency/02-acquisizione/linkedin/` | Connessioni/messaggi/commenti per giorno, stato accettazioni | AG-A2-LI |
-| Instagram | `agency/02-acquisizione/instagram/` | DM inviati/gg, stato follow-up | AG-A2-IG |
-| Reply | `agency/02-acquisizione/reply/` | Thread per lead, stato triage, esito (PII-scan prima di ogni store) | AG-A2-TRIAGE + AG-A2-BOOK |
+| Email | `agency/a2/email/` | Per batch: n. inviati, bounce, esiti gate Bibbia (pass/fail) | AG-A2-SEND |
+| LinkedIn | `agency/a2/linkedin/` | Connessioni/messaggi/commenti per giorno, stato accettazioni | AG-A2-LI |
+| Instagram | `agency/a2/instagram/` | DM inviati/gg, stato follow-up | AG-A2-IG |
+| Reply | `agency/a2/reply/` | Thread per lead, stato triage, esito (PII-scan prima di ogni store) | AG-A2-TRIAGE + AG-A2-BOOK |
 
 **Regola PII (REGOLE R3):** prima di ogni store nel namespace `reply` si esegue il PII-scan
 (`aidefence_has_pii`). Lo schema di state NON contiene PII (no nomi, no email, no handle in chiaro):

@@ -55,7 +55,7 @@ Coordina i thread tramite `conversation_manager.py` — invoca, non riscrive.
 ```json
 {
   "handoff": "HC-AG-CL-01",
-  "thread_ref": "agency/02-acquisizione/reply/TH-0001",
+  "thread_ref": "agency/a2/reply/TH-0001",
   "canale_origine": "email",
   "slot_confermato": "YYYY-MM-DDTHH:MM",
   "stato": "call_confermata",

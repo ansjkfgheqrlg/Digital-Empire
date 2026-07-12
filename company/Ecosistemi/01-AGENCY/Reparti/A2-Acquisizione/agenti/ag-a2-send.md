@@ -18,7 +18,7 @@ Last updated: 2026-06-22
 **Nome:** `ag-a2-send`
 **Ruolo:** Invia i messaggi email **già passati per il gate Bibbia** e applica il rate limiting.
 Logga ogni invio in `agency/outreach` e aggiorna i contatori di cap in
-`agency/02-acquisizione/email/state.json`. Tier Haiku perché il compito è deterministico:
+`agency/a2/email/state.json`. Tier Haiku perché il compito è deterministico:
 inviare entro i cap e registrare. Wrappa `sender.py` — invoca, non riscrive.
 
 **Cosa NON fa:**

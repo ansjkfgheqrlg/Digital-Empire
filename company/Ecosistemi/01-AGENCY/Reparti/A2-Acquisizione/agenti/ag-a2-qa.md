@@ -97,7 +97,7 @@ punto blocca l'intero messaggio.
 4. **Check 3 — No dependency-language** — (solo se check 2 PASS) scansiona il tono: dependency-language
    o claim non provabili → FAIL.
 5. **Verdetto** — PASS solo se tutti e 3 PASS. Altrimenti FAIL con il check fallito e l'azione richiesta.
-6. **Registro** — scrive l'esito (PASS/FAIL + check fallito) in `agency/02-acquisizione/{canale}/`;
+6. **Registro** — scrive l'esito (PASS/FAIL + check fallito) in `agency/a2/{canale}/`;
    aggiorna `gate_bibbia.fail_per_check`.
 7. **Routing** — PASS → AG-A2-SEND (entro cap). FAIL → AG-A2-WRITE con le note. Mai invio.
 

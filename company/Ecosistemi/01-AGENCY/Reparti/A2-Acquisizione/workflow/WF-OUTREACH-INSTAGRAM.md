@@ -75,7 +75,7 @@ Il workflow avvolge il motore Instagram esistente — non lo riscrive (REGOLE R7
   → follow-up automatico SOLO ai non-risponditori
   → PII-scan (aidefence_has_pii) prima dello store della conversazione
   → risposte → AG-A2-TRIAGE (WF-REPLY-BOOKING)
-  → aggiorna agency/02-acquisizione/instagram/state.json (no PII)
+  → aggiorna agency/a2/instagram/state.json (no PII)
 ```
 
 ---
@@ -114,7 +114,7 @@ Il workflow avvolge il motore Instagram esistente — non lo riscrive (REGOLE R7
 
 ## State
 
-File: `agency/02-acquisizione/instagram/state.json` — contatore DM e cap residuo. Nessuna PII
+File: `agency/a2/instagram/state.json` — contatore DM e cap residuo. Nessuna PII
 nello schema (REGOLE R3). Ripartibilità a freddo dal cap residuo del giorno.
 
 ---

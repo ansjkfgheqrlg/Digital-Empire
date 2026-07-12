@@ -33,7 +33,7 @@ reale (rif. conversazione, esito misurato, case study di A6).
 ## Responsabilità
 
 1. **Raccolta** — riceve da `HC-AG-IN-01` le obiezioni grezze (anonimizzate) raccolte da A2 in
-   `agency/02-acquisizione/reply/`. Le clusterizza per tipo, frequenza, nicchia, canale.
+   `agency/a2/reply/`. Le clusterizza per tipo, frequenza, nicchia, canale.
 2. **Validazione prova** — per ogni risposta candidata, verifica che esista una prova reale:
    un esito misurato, una conversazione reale dove ha funzionato, un case study di A6-Marketing.
    Risposta senza prova → marcata `non_validata`, non utilizzabile.

@@ -49,7 +49,7 @@ non riscrive nessuno script (REGOLE R7).
          ▼
 [STEP 1] AG-A2-COORD — pre-flight + carico batch
   → verifica credenziali (token FB / SMTP). Scaduta → run NON parte, alert.
-  → legge cap residuo del giorno da agency/02-acquisizione/email/state.json
+  → legge cap residuo del giorno da agency/a2/email/state.json
   → carica batch lead qualificati (leads.db, score >= soglia)
   → GATE-0: credenziali ok + cap_residuo > 0 → prosegui
 
@@ -75,7 +75,7 @@ non riscrive nessuno script (REGOLE R7).
   → check 2: CTA corretta (link presentazione) ─ FAIL → STOP, torna a WRITE
   → check 3: no dependency-language            ─ FAIL → STOP, torna a WRITE
   → tutti PASS → autorizza l'invio
-  → registra esito (pass/fail + check) in agency/02-acquisizione/email/
+  → registra esito (pass/fail + check) in agency/a2/email/
 
          │  (solo PASS)
          ▼
@@ -126,7 +126,7 @@ non riscrive nessuno script (REGOLE R7).
 
 ## State
 
-File: `agency/02-acquisizione/email/state.json` — aggiornato a ogni invio (cap residuo, gate
+File: `agency/a2/email/state.json` — aggiornato a ogni invio (cap residuo, gate
 pass/fail). Permette la **ripartibilità a freddo**: una run interrotta riprende dal cap residuo
 del giorno senza risuperare i lead né sforare i cap. Schema completo in `state/README.md`.
 

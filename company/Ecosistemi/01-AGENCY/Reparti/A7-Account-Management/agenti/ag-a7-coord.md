@@ -121,7 +121,7 @@ milestone, su ogni alert di churn e sulla closure 90gg.
 
 ## Chiavi AgentDB — namespace `agency/a7`
 
-> Il namespace radice del reparto è `agency/a7` (alias esteso in ARCHITETTURA: `agency/07-account`).
+> Il namespace radice del reparto è `agency/a7` (alias esteso in ARCHITETTURA: `agency/a7`).
 
 | Chiave | Accesso | Contenuto |
 |---|---|---|

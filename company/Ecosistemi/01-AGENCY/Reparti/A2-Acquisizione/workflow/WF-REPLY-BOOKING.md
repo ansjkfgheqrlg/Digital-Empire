@@ -47,7 +47,7 @@ WF-REPLY-FOLLOWUP del v1 aggiungendo lo step booking strutturato e gli handoff v
   → skill outreach-reply-triage classifica in 4 categorie:
        interessato / obiezione / no / out-of-office
   → PII-scan (aidefence_has_pii) PRIMA dello store
-  → scrive thread in agency/02-acquisizione/reply/ (no PII)
+  → scrive thread in agency/a2/reply/ (no PII)
 
          │
          ▼
@@ -117,7 +117,7 @@ Le risposte nei thread non sono soggette ai cap di prospecting (≤500/gg email,
 ```json
 {
   "handoff": "HC-AG-CL-01",
-  "thread_ref": "agency/02-acquisizione/reply/TH-0001",
+  "thread_ref": "agency/a2/reply/TH-0001",
   "canale_origine": "email",
   "slot_confermato": "YYYY-MM-DDTHH:MM",
   "stato": "call_confermata",
@@ -129,7 +129,7 @@ Le risposte nei thread non sono soggette ai cap di prospecting (≤500/gg email,
 
 ## State
 
-File: `agency/02-acquisizione/reply/{thread_id}.json` — thread per lead, stato triage, follow-up
+File: `agency/a2/reply/{thread_id}.json` — thread per lead, stato triage, follow-up
 inviati, slot, esito. Nessuna PII (REGOLE R3). Ripartibilità a freddo: lo state riflette lo step
 esatto del thread; un agente riprende senza riestrarre la conversazione.
 

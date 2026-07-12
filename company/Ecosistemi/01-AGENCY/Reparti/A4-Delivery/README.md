@@ -1,85 +1,143 @@
-> Fonte: PIANO-MAESTRO/01-ECOSISTEMA-AGENCY.md sez. 2-A4 + sez. 4 + sez. 8
+---
+Type: REPARTO
+Status: Active
+Tags: #reparto #agency #delivery #handover #autonomia #supporto90gg #A4
+Created: 2026-07-11
+Last updated: 2026-07-11
+---
 
-# A4 — OPERATIVITÀ / DELIVERY
+# A4 — Delivery & Implementazione
 
-> Reparto L2 di 01-AGENCY · Coordinatore: `AG-A4-COORD` (opus) · Topologia: `hierarchical` (delivery attiva) + `star` (ticket 90gg)
-> Fonte vincolante: `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY.md` §2-A4
+> **Ecosistema:** 01-AGENCY · **Livello:** L2 Reparto · **Dossier:** `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md §A4`
+> **Standard:** CF-grade (ADR-007) · **Topologia:** `hierarchical` (delivery attiva) + `star` (ticket 90gg)
 
-## Cosa fa
+---
 
-Consegna i 3 prodotti in **≤7 giorni** con il processo reale: discovery tecnica → setup workflow
-sul **server/macchina del cliente** → training → handover del codice. Poi **90 giorni di supporto**.
-Il cliente deve poterci "licenziare": autonomia totale a fine handover.
+## Missione
 
-| Livello | Team | Flusso / Funzione |
-|---|---|---|
-| L3 | `WF-DELIVERY-OUTREACH-FACTORY` | clona la pipeline outreach DE, la parametrizza multi-tenant (brand_kit + icp del cliente), setup sul server cliente, run di test, training, handover |
-| L3 | `WF-DELIVERY-CONTENT-FACTORY` | richiede a 03 CONTENT-FACTORY il motore parametrizzato (`HC-AG-CF-01`), setup, training, handover |
-| L3 | `WF-DELIVERY-SECOND-BRAIN` | richiede a 08 INTELLIGENCE il template second-brain (`HC-IN-AG-01`), setup vault+skill sul sistema cliente, training, handover |
-| L3 | `WF-SUPPORTO-90GG` | intake ticket → triage → fix → log; check proattivo settimanale; chiusura a 90gg con review |
-| L4 | `T-env-setup` | verifica prerequisiti ambiente cliente (raccolti in discovery), installazione, secrets |
-| L4 | `T-config-tenant` | iniezione brand_kit + icp cliente in ogni workflow (pattern #11 multi-tenant) |
-| L4 | `T-uat-runner` | run di accettazione con il cliente, checklist UAT firmabile |
-| L4 | `T-training-kit` | materiale training: video walkthrough, runbook operativo, FAQ |
-| L4 | `T-handover-pack` | pacchetto handover: codice completo, README, credenziali, licenza d'uso |
-| L4 | `T-support-triage` | classificazione ticket 90gg (bug / domanda / fuori scope) |
+Consegnare i prodotti in **≤7 giorni** sul **server del cliente** — discovery tecnica → setup →
+parametrizzazione multi-tenant → training → handover del codice — e poi presidiare **90 giorni
+di supporto** con ticket decrescenti.
 
-Agenti L5: `AG-A4-COORD` · `AG-A4-ENV-W` · `AG-A4-TENANT-W` · `AG-A4-UAT-W` ·
-`AG-A4-TRAIN-W` · `AG-A4-HAND-W` · `AG-A4-SUPP-W` (schede in `../../Agenti/`).
+**Il cliente deve poterci licenziare.** È l'identità di Digital Empire tradotta in gate: se per
+far girare il sistema serve ancora DE, la delivery **non è chiusa**. Zero dipendenza residua è
+una condizione di PASS, non un nice-to-have.
 
-## Come si collega
+A4 possiede l'**ESECUZIONE** dello sprint. A7-Account-Management possiede la **RELAZIONE**
+post-firma. A4 non riscrive i motori esistenti: li clona, li parametrizza e li installa
+(ADR-003 WRAP-not-rewrite).
 
-| Direzione | Con chi | Cosa passa |
-|---|---|---|
-| ← A3 Preventivi | intra-BUS | contratto firmato + scope congelato + prerequisiti ambiente raccolti in call |
-| → A6 Marketing-interno | intra-BUS | segnale "delivery chiusa" → raccolta testimonianza + case study |
-| → 03 CONTENT-FACTORY | `HC-AG-CF-01` | richiesta motore CF parametrizzato per il cliente |
-| → 08 INTELLIGENCE | `HC-IN-AG-01` | richiesta template second-brain per il cliente |
-| ← 09 OPERATIONS | `HC-OP-AG-01` | scheduling check settimanali 90gg, backup ambienti |
-| Memoria | `agency/clients` · `agency/delivery` | brand_kit/icp per tenant; checklist UAT, ticket 90gg |
+---
 
-Skill operative: `delivery-playbook` (runbook 7gg per ciascuno dei 3 prodotti), `client-handover`
-(genera pacchetto handover), `support-90` (gestione SLA ticket 90gg).
+## Roster del reparto (9 agenti)
 
-## Come si ATTIVA e RAGIONA
+| ID | Agente | File | Tipo | Tier | Ruolo |
+|---|---|---|---|---|---|
+| `AG-A4-COORD` | Coordinatore Delivery | `agenti/ag-a4-coord.md` | coordinator | opus | Valida l'handoff, pianifica G+0→G+7, decide il rollback day-1 |
+| `AG-A4-ENV` | Environment Setup | `agenti/ag-a4-env.md` | worker | sonnet | Verifica ambiente cliente (OS, Python, permessi, rete); install; secrets |
+| `AG-A4-TENANT` | Config Multi-Tenant | `agenti/ag-a4-tenant.md` | worker | sonnet | Inietta `brand_kit` + `icp` del cliente in ogni workflow (pattern 11) |
+| `AG-A4-UAT` | UAT Runner | `agenti/ag-a4-uat.md` | worker | sonnet | Run di accettazione; checklist UAT firmabile; run autonoma del cliente |
+| `AG-A4-TRAIN` | Training Kit | `agenti/ag-a4-train.md` | worker | sonnet | Video walkthrough, runbook operativo, FAQ + sessione (skill `delivery-playbook`) |
+| `AG-A4-HAND` | Handover Pack | `agenti/ag-a4-hand.md` | worker | sonnet | Codice, README, credenziali, licenza d'uso (skill `client-handover`) |
+| `AG-A4-SUPP` | Supporto 90gg | `agenti/ag-a4-supp.md` | worker | haiku | Triage ticket, SLA, check proattivo settimanale (skill `support-90`) |
+| `AG-A4-LEARN` | Pattern Learner | `agenti/ag-a4-learn.md` | worker | sonnet | Distilla ambienti critici ed errori ricorrenti → `agency/reasoning` |
+| `AG-A4-QA` | Gate Delivery | `agenti/ag-a4-qa.md` | verifier | sonnet | **Bloccante**: autonomia cliente, zero dipendenza residua |
 
-**Trigger.**
-1. Contratto firmato + pagamento verificato → A3 apre handoff ad A4 con scope congelato.
-2. Ticket in ingresso durante i 90gg → `WF-SUPPORTO-90GG` si attiva.
-3. Check settimanale proattivo pianificato da 09 OPERATIONS.
+---
 
-**Decomposizione.** `AG-A4-COORD` (opus) pianifica la delivery in giorni:
-- Giorno 1: `T-env-setup` verifica ambiente cliente (OS, permessi, Python, secrets) — il countdown
-  7gg parte SOLO ad ambiente conforme (protezione commerciale esplicita nel contratto).
-- Giorni 2-5: `T-config-tenant` injetta brand_kit + icp → run di test sullo stack parametrizzato.
-- Giorno 6: `T-training-kit` consegna materiale; sessione training con il cliente.
-- Giorno 7: `T-uat-runner` run UAT con il cliente; Gate Delivery → firma UAT.
-- Stesso giorno: `T-handover-pack` consegna codice completo + README + credenziali + licenza.
+## Workflow del reparto (4 workflow CF-grade)
 
-**Gate Delivery (bloccante):** workflow funzionante SUL SERVER DEL CLIENTE (non solo in locale);
-run di test reale passata; training erogato e materiale consegnato; UAT firmata dal cliente;
-zero dipendenze residue da DE (il cliente deve saper eseguire una run da solo in UAT).
+| ID | File | Scopo | Gate di uscita |
+|---|---|---|---|
+| **WF-DELIVERY-OUTREACH-FACTORY** | `workflow/WF-DELIVERY-OUTREACH-FACTORY.md` | Clona la pipeline outreach DE, la parametrizza multi-tenant, la installa sul server cliente | AG-A4-QA: Gate Delivery PASS (autonomia verificata) |
+| **WF-DELIVERY-CONTENT-FACTORY** | `workflow/WF-DELIVERY-CONTENT-FACTORY.md` | Richiede il motore CF parametrizzato (`HC-AG-CF-01`), setup, training, handover | AG-A4-QA: Gate Delivery PASS |
+| **WF-DELIVERY-SECOND-BRAIN** | `workflow/WF-DELIVERY-SECOND-BRAIN.md` | Richiede il template second-brain (`HC-IN-AG-01`), configura vault + skill sul sistema cliente | AG-A4-QA: Gate Delivery PASS |
+| **WF-SUPPORTO-90GG** | `workflow/WF-SUPPORTO-90GG.md` | Intake ticket → triage (bug / domanda / fuori scope) → fix → log; check settimanale | AG-A4-QA: nessun ticket chiuso senza conferma del cliente |
 
-**Failure.**
-- Ambiente non conforme a Giorno 1 → il countdown NON parte; alert a Max; runbook di
-  requisiti inviato al cliente (la promise "7gg" è protetta contrattualmente).
-- Run di test fallisce → debug in dry-run prima di ogni retry (pattern #3); se ambiente
-  client ha incompatibilità → T-env-setup apre issue con path di risoluzione.
-- Ticket 90gg fuori scope → risposta standard + proposta estensione a pagamento separato.
-- NPS basso a fine 90gg → pattern distillato in `agency/reasoning`; se ripetuto → audit A4.
+---
 
-## KPI
+## Gate del reparto — Gate Delivery
 
-| KPI | Target |
+**Presidio: AG-A4-QA. Bloccante — nessun handover si chiude senza gate verde.**
+Sopra di esso agisce **A10-QA-Cliente**, gate indipendente che riporta ad AG-DIR (`HC-AG-QC-01`).
+
+| Check | Condizione PASS |
 |---|---|
-| Giorni delivery | ≤7 dall'ambiente conforme |
-| UAT pass al primo giro | % — baseline dal primo delivery |
-| Ticket risolti in SLA | % entro SLA definito nel contratto |
-| NPS fine 90gg | misurato, non inventato |
+| Gira sul server del cliente | Workflow funzionante sul server cliente, **non** in locale/staging DE |
+| Run reale passata | Almeno 1 run reale completata sullo stack parametrizzato |
+| Training erogato | Materiale consegnato + sessione fatta |
+| UAT firmata | Checklist UAT firmata dal cliente |
+| Autonomia verificata | Il cliente ha eseguito **1 run da solo** in UAT |
+| Zero dipendenza residua | Nessuna credenziale DE, nessun nodo DE nel runtime cliente |
+
+**Countdown 7gg:** parte **SOLO ad ambiente conforme**. Ambiente non conforme a G+0 → rollback
+day-1: il countdown non parte, runbook requisiti al cliente, alert a Max (la promessa dei 7gg
+è protetta contrattualmente).
+
+---
+
+## KPI del reparto
+
+| KPI | Owner | Definizione | Baseline |
+|---|---|---|---|
+| Giorni delivery | AG-A4-COORD | Giorni da ambiente conforme a handover chiuso | Target ≤7 |
+| UAT pass al primo giro | AG-A4-UAT | Delivery con UAT firmata senza rework / tot | [DM] |
+| Ticket risolti in SLA | AG-A4-SUPP | Ticket entro SLA contrattuale / tot (bug ≤24h · domanda ≤48h) | [DM] |
+| Run autonoma del cliente | AG-A4-QA | Delivery con run autonoma eseguita in UAT / tot | Target 100% |
+| Gate bypass rate | AG-A4-QA | Handover chiusi senza Gate Delivery PASS / tot | Target 0 |
+
+Dettaglio completo → `kpi/KPI.md`.
+
+---
+
+## Handoff e connessioni inter-reparto
+
+| Direzione | Reparto/Ecosistema | Cosa transita |
+|---|---|---|
+| ← riceve da | A3-Preventivi | Scope congelato + prerequisiti d'ambiente raccolti in call |
+| ← riceve da | A8-Closing (WIN) | Contratto firmato + scope per l'onboarding |
+| ← riceve da | 09-OPERATIONS | Scheduling dei check settimanali 90gg, backup ambienti |
+| ← riceve da | A10-QA-Cliente | `HC-QC-AG-01` — verdetto PASS/FAIL indipendente + lista difetti |
+| → consegna a | A10-QA-Cliente | `HC-AG-QC-01` — richiesta review indipendente della delivery a G+7 |
+| → consegna a | A7-Account-Management | Cliente live + SLA ticket + artefatti milestone |
+| → consegna a | A6-Marketing-Interno | Segnale "delivery chiusa" → testimonianza + case study |
+| → consegna a | 03-CONTENT-FACTORY | `HC-AG-CF-01` — richiesta motore CF parametrizzato per il cliente |
+| → consegna a | 08-INTELLIGENCE | `HC-IN-AG-01` — richiesta template second-brain per il cliente |
+
+---
+
+## Namespace AgentDB
+
+**Chiave canonica: `agency/a4`** — fonte di verità: `../../NAMESPACE.md`.
+
+| Namespace | Contenuto | Owner scrittura |
+|---|---|---|
+| `agency/a4/delivery` | Delivery attive/chiuse: piano G+0→G+7, stato per step, esito Gate | AG-A4-COORD |
+| `agency/a4/uat` | Checklist UAT firmabili/firmate; esito run autonoma del cliente | AG-A4-UAT |
+| `agency/a4/environments` | Profili ambiente cliente: OS, Python, permessi, rete, conformità | AG-A4-ENV |
+| `agency/a4/support` | Ticket 90gg: classe, SLA, stato, conferma cliente, check settimanali | AG-A4-SUPP |
+| `agency/a4/reasoning` | Pattern delivery distillati: ambienti critici, errori ricorrenti | AG-A4-LEARN |
+
+**Regola di integrità:** nessuna delivery può essere in stato `handover_completo` senza
+`gate_delivery: "PASS"`. **Nessun segreto cliente nello state**: i secrets vivono sul server
+del cliente, mai nel namespace DE.
+
+---
+
+## Principi e regole
+
+- Principi operativi → `principi/PRINCIPI.md`
+- Regole non negoziabili → `regole/REGOLE.md`
+- Stato e ripartibilità a freddo → `state/README.md`
+
+---
 
 ## Connessioni
 
-- [`../../Workflow/WF-DELIVERY-OUTREACH-FACTORY/`](../../Workflow/WF-DELIVERY-OUTREACH-FACTORY/) · [`WF-DELIVERY-CONTENT-FACTORY/`](../../Workflow/WF-DELIVERY-CONTENT-FACTORY/) · [`WF-DELIVERY-SECOND-BRAIN/`](../../Workflow/WF-DELIVERY-SECOND-BRAIN/)
-- [`../../Funzioni/T-env-setup/`](../../Funzioni/T-env-setup/) · [`T-uat-runner/`](../../Funzioni/T-uat-runner/) · [`T-handover-pack/`](../../Funzioni/T-handover-pack/)
-- [`../A3-Preventivi/`](../A3-Preventivi/) (fornitore contratto) · [`../A6-Marketing-Interno/`](../A6-Marketing-Interno/) (case study)
-- [`../../BACKBONE.md`](../../BACKBONE.md) · [`../../ECOSISTEMA.md`](../../ECOSISTEMA.md)
+- [[ARCHITETTURA]] · `ARCHITETTURA.md` — gerarchia, flussi G+0→G+7, Gate Delivery, namespace
+- [[01-ECOSISTEMA-AGENCY-V2]] · `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md §A4`
+- [[ag-a4-qa]] · `agenti/ag-a4-qa.md` — presidio del Gate Delivery
+- [[WF-DELIVERY-OUTREACH-FACTORY]] · `workflow/WF-DELIVERY-OUTREACH-FACTORY.md`
+- [[WF-SUPPORTO-90GG]] · `workflow/WF-SUPPORTO-90GG.md`
+- [[A10-QA-Cliente]] · gate indipendente sopra il Gate Delivery
+- [[A7-Account-Management]] · possiede la relazione post-firma

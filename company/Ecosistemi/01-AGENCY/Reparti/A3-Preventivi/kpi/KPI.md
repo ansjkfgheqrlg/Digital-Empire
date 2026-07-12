@@ -40,9 +40,9 @@ Last updated: 2026-06-22
 
 ## Come si misurano
 
-- **Tempo call→preventivo:** da `agency/03-preventivi/{id}` — differenza tra `data_invio` e timestamp
+- **Tempo call→preventivo:** da `agency/a3/{id}` — differenza tra `data_invio` e timestamp
   disponibilità trascrizione. Calcolo automatico o manuale da AG-A3-COORD.
-- **Win rate e valore medio:** da `agency/03-preventivi/` — conteggio esiti `win` / `inviato` e media
+- **Win rate e valore medio:** da `agency/a3/` — conteggio esiti `win` / `inviato` e media
   del campo `prezzo` (sempre a catalogo).
 - **Gate KPI:** AG-A3-QA registra ogni esito gate (PASS/FAIL) nel `state.json` del preventivo.
 - **Loss KPI:** da `agency/reasoning` — ogni record di loss ha il campo `causa`; WF-LOSS-ANALYSIS

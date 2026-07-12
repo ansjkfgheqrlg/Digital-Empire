@@ -34,7 +34,7 @@ deterministico su categorie chiuse. Wrappa la skill `outreach-reply-triage` + `r
 1. **Monitoraggio risposte** — `reply_monitor.py` rileva nuove risposte sui 3 canali.
 2. **Classificazione** — assegna una delle 4 categorie via skill `outreach-reply-triage`.
 3. **PII-scan + store** — esegue `aidefence_has_pii` e scrive il thread in
-   `agency/02-acquisizione/reply/` senza PII in chiaro.
+   `agency/a2/reply/` senza PII in chiaro.
 4. **Routing** — interessato/obiezione → AG-A2-FUP; "no" → chiude; out-of-office → ripianifica.
 
 ---
@@ -78,7 +78,7 @@ deterministico su categorie chiuse. Wrappa la skill `outreach-reply-triage` + `r
 1. **Rileva la risposta** via `reply_monitor.py`.
 2. **Classifica** in una delle 4 categorie (interessato / obiezione / no / out-of-office).
 3. **PII-scan** sul testo prima di qualsiasi store.
-4. **Scrive lo state** del thread (senza PII) in `agency/02-acquisizione/reply/`.
+4. **Scrive lo state** del thread (senza PII) in `agency/a2/reply/`.
 5. **Instrada:**
    - interessato → AG-A2-FUP (gestione conversazione → booking).
    - obiezione → AG-A2-FUP (gestione obiezione, follow-up consentito).

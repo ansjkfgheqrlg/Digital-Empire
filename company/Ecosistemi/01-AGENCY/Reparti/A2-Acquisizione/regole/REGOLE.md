@@ -43,7 +43,7 @@ Una modifica ai cap richiede dati + ADR, mai una decisione di run.
 ## R3 — PII-scan prima di ogni store; nessuna PII nello schema di state
 
 Ogni thread di risposta passa il PII-scan (`aidefence_has_pii`) prima di essere scritto in
-`agency/02-acquisizione/reply/`. Lo schema di state del reparto contiene solo riferimenti
+`agency/a2/reply/`. Lo schema di state del reparto contiene solo riferimenti
 interni e contatori: nessun nome, email, handle, numero di telefono in chiaro.
 
 **Perché esiste:** lo state è versionato e condiviso; PII in chiaro è un rischio legale e

@@ -1,87 +1,140 @@
-# A2 — ACQUISIZIONE / OUTREACH
+---
+Type: REPARTO
+Status: Active
+Tags: #reparto #agency #acquisizione #outreach #apsoc #bibbia #A2
+Created: 2026-07-11
+Last updated: 2026-07-11
+---
 
-> Reparto L2 di 01-AGENCY · Coordinatore: `AG-A2-COORD` (sonnet — oggi `orchestrator.py`)
-> Topologia: `pipeline` (strategist→writer→bibbia→sender) + `star` per i 3 canali
-> Fonte vincolante: `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY.md` §2-A2 · ⚠️ **ADR-003: runtime ATTIVO, si wrappa, non si riscrive**
+# A2 — Acquisizione / Outreach
 
-## Cosa fa
+> **Ecosistema:** 01-AGENCY · **Livello:** L2 Reparto · **Dossier:** `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md §A2`
+> **Standard:** CF-grade (ADR-007) · **Topologia:** `star` sui 3 canali, `pipeline` dentro ogni canale
+> ⚠️ **ADR-003: il runtime è ATTIVO in produzione — si WRAPPA, non si riscrive.**
 
-Converte lead qualificati in **discovery call prenotate**, su 3 canali, dentro i cap reali.
-CTA standard di ogni canale: **presentazione-empire.vercel.app**.
+---
 
-| Livello | Team | Flusso / Funzione |
+## Missione
+
+Convertire i lead qualificati di A1 in **discovery call prenotate**, su 3 canali (email,
+LinkedIn, Instagram), restando dentro i cap reali di piattaforma. CTA standard di ogni
+canale: `presentazione-empire.vercel.app`.
+
+A2 non possiede il codice di outreach: il motore vive in `Outreach/Outreach Workflow/`,
+`Outreach/LinkedIn Automation/`, `Outreach/Instagram Automation/`. Il reparto lo registra
+nell'organigramma, ne definisce i contratti di handoff e aggiunge il layer CF-grade —
+**Gate Bibbia formalizzato**, KPI, namespace memoria, state ripartibile.
+
+---
+
+## Roster del reparto (10 agenti)
+
+| ID | Agente | File | Tipo | Tier | Ruolo |
+|---|---|---|---|---|---|
+| `AG-A2-COORD` | Coordinatore Outreach | `agenti/ag-a2-coord.md` | coordinator | sonnet | Apre la run, pre-flight credenziali, carica il batch, fan-out sui canali [WRAPPA `orchestrator.py`] |
+| `AG-A2-STRAT` | Stratega d'Angolo | `agenti/ag-a2-strat.md` | worker | sonnet | Definisce l'angolo APSOC per lead [WRAPPA `strategist.py`, `insight.py`] |
+| `AG-A2-WRITE` | Copywriter APSOC | `agenti/ag-a2-write.md` | worker | sonnet | Scrive il messaggio APSOC + variazione [WRAPPA `writer.py`, `humanizer.py`] |
+| `AG-A2-FUP` | Follow-up Writer | `agenti/ag-a2-fup.md` | worker | sonnet | Sequenze follow-up multi-touch [WRAPPA `followup_writer.py`] |
+| `AG-A2-QA` | Gate Bibbia (3 check) | `agenti/ag-a2-qa.md` | verifier | sonnet | **Bloccante pre-invio**: APSOC · CTA · no dependency-language [WRAPPA `bibbia_team.py`] |
+| `AG-A2-SEND` | Sender Email | `agenti/ag-a2-send.md` | worker | haiku | Invio + rate limiter + log [WRAPPA `sender.py`] |
+| `AG-A2-LI` | Operatore LinkedIn | `agenti/ag-a2-li.md` | worker | haiku | Connessioni + messaggi + commenti [WRAPPA scripts 01→05, `comment_posts.py`] |
+| `AG-A2-IG` | Operatore Instagram | `agenti/ag-a2-ig.md` | worker | haiku | DM Instagram + follow-up 2 step [WRAPPA Instagram DM flow] |
+| `AG-A2-TRIAGE` | Triage Risposte | `agenti/ag-a2-triage.md` | worker | haiku | Classifica la risposta: interessato / obiezione / no / OOO [skill `outreach-reply-triage`] |
+| `AG-A2-BOOK` | Booking Call | `agenti/ag-a2-book.md` | worker | sonnet | Interessato → slot call → conferma → handoff ad A8-Closing |
+
+---
+
+## Workflow del reparto (4 workflow CF-grade)
+
+| ID | File | Scopo | Gate di uscita |
+|---|---|---|---|
+| **WF-OUTREACH-EMAIL** | `workflow/WF-OUTREACH-EMAIL.md` | Pipeline email: STRAT → WRITE → Gate Bibbia → SEND, dentro i cap di deliverability | AG-A2-QA: 3/3 check Bibbia PASS prima dell'invio |
+| **WF-OUTREACH-LINKEDIN** | `workflow/WF-OUTREACH-LINKEDIN.md` | Engagement LinkedIn: connessioni + messaggi + commenti entro i cap giornalieri | AG-A2-QA: gate Bibbia sui messaggi; cap giornalieri non sforati |
+| **WF-OUTREACH-INSTAGRAM** | `workflow/WF-OUTREACH-INSTAGRAM.md` | DM Instagram con pattern 2 messaggi (corpo + link) e follow-up | AG-A2-QA: gate Bibbia sul DM; cap giornaliero non sforato |
+| **WF-REPLY-BOOKING** | `workflow/WF-REPLY-BOOKING.md` | Event-driven: risposta in ingresso → triage → conversazione → call prenotata | AG-A2-QA: PII-scan prima dello store; call confermata con slot |
+
+Entrypoint operativi (skill installate): `/avvia-email` · `/avvia-linkedin` · `/avvia-ig` ·
+`/avvia-parallel`. Mappatura completa motore ↔ agente → `scripts/README.md`.
+
+---
+
+## Gate del reparto — Gate Bibbia
+
+**Presidio: AG-A2-QA. Bloccante e binario — niente "quasi".** I 3 check sono **sequenziali**:
+il check N+1 parte solo se il check N è PASS.
+
+| # | Check | FAIL se |
 |---|---|---|
-| L3 | `WF-OUTREACH-EMAIL` | **ESISTENTE, NON SI TOCCA**: scraper → qualifier → strategist → writer (APSOC) → **Bibbia 3-checker QA** → sender. Fino a 500/gg, cap 100/h |
-| L3 | `WF-OUTREACH-LINKEDIN` | 20 connessioni + 20 messaggi + 30 commenti/gg (script 01→05 + comment_posts.py) |
-| L3 | `WF-OUTREACH-INSTAGRAM` | 30 DM/gg, pattern 2 messaggi (corpo + link), follow-up |
-| L3 | `WF-REPLY-FOLLOWUP` | reply_monitor → triage risposta → conversation_manager → follow-up (followup_writer) → booking call |
-| L4 | `T-strategist` | angolo di attacco per lead (strategist.py, insight.py) |
-| L4 | `T-writer-apsoc` | scrittura messaggio (writer.py, humanizer.py, copy_knowledge.py) |
-| L4 | `T-bibbia-qa` | gate qualità 3-checker pre-invio (bibbia_team.py) — **BLOCCA, non suggerisce** |
-| L4 | `T-sender` | invio + rate limiting + log (sender.py) |
-| L4 | `T-reply-triage` | classificazione risposte: interessato / obiezione / no / out-of-office |
-| L4 | `T-followup` | sequenze follow-up multi-touch (run_followup.py, skill `cold-email`) |
-| L4 | `T-li-engage` | commenti + connessioni LinkedIn |
-| L4 | `T-ig-dm` | DM Instagram + follow-up 2 step |
+| 1 | **Struttura APSOC** | Manca una sezione APSOC, oppure la Soluzione compare prima del Problema |
+| 2 | **CTA corretta** | CTA assente, link diverso da `presentazione-empire.vercel.app`, doppia CTA confusa |
+| 3 | **No dependency-language** | Linguaggio che crea dipendenza dall'agenzia, o promesse non provabili |
 
-Agenti L5: `AG-A2-COORD` · `AG-A2-STRAT-W` · `AG-A2-WRITE-W` · `AG-A2-BIBBIA-C1/C2/C3` ·
-`AG-A2-SEND-W` · `AG-A2-TRIAGE-W` · `AG-A2-FUP-W` · `AG-A2-LI-W` · `AG-A2-IG-W`.
+Un solo check FAIL → **il messaggio NON parte**: torna ad AG-A2-WRITE con le note del checker.
+Se il gate boccia in serie lo stesso template → template ritirato e refresh richiesto ad A5.
 
-## Come si collega
-
-| Direzione | Con chi | Cosa passa |
-|---|---|---|
-| ← A1 Ricerca | intra-BUS | lead qualificati da `leads.db` (score ≥ soglia) |
-| → A3 Preventivi | intra-BUS | call prenotata + thread conversazione (contesto per il brief) |
-| → A5 Copy-interno | intra-BUS | dati reply reali per il refresh template (`WF-COPY-OUTREACH`) |
-| → 08 INTELLIGENCE | `HC-AG-IN-01` | obiezioni reali, motivi rifiuto, domande ricorrenti (anonimizzati) |
-| ← 04 MARKETING | `HC-MK-AG-01` | refresh template maggiori (passati da Copy/APSOC Guild + Bibbia) |
-| ← 09 OPERATIONS | `HC-OP-AG-01` | scheduling run giornaliere, cost guard, pre-flight credenziali |
-| Memoria | `agency/outreach` + `agency/conversations` | template/performance · thread (PII-scan prima dello store) |
-
-Entrypoint operativi (skill installate): `avvia-email`, `avvia-linkedin`, `avvia-ig`,
-`avvia-parallel`, `avvia-scraper`. Knowledge layer: skill `cold-email`, `agency-scalping`,
-`outreach-reply-triage` (riusabile anche dai clienti Outreach Factory — pattern #11).
-
-## 🧠 Come si ATTIVA e RAGIONA
-
-**Trigger.**
-1. Run giornaliera schedulata (email/LI/IG) via 09 OPERATIONS — è il battito cardiaco del reparto.
-2. Risposta in ingresso → `WF-REPLY-FOLLOWUP` si attiva in tempo reale (reply_monitor).
-3. Template in calo (reply rate sotto baseline 2 cicli) → richiesta refresh ad A5/04-MARKETING.
-
-**Decomposizione.** `AG-A2-COORD` (orchestrator.py) apre la run: pre-flight credenziali
-(token FB, sessione LinkedIn) → carica batch lead da `leads.db` → fan-out `star` sui 3 canali,
-ciascuno internamente `pipeline`: strategist (angolo) → writer (APSOC) → Bibbia (gate) → sender.
-
-**Esecuzione.** Cap NON negoziabili: email ≤500/gg con cap 100/h · LinkedIn 20 connessioni +
-20 messaggi + 30 commenti/gg · Instagram 30 DM/gg. Il sender applica rate limiting e logga ogni
-invio. Ogni messaggio passa il Gate Bibbia PRIMA dell'invio: un solo checker boccia → il
-messaggio NON parte, torna al writer con note. Dry-run disponibile su ogni canale
-(anteprima messaggi + stima volumi senza invio).
-
-**Handoff.** Risposta "interessato" → conversation_manager gestisce il thread fino alla call
-prenotata → handoff ad A3 con storico completo. Lead "non ora/budget basso" → `HC-AG-IB-01`
-verso 02 INFO-BUSINESS. Obiezioni ricorrenti → `HC-AG-IN-01` verso 08.
-
-**Failure.**
-- Bounce/error rate in salita → Sentinel Quality osserva; pattern di bounce distillato in `agency/reasoning`.
-- Credenziale scaduta in pre-flight → run del canale NON parte, alert su dashboard, runbook rinnovo.
-- Gate Bibbia boccia in serie lo stesso template → template ritirato, richiesta refresh ad A5.
-- MAI rispondere a un "no" (regola triage); 2 reject handoff consecutivi → escalation a AG-DIR.
+---
 
 ## KPI e cap reali
 
-| KPI | Cap/vincolo reale |
-|---|---|
-| Inviati/gg per canale | email ≤500/gg cap 100/h · LI 20+20+30/gg · IG 30 DM/gg |
-| Reply rate · positive reply rate | baseline dal giorno 1, mai inventata |
-| Call prenotate/settimana | output finale del reparto |
+| KPI / vincolo | Owner | Valore |
+|---|---|---|
+| Cap email | AG-A2-SEND | ≤500/gg, cap 100/h — **non negoziabile** |
+| Cap LinkedIn | AG-A2-LI | 20 connessioni + 20 messaggi + 30 commenti/gg |
+| Cap Instagram | AG-A2-IG | 30 DM/gg |
+| Reply rate · positive reply rate | AG-A2-COORD | [DM] — baseline dal giorno 1, mai inventata |
+| Call prenotate/settimana | AG-A2-BOOK | [DM] — output finale del reparto |
+| Gate Bibbia bypass rate | AG-A2-QA | Target 0 |
 
-I cap non si alzano senza dati (OUT OF SCOPE del dossier §0): proteggono deliverability e account.
+I cap non si alzano senza dati: proteggono deliverability e account. Dettaglio → `kpi/KPI.md`.
+
+---
+
+## Handoff e connessioni inter-reparto
+
+| Direzione | Reparto/Ecosistema | Cosa transita |
+|---|---|---|
+| ← riceve da | A1-Ricerca | Batch di lead qualificati da `leads.db` (score ≥ soglia) |
+| ← riceve da | 09-OPERATIONS | Scheduling run giornaliere, cost guard, pre-flight credenziali |
+| ← riceve da | A5-Copywriting-Interno | Template rinfrescati (già passati dal Gate Bibbia) |
+| → consegna a | A8-Closing | `HC-AG-CL-01` — call confermata + slot + thread di conversazione |
+| → consegna a | A7-Account-Management | `HC-AG-AM-01` — apertura anagrafica cliente |
+| → consegna a | A5-Copywriting-Interno | Dati di reply reali per il refresh dei template |
+| → consegna a | 08-INTELLIGENCE | Obiezioni reali, motivi di rifiuto, domande ricorrenti (anonimizzati) |
+| → consegna a | 02-INFO-BUSINESS | Lead "non ora / budget basso" per nurturing |
+
+---
+
+## Namespace AgentDB
+
+**Chiave canonica: `agency/a2`** (+ `agency/outreach` cross-canale) — fonte di verità: `../../NAMESPACE.md`.
+
+| Namespace | Contenuto | Owner scrittura |
+|---|---|---|
+| `agency/outreach` | Template attivi, performance per variante, log invii | AG-A2-WRITE, AG-A2-SEND |
+| `agency/a2/email` | Per batch: n. inviati, bounce, esiti gate Bibbia | AG-A2-SEND |
+| `agency/a2/linkedin` | Connessioni/messaggi/commenti per giorno, accettazioni | AG-A2-LI |
+| `agency/a2/instagram` | DM inviati/gg, stato follow-up | AG-A2-IG |
+| `agency/a2/reply` | Thread per lead, stato triage, esito | AG-A2-TRIAGE, AG-A2-BOOK |
+
+**Regola PII:** PII-scan (`aidefence_has_pii`) prima di ogni store nel namespace `reply`.
+Lo schema di state non contiene PII: solo riferimenti interni e contatori.
+
+---
+
+## Principi e regole
+
+- Principi operativi → `principi/PRINCIPI.md`
+- Regole non negoziabili → `regole/REGOLE.md` (R1 gate bloccante · R3 PII-scan)
+- Stato e ripartibilità a freddo (cap residuo del giorno) → `state/README.md`
+
+---
 
 ## Connessioni
 
-- `../../Workflow/WF-OUTREACH-EMAIL/` · `WF-OUTREACH-LINKEDIN/` · `WF-OUTREACH-INSTAGRAM/` · `WF-REPLY-FOLLOWUP/`
-- `../../Funzioni/T-strategist/` · `T-writer-apsoc/` · `T-bibbia-qa/` · `T-sender/` · `T-reply-triage/` · `T-followup/`
-- `../A1-Ricerca/` (fornitore lead) · `../A3-Preventivi/` (cliente interno) · `../A5-Copywriting-Interno/` (refresh template)
+- [[ARCHITETTURA]] · `ARCHITETTURA.md` — gerarchia, pipeline, Gate Bibbia, namespace
+- [[01-ECOSISTEMA-AGENCY-V2]] · `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md §A2`
+- [[ag-a2-qa]] · `agenti/ag-a2-qa.md` — presidio del Gate Bibbia
+- [[WF-OUTREACH-EMAIL]] · `workflow/WF-OUTREACH-EMAIL.md`
+- [[WF-REPLY-BOOKING]] · `workflow/WF-REPLY-BOOKING.md`
+- [[A1-Ricerca]] · fornitore dei lead qualificati
+- [[A8-Closing]] · destinatario della call confermata
