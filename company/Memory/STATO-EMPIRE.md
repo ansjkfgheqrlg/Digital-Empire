@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-07-09 (Max — Empire Studio cat1-copywriting)
+# STATO EMPIRE -- aggiornato 2026-07-11 (Max — Empire Studio cat1-copywriting video 9/29)
 
 ## 🛑 DIRETTIVE MAX ASSOLUTE (2026-07-03 — valgono sempre, leggere per prime)
 1. **Ordini su Gael = assoluti.** Ogni compito che Max assegna a Gael (o direttiva su di lui) è LEGGE, non preferenza.
@@ -17,8 +17,16 @@
    Gael: se testi PreventivoForge e trovi un errore, registralo lì. Prendi sempre l'ULTIMA build (git pull / zip rigenerato).
 
 
+## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 9/29 COMPLETATO (2026-07-11, CP-20260711-001)
+**RIPRESA DA: video 10/29 — `Ahp_6rHSOsU` ("Usa Google Docs come un copywriter PRO") — Stage 1+2 DONE (668s=11m08s, 334 frame 3-digit, 9 capitoli)**
+Pipeline completata per IWCHN_mE2Vo: Stage 1-5 + Stage 7 + Memory Empire C-H. 25 KA P12-traced. 2 wiki pages create. 12 VP schermo documentati. Live 1h02min — Meta Ads Library tutorial + analisi ads brand italiani (Carisma Shoes, La Palestra boxing, melone costume, Corte CAB VANIGLIA).
+- **Top KA**: Meta Ads Library "licenziato e fallire se non usi" · Video=conversione/Photo=retargeting · EU Transparency Reach 1770 Women 30-55 · Imprenditori italiani pieni di soldi · Chiarezza>Creativita "grande danno video incomprensibile"
+- **Visual Passages**: VP-002 Ad Library Latvia homepage · VP-004 filter stack 98 results Laurea Online · VP-006 EU Transparency Women 30-55 excl. Toscana+Veneto · VP-011 costume regale supermercato · VP-012 Corte CAB VANIGLIA
+- **Nuovi Concetti**: Source_Andrei_Pascu_Ads_Library_Live.md + Concept_Meta_Ads_Library_Competitor_Research.md
+- **WATCH-001**: N_video=9, N_MemoryEmpire=9 → MATCH ✅
+
 ## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 8/29 COMPLETATO (2026-07-09, CP-20260709-008)
-**RIPRESA DA: video 9/29 — `IWCHN_mE2Vo` ("Copywriter Analizza Copywriting (Live) [ITA]") — Stage 1 avviato in background**
+**COMPLETATO — vedi dettagli sotto**
 Pipeline completata per lQMO0LdeI2c: Stage 1-5 + Stage 7 + Memory Empire C-H. 29 KA P12-traced. 2 wiki pages create. 6 VP schermo documentati. Live 44:55 — McFit+Dyson analizzati. Mercedes+DJI annunciati ma non analizzati.
 - **Top KA**: Brand Famoso Rule · CPA leva €5→€50K/anno · Headline≠Nome Prodotto · CLV Red Bull · Slogan Vibes vs DR · Knowledge=Pricing Leva
 - **Visual Passages**: VP-001 McFit Hero "SEMPLICEMENTE IN FORMA" · VP-002 Google "simply fit" · VP-003 McFit+ loyalty · VP-004 Dyson Airwrap headline errore · VP-005 trust badges · VP-006 v15s scarcity

@@ -9,7 +9,7 @@
 
 | Categoria | Video totali | Completati | In corso | Pending |
 |-----------|-------------|-----------|---------|--------|
-| cat1-copywriting | 29 | 8 | 1 | 20 |
+| cat1-copywriting | 29 | 9 | 1 | 19 |
 | cat2-marketing | ~45 | 0 | 0 | TBD |
 | cat3-freelancer | ~60 | 0 | 0 | TBD |
 | cat4-ai | ~30 | 0 | 0 | TBD |
@@ -18,8 +18,8 @@
 | cat7-shortform | ~25 | 0 | 0 | TBD |
 | **TOTALE PRIORITÀ** | **~29** | **3** | **0** | **26** |
 
-**RIPRESA DA:** video 9/29 — `IWCHN_mE2Vo` — Stage 1+2 DONE (3715s = 1h02min, ~1857 frame), VTT da leggere, Stage 3 VISIONE next
-**WATCH-001:** N_video=8 = N_MemoryEmpire=8 → MATCH ✅
+**RIPRESA DA:** video 10/29 — `Ahp_6rHSOsU` — Stage 1+2 DONE (668s = 11m08s, 334 frame, 9 capitoli, 3-digit naming), VTT da leggere, Stage 3 VISIONE next
+**WATCH-001:** N_video=9 = N_MemoryEmpire=9 → MATCH ✅
 
 ---
 
@@ -37,8 +37,8 @@ Ordine di ingestion stabilito. Non modificare senza creare ADR.
 | 6 | `6WMkz5Q8g6g` | 4 Tips for Writing Persuasive Texts & Copywriting | 131 | ✅ | ✅ | **DONE** |
 | 7 | `iy13HC9M8z0` | I corrected ChatGPT's copywriting | 255 | ✅ | ✅ | **DONE** |
 | 8 | `lQMO0LdeI2c` | Copywriter Analyzes Copywriting (Live) | 1348 | ✅ | ✅ | **DONE** |
-| 9 | `IWCHN_mE2Vo` | Copywriter Analizza Copywriting (Live) [ITA] | ~1857 | ⬜ | ⬜ | **Stage1+2 DONE** |
-| 10 | `Ahp_6rHSOsU` | Usa Google Docs come un copywriter PRO (8 consigli) | ⬜ | ⬜ | ⬜ | **TODO** |
+| 9 | `IWCHN_mE2Vo` | Copywriter Analizza Copywriting (Live) [ITA] | 1858 | ✅ | ✅ | **DONE** |
+| 10 | `Ahp_6rHSOsU` | Usa Google Docs come un copywriter PRO (8 consigli) | 334 | ⬜ | ⬜ | **Stage1+2 DONE** |
 | 11 | `nRm7JLsP1bc` | Basta usare formule clichè di copywriting | ⬜ | ⬜ | ⬜ | **TODO** |
 | 12 | `hb89lccIacY` | 10 strategie PROVATE per EMAIL copywriting | ⬜ | ⬜ | ⬜ | **TODO** |
 | 13 | `fGpz-uOgr4k` | email marketing povero, email marketing ricco | ⬜ | ⬜ | ⬜ | **TODO** |
