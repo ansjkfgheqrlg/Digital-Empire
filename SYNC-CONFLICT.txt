@@ -1,0 +1,5 @@
+﻿[2026-07-19 14:38:53] CONFLITTO DI SYNC
+Rebase pre-push fallito: Auto-merging second-brain-vault/wiki/index.md CONFLICT (content): Merge conflict in second-brain-vault/wiki/index.md Auto-merging second-brain-vault/wiki/log.md CONFLICT (content): Merge conflict in second-brain-vault/wiki/log.md
+Il tuo lavoro e' al sicuro (committato in locale).
+Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
+Poi cancella questo file.
