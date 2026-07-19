@@ -248,6 +248,7 @@ Giornata cuscinetto per:
 
 ## 📎 CONNESSIONI
 
+- **[[TASK-G2-20260720]]** · `company/Memory/TASK-G2-20260720.md` — **Task dettagliate G2 con step operativi, gate, sequenza**
 - [[16-PIANO-ESTATE-REVENUE]] · `PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md`
 - [[REVENUE-DASHBOARD]] · `company/Memory/REVENUE-DASHBOARD.md`
 - [[STATO-EMPIRE]] · `company/Memory/STATO-EMPIRE.md`

@@ -615,3 +615,41 @@ prossima. Ti fermi solo a budget-guard 20% (chiudi pulito) o se un GATE è rosso
      B-002/B-003 prezzi via team-prezzi
    - F5: prossima fase roadmap (vedi PIANO-MAESTRO/08-ROADMAP-FASI.md) dopo fine swarm F1-bis
 7. **YouTube ingestion** @Legamidiamore + @dosementale -- task 7.0/F-MB1, sessione dedicata
+
+---
+
+# STATO EMPIRE — Aggiornamento sessione Arena (2026-07-19)
+
+## ✅ Sessione Arena completata (Max via Arena)
+
+### 🤖 Skill Master-Build-Architecture
+- Ricostruita completamente con tutti i componenti mancanti
+- **3 agenti QA completati**: coverage-verifier-agent, failure-mode-validator-agent, target-schema-validator-agent (tutti con 7 file canonici)
+- **7 cartelle knowledge-pack popolate**: anti-patterns, processes, decision-trees, templates, FAQ, external-sources, master
+- **Totale**: 32 file creati/modificati, 2862 righe aggiunte
+- Commit: 865f3c7, e8dfcbe, e1be0f2
+- Branch: arena/019f7a88-digital-empire
+- **Status**: ✅ Pushato su GitHub
+
+### 📊 Perfezionamento Piani Revenue
+Creati 3 nuovi file operativi in `company/Memory/`:
+1. **ANALISI-PIANI-20260719.md** — Analisi critica con 7 gap identificati e 5 perfezionamenti proposti
+2. **CALENDARIO-ESECUTIVO-SETTIMANA1.md** — Calendario G1-G7 con task Max/Gael/Claude, done-when, gate giornalieri
+3. **REVENUE-DASHBOARD.md** — Dashboard metriche LIVE per tracciamento revenue (pipeline concessionari, vendite, pagine, YouTube, promo-kit)
+
+Dossier 16 aggiornato con:
+- Decision Gate Max (7 decisioni bloccanti)
+- Done When per ogni task Gael (criteri verificabili)
+- Risk Register (7 rischi con mitigazioni)
+- File di supporto operativi (link a calendario/dashboard)
+
+### 📋 Prossimi Step
+- **Gael**: EmpireDesk P4 (se non completato), poi task revenue (funnel Manuale, caroselli, V2-2 lotto 4)
+- **Max**: Decisioni bloccanti (prezzo Manuale B-003, nome rebrand PreventivoForge), lista 7 concessionari, contatti S1
+- **Vedere**: `CALENDARIO-ESECUTIVO-SETTIMANA1.md` e `REVENUE-DASHBOARD.md` per dettaglio
+
+### 🔗 File di riferimento
+- Skill ricostruita: `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/master-build-architecture/`
+- Piani perfezionati: `company/Memory/{ANALISI-PIANI-20260719,CALENDARIO-ESECUTIVO-SETTIMANA1,REVENUE-DASHBOARD}.md`
+- Dossier 16: `PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md`
+- CP sessione: `company/Memory/checkpoints/CP-20260719-003.md`
