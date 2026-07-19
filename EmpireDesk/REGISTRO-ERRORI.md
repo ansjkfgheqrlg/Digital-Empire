@@ -43,3 +43,11 @@ qui applicati come regola preventiva invece di ri-scoprirli.
 
 ## Errori registrati (Empire Desk, in ordine cronologico)
 _Nessuno ancora — v0.1 appena costruita. Aggiungere qui ogni errore trovato in selftest/build/uso._
+
+## EDE-A1 (2026-07-19, Max — PREVENTIVO, non ancora manifestato)
+**Cosa:** `modules/licenze.py::_run` usa `sys.executable` per lanciare gestione-licenze.py.
+In dev funziona; da exe FROZEN `sys.executable` = `EmpireDesk.exe` stesso → rilancerebbe l'app
+invece di python (stesso identico problema già risolto in `app.py::_python_bin()`).
+**Fix da fare (Max, prima del primo build exe con moduli):** riusare `_python_bin()` (o copia
+locale) in licenze.py. **Regola:** in OGNI modulo che lancia python, MAI `sys.executable` nudo —
+sempre il resolver frozen-aware.
