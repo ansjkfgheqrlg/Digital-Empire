@@ -329,6 +329,21 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   + 4 workflow (PROD 3, STRA 1). **Reparti V2: 94 file, 42 agenti, 12 WF.** Gate struct VERDE
   (10/10 template, 0 magri, 0 vuoti), 5-bis MAXIMILIAN APPROVA. Namespace `infobusiness/{prod,lanc,vend,comm,stra}`.
   **GAEL: continua 03-CONTENT-FACTORY R4→R8 (02 è chiuso, non serve più toccarlo).**
+- 💰 **PIANO ESTATE REVENUE ATTIVO (Max, 2026-07-19) — LEGGERE `PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md`.**
+  Ordine Max: fatturare entro UNA settimana, certezza ≥95%. Analisi: l'unico stream ≥95% = **S1 anticipare
+  i 7 concessionari quasi-confermati da settembre a LUGLIO** (prodotto PreventivoForge già live). Moltiplicatore:
+  **S2 Manuale Claude Code** (chiudere PREZZO B-003 il G1 — bloccante). Estate: S3 pagine lancio + S4
+  mentalita.brutale (SOLO se automazione 100%, carousel-factory wrap) + S5 canali YouTube-Fliki auto
+  (API key in `.env` locale gitignorato — MAI su GitHub).
+  **▶️ GAEL — TASK SETTIMANA (in ordine):** (1) 30min: chiudi CF-R8 → 03 9/9; (2) G1: AUDIT ASSET tutte le
+  pagine (mentalita.brutale, crea.illtuo_impero, altre pagine lancio+sito) → `05-MULTI-BUSINESS/AUDIT-PAGINE-20260719.md`;
+  (3) G2: funnel Manuale (landing empire-premium-style + checkout + 3 email — prezzo arriva da Max G1);
+  (4) G2-G3: batch 7 caroselli crea.illtuo_impero + bio→funnel; (5) G3-G4: pipeline mentalita.brutale 100% auto
+  (produzione→QA→scheduler→report); (6) G4-G5: WF-YT v1 + test 1 video end-to-end API Fliki; (7) G6: analisi
+  competitor 3 nicchie YT → proposta a Max; (8) G7: CP + RETRO con numeri veri. Dettagli nel dossier 16.
+  **▶️ MAX — TASK:** G1 prezzo B-003 con team-prezzi · lista 7 concessionari · G2-G4 contattarli (script pronto
+  da Claude/A8) · G3 approva funnel · G4-G5 sceglie nicchia YT · G6-G7 push vendita Manuale sui canali caldi.
+  **Regola: revenue batte infra questa settimana. Un solo swarm Opus per volta.**
 - 🏁 **01-AGENCY CHIUSO — 10/10 reparti (Max, 2026-07-11 — CP-20260711-002).** TERZO ecosistema completo.
   **182 file · 74 agenti · 28 workflow · 23.635 righe.** Gate VERDE, 5-bis MAXIMILIAN APPROVA.
   A1-A6 (batch 1-2) + A7-Account-Mgmt, A8-Closing, A9-Partnership-Referral, A10-QA-Cliente (batch 3).
