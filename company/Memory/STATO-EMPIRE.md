@@ -16,10 +16,16 @@ Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'
   + switcher pannelli UI. Dopo B1 core in FREEZE (si estende solo via modules/).
 - **B2** scheduler run programmate · **B3** notifiche fine-run · **B4** taskboard live. Dettagli §5.1.
 
-**▶️ MAX — Half A «Dati & Business» (owner: 4 moduli NUOVI, zero collisione col core):**
-- **A1** `modules/metrics.py` (metriche settimana dossier 16 §4, SOLO dati reali) · **A2** `modules/revenue.py`
-  (pipeline S1 concessionari) · **A3** `modules/licenze.py` (wrap gestione-licenze.py, kill-switch già suo) ·
-  **A4** `modules/fliki.py` (WF-YT, quando S5 pronto). Scrivibili DA SUBITO a contratto §5.3; si integrano al push di B1.
+**✅ MAX — Half A: A1+A2+A3 SCRITTI E TESTATI (2026-07-19 sera, selftest 3/3 PASS):**
+- ✅ **A1** `EmpireDesk/modules/metrics.py` — 6/6 fonti reali (probe live: LinkedIn 6 righe oggi,
+  458 email in coda, 52 PDF preventivi ultimi 7gg — numeri VERI letti dai file, mai inventati).
+- ✅ **A2** `EmpireDesk/modules/revenue.py` + `state/revenue.json` — pipeline 7 slot (Max compila
+  nomi/stati), route `revenue/aggiorna` per aggiornare un campo alla volta.
+- ✅ **A3** `EmpireDesk/modules/licenze.py` — wrap di gestione-licenze.py (verificati: script,
+  licenze.config.json, gh CLI). Sospendi con conferma UI. Zero secrets nell'app.
+- ⬜ **A4** fliki: parte quando S5 pronto.
+- Tutti a contratto §5.3 (`MODULE{id,tile,routes,panel_html}` + `selftest()` probe-only).
+  **GAEL: al tuo B1 (loader modules/) questi 3 si accendono da soli — NON toccarli (§5.4 regola 1).**
 
 **Sequenza: B0 (oggi) → B1 → parallelo pieno A1-A4 ∥ B2-B4. Ogni task chiuso = commit+push+questo blocco aggiornato.**
 *(Nota per Gael: se una sessione Claude ti dice "questa task non esiste" → git pull fallito per rete
