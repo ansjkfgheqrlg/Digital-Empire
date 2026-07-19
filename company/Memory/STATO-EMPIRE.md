@@ -25,23 +25,9 @@ Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'
 *(Nota per Gael: se una sessione Claude ti dice "questa task non esiste" → git pull fallito per rete
 (errore schannel visto 2 volte oggi) — RIPETI il pull finché passa, l'ordine è QUI e nel dossier 17.)*
 
-## 🚨 EMPIRE DESK — DIVISIONE METÀ/METÀ (aggiornamento Max 2026-07-19 pomeriggio — LEGGERE §6 dossier 17)
-**P1-P3 FATTI (bravo Gael: app.py 461 righe + ui + spec). P4 APERTO: selftest 7/8.**
-La spec aggiornata con la divisione è `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` **§6** — vincolante:
-
-**🟣 GAEL — Half B «Core & Runtime» (owner: app.py, ui/index.html, build_exe.bat, spec):**
-- **B0 SUBITO — chiudi v0.1:** fix tile Caroselli (2 difetti GIÀ diagnosticati in §6.0: path vero
-  `Workfolw crea caroselli à/carousel-factory/scripts/generate.js` + campo `input` per il JSON,
-  altrimenti è un bottone finto = Gate 1) → selftest **8/8** → build `dist/EmpireDesk/EmpireDesk.exe`
-  → test DOPPIO CLICK → CP + push. **v0.1 CHIUSA.**
-- **B1 subito dopo (SBLOCCA MAX):** seam moduli `EmpireDesk/modules/` + switcher UI (contratto §6.3).
-  Dopo B1: app.py/index.html in FREEZE — si estende SOLO via modules/.
-- Poi B2 scheduler · B3 notify · B4 taskboard (dettagli §6.1).
-**🔵 MAX — Half A «Dati & Business» (file NUOVI in modules/, zero collisione):**
-- A1 metrics (dossier 16 §4, dati REALI o «nessun dato») · A2 revenue (pipeline 7 concessionari) ·
-  A3 licenze (wrap gestione-licenze.py) · A4 fliki (quando S5 pronto). Scrivibili da subito, si
-  accendono quando Gael pusha B1.
-**Regola: i due half non si toccano MAI (contratto §6.3). Ordine Gael: B0 → B1 → task revenue dossier 16.**
+*(Nota: un secondo blocco-divisione scritto da una sessione Max parallela citava «§6 dossier 17» —
+numerazione vecchia. Rimosso: vale il blocco qui sopra; nel dossier la divisione è la **§5**.
+Stesso contenuto, nessun task cambiato. Ordine del giorno Gael dopo B1: task revenue dossier 16.)*
 
 ## ✅ GAEL — V2-2 LOTTO 3 COMPLETATO (2026-07-19, CP-20260719-001)
 **Chiuso PRIMA di vedere l'ordine EMPIRE DESK qui sopra (era già a buon punto); ora si passa
