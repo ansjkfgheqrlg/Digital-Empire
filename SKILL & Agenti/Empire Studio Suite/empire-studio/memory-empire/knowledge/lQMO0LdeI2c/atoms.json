@@ -1,0 +1,292 @@
+[
+  {
+    "id": "KA-01",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:00:00",
+    "frame": "frame-0001.png",
+    "category": "FORMATO",
+    "section": "S1",
+    "tags": ["live-session", "setup", "formato-contenuto"],
+    "atom": "Formato live session: Andrei da hotel estero, 2 Red Bull sul tavolo, AirPods, cap con logo ancora. Setup informale ma professionale. Format replicabile per creare contenuto educativo ad alto valore con strumenti minimi (schermo + faccia)."
+  },
+  {
+    "id": "KA-02",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:02:57",
+    "frame": "frame-0090.png",
+    "category": "STRUTTURA",
+    "section": "S1",
+    "tags": ["brand-analysis", "agenda", "profondità-vs-ampiezza"],
+    "atom": "Lista brand da analizzare annunciata: Dyson, Mercedes Benz, McFit, DJI. In realtà solo McFit e Dyson vengono analizzati — sessione più profonda del previsto. Lezione: meglio 2 case study profondi che 4 superficiali."
+  },
+  {
+    "id": "KA-03",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:05:38",
+    "frame": "frame-0170.png",
+    "category": "TERMINOLOGIA",
+    "section": "S2",
+    "tags": ["hero-section", "struttura-sito", "vocabolario-professionale"],
+    "atom": "Hero Section = prima sezione visiva di un sito web, quella che l'utente vede senza scrollare. 'Questa cosa gialla si chiama Hero section.' Termine fondamentale del vocabolario copy/UX per posizionarsi come professionista."
+  },
+  {
+    "id": "KA-04",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:05:38",
+    "frame": "frame-0170.png",
+    "category": "COPY-CRITIQUE",
+    "section": "S2",
+    "tags": ["mcfit", "slogan", "brand-awareness", "traduzione"],
+    "atom": "'Semplicemente in forma' = tagline italiana McFit. Funziona come slogan generico ma non differenzia. L'originale tedesco ha più mordente — la traduzione appiattisce. Per brand internazionali: verificare se la versione originale aveva più forza prima di tradurre."
+  },
+  {
+    "id": "KA-05",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:06:38",
+    "frame": "frame-0200.png",
+    "category": "PRINCIPIO",
+    "section": "S2",
+    "tags": ["brand-famoso", "copy-rule", "differenziazione"],
+    "atom": "Regola Brand Famoso: 'Dovete sempre evitare per quanto possibile di dire questo è X.' Per brand noti (McFit, iPhone, Dyson), il pubblico sa già cosa sono. La headline NON deve spiegare il brand — deve comunicare perché scegliere questo vs concorrenza."
+  },
+  {
+    "id": "KA-06",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:06:38",
+    "frame": "frame-0200.png",
+    "category": "TOOL",
+    "section": "S2",
+    "tags": ["competitive-research", "google", "brand-analysis"],
+    "atom": "Google come tool di competitive research: cercare il nome brand originale (inglese/tedesco) per capire posizionamento internazionale e come la versione italiana si confronta. Andrei cerca 'simply fit' → scopre che 'Simply Fit' è un brand americano diverso (Shark Tank fitness board)."
+  },
+  {
+    "id": "KA-07",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:13:43",
+    "frame": "frame-0413.png",
+    "category": "TERMINOLOGIA",
+    "section": "S3",
+    "tags": ["analytics", "web-metrics", "bounce-rate"],
+    "atom": "Bounce Rate = quando una persona CAMBIA PAGINA nel sito (naviga verso un'altra pagina dello stesso sito). NON equivale ad abbandono del sito. Definizione precisa fondamentale per parlare di performance web con i clienti."
+  },
+  {
+    "id": "KA-08",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:14:01",
+    "frame": "frame-0413.png",
+    "category": "TERMINOLOGIA",
+    "section": "S3",
+    "tags": ["analytics", "web-metrics", "exit-rate"],
+    "atom": "Exit Rate = quando la SESSIONE TERMINA su quella pagina (persona chiude browser, va su altro sito). Bounce rate e exit rate sono metriche distinte — confonderle porta ad analisi errate delle performance copy. Sapere la differenza = credibilità professionale."
+  },
+  {
+    "id": "KA-09",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:19:48",
+    "frame": "frame-0413.png",
+    "category": "TOOL",
+    "section": "S3",
+    "tags": ["competitive-research", "tech-stack", "wappalyzer", "extension"],
+    "atom": "Tech Stack Detection tramite browser extension (Wappalyzer/simile in Chrome/Arc): permette di vedere CMS, analytics, advertising pixels di qualsiasi sito. McFit usa: CMS Typo3, Google Analytics Universal, Google Tag Manager. Info gold per pitch: 'so già che usi Google Analytics UA — stai perdendo dati da quando UA è stato deprecato.'"
+  },
+  {
+    "id": "KA-10",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:13:46",
+    "frame": "frame-0413.png",
+    "category": "COPY-STRUCTURE",
+    "section": "S3",
+    "tags": ["loyalty", "upsell", "mcfit", "copy-formula"],
+    "atom": "McFit+ loyalty copy formula: Header brand → Headline benefit → Paragrafo espansivo benefici → Lista action steps numerati (Scarica app → Attiva McFIT+). 'ANCORA DI PIÙ CON McFIT+' → 'IL PLUS PER LA TUA FEDELTÀ' → benefici concreti → 2 passi chiari. Formula replicabile per upsell abbonamenti premium."
+  },
+  {
+    "id": "KA-11",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:20:00",
+    "frame": "frame-0413.png",
+    "category": "TOOL",
+    "section": "S3",
+    "tags": ["meta-pixel", "competitive-intelligence", "facebook-ads"],
+    "atom": "Meta Pixel Helper (extension Chrome) per verificare se un sito usa pixel Facebook/Meta. Non sempre accurato (falsi negativi), ma utile per capire strategia advertising del concorrente/cliente. Sapere che un cliente usa o non usa il pixel = punto di partenza per proposta di miglioramento."
+  },
+  {
+    "id": "KA-12",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:28:09",
+    "frame": "frame-0845.png",
+    "category": "VALORE",
+    "section": "S4",
+    "tags": ["cpa", "copywriting-roi", "sales-page", "leva-finanziaria"],
+    "atom": "Copy su Sales Page determina CPA. 'Migliori il CPA di €5 → hai fatto risparmiare un'azienda €50.000-€100.000 di ads in tutto l'anno.' Per campagne con budget alto, ogni euro di CPA migliorato si moltiplica per migliaia di conversioni. Il copywriting è leva finanziaria diretta."
+  },
+  {
+    "id": "KA-13",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:28:12",
+    "frame": "frame-0845.png",
+    "category": "MERCATO",
+    "section": "S4",
+    "tags": ["italia", "gap-mercato", "opportunità", "copywriting"],
+    "atom": "'Quanto cazzo è grossa l'opportunità in Italia — la gente non se ne rende conto.' Gap: le aziende italiane investono in ads senza ottimizzare il copy. Chi sa fare copy strategico (non solo testi) ha vantaggio competitivo enorme. Il mercato italiano è sottosviluppato → early mover advantage."
+  },
+  {
+    "id": "KA-14",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:24:54",
+    "frame": "frame-0748.png",
+    "category": "REGOLA",
+    "section": "S5",
+    "tags": ["headline", "dyson", "nome-prodotto", "copy-rule"],
+    "atom": "Headline ≠ Nome del prodotto. 'Non puoi usare come headline il nome del prodotto.' 'Styler Dyson Airwrap™ Complete Long Volumise' come headline è sbagliato — è il nome del SKU, non una promessa. La headline deve comunicare un beneficio o una promessa emotiva, non il catalogo."
+  },
+  {
+    "id": "KA-15",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:25:14",
+    "frame": "frame-0748.png",
+    "category": "REGOLA",
+    "section": "S5",
+    "tags": ["brand-copy", "direct-response", "dyson", "tono"],
+    "atom": "Contraddizione brand noto: Non puoi fare Direct Response su un brand famoso. 'Allo stesso tempo non mi puoi fare il Direct Response click funnel style — non mi puoi fare sei stanca di capelli non a modo? Prendi il [prodotto].' Per brand premium/noti, il tono DR stride con il posizionamento e danneggia il brand."
+  },
+  {
+    "id": "KA-16",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:29:22",
+    "frame": "frame-0864.png",
+    "category": "ESEMPIO-POSITIVO",
+    "section": "S5",
+    "tags": ["dyson", "brand-copy", "slogan", "aspirazionale"],
+    "atom": "'headphones remastered — un'esperienza di ascolto senza pari' = copy Dyson valutato POSITIVAMENTE. 'Questo è molto molto meglio come Copy.' Formula: emozione/esperienza > feature, non spiega il prodotto, linguaggio aspirazionale. Questo è Slogan Vibes — il tono giusto per brand premium noti."
+  },
+  {
+    "id": "KA-17",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:28:46",
+    "frame": "frame-0864.png",
+    "category": "STRUTTURA-ECOMMERCE",
+    "section": "S5",
+    "tags": ["trust-badges", "conversione", "dyson", "ecommerce"],
+    "atom": "Dyson trust badges su pagina prodotto: Prezzo garantito / Pagamento a rate / Consegna gratuita in 24h* / Reso gratuito entro 30 giorni. Formula: 4 obiezioni rimosse con badges sotto il CTA principale. Replicabile per qualsiasi e-commerce premium — ogni badge risponde a una paura d'acquisto specifica."
+  },
+  {
+    "id": "KA-18",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:28:45",
+    "frame": "frame-0864.png",
+    "category": "STRATEGIA",
+    "section": "S6",
+    "tags": ["dyson", "cliente-ricorrente", "clv", "ecosistema"],
+    "atom": "Dyson = strategia cliente ricorrente. 'Dyson è un'azienda che punta molto sicuramente sul cliente ricorrente.' Il copy Dyson non è ottimizzato per la singola vendita ma per entrare nell'ecosistema del cliente (capelli → aspirapolvere → purificatori → cuffie). Brand equity + portfolio = CLV massimizzato."
+  },
+  {
+    "id": "KA-19",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:29:00",
+    "frame": "frame-0931.png",
+    "category": "CONCETTO",
+    "section": "S6",
+    "tags": ["clv", "customer-lifetime-value", "ecommerce", "metrica"],
+    "atom": "Customer Lifetime Value (CLV) = valore totale che un cliente genera nell'intera sua vita per l'azienda. 'il vero valore non è questa Red Bull da €2 — sono quei migliaia di euro che spenderò nella loro azienda.' Per e-commerce: CLV = base per decidere CPA massimo sostenibile e strategie di acquisizione."
+  },
+  {
+    "id": "KA-20",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:31:00",
+    "frame": "frame-0931.png",
+    "category": "CONCETTO",
+    "section": "S6",
+    "tags": ["red-bull", "loss-leader", "clv-example", "event-marketing"],
+    "atom": "Red Bull CLV example: 'Red Bull può perdere soldi su un evento di mountain biking però portano dentro nel loro ecosistema una persona come me che poi ti va a spendere migliaia.' Loss leader consapevole = acquistare utente ad alto CLV. L'evento è un investimento a lungo termine, non un costo."
+  },
+  {
+    "id": "KA-21",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:32:07",
+    "frame": "frame-0931.png",
+    "category": "STRATEGIA",
+    "section": "S6",
+    "tags": ["clv", "cpa", "ecommerce-multiprodotto", "cross-sell"],
+    "atom": "CLV alto → CPA ceiling alzato: 'Se abbiamo un e-commerce multiprodotto e il customer lifetime value è di €1000... possiamo anche alzare il CPA un attimino se significa fare la guerra contro la concorrenza e avere quel acquisto iniziale valoroso per poi fare cross Sell.' Formula: CLV alto → investi in acquisizione → market share."
+  },
+  {
+    "id": "KA-22",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:35:26",
+    "frame": "frame-1073.png",
+    "category": "STRATEGIA-ECOMMERCE",
+    "section": "S6",
+    "tags": ["dyson", "homepage", "ux", "bestseller", "conversione"],
+    "atom": "E-commerce UX rule: 'Metti come primissima cosa il prodotto più venduto.' Se la gente arriva sul sito cercando un prodotto specifico, farglielo trovare subito = conversion optimization. Homepage come storefront — bestseller in evidenza, non catalogo generico o brand story."
+  },
+  {
+    "id": "KA-23",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:35:44",
+    "frame": "frame-1073.png",
+    "category": "TATTICA",
+    "section": "S6",
+    "tags": ["scarcity", "urgency", "dyson", "offerta-limitata", "premium"],
+    "atom": "Scarcity per brand premium: Dyson usa 'Ora con rullo in microfibra extra in omaggio. Solo per un periodo limitato.' anche per aspirapolvere premium v15s. La scarcity funziona anche per brand luxury SE presentata come omaggio (non sconto), preservando posizionamento premium senza toccare il prezzo."
+  },
+  {
+    "id": "KA-24",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:33:49",
+    "frame": "frame-1073.png",
+    "category": "POSIZIONAMENTO",
+    "section": "S6",
+    "tags": ["copywriter", "valore", "strategia", "pricing"],
+    "atom": "Il copywriter vende strategia, non task. 'Quando tu fai Copy Non offri solamente oh ti scrivo il post su LinkedIn — tu stai offrendo la possibilità a un'azienda strategicamente di guadagnare molto di più.' Il fee si giustifica con outcome (€50K risparmiati), non con ore di lavoro."
+  },
+  {
+    "id": "KA-25",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:33:37",
+    "frame": "frame-1073.png",
+    "category": "POSIZIONAMENTO",
+    "section": "S6",
+    "tags": ["italia", "conoscenza", "differenziazione", "premium-positioning"],
+    "atom": "Knowledge gap come vantaggio competitivo: 'quando tu fai Copy e conosci CPA, customer lifetime value, come proporre queste cose al cliente... questa è la roba che in Italia nessuno capisce.' Sapere i termini + la logica business = premium positioning vs copywriter che scrive solo testi."
+  },
+  {
+    "id": "KA-26",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:36:22",
+    "frame": "frame-1306.png",
+    "category": "MINDSET",
+    "section": "S7",
+    "tags": ["timing", "investimento", "urgenza", "procrastinazione"],
+    "atom": "'Rimandi l'investimento → rimandi il successo.' 'Ogni singolo giorno che tu rimandi l'investimento che dovresti fare... rimandi il successo fratello.' Risposta a chi chiede se è troppo tardi: non c'è troppo tardi, c'è solo quando vuoi iniziare."
+  },
+  {
+    "id": "KA-27",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:34:47",
+    "frame": "frame-1306.png",
+    "category": "MINDSET",
+    "section": "S7",
+    "tags": ["apprendimento", "metacognizione", "crescita", "benchmark"],
+    "atom": "Framework metacognitivo: 'dovete svegliarvi ogni mattina e chiedervi: cos'è che Andrei sa che io non so?' Usare chi è più avanti come benchmark di CONOSCENZA (non di risultati). Identifica il gap specifico invece di confrontare outcomes generici."
+  },
+  {
+    "id": "KA-28",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:43:30",
+    "frame": "frame-1306.png",
+    "category": "CTA",
+    "section": "S8",
+    "tags": ["manuale-copywriting", "bundle", "scarcity", "cta-formula"],
+    "atom": "CTA finale live: 'ultime due giorni per avere manuale più workbook.' Bundle offer (manuale + workbook) con scarcity temporale. Link in bio. Formula: urgency + bundle + valore chiaro. CTA semplice, no hard sell, coerente col tono didattico della live."
+  },
+  {
+    "id": "KA-29",
+    "video_id": "lQMO0LdeI2c",
+    "source": "lQMO0LdeI2c#0:44:54",
+    "frame": "frame-1348.png",
+    "category": "FORMATO",
+    "section": "S8",
+    "tags": ["live-chiusura", "tono", "brand-voice"],
+    "atom": "Chiusura live Andrei: 'Ragazzi ho finito la live. Spero che vi sia utile. ci vediamo presto bimbi ciao ciao.' Tono caldo, colloquiale. 'Bimbi' = appellativo trademark Andrei verso la sua community. Chiusura organica senza recap — non riepilogare, finire con energia."
+  }
+]

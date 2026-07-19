@@ -142,47 +142,7 @@ Il piano completo richiede vari giorni di lavoro. Si costruisce così:
 
 ---
 
-## 5.b. 🔴 DECISIONI MAX BLOCCANTI (senza queste, Gael non può procedere)
-
-| G | Decisione | Output | Blocca |
-|---|---|---|---|
-| G1 (sab 19) | Prezzo Manuale (chiude B-003) | prezzo + ruolo prodotto | S2, S3, S4 |
-| G1 (sab 19) | Nome rebrand PreventivoForge (shortlist §2 S6) | nome scelto | S6 |
-| G1-G2 | Lista 7 concessionari: nome, stato relazione, canale contatto | lista pronta per script | S1 |
-| G2 (dom 20) | Approvare offerta "Partenza Anticipata" (script Claude/A5) | offerta GO | S1 |
-| G3 (lun 21) | Approvare landing+prezzo funnel Manuale | GO pubblicazione | S2 |
-| G4-G5 | Decidere nicchia canale YouTube #1 (proposta Gael) | nicchia scelta | S5 |
-| G5 | Approvare promo-kit S6 (landing+demo+case study) | GO promo | S6 |
-
-**Suggerimento prezzo Manuale (Max decide):** €97 (sotto soglia psicologica €100, sopra €47 che svaluta).
-**Suggerimento nome rebrand (Max decide):** "Preventa" (pulito, brandabile) o "Lampo" (velocità, memorabile).
-
-## 5.c. ✅ DONE WHEN per ogni task GAEL (criterio "fatto" non ambiguo)
-
-| Task | Done When (criterio verificabile) |
-|---|---|
-| EmpireDesk P4 | `python app.py --selftest` → 8/8 OK · `EmpireDesk.exe` buildato + doppio click funziona · CP creato · STATO aggiornato · push fatto |
-| Audit asset P0.2 | File `AUDIT-PAGINE-20260719.md` creato con ≥5 pagine censite (nome, piattaforma, follower, ultimo post, bio/link, stato, raccomandazione) |
-| Funnel Manuale | Landing live su dominio · checkout Stripe/Gumroad attivo · 3 email test invio reale verificato · link in bio pagina aggiornato |
-| Batch caroselli S3 | 7 caroselli crea.illtuo_impero generati + pubblicati + bio→funnel S2 attivo |
-| Pipeline mentalita.brutale S4 | Test end-to-end: batch caroselli → QA gate auto → scheduler pubblicazione → post live → report engagement generato |
-| WF-YT v1 + test video S5 | Script test → Fliki API POST → polling status → mp4 scaricato · README workflow · diagramma 7 WF · selftest verde |
-| Analisi competitor YT | Doc con 3 nicchie candidate · dati citati (views/iscritti/engagement) · proposta numerata · ready per Max |
-| Promo-kit S6 | Landing empire-premium-style live · demo video 2min · case study Novacar · lista 50+ lead concessionari import-DE |
-
-## 5.d. 🔴 RISK REGISTER (rischi + mitigazioni + piano B)
-
-| # | Rischio | Prob. | Impatto | Mitigazione | Piano B |
-|---|---|---|---|---|---|
-| R1 | Max non decide prezzo B-003 G1 | Media | Alto (blocca 3 stream) | Reminder STATO-EMPIRE ogni messaggio | Default €97 se nessuna decisione entro G1 ore 20:00 |
-| R2 | Gael non chiude EmpireDesk oggi | Bassa | Medio | Codice già pronto, solo build+test | Max può testare dev mode `python app.py` senza .exe |
-| R3 | 7 concessionari non rispondono | Bassa | Alto (S1 fallisce) | Script A8 già pronto, Max ha relazione | A1 scrape 50 concessionari IT da mobile.de instead di 7 caldi |
-| R4 | Fliki API cambia pricing/limiti | Media | Medio (S5 ritarda) | Test su piano attuale, chiave in .env | Video manuali con HeyGen (già wrappato CF-R3) |
-| R5 | WebView2 manca su PC cliente | Bassa | Basso | Motore Chrome-app primario (no WebView2) | Fallback Tkinter già implementato |
-| R6 | B-003 prezzo perfetto mai arriva | Alta | Alto | Timebox G1: decisione entro sera |Prezzo "minimum viable" €47, raffinare dopo prime vendite |
-| R7 | Gael sovrappone EmpireDesk+revenue | Media | Medio | Priorità ESPICITA: EmpireDesk oggi, revenue da G2 | Max conferma priorità via STATO-EMPIRE |
-
-## 6. REGOLE DEL PIANO
+## 5. REGOLE DEL PIANO
 
 1. **Revenue prima di infra, questa settimana.** Se un task infra confligge con un task S1/S2 → vince S1/S2.
 2. **B-003 si chiude G1.** Blocca 3 stream su 5: è il collo di bottiglia n.1.
@@ -194,20 +154,8 @@ Il piano completo richiede vari giorni di lavoro. Si costruisce così:
 
 ---
 
-## 7. FILE DI SUPPORTO OPERATIVI
-
-| File | Scopo |
-|---|---|
-| `company/Memory/CALENDARIO-ESECUTIVO-SETTIMANA1.md` | Calendario giorno-per-giorno con task, done-when, gate giornalieri |
-| `company/Memory/REVENUE-DASHBOARD.md` | Dashboard metriche LIVE (aggiornare OGNI giorno con numeri reali) |
-| `company/Memory/ANALISI-PIANI-20260719.md` | Analisi critica con gap, rischi, proposte perfezionamento |
-
----
-
 ## Connessioni
 - [[STATO-EMPIRE]] · `company/Memory/STATO-EMPIRE.md` — blocco coordinamento estate
-- [[CALENDARIO-ESECUTIVO-SETTIMANA1]] · `company/Memory/CALENDARIO-ESECUTIVO-SETTIMANA1.md`
-- [[REVENUE-DASHBOARD]] · `company/Memory/REVENUE-DASHBOARD.md`
 - [[01-ECOSISTEMA-AGENCY-V2]] · A8-Closing (script call S1) + A3-Preventivi (offerta)
 - [[PreventivoForge]] · fabbrica `/nuovo-concessionario` + kill-switch licenze
 - [[carousel-factory]] · `second-brain-vault/raw/Workfolw crea caroselli à/` — motore S3/S4 (brand mentalita-brutale già configurato)

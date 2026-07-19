@@ -1,50 +1,33 @@
-# STATO EMPIRE -- aggiornato 2026-07-19 (sessione Arena Max)
+# STATO EMPIRE -- aggiornato 2026-07-19 15:25 (ordine Max: FOCUS TOTALE EMPIRE DESK, lavoro diviso metà/metà)
 
-## ✅ ARENA (Max) — SESSIONE COMPLETATA (2026-07-19, commit 865f3c7)
-**Pushato su GitHub:** branch `arena/019f7a88-digital-empire` · 29 file · 2862 righe.
+## 🚨🚨 ORDINE MAX 2026-07-19 POMERIGGIO — EMPIRE DESK = LAVORO PIÙ IMPORTANTE, DIVISIONE METÀ/METÀ MAX↔GAEL
+**Piano vincolante e completo: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` §5 (appena scritto, leggerlo TUTTO).**
+Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'altro half** (lezione PreventivoForge).
 
-### 🔧 Skill master-build-architecture — RICOSTRUITA E COMPLETATA
-**Path:** `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/master-build-architecture/`
-- **Agenti QA completati (18/18 con 7 file canonici PT05):**
-  - `coverage-verifier-agent` — verifica tracciabilità P12 (6 file creati)
-  - `failure-mode-validator-agent` — valida failure-modes P09 (6 file creati)
-  - `target-schema-validator-agent` — valida forme canoniche P06 (6 file creati)
-- **Knowledge Pack popolato (11/11 cartelle):**
-  - `00-master/master.md` — MKD (Master Knowledge Document)
-  - `03-anti-patterns/` — 9 anti-pattern dettagliati
-  - `04-processes/` — 7 processi operativi (PR01-PR07)
-  - `05-decision-trees/` — 6 alberi decisionali (DT01-DT06)
-  - `07-templates/` — 7 template (agent spec, CP, DEC, ecc.)
-  - `09-faq/` — 16 FAQ complete (D01-D16)
-  - `10-references/` — Fonti primarie (Ruflo, Content-Forge, Advisor, Skill-Creator)
-- **Totale:** 325 file nel repo skill, 18 agenti con 7 file canonici ciascuno, knowledge pack completo
+**▶️ GAEL — Half B «Core & Runtime» (owner: app.py · ui/index.html · build_exe.bat · empiredesk.spec):**
+- **B0 SUBITO — chiudi v0.1 OGGI.** Selftest è 7/8: unica FAIL = tile Caroselli, **2 difetti verificati**:
+  1) `app.py` riga ~101: `"script": "scripts/generate.js"` → path vero =
+     `Workfolw crea caroselli à/carousel-factory/scripts/generate.js` (verificato su disco);
+  2) `generate.js` esige un argomento (`process.argv[2]` = file JSON carosello, senza → exit 1; in `input/`
+     non c'è nessun JSON) → aggiungi `"input"` alla tile (campo path JSON, come l'URL della tile Studio),
+     altrimenti è un bottone che fallisce sempre (Gate 1 violato).
+  Poi: selftest 8/8 → build exe → test doppio click → CP + push. **v0.1 CHIUSA.**
+- **B1 (subito dopo B0 — SBLOCCA MAX):** seam moduli `EmpireDesk/modules/` (contratto §5.3 dossier 17)
+  + switcher pannelli UI. Dopo B1 core in FREEZE (si estende solo via modules/).
+- **B2** scheduler run programmate · **B3** notifiche fine-run · **B4** taskboard live. Dettagli §5.1.
 
-### 📊 Perfezionamento Piani Revenue (Dossier 16) — NUOVI FILE OPERATIVI
-- `company/Memory/ANALISI-PIANI-20260719.md` — Analisi critica completa con 7 gap identificati e 5 perfezionamenti proposti
-- `company/Memory/CALENDARIO-ESECUTIVO-SETTIMANA1.md` — Calendario G1→G7 giorno-per-giorno con task Max/Gael/Claude, done-when, gate giornalieri
-- `company/Memory/REVENUE-DASHBOARD.md` — Dashboard metriche LIVE per tracciamento revenue (pipeline concessionari, vendite, pagine, YouTube, promo-kit)
-- **Dossier 16 aggiornato** con: Decision Gate Max (7 decisioni bloccanti), Done When per ogni task Gael, Risk Register (7 rischi + mitigazioni), file di supporto operativi
+**▶️ MAX — Half A «Dati & Business» (owner: 4 moduli NUOVI, zero collisione col core):**
+- **A1** `modules/metrics.py` (metriche settimana dossier 16 §4, SOLO dati reali) · **A2** `modules/revenue.py`
+  (pipeline S1 concessionari) · **A3** `modules/licenze.py` (wrap gestione-licenze.py, kill-switch già suo) ·
+  **A4** `modules/fliki.py` (WF-YT, quando S5 pronto). Scrivibili DA SUBITO a contratto §5.3; si integrano al push di B1.
 
-### 📋 Prossimi step dopo questa sessione
-1. **Gael:** completare EmpireDesk P4 (selftest + build .exe + CP + push) — priorità #1 Max
-2. **Max:** decidere prezzo Manuale B-003 (blocca 3 stream) + nome rebrand PreventivoForge
-3. **Max:** lista 7 concessionari per S1
-4. **Gael:** audit asset P0.2 + inizio task revenue (funnel Manuale, caroselli, pipeline mentalita.brutale)
-5. **Gael:** V2-2 lotto 4 (dossier 07/08/09) → chiude blueprint V2
-6. Vedi `CALENDARIO-ESECUTIVO-SETTIMANA1.md` e `REVENUE-DASHBOARD.md` per dettaglio
+**Sequenza: B0 (oggi) → B1 → parallelo pieno A1-A4 ∥ B2-B4. Ogni task chiuso = commit+push+questo blocco aggiornato.**
+*(Nota per Gael: se una sessione Claude ti dice "questa task non esiste" → git pull fallito per rete
+(errore schannel visto 2 volte oggi) — RIPETI il pull finché passa, l'ordine è QUI e nel dossier 17.)*
 
----
-
-## 🚨 ORDINE MAX 2026-07-19 — GAEL: EMPIRE DESK v0.1 ENTRO OGGI (priorità #1)
-**Costruire l'app .exe piattaforma di TUTTO: `EmpireDesk.exe`.** Spec completa e vincolante:
-`PIANO-MAESTRO/17-EMPIRE-DESK-APP.md`. In sintesi:
-- Launcher desktop premium (pywebview + HTML empire-style + PyInstaller — IL TUO pattern PreventivoForge).
-- 8 tile che lanciano i runtime ESISTENTI via subprocess (outreach email/IG/LinkedIn/scraper,
-  PreventivoForge, caroselli, Empire Studio, STATO dashboard). ADR-003: SOLO wrapper, zero riscritture.
-- Step P1→P4 oggi (shell → bridge subprocess → tile 5-8 → selftest 8/8 + build .exe + CP + push).
-- Gate: ZERO bottoni finti (ogni tile lancia processo reale, exit code visibile), zero secrets, fallback Tkinter.
-**Ordine del giorno Gael: 1) EMPIRE DESK P1-P4 · 2) task revenue dossier 16 (audit pagine, funnel).**
-**Lotto 3 dossier: se non chiuso, va IN CODA a Empire Desk oggi (ordine Max esplicito).**
+*(Nota: un secondo blocco-divisione scritto da una sessione Max parallela citava «§6 dossier 17» —
+numerazione vecchia. Rimosso: vale il blocco qui sopra; nel dossier la divisione è la **§5**.
+Stesso contenuto, nessun task cambiato. Ordine del giorno Gael dopo B1: task revenue dossier 16.)*
 
 ## ✅ GAEL — V2-2 LOTTO 3 COMPLETATO (2026-07-19, CP-20260719-001)
 **Chiuso PRIMA di vedere l'ordine EMPIRE DESK qui sopra (era già a buon punto); ora si passa
@@ -615,41 +598,3 @@ prossima. Ti fermi solo a budget-guard 20% (chiudi pulito) o se un GATE è rosso
      B-002/B-003 prezzi via team-prezzi
    - F5: prossima fase roadmap (vedi PIANO-MAESTRO/08-ROADMAP-FASI.md) dopo fine swarm F1-bis
 7. **YouTube ingestion** @Legamidiamore + @dosementale -- task 7.0/F-MB1, sessione dedicata
-
----
-
-# STATO EMPIRE — Aggiornamento sessione Arena (2026-07-19)
-
-## ✅ Sessione Arena completata (Max via Arena)
-
-### 🤖 Skill Master-Build-Architecture
-- Ricostruita completamente con tutti i componenti mancanti
-- **3 agenti QA completati**: coverage-verifier-agent, failure-mode-validator-agent, target-schema-validator-agent (tutti con 7 file canonici)
-- **7 cartelle knowledge-pack popolate**: anti-patterns, processes, decision-trees, templates, FAQ, external-sources, master
-- **Totale**: 32 file creati/modificati, 2862 righe aggiunte
-- Commit: 865f3c7, e8dfcbe, e1be0f2
-- Branch: arena/019f7a88-digital-empire
-- **Status**: ✅ Pushato su GitHub
-
-### 📊 Perfezionamento Piani Revenue
-Creati 3 nuovi file operativi in `company/Memory/`:
-1. **ANALISI-PIANI-20260719.md** — Analisi critica con 7 gap identificati e 5 perfezionamenti proposti
-2. **CALENDARIO-ESECUTIVO-SETTIMANA1.md** — Calendario G1-G7 con task Max/Gael/Claude, done-when, gate giornalieri
-3. **REVENUE-DASHBOARD.md** — Dashboard metriche LIVE per tracciamento revenue (pipeline concessionari, vendite, pagine, YouTube, promo-kit)
-
-Dossier 16 aggiornato con:
-- Decision Gate Max (7 decisioni bloccanti)
-- Done When per ogni task Gael (criteri verificabili)
-- Risk Register (7 rischi con mitigazioni)
-- File di supporto operativi (link a calendario/dashboard)
-
-### 📋 Prossimi Step
-- **Gael**: EmpireDesk P4 (se non completato), poi task revenue (funnel Manuale, caroselli, V2-2 lotto 4)
-- **Max**: Decisioni bloccanti (prezzo Manuale B-003, nome rebrand PreventivoForge), lista 7 concessionari, contatti S1
-- **Vedere**: `CALENDARIO-ESECUTIVO-SETTIMANA1.md` e `REVENUE-DASHBOARD.md` per dettaglio
-
-### 🔗 File di riferimento
-- Skill ricostruita: `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/master-build-architecture/`
-- Piani perfezionati: `company/Memory/{ANALISI-PIANI-20260719,CALENDARIO-ESECUTIVO-SETTIMANA1,REVENUE-DASHBOARD}.md`
-- Dossier 16: `PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md`
-- CP sessione: `company/Memory/checkpoints/CP-20260719-003.md`

@@ -16,6 +16,10 @@ a = Analysis(
         ('concessionarie', 'concessionarie'),
         ('implementation', 'implementation'),
         ('ui', 'ui'),
+        # WebView2 Runtime bootstrapper (Microsoft, firmato): l'app lo esegue al primo avvio
+        # se il runtime manca sul PC del cliente → l'interfaccia premium parte SEMPRE
+        # (senza, pywebview falliva e ripiegava sulla GUI Tkinter di riserva, brutta).
+        ('assets/MicrosoftEdgeWebview2Setup.exe', '.'),
     ],
     hiddenimports=[
         # moduli pipeline (importati a runtime via sys.path)

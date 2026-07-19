@@ -1,0 +1,31 @@
+{
+  "video_id": "t67-j2LiXgQ",
+  "title": "Copywriting: come iniziare a lavorare come copywriter autonomo",
+  "creator": "Andrei Pascu",
+  "run": "andrei-pascu-001/cat1-copywriting",
+  "video_number": 4,
+  "total_cat": 29,
+  "ingestion_date": "2026-07-09",
+  "duration_sec": 797,
+  "duration_hms": "00:13:17",
+  "chapters": 0,
+  "subtitles": ["it", "en"],
+  "frames_extracted": 399,
+  "frames_read": 11,
+  "frames_skipped": 1,
+  "frame_interval": 2,
+  "knowledge_atoms": 22,
+  "visual_passages": 2,
+  "stages_completed": ["S1", "S2", "S3", "S4", "S5", "S7"],
+  "no_finto_result": "PASS",
+  "p12_traceability": true,
+  "watch_001": {
+    "n_video": 4,
+    "n_memory_empire": 4,
+    "match": true
+  },
+  "wiki_pages_created": [
+    "sources/Source_Andrei_Pascu_Copywriting_Freelance_Autonomo.md",
+    "concepts/Concept_Pain_Amplification_Urgency_Copy.md"
+  ]
+}
