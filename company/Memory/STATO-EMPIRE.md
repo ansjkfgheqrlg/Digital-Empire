@@ -11,31 +11,34 @@
 **Ordine del giorno Gael: 1) EMPIRE DESK P1-P4 · 2) task revenue dossier 16 (audit pagine, funnel).**
 **Lotto 3 dossier: se non chiuso, va IN CODA a Empire Desk oggi (ordine Max esplicito).**
 
-## ⚠️ COORDINAMENTO ATTIVO — GAEL, V2-2 LOTTO 3 (avviato 2026-07-19)
-**Scope bloccato (Max: non toccare questi file finché non chiudo):**
-`PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md` (NUOVO) +
-`PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md` · `06b-ECOSISTEMA-FORGE-V2.md` ·
-`06c-ECOSISTEMA-INTELLIGENCE-V2.md` · `06d-ECOSISTEMA-OPERATIONS-V2.md` (NUOVI — split del v1
-`06-ECOSISTEMI-CORE.md`, che resta intatto come riferimento). Nessun altro file toccato.
-**SPEC (9 passi, ADR-006):**
-- DONE WHEN: 5 dossier -V2.md scritti, ciascuno nel formato già stabilito da 04-MARKETING-V2
-  (0.Missione+DONE WHEN, 1.Posizione/handoff, 2.Reparti L2 v2, 3.Roster agenti, 4.Workflow
-  CF-grade, 5.Asset wrappati ADR-003, 6.Skill nuove, 7.KPI/gate, 8.Ruflo, 9.Namespace memoria,
-  10.Build plan, 11.Pre-mortem, 12.Connessioni); reparti scalati a team 6-10 agenti + 1-5 WF
-  ciascuno (direttiva scala §2); 0 dati inventati (numeri/target solo dove il v1 già li aveva
-  o sono esplicitamente stimati come tali).
-- Out-of-scope: costruzione CF-grade del CONTENUTO reparti (quella è V2-6, dopo); build swarm
-  vero (Ruflo) — qui solo dossier di progettazione.
-- Dipendenze: v1 `05-ECOSISTEMA-MULTIBUSINESS.md` + `06-ECOSISTEMI-CORE.md` (basi) + ADR-007
-  (`11-PIANO-V2-DIRETTIVA-SCALA.md`) + formato di riferimento `04-ECOSISTEMA-MARKETING-V2.md`.
-- Budget: swarm 3 agenti paralleli (Agent A: 05-MB; Agent B: 06a+06b; Agent C: 06c+06d).
-**PRE-MORTEM:** (1) agenti muoiono a metà file → prompt idempotenti, verificano l'esistente
-prima di scrivere; (2) collisione case-insensitive Title-Case (lezione CP-20260616-001) →
-naming fisso dettato nel prompt; (3) dati/numeri inventati (rischio Piano Maestro) → vincolo
-esplicito "solo dai dossier v1 o marcati [stima]".
-**RIPRESA (se sessione si interrompe):** verifica quali dei 5 file esistono già su disco sotto
-`PIANO-MAESTRO/`; completa solo i mancanti; poi GATE→REVIEW→TEST→CP→push (chiude V2-2 Lotto 3,
-sblocca V2-2 Lotto 4: 07-BACKBONE, 08-ROADMAP, 09-MEMORY).
+## ✅ GAEL — V2-2 LOTTO 3 COMPLETATO (2026-07-19, CP-20260719-001)
+**Chiuso PRIMA di vedere l'ordine EMPIRE DESK qui sopra (era già a buon punto); ora si passa
+a EMPIRE DESK come da ordine Max. RIPRESA V2-2 Lotto 4 (dopo Empire Desk): `07-BACKBONE-
+RUFLO-SKILLS-V2.md`, `08-ROADMAP-FASI-V2.md`, `09-ECOSISTEMA-MEMORY-V2.md` — poi V2-2 chiuso
+(9/9 ecosistemi + 2/2 organi) e si apre V2-3 (build organo MAXIMILIAN).**
+
+Scritti 5 dossier via swarm 3 agenti paralleli (interrotto una volta a metà per chiusura
+sessione, ripreso con successo via SendMessage sul transcript — nessun file perso, nessuna
+duplicazione: nessuno dei 5 era ancora stato scritto al momento dell'interruzione):
+- `PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md` (803 righe, 12 reparti incl. nuovo
+  `MB-Portfolio` di governo cross-istanza, 72 agenti)
+- `PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md` (570 righe, 5 reparti — WEB-ENGINEERING
+  mega-reparto, 45 agenti)
+- `PIANO-MAESTRO/06b-ECOSISTEMA-FORGE-V2.md` (567 righe, 5 reparti, 40 agenti — nota meta:
+  FORGE si auto-descrive con lo stesso standard che impone agli altri)
+- `PIANO-MAESTRO/06c-ECOSISTEMA-INTELLIGENCE-V2.md` (646 righe, 5 reparti, 35 agenti — Empire
+  Studio/Memory Empire wrappati come liaison, MAI duplicati nel roster, ADR-003 rispettato)
+- `PIANO-MAESTRO/06d-ECOSISTEMA-OPERATIONS-V2.md` (638 righe, 5 reparti, 37 agenti — 65% Haiku,
+  coerente col principio v1 "ecosistema più Haiku-heavy della holding")
+**Decisione architetturale presa (chiudeva un pending del roadmap):** split del v1
+`06-ECOSISTEMI-CORE.md` in 4 file `06a/06b/06c/06d` (non rinumerati 06/07/08/09 per evitare
+collisione con `07-BACKBONE-RUFLO-SKILLS.md`/`08-ROADMAP-FASI.md`/`09-ECOSISTEMA-MEMORY.md`
+già esistenti). v1 intatto come riferimento (ADR-003).
+**Gate automatico:** 0 stub/TODO/placeholder, 13/13 sezioni (0-12) presenti su tutti e 5 i
+file, cross-link coerenti tra i 4 core + verso 00/04/11-PIANO-MAESTRO. **Review indipendente**
+(manuale, 5-bis Maximilian non ancora attivo/V2-3): letti a campione 05 e 06b, qualità alta,
+coerenti col formato di 04-MARKETING-V2. 1 refuso minore corretto (path duplicato in un
+blockquote). `V2-INDEX.md` aggiornato (8/9 ecosistemi blueprint, ~477 agenti progettati totali).
 
 ---
 

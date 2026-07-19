@@ -3,7 +3,7 @@
 > Punto unico da cui vedere lo stato dell'intera ricostruzione V2 (ADR-007, direttiva
 > `11-PIANO-V2-DIRETTIVA-SCALA.md`). Aggiornato a ogni lotto. Principio Maximilian:
 > **visibilità totale — niente conoscenza implicita, tutto navigabile.**
-> Aggiornato: 2026-06-16.
+> Aggiornato: 2026-07-19 (Gael, CP-20260719-001 — lotto 3 chiuso).
 
 ---
 
@@ -31,23 +31,30 @@ Un dossier che descrive 76 agenti resta markdown finché V2-3+ non costruisce gl
 | 04 | `04-ECOSISTEMA-MARKETING-V2.md` | 6 | ~49 | 22 | ✅ lotto 1 | ⬜ V2-6 |
 | 03 | `03-ECOSISTEMA-CONTENT-FACTORY-V2.md` (mega) | 3 aree+8 | ~76 | 23 | ✅ lotto 2 | ⬜ V2-6 |
 | 02 | `02-ECOSISTEMA-INFOBUSINESS-V2.md` (mega) | 5 aree | ~48 | 15 | ✅ lotto 2 | ⬜ V2-6 |
-| 05 | `05-...-V2.md` | — | — | — | ⬜ lotto 3 | ⬜ V2-6 |
-| 06 | `06-CORE` → **proposta split in 4** (vedi sotto) | — | — | — | ⬜ lotto 3-4 | ⬜ V2-6 |
-| 07 | `07-...-V2.md` | — | — | — | ⬜ lotto 4 | ⬜ |
-| 08 | `08-...-V2.md` | — | — | — | ⬜ lotto 4 | ⬜ |
-| 09 | `09-...-V2.md` | — | — | — | ⬜ lotto 4 | ⬜ |
+| 05 | `05-ECOSISTEMA-MULTIBUSINESS-V2.md` | 12 | ~72 | — | ✅ lotto 3 | ⬜ V2-6 |
+| 06a | `06a-ECOSISTEMA-PLATFORM-V2.md` | 5 | ~45 | 16 | ✅ lotto 3 | ⬜ V2-6 |
+| 06b | `06b-ECOSISTEMA-FORGE-V2.md` | 5 | ~40 | 15 | ✅ lotto 3 | ⬜ V2-6 |
+| 06c | `06c-ECOSISTEMA-INTELLIGENCE-V2.md` | 5 | ~35 | 20 | ✅ lotto 3 | ⬜ V2-6 |
+| 06d | `06d-ECOSISTEMA-OPERATIONS-V2.md` | 5 | ~37 | 17 | ✅ lotto 3 | ⬜ V2-6 |
+| 07 | `07-...-V2.md` (BACKBONE-RUFLO-SKILLS) | — | — | — | ⬜ lotto 4 | ⬜ |
+| 08 | `08-...-V2.md` (ROADMAP-FASI) | — | — | — | ⬜ lotto 4 | ⬜ |
+| 09 | `09-...-V2.md` (ECOSISTEMA-MEMORY) | — | — | — | ⬜ lotto 4 | ⬜ |
 
-**Blueprint completati: 4/9 ecosistemi + 2 organi di vertice. Costruiti: 0.**
-**Agenti progettati nei v2 finora: ~248. Censiti in `registro-agenti.yaml`: 19.** → gap da colmare.
+**Blueprint completati: 8/9 ecosistemi (01,02,03,04,05,06a,06b,06c,06d — nota: 06 conta come 4
+ecosistemi separati dopo lo split) + 2 organi di vertice. Costruiti: 0.**
+**Agenti progettati nei v2 finora: ~477 (248 lotto 1-2 + 229 lotto 3: 72+45+40+35+37).
+Censiti in `registro-agenti.yaml`: 19.** → gap da colmare, resta in BACKLOG (ADR-005).
 
-## Proposta split 06-CORE (decisione per Max — default proposto)
+## Split 06-CORE — ESEGUITO (CP-20260719-001, Gael)
 
-Il v1 `06-ECOSISTEMI-CORE.md` impacchetta 4 ecosistemi perché in v1 erano "minori". A scala v2
-("ogni cosa è un'azienda") il default proposto è **4 dossier v2 distinti**:
-`06-PLATFORM-V2` · `07-FORGE-V2` · `08-INTELLIGENCE-V2` · `09-OPERATIONS-V2`
-(con rinumerazione coerente da concordare). Razionale: Forge (crea agenti/skill) e Operations
-(runtime/costi) sono critici e meritano dossier propri come gli altri ecosistemi.
-**Max approva/cambia.** Finché non deciso, il lotto resta a slot pronto (ADR-005).
+Il v1 `06-ECOSISTEMI-CORE.md` impacchettava 4 ecosistemi perché in v1 erano "minori". A scala
+v2 ("ogni cosa è un'azienda") sono stati splittati in **4 dossier v2 distinti**:
+`06a-ECOSISTEMA-PLATFORM-V2.md` · `06b-ECOSISTEMA-FORGE-V2.md` ·
+`06c-ECOSISTEMA-INTELLIGENCE-V2.md` · `06d-ECOSISTEMA-OPERATIONS-V2.md`.
+**Naming `06a/06b/06c/06d` (non rinumerato 06/07/08/09)** per evitare collisione con i file già
+esistenti `07-BACKBONE-RUFLO-SKILLS.md`, `08-ROADMAP-FASI.md`, `09-ECOSISTEMA-MEMORY.md` (che
+restano con la loro numerazione, sono dossier trasversali diversi, non ecosistemi core). Il v1
+`06-ECOSISTEMI-CORE.md` resta intatto come riferimento (ADR-003) — non archiviato, non toccato.
 
 ## Roadmap V2 (da `11-PIANO-V2` §10)
 
@@ -55,7 +62,7 @@ Il v1 `06-ECOSISTEMI-CORE.md` impacchetta 4 ecosistemi perché in v1 erano "mino
 |---|---|---|
 | V2-0 | direttiva + ADR-007 + corpus | ✅ |
 | V2-1 | F1-bis (base v1) | ✅ |
-| V2-2 | dossier v2 (9 ecosistemi + MAXIMILIAN + MANDATO) | 🔄 4/9 + 2/2 organi |
+| V2-2 | dossier v2 (9 ecosistemi + MAXIMILIAN + MANDATO) | 🔄 8/9 (lotto 3 chiuso) + 2/2 organi — resta lotto 4 (07/08/09) |
 | V2-3 | **build** organo MAXIMILIAN (attiva review-gate 5-bis) | ⬜ priorità alta |
 | V2-4 | build Board v2 (7 figure ~70 agenti) | ⬜ |
 | V2-5 | build Mandato-ecosistema + Sentinelle + Guilds v2 | ⬜ |

@@ -1,7 +1,7 @@
 # 🏭 05 — ECOSISTEMA MULTI-BUSINESS V2 (Dossier EMPIRE OS · L1 #05)
 
 > Dossier v2 (V2-2, ADR-007) — amplia il v1 `05-ECOSISTEMA-MULTIBUSINESS.md` a scala CF-grade.
-> Fonte: `11-PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §2.
+> Fonte: `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §2.
 >
 > **Ecosistema L1 #05 della holding Digital Empire Group.** Tre sotto-ecosistemi paralleli —
 > (A) YouTube Automation `MB-YT`, (B) Publishing/KDP `MB-PUB`, (C) E-commerce `MB-ECOM` — più
