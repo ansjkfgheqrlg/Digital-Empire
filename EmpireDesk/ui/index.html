@@ -133,18 +133,21 @@
     return '<span class="badge">idle</span>';
   }
 
+  const INPUT_PLACEHOLDER = { url: "URL YouTube…", path: "Percorso file carosello.json…" };
+
   function render(){
     gridEl.innerHTML = "";
     tiles.forEach(t=>{
       const card = document.createElement("div");
       card.className = "tile";
-      const needsUrl = t.input === "url";
+      const needsInput = !!t.input;
+      const placeholder = INPUT_PLACEHOLDER[t.input] || "Input…";
       card.innerHTML = `
         <div class="top"><span class="icon">${t.icon}</span><span class="name">${escapeHtml(t.name)}</span></div>
         <div class="desc">${escapeHtml(t.desc)}</div>
         <div class="row2">
           ${badgeFor(t)}
-          ${needsUrl ? '<input class="urlin" placeholder="URL YouTube…">' : ''}
+          ${needsInput ? `<input class="urlin" placeholder="${escapeHtml(placeholder)}">` : ''}
           <button class="tbtn ${t.kind==='readonly' ? 'ghost' : ''}" data-id="${t.id}">
             ${t.kind==='readonly' ? 'Apri' : (t.running ? 'In corso…' : 'Avvia')}
           </button>
@@ -153,7 +156,7 @@
       if (t.running) btn.disabled = true;
       btn.addEventListener("click", ()=>{
         if (t.kind === "readonly") { openReadonly(t); return; }
-        const input = needsUrl ? card.querySelector(".urlin").value : null;
+        const input = needsInput ? card.querySelector(".urlin").value : null;
         launchTile(t.id, input);
       });
       gridEl.appendChild(card);
