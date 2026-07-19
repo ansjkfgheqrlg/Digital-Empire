@@ -1,15 +1,47 @@
-# STATO EMPIRE -- aggiornato 2026-07-19 (ordine Max: EMPIRE DESK oggi)
+# STATO EMPIRE -- aggiornato 2026-07-19 15:25 (ordine Max: FOCUS TOTALE EMPIRE DESK, lavoro diviso metà/metà)
 
-## 🚨 ORDINE MAX 2026-07-19 — GAEL: EMPIRE DESK v0.1 ENTRO OGGI (priorità #1)
-**Costruire l'app .exe piattaforma di TUTTO: `EmpireDesk.exe`.** Spec completa e vincolante:
-`PIANO-MAESTRO/17-EMPIRE-DESK-APP.md`. In sintesi:
-- Launcher desktop premium (pywebview + HTML empire-style + PyInstaller — IL TUO pattern PreventivoForge).
-- 8 tile che lanciano i runtime ESISTENTI via subprocess (outreach email/IG/LinkedIn/scraper,
-  PreventivoForge, caroselli, Empire Studio, STATO dashboard). ADR-003: SOLO wrapper, zero riscritture.
-- Step P1→P4 oggi (shell → bridge subprocess → tile 5-8 → selftest 8/8 + build .exe + CP + push).
-- Gate: ZERO bottoni finti (ogni tile lancia processo reale, exit code visibile), zero secrets, fallback Tkinter.
-**Ordine del giorno Gael: 1) EMPIRE DESK P1-P4 · 2) task revenue dossier 16 (audit pagine, funnel).**
-**Lotto 3 dossier: se non chiuso, va IN CODA a Empire Desk oggi (ordine Max esplicito).**
+## 🚨🚨 ORDINE MAX 2026-07-19 POMERIGGIO — EMPIRE DESK = LAVORO PIÙ IMPORTANTE, DIVISIONE METÀ/METÀ MAX↔GAEL
+**Piano vincolante e completo: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` §5 (appena scritto, leggerlo TUTTO).**
+Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'altro half** (lezione PreventivoForge).
+
+**▶️ GAEL — Half B «Core & Runtime» (owner: app.py · ui/index.html · build_exe.bat · empiredesk.spec):**
+- **B0 SUBITO — chiudi v0.1 OGGI.** Selftest è 7/8: unica FAIL = tile Caroselli, **2 difetti verificati**:
+  1) `app.py` riga ~101: `"script": "scripts/generate.js"` → path vero =
+     `Workfolw crea caroselli à/carousel-factory/scripts/generate.js` (verificato su disco);
+  2) `generate.js` esige un argomento (`process.argv[2]` = file JSON carosello, senza → exit 1; in `input/`
+     non c'è nessun JSON) → aggiungi `"input"` alla tile (campo path JSON, come l'URL della tile Studio),
+     altrimenti è un bottone che fallisce sempre (Gate 1 violato).
+  Poi: selftest 8/8 → build exe → test doppio click → CP + push. **v0.1 CHIUSA.**
+- **B1 (subito dopo B0 — SBLOCCA MAX):** seam moduli `EmpireDesk/modules/` (contratto §5.3 dossier 17)
+  + switcher pannelli UI. Dopo B1 core in FREEZE (si estende solo via modules/).
+- **B2** scheduler run programmate · **B3** notifiche fine-run · **B4** taskboard live. Dettagli §5.1.
+
+**▶️ MAX — Half A «Dati & Business» (owner: 4 moduli NUOVI, zero collisione col core):**
+- **A1** `modules/metrics.py` (metriche settimana dossier 16 §4, SOLO dati reali) · **A2** `modules/revenue.py`
+  (pipeline S1 concessionari) · **A3** `modules/licenze.py` (wrap gestione-licenze.py, kill-switch già suo) ·
+  **A4** `modules/fliki.py` (WF-YT, quando S5 pronto). Scrivibili DA SUBITO a contratto §5.3; si integrano al push di B1.
+
+**Sequenza: B0 (oggi) → B1 → parallelo pieno A1-A4 ∥ B2-B4. Ogni task chiuso = commit+push+questo blocco aggiornato.**
+*(Nota per Gael: se una sessione Claude ti dice "questa task non esiste" → git pull fallito per rete
+(errore schannel visto 2 volte oggi) — RIPETI il pull finché passa, l'ordine è QUI e nel dossier 17.)*
+
+## 🚨 EMPIRE DESK — DIVISIONE METÀ/METÀ (aggiornamento Max 2026-07-19 pomeriggio — LEGGERE §6 dossier 17)
+**P1-P3 FATTI (bravo Gael: app.py 461 righe + ui + spec). P4 APERTO: selftest 7/8.**
+La spec aggiornata con la divisione è `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` **§6** — vincolante:
+
+**🟣 GAEL — Half B «Core & Runtime» (owner: app.py, ui/index.html, build_exe.bat, spec):**
+- **B0 SUBITO — chiudi v0.1:** fix tile Caroselli (2 difetti GIÀ diagnosticati in §6.0: path vero
+  `Workfolw crea caroselli à/carousel-factory/scripts/generate.js` + campo `input` per il JSON,
+  altrimenti è un bottone finto = Gate 1) → selftest **8/8** → build `dist/EmpireDesk/EmpireDesk.exe`
+  → test DOPPIO CLICK → CP + push. **v0.1 CHIUSA.**
+- **B1 subito dopo (SBLOCCA MAX):** seam moduli `EmpireDesk/modules/` + switcher UI (contratto §6.3).
+  Dopo B1: app.py/index.html in FREEZE — si estende SOLO via modules/.
+- Poi B2 scheduler · B3 notify · B4 taskboard (dettagli §6.1).
+**🔵 MAX — Half A «Dati & Business» (file NUOVI in modules/, zero collisione):**
+- A1 metrics (dossier 16 §4, dati REALI o «nessun dato») · A2 revenue (pipeline 7 concessionari) ·
+  A3 licenze (wrap gestione-licenze.py) · A4 fliki (quando S5 pronto). Scrivibili da subito, si
+  accendono quando Gael pusha B1.
+**Regola: i due half non si toccano MAI (contratto §6.3). Ordine Gael: B0 → B1 → task revenue dossier 16.**
 
 ## ✅ GAEL — V2-2 LOTTO 3 COMPLETATO (2026-07-19, CP-20260719-001)
 **Chiuso PRIMA di vedere l'ordine EMPIRE DESK qui sopra (era già a buon punto); ora si passa
