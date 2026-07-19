@@ -1,0 +1,58 @@
+{
+  "ecosystem": "YouTube",
+  "status": "setup",
+  "phase": 0,
+  "owner": "Gael",
+  "started": "2026-07-19",
+  
+  "metrics": {
+    "agents_created": 0,
+    "agents_target": 23,
+    "workflows_created": 0,
+    "workflows_target": 17,
+    "videos_published": 0,
+    "videos_target_phase1": 1,
+    "automation_percentage": 0,
+    "automation_target_phase1": 20
+  },
+  
+  "infrastructure": {
+    "fliki_api": "not_configured",
+    "youtube_api": "not_configured",
+    "memory_system": "initialized",
+    "workspace": "initialized"
+  },
+  
+  "agents": {
+    "orchestrator": [],
+    "research": [],
+    "production": [],
+    "publishing": [],
+    "analytics": [],
+    "memory": []
+  },
+  
+  "workflows": {
+    "research": [],
+    "production": [],
+    "publishing": [],
+    "optimization": [],
+    "memory": []
+  },
+  
+  "content": {
+    "nicchie": [],
+    "video_test": null,
+    "pipeline_test": null
+  },
+  
+  "business_integration": {
+    "funnel_connected": false,
+    "lead_generation": false,
+    "cross_platform_sync": false
+  },
+  
+  "last_checkpoint": null,
+  "last_decision": null,
+  "last_session": null
+}
