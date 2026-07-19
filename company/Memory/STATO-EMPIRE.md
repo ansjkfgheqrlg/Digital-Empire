@@ -1,3 +1,33 @@
+# STATO EMPIRE -- aggiornato 2026-07-19 (Gael — avvio V2-2 Lotto 3)
+
+## ⚠️ COORDINAMENTO ATTIVO — GAEL, V2-2 LOTTO 3 (avviato 2026-07-19)
+**Scope bloccato (Max: non toccare questi file finché non chiudo):**
+`PIANO-MAESTRO/05-ECOSISTEMA-MULTIBUSINESS-V2.md` (NUOVO) +
+`PIANO-MAESTRO/06a-ECOSISTEMA-PLATFORM-V2.md` · `06b-ECOSISTEMA-FORGE-V2.md` ·
+`06c-ECOSISTEMA-INTELLIGENCE-V2.md` · `06d-ECOSISTEMA-OPERATIONS-V2.md` (NUOVI — split del v1
+`06-ECOSISTEMI-CORE.md`, che resta intatto come riferimento). Nessun altro file toccato.
+**SPEC (9 passi, ADR-006):**
+- DONE WHEN: 5 dossier -V2.md scritti, ciascuno nel formato già stabilito da 04-MARKETING-V2
+  (0.Missione+DONE WHEN, 1.Posizione/handoff, 2.Reparti L2 v2, 3.Roster agenti, 4.Workflow
+  CF-grade, 5.Asset wrappati ADR-003, 6.Skill nuove, 7.KPI/gate, 8.Ruflo, 9.Namespace memoria,
+  10.Build plan, 11.Pre-mortem, 12.Connessioni); reparti scalati a team 6-10 agenti + 1-5 WF
+  ciascuno (direttiva scala §2); 0 dati inventati (numeri/target solo dove il v1 già li aveva
+  o sono esplicitamente stimati come tali).
+- Out-of-scope: costruzione CF-grade del CONTENUTO reparti (quella è V2-6, dopo); build swarm
+  vero (Ruflo) — qui solo dossier di progettazione.
+- Dipendenze: v1 `05-ECOSISTEMA-MULTIBUSINESS.md` + `06-ECOSISTEMI-CORE.md` (basi) + ADR-007
+  (`11-PIANO-V2-DIRETTIVA-SCALA.md`) + formato di riferimento `04-ECOSISTEMA-MARKETING-V2.md`.
+- Budget: swarm 3 agenti paralleli (Agent A: 05-MB; Agent B: 06a+06b; Agent C: 06c+06d).
+**PRE-MORTEM:** (1) agenti muoiono a metà file → prompt idempotenti, verificano l'esistente
+prima di scrivere; (2) collisione case-insensitive Title-Case (lezione CP-20260616-001) →
+naming fisso dettato nel prompt; (3) dati/numeri inventati (rischio Piano Maestro) → vincolo
+esplicito "solo dai dossier v1 o marcati [stima]".
+**RIPRESA (se sessione si interrompe):** verifica quali dei 5 file esistono già su disco sotto
+`PIANO-MAESTRO/`; completa solo i mancanti; poi GATE→REVIEW→TEST→CP→push (chiude V2-2 Lotto 3,
+sblocca V2-2 Lotto 4: 07-BACKBONE, 08-ROADMAP, 09-MEMORY).
+
+---
+
 # STATO EMPIRE -- aggiornato 2026-07-09 (Max — Empire Studio cat1-copywriting)
 
 ## 🛑 DIRETTIVE MAX ASSOLUTE (2026-07-03 — valgono sempre, leggere per prime)
