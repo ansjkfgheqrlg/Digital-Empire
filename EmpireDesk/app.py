@@ -20,7 +20,6 @@ import os
 import subprocess
 import sys
 import threading
-import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
@@ -56,50 +55,56 @@ PROFILE_DIR = BASE_DIR / "chrome-profile"
 
 # --------------------------------------------------------------------------- #
 # Registro tile — v0.1 (8 automazioni reali, path relativi a REPO_ROOT)
+#
+# "kind" decide COME si costruisce l'argv al lancio (mai un binario congelato al momento
+# dell'import — vedi _python_bin/_node_bin: da frozen, sys.executable è EmpireDesk.exe
+# stesso, NON un interprete Python -> l'argv va risolto a runtime, non qui).
+#   bat      -> ["cmd.exe", "/c", <script>]   (evita WinError 193 su .bat senza shell)
+#   py       -> [_python_bin(), <script>]
+#   node     -> [_node_bin(), <script>]
+#   readonly -> nessun processo, legge solo "path"
 # --------------------------------------------------------------------------- #
 TILES = [
     {
         "id": "email", "icon": "\U0001F4E7", "name": "Outreach Email",
         "desc": "Flusso invio email outreach (300+/gg)",
-        "kind": "proc", "cmd": ["Outreach/AVVIA-EMAIL-LIVE.bat"],
+        "kind": "bat", "script": "Outreach/AVVIA-EMAIL-LIVE.bat",
         "cwd": "Outreach", "input": None,
     },
     {
         "id": "ig", "icon": "\U0001F4F8", "name": "Outreach Instagram",
         "desc": "Flusso outreach Instagram",
-        "kind": "proc", "cmd": ["Outreach/Instagram Automation/_avvia_ig.bat"],
+        "kind": "bat", "script": "Outreach/Instagram Automation/_avvia_ig.bat",
         "cwd": "Outreach/Instagram Automation", "input": None,
     },
     {
         "id": "linkedin", "icon": "\U0001F4BC", "name": "LinkedIn",
         "desc": "Flusso giornaliero LinkedIn (scrape+connect+follow-up)",
-        "kind": "proc", "cmd": ["Outreach/LinkedIn Automation/run_daily.bat"],
+        "kind": "bat", "script": "Outreach/LinkedIn Automation/run_daily.bat",
         "cwd": "Outreach/LinkedIn Automation", "input": None,
     },
     {
         "id": "scraper", "icon": "\U0001F50E", "name": "Scraper Lead",
         "desc": "Scraping lead (scrape_only.py)",
-        "kind": "proc", "cmd": [sys.executable or "python", "Outreach/Outreach Workflow/scrape_only.py"],
+        "kind": "py", "script": "Outreach/Outreach Workflow/scrape_only.py",
         "cwd": "Outreach/Outreach Workflow", "input": None,
     },
     {
         "id": "preventivi", "icon": "\U0001F697", "name": "PreventivoForge",
         "desc": "App preventivi Novacar (annuncio mobile.de -> PDF)",
-        "kind": "proc", "cmd": ["Clienti/Prof Autocad/preventivo-forge/avvia-app.bat"],
+        "kind": "bat", "script": "Clienti/Prof Autocad/preventivo-forge/avvia-app.bat",
         "cwd": "Clienti/Prof Autocad/preventivo-forge", "input": None,
     },
     {
         "id": "caroselli", "icon": "\U0001F3A8", "name": "Caroselli",
         "desc": "Batch caroselli (carousel-factory)",
-        "kind": "proc", "cmd": ["node", "scripts/generate.js"],
+        "kind": "node", "script": "scripts/generate.js",
         "cwd": "Workfolw crea caroselli à/carousel-factory", "input": None,
     },
     {
         "id": "studio", "icon": "\U0001F3AC", "name": "Empire Studio",
         "desc": "Ingest video (incolla URL YouTube)",
-        "kind": "proc",
-        "cmd": [sys.executable or "python",
-                "SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/yt_ingest.py"],
+        "kind": "py", "script": "SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/yt_ingest.py",
         "cwd": "SKILL & Agenti/Empire Studio Suite/empire-studio", "input": "url",
     },
     {
@@ -109,6 +114,26 @@ TILES = [
     },
 ]
 _TILE_BY_ID = {t["id"]: t for t in TILES}
+
+
+def _python_bin() -> str:
+    """L'interprete Python da usare per lanciare gli script .py delle automazioni.
+    In dev è lo stesso interprete che esegue app.py; da .exe (frozen) sys.executable
+    e' EmpireDesk.exe -> va cercato un python reale installato sul PC (PreventivoForge
+    e le altre automazioni Python richiedono comunque Python installato a parte)."""
+    if not getattr(sys, "frozen", False):
+        return sys.executable
+    import shutil
+    for cand in ("python", "python3", "py"):
+        found = shutil.which(cand)
+        if found:
+            return found
+    return "python"  # lascia fallire in modo esplicito (selftest lo segnala)
+
+
+def _node_bin() -> str:
+    import shutil
+    return shutil.which("node") or "node"
 
 
 # --------------------------------------------------------------------------- #
@@ -143,35 +168,37 @@ class TileManager:
             })
         return out
 
+    def _build_argv(self, tile: dict) -> list[str]:
+        script_path = str(REPO_ROOT / tile["script"])
+        if tile["kind"] == "bat":
+            return ["cmd.exe", "/c", script_path]
+        if tile["kind"] == "py":
+            return [_python_bin(), script_path]
+        if tile["kind"] == "node":
+            return [_node_bin(), script_path]
+        raise ValueError(f"kind sconosciuto: {tile['kind']}")
+
     def _resolve_check(self, tile: dict) -> tuple[bool, str]:
-        """Verifica che il comando sia LANCIABILE senza eseguirlo (path esiste, eseguibile trovato)."""
+        """Verifica che il comando sia LANCIABILE senza eseguirlo (path esiste, eseguibile trovato).
+        Non esegue mai il processo (Mandato Art.4.3 — dry-run prima di spendere)."""
         if tile["kind"] == "readonly":
             p = REPO_ROOT / tile["path"]
             return (p.exists(), "" if p.exists() else f"file non trovato: {p}")
-        cmd = tile["cmd"]
         cwd = REPO_ROOT / tile["cwd"]
         if not cwd.exists():
             return False, f"cartella non trovata: {cwd}"
-        # il primo argomento eseguibile: se è un path relativo dentro il repo, verifica che esista;
-        # se è un binario (python/node), verifica che sia raggiungibile.
-        first = cmd[0]
-        first_path = REPO_ROOT / first if not Path(first).is_absolute() else Path(first)
-        if first_path.exists():
-            # se il comando ha un secondo argomento che è uno script, verificalo anche
-            if len(cmd) > 1:
-                script = REPO_ROOT / cmd[1]
-                if not script.exists():
-                    return False, f"script non trovato: {script}"
-            return True, ""
-        # binario su PATH (python/node/ecc.)
-        import shutil
-        exe = shutil.which(first) or shutil.which(Path(first).name)
-        if not exe:
-            return False, f"eseguibile non trovato: {first}"
-        if len(cmd) > 1:
-            script = REPO_ROOT / cmd[1]
-            if not script.exists():
-                return False, f"script non trovato: {script}"
+        script = REPO_ROOT / tile["script"]
+        if not script.exists():
+            return False, f"script non trovato: {script}"
+        if tile["kind"] == "py":
+            exe = _python_bin()
+            import shutil
+            if not (Path(exe).exists() or shutil.which(exe)):
+                return False, "interprete Python non trovato sul PC"
+        elif tile["kind"] == "node":
+            import shutil
+            if not shutil.which("node"):
+                return False, "Node.js non trovato sul PC (richiesto da carousel-factory)"
         return True, ""
 
     def selftest(self) -> list[dict]:
@@ -196,7 +223,7 @@ class TileManager:
                 return {"ok": False, "error": f"non lanciabile: {detail}"}
             if tile.get("input") == "url" and not (user_input or "").strip():
                 return {"ok": False, "error": "serve un URL"}
-            cmd = list(tile["cmd"])
+            cmd = self._build_argv(tile)
             if tile.get("input") == "url":
                 cmd = cmd + [user_input.strip()]
             cwd = str(REPO_ROOT / tile["cwd"])
@@ -207,6 +234,9 @@ class TileManager:
                 creationflags = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
                 job.proc = subprocess.Popen(
                     cmd, cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                    stdin=subprocess.DEVNULL,  # alcuni .bat wrappati finiscono con `pause`:
+                    # senza stdin chiuso resterebbero appesi in attesa di un tasto per sempre
+                    # (tile bloccata su "in corso" a vita) — vedi REGISTRO-ERRORI EDE-1.
                     text=True, bufsize=1, encoding="utf-8", errors="replace",
                     creationflags=creationflags,
                 )
