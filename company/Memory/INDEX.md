@@ -23,6 +23,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260719-001](checkpoints/CP-20260719-001.md) — **V2-2 Lotto 3 COMPLETATO**: 5 dossier V2 (05-MULTI-BUSINESS-V2 + split 06-CORE in 06a-Platform/06b-Forge/06c-Intelligence/06d-Operations), ~229 agenti progettati, gate+review pass, V2-INDEX.md aggiornato — Gael
 - [CP-20260711-002](checkpoints/CP-20260711-002.md) — 🏁 **01-AGENCY CHIUSO 10/10** (182 file, 74 agenti, 28 WF; batch-3 A7/A8/A9/A10; il gate ha trovato+chiuso 2 difetti veri: namespace divergente → `NAMESPACE.md` canonico `agency/a<N>`, 6 README v1 stantii → riscritti; RETRO: write-early + idempotenza sospesa sui residui v1) — Max
 - [CP-20260703-001](checkpoints/CP-20260703-001.md) — **Novacar: GUI App PREMIUM (pywebview HTML/CSS)** (Gael, priorità #1 Max): `ui/index.html` luxury slate+argento (font premium, gradienti/ombre/hover, log colorato), `app.py` pywebview + bridge + fallback Tkinter, titolo "Novacar srl", +glossario Sitzeinstellung. GUI premium confermata WebView2 (dev+.exe). PDF NON toccato (ownership Max). — Gael
 - [CP-20260702-003](checkpoints/CP-20260702-003.md) — **Novacar: PDF modello Novacar + Gate IMG/R + App .exe COSTRUITA** (Gael): template rifatto sul modello (R-01…R-14), `gate_img`+`gate_regole`+`regole-check.json`, 2 agenti QA (qa-immagini, qa-regole-checker), fix logo su bianco. Selftest 6/6 gate verdi + 14/14 regole OK; `PreventivoForge.exe` costruito e validato (dealer Novacar, PDF via cdp). — Gael
