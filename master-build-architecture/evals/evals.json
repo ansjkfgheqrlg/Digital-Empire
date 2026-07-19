@@ -1,0 +1,26 @@
+{
+  "skill_name": "master-architect",
+  "evals": [
+    {
+      "id": 1,
+      "name": "basic-swarm-with-memory",
+      "prompt": "Design a hierarchical swarm for a customer service content factory with full memory ecosystem (checkpoints, decisions, sessions, INDEX) from day one, using Ruflo and content-forge principles. Extract relevant P/PT from knowledge-pack.",
+      "expected_output": "Full topology, 10+ agents with 7 files each, memory/ structure with INDEX updated, PLAN-v2, traceability to sources, no context stuffing, Research-Plan-Reset documented.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "meta-transform-knowledge-pack",
+      "prompt": "Use the content-forge swarm and Ruflo principles to transform the raw knowledge-pack/ (or the skill-planning-knowledge-pack) into the Master Architecture skill itself, with >20 agents one-by-one, memory fin da subito.",
+      "expected_output": "The skill dir with kernel, agents/ (25+), memory/, scripts/, references/knowledge-pack/, evals, packaged. Multiple PLAN-vN. All principles extracted and applied. Memory updated live during build.",
+      "files": ["references/knowledge-pack/KP-PLAN.md"]
+    },
+    {
+      "id": 3,
+      "name": "full-ecosystem-with-ruflo-integration",
+      "prompt": "Architect a complete Master Architecture for an AION-like studio: raw UGC brief → multi-agent swarm (Ruflo) with memory (screenshot style + two-layer) → video/image gen workflows (Content-Forge pipeline) → self-improving. Include all 15 principles + extracts from Ruflo/Content-Forge/Advisor/Skill-Creator.",
+      "expected_output": "MKD, 6 PLAN-vN, 25+ agents specs (7 files), memory/ with 10+ CPs/DECs/SES, topology map, Context Manifests, Ruflo swarm init commands, Python memory tools, evals, failure-modes-log, traceability 100%, no AP01/AP07 etc.",
+      "files": []
+    }
+  ]
+}

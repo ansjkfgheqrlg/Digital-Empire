@@ -1,5 +1,17 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-19 (Empire Desk v0.1 — P1-P3, Gael)
+- BUILD: nuova cartella `EmpireDesk/` — app launcher `.exe` di tutte le automazioni Digital Empire
+  (ordine Max, dossier `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md`). `app.py` con 3 motori GUI in
+  fallback (Chrome-app → pywebview → Tkinter, applicato subito il pattern anti-WebView2 di
+  CP-20260715-001), `TileManager` (subprocess reale su 8 automazioni + poll log-live + selftest),
+  `ui/index.html` premium slate+argento+arancio `#fb4604`. 3 bug reali trovati e corretti in
+  revisione statica del codice (sys.executable da frozen rilanciava l'app invece dello script;
+  WinError193 su .bat senza cmd.exe /c; pause-hang su AVVIA-EMAIL-LIVE.bat/_avvia_ig.bat senza
+  stdin=DEVNULL). Trovato ma non toccato: path hardcoded di un'altra macchina nei bat Outreach
+  (ADR-003, fuori scope). **P4 (selftest+build exe) bloccato**: sessione senza Python/Node
+  installati → da completare su macchina reale. → CP-20260719-002 + STATO-EMPIRE aggiornati.
+
 ## 2026-07-19 (V2-2 Lotto 3 — Gael)
 - INGEST/BUILD: PIANO-MAESTRO, 5 dossier V2 nuovi via swarm 3 agenti paralleli: `05-ECOSISTEMA-MULTIBUSINESS-V2.md` (12 reparti, 72 agenti, nuovo reparto trasversale MB-Portfolio) + split del v1 `06-ECOSISTEMI-CORE.md` in `06a-ECOSISTEMA-PLATFORM-V2.md` (45 agenti), `06b-ECOSISTEMA-FORGE-V2.md` (40 agenti), `06c-ECOSISTEMA-INTELLIGENCE-V2.md` (35 agenti), `06d-ECOSISTEMA-OPERATIONS-V2.md` (37 agenti). Decisione: naming `06a/06b/06c/06d` per evitare collisione con dossier 07/08/09 già esistenti. Gate automatico verde (0 stub, 13/13 sezioni), review a campione fatta. `V2-INDEX.md` e `STATO-EMPIRE.md` aggiornati. → CP-20260719-001.
 

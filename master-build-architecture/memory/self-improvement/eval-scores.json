@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-07-19T13:52:05.310166+00:00",
+  "catalogue_count": 3,
+  "results": [
+    {
+      "id": "basic-swarm-with-memory",
+      "score_1_to_5": 5,
+      "passed": 4,
+      "total": 4,
+      "scope": "Structural readiness for a memory-backed swarm; no external Ruflo runtime was invoked."
+    },
+    {
+      "id": "meta-transform-knowledge-pack",
+      "score_1_to_5": 5,
+      "passed": 4,
+      "total": 4,
+      "scope": "Structural readiness for meta transformation; this is not a generative-model benchmark."
+    },
+    {
+      "id": "full-ecosystem-with-ruflo-integration",
+      "score_1_to_5": 5,
+      "passed": 4,
+      "total": 4,
+      "scope": "Architecture controls, self-improvement plan and agent registry are present; external integrations were not run."
+    }
+  ]
+}
