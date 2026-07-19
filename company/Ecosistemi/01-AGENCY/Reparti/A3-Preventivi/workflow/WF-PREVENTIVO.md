@@ -49,7 +49,7 @@ Call avvenuta + trascrizione → AG-A3-COORD
          ▼
 [STEP 0] AG-A3-COORD — avvio + RECALL
   → avvia countdown 48h call→invio
-  → memory_search("agency/03-preventivi") — preventivi simili, motivi di loss
+  → memory_search("agency/a3") — preventivi simili, motivi di loss
   → memory_search("agency/reasoning") — pattern vincenti/persi nella nicchia
   → GATE-0: trascrizione utilizzabile? Sì → prosegui; no → richiesta appunti a Max
          │
@@ -87,7 +87,7 @@ Call avvenuta + trascrizione → AG-A3-COORD
 [STEP 6] AG-A3-COORD — approvazione + invio
   → approva SOLO dopo gate PASS
   → invio ≤48h dalla call
-  → record in agency/03-preventivi/{id} (stato: inviato)
+  → record in agency/a3/{id} (stato: inviato)
   → attiva AG-A3-FUP → WF-FOLLOWUP-COMMERCIALE
          │
          ▼
@@ -116,7 +116,7 @@ Call avvenuta + trascrizione → AG-A3-COORD
   "lead_id": "LEAD-001",
   "call_source": "A2-Acquisizione",
   "trascrizione_call": "appunti discovery call",
-  "dossier_precall": "agency/01-ricerca/dossier/LEAD-001",
+  "dossier_precall": "agency/a1/dossier/LEAD-001",
   "deadline_invio": "call + 48h"
 }
 ```
@@ -131,7 +131,7 @@ Call avvenuta + trascrizione → AG-A3-COORD
   "esito_gate": "PASS",
   "data_invio": "YYYY-MM-DDTHH:MM:SSZ",
   "stato": "inviato",
-  "namespace_state": "agency/03-preventivi/PREV-001"
+  "namespace_state": "agency/a3/PREV-001"
 }
 ```
 
@@ -139,7 +139,7 @@ Call avvenuta + trascrizione → AG-A3-COORD
 
 ## State
 
-File: `agency/03-preventivi/{preventivo_id}/state.json` — per ogni preventivo: `id`, `lead`,
+File: `agency/a3/{preventivo_id}/state.json` — per ogni preventivo: `id`, `lead`,
 `prodotto`, `esito_gate`, `data_invio`, `stato` (inviato/in_followup/win/loss).
 - Aggiornato ad ogni step; `last_updated` sempre presente.
 - Permette la **ripartibilità a freddo**: se il workflow si interrompe (es. attesa integrazione da

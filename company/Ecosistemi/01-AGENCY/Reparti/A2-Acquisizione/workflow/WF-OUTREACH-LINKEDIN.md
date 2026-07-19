@@ -85,7 +85,7 @@ automazione LinkedIn esistenti — non li riscrive (REGOLE R7).
 [STEP 6] AG-A2-LI — follow-up + routing risposte
   → 05_send_followups.py: follow-up ai non-risponditori (mai a un "no")
   → risposte → AG-A2-TRIAGE (WF-REPLY-BOOKING)
-  → aggiorna agency/02-acquisizione/linkedin/state.json
+  → aggiorna agency/a2/linkedin/state.json
 ```
 
 ---
@@ -122,7 +122,7 @@ automazione LinkedIn esistenti — non li riscrive (REGOLE R7).
 
 ## State
 
-File: `agency/02-acquisizione/linkedin/state.json` — contatori per attività aggiornati durante
+File: `agency/a2/linkedin/state.json` — contatori per attività aggiornati durante
 la run. Ripartibilità a freddo: una run interrotta riprende dai cap residui del giorno.
 
 ---

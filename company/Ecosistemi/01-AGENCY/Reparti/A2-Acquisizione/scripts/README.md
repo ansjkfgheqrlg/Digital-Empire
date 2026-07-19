@@ -79,7 +79,7 @@ Outreach/Instagram Automation/       ← motore Instagram
 Il motore scrive il proprio state in `Outreach/Outreach Workflow/` (`leads.db`,
 `emails_*_ready.json`, `scrape_checkpoint.json`, sessioni). Il reparto NON duplica questi file:
 ne legge gli esiti e scrive il proprio layer di registrazione/learning nei namespace
-`agency/outreach` e `agency/02-acquisizione/{canale}/` (vedi `state/README.md`).
+`agency/outreach` e `agency/a2/{canale}/` (vedi `state/README.md`).
 
 ---
 

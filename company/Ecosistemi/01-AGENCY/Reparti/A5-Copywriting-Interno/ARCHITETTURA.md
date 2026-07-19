@@ -124,7 +124,7 @@ non rilasciabile (Mandato Art.2: prove non promesse).
 | Namespace / Sistema | Relazione |
 |---|---|
 | `agency/outreach` | AG-A5-LEARN legge performance per variante; AG-A5-WRITE scrive template aggiornati |
-| `agency/02-acquisizione/reply/` | AG-A5-OBJ legge obiezioni grezze (anonimizzate) come input libreria |
+| `agency/a2/reply/` | AG-A5-OBJ legge obiezioni grezze (anonimizzate) come input libreria |
 | A2 / `ag-a2-qa` | AG-A5-QA riusa lo stesso Gate Bibbia (pattern 6) — invoca, non duplica |
 | HC-AG-IN-01 (08-INTELLIGENCE) | fornisce obiezioni raccolte da A2 → libreria testata |
 | HC-AG-MK-01 (04-MARKETING) | pezzi grandi (sales page, sequenze lunghe) delegati fuori da A5 |

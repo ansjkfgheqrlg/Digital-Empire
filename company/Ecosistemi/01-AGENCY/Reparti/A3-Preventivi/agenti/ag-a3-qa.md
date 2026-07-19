@@ -46,7 +46,7 @@ posizionamento Empire ("prove non promesse") prima che il documento raggiunga il
 4. **Verifica catalogo** — controlla che il prodotto/bundle e il prezzo provengano dal catalogo
    fisso (4.000/3.500/2.500/8.000 €) e che non vi siano sconti o canoni non autorizzati.
 5. **Registrazione esito gate** — scrive PASS/FAIL + diagnosi nel `state.json` del preventivo
-   in `agency/03-preventivi/`.
+   in `agency/a3/`.
 
 ---
 
@@ -123,7 +123,7 @@ posizionamento Empire ("prove non promesse") prima che il documento raggiunga il
    Una mancante → FAIL.
 7. **Brand voice** — la voce è quella di Digital Empire (autonomia cliente, non dipendenza)?
 8. **Verdetto** — tutti PASS → gate PASS. Uno o più FAIL → gate FAIL con diagnosi puntuale per item.
-   Registra l'esito in `agency/03-preventivi/{id}`.
+   Registra l'esito in `agency/a3/{id}`.
 
 ---
 

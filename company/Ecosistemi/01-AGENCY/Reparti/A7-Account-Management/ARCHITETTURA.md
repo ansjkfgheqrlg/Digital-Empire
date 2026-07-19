@@ -49,7 +49,7 @@ nessun cliente passa di fase senza che SLA, milestone e NPS siano verificati.
 [A4-Delivery: cliente live, contratto firmato]
          │
          ▼
-AG-A7-COORD — assegnazione KAM; apre anagrafica in agency/07-account/clients
+AG-A7-COORD — assegnazione KAM; apre anagrafica in agency/a7/clients
          │
          ▼
 [G+0] AG-A7-ONBOARD — introduce processo, spiega milestone, fissa cadenza touchpoint
@@ -78,11 +78,11 @@ AG-A7-QA — gate finale: NPS raccolto? milestone complete? KAM assegnato per tu
 ### 2.2 Intercettazione churn (WF-RETENTION-ALERT)
 
 ```
-AG-A7-HEALTH — monitora segnali su agency/07-account/health
+AG-A7-HEALTH — monitora segnali su agency/a7/health
   → ticket multipli aperti · risposta cliente lenta · NPS intermedio ≤6
          │
          ▼
-[entro 24h] alert → AG-A7-COORD (registrato in agency/07-account/alerts)
+[entro 24h] alert → AG-A7-COORD (registrato in agency/a7/alerts)
          │
          ▼
 AG-A7-COORD — sceglie azione correttiva:
@@ -104,7 +104,7 @@ upsell-mapper (skill) — mappa opportunità: nuovo sprint, retainer, cross-sell
          ▼
 → A3-Preventivi (upsell sprint/retainer) · → 02-INFO-BUSINESS (cross-sell corso)
 → A6-Marketing-Interno (referral / case study se NPS alto)
-  → AG-A7-COORD registra l'esito in agency/07-account/clients
+  → AG-A7-COORD registra l'esito in agency/a7/clients
 ```
 
 ---
@@ -126,16 +126,16 @@ A7 non lavora ticket tecnici; A4 non gestisce NPS, upsell o churn.
 
 ---
 
-## 4. Namespace memoria — `agency/07-account/...`
+## 4. Namespace memoria — `agency/a7/...`
 
 | Namespace | Contenuto | Owner scrittura |
 |---|---|---|
-| `agency/07-account/clients` | Anagrafica cliente, KAM assegnato, milestone, stato ciclo, esito upsell/referral | AG-A7-COORD |
-| `agency/07-account/health` | Dashboard salute: milestone, ticket aperti (da A4), NPS trend, rischio churn | AG-A7-HEALTH |
-| `agency/07-account/alerts` | Alert churn: segnale, data, azione correttiva, esito, stato | AG-A7-COORD |
-| `agency/07-account/touchpoints` | Log touchpoint: onboarding, mid-review, closure, comunicazioni inviate | AG-A7-COMM |
+| `agency/a7/clients` | Anagrafica cliente, KAM assegnato, milestone, stato ciclo, esito upsell/referral | AG-A7-COORD |
+| `agency/a7/health` | Dashboard salute: milestone, ticket aperti (da A4), NPS trend, rischio churn | AG-A7-HEALTH |
+| `agency/a7/alerts` | Alert churn: segnale, data, azione correttiva, esito, stato | AG-A7-COORD |
+| `agency/a7/touchpoints` | Log touchpoint: onboarding, mid-review, closure, comunicazioni inviate | AG-A7-COMM |
 
-**Regola di integrità:** nessun cliente può esistere in `agency/07-account/clients` senza
+**Regola di integrità:** nessun cliente può esistere in `agency/a7/clients` senza
 campo `kam` popolato. Un cliente senza KAM assegnato è un'anomalia bloccante (vedi REGOLE R1).
 Nessun dato personale sensibile (PII) oltre nome contatto e ruolo: i recapiti vivono nel CRM,
 non nello state (vedi `state/README.md`).
@@ -158,7 +158,7 @@ non nello state (vedi `state/README.md`).
 ## 6. State e ripartibilità
 
 Ogni esecuzione di WF-CUSTOMER-LIFECYCLE produce un `state.json` in
-`agency/07-account/clients/{client_id}/` con i campi:
+`agency/a7/clients/{client_id}/` con i campi:
 - `client_id` — identificativo univoco del cliente
 - `kam` — agente AG-A7-COORD assegnato (obbligatorio, mai vuoto)
 - `fase_ciclo` — onboarding / delivery / supporto / closure / chiuso

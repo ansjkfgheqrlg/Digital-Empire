@@ -43,7 +43,7 @@ resta "in sospeso" senza esito.
 5. **Handoff loss** — su loss, passa ad AG-A3-LEARN il caso con i segnali raccolti, perché il
    motivo venga registrato in `agency/reasoning` (motivo loss SEMPRE registrato).
 6. **Aggiornamento state** — aggiorna lo stato del preventivo (`in_followup` → `win`/`loss`) in
-   `agency/03-preventivi/`.
+   `agency/a3/`.
 
 ---
 
@@ -88,7 +88,7 @@ resta "in sospeso" senza esito.
    Nessuna risposta dopo D+10 → loss "no risposta".
 5. **Determina l'esito** — win o loss. Mai lasciare il preventivo "aperto" oltre D+10.
 6. **Handoff** — win → `HC-AG-AM-01` ad A7 + AG-A3-COORD per scope ad A4. Loss → AG-A3-LEARN con i segnali.
-7. **Aggiorna state** — registra touch ed esito in `agency/03-preventivi/{id}`.
+7. **Aggiorna state** — registra touch ed esito in `agency/a3/{id}`.
 
 ---
 

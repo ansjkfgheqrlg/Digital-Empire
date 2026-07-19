@@ -49,7 +49,7 @@ in upsell (→ A3), referral (→ A6) o cross-sell (→ 02-INFO).
 | ID | File | Scopo | Gate di uscita |
 |---|---|---|---|
 | **WF-CUSTOMER-LIFECYCLE** | `workflow/WF-CUSTOMER-LIFECYCLE.md` | Presidiare ogni cliente dalla firma al termine dei 90gg con touchpoint strutturati | AG-A7-QA: NPS raccolto entro G+90; milestone loggate; nessun cliente senza KAM |
-| **WF-RETENTION-ALERT** | `workflow/WF-RETENTION-ALERT.md` | Intercettare rischi di churn PRIMA che diventino perdita del cliente | AG-A7-QA: alert entro 24h dal segnale; azione registrata in `agency/07-account/alerts` |
+| **WF-RETENTION-ALERT** | `workflow/WF-RETENTION-ALERT.md` | Intercettare rischi di churn PRIMA che diventino perdita del cliente | AG-A7-QA: alert entro 24h dal segnale; azione registrata in `agency/a7/alerts` |
 
 ---
 
@@ -92,7 +92,7 @@ in upsell (→ A3), referral (→ A6) o cross-sell (→ 02-INFO).
 
 ## Escalation
 
-- Cliente senza KAM assegnato rilevato in `agency/07-account/clients` → AG-A7-QA blocca; AG-A7-COORD assegna prima di qualsiasi altra azione.
+- Cliente senza KAM assegnato rilevato in `agency/a7/clients` → AG-A7-QA blocca; AG-A7-COORD assegna prima di qualsiasi altra azione.
 - NPS intermedio ≤6 o segnale churn senza azione entro 24h → AG-A7-HEALTH escala ad AG-DIR.
 - Cliente a rischio che richiede intervento commerciale → AG-A7-COORD coinvolge Max (no decisione autonoma su sconti/rimborsi).
 - Conflitto su scope tra cliente e A4-Delivery → AG-A7-MID media; se non risolto → AG-DIR.

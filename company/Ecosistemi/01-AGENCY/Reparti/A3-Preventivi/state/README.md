@@ -17,14 +17,14 @@ Last updated: 2026-06-22
 
 | Namespace | Path AgentDB | Contenuto | Owner scrittura | Chi legge |
 |---|---|---|---|---|
-| Preventivi | `agency/03-preventivi/` | Ogni preventivo: id, lead, prodotto, esito gate, data invio, stato | AG-A3-COORD | AG-A3-QA, AG-A3-FUP, AG-A3-PROP (recall) |
+| Preventivi | `agency/a3/` | Ogni preventivo: id, lead, prodotto, esito gate, data invio, stato | AG-A3-COORD | AG-A3-QA, AG-A3-FUP, AG-A3-PROP (recall) |
 | Reasoning | `agency/reasoning` | Win/loss con causa, categoria, nicchia; pattern del ReasoningBank | AG-A3-LEARN | AG-A3-PROP (recall), AG-A3-COORD |
 
 ---
 
 ## Struttura file di stato
 
-### Preventivo state (`agency/03-preventivi/{preventivo_id}/state.json`)
+### Preventivo state (`agency/a3/{preventivo_id}/state.json`)
 
 ```json
 {

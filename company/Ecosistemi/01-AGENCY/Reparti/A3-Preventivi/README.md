@@ -1,80 +1,138 @@
-# A3 — PREVENTIVI
+---
+Type: REPARTO
+Status: Active
+Tags: #reparto #agency #preventivi #proposta #pricing #gate #A3
+Created: 2026-07-11
+Last updated: 2026-07-11
+---
 
-> Reparto L2 di 01-AGENCY · Coordinatore: `AG-A3-COORD` (opus) · Topologia: `pipeline`
-> Fonte vincolante: `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY.md` §2-A3
+# A3 — Preventivi
 
-## Cosa fa
+> **Ecosistema:** 01-AGENCY · **Livello:** L2 Reparto · **Dossier:** `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md §A3`
+> **Standard:** CF-grade (ADR-007) · **Topologia:** `pipeline` lineare con gate finale bloccante
 
-Trasforma ogni discovery call in una **proposta problem-first inviata entro 48h**, con pricing
-a catalogo (**mai sconti improvvisati**), che vende l'autonomia del cliente — non la dipendenza.
+---
 
-| Livello | Team | Flusso / Funzione |
-|---|---|---|
-| L3 | `WF-PREVENTIVO` | trascrizione/appunti call → brief strutturato → audit problema → outline problem-first → documento completo → Gate Preventivo → invio → follow-up commerciale |
-| L4 | `T-discovery-brief` | da call a brief: problema, awareness level (aware/unaware), stack attuale, vincoli server/ambiente (skill `discovery-call-brief`) |
-| L4 | `T-problem-audit` | quantifica il problema del cliente (skill `market-audit`, cro_audit) |
-| L4 | `T-proposal-writer` | costruisce il preventivo (skill **`beast-preventivi`** + `market-proposal`) |
-| L4 | `T-pricing-config` | seleziona prodotto/bundle: Outreach Factory €4.000 / Content Factory €3.500 / Second Brain €2.500 / Engine Room €8.000 — one-time, €0 canoni |
-| L4 | `T-proposal-qa` | Gate Preventivo (skill `proposal-gate`) — blocca, non suggerisce |
+## Missione
 
-Agenti L5: `AG-A3-COORD` · `AG-A3-BRIEF-W` · `AG-A3-AUDIT-W` · `AG-A3-PROP-W` (opus) ·
-`AG-A3-PRICE-W` · `AG-A3-QA-W` (opus).
+Trasformare ogni discovery call in una **proposta problem-first inviata entro 48h**, con pricing
+selezionato dal catalogo fisso (**mai sconti improvvisati**), che vende l'autonomia del cliente —
+non la dipendenza.
 
-In più, A3 prepara il **dossier pre-call** per Max (lead + audit + competitor da A1) — la call
-resta umana, ma arriva già istruita. Asset evoluti dentro T-discovery-brief:
-`Agenti/Agency/outreach/script_chiamata_freddo.md`, `genera_tabella_chiamate.py`.
+Il documento apre sempre con il **problema del cliente**, mai con Digital Empire: prove
+verificabili, mai promesse. A3 non decide il prezzo (lo recepisce da team-prezzi, B-003), non
+conduce la call (è di A8/Max) e non consegna il progetto (è di A4): trasforma il problema in una
+proposta a catalogo, gated e spedita in 48h.
 
-## Come si collega
+---
 
-| Direzione | Con chi | Cosa passa |
-|---|---|---|
-| ← A2 Acquisizione | intra-BUS | call prenotata + thread conversazione completo |
-| ← A1 Ricerca | intra-BUS | dossier pre-call (profilo, audit problema, competitor) |
-| → UMANO (Max) | — | dossier pre-call PRIMA della call; proposta pronta per invio |
-| → A4 Delivery | intra-BUS | contratto firmato + scope congelato + prerequisiti ambiente raccolti in call |
-| ← 04 MARKETING | `HC-MK-AG-01` | copy preventivi maggiore (refresh strutturali) |
-| ← 08 INTELLIGENCE | `HC-IN-AG-01` | intelligence di nicchia per argomentare il problema |
-| Memoria | `agency/proposals` | stato, win/loss, motivi — `memory_search` PRIMA di ogni preventivo nuovo |
+## Roster del reparto (8 agenti)
 
-## 🧠 Come si ATTIVA e RAGIONA
+| ID | Agente | File | Tipo | Tier | Ruolo |
+|---|---|---|---|---|---|
+| `AG-A3-COORD` | Coordinatore Preventivi | `agenti/ag-a3-coord.md` | coordinator | opus | Avvia il countdown 48h, esegue la pipeline, approva l'invio dopo il gate |
+| `AG-A3-BRIEF` | Discovery Brief Builder | `agenti/ag-a3-brief.md` | worker | sonnet | Trascrizione call → brief strutturato (skill `discovery-call-brief`) |
+| `AG-A3-AUDIT` | Problem Auditor | `agenti/ag-a3-audit.md` | worker | sonnet | Quantifica il problema con fonte dichiarata (`market-audit`, `cro_audit.py`) |
+| `AG-A3-PROP` | Proposal Writer | `agenti/ag-a3-prop.md` | worker | opus | Scrive il preventivo problem-first (`beast-preventivi` + `market-proposal`) |
+| `AG-A3-PRICE` | Pricing Configurator | `agenti/ag-a3-price.md` | worker | haiku | Seleziona prodotto/bundle dal catalogo fisso; **mai sconti** (B-003) |
+| `AG-A3-QA` | Gate Preventivo | `agenti/ag-a3-qa.md` | verifier | opus | `proposal-gate` end-to-end; **BLOCCA** se non conforme, mai solo suggerisce |
+| `AG-A3-FUP` | Follow-up Commerciale | `agenti/ag-a3-fup.md` | worker | sonnet | 3 touch in 10gg → esito win/loss; rispetta il "no" |
+| `AG-A3-LEARN` | Pattern Learner | `agenti/ag-a3-learn.md` | worker | sonnet | Registra win/loss in `agency/reasoning`; alimenta il ReasoningBank |
 
-**Trigger.**
-1. Call prenotata in calendario → T-discovery-brief prepara il dossier pre-call (prima della call).
-2. Call avvenuta: trascrizione/appunti disponibili → parte `WF-PREVENTIVO` con countdown 48h.
-3. Proposta inviata senza risposta → follow-up commerciale a cadenza definita.
+Tre agenti sono **opus** (COORD, PROP, QA): ognuno porta un giudizio non delegabile —
+orchestrazione, scrittura problem-first, gate del Mandato.
 
-**Decomposizione.** `AG-A3-COORD` esegue la pipeline lineare con gate finale:
-brief (T-discovery-brief) → audit quantificato (T-problem-audit) → selezione prodotto/bundle
-(T-pricing-config: SOLO catalogo) → scrittura problem-first (T-proposal-writer con
-beast-preventivi: tutto ruota attorno al problema del cliente, adattato al livello di
-consapevolezza aware/unaware) → Gate Preventivo (T-proposal-qa).
+---
 
-**Esecuzione.** Prima di scrivere: `memory_search` su `agency/proposals` (preventivi simili,
-motivi di loss) e su `agency/reasoning` (pattern di preventivi persi). Il documento APRE con il
-problema del cliente, mai con Digital Empire. Promesse = solo prove verificabili (Mandato Empire).
-Clausole obbligatorie: proprietà del codice, €0 canoni, setup ≤7gg, supporto 90gg.
+## Workflow del reparto (3 workflow CF-grade)
 
-**Handoff.** Proposta passata dal gate → invio (≤48h dalla call) → record in `agency/proposals`.
-Firma + pagamento verificato (umano) → handoff ad A4 con scope congelato. Loss → motivo
-obbligatorio in `agency/proposals` + pattern in `agency/reasoning`.
+| ID | File | Scopo | Gate di uscita |
+|---|---|---|---|
+| **WF-PREVENTIVO** | `workflow/WF-PREVENTIVO.md` | Da call a proposta inviata in ≤48h: brief → audit → scrittura → pricing → gate → invio | AG-A3-QA: Gate Preventivo PASS; nessun invio senza gate verde |
+| **WF-FOLLOWUP-COMMERCIALE** | `workflow/WF-FOLLOWUP-COMMERCIALE.md` | Presidio 10gg: D+3 (valore) → D+7 (prova) → D+10 (chiusura), max 3 touch | AG-A3-QA: esito win/loss registrato; motivo obbligatorio se loss |
+| **WF-LOSS-ANALYSIS** | `workflow/WF-LOSS-ANALYSIS.md` | Aggrega le loss a 30gg → pattern per categoria × nicchia → report mensile | AG-A3-QA: nessuna conclusione con n<3; significativo ≥5 |
 
-**Failure.**
-- Gate Preventivo boccia → rework con le note del gate (mai bypass), il countdown 48h resta.
-- Brief incompleto (mancano vincoli ambiente) → richiesta integrazione a Max PRIMA di scrivere
-  (i prerequisiti ambiente servono ad A4: il countdown delivery 7gg parte ad ambiente conforme).
-- Richiesta sconto fuori catalogo → NO automatico; eventuale deroga = decisione Board registrata.
-- 2 loss consecutive sulla stessa nicchia → audit pattern + `HC-AG-IN-01` per intelligence aggiornata.
+---
 
-## KPI
+## Gate del reparto — Gate Preventivo
 
-| KPI | Vincolo |
+**Presidio: AG-A3-QA (opus). Bloccante — nemmeno il countdown 48h in scadenza è una deroga.**
+
+| Blocca se | Motivo |
 |---|---|
-| Tempo call→preventivo | target ≤48h |
-| Win rate | misurato dal giorno 1, baseline |
-| Valore medio preventivo | pricing a catalogo: 4.000/3.500/2.500/8.000 € |
+| La proposta non apre con il problema del cliente | Violazione del principio problem-first |
+| Promessa non provabile / metrica senza fonte | Mandato Art.2 — prove, non promesse ([DM] se il dato manca) |
+| Prezzo fuori catalogo o sconto improvvisato | B-003 — il catalogo è vincolante, A3 recepisce e non decide |
+| Clausole obbligatorie mancanti | Proprietà del codice · €0 canoni · setup ≤7gg · supporto 90gg |
+| Vincoli d'ambiente non raccolti | Servono ad A4: il countdown delivery parte ad ambiente conforme |
+
+FAIL → diagnosi per item → rework di AG-A3-PROP → re-gate. **Il countdown 48h non si ferma,
+ma il gate non si bypassa.** Richiesta di sconto fuori catalogo → NO automatico; eventuale
+deroga = decisione Board registrata.
+
+---
+
+## KPI del reparto
+
+| KPI | Owner | Definizione | Baseline |
+|---|---|---|---|
+| Tempo call→preventivo | AG-A3-COORD | Ore da trascrizione call a invio proposta | Target ≤48h |
+| Win rate | AG-A3-LEARN | Preventivi vinti / preventivi inviati nel periodo | [DM] |
+| Valore medio preventivo | AG-A3-PRICE | Valore medio delle proposte a catalogo inviate | [DM] |
+| Loss con causa registrata | AG-A3-LEARN | Loss con campo `causa` popolato / tot loss | Target 100% |
+| Gate bypass rate | AG-A3-QA | Proposte inviate senza gate PASS / tot inviate | Target 0 |
+
+Dettaglio completo → `kpi/KPI.md`.
+
+---
+
+## Handoff e connessioni inter-reparto
+
+| Direzione | Reparto/Ecosistema | Cosa transita |
+|---|---|---|
+| ← riceve da | A2-Acquisizione | Call prenotata + thread di conversazione completo |
+| ← riceve da | A1-Ricerca | Dossier pre-call: profilo lead, audit problema, competitor |
+| ← riceve da | A8-Closing (LOSS) | Pattern di perdita post-call → follow-up commerciale + WF-LOSS-ANALYSIS |
+| ← riceve da | A7-Account-Management | Upsell mappato a fine ciclo cliente (nuovo sprint / retainer) |
+| ← riceve da | 08-INTELLIGENCE | Intelligence di nicchia per argomentare il problema |
+| → consegna a | A8-Closing | Preventivo inviato: scope, pricing a catalogo, prove — base della call di chiusura |
+| → consegna a | A4-Delivery | Scope congelato alla firma + prerequisiti d'ambiente raccolti in call |
+| → consegna a | A7-Account-Management | `HC-AG-AM-01` alla firma: apertura profilo cliente + assegnazione KAM |
+| → consegna a | A5-Copywriting-Interno | Pattern di loss per aggiornare la libreria obiezioni |
+| → consegna a | 08-INTELLIGENCE | `HC-AG-IN-01` — loss pattern aggregati |
+
+**Confine umano:** conduzione della call, firma e verifica del pagamento restano di Max.
+
+---
+
+## Namespace AgentDB
+
+**Chiave canonica: `agency/a3`** (+ `agency/reasoning` condiviso) — fonte di verità: `../../NAMESPACE.md`.
+
+| Namespace | Contenuto | Owner scrittura |
+|---|---|---|
+| `agency/a3` | Ogni preventivo: id, lead, prodotto, esito gate, data invio, stato (inviato / in_followup / win / loss) | AG-A3-COORD |
+| `agency/reasoning` | Win/loss con causa, categoria, nicchia; pattern del ReasoningBank | AG-A3-LEARN |
+
+**Regola di integrità:** ogni loss deve avere il campo `causa` popolato. Un loss senza motivo
+non è un loss chiuso.
+
+---
+
+## Principi e regole
+
+- Principi operativi → `principi/PRINCIPI.md`
+- Regole non negoziabili → `regole/REGOLE.md` (gate · pricing · prove)
+- Stato e ripartibilità a freddo → `state/README.md`
+
+---
 
 ## Connessioni
 
-- `../../Workflow/WF-PREVENTIVO/` — pipeline end-to-end del reparto
-- `../../Funzioni/T-discovery-brief/` · `T-proposal-writer/` · `T-proposal-qa/`
-- `../A2-Acquisizione/` (fornitore call) · `../A4-Delivery/` (cliente interno) · `../A1-Ricerca/` (dossier pre-call)
+- [[ARCHITETTURA]] · `ARCHITETTURA.md` — gerarchia, flussi, confini, namespace
+- [[01-ECOSISTEMA-AGENCY-V2]] · `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md §A3`
+- [[ag-a3-qa]] · `agenti/ag-a3-qa.md` — presidio del Gate Preventivo
+- [[WF-PREVENTIVO]] · `workflow/WF-PREVENTIVO.md`
+- [[WF-LOSS-ANALYSIS]] · `workflow/WF-LOSS-ANALYSIS.md`
+- [[A8-Closing]] · conduce la call sul preventivo prodotto qui
+- [[A4-Delivery]] · destinatario dello scope congelato alla firma

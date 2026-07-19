@@ -118,7 +118,7 @@ Proposta inviata (stato inviato) → AG-A3-FUP
 
 ## State
 
-File: `agency/03-preventivi/{preventivo_id}/state.json` — campo `stato` evolve
+File: `agency/a3/{preventivo_id}/state.json` — campo `stato` evolve
 `inviato → in_followup → win|loss`; ogni touch e l'esito sono registrati con timestamp.
 - Ripartibilità a freddo: se il presidio si interrompe, AG-A3-FUP riprende dal touch non ancora eseguito.
 - L'esito loss alimenta `WF-LOSS-ANALYSIS` via AG-A3-LEARN.

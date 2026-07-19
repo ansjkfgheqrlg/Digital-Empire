@@ -34,12 +34,12 @@ non di sito) → AG-A3-AUDIT lo salta dichiarando lo skip e procede con `market-
 
 ### `preventivo-state-init.py`
 
-**Scopo:** inizializza il `state.json` di un nuovo preventivo in `agency/03-preventivi/{id}/` con i
+**Scopo:** inizializza il `state.json` di un nuovo preventivo in `agency/a3/{id}/` con i
 campi obbligatori vuoti (id, lead, prodotto, esito_gate, data_invio, stato, last_updated). AG-A3-COORD
 lo usa come scaffolding allo Step 0 di `WF-PREVENTIVO`.
 
 **Input:** `{lead_id, call_source}`
-**Output:** `state.json` con stato iniziale `in_lavorazione` in `agency/03-preventivi/{id}/`.
+**Output:** `state.json` con stato iniziale `in_lavorazione` in `agency/a3/{id}/`.
 **Prerequisiti:** nessuno — produce un template, non fa analisi.
 
 ---
@@ -69,7 +69,7 @@ Produce l'input strutturato per il report di `WF-LOSS-ANALYSIS`.
 
 ## Convenzioni
 
-- Tutti gli script producono file in `agency/03-preventivi/` o `agency/reasoning` — mai fuori.
+- Tutti gli script producono file in `agency/a3/` o `agency/reasoning` — mai fuori.
 - Nessuno script invia comunicazioni o fa chiamate API esterne autonome senza input esplicito.
 - Output JSON segue lo schema del namespace corrispondente (vedi `state/README.md`).
 - `cro_audit.py` è wrappato, non modificato (ADR-003): si invoca, non si riscrive.

@@ -1,77 +1,130 @@
-> Fonte: PIANO-MAESTRO/01-ECOSISTEMA-AGENCY.md sez. 2-A5 + sez. 6 + sez. 8
+---
+Type: REPARTO
+Status: Active
+Tags: #reparto #agency #copywriting #apsoc #obiezioni #script #A5
+Created: 2026-07-11
+Last updated: 2026-07-11
+---
 
-# A5 — COPYWRITING-INTERNO
+# A5 — Copywriting Interno
 
-> Reparto L2 di 01-AGENCY · Coordinatore: `AG-A5-COORD` (sonnet) · Topologia: `mesh` piccolo
-> Fonte vincolante: `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY.md` §2-A5
+> **Ecosistema:** 01-AGENCY · **Livello:** L2 Reparto · **Dossier:** `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md §A5`
+> **Standard:** CF-grade (ADR-007) · **Topologia:** `mesh` piccolo (writer ↔ objection ↔ qa)
 
-## Cosa fa
+---
 
-Produce il **copy operativo quotidiano** dell'agency con framework APSOC: template email/DM,
-micro-copy preventivi, script call. I pezzi grandi (sales page, sequenze lunghe, refresh strutturali)
-si chiedono a **04 MARKETING** via `HC-AG-MK-01` — A5 è il consumatore-adattatore locale.
-È il custode della **libreria obiezioni reali**, alimentata dalle conversazioni di A2.
+## Missione
 
-| Livello | Team | Flusso / Funzione |
+Produrre il **copy operativo quotidiano** dell'agency con il framework **APSOC**: template
+email/DM, micro-copy dei preventivi, script per le call. A5 è anche il custode della
+**libreria delle obiezioni reali**, alimentata dalle conversazioni vere di A2.
+
+A5 è il **consumatore-adattatore locale**: i pezzi grandi (sales page, sequenze lunghe, refresh
+strutturali) si chiedono a 04-MARKETING via `HC-AG-MK-01`. Il **Gate Bibbia non è riscritto qui**:
+è lo stesso gate di A2, riusato via cross-link (pattern 6 — una skill, molti reparti; ADR-003).
+
+---
+
+## Roster del reparto (6 agenti)
+
+| ID | Agente | File | Tipo | Tier | Ruolo |
+|---|---|---|---|---|---|
+| `AG-A5-COORD` | Coordinatore Copy | `agenti/ag-a5-coord.md` | coordinator | sonnet | Riceve il brief, orchestra il mesh writer ↔ objection ↔ qa, riporta ad AG-DIR |
+| `AG-A5-WRITE` | APSOC Writer | `agenti/ag-a5-write.md` | worker | sonnet | Scrittura e variazione del copy (skill `cro-copy-architect`, `market-copy`) |
+| `AG-A5-OBJ` | Objection Librarian | `agenti/ag-a5-obj.md` | worker | sonnet | Libreria obiezioni reali → risposte testate **con prove** |
+| `AG-A5-SCRIPT` | Script Writer Call | `agenti/ag-a5-script.md` | worker | sonnet | Script discovery + chiusura per A8-Closing |
+| `AG-A5-LEARN` | Copy Performance Analyst | `agenti/ag-a5-learn.md` | worker | sonnet | Analizza il reply rate per template → propone varianti → alimenta `agency/outreach` |
+| `AG-A5-QA` | Verificatore Gate Bibbia | `agenti/ag-a5-qa.md` | verifier | sonnet | **Bloccante**: riusa il Gate Bibbia di A2 (`../A2-Acquisizione/agenti/ag-a2-qa.md`) |
+
+---
+
+## Workflow del reparto (2 workflow CF-grade)
+
+| ID | File | Scopo | Gate di uscita |
+|---|---|---|---|
+| **WF-COPY-REFRESH** | `workflow/WF-COPY-REFRESH.md` | Refresh data-driven dei template: analisi reply reali → 3 varianti APSOC per canale → gate → rollout graduale (batch 10% + A/B) | AG-A5-QA: Gate Bibbia PASS su ogni variante prima del test |
+| **WF-SCRIPT-CALL** | `workflow/WF-SCRIPT-CALL.md` | Script discovery e chiusura per nicchia, con obiezioni attese e risposte testate | AG-A5-QA: no claim senza prova, no dependency-language, brand voice conforme |
+
+---
+
+## Gate del reparto — Gate Bibbia (riusato da A2)
+
+**Presidio: AG-A5-QA. Bloccante — nessun copy esce senza gate verde.**
+Il gate **non è duplicato**: A5 invoca lo stesso motore di A2 (pattern 6, ADR-003 wrap-not-rewrite).
+
+| # | Check | FAIL se |
 |---|---|---|
-| L3 | `WF-COPY-OUTREACH` | refresh periodico template 3 canali: analisi reply reali → varianti APSOC → gate Bibbia → rollout graduale |
-| L4 | `T-apsoc-writer` | scrittura/variazione copy con skill `cro-copy-architect` + `market-copy` |
-| L4 | `T-objection-handler` | libreria obiezioni reali (da `HC-AG-IN-01`) → risposte testate |
-| L4 | `T-copy-qa` | Gate Bibbia di A2 riusato (pattern #6: una skill, molti reparti) — blocca, non suggerisce |
+| 1 | **Struttura APSOC** | Manca una sezione APSOC, o la Soluzione precede il Problema |
+| 2 | **CTA corretta** | CTA assente, errata o doppia |
+| 3 | **No dependency-language** | Linguaggio che crea dipendenza dall'agenzia, o promesse non provabili |
 
-Agenti L5: `AG-A5-COORD` · `AG-A5-COPY-W` · `AG-A5-OBJ-W` (schede in `../../Agenti/`).
+**Regola obiezioni (Mandato Art.2 — prove, non promesse):** ogni risposta nella libreria deve
+avere il campo `prova` popolato (riferimento a conversazione reale o esito misurato). Senza
+prova → stato `non_validata`, **non rilasciabile**. Nessuna risposta inventata entra in libreria.
 
-## Come si collega
+**Escalation:** copy bocciato per 3 cicli → AG-A5-COORD verifica se il brief è difettoso o il
+target sbagliato; se serve un pezzo strutturale → `HC-AG-MK-01` a 04-MARKETING. Nessun dato
+reale disponibile → A5 **non produce**: segnala il gap ad A2.
 
-| Direzione | Con chi | Cosa passa |
+---
+
+## KPI del reparto
+
+| KPI | Owner | Definizione | Baseline |
+|---|---|---|---|
+| % copy passato al Gate Bibbia al primo giro | AG-A5-QA | Output PASS al primo tentativo / tot prodotti | [DM] |
+| Tempo brief→copy | AG-A5-COORD | Ore da brief a copy gated, per tipo standard (email, DM, script) | [DM] |
+| Uplift reply rate post-refresh | AG-A5-LEARN | Delta reply rate variante adottata vs template precedente | [DM] |
+| Risposte obiezione con prova | AG-A5-OBJ | Risposte con campo `prova` popolato / tot in libreria | Target 100% |
+
+Dettaglio completo → `kpi/KPI.md`.
+
+---
+
+## Handoff e connessioni inter-reparto
+
+| Direzione | Reparto/Ecosistema | Cosa transita |
 |---|---|---|
-| ← A2 Acquisizione | intra-BUS | dati reply reali: reply rate, motivi, obiezioni → input per refresh template |
-| → A2 Acquisizione | intra-BUS | template aggiornati pronti per la run |
-| ← 04 MARKETING | `HC-MK-AG-01` | copy maggiore: nuove sequenze, refresh strutturali, copy per preventivi |
-| ← 08 INTELLIGENCE | `HC-AG-IN-01` (dati obiezioni) | obiezioni raccolte da A2 → libreria testata |
-| Memoria | `agency/outreach` | template attivi + performance per variante per decidere quando refreshare |
+| ← riceve da | A2-Acquisizione | Dati di reply reali (reply rate, motivi) + obiezioni grezze anonimizzate |
+| ← riceve da | A3-Preventivi | Pattern di loss commerciale → alimentano la libreria obiezioni |
+| ← riceve da | A8-Closing | Pattern win/loss dalle call → affinamento degli script |
+| ← riceve da | A6-Marketing-Interno | Case study e proof reali da usare come prove nel copy |
+| ← riceve da | 08-INTELLIGENCE | `HC-AG-IN-01` — obiezioni aggregate e verificate |
+| ← riceve da | 04-MARKETING | `HC-AG-MK-01` — pezzi strutturali grandi (sales page, sequenze lunghe) |
+| → consegna a | A2-Acquisizione | Template aggiornati e **gated**, pronti per la run |
+| → consegna a | A8-Closing | Script discovery/chiusura + libreria obiezioni per la prep call |
 
-Knowledge layer esistente: skill `cold-email`, `agency-scalping`, `cro-copy-architect` (APSOC),
-suite `market-*` (15 skill). Il gate Bibbia (`bibbia_team.py`) è CONDIVISO con A2 (pattern #6):
-A5 è il secondo consumatore autorizzato del gate.
+---
 
-## Come si ATTIVA e RAGIONA
+## Namespace AgentDB
 
-**Trigger.**
-1. Reply rate di A2 scende sotto baseline per 2 cicli → richiesta refresh a A5.
-2. Gate Bibbia boccia in serie un template A2 → template ritirato, A5 produce variante.
-3. Nuova obiezione ricorrente da `HC-AG-IN-01` → `T-objection-handler` aggiorna la libreria.
-4. A3 richiede micro-copy per preventivo specifico → `T-apsoc-writer` produce su brief.
+**Chiave canonica: `agency/a5`** — fonte di verità: `../../NAMESPACE.md`.
 
-**Decomposizione.** `AG-A5-COORD` gestisce il `mesh` piccolo (writer ↔ objection ↔ qa):
-- Brief di refresh arriva con dati reali (reply rate, obiezioni) → `T-apsoc-writer` produce
-  variante APSOC ancorata al problema del target (never generic);
-- `T-objection-handler` verifica che le varianti usino solo risposte con prove reali;
-- `T-copy-qa` passa il Gate Bibbia: se boccia → feedback specifico a `T-apsoc-writer` → ciclo
-  iterativo (mesh) fino a gate PASS;
-- Template approvato → rollout graduale su A2 (test su batch piccolo prima del full rollout).
+| Namespace | Contenuto | Owner scrittura |
+|---|---|---|
+| `agency/a5/templates` | Template attivi per canale + versione + stato gate | AG-A5-WRITE |
+| `agency/a5/performance` | Reply rate per variante, esito A/B, decisione adozione/scarto | AG-A5-LEARN |
+| `agency/a5/obiezioni` | Libreria obiezioni reali (anonimizzate) → risposte testate con prove | AG-A5-OBJ |
+| `agency/a5/script` | Script discovery + chiusura per nicchia, stato gate, consegna ad A8 | AG-A5-SCRIPT |
 
-**Regola obiezioni.** La libreria contiene SOLO obiezioni raccolte da conversazioni reali (da A2 via
-`HC-AG-IN-01`, anonimizzate) con risposte testate su prospect reali. Nessuna risposta inventata
-entra nella libreria: "prove non promesse" si applica anche internamente.
+In lettura: `agency/outreach` (performance per variante) e `agency/a2/reply` (obiezioni grezze).
 
-**Failure.**
-- Copy non passa il Gate Bibbia dopo 3 cicli → escalation a AG-A5-COORD: brief difettoso?
-  Target sbagliato? Referenziale a 04 MARKETING.
-- Nessun dato reale disponibile per il brief → A5 NON produce senza input da A2; segnala il gap.
-- Risposta a obiezione non documentata da prove reali → `T-objection-handler` la blocca;
-  la risposta entra in `agency/reasoning` come "non validata" fino a prova reale.
+---
 
-## KPI
+## Principi e regole
 
-| KPI | Definizione |
-|---|---|
-| % copy passato Gate Bibbia al primo giro | indicatore qualità pipeline interna |
-| Tempo brief→copy | per tipi standard (email, DM, preventivo) |
+- Principi operativi → `principi/PRINCIPI.md`
+- Regole non negoziabili → `regole/REGOLE.md` (gate riusato · prove obbligatorie)
+- Stato e ripartibilità a freddo → `state/README.md`
+
+---
 
 ## Connessioni
 
-- [`../../Workflow/WF-COPY-OUTREACH/`](../../Workflow/WF-COPY-OUTREACH/)
-- [`../../Funzioni/T-apsoc-writer/`](../../Funzioni/T-apsoc-writer/) · [`T-objection-handler/`](../../Funzioni/T-objection-handler/) · [`T-copy-qa/`](../../Funzioni/T-copy-qa/)
-- [`../A2-Acquisizione/`](../A2-Acquisizione/) (cliente e fornitore dati) · [`../A6-Marketing-Interno/`](../A6-Marketing-Interno/) (case study e proof come input copy)
-- [`../../BACKBONE.md`](../../BACKBONE.md) · [`../../ECOSISTEMA.md`](../../ECOSISTEMA.md)
+- [[ARCHITETTURA]] · `ARCHITETTURA.md` — gerarchia, flussi, confini, namespace
+- [[01-ECOSISTEMA-AGENCY-V2]] · `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md §A5`
+- [[ag-a5-qa]] · `agenti/ag-a5-qa.md` — verificatore che riusa il Gate Bibbia
+- [[ag-a2-qa]] · `../A2-Acquisizione/agenti/ag-a2-qa.md` — motore del gate (pattern 6)
+- [[WF-COPY-REFRESH]] · `workflow/WF-COPY-REFRESH.md`
+- [[WF-SCRIPT-CALL]] · `workflow/WF-SCRIPT-CALL.md`
+- [[A8-Closing]] · destinatario degli script call gated

@@ -47,8 +47,16 @@ sblocca V2-2 Lotto 4: 07-BACKBONE, 08-ROADMAP, 09-MEMORY).
    Gael: se testi PreventivoForge e trovi un errore, registralo lì. Prendi sempre l'ULTIMA build (git pull / zip rigenerato).
 
 
+## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 9/29 COMPLETATO (2026-07-11, CP-20260711-001)
+**RIPRESA DA: video 10/29 — `Ahp_6rHSOsU` ("Usa Google Docs come un copywriter PRO") — Stage 1+2 DONE (668s=11m08s, 334 frame 3-digit, 9 capitoli)**
+Pipeline completata per IWCHN_mE2Vo: Stage 1-5 + Stage 7 + Memory Empire C-H. 25 KA P12-traced. 2 wiki pages create. 12 VP schermo documentati. Live 1h02min — Meta Ads Library tutorial + analisi ads brand italiani (Carisma Shoes, La Palestra boxing, melone costume, Corte CAB VANIGLIA).
+- **Top KA**: Meta Ads Library "licenziato e fallire se non usi" · Video=conversione/Photo=retargeting · EU Transparency Reach 1770 Women 30-55 · Imprenditori italiani pieni di soldi · Chiarezza>Creativita "grande danno video incomprensibile"
+- **Visual Passages**: VP-002 Ad Library Latvia homepage · VP-004 filter stack 98 results Laurea Online · VP-006 EU Transparency Women 30-55 excl. Toscana+Veneto · VP-011 costume regale supermercato · VP-012 Corte CAB VANIGLIA
+- **Nuovi Concetti**: Source_Andrei_Pascu_Ads_Library_Live.md + Concept_Meta_Ads_Library_Competitor_Research.md
+- **WATCH-001**: N_video=9, N_MemoryEmpire=9 → MATCH ✅
+
 ## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 8/29 COMPLETATO (2026-07-09, CP-20260709-008)
-**RIPRESA DA: video 9/29 — `IWCHN_mE2Vo` ("Copywriter Analizza Copywriting (Live) [ITA]") — Stage 1 avviato in background**
+**COMPLETATO — vedi dettagli sotto**
 Pipeline completata per lQMO0LdeI2c: Stage 1-5 + Stage 7 + Memory Empire C-H. 29 KA P12-traced. 2 wiki pages create. 6 VP schermo documentati. Live 44:55 — McFit+Dyson analizzati. Mercedes+DJI annunciati ma non analizzati.
 - **Top KA**: Brand Famoso Rule · CPA leva €5→€50K/anno · Headline≠Nome Prodotto · CLV Red Bull · Slogan Vibes vs DR · Knowledge=Pricing Leva
 - **Visual Passages**: VP-001 McFit Hero "SEMPLICEMENTE IN FORMA" · VP-002 Google "simply fit" · VP-003 McFit+ loyalty · VP-004 Dyson Airwrap headline errore · VP-005 trust badges · VP-006 v15s scarcity
@@ -122,6 +130,16 @@ Guida consegna passo-passo: `Clienti/Prof Autocad/COME-CONSEGNARE-A-NOVACAR.md`.
   (10) **REGISTRO-ERRORI + CHECKLIST-CONSEGNA** (`063cd27`): 9 errori E1-E9 (causa+fix+regola). Direttiva #3 = obbligatori.
 - **Riserva AI traduzione ATTIVA** (Groq €0). **Kill-switch LIVE** ("X non paga" → blocco+email). Fabbrica: `/nuovo-concessionario`.
 - **Verificato oggi**: 5 auto scrapate→PDF (Hyundai/Skoda/Volvo/Land Rover/VW) · 6 auto tradotte→0 residui.
+- **🔴 FIX CRITICO 2026-07-15 (Max, CP-20260715-001): GUI PREMIUM SENZA WEBVIEW2 (motore Chrome-app).**
+  Il cliente vedeva la GUI VECCHIA/Tkinter perché sul suo PC mancava il WebView2 Runtime → pywebview
+  ripiegava in silenzio. Non riproducibile da Max (WebView2 c'è sul suo PC) → tentativi al buio.
+  **Soluzione:** nuovo motore `main_chrome_app()` in `app.py` — la stessa `ui/index.html` premium è servita da
+  un mini-server locale (127.0.0.1) e mostrata in una finestra **Google Chrome `--app`** (Chrome è già richiesto
+  da scraping+PDF → sempre presente). Bridge JS↔Python via `POST /api/<metodo>`. Ordine motori: Chrome-app →
+  pywebview → Tkinter. **Testato estraendo lo zip come Novacar → premium OK** (header scuro, Archivio, bollino
+  `v2.1 · 13 lug`, bridge dealers/poll). ⚠️ Scraping NON toccato (headless resta default). Consegna aggiornata:
+  `CONSEGNA-NOVACAR-NUOVA/PreventivoForge-v2.1-13lug.zip` (cartella interna `PreventivoForge-v2.1` + `LEGGIMI-PRIMA.txt`).
+  ⚠️ **Gael**: `app.py` (nuovo motore GUI) — Half B toccato da Max; `ui/index.html` invariata (riusata identica). REGISTRO-ERRORI E11 + regole 12-13.
 - **AGGIORNAMENTO 2026-07-09 (Max, CP-20260709-001): ARCHIVIO SI SVUOTA A OGNI CHIUSURA APP.**
   `archivio.py` +`clear()` (cancella PDF-copia+miniature+indice, NON i PDF di output); `app.py` la chiama dopo chiusura
   finestra (pywebview E Tkinter). **Exe consegna RIBUILDATO** (2026-07-09 10:15) → **zip rigenerato 117.4 MB**
@@ -341,7 +359,32 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   + 4 workflow (PROD 3, STRA 1). **Reparti V2: 94 file, 42 agenti, 12 WF.** Gate struct VERDE
   (10/10 template, 0 magri, 0 vuoti), 5-bis MAXIMILIAN APPROVA. Namespace `infobusiness/{prod,lanc,vend,comm,stra}`.
   **GAEL: continua 03-CONTENT-FACTORY R4→R8 (02 è chiuso, non serve più toccarlo).**
-- 🔴 **MAX ATTIVO — 01-AGENCY build CF-grade a BATCH (2026-06-22):** dossier `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md`
+- 💰 **PIANO ESTATE REVENUE ATTIVO (Max, 2026-07-19) — LEGGERE `PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md`.**
+  Ordine Max: fatturare entro UNA settimana, certezza ≥95%. Analisi: l'unico stream ≥95% = **S1 anticipare
+  i 7 concessionari quasi-confermati da settembre a LUGLIO** (prodotto PreventivoForge già live). Moltiplicatore:
+  **S2 Manuale Claude Code** (chiudere PREZZO B-003 il G1 — bloccante). Estate: S3 pagine lancio + S4
+  mentalita.brutale (SOLO se automazione 100%, carousel-factory wrap) + S5 canali YouTube-Fliki auto
+  (API key in `.env` locale gitignorato — MAI su GitHub).
+  **▶️ GAEL — TASK SETTIMANA (in ordine):** (1) 30min: chiudi CF-R8 → 03 9/9; (2) G1: AUDIT ASSET tutte le
+  pagine (mentalita.brutale, crea.illtuo_impero, altre pagine lancio+sito) → `05-MULTI-BUSINESS/AUDIT-PAGINE-20260719.md`;
+  (3) G2: funnel Manuale (landing empire-premium-style + checkout + 3 email — prezzo arriva da Max G1);
+  (4) G2-G3: batch 7 caroselli crea.illtuo_impero + bio→funnel; (5) G3-G4: pipeline mentalita.brutale 100% auto
+  (produzione→QA→scheduler→report); (6) G4-G5: WF-YT v1 + test 1 video end-to-end API Fliki; (7) G6: analisi
+  competitor 3 nicchie YT → proposta a Max; (8) G7: CP + RETRO con numeri veri. Dettagli nel dossier 16.
+  **▶️ MAX — TASK:** G1 prezzo B-003 con team-prezzi · lista 7 concessionari · G2-G4 contattarli (script pronto
+  da Claude/A8) · G3 approva funnel · G4-G5 sceglie nicchia YT · G6-G7 push vendita Manuale sui canali caldi.
+  **Regola: revenue batte infra questa settimana. Un solo swarm Opus per volta.**
+- 🏁 **01-AGENCY CHIUSO — 10/10 reparti (Max, 2026-07-11 — CP-20260711-002).** TERZO ecosistema completo.
+  **182 file · 74 agenti · 28 workflow · 23.635 righe.** Gate VERDE, 5-bis MAXIMILIAN APPROVA.
+  A1-A6 (batch 1-2) + A7-Account-Mgmt, A8-Closing, A9-Partnership-Referral, A10-QA-Cliente (batch 3).
+  A2 wrappa il runtime outreach LIVE (ADR-003, intoccabile). A10 = audit INDIPENDENTE (audita, non costruisce).
+  **2 difetti veri trovati dal gate e chiusi:** (1) namespace divergente (87 occorrenze) → canonico `agency/a<N>`,
+  mappa autoritativa in `company/Ecosistemi/01-AGENCY/NAMESPACE.md`; (2) 6 README v1 stantii (roster inesistente)
+  → riscritti CF-grade. **MAX libero per il prossimo ecosistema.**
+  📌 **RETRO — regole nuove vincolanti:** (a) swarm = **WRITE-EARLY** (struttura inline, letture minime, scrivi
+  file-per-file subito: da 1 file/21 tool_use a 16 file/20); (b) **l'idempotenza va SOSPESA contro i residui v1**
+  (i file v1 vanno SUPERATI esplicitamente, non skippati); (c) un solo swarm Opus per volta (account condiviso).
+- 🗄️ *(storico)* **MAX — 01-AGENCY build a BATCH:** dossier `PIANO-MAESTRO/01-ECOSISTEMA-AGENCY-V2.md`
   (10 reparti A1-A10, ~75 agenti). Reparti su disco erano vuoti.
   **Batch 1 ✅ CHIUSO (CP-20260622-002): A1+A2+A3** (58 file, 27 ag, 10 WF). A2 wrappa runtime outreach LIVE (ADR-003).
   **Batch 2 ✅ CHIUSO (CP-20260623-001): A4-Delivery + A5-Copywriting + A6-Marketing** (51 file, 21 ag, 9 WF,

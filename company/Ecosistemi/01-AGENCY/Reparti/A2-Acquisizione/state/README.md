@@ -19,10 +19,10 @@ Last updated: 2026-06-22
 | Namespace | Path AgentDB | Contenuto | Owner scrittura | Chi legge |
 |---|---|---|---|---|
 | Outreach (cross-canale) | `agency/outreach` | Template attivi, performance per variante, log invii | AG-A2-WRITE + AG-A2-SEND | AG-A2-COORD, AG-A2-QA |
-| Email | `agency/02-acquisizione/email/` | Per batch: inviati, bounce, esiti gate Bibbia | AG-A2-SEND | AG-A2-COORD, AG-A2-QA |
-| LinkedIn | `agency/02-acquisizione/linkedin/` | Conn/msg/commenti per giorno, accettazioni | AG-A2-LI | AG-A2-COORD, AG-A2-TRIAGE |
-| Instagram | `agency/02-acquisizione/instagram/` | DM/gg, stato follow-up | AG-A2-IG | AG-A2-COORD, AG-A2-TRIAGE |
-| Reply | `agency/02-acquisizione/reply/` | Thread per lead, stato triage, esito | AG-A2-TRIAGE + AG-A2-BOOK | AG-A2-COORD, AG-A2-FUP |
+| Email | `agency/a2/email/` | Per batch: inviati, bounce, esiti gate Bibbia | AG-A2-SEND | AG-A2-COORD, AG-A2-QA |
+| LinkedIn | `agency/a2/linkedin/` | Conn/msg/commenti per giorno, accettazioni | AG-A2-LI | AG-A2-COORD, AG-A2-TRIAGE |
+| Instagram | `agency/a2/instagram/` | DM/gg, stato follow-up | AG-A2-IG | AG-A2-COORD, AG-A2-TRIAGE |
+| Reply | `agency/a2/reply/` | Thread per lead, stato triage, esito | AG-A2-TRIAGE + AG-A2-BOOK | AG-A2-COORD, AG-A2-FUP |
 
 Nota: lo state runtime del motore (`leads.db`, `emails_*_ready.json`, sessioni) resta in
 `Outreach/Outreach Workflow/` e NON è duplicato qui.
@@ -31,7 +31,7 @@ Nota: lo state runtime del motore (`leads.db`, `emails_*_ready.json`, sessioni) 
 
 ## Struttura file di stato
 
-### Email batch state (`agency/02-acquisizione/email/state.json`)
+### Email batch state (`agency/a2/email/state.json`)
 
 ```json
 {
@@ -48,7 +48,7 @@ Nota: lo state runtime del motore (`leads.db`, `emails_*_ready.json`, sessioni) 
 }
 ```
 
-### LinkedIn state (`agency/02-acquisizione/linkedin/state.json`)
+### LinkedIn state (`agency/a2/linkedin/state.json`)
 
 ```json
 {
@@ -61,7 +61,7 @@ Nota: lo state runtime del motore (`leads.db`, `emails_*_ready.json`, sessioni) 
 }
 ```
 
-### Instagram state (`agency/02-acquisizione/instagram/state.json`)
+### Instagram state (`agency/a2/instagram/state.json`)
 
 ```json
 {
@@ -75,7 +75,7 @@ Nota: lo state runtime del motore (`leads.db`, `emails_*_ready.json`, sessioni) 
 }
 ```
 
-### Reply thread state (`agency/02-acquisizione/reply/{thread_id}.json`)
+### Reply thread state (`agency/a2/reply/{thread_id}.json`)
 
 ```json
 {

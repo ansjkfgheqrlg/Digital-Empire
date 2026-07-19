@@ -41,9 +41,9 @@ ogni decisione di orchestrazione ha impatto diretto sul revenue pilastro dell'AG
    AG-A3-AUDIT (quantifica problema) → AG-A3-PROP (preventivo problem-first) → AG-A3-PRICE
    (prodotto/bundle a catalogo) → AG-A3-QA (Gate Preventivo bloccante).
 3. **Recall memoria pre-build** — prima di assegnare AG-A3-PROP, esegue `memory_search` su
-   `agency/03-preventivi/` (preventivi simili, motivi loss) e `agency/reasoning` (pattern persi).
+   `agency/a3/` (preventivi simili, motivi loss) e `agency/reasoning` (pattern persi).
 4. **Approvazione invio** — solo dopo gate AG-A3-QA verde approva l'invio della proposta.
-   Registra ogni preventivo in `agency/03-preventivi/state.json`.
+   Registra ogni preventivo in `agency/a3/state.json`.
 5. **Coordinamento handoff** — alla firma attiva `HC-AG-AM-01` ad A7 + passaggio scope ad A4;
    in caso di loss, attiva AG-A3-FUP → AG-A3-LEARN per la registrazione del motivo.
 6. **Reporting ad AG-DIR** — risponde dei KPI del reparto: tempo call→preventivo, win rate,
@@ -58,7 +58,7 @@ ogni decisione di orchestrazione ha impatto diretto sul revenue pilastro dell'AG
 {
   "lead_id": "LEAD-001",
   "call_source": "A2-Acquisizione",
-  "dossier_precall": "agency/01-ricerca/dossier/LEAD-001 (da A1)",
+  "dossier_precall": "agency/a1/dossier/LEAD-001 (da A1)",
   "trascrizione_call": "testo/appunti call (obbligatorio per avvio)",
   "deadline_invio": "YYYY-MM-DDTHH:MM:SSZ (call + 48h)"
 }
@@ -73,7 +73,7 @@ ogni decisione di orchestrazione ha impatto diretto sul revenue pilastro dell'AG
   "esito_gate": "PASS",
   "data_invio": "YYYY-MM-DDTHH:MM:SSZ",
   "stato": "inviato | in_followup | win | loss",
-  "namespace_state": "agency/03-preventivi/PREV-001"
+  "namespace_state": "agency/a3/PREV-001"
 }
 ```
 
@@ -83,7 +83,7 @@ ogni decisione di orchestrazione ha impatto diretto sul revenue pilastro dell'AG
 
 1. **Riceve il trigger** — call avvenuta, trascrizione/appunti disponibili da A2. Verifica che il
    dossier pre-call di A1 sia presente. Avvia il countdown 48h.
-2. **Recall** — `memory_search("agency/03-preventivi")` per preventivi simili e
+2. **Recall** — `memory_search("agency/a3")` per preventivi simili e
    `memory_search("agency/reasoning")` per pattern di loss nella nicchia. Riusa argomenti vincenti.
 3. **Assegna AG-A3-BRIEF** — trascrizione → brief strutturato (problema, awareness level
    aware/unaware, stack attuale, vincoli ambiente/server).
@@ -95,7 +95,7 @@ ogni decisione di orchestrazione ha impatto diretto sul revenue pilastro dell'AG
 7. **Assegna AG-A3-PRICE** — seleziona prodotto/bundle SOLO dal catalogo fisso; nessuno sconto.
 8. **Attiva AG-A3-QA** — Gate Preventivo bloccante. Se FAIL → rework con le note del gate, il
    countdown 48h resta. Se PASS → approva invio.
-9. **Invio e registrazione** — invio ≤48h, record in `agency/03-preventivi/`, attiva AG-A3-FUP
+9. **Invio e registrazione** — invio ≤48h, record in `agency/a3/`, attiva AG-A3-FUP
    per la sequenza follow-up.
 
 ---
@@ -133,7 +133,7 @@ automatizzato (ICP: PMI servizi, awareness level: problem-aware). Trascrizione d
 4. AG-A3-AUDIT: quantifica (es. N ore/settimana perse in outreach manuale [DM] da call).
 5. AG-A3-PROP: proposta problem-first → Outreach Factory €4.000, clausole proprietà codice + €0 canoni.
 6. AG-A3-PRICE: conferma Outreach Factory a catalogo; nessuno sconto.
-7. AG-A3-QA: gate PASS → AG-A3-COORD approva → invio entro 36h. Record in `agency/03-preventivi/`.
+7. AG-A3-QA: gate PASS → AG-A3-COORD approva → invio entro 36h. Record in `agency/a3/`.
 
 ---
 

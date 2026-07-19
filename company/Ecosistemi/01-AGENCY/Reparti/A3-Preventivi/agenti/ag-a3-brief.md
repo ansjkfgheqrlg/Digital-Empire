@@ -54,7 +54,7 @@ AG-A3-PROP (che scrive partendo dal problema). Un brief debole produce una propo
   "preventivo_id": "PREV-001",
   "lead_id": "LEAD-001",
   "trascrizione_call": "testo o appunti della discovery call",
-  "dossier_precall": "agency/01-ricerca/dossier/LEAD-001 (opzionale, da A1)"
+  "dossier_precall": "agency/a1/dossier/LEAD-001 (opzionale, da A1)"
 }
 ```
 
