@@ -20,9 +20,7 @@ Procedura fissa per produrre e consegnare una build. Seguire in ordine, senza sa
 - [ ] **Test live su 2-3 auto DIVERSE** (marche/anni diversi): 0 residui tedeschi, PDF ok, ~30-60s.
 
 ## Pulizia + zip
-- [ ] Rimuovere da `dist/PreventivoForge/`: `runs/ logs/ selftest.log browser-profile/ archivio/ preventivi_* .licenza_cache.json`.
-- [ ] **Svuotare** `dist/PreventivoForge/_internal/Memory/storico-preventivi/` (i test live scrivono lì dentro →
-      gonfiano lo zip e spedirebbero dati di prova al cliente). La cartella resta, vuota.
+- [ ] Rimuovere da `dist/PreventivoForge/`: `runs/ logs/ selftest.log browser-profile/ archivio/ preventivi_*`.
 - [ ] `Compress-Archive` → `Consegna-Novacar/PreventivoForge-Novacar.zip`. Verificare la **dimensione** (~120 MB, non 0).
 
 ## Consegna

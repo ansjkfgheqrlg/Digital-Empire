@@ -149,15 +149,13 @@ def _price_novacar(price: dict, prev: dict) -> dict[str, Any]:
         surcharge = bd.get("surcharge_eur") or 0
         f1 = bd.get("fixed_1_eur") or 0
         f2 = bd.get("fixed_2_eur") or 0
-        # REGOLA GLOBALE (Max 2026-07-09): fixed_2 = margine/guadagno. NON è una voce a sé:
-        # va SOMMATO alla voce "Prezzo autovettura" (così le voci visibili tornano col totale,
-        # ma il guadagno resta indistinguibile dal prezzo auto).
-        lines.append({"label": "Prezzo autovettura", "amount": _eur((listed or 0) + f2)})
+        lines.append({"label": "Prezzo autovettura", "amount": _eur(listed)})
         if surcharge:
             lines.append({"label": f"Maggiorazione ({_num(bd.get('surcharge_pct'))}%)", "amount": _eur(surcharge)})
         if f1:
-            # UNICA voce servizi: immatricolazione + pratiche + trasporto (fixed_1).
-            lines.append({"label": "Immatricolazione, pratiche e trasporto", "amount": _eur(f1)})
+            lines.append({"label": "Immatricolazione e pratiche", "amount": _eur(f1)})
+        if f2:
+            lines.append({"label": "Trasporto", "amount": _eur(f2)})
     return {
         "total": _eur(price.get("final_eur")),
         "lines": lines,

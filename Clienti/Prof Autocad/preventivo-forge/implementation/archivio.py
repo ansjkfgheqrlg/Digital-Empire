@@ -121,22 +121,6 @@ def add(pdf_path: str | Path) -> None:
         pass
 
 
-def clear() -> None:
-    """Svuota l'archivio: PDF copiati + miniature + indice. Chiamato alla CHIUSURA
-    dell'app (l'archivio riparte vuoto a ogni riapertura). Mai bloccante: su errore
-    non fa nulla. NON tocca i PDF nella cartella di output (quelli restano al cliente)."""
-    try:
-        base = _base()
-        for sub in ("pdf", "foto"):
-            shutil.rmtree(base / sub, ignore_errors=True)
-        try:
-            _index_path().unlink()
-        except FileNotFoundError:
-            pass
-    except Exception:
-        pass
-
-
 def entries(limit: int = 200) -> list[dict[str, Any]]:
     """Voci per la GUI, con la miniatura incorporata come data-URI (self-contained)."""
     base = _base()

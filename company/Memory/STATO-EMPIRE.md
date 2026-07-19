@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # STATO EMPIRE -- aggiornato 2026-07-19 15:25 (ordine Max: FOCUS TOTALE EMPIRE DESK, lavoro diviso metà/metà)
 
 ## 🚨🚨 ORDINE MAX 2026-07-19 POMERIGGIO — EMPIRE DESK = LAVORO PIÙ IMPORTANTE, DIVISIONE METÀ/METÀ MAX↔GAEL
@@ -28,6 +29,20 @@ Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'
 *(Nota: un secondo blocco-divisione scritto da una sessione Max parallela citava «§6 dossier 17» —
 numerazione vecchia. Rimosso: vale il blocco qui sopra; nel dossier la divisione è la **§5**.
 Stesso contenuto, nessun task cambiato. Ordine del giorno Gael dopo B1: task revenue dossier 16.)*
+=======
+# STATO EMPIRE -- aggiornato 2026-07-19 (ordine Max: EMPIRE DESK oggi)
+
+## 🚨 ORDINE MAX 2026-07-19 — GAEL: EMPIRE DESK v0.1 ENTRO OGGI (priorità #1)
+**Costruire l'app .exe piattaforma di TUTTO: `EmpireDesk.exe`.** Spec completa e vincolante:
+`PIANO-MAESTRO/17-EMPIRE-DESK-APP.md`. In sintesi:
+- Launcher desktop premium (pywebview + HTML empire-style + PyInstaller — IL TUO pattern PreventivoForge).
+- 8 tile che lanciano i runtime ESISTENTI via subprocess (outreach email/IG/LinkedIn/scraper,
+  PreventivoForge, caroselli, Empire Studio, STATO dashboard). ADR-003: SOLO wrapper, zero riscritture.
+- Step P1→P4 oggi (shell → bridge subprocess → tile 5-8 → selftest 8/8 + build .exe + CP + push).
+- Gate: ZERO bottoni finti (ogni tile lancia processo reale, exit code visibile), zero secrets, fallback Tkinter.
+**Ordine del giorno Gael: 1) EMPIRE DESK P1-P4 · 2) task revenue dossier 16 (audit pagine, funnel).**
+**Lotto 3 dossier: se non chiuso, va IN CODA a Empire Desk oggi (ordine Max esplicito).**
+>>>>>>> b173be2a (ADR-008 (Max): catena intestazione e controllo — anagrafe unica)
 
 ## ✅ GAEL — V2-2 LOTTO 3 COMPLETATO (2026-07-19, CP-20260719-001)
 **Chiuso PRIMA di vedere l'ordine EMPIRE DESK qui sopra (era già a buon punto); ora si passa

@@ -1,23 +1,9 @@
 # COME CONSEGNARE PREVENTIVOFORGE A NOVACAR — passo per passo (per Max)
 
 Hai **UN solo file** da consegnare:
-`Clienti/Prof Autocad/Consegna-Novacar/PreventivoForge-Novacar-AGGIORNATA-9lug.zip`
+`Clienti/Prof Autocad/Consegna-Novacar/PreventivoForge-Novacar.zip`
 
 Dentro c'è tutto. Novacar **non deve installare Python né altro**. Serve solo Google Chrome.
-
-> ⚠️ **Se hai già mandato una versione vecchia:** rimanda QUESTO file e di' a Novacar di
-> **cancellare la vecchia cartella `PreventivoForge`** prima di estrarre la nuova — altrimenti
-> restano due copie e continua ad aprire quella sbagliata (interfaccia vecchia).
-
-## 🔴 REGOLA N.1 — VA ESTRATTA TUTTA LA CARTELLA
-L'app **non è un file singolo**: è `PreventivoForge.exe` **+ la cartella `_internal`** accanto
-(dentro c'è il motore, l'**interfaccia grafica** `ui/index.html`, il template PDF, la licenza).
-
-- ❌ **MAI** doppio-click sull'exe **dentro lo zip** (Windows chiede "Estrai o Esegui" → se scegli
-  "Esegui", tira fuori SOLO l'exe senza `_internal` → non parte, o parte con l'interfaccia base/brutta).
-- ✅ **SEMPRE**: tasto destro sullo **ZIP** → "Estrai tutto" → poi aprire l'exe **dalla cartella estratta**.
-
-**Verifica**: accanto a `PreventivoForge.exe` DEVE esserci la cartella **`_internal`**. Se non c'è → non ha estratto.
 
 ---
 
@@ -30,7 +16,7 @@ Nient'altro.
 ---
 
 ## OPZIONE A — di persona, con chiavetta USB  ⭐ (la più semplice)
-1. Copia `PreventivoForge-Novacar-AGGIORNATA-9lug.zip` su una **chiavetta USB**.
+1. Copia `PreventivoForge-Novacar.zip` su una **chiavetta USB**.
 2. Infila la chiavetta nel PC di Novacar.
 3. Copia lo zip sul **Desktop** del loro PC.
 4. **Tasto destro** sullo zip → **"Estrai tutto"** → **"Estrai"**. Esce una cartella `PreventivoForge`.
@@ -43,7 +29,7 @@ Nient'altro.
 
 ## OPZIONE B — a distanza, con WeTransfer (gratis, no registrazione)
 1. Vai su **wetransfer.com** → "I agree".
-2. Clicca **"+"** → scegli `PreventivoForge-Novacar-AGGIORNATA-9lug.zip`.
+2. Clicca **"+"** → scegli `PreventivoForge-Novacar.zip`.
 3. Nel campo email metti quella di Novacar (**novacarsrl.info@gmail.com**) → **"Transfer"**.
 4. Novacar riceve un'email con un link → **scarica** lo zip.
 5. Novacar poi fa: **Estrai tutto** → doppio click `PreventivoForge.exe` → (SmartScreen) **Esegui comunque**.

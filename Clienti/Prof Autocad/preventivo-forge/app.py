@@ -100,95 +100,6 @@ def _load_brand() -> dict:
 _BRAND = _load_brand()
 BRAND_TITLE = f"PreventivoForge — {_BRAND['display_name']}"
 
-# Versione mostrata nell'header: serve a capire A COLPO D'OCCHIO quale build sta girando
-# (senza questo non si distingue una copia vecchia da una nuova).
-APP_VERSION = "v2.1 · 13 lug 2026"
-
-
-# --------------------------------------------------------------------------- #
-# WebView2 Runtime — motore dell'interfaccia premium
-#
-# pywebview su Windows rende l'HTML con il backend EdgeChromium, che richiede il
-# **WebView2 Runtime** installato sul PC. Se manca, pywebview fallisce e l'app ripiegava
-# in silenzio sull'interfaccia Tkinter (funzionante ma BRUTTA) — è quello che vedeva il
-# cliente. Qui lo rileviamo e, se manca, lo installiamo con il bootstrapper ufficiale
-# Microsoft incluso nel pacchetto (per-utente, senza permessi di amministratore).
-# --------------------------------------------------------------------------- #
-_WV2_KEY = r"SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}"
-
-
-def _webview2_installed() -> bool:
-    """True se il WebView2 Runtime è presente (per-macchina o per-utente)."""
-    try:
-        import winreg
-    except ImportError:
-        return False
-    candidates = [
-        (winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}"),
-        (winreg.HKEY_LOCAL_MACHINE, _WV2_KEY),
-        (winreg.HKEY_CURRENT_USER, _WV2_KEY),
-    ]
-    for root, path in candidates:
-        try:
-            with winreg.OpenKey(root, path) as key:
-                pv, _ = winreg.QueryValueEx(key, "pv")
-                if pv and str(pv) != "0.0.0.0":
-                    return True
-        except OSError:
-            continue
-    return False
-
-
-def _webview2_setup_path() -> Path | None:
-    meipass = Path(getattr(sys, "_MEIPASS", BASE_DIR))
-    for p in (BASE_DIR / "MicrosoftEdgeWebview2Setup.exe",
-              meipass / "MicrosoftEdgeWebview2Setup.exe",
-              BASE_DIR / "assets" / "MicrosoftEdgeWebview2Setup.exe"):   # dev
-        if p.exists():
-            return p
-    return None
-
-
-def _ensure_webview2() -> bool:
-    """Garantisce l'interfaccia premium: se il runtime manca, lo installa (1ª apertura).
-    Mostra un avviso a schermo perché il download impiega 1-2 minuti. Mai bloccante:
-    se non riesce, l'app parte lo stesso (con l'interfaccia di riserva)."""
-    if _webview2_installed():
-        return True
-    setup = _webview2_setup_path()
-    if not setup:
-        return False
-
-    splash = None
-    try:  # avviso: senza, l'app sembrerebbe bloccata durante il download
-        import tkinter as tk
-        splash = tk.Tk()
-        splash.title(BRAND_TITLE)
-        splash.geometry("460x130")
-        splash.resizable(False, False)
-        tk.Label(splash, text="Primo avvio: preparazione dell'applicazione…",
-                 font=("Segoe UI", 11, "bold")).pack(pady=(24, 6))
-        tk.Label(splash, text="Installazione di un componente Microsoft gratuito.\n"
-                              "Richiede 1-2 minuti. Non chiudere questa finestra.",
-                 font=("Segoe UI", 9), justify="center", fg="#555").pack()
-        splash.update()
-    except Exception:
-        splash = None
-
-    try:
-        import subprocess
-        subprocess.run([str(setup), "/silent", "/install"], timeout=900,
-                       creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
-    except Exception:
-        pass
-    finally:
-        if splash is not None:
-            try:
-                splash.destroy()
-            except Exception:
-                pass
-    return _webview2_installed()
-
 
 # --------------------------------------------------------------------------- #
 # Motore: esegue la pipeline (run.main) in-process
@@ -621,12 +532,6 @@ def main_gui() -> int:
     root = tk.Tk()
     PreventivoApp(root)
     root.mainloop()
-    # finestra chiusa → svuota l'archivio (riparte vuoto alla prossima apertura)
-    try:
-        import archivio
-        archivio.clear()
-    except Exception:
-        pass
     return 0
 
 
@@ -708,140 +613,6 @@ class _WebApi:
             return {"ok": False, "error": str(exc)}
 
 
-# --------------------------------------------------------------------------- #
-# GUI PREMIUM — motore Chrome (finestra --app) via mini-server locale
-#
-# È il percorso PRINCIPALE e più affidabile: l'app richiede già Google Chrome
-# (scraping + PDF), quindi Chrome c'è SEMPRE. Renderizziamo la stessa `ui/index.html`
-# dentro una finestra Chrome "app" (senza barre), servita da un server locale su
-# 127.0.0.1. NON dipende dal WebView2 Runtime → niente più ripiego alla GUI vecchia.
-# Il bridge JS↔Python (dealers/generate/poll/archive/open_pdf) passa da POST /api/<metodo>.
-# --------------------------------------------------------------------------- #
-_JS_BRIDGE = """
-<script>
-(function(){
-  function call(method, args){
-    return fetch('/api/'+method, {method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify(args||[])}).then(function(r){ return r.json(); });
-  }
-  window.pywebview = { api: {
-    dealers:  function(){ return call('dealers', []); },
-    generate: function(t,d){ return call('generate', [t, d]); },
-    poll:     function(){ return call('poll', []); },
-    archive:  function(){ return call('archive', []); },
-    open_pdf: function(p){ return call('open_pdf', [p]); }
-  }};
-  window.addEventListener('DOMContentLoaded', function(){
-    window.dispatchEvent(new Event('pywebviewready'));
-  });
-})();
-</script>
-"""
-
-
-def _render_ui_html() -> str:
-    html_path = _ui_html_path()
-    if not html_path:
-        raise RuntimeError("ui/index.html non trovato")
-    html = html_path.read_text(encoding="utf-8").replace("__APP_VERSION__", APP_VERSION)
-    # inietta il bridge JS prima di </head> (senza modificare il file su disco)
-    if "</head>" in html:
-        html = html.replace("</head>", _JS_BRIDGE + "</head>", 1)
-    else:
-        html = _JS_BRIDGE + html
-    return html
-
-
-def main_chrome_app() -> int:
-    """Interfaccia premium dentro una finestra Chrome (--app). Nessun WebView2.
-    Alza un'eccezione se Chrome non c'è → il chiamante prova gli altri motori."""
-    import http.server
-    import json as _json
-    import socketserver
-    import subprocess
-    import tempfile
-    import cdp  # modulo Half A: individua Google Chrome sul PC
-
-    chrome = cdp.find_chrome()
-    if not chrome:
-        raise RuntimeError("Google Chrome non trovato: impossibile aprire l'interfaccia premium.")
-
-    html = _render_ui_html().encode("utf-8")
-    api = _WebApi()
-
-    class _Handler(http.server.BaseHTTPRequestHandler):
-        def log_message(self, format, *args):  # silenzia il logging su stderr
-            pass
-
-        def _send(self, code: int, body: bytes, ctype: str):
-            self.send_response(code)
-            self.send_header("Content-Type", ctype)
-            self.send_header("Content-Length", str(len(body)))
-            self.send_header("Cache-Control", "no-store")
-            self.end_headers()
-            try:
-                self.wfile.write(body)
-            except Exception:
-                pass
-
-        def do_GET(self):
-            if self.path in ("/", "/index.html"):
-                self._send(200, html, "text/html; charset=utf-8")
-            else:
-                self._send(404, b"not found", "text/plain")
-
-        def do_POST(self):
-            if not self.path.startswith("/api/"):
-                self._send(404, b"not found", "text/plain")
-                return
-            method = self.path[len("/api/"):].strip("/")
-            fn = getattr(api, method, None)
-            if not callable(fn) or method.startswith("_"):
-                self._send(404, b'{"error":"metodo sconosciuto"}', "application/json")
-                return
-            try:
-                length = int(self.headers.get("Content-Length") or 0)
-                args = _json.loads(self.rfile.read(length) or b"[]") if length else []
-                result = fn(*args) if isinstance(args, list) else fn(args)
-                self._send(200, _json.dumps(result, ensure_ascii=False).encode("utf-8"),
-                           "application/json; charset=utf-8")
-            except Exception as exc:  # noqa: BLE001
-                self._send(200, _json.dumps({"error": str(exc)}).encode("utf-8"),
-                           "application/json")
-
-    class _Server(socketserver.ThreadingMixIn, http.server.HTTPServer):
-        daemon_threads = True
-
-    server = _Server(("127.0.0.1", 0), _Handler)
-    port = server.server_address[1]
-    threading.Thread(target=server.serve_forever, daemon=True).start()
-
-    profile = tempfile.mkdtemp(prefix="pf-gui-")
-    args = [
-        chrome, f"--app=http://127.0.0.1:{port}/", f"--user-data-dir={profile}",
-        "--no-first-run", "--no-default-browser-check", "--disable-features=Translate",
-        "--window-size=840,780",
-    ]
-    proc = subprocess.Popen(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    proc.wait()   # blocca finché l'utente non chiude la finestra Chrome
-    try:
-        server.shutdown()
-    except Exception:
-        pass
-    try:
-        import shutil
-        shutil.rmtree(profile, ignore_errors=True)
-    except Exception:
-        pass
-    # finestra chiusa → svuota l'archivio (riparte vuoto alla prossima apertura)
-    try:
-        import archivio
-        archivio.clear()
-    except Exception:
-        pass
-    return 0
-
-
 def main_webview() -> int:
     """Finestra premium HTML/CSS via pywebview. Alza RuntimeError se non disponibile → fallback Tkinter."""
     import webview  # richiede pywebview + (Windows) Edge WebView2 runtime
@@ -849,7 +620,7 @@ def main_webview() -> int:
     html_path = _ui_html_path()
     if not html_path:
         raise RuntimeError("ui/index.html non trovato")
-    html = html_path.read_text(encoding="utf-8").replace("__APP_VERSION__", APP_VERSION)
+    html = html_path.read_text(encoding="utf-8")
     api = _WebApi()
     webview.create_window(
         BRAND_TITLE,
@@ -858,12 +629,6 @@ def main_webview() -> int:
         background_color="#e7ebee",
     )
     webview.start()
-    # finestra chiusa → svuota l'archivio (riparte vuoto alla prossima apertura)
-    try:
-        import archivio
-        archivio.clear()
-    except Exception:
-        pass
     return 0
 
 
@@ -885,23 +650,9 @@ if __name__ == "__main__":
         import run as run_mod
         sys.argv = ["run.py", "--manual", _html, "--foto", _foto, "--dealer", _BRAND["dealer_id"]]
         raise SystemExit(run_mod.main())
-    # Interfaccia premium — ordine di robustezza:
-    # 1) Chrome in finestra --app (SEMPRE disponibile: Chrome è già richiesto dall'app; niente WebView2).
-    # 2) pywebview/WebView2 (se per qualche motivo Chrome-app non parte).
-    # 3) Tkinter (ultima rete di sicurezza, così nessun PC resta senza app).
-    # La stessa `ui/index.html` premium viene usata da 1 e 2 → grafica identica ovunque.
-    _code = None
-    for _engine in (main_chrome_app, main_webview):
-        try:
-            _code = _engine()
-            break
-        except Exception as _exc:  # noqa: BLE001
-            try:
-                (BASE_DIR / "AVVIO-DIAGNOSTICA.txt").write_text(
-                    f"{_engine.__name__} non riuscito: {_exc}\n", encoding="utf-8")
-            except Exception:
-                pass
-            continue
-    if _code is None:
+    # GUI premium (pywebview); se non disponibile → fallback Tkinter (nessun PC resta senza app)
+    try:
+        _code = main_webview()
+    except Exception:
         _code = main_gui()
     raise SystemExit(_code)

@@ -18,17 +18,6 @@ Vale per Max, Gael e Claude. (Allineato all'ISPETTORATO GENERALE — REGISTRO-ER
 7. **MAI rebuild/zip con l'app aperta** (blocca i file → build/zip falliscono in silenzio).
    Sempre: chiudere l'app → verificare `BUILD_EXIT=0` + timestamp exe fresco. (E8, E9)
 8. **Ogni build va provata live su 2-3 auto diverse** prima di consegnarla (0 residui, PDF ok).
-9. **L'app non deve MAI degradare in silenzio.** Se un componente serve all'esperienza promessa
-   (es. WebView2 per l'interfaccia premium), va **incluso nel pacchetto e installato**, non aggirato
-   con un fallback brutto. Un fallback silenzioso = il cliente riceve un prodotto diverso da quello approvato. (E10)
-10. **Ogni build mostra la sua VERSIONE nell'interfaccia** (`APP_VERSION` nell'header). Senza, è impossibile
-   distinguere una copia vecchia da una nuova e si perde tempo a inseguire il file sbagliato. (E10)
-11. **"Funziona sul mio PC" non basta**: elencare le dipendenze dell'AMBIENTE CLIENTE (Chrome, WebView2, no VPN)
-   e verificarne la presenza dal codice, non nel README. (E10)
-12. **Non introdurre dipendenze d'ambiente che NON puoi testare tu.** Se un componente (es. WebView2) può
-   mancare sul PC cliente e tu non riesci a riprodurre il guasto, cambia architettura verso qualcosa di
-   GARANTITO e testabile (es. Chrome, già richiesto). "Quel che vedo io = quel che vede il cliente." (E11)
-13. **Verifica il deliverable ESTRAENDO lo zip come il cliente**, non solo la cartella dist. Avvia QUELL'exe. (E11)
 
 ---
 
@@ -45,8 +34,6 @@ Vale per Max, Gael e Claude. (Allineato all'ISPETTORATO GENERALE — REGISTRO-ER
 | **E7** | "TÜV" non tradotto | l'AI lo teneva come nome proprio (ente revisione DE) | glossario tüv/HU/AU→revisione ecc. + prompt AI localizza le sigle (`db286b1`) | R6 |
 | **E8** | Rebuild fallito in silenzio (exe vecchio consegnato) | app aperta bloccava un file di log → PyInstaller `--clean` non completava, ma sembrava ok | chiudere l'app prima del rebuild; verificare `BUILD_EXIT=0` + timestamp exe | R7 |
 | **E9** | Zip di consegna a 0 MB | app in esecuzione blocca `ClrLoader.dll` → `Compress-Archive` fallisce | zip solo con app chiusa | R7 |
-| **E10** | **Il CLIENTE vede un'interfaccia "vecchia e brutta"** (funziona ma è un'altra GUI) — sembrava una build vecchia spedita per sbaglio | **NON era il file**: l'interfaccia premium (pywebview/EdgeChromium) richiede il **WebView2 Runtime** installato sul PC. Sul PC di Max c'è → premium. Sul PC del cliente mancava → pywebview alza eccezione → `app.py` ripiegava **in silenzio** sulla GUI **Tkinter** di riserva (brutta). Il pacchetto conteneva le librerie che *chiamano* WebView2, non il runtime | bootstrapper ufficiale Microsoft (`assets/MicrosoftEdgeWebview2Setup.exe`, firmato) incluso nel bundle + `_ensure_webview2()` in `app.py`: rileva il runtime e, se manca, lo installa al 1° avvio (per-utente, no admin, splash di attesa). + **stampo di versione** nell'header GUI (`APP_VERSION`) | R9, R10 |
-| **E11** | **DEFINITIVO — la GUI premium NON deve dipendere da WebView2.** Anche col bootstrapper (E10) restava il rischio che l'install fallisse sul PC cliente → ancora GUI vecchia. Impossibile da diagnosticare per Max: sul suo PC WebView2 c'è, quindi ogni "fix" sembrava ok ma il cliente vedeva altro | pywebview su Windows dipende da un backend HTML esterno (WebView2/QtWebEngine) che può mancare | **Nuovo motore GUI `main_chrome_app()`**: la stessa `ui/index.html` è servita da un mini-server locale (127.0.0.1) e renderizzata in una finestra **Google Chrome `--app`** (senza barre). Chrome è GIÀ richiesto (scraping+PDF) → c'è sempre → GUI premium garantita, **zero WebView2**. Bridge JS↔Python via `POST /api/<metodo>`. Ordine motori: Chrome-app → pywebview → Tkinter. **Testabile da Max** (Chrome c'è anche da lui) → quel che vede lui = quel che vede il cliente. Verificato estraendo lo zip come Novacar | R9, R12 |
 
 ---
 
