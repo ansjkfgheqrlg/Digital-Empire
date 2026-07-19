@@ -24,6 +24,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260719-006](checkpoints/CP-20260719-006.md) — Risolto conflitto di sync GitHub (SYNC-CONFLICT.txt) + collisione numerazione checkpoint (002/003 rinumerati 004/005); merge REGISTRO-ERRORI EmpireDesk senza perdita dati; push riuscito, main allineato — Max
 - [CP-20260719-005](checkpoints/CP-20260719-005.md) — Skill ufficiale `master-app-builder` installata in `.claude/skills/` (kernel v2.1 + Fase 0.0 pattern-mining su PreventivoForge/EmpireDesk + tie-in reparti 06a-PLATFORM L2.2/06b-FORGE L2.1; verificata presente nell'elenco skill) — Max
 - [CP-20260719-004](checkpoints/CP-20260719-004.md) — ⚠️ **Empire Desk v0.1: P1-P3 costruiti** (shell 3-motori Chrome-app/pywebview/Tkinter, 8 tile, subprocess reale con log live; 3 bug reali trovati+corretti in revisione statica: sys.executable da frozen, WinError193 su .bat, pause-hang senza stdin=DEVNULL; trovato ma NON toccato EDE-2 path hardcoded nei bat Outreach — ADR-003). P4 selftest/build bloccato: ambiente sessione senza Python/Node — Gael
 - [CP-20260719-003](checkpoints/CP-20260719-003.md) — **EMPIRE DESK: divisione lavoro metà/metà Max↔Gael** + planning aggiornato (dossier 17 §5, Half A dati/business Max · Half B core/runtime Gael) — Max
