@@ -15,6 +15,7 @@
 - [ADR-005](decisions/ADR-005-backlog-non-blocca.md) — Blocker minori → BACKLOG.md, mai fermare la costruzione; team-prezzi per le decisioni di prezzo
 - [ADR-006](decisions/ADR-006-ciclo-fase-9-passi.md) — Ciclo di Fase Empire a 9 passi (metodo ufficiale, swarm obbligatorio per Max e Gael) → `PIANO-MAESTRO/10-METODO-CICLO-FASE.md`
 - [ADR-007](decisions/ADR-007-piano-v2-scala.md) — **PIANO V2 Direttiva di Scala**: 1 workflow=CF Exponium, Board=workflow×10+ agenti, reparti=team+workflow CF-grade, Mandato-ecosistema, organo MAXIMILIAN → `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md`
+- [ADR-008](decisions/ADR-008-catena-intestazione-controllo.md) — **Catena intestazione e controllo**: nessun artefatto orfano — ogni cosa ha proprietario+controllore+origine(FORGE)+governo(Mandato), anagrafe in `company/REGISTRO-IMPRESA.md` + `skills-map.yaml`, FORGE=ufficio anagrafe, 5-bis verifica intestazione
 
 ## Corpus Maximilian
 - [direttiva-20260611-scala-v2](maximilian-corpus/direttiva-20260611-scala-v2.md) — prima direttiva integrale di Max (addestramento organo MAXIMILIAN; ogni futura direttiva si appende qui)
