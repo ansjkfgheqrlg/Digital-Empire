@@ -1,4 +1,39 @@
-# STATO EMPIRE -- aggiornato 2026-07-19 (ordine Max: EMPIRE DESK oggi)
+# STATO EMPIRE -- aggiornato 2026-07-19 (sessione Arena Max)
+
+## ✅ ARENA (Max) — SESSIONE COMPLETATA (2026-07-19, commit 865f3c7)
+**Pushato su GitHub:** branch `arena/019f7a88-digital-empire` · 29 file · 2862 righe.
+
+### 🔧 Skill master-build-architecture — RICOSTRUITA E COMPLETATA
+**Path:** `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/master-build-architecture/`
+- **Agenti QA completati (18/18 con 7 file canonici PT05):**
+  - `coverage-verifier-agent` — verifica tracciabilità P12 (6 file creati)
+  - `failure-mode-validator-agent` — valida failure-modes P09 (6 file creati)
+  - `target-schema-validator-agent` — valida forme canoniche P06 (6 file creati)
+- **Knowledge Pack popolato (11/11 cartelle):**
+  - `00-master/master.md` — MKD (Master Knowledge Document)
+  - `03-anti-patterns/` — 9 anti-pattern dettagliati
+  - `04-processes/` — 7 processi operativi (PR01-PR07)
+  - `05-decision-trees/` — 6 alberi decisionali (DT01-DT06)
+  - `07-templates/` — 7 template (agent spec, CP, DEC, ecc.)
+  - `09-faq/` — 16 FAQ complete (D01-D16)
+  - `10-references/` — Fonti primarie (Ruflo, Content-Forge, Advisor, Skill-Creator)
+- **Totale:** 325 file nel repo skill, 18 agenti con 7 file canonici ciascuno, knowledge pack completo
+
+### 📊 Perfezionamento Piani Revenue (Dossier 16) — NUOVI FILE OPERATIVI
+- `company/Memory/ANALISI-PIANI-20260719.md` — Analisi critica completa con 7 gap identificati e 5 perfezionamenti proposti
+- `company/Memory/CALENDARIO-ESECUTIVO-SETTIMANA1.md` — Calendario G1→G7 giorno-per-giorno con task Max/Gael/Claude, done-when, gate giornalieri
+- `company/Memory/REVENUE-DASHBOARD.md` — Dashboard metriche LIVE per tracciamento revenue (pipeline concessionari, vendite, pagine, YouTube, promo-kit)
+- **Dossier 16 aggiornato** con: Decision Gate Max (7 decisioni bloccanti), Done When per ogni task Gael, Risk Register (7 rischi + mitigazioni), file di supporto operativi
+
+### 📋 Prossimi step dopo questa sessione
+1. **Gael:** completare EmpireDesk P4 (selftest + build .exe + CP + push) — priorità #1 Max
+2. **Max:** decidere prezzo Manuale B-003 (blocca 3 stream) + nome rebrand PreventivoForge
+3. **Max:** lista 7 concessionari per S1
+4. **Gael:** audit asset P0.2 + inizio task revenue (funnel Manuale, caroselli, pipeline mentalita.brutale)
+5. **Gael:** V2-2 lotto 4 (dossier 07/08/09) → chiude blueprint V2
+6. Vedi `CALENDARIO-ESECUTIVO-SETTIMANA1.md` e `REVENUE-DASHBOARD.md` per dettaglio
+
+---
 
 ## 🚨 ORDINE MAX 2026-07-19 — GAEL: EMPIRE DESK v0.1 ENTRO OGGI (priorità #1)
 **Costruire l'app .exe piattaforma di TUTTO: `EmpireDesk.exe`.** Spec completa e vincolante:
