@@ -100,6 +100,16 @@ Guida consegna passo-passo: `Clienti/Prof Autocad/COME-CONSEGNARE-A-NOVACAR.md`.
   (10) **REGISTRO-ERRORI + CHECKLIST-CONSEGNA** (`063cd27`): 9 errori E1-E9 (causa+fix+regola). Direttiva #3 = obbligatori.
 - **Riserva AI traduzione ATTIVA** (Groq €0). **Kill-switch LIVE** ("X non paga" → blocco+email). Fabbrica: `/nuovo-concessionario`.
 - **Verificato oggi**: 5 auto scrapate→PDF (Hyundai/Skoda/Volvo/Land Rover/VW) · 6 auto tradotte→0 residui.
+- **🔴 FIX CRITICO 2026-07-15 (Max, CP-20260715-001): GUI PREMIUM SENZA WEBVIEW2 (motore Chrome-app).**
+  Il cliente vedeva la GUI VECCHIA/Tkinter perché sul suo PC mancava il WebView2 Runtime → pywebview
+  ripiegava in silenzio. Non riproducibile da Max (WebView2 c'è sul suo PC) → tentativi al buio.
+  **Soluzione:** nuovo motore `main_chrome_app()` in `app.py` — la stessa `ui/index.html` premium è servita da
+  un mini-server locale (127.0.0.1) e mostrata in una finestra **Google Chrome `--app`** (Chrome è già richiesto
+  da scraping+PDF → sempre presente). Bridge JS↔Python via `POST /api/<metodo>`. Ordine motori: Chrome-app →
+  pywebview → Tkinter. **Testato estraendo lo zip come Novacar → premium OK** (header scuro, Archivio, bollino
+  `v2.1 · 13 lug`, bridge dealers/poll). ⚠️ Scraping NON toccato (headless resta default). Consegna aggiornata:
+  `CONSEGNA-NOVACAR-NUOVA/PreventivoForge-v2.1-13lug.zip` (cartella interna `PreventivoForge-v2.1` + `LEGGIMI-PRIMA.txt`).
+  ⚠️ **Gael**: `app.py` (nuovo motore GUI) — Half B toccato da Max; `ui/index.html` invariata (riusata identica). REGISTRO-ERRORI E11 + regole 12-13.
 - **AGGIORNAMENTO 2026-07-09 (Max, CP-20260709-001): ARCHIVIO SI SVUOTA A OGNI CHIUSURA APP.**
   `archivio.py` +`clear()` (cancella PDF-copia+miniature+indice, NON i PDF di output); `app.py` la chiama dopo chiusura
   finestra (pywebview E Tkinter). **Exe consegna RIBUILDATO** (2026-07-09 10:15) → **zip rigenerato 117.4 MB**
