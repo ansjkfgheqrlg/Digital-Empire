@@ -1,5 +1,0 @@
-﻿[2026-06-16 09:32:43] CONFLITTO DI SYNC
-Pull --rebase fallito: Updating 2442364..f1e736f
-Il tuo lavoro e' al sicuro (committato in locale).
-Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
-Poi cancella questo file.

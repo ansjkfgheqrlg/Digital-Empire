@@ -7,7 +7,7 @@
 
 ---
 
-## 0. VERITÀ PRIMA DI TUTTO (Mandato Art.2 — prove non promesse, anche verso noi stessi)
+## 0. VERITÀ PRIMA DI TUTTO (Mandato Art.2 — prove non promes se, anche verso noi stessi)
 
 Analisi di certezza per stream. Nessun numero inventato:
 
@@ -41,7 +41,7 @@ Il piano completo richiede vari giorni di lavoro. Si costruisce così:
 
 ---
 
-## 2. I 5 STREAM — dettaglio operativo
+## 2. I 6 STREAM — dettaglio operativo
 
 ### S1 — CONCESSIONARI: anticipare settembre a LUGLIO 🥇 (priorità assoluta revenue)
 - **Asset:** PreventivoForge FUNZIONA (Novacar live: GUI premium, PDF, .exe consegnato). Fabbrica pronta: `/nuovo-concessionario` clona l'app in ore. Kill-switch licenze operativo.
@@ -73,6 +73,25 @@ Il piano completo richiede vari giorni di lavoro. Si costruisce così:
 - **Revenue path:** AdSense = mesi. Ma OGNI video porta descrizione con link S2 (lead-gen immediata) + costruisce asset vendibile (canali monetizzati si vendono).
 - **Nicchie candidate (decisione Max in P0.6):** mindset/business (riusa know-how mentalita.brutale) · AI/Claude (riusa know-how nostro) · [DM] da analisi competitor.
 
+### S6 — PREVENTIVOFORGE → PRODOTTO PROMOSSO (rebrand + vendita oltre i 7)
+- **Direttiva Max (2026-07-19):** il prodotto preventivi va PROMOSSO. Serve un nome molto migliore,
+  promuovibile ("come infinite"). Tutto deve produrre risultati CONCRETI: efficacia, operatività, fatturato.
+- **Perché è oro:** prodotto GIÀ vivo e consegnato (Novacar live), fabbrica clone in ore, kill-switch
+  licenze operativo. Mercato: migliaia di concessionari IT che importano dalla Germania. Il runtime
+  outreach (A2, attivo) può vendere il prodotto da solo: stesso motore, ICP nuovo = concessionari.
+- **Rebrand — shortlist (Max sceglie in 30 secondi, G2):**
+  1. **Preventa** — pulito, brandabile, suona software
+  2. **Lampo** — italiano, velocità, memorabile ("il preventivo in 3 minuti")
+  3. **Quotix** — tech, internazionale
+  4. **AutoQuota** — dice subito cosa fa
+  (dominio/handle verificati DOPO la scelta, non prima — niente lavoro sprecato)
+- **Promo-kit minimo (G3-G4, motori esistenti):** landing empire-premium-style (1 pagina: demo video
+  GUI premium + PDF esempio + prezzo/licenza) + demo video 2min + case study Novacar (case-study-forge,
+  prove reali: tempi, PDF, consegna). Poi **outreach dedicato**: A1 scrape concessionari IT che vendono
+  import DE (mobile.de dealer IT) → A2 wrappa runtime → sequenza email col case study.
+- **Revenue path:** ogni cliente = setup + canone mensile (kill-switch = riscossione garantita).
+  I 7 quasi-confermati (S1) diventano i primi testimonial del rebrand.
+
 ---
 
 ## 3. TASK BOARD — SETTIMANA 19-26 LUGLIO
@@ -87,6 +106,8 @@ Il piano completo richiede vari giorni di lavoro. Si costruisce così:
 | G3 | Approvare landing+prezzo funnel Manuale (review 10 minuti, non costruire) | GO pubblicazione | S2 |
 | G4-G5 | Decidere nicchia canale YouTube #1 (proposta analisi competitor di Gael) | nicchia scelta | S5 |
 | G6-G7 | Push vendita Manuale sui canali personali caldi (post, storie, contatti diretti) | prime vendite | S2 |
+| G2 | **Scegliere il NOME nuovo** di PreventivoForge dalla shortlist S6 (30 sec) | nome deciso | S6 |
+| G5 | Approvare promo-kit (landing+demo+case study) preparato da Gael/Claude | GO promo | S6 |
 
 ### 🟣 GAEL (build, automazione — riprende in coda a CF-R8)
 | G | Task | Output | Stream |
@@ -98,6 +119,7 @@ Il piano completo richiede vari giorni di lavoro. Si costruisce così:
 | G3-G4 | **Pipeline mentalita.brutale 100% auto**: carousel-factory wrap → gate QA auto → scheduler pubblicazione → report | pipeline testata end-to-end | S4 |
 | G4-G5 | **WF-YT v1**: ARCHITETTURA workflow YouTube-Fliki + test 1 video end-to-end con API (script test→Fliki→mp4 scaricato) | 1 video generato + WF docs | S5 |
 | G6 | Analisi competitor nicchie YT (3 candidate, dati citati) → proposta a Max | doc proposta | S5 |
+| G5-G6 | **Promo-kit S6**: landing rebrand (empire-premium-style) + case study Novacar (case-study-forge) + lista concessionari import-DE (A1 scrape) | kit pronto + lista lead | S6 |
 | G7 | Consolidamento settimana: CP + metriche reali (vendite, anticipi, pipeline stato) → RETRO | CP settimanale | tutti |
 
 ### 🤖 CLAUDE (esecuzione diretta, su comando)
