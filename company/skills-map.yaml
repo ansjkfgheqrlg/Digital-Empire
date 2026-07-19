@@ -3,9 +3,11 @@
 # Regola (ADR-003): il codice/file RESTA dove si trova. Questo e' un registro, non uno spostamento.
 # Aggiorna questo file ogni volta che nasce una nuova skill o workflow.
 
-version: "1.0"
-updated: "2026-06-11"
+version: "1.1"
+updated: "2026-07-19"
 maintainer: "Chief-Forge (company/Board-CSuite/Chief-Forge.md)"
+# ADR-008: questa mappa + company/REGISTRO-IMPRESA.md = anagrafe unica.
+# Creare senza registrare = artefatto abusivo. Aggiornare = ultimo passo di ogni ciclo FORGE.
 
 # ============================================================
 # FORMATO:
@@ -492,6 +494,57 @@ skills_and_workflows:
     note: "CP, ADR, STATO-EMPIRE, INDEX. Interrogare PRIMA di ogni task."
 
 # ============================================================
+# NATI DOPO L'11/06 (censimento ADR-008, 2026-07-19)
+# ============================================================
+
+nuovi_2026_07:
+
+  - id: preventivoforge
+    nome: PreventivoForge (motore + fabbrica multi-tenant + kill-switch licenze)
+    percorso: Clienti/
+    ecosistema: 01-AGENCY
+    reparto: A4-Delivery (delivery) / S1-S6 dossier 16 (vendita)
+    tipo: tool
+    stato: active
+    note: "PRODOTTO LIVE (Novacar consegnato). Gate IMG/R + regole-check. Skill /preventivo-auto e /nuovo-concessionario. Rebrand in corso (S6). ADR-003."
+
+  - id: empire-studio-suite
+    nome: Empire Studio (ingestione video -> frame -> visione -> forge -> wiki)
+    percorso: SKILL & Agenti/Empire Studio Suite/
+    ecosistema: 10-MEMORY
+    reparto: knowledge / Competitor Research
+    tipo: workflow
+    stato: active
+    note: "Pipeline ingestione integrale. Check WATCH-001. Andrei Pascu 9/29 al 2026-07-11."
+
+  - id: memory-empire
+    nome: Memory Empire (router + archivio integrale + enrichment)
+    percorso: C:/Users/Utente/.claude/skills/memory-empire/ (skill utente)
+    ecosistema: 10-MEMORY
+    reparto: knowledge
+    tipo: skill
+    stato: active
+    note: "Si attiva su ogni contenuto da ingerire. 5 reparti interni."
+
+  - id: empire-desk
+    nome: EmpireDesk.exe (piattaforma launcher di tutte le automazioni)
+    percorso: (in build — Gael, dossier 17)
+    ecosistema: 06-CORE/Platform
+    reparto: interim Genesi-Core
+    tipo: tool
+    stato: experimental
+    note: "ORDINE MAX 2026-07-19: v0.1 entro oggi. 8 tile subprocess sui runtime reali. Zero bottoni finti. PIANO-MAESTRO/17-EMPIRE-DESK-APP.md."
+
+  - id: wf-yt-fliki
+    nome: WF-YT-* (canali YouTube auto-producenti via API Fliki)
+    percorso: (da costruire — S5 dossier 16)
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: WF dentro CF (forma giusta = workflow, non ecosistema)
+    tipo: workflow
+    stato: experimental
+    note: "SCOUT->SCRIPT->RENDER(Fliki)->THUMB->PUBLISH->ANALYZE->IMPROVE. Chiave API in .env locale, MAI nel repo."
+
+# ============================================================
 # ASSET NON ANCORA CLASSIFICATI (da verificare con Max)
 # ============================================================
 
@@ -508,9 +561,10 @@ da_classificare:
 # ============================================================
 
 stats:
-  totale_mappati: 51
-  active: 29
-  experimental: 12
+  totale_mappati: 56
+  active: 32
+  experimental: 14
   legacy: 4
   knowledge: 6
   da_classificare: 3
+  aggiornamento: "2026-07-19 — +5 voci censimento ADR-008 (preventivoforge, empire-studio-suite, memory-empire, empire-desk, wf-yt-fliki)"
