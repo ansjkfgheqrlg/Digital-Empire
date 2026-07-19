@@ -29,6 +29,15 @@ Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'
 numerazione vecchia. Rimosso: vale il blocco qui sopra; nel dossier la divisione è la **§5**.
 Stesso contenuto, nessun task cambiato. Ordine del giorno Gael dopo B1: task revenue dossier 16.)*
 
+## 🎬 YOUTUBE LEAD MACHINE — AVVIATO (2026-07-19 sera, CP-20260719-004)
+Ingest completi i 7 video di `Formazzione/Youtube/` (5× Media Profit metodo completo, Hormozi lead magnet,
+Think Media framework) + 2 infografiche → **strategia operativa pronta: `Formazzione/Youtube/STRATEGIA-
+YOUTUBE-LEAD-MAGNET.md`** (8 sezioni: mindset views≠clienti, posizionamento Schwartz, 4 pilastri editoriale,
+funnel TOFU-MOFU-BOFU con MOFU=audit CRO live, lead magnet su misura, metodo 4h/settimana, speed-to-lead
+391%/78%, piano 30gg, 7 errori mortali) + 7 note in `note-video/` + 7 pagine wiki. RIPRESA DA: piano §7 —
+setup canale, scheda cliente d'oro, lead magnet #1, automazione speed-to-lead, batch #1 (4-6 video).
+Complementare (non sovrapposto) a dossier 16 S5 YouTube-Fliki: questa è strategia contenuti/organico.
+
 ## ✅ GAEL — V2-2 LOTTO 3 COMPLETATO (2026-07-19, CP-20260719-001)
 **Chiuso PRIMA di vedere l'ordine EMPIRE DESK qui sopra (era già a buon punto); ora si passa
 a EMPIRE DESK come da ordine Max. RIPRESA V2-2 Lotto 4 (dopo Empire Desk): `07-BACKBONE-

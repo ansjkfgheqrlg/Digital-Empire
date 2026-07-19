@@ -24,6 +24,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260719-004](checkpoints/CP-20260719-004.md) — **YOUTUBE LEAD MACHINE avviato**: ingest 7 video (5 Media Profit + Hormozi + Think Media, trascrizioni complete) → strategia operativa `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md` (8 sezioni, piano 30gg) + 7 note video + 7 pagine wiki — sessione Claude
 - [CP-20260719-001](checkpoints/CP-20260719-001.md) — **V2-2 Lotto 3 COMPLETATO**: 5 dossier V2 (05-MULTI-BUSINESS-V2 + split 06-CORE in 06a-Platform/06b-Forge/06c-Intelligence/06d-Operations), ~229 agenti progettati, gate+review pass, V2-INDEX.md aggiornato — Gael
 - [CP-20260711-002](checkpoints/CP-20260711-002.md) — 🏁 **01-AGENCY CHIUSO 10/10** (182 file, 74 agenti, 28 WF; batch-3 A7/A8/A9/A10; il gate ha trovato+chiuso 2 difetti veri: namespace divergente → `NAMESPACE.md` canonico `agency/a<N>`, 6 README v1 stantii → riscritti; RETRO: write-early + idempotenza sospesa sui residui v1) — Max
 - [CP-20260703-001](checkpoints/CP-20260703-001.md) — **Novacar: GUI App PREMIUM (pywebview HTML/CSS)** (Gael, priorità #1 Max): `ui/index.html` luxury slate+argento (font premium, gradienti/ombre/hover, log colorato), `app.py` pywebview + bridge + fallback Tkinter, titolo "Novacar srl", +glossario Sitzeinstellung. GUI premium confermata WebView2 (dev+.exe). PDF NON toccato (ownership Max). — Gael

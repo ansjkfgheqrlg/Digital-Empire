@@ -44,3 +44,8 @@
 
 ## 2026-07-19
 - INGEST: PIANO ESTATE REVENUE (dossier 16) — strategia fatturato 7gg: S1 concessionari anticipati (≥95%), S2 Manuale CC (B-003 da chiudere G1), S3 pagine lancio, S4 mentalita.brutale (solo se auto 100%, carousel-factory wrap), S5 YouTube-Fliki auto (API in .env locale) → 1 dossier + task board Max/Gael in STATO
+
+## 2026-07-19 (YouTube Lead Machine — avvio progetto)
+- INGEST: 7 video YouTube lead-generation (`Formazzione/Youtube/Rebdere YOUTUBE un Lead magnet.txt`): 5× Lorenzo Ricchieri/Media Profit (metodo completo: mindset, 4 pilastri, funnel TOFU-MOFU-BOFU, 4h/settimana), Alex Hormozi (lead magnet), Sean Cannell/Think Media (framework 3 step + trust) + 2 infografiche NotebookLM. Trascrizioni complete lette (7 video, ~2h11m).
+- BUILD: strategia operativa `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md` (8 sezioni: mindset, posizionamento Schwartz, 4 pilastri, funnel con MOFU=audit CRO, lead magnet su misura, metodo 4 ore, speed-to-lead 391%/78%, piano 30 giorni + 7 errori mortali) + 7 note per video in `note-video/`.
+- → 7 pagine wiki create: Project_YouTube_Lead_Machine (01 - Projects/), Source_MediaProfit_YouTube_Lead_Machine, Source_Hormozi_Lead_Magnet, Source_ThinkMedia_YouTube_Lead_Framework, Concept_YouTube_Funnel_TOFU_MOFU_BOFU, Concept_Lead_Magnet_Hormozi, Concept_Speed_To_Lead. index.md +7 (nuova sezione YouTube Marketing / Lead Generation).
