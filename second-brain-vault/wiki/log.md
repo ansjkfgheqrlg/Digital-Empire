@@ -95,6 +95,13 @@
 - REGISTRAZIONE: skills-map v1.3 (61 mappati), REGISTRO-IMPRESA §3, STATO-EMPIRE, INDEX.
 - → 1 pagina tool creata ([[tools/Tool_Youtube_Lead_Machine_Skill]]), index.md +1. CP-20260720-005.
 
+## 2026-07-20 (FORGE-AGENT-SKILL — MIR retrofis + MKD brand-offer)
+- BUILD (MIR-1+6): memory locale + REGISTRO-ERRORI standardizzati per 3 runtime → `Outreach/` (OE-1..5),
+  `Workfolw crea caroselli à/` (CE-1..4), `Formazzione/Youtube/` (YE-1..3). Wrap ADR-003 (file aggiuntivi, 0 tocco runtime).
+- BUILD (MIR-2): MKD Brand-Offer DE (`FORGE-AGENT-SKILL/memory/mkd/MKD-brand-offer-DE.md`, 12 sezioni da 475 righe sorgente,
+  ➕ marcate, assumption ledger). Registrato in REGISTRO-IMPRESA §3.
+- → 1 pagina creata ([[entities/Entity_Brand_Offer_DE]]), index.md +1. Dossier 18 MIR-1/2/6/11 marcati ✅. CP-20260720-006.
+
 ## 2026-07-20 (YouTube Lead Machine — kit di lancio)
 - BUILD: kit eseguibile completo in `Formazzione/Youtube/`: CLIENTE-DORO.md (scheda ICP da `Materiale Agency`), SETUP-CANALE.md (copy pronta: nome/descrizione/banner/link/playlist), LEAD-MAGNET-01-analisi-gratuita.md (magnet "Analisi Gratuita 15 min" + gate qualifica + 5 messaggi automazione speed-to-lead pronti + metriche), batch-01/ (PIANO + 6 script completi hook verbatim/scaletta/CTA sui 4 pilastri: 2 ricerca TOFU, 1 educazione, 1 metodo 5 step, 1 audit dal vivo, 1 prova sociale) + 2 concept copertina AI in `batch-01/copertine/`. → pagina progetto [[Project_YouTube_Lead_Machine]] aggiornata. CP-20260720-004.
 

@@ -49,7 +49,7 @@ Ogni gap diventa miglioria MIR-w (Miglioria Impero Workflow) con owner e gate, n
 | W4 | Content / carousel-factory | `Workfolw crea caroselli à/` | runtime wrappato | MIR-6: registro errori + selftest tile EmpireDesk |
 | W5 | Empire Studio (ingest video) | `SKILL & Agenti/` | CF-grade + WATCH-001 ⭐ | — |
 | W6 | EmpireDesk (launcher) | `EmpireDesk/` | in build (B0/B1 da ordine Max) | seam modules/ = gambino 4 ✅ in corso (governance altro owner) |
-| W7 | **YouTube Lead Machine** | `Formazzione/Youtube/` | strategia+kit ✅ (CP-20260719-009, CP-20260720-004) | MIR-11: skill `/youtube-lead-machine` + agenti yt-* via FORGE-AGENT-SKILL (backlog reparto) |
+| W7 | **YouTube Lead Machine** | `Formazzione/Youtube/` | strategia+kit ✅ (CP-20260719-009, CP-20260720-004) | MIR-11: ✅ skill `/youtube-lead-machine` FORGIATA (CP-20260720-005, GATE 7/7); agenti yt-* in valutazione superfluità (deleghe attive) |
 | W8 | **FORGE-AGENT-SKILL** (OGGI) | `FORGE-AGENT-SKILL/` | reparto nuovo CF-grade | — (è il MIR-maker degli altri) |
 | W9 | Manuale CC (prodotto S2) | `02-INFO-BUSINESS` | CF-grade | vendita: copy review via copy-workflow |
 | W10 | Pagine lancio / agency sites | `Agency page*/`, `agency-empire*/` | siti statici | MIR-12: copy review APSOC + tracking eventi uniforme |
@@ -63,12 +63,12 @@ codice/cantiere aperto di altri owner — produce solo le migliorie MIR su asset
 
 | ID | Azione | Owner | Gate | Priorità |
 |---|---|---|---|---|
-| MIR-1 | memory/ locale (INDEX.md) nei runtime W1, W4 | FORGE-AGENT-SKILL (via richiesta eco) | fas-qa-gate | P2 |
-| MIR-2 | Copy obbligatorio via copy-workflow (regola attiva da oggi) + MKD brand-offer da `Materiale Agency` | 04-MARKETING/L2-1 | A8 review ≥85 | **P0 (fatto oggi su kit YouTube → COPY-REVIEW-APSOC.md)** |
+| MIR-1 | memory/ locale (INDEX.md) nei runtime W1, W4 | FORGE-AGENT-SKILL (via richiesta eco) | fas-qa-gate | P2 — ✅ FATTA 2026-07-20 (Outreach/ + carousel-factory/ memory/INDEX.md) |
+| MIR-2 | Copy obbligatorio via copy-workflow (regola attiva da oggi) + MKD brand-offer da `Materiale Agency` | 04-MARKETING/L2-1 | A8 review ≥85 | **P0 ✅ entrambe 2026-07-20: kit YouTube review + MKD-brand-offer-DE.md** |
 | MIR-3 | ASK formale nei FORGE-PLAN | FORGE-AGENT-SKILL | conductor checklist | P1 |
 | MIR-4 | EmpireDesk seam modules (già ordine Max B1 — solo annotato, owner altrui) | (Gael) | selftest 8/8 | — |
 | MIR-5 | Retrofit 7-file su reparti pre-impero, 1 figlio/sprint | FORGE-AGENT-SKILL | fas-qa-gate | P3 |
-| MIR-6 | REGISTRO-ERRORI.md in ogni runtime attivo | ogni reparto owner | METHOD-GUARD | P1 |
+| MIR-6 | REGISTRO-ERRORI.md in ogni runtime attivo | ogni reparto owner | METHOD-GUARD | P1 — ✅ outreach+carousel+youtube-kit 2026-07-20 (PreventivoForge/EmpireDesk ce l'avevano già) |
 | MIR-7 | FORGE-PLAN con sorgenti dichiarate (traceability) | FORGE-AGENT-SKILL | qa-gate | P1 |
 | MIR-8 | Nota metodo Research→Plan→Reset→Implement in `PIANO-MAESTRO/10-METODO-CICLO-FASE.md` | Max (approva) | — | P3 |
 | MIR-9 | topology.md obbligatorio per team nuovi | FORGE-AGENT-SKILL | qa-gate | P2 |
