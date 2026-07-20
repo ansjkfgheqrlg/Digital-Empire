@@ -1,4 +1,19 @@
-# STATO EMPIRE -- aggiornato 2026-07-20 (ordine Max: PIVOT AREUS — Empire Desk riparte dalla piattaforma Aureus)
+# STATO EMPIRE -- aggiornato 2026-07-20 (Max: ISPETTORATO GENERALE — M1 fatta, M3 in build)
+
+## 🔴 MAX ATTIVO ORA — ISPETTORATO GENERALE (dossier 15, esteso oggi con agente 11 + WF-REVISION-STUDY)
+**Direttiva Max 2026-07-20:** l'analisi performance deve essere un ECOSISTEMA con un team di agenti
+dedicato — non solo registri scritti a mano. Deve studiare anche i SUCCESSI (non solo gli errori) e
+i CICLI DI CORREZIONE (quando Max chiede N modifiche, studiare TUTTE per fare meglio al primo colpo).
+- **M1 fondamenta ✅ COMPLETA** (CP-20260720-004): `company/Ispettorato/` — README+ARCHITETTURA,
+  `registro/REGISTRO-ERRORI.md` (10 errori empire-wide REALI migrati), `registro/REGISTRO-REVISIONI.md`
+  + `registro/REGISTRO-SUCCESSI.md` (nuovi, dossier 15 esteso), `kpi/KPI-EMPIRE-WIDE.md`. Intestato
+  in REGISTRO-IMPRESA.md + skills-map.yaml (ADR-008).
+- 🔄 **M3 in build (background, 2 swarm):** 11 agenti CF-grade (isp-conductor…isp-revision-analyst)
+  + 5 workflow. Lezione ERR-20260622-001 (write-early) applicata esplicitamente nei prompt.
+- **Prossimo:** gate struct M3 → 5-bis MAXIMILIAN → CP → poi M2 (pilota PreventivoForge, trace JSONL).
+- **GAEL: non toccare `company/Ispettorato/` (Max ci lavora). Tu resta su Empire Desk (G1/G2/G3 sotto).**
+
+## 🚨🚨🚨 ORDINE MAX 2026-07-20 — PIVOT: EMPIRE DESK = AUREUS AGENCY OS TRASFORMATA IN APP (leggere dossier 17 §0-bis)
 
 ## 🚨🚨🚨 ORDINE MAX 2026-07-20 — PIVOT: EMPIRE DESK = AUREUS AGENCY OS TRASFORMATA IN APP (leggere dossier 17 §0-bis)
 **Max ha bocciato la UI launcher v0.1/v2** (struttura sbagliata: questa è l'app GESTIONALE del team,

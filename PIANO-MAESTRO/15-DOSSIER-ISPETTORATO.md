@@ -55,7 +55,7 @@ Cosa grande e trasversale → **reparto + backbone dati** (telemetria). NON serv
 | **RETRO (passo 9 metodo)** | resta: la retro di fase ORA scrive nel formato Ispettorato e viene auditata (il passo 9 si aggancia, non si duplica). |
 | **KNOWN ERRORS di Empire Studio (RULES.md)** | primo seme del REGISTRO-ERRORI: viene MIGRATO dentro, non lasciato duplicato. |
 
-## 5. ROSTER (10 agenti CF-grade, 7 file ciascuno)
+## 5. ROSTER (11 agenti CF-grade, 7 file ciascuno)
 
 | # | Agente | Tier | Compito |
 |---|---|---|---|
@@ -69,19 +69,22 @@ Cosa grande e trasversale → **reparto + backbone dati** (telemetria). NON serv
 | 8 | `isp-liaison-altiranghi` | sonnet | Il contatto con gli alti ranghi: instrada i report a Board/MAXIMILIAN/Max, traccia le decisioni di ritorno e le porta a terra. |
 | 9 | `isp-improvement-dispatcher` | sonnet | Da ogni audit → azioni di miglioramento assegnate al reparto owner (in BACKLOG o fase), con scadenza e verifica. |
 | 10 | `isp-verifier` | sonnet | Verifica indipendente: le contromisure promesse sono state applicate DAVVERO? Chiude o riapre le voci del registro. |
+| 11 | `isp-revision-analyst` | sonnet | **"Primo colpo migliore" (direttiva Max 2026-07-20):** quando un output umano-Claude richiede N correzioni prima di essere accettato, studia OGNI correzione della catena (non solo l'ultima), ne estrae il pattern ("cosa mancava/andava capito subito") e lo scrive come voce `REV-YYYYMMDD-NNN` in `registro/REGISTRO-REVISIONI.md`. Obiettivo: il ciclo di correzione N si accorcia nel tempo — misura `revisioni_medie_per_task` come KPI trend. Studia anche i casi a **0 correzioni** (output accettato al primo colpo): li registra come pattern-vincente da ripetere, non solo gli errori. |
 
 ## 6. BACKBONE DATI (deterministico, €0 API — Mandato Art.4.3)
 
 ```
 company/Ispettorato/
 ├── README.md · ARCHITETTURA.md
-├── agenti/            (10 × 7 file)
+├── agenti/            (11 × 7 file)
 ├── workflow/          (4 WF, §7)
 ├── telemetry/
 │   ├── runs/<workflow>/<run-id>.jsonl      ← trace eventi per run
 │   └── daily/<YYYY-MM-DD>.md               ← snapshot giornaliero
 ├── registro/
 │   ├── REGISTRO-ERRORI.md                  ← ERR-*: la memoria anti-recidiva (append-only)
+│   ├── REGISTRO-REVISIONI.md               ← REV-*: cicli di correzione studiati, "primo colpo migliore" (append-only)
+│   ├── REGISTRO-SUCCESSI.md                ← SUC-*: cosa è uscito bene al primo colpo, pattern da ripetere
 │   └── REGISTRO-DECISIONI-ALTIRANGHI.md    ← decisioni di ritorno da Board/Max
 ├── report/
 │   ├── run/<run-id>.md · daily/<data>.md · escalation/<id>.md
@@ -94,7 +97,7 @@ company/Ispettorato/
 (`trace.jsonl`, ciclo CY-20260611-001). Script collettori in `scripts/` (Python, no LLM):
 i report si COMPILANO dai dati; gli agenti li interpretano solo dove serve giudizio.
 
-## 7. I 3 CICLI + 4 WORKFLOW
+## 7. I 4 CICLI + 5 WORKFLOW
 
 | Trigger (direttiva Max) | Workflow | Output |
 |---|---|---|
@@ -102,6 +105,7 @@ i report si COMPILANO dai dati; gli agenti li interpretano solo dove serve giudi
 | **OGNI GIORNO** | `WF-DAILY-AUTOCRITICA` | daily report: KPI trend, autocritica ("cosa rifaremmo meglio"), top-3 azioni |
 | **OGNI ERRORE** | `WF-RECIDIVA-GATE` | check registro → nuovo: registra+contromisura · noto: ROSSO+escalation |
 | **VERSO GLI ALTI RANGHI** | `WF-REPORT-ALTIRANGHI` | pacchetto a Board/MAXIMILIAN/Max + tracking decisioni di ritorno |
+| **DOPO OGNI CICLO DI CORREZIONE** (direttiva Max 2026-07-20) | `WF-REVISION-STUDY` | studia TUTTE le N correzioni di un task (non solo l'ultima) → `REGISTRO-REVISIONI.md` + pattern estratto → se 0 correzioni: voce in `REGISTRO-SUCCESSI.md` |
 
 **Aggancio al metodo 9 passi:** passo 1 RECALL ora include "consulta REGISTRO-ERRORI";
 passo 9 RETRO ora produce output in formato Ispettorato. (Aggiornare dossier 10 in M4.)
@@ -134,7 +138,7 @@ KPI PF: successo run, 6/6 gate al 1° colpo, durata, foto ≥ soglia, € API=0,
 |---|---|---|
 | **M1 — Fondamenta dati** | struttura `company/Ispettorato/` + REGISTRO-ERRORI (migrando KNOWN ERRORS di Empire Studio + lezioni già in Memory: collisione naming CP-20260616-001, collisioni PDF 2026-07-02, swarm morto per session-limit…) + definizione KPI PF | struttura completa 0 vuote · registro con ≥5 ERR reali migrati |
 | **M2 — Pilota PreventivoForge** | trace JSONL in `run.py` + generatore run-report (script) + prova su run reale | 1 run reale → report completo §8 auto-generato |
-| **M3 — Reparto CF-grade** | 10 agenti (§5) + 4 workflow (§7) via FORGE, swarm idempotente Title-Case | struct-gate: 10 agenti/4 WF/0 magri/0 stub + 5-bis MAXIMILIAN |
+| **M3 — Reparto CF-grade** | 11 agenti (§5) + 5 workflow (§7) via FORGE, swarm idempotente Title-Case | struct-gate: 11 agenti/4 WF/0 magri/0 stub + 5-bis MAXIMILIAN |
 | **M4 — Aggancio Impero** | RECALL/RETRO aggiornati (dossier 10) + handoff con MAXIMILIAN, Board, Sentinelle, CF-R8 + daily attivo | 1 WF-DAILY-AUTOCRITICA prodotto su dati veri · dossier 10 aggiornato |
 | **M5 — Estensione** | telemetria su outreach + prossimi workflow · report settimanale a Max · (opz.) hook Claude Code post-run | 2° workflow cablato · 1 RECIDIVA-GATE provato (test negativo simulato) |
 

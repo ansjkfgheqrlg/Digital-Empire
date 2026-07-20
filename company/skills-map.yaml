@@ -499,6 +499,15 @@ skills_and_workflows:
 
 nuovi_2026_07:
 
+  - id: ispettorato-generale
+    nome: Ispettorato Generale (performance, autocritica, anti-recidiva, primo-colpo-migliore)
+    percorso: company/Ispettorato/
+    ecosistema: organo trasversale (non ecosistema)
+    reparto: Ispettorato (owner build Max)
+    tipo: workflow
+    stato: experimental
+    note: "M1 fondamenta fatta (2026-07-20): REGISTRO-ERRORI 10 voci migrate, REGISTRO-REVISIONI+REGISTRO-SUCCESSI nuovi, KPI empire-wide. M3 (11 agenti CF-grade) in build. Dossier 15."
+
   - id: preventivoforge
     nome: PreventivoForge (motore + fabbrica multi-tenant + kill-switch licenze)
     percorso: Clienti/
@@ -561,9 +570,9 @@ da_classificare:
 # ============================================================
 
 stats:
-  totale_mappati: 56
+  totale_mappati: 57
   active: 32
-  experimental: 14
+  experimental: 15
   legacy: 4
   knowledge: 6
   da_classificare: 3
