@@ -17,8 +17,12 @@ grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
   restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
 - **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.
 
-**▶️ MAX (via Claude):** U0 ✅ (import+build+anteprima) · U1 in fase 2 = operatività dentro Aureus
-nel suo linguaggio grafico (Automations → flussi reali, pannelli metrics/revenue/licenze).
+**▶️ MAX (via Claude):** U0 ✅ (import+build+anteprima) · **U0b ✅ offline-capable (2026-07-20,
+`9e86349b`)**: Tailwind runtime + font Inter vendorizzati in `platform/public/` (stesso motore/stessi
+woff2 = zero differenze grafiche; l'app ora gira senza internet — verificato live) · U1 in fase 2 =
+operatività dentro Aureus nel suo linguaggio grafico (Automations → flussi reali, pannelli
+metrics/revenue/licenze). GAEL: dopo il pull ricordati `npm install` + `npm run build` in platform/
+(node_modules e dist NON sono nel repo).
 **Piano vincolante e completo: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` §5 (appena scritto, leggerlo TUTTO).**
 Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'altro half** (lezione PreventivoForge).
 
