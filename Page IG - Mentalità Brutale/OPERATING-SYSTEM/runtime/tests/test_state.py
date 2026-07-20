@@ -33,9 +33,21 @@ class StateTests(unittest.TestCase):
             store = StateStore(Path(tmp) / "state.sqlite")
             self.assertEqual(store.get_control("autonomy_mode"), "SHADOW")
             self.assertEqual(store.get_control("kill_switch"), "ACTIVE")
-            self.assertTrue(store.enqueue(manifest()))
-            self.assertFalse(store.enqueue(manifest()))
+            self.assertEqual(store.enqueue(manifest()), "ENQUEUED")
+            self.assertEqual(store.enqueue(manifest()), "DUPLICATE_SKIPPED")
             self.assertEqual(len(store.due_jobs(datetime.now(timezone.utc))), 1)
+
+    def test_reschedule_keeps_publish_identity_and_updates_pending_job(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            store = StateStore(Path(tmp) / "state.sqlite")
+            first = manifest()
+            value = first.canonical_dict()
+            value["scheduled_at"] = "2020-01-02T00:00:00Z"
+            moved = ContentManifest.from_dict(value)
+            self.assertEqual(first.content_hash, moved.content_hash)
+            self.assertEqual(store.enqueue(first), "ENQUEUED")
+            self.assertEqual(store.enqueue(moved), "RESCHEDULED")
+            self.assertEqual(store.get_job(first.content_hash)["scheduled_at"], "2020-01-02T00:00:00Z")
 
     def test_publication_unique_by_hash(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

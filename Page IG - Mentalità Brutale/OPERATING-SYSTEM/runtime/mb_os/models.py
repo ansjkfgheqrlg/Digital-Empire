@@ -99,9 +99,20 @@ class ContentManifest:
     def canonical_json(self) -> str:
         return json.dumps(self.canonical_dict(), sort_keys=True, ensure_ascii=False, separators=(",", ":"))
 
+    def publication_identity(self) -> dict[str, Any]:
+        """Stable identity for side effects; scheduling/experiments must not permit a duplicate publish."""
+        return {
+            "content_id": self.content_id,
+            "brand": self.brand,
+            "format": self.format,
+            "caption": self.caption,
+            "media": [item.identity() for item in self.media],
+        }
+
     @property
     def content_hash(self) -> str:
-        return hashlib.sha256(self.canonical_json().encode("utf-8")).hexdigest()
+        payload = json.dumps(self.publication_identity(), sort_keys=True, ensure_ascii=False, separators=(",", ":"))
+        return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
 @dataclass(frozen=True)

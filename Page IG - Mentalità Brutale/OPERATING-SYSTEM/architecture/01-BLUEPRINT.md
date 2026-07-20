@@ -75,7 +75,7 @@ DRAFT
 Da qualunque stato: → PAUSED | FAILED_RETRYABLE | FAILED_TERMINAL
 ```
 
-Transizioni live sono append-only in SQLite + trace; `content_hash` impedisce doppio publish.
+Transizioni live sono append-only in SQLite + trace; `content_hash` impedisce doppio publish ed è indipendente da orario/esperimento, quindi una ripianificazione aggiorna il job senza creare una nuova identità di pubblicazione.
 
 ## 5. Topologia operativa
 

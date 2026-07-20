@@ -98,7 +98,7 @@ def main(argv: list[str] | None = None) -> int:
             elif args.command == "plan":
                 dump(operator.plan(manifest))
             elif args.command == "enqueue":
-                dump({"status": "ENQUEUED" if store.enqueue(manifest) else "DUPLICATE_SKIPPED", "content_hash": manifest.content_hash})
+                dump({"status": store.enqueue(manifest), "content_hash": manifest.content_hash})
             else:
                 dump(operator.run(manifest, live=args.live, confirmation=args.confirm_publish))
         elif args.command == "run-due":

@@ -103,25 +103,38 @@ class StateStore:
             )
         self.event("CONTROL_CHANGED", {"key": key, "value": value})
 
-    def enqueue(self, manifest: ContentManifest) -> bool:
+    def enqueue(self, manifest: ContentManifest) -> str:
+        """Enqueue once; a changed schedule updates the pending job without changing publish identity."""
         now = utc_now()
+        scheduled_at = manifest.scheduled_datetime().isoformat().replace("+00:00", "Z")
+        manifest_json = manifest.canonical_json()
         with self.connection() as conn:
-            cursor = conn.execute(
-                "INSERT OR IGNORE INTO jobs(content_hash,content_id,scheduled_at,status,manifest_json,created_at,updated_at) "
-                "VALUES(?,?,?,?,?,?,?)",
-                (
-                    manifest.content_hash,
-                    manifest.content_id,
-                    manifest.scheduled_datetime().isoformat().replace("+00:00", "Z"),
-                    "QUEUED",
-                    manifest.canonical_json(),
-                    now,
-                    now,
-                ),
-            )
-            created = cursor.rowcount == 1
-        self.event("JOB_ENQUEUED" if created else "JOB_DUPLICATE_SKIPPED", {"content_hash": manifest.content_hash}, manifest.content_id)
-        return created
+            published = conn.execute(
+                "SELECT 1 FROM publications WHERE content_hash=?", (manifest.content_hash,)
+            ).fetchone()
+            existing = conn.execute(
+                "SELECT scheduled_at,status,manifest_json FROM jobs WHERE content_hash=?", (manifest.content_hash,)
+            ).fetchone()
+            if published or (existing and existing["status"] == "PUBLISHED"):
+                action = "DUPLICATE_PUBLISHED_SKIPPED"
+            elif not existing:
+                conn.execute(
+                    "INSERT INTO jobs(content_hash,content_id,scheduled_at,status,manifest_json,created_at,updated_at) "
+                    "VALUES(?,?,?,?,?,?,?)",
+                    (manifest.content_hash, manifest.content_id, scheduled_at, "QUEUED", manifest_json, now, now),
+                )
+                action = "ENQUEUED"
+            elif existing["scheduled_at"] != scheduled_at or existing["manifest_json"] != manifest_json:
+                conn.execute(
+                    "UPDATE jobs SET scheduled_at=?,status='QUEUED',manifest_json=?,last_error=NULL,updated_at=? "
+                    "WHERE content_hash=?",
+                    (scheduled_at, manifest_json, now, manifest.content_hash),
+                )
+                action = "RESCHEDULED"
+            else:
+                action = "DUPLICATE_SKIPPED"
+        self.event(action, {"content_hash": manifest.content_hash, "scheduled_at": scheduled_at}, manifest.content_id)
+        return action
 
     def due_jobs(self, now: datetime | None = None, limit: int = 20) -> list[sqlite3.Row]:
         instant = (now or datetime.now(timezone.utc)).astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
