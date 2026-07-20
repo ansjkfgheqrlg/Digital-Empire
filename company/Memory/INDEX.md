@@ -24,6 +24,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260720-001](checkpoints/CP-20260720-001.md) — **YOUTUBE LEAD MACHINE: kit di lancio COMPLETO** (scheda Cliente d'Oro, SETUP-CANALE copy pronta, lead magnet "Analisi Gratuita" + 5 messaggi speed-to-lead, batch #1 con 6 script hook/scaletta/CTA + 2 concept copertina) — sessione Claude
 - [CP-20260719-007](checkpoints/CP-20260719-007.md) — **YOUTUBE LEAD MACHINE avviato**: ingest 7 video (5 Media Profit + Hormozi + Think Media, trascrizioni complete) → strategia operativa `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md` (8 sezioni, piano 30gg) + 7 note video + 7 pagine wiki — sessione Claude
 - [CP-20260719-006](checkpoints/CP-20260719-006.md) — Risolto conflitto di sync GitHub (SYNC-CONFLICT.txt) + collisione numerazione checkpoint (002/003 rinumerati 004/005); merge REGISTRO-ERRORI EmpireDesk senza perdita dati; push riuscito, main allineato — Max
 - [CP-20260719-005](checkpoints/CP-20260719-005.md) — Skill ufficiale `master-app-builder` installata in `.claude/skills/` (kernel v2.1 + Fase 0.0 pattern-mining su PreventivoForge/EmpireDesk + tie-in reparti 06a-PLATFORM L2.2/06b-FORGE L2.1; verificata presente nell'elenco skill) — Max

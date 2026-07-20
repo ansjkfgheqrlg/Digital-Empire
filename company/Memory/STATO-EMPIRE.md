@@ -66,13 +66,15 @@ il PC dove gira già PreventivoForge):**
 5. CP finale + aggiorna questo file + wiki/log + push.
 Dettaglio completo: `company/Memory/checkpoints/CP-20260719-004.md`.
 *(Nota: questo checkpoint era numerato -002 in locale, ma quel numero era già usato su GitHub da ADR-008 — rinumerato -004 in fase di risoluzione conflitto sync 2026-07-19 21:xx.)*
-## 🎬 YOUTUBE LEAD MACHINE — AVVIATO (2026-07-19 sera, CP-20260719-007)
-Ingest completi i 7 video di `Formazzione/Youtube/` (5× Media Profit metodo completo, Hormozi lead magnet,
-Think Media framework) + 2 infografiche → **strategia operativa pronta: `Formazzione/Youtube/STRATEGIA-
-YOUTUBE-LEAD-MAGNET.md`** (8 sezioni: mindset views≠clienti, posizionamento Schwartz, 4 pilastri editoriale,
-funnel TOFU-MOFU-BOFU con MOFU=audit CRO live, lead magnet su misura, metodo 4h/settimana, speed-to-lead
-391%/78%, piano 30gg, 7 errori mortali) + 7 note in `note-video/` + 7 pagine wiki. RIPRESA DA: piano §7 —
-setup canale, scheda cliente d'oro, lead magnet #1, automazione speed-to-lead, batch #1 (4-6 video).
+## 🎬 YOUTUBE LEAD MACHINE — KIT DI LANCIO COMPLETO (agg. 2026-07-20, CP-20260720-001)
+Ingest completi i 7 video (CP-20260719-007) → strategia `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md`
+**→ ora anche il KIT ESEGUIBILE:** `CLIENTE-DORO.md` (ICP), `SETUP-CANALE.md` (copy pronta da incollare),
+`LEAD-MAGNET-01-analisi-gratuita.md` (magnet + gate + 5 messaggi speed-to-lead pronti), `batch-01/` (piano
++ **6 script completi pronti da registrare**: hook parola-per-parola, scaletta, CTA — V01 ads senza richieste,
+V02 sito bello≠vende, V03 ⭐ doppi clienti stesso traffico, V04 metodo 5 step, V05 ⭐ audit dal vivo,
+V06 prima→dopo) + 2 concept copertina. RIPRESA DA: eseguire setup canale con la copy → Calendly "Analisi
+gratuita 15 min" + automazioni → setup registrazione → **registrare batch #1 (ordine V03→V01→V02→V04→V06→V05,
+1 sessione da 4 ore)** → pubblicare 1-2/settimana + review dati settimanale.
 Complementare (non sovrapposto) a dossier 16 S5 YouTube-Fliki: questa è strategia contenuti/organico.
 
 ## ✅ GAEL — V2-2 LOTTO 3 COMPLETATO (2026-07-19, CP-20260719-001)

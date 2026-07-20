@@ -57,6 +57,9 @@
 ## 2026-07-19
 - INGEST: PIANO ESTATE REVENUE (dossier 16) — strategia fatturato 7gg: S1 concessionari anticipati (≥95%), S2 Manuale CC (B-003 da chiudere G1), S3 pagine lancio, S4 mentalita.brutale (solo se auto 100%, carousel-factory wrap), S5 YouTube-Fliki auto (API in .env locale) → 1 dossier + task board Max/Gael in STATO
 
+## 2026-07-20 (YouTube Lead Machine — kit di lancio)
+- BUILD: kit eseguibile completo in `Formazzione/Youtube/`: CLIENTE-DORO.md (scheda ICP da `Materiale Agency`), SETUP-CANALE.md (copy pronta: nome/descrizione/banner/link/playlist), LEAD-MAGNET-01-analisi-gratuita.md (magnet "Analisi Gratuita 15 min" + gate qualifica + 5 messaggi automazione speed-to-lead pronti + metriche), batch-01/ (PIANO + 6 script completi hook verbatim/scaletta/CTA sui 4 pilastri: 2 ricerca TOFU, 1 educazione, 1 metodo 5 step, 1 audit dal vivo, 1 prova sociale) + 2 concept copertina AI in `batch-01/copertine/`. → pagina progetto [[Project_YouTube_Lead_Machine]] aggiornata. CP-20260720-001.
+
 ## 2026-07-19 (YouTube Lead Machine — avvio progetto)
 - INGEST: 7 video YouTube lead-generation (`Formazzione/Youtube/Rebdere YOUTUBE un Lead magnet.txt`): 5× Lorenzo Ricchieri/Media Profit (metodo completo: mindset, 4 pilastri, funnel TOFU-MOFU-BOFU, 4h/settimana), Alex Hormozi (lead magnet), Sean Cannell/Think Media (framework 3 step + trust) + 2 infografiche NotebookLM. Trascrizioni complete lette (7 video, ~2h11m).
 - BUILD: strategia operativa `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md` (8 sezioni: mindset, posizionamento Schwartz, 4 pilastri, funnel con MOFU=audit CRO, lead magnet su misura, metodo 4 ore, speed-to-lead 391%/78%, piano 30 giorni + 7 errori mortali) + 7 note per video in `note-video/`.
