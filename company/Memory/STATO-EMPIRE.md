@@ -9,10 +9,18 @@ non un derivato PreventivoForge). Base nuova = piattaforma di Max **"Aureus Agen
 grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
 
 **▶️ GAEL — riprendi da qui (dettagli dossier 17 §0-bis):**
-- **G1 (per primo):** `app.py` serve `platform/dist/` come root (stessa origin delle API `/api/*`
-  esistenti) + finestra chrome-app → l'app che si apre È Aureus. Prima: `npm install` in platform/
-  (node_modules gitignorato) + `npm run build`. Vecchia `ui/index.html` → `/legacy` (fallback temporaneo).
-- **G2:** build exe con dist inclusa + test doppio click.
+- **G1 ✅ scritto (commit `85548a30`)**, verificato staticamente in una seconda sessione (2026-07-20
+  pomeriggio, questo blocco): `do_GET` riscritto correttamente — file-server statico su `platform/dist/`
+  con path-traversal guard (`is_relative_to`) + MIME via `mimetypes`, fallback SPA su `index.html` per
+  le route client-side di react-router, pagina di aiuto onesta se `platform/dist/` manca (mai bianco),
+  `/legacy` invariato, `main_chrome_app`/`main_webview` ora condividono lo stesso server locale via
+  `url=` (prima `main_webview` usava `html=` inline — corretto, Aureus è SPA multi-asset). `empiredesk.spec`
+  include `platform/dist`+`modules`+`state` nei `datas` (verificato: `modules/`+`state/` esistono e sono
+  tracciati, nessun rischio di build PyInstaller rotta per path mancante). **⚠️ NON eseguito a runtime
+  in NESSUNA delle due sessioni** (ambiente senza Python/Node/Chrome in entrambe) — resta da fare
+  `npm install && npm run build` in `platform/` + `python app.py --selftest` + `python app.py` su una
+  macchina reale prima di dichiarare G1 chiuso davvero.
+- **G2 (prossimo, blocca su G1 verificato a runtime):** build exe con dist inclusa + test doppio click.
 - **G3:** B1-B4 restano (loader moduli/scheduler/notify/taskboard) = solo backend. Moduli A1-A3 di Max
   restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
 - **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.
