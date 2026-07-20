@@ -138,19 +138,10 @@
         clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
-    "recharts": "https://aistudiocdn.com/recharts@^3.5.1"
-  }
-}
-</script>
+  <!-- Importmap CDN (aistudiocdn) rimossa 2026-07-20: retaggio dell'export AI-Studio pre-Vite,
+       morta dal giorno in cui il progetto e' passato a `vite build` (bundle self-contained,
+       0 riferimenti esterni verificati in dist/assets/*.js). Zero impatto grafico/funzionale:
+       era gia' ignorata sia da `vite dev` (risolve da node_modules) sia dal bundle di produzione. -->
 </head>
   <body>
     <div id="root"></div>
