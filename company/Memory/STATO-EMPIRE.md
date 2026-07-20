@@ -34,7 +34,10 @@ grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
   tracciati, nessun rischio di build PyInstaller rotta per path mancante). Questa revisione era statica
   (ambiente senza Python/Node/Chrome) — **da allora Max ha verificato G1 a runtime su macchina reale,
   vedi blocco "✅ G1 CHIUSO E VERIFICATO END-TO-END" qui sotto: selftest 13/13 PASS.**
-- **G2 (prossimo, sbloccato — G1 verificato a runtime):** build exe con dist inclusa + test doppio click.
+- **G2 — PARZIALMENTE COMPLETATO (2026-07-20, CP-20260720-G2):** platform/dist/ creata
+  (`npm install + npm run build` ✅, output: index.html 5.72kB + assets/*.js 977kB), app.py
+  syntax+AST verificato OK. **Build exe NON eseguibile su Linux sandbox** — richiede Windows.
+  Eseguire `build_exe.bat` sulla macchina reale → test doppio-click + `--selftest` → poi G3.
 - **G3:** B1-B4 restano (loader moduli/scheduler/notify/taskboard) = solo backend. Moduli A1-A3 di Max
   restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
 - **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.
