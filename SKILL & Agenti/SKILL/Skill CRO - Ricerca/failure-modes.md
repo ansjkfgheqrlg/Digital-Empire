@@ -1,0 +1,11 @@
+# FAILURE-MODES — skill-cro-ricerca / Client Research Engine
+
+| ID | Fallimento | Sintomo | Prevenzione | Rilevazione | Recupero |
+|---|---|---|---|---|---|
+| F1 | Manifest fantasma: cerca i 5 template come file | "apro Template-Report-Ricerca.md → non esiste", tempo perso | spec §debito 1 + tools.md: i contenuti sono INLINE nel master (R1-R5, report); wrap dichiara il desync | operatore che apre la cartella in cerca dei file | rimandare a spec §mappa; fix strutturale = v2 separata (ADR-003), mai edit diretto |
+| F2 | Dati inventati / parafrasi nel report | report "pieno" ma senza virgolettati né fonti | regole 1-2-9 non negoziabili: solo evidenza, frasi esatte, ogni dato con fonte | audit report: frasi senza fonte = rosso | rifare la sezione da dati reali; se ricorrente → regola nuova nel kit |
+| F3 | Sconfinamento: scrive copy / gestisce obiezioni | output contiene headline "proposte" invece di dati scored | confine dichiarato (master §non_ricerca; spec §deleghe): RACCOGLIE e SCORA | review a valle del Copy Architect | rimandare alla skill giusta + nota in memory locale |
+| F4 | Ricerca parziale spacciata per completa | report senza sezione "cosa manca" | handler `ricerca_parziale`: se <5-10h investite, obbligo dichiarazione lacune+impatto | gate E6: standard minimum vs complete non dichiarato | aggiungere sezione impatti; completare ricerca nello sprint successivo |
+| F5 | Query generiche / piattaforme sbagliate per mercato | dati raccolti rumorosi, niente pattern | STEP 1: personalizzazione obbligatoria + logica B2B/B2C/IT/INT (r. 309-369) | pattern CROSS-PLATFORM non emerge mai | rigenerare query per piattaforma/nicchia e ri-raccogliere |
+| F6 | Report saggio accademico invece di documento di lavoro | Copy Architect non trova subito le frasi | regola 6 + TOV report: bullet, tabelle, scoring, virgolettati | feedback del valle: "non riesco a usarlo" | riformattare a 10 sezioni standard con scoring e fonti |
+| F7 | Fermarsi al dolore di superficie | copy che suona generico ("più clienti", "risparmiare tempo") | knowledge PAIN 3 livelli + regola d'oro (parole esatte) | E4: pain accettati senza scavo | ripassare R4 con le 3 domande di profondità prima dello scoring |

@@ -1,5 +1,20 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-20 (MIR-5 sprint 2 — retrofit skill-cro-ricerca / Client Research Engine)
+- RETROFIT wrap ADR-003 del secondo figlio pre-impero: `SKILL & Agenti/SKILL/Skill CRO - Ricerca/`
+  (master SKILL.md 1.625r + 7 knowledge reali 890r — diff=0 verificato, MAI toccati).
+- Wrappati satelliti: spec/tools/playbook/evals/failure-modes/memory/INDEX + MKD 26/26 atomi=100% +
+  PLAN con confronto candidati (call → rinviata per duplicati T1; strategy-social → rinviata canone;
+  CCM → rinviata contesa/state; Empire Studio → vietata).
+- **Scoperta diagnostica: MANIFEST FANTASMA** — il §KNOWLEDGE_FILES referenzia 5 template che non esistono
+  in cartella (incluse le 2 priorità ★★★★★); contenuti presenti inline nel master → debito D1 dichiarato,
+  regola wrap "il corpo vince sul manifest" (mai fix diretto, ADR-003). Zero tool eseguibili by design
+  (`tools: []`) → dichiarato, nessuna estrazione forzata (lezione sprint 1).
+- GATE retro PASS 7/7 (verbale in reparto memory/checkpoints) · skills-map v1.6 (entry esistente
+  aggiornata con note+alias, stats invariate) · REGISTRO-IMPRESA §3 · dossier 18 inv.5 + MIR-5 aggiornato
+  (sprint 3 candidato: CRO Copy Architect knowledge dir) · CP-20260720-015.
+→ 1 pagina tool ([[tools/Tool_Client_Research_Engine]]) + index aggiornato.
+
 ## 2026-07-20 (MIR-5 sprint 1 — retrofit youtube-script-factory)
 - RETROFIT (1° figlio campagna MIR-5): `SKILL & Agenti/SKILL/Skill CRO - Youtube - Lead magnet/` —
   era skill ATTIVA (delegata da /youtube-lead-machine) ma **orfana ADR-008** (zero skills-map/REGISTRO)

@@ -3,7 +3,7 @@
 # Regola (ADR-003): il codice/file RESTA dove si trova. Questo e' un registro, non uno spostamento.
 # Aggiorna questo file ogni volta che nasce una nuova skill o workflow.
 
-version: "1.5"
+version: "1.6"
 updated: "2026-07-20"
 maintainer: "Chief-Forge (company/Board-CSuite/Chief-Forge.md)"
 # ADR-008: questa mappa + company/REGISTRO-IMPRESA.md = anagrafe unica.
@@ -111,6 +111,7 @@ skills_and_workflows:
     reparto: Acquisizione
     tipo: skill
     stato: active
+    note: "Alias frontmatter: 'Client Research Engine'. RETROFIT MIR-5 sprint 2 (2026-07-20, CP-20260720-015): wrap canonico spec/tools/playbook/evals/failure-modes/memory — master intoccato. NOTA manifest fantasma: 5 template referenziati assenti, contenuti inline nel master (debito D1 dichiarato). tools: [] by design."
 
   - id: beast-preventivi
     nome: Beast Preventivi (generatore preventivi)
@@ -641,4 +642,4 @@ stats:
   legacy: 4
   knowledge: 6
   da_classificare: 3
-  aggiornamento: "2026-07-20 — v1.5: MIR-5 sprint 1 -> +1 youtube-script-factory (retrofit wrap, era orfana ADR-008). v1.4: +1 ispettorato-generale (Max). v1.3: youtube-lead-machine forgiata."
+  aggiornamento: "2026-07-20 — v1.6: MIR-5 sprint 2 -> skill-cro-ricerca retrofitta (wrap canonico; entry esistente aggiornata con note+alias, stats INVARIATE 63 mappati). v1.5: sprint 1 +1 youtube-script-factory. v1.4: +1 ispettorato-generale (Max). v1.3: youtube-lead-machine forgiata."

@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-07-20 (Max: ISPETTORATO GENERALE — M1 fatta, M3 in build · PIVOT AREUS Empire Desk · TOOLCHAIN VS CODE · ADR-009 toolkit · KIT YOUTUBE · skill /youtube-lead-machine · magnet #2)
+# STATO EMPIRE -- aggiornato 2026-07-20 (Max: ISPETTORATO GENERALE — M1 fatta, M3 in build · PIVOT AREUS Empire Desk · TOOLCHAIN VS CODE · ADR-009 toolkit · KIT YOUTUBE · skill /youtube-lead-machine · magnet #2 · MIR-5 retrofit: sprint 1+2 ✅)
 
 ## 🔴 MAX ATTIVO ORA — ISPETTORATO GENERALE (dossier 15, esteso oggi con agente 11 + WF-REVISION-STUDY)
 **Direttiva Max 2026-07-20:** l'analisi performance deve essere un ECOSISTEMA con un team di agenti
@@ -128,8 +128,9 @@ Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow
 ✅ magnet #2 checklist CRO 21 punti (W7, APSOC 93/100, CP-20260720-010 — resta export PDF grafico Max/Gael) ·
 ✅ MIR-12 review sito Agency (78/100, 5 P0, ASK Q1-Q3 → Max, CP-20260720-012) ·
 ✅ MIR-9 topology.md obbligatorio team (R2-bis + template + gate + `TOPOLOGY.md` reparto dogfooding, CP-20260720-013) ·
-✅ **MIR-5 CAMPAGNA avviata — sprint 1**: retrofit `youtube-script-factory` (wrap + tools/ estratti + skills-map v1.5; GATE retro PASS 7/7 inaugurando la modalità RETROMODE per asset vivi, CP-20260720-014).
-Prossimi backlog reparto: MIR-5 sprint 2 (prossimo figlio da censimento pre-impero) · valutazione agenti yt-*/vendita (con Max, serve sua decisione).
+✅ **MIR-5 CAMPAGNA avviata — sprint 1**: retrofit `youtube-script-factory` (wrap + tools/ estratti + skills-map v1.5; GATE retro PASS 7/7 inaugurando la modalità RETROMODE per asset vivi, CP-20260720-014) ·
+✅ **MIR-5 sprint 2**: retrofit `skill-cro-ricerca` / **Client Research Engine** (master 1.625r + 7 knowledge intoccati; wrap satelliti; **scoperto manifest fantasma**: 5 template referenziati assenti → debito D1 dichiarato, il corpo vince sul manifest; zero tool by design; skills-map v1.6 note aggiornate, stats invariate; GATE retro PASS 7/7, CP-20260720-015).
+Prossimi backlog reparto: MIR-5 sprint 3 (candidato: `📁 Skill — CRO Copy Architect — Knowledge Files/`, knowledge non censita — valle naturale della ricerca) · valutazione agenti yt-*/vendita (con Max, serve sua decisione).
 NOTA BENE per Gael/altre sessioni: non sovrascrivere `master-build-architecture/` col clone GitHub fresco
 (la copia main è più completa — decisione in ADR-009 punto 3).
 
