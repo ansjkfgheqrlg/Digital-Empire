@@ -1,11 +1,11 @@
 # STATO EMPIRE -- aggiornato 2026-07-20 (ordine Max: PIVOT AREUS — Empire Desk riparte dalla piattaforma Aureus)
 
-## ✅ MENTALITÀ BRUTALE MB-OS — FONDAZIONI COMPLETE, LIVE CORRETTAMENTE BLOCCATO (Arena, CP-20260720-003)
+## ✅ MENTALITÀ BRUTALE MB-OS — FONDAZIONI COMPLETE, LIVE CORRETTAMENTE BLOCCATO (Arena, CP-20260720-004)
 **Costruito via Chief-Forge → ARCHITETTURA → FORGE:** `Page IG - Mentalità Brutale/OPERATING-SYSTEM/` (41 file) + skill `.claude/skills/mentalita-brutale-operator/` (5 file). Pipeline completa progettata e implementata: Intelligence→Strategy→Production→CF-R6 QA→CF-R7 Meta API v25.0→Insights→CF-R8 learning; 11 reparti instradati sulle capability Empire, memoria locale, strategia baseline 28 giorni (28 post: 16 Reel/12 caroselli), Content-Forge source→skill/workflow.
 
 **Runtime:** OAuth/refresh, Graph publish+Insights, 5 gate, staging HTTPS + PNG→JPEG, queue SQLite, hash idempotency, token/account/quota check, cap 3/24h, retry max 3, kill switch e progressive autonomy. **14/14 test PASS** + conversione slide reale JPEG PASS. Stato iniziale **SHADOW**, target `CERTIFIED_AUTO` via ADR-009: nessun live finché non passano 5 dry-run + canary + post-check + Insights + secret scan.
 
-**Sicurezza critica:** rimosse password in chiaro dai config correnti del publisher legacy. Erano già nella Git history/remoto: **B-009 rotazione password + revoca sessioni + 2FA obbligatoria prima del live**. Video: 0 file nel checkout; non inventati pattern. Next: rotazione → Meta Dashboard/`.env`/mirror HTTPS → `doctor --online` → canary; in parallelo ≥10 Reel via Empire Studio prima di forgiare Reel Pattern Extractor. Dettagli: `company/Memory/checkpoints/CP-20260720-003.md`.
+**Sicurezza critica:** rimosse password in chiaro dai config correnti del publisher legacy. Erano già nella Git history/remoto: **B-009 rotazione password + revoca sessioni + 2FA obbligatoria prima del live**. Video: 0 file nel checkout; non inventati pattern. Next: rotazione → Meta Dashboard/`.env`/mirror HTTPS → `doctor --online` → canary; in parallelo ≥10 Reel via Empire Studio prima di forgiare Reel Pattern Extractor. Dettagli: `company/Memory/checkpoints/CP-20260720-004.md`.
 
 ## 🚨🚨🚨 ORDINE MAX 2026-07-20 — PIVOT: EMPIRE DESK = AUREUS AGENCY OS TRASFORMATA IN APP (leggere dossier 17 §0-bis)
 **Max ha bocciato la UI launcher v0.1/v2** (struttura sbagliata: questa è l'app GESTIONALE del team,
@@ -16,20 +16,41 @@ non un derivato PreventivoForge). Base nuova = piattaforma di Max **"Aureus Agen
 grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
 
 **▶️ GAEL — riprendi da qui (dettagli dossier 17 §0-bis):**
-- **G1 (per primo):** `app.py` serve `platform/dist/` come root (stessa origin delle API `/api/*`
-  esistenti) + finestra chrome-app → l'app che si apre È Aureus. Prima: `npm install` in platform/
-  (node_modules gitignorato) + `npm run build`. Vecchia `ui/index.html` → `/legacy` (fallback temporaneo).
-- **G2:** build exe con dist inclusa + test doppio click.
+- **G1 ✅ scritto (commit `85548a30`)**, verificato staticamente in una seconda sessione (2026-07-20
+  pomeriggio, questo blocco): `do_GET` riscritto correttamente — file-server statico su `platform/dist/`
+  con path-traversal guard (`is_relative_to`) + MIME via `mimetypes`, fallback SPA su `index.html` per
+  le route client-side di react-router, pagina di aiuto onesta se `platform/dist/` manca (mai bianco),
+  `/legacy` invariato, `main_chrome_app`/`main_webview` ora condividono lo stesso server locale via
+  `url=` (prima `main_webview` usava `html=` inline — corretto, Aureus è SPA multi-asset). `empiredesk.spec`
+  include `platform/dist`+`modules`+`state` nei `datas` (verificato: `modules/`+`state/` esistono e sono
+  tracciati, nessun rischio di build PyInstaller rotta per path mancante). Questa revisione era statica
+  (ambiente senza Python/Node/Chrome) — **da allora Max ha verificato G1 a runtime su macchina reale,
+  vedi blocco "✅ G1 CHIUSO E VERIFICATO END-TO-END" qui sotto: selftest 13/13 PASS.**
+- **G2 (prossimo, sbloccato — G1 verificato a runtime):** build exe con dist inclusa + test doppio click.
 - **G3:** B1-B4 restano (loader moduli/scheduler/notify/taskboard) = solo backend. Moduli A1-A3 di Max
   restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
 - **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.
 
-**▶️ MAX (via Claude):** U0 ✅ (import+build+anteprima) · **U0b ✅ offline-capable (2026-07-20,
-`9e86349b`)**: Tailwind runtime + font Inter vendorizzati in `platform/public/` (stesso motore/stessi
-woff2 = zero differenze grafiche; l'app ora gira senza internet — verificato live) · U1 in fase 2 =
-operatività dentro Aureus nel suo linguaggio grafico (Automations → flussi reali, pannelli
-metrics/revenue/licenze). GAEL: dopo il pull ricordati `npm install` + `npm run build` in platform/
-(node_modules e dist NON sono nel repo).
+**▶️ MAX (via Claude):** U0 ✅ (import+build+anteprima) · **U0b ✅ offline-capable (`9e86349b`)**:
+Tailwind+Inter vendorizzati · **U0c ✅ (`93cd525e`)**: importmap CDN morta rimossa (0 riferimenti
+esterni residui, verificato in dist/assets/*.js — zero impatto grafico).
+
+**✅ G1 CHIUSO E VERIFICATO END-TO-END (Gael `85548a30` + Max):** `app.py` serve `platform/dist/`
+(Aureus) come root, static file serving reale + fallback SPA + pagina d'aiuto onesta se dist manca.
+**Verificato con l'app VERA** (non script temporaneo): `python app.py --selftest` → **13/13 PASS**
+(8 tile + 4 moduli licenze/metrics/revenue/scheduler + platform); finestra chrome-app aperta via
+`avvia-app.bat` → **Aureus si apre come l'app stessa**, HTML servito confermato (5.6KB, root `/`).
+
+**▶️ U1 (fase 2, Max/Claude) — IN CORSO:** operatività dentro Aureus nel suo linguaggio grafico.
+- ✅ **slice 1 (`abe4b5b8`):** pagina Automations → nuova sezione additiva "Operazioni Reali —
+  Digital Empire" con le 8 tile vere (card stile Aureus nativo, badge stato/exit code, input
+  url/path, log live). Bridge `utils/empireApi.ts` (same-origin fetch, funziona sia chrome-app
+  che pywebview perché entrambi servono via lo stesso HTTP server). Verificato: `tsc --noEmit`
+  pulito, build pulita, schema Python↔TS combaciante, app reale riavviata e /api/tiles raggiungibile.
+- ⬜ **slice 2 (prossima):** pannelli metrics/revenue/licenze in stile Aureus (sostituiscono i
+  panel_html provvisori dei moduli A1-A3 di Max — dati/route restano quelli, cambia solo la UI).
+**GAEL → G2 in parallelo:** build exe con dist inclusa + test doppio click. Promemoria: dopo pull,
+dentro `platform/`: `npm install && npm run build` (gitignorati).
 **Piano vincolante e completo: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` §5 (appena scritto, leggerlo TUTTO).**
 Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'altro half** (lezione PreventivoForge).
 
@@ -518,7 +539,7 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   **▶️ GAEL — TASK SETTIMANA (in ordine):** (1) 30min: chiudi CF-R8 → 03 9/9; (2) G1: AUDIT ASSET tutte le
   pagine (mentalita.brutale, crea.illtuo_impero, altre pagine lancio+sito) → `05-MULTI-BUSINESS/AUDIT-PAGINE-20260719.md`;
   (3) G2: funnel Manuale (landing empire-premium-style + checkout + 3 email — prezzo arriva da Max G1);
-  (4) G2-G3: batch 7 caroselli crea.illtuo_impero + bio→funnel; (5) G3-G4: pipeline mentalita.brutale — **fondazioni MB-OS ✅ CP-20260720-003, stato SHADOW; live richiede B-009+OAuth+staging+canary**
+  (4) G2-G3: batch 7 caroselli crea.illtuo_impero + bio→funnel; (5) G3-G4: pipeline mentalita.brutale — **fondazioni MB-OS ✅ CP-20260720-004, stato SHADOW; live richiede B-009+OAuth+staging+canary**
   (produzione→QA→scheduler→report); (6) G4-G5: WF-YT v1 + test 1 video end-to-end API Fliki; (7) G6: analisi
   competitor 3 nicchie YT → proposta a Max; (8) G7: CP + RETRO con numeri veri. Dettagli nel dossier 16.
   **▶️ MAX — TASK:** G1 prezzo B-003 con team-prezzi · lista 7 concessionari · G2-G4 contattarli (script pronto
