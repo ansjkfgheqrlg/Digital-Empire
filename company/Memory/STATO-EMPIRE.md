@@ -1,4 +1,17 @@
-# STATO EMPIRE -- aggiornato 2026-07-20 (ordine Max: PIVOT AREUS — Empire Desk riparte dalla piattaforma Aureus · TOOLCHAIN VS CODE adottata · ADR-009 toolkit ufficiali · KIT YOUTUBE pronto · skill /youtube-lead-machine attiva)
+# STATO EMPIRE -- aggiornato 2026-07-20 (Max: ISPETTORATO GENERALE — M1 fatta, M3 in build · PIVOT AREUS Empire Desk · TOOLCHAIN VS CODE · ADR-009 toolkit · KIT YOUTUBE · skill /youtube-lead-machine · magnet #2)
+
+## 🔴 MAX ATTIVO ORA — ISPETTORATO GENERALE (dossier 15, esteso oggi con agente 11 + WF-REVISION-STUDY)
+**Direttiva Max 2026-07-20:** l'analisi performance deve essere un ECOSISTEMA con un team di agenti
+dedicato — non solo registri scritti a mano. Deve studiare anche i SUCCESSI (non solo gli errori) e
+i CICLI DI CORREZIONE (quando Max chiede N modifiche, studiare TUTTE per fare meglio al primo colpo).
+- **M1 fondamenta ✅ COMPLETA** (CP-20260720-004): `company/Ispettorato/` — README+ARCHITETTURA,
+  `registro/REGISTRO-ERRORI.md` (10 errori empire-wide REALI migrati), `registro/REGISTRO-REVISIONI.md`
+  + `registro/REGISTRO-SUCCESSI.md` (nuovi, dossier 15 esteso), `kpi/KPI-EMPIRE-WIDE.md`. Intestato
+  in REGISTRO-IMPRESA.md + skills-map.yaml (ADR-008).
+- 🔄 **M3 in build (background, 2 swarm):** 11 agenti CF-grade (isp-conductor…isp-revision-analyst)
+  + 5 workflow. Lezione ERR-20260622-001 (write-early) applicata esplicitamente nei prompt.
+- **Prossimo:** gate struct M3 → 5-bis MAXIMILIAN → CP → poi M2 (pilota PreventivoForge, trace JSONL).
+- **GAEL: non toccare `company/Ispettorato/` (Max ci lavora). Tu resta su Empire Desk (G1/G2/G3 sotto).**
 
 ## 🚨🚨🚨 ORDINE MAX 2026-07-20 — PIVOT: EMPIRE DESK = AUREUS AGENCY OS TRASFORMATA IN APP (leggere dossier 17 §0-bis)
 **Max ha bocciato la UI launcher v0.1/v2** (struttura sbagliata: questa è l'app GESTIONALE del team,
@@ -183,7 +196,7 @@ il PC dove gira già PreventivoForge):**
 Dettaglio completo: `company/Memory/checkpoints/CP-20260719-004.md`.
 *(Nota: questo checkpoint era numerato -002 in locale, ma quel numero era già usato su GitHub da ADR-008 — rinumerato -004 in fase di risoluzione conflitto sync 2026-07-19 21:xx.)*
 
-## 🎬 YOUTUBE LEAD MACHINE — KIT DI LANCIO COMPLETO (agg. 2026-07-20, CP-20260720-004)
+## 🎬 YOUTUBE LEAD MACHINE — KIT DI LANCIO COMPLETO (agg. 2026-07-20, CP-20260720-011)
 Ingest completi i 7 video (CP-20260719-009) → strategia `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md`
 **→ ora anche il KIT ESEGUIBILE:** `CLIENTE-DORO.md` (ICP), `SETUP-CANALE.md` (copy pronta da incollare),
 `LEAD-MAGNET-01-analisi-gratuita.md` (magnet + gate + 5 messaggi speed-to-lead pronti), `batch-01/` (piano

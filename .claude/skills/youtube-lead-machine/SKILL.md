@@ -7,7 +7,7 @@ description: "Metodo ufficiale Digital Empire per il canale YouTube organico che
 
 > **Intestazione (ADR-008)** — Proprietario: FORGE-AGENT-SKILL (06b-FORGE / L2.1 SKILL-WORKS), in deploy per
 > 04-MARKETING W7 · Controllore: fas-qa-gate (verbale `FORGE-AGENT-SKILL/memory/checkpoints/GATE-youtube-lead-machine-2026-07-20.md`)
-> · Origine: MIR-11 dossier 18 → WF-SKILL-NEW, sorgente `Formazzione/Youtube/` (CP-20260719-009, CP-20260720-004)
+> · Origine: MIR-11 dossier 18 → WF-SKILL-NEW, sorgente `Formazzione/Youtube/` (CP-20260719-009, CP-20260720-011)
 > · Governo: ADR-002/003/006/008/009 + R1-R4 reparto.
 > **Sorgente canonica (MKD):** `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md` + kit (CLIENTE-DORO,
 > SETUP-CANALE, LEAD-MAGNET-01, batch-01/). **Li leggi, non li duplichi** (ADR-003).

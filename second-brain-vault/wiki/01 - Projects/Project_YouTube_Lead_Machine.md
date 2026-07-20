@@ -30,7 +30,7 @@ framework Think Media. Materiale sorgente: `Formazzione/Youtube/` (lista video +
 → risposta in 1 minuto (automatizzata) → call già calda. Views ≠ clienti: meglio 200 iscritti e €20k che 1M views.
 
 ## Stato e prossimi passi
-- [x] **Kit strategico-creativo COMPLETO (2026-07-20, CP-20260720-004):** cliente d'oro, setup canale
+- [x] **Kit strategico-creativo COMPLETO (2026-07-20, CP-20260720-011):** cliente d'oro, setup canale
   (copy pronta), lead magnet con automazioni, batch #1: 6 script pronti da registrare.
 
 - [x] **Skill ufficiale `/youtube-lead-machine` FORGIATA (2026-07-20, CP-20260720-005):** prima uscita del

@@ -3,7 +3,7 @@
 # Regola (ADR-003): il codice/file RESTA dove si trova. Questo e' un registro, non uno spostamento.
 # Aggiorna questo file ogni volta che nasce una nuova skill o workflow.
 
-version: "1.3"
+version: "1.4"
 updated: "2026-07-20"
 maintainer: "Chief-Forge (company/Board-CSuite/Chief-Forge.md)"
 # ADR-008: questa mappa + company/REGISTRO-IMPRESA.md = anagrafe unica.
@@ -499,6 +499,24 @@ skills_and_workflows:
 
 nuovi_2026_07:
 
+  - id: ispettorato-generale
+    nome: Ispettorato Generale (performance, autocritica, anti-recidiva, primo-colpo-migliore)
+    percorso: company/Ispettorato/
+    ecosistema: organo trasversale (non ecosistema)
+    reparto: Ispettorato (owner build Max)
+    tipo: workflow
+    stato: experimental
+    note: "M1 fondamenta fatta (2026-07-20): REGISTRO-ERRORI 10 voci migrate, REGISTRO-REVISIONI+REGISTRO-SUCCESSI nuovi, KPI empire-wide. M3 (11 agenti CF-grade) in build. Dossier 15."
+
+  - id: ispettorato-generale
+    nome: Ispettorato Generale (performance, autocritica, anti-recidiva, primo-colpo-migliore)
+    percorso: company/Ispettorato/
+    ecosistema: organo trasversale (non ecosistema)
+    reparto: Ispettorato (owner build Max)
+    tipo: workflow
+    stato: experimental
+    note: "M1 fondamenta fatta (2026-07-20): REGISTRO-ERRORI 10 voci migrate, REGISTRO-REVISIONI+REGISTRO-SUCCESSI nuovi, KPI empire-wide. M3 (11 agenti CF-grade) in build. Dossier 15."
+
   - id: preventivoforge
     nome: PreventivoForge (motore + fabbrica multi-tenant + kill-switch licenze)
     percorso: Clienti/
@@ -608,10 +626,10 @@ da_classificare:
     note: "Prima skill forgiata dal reparto (WF-SKILL-NEW, GATE PASS 7/7 2026-07-20). Kernel 118r + 6 references + evals 7 + failure-modes 8. Sorgente Formazzione/Youtube/ (wrap, ADR-003). Delega: script -> Skill CRO Youtube Lead magnet; QA copy -> copy-workflow."
 
 stats:
-  totale_mappati: 61
+  totale_mappati: 62
   active: 37
-  experimental: 14
+  experimental: 15
   legacy: 4
   knowledge: 6
   da_classificare: 3
-  aggiornamento: "2026-07-20 — v1.3: +1 skill forgiata da reparto (youtube-lead-machine, MIR-11, GATE PASS 7/7). Precedente: ADR-009 +4 toolkit esterni."
+  aggiornamento: "2026-07-20 — v1.4: merge main -> +1 ispettorato-generale (M1 fondamenta, Max). Precedente v1.3: +1 skill forgiata (youtube-lead-machine, MIR-11); v1.2: ADR-009 +4 toolkit esterni."
