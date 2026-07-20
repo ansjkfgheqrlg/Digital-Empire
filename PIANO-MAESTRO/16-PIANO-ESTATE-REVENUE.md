@@ -65,13 +65,85 @@ Il piano completo richiede vari giorni di lavoro. Si costruisce così:
 - **Pipeline target (Gael, G2-G4):** batch caroselli settimanale → gate qualità automatico (QA copy su regole esistenti) → scheduler pubblicazione (Meta Graph API / Buffer) → report engagement settimanale → loop miglioramento hook/CTA.
 - **Monetizzazione breve termine:** link in bio → lead magnet → S2 · shoutout a pagamento quando riprende trazione · affiliate mindset/prodotti propri. NIENTE lungo-termine-only.
 
-### S5 — YOUTUBE FLIKI: canali auto-producenti (motore compounding)
-- **Metodo (dettato da Max):** prendere video competitor in ALTRA lingua che performano → rifarli in ITALIANO → pubblicare. Tutto automatico: analisi competitor, script tradotto/adattato, video via **API Fliki** (chiave in `.env` locale — MAI su GitHub), copertina automatica, pubblicazione, analisi performance, self-improvement post-run.
-- **API Fliki (documentate, testate su piano):** `POST /v1/generate/video` (script→video, voiceId IT, 16:9 1080p, subtitle karaoke) · polling `GET /generate/status` ogni 10s · limiti: 10 req/10min, 20 job pending. Prima run: test 1 video end-to-end.
-- **Workflow completo (ARCHITETTURA→FORGE, forma giusta = WORKFLOW dentro Content-Factory, non nuovo ecosistema):**
-  `WF-YT-SCOUT` (trova competitor ES/EN/DE che performano, cita fonti) → `WF-YT-SCRIPT` (trascrizione→adattamento IT, MAI traduzione letterale, gate anti-copia) → `WF-YT-RENDER` (Fliki API) → `WF-YT-THUMB` (copertina: pattern vincenti competitor) → `WF-YT-PUBLISH` (YouTube Data API, SEO title/desc/tags) → `WF-YT-ANALYZE` (CTR/retention per video) → `WF-YT-IMPROVE` (pattern → ReasoningBank → prossima run migliore).
-- **Revenue path:** AdSense = mesi. Ma OGNI video porta descrizione con link S2 (lead-gen immediata) + costruisce asset vendibile (canali monetizzati si vendono).
-- **Nicchie candidate (decisione Max in P0.6):** mindset/business (riusa know-how mentalita.brutale) · AI/Claude (riusa know-how nostro) · [DM] da analisi competitor.
+### S5 — YOUTUBE FLIKI: canali auto-producenti (motore compounding) — **ARCHITETTURA EMPIRE STUDIO INTEGRATA**
+
+**Metodo (deciso da Max):** prendere video competitor in ALTRA lingua che performano → rifarli in ITALIANO → pubblicare automaticamente.  
+**Obiettivo:** costruire un **ecosistema YouTube Automation** completo, scalabile e memory-first usando l’architettura Empire Studio già esistente.
+
+#### 🔧 Integrazione completa con Empire Studio (inserita 20/07/2026)
+
+**1. Ecosistema di Memory Integrato (Memory Management Department)**
+- Ogni run YouTube genera automaticamente:
+  - `memory/youtube-runs/<run-id>/` con checkpoint P10
+  - `memory/knowledge/<video-id>/` (knowledge atoms + trace P12)
+  - `memory/workflow-state/youtube/` (stato canali, performance, ReasoningBank)
+  - `memory/errors/youtube/` (video saltati, errori API Fliki, gate anti-copia)
+- **Memory-first obbligatorio**: dopo ogni WF-YT-* viene eseguito `memory_manager.py --checkpoint`
+- **Tracciabilità P12**: ogni frame, transcript e decisione è ancorato a `video-id#ts + frame-NNN.png`
+- **ReasoningBank** persistente: pattern vincenti da WF-YT-IMPROVE vengono salvati e riutilizzati automaticamente
+
+**2. Reparti (L2) coinvolti nel modello YouTube**
+- **YouTube Department** (lead: department-lead)
+  - yt-channel-ingester
+  - video-single-ingester
+  - yt-screening
+- **Processing & Vision Department** (frame extraction + visione reale Claude)
+- **Forge & Wiki Department** (content-forge + wiki write)
+- **Strategy Department** (multi-strategia + nicchia selector)
+- **Verification & Control Department** (visual-verifier, compliance-auditor, silent-observer)
+- **Memory Management Department** (checkpoint-manager + memory-architect)
+
+**3. Team di Agenti (L3) — struttura 7-file**
+Ogni agente segue il formato canonico Empire Studio (system-prompt.md, playbook.md, tools.md, memory.md, evals.md, failure-modes.md, <nome>.md).
+
+**YouTube Department agents (già creati):**
+- `department-lead` — coordina, classifica input, delega
+- `yt-channel-ingester` — ingestione canali/playlist
+- `video-single-ingester` — ingestione singolo video
+- `yt-screening` — filtro rilevanza prima dell’ingest pesante
+
+**Agenti aggiuntivi da attivare per S5 (da costruire in G4-G5):**
+- `yt-fliki-renderer` (nuovo) — wrapper API Fliki + polling status
+- `yt-seo-publisher` (nuovo) — YouTube Data API + ottimizzazione titolo/desc/tag
+- `yt-performance-analyzer` (nuovo) — estrazione CTR/retention + ReasoningBank update
+- `yt-niche-scout` (nuovo) — analisi competitor + proposta nicchia
+
+**4. Pipeline YouTube Fliki (9 Stage Empire Studio)**
+```
+Stage 0  Memory bootstrap + Strategy Manifest (nicchia + focus)
+Stage 1  Ingestion          → yt-channel-ingester / video-single-ingester
+Stage 2  Frame extraction   → frame_extractor.py + ffmpeg
+Stage 3  Visione reale      → video-watcher (Claude legge frame)
+Stage 4  Knowledge atoms    → knowledge-extractor + P12 trace
+Stage 5  Verifica           → visual-verifier + compliance-auditor
+Stage 6  Forge + Render     → content-forge-invoker + yt-fliki-renderer (API Fliki)
+Stage 7  Wiki + Publish     → wiki-writer + yt-seo-publisher (YouTube Data API)
+Stage 8  Update proposals   → update-proposer (ReasoningBank)
+Stage 9  Memory close       → checkpoint-manager + performance metrics
+```
+
+**5. Workflow WF-YT-* (mappati sugli agenti)**
+- `WF-YT-SCOUT` → yt-niche-scout + yt-screening
+- `WF-YT-SCRIPT` → yt-channel-ingester / video-single-ingester + transcript-processor
+- `WF-YT-RENDER` → yt-fliki-renderer (API Fliki)
+- `WF-YT-THUMB` → yt-fliki-renderer (thumbnail generation)
+- `WF-YT-PUBLISH` → yt-seo-publisher
+- `WF-YT-ANALYZE` → yt-performance-analyzer
+- `WF-YT-IMPROVE` → strategy-department + memory-architect (ReasoningBank)
+
+**Revenue path:** 
+- Lead-gen immediata (link Manuale nella descrizione di ogni video)
+- Asset compounding (canali monetizzati vendibili)
+- AdSense medio-lungo termine
+
+**Nicchie candidate (G4-G5):** mindset/business · AI/Claude · [da analisi competitor]
+
+**Regole non negoziabili per S5:**
+- Chiave Fliki solo in `.env` locale
+- Zero stub (validator.py deve dare 0 violazioni)
+- Memory-first dopo ogni run
+- Tracciabilità P12 su ogni atomo di conoscenza
+- Revenue prima di perfezionamento (ogni video deve portare lead)
 
 ### S6 — PREVENTIVOFORGE → PRODOTTO PROMOSSO (rebrand + vendita oltre i 7)
 - **Direttiva Max (2026-07-19):** il prodotto preventivi va PROMOSSO. Serve un nome molto migliore,
@@ -117,8 +189,12 @@ Il piano completo richiede vari giorni di lavoro. Si costruisce così:
 | G2 | Funnel Manuale: landing empire-premium-style + checkout + 3 email (motori site-* + emails, prezzo da B-003 chiuso) | funnel live | S2 |
 | G2-G3 | Batch riattivazione S3: 7 caroselli crea.illtuo_impero (carousel-factory) + bio→funnel | pagina riparte con funnel | S3 |
 | G3-G4 | **Pipeline mentalita.brutale 100% auto**: carousel-factory wrap → gate QA auto → scheduler pubblicazione → report | pipeline testata end-to-end | S4 |
-| G4-G5 | **WF-YT v1**: ARCHITETTURA workflow YouTube-Fliki + test 1 video end-to-end con API (script test→Fliki→mp4 scaricato) | 1 video generato + WF docs | S5 |
-| G6 | Analisi competitor nicchie YT (3 candidate, dati citati) → proposta a Max | doc proposta | S5 |
+| G4-G5 | **WF-YT v1 + Empire Studio Integration**: 
+  - Attiva YouTube Department + Processing & Vision + Memory Management
+  - Implementa yt-fliki-renderer, yt-seo-publisher, yt-performance-analyzer
+  - Test 1 video end-to-end con memoria integrata + P12 trace
+  - Primo checkpoint Memory Empire | 1 video + run completa Empire Studio + Memory | S5 |
+| G6 | **Analisi competitor + Nicchia Selector** (yt-niche-scout) + proposta a Max con dati Memory Empire | doc proposta + ReasoningBank iniziale | S5 |
 | G5-G6 | **Promo-kit S6**: landing rebrand (empire-premium-style) + case study Novacar (case-study-forge) + lista concessionari import-DE (A1 scrape) | kit pronto + lista lead | S6 |
 | G7 | Consolidamento settimana: CP + metriche reali (vendite, anticipi, pipeline stato) → RETRO | CP settimanale | tutti |
 
