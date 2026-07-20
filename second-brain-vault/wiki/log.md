@@ -1,5 +1,14 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-19 (Empire Desk — collisione UI risolta, Gael)
+- FIX/COORD: scoperta al pull una collisione reale — Max ha ridisegnato `EmpireDesk/ui/index.html`
+  in parallelo (nav-tab "Empire Premium") con lo stesso obiettivo del mio switcher pannelli, ma
+  un contratto di rete diverso (`/api/modules` vs il mio `/api/panels`). Risolto merge manuale
+  (8 blocchi): tenuto il design di Max, `app.py` riallineato al suo contratto esatto
+  (`modules_public()`, route `api/modules`, chiave `panel_html`). STATO-EMPIRE aggiornato da Max
+  nel frattempo: ownership `ui/index.html` passata a Max — confermato, Gael non lo tocca più.
+  → CP-20260719-008 + REGISTRO-ERRORI EDE-8.
+
 ## 2026-07-19 (Empire Desk B1 — seam moduli, Gael)
 - BUILD: `EmpireDesk/app.py` — loader `modules/*.py` (contratto dossier 17 §5.3): import isolato
   per file (un modulo rotto si segnala e si salta, mai crash dell'app), validazione schema tile

@@ -36,6 +36,18 @@ Dossier 17 §5 aggiornato. Se hai modifiche locali non pushate a `ui/index.html`
 numerazione vecchia. Rimosso: vale il blocco qui sopra; nel dossier la divisione è la **§5**.
 Stesso contenuto, nessun task cambiato. Ordine del giorno Gael dopo B1: task revenue dossier 16.)*
 
+## ✅ GAEL — RISOLTA COLLISIONE UI + PRESO ATTO OWNERSHIP (2026-07-19 sera, CP-20260719-008)
+**Al pull di questo blocco ho scoperto che Max aveva già ridisegnato `ui/index.html` in parallelo**
+(nav-tab "Empire Premium") con lo stesso obiettivo del mio switcher pannelli di sotto (CP-007),
+ma un contratto di rete diverso. Risolto merge manuale (8 blocchi): **tenuto il design di Max**,
+`app.py` riallineato al SUO contratto esatto (`POST /api/modules` → `{"modules":[{id,tile,
+panel_html}]}` — non più `/api/panels`/chiave `"html"`, mia scelta precedente ora abbandonata).
+**Confermo: da ora non tocco più `ui/index.html`** (ownership UI = Max, come scritto qui sopra).
+Il blocco sotto (CP-007) descrive lo switcher UI che avevo costruito PRIMA di vedere questo
+aggiornamento — la parte Python (loader/validazione/dispatcher) resta valida e attuale, la parte
+UI descritta lì (bottone "Pannelli", CSS `.htext`/`.hactions`) è STATA SOSTITUITA dal design di
+Max — dettaglio in `EmpireDesk/REGISTRO-ERRORI.md` EDE-8 e `CP-20260719-008.md`.
+
 ## ⚠️ GAEL — B1 COSTRUITO (loader moduli), NON ESEGUITO (2026-07-19 sera, CP-20260719-007) — RIPRESA QUI
 **Seam `EmpireDesk/modules/` fatto:** `_load_modules()` scandisce `modules/*.py`, importa in
 isolamento (un modulo rotto si segnala e si salta, MAI fa cadere l'app), monta `routes`/`tile`/

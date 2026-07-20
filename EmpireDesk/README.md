@@ -15,18 +15,20 @@ Spec vincolante: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md`. Errori/lezioni: `REGISTR
   2. **pywebview**: se Chrome non è installato. Espone `_WebApi` come `js_api`.
   3. **Tkinter**: fallback finale, GUI minimale a bottoni (nessun PC resta senza app; NON mostra
      i pannelli dei moduli — solo le tile lanciabili — limite accettato per un fallback di riserva).
-- `ui/index.html` — un solo file HTML/CSS/JS, con un piccolo bridge dual-mode: se gira dentro
-  pywebview usa `window.pywebview.api.*`, altrimenti (finestra Chrome-app) usa `fetch('/api/...')`.
-  Stessa UI, motore indifferente. `edApi(route, payload)` è il bridge generico usato dai pannelli
-  dei moduli (globale, perché il loro HTML è iniettato via `innerHTML`).
+- `ui/index.html` — un solo file HTML/CSS/JS (**owner: Max**, dal 2026-07-19 sera — vedi
+  `company/Memory/STATO-EMPIRE.md`, "AGGIORNAMENTO OWNERSHIP"), con un bridge dual-mode: se gira
+  dentro pywebview usa `window.pywebview.api.*`, altrimenti (finestra Chrome-app) usa
+  `fetch('/api/...')`. Stessa UI, motore indifferente. `edApi(route, payload)` è il bridge
+  generico usato dai pannelli dei moduli (globale, perché il loro HTML è iniettato via
+  `innerHTML`). Nav a tab: "Plancia" (griglia tile) + una tab per ogni modulo con `panel_html`.
 - Ogni tile = `{id, icon, name, desc, kind, script, cwd, input}` (core o da modulo). `kind:
   "readonly"` (solo STATO Empire) non lancia processi, legge un file.
 
-## B1 — Seam moduli (dopo B0, CORE ORA IN FREEZE)
+## B1 — Seam moduli (dopo B0, CORE PYTHON ORA IN FREEZE)
 
-Dopo B0/B1, `app.py`/`ui/index.html` **non si toccano più**: ogni funzionalità nuova (B2/B3/B4
+Dopo B0/B1, `app.py` **non si tocca più** (Gael): ogni funzionalità nuova lato Python (B2/B3/B4
 di Gael, A1-A4 di Max, dossier 17 §5) entra SOLO come file in `EmpireDesk/modules/<nome>.py`,
-contratto (dossier 17 §5.3):
+contratto (dossier 17 §5.3). **`ui/index.html` è di Max**: Gael non lo tocca più da questa sera.
 
 ```python
 MODULE = {
@@ -43,14 +45,19 @@ def selftest() -> tuple[bool, str]: ...  # entra nel selftest globale — MAI la
   in isolamento: **un modulo rotto (import fallito, `MODULE` malformato, tile con schema
   sbagliato, route duplicata) si segnala nel selftest e si salta — non fa mai cadere il resto
   dell'app**, incluse le tile core.
-- Classi CSS disponibili per `panel_html` (già definite in `ui/index.html`, palette coerente):
-  `.panel`, `.panel h2`, `.panel .hint`, `.panel .btn`, `.panel .inp`, `.panel .log-pane`.
-- Bottone header "Pannelli" apre lo switcher (tab per modulo con `panel_html`); "Selftest"
-  ora include anche il selftest di ogni modulo caricato + i moduli scartati per errore.
-- **Regola anti-collisione (dossier 17 §5.4):** Gael possiede `app.py`/`ui/index.html` +
-  `modules/scheduler.py` (B2) `modules/notify.py` (B3) `modules/taskboard.py` (B4). Max possiede
+- **Contratto di rete verso la UI (fissato da Max in STATO-EMPIRE 2026-07-19 sera):**
+  `POST /api/modules` → `{"modules": [{"id", "tile", "panel_html"}, ...]}` (`app.py::modules_public()`,
+  `_WebApi.modules()`). Le routes dei singoli moduli restano su `POST /api/<route>` (es.
+  `metrics/summary`), dispatch condiviso in `_call_module_route()`.
+- Classi CSS disponibili per `panel_html` (definite da Max in `ui/index.html`, palette "Empire
+  Premium" ink+arancio): `.panel`, `.panel h2`, `.panel .hint`, `.panel .row`, `.btn`/`.tbtn`
+  (condivisa, non serve `.panel .btn`), `.inp` (condivisa), `.log-pane` (condivisa).
+- Selftest globale include anche il selftest di ogni modulo caricato + i moduli scartati per errore.
+- **Regola anti-collisione (dossier 17 §5.4 + aggiornamento ownership):** Gael possiede
+  `app.py`/`build_exe.bat`/`empiredesk.spec` + `modules/scheduler.py` (B2) `modules/notify.py`
+  (B3) `modules/taskboard.py` (B4). Max possiede `ui/index.html` (grafica/UX) +
   `modules/metrics.py` `modules/revenue.py` `modules/licenze.py` `modules/fliki.py` (A1-A4).
-  Nessuno tocca i moduli dell'altro.
+  Nessuno tocca i file dell'altro.
 
 ## Path e portabilità
 
