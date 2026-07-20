@@ -4,16 +4,17 @@
 **Piano vincolante e completo: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` §5 (appena scritto, leggerlo TUTTO).**
 Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'altro half** (lezione PreventivoForge).
 
-**▶️ GAEL — Half B «Core & Runtime» (owner: app.py · ui/index.html · build_exe.bat · empiredesk.spec):**
-- **B0 SUBITO — chiudi v0.1 OGGI.** Selftest è 7/8: unica FAIL = tile Caroselli, **2 difetti verificati**:
-  1) `app.py` riga ~101: `"script": "scripts/generate.js"` → path vero =
-     `Workfolw crea caroselli à/carousel-factory/scripts/generate.js` (verificato su disco);
-  2) `generate.js` esige un argomento (`process.argv[2]` = file JSON carosello, senza → exit 1; in `input/`
-     non c'è nessun JSON) → aggiungi `"input"` alla tile (campo path JSON, come l'URL della tile Studio),
-     altrimenti è un bottone che fallisce sempre (Gate 1 violato).
-  Poi: selftest 8/8 → build exe → test doppio click → CP + push. **v0.1 CHIUSA.**
-- **B1 (subito dopo B0 — SBLOCCA MAX):** seam moduli `EmpireDesk/modules/` (contratto §5.3 dossier 17)
-  + switcher pannelli UI. Dopo B1 core in FREEZE (si estende solo via modules/).
+**🔄 AGGIORNAMENTO OWNERSHIP (ordine Max 2026-07-19 sera): LA UI/UX È DI MAX, NON DI GAEL.**
+**Gael NON tocca più `ui/index.html`** (grafica/design/estetica = Max via Claude). Gael = tutto il resto.
+Dossier 17 §5 aggiornato. Se hai modifiche locali non pushate a `ui/index.html`: pusha ORA e poi stop.
+
+**▶️ GAEL — Half B «Core & Runtime» (owner: app.py · build_exe.bat · empiredesk.spec — NON più ui/):**
+- ✅ **B0 fix Caroselli** pushato (`2f885014`) — completa il resto di B0 se manca: selftest 8/8
+  verificato + build exe + test doppio click + CP. **v0.1 CHIUSA.**
+- **B1 (SBLOCCA integrazione moduli) — SOLO LATO PYTHON:** loader `EmpireDesk/modules/` (contratto
+  §5.3) + route `POST /api/modules` → `[{id, tile, panel_html}]` + metodi in `_WebApi` (pywebview)
+  + selftest esteso ai moduli. **La parte UI dello switcher NON la fai tu: la fa Max in index.html.**
+  Confine = solo quell'API JSON, zero file condivisi.
 - **B2** scheduler run programmate · **B3** notifiche fine-run · **B4** taskboard live. Dettagli §5.1.
 
 **✅ MAX — Half A: A1+A2+A3 SCRITTI E TESTATI (2026-07-19 sera, selftest 3/3 PASS):**

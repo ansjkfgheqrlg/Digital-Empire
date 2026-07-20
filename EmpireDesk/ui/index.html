@@ -5,122 +5,199 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Empire Desk</title>
 <style>
+  /* ============ EMPIRE PREMIUM — palette ink + orange #fb4604 + silver (owner UI: Max) ============ */
   :root{
-    --slate-900:#1c2329; --slate-800:#232c33; --slate-700:#2f3940; --slate-600:#3f4f5a;
-    --ink:#eef1f3; --muted:#9fb0bb; --line:#3a444c;
-    --silver-0:#ffffff; --silver-50:#f4f6f8; --silver-100:#eaeef1; --silver-200:#dbe1e6;
-    --accent:#fb4604; --accent-hover:#ff5c1f; --ok:#4fd17a; --err:#f2938c;
-    --shadow: 0 10px 30px rgba(0,0,0,.28), 0 2px 8px rgba(0,0,0,.18);
-    --r: 14px;
+    --ink-950:#101519; --ink-900:#151b20; --ink-850:#1a2127; --ink-800:#20282f;
+    --ink-700:#2b343c; --ink-600:#3a454e;
+    --paper:#eef1f3; --muted:#93a3ae; --faint:#66757f; --line:#323d45;
+    --silver-0:#ffffff; --silver-100:#e8edf0; --silver-300:#c3ccd3;
+    --accent:#fb4604; --accent-soft:rgba(251,70,4,.14); --accent-line:rgba(251,70,4,.45);
+    --ok:#4fd17a; --err:#f2938c;
+    --shadow:0 12px 34px rgba(0,0,0,.32), 0 2px 8px rgba(0,0,0,.2);
+    --r:14px;
   }
   *{ box-sizing:border-box; margin:0; padding:0; -webkit-font-smoothing:antialiased; }
   html,body{ height:100%; }
   body{
     font-family:"Segoe UI Variable Text","Segoe UI",Inter,system-ui,-apple-system,Roboto,Arial,sans-serif;
-    color:var(--ink);
+    color:var(--paper);
     background:
-      radial-gradient(1200px 600px at 15% -10%, #2a333a 0%, rgba(42,51,58,0) 55%),
-      linear-gradient(160deg,#1c2329 0%, #171d22 60%, #12171b 100%);
+      radial-gradient(1100px 540px at 12% -12%, #232c34 0%, rgba(35,44,52,0) 55%),
+      radial-gradient(900px 500px at 105% 8%, rgba(251,70,4,.07) 0%, rgba(251,70,4,0) 55%),
+      linear-gradient(165deg, var(--ink-900) 0%, var(--ink-950) 62%, #0c1114 100%);
     min-height:100%; display:flex; flex-direction:column; user-select:none;
   }
+  /* grana fine fissa (doppio layer, firma empire-style) */
+  body::before{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:100; opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E");
+  }
 
-  header{ position:relative; background:linear-gradient(135deg,#20272d 0%, #262f36 60%, #2b353d 100%);
-    padding:22px 34px 20px; border-bottom:1px solid var(--line); }
-  header::after{ content:""; position:absolute; left:0; right:0; bottom:-1px; height:2px;
-    background:linear-gradient(90deg, rgba(251,70,4,0) 0%, rgba(251,70,4,.55) 50%, rgba(251,70,4,0) 100%); }
+  /* ============ HEADER ============ */
+  header{ position:relative; z-index:2; padding:24px 34px 0; }
+  .head-row{ display:flex; align-items:flex-start; justify-content:space-between; gap:16px; }
+  .pre-tag{ display:inline-flex; align-items:center; gap:8px; font-size:10.5px; font-weight:700;
+    letter-spacing:2.2px; text-transform:uppercase; color:var(--accent);
+    padding:5px 12px; border:1px solid var(--accent-line); border-radius:999px;
+    background:var(--accent-soft); margin-bottom:10px; }
+  .pre-tag::before{ content:""; width:6px; height:6px; border-radius:50%; background:var(--accent);
+    box-shadow:0 0 8px rgba(251,70,4,.8); }
   .brand{ font-family:"Segoe UI Variable Display","Segoe UI",Inter,system-ui,sans-serif;
-    font-weight:650; font-size:22px; letter-spacing:.2px; display:flex; align-items:center; gap:10px; }
-  .brand .dot{ width:10px; height:10px; border-radius:50%; background:var(--accent);
-    box-shadow:0 0 0 5px rgba(251,70,4,.16); }
-  .subtitle{ margin-top:7px; font-size:12.5px; color:var(--muted); letter-spacing:.2px; }
-  .hbtn{ position:absolute; top:22px; right:30px; appearance:none; cursor:pointer; font-family:inherit;
-    border:1px solid var(--line); background:rgba(255,255,255,.05); color:var(--ink);
-    font-size:13px; font-weight:600; padding:8px 15px; border-radius:10px;
-    transition:background .15s ease, border-color .15s ease; }
-  .hbtn:hover{ background:rgba(255,255,255,.1); border-color:rgba(251,70,4,.5); }
+    font-weight:750; font-size:27px; letter-spacing:.3px; line-height:1.05;
+    background:linear-gradient(92deg, var(--silver-0) 0%, var(--silver-300) 46%, #9aa7b0 72%, var(--silver-100) 100%);
+    -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .subtitle{ margin-top:6px; font-size:12.5px; color:var(--muted); letter-spacing:.25px; }
+  .subtitle b{ color:var(--silver-300); font-weight:600; }
+  .hbtn{ appearance:none; cursor:pointer; font-family:inherit; font-size:12.5px; font-weight:650;
+    color:var(--paper); padding:9px 16px; border-radius:10px; border:1px solid var(--line);
+    background:linear-gradient(180deg, var(--ink-700) 0%, var(--ink-800) 100%);
+    transition:border-color .15s ease, box-shadow .15s ease; }
+  .hbtn:hover{ border-color:var(--accent-line); box-shadow:0 0 0 3px var(--accent-soft); }
 
-  main{ flex:1; padding:22px 30px 8px; display:flex; flex-direction:column; gap:16px; min-height:0; }
-  .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:14px; }
+  /* ============ NAV TABS (Plancia + pannelli moduli via seam B1) ============ */
+  nav{ display:flex; gap:8px; align-items:center; padding:18px 34px 0; z-index:2; position:relative; flex-wrap:wrap; }
+  .tab{ appearance:none; cursor:pointer; font-family:inherit; font-size:12.5px; font-weight:650;
+    color:var(--muted); padding:8px 16px; border-radius:999px; border:1px solid transparent;
+    background:transparent; letter-spacing:.3px; transition:all .15s ease; }
+  .tab:hover{ color:var(--paper); border-color:var(--line); }
+  .tab.active{ color:#fff; border-color:var(--accent-line); background:var(--accent-soft); }
 
-  .tile{ background:var(--slate-800); border:1px solid var(--line); border-radius:var(--r);
-    box-shadow:var(--shadow); padding:16px 16px 14px; display:flex; flex-direction:column; gap:8px;
-    transition:transform .12s ease, border-color .16s ease; }
-  .tile:hover{ transform:translateY(-2px); border-color:rgba(251,70,4,.35); }
+  /* ============ MAIN ============ */
+  main{ flex:1; padding:16px 30px 8px; display:flex; flex-direction:column; gap:16px; min-height:0; z-index:1; position:relative; }
+  .view{ display:none; flex-direction:column; gap:16px; min-height:0; flex:1; }
+  .view.active{ display:flex; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(252px,1fr)); gap:14px; }
+
+  /* tile: card scura, filo argento, corner bracket orange */
+  .tile{ position:relative; background:linear-gradient(180deg, var(--ink-850) 0%, var(--ink-800) 100%);
+    border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow);
+    padding:16px 16px 14px; display:flex; flex-direction:column; gap:8px;
+    transition:transform .13s ease, border-color .16s ease, box-shadow .16s ease; overflow:hidden; }
+  .tile::before{ content:""; position:absolute; top:0; left:0; right:0; height:1px;
+    background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.14) 50%, rgba(255,255,255,0) 100%); }
+  .tile::after{ content:""; position:absolute; top:10px; right:10px; width:14px; height:14px;
+    border-top:2px solid var(--accent-line); border-right:2px solid var(--accent-line);
+    border-radius:0 3px 0 0; opacity:0; transition:opacity .16s ease; }
+  .tile:hover{ transform:translateY(-2px); border-color:var(--accent-line);
+    box-shadow:0 14px 38px rgba(0,0,0,.4), 0 0 0 3px var(--accent-soft); }
+  .tile:hover::after{ opacity:1; }
   .tile .top{ display:flex; align-items:center; gap:10px; }
-  .tile .icon{ font-size:22px; }
-  .tile .name{ font-size:14.5px; font-weight:650; }
-  .tile .desc{ font-size:12px; color:var(--muted); line-height:1.4; min-height:32px; }
+  .tile .icon{ font-size:22px; filter:drop-shadow(0 2px 5px rgba(0,0,0,.4)); }
+  .tile .name{ font-size:14.5px; font-weight:680; letter-spacing:.2px; }
+  .tile .desc{ font-size:12px; color:var(--muted); line-height:1.45; min-height:32px; }
   .tile .row2{ display:flex; align-items:center; gap:8px; margin-top:auto; }
-  .tile input.urlin{ flex:1; min-width:0; font-size:12px; color:var(--ink); background:var(--slate-700);
-    border:1px solid var(--slate-600); border-radius:8px; padding:8px 10px; outline:none; }
-  .tile input.urlin:focus{ border-color:var(--accent); }
-  .tbtn{ appearance:none; border:none; cursor:pointer; font-family:inherit; font-size:12.5px; font-weight:650;
-    color:#fff; padding:9px 14px; border-radius:9px; white-space:nowrap;
-    background:linear-gradient(180deg, var(--accent) 0%, #d43a02 100%);
-    box-shadow:0 4px 12px rgba(251,70,4,.28); transition:filter .15s ease, transform .1s ease; }
-  .tbtn:hover{ filter:brightness(1.08); }
-  .tbtn:active{ transform:translateY(1px); }
-  .tbtn[disabled]{ cursor:default; filter:grayscale(.35) brightness(.85); opacity:.7; box-shadow:none; }
-  .tbtn.ghost{ background:var(--slate-700); box-shadow:none; border:1px solid var(--slate-600); }
+  input.urlin, .inp{ flex:1; min-width:0; font-size:12px; color:var(--paper); background:var(--ink-900);
+    border:1px solid var(--ink-600); border-radius:9px; padding:8px 10px; outline:none;
+    font-family:inherit; transition:border-color .14s ease, box-shadow .14s ease; }
+  input.urlin:focus, .inp:focus{ border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft); }
 
-  .badge{ font-size:10.5px; font-weight:700; letter-spacing:.4px; text-transform:uppercase;
-    padding:3px 8px; border-radius:20px; color:var(--muted); background:rgba(255,255,255,.05);
+  .tbtn, .btn{ appearance:none; border:none; cursor:pointer; font-family:inherit; font-size:12.5px;
+    font-weight:680; color:#fff; padding:9px 15px; border-radius:9px; white-space:nowrap;
+    background:linear-gradient(180deg, var(--accent) 0%, #d43a02 100%);
+    box-shadow:0 5px 14px rgba(251,70,4,.3), inset 0 1px 0 rgba(255,255,255,.18);
+    transition:filter .15s ease, transform .1s ease, box-shadow .15s ease; letter-spacing:.2px; }
+  .tbtn:hover, .btn:hover{ filter:brightness(1.09); box-shadow:0 6px 18px rgba(251,70,4,.42), inset 0 1px 0 rgba(255,255,255,.18); }
+  .tbtn:active, .btn:active{ transform:translateY(1px); }
+  .tbtn[disabled]{ cursor:default; filter:grayscale(.4) brightness(.8); opacity:.7; box-shadow:none; }
+  .tbtn.ghost{ background:linear-gradient(180deg, var(--ink-700) 0%, var(--ink-800) 100%);
+    box-shadow:none; border:1px solid var(--ink-600); }
+  .tbtn.ghost:hover{ border-color:var(--silver-300); filter:none; }
+
+  .badge{ font-size:10px; font-weight:750; letter-spacing:.6px; text-transform:uppercase;
+    padding:3.5px 9px; border-radius:20px; color:var(--muted); background:rgba(255,255,255,.05);
     border:1px solid var(--line); }
-  .badge.running{ color:#1c2329; background:var(--accent); border-color:var(--accent); }
+  .badge.running{ color:#fff; background:var(--accent); border-color:var(--accent);
+    box-shadow:0 0 10px rgba(251,70,4,.5); animation:pulse 1.4s ease-in-out infinite; }
+  @keyframes pulse{ 50%{ box-shadow:0 0 16px rgba(251,70,4,.75);} }
   .badge.ok{ color:var(--ok); border-color:rgba(79,209,122,.4); }
   .badge.error{ color:var(--err); border-color:rgba(242,147,140,.4); }
 
-  .logwrap{ flex:1; display:flex; flex-direction:column; min-height:160px; }
-  .logwrap .cap{ font-size:11px; font-weight:640; letter-spacing:.7px; text-transform:uppercase;
-    color:var(--muted); margin:0 0 7px 2px; display:flex; justify-content:space-between; }
-  .log{ flex:1; background:#12171b; color:#d7e0e6; border-radius:12px; padding:12px 14px;
-    font-family:"Cascadia Code","Consolas",ui-monospace,monospace; font-size:12.5px; line-height:1.55;
-    overflow:auto; box-shadow:inset 0 1px 3px rgba(0,0,0,.35); white-space:pre-wrap; user-select:text; }
-  .log::-webkit-scrollbar{ width:9px; }
-  .log::-webkit-scrollbar-thumb{ background:#3a444c; border-radius:8px; }
-  .log::-webkit-scrollbar-track{ background:transparent; }
+  /* ============ LOG ============ */
+  .logwrap{ flex:1; display:flex; flex-direction:column; min-height:150px; }
+  .logwrap .cap{ font-size:10.5px; font-weight:700; letter-spacing:1.6px; text-transform:uppercase;
+    color:var(--faint); margin:0 0 7px 2px; display:flex; justify-content:space-between; }
+  .logwrap .cap #logTile{ color:var(--accent); letter-spacing:.5px; text-transform:none; font-weight:650; }
+  .log, .log-pane{ flex:1; background:#0b1013; color:#d3dde3; border:1px solid #232d34; border-radius:12px;
+    padding:13px 15px; font-family:"Cascadia Code","Consolas",ui-monospace,monospace; font-size:12.5px;
+    line-height:1.58; overflow:auto; box-shadow:inset 0 2px 8px rgba(0,0,0,.45); white-space:pre-wrap; user-select:text; }
+  .log::-webkit-scrollbar, .log-pane::-webkit-scrollbar{ width:9px; }
+  .log::-webkit-scrollbar-thumb, .log-pane::-webkit-scrollbar-thumb{ background:var(--ink-600); border-radius:8px; }
+  .log::-webkit-scrollbar-track, .log-pane::-webkit-scrollbar-track{ background:transparent; }
 
-  footer{ padding:10px 30px 16px; text-align:center; font-size:11px; color:#6b7783; letter-spacing:.2px; }
-  footer b{ color:#8a97a1; font-weight:600; }
+  /* ============ PANNELLI MODULI (classi usate dai moduli Half A: .panel .hint .btn .inp .log-pane .row) ============ */
+  .panel{ background:linear-gradient(180deg, var(--ink-850) 0%, var(--ink-800) 100%);
+    border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow);
+    padding:20px 22px; display:flex; flex-direction:column; gap:12px; flex:1; min-height:0; }
+  .panel h2{ font-size:17px; font-weight:720; letter-spacing:.2px; }
+  .panel .hint{ font-size:12px; color:var(--muted); line-height:1.5; }
+  .panel .row{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .panel .log-pane{ min-height:220px; }
+  .panel .inp{ max-width:260px; }
+
+  footer{ padding:10px 30px 16px; text-align:center; font-size:11px; color:var(--faint); letter-spacing:.3px; z-index:1; }
+  footer b{ color:var(--muted); font-weight:600; }
+  footer .sep{ margin:0 8px; color:var(--ink-600); }
 </style>
 </head>
 <body>
   <header>
-    <div class="brand"><span class="dot"></span>EMPIRE DESK</div>
-    <div class="subtitle" id="subtitle">La plancia di comando di Digital Empire — v0.1</div>
-    <button class="hbtn" id="selftestBtn">Selftest</button>
+    <div class="head-row">
+      <div>
+        <span class="pre-tag">Digital Empire · Command Center</span>
+        <div class="brand">EMPIRE DESK</div>
+        <div class="subtitle">La plancia di comando — <b>ogni tile lancia un processo reale</b>, exit code sempre visibile</div>
+      </div>
+      <button class="hbtn" id="selftestBtn">Selftest</button>
+    </div>
   </header>
 
+  <nav id="nav">
+    <button class="tab active" data-view="plancia">Plancia</button>
+    <!-- tab dei pannelli moduli: iniettate a runtime quando il seam B1 espone /api/modules -->
+  </nav>
+
   <main>
-    <div class="grid" id="grid"></div>
-    <div class="logwrap">
-      <div class="cap"><span>Log</span><span id="logTile">—</span></div>
-      <div class="log" id="log">Pronto. Premi «Avvia» su una tile per lanciare l'automazione reale.</div>
+    <div class="view active" id="view-plancia">
+      <div class="grid" id="grid"></div>
+      <div class="logwrap">
+        <div class="cap"><span>Log processo</span><span id="logTile">—</span></div>
+        <div class="log" id="log">Pronto. Premi «Avvia» su una tile per lanciare l'automazione reale.</div>
+      </div>
     </div>
+    <!-- view dei pannelli moduli: iniettate a runtime -->
   </main>
 
-  <footer>Ogni tile lancia un processo <b>reale</b> — zero bottoni finti · exit code sempre visibile</footer>
+  <footer>Zero bottoni finti <span class="sep">·</span> <b>ADR-003</b>: launcher puro, mai riscritture <span class="sep">·</span> v0.1 UI Empire Premium</footer>
 
 <script>
   const $ = s => document.querySelector(s);
-  const gridEl = $("#grid"), logEl = $("#log"), logTileEl = $("#logTile"), selftestBtn = $("#selftestBtn");
+  const gridEl = $("#grid"), logEl = $("#log"), logTileEl = $("#logTile"),
+        selftestBtn = $("#selftestBtn"), navEl = $("#nav");
 
-  // Bridge dual-mode: pywebview (finestra pywebview) oppure fetch HTTP (finestra Chrome-app)
+  // Bridge dual-mode: pywebview (js_api) oppure fetch HTTP (finestra Chrome-app)
   const API = window.pywebview ? {
     tiles:   () => window.pywebview.api.tiles(),
     launch:  (id, input) => window.pywebview.api.launch(id, input),
     poll:    (id) => window.pywebview.api.poll(id),
     stato:   () => window.pywebview.api.stato(),
     selftest:() => window.pywebview.api.selftest(),
+    modules: () => window.pywebview.api.modules ? window.pywebview.api.modules() : Promise.reject("no modules"),
+    call:    (route, payload) => window.pywebview.api.call_route
+               ? window.pywebview.api.call_route(route, payload) : Promise.reject("no call_route"),
   } : {
     tiles:   () => fetch('/api/tiles',{method:'POST'}).then(r=>r.json()).then(d=>d.tiles),
     launch:  (id, input) => fetch('/api/launch',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,input})}).then(r=>r.json()),
     poll:    (id) => fetch('/api/poll',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id})}).then(r=>r.json()),
     stato:   () => fetch('/api/stato',{method:'POST'}).then(r=>r.json()),
     selftest:() => fetch('/api/selftest',{method:'POST'}).then(r=>r.json()).then(d=>d.results),
+    modules: () => fetch('/api/modules',{method:'POST'}).then(r=>{ if(!r.ok) throw "no modules"; return r.json(); }).then(d=>d.modules || Promise.reject("no modules")),
+    call:    (route, payload) => fetch('/api/'+route,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload||{})}).then(r=>r.json()),
   };
+  // helper globale usato dai panel_html dei moduli (contratto §5.3 dossier 17)
+  window.edApi = (route, payload) => API.call(route, payload);
 
   const escapeHtml = s => String(s==null?"":s).replace(/[&<>"']/g, c=>({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[c]));
+  const INPUT_PLACEHOLDER = { url: "URL YouTube…", path: "Percorso file carosello.json…" };
 
   let tiles = [];
   let activeTile = null;
@@ -132,8 +209,6 @@
     if (t.exit_code != null) return '<span class="badge error">errore ('+t.exit_code+')</span>';
     return '<span class="badge">idle</span>';
   }
-
-  const INPUT_PLACEHOLDER = { url: "URL YouTube…", path: "Percorso file carosello.json…" };
 
   function render(){
     gridEl.innerHTML = "";
@@ -203,6 +278,7 @@
   }
 
   selftestBtn.addEventListener("click", async ()=>{
+    switchView("plancia");
     logTileEl.textContent = "selftest";
     logEl.textContent = "Eseguo selftest (verifica path, nessun lancio reale)…";
     const results = await API.selftest();
@@ -213,7 +289,36 @@
     logEl.textContent = out.trim();
   });
 
+  // ---- switcher pannelli (i moduli arrivano dal seam B1; senza, resta solo Plancia) ----
+  function switchView(id){
+    document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active", b.dataset.view===id));
+    document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active", v.id==="view-"+id));
+  }
+  navEl.addEventListener("click", e=>{
+    const b = e.target.closest(".tab");
+    if (b) switchView(b.dataset.view);
+  });
+
+  const PANEL_LABEL = { metrics:"📈 Metriche", revenue:"💰 Revenue", licenze:"🔑 Licenze",
+                        scheduler:"⏰ Scheduler", taskboard:"📋 Task Board" };
+  async function loadModules(){
+    let mods;
+    try{ mods = await API.modules(); }catch(e){ return; } // seam B1 non ancora attivo: solo Plancia
+    (mods||[]).forEach(m=>{
+      if (!m.panel_html || document.getElementById("view-"+m.id)) return;
+      const tab = document.createElement("button");
+      tab.className = "tab"; tab.dataset.view = m.id;
+      tab.textContent = PANEL_LABEL[m.id] || m.id;
+      navEl.appendChild(tab);
+      const view = document.createElement("div");
+      view.className = "view"; view.id = "view-"+m.id;
+      view.innerHTML = m.panel_html;
+      document.querySelector("main").appendChild(view);
+    });
+  }
+
   refreshTiles();
+  loadModules();
   setInterval(refreshTiles, 4000);
 </script>
 </body>
