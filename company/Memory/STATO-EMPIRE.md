@@ -16,11 +16,10 @@ grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
   `/legacy` invariato, `main_chrome_app`/`main_webview` ora condividono lo stesso server locale via
   `url=` (prima `main_webview` usava `html=` inline — corretto, Aureus è SPA multi-asset). `empiredesk.spec`
   include `platform/dist`+`modules`+`state` nei `datas` (verificato: `modules/`+`state/` esistono e sono
-  tracciati, nessun rischio di build PyInstaller rotta per path mancante). **⚠️ NON eseguito a runtime
-  in NESSUNA delle due sessioni** (ambiente senza Python/Node/Chrome in entrambe) — resta da fare
-  `npm install && npm run build` in `platform/` + `python app.py --selftest` + `python app.py` su una
-  macchina reale prima di dichiarare G1 chiuso davvero.
-- **G2 (prossimo, blocca su G1 verificato a runtime):** build exe con dist inclusa + test doppio click.
+  tracciati, nessun rischio di build PyInstaller rotta per path mancante). Questa revisione era statica
+  (ambiente senza Python/Node/Chrome) — **da allora Max ha verificato G1 a runtime su macchina reale,
+  vedi blocco "✅ G1 CHIUSO E VERIFICATO END-TO-END" qui sotto: selftest 13/13 PASS.**
+- **G2 (prossimo, sbloccato — G1 verificato a runtime):** build exe con dist inclusa + test doppio click.
 - **G3:** B1-B4 restano (loader moduli/scheduler/notify/taskboard) = solo backend. Moduli A1-A3 di Max
   restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
 - **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.
