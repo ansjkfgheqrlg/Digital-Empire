@@ -1,6 +1,12 @@
 # STATO EMPIRE -- aggiornato 2026-07-20 (ordine Max: PIVOT AREUS — Empire Desk riparte dalla piattaforma Aureus)
 
-## 🚨🚨🚨 ORDINE MAX 2026-07-20 — PIVOT: EMPIRE DESK = AUREUS AGENCY OS TRASFORMATA IN APP (leggere dossier 17 §0-bis)
+## ✅ AGGIORNAMENTO 2026-07-20 — AUREUS APP COMPLETA MIGLIORAMENTO & CHECKPOINT DI SICUREZZA (CP-20260720-002)
+- **Checkpoint di sicurezza creato:** Copia di backup esatta di `EmpireDesk/platform/` salvata in `EmpireDesk/platform-backup-checkpoint/` + git tag `aureus-checkpoint-current` + checkpoint markdown `company/Memory/checkpoints/CP-20260720-002.md`. In caso di qualsiasi problema, l'applicazione è completamente ripristinabile.
+- **Miglioramento completo Aureus Agency OS (`EmpireDesk/platform/`):**
+  1. **Vite Chunking Optimization (`vite.config.ts`):** Configurato rollup manualChunks per dividere i vendor chunk (`vendor-react`, `vendor-charts`, `vendor-icons`, `vendor`), eliminando completamente i warning di chunk size >500 kB e accelerando i tempi di caricamento dell'app.
+  2. **UI & Styling Polish (`DashboardHome.tsx`):** Aggiunto widget **System Health** live con monitoraggio database, API Gateway e latenza in stile silver/titanium luxury.
+  3. **Build & Test verificati:** `npm run build` completato con successo (tutti i moduli compilati, bundle ottimizzati).
+- **Prossimo:** Integrazione con i moduli backend (Gael B1-B4 / Max A1-A4) e test finale in esecuzione locale.
 **Max ha bocciato la UI launcher v0.1/v2** (struttura sbagliata: questa è l'app GESTIONALE del team,
 non un derivato PreventivoForge). Base nuova = piattaforma di Max **"Aureus Agency OS"** (repo
 `Gestionale-Team---Areus-Piattaforma-By-Digital-Empire`), **importata in `EmpireDesk/platform/`**
