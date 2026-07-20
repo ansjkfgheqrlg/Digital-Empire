@@ -20,7 +20,49 @@ esistente si lancia da lì con un click. Semplice per Max, premium nell'aspetto,
 
 ---
 
-## 1. STACK VINCOLATO (pattern già provato 2 volte — NON si sperimenta)
+## 🚨 0-bis. PIVOT AREUS (ordine Max 2026-07-20 mattina) — QUESTO SUPERA LE SEZIONI SOTTO
+
+**Max boccia la UI launcher v0.1/v2** ("graficamente fa schifo, struttura sbagliata"): Empire Desk NON
+è un derivato di PreventivoForge — è **l'app GESTIONALE del team Digital Empire**. Base nuova vincolante:
+la piattaforma già creata da Max, repo GitHub `ansjkfgheqrlg/Gestionale-Team---Areus-Piattaforma-By-Digital-Empire`
+(**"Aureus Agency OS"** — React 19 + Vite, tema luxury silver/steel: Dashboard, Kanban, Sales Pipeline,
+Team, Social, Editorial, Infobusiness, Academy, Automations, Finance, Vault, War Room, Client Portal,
+Aureus AI, Command Palette; dati in localStorage via `utils/database`).
+
+**REGOLE ASSOLUTE del pivot:**
+1. **Grafica INTOCCABILE** — il sito si trasforma in APP pixel-perfect, così com'è. Nessun restyle.
+2. **Prima l'app, poi le funzioni**: fase 2 = aggiungere operatività/automazioni/workflow DENTRO Aureus.
+3. **Ownership invariata**: Max = tutta la grafica/UI/UX (opera Claude). **Gael = tutto il resto.**
+
+**Fatto (Max/Claude, 2026-07-20):**
+- Piattaforma importata in **`EmpireDesk/platform/`** (vendored dal repo, ultimo commit `83854cf`;
+  node_modules/dist gitignorati — dopo il pull: `npm install` dentro platform/).
+- Unico fix tecnico NON grafico: riga `<script type="module" src="/index.tsx"></script>` aggiunta a
+  `index.html` (l'export AI-Studio l'aveva persa: senza, la build non includeva l'app — dist era vuota).
+- **Build verificata**: `npm run build` → `dist/` con bundle 970 kB. **Anteprima testata** in finestra
+  `chrome --app` servendo dist/ in locale: l'app gira.
+- ⚠️ Nota runtime: `index.html` carica Tailwind + React/deps da CDN (`aistudiocdn.com`) → serve
+  internet all'avvio. Vendorizzazione (senza toccare grafica) = fase 2, owner Max.
+
+**Task nuovi — MAX (UI/UX):**
+- **U0 ✅** import + fix build + anteprima.
+- **U1 (fase 2, dopo G1):** operatività dentro Aureus nel SUO linguaggio grafico: sezione Automations
+  collegata ai flussi reali (le 8 automazioni v0.1), pannelli metrics/revenue/licenze in stile Aureus.
+
+**Task nuovi — GAEL (tutto il resto):**
+- **G1 — WRAPPER APP (per primo):** `app.py` serve `platform/dist/` come root del server locale
+  (stessa origin delle API `/api/*` già esistenti: tiles/launch/poll/modules) + finestra chrome-app
+  → l'APP CHE SI APRE È AUREUS. La vecchia `ui/index.html` resta raggiungibile (es. `/legacy`) come
+  fallback finché la fase 2 non ricollega le automazioni, poi si archivia.
+- **G2 — build exe** con dist inclusa (PyInstaller) + doppio click testato.
+- **G3 —** B1-B4 restano validi (loader moduli, scheduler, notify, taskboard): SOLO backend/route.
+  I moduli A1-A3 restano (route+dati buoni); i loro `panel_html` attuali = provvisori, UI rifatta da Max in fase 2.
+- Se `npm run build` serve nel flusso build exe: Gael può lanciarlo, ma NON edita nulla in `platform/`
+  salvo file di build config concordati — il contenuto di platform/ è grafica = Max.
+
+---
+
+## 1. STACK VINCOLATO (pattern già provato 2 volte — NON si sperimenta) *(v0.1 — superato dal pivot 0-bis per la UI)*
 
 Identico a PreventivoForge GUI (CP-20260703-001) e Prof Autocad (CP-20260702-002):
 - **pywebview + WebView2** (fallback Tkinter) — `app.py` con bridge JS↔Python.

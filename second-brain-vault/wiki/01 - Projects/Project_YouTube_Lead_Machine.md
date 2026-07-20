@@ -28,7 +28,7 @@ framework Think Media. Materiale sorgente: `Formazzione/Youtube/` (lista video +
 → risposta in 1 minuto (automatizzata) → call già calda. Views ≠ clienti: meglio 200 iscritti e €20k che 1M views.
 
 ## Stato e prossimi passi
-- [x] **Kit strategico-creativo COMPLETO (2026-07-20, CP-20260720-001):** cliente d'oro, setup canale
+- [x] **Kit strategico-creativo COMPLETO (2026-07-20, CP-20260720-004):** cliente d'oro, setup canale
   (copy pronta), lead magnet con automazioni, batch #1: 6 script pronti da registrare.
 - [ ] Eseguire setup canale con la copy di SETUP-CANALE.md (nome frontman da decidere: Max o Gael)
 - [ ] Creare Calendly "Analisi gratuita 15 min" + gate 3 domande + attivare i 5 messaggi automazione

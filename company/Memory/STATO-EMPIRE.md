@@ -1,34 +1,28 @@
-# STATO EMPIRE -- aggiornato 2026-07-20 (TOOLCHAIN VS CODE adottata + ADR-009 toolkit ufficiali; ordine Max EMPIRE DESK metà/metà resta attivo sotto)
+# STATO EMPIRE -- aggiornato 2026-07-20 (ordine Max: PIVOT AREUS Empire Desk · TOOLCHAIN VS CODE adottata · ADR-009 toolkit ufficiali)
 
-## 🧰 TOOLCHAIN VS CODE ADOTTATA (2026-07-20, CP-20260720-003) — scansione completa plugin + `.vscode/` committato
-Dossier: **`PIANO-MAESTRO/19-TOOLCHAIN-VSCODE.md`** (scansione 14 categorie su censimento reale del repo:
-7.6k md / 867 py / 181 yaml → l'impero è conoscenza scritta + automazioni Python, non webapp).
-- **Tier 1 da installare subito (10):** Claude Code (`anthropic.claude-code`, agente UNICO), GitLens, GitHub PR,
-  Python, Pylance, Ruff, Markdown All in One, **Markdown Memo** (abilita i wikilink `[[...]]` del vault),
-  YAML Red Hat, Spell Checker IT+EN. Comando pronto nel dossier §2.
-- **Regole d'oro:** niente doppi agenti AI (Copilot/Cody/Cline esclusi — Cody Free morto 2025-07, Dendron deprecato);
-  **MAI format-on-save globale** (ADR-003: vendor intoccabili); telemetry OFF.
-- **Config condivisa committata:** `.vscode/extensions.json` (22 raccomandate) + `.vscode/settings.json`.
-  **AZIONE MAX/GAEL:** aprire la repo in VS Code → «Install recommended extensions».
-- CP YouTube di questa sessione rinumerato **20260719-009** (collisione add/add con B1 di Gael nel merge).
+## 🚨🚨🚨 ORDINE MAX 2026-07-20 — PIVOT: EMPIRE DESK = AUREUS AGENCY OS TRASFORMATA IN APP (leggere dossier 17 §0-bis)
+**Max ha bocciato la UI launcher v0.1/v2** (struttura sbagliata: questa è l'app GESTIONALE del team,
+non un derivato PreventivoForge). Base nuova = piattaforma di Max **"Aureus Agency OS"** (repo
+`Gestionale-Team---Areus-Piattaforma-By-Digital-Empire`), **importata in `EmpireDesk/platform/`**
+(build verificata, anteprima testata in finestra app — Claude/Max, CP-20260720-001).
+**Regole: grafica INTOCCABILE (pixel-perfect) · prima l'app, poi le funzioni (fase 2) · Max = SOLO
+grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
 
-## 🏭 ADR-009 (2026-07-20, CP-20260720-002) — TOOLKIT UFFICIALI + REPARTO FORGE-AGENT-SKILL
-Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow, mai workflow orfani»:
-1. **`copy-workflow/`** vendored = motore copy ufficiale (`/copywriting`, wrapper in `.claude/skills/`).
-   Da oggi OGNI copy dell'impero passa di qui. Prima review fatta: kit YouTube (score 78-84 → 90-93,
-   patch applicate in `Formazzione/Youtube/COPY-REVIEW-APSOC.md`).
-2. **`master-build-architecture/`** (versione main confermata, NON sovrascrivere col clone GitHub) =
-   metodo architetture. Applicato → **`PIANO-MAESTRO/18-ARCHITETTURA-IMPERO-REVISIONE.md`** (audit 10
-   invarianti, mappa 10 workflow vivi W1-W10, 12 migliorie MIR con owner/gate/priorità).
-3. **`content-forge2.0/`** vendored = motore di forgia (`/forge`) del NUOVO reparto
-   **`FORGE-AGENT-SKILL/`** — officina permanente per creare NUOVI AGENTI e NUOVE SKILL (4 agenti fas-*,
-   WF-AGENT-NEW/WF-SKILL-NEW, gate bloccante fas-qa-gate, regole R1-R4). Intestazione ADR-008 completata:
-   ADR-009 scritto, REGISTRO-IMPRESA §3, skills-map v1.2 (60 mappati), 4 pagine wiki tool.
-**RIPRESA DA (salvo diverso ordine):** WF-SKILL-NEW per skill `/youtube-lead-machine` (MIR-11, backlog reparto).
-NOTA BENE per Gael/altre sessioni: non sovrascrivere `master-build-architecture/` col clone GitHub fresco
-(la copia main è più completa — decisione in ADR-009 punto 3).
+**▶️ GAEL — riprendi da qui (dettagli dossier 17 §0-bis):**
+- **G1 (per primo):** `app.py` serve `platform/dist/` come root (stessa origin delle API `/api/*`
+  esistenti) + finestra chrome-app → l'app che si apre È Aureus. Prima: `npm install` in platform/
+  (node_modules gitignorato) + `npm run build`. Vecchia `ui/index.html` → `/legacy` (fallback temporaneo).
+- **G2:** build exe con dist inclusa + test doppio click.
+- **G3:** B1-B4 restano (loader moduli/scheduler/notify/taskboard) = solo backend. Moduli A1-A3 di Max
+  restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
+- **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.
 
-## 🚨🚨 ORDINE MAX 2026-07-19 POMERIGGIO — EMPIRE DESK = LAVORO PIÙ IMPORTANTE, DIVISIONE METÀ/METÀ MAX↔GAEL
+**▶️ MAX (via Claude):** U0 ✅ (import+build+anteprima) · **U0b ✅ offline-capable (2026-07-20,
+`9e86349b`)**: Tailwind runtime + font Inter vendorizzati in `platform/public/` (stesso motore/stessi
+woff2 = zero differenze grafiche; l'app ora gira senza internet — verificato live) · U1 in fase 2 =
+operatività dentro Aureus nel suo linguaggio grafico (Automations → flussi reali, pannelli
+metrics/revenue/licenze). GAEL: dopo il pull ricordati `npm install` + `npm run build` in platform/
+(node_modules e dist NON sono nel repo).
 **Piano vincolante e completo: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` §5 (appena scritto, leggerlo TUTTO).**
 Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'altro half** (lezione PreventivoForge).
 
@@ -63,6 +57,35 @@ Dossier 17 §5 aggiornato. Se hai modifiche locali non pushate a `ui/index.html`
 *(Nota: un secondo blocco-divisione scritto da una sessione Max parallela citava «§6 dossier 17» —
 numerazione vecchia. Rimosso: vale il blocco qui sopra; nel dossier la divisione è la **§5**.
 Stesso contenuto, nessun task cambiato. Ordine del giorno Gael dopo B1: task revenue dossier 16.)*
+
+## 🧰 TOOLCHAIN VS CODE ADOTTATA (2026-07-20, CP-20260720-003) — scansione completa plugin + `.vscode/` committato
+Dossier: **`PIANO-MAESTRO/19-TOOLCHAIN-VSCODE.md`** (scansione 14 categorie su censimento reale del repo:
+7.6k md / 867 py / 181 yaml → l'impero è conoscenza scritta + automazioni Python, non webapp).
+- **Tier 1 da installare subito (10):** Claude Code (`anthropic.claude-code`, agente UNICO), GitLens, GitHub PR,
+  Python, Pylance, Ruff, Markdown All in One, **Markdown Memo** (abilita i wikilink `[[...]]` del vault),
+  YAML Red Hat, Spell Checker IT+EN. Comando pronto nel dossier §2.
+- **Regole d'oro:** niente doppi agenti AI (Copilot/Cody/Cline esclusi — Cody Free morto 2025-07, Dendron deprecato);
+  **MAI format-on-save globale** (ADR-003: vendor intoccabili); telemetry OFF.
+- **Config condivisa committata:** `.vscode/extensions.json` (22 raccomandate) + `.vscode/settings.json`.
+  **AZIONE MAX/GAEL:** aprire la repo in VS Code → «Install recommended extensions».
+- CP YouTube di questa sessione rinumerati **20260719-007→009** e **20260720-001→004** (collisioni add/add
+  con B1 di Gael e con il pivot Aureus di Max nei merge di oggi).
+
+## 🏭 ADR-009 (2026-07-20, CP-20260720-002) — TOOLKIT UFFICIALI + REPARTO FORGE-AGENT-SKILL
+Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow, mai workflow orfani»:
+1. **`copy-workflow/`** vendored = motore copy ufficiale (`/copywriting`, wrapper in `.claude/skills/`).
+   Da oggi OGNI copy dell'impero passa di qui. Prima review fatta: kit YouTube (score 78-84 → 90-93,
+   patch applicate in `Formazzione/Youtube/COPY-REVIEW-APSOC.md`).
+2. **`master-build-architecture/`** (versione main confermata, NON sovrascrivere col clone GitHub) =
+   metodo architetture. Applicato → **`PIANO-MAESTRO/18-ARCHITETTURA-IMPERO-REVISIONE.md`** (audit 10
+   invarianti, mappa 10 workflow vivi W1-W10, 12 migliorie MIR con owner/gate/priorità).
+3. **`content-forge2.0/`** vendored = motore di forgia (`/forge`) del NUOVO reparto
+   **`FORGE-AGENT-SKILL/`** — officina permanente per creare NUOVI AGENTI e NUOVE SKILL (4 agenti fas-*,
+   WF-AGENT-NEW/WF-SKILL-NEW, gate bloccante fas-qa-gate, regole R1-R4). Intestazione ADR-008 completata:
+   ADR-009 scritto, REGISTRO-IMPRESA §3, skills-map v1.2 (60 mappati), 4 pagine wiki tool.
+**RIPRESA DA (salvo diverso ordine):** WF-SKILL-NEW per skill `/youtube-lead-machine` (MIR-11, backlog reparto).
+NOTA BENE per Gael/altre sessioni: non sovrascrivere `master-build-architecture/` col clone GitHub fresco
+(la copia main è più completa — decisione in ADR-009 punto 3).
 
 ## ✅ GAEL — RISOLTA COLLISIONE UI + PRESO ATTO OWNERSHIP (2026-07-19 sera, CP-20260719-008)
 **Al pull di questo blocco ho scoperto che Max aveva già ridisegnato `ui/index.html` in parallelo**
@@ -128,7 +151,7 @@ il PC dove gira già PreventivoForge):**
 5. CP finale + aggiorna questo file + wiki/log + push.
 Dettaglio completo: `company/Memory/checkpoints/CP-20260719-004.md`.
 *(Nota: questo checkpoint era numerato -002 in locale, ma quel numero era già usato su GitHub da ADR-008 — rinumerato -004 in fase di risoluzione conflitto sync 2026-07-19 21:xx.)*
-## 🎬 YOUTUBE LEAD MACHINE — KIT DI LANCIO COMPLETO (agg. 2026-07-20, CP-20260720-001)
+## 🎬 YOUTUBE LEAD MACHINE — KIT DI LANCIO COMPLETO (agg. 2026-07-20, CP-20260720-004)
 Ingest completi i 7 video (CP-20260719-009) → strategia `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md`
 **→ ora anche il KIT ESEGUIBILE:** `CLIENTE-DORO.md` (ICP), `SETUP-CANALE.md` (copy pronta da incollare),
 `LEAD-MAGNET-01-analisi-gratuita.md` (magnet + gate + 5 messaggi speed-to-lead pronti), `batch-01/` (piano
