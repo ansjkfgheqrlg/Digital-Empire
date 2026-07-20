@@ -1,8 +1,9 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { AutomationRule, TriggerType, ActionType, AutomationLog } from '../types';
-import { Zap, Plus, Play, MoreVertical, ArrowRight, Activity, Bell, Mail, CheckCircle2, Clock, Terminal, X } from 'lucide-react';
+import { Zap, Plus, Play, MoreVertical, ArrowRight, Activity, Bell, Mail, CheckCircle2, Clock, Terminal, X, Radio, AlertTriangle } from 'lucide-react';
 import { Button } from './ui/Button';
+import { EmpireApi, EmpireTile } from '../utils/empireApi';
 
 interface AutomationsProps {
     rules: AutomationRule[];
@@ -15,6 +16,82 @@ interface AutomationsProps {
 export const Automations: React.FC<AutomationsProps> = ({ rules, logs = [], onToggleRule, onAddRule, onTestRule }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [newRule, setNewRule] = useState<Partial<AutomationRule>>({ name: '', trigger: 'LEAD_CREATED', action: 'NOTIFY_SLACK' });
+
+  // --- OPERAZIONI REALI (Digital Empire) — U1: wiring dati reali dentro Aureus (dossier 17 §0-bis) ---
+  // Le 8 automazioni reali (outreach, PreventivoForge, caroselli, Empire Studio...) via app.py.
+  // Additivo: non tocca il motore di automazioni mock sopra (regole trigger->action, ancora valido).
+  const [empireAvailable, setEmpireAvailable] = useState<boolean | null>(null); // null = verifica in corso
+  const [empireTiles, setEmpireTiles] = useState<EmpireTile[]>([]);
+  const [empireInputs, setEmpireInputs] = useState<Record<string, string>>({});
+  const [empireLogs, setEmpireLogs] = useState<Record<string, string[]>>({});
+  const [empireErrors, setEmpireErrors] = useState<Record<string, string>>({});
+  const pollingRef = useRef<Set<string>>(new Set());
+
+  const refreshEmpireTiles = useCallback(async () => {
+    try {
+      const tiles = await EmpireApi.getTiles();
+      setEmpireTiles(tiles);
+      setEmpireAvailable(true);
+    } catch {
+      setEmpireAvailable(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    refreshEmpireTiles();
+    const t = setInterval(refreshEmpireTiles, 4000);
+    return () => clearInterval(t);
+  }, [refreshEmpireTiles]);
+
+  const pollEmpireTile = useCallback((id: string) => {
+    if (pollingRef.current.has(id)) return;
+    pollingRef.current.add(id);
+    const tick = async () => {
+      try {
+        const r = await EmpireApi.poll(id);
+        if (r.lines.length) {
+          setEmpireLogs(prev => {
+            const merged = [...(prev[id] || []), ...r.lines];
+            return { ...prev, [id]: merged.slice(-200) };
+          });
+        }
+        if (r.running) {
+          setTimeout(tick, 700);
+        } else {
+          pollingRef.current.delete(id);
+          if (r.exit_code !== null) {
+            setEmpireLogs(prev => ({
+              ...prev,
+              [id]: [...(prev[id] || []), `--- terminato, exit code: ${r.exit_code} ---`].slice(-200),
+            }));
+          }
+          refreshEmpireTiles();
+        }
+      } catch {
+        pollingRef.current.delete(id);
+      }
+    };
+    tick();
+  }, [refreshEmpireTiles]);
+
+  const launchEmpireTile = async (tile: EmpireTile) => {
+    setEmpireErrors(prev => ({ ...prev, [tile.id]: '' }));
+    const input = tile.input ? (empireInputs[tile.id] || '') : undefined;
+    if (tile.input && !input?.trim()) {
+      setEmpireErrors(prev => ({ ...prev, [tile.id]: 'serve un input (vedi il campo sulla card)' }));
+      return;
+    }
+    setEmpireLogs(prev => ({ ...prev, [tile.id]: [] }));
+    const r = await EmpireApi.launch(tile.id, input);
+    if (!r.ok) {
+      setEmpireErrors(prev => ({ ...prev, [tile.id]: r.error || 'avvio fallito' }));
+      return;
+    }
+    await refreshEmpireTiles();
+    pollEmpireTile(tile.id);
+  };
+
+  const empireInputPlaceholder: Record<string, string> = { url: 'URL YouTube…', path: 'Percorso file carosello.json…' };
 
   const handleCreateRule = (e: React.FormEvent) => {
       e.preventDefault();
