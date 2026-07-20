@@ -49,7 +49,7 @@ Ogni gap diventa miglioria MIR-w (Miglioria Impero Workflow) con owner e gate, n
 | W4 | Content / carousel-factory | `Workfolw crea caroselli à/` | runtime wrappato | MIR-6: registro errori + selftest tile EmpireDesk |
 | W5 | Empire Studio (ingest video) | `SKILL & Agenti/` | CF-grade + WATCH-001 ⭐ | — |
 | W6 | EmpireDesk (launcher) | `EmpireDesk/` | in build (B0/B1 da ordine Max) | seam modules/ = gambino 4 ✅ in corso (governance altro owner) |
-| W7 | **YouTube Lead Machine** | `Formazzione/Youtube/` | strategia+kit ✅ (CP-20260719-007, CP-20260720-001) | MIR-11: skill `/youtube-lead-machine` + agenti yt-* via FORGE-AGENT-SKILL (backlog reparto) |
+| W7 | **YouTube Lead Machine** | `Formazzione/Youtube/` | strategia+kit ✅ (CP-20260719-009, CP-20260720-001) | MIR-11: skill `/youtube-lead-machine` + agenti yt-* via FORGE-AGENT-SKILL (backlog reparto) |
 | W8 | **FORGE-AGENT-SKILL** (OGGI) | `FORGE-AGENT-SKILL/` | reparto nuovo CF-grade | — (è il MIR-maker degli altri) |
 | W9 | Manuale CC (prodotto S2) | `02-INFO-BUSINESS` | CF-grade | vendita: copy review via copy-workflow |
 | W10 | Pagine lancio / agency sites | `Agency page*/`, `agency-empire*/` | siti statici | MIR-12: copy review APSOC + tracking eventi uniforme |

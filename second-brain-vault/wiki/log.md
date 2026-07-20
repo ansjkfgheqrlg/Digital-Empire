@@ -1,5 +1,25 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-19 (Empire Desk — collisione UI risolta, Gael)
+- FIX/COORD: scoperta al pull una collisione reale — Max ha ridisegnato `EmpireDesk/ui/index.html`
+  in parallelo (nav-tab "Empire Premium") con lo stesso obiettivo del mio switcher pannelli, ma
+  un contratto di rete diverso (`/api/modules` vs il mio `/api/panels`). Risolto merge manuale
+  (8 blocchi): tenuto il design di Max, `app.py` riallineato al suo contratto esatto
+  (`modules_public()`, route `api/modules`, chiave `panel_html`). STATO-EMPIRE aggiornato da Max
+  nel frattempo: ownership `ui/index.html` passata a Max — confermato, Gael non lo tocca più.
+  → CP-20260719-008 + REGISTRO-ERRORI EDE-8.
+
+## 2026-07-19 (Empire Desk B1 — seam moduli, Gael)
+- BUILD: `EmpireDesk/app.py` — loader `modules/*.py` (contratto dossier 17 §5.3): import isolato
+  per file (un modulo rotto si segnala e si salta, mai crash dell'app), validazione schema tile
+  anti-KeyError, dispatcher routes condiviso HTTP/pywebview, `global_selftest()` che include ogni
+  modulo. `ui/index.html`: switcher "Pannelli" (tab per modulo) + CSS per le classi già usate dai
+  3 pannelli di Max (metrics/revenue/licenze) — senza sarebbero apparsi senza stile. Fix grafico
+  proattivo: header da posizionamento assoluto calcolato a mano a `display:flex` (eliminato rischio
+  sovrapposizione bottoni). 2 bug trovati e corretti in autorevisione prima di ogni lancio (EDE-6/7).
+  **NON eseguito**: sessione senza Python/Node → verifica reale rimandata a macchina con l'ambiente
+  giusto. → CP-20260719-007 + STATO-EMPIRE aggiornati.
+
 ## 2026-07-19 (Empire Desk v0.1 — P1-P3, Gael)
 - BUILD: nuova cartella `EmpireDesk/` — app launcher `.exe` di tutte le automazioni Digital Empire
   (ordine Max, dossier `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md`). `app.py` con 3 motori GUI in

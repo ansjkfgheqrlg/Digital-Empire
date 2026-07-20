@@ -20,16 +20,17 @@ NOTA BENE per Gael/altre sessioni: non sovrascrivere `master-build-architecture/
 **Piano vincolante e completo: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` §5 (appena scritto, leggerlo TUTTO).**
 Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'altro half** (lezione PreventivoForge).
 
-**▶️ GAEL — Half B «Core & Runtime» (owner: app.py · ui/index.html · build_exe.bat · empiredesk.spec):**
-- **B0 SUBITO — chiudi v0.1 OGGI.** Selftest è 7/8: unica FAIL = tile Caroselli, **2 difetti verificati**:
-  1) `app.py` riga ~101: `"script": "scripts/generate.js"` → path vero =
-     `Workfolw crea caroselli à/carousel-factory/scripts/generate.js` (verificato su disco);
-  2) `generate.js` esige un argomento (`process.argv[2]` = file JSON carosello, senza → exit 1; in `input/`
-     non c'è nessun JSON) → aggiungi `"input"` alla tile (campo path JSON, come l'URL della tile Studio),
-     altrimenti è un bottone che fallisce sempre (Gate 1 violato).
-  Poi: selftest 8/8 → build exe → test doppio click → CP + push. **v0.1 CHIUSA.**
-- **B1 (subito dopo B0 — SBLOCCA MAX):** seam moduli `EmpireDesk/modules/` (contratto §5.3 dossier 17)
-  + switcher pannelli UI. Dopo B1 core in FREEZE (si estende solo via modules/).
+**🔄 AGGIORNAMENTO OWNERSHIP (ordine Max 2026-07-19 sera): LA UI/UX È DI MAX, NON DI GAEL.**
+**Gael NON tocca più `ui/index.html`** (grafica/design/estetica = Max via Claude). Gael = tutto il resto.
+Dossier 17 §5 aggiornato. Se hai modifiche locali non pushate a `ui/index.html`: pusha ORA e poi stop.
+
+**▶️ GAEL — Half B «Core & Runtime» (owner: app.py · build_exe.bat · empiredesk.spec — NON più ui/):**
+- ✅ **B0 fix Caroselli** pushato (`2f885014`) — completa il resto di B0 se manca: selftest 8/8
+  verificato + build exe + test doppio click + CP. **v0.1 CHIUSA.**
+- **B1 (SBLOCCA integrazione moduli) — SOLO LATO PYTHON:** loader `EmpireDesk/modules/` (contratto
+  §5.3) + route `POST /api/modules` → `[{id, tile, panel_html}]` + metodi in `_WebApi` (pywebview)
+  + selftest esteso ai moduli. **La parte UI dello switcher NON la fai tu: la fa Max in index.html.**
+  Confine = solo quell'API JSON, zero file condivisi.
 - **B2** scheduler run programmate · **B3** notifiche fine-run · **B4** taskboard live. Dettagli §5.1.
 
 **✅ MAX — Half A: A1+A2+A3 SCRITTI E TESTATI (2026-07-19 sera, selftest 3/3 PASS):**
@@ -50,6 +51,39 @@ Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'
 *(Nota: un secondo blocco-divisione scritto da una sessione Max parallela citava «§6 dossier 17» —
 numerazione vecchia. Rimosso: vale il blocco qui sopra; nel dossier la divisione è la **§5**.
 Stesso contenuto, nessun task cambiato. Ordine del giorno Gael dopo B1: task revenue dossier 16.)*
+
+## ✅ GAEL — RISOLTA COLLISIONE UI + PRESO ATTO OWNERSHIP (2026-07-19 sera, CP-20260719-008)
+**Al pull di questo blocco ho scoperto che Max aveva già ridisegnato `ui/index.html` in parallelo**
+(nav-tab "Empire Premium") con lo stesso obiettivo del mio switcher pannelli di sotto (CP-007),
+ma un contratto di rete diverso. Risolto merge manuale (8 blocchi): **tenuto il design di Max**,
+`app.py` riallineato al SUO contratto esatto (`POST /api/modules` → `{"modules":[{id,tile,
+panel_html}]}` — non più `/api/panels`/chiave `"html"`, mia scelta precedente ora abbandonata).
+**Confermo: da ora non tocco più `ui/index.html`** (ownership UI = Max, come scritto qui sopra).
+Il blocco sotto (CP-007) descrive lo switcher UI che avevo costruito PRIMA di vedere questo
+aggiornamento — la parte Python (loader/validazione/dispatcher) resta valida e attuale, la parte
+UI descritta lì (bottone "Pannelli", CSS `.htext`/`.hactions`) è STATA SOSTITUITA dal design di
+Max — dettaglio in `EmpireDesk/REGISTRO-ERRORI.md` EDE-8 e `CP-20260719-008.md`.
+
+## ⚠️ GAEL — B1 COSTRUITO (loader moduli), NON ESEGUITO (2026-07-19 sera, CP-20260719-007) — RIPRESA QUI
+**Seam `EmpireDesk/modules/` fatto:** `_load_modules()` scandisce `modules/*.py`, importa in
+isolamento (un modulo rotto si segnala e si salta, MAI fa cadere l'app), monta `routes`/`tile`/
+`panel_html` di ogni modulo. **Validazione schema tile aggiunta** (`_validate_module_tile`) prima
+di accettarla — altrimenti una tile-modulo malformata avrebbe fatto KeyError su TUTTE le tile
+(bug trovato in autorevisione, mai lanciato). Switcher "Pannelli" in UI (tab per modulo) + CSS
+per le classi che i pannelli di Max già usano (`.panel .hint .btn .inp .log-pane`) — senza,
+sarebbero apparsi senza stile. **Verificati i 3 moduli di Max (metrics/revenue/licenze): rispettano
+il contratto §5.3 esattamente.** Fix grafico proattivo: i 2 bottoni header erano posizionati a
+mano (`right:Npx`) → rischio sovrapposizione → convertito a `display:flex` (zero rischio).
+**🛑 NON ESEGUITO QUI:** stesso blocco di CP-20260719-004/006 — questa sessione non ha Python/Node
+installati, solo revisione statica riga per riga. **RIPRESA (macchina reale):**
+1. `git pull` (prendi B1 + i 2 fix EDE-6/7).
+2. `cd EmpireDesk && python app.py --selftest` → atteso: 8 tile core + selftest metrics/revenue/
+   licenze (~11 righe), tutte OK salvo eventuale EDE-A1 residuo in licenze.py (Max, non mio).
+3. `python app.py` → aprire, cliccare "Pannelli", verificare a occhio i 3 tab (stile coerente,
+   bottoni funzionanti) + selftest via UI.
+4. Se verde: build exe (`build_exe.bat`) + test doppio click + CP di chiusura B0+B1 + comunica a
+   Max che può integrare (già può scrivere A4 fliki in parallelo, si aggancia da solo).
+Dettaglio completo: `company/Memory/checkpoints/CP-20260719-007.md`.
 
 ## ⚠️ GAEL — EMPIRE DESK: P1-P3 FATTI, P4 BLOCCATO (2026-07-19, CP-20260719-004) — RIPRESA QUI
 **Cartella nuova `EmpireDesk/` (root del repo).** P1 (shell 3-motori + 8 tile UI) e P2-P3
@@ -83,7 +117,7 @@ il PC dove gira già PreventivoForge):**
 Dettaglio completo: `company/Memory/checkpoints/CP-20260719-004.md`.
 *(Nota: questo checkpoint era numerato -002 in locale, ma quel numero era già usato su GitHub da ADR-008 — rinumerato -004 in fase di risoluzione conflitto sync 2026-07-19 21:xx.)*
 ## 🎬 YOUTUBE LEAD MACHINE — KIT DI LANCIO COMPLETO (agg. 2026-07-20, CP-20260720-001)
-Ingest completi i 7 video (CP-20260719-007) → strategia `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md`
+Ingest completi i 7 video (CP-20260719-009) → strategia `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md`
 **→ ora anche il KIT ESEGUIBILE:** `CLIENTE-DORO.md` (ICP), `SETUP-CANALE.md` (copy pronta da incollare),
 `LEAD-MAGNET-01-analisi-gratuita.md` (magnet + gate + 5 messaggi speed-to-lead pronti), `batch-01/` (piano
 + **6 script completi pronti da registrare**: hook parola-per-parola, scaletta, CTA — V01 ads senza richieste,

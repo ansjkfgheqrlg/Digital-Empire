@@ -8532,3 +8532,69 @@ Call log:
 2026-06-11 11:08:22,662    Lead totali in DB: 3004
 2026-06-11 11:08:22,662    ⚠ Rate limit Instagram rilevato — domani riprova con calma
 2026-06-11 11:08:22,662  ============================================================
+2026-07-19 21:12:18,314  ============================================================
+2026-07-19 21:12:18,314  INSTAGRAM DAILY RUN  2026-07-19 21:12:18
+2026-07-19 21:12:18,317  ============================================================
+2026-07-19 21:12:40,980  Verifica sessione Instagram...
+2026-07-19 21:12:50,371    Sessione valida [OK]
+2026-07-19 21:12:50,547  DM oggi: 0/30 (rimangono: 30)
+2026-07-19 21:12:50,548  Follow-up oggi: 0/20 (rimangono: 20)
+2026-07-19 21:12:50,548  FASE 0 — Sub-agents: Scout massivo + Qualifier + Similar Scout
+2026-07-19 21:12:50,549    [A] Hashtag Scout (10 hashtag × 25 profili)...
+2026-07-19 21:13:17,595    [SCOUT] #shopifyitalia: 5 API + 1 script + 0 URL = 6 candidati
+2026-07-19 21:13:17,595    [SCOUT] #shopifyitalia: 6 profili selezionati (max 25)
+2026-07-19 21:13:17,634    [SCOUT] Pool totale: 4 candidati
+2026-07-19 21:13:31,986    [SCOUT] #freelancemarketing: errore — Page.evaluate: Target page, context or browser has been closed
+2026-07-19 21:13:31,995    [SCOUT] Pool totale: 4 candidati
+2026-07-19 21:13:37,339    [SCOUT] #automazionebusiness: errore — Page.goto: Target page, context or browser has been closed
+2026-07-19 21:13:37,347    [SCOUT] Pool totale: 4 candidati
+2026-07-19 21:13:41,009    [SCOUT] #startupitaliana: errore — Page.goto: Target page, context or browser has been closed
+2026-07-19 21:13:41,014    [SCOUT] Pool totale: 4 candidati
+2026-07-19 21:13:45,567    [SCOUT] #coachingbusiness: errore — Page.goto: Target page, context or browser has been closed
+2026-07-19 21:13:45,567    [SCOUT] Pool totale: 4 candidati
+2026-07-19 21:13:49,409    [SCOUT] #facebookadsita: errore — Page.goto: Target page, context or browser has been closed
+2026-07-19 21:13:49,414    [SCOUT] Pool totale: 4 candidati
+2026-07-19 21:13:52,819    [SCOUT] #venditaonline: errore — Page.goto: Target page, context or browser has been closed
+2026-07-19 21:13:52,824    [SCOUT] Pool totale: 4 candidati
+2026-07-19 21:13:58,355    [SCOUT] #corsionline: errore — Page.goto: Target page, context or browser has been closed
+2026-07-19 21:13:58,359    [SCOUT] Pool totale: 4 candidati
+2026-07-19 21:14:03,530    [SCOUT] #growthhacking: errore — Page.goto: Target page, context or browser has been closed
+2026-07-19 21:14:03,530    [SCOUT] Pool totale: 4 candidati
+2026-07-19 21:14:08,448    [SCOUT] #imprenditoredigitale: errore — Page.goto: Target page, context or browser has been closed
+2026-07-19 21:14:08,448    [SCOUT] Pool totale: 4 candidati
+2026-07-19 21:14:12,444  [SCOUT] Completato — 4 candidati da 10 hashtag
+2026-07-19 21:14:12,444    [A] Scout completato: 4 candidati grezzi
+2026-07-19 21:14:12,444    [B] Profile Qualifier (max 60 profili)...
+2026-07-19 21:14:21,454  [QUAL] Completato — 0 qualificati su 4 visitati (4/4)
+2026-07-19 21:14:21,454    [B] Qualificati: 0 pronti per DM
+2026-07-19 21:14:21,536  FASE 0 completata — 0 lead pronti nel pool
+2026-07-19 21:14:21,536  FASE 1 — Ricerca legacy da hashtag (backup)
+2026-07-19 21:14:21,545    Errore hashtag #ecommerceitaliano: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:14:30,803    Errore hashtag #agenziamarketing: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:14:40,799    Errore hashtag #consulentedigitale: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:14:49,885    Errore hashtag #marketingdigitale: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:14:57,408    Errore hashtag #intelligenzaartificiale: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:15:06,499    Errore hashtag #formatoreonline: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:15:15,088    Errore hashtag #imprenditoridigitali: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:15:21,457    Errore hashtag #corsionline: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:15:30,723    Nuovi lead trovati: 0 | Totale DB: 3004
+2026-07-19 21:15:30,723  FASE 2 — Invio DM (rimangono: 30)
+2026-07-19 21:15:30,724    Lead da processare: 2223 (1 qualified + 2222 new)
+2026-07-19 21:15:30,728    Errore @drmorgancorso_official: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:15:43,426    Errore @damiano_profumi: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:15:56,667    Errore @giuseppericciardulli: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:16:07,461    Errore @antoniorenna_: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:16:19,321    Errore @ruitooridersit: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:16:29,440    Errore @webwavecom: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:16:42,362    Errore @widrop.official: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:16:57,002    Errore @salv.ostore: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:17:09,457    Errore @loecom.ext: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:17:22,018    Errore @solaris.logistica: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:17:34,949    Errore @albertofacca: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:17:48,671    Errore @dropshipping.tips_italia: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:17:59,951    Errore @sartini_francesco: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:18:14,610    Errore @kunalfx.wizard: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:18:27,710    Errore @luca_shopifyecom: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:18:36,359    Errore @giorgiocrx: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:18:47,952    Errore @myecomlife: Page.goto: Target page, context or browser has been closed
+2026-07-19 21:18:56,162    Errore @luxora_society: Page.goto: Target page, context or browser has been closed

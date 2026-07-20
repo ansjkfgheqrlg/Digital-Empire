@@ -90,7 +90,14 @@ Ogni tile: nome, stato (idle/running/done/error), bottone Avvia, output nel pann
      path JSON, come la tile Studio ha l'URL) o sarebbe un bottone che fallisce sempre = bottone finto (Gate 1).
 - `dist/` assente: exe mai buildato. P4 aperto.
 
-### 5.1 GAEL — Half B «Core & Runtime» (owner: `app.py` · `ui/index.html` · `build_exe.bat` · `empiredesk.spec`)
+> ⚠️ **AGGIORNAMENTO OWNERSHIP (ordine Max 2026-07-19 sera):** la **UI/UX è di MAX** (grafica,
+> design, estetica, `ui/index.html` INTERO). **Gael NON tocca più `ui/index.html`.** Gael = tutto
+> il resto (app.py, motori, build, moduli B). Il seam B1 si divide: **lato Python = Gael**
+> (loader `modules/` + route `POST /api/modules` che ritorna `[{id, tile, panel_html}]` + selftest
+> esteso + esposizione in `_WebApi` per pywebview); **lato UI = MAX** (switcher pannelli, rendering
+> moduli, stile — tutto dentro `ui/index.html`). Confine = SOLO quell'API JSON: zero file condivisi.
+
+### 5.1 GAEL — Half B «Core & Runtime» (owner: `app.py` · `build_exe.bat` · `empiredesk.spec` — ui/index.html passato a Max, vedi sopra)
 - **B0 — CHIUDI v0.1 (OGGI, per primo):**
   1) fix tile Caroselli: path completo + campo `input` per il JSON carosello (2 difetti sopra);
   2) selftest **8/8**;
@@ -104,7 +111,7 @@ Ogni tile: nome, stato (idle/running/done/error), bottone Avvia, output nel pann
 - **B4 — `modules/taskboard.py`:** task board Max/Gael live (fonte `EmpireDesk/state/taskboard.json`,
   seed dai task del dossier 16).
 
-### 5.2 MAX — Half A «Dati & Business» (owner: i 4 moduli qui sotto — file NUOVI, zero collisione)
+### 5.2 MAX — Half A «Dati & Business + UI/UX» (owner: 4 moduli sotto **+ `ui/index.html` intero** — grafica/design/estetica dell'app è di Max)
 - **A1 — `modules/metrics.py`:** dashboard metriche settimana (dossier 16 §4) da dati REALI
   (report outreach, output caroselli, storico preventivi). Dato assente → il pannello dice
   «nessun dato», MAI numeri inventati.
