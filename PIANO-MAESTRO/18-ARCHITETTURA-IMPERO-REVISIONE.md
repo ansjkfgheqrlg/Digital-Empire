@@ -30,7 +30,7 @@ Ogni gap diventa miglioria MIR-w (Miglioria Impero Workflow) con owner e gate, n
 | 2 | MKD + mai riassunti | ✅ solo Empire Studio (videos→pagine complete) | MIR-2: adottare `/forge` (MKD) per ogni nuova ingestione; candidata: `Materiale Agency - Diglital Empire.txt` → MKD brand-offer |
 | 3 | PLAN→ASK→BUILD→CRITIQUE→ITERATE | ✅ **closed 2026-07-20 (MIR-3, CP-20260720-009)**: ASK formale obbligatorio in ogni FORGE-PLAN del reparto — `FORGE-AGENT-SKILL/workflows/ASK-PROTOCOL.md` + step ASK nelle 2 WF + qa-gate punto 7 | (chiuso) |
 | 4 | Tre livelli: kernel/specialisti/tools | ✅ su copy-workflow (8 agenti A1-A8) e content-forge | MIR-4: mappare i runtime "monolitici" (app.py EmpireDesk) verso kernel+moduli (già avviato da §5 dossier 17: seam modules/) |
-| 5 | 7 file canonici per agente | ⚠️ 01-AGENCY/02/03/04 li hanno (CF-grade); i runtime pre-impero NO | MIR-5: via FORGE-AGENT-SKILL, retrofit progressivo (1 reparto-figlio per sprint) — backorder, nessuna fretta (ADR-003) |
+| 5 | 7 file canonici per agente | 🚧 in corso: sprint 1 ✅ youtube-script-factory (2026-07-20, GATE retro 7/7) | MIR-5: via FORGE-AGENT-SKILL, retrofit progressivo (1 reparto-figlio per sprint) — backorder, nessuna fretta (ADR-003) |
 | 6 | Failure-modes di prima classe | ⚠️ solo PreventivoForge/EmpireDesk hanno REGISTRO-ERRORI | MIR-6: REGISTRO-ERRORI.md obbligatorio in ogni runtime attivo (outreach, carousel, YouTube kit) — regola già Max 07-05, ora standardizzata |
 | 7 | Traceability sorgente→output | ✅ Empire Studio (P12); ⚠️ altrove manuale | MIR-7: ogni FORGE-PLAN dichiara sorgenti; coverage-check nei gate (fas-qa-gate lo fa) |
 | 8 | Research→Plan→Reset→Implement | ✅ praticato (swarm fresh per fasi) | MIR-8: codificarlo nel ciclo a 9 passi come nota metodo (no ADR nuovo) |
@@ -67,7 +67,7 @@ codice/cantiere aperto di altri owner — produce solo le migliorie MIR su asset
 | MIR-2 | Copy obbligatorio via copy-workflow (regola attiva da oggi) + MKD brand-offer da `Materiale Agency` | 04-MARKETING/L2-1 | A8 review ≥85 | **P0 ✅ entrambe 2026-07-20: kit YouTube review + MKD-brand-offer-DE.md** |
 | MIR-3 | ASK formale nei FORGE-PLAN (max 3 domande mirate) | FORGE-AGENT-SKILL | conductor checklist | P1 — ✅ FATTA 2026-07-20: `workflows/ASK-PROTOCOL.md` + step ASK in WF-SKILL/AGENT-NEW + qa-gate p.7 (CP-20260720-009) |
 | MIR-4 | EmpireDesk seam modules (già ordine Max B1 — solo annotato, owner altrui) | (Gael) | selftest 8/8 | — |
-| MIR-5 | Retrofit 7-file su reparti pre-impero, 1 figlio/sprint | FORGE-AGENT-SKILL | fas-qa-gate | P3 |
+| MIR-5 | Retrofit 7-file su reparti pre-impero, 1 figlio/sprint | FORGE-AGENT-SKILL | fas-qa-gate | P3 — 🚧 CAMPAGNA avviata · ✅ SPRINT 1 (2026-07-20): `youtube-script-factory` wrap completo + tools estratti + registrata (GATE retro PASS 7/7, CP-20260720-014) · sprint 2: prossimo figlio da censimento |
 | MIR-6 | REGISTRO-ERRORI.md in ogni runtime attivo | ogni reparto owner | METHOD-GUARD | P1 — ✅ outreach+carousel+youtube-kit 2026-07-20 (PreventivoForge/EmpireDesk ce l'avevano già) |
 | MIR-7 | FORGE-PLAN con sorgenti dichiarate (traceability) | FORGE-AGENT-SKILL | qa-gate | P1 |
 | MIR-8 | Nota metodo Research→Plan→Reset→Implement in `PIANO-MAESTRO/10-METODO-CICLO-FASE.md` | Max (approva) | — | P3 |

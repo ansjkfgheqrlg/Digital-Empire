@@ -3,7 +3,7 @@
 # Regola (ADR-003): il codice/file RESTA dove si trova. Questo e' un registro, non uno spostamento.
 # Aggiorna questo file ogni volta che nasce una nuova skill o workflow.
 
-version: "1.4"
+version: "1.5"
 updated: "2026-07-20"
 maintainer: "Chief-Forge (company/Board-CSuite/Chief-Forge.md)"
 # ADR-008: questa mappa + company/REGISTRO-IMPRESA.md = anagrafe unica.
@@ -499,6 +499,15 @@ skills_and_workflows:
 
 nuovi_2026_07:
 
+  - id: youtube-script-factory
+    nome: Skill CRO YouTube Script Factory PRO (scrittura script video lead-gen)
+    percorso: SKILL & Agenti/SKILL/Skill CRO - Youtube - Lead magnet/
+    ecosistema: 04-MARKETING
+    reparto: W7 YouTube Lead Machine (retrofit MIR-5 sprint 1, FORGE-AGENT-SKILL)
+    tipo: skill
+    stato: active
+    note: "Legacy-wrapped ADR-003: kernel md 5.166r intoccato (SEZ 6 = kernel operativo); 3 tool python estratti tools/ 2026-07-20 (py_compile 3/3); scoring canonico 45pt. Delega da /youtube-lead-machine; QA copy -> copy-workflow. GATE retro PASS 7/7. Era orfana ADR-008 fino al 2026-07-20."
+
   - id: ispettorato-generale
     nome: Ispettorato Generale (performance, autocritica, anti-recidiva, primo-colpo-migliore)
     percorso: company/Ispettorato/
@@ -626,10 +635,10 @@ da_classificare:
     note: "Prima skill forgiata dal reparto (WF-SKILL-NEW, GATE PASS 7/7 2026-07-20). Kernel 118r + 6 references + evals 7 + failure-modes 8. Sorgente Formazzione/Youtube/ (wrap, ADR-003). Delega: script -> Skill CRO Youtube Lead magnet; QA copy -> copy-workflow."
 
 stats:
-  totale_mappati: 62
-  active: 37
+  totale_mappati: 63
+  active: 38
   experimental: 15
   legacy: 4
   knowledge: 6
   da_classificare: 3
-  aggiornamento: "2026-07-20 — v1.4: merge main -> +1 ispettorato-generale (M1 fondamenta, Max). Precedente v1.3: +1 skill forgiata (youtube-lead-machine, MIR-11); v1.2: ADR-009 +4 toolkit esterni."
+  aggiornamento: "2026-07-20 — v1.5: MIR-5 sprint 1 -> +1 youtube-script-factory (retrofit wrap, era orfana ADR-008). v1.4: +1 ispettorato-generale (Max). v1.3: youtube-lead-machine forgiata."

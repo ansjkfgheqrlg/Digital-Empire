@@ -127,8 +127,9 @@ Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow
 ✅ MIR-3 ASK formale (`workflows/ASK-PROTOCOL.md` + step nelle 2 WF + qa-gate p.7, CP-20260720-009) ·
 ✅ magnet #2 checklist CRO 21 punti (W7, APSOC 93/100, CP-20260720-010 — resta export PDF grafico Max/Gael) ·
 ✅ MIR-12 review sito Agency (78/100, 5 P0, ASK Q1-Q3 → Max, CP-20260720-012) ·
-✅ MIR-9 topology.md obbligatorio team (R2-bis + template + gate + `TOPOLOGY.md` reparto dogfooding, CP-20260720-013).
-Prossimi backlog reparto: valutazione agenti yt-*/vendita (con Max) · MIR-5 retrofit 7-file pre-impero (1 figlio/sprint, P3).
+✅ MIR-9 topology.md obbligatorio team (R2-bis + template + gate + `TOPOLOGY.md` reparto dogfooding, CP-20260720-013) ·
+✅ **MIR-5 CAMPAGNA avviata — sprint 1**: retrofit `youtube-script-factory` (wrap + tools/ estratti + skills-map v1.5; GATE retro PASS 7/7 inaugurando la modalità RETROMODE per asset vivi, CP-20260720-014).
+Prossimi backlog reparto: MIR-5 sprint 2 (prossimo figlio da censimento pre-impero) · valutazione agenti yt-*/vendita (con Max, serve sua decisione).
 NOTA BENE per Gael/altre sessioni: non sovrascrivere `master-build-architecture/` col clone GitHub fresco
 (la copia main è più completa — decisione in ADR-009 punto 3).
 

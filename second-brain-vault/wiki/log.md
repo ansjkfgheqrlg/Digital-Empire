@@ -1,5 +1,18 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-20 (MIR-5 sprint 1 — retrofit youtube-script-factory)
+- RETROFIT (1° figlio campagna MIR-5): `SKILL & Agenti/SKILL/Skill CRO - Youtube - Lead magnet/` —
+  era skill ATTIVA (delegata da /youtube-lead-machine) ma **orfana ADR-008** (zero skills-map/REGISTRO)
+  e con 3 tool python imbrogliati nel markdown (non eseguibili). Wrap additivo: spec.md (mappa 9 sezioni
+  + mappa debiti: kernel oversize → SEZ 6 kernel operativo; scala scoring canonizzata 45pt), tools.md,
+  playbook.md (4 scenari + deleghe), evals.md (7 casi), failure-modes.md (7), memory/INDEX.md +
+  **`tools/*.py` estratti dalle SEZ 7-9 (py_compile 3/3)** + regola deriva "il md vince". MKD 17/17=100%.
+  PLAN con ASK (MIR-3, Q1 slug → default youtube-script-factory) · GATE retro **PASS 7/7**.
+  skills-map v1.5 (63 mappati) + REGISTRO §3 (da orfana a intestata). Lezione: marker corti nell'estrazione
+  → 3 file clonati; risolta con marker completi + check md5 (documentata in verbale, anti-recidiva).
+- → 1 pagina creata ([[tools/Tool_Youtube_Script_Factory]]), index.md +1. Dossier 18: MIR-5 🚧 avviata,
+  inv. 5 🚧. CP-20260720-014.
+
 ## 2026-07-20 (FORGE-AGENT-SKILL — MIR-9: topology.md obbligatorio per team)
 - BUILD: `templates/TOPOLOGY-TEMPLATE.md` (canonico ADR-008: tipo hier/pipeline/mesh/queen-swarm motivato,
   nodi = solo agenti 7-file reali [no agenti fantasma], entry point, edges con contratti input→output,
