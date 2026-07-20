@@ -5,12 +5,12 @@
     "assignee": "Gael",
     "stream": "infra",
     "priority": "high",
-    "status": "in_progress",
+    "status": "done",
     "output": "CP",
     "tile_id": null,
-    "notes": "",
+    "notes": "[auto] CF-R8 completato: 9/9 reparti (03-CF chiuso, CP-016)",
     "created_at": "2026-07-20T13:28:24",
-    "updated_at": "2026-07-20T13:28:24"
+    "updated_at": "2026-07-20T13:36:15"
   },
   {
     "id": "g1-audit-asset",
@@ -18,12 +18,12 @@
     "assignee": "Gael",
     "stream": "S3/S4",
     "priority": "high",
-    "status": "todo",
+    "status": "done",
     "output": "AUDIT-PAGINE-20260719.md",
     "tile_id": null,
-    "notes": "",
+    "notes": "[auto] Audit completato: 8 pagine/canali censiti",
     "created_at": "2026-07-20T13:28:24",
-    "updated_at": "2026-07-20T13:28:24"
+    "updated_at": "2026-07-20T13:36:02"
   },
   {
     "id": "g2-funnel-manuale",
