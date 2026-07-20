@@ -57,6 +57,13 @@
 ## 2026-07-19
 - INGEST: PIANO ESTATE REVENUE (dossier 16) — strategia fatturato 7gg: S1 concessionari anticipati (≥95%), S2 Manuale CC (B-003 da chiudere G1), S3 pagine lancio, S4 mentalita.brutale (solo se auto 100%, carousel-factory wrap), S5 YouTube-Fliki auto (API in .env locale) → 1 dossier + task board Max/Gael in STATO
 
+## 2026-07-20 (Toolkit esterni ADR-009 + reparto FORGE-AGENT-SKILL)
+- INGEST/BUILD: clonati e integrati 3 toolkit ufficiali (`copy-workflow/`, `content-forge2.0/`, master-build-architecture su main confermata versione di riferimento); installati 3 wrapper in `.claude/skills/` (copy-workflow, content-forge, master-build-architecture).
+- BUILD: nuovo reparto `FORGE-AGENT-SKILL/` (4 agenti fas-*, WF-AGENT-NEW/WF-SKILL-NEW, rules R1-R4, memory/) per la creazione di nuovi agenti e skill — direttiva Max "impero con più workflow".
+- BUILD: `PIANO-MAESTRO/18-ARCHITETTURA-IMPERO-REVISIONE.md` (master-build-architecture applicata: 10 invarianti audit, 10 workflow mappa, 12 migliorie MIR) + ADR-009 + REGISTRO-IMPRESA + skills-map v1.2.
+- APPLY copy-workflow (MIR-2 P0): review APSOC kit YouTube → `Formazzione/Youtube/COPY-REVIEW-APSOC.md` (score 78-84→90-93; patch applicate: descrizione canale v2, hook V01 v2, varianti CTA).
+- → 4 pagine tool create (Copy_Workflow, Content_Forge_2, Master_Build_Architecture, Forge_Agent_Skill_Reparto). index.md aggiornato. CP-20260720-002.
+
 ## 2026-07-20 (YouTube Lead Machine — kit di lancio)
 - BUILD: kit eseguibile completo in `Formazzione/Youtube/`: CLIENTE-DORO.md (scheda ICP da `Materiale Agency`), SETUP-CANALE.md (copy pronta: nome/descrizione/banner/link/playlist), LEAD-MAGNET-01-analisi-gratuita.md (magnet "Analisi Gratuita 15 min" + gate qualifica + 5 messaggi automazione speed-to-lead pronti + metriche), batch-01/ (PIANO + 6 script completi hook verbatim/scaletta/CTA sui 4 pilastri: 2 ricerca TOFU, 1 educazione, 1 metodo 5 step, 1 audit dal vivo, 1 prova sociale) + 2 concept copertina AI in `batch-01/copertine/`. → pagina progetto [[Project_YouTube_Lead_Machine]] aggiornata. CP-20260720-001.
 

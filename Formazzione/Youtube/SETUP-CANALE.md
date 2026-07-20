@@ -13,25 +13,25 @@
 Primo piano del volto, leggibile in un cerchietto da 1 cm. Sfondo: colore del brand (arancio `#fb4604`
 o slate scuro). Niente loghi minuscoli.
 
-## 3. Descrizione canale (pronta da incollare)
+## 3. Descrizione canale (pronta da incollare) — v2 APSOC (copy review 2026-07-20, score 93)
 ```
-Trasformiamo il traffico che hai già in contatti e vendite — senza aumentare il budget pubblicitario.
+Non siamo l'ennesima agenzia che ti chiede l'abbonamento: ti mostriamo dove la tua pagina
+perde clienti, sistemiamo i 2-3 punti che contano, misuriamo il prima/dopo e ti lasciamo il metodo.
+Se non possiamo migliorare la tua situazione, non collaboriamo.
 
-Se paghi le ads ma le richieste non arrivano, il problema è quasi sempre in 2-3 punti
-della tua pagina. In questo canale ti mostro ESATTAMENTE quali sono e come sistemarli:
+Se paghi le ads ma le richieste non arrivano, il problema è quasi sempre in 2-3 punti della pagina.
+In questo canale ti mostro ESATTAMENTE quali sono e come sistemarli:
 
 ✅ Analisi dal vivo di siti e landing page (dove buttano via soldi)
 ✅ Il metodo in 3 interventi ad alto impatto che usiamo nei nostri progetti
 ✅ Prima/dopo misurato su casi veri: numeri, non opinioni
 
 🎯 Analisi GRATUITA di 15 minuti della tua pagina → [LINK CALENDLY]
-In call ti diciamo qual è il tuo problema e come risolverlo, che poi tu lavori con noi o da solo.
-
-Lavoriamo a progetto, senza abbonamenti: una parte del compenso è legata ai risultati che ottieni.
-E ti lasciamo un metodo semplice per continuare anche senza di noi.
+In call ti diciamo qual è il tuo problema e come risolverlo — che poi tu lavori con noi o da solo.
 
 Digital Empire — l'agenzia progettata per essere licenziata.
 ```
+*(v1 archiviata in COPY-REVIEW-APSOC.md)*
 
 ## 4. Link (max 2)
 - **Link 1 (principale, comparirà sul banner):** Calendly → "🎯 Analisi gratuita della tua pagina (15 min)"

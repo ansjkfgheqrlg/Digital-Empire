@@ -1,0 +1,25 @@
+{
+  "skill_name": "funnel-designer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Test funnel-designer case 1",
+      "expected_output": "..."
+    },
+    {
+      "id": 2,
+      "prompt": "Test funnel-designer case 2",
+      "expected_output": "..."
+    },
+    {
+      "id": 3,
+      "prompt": "Test funnel-designer case 3",
+      "expected_output": "..."
+    },
+    {
+      "id": 4,
+      "prompt": "Test funnel-designer case 4",
+      "expected_output": "..."
+    }
+  ]
+}

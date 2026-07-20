@@ -38,7 +38,10 @@
 |---|---|---|---|---|
 | **PreventivoForge** (+ fabbrica `/nuovo-concessionario`, kill-switch licenze) | 01-AGENCY / A4-Delivery (delivery cliente) + S1/S6 dossier 16 | Gate IMG/R + regole-check + A10 | build Max+Gael (CP-2026070x) | Art.2 (prezzo reale, no invenzioni) · ADR-003 |
 | **Outreach Runtime** (email/LinkedIn/IG, 300+/gg) | 01-AGENCY / A2-Acquisizione | **Gate Bibbia** (ag-a2-qa) + rate caps | pre-Impero, wrappato ADR-003 | Art.2 + PII Art.7.2 |
-| **Copy Workflow Orchestration Layer** | 04-MARKETING / L2-1 Copywriting | gate copy L2-1-qa | pre-Impero, wrappato | Art.2 |
+| **Copy Workflow Orchestration Layer** (`copy-workflow/`, motore APSOC 8 agenti + wrapper `.claude/skills/copy-workflow`) | 04-MARKETING / L2-1 Copywriting | gate copy L2-1-qa | pre-Impero, wrappato → **vendor ufficiale ADR-009 (2026-07-20)** | Art.2 |
+| **content-forge2.0** (`content-forge2.0/`, motore `/forge` + wrapper `.claude/skills/content-forge`) | FORGE-AGENT-SKILL (06b-FORGE) | fas-qa-gate | vendor ufficiale ADR-009 | Art.2 · ADR-003 (diff vendor=0) |
+| **master-build-architecture** (`master-build-architecture/`, metodo architetture + wrapper `.claude/skills/master-build-architecture`) | 06b-FORGE / L2.4 ECOSYSTEM-WORKS + L2.5 METHOD-GUARD | METHOD-GUARD | vendor (versione main, ADR-009) | Art.2 · ADR-003 |
+| **Reparto FORGE-AGENT-SKILL** (officina agenti & skill: 4 agenti fas-*, WF-AGENT/SKILL-NEW) | 06b-FORGE (L2.1/L2.2) | fas-qa-gate + METHOD-GUARD | ADR-009 (2026-07-20) | ADR-001/002/006/008 |
 | **carousel-factory** (brands: mentalita-brutale, …) | 03-CONTENT-FACTORY / CF-R5 | CF-R6 QA & Gate | pre-Impero, wrappato | Art.2 |
 | **Empire Studio** (ingestione video → knowledge) | 10-MEMORY (knowledge) + Reparto Competitor Research | WATCH-001 match check | suite dedicata | ADR-002 (integrale, mai riassunti) |
 | **Manuale Claude Code** (prodotto S2) | 02-INFO-BUSINESS / IB-L2-PROD → VEND | ib-prod-qa + B-003 (prezzo da team-prezzi) | pre-Impero | Art.2 · ADR-005 |

@@ -3,8 +3,8 @@
 # Regola (ADR-003): il codice/file RESTA dove si trova. Questo e' un registro, non uno spostamento.
 # Aggiorna questo file ogni volta che nasce una nuova skill o workflow.
 
-version: "1.1"
-updated: "2026-07-19"
+version: "1.2"
+updated: "2026-07-20"
 maintainer: "Chief-Forge (company/Board-CSuite/Chief-Forge.md)"
 # ADR-008: questa mappa + company/REGISTRO-IMPRESA.md = anagrafe unica.
 # Creare senza registrare = artefatto abusivo. Aggiornare = ultimo passo di ogni ciclo FORGE.
@@ -560,11 +560,49 @@ da_classificare:
 # STATISTICHE
 # ============================================================
 
+  # ── TOOLKIT ESTERNI UFFICIALI (ADR-009, 2026-07-20) ──────────
+
+  - id: copy-workflow-engine
+    nome: Copy Workflow Orchestration Layer (motore APSOC 8 agenti)
+    percorso: copy-workflow/
+    ecosistema: 04-MARKETING
+    reparto: L2-1 Copywriting
+    tipo: tool
+    stato: active
+    note: "Vendor ufficiale gh:ansjkfgheqrlg/copy-workflow. Wrapper: .claude/skills/copy-workflow. Entry: /copywriting. ADR-003: wrap, diff vendor=0 nei gate."
+
+  - id: content-forge-engine
+    nome: Content-Forge 2.0 (motore di forgia /forge)
+    percorso: content-forge2.0/
+    ecosistema: 06-CORE
+    reparto: FORGE-AGENT-SKILL
+    tipo: tool
+    stato: active
+    note: "Vendor ufficiale gh:ansjkfgheqrlg/content-forge2.0. Wrapper: .claude/skills/content-forge. MKD sempre; mai riassunti."
+
+  - id: master-build-architecture-skill
+    nome: Master Build Architecture (metodo architetture madre)
+    percorso: master-build-architecture/
+    ecosistema: 06-CORE
+    reparto: L2.4 ECOSYSTEM-WORKS / L2.5 METHOD-GUARD
+    tipo: skill
+    stato: active
+    note: "Versione di riferimento = quella su main (NON sovrascrivere col clone GitHub fresco, CP-20260720-002). Wrapper: .claude/skills/master-build-architecture. Regola: impero di workflow, mai workflow orfani."
+
+  - id: forge-agent-skill-reparto
+    nome: Reparto FORGE-AGENT-SKILL (officina agenti & skill — 4 agenti fas-*)
+    percorso: FORGE-AGENT-SKILL/
+    ecosistema: 06-CORE
+    reparto: L2.1 SKILL-WORKS / L2.2 AGENT-WORKS
+    tipo: workflow
+    stato: active
+    note: "ADR-009. WF-AGENT-NEW + WF-SKILL-NEW; gate bloccante fas-qa-gate; regole R1-R4."
+
 stats:
-  totale_mappati: 56
-  active: 32
+  totale_mappati: 60
+  active: 36
   experimental: 14
   legacy: 4
   knowledge: 6
   da_classificare: 3
-  aggiornamento: "2026-07-19 — +5 voci censimento ADR-008 (preventivoforge, empire-studio-suite, memory-empire, empire-desk, wf-yt-fliki)"
+  aggiornamento: "2026-07-20 — ADR-009: +4 voci toolkit esterni ufficiali (copy-workflow-engine, content-forge-engine, master-build-architecture-skill, forge-agent-skill-reparto)"

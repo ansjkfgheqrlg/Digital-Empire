@@ -14,9 +14,11 @@
 | 05 | AUDIT dal vivo | MOFU ⭐ | Ho analizzato una landing page che spende 2.000€/mese in ads: ecco dove li butta | Fiducia + skill dal vivo |
 | 06 | Prova sociale | BOFU | Da 0 a clienti: come funziona un progetto di ottimizzazione, prima → dopo | Avvicinare alla call |
 
-## CTA unificata (ogni video)
+## CTA unificata (ogni video) — v2 anti-banner-blindness (copy review 2026-07-20)
+<small>Attacco variato per video (vedi script); destinazione SEMPRE identica: link Calendly in descrizione.</small>
 - **Soft al ~30%:** "Se nel frattempo vuoi che guardi la TUA pagina: analisi gratuita di 15 minuti, link in descrizione — ti diciamo qual è il problema e come risolverlo, anche se poi fai da solo."
 - **Finale:** "Vuoi i numeri prima/dopo sulla tua pagina? Prenota l'analisi gratuita dal primo link in descrizione. O scrivici su WhatsApp. Lavoriamo a progetto, senza abbonamenti, e una parte la paghi solo se i risultati migliorano davvero."
+- **Varianti attacco finale per video:** V01 "…se vuoi i TUOI 3 punti scritti nero su bianco" · V03 "…se già sai che il tuo sito almeno uno di questi problemi ce l'ha" · V05 "…vuoi la tua pagina in un video come questo? Si candida dal link"
 
 ## Descrizione video (template, adattare per video)
 ```

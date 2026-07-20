@@ -1,0 +1,238 @@
+<!-- FORGE_SOURCE_BOUNDARY id="src-001" file="manuale-4-obiezioni.md" -->
+
+# Manuale 4 — Obiezioni (Strategia APSOC)
+
+## Introduzione
+
+La sezione obiezioni della strategia APSOC serve per gestire ed eliminare i dubbi che potrebbero fermare i lettori dall'acquistare. Questi dubbi sono compromettenti e, se non gestiti, rovinano anche i migliori copy.
+
+Le obiezioni vanno gestite in ordine di importanza: dalla più forte alla più debole. Le obiezioni più forti sono quelle che hanno più possibilità di impedire al cliente di acquistare.
+
+Esempio di cosa sono le obiezioni: facciamo che io e te stiamo parlando di un'opportunità di investimento. Io voglio convincerti ad investire nel mercato immobiliare attraverso i REIT. Comunque sia tu non vuoi investire con me, perché non mi conosci (quindi non ti fidi) e non pensi che i miei piani avranno un ritorno positivo sull'investimento.
+
+Le tue obiezioni, in questo caso, sono due:
+1. Non ti fidi di me
+2. Non pensi che ci sarà un ritorno positivo
+
+Per gestire queste due obiezioni io devo portare prove che mi rendano affidabile e prove che dimostrino il ritorno.
+
+Una volta gestite le tue obiezioni tu non hai più un buon motivo per non acquistare, quindi acquisti.
+
+## Categorie di obiezioni
+
+- Obiezione di tempo
+- Obiezione di tempo finta (cap)
+- Obiezione di prezzo
+- Obiezione di chiarezza del post-acquisto
+- Obiezione di appartenenza al target
+- Obiezione di insicurezza
+- Obiezione di bisogno
+- Obiezioni di urgenza
+- Obiezioni di fiducia nel brand
+- Obiezione di fiducia nel venditore
+- Obiezione di fiducia nel mondo
+
+## Da dove vengono le obiezioni?
+
+Le obiezioni non vengono dallo spazio, c'è sempre una fonte. Quando un'obiezione viene creata si dice che è stata "generata un'obiezione". Le obiezioni possono provenire da sistemi di credenze instaurati nella mente del lettore da molti anni, dubbi provenienti da esperienze negative passate con tuoi competitor, o tante altre cose.
+
+## Che tipi di obiezioni esistono?
+
+Ci sono obiezioni di tutti i tipi, che vengono categorizzate in base alla loro provenienza. Voglio mostrarti degli esempi di obiezioni comuni, che i prospect potrebbero percepire o pensare esplicitamente:
+
+**Tempo:**
+- "Non ho tempo per usare il tuo prodotto"
+- "Ci sto mettendo troppo ad acquistare"
+- "Non ho tempo per considerare il tuo prodotto"
+
+**Prezzo:**
+- "Il tuo prezzo è troppo alto, non me lo permetto"
+- "Il tuo prezzo è troppo basso quindi non è un prodotto di qualità"
+- "Il tuo prodotto non ne vale il prezzo"
+
+**Chiarezza:**
+- "Non ho capito come si usa il prodotto"
+- "Ho dubbi su cosa succede una volta acquistato"
+
+**Appartenenza al target / insicurezza:**
+- "Questo prodotto non è per me"
+- "Non penso che funzionerà per me perché non sono costante e disciplinato"
+
+**Bisogno:**
+- "Non mi serve quello che vendi"
+
+**Urgenza:**
+- "Lo compro tra un po'"
+- "Adesso non mi serve, forse tra un mese"
+- "Torno a leggere il resto più tardi" (spoiler: non torneranno)
+
+**Fiducia:**
+- "Non mi fido di questa azienda"
+- "Non mi fido di chi ha scritto questo"
+- "Non mi fido delle aziende, stai cercando di truffarmi"
+
+## Finte obiezioni (cap)
+
+Le finte obiezioni (quelle che sono cap) sono bugie che il lettore pensa per giustificare a se stesso il motivo per cui non sta risolvendo un suo problema. Alcune persone, ad esempio, sono talmente incastrate nella comfort zone che preferiscono continuare ad avere problemi che risolverli.
+
+## Cosa significa "gestire le obiezioni"?
+
+Gestire le obiezioni significa risolvere i dubbi del lettore. In altre parole rispondi alle sue domande mostrandogli una o più prove (reali o finte) che dimostrano che il suo dubbio non dovrebbe esistere.
+
+La quantità di prove offerte cambia in base a quanto le obiezioni sono importanti. Più sei difficile da convincere, più prove porterò per gestire la tua obiezione.
+
+## Come gestire le obiezioni
+
+Per gestire le obiezioni devi portare delle prove. Più avanti troverai una lista di prove che puoi utilizzare con esempi.
+
+Per gestire le obiezioni, soprattutto nelle sales page, si utilizza una strategia di copyboarding chiamata CPB. Il copyboarding è una specializzazione nel copywriting che si occupa esclusivamente di gestione delle obiezioni. Il termine "copyboarding" non è comunemente utilizzato.
+
+## CPB per gestire obiezioni
+
+CPB sta per Claim, Proof e Benefit: affermazione, prova e vantaggio. Questa strategia viene usata principalmente nelle sales page o nei VSL, dove c'è spazio per usarla.
+
+CPB si struttura nella seguente maniera all'interno del copy:
+
+1. **Claim:** viene confermata l'obiezione e permette al lettore di capire che si sta per parlare proprio del suo dubbio. Spesso si presenta come domanda, ad esempio nel caso di un'obiezione di prezzo potrebbe essere "Perché il prezzo è così alto?" oppure, senza domanda, "Ecco perché non facciamo sconti"
+2. **Proof:** vengono fornite 3 prove (idealmente di categorie diverse) per gestire l'obiezione e mostrare al lettore che deve fidarsi
+3. **Benefit:** il vantaggio soggettivo che il lettore ottiene dall'eliminazione dell'obiezione.
+
+In un singolo copy possono esserci più CPB, anche uno per ogni obiezione. Adesso che conosci questa strategia farai fatica a non notarla all'interno delle sales page che visiterai.
+
+Gli step per gestire le obiezioni attraverso CPB sono i seguenti:
+1. Raccolta delle obiezioni
+2. Organizzazione delle obiezioni per categoria
+3. Decidi quale categoria di obiezioni è più importante
+4. Inizia ad usare CPB, mettendo in alto le categorie di obiezioni più importanti
+
+### Esempio CPB per un'agenzia di assicurazioni personali
+
+**Obiezione:** "Non mi fido del vostro brand"
+**Claim:** "Chi siamo noi per prometterti tutto ciò?"
+**Prova 1:** Mostrare al cliente 2 testimonianze di clienti reali credibili
+**Prova 2:** Mostrare al cliente la storia dell'azienda
+**Prova 3:** Mostrare al cliente statistiche che provano che la strategia funziona ad oggi
+**Vantaggio:** "Adesso che sai che tipo di azienda siamo, cosa esattamente ti ferma dall'agire oggi? Perché una cosa è sicura, e lo hai sentito pure dai nostri clienti: siamo il tipo di azienda di cui ti puoi fidare e che puoi dire di avere al tuo fianco indipendentemente da cosa la vita ti butta contro"
+
+La strategia CPB, generalmente, comprende anche una vicina collaborazione con il designer della sales page, dato che queste informazioni sono numerose e vanno organizzate correttamente. Questo è un compito del designer, non del copywriter, ma penso sia importante sapere che alcune cose richiedono chiarezza con il designer.
+
+## Non generare e gestire obiezioni che non ne valgono la candela
+
+Alcune obiezioni vengono generate da te. Un copywriter non cauto che non ha la minima idea di cosa stia facendo genera obiezioni per sbaglio e si dimentica di gestirle.
+
+Generare obiezioni non è necessariamente una cosa da evitare, ma non gestirle è un grande errore. Sei tu che a volte generi obiezioni perché alcune cose che dici potrebbero generare dubbi in maniera del tutto automatica.
+
+### Esempio: azienda nuova di computer
+
+Facciamo che sei un copywriter principiante e stai aiutando un'azienda che vende computer ad approcciarsi al mercato. Questa azienda è nuova, e tu pensi sia un vantaggio. Vuoi usare l'effetto innovazione a tuo vantaggio: l'azienda è giovane, affidabile, dinamica.
+
+Quindi nel tuo copy scrivi "Siamo un'azienda fresca sul mercato, con nuovi progetti e prodotti".
+
+L'obiezione generata da questa frase è un'obiezione di fiducia, nello specifico riguardo la capacità dell'azienda di creare un prodotto affidabile. Le cose nuove sono belle, ma la maggior parte delle persone le collegano automaticamente a qualcosa di inaffidabile data la mancanza di esperienza.
+
+Quindi, con quella frase, tu farai pensare al lettore "ah, è roba nuova? Allora come faccio a sapere che funziona?".
+
+Questa obiezione va gestita, e basterebbe anche una frase come "E nonostante ciò i nostri prodotti hanno superato numerosi test di durabilità e affidabilità", con magari un pulsante o un link dove vedere di che test si tratta, sempre se questi test esistono per davvero.
+
+## Quali prove esistono?
+
+Le prove servono per gestire le obiezioni. Sono presenti sia nella strategia CPB che nella gestione classica delle obiezioni. Ce ne sono vari tipi.
+
+### Prima & dopo
+
+Spesso questa prova si presenta sotto forma di una foto. È molto utilizzata per prodotti di fitness (prima e dopo di aver fatto palestra, ad esempio), prodotti di pulizia in casa e prodotti di cura della persona.
+
+Se non si presenta sotto forma di foto, che sono sicuro che avrai visto da qualche parte, si presenta sotto forma di storytelling.
+
+**Esempio**: gestione dell'obiezione usando prima & dopo con storytelling per un servizio di consulenza sulla gestione del proprio tempo. L'obiezione in questione è "ma funzionerà per davvero?".
+
+> "Molto probabilmente ti stai chiedendo se le nostre consulenze funzionano per davvero. Sarò onesto con te: non posso garantirti che funzionano sempre, ma funzionano 40% di più rispetto a template di produttività. Quello che invece posso garantirti è che ogni persona è diversa. Aspettarsi di cambiare la vita di tutti quanti attraverso un template copia-incolla non funzionerà mai, ed è quello che ho provato a Gary, un mio ultimo cliente recente. Questo ragazzo era pieno di cose da fare, era il capo di se stesso e amava il suo lavoro, ma si trovava sempre con la testa piena di cose da fare. Mi ha detto che a volte non riesce a dormire la notte perché già sta pensando all'infinità di lavoro da svolgere il giorno dopo. Ma io sapevo che non era colpa del lavoro: era la responsabilità di Gary saper gestire il proprio tempo. Abbiamo fatto un percorso di sole 6 ore, e adesso sono passate 2 settimane dall'ultima volta che l'ho sentito. Mi ha raccontato di come, quasi sorprendentemente, le sue giornate erano finalmente complete. Arriva a casa che prova un senso di soddisfazione e realizzazione, sente finalmente che sta sfruttando il suo tempo su questo pianeta in maniera produttiva[...]"
+
+### Branco di pecore (bandwagon)
+
+La strategia detta anche "bandwagon" oppure, come la chiamo io, branco di pecore. Le persone sono portate a seguire i comportamenti socialmente accettabili, e quando siamo confusi sul da farsi iniziamo a guardarci intorno per vedere cosa fanno gli altri.
+
+La maggior parte delle volte questo comportamento aiuta a risolvere piccoli problemi, ad esempio quando non sai dove metterti in fila per un museo e ti metti in fila dove sono tutti quanti. Un altro esempio è quando sei in un ristorante di lusso per la prima volta e ti guardi intorno per capire come comportarti, quali posate usare per che cosa e se devi toglierti la giacca oppure no.
+
+Si può sfruttare questo effetto per uno dei seguenti obiettivi:
+1. Convincere il lettore che il comportamento che tu desideri è corretto e fare il contrario è socialmente sbagliato
+2. Convincere il lettore che ciò che proponi funziona, dato che lo usano tutti
+
+Molto probabilmente, nel contesto della gestione delle obiezioni, rincorrerai il secondo obiettivo. Per fare l'effetto branco di pecore si possono usare dati, recensioni oppure semplici espressioni. Le semplici espressioni funzionano particolarmente bene quando il brand ha una grande autorità nei confronti del lettore e il lettore non conosce molto bene l'ambiente.
+
+**Esempi:**
+- Con un dato: "58% degli uomini di successo fanno questo"
+- Con recensione: "Non sapevo che si faceva in questo modo fino a quando ho scoperto questa azienda"
+- Con semplice espressione: "Anche se per molti principianti sembra assurdo, si fa così nel mondo professionale"
+
+### Processi logici
+
+I processi logici sono la salsa segreta del direct response (vedere manuale 8). Si tratta di spiegazioni logiche, in cui tu porti per mano il lettore nel viaggio della gestione dell'obiezione. Questi processi logici, nonostante il nome, contengono un linguaggio emotivo.
+
+**Esempio** per un'azienda che offre opportunità d'investimento nel mercato azionario, gestendo l'obiezione "secondo me è una truffa":
+
+> "Se pensi che questa sia una truffa, tra poche righe puoi trovare i numeri di telefono dei nostri top 10 collaboratori, che ti metteranno in contatto con dei nostri clienti casuali che potranno raccontarti direttamente che tipo di azienda siamo. Puoi farlo, oppure puoi seguire quello che ti abbiamo detto in questa pagina. Voglio che tu ci pensi un attimo: sapevi che l'80% dei milionari sono self-made? Significa che non hanno ereditato le proprie ricchezze, ma che le hanno create da zero. Come pensi che queste persone riescano a creare milioni di euro partendo da nulla? Ci sono molti valori comuni: lavoro duro, fiducia nel percorso, dedizione… Ma soprattutto una strategia comune: l'investimento. Non si tratta necessariamente di un investimento nel mercato azionario, ma per fare soldi bisogna investire soldi. Al posto di lavorare per i soldi devi far sì che i soldi inizino a lavorare per te. Ed è quello che io ti sto offrendo adesso: trasforma i soldi nei tuoi schiavi personali, moltiplicali, e poi ripeti l'operazione fino a quando l'unica preoccupazione sarà quale macchina comprare, non quale supermercato costa meno. Noi ti aiuteremo a farlo."
+
+Logica passo-passo del processo:
+- 80% dei milionari sono self-made
+- Se sono self-made vuol dire che sono partiti dal nulla
+- Se sono partiti dal nulla devono sapere qualcosa che tu non sai
+- La caratteristica comune dei milionari self-made è la propensione ad investire
+- Investire è ciò che accomuna i ricchi
+- Per fare soldi devi investire
+- Noi ti aiutiamo ad investire
+- Investire potrebbe cambiare la tua vita
+
+### Showoff
+
+Lo "showoff" è un'esibizione, chiaramente esagerata, che aiuta a passare una certa "arroganza rispettabile". È una specie di autocelebrazione, quasi come i pezzi di Capo Plaza. È difficile da spiegare, pertanto inizio con un semplice esempio, tratto dal copy che puoi leggere nella prova precedente:
+
+> "[...] trasforma i soldi nei tuoi schiavi personali, moltiplicali, e poi ripeti l'operazione fino a quando l'unica preoccupazione sarà quale macchina comprare, non quale supermercato costa meno. Noi ti aiuteremo a farlo."
+
+Questa esagerazione, simpatica e arrogante ma anche rispettabile, fa un effetto molto particolare che funziona molto bene con il target giusto. È un "modo figo per dire qualcosa" che generalmente viene accompagnato da qualche analogia assurda.
+
+È importante ricordare che usare questa strategia porta il rischio di risultare arroganti o antipatici nel proprio copy, e ciò significherebbe infrangere una delle regole basilari nel copy. È per quello che lo showoff va usato solo con certi target. Altre volte, invece, lo showoff viene percepito semplicemente come comico, pertanto non porta svantaggi.
+
+Lo showoff è una finta prova, dato che di fatto non dice nulla di oggettivo generalmente. Alcune persone semplicemente parlano in quel modo, e trasmette un'aria di sicurezza estremamente persuasiva. I miei video spesso contengono accenni di showoff, perché fa parte della mia personalità.
+
+Puoi trovare esagerazioni di questa strategia in film come *The Wolf of Wall Street* e in serie come *Suits* (soprattutto Harvey Specter).
+
+Queste strategie spesso vengono considerate non etiche, in quanto tendono a mettere vergogna sul lettore se decide di non acquistare. Ma non sono qui per raccontarti le morali, sono qui per dirti cosa funziona.
+
+**Template di showoff (esempi):**
+- "Dopo [utilizzo prodotto] l'unica cosa a cui dovrai pensare sarà [risultato esagerato]"
+- "Parla con qualsiasi mio collaboratore, ti spiegherà lui stesso come [esagerazione dei propri risultati]"
+- "[nome prodotto] funziona talmente bene che non riuscirai a [esagerazione problema eliminato]"
+- "Ora, [nome prodotto] non è per tutti: alcuni semplicemente non vogliono [risultato], ma so che non sei tra quelli."
+- "Hai mai visto [idolo del target] + [luogo] + [azione vergognosa]? Già."
+- "Sono [prezzo] per [prodotto]. Questa non è una spesa, è un investimento in [argomento]"
+- "Aspetta… Forse non ho capito bene. Mi stai dicendo che preferisci [problema]?"
+
+**Esempi concreti:**
+- "Dopo aver fatto il nostro percorso di personal training l'unico cardio che dovrai fare sarà con la tipa figa che hai adocchiato in palestra l'altro giorno"
+- "Parla con qualsiasi mio collaboratore, ti spiegherà lui stesso come i miei clienti, una volta usato il mio servizio, tornano ogni settimana per moltiplicare i risultati"
+- "Lo spruzzino XXXSpray funziona talmente bene che non riuscirai a capire se la tua finestra è chiusa o aperta a prima vista."
+- "Ora, Disneyland non è per tutti: alcuni semplicemente non vogliono divertirsi al prezzo di un paio di pizze, ma so che non sei tra quelli"
+- "Hai mai visto Elon Musk nel suo ufficio che si stressa perché deve fare un paio di fatture? Già."
+- "Sono 4500 euro per la formazione di tuo figlio. Questa non è una spesa, è un investimento nel suo futuro."
+- "Aspetta… Forse non ho capito bene. Mi stai dicendo che preferisci uscire di casa pieno di brufoli al posto di usare una cremina per 5 minuti 2 volte al giorno?"
+
+### Garanzie (reali o finte)
+
+Le garanzie reali sono garanzie che proteggono il cliente nel caso in cui il prodotto non mantenesse la promessa. La garanzia più comune è il rimborso gratuito: se al cliente non piace il prodotto oppure non gli va bene per qualche motivo, può ottenere un rimborso.
+
+Le garanzie finte, invece, danno l'idea di essere protetti ma a dire il vero non sono reali. Un esempio di garanzia finta potrebbe essere usare parole che alludono ad una garanzia ma che a dire il vero non promettono più di tanto, mettere la colpa sul cliente in caso di fallimento del prodotto e simili. Queste strategie sono al limite tra il bene e il male, sei tu a decidere se vuoi essere etico oppure no.
+
+### Menzioni media / influencer
+
+Se il prodotto è stato visto, usato o menzionato sui media o da influencer usalo a tuo vantaggio. Questo è molto comune nei website copy, come nelle homepage ci sono loghi di aziende con cui il cliente ha collaborato. Questa specie di name dropping funziona sempre e aiuta a generare credibilità.
+
+Ho visto recentemente una strategia di marketing basata principalmente su questo. Si tratta di un brand di abbigliamento che parla costantemente di quanto i loro prodotti vengono usati dal rapper Rondodasosa. Le loro ads su TikTok letteralmente contengono un po' di foto con la scritta "da dove compra il suo drip Rondo?".
+
+### Recensioni
+
+Usa le parole dei tuoi clienti per gestire obiezioni. Le recensioni possono essere scritte o video (più credibili). Possono essere reali o finte, anche se quelle reali hanno un'efficacia notevolmente più grande.
+
+### Studi e ricerche
+
+Usa dati statistici o ricerche per provare che ciò che dici è vero. Usa anche la fonte, non semplicemente il dato. Ad esempio: "Uno studio della Oxford del 2019 ha stabilito che…"

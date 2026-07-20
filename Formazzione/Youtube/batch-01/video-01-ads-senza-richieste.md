@@ -8,16 +8,18 @@
 
 ---
 
-## HOOK (leggi parola per parola)
+## HOOK (leggi parola per parola) — v2 APSOC (copy review 2026-07-20, score 92)
 
-**(0-3 sec, conferma promessa titolo)**
-"Se stai pagando la pubblicità e di richieste ne arrivano poche o nessuna, il problema quasi mai è la campagna. È la pagina dove atterrano i click."
+**(0-15 sec, P completa: dolore + ricorrenza prima della causa)**
+"Ogni mese spendi mille, duemila, cinquemila euro in pubblicità. Arrivano i click… e poi? Richieste: quasi zero. E ogni mese riparti da capo, con lo stesso buco."
 
-**(3-10 sec, perché restare)**
-"In questo video ti mostro i 3 punti esatti dove quasi tutti i siti perdono clienti — gli stessi 3 punti che controlliamo per primi in ogni progetto."
+**(15-25 sec, causa + promessa)**
+"Ecco: non è sfortuna e non è nemmeno la campagna. Ci sono 3 punti precisi dove quei soldi si fermano — e oggi li vediamo uno per uno, gli stessi che controlliamo per primi in ogni progetto."
 
-**(10-30 sec, completa)**
+**(25-35 sec, payoff)**
 "Alla fine saprai controllarti il sito da solo in un quarto d'ora. E se vorrai, ti dico anche come farcelo controllare gratis da noi. Partiamo."
+
+*(v1 archiviata in ../COPY-REVIEW-APSOC.md — regola: P completa prima di S)*
 
 ---
 

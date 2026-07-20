@@ -1,4 +1,20 @@
-# STATO EMPIRE -- aggiornato 2026-07-19 15:25 (ordine Max: FOCUS TOTALE EMPIRE DESK, lavoro diviso metà/metà)
+# STATO EMPIRE -- aggiornato 2026-07-20 (ADR-009 toolkit ufficiali + reparto FORGE-AGENT-SKILL; ordine Max EMPIRE DESK metà/metà resta attivo sotto)
+
+## 🏭 ADR-009 (2026-07-20, CP-20260720-002) — TOOLKIT UFFICIALI + REPARTO FORGE-AGENT-SKILL
+Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow, mai workflow orfani»:
+1. **`copy-workflow/`** vendored = motore copy ufficiale (`/copywriting`, wrapper in `.claude/skills/`).
+   Da oggi OGNI copy dell'impero passa di qui. Prima review fatta: kit YouTube (score 78-84 → 90-93,
+   patch applicate in `Formazzione/Youtube/COPY-REVIEW-APSOC.md`).
+2. **`master-build-architecture/`** (versione main confermata, NON sovrascrivere col clone GitHub) =
+   metodo architetture. Applicato → **`PIANO-MAESTRO/18-ARCHITETTURA-IMPERO-REVISIONE.md`** (audit 10
+   invarianti, mappa 10 workflow vivi W1-W10, 12 migliorie MIR con owner/gate/priorità).
+3. **`content-forge2.0/`** vendored = motore di forgia (`/forge`) del NUOVO reparto
+   **`FORGE-AGENT-SKILL/`** — officina permanente per creare NUOVI AGENTI e NUOVE SKILL (4 agenti fas-*,
+   WF-AGENT-NEW/WF-SKILL-NEW, gate bloccante fas-qa-gate, regole R1-R4). Intestazione ADR-008 completata:
+   ADR-009 scritto, REGISTRO-IMPRESA §3, skills-map v1.2 (60 mappati), 4 pagine wiki tool.
+**RIPRESA DA (salvo diverso ordine):** WF-SKILL-NEW per skill `/youtube-lead-machine` (MIR-11, backlog reparto).
+NOTA BENE per Gael/altre sessioni: non sovrascrivere `master-build-architecture/` col clone GitHub fresco
+(la copia main è più completa — decisione in ADR-009 punto 3).
 
 ## 🚨🚨 ORDINE MAX 2026-07-19 POMERIGGIO — EMPIRE DESK = LAVORO PIÙ IMPORTANTE, DIVISIONE METÀ/METÀ MAX↔GAEL
 **Piano vincolante e completo: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` §5 (appena scritto, leggerlo TUTTO).**

@@ -1,0 +1,62 @@
+{
+  "skill_name": "copy-workflow",
+  "version": "1.0",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Devo scrivere un'ad Facebook per il mio corso di copywriting da 297€. Target: freelance e aspiranti copywriter italiani 22-35 anni. Non so da dove partire.",
+      "expected_output": "Il sistema deve: (1) Identificare la modalità come 'quick-ad' o 'full' in base alla complessità; (2) Richiedere i dati minimi mancanti in UNA sola domanda: pain point principale del target; (3) Una volta ottenuti, proporre struttura APSOC per l'ad con 3 varianti (Pain Point Diretto / Curiosità / USP); (4) La variante A deve avere headline che usa il linguaggio del freelance (es. 'Ancora a scrivere post che non convertono?') non linguaggio da marketer; (5) CTA profondo connesso al pain point, non 'Clicca qui'.",
+      "anti_patterns": ["AP-01: iniziare dalla soluzione ('Il mio corso ti insegna...')", "AP-03: CTA superficiale ('Acquista ora')", "AP-05: Headline generica ('Impara il copywriting')", "AP-07: Non chiedere il pain point e inventarlo"],
+      "files": ["agents/apsoc/attention-writer.md", "workflows/quick-ad-workflow.md", "references/conventions/anti-patterns.md"]
+    },
+    {
+      "id": 2,
+      "prompt": "Ho una sales page per un software di gestione ristoranti (149€/mese). Il cliente mi dice che 'il copy non converte'. Ho il testo qui: [INSERISCI COPY]. Come lo miglioro?",
+      "expected_output": "Il sistema deve: (1) Identificare come modalità '/copywriting review'; (2) Applicare la checklist APSOC a 100 punti; (3) Identificare se la soluzione compare prima del problema (errore più comune); (4) Dare uno score preciso per sezione A/P/S/O/C; (5) Per ogni problema trovato, fornire il testo incriminato + la correzione specifica (non 'migliora X' ma 'sostituisci X con Y'); (6) Produrre una riscrittura della sezione con score peggiore.",
+      "anti_patterns": ["AP-review-01: score vago ('abbastanza buono')", "AP-review-02: solo critiche senza riscrittura", "AP-review-03: non identificare l'errore specifico della sezione P"],
+      "files": ["agents/qa/copy-reviewer.md", "skills/copy-review/SKILL.md", "templates/copy-checklist.md"]
+    },
+    {
+      "id": 3,
+      "prompt": "Voglio scrivere una sales page per il mio programma di coaching per imprenditori che vogliono fare €10K/mese. Il prezzo è 3.500€. Ho già fatto la discovery con il cliente e so che il suo avatar è Mario, 38 anni, titolare di una gelateria a Milano, fattura 180K ma lavora 70 ore a settimana e non si paga lo stipendio.",
+      "expected_output": "Il sistema deve: (1) Riconoscere che l'avatar è fornito e saltare A2 completo; (2) Chiedere solo i gap mancanti: USP, testimonianze disponibili, obiezioni note; (3) Proporre una struttura sales page con le sezioni specifiche per high-ticket (score target ≥85); (4) La sezione problema DEVE usare le parole di Mario ('lavoro 70 ore a settimana', 'non mi pago lo stipendio') non linguaggio da marketer; (5) Identificare almeno 5 obiezioni previste per prodotto da 3.500€.",
+      "anti_patterns": ["AP-sp-01: rifare A2 da zero invece di usare il profilo fornito", "AP-sp-02: problema generico 'hai difficoltà con il business' invece di specifico di Mario", "AP-sp-03: meno di 5 obiezioni per ticket così alto"],
+      "files": ["workflows/sales-page-workflow.md", "agents/research/target-analyst.md", "agents/apsoc/problem-writer.md"]
+    },
+    {
+      "id": 4,
+      "prompt": "Il cliente mi dice: 'il mio prodotto non ha un USP reale, siamo uguali ai competitor'. Come gestisco questa situazione nel copy?",
+      "expected_output": "Il sistema deve: (1) Spiegare il concetto di 'finto USP' (combinazione di 2-3 selling point normali che insieme creano differenziazione); (2) Guidare con domande specifiche per identificare selling points: processo diverso? Target più specifico? Garanzia? Velocità? Supporto? (3) Fornire almeno 3 tipi di USP finto applicabili (Funzionale / Target / Processo / Garanzia / Valore); (4) Esempio concreto di costruzione USP finto partendo da selling points comuni; (5) Warning: un USP finto richiede più prove nella sezione O.",
+      "anti_patterns": ["AP-usp-01: dire 'purtroppo non puoi fare copy efficace senza USP'", "AP-usp-02: inventare un USP senza processo trasparente", "AP-usp-03: non linkare al protocollo in A5"],
+      "files": ["agents/apsoc/solution-writer.md", "references/concepts/apsoc-advanced.md"]
+    },
+    {
+      "id": 5,
+      "prompt": "Scrivimi una sequenza di 5 email per il lancio del mio prodotto digitale (ebook da 47€, target: mamme che vogliono guadagnare online da casa). Il lancio apre tra 2 settimane e dura 5 giorni.",
+      "expected_output": "Il sistema deve: (1) Identificare il tipo di sequenza come 'launch sequence'; (2) Costruire la mappa temporale: 2 pre-lancio + 3 lancio + 1 chiusura; (3) Ogni email deve avere: oggetto + 2 alternative + preview text + corpo + CTA + PS; (4) Il problema nelle email di pre-lancio NON deve menzionare il prodotto; (5) L'urgenza deve escalare in modo credibile verso la chiusura; (6) Gli oggetti devono essere diversi per strategia (almeno 2 strategie diverse tra curiosità/benefit/urgenza/domanda); (7) Setup tecnico con trigger consigliati.",
+      "anti_patterns": ["AP-email-01: prodotto menzionato nella email 1 di pre-lancio", "AP-email-02: stesso oggetto-schema in tutte le email", "AP-email-03: urgenza piatta (uguale in email 1 e email 7)", "AP-email-04: mancanza del PS nelle email di vendita"],
+      "files": ["workflows/email-sequence-workflow.md", "agents/apsoc/attention-writer.md", "agents/apsoc/cta-writer.md"]
+    },
+    {
+      "id": 6,
+      "prompt": "Come gestisco l'obiezione 'ho già provato cose simili e non ha funzionato' per un corso di dimagrimento da 197€?",
+      "expected_output": "Il sistema deve: (1) Identificare il tipo di obiezione ('esperienze negative precedenti'); (2) Costruire il blocco CPB completo: CLAIM che riconosce l'obiezione senza minimizzarla, 3 PROOF di categorie diverse (consigliato: differenziatore specifico + caso studio prima/dopo + garanzia), BENEFIT che connette al risultato desiderato; (3) Warning: questa obiezione richiede di riconoscere esplicitamente i problemi del settore per essere credibile; (4) Versione assemblata pronta da inserire nel copy; (5) Posizionamento suggerito nella sales page.",
+      "anti_patterns": ["AP-obj-01: una sola prova invece di 3", "AP-obj-02: non riconoscere che 'molti programmi fanno schifo' (perdita credibilità)", "AP-obj-03: benefit generico 'vedrai risultati' invece di specifico"],
+      "files": ["agents/apsoc/objections-handler.md", "skills/objections-forge/SKILL.md", "templates/cpb-template.md"]
+    },
+    {
+      "id": 7,
+      "prompt": "Devo scrivere il copy per un'app B2B (software gestione cantieri, 120€/mese per utente). Target: geometri e impresari edili 40-60 anni, non molto tech. Come adatto il linguaggio?",
+      "expected_output": "Il sistema deve: (1) Riconoscere il contesto B2B e attivare le adattamenti industry-specific; (2) Identificare le caratteristiche del target: non tech, età matura, linguaggio pratico-concreto; (3) Adattare A2 (Target Analyst) con focus su: problemi operativi concreti, non aspirazionali; ROI misurabile (non 'crescita'); obiezioni B2B tipiche (adozione tecnologia, costo cambio, privacy dati); (4) Language map che evita: startup jargon, termini tech, promesse ambiziose; usa: 'vi risparmia X ore', 'niente più carta', 'lo usano anche i colleghi di X'; (5) Struttura copy raccomandata per B2B.",
+      "anti_patterns": ["AP-b2b-01: copy aspirazionale ('trasforma il tuo business') per target pratico-operativo", "AP-b2b-02: non adattare obiezioni per B2B (cambio abitudini, adozione tech)", "AP-b2b-03: CTA 'inizia ora' senza prova gratuita o demo"],
+      "files": ["agents/research/target-analyst.md", "references/patterns/industry-specific.md", "agents/apsoc/solution-writer.md"]
+    },
+    {
+      "id": 8,
+      "prompt": "Ho scritto questo CTA: 'Acquista ora il corso e inizia il tuo percorso verso il successo'. Come lo miglioreresti?",
+      "expected_output": "Il sistema deve: (1) Identificare gli errori: CTA superficiale ('acquista ora'), benefit generico ('successo'), mancanza micro-copy, nessuna urgenza; (2) Richiede contesto: qual è il pain point principale del target? Per rispondere bene deve conoscerlo; (3) Se fornito il pain point, producere 3 versioni di CTA profondo con strategie diverse: una basata su fuga dal dolore, una basata su rincorsa del piacere, una con urgenza (CNA o temporale); (4) Per ogni versione: testo CTA + micro-copy sotto + spiegazione strategica; (5) Score del CTA originale vs versione migliorata.",
+      "anti_patterns": ["AP-cta-01: dare solo 1 versione alternativa", "AP-cta-02: non chiedere il pain point e scrivere CTA ancora generici", "AP-cta-03: CTA migliorati ma senza micro-copy"],
+      "files": ["agents/apsoc/cta-writer.md", "skills/apsoc-builder/SKILL.md", "references/conventions/anti-patterns.md"]
+    }
+  ]
+}

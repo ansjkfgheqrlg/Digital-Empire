@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://content-forge/schemas/wiki-note.schema.json",
+  "title": "Single Obsidian note structure",
+  "type": "object",
+  "schema_version": "0.2.0-draft",
+  "description": "Frontmatter + invariant per ogni nota atomica prodotta da B7",
+  "properties": {
+    "frontmatter_required_keys": {
+      "type": "array",
+      "const": [
+        "title",
+        "tags",
+        "created",
+        "source",
+        "forge_atom_id"
+      ]
+    },
+    "frontmatter_optional_keys": {
+      "type": "array",
+      "const": [
+        "aliases",
+        "status"
+      ]
+    },
+    "body_required_sections": {
+      "type": "array",
+      "const": [
+        "Definizione canonica",
+        "Connessioni"
+      ]
+    },
+    "min_outlinks": {
+      "type": "integer",
+      "const": 1,
+      "description": "almeno 1 outlink (eccetto glossary terminali)"
+    },
+    "max_words": {
+      "type": "integer",
+      "const": 1000
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "skill_name": "copy-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Test copy-review case 1",
+      "expected_output": "..."
+    },
+    {
+      "id": 2,
+      "prompt": "Test copy-review case 2",
+      "expected_output": "..."
+    },
+    {
+      "id": 3,
+      "prompt": "Test copy-review case 3",
+      "expected_output": "..."
+    },
+    {
+      "id": 4,
+      "prompt": "Test copy-review case 4",
+      "expected_output": "..."
+    }
+  ]
+}

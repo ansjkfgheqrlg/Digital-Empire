@@ -54,7 +54,10 @@ Benvenuto nella tua Knowledge Base iper-organizzata. Tutto il materiale di Digit
 - [[synthesis/ClaudeFlow_Exponium_Applications|Claude-Flow → Exponium: Mapping Completo]] — Come ogni pattern claude-flow si applica ai 3 prodotti Exponium.
 
 ### Copywriting
-- [[tools/Tool_Copy_Workflow_Orchestration|Copy Workflow Orchestration Layer]] — Sistema completo APSOC: 8 agenti, 6 skill, 4 workflow, 4 template. Entry point: `/copywriting`
+- [[tools/Tool_Copy_Workflow_Orchestration|Copy Workflow Orchestration Layer]] — Sistema completo APSOC: 8 agenti, 6 skill, 4 workflow, 4 template. **Vendor ufficiale `copy-workflow/` (ADR-009, 2026-07-20) + wrapper `.claude/skills/copy-workflow`. Entry point: `/copywriting`**
+- [[tools/Tool_Content_Forge_2|Content-Forge 2.0]] — Motore di forgia `/forge`: contenuto grezzo → documento/agente/team/skill/workflow. Mai riassunti, MKD sempre. Vendor `content-forge2.0/` (ADR-009, 2026-07-20) + wrapper installato.
+- [[tools/Tool_Master_Build_Architecture|Master Build Architecture]] — Skill architettura madre (10 invarianti, 10 fasi, swarm, memory-first, 7 file canonici). Regola DE: impero di workflow, mai workflow orfani. Applicata → dossier 18 revisione impero.
+- [[tools/Tool_Forge_Agent_Skill_Reparto|Reparto FORGE-AGENT-SKILL]] — Nuovo reparto officina agenti & skill (ADR-009): 4 agenti fas-*, WF-AGENT/SKILL-NEW, gate bloccante, intestazione ADR-008. Sotto 06b-FORGE.
 - [[sources/Source_Andrei_Pascu_FB_Ads_Copywriting|Andrei Pascu — Copy Facebook Ad (pannelli fonoassorbenti)]] — Video 9CuQI0Cr4Pg ingerito 2026-06-30. 545 frame analizzati. 20 KA estratti. Workflow completo: ricerca → ChatGPT fact-check → Amazon/YouTube VoC → image copy + social proof hook.
 - [[sources/Source_Andrei_Pascu_Copywriting_Intro|Andrei Pascu — Copywriting: cos'è, come funziona, come iniziare]] — Video qOK4WP82Bvo ingerito 2026-07-05. Definizione, storia (John Emory Powers), mercato $25B→$42B, dipendente vs freelance, 4 metodi pagamento, value gap visualizzato. 22 KA estratti.
 - [[concepts/Concept_Value_Gap_Copywriter|Concept: Value Gap del Copywriter]] — Divario tra valore generato (€50k) e compenso ricevuto (€1.2k) per copywriter dipendente. 4 metodi di pricing confrontati. Root cause: prezzare input (tempo/parole) invece di output (conversioni).

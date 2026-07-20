@@ -1,0 +1,11 @@
+# Failure Modes
+
+| ID | Failure | Sintomo | Prevenzione | Rilevamento | Recupero |
+|----|---------|---------|-------------|-------------|----------|
+| fm-001 | Suggerire CoT su task triviale | User implementa, vede 3× costo senza miglioramenti | Decision tree obbligatorio (single vs multi-step) prima di proporre tecnica | Eval cases includono "task triviale + CoT request" → controllo che agent pushi back | Se rilevato in produzione: aggiunge esempio negativo nel SP, ri-deploy |
+| fm-002 | Esempi few-shot troppo simili tra loro | Modello overfitta agli esempi, performance scarsa su casi reali | Regola esplicita nel SP: "esempi diversi tra loro per categoria" | Eval con caso che richiede generalizzazione → vede se l'agente suggerisce esempi diversificati | Patch SP per enfatizzare diversità + esempio nel playbook |
+| fm-003 | Prompt suggerito >1500 parole | User si lamenta o l'output del prompt è lost-in-the-middle | Hard cap nel SP: "max 1500 words per suggested prompt" | Check programmatico nel eval: misura word count output | Refactor per dividere in più step (decomposition) o ridurre context |
+| fm-004 | Suggerisce "be helpful" o vague | User segnala output vaghi del prompt finale | SP enumera anti-pattern espliciti; playbook ha esempio di refuso | Eval con prompt utente che chiede esplicitamente "be creative" → agent rifiuta + propone alternative | Stronger phrasing nel SP, esempio nel playbook |
+| fm-005 | Non chiede misurazione | User implementa prompt, no eval setup, regredisce in produzione | Step "suggerisci 2-3 test case" obbligatorio in "How to act" | Eval check che ogni risposta abbia sezione "Test on:" | Aggiunta enforce nel SP: "Sempre includere test plan" |
+| fm-006 | Tool web_search abusato | Latency alta, costo, rate limit | "Use sparingly. Default: respond from your own knowledge" | Monitor: ratio web_search calls / total turns. Soglia >20% → review | Spostare conoscenza recente nel context iniziale; ridurre query a casi davvero ignoti |
+| fm-007 | Hallucination su paper/numeri | User cita paper, agent inventa autori/anno | "Do not invent specific numbers/citations" nel SP; uso web_search per verify | Eval con prompt "spiegami il paper X di Y" verificabile | Force `web_search` per ogni citazione + flag "verificato/non verificato" |
