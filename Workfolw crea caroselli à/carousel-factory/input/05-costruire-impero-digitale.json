@@ -1,0 +1,87 @@
+{
+  "brand": "mentalita-brutale",
+  "titolo": "il framework per costruire il tuo impero digitale",
+  "caption": "Nessuno nasce con un impero. Si costruisce. Con il metodo giusto. Ecco il framework che uso per costruire sistemi che vendono. ✖️ @mentalita.brutale #ImperoDigitale #Framework #Business #Sistema #Successo #Mindset #DigitalEmpire",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "hook-cover",
+      "testo_piccolo": "il metodo:",
+      "testo_grande": "IMPERO\nDIGITALE",
+      "testo_accent": "IMPERO",
+      "colore_override": null,
+      "sfondo_img": "digital empire blueprint dark",
+      "note_design": "Hook cover: blueprint/impero, scurissimo"
+    },
+    {
+      "numero": 2,
+      "tipo": "text-statement",
+      "testo_piccolo": "step 1:",
+      "testo_grande": "IDENTIFICA\nIL SISTEMA",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Framework step 1"
+    },
+    {
+      "numero": 3,
+      "tipo": "text-statement",
+      "testo_piccolo": "cosa fai che genera entrate automatiche?",
+      "testo_grande": "IL SISTEMA\nNON IL TUO\nLAVORO",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Dettaglio"
+    },
+    {
+      "numero": 4,
+      "tipo": "text-statement",
+      "testo_piccolo": "step 2:",
+      "testo_grande": "AUTOMATIZZA",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Framework step 2"
+    },
+    {
+      "numero": 5,
+      "tipo": "text-statement",
+      "testo_piccolo": "ogni processo ripetitivo diventa automatico",
+      "testo_grande": "FAI DECIDERE\nALLA MACCHINA",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Dettaglio"
+    },
+    {
+      "numero": 6,
+      "tipo": "text-statement",
+      "testo_piccolo": "step 3:",
+      "testo_grande": "SCALA",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Framework step 3"
+    },
+    {
+      "numero": 7,
+      "tipo": "text-statement",
+      "testo_piccolo": "lo stesso sistema, replicato",
+      "testo_grande": "STESSO\nSISTEMA\nREPLICATO",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Dettaglio"
+    },
+    {
+      "numero": 8,
+      "tipo": "cta-finale",
+      "testo_piccolo": "identifica → automatizza → scala. ripeti.",
+      "testo_grande": "INIZIA\nOGGI",
+      "testo_accent": "OGGI",
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "CTA finale"
+    }
+  ]
+}

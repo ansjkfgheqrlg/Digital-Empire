@@ -1,0 +1,87 @@
+{
+  "brand": "mentalita-brutale",
+  "titolo": "4 ore che costruiscono vs 12 ore che consumano",
+  "caption": "Chi lavora 4 ore al giorno e costruisce sistemi. Chi lavora 12 ore e sta al stesso punto. La differenza? Il tipo di lavoro. ✖️ @mentalita.brutale #LavoroIntelligente #Business #Mindset #Sistema #Productivita #Imprenditore #Successo",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "hook-cover",
+      "testo_piccolo": "il contrasto:",
+      "testo_grande": "4 ORE\nVS 12",
+      "testo_accent": "12",
+      "colore_override": null,
+      "sfondo_img": "contrast work styles entrepreneur",
+      "note_design": "Hook numerico, contrasto visivo forte"
+    },
+    {
+      "numero": 2,
+      "tipo": "text-statement",
+      "testo_piccolo": "chi lavora 12 ore al giorno:",
+      "testo_grande": "12 ORE\nDI REAZIONE",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Lato sinistro: lavoro reattivo"
+    },
+    {
+      "numero": 3,
+      "tipo": "text-statement",
+      "testo_piccolo": "risponde a email. risolve problemi. rincorre clienti.",
+      "testo_grande": "REAZIONE\nNON È\nAZIONE",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Dettaglio"
+    },
+    {
+      "numero": 4,
+      "tipo": "text-statement",
+      "testo_piccolo": "chi lavora 4 ore al giorno:",
+      "testo_grande": "4 ORE\nDI COSTRUZIONE",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Lato destro: lavoro costruttivo"
+    },
+    {
+      "numero": 5,
+      "tipo": "text-statement",
+      "testo_piccolo": "costruisce sistemi. automatizza. scala.",
+      "testo_grande": "COSTRUISCE\nMENTRE TU\nREAGISCI",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Dettaglio"
+    },
+    {
+      "numero": 6,
+      "tipo": "text-statement",
+      "testo_piccolo": "dopo 1 anno:",
+      "testo_grande": "STESSO\nPUNTO\nIN 12 ORE",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Risultato 12 ore"
+    },
+    {
+      "numero": 7,
+      "tipo": "text-statement",
+      "testo_piccolo": "dopo 1 anno:",
+      "testo_grande": "10K/MESE\nIN 4 ORE",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Risultato 4 ore"
+    },
+    {
+      "numero": 8,
+      "tipo": "cta-finale",
+      "testo_piccolo": "smetti di reagire. inizia a costruire. le ore giuste.",
+      "testo_grande": "COSTRUISCI\nIL TUO\nIMPERO",
+      "testo_accent": "IMPERO",
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "CTA finale"
+    }
+  ]
+}

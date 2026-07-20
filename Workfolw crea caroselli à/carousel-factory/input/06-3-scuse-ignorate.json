@@ -1,0 +1,87 @@
+{
+  "brand": "mentalita-brutale",
+  "titolo": "3 scuse che ti tengono povero",
+  "caption": "Le 3 scuse più diffuse che ti tengono bloccato. Scegli una di queste o scegli di costruire il tuo impero. Ma non puoi scegliere entrambe. ✖️ @mentalita.brutale #Mindset #Scuse #Poverta #Business #Successo #Freelance #Imprenditore",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "hook-cover",
+      "testo_piccolo": "le scuse che scegli:",
+      "testo_grande": "3 SCUSE\nPOVERO",
+      "testo_accent": "POVERO",
+      "colore_override": null,
+      "sfondo_img": "excuses roadblock barrier",
+      "note_design": "Hook cover: barriera, scurissimo"
+    },
+    {
+      "numero": 2,
+      "tipo": "text-statement",
+      "testo_piccolo": "scusa #1:",
+      "testo_grande": "NON HO\nTEMPO",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Hook scusa 1"
+    },
+    {
+      "numero": 3,
+      "tipo": "text-statement",
+      "testo_piccolo": "verità: perdi 3 ore su social al giorno",
+      "testo_grande": "LE HAI\nLE HAI",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Distruzione"
+    },
+    {
+      "numero": 4,
+      "tipo": "text-statement",
+      "testo_piccolo": "scusa #2:",
+      "testo_grande": "NON HO\nSOLDI",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Hook scusa 2"
+    },
+    {
+      "numero": 5,
+      "tipo": "text-statement",
+      "testo_piccolo": "verità: inizi con 0 euro. chi non inizia resta a 0",
+      "testo_grande": "RESTI A 0",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Distruzione"
+    },
+    {
+      "numero": 6,
+      "tipo": "text-statement",
+      "testo_piccolo": "scusa #3:",
+      "testo_grande": "NON SO\nCOME",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Hook scusa 3"
+    },
+    {
+      "numero": 7,
+      "tipo": "text-statement",
+      "testo_piccolo": "verità: lo impari facendolo. non prima",
+      "testo_grande": "LO IMPARI\nFACENDOLO",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Distruzione"
+    },
+    {
+      "numero": 8,
+      "tipo": "cta-finale",
+      "testo_piccolo": "smetti di scegliere le scuse. scegli di costruire.",
+      "testo_grande": "INIZIA\nOGGI",
+      "testo_accent": "OGGI",
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "CTA finale"
+    }
+  ]
+}

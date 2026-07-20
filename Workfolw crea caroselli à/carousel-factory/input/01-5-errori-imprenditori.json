@@ -1,0 +1,82 @@
+{
+  "brand": "mentalita-brutale",
+  "titolo": "5 errori che ti tengono povero",
+  "caption": "Il 90% degli imprenditori fallisce nei primi 2 anni. Non è sfortuna. Sono questi 5 errori che fai ogni giorno. ✖️ @mentalita.brutale #imprenditore #business # Mindset #Errori #Successo #Freelance #DigitalEmpire",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "hook-cover",
+      "testo_piccolo": "la verità che nessuno ti dice:",
+      "testo_grande": "5 ERRORI\nFATALI",
+      "testo_accent": "ERRORI",
+      "colore_override": null,
+      "sfondo_img": "dark office entrepreneur failure",
+      "note_design": "Hook-cover: sfondo scurato, testo enorme, contrasto rosso/nero"
+    },
+    {
+      "numero": 2,
+      "tipo": "text-statement",
+      "testo_piccolo": "errore #1:",
+      "testo_grande": "CERCHI\nCLIENTI",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Text-statement: testo enorme, nero puro, parole scape sullo schermo"
+    },
+    {
+      "numero": 3,
+      "tipo": "text-statement",
+      "testo_piccolo": "mentre dovresti costruire un sistema",
+      "testo_grande": "INVECE DI\nSISTEMI",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Continua il pensiero: problema comune =解决方法"
+    },
+    {
+      "numero": 4,
+      "tipo": "text-statement",
+      "testo_piccolo": "errore #2:",
+      "testo_grande": "VENDI\nPREZZO",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Hook provocatorio"
+    },
+    {
+      "numero": 5,
+      "tipo": "text-statement",
+      "testo_piccolo": "quando dovresti vendere valore e risultati",
+      "testo_grande": "INVECE DEL\nVALORE",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Continua"
+    },
+    {
+      "numero": 6,
+      "tipo": "list-items",
+      "testo_piccolo": "gli altri 3 errori:",
+      "testo_grande": "IL\nELENCO",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Lista: 3) Non automare 4) Non delegare 5) Non sistematicizzare",
+      "items": [
+        "#3 Non automare nulla — fai tutto tu",
+        "#4 Non deleghi — pensi di far prima",
+        "#5 Non hai sistemi — ricominci da zero ogni giorno"
+      ]
+    },
+    {
+      "numero": 7,
+      "tipo": "cta-finale",
+      "testo_piccolo": "la soluzione? un sistema. non un lavoro.",
+      "testo_grande": "COSTRUISCI\nIL TUO\nIMPERO",
+      "testo_accent": "IMPERO",
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "CTA finale: bold, rosso accent, nero sfondo"
+    }
+  ]
+}

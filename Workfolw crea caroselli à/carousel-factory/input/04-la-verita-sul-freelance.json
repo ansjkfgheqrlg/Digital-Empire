@@ -1,0 +1,77 @@
+{
+  "brand": "mentalita-brutale",
+  "titolo": "la verita sul freelance che non ti dicono",
+  "caption": "Freelance = libertà? No. È una prigione con le sbarre invisibili. Ecco la verità che nessuno ti dice. ✖️ @mentalita.brutale #Freelance #Business #Liberta #Mindset #Verita #Imprenditore #DigitalEmpire",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "hook-cover",
+      "testo_piccolo": "la verità scomoda:",
+      "testo_grande": "FREELANCE\nÈ PRIGIONE",
+      "testo_accent": "PRIGIONE",
+      "colore_override": null,
+      "sfondo_img": "cage prison freelancer trapped",
+      "note_design": "Hook cover: metafora prigione, scurissimo"
+    },
+    {
+      "numero": 2,
+      "tipo": "text-statement",
+      "testo_piccolo": "ti hanno detto:",
+      "testo_grande": "LIBERTÀ\nFLEX TIME",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Aspettative vs realtà"
+    },
+    {
+      "numero": 3,
+      "tipo": "text-statement",
+      "testo_piccolo": "la realtà:",
+      "testo_grande": "FATTURE\nSCADENZE\nCLIENTI",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Realtà cruda"
+    },
+    {
+      "numero": 4,
+      "tipo": "text-statement",
+      "testo_piccolo": "non sei libero. sei occupato.",
+      "testo_grande": "SEI\nOCCUPATO",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Hook brutale"
+    },
+    {
+      "numero": 5,
+      "tipo": "text-statement",
+      "testo_piccolo": "e più lavori, più dipendi",
+      "testo_grande": "PIÙ LAVORI\nPIÙ DIPENDI",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Loop della trappola"
+    },
+    {
+      "numero": 6,
+      "tipo": "text-statement",
+      "testo_piccolo": "la via d'uscita:",
+      "testo_grande": "SMETTI DI\nVENDERE TEMPO",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Pivot"
+    },
+    {
+      "numero": 7,
+      "tipo": "cta-finale",
+      "testo_piccolo": "inizia a vendere sistemi. il tuo tempo non è in vendita.",
+      "testo_grande": "COSTRUISCI\nIL TUO\nIMPERO",
+      "testo_accent": "IMPERO",
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "CTA finale"
+    }
+  ]
+}

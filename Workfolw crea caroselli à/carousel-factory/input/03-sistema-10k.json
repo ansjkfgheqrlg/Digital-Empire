@@ -1,0 +1,89 @@
+{
+  "brand": "mentalita-brutale",
+  "titolo": "il sistema per 10k al mese senza dipendenti",
+  "caption": "10k/mese senza dipendenti. È possibile. Ma non con il metodo che ti hanno insegnato. Serve un sistema. Ecco come. ✖️ @mentalita.brutale #Business #Imprenditore #10k #Sistema #Freelance #DigitalNomad #ImperoDigitale",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "hook-cover",
+      "testo_piccolo": "il framework:",
+      "testo_grande": "10K\nAL MESE",
+      "testo_accent": "10K",
+      "colore_override": null,
+      "sfondo_img": "luxury workspace digital nomad",
+      "note_design": "Hook numerico forte, sfondo premium scurato"
+    },
+    {
+      "numero": 2,
+      "tipo": "text-statement",
+      "testo_piccolo": "non servono dipendenti",
+      "testo_grande": "SENZA\nDIPENDENTI",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Claim forte"
+    },
+    {
+      "numero": 3,
+      "tipo": "text-statement",
+      "testo_piccolo": "servono 3 pilastri:",
+      "testo_grande": "I 3\nPILASTRI",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Setup pilastri"
+    },
+    {
+      "numero": 4,
+      "tipo": "list-items",
+      "testo_piccolo": "pilastro 1:",
+      "testo_grande": "PRODOTTO\nDIGITALE",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Lista: 1 prodotto digitale scalabile",
+      "items": [
+        "Prodotto digitale",
+        "Lo crei una volta, lo vendi infinite"
+      ]
+    },
+    {
+      "numero": 5,
+      "tipo": "list-items",
+      "testo_piccolo": "pilastro 2:",
+      "testo_grande": "AUTOMAZIONE\nVENDITE",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Lista: funnel + email automation",
+      "items": [
+        "Funnel che vende 24/7",
+        "Email automation che followup"
+      ]
+    },
+    {
+      "numero": 6,
+      "tipo": "list-items",
+      "testo_piccolo": "pilastro 3:",
+      "testo_grande": "TRAFFICO\nAUTOMATICO",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Lista: contenuti + ads",
+      "items": [
+        "Contenuti che attraggono",
+        "Oppure ads che scalano"
+      ]
+    },
+    {
+      "numero": 7,
+      "tipo": "cta-finale",
+      "testo_piccolo": "3 pilastri. 10k/mese. senza dipendenti.",
+      "testo_grande": "INIZIA\nOGGI",
+      "testo_accent": "OGGI",
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "CTA urgency"
+    }
+  ]
+}

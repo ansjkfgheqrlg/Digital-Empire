@@ -1,0 +1,77 @@
+{
+  "brand": "mentalita-brutale",
+  "titolo": "lavorare piu non significa guadagnare di piu",
+  "caption": "Lavori 12 ore al giorno. Sei stanco. Sei povero. Il problema non è quanto lavori. È come pensi. ✖️ @mentalita.brutale #Mindset #Business #Imprenditore #Lavoro #Successo #Freelance #Productivita",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "hook-cover",
+      "testo_piccolo": "la verità scomoda:",
+      "testo_grande": "12 ORE\nNON BASTANO",
+      "testo_accent": "NON",
+      "colore_override": null,
+      "sfondo_img": "exhausted entrepreneur night work",
+      "note_design": "Hook-cover: uomo stanco di notte, testo enorme rosso"
+    },
+    {
+      "numero": 2,
+      "tipo": "text-statement",
+      "testo_piccolo": "stai lavorando 12 ore",
+      "testo_grande": "NEL POSTO\nSBAGLIATO",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Statement forte"
+    },
+    {
+      "numero": 3,
+      "tipo": "text-statement",
+      "testo_piccolo": "la differenza la fa il sistema",
+      "testo_grande": "TUTTI\nLAVORANO",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Frame controt"
+    },
+    {
+      "numero": 4,
+      "tipo": "text-statement",
+      "testo_piccolo": "solo alcuni costruiscono",
+      "testo_grande": "SOLO ALCUNI\nCOSTRUISCONO",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Continua il pensiero"
+    },
+    {
+      "numero": 5,
+      "tipo": "text-statement",
+      "testo_piccolo": "il悖论: piu lavori manualmente, meno guadagni",
+      "testo_grande": "PIÙ FAI\nPIÙ RESTI\nPOVERO",
+      "testo_accent": "POVERO",
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Hook brutale, numerico"
+    },
+    {
+      "numero": 6,
+      "tipo": "text-statement",
+      "testo_piccolo": "la soluzione? lavora di meno, pensa di più",
+      "testo_grande": "LAVORA\nDI MENO\nPENSA DI PIÙ",
+      "testo_accent": null,
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "Inversione"
+    },
+    {
+      "numero": 7,
+      "tipo": "cta-finale",
+      "testo_piccolo": "smetti di correre. inizia a costruire.",
+      "testo_grande": "COSTRUISCI\nIL TUO\nIMPERO",
+      "testo_accent": "IMPERO",
+      "colore_override": null,
+      "sfondo_img": null,
+      "note_design": "CTA bold"
+    }
+  ]
+}
