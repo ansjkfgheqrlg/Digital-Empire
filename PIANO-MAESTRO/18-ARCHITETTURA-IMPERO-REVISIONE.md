@@ -52,7 +52,7 @@ Ogni gap diventa miglioria MIR-w (Miglioria Impero Workflow) con owner e gate, n
 | W7 | **YouTube Lead Machine** | `Formazzione/Youtube/` | strategia+kit ✅ (CP-20260719-009, CP-20260720-011) | MIR-11: ✅ skill `/youtube-lead-machine` FORGIATA (CP-20260720-005, GATE 7/7); agenti yt-* in valutazione superfluità (deleghe attive) |
 | W8 | **FORGE-AGENT-SKILL** (OGGI) | `FORGE-AGENT-SKILL/` | reparto nuovo CF-grade | — (è il MIR-maker degli altri) |
 | W9 | Manuale CC (prodotto S2) | `02-INFO-BUSINESS` | CF-grade | vendita: copy review via copy-workflow |
-| W10 | Pagine lancio / agency sites | `Agency page*/`, `agency-empire*/` | siti statici | MIR-12: copy review APSOC + tracking eventi uniforme |
+| W10 | Pagine lancio / agency sites | `Agency page*/`, `agency-empire*/` | siti statici | MIR-12: ✅ review APSOC fatta 2026-07-20 (`COPY-REVIEW-APSOC-SITO.md`, 78/100; patch P0 = corsia Max) |
 
 **Nota coordination:** W6 ha owner divisione Max/Gael (ordine in STATO-EMPIRE). Questa revisione NON tocca
 codice/cantiere aperto di altri owner — produce solo le migliorie MIR su asset non in cantiere altrui.
@@ -74,7 +74,7 @@ codice/cantiere aperto di altri owner — produce solo le migliorie MIR su asset
 | MIR-9 | topology.md obbligatorio per team nuovi | FORGE-AGENT-SKILL | qa-gate | P2 |
 | MIR-10 | Auto-applicazione: retrofit guidato dal reparto | FORGE-AGENT-SKILL | — | P3 |
 | MIR-11 | Skill `/youtube-lead-machine` + agenti yt-* (backlog reparto) | FORGE-AGENT-SKILL → 04-MARKETING | fas-qa-gate | **P0 candidato prossimo passo** |
-| MIR-12 | Copy review APSOC su `Agency page*-` + eventi tracking uniformi | 04-MARKETING | A8 ≥85 | P2 |
+| MIR-12 | Copy review APSOC su `Agency page*-` + eventi tracking uniformi | 04-MARKETING | A8 ≥85 | P2 — ✅ REVIEW 2026-07-20: 78/100, 5 P0 consegnati + schema eventi uniforme; ⏳ applicazione patch = corsia Max (CP-20260720-012) |
 
 **Regola P0/P1:** chiusura via workflow repo (edit + CP + ADR se serve), niente maghe in chat.
 

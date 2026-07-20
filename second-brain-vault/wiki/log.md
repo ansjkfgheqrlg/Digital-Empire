@@ -1,5 +1,17 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-20 (MIR-12 — Review APSOC sito istituzionale Agency page)
+- REVIEW: `Agency page - Copia/COPY-REVIEW-APSOC-SITO.md` — audit completo 13 sezioni del sito evoluto
+  (metodo APSOC/CPB: la stessa dottrina `CPB_Gestioneobiezioni.md` del repo). Score **78/100** (gate 85).
+  Struttura da lodare: 4 Diagnosi pain-first, calcolatore funnel, WhyUs, meta-copy TOV perfetto.
+  **5 P0 bloccanti pre-pubblicazione**: 8 claim numerici senza fonte (50 mercati, +600%, Dubai, uptime… Art.2),
+  tracking 0% (schema eventi uniforme consegnato: view_hero/select_area/click_cta/submit_lead/lead_fail),
+  form che simula successo su errore (lead persi), GDPR senza consenso nei 2 form, offerta gratuita
+  in 3 versioni (€500/40min vs kit YouTube 15min). **ASK-PROTOCOL prima applicazione reale**: Q1 offerta
+  unica (rec: 15 min), Q2 sedi/metriche footer vere?, Q3 "Social Growth" vs MKD — default marcati.
+  Delta: `Agency page/` vecchia = da deprecare. index.md aggiornato (riga entities) + Entity_Brand_Offer
+  (nota applicazione canone). → [[tools/Tool_Copy_Workflow_Orchestration]]. CP-20260720-012.
+
 ## 2026-07-20 (YouTube Lead Machine — magnet #2: Checklist CRO 21 Punti)
 - BUILD: `Formazzione/Youtube/LEAD-MAGNET-02-checklist-cro-21-punti.md` — secondo lead magnet del funnel:
   TOFU un-gated (link descrizione video V01/V02/V06 + pinned comment), 21 controlli in 5 zone

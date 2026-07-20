@@ -28,3 +28,7 @@ Sorgente: `Materiale Agency - Diglital Empire.txt` → MKD via FORGE-AGENT-SKILL
 - «Non facciamo contenuti sui social» (risposta-21 sorgente) = servizio venduto; il nostro canale YouTube
   = marketing proprio. Distinguere sempre.
 - Validazione [ASSUNZIONE]: sostituire con numeri VERI prima di qualsiasi pubblicazione (regola: mai inventati).
+- Applicazione 2026-07-20 (MIR-12): review APSOC sito `Agency page - Copia/` condotta CONTRO questo
+  canone (TOV/Art.2/USP) → 5 P0 trovati proprio dove il sito violava il canone (claim inventati,
+  offerta non unificata, "social growth" in select vs «non facciamo social»). Il MKD regge: è il sito
+  ad adeguarsi (o il decreto Max aggiorna il MKD — mai il contrario successo per caso).

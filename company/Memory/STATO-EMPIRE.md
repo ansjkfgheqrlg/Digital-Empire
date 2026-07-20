@@ -209,6 +209,15 @@ gratuita 15 min" + automazioni → setup registrazione → **registrare batch #1
 1 sessione da 4 ore)** → pubblicare 1-2/settimana + review dati settimanale.
 Complementare (non sovrapposto) a dossier 16 S5 YouTube-Fliki: questa è strategia contenuti/organico.
 
+## 🌐 REVIEW SITO AGENCY (MIR-12 ✅ 2026-07-20 sera, CP-20260720-012) — 5 P0 da patchare (corsia Max)
+`Agency page - Copia/COPY-REVIEW-APSOC-SITO.md`: struttura persuasiva ottima (78/100 sub-85 per i P0).
+**P0:** ① 8 claim numerici senza fonte (50 mercati, +600%/+400%, 60gg, 70%…, Dubai, uptime) → Art.2;
+② **tracking 0%** (niente gtag/pixel/eventi — e il blog insegna a installarli) + schema eventi uniforme pronto;
+③ form Contact **simula successo su errore** = lead persi in silenzio; ④ **GDPR: niente consenso privacy**
+nei 2 form; ⑤ offerta gratuita in 3 versioni (Sessione €500/**40 min** vs Contact vs kit YouTube **15 min**) →
+ASK Q1-Q3 per Max nel doc (default: 15 min unico, rimozione claim non veri, "social growth" fuori dalla select).
+Raccomandazione anche: deprecare `Agency page/` vecchia. NOTE: patch = grafica/deploy di Max; dopo patch → re-review ≥85.
+
 
 ## ✅ GAEL — V2-2 LOTTO 3 COMPLETATO (2026-07-19, CP-20260719-001)
 **Chiuso PRIMA di vedere l'ordine EMPIRE DESK qui sopra (era già a buon punto); ora si passa
