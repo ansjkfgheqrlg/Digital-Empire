@@ -1,0 +1,36 @@
+{
+  "content_id": "MB-EXAMPLE-REEL-001",
+  "brand": "mentalita-brutale",
+  "format": "REEL",
+  "caption": "Il problema non è il giorno difficile. È lo standard che abbassi ogni volta che arriva. Scegli un'azione minima e falla prima di negoziare con te stesso.\n\n#mentalitabrutale #disciplina #mindset",
+  "scheduled_at": "2030-01-02T12:00:00Z",
+  "media": [
+    {
+      "public_url": "https://media.example.com/mentalita/reel-001.mp4",
+      "media_type": "VIDEO"
+    }
+  ],
+  "experiment": {
+    "experiment_id": "MB-BASELINE-28D-001",
+    "pillar": "P1",
+    "hook": "domanda-diagnostica",
+    "slot": "13:00",
+    "cta": "condividi-segui"
+  },
+  "quality_evidence": {
+    "format": "PASS",
+    "brand": "PASS",
+    "copy": "PASS",
+    "rights": "PASS",
+    "safety": "PASS"
+  },
+  "rights": {
+    "confirmed": true,
+    "source_or_license": "owned:original-video",
+    "music_rights": "licensed:replace-with-ledger-id"
+  },
+  "metadata": {
+    "duration_seconds": 20,
+    "video_pattern_status": "PENDING_SOURCE_VALIDATION"
+  }
+}

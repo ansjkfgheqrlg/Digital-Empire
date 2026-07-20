@@ -16,6 +16,7 @@
 - [ADR-006](decisions/ADR-006-ciclo-fase-9-passi.md) — Ciclo di Fase Empire a 9 passi (metodo ufficiale, swarm obbligatorio per Max e Gael) → `PIANO-MAESTRO/10-METODO-CICLO-FASE.md`
 - [ADR-007](decisions/ADR-007-piano-v2-scala.md) — **PIANO V2 Direttiva di Scala**: 1 workflow=CF Exponium, Board=workflow×10+ agenti, reparti=team+workflow CF-grade, Mandato-ecosistema, organo MAXIMILIAN → `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md`
 - [ADR-008](decisions/ADR-008-catena-intestazione-controllo.md) — **Catena intestazione e controllo**: nessun artefatto orfano — ogni cosa ha proprietario+controllore+origine(FORGE)+governo(Mandato), anagrafe in `company/REGISTRO-IMPRESA.md` + `skills-map.yaml`, FORGE=ufficio anagrafe, 5-bis verifica intestazione
+- [ADR-009](decisions/ADR-009-autonomia-social-certificata.md) — **Autonomia social certificata**: per account first-party, SHADOW→SUPERVISED→CERTIFIED_AUTO→PAUSED; review per-post eliminabile solo dopo evidence (5 dry-run+canary+postcheck+Insights+secret scan), restano CF-R6/cap/idempotenza/kill switch
 
 ## Corpus Maximilian
 - [direttiva-20260611-scala-v2](maximilian-corpus/direttiva-20260611-scala-v2.md) — prima direttiva integrale di Max (addestramento organo MAXIMILIAN; ogni futura direttiva si appende qui)
@@ -24,6 +25,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260720-002](checkpoints/CP-20260720-002.md) — **Mentalità Brutale MB-OS foundations**: 41 file + skill FORGE 5 file; Meta API v25.0 OAuth/publish/Insights, 5 gate, queue/idempotenza/staging PNG→JPEG/kill switch, 11 reparti, strategia 28d; 13/13 test PASS. Stato SHADOW onesto: OAuth/staging/canary live pendenti. Password hard-coded correnti rimosse; B-009 rotazione obbligatoria — Arena
 - [CP-20260719-008](checkpoints/CP-20260719-008.md) — Risolta collisione reale Gael/Max su `EmpireDesk/ui/index.html` (2 redesign paralleli della stessa feature pannelli-moduli, 8 blocchi in conflitto): tenuto il design UI di Max (nav-tab), `app.py` riallineato al SUO contratto (`/api/modules`, non `/api/panels`). Preso atto: Gael non tocca più `ui/index.html` (ownership passata a Max) — Gael
 - [CP-20260719-007](checkpoints/CP-20260719-007.md) — ⚠️ **Empire Desk B1: seam moduli costruito** (loader `modules/*.py` isolato, validazione schema tile anti-crash, dispatcher routes condiviso HTTP/pywebview, switcher pannelli UI + CSS per i 3 moduli di Max, fix grafico proattivo header flex). 2 bug trovati e corretti in autorevisione (EDE-6/7), 0 lanciati. NON eseguito: ambiente sessione senza Python/Node — Gael
 - [CP-20260719-006](checkpoints/CP-20260719-006.md) — Risolto conflitto di sync GitHub (SYNC-CONFLICT.txt) + collisione numerazione checkpoint (002/003 rinumerati 004/005); merge REGISTRO-ERRORI EmpireDesk senza perdita dati; push riuscito, main allineato — Max

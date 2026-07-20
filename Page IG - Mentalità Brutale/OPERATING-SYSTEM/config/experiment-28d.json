@@ -1,0 +1,33 @@
+{
+  "experiment_id": "MB-BASELINE-28D-001",
+  "status": "READY_AFTER_AUTH_AND_VIDEO_INGEST",
+  "duration_days": 28,
+  "objective": "Costruire una baseline comparabile per formato, hook e slot prima di ottimizzare.",
+  "cadence": {
+    "posts_per_week": 7,
+    "reels_per_week": 4,
+    "carousels_per_week": 3,
+    "total_reels": 16,
+    "total_carousels": 12
+  },
+  "controlled_variables": {
+    "hook_families": ["contrasto-brutale", "domanda-diagnostica"],
+    "time_slots_local": ["13:00", "20:30"],
+    "cta_families": ["salva", "condividi-segui"],
+    "balancing_rule": "Distribuire ogni formato in modo quasi uniforme tra hook e slot; n>=3 per cella valutata."
+  },
+  "content_mix": {
+    "P1": 8,
+    "P2": 7,
+    "P3": 6,
+    "P4": 4,
+    "P5": 3
+  },
+  "measurement": {
+    "snapshots_hours": [48, 168],
+    "primary": ["reach", "saved", "shares", "total_interactions"],
+    "reels_secondary": ["views", "ig_reels_avg_watch_time", "ig_reels_video_view_total_time", "reels_skip_rate"],
+    "decision_rule": "Promuovere un pattern solo con n>=3, mediana superiore alla baseline dello stesso formato e nessun degrado materiale della qualità.",
+    "note": "I target numerici assoluti sono [DA MISURARE]; non vengono inventati prima della baseline."
+  }
+}

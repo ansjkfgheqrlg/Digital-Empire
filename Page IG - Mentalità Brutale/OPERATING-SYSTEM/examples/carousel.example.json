@@ -1,0 +1,40 @@
+{
+  "content_id": "MB-EXAMPLE-CAROUSEL-001",
+  "brand": "mentalita-brutale",
+  "format": "CAROUSEL",
+  "caption": "La disciplina non è quello che fai quando sei carico. È lo standard che resta quando nessuno ti guarda. Salva questo post e scegli una regola che non negozierai domani.\n\n#mentalitabrutale #disciplina #crescitapersonale",
+  "scheduled_at": "2030-01-01T19:30:00Z",
+  "media": [
+    {
+      "public_url": "https://media.example.com/mentalita/slide-01.jpg",
+      "alt_text": "Titolo del carosello su sfondo nero e rosso: la disciplina inizia quando finisce la motivazione."
+    },
+    {
+      "public_url": "https://media.example.com/mentalita/slide-02.jpg",
+      "alt_text": "Seconda slide: una scelta ripetuta diventa uno standard personale."
+    }
+  ],
+  "experiment": {
+    "experiment_id": "MB-BASELINE-28D-001",
+    "pillar": "P1",
+    "hook": "contrasto-brutale",
+    "slot": "20:30",
+    "cta": "salva"
+  },
+  "quality_evidence": {
+    "format": "PASS",
+    "brand": "PASS",
+    "copy": "PASS",
+    "rights": "PASS",
+    "safety": "PASS"
+  },
+  "rights": {
+    "confirmed": true,
+    "source_or_license": "generated:owned-prompt-and-assets",
+    "music_rights": "none"
+  },
+  "metadata": {
+    "source_engine": "carousel-factory-wrap",
+    "claim_sources": []
+  }
+}

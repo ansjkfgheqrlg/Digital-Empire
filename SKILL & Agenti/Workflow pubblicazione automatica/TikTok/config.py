@@ -1,9 +1,9 @@
-# TikTok Configuration
+"""TikTok legacy browser publisher configuration. Credentials are environment-only."""
+import os
 
-TK_EMAIL = ""
-TK_PASSWORD = ""
+TK_EMAIL = os.environ.get("TIKTOK_EMAIL", "")
+TK_PASSWORD = os.environ.get("TIKTOK_PASSWORD", "")
 
-# Impostazioni specifiche per TikTok
 ALLOW_COMMENTS = True
 ALLOW_DUET = False
 ALLOW_STITCH = False
