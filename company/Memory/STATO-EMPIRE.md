@@ -1,4 +1,16 @@
-# STATO EMPIRE -- aggiornato 2026-07-20 (ADR-009 toolkit ufficiali + reparto FORGE-AGENT-SKILL; ordine Max EMPIRE DESK metà/metà resta attivo sotto)
+# STATO EMPIRE -- aggiornato 2026-07-20 (TOOLCHAIN VS CODE adottata + ADR-009 toolkit ufficiali; ordine Max EMPIRE DESK metà/metà resta attivo sotto)
+
+## 🧰 TOOLCHAIN VS CODE ADOTTATA (2026-07-20, CP-20260720-003) — scansione completa plugin + `.vscode/` committato
+Dossier: **`PIANO-MAESTRO/19-TOOLCHAIN-VSCODE.md`** (scansione 14 categorie su censimento reale del repo:
+7.6k md / 867 py / 181 yaml → l'impero è conoscenza scritta + automazioni Python, non webapp).
+- **Tier 1 da installare subito (10):** Claude Code (`anthropic.claude-code`, agente UNICO), GitLens, GitHub PR,
+  Python, Pylance, Ruff, Markdown All in One, **Markdown Memo** (abilita i wikilink `[[...]]` del vault),
+  YAML Red Hat, Spell Checker IT+EN. Comando pronto nel dossier §2.
+- **Regole d'oro:** niente doppi agenti AI (Copilot/Cody/Cline esclusi — Cody Free morto 2025-07, Dendron deprecato);
+  **MAI format-on-save globale** (ADR-003: vendor intoccabili); telemetry OFF.
+- **Config condivisa committata:** `.vscode/extensions.json` (22 raccomandate) + `.vscode/settings.json`.
+  **AZIONE MAX/GAEL:** aprire la repo in VS Code → «Install recommended extensions».
+- CP YouTube di questa sessione rinumerato **20260719-009** (collisione add/add con B1 di Gael nel merge).
 
 ## 🏭 ADR-009 (2026-07-20, CP-20260720-002) — TOOLKIT UFFICIALI + REPARTO FORGE-AGENT-SKILL
 Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow, mai workflow orfani»:

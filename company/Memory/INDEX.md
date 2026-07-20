@@ -24,6 +24,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260720-003](checkpoints/CP-20260720-003.md) — **TOOLCHAIN VS CODE adottata**: scansione completa plugin (14 categorie su censimento reale 7.6k md/867 py/181 yaml) → dossier `PIANO-MAESTRO/19-TOOLCHAIN-VSCODE.md` (Tier 1-3 + 8 sconsigliati, mappa W1-W10) + `.vscode/` committato (extensions+settings: agente unico Claude Code, mai format-on-save, telemetry off) — sessione Claude
 - [CP-20260720-002](checkpoints/CP-20260720-002.md) — **ADR-009: 3 toolkit esterni ufficiali** (copy-workflow vendor + review APSOC kit YouTube score→90-93; master-build-architecture → dossier 18 revisione impero 12 MIR; content-forge2.0 engine) + **nuovo reparto FORGE-AGENT-SKILL** (4 agenti, WF-AGENT/SKILL-NEW, R1-R4) + skills-map v1.2 — sessione Claude
 - [CP-20260720-001](checkpoints/CP-20260720-001.md) — **YOUTUBE LEAD MACHINE: kit di lancio COMPLETO** (scheda Cliente d'Oro, SETUP-CANALE copy pronta, lead magnet "Analisi Gratuita" + 5 messaggi speed-to-lead, batch #1 con 6 script hook/scaletta/CTA + 2 concept copertina) — sessione Claude
 - [CP-20260719-009](checkpoints/CP-20260719-009.md) — **YOUTUBE LEAD MACHINE avviato**: ingest 7 video (5 Media Profit + Hormozi + Think Media, trascrizioni complete) → strategia operativa `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md` (8 sezioni, piano 30gg) + 7 note video + 7 pagine wiki — sessione Claude *(era -007, rinumerato: collisione con B1 di Gael)*

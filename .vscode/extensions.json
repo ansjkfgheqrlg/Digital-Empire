@@ -1,0 +1,31 @@
+{
+  "//": "Digital Empire — toolchain ufficiale VS Code (dossier PIANO-MAESTRO/19). Tier 1 + Tier 2; le estensioni sconsigliate e i motivi sono nel dossier.",
+  "recommendations": [
+    "anthropic.claude-code",
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "charliermarsh.ruff",
+    "yzhang.markdown-all-in-one",
+    "svsool.markdown-memo",
+    "redhat.vscode-yaml",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-italian",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "rangav.vscode-thunder-client",
+    "bierner.markdown-mermaid",
+    "tomoki1207.pdf",
+    "PKief.material-icon-theme",
+    "gruntfuggly.todo-tree",
+    "mechatroner.rainbow-csv",
+    "ritwickdey.LiveServer",
+    "christian-kohler.path-intellisense"
+  ],
+  "unwantedRecommendations": [
+    "dendron.dendron",
+    "sourcegraph.cody-ai"
+  ]
+}

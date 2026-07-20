@@ -1,0 +1,60 @@
+{
+  "//": "Digital Empire — impostazioni di workspace condivise (dossier PIANO-MAESTRO/19). Regole d'oro: niente format-on-save globale (7.6k md + vendor intoccabili ADR-003), telemetry OFF (privacy impero).",
+
+  "editor.formatOnSave": false,
+  "editor.renderWhitespace": "none",
+
+  "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+
+  "cSpell.language": "it,en",
+  "cSpell.enabledLanguageIds": [
+    "markdown",
+    "plaintext",
+    "yaml",
+    "python",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "jsonc"
+  ],
+  "cSpell.words": [
+    "APSOC",
+    "EmpireDesk",
+    "PreventivoForge",
+    "Novacar",
+    "Formazzione",
+    "forgia",
+    "reparto",
+    "ecosistema"
+  ],
+
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+
+  "[yaml]": {
+    "editor.tabSize": 2
+  },
+
+  "files.exclude": {
+    "**/.pytest_cache": true,
+    "**/__pycache__": true
+  },
+
+  "search.exclude": {
+    "**/*.png": true,
+    "**/Formazzione/Youtube/note-video": false
+  },
+
+  "markdownlint.config": {
+    "default": false
+  }
+}

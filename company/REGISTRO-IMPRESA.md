@@ -42,6 +42,7 @@
 | **content-forge2.0** (`content-forge2.0/`, motore `/forge` + wrapper `.claude/skills/content-forge`) | FORGE-AGENT-SKILL (06b-FORGE) | fas-qa-gate | vendor ufficiale ADR-009 | Art.2 · ADR-003 (diff vendor=0) |
 | **master-build-architecture** (`master-build-architecture/`, metodo architetture + wrapper `.claude/skills/master-build-architecture`) | 06b-FORGE / L2.4 ECOSYSTEM-WORKS + L2.5 METHOD-GUARD | METHOD-GUARD | vendor (versione main, ADR-009) | Art.2 · ADR-003 |
 | **Reparto FORGE-AGENT-SKILL** (officina agenti & skill: 4 agenti fas-*, WF-AGENT/SKILL-NEW) | 06b-FORGE (L2.1/L2.2) | fas-qa-gate + METHOD-GUARD | ADR-009 (2026-07-20) | ADR-001/002/006/008 |
+| **Toolchain VS Code** (`.vscode/` condiviso + dossier `PIANO-MAESTRO/19-TOOLCHAIN-VSCODE.md`; Tier 1-3, agente = Claude Code unico) | 06b-FORGE / L2.4 ECOSYSTEM-WORKS | METHOD-GUARD + 5-bis campionario | ordine Max 2026-07-20 (CP-20260720-003) | ADR-002/003/006/008 (niente format-on-save, niente tool orfani) |
 | **carousel-factory** (brands: mentalita-brutale, …) | 03-CONTENT-FACTORY / CF-R5 | CF-R6 QA & Gate | pre-Impero, wrappato | Art.2 |
 | **Empire Studio** (ingestione video → knowledge) | 10-MEMORY (knowledge) + Reparto Competitor Research | WATCH-001 match check | suite dedicata | ADR-002 (integrale, mai riassunti) |
 | **Manuale Claude Code** (prodotto S2) | 02-INFO-BUSINESS / IB-L2-PROD → VEND | ib-prod-qa + B-003 (prezzo da team-prezzi) | pre-Impero | Art.2 · ADR-005 |
@@ -63,6 +64,7 @@
 | PIANO-MAESTRO 01-15 + V2 | Board/CEO | MAXIMILIAN (fedeltà alla direttiva) |
 | 16-PIANO-ESTATE-REVENUE | MAX (business) + CFO (numeri) | metriche §4 misurate, RETRO settimanale |
 | 17-EMPIRE-DESK-APP | Gael (build) | gate §4 dossier 17 |
+| 19-TOOLCHAIN-VSCODE | L2.4 ECOSYSTEM-WORKS (FORGE) | METHOD-GUARD; gate §8 dossier 19 (verificato 2026-07-20) |
 
 ---
 

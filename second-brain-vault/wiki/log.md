@@ -84,6 +84,12 @@
 - APPLY copy-workflow (MIR-2 P0): review APSOC kit YouTube → `Formazzione/Youtube/COPY-REVIEW-APSOC.md` (score 78-84→90-93; patch applicate: descrizione canale v2, hook V01 v2, varianti CTA).
 - → 4 pagine tool create (Copy_Workflow, Content_Forge_2, Master_Build_Architecture, Forge_Agent_Skill_Reparto). index.md aggiornato. CP-20260720-002.
 
+## 2026-07-20 (Toolchain VS Code — scansione completa)
+- SCAN: censimento stack da `git ls-files` (8.123 png / 7.625 md / 867 py / 600 json / 596 tsx+ts / 471 go / 181 yaml / 107 pdf) + scansione Marketplace 14 categorie aggiornata al giorno (deprecazioni verificate: Cody Free discontinuato 2025-07-23, Dendron abbandonato, Ruff publisher `charliermarsh` confermato).
+- BUILD: `PIANO-MAESTRO/19-TOOLCHAIN-VSCODE.md` (Tier 1=10 subito / Tier 2=11 per area / Tier 3=12 opzionali / 8 sconsigliati con motivo; mappa W1-W10; gate verifica) + `.vscode/extensions.json` (22 raccomandate, 2 unwanted) + `.vscode/settings.json` (format-on-save OFF per ADR-003, telemetry OFF, spellcheck it+en).
+- Decisioni: agente AI = solo `anthropic.claude-code` (Copilot/Cody/Cline = duplicati esclusi); Markdown Memo abilita i wikilink `[[...]]` del vault in VS Code; niente markdownlint (rumore su 7.6k file legacy).
+- → 1 pagina tool creata ([[tools/Tool_VSCode_Toolchain]]), index.md +1. CP-20260720-003.
+
 ## 2026-07-20 (YouTube Lead Machine — kit di lancio)
 - BUILD: kit eseguibile completo in `Formazzione/Youtube/`: CLIENTE-DORO.md (scheda ICP da `Materiale Agency`), SETUP-CANALE.md (copy pronta: nome/descrizione/banner/link/playlist), LEAD-MAGNET-01-analisi-gratuita.md (magnet "Analisi Gratuita 15 min" + gate qualifica + 5 messaggi automazione speed-to-lead pronti + metriche), batch-01/ (PIANO + 6 script completi hook verbatim/scaletta/CTA sui 4 pilastri: 2 ricerca TOFU, 1 educazione, 1 metodo 5 step, 1 audit dal vivo, 1 prova sociale) + 2 concept copertina AI in `batch-01/copertine/`. → pagina progetto [[Project_YouTube_Lead_Machine]] aggiornata. CP-20260720-001.
 
