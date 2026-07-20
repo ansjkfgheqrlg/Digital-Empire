@@ -1,5 +1,15 @@
 # STATO EMPIRE -- aggiornato 2026-07-20 (ordine Max: PIVOT AREUS — Empire Desk riparte dalla piattaforma Aureus)
 
+## ⚠️ COORDINAMENTO 2026-07-20 — MENTALITÀ BRUTALE SOCIAL OPERATING SYSTEM (Arena)
+**BUILD APERTA — owner esclusivo di questo ciclo: Arena Agent.** Obiettivo: chiudere il gap S4 del dossier 16 con una base operativa API-first per `mentalita.brutale`: autorizzazione Meta, produzione→QA→scheduler→publish→insights→learning, memoria progetto e skill operativa. ARCHITETTURA + Chief-Forge + FORGE sono attivati come catena di governo; gli asset esistenti vengono wrappati (ADR-003), non riscritti.
+
+**Scope di scrittura riservato durante il ciclo:**
+- `Page IG - Mentalità Brutale/OPERATING-SYSTEM/` e `.claude/skills/mentalita-brutale-operator/` (nuovi);
+- configurazioni con password in chiaro dentro `SKILL & Agenti/Workflow pubblicazione automatica/` **solo per bonifica sicurezza** (sostituzione con env, nessun rewrite runtime);
+- registri `company/REGISTRO-IMPRESA.md`, `company/skills-map.yaml`, Memory e wiki (solo conductor a chiusura).
+
+**Fuori scope / non toccare:** `EmpireDesk/` e soprattutto `EmpireDesk/platform/`/UI (ownership Max), Outreach, PreventivoForge, runtime carousel-factory esistente. Nessuna pubblicazione LIVE e nessuna spesa: prima dry-run, token-health e gate. Il ciclo si chiude con CP, gate/test, rimozione di questo blocco e push.
+
 ## 🚨🚨🚨 ORDINE MAX 2026-07-20 — PIVOT: EMPIRE DESK = AUREUS AGENCY OS TRASFORMATA IN APP (leggere dossier 17 §0-bis)
 **Max ha bocciato la UI launcher v0.1/v2** (struttura sbagliata: questa è l'app GESTIONALE del team,
 non un derivato PreventivoForge). Base nuova = piattaforma di Max **"Aureus Agency OS"** (repo
