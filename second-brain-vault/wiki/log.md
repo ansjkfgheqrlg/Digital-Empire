@@ -1,5 +1,18 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-20 (FORGE-AGENT-SKILL — MIR-9: topology.md obbligatorio per team)
+- BUILD: `templates/TOPOLOGY-TEMPLATE.md` (canonico ADR-008: tipo hier/pipeline/mesh/queen-swarm motivato,
+  nodi = solo agenti 7-file reali [no agenti fantasma], entry point, edges con contratti input→output,
+  escalation FAIL×2, memory touchpoints ADR-002, observability, kill-criteria, schema ASCII; regola:
+  UNA pagina di puntatori — se non ci sta, il design è troppo complesso) + **R2-bis** in rules/ + step 6
+  WF-AGENT-NEW + qa-gate checklist p.1 estesa.
+- DOGFOODING: `FORGE-AGENT-SKILL/TOPOLOGY.md` — prima topology pubblica dell'impero: pipeline con gate
+  finale (N0 conductor → N1/N2 smiths → N3 qa-gate → registrazione), 6 edges con contratti, escalation,
+  kill-criteria 30gg-inattività. Esempio di riferimento nel template.
+- Trigger check ASK-PROTOCOL: T1-T4 assenti (task procedurale additivo) → 0 domande (documentato in CP).
+- Update: pagina [[tools/Tool_Forge_Agent_Skill_Reparto]], REGISTRO-IMPRESA §3, dossier 18 (inv. 9 ✅, MIR-9 ✅),
+  STATO RIPRESA. CP-20260720-013.
+
 ## 2026-07-20 (MIR-12 — Review APSOC sito istituzionale Agency page)
 - REVIEW: `Agency page - Copia/COPY-REVIEW-APSOC-SITO.md` — audit completo 13 sezioni del sito evoluto
   (metodo APSOC/CPB: la stessa dottrina `CPB_Gestioneobiezioni.md` del repo). Score **78/100** (gate 85).

@@ -18,8 +18,9 @@ failure-modes, memory), con gate bloccante e intestazione ADR-008 obbligatoria. 
 - **Sede:** `FORGE-AGENT-SKILL/` (root) — README (missione + DONE WHEN), agents/ (roster: fas-conductor,
   fas-agent-smith, fas-skill-smith, fas-qa-gate), workflows/ (WF-AGENT-NEW, WF-SKILL-NEW, **ASK-PROTOCOL** —
   MIR-3: sezione `## ASK` obbligatoria in ogni FORGE-PLAN, max 3 domande mirate con raccomandazione+default
-  `[ASSUNZIONE]`; qa-gate p.7 la verifica),
-  rules/ (R1 mai riassunti · R2 7 canonici · R3 failure-modes · R4 niente orfani ADR-008), memory/.
+  `[ASSUNZIONE]`; qa-gate p.7 la verifica), templates/ (**TOPOLOGY-TEMPLATE** — MIR-9),
+  **`TOPOLOGY.md` del reparto** (dogfooding R2-bis: nessun team esce senza topology.md),
+  rules/ (R1 mai riassunti · R2 7 canonici · R2-bis team senza topology.md non esiste · R3 failure-modes · R4 niente orfani ADR-008), memory/.
 - **Motori (wrap ADR-003):** [[Tool_Content_Forge_2]] (`/forge`) · [[Tool_Master_Build_Architecture]] (metodo).
 
 ## Flusso

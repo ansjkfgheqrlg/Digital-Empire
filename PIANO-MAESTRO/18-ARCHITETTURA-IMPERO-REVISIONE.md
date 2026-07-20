@@ -34,7 +34,7 @@ Ogni gap diventa miglioria MIR-w (Miglioria Impero Workflow) con owner e gate, n
 | 6 | Failure-modes di prima classe | ⚠️ solo PreventivoForge/EmpireDesk hanno REGISTRO-ERRORI | MIR-6: REGISTRO-ERRORI.md obbligatorio in ogni runtime attivo (outreach, carousel, YouTube kit) — regola già Max 07-05, ora standardizzata |
 | 7 | Traceability sorgente→output | ✅ Empire Studio (P12); ⚠️ altrove manuale | MIR-7: ogni FORGE-PLAN dichiara sorgenti; coverage-check nei gate (fas-qa-gate lo fa) |
 | 8 | Research→Plan→Reset→Implement | ✅ praticato (swarm fresh per fasi) | MIR-8: codificarlo nel ciclo a 9 passi come nota metodo (no ADR nuovo) |
-| 9 | Swarm (hier/mesh/pipeline) | ✅ swarm paralleli già usati | MIR-9: topology.md richiesto per ogni team nuovo da FORGE-AGENT-SKILL |
+| 9 | Swarm (hier/mesh/pipeline) | ✅ **closed 2026-07-20 (MIR-9, CP-20260720-013)**: `topology.md` obbligatorio per team ≥2 agenti (R2-bis + template + gate) — dogfooding: `FORGE-AGENT-SKILL/TOPOLOGY.md` | (chiuso) |
 | 10 | Meta-ricorsione (skill che fa skill) | ✅ OGGI: FORGE-AGENT-SKILL + content-forge + master-build-architecture | MIR-10: prima auto-applicazione: retrofit MIR-5 guidato dal reparto stesso |
 
 ---
@@ -71,7 +71,7 @@ codice/cantiere aperto di altri owner — produce solo le migliorie MIR su asset
 | MIR-6 | REGISTRO-ERRORI.md in ogni runtime attivo | ogni reparto owner | METHOD-GUARD | P1 — ✅ outreach+carousel+youtube-kit 2026-07-20 (PreventivoForge/EmpireDesk ce l'avevano già) |
 | MIR-7 | FORGE-PLAN con sorgenti dichiarate (traceability) | FORGE-AGENT-SKILL | qa-gate | P1 |
 | MIR-8 | Nota metodo Research→Plan→Reset→Implement in `PIANO-MAESTRO/10-METODO-CICLO-FASE.md` | Max (approva) | — | P3 |
-| MIR-9 | topology.md obbligatorio per team nuovi | FORGE-AGENT-SKILL | qa-gate | P2 |
+| MIR-9 | topology.md obbligatorio per team nuovi | FORGE-AGENT-SKILL | qa-gate | P2 — ✅ FATTA 2026-07-20: `templates/TOPOLOGY-TEMPLATE.md` + R2-bis + WF-AGENT-NEW step 6 + gate p.1 + `FORGE-AGENT-SKILL/TOPOLOGY.md` (dogfooding) |
 | MIR-10 | Auto-applicazione: retrofit guidato dal reparto | FORGE-AGENT-SKILL | — | P3 |
 | MIR-11 | Skill `/youtube-lead-machine` + agenti yt-* (backlog reparto) | FORGE-AGENT-SKILL → 04-MARKETING | fas-qa-gate | **P0 candidato prossimo passo** |
 | MIR-12 | Copy review APSOC su `Agency page*-` + eventi tracking uniformi | 04-MARKETING | A8 ≥85 | P2 — ✅ REVIEW 2026-07-20: 78/100, 5 P0 consegnati + schema eventi uniforme; ⏳ applicazione patch = corsia Max (CP-20260720-012) |

@@ -12,6 +12,8 @@ Ultimo passaggio prima della registrazione: niente esce dal reparto senza verbal
 
 ## Checklist di gate (tutti bloccanti)
 1. **7 file canonici presenti** (o formato skill completo per skill) — niente stub, niente TODO/placeholder.
+   **Se team (MIR-9, R2-bis):** anche `topology.md` compilato (tipo motivato, nodi = agenti 7-file reali
+   — no agenti fantasma — edges con contratti, escalation, memory touchpoints, kill-criteria).
 2. **MKD esiste** e copre la sorgente: coverage atomi ≥95% nel MKD (campione di 20 atomi a sorte).
 3. **Failure-modes.md** con ≥5 righe compilate; **evals.md** con ≥5 casi e atteso.
 4. **Intestazione ADR-008** presente in testa a spec.md/SKILL.md (proprietario/controllore/origine/governo reali — mai inventati).

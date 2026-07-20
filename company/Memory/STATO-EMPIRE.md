@@ -125,8 +125,10 @@ Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow
    ADR-009 scritto, REGISTRO-IMPRESA §3, skills-map v1.2 (60 mappati), 4 pagine wiki tool.
 **RIPRESA DA (salvo diverso ordine):** ✅ WF-SKILL-NEW (CP-005) · ✅ MIR retrofis + MKD brand-offer (CP-006) ·
 ✅ MIR-3 ASK formale (`workflows/ASK-PROTOCOL.md` + step nelle 2 WF + qa-gate p.7, CP-20260720-009) ·
-✅ magnet #2 checklist CRO 21 punti (W7, APSOC 93/100, CP-20260720-010 — resta export PDF grafico Max/Gael).
-Prossimi backlog reparto: valutazione agenti yt-*/vendita (con Max) · MIR-12 copy APSOC Agency page* (P2) · MIR-9 topology.md (P2) · MIR-5 retrofit 7-file (P3).
+✅ magnet #2 checklist CRO 21 punti (W7, APSOC 93/100, CP-20260720-010 — resta export PDF grafico Max/Gael) ·
+✅ MIR-12 review sito Agency (78/100, 5 P0, ASK Q1-Q3 → Max, CP-20260720-012) ·
+✅ MIR-9 topology.md obbligatorio team (R2-bis + template + gate + `TOPOLOGY.md` reparto dogfooding, CP-20260720-013).
+Prossimi backlog reparto: valutazione agenti yt-*/vendita (con Max) · MIR-5 retrofit 7-file pre-impero (1 figlio/sprint, P3).
 NOTA BENE per Gael/altre sessioni: non sovrascrivere `master-build-architecture/` col clone GitHub fresco
 (la copia main è più completa — decisione in ADR-009 punto 3).
 

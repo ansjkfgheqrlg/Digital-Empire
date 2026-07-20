@@ -10,7 +10,7 @@
 | 3 | `/forge <sorgente>` → **MKD** (mai riassunti; coverage 100%) | agent-smith | MKD |
 | 4 | FORGE-PLAN (slug, 7-file plan, handoff, criteri gate) | conductor | piano in `memory/plans/` |
 | 5 | **ASK (MIR-3, obbligatorio):** sezione `## ASK` nel FORGE-PLAN compilata per `ASK-PROTOCOL.md` — max 3 domande mirate con raccomandazione+default, oppure "0 domande" motivata. Default `[ASSUNZIONE]` propagati nel piano | conductor | sezione ASK compilata |
-| 6 | BUILD 7 file canonici (write-early; swarm se >1 agente) | agent-smith | cartella agente/team |
+| 6 | BUILD 7 file canonici (write-early; swarm se >1 agente) + **`topology.md` se il deliverable è un team ≥2 agenti** (MIR-9, R2-bis — da `templates/TOPOLOGY-TEMPLATE.md`; esempio: `TOPOLOGY.md` del reparto) | agent-smith | cartella agente/team |
 | 7 | Self-review dello smith (1 giro) | agent-smith | v0.9 |
 | 8 | GATE bloccante (checklist 7 punti; punto 7 verifica sezione `## ASK`) | qa-gate | verbale PASS/FAIL |
 | 9 | Registrazione ADR-008 (REGISTRO-IMPRESA + skills-map se skill) + CP globale | conductor | artefatto intestato |
