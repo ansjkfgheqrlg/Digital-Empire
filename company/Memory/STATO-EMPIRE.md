@@ -34,10 +34,16 @@ esterni residui, verificato in dist/assets/*.js — zero impatto grafico).
 (8 tile + 4 moduli licenze/metrics/revenue/scheduler + platform); finestra chrome-app aperta via
 `avvia-app.bat` → **Aureus si apre come l'app stessa**, HTML servito confermato (5.6KB, root `/`).
 
-**▶️ ORA IN CORSO — U1 (fase 2, Max/Claude):** operatività dentro Aureus nel suo linguaggio grafico
-(sezione Automations → flussi reali delle 8 tile, pannelli metrics/revenue/licenze in stile Aureus
-invece dei panel_html provvisori). **GAEL → G2 in parallelo:** build exe con dist inclusa + test
-doppio click. Promemoria: dopo pull, dentro `platform/`: `npm install && npm run build` (gitignorati).
+**▶️ U1 (fase 2, Max/Claude) — IN CORSO:** operatività dentro Aureus nel suo linguaggio grafico.
+- ✅ **slice 1 (`abe4b5b8`):** pagina Automations → nuova sezione additiva "Operazioni Reali —
+  Digital Empire" con le 8 tile vere (card stile Aureus nativo, badge stato/exit code, input
+  url/path, log live). Bridge `utils/empireApi.ts` (same-origin fetch, funziona sia chrome-app
+  che pywebview perché entrambi servono via lo stesso HTTP server). Verificato: `tsc --noEmit`
+  pulito, build pulita, schema Python↔TS combaciante, app reale riavviata e /api/tiles raggiungibile.
+- ⬜ **slice 2 (prossima):** pannelli metrics/revenue/licenze in stile Aureus (sostituiscono i
+  panel_html provvisori dei moduli A1-A3 di Max — dati/route restano quelli, cambia solo la UI).
+**GAEL → G2 in parallelo:** build exe con dist inclusa + test doppio click. Promemoria: dopo pull,
+dentro `platform/`: `npm install && npm run build` (gitignorati).
 **Piano vincolante e completo: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` §5 (appena scritto, leggerlo TUTTO).**
 Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'altro half** (lezione PreventivoForge).
 
