@@ -16,10 +16,16 @@ Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'
   + switcher pannelli UI. Dopo B1 core in FREEZE (si estende solo via modules/).
 - **B2** scheduler run programmate · **B3** notifiche fine-run · **B4** taskboard live. Dettagli §5.1.
 
-**▶️ MAX — Half A «Dati & Business» (owner: 4 moduli NUOVI, zero collisione col core):**
-- **A1** `modules/metrics.py` (metriche settimana dossier 16 §4, SOLO dati reali) · **A2** `modules/revenue.py`
-  (pipeline S1 concessionari) · **A3** `modules/licenze.py` (wrap gestione-licenze.py, kill-switch già suo) ·
-  **A4** `modules/fliki.py` (WF-YT, quando S5 pronto). Scrivibili DA SUBITO a contratto §5.3; si integrano al push di B1.
+**✅ MAX — Half A: A1+A2+A3 SCRITTI E TESTATI (2026-07-19 sera, selftest 3/3 PASS):**
+- ✅ **A1** `EmpireDesk/modules/metrics.py` — 6/6 fonti reali (probe live: LinkedIn 6 righe oggi,
+  458 email in coda, 52 PDF preventivi ultimi 7gg — numeri VERI letti dai file, mai inventati).
+- ✅ **A2** `EmpireDesk/modules/revenue.py` + `state/revenue.json` — pipeline 7 slot (Max compila
+  nomi/stati), route `revenue/aggiorna` per aggiornare un campo alla volta.
+- ✅ **A3** `EmpireDesk/modules/licenze.py` — wrap di gestione-licenze.py (verificati: script,
+  licenze.config.json, gh CLI). Sospendi con conferma UI. Zero secrets nell'app.
+- ⬜ **A4** fliki: parte quando S5 pronto.
+- Tutti a contratto §5.3 (`MODULE{id,tile,routes,panel_html}` + `selftest()` probe-only).
+  **GAEL: al tuo B1 (loader modules/) questi 3 si accendono da soli — NON toccarli (§5.4 regola 1).**
 
 **Sequenza: B0 (oggi) → B1 → parallelo pieno A1-A4 ∥ B2-B4. Ogni task chiuso = commit+push+questo blocco aggiornato.**
 *(Nota per Gael: se una sessione Claude ti dice "questa task non esiste" → git pull fallito per rete
@@ -29,7 +35,38 @@ Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'
 numerazione vecchia. Rimosso: vale il blocco qui sopra; nel dossier la divisione è la **§5**.
 Stesso contenuto, nessun task cambiato. Ordine del giorno Gael dopo B1: task revenue dossier 16.)*
 
-## 🎬 YOUTUBE LEAD MACHINE — AVVIATO (2026-07-19 sera, CP-20260719-004)
+## ⚠️ GAEL — EMPIRE DESK: P1-P3 FATTI, P4 BLOCCATO (2026-07-19, CP-20260719-004) — RIPRESA QUI
+**Cartella nuova `EmpireDesk/` (root del repo).** P1 (shell 3-motori + 8 tile UI) e P2-P3
+(TileManager generico: subprocess reale + poll log-live + selftest, copre TUTTE le 8 tile con
+lo stesso meccanismo) FATTI. Motore GUI: **Chrome-app → pywebview → Tkinter** (non pywebview-primo
+come diceva il dossier alla lettera — applicato subito il pattern evoluto post CP-20260715-001,
+per non ripetere il bug WebView2-silenzioso).
+**3 bug reali trovati e corretti in revisione statica del codice** (io/conductor, riga per riga —
+vedi `EmpireDesk/REGISTRO-ERRORI.md` per il dettaglio):
+1. tile Python usavano `sys.executable` risolto all'import → da `.exe` congelato è `EmpireDesk.exe`
+   stesso, non un interprete Python (avrebbe rilanciato l'app). Fix: risoluzione a runtime.
+2. `.bat` lanciato senza `cmd.exe /c` rischia `WinError 193` su Windows. Fix: sempre `cmd.exe /c`.
+3. `AVVIA-EMAIL-LIVE.bat`/`_avvia_ig.bat` finiscono con `pause` → senza `stdin` chiuso il
+   subprocess resta appeso per sempre (tile bloccata su "in corso" a vita). Fix: `stdin=DEVNULL`.
+**Trovato ma NON toccato (EDE-2, fuori scope):** `run_daily.bat` (LinkedIn) + i 2 bat sopra hanno
+path hardcoded di UN'ALTRA macchina (`c:\Users\Utente\...`) — su questo PC potrebbero fallire al
+lancio. Non è un bug di EmpireDesk: sono script del runtime Outreach ATTIVO (ADR-003, wrap non
+riscrittura) — segnalato, va sistemato nei bat originali (path relativi), non qui.
+**🛑 BLOCCO reale per chiudere P4 oggi:** l'ambiente di esecuzione di questa sessione Claude Code
+**non ha Python né Node.js installati** (solo stub Microsoft Store 0-byte) → non è stato possibile
+eseguire `python app.py --selftest` né buildare l'exe con PyInstaller qui. Codice verificato SOLO
+staticamente. **RIPRESA (chiunque continui, Max o Gael, su una macchina con Python+Node+Chrome —
+il PC dove gira già PreventivoForge):**
+1. `cd EmpireDesk && python app.py --selftest` → deve dare 8/8 PASS (o correggere quel che manca).
+2. `python app.py` (dev) → verificare a occhio la GUI (nessun errore grafico, palette slate+argento+
+   arancio `#fb4604`, le 8 tile, il pannello log, il bottone Selftest in UI).
+3. Provare a lanciare 1-2 tile vere (es. STATO Empire = sola lettura, sicura; PreventivoForge)
+   per vedere il log live e l'exit code.
+4. `EmpireDesk/build_exe.bat` → `dist/EmpireDesk/EmpireDesk.exe`, testare doppio-click.
+5. CP finale + aggiorna questo file + wiki/log + push.
+Dettaglio completo: `company/Memory/checkpoints/CP-20260719-004.md`.
+*(Nota: questo checkpoint era numerato -002 in locale, ma quel numero era già usato su GitHub da ADR-008 — rinumerato -004 in fase di risoluzione conflitto sync 2026-07-19 21:xx.)*
+## 🎬 YOUTUBE LEAD MACHINE — AVVIATO (2026-07-19 sera, CP-20260719-007)
 Ingest completi i 7 video di `Formazzione/Youtube/` (5× Media Profit metodo completo, Hormozi lead magnet,
 Think Media framework) + 2 infografiche → **strategia operativa pronta: `Formazzione/Youtube/STRATEGIA-
 YOUTUBE-LEAD-MAGNET.md`** (8 sezioni: mindset views≠clienti, posizionamento Schwartz, 4 pilastri editoriale,
@@ -66,6 +103,15 @@ file, cross-link coerenti tra i 4 core + verso 00/04/11-PIANO-MAESTRO. **Review 
 (manuale, 5-bis Maximilian non ancora attivo/V2-3): letti a campione 05 e 06b, qualità alta,
 coerenti col formato di 04-MARKETING-V2. 1 refuso minore corretto (path duplicato in un
 blockquote). `V2-INDEX.md` aggiornato (8/9 ecosistemi blueprint, ~477 agenti progettati totali).
+
+---
+
+## ✅ MAX — Skill ufficiale `master-app-builder` installata (2026-07-19, CP-20260719-005)
+Installata in `.claude/skills/master-app-builder/SKILL.md` la skill richiesta da Max per costruire app in modo metodico. Basata sulla bozza più ricca trovata già nella root (`master-app-builder-skill/`, v2.1), non sul v2.0 incollato in chat. Aggiunta **Fase 0.0 — pattern mining**: prima di progettare, cerca precedenti riusabili nel repo (PreventivoForge/Novacar in `Clienti/Prof Autocad/preventivo-forge/`, EmpireDesk) invece di reinventare stack/pattern — coerente con ADR-003. Tie-in di governance con `06a-PLATFORM/L2.2 PRODUCT-ENGINEERING` (uso) e `06b-FORGE/L2.1 SKILL-WORKS` (proprietà skill), letti dai dossier V2 reali, non inventati. Comando: `/master-app-builder`. Verificata presente nell'elenco skill disponibili di Claude Code dopo l'installazione. **NON tocca** l'ordine EMPIRE DESK su Gael qui sopra: task parallelo di Max, nessun conflitto di area. Trovata anche `master-build-architecture/` (root, untracked) con contenuto in inglese non verificabile (path Linux, GitHub esterni, PAT) da una sessione in un ambiente diverso da questo repo — NON usata come fonte, solo segnalata. Dettaglio: `company/Memory/checkpoints/CP-20260719-005.md`.
+*(Nota: questo checkpoint era numerato -003 in locale, ma quel numero era già usato su GitHub dalla divisione metà/metà Empire Desk — rinumerato -005 in fase di risoluzione conflitto sync.)*
+
+## ⚠️ PROBLEMA RISOLTO — Conflitto di sync + collisione numerazione checkpoint (2026-07-19, sessione Max)
+Il repo era diviso "ahead 1, behind 26" da GitHub (rebase automatico fallito alle 20:37/20:43, vedi ex-`SYNC-CONFLICT.txt`, ora cancellato). Causa: due checkpoint locali (`CP-20260719-002` P1-P3 Empire Desk e `CP-20260719-003` skill master-app-builder) collidevano di numero con due checkpoint reali già su GitHub (`CP-20260719-002` ADR-008 e `CP-20260719-003` divisione metà/metà). Risolto rinumerando i due locali in `CP-20260719-004`/`CP-20260719-005` (contenuto conservato integralmente, nessun dato perso) e aggiornando tutti i riferimenti incrociati in `STATO-EMPIRE.md`/`INDEX.md`. Rebase completato e pushato. Lock file stantio `.git/empire-sync.lock` rimosso (età >5min, lo script lo avrebbe rimosso comunque al giro successivo).
 
 ---
 

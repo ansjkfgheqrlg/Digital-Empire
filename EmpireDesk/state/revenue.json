@@ -1,0 +1,14 @@
+{
+  "_nota": "Pipeline S1 (dossier 16) — 7 concessionari quasi-confermati. COMPILA Max: nomi reali e stati. Stati validi: da_contattare | contattato | demo_fatta | anticipo_promesso | incassato | perso. Nessun dato inventato: 'da_compilare' = slot vuoto.",
+  "aggiornato": "2026-07-19",
+  "concessionari": [
+    {"id": "conc-1", "nome": "da_compilare", "stato": "da_contattare", "canale": "", "note": ""},
+    {"id": "conc-2", "nome": "da_compilare", "stato": "da_contattare", "canale": "", "note": ""},
+    {"id": "conc-3", "nome": "da_compilare", "stato": "da_contattare", "canale": "", "note": ""},
+    {"id": "conc-4", "nome": "da_compilare", "stato": "da_contattare", "canale": "", "note": ""},
+    {"id": "conc-5", "nome": "da_compilare", "stato": "da_contattare", "canale": "", "note": ""},
+    {"id": "conc-6", "nome": "da_compilare", "stato": "da_contattare", "canale": "", "note": ""},
+    {"id": "conc-7", "nome": "da_compilare", "stato": "da_contattare", "canale": "", "note": ""}
+  ],
+  "incassi": []
+}

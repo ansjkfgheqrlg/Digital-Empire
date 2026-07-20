@@ -97,9 +97,9 @@ TILES = [
     },
     {
         "id": "caroselli", "icon": "\U0001F3A8", "name": "Caroselli",
-        "desc": "Batch caroselli (carousel-factory)",
-        "kind": "node", "script": "scripts/generate.js",
-        "cwd": "Workfolw crea caroselli à/carousel-factory", "input": None,
+        "desc": "Genera 1 carosello da un file JSON (brand/titolo/slide)",
+        "kind": "node", "script": "Workfolw crea caroselli à/carousel-factory/scripts/generate.js",
+        "cwd": "Workfolw crea caroselli à/carousel-factory", "input": "path",
     },
     {
         "id": "studio", "icon": "\U0001F3AC", "name": "Empire Studio",
@@ -221,11 +221,21 @@ class TileManager:
             ok, detail = self._resolve_check(tile)
             if not ok:
                 return {"ok": False, "error": f"non lanciabile: {detail}"}
-            if tile.get("input") == "url" and not (user_input or "").strip():
-                return {"ok": False, "error": "serve un URL"}
+            if tile.get("input") and not (user_input or "").strip():
+                return {"ok": False, "error": "questa tile richiede un input (vedi il campo sulla card)"}
+            resolved_input = (user_input or "").strip()
+            if tile.get("input") == "path" and resolved_input:
+                # accetta assoluto, relativo alla cwd della tile, o relativo alla radice del repo
+                candidates = [Path(resolved_input)]
+                if not Path(resolved_input).is_absolute():
+                    candidates += [REPO_ROOT / tile["cwd"] / resolved_input, REPO_ROOT / resolved_input]
+                found = next((c for c in candidates if c.exists()), None)
+                if not found:
+                    return {"ok": False, "error": f"file non trovato: {resolved_input}"}
+                resolved_input = str(found)
             cmd = self._build_argv(tile)
-            if tile.get("input") == "url":
-                cmd = cmd + [user_input.strip()]
+            if tile.get("input"):
+                cmd = cmd + [resolved_input]
             cwd = str(REPO_ROOT / tile["cwd"])
             job = _Job()
             job.running = True

@@ -1,0 +1,40 @@
+name: Repository Quality Gates
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["main", "master"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Validate skill and regression suite
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Compile Python sources
+        run: python -m py_compile scripts/*.py tests/test_skill_tools.py
+
+      - name: Validate governance and repository structure
+        run: python scripts/validate_skill.py --root .
+
+      - name: Run structural evaluations
+        run: python scripts/run_evals.py
+
+      - name: Run regression suite
+        run: python -m unittest discover -s tests -v
+
+      - name: Verify Git whitespace
+        run: git diff --check
