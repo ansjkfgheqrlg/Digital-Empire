@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "slug": "mentalita-brutale",
+  "display_name": "Mentalità Brutale",
+  "handle": "@mentalita.brutale",
+  "promise": "Verità operative su disciplina, identità, ambizione e libertà personale, senza motivazione vuota.",
+  "audience": {
+    "primary": "Italiani 20-40 anni che sentono distanza tra ambizione e disciplina quotidiana",
+    "jobs_to_be_done": [
+      "rompere l'inerzia",
+      "costruire disciplina e standard personali",
+      "tradurre idee di crescita in azioni concrete",
+      "sentirsi compresi senza essere consolati"
+    ],
+    "excluded": [
+      "diagnosi cliniche",
+      "consulenza finanziaria",
+      "promesse di ricchezza o risultati garantiti"
+    ]
+  },
+  "voice": {
+    "attributes": ["diretta", "cruda", "lucida", "autorevole", "concreta"],
+    "sentence_style": "frasi brevi; una tesi per blocco; contrasto netto; chiusura azionabile",
+    "allowed_intensity": "forte senza umiliare, minacciare o diagnosticare",
+    "forbidden": [
+      "motivazione generica",
+      "finta urgenza",
+      "risultati garantiti",
+      "citazioni inventate",
+      "attacchi a categorie protette",
+      "glorificazione dell'autolesionismo",
+      "consigli medici, psicologici o finanziari presentati come professionali"
+    ]
+  },
+  "visual": {
+    "palette": {
+      "background": "#0A0A0A",
+      "blood_red": "#8B0000",
+      "silver": "#C0C0C0",
+      "primary_text": "#FFFFFF",
+      "muted_text": "#777777"
+    },
+    "fonts": {"display": "Anton", "body": "Inter"},
+    "motifs": ["metallo spezzato", "cervello", "catena", "orologio", "lucchetto", "fuoco controllato"],
+    "treatment": ["dark", "alto contrasto", "grana cinematografica", "vignetta", "rosso come accento"],
+    "anti_patterns": ["poster motivazionale luminoso", "stock sorridente", "testo illeggibile", "rosso usato ovunque senza gerarchia"]
+  },
+  "content_pillars": [
+    {"id": "P1", "name": "Disciplina operativa", "share": 0.30},
+    {"id": "P2", "name": "Identità e standard", "share": 0.25},
+    {"id": "P3", "name": "Ambizione e lavoro", "share": 0.20},
+    {"id": "P4", "name": "Relazioni, confini e solitudine", "share": 0.15},
+    {"id": "P5", "name": "Storie e leggi del potere", "share": 0.10}
+  ],
+  "cta_ladder": [
+    "salva per applicarlo",
+    "condividi con chi ne ha bisogno",
+    "segui @mentalita.brutale",
+    "rispondi con una parola diagnostica",
+    "link in bio verso una risorsa coerente"
+  ],
+  "source_of_truth": "Workfolw crea caroselli à/carousel-factory/brands/mentalita-brutale/config.json",
+  "last_updated": "2026-07-20"
+}

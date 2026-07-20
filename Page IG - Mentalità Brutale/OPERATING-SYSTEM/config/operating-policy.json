@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "brand": "mentalita-brutale",
+  "initial_mode": "SHADOW",
+  "target_mode": "CERTIFIED_AUTO",
+  "modes": {
+    "SHADOW": "genera, valida e pianifica; nessuna chiamata di pubblicazione",
+    "SUPERVISED": "pubblicazione reale per singolo contenuto con conferma esplicita",
+    "CERTIFIED_AUTO": "lo scheduler può pubblicare contenuti con tutti i gate PASS senza conferma per-post",
+    "PAUSED": "blocco totale di ogni side effect"
+  },
+  "live_guards": {
+    "environment_flag": "MB_LIVE_PUBLISH_ENABLED=YES",
+    "required_mode": "CERTIFIED_AUTO",
+    "kill_switch_must_be": "ACTIVE",
+    "idempotency": "content_hash unico",
+    "quality_gates": ["format", "brand", "copy", "rights", "safety"],
+    "token_health_required": true,
+    "publishing_limit_check_required": true
+  },
+  "certification": {
+    "dry_runs_passed_min": 5,
+    "required_evidence": [
+      "token_health_pass",
+      "sandbox_publish_pass",
+      "postcheck_pass",
+      "insights_pass",
+      "security_scan_pass"
+    ]
+  },
+  "publishing": {
+    "timezone": "Europe/Rome",
+    "max_posts_per_day_internal": 3,
+    "meta_limit_posts_rolling_24h": 100,
+    "insights_snapshots_hours": [48, 168],
+    "retry_attempts": 3,
+    "retry_backoff_seconds": [60, 300, 1800]
+  },
+  "learning": {
+    "minimum_examples_per_pattern": 3,
+    "never_promote_correlation_to_causation": true,
+    "baseline_window_posts": 8,
+    "change_one_primary_variable_per_test": true
+  }
+}

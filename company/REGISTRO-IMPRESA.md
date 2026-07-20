@@ -40,6 +40,7 @@
 | **Outreach Runtime** (email/LinkedIn/IG, 300+/gg) | 01-AGENCY / A2-Acquisizione | **Gate Bibbia** (ag-a2-qa) + rate caps | pre-Impero, wrappato ADR-003 | Art.2 + PII Art.7.2 |
 | **Copy Workflow Orchestration Layer** | 04-MARKETING / L2-1 Copywriting | gate copy L2-1-qa | pre-Impero, wrappato | Art.2 |
 | **carousel-factory** (brands: mentalita-brutale, …) | 03-CONTENT-FACTORY / CF-R5 | CF-R6 QA & Gate | pre-Impero, wrappato | Art.2 |
+| **MB-OS** (`Page IG - Mentalità Brutale/OPERATING-SYSTEM/`) | 03-CF/CF-R7 (runtime) + 05-MB (P&L) | CF-R6 indipendente + live guards + kill switch | Chief-Forge → ARCHITETTURA → FORGE, 2026-07-20 | ADR-002/003/006/008 · S4 dossier 16 · stato SHADOW finché non certificato |
 | **Empire Studio** (ingestione video → knowledge) | 10-MEMORY (knowledge) + Reparto Competitor Research | WATCH-001 match check | suite dedicata | ADR-002 (integrale, mai riassunti) |
 | **Manuale Claude Code** (prodotto S2) | 02-INFO-BUSINESS / IB-L2-PROD → VEND | ib-prod-qa + B-003 (prezzo da team-prezzi) | pre-Impero | Art.2 · ADR-005 |
 | **EmpireDesk.exe** (in build OGGI, Gael) | 06-CORE/Platform (interim: Genesi-Core) | selftest 8/8 tile + 5-bis | dossier 17 | Art.2 (zero bottoni finti) · ADR-003 (solo launcher) |
@@ -48,7 +49,7 @@
 
 | Canale | Proprietario | Controllore | Stream |
 |---|---|---|---|
-| pagina IG `mentalita.brutale` | 03-CF / CF-R7 Pubblicazione (pipeline) + 05-MB (P&L) | CF-R6 gate + condizione Max "solo se auto 100%" | S4 |
+| pagina IG `mentalita.brutale` | 03-CF / CF-R7 + MB-OS (API-first) + 05-MB (P&L) | CF-R6 + token/quota/idempotenza/kill switch; target CERTIFIED_AUTO, stato SHADOW | S4 |
 | pagina IG `crea.illtuo_impero` (+ pagine lancio CCM) | 04-MARKETING (funnel) + 02-INFO (prodotto) | gate copy + audit P0.2 | S3 |
 | canali YouTube Fliki (da creare) | 03-CF / WF-YT-* | WF-YT-ANALYZE + gate anti-copia | S5 |
 | 7 concessionari (relazioni) | MAX in persona + A7-Account-Management | A10-QA-Cliente | S1 |

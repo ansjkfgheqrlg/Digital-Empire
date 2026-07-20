@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "blocking_gates": {
+    "format": {
+      "caption_max_chars": 2200,
+      "carousel_items_min": 2,
+      "carousel_items_max": 10,
+      "image_extensions_live": [".jpg", ".jpeg"],
+      "video_extensions_live": [".mp4", ".mov"],
+      "public_url_scheme": "https",
+      "alt_text_required_for_images": true
+    },
+    "brand": {
+      "brand_slug": "mentalita-brutale",
+      "required_handle": "@mentalita.brutale",
+      "visual_palette": ["#0A0A0A", "#8B0000", "#C0C0C0", "#FFFFFF"],
+      "required_fonts": ["Anton", "Inter"]
+    },
+    "copy": {
+      "hook_required": true,
+      "cta_required": true,
+      "one_core_claim": true,
+      "source_required_for_factual_claims": true,
+      "forbidden_claim_fragments": [
+        "risultato garantito",
+        "guadagno garantito",
+        "cura",
+        "diagnosi",
+        "100% sicuro"
+      ]
+    },
+    "rights": {
+      "rights_confirmed_required": true,
+      "source_or_license_required": true,
+      "music_rights_required_for_video": true
+    },
+    "safety": {
+      "no_hate_or_harassment": true,
+      "no_self_harm_glorification": true,
+      "no_dangerous_challenges": true,
+      "no_deceptive_engagement": true
+    }
+  },
+  "non_blocking_scores": {
+    "hook_clarity_min": 80,
+    "mobile_readability_min": 85,
+    "brand_consistency_min": 90,
+    "actionability_min": 75
+  }
+}

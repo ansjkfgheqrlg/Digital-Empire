@@ -33,6 +33,7 @@ Benvenuto nella tua Knowledge Base iper-organizzata. Tutto il materiale di Digit
 ## 🏭 Riferimenti Architetturali (Sistemi Costruiti)
 - [[projects/Piano_Maestro_EMPIRE_OS|🏛️ PIANO MAESTRO EMPIRE OS]] — **IL piano fondativo di Digital Empire Group** (2026-06-10): holding di 10 ecosistemi di agenti AI, 10 dossier esecutivi in `PIANO-MAESTRO/`, roadmap F1→F12. Ecosistema 10 MEMORY già costruito (`company/Memory/` — memory-first obbligatorio: interroga prima, checkpoint dopo). Fase corrente: F1.
 - [[projects/Exponium/Exponium_Content_Factory_Studio|Exponium Content Factory (AION GROUP)]] — Holding AI enterprise per lancio Exponium. 6 ecosistemi, 8 reparti, Corporate Backbone, 68 quality check, pipeline UGC reale testata (2026-05-29). **Modello architettonico di riferimento per Digital Empire.**
+- [[01 - Projects/Mentalita_Brutale_MB_OS|Mentalità Brutale — Social Operating System]] — Tenant Instagram API-first (2026-07-20): Content Factory→QA→scheduler→Meta publish→Insights→learning, skill `mentalita-brutale-operator`, autonomia SHADOW→CERTIFIED_AUTO. Runtime costruito; OAuth/staging/canary live pendenti e dichiarati.
 
 ---
 

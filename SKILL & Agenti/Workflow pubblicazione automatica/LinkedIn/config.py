@@ -1,6 +1,5 @@
-# LinkedIn Configuration
+"""LinkedIn legacy browser publisher configuration. Credentials are environment-only."""
+import os
 
-LINKEDIN_EMAIL = "max.infoproducer@gmail.com"
-LINKEDIN_PASSWORD = "Max.23.09"
-
-# Qualsiasi altra impostazione specifica per LinkedIn
+LINKEDIN_EMAIL = os.environ.get("LINKEDIN_EMAIL", "")
+LINKEDIN_PASSWORD = os.environ.get("LINKEDIN_PASSWORD", "")

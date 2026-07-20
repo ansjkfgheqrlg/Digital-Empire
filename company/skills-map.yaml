@@ -526,7 +526,7 @@ nuovi_2026_07:
     stato: active
     note: "Pipeline ingestione integrale. Check WATCH-001. Andrei Pascu 9/29 al 2026-07-11."
 
-  - id: memory-empire
+  - id: memory-empire-global
     nome: Memory Empire (router + archivio integrale + enrichment)
     percorso: C:/Users/Utente/.claude/skills/memory-empire/ (skill utente)
     ecosistema: 10-MEMORY
@@ -553,6 +553,24 @@ nuovi_2026_07:
     stato: experimental
     note: "SCOUT->SCRIPT->RENDER(Fliki)->THUMB->PUBLISH->ANALYZE->IMPROVE. Chiave API in .env locale, MAI nel repo."
 
+  - id: mentalita-brutale-os
+    nome: Mentalità Brutale Social Operating System
+    percorso: "Page IG - Mentalità Brutale/OPERATING-SYSTEM/"
+    ecosistema: 03-CONTENT-FACTORY / 05-MULTI-BUSINESS
+    reparto: CF-R6 / CF-R7 / CF-R8 + P&L 05-MB
+    tipo: workflow
+    stato: experimental
+    note: "API-first Meta v25.0; produzione->QA->scheduler->publish->insights->learning. Runtime in SHADOW finché OAuth, staging e canary non certificano CERTIFIED_AUTO. ADR-003 wrap."
+
+  - id: skill-mentalita-brutale-operator
+    nome: Mentalita Brutale Operator
+    percorso: .claude/skills/mentalita-brutale-operator/
+    ecosistema: 03-CONTENT-FACTORY / 07-FORGE
+    reparto: Social Empire / Chief-Forge
+    tipo: skill
+    stato: active
+    note: "Router operativo memory-first + protocollo Content-Forge source->reference/rule/workflow/skill. Dry-run default, no fake-live."
+
 # ============================================================
 # ASSET NON ANCORA CLASSIFICATI (da verificare con Max)
 # ============================================================
@@ -570,10 +588,11 @@ da_classificare:
 # ============================================================
 
 stats:
-  totale_mappati: 57
-  active: 32
+  totale_mappati: 61
+  id_unici: 61
+  active: 43
   experimental: 15
-  legacy: 4
-  knowledge: 6
+  legacy: 3
+  knowledge: 9
   da_classificare: 3
-  aggiornamento: "2026-07-19 — +5 voci censimento ADR-008 (preventivoforge, empire-studio-suite, memory-empire, empire-desk, wf-yt-fliki)"
+  aggiornamento: "2026-07-20 — Ispettorato + MB-OS integrati; 61/61 ID unici; collisione memory-empire risolta (globale → memory-empire-global)"
