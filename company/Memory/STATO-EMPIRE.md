@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-07-20 (ordine Max: PIVOT AREUS Empire Desk · TOOLCHAIN VS CODE adottata · ADR-009 toolkit ufficiali)
+# STATO EMPIRE -- aggiornato 2026-07-20 (ordine Max: PIVOT AREUS — Empire Desk riparte dalla piattaforma Aureus · TOOLCHAIN VS CODE adottata · ADR-009 toolkit ufficiali · KIT YOUTUBE pronto · skill /youtube-lead-machine attiva)
 
 ## 🚨🚨🚨 ORDINE MAX 2026-07-20 — PIVOT: EMPIRE DESK = AUREUS AGENCY OS TRASFORMATA IN APP (leggere dossier 17 §0-bis)
 **Max ha bocciato la UI launcher v0.1/v2** (struttura sbagliata: questa è l'app GESTIONALE del team,
@@ -9,20 +9,41 @@ non un derivato PreventivoForge). Base nuova = piattaforma di Max **"Aureus Agen
 grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
 
 **▶️ GAEL — riprendi da qui (dettagli dossier 17 §0-bis):**
-- **G1 (per primo):** `app.py` serve `platform/dist/` come root (stessa origin delle API `/api/*`
-  esistenti) + finestra chrome-app → l'app che si apre È Aureus. Prima: `npm install` in platform/
-  (node_modules gitignorato) + `npm run build`. Vecchia `ui/index.html` → `/legacy` (fallback temporaneo).
-- **G2:** build exe con dist inclusa + test doppio click.
+- **G1 ✅ scritto (commit `85548a30`)**, verificato staticamente in una seconda sessione (2026-07-20
+  pomeriggio, questo blocco): `do_GET` riscritto correttamente — file-server statico su `platform/dist/`
+  con path-traversal guard (`is_relative_to`) + MIME via `mimetypes`, fallback SPA su `index.html` per
+  le route client-side di react-router, pagina di aiuto onesta se `platform/dist/` manca (mai bianco),
+  `/legacy` invariato, `main_chrome_app`/`main_webview` ora condividono lo stesso server locale via
+  `url=` (prima `main_webview` usava `html=` inline — corretto, Aureus è SPA multi-asset). `empiredesk.spec`
+  include `platform/dist`+`modules`+`state` nei `datas` (verificato: `modules/`+`state/` esistono e sono
+  tracciati, nessun rischio di build PyInstaller rotta per path mancante). Questa revisione era statica
+  (ambiente senza Python/Node/Chrome) — **da allora Max ha verificato G1 a runtime su macchina reale,
+  vedi blocco "✅ G1 CHIUSO E VERIFICATO END-TO-END" qui sotto: selftest 13/13 PASS.**
+- **G2 (prossimo, sbloccato — G1 verificato a runtime):** build exe con dist inclusa + test doppio click.
 - **G3:** B1-B4 restano (loader moduli/scheduler/notify/taskboard) = solo backend. Moduli A1-A3 di Max
   restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
 - **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.
 
-**▶️ MAX (via Claude):** U0 ✅ (import+build+anteprima) · **U0b ✅ offline-capable (2026-07-20,
-`9e86349b`)**: Tailwind runtime + font Inter vendorizzati in `platform/public/` (stesso motore/stessi
-woff2 = zero differenze grafiche; l'app ora gira senza internet — verificato live) · U1 in fase 2 =
-operatività dentro Aureus nel suo linguaggio grafico (Automations → flussi reali, pannelli
-metrics/revenue/licenze). GAEL: dopo il pull ricordati `npm install` + `npm run build` in platform/
-(node_modules e dist NON sono nel repo).
+**▶️ MAX (via Claude):** U0 ✅ (import+build+anteprima) · **U0b ✅ offline-capable (`9e86349b`)**:
+Tailwind+Inter vendorizzati · **U0c ✅ (`93cd525e`)**: importmap CDN morta rimossa (0 riferimenti
+esterni residui, verificato in dist/assets/*.js — zero impatto grafico).
+
+**✅ G1 CHIUSO E VERIFICATO END-TO-END (Gael `85548a30` + Max):** `app.py` serve `platform/dist/`
+(Aureus) come root, static file serving reale + fallback SPA + pagina d'aiuto onesta se dist manca.
+**Verificato con l'app VERA** (non script temporaneo): `python app.py --selftest` → **13/13 PASS**
+(8 tile + 4 moduli licenze/metrics/revenue/scheduler + platform); finestra chrome-app aperta via
+`avvia-app.bat` → **Aureus si apre come l'app stessa**, HTML servito confermato (5.6KB, root `/`).
+
+**▶️ U1 (fase 2, Max/Claude) — IN CORSO:** operatività dentro Aureus nel suo linguaggio grafico.
+- ✅ **slice 1 (`abe4b5b8`):** pagina Automations → nuova sezione additiva "Operazioni Reali —
+  Digital Empire" con le 8 tile vere (card stile Aureus nativo, badge stato/exit code, input
+  url/path, log live). Bridge `utils/empireApi.ts` (same-origin fetch, funziona sia chrome-app
+  che pywebview perché entrambi servono via lo stesso HTTP server). Verificato: `tsc --noEmit`
+  pulito, build pulita, schema Python↔TS combaciante, app reale riavviata e /api/tiles raggiungibile.
+- ⬜ **slice 2 (prossima):** pannelli metrics/revenue/licenze in stile Aureus (sostituiscono i
+  panel_html provvisori dei moduli A1-A3 di Max — dati/route restano quelli, cambia solo la UI).
+**GAEL → G2 in parallelo:** build exe con dist inclusa + test doppio click. Promemoria: dopo pull,
+dentro `platform/`: `npm install && npm run build` (gitignorati).
 **Piano vincolante e completo: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` §5 (appena scritto, leggerlo TUTTO).**
 Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'altro half** (lezione PreventivoForge).
 
@@ -58,7 +79,7 @@ Dossier 17 §5 aggiornato. Se hai modifiche locali non pushate a `ui/index.html`
 numerazione vecchia. Rimosso: vale il blocco qui sopra; nel dossier la divisione è la **§5**.
 Stesso contenuto, nessun task cambiato. Ordine del giorno Gael dopo B1: task revenue dossier 16.)*
 
-## 🧰 TOOLCHAIN VS CODE ADOTTATA (2026-07-20, CP-20260720-003) — scansione completa plugin + `.vscode/` committato
+## 🧰 TOOLCHAIN VS CODE ADOTTATA (2026-07-20, CP-20260720-008 — ⚠️ rinumerato: era -003, numero assegnato da main alla verifica G1 di Gael) — scansione completa plugin + `.vscode/` committato
 Dossier: **`PIANO-MAESTRO/19-TOOLCHAIN-VSCODE.md`** (scansione 14 categorie su censimento reale del repo:
 7.6k md / 867 py / 181 yaml → l'impero è conoscenza scritta + automazioni Python, non webapp).
 - **Tier 1 da installare subito (10):** Claude Code (`anthropic.claude-code`, agente UNICO), GitLens, GitHub PR,
@@ -70,13 +91,14 @@ Dossier: **`PIANO-MAESTRO/19-TOOLCHAIN-VSCODE.md`** (scansione 14 categorie su c
   **AZIONE MAX/GAEL:** aprire la repo in VS Code → «Install recommended extensions».
 - CP YouTube di questa sessione rinumerati **20260719-007→009** e **20260720-001→004** (collisioni add/add
   con B1 di Gael e con il pivot Aureus di Max nei merge di oggi).
+- **+2026-07-20 sera (merge main squashed):** CP blocchi rinumerati → toolchain = CP-20260720-008, ADR-009 = CP-20260720-007 (main ha preso -002/-003 per Gael).
 - **+2026-07-20 (CP-20260720-006):** MIR retrofis: memory/ + REGISTRO-ERRORI standardizzati nei runtime
   W1 Outreach, W4 caroselli, W7 YouTube kit (wrap ADR-003) + **MKD Brand-Offer DE** da Materiale Agency (MIR-2 chiusa).
 - **+2026-07-20 pomeriggio (CP-20260720-005):** prima skill forgiata dal reparto FORGE-AGENT-SKILL —
   **`/youtube-lead-machine`** attiva in `.claude/skills/` (MIR-11 chiuso; kernel+6 references+evals+failure-modes;
   GATE PASS 7/7). skills-map v1.3 (61 mappati). CP YouTube kit rinumerato -004.
 
-## 🏭 ADR-009 (2026-07-20, CP-20260720-002) — TOOLKIT UFFICIALI + REPARTO FORGE-AGENT-SKILL
+## 🏭 ADR-009 (2026-07-20, CP-20260720-007 — ⚠️ rinumerato: era -002, numero assegnato da main a Empire Studio 10/29) — TOOLKIT UFFICIALI + REPARTO FORGE-AGENT-SKILL
 Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow, mai workflow orfani»:
 1. **`copy-workflow/`** vendored = motore copy ufficiale (`/copywriting`, wrapper in `.claude/skills/`).
    Da oggi OGNI copy dell'impero passa di qui. Prima review fatta: kit YouTube (score 78-84 → 90-93,
@@ -92,6 +114,7 @@ Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow
 Prossimi backlog reparto: MIR-3 ASK formale nei FORGE-PLAN · valutazione agenti yt-*/vendita (con Max) · checklist PDF 21-punti.
 NOTA BENE per Gael/altre sessioni: non sovrascrivere `master-build-architecture/` col clone GitHub fresco
 (la copia main è più completa — decisione in ADR-009 punto 3).
+
 
 ## ✅ GAEL — RISOLTA COLLISIONE UI + PRESO ATTO OWNERSHIP (2026-07-19 sera, CP-20260719-008)
 **Al pull di questo blocco ho scoperto che Max aveva già ridisegnato `ui/index.html` in parallelo**
@@ -157,6 +180,7 @@ il PC dove gira già PreventivoForge):**
 5. CP finale + aggiorna questo file + wiki/log + push.
 Dettaglio completo: `company/Memory/checkpoints/CP-20260719-004.md`.
 *(Nota: questo checkpoint era numerato -002 in locale, ma quel numero era già usato su GitHub da ADR-008 — rinumerato -004 in fase di risoluzione conflitto sync 2026-07-19 21:xx.)*
+
 ## 🎬 YOUTUBE LEAD MACHINE — KIT DI LANCIO COMPLETO (agg. 2026-07-20, CP-20260720-004)
 Ingest completi i 7 video (CP-20260719-009) → strategia `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md`
 **→ ora anche il KIT ESEGUIBILE:** `CLIENTE-DORO.md` (ICP), `SETUP-CANALE.md` (copy pronta da incollare),
@@ -167,6 +191,7 @@ V06 prima→dopo) + 2 concept copertina. RIPRESA DA: eseguire setup canale con l
 gratuita 15 min" + automazioni → setup registrazione → **registrare batch #1 (ordine V03→V01→V02→V04→V06→V05,
 1 sessione da 4 ore)** → pubblicare 1-2/settimana + review dati settimanale.
 Complementare (non sovrapposto) a dossier 16 S5 YouTube-Fliki: questa è strategia contenuti/organico.
+
 
 ## ✅ GAEL — V2-2 LOTTO 3 COMPLETATO (2026-07-19, CP-20260719-001)
 **Chiuso PRIMA di vedere l'ordine EMPIRE DESK qui sopra (era già a buon punto); ora si passa
@@ -227,8 +252,16 @@ Il repo era diviso "ahead 1, behind 26" da GitHub (rebase automatico fallito all
    Gael: se testi PreventivoForge e trovi un errore, registralo lì. Prendi sempre l'ULTIMA build (git pull / zip rigenerato).
 
 
+## ✅ GAEL — Empire Studio: andrei-pascu-001 cat1-copywriting video 10/29 COMPLETATO (2026-07-20, CP-20260720-002)
+**RIPRESA DA: video 11/29 — `nRm7JLsP1bc` ("Basta usare formule clichè di copywriting") — Stage 1 (yt_ingest) da avviare, serve ambiente con Python/yt-dlp/ffmpeg (non presente in questa sessione)**
+Continuato il lavoro lasciato a metà da Max (Stage 1+2 già fatti l'11/07, Stage 3-9 mancanti). Pipeline completata per Ahp_6rHSOsU: Stage 3-5 + Stage 7 + Memory Empire C-H. 20 KA P12-traced. 2 wiki pages create. 16 VP schermo documentati. Tutorial 11m08s — 8 trucchi Google Docs (no-pagine, cartelle Clienti, heading/outline, note colorate, dropdown-stato/kanban, segnalibri, conteggio caratteri). Nessun brand terzo analizzato (video procedurale puro).
+- **Top KA**: No-pagine per copy digitale · Sistema cartelle Clienti visibile/non-visibile (rosso=warning) · Heading→outline navigabile · "Aggiorna intestazione" per batch-update stile · Dropdown stato = mini-kanban · "Lo uso per comodità degli altri, non mia"
+- **Visual Passages**: VP-003 menu File→Impostazione pagina · VP-007 outline popolato · VP-010 note gialle · VP-011/012 dropdown stato+badge · VP-013 segnalibro+link · VP-015 contatore parole live
+- **Nuovi Concetti**: Source_Andrei_Pascu_Google_Docs_Copywriter.md + Concept_Google_Docs_Copywriter_Workflow.md
+- **WATCH-001**: N_video=10, N_MemoryEmpire=10 → MATCH ✅
+
 ## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 9/29 COMPLETATO (2026-07-11, CP-20260711-001)
-**RIPRESA DA: video 10/29 — `Ahp_6rHSOsU` ("Usa Google Docs come un copywriter PRO") — Stage 1+2 DONE (668s=11m08s, 334 frame 3-digit, 9 capitoli)**
+**RIPRESA DA: video 10/29 — `Ahp_6rHSOsU` ("Usa Google Docs come un copywriter PRO") — Stage 1+2 DONE (668s=11m08s, 334 frame 3-digit, 9 capitoli) → COMPLETATO 2026-07-20, vedi blocco sopra**
 Pipeline completata per IWCHN_mE2Vo: Stage 1-5 + Stage 7 + Memory Empire C-H. 25 KA P12-traced. 2 wiki pages create. 12 VP schermo documentati. Live 1h02min — Meta Ads Library tutorial + analisi ads brand italiani (Carisma Shoes, La Palestra boxing, melone costume, Corte CAB VANIGLIA).
 - **Top KA**: Meta Ads Library "licenziato e fallire se non usi" · Video=conversione/Photo=retargeting · EU Transparency Reach 1770 Women 30-55 · Imprenditori italiani pieni di soldi · Chiarezza>Creativita "grande danno video incomprensibile"
 - **Visual Passages**: VP-002 Ad Library Latvia homepage · VP-004 filter stack 98 results Laurea Online · VP-006 EU Transparency Women 30-55 excl. Toscana+Veneto · VP-011 costume regale supermercato · VP-012 Corte CAB VANIGLIA

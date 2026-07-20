@@ -1,8 +1,13 @@
 # -*- mode: python ; coding: utf-8 -*-
 # PyInstaller spec per Empire Desk (app.py) — build onedir.
-# Uso:  python -m PyInstaller --noconfirm empiredesk.spec
+# Uso:  python -m PyInstaller --noconfirm empiredesk.spec  (PRIMA: build_exe.bat builda platform/)
 # Output:  dist/EmpireDesk/EmpireDesk.exe  (deve restare dentro il monorepo Digital Empire:
 # lancia le automazioni REALI con path relativi alla radice del repo, vedi _find_repo_root in app.py).
+#
+# ATTENZIONE (dossier 17 §0-bis, PIVOT AREUS): 'platform/dist' DEVE esistere prima di lanciare
+# questo spec (npm install + npm run build dentro platform/, fatto da build_exe.bat) — altrimenti
+# PyInstaller.Analysis fallisce (path 'datas' inesistente). 'modules' e 'state' inclusi così i
+# moduli A1-A3/scheduler e i loro dati (es. state/revenue.json) funzionano anche nell'exe frozen.
 
 block_cipher = None
 
@@ -12,6 +17,9 @@ a = Analysis(
     binaries=[],
     datas=[
         ('ui', 'ui'),
+        ('platform/dist', 'platform/dist'),
+        ('modules', 'modules'),
+        ('state', 'state'),
     ],
     hiddenimports=[
         # GUI premium (pywebview) + backend Windows (Edge WebView2) e fallback Tkinter

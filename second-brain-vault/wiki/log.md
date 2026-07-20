@@ -1,5 +1,40 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-20 (Empire Studio — video 10/29, Gael)
+- INGEST: Empire Studio — video Ahp_6rHSOsU (Andrei Pascu, cat1-copywriting, video 10/29). Formato tutorial screen-share 11m08s — Google Docs (macOS) + talking head PiP. Stage 1-5 completati: 334 frame @2s (3-digit naming), 16 frame letti nativamente, NO-FINTO PASS. 16 VP schermo: doc diviso pagine→senza pagine, menu File Impostazione pagina, Google Drive file list, outline heading popolato, note gialle "[inserire logo]"/"[inserire capibara]", menu dropdown stato, badge [in corso]/[da iniziare], indice+segnalibro, pannello Stili "Aggiorna Intestazione", contatore parole live, outro CTA. VTT 2505 righe letto integralmente (9 capitoli ufficiali del video). 20 KA P12-traced. Concepts: pulizia formato no-pagine, heading→outline navigabile, aggiorna stile in blocco, note colorate come heading dedicato, dropdown stato = mini-kanban, segnalibri+link, conteggio caratteri live, sistema cartelle Clienti visibile/non-visibile. → 2 pagine create: Source_Andrei_Pascu_Google_Docs_Copywriter, Concept_Google_Docs_Copywriter_Workflow. index.md +2 entry sezione Copywriting. WATCH-001: N_video=10 = N_MemoryEmpire=10 → MATCH ✅
+
+- INGEST/BUILD: clonati e integrati 3 toolkit ufficiali (`copy-workflow/`, `content-forge2.0/`, master-build-architecture su main confermata versione di riferimento); installati 3 wrapper in `.claude/skills/` (copy-workflow, content-forge, master-build-architecture).
+- BUILD: nuovo reparto `FORGE-AGENT-SKILL/` (4 agenti fas-*, WF-AGENT-NEW/WF-SKILL-NEW, rules R1-R4, memory/) per la creazione di nuovi agenti e skill — direttiva Max "impero con più workflow".
+- BUILD: `PIANO-MAESTRO/18-ARCHITETTURA-IMPERO-REVISIONE.md` (master-build-architecture applicata: 10 invarianti audit, 10 workflow mappa, 12 migliorie MIR) + ADR-009 + REGISTRO-IMPRESA + skills-map v1.2.
+- APPLY copy-workflow (MIR-2 P0): review APSOC kit YouTube → `Formazzione/Youtube/COPY-REVIEW-APSOC.md` (score 78-84→90-93; patch applicate: descrizione canale v2, hook V01 v2, varianti CTA).
+- → 4 pagine tool create (Copy_Workflow, Content_Forge_2, Master_Build_Architecture, Forge_Agent_Skill_Reparto). index.md aggiornato. CP-20260720-007 (era -002, rinumerato).
+
+## 2026-07-20 (Toolchain VS Code — scansione completa)
+- SCAN: censimento stack da `git ls-files` (8.123 png / 7.625 md / 867 py / 600 json / 596 tsx+ts / 471 go / 181 yaml / 107 pdf) + scansione Marketplace 14 categorie aggiornata al giorno (deprecazioni verificate: Cody Free discontinuato 2025-07-23, Dendron abbandonato, Ruff publisher `charliermarsh` confermato).
+- BUILD: `PIANO-MAESTRO/19-TOOLCHAIN-VSCODE.md` (Tier 1=10 subito / Tier 2=11 per area / Tier 3=12 opzionali / 8 sconsigliati con motivo; mappa W1-W10; gate verifica) + `.vscode/extensions.json` (22 raccomandate, 2 unwanted) + `.vscode/settings.json` (format-on-save OFF per ADR-003, telemetry OFF, spellcheck it+en).
+- Decisioni: agente AI = solo `anthropic.claude-code` (Copilot/Cody/Cline = duplicati esclusi); Markdown Memo abilita i wikilink `[[...]]` del vault in VS Code; niente markdownlint (rumore su 7.6k file legacy).
+- → 1 pagina tool creata ([[tools/Tool_VSCode_Toolchain]]), index.md +1. CP-20260720-008 (era -003, rinumerato).
+
+## 2026-07-20 (FORGE-AGENT-SKILL — prima skill forgiata: youtube-lead-machine)
+- BUILD: WF-SKILL-NEW completa (MIR-11): RECALL anti-doppione (script-factory e copy-workflow restano, delegati) → PLAN → MKD (25/25 atomi, `memory/mkd/`) → skill `.claude/skills/youtube-lead-machine/` (kernel 118r + references×6 + evals 7 scenari + failure-modes F1-F8) → evals loop con 3 ritocchi → **GATE fas-qa-gate PASS 7/7** (`FORGE-AGENT-SKILL/memory/checkpoints/GATE-youtube-lead-machine-2026-07-20.md`).
+- REGISTRAZIONE: skills-map v1.3 (61 mappati), REGISTRO-IMPRESA §3, STATO-EMPIRE, INDEX.
+- → 1 pagina tool creata ([[tools/Tool_Youtube_Lead_Machine_Skill]]), index.md +1. CP-20260720-005.
+
+## 2026-07-20 (FORGE-AGENT-SKILL — MIR retrofis + MKD brand-offer)
+- BUILD (MIR-1+6): memory locale + REGISTRO-ERRORI standardizzati per 3 runtime → `Outreach/` (OE-1..5),
+  `Workfolw crea caroselli à/` (CE-1..4), `Formazzione/Youtube/` (YE-1..3). Wrap ADR-003 (file aggiuntivi, 0 tocco runtime).
+- BUILD (MIR-2): MKD Brand-Offer DE (`FORGE-AGENT-SKILL/memory/mkd/MKD-brand-offer-DE.md`, 12 sezioni da 475 righe sorgente,
+  ➕ marcate, assumption ledger). Registrato in REGISTRO-IMPRESA §3.
+- → 1 pagina creata ([[entities/Entity_Brand_Offer_DE]]), index.md +1. Dossier 18 MIR-1/2/6/11 marcati ✅. CP-20260720-006.
+
+## 2026-07-20 (YouTube Lead Machine — kit di lancio)
+- BUILD: kit eseguibile completo in `Formazzione/Youtube/`: CLIENTE-DORO.md (scheda ICP da `Materiale Agency`), SETUP-CANALE.md (copy pronta: nome/descrizione/banner/link/playlist), LEAD-MAGNET-01-analisi-gratuita.md (magnet "Analisi Gratuita 15 min" + gate qualifica + 5 messaggi automazione speed-to-lead pronti + metriche), batch-01/ (PIANO + 6 script completi hook verbatim/scaletta/CTA sui 4 pilastri: 2 ricerca TOFU, 1 educazione, 1 metodo 5 step, 1 audit dal vivo, 1 prova sociale) + 2 concept copertina AI in `batch-01/copertine/`. → pagina progetto [[Project_YouTube_Lead_Machine]] aggiornata. CP-20260720-004.
+
+## 2026-07-19 (YouTube Lead Machine — avvio progetto)
+- INGEST: 7 video YouTube lead-generation (`Formazzione/Youtube/Rebdere YOUTUBE un Lead magnet.txt`): 5× Lorenzo Ricchieri/Media Profit (metodo completo: mindset, 4 pilastri, funnel TOFU-MOFU-BOFU, 4h/settimana), Alex Hormozi (lead magnet), Sean Cannell/Think Media (framework 3 step + trust) + 2 infografiche NotebookLM. Trascrizioni complete lette (7 video, ~2h11m).
+- BUILD: strategia operativa `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md` (8 sezioni: mindset, posizionamento Schwartz, 4 pilastri, funnel con MOFU=audit CRO, lead magnet su misura, metodo 4 ore, speed-to-lead 391%/78%, piano 30 giorni + 7 errori mortali) + 7 note per video in `note-video/`.
+- → 7 pagine wiki create: Project_YouTube_Lead_Machine (01 - Projects/), Source_MediaProfit_YouTube_Lead_Machine, Source_Hormozi_Lead_Magnet, Source_ThinkMedia_YouTube_Lead_Framework, Concept_YouTube_Funnel_TOFU_MOFU_BOFU, Concept_Lead_Magnet_Hormozi, Concept_Speed_To_Lead. index.md +7 (nuova sezione YouTube Marketing / Lead Generation).
+
 ## 2026-07-19 (Empire Desk — collisione UI risolta, Gael)
 - FIX/COORD: scoperta al pull una collisione reale — Max ha ridisegnato `EmpireDesk/ui/index.html`
   in parallelo (nav-tab "Empire Premium") con lo stesso obiettivo del mio switcher pannelli, ma
@@ -76,37 +111,3 @@
 
 ## 2026-07-19
 - INGEST: PIANO ESTATE REVENUE (dossier 16) — strategia fatturato 7gg: S1 concessionari anticipati (≥95%), S2 Manuale CC (B-003 da chiudere G1), S3 pagine lancio, S4 mentalita.brutale (solo se auto 100%, carousel-factory wrap), S5 YouTube-Fliki auto (API in .env locale) → 1 dossier + task board Max/Gael in STATO
-
-## 2026-07-20 (Toolkit esterni ADR-009 + reparto FORGE-AGENT-SKILL)
-- INGEST/BUILD: clonati e integrati 3 toolkit ufficiali (`copy-workflow/`, `content-forge2.0/`, master-build-architecture su main confermata versione di riferimento); installati 3 wrapper in `.claude/skills/` (copy-workflow, content-forge, master-build-architecture).
-- BUILD: nuovo reparto `FORGE-AGENT-SKILL/` (4 agenti fas-*, WF-AGENT-NEW/WF-SKILL-NEW, rules R1-R4, memory/) per la creazione di nuovi agenti e skill — direttiva Max "impero con più workflow".
-- BUILD: `PIANO-MAESTRO/18-ARCHITETTURA-IMPERO-REVISIONE.md` (master-build-architecture applicata: 10 invarianti audit, 10 workflow mappa, 12 migliorie MIR) + ADR-009 + REGISTRO-IMPRESA + skills-map v1.2.
-- APPLY copy-workflow (MIR-2 P0): review APSOC kit YouTube → `Formazzione/Youtube/COPY-REVIEW-APSOC.md` (score 78-84→90-93; patch applicate: descrizione canale v2, hook V01 v2, varianti CTA).
-- → 4 pagine tool create (Copy_Workflow, Content_Forge_2, Master_Build_Architecture, Forge_Agent_Skill_Reparto). index.md aggiornato. CP-20260720-002.
-
-## 2026-07-20 (Toolchain VS Code — scansione completa)
-- SCAN: censimento stack da `git ls-files` (8.123 png / 7.625 md / 867 py / 600 json / 596 tsx+ts / 471 go / 181 yaml / 107 pdf) + scansione Marketplace 14 categorie aggiornata al giorno (deprecazioni verificate: Cody Free discontinuato 2025-07-23, Dendron abbandonato, Ruff publisher `charliermarsh` confermato).
-- BUILD: `PIANO-MAESTRO/19-TOOLCHAIN-VSCODE.md` (Tier 1=10 subito / Tier 2=11 per area / Tier 3=12 opzionali / 8 sconsigliati con motivo; mappa W1-W10; gate verifica) + `.vscode/extensions.json` (22 raccomandate, 2 unwanted) + `.vscode/settings.json` (format-on-save OFF per ADR-003, telemetry OFF, spellcheck it+en).
-- Decisioni: agente AI = solo `anthropic.claude-code` (Copilot/Cody/Cline = duplicati esclusi); Markdown Memo abilita i wikilink `[[...]]` del vault in VS Code; niente markdownlint (rumore su 7.6k file legacy).
-- → 1 pagina tool creata ([[tools/Tool_VSCode_Toolchain]]), index.md +1. CP-20260720-003.
-
-## 2026-07-20 (FORGE-AGENT-SKILL — prima skill forgiata: youtube-lead-machine)
-- BUILD: WF-SKILL-NEW completa (MIR-11): RECALL anti-doppione (script-factory e copy-workflow restano, delegati) → PLAN → MKD (25/25 atomi, `memory/mkd/`) → skill `.claude/skills/youtube-lead-machine/` (kernel 118r + references×6 + evals 7 scenari + failure-modes F1-F8) → evals loop con 3 ritocchi → **GATE fas-qa-gate PASS 7/7** (`FORGE-AGENT-SKILL/memory/checkpoints/GATE-youtube-lead-machine-2026-07-20.md`).
-- REGISTRAZIONE: skills-map v1.3 (61 mappati), REGISTRO-IMPRESA §3, STATO-EMPIRE, INDEX.
-- → 1 pagina tool creata ([[tools/Tool_Youtube_Lead_Machine_Skill]]), index.md +1. CP-20260720-005.
-
-## 2026-07-20 (FORGE-AGENT-SKILL — MIR retrofis + MKD brand-offer)
-- BUILD (MIR-1+6): memory locale + REGISTRO-ERRORI standardizzati per 3 runtime → `Outreach/` (OE-1..5),
-  `Workfolw crea caroselli à/` (CE-1..4), `Formazzione/Youtube/` (YE-1..3). Wrap ADR-003 (file aggiuntivi, 0 tocco runtime).
-- BUILD (MIR-2): MKD Brand-Offer DE (`FORGE-AGENT-SKILL/memory/mkd/MKD-brand-offer-DE.md`, 12 sezioni da 475 righe sorgente,
-  ➕ marcate, assumption ledger). Registrato in REGISTRO-IMPRESA §3.
-- → 1 pagina creata ([[entities/Entity_Brand_Offer_DE]]), index.md +1. Dossier 18 MIR-1/2/6/11 marcati ✅. CP-20260720-006.
-
-## 2026-07-20 (YouTube Lead Machine — kit di lancio)
-- BUILD: kit eseguibile completo in `Formazzione/Youtube/`: CLIENTE-DORO.md (scheda ICP da `Materiale Agency`), SETUP-CANALE.md (copy pronta: nome/descrizione/banner/link/playlist), LEAD-MAGNET-01-analisi-gratuita.md (magnet "Analisi Gratuita 15 min" + gate qualifica + 5 messaggi automazione speed-to-lead pronti + metriche), batch-01/ (PIANO + 6 script completi hook verbatim/scaletta/CTA sui 4 pilastri: 2 ricerca TOFU, 1 educazione, 1 metodo 5 step, 1 audit dal vivo, 1 prova sociale) + 2 concept copertina AI in `batch-01/copertine/`. → pagina progetto [[Project_YouTube_Lead_Machine]] aggiornata. CP-20260720-004.
-
-## 2026-07-19 (YouTube Lead Machine — avvio progetto)
-- INGEST: 7 video YouTube lead-generation (`Formazzione/Youtube/Rebdere YOUTUBE un Lead magnet.txt`): 5× Lorenzo Ricchieri/Media Profit (metodo completo: mindset, 4 pilastri, funnel TOFU-MOFU-BOFU, 4h/settimana), Alex Hormozi (lead magnet), Sean Cannell/Think Media (framework 3 step + trust) + 2 infografiche NotebookLM. Trascrizioni complete lette (7 video, ~2h11m).
-- BUILD: strategia operativa `Formazzione/Youtube/STRATEGIA-YOUTUBE-LEAD-MAGNET.md` (8 sezioni: mindset, posizionamento Schwartz, 4 pilastri, funnel con MOFU=audit CRO, lead magnet su misura, metodo 4 ore, speed-to-lead 391%/78%, piano 30 giorni + 7 errori mortali) + 7 note per video in `note-video/`.
-- → 7 pagine wiki create: Project_YouTube_Lead_Machine (01 - Projects/), Source_MediaProfit_YouTube_Lead_Machine, Source_Hormozi_Lead_Magnet, Source_ThinkMedia_YouTube_Lead_Framework, Concept_YouTube_Funnel_TOFU_MOFU_BOFU, Concept_Lead_Magnet_Hormozi, Concept_Speed_To_Lead. index.md +7 (nuova sezione YouTube Marketing / Lead Generation).
-

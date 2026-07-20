@@ -16,7 +16,7 @@ sorgente→output, processo in 10 fasi. Regola d'oro per DE (direttiva Max 2026-
 
 ## Asset
 - **Vendor:** `master-build-architecture/` alla root — ⚠️ versione di riferimento = quella su `main`
-  (più completa del clone GitHub: agents/meta + OPERATING-REGISTRY). Clone fresco scartato (CP-20260720-002).
+  (più completa del clone GitHub: agents/meta + OPERATING-REGISTRY). Clone fresco scartato (CP-20260720-007).
 - **Wrapper:** `.claude/skills/master-build-architecture/` — entry `/master-architect <visione> [--target=...]`.
 - Knowledge pack: `references/knowledge-pack/` (15 principi, 11 pattern, 9 anti-pattern).
 

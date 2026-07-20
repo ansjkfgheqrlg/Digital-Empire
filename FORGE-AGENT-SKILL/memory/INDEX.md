@@ -1,7 +1,7 @@
 # 🧠 MEMORY — FORGE-AGENT-SKILL (indice reparto)
 
 ## Stato
-- Reparto istituito 2026-07-20 (ADR-009, CP-20260720-002). Roster v1: 4 agenti (conductor, agent-smith, skill-smith, qa-gate).
+- Reparto istituito 2026-07-20 (ADR-009, CP-20260720-007). Roster v1: 4 agenti (conductor, agent-smith, skill-smith, qa-gate).
 - **2026-07-20: prima build chiusa** — skill `/youtube-lead-machine` PASS gate 7/7 e registrata (skills-map v1.3).
 
 ## Piani attivi

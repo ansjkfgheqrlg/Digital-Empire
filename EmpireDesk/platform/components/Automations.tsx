@@ -1,8 +1,9 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { AutomationRule, TriggerType, ActionType, AutomationLog } from '../types';
-import { Zap, Plus, Play, MoreVertical, ArrowRight, Activity, Bell, Mail, CheckCircle2, Clock, Terminal, X } from 'lucide-react';
+import { Zap, Plus, Play, MoreVertical, ArrowRight, Activity, Bell, Mail, CheckCircle2, Clock, Terminal, X, Radio, AlertTriangle } from 'lucide-react';
 import { Button } from './ui/Button';
+import { EmpireApi, EmpireTile } from '../utils/empireApi';
 
 interface AutomationsProps {
     rules: AutomationRule[];
@@ -15,6 +16,82 @@ interface AutomationsProps {
 export const Automations: React.FC<AutomationsProps> = ({ rules, logs = [], onToggleRule, onAddRule, onTestRule }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [newRule, setNewRule] = useState<Partial<AutomationRule>>({ name: '', trigger: 'LEAD_CREATED', action: 'NOTIFY_SLACK' });
+
+  // --- OPERAZIONI REALI (Digital Empire) — U1: wiring dati reali dentro Aureus (dossier 17 §0-bis) ---
+  // Le 8 automazioni reali (outreach, PreventivoForge, caroselli, Empire Studio...) via app.py.
+  // Additivo: non tocca il motore di automazioni mock sopra (regole trigger->action, ancora valido).
+  const [empireAvailable, setEmpireAvailable] = useState<boolean | null>(null); // null = verifica in corso
+  const [empireTiles, setEmpireTiles] = useState<EmpireTile[]>([]);
+  const [empireInputs, setEmpireInputs] = useState<Record<string, string>>({});
+  const [empireLogs, setEmpireLogs] = useState<Record<string, string[]>>({});
+  const [empireErrors, setEmpireErrors] = useState<Record<string, string>>({});
+  const pollingRef = useRef<Set<string>>(new Set());
+
+  const refreshEmpireTiles = useCallback(async () => {
+    try {
+      const tiles = await EmpireApi.getTiles();
+      setEmpireTiles(tiles);
+      setEmpireAvailable(true);
+    } catch {
+      setEmpireAvailable(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    refreshEmpireTiles();
+    const t = setInterval(refreshEmpireTiles, 4000);
+    return () => clearInterval(t);
+  }, [refreshEmpireTiles]);
+
+  const pollEmpireTile = useCallback((id: string) => {
+    if (pollingRef.current.has(id)) return;
+    pollingRef.current.add(id);
+    const tick = async () => {
+      try {
+        const r = await EmpireApi.poll(id);
+        if (r.lines.length) {
+          setEmpireLogs(prev => {
+            const merged = [...(prev[id] || []), ...r.lines];
+            return { ...prev, [id]: merged.slice(-200) };
+          });
+        }
+        if (r.running) {
+          setTimeout(tick, 700);
+        } else {
+          pollingRef.current.delete(id);
+          if (r.exit_code !== null) {
+            setEmpireLogs(prev => ({
+              ...prev,
+              [id]: [...(prev[id] || []), `--- terminato, exit code: ${r.exit_code} ---`].slice(-200),
+            }));
+          }
+          refreshEmpireTiles();
+        }
+      } catch {
+        pollingRef.current.delete(id);
+      }
+    };
+    tick();
+  }, [refreshEmpireTiles]);
+
+  const launchEmpireTile = async (tile: EmpireTile) => {
+    setEmpireErrors(prev => ({ ...prev, [tile.id]: '' }));
+    const input = tile.input ? (empireInputs[tile.id] || '') : undefined;
+    if (tile.input && !input?.trim()) {
+      setEmpireErrors(prev => ({ ...prev, [tile.id]: 'serve un input (vedi il campo sulla card)' }));
+      return;
+    }
+    setEmpireLogs(prev => ({ ...prev, [tile.id]: [] }));
+    const r = await EmpireApi.launch(tile.id, input);
+    if (!r.ok) {
+      setEmpireErrors(prev => ({ ...prev, [tile.id]: r.error || 'avvio fallito' }));
+      return;
+    }
+    await refreshEmpireTiles();
+    pollEmpireTile(tile.id);
+  };
+
+  const empireInputPlaceholder: Record<string, string> = { url: 'URL YouTube…', path: 'Percorso file carosello.json…' };
 
   const handleCreateRule = (e: React.FormEvent) => {
       e.preventDefault();
@@ -136,6 +213,110 @@ export const Automations: React.FC<AutomationsProps> = ({ rules, logs = [], onTo
                     </div>
                 </div>
             ))}
+        </div>
+
+        {/* OPERAZIONI REALI (Digital Empire) — subprocess veri via app.py, exit code sempre visibile.
+            Additivo alla sezione sopra: qui non sono "regole" ma le automazioni operative reali. */}
+        <div className="border-t border-white/5 pt-8">
+            <div className="flex items-center justify-between mb-6">
+                <div>
+                    <h2 className="text-2xl font-bold text-silver-gradient tracking-tight flex items-center gap-3">
+                        <Radio className="w-5 h-5 text-diamond-400" /> Operazioni Reali — Digital Empire
+                    </h2>
+                    <p className="text-platinum-500 text-xs mt-1">Ogni card lancia un processo reale del monorepo. Zero bottoni finti: exit code sempre visibile.</p>
+                </div>
+                {empireAvailable === false && (
+                    <span className="flex items-center gap-2 px-3 py-1.5 rounded-sm bg-amber-950/40 border border-amber-800/50 text-amber-400 text-[10px] font-bold uppercase tracking-wider">
+                        <AlertTriangle className="w-3.5 h-3.5" /> Backend non raggiungibile
+                    </span>
+                )}
+            </div>
+
+            {empireAvailable === false && (
+                <div className="p-6 rounded-sm bg-[#0A0A0A] border border-white/5 text-platinum-500 text-sm">
+                    Aureus non è servita da Empire Desk (app.py) in questo momento — le operazioni reali
+                    richiedono l'app avviata da <code className="text-platinum-300">EmpireDesk/avvia-app.bat</code> o l'.exe.
+                </div>
+            )}
+
+            {empireAvailable !== false && (
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                    {empireTiles.map(tile => {
+                        const running = tile.running;
+                        const err = empireErrors[tile.id];
+                        const lines = empireLogs[tile.id] || [];
+                        const lastExit = tile.exit_code;
+                        return (
+                            <div key={tile.id} className={`
+                                relative overflow-hidden border p-5 rounded-sm flex flex-col gap-3 transition-all duration-300
+                                ${running
+                                    ? 'bg-gradient-to-br from-diamond-300 via-diamond-400 to-diamond-500 border-white/50 shadow-[0_0_30px_rgba(93,138,168,0.3)]'
+                                    : 'bg-[#0A0A0A] border-white/5'}
+                            `}>
+                                <div className="flex items-center justify-between">
+                                    <div className="flex items-center gap-3">
+                                        <div className={`w-10 h-10 rounded-full flex items-center justify-center border shadow-inner text-lg
+                                            ${running ? 'bg-white/20 border-white/40' : 'bg-white/5 border-white/10'}`}>
+                                            {tile.icon}
+                                        </div>
+                                        <div>
+                                            <h4 className={`text-sm font-bold ${running ? 'text-slate-900' : 'text-white'}`}>{tile.name}</h4>
+                                            <p className={`text-[11px] ${running ? 'text-slate-800' : 'text-platinum-500'}`}>{tile.desc}</p>
+                                        </div>
+                                    </div>
+                                    {running ? (
+                                        <span className="px-2 py-0.5 rounded-full bg-slate-900/10 border border-slate-900/20 text-slate-900 text-[9px] font-bold uppercase tracking-wider flex items-center gap-1 shrink-0">
+                                            <Activity className="w-3 h-3" /> In corso
+                                        </span>
+                                    ) : lastExit === 0 ? (
+                                        <span className="px-2 py-0.5 rounded-full bg-emerald-900/20 border border-emerald-800/50 text-emerald-400 text-[9px] font-bold uppercase tracking-wider shrink-0">Ultimo OK</span>
+                                    ) : lastExit !== null && lastExit !== undefined ? (
+                                        <span className="px-2 py-0.5 rounded-full bg-red-950/40 border border-red-800/50 text-red-400 text-[9px] font-bold uppercase tracking-wider shrink-0">Errore ({lastExit})</span>
+                                    ) : (
+                                        <span className="px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-platinum-500 text-[9px] font-bold uppercase tracking-wider shrink-0">Idle</span>
+                                    )}
+                                </div>
+
+                                {tile.kind === 'readonly' ? (
+                                    <div className="text-[10px] text-platinum-600 uppercase tracking-widest font-mono">Sola lettura — vedi STATO Empire</div>
+                                ) : (
+                                    <>
+                                        {tile.input && (
+                                            <input
+                                                className="bg-black/30 border border-white/10 text-white placeholder-platinum-600 text-xs rounded-sm px-3 py-2 outline-none focus:border-diamond-500/60"
+                                                placeholder={empireInputPlaceholder[tile.input] || 'Input…'}
+                                                value={empireInputs[tile.id] || ''}
+                                                onChange={e => setEmpireInputs(prev => ({ ...prev, [tile.id]: e.target.value }))}
+                                                disabled={running}
+                                            />
+                                        )}
+                                        <button
+                                            onClick={() => launchEmpireTile(tile)}
+                                            disabled={running}
+                                            className={`px-4 py-2 text-[10px] font-bold uppercase tracking-widest border rounded-sm transition-colors shadow-sm self-start
+                                                ${running
+                                                    ? 'bg-slate-900/20 text-slate-800 border-slate-900/20 cursor-default'
+                                                    : 'bg-white/5 hover:bg-white/10 border-white/10 text-platinum-300 hover:text-white'}`}
+                                        >
+                                            {running ? 'In corso…' : 'Avvia'}
+                                        </button>
+                                        {err && <p className="text-[10px] text-red-400 font-mono">{err}</p>}
+                                    </>
+                                )}
+
+                                {lines.length > 0 && (
+                                    <pre className="mt-1 max-h-28 overflow-y-auto custom-scrollbar bg-black/40 border border-white/10 rounded-sm p-2 text-[10px] font-mono text-platinum-300 whitespace-pre-wrap">
+                                        {lines.slice(-12).join('\n')}
+                                    </pre>
+                                )}
+                            </div>
+                        );
+                    })}
+                    {empireAvailable === true && empireTiles.length === 0 && (
+                        <p className="text-platinum-600 text-xs col-span-full">Nessuna automazione registrata.</p>
+                    )}
+                </div>
+            )}
         </div>
 
         {/* LOGS PANEL */}

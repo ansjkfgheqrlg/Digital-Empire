@@ -3,7 +3,7 @@
 > **Intestazione (ADR-008)**
 > - **Proprietario:** 06b-FORGE / L2.4 ECOSYSTEM-WORKS (arena session Claude, committente Max)
 > - **Controllore:** METHOD-GUARD · 5-bis MAXIMILIAN (campionabile)
-> - **Origine:** ordine Max 2026-07-20 («scansione dettagliata di TUTTI i plugin VSC per gestire e migliorare tutto»), CP-20260720-003
+> - **Origine:** ordine Max 2026-07-20 («scansione dettagliata di TUTTI i plugin VSC per gestire e migliorare tutto»), CP-20260720-008
 > - **Governo:** ADR-001/002/003/006/008/009 · Mandato Art.2 · regola «impero con più workflow» (mai tool orfani: ogni estensione serve almeno un workflow vivo W1-W10)
 > - **Data:** 2026-07-20 · **Stato:** adottato (config `.vscode/` già committata)
 

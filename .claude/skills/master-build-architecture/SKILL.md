@@ -9,7 +9,7 @@ description: "Skill di architettura madre per progettare architetture complete, 
 > `L2.5 METHOD-GUARD` (pattern). Uso trasversale su tutto l'impero.
 > **Motore (sorgente eseguibile):** `master-build-architecture/` alla root del repo (origin:
 > `gh repo clone ansjkfgheqrlg/master-build-architecture`; versione di riferimento = quella già
-> presente su `main`, NON sovrascrivere con il clone freso — vedi CP-20260720-002).
+> presente su `main`, NON sovrascrivere con il clone freso — vedi CP-20260720-007).
 > Kernel: `master-build-architecture/SKILL.md` (10 invarianti, processo 10 fasi, catalogo 25+ agenti).
 > Knowledge pack: `master-build-architecture/references/knowledge-pack/`.
 

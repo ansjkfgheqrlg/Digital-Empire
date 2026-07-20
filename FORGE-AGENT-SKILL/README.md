@@ -3,7 +3,7 @@
 > **Missione:** creare NUOVI AGENTI e NUOVE SKILL per tutto Digital Empire, con qualità CF-grade
 > (7 file canonici) e intestazione completa (ADR-008), usando come motore **content-forge2.0** (`/forge`)
 > e come metodo architetturale **master-build-architecture**.
-> **Istituito:** 2026-07-20 (direttiva Max, ADR-009, CP-20260720-002).
+> **Istituito:** 2026-07-20 (direttiva Max, ADR-009, CP-20260720-007).
 > **Intestazione (ADR-008):** Proprietario = 06b-FORGE (L2.1 SKILL-WORKS / L2.2 AGENT-WORKS) ·
 > Controllore = `fas-qa-gate` + METHOD-GUARD · Origine = FORGE (auto-serve) · Governo = Mandato + ADR-001/002/003/006.
 

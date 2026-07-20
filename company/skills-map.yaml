@@ -587,7 +587,7 @@ da_classificare:
     reparto: L2.4 ECOSYSTEM-WORKS / L2.5 METHOD-GUARD
     tipo: skill
     stato: active
-    note: "Versione di riferimento = quella su main (NON sovrascrivere col clone GitHub fresco, CP-20260720-002). Wrapper: .claude/skills/master-build-architecture. Regola: impero di workflow, mai workflow orfani."
+    note: "Versione di riferimento = quella su main (NON sovrascrivere col clone GitHub fresco, CP-20260720-007). Wrapper: .claude/skills/master-build-architecture. Regola: impero di workflow, mai workflow orfani."
 
   - id: forge-agent-skill-reparto
     nome: Reparto FORGE-AGENT-SKILL (officina agenti & skill — 4 agenti fas-*)
