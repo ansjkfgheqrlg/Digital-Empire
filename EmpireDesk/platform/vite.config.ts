@@ -18,6 +18,26 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
+      },
+      build: {
+        rollupOptions: {
+          output: {
+            manualChunks(id) {
+              if (id.includes('node_modules')) {
+                if (id.includes('react') || id.includes('scheduler')) {
+                  return 'vendor-react';
+                }
+                if (id.includes('recharts') || id.includes('d3')) {
+                  return 'vendor-charts';
+                }
+                if (id.includes('lucide-react')) {
+                  return 'vendor-icons';
+                }
+                return 'vendor';
+              }
+            }
+          }
+        }
       }
     };
 });
