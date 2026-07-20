@@ -1,6 +1,24 @@
-# STATO EMPIRE -- aggiornato 2026-07-19 15:25 (ordine Max: FOCUS TOTALE EMPIRE DESK, lavoro diviso metà/metà)
+# STATO EMPIRE -- aggiornato 2026-07-20 (ordine Max: PIVOT AREUS — Empire Desk riparte dalla piattaforma Aureus)
 
-## 🚨🚨 ORDINE MAX 2026-07-19 POMERIGGIO — EMPIRE DESK = LAVORO PIÙ IMPORTANTE, DIVISIONE METÀ/METÀ MAX↔GAEL
+## 🚨🚨🚨 ORDINE MAX 2026-07-20 — PIVOT: EMPIRE DESK = AUREUS AGENCY OS TRASFORMATA IN APP (leggere dossier 17 §0-bis)
+**Max ha bocciato la UI launcher v0.1/v2** (struttura sbagliata: questa è l'app GESTIONALE del team,
+non un derivato PreventivoForge). Base nuova = piattaforma di Max **"Aureus Agency OS"** (repo
+`Gestionale-Team---Areus-Piattaforma-By-Digital-Empire`), **importata in `EmpireDesk/platform/`**
+(build verificata, anteprima testata in finestra app — Claude/Max, CP-20260720-001).
+**Regole: grafica INTOCCABILE (pixel-perfect) · prima l'app, poi le funzioni (fase 2) · Max = SOLO
+grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
+
+**▶️ GAEL — riprendi da qui (dettagli dossier 17 §0-bis):**
+- **G1 (per primo):** `app.py` serve `platform/dist/` come root (stessa origin delle API `/api/*`
+  esistenti) + finestra chrome-app → l'app che si apre È Aureus. Prima: `npm install` in platform/
+  (node_modules gitignorato) + `npm run build`. Vecchia `ui/index.html` → `/legacy` (fallback temporaneo).
+- **G2:** build exe con dist inclusa + test doppio click.
+- **G3:** B1-B4 restano (loader moduli/scheduler/notify/taskboard) = solo backend. Moduli A1-A3 di Max
+  restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
+- **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.
+
+**▶️ MAX (via Claude):** U0 ✅ (import+build+anteprima) · U1 in fase 2 = operatività dentro Aureus
+nel suo linguaggio grafico (Automations → flussi reali, pannelli metrics/revenue/licenze).
 **Piano vincolante e completo: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` §5 (appena scritto, leggerlo TUTTO).**
 Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'altro half** (lezione PreventivoForge).
 
