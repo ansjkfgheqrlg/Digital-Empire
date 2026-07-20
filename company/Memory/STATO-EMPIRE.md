@@ -1,5 +1,8 @@
 # STATO EMPIRE -- aggiornato 2026-07-20 (ordine Max: PIVOT AREUS — Empire Desk riparte dalla piattaforma Aureus)
 
+## ⚠️ COORDINAMENTO 2026-07-20 — MB-OS FASE 002 ANALISI → BRAINSTORMING → PLANNING (Arena)
+**Ciclo aperto su richiesta Max.** Scope esclusivo: `Page IG - Mentalità Brutale/OPERATING-SYSTEM/planning/`, Memory MB-OS, checkpoint/INDEX/wiki a chiusura. Obiettivo: divergere senza censura, convergere con matrice decisionale e produrre un piano esecutivo ordinato per dipendenze, owner, gate, numeri e percorso al `CERTIFIED_AUTO`/modello di business. **Non si toccano** EmpireDesk/platform/UI, runtime Outreach, PreventivoForge, carousel-factory o publisher legacy. Nessun live, token o spesa.
+
 ## ✅ MENTALITÀ BRUTALE MB-OS — FONDAZIONI COMPLETE, LIVE CORRETTAMENTE BLOCCATO (Arena, CP-20260720-004)
 **Costruito via Chief-Forge → ARCHITETTURA → FORGE:** `Page IG - Mentalità Brutale/OPERATING-SYSTEM/` (41 file) + skill `.claude/skills/mentalita-brutale-operator/` (5 file). Pipeline completa progettata e implementata: Intelligence→Strategy→Production→CF-R6 QA→CF-R7 Meta API v25.0→Insights→CF-R8 learning; 11 reparti instradati sulle capability Empire, memoria locale, strategia baseline 28 giorni (28 post: 16 Reel/12 caroselli), Content-Forge source→skill/workflow.
 
