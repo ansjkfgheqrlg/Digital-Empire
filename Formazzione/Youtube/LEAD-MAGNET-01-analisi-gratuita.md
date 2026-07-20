@@ -86,3 +86,9 @@ Vuoi riprogrammare? Ho {slot1} o {slot2}. Rispondi con l'orario che preferisci.
 - Tasso di presentazione (target ≥70% con i messaggi sopra)
 - Qualificate / totali (gate) — target ≥60%
 - Call → progetto: anche 1 su 4 basta (matematica Hormozi: qualche decina di minuti gratis = CAC irrisorio su ticket €1.000-2.000)
+
+---
+
+## 🔗 Magnet #2 (2026-07-20): `LEAD-MAGNET-02-checklist-cro-21-punti.md`
+Checklist scaricabile TOFU (un-gated, link in descrizione) — vedi file gemello: diagnosi 21 punti → ponte verso
+questa Analisi Gratuita (sua CTA finale). Regola: #2 cattura chi guarda, #1 converte chi è pronto.

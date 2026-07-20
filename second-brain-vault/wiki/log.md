@@ -1,5 +1,16 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-20 (YouTube Lead Machine — magnet #2: Checklist CRO 21 Punti)
+- BUILD: `Formazzione/Youtube/LEAD-MAGNET-02-checklist-cro-21-punti.md` — secondo lead magnet del funnel:
+  TOFU un-gated (link descrizione video V01/V02/V06 + pinned comment), 21 controlli in 5 zone
+  (prima schermata / offerta / fiducia / conversione / velocità-tecnica) con tabella punteggio diagnostica
+  e CTA finale → Analisi Gratuita (magnet #1 BOFU, gate 3 domande). Naming Hormozi (3 varianti, raccomandata
+  «21 Punti per Smettere di Perdere Clienti dal Tuo Sito»). Review APSOC secondo pass: **93/100 PASS**
+  (sezione aggiunta in `COPY-REVIEW-APSOC.md`, 3 difetti chiusi in stesura). Regole rispettate: il magnet
+  risolve un problema stretto e rivela il core (Hormozi), zero cannibalizzazione magnet #1, TOV DE pulito.
+- Update: cross-ref in LEAD-MAGNET-01, reference LEAD-MAGNET-OPS della skill, pagina progetto, REGISTRO §3.
+  Resta: export PDF grafico (Max/Gael) → upload → link in SETUP-CANALE. CP-20260720-010.
+
 ## 2026-07-20 (FORGE-AGENT-SKILL — MIR-3: ASK formale obbligatorio)
 - BUILD: `FORGE-AGENT-SKILL/workflows/ASK-PROTOCOL.md` (canonico; trigger T1-T4, max 3 domande mirate
   ognuna 1 decisione con opzioni+raccomandazione+default `[ASSUNZIONE]`, replies tracciate ↳, gate doppio

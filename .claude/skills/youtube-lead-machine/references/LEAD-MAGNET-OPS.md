@@ -2,6 +2,10 @@
 
 > Reference della skill `/youtube-lead-machine`. Sorgente: `Formazzione/Youtube/LEAD-MAGNET-01-analisi-gratuita.md` + §4-§6 della strategia (Hormozi + speed-to-lead).
 
+> **Asset realizzati (2026-07-20):** magnet #1 `LEAD-MAGNET-01-analisi-gratuita.md` (BOFU, gated)
+> e magnet #2 `LEAD-MAGNET-02-checklist-cro-21-punti.md` (TOFU, un-gated → ponte CTA verso #1).
+> Review APSOC di entrambi: `Formazzione/Youtube/COPY-REVIEW-APSOC.md` (score 90-93, PASS).
+
 ## Il magnet (scelto per DE)
 **"Analisi gratuita 15 minuti" della tua landing/ads** — è anche il format-firma MOFU del canale:
 la stessa cosa che mostri nei video audit, offerta 1-a-1. Coerenza totale video↔offerta.

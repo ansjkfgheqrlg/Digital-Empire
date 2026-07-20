@@ -18,7 +18,9 @@ framework Think Media. Materiale sorgente: `Formazzione/Youtube/` (lista video +
 - **Note per video:** `Formazzione/Youtube/note-video/01-07`
 - **KIT DI LANCIO (2026-07-20):** `Formazzione/Youtube/CLIENTE-DORO.md` (scheda ICP) · `SETUP-CANALE.md`
   (copy pronto da incollare: nome/descrizione/banner/link) · `LEAD-MAGNET-01-analisi-gratuita.md`
-  (magnet + gate qualifica + 5 messaggi automazione speed-to-lead pronti) · `batch-01/` (piano 6 video
+  (magnet BOFU + gate qualifica + 5 messaggi automazione speed-to-lead pronti) ·
+  `LEAD-MAGNET-02-checklist-cro-21-punti.md` (**magnet TOFU un-gated**: diagnosi 21 punti/5 zone + scoring
+  + ponte CTA → Analisi Gratuita; review APSOC 93/100 — export PDF = task grafica) · `batch-01/` (piano 6 video
   + script completi hook/scaletta/CTA + 2 concept copertina in `batch-01/copertine/`)
 - **Fonti:** [[Source_MediaProfit_YouTube_Lead_Machine]] · [[Source_Hormozi_Lead_Magnet]] · [[Source_ThinkMedia_YouTube_Lead_Framework]]
 - **Concept:** [[Concept_YouTube_Funnel_TOFU_MOFU_BOFU]] · [[Concept_Lead_Magnet_Hormozi]] · [[Concept_Speed_To_Lead]]
@@ -34,9 +36,11 @@ framework Think Media. Materiale sorgente: `Formazzione/Youtube/` (lista video +
 - [x] **Skill ufficiale `/youtube-lead-machine` FORGIATA (2026-07-20, CP-20260720-005):** prima uscita del
   reparto FORGE-AGENT-SKILL (MIR-11). Metodo richiamabile: kernel + 6 references + evals + failure-modes;
   GATE PASS 7/7. Deleghe: script→Script Factory, QA copy→copy-workflow.
+- [x] **Magnet #2 Checklist CRO 21 Punti creata (2026-07-20, CP-20260720-010):** contenuto pronto +
+  review APSOC 93/100; resta export PDF grafico (Max/Gael) e upload come link descrizione TOFU.
 - [ ] Eseguire setup canale con la copy di SETUP-CANALE.md (nome frontman da decidere: Max o Gael)
 - [ ] Creare Calendly "Analisi gratuita 15 min" + gate 3 domande + attivare i 5 messaggi automazione
-- [ ] Preparare setup registrazione fisso (telefono + lavalier + finestra) + checklist PDF "21 punti"
+- [ ] Preparare setup registrazione fisso (telefono + lavalier + finestra) + export PDF della checklist 21 punti
 - [ ] Registrare batch #1 (ordine: V03 → V01 → V02 → V04 → V06 → V05) in una sessione da 4 ore
 - [ ] Pubblicare 1-2 video/settimana + review dati settimanale (retention, CTR, lead per video)
 

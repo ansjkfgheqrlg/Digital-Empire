@@ -76,3 +76,41 @@ Digital Empire — l'agenzia progettata per essere licenziata.
 - Hook V02/V03/V04 (già buoni: rifinire al momento della registrazione con A/B titoli)
 - `Agency page*/` e `agency-empire*/` → review APSOC completa (MIR-12, P2)
 - Testo preventivi/proposte clienti → passare da objections-forge (CPB)
+
+---
+
+# 🔍 SECONDO PASS (2026-07-20 sera) — LEAD-MAGNET-02 Checklist CRO 21 Punti (MIR backlog magnet #2)
+
+> Metodo identico (A8 APSOC + TOV DE). Scope: `LEAD-MAGNET-02-checklist-cro-21-punti.md` (nuovo asset).
+
+## Audit
+- ✅ **A (Attenzione):** nome raccomandato apre sulla perdita («Smettere di Perdere Clienti») — pain-first,
+  coerente con gli hook del kit (mai soluzione anticipata, difetto trovato al primo pass).
+- ✅ **P (Promessa):** concreta e misurabile («10 minuti», «conta i NO», 3 fasce di diagnosi). Nessun
+  claim iperbolico; coerente con Art.2 (prezzo reale, no invenzioni).
+- ✅ **S (Soluzione):** i 21 punti risolvono UN problema stretto (diagnosi) e rivelano il core (CRO vera)
+  — aderenza esatta alla regola Hormozi; scritto esplicito in tabella magnet #1 vs #2 (no cannibalizzazione).
+- ✅ **O (Obiezioni):** la più pesante («l'ennesimo PDF trappola-per-email») disinnescata con link un-gated +
+  gate rinviato al magnet #1 dove appartiene; fascia 10+ dice la verità scomoda (bloccare gli aumenti di spesa)
+  = credibilità CARISMA-SINCERO, non vendita aggressiva.
+- ✅ **C (CTA):** una sola, finale, profonda («te li spuntiamo insieme... anche se poi fai da solo») —
+  stessa architettura di CTA del kit (già a prova di banner-blindness con le varianti rotanti in descrizione).
+- ✅ **TOV:** diretto/semplice/formazione; zero storytelling; niente «soluzioni innovative» (punto 7 lo
+  vieta esplicitamente dentro l'asset = self-demo del metodo, doppio valore).
+- ✅ **Ponte funnel:** descrizione V01/V02/V06 → checklist (TOFU) → ultima riga → Analisi Gratuita (BOFU)
+  → 3 domande gate. Nessuna collisione col magnet #1; le metriche hanno UTM per-video come da protocollo.
+
+## Difetti trovati in stesura (chiusi in sede di review)
+1. ➕ Aggiunta tabella magnet #1 vs #2 (rischio sovrapposizione percepita) — chiuso prima di commit.
+2. ➕ «CRO» tenuto in nome/asset ma spiegato in contesto (è il termine del servizio DE — MKD brand-offer);
+   nel corpo si parla sempre di «richieste/clienti/vendite», mai di acronimi nudi.
+3. Punto 16 già calibrato su ICP reale (e-com vs B2B), da MKD (no assunzioni inventate sulla base clienti).
+
+## Score
+| Asset | A | P | S | O | C | TOV | **Totale** |
+|---|---|---|---|---|---|---|---|
+| LEAD-MAGNET-02 | 95 | 92 | 94 | 90 | 93 | 95 | **93/100** ✅ (gate 85 PASS) |
+
+**NOTA operativa:** export PDF = task grafica Max/Gael (2 pagine, header DE, zone a colori) — formato
+già stampabile nelle sezioni tra le righe `---`. Quando esce il PDF, aggiornare SETUP-CANALE §link
+aggiungendo la checklist come secondo link in descrizione TOFU.

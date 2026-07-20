@@ -111,8 +111,9 @@ Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow
    WF-AGENT-NEW/WF-SKILL-NEW, gate bloccante fas-qa-gate, regole R1-R4). Intestazione ADR-008 completata:
    ADR-009 scritto, REGISTRO-IMPRESA §3, skills-map v1.2 (60 mappati), 4 pagine wiki tool.
 **RIPRESA DA (salvo diverso ordine):** ✅ WF-SKILL-NEW (CP-005) · ✅ MIR retrofis + MKD brand-offer (CP-006) ·
-✅ MIR-3 ASK formale (`workflows/ASK-PROTOCOL.md` + step nelle 2 WF + qa-gate p.7, CP-20260720-009, 2026-07-20 sera).
-Prossimi backlog reparto: valutazione agenti yt-*/vendita (con Max) · checklist PDF 21-punti · MIR-12 copy APSOC Agency page* (P2) · MIR-9 topology.md (P2) · MIR-5 retrofit 7-file (P3).
+✅ MIR-3 ASK formale (`workflows/ASK-PROTOCOL.md` + step nelle 2 WF + qa-gate p.7, CP-20260720-009) ·
+✅ magnet #2 checklist CRO 21 punti (W7, APSOC 93/100, CP-20260720-010 — resta export PDF grafico Max/Gael).
+Prossimi backlog reparto: valutazione agenti yt-*/vendita (con Max) · MIR-12 copy APSOC Agency page* (P2) · MIR-9 topology.md (P2) · MIR-5 retrofit 7-file (P3).
 NOTA BENE per Gael/altre sessioni: non sovrascrivere `master-build-architecture/` col clone GitHub fresco
 (la copia main è più completa — decisione in ADR-009 punto 3).
 
@@ -188,7 +189,9 @@ Ingest completi i 7 video (CP-20260719-009) → strategia `Formazzione/Youtube/S
 `LEAD-MAGNET-01-analisi-gratuita.md` (magnet + gate + 5 messaggi speed-to-lead pronti), `batch-01/` (piano
 + **6 script completi pronti da registrare**: hook parola-per-parola, scaletta, CTA — V01 ads senza richieste,
 V02 sito bello≠vende, V03 ⭐ doppi clienti stesso traffico, V04 metodo 5 step, V05 ⭐ audit dal vivo,
-V06 prima→dopo) + 2 concept copertina. RIPRESA DA: eseguire setup canale con la copy → Calendly "Analisi
+V06 prima→dopo) + 2 concept copertina. **+2026-07-20 sera:** magnet #2 `LEAD-MAGNET-02-checklist-cro-21-punti.md`
+(diagnosi 21 punti/5 zone con scoring → ponte CTA all'Analisi Gratuita; review APSOC PASS 93/100; da esportare PDF).
+RIPRESA DA: eseguire setup canale con la copy → Calendly "Analisi
 gratuita 15 min" + automazioni → setup registrazione → **registrare batch #1 (ordine V03→V01→V02→V04→V06→V05,
 1 sessione da 4 ore)** → pubblicare 1-2/settimana + review dati settimanale.
 Complementare (non sovrapposto) a dossier 16 S5 YouTube-Fliki: questa è strategia contenuti/organico.
