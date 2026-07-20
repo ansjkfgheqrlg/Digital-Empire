@@ -36,6 +36,27 @@ Dossier 17 §5 aggiornato. Se hai modifiche locali non pushate a `ui/index.html`
 numerazione vecchia. Rimosso: vale il blocco qui sopra; nel dossier la divisione è la **§5**.
 Stesso contenuto, nessun task cambiato. Ordine del giorno Gael dopo B1: task revenue dossier 16.)*
 
+## ⚠️ GAEL — B1 COSTRUITO (loader moduli), NON ESEGUITO (2026-07-19 sera, CP-20260719-007) — RIPRESA QUI
+**Seam `EmpireDesk/modules/` fatto:** `_load_modules()` scandisce `modules/*.py`, importa in
+isolamento (un modulo rotto si segnala e si salta, MAI fa cadere l'app), monta `routes`/`tile`/
+`panel_html` di ogni modulo. **Validazione schema tile aggiunta** (`_validate_module_tile`) prima
+di accettarla — altrimenti una tile-modulo malformata avrebbe fatto KeyError su TUTTE le tile
+(bug trovato in autorevisione, mai lanciato). Switcher "Pannelli" in UI (tab per modulo) + CSS
+per le classi che i pannelli di Max già usano (`.panel .hint .btn .inp .log-pane`) — senza,
+sarebbero apparsi senza stile. **Verificati i 3 moduli di Max (metrics/revenue/licenze): rispettano
+il contratto §5.3 esattamente.** Fix grafico proattivo: i 2 bottoni header erano posizionati a
+mano (`right:Npx`) → rischio sovrapposizione → convertito a `display:flex` (zero rischio).
+**🛑 NON ESEGUITO QUI:** stesso blocco di CP-20260719-004/006 — questa sessione non ha Python/Node
+installati, solo revisione statica riga per riga. **RIPRESA (macchina reale):**
+1. `git pull` (prendi B1 + i 2 fix EDE-6/7).
+2. `cd EmpireDesk && python app.py --selftest` → atteso: 8 tile core + selftest metrics/revenue/
+   licenze (~11 righe), tutte OK salvo eventuale EDE-A1 residuo in licenze.py (Max, non mio).
+3. `python app.py` → aprire, cliccare "Pannelli", verificare a occhio i 3 tab (stile coerente,
+   bottoni funzionanti) + selftest via UI.
+4. Se verde: build exe (`build_exe.bat`) + test doppio click + CP di chiusura B0+B1 + comunica a
+   Max che può integrare (già può scrivere A4 fliki in parallelo, si aggancia da solo).
+Dettaglio completo: `company/Memory/checkpoints/CP-20260719-007.md`.
+
 ## ⚠️ GAEL — EMPIRE DESK: P1-P3 FATTI, P4 BLOCCATO (2026-07-19, CP-20260719-004) — RIPRESA QUI
 **Cartella nuova `EmpireDesk/` (root del repo).** P1 (shell 3-motori + 8 tile UI) e P2-P3
 (TileManager generico: subprocess reale + poll log-live + selftest, copre TUTTE le 8 tile con

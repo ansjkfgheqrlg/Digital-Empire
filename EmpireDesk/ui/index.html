@@ -153,7 +153,7 @@
 
   <nav id="nav">
     <button class="tab active" data-view="plancia">Plancia</button>
-    <!-- tab dei pannelli moduli: iniettate a runtime quando il seam B1 espone /api/modules -->
+    <!-- tab dei pannelli moduli: iniettate a runtime da loadModules() via /api/panels -->
   </nav>
 
   <main>
@@ -181,20 +181,23 @@
     poll:    (id) => window.pywebview.api.poll(id),
     stato:   () => window.pywebview.api.stato(),
     selftest:() => window.pywebview.api.selftest(),
-    modules: () => window.pywebview.api.modules ? window.pywebview.api.modules() : Promise.reject("no modules"),
-    call:    (route, payload) => window.pywebview.api.call_route
-               ? window.pywebview.api.call_route(route, payload) : Promise.reject("no call_route"),
+    modules: () => window.pywebview.api.modules(),
+    call:    (route, payload) => window.pywebview.api.call(route, payload||{}),
   } : {
     tiles:   () => fetch('/api/tiles',{method:'POST'}).then(r=>r.json()).then(d=>d.tiles),
     launch:  (id, input) => fetch('/api/launch',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,input})}).then(r=>r.json()),
     poll:    (id) => fetch('/api/poll',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id})}).then(r=>r.json()),
     stato:   () => fetch('/api/stato',{method:'POST'}).then(r=>r.json()),
     selftest:() => fetch('/api/selftest',{method:'POST'}).then(r=>r.json()).then(d=>d.results),
-    modules: () => fetch('/api/modules',{method:'POST'}).then(r=>{ if(!r.ok) throw "no modules"; return r.json(); }).then(d=>d.modules || Promise.reject("no modules")),
+    modules: () => fetch('/api/modules',{method:'POST'}).then(r=>r.json()).then(d=>d.modules),
     call:    (route, payload) => fetch('/api/'+route,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload||{})}).then(r=>r.json()),
   };
-  // helper globale usato dai panel_html dei moduli (contratto §5.3 dossier 17)
-  window.edApi = (route, payload) => API.call(route, payload);
+
+  // Bridge generico usato dai pannelli dei moduli (chiamato inline nel loro HTML, es.
+  // onclick="edApi('metrics/summary',{})…") — contratto dossier 17 §5.3. Globale di proposito:
+  // il panel_html dei moduli viene iniettato via innerHTML, i suoi onclick vedono solo `window`.
+  function edApi(route, payload){ return API.call(route, payload); }
+  window.edApi = edApi;
 
   const escapeHtml = s => String(s==null?"":s).replace(/[&<>"']/g, c=>({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[c]));
   const INPUT_PLACEHOLDER = { url: "URL YouTube…", path: "Percorso file carosello.json…" };

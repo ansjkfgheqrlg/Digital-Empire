@@ -64,7 +64,7 @@ PROFILE_DIR = BASE_DIR / "chrome-profile"
 #   node     -> [_node_bin(), <script>]
 #   readonly -> nessun processo, legge solo "path"
 # --------------------------------------------------------------------------- #
-TILES = [
+_CORE_TILES = [
     {
         "id": "email", "icon": "\U0001F4E7", "name": "Outreach Email",
         "desc": "Flusso invio email outreach (300+/gg)",
@@ -113,7 +113,6 @@ TILES = [
         "kind": "readonly", "path": "company/Memory/STATO-EMPIRE.md",
     },
 ]
-_TILE_BY_ID = {t["id"]: t for t in TILES}
 
 
 def _python_bin() -> str:
@@ -134,6 +133,115 @@ def _python_bin() -> str:
 def _node_bin() -> str:
     import shutil
     return shutil.which("node") or "node"
+
+
+# --------------------------------------------------------------------------- #
+# B1 — Loader moduli (EmpireDesk/modules/*.py, contratto dossier 17 §5.3)
+#
+# Dopo B1 il core (app.py/ui/index.html) va in FREEZE: nuove funzionalità (B2/B3/B4
+# di Gael, A1-A4 di Max) entrano SOLO come moduli qui sotto, mai con altre modifiche
+# dirette a questo file. Un modulo rotto (import fallito, MODULE malformato) NON deve
+# mai far cadere l'intero Empire Desk: si isola, si segnala nel selftest, si salta.
+# --------------------------------------------------------------------------- #
+MODULES_DIR = BASE_DIR / "modules"
+
+_LOADED_MODULES: list[dict] = []   # [{"id","file","routes","tile","panel_html","selftest_fn"}]
+_MODULE_LOAD_ERRORS: list[dict] = []  # [{"file","error"}] — moduli scartati, mai fatali
+_MODULE_ROUTES: dict[str, "callable"] = {}
+_MODULE_TILES: list[dict] = []
+
+
+def _validate_module_tile(tile: dict) -> tuple[bool, str]:
+    """Una tile fornita da un modulo DEVE rispettare lo schema di _CORE_TILES (id/icon/name/desc/kind
+    + script/cwd o path) — altrimenti TileManager va in KeyError su un dict a metà (un modulo con
+    schema sbagliato non deve mai far crashare selftest/list_tiles per TUTTE le tile, incluse quelle core)."""
+    if not isinstance(tile, dict):
+        return False, "tile non è un dict"
+    required = {"id", "icon", "name", "desc", "kind"}
+    missing = required - tile.keys()
+    if missing:
+        return False, f"campi mancanti: {sorted(missing)}"
+    if tile["kind"] == "readonly":
+        if "path" not in tile:
+            return False, "kind='readonly' richiede 'path'"
+    elif tile["kind"] in ("bat", "py", "node"):
+        if "script" not in tile or "cwd" not in tile:
+            return False, f"kind='{tile['kind']}' richiede 'script' e 'cwd'"
+    else:
+        return False, f"kind sconosciuto: {tile['kind']}"
+    return True, ""
+
+
+def _load_modules() -> None:
+    """Scandisce modules/*.py, importa ognuno in isolamento (try/except per file:
+    un modulo rotto si segnala e si salta, non fa crashare Empire Desk)."""
+    import importlib.util
+
+    _LOADED_MODULES.clear()
+    _MODULE_LOAD_ERRORS.clear()
+    _MODULE_ROUTES.clear()
+    _MODULE_TILES.clear()
+
+    if not MODULES_DIR.is_dir():
+        return
+    for f in sorted(MODULES_DIR.glob("*.py")):
+        if f.name.startswith("_"):
+            continue
+        try:
+            spec = importlib.util.spec_from_file_location(f"empiredesk_module_{f.stem}", f)
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)  # type: ignore[union-attr]
+            info = getattr(mod, "MODULE", None)
+            if not isinstance(info, dict) or "id" not in info:
+                raise ValueError("MODULE mancante o senza 'id' (contratto dossier 17 §5.3)")
+            mid = info["id"]
+            selftest_fn = getattr(mod, "selftest", None)
+            entry = {
+                "id": mid, "file": f.name,
+                "routes": info.get("routes") or {},
+                "tile": info.get("tile"),
+                "panel_html": info.get("panel_html"),
+                "selftest_fn": selftest_fn if callable(selftest_fn) else None,
+            }
+            _LOADED_MODULES.append(entry)
+            for route_name, fn in entry["routes"].items():
+                if route_name in _MODULE_ROUTES:
+                    _MODULE_LOAD_ERRORS.append({
+                        "file": f.name,
+                        "error": f"route '{route_name}' già registrata da un altro modulo — ignorata",
+                    })
+                    continue
+                _MODULE_ROUTES[route_name] = fn
+            if entry["tile"]:
+                tile_ok, tile_detail = _validate_module_tile(entry["tile"])
+                used_ids = {t["id"] for t in _CORE_TILES} | {t["id"] for t in _MODULE_TILES}
+                if tile_ok and entry["tile"]["id"] in used_ids:
+                    tile_ok, tile_detail = False, f"id '{entry['tile']['id']}' già usato da un'altra tile"
+                if tile_ok:
+                    _MODULE_TILES.append(entry["tile"])
+                else:
+                    # tile scartata (schema invalido) MA routes/panel del modulo restano validi:
+                    # un modulo rotto su UNA parte non deve buttare via tutto il resto.
+                    _MODULE_LOAD_ERRORS.append({"file": f.name, "error": f"tile scartata: {tile_detail}"})
+        except Exception as exc:  # noqa: BLE001 — un modulo rotto non deve fermare l'app
+            _MODULE_LOAD_ERRORS.append({"file": f.name, "error": str(exc)})
+
+
+_load_modules()
+
+
+def all_tiles() -> list[dict]:
+    return _CORE_TILES + _MODULE_TILES
+
+
+def _tile_by_id() -> dict[str, dict]:
+    return {t["id"]: t for t in all_tiles()}
+
+
+def modules_public() -> list[dict]:
+    """Elenco moduli per la UI (contratto STATO-EMPIRE 2026-07-19 sera, owner UI Max):
+    POST /api/modules -> {"modules": [{id, tile, panel_html}, ...]}."""
+    return [{"id": m["id"], "tile": m["tile"], "panel_html": m["panel_html"]} for m in _LOADED_MODULES]
 
 
 # --------------------------------------------------------------------------- #
@@ -158,7 +266,7 @@ class TileManager:
 
     def list_tiles(self) -> list[dict]:
         out = []
-        for t in TILES:
+        for t in all_tiles():
             job = self.jobs.get(t["id"])
             out.append({
                 "id": t["id"], "icon": t["icon"], "name": t["name"], "desc": t["desc"],
@@ -203,13 +311,13 @@ class TileManager:
 
     def selftest(self) -> list[dict]:
         out = []
-        for t in TILES:
+        for t in all_tiles():
             ok, detail = self._resolve_check(t)
             out.append({"id": t["id"], "name": t["name"], "ok": ok, "detail": detail})
         return out
 
     def launch(self, tile_id: str, user_input: str | None) -> dict:
-        tile = _TILE_BY_ID.get(tile_id)
+        tile = _tile_by_id().get(tile_id)
         if not tile:
             return {"ok": False, "error": "tile sconosciuta"}
         if tile["kind"] == "readonly":
@@ -290,6 +398,37 @@ class TileManager:
 MANAGER = TileManager()
 
 
+def global_selftest() -> list[dict]:
+    """Selftest completo: tile (core + moduli) + selftest proprio di ogni modulo caricato +
+    i moduli scartati per errore di import (un modulo rotto DEVE comparire come FAIL qui,
+    non sparire in silenzio — Gate 1, zero bottoni finti / zero difetti nascosti)."""
+    out = MANAGER.selftest()
+    for m in _LOADED_MODULES:
+        if not m["selftest_fn"]:
+            continue
+        try:
+            ok, detail = m["selftest_fn"]()
+        except Exception as exc:  # noqa: BLE001 — un selftest di modulo non deve crashare il globale
+            ok, detail = False, f"selftest del modulo ha sollevato: {exc}"
+        out.append({"id": f"module:{m['id']}", "name": f"Modulo {m['id']}", "ok": bool(ok), "detail": str(detail)})
+    for e in _MODULE_LOAD_ERRORS:
+        out.append({"id": f"module-error:{e['file']}", "name": f"Modulo {e['file']} (import fallito)",
+                    "ok": False, "detail": e["error"]})
+    return out
+
+
+def _call_module_route(route: str, payload: dict) -> dict:
+    """Dispatcher condiviso HTTP/pywebview per le routes esposte dai moduli (§5.3).
+    Un modulo che solleva un'eccezione NON deve mai far cadere il bridge — si riporta l'errore."""
+    fn = _MODULE_ROUTES.get(route)
+    if not fn:
+        return {"error": f"route modulo sconosciuta: {route}"}
+    try:
+        return fn(payload or {})
+    except Exception as exc:  # noqa: BLE001
+        return {"error": f"modulo '{route}' ha sollevato: {exc}"}
+
+
 # --------------------------------------------------------------------------- #
 # Bridge HTTP locale (usato dal motore Chrome-app; pywebview usa gli stessi
 # metodi esposti direttamente come js_api, senza passare dall'HTTP)
@@ -343,7 +482,11 @@ class _Handler(BaseHTTPRequestHandler):
         elif route == "api/stato":
             self._send_json(MANAGER.stato())
         elif route == "api/selftest":
-            self._send_json({"results": MANAGER.selftest()})
+            self._send_json({"results": global_selftest()})
+        elif route == "api/modules":
+            self._send_json({"modules": modules_public()})
+        elif route.startswith("api/") and route[len("api/"):] in _MODULE_ROUTES:
+            self._send_json(_call_module_route(route[len("api/"):], payload))
         else:
             self._send_json({"error": "route sconosciuta"}, 404)
 
@@ -404,7 +547,13 @@ class _WebApi:
         return MANAGER.stato()
 
     def selftest(self):
-        return MANAGER.selftest()
+        return global_selftest()
+
+    def modules(self):
+        return modules_public()
+
+    def call(self, route, payload=None):
+        return _call_module_route(route, payload)
 
 
 def main_webview() -> int:
@@ -450,7 +599,7 @@ def main_tk() -> int:
 
     btnbar = tk.Frame(root, bg="#1c2329")
     btnbar.pack(fill="x", padx=20, pady=(0, 16))
-    for t in TILES:
+    for t in all_tiles():
         if t["kind"] == "readonly":
             continue
         b = tk.Button(btnbar, text=f"{t['name']}", command=lambda i=t["id"]: _launch(i),
@@ -458,7 +607,7 @@ def main_tk() -> int:
         b.pack(side="left", padx=(0, 8), pady=4)
 
     def _poll_all():
-        for t in TILES:
+        for t in all_tiles():
             if t["kind"] == "readonly":
                 continue
             r = MANAGER.poll(t["id"])
@@ -475,13 +624,15 @@ def main_tk() -> int:
 # Entry point
 # --------------------------------------------------------------------------- #
 def _run_selftest() -> int:
-    results = MANAGER.selftest()
+    results = global_selftest()
     ok_all = True
     for r in results:
         status = "OK " if r["ok"] else "FAIL"
-        print(f"[{status}] {r['id']:<11} {r['name']:<20} {r['detail']}")
+        print(f"[{status}] {r['id']:<20} {r['name']:<28} {r['detail']}")
         ok_all = ok_all and r["ok"]
     print(f"\nREPO_ROOT = {REPO_ROOT}")
+    if _LOADED_MODULES:
+        print(f"Moduli caricati: {', '.join(m['id'] for m in _LOADED_MODULES)}")
     print("SELFTEST " + ("PASS" if ok_all else "FAIL") + f" ({sum(1 for r in results if r['ok'])}/{len(results)})")
     return 0 if ok_all else 1
 

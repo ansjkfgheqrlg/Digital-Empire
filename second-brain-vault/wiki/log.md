@@ -1,5 +1,16 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-19 (Empire Desk B1 — seam moduli, Gael)
+- BUILD: `EmpireDesk/app.py` — loader `modules/*.py` (contratto dossier 17 §5.3): import isolato
+  per file (un modulo rotto si segnala e si salta, mai crash dell'app), validazione schema tile
+  anti-KeyError, dispatcher routes condiviso HTTP/pywebview, `global_selftest()` che include ogni
+  modulo. `ui/index.html`: switcher "Pannelli" (tab per modulo) + CSS per le classi già usate dai
+  3 pannelli di Max (metrics/revenue/licenze) — senza sarebbero apparsi senza stile. Fix grafico
+  proattivo: header da posizionamento assoluto calcolato a mano a `display:flex` (eliminato rischio
+  sovrapposizione bottoni). 2 bug trovati e corretti in autorevisione prima di ogni lancio (EDE-6/7).
+  **NON eseguito**: sessione senza Python/Node → verifica reale rimandata a macchina con l'ambiente
+  giusto. → CP-20260719-007 + STATO-EMPIRE aggiornati.
+
 ## 2026-07-19 (Empire Desk v0.1 — P1-P3, Gael)
 - BUILD: nuova cartella `EmpireDesk/` — app launcher `.exe` di tutte le automazioni Digital Empire
   (ordine Max, dossier `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md`). `app.py` con 3 motori GUI in
