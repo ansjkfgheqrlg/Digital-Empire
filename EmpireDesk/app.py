@@ -1,21 +1,28 @@
 #!/usr/bin/env python3
 """
-app.py — EMPIRE DESK (Gael, dossier PIANO-MAESTRO/17-EMPIRE-DESK-APP.md).
+app.py — EMPIRE DESK (Gael, dossier PIANO-MAESTRO/17-EMPIRE-DESK-APP.md, §0-bis PIVOT AREUS).
 
-Un solo .exe = la plancia di comando di Digital Empire. Ogni tile lancia via subprocess
-un runtime ESISTENTE (ADR-003: launcher/wrapper, mai riscrittura dei motori).
+Un solo .exe = l'app gestionale di Digital Empire. Il server locale serve la piattaforma
+**Aureus Agency OS** (React/Vite, grafica di Max — `platform/`, INTOCCABILE) come root, mantenendo
+vive le stesse API `/api/*` (tiles/launch/poll/modules/...) per l'operatività di fase 2 (Max, U1).
+La vecchia UI launcher (Empire Premium) resta raggiungibile a `/legacy` come fallback temporaneo.
 
-Stack (identico pattern PreventivoForge, con la lezione WebView2 già applicata):
-ordine motori GUI = Chrome-app (server locale + finestra `chrome --app`) -> pywebview -> Tkinter.
+Ogni tile/automazione lanciata resta un subprocess su un runtime ESISTENTE (ADR-003: launcher/
+wrapper, mai riscrittura dei motori).
+
+Stack GUI (identico pattern PreventivoForge, con la lezione WebView2 già applicata):
+ordine motori = Chrome-app (server locale + finestra `chrome --app`) -> pywebview -> Tkinter.
 Motivo: su alcuni PC WebView2 manca e pywebview fallisce IN SILENZIO (bug reale trovato in
 PreventivoForge, CP-20260715-001) -> qui si parte già col motore che NON dipende da WebView2.
 
-Uso dev:      python app.py
-Selftest:     python app.py --selftest   (verifica che ogni tile sia lanciabile, NON lancia nulla)
+Uso dev:      python app.py                (richiede EmpireDesk/platform/dist/ già buildata:
+                                             dentro platform/ -> npm install && npm run build)
+Selftest:     python app.py --selftest   (verifica tile/moduli/build platform, NON lancia nulla)
 """
 from __future__ import annotations
 
 import json
+import mimetypes
 import os
 import subprocess
 import sys
@@ -51,6 +58,8 @@ def _find_repo_root() -> Path:
 
 REPO_ROOT = _find_repo_root()
 PROFILE_DIR = BASE_DIR / "chrome-profile"
+PLATFORM_DIR = BASE_DIR / "platform"          # Aureus Agency OS (grafica = Max, INTOCCABILE)
+PLATFORM_DIST = PLATFORM_DIR / "dist"         # prodotta da `npm run build` dentro platform/
 
 
 # --------------------------------------------------------------------------- #
@@ -462,6 +471,13 @@ def global_selftest() -> list[dict]:
     for e in _MODULE_LOAD_ERRORS:
         out.append({"id": f"module-error:{e['file']}", "name": f"Modulo {e['file']} (import fallito)",
                     "ok": False, "detail": e["error"]})
+    # Aureus buildata? (la home dell'app dipende da platform/dist/index.html)
+    idx = PLATFORM_DIST / "index.html"
+    out.append({
+        "id": "platform", "name": "Aureus (platform/dist)",
+        "ok": idx.exists(),
+        "detail": "" if idx.exists() else f"build mancante — dentro platform/: npm install && npm run build ({idx})",
+    })
     return out
 
 
@@ -478,15 +494,40 @@ def _call_module_route(route: str, payload: dict) -> dict:
 
 
 # --------------------------------------------------------------------------- #
-# Bridge HTTP locale (usato dal motore Chrome-app; pywebview usa gli stessi
-# metodi esposti direttamente come js_api, senza passare dall'HTTP)
+# Bridge HTTP locale (usato dal motore Chrome-app e da pywebview via url=,
+# vedi main_webview) — serve la piattaforma Aureus (platform/dist/) come root,
+# la vecchia UI launcher resta raggiungibile a /legacy (§0-bis dossier 17, G1).
 # --------------------------------------------------------------------------- #
-def _ui_html() -> str:
+def _legacy_html() -> str:
+    """Vecchia UI launcher 'Empire Premium' — fallback temporaneo a /legacy finché la
+    fase 2 (Max, U1) non ricollega le automazioni dentro Aureus."""
     for base in (BASE_DIR, Path(getattr(sys, "_MEIPASS", BASE_DIR))):
         p = base / "ui" / "index.html"
         if p.exists():
             return p.read_text(encoding="utf-8")
-    return "<html><body>ui/index.html mancante</body></html>"
+    return "<html><body>ui/index.html (legacy) mancante</body></html>"
+
+
+def _platform_missing_html() -> str:
+    """Pagina di aiuto onesta se platform/dist/ non è ancora buildata (mai una pagina
+    bianca o un errore criptico — Gate 'zero bottoni finti' vale anche per la home)."""
+    return f"""<!doctype html><html lang="it"><head><meta charset="utf-8">
+<title>Empire Desk — build mancante</title></head>
+<body style="font-family:'Segoe UI',sans-serif;background:#1c2329;color:#eef1f3;
+             padding:48px;max-width:640px;margin:0 auto;line-height:1.6">
+<h1 style="color:#fb4604">Aureus non è ancora buildata</h1>
+<p>Manca <code>{PLATFORM_DIST}</code>.</p>
+<p>Esegui, dentro <code>EmpireDesk/platform/</code>:</p>
+<pre style="background:#12171b;padding:14px 16px;border-radius:10px">npm install
+npm run build</pre>
+<p>Poi riavvia Empire Desk.</p>
+<p><a href="/legacy" style="color:#fb4604">Apri la vecchia UI launcher (fallback) &rarr;</a></p>
+</body></html>"""
+
+
+def _platform_index_html() -> str | None:
+    idx = PLATFORM_DIST / "index.html"
+    return idx.read_text(encoding="utf-8") if idx.exists() else None
 
 
 class _Handler(BaseHTTPRequestHandler):
@@ -501,17 +542,51 @@ class _Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
-    def do_GET(self):  # noqa: N802
-        if self.path in ("/", "/index.html"):
-            body = _ui_html().encode("utf-8")
-            self.send_response(200)
-            self.send_header("Content-Type", "text/html; charset=utf-8")
-            self.send_header("Content-Length", str(len(body)))
-            self.end_headers()
-            self.wfile.write(body)
-            return
-        self.send_response(404)
+    def _send_html(self, html: str, code: int = 200) -> None:
+        body = html.encode("utf-8")
+        self.send_response(code)
+        self.send_header("Content-Type", "text/html; charset=utf-8")
+        self.send_header("Content-Length", str(len(body)))
         self.end_headers()
+        self.wfile.write(body)
+
+    def _serve_platform_asset(self, path: str) -> bool:
+        """Serve un file statico REALE da platform/dist/<path>. False se non esiste
+        (o path non valido) -> il chiamante passa al fallback SPA (index.html)."""
+        try:
+            rel = path.lstrip("/")
+            if not rel:
+                return False
+            dist_root = PLATFORM_DIST.resolve()
+            candidate = (PLATFORM_DIST / rel).resolve()
+            if not candidate.is_relative_to(dist_root) or not candidate.is_file():
+                return False
+        except (OSError, ValueError):
+            return False
+        ctype = mimetypes.guess_type(str(candidate))[0] or "application/octet-stream"
+        body = candidate.read_bytes()
+        self.send_response(200)
+        self.send_header("Content-Type", ctype)
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+        return True
+
+    def do_GET(self):  # noqa: N802
+        path = self.path.split("?", 1)[0]
+        if path in ("/legacy", "/legacy/"):
+            self._send_html(_legacy_html())
+            return
+        if path.startswith("/api/"):
+            self.send_response(404)
+            self.end_headers()
+            return
+        if path != "/" and self._serve_platform_asset(path):
+            return
+        # "/" o route client-side di react-router (es. /kanban): serve sempre index.html
+        # (fallback SPA standard) — se platform/dist/ non è buildata, pagina di aiuto onesta.
+        html = _platform_index_html()
+        self._send_html(html if html is not None else _platform_missing_html())
 
     def do_POST(self):  # noqa: N802
         length = int(self.headers.get("Content-Length") or 0)
@@ -572,7 +647,7 @@ def main_chrome_app() -> int:
     cmd = [
         chrome, f"--app=http://127.0.0.1:{port}/",
         f"--user-data-dir={PROFILE_DIR}",
-        "--window-size=1180,800",
+        "--window-size=1360,860",
     ]
     proc = subprocess.Popen(cmd)
     proc.wait()
@@ -608,11 +683,12 @@ class _WebApi:
 def main_webview() -> int:
     import webview  # richiede pywebview + Edge WebView2 runtime
 
+    port = _start_server()
     start_module_background_tasks()
     api = _WebApi()
     webview.create_window(
-        "Empire Desk", html=_ui_html(), js_api=api,
-        width=1180, height=800, min_size=(980, 680),
+        "Empire Desk", url=f"http://127.0.0.1:{port}/", js_api=api,
+        width=1360, height=860, min_size=(1100, 720),
         background_color="#1c2329",
     )
     webview.start()
