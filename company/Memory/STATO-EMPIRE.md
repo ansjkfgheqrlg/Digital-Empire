@@ -38,6 +38,12 @@ grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
   (`npm install + npm run build` ✅, output: index.html 5.72kB + assets/*.js 977kB), app.py
   syntax+AST verificato OK. **Build exe NON eseguibile su Linux sandbox** — richiede Windows.
   Eseguire `build_exe.bat` sulla macchina reale → test doppio-click + `--selftest` → poi G3.
+- **G3 — COMPLETATO (2026-07-20, CP-20260720-G3):** B1 (loader moduli) già in app.py ✅; B2
+  (scheduler) già in `modules/scheduler.py` ✅; B3 (notify) creato `modules/notify.py` (toast
+  Windows via PowerShell, polling coda completamento) ✅; B4 (taskboard) creato
+  `modules/taskboard.py` (9 task da dossier 16 §3, auto-update a fine tile, panel HTML
+  inline) ✅; callback completamento tile aggiunto a TileManager in app.py
+  (`push_tile_completion`) ✅. **SELFTEST 15/15 PASS** (8 tile + 6 moduli + platform).
 - **G3:** B1-B4 restano (loader moduli/scheduler/notify/taskboard) = solo backend. Moduli A1-A3 di Max
   restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
 - **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.

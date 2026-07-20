@@ -166,6 +166,34 @@ _HOST = _Host()
 
 
 # --------------------------------------------------------------------------- #
+# B3-Notify: callback di completamento tile (notifiche Windows a fine run)
+# Il TileManager notifica i moduli registrati quando un processo termina.
+# Pattern: TileManager.push_completion() in _reader(), i moduli ascoltano
+# polling Queue.Empty — zero race condition, zero blocco su app.py.
+# --------------------------------------------------------------------------- #
+import queue
+
+_TILE_COMPLETION_QUEUE: queue.Queue = queue.Queue()
+
+
+def push_tile_completion(tile_id: str, exit_code: int | None, was_error: str | None) -> None:
+    """Chiamata da TileManager._reader() quando un processo termina.
+    I moduli B3/B4 la consumano per notifiche e taskboard."""
+    _TILE_COMPLETION_QUEUE.put_nowait({"id": tile_id, "exit_code": exit_code, "error": was_error})
+
+
+def poll_completions() -> list[dict]:
+    """Consuma TUTTI i completamenti in coda (non blocca)."""
+    items = []
+    while True:
+        try:
+            items.append(_TILE_COMPLETION_QUEUE.get_nowait())
+        except queue.Empty:
+            break
+    return items
+
+
+# --------------------------------------------------------------------------- #
 # B1 — Loader moduli (EmpireDesk/modules/*.py, contratto dossier 17 §5.3)
 #
 # Dopo B1 il core Python (app.py) va in FREEZE lato business-logic: nuove funzionalità (B2/B3/B4
@@ -418,6 +446,7 @@ class TileManager:
             except Exception as exc:  # noqa: BLE001
                 job.running = False
                 job.error = str(exc)
+                push_tile_completion(tile_id, None, str(exc))
                 return {"ok": False, "error": f"avvio fallito: {exc}"}
             threading.Thread(target=self._reader, args=(tile_id, job), daemon=True).start()
             return {"ok": True}
@@ -435,6 +464,8 @@ class TileManager:
             job.error = str(exc)
         finally:
             job.running = False
+        # B3-Notify + B4-Taskboard: notifica completamento a chi ascolta
+        push_tile_completion(tile_id, job.exit_code, job.error)
 
     def poll(self, tile_id: str) -> dict:
         job = self.jobs.get(tile_id)
