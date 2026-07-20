@@ -17,12 +17,20 @@ grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
   restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
 - **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.
 
-**▶️ MAX (via Claude):** U0 ✅ (import+build+anteprima) · **U0b ✅ offline-capable (2026-07-20,
-`9e86349b`)**: Tailwind runtime + font Inter vendorizzati in `platform/public/` (stesso motore/stessi
-woff2 = zero differenze grafiche; l'app ora gira senza internet — verificato live) · U1 in fase 2 =
-operatività dentro Aureus nel suo linguaggio grafico (Automations → flussi reali, pannelli
-metrics/revenue/licenze). GAEL: dopo il pull ricordati `npm install` + `npm run build` in platform/
-(node_modules e dist NON sono nel repo).
+**▶️ MAX (via Claude):** U0 ✅ (import+build+anteprima) · **U0b ✅ offline-capable (`9e86349b`)**:
+Tailwind+Inter vendorizzati · **U0c ✅ (`93cd525e`)**: importmap CDN morta rimossa (0 riferimenti
+esterni residui, verificato in dist/assets/*.js — zero impatto grafico).
+
+**✅ G1 CHIUSO E VERIFICATO END-TO-END (Gael `85548a30` + Max):** `app.py` serve `platform/dist/`
+(Aureus) come root, static file serving reale + fallback SPA + pagina d'aiuto onesta se dist manca.
+**Verificato con l'app VERA** (non script temporaneo): `python app.py --selftest` → **13/13 PASS**
+(8 tile + 4 moduli licenze/metrics/revenue/scheduler + platform); finestra chrome-app aperta via
+`avvia-app.bat` → **Aureus si apre come l'app stessa**, HTML servito confermato (5.6KB, root `/`).
+
+**▶️ ORA IN CORSO — U1 (fase 2, Max/Claude):** operatività dentro Aureus nel suo linguaggio grafico
+(sezione Automations → flussi reali delle 8 tile, pannelli metrics/revenue/licenze in stile Aureus
+invece dei panel_html provvisori). **GAEL → G2 in parallelo:** build exe con dist inclusa + test
+doppio click. Promemoria: dopo pull, dentro `platform/`: `npm install && npm run build` (gitignorati).
 **Piano vincolante e completo: `PIANO-MAESTRO/17-EMPIRE-DESK-APP.md` §5 (appena scritto, leggerlo TUTTO).**
 Focus totale sull'app. Massimo impegno. Regola d'oro: **MAI toccare i file dell'altro half** (lezione PreventivoForge).
 
