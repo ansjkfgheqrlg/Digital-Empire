@@ -1,4 +1,19 @@
-# STATO EMPIRE -- aggiornato 2026-07-20 (ordine Max: PIVOT AREUS — Empire Desk riparte dalla piattaforma Aureus)
+# STATO EMPIRE -- aggiornato 2026-07-20 (Max: ISPETTORATO GENERALE — M1 fatta, M3 in build)
+
+## 🔴 MAX ATTIVO ORA — ISPETTORATO GENERALE (dossier 15, esteso oggi con agente 11 + WF-REVISION-STUDY)
+**Direttiva Max 2026-07-20:** l'analisi performance deve essere un ECOSISTEMA con un team di agenti
+dedicato — non solo registri scritti a mano. Deve studiare anche i SUCCESSI (non solo gli errori) e
+i CICLI DI CORREZIONE (quando Max chiede N modifiche, studiare TUTTE per fare meglio al primo colpo).
+- **M1 fondamenta ✅ COMPLETA** (CP-20260720-004): `company/Ispettorato/` — README+ARCHITETTURA,
+  `registro/REGISTRO-ERRORI.md` (10 errori empire-wide REALI migrati), `registro/REGISTRO-REVISIONI.md`
+  + `registro/REGISTRO-SUCCESSI.md` (nuovi, dossier 15 esteso), `kpi/KPI-EMPIRE-WIDE.md`. Intestato
+  in REGISTRO-IMPRESA.md + skills-map.yaml (ADR-008).
+- 🔄 **M3 in build (background, 2 swarm):** 11 agenti CF-grade (isp-conductor…isp-revision-analyst)
+  + 5 workflow. Lezione ERR-20260622-001 (write-early) applicata esplicitamente nei prompt.
+- **Prossimo:** gate struct M3 → 5-bis MAXIMILIAN → CP → poi M2 (pilota PreventivoForge, trace JSONL).
+- **GAEL: non toccare `company/Ispettorato/` (Max ci lavora). Tu resta su Empire Desk (G1/G2/G3 sotto).**
+
+## 🚨🚨🚨 ORDINE MAX 2026-07-20 — PIVOT: EMPIRE DESK = AUREUS AGENCY OS TRASFORMATA IN APP (leggere dossier 17 §0-bis)
 
 ## ✅ MB-OS FASE 002 — ANALISI, BRAINSTORMING E PLANNING COMPLETATI (Arena, CP-20260720-006)
 Creati 9 artefatti in `OPERATING-SYSTEM/planning/`: analisi AS-IS/readiness, **64 idee in 8 domini**, decision matrix pesata su 16 iniziative, piano esecutivo F0→F9/90 giorni, calendario seed 28 giorni, business model, `PLAN.json` con **10 fasi/32 task** e validator. Gate PASS: DAG valido; 16 Reel/12 carousel; pilastri 8/7/6/4/3; hook e slot 14/14; 16/16 score corretti. Critical path fissato: **B-009 security → OAuth → media HTTPS → buffer → 5 dry-run → canary → Insights +48h → CERTIFIED_AUTO → baseline**. Prossimo lavoro parallelo: F0 owner, F1 Intelligence (10 Reel/≥120 frame), F2 CF-R7/Operations. Nessun live/token/spesa; ownership EmpireDesk rispettata.
