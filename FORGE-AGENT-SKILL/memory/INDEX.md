@@ -9,7 +9,7 @@
 - (backlog) Agenti reparto YouTube (yt-scriptwriter, yt-audit-analyst, yt-analytics-reader) — MIR-11 seconda parte; valutare se la delega alla Script-Factory li rende superflui
 - ✅ (chiuso 2026-07-20) MIR retrofis: memory locale + REGISTRO-ERRORI per W1 Outreach / W4 caroselli / W7 youtube-kit (OE/CE/YE)
 - ✅ (chiuso 2026-07-20) MKD da `Materiale Agency - Diglital Empire.txt` → `mkd/MKD-brand-offer-DE.md` (base per futuri agenti vendita/offer)
-- (backlog) MIR-3: ASK formale obbligatorio nei FORGE-PLAN (max 3 domande mirate) — da introdurre nella prossima WF
+- ✅ (chiuso 2026-07-20) MIR-3: ASK formale obbligatorio → `workflows/ASK-PROTOCOL.md` + step ASK in WF-SKILL-NEW (step 4) e WF-AGENT-NEW (step 5) + qa-gate punto 7 esteso (CP-20260720-009)
 - (backlog) Valutazione agenti vendita/offer dal MKD brand-offer (richiede decisione Max su nomi/confini)
 
 ## MKD

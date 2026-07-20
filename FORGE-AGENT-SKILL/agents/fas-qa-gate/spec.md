@@ -17,7 +17,7 @@ Ultimo passaggio prima della registrazione: niente esce dal reparto senza verbal
 4. **Intestazione ADR-008** presente in testa a spec.md/SKILL.md (proprietario/controllore/origine/governo reali — mai inventati).
 5. **No collisioni**: slug libero in `skills-map.yaml` e `REGISTRO-IMPRESA.md`; nessun agente/skill esistente reso obsoleto senza ADR.
 6. **Motori intatti**: diff su `copy-workflow/`, `content-forge2.0/`, `master-build-architecture/` = zero modifiche (ADR-003).
-7. **Memoria**: piano in `memory/plans/`, verbale in `memory/checkpoints/`, CP globale predisposto.
+7. **Memoria**: piano in `memory/plans/` con **sezione `## ASK` compilata** (MIR-3, ASK-PROTOCOL: max 3 domande mirate con raccomandazione+default, oppure "0 domande" motivata; FAIL su domande-ombrello), verbale in `memory/checkpoints/`, CP globale predisposto.
 
 ## Output
 Verbale in `FORGE-AGENT-SKILL/memory/checkpoints/GATE-<slug>-<data>.md`:

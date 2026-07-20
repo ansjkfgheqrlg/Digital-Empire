@@ -16,13 +16,16 @@ failure-modes, memory), con gate bloccante e intestazione ADR-008 obbligatoria. 
 
 ## Asset
 - **Sede:** `FORGE-AGENT-SKILL/` (root) — README (missione + DONE WHEN), agents/ (roster: fas-conductor,
-  fas-agent-smith, fas-skill-smith, fas-qa-gate), workflows/ (WF-AGENT-NEW, WF-SKILL-NEW),
+  fas-agent-smith, fas-skill-smith, fas-qa-gate), workflows/ (WF-AGENT-NEW, WF-SKILL-NEW, **ASK-PROTOCOL** —
+  MIR-3: sezione `## ASK` obbligatoria in ogni FORGE-PLAN, max 3 domande mirate con raccomandazione+default
+  `[ASSUNZIONE]`; qa-gate p.7 la verifica),
   rules/ (R1 mai riassunti · R2 7 canonici · R3 failure-modes · R4 niente orfani ADR-008), memory/.
 - **Motori (wrap ADR-003):** [[Tool_Content_Forge_2]] (`/forge`) · [[Tool_Master_Build_Architecture]] (metodo).
 
 ## Flusso
 Richiesta capability (contratto 06b §1.2) → RECALL anti-duplicazione → MKD (/forge) → FORGE-PLAN →
-BUILD 7 file → GATE fas-qa-gate (7 controlli bloccanti) → registrazione REGISTRO-IMPRESA + skills-map → CP.
+**ASK (MIR-3, obbligatorio)** → BUILD 7 file → GATE fas-qa-gate (7 controlli bloccanti) →
+registrazione REGISTRO-IMPRESA + skills-map → CP.
 
 ## Connessioni
 - [[Piano_Maestro_EMPIRE_OS]] · `PIANO-MAESTRO/18-ARCHITETTURA-IMPERO-REVISIONE.md` (MIR-5 retrofit)

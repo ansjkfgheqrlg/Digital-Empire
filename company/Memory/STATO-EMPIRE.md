@@ -110,8 +110,9 @@ Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow
    **`FORGE-AGENT-SKILL/`** — officina permanente per creare NUOVI AGENTI e NUOVE SKILL (4 agenti fas-*,
    WF-AGENT-NEW/WF-SKILL-NEW, gate bloccante fas-qa-gate, regole R1-R4). Intestazione ADR-008 completata:
    ADR-009 scritto, REGISTRO-IMPRESA §3, skills-map v1.2 (60 mappati), 4 pagine wiki tool.
-**RIPRESA DA (salvo diverso ordine):** ✅ WF-SKILL-NEW (CP-005) · ✅ MIR retrofis + MKD brand-offer (CP-006, 2026-07-20).
-Prossimi backlog reparto: MIR-3 ASK formale nei FORGE-PLAN · valutazione agenti yt-*/vendita (con Max) · checklist PDF 21-punti.
+**RIPRESA DA (salvo diverso ordine):** ✅ WF-SKILL-NEW (CP-005) · ✅ MIR retrofis + MKD brand-offer (CP-006) ·
+✅ MIR-3 ASK formale (`workflows/ASK-PROTOCOL.md` + step nelle 2 WF + qa-gate p.7, CP-20260720-009, 2026-07-20 sera).
+Prossimi backlog reparto: valutazione agenti yt-*/vendita (con Max) · checklist PDF 21-punti · MIR-12 copy APSOC Agency page* (P2) · MIR-9 topology.md (P2) · MIR-5 retrofit 7-file (P3).
 NOTA BENE per Gael/altre sessioni: non sovrascrivere `master-build-architecture/` col clone GitHub fresco
 (la copia main è più completa — decisione in ADR-009 punto 3).
 
