@@ -70,6 +70,9 @@ Dossier: **`PIANO-MAESTRO/19-TOOLCHAIN-VSCODE.md`** (scansione 14 categorie su c
   **AZIONE MAX/GAEL:** aprire la repo in VS Code → «Install recommended extensions».
 - CP YouTube di questa sessione rinumerati **20260719-007→009** e **20260720-001→004** (collisioni add/add
   con B1 di Gael e con il pivot Aureus di Max nei merge di oggi).
+- **+2026-07-20 pomeriggio (CP-20260720-005):** prima skill forgiata dal reparto FORGE-AGENT-SKILL —
+  **`/youtube-lead-machine`** attiva in `.claude/skills/` (MIR-11 chiuso; kernel+6 references+evals+failure-modes;
+  GATE PASS 7/7). skills-map v1.3 (61 mappati). CP YouTube kit rinumerato -004.
 
 ## 🏭 ADR-009 (2026-07-20, CP-20260720-002) — TOOLKIT UFFICIALI + REPARTO FORGE-AGENT-SKILL
 Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow, mai workflow orfani»:
@@ -83,7 +86,8 @@ Direttiva Max: integrati 3 toolkit esterni con regola «impero con più workflow
    **`FORGE-AGENT-SKILL/`** — officina permanente per creare NUOVI AGENTI e NUOVE SKILL (4 agenti fas-*,
    WF-AGENT-NEW/WF-SKILL-NEW, gate bloccante fas-qa-gate, regole R1-R4). Intestazione ADR-008 completata:
    ADR-009 scritto, REGISTRO-IMPRESA §3, skills-map v1.2 (60 mappati), 4 pagine wiki tool.
-**RIPRESA DA (salvo diverso ordine):** WF-SKILL-NEW per skill `/youtube-lead-machine` (MIR-11, backlog reparto).
+**RIPRESA DA (salvo diverso ordine):** ~~WF-SKILL-NEW~~ ✅ FATTA 2026-07-20 — skill `/youtube-lead-machine` attiva
+(GATE 7/7, CP-20260720-005). Prossimi backlog reparto: MIR retrofis · MKD Materiale Agency · checklist PDF 21-punti.
 NOTA BENE per Gael/altre sessioni: non sovrascrivere `master-build-architecture/` col clone GitHub fresco
 (la copia main è più completa — decisione in ADR-009 punto 3).
 

@@ -3,7 +3,7 @@
 # Regola (ADR-003): il codice/file RESTA dove si trova. Questo e' un registro, non uno spostamento.
 # Aggiorna questo file ogni volta che nasce una nuova skill o workflow.
 
-version: "1.2"
+version: "1.3"
 updated: "2026-07-20"
 maintainer: "Chief-Forge (company/Board-CSuite/Chief-Forge.md)"
 # ADR-008: questa mappa + company/REGISTRO-IMPRESA.md = anagrafe unica.
@@ -598,11 +598,20 @@ da_classificare:
     stato: active
     note: "ADR-009. WF-AGENT-NEW + WF-SKILL-NEW; gate bloccante fas-qa-gate; regole R1-R4."
 
+  - id: youtube-lead-machine
+    nome: Skill YouTube Lead Machine (metodo canale organico DE)
+    percorso: .claude/skills/youtube-lead-machine/
+    ecosistema: 04-MARKETING
+    reparto: W7 YouTube Lead Machine (forgiata da FORGE-AGENT-SKILL, MIR-11)
+    tipo: skill
+    stato: active
+    note: "Prima skill forgiata dal reparto (WF-SKILL-NEW, GATE PASS 7/7 2026-07-20). Kernel 118r + 6 references + evals 7 + failure-modes 8. Sorgente Formazzione/Youtube/ (wrap, ADR-003). Delega: script -> Skill CRO Youtube Lead magnet; QA copy -> copy-workflow."
+
 stats:
-  totale_mappati: 60
-  active: 36
+  totale_mappati: 61
+  active: 37
   experimental: 14
   legacy: 4
   knowledge: 6
   da_classificare: 3
-  aggiornamento: "2026-07-20 — ADR-009: +4 voci toolkit esterni ufficiali (copy-workflow-engine, content-forge-engine, master-build-architecture-skill, forge-agent-skill-reparto)"
+  aggiornamento: "2026-07-20 — v1.3: +1 skill forgiata da reparto (youtube-lead-machine, MIR-11, GATE PASS 7/7). Precedente: ADR-009 +4 toolkit esterni."

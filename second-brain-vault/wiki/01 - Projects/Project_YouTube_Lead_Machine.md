@@ -30,6 +30,10 @@ framework Think Media. Materiale sorgente: `Formazzione/Youtube/` (lista video +
 ## Stato e prossimi passi
 - [x] **Kit strategico-creativo COMPLETO (2026-07-20, CP-20260720-004):** cliente d'oro, setup canale
   (copy pronta), lead magnet con automazioni, batch #1: 6 script pronti da registrare.
+
+- [x] **Skill ufficiale `/youtube-lead-machine` FORGIATA (2026-07-20, CP-20260720-005):** prima uscita del
+  reparto FORGE-AGENT-SKILL (MIR-11). Metodo richiamabile: kernel + 6 references + evals + failure-modes;
+  GATE PASS 7/7. Deleghe: script→Script Factory, QA copy→copy-workflow.
 - [ ] Eseguire setup canale con la copy di SETUP-CANALE.md (nome frontman da decidere: Max o Gael)
 - [ ] Creare Calendly "Analisi gratuita 15 min" + gate 3 domande + attivare i 5 messaggi automazione
 - [ ] Preparare setup registrazione fisso (telefono + lavalier + finestra) + checklist PDF "21 punti"
