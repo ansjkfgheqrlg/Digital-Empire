@@ -135,13 +135,37 @@ def _node_bin() -> str:
     return shutil.which("node") or "node"
 
 
+class _Host:
+    """Contesto opzionale passato a `run_background(host)` (es. B2 scheduler): permette a un
+    modulo di lanciare/pollare altre tile SENZA importare app.py o conoscere TileManager
+    (disaccoppiamento — il modulo non tocca mai il core). I metodi leggono `MANAGER`/`all_tiles()`
+    a runtime (late-binding): sicuro anche se `_Host` è istanziato PRIMA che `MANAGER` esista più
+    sotto nel file, perché `run_background` parte solo a motore GUI avviato (mai prima, mai in
+    --selftest — vedi `start_module_background_tasks()`)."""
+
+    def launch(self, tile_id: str, user_input: str | None = None) -> dict:
+        return MANAGER.launch(tile_id, user_input)
+
+    def poll(self, tile_id: str) -> dict:
+        return MANAGER.poll(tile_id)
+
+    def tile_ids(self) -> list[str]:
+        return [t["id"] for t in all_tiles() if t["kind"] != "readonly"]
+
+
+_HOST = _Host()
+
+
 # --------------------------------------------------------------------------- #
 # B1 — Loader moduli (EmpireDesk/modules/*.py, contratto dossier 17 §5.3)
 #
-# Dopo B1 il core (app.py/ui/index.html) va in FREEZE: nuove funzionalità (B2/B3/B4
-# di Gael, A1-A4 di Max) entrano SOLO come moduli qui sotto, mai con altre modifiche
-# dirette a questo file. Un modulo rotto (import fallito, MODULE malformato) NON deve
-# mai far cadere l'intero Empire Desk: si isola, si segnala nel selftest, si salta.
+# Dopo B1 il core Python (app.py) va in FREEZE lato business-logic: nuove funzionalità (B2/B3/B4
+# di Gael, A1-A4 di Max) entrano SOLO come moduli qui sotto. Eccezione unica e già prevista:
+# `_Host`/`run_background()` qui sopra — pura plumbing per permettere a un modulo di richiamare
+# TileManager, non logica di business (necessaria per B2, non introduce comportamento nuovo).
+# `ui/index.html` è di Max (vedi STATO-EMPIRE 2026-07-19 sera) — non si tocca da qui.
+# Un modulo rotto (import fallito, MODULE malformato) NON deve mai far cadere l'intero Empire
+# Desk: si isola, si segnala nel selftest, si salta.
 # --------------------------------------------------------------------------- #
 MODULES_DIR = BASE_DIR / "modules"
 
@@ -202,6 +226,8 @@ def _load_modules() -> None:
                 "tile": info.get("tile"),
                 "panel_html": info.get("panel_html"),
                 "selftest_fn": selftest_fn if callable(selftest_fn) else None,
+                "run_background_fn": getattr(mod, "run_background", None)
+                if callable(getattr(mod, "run_background", None)) else None,
             }
             _LOADED_MODULES.append(entry)
             for route_name, fn in entry["routes"].items():
@@ -242,6 +268,28 @@ def modules_public() -> list[dict]:
     """Elenco moduli per la UI (contratto STATO-EMPIRE 2026-07-19 sera, owner UI Max):
     POST /api/modules -> {"modules": [{id, tile, panel_html}, ...]}."""
     return [{"id": m["id"], "tile": m["tile"], "panel_html": m["panel_html"]} for m in _LOADED_MODULES]
+
+
+_background_started = False
+
+
+def start_module_background_tasks() -> None:
+    """Avvia i task in background dei moduli (es. B2 scheduler) chiamando `run_background(host)`.
+    Va chiamata SOLO dai motori GUI reali (main_chrome_app/main_webview/main_tk), quando sono già
+    certi di partire — MAI durante `_load_modules()` (troppo presto: MANAGER non esiste ancora) e
+    MAI durante `--selftest` (Mandato Art.4.3: zero lanci/automazioni durante un selftest)."""
+    global _background_started
+    if _background_started:
+        return
+    _background_started = True
+    for m in _LOADED_MODULES:
+        fn = m.get("run_background_fn")
+        if not fn:
+            continue
+        try:
+            fn(_HOST)
+        except Exception as exc:  # noqa: BLE001 — un modulo rotto non deve impedire l'avvio dell'app
+            _MODULE_LOAD_ERRORS.append({"file": m["file"], "error": f"run_background fallito: {exc}"})
 
 
 # --------------------------------------------------------------------------- #
@@ -519,6 +567,7 @@ def main_chrome_app() -> int:
     if not chrome:
         raise RuntimeError("Google Chrome non trovato")
     port = _start_server()
+    start_module_background_tasks()
     PROFILE_DIR.mkdir(parents=True, exist_ok=True)
     cmd = [
         chrome, f"--app=http://127.0.0.1:{port}/",
@@ -559,6 +608,7 @@ class _WebApi:
 def main_webview() -> int:
     import webview  # richiede pywebview + Edge WebView2 runtime
 
+    start_module_background_tasks()
     api = _WebApi()
     webview.create_window(
         "Empire Desk", html=_ui_html(), js_api=api,
@@ -577,6 +627,7 @@ def main_tk() -> int:
     from tkinter import scrolledtext
 
     root = tk.Tk()
+    start_module_background_tasks()
     root.title("Empire Desk")
     root.configure(bg="#1c2329")
     root.geometry("880x640")
