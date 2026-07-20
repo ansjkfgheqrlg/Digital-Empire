@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aureus Agency OS</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind runtime vendorizzato in locale (stesso identico motore del CDN — app usabile offline).
+         Fonte: https://cdn.tailwindcss.com, scaricato 2026-07-20. Zero differenze grafiche. -->
+    <script src="/tailwind-cdn.js"></script>
     <script>
       tailwind.config = {
         darkMode: 'class',
@@ -60,7 +62,8 @@
         }
       }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Inter vendorizzato (stessi woff2 di Google Fonts, resa identica — app usabile offline) -->
+    <link href="/fonts/inter.css" rel="stylesheet">
     <style>
       body {
         background-color: #050505;
