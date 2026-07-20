@@ -1,14 +1,14 @@
 # STATO EMPIRE -- aggiornato 2026-07-20 (ordine Max: PIVOT AREUS — Empire Desk riparte dalla piattaforma Aureus)
 
-## ⚠️ COORDINAMENTO 2026-07-20 — MB-OS FASE 002 ANALISI → BRAINSTORMING → PLANNING (Arena)
-**Ciclo aperto su richiesta Max.** Scope esclusivo: `Page IG - Mentalità Brutale/OPERATING-SYSTEM/planning/`, Memory MB-OS, checkpoint/INDEX/wiki a chiusura. Obiettivo: divergere senza censura, convergere con matrice decisionale e produrre un piano esecutivo ordinato per dipendenze, owner, gate, numeri e percorso al `CERTIFIED_AUTO`/modello di business. **Non si toccano** EmpireDesk/platform/UI, runtime Outreach, PreventivoForge, carousel-factory o publisher legacy. Nessun live, token o spesa.
+## ✅ MB-OS FASE 002 — ANALISI, BRAINSTORMING E PLANNING COMPLETATI (Arena, CP-20260720-006)
+Creati 9 artefatti in `OPERATING-SYSTEM/planning/`: analisi AS-IS/readiness, **64 idee in 8 domini**, decision matrix pesata su 16 iniziative, piano esecutivo F0→F9/90 giorni, calendario seed 28 giorni, business model, `PLAN.json` con **10 fasi/32 task** e validator. Gate PASS: DAG valido; 16 Reel/12 carousel; pilastri 8/7/6/4/3; hook e slot 14/14; 16/16 score corretti. Critical path fissato: **B-009 security → OAuth → media HTTPS → buffer → 5 dry-run → canary → Insights +48h → CERTIFIED_AUTO → baseline**. Prossimo lavoro parallelo: F0 owner, F1 Intelligence (10 Reel/≥120 frame), F2 CF-R7/Operations. Nessun live/token/spesa; ownership EmpireDesk rispettata.
 
-## ✅ MENTALITÀ BRUTALE MB-OS — FONDAZIONI COMPLETE, LIVE CORRETTAMENTE BLOCCATO (Arena, CP-20260720-004)
+## ✅ MENTALITÀ BRUTALE MB-OS — FONDAZIONI COMPLETE, LIVE CORRETTAMENTE BLOCCATO (Arena, CP-20260720-005)
 **Costruito via Chief-Forge → ARCHITETTURA → FORGE:** `Page IG - Mentalità Brutale/OPERATING-SYSTEM/` (41 file) + skill `.claude/skills/mentalita-brutale-operator/` (5 file). Pipeline completa progettata e implementata: Intelligence→Strategy→Production→CF-R6 QA→CF-R7 Meta API v25.0→Insights→CF-R8 learning; 11 reparti instradati sulle capability Empire, memoria locale, strategia baseline 28 giorni (28 post: 16 Reel/12 caroselli), Content-Forge source→skill/workflow.
 
 **Runtime:** OAuth/refresh, Graph publish+Insights, 5 gate, staging HTTPS + PNG→JPEG, queue SQLite, hash idempotency, token/account/quota check, cap 3/24h, retry max 3, kill switch e progressive autonomy. **14/14 test PASS** + conversione slide reale JPEG PASS. Stato iniziale **SHADOW**, target `CERTIFIED_AUTO` via ADR-009: nessun live finché non passano 5 dry-run + canary + post-check + Insights + secret scan.
 
-**Sicurezza critica:** rimosse password in chiaro dai config correnti del publisher legacy. Erano già nella Git history/remoto: **B-009 rotazione password + revoca sessioni + 2FA obbligatoria prima del live**. Video: 0 file nel checkout; non inventati pattern. Next: rotazione → Meta Dashboard/`.env`/mirror HTTPS → `doctor --online` → canary; in parallelo ≥10 Reel via Empire Studio prima di forgiare Reel Pattern Extractor. Dettagli: `company/Memory/checkpoints/CP-20260720-004.md`.
+**Sicurezza critica:** rimosse password in chiaro dai config correnti del publisher legacy. Erano già nella Git history/remoto: **B-009 rotazione password + revoca sessioni + 2FA obbligatoria prima del live**. Video: 0 file nel checkout; non inventati pattern. Next: rotazione → Meta Dashboard/`.env`/mirror HTTPS → `doctor --online` → canary; in parallelo ≥10 Reel via Empire Studio prima di forgiare Reel Pattern Extractor. Dettagli: `company/Memory/checkpoints/CP-20260720-005.md`.
 
 ## 🚨🚨🚨 ORDINE MAX 2026-07-20 — PIVOT: EMPIRE DESK = AUREUS AGENCY OS TRASFORMATA IN APP (leggere dossier 17 §0-bis)
 **Max ha bocciato la UI launcher v0.1/v2** (struttura sbagliata: questa è l'app GESTIONALE del team,
@@ -542,7 +542,7 @@ Vedi `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md` §10 (roadmap V2-0…V2-8).
   **▶️ GAEL — TASK SETTIMANA (in ordine):** (1) 30min: chiudi CF-R8 → 03 9/9; (2) G1: AUDIT ASSET tutte le
   pagine (mentalita.brutale, crea.illtuo_impero, altre pagine lancio+sito) → `05-MULTI-BUSINESS/AUDIT-PAGINE-20260719.md`;
   (3) G2: funnel Manuale (landing empire-premium-style + checkout + 3 email — prezzo arriva da Max G1);
-  (4) G2-G3: batch 7 caroselli crea.illtuo_impero + bio→funnel; (5) G3-G4: pipeline mentalita.brutale — **fondazioni MB-OS ✅ CP-20260720-004, stato SHADOW; live richiede B-009+OAuth+staging+canary**
+  (4) G2-G3: batch 7 caroselli crea.illtuo_impero + bio→funnel; (5) G3-G4: pipeline mentalita.brutale — **fondazioni MB-OS ✅ CP-20260720-005, stato SHADOW; live richiede B-009+OAuth+staging+canary**
   (produzione→QA→scheduler→report); (6) G4-G5: WF-YT v1 + test 1 video end-to-end API Fliki; (7) G6: analisi
   competitor 3 nicchie YT → proposta a Max; (8) G7: CP + RETRO con numeri veri. Dettagli nel dossier 16.
   **▶️ MAX — TASK:** G1 prezzo B-003 con team-prezzi · lista 7 concessionari · G2-G4 contattarli (script pronto

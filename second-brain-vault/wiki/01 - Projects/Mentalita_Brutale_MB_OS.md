@@ -47,6 +47,19 @@ Target: `CERTIFIED_AUTO`; stato iniziale: `SHADOW`. Certificazione: ≥5 dry-run
 
 28 giorni: 28 post, 16 Reel + 12 caroselli. Due hook, due slot, CTA bilanciate; metric snapshot a +48h e +7d. Pattern promossi solo con n≥3 e confronto nello stesso formato.
 
+## Piano esecutivo Fase 002
+
+Il 2026-07-20 è stato chiuso il ciclo analisi→brainstorming→planning:
+
+- 64 idee in 8 domini;
+- 16 iniziative valutate con matrice pesata;
+- roadmap F0→F9 su 90 giorni;
+- 32 task con owner/dipendenze/gate in `planning/PLAN.json`;
+- calendario seed validato: 16 Reel, 12 carousel, pilastri 8/7/6/4/3, hook e slot 14/14;
+- business ladder: baseline → owned audience → entry offer → affiliate/sponsor selettivi → MB-OS B2B solo dopo due cicli.
+
+Critical path: security B-009 → OAuth → media HTTPS → buffer → 5 dry-run → canary → Insights → `CERTIFIED_AUTO` → baseline 28 giorni.
+
 ## Stato video
 
 Nel checkout non esistono file video tracciati. Il Drive legacy espone un file `.mp4`, ma non è stato osservato integralmente in questa fase. Perciò i timing Reel sono ipotesi e il Reel Pattern Extractor resta bloccato fino a ingestione Empire Studio con frame e transcript reali.

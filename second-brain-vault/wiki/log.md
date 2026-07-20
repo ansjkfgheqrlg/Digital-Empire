@@ -1,5 +1,8 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-20 (Mentalità Brutale — analisi, brainstorming e planning)
+- PLAN: completata Fase 002 MB-OS. Creati 8 artefatti in `OPERATING-SYSTEM/planning/`: analisi AS-IS/readiness, brainstorming 64 idee/8 domini, decision matrix pesata 16 iniziative, roadmap 90 giorni F0→F9, calendario seed 28 giorni, business model, PLAN.json 32 task e validator. Gate deterministico PASS: DAG valido, 16 Reel/12 carousel, pilastri P1-P5=8/7/6/4/3, hook A/B=14/14, slot 13:00/20:30=14/14, 16/16 score matrice corretti. Critical path fissato: security→OAuth→HTTPS→buffer→dry-run→canary→Insights→certification→baseline. Nessun live/secret/spesa.
+
 ## 2026-07-20 (Mentalità Brutale — MB-OS foundations)
 - INGEST/BUILD: fondato `Page IG - Mentalità Brutale/OPERATING-SYSTEM/` tramite Chief-Forge → ARCHITETTURA → FORGE. Creati MKD, authorization Meta v25.0, 11 reparti instradati sulle capability Empire, strategia baseline 28 giorni (28 post: 16 Reel/12 caroselli), progressive autonomy SHADOW→SUPERVISED→CERTIFIED_AUTO, video-forensics no-finto-pass e runbook. Runtime Python API-first: OAuth/token refresh, 5 gate, staging HTTPS/JPEG, SQLite queue, idempotenza, publishing limit/cap, kill switch, publish e Insights +48h/+7d. Skill `.claude/skills/mentalita-brutale-operator/` forgiata con protocollo Content-Forge. Bonificate password hard-coded dai config correnti del publisher legacy (rotazione account ancora obbligatoria). 14/14 unit test PASS; nessuna chiamata live (OAuth/staging/canary pendenti). → 1 pagina progetto creata: `Mentalita_Brutale_MB_OS`.
 
