@@ -33,36 +33,6 @@
 5. **Gael:** V2-2 lotto 4 (dossier 07/08/09) → chiude blueprint V2
 6. Vedi `CALENDARIO-ESECUTIVO-SETTIMANA1.md` e `REVENUE-DASHBOARD.md` per dettaglio
 
-### 🎬 Sistema Task Gael — Categorie Operative (CP-20260719-004)
-**Documento:** `company/Memory/SISTEMA-TASK-GAEL.md`
-
-**Comando trigger Gael:** `iniziamo con [categoria]`
-
-**Categorie:**
-- **YouTube** 🟢 PRONTO — 23 agenti, 17 workflow, 5 fasi implementazione
-  - Ruolo Gael: workflow, skill, logica, memoria, architettura
-  - Primo step: comando `iniziamo con Youtube` → 4 STEP operativi (9 ore)
-  - Infrastruttura: `SKILL & Agenti/YouTube/` + `memory/youtube/` (già create)
-- **Instagram** 🟡 Da iniziare — Pagine: mentalita.brutale, crea.illtuo_impero
-- **Lancio** 🟡 Da iniziare — Lancio corso Claude Code + libro
-
-**Architettura YouTube:**
-- L1 Orchestrator (3 agenti)
-- L2 Research & Analysis (4 agenti)
-- L3 Content Production (7 agenti)
-- L4 Publishing & Distribution (3 agenti)
-- L5 Analytics & Optimization (3 agenti)
-- L6 Memory & Integration (3 agenti)
-- Totale: 23 agenti × 7 file canonici = 161 file
-- Workflow: 17 (research, production, publishing, optimization, memory)
-
-**Piano Implementazione YouTube:**
-- Fase 1 (G2-G3): Fondamenta + primo video test
-- Fase 2 (G4-G5): Pipeline completa operativa
-- Fase 3 (G6-G7): Publishing & analytics
-- Fase 4 (G8-G10): Business integration
-- Fase 5 (G11-G14): Scaling & optimization
-
 ---
 
 ## 🚨 ORDINE MAX 2026-07-19 — GAEL: EMPIRE DESK v0.1 ENTRO OGGI (priorità #1)
