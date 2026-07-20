@@ -182,8 +182,16 @@ Il repo era diviso "ahead 1, behind 26" da GitHub (rebase automatico fallito all
    Gael: se testi PreventivoForge e trovi un errore, registralo lì. Prendi sempre l'ULTIMA build (git pull / zip rigenerato).
 
 
+## ✅ GAEL — Empire Studio: andrei-pascu-001 cat1-copywriting video 10/29 COMPLETATO (2026-07-20, CP-20260720-002)
+**RIPRESA DA: video 11/29 — `nRm7JLsP1bc` ("Basta usare formule clichè di copywriting") — Stage 1 (yt_ingest) da avviare, serve ambiente con Python/yt-dlp/ffmpeg (non presente in questa sessione)**
+Continuato il lavoro lasciato a metà da Max (Stage 1+2 già fatti l'11/07, Stage 3-9 mancanti). Pipeline completata per Ahp_6rHSOsU: Stage 3-5 + Stage 7 + Memory Empire C-H. 20 KA P12-traced. 2 wiki pages create. 16 VP schermo documentati. Tutorial 11m08s — 8 trucchi Google Docs (no-pagine, cartelle Clienti, heading/outline, note colorate, dropdown-stato/kanban, segnalibri, conteggio caratteri). Nessun brand terzo analizzato (video procedurale puro).
+- **Top KA**: No-pagine per copy digitale · Sistema cartelle Clienti visibile/non-visibile (rosso=warning) · Heading→outline navigabile · "Aggiorna intestazione" per batch-update stile · Dropdown stato = mini-kanban · "Lo uso per comodità degli altri, non mia"
+- **Visual Passages**: VP-003 menu File→Impostazione pagina · VP-007 outline popolato · VP-010 note gialle · VP-011/012 dropdown stato+badge · VP-013 segnalibro+link · VP-015 contatore parole live
+- **Nuovi Concetti**: Source_Andrei_Pascu_Google_Docs_Copywriter.md + Concept_Google_Docs_Copywriter_Workflow.md
+- **WATCH-001**: N_video=10, N_MemoryEmpire=10 → MATCH ✅
+
 ## ✅ MAX — Empire Studio: andrei-pascu-001 cat1-copywriting video 9/29 COMPLETATO (2026-07-11, CP-20260711-001)
-**RIPRESA DA: video 10/29 — `Ahp_6rHSOsU` ("Usa Google Docs come un copywriter PRO") — Stage 1+2 DONE (668s=11m08s, 334 frame 3-digit, 9 capitoli)**
+**RIPRESA DA: video 10/29 — `Ahp_6rHSOsU` ("Usa Google Docs come un copywriter PRO") — Stage 1+2 DONE (668s=11m08s, 334 frame 3-digit, 9 capitoli) → COMPLETATO 2026-07-20, vedi blocco sopra**
 Pipeline completata per IWCHN_mE2Vo: Stage 1-5 + Stage 7 + Memory Empire C-H. 25 KA P12-traced. 2 wiki pages create. 12 VP schermo documentati. Live 1h02min — Meta Ads Library tutorial + analisi ads brand italiani (Carisma Shoes, La Palestra boxing, melone costume, Corte CAB VANIGLIA).
 - **Top KA**: Meta Ads Library "licenziato e fallire se non usi" · Video=conversione/Photo=retargeting · EU Transparency Reach 1770 Women 30-55 · Imprenditori italiani pieni di soldi · Chiarezza>Creativita "grande danno video incomprensibile"
 - **Visual Passages**: VP-002 Ad Library Latvia homepage · VP-004 filter stack 98 results Laurea Online · VP-006 EU Transparency Women 30-55 excl. Toscana+Veneto · VP-011 costume regale supermercato · VP-012 Corte CAB VANIGLIA

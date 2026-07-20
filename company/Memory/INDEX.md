@@ -24,6 +24,8 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260720-002](checkpoints/CP-20260720-002.md) — Empire Studio: video 10/29 andrei-pascu-001 completato (Ahp_6rHSOsU, Google Docs copywriter). Stage 3-9 chiusi (Stage 1+2 già fatti da Max l'11/07): 16 frame letti, VTT integrale, 20 KA, 2 pagine wiki, Memory Empire C-H, tracker aggiornato. RIPRESA DA video 11/29 (nRm7JLsP1bc) — Gael
+- [CP-20260720-001](checkpoints/CP-20260720-001.md) — EMPIRE DESK PIVOT AREUS: U0 completato, piattaforma Aureus Agency OS importata come base app — Max
 - [CP-20260719-008](checkpoints/CP-20260719-008.md) — Risolta collisione reale Gael/Max su `EmpireDesk/ui/index.html` (2 redesign paralleli della stessa feature pannelli-moduli, 8 blocchi in conflitto): tenuto il design UI di Max (nav-tab), `app.py` riallineato al SUO contratto (`/api/modules`, non `/api/panels`). Preso atto: Gael non tocca più `ui/index.html` (ownership passata a Max) — Gael
 - [CP-20260719-007](checkpoints/CP-20260719-007.md) — ⚠️ **Empire Desk B1: seam moduli costruito** (loader `modules/*.py` isolato, validazione schema tile anti-crash, dispatcher routes condiviso HTTP/pywebview, switcher pannelli UI + CSS per i 3 moduli di Max, fix grafico proattivo header flex). 2 bug trovati e corretti in autorevisione (EDE-6/7), 0 lanciati. NON eseguito: ambiente sessione senza Python/Node — Gael
 - [CP-20260719-006](checkpoints/CP-20260719-006.md) — Risolto conflitto di sync GitHub (SYNC-CONFLICT.txt) + collisione numerazione checkpoint (002/003 rinumerati 004/005); merge REGISTRO-ERRORI EmpireDesk senza perdita dati; push riuscito, main allineato — Max

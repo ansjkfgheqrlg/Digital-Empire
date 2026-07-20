@@ -1,0 +1,186 @@
+{
+  "video_id": "Ahp_6rHSOsU",
+  "total_atoms": 20,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "Ahp_6rHSOsU#00:00:00",
+      "frame": "frame-001",
+      "category": "Positioning / Autorita",
+      "section": "S0",
+      "tags": ["autorita", "proof-of-work", "hook"],
+      "atom": "Andrei apre stabilendo autorita: 'lavoro come copywriter da quando ho 16 anni, adesso ne ho 21' + 'ho quasi sempre usato Google Docs... cose che uso ogni giorno'. Proof-of-work come hook: chi insegna lo strumento lo usa davvero in produzione."
+    },
+    {
+      "id": "KA-02",
+      "source": "Ahp_6rHSOsU#00:00:08",
+      "frame": "frame-001",
+      "category": "Content / Struttura video",
+      "section": "S0",
+      "tags": ["formato-lista", "retention", "youtube"],
+      "atom": "Struttura tutorial '8 trucchi che probabilmente non conoscevi' = format list-based ad alta ritenzione. Ogni tip numerato a voce segmenta il video, crea micro-loop di curiosita, facilita il re-watch come reference."
+    },
+    {
+      "id": "KA-03",
+      "source": "Ahp_6rHSOsU#00:00:21",
+      "frame": "frame-018",
+      "category": "Workflow / Copy digitale",
+      "section": "S1",
+      "tags": ["no-pagine", "sales-page", "digitale-vs-cartaceo"],
+      "atom": "Principio: quando scrivi copy (es. Sales page) 'quel documento probabilmente non verra' mai stampato, quindi l'impaginazione diventa solamente fastidiosa perche' divide i testi a meta''. Il copy e' output digitale, non cartaceo."
+    },
+    {
+      "id": "KA-04",
+      "source": "Ahp_6rHSOsU#00:00:41",
+      "frame": "frame-023",
+      "category": "Tool / Google Docs",
+      "section": "S1",
+      "tags": ["impostazione-pagina", "senza-pagine", "how-to"],
+      "atom": "COME: File -> Impostazioni della pagina -> 'Senza pagine' -> OK. Opzionale: cambiare colore sfondo + 'imposta come default'. Rende il documento un flusso continuo. 'Aiuta anche a fare migliore figura con le persone a cui invii i tuoi documenti'."
+    },
+    {
+      "id": "KA-05",
+      "source": "Ahp_6rHSOsU#00:01:03",
+      "frame": "frame-045",
+      "category": "Workflow / Organizzazione",
+      "section": "S2",
+      "tags": ["drive", "organizzazione", "anti-pattern"],
+      "atom": "Errore comune: creare i documenti direttamente da Google Docs -> finiscono tutti nello stesso posto indifferenziato; 'una volta che ne hai 20, 30, 40 diventano tantissimi, per trovarne uno devi scavare'. Soluzione: crearli DA Google Drive, nella cartella giusta fin da subito."
+    },
+    {
+      "id": "KA-06",
+      "source": "Ahp_6rHSOsU#00:01:36",
+      "frame": "frame-045",
+      "category": "Workflow / Sistema cartelle clienti",
+      "section": "S2",
+      "tags": ["cartelle-clienti", "privacy", "sistema"],
+      "atom": "Sistema di Andrei: cartella 'Clienti' -> una sottocartella per ogni cliente -> dentro ogni cliente, cartelle divise in 'visibile al cliente' e 'NON visibile al cliente'. La cartella non-visibile e' colorata di ROSSO come reminder di non metterci cose che il cliente non deve vedere."
+    },
+    {
+      "id": "KA-07",
+      "source": "Ahp_6rHSOsU#00:02:22",
+      "frame": "frame-083",
+      "category": "Tool / Anti-pattern",
+      "section": "S3",
+      "tags": ["heading", "anti-pattern", "formattazione-manuale"],
+      "atom": "Anti-pattern 'da nabbi': creare i titoli ingrandendo il testo a mano (bold+size) e ricopiarli/rimodificarli ogni volta = 'un pessimo modo di lavorare, anche svantaggioso'. Perde tempo e non produce struttura."
+    },
+    {
+      "id": "KA-08",
+      "source": "Ahp_6rHSOsU#00:02:44",
+      "frame": "frame-116",
+      "category": "Tool / Google Docs",
+      "section": "S3",
+      "tags": ["heading", "outline", "navigazione"],
+      "atom": "COME: seleziona il testo -> 'Testo normale' (menu stili) -> scegli Intestazione/Titolo. Beneficio doppio: estetica/velocita' + genera automaticamente la STRUTTURA del documento nel pannello sinistro (outline), navigabile con un click."
+    },
+    {
+      "id": "KA-09",
+      "source": "Ahp_6rHSOsU#00:03:45",
+      "frame": "frame-151",
+      "category": "Tool / Google Docs",
+      "section": "S4",
+      "tags": ["stili", "aggiorna-intestazione", "batch-update"],
+      "atom": "Per cambiare lo stile di TUTTE le intestazioni in un colpo: formatta un testo come lo vuoi -> selezionalo -> Stili -> seleziona lo stile che stai modificando -> 'Aggiorna intestazione perche' corrisponda'. Aggiorna automaticamente tutti i testi con quello stile nel documento. Vale anche per 'Testo normale'."
+    },
+    {
+      "id": "KA-10",
+      "source": "Ahp_6rHSOsU#00:04:33",
+      "frame": "frame-196",
+      "category": "Workflow / Copy collaborativo",
+      "section": "S5",
+      "tags": ["note-gialle", "convenzione-colore", "team"],
+      "atom": "Convenzione di team: 'testi normali come copy, testo in giallo come note separate dal copy'. Nel documento servono indicazioni operative (es. quali icone/loghi metterci) che NON sono copy -> vanno rese visivamente distinte per chi legge (designer, cliente)."
+    },
+    {
+      "id": "KA-11",
+      "source": "Ahp_6rHSOsU#00:05:30",
+      "frame": "frame-196",
+      "category": "Tool / Google Docs",
+      "section": "S5",
+      "tags": ["note-gialle", "heading-custom", "automazione"],
+      "atom": "Trucco: trasformare lo stile 'nota gialla' in un heading predefinito (es. Intestazione 3) -> per creare una nota basta applicare quell'intestazione invece di evidenziare a mano ogni volta. Automatizza una convenzione ricorrente."
+    },
+    {
+      "id": "KA-12",
+      "source": "Ahp_6rHSOsU#00:06:32",
+      "frame": "frame-207",
+      "category": "Tool / Project management in-doc",
+      "section": "S6",
+      "tags": ["dropdown", "stato-sezione", "how-to"],
+      "atom": "COME: Inserisci -> Menu a discesa (dropdown). Google offre template preset ('Stato progetto', 'Stato revisione') o se ne crea uno custom. Andrei crea uno stato-sezione: Da iniziare / In corso / In revisione / Approvato-pronto, con colore diverso per ciascuno."
+    },
+    {
+      "id": "KA-13",
+      "source": "Ahp_6rHSOsU#00:07:18",
+      "frame": "frame-226",
+      "category": "Workflow / Stato lavoro",
+      "section": "S6",
+      "tags": ["dropdown", "kanban", "trasparenza-stato"],
+      "atom": "Uso reale: incolla il dropdown di stato accanto a ogni heading di sezione -> 'appena apro il documento so molto chiaramente in che stato si trova ogni parte'. Trasforma il doc di copy in mini-kanban, elimina l'ambiguita' su cosa e' pronto in documenti lunghi."
+    },
+    {
+      "id": "KA-14",
+      "source": "Ahp_6rHSOsU#00:07:53",
+      "frame": "frame-251",
+      "category": "Tool / Google Docs",
+      "section": "S7",
+      "tags": ["segnalibro", "link-interno", "how-to"],
+      "atom": "COME: vai all'inizio di una sezione -> Inserisci -> Segnalibro -> clicca sull'icona 'copia link'. Quel link porta direttamente a quella sezione. Puoi incollarlo ovunque e renderlo cliccabile per navigare istantaneamente."
+    },
+    {
+      "id": "KA-15",
+      "source": "Ahp_6rHSOsU#00:08:43",
+      "frame": "frame-251",
+      "category": "Mindset / UX per il cliente",
+      "section": "S7",
+      "tags": ["ux-documento", "cura-deliverable", "cliente"],
+      "atom": "Principio guida: 'lo uso sempre, non per comodita' mia ma per comodita' degli altri — quando qualcuno entra sul documento voglio che abbia l'esperienza piu' smooth possibile'. Il copywriter cura l'esperienza di lettura del documento come cura il copy."
+    },
+    {
+      "id": "KA-16",
+      "source": "Ahp_6rHSOsU#00:09:02",
+      "frame": "frame-305",
+      "category": "Copy / Vincolo caratteri",
+      "section": "S8",
+      "tags": ["conteggio-caratteri", "vincolo-piattaforma", "headline"],
+      "atom": "'Ho sempre bisogno di controllare quanti caratteri sto scrivendo': oggetto email, headline, titolo video hanno un numero limitato/consigliato di caratteri. Il conteggio e' vincolo di piattaforma, non un vezzo."
+    },
+    {
+      "id": "KA-17",
+      "source": "Ahp_6rHSOsU#00:09:47",
+      "frame": "frame-305",
+      "category": "Tool / Google Docs",
+      "section": "S8",
+      "tags": ["conteggio-parole", "how-to", "selezione"],
+      "atom": "COME: Strumenti -> Conteggio parole -> spunta 'visualizza durante la digitazione' -> contatore live in basso a sinistra. Cliccandoci sopra si passa da parole a caratteri. Selezionando un testo mostra parole/caratteri della SOLA selezione."
+    },
+    {
+      "id": "KA-18",
+      "source": "Ahp_6rHSOsU#00:09:23",
+      "frame": "frame-290",
+      "category": "Tool / Produttivita",
+      "section": "S8",
+      "tags": ["shortcut", "stili", "in-context-help"],
+      "atom": "Meta-tip: gli shortcut da tastiera sono visibili direttamente in Google Docs — passando su uno stile nel menu Stili, Docs mostra lo shortcut associato. Non serve memorizzarli: lo strumento li ricorda in-context."
+    },
+    {
+      "id": "KA-19",
+      "source": "Ahp_6rHSOsU#00:10:36",
+      "frame": "frame-334",
+      "category": "Funnel / CTA",
+      "section": "S9",
+      "tags": ["cta", "top-of-funnel", "risorse"],
+      "atom": "CTA di chiusura verso 'risorse interessanti nei link in descrizione' su copywriting, persuasione, gestione/acquisizione clienti. Il tutorial gratuito su uno strumento e' top-of-funnel verso risorse/prodotti a valle."
+    },
+    {
+      "id": "KA-20",
+      "source": "Ahp_6rHSOsU#00:08:50",
+      "frame": "frame-334",
+      "category": "Content / Retention hack",
+      "section": "S9",
+      "tags": ["retention", "iscrizione", "meta-ironia"],
+      "atom": "Micro-retention: richiesta di iscrizione A META' tutorial ('prima di andare sul numero 10... perche' non sei ancora iscritto') e ironia auto-consapevole sul fatto che tornare al video per gli shortcut 'mi fa fare un paio di views in piu''. Trasparenza sul meccanismo = tono che disarma."
+    }
+  ]
+}
