@@ -79,3 +79,6 @@
 
 ## 2026-07-19
 - INGEST: PIANO ESTATE REVENUE (dossier 16) — strategia fatturato 7gg: S1 concessionari anticipati (≥95%), S2 Manuale CC (B-003 da chiudere G1), S3 pagine lancio, S4 mentalita.brutale (solo se auto 100%, carousel-factory wrap), S5 YouTube-Fliki auto (API in .env locale) → 1 dossier + task board Max/Gael in STATO
+
+## 2026-07-21 (YouTube Automation)
+- BUILD: Eseguita SPEC + BUILD per la conversione dei raw log di Max su YouTube Automation (VidIQ, Cash Cow Channels, Fliki, e Teoria Video). Generato `KB_06_youtube_automation_vidiq_fliki.md` nella KNOWLEDGE BASE del YouTube Lead Engine. Completato passo 7 del Ciclo di Fase.

@@ -56,3 +56,8 @@ Agenti CF-grade 7-file (conductor, op-scraper, op-parser, op-pricer) + `agents/C
   Ora si committa/pusha A MANO finché non si sistema l'hook. **Max: dopo il commit → `git push origin main`.**
 - **Scraping mobile.de:** anti-bot forte. Path automatico Playwright + fallback `--manual` pronti;
   il test live va fatto nell'ambiente del cliente.
+
+---
+
+## 📅 CHECKPOINT - 2026-07-21 (YouTube Automation)
+- **Gael:** Creato asset `KB_06_youtube_automation_vidiq_fliki.md` in YouTube Lead Engine, strutturando i raw log sulle logiche di YouTube Automation, VidIQ e Fliki. Inserito in `STATO-SITUAZIONE` come previsto dal Ciclo di Fase (passo 7).
