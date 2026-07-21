@@ -1,0 +1,3 @@
+# Runtime artefacts from the S4 pipeline; never commit analytics or publication state.
+reports/*.json
+state/*.json
