@@ -1,4 +1,26 @@
-# STATO EMPIRE -- aggiornato 2026-07-21 (Claude/Max: sync git risolto + audit Estate Workshop)
+# STATO EMPIRE -- aggiornato 2026-07-21 (ORDINE MAX: EMPIRE DESK — intera app passa a Max)
+
+## 🚨🚨🚨 ORDINE MAX 2026-07-21 — EMPIRE DESK: OWNERSHIP TOTALE PASSA A MAX (supera divisione Half A/Half B)
+**Max:** *"da ora l'APP ci penso io, all'APP la faccio io, mi occupo di tutta la grafica dell'APP
+e di tutta l'APP in generale da ora in poi."*
+
+**Supera tutti gli ordini precedenti su EmpireDesk** (divisione Half A/Half B del 2026-07-19,
+ownership-solo-UI del 2026-07-19 sera, task G3 assegnati a Gael il 2026-07-20). Non è più solo
+grafica/UI/UX: **Max prende l'intera app** — `app.py`, `build_exe.bat`, `empiredesk.spec`,
+`platform/` (Aureus), tutti i moduli `EmpireDesk/modules/*.py`, tutto.
+
+- **GAEL: STOP IMMEDIATO su `EmpireDesk/` — non toccare più NULLA in quella cartella**, incluso
+  quanto restava assegnato (G3: B1-B4 loader-moduli/scheduler/notifiche/taskboard). Se hai lavoro
+  locale non pushato su EmpireDesk: pusha ORA cosi' non si perde, poi fermati.
+- **GAEL — prossimo lavoro**: torna a **V2-2 Lotto 4** (`07-BACKBONE-RUFLO-SKILLS-V2.md` ·
+  `08-ROADMAP-FASI-V2.md` · `09-ECOSISTEMA-MEMORY-V2.md`, vedi CP-20260719-001 §RIPRESA) — era la
+  ripresa naturale prima del pivot Empire Desk. In alternativa, se Max preferisce, l'esecuzione
+  reale di Estate Workshop (S1 concessionari) è priorità revenue attiva — chiedere conferma a Max
+  su quale delle due prima di iniziare.
+- **MAX**: nessun vincolo di metodo imposto qui — l'app è tua, decidi tu grafica/architettura/stack.
+  Se vuoi tracciare il lavoro in Memory (checkpoint dopo ogni chiusura), resta comunque valido
+  REGOLA ZERO memory-first; se preferisci lavorare senza checkpoint intermedi va bene lo stesso,
+  basta un aggiornamento qui quando l'app è pronta.
 
 ## 🔧 SYNC GIT RISOLTO + AUDIT ESTATE WORKSHOP (Claude/Max, 2026-07-21, CP-20260721-001)
 **Trovato e risolto**: il branch di lavoro era 24 commit indietro rispetto a `origin/main` (rebase
