@@ -44,6 +44,9 @@ async function post<T>(route: string, payload?: unknown): Promise<T> {
   return res.json();
 }
 
+/** Risultato generico delle route di un modulo (es. youtube): dict arbitrario dal backend. */
+export type ModuleResult = Record<string, unknown>;
+
 export const EmpireApi = {
   /** True se il backend risponde (Aureus servita da Empire Desk, non da un'anteprima isolata). */
   isAvailable: async (): Promise<boolean> => {
@@ -64,4 +67,16 @@ export const EmpireApi = {
     post('launch', { id, input }),
 
   poll: (id: string): Promise<PollResult> => post('poll', { id }),
+
+  // --- Modulo youtube (YouTube Automation Factory) — tool deterministici della skill /yt-factory ---
+  /** Gerarchia navigabile della fabbrica (agenti/workflow/reference), letta dai file reali. */
+  youtubeInfo: (): Promise<ModuleResult> => post('youtube/info', {}),
+  /** Punteggio SEO 0-100 dei metadati di un video. */
+  youtubeSeoScore: (payload: {
+    title: string; keyword: string; description: string;
+    tags: string; thumbnail: boolean; subtitles: boolean;
+  }): Promise<ModuleResult> => post('youtube/seo_score', payload),
+  /** Indice Cash Cow 0-100 di un canale (videos JSON incollato). */
+  youtubeCashcow: (payload: { channel: string; videos: string }): Promise<ModuleResult> =>
+    post('youtube/cashcow', payload),
 };

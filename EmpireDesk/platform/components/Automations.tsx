@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { AutomationRule, TriggerType, ActionType, AutomationLog } from '../types';
-import { Zap, Plus, Play, MoreVertical, ArrowRight, Activity, Bell, Mail, CheckCircle2, Clock, Terminal, X, Radio, AlertTriangle } from 'lucide-react';
+import { Zap, Plus, Play, MoreVertical, ArrowRight, Activity, Bell, Mail, CheckCircle2, Clock, Terminal, X, Radio, AlertTriangle, Youtube } from 'lucide-react';
 import { Button } from './ui/Button';
 import { EmpireApi, EmpireTile } from '../utils/empireApi';
 
@@ -26,6 +26,24 @@ export const Automations: React.FC<AutomationsProps> = ({ rules, logs = [], onTo
   const [empireLogs, setEmpireLogs] = useState<Record<string, string[]>>({});
   const [empireErrors, setEmpireErrors] = useState<Record<string, string>>({});
   const pollingRef = useRef<Set<string>>(new Set());
+
+  // --- YouTube Automation Factory (modulo youtube) — tool deterministici della skill /yt-factory ---
+  const [ytOut, setYtOut] = useState<string>('Premi un pulsante per usare la fabbrica.');
+  const [ytBusy, setYtBusy] = useState<boolean>(false);
+  const [ytSeo, setYtSeo] = useState({ title: '', keyword: '', description: '', tags: '', thumbnail: false, subtitles: false });
+  const [ytVideos, setYtVideos] = useState<string>('[{"views":120000,"age_hours":800,"errors":[]},{"views":300000,"age_hours":1500,"errors":[]}]');
+
+  const ytRun = useCallback(async (fn: () => Promise<Record<string, unknown>>) => {
+    setYtBusy(true);
+    try {
+      const r = await fn();
+      setYtOut(JSON.stringify(r, null, 2));
+    } catch {
+      setYtOut('Backend non raggiungibile: avvia Empire Desk (app.py / avvia-app.bat) per usare i tool.');
+    } finally {
+      setYtBusy(false);
+    }
+  }, []);
 
   const refreshEmpireTiles = useCallback(async () => {
     try {
@@ -317,6 +335,63 @@ export const Automations: React.FC<AutomationsProps> = ({ rules, logs = [], onTo
                     )}
                 </div>
             )}
+        </div>
+
+        {/* YOUTUBE AUTOMATION FACTORY — modulo youtube (skill /yt-factory).
+            Additivo: tool deterministici (SEO score, Cash Cow) usabili qui; la parte agentica gira in Claude Code.
+            MAI numeri inventati: se il backend non risponde, lo dichiara. */}
+        <div className="border-t border-white/5 pt-8">
+            <div className="flex items-center justify-between mb-6">
+                <div>
+                    <h2 className="text-2xl font-bold text-silver-gradient tracking-tight flex items-center gap-3">
+                        <Youtube className="w-5 h-5 text-diamond-400" /> YouTube Automation Factory
+                    </h2>
+                    <p className="text-platinum-500 text-xs mt-1">Fabbrica cash cow: analisi SEO e indice canale su dati reali che inserisci. Pipeline completa con agenti via <code className="text-platinum-300">/yt-factory</code>.</p>
+                </div>
+                <Button onClick={() => ytRun(() => EmpireApi.youtubeInfo())} disabled={ytBusy}
+                    className="bg-white/5 hover:bg-white/10 border border-white/10 text-platinum-300 hover:text-white" icon={<Radio className="w-4 h-4"/>}>
+                    Mostra fabbrica
+                </Button>
+            </div>
+
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
+                {/* Card 1 — Punteggio SEO */}
+                <div className="bg-[#0A0A0A] border border-white/5 rounded-sm p-5 flex flex-col gap-3">
+                    <h4 className="text-sm font-bold text-white flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-diamond-400"/> Punteggio SEO di un video</h4>
+                    <input className="bg-black/30 border border-white/10 text-white placeholder-platinum-600 text-xs rounded-sm px-3 py-2 outline-none focus:border-diamond-500/60"
+                        placeholder="Titolo del video" value={ytSeo.title} onChange={e => setYtSeo({ ...ytSeo, title: e.target.value })} />
+                    <input className="bg-black/30 border border-white/10 text-white placeholder-platinum-600 text-xs rounded-sm px-3 py-2 outline-none focus:border-diamond-500/60"
+                        placeholder="Keyword principale" value={ytSeo.keyword} onChange={e => setYtSeo({ ...ytSeo, keyword: e.target.value })} />
+                    <textarea className="bg-black/30 border border-white/10 text-white placeholder-platinum-600 text-xs rounded-sm px-3 py-2 outline-none focus:border-diamond-500/60 min-h-[64px]"
+                        placeholder="Descrizione (prime 2 righe = hook + valore)" value={ytSeo.description} onChange={e => setYtSeo({ ...ytSeo, description: e.target.value })} />
+                    <input className="bg-black/30 border border-white/10 text-white placeholder-platinum-600 text-xs rounded-sm px-3 py-2 outline-none focus:border-diamond-500/60"
+                        placeholder="Tag separati da virgola" value={ytSeo.tags} onChange={e => setYtSeo({ ...ytSeo, tags: e.target.value })} />
+                    <div className="flex items-center gap-4 text-[11px] text-platinum-400">
+                        <label className="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked={ytSeo.thumbnail} onChange={e => setYtSeo({ ...ytSeo, thumbnail: e.target.checked })} /> miniatura pronta</label>
+                        <label className="flex items-center gap-2 cursor-pointer"><input type="checkbox" checked={ytSeo.subtitles} onChange={e => setYtSeo({ ...ytSeo, subtitles: e.target.checked })} /> sottotitoli</label>
+                    </div>
+                    <button onClick={() => ytRun(() => EmpireApi.youtubeSeoScore(ytSeo))} disabled={ytBusy}
+                        className="px-4 py-2 text-[10px] font-bold uppercase tracking-widest border rounded-sm self-start bg-white/5 hover:bg-white/10 border-white/10 text-platinum-300 hover:text-white transition-colors">
+                        {ytBusy ? 'Calcolo…' : 'Calcola SEO'}
+                    </button>
+                </div>
+
+                {/* Card 2 — Indice Cash Cow */}
+                <div className="bg-[#0A0A0A] border border-white/5 rounded-sm p-5 flex flex-col gap-3">
+                    <h4 className="text-sm font-bold text-white flex items-center gap-2"><Activity className="w-4 h-4 text-diamond-400"/> Indice Cash Cow di un canale</h4>
+                    <p className="text-[11px] text-platinum-500">Incolla i video del canale (views + età in ore, letti con Video IQ da account neutro).</p>
+                    <textarea className="bg-black/30 border border-white/10 text-white placeholder-platinum-600 text-xs font-mono rounded-sm px-3 py-2 outline-none focus:border-diamond-500/60 min-h-[120px]"
+                        value={ytVideos} onChange={e => setYtVideos(e.target.value)} />
+                    <button onClick={() => ytRun(() => EmpireApi.youtubeCashcow({ channel: 'canale', videos: ytVideos }))} disabled={ytBusy}
+                        className="px-4 py-2 text-[10px] font-bold uppercase tracking-widest border rounded-sm self-start bg-white/5 hover:bg-white/10 border-white/10 text-platinum-300 hover:text-white transition-colors">
+                        {ytBusy ? 'Calcolo…' : 'Calcola Cash Cow'}
+                    </button>
+                </div>
+            </div>
+
+            <pre className="mt-4 max-h-64 overflow-y-auto custom-scrollbar bg-black/40 border border-white/10 rounded-sm p-3 text-[11px] font-mono text-platinum-300 whitespace-pre-wrap">
+                {ytOut}
+            </pre>
         </div>
 
         {/* LOGS PANEL */}

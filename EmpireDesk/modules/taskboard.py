@@ -14,6 +14,15 @@ from pathlib import Path
 STATE = Path(__file__).resolve().parents[1] / "state" / "taskboard.json"
 STATI_VALIDI = ["da_fare", "in_corso", "fatto", "bloccato"]
 
+_id_counter = 0  # per id univoci anche entro lo stesso secondo
+
+
+def _new_id() -> str:
+    """Id univoco anche a più aggiunte nello stesso secondo (stesso bug di scheduler)."""
+    global _id_counter
+    _id_counter += 1
+    return f"tb-{int(time.time())}-{_id_counter}"
+
 # Seed dal dossier 16 (PIANO ESTATE REVENUE) — testo copiato dal dossier, non inventato.
 _SEED_TASKS = [
     # --- MAX ---
@@ -97,7 +106,7 @@ def aggiungi(payload=None):
         return {"errore": "servono 'owner' ('Max' o 'Gael') e 'titolo' non vuoto"}
     data = _load()
     tasks = data.setdefault("tasks", [])
-    new_id = f"tb-{int(time.time())}"
+    new_id = _new_id()
     tasks.append({
         "id": new_id, "owner": owner, "giorno": (p.get("giorno") or "").strip(),
         "titolo": titolo, "stato": "da_fare", "note": "",

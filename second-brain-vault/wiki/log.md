@@ -1,5 +1,25 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-21 (YouTube Automation Factory — nuova skill, Max)
+- INGEST + BUILD: trasformato il workshop YouTube Automation (Video IQ · SEO/certificazione ·
+  Fliki · teoria hook/intro/CTA) nella skill operativa `.claude/skills/youtube-automation-factory/`
+  (comando `/yt-factory`). Costruita con le 2 skill clonate `ansjkfgheqrlg/master-build-architecture`
+  (struttura: 3 livelli, memoria dal passo zero) + `ansjkfgheqrlg/content-forge2.0` (espansione, MKD).
+  29 file: kernel (SKILL/MKD/ARCHITECTURE) + 11 agenti (conductor + 6 operatori + 3 gate/audit +
+  memory-keeper) + 5 workflow (pipeline 6 fasi con feedback) + 4 reference + 2 tool Python testati
+  (`seo_score.py` 0-100, `cashcow_check.py` indice cash cow) + evals + memoria. Serve la linea
+  revenue **S5 YouTube-Fliki auto** (dossier 16). → 1 pagina wiki: Concept_YouTube_Automation_Factory.
+
+## 2026-07-21 (Empire Desk B2/B3/B4 — verificati a runtime, Gael)
+- BUILD/TEST: `modules/notify.py` (toast Windows nativo PowerShell/WinRT, zero dipendenze pip) +
+  `modules/taskboard.py` (task board Max/Gael, seed 18 task reali da dossier 16). Sbloccato Python
+  3.12/Node 24 (già installati da sessione precedente via winget, serve solo l'export PATH giusto)
+  → primo test a runtime REALE di tutto il seam B1-B4: selftest 15/15 sia in dev sia dall'.exe
+  frozen già esistente (senza ricostruirlo). Test funzionale diretto delle routes ha trovato 2 bug
+  reali (non visibili dal solo selftest): validazione tile saltata in scheduler.aggiungi con host
+  non pronto, id collidenti nello stesso secondo — entrambi corretti e ri-verificati.
+  → CP-20260721-001 + REGISTRO-ERRORI EDE-9/10/11 + STATO-EMPIRE aggiornati.
+
 ## 2026-07-20 (Empire Studio — video 10/29, Gael)
 - INGEST: Empire Studio — video Ahp_6rHSOsU (Andrei Pascu, cat1-copywriting, video 10/29). Formato tutorial screen-share 11m08s — Google Docs (macOS) + talking head PiP. Stage 1-5 completati: 334 frame @2s (3-digit naming), 16 frame letti nativamente, NO-FINTO PASS. 16 VP schermo: doc diviso pagine→senza pagine, menu File Impostazione pagina, Google Drive file list, outline heading popolato, note gialle "[inserire logo]"/"[inserire capibara]", menu dropdown stato, badge [in corso]/[da iniziare], indice+segnalibro, pannello Stili "Aggiorna Intestazione", contatore parole live, outro CTA. VTT 2505 righe letto integralmente (9 capitoli ufficiali del video). 20 KA P12-traced. Concepts: pulizia formato no-pagine, heading→outline navigabile, aggiorna stile in blocco, note colorate come heading dedicato, dropdown stato = mini-kanban, segnalibri+link, conteggio caratteri live, sistema cartelle Clienti visibile/non-visibile. → 2 pagine create: Source_Andrei_Pascu_Google_Docs_Copywriter, Concept_Google_Docs_Copywriter_Workflow. index.md +2 entry sezione Copywriting. WATCH-001: N_video=10 = N_MemoryEmpire=10 → MATCH ✅
 

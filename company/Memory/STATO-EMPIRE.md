@@ -28,7 +28,7 @@ di ELIMINARE quello vecchio (il mio thin-build del 20/07) e sostituirlo. Fatto.*
 - **GAEL: da domani si lavora SOPRA `DIGITAL-EMPIRE/`.** Apri `DIGITAL-EMPIRE/01-PLANNING/
   PLANNING-P7-MASTER-PLAN.md` §2 corsia 🟣 per i tuoi task in ordine. Il vecchio `17-ESTATE-WORKSHOP`
   non esiste più — se lo cerchi, è stato sostituito da questo.
-- **Intestato ADR-008** in REGISTRO-IMPRESA.md + skills-map.yaml. CP-20260721-002.
+- **Intestato ADR-008** in REGISTRO-IMPRESA.md + skills-map.yaml. CP-20260721-004.
 
 ## 🚨🚨🚨 ORDINE MAX 2026-07-21 — EMPIRE DESK: OWNERSHIP TOTALE PASSA A MAX (supera divisione Half A/Half B)
 **Max:** *"da ora l'APP ci penso io, all'APP la faccio io, mi occupo di tutta la grafica dell'APP
@@ -52,7 +52,7 @@ grafica/UI/UX: **Max prende l'intera app** — `app.py`, `build_exe.bat`, `empir
   REGOLA ZERO memory-first; se preferisci lavorare senza checkpoint intermedi va bene lo stesso,
   basta un aggiornamento qui quando l'app è pronta.
 
-## 🔧 SYNC GIT RISOLTO + AUDIT ESTATE WORKSHOP (Claude/Max, 2026-07-21, CP-20260721-001)
+## 🔧 SYNC GIT RISOLTO + AUDIT ESTATE WORKSHOP (Claude/Max, 2026-07-21, CP-20260721-003 — sistema poi SOSTITUITO, vedi blocco in cima)
 **Trovato e risolto**: il branch di lavoro era 24 commit indietro rispetto a `origin/main` (rebase
 auto-sync fallito 2 volte, `SYNC-CONFLICT.txt` aperto da 14:24). Riallineato con `pull --rebase`,
 risolto il conflitto reale (solo 2 log automation `Outreach/LinkedIn Automation/*.txt`, merge
@@ -68,7 +68,23 @@ CF-grade forgiati ✅ (confermati file-per-file). **Mancano per l'esecuzione**: 
 `email-lifecycle-specialist`), **zero test end-to-end fatti** (né S1 né S5). **B-003/DEC-001
 prezzo Manuale ancora APERTO** (era da chiudere G1 20/7, confermato anche in BACKLOG.md ⬜) →
 blocca a cascata S2/S3/S4.
-Dettaglio completo: `company/Memory/checkpoints/CP-20260721-001.md`.
+Dettaglio completo: `company/Memory/checkpoints/CP-20260721-003.md`.
+
+## ✅ MAX — Skill `youtube-automation-factory` costruita (2026-07-21, CP-20260721-002)
+Trasformato il workshop **YouTube Automation** (Video IQ · SEO/certificazione · Fliki · teoria
+hook/intro/CTA) in una **fabbrica multi-agente** operativa: `.claude/skills/youtube-automation-factory/`
+(comando `/yt-factory`). Costruita con le 2 skill richieste da Max, clonate da GitHub:
+`ansjkfgheqrlg/master-build-architecture` (struttura/architettura) + `ansjkfgheqrlg/content-forge2.0`
+(contenuto grezzo → artefatti, espansione mai riassunto). **29 file:** kernel (SKILL/MKD/ARCHITECTURE)
++ 11 agenti (conductor + 6 operatori + 3 gate/audit + memory-keeper) + 5 workflow (pipeline 6 fasi
+con feedback loop) + 4 reference + 2 tool Python **testati** (`seo_score.py`, `cashcow_check.py`) +
+evals + memoria. Serve la linea revenue **S5 YouTube-Fliki auto** (dossier 16). Wiki:
+`Concept_YouTube_Automation_Factory` + log. **RIPRESA:** eseguire WF1 su una nicchia reale da account
+YouTube neutro. **Area nuova, nessun conflitto con Ispettorato (Max) o Empire Desk (Gael).**
+
+---
+
+# STATO EMPIRE -- aggiornato 2026-07-20 (Max: ISPETTORATO GENERALE — M1+M3 COMPLETE, M2 prossimo)
 
 ## 🟢 ISPETTORATO GENERALE — M1+M3 COMPLETE (dossier 15, esteso con agente 11 + WF-REVISION-STUDY)
 **Direttiva Max 2026-07-20:** l'analisi performance è un ECOSISTEMA con team di agenti dedicato —
@@ -134,8 +150,20 @@ grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
   valeva per `python app.py`, non per l'.exe.
   ⚠️ **PATH per le prossime sessioni** (gli stub WindowsApps hanno la precedenza):
   `export PATH="/c/Users/olhad/AppData/Local/Programs/Python/Python312:/c/Users/olhad/AppData/Local/Programs/Python/Python312/Scripts:/c/Program Files/nodejs:$PATH"`
-- **G3:** B1-B4 restano (loader moduli/scheduler/notify/taskboard) = solo backend. Moduli A1-A3 di Max
-  restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
+- **G3 ✅ CHIUSO E VERIFICATO A RUNTIME (2026-07-21, CP-20260721-001):** B2 `scheduler.py` (già
+  scritto) + B3 `notify.py` (toast Windows nativo PowerShell/WinRT, zero dipendenze pip, fine-run
+  con exit code) + B4 `taskboard.py` (seed 18 task REALI da dossier 16, routes elenco/aggiorna/
+  aggiungi) — tutti scritti e **testati per davvero** (non solo staticamente): `python app.py
+  --selftest` → **15/15 PASS**, e l'**exe frozen già esistente** (mai ricostruito) → **15/15
+  PASS identico**, conferma che `MODULES_DIR` (repo live) fa "accendere da soli" i moduli nuovi
+  su un .exe già buildato. Test funzionale delle routes (non solo selftest) ha trovato **2 bug
+  reali**: `scheduler.aggiungi` con host non pronto saltava la validazione tile (accettava tile
+  inesistenti/readonly) + zero validazione formato ora; id generati collidevano nello stesso
+  secondo (stesso pattern in `scheduler.py`+`taskboard.py`). Entrambi corretti, ri-testati OK.
+  Aggiunto `_Host.tiles()` in `app.py` (read-only, non consuma il cursore di `poll()` — B3 lo usa
+  per osservare transizioni senza rubare righe di log alla UI). REGISTRO-ERRORI EDE-9/10/11.
+  Moduli A1-A3 di Max restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max
+  in stile Aureus, fase 2).
 - **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.
 
 **▶️ MAX (via Claude):** U0 ✅ (import+build+anteprima) · **U0b ✅ offline-capable (`9e86349b`)**:

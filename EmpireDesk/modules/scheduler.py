@@ -23,6 +23,23 @@ _HOST = None            # iniettato da run_background(host)
 _LAST_RUN: dict = {}    # {entry_id: "YYYY-MM-DD HH:MM"} — evita doppio trigger nello stesso minuto
 _LOG: list = []         # ultime righe (in memoria, per il pannello)
 _loop_started = False
+_id_counter = 0         # per id univoci anche entro lo stesso secondo
+
+
+def _new_id() -> str:
+    """Id univoco anche se si creano più entry nello stesso secondo (bug trovato in test:
+    `sch-<int(time)>` collideva)."""
+    global _id_counter
+    _id_counter += 1
+    return f"sch-{int(_time.time())}-{_id_counter}"
+
+
+def _valid_hhmm(s: str) -> bool:
+    try:
+        hh, mm = str(s).split(":")
+        return 0 <= int(hh) <= 23 and 0 <= int(mm) <= 59 and len(mm) == 2
+    except (ValueError, AttributeError):
+        return False
 
 
 def run_background(host) -> None:
@@ -105,13 +122,21 @@ def aggiungi(payload=None):
     tile_id, ora, giorni = p.get("tile_id"), p.get("ora"), p.get("giorni")
     if not (tile_id and ora and giorni):
         return {"errore": "servono 'tile_id', 'ora' (HH:MM) e 'giorni' (lista)"}
-    if _HOST and tile_id not in _HOST.tile_ids():
-        return {"errore": f"tile sconosciuta: {tile_id}"}
-    if not all(g in GIORNI for g in giorni):
-        return {"errore": f"giorni validi: {GIORNI}"}
+    # La validazione della tile richiede l'host (le tile lanciabili le conosce solo lui, escluse
+    # le readonly): senza host non si può programmare nulla di sensato, quindi si rifiuta con un
+    # messaggio chiaro invece di accettare tile inesistenti/readonly (bug trovato in test: con
+    # _HOST=None il controllo veniva saltato e QUALSIASI tile_id passava).
+    if _HOST is None:
+        return {"errore": "scheduler non ancora inizializzato (host non disponibile)"}
+    if tile_id not in _HOST.tile_ids():
+        return {"errore": f"tile non programmabile (inesistente o sola lettura): {tile_id}"}
+    if not _valid_hhmm(ora):
+        return {"errore": f"ora non valida (serve HH:MM 00:00-23:59): {ora}"}
+    if not (isinstance(giorni, list) and giorni and all(g in GIORNI for g in giorni)):
+        return {"errore": f"giorni non validi (lista non vuota da {GIORNI})"}
     data = _load()
     entries = data.setdefault("entries", [])
-    new_id = f"sch-{int(_time.time())}"
+    new_id = _new_id()
     entries.append({
         "id": new_id, "tile_id": tile_id, "ora": ora, "giorni": giorni,
         "input": p.get("input"), "enabled": True,
