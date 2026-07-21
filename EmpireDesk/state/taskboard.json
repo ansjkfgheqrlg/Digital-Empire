@@ -1,0 +1,151 @@
+{
+  "tasks": [
+    {
+      "id": "tb-seed-01",
+      "owner": "Max",
+      "giorno": "G1 (sab 19-20)",
+      "titolo": "Decidere PREZZO Manuale con team-prezzi (chiude B-003, bloccante S2/S3/S4)",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-02",
+      "owner": "Max",
+      "giorno": "G1-G2",
+      "titolo": "Lista 7 concessionari: nome, stato relazione, canale contatto preferito",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-03",
+      "owner": "Max",
+      "giorno": "G2 (lun 21)",
+      "titolo": "Rivedere+approvare offerta \"Partenza Anticipata\" preparata da Claude/A5",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-04",
+      "owner": "Max",
+      "giorno": "G2-G4",
+      "titolo": "Contattare i 7 concessionari (call/whatsapp, script A8 in mano)",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-05",
+      "owner": "Max",
+      "giorno": "G3",
+      "titolo": "Approvare landing+prezzo funnel Manuale (review 10 minuti, non costruire)",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-06",
+      "owner": "Max",
+      "giorno": "G4-G5",
+      "titolo": "Decidere nicchia canale YouTube #1 (proposta analisi competitor di Gael)",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-07",
+      "owner": "Max",
+      "giorno": "G6-G7",
+      "titolo": "Push vendita Manuale sui canali personali caldi (post, storie, contatti diretti)",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-08",
+      "owner": "Max",
+      "giorno": "G2",
+      "titolo": "Scegliere il NOME nuovo di PreventivoForge dalla shortlist S6",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-09",
+      "owner": "Max",
+      "giorno": "G5",
+      "titolo": "Approvare promo-kit (landing+demo+case study) preparato da Gael/Claude",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-10",
+      "owner": "Gael",
+      "giorno": "G1",
+      "titolo": "(30min) Chiudere CF-R8 -> 03-CONTENT-FACTORY 9/9",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-11",
+      "owner": "Gael",
+      "giorno": "G1",
+      "titolo": "AUDIT ASSET P0.2: censire tutte le pagine (mentalita.brutale, crea.illtuo_impero, altre pagine lancio, sito)",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-12",
+      "owner": "Gael",
+      "giorno": "G2",
+      "titolo": "Funnel Manuale: landing empire-premium-style + checkout + 3 email",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-13",
+      "owner": "Gael",
+      "giorno": "G2-G3",
+      "titolo": "Batch riattivazione S3: 7 caroselli crea.illtuo_impero (carousel-factory) + bio->funnel",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-14",
+      "owner": "Gael",
+      "giorno": "G3-G4",
+      "titolo": "Pipeline mentalita.brutale 100% auto: carousel-factory wrap -> gate QA auto -> scheduler -> report",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-15",
+      "owner": "Gael",
+      "giorno": "G4-G5",
+      "titolo": "WF-YT v1: architettura workflow YouTube-Fliki + test 1 video end-to-end con API",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-16",
+      "owner": "Gael",
+      "giorno": "G6",
+      "titolo": "Analisi competitor nicchie YT (3 candidate, dati citati) -> proposta a Max",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-17",
+      "owner": "Gael",
+      "giorno": "G5-G6",
+      "titolo": "Promo-kit S6: landing rebrand + case study Novacar + lista concessionari import-DE",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-18",
+      "owner": "Gael",
+      "giorno": "G7",
+      "titolo": "Consolidamento settimana: CP + metriche reali -> RETRO",
+      "stato": "da_fare",
+      "note": ""
+    }
+  ],
+  "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
+  "creato": "2026-07-21 08:20",
+  "aggiornato": "2026-07-21 08:20"
+}
