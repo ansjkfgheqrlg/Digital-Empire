@@ -1,0 +1,6 @@
+{
+  "scenarios": [
+    {"input": "/preventivo full B2B", "expected_route": "full-copy-workflow"},
+    {"input": "/preventivo ad e-commerce", "expected_route": "quick-ad-workflow"}
+  ]
+}

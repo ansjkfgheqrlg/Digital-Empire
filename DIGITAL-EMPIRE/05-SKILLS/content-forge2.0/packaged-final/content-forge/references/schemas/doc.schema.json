@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://content-forge/schemas/doc.schema.json",
+  "title": "Doc target output structure",
+  "type": "object",
+  "schema_version": "0.2.0-draft",
+  "properties": {
+    "required_files": {
+      "type": "array",
+      "const": [
+        "document.md",
+        "glossary.md",
+        "faq.md",
+        "changelog.md",
+        "README.md"
+      ]
+    },
+    "frontmatter_required_keys": {
+      "type": "array",
+      "const": [
+        "title",
+        "source",
+        "generated_by",
+        "generated_at",
+        "forge_target",
+        "audience",
+        "register",
+        "language"
+      ]
+    },
+    "min_length_ratio_vs_source": {
+      "type": "number",
+      "const": 1.0,
+      "description": "output ≥ sorgente"
+    },
+    "min_atoms_coverage": {
+      "type": "number",
+      "const": 0.95
+    }
+  }
+}

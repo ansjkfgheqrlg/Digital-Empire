@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://content-forge/schemas/workflow.schema.json",
+  "title": "Workflow target output structure",
+  "type": "object",
+  "schema_version": "0.2.0-draft",
+  "properties": {
+    "required_files": {
+      "type": "array",
+      "const": [
+        "flow.md",
+        "flow.mermaid",
+        "state.md",
+        "triggers.md",
+        "error_handling.md",
+        "observability.md",
+        "runbook.md",
+        "eval_scenarios.json",
+        "README.md"
+      ]
+    },
+    "required_directories": {
+      "type": "array",
+      "const": [
+        "steps"
+      ]
+    },
+    "dag_must_be_acyclic": {
+      "type": "boolean",
+      "const": true
+    },
+    "state_schema_strict": {
+      "type": "boolean",
+      "const": true
+    },
+    "step_types_allowed": {
+      "type": "array",
+      "const": [
+        "agent",
+        "skill",
+        "script",
+        "manual",
+        "branch",
+        "merge",
+        "parallel"
+      ]
+    }
+  }
+}

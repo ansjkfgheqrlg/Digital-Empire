@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://content-forge/schemas/orchestration.schema.json",
+  "title": "Orchestration target output structure",
+  "type": "object",
+  "schema_version": "0.2.0-draft",
+  "properties": {
+    "required_files": {
+      "type": "array",
+      "const": [
+        "routing.md",
+        "registry.md",
+        "registry.json",
+        "policies.md",
+        "observability.md",
+        "failure_modes.md",
+        "escalation.md",
+        "eval_scenarios.json",
+        "README.md"
+      ]
+    },
+    "conditional_files": {
+      "type": "object",
+      "description": "File condizionali in base alla strategia",
+      "properties": {
+        "supervisor.md": {
+          "type": "string",
+          "const": "required if strategy in [llm-based, hybrid]"
+        }
+      }
+    },
+    "preconditions": {
+      "type": "object",
+      "description": "Precondizioni per attivare il builder",
+      "properties": {
+        "existing_components.json": {
+          "type": "string",
+          "const": "MUST be provided"
+        }
+      }
+    },
+    "routing_strategies": {
+      "type": "array",
+      "const": [
+        "rule-based",
+        "llm-based",
+        "hybrid"
+      ]
+    }
+  }
+}

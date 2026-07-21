@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://content-forge/schemas/agent.schema.json",
+  "title": "Agent target output structure",
+  "description": "Forma canonica dell'output del agent-builder-agent (B2). Validata da C3.",
+  "type": "object",
+  "schema_version": "0.2.0-draft",
+  "required": [
+    "required_files"
+  ],
+  "properties": {
+    "required_files": {
+      "type": "array",
+      "const": [
+        "agent.md",
+        "system_prompt.md",
+        "tools.md",
+        "playbook.md",
+        "failure_modes.md",
+        "eval_cases.json",
+        "README.md"
+      ]
+    },
+    "agent_md_required_sections": {
+      "type": "array",
+      "const": [
+        "Identità e ruolo",
+        "Obiettivi",
+        "Utente target",
+        "Comportamento atteso",
+        "Vincoli",
+        "Strumenti",
+        "Tono e stile",
+        "Failure modes principali",
+        "Metriche di successo"
+      ]
+    },
+    "system_prompt_max_words": {
+      "type": "integer",
+      "const": 1500
+    },
+    "eval_cases_min": {
+      "type": "integer",
+      "const": 8
+    },
+    "eval_cases_max": {
+      "type": "integer",
+      "const": 15
+    }
+  }
+}

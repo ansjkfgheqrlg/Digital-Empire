@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://content-forge/schemas/team.schema.json",
+  "title": "Team target output structure",
+  "type": "object",
+  "schema_version": "0.2.0-draft",
+  "properties": {
+    "required_files": {
+      "type": "array",
+      "const": [
+        "topology.md",
+        "communication_protocol.md",
+        "handoff_rules.md",
+        "failure_handling.md",
+        "shared_state.md",
+        "team_eval_cases.json",
+        "README.md"
+      ]
+    },
+    "conditional_files": {
+      "type": "object",
+      "description": "File condizionali in base alla topologia",
+      "properties": {
+        "coordinator.md": {
+          "type": "string",
+          "const": "required if topology in [supervisor, hub-spoke]"
+        }
+      }
+    },
+    "required_directories": {
+      "type": "array",
+      "const": [
+        "agents"
+      ]
+    },
+    "topologies_allowed": {
+      "type": "array",
+      "const": [
+        "supervisor",
+        "pipeline",
+        "peer-to-peer",
+        "hub-spoke",
+        "hybrid"
+      ]
+    },
+    "raci_strict": {
+      "type": "boolean",
+      "const": true,
+      "description": "Un solo R per responsibility"
+    }
+  }
+}

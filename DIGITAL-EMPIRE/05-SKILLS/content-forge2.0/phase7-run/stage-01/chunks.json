@@ -1,0 +1,98 @@
+{
+  "total_chunks": 10,
+  "is_multi_source": false,
+  "total_sources": 1,
+  "chunks": [
+    {
+      "id": "chunk-001",
+      "start_offset": 118,
+      "end_offset": 1216,
+      "title_heuristic": "Introduzione",
+      "word_count": 182,
+      "source_file_id": "src-001",
+      "source_file_path": "manuale-4-obiezioni.md"
+    },
+    {
+      "id": "chunk-002",
+      "start_offset": 1577,
+      "end_offset": 1945,
+      "title_heuristic": "Da dove vengono le obiezioni?",
+      "word_count": 58,
+      "source_file_id": "src-001",
+      "source_file_path": "manuale-4-obiezioni.md"
+    },
+    {
+      "id": "chunk-003",
+      "start_offset": 1945,
+      "end_offset": 3110,
+      "title_heuristic": "Che tipi di obiezioni esistono?",
+      "word_count": 184,
+      "source_file_id": "src-001",
+      "source_file_path": "manuale-4-obiezioni.md"
+    },
+    {
+      "id": "chunk-004",
+      "start_offset": 3427,
+      "end_offset": 3841,
+      "title_heuristic": "Cosa significa \"gestire le obiezioni\"?",
+      "word_count": 65,
+      "source_file_id": "src-001",
+      "source_file_path": "manuale-4-obiezioni.md"
+    },
+    {
+      "id": "chunk-005",
+      "start_offset": 3841,
+      "end_offset": 4276,
+      "title_heuristic": "Come gestire le obiezioni",
+      "word_count": 62,
+      "source_file_id": "src-001",
+      "source_file_path": "manuale-4-obiezioni.md"
+    },
+    {
+      "id": "chunk-006",
+      "start_offset": 4276,
+      "end_offset": 6556,
+      "title_heuristic": "CPB per gestire obiezioni",
+      "word_count": 361,
+      "source_file_id": "src-001",
+      "source_file_path": "manuale-4-obiezioni.md"
+    },
+    {
+      "id": "chunk-007",
+      "start_offset": 6556,
+      "end_offset": 8105,
+      "title_heuristic": "Non generare e gestire obiezioni che non ne valgono la candela",
+      "word_count": 250,
+      "source_file_id": "src-001",
+      "source_file_path": "manuale-4-obiezioni.md"
+    },
+    {
+      "id": "chunk-008",
+      "start_offset": 8105,
+      "end_offset": 13224,
+      "title_heuristic": "Quali prove esistono?",
+      "word_count": 800,
+      "source_file_id": "src-001",
+      "source_file_path": "manuale-4-obiezioni.md"
+    },
+    {
+      "id": "chunk-009",
+      "start_offset": 13224,
+      "end_offset": 18159,
+      "title_heuristic": "Logica passo-passo del processo: - 80% dei milionari sono self-made - Se sono se",
+      "word_count": 800,
+      "source_file_id": "src-001",
+      "source_file_path": "manuale-4-obiezioni.md"
+    },
+    {
+      "id": "chunk-010",
+      "start_offset": 18159,
+      "end_offset": 18916,
+      "title_heuristic": "Ho visto recentemente una strategia di marketing basata principalmente su questo",
+      "word_count": 121,
+      "source_file_id": "src-001",
+      "source_file_path": "manuale-4-obiezioni.md"
+    }
+  ],
+  "source_path": "phase7-run/stage-01/cleaned.md"
+}

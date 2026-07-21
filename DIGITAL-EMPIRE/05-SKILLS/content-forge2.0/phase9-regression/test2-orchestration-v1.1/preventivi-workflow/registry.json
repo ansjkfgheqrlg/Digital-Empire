@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "components": [
+    {"slug": "apsoc-builder", "type": "skill", "path": "skills/apsoc-builder/", "owner": "user", "description": "APSOC builder", "cost_class": "low", "latency_class": "fast", "status": "stable"},
+    {"slug": "target-avatar", "type": "skill", "path": "skills/target-avatar/", "owner": "user", "description": "Target avatar", "cost_class": "low", "latency_class": "fast", "status": "stable"}
+  ]
+}

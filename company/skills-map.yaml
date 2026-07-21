@@ -499,6 +499,15 @@ skills_and_workflows:
 
 nuovi_2026_07:
 
+  - id: digital-empire-estate-workflow
+    nome: DIGITAL-EMPIRE/ — Workflow Estate NUOVO (sostituisce planning-workshop+workflows+ESTATE-WORKSHOP*)
+    percorso: DIGITAL-EMPIRE/
+    ecosistema: trasversale (revenue estate 2026)
+    reparto: Chief-Forge (build originale) / import Max
+    tipo: workflow
+    stato: active
+    note: "Importato 2026-07-21 da VIP/Estate workflow.zip, ordine Max: elimina vecchio, sostituisci. Auto-contenuto (00-MEMORY..07-CONTROL), leggere DIGITAL-EMPIRE/README.md + 01-PLANNING/PLANNING-P7-MASTER-PLAN.md per primi. 6702 file inclusi ruflo clonato in 05-SKILLS/. Uso: cd DIGITAL-EMPIRE poi comandi relativi."
+
   - id: ispettorato-generale
     nome: Ispettorato Generale (performance, autocritica, anti-recidiva, primo-colpo-migliore)
     percorso: company/Ispettorato/

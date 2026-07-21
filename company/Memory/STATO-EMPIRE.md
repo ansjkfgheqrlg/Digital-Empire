@@ -1,4 +1,34 @@
-# STATO EMPIRE -- aggiornato 2026-07-21 (ORDINE MAX: EMPIRE DESK — intera app passa a Max)
+# STATO EMPIRE -- aggiornato 2026-07-21 (ORDINE MAX: nuovo Workflow Estate sostituisce il vecchio)
+
+## 🚨🚨🚨 ORDINE MAX 2026-07-21 — WORKFLOW ESTATE SOSTITUITO: `DIGITAL-EMPIRE/` è la NUOVA fonte (leggere PRIMA di S1-S6)
+**Max ha importato un workflow estate nuovo e completo (costruito fuori, da CHIEF-FORGE) e ha ordinato
+di ELIMINARE quello vecchio (il mio thin-build del 20/07) e sostituirlo. Fatto.**
+
+- **✅ RIMOSSO (vecchio sistema, 92 file):** `PIANO-MAESTRO/17-ESTATE-WORKSHOP-WORKFLOW.md`,
+  `PIANO-MAESTRO/18-CONSTRUCTION-PHASE-STATUS.md`, `PIANO-MAESTRO/planning-workshop/` (L1-L8),
+  `PIANO-MAESTRO/workflows/` (S1-S6 vecchia versione), `company/Memory/ESTATE-WORKSHOP/`,
+  `company/Memory/ESTATE-WORKSHOP-PLANNING/`, agent pack orfano
+  `SKILL & Agenti/Empire Studio Suite/empire-studio/agents/youtube-department/` (non referenziato
+  dal core Empire Studio, isolato, creato lo stesso giorno del vecchio sistema).
+  **`PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md` NON toccato** (è il piano business originale, resta valido).
+- **✅ NUOVO — root repo `DIGITAL-EMPIRE/`** (6702 file, importato da `VIP/Estate workflow.zip`):
+  sistema auto-contenuto con proprio `README.md` (leggerlo per primo) + `ESTATE-WORKSHOP.md`.
+  Struttura: `00-MEMORY/` (checkpoint/decisioni/piani/brainstorm/errori/metriche/ReasoningBank +
+  `memory_manager.py` CLI) · `01-PLANNING/` (P1→P7, **P7 = master plan, leggere `01-PLANNING/
+  PLANNING-P7-MASTER-PLAN.md` per primo**) · `02-ARCHITECTURE/` (L0-L5+ADR) · `03-WORKFLOWS/`
+  (workflows.yaml + WF-S1..S6) · `04-AGENTS/` (chief-forge, memory-architect, YT-AGENT-PACK) ·
+  `05-SKILLS/` (content-forge2.0, master-build-architecture, ruflo clonato) ·
+  `06-NERVOUS-SYSTEM/` (integrazione Ruflo) · `07-CONTROL/` (dashboard + gates + RETRO).
+- **⚠️ Uso quotidiano:** `cd DIGITAL-EMPIRE` poi `python3 00-MEMORY/memory_manager.py status` ecc.
+  (il sistema è scritto per girare DA DENTRO quella cartella — path relativi interni).
+- **Regole non negoziabili del sistema (dal suo README):** revenue-first · DEC-001 (prezzo Manuale)
+  chiusa anche per default · wrap mai rewrite (ADR-003) · chiavi solo `.env` · 1 swarm pesante alla
+  volta · task chiuso → checkpoint · solo date assolute · vendibile > perfetto · mentalita.brutale
+  SOLO se 100% automatico.
+- **GAEL: da domani si lavora SOPRA `DIGITAL-EMPIRE/`.** Apri `DIGITAL-EMPIRE/01-PLANNING/
+  PLANNING-P7-MASTER-PLAN.md` §2 corsia 🟣 per i tuoi task in ordine. Il vecchio `17-ESTATE-WORKSHOP`
+  non esiste più — se lo cerchi, è stato sostituito da questo.
+- **Intestato ADR-008** in REGISTRO-IMPRESA.md + skills-map.yaml. CP-20260721-002.
 
 ## 🚨🚨🚨 ORDINE MAX 2026-07-21 — EMPIRE DESK: OWNERSHIP TOTALE PASSA A MAX (supera divisione Half A/Half B)
 **Max:** *"da ora l'APP ci penso io, all'APP la faccio io, mi occupo di tutta la grafica dell'APP

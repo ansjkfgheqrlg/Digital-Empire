@@ -59,7 +59,8 @@
 |---|---|---|
 | PIANO-MAESTRO 01-15 + V2 | Board/CEO | MAXIMILIAN (fedeltà alla direttiva) |
 | 16-PIANO-ESTATE-REVENUE | MAX (business) + CFO (numeri) | metriche §4 misurate, RETRO settimanale |
-| 17-EMPIRE-DESK-APP | Gael (build) | gate §4 dossier 17 |
+| 17-EMPIRE-DESK-APP | **MAX** (ownership totale dal 2026-07-21, superata divisione Half A/Half B) | gate §4 dossier 17 |
+| `DIGITAL-EMPIRE/` (workflow estate NUOVO, sostituisce planning-workshop+workflows+ESTATE-WORKSHOP*) | MAX (import) → Chief-Forge (build originale) | `DIGITAL-EMPIRE/07-CONTROL/` gates + RETRO-PROTOCOLLO, memory_manager.py |
 
 ---
 

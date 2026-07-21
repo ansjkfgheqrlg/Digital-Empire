@@ -1,0 +1,39 @@
+# swarm.estate.yaml — topologia ruflo per ESTATE-2026 (hierarchical queen-led)
+# Uso: npx ruflo init && npx ruflo swarm spawn --config 06-NERVOUS-SYSTEM/swarm.estate.yaml
+# Fallback: orchestrazione file-based via 03-WORKFLOWS/workflows.yaml (ADR: file-based mode)
+namespace: estate-2026
+topology: hierarchical
+max_parallel_heavy: 1          # vincolo account condiviso (CP-20260711-002)
+
+queen:
+  id: chief-forge
+  spec: 04-AGENTS/chief-forge/
+  mandate: "costruisce tutto, revenue-first, DoD congelate, coda S1>S2>S6>S5"
+
+departments:
+  chief-forge:     {lead: chief-forge, workers: [forge-builder, funnel-engineer, carousel-ops, case-study-forge]}
+  revenue:         {lead: pricing-cell, workers: [closer-a8]}
+  content:         {lead: content-forge-invoker, workers: [cro-copy-architect]}
+  youtube:         {lead: department-lead, workers: [yt-channel-ingester, video-single-ingester, yt-screening, yt-fliki-renderer, yt-seo-publisher, yt-performance-analyzer, yt-niche-scout]}
+  memory:          {lead: memory-architect, workers: [checkpoint-manager]}
+  verification:    {lead: silent-observer, workers: [visual-verifier, compliance-auditor]}
+  strategy:        {lead: strategy-director, workers: []}
+
+hooks:
+  pre_task:    "python3 00-MEMORY/memory_manager.py status --quiet || true"
+  post_task:   "python3 00-MEMORY/memory_manager.py checkpoint --task {{wf}} --note '{{esito}}'"
+  on_failure:  "python3 00-MEMORY/memory_manager.py error --wf {{wf}} --note '{{errore}}'"
+  on_metric:   "python3 00-MEMORY/memory_manager.py metric --name {{mname}} --value {{mvalue}}"
+  eod_worker:  {schedule: "0 19 * * *", run: "WF-MEM-EOD"}
+  session_end: "persist learned patterns -> 00-MEMORY/reasoning-bank (RB-*)"
+
+memory:
+  source_of_truth: 00-MEMORY         # file-based, INDEX vivo
+  vector_cache: agentdb              # opzionale, indicizza gli atomi
+  p12_trace: true
+
+secrets:
+  policy: "env-only"                 # FLIKI_API_KEY e OAuth YT solo da .env locale, mai nei prompt
+
+gates: [Gate-DEC, Gate-FUNNEL, Gate-CONTATTI, Gate-S4, Gate-S5, Gate-REV]
+fallback_mode: file_based            # se ruflo non attivo: WF-MASTER loop + hook manuali
