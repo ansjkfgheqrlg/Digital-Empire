@@ -57,13 +57,19 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
     icon=None,
-    # EDE-9: PyInstaller >=6.0 di default sposta TUTTI i 'datas' (platform/modules/ui/state)
-    # dentro dist/EmpireDesk/_internal/, ma app.py li cerca accanto all'exe (BASE_DIR / "platform"
-    # etc. — BASE_DIR = cartella dell'exe). Senza questo, l'exe frozen "funziona" (parte, apre una
-    # finestra) ma Aureus non si trova (pagina di aiuto invece della piattaforma) e i moduli
-    # A1-A3/scheduler spariscono in silenzio (MODULES_DIR.is_dir() è False, 0 moduli caricati,
-    # nessun errore visibile). contents_directory='.' ripristina il layout piatto pre-6.0
-    # (tutto accanto all'exe, come si aspetta app.py) — vedi REGISTRO-ERRORI.md EDE-9.
+    # EDE-9: PyInstaller >=6.0 di default sposta TUTTI i 'datas' dentro dist/EmpireDesk/_internal/.
+    # Sintomo: l'exe frozen "funziona" (parte, apre una finestra) ma Aureus non si trova (pagina di
+    # aiuto invece della piattaforma) e i moduli spariscono in SILENZIO — nessun errore visibile.
+    # contents_directory='.' ripristina il layout piatto pre-6.0 (tutto accanto all'exe).
+    #
+    # NOTA (2 sessioni Gael in parallelo hanno corretto lo stesso bug, entrambe le difese restano —
+    # sono complementari, non ridondanti; verificato insieme: selftest 15/15 da .exe):
+    #   1. QUESTA riga  -> layout piatto, cosi' i datas stanno accanto all'exe.
+    #   2. In app.py    -> `DATA_DIR` (= sys._MEIPASS se frozen) per `platform/`, cosi' Aureus si
+    #      trova ANCHE se un domani si torna al layout _internal/; e `MODULES_DIR` ancorata al repo
+    #      live (REPO_ROOT/EmpireDesk/modules), perche' i moduli calcolano il proprio repo-root da
+    #      `parents[2]` e da una copia bundlata quel calcolo si rompe (metrics dava 1/6 fonti).
+    # Vedi REGISTRO-ERRORI.md EDE-9 + company/Memory/checkpoints/CP-20260720-006.md.
     contents_directory='.',
 )
 coll = COLLECT(

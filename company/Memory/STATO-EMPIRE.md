@@ -36,8 +36,9 @@ grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
   tracciati, nessun rischio di build PyInstaller rotta per path mancante). Questa revisione era statica
   (ambiente senza Python/Node/Chrome) — **da allora Max ha verificato G1 a runtime su macchina reale,
   vedi blocco "✅ G1 CHIUSO E VERIFICATO END-TO-END" qui sotto: selftest 13/13 PASS.**
-- **G2 ✅ FATTO E VERIFICATO A RUNTIME (2026-07-20 pomeriggio, CP-20260720-005):** exe costruita e
-  funzionante. **Sbloccato l'ambiente che frenava da 3 sessioni**: gli `python.exe`/`node` che
+- **G2 ✅ FATTO E VERIFICATO A RUNTIME (2026-07-20 pomeriggio, CP-20260720-006 — rinumerato da
+  005 per collisione con ISPETTORATO M3):** exe costruita e funzionante. **Sbloccato l'ambiente
+  che frenava da 3 sessioni**: gli `python.exe`/`node` che
   risultavano "non installati" erano **stub Microsoft Store da 0 byte**; installati i runtime veri
   via `winget` (Python 3.12.10 + Node 24.18.0/npm 11.16). Poi: `npm install`+`npm run build` in
   `platform/` (bundle 977 kB) · `pip install` requirements+pyinstaller · `PyInstaller empiredesk.spec`
@@ -49,9 +50,18 @@ grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
   Fix: nuovo `_data_dir()`/`DATA_DIR` per `platform/` (asset read-only, giusto bundlarlo) + `MODULES_DIR`
   ricablata al **repo live** `REPO_ROOT/EmpireDesk/modules` (i moduli di Max calcolano il repo-root da
   `parents[2]`: da una copia bundlata quell'assunzione si rompe) + rimossi `modules`/`state` dai datas.
-  **Verifica finale: 13/13 PASS in dev E da .exe frozen.** ⚠️ Resta la **verifica visiva a occhio**
-  (doppio click) — la mia esecuzione è uscita con exit 0 senza crash ma non ho potuto confermare la
-  finestra disegnata; la verifica di Max di stamattina valeva per `python app.py`, non per l'.exe.
+  **Verifica finale: 13/13 PASS in dev E da .exe frozen.**
+  **🔁 RI-VERIFICATO il 21/07 dopo il merge con B3+B4: 15/15 PASS in dev E da .exe** (6 moduli:
+  licenze/metrics/notify/revenue/scheduler/taskboard — `metrics 6/6 fonti`, `taskboard 18 task`).
+  ⚠️ **Convergenza da segnalare:** una sessione Gael parallela aveva trovato lo STESSO bug (EDE-9) e
+  l'aveva corretto nello spec con `contents_directory='.'` (layout piatto pre-6.0). **Ho tenuto
+  entrambe le difese** — sono complementari, non doppioni: la mia protegge `platform/` anche se si
+  tornasse al layout `_internal/` e sposta i moduli sul repo live (dove il loro `parents[2]` è
+  valido), la sua rimette i datas accanto all'exe. Verificate insieme sopra. Allineato anche il
+  commento nello spec, rimasto a descrivere il vecchio comportamento di `app.py`.
+  ⚠️ Resta la **verifica visiva a occhio** (doppio click) — la mia esecuzione è uscita con exit 0
+  senza crash ma non ho potuto confermare la finestra disegnata; la verifica di Max di ieri mattina
+  valeva per `python app.py`, non per l'.exe.
   ⚠️ **PATH per le prossime sessioni** (gli stub WindowsApps hanno la precedenza):
   `export PATH="/c/Users/olhad/AppData/Local/Programs/Python/Python312:/c/Users/olhad/AppData/Local/Programs/Python/Python312/Scripts:/c/Program Files/nodejs:$PATH"`
 - **G3:** B1-B4 restano (loader moduli/scheduler/notify/taskboard) = solo backend. Moduli A1-A3 di Max
