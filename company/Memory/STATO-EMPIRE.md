@@ -64,8 +64,20 @@ grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
   valeva per `python app.py`, non per l'.exe.
   ⚠️ **PATH per le prossime sessioni** (gli stub WindowsApps hanno la precedenza):
   `export PATH="/c/Users/olhad/AppData/Local/Programs/Python/Python312:/c/Users/olhad/AppData/Local/Programs/Python/Python312/Scripts:/c/Program Files/nodejs:$PATH"`
-- **G3:** B1-B4 restano (loader moduli/scheduler/notify/taskboard) = solo backend. Moduli A1-A3 di Max
-  restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
+- **G3 ✅ CHIUSO E VERIFICATO A RUNTIME (2026-07-21, CP-20260721-001):** B2 `scheduler.py` (già
+  scritto) + B3 `notify.py` (toast Windows nativo PowerShell/WinRT, zero dipendenze pip, fine-run
+  con exit code) + B4 `taskboard.py` (seed 18 task REALI da dossier 16, routes elenco/aggiorna/
+  aggiungi) — tutti scritti e **testati per davvero** (non solo staticamente): `python app.py
+  --selftest` → **15/15 PASS**, e l'**exe frozen già esistente** (mai ricostruito) → **15/15
+  PASS identico**, conferma che `MODULES_DIR` (repo live) fa "accendere da soli" i moduli nuovi
+  su un .exe già buildato. Test funzionale delle routes (non solo selftest) ha trovato **2 bug
+  reali**: `scheduler.aggiungi` con host non pronto saltava la validazione tile (accettava tile
+  inesistenti/readonly) + zero validazione formato ora; id generati collidevano nello stesso
+  secondo (stesso pattern in `scheduler.py`+`taskboard.py`). Entrambi corretti, ri-testati OK.
+  Aggiunto `_Host.tiles()` in `app.py` (read-only, non consuma il cursore di `poll()` — B3 lo usa
+  per osservare transizioni senza rubare righe di log alla UI). REGISTRO-ERRORI EDE-9/10/11.
+  Moduli A1-A3 di Max restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max
+  in stile Aureus, fase 2).
 - **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.
 
 **▶️ MAX (via Claude):** U0 ✅ (import+build+anteprima) · **U0b ✅ offline-capable (`9e86349b`)**:

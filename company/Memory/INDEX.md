@@ -24,6 +24,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260721-001](checkpoints/CP-20260721-001.md) — **EmpireDesk B2/B3/B4 verificati a runtime**: scheduler+notify+taskboard, selftest 15/15 (dev E .exe frozen, senza ricostruire — conferma design seam B1). 2 bug reali trovati TESTANDO le routes (non dal selftest): validazione tile saltata con host non pronto, id collidenti nello stesso secondo. Entrambi corretti e ri-verificati — Gael
 - [CP-20260720-006](checkpoints/CP-20260720-006.md) — **EmpireDesk G2: toolchain installata via winget (Python 3.12 + Node 24, gli stub WindowsApps erano 0 byte), Aureus buildata, exe costruita. BUG REALE trovato ed eliminato**: con PyInstaller 6 i `datas` vanno in `_internal/` (`_MEIPASS`), non accanto all'exe → `platform` FAIL e moduli caricati dal posto sbagliato (`metrics 1/6` invece di 6/6) nel frozen, invisibile in dev. Selftest 13/13 PASS ora sia dev sia .exe — Gael
 - [CP-20260720-005](checkpoints/CP-20260720-005.md) — **ISPETTORATO GENERALE M3 completo**: 11 agenti + 5 workflow CF-grade (isp-conductor…isp-revision-analyst, WF-RUN-AUDIT…WF-REVISION-STUDY), gate verde + 5-bis APPROVA, ADR-008 intestato — Max
 - [CP-20260720-003](checkpoints/CP-20260720-003.md) — EmpireDesk G1: verifica statica del commit 85548a30 (Aureus come root), nessun difetto trovato, ancora da testare a runtime — Gael
