@@ -61,3 +61,6 @@ Agenti CF-grade 7-file (conductor, op-scraper, op-parser, op-pricer) + `agents/C
 
 ## 📅 CHECKPOINT - 2026-07-21 (YouTube Automation)
 - **Gael:** Creato asset `KB_06_youtube_automation_vidiq_fliki.md` in YouTube Lead Engine, strutturando i raw log sulle logiche di YouTube Automation, VidIQ e Fliki. Inserito in `STATO-SITUAZIONE` come previsto dal Ciclo di Fase (passo 7).
+
+## 📅 CHECKPOINT - 2026-07-21 (YouTube Automation Engine Architettura)
+- **Gael:** Creato l'ecosistema `YouTube-Automation-Engine` applicando le skill `master-build-architecture` (per l'albero di directory e memorie) e `content-forge2.0` (per trasformare KB_06 in flussi di lavoro `flow.md`). Creati 3 workflow: VidIQ SEO, Scripting, Fliki. Aggiornato INDEX di memoria interno.
