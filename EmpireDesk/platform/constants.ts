@@ -79,7 +79,7 @@ export const MOCK_USERS: User[] = [
     tags: ['VIP', 'Retainer', 'Client Portal'],
     xp: 0,
     level: 1,
-    accessCode: '1234' // CLIENT ACCESS CODE
+    accessCode: '1937825' // CLIENT ACCESS CODE
   }
 ];
 

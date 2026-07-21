@@ -1,3 +1,19 @@
+# STATO EMPIRE -- aggiornato 2026-07-21 (Max: skill youtube-automation-factory costruita — vedi blocco ✅ in cima)
+
+## ✅ MAX — Skill `youtube-automation-factory` costruita (2026-07-21, CP-20260721-002)
+Trasformato il workshop **YouTube Automation** (Video IQ · SEO/certificazione · Fliki · teoria
+hook/intro/CTA) in una **fabbrica multi-agente** operativa: `.claude/skills/youtube-automation-factory/`
+(comando `/yt-factory`). Costruita con le 2 skill richieste da Max, clonate da GitHub:
+`ansjkfgheqrlg/master-build-architecture` (struttura/architettura) + `ansjkfgheqrlg/content-forge2.0`
+(contenuto grezzo → artefatti, espansione mai riassunto). **29 file:** kernel (SKILL/MKD/ARCHITECTURE)
++ 11 agenti (conductor + 6 operatori + 3 gate/audit + memory-keeper) + 5 workflow (pipeline 6 fasi
+con feedback loop) + 4 reference + 2 tool Python **testati** (`seo_score.py`, `cashcow_check.py`) +
+evals + memoria. Serve la linea revenue **S5 YouTube-Fliki auto** (dossier 16). Wiki:
+`Concept_YouTube_Automation_Factory` + log. **RIPRESA:** eseguire WF1 su una nicchia reale da account
+YouTube neutro. **Area nuova, nessun conflitto con Ispettorato (Max) o Empire Desk (Gael).**
+
+---
+
 # STATO EMPIRE -- aggiornato 2026-07-20 (Max: ISPETTORATO GENERALE — M1+M3 COMPLETE, M2 prossimo)
 
 ## 🟢 ISPETTORATO GENERALE — M1+M3 COMPLETE (dossier 15, esteso con agente 11 + WF-REVISION-STUDY)
