@@ -1,4 +1,22 @@
-# STATO EMPIRE -- aggiornato 2026-07-20 (Max: ISPETTORATO GENERALE — M1+M3 COMPLETE, M2 prossimo)
+# STATO EMPIRE -- aggiornato 2026-07-21 (Claude/Max: sync git risolto + audit Estate Workshop)
+
+## 🔧 SYNC GIT RISOLTO + AUDIT ESTATE WORKSHOP (Claude/Max, 2026-07-21, CP-20260721-001)
+**Trovato e risolto**: il branch di lavoro era 24 commit indietro rispetto a `origin/main` (rebase
+auto-sync fallito 2 volte, `SYNC-CONFLICT.txt` aperto da 14:24). Riallineato con `pull --rebase`,
+risolto il conflitto reale (solo 2 log automation `Outreach/LinkedIn Automation/*.txt`, merge
+per unione cronologica, nessun dato perso).
+**Chiarito**: il commit *"Fase 1 completata — Workshop Conductor + Memory Ecosystem 2.0 + ..."*
+era mal-etichettato — il suo diff reale è SOLO quei 2 file di log. Nessun "Workshop Conductor" /
+"Department Charter" / "Team Charter" / "Governance Framework" esiste sul repo (grep=0). Non è
+lavoro perso, è un messaggio di commit sbagliato — da verificare con chi l'ha scritto.
+**Estate Workshop Workflow System (dossier 17/18, trasformazione di `16-PIANO-ESTATE-REVENUE.md`)
+— stato REALE verificato su disco**: planning 8 livelli ✅, 6 workflow S1-S6 scritti ✅, 9 agenti
+CF-grade forgiati ✅ (confermati file-per-file). **Mancano per l'esecuzione**: integrazione ruflo
+(solo piano scritto, mai eseguita), 3 agenti (`qa-gate-agent`/`scheduler-agent`/
+`email-lifecycle-specialist`), **zero test end-to-end fatti** (né S1 né S5). **B-003/DEC-001
+prezzo Manuale ancora APERTO** (era da chiudere G1 20/7, confermato anche in BACKLOG.md ⬜) →
+blocca a cascata S2/S3/S4.
+Dettaglio completo: `company/Memory/checkpoints/CP-20260721-001.md`.
 
 ## 🟢 ISPETTORATO GENERALE — M1+M3 COMPLETE (dossier 15, esteso con agente 11 + WF-REVISION-STUDY)
 **Direttiva Max 2026-07-20:** l'analisi performance è un ECOSISTEMA con team di agenti dedicato —
