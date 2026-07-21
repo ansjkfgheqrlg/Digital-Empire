@@ -36,7 +36,24 @@ grafica/UI/UX (via Claude) · GAEL = TUTTO il resto.**
   tracciati, nessun rischio di build PyInstaller rotta per path mancante). Questa revisione era statica
   (ambiente senza Python/Node/Chrome) — **da allora Max ha verificato G1 a runtime su macchina reale,
   vedi blocco "✅ G1 CHIUSO E VERIFICATO END-TO-END" qui sotto: selftest 13/13 PASS.**
-- **G2 (prossimo, sbloccato — G1 verificato a runtime):** build exe con dist inclusa + test doppio click.
+- **G2 ✅ FATTO E VERIFICATO A RUNTIME (2026-07-20 pomeriggio, CP-20260720-005):** exe costruita e
+  funzionante. **Sbloccato l'ambiente che frenava da 3 sessioni**: gli `python.exe`/`node` che
+  risultavano "non installati" erano **stub Microsoft Store da 0 byte**; installati i runtime veri
+  via `winget` (Python 3.12.10 + Node 24.18.0/npm 11.16). Poi: `npm install`+`npm run build` in
+  `platform/` (bundle 977 kB) · `pip install` requirements+pyinstaller · `PyInstaller empiredesk.spec`
+  → `dist/EmpireDesk/EmpireDesk.exe` (4.8 MB).
+  **🐛 Trovato ed eliminato un bug REALE che sarebbe arrivato a Max/utente:** in dev il selftest dava
+  13/13 ma il **primo .exe era rotto** (platform "build mancante" con Aureus buildata + i 4 moduli
+  caricati dal posto sbagliato → `metrics 1/6 fonti` invece di 6/6). Causa: **con PyInstaller ≥6 i
+  `datas` finiscono in `_internal/` (`sys._MEIPASS`), non accanto all'exe** → `BASE_DIR` non li trovava.
+  Fix: nuovo `_data_dir()`/`DATA_DIR` per `platform/` (asset read-only, giusto bundlarlo) + `MODULES_DIR`
+  ricablata al **repo live** `REPO_ROOT/EmpireDesk/modules` (i moduli di Max calcolano il repo-root da
+  `parents[2]`: da una copia bundlata quell'assunzione si rompe) + rimossi `modules`/`state` dai datas.
+  **Verifica finale: 13/13 PASS in dev E da .exe frozen.** ⚠️ Resta la **verifica visiva a occhio**
+  (doppio click) — la mia esecuzione è uscita con exit 0 senza crash ma non ho potuto confermare la
+  finestra disegnata; la verifica di Max di stamattina valeva per `python app.py`, non per l'.exe.
+  ⚠️ **PATH per le prossime sessioni** (gli stub WindowsApps hanno la precedenza):
+  `export PATH="/c/Users/olhad/AppData/Local/Programs/Python/Python312:/c/Users/olhad/AppData/Local/Programs/Python/Python312/Scripts:/c/Program Files/nodejs:$PATH"`
 - **G3:** B1-B4 restano (loader moduli/scheduler/notify/taskboard) = solo backend. Moduli A1-A3 di Max
   restano validi (route+dati); i loro panel_html = provvisori (UI la rifà Max in stile Aureus, fase 2).
 - **NON toccare il contenuto di `platform/`** (= grafica = Max), salvo config di build concordate.

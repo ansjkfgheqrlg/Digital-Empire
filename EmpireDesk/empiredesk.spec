@@ -6,8 +6,14 @@
 #
 # ATTENZIONE (dossier 17 §0-bis, PIVOT AREUS): 'platform/dist' DEVE esistere prima di lanciare
 # questo spec (npm install + npm run build dentro platform/, fatto da build_exe.bat) — altrimenti
-# PyInstaller.Analysis fallisce (path 'datas' inesistente). 'modules' e 'state' inclusi così i
-# moduli A1-A3/scheduler e i loro dati (es. state/revenue.json) funzionano anche nell'exe frozen.
+# PyInstaller.Analysis fallisce (path 'datas' inesistente).
+#
+# 'modules' e 'state' NON sono bundlati (rimossi qui — erano nel primo tentativo G1, causavano
+# selftest FAIL/dati parziali nel frozen: i moduli A1-A3 calcolano il proprio REPO_ROOT da
+# `Path(__file__).resolve().parents[2]` assumendo il layout REPO_ROOT/EmpireDesk/modules/<file>.py;
+# una copia bundlata sotto `_internal/` rompe quell'assunzione). app.py li carica sempre dal repo
+# live (MODULES_DIR = REPO_ROOT/EmpireDesk/modules) — l'exe deve comunque restare dentro il
+# monorepo (vedi sopra), quindi la cartella c'e' sempre, nessun bisogno di bundlarla.
 
 block_cipher = None
 
@@ -18,8 +24,6 @@ a = Analysis(
     datas=[
         ('ui', 'ui'),
         ('platform/dist', 'platform/dist'),
-        ('modules', 'modules'),
-        ('state', 'state'),
     ],
     hiddenimports=[
         # GUI premium (pywebview) + backend Windows (Edge WebView2) e fallback Tkinter

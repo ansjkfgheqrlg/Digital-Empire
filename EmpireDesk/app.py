@@ -43,6 +43,20 @@ def _base_dir() -> Path:
 BASE_DIR = _base_dir()
 
 
+def _data_dir() -> Path:
+    """Cartella dei dati bundlati in sola lettura (ui/, platform/, modules/).
+    Da .exe frozen (PyInstaller >=6.0, onedir): i `datas` dello spec finiscono sotto
+    `_internal/` (sys._MEIPASS), NON accanto all'exe come nel vecchio layout -> BASE_DIR
+    da solo li perde (bug reale, trovato in verifica: selftest 'platform' FAIL con Aureus
+    correttamente buildata, moduli mai caricati in frozen). In dev coincide con BASE_DIR."""
+    if getattr(sys, "frozen", False):
+        return Path(getattr(sys, "_MEIPASS", BASE_DIR))
+    return BASE_DIR
+
+
+DATA_DIR = _data_dir()
+
+
 def _find_repo_root() -> Path:
     """Risale da BASE_DIR cercando la radice del monorepo (marcatore: PIANO-MAESTRO/ + company/).
     Robusto anche se l'exe viene spostato/rinominato, finché resta dentro il repo."""
@@ -58,7 +72,7 @@ def _find_repo_root() -> Path:
 
 REPO_ROOT = _find_repo_root()
 PROFILE_DIR = BASE_DIR / "chrome-profile"
-PLATFORM_DIR = BASE_DIR / "platform"          # Aureus Agency OS (grafica = Max, INTOCCABILE)
+PLATFORM_DIR = DATA_DIR / "platform"          # Aureus Agency OS (grafica = Max, INTOCCABILE)
 PLATFORM_DIST = PLATFORM_DIR / "dist"         # prodotta da `npm run build` dentro platform/
 
 
@@ -176,7 +190,12 @@ _HOST = _Host()
 # Un modulo rotto (import fallito, MODULE malformato) NON deve mai far cadere l'intero Empire
 # Desk: si isola, si segnala nel selftest, si salta.
 # --------------------------------------------------------------------------- #
-MODULES_DIR = BASE_DIR / "modules"
+MODULES_DIR = REPO_ROOT / "EmpireDesk" / "modules"  # SEMPRE dal repo live, mai da datas bundlati:
+# i moduli (Half A di Max) calcolano il proprio REPO_ROOT da `Path(__file__).resolve().parents[2]`
+# assumendo il layout REPO_ROOT/EmpireDesk/modules/<file>.py — se caricati da una copia bundlata
+# sotto `_internal/` quell'assunzione si rompe (parents[2] non e' piu' la radice del monorepo).
+# L'exe deve comunque restare dentro il monorepo (vedi empiredesk.spec) quindi la cartella live
+# c'e' sempre: niente bisogno di bundlare `modules/`+`state/` nello spec (rimossi, vedi commit).
 
 _LOADED_MODULES: list[dict] = []   # [{"id","file","routes","tile","panel_html","selftest_fn"}]
 _MODULE_LOAD_ERRORS: list[dict] = []  # [{"file","error"}] — moduli scartati, mai fatali
