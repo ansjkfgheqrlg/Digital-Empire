@@ -18,7 +18,7 @@
 | Sentinelle (`Sentinels/`) | Board/COO | MAXIMILIAN | dossier V2 | vigilanza continua |
 | Guilds (`Guilds/`) | Board/CTO | 5-bis | dossier V2 | trasversale |
 | Memory/Ecosistema 10 (`Memory/`) | Impero | ADR-002 memory-first | dossier 09 | Art. memoria (nessun task senza CP) |
-| Ispettorato Generale (`Ispettorato/` — M1 fondamenta ✅, M2-M5 in build) | MAX (autocritica) | Board/MAXIMILIAN (riceve i report) — indipendente da chi produce | dossier 15 (esteso 2026-07-20: revision-analyst) | Art.2 (verità su di noi, prove non promesse) |
+| Ispettorato Generale (`Ispettorato/` — M1+M3 ✅ 11 agenti/5 WF, M2/M4/M5 residui) | MAX (autocritica) | Board/MAXIMILIAN (riceve i report) — indipendente da chi produce | dossier 15 (esteso 2026-07-20: revision-analyst) | Art.2 (verità su di noi, prove non promesse) |
 
 ## 2. ECOSISTEMI (STEP 5)
 

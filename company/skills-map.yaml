@@ -505,8 +505,8 @@ nuovi_2026_07:
     ecosistema: organo trasversale (non ecosistema)
     reparto: Ispettorato (owner build Max)
     tipo: workflow
-    stato: experimental
-    note: "M1 fondamenta fatta (2026-07-20): REGISTRO-ERRORI 10 voci migrate, REGISTRO-REVISIONI+REGISTRO-SUCCESSI nuovi, KPI empire-wide. M3 (11 agenti CF-grade) in build. Dossier 15."
+    stato: active
+    note: "M1+M3 COMPLETI (2026-07-20): REGISTRO-ERRORI 10 voci migrate + REGISTRO-REVISIONI/SUCCESSI/DECISIONI-ALTIRANGHI, KPI empire-wide, 11 agenti CF-grade + 5 workflow, gate struct VERDE + 5-bis APPROVA. Prossimo: M2 pilota PreventivoForge (trace JSONL). Dossier 15."
 
   - id: preventivoforge
     nome: PreventivoForge (motore + fabbrica multi-tenant + kill-switch licenze)

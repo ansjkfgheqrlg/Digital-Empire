@@ -24,6 +24,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260720-005](checkpoints/CP-20260720-005.md) — **ISPETTORATO GENERALE M3 completo**: 11 agenti + 5 workflow CF-grade (isp-conductor…isp-revision-analyst, WF-RUN-AUDIT…WF-REVISION-STUDY), gate verde + 5-bis APPROVA, ADR-008 intestato — Max
 - [CP-20260720-003](checkpoints/CP-20260720-003.md) — EmpireDesk G1: verifica statica del commit 85548a30 (Aureus come root), nessun difetto trovato, ancora da testare a runtime — Gael
 - [CP-20260720-002](checkpoints/CP-20260720-002.md) — Empire Studio: video 10/29 andrei-pascu-001 completato (Ahp_6rHSOsU, Google Docs copywriter). Stage 3-9 chiusi (Stage 1+2 già fatti da Max l'11/07): 16 frame letti, VTT integrale, 20 KA, 2 pagine wiki, Memory Empire C-H, tracker aggiornato. RIPRESA DA video 11/29 (nRm7JLsP1bc) — Gael
 - [CP-20260720-001](checkpoints/CP-20260720-001.md) — EMPIRE DESK PIVOT AREUS: U0 completato, piattaforma Aureus Agency OS importata come base app — Max
