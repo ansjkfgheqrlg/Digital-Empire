@@ -53,6 +53,14 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
     icon=None,
+    # EDE-9: PyInstaller >=6.0 di default sposta TUTTI i 'datas' (platform/modules/ui/state)
+    # dentro dist/EmpireDesk/_internal/, ma app.py li cerca accanto all'exe (BASE_DIR / "platform"
+    # etc. — BASE_DIR = cartella dell'exe). Senza questo, l'exe frozen "funziona" (parte, apre una
+    # finestra) ma Aureus non si trova (pagina di aiuto invece della piattaforma) e i moduli
+    # A1-A3/scheduler spariscono in silenzio (MODULES_DIR.is_dir() è False, 0 moduli caricati,
+    # nessun errore visibile). contents_directory='.' ripristina il layout piatto pre-6.0
+    # (tutto accanto all'exe, come si aspetta app.py) — vedi REGISTRO-ERRORI.md EDE-9.
+    contents_directory='.',
 )
 coll = COLLECT(
     exe,
