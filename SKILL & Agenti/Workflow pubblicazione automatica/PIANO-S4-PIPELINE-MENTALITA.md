@@ -44,6 +44,28 @@ pubblicato prima della conferma dell'API.
 - CTA `link in bio` (warning se manca);
 - blocco di formule motivazionali vaghe già vietate dalle regole del brand.
 
+## Adapter Meta Graph API
+
+`meta_publisher.py` implementa il passaggio pubblicazione in modo isolato e idempotente:
+
+- crea i container immagine figli;
+- crea il container `CAROUSEL` padre;
+- esegue `media_publish`;
+- salva lo stato soltanto dopo aver ricevuto il `media_id` pubblicato;
+- rifiuta URL locali/non HTTPS e non stampa mai il token.
+
+Esempio da macchina operativa (token solo nell'ambiente):
+
+```bash
+set META_IG_USER_ID=...
+set META_ACCESS_TOKEN=...
+set META_GRAPH_VERSION=vXX.X
+```
+
+L'adapter richiede URL HTTPS pubblici per ogni slide. Non carica file locali e non
+considera un container creato come pubblicazione riuscita. Prima di collegarlo al
+runner giornaliero va provato su account di test e con un batch dedicato.
+
 ## Prossimo passo reale
 
 Configurare su macchina operativa, senza commit di token:
