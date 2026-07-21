@@ -1,0 +1,3 @@
+
+## Checkpoints Registrati
+- `CP-004-ingester-tool`: Implementato script Python (`yt_ingester_tool.py`) per il workflow `video-ingestion`. Utilizza `yt-dlp` per estrarre metadati e sottotitoli in formato JSON/VTT, fornendo l'input pulito per SEO Analyst e Script Engineer.
