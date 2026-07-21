@@ -12,11 +12,11 @@ grafica/UI/UX: **Max prende l'intera app** — `app.py`, `build_exe.bat`, `empir
 - **GAEL: STOP IMMEDIATO su `EmpireDesk/` — non toccare più NULLA in quella cartella**, incluso
   quanto restava assegnato (G3: B1-B4 loader-moduli/scheduler/notifiche/taskboard). Se hai lavoro
   locale non pushato su EmpireDesk: pusha ORA cosi' non si perde, poi fermati.
-- **GAEL — prossimo lavoro**: torna a **V2-2 Lotto 4** (`07-BACKBONE-RUFLO-SKILLS-V2.md` ·
-  `08-ROADMAP-FASI-V2.md` · `09-ECOSISTEMA-MEMORY-V2.md`, vedi CP-20260719-001 §RIPRESA) — era la
-  ripresa naturale prima del pivot Empire Desk. In alternativa, se Max preferisce, l'esecuzione
-  reale di Estate Workshop (S1 concessionari) è priorità revenue attiva — chiedere conferma a Max
-  su quale delle due prima di iniziare.
+- **GAEL — prossimo lavoro (CONFERMATO da Max 2026-07-21): V2-2 Lotto 4.**
+  `07-BACKBONE-RUFLO-SKILLS-V2.md` · `08-ROADMAP-FASI-V2.md` · `09-ECOSISTEMA-MEMORY-V2.md`
+  (vedi CP-20260719-001 §RIPRESA — era la ripresa naturale prima del pivot Empire Desk).
+  Dopo questi 3 dossier: V2-2 chiuso (9/9 ecosistemi + 2/2 organi) → si apre V2-3 (build organo
+  MAXIMILIAN reale).
 - **MAX**: nessun vincolo di metodo imposto qui — l'app è tua, decidi tu grafica/architettura/stack.
   Se vuoi tracciare il lavoro in Memory (checkpoint dopo ogni chiusura), resta comunque valido
   REGOLA ZERO memory-first; se preferisci lavorare senza checkpoint intermedi va bene lo stesso,
