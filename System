@@ -1,0 +1,3 @@
+
+## Checkpoints Registrati
+- `CP-003-dose-mentale-remake`: Aggiunti agenti (`yt-ingester`, `yt-publisher`), workflows (`video-ingestion`, `channel-publishing`) e target project `Dose-Mentale-Remake`. Implementata l'automazione end-to-end e le regole anti-copyright strike.

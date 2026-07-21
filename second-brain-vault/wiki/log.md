@@ -86,3 +86,4 @@
 ## 2026-07-21 (YouTube Automation Engine Architettura)
 - BUILD: Applicate skill `master-build-architecture` e `content-forge2.0`. Generato l'intero ecosistema `YouTube-Automation-Engine` sotto `YouTube Lead Engine/`, suddividendo la conoscenza di `KB_06` in file architettonici canonici (directory memory, agents, workflows) e 3 file di workflow operativi separati (VidIQ SEO, Scripting, Fliki Production).
 - BUILD (Agenti): Sviluppate le specs e i system prompts per il team di YouTube Automation (Analista VidIQ, Copywriter/Script Engineer, Operatore Fliki) basati sui template di Content-Forge2.0. Memoria di modulo aggiornata.
+- BUILD (Automazione): Configurato progetto `Dose-Mentale-Remake` nell'ecosistema YouTube Automation. Aggiunti agenti e workflow di estrazione trascrizioni (`yt-ingester`) e automazione upload (`yt-publisher`).
