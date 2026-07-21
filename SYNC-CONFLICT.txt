@@ -1,0 +1,5 @@
+﻿[2026-07-21 14:24:51] CONFLITTO DI SYNC
+Pull --rebase fallito: Auto-merging Outreach/LinkedIn Automation/comments_log.txt CONFLICT (content): Merge conflict in Outreach/LinkedIn Automation/comments_log.txt Auto-merging Outreach/LinkedIn Automation/run_today_log.txt CONFLICT (content): Merge conflict in Outreach/LinkedIn Automation/run_today_log.txt
+Il tuo lavoro e' al sicuro (committato in locale).
+Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
+Poi cancella questo file.
