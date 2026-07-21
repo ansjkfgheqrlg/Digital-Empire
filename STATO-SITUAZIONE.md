@@ -64,3 +64,4 @@ Agenti CF-grade 7-file (conductor, op-scraper, op-parser, op-pricer) + `agents/C
 
 ## 📅 CHECKPOINT - 2026-07-21 (YouTube Automation Engine Architettura)
 - **Gael:** Creato l'ecosistema `YouTube-Automation-Engine` applicando le skill `master-build-architecture` (per l'albero di directory e memorie) e `content-forge2.0` (per trasformare KB_06 in flussi di lavoro `flow.md`). Creati 3 workflow: VidIQ SEO, Scripting, Fliki. Aggiornato INDEX di memoria interno.
+- **Gael:** Creato il team di agenti (`vidiq-seo-analyst`, `script-engineer`, `fliki-operator`) con file canonici (spec + system_prompt) sotto `YouTube-Automation-Engine/agents/`. Piena implementazione dei Modelli Mentali di Content Forge.

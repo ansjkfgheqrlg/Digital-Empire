@@ -1,0 +1,1 @@
+- `CP-002-agents-created`: Generati 3 Agenti specializzati (VidIQ SEO Analyst, Script Engineer, Fliki Operator) con spec.md e system_prompt.md.
