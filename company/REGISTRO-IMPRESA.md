@@ -41,6 +41,7 @@
 | **Copy Workflow Orchestration Layer** | 04-MARKETING / L2-1 Copywriting | gate copy L2-1-qa | pre-Impero, wrappato | Art.2 |
 | **carousel-factory** (brands: mentalita-brutale, …) | 03-CONTENT-FACTORY / CF-R5 | CF-R6 QA & Gate | pre-Impero, wrappato | Art.2 |
 | **Empire Studio** (ingestione video → knowledge) | 10-MEMORY (knowledge) + Reparto Competitor Research | WATCH-001 match check | suite dedicata | ADR-002 (integrale, mai riassunti) |
+| **Andrei Pascu System** (Playbook + Checklist APSOC 25 item) | 10-MEMORY / 04-MARKETING (knowledge & copy) | Checklist APSOC (score ≥92%) | import da Arena zip 2026-07-22 (ADR-008) | Art.2 (dati reali, zero fuffa) |
 | **Manuale Claude Code** (prodotto S2) | 02-INFO-BUSINESS / IB-L2-PROD → VEND | ib-prod-qa + B-003 (prezzo da team-prezzi) | pre-Impero | Art.2 · ADR-005 |
 | **EmpireDesk.exe** (in build OGGI, Gael) | 06-CORE/Platform (interim: Genesi-Core) | selftest 8/8 tile + 5-bis | dossier 17 | Art.2 (zero bottoni finti) · ADR-003 (solo launcher) |
 

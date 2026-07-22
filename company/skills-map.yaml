@@ -430,6 +430,15 @@ skills_and_workflows:
     stato: experimental
     note: "TASK 7.0: ingestione canali YouTube riferimento. Sessione dedicata."
 
+  - id: andrei-pascu-system
+    nome: Andrei Pascu System (Playbook Operativo Cross-Video + Checklist APSOC 25 item)
+    percorso: "SKILL & Agenti/Empire Studio Suite/andrei-pascu-system/"
+    ecosistema: 08-INTELLIGENCE
+    reparto: knowledge
+    tipo: knowledge
+    stato: active
+    note: "Importato 2026-07-22 da Arena zip (ADR-008 superato: 0 secrets, 0 bloat). Contiene playbook.md, checklist_APSOC.md (score >=92%), LEGGIMI.md. Duplicato in second-brain-vault/wiki/03 - Frameworks/System_Andrei_Pascu_v1/."
+
   - id: docs
     nome: Docs (documentazione varia)
     percorso: docs/
@@ -579,10 +588,10 @@ da_classificare:
 # ============================================================
 
 stats:
-  totale_mappati: 57
-  active: 32
+  totale_mappati: 58
+  active: 33
   experimental: 15
   legacy: 4
-  knowledge: 6
+  knowledge: 7
   da_classificare: 3
-  aggiornamento: "2026-07-19 — +5 voci censimento ADR-008 (preventivoforge, empire-studio-suite, memory-empire, empire-desk, wf-yt-fliki)"
+  aggiornamento: "2026-07-22 — +1 voce censimento ADR-008 (andrei-pascu-system importato da Arena)"

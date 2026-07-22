@@ -50,13 +50,13 @@ con lo stesso protocollo ADR-008 (audit secrets/bloat, registro-impresa, skills-
    Perché: serve per decidere SE riattivare Legami D'amore e COSA copiare da Dose Mentale.
    Blocco attuale: servono gli URL/handle dei 2 canali — vedi richiesta sotto, prima cosa da darmi.
 
-6. **Cross-video pattern miner (Andrei Pascu, su second-brain esistente)**
-   Cosa: agente che legge le 10 pagine `Source_Andrei_Pascu_*` già in wiki + le pagine `Concept_*`
-   collegate, e produce sintesi cross-video (pattern ricorrenti, non ripetizioni per singolo video).
-   Perché: i primi 10/29 video Andrei Pascu sono già ingeriti (Empire Studio, dati reali, non stime)
-   — questa build NON è "guardare i video da zero", è mining di quello che già abbiamo.
-   Nota: i restanti 19/29 video vanno comunque ingeriti con Empire Studio (pipeline video reale,
-   non sostituibile da Arena — Arena può minare solo quello che è GIÀ stato visto).
+6. **✅ Cross-video pattern miner (Andrei Pascu, su second-brain esistente) — COMPLETATO E IMPORTATO 2026-07-22**
+   - **Stato:** Costruito su Arena (`workspace-019f88c9-de31-7a8f-ac70-4fe9a6ece098.zip` / `Andrei_Pascu_Sistema_Operativo.zip`), audit ADR-008 superato (0 secrets, 0 bloat), censito in `company/REGISTRO-IMPRESA.md` e `company/skills-map.yaml`.
+   - **Contenuto:** `playbook.md` (AP VIDEO SYSTEM e AP SYSTEM, 9 principi, 8-step loop), `checklist_APSOC.md` (25 item GO/NO-GO score ≥92% e log evidenza), `LEGGIMI.md`.
+   - **Dove si trova nel sistema:**
+     - `SKILL & Agenti/Empire Studio Suite/andrei-pascu-system/`
+     - `second-brain-vault/wiki/03 - Frameworks/System_Andrei_Pascu_v1/`
+   - **Prossimo step su questo fronte:** Quando Empire Studio girerà sui restanti 19/29 video, userà `checklist_APSOC.md` per validare e arricchire la matrice.
 
 ## 🥉 Priorità BASSA — non serve per l'estate, non urgente
 
