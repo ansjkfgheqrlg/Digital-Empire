@@ -1,4 +1,37 @@
-# STATO EMPIRE -- aggiornato 2026-07-22 (ORDINE MAX: si costruisce il livello ESEGUIBILE — split Max/Gael)
+# STATO EMPIRE -- aggiornato 2026-07-22 (PIANO ATTIVO: Empire Runtime, 3 corsie parallele)
+
+## 📐 2026-07-22 — PIANO MAESTRO ATTIVO + CHIARIMENTO MAX: azienda ≠ workflow estate
+**PIANO:** [`company/Memory/plans/PLAN-20260722-EMPIRE-RUNTIME.md`](plans/PLAN-20260722-EMPIRE-RUNTIME.md)
+— 3 corsie parallele con perimetri disgiunti, calendario gate 22→26/07, pre-mortem, misura di
+successo espressa in **comandi** (non opinioni). Azienda reale: **33% → obiettivo 65-70%**.
+
+**Chiarimento di Max (fine ogni ambiguità):**
+- **Digital Empire = l'azienda intera** → `company/` + `empire/` (runtime). Permanente.
+- **Workflow Estate = solo un piano di lavoro per l'estate 2026** → `WORKFLOW-ESTATE/`. Uno dei
+  tanti workflow, si archivia a fine luglio.
+- ⚠️ **La cartella `DIGITAL-EMPIRE/` NON è l'azienda**: è il workflow estate importato il 21/07
+  da Chief-Forge. **Il nome mente** — da lì nasceva la confusione.
+
+**DEC-EMP-001 (proposta, veto entro 2026-07-23 20:00, poi ATTIVA per default):**
+assorbire `DIGITAL-EMPIRE/` dentro `WORKFLOW-ESTATE/` secondo i 6 pilastri Art.8; la cartella
+sparisce; il nome "Digital Empire" resta solo per l'azienda. Esecuzione: **M-C** (Claude), via
+`empire.paths` per non rompere i riferimenti.
+
+**CORSIE ATTIVE ORA:**
+- 🟣 **GAEL** → G-A `loader+index` · G-B fix `memory_manager` · G-C `empire/flow/`
+- 🔵 **CLAUDE** → M-A `empire/memory/` (chiude B-009) · M-B `empire/inspect/` · M-C unificazione+Art.8
+- 🟡 **GEMINI/Antigravity** → GEM-04 `registry` · GEM-05 `dash` —
+  prompt pronti da incollare: [`company/Antigravity-Briefs/PROMPT-DA-INCOLLARE.md`](../Antigravity-Briefs/PROMPT-DA-INCOLLARE.md)
+
+**Gate finale 2026-07-26 18:00:** `python -m empire doctor` → **exit 0** + dashboard apribile
+offline + primo report daily dell'Ispettorato esistente.
+
+**⚠️ B-009 aperto (collisione ID checkpoint, 3 volte oggi):** fino a M-A chiuso, **`git pull`
+PRIMA di scrivere un checkpoint**. Vale per Max, Gael e Claude.
+
+---
+
+# STATO EMPIRE -- 2026-07-22 (ORDINE MAX: si costruisce il livello ESEGUIBILE — split Max/Gael)
 
 ## 🚨🚨🚨 ORDINE MAX 2026-07-22 — `empire/` CORE RUNTIME: GAEL RICHIAMATO, SPLIT ATTIVO (CP-20260722-006)
 **Max:** *"questo va risolto adesso. Dividi il compito tra me e Gael. Le modifiche devono essere
