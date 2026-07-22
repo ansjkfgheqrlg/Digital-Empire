@@ -168,41 +168,33 @@ Stage 9  Memory close       → checkpoint-manager + performance metrics
 
 ## 3. TASK BOARD — SETTIMANA 19-26 LUGLIO
 
-### 🔵 MAX (business, decisioni, relazioni)
-| G | Task | Output | Stream |
+### 🔵 MAX (business, decisioni, relazioni & supervisione core)
+| G | Task | Output | Stream/Ambito |
 |---|---|---|---|
-| G1 (sab 19-20) | Decidere PREZZO Manuale con team-prezzi (chiude B-003, bloccante S2/S3/S4) | prezzo + ruolo prodotto deciso | S2 |
-| G1-G2 | Lista 7 concessionari: nome, stato relazione, canale contatto preferito | lista pronta per script | S1 |
-| G2 (lun 21) | Rivedere+approvare offerta "Partenza Anticipata" preparata da Claude/A5 | offerta approvata | S1 |
-| G2-G4 | **Contattare i 7 concessionari** (call/whatsapp, script A8 in mano) | ≥2 anticipi chiusi | S1 |
-| G3 | Approvare landing+prezzo funnel Manuale (review 10 minuti, non costruire) | GO pubblicazione | S2 |
-| G4-G5 | Decidere nicchia canale YouTube #1 (proposta analisi competitor di Gael) | nicchia scelta | S5 |
-| G6-G7 | Push vendita Manuale sui canali personali caldi (post, storie, contatti diretti) | prime vendite | S2 |
-| G2 | **Scegliere il NOME nuovo** di PreventivoForge dalla shortlist S6 (30 sec) | nome deciso | S6 |
-| G5 | Approvare promo-kit (landing+demo+case study) preparato da Gael/Claude | GO promo | S6 |
+| **OGGI** | **Avvio Antigravity/Gemini (`PROMPT-DA-INCOLLARE.md`)**: dare il via a GEM-04 (anagrafe agenti) e GEM-05 (dashboard HTML/MD) | Esecuzione pulizia orfani e cruscotti interattivi | Antigravity / Core |
+| **OGGI** | **Decidere PREZZO Manuale Claude Code (chiude B-003)**: sblocca il funnel S2 e le landing per S3/S4 | Prezzo + ruolo prodotto fissati | S2 Revenue |
+| **OGGI** | **Contatto 7 Concessionari caldi (S1)**: chiamate o WhatsApp con script A8 per offerta "Partenza Anticipata Luglio" | ≥1-2 anticipi chiusi entro venerdì | S1 Revenue |
+| **OGGI** | **Scegliere NOME rebrand PreventivoForge (S6)** dalla shortlist (Preventa, Lampo, Quotix, AutoQuota) | Nome deciso per promo-kit e outreach | S6 Revenue |
+| **OGGI** | **Decisione canonica e unificazione (`M-C` con Claude)**: confermare assorbimento `DIGITAL-EMPIRE/` dentro `WORKFLOW-ESTATE/` + riempimento dei 2 pilastri vuoti Art.8 (`05-TEMPLATES` e `06-DASHBOARD`) | Conformità Art.8 ripristinata e link rotti eliminati | Core / Governance |
+| **G4-G5** | **Supervisione `M-B` (Ispettorato reale)**: accensione telemetria 5D e ciclo `WF-PERF-LOOP` (con Claude) | Primi report quantitativi `Ispettorato/` | Core / Controllo |
+| **In corso** | **EmpireDesk (Aureus Agency OS — `platform/`)**: design UI/UX e allineamento grafico pannelli `metrics`, `revenue`, `licenze` | Interfaccia nativa in stile Aureus | EmpireDesk App |
 
-### 🟣 GAEL (build, automazione — riprende in coda a CF-R8)
-| G | Task | Output | Stream |
+### 🟣 GAEL (build, automazione, core runtime & flow engine)
+> **Priorità P0 Assoluta (`TASK-GAEL-20260722-EMPIRE-RUNTIME.md`):** Il completamento dei 3 lotti `G-A`, `G-B`, `G-C` supera qualsiasi altro task in coda.
+
+| G | Task & Lotto | Output & Gate | Stream/Ambito |
 |---|---|---|---|
-| G1 | (30min) Chiudere CF-R8 → 03-CONTENT-FACTORY 9/9 ✅ | CP | infra |
-| G1 | **AUDIT ASSET P0.2**: censire TUTTE le pagine (mentalita.brutale, crea.illtuo_impero, altre pagine lancio, sito) — follower, ultimo post, accessi, bio/link | `company/Ecosistemi/05-MULTI-BUSINESS/AUDIT-PAGINE-20260719.md` | S3/S4 |
-| G2 | Funnel Manuale: landing empire-premium-style + checkout + 3 email (motori site-* + emails, prezzo da B-003 chiuso) | funnel live | S2 |
-| G2-G3 | Batch riattivazione S3: 7 caroselli crea.illtuo_impero (carousel-factory) + bio→funnel | pagina riparte con funnel | S3 |
-| G3-G4 | **Pipeline mentalita.brutale 100% auto**: carousel-factory wrap → gate QA auto → scheduler pubblicazione → report | pipeline testata end-to-end | S4 |
-| G4-G5 | **WF-YT v1 + Empire Studio Integration**: 
-  - Attiva YouTube Department + Processing & Vision + Memory Management
-  - Implementa yt-fliki-renderer, yt-seo-publisher, yt-performance-analyzer
-  - Test 1 video end-to-end con memoria integrata + P12 trace
-  - Primo checkpoint Memory Empire | 1 video + run completa Empire Studio + Memory | S5 |
-| G6 | **Analisi competitor + Nicchia Selector** (yt-niche-scout) + proposta a Max con dati Memory Empire | doc proposta + ReasoningBank iniziale | S5 |
-| G5-G6 | **Promo-kit S6**: landing rebrand (empire-premium-style) + case study Novacar (case-study-forge) + lista concessionari import-DE (A1 scrape) | kit pronto + lista lead | S6 |
-| G7 | Consolidamento settimana: CP + metriche reali (vendite, anticipi, pipeline stato) → RETRO | CP settimanale | tutti |
+| **G-A (P0)** | **`empire/loader.py` + `empire/index.py`**: caricamento e indicizzazione dei 300+ agenti `.md` in oggetti interrogabili | `empire agents` > 200 agenti, load < 10s, `find`/`show` OK | Core Runtime |
+| **G-B (P0)** | **Fix `memory_manager.py`**: risoluzione crash Unicode e path Windows-safe (ADR-003: wrap senza alterare CLI/formati) | `python memory_manager.py status` esce 0 da 3 CWD diversi | Automazioni / Core |
+| **G-C (P0)** | **`empire/flow/` (Workflow Engine)**: motore di esecuzione deterministica per `workflows.yaml` con gate 🟢/🔴 | Passaggi umani mai auto-chiusi, gate valutati sui dati reali, 0 `eval()` | Core Runtime |
+| **G2-G3** | **Funnel Manuale S2**: landing `empire-premium-style` + checkout (Stripe/Gumroad) + 3 email automatiche | Funnel live e funzionante dopo chiusura B-003 | S2 Revenue |
+| **G3-G4** | **Pipeline caroselli e pubblicazione automatica**: `mentalita.brutale` (S4 auto 100%) e `crea.illtuo_impero` (S3) | Produzione e schedulazione caroselli automatizzata | S3 / S4 Revenue |
+| **G4-G5** | **`WF-YT v1` + Empire Studio Integration**: pipeline automazione YouTube con API Fliki (`yt-factory` / `yt-fliki-renderer`) | 1 video generato e tracciato end-to-end con checkpoint P12 | S5 Revenue |
 
-### 🤖 CLAUDE (esecuzione diretta, su comando)
-- Script offerta S1 (A5/A8: WF-CLOSING-PREP + beast-preventivi) — pronto per G2 Max.
-- Copy landing+email S2 (cro-copy-architect APSOC) quando B-003 chiuso.
-- Caroselli batch (carousel-empire skill) su richiesta.
-- Ogni task chiuso → checkpoint Memory (regola zero).
+### 🤖 CLAUDE & ANTIGRAVITY (esecuzione su comando e integrazione monorepo)
+- **Claude (Lotti M):** **`M-A` completato oggi** (`empire/memory/` attivo con 8 file `.py`). In esecuzione per supporto a Max su **`M-B`** (Ispettorato) e **`M-C`** (risanamento Art.8 e riempimento cartelle `05-TEMPLATES` / `06-DASHBOARD`).
+- **Antigravity / Gemini:** Pronto al lancio da `PROMPT-DA-INCOLLARE.md` per eseguire **`GEM-04`** (anagrafica centralizzata + gate link integrity) e **`GEM-05`** (dashboard HTML/MD interattive).
+- **Regola Zero (Memory-First):** Ogni task chiuso richiede checkpoint e test incollati (mai "dovrebbe funzionare").
 
 ---
 
