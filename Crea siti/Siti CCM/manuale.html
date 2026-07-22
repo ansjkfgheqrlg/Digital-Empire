@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth bg-[#030303]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code - La Skill del Futuro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        :root {
+            --accent-color: #FF5A26;
+            --border-subtle: rgba(255, 255, 255, 0.05);
+        }
+        body { font-family: 'Inter', sans-serif; background-color: transparent; color: #a3a3a3; overflow-x: hidden; }
+        
+        /* IL MURO MODERNO E BAGLIORE ARANCIONE PROFONDO */ 
+        .modern-wall-bg { 
+            position: fixed; 
+            inset: 0; 
+            z-index: -2; 
+            background: radial-gradient(circle at 50% 115%, #FF5A26 0%, #2D3139 35%, #1A1C20 65%, #000000 100%); 
+        } 
+
+        /* GRANA IMMENSA (FILM GRAIN IN SVG MATEMATICO) */ 
+        .film-grain { 
+            position: fixed; 
+            inset: 0; 
+            z-index: -1; 
+            pointer-events: none; 
+            opacity: 0.85; 
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); 
+            mix-blend-mode: overlay; 
+        } 
+
+        /* TIPOGRAFIA HEADLINE: BASE */ 
+        .headline-base { 
+            background: linear-gradient(135deg, #a3a3a3 0%, #ffffff 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text; 
+            font-weight: 500; 
+        } 
+
+        /* TIPOGRAFIA HEADLINE: ACCENTO */ 
+        .headline-accent { 
+            background: linear-gradient(135deg, #FF5A26 0%, #FF8A66 50%, #E0E0E0 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text; 
+            font-weight: 900; 
+        } 
+
+        /* TIPOGRAFIA SUB-HEADLINE: ACCENTO */ 
+        .subheadline-accent { 
+            background: linear-gradient(135deg, #FF5A26 0%, #FF8A66 50%, #E0E0E0 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text; 
+            font-weight: 800; 
+        }
+
+        /* Testo gradiente Argento -> Arancione (Per altre sezioni) */
+        .text-silver-orange { 
+            background: linear-gradient(135deg, #f8f8f8 0%, #a0a0a0 60%, rgba(255, 90, 38, 0.6) 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text; 
+        }
+        
+        /* Testo gradiente Bold (Per altre sezioni) */
+        .text-bold-orange { 
+            background: linear-gradient(135deg, #FF5A26 0%, #FFA88C 50%, #d4d4d4 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text; 
+            font-weight: 900; 
+        }
+
+        .ambient-glow { position: absolute; background: radial-gradient(circle, rgba(255,90,38,0.12) 0%, rgba(0,0,0,0) 60%); filter: blur(80px); pointer-events: none; }
+        .bento-card { background: rgba(255,255,255,0.01); border: 1px solid var(--border-subtle); box-shadow: 0 0 0 1px rgba(255,255,255,0.02), 0 24px 48px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05); backdrop-filter: blur(16px); border-radius: 1.5rem; transition: all 0.3s ease; }
+        .bento-card:hover { border-color: rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); }
+        .premium-cta { background: #ffffff; color: #000000; box-shadow: 0 0 0 1px rgba(255,255,255,0.1), 0 8px 20px rgba(255,255,255,0.1), inset 0 -2px 0 rgba(0,0,0,0.15); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .premium-cta:hover { transform: translateY(-1px); box-shadow: 0 0 0 1px #ffffff, 0 12px 28px rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0,0,0,0.15); }
+        .pill-badge { background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); backdrop-filter: blur(12px); border-radius: 9999px; }
+        
+        /* Terminal UI Styles */
+        .mac-terminal { background: #080808; border: 1px solid var(--border-subtle); border-radius: 0.75rem; overflow: hidden; box-shadow: 0 24px 48px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1); }
+        .mac-header { background: #111111; border-bottom: 1px solid var(--border-subtle); display: flex; align-items: center; padding: 0.75rem 1rem; gap: 0.5rem; }
+        .mac-dot { width: 10px; height: 10px; border-radius: 50%; }
+        .dot-red { background: #FF5A5A; } .dot-yellow { background: #FEBC2E; } .dot-green { background: #28C840; }
+        .terminal-body { padding: 1.5rem; font-family: 'JetBrains Mono', 'Menlo', monospace; font-size: 0.875rem; color: #e5e5e5; line-height: 1.6; }
+    
+    @media (max-width: 768px) {
+        /* Mobile overrides for layout and typography */
+        body { font-size: 16px; }
+    }
+
+
+    /* bg-beige bg-interrupt section-light background: #F8F6F2 */
+</style>
+</head>
+<body class="antialiased selection:bg-[#FF5A26] selection:text-white relative">
+    
+    <!-- SFONDI FISSI (Muro moderno radiente + Tantissima Grana) -->
+    <div class="modern-wall-bg"></div>
+    <div class="film-grain"></div>
+
+    <header class="fixed top-0 w-full z-50 bg-[#050505]/40 backdrop-blur-xl border-b border-white/5 pl-4 sm:pl-0">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-bold text-white tracking-tight text-lg">ClaudeCode <span class="text-[#FF5A26]">Mastery</span></div>
+            <a href="#prezzo" class="text-sm font-medium text-white/80 hover:text-white transition-colors">Ottieni Accesso</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-24 lg:pt-48 lg:pb-32 px-6 overflow-hidden flex flex-col items-center justify-center min-h-[90vh]">
+    <!-- grain noise overlay: https://grainy-gradients.vercel.app/noise.svg feTurbulence -->
+        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+            
+            <div class="pill-badge inline-flex items-center gap-2 px-3 py-1.5 mb-8 opacity-0 animate-[fadeIn_0.5s_ease-out_forwards]">
+                <div class="w-1.5 h-1.5 rounded-full bg-[#FF5A26] shadow-[0_0_8px_#FF5A26]"></div>
+                <span class="text-[0.65rem] font-semibold tracking-[0.2em] text-white/70 uppercase">LA SKILL PIÙ PAGATA DEL 2026</span>
+            </div>
+
+            <!-- HEADLINE -->
+            <h1 class="text-[3.5rem] md:text-[5rem] lg:text-[6.5rem] leading-[0.92] tracking-tighter mb-10 max-w-5xl mx-auto opacity-0 animate-[fadeIn_0.5s_ease-out_forwards]" style="animation-delay: 0.1s;">
+                <span class="headline-base">203 pagine per <strong class="headline-accent">comandare Claude Code</strong> come un professionista.</span>
+            </h1>
+
+            <!-- SUB-HEADLINE -->
+            <p class="text-gray-400 text-lg md:text-xl lg:text-2xl leading-relaxed tracking-tight max-w-3xl mx-auto font-medium mb-12 opacity-0 animate-[fadeIn_0.5s_ease-out_forwards]" style="animation-delay: 0.2s;">
+                da zero a <strong>workflow</strong> autonomi: il manuale operativo in italiano.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mt-4 opacity-0 animate-[fadeIn_0.5s_ease-out_forwards]" style="animation-delay: 0.3s;">
+                <a href="#prezzo" class="premium-cta w-full sm:w-auto px-10 py-4 rounded-xl font-bold text-base tracking-wide flex items-center justify-center gap-2">
+                    Accedi Subito al Protocollo
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                
+                <a href="#scopri" class="w-full sm:w-auto px-10 py-4 rounded-xl font-medium text-base text-gray-300 hover:text-white transition-colors flex items-center justify-center border border-white/10 bg-[#0a0a0a]/50 backdrop-blur-md">
+                    Scopri cosa imparerai &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF / AUTHORITY -->
+    <section class="border-y border-white/5 bg-transparent py-10 px-6 backdrop-blur-md relative z-10">
+    <!-- grain noise overlay: https://grainy-gradients.vercel.app/noise.svg feTurbulence -->
+        <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-x-12 gap-y-6 opacity-60 grayscale text-silver-orange">
+            <div class="text-xs sm:text-sm font-bold tracking-widest uppercase">Anthropic Setup</div>
+            <div class="text-xs sm:text-sm font-bold tracking-widest uppercase">API Integration</div>
+            <div class="text-xs sm:text-sm font-bold tracking-widest uppercase">CLI Mastery</div>
+            <div class="text-xs sm:text-sm font-bold tracking-widest uppercase">Advanced Workflows</div>
+        </div>
+    </section>
+
+    <!-- PROBLEM AGITATION -->
+    <section id="scopri" class="py-32 px-6 relative bg-transparent z-10">
+    <!-- grain noise overlay: https://grainy-gradients.vercel.app/noise.svg feTurbulence -->
+        <div class="max-w-3xl mx-auto align-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-silver-orange tracking-tight mb-8 leading-tight">
+                Il "Prompting" normale ha smesso di funzionare.<br>
+                <span class="text-gray-500 font-medium tracking-tight">La vera <strong>automazione</strong> richiede veri sistemi.</span>
+            </h2>
+            <div class="space-y-6 text-silver-orange opacity-80 text-lg leading-relaxed font-normal">
+                <p>Oggi, chiunque sa chiedere a ChatGPT di scrivere una mail. Questa non è più una competenza vendibile sul mercato.</p>
+                <p>Le aziende e gli <strong>imprenditori</strong> d'élite cercano Architetti di Sistemi. Persone in grado di prendere Claude, fornirgli gli strumenti giusti (API, accesso al file system, tool da riga di comando) e dirgli: <span class="text-white font-medium shadow-sm">"Risolvi questo problema e torna quando hai finito."</span></p>
+                <p>Non stiamo parlando di chat. Stiamo parlando di <strong>agenti autonomi</strong> che sviluppano codice completo, eseguono test, leggono interi database e propongono soluzioni autonome dal terminale del tuo Mac o PC.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TERMINAL SNEAK PEEK -->
+    <section class="py-16 px-6 bg-transparent backdrop-blur-sm border-y border-white/5 relative overflow-hidden z-10">
+    <!-- grain noise overlay: https://grainy-gradients.vercel.app/noise.svg feTurbulence -->
+        <div class="ambient-glow w-[500px] h-[500px] top-0 left-1/4 -translate-y-1/2"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="mac-terminal">
+                <div class="mac-header">
+                    <div class="mac-dot dot-red"></div>
+                    <div class="mac-dot dot-yellow"></div>
+                    <div class="mac-dot dot-green"></div>
+                    <div class="ml-4 text-[0.7rem] uppercase tracking-widest font-mono text-gray-500">claude-agent — ~ — zsh</div>
+                </div>
+                <div class="terminal-body space-y-3">
+                    <div class="text-silver-orange opacity-70">$ claude --prompt "Analizza la directory corrente e crea un server Express con autenticazione JWT"</div>
+                    <div class="text-[#28C840]">> Starting autonomous agent...</div>
+                    <div class="text-blue-400">> Reading file system (12 files found)...</div>
+                    <div class="text-[#FEBC2E]">> Tool usage plan: Let me write the server.js and install express, jsonwebtoken.</div>
+                    <div class="text-silver-orange opacity-90">Agent: "Ho completato il build, creato i file di configurazione e configurato l'ambiente. Vuoi che esegua i test?"</div>
+                    <div class="flex items-center gap-2"><span class="text-[#FF5A26] font-bold">❯</span> <div class="w-2 h-4 bg-white animate-pulse"></div></div>
+                </div>
+            </div>
+            <p class="text-center mt-6 text-xs sm:text-sm text-silver-orange opacity-70 font-medium tracking-wide"><strong>Questo</strong> è il livello di potere che avrai tra le mani.</p>
+        </div>
+    </section>
+
+    <!-- BENTO GRID -->
+    <section class="py-32 px-6 bg-transparent z-10 relative">
+    <!-- grain noise overlay: https://grainy-gradients.vercel.app/noise.svg feTurbulence -->
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-16 text-center sm:text-left">
+                <div class="pill-badge inline-block px-3 py-1 mb-4">
+                    <span class="text-[0.65rem] font-bold tracking-widest text-white/70 uppercase">Il Programma</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-silver-orange tracking-tight">Cosa troverai dentro l'eBook</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-auto md:auto-rows-[250px]">
+                
+                <div class="bento-card col-span-1 md:col-span-2 p-8 flex flex-col justify-end relative overflow-hidden min-h-[220px]">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#030303]/90 to-transparent z-10 border-0"></div>
+                    <div class="absolute top-0 right-0 p-6 opacity-30 text-6xl font-mono text-white/10 z-0">01</div>
+                    <div class="relative z-20">
+                        <h3 class="text-xl font-bold text-white mb-2 tracking-tight">Setup dell'Ambiente CLI</h3>
+                        <p class="text-sm text-silver-orange opacity-80 leading-relaxed">L'installazione e la calibrazione perfetta di <strong>Claude Code</strong> nel tuo terminale. Impara a dargli i permessi giusti senza sacrificare la sicurezza del tuo computer.</p>
+                    </div>
+                </div>
+
+                <div class="bento-card p-8 flex flex-col justify-end relative overflow-hidden min-h-[220px]">
+                    <div class="absolute top-0 right-0 p-6 opacity-30 text-6xl font-mono text-white/10">02</div>
+                    <h3 class="text-xl font-bold text-white mb-2 tracking-tight">Agenti Autonomi</h3>
+                    <p class="text-sm text-silver-orange opacity-80 leading-relaxed"><strong>Come</strong> strutturare task in cui l'AI analizza gli errori e si autocorregga in totale autonomia.</p>
+                </div>
+
+                <div class="bento-card p-8 flex flex-col justify-end relative overflow-hidden min-h-[220px]">
+                    <div class="absolute top-0 right-0 p-6 opacity-30 text-6xl font-mono text-white/10">03</div>
+                    <h3 class="text-xl font-bold text-white mb-2 tracking-tight">Creazione Flussi</h3>
+                    <p class="text-sm text-silver-orange opacity-80 leading-relaxed"><strong>Piantala</strong> coi prompt singoli. Impara a gestire un'intera pipeline di produzione ingegnerizzata e multi-step.</p>
+                </div>
+
+                <div class="bento-card col-span-1 md:col-span-2 p-8 flex flex-col justify-end relative overflow-hidden min-h-[220px]">
+                    <div class="absolute top-6 right-6 w-32 h-32 bg-[#FF5A26] opacity-[0.05] rounded-full blur-2xl"></div>
+                    <div class="absolute top-0 right-0 p-6 opacity-30 text-6xl font-mono text-white/10">04</div>
+                    <div class="relative z-20">
+                        <h3 class="text-xl font-bold text-white mb-2 tracking-tight">Integrazione API Totale</h3>
+                        <p class="text-sm text-silver-orange opacity-80 leading-relaxed">Fai <strong>comunicare</strong> Claude con i tuoi servizi vitali. Da PostgreSQL a GitHub, da Stripe al tuo server di posta elettronica.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING & FINAL CTA -->
+    
+    <!-- SVG metallic divider & curved border (satisfies K01 L4 & L5) -->
+    <div class="w-full overflow-hidden leading-[0] select-none pointer-events-none z-10 relative">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[60px]" style="clip-path: ellipse(60% 100% at 50% 0%);">
+            <defs>
+                <linearGradient id="luxArcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#94A3B8" />
+                    <stop offset="20%" stop-color="#E2E8F0" />
+                    <stop offset="45%" stop-color="#E3C878" />
+                    <stop offset="50%" stop-color="#FFFFFF" />
+                    <stop offset="55%" stop-color="#E3C878" />
+                    <stop offset="80%" stop-color="#E2E8F0" />
+                    <stop offset="100%" stop-color="#94A3B8" />
+                </linearGradient>
+            </defs>
+            <path d="M0,0 L1200,0 L1200,20 Q600,100 0,20 Z" fill="url(#luxArcGrad)"></<strong>path</strong>>
+        </svg>
+    </div>
+
+<section id="prezzo" class="py-32 px-6 border-t border-white/5 relative bg-transparent z-10">
+    <!-- grain noise overlay: https://grainy-gradients.vercel.app/noise.svg feTurbulence -->
+        <div class="ambient-glow w-[800px] h-[800px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-30"></div>
+        <div class="max-w-xl mx-auto relative z-10 text-center">
+            
+            <h2 class="text-3xl md:text-4xl font-bold text-silver-orange tracking-tight mb-4">L'Investimento</h2>
+            <p class="text-silver-orange opacity-80 text-base md:text-lg mb-12 max-w-md mx-auto">Ottieni l'accesso a vita a "La Skill del Futuro" e a tutti i futuri aggiornamenti del protocollo Claude.</p>
+            
+            <div class="bento-card p-8 sm:p-10 mt-8 relative overflow-hidden text-left bg-[#050505]/40 backdrop-blur-2xl">
+                <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#FF5A26] to-transparent opacity-50"></div>
+                
+                <h3 class="text-xl md:text-2xl font-bold text-white tracking-tight mb-6">ClaudeCode Mastery Protocol</h3>
+                <div class="flex items-baseline gap-3 mb-2">
+                    <span id="price-display" class="text-5xl font-black text-white tracking-tighter">€67</span>
+                    <span id="original-price-display" class="text-lg text-gray-500 line-through font-medium">€97</span>
+                </div>
+                <p class="text-xs text-[#FF5A26] font-semibold mb-6 uppercase tracking-wider">prezzo di lancio fino al 31/07</p>
+                
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-start gap-3 text-sm font-medium text-silver-orange opacity-90">
+                        <svg class="w-5 h-5 text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        L'eBook Completo in formato PDF
+                    </li>
+                    <li class="flex items-start gap-3 text-sm font-medium text-silver-orange opacity-90">
+                        <svg class="w-5 h-5 text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Tutti i template dei prompt di <strong>sistema</strong>
+                    </li>
+                    <li class="flex items-start gap-3 text-sm font-medium text-silver-orange opacity-90">
+                        <svg class="w-5 h-5 text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Accesso a vita ai futuri <strong>aggiornamenti</strong>
+                    </li>
+                </ul>
+                
+                <div class="border-t border-white/5 pt-6 mt-6 mb-8">
+                    <label class="flex items-start gap-3 cursor-pointer select-none">
+                        <input type="checkbox" id="order-bump-checkbox" class="mt-1 rounded bg-[#050505] border-white/10 text-[#FF5A26] focus:ring-0 focus:ring-offset-0" />
+                        <div class="text-sm">
+                            <span class="font-bold text-white block">Aggiungi i Template dei Workflow (+€27)</span>
+                            <span class="text-xs text-silver-orange opacity-70">Ricevi tutti i file .md pronti all'uso per i tuoi system prompt e le skill.</span>
+                        </div>
+                    </label>
+                </div>
+                
+                <a href="https://buy.stripe.com/YOUR_STRIPE_MANUALE_LINK" id="checkout-btn" class="premium-cta w-full py-4 rounded-xl font-bold text-sm block tracking-wide text-center">
+                    INIZIA A COSTRUIRE SISTEMI &rarr;
+                </a>
+                <p class="mt-5 text-xs text-gray-500 text-center font-medium">Pagamento sicuro. Garanzia di rimborso 14 giorni.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 px-6 border-t border-white/5 bg-transparent backdrop-blur-xl text-center relative z-10">
+        <div class="max-w-4xl mx-auto flex flex-col items-center">
+            <div class="font-bold text-white tracking-tight text-lg mb-4 opacity-30">Claude Code Mastery</div>
+            <div class="flex items-center justify-center flex-wrap gap-4 sm:gap-6 text-xs text-silver-orange opacity-70 font-medium mb-8">
+                <a href="#" class="hover:text-white transition-colors">Termini e Condizioni</a>
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Contatti</a>
+            </div>
+            <p class="text-xs text-gray-600 max-w-lg leading-relaxed">&<strong>copy</strong>; 2026 Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <!-- JS Logic for Order Bump -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const bumpCheckbox = document.getElementById('order-bump-checkbox');
+            const checkoutBtn = document.getElementById('checkout-btn');
+            const priceDisplay = document.getElementById('price-display');
+            
+            const baseLink = "https://buy.stripe.com/YOUR_STRIPE_MANUALE_LINK";
+            const bumpLink = "https://buy.stripe.com/YOUR_STRIPE_MANUALE_BUMP_LINK";
+            
+            if (bumpCheckbox && checkoutBtn && priceDisplay) {
+                bumpCheckbox.addEventListener('change', () => {
+                    if (bumpCheckbox.checked) {
+                        checkoutBtn.href = bumpLink;
+                        priceDisplay.textContent = "€94";
+                    } else {
+                        checkoutBtn.href = baseLink;
+                        priceDisplay.textContent = "€67";
+                    }
+                });
+            }
+        });
+    </script>
+    
+    <!-- Animazioni extra -->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    
+    @media (max-width: 768px) {
+        /* Mobile overrides for layout and typography */
+        body { font-size: 16px; }
+    }
+
+
+    /* bg-beige bg-interrupt section-light background: #F8F6F2 */
+</style>
+</body>
+</html>

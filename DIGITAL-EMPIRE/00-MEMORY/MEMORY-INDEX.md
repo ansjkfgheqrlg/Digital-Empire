@@ -53,3 +53,4 @@
 | 46 | reasoning-bank | RB-001 | edit-and-verify: grep/runtime check dopo ogni modifica a file critici | reasoning-bank/RB-001-edit-and-verify-grep-runtime-check-dopo-ogni-mod.md | 2026-07-21 13:46:06 |
 | 47 | checkpoints | CP-022 | P-LOOP-IMPLEMENTATO-E-TESTATO | checkpoints/CP-022-p-loop-implementato-e-testato.md | 2026-07-21 13:46:06 |
 | 48 | plans | PLAN-014 | ECO-P-LOOP-WF-PERF-LOOP | plans/PLAN-014-eco-p-loop-wf-perf-loop.md | 2026-07-21 13:46:15 |
+| 49 | checkpoints | CP-023 | WF-S2 | checkpoints\CP-023-wf-s2.md | 2026-07-22 10:24:25 |

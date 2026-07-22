@@ -21,8 +21,8 @@
 ### 🚦 Gates
 | Gate | Deadline | Stato |
 |---|---|---|
-| Gate-DEC (DEC-001 attiva) | 21/07 h20:00 | 🟡 veto in corso |
-| Gate-FUNNEL (test €1) | 22/07 h20:00 | ⬜ |
+| Gate-DEC (DEC-001 attiva) | 21/07 h20:00 | 🟢 attiva |
+| Gate-FUNNEL (test €1) | 22/07 h20:00 | 🟢 live (test €1 pass) |
 | Gate-CONTATTI (7/7) | 23/07 h12:00 | ⬜ |
 | Gate-S5 (Fliki test) | 23/07 h18:00 | ⬜ |
 | Gate-S4 (E2E auto) | 24/07 h20:00 | ⬜ |

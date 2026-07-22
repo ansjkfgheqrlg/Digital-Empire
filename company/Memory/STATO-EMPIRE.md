@@ -1,4 +1,13 @@
-# STATO EMPIRE -- aggiornato 2026-07-22 (Claude: integrazione deliverable LMArena)
+# STATO EMPIRE -- aggiornato 2026-07-22 (Claude: implementazione Funnel S2 Live)
+
+## 🎯 2026-07-22 — FUNNEL S2 LIVE COMPLETATO (Gael/Claude, CP-023)
+Completata l'implementazione tecnica del Funnel S2 per il **Manuale Claude Code per il Business** (€67 lancio / €97 listino):
+1. **Landing Page Premium** creata in `Crea siti/Siti CCM/manuale.html` (stile premium, 9/9 check passati di `quality_check.py`, grain overlay, silver mixing, lowercase, order bump per i template a +€27 gestito dinamicamente via JS).
+2. **Checkout & Gateway**: integrati i link di pagamento Stripe con fallbacks attivi (checkout ladder).
+3. **Download & Opt-in**: allineate le pagine di download (Parte 1 gratuita con email-gate e PDF completo post-pagamento).
+4. **Sequenza Email**: caricate e scritte le 3 email di nurturing (E1 Consegna, E2 Caso d'uso vocale-to-skill, E3 Scarsità/Scadenza + FAQ).
+Aggiornati i log di sistema e i gate in `DASHBOARD-E-RETRO.md`.
+**RIPRESA DA:** Inizio del funnel S3 (Crea siti / Instagram bio e link).
 
 ## 🎯 2026-07-22 — DELIVERABLE LMARENA INTEGRATI (Claude, CP-20260722-002)
 Importati con successo i tre pacchetti scaricati da Arena per **Preventa** (ex PreventivoForge):
