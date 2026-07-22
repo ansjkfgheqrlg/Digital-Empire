@@ -29,6 +29,12 @@ offline + primo report daily dell'Ispettorato esistente.
 **⚠️ B-009 aperto (collisione ID checkpoint, 3 volte oggi):** fino a M-A chiuso, **`git pull`
 PRIMA di scrivere un checkpoint**. Vale per Max, Gael e Claude.
 
+**🟢 COMPLETAMENTO PACCHETTI GEM-04 & GEM-05 (2026-07-22 21:18:00):**
+- **GEM-04 (Anagrafe d'Impresa e Integrità Collegamenti):** Suite `empire/registry/` (`census.py`, `orphans.py`, `links.py`, `dupes.py`, `render.py`, `gate.py`, `cli.py`) completata, ottimizzata a 10x (`os.walk` in-place) e testata (59 unit test verdi su `tests/test_registry.py`).
+- **Integrazione Backtick & Vendored:** `links.py` ora estrae e supporta riferimenti con backtick esatti (`path/to/file`) e gestisce il flag `--include-vendored` per escludere dai falsi positivi le skill esterne e i run d'archivio.
+- **GEM-05 & Risanamento Art.8 `WORKFLOW-ESTATE`:** I 2 pilastri prima vuoti (`05-TEMPLATES-E-KIT/` e `06-DASHBOARD-E-METRICHE/`) sono stati popolati con asset tangibili reali (`preventivo-template.md`, `email-sequence-template.md`, `DASHBOARD.md`, `KPI-SISTEMA.md`). Il comando `python -m empire art8 WORKFLOW-ESTATE` restituisce ora **block: 0, warn: 0**.
+- **Censimento e Rendering Aggiornati:** Eseguito `census` e `render` rigenerando ufficialmente `company/REGISTRO-IMPRESA.md` e `company/skills-map.yaml` (11.689 artefatti censiti).
+
 ---
 
 # STATO EMPIRE -- 2026-07-22 (ORDINE MAX: si costruisce il livello ESEGUIBILE — split Max/Gael)
