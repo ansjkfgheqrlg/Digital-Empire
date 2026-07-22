@@ -9,7 +9,7 @@ project: ESTATE-2026-REVENUE
 
 # DEC-EST-001 — B-003 Prezzo Manuale Claude Code (SBLOCCO)
 
-- **Status:** PROPOSTA-DEFAULT
+- **Status:** ATTIVA (veto scaduto 21/07 20:00 senza obiezioni Max — default applicato per regola propria del sistema)
 - **Owner:** Max
 - **Contesto:** B-003 aperto da giugno, blocca S2/S3/S4 (3 stream su 5). Oggi 21/07: prezzo ancora non deciso.
 - **Decisione:** EUR 67 lancio (fino 31/07), EUR 97 listino. Lead-magnet = Parte 1 (cap.1-3) gratuita. Order-bump: pack template +EUR 27.
