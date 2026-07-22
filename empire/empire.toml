@@ -1,0 +1,83 @@
+# EMPIRE — mappa unica alias logico → path reale
+# UNICO punto di verità per i path del monorepo. Nessun path assoluto altrove.
+# Owner: Max · Controllore: Claude · Origine: FORGE · Governo: MANDATO Art.8 + ADR-008
+# FILE CONGELATO: modifiche solo con nota di coordinamento in STATO-EMPIRE.md
+
+[meta]
+version = "0.1.0"
+root_marker = "company/Mandato/MANDATO-EMPIRE.md"
+
+# ---------------------------------------------------------------- azienda
+[alias]
+company        = "company"
+mandato        = "company/Mandato/MANDATO-EMPIRE.md"
+registro       = "company/REGISTRO-IMPRESA.md"
+skills_map     = "company/skills-map.yaml"
+memory         = "company/Memory"
+memory_index   = "company/Memory/INDEX.md"
+memory_stato   = "company/Memory/STATO-EMPIRE.md"
+memory_cp      = "company/Memory/checkpoints"
+memory_adr     = "company/Memory/decisions"
+memory_backlog = "company/Memory/BACKLOG.md"
+memory_tasks   = "company/Memory/tasks"
+ispettorato    = "company/Ispettorato"
+isp_telemetry  = "company/Ispettorato/telemetry"
+isp_report     = "company/Ispettorato/report"
+isp_state      = "company/Ispettorato/state"
+ecosistemi     = "company/Ecosistemi"
+board          = "company/Board-CSuite"
+guilds         = "company/Guilds"
+sentinels      = "company/Sentinels"
+genesi         = "company/Genesi-Core"
+backbone       = "company/Backbone"
+maximilian     = "company/MAXIMILIAN"
+briefs         = "company/Antigravity-Briefs"
+
+# ---------------------------------------------------------------- workflow estate
+estate_src     = "DIGITAL-EMPIRE"
+estate_wf      = "WORKFLOW-ESTATE"
+estate_memory  = "DIGITAL-EMPIRE/00-MEMORY"
+estate_plan    = "DIGITAL-EMPIRE/01-PLANNING"
+estate_arch    = "DIGITAL-EMPIRE/02-ARCHITECTURE"
+estate_flows   = "DIGITAL-EMPIRE/03-WORKFLOWS"
+estate_agents  = "DIGITAL-EMPIRE/04-AGENTS"
+estate_skills  = "DIGITAL-EMPIRE/05-SKILLS"
+estate_nervous = "DIGITAL-EMPIRE/06-NERVOUS-SYSTEM"
+estate_control = "DIGITAL-EMPIRE/07-CONTROL"
+wf_flussi      = "WORKFLOW-ESTATE/01-FLUSSI-E-PIANI"
+wf_scripts     = "WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS"
+wf_agenti      = "WORKFLOW-ESTATE/03-AGENTI-E-RUOLI"
+wf_skills      = "WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE"
+wf_templates   = "WORKFLOW-ESTATE/05-TEMPLATES-E-KIT"
+wf_dashboard   = "WORKFLOW-ESTATE/06-DASHBOARD-E-METRICHE"
+
+# ---------------------------------------------------------------- runtime vivi
+empiredesk     = "EmpireDesk"
+outreach       = "Outreach"
+piano_maestro  = "PIANO-MAESTRO"
+wiki           = "second-brain-vault/wiki"
+skills_project = ".claude/skills"
+
+# Riferimenti "nudi" scritti dentro i .md di WORKFLOW-ESTATE che puntano alla
+# struttura di DIGITAL-EMPIRE (26 link rotti, CP-20260722-005).
+# resolve_legacy() li ripara SENZA riscrivere i .md (ADR-003).
+[legacy]
+"00-MEMORY"       = "DIGITAL-EMPIRE/00-MEMORY"
+"01-PLANNING"     = "DIGITAL-EMPIRE/01-PLANNING"
+"02-ARCHITECTURE" = "DIGITAL-EMPIRE/02-ARCHITECTURE"
+"03-WORKFLOWS"    = "DIGITAL-EMPIRE/03-WORKFLOWS"
+"04-AGENTS"       = "DIGITAL-EMPIRE/04-AGENTS"
+"05-SKILLS"       = "DIGITAL-EMPIRE/05-SKILLS"
+"06-NERVOUS-SYSTEM" = "DIGITAL-EMPIRE/06-NERVOUS-SYSTEM"
+"07-CONTROL"      = "DIGITAL-EMPIRE/07-CONTROL"
+
+# Eccezioni: file spostati altrove durante la riorganizzazione Art.8
+[legacy_files]
+"00-MEMORY/memory_manager.py" = "WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/memory_manager.py"
+
+[scan]
+exclude_dirs = [".git", "node_modules", ".next", "__pycache__", ".cache", ".data",
+                "venv", ".venv", "dist", "build", ".obsidian", ".pytest_cache",
+                "packaged-final", "packaged-final-v1.1", "packaged-final-v1.2",
+                "phase7-run", "phase9-regression"]
+exclude_suffix = [".pyc", ".pack", ".idx", ".rev", ".zip", ".exe", ".dll"]

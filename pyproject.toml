@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "empire"
+version = "0.1.0"
+description = "Core runtime di Digital Empire — rende l'azienda descritta in Markdown interrogabile da codice"
+requires-python = ">=3.11"
+dependencies = []          # standard library soltanto (Mandato: zero dipendenze senza motivo)
+
+[project.scripts]
+empire = "empire.cli:main"
+
+[tool.setuptools]
+packages = ["empire"]
+
+[tool.setuptools.package-data]
+empire = ["empire.toml"]

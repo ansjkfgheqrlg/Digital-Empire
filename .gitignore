@@ -113,3 +113,9 @@ Thumbs.db
 desktop.ini
 .DS_Store
 ~$*
+
+# EMPIRE core runtime
+empire/.data/
+empire/.cache/
+**/__pycache__/
+*.egg-info/

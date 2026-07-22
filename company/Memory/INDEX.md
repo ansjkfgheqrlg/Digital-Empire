@@ -24,6 +24,121 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260722-006](checkpoints/CP-20260722-006.md) — **`empire/` CORE RUNTIME costruito e testato** (23 test verdi): il livello eseguibile che mancava. `paths` (zero path assoluti + `resolve_legacy` ripara i link senza toccare i .md) · `config` · `schema` · `conform` (Art.8 + links) · `cli` con loop di plugin. `conform WORKFLOW-ESTATE` → 6 block / 7 riparabili. **Split emesso: Gael G-A/G-B/G-C, Claude M-A/M-B/M-C, Gemini GEM-04/05** — Claude
+- [CP-20260722-005](checkpoints/CP-20260722-005.md) — **Audit spietato WORKFLOW-ESTATE + stato reale azienda**: `company/` = 1267 .md e **0 .py**, Ispettorato mai girato (telemetry/report/state vuote), 26 path rotti, 2 pilastri Art.8 vuoti, `memory_manager.py` crasha. **Azienda reale ~30-35%**. Prodotti 7 brief `company/Antigravity-Briefs/` (GEM-00…06) per Gemini/Antigravity — Claude
+- [CP-20260722-002](checkpoints/CP-20260722-002.md) — **Integrazione Deliverable LMArena (Preventa)**: Copiate le cartelle preventa-maps-scraper, preventa-outreach-pack e preventa-launch-kit; registrati gli asset in `skills-map.yaml` e `REGISTRO-IMPRESA.md` (ADR-008). Rimossa cartella temporanea ed eseguito test sintassi. — Claude/Max
+- [CP-20260722-001](checkpoints/CP-20260722-001.md) — **Analisi YouTube reale + piano chirurgico estate + Arena build-list**: Dati reali estratti via yt-dlp, compilazione build list con 6 prompt Arena pronti, DEC-EST-001 attiva (prezzo Manuale) e B-003 sbloccato. — Claude/Max
+- [CP-20260721-006](checkpoints/CP-20260721-006.md) — **EmpireDesk: verifica di precisione post-richiamo**: confermato di persona (non solo fidandosi del testo) selftest 16/16 reale + test funzionale a fondo del nuovo modulo `youtube.py` (info/seo_score/cashcow, dati reali + JSON-stringa + input malformato) — **zero bug trovati**, tutto in ordine — Gael
+- [CP-20260721-004](checkpoints/CP-20260721-004.md) — **Workflow Estate SOSTITUITO**: importato `DIGITAL-EMPIRE/` (6702 file, sistema Chief-Forge da `VIP/Estate workflow.zip`), eliminato il vecchio (92 file: dossier 17-old/18, planning-workshop, workflows/, ESTATE-WORKSHOP*, youtube-department orfano). Secrets/bloat verificati puliti. ADR-008 intestato — Max
+- [CP-20260721-003](checkpoints/CP-20260721-003.md) — Audit stato reale Estate Workshop Workflow System (poi sostituito, vedi CP-004): planning+9 agenti+6 workflow CONFERMATI su disco; chiarito che il commit "Fase 1 completata" (Workshop Conductor/Department Charter/ecc) era mal-etichettato (diff = solo log); B-003 prezzo Manuale ancora aperto — Claude/Max
+- [CP-20260721-002](checkpoints/CP-20260721-002.md) — **Skill youtube-automation-factory**: metodo YT Automation (Video IQ+SEO+Fliki) → fabbrica multi-agente, 29 file (.claude/skills/), 11 agenti + 5 WF + 2 tool Python testati (seo_score, cashcow_check), metodologia master-build-architecture+content-forge2.0 — Max
+- [CP-20260721-001](checkpoints/CP-20260721-001.md) — **EmpireDesk B2/B3/B4 verificati a runtime**: scheduler+notify+taskboard, selftest 15/15 (dev E .exe frozen, senza ricostruire — conferma design seam B1). 2 bug reali trovati TESTANDO le routes (non dal selftest): validazione tile saltata con host non pronto, id collidenti nello stesso secondo. Entrambi corretti e ri-verificati — Gael
+- [CP-20260720-006](checkpoints/CP-20260720-006.md) — **EmpireDesk G2: toolchain installata via winget (Python 3.12 + Node 24, gli stub WindowsApps erano 0 byte), Aureus buildata, exe costruita. BUG REALE trovato ed eliminato**: con PyInstaller 6 i `datas` vanno in `_internal/` (`_MEIPASS`), non accanto all'exe → `platform` FAIL e moduli caricati dal posto sbagliato (`metrics 1/6` invece di 6/6) nel frozen, invisibile in dev. Selftest 13/13 PASS ora sia dev sia .exe — Gael
+- [CP-20260720-005](checkpoints/CP-20260720-005.md) — **ISPETTORATO GENERALE M3 completo**: 11 agenti + 5 workflow CF-grade (isp-conductor…isp-revision-analyst, WF-RUN-AUDIT…WF-REVISION-STUDY), gate verde + 5-bis APPROVA, ADR-008 intestato — Max
+- [CP-20260720-003](checkpoints/CP-20260720-003.md) — EmpireDesk G1: verifica statica del commit 85548a30 (Aureus come root), nessun difetto trovato, ancora da testare a runtime — Gael
+- [CP-20260720-002](checkpoints/CP-20260720-002.md) — Empire Studio: video 10/29 andrei-pascu-001 completato (Ahp_6rHSOsU, Google Docs copywriter). Stage 3-9 chiusi (Stage 1+2 già fatti da Max l'11/07): 16 frame letti, VTT integrale, 20 KA, 2 pagine wiki, Memory Empire C-H, tracker aggiornato. RIPRESA DA video 11/29 (nRm7JLsP1bc) — Gael
+- [CP-20260720-001](checkpoints/CP-20260720-001.md) — EMPIRE DESK PIVOT AREUS: U0 completato, piattaforma Aureus Agency OS importata come base app — Max
+- [CP-20260719-008](checkpoints/CP-20260719-008.md) — Risolta collisione reale Gael/Max su `EmpireDesk/ui/index.html` (2 redesign paralleli della stessa feature pannelli-moduli, 8 blocchi in conflitto): tenuto il design UI di Max (nav-tab), `app.py` riallineato al SUO contratto (`/api/modules`, non `/api/panels`). Preso atto: Gael non tocca più `ui/index.html` (ownership passata a Max) — Gael
+- [CP-20260719-007](checkpoints/CP-20260719-007.md) — ⚠️ **Empire Desk B1: seam moduli costruito** (loader `modules/*.py` isolato, validazione schema tile anti-crash, dispatcher routes condiviso HTTP/pywebview, switcher pannelli UI + CSS per i 3 moduli di Max, fix grafico proattivo header flex). 2 bug trovati e corretti in autorevisione (EDE-6/7), 0 lanciati. NON eseguito: ambiente sessione senza Python/Node — Gael
+- [CP-20260719-006](checkpoints/CP-20260719-006.md) — Risolto conflitto di sync GitHub (SYNC-CONFLICT.txt) + collisione numerazione checkpoint (002/003 rinumerati 004/005); merge REGISTRO-ERRORI EmpireDesk senza perdita dati; push riuscito, main allineato — Max
+- [CP-20260719-005](checkpoints/CP-20260719-005.md) — Skill ufficiale `master-app-builder` installata in `.claude/skills/` (kernel v2.1 + Fase 0.0 pattern-mining su PreventivoForge/EmpireDesk + tie-in reparti 06a-PLATFORM L2.2/06b-FORGE L2.1; verificata presente nell'elenco skill) — Max
+- [CP-20260719-004](checkpoints/CP-20260719-004.md) — ⚠️ **Empire Desk v0.1: P1-P3 costruiti** (shell 3-motori Chrome-app/pywebview/Tkinter, 8 tile, subprocess reale con log live; 3 bug reali trovati+corretti in revisione statica: sys.executable da frozen, WinError193 su .bat, pause-hang senza stdin=DEVNULL; trovato ma NON toccato EDE-2 path hardcoded nei bat Outreach — ADR-003). P4 selftest/build bloccato: ambiente sessione senza Python/Node — Gael
+- [CP-20260719-003](checkpoints/CP-20260719-003.md) — **EMPIRE DESK: divisione lavoro metà/metà Max↔Gael** + planning aggiornato (dossier 17 §5, Half A dati/business Max · Half B core/runtime Gael) — Max
+- [CP-20260719-002](checkpoints/CP-20260719-002.md) — **ADR-008 catena intestazione e controllo**: ogni artefatto ha proprietario+controllore+origine+governo; `REGISTRO-IMPRESA.md` + `skills-map.yaml` v1.1 — Max
+- [CP-20260719-001](checkpoints/CP-20260719-001.md) — **V2-2 Lotto 3 COMPLETATO**: 5 dossier V2 (05-MULTI-BUSINESS-V2 + split 06-CORE in 06a-Platform/06b-Forge/06c-Intelligence/06d-Operations), ~229 agenti progettati, gate+review pass, V2-INDEX.md aggiornato — Gael
+- [CP-20260711-002](checkpoints/CP-20260711-002.md) — 🏁 **01-AGENCY CHIUSO 10/10** (182 file, 74 agenti, 28 WF; batch-3 A7/A8/A9/A10; il gate ha trovato+chiuso 2 difetti veri: namespace divergente → `NAMESPACE.md` canonico `agency/a<N>`, 6 README v1 stantii → riscritti; RETRO: write-early + idempotenza sospesa sui residui v1) — Max
+- [CP-20260703-001](checkpoints/CP-20260703-001.md) — **Novacar: GUI App PREMIUM (pywebview HTML/CSS)** (Gael, priorità #1 Max): `ui/index.html` luxury slate+argento (font premium, gradienti/ombre/hover, log colorato), `app.py` pywebview + bridge + fallback Tkinter, titolo "Novacar srl", +glossario Sitzeinstellung. GUI premium confermata WebView2 (dev+.exe). PDF NON toccato (ownership Max). — Gael
+- [CP-20260702-003](checkpoints/CP-20260702-003.md) — **Novacar: PDF modello Novacar + Gate IMG/R + App .exe COSTRUITA** (Gael): template rifatto sul modello (R-01…R-14), `gate_img`+`gate_regole`+`regole-check.json`, 2 agenti QA (qa-immagini, qa-regole-checker), fix logo su bianco. Selftest 6/6 gate verdi + 14/14 regole OK; `PreventivoForge.exe` costruito e validato (dealer Novacar, PDF via cdp). — Gael
+- [CP-20260702-002](checkpoints/CP-20260702-002.md) — **Prof Autocad: App Desktop (GUI) + motore PDF .exe-ready** (Gael): `app.py` Tkinter argento wrappa run.py, `avvia-app.bat`, `build_exe.bat`+spec PyInstaller, `render_pdf` motore cdp/Chrome (no Playwright, flag remote-allow-origins). Selftest 4 gate verdi, PDF cdp-chrome. — Gael
+- [CP-20260701-003](checkpoints/CP-20260701-003.md) — **Prof Autocad: scraping LIVE mobile.de RISOLTO (Chrome+CDP bypassa Akamai) + parser su `__INITIAL_STATE__` + prova reale GLA** (EXIT 0, 4 gate verdi, 47.490→51.915 €, PDF 810KB foto vere) — Max
+- [CP-20260701-002](checkpoints/CP-20260701-002.md) — **Prof Autocad: PreventivoForge gate wiring + test END-TO-END** (Max): gate B/C/D in run.py + fix UTF-8; run --manual GLA → PDF 60KB, 4 gate verdi, 33.900→37.917 €. Live scrape bloccato solo da qui (anti-bot). — Max
+- [CP-20260701-001](checkpoints/CP-20260701-001.md) — **CLIENTE Prof Autocad · PreventivoForge Half B COMPLETA** (S3 translate+copy, S5 PDF Playwright, QA Gate A/B/C/D, R3/R5/R6, 6 agenti CF-grade/42 file; test run.py --manual BMW 320d → PDF 63KB, 4 gate ALL GREEN; ADR-003 rispettato, €0 API) — Gael
+- [CP-20260630-003](checkpoints/CP-20260630-003.md) — **Prof Autocad: PreventivoForge Half A COMPLETA** (fondamenta: 4 agenti CF-grade 7-file + R1/R2/R4 + orchestration + CLAUDE.md cliente) — Max
+- [CP-20260630-002](checkpoints/CP-20260630-002.md) — **CLIENTE Prof Autocad: PreventivoForge Half A FATTA** (mobile.de DE → preventivo IT PDF, prezzo ×1.03+1500+1500, multi-tenant; scraper/parser/pricer/regia/skill `/preventivo-auto`, testato; Half B → Gael handoff) — Max
+- [CP-20260623-001](checkpoints/CP-20260623-001.md) — STEP 5: **01-AGENCY batch-2** (A4-Delivery+A5-Copy+A6-Marketing CF-grade: 51 file, 21 agenti, 9 WF; A5 riusa Gate Bibbia A2 pattern-6; gate verde, 5-bis APPROVA → 01-AGENCY 6/10) — Max
+- [CP-20260622-002](checkpoints/CP-20260622-002.md) — STEP 5: **01-AGENCY batch-1** (A1+A2+A3 CF-grade: 58 file, 27 agenti, 10 WF; A2 wrappa runtime outreach LIVE ADR-003; gate verde, 5-bis APPROVA) — Max
+- [CP-20260622-001](checkpoints/CP-20260622-001.md) — **02-INFO-BUSINESS CHIUSO** (5/5 reparti V2: 94 file, 42 agenti, 12 WF; +34 file = 6 cartelle std/reparto + 4 WF; gate verde, 5-bis APPROVA) — Max
+- [CP-20260619-016](checkpoints/CP-20260619-016.md) — **03-CONTENT-FACTORY COMPLETO** (9/9 reparti, 158 file, 71 agenti, 28 WF): CF-R8 Apprendimento (ULTIMO) + chiusura ecosistema, 5-bis APPROVA — Gael
+- [CP-20260619-015](checkpoints/CP-20260619-015.md) — STEP 5: 03-CONTENT-FACTORY CF-R7 Pubblicazione & Distribuzione costruita CF-grade (18 file, 8 agenti, 4 WF, wrap orchestratori publish, review umana) — Gael
+- [CP-20260619-014](checkpoints/CP-20260619-014.md) — STEP 5: 03-CONTENT-FACTORY CF-R6 QA & Gate costruita CF-grade (17 file, 8 agenti, 3 WF, indipendente dalla produzione) — Gael
+- [CP-20260619-013](checkpoints/CP-20260619-013.md) — STEP 5: 03-CONTENT-FACTORY CF-R5 Visual & Design / Caroselli costruita CF-grade (20 file, 10 agenti, 4 WF, wrap carousel-factory) — Gael
+- [CP-20260619-012](checkpoints/CP-20260619-012.md) — STEP 5: 03-CONTENT-FACTORY CF-R4 Produzione Testuale costruita CF-grade (18 file, 8 agenti, 4 WF, confine CF/MARKETING) — Gael
+- [CP-20260619-011](checkpoints/CP-20260619-011.md) — STEP 5: 03-CONTENT-FACTORY CF-R3 Produzione Video costruita CF-grade (20 file, 10 agenti, 4 WF, wrap hf/heygen-studio, dry-run Art.4.3) — Gael
+- [CP-20260619-010](checkpoints/CP-20260619-010.md) — STEP 5: 03-CONTENT-FACTORY CF-R2 Brand-Kit Registry costruita CF-grade (14 file, 6 agenti, 2 WF, multi-tenant) — Gael
+- [CP-20260619-009](checkpoints/CP-20260619-009.md) — STEP 5: 03-CONTENT-FACTORY CF-R1 Strategia & Brief costruita CF-grade (17 file, 8 agenti, 3 WF, 0 stub) — Gael
+- [CP-20260619-008](checkpoints/CP-20260619-008.md) — STEP 5: 03-CONTENT-FACTORY CF-R0 Director costruita CF-grade (15 file, 7 agenti, 2 WF, contratto ordine multi-tenant) — Gael
+- [CP-20260618-007](checkpoints/CP-20260618-007.md) — **04-MARKETING COMPLETO** (6/6 reparti, 114 file, 44 agenti): L2.1 Copywriting wrap motore attivo + chiusura ecosistema, 5-bis APPROVA — Gael
+- [CP-20260618-006](checkpoints/CP-20260618-006.md) — STEP 5 batch 3: L2.4 Analytics costruita CF-grade (18 file, 7 agenti, 3 WF, loop §4b) — Gael
+- [CP-20260618-005](checkpoints/CP-20260618-005.md) — STEP 5 batch 2: L2.3 Email & Lifecycle costruita CF-grade (19 file, 7 agenti, 4 WF, 0 stub, PII Art.7.2) — Gael
+- [CP-20260618-004](checkpoints/CP-20260618-004.md) — STEP 5 batch 2: L2.2 Advertising costruita CF-grade (19 file, 8 agenti, 3 WF, 0 stub) — Gael
+- [CP-20260618-003](checkpoints/CP-20260618-003.md) — STEP 5 batch 1: L2.5 Brand & Creative Strategy costruita CF-grade (17 file, 6 agenti, 3 WF, 0 stub, Mandato Art.2) — Gael
+- [CP-20260618-002](checkpoints/CP-20260618-002.md) — STEP 5 batch 1: L2.6 Conversion Architecture costruita CF-grade (17 file, 6 agenti, 3 WF, 0 stub) — Gael
+- [CP-20260618-001](checkpoints/CP-20260618-001.md) — STEP 4-heavy CHIUSO: CFO completato → Board C-Suite V2 completa 7/7 (~70 agenti, 5-bis APPROVA) — Max
+- [CP-20260617-003](checkpoints/CP-20260617-003.md) — STEP 4-heavy batch 3: figure Board CMO + CRO costruite (42 file, 20 agenti, 5-bis Maximilian APPROVA) — Gael
+- [CP-20260617-002](checkpoints/CP-20260617-002.md) — STEP 4-heavy batch 2: figure Board CTO + COO costruite (42 file, 20 agenti, 5-bis Maximilian APPROVA) — Gael
+- [CP-20260617-001](checkpoints/CP-20260617-001.md) — STEP 4-heavy batch 1: figure Board CEO + Chief-Forge costruite (42 file, 20 agenti, struct-gate + 5-bis Maximilian APPROVA) — Gael
+- [CP-20260616-010](checkpoints/CP-20260616-010.md) — STEP 4(c): blueprint Board via ARCHITETTURA (8 file, 70 agenti progettati, primo uso reale WF-ARCH-DESIGN) — Max
+- [CP-20260616-009](checkpoints/CP-20260616-009.md) — STEP 3: organo MAXIMILIAN (15 file, review-gate 5-bis + maximilian-standard-gate eseguibile, gate+review PASS) — Max
+- [CP-20260616-008](checkpoints/CP-20260616-008.md) — STEP 2 Genesi Core: FORGE completa (34 file, Mappa-Motori 15 motori reali, gate+review PASS) — Max
+- [CP-20260616-007](checkpoints/CP-20260616-007.md) — STEP 1 Genesi Core: organo ARCHITETTURA costruito (dossier 14 + 30 file, gate+review PASS) — Max
+- [CP-20260616-006](checkpoints/CP-20260616-006.md) — V2-2 lotto 2: dossier v2 mega-reparti CONTENT-FACTORY (5 livelli/76 agenti) + INFO-BUSINESS (48 agenti) — Gael
+- [CP-20260616-005](checkpoints/CP-20260616-005.md) — V2-2 lotto 1: dossier v2 AGENCY (10 reparti/75 agenti) + MARKETING (6 reparti/49 agenti) — Gael
+- [CP-20260616-004](checkpoints/CP-20260616-004.md) — V2-2: dossier MANDATO-ecosistema (PIANO-MAESTRO/13) — blueprint governo per V2-5 — Gael
+- [CP-20260616-003](checkpoints/CP-20260616-003.md) — V2-2 AVVIATA: dossier MAXIMILIAN (PIANO-MAESTRO/12) — blueprint organo per V2-3 — Gael
+- [CP-20260616-002](checkpoints/CP-20260616-002.md) — F1-bis COMPLETATO: gate verde (0 vuote, 0 magri, 317 file) + review pass; prossima V2-2 — Gael
+- [CP-20260616-001](checkpoints/CP-20260616-001.md) — Fix collisione case-insensitive 06-PLATFORM/Reparti (5 doppioni MAIUSCOLO rimossi, contenuto arricchito preservato) — Gael
+- [CP-20260613-001](checkpoints/CP-20260613-001.md) — Fix critico Empire Studio: RULES.md + agenti verification aggiornati + run Andrei Pascu avviata
+- [CP-20260611-008](checkpoints/CP-20260611-008.md) — PIANO V2 Direttiva di Scala codificata (ADR-007) + corpus Maximilian + pivot roadmap V2
+- [CP-20260611-007](checkpoints/CP-20260611-007.md) — F4 GATE VERDE: ciclo dry-run end-to-end CY-20260611-001 (Gael) — gate PASS 113/113
+- [CP-20260611-006](checkpoints/CP-20260611-006.md) — F4 B2 wrap 4 WF outreach come L3 + agency-trace.ps1 (Gael) — gate PASS 107/107
+- [CP-20260611-005](checkpoints/CP-20260611-005.md) — Metodo 9 passi (ADR-006) + handover a Gael; F1-bis arricchimento a metà (session limit)
+- [CP-20260611-004](checkpoints/CP-20260611-004.md) — F4 AGENCY live B1 completato (Gael) — gate PASS 97/97
+- [CP-20260611-003](checkpoints/CP-20260611-003.md) — F3 Migrazione asset completato (Gael) — gate PASS 70/70
+- [CP-20260611-002](checkpoints/CP-20260611-002.md) — F2 Backbone operativo completato (Gael) — gate PASS 59/59
+- [CP-20260611-001](checkpoints/CP-20260611-001.md) — F1 Scaffolding EMPIRE OS completato (Gael) — gate PASS 92/92
+- [CP-20260610-001](checkpoints/CP-20260610-001.md) — Prodotto PIANO-MAESTRO completo (10 dossier, swarm 7 agenti + conductor)
+- [CP-20260610-002](checkpoints/CP-20260610-002.md) — GitHub monorepo + sync: LIVE (push 966 MiB + motore testato)
+- [CP-20260610-003](checkpoints/CP-20260610-003.md) — Skill `empire-context` creata (project-level, condivisa con Gael via repo)
+
+## Piani
+- [PIANI.md](plans/PIANI.md) — registro piani versionati (→ PIANO-MAESTRO/)
+
+## Sessioni
+- [session-20260610](sessions/session-20260610.md) — produzione Piano Maestro EMPIRE OS
+
+## Template (usare SEMPRE questi)
+- [CP-template](templates/CP-template.md) · [ADR-template](templates/ADR-template.md) · [session-template](templates/session-template.md)
+
+## Cartelle operative
+- `tasks/<ecosistema>/` — log task per ecosistema (01-agency … 10-memory)
+- `state/<progetto-id>/` — state.json + trace.jsonl per progetto/ordine in corso
+- `audit/` — audit trail modifiche e backup refs
+# 🧠 MEMORY — Indice Maestro (Ecosistema 10, EMPIRE OS)
+
+> **Regola memory-first (pattern #13):** questo file si carica all'INIZIO di ogni sessione
+> e prima di ogni task. Dopo ogni task: checkpoint in `checkpoints/`. Una riga per voce,
+> solo puntatori — il contenuto vive nei file.
+
+## Stato corrente
+- [STATO-EMPIRE.md](STATO-EMPIRE.md) — fase roadmap, lavori in corso, RIPRESA DA
+
+## Decisioni attive (ADR)
+- [ADR-001](decisions/ADR-001-empire-os-10-ecosistemi.md) — EMPIRE OS: holding di 10 ecosistemi su modello AION GROUP
+- [ADR-002](decisions/ADR-002-memory-first.md) — Pattern memory-first: interroga prima, checkpoint dopo, sempre
+- [ADR-003](decisions/ADR-003-migrazione-wrap-non-riscrittura.md) — Migrazione asset = wrap, mai riscrittura; sistemi attivi intoccabili finché sostituto non validato
+- [ADR-004](decisions/ADR-004-github-monorepo-sync.md) — Monorepo GitHub ansjkfgheqrlg/digital-empire + sync automatico bidirezionale Max↔Gael
+- [ADR-005](decisions/ADR-005-backlog-non-blocca.md) — Blocker minori → BACKLOG.md, mai fermare la costruzione; team-prezzi per le decisioni di prezzo
+- [ADR-006](decisions/ADR-006-ciclo-fase-9-passi.md) — Ciclo di Fase Empire a 9 passi (metodo ufficiale, swarm obbligatorio per Max e Gael) → `PIANO-MAESTRO/10-METODO-CICLO-FASE.md`
+- [ADR-007](decisions/ADR-007-piano-v2-scala.md) — **PIANO V2 Direttiva di Scala**: 1 workflow=CF Exponium, Board=workflow×10+ agenti, reparti=team+workflow CF-grade, Mandato-ecosistema, organo MAXIMILIAN → `PIANO-MAESTRO/11-PIANO-V2-DIRETTIVA-SCALA.md`
+- [ADR-008](decisions/ADR-008-catena-intestazione-controllo.md) — **Catena intestazione e controllo**: nessun artefatto orfano — ogni cosa ha proprietario+controllore+origine(FORGE)+governo(Mandato), anagrafe in `company/REGISTRO-IMPRESA.md` + `skills-map.yaml`, FORGE=ufficio anagrafe, 5-bis verifica intestazione
+
+## Corpus Maximilian
+- [direttiva-20260611-scala-v2](maximilian-corpus/direttiva-20260611-scala-v2.md) — prima direttiva integrale di Max (addestramento organo MAXIMILIAN; ogni futura direttiva si appende qui)
+
+## Backlog
+- [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
+
+## Checkpoint
 - [CP-20260722-003](checkpoints/CP-20260722-003.md) — **Gate-FUNNEL NON verde: 4 blocchi reali trovati** (checkout Stripe = placeholder mai sostituiti, audit pagine mai fatto, landing mai deployata, identità crea.illtuo_impero chiarita da Gael). Nessuna credenziale salvata in repo. Bio testo pronto, resto manuale — Gael
 - [CP-20260722-002](checkpoints/CP-20260722-002.md) — **Integrazione Deliverable LMArena (Preventa)**: Copiate le cartelle preventa-maps-scraper, preventa-outreach-pack e preventa-launch-kit; registrati gli asset in `skills-map.yaml` e `REGISTRO-IMPRESA.md` (ADR-008). Rimossa cartella temporanea ed eseguito test sintassi. — Claude/Max
 - [CP-20260722-001](checkpoints/CP-20260722-001.md) — **Analisi YouTube reale + piano chirurgico estate + Arena build-list**: Dati reali estratti via yt-dlp, compilazione build list con 6 prompt Arena pronti, DEC-EST-001 attiva (prezzo Manuale) e B-003 sbloccato. — Claude/Max

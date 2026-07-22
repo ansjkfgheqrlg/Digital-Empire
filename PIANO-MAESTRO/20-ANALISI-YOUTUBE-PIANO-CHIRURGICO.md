@@ -79,6 +79,18 @@ E il piano estate P7 lo aveva già azzeccato: DEC-EST-004 = nicchia YouTube "AI/
 2. **Comprare un canale monetizzato a 90€ = rischio alto.** Trasferimento proprietà → YouTube può
    ri-revisionare la monetizzazione; iscritti comprati ≠ watch-hours; spesso viola i ToS. Se insisti,
    PRIMA mandami il link dell'annuncio: verifico età canale, storico strike, demonetizzazioni.
+
+   🔴 **PROVA DECISIVA (verifica indipendente yt-dlp, 2026-07-22 — 2ª estrazione):**
+   I 90€ comprerebbero un canale da **1.000 iscritti**. Ma **@Legamidiamore ne ha già 14.700** —
+   **14 volte tanto** — e i suoi ultimi 15 video fanno in totale **~20.000 view** (media 1.330,
+   mediana ~1.100, il migliore 3.500). Quindi: **abbiamo già un asset 14× più grande di quello
+   che stai per comprare, e non produce quasi nulla.**
+   → Ne segue che **l'ingrediente mancante NON sono gli iscritti né lo stato di monetizzazione.**
+   È la **view-per-video** moltiplicata per un RPM basso. I 90€ comprano la soglia YPP, non il
+   traffico — e senza traffico la soglia vale zero. **Spendere quei 90€ non cambia il risultato.**
+   (Nota tecnica osservata: nel feed di Legami compaiono titoli **duplicati e ricaricati** —
+   es. "5 Signs He Wants You to Get Closer" presente 2 volte con 3.500 e 2.200 view — segno di una
+   macchina a ri-upload, non di crescita organica.)
 3. **Legami d'amore**: bloccato finché non sai chi lo gestisce (471 video non li ha caricati nessuno
    per sbaglio). Serve login. Potenziale reale SOLO se è tuo e ha già i requisiti YPP → allora diventa
    un asset esistente, non un progetto da zero.

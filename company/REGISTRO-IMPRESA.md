@@ -65,6 +65,9 @@
 | 16-PIANO-ESTATE-REVENUE | MAX (business) + CFO (numeri) | metriche §4 misurate, RETRO settimanale |
 | 17-EMPIRE-DESK-APP | **MAX** (ownership totale dal 2026-07-21, superata divisione Half A/Half B) | gate §4 dossier 17 |
 | `DIGITAL-EMPIRE/` (workflow estate NUOVO, sostituisce planning-workshop+workflows+ESTATE-WORKSHOP*) | MAX (import) → Chief-Forge (build originale) | `DIGITAL-EMPIRE/07-CONTROL/` gates + RETRO-PROTOCOLLO, memory_manager.py |
+| `WORKFLOW-ESTATE/` (riorganizzazione 6 pilastri Art.8 del sistema estate) | MAX | ⚠️ **NON CONFORME al 2026-07-22**: pilastri 05/06 vuoti + 26 path rotti (CP-20260722-005) → risanamento assegnato a GEM-04 |
+| `company/Antigravity-Briefs/` (GEM-00…GEM-06: pacchetti di lavoro per Gemini/Antigravity) | MAX (committente) | **Claude** (gate 5-bis su ogni consegna in `consegne/`) · Origine: FORGE via Claude, CP-20260722-005 · Governo: MANDATO Art.8 + ADR-002/003/006/008 |
+| `empire/` (core runtime Python — **da costruire**, GEM-01) | MAX | Claude (gate) · esecutore GEMINI/Antigravity · Governo: ADR-003 wrap + ADR-008 |
 
 ---
 
