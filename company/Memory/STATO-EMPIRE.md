@@ -1,4 +1,27 @@
-# STATO EMPIRE -- aggiornato 2026-07-22 (Claude: implementazione Funnel S2 Live)
+Max
+   `.../YOUR_STRIPE_MANUALE_BUMP_LINK` (order bump, riga 339). **Serve un Payment Link Stripe REALE**
+   (accesso Stripe = Max) per il Manuale (€67) e il bump (+€27) prima che si possa fare qualunque
+   test pagamento, incluso il "test €1" del piano P7. Bloccante per Gate-FUNNEL.
+2. **Audit pagine mai fatto.** `find . -iname "AUDIT-PAGINE*"` → nessun risultato. Il file
+   `07-CONTROL/AUDIT-PAGINE-20260721.md` (prerequisito esplicito di WF-S3-S4 A1, dovuto 21/07) non
+   esiste. Senza, non si sa se gli account delle pagine (incl. `crea.illtuo_impero`) sono accessibili.
+3. **Possibile confusione sull'identità di `crea.illtuo_impero`.** `grep -ri illtuo_impero .` →
+   compare SOLO in `Outreach/Instagram Automation/*.txt` come BERSAGLIO di DM a freddo dal nostro
+   account `digitalempireagency.e` (lead, non pagina nostra). Il workflow `WF-S3-S4-PAGINE-MENTALITA.md`
+   invece lo tratta come una pagina PROPRIA su cui editare la bio. **Da chiarire con Gael/Max:
+   è davvero una pagina sua con credenziali proprie, o è un lead contattato per errore/confuso nel piano?**
+   Nessuna credenziale per quell'account trovata nel repo — l'editing bio, se confermato, va fatto A MANO
+   (nessuna automazione qui espone un "aggiorna bio").
+4. **Landing non ancora deployata su un dominio reale.** `Crea siti/Siti CCM/manuale.html` esiste solo
+   come file locale — nessun `vercel.json`/`netlify.toml`/`CNAME` trovato nella cartella. Senza un URL
+   pubblico live, "link in bio" non ha una destinazione reale da mettere.
+**Bio pronta (Gael, testo preparato, editing manuale da fare):**
+`🤖 Automatizzo business con Claude Code — non teoria, risultati` + `📖 Guida Claude Code gratis +
+Manuale completo ⬇️` — manca solo l'URL live da incollare come link.
+**RIPRESA:** (a) Max crea i 2 Payment Link Stripe reali → li incollo io. (b) Deploy `manuale.html` su
+un dominio → ottengo l'URL da mettere in bio. (c) Gael conferma identità/accesso `crea.illtuo_impero`
+→ a quel punto l'editing bio (testo già pronto sopra) resta comunque manuale, nessuna automazione qui
+lo fa. (d) Audit pagine da fare comunque (era già dovuto il 21/07, mai fatto).
 
 ## 🎯 2026-07-22 — FUNNEL S2 LIVE COMPLETATO (Gael/Claude, CP-023)
 Completata l'implementazione tecnica del Funnel S2 per il **Manuale Claude Code per il Business** (€67 lancio / €97 listino):

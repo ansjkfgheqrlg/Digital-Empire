@@ -24,6 +24,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260722-003](checkpoints/CP-20260722-003.md) — **Gate-FUNNEL NON verde: 4 blocchi reali trovati** (checkout Stripe = placeholder mai sostituiti, audit pagine mai fatto, landing mai deployata, identità crea.illtuo_impero chiarita da Gael). Nessuna credenziale salvata in repo. Bio testo pronto, resto manuale — Gael
 - [CP-20260722-002](checkpoints/CP-20260722-002.md) — **Integrazione Deliverable LMArena (Preventa)**: Copiate le cartelle preventa-maps-scraper, preventa-outreach-pack e preventa-launch-kit; registrati gli asset in `skills-map.yaml` e `REGISTRO-IMPRESA.md` (ADR-008). Rimossa cartella temporanea ed eseguito test sintassi. — Claude/Max
 - [CP-20260722-001](checkpoints/CP-20260722-001.md) — **Analisi YouTube reale + piano chirurgico estate + Arena build-list**: Dati reali estratti via yt-dlp, compilazione build list con 6 prompt Arena pronti, DEC-EST-001 attiva (prezzo Manuale) e B-003 sbloccato. — Claude/Max
 - [CP-20260721-006](checkpoints/CP-20260721-006.md) — **EmpireDesk: verifica di precisione post-richiamo**: confermato di persona (non solo fidandosi del testo) selftest 16/16 reale + test funzionale a fondo del nuovo modulo `youtube.py` (info/seo_score/cashcow, dati reali + JSON-stringa + input malformato) — **zero bug trovati**, tutto in ordine — Gael

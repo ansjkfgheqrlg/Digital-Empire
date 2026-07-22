@@ -1,5 +1,14 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-22 (Gate-FUNNEL: 4 blocchi reali trovati, Gael/Claude)
+- AUDIT: verifica diretta post-CP-023 (che dichiarava "checkout integrato") — trovato invece che
+  i link Stripe in `Crea siti/Siti CCM/manuale.html` sono placeholder mai sostituiti (bottone finto),
+  l'audit pagine prerequisito non è mai stato fatto, la landing non è deployata su alcun dominio.
+  Chiarita con Gael l'identità di `crea.illtuo_impero` (sua pagina personale) — password fornita in
+  chat NON salvata in nessun file (regola chiavi solo .env). Preparato il testo bio pronto da
+  incollare (manca solo l'URL live). → CP-20260722-003 + STATO-EMPIRE aggiornati con dettaglio
+  esatto per ogni blocco.
+
 ## 2026-07-22 (Analisi YouTube reale + piano chirurgico estate, Claude/Max)
 - RESEARCH/INGEST: estrazione dati REALI via yt-dlp di 3 canali (Dose Mentale @dosementale 198k iscritti
   ma video recenti 649-3300 view = ratio 0,3% gonfiato; Legami d'amore @Legamidiamore 14.7k iscritti,
