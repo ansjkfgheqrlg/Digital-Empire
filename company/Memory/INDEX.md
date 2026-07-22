@@ -24,6 +24,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260721-006](checkpoints/CP-20260721-006.md) — **EmpireDesk: verifica di precisione post-richiamo**: confermato di persona (non solo fidandosi del testo) selftest 16/16 reale + test funzionale a fondo del nuovo modulo `youtube.py` (info/seo_score/cashcow, dati reali + JSON-stringa + input malformato) — **zero bug trovati**, tutto in ordine — Gael
 - [CP-20260721-004](checkpoints/CP-20260721-004.md) — **Workflow Estate SOSTITUITO**: importato `DIGITAL-EMPIRE/` (6702 file, sistema Chief-Forge da `VIP/Estate workflow.zip`), eliminato il vecchio (92 file: dossier 17-old/18, planning-workshop, workflows/, ESTATE-WORKSHOP*, youtube-department orfano). Secrets/bloat verificati puliti. ADR-008 intestato — Max
 - [CP-20260721-003](checkpoints/CP-20260721-003.md) — Audit stato reale Estate Workshop Workflow System (poi sostituito, vedi CP-004): planning+9 agenti+6 workflow CONFERMATI su disco; chiarito che il commit "Fase 1 completata" (Workshop Conductor/Department Charter/ecc) era mal-etichettato (diff = solo log); B-003 prezzo Manuale ancora aperto — Claude/Max
 - [CP-20260721-002](checkpoints/CP-20260721-002.md) — **Skill youtube-automation-factory**: metodo YT Automation (Video IQ+SEO+Fliki) → fabbrica multi-agente, 29 file (.claude/skills/), 11 agenti + 5 WF + 2 tool Python testati (seo_score, cashcow_check), metodologia master-build-architecture+content-forge2.0 — Max

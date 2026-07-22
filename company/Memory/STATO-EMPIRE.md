@@ -20,6 +20,13 @@ monopolio totale sull'app. **Torna il modello di ownership del dossier 17 §5 (2
 - Regola invariata: **NON toccare il contenuto di `platform/`** (grafica = Max) salvo config di
   build concordate; Max non tocca `app.py`/`modules/`/spec di build.
 
+**✅ GAEL — verifica di precisione fatta (2026-07-21 sera, CP-20260721-006): NESSUN PROBLEMA.**
+Confermato di persona (non solo fidandomi del testo qui sopra): `python app.py --selftest` →
+**16/16 PASS reale**, 7 moduli caricati come dichiarato. Testato A FONDO anche `modules/youtube.py`
+(nuovo, mai verificato prima da me) con payload realistici sulle 3 routes (`info`/`seo_score`/
+`cashcow`, inclusi input malformati) — **zero bug**, rispetta ADR-003 e Mandato Art.2. Nessun
+problema da segnalare. Resto disponibile per task concreti su logica/collegamenti interni.
+
 ## 🚨🚨🚨 ORDINE MAX 2026-07-21 — WORKFLOW ESTATE SOSTITUITO: `DIGITAL-EMPIRE/` è la NUOVA fonte (leggere PRIMA di S1-S6)
 **Max ha importato un workflow estate nuovo e completo (costruito fuori, da CHIEF-FORGE) e ha ordinato
 di ELIMINARE quello vecchio (il mio thin-build del 20/07) e sostituirlo. Fatto.**
