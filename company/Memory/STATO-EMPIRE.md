@@ -1,4 +1,24 @@
-# STATO EMPIRE -- aggiornato 2026-07-21 (ORDINE MAX: nuovo Workflow Estate sostituisce il vecchio)
+# STATO EMPIRE -- aggiornato 2026-07-21 sera (ORDINE MAX: EmpireDesk — la divisione Max/Gael TORNA)
+
+## 🚨🚨🚨 ORDINE MAX 2026-07-21 SERA — EMPIRE DESK: RITORNA LA DIVISIONE, GAEL RICHIAMATO da V2-2 Lotto 4
+**Supera il blocco "OWNERSHIP TOTALE PASSA A MAX" di oggi 15:48 (qui sotto, resta come storico).**
+Confermato da Max via domanda diretta: quel blocco intendeva "la grafica la faccio io", non un
+monopolio totale sull'app. **Torna il modello di ownership del dossier 17 §5 (2026-07-19):**
+- **MAX = SOLO grafica/UI/UX/estetica** (via Claude): `platform/` (Aureus, contenuto visivo),
+  `ui/index.html` (legacy), qualunque cosa tocchi ASPETTO dell'app.
+- **GAEL = tutto il resto**: `app.py` (server/routing/TileManager), `build_exe.bat`/`empiredesk.spec`
+  (build), `EmpireDesk/modules/*.py` (logica/dati/collegamenti), nuove automazioni/wiring reali.
+- **GAEL: richiamato IMMEDIATAMENTE da V2-2 Lotto 4 (07/08/09-V2 — mettere in pausa, ripresa dopo
+  EmpireDesk) → torna su EmpireDesk, occupandosi della logica/funzionamento/collegamenti interni.**
+- **Stato reale attuale verificato (non serve rifare da capo):** build .exe FUNZIONA (verificato
+  di nuovo stasera: selftest frozen 16/16 PASS, doppio click reale → finestra si apre, Aureus
+  servita). 7 moduli caricati (licenze/metrics/notify/revenue/scheduler/taskboard/youtube). G1/G2/G3
+  del dossier 17 §0-bis erano già stati chiusi da Gael prima dello stop di oggi — quel lavoro resta
+  valido, punto di partenza. **Se trovi problemi specifici (build, logica, collegamenti): scrivili
+  QUI con dettaglio (comando esatto + errore esatto) così chi riprende non deve indovinare** — la
+  volta scorsa Max sapeva solo "Gael ha dei problemi" senza dettagli, tempo perso a ricostruirli.
+- Regola invariata: **NON toccare il contenuto di `platform/`** (grafica = Max) salvo config di
+  build concordate; Max non tocca `app.py`/`modules/`/spec di build.
 
 ## 🚨🚨🚨 ORDINE MAX 2026-07-21 — WORKFLOW ESTATE SOSTITUITO: `DIGITAL-EMPIRE/` è la NUOVA fonte (leggere PRIMA di S1-S6)
 **Max ha importato un workflow estate nuovo e completo (costruito fuori, da CHIEF-FORGE) e ha ordinato
