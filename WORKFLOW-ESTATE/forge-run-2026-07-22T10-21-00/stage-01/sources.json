@@ -1,0 +1,304 @@
+{
+  "total_sources": 21,
+  "total_words": 10552,
+  "total_words_after_cleaning": 10552,
+  "input_mode": "folder_recursive",
+  "input_root": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE",
+  "sources": [
+    {
+      "id": "src-001",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/PLANNING-P7-MASTER-PLAN.md",
+      "relative_path": "01-FLUSSI-E-PIANI/PLANNING-P7-MASTER-PLAN.md",
+      "size_bytes": 6507,
+      "word_count_original": 1007,
+      "word_count_cleaned": 1007,
+      "language_detected": "it",
+      "type_detected": "workflow_doc",
+      "range_in_cleaned": [
+        97,
+        6431
+      ]
+    },
+    {
+      "id": "src-002",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/WF-MASTER.md",
+      "relative_path": "01-FLUSSI-E-PIANI/WF-MASTER.md",
+      "size_bytes": 2077,
+      "word_count_original": 323,
+      "word_count_cleaned": 323,
+      "language_detected": "it",
+      "type_detected": "workflow_doc",
+      "range_in_cleaned": [
+        6516,
+        8510
+      ]
+    },
+    {
+      "id": "src-003",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/WF-PERF-LOOP.md",
+      "relative_path": "01-FLUSSI-E-PIANI/WF-PERF-LOOP.md",
+      "size_bytes": 6034,
+      "word_count_original": 805,
+      "word_count_cleaned": 805,
+      "language_detected": "it",
+      "type_detected": "workflow_doc",
+      "range_in_cleaned": [
+        8598,
+        14485
+      ]
+    },
+    {
+      "id": "src-004",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/WF-S1-CONCESSIONARI.md",
+      "relative_path": "01-FLUSSI-E-PIANI/WF-S1-CONCESSIONARI.md",
+      "size_bytes": 7216,
+      "word_count_original": 1156,
+      "word_count_cleaned": 1156,
+      "language_detected": "it",
+      "type_detected": "workflow_doc",
+      "range_in_cleaned": [
+        14580,
+        21680
+      ]
+    },
+    {
+      "id": "src-005",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/WF-S2-MANUALE.md",
+      "relative_path": "01-FLUSSI-E-PIANI/WF-S2-MANUALE.md",
+      "size_bytes": 2466,
+      "word_count_original": 376,
+      "word_count_cleaned": 376,
+      "language_detected": "it",
+      "type_detected": "workflow_doc",
+      "range_in_cleaned": [
+        21769,
+        24166
+      ]
+    },
+    {
+      "id": "src-006",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md",
+      "relative_path": "01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md",
+      "size_bytes": 2532,
+      "word_count_original": 368,
+      "word_count_cleaned": 368,
+      "language_detected": "it",
+      "type_detected": "workflow_doc",
+      "range_in_cleaned": [
+        24267,
+        26719
+      ]
+    },
+    {
+      "id": "src-007",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md",
+      "relative_path": "01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md",
+      "size_bytes": 3124,
+      "word_count_original": 462,
+      "word_count_cleaned": 462,
+      "language_detected": "it",
+      "type_detected": "workflow_doc",
+      "range_in_cleaned": [
+        26808,
+        29885
+      ]
+    },
+    {
+      "id": "src-008",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md",
+      "relative_path": "01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md",
+      "size_bytes": 2510,
+      "word_count_original": 385,
+      "word_count_cleaned": 385,
+      "language_detected": "it",
+      "type_detected": "workflow_doc",
+      "range_in_cleaned": [
+        29980,
+        32458
+      ]
+    },
+    {
+      "id": "src-009",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/workflows.yaml",
+      "relative_path": "01-FLUSSI-E-PIANI/workflows.yaml",
+      "size_bytes": 9687,
+      "word_count_original": 1090,
+      "word_count_cleaned": 1090,
+      "language_detected": "it",
+      "type_detected": "workflow_yaml",
+      "range_in_cleaned": [
+        32545,
+        41919
+      ]
+    },
+    {
+      "id": "src-010",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/fliki_youtube_test.py",
+      "relative_path": "02-AUTOMAZIONI-E-SCRIPTS/fliki_youtube_test.py",
+      "size_bytes": 390,
+      "word_count_original": 47,
+      "word_count_cleaned": 47,
+      "language_detected": "it",
+      "type_detected": "automation_script",
+      "range_in_cleaned": [
+        42020,
+        42396
+      ]
+    },
+    {
+      "id": "src-011",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/memory_manager.py",
+      "relative_path": "02-AUTOMAZIONI-E-SCRIPTS/memory_manager.py",
+      "size_bytes": 11068,
+      "word_count_original": 1022,
+      "word_count_cleaned": 1022,
+      "language_detected": "it",
+      "type_detected": "automation_script",
+      "range_in_cleaned": [
+        42493,
+        53506
+      ]
+    },
+    {
+      "id": "src-012",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py",
+      "relative_path": "02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py",
+      "size_bytes": 17108,
+      "word_count_original": 1940,
+      "word_count_cleaned": 1940,
+      "language_detected": "it",
+      "type_detected": "automation_script",
+      "range_in_cleaned": [
+        53612,
+        70119
+      ]
+    },
+    {
+      "id": "src-013",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/run_checkpoint_eod.bat",
+      "relative_path": "02-AUTOMAZIONI-E-SCRIPTS/run_checkpoint_eod.bat",
+      "size_bytes": 283,
+      "word_count_original": 24,
+      "word_count_cleaned": 24,
+      "language_detected": "it",
+      "type_detected": "brief",
+      "range_in_cleaned": [
+        70221,
+        70497
+      ]
+    },
+    {
+      "id": "src-014",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py",
+      "relative_path": "02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py",
+      "size_bytes": 6469,
+      "word_count_original": 611,
+      "word_count_cleaned": 611,
+      "language_detected": "it",
+      "type_detected": "automation_script",
+      "range_in_cleaned": [
+        70599,
+        76667
+      ]
+    },
+    {
+      "id": "src-015",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/send_s1_whatsapp_auto.py",
+      "relative_path": "02-AUTOMAZIONI-E-SCRIPTS/send_s1_whatsapp_auto.py",
+      "size_bytes": 1672,
+      "word_count_original": 238,
+      "word_count_cleaned": 238,
+      "language_detected": "it",
+      "type_detected": "automation_script",
+      "range_in_cleaned": [
+        76771,
+        78408
+      ]
+    },
+    {
+      "id": "src-016",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/03-AGENTI-E-RUOLI/AGENTE-ANDREI-PASCU-MINER.md",
+      "relative_path": "03-AGENTI-E-RUOLI/AGENTE-ANDREI-PASCU-MINER.md",
+      "size_bytes": 517,
+      "word_count_original": 74,
+      "word_count_cleaned": 74,
+      "language_detected": "it",
+      "type_detected": "agent_definition",
+      "range_in_cleaned": [
+        78509,
+        79017
+      ]
+    },
+    {
+      "id": "src-017",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/03-AGENTI-E-RUOLI/AGENTE-CLAUDE.md",
+      "relative_path": "03-AGENTI-E-RUOLI/AGENTE-CLAUDE.md",
+      "size_bytes": 1059,
+      "word_count_original": 149,
+      "word_count_cleaned": 149,
+      "language_detected": "it",
+      "type_detected": "agent_definition",
+      "range_in_cleaned": [
+        79106,
+        80149
+      ]
+    },
+    {
+      "id": "src-018",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/03-AGENTI-E-RUOLI/AGENTE-CLOSER-A8.md",
+      "relative_path": "03-AGENTI-E-RUOLI/AGENTE-CLOSER-A8.md",
+      "size_bytes": 622,
+      "word_count_original": 93,
+      "word_count_cleaned": 93,
+      "language_detected": "it",
+      "type_detected": "agent_definition",
+      "range_in_cleaned": [
+        80241,
+        80853
+      ]
+    },
+    {
+      "id": "src-019",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/03-AGENTI-E-RUOLI/AGENTE-CRO-COPY-ARCHITECT.md",
+      "relative_path": "03-AGENTI-E-RUOLI/AGENTE-CRO-COPY-ARCHITECT.md",
+      "size_bytes": 685,
+      "word_count_original": 98,
+      "word_count_cleaned": 98,
+      "language_detected": "it",
+      "type_detected": "agent_definition",
+      "range_in_cleaned": [
+        80954,
+        81625
+      ]
+    },
+    {
+      "id": "src-020",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/03-AGENTI-E-RUOLI/AGENTE-GAEL.md",
+      "relative_path": "03-AGENTI-E-RUOLI/AGENTE-GAEL.md",
+      "size_bytes": 1027,
+      "word_count_original": 143,
+      "word_count_cleaned": 143,
+      "language_detected": "it",
+      "type_detected": "agent_definition",
+      "range_in_cleaned": [
+        81712,
+        82720
+      ]
+    },
+    {
+      "id": "src-021",
+      "path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE/03-AGENTI-E-RUOLI/AGENTE-MAX.md",
+      "relative_path": "03-AGENTI-E-RUOLI/AGENTE-MAX.md",
+      "size_bytes": 1057,
+      "word_count_original": 141,
+      "word_count_cleaned": 141,
+      "language_detected": "it",
+      "type_detected": "agent_definition",
+      "range_in_cleaned": [
+        82806,
+        83845
+      ]
+    }
+  ],
+  "skipped_files": []
+}

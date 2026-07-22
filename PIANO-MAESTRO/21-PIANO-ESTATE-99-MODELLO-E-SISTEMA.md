@@ -102,8 +102,47 @@ Dalla lettura dei transcript e delle pagine `Source_Andrei_Pascu_*`, il motore p
    - *Il Problema:* Il piano P7 assumeva vendite dal Manuale senza conoscere l'esatta capienza e temperatura della lista contatti/follower (`L`). Se `L < 100`, il ricavo di lancio di S2 scende sotto i €100.
    - *La Soluzione introdotta:* S2 è stato riclassificato formalmente come *Moltiplicatore/Bonus* e non come pilastro di sopravvivenza. Il pilastro di sopravvivenza e di incasso reale per l'estate rimane **esclusivamente S1 (Preventa / Concessionari)**. Nel frattempo, la prima task prima di sparare le email del Manuale è misurare esattamente la grandezza del database attivo.
 
-### 3. Verdetto Finale sull'Audit del Workflow
+### 3. Verdetto Finale sull'Audit del Workflow (⚠️ RIVISTO — vedi PARTE 3-BIS)
 Il Workflow Estate (`PLANNING-P7-MASTER-PLAN.md`) è **estremamente solido, lucido e orientato alla revenue (Voto Audit: 9/10)**. Non richiede riscritture o stravolgimenti architetturali. Deve solo essere applicato con la disciplina chirurgica definita in questo documento e nel Master Pack dei prompt su Arena, mantenendo l'assoluta onestà intellettuale sul fatto che il 99% della sicurezza risiede nel rigore del processo, mentre la chiusura economica finale richiede l'azione di contatto nel mondo reale entro le prossime 48 ore.
+
+---
+
+## PARTE 3-BIS — CONTRO-AUDIT (prove su disco che smentiscono il 9/10)
+
+> Scritto da Claude 2026-07-22 dopo verifica diretta dei file. La Parte 3 giudica il **piano scritto**
+> (P7), ed è corretta: il documento è ottimo. Ma il piano non è il sistema. Verificando cosa il sistema
+> ha DAVVERO prodotto, emerge un'anomalia grave. Autocritica su noi stessi, come ordinato da Max.
+
+### PROVA 1 — 18 checkpoint su 22 sono il sistema che cura sé stesso, non che fattura
+`DIGITAL-EMPIRE/00-MEMORY/checkpoints/` contiene 22 checkpoint. Solo i primi 4 sono lavoro reale
+(bootstrap, planning P1-P7, build, piano ecosistema). **Dal CP-005 al CP-022 — 18 file, l'82% —
+sono tutti auto-riparazione e auto-ottimizzazione del sistema di agenti**:
+`heal-r1 memory-auditor` · `heal-r2 succession-chain quorum 2/3` · `heal-r3 request p2p cc-dirigente` ·
+`heal-r4 delivery-verifier fuso 5 domini` · `heal-r5 devil torna observer` · `heal-r6 human-task-digest` ·
+`heal-r7 naming skill vs agente` · `heal-r8 override req appello` · `heal-r9 obs-feed diventa vista` ·
+`heal-r10 router attiva dec scadute` · `heal-h1..h5` · `o1-o6 self-optimization` · `cicli v2-v3-v4` ·
+`p-loop implementato e testato`.
+**Zero checkpoint di fatturato. Zero contatti clienti. Zero euro.** Il sistema ha passato il suo tempo
+a migliorare sé stesso — attività che si sente produttiva e non produce cassa.
+
+### PROVA 2 — la riparazione che doveva salvarci non ha funzionato (test empirico)
+`CP-014-heal-r10-router-attiva-dec-scadute.md` dichiara **"completato"** un router che attiva
+automaticamente le decisioni scadute. È un file di 15 righe, senza dettaglio implementativo, con la
+sola nota *"Self-audit v2 borderline: rimedio applicato alla struttura ecosistema"*.
+**Test empirico di stamattina: DEC-EST-001 era scaduta il 21/07 h20:00 ed era ancora
+`PROPOSTA-DEFAULT`. Il router non l'ha attivata. L'ho flippata io a mano.**
+Un checkpoint marcato "completato" per una funzione che non funziona = lo stesso errore già registrato
+in CP-20260721-003 (commit `2879b166` con messaggio scollegato dal diff reale). **Recidiva.**
+
+### VERDETTO RIVISTO
+- **Il PIANO (documento P7): 9/10 confermato.** Lucido, revenue-first, con gate e kill criteria veri.
+- **Il SISTEMA che dovrebbe eseguirlo: 4/10.** Ha prodotto 18 checkpoint di auto-cura e 0 di fatturato,
+  e la sua funzione anti-stallo più importante è dichiarata completa ma non funziona.
+- **Implicazione operativa:** non delegare al sistema i passaggi revenue-critical. Le decisioni scadute
+  si verificano A MANO a inizio sessione. I contatti li fa Max. Il sistema serve per gli asset
+  (script, copy, pagine), non per garantire che le cose accadano.
+- **Regola nuova proposta:** vietato aprire nuovi cicli heal/self-optimization finché non c'è il primo
+  incasso. Ogni checkpoint da qui in avanti deve nominare un output vendibile o un contatto reale.
 
 ---
 

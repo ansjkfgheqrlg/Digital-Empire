@@ -1,0 +1,726 @@
+{
+  "chunk_id": "chunk-016",
+  "atoms": [
+    {
+      "id": "a-chunk-016-001",
+      "title": "send_outreach_ready.py",
+      "category": "procedure",
+      "canonical_definition": "\"\"\"",
+      "extended_explanation": "\"\"\"\nInvia le email da emails_ready.json.\nLegge il file, mostra un riepilogo, chiede conferma, poi invia una per una.\nAggiorna lo status in tempo reale dopo ogni invio.\nRun:\npython send_ready.py\npython send_ready.py --dry-run   # mostra lista senza inviare\n\"\"\"\nimport json\nimport smtplib\nimport sys\nimport time\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText",
+      "source_excerpt": "\"\"\"\nInvia le email da emails_ready.json.\nLegge il file, mostra un riepilogo, chiede conferma, poi invia una per una.\nAggiorna lo status in tempo reale dopo ogni invio.\nRun:\npython send_ready.py\npython send_ready.py --dry-run   # mostra lista senza inviare\n\"\"\"\nimport json\nimport smtplib\nimport sys\nimport time\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "\"\"\"\nInvia le email da emails_ready.json.\nLegge il file, mostra un riepilogo, chiede conferma, poi invia una per una.\nAggiorna lo status in tempo reale dopo ogni invio.\nRun:\npython send_ready.py\npython"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per send_outreach_ready.py: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-002",
+      "title": "─── MULTI-ACCOUNT ROUND-ROBIN ───────────────────────────────────────────────",
+      "category": "procedure",
+      "canonical_definition": "# ─── MULTI-ACCOUNT ROUND-ROBIN ───────────────────────────────────────────────",
+      "extended_explanation": "# ─── MULTI-ACCOUNT ROUND-ROBIN ───────────────────────────────────────────────",
+      "source_excerpt": "# ─── MULTI-ACCOUNT ROUND-ROBIN ───────────────────────────────────────────────",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# ─── MULTI-ACCOUNT ROUND-ROBIN ───────────────────────────────────────────────"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per ─── MULTI-ACCOUNT ROUND-ROBIN ──────────: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-003",
+      "title": "Per ogni account Gmail occorre una App Password (NON la password normale).",
+      "category": "procedure",
+      "canonical_definition": "# Per ogni account Gmail occorre una App Password (NON la password normale).",
+      "extended_explanation": "# Per ogni account Gmail occorre una App Password (NON la password normale).",
+      "source_excerpt": "# Per ogni account Gmail occorre una App Password (NON la password normale).",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# Per ogni account Gmail occorre una App Password (NON la password normale)."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Per ogni account Gmail occorre una App P: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-004",
+      "title": "Come ottenerla: Google Account → Sicurezza → Verifica in due passaggi → App pass",
+      "category": "procedure",
+      "canonical_definition": "# Come ottenerla: Google Account → Sicurezza → Verifica in due passaggi → App password",
+      "extended_explanation": "# Come ottenerla: Google Account → Sicurezza → Verifica in due passaggi → App password",
+      "source_excerpt": "# Come ottenerla: Google Account → Sicurezza → Verifica in due passaggi → App password",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# Come ottenerla: Google Account → Sicurezza → Verifica in due passaggi → App password"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Come ottenerla: Google Account → Sicurez: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-005",
+      "title": "Crea una App Password con nome \"Mail\" e copia le 16 lettere (es. \"aaaa bbbb cccc",
+      "category": "procedure",
+      "canonical_definition": "# Crea una App Password con nome \"Mail\" e copia le 16 lettere (es. \"aaaa bbbb cccc dddd\").",
+      "extended_explanation": "# Crea una App Password con nome \"Mail\" e copia le 16 lettere (es. \"aaaa bbbb cccc dddd\").",
+      "source_excerpt": "# Crea una App Password con nome \"Mail\" e copia le 16 lettere (es. \"aaaa bbbb cccc dddd\").",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# Crea una App Password con nome \"Mail\" e copia le 16 lettere (es. \"aaaa bbbb cccc dddd\")."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Crea una App Password con nome \"Mail\" e : applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-006",
+      "title": "Sostituisci ACCOUNT2_EMAIL / ACCOUNT3_EMAIL con le email reali e le relative App",
+      "category": "procedure",
+      "canonical_definition": "# Sostituisci ACCOUNT2_EMAIL / ACCOUNT3_EMAIL con le email reali e le relative App Password.",
+      "extended_explanation": "# Sostituisci ACCOUNT2_EMAIL / ACCOUNT3_EMAIL con le email reali e le relative App Password.\nGMAIL_ACCOUNTS = [\n{\"user\": \"max.infoproducer@gmail.com\",  \"password\": \"kkgj pnsh vupw rily\"},\n{\"user\": \"ACCOUNT2_EMAIL\",              \"password\": \"ACCOUNT2_APP_PASSWORD\"},\n{\"user\": \"ACCOUNT3_EMAIL\",              \"password\": \"ACCOUNT3_APP_PASSWORD\"},\n]",
+      "source_excerpt": "# Sostituisci ACCOUNT2_EMAIL / ACCOUNT3_EMAIL con le email reali e le relative App Password.\nGMAIL_ACCOUNTS = [\n{\"user\": \"max.infoproducer@gmail.com\",  \"password\": \"kkgj pnsh vupw rily\"},\n{\"user\": \"ACCOUNT2_EMAIL\",              \"password\": \"ACCOUNT2_APP_PASSWORD\"},\n{\"user\": \"ACCOUNT3_EMAIL\",              \"password\": \"ACCOUNT3_APP_PASSWORD\"},\n]",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# Sostituisci ACCOUNT2_EMAIL / ACCOUNT3_EMAIL con le email reali e le relative App Password.\nGMAIL_ACCOUNTS = [\n{\"user\": \"max.infoproducer@gmail.com\",  \"password\": \"kkgj pnsh vupw rily\"},\n{\"user\": \"AC"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Sostituisci ACCOUNT2_EMAIL / ACCOUNT3_EM: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-007",
+      "title": "Solo account con email reale (esclude placeholder)",
+      "category": "procedure",
+      "canonical_definition": "# Solo account con email reale (esclude placeholder)",
+      "extended_explanation": "# Solo account con email reale (esclude placeholder)\n_ACTIVE_ACCOUNTS = [a for a in GMAIL_ACCOUNTS if \"@\" in a[\"user\"] and a[\"user\"] != \"ACCOUNT2_EMAIL\" and a[\"user\"] != \"ACCOUNT3_EMAIL\"]\nINPUT_PATH     = next((sys.argv[sys.argv.index(\"--input\")+1] for i,a in enumerate(sys.argv) if a==\"--input\"), \"emails_ready.json\")\nDELAY_SECONDS  = 90    # ~40 email/ora — più sicuro per reputazione account",
+      "source_excerpt": "# Solo account con email reale (esclude placeholder)\n_ACTIVE_ACCOUNTS = [a for a in GMAIL_ACCOUNTS if \"@\" in a[\"user\"] and a[\"user\"] != \"ACCOUNT2_EMAIL\" and a[\"user\"] != \"ACCOUNT3_EMAIL\"]\nINPUT_PATH     = next((sys.argv[sys.argv.index(\"--input\")+1] for i,a in enumerate(sys.argv) if a==\"--input\"), \"emails_ready.json\")\nDELAY_SECONDS  = 90    # ~40 email/ora — più sicuro per reputazione account",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# Solo account con email reale (esclude placeholder)\n_ACTIVE_ACCOUNTS = [a for a in GMAIL_ACCOUNTS if \"@\" in a[\"user\"] and a[\"user\"] != \"ACCOUNT2_EMAIL\" and a[\"user\"] != \"ACCOUNT3_EMAIL\"]\nINPUT_PATH  "
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Solo account con email reale (esclude pl: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-008",
+      "title": "DELIVERABILITY: limite giornaliero per singola mailbox Gmail.",
+      "category": "procedure",
+      "canonical_definition": "# DELIVERABILITY: limite giornaliero per singola mailbox Gmail.",
+      "extended_explanation": "# DELIVERABILITY: limite giornaliero per singola mailbox Gmail.",
+      "source_excerpt": "# DELIVERABILITY: limite giornaliero per singola mailbox Gmail.",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# DELIVERABILITY: limite giornaliero per singola mailbox Gmail."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per DELIVERABILITY: limite giornaliero per s: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-009",
+      "title": "Superare 50/giorno brucia la reputazione e causa \"Message blocked\".",
+      "category": "procedure",
+      "canonical_definition": "# Superare 50/giorno brucia la reputazione e causa \"Message blocked\".",
+      "extended_explanation": "# Superare 50/giorno brucia la reputazione e causa \"Message blocked\".",
+      "source_excerpt": "# Superare 50/giorno brucia la reputazione e causa \"Message blocked\".",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# Superare 50/giorno brucia la reputazione e causa \"Message blocked\"."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Superare 50/giorno brucia la reputazione: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-010",
+      "title": "Per volumi maggiori: aggiungere più account Gmail (round-robin orizzontale).",
+      "category": "procedure",
+      "canonical_definition": "# Per volumi maggiori: aggiungere più account Gmail (round-robin orizzontale).",
+      "extended_explanation": "# Per volumi maggiori: aggiungere più account Gmail (round-robin orizzontale).\nDAILY_LIMIT_PER_ACCOUNT = 50\nBLACKLIST = {\n\"assistenza.pazienti@studiobittante.com\",\n}",
+      "source_excerpt": "# Per volumi maggiori: aggiungere più account Gmail (round-robin orizzontale).\nDAILY_LIMIT_PER_ACCOUNT = 50\nBLACKLIST = {\n\"assistenza.pazienti@studiobittante.com\",\n}",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# Per volumi maggiori: aggiungere più account Gmail (round-robin orizzontale).\nDAILY_LIMIT_PER_ACCOUNT = 50\nBLACKLIST = {\n\"assistenza.pazienti@studiobittante.com\",\n}"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Per volumi maggiori: aggiungere più acco: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-011",
+      "title": "─── SMTP ────────────────────────────────────────────────────────────────────",
+      "category": "procedure",
+      "canonical_definition": "# ─── SMTP ────────────────────────────────────────────────────────────────────",
+      "extended_explanation": "# ─── SMTP ────────────────────────────────────────────────────────────────────",
+      "source_excerpt": "# ─── SMTP ────────────────────────────────────────────────────────────────────",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# ─── SMTP ────────────────────────────────────────────────────────────────────"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per ─── SMTP ───────────────────────────────: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-012",
+      "title": "_invia(destinatario: str, oggetto: str, corpo: str, account_idx: int = 0) -> boo",
+      "category": "procedure",
+      "canonical_definition": "def _invia(destinatario: str, oggetto: str, corpo: str, account_idx: int = 0) -> bool:",
+      "extended_explanation": "def _invia(destinatario: str, oggetto: str, corpo: str, account_idx: int = 0) -> bool:\naccount  = _ACTIVE_ACCOUNTS[account_idx % len(_ACTIVE_ACCOUNTS)]\nuser     = account[\"user\"]\npassword = account[\"password\"]\ntry:\nmsg = MIMEMultipart(\"alternative\")\nmsg[\"From\"]    = f\"Max <{user}>\"\nmsg[\"To\"]      = destinatario\nmsg[\"Subject\"] = oggetto\nmsg.attach(MIMEText(corpo, \"plain\", \"utf-8\"))\nwith smtplib.SMTP_SSL(\"smtp.gmail.com\", 465, timeout=15) as srv:\nsrv.login(user, password)\nsrv.send_message(msg)\nreturn True\nexcept Exception as e:\nprint(f\"         ERRORE SMTP: {e}\")\nreturn False",
+      "source_excerpt": "def _invia(destinatario: str, oggetto: str, corpo: str, account_idx: int = 0) -> bool:\naccount  = _ACTIVE_ACCOUNTS[account_idx % len(_ACTIVE_ACCOUNTS)]\nuser     = account[\"user\"]\npassword = account[\"password\"]\ntry:\nmsg = MIMEMultipart(\"alternative\")\nmsg[\"From\"]    = f\"Max <{user}>\"\nmsg[\"To\"]      = destinatario\nmsg[\"Subject\"] = oggetto\nmsg.attach(MIMEText(corpo, \"plain\", \"utf-8\"))\nwith smtplib.SMTP_SSL(\"smtp.gmail.com\", 465, timeout=15) as srv:\nsrv.login(user, password)\nsrv.send_message(msg)\nreturn True\nexcept Exception as e:\nprint(f\"         ERRORE SMTP: {e}\")\nreturn False",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "def _invia(destinatario: str, oggetto: str, corpo: str, account_idx: int = 0) -> bool:\naccount  = _ACTIVE_ACCOUNTS[account_idx % len(_ACTIVE_ACCOUNTS)]\nuser     = account[\"user\"]\npassword = account[\"p"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per _invia(destinatario: str, oggetto: str, : applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-013",
+      "title": "_flush(data: list):",
+      "category": "procedure",
+      "canonical_definition": "def _flush(data: list):",
+      "extended_explanation": "def _flush(data: list):\nwith open(INPUT_PATH, \"w\", encoding=\"utf-8\") as f:\njson.dump(data, f, ensure_ascii=False, indent=2)",
+      "source_excerpt": "def _flush(data: list):\nwith open(INPUT_PATH, \"w\", encoding=\"utf-8\") as f:\njson.dump(data, f, ensure_ascii=False, indent=2)",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "def _flush(data: list):\nwith open(INPUT_PATH, \"w\", encoding=\"utf-8\") as f:\njson.dump(data, f, ensure_ascii=False, indent=2)"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per _flush(data: list):: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-014",
+      "title": "─── Main ─────────────────────────────────────────────────────────────────────",
+      "category": "procedure",
+      "canonical_definition": "# ─── Main ─────────────────────────────────────────────────────────────────────",
+      "extended_explanation": "# ─── Main ─────────────────────────────────────────────────────────────────────",
+      "source_excerpt": "# ─── Main ─────────────────────────────────────────────────────────────────────",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# ─── Main ─────────────────────────────────────────────────────────────────────"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per ─── Main ───────────────────────────────: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-015",
+      "title": "main():",
+      "category": "procedure",
+      "canonical_definition": "def main():",
+      "extended_explanation": "def main():\ndry_run = \"--dry-run\" in sys.argv\nauto    = \"--auto\" in sys.argv\nwith open(INPUT_PATH, encoding=\"utf-8\") as f:\nall_emails = json.load(f)\nda_inviare = [\ne for e in all_emails\nif e.get(\"status\") == \"ready\"\nand e.get(\"email\", \"\").lower() not in BLACKLIST\n]\ngia_inviate  = sum(1 for e in all_emails if e.get(\"status\") == \"sent\")\ncon_errori   = sum(1 for e in all_emails if \"error\" in e.get(\"status\", \"\"))\nprint(f\"\\n{'='*55}\")\nprint(f\"  emails_ready.json — riepilogo\")\nprint(f\"{'='*55}\")\nprint(f\"  Da inviare   : {len(da_inviare)}\")\nprint(f\"  Già inviate  : {gia_inviate}\")\nprint(f\"  Con errori   : {con_errori}\")\nprint(f\"  Blacklist    : {len(BLACKLIST)} indirizzi bloccati\")\nprint(f\"  Delay        : {DELAY_SECONDS}s tra invii (~{len(da_inviare)*DELAY_SECONDS//60}min tot)\")\nprint(f\"{'='*55}\\n\")\nif not da_inviare:\nprint(\"Nessuna email da inviare.\")\nreturn",
+      "source_excerpt": "def main():\ndry_run = \"--dry-run\" in sys.argv\nauto    = \"--auto\" in sys.argv\nwith open(INPUT_PATH, encoding=\"utf-8\") as f:\nall_emails = json.load(f)\nda_inviare = [\ne for e in all_emails\nif e.get(\"status\") == \"ready\"\nand e.get(\"email\", \"\").lower() not in BLACKLIST\n]\ngia_inviate  = sum(1 for e in all_emails if e.get(\"status\") == \"sent\")\ncon_errori   = sum(1 for e in all_emails if \"error\" in e.get(\"status\", \"\"))\nprint(f\"\\n{'='*55}\")\nprint(f\"  emails_ready.json — riepilogo\")\nprint(f\"{'='*55}\")\nprint(f\"  Da inviare   : {len(da_inviare)}\")\nprint(f\"  Già inviate  : {gia_inviate}\")\nprint(f\"  Con error",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "def main():\ndry_run = \"--dry-run\" in sys.argv\nauto    = \"--auto\" in sys.argv\nwith open(INPUT_PATH, encoding=\"utf-8\") as f:\nall_emails = json.load(f)\nda_inviare = [\ne for e in all_emails\nif e.get(\"stat"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per main():: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-016",
+      "title": "Preview prime 3",
+      "category": "procedure",
+      "canonical_definition": "# Preview prime 3",
+      "extended_explanation": "# Preview prime 3\nprint(\"ANTEPRIMA prime 3 email:\\n\")\nfor e in da_inviare[:3]:\nprint(f\"  [{e['nicchia']}] {e['page_name']}\")\nprint(f\"  To     : {e['email']}\")\nprint(f\"  Oggetto: {e['oggetto']}\")\nprint()\nif dry_run:\nprint(\"DRY-RUN: nessuna email inviata. Rimuovi --dry-run per inviare.\")\nreturn\nif not auto:\nrisposta = input(f\"Inviare {len(da_inviare)} email? [s/N] \").strip().lower()\nif risposta not in (\"s\", \"si\", \"sì\", \"y\", \"yes\"):\nprint(\"Annullato.\")\nreturn\nelse:\nprint(f\"AUTO: invio {len(da_inviare)} email senza conferma interattiva.\\n\")",
+      "source_excerpt": "# Preview prime 3\nprint(\"ANTEPRIMA prime 3 email:\\n\")\nfor e in da_inviare[:3]:\nprint(f\"  [{e['nicchia']}] {e['page_name']}\")\nprint(f\"  To     : {e['email']}\")\nprint(f\"  Oggetto: {e['oggetto']}\")\nprint()\nif dry_run:\nprint(\"DRY-RUN: nessuna email inviata. Rimuovi --dry-run per inviare.\")\nreturn\nif not auto:\nrisposta = input(f\"Inviare {len(da_inviare)} email? [s/N] \").strip().lower()\nif risposta not in (\"s\", \"si\", \"sì\", \"y\", \"yes\"):\nprint(\"Annullato.\")\nreturn\nelse:\nprint(f\"AUTO: invio {len(da_inviare)} email senza conferma interattiva.\\n\")",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# Preview prime 3\nprint(\"ANTEPRIMA prime 3 email:\\n\")\nfor e in da_inviare[:3]:\nprint(f\"  [{e['nicchia']}] {e['page_name']}\")\nprint(f\"  To     : {e['email']}\")\nprint(f\"  Oggetto: {e['oggetto']}\")\nprint"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Preview prime 3: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    },
+    {
+      "id": "a-chunk-016-017",
+      "title": "Applica limite giornaliero",
+      "category": "procedure",
+      "canonical_definition": "# Applica limite giornaliero",
+      "extended_explanation": "# Applica limite giornaliero\nif len(da_inviare) > DAILY_LIMIT_PER_ACCOUNT:\nprint(f\"ATTENZIONE: {len(da_inviare)} email pronte, ma limite giornaliero = {DAILY_LIMIT_PER_ACCOUNT}.\")\nprint(f\"Invio solo le prime {DAILY_LIMIT_PER_ACCOUNT}. Esegui di nuovo domani per le restanti.\\n\")\nda_inviare = da_inviare[:DAILY_LIMIT_PER_ACCOUNT]\nprint(f\"\\nInizio invio ({len(da_inviare)} email, cap {DAILY_LIMIT_PER_ACCOUNT}/giorno)...\\n\")\ninviati = 0\nerrori  = 0\nfor i, item in enumerate(da_inviare, 1):\ndest    = item[\"email\"].strip()\noggetto = item[\"oggetto\"]\ncorpo   = item[\"corpo\"]\nnome    = item[\"page_name\"]\naccount_idx = i - 1\naccount_user = _ACTIVE_ACCOUNTS[account_idx % len(_ACTIVE_ACCOUNTS)][\"user\"]\nprint(f\"[{i:02d}/{len(da_inviare)}] {nome[:45]}\")\nprint(f\"         To     : {dest}\")\nprint(f\"         Oggetto: {oggetto[:60]}\")\nprint(f\"         From   : {account_user}\")\nok = _invia(dest, oggetto, corpo, account_idx=account_idx)\nif ok:\ninviati += 1\nitem[\"status\"] = \"sent\"\nprint(f\"         OK Inviata\")\nelse:\nerrori += 1\nitem[\"status\"] = \"send_failed\"\n_flush(all_emails)\nif i < len(da_inviare):\nprint(f\"         Attendo {DELAY_SECONDS}s...\")\ntime.sleep(DELAY_SECONDS)\nprint(f\"\\n{'='*55}\")\nprint(f\"RISULTATO: {inviati} inviate | {errori} errori\")\nprint(f\"Log aggiornato: {INPUT_PATH}\")\nprint(f\"{'='*55}\\n\")\nif __name__ == \"__main__\":\nmain()",
+      "source_excerpt": "# Applica limite giornaliero\nif len(da_inviare) > DAILY_LIMIT_PER_ACCOUNT:\nprint(f\"ATTENZIONE: {len(da_inviare)} email pronte, ma limite giornaliero = {DAILY_LIMIT_PER_ACCOUNT}.\")\nprint(f\"Invio solo le prime {DAILY_LIMIT_PER_ACCOUNT}. Esegui di nuovo domani per le restanti.\\n\")\nda_inviare = da_inviare[:DAILY_LIMIT_PER_ACCOUNT]\nprint(f\"\\nInizio invio ({len(da_inviare)} email, cap {DAILY_LIMIT_PER_ACCOUNT}/giorno)...\\n\")\ninviati = 0\nerrori  = 0\nfor i, item in enumerate(da_inviare, 1):\ndest    = item[\"email\"].strip()\noggetto = item[\"oggetto\"]\ncorpo   = item[\"corpo\"]\nnome    = item[\"page_name\"]\nac",
+      "source_offset": [
+        70599,
+        76667
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "examples_from_source": [
+        "# Applica limite giornaliero\nif len(da_inviare) > DAILY_LIMIT_PER_ACCOUNT:\nprint(f\"ATTENZIONE: {len(da_inviare)} email pronte, ma limite giornaliero = {DAILY_LIMIT_PER_ACCOUNT}.\")\nprint(f\"Invio solo l"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Applica limite giornaliero: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-014",
+        "send_outreach_ready"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 611,
+    "atom_count": 17,
+    "dominant_categories": [
+      "procedure"
+    ]
+  }
+}

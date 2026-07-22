@@ -1,0 +1,96 @@
+{
+  "chunk_id": "chunk-010",
+  "atoms": [
+    {
+      "id": "a-chunk-010-001",
+      "title": "fliki_youtube_test.py",
+      "category": "procedure",
+      "canonical_definition": "# Script di verifica API Fliki e render video di test (WF-S5)",
+      "extended_explanation": "# Script di verifica API Fliki e render video di test (WF-S5)\nimport os",
+      "source_excerpt": "# Script di verifica API Fliki e render video di test (WF-S5)\nimport os",
+      "source_offset": [
+        42020,
+        42396
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/fliki_youtube_test.py"
+      ],
+      "examples_from_source": [
+        "# Script di verifica API Fliki e render video di test (WF-S5)\nimport os"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per fliki_youtube_test.py: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/fliki_youtube_test.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-010",
+        "fliki_youtube_test"
+      ]
+    },
+    {
+      "id": "a-chunk-010-002",
+      "title": "test_fliki_api():",
+      "category": "procedure",
+      "canonical_definition": "def test_fliki_api():",
+      "extended_explanation": "def test_fliki_api():\nkey = os.environ.get('FLIKI_API_KEY')\nif not key:\nprint('[WARN] FLIKI_API_KEY non trovata in .env o variabili di sistema.')\nreturn False\nprint('[INFO] Verifica connessione a Fliki API...')\nreturn True\nif __name__ == '__main__':\ntest_fliki_api()",
+      "source_excerpt": "def test_fliki_api():\nkey = os.environ.get('FLIKI_API_KEY')\nif not key:\nprint('[WARN] FLIKI_API_KEY non trovata in .env o variabili di sistema.')\nreturn False\nprint('[INFO] Verifica connessione a Fliki API...')\nreturn True\nif __name__ == '__main__':\ntest_fliki_api()",
+      "source_offset": [
+        42020,
+        42396
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/fliki_youtube_test.py"
+      ],
+      "examples_from_source": [
+        "def test_fliki_api():\nkey = os.environ.get('FLIKI_API_KEY')\nif not key:\nprint('[WARN] FLIKI_API_KEY non trovata in .env o variabili di sistema.')\nreturn False\nprint('[INFO] Verifica connessione a Flik"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per test_fliki_api():: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/fliki_youtube_test.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-010",
+        "fliki_youtube_test"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 47,
+    "atom_count": 2,
+    "dominant_categories": [
+      "procedure"
+    ]
+  }
+}

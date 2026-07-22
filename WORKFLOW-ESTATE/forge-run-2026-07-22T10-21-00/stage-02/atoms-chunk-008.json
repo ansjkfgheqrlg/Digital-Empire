@@ -1,0 +1,306 @@
+{
+  "chunk_id": "chunk-008",
+  "atoms": [
+    {
+      "id": "a-chunk-008-001",
+      "title": "WF-S6-REBRAND-PROMO.md",
+      "category": "procedure",
+      "canonical_definition": "# WF-S6 — REBRAND & PROMO: da PreventivoForge a **PREVENTA**",
+      "extended_explanation": "# WF-S6 — REBRAND & PROMO: da PreventivoForge a **PREVENTA**\n> Stream: S6 · Window: 22→26/07 · Owner: chief-forge · Dipende da: **DEC-EST-002** (default Preventa, veto 22/07 h12:00)\n> Perché è oro: prodotto VIVO (Novacar live), fabbrica clone in ore, kill-switch = riscossione garantita. I 7 di S1 = primi testimonial.",
+      "source_excerpt": "# WF-S6 — REBRAND & PROMO: da PreventivoForge a **PREVENTA**\n> Stream: S6 · Window: 22→26/07 · Owner: chief-forge · Dipende da: **DEC-EST-002** (default Preventa, veto 22/07 h12:00)\n> Perché è oro: prodotto VIVO (Novacar live), fabbrica clone in ore, kill-switch = riscossione garantita. I 7 di S1 = primi testimonial.",
+      "source_offset": [
+        29980,
+        32458
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "examples_from_source": [
+        "# WF-S6 — REBRAND & PROMO: da PreventivoForge a **PREVENTA**\n> Stream: S6 · Window: 22→26/07 · Owner: chief-forge · Dipende da: **DEC-EST-002** (default Preventa, veto 22/07 h12:00)\n> Perché è oro: pr"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per WF-S6-REBRAND-PROMO.md: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-008",
+        "WF-S6-REBRAND-PROMO"
+      ]
+    },
+    {
+      "id": "a-chunk-008-002",
+      "title": "1. Identità (dopo veto)",
+      "category": "procedure",
+      "canonical_definition": "## 1. Identità (dopo veto)",
+      "extended_explanation": "## 1. Identità (dopo veto)\n- **Nome**: Preventa (default DEC-EST-002). Promessa: *\"Il preventivo professionale in 3 minuti.\"*\n- **Verifica dominio/handle DOPO la scelta** (mai prima — regola anti-spreco): preferenza `preventa.it`, fallback `preventa.app` / `getpreventa.com`. Esito → `decision --title \"dominio Preventa\"`.",
+      "source_excerpt": "## 1. Identità (dopo veto)\n- **Nome**: Preventa (default DEC-EST-002). Promessa: *\"Il preventivo professionale in 3 minuti.\"*\n- **Verifica dominio/handle DOPO la scelta** (mai prima — regola anti-spreco): preferenza `preventa.it`, fallback `preventa.app` / `getpreventa.com`. Esito → `decision --title \"dominio Preventa\"`.",
+      "source_offset": [
+        29980,
+        32458
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "examples_from_source": [
+        "## 1. Identità (dopo veto)\n- **Nome**: Preventa (default DEC-EST-002). Promessa: *\"Il preventivo professionale in 3 minuti.\"*\n- **Verifica dominio/handle DOPO la scelta** (mai prima — regola anti-spre"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 1. Identità (dopo veto): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-008",
+        "WF-S6-REBRAND-PROMO"
+      ]
+    },
+    {
+      "id": "a-chunk-008-003",
+      "title": "2. Promo-kit minimo (DoD congelata)",
+      "category": "procedure",
+      "canonical_definition": "## 2. Promo-kit minimo (DoD congelata)",
+      "extended_explanation": "## 2. Promo-kit minimo (DoD congelata)\n| Pezzo | Owner | Contenuto | Due |\n|---|---|---|---|\n| Case study Novacar (PDF) | claude (case-study-forge) | prova reale: prima/dopo, tempi (3 min vs ore), PDF esempio, quote cliente se disponibile | 23/07 |\n| Landing Preventa | gael (empire-premium-style) | 1 pagina: demo video + PDF esempio + prezzo/licenza + CTA \"attivazione\" | 24/07 |\n| Demo video ≤2min | gael | screen-recording GUI premium: da dati auto→PDF inviato | 24/07 |\n| Lista lead import-DE | A1 scrape | dealer IT che vendono auto import dalla Germania (mobile.de): nome, sito, email/form | 25/07 |\n| Sequenza outreach | A2 runtime | 3 email con case study allegato; CTA call 15' | 26/07 |",
+      "source_excerpt": "## 2. Promo-kit minimo (DoD congelata)\n| Pezzo | Owner | Contenuto | Due |\n|---|---|---|---|\n| Case study Novacar (PDF) | claude (case-study-forge) | prova reale: prima/dopo, tempi (3 min vs ore), PDF esempio, quote cliente se disponibile | 23/07 |\n| Landing Preventa | gael (empire-premium-style) | 1 pagina: demo video + PDF esempio + prezzo/licenza + CTA \"attivazione\" | 24/07 |\n| Demo video ≤2min | gael | screen-recording GUI premium: da dati auto→PDF inviato | 24/07 |\n| Lista lead import-DE | A1 scrape | dealer IT che vendono auto import dalla Germania (mobile.de): nome, sito, email/form | 2",
+      "source_offset": [
+        29980,
+        32458
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "examples_from_source": [
+        "## 2. Promo-kit minimo (DoD congelata)\n| Pezzo | Owner | Contenuto | Due |\n|---|---|---|---|\n| Case study Novacar (PDF) | claude (case-study-forge) | prova reale: prima/dopo, tempi (3 min vs ore), PDF"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 2. Promo-kit minimo (DoD congelata): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-008",
+        "WF-S6-REBRAND-PROMO"
+      ]
+    },
+    {
+      "id": "a-chunk-008-004",
+      "title": "3. Modello commerciale",
+      "category": "procedure",
+      "canonical_definition": "## 3. Modello commerciale",
+      "extended_explanation": "## 3. Modello commerciale\n- **Setup** una tantum (sconto solo per la campagna S1 \"Partenza Anticipata\") + **canone mensile** (kill-switch licenze = riscossione garantita).\n- ICP: concessionari IT che importano dalla Germania (preventivi complessi: IVA, immatricolazione, trasporto — Preventa li gestisce out-of-the-box).",
+      "source_excerpt": "## 3. Modello commerciale\n- **Setup** una tantum (sconto solo per la campagna S1 \"Partenza Anticipata\") + **canone mensile** (kill-switch licenze = riscossione garantita).\n- ICP: concessionari IT che importano dalla Germania (preventivi complessi: IVA, immatricolazione, trasporto — Preventa li gestisce out-of-the-box).",
+      "source_offset": [
+        29980,
+        32458
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "examples_from_source": [
+        "## 3. Modello commerciale\n- **Setup** una tantum (sconto solo per la campagna S1 \"Partenza Anticipata\") + **canone mensile** (kill-switch licenze = riscossione garantita).\n- ICP: concessionari IT che "
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 3. Modello commerciale: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-008",
+        "WF-S6-REBRAND-PROMO"
+      ]
+    },
+    {
+      "id": "a-chunk-008-005",
+      "title": "4. Sequenza outreach (A2, 3 email)",
+      "category": "procedure",
+      "canonical_definition": "## 4. Sequenza outreach (A2, 3 email)",
+      "extended_explanation": "## 4. Sequenza outreach (A2, 3 email)\n- **E1**: problema (preventivi lenti/disordinati per import) + case study PDF allegato.\n- **E2** (+2g): demo video 2min + \"lo installiamo in un giorno sui tuoi dati\".\n- **E3** (+4g): offerta identica a S1 (scadenza 31/07) + CTA binaria.",
+      "source_excerpt": "## 4. Sequenza outreach (A2, 3 email)\n- **E1**: problema (preventivi lenti/disordinati per import) + case study PDF allegato.\n- **E2** (+2g): demo video 2min + \"lo installiamo in un giorno sui tuoi dati\".\n- **E3** (+4g): offerta identica a S1 (scadenza 31/07) + CTA binaria.",
+      "source_offset": [
+        29980,
+        32458
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "examples_from_source": [
+        "## 4. Sequenza outreach (A2, 3 email)\n- **E1**: problema (preventivi lenti/disordinati per import) + case study PDF allegato.\n- **E2** (+2g): demo video 2min + \"lo installiamo in un giorno sui tuoi da"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 4. Sequenza outreach (A2, 3 email): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-008",
+        "WF-S6-REBRAND-PROMO"
+      ]
+    },
+    {
+      "id": "a-chunk-008-006",
+      "title": "5. Sinergie",
+      "category": "procedure",
+      "canonical_definition": "## 5. Sinergie",
+      "extended_explanation": "## 5. Sinergie\n- S1 chiusi → testimonial citati nella landing (con permesso) → alimentano S6.\n- Il runtime A2 vende da solo: stesso motore outreach, ICP nuovo (ADR-002 wrap).\n- Revenue: **setup + canone** da settimana prox; questa settimana il kit si costruisce e parte la prima sequenza (25-26/07).",
+      "source_excerpt": "## 5. Sinergie\n- S1 chiusi → testimonial citati nella landing (con permesso) → alimentano S6.\n- Il runtime A2 vende da solo: stesso motore outreach, ICP nuovo (ADR-002 wrap).\n- Revenue: **setup + canone** da settimana prox; questa settimana il kit si costruisce e parte la prima sequenza (25-26/07).",
+      "source_offset": [
+        29980,
+        32458
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "examples_from_source": [
+        "## 5. Sinergie\n- S1 chiusi → testimonial citati nella landing (con permesso) → alimentano S6.\n- Il runtime A2 vende da solo: stesso motore outreach, ICP nuovo (ADR-002 wrap).\n- Revenue: **setup + cano"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 5. Sinergie: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-008",
+        "WF-S6-REBRAND-PROMO"
+      ]
+    },
+    {
+      "id": "a-chunk-008-007",
+      "title": "6. Metriche",
+      "category": "procedure",
+      "canonical_definition": "## 6. Metriche",
+      "extended_explanation": "## 6. Metriche\n`s6_kit_pronto` (0/1) · lista lead (n) · email inviate/risposte (diagnostica). Lagging reale: call prenotate.\n---\n⛓️ P12: `WF-S6#estate-2026` · trace: DEC-EST-002, F-08, direttiva Max 19/07 (\"come infinite\" = nome forte)",
+      "source_excerpt": "## 6. Metriche\n`s6_kit_pronto` (0/1) · lista lead (n) · email inviate/risposte (diagnostica). Lagging reale: call prenotate.\n---\n⛓️ P12: `WF-S6#estate-2026` · trace: DEC-EST-002, F-08, direttiva Max 19/07 (\"come infinite\" = nome forte)",
+      "source_offset": [
+        29980,
+        32458
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "examples_from_source": [
+        "## 6. Metriche\n`s6_kit_pronto` (0/1) · lista lead (n) · email inviate/risposte (diagnostica). Lagging reale: call prenotate.\n---\n⛓️ P12: `WF-S6#estate-2026` · trace: DEC-EST-002, F-08, direttiva Max 1"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 6. Metriche: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-008",
+        "WF-S6-REBRAND-PROMO"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 385,
+    "atom_count": 7,
+    "dominant_categories": [
+      "procedure"
+    ]
+  }
+}

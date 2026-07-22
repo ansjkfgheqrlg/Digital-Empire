@@ -1,0 +1,264 @@
+{
+  "chunk_id": "chunk-002",
+  "atoms": [
+    {
+      "id": "a-chunk-002-001",
+      "title": "WF-MASTER.md",
+      "category": "procedure",
+      "canonical_definition": "# WF-MASTER — Orchestratore della settimana (21→26/07/2026)",
+      "extended_explanation": "# WF-MASTER — Orchestratore della settimana (21→26/07/2026)\n> Owner: chief-forge · Ricorre: continuo · Config macchina: `workflows.yaml`\n> Unico compito: far eseguire il MASTER PLAN (P7) rispettando gates, coda swarm, memoria.",
+      "source_excerpt": "# WF-MASTER — Orchestratore della settimana (21→26/07/2026)\n> Owner: chief-forge · Ricorre: continuo · Config macchina: `workflows.yaml`\n> Unico compito: far eseguire il MASTER PLAN (P7) rispettando gates, coda swarm, memoria.",
+      "source_offset": [
+        6516,
+        8510
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-MASTER.md"
+      ],
+      "examples_from_source": [
+        "# WF-MASTER — Orchestratore della settimana (21→26/07/2026)\n> Owner: chief-forge · Ricorre: continuo · Config macchina: `workflows.yaml`\n> Unico compito: far eseguire il MASTER PLAN (P7) rispettando g"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per WF-MASTER.md: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-MASTER.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-002",
+        "WF-MASTER"
+      ]
+    },
+    {
+      "id": "a-chunk-002-002",
+      "title": "Loop giornaliero",
+      "category": "procedure",
+      "canonical_definition": "## Loop giornaliero",
+      "extended_explanation": "## Loop giornaliero\n```\n09:00  leggi dashboard (07-CONTROL) → gate di oggi? → brief mentale 5'\n09:30  corsia Max (finestra contatti S1) · corsia Gael (build in sequenza P7)\n19:00  WF-MEM-EOD: metriche → dashboard → checkpoint EOD → segnala slittamenti\n```",
+      "source_excerpt": "## Loop giornaliero\n```\n09:00  leggi dashboard (07-CONTROL) → gate di oggi? → brief mentale 5'\n09:30  corsia Max (finestra contatti S1) · corsia Gael (build in sequenza P7)\n19:00  WF-MEM-EOD: metriche → dashboard → checkpoint EOD → segnala slittamenti\n```",
+      "source_offset": [
+        6516,
+        8510
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-MASTER.md"
+      ],
+      "examples_from_source": [
+        "## Loop giornaliero\n```\n09:00  leggi dashboard (07-CONTROL) → gate di oggi? → brief mentale 5'\n09:30  corsia Max (finestra contatti S1) · corsia Gael (build in sequenza P7)\n19:00  WF-MEM-EOD: metriche"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Loop giornaliero: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-MASTER.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-002",
+        "WF-MASTER"
+      ]
+    },
+    {
+      "id": "a-chunk-002-003",
+      "title": "Regole di orchestrazione",
+      "category": "procedure",
+      "canonical_definition": "## Regole di orchestrazione",
+      "extended_explanation": "## Regole di orchestrazione\n1. **Revenue-first**: contesa risorse → vince il task con €/h più alto (P4 tabella).\n2. **Coda swarm**: max 1 pesante (Opus) → ordine S1 > S2 > S6 > S5; il resto degradato a esecuzione singola.\n3. **Gate discipline**: al deadline il gate si marca 🟢/🔴 e si applica il kill-criterio (P5 §2). Nessun gate \"quasi verde\".\n4. **Default-decision enforcement**: veto scaduto → la decisione passa ad ATTIVA → si nota in dashboard e si procede.\n5. **Zero-surprise memory**: qualsiasi cosa chiuda/cambi/fallisca → atomo di memoria corrispondente.",
+      "source_excerpt": "## Regole di orchestrazione\n1. **Revenue-first**: contesa risorse → vince il task con €/h più alto (P4 tabella).\n2. **Coda swarm**: max 1 pesante (Opus) → ordine S1 > S2 > S6 > S5; il resto degradato a esecuzione singola.\n3. **Gate discipline**: al deadline il gate si marca 🟢/🔴 e si applica il kill-criterio (P5 §2). Nessun gate \"quasi verde\".\n4. **Default-decision enforcement**: veto scaduto → la decisione passa ad ATTIVA → si nota in dashboard e si procede.\n5. **Zero-surprise memory**: qualsiasi cosa chiuda/cambi/fallisca → atomo di memoria corrispondente.",
+      "source_offset": [
+        6516,
+        8510
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-MASTER.md"
+      ],
+      "examples_from_source": [
+        "## Regole di orchestrazione\n1. **Revenue-first**: contesa risorse → vince il task con €/h più alto (P4 tabella).\n2. **Coda swarm**: max 1 pesante (Opus) → ordine S1 > S2 > S6 > S5; il resto degradato "
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Regole di orchestrazione: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-MASTER.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-002",
+        "WF-MASTER"
+      ]
+    },
+    {
+      "id": "a-chunk-002-004",
+      "title": "Mappa gate (specchietto rapido)",
+      "category": "procedure",
+      "canonical_definition": "## Mappa gate (specchietto rapido)",
+      "extended_explanation": "## Mappa gate (specchietto rapido)\n| Gate | Deadline | 🟢 se | 🔴 → azione |\n|---|---|---|---|\n| DEC | 21/07 20:00 | DEC-001 ATTIVA | impossibile (auto-default) |\n| FUNNEL | 22/07 20:00 | test €1 OK | fallback checkout (≤2h) |\n| CONTATTI | 23/07 12:00 | 7/7 contattati | follow-up delegato + push S2 compensa |\n| S4 | 24/07 20:00 | E2E auto OK | mentalita.brutale STANDBY |\n| S5 | 23/07 18:00 | Fliki OK | ladder video → altrimenti slitta |\n| REV | 26/07 | ≥1 anticipo incassato | RETRO causa radice → pattern correttivi |",
+      "source_excerpt": "## Mappa gate (specchietto rapido)\n| Gate | Deadline | 🟢 se | 🔴 → azione |\n|---|---|---|---|\n| DEC | 21/07 20:00 | DEC-001 ATTIVA | impossibile (auto-default) |\n| FUNNEL | 22/07 20:00 | test €1 OK | fallback checkout (≤2h) |\n| CONTATTI | 23/07 12:00 | 7/7 contattati | follow-up delegato + push S2 compensa |\n| S4 | 24/07 20:00 | E2E auto OK | mentalita.brutale STANDBY |\n| S5 | 23/07 18:00 | Fliki OK | ladder video → altrimenti slitta |\n| REV | 26/07 | ≥1 anticipo incassato | RETRO causa radice → pattern correttivi |",
+      "source_offset": [
+        6516,
+        8510
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-MASTER.md"
+      ],
+      "examples_from_source": [
+        "## Mappa gate (specchietto rapido)\n| Gate | Deadline | 🟢 se | 🔴 → azione |\n|---|---|---|---|\n| DEC | 21/07 20:00 | DEC-001 ATTIVA | impossibile (auto-default) |\n| FUNNEL | 22/07 20:00 | test €1 OK | f"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Mappa gate (specchietto rapido): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-MASTER.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-002",
+        "WF-MASTER"
+      ]
+    },
+    {
+      "id": "a-chunk-002-005",
+      "title": "Dipendenze (da P3 DAG)",
+      "category": "procedure",
+      "canonical_definition": "## Dipendenze (da P3 DAG)",
+      "extended_explanation": "## Dipendenze (da P3 DAG)\nDEC-001→(landing, email) · audit→(bio S3, config S4) · DEC-002→kit S6 · case-study→outreach S6 · Fliki-test→WF-S5 · DEC-004→WF-S5.",
+      "source_excerpt": "## Dipendenze (da P3 DAG)\nDEC-001→(landing, email) · audit→(bio S3, config S4) · DEC-002→kit S6 · case-study→outreach S6 · Fliki-test→WF-S5 · DEC-004→WF-S5.",
+      "source_offset": [
+        6516,
+        8510
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-MASTER.md"
+      ],
+      "examples_from_source": [
+        "## Dipendenze (da P3 DAG)\nDEC-001→(landing, email) · audit→(bio S3, config S4) · DEC-002→kit S6 · case-study→outreach S6 · Fliki-test→WF-S5 · DEC-004→WF-S5."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Dipendenze (da P3 DAG): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-MASTER.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-002",
+        "WF-MASTER"
+      ]
+    },
+    {
+      "id": "a-chunk-002-006",
+      "title": "Handoff memoria",
+      "category": "procedure",
+      "canonical_definition": "## Handoff memoria",
+      "extended_explanation": "## Handoff memoria\nOgni venera... no: **ogni sera h19:00** — `checkpoint --task EOD-<data> --note \"gate: ... slittamenti: ...\"`. Domenica 26/07 → WF-MEM-RETRO.\n---\n⛓️ P12: `WF-MASTER#estate-2026` · orchestra: WF-S1..S6, WF-MEM-* · fonti: PLANNING-P7, ARCHITETTURA",
+      "source_excerpt": "## Handoff memoria\nOgni venera... no: **ogni sera h19:00** — `checkpoint --task EOD-<data> --note \"gate: ... slittamenti: ...\"`. Domenica 26/07 → WF-MEM-RETRO.\n---\n⛓️ P12: `WF-MASTER#estate-2026` · orchestra: WF-S1..S6, WF-MEM-* · fonti: PLANNING-P7, ARCHITETTURA",
+      "source_offset": [
+        6516,
+        8510
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-MASTER.md"
+      ],
+      "examples_from_source": [
+        "## Handoff memoria\nOgni venera... no: **ogni sera h19:00** — `checkpoint --task EOD-<data> --note \"gate: ... slittamenti: ...\"`. Domenica 26/07 → WF-MEM-RETRO.\n---\n⛓️ P12: `WF-MASTER#estate-2026` · or"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Handoff memoria: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-MASTER.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-002",
+        "WF-MASTER"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 323,
+    "atom_count": 6,
+    "dominant_categories": [
+      "procedure"
+    ]
+  }
+}

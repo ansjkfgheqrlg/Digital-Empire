@@ -1,0 +1,160 @@
+{
+  "project_name": "WORKFLOW-ESTATE",
+  "generated_at": "2026-07-22T10:30:00Z",
+  "total_components": 17,
+  "components": [
+    {
+      "id": "wf-s1",
+      "name": "Funnel Concessionari & Outreach WhatsApp S1",
+      "type": "workflow",
+      "path": "01-FLUSSI-E-PIANI/WF-S1-CONCESSIONARI.md",
+      "cluster_id": "c-002",
+      "trigger": "Scraping lead concessionari o input manuale lista numerica",
+      "expected_output": "Lead qualificata e appuntamento/chiamata per Closer A8"
+    },
+    {
+      "id": "wf-s2",
+      "name": "Manuale Operativo e Gestione Lead S2",
+      "type": "workflow",
+      "path": "01-FLUSSI-E-PIANI/WF-S2-MANUALE.md",
+      "cluster_id": "c-002",
+      "trigger": "Richiesta manuale di gestione lead o eccezione su S1",
+      "expected_output": "Tracciamento manuale e sblocco lead fermo nel funnel"
+    },
+    {
+      "id": "wf-s3-s4",
+      "name": "Funnel Pagine & Mentalità S3-S4",
+      "type": "workflow",
+      "path": "01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md",
+      "cluster_id": "c-002",
+      "trigger": "Traffico organico/a pagamento su landing page e funnel mentalità",
+      "expected_output": "Conversione lead ad alta consapevolezza e prenotazione call"
+    },
+    {
+      "id": "wf-s5",
+      "name": "Funnel YouTube & Contenuti Video S5",
+      "type": "workflow",
+      "path": "01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md",
+      "cluster_id": "c-002",
+      "trigger": "Pubblicazione video YouTube / Fliki AI o lead da link in descrizione",
+      "expected_output": "Nurturing automatico via video e invio al Closer"
+    },
+    {
+      "id": "wf-s6",
+      "name": "Rebrand & Lancio Promo S6",
+      "type": "workflow",
+      "path": "01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md",
+      "cluster_id": "c-002",
+      "trigger": "Campagna promo stagionale o rebrand aziendale",
+      "expected_output": "Pressione promozionale controllata e riattivazione database ex-clienti"
+    },
+    {
+      "id": "wf-perf-loop",
+      "name": "Performance Loop & Ottimizzazione Continua",
+      "type": "workflow",
+      "path": "01-FLUSSI-E-PIANI/WF-PERF-LOOP.md",
+      "cluster_id": "c-001",
+      "trigger": "Esecuzione settimanale / audit metriche KPI",
+      "expected_output": "Report CRO e aggiustamento parametri di invio e copy"
+    },
+    {
+      "id": "agent-max",
+      "name": "Agente Max — Direttore Supremo & Governance",
+      "type": "agent",
+      "path": "03-AGENTI-E-RUOLI/AGENTE-MAX.md",
+      "cluster_id": "c-003",
+      "trigger": "Eccezione irrisolvibile, decisione strategica o approvazione master",
+      "expected_output": "Direttiva di governance, sblocco di sistema o ADR firmato"
+    },
+    {
+      "id": "agent-gael",
+      "name": "Agente Gael — Head of Growth & Lead Miner",
+      "type": "agent",
+      "path": "03-AGENTI-E-RUOLI/AGENTE-GAEL.md",
+      "cluster_id": "c-003",
+      "trigger": "Necessità di espandere database lead o qualificare liste esterne",
+      "expected_output": "Liste lead arricchite e pronte per invio script outreach"
+    },
+    {
+      "id": "agent-claude",
+      "name": "Agente Claude — Ideatore Promozioni & Strategist",
+      "type": "agent",
+      "path": "03-AGENTI-E-RUOLI/AGENTE-CLAUDE.md",
+      "cluster_id": "c-003",
+      "trigger": "Lancio promozionale, ideazione angoli di attacco o revisione concettuale",
+      "expected_output": "Concept promozionale strutturato su framework APSOC"
+    },
+    {
+      "id": "agent-andrei",
+      "name": "Agente Andrei Pascu — Persuasion & Copy Architect",
+      "type": "agent",
+      "path": "03-AGENTI-E-RUOLI/AGENTE-ANDREI-PASCU-MINER.md",
+      "cluster_id": "c-003",
+      "trigger": "Generazione copy ad alta conversione o audit persuasivo",
+      "expected_output": "Copy validato con soglia APSOC >= 92%"
+    },
+    {
+      "id": "agent-closer-a8",
+      "name": "Agente Closer A8 — High-Ticket Closer & Billing",
+      "type": "agent",
+      "path": "03-AGENTI-E-RUOLI/AGENTE-CLOSER-A8.md",
+      "cluster_id": "c-003",
+      "trigger": "Lead qualificata arrivata in call o al check-out",
+      "expected_output": "Chiusura contratto, transazione incassata e innesco onboarding"
+    },
+    {
+      "id": "agent-cro",
+      "name": "Agente CRO Copy Architect — Funnel Analyst",
+      "type": "agent",
+      "path": "03-AGENTI-E-RUOLI/AGENTE-CRO-COPY-ARCHITECT.md",
+      "cluster_id": "c-003",
+      "trigger": "Calo del tasso di conversione in un funnel S1-S6 o audit settimanale",
+      "expected_output": "Variazioni di copy A/B testate e patch applicate alla landing/script"
+    },
+    {
+      "id": "script-memory-manager",
+      "name": "Script memory_manager.py — Gestore Memoria Automatizzato",
+      "type": "automation_script",
+      "path": "02-AUTOMAZIONI-E-SCRIPTS/memory_manager.py",
+      "cluster_id": "c-004",
+      "trigger": "Fine sessione, esecuzione EOD o invocazione agente",
+      "expected_output": "Aggiornamento indici di memoria e pulizia file temporanei"
+    },
+    {
+      "id": "script-prepare-outreach",
+      "name": "Script prepare_outreach_emails.py — Preparatore Email",
+      "type": "automation_script",
+      "path": "02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py",
+      "cluster_id": "c-004",
+      "trigger": "Lista lead passata da Gael o attivazione funnel S1/S6",
+      "expected_output": "Batch di email personalizzate pronte nella coda di invio"
+    },
+    {
+      "id": "script-send-whatsapp",
+      "name": "Script send_s1_whatsapp_auto.py — Invio WhatsApp S1",
+      "type": "automation_script",
+      "path": "02-AUTOMAZIONI-E-SCRIPTS/send_s1_whatsapp_auto.py",
+      "cluster_id": "c-004",
+      "trigger": "Trigger orario S1 o batch approvato da Max/Gael",
+      "expected_output": "Messaggi WhatsApp inviati con tracciamento esito in log"
+    },
+    {
+      "id": "script-send-outreach",
+      "name": "Script send_outreach_ready.py — Dispatcher Email",
+      "type": "automation_script",
+      "path": "02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py",
+      "cluster_id": "c-004",
+      "trigger": "Coda email popolata da prepare_outreach_emails.py",
+      "expected_output": "Invio email SMTP/API con gestione rimbalzi e retries"
+    },
+    {
+      "id": "script-checkpoint-eod",
+      "name": "Batch run_checkpoint_eod.bat — Chiusura EOD e Backup",
+      "type": "automation_script",
+      "path": "02-AUTOMAZIONI-E-SCRIPTS/run_checkpoint_eod.bat",
+      "cluster_id": "c-004",
+      "trigger": "Scheduler di sistema orario EOD (End of Day)",
+      "expected_output": "Commit Git/Backup e consolidamento memoria giornaliera"
+    }
+  ]
+}

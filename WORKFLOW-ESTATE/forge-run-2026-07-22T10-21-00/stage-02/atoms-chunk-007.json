@@ -1,0 +1,306 @@
+{
+  "chunk_id": "chunk-007",
+  "atoms": [
+    {
+      "id": "a-chunk-007-001",
+      "title": "WF-S5-YOUTUBE.md",
+      "category": "procedure",
+      "canonical_definition": "# WF-S5 — YOUTUBE FLIKI: canale auto-producente (Empire Studio integrato)",
+      "extended_explanation": "# WF-S5 — YOUTUBE FLIKI: canale auto-producente (Empire Studio integrato)\n> Stream: S5 · Window: 24→25/07 · Owner: YouTube Department · **Scope questa settimana: UN video end-to-end** (P4: niente scaling)\n> Metodo: competitor in ALTRA lingua che performano → rifatti in ITALIANO → pubblicati con link Manuale in descrizione.\n> Dipendenze: DEC-EST-004 (nicchia, veto 24/07) · Gate-S5 (test chiave Fliki 23/07).",
+      "source_excerpt": "# WF-S5 — YOUTUBE FLIKI: canale auto-producente (Empire Studio integrato)\n> Stream: S5 · Window: 24→25/07 · Owner: YouTube Department · **Scope questa settimana: UN video end-to-end** (P4: niente scaling)\n> Metodo: competitor in ALTRA lingua che performano → rifatti in ITALIANO → pubblicati con link Manuale in descrizione.\n> Dipendenze: DEC-EST-004 (nicchia, veto 24/07) · Gate-S5 (test chiave Fliki 23/07).",
+      "source_offset": [
+        26808,
+        29885
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "examples_from_source": [
+        "# WF-S5 — YOUTUBE FLIKI: canale auto-producente (Empire Studio integrato)\n> Stream: S5 · Window: 24→25/07 · Owner: YouTube Department · **Scope questa settimana: UN video end-to-end** (P4: niente scal"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per WF-S5-YOUTUBE.md: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-007",
+        "WF-S5-YOUTUBE"
+      ]
+    },
+    {
+      "id": "a-chunk-007-002",
+      "title": "1. Pipeline 9-stage ( Empire Studio )",
+      "category": "procedure",
+      "canonical_definition": "## 1. Pipeline 9-stage ( Empire Studio )",
+      "extended_explanation": "## 1. Pipeline 9-stage ( Empire Studio )\n| Stage | Nome | Agente | Output |\n|---|---|---|---|\n| 0 | Memory bootstrap + Strategy Manifest | strategy-dept + memory-architect | nicchia (DEC-004) + focus salvati |\n| 1 | Ingestion | yt-channel-ingester / video-single-ingester | 1 video competitor scelto (prova: view/outlier) |\n| 2 | Frame extraction | script ffmpeg | frame-NNN.png campionati |\n| 3 | Visione reale | video-watcher | struttura narrativa del video |\n| 4 | Knowledge atoms | knowledge-extractor | atomi con trace `video-id#ts + frame-NNN` |\n| 5 | Verifica | visual-verifier + compliance-auditor | **gate anti-copia**: riformulato, non tradotto letteralmente |\n| 6 | Forge + Render | content-forge-invoker → **yt-fliki-renderer** | script IT + video renderizzato (o ladder fallback) |\n| 7 | Wiki + Publish | wiki-writer → **yt-seo-publisher** | video live: titolo/desc/tag SEO + **link Manuale in descrizione** |\n| 8 | Improve | update-proposer | pattern → ReasoningBank (`youtube/`) |\n| 9 | Memory close | checkpoint-manager + memory-architect | `memory/youtube-runs/<run-id>/` + CP |",
+      "source_excerpt": "## 1. Pipeline 9-stage ( Empire Studio )\n| Stage | Nome | Agente | Output |\n|---|---|---|---|\n| 0 | Memory bootstrap + Strategy Manifest | strategy-dept + memory-architect | nicchia (DEC-004) + focus salvati |\n| 1 | Ingestion | yt-channel-ingester / video-single-ingester | 1 video competitor scelto (prova: view/outlier) |\n| 2 | Frame extraction | script ffmpeg | frame-NNN.png campionati |\n| 3 | Visione reale | video-watcher | struttura narrativa del video |\n| 4 | Knowledge atoms | knowledge-extractor | atomi con trace `video-id#ts + frame-NNN` |\n| 5 | Verifica | visual-verifier + compliance-au",
+      "source_offset": [
+        26808,
+        29885
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "examples_from_source": [
+        "## 1. Pipeline 9-stage ( Empire Studio )\n| Stage | Nome | Agente | Output |\n|---|---|---|---|\n| 0 | Memory bootstrap + Strategy Manifest | strategy-dept + memory-architect | nicchia (DEC-004) + focus "
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 1. Pipeline 9-stage ( Empire Studio ): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-007",
+        "WF-S5-YOUTUBE"
+      ]
+    },
+    {
+      "id": "a-chunk-007-003",
+      "title": "2. Render ladder (se Gate-S5 🔴)",
+      "category": "procedure",
+      "canonical_definition": "## 2. Render ladder (se Gate-S5 🔴)",
+      "extended_explanation": "## 2. Render ladder (se Gate-S5 🔴)\n1. **Fliki API** (chiave in `.env` — regola 4 dossier).\n2. **Fallback**: script + stock footage (Pexels) + TTS + montaggio ffmpeg.\n3. **Defer**: S5 slitta alla settimana prox con `error --wf WF-YT-RENDER`. **Mai** sottrarre ore a S1/S2.",
+      "source_excerpt": "## 2. Render ladder (se Gate-S5 🔴)\n1. **Fliki API** (chiave in `.env` — regola 4 dossier).\n2. **Fallback**: script + stock footage (Pexels) + TTS + montaggio ffmpeg.\n3. **Defer**: S5 slitta alla settimana prox con `error --wf WF-YT-RENDER`. **Mai** sottrarre ore a S1/S2.",
+      "source_offset": [
+        26808,
+        29885
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "examples_from_source": [
+        "## 2. Render ladder (se Gate-S5 🔴)\n1. **Fliki API** (chiave in `.env` — regola 4 dossier).\n2. **Fallback**: script + stock footage (Pexels) + TTS + montaggio ffmpeg.\n3. **Defer**: S5 slitta alla setti"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 2. Render ladder (se Gate-S5 🔴): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-007",
+        "WF-S5-YOUTUBE"
+      ]
+    },
+    {
+      "id": "a-chunk-007-004",
+      "title": "3. Struttura directory di run (memory-first)",
+      "category": "procedure",
+      "canonical_definition": "## 3. Struttura directory di run (memory-first)",
+      "extended_explanation": "## 3. Struttura directory di run (memory-first)\n```\n00-MEMORY/  (operativa)\nmemory/youtube-runs/<run-id>/    checkpoint P10 + log API\nmemory/knowledge/<video-id>/     atomi + trace P12\nmemory/workflow-state/youtube/   stato canali + ReasoningBank YT\nmemory/errors/youtube/           video saltati, errori Fliki, gate anti-copia\n```\n(questa sottostruttura si crea nel vault second-brain alla prima run; l'operativa resta in 00-MEMORY con `checkpoint --task WF-YT-*`)",
+      "source_excerpt": "## 3. Struttura directory di run (memory-first)\n```\n00-MEMORY/  (operativa)\nmemory/youtube-runs/<run-id>/    checkpoint P10 + log API\nmemory/knowledge/<video-id>/     atomi + trace P12\nmemory/workflow-state/youtube/   stato canali + ReasoningBank YT\nmemory/errors/youtube/           video saltati, errori Fliki, gate anti-copia\n```\n(questa sottostruttura si crea nel vault second-brain alla prima run; l'operativa resta in 00-MEMORY con `checkpoint --task WF-YT-*`)",
+      "source_offset": [
+        26808,
+        29885
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "examples_from_source": [
+        "## 3. Struttura directory di run (memory-first)\n```\n00-MEMORY/  (operativa)\nmemory/youtube-runs/<run-id>/    checkpoint P10 + log API\nmemory/knowledge/<video-id>/     atomi + trace P12\nmemory/workflow"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 3. Struttura directory di run (memory-fi: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-007",
+        "WF-S5-YOUTUBE"
+      ]
+    },
+    {
+      "id": "a-chunk-007-005",
+      "title": "4. SEO pack pubblicazione (yt-seo-publisher)",
+      "category": "procedure",
+      "canonical_definition": "## 4. SEO pack pubblicazione (yt-seo-publisher)",
+      "extended_explanation": "## 4. SEO pack pubblicazione (yt-seo-publisher)\n- Titolo: pattern competitor + keyword IT (\"Claude Code\", \"AI per lavorare\", \"automazione\").\n- Descrizione: 2 righe valore → **link Manuale (S2)** → capitoli → tag.\n- CTA verbale nel primo 10%: \"risorsa gratuita in descrizione\" (Parte 1 del Manuale).",
+      "source_excerpt": "## 4. SEO pack pubblicazione (yt-seo-publisher)\n- Titolo: pattern competitor + keyword IT (\"Claude Code\", \"AI per lavorare\", \"automazione\").\n- Descrizione: 2 righe valore → **link Manuale (S2)** → capitoli → tag.\n- CTA verbale nel primo 10%: \"risorsa gratuita in descrizione\" (Parte 1 del Manuale).",
+      "source_offset": [
+        26808,
+        29885
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "examples_from_source": [
+        "## 4. SEO pack pubblicazione (yt-seo-publisher)\n- Titolo: pattern competitor + keyword IT (\"Claude Code\", \"AI per lavorare\", \"automazione\").\n- Descrizione: 2 righe valore → **link Manuale (S2)** → cap"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 4. SEO pack pubblicazione (yt-seo-publis: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-007",
+        "WF-S5-YOUTUBE"
+      ]
+    },
+    {
+      "id": "a-chunk-007-006",
+      "title": "5. Revenue path (verità, da P6)",
+      "category": "procedure",
+      "canonical_definition": "## 5. Revenue path (verità, da P6)",
+      "extended_explanation": "## 5. Revenue path (verità, da P6)\nQuesta settimana: **0 € diretti** — il video porta lead verso S2 (lead-gen). AdSense/compounding: agosto-settembre. Chi dice altro, mente.",
+      "source_excerpt": "## 5. Revenue path (verità, da P6)\nQuesta settimana: **0 € diretti** — il video porta lead verso S2 (lead-gen). AdSense/compounding: agosto-settembre. Chi dice altro, mente.",
+      "source_offset": [
+        26808,
+        29885
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "examples_from_source": [
+        "## 5. Revenue path (verità, da P6)\nQuesta settimana: **0 € diretti** — il video porta lead verso S2 (lead-gen). AdSense/compounding: agosto-settembre. Chi dice altro, mente."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 5. Revenue path (verità, da P6): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-007",
+        "WF-S5-YOUTUBE"
+      ]
+    },
+    {
+      "id": "a-chunk-007-007",
+      "title": "6. Regole non negoziabili",
+      "category": "procedure",
+      "canonical_definition": "## 6. Regole non negoziabili",
+      "extended_explanation": "## 6. Regole non negoziabili\nchiave solo `.env` · zero stub (validator 0 violazioni) · memory-first dopo OGNI run · tracciabilità P12 su ogni atomo · revenue-before-perfection (ogni video porta al Manuale) · 1 video basta questa settimana.\n---\n⛓️ P12: `WF-S5#estate-2026` · trace: DEC-EST-004, F-05, R-05, R-07 · gates: Gate-S5 23/07, checkpoint stage 9",
+      "source_excerpt": "## 6. Regole non negoziabili\nchiave solo `.env` · zero stub (validator 0 violazioni) · memory-first dopo OGNI run · tracciabilità P12 su ogni atomo · revenue-before-perfection (ogni video porta al Manuale) · 1 video basta questa settimana.\n---\n⛓️ P12: `WF-S5#estate-2026` · trace: DEC-EST-004, F-05, R-05, R-07 · gates: Gate-S5 23/07, checkpoint stage 9",
+      "source_offset": [
+        26808,
+        29885
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "examples_from_source": [
+        "## 6. Regole non negoziabili\nchiave solo `.env` · zero stub (validator 0 violazioni) · memory-first dopo OGNI run · tracciabilità P12 su ogni atomo · revenue-before-perfection (ogni video porta al Man"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 6. Regole non negoziabili: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-007",
+        "WF-S5-YOUTUBE"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 462,
+    "atom_count": 7,
+    "dominant_categories": [
+      "procedure"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "run_id": "forge-run-2026-07-22T10-21-00",
+  "started_at": "2026-07-22T10:21:00Z",
+  "input": {
+    "path": "c:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\WORKFLOW-ESTATE",
+    "is_folder": true,
+    "files_count": 21,
+    "total_words": 18500,
+    "type": "multi-source-folder",
+    "input_mode": "folder"
+  },
+  "target": "master-build-architecture+orchestration",
+  "user_answers": {},
+  "current_stage": "stage-06",
+  "completed_stages": [
+    "stage-01",
+    "stage-02",
+    "stage-03",
+    "stage-04",
+    "stage-05"
+  ],
+  "spawned_agents": [
+    {
+      "agent_id": "A1 ingestion-agent",
+      "spawned_at": "2026-07-22T10:24:00Z",
+      "completed_at": "2026-07-22T10:24:00Z",
+      "outputs": [
+        "stage-01/cleaned.md",
+        "stage-01/chunks.json",
+        "stage-01/sources.json"
+      ],
+      "status": "ok"
+    },
+    {
+      "agent_id": "A3 knowledge-graph-agent",
+      "spawned_at": "2026-07-22T10:25:00Z",
+      "completed_at": "2026-07-22T10:25:00Z",
+      "outputs": [
+        "stage-03/kg.json",
+        "stage-03/kg.md",
+        "stage-03/gaps.md"
+      ],
+      "status": "ok"
+    },
+    {
+      "agent_id": "A5 mkd-builder-agent",
+      "spawned_at": "2026-07-22T10:25:00Z",
+      "completed_at": "2026-07-22T10:25:00Z",
+      "outputs": [
+        "stage-04/master.md",
+        "stage-04/glossary.md",
+        "stage-04/faq.md",
+        "stage-04/schemas.md",
+        "stage-04/changelog.md",
+        "stage-04/mkd-report.json"
+      ],
+      "status": "ok"
+    },
+    {
+      "agent_id": "A4 target-advisor-agent",
+      "spawned_at": "2026-07-22T10:26:00Z",
+      "completed_at": "2026-07-22T10:26:00Z",
+      "outputs": [
+        "stage-05/recommendation.md",
+        "stage-05/existing_components.json"
+      ],
+      "status": "ok"
+    },
+    {
+      "agent_id": "D1 question-designer-agent / Plan Builder",
+      "spawned_at": "2026-07-22T10:30:00Z",
+      "completed_at": "2026-07-22T10:30:00Z",
+      "outputs": [
+        "stage-06/PLAN-v1.md",
+        "stage-05/ask-set.json"
+      ],
+      "status": "ok"
+    }
+  ],
+  "iteration": 1,
+  "blocked_on": "user_resuming_afternoon",
+  "errors": []
+}

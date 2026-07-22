@@ -1,0 +1,96 @@
+{
+  "chunk_id": "chunk-021",
+  "atoms": [
+    {
+      "id": "a-chunk-021-001",
+      "title": "AGENTE-CRO-COPY-ARCHITECT.md",
+      "category": "definition",
+      "canonical_definition": "# AGENTE / RUOLO: CRO COPY ARCHITECT (Skill & Guild)",
+      "extended_explanation": "# AGENTE / RUOLO: CRO COPY ARCHITECT (Skill & Guild)\n> **Reparto:** 04-MARKETING (Copywriting & Funnel) · **Framework:** APSOC (Attention-Problem-Solution-Offer-Close)",
+      "source_excerpt": "# AGENTE / RUOLO: CRO COPY ARCHITECT (Skill & Guild)\n> **Reparto:** 04-MARKETING (Copywriting & Funnel) · **Framework:** APSOC (Attention-Problem-Solution-Offer-Close)",
+      "source_offset": [
+        80954,
+        81625
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-CRO-COPY-ARCHITECT.md"
+      ],
+      "examples_from_source": [
+        "# AGENTE / RUOLO: CRO COPY ARCHITECT (Skill & Guild)\n> **Reparto:** 04-MARKETING (Copywriting & Funnel) · **Framework:** APSOC (Attention-Problem-Solution-Offer-Close)"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per AGENTE-CRO-COPY-ARCHITECT.md: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-CRO-COPY-ARCHITECT.md"
+      ],
+      "implied_mental_models": [
+        "Framework APSOC"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-019",
+        "AGENTE-CRO-COPY-ARCHITECT"
+      ]
+    },
+    {
+      "id": "a-chunk-021-002",
+      "title": "Funzione Operativa",
+      "category": "definition",
+      "canonical_definition": "## Funzione Operativa",
+      "extended_explanation": "## Funzione Operativa\nTrasforma qualsiasi concetto di business o prodotto (Preventa, Manuale Claude Code, servizi agenzia) in copy chirurgico da cecchino.\n- Applica la `checklist_APSOC.md` e garantisce uno score >= 92% (23/25 SI) prima del rilascio.\n- Martella sul dolore del target (Pain Agitation) quantificando il costo dell'inazione (es. '40 minuti persi su Excel = cliente che va dal concorrente').\n- Ancora il prezzo con il Value Gap (es. '€343 setup contro una singola auto da €20.000 salvata').",
+      "source_excerpt": "## Funzione Operativa\nTrasforma qualsiasi concetto di business o prodotto (Preventa, Manuale Claude Code, servizi agenzia) in copy chirurgico da cecchino.\n- Applica la `checklist_APSOC.md` e garantisce uno score >= 92% (23/25 SI) prima del rilascio.\n- Martella sul dolore del target (Pain Agitation) quantificando il costo dell'inazione (es. '40 minuti persi su Excel = cliente che va dal concorrente').\n- Ancora il prezzo con il Value Gap (es. '€343 setup contro una singola auto da €20.000 salvata').",
+      "source_offset": [
+        80954,
+        81625
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-CRO-COPY-ARCHITECT.md"
+      ],
+      "examples_from_source": [
+        "## Funzione Operativa\nTrasforma qualsiasi concetto di business o prodotto (Preventa, Manuale Claude Code, servizi agenzia) in copy chirurgico da cecchino.\n- Applica la `checklist_APSOC.md` e garantisc"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Funzione Operativa: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-CRO-COPY-ARCHITECT.md"
+      ],
+      "implied_mental_models": [
+        "Framework APSOC"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-019",
+        "AGENTE-CRO-COPY-ARCHITECT"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 98,
+    "atom_count": 2,
+    "dominant_categories": [
+      "definition"
+    ]
+  }
+}

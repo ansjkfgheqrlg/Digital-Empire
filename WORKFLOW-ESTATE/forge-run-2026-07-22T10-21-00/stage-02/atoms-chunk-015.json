@@ -1,0 +1,54 @@
+{
+  "chunk_id": "chunk-015",
+  "atoms": [
+    {
+      "id": "a-chunk-015-001",
+      "title": "run_checkpoint_eod.bat",
+      "category": "concept",
+      "canonical_definition": "@echo off",
+      "extended_explanation": "@echo off\necho ==============================================\necho ESECUZIONE CHECKPOINT GIORNALIERO EOD (h19:00)\necho ==============================================\npython memory_manager.py checkpoint --task WORKFLOW-ESTATE --note \"Aggiornamento serale metriche e gate\"\npause",
+      "source_excerpt": "@echo off\necho ==============================================\necho ESECUZIONE CHECKPOINT GIORNALIERO EOD (h19:00)\necho ==============================================\npython memory_manager.py checkpoint --task WORKFLOW-ESTATE --note \"Aggiornamento serale metriche e gate\"\npause",
+      "source_offset": [
+        70221,
+        70497
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/run_checkpoint_eod.bat"
+      ],
+      "examples_from_source": [
+        "@echo off\necho ==============================================\necho ESECUZIONE CHECKPOINT GIORNALIERO EOD (h19:00)\necho ==============================================\npython memory_manager.py checkpoin"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per run_checkpoint_eod.bat: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/run_checkpoint_eod.bat"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "concept",
+        "src-013",
+        "run_checkpoint_eod"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 24,
+    "atom_count": 1,
+    "dominant_categories": [
+      "concept"
+    ]
+  }
+}

@@ -1,0 +1,638 @@
+{
+  "chunk_id": "chunk-014",
+  "atoms": [
+    {
+      "id": "a-chunk-014-001",
+      "title": "─── User prompt per il Writer ────────────────────────────────────────────────",
+      "category": "procedure",
+      "canonical_definition": "# ─── User prompt per il Writer ────────────────────────────────────────────────",
+      "extended_explanation": "# ─── User prompt per il Writer ────────────────────────────────────────────────",
+      "source_excerpt": "# ─── User prompt per il Writer ────────────────────────────────────────────────",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# ─── User prompt per il Writer ────────────────────────────────────────────────"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per ─── User prompt per il Writer ──────────: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-002",
+      "title": "build_prompt(lead: dict) -> str:",
+      "category": "procedure",
+      "canonical_definition": "def build_prompt(lead: dict) -> str:",
+      "extended_explanation": "def build_prompt(lead: dict) -> str:\nnome    = lead[\"page_name\"]\nnicchia = lead.get(\"nicchia\", \"professionista\")\ncitta   = lead.get(\"citta\",   \"Italia\")\nwebsite = lead.get(\"website\", \"nessuno\")\nparola  = _match(_PAROLA, nicchia, \"clienti\")\nvalore  = _match(_VALORE, nicchia, _DEFAULT_VALORE)\ndettaglio = _nota_contesto(lead)\nreturn f\"\"\"Scrivi la cold email per questo lead:\nBusiness: {nome}\nSettore: {nicchia}\nParola corretta per i loro clienti/pazienti: \"{parola}\"\nCittà: {citta}\nSito web: {website}\nBooking online: NO\nMINI-DETTAGLIO DA USARE NELL'APERTURA E NELL'OGGETTO:\n{dettaglio}\nINSIGHT SETTORE per la sezione [V] VALORE CONCRETO:\n{valore}\nISTRUZIONI SPECIFICHE:\n1. [A] ATTENZIONE — prima frase: usa il mini-dettaglio sopra. Come sono stati trovati o lo stato preciso del loro sito. Non iniziare con \"Ho cercato {nicchia}\" genericamente — entra nel dettaglio specifico di {nome}.\n2. OGGETTO — deve riflettere il caso specifico di {nome}. Non generico. Usa il mini-dettaglio.\n3. Usa \"{parola}\" ogni volta che parli dei loro clienti/utenti/pazienti.\n4. Adatta il pain point al settore {nicchia} a {citta}.\n5. [V] adatta l'insight settore al loro caso specifico (non incollarlo identico).\n6. MAI riferimenti a dentisti, studi dentistici, odontoiatria — questo è un {nicchia}.\n7. MAI trattini come separatori. MAI \"noi/vogliamo/offriamo\". Solo \"io/ho/mi\".\nRestituisci SOLO il JSON con oggetto, oggetto_b, oggetto_c e corpo.\"\"\"",
+      "source_excerpt": "def build_prompt(lead: dict) -> str:\nnome    = lead[\"page_name\"]\nnicchia = lead.get(\"nicchia\", \"professionista\")\ncitta   = lead.get(\"citta\",   \"Italia\")\nwebsite = lead.get(\"website\", \"nessuno\")\nparola  = _match(_PAROLA, nicchia, \"clienti\")\nvalore  = _match(_VALORE, nicchia, _DEFAULT_VALORE)\ndettaglio = _nota_contesto(lead)\nreturn f\"\"\"Scrivi la cold email per questo lead:\nBusiness: {nome}\nSettore: {nicchia}\nParola corretta per i loro clienti/pazienti: \"{parola}\"\nCittà: {citta}\nSito web: {website}\nBooking online: NO\nMINI-DETTAGLIO DA USARE NELL'APERTURA E NELL'OGGETTO:\n{dettaglio}\nINSIGHT SETTOR",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "def build_prompt(lead: dict) -> str:\nnome    = lead[\"page_name\"]\nnicchia = lead.get(\"nicchia\", \"professionista\")\ncitta   = lead.get(\"citta\",   \"Italia\")\nwebsite = lead.get(\"website\", \"nessuno\")\nparola"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per build_prompt(lead: dict) -> str:: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-003",
+      "title": "─── Helpers ─────────────────────────────────────────────────────────────────",
+      "category": "procedure",
+      "canonical_definition": "# ─── Helpers ─────────────────────────────────────────────────────────────────",
+      "extended_explanation": "# ─── Helpers ─────────────────────────────────────────────────────────────────",
+      "source_excerpt": "# ─── Helpers ─────────────────────────────────────────────────────────────────",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# ─── Helpers ─────────────────────────────────────────────────────────────────"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per ─── Helpers ────────────────────────────: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-004",
+      "title": "_parse_json(raw: str) -> dict | None:",
+      "category": "procedure",
+      "canonical_definition": "def _parse_json(raw: str) -> dict | None:",
+      "extended_explanation": "def _parse_json(raw: str) -> dict | None:\nstart = raw.find(\"{\")\nif start < 0:\nreturn None\ntry:\nresult, _ = json.JSONDecoder().raw_decode(raw[start:])\nreturn result\nexcept json.JSONDecodeError:\npass",
+      "source_excerpt": "def _parse_json(raw: str) -> dict | None:\nstart = raw.find(\"{\")\nif start < 0:\nreturn None\ntry:\nresult, _ = json.JSONDecoder().raw_decode(raw[start:])\nreturn result\nexcept json.JSONDecodeError:\npass",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "def _parse_json(raw: str) -> dict | None:\nstart = raw.find(\"{\")\nif start < 0:\nreturn None\ntry:\nresult, _ = json.JSONDecoder().raw_decode(raw[start:])\nreturn result\nexcept json.JSONDecodeError:\npass"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per _parse_json(raw: str) -> dict | None:: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-005",
+      "title": "Fallback regex",
+      "category": "procedure",
+      "canonical_definition": "# Fallback regex",
+      "extended_explanation": "# Fallback regex",
+      "source_excerpt": "# Fallback regex",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [],
+      "generated_examples": [
+        "➕ Esempio operativo per Fallback regex: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-006",
+      "title": "_rx(text, key):",
+      "category": "procedure",
+      "canonical_definition": "def _rx(text, key):",
+      "extended_explanation": "def _rx(text, key):\nm = re.search(rf'\"{key}\"\\s*:\\s*\"((?:[^\"\\\\]|\\\\.)*)\"', text, re.DOTALL)\nreturn m.group(1).replace(\"\\\\n\", \"\\n\").replace('\\\\\"', '\"') if m else \"\"\nr = {k: _rx(raw, k) for k in (\"oggetto\", \"oggetto_b\", \"oggetto_c\", \"corpo\")}\nreturn r if r.get(\"oggetto\") and r.get(\"corpo\") else None",
+      "source_excerpt": "def _rx(text, key):\nm = re.search(rf'\"{key}\"\\s*:\\s*\"((?:[^\"\\\\]|\\\\.)*)\"', text, re.DOTALL)\nreturn m.group(1).replace(\"\\\\n\", \"\\n\").replace('\\\\\"', '\"') if m else \"\"\nr = {k: _rx(raw, k) for k in (\"oggetto\", \"oggetto_b\", \"oggetto_c\", \"corpo\")}\nreturn r if r.get(\"oggetto\") and r.get(\"corpo\") else None",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "def _rx(text, key):\nm = re.search(rf'\"{key}\"\\s*:\\s*\"((?:[^\"\\\\]|\\\\.)*)\"', text, re.DOTALL)\nreturn m.group(1).replace(\"\\\\n\", \"\\n\").replace('\\\\\"', '\"') if m else \"\"\nr = {k: _rx(raw, k) for k in (\"oggetto"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per _rx(text, key):: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-007",
+      "title": "oad_existing() -> tuple:",
+      "category": "procedure",
+      "canonical_definition": "def load_existing() -> tuple:",
+      "extended_explanation": "def load_existing() -> tuple:\n\"\"\"Returns (all_items_dict, ready_only_dict). Preserves sent/error statuses.\"\"\"\nif not os.path.exists(OUTPUT_PATH):\nreturn {}, {}\nwith open(OUTPUT_PATH, encoding=\"utf-8\") as f:\nall_items = json.load(f)\nall_dict   = {r[\"email\"].lower(): r for r in all_items}\nready_dict = {k: v for k, v in all_dict.items() if v.get(\"status\") == \"ready\"}\nreturn all_dict, ready_dict",
+      "source_excerpt": "def load_existing() -> tuple:\n\"\"\"Returns (all_items_dict, ready_only_dict). Preserves sent/error statuses.\"\"\"\nif not os.path.exists(OUTPUT_PATH):\nreturn {}, {}\nwith open(OUTPUT_PATH, encoding=\"utf-8\") as f:\nall_items = json.load(f)\nall_dict   = {r[\"email\"].lower(): r for r in all_items}\nready_dict = {k: v for k, v in all_dict.items() if v.get(\"status\") == \"ready\"}\nreturn all_dict, ready_dict",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "def load_existing() -> tuple:\n\"\"\"Returns (all_items_dict, ready_only_dict). Preserves sent/error statuses.\"\"\"\nif not os.path.exists(OUTPUT_PATH):\nreturn {}, {}\nwith open(OUTPUT_PATH, encoding=\"utf-8\")"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per oad_existing() -> tuple:: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-008",
+      "title": "oad_ready() -> dict:",
+      "category": "procedure",
+      "canonical_definition": "def load_ready() -> dict:",
+      "extended_explanation": "def load_ready() -> dict:\n_, ready = load_existing()\nreturn ready",
+      "source_excerpt": "def load_ready() -> dict:\n_, ready = load_existing()\nreturn ready",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "def load_ready() -> dict:\n_, ready = load_existing()\nreturn ready"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per oad_ready() -> dict:: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-009",
+      "title": "─── Main ─────────────────────────────────────────────────────────────────────",
+      "category": "procedure",
+      "canonical_definition": "# ─── Main ─────────────────────────────────────────────────────────────────────",
+      "extended_explanation": "# ─── Main ─────────────────────────────────────────────────────────────────────",
+      "source_excerpt": "# ─── Main ─────────────────────────────────────────────────────────────────────",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# ─── Main ─────────────────────────────────────────────────────────────────────"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per ─── Main ───────────────────────────────: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-010",
+      "title": "main():",
+      "category": "procedure",
+      "canonical_definition": "def main():",
+      "extended_explanation": "def main():\nresume = \"--resume\" in sys.argv",
+      "source_excerpt": "def main():\nresume = \"--resume\" in sys.argv",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [],
+      "generated_examples": [
+        "➕ Esempio operativo per main():: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-011",
+      "title": "Costruisce rotation e writer (per _sanitize_corpo)",
+      "category": "procedure",
+      "canonical_definition": "# Costruisce rotation e writer (per _sanitize_corpo)",
+      "extended_explanation": "# Costruisce rotation e writer (per _sanitize_corpo)\nwriter   = EmailWriterAgent(os.getenv(\"OPENROUTER_API_KEY\", \"\"))\nrotation = writer.rotation\nif not rotation:\nprint(\"ERRORE: nessun client AI. Controlla .env (GROQ_API_KEY / OPENROUTER_API_KEY)\")\nsys.exit(1)",
+      "source_excerpt": "# Costruisce rotation e writer (per _sanitize_corpo)\nwriter   = EmailWriterAgent(os.getenv(\"OPENROUTER_API_KEY\", \"\"))\nrotation = writer.rotation\nif not rotation:\nprint(\"ERRORE: nessun client AI. Controlla .env (GROQ_API_KEY / OPENROUTER_API_KEY)\")\nsys.exit(1)",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# Costruisce rotation e writer (per _sanitize_corpo)\nwriter   = EmailWriterAgent(os.getenv(\"OPENROUTER_API_KEY\", \"\"))\nrotation = writer.rotation\nif not rotation:\nprint(\"ERRORE: nessun client AI. Contr"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Costruisce rotation e writer (per _sanit: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-012",
+      "title": "Legge CSV — deduplicazione per email",
+      "category": "procedure",
+      "canonical_definition": "# Legge CSV — deduplicazione per email",
+      "extended_explanation": "# Legge CSV — deduplicazione per email\nleads, seen = [], set()\nwith open(CSV_PATH, encoding=\"utf-8\") as f:\nfor row in csv.DictReader(f):\nem = row.get(\"email\", \"\").strip().lower()\nif em and \"@\" in em and em not in seen:\nseen.add(em)\nleads.append(row)\nexisting_all, existing_ready = load_existing()\nexisting  = existing_ready if resume else {}",
+      "source_excerpt": "# Legge CSV — deduplicazione per email\nleads, seen = [], set()\nwith open(CSV_PATH, encoding=\"utf-8\") as f:\nfor row in csv.DictReader(f):\nem = row.get(\"email\", \"\").strip().lower()\nif em and \"@\" in em and em not in seen:\nseen.add(em)\nleads.append(row)\nexisting_all, existing_ready = load_existing()\nexisting  = existing_ready if resume else {}",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# Legge CSV — deduplicazione per email\nleads, seen = [], set()\nwith open(CSV_PATH, encoding=\"utf-8\") as f:\nfor row in csv.DictReader(f):\nem = row.get(\"email\", \"\").strip().lower()\nif em and \"@\" in em a"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Legge CSV — deduplicazione per email: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-013",
+      "title": "Always preserve sent/failed items; skip leads already done",
+      "category": "procedure",
+      "canonical_definition": "# Always preserve sent/failed items; skip leads already done",
+      "extended_explanation": "# Always preserve sent/failed items; skip leads already done\nskip_set  = {e for e, r in existing_all.items() if r.get(\"status\") in (\"sent\", \"send_failed\")}\nda_fare   = [l for l in leads if l[\"email\"].strip().lower() not in existing\nand l[\"email\"].strip().lower() not in skip_set]\nprint(f\"\\nLead totali   : {len(leads)}\")\nprint(f\"Già pronti    : {len(existing)}\")\nprint(f\"Già inviati   : {len(skip_set)}\")\nprint(f\"Da generare   : {len(da_fare)}\")\nprint(f\"Modello       : {rotation[0][1]}\\n\")",
+      "source_excerpt": "# Always preserve sent/failed items; skip leads already done\nskip_set  = {e for e, r in existing_all.items() if r.get(\"status\") in (\"sent\", \"send_failed\")}\nda_fare   = [l for l in leads if l[\"email\"].strip().lower() not in existing\nand l[\"email\"].strip().lower() not in skip_set]\nprint(f\"\\nLead totali   : {len(leads)}\")\nprint(f\"Già pronti    : {len(existing)}\")\nprint(f\"Già inviati   : {len(skip_set)}\")\nprint(f\"Da generare   : {len(da_fare)}\")\nprint(f\"Modello       : {rotation[0][1]}\\n\")",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# Always preserve sent/failed items; skip leads already done\nskip_set  = {e for e, r in existing_all.items() if r.get(\"status\") in (\"sent\", \"send_failed\")}\nda_fare   = [l for l in leads if l[\"email\"]."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Always preserve sent/failed items; skip : applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-014",
+      "title": "Preserve ALL existing statuses (sent, ready, error) to avoid overwrites",
+      "category": "procedure",
+      "canonical_definition": "# Preserve ALL existing statuses (sent, ready, error) to avoid overwrites",
+      "extended_explanation": "# Preserve ALL existing statuses (sent, ready, error) to avoid overwrites\nresults = list(existing_all.values())\nerrors  = 0\nfor i, lead in enumerate(da_fare, 1):\nemail_dest = lead[\"email\"].strip()\nnome       = lead[\"page_name\"]\nprint(f\"[{i:02d}/{len(da_fare)}] {nome[:50]}\")\nprint(f\"         {email_dest}\")\nmessages = [\n{\"role\": \"system\", \"content\": WRITER_SYSTEM_PROMPT},\n{\"role\": \"user\",   \"content\": build_prompt(lead)},\n]\nraw = call_ai(rotation, messages, max_tokens=1600, temperature=0.65,\nlabel=f\"E{i:02d}\")\nif not raw:\nprint(f\"         ERRORE: nessuna risposta AI\")\nerrors += 1\nresults.append({\n\"email\": email_dest, \"page_name\": nome,\n\"nicchia\": lead.get(\"nicchia\", \"\"), \"oggetto\": \"\",\n\"corpo\": \"\", \"status\": \"error_no_response\",\n})\n_flush(results)\ncontinue\nparsed = _parse_json(raw)\nif not parsed:\nprint(f\"         ERRORE: JSON non parsabile\")\nerrors += 1\nresults.append({\n\"email\": email_dest, \"page_name\": nome,\n\"nicchia\": lead.get(\"nicchia\", \"\"), \"oggetto\": \"\",\n\"corpo\": \"\", \"status\": \"error_parse\",\n})\n_flush(results)\ncontinue\ncorpo   = writer._sanitize_corpo(parsed.get(\"corpo\", \"\"))\ncorpo   = _aggiungi_cta(corpo)\noggetto = parsed.get(\"oggetto\", \"\")\nparole  = len(corpo.split()) if corpo else 0\nif oggetto and corpo and parole >= 150:\nprint(f\"         OK [{parole}p] {oggetto[:60]}\")\nresults.append({\n\"email\":     email_dest,\n\"page_name\": nome,\n\"nicchia\":   lead.get(\"nicchia\", \"\"),\n\"citta\":     lead.get(\"citta\", \"\"),\n\"oggetto\":   oggetto,\n\"oggetto_b\": parsed.get(\"oggetto_b\", \"\"),\n\"oggetto_c\": parsed.get(\"oggetto_c\", \"\"),\n\"corpo\":     corpo,\n\"status\":    \"ready\",\n})\nelse:\nprint(f\"         WARN: troppo corta ({parole}p) o oggetto mancante\")\nerrors += 1\nresults.append({\n\"email\": email_dest, \"page_name\": nome,\n\"nicchia\": lead.get(\"nicchia\", \"\"),\n\"oggetto\": oggetto, \"corpo\": corpo,\n\"status\": f\"error_short_{parole}p\",\n})\n_flush(results)\ntime.sleep(1.2)\npronte = sum(1 for r in results if r[\"status\"] == \"ready\")\nprint(f\"\\n{'='*55}\")\nprint(f\"RISULTATO: {pronte}/{len(leads)} email pronte | {errors} errori\")\nprint(f\"Salvato  : {OUTPUT_PATH}\")\nprint(f\"{'='*55}\")\nif pronte > 0:\nprint(f\"\\nReviedi   : python review_emails.py\")\nprint(f\"Poi invia : python send_ready.py\")",
+      "source_excerpt": "# Preserve ALL existing statuses (sent, ready, error) to avoid overwrites\nresults = list(existing_all.values())\nerrors  = 0\nfor i, lead in enumerate(da_fare, 1):\nemail_dest = lead[\"email\"].strip()\nnome       = lead[\"page_name\"]\nprint(f\"[{i:02d}/{len(da_fare)}] {nome[:50]}\")\nprint(f\"         {email_dest}\")\nmessages = [\n{\"role\": \"system\", \"content\": WRITER_SYSTEM_PROMPT},\n{\"role\": \"user\",   \"content\": build_prompt(lead)},\n]\nraw = call_ai(rotation, messages, max_tokens=1600, temperature=0.65,\nlabel=f\"E{i:02d}\")\nif not raw:\nprint(f\"         ERRORE: nessuna risposta AI\")\nerrors += 1\nresults.append(",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# Preserve ALL existing statuses (sent, ready, error) to avoid overwrites\nresults = list(existing_all.values())\nerrors  = 0\nfor i, lead in enumerate(da_fare, 1):\nemail_dest = lead[\"email\"].strip()\nnom"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Preserve ALL existing statuses (sent, re: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-014-015",
+      "title": "_flush(results: list):",
+      "category": "procedure",
+      "canonical_definition": "def _flush(results: list):",
+      "extended_explanation": "def _flush(results: list):\nwith open(OUTPUT_PATH, \"w\", encoding=\"utf-8\") as f:\njson.dump(results, f, ensure_ascii=False, indent=2)\nif __name__ == \"__main__\":\nmain()",
+      "source_excerpt": "def _flush(results: list):\nwith open(OUTPUT_PATH, \"w\", encoding=\"utf-8\") as f:\njson.dump(results, f, ensure_ascii=False, indent=2)\nif __name__ == \"__main__\":\nmain()",
+      "source_offset": [
+        62832,
+        70119
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "def _flush(results: list):\nwith open(OUTPUT_PATH, \"w\", encoding=\"utf-8\") as f:\njson.dump(results, f, ensure_ascii=False, indent=2)\nif __name__ == \"__main__\":\nmain()"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per _flush(results: list):: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 720,
+    "atom_count": 15,
+    "dominant_categories": [
+      "procedure"
+    ]
+  }
+}

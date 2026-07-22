@@ -1,0 +1,215 @@
+{
+  "source_path": "c:/Users/Utente/Desktop/qui tutto/Digital Empire/WORKFLOW-ESTATE",
+  "is_multi_source": true,
+  "total_chunks": 23,
+  "language_detected": "it",
+  "chunks": [
+    {
+      "id": "chunk-001",
+      "start_offset": 97,
+      "end_offset": 6431,
+      "title_heuristic": "PLANNING-P7-MASTER-PLAN.md",
+      "word_count": 1007,
+      "source_file_id": "src-001",
+      "source_file_path": "01-FLUSSI-E-PIANI/PLANNING-P7-MASTER-PLAN.md"
+    },
+    {
+      "id": "chunk-002",
+      "start_offset": 6516,
+      "end_offset": 8510,
+      "title_heuristic": "WF-MASTER.md",
+      "word_count": 323,
+      "source_file_id": "src-002",
+      "source_file_path": "01-FLUSSI-E-PIANI/WF-MASTER.md"
+    },
+    {
+      "id": "chunk-003",
+      "start_offset": 8598,
+      "end_offset": 14485,
+      "title_heuristic": "WF-PERF-LOOP.md",
+      "word_count": 805,
+      "source_file_id": "src-003",
+      "source_file_path": "01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+    },
+    {
+      "id": "chunk-004",
+      "start_offset": 14580,
+      "end_offset": 21680,
+      "title_heuristic": "WF-S1-CONCESSIONARI.md",
+      "word_count": 1156,
+      "source_file_id": "src-004",
+      "source_file_path": "01-FLUSSI-E-PIANI/WF-S1-CONCESSIONARI.md"
+    },
+    {
+      "id": "chunk-005",
+      "start_offset": 21769,
+      "end_offset": 24166,
+      "title_heuristic": "WF-S2-MANUALE.md",
+      "word_count": 376,
+      "source_file_id": "src-005",
+      "source_file_path": "01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+    },
+    {
+      "id": "chunk-006",
+      "start_offset": 24267,
+      "end_offset": 26719,
+      "title_heuristic": "WF-S3-S4-PAGINE-MENTALITA.md",
+      "word_count": 368,
+      "source_file_id": "src-006",
+      "source_file_path": "01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+    },
+    {
+      "id": "chunk-007",
+      "start_offset": 26808,
+      "end_offset": 29885,
+      "title_heuristic": "WF-S5-YOUTUBE.md",
+      "word_count": 462,
+      "source_file_id": "src-007",
+      "source_file_path": "01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md"
+    },
+    {
+      "id": "chunk-008",
+      "start_offset": 29980,
+      "end_offset": 32458,
+      "title_heuristic": "WF-S6-REBRAND-PROMO.md",
+      "word_count": 385,
+      "source_file_id": "src-008",
+      "source_file_path": "01-FLUSSI-E-PIANI/WF-S6-REBRAND-PROMO.md"
+    },
+    {
+      "id": "chunk-009",
+      "start_offset": 32545,
+      "end_offset": 41919,
+      "title_heuristic": "workflows.yaml",
+      "word_count": 1090,
+      "source_file_id": "src-009",
+      "source_file_path": "01-FLUSSI-E-PIANI/workflows.yaml"
+    },
+    {
+      "id": "chunk-010",
+      "start_offset": 42020,
+      "end_offset": 42396,
+      "title_heuristic": "fliki_youtube_test.py",
+      "word_count": 47,
+      "source_file_id": "src-010",
+      "source_file_path": "02-AUTOMAZIONI-E-SCRIPTS/fliki_youtube_test.py"
+    },
+    {
+      "id": "chunk-011",
+      "start_offset": 42493,
+      "end_offset": 53506,
+      "title_heuristic": "memory_manager.py",
+      "word_count": 1022,
+      "source_file_id": "src-011",
+      "source_file_path": "02-AUTOMAZIONI-E-SCRIPTS/memory_manager.py"
+    },
+    {
+      "id": "chunk-012",
+      "start_offset": 53612,
+      "end_offset": 59537,
+      "title_heuristic": "Carica .env senza dipendenza da python-dotenv",
+      "word_count": 791,
+      "source_file_id": "src-012",
+      "source_file_path": "02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+    },
+    {
+      "id": "chunk-013",
+      "start_offset": 59538,
+      "end_offset": 62831,
+      "title_heuristic": "─── Costruisce il mini-dettaglio specifico per il prompt ────────────────────",
+      "word_count": 429,
+      "source_file_id": "src-012",
+      "source_file_path": "02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+    },
+    {
+      "id": "chunk-014",
+      "start_offset": 62832,
+      "end_offset": 70119,
+      "title_heuristic": "─── User prompt per il Writer ────────────────────────────────────────────────",
+      "word_count": 720,
+      "source_file_id": "src-012",
+      "source_file_path": "02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+    },
+    {
+      "id": "chunk-015",
+      "start_offset": 70221,
+      "end_offset": 70497,
+      "title_heuristic": "run_checkpoint_eod.bat",
+      "word_count": 24,
+      "source_file_id": "src-013",
+      "source_file_path": "02-AUTOMAZIONI-E-SCRIPTS/run_checkpoint_eod.bat"
+    },
+    {
+      "id": "chunk-016",
+      "start_offset": 70599,
+      "end_offset": 76667,
+      "title_heuristic": "send_outreach_ready.py",
+      "word_count": 611,
+      "source_file_id": "src-014",
+      "source_file_path": "02-AUTOMAZIONI-E-SCRIPTS/send_outreach_ready.py"
+    },
+    {
+      "id": "chunk-017",
+      "start_offset": 76771,
+      "end_offset": 78408,
+      "title_heuristic": "send_s1_whatsapp_auto.py",
+      "word_count": 238,
+      "source_file_id": "src-015",
+      "source_file_path": "02-AUTOMAZIONI-E-SCRIPTS/send_s1_whatsapp_auto.py"
+    },
+    {
+      "id": "chunk-018",
+      "start_offset": 78509,
+      "end_offset": 79017,
+      "title_heuristic": "AGENTE-ANDREI-PASCU-MINER.md",
+      "word_count": 74,
+      "source_file_id": "src-016",
+      "source_file_path": "03-AGENTI-E-RUOLI/AGENTE-ANDREI-PASCU-MINER.md"
+    },
+    {
+      "id": "chunk-019",
+      "start_offset": 79106,
+      "end_offset": 80149,
+      "title_heuristic": "AGENTE-CLAUDE.md",
+      "word_count": 149,
+      "source_file_id": "src-017",
+      "source_file_path": "03-AGENTI-E-RUOLI/AGENTE-CLAUDE.md"
+    },
+    {
+      "id": "chunk-020",
+      "start_offset": 80241,
+      "end_offset": 80853,
+      "title_heuristic": "AGENTE-CLOSER-A8.md",
+      "word_count": 93,
+      "source_file_id": "src-018",
+      "source_file_path": "03-AGENTI-E-RUOLI/AGENTE-CLOSER-A8.md"
+    },
+    {
+      "id": "chunk-021",
+      "start_offset": 80954,
+      "end_offset": 81625,
+      "title_heuristic": "AGENTE-CRO-COPY-ARCHITECT.md",
+      "word_count": 98,
+      "source_file_id": "src-019",
+      "source_file_path": "03-AGENTI-E-RUOLI/AGENTE-CRO-COPY-ARCHITECT.md"
+    },
+    {
+      "id": "chunk-022",
+      "start_offset": 81712,
+      "end_offset": 82720,
+      "title_heuristic": "AGENTE-GAEL.md",
+      "word_count": 143,
+      "source_file_id": "src-020",
+      "source_file_path": "03-AGENTI-E-RUOLI/AGENTE-GAEL.md"
+    },
+    {
+      "id": "chunk-023",
+      "start_offset": 82806,
+      "end_offset": 83845,
+      "title_heuristic": "AGENTE-MAX.md",
+      "word_count": 141,
+      "source_file_id": "src-021",
+      "source_file_path": "03-AGENTI-E-RUOLI/AGENTE-MAX.md"
+    }
+  ]
+}

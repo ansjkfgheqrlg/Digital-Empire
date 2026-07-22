@@ -1,0 +1,306 @@
+{
+  "chunk_id": "chunk-003",
+  "atoms": [
+    {
+      "id": "a-chunk-003-001",
+      "title": "WF-PERF-LOOP.md",
+      "category": "procedure",
+      "canonical_definition": "# ⚡ WF-PERF-LOOP — il micro-ecosistema di performance (ciclo confermato)",
+      "extended_explanation": "# ⚡ WF-PERF-LOOP — il micro-ecosistema di performance (ciclo confermato)\n> Richiesta Max (21/07): **ogni azione del workflow, ogni singola volta**, viene analizzata (debug + soluzione + struttura + modifiche), salvata in uno spazio dedicato della memoria, studiata da agenti specifici che emettono **micro-input** verso gli altri agenti — e il miglioramento deve essere **confermato**, non auspicato.\n> Posizione: gira DOPO ogni azione, trasversale a tutti i WF (S1..S6, MEM-*, MASTER). Sponsor: TRUTH-CMD · Esecuzione: Performance Cell (`04-AGENTS/PERFORMANCE-CELL.md`).",
+      "source_excerpt": "# ⚡ WF-PERF-LOOP — il micro-ecosistema di performance (ciclo confermato)\n> Richiesta Max (21/07): **ogni azione del workflow, ogni singola volta**, viene analizzata (debug + soluzione + struttura + modifiche), salvata in uno spazio dedicato della memoria, studiata da agenti specifici che emettono **micro-input** verso gli altri agenti — e il miglioramento deve essere **confermato**, non auspicato.\n> Posizione: gira DOPO ogni azione, trasversale a tutti i WF (S1..S6, MEM-*, MASTER). Sponsor: TRUTH-CMD · Esecuzione: Performance Cell (`04-AGENTS/PERFORMANCE-CELL.md`).",
+      "source_offset": [
+        8598,
+        14485
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "examples_from_source": [
+        "# ⚡ WF-PERF-LOOP — il micro-ecosistema di performance (ciclo confermato)\n> Richiesta Max (21/07): **ogni azione del workflow, ogni singola volta**, viene analizzata (debug + soluzione + struttura + mo"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per WF-PERF-LOOP.md: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-003",
+        "WF-PERF-LOOP"
+      ]
+    },
+    {
+      "id": "a-chunk-003-002",
+      "title": "1. IL CICLO (T0 → T5, chiuso e confermato)",
+      "category": "procedure",
+      "canonical_definition": "## 1. IL CICLO (T0 → T5, chiuso e confermato)",
+      "extended_explanation": "## 1. IL CICLO (T0 → T5, chiuso e confermato)\n```\nT0 AZIONE CHIUSA ──(post-task hook del router)──►\nT1 CAPTURE    perf-collector scrive PERF record in 00-MEMORY/performances/\n⚠️ scrittura diretta su file: NON consuma la quota 30 msg/giorno\n│\nT2  ANALYZE   perf-analyst legge il record ENTRO L'EOD e compila la scorecard 5D:\n① correctness/debug (errori, retry, escalation)  ② qualità soluzione\n③ struttura risposta/artefatto  ④ scope-fit (DoD rispettata?)\n⑤ efficiency (TTD vs benchmark di ruolo)  + gate: traceability (CP presente?)\n│\nT3  SYNTHESIZE segnale nuovo → pattern candidato (ReasoningBank DRAFT)\nsegnale già visto → +1 ricorrenza (contatore sul pattern)\n│\nT4  DISPATCH   feedback-dispatcher emette micro-output MIRATI (via board, FB-* in memoria):\n· TIP → all'agente coinvolto (micro-input: \"la prossima volta fai X\")\n· RULE-NOTE → al regolatore (se una regola intralcia il lavoro reale)\n· MUTATION-PROP → al comandante di casta (se lo stesso problema ricorre ≥3x)\nregola anti-nagging: stesso TIP, stesso agente → non ripetere entro 3 task\n│\nT5  CONFIRM   alla PROSSIMA performance della stessa famiglia-task dell'agente:\n✅ problema NON ricorre → FB → status: confirmed → pattern → ReasoningBank UFFICIALE\n❌ problema ricorre    → FB → status: recurred  → escalation automatica:\nmutation obbligatoria del prompt (v4) o pairing repair\n```\n**Il punto chiave (\"ciclico confermato\")**: un miglioramento ESISTE solo quando T5 lo conferma. Un TIP senza conferma alla performance successiva non è un miglioramento: è un suggerimento. Il loop tiene i conti.",
+      "source_excerpt": "## 1. IL CICLO (T0 → T5, chiuso e confermato)\n```\nT0 AZIONE CHIUSA ──(post-task hook del router)──►\nT1 CAPTURE    perf-collector scrive PERF record in 00-MEMORY/performances/\n⚠️ scrittura diretta su file: NON consuma la quota 30 msg/giorno\n│\nT2  ANALYZE   perf-analyst legge il record ENTRO L'EOD e compila la scorecard 5D:\n① correctness/debug (errori, retry, escalation)  ② qualità soluzione\n③ struttura risposta/artefatto  ④ scope-fit (DoD rispettata?)\n⑤ efficiency (TTD vs benchmark di ruolo)  + gate: traceability (CP presente?)\n│\nT3  SYNTHESIZE segnale nuovo → pattern candidato (ReasoningBank D",
+      "source_offset": [
+        8598,
+        14485
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "examples_from_source": [
+        "## 1. IL CICLO (T0 → T5, chiuso e confermato)\n```\nT0 AZIONE CHIUSA ──(post-task hook del router)──►\nT1 CAPTURE    perf-collector scrive PERF record in 00-MEMORY/performances/\n⚠️ scrittura diretta su f"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 1. IL CICLO (T0 → T5, chiuso e confermat: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-003",
+        "WF-PERF-LOOP"
+      ]
+    },
+    {
+      "id": "a-chunk-003-003",
+      "title": "2. LO SCHEMA — Performance Record (`00-MEMORY/performances/PERF-NNN-*.md`)",
+      "category": "procedure",
+      "canonical_definition": "## 2. LO SCHEMA — Performance Record (`00-MEMORY/performances/PERF-NNN-*.md`)",
+      "extended_explanation": "## 2. LO SCHEMA — Performance Record (`00-MEMORY/performances/PERF-NNN-*.md`)\n```yaml\nagente / task / wf / esito (success|partial|failed)\ntimestamps → TTD calcolato\ndebug: {errori, retry, escalation, fix applicati}\noutput_ref: path artefatto prodotto\nverification: {verificatore, first_pass: bool, note}\nscorecard 5D: correctness·solution·structure·scope-fit·efficiency (1-5) + gate traceability\nfeedback_collegati: [FB-ids]   # chiusura loop T5: confirmed | recurred\n```\nComando: `python3 00-MEMORY/memory_manager.py perf --agent <id> --task <id> --wf <WF> --result success --ttd 2.5 --firstpass 1 --verifier funnel-verifier --debug \"...\" --note \"...\"`",
+      "source_excerpt": "## 2. LO SCHEMA — Performance Record (`00-MEMORY/performances/PERF-NNN-*.md`)\n```yaml\nagente / task / wf / esito (success|partial|failed)\ntimestamps → TTD calcolato\ndebug: {errori, retry, escalation, fix applicati}\noutput_ref: path artefatto prodotto\nverification: {verificatore, first_pass: bool, note}\nscorecard 5D: correctness·solution·structure·scope-fit·efficiency (1-5) + gate traceability\nfeedback_collegati: [FB-ids]   # chiusura loop T5: confirmed | recurred\n```\nComando: `python3 00-MEMORY/memory_manager.py perf --agent <id> --task <id> --wf <WF> --result success --ttd 2.5 --firstpass 1 -",
+      "source_offset": [
+        8598,
+        14485
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "examples_from_source": [
+        "## 2. LO SCHEMA — Performance Record (`00-MEMORY/performances/PERF-NNN-*.md`)\n```yaml\nagente / task / wf / esito (success|partial|failed)\ntimestamps → TTD calcolato\ndebug: {errori, retry, escalation, "
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 2. LO SCHEMA — Performance Record (`00-M: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-003",
+        "WF-PERF-LOOP"
+      ]
+    },
+    {
+      "id": "a-chunk-003-004",
+      "title": "3. LO SCHEMA — Feedback Record (`00-MEMORY/feedback/FB-NNN-*.md`)",
+      "category": "procedure",
+      "canonical_definition": "## 3. LO SCHEMA — Feedback Record (`00-MEMORY/feedback/FB-NNN-*.md`)",
+      "extended_explanation": "## 3. LO SCHEMA — Feedback Record (`00-MEMORY/feedback/FB-NNN-*.md`)\n```yaml\ntipo: TIP | RULE-NOTE | MUTATION-PROP\nda: feedback-dispatcher (su analisi di perf-analyst)\na: agente | regolatore | comandante\nmicro-input: \"...\"            # piccolo, azionabile, da ricordare\nsu_performance: PERF-id\nstatus: open → acked (obbligatorio) → confirmed | recurred\n```\nComando: `python3 00-MEMORY/memory_manager.py feedback --agent <dest> --ftype TIP --note \"...\" --perf PERF-NNN`",
+      "source_excerpt": "## 3. LO SCHEMA — Feedback Record (`00-MEMORY/feedback/FB-NNN-*.md`)\n```yaml\ntipo: TIP | RULE-NOTE | MUTATION-PROP\nda: feedback-dispatcher (su analisi di perf-analyst)\na: agente | regolatore | comandante\nmicro-input: \"...\"            # piccolo, azionabile, da ricordare\nsu_performance: PERF-id\nstatus: open → acked (obbligatorio) → confirmed | recurred\n```\nComando: `python3 00-MEMORY/memory_manager.py feedback --agent <dest> --ftype TIP --note \"...\" --perf PERF-NNN`",
+      "source_offset": [
+        8598,
+        14485
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "examples_from_source": [
+        "## 3. LO SCHEMA — Feedback Record (`00-MEMORY/feedback/FB-NNN-*.md`)\n```yaml\ntipo: TIP | RULE-NOTE | MUTATION-PROP\nda: feedback-dispatcher (su analisi di perf-analyst)\na: agente | regolatore | comanda"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 3. LO SCHEMA — Feedback Record (`00-MEMO: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-003",
+        "WF-PERF-LOOP"
+      ]
+    },
+    {
+      "id": "a-chunk-003-005",
+      "title": "4. REGOLE DI CONVIVENZA (con l'ecosistema v4)",
+      "category": "procedure",
+      "canonical_definition": "## 4. REGOLE DI CONVIVENZA (con l'ecosistema v4)",
+      "extended_explanation": "## 4. REGOLE DI CONVIVENZA (con l'ecosistema v4)\n1. **P-LOOP non è un verificatore**: non blocca nulla, non ha gate. Analizza DOPO, non giudica PRIMA. (Casta distinta dai verificatori — che approvano l'output; il loop migliora l'attore.)\n2. **Budget rumore**: capture=T1 fuori quota (file write); TIP/RULE-NOTE = P3 (vanno nel digest EOD); MUTATION-PROP = P2 (4h hold). Max riceve la sintesi del loop SOLO nel digest e al COUNCIL.\n3. **Niente surveillance-state**: i punteggi 5D servono a migliorare il SISTEMA (prompt, regole, assegnazioni), non a punire. Feed negativi → causano mutation del PROMPT, mai \"colpa\" (coerente con failure-modes come first-class).\n4. **Chiusura garantita**: se un FB resta >5 task senza conferma/ricorrenza → TRUTH-CMD lo riesuma in EOD-SYNC (task marcio).\n5. **ReasoningBank è il deposito finale**: solo i pattern `confirmed` entrano come ufficiali e vengono precaricati dal pre_task hook nei task futuri della stessa famiglia. È qui che il miglioramento diventa memoria operativa.",
+      "source_excerpt": "## 4. REGOLE DI CONVIVENZA (con l'ecosistema v4)\n1. **P-LOOP non è un verificatore**: non blocca nulla, non ha gate. Analizza DOPO, non giudica PRIMA. (Casta distinta dai verificatori — che approvano l'output; il loop migliora l'attore.)\n2. **Budget rumore**: capture=T1 fuori quota (file write); TIP/RULE-NOTE = P3 (vanno nel digest EOD); MUTATION-PROP = P2 (4h hold). Max riceve la sintesi del loop SOLO nel digest e al COUNCIL.\n3. **Niente surveillance-state**: i punteggi 5D servono a migliorare il SISTEMA (prompt, regole, assegnazioni), non a punire. Feed negativi → causano mutation del PROMPT",
+      "source_offset": [
+        8598,
+        14485
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "examples_from_source": [
+        "## 4. REGOLE DI CONVIVENZA (con l'ecosistema v4)\n1. **P-LOOP non è un verificatore**: non blocca nulla, non ha gate. Analizza DOPO, non giudica PRIMA. (Casta distinta dai verificatori — che approvano "
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 4. REGOLE DI CONVIVENZA (con l'ecosistem: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-003",
+        "WF-PERF-LOOP"
+      ]
+    },
+    {
+      "id": "a-chunk-003-006",
+      "title": "5. ESEMPI CONCRETI (dal workshop reale)",
+      "category": "procedure",
+      "canonical_definition": "## 5. ESEMPI CONCRETI (dal workshop reale)",
+      "extended_explanation": "## 5. ESEMPI CONCRETI (dal workshop reale)\n- forge-builder chiude la landing S2 → PERF: TTD 3h, first-pass NO (checkout rotto al test €1), debug: fallback Gumroad usato. → perf-analyst: structure OK, correctness −1 setup KYC, scope-fit OK. → dispatcher: TIP a funnel-engineer \"test €1 SEMPRE prima di dichiarare live\" + pattern DRAFT \"Stripe KYC lento → aprire Gumroad in parallelo il giorno prima\". Alla prossima prima-pass ✅ su WF-S6 landing → FB confirmed → pattern ufficiale.\n- closer-ops invia follow-up → PERF: esito success ma 2h dopo la finestra (cadence). → TIP: \"contatti S1 solo nelle finestre 9:30/18:00\". Ricorre ancora → 3ª ricorrenza → MUTATION-PROP a REVENUE-CMD: inserire le finestre nel system-prompt di closer-ops.",
+      "source_excerpt": "## 5. ESEMPI CONCRETI (dal workshop reale)\n- forge-builder chiude la landing S2 → PERF: TTD 3h, first-pass NO (checkout rotto al test €1), debug: fallback Gumroad usato. → perf-analyst: structure OK, correctness −1 setup KYC, scope-fit OK. → dispatcher: TIP a funnel-engineer \"test €1 SEMPRE prima di dichiarare live\" + pattern DRAFT \"Stripe KYC lento → aprire Gumroad in parallelo il giorno prima\". Alla prossima prima-pass ✅ su WF-S6 landing → FB confirmed → pattern ufficiale.\n- closer-ops invia follow-up → PERF: esito success ma 2h dopo la finestra (cadence). → TIP: \"contatti S1 solo nelle fine",
+      "source_offset": [
+        8598,
+        14485
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "examples_from_source": [
+        "## 5. ESEMPI CONCRETI (dal workshop reale)\n- forge-builder chiude la landing S2 → PERF: TTD 3h, first-pass NO (checkout rotto al test €1), debug: fallback Gumroad usato. → perf-analyst: structure OK, "
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 5. ESEMPI CONCRETI (dal workshop reale): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-003",
+        "WF-PERF-LOOP"
+      ]
+    },
+    {
+      "id": "a-chunk-003-007",
+      "title": "6. ATTIVAZIONE",
+      "category": "procedure",
+      "canonical_definition": "## 6. ATTIVAZIONE",
+      "extended_explanation": "## 6. ATTIVAZIONE\n- **Ora (file-based)**: ogni reparto emette `perf` a chiusura task (l'hook è nel post_task di workflows.yaml); la Performance Cell analizza in EOD (T2–T4) e conferma alla next run (T5).\n- **F5/F6 (runtime)**: il router invoca T1 automaticamente su `post_task`; T5 schedulato su ogni nuovo PERF della stessa famiglia.\n- Validazione: ogni domenica al COUNCIL — tabella \"TIP confermati vs ricorsi\" = il vero termometro del miglioramento ciclico.\n---\n⛓️ Trace P12: `WF-PERF-LOOP#estate-2026` · input: direttiva Max 21/07 · aggancia: v4-MASTER §7 (punto 8) · agenti: 04-AGENTS/PERFORMANCE-CELL.md · storage: 00-MEMORY/performances + feedback",
+      "source_excerpt": "## 6. ATTIVAZIONE\n- **Ora (file-based)**: ogni reparto emette `perf` a chiusura task (l'hook è nel post_task di workflows.yaml); la Performance Cell analizza in EOD (T2–T4) e conferma alla next run (T5).\n- **F5/F6 (runtime)**: il router invoca T1 automaticamente su `post_task`; T5 schedulato su ogni nuovo PERF della stessa famiglia.\n- Validazione: ogni domenica al COUNCIL — tabella \"TIP confermati vs ricorsi\" = il vero termometro del miglioramento ciclico.\n---\n⛓️ Trace P12: `WF-PERF-LOOP#estate-2026` · input: direttiva Max 21/07 · aggancia: v4-MASTER §7 (punto 8) · agenti: 04-AGENTS/PERFORMANC",
+      "source_offset": [
+        8598,
+        14485
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "examples_from_source": [
+        "## 6. ATTIVAZIONE\n- **Ora (file-based)**: ogni reparto emette `perf` a chiusura task (l'hook è nel post_task di workflows.yaml); la Performance Cell analizza in EOD (T2–T4) e conferma alla next run (T"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 6. ATTIVAZIONE: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-PERF-LOOP.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-003",
+        "WF-PERF-LOOP"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 805,
+    "atom_count": 7,
+    "dominant_categories": [
+      "procedure"
+    ]
+  }
+}

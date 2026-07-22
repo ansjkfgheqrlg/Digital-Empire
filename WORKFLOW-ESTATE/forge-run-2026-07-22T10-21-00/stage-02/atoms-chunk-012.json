@@ -1,0 +1,428 @@
+{
+  "chunk_id": "chunk-012",
+  "atoms": [
+    {
+      "id": "a-chunk-012-001",
+      "title": "Carica .env senza dipendenza da python-dotenv",
+      "category": "procedure",
+      "canonical_definition": "\"\"\"",
+      "extended_explanation": "\"\"\"\nGenera email 100% personalizzate per ogni lead — framework APSOC+V.\nInput:  leads_nuove_nicchie.csv  (37 lead unici)\nOutput: emails_ready.json\nOgni email usa i mini-dettagli specifici del lead:\nsito datato, trovato su Instagram, solo telefono, solo WhatsApp, trovato in PDF, ecc.\nQuesti dettagli entrano nell'apertura [A] e nell'oggetto — mai frasi generiche.\nRun:\npython prepare_emails.py\npython prepare_emails.py --resume   # salta lead già pronti in emails_ready.json\n\"\"\"\nimport csv\nimport json\nimport os\nimport re\nimport sys\nimport time\nfrom pathlib import Path",
+      "source_excerpt": "\"\"\"\nGenera email 100% personalizzate per ogni lead — framework APSOC+V.\nInput:  leads_nuove_nicchie.csv  (37 lead unici)\nOutput: emails_ready.json\nOgni email usa i mini-dettagli specifici del lead:\nsito datato, trovato su Instagram, solo telefono, solo WhatsApp, trovato in PDF, ecc.\nQuesti dettagli entrano nell'apertura [A] e nell'oggetto — mai frasi generiche.\nRun:\npython prepare_emails.py\npython prepare_emails.py --resume   # salta lead già pronti in emails_ready.json\n\"\"\"\nimport csv\nimport json\nimport os\nimport re\nimport sys\nimport time\nfrom pathlib import Path",
+      "source_offset": [
+        53612,
+        59537
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "\"\"\"\nGenera email 100% personalizzate per ogni lead — framework APSOC+V.\nInput:  leads_nuove_nicchie.csv  (37 lead unici)\nOutput: emails_ready.json\nOgni email usa i mini-dettagli specifici del lead:\nsi"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Carica .env senza dipendenza da python-d: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Framework APSOC"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-012-002",
+      "title": "Carica .env senza dipendenza da python-dotenv",
+      "category": "procedure",
+      "canonical_definition": "# Carica .env senza dipendenza da python-dotenv",
+      "extended_explanation": "# Carica .env senza dipendenza da python-dotenv\n_env = Path(__file__).parent / \".env\"\nif _env.exists():\nfor _line in _env.read_text(encoding=\"utf-8\").splitlines():\nif \"=\" in _line and not _line.startswith(\"#\") and not _line.startswith(\" \"):\n_k, _v = _line.split(\"=\", 1)\nos.environ.setdefault(_k.strip(), _v.strip())\nfrom agents.writer import WRITER_SYSTEM_PROMPT, EmailWriterAgent\nfrom agents.ai_client import build_rotation, call_ai\nCSV_PATH    = \"leads_nuove_nicchie.csv\"\nOUTPUT_PATH = \"emails_ready.json\"\n_LINK_CTA = \"https://agency-empire-landing.vercel.app\"",
+      "source_excerpt": "# Carica .env senza dipendenza da python-dotenv\n_env = Path(__file__).parent / \".env\"\nif _env.exists():\nfor _line in _env.read_text(encoding=\"utf-8\").splitlines():\nif \"=\" in _line and not _line.startswith(\"#\") and not _line.startswith(\" \"):\n_k, _v = _line.split(\"=\", 1)\nos.environ.setdefault(_k.strip(), _v.strip())\nfrom agents.writer import WRITER_SYSTEM_PROMPT, EmailWriterAgent\nfrom agents.ai_client import build_rotation, call_ai\nCSV_PATH    = \"leads_nuove_nicchie.csv\"\nOUTPUT_PATH = \"emails_ready.json\"\n_LINK_CTA = \"https://agency-empire-landing.vercel.app\"",
+      "source_offset": [
+        53612,
+        59537
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# Carica .env senza dipendenza da python-dotenv\n_env = Path(__file__).parent / \".env\"\nif _env.exists():\nfor _line in _env.read_text(encoding=\"utf-8\").splitlines():\nif \"=\" in _line and not _line.starts"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Carica .env senza dipendenza da python-d: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-012-003",
+      "title": "_aggiungi_cta(corpo: str) -> str:",
+      "category": "procedure",
+      "canonical_definition": "def _aggiungi_cta(corpo: str) -> str:",
+      "extended_explanation": "def _aggiungi_cta(corpo: str) -> str:",
+      "source_excerpt": "def _aggiungi_cta(corpo: str) -> str:",
+      "source_offset": [
+        53612,
+        59537
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [],
+      "generated_examples": [
+        "➕ Esempio operativo per _aggiungi_cta(corpo: str) -> str:: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-012-004",
+      "title": "DELIVERABILITY: link VIETATO nella prima email fredda (attiva filtri antispam).",
+      "category": "procedure",
+      "canonical_definition": "# DELIVERABILITY: link VIETATO nella prima email fredda (attiva filtri antispam).",
+      "extended_explanation": "# DELIVERABILITY: link VIETATO nella prima email fredda (attiva filtri antispam).",
+      "source_excerpt": "# DELIVERABILITY: link VIETATO nella prima email fredda (attiva filtri antispam).",
+      "source_offset": [
+        53612,
+        59537
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# DELIVERABILITY: link VIETATO nella prima email fredda (attiva filtri antispam)."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per DELIVERABILITY: link VIETATO nella prima: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-012-005",
+      "title": "Il link va SOLO nel follow-up #2 (giorno 7).",
+      "category": "procedure",
+      "canonical_definition": "# Il link va SOLO nel follow-up #2 (giorno 7).",
+      "extended_explanation": "# Il link va SOLO nel follow-up #2 (giorno 7).",
+      "source_excerpt": "# Il link va SOLO nel follow-up #2 (giorno 7).",
+      "source_offset": [
+        53612,
+        59537
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [],
+      "generated_examples": [
+        "➕ Esempio operativo per Il link va SOLO nel follow-up #2 (giorno: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-012-006",
+      "title": "Questa funzione ora è un no-op per la prima email.",
+      "category": "procedure",
+      "canonical_definition": "# Questa funzione ora è un no-op per la prima email.",
+      "extended_explanation": "# Questa funzione ora è un no-op per la prima email.",
+      "source_excerpt": "# Questa funzione ora è un no-op per la prima email.",
+      "source_offset": [
+        53612,
+        59537
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# Questa funzione ora è un no-op per la prima email."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Questa funzione ora è un no-op per la pr: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-012-007",
+      "title": "Lasciata per compatibilità con gli script che la chiamano.",
+      "category": "procedure",
+      "canonical_definition": "# Lasciata per compatibilità con gli script che la chiamano.",
+      "extended_explanation": "# Lasciata per compatibilità con gli script che la chiamano.\nreturn corpo",
+      "source_excerpt": "# Lasciata per compatibilità con gli script che la chiamano.\nreturn corpo",
+      "source_offset": [
+        53612,
+        59537
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# Lasciata per compatibilità con gli script che la chiamano.\nreturn corpo"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Lasciata per compatibilità con gli scrip: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-012-008",
+      "title": "─── CLI args (opzionali, per backward compatibility) ─────────────────────────",
+      "category": "procedure",
+      "canonical_definition": "# ─── CLI args (opzionali, per backward compatibility) ─────────────────────────",
+      "extended_explanation": "# ─── CLI args (opzionali, per backward compatibility) ─────────────────────────\n_argv = sys.argv[1:]\nfor _i in range(len(_argv)):\nif _argv[_i] == \"--csv\" and _i + 1 < len(_argv):\nCSV_PATH = _argv[_i + 1]\nelif _argv[_i] == \"--output\" and _i + 1 < len(_argv):\nOUTPUT_PATH = _argv[_i + 1]",
+      "source_excerpt": "# ─── CLI args (opzionali, per backward compatibility) ─────────────────────────\n_argv = sys.argv[1:]\nfor _i in range(len(_argv)):\nif _argv[_i] == \"--csv\" and _i + 1 < len(_argv):\nCSV_PATH = _argv[_i + 1]\nelif _argv[_i] == \"--output\" and _i + 1 < len(_argv):\nOUTPUT_PATH = _argv[_i + 1]",
+      "source_offset": [
+        53612,
+        59537
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# ─── CLI args (opzionali, per backward compatibility) ─────────────────────────\n_argv = sys.argv[1:]\nfor _i in range(len(_argv)):\nif _argv[_i] == \"--csv\" and _i + 1 < len(_argv):\nCSV_PATH = _argv[_i "
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per ─── CLI args (opzionali, per backward co: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-012-009",
+      "title": "─── Mappatura settore → parola clienti/pazienti ─────────────────────────────",
+      "category": "procedure",
+      "canonical_definition": "# ─── Mappatura settore → parola clienti/pazienti ─────────────────────────────",
+      "extended_explanation": "# ─── Mappatura settore → parola clienti/pazienti ─────────────────────────────\n_PAROLA = {\n\"fisioterapista\": \"pazienti\",\n\"avvocato\":       \"clienti\",\n\"psicologo\":      \"pazienti\",\n\"commercialista\": \"clienti\",\n\"palestra\":       \"iscritti\",\n\"yoga\":           \"iscritti\",\n\"fitness\":        \"iscritti\",\n\"crossfit\":       \"iscritti\",\n\"estetica\":       \"clienti\",\n\"spa\":            \"clienti\",\n\"medico\":         \"pazienti\",\n\"dentista\":       \"pazienti\",\n\"chirurgia\":      \"pazienti\",\n\"clinica\":        \"pazienti\",\n}\n_VALORE = {\n\"fisioterapista\": (\n\"Il 65% delle prenotazioni fisioterapia avviene dopo le 19, quando gli studi sono \"\n\"chiusi. Un form di prenotazione online cattura quei pazienti automaticamente, \"\n\"senza dover rispondere al telefono fuori orario.\"\n),\n\"avvocato\": (\n\"Un intake form digitale riduce l'onboarding da 3 ore a 20 minuti per ogni nuovo \"\n\"cliente. Non serve software costoso: bastano un form online e un documento \"\n\"condiviso su Google Drive.\"\n),\n\"psicologo\": (\n\"Il 70% di chi cerca supporto psicologico lo fa la sera, tra le 21 e le 23. \"\n\"È il momento in cui si sentono finalmente pronti a chiedere aiuto. \"\n\"Un form di contatto attivo in quella finestra vale quanto tre mesi di passaparola.\"\n),\n\"commercialista\": (\n\"Eliminare lo scambio documenti via email riduce 10-15 ore di back-and-forth a \"\n\"settimana. Un portale clienti semplice — anche con strumenti gratuiti — \"\n\"risolve questo in modo definitivo.\"\n),\n\"palestra\": (\n\"L'80% degli abbonamenti persi avviene perché chi voleva iscriversi non è riuscito \"\n\"a prenotare una prova gratuita al primo tentativo. Se non trovano il form subito, \"\n\"raramente tornano.\"\n),\n\"yoga\": (\n\"L'80% degli abbonamenti persi avviene perché chi voleva iscriversi non è riuscito \"\n\"a prenotare una prova al primo tentativo. Se il form non c'è al primo accesso, \"\n\"raramente tornano.\"\n),\n\"crossfit\": (\n\"L'80% degli abbonamenti persi avviene perché chi voleva iscriversi non è riuscito \"\n\"a prenotare una prova gratuita al primo tentativo. Se il form non c'è, raramente tornano.\"\n),\n\"estetica\": (\n\"Le prenotazioni last-minute riempiono il 30% degli slot vuoti ogni settimana, \"\n\"ma solo se il sistema di prenotazione è attivo 24 ore. \"\n\"Una cliente che non trova disponibilità alle 23 prenota da qualcun altro la mattina dopo.\"\n),\n\"spa\": (\n\"Le prenotazioni last-minute riempiono il 30% degli slot vuoti ogni settimana, \"\n\"ma solo se il sistema è attivo 24 ore. \"\n\"Chi non trova il form alle 23 prenota altrove la mattina.\"\n),\n\"medico\": (\n\"Il 62% delle ricerche mediche avviene tra le 18 e le 22, quando gli studi sono chiusi. \"\n\"Senza prenotazione online in quel momento, quei pazienti finiscono dove trovano \"\n\"il pulsante 'prenota adesso'.\"\n),\n\"dentista\": (\n\"Il 62% delle ricerche odontoiatriche avviene fuori orario di studio. \"\n\"Senza prenotazione online visibile, quei pazienti finiscono allo studio \"\n\"che ha il form direttamente su Google.\"\n),\n\"chirurgia\": (\n\"Il 62% delle ricerche mediche avviene tra le 18 e le 22, quando gli studi sono chiusi. \"\n\"Senza form online, quei pazienti vanno dove trovano il pulsante 'prenota adesso'.\"\n),\n\"clinica\": (\n\"Il 62% delle ricerche mediche avviene tra le 18 e le 22, quando gli studi sono chiusi. \"\n\"Senza prenotazione online, quei pazienti finiscono dove trovano il pulsante 'prenota adesso'.\"\n),\n}\n_DEFAULT_VALORE = (\n\"Un sistema di contatto digitale cattura i lead che arrivano fuori orario — \"\n\"che sono spesso la maggioranza. Senza di esso, quegli utenti non tornano.\"\n)",
+      "source_excerpt": "# ─── Mappatura settore → parola clienti/pazienti ─────────────────────────────\n_PAROLA = {\n\"fisioterapista\": \"pazienti\",\n\"avvocato\":       \"clienti\",\n\"psicologo\":      \"pazienti\",\n\"commercialista\": \"clienti\",\n\"palestra\":       \"iscritti\",\n\"yoga\":           \"iscritti\",\n\"fitness\":        \"iscritti\",\n\"crossfit\":       \"iscritti\",\n\"estetica\":       \"clienti\",\n\"spa\":            \"clienti\",\n\"medico\":         \"pazienti\",\n\"dentista\":       \"pazienti\",\n\"chirurgia\":      \"pazienti\",\n\"clinica\":        \"pazienti\",\n}\n_VALORE = {\n\"fisioterapista\": (\n\"Il 65% delle prenotazioni fisioterapia avviene dopo le 19",
+      "source_offset": [
+        53612,
+        59537
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# ─── Mappatura settore → parola clienti/pazienti ─────────────────────────────\n_PAROLA = {\n\"fisioterapista\": \"pazienti\",\n\"avvocato\":       \"clienti\",\n\"psicologo\":      \"pazienti\",\n\"commercialista\": \""
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per ─── Mappatura settore → parola clienti/p: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-012-010",
+      "title": "_match(mapping: dict, nicchia: str, default: str) -> str:",
+      "category": "procedure",
+      "canonical_definition": "def _match(mapping: dict, nicchia: str, default: str) -> str:",
+      "extended_explanation": "def _match(mapping: dict, nicchia: str, default: str) -> str:\nn = nicchia.lower()\nfor k, v in mapping.items():\nif k in n:\nreturn v\nreturn default",
+      "source_excerpt": "def _match(mapping: dict, nicchia: str, default: str) -> str:\nn = nicchia.lower()\nfor k, v in mapping.items():\nif k in n:\nreturn v\nreturn default",
+      "source_offset": [
+        53612,
+        59537
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "def _match(mapping: dict, nicchia: str, default: str) -> str:\nn = nicchia.lower()\nfor k, v in mapping.items():\nif k in n:\nreturn v\nreturn default"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per _match(mapping: dict, nicchia: str, defa: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 791,
+    "atom_count": 10,
+    "dominant_categories": [
+      "procedure"
+    ]
+  }
+}

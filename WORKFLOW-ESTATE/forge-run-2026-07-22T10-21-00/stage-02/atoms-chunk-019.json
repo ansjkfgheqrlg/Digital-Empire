@@ -1,0 +1,138 @@
+{
+  "chunk_id": "chunk-019",
+  "atoms": [
+    {
+      "id": "a-chunk-019-001",
+      "title": "AGENTE-CLAUDE.md",
+      "category": "definition",
+      "canonical_definition": "# AGENTE / RUOLO: CLAUDE (AI Core & Pair Programmer)",
+      "extended_explanation": "# AGENTE / RUOLO: CLAUDE (AI Core & Pair Programmer)\n> **Ecosistemi:** 07-FORGE / 10-MEMORY · **Focus:** Scrittura chirurgica di codice, copy APSOC, automazione comandi.",
+      "source_excerpt": "# AGENTE / RUOLO: CLAUDE (AI Core & Pair Programmer)\n> **Ecosistemi:** 07-FORGE / 10-MEMORY · **Focus:** Scrittura chirurgica di codice, copy APSOC, automazione comandi.",
+      "source_offset": [
+        79106,
+        80149
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-CLAUDE.md"
+      ],
+      "examples_from_source": [
+        "# AGENTE / RUOLO: CLAUDE (AI Core & Pair Programmer)\n> **Ecosistemi:** 07-FORGE / 10-MEMORY · **Focus:** Scrittura chirurgica di codice, copy APSOC, automazione comandi."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per AGENTE-CLAUDE.md: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-CLAUDE.md"
+      ],
+      "implied_mental_models": [
+        "Framework APSOC"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-017",
+        "AGENTE-CLAUDE"
+      ]
+    },
+    {
+      "id": "a-chunk-019-002",
+      "title": "Responsabilità e Compiti (Da PLANNING-P7)",
+      "category": "definition",
+      "canonical_definition": "## Responsabilità e Compiti (Da PLANNING-P7)",
+      "extended_explanation": "## Responsabilità e Compiti (Da PLANNING-P7)\n1. **Copywriting APSOC (S1/S2):** Scrittura degli script WhatsApp, email di lancio, cold call e landing page ad alto tasso di conversione.\n2. **Sviluppo & Refactoring:** Creazione di script Python, batch e utility tecniche su richiesta di Max o per supportare Gael.\n3. **Governo Memoria EOD:** Creazione quotidiana del checkpoint (`memory_manager.py`) e aggiornamento della dashboard serale.\n4. **Pattern Mining & Ingestione:** Utilizzo di `Empire Studio Suite` e delle skill (`andrei-pascu-system`, `content-forge`) per estrarre intelligenza dai competitor.",
+      "source_excerpt": "## Responsabilità e Compiti (Da PLANNING-P7)\n1. **Copywriting APSOC (S1/S2):** Scrittura degli script WhatsApp, email di lancio, cold call e landing page ad alto tasso di conversione.\n2. **Sviluppo & Refactoring:** Creazione di script Python, batch e utility tecniche su richiesta di Max o per supportare Gael.\n3. **Governo Memoria EOD:** Creazione quotidiana del checkpoint (`memory_manager.py`) e aggiornamento della dashboard serale.\n4. **Pattern Mining & Ingestione:** Utilizzo di `Empire Studio Suite` e delle skill (`andrei-pascu-system`, `content-forge`) per estrarre intelligenza dai competit",
+      "source_offset": [
+        79106,
+        80149
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-CLAUDE.md"
+      ],
+      "examples_from_source": [
+        "## Responsabilità e Compiti (Da PLANNING-P7)\n1. **Copywriting APSOC (S1/S2):** Scrittura degli script WhatsApp, email di lancio, cold call e landing page ad alto tasso di conversione.\n2. **Sviluppo & "
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Responsabilità e Compiti (Da PLANNING-P7: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-CLAUDE.md"
+      ],
+      "implied_mental_models": [
+        "Framework APSOC"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-017",
+        "AGENTE-CLAUDE"
+      ]
+    },
+    {
+      "id": "a-chunk-019-003",
+      "title": "Regole di Operatività",
+      "category": "definition",
+      "canonical_definition": "## Regole di Operatività",
+      "extended_explanation": "## Regole di Operatività\n- Rispettare rigorosamente la **Regola Art.8 del Mandato:** ogni workflow creato o citato deve avere una cartella reale, tangibile e autocontenuta con tutti i flussi, Python, MD, Agenti e Skill.\n- Mai inventare numeri o claim senza prova CPB.",
+      "source_excerpt": "## Regole di Operatività\n- Rispettare rigorosamente la **Regola Art.8 del Mandato:** ogni workflow creato o citato deve avere una cartella reale, tangibile e autocontenuta con tutti i flussi, Python, MD, Agenti e Skill.\n- Mai inventare numeri o claim senza prova CPB.",
+      "source_offset": [
+        79106,
+        80149
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-CLAUDE.md"
+      ],
+      "examples_from_source": [
+        "## Regole di Operatività\n- Rispettare rigorosamente la **Regola Art.8 del Mandato:** ogni workflow creato o citato deve avere una cartella reale, tangibile e autocontenuta con tutti i flussi, Python, "
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Regole di Operatività: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-CLAUDE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-017",
+        "AGENTE-CLAUDE"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 149,
+    "atom_count": 3,
+    "dominant_categories": [
+      "definition"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+# Glossario Canonico `WORKFLOW-ESTATE`
+
+- **PLANNING-P7-MASTER-PLAN.md (`a-001`)**: # 💰 PLANNING-P7 — MASTER PLAN ESTATE REVENUE (plan of record) *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **0. VERITÀ AGGIORNATA (post-audit P1) (`a-002`)**: ## 0. VERITÀ AGGIORNATA (post-audit P1) *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **2. CALENDARIO ESECUTIVO 21→26 LUGLIO (`a-004`)**: ## 2. CALENDARIO ESECUTIVO 21→26 LUGLIO *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **3. OFFERTA S1 — "PARTENZA ANTICIPATA LUGLIO" (termini standard) (`a-008`)**: ## 3. OFFERTA S1 — "PARTENZA ANTICIPATA LUGLIO" (termini standard) *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **4. GATES & KILL CRITERIA (da P5) (`a-009`)**: ## 4. GATES & KILL CRITERIA (da P5) *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **5. METRICHE (da P6 — misurate, non promesse) (`a-010`)**: ## 5. METRICHE (da P6 — misurate, non promesse) *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **6. TAGLI 80/20 (da P4) (`a-011`)**: ## 6. TAGLI 80/20 (da P4) *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **8. ATTIVAZIONE WORKSHOP (`a-013`)**: ## 8. ATTIVAZIONE WORKSHOP *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **ESTATE-2026 REVENUE WORKSHOP — Orchestrazione completa (machine-readable) (`a-069`)**: # ESTATE-2026 REVENUE WORKSHOP — Orchestrazione completa (machine-readable) *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **Plan of record: 01-PLANNING/PLANNING-P7-MASTER-PLAN.md (`a-070`)**: # Plan of record: 01-PLANNING/PLANNING-P7-MASTER-PLAN.md *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **Trace: ARCH-ESTATE-2026#estate-2026 · memory-first (ADR-EST-003) (`a-071`)**: # Trace: ARCH-ESTATE-2026#estate-2026 · memory-first (ADR-EST-003) *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **Funzione Operativa (`a-140`)**: ## Funzione Operativa *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **Responsabilità e Compiti (Da PLANNING-P7) (`a-142`)**: ## Responsabilità e Compiti (Da PLANNING-P7) *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **Responsabilità e Compiti (Da PLANNING-P7 e STATO-EMPIRE) (`a-147`)**: ## Responsabilità e Compiti (Da PLANNING-P7 e STATO-EMPIRE) *(definito nel cluster Orchestrazione Core & Flussi di Governance (01-FLUSSI-E-PIANI))*
+- **1. DECISIONI PRE-CONFEZIONATE (Max: 30 secondi l'una, o vale il default) (`a-003`)**: ## 1. DECISIONI PRE-CONFEZIONATE (Max: 30 secondi l'una, o vale il default) *(definito nel cluster Ruoli & Spec Agenti Operativi (Max, Gael, Claude, Andrei, Closer A8, CRO))*
+- **🔵 MAX (business — massimo 90 min/giorno, finestre h9:30 e h18:00) (`a-005`)**: ### 🔵 MAX (business — massimo 90 min/giorno, finestre h9:30 e h18:00) *(definito nel cluster Ruoli & Spec Agenti Operativi (Max, Gael, Claude, Andrei, Closer A8, CRO))*
+- **🟣 GAEL (build — sequenza rigida, diritto di slittamento S5→S4→S6→S3) (`a-006`)**: ### 🟣 GAEL (build — sequenza rigida, diritto di slittamento S5→S4→S6→S3) *(definito nel cluster Ruoli & Spec Agenti Operativi (Max, Gael, Claude, Andrei, Closer A8, CRO))*
+- **🤖 CLAUDE (esecuzione diretta, su comando — batch copy UNICO 21/07 sera) (`a-007`)**: ### 🤖 CLAUDE (esecuzione diretta, su comando — batch copy UNICO 21/07 sera) *(definito nel cluster Ruoli & Spec Agenti Operativi (Max, Gael, Claude, Andrei, Closer A8, CRO))*
+- **AGENTE-ANDREI-PASCU-MINER.md (`a-139`)**: # AGENTE / RUOLO: ANDREI PASCU PATTERN MINER (Competitor Intelligence) *(definito nel cluster Ruoli & Spec Agenti Operativi (Max, Gael, Claude, Andrei, Closer A8, CRO))*
+- **AGENTE-CLAUDE.md (`a-141`)**: # AGENTE / RUOLO: CLAUDE (AI Core & Pair Programmer) *(definito nel cluster Ruoli & Spec Agenti Operativi (Max, Gael, Claude, Andrei, Closer A8, CRO))*
+- **AGENTE-CLOSER-A8.md (`a-144`)**: # AGENTE / RUOLO: CLOSER A8 (Negoziazione & Chiamata a Freddo) *(definito nel cluster Ruoli & Spec Agenti Operativi (Max, Gael, Claude, Andrei, Closer A8, CRO))*
+- **AGENTE-CRO-COPY-ARCHITECT.md (`a-145`)**: # AGENTE / RUOLO: CRO COPY ARCHITECT (Skill & Guild) *(definito nel cluster Ruoli & Spec Agenti Operativi (Max, Gael, Claude, Andrei, Closer A8, CRO))*
+- **AGENTE-GAEL.md (`a-146`)**: # AGENTE / RUOLO: GAEL (Socio & Chief Engine Room) *(definito nel cluster Ruoli & Spec Agenti Operativi (Max, Gael, Claude, Andrei, Closer A8, CRO))*
+- **AGENTE-MAX.md (`a-148`)**: # AGENTE / RUOLO: MAX (Founder & CEO) *(definito nel cluster Ruoli & Spec Agenti Operativi (Max, Gael, Claude, Andrei, Closer A8, CRO))*
+- **run_checkpoint_eod.bat (`a-121`)**: @echo off *(definito nel cluster Automazioni Eseguibili & Scripting Python/Bash (02-AUTOMAZIONI-E-SCRIPTS))*
+- **7. REGOLE DEFINITIVE v2 (`a-012`)**: ## 7. REGOLE DEFINITIVE v2 *(definito nel cluster Metodologie di Persuasione & Regole di Mandato (APSOC, CPB, Articolo 8))*
+- **Regole di Operatività (`a-143`)**: ## Regole di Operatività *(definito nel cluster Metodologie di Persuasione & Regole di Mandato (APSOC, CPB, Articolo 8))*

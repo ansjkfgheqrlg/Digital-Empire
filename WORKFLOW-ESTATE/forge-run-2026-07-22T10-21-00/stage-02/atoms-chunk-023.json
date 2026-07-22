@@ -1,0 +1,138 @@
+{
+  "chunk_id": "chunk-023",
+  "atoms": [
+    {
+      "id": "a-chunk-023-001",
+      "title": "AGENTE-MAX.md",
+      "category": "definition",
+      "canonical_definition": "# AGENTE / RUOLO: MAX (Founder & CEO)",
+      "extended_explanation": "# AGENTE / RUOLO: MAX (Founder & CEO)\n> **Ecosistemi:** Tutti · **Tempo dedicato:** Max 90 min/giorno (chirurgico, zero dispersione)\n> **Focus Estate 2026:** Incasso immediato, negoziazione S1 con i 7 concessionari, estetica UI/UX premium.",
+      "source_excerpt": "# AGENTE / RUOLO: MAX (Founder & CEO)\n> **Ecosistemi:** Tutti · **Tempo dedicato:** Max 90 min/giorno (chirurgico, zero dispersione)\n> **Focus Estate 2026:** Incasso immediato, negoziazione S1 con i 7 concessionari, estetica UI/UX premium.",
+      "source_offset": [
+        82806,
+        83845
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-MAX.md"
+      ],
+      "examples_from_source": [
+        "# AGENTE / RUOLO: MAX (Founder & CEO)\n> **Ecosistemi:** Tutti · **Tempo dedicato:** Max 90 min/giorno (chirurgico, zero dispersione)\n> **Focus Estate 2026:** Incasso immediato, negoziazione S1 con i 7"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per AGENTE-MAX.md: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-MAX.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-021",
+        "AGENTE-MAX"
+      ]
+    },
+    {
+      "id": "a-chunk-023-002",
+      "title": "Responsabilità e Compiti (Da PLANNING-P7)",
+      "category": "definition",
+      "canonical_definition": "## Responsabilità e Compiti (Da PLANNING-P7)",
+      "extended_explanation": "## Responsabilità e Compiti (Da PLANNING-P7)\n1. **Negoziazione S1 (Concessionari - Preventa):** Invio dei 3 messaggi WhatsApp e gestione delle chiamate (solo se richieste) con i 7 titolari di salone.\n2. **Autorità Social (S3/S4):** Pubblicazione storie, riattivazione profili `mentalita.brutale` e `crea.illtuo_impero`.\n3. **Approvazione Estetica (UI/UX):** Giudizio supremo su landing page, design system e interfacce (stile ccm-premium / empire-premium-style).\n4. **Governo Mandato:** Unico autorizzato a modificare il Mandato (`MANDATO-EMPIRE.md`) tramite decisione registrata.",
+      "source_excerpt": "## Responsabilità e Compiti (Da PLANNING-P7)\n1. **Negoziazione S1 (Concessionari - Preventa):** Invio dei 3 messaggi WhatsApp e gestione delle chiamate (solo se richieste) con i 7 titolari di salone.\n2. **Autorità Social (S3/S4):** Pubblicazione storie, riattivazione profili `mentalita.brutale` e `crea.illtuo_impero`.\n3. **Approvazione Estetica (UI/UX):** Giudizio supremo su landing page, design system e interfacce (stile ccm-premium / empire-premium-style).\n4. **Governo Mandato:** Unico autorizzato a modificare il Mandato (`MANDATO-EMPIRE.md`) tramite decisione registrata.",
+      "source_offset": [
+        82806,
+        83845
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-MAX.md"
+      ],
+      "examples_from_source": [
+        "## Responsabilità e Compiti (Da PLANNING-P7)\n1. **Negoziazione S1 (Concessionari - Preventa):** Invio dei 3 messaggi WhatsApp e gestione delle chiamate (solo se richieste) con i 7 titolari di salone.\n"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Responsabilità e Compiti (Da PLANNING-P7: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-MAX.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-021",
+        "AGENTE-MAX"
+      ]
+    },
+    {
+      "id": "a-chunk-023-003",
+      "title": "Regole di Operatività",
+      "category": "definition",
+      "canonical_definition": "## Regole di Operatività",
+      "extended_explanation": "## Regole di Operatività\n- Non scrive codice di backend o infrastruttura runtime (delega a Gael e Claude).\n- Non perde tempo su metriche di vanity (visualizzazioni vuote): conta solo l'incasso e i preventivi firmati.",
+      "source_excerpt": "## Regole di Operatività\n- Non scrive codice di backend o infrastruttura runtime (delega a Gael e Claude).\n- Non perde tempo su metriche di vanity (visualizzazioni vuote): conta solo l'incasso e i preventivi firmati.",
+      "source_offset": [
+        82806,
+        83845
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-MAX.md"
+      ],
+      "examples_from_source": [
+        "## Regole di Operatività\n- Non scrive codice di backend o infrastruttura runtime (delega a Gael e Claude).\n- Non perde tempo su metriche di vanity (visualizzazioni vuote): conta solo l'incasso e i pre"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Regole di Operatività: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-MAX.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-021",
+        "AGENTE-MAX"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 141,
+    "atom_count": 3,
+    "dominant_categories": [
+      "definition"
+    ]
+  }
+}

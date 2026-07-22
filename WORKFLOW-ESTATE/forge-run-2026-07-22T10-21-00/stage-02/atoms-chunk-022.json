@@ -1,0 +1,138 @@
+{
+  "chunk_id": "chunk-022",
+  "atoms": [
+    {
+      "id": "a-chunk-022-001",
+      "title": "AGENTE-GAEL.md",
+      "category": "definition",
+      "canonical_definition": "# AGENTE / RUOLO: GAEL (Socio & Chief Engine Room)",
+      "extended_explanation": "# AGENTE / RUOLO: GAEL (Socio & Chief Engine Room)\n> **Ecosistemi:** 06-PLATFORM / 09-OPERATIONS · **Focus:** Costruzione e stabilità del runtime e delle app reali.",
+      "source_excerpt": "# AGENTE / RUOLO: GAEL (Socio & Chief Engine Room)\n> **Ecosistemi:** 06-PLATFORM / 09-OPERATIONS · **Focus:** Costruzione e stabilità del runtime e delle app reali.",
+      "source_offset": [
+        81712,
+        82720
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-GAEL.md"
+      ],
+      "examples_from_source": [
+        "# AGENTE / RUOLO: GAEL (Socio & Chief Engine Room)\n> **Ecosistemi:** 06-PLATFORM / 09-OPERATIONS · **Focus:** Costruzione e stabilità del runtime e delle app reali."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per AGENTE-GAEL.md: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-GAEL.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-020",
+        "AGENTE-GAEL"
+      ]
+    },
+    {
+      "id": "a-chunk-022-002",
+      "title": "Responsabilità e Compiti (Da PLANNING-P7 e STATO-EMPIRE)",
+      "category": "definition",
+      "canonical_definition": "## Responsabilità e Compiti (Da PLANNING-P7 e STATO-EMPIRE)",
+      "extended_explanation": "## Responsabilità e Compiti (Da PLANNING-P7 e STATO-EMPIRE)\n1. **Setup Funnel S2 (Manuale Claude Code):** Configurazione landing, checkout ladder (Stripe -> Gumroad -> PayPal.me) e verifica test pagamento €1.\n2. **App Delivery S1 (Preventa):** Clona e configura l'istanza multi-tenant per il nuovo concessionario via comando `/nuovo-concessionario` il giorno stesso della chiusura del contratto.\n3. **Pipeline Automazione Content (S3/S4/S5):** Esecuzione batch `carousel-factory` per i 7 caroselli, scheduler Meta API / Buffer e test API Fliki.\n4. **Manutenzione Core Engine:** Sviluppo di `app.py`, `build_exe.bat` e gestione del server locale.",
+      "source_excerpt": "## Responsabilità e Compiti (Da PLANNING-P7 e STATO-EMPIRE)\n1. **Setup Funnel S2 (Manuale Claude Code):** Configurazione landing, checkout ladder (Stripe -> Gumroad -> PayPal.me) e verifica test pagamento €1.\n2. **App Delivery S1 (Preventa):** Clona e configura l'istanza multi-tenant per il nuovo concessionario via comando `/nuovo-concessionario` il giorno stesso della chiusura del contratto.\n3. **Pipeline Automazione Content (S3/S4/S5):** Esecuzione batch `carousel-factory` per i 7 caroselli, scheduler Meta API / Buffer e test API Fliki.\n4. **Manutenzione Core Engine:** Sviluppo di `app.py`, ",
+      "source_offset": [
+        81712,
+        82720
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-GAEL.md"
+      ],
+      "examples_from_source": [
+        "## Responsabilità e Compiti (Da PLANNING-P7 e STATO-EMPIRE)\n1. **Setup Funnel S2 (Manuale Claude Code):** Configurazione landing, checkout ladder (Stripe -> Gumroad -> PayPal.me) e verifica test pagam"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Responsabilità e Compiti (Da PLANNING-P7: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-GAEL.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-020",
+        "AGENTE-GAEL"
+      ]
+    },
+    {
+      "id": "a-chunk-022-003",
+      "title": "Regole di Operatività",
+      "category": "definition",
+      "canonical_definition": "## Regole di Operatività",
+      "extended_explanation": "## Regole di Operatività\n- Non modifica il copy o il design estetico UI/UX (di competenza Max/Claude).\n- Esegue sequenze di build rigide rispettando la Definition of Done congelata (ADR-EST-005).",
+      "source_excerpt": "## Regole di Operatività\n- Non modifica il copy o il design estetico UI/UX (di competenza Max/Claude).\n- Esegue sequenze di build rigide rispettando la Definition of Done congelata (ADR-EST-005).",
+      "source_offset": [
+        81712,
+        82720
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-GAEL.md"
+      ],
+      "examples_from_source": [
+        "## Regole di Operatività\n- Non modifica il copy o il design estetico UI/UX (di competenza Max/Claude).\n- Esegue sequenze di build rigide rispettando la Definition of Done congelata (ADR-EST-005)."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Regole di Operatività: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-GAEL.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-020",
+        "AGENTE-GAEL"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 143,
+    "atom_count": 3,
+    "dominant_categories": [
+      "definition"
+    ]
+  }
+}

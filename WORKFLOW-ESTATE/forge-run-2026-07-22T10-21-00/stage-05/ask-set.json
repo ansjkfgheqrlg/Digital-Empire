@@ -1,0 +1,50 @@
+{
+  "stage": "stage-05",
+  "target": "master-build-architecture+orchestration",
+  "questions": [
+    {
+      "id": "q1_routing_strategy",
+      "title": "Conferma Strategia di Routing Ibrida (Rule-First + LLM-Fallback)",
+      "context": "Per gestire i 17 componenti (flussi S1-S6, 6 agenti, 5 script), proponiamo un routing Ibrido: deterministico per trigger automatici/orari (script Python diretti) e basato su LLM (Supervisor) per richieste strategiche e di copy.",
+      "options": [
+        "Confermo la strategia Ibrida (Rule-First + LLM Supervisor per casi strategici).",
+        "Preferisco un routing 100% deterministico basato solo su regole esplicite e file YAML.",
+        "Preferisco che ogni richiesta passi sempre dal Supervisor LLM per massima flessibilità."
+      ],
+      "recommended_option": 0
+    },
+    {
+      "id": "q2_apsoc_enforcement",
+      "title": "Metodo di Enforcement della Regola APSOC >= 92%",
+      "context": "Nel mandato si richiede che ogni copy di Andrei/Claude rispetti la soglia APSOC >= 92%. Come vuoi forzare questo controllo pre-pubblicazione nei flussi?",
+      "options": [
+        "Enforcement Ibrido: l'Agente Andrei esegue l'auto-valutazione quantitativa nella checklist (evals.md), e prima dell'invio finale uno script Python/Agente Reviewer blocca se lo score < 92%.",
+        "Solo controllo di checklist nel prompt dell'agente (evals.md) senza blocco rigido da script.",
+        "Blocco totale da script Python per ogni pezzo di copy che non passa una serie di regex di struttura APSOC."
+      ],
+      "recommended_option": 0
+    },
+    {
+      "id": "q3_memory_automation",
+      "title": "Sincronizzazione della Memoria su Disco (`MEMORY-INDEX.md`)",
+      "context": "L'ecosistema di memoria a due strati prevede il tracciamento continuo. Quando e come deve essere aggiornato `memory/MEMORY-INDEX.md`?",
+      "options": [
+        "Aggiornamento automatico ad ogni fine esecuzione di un flusso/agente (tramite aggancio di `memory_manager.py`) + consolidamento giornaliero con `run_checkpoint_eod.bat`.",
+        "Solo consolidamento serale tramite il batch `run_checkpoint_eod.bat`.",
+        "Aggiornamento manuale da parte dell'Agente Max a fine giornata o su richiesta esplicita."
+      ],
+      "recommended_option": 0
+    },
+    {
+      "id": "q4_escalation_protocol",
+      "title": "Canale di Escalation delle Eccezioni Critiche (escalation.md)",
+      "context": "Se uno script fallisce 3 volte di fila (es. ban WhatsApp su `send_s1_whatsapp_auto.py` o down API), a chi e come deve scalare l'allarme il Supervisor?",
+      "options": [
+        "Escalation immediata all'Agente Max (che ferma la coda e scrive un log in `failure_modes/`) e notifica all'utente/operatore umano nel terminale o via email.",
+        "Arresto silenzioso del flusso singolo con salvataggio nel log di errore, senza bloccare gli altri flussi.",
+        "Notifica solo su file di log per revisione serale EOD."
+      ],
+      "recommended_option": 0
+    }
+  ]
+}

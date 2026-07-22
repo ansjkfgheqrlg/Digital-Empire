@@ -1,0 +1,96 @@
+{
+  "chunk_id": "chunk-020",
+  "atoms": [
+    {
+      "id": "a-chunk-020-001",
+      "title": "AGENTE-CLOSER-A8.md",
+      "category": "definition",
+      "canonical_definition": "# AGENTE / RUOLO: CLOSER A8 (Negoziazione & Chiamata a Freddo)",
+      "extended_explanation": "# AGENTE / RUOLO: CLOSER A8 (Negoziazione & Chiamata a Freddo)\n> **Reparto:** 01-AGENCY (Vendita) · **Strumento:** Script Cold Call 60s & Chiusura Contratti",
+      "source_excerpt": "# AGENTE / RUOLO: CLOSER A8 (Negoziazione & Chiamata a Freddo)\n> **Reparto:** 01-AGENCY (Vendita) · **Strumento:** Script Cold Call 60s & Chiusura Contratti",
+      "source_offset": [
+        80241,
+        80853
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-CLOSER-A8.md"
+      ],
+      "examples_from_source": [
+        "# AGENTE / RUOLO: CLOSER A8 (Negoziazione & Chiamata a Freddo)\n> **Reparto:** 01-AGENCY (Vendita) · **Strumento:** Script Cold Call 60s & Chiusura Contratti"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per AGENTE-CLOSER-A8.md: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-CLOSER-A8.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-018",
+        "AGENTE-CLOSER-A8"
+      ]
+    },
+    {
+      "id": "a-chunk-020-002",
+      "title": "Funzione Operativa",
+      "category": "definition",
+      "canonical_definition": "## Funzione Operativa",
+      "extended_explanation": "## Funzione Operativa\n- Gestisce le chiamate di chiusura quando un concessionario o un cliente high-ticket chiede di parlare a voce.\n- Utilizza la tecnica di rottura di schema nei primi 8 secondi (Pattern Interrupt).\n- Disinnesca le 4 obiezioni principali ('ci sentiamo a settembre', 'costa troppo', 'siamo abituati a carta', 'devo pensarci').\n- Porta al micro-impegno e al pagamento immediato del setup promozionale tramite link di checkout brandizzato.",
+      "source_excerpt": "## Funzione Operativa\n- Gestisce le chiamate di chiusura quando un concessionario o un cliente high-ticket chiede di parlare a voce.\n- Utilizza la tecnica di rottura di schema nei primi 8 secondi (Pattern Interrupt).\n- Disinnesca le 4 obiezioni principali ('ci sentiamo a settembre', 'costa troppo', 'siamo abituati a carta', 'devo pensarci').\n- Porta al micro-impegno e al pagamento immediato del setup promozionale tramite link di checkout brandizzato.",
+      "source_offset": [
+        80241,
+        80853
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 03-AGENTI-E-RUOLI/AGENTE-CLOSER-A8.md"
+      ],
+      "examples_from_source": [
+        "## Funzione Operativa\n- Gestisce le chiamate di chiusura quando un concessionario o un cliente high-ticket chiede di parlare a voce.\n- Utilizza la tecnica di rottura di schema nei primi 8 secondi (Pat"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Funzione Operativa: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 03-AGENTI-E-RUOLI/AGENTE-CLOSER-A8.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "definition",
+        "src-018",
+        "AGENTE-CLOSER-A8"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 93,
+    "atom_count": 2,
+    "dominant_categories": [
+      "definition"
+    ]
+  }
+}

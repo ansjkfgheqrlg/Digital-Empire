@@ -1,0 +1,348 @@
+{
+  "chunk_id": "chunk-005",
+  "atoms": [
+    {
+      "id": "a-chunk-005-001",
+      "title": "WF-S2-MANUALE.md",
+      "category": "procedure",
+      "canonical_definition": "# WF-S2 — MANUALE CLAUDE CODE: da asset fermo a prodotto in vendita",
+      "extended_explanation": "# WF-S2 — MANUALE CLAUDE CODE: da asset fermo a prodotto in vendita\n> Stream: S2 · Window: 21→26/07 · Owner: chief-forge/Gael · Dipende da: **DEC-EST-001** (veto 21/07 h20:00)\n> DoD congelata: **landing + checkout (test €1 OK) + 3 email caricate**. Stop. (ADR-EST-005)",
+      "source_excerpt": "# WF-S2 — MANUALE CLAUDE CODE: da asset fermo a prodotto in vendita\n> Stream: S2 · Window: 21→26/07 · Owner: chief-forge/Gael · Dipende da: **DEC-EST-001** (veto 21/07 h20:00)\n> DoD congelata: **landing + checkout (test €1 OK) + 3 email caricate**. Stop. (ADR-EST-005)",
+      "source_offset": [
+        21769,
+        24166
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "examples_from_source": [
+        "# WF-S2 — MANUALE CLAUDE CODE: da asset fermo a prodotto in vendita\n> Stream: S2 · Window: 21→26/07 · Owner: chief-forge/Gael · Dipende da: **DEC-EST-001** (veto 21/07 h20:00)\n> DoD congelata: **landi"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per WF-S2-MANUALE.md: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-005",
+        "WF-S2-MANUALE"
+      ]
+    },
+    {
+      "id": "a-chunk-005-002",
+      "title": "1. Pricing attivo (DEC-EST-001)",
+      "category": "procedure",
+      "canonical_definition": "## 1. Pricing attivo (DEC-EST-001)",
+      "extended_explanation": "## 1. Pricing attivo (DEC-EST-001)\n- Manuale completo (203pp): **€67 lancio fino 31/07**, poi **€97**.\n- Lead-magnet: **Parte 1 (cap. 1–3) gratuita** → raccolta email.\n- Order-bump in checkout: **pack template +€27**.",
+      "source_excerpt": "## 1. Pricing attivo (DEC-EST-001)\n- Manuale completo (203pp): **€67 lancio fino 31/07**, poi **€97**.\n- Lead-magnet: **Parte 1 (cap. 1–3) gratuita** → raccolta email.\n- Order-bump in checkout: **pack template +€27**.",
+      "source_offset": [
+        21769,
+        24166
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "examples_from_source": [
+        "## 1. Pricing attivo (DEC-EST-001)\n- Manuale completo (203pp): **€67 lancio fino 31/07**, poi **€97**.\n- Lead-magnet: **Parte 1 (cap. 1–3) gratuita** → raccolta email.\n- Order-bump in checkout: **pack"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 1. Pricing attivo (DEC-EST-001): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-005",
+        "WF-S2-MANUALE"
+      ]
+    },
+    {
+      "id": "a-chunk-005-003",
+      "title": "2. Funnel minimo vendibile",
+      "category": "procedure",
+      "canonical_definition": "## 2. Funnel minimo vendibile",
+      "extended_explanation": "## 2. Funnel minimo vendibile\n```\ntraffico (bio S3/S4 · push Max · lista outreach)\n→ landing (empire-premium-style, motore site-*)\n→ checkout (Stripe link → Gumroad → PayPal.me → bonifico)\n→ email 1 consegna · email 2 caso d'uso · email 3 scadenza lancio\n```",
+      "source_excerpt": "## 2. Funnel minimo vendibile\n```\ntraffico (bio S3/S4 · push Max · lista outreach)\n→ landing (empire-premium-style, motore site-*)\n→ checkout (Stripe link → Gumroad → PayPal.me → bonifico)\n→ email 1 consegna · email 2 caso d'uso · email 3 scadenza lancio\n```",
+      "source_offset": [
+        21769,
+        24166
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "examples_from_source": [
+        "## 2. Funnel minimo vendibile\n```\ntraffico (bio S3/S4 · push Max · lista outreach)\n→ landing (empire-premium-style, motore site-*)\n→ checkout (Stripe link → Gumroad → PayPal.me → bonifico)\n→ email 1 c"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 2. Funnel minimo vendibile: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-005",
+        "WF-S2-MANUALE"
+      ]
+    },
+    {
+      "id": "a-chunk-005-004",
+      "title": "Landing — struttura (copy: cro-copy-architect APSOC, 21/07 sera)",
+      "category": "procedure",
+      "canonical_definition": "### Landing — struttura (copy: cro-copy-architect APSOC, 21/07 sera)",
+      "extended_explanation": "### Landing — struttura (copy: cro-copy-architect APSOC, 21/07 sera)\n1. **H1**: \"203 pagine per comandare Claude Code come un professionista.\" + sub: \"Da zero a workflow autonomi: il manuale operativo in italiano.\"\n2. Prova: indice dei contenuti + 3 screenshot interni + Parte 1 gratis.\n3. Offerta: €67 barrato €97 · \"prezzo di lancio fino al 31/07\" · bump template.\n4. CTA unica: checkout. Niente menu, niente distrazioni (DoD \"vendibile\").",
+      "source_excerpt": "### Landing — struttura (copy: cro-copy-architect APSOC, 21/07 sera)\n1. **H1**: \"203 pagine per comandare Claude Code come un professionista.\" + sub: \"Da zero a workflow autonomi: il manuale operativo in italiano.\"\n2. Prova: indice dei contenuti + 3 screenshot interni + Parte 1 gratis.\n3. Offerta: €67 barrato €97 · \"prezzo di lancio fino al 31/07\" · bump template.\n4. CTA unica: checkout. Niente menu, niente distrazioni (DoD \"vendibile\").",
+      "source_offset": [
+        21769,
+        24166
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "examples_from_source": [
+        "### Landing — struttura (copy: cro-copy-architect APSOC, 21/07 sera)\n1. **H1**: \"203 pagine per comandare Claude Code come un professionista.\" + sub: \"Da zero a workflow autonomi: il manuale operativo"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Landing — struttura (copy: cro-copy-arch: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "implied_mental_models": [
+        "Framework APSOC"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-005",
+        "WF-S2-MANUALE"
+      ]
+    },
+    {
+      "id": "a-chunk-005-005",
+      "title": "3 email (caricate nel checkout/ESP il 22/07)",
+      "category": "procedure",
+      "canonical_definition": "### 3 email (caricate nel checkout/ESP il 22/07)",
+      "extended_explanation": "### 3 email (caricate nel checkout/ESP il 22/07)\n- **E1 (istante)**: consegna link download + \"inizia dal cap. 4\" + bump.\n- **E2 (+1g)**: caso d'uso concreto (da trascrizione a skill in 1 sessione) + CTA chi non ha comprato.\n- **E3 (+3g)**: \"il 31/07 il prezzo passa a €97\" + FAQ (formato, aggiornamenti, rimborso 14gg).",
+      "source_excerpt": "### 3 email (caricate nel checkout/ESP il 22/07)\n- **E1 (istante)**: consegna link download + \"inizia dal cap. 4\" + bump.\n- **E2 (+1g)**: caso d'uso concreto (da trascrizione a skill in 1 sessione) + CTA chi non ha comprato.\n- **E3 (+3g)**: \"il 31/07 il prezzo passa a €97\" + FAQ (formato, aggiornamenti, rimborso 14gg).",
+      "source_offset": [
+        21769,
+        24166
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "examples_from_source": [
+        "### 3 email (caricate nel checkout/ESP il 22/07)\n- **E1 (istante)**: consegna link download + \"inizia dal cap. 4\" + bump.\n- **E2 (+1g)**: caso d'uso concreto (da trascrizione a skill in 1 sessione) + "
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 3 email (caricate nel checkout/ESP il 22: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-005",
+        "WF-S2-MANUALE"
+      ]
+    },
+    {
+      "id": "a-chunk-005-006",
+      "title": "3. Setup tecnico (Gael, 22/07)",
+      "category": "procedure",
+      "canonical_definition": "## 3. Setup tecnico (Gael, 22/07)",
+      "extended_explanation": "## 3. Setup tecnico (Gael, 22/07)\n1. Landing dal motore site-* esistente (zero rebrand).\n2. Checkout ladder finché uno passa il **test €1**.\n3. Download: PDF completo dietro pagamento; Parte 1 con email-gate (lista per sequenza).\n4. Verifica acquisto end-to-end → `checkpoint --task WF-S2 --note \"funnel live\"` (Gate-FUNNEL 🟢).",
+      "source_excerpt": "## 3. Setup tecnico (Gael, 22/07)\n1. Landing dal motore site-* esistente (zero rebrand).\n2. Checkout ladder finché uno passa il **test €1**.\n3. Download: PDF completo dietro pagamento; Parte 1 con email-gate (lista per sequenza).\n4. Verifica acquisto end-to-end → `checkpoint --task WF-S2 --note \"funnel live\"` (Gate-FUNNEL 🟢).",
+      "source_offset": [
+        21769,
+        24166
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "examples_from_source": [
+        "## 3. Setup tecnico (Gael, 22/07)\n1. Landing dal motore site-* esistente (zero rebrand).\n2. Checkout ladder finché uno passa il **test €1**.\n3. Download: PDF completo dietro pagamento; Parte 1 con ema"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 3. Setup tecnico (Gael, 22/07): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-005",
+        "WF-S2-MANUALE"
+      ]
+    },
+    {
+      "id": "a-chunk-005-007",
+      "title": "4. Traffico questa settimana (ordine P4)",
+      "category": "procedure",
+      "canonical_definition": "## 4. Traffico questa settimana (ordine P4)",
+      "extended_explanation": "## 4. Traffico questa settimana (ordine P4)\n1. Lista outreach esistente (lead già raccolti) — firma email + P.S. dedicato.\n2. Push Max su canali caldi (23→26/07): post + storie + 5 contatti diretti/giorno.\n3. Bio/link delle pagine S3/S4 appena riattivate.",
+      "source_excerpt": "## 4. Traffico questa settimana (ordine P4)\n1. Lista outreach esistente (lead già raccolti) — firma email + P.S. dedicato.\n2. Push Max su canali caldi (23→26/07): post + storie + 5 contatti diretti/giorno.\n3. Bio/link delle pagine S3/S4 appena riattivate.",
+      "source_offset": [
+        21769,
+        24166
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "examples_from_source": [
+        "## 4. Traffico questa settimana (ordine P4)\n1. Lista outreach esistente (lead già raccolti) — firma email + P.S. dedicato.\n2. Push Max su canali caldi (23→26/07): post + storie + 5 contatti diretti/gi"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 4. Traffico questa settimana (ordine P4): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-005",
+        "WF-S2-MANUALE"
+      ]
+    },
+    {
+      "id": "a-chunk-005-008",
+      "title": "5. Metriche",
+      "category": "procedure",
+      "canonical_definition": "## 5. Metriche",
+      "extended_explanation": "## 5. Metriche\n`s2_funnel_live` (0/1 il 22/07) · `s2_vendite_manuale` · `s2_incasso_eur` · download lead-magnet (diagnostica). Anti-vanity: le visite non contano come risultato.\n---\n⛓️ P12: `WF-S2#estate-2026` · trace: DEC-EST-001 · fallback: checkout ladder (P5) · kill: R-09 scope creep",
+      "source_excerpt": "## 5. Metriche\n`s2_funnel_live` (0/1 il 22/07) · `s2_vendite_manuale` · `s2_incasso_eur` · download lead-magnet (diagnostica). Anti-vanity: le visite non contano come risultato.\n---\n⛓️ P12: `WF-S2#estate-2026` · trace: DEC-EST-001 · fallback: checkout ladder (P5) · kill: R-09 scope creep",
+      "source_offset": [
+        21769,
+        24166
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "examples_from_source": [
+        "## 5. Metriche\n`s2_funnel_live` (0/1 il 22/07) · `s2_vendite_manuale` · `s2_incasso_eur` · download lead-magnet (diagnostica). Anti-vanity: le visite non contano come risultato.\n---\n⛓️ P12: `WF-S2#est"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per 5. Metriche: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S2-MANUALE.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-005",
+        "WF-S2-MANUALE"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 376,
+    "atom_count": 8,
+    "dominant_categories": [
+      "procedure"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "stats": {
+    "atoms_total": 148,
+    "atoms_covered": 148,
+    "coverage_rate": 1.0,
+    "clusters": 5,
+    "source_words": 10552,
+    "mkd_words": 32138,
+    "ratio": 3.05,
+    "examples_from_source": 151,
+    "examples_added": 148,
+    "schemas_generated": 5,
+    "cross_refs_internal": 592,
+    "glossary_terms": 27,
+    "faq_questions": 122
+  },
+  "issues_found_in_critique": [],
+  "iteration": 1
+}

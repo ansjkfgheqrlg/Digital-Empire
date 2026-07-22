@@ -196,6 +196,26 @@ i sistemi autorizzati e non finiscono in contenuti pubblici.
 **7.4 — Enforcement.** Il Security-Sentinel ha autorità di blocco immediato su push e invii;
 escalation: CTO → CEO (consenso byzantine se si sospetta compromissione).
 
+## Articolo 8 — Regola Assoluta del Workflow Reale e Autocontenuto (Struttura Tangibile 360°)
+
+> **REGOLA ESTREMA E INVIOLABILE DEL FOUNDER (MAX, 2026-07-22):**  
+> *"Quando ti chiedo di creare un workflow, o quando si cita un workflow, voglio che ci sia una cartella reale, tangibile e autocontenuta con questo workflow. Voglio vederlo, voglio vedere tutta la struttura sempre: tutti i flussi in MD e Python, tutte le skill, tutte le automazioni, tutti gli agenti con dentro i ruoli e i prompt, tutte le reference. Questo vale per sempre."*
+
+**8.1 — Divieto assoluto di Workflow "Solo Testo" o Dispersi.**
+È vietato qualificare come "workflow" un semplice elenco di compiti su un file Markdown (`.md`) che rimanda ad asset sparsi o inesistenti. Ogni workflow (es. `WORKFLOW-ESTATE/`, `Outreach/`, ecc.) DEVE avere una directory radice chiaramente visibile nel monorepo che racchiude l'intera sua struttura.
+
+**8.2 — I 6 Pilastri Obbligatori di ogni Cartella Workflow.**
+Ogni cartella di workflow suprema deve organizzare al suo interno in modo esplicito (o tramite sottocartelle/mirror concreti ed eseguibili) tutti i seguenti 6 pilastri:
+1. **Flussi & Piani (`01-FLUSSI-E-PIANI/`):** I documenti operativi, di sequenza (`.md`) e di orchestrazione (`workflows.yaml`).
+2. **Automazioni & Scripts (`02-AUTOMAZIONI-E-SCRIPTS/`):** Il codice reale eseguibile (`.py`, `.bat`, `.ps1`) che fa funzionare la macchina, gestisce checkpoint, invii o elaborazioni.
+3. **Agenti & Ruoli (`03-AGENTI-E-RUOLI/`):** Le schede operative (`.md`/`.yaml`) degli agenti o delle persone (Max, Gael, Claude, Chief-Forge, closer, copy-architect) che eseguono quel workflow.
+4. **Skills & Reference (`04-SKILLS-E-REFERENCE/`):** Le istruzioni di specializzazione AI (`SKILL.md`) e le reference operative (es. `checklist_APSOC.md`, `playbook.md`).
+5. **Templates & Kit (`05-TEMPLATES-E-KIT/`):** I materiali di delivery pronti al copia-incolla o alla spedizione (preventivi, email, script di chiamata, caroselli).
+6. **Dashboard & Metriche (`06-DASHBOARD-E-METRICHE/`):** Il cruscotto di monitoraggio reale dei KPI numerici (`DASHBOARD.md`, `LISTA-LEAD.md`).
+
+**8.3 — Enforcement (Gate-5-bis e Sentinels).**
+Qualsiasi workflow che manca anche solo di una di queste componenti tangibili è classificato come **"Workflow Abusivo / Incompleto"** dal Quality-Sentinel e dal Gate 5-bis di Max, e viene bloccato o risanato all'istante.
+
 ---
 
 ## Checklist Brand Gate (uso operativo — da copiare nei gate QA)
@@ -208,6 +228,7 @@ escalation: CTO → CEO (consenso byzantine se si sospetta compromissione).
 [ ] Zero AI-slop — niente frasi generiche, icebreaker vuoti, aggettivi senza numeri
 [ ] Autonomia del cliente — niente dependency-language
 [ ] brand_kit + icp dichiarati (multi-tenant, Art.6)
+[ ] Regola Art.8 Workflow Reale: cartella autocontenuta con MD, Python, Agenti, Skill e Reference
 [ ] Segreti fuori dal repo — nessuna key/sessione in git
 [ ] Checkpoint scritto in Memory dopo questo task
 ```

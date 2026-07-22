@@ -1,0 +1,96 @@
+{
+  "chunk_id": "chunk-013",
+  "atoms": [
+    {
+      "id": "a-chunk-013-001",
+      "title": "─── Costruisce il mini-dettaglio specifico per il prompt ────────────────────",
+      "category": "procedure",
+      "canonical_definition": "# ─── Costruisce il mini-dettaglio specifico per il prompt ────────────────────",
+      "extended_explanation": "# ─── Costruisce il mini-dettaglio specifico per il prompt ────────────────────",
+      "source_excerpt": "# ─── Costruisce il mini-dettaglio specifico per il prompt ────────────────────",
+      "source_offset": [
+        59538,
+        62831
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "# ─── Costruisce il mini-dettaglio specifico per il prompt ────────────────────"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per ─── Costruisce il mini-dettaglio specifi: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    },
+    {
+      "id": "a-chunk-013-002",
+      "title": "_nota_contesto(lead: dict) -> str:",
+      "category": "procedure",
+      "canonical_definition": "def _nota_contesto(lead: dict) -> str:",
+      "extended_explanation": "def _nota_contesto(lead: dict) -> str:\nnote    = lead.get(\"note\", \"\").lower()\nwebsite = lead.get(\"website\", \"\").lower()\nif \"instagram\" in note:\nreturn (\n\"TROVATO SU INSTAGRAM: Il professionista non ha un sito web. \"\n\"Trovato su Instagram cercando nel settore. \"\n\"L'unico modo di contattarli è via DM o telefono.\"\n)\nif \"facebook\" in website and \"sito\" not in note:\nreturn (\n\"SOLO PAGINA FACEBOOK: Nessun sito web proprietario. \"\n\"La presenza online è solo una pagina Facebook. \"\n\"Nessun form di contatto diretto.\"\n)\nif \"social\" in note:\nreturn (\n\"SOLO CONTATTI SOCIAL: Nessun sito web. \"\n\"La presenza digitale è unicamente social. \"\n\"Per contattarli bisogna usare DM o telefono.\"\n)\nif any(y in note for y in [\"2010\", \"2011\", \"2012\", \"2013\", \"2014\", \"2015\"]):\nanno = next(y for y in [\"2010\",\"2011\",\"2012\",\"2013\",\"2014\",\"2015\"] if y in note)\nreturn (\nf\"SITO DATATO ({anno}): Il sito web è fermo al {anno}. \"\n\"Design obsoleto, probabilmente non ottimizzato per mobile, \"\n\"nessun form di contatto moderno.\"\n)\nif \"pdf\" in note:\nreturn (\n\"TROVATO IN UN PDF: Questo professionista non ha una presenza web propria. \"\n\"Il nominativo è emerso da un documento PDF. \"\n\"Online è praticamente invisibile a chi cerca oggi.\"\n)\nif \"nessun modulo\" in note or \"nessun form\" in note:\nreturn (\n\"SITO SENZA FORM: Il sito esiste ma non ha nessun modulo di contatto. \"\n\"Chi vuole fissare un appuntamento deve cercare il numero e chiamare.\"\n)\nif \"solo telefono\" in note or \"solo email\" in note:\nreturn (\n\"CONTATTO SOLO ANALOGICO: L'unico canale è il telefono (o email). \"\n\"Nessun form, nessuna prenotazione online. \"\n\"Chi arriva fuori orario non ha alternativa.\"\n)\nif \"whatsapp\" in note:\nreturn (\n\"PRENOTAZIONE VIA WHATSAPP: Per prenotare bisogna scrivere un messaggio WhatsApp. \"\n\"Funziona solo quando qualcuno è disponibile a rispondere in tempo reale.\"\n)\nif \"nessuno\" in website or not website.strip():\nreturn (\n\"NESSUN SITO WEB: Questo professionista non ha un sito. \"\n\"Trovato tramite contatto diretto. Online è invisibile a chi cerca.\"\n)\nif \"vetrina\" in note:\nreturn (\n\"SITO SOLO VETRINA: Il sito è puramente informativo. \"\n\"Nessun form, nessuna prenotazione. \"\n\"Chi vuole contattarli deve chiamare.\"\n)\nif \"basic\" in note or \"base\" in note:\nreturn (\n\"SITO BASE: Esiste un sito ma è essenziale. \"\n\"Nessun sistema di prenotazione, probabilmente solo informazioni e telefono.\"\n)\nif \"informativo\" in note:\nreturn (\n\"SITO INFORMATIVO: Il sito elenca i servizi ma non ha modo di \"\n\"contattarli o prenotare direttamente online.\"\n)\nreturn f\"STATO DIGITALE: {lead.get('note', 'sito base, solo telefono')}.\"",
+      "source_excerpt": "def _nota_contesto(lead: dict) -> str:\nnote    = lead.get(\"note\", \"\").lower()\nwebsite = lead.get(\"website\", \"\").lower()\nif \"instagram\" in note:\nreturn (\n\"TROVATO SU INSTAGRAM: Il professionista non ha un sito web. \"\n\"Trovato su Instagram cercando nel settore. \"\n\"L'unico modo di contattarli è via DM o telefono.\"\n)\nif \"facebook\" in website and \"sito\" not in note:\nreturn (\n\"SOLO PAGINA FACEBOOK: Nessun sito web proprietario. \"\n\"La presenza online è solo una pagina Facebook. \"\n\"Nessun form di contatto diretto.\"\n)\nif \"social\" in note:\nreturn (\n\"SOLO CONTATTI SOCIAL: Nessun sito web. \"\n\"La presenza ",
+      "source_offset": [
+        59538,
+        62831
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "examples_from_source": [
+        "def _nota_contesto(lead: dict) -> str:\nnote    = lead.get(\"note\", \"\").lower()\nwebsite = lead.get(\"website\", \"\").lower()\nif \"instagram\" in note:\nreturn (\n\"TROVATO SU INSTAGRAM: Il professionista non ha"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per _nota_contesto(lead: dict) -> str:: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 02-AUTOMAZIONI-E-SCRIPTS/prepare_outreach_emails.py"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-012",
+        "prepare_outreach_emails"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 429,
+    "atom_count": 2,
+    "dominant_categories": [
+      "procedure"
+    ]
+  }
+}

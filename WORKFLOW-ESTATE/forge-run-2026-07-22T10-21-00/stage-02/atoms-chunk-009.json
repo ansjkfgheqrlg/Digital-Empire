@@ -1,0 +1,223 @@
+{
+  "chunk_id": "chunk-009",
+  "atoms": [
+    {
+      "id": "a-chunk-009-001",
+      "title": "workflows.yaml",
+      "category": "procedure",
+      "canonical_definition": "# ═══════════════════════════════════════════════════════════════════",
+      "extended_explanation": "# ═══════════════════════════════════════════════════════════════════",
+      "source_excerpt": "# ═══════════════════════════════════════════════════════════════════",
+      "source_offset": [
+        32545,
+        41919
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/workflows.yaml"
+      ],
+      "examples_from_source": [
+        "# ═══════════════════════════════════════════════════════════════════"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per workflows.yaml: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/workflows.yaml"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-009",
+        "workflows"
+      ]
+    },
+    {
+      "id": "a-chunk-009-002",
+      "title": "ESTATE-2026 REVENUE WORKSHOP — Orchestrazione completa (machine-readable)",
+      "category": "concept",
+      "canonical_definition": "# ESTATE-2026 REVENUE WORKSHOP — Orchestrazione completa (machine-readable)",
+      "extended_explanation": "# ESTATE-2026 REVENUE WORKSHOP — Orchestrazione completa (machine-readable)",
+      "source_excerpt": "# ESTATE-2026 REVENUE WORKSHOP — Orchestrazione completa (machine-readable)",
+      "source_offset": [
+        32545,
+        41919
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/workflows.yaml"
+      ],
+      "examples_from_source": [
+        "# ESTATE-2026 REVENUE WORKSHOP — Orchestrazione completa (machine-readable)"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per ESTATE-2026 REVENUE WORKSHOP — Orchestra: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/workflows.yaml"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "concept",
+        "src-009",
+        "workflows"
+      ]
+    },
+    {
+      "id": "a-chunk-009-003",
+      "title": "Plan of record: 01-PLANNING/PLANNING-P7-MASTER-PLAN.md",
+      "category": "concept",
+      "canonical_definition": "# Plan of record: 01-PLANNING/PLANNING-P7-MASTER-PLAN.md",
+      "extended_explanation": "# Plan of record: 01-PLANNING/PLANNING-P7-MASTER-PLAN.md",
+      "source_excerpt": "# Plan of record: 01-PLANNING/PLANNING-P7-MASTER-PLAN.md",
+      "source_offset": [
+        32545,
+        41919
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/workflows.yaml"
+      ],
+      "examples_from_source": [
+        "# Plan of record: 01-PLANNING/PLANNING-P7-MASTER-PLAN.md"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Plan of record: 01-PLANNING/PLANNING-P7-: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/workflows.yaml"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "concept",
+        "src-009",
+        "workflows"
+      ]
+    },
+    {
+      "id": "a-chunk-009-004",
+      "title": "Trace: ARCH-ESTATE-2026#estate-2026 · memory-first (ADR-EST-003)",
+      "category": "concept",
+      "canonical_definition": "# Trace: ARCH-ESTATE-2026#estate-2026 · memory-first (ADR-EST-003)",
+      "extended_explanation": "# Trace: ARCH-ESTATE-2026#estate-2026 · memory-first (ADR-EST-003)",
+      "source_excerpt": "# Trace: ARCH-ESTATE-2026#estate-2026 · memory-first (ADR-EST-003)",
+      "source_offset": [
+        32545,
+        41919
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/workflows.yaml"
+      ],
+      "examples_from_source": [
+        "# Trace: ARCH-ESTATE-2026#estate-2026 · memory-first (ADR-EST-003)"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Trace: ARCH-ESTATE-2026#estate-2026 · me: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/workflows.yaml"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "concept",
+        "src-009",
+        "workflows"
+      ]
+    },
+    {
+      "id": "a-chunk-009-005",
+      "title": "═══════════════════════════════════════════════════════════════════",
+      "category": "procedure",
+      "canonical_definition": "# ═══════════════════════════════════════════════════════════════════",
+      "extended_explanation": "# ═══════════════════════════════════════════════════════════════════\nversion: 1\nproject: ESTATE-2026-REVENUE\nbaseline: 2026-07-21\nwindow: {start: \"2026-07-21\", end: \"2026-07-26\"}\nglobals:\nmemory:\nroot: 00-MEMORY\ncli: \"python3 00-MEMORY/memory_manager.py\"\nrule_zero: \"task chiuso -> checkpoint; decisione -> decision; fallimento -> error\"\neod_hook: \"checkpoint giornaliero + metriche h19:00 (WF-MEM-EOD)\"\nperf_hook: \"OGNI azione chiusa -> PERF record (P-LOOP T1) -> analisi/dispatch/conferma (WF-PERF-LOOP)\"\nconstraints:\nsingle_opus_swarm: true          # CP-20260711-002 · ADR-EST-004\nswarm_queue: [S1, S2, S6, S5]    # priorità coda\nsecrets: {FLIKI_API_KEY: \".env locale (gitignored) — MAI nei file/prompt\"}\ndod_frozen: true                 # ADR-EST-005\ndecision_policy: default_plus_veto # ADR-EST-006: scade il veto -> default ATTIVO\ndecisions:                            # mirror di 00-MEMORY/decisions (source of truth)\n- {id: DEC-EST-001, topic: \"prezzo Manuale (B-003)\", default: \"EUR 67 lancio / EUR 97 listino\", veto_deadline: \"2026-07-21T20:00\", blocks: [S2, S3, S4]}\n- {id: DEC-EST-002, topic: \"nome prodotto S6\", default: \"Preventa\", veto_deadline: \"2026-07-22T12:00\", blocks: [S6]}\n- {id: DEC-EST-004, topic: \"nicchia YT #1\", default: \"AI/Claude IT\", veto_deadline: \"2026-07-24T18:00\", blocks: [S5]}\nworkflows:\nWF-MASTER:\ntype: orchestrator\nowner: chief-forge\nschedule: continuous\nloop:\n- \"mattina: leggi dashboard + gate del giorno (07-CONTROL/DASHBOARD-E-RETRO.md)\"\n- \"esegui corsie Max/Gael/Claude da PLANNING-P7 §2\"\n- \"h19:00 -> WF-MEM-EOD\"\n- \"gate scaduto -> marcare 🟢/🔴 e applicare kill criteria (PLANNING-P5 §2)\"\ngates: [Gate-DEC, Gate-FUNNEL, Gate-CONTATTI, Gate-S4, Gate-S5, Gate-REV]\nWF-S1-CONCESSIONARI:\nowner: Max; support: [claude, chief-forge]; window: 21→26/07\ndoD: \">=1 anticipo incassato (setup o canone)\"\nsteps:\n- {id: s1.1, who: Max, task: \"lista 7 lead (nome/stato/canale/ultimo contatto)\", due: \"2026-07-21\"}\n- {id: s1.2, who: claude, task: \"script WA msg1-2-3 + argomentario obiezioni\", due: \"2026-07-21\", skill: [beast-preventivi, A8-closing]}\n- {id: s1.3, who: Max, task: \"contatti WA-first: 2 (21/07), 3 (22/07), 2 + follow-up (23/07)\", gate: Gate-CONTATTI}\n- {id: s1.4, who: Max, task: \"chiusura: link pagamento setup contrattualizzato\", due: \"2026-07-25\"}\n- {id: s1.5, who: gael, task: \"clone app via /nuovo-concessionario il giorno della firma\", on: chiusura}\noffer:\nname: \"Partenza Anticipata Luglio\"\nterms: [\"setup -30% OPPURE primo mese gratis\", \"attivazione entro 31/07\", \"prezzo 2026 bloccato\", \"onboarding entro 20/08\"]\nangle: \"A settembre sei GIA' operativo. Gli altri staranno installando.\"\nfallback: {max_unavailable: \"chiusura asincrona via msg-3 binario (P4 §2)\"}\nmemory: {on_close: \"metric --name s1_anticipi_chiusi --value <n>; metric --name s1_incasso_eur --value <eur>\"}\nWF-S2-MANUALE:\nowner: chief-forge (gael); copy: claude; window: 21→26/07\ndepends: [DEC-EST-001]\ndoD: \"1 landing + checkout test €1 OK + 3 email caricate (STOP — vendibile, non perfetto)\"\nsteps:\n- {id: s2.1, who: sistema, task: \"DEC-001 ATTIVA entro veto 21/07 h20:00\"}\n- {id: s2.2, who: claude, task: \"copy landing + 3 email (cro-copy-architect APSOC)\", due: \"2026-07-21 sera\"}\n- {id: s2.3, who: gael, task: \"landing empire-premium-style + checkout live\", due: \"2026-07-22\", gate: Gate-FUNNEL}\n- {id: s2.4, who: gael, task: \"lead-magnet Parte 1 (cap.1-3) come free download\", due: \"2026-07-22\"}\n- {id: s2.5, who: Max, task: \"push su canali caldi (post/storie/contatti diretti)\", due: \"2026-07-23→26\"}\ncheckout_ladder: [stripe_payment_link, gumroad, paypal_me, bonifico_typeform]\npricing: {launch: 67, list: 97, bump: \"+EUR 27 pack template\", currency: EUR}\nmemory: {on_sale: \"metric --name s2_vendite_manuale --value <n>\"}\nWF-S3-PAGINE:\nowner: gael; window: 22→26/07\ndoD: \"crea.illtuo_impero riparte con bio→funnel + >=3 caroselli pubblicati\"\nsteps:\n- {id: s3.1, who: gael, task: \"AUDIT pagine (follower/ultimo post/accessi-2FA/bio)\", due: \"2026-07-21\", output: \"07-CONTROL/AUDIT-PAGINE-20260721.md\"}\n- {id: s3.2, who: gael, task: \"bio + link in bio -> funnel S2\", due: \"2026-07-22\"}\n- {id: s3.3, who: gael, task: \"batch 7 caroselli via carousel-factory (1 run)\", due: \"2026-07-23\"}\n- {id: s3.4, who: sistema, task: \"pubblicazione 1/giorno (Meta Graph API -> Buffer -> manuale)\"}\nrules: [\"rampa anti-ban: max 1 post/giorno/pagina\", \"contenuti dal motore esistente, zero restyle (ADR-EST-002)\"]\nmemory: {daily: \"metric --name s3_caroselli_pubblicati --value <n>\"}\nWF-S4-MENTALITA:\nowner: gael; window: 23→25/07; hard_rule: \"condizione Max F-07: SOLO se automazione 100%, altrimenti STANDBY\"\ndoD_gate: \"E2E: batch -> QA auto -> scheduler -> report. Test run dimostrabile\"\nsteps:\n- {id: s4.1, who: gael, task: \"wrap carousel-factory brand mentalita-brutale (config esistente)\", due: \"2026-07-23\"}\n- {id: s4.2, who: gael, task: \"gate QA automatico su regole copy\", due: \"2026-07-24\"}\n- {id: s4.3, who: gael, task: \"scheduler pubblicazione (Meta Graph API/Buffer)\", due: \"2026-07-24\"}\n- {id: s4.4, who: gael, task: \"report engagement settimanale automatico\", due: \"2026-07-24\", gate: Gate-S4}\nmonetization: \"link in bio -> lead-magnet -> S2 (niente long-term-only)\"\nno_go: \"dichiarare STANDBY con error --wf WF-S4 e archiviare a settimana prox\"\nWF-S5-YOUTUBE:\nowner: youtube-dept; window: 24→25/07; depends: [DEC-EST-004, Gate-S5]\ndoD: \"1 video renderizzato + pubblicato + trace P12 + checkpoint (basta)\"\nstages:                              # pipeline 9-stage Empire Studio (dossier S5)\n- {stage: 0, name: memory-bootstrap, agent: strategy-dept}\n- {stage: 1, name: ingestion, agent: yt-channel-ingester / video-single-ingester}\n- {stage: 2, name: frame-extraction, tools: [ffmpeg]}\n- {stage: 3, name: visione-reale, agent: video-watcher}\n- {stage: 4, name: knowledge-atoms, agent: knowledge-extractor, trace: P12}\n- {stage: 5, name: verifica, agents: [visual-verifier, compliance-auditor]}\n- {stage: 6, name: forge-render, agents: [content-forge-invoker, yt-fliki-renderer]}\n- {stage: 7, name: publish, agents: [wiki-writer, yt-seo-publisher]}\n- {stage: 8, name: improve, agent: update-proposer -> ReasoningBank}\n- {stage: 9, name: memory-close, agent: checkpoint-manager}\nrender_ladder: [fliki_api, \"script+stock+tts+ffmpeg\", deferred]\nrevenue_path: \"lead-gen via link Manuale in descrizione (sempre), AdSense/compounding dopo\"\nrules: [\"chiave Fliki solo .env\", \"1 video solo questa settimana\", \"ogni run -> memory_manager checkpoint\"]\nWF-S6-REBRAND-PROMO:\nowner: chief-forge; decisions: [DEC-EST-002]; window: 22→26/07\ndoD: \"1 landing Preventa + 1 demo video <=2min + 1 case study PDF\"\nsteps:\n- {id: s6.1, who: Max, task: \"veto/ok nome (30 sec)\", due: \"2026-07-22 h12:00\"}\n- {id: s6.2, who: gael, task: \"verifica dominio/handle DOPO la scelta\", due: \"2026-07-22\"}\n- {id: s6.3, who: claude, task: \"case study Novacar (case-study-forge: tempi/PDF/consegna reali)\", due: \"2026-07-23\"}\n- {id: s6.4, who: gael, task: \"landing empire-premium-style + demo video 2min\", due: \"2026-07-24\"}\n- {id: s6.5, who: A1, task: \"scrape dealer IT import-DE (mobile.de) -> lista lead\", due: \"2026-07-25\"}\n- {id: s6.6, who: A2, task: \"runtime outreach con case study (sequenza email)\", due: \"2026-07-26\"}\ntestimonial: \"i 7 di S1 chiusi diventano i primi casi pubblici del rebrand\"\nWF-MEM-EOD:\nowner: memory-architect; schedule: \"daily 19:00\"\nsteps: [\"raccolta metriche del giorno (tracker P6)\", \"aggiornamento dashboard gate\", \"checkpoint EOD\", \"segnalazione slittamenti -> error\"]\nWF-MEM-RETRO:\nowner: strategy-dept; schedule: \"2026-07-26\"\nsteps: [\"status memoria + numeri veri\", \"per stream: ✅/⚠️/❌ + causa radice\", \"pattern vincenti -> reasoning-bank\", \"sync note fisse -> second-brain\", \"CP RETRO-20260726\"]\nWF-PERF-LOOP:\nowner: performance-cell (memory-dir, sponsor TRUTH-CMD); trigger: \"post-task di OGNI workflow, ogni singola volta\"\nspec: 03-WORKFLOWS/WF-PERF-LOOP.md; agents: 04-AGENTS/PERFORMANCE-CELL.md\ncycle: [T0 azione chiusa, T1 capture PERF record (file write, fuori quota), T2 analisi 5D entro EOD (debug/soluzione/struttura/scope/efficiency), T3 synthesize -> ReasoningBank DRAFT, T4 dispatch TIP/RULE-NOTE/MUTATION-PROP, T5 confirm alla prossima PERF: confirmed->pattern ufficiale | recurred->mutation obbligatoria]\nstorage: [00-MEMORY/performances, 00-MEMORY/feedback]\nrules: [\"non blocca mai (non e' un verificatore)\", \"anti-nagging: stesso TIP non ripetuto entro 3 task\", \"FB senza conferma >5 task -> riesumato in EOD-SYNC\", \"solo pattern confirmed precaricati dal pre_task hook\"]\ntraceability: {spec: \"ogni WF cita DEC-EST-xxx e CP-xxx che lo attivano (P12)\"}",
+      "source_excerpt": "# ═══════════════════════════════════════════════════════════════════\nversion: 1\nproject: ESTATE-2026-REVENUE\nbaseline: 2026-07-21\nwindow: {start: \"2026-07-21\", end: \"2026-07-26\"}\nglobals:\nmemory:\nroot: 00-MEMORY\ncli: \"python3 00-MEMORY/memory_manager.py\"\nrule_zero: \"task chiuso -> checkpoint; decisione -> decision; fallimento -> error\"\neod_hook: \"checkpoint giornaliero + metriche h19:00 (WF-MEM-EOD)\"\nperf_hook: \"OGNI azione chiusa -> PERF record (P-LOOP T1) -> analisi/dispatch/conferma (WF-PERF-LOOP)\"\nconstraints:\nsingle_opus_swarm: true          # CP-20260711-002 · ADR-EST-004\nswarm_queue: [",
+      "source_offset": [
+        32545,
+        41919
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/workflows.yaml"
+      ],
+      "examples_from_source": [
+        "# ═══════════════════════════════════════════════════════════════════\nversion: 1\nproject: ESTATE-2026-REVENUE\nbaseline: 2026-07-21\nwindow: {start: \"2026-07-21\", end: \"2026-07-26\"}\nglobals:\nmemory:\nroo"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per ════════════════════════════════════════: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/workflows.yaml"
+      ],
+      "implied_mental_models": [
+        "Framework APSOC"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-009",
+        "workflows"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 1090,
+    "atom_count": 5,
+    "dominant_categories": [
+      "concept",
+      "procedure"
+    ]
+  }
+}

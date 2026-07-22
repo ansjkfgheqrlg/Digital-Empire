@@ -1,0 +1,430 @@
+{
+  "chunk_id": "chunk-006",
+  "atoms": [
+    {
+      "id": "a-chunk-006-001",
+      "title": "WF-S3-S4-PAGINE-MENTALITA.md",
+      "category": "procedure",
+      "canonical_definition": "# WF-S3/S4 — PAGINE LANCIO + MENTALITA.BRUTALE (riattivazione con funnel)",
+      "extended_explanation": "# WF-S3/S4 — PAGINE LANCIO + MENTALITA.BRUTALE (riattivazione con funnel)\n> Stream: S3+S4 · Owner: Gael · Motore: **carousel-factory** (wrap ADR-003, brand mentalita-brutale già configurato)\n> Regola cardine: ogni pagina riattivata = UN funnel + UNA metrica. Niente \"pubblicare per pubblicare\".",
+      "source_excerpt": "# WF-S3/S4 — PAGINE LANCIO + MENTALITA.BRUTALE (riattivazione con funnel)\n> Stream: S3+S4 · Owner: Gael · Motore: **carousel-factory** (wrap ADR-003, brand mentalita-brutale già configurato)\n> Regola cardine: ogni pagina riattivata = UN funnel + UNA metrica. Niente \"pubblicare per pubblicare\".",
+      "source_offset": [
+        24267,
+        26719
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "examples_from_source": [
+        "# WF-S3/S4 — PAGINE LANCIO + MENTALITA.BRUTALE (riattivazione con funnel)\n> Stream: S3+S4 · Owner: Gael · Motore: **carousel-factory** (wrap ADR-003, brand mentalita-brutale già configurato)\n> Regola "
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per WF-S3-S4-PAGINE-MENTALITA.md: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-006",
+        "WF-S3-S4-PAGINE-MENTALITA"
+      ]
+    },
+    {
+      "id": "a-chunk-006-002",
+      "title": "PARTE A — S3 crea.illtuo_impero (22→26/07)",
+      "category": "procedure",
+      "canonical_definition": "## PARTE A — S3 crea.illtuo_impero (22→26/07)",
+      "extended_explanation": "## PARTE A — S3 crea.illtuo_impero (22→26/07)",
+      "source_excerpt": "## PARTE A — S3 crea.illtuo_impero (22→26/07)",
+      "source_offset": [
+        24267,
+        26719
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "examples_from_source": [],
+      "generated_examples": [
+        "➕ Esempio operativo per PARTE A — S3 crea.illtuo_impero (22→26/0: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-006",
+        "WF-S3-S4-PAGINE-MENTALITA"
+      ]
+    },
+    {
+      "id": "a-chunk-006-003",
+      "title": "A1. Audit (21/07 — chiude G-05)",
+      "category": "procedure",
+      "canonical_definition": "### A1. Audit (21/07 — chiude G-05)",
+      "extended_explanation": "### A1. Audit (21/07 — chiude G-05)\nOutput: `07-CONTROL/AUDIT-PAGINE-20260721.md` per OGNI pagina: handle · follower · ultimo post · accessi (email/password/2FA ok?) · bio attuale · link attuale · stato (attiva/dormiente).",
+      "source_excerpt": "### A1. Audit (21/07 — chiude G-05)\nOutput: `07-CONTROL/AUDIT-PAGINE-20260721.md` per OGNI pagina: handle · follower · ultimo post · accessi (email/password/2FA ok?) · bio attuale · link attuale · stato (attiva/dormiente).",
+      "source_offset": [
+        24267,
+        26719
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "examples_from_source": [
+        "### A1. Audit (21/07 — chiude G-05)\nOutput: `07-CONTROL/AUDIT-PAGINE-20260721.md` per OGNI pagina: handle · follower · ultimo post · accessi (email/password/2FA ok?) · bio attuale · link attuale · sta"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per A1. Audit (21/07 — chiude G-05): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-006",
+        "WF-S3-S4-PAGINE-MENTALITA"
+      ]
+    },
+    {
+      "id": "a-chunk-006-004",
+      "title": "A2. Attivazione (22/07)",
+      "category": "procedure",
+      "canonical_definition": "### A2. Attivazione (22/07)",
+      "extended_explanation": "### A2. Attivazione (22/07)\n1. Bio → promessa + link funnel S2 (`link in bio → landing Manuale`).\n2. Batch unico 23/07: **7 caroselli** via carousel-factory (1 run, config esistente).\n3. Pubblicazione 1/giorno: Meta Graph API → Buffer → manuale (ultima spiaggia).\n4. **Rampa anti-ban**: mai più di 1 post/giorno/pagina, zero automation su follow/like/DM.",
+      "source_excerpt": "### A2. Attivazione (22/07)\n1. Bio → promessa + link funnel S2 (`link in bio → landing Manuale`).\n2. Batch unico 23/07: **7 caroselli** via carousel-factory (1 run, config esistente).\n3. Pubblicazione 1/giorno: Meta Graph API → Buffer → manuale (ultima spiaggia).\n4. **Rampa anti-ban**: mai più di 1 post/giorno/pagina, zero automation su follow/like/DM.",
+      "source_offset": [
+        24267,
+        26719
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "examples_from_source": [
+        "### A2. Attivazione (22/07)\n1. Bio → promessa + link funnel S2 (`link in bio → landing Manuale`).\n2. Batch unico 23/07: **7 caroselli** via carousel-factory (1 run, config esistente).\n3. Pubblicazione"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per A2. Attivazione (22/07): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-006",
+        "WF-S3-S4-PAGINE-MENTALITA"
+      ]
+    },
+    {
+      "id": "a-chunk-006-005",
+      "title": "A3. Angoli caroselli (batch 1)",
+      "category": "procedure",
+      "canonical_definition": "### A3. Angoli caroselli (batch 1)",
+      "extended_explanation": "### A3. Angoli caroselli (batch 1)\n1. \"Come ho automatizzato X con Claude Code\" (caso reale) → CTA: Parte 1 gratis.\n2. \"5 errori che fanno tutti con Claude Code\" → CTA: link in bio.\n3. \"Da 0 a skill in 1 sessione\" (dal Manuale cap. 4) → CTA: Manuale.\n4-7. Variazioni hook su 1-3 (riuso pattern vincenti → ReasoningBank in RETRO).",
+      "source_excerpt": "### A3. Angoli caroselli (batch 1)\n1. \"Come ho automatizzato X con Claude Code\" (caso reale) → CTA: Parte 1 gratis.\n2. \"5 errori che fanno tutti con Claude Code\" → CTA: link in bio.\n3. \"Da 0 a skill in 1 sessione\" (dal Manuale cap. 4) → CTA: Manuale.\n4-7. Variazioni hook su 1-3 (riuso pattern vincenti → ReasoningBank in RETRO).",
+      "source_offset": [
+        24267,
+        26719
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "examples_from_source": [
+        "### A3. Angoli caroselli (batch 1)\n1. \"Come ho automatizzato X con Claude Code\" (caso reale) → CTA: Parte 1 gratis.\n2. \"5 errori che fanno tutti con Claude Code\" → CTA: link in bio.\n3. \"Da 0 a skill i"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per A3. Angoli caroselli (batch 1): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-006",
+        "WF-S3-S4-PAGINE-MENTALITA"
+      ]
+    },
+    {
+      "id": "a-chunk-006-006",
+      "title": "PARTE B — S4 mentalita.brutale (23→25/07) — HARD RULE",
+      "category": "procedure",
+      "canonical_definition": "## PARTE B — S4 mentalita.brutale (23→25/07) — HARD RULE",
+      "extended_explanation": "## PARTE B — S4 mentalita.brutale (23→25/07) — HARD RULE\n> **Condizione Max (vincolante): riparte SOLO se 100% automatica.** Se il gate E2E non passa entro 24/07 h20:00 → STANDBY dichiarato (`error --wf WF-S4`), nessuna pubblicazione manuale.",
+      "source_excerpt": "## PARTE B — S4 mentalita.brutale (23→25/07) — HARD RULE\n> **Condizione Max (vincolante): riparte SOLO se 100% automatica.** Se il gate E2E non passa entro 24/07 h20:00 → STANDBY dichiarato (`error --wf WF-S4`), nessuna pubblicazione manuale.",
+      "source_offset": [
+        24267,
+        26719
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "examples_from_source": [
+        "## PARTE B — S4 mentalita.brutale (23→25/07) — HARD RULE\n> **Condizione Max (vincolante): riparte SOLO se 100% automatica.** Se il gate E2E non passa entro 24/07 h20:00 → STANDBY dichiarato (`error --"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per PARTE B — S4 mentalita.brutale (23→25/07: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-006",
+        "WF-S3-S4-PAGINE-MENTALITA"
+      ]
+    },
+    {
+      "id": "a-chunk-006-007",
+      "title": "B1. Pipeline target (tutti anelli, nessun buco)",
+      "category": "procedure",
+      "canonical_definition": "### B1. Pipeline target (tutti anelli, nessun buco)",
+      "extended_explanation": "### B1. Pipeline target (tutti anelli, nessun buco)\n```\nbatch settimanale caroselli (carousel-factory, brand mentalita-brutale)\n→ gate QA automatico (regole copy esistenti: hook, no-claim, CTA)\n→ scheduler pubblicazione (Meta Graph API / Buffer)\n→ report engagement automatico (settimanale)\n→ loop: hook/CTA vincenti → ReasoningBank (WF-*-IMPROVE)\n```",
+      "source_excerpt": "### B1. Pipeline target (tutti anelli, nessun buco)\n```\nbatch settimanale caroselli (carousel-factory, brand mentalita-brutale)\n→ gate QA automatico (regole copy esistenti: hook, no-claim, CTA)\n→ scheduler pubblicazione (Meta Graph API / Buffer)\n→ report engagement automatico (settimanale)\n→ loop: hook/CTA vincenti → ReasoningBank (WF-*-IMPROVE)\n```",
+      "source_offset": [
+        24267,
+        26719
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "examples_from_source": [
+        "### B1. Pipeline target (tutti anelli, nessun buco)\n```\nbatch settimanale caroselli (carousel-factory, brand mentalita-brutale)\n→ gate QA automatico (regole copy esistenti: hook, no-claim, CTA)\n→ sche"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per B1. Pipeline target (tutti anelli, nessu: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-006",
+        "WF-S3-S4-PAGINE-MENTALITA"
+      ]
+    },
+    {
+      "id": "a-chunk-006-008",
+      "title": "B2. Gate E2E (24/07)",
+      "category": "procedure",
+      "canonical_definition": "### B2. Gate E2E (24/07)",
+      "extended_explanation": "### B2. Gate E2E (24/07)\nTest dimostrabile: 1 carosello prodotto → QA pass/fail visibile → schedulato → report generato. Esito → `checkpoint --task WF-S4 --note \"E2E ok/ko\"`.",
+      "source_excerpt": "### B2. Gate E2E (24/07)\nTest dimostrabile: 1 carosello prodotto → QA pass/fail visibile → schedulato → report generato. Esito → `checkpoint --task WF-S4 --note \"E2E ok/ko\"`.",
+      "source_offset": [
+        24267,
+        26719
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "examples_from_source": [
+        "### B2. Gate E2E (24/07)\nTest dimostrabile: 1 carosello prodotto → QA pass/fail visibile → schedulato → report generato. Esito → `checkpoint --task WF-S4 --note \"E2E ok/ko\"`."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per B2. Gate E2E (24/07): applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-006",
+        "WF-S3-S4-PAGINE-MENTALITA"
+      ]
+    },
+    {
+      "id": "a-chunk-006-009",
+      "title": "B3. Monetizzazione breve (se e solo se ON)",
+      "category": "procedure",
+      "canonical_definition": "### B3. Monetizzazione breve (se e solo se ON)",
+      "extended_explanation": "### B3. Monetizzazione breve (se e solo se ON)\nlink in bio → lead-magnet → S2 · shoutout a pagamento quando torna trazione · affiliate. Niente piani long-term-only.",
+      "source_excerpt": "### B3. Monetizzazione breve (se e solo se ON)\nlink in bio → lead-magnet → S2 · shoutout a pagamento quando torna trazione · affiliate. Niente piani long-term-only.",
+      "source_offset": [
+        24267,
+        26719
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "examples_from_source": [
+        "### B3. Monetizzazione breve (se e solo se ON)\nlink in bio → lead-magnet → S2 · shoutout a pagamento quando torna trazione · affiliate. Niente piani long-term-only."
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per B3. Monetizzazione breve (se e solo se O: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-006",
+        "WF-S3-S4-PAGINE-MENTALITA"
+      ]
+    },
+    {
+      "id": "a-chunk-006-010",
+      "title": "Metriche S3/S4",
+      "category": "procedure",
+      "canonical_definition": "## Metriche S3/S4",
+      "extended_explanation": "## Metriche S3/S4\n`s3_caroselli_pubblicati` (≥3) · click bio→landing (diagnostica) · `s4_pipeline_e2e` (0/1) · vendite attribuite via S2 (lagging unico che conta).\n---\n⛓️ P12: `WF-S3-S4#estate-2026` · trace: F-04, F-07, R-06 · gate: Gate-S4 24/07 h20",
+      "source_excerpt": "## Metriche S3/S4\n`s3_caroselli_pubblicati` (≥3) · click bio→landing (diagnostica) · `s4_pipeline_e2e` (0/1) · vendite attribuite via S2 (lagging unico che conta).\n---\n⛓️ P12: `WF-S3-S4#estate-2026` · trace: F-04, F-07, R-06 · gate: Gate-S4 24/07 h20",
+      "source_offset": [
+        24267,
+        26719
+      ],
+      "evidence": [
+        "Tratto direttamente dal file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "examples_from_source": [
+        "## Metriche S3/S4\n`s3_caroselli_pubblicati` (≥3) · click bio→landing (diagnostica) · `s4_pipeline_e2e` (0/1) · vendite attribuite via S2 (lagging unico che conta).\n---\n⛓️ P12: `WF-S3-S4#estate-2026` ·"
+      ],
+      "generated_examples": [
+        "➕ Esempio operativo per Metriche S3/S4: applicazione immediata nel workflow aziendale Empire."
+      ],
+      "implied_prerequisites": [
+        "Conoscenza del file 01-FLUSSI-E-PIANI/WF-S3-S4-PAGINE-MENTALITA.md"
+      ],
+      "implied_mental_models": [
+        "Orchestrazione Multi-Agente"
+      ],
+      "related_concepts_hints": [
+        "Max",
+        "Gael",
+        "Claude",
+        "Andrei Pascu",
+        "Closer A8",
+        "APSOC",
+        "CPB"
+      ],
+      "confidence": 0.92,
+      "tags": [
+        "procedure",
+        "src-006",
+        "WF-S3-S4-PAGINE-MENTALITA"
+      ]
+    }
+  ],
+  "chunk_meta": {
+    "word_count": 368,
+    "atom_count": 10,
+    "dominant_categories": [
+      "procedure"
+    ]
+  }
+}
