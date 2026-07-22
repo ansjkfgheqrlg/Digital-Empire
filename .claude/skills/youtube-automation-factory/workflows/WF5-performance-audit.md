@@ -7,7 +7,7 @@
 [input: video pubblicato (dopo finestra di raccolta dati)]
    │
    ▼
-performance-auditor ── legge metriche reali (Video IQ / Studio, account neutro per il confronto)
+performance-auditor ── legge metriche reali (Video IQ / Studio) ──► scrive audit-report.md & memory/performance_logs.json
    │
    ▼
 CLASSIFICA la curva:
@@ -16,10 +16,10 @@ CLASSIFICA la curva:
    piatta/in salita  → confronta con target + studia i successi (cosa replicare)
    │
    ▼
-audit-report.md (diagnosi + azione correttiva + confronto vs target)
+self-improver ──► esegue scripts/self_improve.py ──► aggiorna memory/learned_rules.json
    │
    ▼
-FEEDBACK:
+FEEDBACK AL LOOP:
    pivot nicchia?   → WF1 (niche-scout)
    scelta migliore? → WF2 (video-hunter/seo-analyst)
    metadati/thumb?  → azione diretta su YouTube Studio (aggiornabili post-pubblicazione)
@@ -27,14 +27,14 @@ FEEDBACK:
 
 ## Passi
 1. Attendi la finestra minima di dati (non fare audit troppo presto).
-2. `performance-auditor`: raccogli views/ora, CTR, retention, watch time; classifica la curva.
-3. Diagnosi (MKD §2.2) + **una** azione correttiva specifica.
-4. Studia anche **cosa ha funzionato** → da replicare nei prossimi video (coerenza cash cow).
+2. `performance-auditor`: raccogli views/ora, CTR, retention, watch time; classifica la curva. Scrive `audit-report.md` ed effettua il log strutturato in `memory/performance_logs.json`. Esegue `validate_schemas.py performance-logs memory/performance_logs.json`.
+3. `self-improver`: esegue `self_improve.py` per ricalcolare e aggiornare `memory/learned_rules.json` sulla base del log aggiornato. Esegue `validate_schemas.py learned-rules memory/learned_rules.json`.
+4. Studia anche **cosa ha funzionato** (da replicare).
 5. Instrada il feedback a WF1/WF2 o applica la correzione diretta.
 
 ## Definition of Done
-- [ ] Metriche reali raccolte (niente numeri inventati)
-- [ ] Curva classificata + diagnosi
-- [ ] 1 azione correttiva specifica
-- [ ] Sezione "cosa replicare" (successi)
-- [ ] Feedback instradato (loop effettivamente chiuso) + DEC in memoria
+- [ ] Metriche reali raccolte ed esportate in `performance_logs.json`
+- [ ] Curva classificata + diagnosi in `audit-report.md`
+- [ ] Script `self_improve.py` eseguito con successo
+- [ ] `memory/learned_rules.json` aggiornato con le nuove blacklist/preferenze
+- [ ] Feedback instradato + DEC salvata in memoria

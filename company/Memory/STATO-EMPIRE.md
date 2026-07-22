@@ -1,4 +1,12 @@
-# STATO EMPIRE -- aggiornato 2026-07-22 (Claude: analisi YouTube reale + piano chirurgico estate)
+# STATO EMPIRE -- aggiornato 2026-07-22 (Claude: integrazione deliverable LMArena)
+
+## 🎯 2026-07-22 — DELIVERABLE LMARENA INTEGRATI (Claude, CP-20260722-002)
+Importati con successo i tre pacchetti scaricati da Arena per **Preventa** (ex PreventivoForge):
+1. **Google Maps Scraper** in `Outreach/preventa-maps-scraper/` (Playwright, Sheets push + deduplica).
+2. **Outreach Pack (APSOC)** in `Outreach/preventa-outreach-pack/` (script chiamata a freddo + WA/email, follow-up, obiezioni).
+3. **Launch Kit** in `Clienti/Prof Autocad/preventa-launch-kit/` (copy landing, brochure, palette, domini).
+Registrato tutto in `skills-map.yaml` e `REGISTRO-IMPRESA.md` come da protocollo ADR-008. Validazione sintassi OK. Cartella temporanea rimossa.
+**RIPRESA DA:** Lanciare scraper su città pilota per outreach freddo S1; allineare i closer su script ed obiezioni.
 
 ## 🎯 2026-07-22 — ANALISI YOUTUBE REALE + PIANO ESTATE CHIRURGICO (Claude, CP-20260722-001)
 Dati REALI yt-dlp (non memoria): **Dose Mentale** 198k iscritti ma video recenti 649-3300 view

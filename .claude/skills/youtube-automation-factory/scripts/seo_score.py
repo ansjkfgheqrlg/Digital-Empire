@@ -37,16 +37,17 @@ def _norm(s: str) -> str:
 
 def score_title(title: str, keyword: str) -> tuple[float, list[str]]:
     notes = []
-    if not title.strip():
+    title_clean = (title or "").strip()
+    if not title_clean:
         return 0.0, ["titolo vuoto"]
     pts = 1.0  # non vuoto -> base
     frac = 0.4
-    n = len(title)
+    n = len(title_clean)
     if 20 <= n <= 70:
         frac += 0.3
     else:
         notes.append(f"lunghezza titolo {n} fuori 20-70")
-    if keyword and _norm(keyword) in _norm(title):
+    if keyword and _norm(keyword) in _norm(title_clean):
         frac += 0.3
     else:
         notes.append("keyword principale assente nel titolo")
@@ -81,7 +82,24 @@ def score_description(description: str, keyword: str) -> tuple[float, list[str]]
 
 def score_tags(tags: list[str], keyword: str) -> tuple[float, list[str]]:
     notes = []
-    tags = [t for t in (tags or []) if t.strip()]
+    # Assicuriamoci che tags sia una lista
+    if not isinstance(tags, list):
+        if isinstance(tags, str):
+            tags = [t.strip() for t in tags.split(",") if t.strip()]
+        else:
+            tags = []
+    
+    # Sanitizziamo gli elementi e deduplichiamo mantenendo l'ordine
+    cleaned_tags = []
+    seen = set()
+    for t in tags:
+        if t is not None:
+            ts = str(t).strip()
+            if ts and ts.lower() not in seen:
+                seen.add(ts.lower())
+                cleaned_tags.append(ts)
+                
+    tags = cleaned_tags
     if not tags:
         return 0.0, ["nessun tag"]
     frac = 0.0
@@ -100,6 +118,16 @@ def score_tags(tags: list[str], keyword: str) -> tuple[float, list[str]]:
     return round(WEIGHTS["tags"] * min(frac, 1.0), 1), notes
 
 
+def _to_bool(v) -> bool:
+    if isinstance(v, bool):
+        return v
+    if isinstance(v, (int, float)):
+        return bool(v)
+    if isinstance(v, str):
+        return v.strip().lower() in {"1", "true", "yes", "si", "sì", "y"}
+    return False
+
+
 def score_flag(present: bool, key: str, label: str) -> tuple[float, list[str]]:
     if present:
         return float(WEIGHTS[key]), []
@@ -107,26 +135,36 @@ def score_flag(present: bool, key: str, label: str) -> tuple[float, list[str]]:
 
 
 def compute(meta: dict) -> dict:
-    keyword = meta.get("keyword", "")
-    t, tn = score_title(meta.get("title", ""), keyword)
-    d, dn = score_description(meta.get("description", ""), keyword)
-    tags = meta.get("tags", [])
-    if isinstance(tags, str):
-        tags = [x for x in tags.split(",")]
+    if not isinstance(meta, dict):
+        meta = {}
+    keyword = str(meta.get("keyword") or "").strip()
+    title = str(meta.get("title") or "").strip()
+    description = str(meta.get("description") or "").strip()
+    tags = meta.get("tags")
+    if tags is None:
+        tags = []
+        
+    t, tn = score_title(title, keyword)
+    d, dn = score_description(description, keyword)
     g, gn = score_tags(tags, keyword)
-    th, thn = score_flag(bool(meta.get("thumbnail")), "thumbnail", "miniatura (brief)")
-    su, sun = score_flag(bool(meta.get("subtitles")), "subtitles", "sottotitoli")
+    th, thn = score_flag(_to_bool(meta.get("thumbnail")), "thumbnail", "miniatura (brief)")
+    su, sun = score_flag(_to_bool(meta.get("subtitles")), "subtitles", "sottotitoli")
+    
+    # Correzione del refuso grammaticale
+    sun_clean = []
+    for note in sun:
+        if note == "sottotitoli assente":
+            sun_clean.append("sottotitoli assenti")
+        else:
+            sun_clean.append(note)
+            
     total = round(t + d + g + th + su, 1)
     return {
         "total": total,
         "breakdown": {"title": t, "description": d, "tags": g, "thumbnail": th, "subtitles": su},
-        "notes": tn + dn + gn + thn + sun,
+        "notes": tn + dn + gn + thn + sun_clean,
         "pass_soglia_70": total >= 70,
     }
-
-
-def _parse_bool(v: str) -> bool:
-    return str(v).strip().lower() in {"1", "true", "yes", "si", "sì", "y"}
 
 
 def main() -> int:
@@ -149,8 +187,8 @@ def main() -> int:
             "description": args.description,
             "tags": [t for t in args.tags.split(",") if t.strip()],
             "keyword": args.keyword,
-            "thumbnail": _parse_bool(args.thumbnail),
-            "subtitles": _parse_bool(args.subtitles),
+            "thumbnail": _to_bool(args.thumbnail),
+            "subtitles": _to_bool(args.subtitles),
         }
 
     result = compute(meta)

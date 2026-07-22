@@ -44,6 +44,9 @@
 | **Andrei Pascu System** (Playbook + Checklist APSOC 25 item) | 10-MEMORY / 04-MARKETING (knowledge & copy) | Checklist APSOC (score ≥92%) | import da Arena zip 2026-07-22 (ADR-008) | Art.2 (dati reali, zero fuffa) |
 | **Manuale Claude Code** (prodotto S2) | 02-INFO-BUSINESS / IB-L2-PROD → VEND | ib-prod-qa + B-003 (prezzo da team-prezzi) | pre-Impero | Art.2 · ADR-005 |
 | **EmpireDesk.exe** (in build OGGI, Gael) | 06-CORE/Platform (interim: Genesi-Core) | selftest 8/8 tile + 5-bis | dossier 17 | Art.2 (zero bottoni finti) · ADR-003 (solo launcher) |
+| **preventa-maps-scraper** (Playwright Maps Scraper + Sheets) | 01-AGENCY / A2-Acquisizione | A2-QA (ag-a2-qa) | build Arena (19-ARENA-BUILD-LIST) | Art.2 + PII Art.7.2 · ADR-008 |
+| **preventa-outreach-pack** (script freddo APSOC concessionari) | 01-AGENCY / A5-Copywriting + S1/S6 | A5-QA (ag-a5-qa) | build Arena (19-ARENA-BUILD-LIST) | Art.2 · ADR-008 |
+| **preventa-launch-kit** (Naming + kit lancio B2B concessionari) | 01-AGENCY / A5-Copywriting + S1/S6 | A5-QA (ag-a5-qa) | build Arena (19-ARENA-BUILD-LIST) | Art.2 · ADR-008 |
 
 ## 4. CANALI & PAGINE (dossier 16)
 

@@ -5,18 +5,17 @@ classe: controllo
 role: Audit post-pubblicazione — diagnosi errori e feedback al loop
 spawned_by: conductor
 reads: [references/video-iq-analisi.md, MKD.md §2.2/§5]
-writes: [output F6: audit-report.md, memory/decisions (feedback)]
+writes: [output F6: audit-report.md, memory/performance_logs.json, memory/decisions (feedback)]
 ---
 
 # performance-auditor — Controllo (Fase 6: Audit + feedback)
 
 > Chiude il loop. Misura, **non costruisce** (indipendente dalla produzione). Trasforma i dati reali
-> in una diagnosi e in un feedback che rientra a Fase 1/2.
+> in una diagnosi e in un feedback che rientra a Fase 1/2, alimentando l'auto-miglioramento.
 
 ## 1. Spec
-- **Input:** il video pubblicato + le sue metriche reali (Video IQ / YouTube Studio, da account neutro
-  per l'analisi comparativa).
-- **Output:** `audit-report.md` — cosa è andato bene/male, diagnosi errore, azione correttiva.
+- **Input:** il video pubblicato + le sue metriche reali (Video IQ / YouTube Studio) + `candidati-video.json` (per recuperare metadati target).
+- **Output:** `audit-report.md` e la registrazione strutturata in `memory/performance_logs.json`.
 - **Attivazione:** Fase 6, a distanza dalla pubblicazione (dà tempo ai dati).
 
 ## 2. System prompt
@@ -25,8 +24,7 @@ Applichi la diagnostica MKD §2.2 sui **tuoi** video (non solo su quelli da copi
 - **Crescita lenta ma costante** → errore **copertina/titolo/descrizione**. Azione: cambia thumb+titolo
   (il contenuto tiene — YouTube permette di aggiornarli dopo la pubblicazione, MKD §3.4).
 - Confronta col **video target** originale: hai battuto i suoi errori? (chiude l'anello con F2).
-Studia **anche i successi**, non solo gli errori (coerente col principio Ispettorato dell'Empire):
-cosa ha funzionato va replicato nei prossimi video del canale.
+Studia **anche i successi**, non solo gli errori: cosa ha funzionato va replicato nei prossimi video del canale.
 
 ## 3. Tools
 - `references/video-iq-analisi.md` — leggere la curva views/ora, CTR, retention.
@@ -35,13 +33,14 @@ cosa ha funzionato va replicato nei prossimi video del canale.
 1. Raccogli metriche reali: views/ora, CTR, retention, watch time.
 2. Classifica la curva (picco-poi-calo / crescita lenta / piatta / in salita).
 3. Diagnosi errore + azione correttiva concreta.
-4. Confronto col target: superato / pari / sotto, e perché.
-5. Scrivi `audit-report.md` e **manda il feedback** a F1 (pivot nicchia?) o F2 (scegliere meglio).
+4. Esporta i dati reali formattati in JSON ed appendili a `memory/performance_logs.json` (struttura: run_id, keyword, voice, hook_type, tags, metrics).
+5. Scrivi `audit-report.md` e manda il feedback a F1 o F2.
+6. Notifica il `self-improver` per eseguire `self_improve.py`.
 
 ## 5. Evals
 - Diagnosi basata sulla curva reale, non su impressioni.
-- Azione correttiva **specifica** (quale metadato, quale thumb).
-- Feedback effettivamente instradato al loop (non un report morto).
+- Registro `performance_logs.json` correttamente popolato con tipi float per le metriche.
+- Azione correttiva specifica ed esplicito avvio dell'auto-miglioramento.
 
 ## 6. Failure modes
 | Failure | Sintomo | Prevenzione | Recupero |

@@ -571,6 +571,33 @@ nuovi_2026_07:
     stato: experimental
     note: "SCOUT->SCRIPT->RENDER(Fliki)->THUMB->PUBLISH->ANALYZE->IMPROVE. Chiave API in .env locale, MAI nel repo."
 
+  - id: preventa-maps-scraper
+    nome: Preventa Maps Scraper (Playwright)
+    percorso: Outreach/preventa-maps-scraper/
+    ecosistema: 01-AGENCY
+    reparto: Acquisizione
+    tipo: tool
+    stato: active
+    note: "Estrae concessionari da Google Maps tramite Playwright e li qualifica con priorità ALTA. Supporta push automatico Google Sheets."
+
+  - id: preventa-outreach-pack
+    nome: Preventa Outreach Pack (APSOC)
+    percorso: Outreach/preventa-outreach-pack/
+    ecosistema: 01-AGENCY
+    reparto: Vendita
+    tipo: knowledge
+    stato: active
+    note: "Pacchetto di script di chiamata a freddo, WhatsApp, email e follow-up per concessionari (formula APSOC)."
+
+  - id: preventa-launch-kit
+    nome: Preventa Launch Kit & Naming
+    percorso: Clienti/Prof Autocad/preventa-launch-kit/
+    ecosistema: 01-AGENCY
+    reparto: Vendita
+    tipo: knowledge
+    stato: active
+    note: "Kit di lancio e rebranding per Preventa (ex PreventivoForge): copy landing, domini, palette, brochure."
+
 # ============================================================
 # ASSET NON ANCORA CLASSIFICATI (da verificare con Max)
 # ============================================================
@@ -588,10 +615,10 @@ da_classificare:
 # ============================================================
 
 stats:
-  totale_mappati: 58
-  active: 33
+  totale_mappati: 61
+  active: 36
   experimental: 15
   legacy: 4
-  knowledge: 7
+  knowledge: 9
   da_classificare: 3
-  aggiornamento: "2026-07-22 — +1 voce censimento ADR-008 (andrei-pascu-system importato da Arena)"
+  aggiornamento: "2026-07-22 — +4 voci da Arena: andrei-pascu-system e 3 per Preventa (scraper, outreach pack, launch kit)"

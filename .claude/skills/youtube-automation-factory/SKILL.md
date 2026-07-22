@@ -8,7 +8,7 @@ description: >-
   skill quando devi: trovare/validare una nicchia, individuare un canale cash cow, scegliere quale
   video replicare, scrivere uno script, produrre un video in Fliki, ottimizzare i metadati SEO, o
   fare l'audit di un video pubblicato. Comando: /yt-factory <fase|obiettivo>. Costruita con la
-  metodologia master-build-architecture (10 fasi, memoria dal passo zero, 7 sezioni canoniche per
+  metodologia master-build-architecture (6 fasi, memoria dal passo zero, 7 sezioni canoniche per
   agente) + content-forge 2.0 (espansione, mai riassunto). NON usarla per editing video manuale
   frame-by-frame o per canali non-automation (vlog personali): è pensata per format ripetibili.
 type: interactive
@@ -75,7 +75,7 @@ Contratto di ogni fase e handoff: [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ---
 
-## 🤖 Roster agenti (conductor + 6 operatori + 3 controllori + 1 supporto)
+## 🤖 Roster agenti (conductor + 7 operatori + 4 controllori + 2 supporto)
 
 | Classe | Agente | Fa | File |
 |---|---|---|---|
@@ -85,11 +85,14 @@ Contratto di ogni fase e handoff: [ARCHITECTURE.md](ARCHITECTURE.md).
 | **Operatore** | `seo-analyst` | punteggio SEO + errori del video target | [agents/operatori/seo-analyst.md](agents/operatori/seo-analyst.md) |
 | **Operatore** | `script-writer` | script hook→intro→corpo→CTA (corregge errori) | [agents/operatori/script-writer.md](agents/operatori/script-writer.md) |
 | **Operatore** | `video-producer` | spec di produzione Fliki + export | [agents/operatori/video-producer.md](agents/operatori/video-producer.md) |
+| **Operatore** | `thumbnail-designer` | genera prompt AI e layout grafico miniatura | [agents/operatori/thumbnail-designer.md](agents/operatori/thumbnail-designer.md) |
 | **Operatore** | `metadata-optimizer` | metadati SEO pre-pubblicazione | [agents/operatori/metadata-optimizer.md](agents/operatori/metadata-optimizer.md) |
 | **Controllo** | `niche-gate` | BLOCCA video fuori nicchia / a basso potenziale | [agents/controllo/niche-gate.md](agents/controllo/niche-gate.md) |
+| **Controllo** | `qa-audio-video` | BLOCCA video con audio/video o pronunce difettose | [agents/controllo/qa-audio-video.md](agents/controllo/qa-audio-video.md) |
 | **Controllo** | `seo-gate` | BLOCCA pubblicazione se metadati non a norma | [agents/controllo/seo-gate.md](agents/controllo/seo-gate.md) |
 | **Controllo** | `performance-auditor` | audit post-pubblicazione + diagnosi errori | [agents/controllo/performance-auditor.md](agents/controllo/performance-auditor.md) |
 | **Supporto** | `memory-keeper` | checkpoint/decisioni, coerenza memoria | [agents/supporto/memory-keeper.md](agents/supporto/memory-keeper.md) |
+| **Supporto** | `self-improver` | ricalcola learned_rules.json dalle metriche | [agents/supporto/self-improver.md](agents/supporto/self-improver.md) |
 
 Il conductor **sei tu** (l'istanza che invoca la skill). Gli altri sono subagenti spawnati via Agent
 tool quando la fase lo richiede, oppure — per run leggeri — eseguiti inline seguendo il loro spec.
@@ -109,6 +112,9 @@ tool quando la fase lo richiede, oppure — per run leggeri — eseguiti inline 
 | Produrre in Fliki | [references/fliki-produzione.md](references/fliki-produzione.md) |
 | Punteggio SEO deterministico | `scripts/seo_score.py` |
 | Check cash cow / views-ora | `scripts/cashcow_check.py` |
+| Auto-miglioramento | `scripts/self_improve.py` |
+| Conformità Monetizzazione | [references/monetizzazione-compliance.md](references/monetizzazione-compliance.md) |
+| SSML e Dizionario Fliki | [references/fliki-avanzato.md](references/fliki-avanzato.md) |
 
 ---
 

@@ -15,19 +15,20 @@ L1 — KERNEL / CONDUCTOR
       orchestrazione, stato del run, applicazione invarianti+gate
         │
         ├── L2 — SPECIALISTI (subagenti)
-        │     operatori/   → chi OPERA (produce artefatti)
-        │     controllo/   → chi CONTROLLA (gate + audit, blocca)
-        │     supporto/    → chi MANTIENE (memoria, coerenza)
+        │     operatori/   → chi OPERA (produce artefatti: script, specs, brief, metadati)
+        │     controllo/   → chi CONTROLLA (gate + audit bloccanti)
+        │     supporto/    → chi MANTIENE (memoria, auto-miglioramento)
         │
         └── L3 — TOOL DETERMINISTICI
               scripts/seo_score.py       (punteggio SEO ripetibile)
-              scripts/cashcow_check.py   (heuristica cash cow / views-ora)
+              scripts/cashcow_check.py   (euristica cash cow / views-ora)
+              scripts/self_improve.py    (motore di auto-miglioramento)
               references/*               (conoscenza on-demand)
-              memory/*                   (checkpoint + decisioni)
+              memory/*                   (checkpoint, decisioni, log e regole)
 ```
 
 **Perché operatori vs controllo separati:** chi produce non si auto-approva. Un gate (`niche-gate`,
-`seo-gate`) è un agente diverso da chi ha costruito l'artefatto → controllo indipendente (MBA
+`qa-audio-video`, `seo-gate`) è un agente diverso da chi ha costruito l'artefatto → controllo indipendente (MBA
 invariante #6: failure-modes e verifica come first-class).
 
 ---
@@ -36,7 +37,7 @@ invariante #6: failure-modes e verifica come first-class).
 
 ```
                  ┌───────────────────────────────────────────────────────────┐
-                 │                     FEEDBACK LOOP                           │
+                 │                     FEEDBACK LOOP (Auto-miglioramento)      │
                  ▼                                                             │
 [F1] SCOUTING ──► niche-scout ──► ⟨niche-gate⟩ ──► [F2] SELEZIONE VIDEO       │
                                                      video-hunter              │
@@ -47,16 +48,17 @@ invariante #6: failure-modes e verifica come first-class).
 [F3] SCRIPT ◄──────────────────────────────────── script-writer               │
    │                                                                           │
    ▼                                                                           │
-[F4] PRODUZIONE ──► video-producer ──► ⟨niche-gate⟩                            │
+[F4] PRODUZIONE ──► video-producer ──► ⟨qa-audio-video⟩ ──► ⟨niche-gate⟩       │
    │                                                                           │
    ▼                                                                           │
-[F5] PUBBLICAZIONE ──► metadata-optimizer ──► ⟨seo-gate⟩ ──► PUBBLICA          │
+[F5] PUBBLICAZIONE ──► thumbnail-designer ──► metadata-optimizer ──► ⟨seo-gate⟩ ➔ PUBBLICA
    │                                                                           │
    ▼                                                                           │
-[F6] AUDIT ──► performance-auditor ──► diagnosi errori ────────────────────────┘
+[F6] AUDIT ──► performance-auditor ──► self-improver ──► diagnosi & regole ────┘
 ```
 
 Gate `⟨...⟩` = bloccanti. Se rossi, il flusso torna all'operatore competente, non prosegue.
+*Nota sulla mappatura:* Le 6 fasi della pipeline reale sono mappate su 5 file workflow in `workflows/` poiché la Fase 3 (Script) e la Fase 4 (Produzione) sono accorpate in `WF3-production.md` per coerenza di sviluppo.
 
 ---
 
@@ -68,7 +70,7 @@ youtube-automation-factory/
 ├── ARCHITECTURE.md                  # questo file — mappa navigabile
 ├── MKD.md                           # Master Knowledge Document (metodo completo, espanso)
 │
-├── agents/                          # conductor + 10 agenti (ognuno = 1 file, 7 sezioni canoniche)
+├── agents/                          # conductor + 13 agenti (ognuno = 1 file, 7 sezioni canoniche)
 │   ├── conductor.md                 # L1 — orchestratore
 │   ├── operatori/                   # chi OPERA
 │   │   ├── niche-scout.md
@@ -76,15 +78,18 @@ youtube-automation-factory/
 │   │   ├── seo-analyst.md
 │   │   ├── script-writer.md
 │   │   ├── video-producer.md
+│   │   ├── thumbnail-designer.md
 │   │   └── metadata-optimizer.md
 │   ├── controllo/                   # chi CONTROLLA (gate + audit)
 │   │   ├── niche-gate.md
+│   │   ├── qa-audio-video.md
 │   │   ├── seo-gate.md
 │   │   └── performance-auditor.md
 │   └── supporto/                    # chi MANTIENE
-│       └── memory-keeper.md
+│       ├── memory-keeper.md
+│       └── self-improver.md
 │
-├── workflows/                       # DAG eseguibili, uno per fase
+├── workflows/                       # DAG eseguibili, uno per fase (dual formato MD + JSON)
 │   ├── WF1-niche-discovery.md
 │   ├── WF2-video-selection.md
 │   ├── WF3-production.md
@@ -95,16 +100,21 @@ youtube-automation-factory/
 │   ├── video-iq-analisi.md
 │   ├── seo-certificazione.md
 │   ├── teoria-script.md
-│   └── fliki-produzione.md
+│   ├── fliki-produzione.md
+│   ├── fliki-avanzato.md
+│   └── monetizzazione-compliance.md
 │
 ├── scripts/                         # tool deterministici (L3)
 │   ├── seo_score.py
-│   └── cashcow_check.py
+│   ├── cashcow_check.py
+│   └── self_improve.py
 │
 ├── memory/                          # ecosistema memoria (dal passo zero)
 │   ├── MEMORY-INDEX.md
 │   ├── checkpoints/CP-000.md
-│   └── decisions/DEC-000.md
+│   ├── decisions/DEC-000.md
+│   ├── performance_logs.json        # log storico delle metriche reali (input per auto-miglioramento)
+│   └── learned_rules.json           # regole e blacklist apprese dal sistema (auto-migliorato)
 │
 └── evals/
     └── evals.md                     # criteri di accettazione della fabbrica

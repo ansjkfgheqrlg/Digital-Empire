@@ -1,0 +1,14 @@
+# Preventa Maps Scraper - Playwright ONLY + Sheets
+# Install base:
+# pip install -r requirements.txt
+# playwright install chromium
+
+playwright>=1.44.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+python-dotenv>=1.0.0
+
+# Opzionali - solo se usi push su Google Sheets
+gspread>=5.12.0
+google-auth>=2.20.0

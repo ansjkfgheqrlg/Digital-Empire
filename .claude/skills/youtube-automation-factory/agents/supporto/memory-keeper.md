@@ -28,7 +28,10 @@ stesso id esiste, aggiorna, non duplicare. Tieni `MEMORY-INDEX.md` come unica po
 1. A fine fase: crea `memory/checkpoints/CP-<data>-<n>.md` (fase, artefatti, decisione, RIPRESA DA).
 2. Ad ogni decisione: crea `memory/decisions/DEC-<slug>.md` (contesto, opzioni, scelta, motivo).
 3. Aggiorna `MEMORY-INDEX.md` con un puntatore di una riga.
-4. Verifica: nessun link rotto, nessun CP duplicato.
+4. Se un repository Git locale è presente nell'area di lavoro:
+   * Esegui `git add memory/`
+   * Esegui `git commit -m "Checkpoint: Fase <fase> completata | CP-<data>-<n>"` per rendere persistente e tracciabile la memoria delle sessioni.
+5. Verifica: nessun link rotto, nessun CP duplicato.
 
 ## 5. Evals
 - Ogni fase chiusa ha un CP; ogni decisione un DEC.

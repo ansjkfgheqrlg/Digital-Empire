@@ -40,14 +40,48 @@ VPH_CAP = 200.0
 
 
 def views_per_hour(v: dict) -> float:
-    age = max(float(v.get("age_hours", 0)), 1.0)
-    return float(v.get("views", 0)) / age
+    if not isinstance(v, dict):
+        return 0.0
+        
+    views_raw = v.get("views")
+    if views_raw is None:
+        views = 0.0
+    else:
+        try:
+            views = float(views_raw)
+        except (ValueError, TypeError):
+            views = 0.0
+            
+    age_raw = v.get("age_hours")
+    if age_raw is None:
+        age = 1.0
+    else:
+        try:
+            age = max(float(age_raw), 1.0)
+        except (ValueError, TypeError):
+            age = 1.0
+            
+    return views / age
 
 
 def compute(channel: dict) -> dict:
+    if not isinstance(channel, dict):
+        return {"index": 0, "reason": "dati canale non validi", "is_cashcow": False}
     videos = channel.get("videos", [])
-    if not videos:
+    if not isinstance(videos, list) or not videos:
         return {"index": 0, "reason": "nessun video fornito", "is_cashcow": False}
+
+    # Carica la soglia dinamica da learned_rules.json se esiste, altrimenti usa MIN_VPH
+    min_vph = MIN_VPH
+    import os
+    try:
+        rules_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "memory", "learned_rules.json"))
+        if os.path.exists(rules_path):
+            with open(rules_path, "r", encoding="utf-8") as f:
+                rules = json.load(f)
+            min_vph = float(rules.get("dynamic_min_vph", MIN_VPH))
+    except Exception:
+        min_vph = MIN_VPH
 
     vphs = [views_per_hour(v) for v in videos]
     avg_vph = sum(vphs) / len(vphs)
@@ -55,8 +89,8 @@ def compute(channel: dict) -> dict:
     # 1) velocità (satura a VPH_CAP)
     speed = W_SPEED * min(avg_vph / VPH_CAP, 1.0)
 
-    # 2) costanza: quota di video sopra MIN_VPH
-    above = sum(1 for x in vphs if x >= MIN_VPH)
+    # 2) costanza: quota di video sopra min_vph
+    above = sum(1 for x in vphs if x >= min_vph)
     consistency = W_CONSISTENCY * (above / len(vphs))
 
     # 3) pulizia: penalità proporzionale alla quota di video con errori
@@ -71,6 +105,7 @@ def compute(channel: dict) -> dict:
         "is_cashcow": index >= 60,
         "n_videos": len(videos),
         "avg_views_per_hour": round(avg_vph, 1),
+        "min_vph_threshold": min_vph,
         "videos_above_min_vph": above,
         "videos_with_errors": with_errors,
         "breakdown": {

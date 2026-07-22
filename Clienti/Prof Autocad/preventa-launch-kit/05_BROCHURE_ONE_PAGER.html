@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preventa - Brochure One Pager</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:#fff;color:#1A1A1A; -webkit-print-color-adjust: exact; print-color-adjust: exact;}
+  .page{width:210mm; min-height:297mm; margin:0 auto; padding:18mm 18mm 12mm; background:#fff; display:flex; flex-direction:column; }
+  .header{display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid #101E3E;padding-bottom:12px;margin-bottom:16px}
+  .logo{font-weight:800;font-size:28px;letter-spacing:-0.5px;color:#101E3E}
+  .logo span{color:#FF4D00}
+  .tagline{font-size:11px;color:#4B5563;text-transform:uppercase;letter-spacing:1.5px;font-weight:600}
+  .hero{margin-bottom:14px}
+  .hero h1{font-size:30px;line-height:1.1;color:#101E3E;font-weight:800;margin-bottom:6px}
+  .hero h1 em{font-style:normal;color:#FF4D00}
+  .hero .sub{font-size:13.5px;color:#4B5563;line-height:1.5}
+  .grid{display:grid;grid-template-columns:1fr 1.2fr;gap:16px;margin-bottom:14px}
+  .box{background:#F6F7F9;border-radius:12px;padding:14px 14px}
+  .box h3{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#101E3E;margin-bottom:8px;font-weight:800}
+  .box ul{list-style:none}
+  .box ul li{font-size:12.5px;line-height:1.45;margin-bottom:6px;padding-left:16px;position:relative;color:#1A1A1A}
+  .box ul li:before{content:"—";position:absolute;left:0;color:#FF4D00;font-weight:800}
+  .benefits{display:grid;grid-template-columns:1fr;gap:10px}
+  .benefit{display:flex;gap:10px}
+  .num{background:#101E3E;color:#fff;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;flex-shrink:0}
+  .benefit h4{font-size:12.5px;color:#101E3E;margin-bottom:2px}
+  .benefit p{font-size:11.5px;color:#4B5563;line-height:1.4}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0;background:#101E3E;color:#fff;border-radius:12px;padding:12px 14px}
+  .step{font-size:11.5px}
+  .step b{display:block;font-size:28px;color:#FF4D00;line-height:1}
+  .diff{background:#fff;border:1.5px dashed #D1D5DB;border-radius:10px;padding:10px 14px;display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}
+  .diff div{font-size:10.5px;color:#4B5563;line-height:1.4}
+  .diff b{color:#101E3E;font-size:11px}
+  .cta{background:#FF4D00;color:#fff;border-radius:14px;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;margin-top:auto}
+  .cta h2{font-size:16px;line-height:1.2;margin-bottom:4px}
+  .cta p{font-size:11px;opacity:0.9}
+  .cta .btn{background:#fff;color:#101E3E;padding:10px 16px;border-radius:8px;font-weight:800;font-size:12px;text-decoration:none;display:inline-block;margin-top:6px}
+  .footer{margin-top:10px;font-size:8.5px;color:#9CA3AF;line-height:1.3;display:flex;justify-content:space-between}
+  @media print{body{background:#fff} .page{margin:0;padding:15mm;box-shadow:none}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="logo">PREVENTA<span>.</span></div>
+    <div class="tagline">Software per concessionari auto — Autonomo e veloce</div>
+  </div>
+
+  <div class="hero">
+    <h1>Il preventivo che chiude.<br>In <em>2 minuti</em>, non in 30.</h1>
+    <div class="sub">Per concessionari da 3 a 20 venditori. PDF brandizzato con prezzi bloccati da titolare, permuta e finanziamento — pronto da inviare su WhatsApp. Non un'agenzia da cui dipendere.</div>
+  </div>
+
+  <div class="grid">
+    <div class="box">
+      <h3>Oggi perdi tempo e trattative</h3>
+      <ul>
+        <li>30 min per un PDF decente su Excel / gestionale lento</li>
+        <li>PDF brutti, ogni venditore fa il suo prezzo</li>
+        <li>Cliente su WhatsApp aspetta, poi scrive ad altri 3</li>
+        <li>Titolare senza controllo su margini e permute</li>
+      </ul>
+    </div>
+    <div class="benefits">
+      <div class="benefit"><div class="num">1</div><div><h4>Velocità — 2 minuti, inviabile su WhatsApp</h4><p>Inserisci targa/allestimento/permuta → PDF brandizzato con foto, voci chiare, validità 7 giorni. Un tap per inviare.</p></div></div>
+      <div class="benefit"><div class="num">2</div><div><h4>Controllo — Prezzi bloccati dal titolare</h4><p>Listini, sconti max, costi accessori bloccati. Venditore clicca, non modifica. Margini protetti.</p></div></div>
+      <div class="benefit"><div class="num">3</div><div><h4>Autonomia — Software tuo, a canone</h4><p>Canone [PREZZO]/mese, kill-switch remoto, disdetta libera. Dati tuoi, server EU. Resti libero.</p></div></div>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="step"><b>1.</b> Inserisci veicolo<br>targa / nuovo / usato / km0</div>
+    <div class="step"><b>2.</b> Aggiungi permuta e finanziamento<br>campi guidati, zero errori</div>
+    <div class="step"><b>3.</b> Genera PDF brandizzato<br>pronto per WhatsApp / Email</div>
+  </div>
+
+  <div class="diff">
+    <div><b>Non è gestionale:</b><br>si affianca, non sostituisce</div>
+    <div><b>Non è CRM:</b><br>non gestisce lead, genera documento di vendita</div>
+    <div><b>Non è agenzia:</b><br>non vende lead, rende autonomo il salone</div>
+  </div>
+
+  <div class="cta">
+    <div>
+      <h2>Vuoi vedere la demo sulla tua auto reale?</h2>
+      <p>15 min su Meet. Nessuna slide, solo schermo. Auto tua in pronta consegna. Senza impegno.</p>
+      <div style="margin-top:8px;font-size:11px">📅 Prenota: <b>calendly.com/preventa/demo</b> &nbsp; | &nbsp; 📲 WhatsApp: [numero] &nbsp; | &nbsp; ✉️ hello@preventa.it</div>
+    </div>
+    <div>
+      <a class="btn" href="#">PRENOTA DEMO 15 MIN →</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>Preventa © 2026 — Server EU — Licenza a canone [PREZZO] — Nessuna garanzia di risultato. I risultati dipendono da organizzazione e mercato del concessionario.</div>
+    <div>P.IVA [xxx] • Privacy</div>
+  </div>
+</div>
+</body>
+</html>

@@ -4,14 +4,14 @@ level: L2
 classe: operatore
 role: Scrive lo script (hook → intro → corpo → CTA) correggendo gli errori del target
 spawned_by: conductor
-reads: [references/teoria-script.md, MKD.md §4, output F2 seo-report.md]
+reads: [references/teoria-script.md, MKD.md §4, output F2: seo-report.json, memory/learned_rules.json]
 writes: [output F3: script.md]
 ---
 
 # script-writer — Operatore (Fase 3: Script)
 
 ## 1. Spec
-- **Input:** il video scelto (A o B) + gli errori SEO/contenuto isolati dal `seo-analyst`.
+- **Input:** il video scelto (A o B) + gli errori SEO/contenuto isolati dal `seo-analyst` (letti da `seo-report.json`) + le regole di auto-miglioramento da `learned_rules.json`.
 - **Output:** `script.md` — script completo pronto per Fliki, con struttura narrativa e note SEO.
 - **Attivazione:** Fase 3.
 
@@ -19,7 +19,7 @@ writes: [output F3: script.md]
 Costruisci lo script secondo la teoria (MKD §4): **Hook → Introduzione → Corpo → CTA**. Se il video
 è **B (sicurezza)** ricalchi la struttura vincente correggendo gli errori minori; se è **A (upside)**
 ricostruisci migliorando ciò che era debole (spesso la SEO e/o l'aggancio). Espansione, non riassunto
-(invariante #7): lo script è ricco, non una sintesi.
+(invariante #7): lo script è ricco, non una sintesi. Consulta `memory/learned_rules.json` per evitare ganci fallimentari.
 
 Regole di struttura:
 - **Hook** (primi 5-10s): scegli tipo — d'impatto / lento / domanda — in base al contenuto (§4.1).
@@ -31,11 +31,12 @@ Regole di struttura:
 
 ## 3. Tools
 - `references/teoria-script.md` — hook/intro/CTA in dettaglio con esempi.
-- `seo-report.md` (errori da correggere).
+- `seo-report.json` (errori da correggere).
+- `memory/learned_rules.json` (regole/blacklist).
 
 ## 4. Playbook
-1. Leggi etichetta A/B e lista errori.
-2. Scegli il tipo di hook adatto al tema.
+1. Leggi l'etichetta A/B, la lista errori da `seo-report.json` e le regole in `learned_rules.json`.
+2. Scegli il tipo di hook adatto al tema (privilegiando quelli di successo in `learned_rules.json`).
 3. Scrivi Hook → Intro (con valore proposto) → Corpo (punti in ordine di retention) → 3 CTA.
 4. Inserisci le keyword target nel parlato (per i sottotitoli SEO).
 5. Marca con `➕` ciò che aggiungi rispetto all'originale (non è nel sorgente copiato).

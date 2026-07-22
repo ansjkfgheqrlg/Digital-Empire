@@ -1,0 +1,77 @@
+script 1:
+
+Questa schife Cloud code genera di caroselli per Instagram perfetti in meno di un minuto con un semplice prompt, ma ecco qui come funziona. Basterà caricare un'immagine di te stesso con nome e username e poi basterà dare a cloud un argomento. A questo punto scriverò un post basato su framework virali e poi sembrerà tutte le immagini in un unico caro serro. Mi raccomando, se vuoi sapere esattamente come funziona, commenta cloud qui sotto e ti farà entrare nella community gratuita dove lo spiego interamente. 
+
+Script 2:
+
+Ecco come poter installare le skill di Cloudcode in 60 secondi. Prima cosa trovo una skill che vuoi andare ad installare ? In questo caso io prenderò come riferimento la skill researcher. A questo punto dovrei scaricare il file skill . MDE, il modo più semplice per installarlo è far fare il lavoro direttamente a cloud. Trascina poi il file della skill all'interno e scrivile esattamente questo. Quello che tu mi chiedi è una skipper cloud. Prima però studia tutta la documentazione e poi aggiungerà come steal chiamata Research ed ecco che Cloud code farà direttamente il lavoro al posto tuo, senza che tu debba fare nulla. Ed ecco qui il fatto che la skill è stata creata. Ora, ad esempio, potrei richiamare questa skill che abbiamo installato e schiamare search e renderà il tuo cloud code 10 volte più potente. Mi raccomando se ti è piaciuto il video, metti like e salvalo. 
+
+Script 3:
+
+Ma è possibile creare delle grafiche personalizzate professionali senza dover assumere un designer ? Certo che sì e ti serve solamente conoscere a fondo cloud. Per prima cosa vai su github e stare nel file di nanobanana. Grazie a questo cloud, infatti, apre l'accesso alle nano banana per poter creare degli asset grafici come delle dual delle Az e molto altro. Come seconda cosa, invece di sprecare i crediti sono scegli lo stile che ti piace e copel prompt incollano a questo punto dentro Claude e cambia il soggetto che vuoi andare a creare ed ecco qui che Claude ti restituirà direttamente l'immagine creata con la no banana. Puoi usarlo perché arrivi qualsiasi immagine per il tuo brand, mi raccomando se ti è piaciuto questo video salvalo e seguimi.
+
+Script 4:
+
+Le regole, quindi c'è scritto amo di crowdcode in Mi raccomando se vuoi ricordarteli sabri, bevi il maschile, si chiama skill cost riducer la seconda skill è NMN. Poi abbiamo la skill scarl, la skill security, la skill front end design, la skill pronti enering, la skill Researcher, la skill customer support, la skill now everything about me, la skill trigger. Dav e la mia preferita è la skin surfini che permetterà cloud di migliorare automaticamente quando incontra degli errori. Se vuoi tutte le skill complete, mi raccomando commentaci qui sotto e te le manderò direttamente in privato. 
+
+Script 5:
+
+Qualcuno ha appena costruito lo strumento cloud più potente del pianeta, 60 agenti che lavorano simultaneamente e che diventano più intelligenti ad ogni singolo situazione Strumento si chiama precedentemente chiamato Claude Flow ed è veramente incredibile all'interno, infatti ha un agente che gestisce la pianificazione, un'altro agente che scrive codice, un'altro ti segue i test e un'altro ancora che controlla la sicurezza. Tutti che lavorano in esecuzione in parallelo e condividono la stessa memoria. E la cosa bella è che migliorano uno dietro l'altro dopo ogni singola esecuzione, ma ecco la cosa che mi ha sconvolto. Infatti questi tour riducono il 75% i costi delle API di cloud, i compiti semplici, infatti, vengono fatti in modalità gratuita, compiti complessi, invece vengono fatti in maniera ottimizzata, ottim ed è così che il tuo abbonamento cloud diventa molte volte più potente. Questo tool è completamente open source e gratuito e se lo vuoi, mi raccomando, commentai qui sotto e ti manderò direttamente il tuo in privato. 
+
+ Non hai sbloccato la reale potenza di Cloud, ti faccio vedere come crearsi una skill, vai su Google Docs, ma a sinistra puoi aprire diverse tab, ne creiamo di più. Se doppio clicchi su questa tab te la fa rinominare e devi chiamarla testualmente skill maiuscolo. MD. Ma come funziona la fucking skill? Una skill istruzioni.
+
+Potresti volerti collegare ad altre cose, come ad esempio degli esempi, delle referenze, degli asset, infatti la roba interessante delle, Skill e che sono modulari, tu crei un'istruzione principale in base a quello che deve fare, si creano sotto di istruzioni diverse. Facciamo finta che tu devi sviluppare una skill per gestire le email con i tuoi clienti.
+
+Devo creare quello che si chiama Yamel Frontm. 3 righe orizzontali, poi name due punti e dai un nome alla tua skill, skill non usi gli spazi ma i trattini per email. Descrizione, description. A cosa serve e quando usare? Serve per rispondere ai clienti, usare quando utente dice di dover scrivere email.
+
+Questo è il il front matter, rimetti tre righe orizzontali e ci siamo. Adesso puoi scrivere le tue istruzioni. Siccome questa è modulare, non puoi scrivere tutto in un singolo file. Perché sennò ti spreca un sacco di contesto. Questa skill serve per gestire situazioni con clienti e ci sono tre tipologie principali di email che io posso scrivere.
+
+Email di risposta, email di richiesta pagamento e email di aggiornamento. Il motivo per cui l'ho fatto in questo modo è per farti capire il concetto di modularità. Io ad esempio posso inserire a Cloud dei sotto documenti di questa skill con gli esempi, per ognuna di queste email e infatti inserisco parentesi, esempio in email-risposta punto Mdito email risposta.md è un esempio che devo creare di un'email di risposta, infatti io adesso creo un altro documento, una tab, e la chiamo email trattino risposta pmd, quindi nella s, Kill principale, sto richiamando l'altro documento che Cloud può andarsi a verificare.
+
+Quando serve fare un'email di richiesta pagamento va a vedere l'esempio della email di richiesta pagamento, che adesso io scrivo esempio in richiesta trattino pagamento punto MD. È lo stesso per email di aggiornamento. esempio in aggiornamento punto esempio, punto Md e creo tutti questi sottodocumenti.
+
+E adesso ho quattro documenti totali, ma ne posso fare quanti voglio. La skill principale con il mio Yel front matter, le istruzioni a Cloud che in questo caso le ho fatte banali e gli esempi in base a quello che l'utente deve effettivamente svolgere. Io posso anche indicare a Cloud lo specifico step by step che voglio che lui segua.
+
+Ad esempio, step 1, ho messo quell'hashtag perché sta per titolo, un'intestazione all'interno dei documenti markdown. Step 1, chiedere all'utente tipologia, Email, dalle 3 listate sopra. 2, controllare documento di esempio. Facciamo finta che il tuo business ha un contesto particolare e tu vuoi inserire chi sei, cosa fai, di cosa ti occupi.
+
+Io sono Andrei, ho l'agenzia di marketing AP Sales e puoi trovare det, Tagli su quali sono i nostri clienti in lista trattino clienti. CSV dove posso inserire i dettagli, quanto m'hanno pagato, le deliverable e tutto quello che mi interessa per ogni singolo cliente. Così Cloud ce l'ha come contesto quando serve.
+
+Quando ho fatto, io posso andare su file in alto a sinistra a fare download e scaricarlo come markdown. Okay, qui ho i miei documenti, c'ho skill. MD appunto in markdown come vedi, e poi c'è tutta l'altra documentazione che ho creato come references. Ora questo lo rinomino a skill. MD e li metto dentro, references.
+
+L'unico che non è dentro references è skill. MD. E queste cose poi le metto in un'altra cartella a loro volta con il nome della skill, ad esempio skill email. Le metto lì dentro, faccio poi tasto destro, compress, e questa zip la devo installare su Cloud. Per farlo vado su cloud, puoi anche usare l'applicazione per desktop, lì vai su skills e fai più ai create skills, Skill upload um skill e poi drag droppare lo zip che hai appena creato.
+
+A questo punto, installerà la tua skill. Unica roba da ricordare è che io l'ho creata con Google Docs, dovresti crearla o con Obsidian o con Mark Edit o con un altro creatore di documenti in Markdown. Se vuoi più informazioni di valore e pratiche sull'AI, marketing, social media, boh, roba da agenzia e marketing, fucking seguimi.
+
+esempio due:
+
+ Io ogni volta che uso Cloud lo apro dal terminal CD cartella principale, la Shefford Max, in base alla richiesta che tu fai a Cloud, lui può navigare queste cartelle e trovare quello che gli serve per non sprecare context. Esempio, c'è un grosso documento che dice ciao Claude, eccoti il contesto. Ah, devi fare content, Vai nella cartella content creation, abbiamo diverse sottocartelle, c'è quella su Instagram, quella per l'e-mail marketing, quella per il il il il content virale, quella per e questo concept funziona molto bene e nel tempo diventi più bravo a organizzarlo.
+
+esempio 3:
+
+ Come si fa questa knowledge, tre diversi livelli. Numero uno, ti tieni un mega documento in markdown e lo aggiorni nel tempo, ogni mattina ti metti lì e lo riaggiorni. Numero 2, ti fai molteplici documenti e li alleghi. Un documento, master, questo è il contesto, vai nel documento 5 per vedere come io scrivo le mail.
+
+Vai nel documento 7 per vedere come io faccio i siti. Hai creato due strati, che è il numero 3, l'AI ha accesso alla tua knowledge base con sotto documenti tre esempi, primo è di condividere il Google Drive con lui. Un altro modo è collegarlo a GitHub, oppure ancora ancora meglio che è perfetto ce l'hai sul tuo computer.
+
+Ti scarichi cloud l'applicazione, usi cowork e lì condividi la cartella master, quindi quella principale, con all'interno le sottocartelle e i sotto documenti e puoi creare quanti strati vuoi.
+
+esempio 4:
+
+ Se io devo fare una mail, io non ho bisogno di spiegare a Claude qual è il mio TOV. Lui c'ha già accesso a una serie di template su come deve farlo, una serie di esempi su come io l'ho fatto in passato e soprattutto neanche devo dirgli che cosa deve scrivere nella mail. Com'è possibile questa cosa? Cioè io io scrivo ohi, scrivi una mail per aggiornare cliente X e lui mi scrive la mail con l'aggiornamento completo, Ad oggi, come fa a sapere gli ultimi aggiornamenti, gli ultimi update se neanche glieli ho detti?
+
+Questo è possibile perché ho delle automazioni che inseriscono in una cartella condivisa con Cloud tutti gli ultimi update. Lei ha ha accesso a tutto ciò che noi facciamo, tutto ciò che noi diciamo in ogni singola call e ce l'ha sempre come contesto ogni singola volta che gli chiedi un prompt. Capisci quanto è potente questa cosa?
+
+esempio 5:
+
+ Ci sono diversi livelli nel prompting. Numero uno, quando tu fai una richiesta, ciao ciao GPT, fammi una mail su questo topic. Numero due è quando tu fai una richiesta, ma dai anche del contesto. Tu scrivi ciao Claude, fammi una mail per un mio cliente che ha bisogno di questo e questo e questo, ma il livello numero tre è quello che veramente differenzia coloro che usano l'AI ad alti livelli e quelli che invece lo usano male.
+
+Ed è fare una richiesta, Con accesso al knowledge. Per l'AI la knowledge è la la lista, la serie di informazioni che tu gli puoi dare finché lui sappia di più su di te.
+
+esempio 6:
+
+ Cosa sono le skill di Claude? I prompt e le skill danno una serie di istruzioni a Cloud, su che cosa devi fare? Quello che cambia è la comodità, il prompt lo devi rifare ogni singola volta, le skill non le devi rifare. Ci sono anche altri discorsi come il risparmiare token, l'avere il system prompt, Le skill non sono del testo o un singolo documento, uno potrebbe fare una cartella, inserire skill.
+
+MD. Questo deve esserci sempre. È come un file, solo che al posto di essere un Word è un altro file di testo. Per aprire file markdown puoi usare il famosissimo Obsidian, ma puoi anche usare Mark Edit che puoi scaricare da GitHub. Questo va formattato in un modo specifico che ti spiego in un altro video.
+
+Però poi tu ci puoi collegare altri documenti, tipo degli esempi, degli asset, Delle immagini e references, tutti questi poi li metti insieme e li installi su Cloud. La cosa figa è che una parte di questo documento rimane sempre come system prompt, ovvero che rimane dietro le quinte di Cloud e ce l'ha sempre a mente.
+
+Così capisce quando devi andare a esplorare l'intera skill, il che ti risparmia un botto di context window, più video su questo profilo, basta che mi segui.
