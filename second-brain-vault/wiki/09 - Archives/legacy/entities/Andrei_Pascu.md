@@ -16,9 +16,17 @@ Andrei Pascu è il principale competitor di Digital Empire nel mercato italiano 
 
 - **Business**: Creator/Personal Brand → Info Products (ebook €79 + corso €434)
 - **Brand**: Andrei Pascu (persona) + AP Formazione (education) + AP Sales (agency)
-- **Revenue stimato**: €3,750-6,710/mese (stima conservativa 2026)
+- **Revenue stimato**: €3,750-6,710/mese (stima conservativa 2026) — **da PRODOTTI, non da view**
 - **Canali**: YouTube, podcast "Niente come i soldi", TikTok, email list
 - **Posizionamento**: "Funnel Operator" — categoria difendibile nel mercato italiano
+
+## ⚠️ CORREZIONE DATI (2026-07-22, estrazione yt-dlp reale)
+La cifra "270k+ follower" è TikTok/IG sommati. **Il canale YouTube reale ha solo 8.040 iscritti**,
+e i video recenti fanno **100-500 visualizzazioni** (ultimo 18/07: 231 view). Se guadagnasse dalle
+view sarebbe povero (~$2,50/video). **Andrei guadagna perché VENDE ebook €79 + corso €434 a un
+pubblico caldo costruito con autorità + copy APSOC — NON da adsense.** Insight strategico chiave:
+il modello "autorità→prodotto" (suo, e nostro col Manuale) rende ~100× per spettatore vs il modello
+"faceless automation→view" (Dose Mentale/Legami d'amore). Dettaglio: `PIANO-MAESTRO/20-ANALISI-YOUTUBE-PIANO-CHIRURGICO.md`.
 
 ## Il Suo Tono (benchmark DE)
 

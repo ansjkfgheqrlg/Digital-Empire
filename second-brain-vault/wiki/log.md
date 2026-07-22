@@ -1,5 +1,17 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-22 (Analisi YouTube reale + piano chirurgico estate, Claude/Max)
+- RESEARCH/INGEST: estrazione dati REALI via yt-dlp di 3 canali (Dose Mentale @dosementale 198k iscritti
+  ma video recenti 649-3300 view = ratio 0,3% gonfiato; Legami d'amore @Legamidiamore 14.7k iscritti,
+  471 video, GIÀ attivo inglese — NON il "canale dormiente" che Max ricordava; Andrei Pascu @andreipascu
+  solo 8.040 iscritti YouTube, 100-500 view/video). SCOPERTA CHIAVE: Andrei guadagna da PRODOTTI (ebook
+  €79 + corso €434), non da adsense — modello autorità→prodotto rende ~100× per spettatore vs faceless→view.
+  YouTube-adsense NON è leva cash-7gg; YouTube-funnel-verso-Manuale sì. → 3 pagine: Entity_Dose_Mentale_Channel,
+  Entity_Legami_dAmore_Channel, correzione entities/Andrei_Pascu (270k era TikTok/IG, YouTube reale 8k).
+  Deliverable: PIANO-MAESTRO/20-ANALISI-YOUTUBE-PIANO-CHIRURGICO.md (piano con confidenza dichiarata per
+  riga, pre-mortem) + 19-ARENA-BUILD-LIST.md (8 build + 6 prompt pronti per Arena). DEC-EST-001 sbloccata
+  (Manuale €67, veto scaduto). Confidenza onesta ≥1 incasso entro 26/07: ~65-80%, non 99%.
+
 ## 2026-07-21 (YouTube Automation Factory — nuova skill, Max)
 - INGEST + BUILD: trasformato il workshop YouTube Automation (Video IQ · SEO/certificazione ·
   Fliki · teoria hook/intro/CTA) nella skill operativa `.claude/skills/youtube-automation-factory/`

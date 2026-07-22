@@ -1,3 +1,15 @@
+# STATO EMPIRE -- aggiornato 2026-07-22 (Claude: analisi YouTube reale + piano chirurgico estate)
+
+## 🎯 2026-07-22 — ANALISI YOUTUBE REALE + PIANO ESTATE CHIRURGICO (Claude, CP-20260722-001)
+Dati REALI yt-dlp (non memoria): **Dose Mentale** 198k iscritti ma video recenti 649-3300 view
+(ratio 0,3%, stima adsense $300-800/mese, NON €5000). **Legami d'amore** 14.7k iscritti, 471 video,
+GIÀ ATTIVO inglese — NON il canale dormiente ricordato: serve login per capire chi lo gestisce.
+**Andrei Pascu** solo 8.040 iscritti YouTube, 100-500 view/video → guadagna da PRODOTTI (€79+€434),
+NON da view. **Conclusione:** YouTube-views ≠ cash estate; modello autorità→prodotto (nostro Manuale) sì.
+**DEC-EST-001 ATTIVA** (Manuale €67, B-003 chiuso). Deliverable: `PIANO-MAESTRO/20-ANALISI-YOUTUBE-PIANO-CHIRURGICO.md`
++ `19-ARENA-BUILD-LIST.md` (6 prompt Arena pronti). Confidenza ≥1 incasso 26/07: ~65-80% (leva = Max chiama i 7).
+**RIPRESA DA:** Max sceglie build Arena + manda link canale 90€/accessi Legami; settimana 22-26 = contatti 7 concessionari.
+
 # STATO EMPIRE -- aggiornato 2026-07-21 sera (ORDINE MAX: EmpireDesk — la divisione Max/Gael TORNA)
 
 ## 🚨🚨🚨 ORDINE MAX 2026-07-21 SERA — EMPIRE DESK: RITORNA LA DIVISIONE, GAEL RICHIAMATO da V2-2 Lotto 4
