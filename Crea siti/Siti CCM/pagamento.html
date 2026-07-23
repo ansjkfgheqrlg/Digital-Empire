@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth bg-[#030303]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completa il tuo ordine — Claude Code Mastery</title>
+    <meta name="robots" content="noindex, nofollow">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        :root {
+            --accent-color: #FF5A26;
+            --border-subtle: rgba(255, 255, 255, 0.05);
+        }
+        body { font-family: 'Inter', sans-serif; background-color: transparent; color: #a3a3a3; overflow-x: hidden; }
+
+        .modern-wall-bg {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background: radial-gradient(circle at 50% 115%, #FF5A26 0%, #2D3139 35%, #1A1C20 65%, #000000 100%);
+        }
+
+        .film-grain {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0.85;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            mix-blend-mode: overlay;
+        }
+
+        .headline-base {
+            background: linear-gradient(135deg, #a3a3a3 0%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 500;
+        }
+
+        .headline-accent {
+            background: linear-gradient(135deg, #FF5A26 0%, #FF8A66 50%, #E0E0E0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+        }
+
+        .text-silver-orange {
+            background: linear-gradient(135deg, #f8f8f8 0%, #a0a0a0 60%, rgba(255, 90, 38, 0.6) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .ambient-glow { position: absolute; background: radial-gradient(circle, rgba(255,90,38,0.12) 0%, rgba(0,0,0,0) 60%); filter: blur(80px); pointer-events: none; }
+        .bento-card { background: rgba(255,255,255,0.01); border: 1px solid var(--border-subtle); box-shadow: 0 0 0 1px rgba(255,255,255,0.02), 0 24px 48px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05); backdrop-filter: blur(16px); border-radius: 1.5rem; transition: all 0.3s ease; }
+        .premium-cta { background: #ffffff; color: #000000; box-shadow: 0 0 0 1px rgba(255,255,255,0.1), 0 8px 20px rgba(255,255,255,0.1), inset 0 -2px 0 rgba(0,0,0,0.15); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .premium-cta:hover { transform: translateY(-1px); box-shadow: 0 0 0 1px #ffffff, 0 12px 28px rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0,0,0,0.15); }
+        .premium-cta:disabled { opacity: 0.5; cursor: not-allowed; }
+        .ghost-cta { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12); color: #f5f5f5; transition: all 0.3s ease; }
+        .ghost-cta:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.25); }
+        .pill-badge { background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); backdrop-filter: blur(12px); border-radius: 9999px; }
+        .rail-card { background: rgba(255,255,255,0.015); border: 1px solid var(--border-subtle); border-radius: 1rem; }
+        input[type="text"], input[type="email"] {
+            background: rgba(5,5,5,0.6);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #f5f5f5;
+            border-radius: 0.6rem;
+        }
+        input[type="text"]:focus, input[type="email"]:focus {
+            outline: none;
+            border-color: rgba(255,90,38,0.6);
+            box-shadow: 0 0 0 3px rgba(255,90,38,0.15);
+        }
+        [data-rail] { display: none; }
+        [data-rail].is-active { display: block; }
+        .copy-feedback { opacity: 0; transition: opacity 0.2s ease; }
+        .copy-feedback.show { opacity: 1; }
+
+        @media (max-width: 768px) {
+            body { font-size: 16px; }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-[#FF5A26] selection:text-white relative">
+
+    <div class="modern-wall-bg"></div>
+    <div class="film-grain"></div>
+
+    <header class="fixed top-0 w-full z-50 bg-[#050505]/40 backdrop-blur-xl border-b border-white/5 pl-4 sm:pl-0">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="manuale.html" class="font-bold text-white tracking-tight text-lg">ClaudeCode <span class="text-[#FF5A26]">Mastery</span></a>
+            <a href="manuale.html" class="text-sm font-medium text-white/80 hover:text-white transition-colors">&larr; Torna alla pagina del Manuale</a>
+        </div>
+    </header>
+
+    <main class="relative pt-32 pb-32 lg:pt-44 px-6 z-10">
+        <div class="ambient-glow w-[700px] h-[700px] top-0 left-1/2 -translate-x-1/2 opacity-30"></div>
+
+        <div class="max-w-xl mx-auto relative z-10">
+
+            <div class="text-center mb-10">
+                <div class="pill-badge inline-flex items-center gap-2 px-3 py-1.5 mb-6">
+                    <div class="w-1.5 h-1.5 rounded-full bg-[#FF5A26] shadow-[0_0_8px_#FF5A26]"></div>
+                    <span class="text-[0.65rem] font-semibold tracking-[0.2em] text-white/70 uppercase">Completa il tuo ordine</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl leading-tight tracking-tight mb-4">
+                    <span class="headline-base">Un ultimo passo prima di <span class="headline-accent">costruire sistemi</span>.</span>
+                </h1>
+                <p id="intro-copy" class="text-silver-orange opacity-80 text-base leading-relaxed max-w-md mx-auto">
+                    Scegli il metodo di pagamento che preferisci. Se il pagamento con carta non è ancora attivo, invia l'ordine: riceverai le coordinate per completare l'acquisto entro poche ore.
+                </p>
+            </div>
+
+            <!-- RIEPILOGO ORDINE -->
+            <div class="bento-card p-6 sm:p-8 mb-6 text-left bg-[#050505]/40 backdrop-blur-2xl relative overflow-hidden">
+                <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#FF5A26] to-transparent opacity-50"></div>
+                <h2 id="prodotto-nome" class="text-lg font-bold text-white tracking-tight mb-4">Manuale Claude Code</h2>
+
+                <div class="flex items-baseline gap-3 mb-1">
+                    <span id="price-display" class="text-4xl font-black text-white tracking-tighter">&euro;--</span>
+                    <span id="original-price-display" class="text-base text-gray-500 line-through font-medium"></span>
+                </div>
+                <p id="price-note" class="text-xs text-[#FF5A26] font-semibold mb-6 uppercase tracking-wider"></p>
+
+                <div class="border-t border-white/5 pt-5 mt-2 mb-2">
+                    <label class="flex items-start gap-3 cursor-pointer select-none">
+                        <input type="checkbox" id="order-bump-checkbox" class="mt-1 rounded bg-[#050505] border-white/10 text-[#FF5A26] focus:ring-0 focus:ring-offset-0" />
+                        <div class="text-sm">
+                            <span id="bump-label" class="font-bold text-white block">Aggiungi i Template dei Workflow</span>
+                            <span class="text-xs text-silver-orange opacity-70">Ricevi tutti i file .md pronti all'uso per i tuoi system prompt e le skill.</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- RAIL: STRIPE -->
+            <div data-rail="stripe" class="rail-card p-6 sm:p-8 mb-4">
+                <p class="text-[0.65rem] font-bold tracking-widest text-white/50 uppercase mb-3">Paga subito con carta</p>
+                <a href="#" id="stripe-btn" target="_blank" rel="noopener" class="premium-cta w-full py-4 rounded-xl font-bold text-sm block tracking-wide text-center">
+                    PAGA ORA CON CARTA &rarr;
+                </a>
+                <p class="mt-3 text-xs text-gray-500 text-center font-medium">Pagamento sicuro via Stripe. Garanzia di rimborso 14 giorni.</p>
+            </div>
+
+            <!-- RAIL: PAYPAL -->
+            <div data-rail="paypal" class="rail-card p-6 sm:p-8 mb-4">
+                <p class="text-[0.65rem] font-bold tracking-widest text-white/50 uppercase mb-3">Paga con PayPal</p>
+                <a href="#" id="paypal-btn" target="_blank" rel="noopener" class="ghost-cta w-full py-4 rounded-xl font-bold text-sm block tracking-wide text-center">
+                    PAGA CON PAYPAL &rarr;
+                </a>
+            </div>
+
+            <!-- RAIL: BONIFICO -->
+            <div data-rail="bonifico" class="rail-card p-6 sm:p-8 mb-4">
+                <p class="text-[0.65rem] font-bold tracking-widest text-white/50 uppercase mb-3">Bonifico bancario</p>
+                <div class="text-sm text-silver-orange opacity-90 space-y-1 font-mono">
+                    <p>IBAN: <span id="bonifico-iban" class="text-white"></span></p>
+                    <p>Intestatario: <span id="bonifico-intestatario" class="text-white"></span></p>
+                    <p>Causale: <span id="bonifico-causale" class="text-white"></span></p>
+                </div>
+                <button type="button" id="copy-iban-btn" class="ghost-cta mt-4 px-4 py-2 rounded-lg text-xs font-bold tracking-wide">Copia IBAN</button>
+                <span id="copy-feedback" class="copy-feedback text-xs text-[#FF5A26] ml-3 font-medium">Copiato</span>
+            </div>
+
+            <!-- RAIL: ORDINE VIA EMAIL (gradino 2, sempre disponibile) -->
+            <div data-rail="ordine_email" id="ordine-email-rail" class="bento-card p-6 sm:p-8 mb-4 text-left bg-[#050505]/40 backdrop-blur-2xl">
+                <p class="text-[0.65rem] font-bold tracking-widest text-white/50 uppercase mb-1">Invia il tuo ordine</p>
+                <p class="text-sm text-silver-orange opacity-80 mb-5">Compila i campi: si aprirà il tuo client email precompilato. Max ti risponde con le coordinate per completare l'acquisto.</p>
+
+                <form id="order-form" class="space-y-4" novalidate>
+                    <div>
+                        <label for="ord-nome" class="sr-only">Il tuo nome</label>
+                        <input type="text" id="ord-nome" name="nome" placeholder="Il tuo nome" required class="w-full px-4 py-3 text-sm">
+                    </div>
+                    <div>
+                        <label for="ord-email" class="sr-only">La tua email</label>
+                        <input type="email" id="ord-email" name="email" placeholder="La tua email migliore" required class="w-full px-4 py-3 text-sm">
+                    </div>
+                    <button type="submit" class="premium-cta w-full py-4 rounded-xl font-bold text-sm tracking-wide">
+                        INVIA L'ORDINE &rarr;
+                    </button>
+                    <p id="order-form-status" class="text-xs text-center font-medium" role="status" aria-live="polite"></p>
+                </form>
+                <noscript>
+                    <p class="text-xs text-silver-orange opacity-80 mt-4">
+                        JavaScript disattivato: scrivi direttamente a
+                        <a href="mailto:max.infoproducer@gmail.com?subject=Ordine%20Manuale%20Claude%20Code" class="text-[#FF5A26] underline">max.infoproducer@gmail.com</a>
+                        indicando nome, email e se vuoi anche il pack template.
+                    </p>
+                </noscript>
+            </div>
+
+            <p class="text-center text-xs text-gray-600 mt-8">
+                Problemi con l'ordine? Scrivi a <a href="mailto:max.infoproducer@gmail.com" class="text-gray-400 underline">max.infoproducer@gmail.com</a>
+            </p>
+        </div>
+    </main>
+
+    <footer class="py-12 px-6 border-t border-white/5 bg-transparent backdrop-blur-xl text-center relative z-10">
+        <div class="max-w-4xl mx-auto flex flex-col items-center">
+            <div class="font-bold text-white tracking-tight text-lg mb-4 opacity-30">Claude Code Mastery</div>
+            <p class="text-xs text-gray-600 max-w-lg leading-relaxed">&copy; 2026 Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <!-- CHECKOUT CONFIG — fonte unica di verità, iniettata da empire/tools/checkout.py --apply -->
+    <!-- Non modificare a mano: modifica Crea siti/Siti CCM/checkout.config.json e rilancia --apply -->
+    <script id="checkout-config" type="application/json">
+{
+  "prodotto": "Manuale Claude Code",
+  "prezzo_lancio_eur": 67,
+  "prezzo_listino_eur": 97,
+  "bump_eur": 27,
+  "scadenza_lancio": "2026-07-31",
+  "rails": {
+    "stripe_base": {
+      "url": "",
+      "attivo": false,
+      "richiede": "MAX: crea Payment Link su Stripe"
+    },
+    "stripe_bump": {
+      "url": "",
+      "attivo": false,
+      "richiede": "MAX: crea Payment Link bump su Stripe"
+    },
+    "paypal_me": {
+      "url": "",
+      "attivo": false,
+      "richiede": "MAX: handle PayPal.me"
+    },
+    "bonifico": {
+      "iban": "",
+      "intestatario": "",
+      "attivo": false,
+      "richiede": "MAX: IBAN"
+    },
+    "ordine_email": {
+      "email": "max.infoproducer@gmail.com",
+      "attivo": true
+    }
+  }
+}
+    </script>
+
+    <script>
+        (function () {
+            var cfg = JSON.parse(document.getElementById('checkout-config').textContent);
+            var rails = cfg.rails || {};
+
+            function euro(n) { return '€' + n; }
+
+            var isLancio = true;
+            try {
+                var today = new Date();
+                var deadline = new Date(cfg.scadenza_lancio + 'T23:59:59');
+                isLancio = today <= deadline;
+            } catch (e) { isLancio = true; }
+
+            var basePrice = isLancio ? cfg.prezzo_lancio_eur : cfg.prezzo_listino_eur;
+            var bumpPrice = basePrice + cfg.bump_eur;
+
+            document.getElementById('prodotto-nome').textContent = cfg.prodotto;
+            document.getElementById('bump-label').textContent = 'Aggiungi i Template dei Workflow (+' + euro(cfg.bump_eur) + ')';
+
+            var priceDisplay = document.getElementById('price-display');
+            var originalPriceDisplay = document.getElementById('original-price-display');
+            var priceNote = document.getElementById('price-note');
+            var bumpCheckbox = document.getElementById('order-bump-checkbox');
+
+            if (isLancio) {
+                originalPriceDisplay.textContent = euro(cfg.prezzo_listino_eur);
+                priceNote.textContent = 'prezzo di lancio fino al ' + cfg.scadenza_lancio.split('-').reverse().join('/');
+            } else {
+                originalPriceDisplay.textContent = '';
+                priceNote.textContent = 'prezzo di listino';
+            }
+
+            function currentPrice() {
+                return bumpCheckbox.checked ? bumpPrice : basePrice;
+            }
+
+            function refreshPrice() {
+                priceDisplay.textContent = euro(currentPrice());
+            }
+            refreshPrice();
+
+            // Tier 1: Stripe live
+            var stripeBase = rails.stripe_base || {};
+            var stripeBump = rails.stripe_bump || {};
+            var stripeReady = !!(stripeBase.attivo && stripeBase.url);
+            var stripeBumpReady = !!(stripeBump.attivo && stripeBump.url);
+
+            var stripeRail = document.querySelector('[data-rail="stripe"]');
+            var stripeBtn = document.getElementById('stripe-btn');
+            if (stripeReady) {
+                stripeRail.classList.add('is-active');
+                function updateStripeHref() {
+                    stripeBtn.href = (bumpCheckbox.checked && stripeBumpReady) ? stripeBump.url : stripeBase.url;
+                }
+                updateStripeHref();
+                bumpCheckbox.addEventListener('change', updateStripeHref);
+            }
+
+            // PayPal
+            var paypal = rails.paypal_me || {};
+            if (paypal.attivo && paypal.url) {
+                document.querySelector('[data-rail="paypal"]').classList.add('is-active');
+                document.getElementById('paypal-btn').href = paypal.url;
+            }
+
+            // Bonifico
+            var bonifico = rails.bonifico || {};
+            if (bonifico.attivo && bonifico.iban) {
+                document.querySelector('[data-rail="bonifico"]').classList.add('is-active');
+                document.getElementById('bonifico-iban').textContent = bonifico.iban;
+                document.getElementById('bonifico-intestatario').textContent = bonifico.intestatario || '-';
+                document.getElementById('bonifico-causale').textContent = cfg.prodotto;
+                document.getElementById('copy-iban-btn').addEventListener('click', function () {
+                    var feedback = document.getElementById('copy-feedback');
+                    var done = function () {
+                        feedback.classList.add('show');
+                        setTimeout(function () { feedback.classList.remove('show'); }, 1500);
+                    };
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(bonifico.iban).then(done, done);
+                    } else {
+                        done();
+                    }
+                });
+            }
+
+            // Ordine via email — sempre disponibile (gradino 2, mai un vicolo cieco)
+            var ordineEmail = rails.ordine_email || {};
+            var emailRail = document.getElementById('ordine-email-rail');
+            var emailAddress = (ordineEmail.attivo && ordineEmail.email) ? ordineEmail.email : 'max.infoproducer@gmail.com';
+            emailRail.classList.add('is-active');
+
+            if (!stripeReady) {
+                document.getElementById('intro-copy').textContent = "Il pagamento automatico con carta sta per essere attivato: invia l'ordine qui sotto e riceverai le coordinate per completare l'acquisto entro poche ore.";
+            }
+
+            var form = document.getElementById('order-form');
+            var status = document.getElementById('order-form-status');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var nome = document.getElementById('ord-nome').value.trim();
+                var email = document.getElementById('ord-email').value.trim();
+
+                if (!nome) {
+                    status.textContent = 'Inserisci il tuo nome.';
+                    status.className = 'text-xs text-center font-medium text-red-400';
+                    return;
+                }
+                if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                    status.textContent = 'Inserisci un indirizzo email valido.';
+                    status.className = 'text-xs text-center font-medium text-red-400';
+                    return;
+                }
+
+                var bump = bumpCheckbox.checked;
+                var prezzo = currentPrice();
+                var subject = 'Ordine ' + cfg.prodotto + (bump ? ' + Template pack' : '');
+                var bodyLines = [
+                    'Nuovo ordine dal sito Claude Code Mastery:',
+                    '',
+                    'Prodotto: ' + cfg.prodotto + (bump ? ' + Template dei Workflow (+' + euro(cfg.bump_eur) + ')' : ''),
+                    'Nome: ' + nome,
+                    'Email: ' + email,
+                    'Prezzo previsto: ' + euro(prezzo),
+                    'Bump template: ' + (bump ? 'Si' : 'No')
+                ];
+                var mailto = 'mailto:' + encodeURIComponent(emailAddress) +
+                    '?subject=' + encodeURIComponent(subject) +
+                    '&body=' + encodeURIComponent(bodyLines.join('\n'));
+
+                status.textContent = "Apertura del client email in corso...";
+                status.className = 'text-xs text-center font-medium text-silver-orange';
+                window.location.href = mailto;
+            });
+
+            // Preseleziona il bump se arrivi con ?bump=1 (es. dal link del manuale)
+            try {
+                var params = new URLSearchParams(window.location.search);
+                if (params.get('bump') === '1') {
+                    bumpCheckbox.checked = true;
+                    bumpCheckbox.dispatchEvent(new Event('change'));
+                    refreshPrice();
+                }
+            } catch (e) { /* URLSearchParams non disponibile: ignora */ }
+
+            bumpCheckbox.addEventListener('change', refreshPrice);
+        })();
+    </script>
+</body>
+</html>

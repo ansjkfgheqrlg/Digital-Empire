@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Task, Lead, User, InfobusinessProduct } from '../types';
-import { DollarSign, Users, Activity, Book, ShieldCheck, Database, Server } from 'lucide-react';
+import { DollarSign, Users, Activity, Book, ShieldCheck, Database, Server, Briefcase } from 'lucide-react';
 import { 
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
@@ -162,6 +162,72 @@ export const DashboardHome: React.FC<DashboardHomeProps> = ({ currentUser, tasks
               </div>
               <div className="mt-4 pt-4 border-t border-slate-300 text-center relative z-10">
                   <p className="text-[9px] text-slate-500 font-bold uppercase tracking-widest">All systems operational</p>
+              </div>
+          </div>
+      </div>
+
+      {/* Workflow & Agency Products - NEW SECTION */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+          {/* Prodotti Agency */}
+          <div className={`${pureSilverBlockClass} flex flex-col`}>
+              <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.1] pointer-events-none mix-blend-multiply"></div>
+              <h3 className={`text-[11px] font-extrabold uppercase tracking-widest mb-4 flex items-center gap-2 relative z-10 ${silverTextMain}`}>
+                  <Briefcase className="w-4 h-4 text-slate-600"/> Prodotti Agency
+              </h3>
+              <div className="space-y-3 relative z-10 flex-1 overflow-auto max-h-48 scrollbar-hide">
+                  {products.slice(0, 4).map(p => (
+                      <div key={p.id} className="flex justify-between items-center p-3 bg-white/40 rounded-xl border border-white/60 shadow-sm backdrop-blur-sm hover:-translate-y-0.5 transition-transform">
+                         <div className="flex flex-col">
+                             <span className={`text-[11px] font-bold ${silverTextMain}`}>{p.title}</span>
+                             <span className={`text-[9.5px] uppercase font-bold text-slate-600`}>€{p.price.toLocaleString()}</span>
+                         </div>
+                         <div className="bg-slate-800 text-white text-[9.5px] px-2 py-0.5 rounded-full font-bold tracking-wider">
+                             {p.sales} VENDITE
+                         </div>
+                      </div>
+                  ))}
+                  {products.length === 0 && (
+                      <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest text-center mt-6">
+                          Nessun prodotto configurato
+                      </div>
+                  )}
+              </div>
+          </div>
+          
+          {/* Sviluppo & Workflow */}
+          <div className={`${pureSilverBlockClass} flex flex-col`}>
+              <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.1] pointer-events-none mix-blend-multiply"></div>
+              <h3 className={`text-[11px] font-extrabold uppercase tracking-widest mb-4 flex items-center gap-2 relative z-10 ${silverTextMain}`}>
+                  <Activity className="w-4 h-4 text-slate-600"/> Sviluppo & Workflow Status
+              </h3>
+              <div className="space-y-4 relative z-10 flex-1">
+                  <div className="p-3.5 bg-gradient-to-r from-[#D6E6F2] to-[#94BBD9] rounded-xl border border-white/60 shadow-[0_4px_10px_rgba(93,138,168,0.2)]">
+                      <div className="flex justify-between items-center mb-1.5">
+                          <span className="text-[10px] font-bold text-slate-800 uppercase tracking-widest">Engine S7 - Memoria Ecosistemi</span>
+                          <span className="text-[10px] font-bold text-slate-800">45%</span>
+                      </div>
+                      <div className="w-full bg-white/40 h-1.5 rounded-full overflow-hidden shadow-inner">
+                          <div className="bg-slate-800 h-full w-[45%] shadow-[0_0_8px_rgba(0,0,0,0.5)]"></div>
+                      </div>
+                  </div>
+                  <div className="p-3.5 bg-gradient-to-r from-[#fbcfe8] to-[#f472b6] rounded-xl border border-white/60 shadow-[0_4px_10px_rgba(244,114,182,0.2)]">
+                      <div className="flex justify-between items-center mb-1.5">
+                          <span className="text-[10px] font-bold text-slate-800 uppercase tracking-widest">PreventivoForge UI (Prof Autocad)</span>
+                          <span className="text-[10px] font-bold text-slate-800">80%</span>
+                      </div>
+                      <div className="w-full bg-white/40 h-1.5 rounded-full overflow-hidden shadow-inner">
+                          <div className="bg-slate-800 h-full w-[80%] shadow-[0_0_8px_rgba(0,0,0,0.5)]"></div>
+                      </div>
+                  </div>
+                  <div className="p-3.5 bg-gradient-to-r from-[#e2e8f0] to-[#cbd5e1] rounded-xl border border-white/60 shadow-sm">
+                      <div className="flex justify-between items-center mb-1.5">
+                          <span className="text-[10px] font-bold text-slate-800 uppercase tracking-widest">Aureus OS App Refactoring</span>
+                          <span className="text-[10px] font-bold text-slate-800">95%</span>
+                      </div>
+                      <div className="w-full bg-white/40 h-1.5 rounded-full overflow-hidden shadow-inner">
+                          <div className="bg-emerald-600 h-full w-[95%] shadow-[0_0_8px_rgba(5,150,105,0.5)]"></div>
+                      </div>
+                  </div>
               </div>
           </div>
       </div>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Study Novacar — Preventa</title>
+<meta name="description" content="Come Novacar srl ha automatizzato i preventivi per le auto importate dalla Germania: la prova, i numeri, le fonti.">
+<style>
+  :root{
+    --blue:#101E3E; --orange:#FF4D00; --ice:#F6F7F9; --ink:#1A1A1A; --grey:#4B5563;
+    --line:#E3E6EC; --green:#18A957; --paper:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Arial,sans-serif;
+    background:var(--ice); color:var(--ink); line-height:1.6; font-size:16px;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px 80px;}
+  header.hero{
+    background:var(--blue); color:#fff; padding:56px 24px 44px;
+  }
+  header.hero .inner{max-width:880px;margin:0 auto;}
+  .logo{font-weight:800;font-size:22px;letter-spacing:-0.3px;margin-bottom:28px;}
+  .logo span{color:var(--orange)}
+  .kicker{
+    display:inline-block;font-size:11.5px;text-transform:uppercase;letter-spacing:1.6px;
+    font-weight:700;color:var(--orange);background:rgba(255,77,0,0.14);
+    padding:5px 12px;border-radius:20px;margin-bottom:18px;
+  }
+  h1{font-size:clamp(28px,4vw,40px);line-height:1.18;font-weight:800;margin-bottom:14px;}
+  .hero-sub{font-size:16.5px;color:rgba(255,255,255,0.82);max-width:640px;line-height:1.6;}
+  .meta-row{display:flex;flex-wrap:wrap;gap:22px;margin-top:26px;font-size:13px;color:rgba(255,255,255,0.65);}
+  .meta-row b{color:#fff;font-weight:700;}
+  .disclaimer-box{
+    background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);
+    border-radius:12px;padding:16px 18px;margin-top:28px;font-size:13.5px;color:rgba(255,255,255,0.85);
+  }
+
+  section{padding:44px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-size:22px;font-weight:800;color:var(--blue);margin-bottom:16px;
+    display:flex;align-items:center;gap:10px;
+  }
+  h2 .num{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:30px;height:30px;border-radius:8px;background:var(--blue);color:#fff;
+    font-size:14px;font-weight:800;flex-shrink:0;
+  }
+  h3{font-size:16px;font-weight:700;color:var(--blue);margin:20px 0 8px;}
+  p{color:var(--grey);margin-bottom:12px;font-size:15px;}
+  p strong, li strong{color:var(--ink)}
+  ul.plain{margin:10px 0 10px 0;padding-left:0;list-style:none;}
+  ul.plain li{
+    position:relative;padding-left:20px;margin-bottom:9px;color:var(--grey);font-size:15px;
+  }
+  ul.plain li:before{content:"—";position:absolute;left:0;color:var(--orange);font-weight:800;}
+
+  table.matrix{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.5px;}
+  table.matrix th{
+    background:var(--blue);color:#fff;text-align:left;padding:10px 12px;font-weight:700;
+    font-size:12px;text-transform:uppercase;letter-spacing:0.4px;
+  }
+  table.matrix td{padding:11px 12px;border-bottom:1px solid var(--line);color:var(--grey);vertical-align:top;}
+  table.matrix tr:nth-child(even) td{background:#FAFBFC;}
+  table.matrix td:first-child{color:var(--blue);font-weight:700;white-space:nowrap;}
+
+  .steps{counter-reset:step;margin:18px 0;}
+  .step{display:flex;gap:16px;margin-bottom:18px;}
+  .step .n{
+    counter-increment:step;flex-shrink:0;width:32px;height:32px;border-radius:50%;
+    background:var(--orange);color:#fff;font-weight:800;font-size:14px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .step .n:before{content:counter(step);}
+  .step p{margin:0;}
+
+  .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:20px 0;}
+  .stat{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 16px;}
+  .stat .v{font-size:30px;font-weight:800;color:var(--orange);line-height:1;margin-bottom:6px;}
+  .stat .l{font-size:12.5px;font-weight:700;color:var(--blue);margin-bottom:3px;}
+  .stat .s{font-size:11.5px;color:var(--grey);}
+
+  .quote-card{
+    background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--orange);
+    border-radius:10px;padding:18px 20px;margin:16px 0;
+  }
+  .quote-card .tag{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--orange);font-weight:800;margin-bottom:8px;display:block;}
+  .price-flow{display:flex;align-items:center;gap:14px;margin-top:10px;flex-wrap:wrap;}
+  .price-flow .old{font-size:20px;color:#9CA3AF;text-decoration:line-through;}
+  .price-flow .new{font-size:24px;color:var(--orange);font-weight:800;}
+  .price-flow .arrow{color:var(--orange);font-weight:800;}
+
+  .warn{
+    background:#FFF7ED;border:1px solid #FED7AA;border-left:4px solid var(--orange);
+    border-radius:10px;padding:14px 16px;margin:10px 0;font-size:14px;color:#7C2D12;
+  }
+
+  .honest-box{
+    background:var(--blue);color:#fff;border-radius:16px;padding:26px 26px 22px;margin-top:8px;
+  }
+  .honest-box h2{color:#fff;}
+  .honest-box h2 .num{background:var(--orange);}
+  .honest-box li{color:rgba(255,255,255,0.85);}
+  .honest-box li:before{color:var(--orange);}
+  .honest-box li strong{color:#fff;}
+
+  .sources-table{font-size:12.5px;}
+  .sources-table td:first-child{white-space:nowrap;text-align:center;color:var(--grey);font-weight:700;}
+
+  .note-final{
+    background:#FAFBFC;border:1px dashed #C7CDD6;border-radius:12px;padding:18px 20px;margin-top:18px;font-size:13.5px;color:var(--grey);
+  }
+  .note-final b{color:var(--blue)}
+
+  footer{padding:36px 0 10px;text-align:center;font-size:12px;color:#9CA3AF;}
+
+  @media print{
+    body{background:#fff;}
+    header.hero{padding:36px 24px 30px;}
+    section{padding:26px 0;}
+    .wrap{padding:0 8px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="inner">
+    <div class="logo">PREVENTA<span>.</span></div>
+    <span class="kicker">Case study — Concessionari auto</span>
+    <h1>Come Novacar ha automatizzato i preventivi per le auto<br>importate dalla Germania</h1>
+    <p class="hero-sub">Prodotto: Preventa (ex PreventivoForge) · Cliente: Novacar srl, concessionaria multimarca (Milano) · Periodo osservato: 30 giugno – 23 luglio 2026</p>
+    <div class="meta-row">
+      <span><b>65</b> run registrati</span>
+      <span><b>52</b> PDF generati</span>
+      <span><b>11</b> marche trattate</span>
+      <span><b>6</b> controlli automatici per PDF</span>
+    </div>
+    <div class="disclaimer-box">
+      Ogni cifra in questo documento è verificabile su disco o citata da un checkpoint di progetto.
+      Dove un dato utile non esiste ancora, è segnalato come <em>da confermare</em>. Nessuna citazione
+      del cliente è stata inventata: non ce ne sono, perché non esistono ancora (vedi sezione 6).
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <h2><span class="num">1</span>Il cliente</h2>
+    <p>Novacar srl è una concessionaria multimarca che acquista veicoli usati su portali esteri
+    (in particolare <strong>mobile.de</strong>, il principale portale auto tedesco) e li rivende
+    in Italia. Per ogni auto comprata all'estero, il salone deve produrre un preventivo per il
+    cliente finale in italiano, con il prezzo "chiavi in mano" corretto e la stessa impaginazione
+    che la concessionaria usa da sempre.</p>
+    <p style="font-size:12.5px;color:#9CA3AF;">Fonte: config dealer del progetto (ragione sociale,
+    sede); CP-20260702-003 — cliente reale identificato come Novacar srl.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span>Il problema concreto</h2>
+    <p>Un annuncio auto su mobile.de è <strong>in tedesco</strong> e non è pensato per essere
+    consegnato a un cliente italiano. Prima di questo lavoro, per ogni veicolo importato la
+    concessionaria doveva:</p>
+    <ul class="plain">
+      <li><strong>Tradurre a mano</strong> scheda tecnica, dotazioni e descrizione dal tedesco all'italiano, voce per voce.</li>
+      <li><strong>Ricalcolare il prezzo finale</strong> applicando maggiorazione, immatricolazione, pratiche e trasporto sopra il prezzo esposto sull'annuncio tedesco.</li>
+      <li><strong>Scaricare e reimpaginare le foto</strong> dell'annuncio senza tagliarle o perdere qualità.</li>
+      <li><strong>Ricreare da zero il PDF</strong> nel formato storico Novacar (modello di riferimento: un preventivo reale del cliente, <em>"Preventivo BMW Z4 2003 FR 3.0i.pdf"</em>) — sempre uguale a se stesso, indipendentemente da chi lo compila.</li>
+    </ul>
+    <p style="font-size:12.5px;color:#9CA3AF;">Fonte: REGOLE-SACRE.md (modello di riferimento dichiarato);
+    CP-20260702-003; CP-20260723-003 (sezione "Prima").</p>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span>Cosa è stato costruito</h2>
+    <p>Un motore che va <strong>dal link dell'annuncio al PDF finito</strong>, consegnato come
+    applicazione desktop per Windows.</p>
+    <div style="overflow-x:auto;">
+    <table class="matrix">
+      <tr><th>Fase</th><th>Cosa fa</th><th>Come</th></tr>
+      <tr><td>S1 — Scraping</td><td>Legge l'annuncio mobile.de</td>
+        <td>Chrome reale via Chrome DevTools Protocol (non un browser "automatizzato finto"):
+        necessario perché mobile.de è protetto da <strong>Akamai Bot Manager</strong>, che blocca
+        Playwright headless ("Zugriff verweigert").</td></tr>
+      <tr><td>S2 — Parsing</td><td>Estrae marca, modello, prezzo, km, dotazioni, foto</td>
+        <td>Legge i dati reali da <code>window.__INITIAL_STATE__</code>, non solo i tag SEO
+        (spesso vuoti su questo portale).</td></tr>
+      <tr><td>S3 — Traduzione</td><td>Traduce scheda tecnica e dotazioni in italiano</td>
+        <td>Glossario automotive tedesco→italiano dedicato (~150 termini), con verifica che non
+        resti nessuna parola tedesca.</td></tr>
+      <tr><td>S4 — Prezzo</td><td>Calcola il prezzo finale al cliente</td>
+        <td>Formula per-concessionaria: maggiorazione % + costi fissi (immatricolazione, pratiche,
+        trasporto) + margine. Per Novacar: maggiorazione 3%, due voci fisse da 1.500 €.</td></tr>
+      <tr><td>S5 — PDF</td><td>Genera il documento finale</td>
+        <td>Motore Chrome/CDP, impaginato sul modello storico Novacar: 14 regole fisse (logo in
+        copertina, dati azienda, scheda tecnica, equipaggiamento, garanzia, "Totale in strada",
+        foto intere mai tagliate, chiusura solo logo).</td></tr>
+      <tr><td>Controllo qualità</td><td>Blocca il PDF se qualcosa non torna</td>
+        <td>6 controlli automatici bloccanti: estrazione dati, traduzione, prezzo ricalcolato in
+        modo indipendente, render PDF, immagini complete, rispetto delle 14 regole d'impaginazione.</td></tr>
+      <tr><td>App</td><td>Rende tutto usabile da un venditore</td>
+        <td>Interfaccia grafica premium (fallback automatico a un'interfaccia semplice se il PC non
+        supporta la grafica avanzata), pacchettizzata come eseguibile Windows autonomo — non richiede
+        Python né competenze tecniche.</td></tr>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span>Come funziona in pratica</h2>
+    <div class="steps">
+      <div class="step"><div class="n"></div><p>Il venditore <strong>incolla il link dell'annuncio mobile.de</strong> nell'app e preme "Genera".</p></div>
+      <div class="step"><div class="n"></div><p>L'app apre una finestra Chrome reale per leggere l'annuncio, superando le protezioni anti-bot del portale tedesco.</p></div>
+      <div class="step"><div class="n"></div><p>Scheda tecnica, equipaggiamento e descrizione vengono <strong>tradotti in italiano</strong> automaticamente.</p></div>
+      <div class="step"><div class="n"></div><p>Il prezzo finale viene calcolato con le regole del salone e <strong>ricalcolato in modo indipendente</strong> da un secondo controllo, per intercettare eventuali errori prima che arrivino al cliente.</p></div>
+      <div class="step"><div class="n"></div><p>Il PDF viene generato rispettando esattamente il formato storico Novacar: stessa struttura, stesso ordine delle sezioni — cambiano solo i dati dell'auto.</p></div>
+      <div class="step"><div class="n"></div><p>L'intero ciclo richiede <strong>circa 1-2 minuti</strong> di lavorazione macchina, poi il PDF si apre da solo ed è archiviato nello storico del salone.</p></div>
+    </div>
+    <p style="font-size:12.5px;color:#9CA3AF;">Fonte: CONSEGNA-NOVACAR.md §3 (istruzioni d'uso
+    consegnate al cliente); CP-20260702-002 / CP-20260702-003.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span>Risultato misurabile</h2>
+    <p>Numeri contati direttamente sui file di progetto (non stimati), relativi all'attività di
+    sviluppo, collaudo e primo utilizzo tra il <strong>3 e il 13 luglio 2026</strong>:</p>
+
+    <div class="stat-grid">
+      <div class="stat"><div class="v">65</div><div class="l">Run registrati</div><div class="s">grep -c run_id, dealer novacar</div></div>
+      <div class="stat"><div class="v">52</div><div class="l">PDF generati</div><div class="s">conteggio diretto nelle cartelle preventivi_*</div></div>
+      <div class="stat"><div class="v">11</div><div class="l">Marche distinte</div><div class="s">Audi, BMW, Mercedes-Benz, Tesla…</div></div>
+      <div class="stat"><div class="v">~1-2 min</div><div class="l">Dal link al PDF</div><div class="s">CONSEGNA-NOVACAR.md §3</div></div>
+      <div class="stat"><div class="v">6/6</div><div class="l">Controlli bloccanti</div><div class="s">Gate A/B/C/D + IMG + R</div></div>
+    </div>
+
+    <div class="quote-card">
+      <span class="tag">Un preventivo vero, preso dallo storico</span>
+      <p style="margin-bottom:0;">Opel Insignia Dynamic — annuncio a 15.950 €. Titolo generato
+      automaticamente sul documento: <em>"Opel Insignia Dynamic 19.428 €"</em>.</p>
+      <div class="price-flow">
+        <span class="old">15.950 €</span><span class="arrow">→</span><span class="new">19.428 €</span>
+      </div>
+      <p style="font-size:11.5px;color:#9CA3AF;margin-top:8px;margin-bottom:0;">Fonte: file
+      <code>AF-20260713-150552-459563767_novacar_Opel-Insignia.json</code>, letto direttamente dallo storico.</p>
+    </div>
+
+    <div class="quote-card">
+      <span class="tag">Prova di scraping live contro le protezioni anti-bot</span>
+      <p style="margin-bottom:0;">Mercedes-Benz GLA 220 d 4MATIC AMG, annuncio mobile.de 456259857 —
+      <strong>26/26 foto</strong> scaricate, 4 controlli su 4 verdi, 0 residui in tedesco, PDF da 810 KB.</p>
+      <div class="price-flow">
+        <span class="old">47.490 €</span><span class="arrow">→</span><span class="new">51.915 €</span>
+      </div>
+      <p style="font-size:11.5px;color:#9CA3AF;margin-top:8px;margin-bottom:0;">Fonte: CP-20260701-003;
+      test ripetuto due volte in regressione sulla stessa pagina salvata, esito identico.</p>
+    </div>
+
+    <div class="quote-card">
+      <span class="tag">Prova di distribuzione come eseguibile standalone</span>
+      <p style="margin-bottom:0;"><code>PreventivoForge.exe</code>, senza Python installato sulla
+      macchina, dealer Novacar preconfigurato: 4 controlli su 4 verdi, PDF da 156 KB.</p>
+      <p style="font-size:11.5px;color:#9CA3AF;margin-top:8px;margin-bottom:0;">Fonte: CP-20260702-003.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="honest-box">
+      <h2><span class="num">6</span>Cosa questa prova NON dice</h2>
+      <ul class="plain">
+        <li><strong>Non affermiamo che Novacar venda di più.</strong> Il motore produce il documento
+        di preventivo, non chiude la trattativa: nessun collegamento è stato misurato tra questo
+        strumento e le vendite del salone.</li>
+        <li><strong>I 65 run includono i collaudi del team di sviluppo</strong> su annunci reali,
+        fatti durante la costruzione e la verifica del motore. Sono la prova che il motore funziona
+        su dati veri, <strong>non il registro vendite del cliente</strong>.</li>
+        <li><strong>Non esiste ancora una testimonianza firmata di Novacar.</strong> Nessuna frase in
+        questo documento è attribuita al cliente: se arriverà una dichiarazione diretta, verrà
+        aggiunta qui con nome e cognome, non prima.</li>
+      </ul>
+      <div class="warn">⚠️ DATO DA CONFERMARE CON IL CLIENTE: tempo effettivamente risparmiato
+      rispetto al metodo manuale precedente (nei checkpoint è documentato solo il tempo di
+      esecuzione macchina, non un confronto cronometrato col processo manuale precedente).</div>
+      <div class="warn">⚠️ DATO DA CONFERMARE CON IL CLIENTE: quanti dei 52-65 preventivi sono stati
+      effettivamente inviati a un cliente finale del salone rispetto a quelli generati per collaudo
+      interno del team di sviluppo.</div>
+      <div class="warn">⚠️ DATO DA CONFERMARE CON IL CLIENTE: se Novacar sta usando l'app in
+      autonomia, ad oggi, senza supporto del team che l'ha costruita.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span>Cosa significa per un altro concessionario</h2>
+    <ul class="plain">
+      <li>Il motore è <strong>configurabile per concessionaria</strong>: logo, dati aziendali,
+      regole di prezzo cambiano senza toccare una riga di codice — lo stesso motore può servire
+      più saloni con documenti diversi.</li>
+      <li>Funziona anche su portali sorgente con <strong>protezioni anti-bot avanzate</strong>
+      (dimostrato contro Akamai Bot Manager su mobile.de).</li>
+      <li>Si consegna come <strong>applicazione desktop pronta all'uso</strong>: nessun server da
+      gestire, nessuna competenza tecnica richiesta, nessuna migrazione dal gestionale esistente.</li>
+      <li>Il formato del PDF finale <strong>rispetta quello che il concessionario già usa</strong> —
+      non impone un nuovo stile, riproduce quello con cui i clienti del salone hanno già familiarità.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">S</span>Fonti</h2>
+    <div style="overflow-x:auto;">
+    <table class="matrix sources-table">
+      <tr><th>#</th><th>Affermazione</th><th>Fonte</th></tr>
+      <tr><td>1</td><td>Cliente reale = Novacar srl, modello PDF = "Preventivo BMW Z4 2003 FR 3.0i.pdf"</td><td>REGOLE-SACRE.md; CP-20260702-003</td></tr>
+      <tr><td>2</td><td>Dati anagrafici concessionaria</td><td>concessionarie/novacar/config.json</td></tr>
+      <tr><td>3</td><td>mobile.de protetto da Akamai; bypass via Chrome+CDP</td><td>CP-20260701-003</td></tr>
+      <tr><td>4</td><td>Parsing dati reali via window.__INITIAL_STATE__</td><td>CP-20260701-003</td></tr>
+      <tr><td>5</td><td>Glossario DE→IT ~150 termini, 0 residui</td><td>CP-20260701-001; CP-20260701-003</td></tr>
+      <tr><td>6</td><td>Formula prezzo (3% + 1.500 + 1.500)</td><td>rules/R4-pricing.md; config.json novacar</td></tr>
+      <tr><td>7</td><td>14 regole d'impaginazione, 6 controlli automatici</td><td>REGOLE-SACRE.md; CP-20260701-001; CP-20260702-003</td></tr>
+      <tr><td>8</td><td>App desktop, GUI premium, eseguibile standalone</td><td>CP-20260702-002; CP-20260702-003; CP-20260703-001</td></tr>
+      <tr><td>9</td><td>Tempo di lavorazione ~1-2 minuti</td><td>CONSEGNA-NOVACAR.md §3</td></tr>
+      <tr><td>10</td><td>65 run registrati (3-13 luglio 2026)</td><td>Conteggio diretto Memory/storico-preventivi/; CP-20260723-003</td></tr>
+      <tr><td>11</td><td>52 PDF nelle cartelle preventivi_&lt;data&gt;</td><td>Conteggio diretto; CP-20260723-003</td></tr>
+      <tr><td>12</td><td>11 marche distinte</td><td>Ricavato dai nomi file in Memory/storico-preventivi/</td></tr>
+      <tr><td>13</td><td>Esempio Opel Insignia 15.950 → 19.428 €</td><td>File AF-20260713-150552-459563767_novacar_Opel-Insignia.json</td></tr>
+      <tr><td>14</td><td>Prova live GLA 220: 26/26 foto, 47.490 → 51.915 €, PDF 810 KB</td><td>CP-20260701-003; Memory/storico-preventivi/2026-07-01_mercedes-gla-220_456259857.md</td></tr>
+      <tr><td>15</td><td>Test .exe standalone: 4/4 gate verdi, PDF 156 KB</td><td>CP-20260702-003</td></tr>
+      <tr><td>16</td><td>Onestà sui limiti della prova</td><td>Impostazione applicata coerentemente con CP-20260723-003</td></tr>
+    </table>
+    </div>
+
+    <div class="note-final">
+      <b>Nota tecnica su una discrepanza trovata nei checkpoint.</b> Il checkpoint CP-20260703-001
+      cita un'ulteriore "prova reale precedente (2026-07-02)" sullo stesso annuncio GLA 220 con
+      numeri diversi (44.490 € → 48.825 €, 26 foto). Questo documento non riprende quel numero: i
+      record effettivamente presenti su disco per quell'annuncio riportano tutti 47.490 € → 51.915 €.
+      In assenza di un file corrispondente ai 44.490/48.825 € citati, questo case study usa solo il
+      valore verificabile su disco e segnala la difformità come incongruenza di checkpoint da
+      chiarire, non come dato utilizzabile.
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  Preventa © 2026 — Documento preparato per uso commerciale (outreach concessionari).<br>
+  Formati disponibili: Markdown, HTML stampabile, PDF (se generato via Chrome headless — vedi nota di build).
+</footer>
+
+</body>
+</html>

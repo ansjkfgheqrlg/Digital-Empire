@@ -1,0 +1,34 @@
+{
+  "prodotto": "Manuale Claude Code",
+  "prezzo_lancio_eur": 67,
+  "prezzo_listino_eur": 97,
+  "bump_eur": 27,
+  "scadenza_lancio": "2026-07-31",
+  "rails": {
+    "stripe_base": {
+      "url": "",
+      "attivo": false,
+      "richiede": "MAX: crea Payment Link su Stripe"
+    },
+    "stripe_bump": {
+      "url": "",
+      "attivo": false,
+      "richiede": "MAX: crea Payment Link bump su Stripe"
+    },
+    "paypal_me": {
+      "url": "",
+      "attivo": false,
+      "richiede": "MAX: handle PayPal.me"
+    },
+    "bonifico": {
+      "iban": "",
+      "intestatario": "",
+      "attivo": false,
+      "richiede": "MAX: IBAN"
+    },
+    "ordine_email": {
+      "email": "max.infoproducer@gmail.com",
+      "attivo": true
+    }
+  }
+}

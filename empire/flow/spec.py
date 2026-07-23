@@ -36,6 +36,7 @@ class Gate:
     must_not_contain: str | None = None  # per type=file
     must_contain: str | None = None      # per type=file
     command: str | None = None           # per type=command
+    evidence: dict | None = None         # evidenza calcolata da mostrare a chi conferma (type=human)
 
 
 @dataclass(slots=True)
@@ -113,6 +114,7 @@ def load_spec(workflow_root: str | Path | None = None) -> FlowSpec:
             must_not_contain=g.get("must_not_contain"),
             must_contain=g.get("must_contain"),
             command=g.get("command"),
+            evidence=g.get("evidence"),
         ))
 
     return FlowSpec(

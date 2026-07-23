@@ -30,16 +30,24 @@ def cmd_flow_gates(a) -> int:
         print(json.dumps([{
             "id": r.id, "status": r.status, "deadline": r.deadline.isoformat(),
             "reason": r.reason, "on_red": r.on_red,
+            "evidence": r.evidence, "on_red_applied": r.on_red_applied,
         } for r in results], indent=2, ensure_ascii=False))
         return 0
     for r in results:
         print(f"{icon.get(r.status, '?')} {r.id:14} scad. {r.deadline.isoformat()}  {r.reason}")
+        if r.evidence:
+            print(f"      evidenza: {r.evidence}")
         if r.status == "RED" and r.on_red:
-            print(f"      -> on_red: {r.on_red}")
+            marca = "APPLICATO" if r.on_red_applied else "DA APPLICARE"
+            print(f"      -> on_red [{marca}]: {r.on_red}")
     return 0
 
 
 def cmd_flow_gate(a) -> int:
+    if a.applied_on_red:
+        ok, msg = _runner.mark_on_red_applied(a.gate_id, actor=a.actor, evidence=a.evidence or "")
+        print(msg)
+        return 0 if ok else 1
     if a.confirm:
         r = _runner.confirm_gate(a.gate_id, actor=a.actor, evidence=a.evidence or "")
     else:
@@ -48,7 +56,34 @@ def cmd_flow_gate(a) -> int:
         print(f"gate sconosciuto: {a.gate_id}")
         return 2
     print(f"{r.id}: {r.status} — {r.reason}")
+    if r.evidence:
+        print(f"  evidenza: {r.evidence}")
     return 0
+
+
+def cmd_flow_decisions(a) -> int:
+    statuses = _runner.apply_decisions(a.workflow, write=not a.dry_run)
+    icon = {"ATTIVA": "🟢", "VETO": "🛑", "IN_ATTESA": "⏳"}
+    if a.json:
+        print(json.dumps([{
+            "id": s.id, "topic": s.topic, "default": s.default, "state": s.state,
+            "fact": s.fact, "reason": s.reason,
+            "veto_deadline": s.veto_deadline.isoformat() if s.veto_deadline else None,
+        } for s in statuses], indent=2, ensure_ascii=False))
+        return 0
+    for s in statuses:
+        print(f"{icon.get(s.state, '?')} {s.id:14} {s.state:10} {s.topic}")
+        print(f"      default: {s.default}")
+        print(f"      {s.reason}   [fatto: {s.fact}]")
+    if a.dry_run:
+        print("\n(dry-run: nessun fatto scritto)")
+    return 0
+
+
+def cmd_flow_veto(a) -> int:
+    ok, msg = _runner.register_veto(a.decision_id, actor=a.actor, reason=a.reason)
+    print(msg)
+    return 0 if ok else 1
 
 
 def cmd_flow_status(a) -> int:
@@ -106,9 +141,24 @@ def register(sub) -> None:
     p.add_argument("gate_id")
     p.add_argument("--workflow", default=None)
     p.add_argument("--confirm", action="store_true", help="conferma umana (solo gate type=human)")
+    p.add_argument("--applied-on-red", dest="applied_on_red", action="store_true",
+                   help="registra che la contromossa on_red e' stata eseguita (NON rende verde il gate)")
     p.add_argument("--actor", default="?")
     p.add_argument("--evidence", default="")
     p.set_defaults(fn=cmd_flow_gate)
+
+    p = flow_sub.add_parser("decisions", help="decisioni default-piu-veto (ADR-EST-006)")
+    p.add_argument("--workflow", default=None)
+    p.add_argument("--json", action="store_true")
+    p.add_argument("--dry-run", dest="dry_run", action="store_true",
+                   help="mostra senza scrivere i fatti")
+    p.set_defaults(fn=cmd_flow_decisions)
+
+    p = flow_sub.add_parser("veto", help="registra un veto umano su una decisione")
+    p.add_argument("decision_id")
+    p.add_argument("--actor", required=True)
+    p.add_argument("--reason", required=True)
+    p.set_defaults(fn=cmd_flow_veto)
 
     p = flow_sub.add_parser("status", help="stato dei workflow")
     p.add_argument("--workflow", default=None)

@@ -159,78 +159,78 @@ export const Automations: React.FC<AutomationsProps> = ({ rules, logs = [], onTo
             <Button onClick={() => setIsModalOpen(true)} className="bg-white text-black hover:bg-platinum-200" icon={<Plus className="w-4 h-4"/>}>NUOVA REGOLA</Button>
         </div>
 
-        <div className="grid grid-cols-1 gap-4">
-            {rules.map(rule => (
-                <div key={rule.id} className={`
-                    relative overflow-hidden border p-6 rounded-sm flex items-center justify-between transition-all duration-300 group
-                    ${rule.active 
-                        ? 'bg-gradient-to-br from-diamond-300 via-diamond-400 to-diamond-500 border-white/50 shadow-[0_0_30px_rgba(93,138,168,0.3)]' 
-                        : 'bg-[#0A0A0A] border-white/5 opacity-70'}
-                `}>
-                    {/* Shine Overlay for Active */}
-                    {rule.active && <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-50 skew-x-12 pointer-events-none"></div>}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {rules.map((rule, index) => {
+                const silverMixes = [
+                    'from-[#1e3a8a] via-[#cbd5e1] to-[#3b82f6] shadow-[0_10px_20px_rgba(30,58,138,0.4)]', // Blue + Silver
+                    'from-[#881337] via-[#e2e8f0] to-[#e11d48] shadow-[0_10px_20px_rgba(136,19,55,0.4)]', // Red + Silver
+                    'from-[#064e3b] via-[#94a3b8] to-[#10b981] shadow-[0_10px_20px_rgba(6,78,59,0.4)]', // Green + Silver
+                    'from-[#78350f] via-[#cbd5e1] to-[#d97706] shadow-[0_10px_20px_rgba(120,53,15,0.4)]', // Amber + Silver
+                    'from-[#4c1d95] via-[#e2e8f0] to-[#8b5cf6] shadow-[0_10px_20px_rgba(76,29,149,0.4)]'  // Purple + Silver
+                ];
+                const activeStyle = silverMixes[index % silverMixes.length];
 
-                    <div className="flex items-center gap-6 relative z-10">
-                        <div className={`w-12 h-12 rounded-full flex items-center justify-center border shadow-inner
-                            ${rule.active 
-                                ? 'bg-white/20 border-white/40 text-slate-900 shadow-sm' 
-                                : 'bg-white/5 border-white/10 text-platinum-600'}
-                        `}>
-                            <Zap className="w-6 h-6" />
-                        </div>
-                        <div>
-                            <div className="flex items-center gap-3 mb-1">
-                                <h3 className={`text-lg font-bold ${rule.active ? 'text-slate-900' : 'text-platinum-500'}`}>{rule.name}</h3>
-                                {rule.active && <span className="px-2 py-0.5 rounded-full bg-slate-900/10 border border-slate-900/20 text-slate-900 text-[9px] font-bold uppercase tracking-wider flex items-center gap-1"><Activity className="w-3 h-3"/> Attivo</span>}
+                return (
+                    <div key={rule.id} className={`
+                        relative overflow-hidden border p-5 rounded-xl flex flex-col justify-between transition-all duration-300 group min-h-[170px]
+                        ${rule.active 
+                            ? `bg-gradient-to-br ${activeStyle} border-white/60 hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(0,0,0,0.6)]` 
+                            : 'bg-[#0A0A0A] border-white/10 opacity-60 hover:opacity-100'}
+                    `}>
+                        {/* Metallic Grain Layer */}
+                        {rule.active && <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.25] pointer-events-none mix-blend-multiply"></div>}
+                        {rule.active && <div className="absolute top-[-50%] right-[-50%] w-[200%] h-[200%] bg-gradient-to-b from-white/40 via-transparent to-transparent rotate-45 pointer-events-none"></div>}
+
+                        <div className="flex items-start justify-between relative z-10 mb-4">
+                            <div className="flex items-center gap-3">
+                                <div className={`w-10 h-10 rounded-full flex items-center justify-center border shadow-inner shrink-0
+                                    ${rule.active ? 'bg-black/40 border-white/50 text-white backdrop-blur-md' : 'bg-white/5 border-white/10 text-platinum-600'}
+                                `}>
+                                    <Zap className="w-5 h-5 drop-shadow-md" />
+                                </div>
+                                <div className="min-w-0">
+                                    <div className="flex items-center gap-2 mb-0.5">
+                                        <h3 className={`text-sm font-bold tracking-wide truncate ${rule.active ? 'text-white drop-shadow-md' : 'text-platinum-500'}`}>{rule.name}</h3>
+                                        {rule.active && <span className="px-1.5 py-0.5 rounded-full bg-black/50 border border-white/30 text-white text-[8px] font-bold uppercase tracking-widest flex items-center gap-1 shrink-0"><Activity className="w-2.5 h-2.5"/> ON</span>}
+                                    </div>
+                                    <p className={`text-[9px] uppercase font-bold tracking-widest truncate ${rule.active ? 'text-white/80' : 'text-platinum-600'}`}>
+                                        <Bell className="w-2.5 h-2.5 inline mr-1" />{getTriggerLabel(rule.trigger)}
+                                    </p>
+                                </div>
                             </div>
-                            <div className={`flex items-center gap-3 text-sm font-mono ${rule.active ? 'text-slate-800' : 'text-platinum-400'}`}>
-                                <span className={`flex items-center gap-1 px-2 py-1 rounded-sm ${rule.active ? 'bg-white/30 border border-white/20' : 'bg-white/5'}`}>
-                                    <Bell className={`w-3 h-3 ${rule.active ? 'text-slate-700' : ''}`}/> {getTriggerLabel(rule.trigger)}
-                                </span>
-                                <ArrowRight className={`w-4 h-4 ${rule.active ? 'text-slate-700' : 'text-platinum-600'}`}/>
-                                <span className={`flex items-center gap-1 px-2 py-1 rounded-sm ${rule.active ? 'bg-white/30 border border-white/20' : 'bg-white/5'}`}>
-                                    <CheckCircle2 className={`w-3 h-3 ${rule.active ? 'text-slate-700' : ''}`}/> {getActionLabel(rule.action)}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex items-center gap-8 relative z-10">
-                        <div className="text-right hidden md:block">
-                            <p className={`text-[10px] uppercase tracking-widest ${rule.active ? 'text-slate-700' : 'text-platinum-500'}`}>Esecuzioni</p>
-                            <p className={`text-lg font-bold font-mono ${rule.active ? 'text-slate-900' : 'text-white'}`}>{rule.runCount}</p>
-                        </div>
-                        <div className="text-right hidden md:block">
-                            <p className={`text-[10px] uppercase tracking-widest ${rule.active ? 'text-slate-700' : 'text-platinum-500'}`}>Ultimo Run</p>
-                            <p className={`text-sm font-mono ${rule.active ? 'text-slate-800' : 'text-platinum-300'}`}>{rule.lastRun}</p>
-                        </div>
-                        
-                        <div className={`h-8 w-[1px] mx-2 ${rule.active ? 'bg-slate-900/20' : 'bg-white/10'}`}></div>
-
-                        {onTestRule && (
-                            <button 
-                                onClick={() => onTestRule(rule.id)}
-                                className={`px-4 py-2 text-[10px] font-bold uppercase tracking-widest border rounded-sm transition-colors shadow-sm
-                                    ${rule.active 
-                                        ? 'bg-slate-900 text-white border-transparent hover:bg-slate-800 shadow-slate-900/20' 
-                                        : 'bg-white/5 hover:bg-white/10 border-white/10 text-platinum-400 hover:text-white'}
-                                `}
-                            >
-                                Test Run
+                            <button onClick={() => onToggleRule(rule.id)} className={`w-10 h-5 rounded-full p-0.5 transition-colors border shrink-0 relative z-20 ${rule.active ? 'bg-emerald-500 border-emerald-400 shadow-[0_0_10px_rgba(16,185,129,0.5)]' : 'bg-platinum-800 border-transparent'}`}>
+                                <div className={`w-4 h-4 rounded-full shadow-md transform duration-300 bg-white ${rule.active ? 'translate-x-5' : 'translate-x-0'}`}></div>
                             </button>
-                        )}
+                        </div>
 
-                        <button 
-                            onClick={() => onToggleRule(rule.id)}
-                            className={`w-12 h-6 rounded-full p-1 transition-colors duration-300 ease-in-out border 
-                                ${rule.active ? 'bg-slate-900 border-slate-900' : 'bg-platinum-800 border-transparent'}
-                            `}
-                        >
-                            <div className={`w-4 h-4 rounded-full shadow-md transform duration-300 ease-in-out bg-white ${rule.active ? 'translate-x-6' : 'translate-x-0'}`}></div>
-                        </button>
+                        <div className="flex flex-col gap-3 relative z-10 mt-auto">
+                            <div className={`p-2 rounded-lg flex items-center gap-2 text-[10px] font-bold tracking-wider ${rule.active ? 'bg-black/40 text-white border border-white/20 backdrop-blur-sm' : 'bg-white/5 text-platinum-500 border border-transparent'}`}>
+                                <ArrowRight className="w-3 h-3 opacity-70 shrink-0"/>
+                                <CheckCircle2 className="w-3 h-3 shrink-0"/> 
+                                <span className="truncate">{getActionLabel(rule.action)}</span>
+                            </div>
+                            
+                            <div className="flex items-center justify-between mt-1">
+                                <div className="flex gap-4">
+                                    <div>
+                                        <p className="text-[8px] uppercase tracking-widest text-white/70 mb-0.5">Esecuzioni</p>
+                                        <p className={`text-xs font-mono font-bold ${rule.active ? 'text-white' : 'text-platinum-500'}`}>{rule.runCount}</p>
+                                    </div>
+                                    <div>
+                                        <p className="text-[8px] uppercase tracking-widest text-white/70 mb-0.5">Ultimo Run</p>
+                                        <p className={`text-xs font-mono font-bold ${rule.active ? 'text-white' : 'text-platinum-500'}`}>{rule.lastRun}</p>
+                                    </div>
+                                </div>
+                                {onTestRule && (
+                                    <button onClick={() => onTestRule(rule.id)} className={`px-3 py-1.5 text-[9px] font-bold uppercase tracking-widest border rounded-md transition-all z-20 relative ${rule.active ? 'bg-white/20 hover:bg-white/30 text-white border-white/40 backdrop-blur-md shadow-sm' : 'bg-white/5 text-platinum-500 border-white/10 hover:bg-white/10 hover:text-white'}`}>
+                                        Test Run
+                                    </button>
+                                )}
+                            </div>
+                        </div>
                     </div>
-                </div>
-            ))}
+                );
+            })}
         </div>
 
         {/* OPERAZIONI REALI (Digital Empire) — subprocess veri via app.py, exit code sempre visibile.

@@ -168,13 +168,13 @@ export const Layout: React.FC<LayoutProps> = ({
                   key={item.path}
                   onClick={() => onNavigate(item.path)}
                   className={`
-                    w-full flex items-center gap-4 px-2 py-2 text-sm rounded-lg
+                    w-full flex items-center gap-3 px-2 py-1.5 text-[11.5px] rounded-lg uppercase tracking-wider
                     ${isActive ? activeItemClass : inactiveItemClass}
                   `}
                 >
-                  <item.icon className={`w-5 h-5 transition-transform duration-300 ${isActive ? 'scale-110' : 'scale-100'}`} strokeWidth={1.5} />
+                  <item.icon className={`w-4 h-4 transition-transform duration-300 ${isActive ? 'scale-110' : 'scale-100'}`} strokeWidth={1.8} />
                   {isSidebarOpen && (
-                    <span className={`tracking-wide animate-in fade-in slide-in-from-left-2 duration-300`}>
+                    <span className={`tracking-widest font-bold animate-in fade-in slide-in-from-left-2 duration-300 mt-0.5`}>
                       {item.label}
                     </span>
                   )}

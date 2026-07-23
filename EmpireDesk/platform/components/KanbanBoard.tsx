@@ -6,7 +6,7 @@ import {
   Plus, Clock, X, MoreVertical, GripVertical, CheckSquare, MessageSquare, 
   Paperclip, Send, User, Search, Filter, List, Kanban as KanbanIcon, 
   Calendar as CalendarIcon, ChevronLeft, ChevronRight, AlertCircle, Layers,
-  LayoutGrid, ArrowUpRight, Zap, Flag
+  LayoutGrid, ArrowUpRight, Zap, Flag, Activity
 } from 'lucide-react';
 import { Button } from './ui/Button';
 
@@ -357,9 +357,9 @@ export const KanbanBoard: React.FC<KanbanBoardProps> = ({ tasks, onAddTask, onUp
               const columnTasks = filteredTasks.filter(t => t.status === col.id);
               
               return (
-                <div 
+                  <div 
                   key={col.id}
-                  className="flex-shrink-0 w-[360px] flex flex-col rounded-sm group/col transition-all duration-300 relative"
+                  className="flex-shrink-0 w-[300px] flex flex-col rounded-sm group/col transition-all duration-300 relative"
                   onDragOver={(e) => e.preventDefault()}
                   onDrop={(e) => handleDrop(e, col.id)}
                 >
@@ -417,7 +417,7 @@ export const KanbanBoard: React.FC<KanbanBoardProps> = ({ tasks, onAddTask, onUp
                               </div>
                               
                               {/* Title */}
-                              <h4 className={`text-sm font-black mb-3 leading-snug drop-shadow-sm tracking-tight ${theme.textPrimary}`}>
+                              <h4 className={`text-xs font-black mb-2.5 leading-snug drop-shadow-sm tracking-tight ${theme.textPrimary}`}>
                                 {task.title}
                               </h4>
 
@@ -480,6 +480,54 @@ export const KanbanBoard: React.FC<KanbanBoardProps> = ({ tasks, onAddTask, onUp
                 </div>
               );
             })}
+          </div>
+      )}
+
+      {/* STATS AND GRAPHS SECTION (Livello 1) */}
+      {viewMode === 'BOARD' && (
+          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6 pb-10 px-1 border-t border-white/5 pt-8">
+              <div className="bg-gradient-to-br from-[#111315] to-[#08090A] border border-white/10 rounded-sm p-5 relative overflow-hidden shadow-2xl">
+                  <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.1] pointer-events-none mix-blend-overlay"></div>
+                  <h3 className="text-[10px] font-bold uppercase tracking-widest text-platinum-400 mb-4 flex items-center gap-2 relative z-10"><Activity className="w-3.5 h-3.5"/> Task Velocity / Trend Settimanale</h3>
+                  <div className="h-28 flex items-end gap-3 mt-4 relative z-10 border-b border-white/10 pb-1">
+                      <div className="flex-1 bg-white/5 rounded-t-sm hover:bg-white/10 transition-colors relative group h-[40%]">
+                          <div className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 text-[9px] font-bold opacity-0 group-hover:opacity-100 transition-opacity text-platinum-300">12</div>
+                          <div className="h-full bg-gradient-to-t from-blue-900 to-blue-500/80 rounded-t-sm w-full border-t border-blue-400/50"></div>
+                      </div>
+                      <div className="flex-1 bg-white/5 rounded-t-sm hover:bg-white/10 transition-colors relative group h-[60%]">
+                          <div className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 text-[9px] font-bold opacity-0 group-hover:opacity-100 transition-opacity text-platinum-300">25</div>
+                          <div className="h-full bg-gradient-to-t from-blue-900 to-blue-500/80 rounded-t-sm w-full border-t border-blue-400/50"></div>
+                      </div>
+                      <div className="flex-1 bg-white/5 rounded-t-sm hover:bg-white/10 transition-colors relative group h-[80%]">
+                          <div className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 text-[9px] font-bold opacity-0 group-hover:opacity-100 transition-opacity text-platinum-300">34</div>
+                          <div className="h-full bg-gradient-to-t from-blue-900 to-blue-500/80 rounded-t-sm w-full border-t border-blue-400/50"></div>
+                      </div>
+                      <div className="flex-1 bg-white/5 rounded-t-sm hover:bg-white/10 transition-colors relative group h-[100%]">
+                          <div className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 text-[9px] font-bold opacity-0 group-hover:opacity-100 transition-opacity text-platinum-300">45</div>
+                          <div className="h-full bg-gradient-to-t from-emerald-900 to-emerald-500/80 rounded-t-sm w-full border-t border-emerald-400/50"></div>
+                      </div>
+                  </div>
+                  <div className="flex justify-between mt-2 text-[9px] font-mono text-platinum-600 uppercase tracking-widest relative z-10 px-2"><span>W1</span><span>W2</span><span>W3</span><span>W4</span></div>
+              </div>
+
+              <div className="bg-gradient-to-br from-[#111315] to-[#08090A] border border-white/10 rounded-sm p-5 relative overflow-hidden shadow-2xl flex flex-col justify-between">
+                  <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.1] pointer-events-none mix-blend-overlay"></div>
+                  <h3 className="text-[10px] font-bold uppercase tracking-widest text-platinum-400 mb-6 flex items-center gap-2 relative z-10"><Layers className="w-3.5 h-3.5"/> Compiti per Reparto Operativo</h3>
+                  <div className="space-y-4 relative z-10 flex-1">
+                      <div>
+                          <div className="flex justify-between text-[9px] font-bold uppercase tracking-widest text-platinum-300 mb-1.5"><span>Marketing & Funnel</span><span className="text-rose-400">45%</span></div>
+                          <div className="w-full bg-black/40 h-1.5 rounded-full overflow-hidden border border-white/5"><div className="bg-rose-500 h-full w-[45%] shadow-[0_0_8px_rgba(244,63,94,0.6)]"></div></div>
+                      </div>
+                      <div>
+                          <div className="flex justify-between text-[9px] font-bold uppercase tracking-widest text-platinum-300 mb-1.5"><span>Dev & Automation</span><span className="text-blue-400">30%</span></div>
+                          <div className="w-full bg-black/40 h-1.5 rounded-full overflow-hidden border border-white/5"><div className="bg-blue-500 h-full w-[30%] shadow-[0_0_8px_rgba(59,130,246,0.6)]"></div></div>
+                      </div>
+                      <div>
+                          <div className="flex justify-between text-[9px] font-bold uppercase tracking-widest text-platinum-300 mb-1.5"><span>Admin & Finance</span><span className="text-emerald-400">25%</span></div>
+                          <div className="w-full bg-black/40 h-1.5 rounded-full overflow-hidden border border-white/5"><div className="bg-emerald-500 h-full w-[25%] shadow-[0_0_8px_rgba(16,185,129,0.6)]"></div></div>
+                      </div>
+                  </div>
+              </div>
           </div>
       )}
 

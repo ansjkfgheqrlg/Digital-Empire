@@ -307,7 +307,7 @@
                     </label>
                 </div>
                 
-                <a href="https://buy.stripe.com/YOUR_STRIPE_MANUALE_LINK" id="checkout-btn" class="premium-cta w-full py-4 rounded-xl font-bold text-sm block tracking-wide text-center">
+                <a href="pagamento.html" id="checkout-btn" class="premium-cta w-full py-4 rounded-xl font-bold text-sm block tracking-wide text-center">
                     INIZIA A COSTRUIRE SISTEMI &rarr;
                 </a>
                 <p class="mt-5 text-xs text-gray-500 text-center font-medium">Pagamento sicuro. Garanzia di rimborso 14 giorni.</p>
@@ -335,8 +335,8 @@
             const checkoutBtn = document.getElementById('checkout-btn');
             const priceDisplay = document.getElementById('price-display');
             
-            const baseLink = "https://buy.stripe.com/YOUR_STRIPE_MANUALE_LINK";
-            const bumpLink = "https://buy.stripe.com/YOUR_STRIPE_MANUALE_BUMP_LINK";
+            const baseLink = "pagamento.html";
+            const bumpLink = "pagamento.html?bump=1";
             
             if (bumpCheckbox && checkoutBtn && priceDisplay) {
                 bumpCheckbox.addEventListener('change', () => {

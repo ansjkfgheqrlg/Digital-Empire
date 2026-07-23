@@ -29,7 +29,8 @@ __all__ = ["ART8_PILLARS", "ADR001_ECOSYSTEMS", "is_planning_doc", "is_vendored"
 ADR001_ECOSYSTEMS = (
     "01-AGENCY", "02-INFO-BUSINESS", "03-CONTENT-FACTORY", "04-MARKETING",
     "05-MULTI-BUSINESS", "06-PLATFORM", "07-FORGE", "08-INTELLIGENCE",
-    "09-OPERATIONS", "10-MEMORY",
+    "09-OPERATIONS", "10-MEMORY", "11-APEX-7-CORE", "12-STREAM-S7-BOT",
+    "13-ARENA-APEX"
 )
 
 # Mandato Art.8 §8.2 — i 6 pilastri obbligatori di ogni cartella-workflow
@@ -193,12 +194,10 @@ def check_links(base: Path | str, *, limit_files: int | None = None,
 
 
 def check_adr001() -> list[Finding]:
-    """ADR-001: la holding ha esattamente 10 ecosistemi, ciascuno con la struttura canonica.
+    """ADR-001 (esteso da ADR-009): la holding ha esattamente 13 ecosistemi canonici.
 
-    Nato da un caso reale (2026-07-23): i commit APEX-7 / Arena / S7-Bot hanno depositato
-    tre cartelle in company/Ecosistemi/ portandole a 13, due delle quali con numero gia'
-    occupato (due 08-, due 09-). Un numero d'ecosistema duplicato rompe ogni riferimento
-    che usa il prefisso, quindi e' bloccante.
+    Espanso per includere i poli strategici: APEX-7, STREAM-S7, ARENA-APEX.
+    I nomi sono rigidi per prevenire collisioni e frammentazione.
     """
     out: list[Finding] = []
     try:

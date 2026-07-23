@@ -16,9 +16,9 @@ import json
 import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import Literal
 
+from . import evidence as _evidence
 from ..paths import repo_root
 
 __all__ = ["GateResult", "Status", "FACTS_PATH", "load_facts", "save_fact",
@@ -113,7 +113,6 @@ def save_fact(name: str, value: float, *, source: str) -> None:
     FACTS_DIR.mkdir(parents=True, exist_ok=True)
     data = load_facts()
     data[name] = value
-    meta = data.setdefault("_sources", {}) if isinstance(data.get("_sources"), dict) else {}
     data["_sources"] = {**data.get("_sources", {}), name: source}
     FACTS_PATH.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -125,6 +124,12 @@ class GateResult:
     deadline: datetime
     reason: str
     on_red: str = ""
+    evidence: str = ""
+    # Un gate rosso il cui `on_red` è stato davvero applicato e registrato è *risolto*,
+    # non abbandonato. Resta ROSSO — non si falsifica il colore — ma il piano ha
+    # previsto quel rosso e la contromossa è stata eseguita. Senza questa distinzione
+    # l'unico modo di "chiudere" un rosso previsto sarebbe mentire sul suo stato.
+    on_red_applied: bool = False
 
 
 def _check_file(gate) -> tuple[bool, str]:
@@ -139,43 +144,61 @@ def _check_file(gate) -> tuple[bool, str]:
     return True, f"{gate.path} verificato (nessun placeholder residuo)" if gate.must_not_contain else f"{gate.path} OK"
 
 
+def _evidence_text(gate) -> str:
+    """L'evidenza è puramente informativa: non entra MAI nel calcolo dello stato.
+    Se il suo calcolo fallisce, il gate deve restare leggibile — perciò qui non si
+    propaga nessuna eccezione."""
+    spec = getattr(gate, "evidence", None)
+    if not spec:
+        return ""
+    try:
+        ev = _evidence.compute(spec)
+    except Exception as e:  # una sorgente malformata non deve oscurare i gate
+        return f"evidenza non calcolabile: {e}"
+    return ev.render() if ev else ""
+
+
 def evaluate(gate, *, now: datetime | None = None, facts: dict | None = None,
-             human_confirmed: bool = False) -> GateResult:
+             human_confirmed: bool = False, on_red_applied: bool = False) -> GateResult:
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None:
         now = now.astimezone()
     facts = facts if facts is not None else load_facts()
     past_deadline = now >= gate.deadline
+    ev = _evidence_text(gate)
+
+    def result(status: Status, reason: str) -> GateResult:
+        return GateResult(gate.id, status, gate.deadline, reason, gate.on_red,
+                          evidence=ev, on_red_applied=on_red_applied and status == "RED")
 
     if gate.type == "human":
         if human_confirmed:
-            return GateResult(gate.id, "GREEN", gate.deadline, "confermato manualmente", gate.on_red)
+            return result("GREEN", "confermato manualmente")
         if past_deadline:
-            return GateResult(gate.id, "RED", gate.deadline,
-                               "deadline scaduta senza conferma umana esplicita", gate.on_red)
-        return GateResult(gate.id, "PENDING", gate.deadline, "in attesa di conferma umana", gate.on_red)
+            return result("RED", "deadline scaduta senza conferma umana esplicita")
+        return result("PENDING", "in attesa di conferma umana")
 
     if gate.type == "file":
         ok, reason = _check_file(gate)
         if ok:
-            return GateResult(gate.id, "GREEN", gate.deadline, reason, gate.on_red)
-        if past_deadline:
-            return GateResult(gate.id, "RED", gate.deadline, reason, gate.on_red)
-        return GateResult(gate.id, "PENDING", gate.deadline, reason, gate.on_red)
+            return result("GREEN", reason)
+        return result("RED" if past_deadline else "PENDING", reason)
 
     if gate.type == "metric":
         ok = eval_expression(gate.green_if, facts) if gate.green_if else False
         if ok:
-            return GateResult(gate.id, "GREEN", gate.deadline, f"{gate.green_if} -> vero", gate.on_red)
+            return result("GREEN", f"{gate.green_if} -> vero")
         if past_deadline:
-            return GateResult(gate.id, "RED", gate.deadline,
-                               f"{gate.green_if} -> falso alla scadenza", gate.on_red)
-        return GateResult(gate.id, "PENDING", gate.deadline, f"{gate.green_if} non ancora vero", gate.on_red)
+            return result("RED", f"{gate.green_if} -> falso alla scadenza")
+        return result("PENDING", f"{gate.green_if} non ancora vero")
 
-    return GateResult(gate.id, "PENDING", gate.deadline, f"tipo gate non gestito: {gate.type}", gate.on_red)
+    return result("PENDING", f"tipo gate non gestito: {gate.type}")
 
 
 def evaluate_all(gates, *, now: datetime | None = None, facts: dict | None = None,
-                  confirmed_ids: frozenset[str] = frozenset()) -> list[GateResult]:
+                  confirmed_ids: frozenset[str] = frozenset(),
+                  on_red_applied_ids: frozenset[str] = frozenset()) -> list[GateResult]:
     facts = facts if facts is not None else load_facts()
-    return [evaluate(g, now=now, facts=facts, human_confirmed=g.id in confirmed_ids) for g in gates]
+    return [evaluate(g, now=now, facts=facts,
+                     human_confirmed=g.id in confirmed_ids,
+                     on_red_applied=g.id in on_red_applied_ids) for g in gates]

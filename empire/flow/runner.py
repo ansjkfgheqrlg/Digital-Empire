@@ -10,6 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import dag as _dag
+from . import decisions as _decisions
 from . import gate as _gate
 from . import spec as _spec
 from . import state as _state
@@ -18,6 +19,7 @@ from ..paths import repo_root, rel
 __all__ = [
     "validate", "gates_table", "evaluate_gate", "confirm_gate",
     "start_step", "done_step", "step_status", "next_unlocked", "late_steps",
+    "apply_decisions", "register_veto", "mark_on_red_applied",
 ]
 
 
@@ -46,11 +48,59 @@ def _confirmed_gate_ids() -> frozenset[str]:
     return frozenset(confirmed)
 
 
-def gates_table(workflow_root=None, *, now: datetime | None = None) -> list[_gate.GateResult]:
+def _on_red_applied_ids() -> frozenset[str]:
+    applied = set()
+    if _state.STATE_DIR.exists():
+        for f in _state.STATE_DIR.glob("onred_*.json"):
+            gate_id = f.stem[len("onred_"):]
+            if _state.is_done(f"onred_{gate_id}"):
+                applied.add(gate_id)
+    return frozenset(applied)
+
+
+def gates_table(workflow_root=None, *, now: datetime | None = None,
+                apply_decisions_first: bool = True) -> list[_gate.GateResult]:
+    """Valuta i 6 gate.
+
+    Prima di valutare applica le decisioni a default-più-veto (ADR-EST-006): senza questo
+    passaggio Gate-DEC resterebbe rosso non perché la decisione manchi, ma perché nessuno
+    ha scritto il fatto che la registra. È esattamente il caso trovato il 23/07.
+    """
     s = _spec.load_spec(workflow_root)
+    if apply_decisions_first:
+        _decisions.apply_all(s.decisions, now=now)
     facts = _gate.load_facts()
-    confirmed = _confirmed_gate_ids()
-    return _gate.evaluate_all(s.gates, now=now, facts=facts, confirmed_ids=confirmed)
+    return _gate.evaluate_all(s.gates, now=now, facts=facts,
+                              confirmed_ids=_confirmed_gate_ids(),
+                              on_red_applied_ids=_on_red_applied_ids())
+
+
+def apply_decisions(workflow_root=None, *, now: datetime | None = None,
+                    write: bool = True) -> list:
+    s = _spec.load_spec(workflow_root)
+    return _decisions.apply_all(s.decisions, now=now, write=write)
+
+
+def register_veto(decision_id: str, *, actor: str, reason: str) -> tuple[bool, str]:
+    return _decisions.register_veto(decision_id, actor=actor, reason=reason)
+
+
+def mark_on_red_applied(gate_id: str, *, actor: str, evidence: str) -> tuple[bool, str]:
+    """Registra che la contromossa `on_red` di un gate rosso è stata davvero eseguita.
+
+    NON rende verde il gate: il colore continua a dire la verità sul mondo. Serve a
+    distinguere un rosso previsto-e-gestito da un rosso ignorato, che è la differenza
+    fra un piano che regge e un piano abbandonato.
+    """
+    if not evidence.strip():
+        return False, "serve --evidence: senza prova, 'applicato' e' solo una parola"
+    key = f"onred_{gate_id}"
+    if _state.is_done(key):
+        h = _state.history(key)
+        return False, f"gia' registrato il {h[-1].ts}"
+    _state.record(key, to_status="DONE", actor=actor, evidence=evidence,
+                  note=f"on_red applicato per {gate_id}")
+    return True, f"on_red di {gate_id} registrato come applicato"
 
 
 def evaluate_gate(gate_id: str, workflow_root=None, *, now: datetime | None = None) -> _gate.GateResult | None:
