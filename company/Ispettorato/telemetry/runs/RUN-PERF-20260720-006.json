@@ -1,0 +1,29 @@
+{
+  "id": "PERF-20260720-006",
+  "agent": "Gael",
+  "task": "su ordine esplicito di Max (\"fai quelle con build ed esecuzione, trova il modo di farlo\"), sbloccare il limite ambientale che da 3 sessioni impediva qualsiasi verifica a runtime (CP-20260719-004/007, CP-20260720-003: \"ambiente senza Python/Node\").",
+  "workflow": "WF-MASTER",
+  "family": "build-python",
+  "result": "partial",
+  "started": "2026-07-19T22:00:00+02:00",
+  "ended": "2026-07-20T00:00:00+02:00",
+  "ttd_h": 2.0,
+  "debug": {
+    "errori": 6,
+    "retry": 0,
+    "escalation": 0,
+    "fix_applicati": []
+  },
+  "output_ref": [],
+  "verification": {
+    "verificatore": "manual",
+    "first_pass": false,
+    "revisions": 1,
+    "post_consegna": false,
+    "regression": false,
+    "dods_total": 5,
+    "dods_verified": 4
+  },
+  "scorecard": {},
+  "feedback_ids": []
+}

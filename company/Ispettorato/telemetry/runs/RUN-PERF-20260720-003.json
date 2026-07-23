@@ -1,0 +1,29 @@
+{
+  "id": "PERF-20260720-003",
+  "agent": "Gael",
+  "task": "dopo aver chiuso Empire Studio video 10/29 (CP-20260720-002), ho controllato `STATO-EMPIRE.md` come richiesto dalla Regola Zero e scoperto che la priorità attuale assegnata a Gael è EmpireDesk G1 (pivot Aureus), non Empire Studio. G1 risultava già scritto e pushato da una sessione Gael parallela (commit `85548a30`, in background mentre lavoravo su Empire Studio) ma non verificato né segnato nello stato. Ho fatto revisione statica del diff (ambiente ancora senza Python/Node/Chrome, come dichiarato nel commit stesso).",
+  "workflow": "WF-MASTER",
+  "family": "build-python",
+  "result": "success",
+  "started": "2026-07-19T22:00:00+02:00",
+  "ended": "2026-07-20T00:00:00+02:00",
+  "ttd_h": 2.0,
+  "debug": {
+    "errori": 0,
+    "retry": 0,
+    "escalation": 0,
+    "fix_applicati": []
+  },
+  "output_ref": [],
+  "verification": {
+    "verificatore": "manual",
+    "first_pass": true,
+    "revisions": 0,
+    "post_consegna": false,
+    "regression": false,
+    "dods_total": 5,
+    "dods_verified": 5
+  },
+  "scorecard": {},
+  "feedback_ids": []
+}

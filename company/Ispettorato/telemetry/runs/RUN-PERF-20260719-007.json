@@ -1,0 +1,29 @@
+{
+  "id": "PERF-20260719-007",
+  "agent": "Gael",
+  "task": "dopo B0 (fix Caroselli), costruire il seam `EmpireDesk/modules/` che sblocca l'integrazione dei moduli di Max (Half A: metrics/revenue/licenze, già scritti e in attesa) senza che i due half si tocchino mai i file a vicenda (ADR-003 + regola anti-collisione §5.4).",
+  "workflow": "WF-MASTER",
+  "family": "build-python",
+  "result": "partial",
+  "started": "2026-07-18T22:00:00+02:00",
+  "ended": "2026-07-19T00:00:00+02:00",
+  "ttd_h": 2.0,
+  "debug": {
+    "errori": 3,
+    "retry": 0,
+    "escalation": 0,
+    "fix_applicati": []
+  },
+  "output_ref": [],
+  "verification": {
+    "verificatore": "manual",
+    "first_pass": false,
+    "revisions": 1,
+    "post_consegna": false,
+    "regression": false,
+    "dods_total": 5,
+    "dods_verified": 4
+  },
+  "scorecard": {},
+  "feedback_ids": []
+}

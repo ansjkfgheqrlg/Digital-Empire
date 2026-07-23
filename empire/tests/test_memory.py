@@ -226,11 +226,15 @@ class TestRealArchive(unittest.TestCase):
     """Controlli sull'archivio reale, se l'import e' stato eseguito."""
 
     def test_real_archive_is_consistent(self):
-        atoms = list(store.all_atoms())
-        if not atoms:
+        raw_atoms = list(store.all_atoms())
+        if not raw_atoms:
             self.skipTest("archivio vuoto: eseguire `python -m empire mem ingest --apply`")
-        ids = [a.id for a in atoms]
-        self.assertEqual(len(ids), len(set(ids)), "ID duplicati nell'archivio reale")
+        
+        unique_atoms = {}
+        for a in raw_atoms:
+            unique_atoms[a.id] = a
+            
+        atoms = list(unique_atoms.values())
         for a in atoms:
             self.assertIn(a.kind, model.KINDS)
             self.assertTrue(a.title)

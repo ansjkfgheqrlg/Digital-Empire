@@ -1,12 +1,12 @@
 # ⚡ WF-PERF-LOOP — il micro-ecosistema di performance (ciclo confermato)
 > Richiesta Max (21/07): **ogni azione del workflow, ogni singola volta**, viene analizzata (debug + soluzione + struttura + modifiche), salvata in uno spazio dedicato della memoria, studiata da agenti specifici che emettono **micro-input** verso gli altri agenti — e il miglioramento deve essere **confermato**, non auspicato.
-> Posizione: gira DOPO ogni azione, trasversale a tutti i WF (S1..S6, MEM-*, MASTER). Sponsor: TRUTH-CMD · Esecuzione: Performance Cell (`04-AGENTS/PERFORMANCE-CELL.md`).
+> Posizione: gira DOPO ogni azione, trasversale a tutti i WF (S1..S6, MEM-*, MASTER). Sponsor: TRUTH-CMD · Esecuzione: Performance Cell (`empire/inspect/`).
 
 ## 1. IL CICLO (T0 → T5, chiuso e confermato)
 
 ```
 T0 AZIONE CHIUSA ──(post-task hook del router)──►
-T1 CAPTURE    perf-collector scrive PERF record in 00-MEMORY/performances/
+T1 CAPTURE    perf-collector scrive PERF record in company/Ispettorato/telemetry/runs/
               ⚠️ scrittura diretta su file: NON consuma la quota 30 msg/giorno
       │
 T2  ANALYZE   perf-analyst legge il record ENTRO L'EOD e compila la scorecard 5D:
@@ -31,7 +31,7 @@ T5  CONFIRM   alla PROSSIMA performance della stessa famiglia-task dell'agente:
 
 **Il punto chiave ("ciclico confermato")**: un miglioramento ESISTE solo quando T5 lo conferma. Un TIP senza conferma alla performance successiva non è un miglioramento: è un suggerimento. Il loop tiene i conti.
 
-## 2. LO SCHEMA — Performance Record (`00-MEMORY/performances/PERF-NNN-*.md`)
+## 2. LO SCHEMA — Performance Record (`company/Ispettorato/telemetry/runs/RUN-PERF-*.json` / memoria)
 
 ```yaml
 agente / task / wf / esito (success|partial|failed)
@@ -43,9 +43,9 @@ scorecard 5D: correctness·solution·structure·scope-fit·efficiency (1-5) + ga
 feedback_collegati: [FB-ids]   # chiusura loop T5: confirmed | recurred
 ```
 
-Comando: `python3 00-MEMORY/memory_manager.py perf --agent <id> --task <id> --wf <WF> --result success --ttd 2.5 --firstpass 1 --verifier funnel-verifier --debug "..." --note "..."`
+Comando: `python -m empire inspect capture --agent <id> --task <id> --wf <WF> --family <f> --result success --started <iso> --ended <iso>`
 
-## 3. LO SCHEMA — Feedback Record (`00-MEMORY/feedback/FB-NNN-*.md`)
+## 3. LO SCHEMA — Feedback Record (in memoria centrale, kind feedback)
 
 ```yaml
 tipo: TIP | RULE-NOTE | MUTATION-PROP
@@ -56,7 +56,7 @@ su_performance: PERF-id
 status: open → acked (obbligatorio) → confirmed | recurred
 ```
 
-Comando: `python3 00-MEMORY/memory_manager.py feedback --agent <dest> --ftype TIP --note "..." --perf PERF-NNN`
+Comando: `python -m empire inspect dispatch`
 
 ## 4. REGOLE DI CONVIVENZA (con l'ecosistema v4)
 1. **P-LOOP non è un verificatore**: non blocca nulla, non ha gate. Analizza DOPO, non giudica PRIMA. (Casta distinta dai verificatori — che approvano l'output; il loop migliora l'attore.)
@@ -75,4 +75,4 @@ Comando: `python3 00-MEMORY/memory_manager.py feedback --agent <dest> --ftype TI
 - Validazione: ogni domenica al COUNCIL — tabella "TIP confermati vs ricorsi" = il vero termometro del miglioramento ciclico.
 
 ---
-⛓️ Trace P12: `WF-PERF-LOOP#estate-2026` · input: direttiva Max 21/07 · aggancia: v4-MASTER §7 (punto 8) · agenti: 04-AGENTS/PERFORMANCE-CELL.md · storage: 00-MEMORY/performances + feedback
+⛓️ Trace P12: `WF-PERF-LOOP#estate-2026` · input: direttiva Max 21/07 · aggancia: v4-MASTER §7 (punto 8) · agenti: empire/inspect/ · storage: company/Ispettorato/telemetry + memory

@@ -1,0 +1,29 @@
+{
+  "id": "PERF-20260721-006",
+  "agent": "Gael",
+  "task": "su richiesta di Gael (\"controlla che Max abbia aggiornato le task\", poi \"fai tutto quello che devo fare, in ordine, con massima precisione\"): verificare che lo stato riportato in `STATO-EMPIRE.md` (selftest 16/16, exe funzionante, 7 moduli) sia VERO, non solo dichiarato — e testare a fondo il modulo `youtube.py`, nuovo da questa sessione, mai verificato da me prima.",
+  "workflow": "WF-MASTER",
+  "family": "build-python",
+  "result": "success",
+  "started": "2026-07-20T22:00:00+02:00",
+  "ended": "2026-07-21T00:00:00+02:00",
+  "ttd_h": 2.0,
+  "debug": {
+    "errori": 6,
+    "retry": 0,
+    "escalation": 0,
+    "fix_applicati": []
+  },
+  "output_ref": [],
+  "verification": {
+    "verificatore": "manual",
+    "first_pass": true,
+    "revisions": 0,
+    "post_consegna": false,
+    "regression": false,
+    "dods_total": 5,
+    "dods_verified": 5
+  },
+  "scorecard": {},
+  "feedback_ids": []
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Come Installare Claude Code in 5 Minuti (Tutorial Passo-Passo ITA)",
+  "keyword": "installare Claude Code",
+  "description": "Vuoi smettere di fare copia e incolla del codice e usare Claude direttamente nel tuo terminale? In questo video vediamo come installare Claude Code passo-passo, configurarlo bene dal primo minuto, in 5 minuti reali, senza rompere niente sul tuo computer.\n\n🔥 SCARICA IL MANUALE DI CLAUDE CODE IN ITALIANO (gratis):\n👉 https://digitalempire.it/manuale-claude\n(La guida pratica per configurare comandi veloci e non sprecare crediti API)\n\n---\n🤖 RISORSE MENZIONATE NEL VIDEO:\n- Installazione ufficiale Node.js (richiesta per Claude Code): [LINK]\n- Comando di installazione usato nel video: npm install -g @anthropic-ai/claude-code\n\n---\n⏱️ CAPITOLI:\n0:00 Hook - 5 minuti reali\n0:20 Cosa vediamo oggi\n0:55 Prerequisiti (Node.js)\n1:40 Installazione\n2:30 Primo avvio e login\n3:10 L'errore più comune (e come evitarlo)\n4:30 Verifica che funzioni davvero\n5:30 Come non sprecare crediti API\n\n---\n💡 Iscriviti per non perdere i prossimi tutorial pratici su Claude Code in italiano.\n\n⚠️ I comandi mostrati modificano file locali sul tuo computer: testali sempre in una repository Git pulita per poter fare rollback in caso di errore. Il link al Manuale è un nostro prodotto.",
+  "tags": [
+    "installare claude code",
+    "come usare claude code",
+    "claude code terminale",
+    "claude code tutorial italiano",
+    "claude code mac",
+    "claude code windows",
+    "configurare claude code",
+    "anthropic claude italia",
+    "claude ai italiano",
+    "npm install claude code"
+  ],
+  "thumbnail": true,
+  "subtitles": true
+}

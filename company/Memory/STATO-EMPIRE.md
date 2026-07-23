@@ -1,4 +1,19 @@
-# STATO EMPIRE -- aggiornato 2026-07-23 (Gael: G-A1/G-A2/G-C1 dossier 25)
+# STATO EMPIRE -- aggiornato 2026-07-23 (Gael: G-A1/A2/A3 chiusi, dossier 25)
+
+## ✅ 2026-07-23 — GAEL: G-A3 follow-up automatico + tracking chiuso — CP-20260723-004
+`Outreach/Outreach Workflow/campagne/concessionari-preventa/stato_e_followup.py`: DB stato lead
+CSV, `--followup-oggi` calcola G+2→msg2/G+5→msg3 e genera un report, 0 invii (gated a G-A4).
+Testato su 5 lead finti con contatti simulati: gate PASS, idempotente. **G-A completa (A1+A2+A3)
+salvo l'invio reale (G-A4, gated M-EST-6/7/9).** Nota: siamo tornati a "GAEL" come blocco più
+recente perché nel frattempo (CP-20260723-003) un'altra sessione ha riscritto `03b-preventa.tsx`
+togliendo claim falsi (permuta/finanziamento automatici — il motore reale non li ha) e costruito
+`09b-prove-novacar.tsx` con numeri verificati; vedi quel blocco per il dettaglio.
+
+**RIPRESA DA:** G-B1 (primo run pipeline YouTube — dati niche-scout Gemini già pronti in
+`WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/`). Registrazione ADR-008
+degli artefatti G-A/G-C ancora da fare in `REGISTRO-IMPRESA.md`/`skills-map.yaml`.
+
+---
 
 ## ✅ 2026-07-23 — GAEL: G-A1+G-A2 (outreach concessionari) + G-C1 (sito Preventa) — CP-20260723-002
 **Fatto (dossier 25):** scraper `preventa-maps-scraper` lanciato (pilota Milano/Bergamo/Brescia,

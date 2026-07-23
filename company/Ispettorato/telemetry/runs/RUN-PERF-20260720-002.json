@@ -1,0 +1,29 @@
+{
+  "id": "PERF-20260720-002",
+  "agent": "Gael",
+  "task": "continuare il run di ingestione YouTube di Andrei Pascu lasciato a metà da Max: video 10/29 (`Ahp_6rHSOsU`, \"Usa Google Docs come un copywriter PRO\") aveva Stage 1+2 già fatti (ingest + 334 frame estratti) ma Stage 3-9 mancanti. Completato l'intero ciclo pipeline (Gael, su richiesta esplicita \"procedi\").",
+  "workflow": "WF-MASTER",
+  "family": "default",
+  "result": "success",
+  "started": "2026-07-19T22:00:00+02:00",
+  "ended": "2026-07-20T00:00:00+02:00",
+  "ttd_h": 2.0,
+  "debug": {
+    "errori": 0,
+    "retry": 0,
+    "escalation": 0,
+    "fix_applicati": []
+  },
+  "output_ref": [],
+  "verification": {
+    "verificatore": "manual",
+    "first_pass": true,
+    "revisions": 0,
+    "post_consegna": false,
+    "regression": false,
+    "dods_total": 5,
+    "dods_verified": 5
+  },
+  "scorecard": {},
+  "feedback_ids": []
+}

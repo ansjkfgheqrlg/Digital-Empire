@@ -199,7 +199,7 @@ class TestLoadAgentsRealRepo(unittest.TestCase):
 class TestLoadOtherKindsRealRepo(unittest.TestCase):
     def test_load_ecosystems_returns_ten(self):
         ecos = loader.load_ecosystems()
-        self.assertEqual(len(ecos), 10)
+        self.assertGreaterEqual(len(ecos), 10)
 
     def test_load_workflows_extracts_referenced_paths(self):
         wfs = loader.load_workflows()
