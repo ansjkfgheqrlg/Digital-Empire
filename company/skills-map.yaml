@@ -598,7 +598,17 @@ nuovi_2026_07:
     stato: active
     note: "Kit di lancio e rebranding per Preventa (ex PreventivoForge): copy landing, domini, palette, brochure."
 
+  - id: youtube-niche-scout-analysis
+    nome: YouTube Niche Scout Analysis (AI & Claude ITA)
+    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: YouTube
+    tipo: knowledge
+    stato: active
+    note: "Data-pack contenente mappatura di 20 canali competitor, pattern vincenti, 20 idee video con CTA e template descrizioni SEO per alimentare la skill youtube-automation-factory."
+
 # ============================================================
+
 # ASSET NON ANCORA CLASSIFICATI (da verificare con Max)
 # ============================================================
 

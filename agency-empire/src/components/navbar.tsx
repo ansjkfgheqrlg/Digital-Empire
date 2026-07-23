@@ -6,9 +6,11 @@ import { Menu, X, ArrowRight } from "lucide-react";
 
 const NAV_ITEMS = [
   { href: "#servizi", label: "Servizi" },
+  { href: "#preventa", label: "Preventa" },
   { href: "#metodo", label: "Metodo" },
   { href: "#processo", label: "Processo" },
   { href: "#lavori", label: "Lavori" },
+  { href: "#prove", label: "Prove" },
   { href: "#faq", label: "FAQ" },
 ];
 
@@ -56,7 +58,7 @@ export function Navbar() {
               <li key={it.href}>
                 <a
                   href={it.href}
-                  className="px-3.5 py-2 text-[0.875rem] font-medium rounded-lg text-[#062155]/75 hover:text-[#062155] hover:bg-[#062155]/8 transition-colors"
+                  className="px-2.5 xl:px-3.5 py-2 text-[0.875rem] font-medium rounded-lg text-[#062155]/75 hover:text-[#062155] hover:bg-[#062155]/8 transition-colors"
                 >
                   {it.label}
                 </a>

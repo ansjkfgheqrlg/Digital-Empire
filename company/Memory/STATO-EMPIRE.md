@@ -1,3 +1,29 @@
+# STATO EMPIRE -- aggiornato 2026-07-23 (Gael: G-A1/G-A2/G-C1 dossier 25)
+
+## ✅ 2026-07-23 — GAEL: G-A1+G-A2 (outreach concessionari) + G-C1 (sito Preventa) — CP-20260723-002
+**Fatto (dossier 25):** scraper `preventa-maps-scraper` lanciato (pilota Milano/Bergamo/Brescia,
+province ufficiali M-EST-9 ancora da Max) → **61 lead unici, gate PASS**. Nuova campagna
+`Outreach/Outreach Workflow/campagne/concessionari-preventa/` (wrap, `empire_auto_v3.py` non
+toccato) genera WhatsApp/Email personalizzati con gancio corretto — dry-run 5 finti + run reale
+22 lead ALTA, **0 invii** (l'invio è G-A4, gated). Bug trovato testando su dati veri (gancio
+sbagliato per "sito vecchio/scarso") e corretto. `agency-empire/src/sections/03b-preventa.tsx`
++ import in `page.tsx`, `npm run build` verde.
+
+**Trovato già fatto in parallelo (non da me, verificato e non ricostruito):** G-C2 sezione PROVE
+Novacar (`09b-prove-novacar.tsx`, già in `page.tsx`) + pacchetto niche-scout YouTube da Gemini
+(`WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/`, pronto per G-B1) + S7 NFT
+bot già consegnato da Gemini (`company/Ecosistemi/08-STREAM-S7-BOT/`, commit `b8404b18`).
+Build finale verificata verde con Preventa+PROVE insieme.
+
+**Non ancora fatto:** registrazione ADR-008 dei nuovi artefatti in `REGISTRO-IMPRESA.md`/
+`skills-map.yaml` (rimandato per evitare doppia scrittura su file appena toccati da un'altra
+sessione — coordinarsi prima).
+
+**RIPRESA DA:** G-A3 (follow-up automatico G+2/G+5 + tracking) o G-B1 (primo run YouTube, dati
+niche-scout già pronti). G-A4 (invio reale) resta gated da M-EST-6/7/9 di Max.
+
+---
+
 # STATO EMPIRE -- aggiornato 2026-07-23 (REVENUE ESTATE V2 diversificato — Claude)
 
 ## 💰 2026-07-23 — PIANO ESTATE V2 DIVERSIFICATO (Claude/Max) → dossier 22

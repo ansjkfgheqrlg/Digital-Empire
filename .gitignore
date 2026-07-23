@@ -38,6 +38,9 @@ session_data/
 # --- DATI OPERATIVI LOCALI CON PII (lead DB: per-macchina, non si sincronizza) ---
 Outreach/**/*.db
 Outreach/**/*.sqlite*
+Outreach/**/data/leads_*.csv
+Outreach/**/output_*.json
+WORKFLOW-ESTATE/**/lead.csv
 
 # --- BUILD / DIPENDENZE ---
 node_modules/

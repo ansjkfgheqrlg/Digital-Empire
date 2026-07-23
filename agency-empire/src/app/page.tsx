@@ -5,6 +5,7 @@ import { StickyCTA } from "@/components/sticky-cta";
 import { Hero } from "@/sections/01-hero";
 import { Stats } from "@/sections/02-stats";
 import { Servizi } from "@/sections/03-servizi";
+import { Preventa } from "@/sections/03b-preventa";
 import { Problema } from "@/sections/04-problema";
 import { DiagnosiCRO } from "@/sections/05-diagnosi-cro";
 import { AscoltaBene } from "@/sections/05b-ascolta-bene";
@@ -13,6 +14,7 @@ import { FunnelViz } from "@/sections/07-funnel-viz";
 import { Processo } from "@/sections/08-processo";
 import { Stack } from "@/sections/17-stack";
 import { Portfolio } from "@/sections/09-portfolio";
+import { ProveNovacar } from "@/sections/09b-prove-novacar";
 import { ChiSiamo } from "@/sections/16-chi-siamo";
 import { PerChi } from "@/sections/10-per-chi";
 import { Testimonial } from "@/sections/11-testimonial";
@@ -37,6 +39,9 @@ export default function HomePage() {
         <Divider />
         <Servizi />
 
+        <Preventa />
+        <Divider />
+
         <Problema />
         <Divider />
 
@@ -59,6 +64,9 @@ export default function HomePage() {
         <Divider />
 
         <Portfolio />
+        <Divider />
+
+        <ProveNovacar />
         <Divider />
 
         <ChiSiamo />

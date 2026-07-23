@@ -47,6 +47,8 @@
 | **preventa-maps-scraper** (Playwright Maps Scraper + Sheets) | 01-AGENCY / A2-Acquisizione | A2-QA (ag-a2-qa) | build Arena (19-ARENA-BUILD-LIST) | Art.2 + PII Art.7.2 · ADR-008 |
 | **preventa-outreach-pack** (script freddo APSOC concessionari) | 01-AGENCY / A5-Copywriting + S1/S6 | A5-QA (ag-a5-qa) | build Arena (19-ARENA-BUILD-LIST) | Art.2 · ADR-008 |
 | **preventa-launch-kit** (Naming + kit lancio B2B concessionari) | 01-AGENCY / A5-Copywriting + S1/S6 | A5-QA (ag-a5-qa) | build Arena (19-ARENA-BUILD-LIST) | Art.2 · ADR-008 |
+| **youtube-niche-scout-analysis** (Data-pack canali, pattern, idee e SEO) | 03-CONTENT-FACTORY + 04-MARKETING | checklist_APSOC + niche-gate | build AI/Claude ITA (19-ARENA-BUILD-LIST) | Art.2 + Art.8 · ADR-008 |
+
 
 ## 4. CANALI & PAGINE (dossier 16)
 
