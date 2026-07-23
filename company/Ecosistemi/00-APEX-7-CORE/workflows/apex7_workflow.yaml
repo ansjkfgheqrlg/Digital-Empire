@@ -1,0 +1,104 @@
+workflow: "apex7_prompt_generation"
+version: "7.0-APEX"
+trigger: "user_input"
+description: "Dynamic workflow engine RuFLO-compatible per esecuzione swarm"
+
+orchestrator: "ruflo_core"
+memory: "5-layer-ecosystem"
+
+stages:
+  STAGE_1_INTAKE:
+    agent: "planner"
+    actions:
+      - parse_user_input
+      - check_memory_for_similar_requests
+      - decompose_into_subtasks
+      - assign_priority_scores
+      - detect_intent_skill_forge_carousel_outreach
+    output: "Task Graph + Priority Queue"
+    route: "STAGE_2"
+    checkpoint: true
+
+  STAGE_2_PARALLEL_EXECUTION:
+    agents: ["writer", "analyst"]
+    mode: "parallel"
+    actions:
+      writer:
+        - generate_content_prompt_output
+        - apply_stream_specific_template
+      analyst:
+        - research_context
+        - find_patterns_in_memory_L3
+        - extract_entities
+        - score_complexity
+    output: "Draft + Context Analysis"
+    route: "STAGE_3"
+    event_bus: "task_completed -> notify critics"
+    parallel_execution: true
+
+  STAGE_3_CRITIQUE:
+    agent: "critic"
+    actions:
+      - score_on_5_dimensions
+      - identify_weaknesses
+      - compare_with_best_practices_in_memory
+      - generate_quality_report
+    output: "Score + Critique Report"
+    scoring_matrix:
+      Completezza: { weight: 0.25, threshold: 8, metric: Coverage }
+      Precisione: { weight: 0.25, threshold: 8, metric: Accuracy }
+      Creatività: { weight: 0.20, threshold: 7, metric: Novelty }
+      Actionability: { weight: 0.20, threshold: 8, metric: Usable }
+      Coerenza: { weight: 0.10, threshold: 9, metric: Logic }
+    routing:
+      if_score_gte_7_5: "STAGE_5_OUTPUT"
+      if_score_lt_7_5: "STAGE_4_REFINEMENT"
+      if_score_lt_4_0: "STAGE_1_INTAKE_RESTART"
+
+  STAGE_4_REFINEMENT:
+    agent: "refiner"
+    loop_max: 3
+    actions:
+      - apply_critique_feedback
+      - enhance_weak_dimensions
+      - cross_reference_with_strategy_store
+      - remove_todo_placeholders
+    output: "Refined Draft"
+    route: "STAGE_3_RE_CRITIQUE"
+    checkpoint: true
+
+  STAGE_5_OUTPUT_MEMORY_SAVE:
+    agent: "meta"
+    actions:
+      - final_quality_check
+      - save_to_all_memory_layers
+      - update_strategy_scores
+      - snapshot_architecture_state
+      - compress_memories_if_needed
+      - present_to_user
+    output: "Final Output + Memory Updated"
+    metrics:
+      - quality_score
+      - patterns_detected
+      - next_actions
+
+self_evolution_loop: "Execute -> Measure -> Analyze -> Adapt -> Save -> Loop"
+
+meta_agent_rules:
+  - "Se 2+ agenti producono output conflittuale → Escalation"
+  - "Se pattern vincente rilevato → Salva in Strategy Store"
+  - "Se quality score < 7 per 3 iterazioni → Cambia strategia"
+  - "Se tempo di esecuzione > soglia → Parallelizza di più"
+
+rollback_policy:
+  enabled: true
+  checkpoints: ["INTAKE", "PARALLEL_EXECUTION", "CRITIQUE", "REFINEMENT", "OUTPUT"]
+  max_checkpoints: 10
+  auto_rollback_on_failure: true
+
+memory_integration:
+  L1_working_memory: "Context attuale, variabili temporanee, stato agenti"
+  L2_decision_log: "Ogni scelta con what, why, alternatives, confidence"
+  L3_strategy_store: "Pattern vincenti con success_rate"
+  L4_architecture_snapshots: "Versioni con diff"
+  L5_compressed_knowledge: "Lessons learned, best practices, anti-patterns"

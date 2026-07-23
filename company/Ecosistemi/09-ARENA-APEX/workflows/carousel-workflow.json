@@ -1,0 +1,88 @@
+{
+  "workflow_id": "carousel-engine",
+  "name": "Carousel Engine Pipeline",
+  "version": "2.0",
+  "stream": "S1-B",
+  "trigger": "user_provides_carousel_brief",
+  "description": "Genera carosello Instagram completo con stile glassmorphism premium",
+
+  "stages": [
+    {
+      "id": "stage-1-brief",
+      "name": "Carousel Brief",
+      "agent": "planner",
+      "actions": [
+        "Parse user input: topic, target audience, key message, CTA",
+        "Determine slide count (default 10)",
+        "Map content to slide structure: Hook → Problem → Solution → Proof → CTA",
+        "Write exact text for each slide"
+      ],
+      "output": "carousel_brief",
+      "next": "stage-2-generation"
+    },
+    {
+      "id": "stage-2-generation",
+      "name": "Slide Generation (Parallel)",
+      "agent": "writer",
+      "input": "carousel_brief",
+      "prompt_template": "prompts/carousel-engine-v2.md",
+      "parallel": true,
+      "actions": [
+        "For each slide, load prompt template",
+        "Inject slide-specific text and type (hook/problem/solution/proof/cta)",
+        "Generate image via image generation tool",
+        "Apply style consistency rules from memory (palette, glassmorphism params)"
+      ],
+      "output": "slide_images[]",
+      "next": "stage-3-review"
+    },
+    {
+      "id": "stage-3-review",
+      "name": "Visual Quality Review",
+      "agent": "critic",
+      "input": "slide_images[]",
+      "actions": [
+        "Review each slide against quality criteria",
+        "Check text legibility, style consistency, visual impact",
+        "Verify carousel flow (does slide sequence tell a story?)",
+        "Score each slide and calculate average"
+      ],
+      "output": "review_report",
+      "routing": {
+        "avg_score >= 7.5": "stage-4-output",
+        "avg_score < 7.5": "stage-3b-regenerate"
+      }
+    },
+    {
+      "id": "stage-3b-regenerate",
+      "name": "Regenerate Weak Slides",
+      "agent": "refiner",
+      "input": ["slide_images[]", "review_report"],
+      "actions": [
+        "Identify slides scoring below threshold",
+        "Regenerate only those slides with enhanced prompts",
+        "Preserve good slides (don't regenerate what works)"
+      ],
+      "output": "updated_slides[]",
+      "next": "stage-3-review",
+      "max_iterations": 2
+    },
+    {
+      "id": "stage-4-output",
+      "name": "Output + Memory Save",
+      "agent": "meta",
+      "input": "slide_images[]",
+      "actions": [
+        "Save all slide images to output/carousel-[timestamp]/",
+        "Save carousel brief to output/carousel-[timestamp]/brief.md",
+        "Update memory with generation metadata",
+        "Present to user"
+      ],
+      "output": "carousel_package",
+      "memory_writes": [
+        "memory/decisions/log.json → append generation decision",
+        "memory/strategies/store.json → update glassmorphism strategy times_used"
+      ]
+    }
+  ]
+}

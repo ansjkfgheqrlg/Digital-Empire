@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Piramide Evolutiva",
+    "description": "Ogni livello è il migliore del precedente",
+    "use_cases": [
+      "planning",
+      "architecture"
+    ],
+    "parameters": {
+      "levels": 7
+    },
+    "times_used": 3,
+    "last_used": "2026-07-23T07:58:13.148226",
+    "success_rate": 8.5,
+    "score_history": [
+      8.5,
+      8.5,
+      8.5
+    ]
+  },
+  {
+    "name": "Critique-Before-Output",
+    "description": "Auto-critica prima di rilasciare output",
+    "use_cases": [
+      "quality_control",
+      "all_outputs"
+    ],
+    "parameters": {},
+    "times_used": 3,
+    "last_used": "2026-07-23T07:58:13.148434",
+    "success_rate": 9.0,
+    "score_history": [
+      9.0,
+      9.0,
+      9.0
+    ]
+  },
+  {
+    "name": "Memory-First Design",
+    "description": "Ogni azione memorizzata con contesto",
+    "use_cases": [
+      "system_design",
+      "persistence"
+    ],
+    "parameters": {},
+    "times_used": 3,
+    "last_used": "2026-07-23T07:58:13.148637",
+    "success_rate": 8.8,
+    "score_history": [
+      8.8,
+      8.8,
+      8.8
+    ]
+  }
+]

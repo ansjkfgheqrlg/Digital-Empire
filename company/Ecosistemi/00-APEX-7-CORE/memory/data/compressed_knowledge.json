@@ -1,0 +1,30 @@
+{
+  "lessons_learned": [
+    "Mai rispondere in modo reattivo senza proporre struttura",
+    "La memoria è il fondamento di ogni sistema intelligente",
+    "Multi-agente > singolo agente per task complessi",
+    "Autocritica deve essere sistematica, non opzionale",
+    "Session fd1f3b31-12eb-465a-8f67-fe2e25e4dd52 completed with score 6.85"
+  ],
+  "best_practices": [
+    "Planning a livelli con evoluzione progressiva",
+    "Feedback loop obbligatorio su ogni output",
+    "Salvare il PERCHÉ delle decisioni, non solo il COSA",
+    "Piramide Evolutiva: Ogni livello è il migliore del precedente",
+    "Critique-Before-Output: Auto-critica prima di rilasciare output",
+    "Memory-First Design: Ogni azione memorizzata con contesto"
+  ],
+  "anti_patterns": [
+    "Risposta piatta senza architettura",
+    "Chiedere input senza offrire valore",
+    "Output senza auto-valutazione"
+  ],
+  "policies": [
+    "POLICY: Decomposed intent=carousel-machine into 6 tasks (ripetuta 7 volte) -> standardizza",
+    "POLICY: Generated content for intent=carousel-machine mode= (ripetuta 7 volte) -> standardizza"
+  ],
+  "knowledge_graph": {
+    "nodes": [],
+    "edges": []
+  }
+}

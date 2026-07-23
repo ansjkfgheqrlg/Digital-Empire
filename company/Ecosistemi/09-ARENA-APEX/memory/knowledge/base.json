@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "lessons_learned": [
+    "Mai rispondere in modo reattivo senza proporre struttura concreta",
+    "L'architettura teorica senza codice eseguibile = valore zero per l'utente",
+    "RuFLO è un orchestrator per Claude Code - non va copiato ma adattato",
+    "Il memory system è il fondamento: senza persistenza, ogni sessione riparte da zero",
+    "L'autocritica deve essere SISTEMICA (incorporata nel workflow), non opzionale",
+    "I prompt migliori hanno: contesto, vincoli, formato output atteso, quality criteria",
+    "Ogni decisione va salvata con il PERCHÉ, non solo il COSA"
+  ],
+  "best_practices": [
+    "Planning a livelli con evoluzione progressiva e verifica a ogni step",
+    "Feedback loop obbligatorio su ogni output (score ≥ 7.5 per passare)",
+    "Salvare decisioni con: cosa, perché, alternative scartate, confidenza",
+    "I prompt devono essere COPY-PASTE EXECUTABLE, non richiedono setup",
+    "Lo stile del brand (Digital Empire) deve essere coerente in OGNI output",
+    "Usare placeholder chiaramente identificabili nei template: [TARGET], [SERVIZIO]"
+  ],
+  "anti_patterns": [
+    "Risposta piatta senza architettura o struttura",
+    "Chiedere input all'utente senza offrire valore prima",
+    "Output senza auto-valutazione o quality check",
+    "ASCII art e diagrammi belli ma non eseguibili",
+    "Copiare concetti da framework (RuFLO) senza adattarli al contesto",
+    "Planning a 7 livelli quando 3 concreti valgono di più",
+    "Hype > sostanza: promettere 'self-evolving' senza meccanismo di evoluzione"
+  ],
+  "policies": [
+    {
+      "name": "Quality Gate",
+      "rule": "Nessun output viene presentato senza score ≥ 7.5/10 sul quality matrix",
+      "enforced_since": "2026-07-23"
+    },
+    {
+      "name": "Memory Write-Through",
+      "rule": "Ogni decisione e ogni output significativo viene scritto nella memoria prima di essere presentato",
+      "enforced_since": "2026-07-23"
+    },
+    {
+      "name": "Pragmatism First",
+      "rule": "Se non è eseguibile nel contesto Arena.ai, non fa parte del sistema",
+      "enforced_since": "2026-07-23"
+    }
+  ]
+}

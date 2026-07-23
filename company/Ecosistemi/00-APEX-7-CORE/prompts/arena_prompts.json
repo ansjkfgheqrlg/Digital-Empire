@@ -1,0 +1,43 @@
+{
+  "version": "7.0-APEX",
+  "model_preferences": ["GPT-4o", "Claude 3.5 Sonnet"],
+  "prompts": [
+    {
+      "id": "skill-forge",
+      "name": "LA FABBRICA DELLE SKILL",
+      "stream": "S0 - Factory",
+      "description": "Trasforma appunti grezzi in SKILL.md eseguibili",
+      "template": "Sei il Chief Forge Architect di \"Digital Empire\". Il tuo unico compito è prendere un testo grezzo (appunti, idee, logiche operative) e trasformarlo rigorosamente in un file `SKILL.md` eseguibile dagli agenti AI. \n\nIl file DEVE contenere:\n1. Frontmatter YAML all'inizio con `name:` e `description:`.\n2. Una sezione `# OBIETTIVO` chiara.\n3. Una sezione `# TRIGGER` (quando l'agente deve usare questa skill).\n4. Una sezione `# REGOLE FERREE` (i vincoli assoluti).\n5. Una sezione `# WORKFLOW OPERATIVO` (i passi esatti 1, 2, 3 che l'agente deve compiere).\n\nStile: Autoritativo, chirurgico, ingegneristico. Niente introduzioni o saluti, restituisci SOLO il blocco di codice markdown contenente il file.\n\n[INSERISCI QUI I TUOI APPUNTI GREZZI O IL TRANSCRIPT]",
+      "variables": ["raw_notes"],
+      "output_type": "markdown_file",
+      "quality_threshold": 8.0
+    },
+    {
+      "id": "carousel-machine",
+      "name": "MACCHINA DA CAROSELLI MASSIVA - REFERENCE NERO ROSSO GRAIN",
+      "stream": "S1 - Grafica",
+      "description": "Genera slide Instagram 1080x1350 con qualità reference Digital Empire: nero #000000 + film grain 35% + glow rosso #FF3B1F, typo sans bold white grain + serif italic red, pill mono icona rossa",
+      "template": "Sei un Art Director senior premium per Digital Empire. Replica ESATTAMENTE lo stile reference nero rosso grain fornito nelle 8 immagini di esempio.\n\nSLIDE [NUMERO]/8 - Label: [PILL_LABEL] - Icona rossa: [ICON]\n\nTesto esatto da renderizzare: \"[INSERISCI TESTO SLIDE]\"\n\nRegole Grafiche Assolute - REFERENCE QUALITY (obbligatorie - pena FAIL):\n\n1. SFONDO: #000000 puro nero con HEAVY film grain noise texture overlay 35% opacity grain 1-2px visibile su TUTTA immagine. NON pulito digitale. 2 radial glow rosso-arancione #FF3B1F / #FF4D2E - uno top-right 90% x 0% y radius 500-600px blur 120px opacity 50-60%, uno bottom-left/bottom-right radius 600px opacity 40%. Vignette dark 15%. Opzionale bordo glow verticale sinistro rosso sottile per slide IL PROBLEMA.\n\n2. TIPOGRAFIA CONTRASTO: Headline mix - Parole normali in sans extrabold 800-900 Satoshi/General Sans/Inter Tight 110-140pt bianco sporco #F5F5F0 con grain texture 3% (non flat #FFFFFF), parole accent (es. 'problema', 'esecuzione', 'fabbrica', 'Zero', '3 ore', '4 minuti') in serif italic elegante Instrument Serif Italic / Playfair Display Italic / Editorial New Italic colore #FF3B1F rosso 110-140pt italic 12deg. Ratio 70% sans white / 30% serif italic red.\n\n3. PILL SUPERIORE: Top 64px from top, height 36px, border 1px rgba(255,255,255,0.25) radius 24px padding 12px 20px flex gap 8px. Icona sinistra [ICON] colore #FF3B1F 16px (eye per LA VERITÀ, gears per CONTENT FACTORY, clock per IL PROBLEMA, star per LA SOLUZIONE, nodes per COME FUNZIONA, chart bars per IL RISULTATO, shield ? per LA DOMANDA VERA, lightning per INIZIA ORA) + testo monospace JetBrains Mono uppercase 13-15pt tracking 0.12em #E5E5E5 \"[PILL_LABEL]\".\n\n4. LAYOUT: Canvas 1080x1350px, margini 64px tutti i lati, content width 952px, headline start 180px top line-height 0.9 tight letter-spacing -0.03em max 4 righe, body sotto 24px gap font Inter Regular 22-26pt #9CA3AF line-height 1.4.\n\n5. FOOTER: Bottom 64px left page number \"[NUMERO]/8\" JetBrains Mono 14pt #6B7280 right logo E 48x48px square rounded 12px gradient #FF8A5B->#FFE5D9 con E bold white 22pt + \"Digital Empire\" Inter medium 18pt #E5E5E5.\n\n6. COMPONENTI SPECIALI per ruolo slide - se slide è COME FUNZIONA crea 3 dark cards 01/02/03 con numero serif italic red 80-90pt + divider + card bg rgba(12,12,12,0.95) border rgba(255,255,255,0.08) radius 20px padding 28px. Se IL RISULTATO crea 3 metric cards affiancate dark. Se LA SOLUZIONE una card light gradient #F5F5F2->#FFB088 peach radius 24px. Se INIZIA ORA card offer con prezzo barrato + bottone gradient white->orange.\n\n7. EFFETTI FINALI: Heavy film grain 35% su TUTTO incluso testo bianco (effetto stampa premium), no flat vector, no 3D cheesy, no stock icons, premium editorial agency, photoreal noise, 300DPI.\n\nGenera esclusivamente l'immagine 1080x1350 con testo esatto, niente extra fuori canvas.",
+      "variables": ["slide_number", "slide_text", "pill_label", "icon", "total_slides"],
+      "output_type": "image_prompt_for_arena",
+      "quality_threshold": 9.5,
+      "reference_style": "black #000000 + film grain 35% + red glow #FF3B1F + sans white grain + serif italic red + pill mono"
+    },
+    {
+      "id": "cold-outreach",
+      "name": "GENERATORE WORKFLOW E COPY",
+      "stream": "S2 - Cold Outreach",
+      "description": "Sequenze email B2B framework APSOC",
+      "template": "Sei un Copywriter d'élite specializzato in B2B Cold Outreach. Lavori per \"Digital Empire\".\n\nDevi generare una sequenza di 3 email a freddo destinate a: [INSERISCI TARGET, es. Concessionari Auto del Nord Italia].\n\nIl nostro obiettivo è vendergli: [INSERISCI SERVIZIO, es. Un sistema AI per convertire i lead in appuntamenti in showroom].\n\nDevi applicare rigorosamente il framework APSOC in ogni email:\n- A (Attention): Oggetto magnetico e prima riga che rompe gli schemi (no saluti banali).\n- P (Problem): Il dolore acuto che stanno vivendo ora (es. lead che non rispondono).\n- S (Solution): Il meccanismo logico (non il prodotto) che risolve il problema.\n- O (Offer): La nostra offerta irresistibile e a basso rischio.\n- C (Close): Call to action singola, chiara, senza attrito (es. \"Rispondi OK per un video di 2 min\").\n\nRegole:\n1. Toni diretti, chirurgici, niente fuffa aziendale.\n2. Email brevi (max 100 parole la prima).\n3. Includi Spacing adeguato per la lettura da mobile.\n\nFornisci la Sequenza (Email 1, Email 2 di Follow-up a 3 giorni, Email 3 di rottura).",
+      "variables": ["target", "service"],
+      "output_type": "email_sequence",
+      "quality_threshold": 8.0
+    }
+  ],
+  "execution_config": {
+    "parallel_streams": true,
+    "retries": 3,
+    "memory_enabled": true,
+    "critique_before_output": true
+  }
+}

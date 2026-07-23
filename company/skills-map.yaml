@@ -607,6 +607,24 @@ nuovi_2026_07:
     stato: active
     note: "Data-pack contenente mappatura di 20 canali competitor, pattern vincenti, 20 idee video con CTA e template descrizioni SEO per alimentare la skill youtube-automation-factory."
 
+  - id: apex-7-core
+    nome: APEX-7 Swarm Engine (Arena Generated)
+    percorso: company/Ecosistemi/00-APEX-7-CORE/
+    ecosistema: 00-CORE
+    reparto: Orchestratore
+    tipo: workflow
+    stato: active
+    note: "Architettura completa swarm con RuFLO orchestrator, memory 5 layer. Forgiato da Arena."
+
+  - id: skill-apex-7-suite
+    nome: Skill APEX-7 Suite (Forge, Carousel, Outreach, Master)
+    percorso: ~/.gemini/config/skills/ (global)
+    ecosistema: 07-FORGE
+    reparto: Skill-Factory
+    tipo: skill
+    stato: active
+    note: "4 skill generate da Arena: skill-forge-factory, carousel-machine-grafica-premium, cold-outreach-apsoc-engine, apex7-master-orchestrator."
+
 # ============================================================
 
 # ASSET NON ANCORA CLASSIFICATI (da verificare con Max)
@@ -2227,6 +2245,22 @@ censimento_automatico_forge:
     percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/hooks/bin/statusline.js
     tipo: script
     proprietario: "non-dichiarato"
+  - id: 09-arena-apex
+    nome: Arena APEX v2.0 Engine
+    percorso: company/Ecosistemi/09-ARENA-APEX/
+    ecosistema: 09-ARENA-APEX
+    reparto: Core
+    tipo: workflow
+    stato: active
+    note: "Motore pragmatico generato da Arena per skill/carousel/copy."
+  - id: ruflo-reference
+    nome: Ruflo Original Clone
+    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/
+    ecosistema: 04-SKILLS-E-REFERENCE
+    reparto: Core
+    tipo: knowledge
+    stato: legacy
+    note: "Clone di ruflo generato da Arena, uso solo reference."
 # <!-- EMPIRE-CENSUS:END -->
 
 stats:

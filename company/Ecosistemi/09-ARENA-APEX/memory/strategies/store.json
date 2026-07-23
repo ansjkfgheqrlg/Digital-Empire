@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "strategies": [
+    {
+      "name": "Piramide Evolutiva",
+      "description": "Ogni livello di output migliora il precedente. Non si rilascia finché non si supera il quality threshold.",
+      "success_rate": null,
+      "times_used": 0,
+      "last_used": null,
+      "status": "active",
+      "applicable_to": ["planning", "architecture", "optimization", "all_outputs"]
+    },
+    {
+      "name": "Critique-Before-Output",
+      "description": "Ogni output passa attraverso il Critic Agent prima di essere presentato. Score < 7.5 = refinement obbligatorio.",
+      "success_rate": null,
+      "times_used": 0,
+      "last_used": null,
+      "status": "active",
+      "applicable_to": ["quality_control", "all_outputs"]
+    },
+    {
+      "name": "Memory-First Design",
+      "description": "Ogni decisione, strategia e risultato viene salvato nella memoria stratificata. Il contesto passato informa il presente.",
+      "success_rate": null,
+      "times_used": 0,
+      "last_used": null,
+      "status": "active",
+      "applicable_to": ["system_design", "persistence", "learning"]
+    },
+    {
+      "name": "APSOC Framework",
+      "description": "Attention → Problem → Solution → Offer → Close. Framework per cold outreach B2B ad alto tasso di risposta.",
+      "success_rate": null,
+      "times_used": 0,
+      "last_used": null,
+      "status": "active",
+      "applicable_to": ["cold_outreach", "email_sequences", "sales_copy"]
+    },
+    {
+      "name": "Glassmorphism Premium Style",
+      "description": "Stile grafico per caroselli: gradiente scuro (blu notte + oro/argento), glassmorphism, sans-serif elegante, atmosfera luxury-tech.",
+      "success_rate": null,
+      "times_used": 0,
+      "last_used": null,
+      "status": "active",
+      "applicable_to": ["instagram_carousel", "social_graphics", "brand_visuals"]
+    },
+    {
+      "name": "SKILL.md Executable Format",
+      "description": "Formato standardizzato per skill eseguibili: frontmatter YAML + 5 sezioni (Obiettivo, Trigger, Regole, Workflow, Output).",
+      "success_rate": null,
+      "times_used": 0,
+      "last_used": null,
+      "status": "active",
+      "applicable_to": ["skill_creation", "prompt_engineering", "agent_instructions"]
+    }
+  ]
+}

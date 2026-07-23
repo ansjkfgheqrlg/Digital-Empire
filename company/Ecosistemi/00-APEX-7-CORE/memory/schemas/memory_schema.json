@@ -1,0 +1,78 @@
+{
+  "apex7_memory": {
+    "system_id": "apex7-001",
+    "version": "7.0-APEX",
+    "layers": {
+      "L1_working_memory": {
+        "description": "Contesto volatile sessione corrente",
+        "ttl": "session",
+        "storage": "memory + json checkpoint",
+        "schema": {
+          "session_id": "uuid",
+          "current_task": "string",
+          "current_phase": "string",
+          "active_agents": ["string"],
+          "context_variables": "object",
+          "event_bus_state": "object"
+        }
+      },
+      "L2_decision_log": {
+        "description": "Log immutabile di ogni decisione con reasoning",
+        "storage": "sqlite",
+        "schema": {
+          "id": "DEC-xxx",
+          "decision": "string",
+          "why": "string",
+          "alternatives_rejected": ["string"],
+          "confidence": "float 0-1",
+          "outcome": "string|null",
+          "timestamp": "ISO-8601",
+          "agent": "string"
+        }
+      },
+      "L3_strategy_store": {
+        "description": "Pattern vincenti con success rate",
+        "storage": "json",
+        "schema": {
+          "name": "string",
+          "description": "string",
+          "success_rate": "float|null",
+          "use_cases": ["string"],
+          "parameters": "object",
+          "times_used": "int",
+          "last_used": "ISO-8601",
+          "score_history": ["float"]
+        }
+      },
+      "L4_architecture_snapshots": {
+        "description": "Versioning dell'architettura",
+        "storage": "json",
+        "schema": {
+          "version": "semver",
+          "description": "string",
+          "config": "object",
+          "agents": ["string"],
+          "workflows": ["string"],
+          "performance_metrics": "object",
+          "diff_from_previous": "string",
+          "score": "float",
+          "status": "current|deprecated|experimental"
+        }
+      },
+      "L5_compressed_knowledge": {
+        "description": "Long-term distillato in lessons, policies, anti-patterns",
+        "storage": "json",
+        "schema": {
+          "lessons_learned": ["string"],
+          "best_practices": ["string"],
+          "anti_patterns": ["string"],
+          "policies": ["string"],
+          "knowledge_graph": {
+            "nodes": ["concept"],
+            "edges": [{"from": "string", "to": "string", "relation": "string"}]
+          }
+        }
+      }
+    }
+  }
+}

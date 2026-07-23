@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "snapshots": [
+    {
+      "version": "v0.1",
+      "date": "2026-07-23T09:30:00+02:00",
+      "description": "Initial prompts - reactive, no architecture",
+      "score": 2.5,
+      "status": "deprecated",
+      "components": ["3 raw prompts", "no memory", "no workflow", "no quality loop"]
+    },
+    {
+      "version": "v1.0-theoretical",
+      "date": "2026-07-23T09:45:00+02:00",
+      "description": "7-level pyramid planning - ambitious but theoretical",
+      "score": 6.0,
+      "status": "deprecated",
+      "components": ["7 levels planning", "ASCII architecture", "no executable code", "RuFLO references but no integration"],
+      "critique": "Bella architettura teorica ma zero implementazione. Hype > sostanza."
+    },
+    {
+      "version": "v2.0-pragmatic",
+      "date": "2026-07-23T10:00:00+02:00",
+      "description": "Concrete system - memory + prompts + orchestrator + workflow",
+      "score": null,
+      "status": "current",
+      "components": [
+        "5-layer memory system (JSON)",
+        "Optimized prompt templates (3 streams)",
+        "Python orchestrator with critique loop",
+        "Workflow definitions (RuFLO-inspired)",
+        "Agent role definitions",
+        "Quality scoring matrix"
+      ]
+    }
+  ]
+}

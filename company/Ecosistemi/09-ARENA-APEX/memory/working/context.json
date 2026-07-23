@@ -1,0 +1,18 @@
+{
+  "session_id": "init-20260723",
+  "started": "2026-07-23T10:00:00+02:00",
+  "current_phase": "System Bootstrap",
+  "active_task": null,
+  "active_agents": [],
+  "context_variables": {
+    "project": "Digital Empire - AI Agency Operations",
+    "tools_available": ["prompt-engineering", "image-generation", "file-system", "web-search"],
+    "constraints": [
+      "Arena.ai environment - no Node.js runtime",
+      "Memory via JSON files (no vector DB)",
+      "Swarm logic simulated via orchestration script"
+    ]
+  },
+  "variables": {},
+  "pending_decisions": []
+}

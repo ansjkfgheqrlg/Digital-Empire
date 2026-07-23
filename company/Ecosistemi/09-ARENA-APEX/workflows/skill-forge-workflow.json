@@ -1,0 +1,91 @@
+{
+  "workflow_id": "skill-forge",
+  "name": "Skill Forge Pipeline",
+  "version": "2.0",
+  "stream": "S1-A",
+  "trigger": "user_provides_raw_input",
+  "description": "Trasforma appunti grezzi in SKILL.md eseguibile con critique loop",
+  
+  "stages": [
+    {
+      "id": "stage-1-intake",
+      "name": "Intake & Decomposition",
+      "agent": "planner",
+      "actions": [
+        "Parse user raw input (appunti, transcript, idee)",
+        "Identify: obiettivo principale, target agent, trigger conditions, vincoli",
+        "Check memory/strategies for 'SKILL.md Executable Format' pattern",
+        "Decompose into: core purpose, trigger rules, operational rules, workflow steps"
+      ],
+      "output": "structured_brief",
+      "next": "stage-2-generation"
+    },
+    {
+      "id": "stage-2-generation",
+      "name": "SKILL.md Generation",
+      "agent": "writer",
+      "input": "structured_brief",
+      "prompt_template": "prompts/skill-forge-v2.md",
+      "actions": [
+        "Load prompt template from prompts/skill-forge-v2.md",
+        "Inject structured_brief into [INPUT GREZZO] placeholder",
+        "Inject context from memory/knowledge/base.json best practices",
+        "Generate SKILL.md with all 6 required sections"
+      ],
+      "output": "draft_skill_md",
+      "next": "stage-3-critique"
+    },
+    {
+      "id": "stage-3-critique",
+      "name": "Quality Critique",
+      "agent": "critic",
+      "input": "draft_skill_md",
+      "actions": [
+        "Score draft on 5 dimensions (see prompt criteria)",
+        "Calculate weighted total score",
+        "Identify specific weaknesses with line references",
+        "Compare against best practices in memory"
+      ],
+      "output": "critique_report",
+      "routing": {
+        "score >= 7.5": "stage-4-output",
+        "score >= 4.0 AND score < 7.5": "stage-3b-refine",
+        "score < 4.0": "stage-1-intake"
+      },
+      "max_loops_before_restart": 3
+    },
+    {
+      "id": "stage-3b-refine",
+      "name": "Refinement Loop",
+      "agent": "refiner",
+      "input": ["draft_skill_md", "critique_report"],
+      "actions": [
+        "Apply critique feedback to draft",
+        "Strengthen weak dimensions specifically",
+        "Ensure all 6 sections meet quality thresholds",
+        "Preserve what already works (don't rewrite good parts)"
+      ],
+      "output": "refined_skill_md",
+      "next": "stage-3-critique",
+      "max_iterations": 3
+    },
+    {
+      "id": "stage-4-output",
+      "name": "Output + Memory Save",
+      "agent": "meta",
+      "input": "refined_skill_md",
+      "actions": [
+        "Final sanity check (format, completeness, executability)",
+        "Save SKILL.md to skills/ directory",
+        "Update memory/decisions with generation metadata",
+        "Update memory/strategies with success pattern if score > 8",
+        "Present to user"
+      ],
+      "output": "final_skill_md",
+      "memory_writes": [
+        "memory/decisions/log.json → append generation decision",
+        "memory/strategies/store.json → update times_used if applicable"
+      ]
+    }
+  ]
+}

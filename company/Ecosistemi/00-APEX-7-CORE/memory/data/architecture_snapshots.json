@@ -1,0 +1,112 @@
+[
+  {
+    "version": "v7.0-APEX",
+    "description": "Full system con swarm + memory + ruflo",
+    "config": {
+      "orchestrator": "ruflo",
+      "memory_layers": 5
+    },
+    "agents": [
+      "planner",
+      "writer",
+      "analyst",
+      "critic",
+      "refiner",
+      "meta"
+    ],
+    "workflows": [
+      "apex7_prompt_generation"
+    ],
+    "performance_metrics": {
+      "latency_ms": 120,
+      "quality": 8.5
+    },
+    "diff_from_previous": "Initial version",
+    "score": 8.5,
+    "status": "deprecated",
+    "timestamp": "2026-07-23T07:56:58.069709"
+  },
+  {
+    "version": "v7.0-APEX",
+    "description": "Full system con swarm + memory + ruflo",
+    "config": {
+      "orchestrator": "ruflo",
+      "memory_layers": 5
+    },
+    "agents": [
+      "planner",
+      "writer",
+      "analyst",
+      "critic",
+      "refiner",
+      "meta"
+    ],
+    "workflows": [
+      "apex7_prompt_generation"
+    ],
+    "performance_metrics": {
+      "latency_ms": 120,
+      "quality": 8.5
+    },
+    "diff_from_previous": "Previous: v7.0-APEX -> v7.0-APEX",
+    "score": 8.5,
+    "status": "deprecated",
+    "timestamp": "2026-07-23T07:57:01.753819"
+  },
+  {
+    "version": "v7.0-APEX",
+    "description": "Full system con swarm + memory + ruflo",
+    "config": {
+      "orchestrator": "ruflo",
+      "memory_layers": 5
+    },
+    "agents": [
+      "planner",
+      "writer",
+      "analyst",
+      "critic",
+      "refiner",
+      "meta"
+    ],
+    "workflows": [
+      "apex7_prompt_generation"
+    ],
+    "performance_metrics": {
+      "latency_ms": 120,
+      "quality": 8.5
+    },
+    "diff_from_previous": "Previous: v7.0-APEX -> v7.0-APEX",
+    "score": 8.5,
+    "status": "deprecated",
+    "timestamp": "2026-07-23T07:58:13.148806"
+  },
+  {
+    "version": "v7.1-live",
+    "description": "Live execution score 6.85",
+    "config": {
+      "last_score": 6.85,
+      "patterns": [
+        "Cold Outreach APSOC pattern winning -> best practice"
+      ]
+    },
+    "agents": [
+      "planner",
+      "writer",
+      "analyst",
+      "critic",
+      "refiner",
+      "meta"
+    ],
+    "workflows": [
+      "apex7_prompt_generation"
+    ],
+    "performance_metrics": {
+      "quality_score": 6.85,
+      "patterns_detected": 1
+    },
+    "diff_from_previous": "Previous: v7.0-APEX -> v7.1-live",
+    "score": 6.85,
+    "status": "current",
+    "timestamp": "2026-07-23T07:58:17.257082"
+  }
+]

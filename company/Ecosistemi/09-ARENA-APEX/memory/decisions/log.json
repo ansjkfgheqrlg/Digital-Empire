@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "entries": [
+    {
+      "id": "DEC-001",
+      "timestamp": "2026-07-23T10:01:00+02:00",
+      "decision": "Architettura pragmatica invece di full RuFLO stack",
+      "reason": "RuFLO richiede Claude Code + MCP runtime. In Arena.ai usiamo file JSON + Python per simulare la logica swarm/memory/workflow.",
+      "alternatives_rejected": [
+        "Full RuFLO installation (not compatible with Arena runtime)",
+        "Solo prompt senza memory system (no learning)"
+      ],
+      "confidence": 0.92,
+      "outcome": null,
+      "tags": [
+        "architecture",
+        "pragmatism"
+      ]
+    },
+    {
+      "id": "DEC-002",
+      "timestamp": "2026-07-23T10:02:00+02:00",
+      "decision": "5 memory layers ispirati a RuFLO AgentDB",
+      "reason": "Working (sessione) → Decisions (scelte) → Strategies (pattern) → Architecture (snapshots) → Knowledge (long-term compressed). Ogni layer ha uno scopo specifico e non si sovrappone.",
+      "alternatives_rejected": [
+        "3 layers (troppo piatto, confonde working e strategy)",
+        "7 layers (troppa complessità per il contesto)"
+      ],
+      "confidence": 0.88,
+      "outcome": null,
+      "tags": [
+        "memory",
+        "design"
+      ]
+    },
+    {
+      "id": "DEC-003",
+      "timestamp": "2026-07-23T10:03:00+02:00",
+      "decision": "Prompt templates con placeholder + istruzioni meta",
+      "reason": "I prompt originali erano buoni ma mancavano di: context injection dal memory system, quality scoring criteria, e meta-istruzioni per l'agent routing.",
+      "alternatives_rejected": [
+        "Mantenere i 3 prompt originali as-is",
+        "Riscrivere da zero senza riferimento ai pattern APSOC/SKILL esistenti"
+      ],
+      "confidence": 0.9,
+      "outcome": null,
+      "tags": [
+        "prompts",
+        "optimization"
+      ]
+    },
+    {
+      "id": "DEC-004",
+      "timestamp": "2026-07-23T10:04:00+02:00",
+      "decision": "Orchestrator Python come coordinator centrale",
+      "reason": "Un singolo script Python gestisce il workflow, accede alla memoria, esegue i loop di critique/refine, e presenta l'output. Simula il Meta-Orchestrator di RuFLO.",
+      "alternatives_rejected": [
+        "Shell scripts (troppo fragili per JSON manipulation)",
+        "TypeScript (no runtime in Arena)"
+      ],
+      "confidence": 0.94,
+      "outcome": null,
+      "tags": [
+        "orchestration",
+        "implementation"
+      ]
+    },
+    {
+      "id": "DEC-005",
+      "timestamp": "2026-07-23T07:49:27.692811+00:00",
+      "decision": "Sistema APEX v2.0 completo e testato",
+      "reason": "Tutti i componenti funzionano: orchestrator, memory, workflows, prompts. Esempio SKILL.md generato con successo.",
+      "alternatives_rejected": [],
+      "confidence": 0.85,
+      "outcome": null,
+      "tags": []
+    }
+  ]
+}

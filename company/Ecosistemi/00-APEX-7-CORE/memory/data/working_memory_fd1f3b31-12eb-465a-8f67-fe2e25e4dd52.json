@@ -1,0 +1,752 @@
+{
+  "session_id": "fd1f3b31-12eb-465a-8f67-fe2e25e4dd52",
+  "current_task": "None",
+  "current_phase": "OUTPUT",
+  "active_agents": [
+    "planner",
+    "writer",
+    "analyst",
+    "critic",
+    "refiner",
+    "meta"
+  ],
+  "checkpoints": [
+    {
+      "id": "1fd3c425",
+      "stage": "PARALLEL_EXECUTION",
+      "context": {
+        "input": "CAROUSEL SLIDE 3: IL PROBLEMA NON È IL PREZZO",
+        "context": {
+          "slide_text": "IL PROBLEMA NON È IL PREZZO",
+          "slide_number": 3,
+          "intent": "carousel-machine"
+        },
+        "critique_score": 7.65,
+        "task_id": "5cd4ddba-c756-4b83-b4f1-c92b9c073f8a",
+        "analyst_output": {
+          "agent": "analyst",
+          "analysis": {
+            "intent_classification": {
+              "primary": "carousel-machine",
+              "scores": {
+                "skill-forge": 0,
+                "carousel-machine": 2,
+                "cold-outreach": 0,
+                "apex-system": 0
+              },
+              "confidence": 0.6666666666666666
+            },
+            "entities": {
+              "target_mentioned": false,
+              "service_mentioned": false,
+              "slide_numbers": [],
+              "has_raw_notes_placeholder": false
+            },
+            "complexity_score": 3,
+            "memory_patterns": [
+              {
+                "name": "Piramide Evolutiva",
+                "success_rate": 8.5
+              },
+              {
+                "name": "Critique-Before-Output",
+                "success_rate": 9.0
+              },
+              {
+                "name": "Memory-First Design",
+                "success_rate": 8.8
+              }
+            ],
+            "recommended_strategies": [],
+            "risks": [],
+            "best_practices": [
+              "Planning a livelli con evoluzione progressiva",
+              "Feedback loop obbligatorio su ogni output",
+              "Salvare il PERCHÉ delle decisioni, non solo il COSA"
+            ],
+            "anti_patterns_to_avoid": [
+              "Risposta piatta senza architettura",
+              "Chiedere input senza offrire valore",
+              "Output senza auto-valutazione"
+            ],
+            "slide_breakdown": {
+              "detected_slides": 1,
+              "needs_split": false,
+              "style": "glassmorphism dark luxury"
+            }
+          },
+          "timestamp": "2026-07-23T07:58:17.245892"
+        },
+        "writer_output": {
+          "agent": "writer",
+          "intent": "carousel-machine",
+          "content": "Sei un Art Director specializzato in grafiche social ultra-premium per l'agenzia \"Digital Empire\".\n\nDevi generare un'immagine per la SLIDE 3 di un carosello Instagram.\n\nTesto esatto che deve comparire sull'immagine: \"CAROUSEL SLIDE 3: IL PROBLEMA NON È IL PREZZO\"\n\nRegole Grafiche Assolute:\n- Sfondo: Un gradiente elegante e scuro (blu notte profondo #0A1931 e tocchi di oro #D4AF37 / argento #C0C0C0) con effetto glow sottile\n- Stile: Glassmorphism, ultra-moderno, minimale, stile \"SaaS premium\" come Linear.app / Stripe. Vetro satinato con blur 20px, bordo 1px rgba(255,255,255,0.1)\n- Tipografia: Il testo DEVE essere leggibile, pulito, centrato, font sans-serif elegante (Inter Bold 72pt o Helvetica Neue), kerning +2%, line-height 1.1, colore bianco ghiaccio #F8FAFC\n- Coerenza: Atmosfera lusso e alta tecnologia. Nessun elemento 3D pacchiano, nessuna icona stock, niente ombre pesanti. Solo forme geometriche astratte minimali sullo sfondo.\n- Layout: Safe area 1080x1350px, testo centrato verticale, margini 120px tutti i lati, glass card centrale con padding 80px\n- Illuminazione: Soft light da top-left, riflesso oro tenue\n\nGenera esclusivamente l'immagine descritta senza aggiungere testo o commenti fuori dalla grafica. Output richiesto: immagine PNG 1080x1350, 300DPI.\n",
+          "chars": 1279,
+          "timestamp": "2026-07-23T07:58:17.247000"
+        },
+        "critique_output": {
+          "agent": "critic",
+          "score": 7.65,
+          "dimensions": {
+            "Completezza": {
+              "score": 6,
+              "reason": "Sections found 0/4, len 1279",
+              "threshold": 8
+            },
+            "Precisione": {
+              "score": 9,
+              "reason": "Generic precision",
+              "threshold": 8
+            },
+            "Creatività": {
+              "score": 8,
+              "reason": "Original framing present",
+              "threshold": 7
+            },
+            "Actionability": {
+              "score": 7,
+              "reason": "Steps 2, actionable True",
+              "threshold": 8
+            },
+            "Coerenza": {
+              "score": 9,
+              "reason": "Coherent flow, no TODO placeholders",
+              "threshold": 9
+            }
+          },
+          "weaknesses": [
+            "Completezza: Sections found 0/4, len 1279 (score 6)",
+            "Actionability: Steps 2, actionable True (score 7)"
+          ],
+          "strengths": [
+            "Precisione: 9/10",
+            "Creatività: 8/10",
+            "Coerenza: 9/10"
+          ],
+          "quality_matrix": {
+            "Completezza": {
+              "weight": 0.25,
+              "threshold": 8,
+              "metric": "Coverage"
+            },
+            "Precisione": {
+              "weight": 0.25,
+              "threshold": 8,
+              "metric": "Accuracy"
+            },
+            "Creatività": {
+              "weight": 0.2,
+              "threshold": 7,
+              "metric": "Novelty"
+            },
+            "Actionability": {
+              "weight": 0.2,
+              "threshold": 8,
+              "metric": "Usable"
+            },
+            "Coerenza": {
+              "weight": 0.1,
+              "threshold": 9,
+              "metric": "Logic"
+            }
+          },
+          "verdict": "PASS",
+          "critique_id": "081808ea-3b63-44c3-bd05-e5cc6fecf50b",
+          "timestamp": "2026-07-23T07:58:17.261970"
+        }
+      },
+      "timestamp": "2026-07-23T07:58:17.260620",
+      "task_queue_state": 54
+    },
+    {
+      "id": "642144fb",
+      "stage": "PARALLEL_EXECUTION",
+      "context": {
+        "input": "CAROUSEL SLIDE 4: È CHE NON GLI RISPONDI IN 30 SECONDI",
+        "context": {
+          "slide_text": "È CHE NON GLI RISPONDI IN 30 SECONDI",
+          "slide_number": 4,
+          "intent": "carousel-machine"
+        },
+        "critique_score": 7.65,
+        "task_id": "8976bda9-1a21-4584-acb6-8c17054a38f3",
+        "analyst_output": {
+          "agent": "analyst",
+          "analysis": {
+            "intent_classification": {
+              "primary": "carousel-machine",
+              "scores": {
+                "skill-forge": 0,
+                "carousel-machine": 2,
+                "cold-outreach": 0,
+                "apex-system": 0
+              },
+              "confidence": 0.6666666666666666
+            },
+            "entities": {
+              "target_mentioned": false,
+              "service_mentioned": false,
+              "slide_numbers": [],
+              "has_raw_notes_placeholder": false
+            },
+            "complexity_score": 3,
+            "memory_patterns": [
+              {
+                "name": "Piramide Evolutiva",
+                "success_rate": 8.5
+              },
+              {
+                "name": "Critique-Before-Output",
+                "success_rate": 9.0
+              },
+              {
+                "name": "Memory-First Design",
+                "success_rate": 8.8
+              }
+            ],
+            "recommended_strategies": [],
+            "risks": [],
+            "best_practices": [
+              "Planning a livelli con evoluzione progressiva",
+              "Feedback loop obbligatorio su ogni output",
+              "Salvare il PERCHÉ delle decisioni, non solo il COSA"
+            ],
+            "anti_patterns_to_avoid": [
+              "Risposta piatta senza architettura",
+              "Chiedere input senza offrire valore",
+              "Output senza auto-valutazione"
+            ],
+            "slide_breakdown": {
+              "detected_slides": 1,
+              "needs_split": false,
+              "style": "glassmorphism dark luxury"
+            }
+          },
+          "timestamp": "2026-07-23T07:58:17.247067"
+        },
+        "writer_output": {
+          "agent": "writer",
+          "intent": "carousel-machine",
+          "content": "Sei un Art Director specializzato in grafiche social ultra-premium per l'agenzia \"Digital Empire\".\n\nDevi generare un'immagine per la SLIDE 4 di un carosello Instagram.\n\nTesto esatto che deve comparire sull'immagine: \"CAROUSEL SLIDE 4: È CHE NON GLI RISPONDI IN 30 SECONDI\"\n\nRegole Grafiche Assolute:\n- Sfondo: Un gradiente elegante e scuro (blu notte profondo #0A1931 e tocchi di oro #D4AF37 / argento #C0C0C0) con effetto glow sottile\n- Stile: Glassmorphism, ultra-moderno, minimale, stile \"SaaS premium\" come Linear.app / Stripe. Vetro satinato con blur 20px, bordo 1px rgba(255,255,255,0.1)\n- Tipografia: Il testo DEVE essere leggibile, pulito, centrato, font sans-serif elegante (Inter Bold 72pt o Helvetica Neue), kerning +2%, line-height 1.1, colore bianco ghiaccio #F8FAFC\n- Coerenza: Atmosfera lusso e alta tecnologia. Nessun elemento 3D pacchiano, nessuna icona stock, niente ombre pesanti. Solo forme geometriche astratte minimali sullo sfondo.\n- Layout: Safe area 1080x1350px, testo centrato verticale, margini 120px tutti i lati, glass card centrale con padding 80px\n- Illuminazione: Soft light da top-left, riflesso oro tenue\n\nGenera esclusivamente l'immagine descritta senza aggiungere testo o commenti fuori dalla grafica. Output richiesto: immagine PNG 1080x1350, 300DPI.\n",
+          "chars": 1288,
+          "timestamp": "2026-07-23T07:58:17.248246"
+        },
+        "critique_output": {
+          "agent": "critic",
+          "score": 7.65,
+          "dimensions": {
+            "Completezza": {
+              "score": 6,
+              "reason": "Sections found 0/4, len 1288",
+              "threshold": 8
+            },
+            "Precisione": {
+              "score": 9,
+              "reason": "Generic precision",
+              "threshold": 8
+            },
+            "Creatività": {
+              "score": 8,
+              "reason": "Original framing present",
+              "threshold": 7
+            },
+            "Actionability": {
+              "score": 7,
+              "reason": "Steps 2, actionable True",
+              "threshold": 8
+            },
+            "Coerenza": {
+              "score": 9,
+              "reason": "Coherent flow, no TODO placeholders",
+              "threshold": 9
+            }
+          },
+          "weaknesses": [
+            "Completezza: Sections found 0/4, len 1288 (score 6)",
+            "Actionability: Steps 2, actionable True (score 7)"
+          ],
+          "strengths": [
+            "Precisione: 9/10",
+            "Creatività: 8/10",
+            "Coerenza: 9/10"
+          ],
+          "quality_matrix": {
+            "Completezza": {
+              "weight": 0.25,
+              "threshold": 8,
+              "metric": "Coverage"
+            },
+            "Precisione": {
+              "weight": 0.25,
+              "threshold": 8,
+              "metric": "Accuracy"
+            },
+            "Creatività": {
+              "weight": 0.2,
+              "threshold": 7,
+              "metric": "Novelty"
+            },
+            "Actionability": {
+              "weight": 0.2,
+              "threshold": 8,
+              "metric": "Usable"
+            },
+            "Coerenza": {
+              "weight": 0.1,
+              "threshold": 9,
+              "metric": "Logic"
+            }
+          },
+          "verdict": "PASS",
+          "critique_id": "85fee1d3-f540-44b7-b846-713a6ce44638",
+          "timestamp": "2026-07-23T07:58:17.263747"
+        }
+      },
+      "timestamp": "2026-07-23T07:58:17.262053",
+      "task_queue_state": 54
+    },
+    {
+      "id": "ec032f31",
+      "stage": "PARALLEL_EXECUTION",
+      "context": {
+        "input": "CAROUSEL SLIDE 5: SISTEMA AI: FOTO + COUPON + URGENZA",
+        "context": {
+          "slide_text": "SISTEMA AI: FOTO + COUPON + URGENZA",
+          "slide_number": 5,
+          "intent": "carousel-machine"
+        },
+        "critique_score": 7.65,
+        "task_id": "d93c3366-23e7-4afc-8a02-8f76de3d3814",
+        "analyst_output": {
+          "agent": "analyst",
+          "analysis": {
+            "intent_classification": {
+              "primary": "carousel-machine",
+              "scores": {
+                "skill-forge": 0,
+                "carousel-machine": 2,
+                "cold-outreach": 0,
+                "apex-system": 0
+              },
+              "confidence": 0.6666666666666666
+            },
+            "entities": {
+              "target_mentioned": false,
+              "service_mentioned": false,
+              "slide_numbers": [],
+              "has_raw_notes_placeholder": false
+            },
+            "complexity_score": 3,
+            "memory_patterns": [
+              {
+                "name": "Piramide Evolutiva",
+                "success_rate": 8.5
+              },
+              {
+                "name": "Critique-Before-Output",
+                "success_rate": 9.0
+              },
+              {
+                "name": "Memory-First Design",
+                "success_rate": 8.8
+              }
+            ],
+            "recommended_strategies": [],
+            "risks": [],
+            "best_practices": [
+              "Planning a livelli con evoluzione progressiva",
+              "Feedback loop obbligatorio su ogni output",
+              "Salvare il PERCHÉ delle decisioni, non solo il COSA"
+            ],
+            "anti_patterns_to_avoid": [
+              "Risposta piatta senza architettura",
+              "Chiedere input senza offrire valore",
+              "Output senza auto-valutazione"
+            ],
+            "slide_breakdown": {
+              "detected_slides": 1,
+              "needs_split": false,
+              "style": "glassmorphism dark luxury"
+            }
+          },
+          "timestamp": "2026-07-23T07:58:17.248315"
+        },
+        "writer_output": {
+          "agent": "writer",
+          "intent": "carousel-machine",
+          "content": "Sei un Art Director specializzato in grafiche social ultra-premium per l'agenzia \"Digital Empire\".\n\nDevi generare un'immagine per la SLIDE 5 di un carosello Instagram.\n\nTesto esatto che deve comparire sull'immagine: \"CAROUSEL SLIDE 5: SISTEMA AI: FOTO + COUPON + URGENZA\"\n\nRegole Grafiche Assolute:\n- Sfondo: Un gradiente elegante e scuro (blu notte profondo #0A1931 e tocchi di oro #D4AF37 / argento #C0C0C0) con effetto glow sottile\n- Stile: Glassmorphism, ultra-moderno, minimale, stile \"SaaS premium\" come Linear.app / Stripe. Vetro satinato con blur 20px, bordo 1px rgba(255,255,255,0.1)\n- Tipografia: Il testo DEVE essere leggibile, pulito, centrato, font sans-serif elegante (Inter Bold 72pt o Helvetica Neue), kerning +2%, line-height 1.1, colore bianco ghiaccio #F8FAFC\n- Coerenza: Atmosfera lusso e alta tecnologia. Nessun elemento 3D pacchiano, nessuna icona stock, niente ombre pesanti. Solo forme geometriche astratte minimali sullo sfondo.\n- Layout: Safe area 1080x1350px, testo centrato verticale, margini 120px tutti i lati, glass card centrale con padding 80px\n- Illuminazione: Soft light da top-left, riflesso oro tenue\n\nGenera esclusivamente l'immagine descritta senza aggiungere testo o commenti fuori dalla grafica. Output richiesto: immagine PNG 1080x1350, 300DPI.\n",
+          "chars": 1287,
+          "timestamp": "2026-07-23T07:58:17.249445"
+        },
+        "critique_output": {
+          "agent": "critic",
+          "score": 7.65,
+          "dimensions": {
+            "Completezza": {
+              "score": 6,
+              "reason": "Sections found 0/4, len 1287",
+              "threshold": 8
+            },
+            "Precisione": {
+              "score": 9,
+              "reason": "Generic precision",
+              "threshold": 8
+            },
+            "Creatività": {
+              "score": 8,
+              "reason": "Original framing present",
+              "threshold": 7
+            },
+            "Actionability": {
+              "score": 7,
+              "reason": "Steps 2, actionable True",
+              "threshold": 8
+            },
+            "Coerenza": {
+              "score": 9,
+              "reason": "Coherent flow, no TODO placeholders",
+              "threshold": 9
+            }
+          },
+          "weaknesses": [
+            "Completezza: Sections found 0/4, len 1287 (score 6)",
+            "Actionability: Steps 2, actionable True (score 7)"
+          ],
+          "strengths": [
+            "Precisione: 9/10",
+            "Creatività: 8/10",
+            "Coerenza: 9/10"
+          ],
+          "quality_matrix": {
+            "Completezza": {
+              "weight": 0.25,
+              "threshold": 8,
+              "metric": "Coverage"
+            },
+            "Precisione": {
+              "weight": 0.25,
+              "threshold": 8,
+              "metric": "Accuracy"
+            },
+            "Creatività": {
+              "weight": 0.2,
+              "threshold": 7,
+              "metric": "Novelty"
+            },
+            "Actionability": {
+              "weight": 0.2,
+              "threshold": 8,
+              "metric": "Usable"
+            },
+            "Coerenza": {
+              "weight": 0.1,
+              "threshold": 9,
+              "metric": "Logic"
+            }
+          },
+          "verdict": "PASS",
+          "critique_id": "d50e9f3b-9897-43ca-b4e4-3f1c28ac7b26",
+          "timestamp": "2026-07-23T07:58:17.265015"
+        }
+      },
+      "timestamp": "2026-07-23T07:58:17.263828",
+      "task_queue_state": 54
+    },
+    {
+      "id": "9374202f",
+      "stage": "PARALLEL_EXECUTION",
+      "context": {
+        "input": "CAROUSEL SLIDE 6: RECUPERO +22% SENZA UMANO",
+        "context": {
+          "slide_text": "RECUPERO +22% SENZA UMANO",
+          "slide_number": 6,
+          "intent": "carousel-machine"
+        },
+        "critique_score": 7.65,
+        "task_id": "843ad7b5-9f0f-424a-a872-cfc2d0f1b882",
+        "analyst_output": {
+          "agent": "analyst",
+          "analysis": {
+            "intent_classification": {
+              "primary": "carousel-machine",
+              "scores": {
+                "skill-forge": 0,
+                "carousel-machine": 2,
+                "cold-outreach": 0,
+                "apex-system": 0
+              },
+              "confidence": 0.6666666666666666
+            },
+            "entities": {
+              "target_mentioned": false,
+              "service_mentioned": false,
+              "slide_numbers": [],
+              "has_raw_notes_placeholder": false
+            },
+            "complexity_score": 3,
+            "memory_patterns": [
+              {
+                "name": "Piramide Evolutiva",
+                "success_rate": 8.5
+              },
+              {
+                "name": "Critique-Before-Output",
+                "success_rate": 9.0
+              },
+              {
+                "name": "Memory-First Design",
+                "success_rate": 8.8
+              }
+            ],
+            "recommended_strategies": [],
+            "risks": [],
+            "best_practices": [
+              "Planning a livelli con evoluzione progressiva",
+              "Feedback loop obbligatorio su ogni output",
+              "Salvare il PERCHÉ delle decisioni, non solo il COSA"
+            ],
+            "anti_patterns_to_avoid": [
+              "Risposta piatta senza architettura",
+              "Chiedere input senza offrire valore",
+              "Output senza auto-valutazione"
+            ],
+            "slide_breakdown": {
+              "detected_slides": 1,
+              "needs_split": false,
+              "style": "glassmorphism dark luxury"
+            }
+          },
+          "timestamp": "2026-07-23T07:58:17.249508"
+        },
+        "writer_output": {
+          "agent": "writer",
+          "intent": "carousel-machine",
+          "content": "Sei un Art Director specializzato in grafiche social ultra-premium per l'agenzia \"Digital Empire\".\n\nDevi generare un'immagine per la SLIDE 6 di un carosello Instagram.\n\nTesto esatto che deve comparire sull'immagine: \"CAROUSEL SLIDE 6: RECUPERO +22% SENZA UMANO\"\n\nRegole Grafiche Assolute:\n- Sfondo: Un gradiente elegante e scuro (blu notte profondo #0A1931 e tocchi di oro #D4AF37 / argento #C0C0C0) con effetto glow sottile\n- Stile: Glassmorphism, ultra-moderno, minimale, stile \"SaaS premium\" come Linear.app / Stripe. Vetro satinato con blur 20px, bordo 1px rgba(255,255,255,0.1)\n- Tipografia: Il testo DEVE essere leggibile, pulito, centrato, font sans-serif elegante (Inter Bold 72pt o Helvetica Neue), kerning +2%, line-height 1.1, colore bianco ghiaccio #F8FAFC\n- Coerenza: Atmosfera lusso e alta tecnologia. Nessun elemento 3D pacchiano, nessuna icona stock, niente ombre pesanti. Solo forme geometriche astratte minimali sullo sfondo.\n- Layout: Safe area 1080x1350px, testo centrato verticale, margini 120px tutti i lati, glass card centrale con padding 80px\n- Illuminazione: Soft light da top-left, riflesso oro tenue\n\nGenera esclusivamente l'immagine descritta senza aggiungere testo o commenti fuori dalla grafica. Output richiesto: immagine PNG 1080x1350, 300DPI.\n",
+          "chars": 1277,
+          "timestamp": "2026-07-23T07:58:17.250660"
+        },
+        "critique_output": {
+          "agent": "critic",
+          "score": 7.65,
+          "dimensions": {
+            "Completezza": {
+              "score": 6,
+              "reason": "Sections found 0/4, len 1277",
+              "threshold": 8
+            },
+            "Precisione": {
+              "score": 9,
+              "reason": "Generic precision",
+              "threshold": 8
+            },
+            "Creatività": {
+              "score": 8,
+              "reason": "Original framing present",
+              "threshold": 7
+            },
+            "Actionability": {
+              "score": 7,
+              "reason": "Steps 2, actionable True",
+              "threshold": 8
+            },
+            "Coerenza": {
+              "score": 9,
+              "reason": "Coherent flow, no TODO placeholders",
+              "threshold": 9
+            }
+          },
+          "weaknesses": [
+            "Completezza: Sections found 0/4, len 1277 (score 6)",
+            "Actionability: Steps 2, actionable True (score 7)"
+          ],
+          "strengths": [
+            "Precisione: 9/10",
+            "Creatività: 8/10",
+            "Coerenza: 9/10"
+          ],
+          "quality_matrix": {
+            "Completezza": {
+              "weight": 0.25,
+              "threshold": 8,
+              "metric": "Coverage"
+            },
+            "Precisione": {
+              "weight": 0.25,
+              "threshold": 8,
+              "metric": "Accuracy"
+            },
+            "Creatività": {
+              "weight": 0.2,
+              "threshold": 7,
+              "metric": "Novelty"
+            },
+            "Actionability": {
+              "weight": 0.2,
+              "threshold": 8,
+              "metric": "Usable"
+            },
+            "Coerenza": {
+              "weight": 0.1,
+              "threshold": 9,
+              "metric": "Logic"
+            }
+          },
+          "verdict": "PASS",
+          "critique_id": "b85df84e-15d3-4751-96b2-7873af389c20",
+          "timestamp": "2026-07-23T07:58:17.266349"
+        }
+      },
+      "timestamp": "2026-07-23T07:58:17.265094",
+      "task_queue_state": 54
+    },
+    {
+      "id": "79e1596d",
+      "stage": "PARALLEL_EXECUTION",
+      "context": {
+        "input": "CAROUSEL SLIDE 7: RISPONDI 'RECUPERO' PER VIDEO 2MIN",
+        "context": {
+          "slide_text": "RISPONDI 'RECUPERO' PER VIDEO 2MIN",
+          "slide_number": 7,
+          "intent": "carousel-machine"
+        },
+        "critique_score": 7.65,
+        "task_id": "7ab5d418-a20d-47c4-984f-171c76b52701",
+        "analyst_output": {
+          "agent": "analyst",
+          "analysis": {
+            "intent_classification": {
+              "primary": "carousel-machine",
+              "scores": {
+                "skill-forge": 0,
+                "carousel-machine": 2,
+                "cold-outreach": 0,
+                "apex-system": 0
+              },
+              "confidence": 0.6666666666666666
+            },
+            "entities": {
+              "target_mentioned": false,
+              "service_mentioned": false,
+              "slide_numbers": [],
+              "has_raw_notes_placeholder": false
+            },
+            "complexity_score": 3,
+            "memory_patterns": [
+              {
+                "name": "Piramide Evolutiva",
+                "success_rate": 8.5
+              },
+              {
+                "name": "Critique-Before-Output",
+                "success_rate": 9.0
+              },
+              {
+                "name": "Memory-First Design",
+                "success_rate": 8.8
+              }
+            ],
+            "recommended_strategies": [],
+            "risks": [],
+            "best_practices": [
+              "Planning a livelli con evoluzione progressiva",
+              "Feedback loop obbligatorio su ogni output",
+              "Salvare il PERCHÉ delle decisioni, non solo il COSA"
+            ],
+            "anti_patterns_to_avoid": [
+              "Risposta piatta senza architettura",
+              "Chiedere input senza offrire valore",
+              "Output senza auto-valutazione"
+            ],
+            "slide_breakdown": {
+              "detected_slides": 1,
+              "needs_split": false,
+              "style": "glassmorphism dark luxury"
+            }
+          },
+          "timestamp": "2026-07-23T07:58:17.250724"
+        },
+        "writer_output": {
+          "agent": "writer",
+          "intent": "carousel-machine",
+          "content": "Sei un Art Director specializzato in grafiche social ultra-premium per l'agenzia \"Digital Empire\".\n\nDevi generare un'immagine per la SLIDE 7 di un carosello Instagram.\n\nTesto esatto che deve comparire sull'immagine: \"CAROUSEL SLIDE 7: RISPONDI 'RECUPERO' PER VIDEO 2MIN\"\n\nRegole Grafiche Assolute:\n- Sfondo: Un gradiente elegante e scuro (blu notte profondo #0A1931 e tocchi di oro #D4AF37 / argento #C0C0C0) con effetto glow sottile\n- Stile: Glassmorphism, ultra-moderno, minimale, stile \"SaaS premium\" come Linear.app / Stripe. Vetro satinato con blur 20px, bordo 1px rgba(255,255,255,0.1)\n- Tipografia: Il testo DEVE essere leggibile, pulito, centrato, font sans-serif elegante (Inter Bold 72pt o Helvetica Neue), kerning +2%, line-height 1.1, colore bianco ghiaccio #F8FAFC\n- Coerenza: Atmosfera lusso e alta tecnologia. Nessun elemento 3D pacchiano, nessuna icona stock, niente ombre pesanti. Solo forme geometriche astratte minimali sullo sfondo.\n- Layout: Safe area 1080x1350px, testo centrato verticale, margini 120px tutti i lati, glass card centrale con padding 80px\n- Illuminazione: Soft light da top-left, riflesso oro tenue\n\nGenera esclusivamente l'immagine descritta senza aggiungere testo o commenti fuori dalla grafica. Output richiesto: immagine PNG 1080x1350, 300DPI.\n",
+          "chars": 1286,
+          "timestamp": "2026-07-23T07:58:17.251808"
+        },
+        "critique_output": {
+          "agent": "critic",
+          "score": 7.65,
+          "dimensions": {
+            "Completezza": {
+              "score": 6,
+              "reason": "Sections found 0/4, len 1286",
+              "threshold": 8
+            },
+            "Precisione": {
+              "score": 9,
+              "reason": "Generic precision",
+              "threshold": 8
+            },
+            "Creatività": {
+              "score": 8,
+              "reason": "Original framing present",
+              "threshold": 7
+            },
+            "Actionability": {
+              "score": 7,
+              "reason": "Steps 2, actionable True",
+              "threshold": 8
+            },
+            "Coerenza": {
+              "score": 9,
+              "reason": "Coherent flow, no TODO placeholders",
+              "threshold": 9
+            }
+          },
+          "weaknesses": [
+            "Completezza: Sections found 0/4, len 1286 (score 6)",
+            "Actionability: Steps 2, actionable True (score 7)"
+          ],
+          "strengths": [
+            "Precisione: 9/10",
+            "Creatività: 8/10",
+            "Coerenza: 9/10"
+          ],
+          "quality_matrix": {
+            "Completezza": {
+              "weight": 0.25,
+              "threshold": 8,
+              "metric": "Coverage"
+            },
+            "Precisione": {
+              "weight": 0.25,
+              "threshold": 8,
+              "metric": "Accuracy"
+            },
+            "Creatività": {
+              "weight": 0.2,
+              "threshold": 7,
+              "metric": "Novelty"
+            },
+            "Actionability": {
+              "weight": 0.2,
+              "threshold": 8,
+              "metric": "Usable"
+            },
+            "Coerenza": {
+              "weight": 0.1,
+              "threshold": 9,
+              "metric": "Logic"
+            }
+          },
+          "verdict": "PASS",
+          "critique_id": "31bfcabe-09af-4f2d-9cb1-92fb934f7d5c",
+          "timestamp": "2026-07-23T07:58:17.267760"
+        }
+      },
+      "timestamp": "2026-07-23T07:58:17.266428",
+      "task_queue_state": 54
+    }
+  ],
+  "event_bus_count": 1,
+  "context_keys": []
+}

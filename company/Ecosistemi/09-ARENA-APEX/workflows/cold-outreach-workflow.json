@@ -1,0 +1,95 @@
+{
+  "workflow_id": "cold-outreach",
+  "name": "Cold Outreach APSOC Pipeline",
+  "version": "2.0",
+  "stream": "S2",
+  "trigger": "user_provides_target_and_service",
+  "description": "Genera sequenza email a freddo con framework APSOC + critique loop",
+
+  "stages": [
+    {
+      "id": "stage-1-research",
+      "name": "Target Research & Brief",
+      "agent": "analyst",
+      "actions": [
+        "Parse user input: target, service, main pain point, differentiator",
+        "Search memory for similar past campaigns",
+        "Research target industry (web search if needed)",
+        "Build: ideal customer profile, top 3 pain points, decision-maker persona",
+        "Identify best APSOC angles for this specific target"
+      ],
+      "output": "target_brief",
+      "next": "stage-2-generation"
+    },
+    {
+      "id": "stage-2-generation",
+      "name": "Email Sequence Generation",
+      "agent": "writer",
+      "input": "target_brief",
+      "prompt_template": "prompts/cold-outreach-v2.md",
+      "actions": [
+        "Load APSOC prompt template",
+        "Inject target_brief into all placeholders",
+        "Generate Email 1 (Day 0): Pain + Solution angle",
+        "Generate Email 2 (Day 3): Case study / social proof angle",
+        "Generate Email 3 (Day 7): Break-up angle",
+        "Write strategic notes"
+      ],
+      "output": "email_sequence_draft",
+      "next": "stage-3-critique"
+    },
+    {
+      "id": "stage-3-critique",
+      "name": "Copy Quality Critique",
+      "agent": "critic",
+      "input": "email_sequence_draft",
+      "actions": [
+        "Score each email on 6 dimensions (see prompt criteria)",
+        "Verify APSOC compliance: every section present and distinct?",
+        "Check word counts: E1 ≤ 100, E2 ≤ 80, E3 ≤ 60",
+        "Check CTA: single, clear, zero friction?",
+        "Check mobile readability: short paragraphs, white space?",
+        "Simulate reader perspective: would THIS target person reply?"
+      ],
+      "output": "critique_report",
+      "routing": {
+        "score >= 7.5": "stage-4-output",
+        "score >= 4.0 AND score < 7.5": "stage-3b-refine",
+        "score < 4.0": "stage-1-research"
+      }
+    },
+    {
+      "id": "stage-3b-refine",
+      "name": "Copy Refinement",
+      "agent": "refiner",
+      "input": ["email_sequence_draft", "critique_report"],
+      "actions": [
+        "Apply specific critique feedback",
+        "Strengthen weakest APSOC sections",
+        "Tighten copy (cut words, sharpen sentences)",
+        "Preserve strong angles, fix weak ones"
+      ],
+      "output": "refined_email_sequence",
+      "next": "stage-3-critique",
+      "max_iterations": 3
+    },
+    {
+      "id": "stage-4-output",
+      "name": "Output + Memory Save",
+      "agent": "meta",
+      "input": "refined_email_sequence",
+      "actions": [
+        "Format final email sequence as clean markdown",
+        "Save to output/outreach-[target]-[date]/",
+        "Update memory/decisions with campaign metadata",
+        "Update memory/strategies: which APSOC angles worked for which targets",
+        "Present to user with strategic notes"
+      ],
+      "output": "email_sequence_final",
+      "memory_writes": [
+        "memory/decisions/log.json → append campaign decision",
+        "memory/strategies/store.json → update APSOC strategy with target-specific results"
+      ]
+    }
+  ]
+}

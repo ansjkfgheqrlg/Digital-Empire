@@ -1,0 +1,31 @@
+{
+  "system_id": "digital-empire-v2",
+  "version": "2.0.0",
+  "created": "2026-07-23T10:00:00+02:00",
+  "last_updated": "2026-07-23T10:00:00+02:00",
+  "brand": {
+    "name": "Digital Empire",
+    "tagline": "AI-Powered Agency Operations",
+    "tone": "Autoritativo, chirurgico, premium, senza fuffa",
+    "target_audience": "B2B - Imprenditori e direttori commerciali PMI italiane"
+  },
+  "architecture": {
+    "paradigm": "Swarm-inspired with centralized memory",
+    "agents": {
+      "planner": {"role": "Decomposizione task e strategia", "model_hint": "claude-sonnet"},
+      "writer": {"role": "Generazione contenuti (skill, copy, prompt)", "model_hint": "claude-sonnet"},
+      "analyst": {"role": "Ricerca contesto e pattern matching", "model_hint": "claude-sonnet"},
+      "critic": {"role": "Auto-valutazione e quality scoring", "model_hint": "claude-sonnet"},
+      "refiner": {"role": "Miglioramento iterativo output", "model_hint": "claude-sonnet"},
+      "meta": {"role": "Osservatore globale e routing", "model_hint": "claude-sonnet"}
+    },
+    "memory_layers": 5,
+    "quality_threshold": 7.5,
+    "max_refinement_loops": 3
+  },
+  "streams": {
+    "S1": {"name": "Content Factory", "description": "Skill-Forge + Carousel Generator", "priority": "high"},
+    "S2": {"name": "Cold Outreach Machine", "description": "APSOC email sequences", "priority": "high"},
+    "S3": {"name": "Client Delivery", "description": "Output finale per clienti", "priority": "medium"}
+  }
+}
