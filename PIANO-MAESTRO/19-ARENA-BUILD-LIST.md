@@ -9,7 +9,7 @@
 Max sceglie una riga → la fa costruire su Arena → scarica zip → me lo consegna → io lo importo
 con lo stesso protocollo ADR-008 (audit secrets/bloat, registro-impresa, skills-map.yaml).
 
----
+---j
 
 ## 🥇 Priorità ALTA — servono ORA (settimana 21-26/07, stream S1/S6)
 
@@ -57,14 +57,6 @@ con lo stesso protocollo ADR-008 (audit secrets/bloat, registro-impresa, skills-
      - `SKILL & Agenti/Empire Studio Suite/andrei-pascu-system/`
      - `second-brain-vault/wiki/03 - Frameworks/System_Andrei_Pascu_v1/`
    - **Prossimo step su questo fronte:** Quando Empire Studio girerà sui restanti 19/29 video, userà `checklist_APSOC.md` per validare e arricchire la matrice.
-
-## ⚠️ Lane SPECULATIVA (non revenue affidabile — vedi dossier 22 §M4)
-
-9. **Macchina NFT buy/sell automatica** — ⚠️ capitale a rischio, NON è guadagno certo, viola "risolvi problemi".
-   Prima di costruire QUALSIASI cosa: studiare i 4 video con Empire Studio per capire il metodo esatto.
-   - 4 video da ingerire: `YFX5_JK_L-w`, `oJdGoAirTY4`, `PckOW38eBPA`, `xuEIOjuuOfQ` (task Empire Studio).
-   - Build SOLO dopo studio + decisione Max su capitale-che-può-perdere (M-EST-5).
-   - Se si costruisce: prompt Arena = PROMPT 7 sotto. Resta FUORI dal piano revenue principale.
 
 ## 🥉 Priorità BASSA — non serve per l'estate, non urgente
 
@@ -180,26 +172,6 @@ riusa, come struttura un video che converte. Output = un unico "sistema Andrei P
 un playbook che possiamo applicare al nostro copy e ai nostri video.
 
 CONSEGNA: ZIP con il playbook (markdown), una checklist operativa APSOC derivata, e un LEGGIMI.
-```
-
-### PROMPT 7 — ⚠️ NFT machine (lane SPECULATIVA — costruire solo dopo studio + ok Max)
-```
-PREMESSA (non negoziabile): questo è un sistema speculativo con capitale a rischio, non un reddito
-garantito. Voglio prima CAPIRE, poi eventualmente costruire.
-
-FASE STUDIO (fai questa prima): analizza il metodo di trading/flipping NFT automatico descritto in
-questi 4 video [ALLEGO trascrizioni/analisi]. Estrai: (a) la strategia esatta, (b) su quali marketplace/
-chain gira, (c) quale capitale minimo serve, (d) quali sono i rischi reali e i costi (gas, fee, slippage,
-scam), (e) qual è il rendimento REALISTICO atteso e la probabilità di perdita del capitale. Sii onesto:
-se la strategia non regge o è un modo per vendere corsi, dillo.
-
-FASE MACCHINA (solo se la fase studio dà esito positivo): progetta (NON esegui trade con soldi veri)
-un bot che implementa la strategia in modalità PAPER-TRADING prima (simulazione, zero capitale reale),
-con log di ogni operazione e un report di performance simulata su dati storici. Kill-switch manuale.
-Nessuna chiave privata/wallet dentro lo zip: solo .env.example.
-
-CONSEGNA: ZIP con report-studio.md (il verdetto onesto), il codice bot in modalità simulazione,
-requirements, e LEGGIMI che spiega COME passare a soldi veri e QUALI rischi si accettano facendolo.
 ```
 
 ---
