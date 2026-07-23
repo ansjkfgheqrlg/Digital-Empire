@@ -33,7 +33,7 @@ class KPI:
 
         # Valutazione formule semplici
         # es: good="== 0", warn="<= 5", bad="> 5"
-        for thresh, color in [(self.bad, "red"), (self.warn, "yellow"), (self.good, "green")]:
+        for thresh, color in [(self.good, "green"), (self.warn, "yellow"), (self.bad, "red")]:
             if not thresh:
                 continue
             try:
