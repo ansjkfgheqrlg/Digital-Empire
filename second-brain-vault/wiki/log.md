@@ -1,5 +1,16 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-23 (Piano Estate V2 diversificato + dati YouTube reali, Claude/Max)
+- ANALISI/PLAN: dossier 22 (piano estate V2). Corretti 2 errori miei: prodotto = Corso CCM (non "Manuale"
+  = lead magnet); 7 concessionari = settembre non luglio. 5 stream diversificati (Preventa-freddo, Corso
+  lean, prodotti sito agency-empire + sezione Preventa, NFT lane speculativa separata, YouTube funnel).
+  Fork strategico D-EST-006. Task board Gael (G-EST-1..4) + Max (M-EST-1..5). Verificati su disco:
+  `Lancio corso skill beast/` (infra corso completa) + `agency-empire/` (Next.js, 2 workflow live).
+- DATI: 2ª estrazione yt-dlp Dose Mentale + Legami d'amore → conferma dossier 20. Prova decisiva sul
+  canale-90€: Legami ha già 14.700 iscritti (14× i 1.000 comprabili) e rende ~nulla → gli iscritti non
+  sono l'ingrediente mancante, è la view-per-video. Titoli duplicati/ri-uploadati = macchina a churn.
+- NFT: 4 video queued per Empire Studio (lane speculativa, capitale a rischio, fuori piano principale).
+
 ## 2026-07-22 (Gate-FUNNEL: 4 blocchi reali trovati, Gael/Claude)
 - AUDIT: verifica diretta post-CP-023 (che dichiarava "checkout integrato") — trovato invece che
   i link Stripe in `Crea siti/Siti CCM/manuale.html` sono placeholder mai sostituiti (bottone finto),

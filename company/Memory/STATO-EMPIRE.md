@@ -1,3 +1,34 @@
+# STATO EMPIRE -- aggiornato 2026-07-23 (REVENUE ESTATE V2 diversificato — Claude)
+
+## 💰 2026-07-23 — PIANO ESTATE V2 DIVERSIFICATO (Claude/Max) → dossier 22
+
+**Dossier:** [`PIANO-MAESTRO/22-PIANO-ESTATE-V2-DIVERSIFICATO.md`](../../PIANO-MAESTRO/22-PIANO-ESTATE-V2-DIVERSIFICATO.md)
+(+ dossier 19 Arena build-list, 20 YouTube, 21 modello — 21 parzialmente superato, banner in cima).
+
+**Correzioni Max su miei errori:** (E1) prodotto = **CORSO CCM "Da AI User a System Architect"**, il Manuale
+è solo lead magnet. (E2) i **7 concessionari = SETTEMBRE non negoziabile**, NON cash estivo. (E3) Preventa
+estate = **outreach automatico + cold call su concessionari NUOVI**. (E4) servono +metodi (diversificazione).
+
+**5 stream V2:** M1 Preventa-freddo · M2 attivazione lean Corso CCM · M3 prodotti sito agency-empire
+(+ sezione Preventa nuova) · M4 NFT ⚠️ lane speculativa separata (capitale a rischio, NON revenue certo) ·
+M5 YouTube funnel (compounding). Dettaglio + timing + confidenza nel dossier 22.
+
+**🔧 FORK aperto (D-EST-006, Max decide):** tolti i 7 da luglio, "primo euro in 7gg" è difficile.
+Opzione A = spingi Corso questa settimana (serve audience calda, da misurare). Opzione B = 2-3 settimane,
+costruisci le macchine. Default se Max non risponde in 24h: **B**.
+
+**TASK ASSEGNATI:**
+- 🟣 **GAEL:** G-EST-1 sezione Preventa su `agency-empire/` · G-EST-2 macchina outreach concessionari
+  (wrap, ADR-003) · G-EST-3 attiva+testa funnel Corso CCM · G-EST-4 riempi zone vuote `DIGITAL-EMPIRE/`.
+- 🔵 **MAX:** M-EST-1 misura audience IG/lista (sblocca fork) · M-EST-2 decidi fork D-EST-006 ·
+  M-EST-3 prezzo/offerta Corso · M-EST-4 prezzo Preventa (DEC-EST-005 €490/€149) · M-EST-5 NFT sì/no + capitale.
+
+**RIPRESA DA:** Max risponde a M-EST-1/2 (audience + fork) → si sblocca l'esecuzione. Gael parte da G-EST-1.
+NFT: prima studio 4 video con Empire Studio (id in dossier 19 lane speculativa), poi decisione. Audit
+workflow `DIGITAL-EMPIRE/` interrotto da limite-sessione: da riprendere (G-EST-4).
+
+---
+
 # STATO EMPIRE -- aggiornato 2026-07-22 (PIANO ATTIVO: Empire Runtime, 3 corsie parallele)
 
 ## 📐 2026-07-22 — PIANO MAESTRO ATTIVO + CHIARIMENTO MAX: azienda ≠ workflow estate

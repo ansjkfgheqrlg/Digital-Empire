@@ -1,3 +1,8 @@
+> ⚠️ **PARZIALMENTE SUPERATO dal dossier 22 (2026-07-23).** Correzioni: (E1) il prodotto è il CORSO CCM,
+> non il "Manuale" (=lead magnet); (E2) i 7 concessionari sono per SETTEMBRE, non luglio → la tabella S1
+> qui sotto con "chiusure luglio sui 7" è ERRATA, vedi dossier 22 §0. La meccanica del modello e il sistema
+> Andrei (Parte 2) restano validi. Prezzo Preventa (DEC-EST-005) resta valido.
+
 # 21 — PIANO ESTATE (rigore 99%): MODELLO REVENUE + SISTEMA ANDREI + AUTOCRITICA
 
 > Creato 2026-07-22, Claude (Opus) + swarm 2 agenti (andrei-study, workflow-audit). Ordine Max:
