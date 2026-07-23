@@ -150,6 +150,29 @@ class TestConform(unittest.TestCase):
                   if f.severity == "block" and "duplicato" in f.message]
         self.assertEqual(len(blocks), len(dupes))
 
+    def test_planning_docs_are_recognised(self):
+        root = paths.repo_root()
+        for p in (root / "WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/PIANO-COMPLETAMENTO-L1.md",
+                  root / "company/Antigravity-Briefs/GEM-01-EMPIRE-CORE-RUNTIME.md",
+                  root / "company/Memory/plans/PLAN-20260722-EMPIRE-RUNTIME.md"):
+            with self.subTest(f=p.name):
+                self.assertTrue(conform.is_planning_doc(p))
+        self.assertFalse(conform.is_planning_doc(
+            root / "WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/WF-MASTER.md"))
+
+    def test_planned_refs_are_not_blocking(self):
+        """Un piano cita artefatti da costruire: e' LINK-PLANNED (info), non LINK-DEAD (block).
+
+        Caso reale 2026-07-23: i piani della sessione parallela citavano empire/inspect/,
+        empire/tools/checkout.py ecc. — 11 falsi block. Un report pieno di rumore smette
+        di essere letto, quindi la distinzione e' parte del controllo, non un'indulgenza.
+        """
+        findings = conform.check_links("WORKFLOW-ESTATE")
+        for f in findings:
+            if conform.is_planning_doc(Path(f.path)):
+                self.assertNotEqual(f.severity, "block",
+                                    f"un piano non puo' produrre block: {f.path} -> {f.target}")
+
     def test_run_all_includes_adr001(self):
         rules = {f.rule for f in conform.run_all("WORKFLOW-ESTATE")}
         if conform.check_adr001():

@@ -19,7 +19,8 @@ from pathlib import Path
 from .paths import iter_files, repo_root, resolve, resolve_legacy, rel
 from .schema import Finding
 
-__all__ = ["ART8_PILLARS", "ADR001_ECOSYSTEMS", "check_art8", "check_links",
+__all__ = ["ART8_PILLARS", "ADR001_ECOSYSTEMS", "is_planning_doc", "is_vendored",
+           "check_art8", "check_links",
            "check_adr001", "run_all"]
 
 # ADR-001 — EMPIRE OS e' una holding di ESATTAMENTE 10 ecosistemi.
@@ -54,6 +55,20 @@ _SKIP_PREFIX = ("http://", "https://", "python ", "python3 ", "cd ", "git ", "$ 
 _VENDORED_PARTS = (".agents", "04-SKILLS-E-REFERENCE", "05-SKILLS", "skills",
                    "node_modules", "assets/templates", "assets/examples")
 _RUN_ARTIFACT_PREFIX = ("forge-run-", "phase7-run", "phase9-regression", "packaged-final")
+
+
+# Documenti di pianificazione: citano per definizione artefatti ancora da costruire.
+_PLANNING_PREFIX = ("PIANO-", "PLAN-", "PLANNING-", "ARCHITETTURA-", "ARCHITECTURE-",
+                    "ROADMAP", "SPEC", "TASK-", "GEM-", "BRIEF-")
+_PLANNING_DIRS = ("Antigravity-Briefs", "plans", "01-PLANNING", "02-ARCHITECTURE", "tasks")
+
+
+def is_planning_doc(p: Path) -> bool:
+    """True se il file e' un piano/brief/spec: i suoi riferimenti sono al futuro, non al presente."""
+    name = p.name.upper()
+    if name.startswith(_PLANNING_PREFIX):
+        return True
+    return any(d in p.parts for d in _PLANNING_DIRS)
 
 
 def is_vendored(p: Path) -> bool:
@@ -115,11 +130,11 @@ def check_links(base: Path | str, *, limit_files: int | None = None,
                 include_vendored: bool = False) -> list[Finding]:
     """Ogni path citato dentro i .md esiste, direttamente o via resolve_legacy().
 
-    severity block  -> dead-end: non risolve da nessuna parte
-    severity info   -> fixable: risolve via alias legacy (link rotto ma riparabile)
+    LINK-DEAD    block -> non risolve da nessuna parte, in un documento operativo
+    LINK-FIXABLE info  -> risolve via alias legacy (rotto ma riparabile a runtime)
+    LINK-PLANNED info  -> non esiste ANCORA, ma il file e' un piano: e' cio' che un piano fa
 
-    Le skill vendorizzate e gli artefatti di run sono esclusi per default:
-    hanno governo proprio, i loro link interni non sono nostra responsabilita'.
+    Escluse per default: skill vendorizzate e artefatti di run (governo proprio).
     """
     root = Path(base)
     if not root.is_absolute():
@@ -158,6 +173,15 @@ def check_links(base: Path | str, *, limit_files: int | None = None,
                         "info", "LINK-FIXABLE", md,
                         f"riferimento rotto ma riparabile: `{tok}`",
                         f"path reale: {rel(fixed)}  (risolto via empire.paths.resolve_legacy)",
+                        line=lineno, target=tok))
+                elif is_planning_doc(md):
+                    # Un piano cita per definizione artefatti non ancora costruiti.
+                    # Marcarli 'block' produce rumore e fa smettere di guardare il report.
+                    out.append(Finding(
+                        "info", "LINK-PLANNED", md,
+                        f"artefatto pianificato non ancora esistente: `{tok}`",
+                        "atteso: lo crea il lotto che questo piano descrive; "
+                        "diventa LINK-DEAD se il piano si chiude senza averlo prodotto",
                         line=lineno, target=tok))
                 else:
                     out.append(Finding(
