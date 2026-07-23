@@ -1,0 +1,33 @@
+---
+Owner: Max
+Controllore: Claude
+Origine: Outreach/preventa-outreach-pack/03_ARGOMENTARIO_OBIEZIONI_ESTESO.md
+Governo: company/Mandato/MANDATO-EMPIRE.md
+---
+
+# 03 - ARGOMENTARIO OBIEZIONI ESTESO - PREVENTA
+### Logica: Obiezione → Cosa Nasconde Davvero → Risposta Parola-per-Parola → Prova / Asset
+
+| # | OBIEZIONE (cosa dice) | COSA NASCONDE DAVVERO (psicologia) | RISPOSTA PAROLA-PER-PAROLA (da dire) | PROVA / ASSET DA USARE |
+|---|----------------------|-----------------------------------|--------------------------------------|------------------------|
+| **1** | Non ho tempo / Richiamami | Sono in salone, ho cliente davanti. Non voglio sbatti ora. Test di rispetto. | "Capisco al 100% [Nome], sei in salone ora. Non ti trattengo. Facciamo così: ti blocco io 15 min domani alle 11 o giovedì alle 16:30, ti mando 1 preventivo fatto con una vostra [Modello], lo guardiamo e decidi. Quale ti incastro meglio?" | Proponi 2 orari secchi. Se dice no, manda WA Msg1 subito. |
+| **2** | Abbiamo già il gestionale / CRM | Paura di dover cambiare tutto / Ho già pagato altro. Vuole capire differenza. | "Certo, tutti avete il gestionale casa madre. Preventa non lo tocca. Il gestionale gestisce la concessionaria, Preventa ti fa vendere. Il gestionale ti sputa 5 pagine interne, Preventa ti fa 1 PDF di vendita brandizzato che mandi su WhatsApp in 2 min. Vanno in parallelo. Te lo mostro su un caso vostro?" | Screenshot: PDF Preventa vs PDF gestionale standard (a fianco). |
+| **3** | Mandami una brochure / email | Difesa automatica per chiudere. Non leggerà mai brochure generica. | "Te la mando volentieri, ma una brochure generica non ti dice nulla. Dimmi: che auto hai ora in pronta consegna che ti sta a cuore vendere? Ti preparo proprio quel preventivo brandizzato e te lo porto in demo 15 min. Così vedi il tuo, non il mio. Che modello?" | Micro-impegno: chiedi modello reale per demo personalizzata. |
+| **4** | Non mi interessa | Non ha capito valore o bruciato da altri venditori. Serve riportarlo al dolore. | "Ci sta [Nome], posso chiederti un'ultima cosa e chiudo? Oggi quanto tempo perde un tuo venditore per fare un preventivo che sia presentabile da mandare al cliente? Se mi dici '2 minuti' ti saluto subito e non ti disturbo più. Quanto ci mette?" | Domanda quantitativa che riapre. |
+| **5** | Costa troppo / Non ho budget | Non ha percepito ROI / Confronta con costo, non con tempo perso. | "Giusto, il budget va rispettato. Infatti non ti ho detto il prezzo perché non so se ti serve. Il canone è [PREZZO]/mese. Ma la domanda è: se risparmi 20 min a preventivo x 5 al giorno x 22 giorni, quanti preventivi in più fai? Facciamo 2 conti in 15 min e poi mi dici tu se sta in piedi. Ti costa 15 min, non [PREZZO]." | Calcolo ROI al volo: 20min x N preventivi = ore venditore salvate. |
+| **6** | Devo sentire il titolare / socio | Non è decisore o non vuole prendersi responsabilità. Serve includere decisore. | "Perfetto, è giusto coinvolgerlo. Di solito al titolare cosa interessa di più? Che i prezzi siano bloccati o che il PDF sia bello brandizzato? [ASCOLTA]. Organizzamo 15 min insieme a lui così lo vede live. Quando siete entrambi in salone, domani?" | Chiedi info sul decisore + fissa call a 3. |
+| **7** | Noi usiamo Excel, va bene così | Abitudine / pigrizia / paura di complicazioni. Excel = comfort zone. | "Se vi trovate bene è ottimo. Solo 2 rischi con Excel che vedo ovunque: 1) chiunque tocca i prezzi, 2) il cliente riceve un foglio, non un documento di [Nome Concessionaria]. Preventa ti fa la stessa cosa di Excel ma in 2 min, con listini bloccati da te e PDF bello. Vuoi che ti faccio vedere come verrebbe con i tuoi listini?" | Lato a lato: Excel brutto vs PDF brandizzato Preventa. |
+| **8** | I miei venditori non lo userebbero | Paura di dover fare il poliziotto / fallimento adozione team. | "È la paura numero 1 dei titolari, e hai ragione. Per questo l'abbiamo fatto di 3 campi. Se sa usare WhatsApp sa usare Preventa. Zero formazione. E se dopo 30 giorni non lo usano, lo stacchiamo con kill-switch, zero penali. Ma non succede: i venditori lo usano perché fa meno sbatti di Excel. Partiamo con solo 2 venditori se vuoi." | Prova sociale: "Concessionaria X, 7 venditori, adottato in 1 giorno". Kill-switch come garanzia. |
+| **9** | Siamo pieni / non è il momento | Sovraccarico operativo. Pensa che nuovo tool = altro lavoro. | "Proprio perché siete pieni ti chiamo. Quando siete pieni perdete più preventivi per strada. Preventa nasce per il pieno. 15 min ora ti fanno guadagnare 5-6 ore a settimana al team. Fissiamo per la prossima settimana a mente più lucida? Martedì o mercoledì?" | Riframe: non è extra lavoro, è risparmio tempo durante il pieno. |
+| **10** | Ho già provato, mi hanno fregato | Scetticismo da esperienze passate. Vuole garanzie e concretezza. | "Ti capisco [Nome], me lo dicono spesso e purtroppo girano venditori di fumo. Ti dico subito 3 cose che NON è Preventa: non è CRM, non ti chiedo migrazioni, non ti chiedo anno di contratto. È solo PDF di vendita. E non ti chiedo di credermi: lo vedi con una tua auto, con i tuoi prezzi, in 15 min. Se non ti torna, amici come prima. 15 min te li prendi?" | Demo su auto reale loro = anti-truffa. Kill-switch = controllo a loro. |
+
+#### BONUS - OBIEZIONI AVANZATE (per titolari più sgamati)
+
+| **11** | I prezzi cambiano sempre, non riesco a stare dietro | Paura di errore listino / responsabilità. | "Esatto, per questo il listino lo blocchi tu da pannello admin. I venditori non possono toccare i margini, solo scegliere optional. Se cambia listino casa madre, aggiorni una volta e si aggiorna ovunque. Controllo totale tuo." | Mostra pannello admin blocco prezzi. |
+| **12** | E per permuta/finanziamento? | Vuole capire completezza documento. | "Dentro. Permuta, finanziamento con rata, bollo, IPT, messa su strada, tutto configurabile da te. Esce tutto nel PDF, voce per voce. Professionale, non c'è bisogno che il venditore spieghi a voce. È scritto." | PDF esempio con sezione permuta + finanziamento evidenziata. |
+
+#### COME USARE QUESTA TABELLA IN WORKFLOW AUTOMATICO
+
+Se stai automatizzando con agente:
+Input = trascrizione obiezione -> Classifica in 1 delle 12 -> Output = Risposta parola-per-parola + asset da inviare su WhatsApp.
+NON inventare prezzi. Tieni sempre placeholder [PREZZO].

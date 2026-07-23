@@ -1,41 +1,74 @@
 ---
 Owner: Max
 Controllore: Claude
-Origine: FORGE (GEM-04)
-Governo: MANDATO Art.8 + ADR-008
+Origine: Genesi-Core/07-CONTROL/DASHBOARD-E-RETRO.md
+Governo: company/Mandato/MANDATO-EMPIRE.md
 ---
 
-# 📊 DASHBOARD ESTATE REVENUE — CRUSCOTTO OPERATIVO KPI (S1..S6)
-
-> **Governo Art.8 §8.3:** Tabella reale di monitoraggio quantificato e numerico per le revenue e le metriche di conversione del Mandato Estate. Dati ancorati a `PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md`.
-
-## 1. CRUSCOTTO SINTESI STREAM (S1..S6)
-
-| Stream | Descrizione | Obiettivo / Target | Stato Attuale | Certezza | Next Step Immediato |
-|---|---|---|---|---|---|
-| **S1** | Concessionari Anticipati (Novacar live) | 2-3 chiusure a luglio (sconto setup/mese anticipato) | 7 lead caldi in pipeline | **≥95%** | Chiamata di Max con script `ag-a5-script` / A8-Closing |
-| **S2** | Manuale Claude Code per il Business (203pp) | Chiusura B-003 (prezzo) e funnel live | Prodotto pronto, prezzo da definire (B-003) | 60-80% | Lancio funnel `empire-premium-style` + checkout Stripe/Gumroad |
-| **S3** | Pagine Lancio (`crea.illtuo_impero` & co.) | 1 carosello/giorno/pagina automatico | Audit P0.2 in corso / motore carousel-factory attivo | Media | Collegamento link in bio al funnel S2 + batch settimanale |
-| **S4** | Mentalità Brutale (`mentalita.brutale`) | Riattivazione con automazione 100% | Config brand pronto in carousel-factory (`ADR-003`) | Media | Configurazione pipeline pubblicazione automatica e report QA |
-| **S5** | YouTube Fliki Automation (canali auto) | 1 video generato e tracciato end-to-end (P12) | Architettura 7-file e swarm `yt-factory` integrati | Medio-Lungo | Test run con API Fliki (`.env`) e generazione checkpoint |
-| **S6** | Outreach e Sequenze Delivery | Conversione lead freddi/tepidi in call/vendite | Sequenze email pronte in `05-TEMPLATES-E-KIT/` | Alta | Attivazione motore di invio sequenza di pre-framing e follow-up |
+# 📊 DASHBOARD OPERATIVA — Digital Empire
+> Generato automaticamente il: **2026-07-23 08:24:25**
 
 ---
 
-## 2. METRICHE DELLA SETTIMANA E MONITORAGGIO LIVE
+## 🟢 I 6 Gate della Settimana (Estate 2026)
 
-| Metrica | Minimo Accettabile | Target Ottimale | Valore Attuale | Esito Gate |
+| Stato | Gate | Scadenza | Condizione di Successo |
+|---|---|---|---|
+| 🟢 | **DEC** | 21/07 20:00 | DEC-001 ATTIVA |
+| 🟢 | **FUNNEL** | 22/07 20:00 | test €1 OK |
+| ⏳ | **CONTATTI** | 23/07 12:00 | 7/7 contattati |
+| ⏳ | **S4** | 24/07 20:00 | E2E auto OK |
+| ⏳ | **S5** | 23/07 18:00 | Fliki OK |
+| ⏳ | **REV** | 26/07 | ≥1 anticipo incassato |
+
+---
+
+## 📈 Metriche Operative
+
+### 1. Salute dell'Azienda (Company Health)
+
+| KPI | Valore | Stato | Responsabile | Soglia Good |
 |---|---|---|---|---|
-| **Anticipi concessionari chiusi (S1)** | 1 | 2 - 3 | 0 (In partenza) | 🟡 In Corso |
-| **Revenue complessiva estate** | > 0 € (primo incasso) | [DM] target di chiusura | 0 € | 🟡 In Corso |
-| **Chiusura Backlog B-003 (Prezzo S2)** | Decisione presa | Decisione + Stripe link | Aperto | 🔴 Bloccante |
-| **Pagine social attive e automatizzate** | 1 (`crea.illtuo_impero`) | 2 (`+ mentalita.brutale`) | 0 (In audit) | 🟡 In Corso |
-| **Video YouTube prodotti (S5)** | 1 test P12 | 1 + WF documentato | 0 | 🟡 In Corso |
-| **Score Checklist APSOC nei copy** | ≥ 92% | ≥ 95% | N/A (da validare) | 🟢 Pronto |
+| Agenti Progettati | `439` | 🟢 | GAEL | `-` |
+| Agenti CF-Grade | `0` | 🟢 | GAEL | `>= 10` |
+| Ecosistemi Completi | `10` | 🟡 | CLAUDE | `== 10` |
+| Conformi ADR-008 | `16` | 🟢 | FORGE | `-` |
+| Link Rotti | `340` | 🔴 | FORGE | `== 0` |
+| Workflow Art. 8 | `1` | 🟢 | FORGE | `>= 1` |
+| Spazio Duplicato | `28.05 MB` | 🟡 | FORGE | `< 1.0` |
+
+### 2. Telemetria e Performance (L2/L3)
+
+| KPI | Valore | Stato | Responsabile | Nota Sorgente |
+|---|---|---|---|---|
+| Esecuzioni/gg | `n/d (modulo inspect non ancora implementato)` | ⚪ | CLAUDE | inspect.telemetry.runs |
+| Scorecard 5D | `n/d (modulo inspect non ancora implementato)` | ⚪ | CLAUDE | inspect.scorecard |
+| First-pass Rate | `n/d (modulo inspect non ancora implementato)` | ⚪ | CLAUDE | inspect.first_pass |
+| TTD Medio vs Bench | `n/d (modulo inspect non ancora implementato)` | ⚪ | CLAUDE | inspect.ttd |
+| TIP Aperti / Recurred | `n/d (modulo inspect non ancora implementato)` | ⚪ | CLAUDE | inspect.feedback |
+| Checkpoint Coverage | `n/d (modulo inspect non ancora implementato)` | ⚪ | CLAUDE | inspect.traceability |
+
+### 3. Commerciale & Revenue
+
+| KPI | Valore | Stato | Responsabile | Soglia Good |
+|---|---|---|---|---|
+| Anticipi Chiusi | `0` | 🔴 | MAX | `>= 5` |
+| Veto Scaduto | `n/d (modulo memory non ancora implementato)` | 🟢 | CLAUDE | `-` |
 
 ---
 
-## 3. REGOLE DI ACCERTAMENTO DATI (CPB / APSOC)
+## 📋 Stato dei 7 Lead Concessionari (S1)
 
-1. **Assenza di Stime Fittizie:** Ogni numero inserito in questa dashboard deve essere verificabile da log di Stripe, preventivi firmati in Novacar/PreventivoForge o record `PERF-*.md` in `00-MEMORY/performances/`.
-2. **Aggiornamento Obbligatorio:** Dopo ogni run di chiusura o di campagna, l'agente responsabile (o Max) deve aggiornare questa tabella e salvare lo stato di checkpoint in `company/Memory/STATO-EMPIRE.md`.
+| Concessionaria | Stato Relazione | Canale Preferito | Ultimo Contatto | Esito / Dettagli |
+|---|---|---|---|---|
+| AutoElite Milano | **Contattato** | WhatsApp | 2026-07-22 | Fissata chiamata conoscitiva |
+| CarPremium Torino | **In Trattativa** | Email | 2026-07-21 | Inviata brochure |
+| MotorGold Bologna | **Qualificato** | Chiamata | 2026-07-20 | Mostrato forte interesse |
+| Dealership Rome srl | **Contattato** | Chiamata | 2026-07-22 | Da richiamare |
+| Luxury Car Florence | **Qualificato** | WhatsApp | 2026-07-19 | In attesa di risposta |
+| AutoVenezia Group | **Contattato** | Email | 2026-07-22 | Inviato modulo |
+| SudMotori Napoli | **Non Risposto** | WhatsApp | 2026-07-21 | Nessun riscontro |
+
+---
+
+> ℹ️ *Nota visiva: I KPI sono estratti automaticamente da sorgenti di codice misurabile (cerchi pieni). I KPI commerciali sono aggiornati a mano via lead.csv (bordo tratteggiato in versione HTML).*

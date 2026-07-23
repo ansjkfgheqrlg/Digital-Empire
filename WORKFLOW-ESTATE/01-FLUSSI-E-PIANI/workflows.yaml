@@ -138,3 +138,46 @@ workflows:
     rules: ["non blocca mai (non e' un verificatore)", "anti-nagging: stesso TIP non ripetuto entro 3 task", "FB senza conferma >5 task -> riesumato in EOD-SYNC", "solo pattern confirmed precaricati dal pre_task hook"]
 
 traceability: {spec: "ogni WF cita DEC-EST-xxx e CP-xxx che lo attivano (P12)"}
+
+# ═══════════════════════════════════════════════════════════════════
+# Aggiunto da empire/flow (lotto G-C, Gael, CP-20260722): i 6 gate della
+# settimana erano solo referenziati per nome negli step (`gate: Gate-X`) e
+# nella tabella prosa di WF-MASTER.md §"Mappa gate" — qui formalizzati come
+# dato macchina (deadline ISO-8601 + green_if valutabile), trascritti 1:1
+# dalla tabella di WF-MASTER.md senza reinterpretarli (ADR-003: wrap).
+# type: metric  -> letto da empire/.data/flow/facts.json
+# type: file    -> controllo diretto su un file reale (esiste/contiene/non-contiene)
+# type: human   -> richiede conferma esplicita via `flow gate --evidence`, mai auto-verde
+# ═══════════════════════════════════════════════════════════════════
+gates:
+  - id: Gate-DEC
+    deadline: "2026-07-21T20:00:00+02:00"
+    type: metric
+    green_if: "dec_001_attiva >= 1"
+    on_red: "impossibile (auto-default per ADR-EST-006)"
+  - id: Gate-FUNNEL
+    deadline: "2026-07-22T20:00:00+02:00"
+    type: file
+    path: "Crea siti/Siti CCM/manuale.html"
+    must_not_contain: "YOUR_STRIPE"
+    on_red: "fallback checkout (entro 2h)"
+  - id: Gate-CONTATTI
+    deadline: "2026-07-23T12:00:00+02:00"
+    type: human
+    green_if: "contattati >= 7"
+    on_red: "follow-up delegato + push S2 compensa"
+  - id: Gate-S4
+    deadline: "2026-07-24T20:00:00+02:00"
+    type: human
+    green_if: "s4_e2e_ok >= 1"
+    on_red: "mentalita.brutale STANDBY"
+  - id: Gate-S5
+    deadline: "2026-07-23T18:00:00+02:00"
+    type: human
+    green_if: "s5_fliki_ok >= 1"
+    on_red: "ladder video, altrimenti slitta"
+  - id: Gate-REV
+    deadline: "2026-07-26T23:59:00+02:00"
+    type: metric
+    green_if: "anticipi_chiusi >= 1"
+    on_red: "RETRO causa radice -> pattern correttivi"
