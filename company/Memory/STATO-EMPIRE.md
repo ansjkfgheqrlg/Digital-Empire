@@ -22,6 +22,17 @@ pubblico caldo) MORTA. Si va in **Opzione B: tutto outbound freddo.** Corso CCM 
 workflow) · 🥈 Preventa (cash veloce, volume) · 🥉 Content Factory · Corso/Second Brain deprioritizzati.
 Blocco n.1 = **flusso lead freddo + 1 prova credibile (Novacar case study)**, non un altro prodotto.
 
+**🟣 GAEL — TASK BOARD AUTOREVOLE → dossier 25** ([`25-GAEL-TASK-BOARD-OPERATIVO.md`](../../PIANO-MAESTRO/25-GAEL-TASK-BOARD-OPERATIVO.md))
+Sostituisce le righe Gael del dossier 24. **Il lavoro è CABLAGGIO, non costruzione** — asset già esistenti
+verificati: `Outreach/preventa-outreach-pack/` (script APSOC concessionari GIÀ SCRITTI), `Outreach/Outreach Workflow/`
+(motore live `empire_auto_v3.py`), `.claude/skills/youtube-automation-factory/` (skill completa, MAI eseguita).
+Ordine: **G-A** outreach concessionari 100% auto (cassa) → **G-C** sito Preventa+PROVE → **G-B** YouTube
+100% auto (compounding) → **G-D** manutenzione. ⚠️ G-B3 (upload automatico) BLOCCATA finché Max non
+designa il canale YouTube + credenziali API (M-EST-8). Serve anche M-EST-9 (province scraping concessionari).
+
+**🎰 S7 PRONTO A PARTIRE:** prompt copia-incolla per Gemini →
+[`company/Antigravity-Briefs/GEM-07-PROMPT-DA-INCOLLARE-S7.md`](../Antigravity-Briefs/GEM-07-PROMPT-DA-INCOLLARE-S7.md)
+
 **📅 CALENDARIO ESECUTIVO → dossier 24** ([`24-CALENDARIO-ESECUTIVO-ESTATE-V2-E-S7.md`](../../PIANO-MAESTRO/24-CALENDARIO-ESECUTIVO-ESTATE-V2-E-S7.md)):
 task giorno-per-giorno dal 23/07, Opzione B (outbound freddo). Sostituisce il calendario 21→26 del P7.
 - 🟣 GAEL: 23-24/07 sezione Preventa + PROVE sul sito · 25/07 verifica+parcheggia funnel Corso ·

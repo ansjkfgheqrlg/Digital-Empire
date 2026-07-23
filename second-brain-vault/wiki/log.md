@@ -1,5 +1,14 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-23 (Task board Gael operativo + prompt Gemini S7 pronto, Claude/Max)
+- PLAN: dossier 25 = task board Gael autorevole. Scoperta chiave: **il lavoro è cablaggio, non costruzione**.
+  Asset già su disco: `Outreach/preventa-outreach-pack/` (6 script APSOC concessionari già scritti),
+  `Outreach/Outreach Workflow/` (motore live empire_auto_v3.py), `.claude/skills/youtube-automation-factory/`
+  (skill completa con conductor+6 operatori+4 gate, mai eseguita). Ordine: G-A outreach concessionari 100%
+  auto → G-C sito Preventa+PROVE → G-B YouTube 100% auto → G-D manutenzione.
+- BLOCCHI nuovi per Max: M-EST-8 canale YouTube + credenziali API (blocca upload auto), M-EST-9 province scraping.
+- S7: prompt copia-incolla per Gemini pronto (`GEM-07-PROMPT-DA-INCOLLARE-S7.md`), paper-trading first.
+
 ## 2026-07-23 (Calendario esecutivo V2 + S7 NFT bot delegato Gemini, Claude/Max)
 - PLAN: dossier 24 = calendario giorno-per-giorno dal 23/07 (Opzione B outbound). Task Gael (G-EST-1..5) +
   Max (M-EST-4,6,7) sui giorni. Sostituisce il calendario 21→26 del P7.
