@@ -1,4 +1,7 @@
 """
+Owner: 01-AGENCY · Controllore: A2-QA · Origine: FORGE (Gael)
+Governo: MANDATO Art.8 + ADR-008
+
 personalizza_messaggi.py — Campagna "concessionari-preventa" (G-A2)
 
 Legge il CSV prodotto da Outreach/preventa-maps-scraper/ e genera, per ogni lead, il gancio

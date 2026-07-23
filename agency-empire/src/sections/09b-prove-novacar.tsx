@@ -1,5 +1,12 @@
 "use client";
 
+/*
+Owner: 01-AGENCY
+Controllore: A10-QA-Cliente
+Origine: FORGE (Sessione Parallela)
+Governo: MANDATO Art.8 + ADR-008
+*/
+
 import {
   ShieldCheck,
   FileCheck2,

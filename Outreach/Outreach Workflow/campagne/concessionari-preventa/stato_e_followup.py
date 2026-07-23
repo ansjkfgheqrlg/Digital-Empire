@@ -1,4 +1,7 @@
 """
+Owner: 01-AGENCY · Controllore: A2-QA · Origine: FORGE (Gael)
+Governo: MANDATO Art.8 + ADR-008
+
 stato_e_followup.py — Campagna "concessionari-preventa" (G-A3)
 
 Tiene lo stato di ogni lead (da_contattare / contattato / risposto / interessato / no_grazie) in

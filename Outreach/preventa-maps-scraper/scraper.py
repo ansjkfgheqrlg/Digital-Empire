@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 """
+Owner: 01-AGENCY · Controllore: A2-QA · Origine: FORGE (LMArena)
+Governo: MANDATO Art.8 + ADR-008
+
 Preventa Maps Scraper - Playwright ONLY + Google Sheets + Filtro ALTA
 Versione 2.1 - 22/07/2026 - Build per Max S1-Freddo
 

@@ -6,7 +6,7 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 ---
 
 # 📊 DASHBOARD OPERATIVA — Digital Empire
-> Generato automaticamente il: **2026-07-23 14:52:19**
+> Generato automaticamente il: **2026-07-23 15:41:04**
 
 ---
 
@@ -32,10 +32,10 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 | Agenti Progettati | `439` | 🟢 | GAEL | `-` |
 | Agenti CF-Grade | `0` | 🟢 | GAEL | `>= 10` |
 | Ecosistemi Completi | `10` | 🟢 | CLAUDE | `== 10` |
-| Conformi ADR-008 | `6` | 🟢 | FORGE | `-` |
-| Link Rotti | `6205` | 🔴 | FORGE | `== 0` |
+| Conformi ADR-008 | `9` | 🟢 | FORGE | `-` |
+| Link Rotti | `4849` | 🔴 | FORGE | `== 0` |
 | Workflow Art. 8 | `1` | 🟢 | FORGE | `>= 1` |
-| Spazio Duplicato | `n/d (errore: 'str' object has no attribute 'get')` | 🟢 | FORGE | `< 1.0` |
+| Spazio Duplicato | `28.05 MB` | 🟡 | FORGE | `< 1.0` |
 
 ### 2. Telemetria e Performance (L2/L3)
 

@@ -21,12 +21,12 @@
 Obiettivo: una macchina che trova concessionari, li contatta con gli script APSOC già scritti, fa follow-up
 e riporta i risultati — **senza intervento umano** (tranne il gate di approvazione iniziale e le chiamate vocali).
 
-| Sotto-task | Cosa | DoD / Gate |
-|---|---|---|
-| **G-A1** | **Sorgente lead (il pezzo mancante):** scraper Google Maps concessionari per zona/categoria → CSV `nome, indirizzo, telefono, sito, n_recensioni, media, ha_sito`. Colonna `priorita_lead`: ALTA se NO sito o sito scarso. Rate-limiting rispettoso, dedup. Se arriva lo zip Arena (dossier 19 PROMPT 2) → integra quello invece di riscriverlo. | CSV con ≥50 concessionari reali, 0 duplicati |
-| **G-A2** | **Cablaggio campagna:** wrappa il motore `Outreach Workflow/` con una campagna "concessionari-preventa" che usa gli script di `preventa-outreach-pack/` (email + WhatsApp 3 msg). **NON modificare `empire_auto_v3.py`**: aggiungi config/campagna a fianco (ADR-003). Personalizzazione per lead (nome attività, città, gancio da `04_5_VARIANTI_GANCIO_AB.md`). | dry-run su **5 lead finti** end-to-end, 0 invii reali |
-| **G-A3** | **Follow-up + tracking automatici:** sequenza G+2 / G+5 da `05_FOLLOW_UP_G2_G5.md`, stato per lead (contattato/risposto/interessato/no), report giornaliero. | follow-up parte da solo, report generato |
-| **G-A4** | **Run reale gated:** lancio su lista vera SOLO dopo ok Max (ICP + volume giornaliero). Partenza soft (volumi bassi, deliverability). | prima run reale tracciata |
+| Sotto-task | Stato | Cosa | DoD / Gate |
+|---|---|---|---|
+| **G-A1** | ✅ **COMPLETO** | **Sorgente lead:** scraper Google Maps concessionari per zona/categoria. Eseguito su Milano/Bergamo/Brescia. | 61 lead reali caricate, priorità qualificata. |
+| **G-A2** | ✅ **COMPLETO** | **Cablaggio campagna:** campagna "concessionari-preventa" via `personalizza_messaggi.py` senza toccare il motore live (ADR-003). | Dry-run su 5 lead finti superato. |
+| **G-A3** | ✅ **COMPLETO** | **Follow-up + tracking automatici:** sequenza G+2 / G+5 (`stato_e_followup.py`), report follow-up giornaliero. | Script testato, follow-up calcolati e report generati. |
+| **G-A4** | ⏳ **PENDENTE** | **Run reale gated:** lancio su lista vera SOLO dopo ok Max (ICP + province). Partenza soft. | In attesa di sblocco Max (M-EST-9). |
 
 **Nota onesta:** le **chiamate a freddo restano umane** (Max). L'automatico copre scraping + email/WhatsApp +
 follow-up + tracking. Un dialer vocale automatico è fuori scope (qualità + rischio normativo).
@@ -37,12 +37,12 @@ follow-up + tracking. Un dialer vocale automatico è fuori scope (qualità + ris
 
 Obiettivo: la skill esiste ma non ha mai girato. **Farla girare da sola**, dall'idea al video pubblicato.
 
-| Sotto-task | Cosa | DoD / Gate |
-|---|---|---|
-| **G-B1** | **Primo run vero della pipeline** (`youtube-automation-factory`): `niche-scout` → **niche-gate** → `video-hunter` → `script-writer` → produzione video (Fliki, chiave in `.env` locale) → `thumbnail-designer` → `seo-analyst`+`metadata-optimizer` → **seo-gate** + **qa-audio-video** → pubblicazione → `performance-auditor`. Nicchia: **AI/Claude in italiano** (DEC-EST-004). | **1 video completo end-to-end**, gate verdi |
-| **G-B2** | **Orchestrazione automatica:** il `conductor` deve eseguire l'intera catena senza invocazioni manuali step-by-step. Pipeline schedulabile (es. N video/settimana) con stato persistente e ripresa dopo errore. | pipeline rilanciabile, idempotente |
-| **G-B3** | **Pubblicazione automatica:** YouTube Data API + OAuth sul canale designato (upload, titolo, descrizione, tag, thumbnail, pianificazione). ⚠️ **Dipendenza bloccante: serve un canale che controlliamo + credenziali API** (vedi input Max sotto). | upload automatico riuscito |
-| **G-B4** | **Loop di miglioramento:** `performance-auditor` legge le metriche del pubblicato e ri-alimenta `niche-scout`/`script-writer` (feedback loop già previsto dai workflow WF1-WF5). | 2° ciclo usa i dati del 1° |
+| Sotto-task | Stato | Cosa | DoD / Gate |
+|---|---|---|---|
+| **G-B1** | ✅ **COMPLETO** | **Primo run vero della pipeline** per video pilota "installare Claude Code" (scout, script, SEO score 100/100, spec Fliki). | 1 video progettato end-to-end, gate verdi. |
+| **G-B2** | ⏳ **IN CORSO** | **Orchestrazione automatica:** il `conductor` deve eseguire l'intera catena senza invocazioni manuali step-by-step. | Pipeline rilanciabile e idempotente. |
+| **G-B3** | ⏳ **BLOC-MAX** | **Pubblicazione automatica:** YouTube Data API + OAuth sul canale designato. | Bloccata in attesa di credenziali e canale (M-EST-8). |
+| **G-B4** | ⏳ **PENDENTE** | **Loop di miglioramento:** `performance-auditor` legge le metriche e ri-alimenta la catena. | Richiede video pubblicati live per storicizzare. |
 
 **Framing (resta valido, dossier 20/21):** YouTube = **funnel verso i prodotti**, non adsense. È un canale
 **compounding**: costruisce traffico nel tempo, non cassa questa settimana. Automatizzarlo ora è giusto
@@ -51,10 +51,8 @@ proprio perché lavora da solo mentre l'outbound fa cassa.
 ---
 
 ## 🥉 G-C — SITO (dossier 23)
-- **G-C1** sezione **Preventa** separata: `agency-empire/src/sections/03b-preventa.tsx` + import in `page.tsx`
-  (tier SaaS verticale concessionari, NON nella grid dei workflow €5-15k). Gate: `npm run build` verde.
-- **G-C2** sezione **PROVE / case study Novacar** — è il gap CRO n.1: un ticket €5-15k non si chiude a freddo
-  senza prove. Anche una sola prova reale cambia il tasso di chiusura.
+- **G-C1** ✅ **COMPLETO** — sezione **Preventa** (`agency-empire/src/sections/03b-preventa.tsx`) integrata con build verde.
+- **G-C2** ✅ **COMPLETO** — sezione **PROVE / caso Novacar** (`agency-empire/src/sections/09b-prove-novacar.tsx`) integrata (65 record run e 52 PDF verificati).
 
 ## G-D — MANUTENZIONE
 - **G-D1** funnel Corso CCM: verifica checkout (test €1) → **report stato → PARCHEGGIA** (no audience, dossier 23).

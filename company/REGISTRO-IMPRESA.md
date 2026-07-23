@@ -49,6 +49,10 @@
 | **preventa-launch-kit** (Naming + kit lancio B2B concessionari) | 01-AGENCY / A5-Copywriting + S1/S6 | A5-QA (ag-a5-qa) | build Arena (19-ARENA-BUILD-LIST) | Art.2 · ADR-008 |
 | **youtube-niche-scout-analysis** (Data-pack canali, pattern, idee e SEO) | 03-CONTENT-FACTORY + 04-MARKETING | checklist_APSOC + niche-gate | build AI/Claude ITA (19-ARENA-BUILD-LIST) | Art.2 + Art.8 · ADR-008 |
 | **empire/inspect/** (Ispettorato & Performance Loop runtime) | Ispettorato Generale | `isp-conductor` + `isp-verifier` | build Gemini (GEM-03) | Art.2 · ADR-008 |
+| **agency-empire/src/sections/03b-preventa.tsx** (sezione Preventa) | 01-AGENCY / Vetrina | A10-QA-Cliente | build Gael (CP-20260723-004) | MANDATO Art.8 · ADR-008 |
+| **agency-empire/src/sections/09b-prove-novacar.tsx** (caso Novacar) | 01-AGENCY / Vetrina | A10-QA-Cliente | build sessione parallela (CP-20260723-003) | MANDATO Art.8 · ADR-008 |
+| **concessionari-preventa campaign** (outreach concessionari) | 01-AGENCY / A2-Acquisizione | A2-QA (ag-a2-qa) | build Gael (CP-20260723-004) | MANDATO Art.8 · ADR-008 |
+| **STREAM-S7-BOT** (Solana NFT/Memecoin Bot - R&D Speculativo) | 00-CORE | 5-bis | build Gemini (GEM-07) | R&D Speculativa (0€ Revenue) |
 
 
 
@@ -150,13 +154,12 @@
 | `agent` | `second-brain-vault/wiki/03 - Resources/Knowledge_Base/Agenti/Agency/sub-agents/ai-implementation/(ai-implementation) 2026-05-06-agent.md` | — | — | — | — | — |
 | `agent` | `second-brain-vault/wiki/03 - Resources/Knowledge_Base/Agenti/Agency/sub-agents/cro-funnel/(cro-funnel) 2026-05-06-agent.md` | — | — | — | — | — |
 | `agent` | `second-brain-vault/wiki/03 - Resources/Knowledge_Base/Agenti/Agency/sub-agents/no-website/(no-website) 2026-05-06-agent.md` | — | — | — | — | — |
-| `dashboard` | `Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/vite/dashboard/index.html` | — | — | — | — | — |
 | `dashboard` | `DIGITAL-EMPIRE/07-CONTROL/DASHBOARD-E-RETRO.md` | — | — | — | — | — |
 | `dashboard` | `DIGITAL-EMPIRE/07-CONTROL/DASHBOARD-E-RETRO.md` | — | — | — | — | — |
 | `dashboard` | `DIGITAL-EMPIRE/07-CONTROL/DASHBOARD-E-RETRO.md` | — | — | — | — | — |
 | `dashboard` | `DIGITAL-EMPIRE/07-CONTROL/DASHBOARD-E-RETRO.md` | — | — | — | — | — |
 | `dashboard` | `SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/tsconfig.json` | — | — | — | — | — |
-| `dashboard` | `WORKFLOW-ESTATE/06-DASHBOARD-E-METRICHE/KPI-SISTEMA.md` | Max | Claude | FORGE (GEM-04) | MANDATO Art.8 + ADR-008 | — |
+| `dashboard` | `WORKFLOW-ESTATE/06-DASHBOARD-E-METRICHE/LISTA-LEAD.md` | Max | Claude | Genesi-Core/07-CONTROL/LISTA-7-LEAD.md | company/Mandato/MANDATO-EMPIRE.md | — |
 | `department` | `company/Board-CSuite/CEO-Empire-Conductor/README.md` | — | — | — | MANDATO-EMPIRE.md | — |
 | `department` | `company/Board-CSuite/CEO-Empire-Conductor/agenti/ceo-verificatore.md` | — | — | — | — | — |
 | `department` | `company/Board-CSuite/CEO-Empire-Conductor/kpi/KPI.md` | — | — | — | MANDATO-EMPIRE.md | — |
@@ -222,6 +225,7 @@
 | `department` | `company/Board-CSuite/Chief-Forge/workflow/WF-HR-REGISTRY.md` | `cf-conductor` + `cf-agent-registry` | — | — | — | — |
 | `department` | `company/Board-CSuite/README.md` | — | — | — | MANDATO-EMPIRE.md | — |
 | `department` | `company/Board-CSuite/_BLUEPRINT/BP-INDEX.md` | — | — | — | MANDATO-EMPIRE.md | — |
+| `department` | `company/Board-CSuite/_BLUEPRINT/BP-INDEX.md` | — | — | — | MANDATO-EMPIRE.md | — |
 | `ecosystem` | `company/Ecosistemi/02-INFO-BUSINESS/ECOSISTEMA.md` | — | — | — | — | — |
 | `ecosystem` | `company/Ecosistemi/03-CONTENT-FACTORY/ECOSISTEMA.md` | — | — | — | — | — |
 | `ecosystem` | `company/Ecosistemi/04-MARKETING/ECOSISTEMA.md` | — | — | — | — | — |
@@ -250,7 +254,6 @@
 | `skill` | `Agenti/Agency/skills/market-social/SKILL.md` | — | — | — | — | — |
 | `skill` | `Agenti/Agency/skills/market-social/SKILL.md` | — | — | — | — | — |
 | `skill` | `Agenti/Agency/skills/market/SKILL.md` | — | — | — | — | — |
-| `skill` | `Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/tools/cli-client/skill/SKILL.md` | — | — | — | — | — |
 | `skill` | `Clienti/marketingskills-main/skills/ab-testing/SKILL.md` | — | — | — | — | — |
 | `skill` | `Clienti/marketingskills-main/skills/ab-testing/references/test-templates.md` | — | — | — | — | — |
 | `skill` | `Clienti/marketingskills-main/skills/ad-creative/SKILL.md` | — | — | — | — | — |
@@ -325,47 +328,6 @@
 | `skill` | `Clienti/marketingskills-main/skills/social/references/short-form-video.md` | — | — | — | — | — |
 | `skill` | `Clienti/marketingskills-main/skills/video/SKILL.md` | — | — | — | — | — |
 | `skill` | `Clienti/marketingskills-main/skills/video/references/ai-video-prompting.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/_INDEX.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/brand-guidelines/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/canvas-design/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/frontend-design/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-ads/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-audit/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-brand/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-competitors/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-copy/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-emails/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-funnel/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-landing/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-launch/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-proposal/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-report-pdf/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-report/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-seo/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market-social/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/market/scripts/social_calendar.py` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/omega-create/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/opus/TYPOGRAPHY-SYSTEM.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-3d/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-animate/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-brief/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-build/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-components/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-copy/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-deploy/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-design/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-plan/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-qa/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-report/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-seo/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site-stack/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/site/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/skill-creator/SKILL.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/skill-creator/agents/grader.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/skill-creator/references/schemas.md` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/skill-creator/scripts/__init__.py` | — | — | — | — | — |
-| `skill` | `Crea siti/skills/theme-factory/themes/tech-innovation.md` | — | — | — | — | — |
 | `skill` | `DIGITAL-EMPIRE/05-SKILLS/SKILL-REGISTRY.md` | — | — | — | — | — |
 | `skill` | `DIGITAL-EMPIRE/05-SKILLS/content-forge2.0/SKILL.md` | — | — | — | — | — |
 | `skill` | `DIGITAL-EMPIRE/05-SKILLS/content-forge2.0/agents/builders/workflow-builder-agent.md` | — | — | — | — | — |
@@ -503,7 +465,6 @@
 | `skill` | `DIGITAL-EMPIRE/05-SKILLS/master-build-architecture/memory/checkpoints/CP-025-cp-025_-autonomous-turn-complete.-priority-1-done,-2026-06-03T170542.md` | — | — | — | — | — |
 | `skill` | `DIGITAL-EMPIRE/05-SKILLS/master-build-architecture/memory/decisions/DEC-updated-analysis-and-catalog-with-real-fs-audit-2026-06-04T102215.md` | — | — | — | — | — |
 | `skill` | `DIGITAL-EMPIRE/05-SKILLS/master-build-architecture/memory/plans/PLAN-v1-master-architect-creation.md` | ** Conductor + Plan-Builder (this process). | — | — | — | — |
-| `skill` | `DIGITAL-EMPIRE/05-SKILLS/master-build-architecture/memory/sessions/SES-001-initial-setup-2026-06-03.md` | — | — | — | — | — |
 | `skill` | `DIGITAL-EMPIRE/05-SKILLS/master-build-architecture/packaged/README.md` | — | — | — | — | — |
 | `skill` | `DIGITAL-EMPIRE/05-SKILLS/master-build-architecture/references/KP-PLAN.md` | — | — | — | — | — |
 | `skill` | `DIGITAL-EMPIRE/05-SKILLS/master-build-architecture/references/knowledge-pack/01-principles/P15-trigger-design-as-product-design.md` | — | — | — | — | — |
@@ -680,6 +641,50 @@
 | `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/barba-js/skills/barba-js/scripts/transition_generator.py` | — | — | — | — | — |
 | `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/barba-js/skills/barba-js/scripts/transition_generator.py` | — | — | — | — | — |
 | `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/blender-web-pipeline/skills/blender-web-pipeline/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/blender-web-pipeline/skills/blender-web-pipeline/assets/README.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/blender-web-pipeline/skills/blender-web-pipeline/references/optimization_strategies.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/blender-web-pipeline/skills/blender-web-pipeline/scripts/optimize_model.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/blender-web-pipeline/skills/blender-web-pipeline/scripts/optimize_model.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/gsap-scrolltrigger/skills/gsap-scrolltrigger/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/gsap-scrolltrigger/skills/gsap-scrolltrigger/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/gsap-scrolltrigger/skills/gsap-scrolltrigger/assets/examples/README.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/gsap-scrolltrigger/skills/gsap-scrolltrigger/references/easing_guide.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/gsap-scrolltrigger/skills/gsap-scrolltrigger/scripts/timeline_builder.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/gsap-scrolltrigger/skills/gsap-scrolltrigger/scripts/timeline_builder.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/lightweight-3d-effects/skills/lightweight-3d-effects/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/lightweight-3d-effects/skills/lightweight-3d-effects/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/lightweight-3d-effects/skills/lightweight-3d-effects/assets/examples/README.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/lightweight-3d-effects/skills/lightweight-3d-effects/references/zdog_api.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/lightweight-3d-effects/skills/lightweight-3d-effects/scripts/setup_vanta.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/lightweight-3d-effects/skills/lightweight-3d-effects/scripts/setup_vanta.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/locomotive-scroll/skills/locomotive-scroll/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/locomotive-scroll/skills/locomotive-scroll/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/locomotive-scroll/skills/locomotive-scroll/references/gsap_integration.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/locomotive-scroll/skills/locomotive-scroll/scripts/integration_helper.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/locomotive-scroll/skills/locomotive-scroll/scripts/integration_helper.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/lottie-animations/skills/lottie-animations/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/lottie-animations/skills/lottie-animations/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/lottie-animations/skills/lottie-animations/assets/starter_lottie/README.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/lottie-animations/skills/lottie-animations/references/performance_guide.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/lottie-animations/skills/lottie-animations/scripts/optimize_lottie.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/lottie-animations/skills/lottie-animations/scripts/optimize_lottie.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/modern-web-design/skills/modern-web-design/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/modern-web-design/skills/modern-web-design/assets/README.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/modern-web-design/skills/modern-web-design/references/performance_checklist.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/modern-web-design/skills/modern-web-design/scripts/pattern_generator.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/modern-web-design/skills/modern-web-design/scripts/pattern_generator.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/motion-framer/skills/motion-framer/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/motion-framer/skills/motion-framer/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/motion-framer/skills/motion-framer/assets/examples/README.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/motion-framer/skills/motion-framer/references/api_reference.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/motion-framer/skills/motion-framer/scripts/variant_builder.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/motion-framer/skills/motion-framer/scripts/variant_builder.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/pixijs-2d/skills/pixijs-2d/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/pixijs-2d/skills/pixijs-2d/SKILL.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/pixijs-2d/skills/pixijs-2d/assets/examples/README.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/pixijs-2d/skills/pixijs-2d/references/performance_guide.md` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/pixijs-2d/skills/pixijs-2d/scripts/sprite_generator.py` | — | — | — | — | — |
+| `skill` | `SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/pixijs-2d/skills/pixijs-2d/scripts/sprite_generator.py` | — | — | — | — | — |
 <!-- EMPIRE-CENSUS:END -->
 
 ## Regola di chiusura (da ADR-008)

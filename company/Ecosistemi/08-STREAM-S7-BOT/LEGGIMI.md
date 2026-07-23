@@ -1,3 +1,11 @@
+---
+Owner: 08-STREAM-S7-BOT (R&D Speculativo)
+Controllore: 5-bis
+Origine: FORGE (Gemini)
+Governo: MANDATO-EMPIRE.md (R&D Speculativa, 0€ Revenue)
+Status: EXPERIMENTAL
+---
+
 # LEGGIMI - Istruzioni Macchina Automatica S7
 
 Questo ecosistema implementa un simulatore (Paper-Trader) per analizzare il Mempool di Solana e identificare opportunità di arbitraggio su NFT/Memecoin.

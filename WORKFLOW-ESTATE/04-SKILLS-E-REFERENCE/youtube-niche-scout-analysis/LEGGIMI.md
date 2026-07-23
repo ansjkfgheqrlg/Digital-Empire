@@ -1,3 +1,11 @@
+---
+Owner: 03-CONTENT-FACTORY
+Controllore: CF-R6
+Origine: FORGE (Gemini)
+Governo: MANDATO-EMPIRE.md (ADR-008)
+Status: ATTIVO
+---
+
 # Integrazione con `youtube-automation-factory`
 
 Questo pacchetto di dati fornisce la conoscenza verticale e reale sulla nicchia "AI, Claude e Automazioni in Italiano", alimentando la skill `.claude/skills/youtube-automation-factory` senza doverne modificare la logica interna o gli agenti.

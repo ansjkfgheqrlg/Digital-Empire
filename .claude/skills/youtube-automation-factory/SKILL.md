@@ -115,6 +115,7 @@ tool quando la fase lo richiede, oppure — per run leggeri — eseguiti inline 
 | Auto-miglioramento | `scripts/self_improve.py` |
 | Conformità Monetizzazione | [references/monetizzazione-compliance.md](references/monetizzazione-compliance.md) |
 | SSML e Dizionario Fliki | [references/fliki-avanzato.md](references/fliki-avanzato.md) |
+| APEX-7 Orchestrator | `scripts/apex7_orchestrator.py` |
 
 ---
 
