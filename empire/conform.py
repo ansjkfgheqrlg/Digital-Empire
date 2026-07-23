@@ -19,7 +19,18 @@ from pathlib import Path
 from .paths import iter_files, repo_root, resolve, resolve_legacy, rel
 from .schema import Finding
 
-__all__ = ["ART8_PILLARS", "check_art8", "check_links", "run_all"]
+__all__ = ["ART8_PILLARS", "ADR001_ECOSYSTEMS", "is_planning_doc", "is_vendored",
+           "check_art8", "check_links",
+           "check_adr001", "run_all"]
+
+# ADR-001 — EMPIRE OS e' una holding di ESATTAMENTE 10 ecosistemi.
+# I nomi sono canonici: una cartella in company/Ecosistemi/ che non e' in questo elenco
+# non e' un ecosistema, e' altro (una skill, un progetto, un import) messo nel posto sbagliato.
+ADR001_ECOSYSTEMS = (
+    "01-AGENCY", "02-INFO-BUSINESS", "03-CONTENT-FACTORY", "04-MARKETING",
+    "05-MULTI-BUSINESS", "06-PLATFORM", "07-FORGE", "08-INTELLIGENCE",
+    "09-OPERATIONS", "10-MEMORY",
+)
 
 # Mandato Art.8 §8.2 — i 6 pilastri obbligatori di ogni cartella-workflow
 ART8_PILLARS = (
@@ -44,6 +55,20 @@ _SKIP_PREFIX = ("http://", "https://", "python ", "python3 ", "cd ", "git ", "$ 
 _VENDORED_PARTS = (".agents", "04-SKILLS-E-REFERENCE", "05-SKILLS", "skills",
                    "node_modules", "assets/templates", "assets/examples")
 _RUN_ARTIFACT_PREFIX = ("forge-run-", "phase7-run", "phase9-regression", "packaged-final")
+
+
+# Documenti di pianificazione: citano per definizione artefatti ancora da costruire.
+_PLANNING_PREFIX = ("PIANO-", "PLAN-", "PLANNING-", "ARCHITETTURA-", "ARCHITECTURE-",
+                    "ROADMAP", "SPEC", "TASK-", "GEM-", "BRIEF-")
+_PLANNING_DIRS = ("Antigravity-Briefs", "plans", "01-PLANNING", "02-ARCHITECTURE", "tasks")
+
+
+def is_planning_doc(p: Path) -> bool:
+    """True se il file e' un piano/brief/spec: i suoi riferimenti sono al futuro, non al presente."""
+    name = p.name.upper()
+    if name.startswith(_PLANNING_PREFIX):
+        return True
+    return any(d in p.parts for d in _PLANNING_DIRS)
 
 
 def is_vendored(p: Path) -> bool:
@@ -105,11 +130,11 @@ def check_links(base: Path | str, *, limit_files: int | None = None,
                 include_vendored: bool = False) -> list[Finding]:
     """Ogni path citato dentro i .md esiste, direttamente o via resolve_legacy().
 
-    severity block  -> dead-end: non risolve da nessuna parte
-    severity info   -> fixable: risolve via alias legacy (link rotto ma riparabile)
+    LINK-DEAD    block -> non risolve da nessuna parte, in un documento operativo
+    LINK-FIXABLE info  -> risolve via alias legacy (rotto ma riparabile a runtime)
+    LINK-PLANNED info  -> non esiste ANCORA, ma il file e' un piano: e' cio' che un piano fa
 
-    Le skill vendorizzate e gli artefatti di run sono esclusi per default:
-    hanno governo proprio, i loro link interni non sono nostra responsabilita'.
+    Escluse per default: skill vendorizzate e artefatti di run (governo proprio).
     """
     root = Path(base)
     if not root.is_absolute():
@@ -149,6 +174,15 @@ def check_links(base: Path | str, *, limit_files: int | None = None,
                         f"riferimento rotto ma riparabile: `{tok}`",
                         f"path reale: {rel(fixed)}  (risolto via empire.paths.resolve_legacy)",
                         line=lineno, target=tok))
+                elif is_planning_doc(md):
+                    # Un piano cita per definizione artefatti non ancora costruiti.
+                    # Marcarli 'block' produce rumore e fa smettere di guardare il report.
+                    out.append(Finding(
+                        "info", "LINK-PLANNED", md,
+                        f"artefatto pianificato non ancora esistente: `{tok}`",
+                        "atteso: lo crea il lotto che questo piano descrive; "
+                        "diventa LINK-DEAD se il piano si chiude senza averlo prodotto",
+                        line=lineno, target=tok))
                 else:
                     out.append(Finding(
                         "block", "LINK-DEAD", md,
@@ -158,9 +192,70 @@ def check_links(base: Path | str, *, limit_files: int | None = None,
     return out
 
 
+def check_adr001() -> list[Finding]:
+    """ADR-001: la holding ha esattamente 10 ecosistemi, ciascuno con la struttura canonica.
+
+    Nato da un caso reale (2026-07-23): i commit APEX-7 / Arena / S7-Bot hanno depositato
+    tre cartelle in company/Ecosistemi/ portandole a 13, due delle quali con numero gia'
+    occupato (due 08-, due 09-). Un numero d'ecosistema duplicato rompe ogni riferimento
+    che usa il prefisso, quindi e' bloccante.
+    """
+    out: list[Finding] = []
+    try:
+        base = resolve("ecosistemi")
+    except Exception:
+        return out
+    if not base.is_dir():
+        return [Finding("block", "ADR-001", base, "company/Ecosistemi/ non esiste",
+                        "ripristinare la struttura della holding")]
+
+    found = sorted(d.name for d in base.iterdir() if d.is_dir())
+    canonical = set(ADR001_ECOSYSTEMS)
+
+    for name in ADR001_ECOSYSTEMS:
+        d = base / name
+        if not d.is_dir():
+            out.append(Finding("block", "ADR-001", d,
+                               f"ecosistema canonico mancante: {name}",
+                               "ADR-001 impone i 10 ecosistemi: ricrearlo o superare l'ADR"))
+            continue
+        for req in ("ECOSISTEMA.md", "BACKBONE.md"):
+            if not (d / req).is_file():
+                out.append(Finding("warn", "ADR-001", d / req,
+                                   f"{name}: manca {req}",
+                                   "ogni ecosistema ha ECOSISTEMA.md (cos'e') e BACKBONE.md (come regge)"))
+
+    # numeri duplicati: rompono ogni riferimento fatto per prefisso
+    by_num: dict[str, list[str]] = {}
+    for name in found:
+        by_num.setdefault(name.split("-")[0], []).append(name)
+    for num, names in sorted(by_num.items()):
+        if len(names) > 1:
+            out.append(Finding("block", "ADR-001", base,
+                               f"numero di ecosistema duplicato {num}: {', '.join(names)}",
+                               "rinumerare l'intruso o spostarlo fuori da company/Ecosistemi/"))
+
+    for name in found:
+        if name in canonical:
+            continue
+        d = base / name
+        n_agents = len(list((d / "Agenti").glob("*.md"))) if (d / "Agenti").is_dir() else 0
+        out.append(Finding(
+            "warn", "ADR-001", d,
+            f"cartella non prevista da ADR-001: {name} "
+            f"({n_agents} agenti, ECOSISTEMA.md={'si' if (d / 'ECOSISTEMA.md').is_file() else 'NO'})",
+            "se e' davvero un ecosistema serve un ADR che superi ADR-001; "
+            "altrimenti spostarla (es. sotto Genesi-Core/, Guilds/ o il suo workflow)"))
+    return out
+
+
 def run_all(workflow: str | None = None) -> list[Finding]:
-    """Tutti i controlli disponibili. Ordinati per severità."""
-    findings: list[Finding] = []
+    """Tutti i controlli disponibili. Ordinati per severità.
+
+    I controlli sul workflow (Art.8, link) sono per-cartella; check_adr001 riguarda
+    la struttura dell'azienda e gira una volta sola.
+    """
+    findings: list[Finding] = list(check_adr001())
     targets = [workflow] if workflow else ["WORKFLOW-ESTATE"]
     for t in targets:
         try:

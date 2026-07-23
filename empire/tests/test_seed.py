@@ -118,6 +118,66 @@ class TestConform(unittest.TestCase):
         self.assertEqual(len(f), 1)
         self.assertEqual(f[0].severity, "block")
 
+    def test_adr001_canonical_ecosystems_are_ten(self):
+        self.assertEqual(len(conform.ADR001_ECOSYSTEMS), 10)
+        self.assertEqual(len(set(conform.ADR001_ECOSYSTEMS)), 10)
+
+    def test_adr001_canonical_ecosystems_exist_on_disk(self):
+        base = paths.resolve("ecosistemi")
+        for name in conform.ADR001_ECOSYSTEMS:
+            with self.subTest(eco=name):
+                self.assertTrue((base / name).is_dir(), f"ecosistema canonico mancante: {name}")
+
+    def test_adr001_flags_extra_folders(self):
+        """Ogni cartella non canonica va segnalata: e' cosi' che si intercetta un import
+        depositato nel posto sbagliato (caso reale 2026-07-23: APEX-7 / Arena / S7-Bot)."""
+        base = paths.resolve("ecosistemi")
+        extra = {d.name for d in base.iterdir()
+                 if d.is_dir() and d.name not in conform.ADR001_ECOSYSTEMS}
+        flagged = {f.path.name for f in conform.check_adr001() if f.rule == "ADR-001"}
+        for name in extra:
+            self.assertIn(name, flagged, f"cartella extra non segnalata: {name}")
+
+    def test_adr001_flags_duplicate_numbers_as_block(self):
+        """Due ecosistemi con lo stesso prefisso numerico rompono i riferimenti per numero."""
+        base = paths.resolve("ecosistemi")
+        by_num: dict[str, list[str]] = {}
+        for d in base.iterdir():
+            if d.is_dir():
+                by_num.setdefault(d.name.split("-")[0], []).append(d.name)
+        dupes = {n for n, v in by_num.items() if len(v) > 1}
+        blocks = [f for f in conform.check_adr001()
+                  if f.severity == "block" and "duplicato" in f.message]
+        self.assertEqual(len(blocks), len(dupes))
+
+    def test_planning_docs_are_recognised(self):
+        root = paths.repo_root()
+        for p in (root / "WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/PIANO-COMPLETAMENTO-L1.md",
+                  root / "company/Antigravity-Briefs/GEM-01-EMPIRE-CORE-RUNTIME.md",
+                  root / "company/Memory/plans/PLAN-20260722-EMPIRE-RUNTIME.md"):
+            with self.subTest(f=p.name):
+                self.assertTrue(conform.is_planning_doc(p))
+        self.assertFalse(conform.is_planning_doc(
+            root / "WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/WF-MASTER.md"))
+
+    def test_planned_refs_are_not_blocking(self):
+        """Un piano cita artefatti da costruire: e' LINK-PLANNED (info), non LINK-DEAD (block).
+
+        Caso reale 2026-07-23: i piani della sessione parallela citavano empire/inspect/,
+        empire/tools/checkout.py ecc. — 11 falsi block. Un report pieno di rumore smette
+        di essere letto, quindi la distinzione e' parte del controllo, non un'indulgenza.
+        """
+        findings = conform.check_links("WORKFLOW-ESTATE")
+        for f in findings:
+            if conform.is_planning_doc(Path(f.path)):
+                self.assertNotEqual(f.severity, "block",
+                                    f"un piano non puo' produrre block: {f.path} -> {f.target}")
+
+    def test_run_all_includes_adr001(self):
+        rules = {f.rule for f in conform.run_all("WORKFLOW-ESTATE")}
+        if conform.check_adr001():
+            self.assertIn("ADR-001", rules)
+
     def test_links_finds_fixable_refs(self):
         findings = conform.check_links("WORKFLOW-ESTATE")
         fixable = [f for f in findings if f.rule == "LINK-FIXABLE"]
