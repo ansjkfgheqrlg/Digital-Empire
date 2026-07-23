@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "log_file": "empire_desk.log",
+    "python": "auto",
+    "auto_reload": true,
+    "max_concurrent": 2
+  },
+  "workflows": [
+    {
+      "name": "Demo: Hello con Args",
+      "script_path": "scripts/hello_workflow.py",
+      "args": ["--verbose", "--lang", "it"],
+      "cwd": "scripts"
+    },
+    {
+      "name": "Demo: Errore (script inesistente)",
+      "script_path": "scripts/non_existe.py"
+    },
+    {
+      "name": "Demo: Disabilitato",
+      "script_path": "scripts/hello_workflow.py",
+      "enabled": false
+    }
+  ]
+}

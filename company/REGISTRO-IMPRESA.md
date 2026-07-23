@@ -43,7 +43,7 @@
 | **Empire Studio** (ingestione video → knowledge) | 10-MEMORY (knowledge) + Reparto Competitor Research | WATCH-001 match check | suite dedicata | ADR-002 (integrale, mai riassunti) |
 | **Andrei Pascu System** (Playbook + Checklist APSOC 25 item) | 10-MEMORY / 04-MARKETING (knowledge & copy) | Checklist APSOC (score ≥92%) | import da Arena zip 2026-07-22 (ADR-008) | Art.2 (dati reali, zero fuffa) |
 | **Manuale Claude Code** (prodotto S2) | 02-INFO-BUSINESS / IB-L2-PROD → VEND | ib-prod-qa + B-003 (prezzo da team-prezzi) | pre-Impero | Art.2 · ADR-005 |
-| **EmpireDesk.exe** (in build OGGI, Gael) | 06-CORE/Platform (interim: Genesi-Core) | selftest 8/8 tile + 5-bis | dossier 17 | Art.2 (zero bottoni finti) · ADR-003 (solo launcher) |
+| **EmpireDesk.exe** (completato via LMarena zip) | 06-CORE/Platform (interim: Genesi-Core) | selftest 8/8 tile + 5-bis | dossier 17 | Art.2 (zero bottoni finti) · ADR-003 (solo launcher) |
 | **preventa-maps-scraper** (Playwright Maps Scraper + Sheets) | 01-AGENCY / A2-Acquisizione | A2-QA (ag-a2-qa) | build Arena (19-ARENA-BUILD-LIST) | Art.2 + PII Art.7.2 · ADR-008 |
 | **preventa-outreach-pack** (script freddo APSOC concessionari) | 01-AGENCY / A5-Copywriting + S1/S6 | A5-QA (ag-a5-qa) | build Arena (19-ARENA-BUILD-LIST) | Art.2 · ADR-008 |
 | **preventa-launch-kit** (Naming + kit lancio B2B concessionari) | 01-AGENCY / A5-Copywriting + S1/S6 | A5-QA (ag-a5-qa) | build Arena (19-ARENA-BUILD-LIST) | Art.2 · ADR-008 |
@@ -69,7 +69,8 @@
 | `DIGITAL-EMPIRE/` (workflow estate NUOVO, sostituisce planning-workshop+workflows+ESTATE-WORKSHOP*) | MAX (import) → Chief-Forge (build originale) | `DIGITAL-EMPIRE/07-CONTROL/` gates + RETRO-PROTOCOLLO, memory_manager.py |
 | `WORKFLOW-ESTATE/` (riorganizzazione 6 pilastri Art.8 del sistema estate) | MAX | ⚠️ **NON CONFORME al 2026-07-22**: pilastri 05/06 vuoti + 26 path rotti (CP-20260722-005) → risanamento assegnato a GEM-04 |
 | `company/Antigravity-Briefs/` (GEM-00…GEM-06: pacchetti di lavoro per Gemini/Antigravity) | MAX (committente) | **Claude** (gate 5-bis su ogni consegna in `consegne/`) · Origine: FORGE via Claude, CP-20260722-005 · Governo: MANDATO Art.8 + ADR-002/003/006/008 |
-| `empire/` (core runtime Python — **da costruire**, GEM-01) | MAX | Claude (gate) · esecutore GEMINI/Antigravity · Governo: ADR-003 wrap + ADR-008 |
+| `empire/` (core runtime Python — **completato via LMarena**, GEM-01) | MAX | Claude (gate) · esecutore LMarena/Antigravity · Governo: ADR-003 wrap + ADR-008 |
+| `empire/intelligence/apex7/` (Swarm Workflow Engine Level 7) | MAX | Claude (gate) · origine: LMarena zip 2026-07-22 |
 
 ---
 
