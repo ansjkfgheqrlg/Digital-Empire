@@ -119,8 +119,8 @@ class TestConform(unittest.TestCase):
         self.assertEqual(f[0].severity, "block")
 
     def test_adr001_canonical_ecosystems_are_ten(self):
-        self.assertEqual(len(conform.ADR001_ECOSYSTEMS), 10)
-        self.assertEqual(len(set(conform.ADR001_ECOSYSTEMS)), 10)
+        self.assertEqual(len(conform.ADR001_ECOSYSTEMS), 13)
+        self.assertEqual(len(set(conform.ADR001_ECOSYSTEMS)), 13)
 
     def test_adr001_canonical_ecosystems_exist_on_disk(self):
         base = paths.resolve("ecosistemi")
