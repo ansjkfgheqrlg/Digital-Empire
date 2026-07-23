@@ -220,7 +220,6 @@
 | `department` | `company/Board-CSuite/Chief-Forge/workflow/WF-HR-REGISTRY.md` | `cf-conductor` + `cf-agent-registry` | — | — | — | — |
 | `department` | `company/Board-CSuite/README.md` | — | — | — | MANDATO-EMPIRE.md | — |
 | `department` | `company/Board-CSuite/_BLUEPRINT/BP-INDEX.md` | — | — | — | MANDATO-EMPIRE.md | — |
-| `department` | `company/Board-CSuite/_BLUEPRINT/BP-INDEX.md` | — | — | — | MANDATO-EMPIRE.md | — |
 | `ecosystem` | `company/Ecosistemi/02-INFO-BUSINESS/ECOSISTEMA.md` | — | — | — | — | — |
 | `ecosystem` | `company/Ecosistemi/03-CONTENT-FACTORY/ECOSISTEMA.md` | — | — | — | — | — |
 | `ecosystem` | `company/Ecosistemi/04-MARKETING/ECOSISTEMA.md` | — | — | — | — | — |
