@@ -1,0 +1,18 @@
+[
+  {
+    "id": "021234567",
+    "nome_attivita": "Autosalone Test Uno",
+    "step": "msg3",
+    "giorni_da_primo_contatto": 5,
+    "canale": "whatsapp",
+    "testo": "Fatto. Ti preparo io il demo con un vostro annuncio in 15 min su schermo, senza impegno.\nLicenza a canone, disdetta libera con kill-switch se non lo usate più.\nDomani alle 11:00 o giovedì alle 16:30 ti va meglio per vederlo?"
+  },
+  {
+    "id": "0351234567",
+    "nome_attivita": "Concessionaria Test Due",
+    "step": "msg2",
+    "giorni_da_primo_contatto": 2,
+    "canale": "whatsapp",
+    "testo": "Capito.\nNoi abbiamo fatto Preventa proprio per questo: non è un gestionale.\nIncollate il link dell'annuncio ed esce un PDF brandizzato Concessionaria Test Due con prezzi bloccati dal titolare. Pulito, inviabile su WA al volo.\nVuoi che ti mando un esempio fatto con un vostro annuncio?"
+  }
+]

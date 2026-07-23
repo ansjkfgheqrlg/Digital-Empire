@@ -1,6 +1,6 @@
 id,nome_attivita,citta,telefono,canale_primario,stato,data_primo_contatto,ultimo_step_inviato,data_ultimo_invio
-021234567,Autosalone Test Uno,Milano,02 1234567,whatsapp,da_contattare,,,
-0351234567,Concessionaria Test Due,Bergamo,035 1234567,whatsapp,da_contattare,,,
-0301234567,Auto Premium Test Tre,Brescia,030 1234567,whatsapp,da_contattare,,,
-motori test quattro,Motori Test Quattro,Milano,,email,da_contattare,,,
+021234567,Autosalone Test Uno,Milano,02 1234567,whatsapp,contattato,2026-07-18,msg3,2026-07-23
+0351234567,Concessionaria Test Due,Bergamo,035 1234567,whatsapp,contattato,2026-07-21,msg2,2026-07-23
+0301234567,Auto Premium Test Tre,Brescia,030 1234567,whatsapp,contattato,2026-07-23,msg1,2026-07-23
+motori test quattro,Motori Test Quattro,Milano,,email,interessato,2026-07-18,msg1,2026-07-18
 0357654321,Garage Test Cinque,Bergamo,035 7654321,whatsapp,da_contattare,,,
