@@ -41,7 +41,9 @@ workflows:
     gates: [Gate-DEC, Gate-FUNNEL, Gate-CONTATTI, Gate-S4, Gate-S5, Gate-REV]
 
   WF-S1-CONCESSIONARI:
-    owner: Max; support: [claude, chief-forge]; window: 21→26/07
+    owner: Max
+    support: [claude, chief-forge]
+    window: "21→26/07"
     doD: ">=1 anticipo incassato (setup o canone)"
     steps:
       - {id: s1.1, who: Max, task: "lista 7 lead (nome/stato/canale/ultimo contatto)", due: "2026-07-21"}
@@ -57,7 +59,9 @@ workflows:
     memory: {on_close: "metric --name s1_anticipi_chiusi --value <n>; metric --name s1_incasso_eur --value <eur>"}
 
   WF-S2-MANUALE:
-    owner: chief-forge (gael); copy: claude; window: 21→26/07
+    owner: "chief-forge (gael)"
+    copy: claude
+    window: "21→26/07"
     depends: [DEC-EST-001]
     doD: "1 landing + checkout test €1 OK + 3 email caricate (STOP — vendibile, non perfetto)"
     steps:
@@ -71,7 +75,8 @@ workflows:
     memory: {on_sale: "metric --name s2_vendite_manuale --value <n>"}
 
   WF-S3-PAGINE:
-    owner: gael; window: 22→26/07
+    owner: gael
+    window: "22→26/07"
     doD: "crea.illtuo_impero riparte con bio→funnel + >=3 caroselli pubblicati"
     steps:
       - {id: s3.1, who: gael, task: "AUDIT pagine (follower/ultimo post/accessi-2FA/bio)", due: "2026-07-21", output: "07-CONTROL/AUDIT-PAGINE-20260721.md"}
@@ -82,7 +87,9 @@ workflows:
     memory: {daily: "metric --name s3_caroselli_pubblicati --value <n>"}
 
   WF-S4-MENTALITA:
-    owner: gael; window: 23→25/07; hard_rule: "condizione Max F-07: SOLO se automazione 100%, altrimenti STANDBY"
+    owner: gael
+    window: "23→25/07"
+    hard_rule: "condizione Max F-07: SOLO se automazione 100%, altrimenti STANDBY"
     doD_gate: "E2E: batch -> QA auto -> scheduler -> report. Test run dimostrabile"
     steps:
       - {id: s4.1, who: gael, task: "wrap carousel-factory brand mentalita-brutale (config esistente)", due: "2026-07-23"}
@@ -93,7 +100,9 @@ workflows:
     no_go: "dichiarare STANDBY con error --wf WF-S4 e archiviare a settimana prox"
 
   WF-S5-YOUTUBE:
-    owner: youtube-dept; window: 24→25/07; depends: [DEC-EST-004, Gate-S5]
+    owner: youtube-dept
+    window: "24→25/07"
+    depends: [DEC-EST-004, Gate-S5]
     doD: "1 video renderizzato + pubblicato + trace P12 + checkpoint (basta)"
     stages:                              # pipeline 9-stage Empire Studio (dossier S5)
       - {stage: 0, name: memory-bootstrap, agent: strategy-dept}
@@ -111,7 +120,9 @@ workflows:
     rules: ["chiave Fliki solo .env", "1 video solo questa settimana", "ogni run -> memory_manager checkpoint"]
 
   WF-S6-REBRAND-PROMO:
-    owner: chief-forge; decisions: [DEC-EST-002]; window: 22→26/07
+    owner: chief-forge
+    decisions: [DEC-EST-002]
+    window: "22→26/07"
     doD: "1 landing Preventa + 1 demo video <=2min + 1 case study PDF"
     steps:
       - {id: s6.1, who: Max, task: "veto/ok nome (30 sec)", due: "2026-07-22 h12:00"}
@@ -123,16 +134,20 @@ workflows:
     testimonial: "i 7 di S1 chiusi diventano i primi casi pubblici del rebrand"
 
   WF-MEM-EOD:
-    owner: memory-architect; schedule: "daily 19:00"
+    owner: memory-architect
+    schedule: "daily 19:00"
     steps: ["raccolta metriche del giorno (tracker P6)", "aggiornamento dashboard gate", "checkpoint EOD", "segnalazione slittamenti -> error"]
 
   WF-MEM-RETRO:
-    owner: strategy-dept; schedule: "2026-07-26"
+    owner: strategy-dept
+    schedule: "2026-07-26"
     steps: ["status memoria + numeri veri", "per stream: ✅/⚠️/❌ + causa radice", "pattern vincenti -> reasoning-bank", "sync note fisse -> second-brain", "CP RETRO-20260726"]
 
   WF-PERF-LOOP:
-    owner: performance-cell (memory-dir, sponsor TRUTH-CMD); trigger: "post-task di OGNI workflow, ogni singola volta"
-    spec: 03-WORKFLOWS/WF-PERF-LOOP.md; agents: 04-AGENTS/PERFORMANCE-CELL.md
+    owner: "performance-cell (memory-dir, sponsor TRUTH-CMD)"
+    trigger: "post-task di OGNI workflow, ogni singola volta"
+    spec: 03-WORKFLOWS/WF-PERF-LOOP.md
+    agents: 04-AGENTS/PERFORMANCE-CELL.md
     cycle: [T0 azione chiusa, T1 capture PERF record (file write, fuori quota), T2 analisi 5D entro EOD (debug/soluzione/struttura/scope/efficiency), T3 synthesize -> ReasoningBank DRAFT, T4 dispatch TIP/RULE-NOTE/MUTATION-PROP, T5 confirm alla prossima PERF: confirmed->pattern ufficiale | recurred->mutation obbligatoria]
     storage: [00-MEMORY/performances, 00-MEMORY/feedback]
     rules: ["non blocca mai (non e' un verificatore)", "anti-nagging: stesso TIP non ripetuto entro 3 task", "FB senza conferma >5 task -> riesumato in EOD-SYNC", "solo pattern confirmed precaricati dal pre_task hook"]

@@ -57,6 +57,26 @@ workflow `DIGITAL-EMPIRE/` interrotto da limite-sessione: da riprendere (G-EST-4
 - Riscontrato e risanato il debito su `WORKFLOW-ESTATE/` compilando i pilastri `05-TEMPLATES-E-KIT/` e `06-DASHBOARD-E-METRICHE/`.
 **Test di integrazione:** tutti i 64 test sono VERDI, `python -m empire conform WORKFLOW-ESTATE` ha ora **0 block**!
 
+## ✅ GAEL — 2026-07-23 — G-A + G-B + G-C TUTTI CHIUSI (task runtime completo)
+I 3 lotti di `TASK-GAEL-20260722-EMPIRE-RUNTIME.md` sono chiusi, testati, pushati:
+- **G-A** (CP-20260722-007): `empire/loader.py`+`index.py` — 439 agenti, load 2.27s, 34 test.
+- **G-B** (CP-20260722-009): fix `memory_manager.py` — crash Unicode Windows risolto, CLI invariata.
+- **G-C** (CP-20260723-001): `empire/flow/` — motore workflows.yaml, 6 gate reali, no eval(), 31 test.
+  Suite totale **118 test verdi**. `cli.py` mai toccato (tutto via plugin loop).
+**🔴 FINDING per Max/Claude (dal motore flow, verità misurata):** `flow gates` marca
+**Gate-FUNNEL ROSSO** — `Crea siti/Siti CCM/manuale.html` contiene ancora `YOUR_STRIPE` (placeholder
+Stripe mai sostituito), mentre `06-DASHBOARD-E-METRICHE/DASHBOARD.md` lo mostra 🟢. Il file dice la
+verità, la dashboard no. Serve: Max crea i 2 Payment Link Stripe reali (già aperto da CP-003).
+**2 bug reali corretti costruendo G-C:** (1) `workflows.yaml` non era YAML valido (9 righe
+`k: v; k2: v2` compattate — mai caricato da un parser prima); (2) i 6 gate erano solo referenziati
+per nome, mai formalizzati come dato macchina. Entrambi corretti su `WORKFLOW-ESTATE/.../workflows.yaml`
+(ADR-003 wrap, zero info perse). La copia gemella `DIGITAL-EMPIRE/03-WORKFLOWS/workflows.yaml` NON
+toccata da me (decisione aperta di Max su quale copia è canonica).
+**Handoff a Claude:** integrazione flow↔memory (GEM-02) e flow↔inspect (GEM-03) + `flow today`
+quando quei moduli sono pronti — lasciati aperti, non dichiarati fatti.
+
+---
+
 ## ⚠️ COORDINAMENTO GAEL — 2026-07-22 — G-A in corso (loader+index), poi G-B, poi G-C
 **Perimetro rispettato:** solo `empire/loader.py`, `empire/loader_cli.py`, `empire/index.py`,
 `empire/index_cli.py`, `empire/tests/test_loader.py`, `empire/tests/test_index.py` — nessun file
