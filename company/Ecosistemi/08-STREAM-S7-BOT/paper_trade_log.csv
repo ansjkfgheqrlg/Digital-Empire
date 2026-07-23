@@ -1,0 +1,7 @@
+timestamp,action,token_address,amount_sol,base_fee_sol,bribe_fee_sol,total_cost_sol,slippage_bps,status
+2026-07-23T08:47:18.147919,BUY,mock_token_address_123,0.5,5e-06,0.001,0.501005,50,SUCCESS
+2026-07-23T08:47:19.666784,BUY,mock_token_address_123,0.5,5e-06,0.001,0.501005,50,SUCCESS
+2026-07-23T08:47:46.343588,BUY,mock_token_address_123,0.5,5e-06,0.001,0.501005,50,SUCCESS
+2026-07-23T08:47:47.850155,BUY,mock_token_address_123,0.5,5e-06,0.001,0.501005,50,SUCCESS
+2026-07-23T08:48:30.328977,BUY,mock_token_address_123,0.5,5e-06,0.001,0.501005,50,SUCCESS
+2026-07-23T08:48:31.843925,BUY,mock_token_address_123,0.5,5e-06,0.001,0.501005,50,SUCCESS
