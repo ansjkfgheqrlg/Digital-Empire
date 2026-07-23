@@ -11,6 +11,7 @@ Comandi del seed (funzionanti):
   paths [alias]          alias logici -> path reali, con esistenza verificata
   links <workflow>       riferimenti rotti e riparabili nei .md
   art8 <workflow>        i 6 pilastri del Mandato Art.8
+  adr001                 la holding ha esattamente 10 ecosistemi (ADR-001)
   conform <workflow>     art8 + links
   doctor                 tutto; exit 1 se esistono finding 'block'
 
@@ -90,6 +91,10 @@ def cmd_art8(a) -> int:
     return _print_findings(_conform.check_art8(a.workflow), a.json)
 
 
+def cmd_adr001(a) -> int:
+    return _print_findings(sorted(_conform.check_adr001(), key=lambda f: f.rank), a.json)
+
+
 def cmd_conform(a) -> int:
     f = _conform.check_art8(a.workflow) + _conform.check_links(a.workflow)
     f.sort(key=lambda x: (x.rank, str(x.path)))
@@ -129,6 +134,10 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("workflow", nargs="?", default="WORKFLOW-ESTATE")
     p.add_argument("--json", action="store_true")
     p.set_defaults(fn=cmd_art8)
+
+    p = sub.add_parser("adr001", help="ADR-001: la holding ha esattamente 10 ecosistemi")
+    p.add_argument("--json", action="store_true")
+    p.set_defaults(fn=cmd_adr001)
 
     p = sub.add_parser("conform", help="art8 + links")
     p.add_argument("workflow", nargs="?", default="WORKFLOW-ESTATE")

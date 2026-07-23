@@ -118,6 +118,43 @@ class TestConform(unittest.TestCase):
         self.assertEqual(len(f), 1)
         self.assertEqual(f[0].severity, "block")
 
+    def test_adr001_canonical_ecosystems_are_ten(self):
+        self.assertEqual(len(conform.ADR001_ECOSYSTEMS), 10)
+        self.assertEqual(len(set(conform.ADR001_ECOSYSTEMS)), 10)
+
+    def test_adr001_canonical_ecosystems_exist_on_disk(self):
+        base = paths.resolve("ecosistemi")
+        for name in conform.ADR001_ECOSYSTEMS:
+            with self.subTest(eco=name):
+                self.assertTrue((base / name).is_dir(), f"ecosistema canonico mancante: {name}")
+
+    def test_adr001_flags_extra_folders(self):
+        """Ogni cartella non canonica va segnalata: e' cosi' che si intercetta un import
+        depositato nel posto sbagliato (caso reale 2026-07-23: APEX-7 / Arena / S7-Bot)."""
+        base = paths.resolve("ecosistemi")
+        extra = {d.name for d in base.iterdir()
+                 if d.is_dir() and d.name not in conform.ADR001_ECOSYSTEMS}
+        flagged = {f.path.name for f in conform.check_adr001() if f.rule == "ADR-001"}
+        for name in extra:
+            self.assertIn(name, flagged, f"cartella extra non segnalata: {name}")
+
+    def test_adr001_flags_duplicate_numbers_as_block(self):
+        """Due ecosistemi con lo stesso prefisso numerico rompono i riferimenti per numero."""
+        base = paths.resolve("ecosistemi")
+        by_num: dict[str, list[str]] = {}
+        for d in base.iterdir():
+            if d.is_dir():
+                by_num.setdefault(d.name.split("-")[0], []).append(d.name)
+        dupes = {n for n, v in by_num.items() if len(v) > 1}
+        blocks = [f for f in conform.check_adr001()
+                  if f.severity == "block" and "duplicato" in f.message]
+        self.assertEqual(len(blocks), len(dupes))
+
+    def test_run_all_includes_adr001(self):
+        rules = {f.rule for f in conform.run_all("WORKFLOW-ESTATE")}
+        if conform.check_adr001():
+            self.assertIn("ADR-001", rules)
+
     def test_links_finds_fixable_refs(self):
         findings = conform.check_links("WORKFLOW-ESTATE")
         fixable = [f for f in findings if f.rule == "LINK-FIXABLE"]

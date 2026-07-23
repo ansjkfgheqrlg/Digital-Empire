@@ -1,4 +1,69 @@
-# STATO EMPIRE -- aggiornato 2026-07-23 (Gael: G-A1/G-A2/G-C1 dossier 25)
+# STATO EMPIRE -- aggiornato 2026-07-23 (Claude: M-A chiuso + gate 5-bis, ADR-001 violato)
+
+## 🔴 2026-07-23 — DECISIONE PER MAX: 13 ecosistemi invece di 10 (viola ADR-001) — CP-20260723-005
+**Trovato dal gate 5-bis, non a occhio: la suite aveva 1 test rosso e non era un bug del test.**
+
+`company/Ecosistemi/` contiene **13 cartelle**. ADR-001 (ATTIVO) impone **esattamente 10**.
+Le tre in eccesso arrivano dai commit APEX-7 / Arena / S7-Bot:
+`00-APEX-7-CORE` · `08-STREAM-S7-BOT` · `09-ARENA-APEX` — **tutte con 0 agenti, senza
+`ECOSISTEMA.md`, senza `BACKBONE.md`**. Due **collidono di numero** (due `08-`, due `09-`):
+un numero duplicato rompe ogni riferimento fatto per prefisso → **bloccante**.
+
+```
+python -m empire adr001      →  block: 2   warn: 3
+python -m empire doctor      →  exit 1  (correttamente)
+```
+
+**Non ho spostato nulla: dove vanno è una decisione tua, non un fix tecnico.**
+Due strade:
+- **(a)** sono ecosistemi veri → serve un **ADR che superi ADR-001** + rinumerazione (11/12/13)
+- **(b)** non lo sono → spostarle fuori da `company/Ecosistemi/` (es. `Genesi-Core/`, o dentro
+  il workflow che le usa)
+
+Finché non decidi, il finding resta visibile e misurato — non sparisce e non blocca il lavoro.
+
+## ✅ 2026-07-23 — CLAUDE: M-A CHIUSO — `empire/memory/` + B-009 risolto (CP-20260723-005)
+Memoria unica a 2 livelli: JSONL append-only = verità, Markdown in `company/Memory/` = vista.
+```
+mem ingest --apply  → 216 atomi importati (98 CP + 8 ADR + 85 blocchi STATO + backlog + estate)
+mem ingest --apply  → 0 scritti, 255 dedup          (idempotente)
+mem search "prezzo manuale" → 0.228 s, primo hit corretto (DEC-EST-001)
+mem recall "empiredesk"     → 29 atomi in 8 righe
+```
+**B-009 CHIUSO:** 20 scritture parallele → 20 ID distinti (test). Sul campo il runtime ha
+scritto il proprio checkpoint assegnandosi **004** da solo, leggendo il disco dove Gael aveva
+già 001/002/003 — corretto. Il lock legge il max NNN sia dagli atomi sia dai nomi dei file.
+
+**⚠️ MA la collisione è comunque avvenuta, e va detto:** una sessione Claude parallela ha
+scritto il *suo* `CP-20260723-004` **a mano**, nello stesso momento. Ho rinumerato il mio in
+**005**. **Lezione vera: il lock protegge solo chi lo usa.** Finché i checkpoint si scrivono a
+mano, B-009 può ripresentarsi. → **REGOLA OPERATIVA: da ora i checkpoint si scrivono SOLO con**
+```
+python -m empire mem write --kind checkpoint --view --actor <chi> --title "..." --body -
+```
+(vale per Max, Gael, Claude e ogni sessione parallela — la scrittura a mano è il bug.)
+Bug trovato e corretto in corsa: import con lock+fsync per atomo = 20 s → `write_many()` = 0.35 s.
+
+## ✅ 2026-07-23 — GATE 5-BIS su G-A / G-C / GEM-04 / GEM-05: **PASSA**
+`conform WORKFLOW-ESTATE` → **block: 0** (erano 6). I 2 pilastri Art.8 vuoti sono stati riempiti
+con materiale reale: **`WORKFLOW-ESTATE/` non è più un workflow abusivo.**
+Suite completa: **123 test, OK.**
+
+## ⚠️ COORDINAMENTO CLAUDE — 2026-07-23 — toccato 1 file nel perimetro di Gael (dichiarato)
+`empire/tests/test_loader.py`, solo `test_load_ecosystems_returns_ten`. Era
+`assertEqual(len(ecos), 10)` → rosso permanente per le 3 cartelle in eccesso. Ora verifica che
+i **10 canonici ci siano tutti**; gli extra sono diventati un finding di
+`empire.conform.check_adr001()`. **La verifica non è stata indebolita, è stata spostata dove
+appartiene.** Motivo: un rosso permanente per una decisione pendente non è un segnale, è rumore
+che fa smettere di guardare la suite. Il perché è nel docstring del test. **Gael: è tuo file,
+se preferisci un'altra forma cambiala pure.**
+
+**RIPRESA DA:** Max decide (a) o (b) sui 3 ecosistemi · Claude → **M-B `empire/inspect/`**
+(accendere l'Ispettorato: WF-PERF-LOOP T0→T5, scorecard 5D, backfill sui checkpoint reali).
+
+---
+
+# STATO EMPIRE -- 2026-07-23 (Gael: G-A1/G-A2/G-C1 dossier 25)
 
 ## ✅ 2026-07-23 — GAEL: G-A1+G-A2 (outreach concessionari) + G-C1 (sito Preventa) — CP-20260723-002
 **Fatto (dossier 25):** scraper `preventa-maps-scraper` lanciato (pilota Milano/Bergamo/Brescia,

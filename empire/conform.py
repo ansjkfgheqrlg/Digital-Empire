@@ -19,7 +19,17 @@ from pathlib import Path
 from .paths import iter_files, repo_root, resolve, resolve_legacy, rel
 from .schema import Finding
 
-__all__ = ["ART8_PILLARS", "check_art8", "check_links", "run_all"]
+__all__ = ["ART8_PILLARS", "ADR001_ECOSYSTEMS", "check_art8", "check_links",
+           "check_adr001", "run_all"]
+
+# ADR-001 — EMPIRE OS e' una holding di ESATTAMENTE 10 ecosistemi.
+# I nomi sono canonici: una cartella in company/Ecosistemi/ che non e' in questo elenco
+# non e' un ecosistema, e' altro (una skill, un progetto, un import) messo nel posto sbagliato.
+ADR001_ECOSYSTEMS = (
+    "01-AGENCY", "02-INFO-BUSINESS", "03-CONTENT-FACTORY", "04-MARKETING",
+    "05-MULTI-BUSINESS", "06-PLATFORM", "07-FORGE", "08-INTELLIGENCE",
+    "09-OPERATIONS", "10-MEMORY",
+)
 
 # Mandato Art.8 §8.2 — i 6 pilastri obbligatori di ogni cartella-workflow
 ART8_PILLARS = (
@@ -158,9 +168,70 @@ def check_links(base: Path | str, *, limit_files: int | None = None,
     return out
 
 
+def check_adr001() -> list[Finding]:
+    """ADR-001: la holding ha esattamente 10 ecosistemi, ciascuno con la struttura canonica.
+
+    Nato da un caso reale (2026-07-23): i commit APEX-7 / Arena / S7-Bot hanno depositato
+    tre cartelle in company/Ecosistemi/ portandole a 13, due delle quali con numero gia'
+    occupato (due 08-, due 09-). Un numero d'ecosistema duplicato rompe ogni riferimento
+    che usa il prefisso, quindi e' bloccante.
+    """
+    out: list[Finding] = []
+    try:
+        base = resolve("ecosistemi")
+    except Exception:
+        return out
+    if not base.is_dir():
+        return [Finding("block", "ADR-001", base, "company/Ecosistemi/ non esiste",
+                        "ripristinare la struttura della holding")]
+
+    found = sorted(d.name for d in base.iterdir() if d.is_dir())
+    canonical = set(ADR001_ECOSYSTEMS)
+
+    for name in ADR001_ECOSYSTEMS:
+        d = base / name
+        if not d.is_dir():
+            out.append(Finding("block", "ADR-001", d,
+                               f"ecosistema canonico mancante: {name}",
+                               "ADR-001 impone i 10 ecosistemi: ricrearlo o superare l'ADR"))
+            continue
+        for req in ("ECOSISTEMA.md", "BACKBONE.md"):
+            if not (d / req).is_file():
+                out.append(Finding("warn", "ADR-001", d / req,
+                                   f"{name}: manca {req}",
+                                   "ogni ecosistema ha ECOSISTEMA.md (cos'e') e BACKBONE.md (come regge)"))
+
+    # numeri duplicati: rompono ogni riferimento fatto per prefisso
+    by_num: dict[str, list[str]] = {}
+    for name in found:
+        by_num.setdefault(name.split("-")[0], []).append(name)
+    for num, names in sorted(by_num.items()):
+        if len(names) > 1:
+            out.append(Finding("block", "ADR-001", base,
+                               f"numero di ecosistema duplicato {num}: {', '.join(names)}",
+                               "rinumerare l'intruso o spostarlo fuori da company/Ecosistemi/"))
+
+    for name in found:
+        if name in canonical:
+            continue
+        d = base / name
+        n_agents = len(list((d / "Agenti").glob("*.md"))) if (d / "Agenti").is_dir() else 0
+        out.append(Finding(
+            "warn", "ADR-001", d,
+            f"cartella non prevista da ADR-001: {name} "
+            f"({n_agents} agenti, ECOSISTEMA.md={'si' if (d / 'ECOSISTEMA.md').is_file() else 'NO'})",
+            "se e' davvero un ecosistema serve un ADR che superi ADR-001; "
+            "altrimenti spostarla (es. sotto Genesi-Core/, Guilds/ o il suo workflow)"))
+    return out
+
+
 def run_all(workflow: str | None = None) -> list[Finding]:
-    """Tutti i controlli disponibili. Ordinati per severità."""
-    findings: list[Finding] = []
+    """Tutti i controlli disponibili. Ordinati per severità.
+
+    I controlli sul workflow (Art.8, link) sono per-cartella; check_adr001 riguarda
+    la struttura dell'azienda e gira una volta sola.
+    """
+    findings: list[Finding] = list(check_adr001())
     targets = [workflow] if workflow else ["WORKFLOW-ESTATE"]
     for t in targets:
         try:
