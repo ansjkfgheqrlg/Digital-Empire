@@ -1,5 +1,13 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-23 (Analisi prodotti DE + IG morto, Claude/Max)
+- ANALISI: dossier 23 (potenziale prodotti). Dato reale dal codice `agency-empire/`: i workflow costano
+  **€5.000-15.000** (non SaaS). 1 vendita workflow > tutti i 7 concessionari settembre. Riprioritizzazione:
+  🥇 Outreach Factory via dogfooding (usare la ns macchina outreach su noi stessi per prenotare demo) ·
+  🥈 Preventa (cash veloce volume, sezione sito separata) · 🥉 Content Factory · Corso/Second Brain giù.
+- FATTO: IG `crea.illtuo_impero` a zero → fork D-EST-006 risolto in Opzione B (tutto outbound freddo),
+  Corso CCM parcheggiato per l'estate. Blocco n.1 = lead freddo + 1 prova (Novacar case study), non altri prodotti.
+
 ## 2026-07-23 (Piano Estate V2 diversificato + dati YouTube reali, Claude/Max)
 - ANALISI/PLAN: dossier 22 (piano estate V2). Corretti 2 errori miei: prodotto = Corso CCM (non "Manuale"
   = lead magnet); 7 concessionari = settembre non luglio. 5 stream diversificati (Preventa-freddo, Corso

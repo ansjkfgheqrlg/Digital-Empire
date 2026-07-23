@@ -13,9 +13,14 @@ estate = **outreach automatico + cold call su concessionari NUOVI**. (E4) servon
 (+ sezione Preventa nuova) · M4 NFT ⚠️ lane speculativa separata (capitale a rischio, NON revenue certo) ·
 M5 YouTube funnel (compounding). Dettaglio + timing + confidenza nel dossier 22.
 
-**🔧 FORK aperto (D-EST-006, Max decide):** tolti i 7 da luglio, "primo euro in 7gg" è difficile.
-Opzione A = spingi Corso questa settimana (serve audience calda, da misurare). Opzione B = 2-3 settimane,
-costruisci le macchine. Default se Max non risponde in 24h: **B**.
+**🔧 FORK RISOLTO (D-EST-006):** Max conferma **IG `crea.illtuo_impero` a zero** → Opzione A (lancio a
+pubblico caldo) MORTA. Si va in **Opzione B: tutto outbound freddo.** Corso CCM parcheggiato per l'estate.
+
+**💥 SCOPERTA dossier 23 (analisi prodotti):** il sito `agency-empire` vende **workflow a €5.000-15.000**
+(non SaaS). **1 vendita workflow > tutti i 7 concessionari settembre insieme.** Nuova priorità estate:
+🥇 **Outreach Factory via dogfooding** (usa la nostra macchina outreach su noi stessi per prenotare demo
+workflow) · 🥈 Preventa (cash veloce, volume) · 🥉 Content Factory · Corso/Second Brain deprioritizzati.
+Blocco n.1 = **flusso lead freddo + 1 prova credibile (Novacar case study)**, non un altro prodotto.
 
 **TASK ASSEGNATI:**
 - 🟣 **GAEL:** G-EST-1 sezione Preventa su `agency-empire/` · G-EST-2 macchina outreach concessionari
