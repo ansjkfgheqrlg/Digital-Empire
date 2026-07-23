@@ -1,0 +1,5 @@
+﻿[2026-07-23 08:03:16] CONFLITTO DI SYNC
+Pull --rebase fallito: Updating 30065559..c297a183 Created autostash: 85b6f421
+Il tuo lavoro e' al sicuro (committato in locale).
+Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
+Poi cancella questo file.

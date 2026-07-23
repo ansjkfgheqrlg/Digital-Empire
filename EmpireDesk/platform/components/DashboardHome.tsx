@@ -41,10 +41,11 @@ export const DashboardHome: React.FC<DashboardHomeProps> = ({ currentUser, tasks
   // Heavy Metal Gradient: White -> Light Gray -> Dark Gray -> Light Gray (Simulates reflection)
   // Beveled Borders: Light Top/Left, Dark Bottom/Right
   const pureSilverBlockClass = `
-    bg-gradient-to-br from-[#ffffff] via-[#e2e8f0] to-[#94a3b8] 
+    bg-gradient-to-br from-[#ffffff] via-[#e2e8f0] to-[#94a3b8]
     border-t border-l border-white/90 border-b border-r border-slate-500/60
-    rounded-sm p-6 shadow-[0_10px_20px_-5px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.8)]
-    relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300
+    rounded-2xl p-6 shadow-[0_10px_20px_-5px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.8)]
+    relative overflow-hidden group hover:-translate-y-1 hover:shadow-[0_20px_35px_-8px_rgba(0,0,0,0.65),inset_0_1px_0_rgba(255,255,255,0.8)]
+    transition-all duration-300
   `;
   
   // Text needs to be dark to contrast with silver
@@ -137,21 +138,21 @@ export const DashboardHome: React.FC<DashboardHomeProps> = ({ currentUser, tasks
                   <ShieldCheck className="w-4 h-4 text-slate-600"/> System Health
               </h3>
               <div className="space-y-4 flex-1 relative z-10">
-                  <div className="flex items-center justify-between p-3 bg-white/50 rounded-sm border border-white/60 shadow-sm backdrop-blur-sm">
+                  <div className="flex items-center justify-between p-3 bg-white/50 rounded-xl border border-white/60 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:bg-white/60">
                       <div className="flex items-center gap-3">
                           <Database className="w-4 h-4 text-slate-700"/>
                           <span className={`text-xs font-bold ${silverTextMain}`}>Database Leads</span>
                       </div>
                       <span className="text-[10px] font-bold text-emerald-700 flex items-center gap-1"><span className="w-1.5 h-1.5 bg-emerald-600 rounded-full animate-pulse shadow-[0_0_5px_#059669]"></span> ONLINE</span>
                   </div>
-                  <div className="flex items-center justify-between p-3 bg-white/50 rounded-sm border border-white/60 shadow-sm backdrop-blur-sm">
+                  <div className="flex items-center justify-between p-3 bg-white/50 rounded-xl border border-white/60 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:bg-white/60">
                       <div className="flex items-center gap-3">
                           <Server className="w-4 h-4 text-slate-700"/>
                           <span className={`text-xs font-bold ${silverTextMain}`}>API Gateway</span>
                       </div>
                       <span className="text-[10px] font-bold text-emerald-700 flex items-center gap-1"><span className="w-1.5 h-1.5 bg-emerald-600 rounded-full animate-pulse shadow-[0_0_5px_#059669]"></span> ONLINE</span>
                   </div>
-                  <div className="flex items-center justify-between p-3 bg-white/50 rounded-sm border border-white/60 shadow-sm backdrop-blur-sm">
+                  <div className="flex items-center justify-between p-3 bg-white/50 rounded-xl border border-white/60 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:bg-white/60">
                       <div className="flex items-center gap-3">
                           <Activity className="w-4 h-4 text-slate-700"/>
                           <span className={`text-xs font-bold ${silverTextMain}`}>Latency</span>

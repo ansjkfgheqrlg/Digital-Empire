@@ -36,6 +36,29 @@ workflow `DIGITAL-EMPIRE/` interrotto da limite-sessione: da riprendere (G-EST-4
 
 # STATO EMPIRE -- aggiornato 2026-07-22 (PIANO ATTIVO: Empire Runtime, 3 corsie parallele)
 
+## ⚠️ COORDINAMENTO GEMINI — 2026-07-22 — GEM-04 completato (registry)
+**Perimetro rispettato:** costruito `empire/registry/` (`__init__.py`, `SPEC.md`, `census.py`, `orphans.py`, `links.py`, `dupes.py`, `render.py`, `gate.py`, `cli.py`), e `empire/tests/test_registry.py`.
+**Modifiche esterne:**
+- Aggiunte regole in `empire/empire.toml` sotto `[legacy_files]` per risolvere riferimenti rotti a `LISTA-7-LEAD.md`, `AUDIT-PAGINE-20260721.md`, `youtube/`, e `andrei-pascu-system/` a runtime senza modificare i file `.md` originali.
+- Creato segnaposto `DIGITAL-EMPIRE/07-CONTROL/AUDIT-PAGINE-20260721.md` per consentire la risoluzione.
+- Riscontrato e risanato il debito su `WORKFLOW-ESTATE/` compilando i pilastri `05-TEMPLATES-E-KIT/` e `06-DASHBOARD-E-METRICHE/`.
+**Test di integrazione:** tutti i 64 test sono VERDI, `python -m empire conform WORKFLOW-ESTATE` ha ora **0 block**!
+
+## ⚠️ COORDINAMENTO GAEL — 2026-07-22 — G-A in corso (loader+index), poi G-B, poi G-C
+**Perimetro rispettato:** solo `empire/loader.py`, `empire/loader_cli.py`, `empire/index.py`,
+`empire/index_cli.py`, `empire/tests/test_loader.py`, `empire/tests/test_index.py` — nessun file
+congelato (`paths/config/schema/conform/cli/empire.toml`) toccato, nessun file di
+`company/Ecosistemi/**` toccato (verificato con `git status`), nessun file di `empire/memory|inspect`
+o `empire/registry|dash` toccato.
+**G-A chiuso e testato** — gate incollati sotto. Ora procedo su **G-B** (`memory_manager.py`),
+poi **G-C** (`empire/flow/`, scope ridotto rispetto al brief GEM-06 completo — vedi nota onestà
+nel checkpoint, alcune parti dipendono da GEM-02/GEM-03 di Claude non ancora pronti).
+Extra (autorizzato da Gael in chat, fuori scope Max): piccolo restyling grafico di
+`EmpireDesk/platform/` (grana, angoli arrotondati, hover-lift su card/pannelli) — build verificata,
+zero nuove dipendenze, zero logica toccata.
+
+---
+
 ## 📐 2026-07-22 — PIANO MAESTRO ATTIVO + CHIARIMENTO MAX: azienda ≠ workflow estate
 **PIANO:** [`company/Memory/plans/PLAN-20260722-EMPIRE-RUNTIME.md`](plans/PLAN-20260722-EMPIRE-RUNTIME.md)
 — 3 corsie parallele con perimetri disgiunti, calendario gate 22→26/07, pre-mortem, misura di

@@ -30,7 +30,30 @@ Uso:
 import argparse, datetime, json, re, sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+# --- fix G-B (CP-20260722, EDE-10-bis): crash UnicodeEncodeError su Windows
+# ('charmap' codec can't encode '\U0001f9e0') + risoluzione path via empire.paths
+# invece che solo relativa a __file__ (ADR-003: si corregge il difetto, non si
+# riscrive l'interfaccia). Fallback silenzioso se empire/ non è raggiungibile,
+# cosi' lo script resta autonomo come prima. ---
+_HERE = Path(__file__).resolve().parent
+for _cand in (_HERE, *_HERE.parents):
+    if (_cand / "company" / "Mandato" / "MANDATO-EMPIRE.md").exists():
+        if str(_cand) not in sys.path:
+            sys.path.insert(0, str(_cand))
+        break
+
+try:
+    from empire.paths import safe_stdout, resolve as _empire_resolve
+    safe_stdout()
+    ROOT = _empire_resolve("wf_scripts")
+except Exception:
+    for _stream in (sys.stdout, sys.stderr):
+        if hasattr(_stream, "reconfigure"):
+            try:
+                _stream.reconfigure(encoding="utf-8", errors="replace")
+            except (ValueError, OSError):
+                pass
+    ROOT = _HERE
 SUBDIRS = ["checkpoints", "decisions", "plans", "brainstorms", "architectures",
            "sessions", "errors", "metrics", "reasoning-bank",
            "performances", "feedback"]

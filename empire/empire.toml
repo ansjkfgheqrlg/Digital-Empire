@@ -74,6 +74,14 @@ skills_project = ".claude/skills"
 # Eccezioni: file spostati altrove durante la riorganizzazione Art.8
 [legacy_files]
 "00-MEMORY/memory_manager.py" = "WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/memory_manager.py"
+"07-CONTROL/LISTA-7-LEAD.md" = "WORKFLOW-ESTATE/06-DASHBOARD-E-METRICHE/LISTA-LEAD.md"
+"07-CONTROL/AUDIT-PAGINE-20260721.md" = "DIGITAL-EMPIRE/07-CONTROL/AUDIT-PAGINE-20260721.md"
+"youtube" = "Formazzione/Youtube"
+"andrei-pascu-system" = "SKILL & Agenti/Empire Studio Suite/andrei-pascu-system"
+"05-TEMPLATES-E-KIT" = "WORKFLOW-ESTATE/05-TEMPLATES-E-KIT"
+
+
+
 
 [scan]
 exclude_dirs = [".git", "node_modules", ".next", "__pycache__", ".cache", ".data",

@@ -69,6 +69,20 @@
         background-color: #050505;
         color: #CBD5E1;
         font-family: 'Inter', sans-serif;
+        position: relative;
+      }
+      /* SUBTLE FILM GRAIN OVERLAY — quasi impercettibile, coerente col look "metallo spazzolato" */
+      body::after {
+        content: '';
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        opacity: 0.03;
+        mix-blend-mode: overlay;
+        pointer-events: none;
+        z-index: 40;
       }
       /* Custom Scrollbar */
       ::-webkit-scrollbar {
@@ -106,13 +120,41 @@
         background: linear-gradient(180deg, rgba(30, 35, 40, 0.9) 0%, rgba(15, 20, 25, 1) 100%);
         border: 1px solid rgba(200, 210, 220, 0.15); /* Slightly lighter border for silver look */
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255,255,255,0.05);
+        border-radius: 14px;
+        transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
       }
-      
+      .metallic-panel:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255,255,255,0.06);
+        border-color: rgba(200, 210, 220, 0.28);
+      }
+
       .metallic-panel-diamond {
         background-color: #0D0D0D;
         /* Updated to Steel Blue borders */
         border: 1px solid rgba(93, 138, 168, 0.3);
         box-shadow: 0 4px 20px -5px rgba(93, 138, 168, 0.15);
+        border-radius: 14px;
+        transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+      }
+      .metallic-panel-diamond:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px -6px rgba(93, 138, 168, 0.25);
+        border-color: rgba(93, 138, 168, 0.5);
+      }
+
+      /* AUREUS CARD — variante riusabile per i blocchi della dashboard (angoli smussati + hover-lift) */
+      .aureus-card {
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(26, 29, 33, 0.9) 0%, rgba(17, 19, 21, 1) 100%);
+        border: 1px solid rgba(93, 138, 168, 0.18);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255,255,255,0.05);
+        transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+      }
+      .aureus-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 28px -6px rgba(93, 138, 168, 0.2), inset 0 1px 0 rgba(255,255,255,0.06);
+        border-color: rgba(93, 138, 168, 0.35);
       }
 
       input, select, textarea {

@@ -1,0 +1,8 @@
+# EMPIRE — dipendenze esterne (stdlib-first, ogni voce motivata).
+# Owner: Gael · Origine: FORGE (lotto G-C, CP-20260722)
+#
+# pyyaml: workflows.yaml (WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/) mescola flow-style
+# e block-style, mapping annidati, date ISO — un parser YAML scritto a mano
+# sarebbe fragile su dati di produzione reali. pyyaml e' lo standard de facto,
+# nessuna alternativa stdlib esiste per YAML.
+pyyaml>=6.0
