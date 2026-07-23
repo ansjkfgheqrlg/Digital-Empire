@@ -22,6 +22,19 @@ pubblico caldo) MORTA. Si va in **Opzione B: tutto outbound freddo.** Corso CCM 
 workflow) · 🥈 Preventa (cash veloce, volume) · 🥉 Content Factory · Corso/Second Brain deprioritizzati.
 Blocco n.1 = **flusso lead freddo + 1 prova credibile (Novacar case study)**, non un altro prodotto.
 
+**📅 CALENDARIO ESECUTIVO → dossier 24** ([`24-CALENDARIO-ESECUTIVO-ESTATE-V2-E-S7.md`](../../PIANO-MAESTRO/24-CALENDARIO-ESECUTIVO-ESTATE-V2-E-S7.md)):
+task giorno-per-giorno dal 23/07, Opzione B (outbound freddo). Sostituisce il calendario 21→26 del P7.
+- 🟣 GAEL: 23-24/07 sezione Preventa + PROVE sul sito · 25/07 verifica+parcheggia funnel Corso ·
+  25-28/07 macchina outreach 2 target (workflow+concessionari) · 29-31/07 riempi zone vuote workflow.
+- 🔵 MAX oggi 23/07: ICP workflow (M-EST-6) + capacità delivery (M-EST-7) + veto prezzo Preventa (M-EST-4)
+  + conferma delega S7 a Gemini (D-EST-007). Sett.2: avvia outbound → prime demo.
+
+**🎰 D-EST-007 — S7 (bot NFT/memecoin): APPROVATO come R&D delegato a GEMINI**, NON come revenue estate.
+Condizioni: paper-trading prima (zero capitale finché non prova un edge), €0 nelle proiezioni estate, solo
+capitale-che-si-può-perdere dopo gate, esecuzione 100% Gemini (Claude/Gael non toccano → zero deviazione da
+S1/S2). Brief pronto: [`company/Antigravity-Briefs/GEM-07-S7-NFT-BOT-BRIEF.md`](../Antigravity-Briefs/GEM-07-S7-NFT-BOT-BRIEF.md).
+Nota: il report S7 usava framing vecchio (Manuale, €131k) — riallineato a Corso + modello reale €3-6k estate.
+
 **TASK ASSEGNATI:**
 - 🟣 **GAEL:** G-EST-1 sezione Preventa su `agency-empire/` · G-EST-2 macchina outreach concessionari
   (wrap, ADR-003) · G-EST-3 attiva+testa funnel Corso CCM · G-EST-4 riempi zone vuote `DIGITAL-EMPIRE/`.

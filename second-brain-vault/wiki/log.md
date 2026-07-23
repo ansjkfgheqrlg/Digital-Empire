@@ -1,5 +1,12 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-23 (Calendario esecutivo V2 + S7 NFT bot delegato Gemini, Claude/Max)
+- PLAN: dossier 24 = calendario giorno-per-giorno dal 23/07 (Opzione B outbound). Task Gael (G-EST-1..5) +
+  Max (M-EST-4,6,7) sui giorni. Sostituisce il calendario 21→26 del P7.
+- DECISIONE D-EST-007: bot NFT/memecoin (S7) APPROVATO come R&D delegato a Gemini, paper-trading first,
+  €0 nel piano revenue estate, esecuzione 100% Gemini (isola S1/S2). Brief: `Antigravity-Briefs/GEM-07-S7-NFT-BOT-BRIEF.md`.
+  Report S7 analizzato: tecnicamente solido e onesto, ma framing vecchio (Manuale/€131k) riallineato.
+
 ## 2026-07-23 (Analisi prodotti DE + IG morto, Claude/Max)
 - ANALISI: dossier 23 (potenziale prodotti). Dato reale dal codice `agency-empire/`: i workflow costano
   **€5.000-15.000** (non SaaS). 1 vendita workflow > tutti i 7 concessionari settembre. Riprioritizzazione:
