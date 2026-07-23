@@ -1,16 +1,18 @@
 # S7 SWARM MEMORY INDEX
 
 > **Status**: Living Document, aggiornato ad ogni operazione.
-> **Principio Principale**: P10 (Self-Improvement Loops) e Invariante 1 di Master-Build-Architecture (Memory Ecosystem).
+> **Principali Reference**: P10 (Self-Improvement Loops), P12 (Traceability), Invariante 1 di Master-Build-Architecture (Memory Ecosystem).
 
 ## Tracciabilità Corrente (Case State)
-- **Fase**: Bootstrap Architetturale
-- **Ultimo Checkpoint**: [CP-001](file:///c:/Users/Utente/Desktop/qui%20tutto/Digital%20Empire/company/Ecosistemi/08-STREAM-S7-BOT/memory/checkpoints/CP-001-memory-bootstrap.md)
-- **Ultima Decisione Architetturale**: [DEC-001](file:///c:/Users/Utente/Desktop/qui%20tutto/Digital%20Empire/company/Ecosistemi/08-STREAM-S7-BOT/memory/decisions/DEC-001-swarm-topology.md)
+- **Fase**: Fase 0-5 (Memory Bootstrap & Architecture Scaffold)
+- **Ultimo Checkpoint**: `CP-002-restart-architecture`
+- **Ultima Decisione Architetturale**: `DEC-002-strict-documental-architecture`
+- **Obiettivo**: Costruzione Swarm >25 Agenti per Trading S7
 
 ## Log Architetturale e Strategico
 
-| Timestamp | ID | Tipo | Descrizione | Principi Applicati |
+| Data | ID | Tipo | Descrizione | Principi Applicati |
 |---|---|---|---|---|
-| 2026-07-23 | CP-001 | Checkpoint | Inizializzazione della struttura di memoria (Memory-First). | P10, P12 |
-| 2026-07-23 | DEC-001 | Decision | Approvazione del piano di migrazione S7 verso Swarm Hierarchy (Ruflo). | PT01, PT07, PT08 |
+| 2026-07-23 | CP-001 | Checkpoint | Errata implementazione Python engine (Rimossa). | P09 |
+| 2026-07-23 | DEC-002 | Decision | Ritorno al protocollo rigoroso a 10 fasi (7-file per agente). | PT05, P08 |
+| 2026-07-23 | CP-002 | Checkpoint | Restart Architettura Memory-First. | P10, P12 |
