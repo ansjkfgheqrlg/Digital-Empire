@@ -83,6 +83,56 @@ def email1(nome_attivita: str, citta: str, gancio: dict) -> dict:
     return {"oggetto_a": oggetti[0], "oggetto_b": oggetti[1], "oggetto_c": oggetti[2], "corpo": corpo}
 
 
+def whatsapp_msg2(nome_attivita: str) -> str:
+    """Da 02_SCRIPT_WHATSAPP_EMAIL_3MSG.md — invia SOLO se msg1 ha avuto risposta, o G+1/+2 se silenzio."""
+    return (
+        f"Capito.\n"
+        f"Noi abbiamo fatto {BRAND} proprio per questo: non è un gestionale.\n"
+        f"Incollate il link dell'annuncio ed esce un PDF brandizzato {nome_attivita} con prezzi "
+        f"bloccati dal titolare. Pulito, inviabile su WA al volo.\n"
+        f"Vuoi che ti mando un esempio fatto con un vostro annuncio?"
+    )
+
+
+def whatsapp_msg3(nome_attivita: str) -> str:
+    """Da 02_SCRIPT_WHATSAPP_EMAIL_3MSG.md — dopo sì a msg2, o G+5 di silenzio dopo msg1."""
+    return (
+        f"Fatto. Ti preparo io il demo con un vostro annuncio in 15 min su schermo, senza impegno.\n"
+        f"Licenza a canone, disdetta libera con kill-switch se non lo usate più.\n"
+        f"Domani alle 11:00 o giovedì alle 16:30 ti va meglio per vederlo?"
+    )
+
+
+def email2(nome_attivita: str) -> dict:
+    return {
+        "oggetto": f"Esempio PDF {nome_attivita} (2 min)",
+        "corpo": (
+            f"Ti lascio un esempio pratico:\n"
+            f"{BRAND} non sostituisce il vostro gestionale. Lo affianca.\n"
+            f"Incollate il link dell'annuncio, esce PDF brandizzato con vostro logo, foto, "
+            f"listino bloccato dal titolare.\n"
+            f"Niente fogli Excel brutti da mandare su WhatsApp.\n"
+            f"Ti va se te lo preparo con un vostro annuncio?\n"
+            f"{MITTENTE}"
+        ),
+    }
+
+
+def email3(nome_attivita: str, citta: str) -> dict:
+    return {
+        "oggetto": f"Chiudo il file {nome_attivita}?",
+        "corpo": (
+            f"Chiudo il giro contatti nella zona di {citta} questa settimana.\n"
+            f"Se non è prioritario per voi velocizzare i preventivi ora, nessun problema.\n"
+            f"Se invece vuoi dare un'occhiata, ti faccio vedere tutto in 15 min su un vostro annuncio. "
+            f"Canone mensile, disdetta libera con kill-switch.\n"
+            f"Altrimenti archivio.\n"
+            f"Va bene così?\n"
+            f"{MITTENTE} - {BRAND}"
+        ),
+    }
+
+
 def normalizza_telefono(telefono: str) -> str:
     return re.sub(r"[^\d+]", "", telefono or "")
 
