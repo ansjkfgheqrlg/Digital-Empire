@@ -1,0 +1,25 @@
+{
+  "skill_name": "objections-forge",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Test objections-forge case 1",
+      "expected_output": "..."
+    },
+    {
+      "id": 2,
+      "prompt": "Test objections-forge case 2",
+      "expected_output": "..."
+    },
+    {
+      "id": 3,
+      "prompt": "Test objections-forge case 3",
+      "expected_output": "..."
+    },
+    {
+      "id": 4,
+      "prompt": "Test objections-forge case 4",
+      "expected_output": "..."
+    }
+  ]
+}

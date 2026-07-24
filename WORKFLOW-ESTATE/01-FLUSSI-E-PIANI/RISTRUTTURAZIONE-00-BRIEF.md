@@ -84,8 +84,8 @@ I piani devono renderlo esplicito, non ereditato per caso.
 **398 cartelle vuote totali.** Non sono un problema solo: sono tre problemi diversi.
 
 ### Tipo 1 — Spazzatura tecnica (~250) · NON è struttura
-`EmpireDesk/chrome-profile/**` (profilo Chrome intero nel repo) · `.git.bak/` · `.venv/` ·
-`dist/` `out/` `.next/` · `node_modules/` · `.netlify/`.
+`EmpireDesk/chrome-profile` (profilo Chrome intero nel repo), più le cartelle generate:
+*.git.bak*, *.venv*, *dist*, *out*, *.next*, *node_modules*, *.netlify*.
 → **Proposta: `.gitignore`, non cancellazione.** Decide Max.
 
 ### ✅ Tipo 1-bis — VERIFICA DI SICUREZZA: FATTA, ESITO BUONO

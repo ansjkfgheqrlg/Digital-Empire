@@ -1,0 +1,39 @@
+{
+  "skill_name": "content-forge",
+  "schema_version": "0.1.0-draft",
+  "_note": "Test cases iniziali (no assertions ancora — verranno aggiunte in Phase 7).",
+  "evals": [
+    {
+      "id": 1,
+      "name": "transcript-prompt-engineering-to-skill",
+      "prompt": "Ho 4 transcript YouTube su prompt engineering avanzato concatenati in transcripts_pe.md (circa 30k token, disordinati, con timestamp e filler). Voglio trasformarli in una skill ufficiale Anthropic riusabile, con il comando /pe-coach, che mi aiuti a scrivere prompt complessi.",
+      "expected_output": "Una skill conforme a skill-creator con SKILL.md (pushy description), agents/ se servono, references/, scripts/ se servono, evals/evals.json con 4-6 cases. Coverage ≥90% degli atomi. No riassunti. Esempi auto-generati etichettati ➕.",
+      "files": ["transcripts_pe.md"],
+      "target": "skill"
+    },
+    {
+      "id": 2,
+      "name": "workshop-cold-outreach-to-agent",
+      "prompt": "Ho la trascrizione di un workshop di 2h su come fare cold outreach B2B in workshop_outreach.md. Voglio un singolo agente operativo che faccia outreach al posto mio, integrato con linkedin_search, crm_get_lead, email_send. L'agente è per un BDR junior.",
+      "expected_output": "Pacchetto agente completo: agent.md, system_prompt.md, tools.md (3 tool con schema), playbook.md (5-10 conversazioni), failure_modes.md, eval_cases.json (8-15 cases mix happy/edge/failure), README.md. Coverage ≥90%.",
+      "files": ["workshop_outreach.md"],
+      "target": "agent"
+    },
+    {
+      "id": 3,
+      "name": "articles-rag-to-wiki",
+      "prompt": "Ho una serie di 8 articoli e 3 video transcript su sistemi RAG avanzati in articles_rag.md. Voglio importarli nel mio vault Obsidian come note atomiche evergreen, con MOC e cross-link. Vault in ~/Vault, cartella Imports/Forge/Advanced RAG. Tag convention #area/ai/rag, #source/forge-import-2025-05, kebab-case, italiano.",
+      "expected_output": "vault-import/ con concepts/, glossary/, examples/, frameworks/, procedures/, _meta/. Note atomiche con frontmatter completo, wikilink integri (verificati), MOC strutturato, _meta/source.md. Coverage ≥95%.",
+      "files": ["articles_rag.md"],
+      "target": "wiki"
+    },
+    {
+      "id": 4,
+      "name": "tutorial-multitool-to-workflow",
+      "prompt": "Ho il tutorial completo lead-pipeline-tutorial.md su 'lead enrichment + outbound + nurture end-to-end'. Voglio un workflow operativo completo: trigger=CSV upload, stato=filesystem JSON per lead, idempotente, con step manuali di approvazione, retry su API esterne, observability su stdout+jsonl.",
+      "expected_output": "workflow/ con flow.md+mermaid, state.md, triggers.md, steps/ (10-15 step), agents/skills/scripts dove servono, error_handling.md (15+ failure mode), runbook.md (10+ scenari), eval_scenarios.json (3-5 scenari). DAG no-cycle.",
+      "files": ["lead-pipeline-tutorial.md"],
+      "target": "workflow"
+    }
+  ]
+}

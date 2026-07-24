@@ -1,0 +1,6 @@
+# Shared State
+
+## Schema
+```python
+{}
+```

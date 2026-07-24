@@ -95,7 +95,8 @@ fiducia**, e quindi passa da Max. Ed è il vincolo sovrano applicato al sistema 
 *migliorare e aggiungere, non ricostruire.*
 
 ### 2.4 — Il controllo indipendente finalmente in funzione (chiude L6.4)
-L'Ispettorato ha 11 agenti, 5 workflow, e non ha mai girato: `report/`, `state/`, `telemetry/` vuote.
+L'Ispettorato ha 11 agenti, 5 workflow, e non ha mai girato: `company/Ispettorato/report`,
+`company/Ispettorato/state` e `company/Ispettorato/telemetry` sono vuote.
 Il Piano 7 gli dà l'unico compito che nessun altro può fare, perché **verifica chi costruisce**:
 
 > **Verificare che ciò che il sistema dichiara corrisponda a ciò che è sul disco.**
@@ -138,7 +139,7 @@ Questo gate non apre un livello successivo: dichiara che il sistema è **APEX**.
 | **C1** | Tutti i gate da L1 a L6 sono stati superati | ognuno ha un esito registrato | non si salta un livello |
 | **C2** | **Almeno 2 dei 4 difetti del 24/07 sarebbero stati trovati dal sistema** | si rieseguono su quei casi | l'autocritica non funziona sui casi che conosciamo |
 | **C3** | Esiste una serie storica con almeno 2 punti | il confronto fra periodi è possibile | un punto solo non è una tendenza |
-| **C4** | L'Ispettorato ha prodotto report reali | `Ispettorato/report/` non è vuota | l'organo non esiste ancora nei fatti |
+| **C4** | L'Ispettorato ha prodotto report reali | `company/Ispettorato/report` non è vuota | l'organo non esiste ancora nei fatti |
 | **C5** | Almeno una proposta di correzione è stata prodotta dal sistema | esiste con i suoi 4 punti | non si è mai criticato |
 | **C6** | **Nessuna regola è stata cambiata dal sistema senza Max** | storico delle modifiche | violazione grave: si sospende l'autonomia |
 | **C7** | Il vincolo sovrano è rispettato in tutti e 7 i piani | nessuno prevede di cancellare o ricostruire | violato l'ordine esplicito di Max |

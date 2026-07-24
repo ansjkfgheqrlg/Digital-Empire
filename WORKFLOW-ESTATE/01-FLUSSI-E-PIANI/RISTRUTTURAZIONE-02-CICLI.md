@@ -49,11 +49,11 @@ Ogni fase di lavoro produce al massimo cinque cose. Non di più: cinque tipi che
 
 | Traccia | Quando nasce | Dove vive oggi (cartella già esistente, vuota) | Perché serve |
 |---|---|---|---|
-| **DECISIONE** | quando si sceglie fra due strade | `02-AUTOMAZIONI-E-SCRIPTS/decisions/` | per non ridiscutere la stessa cosa fra un mese |
-| **ERRORE** | quando qualcosa fallisce | `02-AUTOMAZIONI-E-SCRIPTS/errors/` | per non ripetere lo stesso sbaglio |
-| **PRESTAZIONE** | quando una fase si chiude | `02-AUTOMAZIONI-E-SCRIPTS/performances/` | per sapere quanto costa davvero il lavoro |
-| **LEZIONE** | quando si capisce un pattern | `02-AUTOMAZIONI-E-SCRIPTS/reasoning-bank/` | per migliorare il metodo, non solo il risultato |
-| **SESSIONE** | apertura e chiusura di una finestra di lavoro | `02-AUTOMAZIONI-E-SCRIPTS/sessions/` | per riprendere esattamente dove si era rimasti |
+| **DECISIONE** | quando si sceglie fra due strade | `WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/decisions` | per non ridiscutere la stessa cosa fra un mese |
+| **ERRORE** | quando qualcosa fallisce | `WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/errors` | per non ripetere lo stesso sbaglio |
+| **PRESTAZIONE** | quando una fase si chiude | `WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/performances` | per sapere quanto costa davvero il lavoro |
+| **LEZIONE** | quando si capisce un pattern | `WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/reasoning-bank` | per migliorare il metodo, non solo il risultato |
+| **SESSIONE** | apertura e chiusura di una finestra di lavoro | `WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/sessions` | per riprendere esattamente dove si era rimasti |
 
 **Nota importante:** queste cinque cartelle **esistono già e sono vuote**. Il Piano 2 non crea
 struttura nuova — vincolo sovrano rispettato: si aggiunge il meccanismo, non si sposta niente.

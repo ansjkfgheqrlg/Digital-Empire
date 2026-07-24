@@ -1,0 +1,24 @@
+{
+  "strategy_id": "STR-38d4c6d4",
+  "name": "Memory-First Design",
+  "category": "GENERAL",
+  "description": "Consulta la memoria prima di agire",
+  "when_to_use": "All'inizio di ogni task",
+  "when_NOT_to_use": "Mai — applicare sempre",
+  "parameters": {},
+  "steps": [
+    "Query memoria",
+    "Carica contesto",
+    "Agisci",
+    "Salva risultato"
+  ],
+  "success_rate": 0.85,
+  "times_used": 0,
+  "last_used": null,
+  "avg_quality_improvement": 0.0,
+  "source": "META_AGENT",
+  "promoted_by": "META_AGENT",
+  "status": "ACTIVE",
+  "tags": [],
+  "anti_pattern_counterpart": null
+}

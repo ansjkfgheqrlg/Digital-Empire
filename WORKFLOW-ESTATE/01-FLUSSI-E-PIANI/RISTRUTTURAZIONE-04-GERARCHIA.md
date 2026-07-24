@@ -104,7 +104,8 @@ minuti al giorno"*: era già un limite di carico, mai misurato.
 
 ### 2.5 — Il controllo indipendente, con un caso reale
 L'Ispettorato esiste (11 agenti, 5 workflow, M1 e M3 fatti) **e non ha mai girato**: le sue
-cartelle `report/`, `state/`, `telemetry/` sono vuote.
+cartelle `company/Ispettorato/report`, `company/Ispettorato/state` e
+`company/Ispettorato/telemetry` sono vuote.
 
 Il Piano 4 gli assegna il primo compito vero, che è già stato individuato misurando:
 
@@ -132,7 +133,7 @@ Soglia **5 su 6**.
 | **C2** | **Il controllore non appartiene al reparto che verifica** | confronto fra i due campi | è il criterio che rende reale l'indipendenza |
 | **C3** | Ogni capo reparto citato esiste in `empire departments` | verifica per id | ruolo inventato |
 | **C4** | Il carico di ogni agente è un numero interrogabile | un comando lo stampa | assegnazione ancora cieca |
-| **C5** | L'Ispettorato ha prodotto **almeno un report vero** | `Ispettorato/report/` non è più vuota | l'organo continua a non esistere nei fatti |
+| **C5** | L'Ispettorato ha prodotto **almeno un report vero** | `company/Ispettorato/report` non è più vuota | l'organo continua a non esistere nei fatti |
 | **C6** | Nessun organo nuovo è stato creato | confronto con l'elenco di prima | violato il vincolo additivo |
 
 **C2 e C5 obbligatori anche a 5/6.** C2 perché senza indipendenza il controllo è teatro.

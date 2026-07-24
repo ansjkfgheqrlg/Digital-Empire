@@ -20,7 +20,7 @@ misurati, non a impressione.
 |---|---|---|
 | D1 | **Gli agenti non sono collegati al lavoro** | 439 agenti censiti, 6 stream attivi, e i file dei 6 stream **non nominano un solo agente**. Dichiarano solo `Owner:` |
 | D2 | **Gli stream sono prosa, non workflow** | I 6 file WF-S* pesano 36-78 righe l'uno. Descrivono cosa fare, non chi lo esegue né con quale skill |
-| D3 | **I sensori non registrano nulla** | `02-AUTOMAZIONI-E-SCRIPTS/` 11 cartelle su 11 vuote · `company/Memory/tasks/` 10 su 10 vuote · `empire inspect` → 6 metriche su 6 a zero, nota "nessun record PERF" |
+| D3 | **I sensori non registrano nulla** | `WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS` 11 cartelle su 11 vuote · `company/Memory/tasks` 10 su 10 vuote · `empire inspect` → 6 metriche su 6 a zero, nota "nessun record PERF" |
 | D4 | **I controlli rassicurano invece di misurare** | 3 casi trovati il 24/07: dashboard che coloriva di verde i valori illeggibili · `skills-map.yaml` YAML non valido (anagrafe ADR-008 mai caricata da un parser) · `video_pack --check` che approvava il proprio scheletro |
 | D5 | **Il vocabolario non è definito** | "fase", "workflow", "reparto", "agente", "skill", "sessione" sono usati con significati diversi in file diversi. Nessuno può verificare una regola scritta con parole ambigue |
 | D6 | **Anagrafe divergente dalla realtà** | `08-STREAM-S7-BOT` e `12-STREAM-S7-BOT` coesistono in `company/Ecosistemi/`: sembrano lo stesso ecosistema due volte |
@@ -56,12 +56,12 @@ Sei parole, una definizione ciascuna, **verificabile a macchina**. Da qui in poi
 
 | Parola | Definizione operativa | Come si verifica |
 |---|---|---|
-| **FASE** | Un pezzo di lavoro con un inizio, una fine e un esito dichiarato. È l'unità che si può chiudere | ha un id, uno stato (`OPEN/IN_PROGRESS/DONE`), un esito |
+| **FASE** | Un pezzo di lavoro con un inizio, una fine e un esito dichiarato. È l'unità che si può chiudere | ha un id, uno stato (`OPEN` · `IN_PROGRESS` · `DONE`), un esito |
 | **WORKFLOW** | Una fase **eseguibile**: ha agenti assegnati, skill dichiarate, gate di uscita | il file elenca `agenti:`, `skill:`, `gate:` non vuoti |
 | **AGENTE** | Un esecutore con un compito unico, un input e un output dichiarati | esiste in `empire agents`, ha un id, ha un file |
 | **SKILL** | Una capacità riusabile, indipendente da chi la usa | esiste in `empire skills` e in `skills-map.yaml` |
 | **REPARTO** | Un gruppo di agenti con un responsabile e un perimetro | esiste in `empire departments`, ha un capo dichiarato |
-| **SESSIONE** | Una finestra di lavoro continuativa, con uno stato salvato all'inizio e alla fine | ha un record in `sessions/` con apertura e chiusura |
+| **SESSIONE** | Una finestra di lavoro continuativa, con uno stato salvato all'inizio e alla fine | ha un record in `WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/sessions` con apertura e chiusura |
 
 **Regola d'oro del vocabolario:** se una parola non si può verificare con un comando, non entra nei
 piani. Le parole belle e non misurabili sono il modo in cui un sistema si racconta storie.
