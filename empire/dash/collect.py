@@ -116,14 +116,40 @@ def collect_all() -> dict:
         spazio_sprecato = f"n/d (errore: {e})"
 
     # -------------------------------------------------------------
-    # 2. Performance (Telemetry) - Assenti in attesa di GEM-03
+    # 2. Performance (Telemetry) — letta dall'Ispettorato (empire.inspect)
     # -------------------------------------------------------------
-    runs_giornalieri = "n/d (modulo inspect non ancora implementato)"
-    scorecard_5d = "n/d (modulo inspect non ancora implementato)"
-    first_pass_rate = "n/d (modulo inspect non ancora implementato)"
-    ttd_medio = "n/d (modulo inspect non ancora implementato)"
-    tip_aperti = "n/d (modulo inspect non ancora implementato)"
-    traceability_rate = "n/d (modulo inspect non ancora implementato)"
+    # Prima qui c'erano sei stringhe "n/d (modulo inspect non ancora implementato)".
+    # Il modulo pero' esisteva: mancava solo l'API di lettura. Una metrica che dichiara
+    # non implementato un modulo presente non e' una misura, e' un difetto che si
+    # traveste da misura — e impedisce di distinguere "non misuriamo" da "non succede
+    # nulla". Adesso, se i dati mancano, il valore e' 0 e la nota dice dove ho guardato.
+    # Il valore resta NUMERICO, cosi' le soglie lo colorano davvero; il "perche'" viaggia
+    # a parte in _notes e finisce nella colonna Nota Sorgente. Mettere il numero e la
+    # spiegazione nella stessa cella (es. "0 (nessun record)") rendeva il valore
+    # illeggibile alle soglie, e un 0% tornava a sembrare verde.
+    telemetry_notes: dict[str, str] = {}
+    try:
+        from empire import inspect as _inspect
+        _tel = _inspect.status()
+        _map = {"runs_giornalieri": "runs", "scorecard_5d": "scorecard",
+                "first_pass_rate": "first_pass", "ttd_medio": "ttd",
+                "tip_aperti": "feedback", "traceability_rate": "traceability"}
+        _vals = {}
+        for kpi_id, metric_key in _map.items():
+            m = _tel[metric_key]
+            _vals[kpi_id] = m.get("value")
+            if m.get("note"):
+                telemetry_notes[kpi_id] = m["note"]
+        runs_giornalieri = _vals["runs_giornalieri"]
+        scorecard_5d = _vals["scorecard_5d"]
+        first_pass_rate = _vals["first_pass_rate"]
+        ttd_medio = _vals["ttd_medio"]
+        tip_aperti = _vals["tip_aperti"]
+        traceability_rate = _vals["traceability_rate"]
+    except Exception as e:  # noqa: BLE001
+        msg = f"n/d (lettura inspect fallita: {e})"
+        runs_giornalieri = scorecard_5d = first_pass_rate = msg
+        ttd_medio = tip_aperti = traceability_rate = msg
 
     # -------------------------------------------------------------
     # 3. Revenue, Lead e Gate
@@ -154,7 +180,21 @@ def collect_all() -> dict:
     except Exception as e:
         anticipi_incassati = f"n/d (errore: {e})"
 
-    decisioni_attive = "n/d (modulo memory non ancora implementato)"
+    # Le decisioni a "default piu' veto" (ADR-EST-006) le calcola il motore flow, che e'
+    # la loro fonte di verita': una decisione e' ATTIVA quando il veto e' scaduto senza
+    # opposizione registrata. Il vecchio placeholder citava un "modulo memory non ancora
+    # implementato" che nel frattempo era stato costruito (M-A) — un altro caso di
+    # cruscotto rimasto indietro rispetto al codice.
+    try:
+        from empire.flow import runner as _flow_runner
+        _dec = _flow_runner.apply_decisions(write=False)
+        _attive = [d for d in _dec if d.state == "ATTIVA"]
+        # Niente "/" nel valore: la dashboard rende i valori fra backtick e il controllo
+        # link di `conform` legge un token con la barra come percorso, segnalando un
+        # riferimento rotto inesistente. Una metrica non deve poter rompere un controllo.
+        decisioni_attive = f"{len(_attive)} su {len(_dec)} attive per veto scaduto"
+    except Exception as e:  # noqa: BLE001
+        decisioni_attive = f"n/d (lettura decisioni fallita: {e})"
 
     # Gate settimanali caricati da WF-MASTER.md
     gates_list = []
@@ -218,5 +258,8 @@ def collect_all() -> dict:
         "anticipi_incassati": anticipi_incassati,
         "decisioni_attive": decisioni_attive,
         "lead_concessionari": lead_list,
-        "gates_settimanali": gates_list
+        "gates_settimanali": gates_list,
+        # Perche' un KPI vale quello che vale: "0" da solo non distingue "non misurato"
+        # da "misurato e vale zero". La nota porta la fonte guardata.
+        "_notes": telemetry_notes,
     }

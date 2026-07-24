@@ -6,7 +6,7 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 ---
 
 # 📊 DASHBOARD OPERATIVA — Digital Empire
-> Generato automaticamente il: **2026-07-24 07:44:23**
+> Generato automaticamente il: **2026-07-24 08:49:24**
 
 ---
 
@@ -32,28 +32,28 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 | Agenti Progettati | `439` | 🟢 | GAEL | `-` |
 | Agenti CF-Grade | `0` | 🟢 | GAEL | `>= 10` |
 | Ecosistemi Completi | `13` | 🟡 | CLAUDE | `== 10` |
-| Conformi ADR-008 | `9` | 🟢 | FORGE | `-` |
-| Link Rotti | `4851` | 🔴 | FORGE | `== 0` |
+| Conformi ADR-008 | `6` | 🟢 | FORGE | `-` |
+| Link Rotti | `6200` | 🔴 | FORGE | `== 0` |
 | Workflow Art. 8 | `1` | 🟢 | FORGE | `>= 1` |
-| Spazio Duplicato | `28.05 MB` | 🟡 | FORGE | `< 1.0` |
+| Spazio Duplicato | `n/d (errore: 'str' object has no attribute 'get')` | ⚪ | FORGE | `< 1.0` |
 
 ### 2. Telemetria e Performance (L2/L3)
 
 | KPI | Valore | Stato | Responsabile | Nota Sorgente |
 |---|---|---|---|---|
-| Esecuzioni/gg | `n/d (modulo inspect non ancora implementato)` | ⚪ | CLAUDE | inspect.telemetry.runs |
-| Scorecard 5D | `n/d (modulo inspect non ancora implementato)` | ⚪ | CLAUDE | inspect.scorecard |
-| First-pass Rate | `n/d (modulo inspect non ancora implementato)` | ⚪ | CLAUDE | inspect.first_pass |
-| TTD Medio vs Bench | `n/d (modulo inspect non ancora implementato)` | ⚪ | CLAUDE | inspect.ttd |
-| TIP Aperti / Recurred | `n/d (modulo inspect non ancora implementato)` | ⚪ | CLAUDE | inspect.feedback |
-| Checkpoint Coverage | `n/d (modulo inspect non ancora implementato)` | ⚪ | CLAUDE | inspect.traceability |
+| Esecuzioni/gg | `0.0` | 🟢 | CLAUDE | inspect.telemetry.runs — 0 esecuzioni negli ultimi 7 giorni |
+| Scorecard 5D | `0` | 🔴 | CLAUDE | inspect.scorecard — nessun record PERF registrato (il ciclo performance non ha ancora girato) |
+| First-pass Rate | `0` | 🔴 | CLAUDE | inspect.first_pass — nessun record PERF registrato (il ciclo performance non ha ancora girato) |
+| TTD Medio vs Bench | `0` | 🟢 | CLAUDE | inspect.ttd — nessun record PERF registrato (il ciclo performance non ha ancora girato) |
+| TIP Aperti / Recurred | `0` | 🟢 | CLAUDE | inspect.feedback — 0 TIP non confermati, 0 loop aperti |
+| Checkpoint Coverage | `0.0` | 🔴 | CLAUDE | inspect.traceability — 0/1 run con checkpoint o output collegato |
 
 ### 3. Commerciale & Revenue
 
 | KPI | Valore | Stato | Responsabile | Soglia Good |
 |---|---|---|---|---|
 | Anticipi Chiusi | `0` | 🔴 | MAX | `>= 5` |
-| Veto Scaduto | `n/d (modulo memory non ancora implementato)` | 🟢 | CLAUDE | `-` |
+| Veto Scaduto | `2 su 3 attive per veto scaduto` | ⚪ | CLAUDE | `-` |
 
 ---
 

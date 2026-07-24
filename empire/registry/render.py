@@ -88,18 +88,25 @@ def render_skills_map(artifacts: Sequence[Artifact], root: Path | None = None) -
     skills_wfs = [a for a in artifacts if a.kind in ("skill", "workflow", "script") and a.kind != "vendored"]
     skills_wfs.sort(key=lambda a: (a.kind, str(a.path)))
 
+    # Le voci vanno sotto una loro chiave (`artefatti:`). Prima venivano emesse allo
+    # stesso livello di `note:`, cioe' una chiave di mappa seguita da elementi di lista:
+    # YAML non valido. Risultato: `company/skills-map.yaml` — l'anagrafe che per ADR-008
+    # deve garantire che nessun artefatto sia orfano — non era leggibile da nessun
+    # parser. Il difetto e' sopravvissuto perche' il file veniva solo scritto e letto a
+    # occhio, mai caricato da una macchina.
     lines = [
         "censimento_automatico_forge:",
-        "  note: 'Sezione generata automaticamente da empire.registry.render (ADR-008). Non modificare a mano.'"
+        "  note: 'Sezione generata automaticamente da empire.registry.render (ADR-008). Non modificare a mano.'",
+        "  artefatti:",
     ]
     for a in skills_wfs[:400]:
         p_str = a.path.as_posix() if isinstance(a.path, Path) else str(a.path)
         slug = p_str.replace("/", "_").replace(".", "_").lower()[:60]
-        lines.append(f"  - id: auto_{slug}")
-        lines.append(f"    percorso: {p_str}")
-        lines.append(f"    tipo: {a.kind}")
+        lines.append(f"    - id: auto_{slug}")
+        lines.append(f"      percorso: {p_str}")
+        lines.append(f"      tipo: {a.kind}")
         ow = a.prov.owner or "non-dichiarato"
-        lines.append(f"    proprietario: \"{ow}\"")
+        lines.append(f"      proprietario: \"{ow}\"")
 
     new_block = "\n".join(lines)
     updated_text = _replace_block(original_text, YAML_BEGIN_MARKER, YAML_END_MARKER, new_block, default_insert_before="stats:")

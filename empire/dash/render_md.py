@@ -75,11 +75,19 @@ def render_md(data: dict) -> str:
     md.append("|---|---|---|---|---|")
     
     perf_ids = {"runs_giornalieri", "scorecard_5d", "first_pass_rate", "ttd_medio", "tip_aperti", "traceability_rate"}
+    notes = data.get("_notes", {})
     for k in KPI_REGISTRY:
         if k.id in perf_ids:
             val = data.get(k.id, "n/d")
-            status_emoji = "⚪" if "n/d" in str(val) else "🟢"
-            md.append(f"| {k.label} | `{val}` | {status_emoji} | {k.owner} | {k.source} |")
+            # Prima l'emoji era cablata: "⚪ se il testo contiene n/d, altrimenti 🟢".
+            # Cosi' un first-pass rate dello 0% risultava verde, perche' non conteneva
+            # la stringa "n/d". Qui si usano le stesse soglie di ogni altro KPI: la
+            # sezione telemetria non merita una regola di colore piu' indulgente.
+            status_color = k.evaluate_status(val)
+            status_emoji = {"green": "🟢", "yellow": "🟡", "red": "🔴"}.get(status_color, "⚪")
+            nota = notes.get(k.id, "")
+            fonte = f"{k.source} — {nota}" if nota else k.source
+            md.append(f"| {k.label} | `{val}` | {status_emoji} | {k.owner} | {fonte} |")
 
     md.append("")
     md.append("### 3. Commerciale & Revenue")

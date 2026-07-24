@@ -1,6 +1,6 @@
 # CHECKOUT -- STATO REALE (LOTTO 3 CASSA)
 
-Ultimo aggiornamento: 2026-07-23 (via `python empire/tools/checkout.py --apply`)
+Ultimo aggiornamento: 2026-07-24 (via `python empire/tools/checkout.py --apply`)
 
 ## Tier attivo: 2 -- fallback ordine attivo (mailto verso ordine_email)
 

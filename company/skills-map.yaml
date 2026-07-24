@@ -661,6 +661,90 @@ nuovi_2026_07:
     stato: experimental
     note: "Bot NFT/memecoin dello Stream S7, lane SPECULATIVA di R&D, vale 0€ nel piano revenue. Autore: Gemini."
 
+  # ── Completamento Workflow Estate (CP-20260724, Claude) ──────
+  # ADR-008: registrati qui perche' sono tool/workflow, non organi.
+
+  - id: empire-estate-verdetto
+    nome: Verdetto unico Workflow Estate (`empire estate`)
+    percorso: empire/estate.py
+    ecosistema: 06-CORE
+    reparto: Platform
+    tipo: tool
+    stato: active
+    note: "Un solo comando dice se il Workflow Estate e' finito. Distingue cio' che dipende dalla costruzione da cio' che dipende da Max, altrimenti non potrebbe mai dare esito positivo. Autore: Claude."
+
+  - id: flow-decisions-veto
+    nome: Decisioni default-piu-veto (ADR-EST-006)
+    percorso: empire/flow/decisions.py
+    ecosistema: 06-CORE
+    reparto: Platform
+    tipo: tool
+    stato: active
+    note: "Applica la regola: veto scaduto senza opposizione registrata -> decisione ATTIVA + fatto scritto. Chiude il caso Gate-DEC rosso mentre la decisione era attiva da due giorni. Include `flow veto` per registrare il dissenso. Autore: Claude."
+
+  - id: flow-evidence-provenienza
+    nome: Evidenza calcolata per i gate umani (+ guardia di provenienza)
+    percorso: empire/flow/evidence.py
+    ecosistema: 06-CORE
+    reparto: Platform
+    tipo: tool
+    stato: active
+    note: "Mostra a chi conferma un gate umano il dato reale, e segnala se la sorgente e' di prova o non tracciabile a monte. Ha rivelato che i 7 lead di lead.csv hanno 0/7 riscontri nelle sorgenti Outreach. Autore: Claude."
+
+  - id: inspect-metrics-api
+    nome: API metriche Ispettorato (6 KPI telemetria)
+    percorso: empire/inspect/metrics.py
+    ecosistema: 06-CORE
+    reparto: Intelligence
+    tipo: tool
+    stato: active
+    note: "Espone status() e le 6 metriche che la dashboard dichiarava 'non implementate' pur essendo l'organo presente. Regola: mai 'non implementato', sempre 0 + nota con la fonte guardata. Autore: Claude."
+
+  - id: checkout-ladder
+    nome: Ladder di checkout Manuale (config unica + fallback ordine)
+    percorso: empire/tools/checkout.py
+    ecosistema: 02-INFO-BUSINESS
+    reparto: Funnel
+    tipo: tool
+    stato: active
+    note: "Tutti i link di pagamento in `Crea siti/Siti CCM/checkout.config.json`; `--apply` li propaga, `--check` conta i placeholder e dichiara il tier. Oggi tier 2 (ordine via mail, attivo); tier 1 quando Max incolla i Payment Link Stripe. Autore: agente LOTTO 3, verificato da Claude."
+
+  - id: video-pack-s5
+    nome: Pacchetto video S5 (scaffolding, validazione, render onesto)
+    percorso: empire/tools/video_pack.py
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: YouTube
+    tipo: tool
+    stato: active
+    note: "`--check` valida la run, `--render` verifica ffmpeg con un comando vero e scrive l'esito reale in 05-STATO.md. Rifiuta gli scheletri non compilati e i video dichiarati ma assenti. Autore: Claude."
+
+  - id: video-run-2026-07-23-001
+    nome: Run video S5 (nicchia AI/Claude IT)
+    percorso: WORKFLOW-ESTATE/07-VIDEO-RUN/run-2026-07-23-001/
+    ecosistema: 03-CONTENT-FACTORY
+    reparto: YouTube
+    tipo: knowledge
+    stato: active
+    note: "Pacchetto-render completo: scelta, script IT a scene, testo TTS, shotlist, SEO pack. NESSUN file video: gradino 3 della ladder, dichiarato in 05-STATO.md. Serve M-EST-8 (canale + credenziali) e una voce TTS. Autore: agente LOTTO 5, completato da Claude."
+
+  - id: preventa-landing
+    nome: Landing Preventa (standalone)
+    percorso: Crea siti/Preventa/index.html
+    ecosistema: 01-AGENCY
+    reparto: Vetrina
+    tipo: knowledge
+    stato: active
+    note: "Impaginata dal copy di preventa-launch-kit. Prezzo NON inserito: DEC-EST-005 sotto veto di Max (M-EST-4), al suo posto segnaposti visibili. CTA mailto funzionante. Autore: Claude."
+
+  - id: case-study-novacar
+    nome: Case study Novacar (prova commerciale)
+    percorso: Clienti/Prof Autocad/preventa-launch-kit/07_CASE_STUDY_NOVACAR.md
+    ecosistema: 01-AGENCY
+    reparto: Vetrina
+    tipo: knowledge
+    stato: active
+    note: "Blocco n.1 del dossier 23 (serviva una prova credibile). Numeri tracciabili ai checkpoint Novacar, nessun virgolettato cliente inventato. Formati md/html/pdf. Autore: agente LOTTO 4."
+
 # ============================================================
 
 # ASSET NON ANCORA CLASSIFICATI (da verificare con Max)
@@ -681,1606 +765,1607 @@ da_classificare:
 # <!-- EMPIRE-CENSUS:BEGIN (rigenerato, non modificare a mano) -->
 censimento_automatico_forge:
   note: 'Sezione generata automaticamente da empire.registry.render (ADR-008). Non modificare a mano.'
-  - id: auto_agency page - copia_vite_config_ts
-    percorso: Agency page - Copia/vite.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_agency page - copia_vite_config_ts
-    percorso: Agency page - Copia/vite.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_agency page_vite_config_ts
-    percorso: Agency page/vite.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_agenti_agency_orchestrator_run_500_py
-    percorso: Agenti/Agency/orchestrator/run_500.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_agenti_agency_outreach_implementation_utils___init___py
-    percorso: Agenti/Agency/outreach/implementation/utils/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_agenti_agency_outreach_implementation_whatsapp_outreach_py
-    percorso: Agenti/Agency/outreach/implementation/whatsapp_outreach.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_agenti_agency_outreach_tests_test_website_checker_py
-    percorso: Agenti/Agency/outreach/tests/test_website_checker.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_agenti_agency_scripts_social_calendar_py
-    percorso: Agenti/Agency/scripts/social_calendar.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_agenti_agency_scripts_social_calendar_py
-    percorso: Agenti/Agency/scripts/social_calendar.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_agenti_agency_sub-agents_ai-implementation_scraper_py
-    percorso: Agenti/Agency/sub-agents/ai-implementation/scraper.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_agenti_agency_sub-agents_cro-funnel_site_analyzer_py
-    percorso: Agenti/Agency/sub-agents/cro-funnel/site_analyzer.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_agenti_agency_sub-agents_no-website_scraper_py
-    percorso: Agenti/Agency/sub-agents/no-website/scraper.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_agenti_scripts_generate_pdf_report_py
-    percorso: Agenti/scripts/generate_pdf_report.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_clienti_prof autocad_preventivo-forge_implementation_transla
-    percorso: Clienti/Prof Autocad/preventivo-forge/implementation/translate_copy.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_clienti_prof autocad_preventivo-forge_run_py
-    percorso: Clienti/Prof Autocad/preventivo-forge/run.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_clienti_marketingskills-main_tools_clis_zoominfo_js
-    percorso: Clienti/marketingskills-main/tools/clis/zoominfo.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_clienti_presentazione-empire_src_lib_utils_ts
-    percorso: Clienti/presentazione-empire/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_chrome-profile_default_extensions_ghbmnnjooekpmoe
-    percorso: EmpireDesk/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.108.1_0/service_worker_bin_prod.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_chrome-profile_default_extensions_ghbmnnjooekpmoe
-    percorso: EmpireDesk/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.108.1_0/service_worker_bin_prod.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_chrome-profile_default_extensions_ljglajjnnkapghb
-    percorso: EmpireDesk/chrome-profile/Default/Extensions/ljglajjnnkapghbckkcmodicjhacbfhk/2.70.0.35_0/scripts/content.v2.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_chrome-profile_default_extensions_ljglajjnnkapghb
-    percorso: EmpireDesk/chrome-profile/Default/Extensions/ljglajjnnkapghbckkcmodicjhacbfhk/2.70.0.35_0/scripts/content.v2.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_dist_empiredesk_platform_dist_assets_index-bzgicx
-    percorso: EmpireDesk/dist/EmpireDesk/platform/dist/assets/index-BzgiCx3R.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_dist_empiredesk_platform_dist_tailwind-cdn_js
-    percorso: EmpireDesk/dist/EmpireDesk/platform/dist/tailwind-cdn.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_dist_empiredesk_webview_js_lib_polyfill_js
-    percorso: EmpireDesk/dist/EmpireDesk/webview/js/lib/polyfill.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_dist_empiredesk_webview_js_state_js
-    percorso: EmpireDesk/dist/EmpireDesk/webview/js/state.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_modules_youtube_py
-    percorso: EmpireDesk/modules/youtube.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_platform_dist_assets_index-be0txwiq_js
-    percorso: EmpireDesk/platform/dist/assets/index-Be0tXWiq.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_platform_dist_tailwind-cdn_js
-    percorso: EmpireDesk/platform/dist/tailwind-cdn.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_platform_public_tailwind-cdn_js
-    percorso: EmpireDesk/platform/public/tailwind-cdn.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_empiredesk_platform_utils_empireapi_ts
-    percorso: EmpireDesk/platform/utils/empireApi.ts
-    tipo: script
-    proprietario: "Max (UI/UX) — parte del pivot Aureus (dossier 17 §0-bis, fase 2 / U1)."
-  - id: auto_empiredesk_platform_vite_config_ts
-    percorso: EmpireDesk/platform/vite.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_kdp - prodottti digitali_leanding page_il codice dei potenti
-    percorso: KDP - prodottti digitali/Leanding Page/Il Codice dei Potenti/48-leggi-guerrieri/js/interactions.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_kdp - prodottti digitali_leanding page_il codice dei potenti
-    percorso: KDP - prodottti digitali/Leanding Page/Il Codice dei Potenti/48-leggi-maestri/js/interactions.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_kdp - prodottti digitali_leanding page_il codice dei potenti
-    percorso: KDP - prodottti digitali/Leanding Page/Il Codice dei Potenti/codice-del-nord/js/interactions.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_kdp - prodottti digitali_leanding page_il codice dei potenti
-    percorso: KDP - prodottti digitali/Leanding Page/Il Codice dei Potenti/il-codice-dei-potenti/js/interactions.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_kdp - prodottti digitali_leanding page_il codice dei potenti
-    percorso: KDP - prodottti digitali/Leanding Page/Il Codice dei Potenti/mente-immobile/js/interactions.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_kdp - prodottti digitali_leanding page_il codice dei potenti
-    percorso: KDP - prodottti digitali/Leanding Page/Il Codice dei Potenti/potere-nero/js/interactions.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_agenc
-    percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/Agency page - Copia/vite.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_agenc
-    percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/Agency page - Copia/vite.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_dist-
-    percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/dist-call/_next/static/chunks/turbopack-0v1ql1vdashds.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_dist-
-    percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/dist-call/_next/static/w52bzLa8NZJLs0_fJ92Cn/_ssgManifest.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_src_l
-    percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_mj- classifica_src_lib_utils_ts
-    percorso: Lancio corso skill beast/MJ- classifica/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_mj- classifica_src_middleware_ts
-    percorso: Lancio corso skill beast/MJ- classifica/src/middleware.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_siti ccm_ccm-elite-ultimat
-    percorso: Lancio corso skill beast/Sale pag/Siti CCM/ccm-elite-ultimate/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_siti ccm_ccm-full-empire_s
-    percorso: Lancio corso skill beast/Sale pag/Siti CCM/ccm-full-empire/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_siti ccm_ccm-sale-page-emp
-    percorso: Lancio corso skill beast/Sale pag/Siti CCM/ccm-sale-page-empire/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_siti ccm_ccm-strategic-cal
-    percorso: Lancio corso skill beast/Sale pag/Siti CCM/ccm-strategic-call/js/interactions.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_siti ccm_formazione-empire
-    percorso: Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/src/app/actions/progress.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_siti ccm_formazione-empire
-    percorso: Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/src/app/auth/callback/route.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_siti ccm_formazione-empire
-    percorso: Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/src/lib/supabase/server.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_siti ccm_formazione-empire
-    percorso: Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_siti ccm_formazione-empire
-    percorso: Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/src/middleware.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_siti ccm_icro-empire_src_l
-    percorso: Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_siti ccm_index_backup-empi
-    percorso: Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_siti ccm_index_backup-empi
-    percorso: Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_lancio corso skill beast_sale pag_ccm-sale-page-empire_src_l
-    percorso: Lancio corso skill beast/Sale pag/ccm-sale-page-empire/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_instagram automation__avvia_ig_bat
-    percorso: Outreach/Instagram Automation/_avvia_ig.bat
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_instagram automation_agents___init___py
-    percorso: Outreach/Instagram Automation/agents/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_linkedin automation_withdraw_pending_py
-    percorso: Outreach/LinkedIn Automation/withdraw_pending.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach workflow_agents___init___py
-    percorso: Outreach/Outreach Workflow/agents/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach workflow_agents___init___py
-    percorso: Outreach/Outreach Workflow/agents/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach workflow_knowledge___init___py
-    percorso: Outreach/Outreach Workflow/knowledge/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach workflow_utils___init___py
-    percorso: Outreach/Outreach Workflow/utils/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach workflow_verify_leads_py
-    percorso: Outreach/Outreach Workflow/verify_leads.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach workflow_verify_leads_py
-    percorso: Outreach/Outreach Workflow/verify_leads.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach workflow_verify_leads_py
-    percorso: Outreach/Outreach Workflow/verify_leads.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_test-email-10_bat
-    percorso: Outreach/TEST-EMAIL-10.bat
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach-dashboard-premium_src_app_api_launch_route
-    percorso: Outreach/outreach-dashboard-premium/src/app/api/launch/route.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach-dashboard-premium_src_app_api_leads_route_
-    percorso: Outreach/outreach-dashboard-premium/src/app/api/leads/route.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach-dashboard-premium_src_app_api_logs_route_t
-    percorso: Outreach/outreach-dashboard-premium/src/app/api/logs/route.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach-dashboard-premium_src_app_api_status_route
-    percorso: Outreach/outreach-dashboard-premium/src/app/api/status/route.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach-dashboard-premium_src_app_api_stop_route_t
-    percorso: Outreach/outreach-dashboard-premium/src/app/api/stop/route.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_outreach-dashboard-premium_src_lib_utils_ts
-    percorso: Outreach/outreach-dashboard-premium/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_outreach_preventa-maps-scraper_scraper_py
-    percorso: Outreach/preventa-maps-scraper/scraper.py
-    tipo: script
-    proprietario: "01-AGENCY"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio__
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/_vecchio-tentativo-rotto/content-ingest-ecosystem/scripts/memory_manager.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio__
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/_vecchio-tentativo-rotto/content-ingest-ecosystem/scripts/memory_manager.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio__
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/_vecchio-tentativo-rotto/empire-studio/scripts/memory_manager.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio__
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/_vecchio-tentativo-rotto/empire-studio/scripts/memory_manager.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/bundles/core-3d-animation/skills/babylonjs-engine/assets/starter_babylon/vite.config.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/bundles/core-3d-animation/skills/motion-framer/assets/starter_motion/vite.config.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/bundles/core-3d-animation/skills/react-three-fiber/assets/starter_r3f/vite.config.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/bundles/extended-3d-scroll/skills/playcanvas-engine/assets/starter_playcanvas/scripts/input-manager.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/babylonjs-engine/skills/babylonjs-engine/assets/starter_babylon/vite.config.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/motion-framer/skills/motion-framer/assets/starter_motion/vite.config.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/playcanvas-engine/skills/playcanvas-engine/assets/starter_playcanvas/scripts/input-manager.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/react-three-fiber/skills/react-three-fiber/assets/starter_r3f/vite.config.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/scripts/marketplace/validate_marketplace.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/cli-printing-press/scripts/verify-learn-purity.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/cli-printing-press/scripts/verify-skill/verify_skill.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/cli-printing-press/scripts/verify-skill/verify_skill.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/cli-printing-press/testdata/crowdsniff/sample-sdk.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/cli-printing-press/testdata/crowdsniff/sample-sdk.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.1/content-forge/scripts/lib/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.1/content-forge/scripts/tests/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.1/content-forge/scripts/validate_dag.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.2/content-forge/scripts/lib/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.2/content-forge/scripts/tests/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.2/content-forge/scripts/tests/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.2/content-forge/scripts/validate_dag.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/scripts/lib/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/scripts/tests/__init__.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/scripts/validate_dag.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_m
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/master-build-architecture/scripts/memory_manager.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/src/config/prismLight.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/src/theme/NavbarItem/NavbarNavLink.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/src/theme/NotFound.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/src/versions.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/src/versions.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/static/js/redirection.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/static/sw.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
-    percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/tests/python.spec.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite_empire-studio_scripts__sp
-    percorso: SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/_specs/youtube_department.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite_empire-studio_scripts__sp
-    percorso: SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/_specs/youtube_department.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite_empire-studio_scripts__sp
-    percorso: SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/_specs/youtube_department.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_empire studio suite_empire-studio_scripts_yt_
-    percorso: SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/yt_ingest.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_skill_agente max_scripts_validate_structure_p
-    percorso: SKILL & Agenti/SKILL/Agente Max/scripts/validate_structure.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_skill_skill empire-premium-style_digital-empi
-    percorso: SKILL & Agenti/SKILL/Skill empire-premium-style/digital-empire-lms/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_skill_website creator_scripts_site_builder_py
-    percorso: SKILL & Agenti/SKILL/Website Creator/scripts/site_builder.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_caroselli - agency_a
-    percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/Agents/orchestrator_agent.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_caroselli - agency_a
-    percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/ArenaAI/setup_arena_session.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_caroselli - agency_c
-    percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/Core/browser_manager.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_caroselli - agency_g
-    percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/GoogleDrive/setup_drive_session.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_caroselli - agency_g
-    percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/GoogleDrive/setup_drive_session.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
-    percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/app/api/caroselli/route.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
-    percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/app/api/config/route.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
-    percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/app/api/logs/route.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
-    percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/app/api/run-workflow/route.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
-    percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/app/api/setup-session/route.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
-    percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/app/api/submit-stdin/route.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
-    percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow agency creative_workspace-019e9cf2-5
-    percorso: SKILL & Agenti/Workflow agency creative/workspace-019e9cf2-5c44-799f-ae4f-7d128877a122/digital-empire-carousel/src/lib/utils.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow pubblicazione automatica_core_ai_tea
-    percorso: SKILL & Agenti/Workflow pubblicazione automatica/Core/AI_Team/writer_agent.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow pubblicazione automatica_core_ai_tea
-    percorso: SKILL & Agenti/Workflow pubblicazione automatica/Core/AI_Team/writer_agent.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow pubblicazione automatica_core_copy_g
-    percorso: SKILL & Agenti/Workflow pubblicazione automatica/Core/copy_generator.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow pubblicazione automatica_google_driv
-    percorso: SKILL & Agenti/Workflow pubblicazione automatica/Google_Drive/setup_session.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow pubblicazione automatica_instagram_s
-    percorso: SKILL & Agenti/Workflow pubblicazione automatica/Instagram/setup_session.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow pubblicazione automatica_instagram_m
-    percorso: SKILL & Agenti/Workflow pubblicazione automatica/Instagram_Mentalita/setup_session.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow pubblicazione automatica_linkedin_se
-    percorso: SKILL & Agenti/Workflow pubblicazione automatica/LinkedIn/setup_session.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow pubblicazione automatica_tiktok_tikt
-    percorso: SKILL & Agenti/Workflow pubblicazione automatica/TikTok/tiktok_publisher.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_workflow pubblicazione automatica_scripts_tik
-    percorso: SKILL & Agenti/Workflow pubblicazione automatica/scripts/tiktok_bot.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_skill & agenti_install_skills_py
-    percorso: SKILL & Agenti/install_skills.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_02-automazioni-e-scripts_send_s1_whatsapp_au
-    percorso: WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/send_s1_whatsapp_auto.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_02-automazioni-e-scripts_send_s1_whatsapp_au
-    percorso: WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/send_s1_whatsapp_auto.py
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_skill-empire-premium-s
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/Skill-empire-premium-style/digital-empire-lms/next.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference__claud
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/.claude-plugin/scripts/verify.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_bin_np
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/bin/npx-safe-launch.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugin/scripts/ruflo-hook.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-agent/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-agent/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-agentdb/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-agentdb/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-aidefence/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-aidefence/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-arena/src/domain/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-arena/src/engine/tournament.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-arena/src/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-arena/src/mcp-tools/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-arena/src/persistence/run-store.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-arena/src/report/render.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-arena/tests/tournament.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-arena/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-autopilot/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-autopilot/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-browser/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-browser/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-business-pods/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-business-pods/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-daa/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-daa/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-ddd/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-ddd/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-docs/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-docs/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-federation/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-federation/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-goals/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-goals/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-graph-intelligence/src/adapters/rag-memory-adapter.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-graph-intelligence/src/application/streaming-bridge.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-graph-intelligence/src/domain/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-graph-intelligence/src/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-graph-intelligence/src/infrastructure/witness-signer.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-graph-intelligence/src/mcp-tools/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-graph-intelligence/tests/solver-bridge.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-graph-intelligence/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-intelligence/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-intelligence/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-iot-cognitum/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-iot-cognitum/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-jujutsu/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-jujutsu/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-knowledge-graph/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-knowledge-graph/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-loop-workers/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-loop-workers/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-market-data/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-market-data/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-migrations/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-migrations/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-neural-trader/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-neural-trader/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-neural-trader/src/sublinear-adapter.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-observability/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-observability/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-plugin-creator/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-plugin-creator/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-rag-memory/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-rag-memory/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-ruvector/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-ruvector/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-ruvllm/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-ruvllm/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-rvf/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-rvf/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-security-audit/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-security-audit/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-sparc/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-sparc/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-swarm/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-swarm/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-testgen/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-workflows/scripts/fixtures/gaia-audit/planted-repo/v3/@claude-flow/cli/src/benchmarks/gaia-evil-runner.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-workflows/scripts/fixtures/gaia-audit/planted-repo/v3/@claude-flow/cli/src/benchmarks/gaia-evil-runner.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-workflows/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_plugin
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/plugins/ruflo-workflows/scripts/smoke.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_script
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/scripts/verify-federation-plugin.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_tests_
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/tests/docker-regression/scripts/test-workers.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_tests_
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/tests/rvf-migration.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/aidefence/__tests__/threat-detection.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/aidefence/src/domain/entities/threat.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/aidefence/src/domain/services/threat-learning-service.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/aidefence/src/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/aidefence/src/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/aidefence/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/browser/src/agent/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/browser/src/application/workflow-compiler.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/browser/src/domain/workflow.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/browser/src/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/browser/src/infrastructure/workflow-templates.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/browser/src/mcp-tools/signed-trajectory-tools.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/browser/src/skill/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/browser/tests/e2e/browser-e2e.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/browser/tests/workflow-templates.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/browser/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/claims/src/api/mcp-tools.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/claims/src/application/work-stealing-service.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/claims/src/domain/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/claims/src/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/claims/src/infrastructure/vector-clock.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/claims/tests/work-stealing-service.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/claims/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli-core/src/commands/memory.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli-core/src/mcp-tools/validate-input.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli-core/src/memory/json-backend.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli-core/src/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/__tests__/ruvector/ruvllm-wasm.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/__tests__/services/workspace-lease.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/__tests__/weft-export.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/__tests__/weft-export.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/agenticow/speculative-exploration.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/appliance/rvfa-signing.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/auth/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/benchmarks/gaia-hardness/train-data-loader.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/benchmarks/gaia-tools/web_search.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/benchmarks/gaia-voting.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/benchmarks/pretrain/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/business-pods/pod-schema.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/commands/ruvector/status.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/commands/workflow.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/config/proven-config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/encryption/vault.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/funnel/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/infrastructure/in-memory-repositories.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/init/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/mcp-tools/workflow-tools.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/memory/structured-distill.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/plugins/store/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/plugins/tests/test-plugin-store.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/production/retry.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/proxy/verify.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/runtime/parent-death-watchdog.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/ruvector/codemods/scope-analysis.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/ruvector/wasm-embedder.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/security/builtin-aidefence.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/services/workspace-lease.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/transfer/anonymization/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/transfer/ipfs/upload.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/transfer/models/seraphine.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/transfer/serialization/cfp.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/transfer/storage/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/transfer/store/tests/standalone-test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/transfer/store/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/transfer/tests/test-store.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/transfer/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/types/optional-modules.d.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/src/update/validator.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/cli/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/codex/src/dual-mode/orchestrator.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/codex/src/generators/skill-md.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/codex/src/loop/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/codex/src/migrations/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/codex/src/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/codex/src/validators/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/codex/tests/validators.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/codex/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/deployment/examples/prerelease-workflow.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/deployment/src/__tests__/release-manager.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/deployment/src/validator.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/deployment/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/embeddings/__tests__/utils.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/embeddings/src/__tests__/embedding-service.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/embeddings/src/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/embeddings/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/guidance/src/wasm-kernel.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/guidance/tests/wasm-kernel.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/guidance/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/__tests__/statusline/statusline-collision.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/__tests__/workers.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/bin/statusline.js
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/__tests__/reasoningbank.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/bridge/official-hooks-bridge.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/cli/guidance-cli.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/daemons/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/executor/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/llm/llm-hooks.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/mcp/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/reasoningbank/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/registry/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/statusline/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/swarm/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/src/workers/session-hook.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/hooks/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/integration/src/__tests__/token-optimizer.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/integration/src/worker-pool.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/integration/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/mcp/__tests__/mcp.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/mcp/src/transport/websocket.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/mcp/src/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/mcp/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/benchmarks/longmemeval/adapters/baseline-adapter.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/benchmarks/longmemeval/adapters/baseline-adapter.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/benchmarks/longmemeval/scripts/run-benchmark.sh
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/benchmarks/longmemeval/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/benchmarks/vector-search.bench.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/examples/cross-platform-usage.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/framework/benchmark.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/src/application/commands/store-memory.command.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/src/application/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/src/application/queries/search-memory.query.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/src/application/services/memory-application-service.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/src/domain/entities/memory-entry.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/src/domain/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/src/domain/repositories/memory-repository.interface.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/src/domain/services/memory-domain-service.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/src/infrastructure/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/src/infrastructure/repositories/hybrid-memory-repository.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/src/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/memory/vitest.setup.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/neural/__tests__/sona.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/neural/examples/sona-usage.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/neural/src/application/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/neural/src/application/services/neural-application-service.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/neural/src/domain/entities/pattern.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/neural/src/domain/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/neural/src/domain/services/learning-service.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/neural/src/types.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/neural/src/utils/serialize.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/neural/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/performance/benchmarks/attention/multi-head-attention.bench.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/performance/benchmarks/startup/mcp-server-init.bench.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/performance/src/examples/quick-test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/performance/src/framework/benchmark.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/performance/src/index.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/performance/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/performance/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-agent-federation/__tests__/unit/wg-witness-service.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-agent-federation/src/a2a/well-known.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-agent-federation/src/application/trust-evaluator.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-agent-federation/src/application/trust-evaluator.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-agent-federation/src/domain/entities/trust-level.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-agent-federation/src/domain/services/wg-witness-service.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-agent-federation/src/domain/value-objects/wg-config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-agent-federation/src/plugin.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-agent-federation/src/transport/midstream-aware-loader.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-agent-federation/src/transport/midstream-aware-loader.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-agent-federation/vitest.config.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-iot-cognitum/__tests__/integration/seed-client-raw.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-iot-cognitum/__tests__/unit/witness-verification-service.test.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-iot-cognitum/src/application/iot-coordinator.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-iot-cognitum/src/application/iot-coordinator.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-iot-cognitum/src/domain/entities/telemetry.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-iot-cognitum/src/domain/repositories/trust-history-repository.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-iot-cognitum/src/domain/services/witness-verification-service.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-iot-cognitum/src/infrastructure/seed-client-factory.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-iot-cognitum/src/plugin.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-iot-cognitum/src/workers/witness-audit-worker.ts
-    tipo: script
-    proprietario: "non-dichiarato"
-  - id: auto_workflow-estate_04-skills-e-reference_ruflo-reference_v3_@cl
-    percorso: WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/ruflo-reference/v3/@claude-flow/plugin-iot-cognitum/src/workers/witness-audit-worker.ts
-    tipo: script
-    proprietario: "non-dichiarato"
+  artefatti:
+    - id: auto_agency page - copia_dist_assets_index-c_cigoqz_js
+      percorso: Agency page - Copia/dist/assets/index-C_CIgOqz.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_agency page - copia_vite_config_ts
+      percorso: Agency page - Copia/vite.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_agency page_vite_config_ts
+      percorso: Agency page/vite.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_agenti_agency_orchestrator_run_500_py
+      percorso: Agenti/Agency/orchestrator/run_500.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_agenti_agency_outreach_implementation_utils___init___py
+      percorso: Agenti/Agency/outreach/implementation/utils/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_agenti_agency_outreach_implementation_whatsapp_outreach_py
+      percorso: Agenti/Agency/outreach/implementation/whatsapp_outreach.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_agenti_agency_outreach_tests_test_website_checker_py
+      percorso: Agenti/Agency/outreach/tests/test_website_checker.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_agenti_agency_scripts_social_calendar_py
+      percorso: Agenti/Agency/scripts/social_calendar.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_agenti_agency_scripts_social_calendar_py
+      percorso: Agenti/Agency/scripts/social_calendar.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_agenti_agency_sub-agents_ai-implementation_scraper_py
+      percorso: Agenti/Agency/sub-agents/ai-implementation/scraper.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_agenti_agency_sub-agents_cro-funnel_site_analyzer_py
+      percorso: Agenti/Agency/sub-agents/cro-funnel/site_analyzer.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_agenti_agency_sub-agents_no-website_scraper_py
+      percorso: Agenti/Agency/sub-agents/no-website/scraper.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_agenti_scripts_generate_pdf_report_py
+      percorso: Agenti/scripts/generate_pdf_report.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_content-factory_agents_video_script_agent_p
+      percorso: Clienti/EXPONIUM/content-factory/agents/video_script_agent.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_content-factory_arena_agents_copywriter_age
+      percorso: Clienti/EXPONIUM/content-factory/arena/Agents/copywriter_agent.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_content-factory_arena_arenaai_setup_arena_s
+      percorso: Clienti/EXPONIUM/content-factory/arena/ArenaAI/setup_arena_session.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_content-factory_arena_core_browser_manager_
+      percorso: Clienti/EXPONIUM/content-factory/arena/Core/browser_manager.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_content-factory_arena_core_browser_manager_
+      percorso: Clienti/EXPONIUM/content-factory/arena/Core/browser_manager.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_content-factory_arena_core_browser_manager_
+      percorso: Clienti/EXPONIUM/content-factory/arena/Core/browser_manager.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_content-factory_arena_core_browser_manager_
+      percorso: Clienti/EXPONIUM/content-factory/arena/Core/browser_manager.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_content-factory_arena_core_browser_manager_
+      percorso: Clienti/EXPONIUM/content-factory/arena/Core/browser_manager.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_content-factory_arena_core_browser_manager_
+      percorso: Clienti/EXPONIUM/content-factory/arena/Core/browser_manager.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_content-factory_arena_test_login_arena_py
+      percorso: Clienti/EXPONIUM/content-factory/arena/test_login_arena.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_content-factory_scripts_render_js
+      percorso: Clienti/EXPONIUM/content-factory/scripts/render.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_outreach_agents___init___py
+      percorso: Clienti/EXPONIUM/outreach/agents/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_outreach_knowledge___init___py
+      percorso: Clienti/EXPONIUM/outreach/knowledge/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_outreach_knowledge___init___py
+      percorso: Clienti/EXPONIUM/outreach/knowledge/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_outreach_knowledge___init___py
+      percorso: Clienti/EXPONIUM/outreach/knowledge/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_outreach_run_parallel_py
+      percorso: Clienti/EXPONIUM/outreach/run_parallel.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_outreach_utils___init___py
+      percorso: Clienti/EXPONIUM/outreach/utils/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_shared_skill_loader_py
+      percorso: Clienti/EXPONIUM/shared/skill_loader.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_exponium_sync_ps1
+      percorso: Clienti/EXPONIUM/sync.ps1
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_browser-profile_defaul
+      percorso: Clienti/Prof Autocad/preventivo-forge/browser-profile/Default/Extensions/eiaeiblijfjekdanodkjadfinkhbfgcd/7.8.15_0/js/userActionTracking.chunk.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_browser-profile_defaul
+      percorso: Clienti/Prof Autocad/preventivo-forge/browser-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.107.1_0/service_worker_bin_prod.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_browser-profile_defaul
+      percorso: Clienti/Prof Autocad/preventivo-forge/browser-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.107.1_0/service_worker_bin_prod.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_browser-profile_defaul
+      percorso: Clienti/Prof Autocad/preventivo-forge/browser-profile/Default/Extensions/lmjegmlicamnimmfhcmpkclmigmmcbeh/3.10_0/offscreen_compiled.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/implementation/translate_copy.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/bin/reinstall_msedge_stable_win.ps1
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/cli/programWithTestStub.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/client/writableStream.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/generated/webSocketMockSource.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/protocol/validatorPrimitives.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/remote/serverTransport.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/android/backendAdb.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/bidi/bidiPdf.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/bidi/third_party/firefoxPrefs.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/chromium/protocol.d.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/codegen/types.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/dispatchers/writableStreamDispatcher.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/electron/loader.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/firefox/protocol.d.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/har/harTracer.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/recorder/throttledFile.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/registry/oopDownloadBrowserMain.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/registry/oopDownloadBrowserMain.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/trace/recorder/tracing.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/trace/viewer/traceViewer.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/utils/image_tools/stats.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/utils/zones.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/videoRecorder.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/server/webkit/wkWorkers.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/third_party/pixelmatch.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/tools/backend/webstorage.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/tools/cli-client/session.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/tools/cli-daemon/program.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/tools/dashboard/dashboardController.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/tools/exports.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/tools/mcp/watchdog.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/tools/trace/traceUtils.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/tools/utils/mcp/tool.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/tools/utils/mcp/tool.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/tools/utils/socketConnection.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/utils/isomorphic/trace/traceUtils.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/utils/isomorphic/trace/versions/traceV8.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/utils/isomorphic/yaml.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/vite/htmlReport/report.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/vite/recorder/assets/index-CqAYX1I3.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/vite/traceViewer/assets/xtermModule-CsJ4vdCR.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/lib/zodBundleImpl.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/playwright/driver/package/types/types.d.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/pyphen/dictionaries/update.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/webview/js/lib/polyfill.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_dist_preventivoforge__
+      percorso: Clienti/Prof Autocad/preventivo-forge/dist/PreventivoForge/_internal/webview/js/state.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_implementation_transla
+      percorso: Clienti/Prof Autocad/preventivo-forge/implementation/translate_copy.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_prof autocad_preventivo-forge_run_py
+      percorso: Clienti/Prof Autocad/preventivo-forge/run.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_marketingskills-main_tools_clis_zoominfo_js
+      percorso: Clienti/marketingskills-main/tools/clis/zoominfo.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_clienti_presentazione-empire_src_lib_utils_ts
+      percorso: Clienti/presentazione-empire/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_chrome-profile_default_extensions_eiaeiblijfjekda
+      percorso: EmpireDesk/chrome-profile/Default/Extensions/eiaeiblijfjekdanodkjadfinkhbfgcd/7.8.15_0/js/userActionTracking.chunk.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_chrome-profile_default_extensions_ghbmnnjooekpmoe
+      percorso: EmpireDesk/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.108.1_0/service_worker_bin_prod.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_chrome-profile_default_extensions_ghbmnnjooekpmoe
+      percorso: EmpireDesk/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.108.1_0/service_worker_bin_prod.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_chrome-profile_default_extensions_lmjegmlicamnimm
+      percorso: EmpireDesk/chrome-profile/Default/Extensions/lmjegmlicamnimmfhcmpkclmigmmcbeh/3.10_0/offscreen_compiled.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_dist_empiredesk_chrome-profile_default_extensions
+      percorso: EmpireDesk/dist/EmpireDesk/chrome-profile/Default/Extensions/eiaeiblijfjekdanodkjadfinkhbfgcd/7.9.2_0/js/withPermissions.chunk.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_dist_empiredesk_chrome-profile_default_extensions
+      percorso: EmpireDesk/dist/EmpireDesk/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.108.1_0/service_worker_bin_prod.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_dist_empiredesk_chrome-profile_default_extensions
+      percorso: EmpireDesk/dist/EmpireDesk/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.108.1_0/service_worker_bin_prod.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_dist_empiredesk_chrome-profile_default_extensions
+      percorso: EmpireDesk/dist/EmpireDesk/chrome-profile/Default/Extensions/lmjegmlicamnimmfhcmpkclmigmmcbeh/3.10_0/offscreen_compiled.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_dist_empiredesk_platform_dist_assets_index-bzgicx
+      percorso: EmpireDesk/dist/EmpireDesk/platform/dist/assets/index-BzgiCx3R.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_dist_empiredesk_platform_dist_tailwind-cdn_js
+      percorso: EmpireDesk/dist/EmpireDesk/platform/dist/tailwind-cdn.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_dist_empiredesk_webview_js_lib_polyfill_js
+      percorso: EmpireDesk/dist/EmpireDesk/webview/js/lib/polyfill.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_dist_empiredesk_webview_js_state_js
+      percorso: EmpireDesk/dist/EmpireDesk/webview/js/state.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_modules_youtube_py
+      percorso: EmpireDesk/modules/youtube.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_platform_dist_assets_index-bzgicx3r_js
+      percorso: EmpireDesk/platform/dist/assets/index-BzgiCx3R.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_platform_dist_tailwind-cdn_js
+      percorso: EmpireDesk/platform/dist/tailwind-cdn.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_platform_public_tailwind-cdn_js
+      percorso: EmpireDesk/platform/public/tailwind-cdn.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_empiredesk_platform_utils_empireapi_ts
+      percorso: EmpireDesk/platform/utils/empireApi.ts
+      tipo: script
+      proprietario: "Max (UI/UX) — parte del pivot Aureus (dossier 17 §0-bis, fase 2 / U1)."
+    - id: auto_empiredesk_platform_vite_config_ts
+      percorso: EmpireDesk/platform/vite.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_kdp - prodottti digitali_leanding page_il codice dei potenti
+      percorso: KDP - prodottti digitali/Leanding Page/Il Codice dei Potenti/48-leggi-guerrieri/js/interactions.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_kdp - prodottti digitali_leanding page_il codice dei potenti
+      percorso: KDP - prodottti digitali/Leanding Page/Il Codice dei Potenti/48-leggi-maestri/js/interactions.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_kdp - prodottti digitali_leanding page_il codice dei potenti
+      percorso: KDP - prodottti digitali/Leanding Page/Il Codice dei Potenti/codice-del-nord/js/interactions.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_kdp - prodottti digitali_leanding page_il codice dei potenti
+      percorso: KDP - prodottti digitali/Leanding Page/Il Codice dei Potenti/il-codice-dei-potenti/js/interactions.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_kdp - prodottti digitali_leanding page_il codice dei potenti
+      percorso: KDP - prodottti digitali/Leanding Page/Il Codice dei Potenti/mente-immobile/js/interactions.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_kdp - prodottti digitali_leanding page_il codice dei potenti
+      percorso: KDP - prodottti digitali/Leanding Page/Il Codice dei Potenti/potere-nero/js/interactions.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium__netl
+      percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/_next/static/chunks/turbopack-0v1ql1vdashds.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium__netl
+      percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/.netlify/static/_next/static/mKrnkTxMztrJnallajTQq/_ssgManifest.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_agenc
+      percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/Agency page - Copia/dist/assets/index-C_CIgOqz.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_agenc
+      percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/Agency page - Copia/vite.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_dist-
+      percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/dist-call/_next/static/chunks/turbopack-0v1ql1vdashds.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_dist-
+      percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/dist-call/_next/static/w52bzLa8NZJLs0_fJ92Cn/_ssgManifest.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_dist-
+      percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/dist-call/_next/static/w52bzLa8NZJLs0_fJ92Cn/_ssgManifest.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_out__
+      percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/_next/static/chunks/turbopack-0v1ql1vdashds.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_out__
+      percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/_next/static/w52bzLa8NZJLs0_fJ92Cn/_ssgManifest.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_out__
+      percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/out/_next/static/w52bzLa8NZJLs0_fJ92Cn/_ssgManifest.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_leanding page ccm_ccm-premium_src_l
+      percorso: Lancio corso skill beast/Leanding Page CCM/ccm-premium/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_mj- classifica__vercel_output_stati
+      percorso: Lancio corso skill beast/MJ- classifica/.vercel/output/static/_next/static/chunks/turbopack-0f-.awj.x~0_u.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_mj- classifica__vercel_output_stati
+      percorso: Lancio corso skill beast/MJ- classifica/.vercel/output/static/_next/static/z7CO8bZCUHjHBajKeqBcr/_ssgManifest.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_mj- classifica_dist__next_static_ch
+      percorso: Lancio corso skill beast/MJ- classifica/dist/_next/static/chunks/turbopack-0f-.awj.x~0_u.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_mj- classifica_dist__next_static_mt
+      percorso: Lancio corso skill beast/MJ- classifica/dist/_next/static/mTo5RknXbtn84dqzOwwAS/_ssgManifest.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_mj- classifica_src_lib_utils_ts
+      percorso: Lancio corso skill beast/MJ- classifica/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_mj- classifica_src_middleware_ts
+      percorso: Lancio corso skill beast/MJ- classifica/src/middleware.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_ccm-elite-ultimat
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/ccm-elite-ultimate/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_ccm-full-empire_s
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/ccm-full-empire/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_ccm-sale-page-emp
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/ccm-sale-page-empire/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_ccm-strategic-cal
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/ccm-strategic-call/js/interactions.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_formazione-empire
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/src/app/actions/progress.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_formazione-empire
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/src/app/auth/callback/route.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_formazione-empire
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/src/lib/supabase/server.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_formazione-empire
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_formazione-empire
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/formazione-empire/src/middleware.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_icro-empire_out__
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/_next/static/Glqoy4RKqCtN1jg2i46MB/_ssgManifest.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_icro-empire_out__
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/out/_next/static/chunks/turbopack-0upattcp_2ux_.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_icro-empire_src_l
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/icro-empire/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_index_backup-empi
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/.netlify/static/_next/static/chunks/turbopack-0osqn3b26xa7d.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_index_backup-empi
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/.netlify/static/_next/static/hoBM9cGGI6ma_g412bsZB/_ssgManifest.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_index_backup-empi
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/dist/_next/static/chunks/turbopack-0osqn3b26xa7d.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_index_backup-empi
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/dist/_next/static/zQOH8l0rh0etgygTqG1b6/_ssgManifest.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_index_backup-empi
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/dist/_next/static/zQOH8l0rh0etgygTqG1b6/_ssgManifest.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_index_backup-empi
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/out/_next/static/chunks/turbopack-0osqn3b26xa7d.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_index_backup-empi
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/out/_next/static/hoBM9cGGI6ma_g412bsZB/_ssgManifest.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_index_backup-empi
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_index_backup-empi
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_siti ccm_index_backup-empi
+      percorso: Lancio corso skill beast/Sale pag/Siti CCM/index_backup-empire/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_lancio corso skill beast_sale pag_ccm-sale-page-empire_src_l
+      percorso: Lancio corso skill beast/Sale pag/ccm-sale-page-empire/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_instagram automation__avvia_ig_bat
+      percorso: Outreach/Instagram Automation/_avvia_ig.bat
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_instagram automation_agents___init___py
+      percorso: Outreach/Instagram Automation/agents/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_linkedin automation_withdraw_pending_py
+      percorso: Outreach/LinkedIn Automation/withdraw_pending.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_outreach workflow_agents___init___py
+      percorso: Outreach/Outreach Workflow/agents/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_outreach workflow_knowledge___init___py
+      percorso: Outreach/Outreach Workflow/knowledge/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_outreach workflow_utils___init___py
+      percorso: Outreach/Outreach Workflow/utils/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_outreach workflow_verify_leads_py
+      percorso: Outreach/Outreach Workflow/verify_leads.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_outreach workflow_verify_leads_py
+      percorso: Outreach/Outreach Workflow/verify_leads.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_outreach workflow_verify_leads_py
+      percorso: Outreach/Outreach Workflow/verify_leads.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_test-email-10_bat
+      percorso: Outreach/TEST-EMAIL-10.bat
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_outreach-dashboard-premium_src_app_api_launch_route
+      percorso: Outreach/outreach-dashboard-premium/src/app/api/launch/route.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_outreach-dashboard-premium_src_app_api_leads_route_
+      percorso: Outreach/outreach-dashboard-premium/src/app/api/leads/route.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_outreach-dashboard-premium_src_app_api_logs_route_t
+      percorso: Outreach/outreach-dashboard-premium/src/app/api/logs/route.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_outreach-dashboard-premium_src_app_api_status_route
+      percorso: Outreach/outreach-dashboard-premium/src/app/api/status/route.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_outreach-dashboard-premium_src_app_api_stop_route_t
+      percorso: Outreach/outreach-dashboard-premium/src/app/api/stop/route.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_outreach-dashboard-premium_src_lib_utils_ts
+      percorso: Outreach/outreach-dashboard-premium/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_outreach_preventa-maps-scraper_scraper_py
+      percorso: Outreach/preventa-maps-scraper/scraper.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio__
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/_vecchio-tentativo-rotto/content-ingest-ecosystem/scripts/memory_manager.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio__
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/_vecchio-tentativo-rotto/content-ingest-ecosystem/scripts/memory_manager.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio__
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/_vecchio-tentativo-rotto/empire-studio/scripts/memory_manager.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio__
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/_vecchio-tentativo-rotto/empire-studio/scripts/memory_manager.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/bundles/core-3d-animation/skills/babylonjs-engine/assets/starter_babylon/vite.config.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/bundles/core-3d-animation/skills/motion-framer/assets/starter_motion/vite.config.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/bundles/core-3d-animation/skills/react-three-fiber/assets/starter_r3f/vite.config.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/bundles/extended-3d-scroll/skills/playcanvas-engine/assets/starter_playcanvas/scripts/input-manager.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/babylonjs-engine/skills/babylonjs-engine/assets/starter_babylon/vite.config.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/motion-framer/skills/motion-framer/assets/starter_motion/vite.config.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/playcanvas-engine/skills/playcanvas-engine/assets/starter_playcanvas/scripts/input-manager.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/plugins/individual/react-three-fiber/skills/react-three-fiber/assets/starter_r3f/vite.config.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/claudedesignskills/scripts/marketplace/validate_marketplace.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/cli-printing-press/scripts/verify-learn-purity.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/cli-printing-press/scripts/verify-skill/verify_skill.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/cli-printing-press/scripts/verify-skill/verify_skill.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/cli-printing-press/testdata/crowdsniff/sample-sdk.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/cli-printing-press/testdata/crowdsniff/sample-sdk.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.1/content-forge/scripts/lib/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.1/content-forge/scripts/tests/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.1/content-forge/scripts/validate_dag.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.2/content-forge/scripts/lib/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.2/content-forge/scripts/tests/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.2/content-forge/scripts/tests/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/packaged-final-v1.2/content-forge/scripts/validate_dag.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/scripts/lib/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/scripts/tests/__init__.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_c
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/content-forge2.0/scripts/validate_dag.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_m
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/master-build-architecture/scripts/memory_manager.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/src/config/prismLight.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/src/theme/NavbarItem/NavbarNavLink.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/src/theme/NotFound.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/src/versions.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/src/versions.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/static/js/redirection.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/static/sw.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite__riferimenti-e-archivio_p
+      percorso: SKILL & Agenti/Empire Studio Suite/_Riferimenti-e-Archivio/playwright.dev/tests/python.spec.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite_empire-studio_scripts__sp
+      percorso: SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/_specs/youtube_department.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite_empire-studio_scripts__sp
+      percorso: SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/_specs/youtube_department.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite_empire-studio_scripts__sp
+      percorso: SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/_specs/youtube_department.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_empire studio suite_empire-studio_scripts_yt_
+      percorso: SKILL & Agenti/Empire Studio Suite/empire-studio/scripts/yt_ingest.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_skill_agente max_scripts_validate_structure_p
+      percorso: SKILL & Agenti/SKILL/Agente Max/scripts/validate_structure.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_skill_skill - cro - short-form script engine_
+      percorso: SKILL & Agenti/SKILL/Skill - CRO - Short-Form Script Engine.skill/scripts-py/structure_calculator.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_skill_skill empire-premium-style_digital-empi
+      percorso: SKILL & Agenti/SKILL/Skill empire-premium-style/digital-empire-lms/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_skill_website creator_scripts_site_builder_py
+      percorso: SKILL & Agenti/SKILL/Website Creator/scripts/site_builder.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow agency creative_caroselli - agency_a
+      percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/Agents/orchestrator_agent.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow agency creative_caroselli - agency_a
+      percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/ArenaAI/setup_arena_session.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow agency creative_caroselli - agency_c
+      percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/Core/browser_manager.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow agency creative_caroselli - agency_g
+      percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/GoogleDrive/setup_drive_session.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
+      percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/app/api/caroselli/route.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
+      percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/app/api/config/route.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
+      percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/app/api/logs/route.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
+      percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/app/api/run-workflow/route.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
+      percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/app/api/setup-session/route.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
+      percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/app/api/submit-stdin/route.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow agency creative_caroselli - agency_d
+      percorso: SKILL & Agenti/Workflow agency creative/caroselli - agency/dashboard. Produzione caroselli Agency/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow agency creative_workspace-019e9cf2-5
+      percorso: SKILL & Agenti/Workflow agency creative/workspace-019e9cf2-5c44-799f-ae4f-7d128877a122/digital-empire-carousel/src/lib/utils.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow pubblicazione automatica_core_ai_tea
+      percorso: SKILL & Agenti/Workflow pubblicazione automatica/Core/AI_Team/writer_agent.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow pubblicazione automatica_core_ai_tea
+      percorso: SKILL & Agenti/Workflow pubblicazione automatica/Core/AI_Team/writer_agent.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow pubblicazione automatica_core_copy_g
+      percorso: SKILL & Agenti/Workflow pubblicazione automatica/Core/copy_generator.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow pubblicazione automatica_google_driv
+      percorso: SKILL & Agenti/Workflow pubblicazione automatica/Google_Drive/setup_session.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow pubblicazione automatica_instagram_s
+      percorso: SKILL & Agenti/Workflow pubblicazione automatica/Instagram/setup_session.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow pubblicazione automatica_instagram_m
+      percorso: SKILL & Agenti/Workflow pubblicazione automatica/Instagram_Mentalita/setup_session.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow pubblicazione automatica_linkedin_se
+      percorso: SKILL & Agenti/Workflow pubblicazione automatica/LinkedIn/setup_session.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow pubblicazione automatica_linkedin_se
+      percorso: SKILL & Agenti/Workflow pubblicazione automatica/LinkedIn/setup_session.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow pubblicazione automatica_tiktok_tikt
+      percorso: SKILL & Agenti/Workflow pubblicazione automatica/TikTok/tiktok_publisher.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_workflow pubblicazione automatica_scripts_tik
+      percorso: SKILL & Agenti/Workflow pubblicazione automatica/scripts/tiktok_bot.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_caveman-extracted_caveman-main_benchmarks_run
+      percorso: SKILL & Agenti/caveman-extracted/caveman-main/benchmarks/run.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_caveman-extracted_caveman-main_benchmarks_run
+      percorso: SKILL & Agenti/caveman-extracted/caveman-main/benchmarks/run.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_caveman-extracted_caveman-main_bin_install_js
+      percorso: SKILL & Agenti/caveman-extracted/caveman-main/bin/install.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_caveman-extracted_caveman-main_bin_lib_settin
+      percorso: SKILL & Agenti/caveman-extracted/caveman-main/bin/lib/settings.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_caveman-extracted_caveman-main_src_hooks_unin
+      percorso: SKILL & Agenti/caveman-extracted/caveman-main/src/hooks/uninstall.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_caveman-extracted_caveman-main_src_hooks_unin
+      percorso: SKILL & Agenti/caveman-extracted/caveman-main/src/hooks/uninstall.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_caveman-extracted_caveman-main_src_tools_cave
+      percorso: SKILL & Agenti/caveman-extracted/caveman-main/src/tools/caveman-init.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_caveman-extracted_caveman-main_tests_verify_r
+      percorso: SKILL & Agenti/caveman-extracted/caveman-main/tests/verify_repo.py
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_github-repos_cli-printing-press_printing-pres
+      percorso: SKILL & Agenti/github-repos/cli-printing-press/printing-press-import/references/import-rewrite.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main__claude-plugi
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/.claude-plugin/scripts/verify.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_bin_npx-safe-
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/bin/npx-safe-launch.js
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugin_script
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugin/scripts/ruflo-hook.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-agent/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-agent/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-agentdb/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-agentdb/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-aidefence/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-aidefence/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-autopilot/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-autopilot/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-browser/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-browser/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-daa/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-daa/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-ddd/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-ddd/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-docs/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-docs/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-federation/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-federation/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-goals/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-goals/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-graph-intelligence/src/adapters/rag-memory-adapter.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-graph-intelligence/src/application/streaming-bridge.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-graph-intelligence/src/domain/types.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-graph-intelligence/src/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-graph-intelligence/src/infrastructure/witness-signer.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-graph-intelligence/src/mcp-tools/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-graph-intelligence/tests/solver-bridge.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-graph-intelligence/vitest.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-intelligence/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-intelligence/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-iot-cognitum/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-iot-cognitum/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-jujutsu/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-jujutsu/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-knowledge-graph/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-knowledge-graph/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-loop-workers/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-loop-workers/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-market-data/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-market-data/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-migrations/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-migrations/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-neural-trader/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-neural-trader/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-neural-trader/src/sublinear-adapter.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-observability/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-observability/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-plugin-creator/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-plugin-creator/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-rag-memory/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-rag-memory/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-ruvector/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-ruvector/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-ruvllm/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-ruvllm/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-rvf/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-rvf/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-security-audit/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-security-audit/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-sparc/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-sparc/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-swarm/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-swarm/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-testgen/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-testgen/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-workflows/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_plugins_ruflo
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/plugins/ruflo-workflows/scripts/smoke.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_scripts_verif
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/scripts/verify-federation-plugin.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_tests_docker-
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/tests/docker-regression/scripts/test-workers.sh
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_tests_rvf-mig
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/tests/rvf-migration.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/aidefence/__tests__/threat-detection.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/aidefence/src/domain/entities/threat.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/aidefence/src/domain/services/threat-learning-service.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/aidefence/src/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/aidefence/src/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/aidefence/vitest.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/browser/src/agent/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/browser/src/application/workflow-compiler.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/browser/src/domain/workflow.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/browser/src/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/browser/src/infrastructure/workflow-templates.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/browser/src/mcp-tools/signed-trajectory-tools.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/browser/src/skill/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/browser/tests/e2e/browser-e2e.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/browser/tests/workflow-templates.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/browser/vitest.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/claims/src/api/mcp-tools.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/claims/src/application/work-stealing-service.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/claims/src/domain/types.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/claims/src/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/claims/src/infrastructure/vector-clock.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/claims/tests/work-stealing-service.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/claims/vitest.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli-core/src/commands/memory.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli-core/src/mcp-tools/validate-input.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli-core/src/memory/json-backend.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli-core/src/types.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/__tests__/ruvector/ruvllm-wasm.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/__tests__/services/worker-daemon-resource-thresholds.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/__tests__/wasm-agent-tools.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/appliance/rvfa-signing.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/benchmarks/gaia-hardness/train-data-loader.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/benchmarks/gaia-tools/web_search.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/benchmarks/gaia-voting.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/benchmarks/pretrain/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/commands/ruvector/status.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/commands/workflow.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/encryption/vault.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/infrastructure/in-memory-repositories.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/init/types.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/mcp-tools/workflow-tools.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/memory/sona-optimizer.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/plugins/store/types.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/plugins/tests/test-plugin-store.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/production/retry.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/runtime/headless.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/ruvector/vector-db.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/services/worker-queue.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/transfer/anonymization/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/transfer/ipfs/upload.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/transfer/models/seraphine.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/transfer/serialization/cfp.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/transfer/storage/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/transfer/store/tests/standalone-test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/transfer/store/types.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/transfer/tests/test-store.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/transfer/types.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/types.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/types/optional-modules.d.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/src/update/validator.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/cli/vitest.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/codex/src/dual-mode/orchestrator.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/codex/src/generators/skill-md.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/codex/src/loop/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/codex/src/migrations/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/codex/src/types.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/codex/src/validators/index.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/codex/tests/validators.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/codex/vitest.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/deployment/examples/prerelease-workflow.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/deployment/src/__tests__/release-manager.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/deployment/src/validator.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/deployment/vitest.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/embeddings/__tests__/utils.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/embeddings/src/__tests__/embedding-service.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/embeddings/src/types.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/embeddings/vitest.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/guidance/src/wasm-kernel.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/guidance/tests/wasm-kernel.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/guidance/vitest.config.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/hooks/__tests__/statusline/statusline-collision.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/hooks/__tests__/workers.test.ts
+      tipo: script
+      proprietario: "non-dichiarato"
+    - id: auto_skill & agenti_ruflo-main-extracted_ruflo-main_v3_@claude-fl
+      percorso: SKILL & Agenti/ruflo-main-extracted/ruflo-main/v3/@claude-flow/hooks/bin/statusline.js
+      tipo: script
+      proprietario: "non-dichiarato"
 # <!-- EMPIRE-CENSUS:END -->
 
 stats:

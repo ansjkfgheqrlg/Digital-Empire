@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preventa — Il preventivo che chiude. In 2 minuti, non in 30.</title>
+<meta name="description" content="Preventa genera il preventivo brandizzato della tua concessionaria in 2 minuti: PDF pronto da mandare su WhatsApp, con i prezzi bloccati dal titolare. Demo 15 minuti su una tua auto reale.">
+<meta property="og:title" content="Preventa — Il preventivo che chiude. In 2 minuti, non in 30.">
+<meta property="og:description" content="Il PDF preventivo brandizzato della tua concessionaria, pronto in 2 minuti. Demo di 15 minuti su una tua auto reale.">
+<meta property="og:type" content="website">
+<!--
+  Landing Preventa — LOTTO 4 completamento Workflow Estate (CP-20260723).
+  Copy: Clienti/Prof Autocad/preventa-launch-kit/01_LANDING_COPY_ONE_PAGE.md
+  Palette/tono: 03_PALETTE_TONO_VOCE.md · Headline: 04_HEADLINE_AB.md (variante A)
+
+  ONESTA' DELLA PAGINA — cosa NON e' stato inventato:
+  - Il PREZZO non e' scritto: DEC-EST-005 (EUR 490 setup / EUR 149 canone) e' ancora
+    sotto veto di Max (M-EST-4). Al suo posto c'e' un segnaposto visibile, non una cifra
+    plausibile. Una cifra sbagliata su una landing pubblica e' peggio di una cifra assente.
+  - Nessun logo cliente, nessuna recensione, nessun numero di vendite: la sola prova
+    linkata e' il case study Novacar, che cita solo fatti tracciabili a checkpoint.
+  - La CTA funziona DAVVERO oggi: apre una mail precompilata. Dove servirebbe un link
+    Calendly/WhatsApp c'e' un TODO marcato, non un bottone finto.
+-->
+<style>
+  :root{
+    --blu:#101E3E;         /* fiducia, automotive premium */
+    --arancio:#FF4D00;     /* SOLO CTA: mai oltre il 10% della pagina */
+    --ghiaccio:#F6F7F9;
+    --antracite:#1A1A1A;
+    --testo:#4B5563;
+    --verde:#18A957;
+    --bordo:#E4E7EC;
+    --radius:12px;
+    --max:1120px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    font-size:18px;line-height:1.6;color:var(--testo);background:#fff;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{color:var(--antracite);line-height:1.2;letter-spacing:-.02em}
+  h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800}
+  h2{font-size:clamp(1.5rem,3.5vw,2.4rem);font-weight:800;margin-bottom:.6em}
+  h3{font-size:1.25rem;font-weight:700;margin-bottom:.4em}
+  p{margin-bottom:1em}
+  a{color:var(--blu)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  section{padding:80px 0}
+  .alt{background:var(--ghiaccio)}
+
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--bordo)}
+  .nav{display:flex;align-items:center;justify-content:space-between;
+    padding:14px 24px;max-width:var(--max);margin:0 auto;gap:16px}
+  .logo{font-weight:800;font-size:1.35rem;color:var(--blu);letter-spacing:-.03em}
+  .logo span{color:var(--arancio)}
+  .nav-links{display:flex;gap:28px;font-size:.95rem;font-weight:500}
+  .nav-links a{color:var(--testo);text-decoration:none}
+  .nav-links a:hover{color:var(--blu)}
+
+  /* bottoni */
+  .cta{display:inline-block;background:var(--arancio);color:#fff;text-decoration:none;
+    font-weight:700;font-size:1.05rem;padding:16px 30px;border-radius:var(--radius);
+    border:none;cursor:pointer;transition:transform .15s ease,filter .15s ease;
+    box-shadow:0 6px 18px rgba(255,77,0,.28)}
+  .cta:hover{filter:brightness(1.06);transform:translateY(-1px)}
+  .cta-sm{padding:11px 20px;font-size:.95rem;box-shadow:none}
+  .micro{font-size:.9rem;color:var(--testo);margin-top:12px}
+
+  /* hero */
+  .hero{background:var(--ghiaccio);padding:80px 0 72px}
+  .hero h1{color:var(--blu);max-width:16ch}
+  .hero .sub{font-size:1.2rem;max-width:60ch;margin:24px 0 28px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  ul.cred{list-style:none;margin:0 0 30px}
+  ul.cred li{position:relative;padding-left:30px;margin-bottom:12px;font-size:1.02rem}
+  ul.cred li::before{content:"";position:absolute;left:0;top:.55em;width:14px;height:8px;
+    border-left:3px solid var(--verde);border-bottom:3px solid var(--verde);
+    transform:rotate(-45deg)}
+
+  /* mockup */
+  .mock{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .mock-card{background:#fff;border:1px solid var(--bordo);border-radius:var(--radius);
+    padding:16px;min-height:240px;display:flex;flex-direction:column}
+  .mock-tag{font-size:.68rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+    padding:5px 9px;border-radius:6px;align-self:flex-start;margin-bottom:12px}
+  .tag-oggi{background:#FEE4E2;color:#B42318}
+  .tag-preventa{background:#DCFAE6;color:#067647}
+  .line{height:8px;background:var(--bordo);border-radius:4px;margin-bottom:9px}
+  .line.short{width:52%}
+  .line.mid{width:74%}
+  .line.messy{background:repeating-linear-gradient(90deg,#E4E7EC 0 12px,#F6F7F9 12px 18px)}
+  .line.brand{background:var(--blu);opacity:.85}
+  .line.accent{background:var(--arancio);opacity:.75;width:40%}
+
+  /* griglie */
+  .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .card{background:#fff;border:1px solid var(--bordo);border-radius:var(--radius);padding:28px}
+  .alt .card{background:#fff}
+  .card h3{color:var(--blu)}
+  .ftag{display:inline-block;margin-top:14px;font-size:.85rem;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    color:var(--blu);background:var(--ghiaccio);border:1px solid var(--bordo);
+    padding:7px 11px;border-radius:8px}
+  .alt .ftag{background:#fff}
+
+  /* step */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:16px}
+  .step-n{width:44px;height:44px;border-radius:50%;background:var(--blu);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:800;margin-bottom:14px}
+
+  /* faq */
+  details{background:#fff;border:1px solid var(--bordo);border-radius:var(--radius);
+    padding:20px 24px;margin-bottom:12px}
+  details[open]{border-color:var(--blu)}
+  summary{font-weight:700;color:var(--antracite);cursor:pointer;list-style:none;
+    display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--arancio);font-size:1.5rem;line-height:1;font-weight:700}
+  details[open] summary::after{content:"−"}
+  details p{margin:14px 0 0}
+
+  /* cta finale */
+  .final{background:var(--blu);color:#fff;text-align:center}
+  .final h2{color:#fff;max-width:20ch;margin:0 auto .5em}
+  .final p{color:#C7CEDB;max-width:60ch;margin:0 auto 30px}
+  .final .micro{color:#95A0B8}
+
+  /* prova */
+  .proof{border:2px solid var(--blu);border-radius:var(--radius);padding:36px;background:#fff}
+  .proof-list{list-style:none;margin:20px 0}
+  .proof-list li{padding-left:28px;position:relative;margin-bottom:10px}
+  .proof-list li::before{content:"→";position:absolute;left:0;color:var(--arancio);font-weight:800}
+
+  /* segnaposto da compilare: deve DARE FASTIDIO, non mimetizzarsi */
+  .todo{display:inline-block;background:#FEF0C7;color:#93370D;border:1px dashed #DC6803;
+    padding:2px 8px;border-radius:5px;font-size:.85em;font-weight:700;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+
+  footer{background:var(--antracite);color:#9AA1AC;padding:48px 0;font-size:.9rem}
+  footer a{color:#fff}
+  .legal{margin-top:18px;font-size:.82rem;color:#6B7280;max-width:80ch}
+
+  .sticky-cta{display:none}
+  @media(max-width:900px){
+    .hero-grid,.cols,.steps{grid-template-columns:1fr}
+    .nav-links{display:none}
+    section{padding:56px 0}
+    body{padding-bottom:78px}
+    .sticky-cta{display:block;position:fixed;bottom:0;left:0;right:0;z-index:60;
+      background:#fff;border-top:1px solid var(--bordo);padding:12px 16px}
+    .sticky-cta .cta{display:block;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo">PREVENTA<span>.</span></div>
+    <div class="nav-links">
+      <a href="#come-funziona">Come funziona</a>
+      <a href="#per-chi">Per chi è</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a class="cta cta-sm" href="#demo">Vedi demo in 15 minuti</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Il preventivo che chiude. In 2 minuti, non in 30.</h1>
+      <p class="sub">I tuoi venditori perdono mezz'ora tra Excel, gestionali lenti e PDF brutti. Il cliente intanto scrive ad altri 3 su WhatsApp. Preventa genera un PDF brandizzato della tua concessionaria, con prezzi bloccati da te, permuta e finanziamento — pronto da inviare al volo.</p>
+      <ul class="cred">
+        <li>Non è un altro gestionale. Si affianca a quello che hai.</li>
+        <li>Licenza a canone <span class="todo">MAX: prezzo — DEC-EST-005 sotto veto</span>. Se non lo usi, lo stacchiamo da remoto.</li>
+        <li>Pannello titolare: listini bloccati, i venditori non toccano i margini.</li>
+      </ul>
+      <a class="cta" href="#demo">Fammi vedere la demo sulla mia auto — 15 min</a>
+      <p class="micro">Nessun impegno. Demo su una tua auto reale in pronta consegna. Senza slide.</p>
+    </div>
+    <div class="mock" aria-hidden="true">
+      <div class="mock-card">
+        <span class="mock-tag tag-oggi">Oggi</span>
+        <div class="line messy"></div><div class="line messy mid"></div>
+        <div class="line messy"></div><div class="line messy short"></div>
+        <div class="line messy mid"></div><div class="line messy"></div>
+        <div class="line messy short"></div>
+      </div>
+      <div class="mock-card">
+        <span class="mock-tag tag-preventa">Con Preventa — 2 min</span>
+        <div class="line brand mid"></div>
+        <div class="line short"></div>
+        <div class="line"></div><div class="line mid"></div>
+        <div class="line short"></div>
+        <div class="line accent"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="micro" style="margin-top:36px;border-top:1px solid var(--bordo);padding-top:20px">
+      Pensato per concessionari auto da 3 a 20 venditori. Multi-brand, nuovo e usato. Usato ogni giorno per generare preventivi inviabili su WhatsApp.
+    </p>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section id="per-chi">
+  <div class="wrap">
+    <h2>Perché perdi tempo e trattative con i preventivi di adesso?</h2>
+    <div class="cols">
+      <div class="card">
+        <h3>30 minuti per un PDF decente.</h3>
+        <p>Excel, Word, copia-incolla da gestionale. Il venditore fa l'impiegato, non il venditore. A fine mese hai pagato ore di lavoro amministrativo.</p>
+      </div>
+      <div class="card">
+        <h3>Il cliente su WhatsApp non aspetta.</h3>
+        <p>Ti chiede il preventivo alle 10:12. Se rispondi alle 10:50 con un foglio brutto, ha già scritto ad altri due. La velocità è il nuovo sconto.</p>
+      </div>
+      <div class="card">
+        <h3>Ogni venditore fa il suo prezzo.</h3>
+        <p>File Excel diversi, margini toccati, permute a memoria. Il titolare scopre il prezzo finale quando è tardi. Zero controllo.</p>
+      </div>
+    </div>
+    <p style="margin-top:34px;font-size:1.2rem;font-weight:700;color:var(--antracite)">Non è colpa del team. È lo strumento sbagliato.</p>
+  </div>
+</section>
+
+<!-- SOLUZIONE -->
+<section class="alt">
+  <div class="wrap">
+    <h2>Preventa fa una cosa sola, ma la fa meglio di chiunque: trasforma una trattativa in un PDF che vende.</h2>
+    <div class="cols">
+      <div class="card">
+        <h3>Invia il preventivo mentre il cliente è ancora caldo.</h3>
+        <p>Inserisci targa o modello, allestimento, accessori, permuta. In 2 minuti esce un PDF professionale, impaginato, con la tua grafica. Lo mandi su WhatsApp con un tap. Niente allegati pesanti, niente "te lo mando stasera".</p>
+        <span class="ftag">→ Input 3 campi + PDF brandizzato immediato</span>
+      </div>
+      <div class="card">
+        <h3>Il titolare blocca i prezzi. Il venditore non li tocca.</h3>
+        <p>Tu imposti listini, costi di messa su strada, sconti massimi, valutazioni permuta. Il venditore sceglie solo gli optional e vede il finale, non lo modifica. Controllo totale, zero discussioni, zero errori.</p>
+        <span class="ftag">→ Admin titolare + kill-switch licenza</span>
+      </div>
+      <div class="card">
+        <h3>Non un'altra agenzia. Uno strumento tuo.</h3>
+        <p>Preventa non è un servizio in outsourcing. Non paghi a preventivo. Non aspetti un grafico. È un software tuo, a canone fisso, che disdici quando vuoi. Se non lo usa il team, lo stacchiamo da remoto. Resti autonomo e veloce.</p>
+        <span class="ftag">→ Canone fisso, no vincoli lunghi, supporto diretto</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COME FUNZIONA -->
+<section id="come-funziona">
+  <div class="wrap">
+    <h2>Da trattativa a PDF in 3 mosse.</h2>
+    <div class="steps">
+      <div class="card"><div class="step-n">1</div><h3>Inserisci il veicolo</h3><p>Targa, modello, oppure un'usata già in stock.</p></div>
+      <div class="card"><div class="step-n">2</div><h3>Aggiungi permuta e finanziamento</h3><p>Campi guidati, note libere. Nessun calcolo a mano.</p></div>
+      <div class="card"><div class="step-n">3</div><h3>Genera</h3><p>PDF brandizzato pronto per WhatsApp o email.</p></div>
+    </div>
+    <p style="margin-top:30px">Nasce per venditori, non per informatici. Se sai usare WhatsApp, sai usare Preventa.</p>
+  </div>
+</section>
+
+<!-- PROVA -->
+<section class="alt" id="demo">
+  <div class="wrap">
+    <div class="proof">
+      <h2>Non crederci. Guardalo sulla tua auto.</h2>
+      <p>Ti prepariamo una demo di 15 minuti su schermo condiviso. Prendiamo un'auto che hai davvero in salone o in pronta consegna, con i tuoi prezzi reali. Generiamo il PDF davanti a te. Poi decidi tu se ha senso per il tuo salone o se preferisci tenere Excel.</p>
+      <p style="font-weight:700;color:var(--antracite);margin-bottom:0">Cosa vedrai in 15 minuti:</p>
+      <ul class="proof-list">
+        <li>Inserimento veicolo in 2 minuti</li>
+        <li>PDF brandizzato con logo, foto, voci, permuta, finanziamento, validità 7 giorni</li>
+        <li>Pannello titolare con blocco listini</li>
+        <li>Invio WhatsApp in un clic</li>
+      </ul>
+      <!-- TODO MAX: sostituire il mailto con il link Calendly/WhatsApp quando esiste.
+           Finche' non esiste, la mail precompilata FUNZIONA davvero: meglio di un
+           bottone che finge di prenotare e non prenota niente. -->
+      <a class="cta" href="mailto:max.infoproducer@gmail.com?subject=Demo%20Preventa%2015%20minuti&body=Buongiorno%2C%0D%0Avorrei%20vedere%20la%20demo%20di%20Preventa%20su%20una%20nostra%20auto.%0D%0A%0D%0AConcessionaria%3A%20%0D%0ACitt%C3%A0%3A%20%0D%0ANumero%20venditori%3A%20%0D%0ATelefono%2FWhatsApp%3A%20%0D%0AQuando%20vi%20fa%20comodo%3A%20%0D%0A%0D%0AGrazie.">Prenota demo 15 min — scegli orario</a>
+      <p class="micro">
+        Prova reale, non promessa: leggi il
+        <a href="../../Clienti/Prof%20Autocad/preventa-launch-kit/07_CASE_STUDY_NOVACAR.html">case study Novacar</a>
+        — cosa è stato costruito e in quanto tempo.
+      </p>
+      <p class="micro">Preventa nasce dall'esperienza in saloni da 3 a 20 venditori. Non promette vendite: ti fa risparmiare il tempo che oggi perdi a fare documenti.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OBIEZIONI -->
+<section>
+  <div class="wrap">
+    <h2>Domande che ci fanno i titolari più attenti.</h2>
+    <div class="cols">
+      <div class="card">
+        <h3>"Ho già il gestionale"</h3>
+        <p>Perfetto, non lo tocchiamo. Il gestionale gestisce la concessionaria, Preventa ti fa vendere. Il gestionale sputa 5 pagine interne, Preventa fa 1 pagina di vendita che il cliente capisce. Lavorano in parallelo.</p>
+      </div>
+      <div class="card">
+        <h3>"I miei venditori non lo useranno"</h3>
+        <p>È la paura più comune. Per questo ha 3 campi e zero formazione. Se dopo 30 giorni non lo usano, lo stacchiamo con kill-switch remoto, senza penali. Di solito succede il contrario: lo usano perché fa meno sbatti di Excel.</p>
+      </div>
+      <div class="card">
+        <h3>"Quanto costa? Siamo pieni di costi"</h3>
+        <p>Canone fisso e flat: non a preventivo, non a utente. Se ti fa risparmiare 20 minuti a preventivo su 5 preventivi al giorno, si ripaga in ore liberate, non in promesse.</p>
+        <span class="ftag">MAX: inserire prezzo dopo DEC-EST-005</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINALE -->
+<section class="final">
+  <div class="wrap">
+    <h2>Vuoi vedere come esce un preventivo con una tua auto?</h2>
+    <p>15 minuti, schermo condiviso, auto tua reale. Nessuna slide, nessun impegno. Se non ti fa risparmiare tempo, chiudiamo lì.</p>
+    <a class="cta" href="mailto:max.infoproducer@gmail.com?subject=Demo%20Preventa%2015%20minuti&body=Buongiorno%2C%0D%0Avorrei%20vedere%20la%20demo%20di%20Preventa%20su%20una%20nostra%20auto.%0D%0A%0D%0AConcessionaria%3A%20%0D%0ACitt%C3%A0%3A%20%0D%0ANumero%20venditori%3A%20%0D%0ATelefono%2FWhatsApp%3A%20%0D%0A%0D%0AGrazie.">Sì, mostrami la demo sulla mia auto →</a>
+    <p class="micro">Software italiano, assistenza diretta, dati tuoi, server EU. Fatturazione mensile.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="alt" id="faq">
+  <div class="wrap">
+    <h2>Domande frequenti</h2>
+    <details>
+      <summary>In cosa è diverso da un CRM o dal gestionale della casa madre?</summary>
+      <p>Non li sostituisce. Il CRM gestisce i lead, il gestionale gestisce l'amministrazione. Preventa genera il documento di vendita finale: il PDF preventivo. Si affianca, non migra dati.</p>
+    </details>
+    <details>
+      <summary>Devo rifare i listini?</summary>
+      <p>No. Li imposti una volta nel pannello titolare. Se cambiano i listini della casa madre, aggiorni in un punto e si aggiornano tutti i preventivi futuri. Puoi bloccare gli sconti massimi per venditore.</p>
+    </details>
+    <details>
+      <summary>Funziona anche per usato e km0?</summary>
+      <p>Sì. Nuovo, usato, km0, aziendale. Inserisci prezzo d'acquisto, preparazione e margine desiderato, e generi il PDF con permuta e garanzia inclusa.</p>
+    </details>
+    <details>
+      <summary>Posso personalizzare il PDF con logo e foto?</summary>
+      <p>Sì. Logo, colori, intestazione, piè di pagina con note legali, foto veicolo (automatica da targa o caricata), validità e QR per il contatto diretto WhatsApp del venditore.</p>
+    </details>
+    <details>
+      <summary>Cosa succede se disdico?</summary>
+      <p>Licenza a canone, senza vincolo di 12 mesi imposto. Si usa il kill-switch remoto: disattiviamo l'accesso, i PDF già generati restano tuoi, i dati sono esportabili.</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo" style="color:#fff;margin-bottom:14px">PREVENTA<span>.</span></div>
+    <p style="margin:0">Software per concessionari auto ·
+      <span class="todo">MAX: P.IVA</span> ·
+      <span class="todo">MAX: telefono</span> ·
+      <a href="mailto:max.infoproducer@gmail.com">max.infoproducer@gmail.com</a>
+    </p>
+    <p class="legal">Preventa è uno strumento di supporto alla vendita. Non garantisce un incremento delle vendite: i risultati dipendono da organizzazione, prezzi e mercato del concessionario. Dati su server EU.</p>
+    <p class="legal">© 2026 Preventa</p>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="cta" href="#demo">Vedi la demo — 15 min</a>
+</div>
+
+</body>
+</html>

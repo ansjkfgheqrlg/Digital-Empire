@@ -185,3 +185,16 @@ def register(sub) -> None:
     def _dispatch(a):
         return a.fn(a)
     p_flow.set_defaults(fn=_dispatch)
+
+    # `empire estate` — verdetto unico sul Workflow Estate. Vive in empire/estate.py ma
+    # si registra da qui: empire/cli.py e' congelato e la sua tupla _PLUGIN_MODULES non
+    # elenca empire.estate. Il loop passa a ogni plugin i subparser di primo livello,
+    # quindi un modulo gia' elencato puo' aggiungere il comando senza toccare il file
+    # congelato — che e' esattamente cio' che il congelamento vuole evitare (merge
+    # conflittuali fra sessioni parallele di Max, Gael e Gemini).
+    try:
+        from .. import estate as _estate
+    except ImportError:
+        pass
+    else:
+        _estate.register(sub)
