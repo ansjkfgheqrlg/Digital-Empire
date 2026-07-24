@@ -15,3 +15,8 @@ Ogni cartella di workflow suprema DEVE contenere al suo interno i 6 pilastri ope
 ## 2. BRAND VOICE E PROVA TANGIBILE (CPB / APSOC)
 - Mai fare affermazioni, promesse o stime percentuali senza dati verificabili (Struttura CPB: Claim -> Proof -> Benefit).
 - Nelle comunicazioni e nel copy applicare sempre il framework APSOC (Attention -> Problem -> Solution -> Offer -> Close) superando lo score >= 92% della Checklist APSOC di Andrei Pascu.
+
+## 3. REGOLA SUPREMA DELL'APEX E DEL SISTEMA NERVOSO OPERATIVO (Articolo 9 del Mandato)
+**La skill APEX-7 è il sistema nervoso centrale della produzione e del "Deep Refinement" in Digital Empire.** 
+- Ogni volta che un agente, un reparto o un workflow è incaricato di forgiare, raffinare o validare (Quality Gate) un nuovo artefatto (agenti, architetture, copy, script), esso **DEVE OBBLIGATORIAMENTE** passare attraverso la struttura logica di APEX. 
+- L'utilizzo dell'ecosistema APEX non è opzionale: costituisce il meccanismo primario di autovalutazione, iterazione e persistenza (Memory Interface) del monorepo. Tutti i prompt, i workflow e i sistemi esterni devono richiamare la skill `apex-7-master` per considerarsi certificati per la produzione.
