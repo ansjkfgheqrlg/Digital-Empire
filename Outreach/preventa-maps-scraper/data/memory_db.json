@@ -1,0 +1,654 @@
+{
+    "strategy_store": [],
+    "decision_log": [
+        {
+            "id": "MEM-24332C61",
+            "timestamp": "2026-07-24T07:05:28.055880Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 13,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L1_L2",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L1_L2",
+                    "gate_name": "Gate L1 -> L2 (Inizializzazione & Parametri)",
+                    "timestamp": "2026-07-24T07:05:28.054839Z",
+                    "score": 1.0,
+                    "threshold": 1.0,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "Categoria di ricerca definita e non vuota",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "Almeno una citt\u00e0 di destinazione specificata",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "Limite di risultati per citt\u00e0 configurato correttamente",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-4C3CBEE4",
+            "timestamp": "2026-07-24T07:05:36.589154Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 12,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L1_L2",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L1_L2",
+                    "gate_name": "Gate L1 -> L2 (Inizializzazione & Parametri)",
+                    "timestamp": "2026-07-24T07:05:36.577320Z",
+                    "score": 1.0,
+                    "threshold": 1.0,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "Categoria di ricerca definita e non vuota",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "Almeno una citt\u00e0 di destinazione specificata",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "Limite di risultati per citt\u00e0 configurato correttamente",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-7B4B49F8",
+            "timestamp": "2026-07-24T07:05:44.185156Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 11,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L1_L2",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L1_L2",
+                    "gate_name": "Gate L1 -> L2 (Inizializzazione & Parametri)",
+                    "timestamp": "2026-07-24T07:05:44.173488Z",
+                    "score": 1.0,
+                    "threshold": 1.0,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "Categoria di ricerca definita e non vuota",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "Almeno una citt\u00e0 di destinazione specificata",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "Limite di risultati per citt\u00e0 configurato correttamente",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-877C02EB",
+            "timestamp": "2026-07-24T07:05:44.225056Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 10,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L2_L3",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L2_L3",
+                    "gate_name": "Gate L2 -> L3 (Estrazione & Playwright Scraper)",
+                    "timestamp": "2026-07-24T07:05:44.210671Z",
+                    "score": 1.0,
+                    "threshold": 1.0,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "Il browser Playwright si \u00e8 avviato senza blocchi",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "I lead estratti contengono almeno Nome e Indirizzo",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "Nessun captcha o blocco di rete ha interrotto il run",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-962DD791",
+            "timestamp": "2026-07-24T07:05:44.345196Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 9,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L3_L4",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L3_L4",
+                    "gate_name": "Gate L3 -> L4 (Qualificazione & Audit)",
+                    "timestamp": "2026-07-24T07:05:44.335633Z",
+                    "score": 1.0,
+                    "threshold": 0.8,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "Presenza o assenza del sito web verificata",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "Verifica del FB Pixel o Google Tag Manager eseguita",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "Numero e media delle recensioni estratte e convertite",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C4",
+                            "description": "Priorit\u00e0 (ALTA/MEDIA/BASSA) assegnata a ciascun lead",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C5",
+                            "description": "Note di qualifica compilate in base allo score del sito",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-AA60D418",
+            "timestamp": "2026-07-24T07:05:44.383979Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 8,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L4_L5",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L4_L5",
+                    "gate_name": "Gate L4 -> L5 (Integrazione & Google Sheets)",
+                    "timestamp": "2026-07-24T07:05:44.363091Z",
+                    "score": 1.0,
+                    "threshold": 1.0,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "Connessione alle API di Google Sheets riuscita",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "Deduplica dei telefoni eseguita con successo",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "Nuove righe inserite correttamente nel foglio",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-093BB250",
+            "timestamp": "2026-07-24T07:05:48.137614Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 7,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L5_L6",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L5_L6",
+                    "gate_name": "Gate L5 -> L6 (Salvataggio & CSV)",
+                    "timestamp": "2026-07-24T07:05:48.125131Z",
+                    "score": 1.0,
+                    "threshold": 1.0,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "File CSV locale salvato nel percorso configurato",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "File leads_SOLO_ALTA.csv generato seonly-alta \u00e8 True",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "Dati ordinati con priorit\u00e0 ALTA per prima",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-EAEA621E",
+            "timestamp": "2026-07-24T07:05:48.180020Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 6,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L6_L7",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L6_L7",
+                    "gate_name": "Gate L6 -> L7 (APEX E2E Scraper Complete)",
+                    "timestamp": "2026-07-24T07:05:48.157039Z",
+                    "score": 1.0,
+                    "threshold": 1.0,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "Tutti i moduli (Scraper, Qualifier, Sheets) hanno terminato con successo",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "Tutti i gate di controllo intermedi superati",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "I dati finali corrispondono alla specifica di schema",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C4",
+                            "description": "Log di telemetria scritto in memoria senza errori non gestiti",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-78BC7B8F",
+            "timestamp": "2026-07-24T07:05:48.226919Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 5,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L1_L2",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L1_L2",
+                    "gate_name": "Gate L1 -> L2 (Inizializzazione & Parametri)",
+                    "timestamp": "2026-07-24T07:05:48.206006Z",
+                    "score": 1.0,
+                    "threshold": 1.0,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "Categoria di ricerca definita e non vuota",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "Almeno una citt\u00e0 di destinazione specificata",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "Limite di risultati per citt\u00e0 configurato correttamente",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-2D0C8486",
+            "timestamp": "2026-07-24T07:05:48.275978Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 4,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L2_L3",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L2_L3",
+                    "gate_name": "Gate L2 -> L3 (Estrazione & Playwright Scraper)",
+                    "timestamp": "2026-07-24T07:05:48.262439Z",
+                    "score": 1.0,
+                    "threshold": 1.0,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "Il browser Playwright si \u00e8 avviato senza blocchi",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "I lead estratti contengono almeno Nome e Indirizzo",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "Nessun captcha o blocco di rete ha interrotto il run",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-4FA61F94",
+            "timestamp": "2026-07-24T07:05:48.313967Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 3,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L3_L4",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L3_L4",
+                    "gate_name": "Gate L3 -> L4 (Qualificazione & Audit)",
+                    "timestamp": "2026-07-24T07:05:48.298200Z",
+                    "score": 1.0,
+                    "threshold": 0.8,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "Presenza o assenza del sito web verificata",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "Verifica del FB Pixel o Google Tag Manager eseguita",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "Numero e media delle recensioni estratte e convertite",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C4",
+                            "description": "Priorit\u00e0 (ALTA/MEDIA/BASSA) assegnata a ciascun lead",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C5",
+                            "description": "Note di qualifica compilate in base allo score del sito",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-AFE3681A",
+            "timestamp": "2026-07-24T07:05:48.365300Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 2,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L4_L5",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L4_L5",
+                    "gate_name": "Gate L4 -> L5 (Integrazione & Google Sheets)",
+                    "timestamp": "2026-07-24T07:05:48.344517Z",
+                    "score": 1.0,
+                    "threshold": 1.0,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "Connessione alle API di Google Sheets riuscita",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "Deduplica dei telefoni eseguita con successo",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "Nuove righe inserite correttamente nel foglio",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-B7A46B8C",
+            "timestamp": "2026-07-24T07:05:53.145270Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 1,
+            "last_accessed": "2026-07-24T07:05:53.163959Z",
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L5_L6",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L5_L6",
+                    "gate_name": "Gate L5 -> L6 (Salvataggio & CSV)",
+                    "timestamp": "2026-07-24T07:05:53.120115Z",
+                    "score": 1.0,
+                    "threshold": 1.0,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "File CSV locale salvato nel percorso configurato",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "File leads_SOLO_ALTA.csv generato seonly-alta \u00e8 True",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "Dati ordinati con priorit\u00e0 ALTA per prima",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        },
+        {
+            "id": "MEM-6C06E473",
+            "timestamp": "2026-07-24T07:05:53.189735Z",
+            "author_agent": "GATE-1",
+            "layer": "decision_log",
+            "importance": 0.8,
+            "ttl": null,
+            "access_count": 0,
+            "last_accessed": null,
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "type": "gate_check",
+                "gate_id": "L6_L7",
+                "outcome": "SUCCESS",
+                "report": {
+                    "gate_id": "L6_L7",
+                    "gate_name": "Gate L6 -> L7 (APEX E2E Scraper Complete)",
+                    "timestamp": "2026-07-24T07:05:53.165965Z",
+                    "score": 1.0,
+                    "threshold": 1.0,
+                    "passed": true,
+                    "attempt_number": 1,
+                    "criteria_results": [
+                        {
+                            "criterion_id": "C1",
+                            "description": "Tutti i moduli (Scraper, Qualifier, Sheets) hanno terminato con successo",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C2",
+                            "description": "Tutti i gate di controllo intermedi superati",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C3",
+                            "description": "I dati finali corrispondono alla specifica di schema",
+                            "status": "PASS"
+                        },
+                        {
+                            "criterion_id": "C4",
+                            "description": "Log di telemetria scritto in memoria senza errori non gestiti",
+                            "status": "PASS"
+                        }
+                    ],
+                    "evaluator": "GATE-1"
+                }
+            }
+        }
+    ],
+    "general_knowledge": [],
+    "task_outputs": [],
+    "leads_store": []
+}

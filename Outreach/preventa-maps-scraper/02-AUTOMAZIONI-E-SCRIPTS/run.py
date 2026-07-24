@@ -24,6 +24,11 @@ import browser
 import checker
 import sheets
 
+from event_bus import EventBus
+from memory import MemoryQueryInterface
+from gate_agent import GateAgent
+from agents import ScraperAgent, QualifierAgent, SheetsAgent, QAAgent, DebugAgent, Conductor
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s | %(levelname)s | %(message)s', datefmt='%H:%M:%S')
 log = logging.getLogger("preventa-pw.run")
 
@@ -137,7 +142,12 @@ def main():
         headless = False
         log.info("Modalità: HEADED visibile (più stabile). Usa --headless per server.")
 
-    all_leads = []
+    # Inizializza i moduli APEX-7
+    event_bus = EventBus()
+    event_bus.clear()  # Pulisce eventuali stati precedenti
+    memory = MemoryQueryInterface()
+    gate_agent = GateAgent(memory, event_bus)
+    qa_agent = QAAgent(gate_agent, event_bus)
 
     from playwright.sync_api import sync_playwright
 
@@ -158,30 +168,40 @@ def main():
         )
         page = context.new_page()
 
+        # Istanziazione degli agenti
+        scraper_agent = ScraperAgent(page, event_bus)
+        qualifier_agent = QualifierAgent(event_bus)
+        debug_agent = DebugAgent(page, event_bus)
+
+        sheets_agent = None
+        if args.sheet_id:
+            sheets_agent = SheetsAgent(
+                event_bus=event_bus,
+                sheet_id=args.sheet_id,
+                creds_path=args.sheets_creds,
+                push_only_alta=args.sheets_push_alta,
+                worksheet_name=args.sheets_worksheet
+            )
+
+        conductor = Conductor(
+            event_bus=event_bus,
+            scraper_agent=scraper_agent,
+            qualifier_agent=qualifier_agent,
+            sheets_agent=sheets_agent,
+            qa_agent=qa_agent,
+            output_csv_path=args.output,
+            only_alta=args.only_alta
+        )
+
         for i, city in enumerate(cities):
-            city_leads = browser.scrape_city(page, city, args.categoria, args.limit)
-            all_leads.extend(city_leads)
+            conductor.run_city_workflow(city, args.categoria, args.limit)
             if i < len(cities)-1:
                 pausa = browser.random_delay(3.0, 6.0)
                 log.info(f"Pausa prima prossima città...")
 
         br.close()
 
-    final_sorted, filtered_sorted = save_csv(all_leads, args.output, only_alta=args.only_alta)
-
-    if args.sheet_id:
-        log.info(f"\n=== PUSH GOOGLE SHEETS ===")
-        sheets.upload_to_google_sheets(
-            leads=final_sorted,
-            sheet_id=args.sheet_id,
-            creds_path=args.sheets_creds,
-            push_only_alta=args.sheets_push_alta,
-            worksheet_name=args.sheets_worksheet
-        )
-    else:
-        log.info("\nNessun --sheet-id fornito: skip upload Sheets. CSV locale pronto.")
-
-    log.info("\n✅ FATTO. CSV pronto per outreach APSOC.")
+    log.info("\n✅ FATTO. Workflow dello Scraper APEX-7 terminato.")
     log.info(f"File: {args.output}")
     if args.only_alta:
         log.info(f"File solo ALTA: {Path(args.output).with_name(Path(args.output).stem + '_SOLO_ALTA.csv')}")

@@ -30,7 +30,8 @@ def scegli_gancio(note_qualifica: str, priorita: str, ha_sito: str) -> dict:
     Nota: scraper.py marca ALTA sia "Senza sito web" sia "Sito vecchio/scarso" (ha_sito=True
     ma punteggio basso) — entrambi i casi vanno sul Gancio 3 (leva immagine/brand)."""
     note = (note_qualifica or "").lower()
-    sito_assente = ha_sito.strip().lower() in ("false", "no", "0", "")
+    ha_sito_str = str(ha_sito).strip().lower()
+    sito_assente = ha_sito_str in ("false", "no", "0", "", "none")
     sito_scarso = "senza sito" in note or "sito vecchio" in note or "sito scarso" in note
 
     if priorita == "ALTA" and (sito_scarso or sito_assente):

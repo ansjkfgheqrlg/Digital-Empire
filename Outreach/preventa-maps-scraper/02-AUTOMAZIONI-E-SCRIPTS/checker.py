@@ -65,3 +65,21 @@ def calcola_priorita(row: Dict, site_check: Dict) -> tuple[str, str]:
     if num < 25 or media < 4.0:
         return ("MEDIA", f"Base debole: {num} rec, media {media}.")
     return ("BASSA", "Strutturato: sito moderno + recensioni alte + tracking.")
+
+import concurrent.futures
+
+def qualify_leads_parallel(leads: list[dict], max_workers: int = 10) -> list[dict]:
+    """Qualifica in parallelo una lista di lead usando un pool di thread."""
+    def check_and_qualify(row: dict) -> dict:
+        sito = row.get("sito_web", "")
+        site_check = check_website_quality(sito)
+        row["ha_sito"] = bool(sito) and site_check.get("ha_sito", True)
+        row["ha_ads_attive"] = bool(site_check.get("ha_pixel") or site_check.get("ha_gtm") or site_check.get("ha_ads"))
+        prio, note = calcola_priorita(row, site_check)
+        row["priorita_lead"] = prio
+        row["note_qualifica"] = note
+        return row
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        results = list(executor.map(check_and_qualify, leads))
+    return results
