@@ -1,0 +1,21 @@
+{
+  "channel": "Legami d'amore",
+  "videos": [
+    {
+      "title": "Installare Claude Code locale",
+      "url": "https://youtube.com/watch?v=1",
+      "views": 25000,
+      "age_hours": 100,
+      "errors": [
+        "seo debole"
+      ]
+    },
+    {
+      "title": "Prompt Engineering per Agent Swarm",
+      "url": "https://youtube.com/watch?v=2",
+      "views": 8000,
+      "age_hours": 150,
+      "errors": []
+    }
+  ]
+}

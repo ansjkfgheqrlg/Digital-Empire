@@ -1,0 +1,15 @@
+{
+  "video_id": "claude-code-001",
+  "title": "Installare Claude Code locale",
+  "voice": "Fabio (Italiano)",
+  "music": "Soft ambient",
+  "hook_type": "Question",
+  "scene_count": 5,
+  "scenes": [
+    {
+      "number": 1,
+      "text": "Vuoi installare l'agente IA pi\u00f9 veloce?",
+      "duration": 5.0
+    }
+  ]
+}

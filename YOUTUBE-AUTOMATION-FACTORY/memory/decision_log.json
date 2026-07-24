@@ -1,0 +1,368 @@
+[
+  {
+    "id": "DEC-L6_L7-1784895670",
+    "run_id": "test-yt-1784895670",
+    "decision": "Esito Gate L6_L7: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:10.679675"
+  },
+  {
+    "id": "DEC-L1_L2-1784895670",
+    "run_id": "test-yt-1784895670",
+    "decision": "Esito Gate L1_L2: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:10.700181"
+  },
+  {
+    "id": "DEC-test-decision-test-yt-1784895670",
+    "run_id": "test-yt-1784895670",
+    "decision": "Test Choice",
+    "reason": "Validation of test case",
+    "alternatives_rejected": [
+      "Option A"
+    ],
+    "confidence": 0.9,
+    "timestamp": "2026-07-24T14:21:10.734818"
+  },
+  {
+    "id": "DEC-L3_L4-1784895670",
+    "run_id": "test-yt-1784895670",
+    "decision": "Esito Gate L3_L4: FAIL",
+    "reason": "Verifica dei criteri completata con score 0.0. Rilevati errori: Sezioni obbligatorie dello script mancanti: HOOK, CORPO, CTA, Lo script è troppo corto (minimo 50 caratteri).",
+    "alternatives_rejected": [],
+    "confidence": 0.0,
+    "timestamp": "2026-07-24T14:21:10.789288"
+  },
+  {
+    "id": "DEC-L3_L4-1784895670",
+    "run_id": "test-yt-1784895670",
+    "decision": "Esito Gate L3_L4: FAIL",
+    "reason": "Verifica dei criteri completata con score 0.0. Rilevati errori: Sezioni obbligatorie dello script mancanti: HOOK, CORPO, CTA, Lo script è troppo corto (minimo 50 caratteri).",
+    "alternatives_rejected": [],
+    "confidence": 0.0,
+    "timestamp": "2026-07-24T14:21:10.798923"
+  },
+  {
+    "id": "DEC-L3_L4-1784895670",
+    "run_id": "test-yt-1784895670",
+    "decision": "Esito Gate L3_L4: FAIL",
+    "reason": "Verifica dei criteri completata con score 0.0. Rilevati errori: Sezioni obbligatorie dello script mancanti: HOOK, CORPO, CTA, Lo script è troppo corto (minimo 50 caratteri).",
+    "alternatives_rejected": [],
+    "confidence": 0.0,
+    "timestamp": "2026-07-24T14:21:10.852583"
+  },
+  {
+    "id": "DEC-L1_L2-1784895716",
+    "run_id": "test-yt-1784895716",
+    "decision": "Esito Gate L1_L2: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:56.878056"
+  },
+  {
+    "id": "DEC-L1_L2-1784895717",
+    "run_id": "test-yt-1784895717",
+    "decision": "Esito Gate L1_L2: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:57.885051"
+  },
+  {
+    "id": "DEC-L2_L3-1784895716",
+    "run_id": "test-yt-1784895716",
+    "decision": "Esito Gate L2_L3: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:57.910484"
+  },
+  {
+    "id": "DEC-L2_L3-1784895717",
+    "run_id": "test-yt-1784895717",
+    "decision": "Esito Gate L2_L3: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:57.972579"
+  },
+  {
+    "id": "DEC-L3_L4-1784895717",
+    "run_id": "test-yt-1784895716",
+    "decision": "Esito Gate L3_L4: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:58.005480"
+  },
+  {
+    "id": "DEC-L3_L4-1784895718",
+    "run_id": "test-yt-1784895717",
+    "decision": "Esito Gate L3_L4: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:58.068803"
+  },
+  {
+    "id": "DEC-L4_L5-1784895718",
+    "run_id": "test-yt-1784895716",
+    "decision": "Esito Gate L4_L5: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:58.104147"
+  },
+  {
+    "id": "DEC-L4_L5-1784895718",
+    "run_id": "test-yt-1784895717",
+    "decision": "Esito Gate L4_L5: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:58.131632"
+  },
+  {
+    "id": "DEC-L5_L6-1784895718",
+    "run_id": "test-yt-1784895716",
+    "decision": "Esito Gate L5_L6: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:58.188055"
+  },
+  {
+    "id": "DEC-L5_L6-1784895718",
+    "run_id": "test-yt-1784895717",
+    "decision": "Esito Gate L5_L6: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:58.201514"
+  },
+  {
+    "id": "DEC-L6_L7-1784895718",
+    "run_id": "test-yt-1784895716",
+    "decision": "Esito Gate L6_L7: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:58.263983"
+  },
+  {
+    "id": "DEC-L1_L2-1784895718",
+    "run_id": "test-yt-1784895718",
+    "decision": "Esito Gate L1_L2: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:58.285321"
+  },
+  {
+    "id": "DEC-L6_L7-1784895718",
+    "run_id": "test-yt-1784895717",
+    "decision": "Esito Gate L6_L7: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:58.339826"
+  },
+  {
+    "id": "DEC-L1_L2-1784895718",
+    "run_id": "test-yt-1784895718",
+    "decision": "Esito Gate L1_L2: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:21:58.378231"
+  },
+  {
+    "id": "DEC-test-decision-test-yt-1784895718",
+    "run_id": "test-yt-1784895718",
+    "decision": "Test Choice",
+    "reason": "Validation of test case",
+    "alternatives_rejected": [
+      "Option A"
+    ],
+    "confidence": 0.9,
+    "timestamp": "2026-07-24T14:21:58.414266"
+  },
+  {
+    "id": "DEC-test-decision-test-yt-1784895718",
+    "run_id": "test-yt-1784895718",
+    "decision": "Test Choice",
+    "reason": "Validation of test case",
+    "alternatives_rejected": [
+      "Option A"
+    ],
+    "confidence": 0.9,
+    "timestamp": "2026-07-24T14:21:58.427364"
+  },
+  {
+    "id": "DEC-L3_L4-1784895718",
+    "run_id": "test-yt-1784895718",
+    "decision": "Esito Gate L3_L4: FAIL",
+    "reason": "Verifica dei criteri completata con score 0.0. Rilevati errori: Sezioni obbligatorie dello script mancanti: HOOK, CORPO, CTA, Lo script è troppo corto (minimo 50 caratteri).",
+    "alternatives_rejected": [],
+    "confidence": 0.0,
+    "timestamp": "2026-07-24T14:21:58.461643"
+  },
+  {
+    "id": "DEC-L3_L4-1784895718",
+    "run_id": "test-yt-1784895718",
+    "decision": "Esito Gate L3_L4: FAIL",
+    "reason": "Verifica dei criteri completata con score 0.0. Rilevati errori: Sezioni obbligatorie dello script mancanti: HOOK, CORPO, CTA, Lo script è troppo corto (minimo 50 caratteri).",
+    "alternatives_rejected": [],
+    "confidence": 0.0,
+    "timestamp": "2026-07-24T14:21:58.473882"
+  },
+  {
+    "id": "DEC-L3_L4-1784895718",
+    "run_id": "test-yt-1784895718",
+    "decision": "Esito Gate L3_L4: FAIL",
+    "reason": "Verifica dei criteri completata con score 0.0. Rilevati errori: Sezioni obbligatorie dello script mancanti: HOOK, CORPO, CTA, Lo script è troppo corto (minimo 50 caratteri).",
+    "alternatives_rejected": [],
+    "confidence": 0.0,
+    "timestamp": "2026-07-24T14:21:58.486179"
+  },
+  {
+    "id": "DEC-L3_L4-1784895718",
+    "run_id": "test-yt-1784895718",
+    "decision": "Esito Gate L3_L4: FAIL",
+    "reason": "Verifica dei criteri completata con score 0.0. Rilevati errori: Sezioni obbligatorie dello script mancanti: HOOK, CORPO, CTA, Lo script è troppo corto (minimo 50 caratteri).",
+    "alternatives_rejected": [],
+    "confidence": 0.0,
+    "timestamp": "2026-07-24T14:21:58.512300"
+  },
+  {
+    "id": "DEC-L3_L4-1784895718",
+    "run_id": "test-yt-1784895718",
+    "decision": "Esito Gate L3_L4: FAIL",
+    "reason": "Verifica dei criteri completata con score 0.0. Rilevati errori: Sezioni obbligatorie dello script mancanti: HOOK, CORPO, CTA, Lo script è troppo corto (minimo 50 caratteri).",
+    "alternatives_rejected": [],
+    "confidence": 0.0,
+    "timestamp": "2026-07-24T14:21:58.540669"
+  },
+  {
+    "id": "DEC-L3_L4-1784895718",
+    "run_id": "test-yt-1784895718",
+    "decision": "Esito Gate L3_L4: FAIL",
+    "reason": "Verifica dei criteri completata con score 0.0. Rilevati errori: Sezioni obbligatorie dello script mancanti: HOOK, CORPO, CTA, Lo script è troppo corto (minimo 50 caratteri).",
+    "alternatives_rejected": [],
+    "confidence": 0.0,
+    "timestamp": "2026-07-24T14:21:58.555843"
+  },
+  {
+    "id": "DEC-L1_L2-1784895972",
+    "run_id": "yt-run-20260724-142612",
+    "decision": "Esito Gate L1_L2: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:26:12.900712"
+  },
+  {
+    "id": "DEC-L2_L3-1784895972",
+    "run_id": "yt-run-20260724-142612",
+    "decision": "Esito Gate L2_L3: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:26:12.998593"
+  },
+  {
+    "id": "DEC-L3_L4-1784895973",
+    "run_id": "yt-run-20260724-142612",
+    "decision": "Esito Gate L3_L4: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:26:13.086777"
+  },
+  {
+    "id": "DEC-L4_L5-1784895973",
+    "run_id": "yt-run-20260724-142612",
+    "decision": "Esito Gate L4_L5: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:26:13.166795"
+  },
+  {
+    "id": "DEC-L5_L6-1784895973",
+    "run_id": "yt-run-20260724-142612",
+    "decision": "Esito Gate L5_L6: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:26:13.252458"
+  },
+  {
+    "id": "DEC-L6_L7-1784895973",
+    "run_id": "yt-run-20260724-142612",
+    "decision": "Esito Gate L6_L7: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:26:13.338528"
+  },
+  {
+    "id": "DEC-L1_L2-1784895985",
+    "run_id": "yt-run-20260724-142625",
+    "decision": "Esito Gate L1_L2: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:26:25.262460"
+  },
+  {
+    "id": "DEC-L2_L3-1784895985",
+    "run_id": "yt-run-20260724-142625",
+    "decision": "Esito Gate L2_L3: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:26:25.365970"
+  },
+  {
+    "id": "DEC-L3_L4-1784895985",
+    "run_id": "yt-run-20260724-142625",
+    "decision": "Esito Gate L3_L4: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:26:25.445737"
+  },
+  {
+    "id": "DEC-L4_L5-1784895985",
+    "run_id": "yt-run-20260724-142625",
+    "decision": "Esito Gate L4_L5: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:26:25.506532"
+  },
+  {
+    "id": "DEC-L5_L6-1784895985",
+    "run_id": "yt-run-20260724-142625",
+    "decision": "Esito Gate L5_L6: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:26:25.589994"
+  },
+  {
+    "id": "DEC-L6_L7-1784895985",
+    "run_id": "yt-run-20260724-142625",
+    "decision": "Esito Gate L6_L7: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-24T14:26:25.689903"
+  }
+]
