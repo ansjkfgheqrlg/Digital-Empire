@@ -44,6 +44,7 @@ Obiettivo: la skill esiste ma non ha mai girato. **Farla girare da sola**, dall'
 | **G-B2** | ⏳ **IN CORSO** | **Orchestrazione automatica:** il `conductor` deve eseguire l'intera catena senza invocazioni manuali step-by-step. | Pipeline rilanciabile e idempotente. |
 | **G-B3** | 🟢 **SBLOCCATO** | **Pubblicazione automatica:** YouTube Data API + OAuth sul canale designato. | Canale "Digital Empire AI" scelto e credenziali (M-EST-8) fornite in .env. |
 | **G-B4** | 🟢 **SBLOCCATO** | **Loop di miglioramento:** `performance-auditor` legge le metriche e ri-alimenta la catena. | Mock video analytics attivato per test loop (sbloccato). |
+| **G-B5** | ⏳ **PENDENTE** | **REFACTORING YOUTUBE IN APEX-7:** Gael deve costruire da zero l'intero ecosistema YouTube in `YOUTUBE-AUTOMATION-FACTORY` seguendo il metodo APEX-7 (Quality Gate, Gate Agent, Memory Query Interface, Event Bus). Tutti gli agenti, flussi e automazioni interne vanno creati con questa architettura di precisione. | Workflow YouTube APEX-7 completo e funzionante nella nuova directory radice. |
 
 **Framing (resta valido, dossier 20/21):** YouTube = **funnel verso i prodotti**, non adsense. È un canale
 compounding: costruisce traffico nel tempo, non cassa questa settimana. Automatizzarlo ora è giusto
