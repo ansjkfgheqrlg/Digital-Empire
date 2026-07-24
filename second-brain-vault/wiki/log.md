@@ -155,3 +155,20 @@
 
 ## 2026-07-19
 - INGEST: PIANO ESTATE REVENUE (dossier 16) — strategia fatturato 7gg: S1 concessionari anticipati (≥95%), S2 Manuale CC (B-003 da chiudere G1), S3 pagine lancio, S4 mentalita.brutale (solo se auto 100%, carousel-factory wrap), S5 YouTube-Fliki auto (API in .env locale) → 1 dossier + task board Max/Gael in STATO
+
+## 2026-07-24
+- BUILD: **WORKFLOW ESTATE completato** — `python -m empire estate` → exit 0 (11 controlli su 13;
+  conform 0 block, 207 test). Piano a 3 livelli L1→L2→L3 (ognuno corregge i limiti dichiarati del
+  precedente) + `ARCHITETTURA-COMPLETAMENTO.md` + swarm a 6 lotti con perimetri disgiunti.
+  Nuovi: `empire/estate.py` (verdetto unico), `flow/decisions.py` (default-più-veto ADR-EST-006),
+  `flow/evidence.py` (guardia di provenienza sui dati), `inspect/metrics.py` (6 KPI telemetria),
+  `tools/video_pack.py`, landing Preventa. CP-20260724-001.
+- LEZIONE (trasversale, vale oltre l'estate): **un controllo che in caso di dubbio rassicura è
+  peggio di nessun controllo.** Tre difetti indipendenti della stessa famiglia trovati in un giorno:
+  la dashboard coloriva di verde i valori che non sapeva leggere; l'anagrafe ADR-008
+  (`skills-map.yaml`) era YAML non valido perché letta solo a occhio, mai da una macchina;
+  `video_pack --check` approvava il proprio scheletro. Corollario operativo: ogni registro va
+  caricato da un parser almeno una volta, o non è un registro.
+- FINDING aperto: i 7 lead di `lead.csv` hanno **0/7** riscontri nelle sorgenti `Outreach/`; i 61
+  lead reali dichiarati il 23/07 non esistono su disco. Gate-CONTATTI lasciato rosso di proposito.
+  → 0 pagine wiki nuove, 1 lezione registrata.
