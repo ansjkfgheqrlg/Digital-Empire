@@ -41,6 +41,25 @@ riporta alla fine") · **gerarchia da azienda vera** · se sbaglia **riprova, po
 ⚠️ Tensione risolta in progetto: autonomia piena *dentro*, ma invii/incassi/pubblicazioni restano
 atto di Max (già così: G-A4 gated, gate umani).
 
+### 🚨 AUDIT DI SALVATAGGIO — 2 trappole trovate, nessuna andava pushata alla cieca
+**⛔ NON pushare MAI il repo annidato `master-build-architecture` da Windows.** Risultava con 140
+file "cancellati" e cartella vuota, ma `origin/master` ne ha 303: **51 file hanno i due punti `:`
+nel nome**, illegale su Windows, quindi git non li scrive e li segna come cancellati. Pusharlo
+**cancellerebbe la skill da GitHub**. Recuperati 252/303 file; il `m` su quei 2 percorsi in
+`git status` è **normale, va ignorato**.
+
+**⛔ NON pushare né fondere il branch `arena/019f7e32-digital-empire`.** Sembra "3 avanti", ma 2
+commit sono duplicati e l'unico unico (`youtube-compliance-shield` di Gael) **è già in main**.
+`git diff main arena` = **1.883.578 righe cancellate**: è uno stato vecchio del 21-22/07.
+Fonderlo distruggerebbe il lavoro recente. Branch abbandonato, lasciato intatto.
+
+**✅ Salvato davvero:** `Clienti/EXPONIUM` commit `ff24019` **pushato** — briefing call con risposte
++ 4 PDF commerciali + GIORNATA.md, erano solo in locale (verificato: nessuna credenziale dentro).
+Tutti gli altri 6 repo annidati: puliti e già in sync.
+**Lavoro di Gemini:** già dentro `main` e già pushato (`e1dde45d` 13 ecosistemi+APEX-7, `9f2b7fa2`
+cartella YouTube, `0f04eaa7` checkpoint). Git usa le credenziali di Max per tutti, per questo ogni
+commit risulta a suo nome. Nulla di Gemini era rimasto fuori.
+
 **RIPRESA DA:** ① completare l'analisi dei 6 stream estate (agenti/skill che già hanno → serve al
 PIANO 3) ② scrivere **PIANO 1→7** in `RISTRUTTURAZIONE-0N-*.md` con la struttura di §6 del brief
 ③ **non costruire nulla finché Max non approva i piani.**
