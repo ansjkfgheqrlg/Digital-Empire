@@ -1,4 +1,47 @@
-# STATO EMPIRE -- aggiornato 2026-07-23 (Gael: G-A1/A2/A3 chiusi / Claude: COMPLETAMENTO WORKFLOW-ESTATE in corso)
+# STATO EMPIRE -- aggiornato 2026-07-24 (Gael: G-A1/A2/A3 chiusi / Claude: WORKFLOW ESTATE COMPLETATO)
+
+## ✅ 2026-07-24 — CLAUDE: WORKFLOW ESTATE CHIUSO (per quanto dipende dalla costruzione) — CP-20260724-001
+**Verdetto misurato, non dichiarato:** `python -m empire estate` → **exit 0**, 11 controlli su 13.
+```
+conform WORKFLOW-ESTATE  ->  block: 0   warn: 0     (erano 4 block)
+pytest empire/tests/     ->  207 passed             (erano 150)
+checkout.py --check      ->  tier 2 attivo, 0 placeholder residui
+```
+**Piano a 3 livelli** (ognuno corregge i limiti *dichiarati* del precedente) + architettura, poi
+swarm a 6 lotti con perimetri disgiunti:
+`WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/PIANO-COMPLETAMENTO-L1/L2/L3.md` + `ARCHITETTURA-COMPLETAMENTO.md`.
+
+**Costruito:** `empire/estate.py` (verdetto unico, distingue ciò che tocca a noi da ciò che tocca a
+Max) · `empire/flow/decisions.py` (default-più-veto ADR-EST-006 + `flow veto`) · `empire/flow/evidence.py`
+(evidenza per i gate umani + guardia di provenienza) · `empire/inspect/metrics.py` (le 6 metriche che
+la dashboard dava per "non implementate", mentre l'organo esisteva) · `empire/tools/video_pack.py` ·
+`Crea siti/Preventa/index.html` · **52 test nuovi**. Checkout, case study Novacar e pacchetto video S5
+recuperati dagli agenti interrotti e completati.
+
+### 🔴 3 FINDING che riguardano tutti — stessa famiglia: controlli che rassicurano invece di misurare
+1. **I 7 lead di `lead.csv` hanno 0/7 riscontri in `Outreach/**/*.csv`.** Su disco esistono solo dati
+   di prova dichiarati (`test_lead_finti.csv`, "Via Finta 1"). **I 61 lead reali dichiarati il 23/07
+   non esistono come file.** (Coerente con G-A3 qui sotto, testato su "5 lead finti".) Gate-CONTATTI
+   lasciato **ROSSO apposta**: confermarlo avrebbe fatto sembrare fatto un lavoro commerciale mai avvenuto.
+2. **`company/skills-map.yaml` era YAML non valido** — pre-esistente, verificato su `git show HEAD`:
+   `registry/render.py` emetteva `note:` e `- id:` allo stesso livello. L'anagrafe che per ADR-008
+   garantisce "nessun artefatto orfano" non era caricabile da nessun parser, perché veniva letta a
+   occhio e mai da una macchina. Generatore corretto e file rigenerato: ora valido, 9 artefatti nuovi registrati.
+3. **La dashboard accendeva di verde ciò che non sapeva leggere** (`kpi.py`, ramo errore → `green`) e
+   nella sezione telemetria l'emoji era cablata a mano ignorando le soglie: uno 0% di first-pass
+   appariva 🟢. Ora i valori illeggibili sono ⚪ e le soglie valgono per tutti i KPI.
+
+**⚠️ Agenti swarm interrotti:** i 4 agenti dei LOTTI 1/3/4/5 sono morti con
+`You've hit your monthly spend limit`. Lavoro parziale recuperato e completato a mano, nulla perso.
+Finché il limite non sale, nuovi subagenti falliranno allo stesso modo.
+
+**RIPRESA DA — restano 2 voci e sono SOLO di Max** → `WORKFLOW-ESTATE/06-DASHBOARD-E-METRICHE/AZIONI-MAX.md`:
+1. 2 Payment Link Stripe in `Crea siti/Siti CCM/checkout.config.json` → tier 1 (10 min, ritorno più alto).
+2. Prezzo Preventa (DEC-EST-005, veto M-EST-4) → la landing va online (ora ha segnaposti visibili, non cifre inventate).
+3. Gate-CONTATTI: recuperare la sorgente dei lead **oppure** rilanciare lo scraper con le province vere (M-EST-9).
+4. Canale YouTube + credenziali (M-EST-8) + voce TTS → S5 pubblica (il pacchetto-render è pronto, il video non esiste e il file lo dichiara).
+
+---
 
 
 ## ✅ 2026-07-23 — GAEL: G-A3 follow-up automatico + tracking chiuso — CP-20260723-004

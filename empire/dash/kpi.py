@@ -28,8 +28,12 @@ class KPI:
         try:
             num = float(val)
         except (ValueError, TypeError):
-            # Se non è numerico, confronta come stringa o ritorna green come default
-            return "green"
+            # Un valore che non si riesce a leggere e' SCONOSCIUTO, non buono.
+            # Prima qui c'era `return "green"`: bastava un errore di lettura perche' un
+            # KPI si accendesse di verde. E' cosi' che "Spazio Duplicato: n/d (errore...)"
+            # e i sei KPI di telemetria non misurati apparivano tutti in salute.
+            # Un cruscotto che in caso di dubbio rassicura e' peggio di nessun cruscotto.
+            return "gray"
 
         # Valutazione formule semplici
         # es: good="== 0", warn="<= 5", bad="> 5"

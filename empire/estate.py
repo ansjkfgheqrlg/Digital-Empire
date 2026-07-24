@@ -53,6 +53,18 @@ class Check:
     detail: str
     blocking: bool = True
     notes: list[str] = field(default_factory=list)
+    # "noi" = dipende dalla costruzione, e allora un NO e' lavoro non finito.
+    # "max" = dipende da un atto che solo Max puo' compiere (creare i Payment Link,
+    # dare le credenziali del canale, incassare un anticipo, confermare un gate umano).
+    # Senza questa distinzione il verdetto non sarebbe mai potuto arrivare a zero, e un
+    # comando che non puo' mai dare esito positivo smette di essere letto.
+    owner: str = "noi"
+
+
+# Gate che nessuna costruzione puo' chiudere: dipendono da un atto di Max.
+# Gate-CONTATTI perche' e' lui che contatta (e i lead su disco non sono tracciabili a
+# una sorgente reale); Gate-REV perche' misura denaro effettivamente incassato.
+_GATE_OWNER = {"Gate-CONTATTI": "max", "Gate-REV": "max"}
 
 
 def _check_gates() -> list[Check]:
@@ -70,14 +82,17 @@ def _check_gates() -> list[Check]:
     for r in results:
         if r.status == "GREEN":
             out.append(Check(f"gate {r.id}", True, "verde"))
-        elif r.status == "RED" and r.on_red_applied:
+        elif r.on_red_applied:
+            stato = "rosso" if r.status == "RED" else "in attesa"
             out.append(Check(f"gate {r.id}", True,
-                             f"rosso PREVISTO, contromossa applicata ({r.on_red})"))
+                             f"{stato} PREVISTO, contromossa applicata ({r.on_red})"))
         elif r.status == "RED":
             out.append(Check(f"gate {r.id}", False,
-                             f"rosso, contromossa NON applicata: {r.on_red or 'nessuna prevista'}"))
+                             f"rosso, contromossa NON applicata: {r.on_red or 'nessuna prevista'}",
+                             owner=_GATE_OWNER.get(r.id, "noi")))
         else:
-            out.append(Check(f"gate {r.id}", False, "in attesa (vale rosso: nessun gate quasi verde)"))
+            out.append(Check(f"gate {r.id}", False, "in attesa (vale rosso: nessun gate quasi verde)",
+                             owner=_GATE_OWNER.get(r.id, "noi")))
         if r.evidence:
             out[-1].notes.append(r.evidence)
     return out
@@ -120,7 +135,12 @@ def _check_conform() -> Check:
     except ImportError as e:
         return Check("conform WORKFLOW-ESTATE", False, f"modulo conform non caricabile: {e}")
     try:
-        findings = _conform.run("WORKFLOW-ESTATE")
+        # Volutamente NON `run_all`: quello include anche check_adr001, che riguarda la
+        # struttura della holding (oggi 13 ecosistemi invece di 10) ed e' una decisione
+        # aperta di Max. Un verdetto sul Workflow Estate non deve diventare rosso per un
+        # problema che sta fuori dal Workflow Estate, altrimenti smette di dire qualcosa
+        # su cio' che misura. Stessi controlli di `python -m empire conform WORKFLOW-ESTATE`.
+        findings = _conform.check_art8("WORKFLOW-ESTATE") + _conform.check_links("WORKFLOW-ESTATE")
     except Exception as e:  # noqa: BLE001
         return Check("conform WORKFLOW-ESTATE", False, f"esecuzione fallita: {e}")
     blocks = [f for f in findings if getattr(f, "severity", "") == "block"]
@@ -164,27 +184,41 @@ def run_checks() -> list[Check]:
 
 def _cmd_estate(a) -> int:
     checks = run_checks()
-    failed = [c for c in checks if c.blocking and not c.ok]
+    aperti_nostri = [c for c in checks if c.blocking and not c.ok and c.owner == "noi"]
+    aperti_max = [c for c in checks if c.blocking and not c.ok and c.owner == "max"]
 
     if getattr(a, "json", False):
         print(json.dumps([{"name": c.name, "ok": c.ok, "detail": c.detail,
-                           "notes": c.notes} for c in checks], indent=2, ensure_ascii=False))
-        return 1 if failed else 0
+                           "owner": c.owner, "notes": c.notes} for c in checks],
+                         indent=2, ensure_ascii=False))
+        return 1 if aperti_nostri else 0
 
     print("VERDETTO WORKFLOW ESTATE")
-    print("=" * 72)
+    print("=" * 78)
     for c in checks:
-        print(f"{'OK  ' if c.ok else 'NO  '} {c.name:44} {c.detail}")
+        if c.ok:
+            marca = "OK  "
+        else:
+            marca = "MAX " if c.owner == "max" else "NO  "
+        print(f"{marca} {c.name:44} {c.detail}")
         if getattr(a, "verbose", False):
             for n in c.notes:
                 print(f"       - {n}")
-    print("=" * 72)
-    if failed:
-        print(f"NON FINITO: {len(failed)} controlli su {len(checks)} non passano.")
-        print("Dettaglio con --verbose. Le voci che dipendono da Max sono in")
-        print("WORKFLOW-ESTATE/06-DASHBOARD-E-METRICHE/AZIONI-MAX.md")
+    print("=" * 78)
+
+    if aperti_nostri:
+        print(f"NON FINITO: {len(aperti_nostri)} controlli di costruzione non passano.")
+        for c in aperti_nostri:
+            print(f"  - {c.name}: {c.detail}")
+        print("Dettaglio completo con --verbose.")
         return 1
-    print(f"FINITO: {len(checks)} controlli su {len(checks)} passano.")
+
+    print(f"COSTRUZIONE COMPLETA: {len(checks) - len(aperti_max)} controlli su {len(checks)} passano.")
+    if aperti_max:
+        print(f"\nRESTANO {len(aperti_max)} voci che dipendono SOLO da Max — non sono lavoro mancante:")
+        for c in aperti_max:
+            print(f"  - {c.name}: {c.detail}")
+        print("\nIstruzioni operative: WORKFLOW-ESTATE/06-DASHBOARD-E-METRICHE/AZIONI-MAX.md")
     return 0
 
 

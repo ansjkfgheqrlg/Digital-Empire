@@ -75,6 +75,6 @@ adattarlo al formato a 10 scene richiesto e per rispettare il vincolo "CTA gratu
 - `WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/02_PATTERN_VINCENTI.md`
 - `WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/03_20_IDEE_VIDEO.md`
 - `WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/04_TEMPLATE_DESCRIZIONE_SEO.md`
-- `.claude/skills/youtube-automation-factory/SKILL.md` + `references/teoria-script.md` + `workflows/WF3-production.md` (metodo hook/intro/CTA, riusato non riscritto)
+- `.claude/skills/youtube-automation-factory/SKILL.md` + `.claude/skills/youtube-automation-factory/references/teoria-script.md` + `.claude/skills/youtube-automation-factory/workflows/WF3-production.md` (metodo hook/intro/CTA, riusato non riscritto)
 - `WORKFLOW-ESTATE/05-TEMPLATES-E-KIT/script-video-claude/SCRIPT_01_INSTALLAZIONE.md` (asset interno adattato)
 - `WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/WF-S5-YOUTUBE.md` (regole del ladder di render e revenue path)

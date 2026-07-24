@@ -4,7 +4,7 @@
 > c'è un file video, questo file lo dice, dice perché, e dice cosa serve per averlo.
 
 Run: `run-2026-07-23-001` · Aggiornato manualmente il: 2026-07-23 (poi anche da
-`empire/tools/video_pack.py --render`, vedi log automatico in fondo).
+`empire/tools/video_pack.py` con l'opzione `--render`, vedi log automatico in fondo).
 
 ---
 
@@ -64,6 +64,14 @@ non lo troverà: troverà il pacchetto completo per produrlo.
 ---
 
 <!-- VIDEO_PACK:RENDER-LOG:START -->
-*(Questa sezione viene scritta/aggiornata automaticamente da `video_pack.py --render`. Se la vedi
-vuota o assente, il comando non è ancora stato eseguito in questa run.)*
+
+*Ultimo tentativo di render: 2026-07-24T08:41:05+02:00*
+
+- ffmpeg: PRESENTE — ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+- audio narrato su disco: NO
+- video su disco: NO
+- esito: **gradino 2 incompleto**: ffmpeg c'e', manca la traccia audio narrata.
+- serve: sintesi vocale di `WORKFLOW-ESTATE/07-VIDEO-RUN/run-2026-07-23-001/02-TTS.txt` + registrazione schermo.
+- si resta al **gradino 3**: pacchetto-render consegnato, video NON prodotto.
+
 <!-- VIDEO_PACK:RENDER-LOG:END -->

@@ -168,8 +168,16 @@ def evaluate(gate, *, now: datetime | None = None, facts: dict | None = None,
     ev = _evidence_text(gate)
 
     def result(status: Status, reason: str) -> GateResult:
+        # Il marcatore vale su ROSSO e su IN ATTESA, mai su VERDE.
+        # Su verde non ha senso: non c'e' nessuna contromossa da applicare.
+        # Su "in attesa" invece si': quando si sa gia' che un gate non potra' diventare
+        # verde (es. Gate-S4, il cui criterio e' "automazione al 100%" che abbiamo
+        # deciso di non costruire), dichiarare subito il ramo di fallback e' un atto
+        # reale e registrato. Obbligare ad aspettare una scadenza il cui esito e' gia'
+        # noto sarebbe teatro, non rigore. Lo stato resta comunque quello vero: il
+        # colore non viene mai falsificato.
         return GateResult(gate.id, status, gate.deadline, reason, gate.on_red,
-                          evidence=ev, on_red_applied=on_red_applied and status == "RED")
+                          evidence=ev, on_red_applied=on_red_applied and status != "GREEN")
 
     if gate.type == "human":
         if human_confirmed:
