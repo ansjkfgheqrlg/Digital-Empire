@@ -1,4 +1,43 @@
-# STATO EMPIRE -- aggiornato 2026-07-24 (Claude: brainstorming RISTRUTTURAZIONE — 7 piani da scrivere)
+# STATO EMPIRE -- aggiornato 2026-07-24 (Claude: 7 PIANI DI RISTRUTTURAZIONE COMPLETATI)
+
+## ✅ 2026-07-24 — I 7 PIANI DI RISTRUTTURAZIONE SONO SCRITTI — CP-20260724-007
+> **Max deve leggerli e approvare. Non si costruisce nulla prima (suo ordine esplicito).**
+> Ordine di esecuzione consigliato: [APEX §5](../../WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/RISTRUTTURAZIONE-07-APEX.md)
+
+| # | Piano | Dimensione migliorata | Score |
+|---|---|---|---|
+| 1 | `RISTRUTTURAZIONE-01-FONDAMENTA` | la verità verificabile | 8.5 |
+| 2 | `RISTRUTTURAZIONE-02-CICLI` | l'esecuzione che si registra | 8.8 |
+| 3 | `RISTRUTTURAZIONE-03-WORKFLOW` | il lavoro diventa eseguibile | **9.0** |
+| 4 | `RISTRUTTURAZIONE-04-GERARCHIA` | l'autorità | 8.7 |
+| 5 | `RISTRUTTURAZIONE-05-SESSIONI` | la continuità | **9.1** |
+| 6 | `RISTRUTTURAZIONE-06-AUTONOMIA` | l'iniziativa | 8.9 |
+| 7 | `RISTRUTTURAZIONE-07-APEX` | l'autocritica | 8.6 |
+
+Ognuno: autocritica del precedente → **una sola** dimensione migliorata → contenuto → gate con
+soglia e criteri obbligatori → autocritica di sé con rischio dichiarato e score.
+
+### 🔑 Tre scoperte fatte scrivendo (non erano previste)
+1. **439 agenti e 6 stream, ZERO collegamenti.** I file dei 6 stream (36-78 righe) dichiarano solo
+   `Owner:`, non nominano un agente né una skill. È il vuoto che colma il Piano 3.
+2. **Il modello di workflow completo esiste già:** `YOUTUBE-AUTOMATION-FACTORY/` (altra sessione)
+   usa gli **stessi 6 pilastri** e contiene i pezzi APEX-7 (quality_gate, gate_agent, event_bus,
+   memory, meta_agent, self_improve). Il Piano 3 **generalizza invece di reinventare** — vincolo
+   additivo. Criticata comunque: le sue tracce di run hanno 3 campi, è un segnaposto di avvio.
+3. **La scoperta che ridimensiona tutto il progetto:** dei 4 difetti reali trovati a mano il 24/07,
+   **2 su 4 erano individuabili con un controllo BANALE mai eseguito** (bastava caricare
+   `skills-map.yaml` una volta). **Il problema non era la capacità, era l'esecuzione.** L'azienda
+   aveva già Ispettorato, gate, test, anagrafe: tutto fermo. **Serve far girare ciò che c'è, non aggiungere.**
+
+**Vincolo sovrano rispettato:** nessuno dei 7 piani prevede di cancellare, spostare o ricostruire.
+Tutti additivi. È il criterio C7 del gate finale.
+
+**RIPRESA DA:** ① Max legge i 7 piani e approva o corregge ② se approva, si parte dai piani **2, 3
+e 5** (quelli che cambiano di più la vita quotidiana) ③ restano aperte le 2 sole voci del Workflow
+Estate, **entrambe di Max**: i 2 Payment Link Stripe e l'incasso → `06-DASHBOARD-E-METRICHE/AZIONI-MAX.md`.
+
+---
+
 
 ## 🧭 2026-07-24 — RISTRUTTURAZIONE EMPIRE: brainstorming chiuso, 7 piani DA SCRIVERE — CP-20260724-002
 > **📌 LEGGERE PER PRIMO ALLA PROSSIMA SESSIONE:**

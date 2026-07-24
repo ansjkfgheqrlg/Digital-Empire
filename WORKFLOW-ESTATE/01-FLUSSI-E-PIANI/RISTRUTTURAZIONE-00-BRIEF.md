@@ -6,8 +6,21 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 ---
 
 # 🧭 RISTRUTTURAZIONE EMPIRE — BRIEF 00 (base dei 7 piani)
-> 2026-07-24 · **Stato: brainstorming CHIUSO, analisi iniziata, i 7 piani NON ancora scritti.**
-> Questo file esiste perché la prossima sessione riparta senza rifare nulla di questo.
+> 2026-07-24 · **Stato: ✅ SERIE COMPLETA — i 7 piani sono scritti.** (CP-20260724-007)
+>
+> | # | Piano | Dimensione | Score |
+> |---|---|---|---|
+> | 1 | [FONDAMENTA](RISTRUTTURAZIONE-01-FONDAMENTA.md) | la verità verificabile | 8.5 |
+> | 2 | [CICLI](RISTRUTTURAZIONE-02-CICLI.md) | l'esecuzione che si registra | 8.8 |
+> | 3 | [WORKFLOW](RISTRUTTURAZIONE-03-WORKFLOW.md) | il lavoro diventa eseguibile | **9.0** |
+> | 4 | [GERARCHIA](RISTRUTTURAZIONE-04-GERARCHIA.md) | l'autorità | 8.7 |
+> | 5 | [SESSIONI](RISTRUTTURAZIONE-05-SESSIONI.md) | la continuità | **9.1** |
+> | 6 | [AUTONOMIA](RISTRUTTURAZIONE-06-AUTONOMIA.md) | l'iniziativa | 8.9 |
+> | 7 | [APEX](RISTRUTTURAZIONE-07-APEX.md) | l'autocritica | 8.6 |
+>
+> **Prossimo passo: Max legge e approva. Non si costruisce nulla prima (suo ordine).**
+> Ordine di esecuzione consigliato in [APEX §5](RISTRUTTURAZIONE-07-APEX.md).
+> Questo file resta la base: contiene le parole di Max, le 8 risposte e la diagnosi.
 
 ---
 
