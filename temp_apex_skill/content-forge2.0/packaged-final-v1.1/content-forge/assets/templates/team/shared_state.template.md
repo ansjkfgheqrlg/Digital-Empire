@@ -1,6 +1,0 @@
-# Shared State
-
-## Schema
-```python
-{}
-```
