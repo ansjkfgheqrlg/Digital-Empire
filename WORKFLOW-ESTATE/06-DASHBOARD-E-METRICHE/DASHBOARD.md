@@ -32,21 +32,21 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 | Agenti Progettati | `439` | 🟢 | GAEL | `-` |
 | Agenti CF-Grade | `0` | 🟢 | GAEL | `>= 10` |
 | Ecosistemi Completi | `13` | 🟡 | CLAUDE | `== 10` |
-| Conformi ADR-008 | `6` | 🟢 | FORGE | `-` |
-| Link Rotti | `6200` | 🔴 | FORGE | `== 0` |
+| Conformi ADR-008 | `9` | 🟢 | FORGE | `-` |
+| Link Rotti | `4851` | 🔴 | FORGE | `== 0` |
 | Workflow Art. 8 | `1` | 🟢 | FORGE | `>= 1` |
-| Spazio Duplicato | `n/d (errore: 'str' object has no attribute 'get')` | ⚪ | FORGE | `< 1.0` |
+| Spazio Duplicato | `28.05 MB` | 🟡 | FORGE | `< 1.0` |
 
 ### 2. Telemetria e Performance (L2/L3)
 
 | KPI | Valore | Stato | Responsabile | Nota Sorgente |
 |---|---|---|---|---|
-| Esecuzioni/gg | `0.0` | 🟢 | CLAUDE | inspect.telemetry.runs — 0 esecuzioni negli ultimi 7 giorni |
-| Scorecard 5D | `0` | 🔴 | CLAUDE | inspect.scorecard — nessun record PERF registrato (il ciclo performance non ha ancora girato) |
-| First-pass Rate | `0` | 🔴 | CLAUDE | inspect.first_pass — nessun record PERF registrato (il ciclo performance non ha ancora girato) |
-| TTD Medio vs Bench | `0` | 🟢 | CLAUDE | inspect.ttd — nessun record PERF registrato (il ciclo performance non ha ancora girato) |
-| TIP Aperti / Recurred | `0` | 🟢 | CLAUDE | inspect.feedback — 0 TIP non confermati, 0 loop aperti |
-| Checkpoint Coverage | `0.0` | 🔴 | CLAUDE | inspect.traceability — 0/1 run con checkpoint o output collegato |
+| Esecuzioni/gg | `47.0` | 🟢 | CLAUDE | inspect.telemetry.runs — 329 esecuzioni negli ultimi 7 giorni |
+| Scorecard 5D | `3.98` | 🟡 | CLAUDE | inspect.scorecard — media su 828 run con scorecard compilata |
+| First-pass Rate | `85.5` | 🟡 | CLAUDE | inspect.first_pass — 813/951 run passate alla prima verifica |
+| TTD Medio vs Bench | `0.69` | 🟢 | CLAUDE | inspect.ttd — media 951 run: sotto benchmark (1.0 = in linea) |
+| TIP Aperti / Recurred | `4` | 🔴 | CLAUDE | inspect.feedback — 4 TIP non confermati, 4 loop aperti |
+| Checkpoint Coverage | `0.0` | 🔴 | CLAUDE | inspect.traceability — 0/951 run con checkpoint o output collegato |
 
 ### 3. Commerciale & Revenue
 
