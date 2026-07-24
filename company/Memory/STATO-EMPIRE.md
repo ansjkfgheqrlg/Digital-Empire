@@ -1,4 +1,53 @@
-# STATO EMPIRE -- aggiornato 2026-07-24 (Gael: G-A1/A2/A3 chiusi / Claude: WORKFLOW ESTATE COMPLETATO)
+# STATO EMPIRE -- aggiornato 2026-07-24 (Claude: brainstorming RISTRUTTURAZIONE — 7 piani da scrivere)
+
+## 🧭 2026-07-24 — RISTRUTTURAZIONE EMPIRE: brainstorming chiuso, 7 piani DA SCRIVERE — CP-20260724-002
+> **📌 LEGGERE PER PRIMO ALLA PROSSIMA SESSIONE:**
+> [`WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/RISTRUTTURAZIONE-00-BRIEF.md`](../../WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/RISTRUTTURAZIONE-00-BRIEF.md)
+> Contiene tutto: parole esatte di Max, 8 risposte del brainstorming, diagnosi, struttura dei 7 piani.
+> Con quel file si riparte senza rifare nulla.
+
+**Ordine di Max:** ristrutturare/architettare/ampliare — *"ogni fase è un workflow, che deve avere
+skill, agenti; devono esserci reparti, gerarchie, flussi, sessioni, debug ed ecosistemi interni"*.
+Metodo richiesto: **7 piani, ognuno miglioramento del precedente con un flusso completo, non casuale.**
+Riferimento di qualità dato da Max: documento `APEX-7 DEEP REFINEMENT`.
+
+### ⛔ VINCOLO SOVRANO (parole di Max — vale su OGNI lavoro futuro)
+> *"Non devi cancellare tutto e rifare da capo. Non devi ricostruire. Devi soltanto **migliorare,
+> aggiungere, perfezionare**."*
+
+Nessuna riscrittura, nessuna cancellazione di iniziativa — **nemmeno della spazzatura tecnica**.
+Tutto additivo, sopra ciò che esiste (coerente con ADR-003).
+
+### 🎯 Diagnosi che regge tutta la ristrutturazione
+Le **398 cartelle vuote** sono TRE problemi diversi, e solo il terzo conta:
+spazzatura tecnica (~250) · lavoro mai partito (~100) · **i sensori spenti (~25)**:
+`WORKFLOW-ESTATE/02-AUTOMAZIONI-E-SCRIPTS/` **11 su 11 vuote** (decisions, errors, feedback,
+metrics, performances, reasoning-bank, sessions…) e `company/Memory/tasks/` **10 su 10 vuote**.
+
+**Prova incrociata:** le 6 metriche di `empire inspect` danno 0 con nota "nessun record PERF" — non
+perché il codice sia rotto (costruito e testato ieri, 207 test verdi) ma perché **non esiste un solo
+record**. ➡️ **Non è disordine, è assenza di cicli di vita:** l'azienda ha gli organi di senso ma non
+i nervi. Stessa radice dei 3 difetti di CP-20260724-001 — niente veniva mai eseguito davvero.
+
+### ✅ Verifica sicurezza chiusa
+`EmpireDesk/chrome-profile/` (profilo Chrome con cookie/sessioni) → `git ls-files` = **0 file**:
+non tracciato, **nessuna credenziale è mai finita su GitHub**. Solo ingombro locale.
+
+### Requisiti raccolti da Max (dettaglio in §3 del brief)
+Cicli che si alimentano da soli · regola "fase=workflow" da ora **+ i 6 stream estate rimessi in
+forma** · deve funzionare **con Claude da solo** (subagenti KO per limite di spesa) · vuole
+**sapere cosa fare adesso + stato vero + lanciare e fidarsi** · **autonomia massima** ("fa tutto e
+riporta alla fine") · **gerarchia da azienda vera** · se sbaglia **riprova, poi si ferma e spiega**.
+⚠️ Tensione risolta in progetto: autonomia piena *dentro*, ma invii/incassi/pubblicazioni restano
+atto di Max (già così: G-A4 gated, gate umani).
+
+**RIPRESA DA:** ① completare l'analisi dei 6 stream estate (agenti/skill che già hanno → serve al
+PIANO 3) ② scrivere **PIANO 1→7** in `RISTRUTTURAZIONE-0N-*.md` con la struttura di §6 del brief
+③ **non costruire nulla finché Max non approva i piani.**
+Nota aperta: `08-STREAM-S7-BOT` e `12-STREAM-S7-BOT` sembrano lo stesso ecosistema duplicato — materia di Max.
+
+---
+
 
 ## ✅ 2026-07-24 — CLAUDE: WORKFLOW ESTATE CHIUSO (per quanto dipende dalla costruzione) — CP-20260724-001
 **Verdetto misurato, non dichiarato:** `python -m empire estate` → **exit 0**, 11 controlli su 13.
