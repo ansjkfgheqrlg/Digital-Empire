@@ -5,17 +5,34 @@ from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
+from event_bus import global_bus
+
 class AnalysisEngine:
     """
-    Layer B: Il Cervello Decisionale.
+    Layer B: Il Cervello Decisionale (Worker Agent - Analyst).
     Analizza il flusso di transazioni per identificare spike di volumi o anomalie di prezzo.
     """
     
-    def __init__(self):
+    def __init__(self, agent_id="ANALYST-ENGINE-1"):
+        self.agent_id = agent_id
         # Memoria temporanea per calcolare volumi mobili (rolling window)
         self.recent_events = []
         self.spike_threshold_sol = 100.0 # Valore fittizio di soglia
         
+        # Sostituisce la chiamata diretta iscrivendosi all'Event Bus
+        global_bus.subscribe("data.raw_event_received", self.handle_raw_event)
+
+    def handle_raw_event(self, event_msg: dict):
+        """Riceve l'evento dall'Event Bus e chiama process_event"""
+        payload = event_msg.get("payload", {})
+        
+        import asyncio
+        try:
+            loop = asyncio.get_running_loop()
+            loop.create_task(self.process_event(payload))
+        except RuntimeError:
+            asyncio.run(self.process_event(payload))
+
     async def process_event(self, event: dict) -> dict | None:
         """
         Riceve l'evento crudo dal Data Manager, estrae i dati e decide se inviare
@@ -44,13 +61,14 @@ class AnalysisEngine:
             signal = self._detect_spike()
             
             if signal:
-                logger.info(f"[ANALISI] 🎯 Trovato edge statistico! Spike di volume rilevato. Signal: {signal}")
+                logger.info(f"[{self.agent_id}] 🎯 Trovato edge statistico! Spike di volume rilevato. Signal: {signal}")
+                global_bus.publish("analysis.signal_detected", signal)
                 return signal
                 
             return None
             
         except Exception as e:
-            logger.error(f"Errore durante l'analisi dell'evento: {e}")
+            logger.error(f"[{self.agent_id}] Errore durante l'analisi dell'evento: {e}")
             return None
 
     def _extract_volume_from_logs(self, logs: list[str]) -> float:

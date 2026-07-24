@@ -2,21 +2,35 @@ import logging
 import csv
 import os
 from datetime import datetime
+from event_bus import global_bus
 
 logger = logging.getLogger(__name__)
 
 class ExecutionEngine:
     """
-    Layer C: Execution Engine (PAPER TRADING MODE).
+    Layer C: Execution Engine (PAPER TRADING MODE) (Worker Agent - Executor).
     Costruisce e firma transazioni virtuali per simulare i costi reali di mercato.
     Non tocca mai una chiave privata vera se TRADE_MODE=SIMULATION.
     """
     
-    def __init__(self, mode: str = "SIMULATION"):
+    def __init__(self, mode: str = "SIMULATION", agent_id="EXECUTION-ENGINE-1"):
+        self.agent_id = agent_id
         self.mode = mode
         self.log_file = "paper_trade_log.csv"
         self._init_log_file()
         
+        # Ascolta i segnali trovati dall'analista
+        global_bus.subscribe("analysis.signal_detected", self.handle_signal)
+
+    def handle_signal(self, event_msg: dict):
+        signal = event_msg.get("payload", {})
+        import asyncio
+        try:
+            loop = asyncio.get_running_loop()
+            loop.create_task(self.execute_trade(signal, allocated_capital=1.0))
+        except RuntimeError:
+            asyncio.run(self.execute_trade(signal, allocated_capital=1.0))
+
     def _init_log_file(self):
         if not os.path.exists(self.log_file):
             with open(self.log_file, mode='w', newline='') as f:
@@ -44,9 +58,14 @@ class ExecutionEngine:
         total_cost = allocated_capital + total_fee
         
         if self.mode == "SIMULATION":
-            return self._simulate_transaction(action, token, allocated_capital, base_fee, bribe, total_cost, slippage)
+            success = self._simulate_transaction(action, token, allocated_capital, base_fee, bribe, total_cost, slippage)
+            if success:
+                global_bus.publish("trade.executed", {"signal": signal, "cost": total_cost})
+            else:
+                global_bus.publish("trade.failed", {"signal": signal, "reason": "Slippage or TX dropped"})
+            return success
         else:
-            logger.error("MODALITÀ LIVE NON AUTORIZZATA. Manca l'approvazione del GATE.")
+            logger.error(f"[{self.agent_id}] MODALITÀ LIVE NON AUTORIZZATA. Manca l'approvazione del GATE.")
             return False
 
     def _simulate_transaction(self, action, token, amount, base_fee, bribe, total_cost, slippage) -> bool:
