@@ -1,0 +1,37 @@
+version: 1
+project: preventa-maps-scraper
+description: Pipeline di scraping concessionari da Google Maps + qualificazione e push su Sheets
+
+workflows:
+  maps-scraper-run:
+    type: pipeline
+    owner: gael
+    parameters:
+      cities: "Como, Lecco, Sondrio, Varese"
+      categoria: "concessionario auto"
+      limit: 25
+      only_alta: true
+      sheet_id: "GOOGLE_SHEET_ID"
+    steps:
+      - id: scrape.01
+        name: "setup_environment"
+        task: "Verifica presenza dipendenze (playwright, gspread) ed esegui setup driver"
+      - id: scrape.02
+        name: "playwright_scrape"
+        task: "Avvia Chromium e scrapa le schede dei concessionari per ciascuna città"
+      - id: scrape.03
+        name: "website_checking"
+        task: "Analizza la qualità dei siti web trovati e calcola la priorità della lead"
+      - id: scrape.04
+        name: "save_csv"
+        task: "Salva i dati estratti nel file CSV locale ed esporta la lista _SOLO_ALTA se richiesto"
+      - id: scrape.05
+        name: "sheets_push"
+        task: "Pusha i lead su Google Sheets eseguendo la deduplica basata sul telefono"
+    constraints:
+      anti_blocking:
+        random_delay: "1.2s - 2.8s tra i dettagli"
+        headless: false # headed consigliato per stabilità
+      google_sheets:
+        batch_size: 50
+        delay_between_batches: "1s"
