@@ -141,7 +141,7 @@ sovrimpressione.
 
 ---
 
-## Checklist struttura (da `references/teoria-script.md`, riusata)
+## Checklist struttura (da `.claude/skills/youtube-automation-factory/references/teoria-script.md`, riusata)
 - [x] Hook (prova tangibile) nei primi 5-10s, chiaro e pertinente
 - [x] CTA iniziale (risorsa gratuita) entro il primo 10% dello script
 - [x] Intro/Problema: presentazione implicita + valore proposto

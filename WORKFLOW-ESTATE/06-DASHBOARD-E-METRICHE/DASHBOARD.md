@@ -6,7 +6,7 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 ---
 
 # 📊 DASHBOARD OPERATIVA — Digital Empire
-> Generato automaticamente il: **2026-07-23 16:11:48**
+> Generato automaticamente il: **2026-07-24 07:44:23**
 
 ---
 
@@ -61,13 +61,13 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 
 | Concessionaria | Stato Relazione | Canale Preferito | Ultimo Contatto | Esito / Dettagli |
 |---|---|---|---|---|
-| AutoElite Milano | **Kit Pronto (MSG-2)** | WhatsApp | 2026-07-22 | Fissata chiamata conoscitiva - *In attesa di invio Max* |
-| CarPremium Torino | **Kit Pronto (MSG-3)** | Email/WA | 2026-07-21 | Inviata brochure - *In attesa di invio Max* |
-| MotorGold Bologna | **Kit Pronto (MSG-2)** | Chiamata/WA | 2026-07-20 | Mostrato forte interesse - *In attesa di invio Max* |
-| Dealership Rome srl | **Kit Pronto (MSG-1)** | Chiamata/WA | 2026-07-22 | Da richiamare - *In attesa di invio Max* |
-| Luxury Car Florence | **Kit Pronto (MSG-3)** | WhatsApp | 2026-07-19 | In attesa di risposta - *In attesa di invio Max* |
-| AutoVenezia Group | **Kit Pronto (MSG-2)** | Email/WA | 2026-07-22 | Inviato modulo - *In attesa di invio Max* |
-| SudMotori Napoli | **Kit Pronto (MSG-1)** | WhatsApp | 2026-07-21 | Nessun riscontro - *In attesa di invio Max* |
+| AutoElite Milano | **Contattato** | WhatsApp | 2026-07-22 | Fissata chiamata conoscitiva |
+| CarPremium Torino | **In Trattativa** | Email | 2026-07-21 | Inviata brochure |
+| MotorGold Bologna | **Qualificato** | Chiamata | 2026-07-20 | Mostrato forte interesse |
+| Dealership Rome srl | **Contattato** | Chiamata | 2026-07-22 | Da richiamare |
+| Luxury Car Florence | **Qualificato** | WhatsApp | 2026-07-19 | In attesa di risposta |
+| AutoVenezia Group | **Contattato** | Email | 2026-07-22 | Inviato modulo |
+| SudMotori Napoli | **Non Risposto** | WhatsApp | 2026-07-21 | Nessun riscontro |
 
 ---
 

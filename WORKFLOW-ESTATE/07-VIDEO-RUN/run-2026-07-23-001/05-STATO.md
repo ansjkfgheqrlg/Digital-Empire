@@ -4,7 +4,7 @@
 > c'è un file video, questo file lo dice, dice perché, e dice cosa serve per averlo.
 
 Run: `run-2026-07-23-001` · Aggiornato manualmente il: 2026-07-23 (poi anche da
-`empire/tools/video_pack.py --render`, vedi log automatico in fondo).
+`python -m empire.tools.video_pack --render`, vedi log automatico in fondo).
 
 ---
 
