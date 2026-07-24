@@ -1,0 +1,13 @@
+{
+  "tipo": "errore",
+  "titolo": "La dashboard coloriva di verde i valori che non sapeva leggere",
+  "autore": "Claude",
+  "prova": "empire/dash/kpi.py riga 30-32: il ramo di errore faceva 'return green'. Un first-pass rate a 0% appariva verde",
+  "quando": "2026-07-24T14:54:18+02:00",
+  "contesto": "Corretto: ora i valori illeggibili sono grigi. Un cruscotto che in caso di dubbio rassicura e' peggio di nessun cruscotto.",
+  "tags": [
+    "difetto",
+    "dashboard"
+  ],
+  "id": "ERR-20260724-la-dashboard-coloriva-di-verde-i"
+}

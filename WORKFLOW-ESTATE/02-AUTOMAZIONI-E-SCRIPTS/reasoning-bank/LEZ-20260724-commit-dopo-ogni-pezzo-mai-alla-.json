@@ -1,0 +1,13 @@
+{
+  "tipo": "lezione",
+  "titolo": "Commit dopo ogni pezzo, mai alla fine",
+  "autore": "Claude",
+  "prova": "Rete caduta 3 volte durante i push del 24/07 e 4 agenti morti per limite di spesa: nessun piano perso perche' committati uno per uno",
+  "quando": "2026-07-24T14:54:18+02:00",
+  "contesto": "Difesa provata sul campo contro le interruzioni, che sono state 4 tipi diversi in una sola giornata.",
+  "tags": [
+    "metodo",
+    "continuita"
+  ],
+  "id": "LEZ-20260724-commit-dopo-ogni-pezzo-mai-alla-"
+}

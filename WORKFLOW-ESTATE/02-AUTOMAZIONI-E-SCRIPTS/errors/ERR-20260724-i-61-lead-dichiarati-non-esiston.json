@@ -1,0 +1,13 @@
+{
+  "tipo": "errore",
+  "titolo": "I 61 lead dichiarati non esistono su disco",
+  "autore": "Claude",
+  "prova": "find su Outreach: solo test_lead_finti.csv, esempio_lead_5_righe.csv, stato_lead_test.csv. lead.csv ha 0/7 riscontri a monte",
+  "quando": "2026-07-24T14:54:18+02:00",
+  "contesto": "STATO-EMPIRE dichiarava 61 lead reali il 23/07. Il disco dice altro. Materia di Max.",
+  "tags": [
+    "dati",
+    "s1"
+  ],
+  "id": "ERR-20260724-i-61-lead-dichiarati-non-esiston"
+}

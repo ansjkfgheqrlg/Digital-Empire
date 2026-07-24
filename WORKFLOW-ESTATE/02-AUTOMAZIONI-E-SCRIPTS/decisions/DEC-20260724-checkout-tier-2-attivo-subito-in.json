@@ -1,0 +1,14 @@
+{
+  "tipo": "decisione",
+  "titolo": "Checkout tier 2 attivo subito invece di aspettare Stripe",
+  "autore": "Claude",
+  "prova": "checkout.py --check -> 'tier 2 - fallback ordine attivo', 0 placeholder residui",
+  "quando": "2026-07-24T14:54:18+02:00",
+  "contesto": "Un funnel senza modo di pagare non e' un funnel. Il tier 1 si attiva quando Max incolla i 2 Payment Link.",
+  "tags": [
+    "estate",
+    "s2",
+    "cassa"
+  ],
+  "id": "DEC-20260724-checkout-tier-2-attivo-subito-in"
+}

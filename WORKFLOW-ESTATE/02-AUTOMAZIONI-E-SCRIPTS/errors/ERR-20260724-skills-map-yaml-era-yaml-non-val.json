@@ -1,0 +1,14 @@
+{
+  "tipo": "errore",
+  "titolo": "skills-map.yaml era YAML non valido da prima",
+  "autore": "Claude",
+  "prova": "yaml.safe_load su git show HEAD:company/skills-map.yaml -> ParserError. registry/render.py emetteva note: e - id: allo stesso livello",
+  "quando": "2026-07-24T14:54:18+02:00",
+  "contesto": "L'anagrafe che per ADR-008 garantisce 'nessun artefatto orfano' non era caricabile da nessun parser: veniva letta a occhio, mai da una macchina.",
+  "tags": [
+    "difetto",
+    "adr-008",
+    "anagrafe"
+  ],
+  "id": "ERR-20260724-skills-map-yaml-era-yaml-non-val"
+}

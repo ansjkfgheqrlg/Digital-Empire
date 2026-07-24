@@ -198,3 +198,12 @@ def register(sub) -> None:
         pass
     else:
         _estate.register(sub)
+
+    # `empire trace` — le 5 tracce del Piano 2. Registrato da qui per lo stesso motivo
+    # di `estate`: cli.py e' congelato e non elenca empire.trace fra i plugin.
+    try:
+        from .. import trace as _trace
+    except ImportError:
+        pass
+    else:
+        _trace.register(sub)

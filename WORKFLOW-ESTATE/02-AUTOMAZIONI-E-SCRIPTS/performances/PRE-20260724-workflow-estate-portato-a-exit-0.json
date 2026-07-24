@@ -1,0 +1,13 @@
+{
+  "tipo": "prestazione",
+  "titolo": "Workflow Estate portato a exit 0",
+  "autore": "Claude",
+  "prova": "python -m empire estate -> EXIT 0, 11 controlli su 13; conform 0 block 0 warn (erano 4); pytest 207 passed (erano 150)",
+  "quando": "2026-07-24T14:54:18+02:00",
+  "contesto": "Le 2 voci restanti (Gate-CONTATTI, Gate-REV) dipendono solo da Max: Payment Link Stripe e incasso.",
+  "tags": [
+    "estate",
+    "chiuso"
+  ],
+  "id": "PRE-20260724-workflow-estate-portato-a-exit-0"
+}

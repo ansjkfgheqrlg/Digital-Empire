@@ -1,0 +1,13 @@
+{
+  "tipo": "decisione",
+  "titolo": "Vincolo additivo: mai cancellare, solo migliorare e aggiungere",
+  "autore": "Max",
+  "prova": "Parole di Max 24/07: 'non devi cancellare tutto e rifare da capo, non devi ricostruire. Devi soltanto migliorare, aggiungere, perfezionare'",
+  "quando": "2026-07-24T14:54:18+02:00",
+  "contesto": "Vale su ogni lavoro futuro. Coerente con ADR-003. E' il criterio C7 del gate finale dei 7 piani.",
+  "tags": [
+    "vincolo",
+    "adr-003"
+  ],
+  "id": "DEC-20260724-vincolo-additivo-mai-cancellare-"
+}

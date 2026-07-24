@@ -1,0 +1,14 @@
+{
+  "tipo": "decisione",
+  "titolo": "Gate-CONTATTI lasciato ROSSO di proposito",
+  "autore": "Claude",
+  "prova": "flow gate Gate-CONTATTI -> 'tracciabilita assente: solo 0/7 voci risultano in una sorgente a monte'",
+  "quando": "2026-07-24T14:54:18+02:00",
+  "contesto": "Confermarlo avrebbe fatto sembrare fatto un lavoro commerciale mai avvenuto. Decide Max.",
+  "tags": [
+    "estate",
+    "s1",
+    "onesta"
+  ],
+  "id": "DEC-20260724-gate-contatti-lasciato-rosso-di-"
+}

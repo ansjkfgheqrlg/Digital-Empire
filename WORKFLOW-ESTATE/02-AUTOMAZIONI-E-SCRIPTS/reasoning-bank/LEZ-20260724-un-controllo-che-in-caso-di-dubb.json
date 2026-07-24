@@ -1,0 +1,13 @@
+{
+  "tipo": "lezione",
+  "titolo": "Un controllo che in caso di dubbio rassicura e' peggio di nessun controllo",
+  "autore": "Claude",
+  "prova": "Tre difetti indipendenti della stessa famiglia in un giorno: dashboard verde su illeggibili, anagrafe mai caricata da un parser, controllo che approva il proprio scheletro",
+  "quando": "2026-07-24T14:54:18+02:00",
+  "contesto": "Corollario operativo: ogni registro va caricato da un parser almeno una volta, o non e' un registro.",
+  "tags": [
+    "metodo",
+    "qualita"
+  ],
+  "id": "LEZ-20260724-un-controllo-che-in-caso-di-dubb"
+}

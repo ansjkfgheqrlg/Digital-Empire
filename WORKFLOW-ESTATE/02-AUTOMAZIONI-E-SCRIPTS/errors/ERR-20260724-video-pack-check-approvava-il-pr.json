@@ -1,0 +1,13 @@
+{
+  "tipo": "errore",
+  "titolo": "video_pack --check approvava il proprio scheletro",
+  "autore": "Claude",
+  "prova": "Test test_new_then_check_is_incomplete_until_filled fallito: exit 0 su un pacchetto vuoto. Il template conteneva la parola su cui si basava la verifica",
+  "quando": "2026-07-24T14:54:18+02:00",
+  "contesto": "Un controllo non puo' usare come criterio qualcosa che ha scritto lui. Trovato da un test scritto aspettandosi l'esito opposto.",
+  "tags": [
+    "difetto",
+    "controlli"
+  ],
+  "id": "ERR-20260724-video-pack-check-approvava-il-pr"
+}

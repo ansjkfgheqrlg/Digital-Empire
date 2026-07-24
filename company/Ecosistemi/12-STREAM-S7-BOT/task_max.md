@@ -40,7 +40,8 @@ STRATEGIA: Miglioro UN COMPONENTE ALLA VOLTA con profondità chirurgica.
 
 PROBLEMA CHE RISOLVE: Prima non c'era nessun criterio oggettivo per dire "questo livello è completato, si può passare al prossimo". Era tutto soggettivo e indefinito.
 
-QUALITY GATE ARCHITECTURE:
+QUALITY GATE ARCHITECTURE (POWERED BY APEX-7):
+**Regola Suprema:** Tutti i Quality Gate devono appoggiarsi alla logica e alla memoria della [Skill APEX-7](../../../.agents/skills/apex-7/). I check non sono più isolati, ma centralizzati nel sistema nervoso di APEX.
 - INPUT → [PRE-CHECK] → [EXECUTION] → [POST-CHECK]
 - PASS → Avanti
 - FAIL → [REMEDIATION]

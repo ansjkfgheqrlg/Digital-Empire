@@ -1,0 +1,13 @@
+{
+  "tipo": "errore",
+  "titolo": "23 link rotti introdotti scrivendo i 7 piani",
+  "autore": "Claude",
+  "prova": "conform WORKFLOW-ESTATE passato da 0 a 23 block dopo la scrittura dei piani; percorsi abbreviati letti come file inesistenti",
+  "quando": "2026-07-24T14:54:18+02:00",
+  "contesto": "Regressione mia, trovata solo perche' ho lanciato il verdetto invece di rispondere a memoria. Corretta: percorsi completi.",
+  "tags": [
+    "difetto",
+    "regressione"
+  ],
+  "id": "ERR-20260724-23-link-rotti-introdotti-scriven"
+}

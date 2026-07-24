@@ -1,0 +1,13 @@
+{
+  "tipo": "lezione",
+  "titolo": "Il problema non era la capacita', era l'esecuzione",
+  "autore": "Claude",
+  "prova": "Dei 4 difetti trovati a mano il 24/07, 2 su 4 erano individuabili con un controllo banale mai eseguito (bastava caricare skills-map.yaml una volta)",
+  "quando": "2026-07-24T14:54:18+02:00",
+  "contesto": "L'azienda aveva gia' Ispettorato, gate, test e anagrafe: tutto fermo. Serve far girare cio' che c'e', non aggiungere.",
+  "tags": [
+    "metodo",
+    "apex"
+  ],
+  "id": "LEZ-20260724-il-problema-non-era-la-capacita-"
+}
