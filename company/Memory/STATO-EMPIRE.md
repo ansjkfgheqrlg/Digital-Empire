@@ -1,3 +1,35 @@
+# STATO EMPIRE -- aggiornato 2026-07-25 (Claude: agenti operativi PEZZO 1 — misuratore + 1 promosso)
+
+## 🔧 2026-07-25 — AGENTI DA MARKDOWN A OPERATIVI: PEZZO 1 fatto — CP-20260725-001
+Ordine di Max (/content-forge + /apex): trasformare i 439 agenti/skill/flussi da schede markdown a
+**operativi** — uno per uno, in checklist, metodo APEX-7 (un pezzo alla volta, autocritica, score).
+
+**Costruito e provato:** `empire/forge.py` misura quanto un agente e' operativo con 6 criteri
+(C1 identita · C2 ruolo · C3 ingresso · C4 uscita · C5 successo · C6 comportamento), ordina una
+checklist per gravita', CLI `forge scan|prossimo|agente`. 11 test verdi (236 totali).
+
+**Fotografia di partenza (misurata, non stimata):**
+```
+439 agenti:  55 OPERATIVO (12.5%) · 324 PARZIALE (73.8%) · 60 DOCUMENTALE (13.7%)
+buco piu' grande: C4-uscita, 321 agenti (73%) NON dichiarano cosa producono
+```
+**Sorpresa:** l'autocritica di Max diceva "manca il comportamento". La misura dice che il
+comportamento manca solo al 17% — il vero buco e' l'**uscita** (73%): sanno come lavorare ma non
+dichiarano cosa producono, quindi il lavoro non e' verificabile. Cambia la priorita' del PEZZO 2.
+
+**Ciclo provato end-to-end:** `AGENTE-CLOSER-A8` da 8 righe documentali (0.0/10) a 134 righe
+operative (10.0/10) — id, ruolo, input con guardia anti-lead-falsi, output con tracce, procedura a
+6 step, 4 gate, catena reparto/arbitro/controllore. Contenuto originale preservato (additivo).
+
+**⚙️ Nuovo metodo operativo (ordine di Max 25/07):** ogni piccola fase = checkpoint + commit + push.
+Un agente promosso = una fase.
+
+**RIPRESA DA:** PEZZO 2 — `empire forge prossimo` per i prossimi DOCUMENTALE (escludendo i falsi
+positivi evals.md/failure-modes.md, file di corredo). Priorita' agli agenti che toccano i soldi:
+A2-Acquisizione, A3-Preventivi. Portare gli OPERATIVO da 56 verso l'alto, misurando a ogni pezzo.
+
+---
+
 # STATO EMPIRE -- aggiornato 2026-07-24 (Claude: 7 PIANI DI RISTRUTTURAZIONE COMPLETATI)
 
 ## ✅ 2026-07-24 — I 7 PIANI DI RISTRUTTURAZIONE SONO SCRITTI — CP-20260724-007

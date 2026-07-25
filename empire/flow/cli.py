@@ -207,3 +207,12 @@ def register(sub) -> None:
         pass
     else:
         _trace.register(sub)
+
+    # `empire forge` — misura quanto gli agenti sono operativi. Stesso motivo di
+    # registrazione da qui: cli.py e' congelato.
+    try:
+        from .. import forge as _forge
+    except ImportError:
+        pass
+    else:
+        _forge.register(sub)

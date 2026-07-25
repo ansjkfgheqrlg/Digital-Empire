@@ -1,0 +1,14 @@
+{
+  "tipo": "prestazione",
+  "titolo": "PEZZO 1 refinement: misuratore operativita agenti + primo agente promosso",
+  "autore": "Claude",
+  "prova": "empire forge scan: 439 agenti, 55 OPERATIVO/324 PARZIALE/60 DOCUMENTALE. A8-Closer 0.0->10.0. 11 test verdi.",
+  "quando": "2026-07-25T08:32:19+02:00",
+  "contesto": "empire/forge.py con 6 criteri (C1-C6), checklist ordinata per gravita. C4-uscita e il buco piu grande: 73% degli agenti non dichiara cosa produce.",
+  "tags": [
+    "forge",
+    "apex",
+    "agenti"
+  ],
+  "id": "PRE-20260725-pezzo-1-refinement-misuratore-op"
+}
