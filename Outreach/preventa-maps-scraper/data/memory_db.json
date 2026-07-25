@@ -1590,5 +1590,72 @@
     ],
     "general_knowledge": [],
     "task_outputs": [],
-    "leads_store": []
+    "leads_store": [
+        {
+            "id": "0303700322",
+            "timestamp": "2026-07-25T06:51:16.889922Z",
+            "author_agent": "outreach_runner",
+            "layer": "leads_store",
+            "importance": 0.5,
+            "access_count": 0,
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "nome_attivita": "Autobase Brescia - Concessionaria Hyundai, Mazda, EMC e FOTON. Noleggio e Usato.",
+                "citta": "Brescia",
+                "telefono": "030 370 0322",
+                "priorita_lead": "ALTA",
+                "gancio_scelto": {
+                    "numero": 3,
+                    "nome": "PDF brutto / brand",
+                    "motivo": "nessun sito o sito vecchio/scarso"
+                },
+                "canale_primario": "whatsapp",
+                "whatsapp_msg1": "Ciao, sono Max di Preventa \ud83d\udc4b\nHo visto Autobase Brescia - Concessionaria Hyundai, Mazda, EMC e FOTON. Noleggio e Usato. su Maps - immagine curata online.\nChiamo diversi saloni premium in zona Brescia e mi dicono tutti: poi per\u00f2 i preventivi escono su Excel o PDF del gestionale tutti storti.\nCome li mandate voi oggi?",
+                "email1": {
+                    "oggetto_a": "Preventivi Autobase Brescia - Concessionaria Hyundai, Mazda, EMC e FOTON. Noleggio e Usato.: 2 minuti, non 30?",
+                    "oggetto_b": "Domanda veloce sui vostri PDF preventivi",
+                    "oggetto_c": "Autobase Brescia - Concessionaria Hyundai, Mazda, EMC e FOTON. Noleggio e Usato., anche voi su Excel per i preventivi?",
+                    "corpo": "Buongiorno,\nvi scrivo perch\u00e9 sto sentendo diversi concessionari nella zona di Brescia.\nProblema comune: 20-30 min per fare un preventivo decente e clienti che nel frattempo chiedono altrove.\nVoi come li state gestendo ora? Ancora su Excel/gestionale o avete gi\u00e0 velocizzato?\nMax - Preventa"
+                },
+                "stato": "contattato",
+                "data_primo_contatto": "2026-07-25",
+                "ultimo_step_inviato": "msg1",
+                "data_ultimo_invio": "2026-07-25"
+            }
+        },
+        {
+            "id": "0307724011",
+            "timestamp": "2026-07-25T06:51:18.908043Z",
+            "author_agent": "outreach_runner",
+            "layer": "leads_store",
+            "importance": 0.5,
+            "access_count": 0,
+            "version": 1,
+            "status": "ACTIVE",
+            "content": {
+                "nome_attivita": "Gruppo Carmeli - Renault Dacia - Brescia",
+                "citta": "Brescia",
+                "telefono": "030 772 4011",
+                "priorita_lead": "ALTA",
+                "gancio_scelto": {
+                    "numero": 3,
+                    "nome": "PDF brutto / brand",
+                    "motivo": "nessun sito o sito vecchio/scarso"
+                },
+                "canale_primario": "whatsapp",
+                "whatsapp_msg1": "Ciao, sono Max di Preventa \ud83d\udc4b\nHo visto Gruppo Carmeli - Renault Dacia - Brescia su Maps - immagine curata online.\nChiamo diversi saloni premium in zona Brescia e mi dicono tutti: poi per\u00f2 i preventivi escono su Excel o PDF del gestionale tutti storti.\nCome li mandate voi oggi?",
+                "email1": {
+                    "oggetto_a": "Preventivi Gruppo Carmeli - Renault Dacia - Brescia: 2 minuti, non 30?",
+                    "oggetto_b": "Domanda veloce sui vostri PDF preventivi",
+                    "oggetto_c": "Gruppo Carmeli - Renault Dacia - Brescia, anche voi su Excel per i preventivi?",
+                    "corpo": "Buongiorno,\nvi scrivo perch\u00e9 sto sentendo diversi concessionari nella zona di Brescia.\nProblema comune: 20-30 min per fare un preventivo decente e clienti che nel frattempo chiedono altrove.\nVoi come li state gestendo ora? Ancora su Excel/gestionale o avete gi\u00e0 velocizzato?\nMax - Preventa"
+                },
+                "stato": "contattato",
+                "data_primo_contatto": "2026-07-25",
+                "ultimo_step_inviato": "msg1",
+                "data_ultimo_invio": "2026-07-25"
+            }
+        }
+    ]
 }

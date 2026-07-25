@@ -1,0 +1,48 @@
+[
+    {
+        "nome_attivita": "Autobase Brescia - Concessionaria Hyundai, Mazda, EMC e FOTON. Noleggio e Usato.",
+        "citta": "Brescia",
+        "telefono": "030 370 0322",
+        "priorita_lead": "ALTA",
+        "gancio_scelto": {
+            "numero": 3,
+            "nome": "PDF brutto / brand",
+            "motivo": "nessun sito o sito vecchio/scarso"
+        },
+        "canale_primario": "whatsapp",
+        "whatsapp_msg1": "Ciao, sono Max di Preventa 👋\nHo visto Autobase Brescia - Concessionaria Hyundai, Mazda, EMC e FOTON. Noleggio e Usato. su Maps - immagine curata online.\nChiamo diversi saloni premium in zona Brescia e mi dicono tutti: poi però i preventivi escono su Excel o PDF del gestionale tutti storti.\nCome li mandate voi oggi?",
+        "email1": {
+            "oggetto_a": "Preventivi Autobase Brescia - Concessionaria Hyundai, Mazda, EMC e FOTON. Noleggio e Usato.: 2 minuti, non 30?",
+            "oggetto_b": "Domanda veloce sui vostri PDF preventivi",
+            "oggetto_c": "Autobase Brescia - Concessionaria Hyundai, Mazda, EMC e FOTON. Noleggio e Usato., anche voi su Excel per i preventivi?",
+            "corpo": "Buongiorno,\nvi scrivo perché sto sentendo diversi concessionari nella zona di Brescia.\nProblema comune: 20-30 min per fare un preventivo decente e clienti che nel frattempo chiedono altrove.\nVoi come li state gestendo ora? Ancora su Excel/gestionale o avete già velocizzato?\nMax - Preventa"
+        },
+        "stato": "contattato",
+        "data_primo_contatto": "2026-07-25",
+        "ultimo_step_inviato": "msg1",
+        "data_ultimo_invio": "2026-07-25"
+    },
+    {
+        "nome_attivita": "Gruppo Carmeli - Renault Dacia - Brescia",
+        "citta": "Brescia",
+        "telefono": "030 772 4011",
+        "priorita_lead": "ALTA",
+        "gancio_scelto": {
+            "numero": 3,
+            "nome": "PDF brutto / brand",
+            "motivo": "nessun sito o sito vecchio/scarso"
+        },
+        "canale_primario": "whatsapp",
+        "whatsapp_msg1": "Ciao, sono Max di Preventa 👋\nHo visto Gruppo Carmeli - Renault Dacia - Brescia su Maps - immagine curata online.\nChiamo diversi saloni premium in zona Brescia e mi dicono tutti: poi però i preventivi escono su Excel o PDF del gestionale tutti storti.\nCome li mandate voi oggi?",
+        "email1": {
+            "oggetto_a": "Preventivi Gruppo Carmeli - Renault Dacia - Brescia: 2 minuti, non 30?",
+            "oggetto_b": "Domanda veloce sui vostri PDF preventivi",
+            "oggetto_c": "Gruppo Carmeli - Renault Dacia - Brescia, anche voi su Excel per i preventivi?",
+            "corpo": "Buongiorno,\nvi scrivo perché sto sentendo diversi concessionari nella zona di Brescia.\nProblema comune: 20-30 min per fare un preventivo decente e clienti che nel frattempo chiedono altrove.\nVoi come li state gestendo ora? Ancora su Excel/gestionale o avete già velocizzato?\nMax - Preventa"
+        },
+        "stato": "contattato",
+        "data_primo_contatto": "2026-07-25",
+        "ultimo_step_inviato": "msg1",
+        "data_ultimo_invio": "2026-07-25"
+    }
+]
