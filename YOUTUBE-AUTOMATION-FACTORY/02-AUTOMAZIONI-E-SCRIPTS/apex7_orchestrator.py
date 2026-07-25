@@ -119,9 +119,9 @@ class Apex7Orchestrator:
         print("""
  ╔══════════════════════════════════════════════════════════════╗
  ║                        APEX-7 SYSTEM                         ║
- ║              Adaptive Prompt EXecution Engine                 ║
+ ║              Adaptive Prompt EXecution Engine                ║
  ╠══════════════════════════════════════════════════════════════╣
- ║  [GOAL] ──► [META-ORCHESTRATOR] ──► [SWARM EXECUTION ENGINE]  ║
+ ║  [GOAL] ──► [META-ORCHESTRATOR] ──► [SWARM EXECUTION ENGINE] ║
  ║                                                              ║
  ║   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐        ║
  ║   │  PLANNER    │ ──►  WRITER     │ ──►  ANALYST    │        ║

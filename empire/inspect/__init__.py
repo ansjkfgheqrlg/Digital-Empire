@@ -10,7 +10,6 @@ from __future__ import annotations
 
 from .metrics import (ALL_METRICS, feedback_tips, first_pass, scorecard_5d, status,
                       telemetry_runs, traceability, ttd_vs_bench)
-from .sources import source_summary
 
 __all__ = ["status", "ALL_METRICS", "telemetry_runs", "scorecard_5d", "first_pass",
-           "ttd_vs_bench", "feedback_tips", "traceability", "source_summary"]
+           "ttd_vs_bench", "feedback_tips", "traceability"]
