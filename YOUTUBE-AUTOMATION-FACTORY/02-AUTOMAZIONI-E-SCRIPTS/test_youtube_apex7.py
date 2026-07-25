@@ -35,12 +35,33 @@ class TestYouTubeApex7(unittest.TestCase):
         self.event_bus = EventBus()
         self.gate_agent = GateAgent(self.event_bus, self.memory)
 
+        # Override TEMPLATES_DIR per isolamento del file system
+        import apex7_orchestrator
+        self.original_templates_dir = apex7_orchestrator.TEMPLATES_DIR
+        self.test_templates_dir = os.path.join(self.memory.base_dir, f"templates_{self.run_id}")
+        os.makedirs(self.test_templates_dir, exist_ok=True)
+        apex7_orchestrator.TEMPLATES_DIR = self.test_templates_dir
+        
+        import agents
+        self.original_agents_templates_dir = agents.TEMPLATES_DIR
+        agents.TEMPLATES_DIR = self.test_templates_dir
+
     def tearDown(self):
+        # Ripristina i percorsi originali
+        import apex7_orchestrator
+        apex7_orchestrator.TEMPLATES_DIR = self.original_templates_dir
+        import agents
+        agents.TEMPLATES_DIR = self.original_agents_templates_dir
+
         # Pulisce tutti i file temporanei con self.run_id nel nome
         for f in os.listdir(self.memory.base_dir):
             if self.run_id in f:
+                p = os.path.join(self.memory.base_dir, f)
                 try:
-                    os.remove(os.path.join(self.memory.base_dir, f))
+                    if os.path.isdir(p):
+                        shutil.rmtree(p)
+                    else:
+                        os.remove(p)
                 except Exception:
                     pass
                     
@@ -60,7 +81,12 @@ class TestYouTubeApex7(unittest.TestCase):
                     try:
                         os.remove(os.path.join(decisions_dir, f))
                     except Exception:
-                        pass
+                        import time
+                        time.sleep(0.1)
+                        try:
+                            os.remove(os.path.join(decisions_dir, f))
+                        except Exception as e:
+                            print(f"Error deleting decision file {f}: {e}")
 
     def test_event_bus_pub_sub(self):
         events_received = []
@@ -226,6 +252,37 @@ class TestYouTubeApex7(unittest.TestCase):
         archive_path = os.path.join(self.memory.base_dir, f"decision_log_archive_{self.run_id}.json")
         archive_data = self.memory._load_json_noblock(archive_path, [])
         self.assertEqual(len(archive_data), 30)
+
+    def test_apex7_orchestrator_e2e(self):
+        from apex7_orchestrator import Apex7Orchestrator
+        orchestrator = Apex7Orchestrator(run_id=self.run_id)
+        
+        # Override paths for safety
+        orchestrator.state_file = os.path.join(self.memory.base_dir, "runs", f"run_{self.run_id}.json")
+        orchestrator.decision_log_path = os.path.join(self.memory.base_dir, f"decision_log_{self.run_id}.json")
+        orchestrator.strategy_store_path = os.path.join(self.memory.base_dir, f"strategy_store_{self.run_id}.json")
+        orchestrator.snapshots_path = os.path.join(self.memory.base_dir, f"snapshots_{self.run_id}.json")
+        orchestrator.learned_rules_path = os.path.join(self.memory.base_dir, f"learned_rules_{self.run_id}.json")
+        orchestrator.perf_logs_path = os.path.join(self.memory.base_dir, f"performance_logs_{self.run_id}.json")
+        
+        # Initialize memory files
+        orchestrator.initialize_memory_files()
+        
+        # Verify initial state
+        self.assertTrue(orchestrator.load_state())
+        
+        # Execute workflow phases 1 to 6 (non-interactive)
+        orchestrator.working_memory["topic"] = "AI/Claude IT"
+        orchestrator.execute_workflow(target_phase=6, interactive=False)
+        
+        # Check that files were written in the isolated templates folder
+        self.assertTrue(os.path.exists(os.path.join(self.test_templates_dir, "scheda-nicchia.md")))
+        self.assertTrue(os.path.exists(os.path.join(self.test_templates_dir, "candidati-video.json")))
+        self.assertTrue(os.path.exists(os.path.join(self.test_templates_dir, "seo-report.json")))
+        self.assertTrue(os.path.exists(os.path.join(self.test_templates_dir, "script.md")))
+        self.assertTrue(os.path.exists(os.path.join(self.test_templates_dir, "produzione-spec.json")))
+        self.assertTrue(os.path.exists(os.path.join(self.test_templates_dir, "brief-miniatura.json")))
+        self.assertTrue(os.path.exists(os.path.join(self.test_templates_dir, "metadati.json")))
 
 if __name__ == "__main__":
     unittest.main()
