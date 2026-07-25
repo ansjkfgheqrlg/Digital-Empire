@@ -29,10 +29,12 @@ FACTORY_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
 MEMORY_DIR = os.path.join(FACTORY_DIR, "memory")
 RUNS_DIR = os.path.join(MEMORY_DIR, "runs")
 DECIS_DIR = os.path.join(MEMORY_DIR, "decisions")
+TEMPLATES_DIR = os.path.join(FACTORY_DIR, "05-TEMPLATES-E-KIT")
 
 # Assicuriamoci che le directory esistano
 os.makedirs(RUNS_DIR, exist_ok=True)
 os.makedirs(DECIS_DIR, exist_ok=True)
+os.makedirs(TEMPLATES_DIR, exist_ok=True)
 
 class Apex7Orchestrator:
     def __init__(self, run_id: str | None = None):
@@ -102,7 +104,7 @@ class Apex7Orchestrator:
         self.save_json(self.decision_log_path, log)
         
         # Scrivi anche file MD individuale in memory/decisions/
-        md_path = os.path.join(DECIS_DIR, f"{decision_id}.md")
+        md_path = os.path.join(DECIS_DIR, f"{decision_id}_{self.run_id}.md")
         with open(md_path, "w", encoding="utf-8") as f:
             f.write(f"# Decisione {decision_id}\n\n")
             f.write(f"- **Data**: {record['timestamp']}\n")
@@ -227,7 +229,7 @@ class Apex7Orchestrator:
         
         # Simulazione niche-scout
         print("[✍️ WRITER] Generazione scheda nicchia...")
-        scheda_nicchia_path = os.path.join(FACTORY_DIR, "scheda-nicchia.md")
+        scheda_nicchia_path = os.path.join(TEMPLATES_DIR, "scheda-nicchia.md")
         
         # Esegui cashcow check su mock data
         canale_mock = {
@@ -267,7 +269,7 @@ class Apex7Orchestrator:
     # --- Fase 2: Selezione Video ---
     def run_phase_2(self, interactive: bool) -> bool:
         print("[📋 PLANNER] Avvio selezione video ottimale per la replica...")
-        candidati_path_json = os.path.join(FACTORY_DIR, "candidati-video.json")
+        candidati_path_json = os.path.join(TEMPLATES_DIR, "candidati-video.json")
         
         # Generiamo file candidati-video.json se manca
         candidati = {
@@ -285,7 +287,7 @@ class Apex7Orchestrator:
         
         # Calcolo SEO Score per i candidati
         print("[🔬 ANALYST] Calcolo punteggio SEO per i video candidati...")
-        seo_report_json = os.path.join(FACTORY_DIR, "seo-report.json")
+        seo_report_json = os.path.join(TEMPLATES_DIR, "seo-report.json")
         seo_report = {
             "videos": [
                 {"title": "Installare Claude Code locale", "seo_score": 45.0, "label": "A-upside"},
@@ -309,7 +311,7 @@ class Apex7Orchestrator:
     # --- Fase 3: Script ---
     def run_phase_3(self, interactive: bool) -> bool:
         print("[✍️ WRITER] Scrittura dello script con gancio, valore e 3 CTA...")
-        script_path = os.path.join(FACTORY_DIR, "script.md")
+        script_path = os.path.join(TEMPLATES_DIR, "script.md")
         
         with open(script_path, "w", encoding="utf-8") as f:
             f.write("# Script: Come installare ed usare Claude Code\n\n")
@@ -330,7 +332,7 @@ class Apex7Orchestrator:
     # --- Fase 4: Produzione ---
     def run_phase_4(self, interactive: bool) -> bool:
         print("[✍️ WRITER] Generazione della spec di produzione Fliki...")
-        spec_path = os.path.join(FACTORY_DIR, "produzione-spec.json")
+        spec_path = os.path.join(TEMPLATES_DIR, "produzione-spec.json")
         spec = {
             "video_id": "claude-code-001",
             "title": "Installare Claude Code locale",
@@ -357,7 +359,7 @@ class Apex7Orchestrator:
     # --- Fase 5: Pubblicazione ---
     def run_phase_5(self, interactive: bool) -> bool:
         print("[✍️ WRITER] Generazione dei metadati e del brief della miniatura...")
-        brief_path = os.path.join(FACTORY_DIR, "brief-miniatura.json")
+        brief_path = os.path.join(TEMPLATES_DIR, "brief-miniatura.json")
         brief = {
             "title": "Installare Claude Code locale",
             "concept": "Console nera con scritte arancioni e logo Claude",
@@ -366,7 +368,7 @@ class Apex7Orchestrator:
         }
         self.save_json(brief_path, brief)
         
-        metadata_path = os.path.join(FACTORY_DIR, "metadati.json")
+        metadata_path = os.path.join(TEMPLATES_DIR, "metadati.json")
         metadata = {
             "title": "Come Installare CLAUDE CODE in Locale (Guida Passo-Passo)",
             "description": "Ecco come installare Claude Code nel terminale...",

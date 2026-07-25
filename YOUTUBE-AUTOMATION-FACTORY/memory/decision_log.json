@@ -364,5 +364,94 @@
     "alternatives_rejected": [],
     "confidence": 1.0,
     "timestamp": "2026-07-24T14:26:25.689903"
+  },
+  {
+    "id": "DEC-L1_L2-1784961955",
+    "run_id": "yt-run-20260725-084555",
+    "decision": "Esito Gate L1_L2: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-25T08:45:55.514966"
+  },
+  {
+    "id": "DEC-L2_L3-1784961955",
+    "run_id": "yt-run-20260725-084555",
+    "decision": "Esito Gate L2_L3: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-25T08:45:55.596503"
+  },
+  {
+    "id": "DEC-L3_L4-1784961955",
+    "run_id": "yt-run-20260725-084555",
+    "decision": "Esito Gate L3_L4: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-25T08:45:55.689215"
+  },
+  {
+    "id": "DEC-L4_L5-1784961955",
+    "run_id": "yt-run-20260725-084555",
+    "decision": "Esito Gate L4_L5: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-25T08:45:55.776693"
+  },
+  {
+    "id": "DEC-L5_L6-1784961955",
+    "run_id": "yt-run-20260725-084555",
+    "decision": "Esito Gate L5_L6: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-25T08:45:55.874140"
+  },
+  {
+    "id": "DEC-L6_L7-1784961955",
+    "run_id": "yt-run-20260725-084555",
+    "decision": "Esito Gate L6_L7: PASS",
+    "reason": "Verifica dei criteri completata con score 1.0. Nessuna anomalia.",
+    "alternatives_rejected": [],
+    "confidence": 1.0,
+    "timestamp": "2026-07-25T08:45:55.972761"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260725-084609-5987b8",
+    "decision": "Selezione nicchia AI/Claude IT",
+    "reason": "Metriche storiche di views/ora stabili e alta replicabilità con Fliki.",
+    "alternatives_rejected": [
+      "Nicchia Finanza Personale",
+      "Nicchia Gaming"
+    ],
+    "confidence": 0.92,
+    "timestamp": "2026-07-25T08:46:09.180257"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260725-084612-397482",
+    "decision": "Selezione nicchia AI/Claude IT",
+    "reason": "Metriche storiche di views/ora stabili e alta replicabilità con Fliki.",
+    "alternatives_rejected": [
+      "Nicchia Finanza Personale",
+      "Nicchia Gaming"
+    ],
+    "confidence": 0.92,
+    "timestamp": "2026-07-25T08:46:12.773902"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260725-084612-397482",
+    "decision": "Scelta video target: Installare Claude Code locale",
+    "reason": "Opzione A-upside preferita: SEO molto scarsa dell'originale permette di superarlo facilmente implementando best-practice SEO.",
+    "alternatives_rejected": [
+      "Prompt Engineering per Agent Swarm"
+    ],
+    "confidence": 0.88,
+    "timestamp": "2026-07-25T08:46:12.856051"
   }
 ]

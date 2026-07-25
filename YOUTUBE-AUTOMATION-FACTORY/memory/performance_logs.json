@@ -41,5 +41,39 @@
       "retention_rate": 55.0,
       "curve_type": "regolare"
     }
+  },
+  {
+    "video_id": "claude-code-001",
+    "keyword": "claude code",
+    "voice": "Fabio (Italiano)",
+    "hook_type": "Question",
+    "tags": [
+      "claude code",
+      "antigravity",
+      "digital empire"
+    ],
+    "metrics": {
+      "views_per_hour": 35.5,
+      "ctr": 8.2,
+      "retention_rate": 55.0,
+      "curve_type": "regolare"
+    }
+  },
+  {
+    "video_id": "claude-code-001",
+    "keyword": "claude code",
+    "voice": "Fabio (Italiano)",
+    "hook_type": "Question",
+    "tags": [
+      "claude code",
+      "antigravity",
+      "digital empire"
+    ],
+    "metrics": {
+      "views_per_hour": 35.5,
+      "ctr": 8.2,
+      "retention_rate": 55.0,
+      "curve_type": "regolare"
+    }
   }
 ]

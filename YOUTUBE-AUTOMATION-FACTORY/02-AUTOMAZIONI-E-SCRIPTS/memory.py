@@ -152,7 +152,7 @@ class MemoryQueryInterface:
             
             # Crea anche file .md
             dec_dir = os.path.join(self.base_dir, "decisions")
-            md_path = os.path.join(dec_dir, f"{decision_id}.md")
+            md_path = os.path.join(dec_dir, f"{decision_id}_{self.run_id}.md")
             with open(md_path, "w", encoding="utf-8") as f:
                 f.write(f"# Decisione {decision_id}\n\n")
                 f.write(f"- **Data**: {record['timestamp']}\n")

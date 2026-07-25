@@ -89,7 +89,7 @@ class TestYouTubeApex7(unittest.TestCase):
             rejected=["Option A"],
             confidence=0.9
         )
-        md_file = os.path.join(self.memory.base_dir, "decisions", f"{decision_id}.md")
+        md_file = os.path.join(self.memory.base_dir, "decisions", f"{decision_id}_{self.run_id}.md")
         self.assertTrue(os.path.exists(md_file))
         
         # Carica il log delle decisioni e controlla
