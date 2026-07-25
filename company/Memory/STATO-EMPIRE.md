@@ -30,7 +30,7 @@ A2-Acquisizione, A3-Preventivi. Portare gli OPERATIVO da 56 verso l'alto, misura
 
 ---
 
-# STATO EMPIRE -- aggiornato 2026-07-24 (Claude: 7 PIANI DI RISTRUTTURAZIONE COMPLETATI)
+# STATO EMPIRE -- aggiornato 2026-07-24 (Claude: 7 PIANI DI RISTRUTTURAZIONE COMPLETATI + Q&A YouTube)
 
 ## ✅ 2026-07-24 — I 7 PIANI DI RISTRUTTURAZIONE SONO SCRITTI — CP-20260724-007
 > **Max deve leggerli e approvare. Non si costruisce nulla prima (suo ordine esplicito).**
@@ -70,6 +70,20 @@ Estate, **entrambe di Max**: i 2 Payment Link Stripe e l'incasso → `06-DASHBOA
 
 ---
 
+## 🧭 2026-07-24 — Q&A YouTube APEX-7 (G-B5) + recupero lavoro Outreach non committato — CP-20260724-008
+> **Sessione consultiva, nessuna modifica al codice YouTube** (vincolo sovrano: serve via libera di
+> Max). Risposto: (1) le modifiche G-B5 sono già in `27cd498e` (154 file, `YOUTUBE-AUTOMATION-FACTORY/`
+> completa); (2) il sistema di auto-miglioramento esiste ed è a 2 livelli — `self_improve.py`
+> (regole da `performance_logs.json`) + `meta_agent.py` (ricalibra `strategy_store.json` sui gate).
+>
+> **⚠️ Difetto segnalato, da decidere:** `apex7_orchestrator.py` Fasi 5-6 usano dati **hardcoded**
+> ("Come Installare Claude Code in Locale") invece dell'output reale delle phases precedenti — il
+> loop di auto-miglioramento impara sempre sullo stesso video finto. Vedi [CP-20260724-008](checkpoints/CP-20260724-008.md).
+>
+> **Trovato e salvato lavoro orfano** in `Outreach/preventa-maps-scraper` (4 file mai committati
+> da sessione precedente: Data-Validator-Gate + meta-optimizer wiring) → commit `802659d8`, pushato.
+
+---
 
 ## 🧭 2026-07-24 — RISTRUTTURAZIONE EMPIRE: brainstorming chiuso, 7 piani DA SCRIVERE — CP-20260724-002
 > **📌 LEGGERE PER PRIMO ALLA PROSSIMA SESSIONE:**

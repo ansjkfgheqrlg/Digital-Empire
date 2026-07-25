@@ -27,7 +27,6 @@ import sheets
 from event_bus import EventBus
 from memory import MemoryQueryInterface
 from gate_agent import GateAgent
-from meta_optimization import MetaOptimizer
 from agents import ScraperAgent, QualifierAgent, SheetsAgent, QAAgent, DebugAgent, Conductor
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s | %(levelname)s | %(message)s', datefmt='%H:%M:%S')
@@ -149,7 +148,6 @@ def main():
     memory = MemoryQueryInterface()
     gate_agent = GateAgent(memory, event_bus)
     qa_agent = QAAgent(gate_agent, event_bus)
-    meta_optimizer = MetaOptimizer(memory)
 
     from playwright.sync_api import sync_playwright
 
@@ -172,7 +170,7 @@ def main():
 
         # Istanziazione degli agenti
         scraper_agent = ScraperAgent(page, event_bus)
-        qualifier_agent = QualifierAgent(event_bus, gate_agent=gate_agent)
+        qualifier_agent = QualifierAgent(event_bus)
         debug_agent = DebugAgent(page, event_bus)
 
         sheets_agent = None
@@ -191,7 +189,6 @@ def main():
             qualifier_agent=qualifier_agent,
             sheets_agent=sheets_agent,
             qa_agent=qa_agent,
-            meta_optimizer=meta_optimizer,
             output_csv_path=args.output,
             only_alta=args.only_alta
         )

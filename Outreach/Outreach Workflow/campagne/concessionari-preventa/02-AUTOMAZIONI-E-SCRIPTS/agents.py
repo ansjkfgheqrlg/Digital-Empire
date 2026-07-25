@@ -16,7 +16,6 @@ from typing import List, Dict, Any, Optional
 from event_bus import EventBus, Event
 from memory import MemoryQueryInterface
 from gate_agent import GateAgent
-from meta_optimization import MetaOptimizer
 
 # Importa i moduli procedurali esistenti
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -60,22 +59,14 @@ class ScraperAgent:
 
 
 class QualifierAgent:
-    def __init__(self, event_bus: EventBus, gate_agent: Optional[GateAgent] = None):
+    def __init__(self, event_bus: EventBus):
         self.agent_id = "QualifierAgent-1"
         self.event_bus = event_bus
-        self.gate_agent = gate_agent
 
     def qualify_leads(self, leads: List[Dict[str, Any]], city: str) -> List[Dict[str, Any]]:
         log.info(f"🔍 [{self.agent_id}] Avvio qualifica in parallelo di {len(leads)} lead per la città: {city}")
         qualified = checker.qualify_leads_parallel(leads)
-
-        if self.gate_agent:
-            validated = [lead for lead in qualified if self.gate_agent.validate_lead(lead)["passed"]]
-            rejected_count = len(qualified) - len(validated)
-            if rejected_count:
-                log.info(f"🚫 [{self.agent_id}] GATE-1 Data-Validator ha scartato {rejected_count}/{len(qualified)} lead per {city}.")
-            qualified = validated
-
+            
         self.event_bus.publish("leads.qualified", self.agent_id, {
             "city": city,
             "leads": qualified,
@@ -261,9 +252,8 @@ class DebugAgent:
 
 class Conductor:
     def __init__(self, event_bus: EventBus, scraper_agent: ScraperAgent, qualifier_agent: QualifierAgent,
-                 sheets_agent: Optional[SheetsAgent], qa_agent: QAAgent, output_csv_path: str,
-                 writer_agent: Optional[WriterAgent] = None, sender_agent: Optional[SenderAgent] = None,
-                 meta_optimizer: Optional[MetaOptimizer] = None, only_alta: bool = False):
+                 writer_agent: WriterAgent, sender_agent: SenderAgent, sheets_agent: Optional[SheetsAgent], 
+                 qa_agent: QAAgent, output_csv_path: str, only_alta: bool = False):
         self.agent_id = "Conductor-1"
         self.event_bus = event_bus
         self.scraper_agent = scraper_agent
@@ -272,7 +262,6 @@ class Conductor:
         self.sender_agent = sender_agent
         self.sheets_agent = sheets_agent
         self.qa_agent = qa_agent
-        self.meta_optimizer = meta_optimizer
         self.output_csv_path = output_csv_path
         self.only_alta = only_alta
 
@@ -319,13 +308,8 @@ class Conductor:
             log.error(f"❌ [{self.agent_id}] Bloccato al Gate L3->L4. Termino qualifica per {city}.")
             return
 
-        # Avvio generazione messaggi / scrittura (Fase 3) — se writer/sender non configurati
-        # (es. run.py in modalità solo scraping+CSV+Sheets) si salta l'outreach e si salva direttamente.
-        if self.writer_agent and self.sender_agent:
-            self.writer_agent.generate_messages(leads, city)
-        else:
-            log.info(f"✉️ [{self.agent_id}] Nessun writer/sender configurato: salto la fase di outreach per {city} e salvo i lead qualificati.")
-            self._finalize_and_save(leads, city)
+        # Avvio generazione messaggi / scrittura (Fase 3)
+        self.writer_agent.generate_messages(leads, city)
 
     def on_messages_generated(self, event: Event):
         city = event.payload.get("city")
@@ -344,12 +328,10 @@ class Conductor:
     def on_messages_sent(self, event: Event):
         city = event.payload.get("city")
         messages = event.payload.get("messages", [])
-        self._finalize_and_save(messages, city)
 
-    def _finalize_and_save(self, rows: List[Dict[str, Any]], city: str):
         # Salvataggio CSV locale (Logica presa da run.py originale)
         import run
-        final_sorted, filtered_sorted = run.save_csv(rows, self.output_csv_path, only_alta=self.only_alta)
+        final_sorted, filtered_sorted = run.save_csv(messages, self.output_csv_path, only_alta=self.only_alta)
 
         # Validazione Gate L5->L6 (Salvataggio & CSV)
         csv_check_str = f"salvato {self.output_csv_path} con {len(final_sorted)} righe. only-alta: {self.only_alta}"
@@ -365,21 +347,11 @@ class Conductor:
 
     def on_sheets_synced(self, event: Event):
         city = event.payload.get("city")
-
+        
         # Validazione finale Gate L6->L7 (Fine E2E)
         if self.qa_agent.verify_gate("L6_L7", f"E2E completato per {city}"):
             self.event_bus.publish("run.completed", self.agent_id, {"city": city})
             log.info(f"🏆 [{self.agent_id}] WORKFLOW COMPLETATO CON SUCCESSO PER {city}!")
-
-            # Sistema di auto-miglioramento (APEX-7 Meta-Optimization Loop): ricalcola i success
-            # rate delle strategie di copywriting sui lead contattati e archivia quelle sotto soglia.
-            if self.meta_optimizer:
-                try:
-                    result = self.meta_optimizer.run_optimization_loop()
-                    self.event_bus.publish("meta.optimized", self.agent_id, result)
-                    log.info(f"📈 [{self.agent_id}] Ciclo di auto-miglioramento eseguito: {result.get('status')}")
-                except Exception as e:
-                    log.error(f"⚠️ [{self.agent_id}] Errore nel ciclo di meta-ottimizzazione: {e}")
         else:
             log.error(f"❌ [{self.agent_id}] Fallito il Gate L6->L7 alla fine della pipeline per {city}.")
 
