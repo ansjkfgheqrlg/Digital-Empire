@@ -1,0 +1,174 @@
+{
+  "name": "cc-master",
+  "version": "2.0.0",
+  "description": "CC-Master v2.0 — Master strategist ed esecutore esperto di Claude Code per Digital Empire. Crea skill, agenti e plugin, ottimizza ecosistemi CC, pianifica workflow complessi, gestisce contesto e MCP. Opera con framework OPDV e Knowledge Router modulare.",
+  "author": "Digital Empire",
+  "entry_point": "agents/cc-master.md",
+
+  "agents": [
+    {
+      "name": "cc-master",
+      "file": "agents/cc-master.md",
+      "description": "Master strategist e operativo Claude Code — si attiva per qualsiasi task CC",
+      "model": "opus",
+      "auto_load": true
+    }
+  ],
+
+  "skills": [
+    {
+      "name": "skill-forge",
+      "file": "skills/skill-forge.md",
+      "description": "Crea skill Claude Code complete e production-ready da zero",
+      "triggers": ["crea una skill", "voglio una skill", "nuova skill", "skill per fare"]
+    },
+    {
+      "name": "agent-forge",
+      "file": "skills/agent-forge.md",
+      "description": "Crea agenti Claude Code completi con frontmatter e system prompt",
+      "triggers": ["crea un agente", "nuovo agente", "agente per", "agente che fa"]
+    },
+    {
+      "name": "workflow-architect",
+      "file": "skills/workflow-architect.md",
+      "description": "Pianifica workflow complessi multi-step e multi-agente",
+      "triggers": ["workflow per", "architettura di", "pipeline", "automatizza processo"]
+    },
+    {
+      "name": "context-doctor",
+      "file": "skills/context-doctor.md",
+      "description": "Diagnostica e ottimizza il consumo di contesto in Claude Code",
+      "triggers": ["contesto pieno", "troppi token", "ottimizza contesto", "costa troppo"]
+    },
+    {
+      "name": "claude-md-builder",
+      "file": "skills/claude-md-builder.md",
+      "description": "Crea e ottimizza file CLAUDE.md al livello corretto",
+      "triggers": ["configura CLAUDE.md", "CLAUDE.md per il progetto", "regole progetto"]
+    },
+    {
+      "name": "system-auditor",
+      "file": "skills/system-auditor.md",
+      "description": "Audit completo dell'ecosistema Claude Code con report e raccomandazioni",
+      "triggers": ["audit del sistema", "analizza il mio setup", "check setup", "cosa posso migliorare"]
+    },
+    {
+      "name": "mcp-installer",
+      "file": "skills/mcp-installer.md",
+      "description": "Installa, configura e ottimizza MCP in Claude Code",
+      "triggers": ["installa MCP", "aggiungi MCP", "connetti Claude a", "strumento esterno per Claude"]
+    }
+  ],
+
+  "knowledge": [
+    {
+      "id": "K01",
+      "file": "knowledge/K01-fondamenta.md",
+      "topics": ["introduzione", "prezzi", "accesso", "documentazione"],
+      "chapters": "1-4",
+      "size_kb": 28
+    },
+    {
+      "id": "K02",
+      "file": "knowledge/K02-installazione.md",
+      "topics": ["installazione", "IDE", "terminal", "configurazione", "status line"],
+      "chapters": "5-8",
+      "size_kb": 39
+    },
+    {
+      "id": "K03",
+      "file": "knowledge/K03-progetti.md",
+      "topics": ["costruzione sito", "Task-Do-Verify", "screenshot loop", "app complessa"],
+      "chapters": "13-16",
+      "size_kb": 48
+    },
+    {
+      "id": "K04",
+      "file": "knowledge/K04-permessi.md",
+      "topics": ["permessi", "plan mode", "bypass permission", "autonomia"],
+      "chapters": "17-19",
+      "size_kb": 34
+    },
+    {
+      "id": "K05",
+      "file": "knowledge/K05-context.md",
+      "topics": ["contesto", "token", "autocompact", "primacy bias", "recency bias"],
+      "chapters": "20-23",
+      "size_kb": 67
+    },
+    {
+      "id": "K06",
+      "file": "knowledge/K06-sub-agenti.md",
+      "topics": ["sub-agenti", "researcher", "reviewer", "QA", "agent teams", "costi ROI"],
+      "chapters": "24-26",
+      "size_kb": 62
+    },
+    {
+      "id": "K07",
+      "file": "knowledge/K07-skill-system.md",
+      "topics": ["skill", "architettura skill", "marketplace", "reference data"],
+      "chapters": "27-30",
+      "size_kb": 53
+    },
+    {
+      "id": "K08",
+      "file": "knowledge/K08-mcp.md",
+      "topics": ["MCP", "model context protocol", "installazione MCP", "Chrome Dev Tool"],
+      "chapters": "31-34",
+      "size_kb": 39
+    },
+    {
+      "id": "K09",
+      "file": "knowledge/K09-avanzate.md",
+      "topics": ["hooks", "auto memory", "git worktrees", "deployment", "Modal", "Vercel"],
+      "chapters": "35-38",
+      "size_kb": 67
+    }
+  ],
+
+  "scripts": [
+    {
+      "name": "generate_skill",
+      "file": "scripts/generate_skill.py",
+      "description": "Genera scaffolding completo per una nuova skill",
+      "usage": "python generate_skill.py --name X --description Y --triggers Z [--has-scripts] [--output-path PATH]"
+    },
+    {
+      "name": "generate_agent",
+      "file": "scripts/generate_agent.py",
+      "description": "Genera scaffolding completo per un nuovo agente",
+      "usage": "python generate_agent.py --name X --domain Y --model Z [--color C] [--tools T] [--output-path PATH]"
+    },
+    {
+      "name": "context_calculator",
+      "file": "scripts/context_calculator.py",
+      "description": "Calcola consumo token per componente dell'ecosistema CC con soglie verde/giallo/rosso",
+      "usage": "python context_calculator.py [--claude-dir PATH] [--model sonnet|opus] [--show-breakdown]"
+    },
+    {
+      "name": "validate_structure",
+      "file": "scripts/validate_structure.py",
+      "description": "Valida struttura di skill, agenti e plugin con scoring e suggerimenti",
+      "usage": "python validate_structure.py --target PATH --type skill|agent|plugin [--strict] [--fix-suggestions]"
+    }
+  ],
+
+  "capabilities": [
+    "skill_creation",
+    "agent_creation",
+    "workflow_planning",
+    "context_optimization",
+    "claude_md_configuration",
+    "ecosystem_audit",
+    "mcp_installation",
+    "knowledge_routing"
+  ],
+
+  "settings": {
+    "knowledge_routing": true,
+    "lazy_kb_loading": true,
+    "require_plan_before_execute": true,
+    "default_kb_module": "K01",
+    "framework": "OPDV"
+  }
+}

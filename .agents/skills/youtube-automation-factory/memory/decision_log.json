@@ -1,0 +1,37 @@
+[
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260723-154010-712ce5",
+    "decision": "Selezione nicchia AI/Claude IT",
+    "reason": "Metriche storiche di views/ora stabili e alta replicabilità con Fliki.",
+    "alternatives_rejected": [
+      "Nicchia Finanza Personale",
+      "Nicchia Gaming"
+    ],
+    "confidence": 0.92,
+    "timestamp": "2026-07-23T15:40:10.726154"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260723-154019-430bde",
+    "decision": "Selezione nicchia AI/Claude IT",
+    "reason": "Metriche storiche di views/ora stabili e alta replicabilità con Fliki.",
+    "alternatives_rejected": [
+      "Nicchia Finanza Personale",
+      "Nicchia Gaming"
+    ],
+    "confidence": 0.92,
+    "timestamp": "2026-07-23T15:40:19.331621"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260723-154019-430bde",
+    "decision": "Scelta video target: Installare Claude Code locale",
+    "reason": "Opzione A-upside preferita: SEO molto scarsa dell'originale permette di superarlo facilmente implementando best-practice SEO.",
+    "alternatives_rejected": [
+      "Prompt Engineering per Agent Swarm"
+    ],
+    "confidence": 0.88,
+    "timestamp": "2026-07-23T15:40:19.472027"
+  }
+]
