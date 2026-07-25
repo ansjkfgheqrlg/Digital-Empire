@@ -6,7 +6,7 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 ---
 
 # 📊 DASHBOARD OPERATIVA — Digital Empire
-> Generato automaticamente il: **2026-07-24 14:55:33**
+> Generato automaticamente il: **2026-07-25 08:30:26**
 
 ---
 
@@ -53,7 +53,7 @@ Governo: company/Mandato/MANDATO-EMPIRE.md
 | KPI | Valore | Stato | Responsabile | Soglia Good |
 |---|---|---|---|---|
 | Anticipi Chiusi | `0` | 🔴 | MAX | `>= 5` |
-| Veto Scaduto | `2 su 3 attive per veto scaduto` | ⚪ | CLAUDE | `-` |
+| Veto Scaduto | `3 su 3 attive per veto scaduto` | ⚪ | CLAUDE | `-` |
 
 ---
 

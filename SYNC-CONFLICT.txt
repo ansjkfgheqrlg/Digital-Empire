@@ -1,17 +1,5 @@
-[2026-07-24 09:21:23] CONFLITTO DI SYNC
-Pull --rebase fallito: Auto-merging WORKFLOW-ESTATE/06-DASHBOARD-E-METRICHE/DASHBOARD.md CONFLICT (content): Merge conflict in WORKFLOW-ESTATE/06-DASHBOARD-E-METRICHE/DASHBOARD.md Auto-merging WORKFLOW-ESTATE/07-VIDEO-RUN/run-2026-07-23-001/05-STATO.md CONFLICT (content): Merge conflict in WORKFLOW-ESTATE/07-VIDEO-RUN/run-2026-07-23-001/05-STATO.md Auto-merging company/Memory/INDEX.md CONFLICT (content): Merge conflict in company/Memory/INDEX.md Auto-merging company/Memory/checkpoints/CP-20260724-001.md CONFLICT (add/add): Merge conflict in company/Memory/checkpoints/CP-20260724-001.md
+﻿[2026-07-24 15:09:51] CONFLITTO DI SYNC
+Rebase pre-push fallito: 
 Il tuo lavoro e' al sicuro (committato in locale).
 Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
 Poi cancella questo file.
-
-[2026-07-24, sessione successiva] RISOLTO.
-Il rebase precedente era stato abortito due volte e poi un `git reset` aveva riportato le
-modifiche locali (Gael, checkpoint CP-20260724-002 orfano) in working tree senza commit,
-rischiando di perderle. Recuperate e ricommittate, poi fatto un merge (non rebase) con
-origin/main invece del rebase che falliva sistematicamente.
-Conflitti risolti: DASHBOARD.md (tenuto timestamp piu' recente) · 05-STATO.md (tenuta versione
-origin con log di render reale) · INDEX.md (deduplicata la lista checkpoint, che su origin era
-raddoppiata per intero; unite le voci mancanti da entrambe le copie) · CP-20260724-001.md e
-CP-20260724-002.md (collisione di numerazione tra sessioni Gael/Claude parallele: tenuti i
-numeri di origin, le voci locali rinumerate CP-20260724-004 e CP-20260724-005).
-Nessun lavoro perso. File da cancellare dopo la verifica di Max.

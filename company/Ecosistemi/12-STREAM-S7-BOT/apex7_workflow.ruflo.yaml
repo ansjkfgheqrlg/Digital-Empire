@@ -1,0 +1,190 @@
+# =============================================================================
+# APEX-7 — configurazione del workflow su RuFLO (github.com/ruvnet/ruflo)
+#
+# Questo file e' la mappatura concreta tra le primitive di RuFLO e i componenti
+# APEX-7. Finche' RuFLO non e' installato, ruflo_adapter.py legge questo file
+# ed esegue lo stesso grafo con l'Event Bus interno: la configurazione resta
+# una sola, cambia solo chi la esegue.
+# =============================================================================
+
+workflow:
+  name: apex7_main
+  version: "7.0.0"
+  engine: ruflo
+  description: >
+    Sette livelli, sei gate. Nessun livello avanza senza il PASS del suo gate.
+
+# --- MAPPATURA: primitiva RuFLO -> componente APEX-7 ------------------------
+mapping:
+  - ruflo: ruflo.WorkflowEngine
+    apex7: orchestrator.Orchestrator
+    uso: Esegue il grafo delle fasi e tiene lo stato dei task
+  - ruflo: ruflo.AgentRuntime
+    apex7: worker_agent.WorkerAgent
+    uso: Istanzia e governa il ciclo di vita di ogni agente dello swarm
+  - ruflo: ruflo.TaskGraph
+    apex7: orchestrator.Orchestrator.active_tasks
+    uso: Il piano come grafo di task con dipendenze
+  - ruflo: ruflo.Router
+    apex7: gate_agent.GateAgent
+    uso: Le condizioni di instradamento sono i Quality Gate
+  - ruflo: ruflo.PluginSystem
+    apex7: [memory_interface.MemoryInterface, event_bus.EventBus]
+    uso: Memoria ed Event Bus entrano come plugin, non come fork del motore
+
+# --- AGENTI ----------------------------------------------------------------
+agents:
+  planner:
+    runtime: ruflo.AgentRuntime
+    prompt_template: prompts/planner.txt
+    max_tokens: 2000
+    timeout_ms: 30000
+    memory_access: [READ_ALL, WRITE_DECISION]
+    subscribes: [task.created]
+    publishes: [task.decomposed]
+
+  writer:
+    runtime: ruflo.AgentRuntime
+    prompt_template: prompts/writer.txt
+    max_tokens: 4000
+    timeout_ms: 45000
+    memory_access: [READ_STRATEGY, READ_WORKING, WRITE_WORKING]
+    subscribes: [task.decomposed]
+    publishes: [task.completed, task.failed]
+
+  analyst:
+    runtime: ruflo.AgentRuntime
+    parallel_with: [writer]
+    prompt_template: prompts/analyst.txt
+    max_tokens: 2000
+    timeout_ms: 30000
+    memory_access: [READ_ALL]
+    subscribes: [task.decomposed]
+    publishes: [task.completed, task.failed]
+
+  critic:
+    runtime: ruflo.AgentRuntime
+    prompt_template: prompts/critic.txt
+    max_tokens: 1500
+    timeout_ms: 20000
+    memory_access: [READ_STRATEGY, READ_DECISION]
+    subscribes: [task.completed]
+    publishes: [gate.check.requested]
+
+  refiner:
+    runtime: ruflo.AgentRuntime
+    prompt_template: prompts/refiner.txt
+    max_tokens: 4000
+    timeout_ms: 45000
+    memory_access: [READ_ALL, WRITE_WORKING]
+    subscribes: [gate.failed]
+    publishes: [task.completed]
+
+  gate_agent:
+    runtime: ruflo.AgentRuntime
+    prompt_template: prompts/gate.txt
+    max_tokens: 1000
+    timeout_ms: 15000
+    memory_access: [READ_ALL, WRITE_DECISION]
+    subscribes: [gate.check.requested]
+    publishes: [gate.passed, gate.failed, gate.escalated]
+    instances: 2          # due ispettori: i gate lunghi non fanno coda
+
+  meta_agent:
+    runtime: ruflo.AgentRuntime
+    observes: [ALL]
+    prompt_template: prompts/meta.txt
+    max_tokens: 2000
+    timeout_ms: 60000
+    memory_access: [READ_ALL, WRITE_ALL]
+    subscribes: [task.escalated, gate.escalated, task.failed, task.completed, agent.spawned]
+    publishes: [memory.pattern.detected, agent.spawned, gate.check.requested]
+
+# --- GRAFO DI ESECUZIONE ---------------------------------------------------
+task_graph:
+  execution_mode: parallel_where_possible
+  max_parallel_agents: 4
+  max_agents_total: 12          # combacia con MAX_AGENTS in meta_agent.py
+  checkpoint_every: 2           # ogni 2 fasi la memoria va su disco
+  rollback_on_failure: true
+  max_remediation_iterations: 3 # oltre il terzo giro si escala, non si ripete
+
+# --- ROUTING: i gate sono le condizioni ------------------------------------
+routing:
+  engine: ruflo.Router
+  rules:
+    - from: L1
+      to: L2
+      gate: L1_TO_L2
+      threshold: 1.00
+      on_fail: REMEDIATE
+      on_third_fail: ESCALATE
+    - from: L2
+      to: L3
+      gate: L2_TO_L3
+      threshold: 0.80
+      on_fail: REMEDIATE
+      on_third_fail: ESCALATE
+    - from: L3
+      to: L4
+      gate: L3_TO_L4
+      threshold: 0.833
+      on_fail: REMEDIATE
+      on_third_fail: ESCALATE
+    - from: L4
+      to: L5
+      gate: L4_TO_L5
+      threshold: 0.80
+      on_fail: REMEDIATE
+      on_third_fail: ESCALATE
+    - from: L5
+      to: L6
+      gate: L5_TO_L6
+      threshold: 1.00
+      on_fail: FREEZE           # safety critical: non si riprova alla cieca
+      on_third_fail: HUMAN
+    - from: L6
+      to: L7
+      gate: L6_TO_L7
+      threshold: 1.00
+      on_fail: FREEZE
+      on_third_fail: HUMAN
+
+# --- BUS -------------------------------------------------------------------
+event_bus:
+  priorities: [P0, P1, P2, P3]
+  retry_policy:
+    P0: {delay_s: 1,  max_retries: 10, on_exhausted: ALERT}
+    P1: {delay_s: 5,  max_retries: 5,  on_exhausted: DLQ}
+    P2: {delay_s: 30, max_retries: 3,  on_exhausted: DLQ}
+    P3: {delay_s: 60, max_retries: 1,  on_exhausted: DROP}
+  dead_letter_queue: true
+  replay: true
+
+# --- MEMORIA ---------------------------------------------------------------
+memory:
+  layers: [strategies, decisions, knowledge, gate_reports, metrics, patterns]
+  write_lock_timeout_ms: 100
+  duplicate_threshold: 0.95
+  decision_similarity_threshold: 0.75
+  min_uses_for_ranking: 3
+  stale_after_days: 90
+  persist_path: memory_store.json
+
+# --- PLUGIN ----------------------------------------------------------------
+plugins:
+  - name: apex7_memory_plugin
+    module: memory_interface
+    entrypoint: global_memory
+  - name: apex7_event_bus_plugin
+    module: event_bus
+    entrypoint: global_bus
+  - name: apex7_gate_plugin
+    module: gate_agent
+    entrypoint: gate_1
+
+# --- LIMITI NON NEGOZIABILI ------------------------------------------------
+safety:
+  human_override: always_available
+  irreversible_changes: refused_by_default   # le decide Max, non il sistema
+  live_trading: requires_gate_L5_pass
