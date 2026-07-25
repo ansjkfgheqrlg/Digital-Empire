@@ -122,3 +122,7 @@ empire/.data/
 empire/.cache/
 **/__pycache__/
 *.egg-info/
+
+# --- YOUTUBE AUTOMATION RUNTIME ARTIFACTS ---
+YOUTUBE-AUTOMATION-FACTORY/memory/runs/
+YOUTUBE-AUTOMATION-FACTORY/memory/decisions/

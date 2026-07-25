@@ -1,7 +1,7 @@
 # YouTube Automation Factory - Performance Dashboard
 
-- **Ultimo Run ID**: yt-run-20260725-084555
-- **Data Aggiornamento**: 2026-07-25 08:45:56
+- **Ultimo Run ID**: yt-run-20260725-085030
+- **Data Aggiornamento**: 2026-07-25 08:50:30
 - **Canale Target**: Dose Mentale ([@dosementale](https://www.youtube.com/@dosementale))
 - **Stato Fabbrica**: 🟢 OPERATIVA / APEX-7 COMPLIANT
 
@@ -16,6 +16,6 @@
 | F6 | Audit | Completato | 🟢 PASS | Auto-Miglioramento |
 
 ## 🧠 Regole Apprese & Ottimizzazioni (Meta-Agent)
-- **Colli di Bottiglia Rilevati**: {'L3_L4': 9}
+- **Colli di Bottiglia Rilevati**: {}
 - **Strategie Ottimizzate**: 3 aggiornate in `strategy_store.json`
 - **Stato Regole**: 🛡️ Blacklist e soglie caricate dinamicamente in `learned_rules.json`.
