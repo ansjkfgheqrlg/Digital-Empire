@@ -1,4 +1,32 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: Estate=cervello · preventa-agents verificato · APEX-7 Level 2 · agenti PEZZO 2)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Arena: dossier 26 contratto+8 prompt · Claude: Estate=cervello · preventa-agents verificato · APEX-7 Level 2 · agenti PEZZO 2)
+
+## 🎯 2026-07-27 — ARENA: CONTRATTO OPERATIVO + ARSENALE 8 PROMPT — CP-20260727-006
+Max ha chiesto ad Arena quali task fare lui e Gael e cosa si può costruire insieme, ponendo un vincolo
+esplicito: **Arena non costruisce, dà prompt ampi + indicazioni.** Accettato e formalizzato in
+`PIANO-MAESTRO/26-ARENA-COSA-COSTRUIAMO-INSIEME.md` (additivo, nessun file esistente modificato).
+
+**Contenuto:** contratto di ruolo (Arena = progettazione e **review indipendente**, il passo 6 del ciclo
+ADR-006 che oggi manca perché build e review cadono sulla stessa sessione) · task board 27/07–02/08 diviso
+Max/Gael/Arena · **8 prompt ampi** in 3 blocchi: **A-cassa** (P1 run outbound reale, P2 lista dogfooding
+ticket €5-15k, P3 war-room 6 metriche, P4 kit vendita+demo+proposta), **B-macchine** (P5 scraper APEX-7,
+P6 YouTube end-to-end modello autorità, P7 batch 15 agenti operativi), **C-leva** (P8 autopsia settimanale).
+Ogni prompt porta in coda: checkpoint via runtime + STATO-EMPIRE + conform + push, e autocritica obbligatoria.
+
+**🚨 Diagnosi centrale (la parte che conta):** non manca niente da costruire, **manca di far girare.**
+`G-A4` (run outbound reale Verona/Padova/Vicenza) è segnato **SBLOCCATO dal 23/07** nel dossier 25; oggi 27/07
+è ancora "sbloccato", non "completo". Quattro giorni in cui si sono chiusi refactoring e APEX-7 Level 2 —
+tutto buono, tutto a valle di **zero euro**. L'autocritica del dossier 24 diceva già "ancora nessun euro
+incassato": è ancora vera. Da qui l'ordine **vincolante** dei blocchi (70% del tempo su A) e la domanda
+secca di P8: *cosa abbiamo costruito che non ha prodotto un euro?*
+
+**Verifiche:** path controllati sul disco prima di citarli · `python -m empire links` → il dossier 26 aggiunge
+**0 finding** (i 2 BLOCK residui sono preesistenti: `RISTRUTTURAZIONE-01/02` puntano a una cartella `sessions`
+inesistente) · nessuna credenziale toccata.
+
+**▶️ RIPRESA DA:** **Max** → M-A1 (ok tetto invii 20/giorno) + M-A2 (materiale prova Novacar).
+**Gael** → lancia **P1** (20 email reali partite). Nient'altro prima di quello.
+
+---
 
 ## 🧠 2026-07-27 — WORKFLOW ESTATE = CERVELLO, NON MUSCOLO — CP-20260727-005
 Max ha chiarito la natura dell'estate: **decisionale/strategico, non operativo.** Decide, orchestra,
