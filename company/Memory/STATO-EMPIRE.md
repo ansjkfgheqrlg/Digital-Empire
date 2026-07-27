@@ -1,5 +1,29 @@
 # STATO EMPIRE -- aggiornato 2026-07-27 (Arena: AUTOPSIA — 0 euro, 2 contatti, 508 email ferme · sito ripulito dai claim inventati · kit vendita 5-15k)
 
+## ✅ 2026-07-27 — SESSIONE ARENA CHIUSA — SESS-20260727-001
+Quattro blocchi consegnati e pushati (`0142f640`), tutti additivi tranne la pulizia sito autorizzata:
+
+| CP | Cosa |
+|---|---|
+| [CP-006](checkpoints/CP-20260727-006.md) | **Dossier 26** — contratto Arena (progetta + review indipendente, non costruisce) + 8 prompt ampi |
+| [CP-007](checkpoints/CP-20260727-007.md) | **Kit vendita €5-15k** (P4) — caso studio + script demo 30' + proposta + autocritica |
+| [CP-008](checkpoints/CP-20260727-008.md) | **Sito ripulito** (3 testimonianze inesistenti + 7 claim) **+ Autopsia P8** (dossier 27) |
+
+**Metodo:** checkpoint scritti solo con `empire mem write` (regola B-009), CRLF preservati,
+`empire links` → 0 finding introdotti, `node_modules` non finito nel repo, working tree pulito.
+
+### ▶️ RIPRESA DA — nessun lavoro tecnico aperto. Aperte solo 3 azioni umane:
+1. **MAX** → mandare le **508 email già pronte** (rampa 20→30→50→80/giorno) + **telefonata a Novacar**
+   per la testimonianza. *Venerdì i contatti non devono essere 2: sotto 100 = settimana fallita.*
+2. **GAEL** → ⛔ **costruzione congelata**: solo far girare l'invio + cruscotto giornaliero.
+3. **ARENA** → nessun dossier nuovo; venerdì **31/07** rifa' il conto. *Riuscita = il dossier 28 non esiste.*
+
+**Decisione ancora aperta per Max:** la garanzia in `agency-empire/src/sections/12-garanzia.tsx`
+("1 risultato misurabile") è mal calibrata — il risultato garantito dovrebbe essere un **output del
+sistema** (email mandate, documenti prodotti), non un **esito di mercato** (lead generati).
+
+---
+
 ## 🚨 2026-07-27 — AUTOPSIA SETTIMANA (P8) + SITO RIPULITO — CP-20260727-008
 
 ### La settimana in 3 numeri (contati sui file, non stimati)
