@@ -1,5 +1,5 @@
 # 📊 STATO AGENTI — quanto sono OPERATIVI (non solo scritti)
-> Generato da `empire forge scan` · 2026-07-27T08:21+02:00
+> Generato da `empire forge scan` · 2026-07-27T14:27+02:00
 > Un agente OPERATIVO ha: id, ruolo unico, input, **output** (cosa produce), criterio di
 > successo, e istruzioni eseguibili. Uno DOCUMENTALE e' solo una scheda che non lavora.
 
@@ -7,20 +7,20 @@
 
 | Stato | Agenti | % |
 |---|---|---|
-| OPERATIVO | 57 | 13.1% |
-| PARZIALE | 324 | 74.5% |
+| OPERATIVO | 58 | 13.3% |
+| PARZIALE | 324 | 74.3% |
 | DOCUMENTALE | 54 | 12.4% |
 
-**Totale agenti reali:** 435
+**Totale agenti reali:** 436
 
 ## Prossimi da rendere operativi (i piu' gravi per primi)
 
-- **AGENTE-ANDREI-PASCU-MINER** — 0.0/10 [DOCUMENTALE] · manca: identita, ruolo, ingresso, uscita, successo, comportamento
 - **memory** — 0.0/10 [DOCUMENTALE] · manca: identita, ruolo, ingresso, uscita, successo, comportamento
 - **system-prompt** — 0.0/10 [DOCUMENTALE] · manca: identita, ruolo, ingresso, uscita, successo, comportamento
 - **tools** — 0.0/10 [DOCUMENTALE] · manca: identita, ruolo, ingresso, uscita, successo, comportamento
 - **tools** — 0.0/10 [DOCUMENTALE] · manca: identita, ruolo, ingresso, uscita, successo, comportamento
 - **PERFORMANCE-CELL** — 1.7/10 [DOCUMENTALE] · manca: identita, ruolo, ingresso, uscita, comportamento
+- **STATO-AGENTI** — 1.7/10 [DOCUMENTALE] · manca: identita, ruolo, ingresso, successo, comportamento
 - **memory** — 1.7/10 [DOCUMENTALE] · manca: identita, ruolo, ingresso, uscita, comportamento
 - **A6-objections-handler** — 3.3/10 [DOCUMENTALE] · manca: identita, uscita, successo, comportamento
 - **AD3-media-buyer** — 3.3/10 [DOCUMENTALE] · manca: identita, uscita, successo, comportamento
@@ -34,6 +34,7 @@
 ## Gia' operativi
 
 - A1-briefing-analyst — 10.0/10
+- AGENTE-ANDREI-PASCU-MINER — 10.0/10
 - AGENTE-CLOSER-A8 — 10.0/10
 - AGENTE-CRO-COPY-ARCHITECT — 10.0/10
 - ad-qa-ads-verifier — 10.0/10
@@ -72,7 +73,6 @@
 - cmo-audience-intel — 10.0/10
 - cro-agency-pipeline — 10.0/10
 - cro-conductor — 10.0/10
-- cro-deal-desk — 10.0/10
 
 ---
 ⛓️ report rigenerato a ogni `forge scan --salva`

@@ -1,4 +1,20 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: Estate=cervello · preventa-agents verificato · APEX-7 Level 2 · agenti PEZZO 2)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: agenti PEZZO 3 · Estate=cervello · preventa-agents verificato)
+
+## 🔧 2026-07-27 — AGENTI OPERATIVI PEZZO 3: ANDREI-PASCU-MINER — CP-20260727-006
+Promosso 0→10/10 (competitor intelligence, alimenta S5 YouTube). Dati **reali** dal playbook
+collegato (9 principi, 8-step didattico, AP VIDEO SYSTEM 0-15min, gate APSOC ≥23/25), non inventati.
+Guardia anti-invenzione: pattern non visto su frame reali = `DA VERIFICARE`. Additivo (7→131 righe).
+**I 3 agenti-ruolo di `03-AGENTI-E-RUOLI` ora tutti operativi** (A8-Closer, CRO-COPY, ANDREI).
+```
+435 agenti reali:  58 OPERATIVO (13.3%) · 324 PARZIALE · 54 DOCUMENTALE
+```
+Report visibile aggiornato: `03-AGENTI-E-RUOLI/STATO-AGENTI.md`.
+**Difetto 5ª volta:** percorsi relativi in backtick rompono conform → **regola: sempre completi
+dalla root** (candidato a controllo pre-commit).
+**RIPRESA DA:** PEZZO 4 — DOCUMENTALE degli altri ecosistemi via `empire forge prossimo` (escludendo
+i profili soci AGENTE-CLAUDE/GAEL/MAX). Ogni agente = fase = checkpoint+commit+push.
+
+---
 
 ## 🧠 2026-07-27 — WORKFLOW ESTATE = CERVELLO, NON MUSCOLO — CP-20260727-005
 Max ha chiarito la natura dell'estate: **decisionale/strategico, non operativo.** Decide, orchestra,

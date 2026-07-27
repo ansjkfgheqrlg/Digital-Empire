@@ -7,8 +7,11 @@ sistema sbaglia. Un test che non puo' fallire non dimostra niente.
 Esecuzione:  python test_apex7.py
 """
 
+import csv
 import os
+import random
 import sys
+from datetime import datetime
 
 from event_bus import global_bus, EVENT_CATALOG, RETRY_POLICY
 from memory_interface import global_memory
@@ -18,6 +21,9 @@ from worker_agent import WorkerAgent, analyst_worker
 from orchestrator import ad_orchestrator
 from meta_agent import director_meta, MAX_AGENTS
 from ruflo_adapter import adapter
+from analysis_engine import AnalysisEngine
+from risk_manager import RiskManager
+from execution_engine import ExecutionEngine
 
 SRC = os.path.dirname(os.path.abspath(__file__))
 failures = []
@@ -284,8 +290,101 @@ def test_ruflo():
 
 
 # =========================================================================== #
+def test_stream_s7_loop():
+    section("8. STREAM S7 — loop reale dati -> analisi -> rischio -> esecuzione -> memoria")
+
+    random.seed(7)  # determinismo: _simulate_transaction tira a sorte sullo slippage
+
+    log_file = "test_paper_trade_log.csv"
+    if os.path.exists(log_file):
+        os.remove(log_file)
+
+    analysis = AnalysisEngine(agent_id="TEST-ANALYST")
+    risk = RiskManager(base_bankroll=10.0, max_position_pct=5.0, log_file=log_file, agent_id="TEST-RISK")
+    execution = ExecutionEngine(mode="SIMULATION", agent_id="TEST-EXEC", log_file=log_file)
+
+    threshold_before = analysis.spike_threshold_sol
+    approved, rejected = [], []
+    global_bus.subscribe("risk.trade_approved", lambda e: approved.append(e), subscriber_id="test.approved")
+    global_bus.subscribe("risk.trade_rejected", lambda e: rejected.append(e), subscriber_id="test.rejected")
+
+    try:
+        for i in range(6):
+            raw_event = {"params": {"result": {"value": {
+                "signature": f"test-sig-{i}",
+                "logs": ["Program log: Instruction: Buy", f"Amount: {150 + i * 10} SOL"],
+            }}}}
+            global_bus.publish("data.raw_event_received", raw_event)
+
+        check("Il Risk Manager e' nel percorso e approva trade reali",
+              len(approved) > 0, f"{len(approved)} approvati, {len(rejected)} rifiutati")
+        check("Il capitale eseguito e' quello approvato dal rischio, non un 1.0 fisso",
+              bool(approved) and approved[0]["payload"]["allocated_capital"] == 10.0 * 5.0 / 100.0,
+              f"atteso 0.5, approvato {approved[0]['payload']['allocated_capital'] if approved else None}")
+
+        outcomes = [r for r in global_memory.storage.get("metrics", [])
+                    if isinstance(r["content"], dict) and r["content"].get("kind") == "trade_outcome"
+                    and r["author_agent"] == "TEST-EXEC"]
+        # La memoria scarta i duplicati esatti (due successi con stesso costo e stesso
+        # slippage sono la stessa informazione, vedi DUPLICATE_THRESHOLD): i tentativi
+        # ripetuti alzano access_count invece di moltiplicare i record. Il conteggio
+        # giusto da verificare non e' "un record per trade" ma "nessun tentativo perso".
+        represented = sum(1 + r.get("access_count", 0) for r in outcomes)
+        strategies = [r["content"] for r in global_memory.storage.get("strategies", [])
+                      if isinstance(r["content"], dict) and r["content"].get("name") == "volume_spike_v1"]
+        times_used = strategies[-1]["times_used"] if strategies else 0
+        check("Ogni trade chiuso lascia traccia in memoria, nessun tentativo perso",
+              len(outcomes) >= 1 and represented == len(approved) == times_used,
+              f"{len(outcomes)} record distinti rappresentano {represented} trade "
+              f"({len(approved)} approvati, strategia times_used={times_used})")
+
+        threshold_after = analysis.spike_threshold_sol
+        adjustments = [r for r in global_memory.storage.get("metrics", [])
+                       if isinstance(r["content"], dict) and r["content"].get("kind") == "threshold_adjustment"
+                       and r["author_agent"] == "TEST-ANALYST"]
+        check("La soglia si ricalibra sull'esito reale dei trade (feedback loop chiuso)",
+              len(adjustments) > 0, f"{threshold_before} -> {threshold_after} SOL, {len(adjustments)} ricalibrazioni")
+
+        # Drawdown reale: scrivo perdite nel log e verifico che il kill-switch scatti da solo
+        with open(log_file, "a", newline="") as f:
+            w = csv.writer(f)
+            for _ in range(3):
+                w.writerow([datetime.now().isoformat(), "BUY", "tok-drawdown", 3.0, 0.000005, 0.001, 3.0, 50, "SUCCESS"])
+        healthy = risk.check_portfolio_health()
+        check("Il kill-switch si attiva da solo sopra la soglia di drawdown",
+              risk.is_kill_switch_active and not healthy,
+              f"drawdown attivo={risk.is_kill_switch_active}")
+
+        global_bus.publish("analysis.signal_detected",
+                           {"action": "BUY", "token_address": "x", "strategy": "volume_spike_v1"})
+        check("Con kill-switch attivo un nuovo segnale viene rifiutato, non eseguito",
+              bool(rejected) and rejected[-1]["payload"]["reason"] == "kill_switch")
+
+    finally:
+        global_bus.unsubscribe("risk.trade_approved", "test.approved")
+        global_bus.unsubscribe("risk.trade_rejected", "test.rejected")
+        if os.path.exists(log_file):
+            os.remove(log_file)
+
+    # Il gate L2->L3 valuta il loop appena eseguito con dati veri, non testo
+    report = gate_1.evaluate(
+        gate_id="GATE-L2-STREAM-S7", formal_gate_id="L2_TO_L3",
+        criteria=GATE_DEFINITIONS["L2_TO_L3"]["criteria"],
+        output_to_check="loop adattivo stream s7",
+        threshold=get_threshold("L2_TO_L3"), timeout_s=90, gate_history=[], attempt=1,
+    )
+    gate_1.reset()
+    print(f"      Verdetto L2->L3 sul loop reale: {report['result']} "
+          f"({report['criteria_passed']}/{report['criteria_total']}, score {report['score']})")
+    for r in report["criteria_results"]:
+        print(f"        {r['criterion']} {r['status']}: {r['evidence'][:100]}")
+    check("Il gate L2->L3 valuta il loop del bot con dati reali e passa", report["result"] == "PASSED",
+          f"score {report['score']}")
+
+
+# =========================================================================== #
 def test_apex_gate():
-    section("8. GATE FINALE L6->L7 — il sistema giudica se stesso")
+    section("9. GATE FINALE L6->L7 — il sistema giudica se stesso")
 
     ad_orchestrator._record_metric("current", 1500, "TASK-APEX")
 
@@ -320,6 +419,7 @@ if __name__ == "__main__":
     test_full_cycle()
     test_escalation_and_override()
     test_ruflo()
+    test_stream_s7_loop()
     apex = test_apex_gate()
 
     section("RIEPILOGO")

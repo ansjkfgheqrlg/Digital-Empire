@@ -18,10 +18,11 @@ class ExecutionEngine:
     approvato. Un segnale senza approvazione del rischio non arriva qui.
     """
 
-    def __init__(self, mode: str = "SIMULATION", agent_id="EXECUTION-ENGINE-1"):
+    def __init__(self, mode: str = "SIMULATION", agent_id="EXECUTION-ENGINE-1",
+                 log_file: str = "paper_trade_log.csv"):
         self.agent_id = agent_id
         self.mode = mode
-        self.log_file = "paper_trade_log.csv"
+        self.log_file = log_file
         self._init_log_file()
 
         global_bus.subscribe("risk.trade_approved", self.handle_approved_trade,
