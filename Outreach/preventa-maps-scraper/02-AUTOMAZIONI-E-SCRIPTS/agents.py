@@ -13,9 +13,11 @@ ARCHITETTURA:
 """
 from __future__ import annotations
 
+import importlib.util
 import logging
 import sys
 import os
+from pathlib import Path
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 
@@ -24,19 +26,29 @@ from memory import MemoryQueryInterface
 from gate_agent import GateAgent
 from meta_optimization import MetaOptimizer
 
-# Aggiunge la directory degli agenti ufficiali al path
-_AGENTS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../03-AGENTI-E-RUOLI"))
-if _AGENTS_DIR not in sys.path:
-    sys.path.insert(0, _AGENTS_DIR)
+# Directory degli agenti ufficiali (pattern cartella-per-agente, es. 03-AGENTI-E-RUOLI/writer/agente.py)
+_AGENTS_DIR = Path(os.path.dirname(__file__)).parent / "03-AGENTI-E-RUOLI"
 
-# --- Import delle implementazioni ufficiali da 03-AGENTI-E-RUOLI ---
-from agente_scraper import ScraperAgent  # noqa: E402
-from agente_qualificatore import QualifierAgent  # noqa: E402
-from agente_writer import WriterAgent  # noqa: E402
-from agente_sender import SenderAgent  # noqa: E402
-from agente_responder import ResponderAgent  # noqa: E402
-from agente_integratore_sheets import SheetsAgent  # noqa: E402
-from agente_gate import GateAgent as OfficialGateAgent  # noqa: E402
+
+def _load_agente(folder_name: str, module_name: str):
+    """Carica <folder_name>/agente.py come modulo con nome unico (evita collisioni: ogni
+    cartella ha un file chiamato identicamente 'agente.py')."""
+    path = _AGENTS_DIR / folder_name / "agente.py"
+    spec = importlib.util.spec_from_file_location(module_name, path)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[module_name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+# --- Import delle implementazioni ufficiali da 03-AGENTI-E-RUOLI (cartella-per-agente) ---
+ScraperAgent = _load_agente("scraper", "agente_scraper").ScraperAgent
+QualifierAgent = _load_agente("qualificatore", "agente_qualificatore").QualifierAgent
+WriterAgent = _load_agente("writer", "agente_writer").WriterAgent
+SenderAgent = _load_agente("sender", "agente_sender").SenderAgent
+ResponderAgent = _load_agente("responder", "agente_responder").ResponderAgent
+SheetsAgent = _load_agente("integratore-sheets", "agente_integratore_sheets").SheetsAgent
+OfficialGateAgent = _load_agente("gate", "agente_gate").GateAgent
 
 log = logging.getLogger("preventa-pw.agents")
 
