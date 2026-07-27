@@ -10,6 +10,7 @@ Governo: ADR-008 / MANDATO Art.8
 """
 from __future__ import annotations
 import os
+import re
 import sys
 import json
 import uuid
@@ -35,6 +36,52 @@ TEMPLATES_DIR = os.path.join(FACTORY_DIR, "05-TEMPLATES-E-KIT")
 os.makedirs(RUNS_DIR, exist_ok=True)
 os.makedirs(DECIS_DIR, exist_ok=True)
 os.makedirs(TEMPLATES_DIR, exist_ok=True)
+
+# --- Dati REALI di niche-scout (Gemini, WORKFLOW-ESTATE) — Fase 1 ---
+# Vedi WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/LEGGIMI.md:
+# questo pacchetto sostituisce lo scouting a freddo con una mappa reale di 20 canali italiani.
+NICHE_SCOUT_DIR = os.path.abspath(os.path.join(FACTORY_DIR, "..", "WORKFLOW-ESTATE", "04-SKILLS-E-REFERENCE", "youtube-niche-scout-analysis"))
+MAPPA_CANALI_PATH = os.path.join(NICHE_SCOUT_DIR, "01_MAPPA_CANALI.md")
+
+# Tier di opportunità per il Manuale Claude Code, dalla sezione "Analisi e Clusterizzazione dei
+# Formati" di 01_MAPPA_CANALI.md (analisi reale di Gemini — riportata qui, non inventata).
+OPPORTUNITA_TIER = {
+    "Martes AI": ("Altissima", "Tech-Hacker Screencast"),
+    "Piero Savastano": ("Altissima", "Tech-Hacker Screencast"),
+    "SOS Automazioni": ("Altissima", "Tech-Hacker Screencast"),
+    "Alberto Olla": ("Altissima", "Tech-Hacker Screencast"),
+    "AutomatiKing": ("Media/Alta", "Low-Code Business Architect"),
+    "Andrea Ciraolo": ("Media/Alta", "Low-Code Business Architect"),
+    "Raffaele Gaito": ("Media/Alta", "Low-Code Business Architect"),
+    "Stefano Mongardi": ("Media/Alta", "Low-Code Business Architect"),
+}
+DEFAULT_TIER = ("Bassa/Media", "Tech-Commentary/News")
+
+# Ore-tipo per frequenza di upload, usate per stimare l'età media di un video in stato
+# stazionario: 01_MAPPA_CANALI.md fornisce viste medie AGGREGATE per canale (analisi Gemini),
+# non dati singolo-video da un vero passaggio Video IQ — questa è quindi una stima dichiarata,
+# non un dato inventato: deriva da numeri reali (iscritti/viste) del canale reale scelto.
+FREQ_TO_HOURS = {
+    "giornaliero": 24,
+    "2-3 video / sett.": 60,
+    "1-2 video / sett.": 120,
+    "1 video / sett.": 168,
+    "settimanale (fast forward)": 168,
+    "1 video / 2 sett.": 336,
+    "1-2 video / mese": 504,
+}
+DEFAULT_FREQ_HOURS = 250  # fallback per frequenze irregolari/non mappate
+
+
+def _parse_view_range(raw: str) -> tuple[float, float]:
+    """'15.000 - 40.000' -> (15000.0, 40000.0). Gestisce anche un solo numero."""
+    nums = re.findall(r"[\d.]+", raw)
+    vals = [float(n.replace(".", "")) for n in nums if n.replace(".", "").isdigit()]
+    if len(vals) >= 2:
+        return vals[0], vals[1]
+    if len(vals) == 1:
+        return vals[0], vals[0]
+    return 0.0, 0.0
 
 class Apex7Orchestrator:
     def __init__(self, run_id: str | None = None):
@@ -215,6 +262,43 @@ class Apex7Orchestrator:
         print(f"\n🎉 Workflow completato con successo per la run {self.run_id}!")
 
     # --- Fase 1: Scouting ---
+    def load_real_niche_channels(self) -> list[dict]:
+        """Legge i 20 canali reali italiani AI/automazione da 01_MAPPA_CANALI.md (Gemini,
+        WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/). Sostituisce lo
+        scouting a freddo con dati di mercato reali già raccolti (vedi LEGGIMI.md del pacchetto)."""
+        if not os.path.exists(MAPPA_CANALI_PATH):
+            return []
+        with open(MAPPA_CANALI_PATH, "r", encoding="utf-8") as f:
+            text = f.read()
+
+        channels = []
+        for line in text.splitlines():
+            line = line.strip()
+            if not line.startswith("|") or line.startswith("|---") or line.startswith("| #"):
+                continue
+            cols = [c.strip() for c in line.strip("|").split("|")]
+            if len(cols) < 7:
+                continue
+            try:
+                rank = int(cols[0])
+            except ValueError:
+                continue
+            name = cols[1].replace("**", "").strip()
+            handle = cols[2].replace("`", "").strip()
+            iscritti_raw = re.sub(r"[^\d]", "", cols[3])
+            iscritti = int(iscritti_raw) if iscritti_raw else 0
+            view_low, view_high = _parse_view_range(cols[4])
+            freq = cols[5].strip()
+            formato = cols[6].strip()
+            tier, cluster = OPPORTUNITA_TIER.get(name, DEFAULT_TIER)
+            channels.append({
+                "rank": rank, "channel": name, "handle": handle, "iscritti": iscritti,
+                "view_medie_low": view_low, "view_medie_high": view_high,
+                "freq_upload": freq, "formato": formato,
+                "opportunita_manuale": tier, "cluster": cluster,
+            })
+        return channels
+
     def run_phase_1(self, interactive: bool) -> bool:
         print("[📋 PLANNER] Inizializzazione della ricerca di nicchia...")
         topic = self.working_memory.get("topic")
@@ -224,46 +308,79 @@ class Apex7Orchestrator:
             else:
                 topic = "AI/Claude IT"
             self.working_memory["topic"] = topic
-            
+
         print(f"[*] Nicchia target impostata: {topic}")
-        
-        # Simulazione niche-scout
-        print("[✍️ WRITER] Generazione scheda nicchia...")
+        print(f"[🔬 ANALYST] Caricamento dati REALI niche-scout da {MAPPA_CANALI_PATH}...")
+
         scheda_nicchia_path = os.path.join(TEMPLATES_DIR, "scheda-nicchia.md")
-        
-        # Esegui cashcow check su mock data
-        canale_mock = {
-            "channel": "Legami d'amore",
+        channels = self.load_real_niche_channels()
+        if not channels:
+            print(f"[!] ERRORE: dati reali niche-scout non trovati in {MAPPA_CANALI_PATH}. Impossibile procedere senza dati reali.")
+            return False
+
+        # Selezione: priorità ai canali a opportunità "Altissima"/"Media-Alta" per il Manuale
+        # (analisi Gemini in 01_MAPPA_CANALI.md), a parità di tier vince la vista media più alta.
+        tier_weight = {"Altissima": 2, "Media/Alta": 1, "Bassa/Media": 0}
+
+        def score(ch):
+            return (tier_weight.get(ch["opportunita_manuale"], 0), (ch["view_medie_low"] + ch["view_medie_high"]) / 2)
+
+        ranked = sorted(channels, key=score, reverse=True)
+        scelto = ranked[0]
+        alternative = [c["channel"] for c in ranked[1:4]]
+
+        # Cashcow check su stima aggregata dal canale reale scelto (01_MAPPA_CANALI.md non
+        # fornisce dati singolo-video da Video IQ, solo range di viste medie per canale: usiamo
+        # low/high come 2 punti dati rappresentativi, età stimata dalla frequenza di upload reale).
+        age_hours = FREQ_TO_HOURS.get(scelto["freq_upload"].lower(), DEFAULT_FREQ_HOURS)
+        canale_reale = {
+            "channel": scelto["channel"],
             "videos": [
-                {"title": "Come installare Claude Code", "views": 15000, "age_hours": 120, "errors": []},
-                {"title": "Costruire Agent Swarm", "views": 32000, "age_hours": 240, "errors": ["seo debole"]}
+                {"title": f"{scelto['channel']} - stima video tipo (fascia bassa)", "views": scelto["view_medie_low"], "age_hours": age_hours, "errors": []},
+                {"title": f"{scelto['channel']} - stima video tipo (fascia alta)", "views": scelto["view_medie_high"], "age_hours": age_hours, "errors": []},
             ]
         }
-        mock_json_path = os.path.join(FACTORY_DIR, "canale_tmp.json")
-        self.save_json(mock_json_path, canale_mock)
-        
-        res = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "cashcow_check.py"), "--json", mock_json_path], capture_output=True, text=True)
-        if os.path.exists(mock_json_path):
-            os.remove(mock_json_path)
-            
-        print(f"[🔬 ANALYST] Risultato Cashcow Check:\n{res.stdout}")
-        
-        # Scrittura scheda-nicchia.md
+        tmp_json_path = os.path.join(FACTORY_DIR, "canale_tmp.json")
+        self.save_json(tmp_json_path, canale_reale)
+
+        res = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "cashcow_check.py"), "--json", tmp_json_path], capture_output=True, text=True)
+        if os.path.exists(tmp_json_path):
+            os.remove(tmp_json_path)
+
+        print(f"[🔬 ANALYST] Risultato Cashcow Check ({scelto['channel']}):\n{res.stdout}")
+        try:
+            cashcow = json.loads(res.stdout)
+        except (json.JSONDecodeError, ValueError):
+            cashcow = {"index": 0, "is_cashcow": False}
+
+        verdetto = "PASS" if cashcow.get("is_cashcow") else "FAIL"
+
+        # Scrittura scheda-nicchia.md con dati reali (non più il canale mock "Legami d'amore")
         with open(scheda_nicchia_path, "w", encoding="utf-8") as f:
             f.write(f"# Scheda Nicchia: {topic}\n\n")
-            f.write(f"- Canale cash cow analizzato: Legami d'amore\n")
-            f.write(f"- Indice Cash Cow: 76.5 (Soglia superata: SÌ)\n")
-            f.write(f"- Verdetto niche-gate: PASS\n")
-            
+            f.write(f"- Fonte dati: niche-scout-analysis/01_MAPPA_CANALI.md (analisi reale, Gemini)\n")
+            f.write(f"- Canale analizzato: {scelto['channel']} ({scelto['handle']})\n")
+            f.write(f"- Iscritti: ~{scelto['iscritti']:,}".replace(",", ".") + "\n")
+            f.write(f"- View medie stimate: {scelto['view_medie_low']:.0f} - {scelto['view_medie_high']:.0f}\n")
+            f.write(f"- Formato: {scelto['formato']}\n")
+            f.write(f"- Cluster / Opportunità per il Manuale: {scelto['cluster']} ({scelto['opportunita_manuale']})\n")
+            f.write(f"- Indice Cash Cow (stima da viste medie aggregate, non da Video IQ singolo-video): {cashcow.get('index')} (Soglia superata: {'SÌ' if cashcow.get('is_cashcow') else 'NO'})\n")
+            f.write(f"- Verdetto niche-gate: {verdetto}\n")
+
         self.log_decision(
             "DEC-nicchia-001",
-            f"Selezione nicchia {topic}",
-            "Metriche storiche di views/ora stabili e alta replicabilità con Fliki.",
-            ["Nicchia Finanza Personale", "Nicchia Gaming"],
-            0.92
+            f"Selezione canale reale: {scelto['channel']} ({scelto['handle']})",
+            f"Cluster '{scelto['cluster']}', opportunità '{scelto['opportunita_manuale']}' per il Manuale Claude Code "
+            f"(analisi niche-scout Gemini), view medie {scelto['view_medie_low']:.0f}-{scelto['view_medie_high']:.0f}, "
+            f"indice cash cow stimato {cashcow.get('index')} ({verdetto}).",
+            alternative,
+            0.85 if scelto["opportunita_manuale"] == "Altissima" else 0.65
         )
-        
+
         self.working_memory["scheda_nicchia"] = scheda_nicchia_path
+        self.working_memory["canale_scelto"] = scelto["channel"]
+        self.working_memory["canale_scelto_handle"] = scelto["handle"]
+        self.working_memory["cashcow_index"] = cashcow.get("index")
         return True
 
     # --- Fase 2: Selezione Video ---

@@ -1,4 +1,18 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: audit YOUTUBE-AUTOMATION-FACTORY · Estate=cervello · preventa-agents chiuso 100% · APEX-7 Level 2 · agenti PEZZO 2)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: YT Factory F1 dati reali · audit YOUTUBE-AUTOMATION-FACTORY · Estate=cervello · preventa-agents chiuso 100% · APEX-7 Level 2 · agenti PEZZO 2)
+
+## 🚀 2026-07-27 — YOUTUBE-AUTOMATION-FACTORY: FASE 1 (SCOUTING) COLLEGATA A DATI REALI — CP-20260727-009
+> Via libera di Gael sul Task 1 di [CP-20260727-007](checkpoints/CP-20260727-007.md). `run_phase_1`
+> di `apex7_orchestrator.py` non usa più il canale mock "Legami d'amore": legge i 20 canali reali
+> italiani AI/automazione da `WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/01_MAPPA_CANALI.md`
+> (analisi Gemini), sceglie per tier di opportunità reale + viste medie, calcola il Cash Cow Index
+> su una stima aggregata onestamente dichiarata come tale (il documento non ha dati singolo-video).
+>
+> **Prova che il fix è reale:** un run manuale ha selezionato "Alberto Olla", indice **44.0 su
+> soglia 60 → verdetto FAIL** — la vecchia versione scriveva sempre "76.5, PASS" per costruzione.
+> 11/11 test invariati verdi. **Aperto:** se un FAIL debba bloccare davvero il workflow (oggi la
+> fase ritorna comunque `True`, il FAIL è solo scritto onestamente in `scheda-nicchia.md`) — scelta
+> di processo, non tecnica, da confermare prima o durante il Task 2 (F2, candidati-video reali).
+> Vedi [CP-20260727-009](checkpoints/CP-20260727-009.md).
 
 ## 🔎 2026-07-27 — AUDIT YOUTUBE-AUTOMATION-FACTORY (richiesta Gael) — CP-20260727-007
 > Gael ha chiesto lo stato dei task su `YOUTUBE-AUTOMATION-FACTORY`. Prima di rispondere, audit

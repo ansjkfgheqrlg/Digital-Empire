@@ -33,8 +33,20 @@ ciascuno, output JSON verificato a runtime nel test suite): il problema non è c
 prodotto un video reale né mai processato una nicchia reale. Stesso pattern identificato in
 [[CP-20260724-007]] (7 piani ristrutturazione): "il problema non era la capacità, era l'esecuzione".
 
-### ✅ Task aperti, in ordine di priorità (nessuno eseguito — richiede via libera esplicita, vincolo sovrano additivo)
-1. **F1 → dati reali**: collegare `apex7_orchestrator.py::run_phase_1` a `WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/` (dati Gemini già pronti) invece del canale mock.
+### Task aperti, in ordine di priorità (via libera di Gael il 2026-07-27, si parte da F1)
+1. ✅ **F1 → dati reali (FATTO 2026-07-27)**: `apex7_orchestrator.py::run_phase_1` ora legge i 20
+   canali reali da `WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/01_MAPPA_CANALI.md`
+   (nuovo metodo `load_real_niche_channels()`), seleziona il canale con priorità di tier
+   "Altissima/Media-Alta opportunità per il Manuale" (dall'analisi di clusterizzazione reale del
+   documento) e a parità di tier per viste medie più alte. Il Cash Cow Index si calcola su una
+   stima aggregata onestamente dichiarata (view medie low/high del canale reale + età stimata
+   dalla frequenza di upload reale — 01_MAPPA_CANALI.md non ha dati singolo-video da Video IQ).
+   `scheda-nicchia.md` e il decision log ora riportano il **verdetto reale** (può essere FAIL:
+   verificato con un run manuale, canale scelto "Alberto Olla", indice 44.0, sotto soglia 60 →
+   niche-gate FAIL — la vecchia versione scriveva sempre "PASS" per costruzione, questa no).
+   11/11 test invariati verdi. **Non ancora fatto**: enforcement reale del niche-gate (oggi un
+   FAIL viene scritto onestamente ma la fase ritorna comunque `True` e il workflow prosegue —
+   bloccare davvero il workflow su FAIL è una scelta di processo, non tecnica, da confermare).
 2. **F2 → dati reali**: generare `candidati-video.json` dai video reali del canale scelto in F1, non dai 2 hardcoded.
 3. **F3 → script reale**: invocare l'agente `operatori/script-writer.md` sul video/nicchia reale, non scrivere sempre lo stesso testo.
 4. **F4 → produzione reale**: generare la spec Fliki dallo script reale di F3 (scene multiple, non 1 fissa).
