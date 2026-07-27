@@ -1,4 +1,15 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: agenti operativi PEZZO 2 · sync Gael riallineato)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: APEX-7 Level 2 operativo · agenti operativi PEZZO 2 · sync Gael riallineato)
+
+## ⚡ 2026-07-27 — APEX-7 LEVEL 2 OPERATIVO — CP-20260727-002
+Sistema nervoso multi-agente dello Stream S7 portato da markdown descrittivo a codice
+operativo testato. Event Bus (P0-P3, retry, DLQ, replay), Memory 5-query con indice e
+persistenza, 6 Quality Gate L1→L7 con rubriche eseguibili (`gate_verifiers.py`), Gate Agent
+a stati reali, Meta-Agent con spawn-limit + human_override, RuFLO adapter (config unica,
+backend intercambiabile), 7 prompt interni. `test_apex7.py` → **exit 0, tutto verde**;
+gate finale L6→L7 **PASSED 7/7**.
+**RIPRESA DA:** `company/Ecosistemi/12-STREAM-S7-BOT/STATO-RIPRESA.md` — prossimo L2→L3
+(loop adattivi con dati reali del bot) + task parallelo /content-forge (agenti/skill da
+markdown a operativi, uno per uno con checklist, metodo APEX-7).
 
 ## 🔧 2026-07-25 — AGENTI OPERATIVI PEZZO 2 — CP-20260725-002
 CRO-COPY-ARCHITECT promosso 0→10/10 (agente copy APSOC, tocca cassa S2+S6). Filtro corredi nel
