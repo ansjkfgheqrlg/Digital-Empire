@@ -44,20 +44,26 @@ def test_event_bus():
           all("priority" in v and "delivery" in v for v in EVENT_CATALOG.values()))
     check("Retry policy per tutte e 4 le priorita'", len(RETRY_POLICY) == 4)
 
-    # Ordine di priorita': un P0 pubblicato durante un P3 viene servito prima
+    # Ordine di priorita': dentro la gestione di un evento P2 accodo prima un P3
+    # e poi un P0. Il P0 deve essere servito per primo, anche se accodato dopo.
+    # Il trigger ascolta un evento diverso da quelli che ripubblica: niente auto-cascata.
     order = []
     global_bus.subscribe("agent.spawned", lambda e: order.append("P3"), subscriber_id="test.p3")
     global_bus.subscribe("task.failed", lambda e: order.append("P0"), subscriber_id="test.p0")
 
-    def nested(e):
-        order.append("P3-handler")
-        global_bus.publish("task.failed", {"task_id": "T-PRIO", "error_type": "test"})
-        global_bus.publish("agent.spawned", {"agent_id": "A-PRIO", "type": "test"})
+    def trigger(e):
+        global_bus.publish("agent.spawned", {"agent_id": "A-PRIO", "type": "test"})  # P3
+        global_bus.publish("task.failed", {"task_id": "T-PRIO", "error_type": "test"})  # P0
 
-    global_bus.subscribe("agent.spawned", nested, subscriber_id="test.nested")
-    global_bus.publish("agent.spawned", {"agent_id": "A-ROOT", "type": "test"})
-    check("Il P0 annidato precede il P3 accodato dopo di lui",
-          order.index("P0") < len(order) - 1, f"sequenza: {order}")
+    global_bus.subscribe("task.decomposed", trigger, subscriber_id="test.trigger")
+    global_bus.publish("task.decomposed", {"task_id": "T-DECOMP", "subtasks": []})  # P2
+    check("Il P0 accodato dopo il P3 viene comunque servito prima",
+          "P0" in order and "P3" in order and order.index("P0") < order.index("P3"),
+          f"sequenza: {order}")
+
+    global_bus.unsubscribe("task.decomposed", "test.trigger")
+    global_bus.unsubscribe("agent.spawned", "test.p3")
+    global_bus.unsubscribe("task.failed", "test.p0")
 
     # Self-healing: un subscriber che esplode non ferma il bus e finisce in DLQ
     dlq_before = len(global_bus.dead_letter_queue)
@@ -111,7 +117,7 @@ def test_memory():
     global_memory.register_strategy("Forza bruta", "escalation", "TEST-1")
     for _ in range(4):
         global_memory.record_strategy_outcome("Piramide Evolutiva", success=True)
-    for _ in range(4):
+    for _ in range(5):   # l'archiviazione automatica scatta a 5+ usi sotto il 30%
         global_memory.record_strategy_outcome("Forza bruta", success=False)
 
     fetched = global_memory.strategy_fetch("escalation")
@@ -324,10 +330,10 @@ if __name__ == "__main__":
     print(f"\n  Verdetto gate APEX (L6->L7): {apex['result']} score {apex['score']}")
 
     if failures:
-        print(f"\n  ❌ {len(failures)} controlli falliti:")
+        print(f"\n  [FALLITI] {len(failures)} controlli:")
         for f in failures:
             print(f"     - {f}")
         sys.exit(1)
 
-    print(f"\n  ✅ Tutti i controlli superati.")
+    print(f"\n  [OK] Tutti i controlli superati.")
     sys.exit(0)

@@ -139,6 +139,11 @@ class GateAgent:
         poi aggrega. Se l'ispezione sfora il timeout del gate, quello che manca
         vale FAIL: un controllo che non finisce non e' un controllo superato.
         """
+        # Se evaluate() viene chiamata direttamente (test o uso standalone)
+        # senza passare dal LOADING dell'handler, ci si passa qui: la macchina
+        # a stati resta un vincolo reale, non un percorso opzionale.
+        if self.state == "IDLE":
+            self._transition("LOADING")
         self._transition("CHECKING")
         started = time.time()
 
