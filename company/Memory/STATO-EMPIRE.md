@@ -1,4 +1,23 @@
-# STATO EMPIRE -- aggiornato 2026-07-25 (Claude: agenti operativi PEZZO 1 — misuratore + 1 promosso)
+# STATO EMPIRE -- aggiornato 2026-07-25 (Claude: agenti operativi PEZZO 2 — 2 promossi + report visibile)
+
+## 🔧 2026-07-25 — AGENTI OPERATIVI PEZZO 2 — CP-20260725-002
+CRO-COPY-ARCHITECT promosso 0→10/10 (agente copy APSOC, tocca cassa S2+S6). Filtro corredi nel
+misuratore (439→435 agenti reali, spariti i falsi 0/10 di evals/failure-modes). Operativi 56→57.
+```
+435 agenti reali:  57 OPERATIVO (13.1%) · 324 PARZIALE (74.5%) · 54 DOCUMENTALE (12.4%)
+```
+**👁️ VISIBILITÀ (ordine Max):** ogni cosa nel Workflow Estate dev'essere VISTA lì dentro. Aggiunto
+`WORKFLOW-ESTATE/03-AGENTI-E-RUOLI/STATO-AGENTI.md`, report leggibile rigenerato a ogni `forge scan`.
+Le 5 cartelle di `02-AUTOMAZIONI-E-SCRIPTS` (decisions/errors/performances/reasoning-bank/sessions)
+si riempiono lavorando via `empire trace`.
+
+**Difetto ricorrente (4ª volta):** slash-in-backtick nei .md rompe conform. Idea PEZZO futuro:
+controllo pre-commit che lo intercetta prima.
+
+**RIPRESA DA:** PEZZO 3 — `AGENTE-ANDREI-PASCU-MINER` (0/10, alimenta S5 YouTube), poi DOCUMENTALE
+degli altri ecosistemi via `empire forge prossimo`. Ogni agente = fase = checkpoint+commit+push.
+
+---
 
 ## 🔧 2026-07-25 — AGENTI DA MARKDOWN A OPERATIVI: PEZZO 1 fatto — CP-20260725-001
 Ordine di Max (/content-forge + /apex): trasformare i 439 agenti/skill/flussi da schede markdown a

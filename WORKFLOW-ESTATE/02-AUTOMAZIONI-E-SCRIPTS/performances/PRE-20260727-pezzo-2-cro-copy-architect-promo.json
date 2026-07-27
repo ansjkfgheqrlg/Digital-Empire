@@ -1,0 +1,15 @@
+{
+  "tipo": "prestazione",
+  "titolo": "PEZZO 2: CRO-COPY-ARCHITECT promosso operativo + filtro corredi nel misuratore",
+  "autore": "Claude",
+  "prova": "forge agente AGENTE-CRO-COPY-ARCHITECT: 0->10/10 OPERATIVO. Filtro _CORREDO: 439->435 agenti reali, documentali 60->54. conform 0 block. 11 test verdi.",
+  "quando": "2026-07-27T08:19:29+02:00",
+  "contesto": "Agente copy APSOC, tocca la cassa (S2 Manuale + S6 Preventa). Contenuto originale preservato, additivo 8->133 righe.",
+  "tags": [
+    "forge",
+    "apex",
+    "agenti",
+    "pezzo2"
+  ],
+  "id": "PRE-20260727-pezzo-2-cro-copy-architect-promo"
+}

@@ -54,222 +54,6 @@
     ]
   },
   {
-    "id": "AGENTE-CLOSER-A8",
-    "percorso": "WORKFLOW-ESTATE/03-AGENTI-E-RUOLI/AGENTE-CLOSER-A8.md",
-    "righe": 8,
-    "criteri": [
-      {
-        "nome": "C1-identita",
-        "descrizione": "ha un id stabile con cui invocarlo",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C2-ruolo",
-        "descrizione": "una sola responsabilita' dichiarata",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C3-ingresso",
-        "descrizione": "dice cosa gli serve per lavorare",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C4-uscita",
-        "descrizione": "dice cosa produce e dove",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C5-successo",
-        "descrizione": "ha un criterio di riuscita o un gate",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C6-comportamento",
-        "descrizione": "ha istruzioni operative eseguibili, non solo descrittive",
-        "passa": false,
-        "prova": ""
-      }
-    ],
-    "punteggio": 0.0,
-    "stato": "DOCUMENTALE",
-    "gravita": 10,
-    "mancanti": [
-      "C1-identita",
-      "C2-ruolo",
-      "C3-ingresso",
-      "C4-uscita",
-      "C5-successo",
-      "C6-comportamento"
-    ]
-  },
-  {
-    "id": "AGENTE-CRO-COPY-ARCHITECT",
-    "percorso": "WORKFLOW-ESTATE/03-AGENTI-E-RUOLI/AGENTE-CRO-COPY-ARCHITECT.md",
-    "righe": 8,
-    "criteri": [
-      {
-        "nome": "C1-identita",
-        "descrizione": "ha un id stabile con cui invocarlo",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C2-ruolo",
-        "descrizione": "una sola responsabilita' dichiarata",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C3-ingresso",
-        "descrizione": "dice cosa gli serve per lavorare",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C4-uscita",
-        "descrizione": "dice cosa produce e dove",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C5-successo",
-        "descrizione": "ha un criterio di riuscita o un gate",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C6-comportamento",
-        "descrizione": "ha istruzioni operative eseguibili, non solo descrittive",
-        "passa": false,
-        "prova": ""
-      }
-    ],
-    "punteggio": 0.0,
-    "stato": "DOCUMENTALE",
-    "gravita": 10,
-    "mancanti": [
-      "C1-identita",
-      "C2-ruolo",
-      "C3-ingresso",
-      "C4-uscita",
-      "C5-successo",
-      "C6-comportamento"
-    ]
-  },
-  {
-    "id": "evals",
-    "percorso": "DIGITAL-EMPIRE/04-AGENTS/memory-architect/evals.md",
-    "righe": 7,
-    "criteri": [
-      {
-        "nome": "C1-identita",
-        "descrizione": "ha un id stabile con cui invocarlo",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C2-ruolo",
-        "descrizione": "una sola responsabilita' dichiarata",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C3-ingresso",
-        "descrizione": "dice cosa gli serve per lavorare",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C4-uscita",
-        "descrizione": "dice cosa produce e dove",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C5-successo",
-        "descrizione": "ha un criterio di riuscita o un gate",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C6-comportamento",
-        "descrizione": "ha istruzioni operative eseguibili, non solo descrittive",
-        "passa": false,
-        "prova": ""
-      }
-    ],
-    "punteggio": 0.0,
-    "stato": "DOCUMENTALE",
-    "gravita": 10,
-    "mancanti": [
-      "C1-identita",
-      "C2-ruolo",
-      "C3-ingresso",
-      "C4-uscita",
-      "C5-successo",
-      "C6-comportamento"
-    ]
-  },
-  {
-    "id": "failure-modes",
-    "percorso": "DIGITAL-EMPIRE/04-AGENTS/memory-architect/failure-modes.md",
-    "righe": 7,
-    "criteri": [
-      {
-        "nome": "C1-identita",
-        "descrizione": "ha un id stabile con cui invocarlo",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C2-ruolo",
-        "descrizione": "una sola responsabilita' dichiarata",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C3-ingresso",
-        "descrizione": "dice cosa gli serve per lavorare",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C4-uscita",
-        "descrizione": "dice cosa produce e dove",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C5-successo",
-        "descrizione": "ha un criterio di riuscita o un gate",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C6-comportamento",
-        "descrizione": "ha istruzioni operative eseguibili, non solo descrittive",
-        "passa": false,
-        "prova": ""
-      }
-    ],
-    "punteggio": 0.0,
-    "stato": "DOCUMENTALE",
-    "gravita": 10,
-    "mancanti": [
-      "C1-identita",
-      "C2-ruolo",
-      "C3-ingresso",
-      "C4-uscita",
-      "C5-successo",
-      "C6-comportamento"
-    ]
-  },
-  {
     "id": "memory",
     "percorso": "DIGITAL-EMPIRE/04-AGENTS/memory-architect/memory.md",
     "righe": 2,
@@ -519,59 +303,6 @@
         "descrizione": "ha un criterio di riuscita o un gate",
         "passa": true,
         "prova": "gate"
-      },
-      {
-        "nome": "C6-comportamento",
-        "descrizione": "ha istruzioni operative eseguibili, non solo descrittive",
-        "passa": false,
-        "prova": ""
-      }
-    ],
-    "punteggio": 1.7,
-    "stato": "DOCUMENTALE",
-    "gravita": 8,
-    "mancanti": [
-      "C1-identita",
-      "C2-ruolo",
-      "C3-ingresso",
-      "C4-uscita",
-      "C6-comportamento"
-    ]
-  },
-  {
-    "id": "evals",
-    "percorso": "DIGITAL-EMPIRE/04-AGENTS/chief-forge/evals.md",
-    "righe": 9,
-    "criteri": [
-      {
-        "nome": "C1-identita",
-        "descrizione": "ha un id stabile con cui invocarlo",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C2-ruolo",
-        "descrizione": "una sola responsabilita' dichiarata",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C3-ingresso",
-        "descrizione": "dice cosa gli serve per lavorare",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C4-uscita",
-        "descrizione": "dice cosa produce e dove",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C5-successo",
-        "descrizione": "ha un criterio di riuscita o un gate",
-        "passa": true,
-        "prova": "Gate"
       },
       {
         "nome": "C6-comportamento",
@@ -1215,58 +946,6 @@
       "C3-ingresso",
       "C4-uscita",
       "C5-successo"
-    ]
-  },
-  {
-    "id": "failure-modes",
-    "percorso": "DIGITAL-EMPIRE/04-AGENTS/chief-forge/failure-modes.md",
-    "righe": 8,
-    "criteri": [
-      {
-        "nome": "C1-identita",
-        "descrizione": "ha un id stabile con cui invocarlo",
-        "passa": true,
-        "prova": "`decision`"
-      },
-      {
-        "nome": "C2-ruolo",
-        "descrizione": "una sola responsabilita' dichiarata",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C3-ingresso",
-        "descrizione": "dice cosa gli serve per lavorare",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C4-uscita",
-        "descrizione": "dice cosa produce e dove",
-        "passa": false,
-        "prova": ""
-      },
-      {
-        "nome": "C5-successo",
-        "descrizione": "ha un criterio di riuscita o un gate",
-        "passa": true,
-        "prova": "Gate"
-      },
-      {
-        "nome": "C6-comportamento",
-        "descrizione": "ha istruzioni operative eseguibili, non solo descrittive",
-        "passa": false,
-        "prova": ""
-      }
-    ],
-    "punteggio": 3.3,
-    "stato": "DOCUMENTALE",
-    "gravita": 7,
-    "mancanti": [
-      "C2-ruolo",
-      "C3-ingresso",
-      "C4-uscita",
-      "C6-comportamento"
     ]
   },
   {
@@ -19141,6 +18820,100 @@
         "descrizione": "ha istruzioni operative eseguibili, non solo descrittive",
         "passa": true,
         "prova": "```json"
+      }
+    ],
+    "punteggio": 10.0,
+    "stato": "OPERATIVO",
+    "gravita": 0,
+    "mancanti": []
+  },
+  {
+    "id": "AGENTE-CLOSER-A8",
+    "percorso": "WORKFLOW-ESTATE/03-AGENTI-E-RUOLI/AGENTE-CLOSER-A8.md",
+    "righe": 134,
+    "criteri": [
+      {
+        "nome": "C1-identita",
+        "descrizione": "ha un id stabile con cui invocarlo",
+        "passa": true,
+        "prova": "- **ID**:"
+      },
+      {
+        "nome": "C2-ruolo",
+        "descrizione": "una sola responsabilita' dichiarata",
+        "passa": true,
+        "prova": "## Ruolo"
+      },
+      {
+        "nome": "C3-ingresso",
+        "descrizione": "dice cosa gli serve per lavorare",
+        "passa": true,
+        "prova": "## Input"
+      },
+      {
+        "nome": "C4-uscita",
+        "descrizione": "dice cosa produce e dove",
+        "passa": true,
+        "prova": "## Output"
+      },
+      {
+        "nome": "C5-successo",
+        "descrizione": "ha un criterio di riuscita o un gate",
+        "passa": true,
+        "prova": "## Criteri"
+      },
+      {
+        "nome": "C6-comportamento",
+        "descrizione": "ha istruzioni operative eseguibili, non solo descrittive",
+        "passa": true,
+        "prova": "STEP 0"
+      }
+    ],
+    "punteggio": 10.0,
+    "stato": "OPERATIVO",
+    "gravita": 0,
+    "mancanti": []
+  },
+  {
+    "id": "AGENTE-CRO-COPY-ARCHITECT",
+    "percorso": "WORKFLOW-ESTATE/03-AGENTI-E-RUOLI/AGENTE-CRO-COPY-ARCHITECT.md",
+    "righe": 133,
+    "criteri": [
+      {
+        "nome": "C1-identita",
+        "descrizione": "ha un id stabile con cui invocarlo",
+        "passa": true,
+        "prova": "- **ID**:"
+      },
+      {
+        "nome": "C2-ruolo",
+        "descrizione": "una sola responsabilita' dichiarata",
+        "passa": true,
+        "prova": "## Ruolo"
+      },
+      {
+        "nome": "C3-ingresso",
+        "descrizione": "dice cosa gli serve per lavorare",
+        "passa": true,
+        "prova": "## Input"
+      },
+      {
+        "nome": "C4-uscita",
+        "descrizione": "dice cosa produce e dove",
+        "passa": true,
+        "prova": "## Output"
+      },
+      {
+        "nome": "C5-successo",
+        "descrizione": "ha un criterio di riuscita o un gate",
+        "passa": true,
+        "prova": "## Criteri"
+      },
+      {
+        "nome": "C6-comportamento",
+        "descrizione": "ha istruzioni operative eseguibili, non solo descrittive",
+        "passa": true,
+        "prova": "STEP 0"
       }
     ],
     "punteggio": 10.0,

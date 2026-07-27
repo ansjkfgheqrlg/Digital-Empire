@@ -141,13 +141,21 @@ def analizza(percorso: Path) -> Scheda:
     )
 
 
+# File di CORREDO di un agente (non sono agenti a se': valutarli come tali produce falsi
+# 0/10 che sporcano la checklist — trovato nel PEZZO 1 con evals.md e failure-modes.md).
+_CORREDO = {"evals", "failure-modes", "failure_modes", "readme", "catalog", "index",
+            "changelog", "license", "note", "notes", "todo"}
+
+
 def _file_agenti() -> list[Path]:
-    """Riusa la scoperta gia' esistente del loader invece di reinventarla."""
+    """Riusa la scoperta gia' esistente del loader invece di reinventarla,
+    poi scarta i file di corredo che non sono agenti veri."""
     try:
         from .loader import _agent_files  # noqa: PLC0415
-        return list(_agent_files())
+        files = list(_agent_files())
     except (ImportError, AttributeError):
-        return sorted((repo_root() / "company").rglob("*.md"))
+        files = sorted((repo_root() / "company").rglob("*.md"))
+    return [p for p in files if p.stem.lower() not in _CORREDO]
 
 
 def checklist(limite: int | None = None) -> list[Scheda]:
@@ -168,7 +176,52 @@ def salva_checklist(schede: list[Scheda]) -> Path:
     p.write_text(json.dumps([asdict(s) | {"punteggio": s.punteggio, "stato": s.stato,
                                           "gravita": s.gravita, "mancanti": s.mancanti}
                              for s in schede], indent=2, ensure_ascii=False), encoding="utf-8")
+    salva_report_visibile(schede)
     return p
+
+
+def salva_report_visibile(schede: list[Scheda]) -> Path:
+    """Scrive un report LEGGIBILE dentro WORKFLOW-ESTATE, dove Max lo vede senza lanciare comandi.
+
+    Richiesta esplicita di Max (25/07): "tutto cio' che costruisci dentro il workflow estate devo
+    vederlo, tutta la struttura". Il misuratore vive in empire/ (runtime), ma il suo RISULTATO
+    deve essere visibile nel posto che Max guarda: 03-AGENTI-E-RUOLI.
+    """
+    from datetime import datetime
+    tot = len(schede) or 1
+    per_stato: dict[str, int] = {}
+    for s in schede:
+        per_stato[s.stato] = per_stato.get(s.stato, 0) + 1
+
+    righe = [
+        "# 📊 STATO AGENTI — quanto sono OPERATIVI (non solo scritti)",
+        f"> Generato da `empire forge scan` · {datetime.now().astimezone().isoformat(timespec='minutes')}",
+        "> Un agente OPERATIVO ha: id, ruolo unico, input, **output** (cosa produce), criterio di",
+        "> successo, e istruzioni eseguibili. Uno DOCUMENTALE e' solo una scheda che non lavora.",
+        "",
+        "## Riepilogo",
+        "",
+        "| Stato | Agenti | % |",
+        "|---|---|---|",
+    ]
+    for stato in ("OPERATIVO", "PARZIALE", "DOCUMENTALE"):
+        n = per_stato.get(stato, 0)
+        righe.append(f"| {stato} | {n} | {round(100*n/tot,1)}% |")
+    righe += ["", f"**Totale agenti reali:** {tot}", "",
+              "## Prossimi da rendere operativi (i piu' gravi per primi)", ""]
+    for s in [x for x in schede if x.stato != "OPERATIVO"][:15]:
+        manca = ", ".join(m.split("-")[1] for m in s.mancanti)
+        righe.append(f"- **{s.id}** — {s.punteggio}/10 [{s.stato}] · manca: {manca}")
+    righe += ["", "## Gia' operativi", ""]
+    for s in [x for x in schede if x.stato == "OPERATIVO"][:40]:
+        righe.append(f"- {s.id} — {s.punteggio}/10")
+    righe.append("\n---\n⛓️ report rigenerato a ogni `forge scan --salva`")
+
+    d = repo_root() / "WORKFLOW-ESTATE" / "03-AGENTI-E-RUOLI"
+    d.mkdir(parents=True, exist_ok=True)
+    rp = d / "STATO-AGENTI.md"
+    rp.write_text("\n".join(righe), encoding="utf-8")
+    return rp
 
 
 # ------------------------------------------------------------------ CLI
