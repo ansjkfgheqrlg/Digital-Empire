@@ -508,6 +508,78 @@ def check_documentation(ctx) -> Result:
 
 
 # --------------------------------------------------------------------------- #
+# GATE L2 -> L3 — loop reale, non testo che ne parla
+# --------------------------------------------------------------------------- #
+
+def check_feedback_loop_real(ctx) -> Result:
+    """
+    Il feedback loop non e' 'documentato': o esiste un ciclo output -> esito ->
+    correzione con numeri veri in memoria, oppure non esiste. Cerca in memoria
+    almeno un record 'threshold_adjustment' scritto dall'AnalysisEngine a fronte
+    di trade realmente chiusi.
+    """
+    text = _src(ctx, "analysis_engine.py")
+    if "_on_trade_closed" not in text or "trade.executed" not in text:
+        return ("FAIL", "L'AnalysisEngine non ascolta l'esito dei trade: nessun loop, solo un rilevatore",
+                "Sottoscrivere trade.executed/trade.failed e correggere la soglia in base al risultato")
+
+    memory = ctx.get("memory")
+    if memory is None:
+        return ("FAIL", "Nessuna memoria collegata al gate", "Passare la memoria al contesto del Gate Agent")
+
+    adjustments = [r for r in memory.storage.get("metrics", [])
+                   if isinstance(r.get("content"), dict) and r["content"].get("kind") == "threshold_adjustment"]
+    if not adjustments:
+        return ("PARTIAL",
+                "Il codice del loop c'e' ma non e' mai stato eseguito: zero calibrazioni registrate",
+                "Far girare il bot su abbastanza trade da attraversare almeno una ricalibrazione")
+
+    last = adjustments[-1]["content"]
+    return ("PASS",
+            f"{len(adjustments)} ricalibrazioni reali: ultima {last['old_threshold_sol']} -> "
+            f"{last['new_threshold_sol']} SOL su success_rate {last['success_rate']:.0%} "
+            f"({last['sample_size']} trade)", None)
+
+
+def check_threshold_calibrated_real(ctx) -> Result:
+    """
+    La soglia deve derivare da esecuzioni misurate, non da un numero scelto a
+    mano. Verifica che la strategia in memoria abbia parametri diversi dal
+    default e un campione statisticamente non ridicolo.
+    """
+    text = _src(ctx, "analysis_engine.py")
+    default_match = re.search(r"DEFAULT_SPIKE_THRESHOLD_SOL\s*=\s*([\d.]+)", text)
+    if not default_match:
+        return ("FAIL", "Nessun default dichiarato per la soglia: non si puo' verificare la calibrazione",
+                "Dichiarare DEFAULT_SPIKE_THRESHOLD_SOL in analysis_engine.py")
+
+    memory = ctx.get("memory")
+    if memory is None:
+        return ("FAIL", "Nessuna memoria collegata al gate", "Passare la memoria al contesto del Gate Agent")
+
+    strategies = [r for r in memory.storage.get("strategies", [])
+                  if isinstance(r.get("content"), dict) and r["content"].get("name") == "volume_spike_v1"]
+    if not strategies:
+        return ("FAIL", "Nessuna strategia 'volume_spike_v1' registrata in memoria",
+                "L'AnalysisEngine deve registrare la strategia al primo avvio")
+
+    content = strategies[-1]["content"]
+    used = content.get("times_used", 0)
+    if used < 2:
+        return ("PARTIAL", f"Strategia registrata ma usata solo {used} volte: campione insufficiente",
+                "Eseguire piu' cicli prima di dichiarare la soglia calibrata")
+
+    current = content["parameters"].get("spike_threshold_sol")
+    default = float(default_match.group(1))
+    if current is None:
+        return ("FAIL", "La strategia non porta la soglia nei suoi parametri", "Salvare spike_threshold_sol nei parametri")
+
+    return ("PASS",
+            f"Soglia {current} SOL (default {default}), calibrata su {used} usi reali, "
+            f"success_rate {content.get('times_succeeded', 0)}/{used}", None)
+
+
+# --------------------------------------------------------------------------- #
 # Registro: nome nella rubrica -> funzione
 # --------------------------------------------------------------------------- #
 

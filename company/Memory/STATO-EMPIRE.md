@@ -1,6 +1,6 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: Estate=cervello · preventa-agents Phase B · APEX-7 Level 2 · agenti PEZZO 2)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: Estate=cervello · preventa-agents verificato · APEX-7 Level 2 · agenti PEZZO 2)
 
-## 🧠 2026-07-27 — WORKFLOW ESTATE = CERVELLO, NON MUSCOLO — CP-20260727-004
+## 🧠 2026-07-27 — WORKFLOW ESTATE = CERVELLO, NON MUSCOLO — CP-20260727-005
 Max ha chiarito la natura dell'estate: **decisionale/strategico, non operativo.** Decide, orchestra,
 misura, ricorda — non manda email, non scrapa, non renderizza. Gli operativi veri sono separati
 (YOUTUBE-AUTOMATION-FACTORY, 12-STREAM-S7-BOT, preventa-maps-scraper, Outreach Workflow).
@@ -10,6 +10,27 @@ Trovata incoerenza: 4 script operativi vivevano dentro. **Opzione A (Max):** spo
 `02-AUTOMAZIONI-E-SCRIPTS/LEGGIMI-COSA-VA-QUI.md`. conform 0 block, nessun codice attivo rotto.
 Conseguenza: gli agenti che rendo operativi in `03-AGENTI-E-RUOLI` restano **specifiche di ruolo**
 (definizioni) — coerenti con estate=cervello; il codice esecutore vive negli operativi.
+
+---
+
+## ✅ 2026-07-27 — PREVENTA-AGENTS VERIFICATO A RUNTIME + FIX REGRESSIONE SYNC — CP-20260727-004
+Verifica indipendente del lavoro di [CP-20260727-003](checkpoints/CP-20260727-003.md) (fatto da
+un'altra sessione Claude Code attiva in parallelo sullo stesso PC/repo): `agents.py` importa
+pulito, 9 classi istanziate, `test_apex7.py` verde su **3 esecuzioni separate**. Tutti gli 8
+`AGENTE.md` ora incorporano il proprio `agente.py` (richiesta esplicita di Gael).
+
+**Trovata e corretta una cancellazione silenziosa**: risolvendo un conflitto rebase su questo
+stesso file, `git rebase --continue` aveva cancellato/retrocesso 6 file di
+`company/Ecosistemi/12-STREAM-S7-BOT/` appena pushati da Max (incl. un fix reale a
+`gate_agent.py`) — causa: autostash implicito interagito male con un secondo processo git
+concorrente sullo stesso working directory. Ripristinati identici byte-per-byte prima del push.
+**Lezione operativa:** dopo ogni rebase con conflitto, `git diff <origine-nota-buona> HEAD --stat`
+sull'intero repo, non solo sui file toccati dal conflitto — un'operazione concorrente può sporcare
+l'indice senza generare un conflitto visibile.
+
+**RIPRESA DA:** nessun blocco su preventa-agents. Prossimo lavoro libero.
+
+---
 
 ## ⚡ 2026-07-27 — APEX-7 LEVEL 2 OPERATIVO — CP-20260727-002
 Sistema nervoso multi-agente dello Stream S7 portato da markdown descrittivo a codice
