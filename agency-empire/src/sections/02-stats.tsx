@@ -3,31 +3,43 @@
 import { Reveal } from "@/components/reveal";
 import { CountUp } from "@/components/count-up";
 
+/* ════════════════════════════════════════════════════════════════════════
+   REGOLA: qui vanno SOLO numeri che possiamo dimostrare in demo.
+
+   Revisione 2026-07-27 (Arena). Prima c'erano "40+ automazioni consegnate",
+   "100% task automatizzati" e "+300% produttività media, misurata dopo 4
+   settimane". Nessuno dei tre aveva un riscontro su disco: il "+300%
+   misurato" in particolare dichiarava una misurazione che non esiste.
+   Sostituiti con i numeri della macchina Novacar, che sono contati sui file
+   (fonte: Clienti/Prof Autocad/preventivo-forge/ — vedi 09b-prove-novacar).
+
+   Se aggiungi una riga qui, deve avere una fonte su disco. Nessuna eccezione.
+   ════════════════════════════════════════════════════════════════════════ */
 const STATS = [
   {
     prefix: "",
-    value: 40,
-    suffix: "+",
-    label: "Automazioni consegnate",
-    sub: "Outreach · Content · Operations",
+    value: 65,
+    suffix: "",
+    label: "Documenti prodotti dalla macchina",
+    sub: "Casi reali, dal 3 al 13 luglio 2026",
     numColor: "#fb4604",
     numShadow: "0 0 28px rgba(251,70,4,0.45)",
   },
   {
-    prefix: "",
-    value: 100,
-    suffix: "%",
-    label: "Task operativi automatizzati",
-    sub: "Zero intervento manuale",
+    prefix: "~",
+    value: 2,
+    suffix: " min",
+    label: "Dal dato grezzo al documento finito",
+    sub: "Tempo della macchina, misurato",
     numColor: "#7b4fb0",
     numShadow: "0 0 28px rgba(123,79,176,0.50)",
   },
   {
-    prefix: "+",
-    value: 300,
-    suffix: "%",
-    label: "Produttività media",
-    sub: "Misurata dopo 4 settimane",
+    prefix: "",
+    value: 6,
+    suffix: "",
+    label: "Controlli prima di ogni consegna",
+    sub: "Se uno fallisce, non consegna niente",
     numColor: "#1c1c1c",
     numShadow: "none",
   },
@@ -58,6 +70,11 @@ export function Stats() {
                 funziona.
               </span>
             </h2>
+            <p className="mt-5 text-[0.95rem] text-white/60 font-light max-w-xl mx-auto">
+              Sono i numeri di una macchina che gira da un cliente vero, contati
+              sui file e non stimati. Preferiamo tre numeri veri a dieci
+              impressionanti.
+            </p>
           </div>
         </Reveal>
 
