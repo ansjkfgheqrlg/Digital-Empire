@@ -1,4 +1,39 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Arena: kit vendita 5-15k + dossier 26 · Claude: Estate=cervello · preventa-agents verificato · APEX-7 Level 2)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Arena: AUTOPSIA — 0 euro, 2 contatti, 508 email ferme · sito ripulito dai claim inventati · kit vendita 5-15k)
+
+## 🚨 2026-07-27 — AUTOPSIA SETTIMANA (P8) + SITO RIPULITO — CP-20260727-008
+
+### La settimana in 3 numeri (contati sui file, non stimati)
+| | |
+|---|---|
+| **Euro incassati** | **0** |
+| **Contatti nuovi partiti** | **2** (Autobase Brescia, Gruppo Carmeli — 25/07, WhatsApp) |
+| **Email già scritte e ferme nei file** | **508** |
+
+**Ultimo invio di massa: 3 giugno.** Da 55 giorni la macchina di outreach non manda niente,
+mentre la si continua a migliorare. 38 checkpoint in 7 giorni, 2 messaggi partiti.
+Dossier completo: `PIANO-MAESTRO/27-AUTOPSIA-SETTIMANA-20260727.md`.
+
+**Verdetto:** settimana di **costruzione pura senza cassa**. Non pigra — lavoro serio (APEX-7 L2,
+7 agenti ricostruiti, forge, flow) — ma speso interamente sul lato sbagliato. *Il mercato non ci ha
+detto di no: non gli abbiamo ancora chiesto niente.*
+
+### 🧹 Sito ripulito dai claim senza riscontro (autorizzato da Max)
+**Il più grave, non previsto:** `11-testimonial.tsx` aveva **3 testimonianze con nome, cognome e
+5 stelle** (Marco Resta, Sara Conti, Luca Pellegrini, *"240 lead il primo mese"*). Cercati in tutto
+il repo: **zero riscontri, non esistono in nessun file.** Rimosse → dichiarazione onesta che rimanda
+ai numeri veri di Novacar. Sistemati anche i 4 claim di `15-objections.tsx` e le 3 statistiche di
+`02-stats.tsx` (incluso *"+300% produttività, misurata dopo 4 settimane"* — misurazione mai fatta).
+`tsc` 0 errori · `npm run build` **Compiled successfully**, 4 pagine.
+
+### ▶️ RIPRESA DA — task della settimana entrante (vincolanti)
+- **MAX:** mandare le 508 email già pronte (rampa 20→30→50→80/giorno) + telefonare a Novacar per la
+  testimonianza. **Venerdì il numero dei contatti non deve essere 2: sotto 100 = fallita.**
+- **GAEL:** ⛔ **costruzione CONGELATA.** Nessun APEX-7 L3, nessun refactoring scraper, nessun YouTube.
+  Unica cosa ammessa: far funzionare l'invio + cruscotto giornaliero (inviate/risposte/demo).
+- **ARENA:** nessun dossier nuovo. Venerdì 31/07 rifaccio l'autopsia coi numeri veri.
+  *Criterio di riuscita: il dossier 28 non esiste.*
+
+---
 
 ## 💼 2026-07-27 — KIT DI VENDITA WORKFLOW €5-15k (P4) — CP-20260727-007
 Max ha lanciato il prompt **P4** del dossier 26. Consegnato in `Outreach/kit-vendita-workflow/`:
