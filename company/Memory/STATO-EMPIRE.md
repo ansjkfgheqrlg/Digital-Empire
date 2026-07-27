@@ -1,4 +1,56 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: Estate=cervello · preventa-agents verificato · APEX-7 Level 2 · agenti PEZZO 2)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: Estate=cervello · preventa-agents verificato · APEX-7 Level 2 · agenti PEZZO 2 · CAMPAGNA CONCESSIONARI VENETO PRONTA CP-006)
+
+## 📧 2026-07-27 — CAMPAGNA OUTBOUND CONCESSIONARI VR/PD/VI (PREVENTA 490+149) PRONTA — CP-20260727-006
+Ordine Max ("scegli te, fai la cosa migliore e più veloce"): mandare in produzione la campagna outbound
+verso i concessionari auto di **Verona / Padova / Vicenza** per Preventa (€490 setup + €149/mese), wrappando
+gli asset esistenti (ADR-003, niente riscrittura).
+
+**Costruito** (tutto in `Outreach/Outreach Workflow/campagne/concessionari-preventa/`):
+- Runner CLI `campagna_concessionari_veneto.py` con 7 comandi: `scrape`, `gate`, `dry-run`, `send`,
+  `verify-followup`, `report`, `update-stato`.
+- Gate anti-figuraccia a **9 criteri** (MX email, placeholder, nome coerente, unsubscribe+firma,
+  no contatti negli ultimi 90 giorni, categoria, copertura province…) → exit 1 su un qualsiasi rosso.
+- Cap **hard 20/giorno** day-1 (warm-up dominio), delay 65-95s tra email, header `List-Unsubscribe`
+  + `Precedence: bulk` + `Auto-Submitted: auto-generated`.
+- CSV `Outreach/preventa-maps-scraper/data/leads_concessionari_veneto.csv` di **20 concessionari**
+  (5 VR + 8 PD + 7 VI) con domini **MX-verificati** via dnspython. Telefoni volutamente vuoti
+  (non inventati), `note_qualifica` marcata `[VERIFICA PRE-SEND]`.
+- Follow-up schedulati: **G+2 = 2026-07-29**, **G+5 = 2026-08-01**, JSON preview già scritti
+  (`output_veneto/followup_G+2_*.json`, `followup_G+5_*.json`, 20 email ciascuno).
+- Copy aggiornata in `personalizza_messaggi.py`: prezzi Preventa espliciti (490/149 + disdetta
+  libera + kill-switch), CTA demo 15min, firma con indirizzo fisico Digital Empire SRLS Milano,
+  footer unsubscribe.
+
+**Bug risolti in corsa:**
+1. CSV writer aperto dentro il loop di `send` (handle non flushato) → De Bona Motors (ultima riga)
+   veniva scritta dopo che `update-stato` aveva già letto il file → 19/20 segnati. Fix: un solo
+   file handle con `flush()` per riga, `close()` in `finally`. Ora 20/20.
+2. Report che contava `dry_no_creds` come "inviate" → numeri falsi. Fix: il report conta solo
+   righe con `stato=inviata`.
+3. Chiavi nomi non normalizzate (CRLF) → doppie voci potenziali. Fix: `_norm()` centralizzato.
+
+**STATO REALE:**
+- **inviate 0 | consegnate 0 | aperte 0 | risposte 0 | demo 0**
+- 0 email REALI partite da questa sandbox (SMTP Gmail irraggiungibile dal container, nessun
+  `.env` con `GMAIL_APP_PASSWORD`, Playwright Chromium non installabile per rete).
+- 20 lead in `stato_lead.csv` segnati `contattato` dal test `--fake-fast` (il send reale è
+  idempotente: non reinvia, il report non gonfia i numeri).
+
+**RIPRESA DA (Max, 5 min sul suo PC con rete):**
+```
+cd "Outreach/Outreach Workflow/campagne/concessionari-preventa/"
+python campagna_concessionari_veneto.py gate              # 9/9 verde
+python campagna_concessionari_veneto.py dry-run --n 20    # approva 3 msg
+python campagna_concessionari_veneto.py send --n 20       # INVIO REALE day 1 (dopo .env)
+python campagna_concessionari_veneto.py verify-followup   # G+2=29/7, G+5=1/8
+python campagna_concessionari_veneto.py report            # riga del giorno
+```
+Prima del send: creare `Outreach/Outreach Workflow/.env` con `GMAIL_USER=max.infoproducer@gmail.com`
+e `GMAIL_APP_PASSWORD=…` (mai committato, c'è `.env.example`).
+
+Checkpoint: [CP-20260727-006](checkpoints/CP-20260727-006.md).
+
+---
 
 ## 🧠 2026-07-27 — WORKFLOW ESTATE = CERVELLO, NON MUSCOLO — CP-20260727-005
 Max ha chiarito la natura dell'estate: **decisionale/strategico, non operativo.** Decide, orchestra,

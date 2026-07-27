@@ -22,6 +22,11 @@ from pathlib import Path
 
 MITTENTE = "Max"
 BRAND = "Preventa"
+PREZZO_SETUP = "490 €"
+PREZZO_MESE = "149 €/mese"
+INDIRIZZO_MITTENTE = "Digital Empire SRLS, Via Giuseppe Verdi 12, 20121 Milano (MI)"
+UNSUB_URL = "https://digital-empire.agency/unsubscribe"
+# Nota onesta: link unsubscribe mailto è funzionale; URL pagina è da Max
 
 
 def scegli_gancio(note_qualifica: str, priorita: str, ha_sito: str) -> dict:
@@ -79,10 +84,23 @@ def email1(nome_attivita: str, citta: str, gancio: dict) -> dict:
     corpo = (
         f"Buongiorno,\n"
         f"vi scrivo perché sto sentendo diversi concessionari nella zona di {citta}.\n"
+        f"\n"
         f"Problema comune: 20-30 min per fare un preventivo decente e clienti che nel frattempo "
         f"chiedono altrove.\n"
-        f"Voi come li state gestendo ora? Ancora su Excel/gestionale o avete già velocizzato?\n"
-        f"{MITTENTE} - {BRAND}"
+        f"\n"
+        f"Noi abbiamo fatto {BRAND}: non sostituisce il gestionale, lo affianca. "
+        f"Incollate il link dell'annuncio ed esce un PDF brandizzato {nome_attivita} con listino "
+        f"bloccato dal titolare — pronto da mandare su WhatsApp in 2 minuti.\n"
+        f"Setup {PREZZO_SETUP} una tantum, canone {PREZZO_MESE}, disdetta libera con kill-switch.\n"
+        f"\n"
+        f"Volete che vi preparo un esempio su un vostro annuncio? 15 min su schermo, senza impegno.\n"
+        f"\n"
+        f"Saluti,\n"
+        f"{MITTENTE} - {BRAND}\n"
+        f"\n"
+        f"-- \n"
+        f"{INDIRIZZO_MITTENTE}\n"
+        f"Non volete più ricevere email da me? Rispondete \"CANCELLA\" o visitate {UNSUB_URL}\n"
     )
     return {"oggetto_a": oggetti[0], "oggetto_b": oggetti[1], "oggetto_c": oggetti[2], "corpo": corpo}
 
@@ -111,13 +129,21 @@ def email2(nome_attivita: str) -> dict:
     return {
         "oggetto": f"Esempio PDF {nome_attivita} (2 min)",
         "corpo": (
-            f"Ti lascio un esempio pratico:\n"
+            f"Buongiorno,\n"
+            f"vi lascio un esempio pratico.\n"
+            f"\n"
             f"{BRAND} non sostituisce il vostro gestionale. Lo affianca.\n"
             f"Incollate il link dell'annuncio, esce PDF brandizzato con vostro logo, foto, "
-            f"listino bloccato dal titolare.\n"
+            f"listino bloccato dal titolare in 2 minuti.\n"
             f"Niente fogli Excel brutti da mandare su WhatsApp.\n"
-            f"Ti va se te lo preparo con un vostro annuncio?\n"
-            f"{MITTENTE}"
+            f"\n"
+            f"Setup {PREZZO_SETUP} una tantum + {PREZZO_MESE}, disdetta libera.\n"
+            f"Ti va se te lo preparo con un vostro annuncio? Basta 15 min.\n"
+            f"\n"
+            f"Saluti,\n"
+            f"{MITTENTE} - {BRAND}\n"
+            f"\n-- \n{INDIRIZZO_MITTENTE}\n"
+            f"Non volete più ricevere email da me? Rispondete \"CANCELLA\" o visitate {UNSUB_URL}\n"
         ),
     }
 
@@ -126,13 +152,20 @@ def email3(nome_attivita: str, citta: str) -> dict:
     return {
         "oggetto": f"Chiudo il file {nome_attivita}?",
         "corpo": (
-            f"Chiudo il giro contatti nella zona di {citta} questa settimana.\n"
+            f"Buongiorno,\n"
+            f"chiudo il giro contatti nella zona di {citta} questa settimana.\n"
+            f"\n"
             f"Se non è prioritario per voi velocizzare i preventivi ora, nessun problema.\n"
-            f"Se invece vuoi dare un'occhiata, ti faccio vedere tutto in 15 min su un vostro annuncio. "
-            f"Canone mensile, disdetta libera con kill-switch.\n"
+            f"Se invece vuoi dare un'occhiata: 15 min su schermo con un vostro annuncio, "
+            f"setup {PREZZO_SETUP} una tantum + {PREZZO_MESE}, disdetta libera con kill-switch.\n"
             f"Altrimenti archivio.\n"
+            f"\n"
             f"Va bene così?\n"
-            f"{MITTENTE} - {BRAND}"
+            f"\n"
+            f"Saluti,\n"
+            f"{MITTENTE} - {BRAND}\n"
+            f"\n-- \n{INDIRIZZO_MITTENTE}\n"
+            f"Rispondete \"CANCELLA\" per non ricevere più email | {UNSUB_URL}\n"
         ),
     }
 
