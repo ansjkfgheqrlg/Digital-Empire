@@ -1,5 +1,0 @@
-﻿[2026-07-24 15:51:55] CONFLITTO DI SYNC
-Pull --rebase fallito: Created autostash: bf791943
-Il tuo lavoro e' al sicuro (committato in locale).
-Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
-Poi cancella questo file.

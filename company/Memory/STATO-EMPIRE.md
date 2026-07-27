@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-07-25 (Claude: agenti operativi PEZZO 2 — 2 promossi + report visibile)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: agenti operativi PEZZO 2 · sync Gael riallineato)
 
 ## 🔧 2026-07-25 — AGENTI OPERATIVI PEZZO 2 — CP-20260725-002
 CRO-COPY-ARCHITECT promosso 0→10/10 (agente copy APSOC, tocca cassa S2+S6). Filtro corredi nel
@@ -16,6 +16,27 @@ controllo pre-commit che lo intercetta prima.
 
 **RIPRESA DA:** PEZZO 3 — `AGENTE-ANDREI-PASCU-MINER` (0/10, alimenta S5 YouTube), poi DOCUMENTALE
 degli altri ecosistemi via `empire forge prossimo`. Ogni agente = fase = checkpoint+commit+push.
+
+---
+
+## 🔀 2026-07-27 — Sync riallineato + Phase A rebuild preventa-agents INTERROTTA A META' — CP-20260727-001
+Gael ha chiesto pull/push/aggiorna tutto a inizio sessione. `SYNC-CONFLICT.txt` risolto (era un
+falso allarme: 54 file `.agents/skills/*` duplicati identici tra locale e origin, zero lavoro
+perso). Main allineato a GitHub (`f1ab076d`).
+
+**Trovato durante la verifica (non causato oggi):** il commit `bcd4ef89` del 25/07 "Phase A - wipe
+flat agent structure" ha cancellato gli 8 agenti flat di `Outreach/preventa-maps-scraper/
+03-AGENTI-E-RUOLI/` (`AGENTE-*.md`+`agente_*.py`: scraper, qualificatore, writer, sender,
+responder, integratore-sheets, gate, orchestratore) per ricostruirli in formato **cartella-per-
+agente**. Solo `writer/` è stato ricostruito (recuperato oggi da uno stash e committato). Gli altri
+7 mancano ancora sul disco, e la facade `agents.py` importa ancora i vecchi moduli flat →
+**`python -c "import agents"` fallisce** (`ModuleNotFoundError: agente_scraper`). I 13 test menzionati
+nel commit `b26bf89d` (prima del wipe) sono verosimilmente rotti adesso.
+
+**RIPRESA DA:** Gael — completare la Phase A: ricostruire i 7 agenti mancanti in
+`03-AGENTI-E-RUOLI/<nome>/AGENTE.md`+`agente.py` sul modello di `writer/`, poi aggiornare gli
+import in `02-AUTOMAZIONI-E-SCRIPTS/agents.py` (oggi puntano ai vecchi file flat inesistenti), poi
+far girare `test_apex7.py` per confermare che i 13 test tornino verdi prima di chiudere la fase.
 
 ---
 
