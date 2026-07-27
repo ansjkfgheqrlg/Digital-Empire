@@ -1,4 +1,15 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: preventa-agents Phase B chiusa · APEX-7 Level 2 operativo · agenti operativi PEZZO 2 · sync Gael riallineato)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: Estate=cervello · preventa-agents Phase B · APEX-7 Level 2 · agenti PEZZO 2)
+
+## 🧠 2026-07-27 — WORKFLOW ESTATE = CERVELLO, NON MUSCOLO — CP-20260727-004
+Max ha chiarito la natura dell'estate: **decisionale/strategico, non operativo.** Decide, orchestra,
+misura, ricorda — non manda email, non scrapa, non renderizza. Gli operativi veri sono separati
+(YOUTUBE-AUTOMATION-FACTORY, 12-STREAM-S7-BOT, preventa-maps-scraper, Outreach Workflow).
+Trovata incoerenza: 4 script operativi vivevano dentro. **Opzione A (Max):** spostati fuori con
+`git mv` (storia preservata): `send_s1_whatsapp/prepare_outreach/send_outreach` → Outreach Workflow,
+`fliki_youtube_test` → YOUTUBE-AUTOMATION-FACTORY. Resta solo `memory_manager.py`. Regola scritta in
+`02-AUTOMAZIONI-E-SCRIPTS/LEGGIMI-COSA-VA-QUI.md`. conform 0 block, nessun codice attivo rotto.
+Conseguenza: gli agenti che rendo operativi in `03-AGENTI-E-RUOLI` restano **specifiche di ruolo**
+(definizioni) — coerenti con estate=cervello; il codice esecutore vive negli operativi.
 
 ## ⚡ 2026-07-27 — APEX-7 LEVEL 2 OPERATIVO — CP-20260727-002
 Sistema nervoso multi-agente dello Stream S7 portato da markdown descrittivo a codice
