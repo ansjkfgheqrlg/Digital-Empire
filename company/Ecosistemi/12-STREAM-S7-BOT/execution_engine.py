@@ -3,6 +3,7 @@ import csv
 import os
 from datetime import datetime
 from event_bus import global_bus
+from memory_interface import global_memory
 
 logger = logging.getLogger(__name__)
 
@@ -11,25 +12,31 @@ class ExecutionEngine:
     Layer C: Execution Engine (PAPER TRADING MODE) (Worker Agent - Executor).
     Costruisce e firma transazioni virtuali per simulare i costi reali di mercato.
     Non tocca mai una chiave privata vera se TRADE_MODE=SIMULATION.
+
+    Ascolta risk.trade_approved, non piu' analysis.signal_detected: il capitale
+    non e' piu' hardcoded a 1.0, e' quello che il Risk Manager ha davvero
+    approvato. Un segnale senza approvazione del rischio non arriva qui.
     """
-    
+
     def __init__(self, mode: str = "SIMULATION", agent_id="EXECUTION-ENGINE-1"):
         self.agent_id = agent_id
         self.mode = mode
         self.log_file = "paper_trade_log.csv"
         self._init_log_file()
-        
-        # Ascolta i segnali trovati dall'analista
-        global_bus.subscribe("analysis.signal_detected", self.handle_signal)
 
-    def handle_signal(self, event_msg: dict):
-        signal = event_msg.get("payload", {})
+        global_bus.subscribe("risk.trade_approved", self.handle_approved_trade,
+                             subscriber_id=f"{agent_id}.approved")
+
+    def handle_approved_trade(self, event_msg: dict):
+        payload = event_msg.get("payload", {})
+        signal = payload.get("signal", {})
+        allocated_capital = payload.get("allocated_capital", 0.0)
         import asyncio
         try:
             loop = asyncio.get_running_loop()
-            loop.create_task(self.execute_trade(signal, allocated_capital=1.0))
+            loop.create_task(self.execute_trade(signal, allocated_capital))
         except RuntimeError:
-            asyncio.run(self.execute_trade(signal, allocated_capital=1.0))
+            asyncio.run(self.execute_trade(signal, allocated_capital))
 
     def _init_log_file(self):
         if not os.path.exists(self.log_file):
@@ -59,6 +66,14 @@ class ExecutionEngine:
         
         if self.mode == "SIMULATION":
             success = self._simulate_transaction(action, token, allocated_capital, base_fee, bribe, total_cost, slippage)
+            strategy_name = signal.get("strategy", "volume_spike_v1")
+            global_memory.record_strategy_outcome(strategy_name, success)
+            global_memory.write("metrics", {
+                "kind": "trade_outcome", "strategy": strategy_name, "action": action,
+                "token": token, "cost_sol": round(total_cost, 6), "slippage_bps": slippage,
+                "success": success,
+            }, self.agent_id, importance=0.7)
+
             if success:
                 global_bus.publish("trade.executed", {"signal": signal, "cost": total_cost})
             else:

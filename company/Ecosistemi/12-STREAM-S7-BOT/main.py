@@ -7,6 +7,7 @@ from data_manager import SolanaDataManager
 from analysis_engine import AnalysisEngine
 from execution_engine import ExecutionEngine
 from risk_manager import RiskManager
+from event_bus import global_bus
 
 # Configurazione Logging
 logging.basicConfig(
@@ -26,28 +27,18 @@ async def main():
     base_bankroll = float(os.getenv("BASE_BANKROLL_SOL", 10.0))
     max_position = float(os.getenv("MAX_POSITION_PCT", 5.0))
     
-    # Inizializzazione dei 4 Layer
+    # Inizializzazione dei 4 Layer. Da qui in poi si parlano solo via Event Bus:
+    # data.raw_event_received -> AnalysisEngine -> analysis.signal_detected
+    # -> RiskManager -> risk.trade_approved -> ExecutionEngine. Un solo percorso,
+    # nessuna chiamata diretta che possa bypassare il controllo del rischio.
     data_manager = SolanaDataManager(wss_url=wss_url)
     analysis_engine = AnalysisEngine()
-    execution_engine = ExecutionEngine(mode=trade_mode)
     risk_manager = RiskManager(base_bankroll=base_bankroll, max_position_pct=max_position)
-    
-    # Callback che lega i layer
+    execution_engine = ExecutionEngine(mode=trade_mode)
+
     async def on_new_event(event_data):
-        # Layer B
-        signal = await analysis_engine.process_event(event_data)
-        
-        if signal:
-            # Layer D
-            capital_to_allocate = risk_manager.assess_trade(signal)
-            
-            if capital_to_allocate:
-                # Layer C
-                success = await execution_engine.execute_trade(signal, capital_to_allocate)
-                if not success:
-                    logger.warning("Trade simulato fallito o droppato dal network/slippage.")
-    
-    # Registrazione callback sul Data Manager
+        global_bus.publish("data.raw_event_received", event_data)
+
     data_manager.register_callback(on_new_event)
     
     # Avvio ascolto infinito

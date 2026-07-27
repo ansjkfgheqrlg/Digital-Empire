@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: audit YOUTUBE-AUTOMATION-FACTORY · preventa-agents verificato 4x, controllo chiuso al 100% · APEX-7 Level 2 operativo · agenti operativi PEZZO 2)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: audit YOUTUBE-AUTOMATION-FACTORY · Estate=cervello · preventa-agents chiuso 100% · APEX-7 Level 2 · agenti PEZZO 2)
 
 ## 🔎 2026-07-27 — AUDIT YOUTUBE-AUTOMATION-FACTORY (richiesta Gael) — CP-20260727-007
 > Gael ha chiesto lo stato dei task su `YOUTUBE-AUTOMATION-FACTORY`. Prima di rispondere, audit
@@ -34,7 +34,10 @@ attendere Max su M-EST-9/prezzo Preventa per scalare lo scraper oltre il pilota.
 
 ---
 
-## ✅ 2026-07-27 — PREVENTA-AGENTS: CONTROLLO SU RICHIESTA GAEL — CP-20260727-005
+## ✅ 2026-07-27 — PREVENTA-AGENTS: CONTROLLO SU RICHIESTA GAEL (3ª volta) — CP-20260727-008
+> Rinumerato da CP-20260727-005 per collisione con il checkpoint di Max "Workflow Estate =
+> cervello" (sezione subito sotto), stessa data, sessioni parallele. Contenuto invariato.
+
 Gael ha chiesto conferma che le modifiche di [CP-20260727-003](checkpoints/CP-20260727-003.md)/
 [CP-20260727-004](checkpoints/CP-20260727-004.md) fossero salvate nella cartella
 `Outreach/preventa-maps-scraper/`. Confermato: `git status` pulito (main allineato a origin),
@@ -44,7 +47,20 @@ controllo (conteggio blocchi python per file + rerun `test_apex7.py`) — non bl
 2 volte in CP-004.
 
 **RIPRESA DA:** se serve chiudere al 100%: conteggio ```` ```python ```` per `AGENTE.md` +
-rerun `test_apex7.py`. Altrimenti nessun blocco.
+rerun `test_apex7.py`. Altrimenti nessun blocco. *(Nota: già chiuso subito dopo in CP-20260727-006.)*
+
+---
+
+## 🧠 2026-07-27 — WORKFLOW ESTATE = CERVELLO, NON MUSCOLO — CP-20260727-005
+Max ha chiarito la natura dell'estate: **decisionale/strategico, non operativo.** Decide, orchestra,
+misura, ricorda — non manda email, non scrapa, non renderizza. Gli operativi veri sono separati
+(YOUTUBE-AUTOMATION-FACTORY, 12-STREAM-S7-BOT, preventa-maps-scraper, Outreach Workflow).
+Trovata incoerenza: 4 script operativi vivevano dentro. **Opzione A (Max):** spostati fuori con
+`git mv` (storia preservata): `send_s1_whatsapp/prepare_outreach/send_outreach` → Outreach Workflow,
+`fliki_youtube_test` → YOUTUBE-AUTOMATION-FACTORY. Resta solo `memory_manager.py`. Regola scritta in
+`02-AUTOMAZIONI-E-SCRIPTS/LEGGIMI-COSA-VA-QUI.md`. conform 0 block, nessun codice attivo rotto.
+Conseguenza: gli agenti che rendo operativi in `03-AGENTI-E-RUOLI` restano **specifiche di ruolo**
+(definizioni) — coerenti con estate=cervello; il codice esecutore vive negli operativi.
 
 ---
 
