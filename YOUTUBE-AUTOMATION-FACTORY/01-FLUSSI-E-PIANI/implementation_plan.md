@@ -6,9 +6,48 @@ The APEX-7 framework introduces a structured, event-driven, memory-connected, qu
 
 ---
 
+## 🔎 STATO REALE (audit 2026-07-27, Claude, su richiesta Gael)
+
+**Scaffolding: ✅ costruito e testato.** Tutti e 7 i Plan hanno codice + test dedicato in
+`test_youtube_apex7.py` (**11/11 test verdi**), più un E2E reale eseguito (`memory/runs/run_yt-run-20260725-085030.json`,
+decisioni loggate per tutti e 6 i gate L1→L7).
+
+**⚠️ Ma il contenuto è simulato in OGNI fase.** Verificato leggendo `apex7_orchestrator.py` riga per
+riga: non solo le Fasi 5-6 (già segnalato in CP-20260724-008), **tutte le 6 fasi** scrivono dati
+hardcoded invece di usare l'output reale della fase precedente:
+- **F1 Scouting**: canale mock "Legami d'amore" con 2 video finti, indice cash-cow 76.5 fisso, verdetto PASS fisso — non legge `WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/` (dati REALI di Gemini, pronti da settimane, mai collegati).
+- **F2 Selezione**: 2 candidati hardcoded con SEO score finti (45.0 / 85.0).
+- **F3 Script**: stesso testo statico ("Vuoi installare l'agente IA più veloce?") indipendentemente dal video scelto in F2.
+- **F4 Produzione**: spec Fliki con 1 sola scena fissa.
+- **F5 Pubblicazione**: stesso titolo/metadati "Claude Code" ogni volta.
+- **F6 Audit**: metriche di performance finte (`views_per_hour: 35.5` fisso) scritte in `performance_logs.json` — il self-improver impara quindi sempre sugli stessi dati falsi.
+- **`execute_critic` (il "Critic" che valuta ogni fase)**: ritorna SEMPRE lo stesso punteggio fisso (8.5/8.0/7.5/8.0/9.0) — non valuta realmente nulla.
+- **Dashboard** (`run_youtube_apex7.py` → `06-DASHBOARD-E-METRICHE/YOUTUBE-PERFORMANCE-DASHBOARD.md`): scrive sempre la stessa tabella "🟢 PASS" per tutte le 6 fasi, a prescindere dall'esito reale della run.
+
+**I motori di calcolo sotto le fasi sembrano reali** (`seo_score.py`, `cashcow_check.py`,
+`thumbnail_analyzer.py`, `validate_schemas.py`, `meta_agent.py`, `self_improve.py` — 85-200 righe
+ciascuno, output JSON verificato a runtime nel test suite): il problema non è che calcolano male,
+è che **nessuno gli passa mai dati veri**.
+
+**Conclusione:** la fabbrica è un simulatore end-to-end perfettamente funzionante, non ha mai
+prodotto un video reale né mai processato una nicchia reale. Stesso pattern identificato in
+[[CP-20260724-007]] (7 piani ristrutturazione): "il problema non era la capacità, era l'esecuzione".
+
+### ✅ Task aperti, in ordine di priorità (nessuno eseguito — richiede via libera esplicita, vincolo sovrano additivo)
+1. **F1 → dati reali**: collegare `apex7_orchestrator.py::run_phase_1` a `WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/` (dati Gemini già pronti) invece del canale mock.
+2. **F2 → dati reali**: generare `candidati-video.json` dai video reali del canale scelto in F1, non dai 2 hardcoded.
+3. **F3 → script reale**: invocare l'agente `operatori/script-writer.md` sul video/nicchia reale, non scrivere sempre lo stesso testo.
+4. **F4 → produzione reale**: generare la spec Fliki dallo script reale di F3 (scene multiple, non 1 fissa).
+5. **F5 → metadati/SEO reali**: titolo/tag/keyword dal video reale scelto, non sempre "claude code".
+6. **F6 → performance reali**: il log di performance deve venire da un video REALMENTE pubblicato, non da metriche inventate — altrimenti il self-improver ottimizza su rumore.
+7. **`execute_critic` → punteggio reale**: derivare le 5 dimensioni da controlli veri sul contenuto (lunghezza, presenza HOOK/CTA, keyword density), non da un dict fisso.
+8. **Dashboard → stato reale**: riflettere l'esito vero di ogni gate della run corrente, non una tabella statica sempre verde.
+
+---
+
 ## The 7-Step Architectural Evolution (Plan 1 to Plan 7)
 
-### 📈 Plan 1: L1 - Le Fondamenta (Foundations)
+### 📈 Plan 1: L1 - Le Fondamenta (Foundations) — ✅ costruito e testato (scaffolding)
 - **Goal**: Set up the physical directory structure and import the core YouTube knowledge files (the Master Knowledge Document `MKD.md`, `ARCHITECTURE.md`, `SKILL.md`) into `YOUTUBE-AUTOMATION-FACTORY`. Create skeleton implementations for the APEX-7 components:
   - `memory.py` (Memory Query Interface)
   - `event_bus.py` (Publish-Subscribe Bus)
