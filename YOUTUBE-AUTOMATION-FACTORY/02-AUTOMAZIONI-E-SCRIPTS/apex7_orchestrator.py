@@ -299,6 +299,28 @@ class Apex7Orchestrator:
             })
         return channels
 
+    def _cashcow_for_channel(self, ch: dict) -> dict:
+        """Cashcow check su stima aggregata dal canale reale (01_MAPPA_CANALI.md non fornisce
+        dati singolo-video da Video IQ, solo range di viste medie per canale: usiamo low/high
+        come 2 punti dati rappresentativi, età stimata dalla frequenza di upload reale)."""
+        age_hours = FREQ_TO_HOURS.get(ch["freq_upload"].lower(), DEFAULT_FREQ_HOURS)
+        canale_reale = {
+            "channel": ch["channel"],
+            "videos": [
+                {"title": f"{ch['channel']} - stima video tipo (fascia bassa)", "views": ch["view_medie_low"], "age_hours": age_hours, "errors": []},
+                {"title": f"{ch['channel']} - stima video tipo (fascia alta)", "views": ch["view_medie_high"], "age_hours": age_hours, "errors": []},
+            ]
+        }
+        tmp_json_path = os.path.join(FACTORY_DIR, f"canale_tmp_{uuid.uuid4().hex[:6]}.json")
+        self.save_json(tmp_json_path, canale_reale)
+        res = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "cashcow_check.py"), "--json", tmp_json_path], capture_output=True, text=True)
+        if os.path.exists(tmp_json_path):
+            os.remove(tmp_json_path)
+        try:
+            return json.loads(res.stdout)
+        except (json.JSONDecodeError, ValueError):
+            return {"index": 0, "is_cashcow": False}
+
     def run_phase_1(self, interactive: bool) -> bool:
         print("[📋 PLANNER] Inizializzazione della ricerca di nicchia...")
         topic = self.working_memory.get("topic")
@@ -326,34 +348,42 @@ class Apex7Orchestrator:
             return (tier_weight.get(ch["opportunita_manuale"], 0), (ch["view_medie_low"] + ch["view_medie_high"]) / 2)
 
         ranked = sorted(channels, key=score, reverse=True)
-        scelto = ranked[0]
-        alternative = [c["channel"] for c in ranked[1:4]]
 
-        # Cashcow check su stima aggregata dal canale reale scelto (01_MAPPA_CANALI.md non
-        # fornisce dati singolo-video da Video IQ, solo range di viste medie per canale: usiamo
-        # low/high come 2 punti dati rappresentativi, età stimata dalla frequenza di upload reale).
-        age_hours = FREQ_TO_HOURS.get(scelto["freq_upload"].lower(), DEFAULT_FREQ_HOURS)
-        canale_reale = {
-            "channel": scelto["channel"],
-            "videos": [
-                {"title": f"{scelto['channel']} - stima video tipo (fascia bassa)", "views": scelto["view_medie_low"], "age_hours": age_hours, "errors": []},
-                {"title": f"{scelto['channel']} - stima video tipo (fascia alta)", "views": scelto["view_medie_high"], "age_hours": age_hours, "errors": []},
-            ]
-        }
-        tmp_json_path = os.path.join(FACTORY_DIR, "canale_tmp.json")
-        self.save_json(tmp_json_path, canale_reale)
+        # 🚧 Niche-gate REALE: prova i candidati in ordine di priorità finché uno non supera
+        # davvero la soglia (>=60). Non ci si ferma al primo della lista solo perché è "il più in
+        # target": un canale a fit alto ma views basse può fallire, si passa al prossimo candidato
+        # reale — esattamente come farebbe un niche-scout umano.
+        scartati = []
+        scelto, cashcow = None, None
+        for candidate in ranked:
+            result = self._cashcow_for_channel(candidate)
+            print(f"[🔬 ANALYST] Cashcow Check — {candidate['channel']}: indice {result.get('index')} "
+                  f"({'PASS' if result.get('is_cashcow') else 'FAIL'})")
+            if result.get("is_cashcow"):
+                scelto, cashcow = candidate, result
+                break
+            scartati.append((candidate["channel"], result.get("index")))
 
-        res = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "cashcow_check.py"), "--json", tmp_json_path], capture_output=True, text=True)
-        if os.path.exists(tmp_json_path):
-            os.remove(tmp_json_path)
+        if scelto is None:
+            # Nessuno dei 20 canali reali supera la soglia niche-gate: fallimento reale, non un
+            # PASS di comodo. Si registra comunque il tentativo per l'audit.
+            print(f"[🔴 CRITIC] Niche-gate FAIL su tutti i {len(ranked)} canali candidati: {scartati}")
+            with open(scheda_nicchia_path, "w", encoding="utf-8") as f:
+                f.write(f"# Scheda Nicchia: {topic}\n\n")
+                f.write("- Fonte dati: niche-scout-analysis/01_MAPPA_CANALI.md (analisi reale, Gemini)\n")
+                f.write(f"- Verdetto niche-gate: FAIL su tutti i {len(ranked)} canali candidati (nessuno >= soglia 60)\n")
+                f.write(f"- Indici scartati: {scartati}\n")
+            self.log_decision(
+                "DEC-nicchia-001",
+                "Nessun canale reale supera il niche-gate",
+                f"Tutti i {len(ranked)} canali di 01_MAPPA_CANALI.md sono sotto soglia 60 di Cash Cow Index.",
+                [c for c, _ in scartati],
+                0.0
+            )
+            return False
 
-        print(f"[🔬 ANALYST] Risultato Cashcow Check ({scelto['channel']}):\n{res.stdout}")
-        try:
-            cashcow = json.loads(res.stdout)
-        except (json.JSONDecodeError, ValueError):
-            cashcow = {"index": 0, "is_cashcow": False}
-
-        verdetto = "PASS" if cashcow.get("is_cashcow") else "FAIL"
+        verdetto = "PASS"
+        alternative = [c for c, _ in scartati[:3]] or [c["channel"] for c in ranked if c is not scelto][:3]
 
         # Scrittura scheda-nicchia.md con dati reali (non più il canale mock "Legami d'amore")
         with open(scheda_nicchia_path, "w", encoding="utf-8") as f:
@@ -364,15 +394,17 @@ class Apex7Orchestrator:
             f.write(f"- View medie stimate: {scelto['view_medie_low']:.0f} - {scelto['view_medie_high']:.0f}\n")
             f.write(f"- Formato: {scelto['formato']}\n")
             f.write(f"- Cluster / Opportunità per il Manuale: {scelto['cluster']} ({scelto['opportunita_manuale']})\n")
-            f.write(f"- Indice Cash Cow (stima da viste medie aggregate, non da Video IQ singolo-video): {cashcow.get('index')} (Soglia superata: {'SÌ' if cashcow.get('is_cashcow') else 'NO'})\n")
+            f.write(f"- Indice Cash Cow (stima da viste medie aggregate, non da Video IQ singolo-video): {cashcow.get('index')} (Soglia superata: SÌ)\n")
             f.write(f"- Verdetto niche-gate: {verdetto}\n")
+            if scartati:
+                f.write(f"- Candidati scartati prima di questo (sotto soglia 60): {scartati}\n")
 
         self.log_decision(
             "DEC-nicchia-001",
             f"Selezione canale reale: {scelto['channel']} ({scelto['handle']})",
             f"Cluster '{scelto['cluster']}', opportunità '{scelto['opportunita_manuale']}' per il Manuale Claude Code "
             f"(analisi niche-scout Gemini), view medie {scelto['view_medie_low']:.0f}-{scelto['view_medie_high']:.0f}, "
-            f"indice cash cow stimato {cashcow.get('index')} ({verdetto}).",
+            f"indice cash cow reale {cashcow.get('index')} (PASS). Scartati prima per niche-gate FAIL: {scartati}.",
             alternative,
             0.85 if scelto["opportunita_manuale"] == "Altissima" else 0.65
         )

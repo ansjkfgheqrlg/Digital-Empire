@@ -1,4 +1,17 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: YT Factory F1 dati reali · audit YOUTUBE-AUTOMATION-FACTORY · Estate=cervello · preventa-agents chiuso 100% · APEX-7 Level 2 · agenti PEZZO 2)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: YT Factory F1 niche-gate bloccante · dati reali · audit · Estate=cervello · preventa-agents chiuso 100% · APEX-7 Level 2 · agenti PEZZO 2)
+
+## 🚧 2026-07-27 — YOUTUBE-AUTOMATION-FACTORY: NICHE-GATE REALE E BLOCCANTE — CP-20260727-010
+> Gael ha chiesto ("includilo") di completare [CP-20260727-009](checkpoints/CP-20260727-009.md):
+> il verdetto FAIL era già calcolato onestamente ma non fermava nulla. Ora `run_phase_1` prova i
+> canali reali candidati in ordine di priorità finché uno non supera davvero la soglia 60 (retry
+> automatico, come farebbe un niche-scout umano — non hard-fail al primo tentativo, altrimenti
+> qualunque canale a fit alto ma views modeste avrebbe fermato l'intera pipeline).
+>
+> **Verificato:** Alberto Olla (44.0), Martes AI (19.7), Piero Savastano (17.3), SOS Automazioni
+> (20.2) scartati in sequenza — tutti tier "Altissima opportunità" ma viste reali basse — **Andrea
+> Ciraolo selezionato con indice reale 78.4 (PASS)**, tier "Media/Alta" ma viste 10.000-25.000.
+> Se tutti e 20 i canali reali falliscono, `run_phase_1` ritorna `False` per davvero
+> (`sys.exit(1)`). 11/11 test invariati verdi. Vedi [CP-20260727-010](checkpoints/CP-20260727-010.md).
 
 ## 🚀 2026-07-27 — YOUTUBE-AUTOMATION-FACTORY: FASE 1 (SCOUTING) COLLEGATA A DATI REALI — CP-20260727-009
 > Via libera di Gael sul Task 1 di [CP-20260727-007](checkpoints/CP-20260727-007.md). `run_phase_1`

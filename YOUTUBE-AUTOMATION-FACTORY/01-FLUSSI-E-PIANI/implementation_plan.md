@@ -44,9 +44,15 @@ prodotto un video reale né mai processato una nicchia reale. Stesso pattern ide
    `scheda-nicchia.md` e il decision log ora riportano il **verdetto reale** (può essere FAIL:
    verificato con un run manuale, canale scelto "Alberto Olla", indice 44.0, sotto soglia 60 →
    niche-gate FAIL — la vecchia versione scriveva sempre "PASS" per costruzione, questa no).
-   11/11 test invariati verdi. **Non ancora fatto**: enforcement reale del niche-gate (oggi un
-   FAIL viene scritto onestamente ma la fase ritorna comunque `True` e il workflow prosegue —
-   bloccare davvero il workflow su FAIL è una scelta di processo, non tecnica, da confermare).
+   11/11 test invariati verdi.
+   **Aggiornamento 2026-07-27 (stesso giorno, via libera Gael "includilo"): niche-gate ora reale
+   e bloccante.** `run_phase_1` prova i candidati in ordine di priorità finché uno non supera
+   davvero la soglia 60 (retry automatico, come farebbe un niche-scout umano — non si accontenta
+   del primo canale "in target" se le sue viste reali sono troppo basse). Verificato: Alberto Olla
+   (44.0), Martes AI (19.7), Piero Savastano (17.3), SOS Automazioni (20.2) scartati in sequenza,
+   **Andrea Ciraolo selezionato con indice reale 78.4 (PASS)**. Se TUTTI e 20 i canali reali
+   falliscono il gate, `run_phase_1` ora ritorna `False` per davvero (`sys.exit(1)`, "Riprendi con
+   --resume") invece di forzare comunque un PASS.
 2. **F2 → dati reali**: generare `candidati-video.json` dai video reali del canale scelto in F1, non dai 2 hardcoded.
 3. **F3 → script reale**: invocare l'agente `operatori/script-writer.md` sul video/nicchia reale, non scrivere sempre lo stesso testo.
 4. **F4 → produzione reale**: generare la spec Fliki dallo script reale di F3 (scene multiple, non 1 fissa).
