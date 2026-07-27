@@ -193,7 +193,7 @@ class MetaAgent:
 
         global_memory.record_strategy_outcome(choice, success=False)
 
-        print(f"[{self.agent_id}] [STALLO] MAX, il sistema e' fermo su {task_id}. "
+        print(f"[{self.agent_id}] 🚨 MAX, il sistema e' in stallo su {task_id}. "
               f"Decisione registrata ({decision_id}). Serve conferma umana.")
 
     def handle_gate_escalated(self, event: Dict[str, Any]):
@@ -270,7 +270,7 @@ class MetaAgent:
             outcome="APPLIED",
             rationale=reason,
         )
-        print(f"[{self.agent_id}] [HUMAN OVERRIDE] di {operator}: {reason}. "
+        print(f"[{self.agent_id}] ⛔ HUMAN OVERRIDE di {operator}: {reason}. "
               f"{len(self.registry)} agenti congelati.")
         return {"frozen": True, "reason": reason, "agents_frozen": len(self.registry)}
 

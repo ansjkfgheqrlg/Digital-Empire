@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: APEX-7 Level 2 operativo · agenti operativi PEZZO 2 · sync Gael riallineato)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: preventa-agents Phase B chiusa · APEX-7 Level 2 operativo · agenti operativi PEZZO 2 · sync Gael riallineato)
 
 ## ⚡ 2026-07-27 — APEX-7 LEVEL 2 OPERATIVO — CP-20260727-002
 Sistema nervoso multi-agente dello Stream S7 portato da markdown descrittivo a codice
@@ -10,6 +10,24 @@ gate finale L6→L7 **PASSED 7/7**.
 **RIPRESA DA:** `company/Ecosistemi/12-STREAM-S7-BOT/STATO-RIPRESA.md` — prossimo L2→L3
 (loop adattivi con dati reali del bot) + task parallelo /content-forge (agenti/skill da
 markdown a operativi, uno per uno con checklist, metodo APEX-7).
+
+---
+
+## ✅ 2026-07-27 — PREVENTA-AGENTS PHASE B CHIUSA — CP-20260727-003
+> Chiude il difetto aperto da [CP-20260727-001](checkpoints/CP-20260727-001.md): `agents.py`
+> (facade di orchestrazione in `Outreach/preventa-maps-scraper/02-AUTOMAZIONI-E-SCRIPTS/`) era
+> rotto da 2 giorni (`ModuleNotFoundError: agente_scraper`) perché la Phase A (25/07) aveva
+> cancellato gli 8 agenti flat di `03-AGENTI-E-RUOLI/` per il rebuild cartella-per-agente, ma
+> solo `writer/` era stato ricostruito.
+>
+> **Ricostruiti tutti e 7** (`scraper, qualificatore, sender, responder, integratore-sheets, gate,
+> orchestratore`), recuperando la logica originale da git (nessuna riscrittura a memoria).
+> **Nota per chi riprende:** `gate/` e `orchestratore/` NON sono porting diretti — delegano
+> rispettivamente a `gate_agent.py` e a `Conductor`/`orchestrator.py` per non reintrodurre la
+> duplicazione che i vecchi file flat avevano. Import verificato pulito, **13/13 test verdi**.
+> Nessun blocco residuo su questo fronte.
+
+---
 
 ## 🔧 2026-07-25 — AGENTI OPERATIVI PEZZO 2 — CP-20260725-002
 CRO-COPY-ARCHITECT promosso 0→10/10 (agente copy APSOC, tocca cassa S2+S6). Filtro corredi nel
