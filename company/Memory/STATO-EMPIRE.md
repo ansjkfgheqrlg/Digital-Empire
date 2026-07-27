@@ -1,4 +1,52 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: preventa-agents verificato 2x + fix regressione sync · APEX-7 Level 2 operativo · agenti operativi PEZZO 2)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: audit YOUTUBE-AUTOMATION-FACTORY · preventa-agents verificato 4x, controllo chiuso al 100% · APEX-7 Level 2 operativo · agenti operativi PEZZO 2)
+
+## 🔎 2026-07-27 — AUDIT YOUTUBE-AUTOMATION-FACTORY (richiesta Gael) — CP-20260727-007
+> Gael ha chiesto lo stato dei task su `YOUTUBE-AUTOMATION-FACTORY`. Prima di rispondere, audit
+> del codice riga per riga (non fidarsi del checkpoint precedente CP-20260724-008, che segnalava
+> solo le Fasi 5-6 come hardcoded).
+>
+> **Risultato: lo scaffolding APEX-7 è reale** (7 Plan, tutti testati, **11/11 test verdi**, 1 run
+> E2E reale già loggata). **Ma il contenuto è simulato in TUTTE le 6 fasi**, non solo 5-6: F1 usa
+> un canale mock invece dei dati REALI niche-scout di Gemini (già pronti in
+> `WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/` da settimane), F2-F4 scrivono
+> candidati/script/spec fissi, `execute_critic` ritorna sempre lo stesso punteggio (il gate "score
+> >=7.5" non può mai fallire), e la Dashboard finale scrive sempre "🟢 PASS" a prescindere
+> dall'esito reale. I motori di calcolo sotto (seo_score.py, cashcow_check.py, ecc.) sembrano
+> reali — il problema è che nessuno gli passa mai dati veri.
+>
+> **Nessuna modifica al codice** (vincolo sovrano: serve via libera esplicita). Task aperti, in
+> ordine di priorità, elencati in
+> [`YOUTUBE-AUTOMATION-FACTORY/01-FLUSSI-E-PIANI/implementation_plan.md`](../../YOUTUBE-AUTOMATION-FACTORY/01-FLUSSI-E-PIANI/implementation_plan.md)
+> (sezione "STATO REALE" in cima al file). Vedi [CP-20260727-007](checkpoints/CP-20260727-007.md).
+
+## ✅ 2026-07-27 — PREVENTA-AGENTS: CONTROLLO CHIUSO AL 100% — CP-20260727-006
+Gael ha chiesto di aggiornare le task su `preventa-maps-scraper` e riportarle. Completato
+l'ultimo controllo lasciato in sospeso da [CP-20260727-005](checkpoints/CP-20260727-005.md):
+conteggio blocchi ```python``` per `AGENTE.md` → **8/8 agenti con 1 blocco embedded ciascuno**
+(nessuno solo-linkato), nessuno stub flat residuo, `test_apex7.py` rieseguito da zero →
+**13/13 OK, exit 0**. Fase tecnica (rebuild cartella-per-agente) confermata chiusa, verificata
+4 volte di fila con lo stesso esito. Nessuna azione codice pendente lato scraper/agenti.
+Restano solo 3 voci bloccate da decisioni di **Max**: M-EST-9 (province ufficiali per scalare
+oltre il pilota), Gate-CONTATTI (sorgente lead alternativa), prezzo Preventa (DEC-EST-005).
+
+**RIPRESA DA:** nessun blocco tecnico su preventa-agents. Prossimo lavoro libero, oppure
+attendere Max su M-EST-9/prezzo Preventa per scalare lo scraper oltre il pilota.
+
+---
+
+## ✅ 2026-07-27 — PREVENTA-AGENTS: CONTROLLO SU RICHIESTA GAEL — CP-20260727-005
+Gael ha chiesto conferma che le modifiche di [CP-20260727-003](checkpoints/CP-20260727-003.md)/
+[CP-20260727-004](checkpoints/CP-20260727-004.md) fossero salvate nella cartella
+`Outreach/preventa-maps-scraper/`. Confermato: `git status` pulito (main allineato a origin),
+tutti e 8 gli agenti tracciati in `03-AGENTI-E-RUOLI/` (16 file), `import agents` pulito con
+tutte le classi istanziabili. Interrotto su richiesta esplicita di Gael prima dell'ultimo
+controllo (conteggio blocchi python per file + rerun `test_apex7.py`) — non bloccante, già verde
+2 volte in CP-004.
+
+**RIPRESA DA:** se serve chiudere al 100%: conteggio ```` ```python ```` per `AGENTE.md` +
+rerun `test_apex7.py`. Altrimenti nessun blocco.
+
+---
 
 ## ✅ 2026-07-27 — PREVENTA-AGENTS VERIFICATO A RUNTIME + FIX REGRESSIONE SYNC — CP-20260727-004
 Verifica indipendente del lavoro di [CP-20260727-003](checkpoints/CP-20260727-003.md) (fatto da
