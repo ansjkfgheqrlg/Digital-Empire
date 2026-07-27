@@ -1,4 +1,30 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Arena: dossier 26 contratto+8 prompt · Claude: Estate=cervello · preventa-agents verificato · APEX-7 Level 2 · agenti PEZZO 2)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Arena: kit vendita 5-15k + dossier 26 · Claude: Estate=cervello · preventa-agents verificato · APEX-7 Level 2)
+
+## 💼 2026-07-27 — KIT DI VENDITA WORKFLOW €5-15k (P4) — CP-20260727-007
+Max ha lanciato il prompt **P4** del dossier 26. Consegnato in `Outreach/kit-vendita-workflow/`:
+**caso studio Novacar** (1 pagina, numeri presi uno a uno da `09b-prove-novacar.tsx`, zero parole
+vietate, testimonianza lasciata in blocco commentato perché **non l'abbiamo ancora**) · **script demo
+30'** col minutaggio richiesto, frasi esatte e 18 obiezioni gestite (la diagnosi fa quantificare al
+cliente ore e clienti persi: i numeri li dice lui) · **pagina di proposta** in 2 pagine con incluso/NON
+incluso, prezzo in cima come cifra unica, e §7 "se le cose vanno male".
+
+**🚨 Trovato mentre scrivevo — il sito si contraddice** (`04-AVVISO-CONFLITTO-SITO.md`): 4 claim in
+`agency-empire/src/sections/15-objections.tsx` oggi **indifendibili in demo** — "3-5 clienti nuovi nel
+primo mese per la maggior parte dei nostri clienti" (sul disco c'è **un** cliente, ed è Preventa non
+Outreach), "il 90% vuole iniziare la settimana dopo" (nessun registro demo → numero senza denominatore),
+"in ogni demo mostriamo workflow del tuo settore", "si ripaga al primo cliente". La sezione **PROVE** è
+scritta con onestà chirurgica, la sezione **OBIEZIONI** no: la seconda **danneggia** la prima.
+**Decisione a Max**, sito non toccato.
+
+**Autocritica (`05`):** il limite è strutturale, non di copy — Novacar prova che consegniamo software di
+preventivi a un cliente da €490+149, **non** che portiamo clienti con un workflow da €5-15k. Lo scettico
+chiede "chi avete aiutato a trovare clienti?" e oggi la risposta onesta è *nessuno ancora*. La prova
+mancante si crea solo col **dogfooding documentato = P1**, ancora fermo.
+
+**▶️ RIPRESA DA:** **Max** → (a) decide sui 4 claim del sito, (b) **telefonata di 10' a Novacar per la
+testimonianza firmata** — asset a più alto rapporto valore/sforzo del repo. **Gael** → **P1**, invariato.
+
+---
 
 ## 🎯 2026-07-27 — ARENA: CONTRATTO OPERATIVO + ARSENALE 8 PROMPT — CP-20260727-006
 Max ha chiesto ad Arena quali task fare lui e Gael e cosa si può costruire insieme, ponendo un vincolo
