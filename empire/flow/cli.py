@@ -225,3 +225,12 @@ def register(sub) -> None:
         pass
     else:
         _avvia.register(sub)
+
+    # `empire controllo` — centro di comando su tutti i workflow. Registrato da qui
+    # (cli.py congelato).
+    try:
+        from .. import controllo as _controllo
+    except ImportError:
+        pass
+    else:
+        _controllo.register(sub)
