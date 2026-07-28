@@ -151,9 +151,65 @@
       "titolo": "Preventa->Areus: verificare wiring EmpireDesk + decidere integrazione Kanban Aureus",
       "stato": "fatto",
       "note": "FATTO da Claude 2026-07-28: (1) EmpireDesk --selftest verde, modulo preventa si registra; (2) run scraper reale (2 lead ALTA Milano) -> push Areus confermato, pannello li mostra, round-trip cambio stage NEW->CONTACTED->NEW testato; (3) sanity-check file ownership Gael (agents.py/run.py/orchestrator.py/integratore-areus/quality_gate.py/test_apex7.py) tutti puliti, nessun residuo Sheets, rimossa cartella orfana integratore-sheets/ (vuota, non tracciata); (4) DECISIONE: pannello Preventa resta STANDALONE per ora, non mappato nel Kanban SalesPipeline.tsx -- il tipo Lead del Kanban richiede email/contactPerson/value reali che i lead scraper freddi non hanno (niente email da Google Maps, niente nome titolare, value sarebbe un placeholder finto su lead non ancora umanamente qualificati). Lo stage enum resta compatibile apposta per un domani: quando un lead risponde con interesse reale, si promuove a mano nel Kanban (mapping, non redesign). Dettaglio in CP-20260728-0XX."
+    },
+    {
+      "id": "TASK-YT-001",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory: retrofit execute_critic + agents.py sul motore condiviso 11-APEX-7-CORE (ADR-010)",
+      "stato": "da_fare",
+      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-001. Gate: test_youtube_apex7.py 11/11 verde dopo il retrofit."
+    },
+    {
+      "id": "TASK-YT-002",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory: F4 Produzione, spec Fliki reale multi-scena da script.md di F3",
+      "stato": "da_fare",
+      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-002. Gate: 2 run diverse -> produzione-spec.json con scene_count/testo diversi."
+    },
+    {
+      "id": "TASK-YT-003",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory: F5 Pubblicazione, metadati/titolo/tag reali dal video+script scelti",
+      "stato": "da_fare",
+      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-003. Gate: 2 run diverse -> metadati.json con titolo/tag diversi, seo_score.py restano PASS."
+    },
+    {
+      "id": "TASK-YT-004",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory: F6 Audit, gate onesto -- niente views_per_hour finti senza video reale pubblicato",
+      "stato": "da_fare",
+      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-004. Gate: manifest memory/published_videos.json, performance_logs.json invariato se manifest assente."
+    },
+    {
+      "id": "TASK-YT-005",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory: Dashboard riflette l'esito reale (PASS/FAIL) della run corrente",
+      "stato": "da_fare",
+      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-005. Gate: run con niche-gate forzato a FAIL -> dashboard mostra FAIL, non sempre PASS."
+    },
+    {
+      "id": "TASK-YT-006",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory (cross-eco): ritiro reimplementazione APEX-7 indipendente in 12-STREAM-S7-BOT",
+      "stato": "da_fare",
+      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-006. P2, non bloccante, fare dopo TASK-YT-001..005. Gate: test_apex7.py di Stream-S7-Bot resta 9/9 verde."
+    },
+    {
+      "id": "TASK-YT-007",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory: aggiornare REGISTRO-IMPRESA.md + PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md",
+      "stato": "da_fare",
+      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-007. P2, a valle del retrofit."
     }
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-28 14:58"
+  "aggiornato": "2026-07-28 15:20"
 }

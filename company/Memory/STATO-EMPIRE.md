@@ -1,4 +1,34 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+
+## 🆔 2026-07-28 — YOUTUBE-AUTOMATION-FACTORY: task Gael formalizzati con ID (TASK-YT-001..007)
+
+> Max ha chiesto ID formali per ogni task, non solo un elenco G-YT-1..7 in un blocco
+> COORDINAMENTO. Fatto: 7 ID stabili `TASK-YT-001`..`TASK-YT-007`, registrati in
+> `EmpireDesk/state/taskboard.json` (`stato: da_fare`, owner Gael, 2026-07-28) e dettagliati in
+> un task file dedicato **`company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md`** — stesso
+> formato usato per `TASK-GAEL-20260728-STREAM-S7-BOT.md` (perché/già-fatto/lotti con gate
+> verificabile/perimetro/regole operative/DoD/ordine di marcia).
+>
+> Mapping ID → contenuto (dettagli completi nel task file):
+> - **TASK-YT-001** (P1): retrofit `execute_critic`+`agents.py` sul motore condiviso
+>   `11-APEX-7-CORE` (ADR-010) — sostituisce la mia patch interinale locale
+> - **TASK-YT-002** (P1): F4 Produzione, spec Fliki reale multi-scena da `script.md` di F3
+> - **TASK-YT-003** (P1): F5 Pubblicazione, metadati/titolo/tag reali dal video+script scelti
+> - **TASK-YT-004** (P1): F6 Audit, gate onesto — niente `views_per_hour` finti senza manifest
+>   `memory/published_videos.json` di un video REALMENTE pubblicato
+> - **TASK-YT-005** (P1): Dashboard riflette l'esito reale (PASS/FAIL) della run corrente
+> - **TASK-YT-006** (P2, cross-ecosistema): ritiro reimplementazione APEX-7 duplicata in
+>   `12-STREAM-S7-BOT` (non è il task trading G-A/G-B/G-C, è pulizia architetturale a parte)
+> - **TASK-YT-007** (P2): aggiornare `REGISTRO-IMPRESA.md` + `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md`
+>
+> Il vecchio blocco COORDINAMENTO informale (G-YT-1..7, più sotto in questo file) resta come
+> storico della decisione, ma **l'unica fonte aggiornabile ora è il task file + taskboard.json**:
+> Gael, quando chiudi un lotto, aggiorna lo `stato` del suo ID in `taskboard.json` a `fatto` con
+> `note` = riassunto + riferimento al checkpoint (non riscrivere questo blocco).
+>
+> **RIPRESA DA:** Gael legge `TASK-GAEL-20260728-YOUTUBE-FACTORY.md`, parte da TASK-YT-001.
+
+---
 
 ## ✅ 2026-07-28 — TASK-PREVENTA-AREUS-001 CHIUSA: EmpireDesk verificato, lead reali via Areus, decisione Kanban — CP-20260728-005
 Gael ha ripreso la task lasciata da Max in [CP-20260728-002](checkpoints/CP-20260728-002.md).
