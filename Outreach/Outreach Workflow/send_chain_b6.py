@@ -12,14 +12,17 @@ import sys
 import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from dotenv import load_dotenv
+
+load_dotenv()
 
 B5_FILE   = "emails_b5_ready.json"
 B6_FILE   = "emails_b6_ready.json"
 LIMIT_B6  = 472   # 500 - 28 B5
 DELAY     = 45    # secondi tra invii
 
-GMAIL_USER = "max.infoproducer@gmail.com"
-GMAIL_PASS = "kkgj pnsh vupw rily"
+GMAIL_USER = os.getenv("GMAIL_USER")
+GMAIL_PASS = os.getenv("GMAIL_APP_PASSWORD")
 
 BLACKLIST = {"assistenza.pazienti@studiobittante.com"}
 

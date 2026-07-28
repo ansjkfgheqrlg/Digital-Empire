@@ -7,14 +7,17 @@ QUANDO INVIARE: 2026-05-11 / 12 (giorno 4-5 dal batch 2)
 Come: python send_followup_b2.py
 """
 import csv
+import os
 import smtplib
 import sys
 import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from dotenv import load_dotenv
 
-GMAIL_USER = "max.infoproducer@gmail.com"
-GMAIL_PASSWORD = "kkgj pnsh vupw rily"
+load_dotenv()
+GMAIL_USER = os.getenv("GMAIL_USER")
+GMAIL_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 CSV_PATH = "leads_100.csv"
 
 BLACKLIST = {

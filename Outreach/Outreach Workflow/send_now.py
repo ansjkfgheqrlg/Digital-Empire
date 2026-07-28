@@ -2,14 +2,17 @@
 Invio diretto 30 email dentisti — template specifico, zero AI, zero attese.
 """
 import csv
+import os
 import re
 import smtplib
 import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from dotenv import load_dotenv
 
-GMAIL_USER = "max.infoproducer@gmail.com"
-GMAIL_PASSWORD = "kkgj pnsh vupw rily"
+load_dotenv()
+GMAIL_USER = os.getenv("GMAIL_USER")
+GMAIL_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 CSV_PATH = "leads_trovati.csv"
 MAX_SEND = 30
 SKIP_FIRST = 22  # già inviate

@@ -16,14 +16,18 @@ Come: python send_followup_b3.py
 Automatico: python send_followup_b3.py --auto
 """
 import json
+import os
 import smtplib
 import sys
 import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-GMAIL_USER = "max.infoproducer@gmail.com"
-GMAIL_PASSWORD = "kkgj pnsh vupw rily"
+from dotenv import load_dotenv
+
+load_dotenv()
+GMAIL_USER = os.getenv("GMAIL_USER")
+GMAIL_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 JSON_PATH = "emails_ready.json"
 DELAY_SECONDS = 90
 

@@ -11,15 +11,19 @@ QUANDO INVIARE: 2026-05-09 / 10 / 11 (giorno 3-5 dal batch 1)
 Come: python send_followup_b1.py
 """
 import csv
+import os
 import re
 import smtplib
 import sys
 import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from dotenv import load_dotenv
 
-GMAIL_USER = "max.infoproducer@gmail.com"
-GMAIL_PASSWORD = "kkgj pnsh vupw rily"
+load_dotenv()
+
+GMAIL_USER = os.getenv("GMAIL_USER")
+GMAIL_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 CSV_PATH = "leads_trovati.csv"
 MAX_LEADS = 30  # solo il primo batch
 

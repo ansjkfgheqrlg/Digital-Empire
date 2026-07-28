@@ -8,21 +8,26 @@ Run:
   python send_ready.py --dry-run   # mostra lista senza inviare
 """
 import json
+import os
 import smtplib
 import sys
 import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # ─── MULTI-ACCOUNT ROUND-ROBIN ───────────────────────────────────────────────
 # Per ogni account Gmail occorre una App Password (NON la password normale).
 # Come ottenerla: Google Account → Sicurezza → Verifica in due passaggi → App password
 # Crea una App Password con nome "Mail" e copia le 16 lettere (es. "aaaa bbbb cccc dddd").
-# Sostituisci ACCOUNT2_EMAIL / ACCOUNT3_EMAIL con le email reali e le relative App Password.
+# Account 1 da .env (GMAIL_USER/GMAIL_APP_PASSWORD). Per un secondo/terzo account, aggiungi
+# GMAIL_USER_2/GMAIL_APP_PASSWORD_2 ecc. al .env.
 GMAIL_ACCOUNTS = [
-    {"user": "max.infoproducer@gmail.com",  "password": "kkgj pnsh vupw rily"},
-    {"user": "ACCOUNT2_EMAIL",              "password": "ACCOUNT2_APP_PASSWORD"},
-    {"user": "ACCOUNT3_EMAIL",              "password": "ACCOUNT3_APP_PASSWORD"},
+    {"user": os.getenv("GMAIL_USER"),   "password": os.getenv("GMAIL_APP_PASSWORD")},
+    {"user": os.getenv("GMAIL_USER_2", "ACCOUNT2_EMAIL"), "password": os.getenv("GMAIL_APP_PASSWORD_2", "ACCOUNT2_APP_PASSWORD")},
+    {"user": os.getenv("GMAIL_USER_3", "ACCOUNT3_EMAIL"), "password": os.getenv("GMAIL_APP_PASSWORD_3", "ACCOUNT3_APP_PASSWORD")},
 ]
 
 # Solo account con email reale (esclude placeholder)

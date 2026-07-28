@@ -3,14 +3,17 @@ Filtra i placeholder e invia solo i lead reali da emails_b6_ready.json.
 Operazione atomica: filtro + invio nello stesso processo.
 """
 import json
+import os
 import re
 import smtplib
 import sys
 import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from dotenv import load_dotenv
 
-GMAIL_ACCOUNT = {"user": "max.infoproducer@gmail.com", "password": "kkgj pnsh vupw rily"}
+load_dotenv()
+GMAIL_ACCOUNT = {"user": os.getenv("GMAIL_USER"), "password": os.getenv("GMAIL_APP_PASSWORD")}
 INPUT_FILE = "emails_b6_ready.json"
 DELAY_SECONDS = 90
 
