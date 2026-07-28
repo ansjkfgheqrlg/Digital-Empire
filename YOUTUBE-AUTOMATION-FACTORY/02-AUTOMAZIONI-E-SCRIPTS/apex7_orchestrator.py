@@ -44,6 +44,47 @@ os.makedirs(TEMPLATES_DIR, exist_ok=True)
 # questo pacchetto sostituisce lo scouting a freddo con una mappa reale di 20 canali italiani.
 NICHE_SCOUT_DIR = os.path.abspath(os.path.join(FACTORY_DIR, "..", "WORKFLOW-ESTATE", "04-SKILLS-E-REFERENCE", "youtube-niche-scout-analysis"))
 MAPPA_CANALI_PATH = os.path.join(NICHE_SCOUT_DIR, "01_MAPPA_CANALI.md")
+IDEE_VIDEO_PATH = os.path.join(NICHE_SCOUT_DIR, "03_20_IDEE_VIDEO.md")
+
+# AP Video System (02_PATTERN_VINCENTI.md §4): durata ideale per un video che converte sul
+# funnel Manuale Claude Code — numero reale documentato, non inventato qui.
+AP_VIDEO_SYSTEM_DURATION = "12-15 minuti"
+
+_SCRIPT_STOPWORDS = set(
+    "di del della delle dei per con che il la lo le i gli un una uno e o ma se non a al alla ai "
+    "agli in nel nella con come cosa questo questa questi queste tuo tua tuoi sul sulla su ora "
+    "oggi ho ha hai fare fai è sono stato stata the and with".split()
+)
+
+
+def _tokenize_for_matching(text: str) -> set:
+    return {w for w in re.findall(r"[a-zA-Zàèéìòù0-9']+", (text or "").lower())
+            if len(w) > 2 and w not in _SCRIPT_STOPWORDS}
+
+
+def _load_video_ideas() -> list[dict]:
+    """Le 20 idee video reali (titolo/angolo/hook/CTA) pre-scritte da Gemini per il funnel
+    Manuale Claude Code, in 03_20_IDEE_VIDEO.md. Non generiamo hook/CTA a runtime: selezioniamo
+    quella più affine al video reale scelto in F2 e la adattiamo (script-writer.md §2)."""
+    if not os.path.exists(IDEE_VIDEO_PATH):
+        return []
+    text = open(IDEE_VIDEO_PATH, encoding="utf-8").read()
+    titles = re.findall(r"\n### \d+\.\s*(.+)", text)
+    blocks = re.split(r"\n### \d+\.\s*.+\n", text)[1:]
+    ideas = []
+    for title, block in zip(titles, blocks):
+        angolo_m = re.search(r"\*\*Angolo:\*\*\s*(.+)", block)
+        hook_m = re.search(r'\*\*Hook \(Primi 15s\):\*\*\s*\*"(.+?)"\*', block, re.DOTALL)
+        cta_m = re.search(r'\*\*CTA Transition:\*\*\s*\*"(.+?)"\*', block, re.DOTALL)
+        hook = hook_m.group(1).strip() if hook_m else ""
+        ideas.append({
+            "title": title.strip(),
+            "angolo": angolo_m.group(1).strip() if angolo_m else "",
+            "hook": hook,
+            "cta": cta_m.group(1).strip() if cta_m else "",
+            "hook_type": "Question" if "?" in hook else "Statement",
+        })
+    return ideas
 
 # Tier di opportunità per il Manuale Claude Code, dalla sezione "Analisi e Clusterizzazione dei
 # Formati" di 01_MAPPA_CANALI.md (analisi reale di Gemini — riportata qui, non inventata).
@@ -680,22 +721,88 @@ class Apex7Orchestrator:
     # --- Fase 3: Script ---
     def run_phase_3(self, interactive: bool) -> bool:
         print("[✍️ WRITER] Scrittura dello script con gancio, valore e 3 CTA...")
+
+        video_titolo = self.working_memory.get("video_scelto")
+        video_url = self.working_memory.get("video_scelto_url", "")
+        if not video_titolo:
+            print("[!] ERRORE: nessun video scelto in Fase 2 (esegui prima la Fase 2). Impossibile scrivere uno script senza un video reale di riferimento.")
+            return False
+
+        # Rileggiamo l'output reale della Fase 2 (seo-report.json) per gli errori/punteggio
+        # reali del candidato A-upside — script-writer.md li richiede come input esplicito.
+        seo_report = self.load_json(os.path.join(TEMPLATES_DIR, "seo-report.json"), {"videos": []})
+        a_upside_report = next((v for v in seo_report.get("videos", []) if v.get("label") == "A-upside"), {})
+        seo_score = a_upside_report.get("seo_score", self.working_memory.get("cashcow_index"))
+
+        candidati = self.load_json(os.path.join(TEMPLATES_DIR, "candidati-video.json"), {"videos": []})
+        a_upside_candidato = next((v for v in candidati.get("videos", []) if v.get("title") == video_titolo), {})
+        errori = a_upside_candidato.get("errors", [])
+
+        # Selezione dell'idea reale più affine (03_20_IDEE_VIDEO.md, 20 idee pre-scritte da
+        # Gemini per il funnel Manuale Claude Code) — non generiamo hook/CTA a runtime.
+        idee = _load_video_ideas()
+        if not idee:
+            print(f"[!] ERRORE: nessuna idea video reale trovata in {IDEE_VIDEO_PATH}. Impossibile procedere senza materiale reale.")
+            return False
+
+        learned_rules = self.load_json(self.learned_rules_path, {})
+        hook_preferiti = set(learned_rules.get("successful_hook_types", []))
+        cand_tok = _tokenize_for_matching(video_titolo)
+
+        def idea_score(idx_idea):
+            idx, idea = idx_idea
+            overlap = len(cand_tok & _tokenize_for_matching(idea["title"] + " " + idea["angolo"] + " " + idea["hook"]))
+            hook_bonus = 1 if idea["hook_type"] in hook_preferiti else 0
+            return (overlap, hook_bonus, -idx)  # a parità: hook-type storicamente vincente, poi idea più bassa
+
+        idx_scelto, idea_scelta = max(enumerate(idee), key=idea_score)
+
         script_path = os.path.join(TEMPLATES_DIR, "script.md")
-        
         with open(script_path, "w", encoding="utf-8") as f:
-            f.write("# Script: Come installare ed usare Claude Code\n\n")
-            f.write("## HOOK\nVuoi installare l'agente IA più veloce ed efficiente direttamente sul tuo computer? In questo video...\n\n")
-            f.write("## CORPO\nEcco i comandi per installarlo...\n\n")
-            f.write("## CTA\n1. Iscriviti per altri video\n2. Scarica la guida nei commenti\n3. Entra nella community\n")
-            
+            f.write(f"# Script: {idea_scelta['title']}\n\n")
+            f.write(f"- **Formato di riferimento (proven, dati reali):** \"{video_titolo}\" ({video_url})")
+            if seo_score is not None:
+                f.write(f" — SEO reale del titolo originale: {seo_score}/100")
+            if errori:
+                f.write(f" — debolezza da correggere: {'; '.join(errori)}")
+            f.write("\n")
+            f.write(f"- **Idea sorgente (03_20_IDEE_VIDEO.md, idea #{idx_scelto + 1}):** selezionata per affinità tematica reale col video candidato.\n\n")
+
+            f.write("## HOOK (primi 10-15s)\n")
+            f.write(f"{idea_scelta['hook']}\n")
+            f.write(f"➕ Adattamento: aggancia esplicitamente chi cerca contenuti simili a \"{video_titolo}\" "
+                    f"(query dove il video originale ha una SEO debole sulla nostra keyword 'claude code').\n\n")
+
+            f.write("## INTRO (valore proposto)\n")
+            f.write(f"{idea_scelta['angolo']} ➕ Prometti da subito il risultato pratico che vedrai nel corpo del video.\n\n")
+
+            f.write(f"## CORPO ({AP_VIDEO_SYSTEM_DURATION} — AP Video System, 02_PATTERN_VINCENTI.md §4)\n")
+            f.write("- 0:00-1:30 Hook + intro del problema\n")
+            f.write("- 1:30-10:00 Dimostrazione pratica reale (screencast Claude Code)")
+            if errori:
+                f.write(f", correggendo esplicitamente: {'; '.join(errori)}")
+            f.write("\n- 10:00-15:00 Transizione morbida verso il Manuale (non \"compra ora\", ma \"questo è l'1% di quello che puoi fare\")\n\n")
+
+            f.write("## CTA (iniziale leggera + metà + finale forte)\n")
+            f.write(f"{idea_scelta['cta']}\n\n")
+
+            f.write("## Note SEO inline\n")
+            f.write("Keyword da spingere nel parlato: \"claude code\".\n")
+            if learned_rules.get("high_performing_tags"):
+                f.write(f"Tag ad alta performance storica (learned_rules.json): {', '.join(learned_rules['high_performing_tags'])}.\n")
+            if hook_preferiti:
+                f.write(f"Hook-type storicamente vincente (learned_rules.json): {', '.join(hook_preferiti)} "
+                        f"(questa idea è di tipo '{idea_scelta['hook_type']}').\n")
+
         # Sottoponiamo a loop di critica qualitativa
-        score, metrics = self.execute_critic("Script", "Come installare ed usare Claude Code")
+        score, metrics = self.execute_critic("Script", idea_scelta["title"])
         if score < 7.5:
             print("[🔧 REFINER] Rielaborazione dello script basata sul feedback...")
-            # Simulazione rafforzamento del testo
-            score, metrics = self.execute_critic("Script Rafforzato", "Come installare ed usare Claude Code v2")
-            
+            score, metrics = self.execute_critic("Script Rafforzato", idea_scelta["title"] + " v2")
+
+        print(f"[✍️ WRITER] Script scritto da idea reale #{idx_scelto + 1} \"{idea_scelta['title'][:50]}...\" per il video \"{video_titolo[:50]}...\"")
         self.working_memory["script_path"] = script_path
+        self.working_memory["script_idea_title"] = idea_scelta["title"]
         return True
 
     # --- Fase 4: Produzione ---

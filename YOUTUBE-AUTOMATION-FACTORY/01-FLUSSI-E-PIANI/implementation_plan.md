@@ -67,7 +67,19 @@ prodotto un video reale né mai processato una nicchia reale. Stesso pattern ide
    B-sicurezza = prossimo per velocity con SEO pari/superiore. Verificato su Andrea Ciraolo (26
    video reali): candidati e punteggi cambiano ad ogni fetch perché i dati sono vivi, non fissi.
    11/11 test invariati verdi (usano la cache committata, zero chiamate di rete nei test).
-3. **F3 → script reale**: invocare l'agente `operatori/script-writer.md` sul video/nicchia reale, non scrivere sempre lo stesso testo.
+3. ✅ **F3 → script reale (FATTO 2026-07-28)**: `run_phase_3` ora implementa la spec di
+   `operatori/script-writer.md` con materiale reale invece di ripetere sempre lo stesso testo.
+   Nuova funzione `_load_video_ideas()` parsa le 20 idee pre-scritte da Gemini in
+   `03_20_IDEE_VIDEO.md` (titolo/angolo/hook/CTA reali, non generati a runtime). Selezione
+   deterministica dell'idea più affine al video A-upside scelto in F2 (overlap di token sul
+   titolo reale, tie-break su hook-type storicamente vincente da `learned_rules.json`, poi indice
+   più basso). Lo script include: hook e CTA **verbatim** dall'idea reale scelta, le debolezze SEO
+   reali da correggere (lette da `seo-report.json`/`candidati-video.json` di F2), la durata AP
+   Video System (12-15 min, da `02_PATTERN_VINCENTI.md` §4) e le note SEO da `learned_rules.json`
+   (tag/hook-type storicamente performanti). Le aggiunte non presenti nella fonte sono marcate
+   `➕` (convenzione di `script-writer.md` §4.5). Verificato: idea #1 "Come installare e
+   configurare Claude Code in 5 minuti" selezionata per il video reale "KIMI K3 Vibe Coding
+   Tutorial" (overlap tematico + tie-break deterministico). 11/11 test invariati verdi.
 4. **F4 → produzione reale**: generare la spec Fliki dallo script reale di F3 (scene multiple, non 1 fissa).
 5. **F5 → metadati/SEO reali**: titolo/tag/keyword dal video reale scelto, non sempre "claude code".
 6. **F6 → performance reali**: il log di performance deve venire da un video REALMENTE pubblicato, non da metriche inventate — altrimenti il self-improver ottimizza su rumore.

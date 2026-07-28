@@ -1,4 +1,15 @@
-# STATO EMPIRE -- aggiornato 2026-07-27/28 (Claude: YT Factory F2 video LIVE reali · agenti PEZZO 3 · Preventa lead REALI + bug scraper fixato · YT Factory F1 niche-gate bloccante · Estate=cervello)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: YT Factory F3 script reale · F2 video LIVE reali · agenti PEZZO 3 · Preventa lead REALI · F1 niche-gate bloccante · Estate=cervello)
+
+## ✍️ 2026-07-28 — YOUTUBE-AUTOMATION-FACTORY: FASE 3 (SCRIPT) COLLEGATA A MATERIALE REALE — CP-20260727-014
+> Task 3 della lista in [CP-20260727-007](checkpoints/CP-20260727-007.md). `run_phase_3` ora
+> implementa la spec di `operatori/script-writer.md` con materiale reale: selezione deterministica
+> (overlap di token sul titolo del video A-upside scelto in F2, tie-break su hook-type storico da
+> `learned_rules.json`) tra le **20 idee video reali** pre-scritte da Gemini in
+> `03_20_IDEE_VIDEO.md`. Hook e CTA copiati verbatim dalla fonte, debolezze SEO reali (da F2)
+> citate esplicitamente nel corpo, durata di riferimento reale (12-15min, AP Video System). Ogni
+> aggiunta oltre la fonte è marcata `➕`. Verificato: idea #1 "Come installare Claude Code in 5
+> minuti" scelta per il video reale "KIMI K3 Vibe Coding Tutorial". 11/11 test invariati verdi.
+> Vedi [CP-20260727-014](checkpoints/CP-20260727-014.md).
 
 ## 🎬 2026-07-27/28 — YOUTUBE-AUTOMATION-FACTORY: FASE 2 (SELEZIONE VIDEO) CON DATI LIVE REALI — CP-20260727-012
 > Gael ha lasciato a me la scelta dell'approccio per il Task 2 ("procedi come vuoi... quello che
