@@ -1,20 +1,20 @@
 {
-  "channel": "Legami d'amore",
+  "channel": "Andrea Ciraolo",
   "videos": [
     {
-      "title": "Installare Claude Code locale",
-      "url": "https://youtube.com/watch?v=1",
-      "views": 25000,
-      "age_hours": 100,
+      "title": "KIMI K3 ✨ VIBE CODING Tutorial with AI",
+      "url": "https://www.youtube.com/watch?v=-RzPQSS3Bhw",
+      "views": 19000.0,
+      "age_hours": 72.0,
       "errors": [
-        "seo debole"
+        "seo debole (score reale 17.5/25 sul titolo, keyword 'claude')"
       ]
     },
     {
-      "title": "Prompt Engineering per Agent Swarm",
-      "url": "https://youtube.com/watch?v=2",
-      "views": 8000,
-      "age_hours": 150,
+      "title": "HOW TO CREATE AN AI VOICE AGENT THAT ANSWERS THE PHONE 📞 24/7",
+      "url": "https://www.youtube.com/watch?v=SjUfAyFhZag",
+      "views": 1100.0,
+      "age_hours": 24.0,
       "errors": []
     }
   ]

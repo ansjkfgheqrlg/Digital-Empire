@@ -16,6 +16,8 @@ import json
 import uuid
 import argparse
 import subprocess
+import urllib.request
+import urllib.error
 from datetime import datetime
 import io
 
@@ -71,6 +73,140 @@ FREQ_TO_HOURS = {
     "1-2 video / mese": 504,
 }
 DEFAULT_FREQ_HOURS = 250  # fallback per frequenze irregolari/non mappate
+
+
+# --- Fetch REALE dei video di un canale (Fase 2) ---
+# Legge la pagina pubblica /videos del canale (nessuna API key: dati già visibili a chiunque la
+# visiti) ed estrae titolo/viste/data reali. Risultato messo in cache (TTL 7gg) in
+# memory/channel_videos/ per non dipendere dalla rete a ogni run/test — se la rete non è
+# disponibile e la cache esiste (anche scaduta), si usa quella con un avviso esplicito; se non
+# esiste alcuna cache, la fase fallisce onestamente invece di inventare candidati.
+CHANNEL_VIDEOS_CACHE_DIR = os.path.join(MEMORY_DIR, "channel_videos")
+os.makedirs(CHANNEL_VIDEOS_CACHE_DIR, exist_ok=True)
+CHANNEL_CACHE_TTL_HOURS = 168  # 7 giorni
+VIDEO_MATURITY_FLOOR_HOURS = 24  # sotto questa età, la velocity views/ora è troppo rumorosa
+
+
+def _cache_path_for_handle(handle: str) -> str:
+    safe = re.sub(r"[^a-zA-Z0-9_-]", "_", handle.lstrip("@"))
+    return os.path.join(CHANNEL_VIDEOS_CACHE_DIR, f"{safe}.json")
+
+
+def _parse_view_count(text: str):
+    """'2.2K views' -> 2200.0, '652 views' -> 652.0. None se il formato non è riconosciuto
+    (es. badge 'Nome e altri 2' al posto delle viste: non è un dato, si scarta)."""
+    m = re.match(r"^([\d.,]+)\s*([KM]?)\s*views?$", (text or "").strip(), re.IGNORECASE)
+    if not m:
+        return None
+    num = float(m.group(1).replace(",", ""))
+    suf = m.group(2).upper()
+    if suf == "K":
+        num *= 1000
+    elif suf == "M":
+        num *= 1_000_000
+    return num
+
+
+def _parse_age_hours(text: str):
+    """'3 weeks ago' -> 504.0. None se il formato non è riconosciuto (streaming live, ecc.)."""
+    m = re.match(r"^(\d+)\s+(hour|day|week|month|year)s?\s+ago$", (text or "").strip(), re.IGNORECASE)
+    if not m:
+        return None
+    n = int(m.group(1))
+    unit = m.group(2).lower()
+    mult = {"hour": 1, "day": 24, "week": 168, "month": 730, "year": 8760}[unit]
+    return float(n * mult)
+
+
+def _extract_videos_from_yt_data(data: dict) -> list[dict]:
+    """Cammina ricorsivamente ytInitialData e raccoglie i video, gestendo sia lo schema
+    legacy 'videoRenderer' sia il nuovo 'lockupViewModel' (YouTube ha migrato il layout delle
+    pagine canale nel 2025-2026: verificato empiricamente sul fetch reale)."""
+    raw = []
+
+    def walk(node):
+        if isinstance(node, dict):
+            if "videoRenderer" in node:
+                vr = node["videoRenderer"]
+                title = ""
+                if "title" in vr:
+                    runs = vr["title"].get("runs", [])
+                    title = runs[0].get("text", "") if runs else vr["title"].get("simpleText", "")
+                raw.append({
+                    "videoId": vr.get("videoId"),
+                    "title": title,
+                    "views_text": vr.get("viewCountText", {}).get("simpleText", ""),
+                    "published_text": vr.get("publishedTimeText", {}).get("simpleText", ""),
+                })
+            elif "lockupViewModel" in node:
+                lv = node["lockupViewModel"]
+                meta = lv.get("metadata", {}).get("lockupMetadataViewModel", {})
+                title = meta.get("title", {}).get("content", "")
+                rows = meta.get("metadata", {}).get("contentMetadataViewModel", {}).get("metadataRows", [])
+                views_text, published_text = "", ""
+                if rows:
+                    parts = rows[0].get("metadataParts", [])
+                    texts = [p.get("text", {}).get("content", "") for p in parts]
+                    if len(texts) >= 1:
+                        views_text = texts[0]
+                    if len(texts) >= 2:
+                        published_text = texts[1]
+                raw.append({
+                    "videoId": lv.get("contentId"),
+                    "title": title,
+                    "views_text": views_text,
+                    "published_text": published_text,
+                })
+            for v in node.values():
+                walk(v)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v)
+
+    walk(data)
+    return raw
+
+
+def _fetch_channel_videos_live(handle: str, max_videos: int = 30) -> list[dict]:
+    """Scarica in tempo reale i video reali del canale da youtube.com/<handle>/videos.
+    Nessuna API key richiesta (pagina pubblica). Ritorna [] se il fetch fallisce (rete,
+    layout cambiato, ecc.) — nessun fallback a dati finti a questo livello."""
+    url = f"https://www.youtube.com/{handle}/videos?hl=en&gl=US&persist_hl=1&persist_gl=1"
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "Cookie": "CONSENT=YES+cb; SOCS=CAI",  # evita il redirect al consent-wall EU
+        "Accept-Language": "en-US,en;q=0.9",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        print(f"[!] Impossibile scaricare i video reali di {handle}: {e}")
+        return []
+
+    m = re.search(r"var ytInitialData = (\{.*?\});</script>", html)
+    if not m:
+        print(f"[!] Struttura pagina canale non riconosciuta per {handle} (layout YouTube cambiato?).")
+        return []
+    try:
+        data = json.loads(m.group(1))
+    except json.JSONDecodeError:
+        return []
+
+    clean = []
+    for v in _extract_videos_from_yt_data(data)[:max_videos]:
+        views = _parse_view_count(v["views_text"])
+        age = _parse_age_hours(v["published_text"])
+        if views is None or age is None or not v.get("videoId"):
+            continue  # dato ambiguo (badge collaboratori, live, ecc.): scartato, non fabbricato
+        clean.append({
+            "videoId": v["videoId"],
+            "title": v["title"],
+            "url": f"https://www.youtube.com/watch?v={v['videoId']}",
+            "views": views,
+            "age_hours": age,
+        })
+    return clean
 
 
 def _parse_view_range(raw: str) -> tuple[float, float]:
@@ -321,6 +457,46 @@ class Apex7Orchestrator:
         except (json.JSONDecodeError, ValueError):
             return {"index": 0, "is_cashcow": False}
 
+    def _get_channel_videos(self, handle: str) -> tuple[list[dict], str]:
+        """Video reali del canale: cache-first (TTL 7gg) per non dipendere dalla rete a ogni
+        run/test, live-fetch se la cache manca o è scaduta. Se il fetch live fallisce ma esiste
+        una cache anche vecchia, la usa con un avviso invece di fallire — non inventa mai dati.
+        Ritorna (video, provenienza) dove provenienza è 'cache'/'live'/'cache-scaduta'."""
+        cache_path = _cache_path_for_handle(handle)
+        cached = None
+        if os.path.exists(cache_path):
+            cached = self.load_json(cache_path, None)
+
+        if cached and cached.get("fetched_at"):
+            age_h = (datetime.now() - datetime.fromisoformat(cached["fetched_at"])).total_seconds() / 3600
+            if age_h < CHANNEL_CACHE_TTL_HOURS:
+                return cached["videos"], "cache"
+
+        print(f"[🔬 ANALYST] Cache video assente/scaduta per {handle}: fetch live da YouTube...")
+        live = _fetch_channel_videos_live(handle)
+        if live:
+            self.save_json(cache_path, {"handle": handle, "fetched_at": datetime.now().isoformat(), "videos": live})
+            return live, "live"
+
+        if cached:
+            print(f"[!] Fetch live fallito per {handle}: uso la cache esistente (scaduta) come fallback.")
+            return cached["videos"], "cache-scaduta"
+
+        return [], "nessuna"
+
+    def _seo_score_title_only(self, title: str, keyword: str) -> float:
+        """SEO score reale calcolato solo sul titolo: non abbiamo descrizione/tag reali per
+        video di canali terzi, quindi non li inventiamo (restano ai default assenti di
+        seo_score.py, che pesano onestamente zero sul totale)."""
+        res = subprocess.run(
+            [sys.executable, os.path.join(SCRIPT_DIR, "seo_score.py"), "--title", title, "--keyword", keyword],
+            capture_output=True, text=True
+        )
+        try:
+            return json.loads(res.stdout)["total"]
+        except (json.JSONDecodeError, ValueError, KeyError):
+            return 0.0
+
     def run_phase_1(self, interactive: bool) -> bool:
         print("[📋 PLANNER] Inizializzazione della ricerca di nicchia...")
         topic = self.working_memory.get("topic")
@@ -418,42 +594,86 @@ class Apex7Orchestrator:
     # --- Fase 2: Selezione Video ---
     def run_phase_2(self, interactive: bool) -> bool:
         print("[📋 PLANNER] Avvio selezione video ottimale per la replica...")
+        handle = self.working_memory.get("canale_scelto_handle")
+        canale_nome = self.working_memory.get("canale_scelto", "canale sconosciuto")
+        if not handle:
+            print("[!] ERRORE: nessun canale scelto in Fase 1 (esegui prima la Fase 1). Impossibile procedere senza un canale reale.")
+            return False
+
+        print(f"[🔬 ANALYST] Recupero video REALI di {canale_nome} ({handle})...")
+        real_videos, provenienza = self._get_channel_videos(handle)
+        if not real_videos:
+            print(f"[!] ERRORE: nessun video reale disponibile per {handle} (rete assente e nessuna cache). Impossibile procedere senza dati reali.")
+            return False
+        print(f"[🔬 ANALYST] {len(real_videos)} video reali ottenuti (fonte: {provenienza}).")
+
+        # Scarta i video troppo giovani: la velocity views/ora su poche ore è rumore statistico,
+        # non un segnale affidabile di domanda reale.
+        maturi = [dict(v, vph=round(v["views"] / v["age_hours"], 2))
+                  for v in real_videos if v["age_hours"] >= VIDEO_MATURITY_FLOOR_HOURS]
+        if not maturi:
+            print(f"[!] ERRORE: nessun video di {canale_nome} supera la soglia di maturità ({VIDEO_MATURITY_FLOOR_HOURS}h) per una stima di velocity affidabile.")
+            return False
+        maturi.sort(key=lambda x: -x["vph"])
+
+        # Punteggio SEO reale (solo titolo: nessun dato reale di descrizione/tag per video di terzi)
+        keyword = "claude"  # keyword del funnel: Manuale Claude Code
+        for v in maturi:
+            v["seo_score"] = self._seo_score_title_only(v["title"], keyword)
+
+        top = maturi[:5] if len(maturi) >= 5 else maturi
+        a_upside = top[0]  # massima velocity reale = massima prova di domanda
+        # B-sicurezza: il successivo per velocity con SEO reale già pari o superiore ad A —
+        # un'alternativa più prudente, già meglio posizionata sulla nostra keyword.
+        b_sicurezza = next((v for v in top[1:] if v["seo_score"] >= a_upside["seo_score"]), None)
+        if b_sicurezza is None:
+            b_sicurezza = top[1] if len(top) > 1 else a_upside
+
         candidati_path_json = os.path.join(TEMPLATES_DIR, "candidati-video.json")
-        
-        # Generiamo file candidati-video.json se manca
         candidati = {
-            "channel": "Legami d'amore",
+            "channel": canale_nome,
             "videos": [
-                {"title": "Installare Claude Code locale", "url": "https://youtube.com/watch?v=1", "views": 25000, "age_hours": 100, "errors": ["seo debole"]},
-                {"title": "Prompt Engineering per Agent Swarm", "url": "https://youtube.com/watch?v=2", "views": 8000, "age_hours": 150, "errors": []}
+                {
+                    "title": a_upside["title"], "url": a_upside["url"],
+                    "views": a_upside["views"], "age_hours": a_upside["age_hours"],
+                    "errors": [] if a_upside["seo_score"] >= 20 else [f"seo debole (score reale {a_upside['seo_score']}/25 sul titolo, keyword '{keyword}')"]
+                },
+                {
+                    "title": b_sicurezza["title"], "url": b_sicurezza["url"],
+                    "views": b_sicurezza["views"], "age_hours": b_sicurezza["age_hours"],
+                    "errors": []
+                },
             ]
         }
         self.save_json(candidati_path_json, candidati)
-        
-        # Validiamo lo schema di candidati-video
+
         val_res = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "validate_schemas.py"), "candidati-video", candidati_path_json], capture_output=True, text=True)
         print(f"[🔬 ANALYST] Validazione Schema Candidati: {val_res.stdout.strip()}")
-        
-        # Calcolo SEO Score per i candidati
-        print("[🔬 ANALYST] Calcolo punteggio SEO per i video candidati...")
+
+        print(f"[🔬 ANALYST] SEO Score reale — A-upside '{a_upside['title'][:50]}...': {a_upside['seo_score']}/100 | "
+              f"B-sicurezza '{b_sicurezza['title'][:50]}...': {b_sicurezza['seo_score']}/100")
+
         seo_report_json = os.path.join(TEMPLATES_DIR, "seo-report.json")
         seo_report = {
             "videos": [
-                {"title": "Installare Claude Code locale", "seo_score": 45.0, "label": "A-upside"},
-                {"title": "Prompt Engineering per Agent Swarm", "seo_score": 85.0, "label": "B-sicurezza"}
+                {"title": a_upside["title"], "seo_score": a_upside["seo_score"], "label": "A-upside"},
+                {"title": b_sicurezza["title"], "seo_score": b_sicurezza["seo_score"], "label": "B-sicurezza"},
             ]
         }
         self.save_json(seo_report_json, seo_report)
-        
+
         self.log_decision(
             "DEC-video-001",
-            "Scelta video target: Installare Claude Code locale",
-            "Opzione A-upside preferita: SEO molto scarsa dell'originale permette di superarlo facilmente implementando best-practice SEO.",
-            ["Prompt Engineering per Agent Swarm"],
-            0.88
+            f"Scelta video target: {a_upside['title']}",
+            f"Velocity reale {a_upside['vph']} views/ora ({int(a_upside['views'])} viste in {a_upside['age_hours']:.0f}h) "
+            f"su {canale_nome} — SEO score reale del titolo {a_upside['seo_score']}/100 per keyword '{keyword}': "
+            f"margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+            [b_sicurezza["title"]],
+            0.8
         )
-        
-        self.working_memory["video_scelto"] = "Installare Claude Code locale"
+
+        self.working_memory["video_scelto"] = a_upside["title"]
+        self.working_memory["video_scelto_url"] = a_upside["url"]
         self.working_memory["label_scelta"] = "A-upside"
         return True
 

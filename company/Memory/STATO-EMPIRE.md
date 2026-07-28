@@ -1,4 +1,40 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: YT Factory F1 niche-gate bloccante · dati reali · audit · Estate=cervello · preventa-agents chiuso 100% · APEX-7 Level 2 · agenti PEZZO 2)
+# STATO EMPIRE -- aggiornato 2026-07-27/28 (Claude: YT Factory F2 video LIVE reali · Preventa lead REALI + bug scraper fixato · YT Factory F1 niche-gate bloccante · Estate=cervello · APEX-7 Level 2 · agenti PEZZO 2)
+
+## 🎬 2026-07-27/28 — YOUTUBE-AUTOMATION-FACTORY: FASE 2 (SELEZIONE VIDEO) CON DATI LIVE REALI — CP-20260727-012
+> Gael ha lasciato a me la scelta dell'approccio per il Task 2 ("procedi come vuoi... quello che
+> pensi sia meglio"). A differenza di F1 (stima aggregata su dati Gemini già raccolti), per F2 non
+> esisteva un dato equivalente per singolo video — inventare titoli specifici per un canale reale
+> e identificabile sarebbe stato peggio del vecchio mock generico. Verificato che questo sandbox
+> ha accesso di rete reale, quindi `run_phase_2` ora **scarica dal vivo** i video del canale
+> scelto in F1 dalla pagina pubblica `youtube.com/<handle>/videos` (nessuna API key).
+>
+> **Scoperta tecnica in corso d'opera:** YouTube ha migrato il layout canale dallo schema
+> `videoRenderer` al nuovo `lockupViewModel` — il parser gestisce entrambi. Cache locale (TTL 7gg,
+> committata nel repo) per non dipendere dalla rete nei test: **11/11 verdi in 4.5s, zero accessi
+> a Internet durante i test**. Video <24h scartati dal ranking (rumore statistico sulla velocity),
+> dati ambigui (badge non-numerici) scartati esplicitamente invece di forzati in numeri finti.
+> SEO score reale calcolato solo sul titolo (unico dato reale disponibile). Verificato su Andrea
+> Ciraolo: 26 video reali puliti, candidato A-upside "KIMI K3..." con SEO reale 17.5/100 (keyword
+> "claude" assente). Vedi [CP-20260727-012](checkpoints/CP-20260727-012.md).
+
+## ✅ 2026-07-27 — PREVENTA: BUG SCRAPER MULTI-CITTÀ FIXATO + 64 LEAD REALI — CP-20260727-011
+Gael ha detto "fai quello che puoi" dopo la lista di azioni non bloccate da Max
+([CP-20260727-006](checkpoints/CP-20260727-006.md)). Rilanciato lo scraper reale su Milano/
+Bergamo/Brescia per chiudere onestamente Gate-CONTATTI (ROSSO dal 24/07: i 61 lead dichiarati il
+23/07 non esistevano su disco). **Trovato bug reale**: `Conductor._finalize_and_save()` salvava
+il CSV in overwrite ad ogni città invece di accumulare — il file finale conteneva solo l'ultima
+città processata (Brescia), Milano e Bergamo sparivano. Fix in `agents.py` (accumulo
+`self.all_rows`), `test_apex7.py` 13/13 ancora verde. Rerun con fix: **64 lead unici reali**
+(Milano 22, Bergamo 22, Brescia 20), **19 ALTA**. Pipeline G-A1→A2→A3 collegata end-to-end su
+questi dati veri (`personalizza_messaggi.py` → `stato_e_followup.py --init` → `--followup-oggi`):
+19/19 lead `da_contattare`, 0 follow-up dovuti (corretto, nessuno ancora "contattato"). **G-A4
+(invio reale) resta gated M-EST-6/7/9**, nessun messaggio inviato. Vedi
+[CP-20260727-011](checkpoints/CP-20260727-011.md).
+
+**RIPRESA DA:** confermare con Gael se committare il fix di `agents.py` (bug reale, non
+feature). Dati lead restano locali/gitignored per policy. G-A4 in attesa di Max.
+
+---
 
 ## 🚧 2026-07-27 — YOUTUBE-AUTOMATION-FACTORY: NICHE-GATE REALE E BLOCCANTE — CP-20260727-010
 > Gael ha chiesto ("includilo") di completare [CP-20260727-009](checkpoints/CP-20260727-009.md):
