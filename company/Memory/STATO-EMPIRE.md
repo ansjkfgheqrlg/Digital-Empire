@@ -1,4 +1,20 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: prezzo Preventa €2.000 tantum chiuso · scraper→Areus wired · YT-Factory task Gael G-YT-1..7 · FUSIONE RUFLO+APEX-7 Fase 1 pilota · WORKFLOW ESTATE OPERATIVO · Preventa lead REALI · agenti PEZZO 3)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: /avvia-estate-wk comando unico · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+
+## ⚡ 2026-07-28 — COMANDO UNICO DI ACCENSIONE `/avvia-estate-wk` — CP-20260728-003
+Max: accendere tutto il sistema nervoso del Workflow Estate con UN comando. Fatto.
+`empire/avvia.py` (registrato via plugin loop, `cli.py` congelato): `python -m empire avvia-estate`
+rigenera la dashboard, valuta i gate, misura gli agenti, conta le tracce, scrive una traccia di
+sessione e stampa il cruscotto di accensione. **Verificato: exit 0 = ✅ ACCESO.**
+```
+OK dashboard · OK 11/13 verdi · 58 agenti operativi · 22 tracce · traccia avvio scritta
+```
+Skill **`/avvia-estate-wk`** (`C:/Users/Utente/.claude/skills/`, config globale utente FUORI dal
+repo) apre una finestra CMD visibile e lancia il comando. Non spara verso l'esterno — accende il
+cervello, le porte d'uscita (invii/incassi/pubblicazioni) restano di Max.
+**RIPRESA DA:** refinement agenti PEZZO 4 (`empire forge prossimo`). Le 2 voci rosse = Max (lead + incasso;
+prezzo Preventa €2.000 già chiuso in CP-20260728-002).
+
+---
 
 ## 💰 2026-07-28 — PREVENTA: PREZZO €2.000 TANTUM CHIUSO + SCRAPER MIGRATO A AREUS — CP-20260728-002
 > Max ha chiuso 3 decisioni che tenevano fermo `preventa-maps-scraper`: **DEC-EST-005/M-EST-4**
