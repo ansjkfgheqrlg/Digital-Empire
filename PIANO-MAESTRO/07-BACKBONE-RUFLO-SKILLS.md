@@ -7,6 +7,13 @@
 > Coerente al 100% con `00-PIANO-MAESTRO.md` (§2 gerarchia, §4 backbone, §5 Ruflo, §6 pattern).
 > Versione: 1.0 · Creato: 2026-06-10 · Stato: progetto esecutivo (build in F2 della roadmap)
 
+> **⚡ Aggiornamento 2026-07-28 ([ADR-010](../company/Memory/decisions/ADR-010-fusione-ruflo-apex7.md)):**
+> questo Backbone non si costruisce da zero — la sua Coordination Fabric è il motore già scritto
+> e testato in `company/Ecosistemi/11-APEX-7-CORE/` (SQLite memory multi-tenant, `BaseAgent`,
+> EventBus), promosso da ecosistema stand-alone a motore ufficiale del Backbone. Fase 1 pilota
+> (YouTube + Stream-S7-Bot) in corso, poi rollout su tutti i 13 ecosistemi. Dettaglio tecnico e
+> stato di avanzamento: [CP-20260728-001](../company/Memory/checkpoints/CP-20260728-001.md).
+
 **Regola madre (ereditata da CF, ADR-005):** Ruflo COORDINA (stato, memoria, swarm, consensus),
 Claude Code ESEGUE (file, codice, contenuti). Ogni componente del Backbone ha un percorso MCP
 (quando il daemon è su) e un fallback bash/file (quando non lo è). Mai un single point of failure.

@@ -1,4 +1,114 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: WORKFLOW ESTATE OPERATIVO · YT-Factory F3/F2 · Preventa lead REALI · agenti PEZZO 3)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: prezzo Preventa €2.000 tantum chiuso · scraper→Areus wired · YT-Factory task Gael G-YT-1..7 · FUSIONE RUFLO+APEX-7 Fase 1 pilota · WORKFLOW ESTATE OPERATIVO · Preventa lead REALI · agenti PEZZO 3)
+
+## 💰 2026-07-28 — PREVENTA: PREZZO €2.000 TANTUM CHIUSO + SCRAPER MIGRATO A AREUS — CP-20260728-002
+> Max ha chiuso 3 decisioni che tenevano fermo `preventa-maps-scraper`: **DEC-EST-005/M-EST-4**
+> (prezzo €2.000 una tantum, sostituisce la vecchia proposta €490+€149/mese mai andata live),
+> **Google Sheets bocciato** come CRM esterno ("abbiamo tutto dentro Areus, non serve un foglio
+> esterno"), **M-EST-9** (province: `cities.txt` con default Nord+Centro).
+>
+> Prezzo propagato su `Crea siti/Preventa/index.html` e `agency-empire/.../03b-preventa.tsx`.
+> Migrazione Sheets→Areus: nuovo `02-AUTOMAZIONI-E-SCRIPTS/areus.py` (rimpiazza `sheets.py`),
+> agente `integratore-sheets`→`integratore-areus` (`SheetsAgent`→`AreusAgent`, evento
+> `sheets.synced`→`areus.synced`), `run.py`/`orchestrator.py` con push su Areus **attivo di
+> default, zero credenziali**. Nuovo modulo `EmpireDesk/modules/preventa.py` (pannello "Preventa
+> — Outreach Freddo", stage compatibile con l'enum `LeadStage` di Aureus per un futuro mapping
+> diretto nel Kanban `SalesPipeline.tsx`). `contact_leads.py` ora aggiorna lo stage in Areus
+> (NEW→CONTACTED) dopo ogni invio.
+>
+> Trovato e risolto in corsa: bug di path in `areus.py` (`parents[2]` invece di `parents[3]`,
+> risolveva su una cartella inesistente) — verificato confrontando il path calcolato dai due lati
+> prima di chiudere. `test_apex7.py` 13/13 invariato, `empire estate` 11/13 invariato (un link
+> morto nel conform-check, fixato committando il placeholder `EmpireDesk/state/preventa_leads.json`).
+> **RIPRESA DA:** Gael sbloccato, nessun lavoro tecnico residuo qui. Prossimo passo è operativo
+> (Max): lanciare lo scraper su `cities.txt`, contattare i lead ALTA, chiudere Gate-CONTATTI in
+> Areus. Vedi [CP-20260728-002](checkpoints/CP-20260728-002.md).
+
+---
+
+## ⚡ 2026-07-28 — YOUTUBE-AUTOMATION-FACTORY: task decomposti per Gael (G-YT-1..7)
+
+> ⚠️ **COORDINAMENTO — Gael leggi prima di toccare `apex7_orchestrator.py`:** su richiesta di
+> Max ho toccato **2 punti** del file che possiedi (vedi nota sotto ADR-010): `execute_critic`
+> (righe ~374) e il call-site in `run_phase_3` (righe ~797). Patch interinale, backward-compatible,
+> `test_youtube_apex7.py` 11/11 verde dopo il fix (verificato in questa sessione). Nessun altro
+> file toccato. Non ho eseguito nessuna delle 7 task sotto — sono tutte tue.
+>
+> **Cosa ho cambiato:** `execute_critic` non ritorna più un dict fisso (8.5/8.0/7.5/8.0/9.0
+> sempre uguale) ma calcola le 5 dimensioni da controlli reali sul contenuto passato (lunghezza,
+> presenza sezioni richieste, keyword density su "claude code", diversità lessicale, marcatori
+> di azione, ordine strutturale). `run_phase_3` ora gli passa il testo VERO dello script scritto
+> (non solo il titolo). Firma retrocompatibile (`required_sections` è un parametro opzionale in
+> più, default `None`).
+>
+> **Perché mi sono fermato qui:** ho trovato il blocco COORDINAMENTO precedente (sotto, CP-20260728-001)
+> che dice che il critic fisso va sostituito con chiamate al motore condiviso `11-APEX-7-CORE`
+> (ADR-010), non con una patch locale come questa — e che il file è tuo. La mia patch è un
+> miglioramento onesto (niente più punteggio finto) ma NON è il retrofit architetturale pianificato.
+> Puoi tenerla come base o sostituirla del tutto quando fai G-YT-1.
+>
+> **Task G-YT-1..7 (in ordine, ognuna idempotente):**
+> 1. **G-YT-1**: retrofit `execute_critic` + `agents.py` hardcoded → chiamate al motore condiviso
+>    `11-APEX-7-CORE` (`RuFLOOrchestrator`/`APEX7Memory(domain="youtube")`), come da ADR-010.
+>    Puoi sostituire la mia patch interinale mantenendo i call-site aggiornati (F3 passa già il
+>    testo reale dello script).
+> 2. **G-YT-2**: F4 Produzione (`run_phase_4`) — spec Fliki reale multi-scena parsata da
+>    `script.md` scritto in F3 (oggi: 1 scena fissa hardcoded, titolo/video_id sempre uguali).
+> 3. **G-YT-3**: F5 Pubblicazione (`run_phase_5`) — titolo/tag/descrizione reali dal video+script
+>    scelti in F2/F3 (oggi: sempre "Installare Claude Code locale", metadati statici).
+> 4. **G-YT-4**: F6 Audit (`run_phase_6`) — gate onesto: **niente `views_per_hour` finti**
+>    (`35.5` fisso oggi). Serve un manifest `memory/published_videos.json` per video REALMENTE
+>    pubblicati su YouTube; se assente per la run corrente, F6 ritorna `True` senza scrivere dati
+>    falsi in `performance_logs.json` (non è un errore — significa "non ancora pubblicato", il
+>    self-improver non deve imparare su rumore inventato).
+> 5. **G-YT-5**: Dashboard — scrivere lo stato REALE della run corrente dentro
+>    `apex7_orchestrator.py` (nuovo metodo, es. `write_dashboard()` chiamato a fine
+>    `execute_workflow`). Oggi la dashboard è scritta solo da `run_youtube_apex7.py`
+>    (pipeline separata e fake, hardcoded su canale "Dose Mentale", sempre tutto 🟢 PASS) —
+>    da ritirare o da agganciare ai dati reali di `working_memory`.
+> 6. **G-YT-6**: ritiro della reimplementazione indipendente in `12-STREAM-S7-BOT` (da
+>    CP-20260728-001, prossimo passo mai fatto).
+> 7. **G-YT-7**: aggiornare `company/REGISTRO-IMPRESA.md` + `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md`
+>    a valle del retrofit.
+>
+> **RIPRESA DA:** Gael parte da G-YT-1 (dipendenza architetturale per gli altri: se prima fai
+> G-YT-2/3/4/5 sulla patch interinale e poi G-YT-1 cambia il motore critic, rischi di dover
+> ritoccare i call-site una seconda volta — ordine consigliato ma non bloccante).
+
+---
+
+## ⚡ 2026-07-28 — FUSIONE RUFLO + APEX-7-CORE: FASE 1 PILOTA IN CORSO — CP-20260728-001
+> Max ha chiesto se APEX-7 sia già sistema nervoso empire-wide. Verifica: no, scoped solo
+> YouTube, on-demand, nessun cron. Indagine (2 agenti Explore) ha trovato 4 implementazioni
+> APEX-7-shaped divergenti (YouTube, skill generica, `11-APEX-7-CORE`, `12-STREAM-S7-BOT`) più
+> il backbone Ruflo (dossier 07) mai costruito. **Decisione Max**: fondere le due linee — Ruflo
+> costruito usando il motore già scritto in `11-APEX-7-CORE` come Coordination Fabric.
+> [ADR-010](decisions/ADR-010-fusione-ruflo-apex7.md). Rollout: pilota 2 ecosistemi
+> (YouTube + Stream-S7-Bot) ora, **poi espansione a tutti i 13 — richiesta esplicita e non
+> negoziabile di Max**, roadmap già scritta nel piano approvato
+> (`C:\Users\Utente\.claude\plans\tender-tumbling-flute.md`).
+>
+> **Fatto in questo ciclo:** `APEX7Memory(domain=...)` multi-tenant (namespacing dati per
+> dominio sotto `data/<domain>/`, `domain="default"` retrocompatibile — carousel-machine/
+> skill-forge/cold-outreach non impattati), `RuFLOOrchestrator(domain=...)` per coerenza.
+> Test isolamento `test_multi_tenant.py` 4/4 verde. Fix bug bloccante:
+> `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/memory.py` aveva un path assoluto
+> hardcoded di un'altra macchina (`c:\Users\olhad\...`) — sostituito con path relativo allo
+> script. `test_youtube_apex7.py` 11/11 ancora verde dopo il fix.
+>
+> ⚠️ **COORDINAMENTO — Gael leggi prima di toccare questi file:** i prossimi passi (retrofit
+> `apex7_orchestrator.py` per rimuovere critic fisso e agenti hardcoded, ritiro reimplementazione
+> indipendente in `12-STREAM-S7-BOT`) toccano file che possiedi in
+> `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/` e `company/Ecosistemi/12-STREAM-S7-BOT/`.
+> Non ho ancora toccato la logica di dominio (le 6 fasi restano tue), solo il motore memoria
+> condiviso sotto `11-APEX-7-CORE/` e il path bug in `memory.py` — entrambi retrocompatibili e
+> testati verdi. Se stai lavorando su questi file in parallelo, avvisami prima che proceda oltre.
+>
+> **RIPRESA DA:** retrofit `apex7_orchestrator.py` (sostituire `execute_critic` fisso e
+> `agents.py` hardcoded con chiamate al motore `11-APEX-7-CORE`) + ritiro reimplementazione
+> Stream-S7-Bot + aggiornare `company/REGISTRO-IMPRESA.md` e
+> `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md`. Vedi [CP-20260728-001](checkpoints/CP-20260728-001.md).
+
+---
 
 ## 🚀 2026-07-27 — WORKFLOW ESTATE OPERATIVO DA ADESSO — CP-20260727-015
 Il cervello è acceso e ha un punto d'ingresso unico: `WORKFLOW-ESTATE/AVVIO-OPERATIVO.md`.

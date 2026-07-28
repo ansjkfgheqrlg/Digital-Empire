@@ -22,13 +22,12 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import browser
 import checker
-import sheets
 
 from event_bus import EventBus
 from memory import MemoryQueryInterface
 from gate_agent import GateAgent
 from meta_optimization import MetaOptimizer
-from agents import ScraperAgent, QualifierAgent, SheetsAgent, QAAgent, DebugAgent, Conductor
+from agents import ScraperAgent, QualifierAgent, AreusAgent, QAAgent, DebugAgent, Conductor
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s | %(levelname)s | %(message)s', datefmt='%H:%M:%S')
 log = logging.getLogger("preventa-pw.run")
@@ -120,7 +119,7 @@ def load_cities(args):
     return cities
 
 def main():
-    parser = argparse.ArgumentParser(description="Preventa Maps Scraper - Playwright ONLY + Sheets + Filtro ALTA")
+    parser = argparse.ArgumentParser(description="Preventa Maps Scraper - Playwright ONLY + Areus + Filtro ALTA")
     parser.add_argument("--cities", type=str, help="Lista città separate da virgola: Milano,Bergamo,Brescia")
     parser.add_argument("--input", type=str, help="File txt con una città per riga")
     parser.add_argument("--categoria", type=str, default=DEFAULT_CATEGORIA)
@@ -129,10 +128,9 @@ def main():
     parser.add_argument("--headless", action="store_true")
     parser.add_argument("--headed", action="store_true")
     parser.add_argument("--only-alta", action="store_true", help="Salva solo lead priorita ALTA nel CSV (e crea file _SOLO_ALTA.csv)")
-    parser.add_argument("--sheet-id", type=str, default=os.getenv("GOOGLE_SHEET_ID",""), help="ID Google Sheet per push auto (dalla URL)")
-    parser.add_argument("--sheets-creds", type=str, default=os.getenv("GOOGLE_SHEETS_CREDS_PATH","credentials.json"), help="Path file JSON service account")
-    parser.add_argument("--sheets-worksheet", type=str, default="Foglio1", help="Nome worksheet")
-    parser.add_argument("--sheets-push-alta", action="store_true", help="Se push su Sheets, pusha solo ALTA (consigliato)")
+    parser.add_argument("--no-areus", action="store_true", help="Disabilita il push su Areus (default: attivo, nessuna credenziale richiesta)")
+    parser.add_argument("--areus-state-path", type=str, default=os.getenv("AREUS_STATE_PATH",""), help="Override path del JSON condiviso con EmpireDesk (default auto-calcolato)")
+    parser.add_argument("--areus-push-alta", action="store_true", help="Se push su Areus, pusha solo ALTA (consigliato)")
     args = parser.parse_args()
 
     cities = load_cities(args)
@@ -175,21 +173,19 @@ def main():
         qualifier_agent = QualifierAgent(event_bus, gate_agent=gate_agent)
         debug_agent = DebugAgent(page, event_bus)
 
-        sheets_agent = None
-        if args.sheet_id:
-            sheets_agent = SheetsAgent(
+        areus_agent = None
+        if not args.no_areus:
+            areus_agent = AreusAgent(
                 event_bus=event_bus,
-                sheet_id=args.sheet_id,
-                creds_path=args.sheets_creds,
-                push_only_alta=args.sheets_push_alta,
-                worksheet_name=args.sheets_worksheet
+                state_path=args.areus_state_path,
+                push_only_alta=args.areus_push_alta,
             )
 
         conductor = Conductor(
             event_bus=event_bus,
             scraper_agent=scraper_agent,
             qualifier_agent=qualifier_agent,
-            sheets_agent=sheets_agent,
+            areus_agent=areus_agent,
             qa_agent=qa_agent,
             meta_optimizer=meta_optimizer,
             output_csv_path=args.output,

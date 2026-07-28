@@ -178,8 +178,9 @@ class DynamicWorkflowRouter:
 
 class RuFLOOrchestrator:
     """Meta-Orchestrator che coordina tutto il flusso APEX-7"""
-    def __init__(self, memory_system=None):
+    def __init__(self, memory_system=None, domain: str = "default"):
         self.memory = memory_system
+        self.domain = domain
         self.event_bus = EventBus()
         self.task_queue = PriorityTaskQueue()
         self.router = DynamicWorkflowRouter()

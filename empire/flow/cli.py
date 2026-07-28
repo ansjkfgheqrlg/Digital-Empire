@@ -216,3 +216,12 @@ def register(sub) -> None:
         pass
     else:
         _forge.register(sub)
+
+    # `empire avvia-estate` — accende il sistema nervoso con un comando. Registrato da qui
+    # perche' cli.py e' congelato.
+    try:
+        from .. import avvia as _avvia
+    except ImportError:
+        pass
+    else:
+        _avvia.register(sub)

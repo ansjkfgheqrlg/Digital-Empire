@@ -1,6 +1,6 @@
 ---
 name: preventa-maps-scraping
-description: Metodologia e comandi operativi per lo scraping e la qualificazione di concessionari auto tramite Playwright e Google Sheets.
+description: Metodologia e comandi operativi per lo scraping e la qualificazione di concessionari auto tramite Playwright, con push automatico sul CRM Areus (EmpireDesk).
 ---
 
 # Skill: Preventa Maps Scraping
@@ -15,10 +15,10 @@ Estrae i lead di determinate città, filtra solo la priorità ALTA e salva il fi
 python scraper.py --cities Milano,Bergamo,Brescia --limit 25 --only-alta --output data/leads.csv
 ```
 
-### 2. Sincronizzazione automatica su Google Sheets
-Esegue lo scraping e carica le nuove righe direttamente su Google Sheets qualificando per priorità ALTA (saltando i duplicati telefonici):
+### 2. Sincronizzazione automatica su Areus (default, nessun setup)
+Esegue lo scraping e carica le nuove righe direttamente sul CRM Areus di EmpireDesk qualificando per priorità ALTA (saltando i duplicati telefonici) — attivo di default, nessuna credenziale:
 ```bash
-python scraper.py --cities Milano --limit 30 --only-alta --sheet-id TUO_GOOGLE_SHEETS_ID --sheets-push-alta --sheets-creds credentials.json
+python scraper.py --cities Milano --limit 30 --only-alta --areus-push-alta
 ```
 
 ## Struttura della Qualificazione (Scoring)
@@ -27,8 +27,7 @@ Il modulo valuta la presenza e la modernità del sito per classificare la lead:
 - **MEDIA**: Pitch ottimizzazione o ads. Sito esistente ma senza Pixel FB o Google Tag Manager (probabile assenza di campagne attive), o recensioni basse.
 - **BASSA**: Sito moderno, tracciamento attivo, e alto volume di recensioni positive.
 
-## Gestione dei Fogli Google
-1. Crea un service account in Google Cloud Console.
-2. Scarica la chiave JSON come `credentials.json`.
-3. Condividi lo spreadsheet con l'email del service account come **Editor**.
-4. Imposta `GOOGLE_SHEET_ID` nel file `.env` locale.
+## Gestione lead in Areus
+Nessun setup richiesto: i lead entrano in `EmpireDesk/state/preventa_leads.json` e sono visibili
+subito nel pannello "Preventa — Outreach Freddo" dentro Areus. Se serve un path non standard,
+imposta `AREUS_STATE_PATH` nel file `.env` locale.

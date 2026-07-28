@@ -79,4 +79,11 @@ export const EmpireApi = {
   /** Indice Cash Cow 0-100 di un canale (videos JSON incollato). */
   youtubeCashcow: (payload: { channel: string; videos: string }): Promise<ModuleResult> =>
     post('youtube/cashcow', payload),
+
+  // --- Modulo preventa (Outreach Freddo concessionari) — lead scritti da preventa-maps-scraper ---
+  /** Tutti i lead scraper + conteggi per stage (NEW/CONTACTED/PROPOSAL/NEGOTIATION/CLOSED_WON/CLOSED_LOST). */
+  preventaElenco: (): Promise<ModuleResult> => post('preventa/elenco', {}),
+  /** Sposta un lead di stage (es. dopo una chiamata: NEW -> CONTACTED). */
+  preventaAggiornaStage: (payload: { telefono: string; stage: string; note?: string }): Promise<ModuleResult> =>
+    post('preventa/aggiorna_stage', payload),
 };

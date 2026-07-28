@@ -41,21 +41,12 @@ che è esattamente quello che è successo e ha tenuto il Gate-FUNNEL rosso per g
 
 ---
 
-## 🥈 2. Prezzo di Preventa (DEC-EST-005) → la landing va online
-**Tempo: 2 minuti (è una decisione, non un lavoro).**
-
-La landing Preventa è pronta: `Crea siti/Preventa/index.html`. Copy, palette, FAQ, obiezioni,
-CTA funzionante, link al case study Novacar. **Manca solo il prezzo**, che è ancora sotto tuo
-veto (M-EST-4, default proposto €490 setup / €149 canone).
-
-Nella pagina, al posto della cifra, c'è un riquadro giallo evidente `MAX: prezzo — DEC-EST-005
-sotto veto`. **Non ho inventato una cifra plausibile di proposito**: un prezzo sbagliato su una
-pagina pubblica è peggio di un prezzo assente, perché lo leggono i concessionari a cui poi devi
-chiedere altro.
-
-**Cosa fare:** decidi il prezzo (o lascia scadere il veto), poi cerca nel file i riquadri
-`todo` e sostituiscili. Stessa cosa per **P.IVA** e **telefono** nel footer, e per il link
-**Calendly/WhatsApp** al posto del `mailto:` nella CTA demo.
+## ✅ 2. Prezzo di Preventa (DEC-EST-005) — CHIUSO 28/07/2026
+Max ha deciso: **€2.000 una tantum**, pagamento unico, nessun canone (sostituisce la vecchia
+proposta €490 setup + €149/mese, mai andata live). Propagato su `Crea siti/Preventa/index.html`
+e su `agency-empire/src/sections/03b-preventa.tsx`. Restano da compilare solo **P.IVA** e
+**telefono** nel footer (`todo` rimasti), e il link **Calendly/WhatsApp** al posto del `mailto:`
+nella CTA demo — non bloccanti.
 
 ---
 
@@ -76,17 +67,19 @@ Ho controllato tutti i CSV di `Outreach/`: contengono solo dati di prova dichiar
 `stato_lead_test.csv`). **I 61 lead reali dichiarati in STATO-EMPIRE il 23/07 non esistono come
 file su disco.** O lo scraping non è stato salvato, o è stato salvato altrove e va recuperato.
 
-**Cosa fare (una delle due):**
-- **(a)** Se i 7 concessionari sono contatti veri tuoi: aggiungi la sorgente da cui vengono
-  (export, rubrica, CSV) sotto `Outreach/`, poi conferma il gate:
-  ```
-  python -m empire flow gate Gate-CONTATTI --confirm --actor Max --evidence "..."
-  ```
-- **(b)** Se erano dati di esempio: rilancia lo scraper (`Outreach/preventa-maps-scraper/`) con
-  le province vere (M-EST-9 è ancora aperta) e riparti da lead reali.
+**Aggiornamento 28/07/2026:** M-EST-9 chiusa (province in `cities.txt`, Nord+Centro). Lo scraper
+ora pusha di default sul CRM **Areus** (`EmpireDesk/state/preventa_leads.json`, pannello
+"Preventa — Outreach Freddo"), non più su CSV finti o Google Sheets. Il gate si chiude quando:
 
-**Non ho confermato io questo gate, e non potevo:** l'ho lasciato rosso apposta. Un 7/7 su nomi
-non tracciabili avrebbe fatto sembrare fatto un lavoro commerciale mai avvenuto.
+1. `python scraper.py --input cities.txt --limit 25 --only-alta --areus-push-alta` genera lead
+   reali in Areus (tracciabili: ogni lead ha `maps_url` reale).
+2. Max contatta davvero i concessionari e sposta lo stage in Areus (o via
+   `contact_leads.py`, che aggiorna Areus in automatico dopo ogni invio).
+
+```
+python -m empire flow gate Gate-CONTATTI --confirm --actor Max --evidence "..."
+```
+resta il comando per confermare il gate una volta che i lead in Areus sono verificabili.
 
 ---
 

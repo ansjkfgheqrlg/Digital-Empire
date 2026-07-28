@@ -1,16 +1,18 @@
-# Preventa Maps Scraper - Playwright ONLY + Google Sheets + Filtro ALTA - LEGGIMI
-### v2.1 - Niente API Key Maps, solo browser reale + push automatico Sheets
+# Preventa Maps Scraper - Playwright ONLY + Areus + Filtro ALTA - LEGGIMI
+### v3.0 - Niente API Key Maps, solo browser reale + push automatico su Areus (CRM interno)
 
 ---
 
 ### 1. COSA FA ORA (aggiornato)
 
-Stesso motore Playwright di prima + 2 novità che hai chiesto:
+Stesso motore Playwright di prima + 2 novità:
 
 1.  **Filtro `--only-alta`**: salva CSV con solo priorità ALTA (no sito / sito vecchio / <10 recensioni) + crea automaticamente file `_SOLO_ALTA.csv` pronto per dialer.
 
-2.  **Push automatico Google Sheets** con deduplica per telefono:
-    `--sheet-id` + service account JSON → aggiunge solo lead nuovi, salta duplicati già presenti nel foglio.
+2.  **Push automatico su Areus** (il CRM di EmpireDesk/Aureus Agency OS, la piattaforma unica
+    dell'azienda): dedup per telefono, nessuna credenziale da configurare — attivo di default.
+    I lead entrano in Areus con stage `NEW` (freddo), e da lì tracci contattato/risposto/non
+    risposto nella stessa app, non su un foglio esterno.
 
 Flusso completo:
 
@@ -18,8 +20,9 @@ Flusso completo:
 Maps (Playwright) -> estrae 25 lead/città -> calcola priorita_lead
 -> salva data/leads_concessionari.csv (tutti)
 -> se --only-alta: salva anche data/leads_concessionari_SOLO_ALTA.csv (solo ALTA)
--> se --sheet-id: pusha su Sheets (opzione --sheets-push-alta per pushare solo ALTA)
--> import diretto in outreach APSOC
+-> push su Areus (default attivo; --no-areus per disattivarlo, --areus-push-alta per solo ALTA)
+-> visibile subito in EmpireDesk -> pannello "Preventa"
+-> import diretto in outreach APSOC (contact_leads.py aggiorna lo stage a CONTACTED)
 ```
 
 ---
@@ -35,11 +38,9 @@ source .venv/bin/activate
 pip install -r requirements.txt
 playwright install chromium
 
-# Se vuoi anche Sheets:
-pip install gspread google-auth
-
 cp .env.example .env
-# modifica .env se usi Sheets
+# Areus funziona senza configurare nulla. Modifica .env solo se la struttura cartelle
+# Digital Empire/EmpireDesk non e' quella standard (vedi AREUS_STATE_PATH).
 ```
 
 **Niente API key per Maps.** Playwright gira in Chromium locale.
@@ -70,47 +71,40 @@ python scraper.py --input cities.txt --limit 25 --only-alta
 
 ---
 
-### 4. USO AVANZATO - PUSH AUTOMATICO SU GOOGLE SHEETS
+### 4. USO AVANZATO - PUSH AUTOMATICO SU AREUS
 
-#### Step A: Crea Service Account (una tantum, 3 min)
+Nessun setup richiesto: il push su Areus è **attivo di default**, scrive un file JSON locale
+(`EmpireDesk/state/preventa_leads.json`) che il modulo `EmpireDesk/modules/preventa.py` legge e
+serve al pannello "Preventa — Outreach Freddo" dentro Areus.
 
-1. Vai su https://console.cloud.google.com/ → Crea progetto `Preventa-Sheets`
-2. Abilita API: **Google Sheets API** + **Google Drive API**
-3. IAM & Admin → Service Accounts → Create Service Account → Nome `preventa-sheets-pusher`
-4. Keys → Add Key → Create New Key → JSON → scarica file (es. `credentials.json`)
-5. Metti file nella cartella scraper: `cp ~/Downloads/*.json ./credentials.json`
-6. Crea Google Sheet vuoto (es. "Preventa Lead S1-Freddo") → copia ID dalla URL:
-   `https://docs.google.com/spreadsheets/d/1aBcDeFgHiJkLmNoPqRs.../edit` → ID = `1aBcDe...`
-7. **Condividi** il Sheet con l'email del service account (tipo `preventa-sheets-pusher@...iam.gserviceaccount.com`) come **Editor**
-
-#### Step B: Configura .env
+#### Lancio normale (push automatico incluso)
 
 ```bash
-GOOGLE_SHEET_ID=1aBcDeFgHiJkLmNoPqRsTuVw...
-GOOGLE_SHEETS_CREDS_PATH=credentials.json
+python scraper.py --input cities.txt --limit 25 --only-alta
 ```
 
-#### Step C: Lancia con push
-
-**Push solo ALTA (consigliato per non sporcare sheet):**
+**Push solo ALTA (consigliato, per non sporcare il CRM con lead BASSA):**
 ```bash
-python scraper.py --cities Milano,Bergamo --limit 25 --only-alta --sheet-id 1aBcDeFg... --sheets-push-alta --sheets-creds credentials.json
+python scraper.py --cities Milano,Bergamo --limit 25 --only-alta --areus-push-alta
 ```
 
-**Push tutti:**
+**Disattivare il push (solo CSV locale):**
 ```bash
-python scraper.py --input cities.txt --sheet-id 1aBcDeFg... --sheets-creds credentials.json
+python scraper.py --input cities.txt --no-areus
+```
+
+**Override path (solo se la struttura cartelle non è quella standard):**
+```bash
+python scraper.py --input cities.txt --areus-state-path "C:/altro/path/preventa_leads.json"
 ```
 
 **Cosa succede:**
-- Legge righe esistenti nel foglio, prende colonna `telefono` normalizzata
+- Legge i lead già presenti in Areus, confronta per `telefono` normalizzato
 - Salta lead con telefono già presente (deduplica)
-- Pusha a batch da 50 righe con 1s di pausa
-- Log: `✅ Sheets upload completo: 18 nuovi, 7 duplicati saltati`
+- Ogni lead nuovo entra con stage `NEW` (freddo, non ancora contattato)
+- Log: `✅ Areus: 18 nuovi lead aggiunti (Milano), 7 duplicati saltati`
 
-**Colonne Sheet:** uguali al CSV: nome_attivita, indirizzo, telefono, sito_web, ha_sito, numero_recensioni, media_recensioni, ha_ads_attive, priorita_lead, citta_ricerca, categoria, note_qualifica, maps_url, data_estrazione
-
-Se Sheet vuoto, crea header automaticamente.
+**Campi salvati:** uguali al CSV (nome_attivita, indirizzo, telefono, sito_web, ha_sito, numero_recensioni, media_recensioni, ha_ads_attive, priorita_lead, citta_ricerca, categoria, note_qualifica, maps_url, data_estrazione) + `stage`, `note`, `aggiunto_il`.
 
 ---
 
@@ -119,21 +113,22 @@ Se Sheet vuoto, crea header automaticamente.
 **Workflow giornaliero S1-Freddo consigliato:**
 
 ```bash
-# 1. Scrapa 5 nuove città, solo ALTA, pusha su Sheets
-python scraper.py --cities Como,Lecco,Sondrio,Varese,Novara --limit 30 --only-alta --sheet-id $GOOGLE_SHEET_ID --sheets-push-alta
+# 1. Scrapa 5 nuove città, solo ALTA, pusha su Areus (default attivo)
+python scraper.py --cities Como,Lecco,Sondrio,Varese,Novara --limit 30 --only-alta --areus-push-alta
 
-# 2. Esporta CSV SOLO ALTA per dialer
+# 2. Esporta CSV SOLO ALTA per dialer (backup locale)
 # File: data/leads_concessionari_SOLO_ALTA.csv
 
-# 3. Dai in pasto a agente outreach APSOC (preventa-outreach-pack)
-# L'agente legge CSV, sceglie gancio in base a priorità (ALTA no sito -> Gancio 3)
+# 3. Contatti i lead da Areus (pannello "Preventa"), o dai in pasto al runner outreach:
+python contact_leads.py
+# marca ogni lead contattato come stage=CONTACTED direttamente in Areus
 ```
 
 **Automazione cron (ogni lunedì 9:00):**
 ```bash
 crontab -e
 # aggiungi:
-0 9 * * 1 cd /path/preventa-maps-scraper && .venv/bin/python scraper.py --input cities.txt --only-alta --sheet-id X --sheets-push-alta >> logs/scraper.log 2>&1
+0 9 * * 1 cd /path/preventa-maps-scraper && .venv/bin/python scraper.py --input cities.txt --only-alta --areus-push-alta >> logs/scraper.log 2>&1
 ```
 
 ---
@@ -150,10 +145,9 @@ crontab -e
 | `--only-alta` | False | Salva solo ALTA + file `_SOLO_ALTA.csv` |
 | `--headless` | False | Headless (più rischio blocco, ma ok su server) |
 | `--headed` | default | Visibile (consigliato) |
-| `--sheet-id` | env GOOGLE_SHEET_ID | ID Google Sheet |
-| `--sheets-creds` | `credentials.json` | Path JSON service account |
-| `--sheets-worksheet` | `Foglio1` | Nome worksheet |
-| `--sheets-push-alta` | False | Se true, pusha solo ALTA su Sheets |
+| `--no-areus` | False | Disattiva il push su Areus (default: attivo, no credenziali) |
+| `--areus-state-path` | env `AREUS_STATE_PATH` o auto | Override path JSON condiviso con EmpireDesk |
+| `--areus-push-alta` | False | Se true, pusha solo ALTA su Areus |
 
 ---
 
@@ -163,7 +157,7 @@ Già incluso rispettoso:
 - 0.6-1.2s tra click scheda
 - 1.2-2.8s tra lead
 - 3-6s tra città
-- 1 batch Sheets + 1s pausa
+- Scrittura Areus istantanea a fine città (nessun batching/rete esterna)
 
 Non abbassare. Se vedi `debug_*.png` con captcha, ferma 30-60 min, rilancia con `--headed` da IP residenziale.
 
@@ -171,9 +165,9 @@ Non abbassare. Se vedi `debug_*.png` con captcha, ferma 30-60 min, rilancia con 
 
 ### 8. INTEGRAZIONE CON OUTREACH PACK
 
-Dopo che Sheets si popola:
+Dopo che Areus si popola:
 
-1. Agente legge nuove righe con `priorita_lead=ALTA` da Sheets (o da `_SOLO_ALTA.csv`)
+1. Agente legge nuove righe con `priorita_lead=ALTA` da Areus (o da `_SOLO_ALTA.csv`)
 2. Sceglie gancio da `04_5_VARIANTI_GANCIO_AB.md`:
    - ALTA no sito → Gancio 3 (PDF brutto)
    - ALTA poche rec → Gancio 2 (cliente perso WA)
@@ -184,15 +178,13 @@ Dopo che Sheets si popola:
 
 ---
 
-### 9. TROUBLESHOOTING SHEETS
+### 9. TROUBLESHOOTING AREUS
 
 | Errore | Fix |
 |--------|-----|
-| `File credenziali non trovato` | Metti `credentials.json` nella cartella o specifica `--sheets-creds /path/file.json` |
-| `gspread.exceptions.APIError: PERMISSION_DENIED` | Non hai condiviso Sheet con email service account come Editor |
-| `ModuleNotFoundError: gspread` | `pip install gspread google-auth` |
+| Lead non compaiono in EmpireDesk | Verifica che `EmpireDesk/state/preventa_leads.json` esista e che il path calcolato corrisponda alla tua struttura cartelle (altrimenti usa `--areus-state-path`) |
 | Duplicati non filtrati | Deduplica è su telefono normalizzato. Se telefono vuoto, non deduplica - normale. Pulisci manuale. |
-| Sheet vuoto non scrive header | Cancella prima riga vuota, rilancia. Codice scrive header se A1 vuota. |
+| Vuoi solo il CSV locale, niente Areus | `--no-areus` |
 
 ---
 
@@ -202,13 +194,13 @@ Dopo che Sheets si popola:
 pip install -r requirements.txt
 playwright install chromium
 
-# Test senza Sheets, solo ALTA locale:
-python scraper.py --cities Milano,Bergamo --limit 15 --only-alta
+# Test senza push (solo CSV locale):
+python scraper.py --cities Milano,Bergamo --limit 15 --only-alta --no-areus
 
-# Test con Sheets, solo ALTA pushati:
-python scraper.py --cities Milano --limit 10 --only-alta --sheet-id 1TUO_ID --sheets-push-alta --sheets-creds credentials.json
+# Uso normale: push su Areus automatico, solo ALTA:
+python scraper.py --cities Milano --limit 10 --only-alta --areus-push-alta
 ```
 
-Fatto. Motore + filtro + push Sheets automatico.
+Fatto. Motore + filtro + push Areus automatico.
 
-— v2.1 Playwright + Sheets - 22/07/2026
+— v3.0 Playwright + Areus - 28/07/2026

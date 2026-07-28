@@ -15,15 +15,24 @@ DATA_DIR = BASE_DIR / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
 class APEX7Memory:
-    def __init__(self, system_id: str = "apex7-001"):
+    def __init__(self, system_id: str = "apex7-001", domain: str = "default"):
+        """domain namespaces every persisted file under data/<domain>/ so multiple
+        ecosystems (youtube, stream-s7-bot, ...) can run the same engine without
+        sharing state. domain="default" keeps writing to data/ directly (unchanged
+        path) so existing callers (carousel-machine, skill-forge, cold-outreach)
+        are unaffected."""
         self.system_id = system_id
+        self.domain = domain
         self.session_id = str(uuid.uuid4())
-        self.db_path = DATA_DIR / "decision_log.db"
+        self.data_dir = DATA_DIR if domain == "default" else (DATA_DIR / domain)
+        self.data_dir.mkdir(parents=True, exist_ok=True)
+        self.db_path = self.data_dir / "decision_log.db"
         self._init_db()
-        
+
         # L1 - Working Memory (volatile)
         self.working_memory: Dict[str, Any] = {
             "session_id": self.session_id,
+            "domain": self.domain,
             "current_task": None,
             "current_phase": "INIT",
             "active_agents": [],
@@ -31,11 +40,11 @@ class APEX7Memory:
             "event_bus": [],
             "checkpoints": []
         }
-        
+
         # Load persistent layers
-        self.strategy_store = self._load_json(DATA_DIR / "strategy_store.json", [])
-        self.architecture_snapshots = self._load_json(DATA_DIR / "architecture_snapshots.json", [])
-        self.compressed_knowledge = self._load_json(DATA_DIR / "compressed_knowledge.json", {
+        self.strategy_store = self._load_json(self.data_dir / "strategy_store.json", [])
+        self.architecture_snapshots = self._load_json(self.data_dir / "architecture_snapshots.json", [])
+        self.compressed_knowledge = self._load_json(self.data_dir / "compressed_knowledge.json", {
             "lessons_learned": [],
             "best_practices": [],
             "anti_patterns": [],
@@ -127,7 +136,7 @@ class APEX7Memory:
         self.working_memory["checkpoints"].append({"id": cp["id"], "phase": cp["phase"], "timestamp": cp["timestamp"]})
         self.working_memory["checkpoints"] = self.working_memory["checkpoints"][-10:]
         try:
-            self._save_json(DATA_DIR / f"checkpoint_{cp['id']}.json", cp)
+            self._save_json(self.data_dir / f"checkpoint_{cp['id']}.json", cp)
         except Exception as e:
             print(f"[MEMORY CHECKPOINT WARN] {e}")
         return cp["id"]
@@ -217,7 +226,7 @@ class APEX7Memory:
                 "success_rate": score,
                 "score_history": [score] if score else []
             })
-        self._save_json(DATA_DIR / "strategy_store.json", self.strategy_store)
+        self._save_json(self.data_dir / "strategy_store.json", self.strategy_store)
 
     def get_best_strategies(self, use_case: str = None, min_score: float = 7.0):
         filtered = self.strategy_store
@@ -246,7 +255,7 @@ class APEX7Memory:
             if s.get("status") == "current":
                 s["status"] = "deprecated"
         self.architecture_snapshots.append(snap)
-        self._save_json(DATA_DIR / "architecture_snapshots.json", self.architecture_snapshots)
+        self._save_json(self.data_dir / "architecture_snapshots.json", self.architecture_snapshots)
         return snap
 
     # === L5 COMPRESSED KNOWLEDGE + AUTO-COMPRESSION ===
@@ -268,14 +277,14 @@ class APEX7Memory:
                 self.compressed_knowledge["best_practices"].append(f"{strat['name']}: {strat['description']}")
             elif sr < 4.0 and sr > 0 and strat["name"] not in self.compressed_knowledge["anti_patterns"]:
                 self.compressed_knowledge["anti_patterns"].append(f"{strat['name']}: {strat['description']}")
-        
+
         conn.close()
-        self._save_json(DATA_DIR / "compressed_knowledge.json", self.compressed_knowledge)
+        self._save_json(self.data_dir / "compressed_knowledge.json", self.compressed_knowledge)
 
     def add_lesson(self, lesson: str):
         if lesson not in self.compressed_knowledge["lessons_learned"]:
             self.compressed_knowledge["lessons_learned"].append(lesson)
-            self._save_json(DATA_DIR / "compressed_knowledge.json", self.compressed_knowledge)
+            self._save_json(self.data_dir / "compressed_knowledge.json", self.compressed_knowledge)
 
     # === GLOBAL SAVE ===
     def persist(self):
@@ -289,9 +298,9 @@ class APEX7Memory:
             "event_bus_count": len(self.working_memory.get("event_bus", [])),
             "context_keys": list(self.working_memory.get("context_variables", {}).keys())
         }
-        self._save_json(DATA_DIR / f"working_memory_{self.session_id}.json", safe_wm)
-        self._save_json(DATA_DIR / "strategy_store.json", self.strategy_store)
-        self._save_json(DATA_DIR / "compressed_knowledge.json", self.compressed_knowledge)
+        self._save_json(self.data_dir / f"working_memory_{self.session_id}.json", safe_wm)
+        self._save_json(self.data_dir / "strategy_store.json", self.strategy_store)
+        self._save_json(self.data_dir / "compressed_knowledge.json", self.compressed_knowledge)
         try:
             decisions_count = len(self.get_recent_decisions(1000))
         except:

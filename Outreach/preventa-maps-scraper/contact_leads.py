@@ -24,6 +24,7 @@ CAMPAIGN_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../Outre
 sys.path.append(CAMPAIGN_DIR)
 
 from memory import MemoryQueryInterface
+import areus
 import personalizza_messaggi
 
 def main():
@@ -93,7 +94,11 @@ def main():
         # 4. Scrive il lead nella memoria persistente per consentire il loop di ottimizzazione
         lead_key = personalizza_messaggi.normalizza_telefono(telefono) or nome.lower().strip()
         memory.write_lead(lead_key, msg_data, author="outreach_runner")
-        
+
+        # Aggiorna lo stage in Areus (CRM EmpireDesk): freddo -> contattato
+        if telefono:
+            areus.mark_contacted(telefono, canale=canale)
+
         report_contatti.append(msg_data)
         contatti_effettuati += 1
         print(f"✅ Messaggio inviato con successo a {nome}!")

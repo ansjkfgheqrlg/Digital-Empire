@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-AGENTE: Sheets-1 — Google Sheets Integration Agent
-Owner: GAEL · Controllore: A2-QA · Versione: 2.0
+AGENTE: Areus-1 — Areus (Aureus Agency OS) CRM Integration Agent
+Owner: GAEL · Controllore: A2-QA · Versione: 3.0
 Governo: APEX-7 Framework · preventa-maps-scraper
 
 Documentazione completa: ./AGENTE.md
 
 CLI:
-    python agente.py --input data/leads.csv --sheet-id <ID> [--creds credentials.json]
+    python agente.py --input data/leads.csv [--state-path X] [--only-alta]
 """
 from __future__ import annotations
 
-import os
 import sys
 import csv
 import logging
@@ -28,27 +27,27 @@ _SCRIPTS   = _ROOT_DIR / "02-AUTOMAZIONI-E-SCRIPTS"
 if str(_SCRIPTS) not in sys.path:
     sys.path.insert(0, str(_SCRIPTS))
 
-import sheets
+import areus
 from event_bus import EventBus
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s | %(levelname)s | %(message)s', datefmt='%H:%M:%S')
-log = logging.getLogger("preventa-pw.agente-integratore-sheets")
+log = logging.getLogger("preventa-pw.agente-integratore-areus")
 
 
-class SheetsAgent:
+class AreusAgent:
     """
-    Agente APEX-7 responsabile della sincronizzazione dei lead finali su Google Sheets (deduplica
-    e batching delegati al modulo condiviso `sheets.py`). Documentazione completa → AGENTE.md.
+    Agente APEX-7 responsabile della sincronizzazione dei lead finali sul CRM Areus
+    (dedup e scrittura delegate al modulo condiviso `areus.py`). Nessuna credenziale
+    esterna richiesta: scrive su un file JSON locale letto da EmpireDesk/modules/preventa.py.
+    Documentazione completa → AGENTE.md.
     """
 
-    def __init__(self, event_bus: Optional[EventBus] = None, sheet_id: str = "", creds_path: str = "credentials.json",
-                 push_only_alta: bool = False, worksheet_name: str = "Foglio1"):
-        self.agent_id = "SheetsAgent-1"
+    def __init__(self, event_bus: Optional[EventBus] = None, state_path: str = "",
+                 push_only_alta: bool = False):
+        self.agent_id = "AreusAgent-1"
         self.event_bus = event_bus or EventBus()
-        self.sheet_id = sheet_id
-        self.creds_path = creds_path
+        self.state_path = state_path or None
         self.push_only_alta = push_only_alta
-        self.worksheet_name = worksheet_name
         self.rules = self._load_rules()
 
     def _load_rules(self) -> str:
@@ -56,23 +55,16 @@ class SheetsAgent:
         return md.read_text(encoding="utf-8") if md.exists() else "Rules not found"
 
     def upload(self, leads: List[Dict[str, Any]], city: str):
-        log.info(f"📤 [{self.agent_id}] Inizio sincronizzazione su Google Sheets per la città: {city}")
-
-        if not self.sheet_id:
-            log.warning(f"⚠️ [{self.agent_id}] GOOGLE_SHEET_ID non impostato. Salto sincronizzazione Sheets per {city}.")
-            self.event_bus.publish("sheets.synced", self.agent_id, {"city": city, "success": True})
-            return
-
+        log.info(f"📤 [{self.agent_id}] Inizio sincronizzazione su Areus per la città: {city}")
         try:
-            sheets.upload_to_google_sheets(
+            result = areus.upload_to_areus(
                 leads=leads,
-                sheet_id=self.sheet_id,
-                creds_path=self.creds_path,
+                city=city,
+                state_path=self.state_path,
                 push_only_alta=self.push_only_alta,
-                worksheet_name=self.worksheet_name
             )
-            self.event_bus.publish("sheets.synced", self.agent_id, {"city": city, "success": True})
-            log.info(f"✅ [{self.agent_id}] Caricamento Google Sheets completato per {city}.")
+            self.event_bus.publish("areus.synced", self.agent_id, {"city": city, "success": True, **result})
+            log.info(f"✅ [{self.agent_id}] Sync Areus completata per {city}: {result['aggiunti']} nuovi, {result['duplicati']} duplicati.")
         except Exception as e:
             self.event_bus.publish("run.failed", self.agent_id, {"city": city, "error": str(e)})
             raise e
@@ -80,11 +72,9 @@ class SheetsAgent:
 
 # ── CLI Standalone ────────────────────────────────────────────────────────────
 def _cli() -> None:
-    parser = argparse.ArgumentParser(description="Run SheetsAgent Standalone CLI")
+    parser = argparse.ArgumentParser(description="Run AreusAgent Standalone CLI")
     parser.add_argument("--input", type=str, required=True, help="Path file CSV dei lead qualificati")
-    parser.add_argument("--sheet-id", type=str, required=True, help="ID dello Sheet di Google (dalla URL)")
-    parser.add_argument("--creds", type=str, default="credentials.json", help="Path al file JSON delle credenziali")
-    parser.add_argument("--worksheet", type=str, default="Foglio1", help="Nome del foglio di lavoro")
+    parser.add_argument("--state-path", type=str, default="", help="Override path del JSON condiviso con EmpireDesk")
     parser.add_argument("--only-alta", action="store_true", help="Carica solo lead a priorità ALTA")
     parser.add_argument("--city", type=str, default="Como", help="Città di riferimento per log")
     args = parser.parse_args()
@@ -100,13 +90,8 @@ def _cli() -> None:
         for row in reader:
             leads.append(row)
 
-    log.info(f"📤 Caricati {len(leads)} lead da CSV per caricamento su Google Sheets...")
-    agent = SheetsAgent(
-        sheet_id=args.sheet_id,
-        creds_path=args.creds,
-        push_only_alta=args.only_alta,
-        worksheet_name=args.worksheet
-    )
+    log.info(f"📤 Caricati {len(leads)} lead da CSV per sync su Areus...")
+    agent = AreusAgent(state_path=args.state_path, push_only_alta=args.only_alta)
     agent.upload(leads, args.city)
 
 

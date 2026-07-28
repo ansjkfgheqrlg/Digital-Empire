@@ -260,7 +260,7 @@ class TestApex7Components(unittest.TestCase):
             qualifier_agent=qualifier,
             writer_agent=writer,
             sender_agent=sender,
-            sheets_agent=None,
+            areus_agent=None,
             qa_agent=self.qa_agent,
             output_csv_path="data/test_output.csv",
             only_alta=False

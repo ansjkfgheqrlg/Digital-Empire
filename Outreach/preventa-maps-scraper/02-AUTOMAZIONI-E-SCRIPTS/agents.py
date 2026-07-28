@@ -47,7 +47,7 @@ QualifierAgent = _load_agente("qualificatore", "agente_qualificatore").Qualifier
 WriterAgent = _load_agente("writer", "agente_writer").WriterAgent
 SenderAgent = _load_agente("sender", "agente_sender").SenderAgent
 ResponderAgent = _load_agente("responder", "agente_responder").ResponderAgent
-SheetsAgent = _load_agente("integratore-sheets", "agente_integratore_sheets").SheetsAgent
+AreusAgent = _load_agente("integratore-areus", "agente_integratore_areus").AreusAgent
 OfficialGateAgent = _load_agente("gate", "agente_gate").GateAgent
 
 log = logging.getLogger("preventa-pw.agents")
@@ -100,11 +100,11 @@ class DebugAgent:
 class Conductor:
     """
     Orchestratore principale della pipeline APEX-7.
-    Coordina il flusso: Scraper → Qualifier → Writer → Sender → Sheets → Gate E2E.
+    Coordina il flusso: Scraper → Qualifier → Writer → Sender → Areus → Gate E2E.
     Implementa il pattern event-driven: ogni fase reagisce all'evento pubblicato da quella precedente.
     """
     def __init__(self, event_bus: EventBus, scraper_agent: ScraperAgent, qualifier_agent: QualifierAgent,
-                 sheets_agent: Optional[SheetsAgent], qa_agent: QAAgent, output_csv_path: str,
+                 areus_agent: Optional[AreusAgent], qa_agent: QAAgent, output_csv_path: str,
                  writer_agent: Optional[WriterAgent] = None, sender_agent: Optional[SenderAgent] = None,
                  meta_optimizer: Optional[MetaOptimizer] = None, only_alta: bool = False):
         self.agent_id = "Conductor-1"
@@ -113,7 +113,7 @@ class Conductor:
         self.qualifier_agent = qualifier_agent
         self.writer_agent = writer_agent
         self.sender_agent = sender_agent
-        self.sheets_agent = sheets_agent
+        self.areus_agent = areus_agent
         self.qa_agent = qa_agent
         self.meta_optimizer = meta_optimizer
         self.output_csv_path = output_csv_path
@@ -125,7 +125,7 @@ class Conductor:
         self.event_bus.subscribe("leads.qualified", self.on_leads_qualified)
         self.event_bus.subscribe("messages.generated", self.on_messages_generated)
         self.event_bus.subscribe("messages.sent", self.on_messages_sent)
-        self.event_bus.subscribe("sheets.synced", self.on_sheets_synced)
+        self.event_bus.subscribe("areus.synced", self.on_areus_synced)
         self.event_bus.subscribe("gate.failed", self.on_gate_failed)
 
     def run_city_workflow(self, city: str, categoria: str, limit: int):
@@ -200,12 +200,12 @@ class Conductor:
             log.error(f"❌ [{self.agent_id}] Bloccato al Gate L5→L6. Termino upload per {city}.")
             return
 
-        if self.sheets_agent:
-            self.sheets_agent.upload(final_sorted, city)
+        if self.areus_agent:
+            self.areus_agent.upload(final_sorted, city)
         else:
-            self.on_sheets_synced(Event("sheets.synced", "Conductor", {"city": city, "success": True}))
+            self.on_areus_synced(Event("areus.synced", "Conductor", {"city": city, "success": True}))
 
-    def on_sheets_synced(self, event: Event):
+    def on_areus_synced(self, event: Event):
         city = event.payload.get("city")
 
         # Validazione finale Gate L6→L7 (Fine E2E)

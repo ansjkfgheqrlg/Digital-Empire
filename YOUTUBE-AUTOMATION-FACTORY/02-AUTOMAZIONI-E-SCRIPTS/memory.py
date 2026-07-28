@@ -14,10 +14,13 @@ from typing import Dict, List, Any, Optional
 
 log = logging.getLogger("preventa-pw.memory")
 
+_SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
+_DEFAULT_BASE_DIR = os.path.abspath(os.path.join(_SCRIPT_DIR, "..", "memory"))
+
 class MemoryQueryInterface:
     def __init__(self, run_id: Optional[str] = None, base_dir: Optional[str] = None):
         self.run_id = run_id or f"yt-{datetime.now().strftime('%Y%m%d-%H%M%S')}"
-        self.base_dir = base_dir or r"c:\Users\olhad\Desktop\Digital Empire\YOUTUBE-AUTOMATION-FACTORY\memory"
+        self.base_dir = base_dir or _DEFAULT_BASE_DIR
         
         os.makedirs(self.base_dir, exist_ok=True)
         os.makedirs(os.path.join(self.base_dir, "runs"), exist_ok=True)

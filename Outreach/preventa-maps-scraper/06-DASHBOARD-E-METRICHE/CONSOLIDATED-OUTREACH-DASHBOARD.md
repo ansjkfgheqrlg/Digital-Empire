@@ -78,6 +78,6 @@ python run_parallel.py
 # Avvio Scraper Google Maps localmente (Solo ALTA)
 python scraper.py --cities Milano,Bergamo --limit 20 --only-alta
 
-# Avvio Scraper con invio diretto Sheets
-python scraper.py --cities Milano --limit 20 --only-alta --sheet-id IL_TUO_SHEET_ID --sheets-push-alta
+# Avvio Scraper con push diretto su Areus (CRM EmpireDesk, default attivo)
+python scraper.py --cities Milano --limit 20 --only-alta --areus-push-alta
 ```

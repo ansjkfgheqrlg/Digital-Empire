@@ -19,14 +19,13 @@ import {
 import { Reveal } from "@/components/reveal";
 
 /* ============================================================
-   PREZZO — DEC-EST-005 (attivazione €490 + canone €149/mese).
-   Il veto M-EST-4 di Max è ancora aperto: se il prezzo cambia,
-   si tocca SOLO questo blocco. Con MOSTRA_PREZZO = false la
-   cifra sparisce dalla pagina e si rimanda alla demo.
+   PREZZO — DEC-EST-005/M-EST-4 chiusa da Max il 28/07/2026:
+   €2.000 una tantum, pagamento unico, nessun canone. Se il
+   prezzo cambia, si tocca SOLO questo blocco. Con MOSTRA_PREZZO
+   = false la cifra sparisce dalla pagina e si rimanda alla demo.
    ============================================================ */
 const MOSTRA_PREZZO = true;
-const PREZZO_ATTIVAZIONE = "490";
-const PREZZO_CANONE = "149";
+const PREZZO_TANTUM = "2.000";
 
 const BENEFICI = [
   {
@@ -50,8 +49,8 @@ const BENEFICI = [
     tag: "Autonomia",
     h: "Non un'altra agenzia. Uno strumento vostro.",
     body:
-      "Non pagate a preventivo e non aspettate un grafico. È un software che gira sul PC del salone, a canone fisso, che disdite quando volete.",
-    foot: "Licenza a canone con kill-switch remoto, zero vincoli lunghi",
+      "Non pagate a preventivo e non aspettate un grafico. È un software che gira sul PC del salone: lo pagate una volta e resta vostro.",
+    foot: "€2.000 una tantum, nessun canone, zero vincoli lunghi",
   },
 ];
 
@@ -79,7 +78,7 @@ const INCLUSO = [
   "Regole di prezzo del salone applicate a ogni preventivo",
   "Sei controlli automatici prima che il PDF venga emesso",
   "Storico dei preventivi generati, salvato sul PC del salone",
-  "Aggiornamenti del motore inclusi nel canone",
+  "Aggiornamenti del motore inclusi, nessun costo ricorrente",
 ];
 
 const GRAIN = (seed: string, freq = "1.35") =>
@@ -249,32 +248,31 @@ export function Preventa() {
           <Reveal delay={0.20} className="lg:col-span-2">
             <div className="card-silver-gold h-full flex flex-col">
               <span className="text-[0.7rem] uppercase tracking-[0.20em] font-semibold text-[#c93a0a] block mb-4">
-                Licenza a canone
+                Pagamento unico
               </span>
 
               {MOSTRA_PREZZO ? (
                 <>
                   <div className="flex items-baseline gap-2">
                     <span className="font-display text-[3rem] leading-none font-bold text-[#1c1c1c]">
-                      €{PREZZO_CANONE}
+                      €{PREZZO_TANTUM}
                     </span>
                     <span className="text-[0.95rem] font-medium text-[#1c1c1c]/60">
-                      / mese
+                      una tantum
                     </span>
                   </div>
                   <p className="mt-2 text-[0.9rem] text-[#1c1c1c]/70">
-                    più €{PREZZO_ATTIVAZIONE} una tantum di attivazione: configurazione
-                    della concessionaria, logo, regole di prezzo e consegna dell&apos;app.
+                    Configurazione della concessionaria, logo, regole di prezzo e consegna
+                    dell&apos;app incluse. Nessun canone mensile.
                   </p>
                 </>
               ) : (
                 <>
                   <div className="font-display text-[2rem] leading-tight font-bold text-[#1c1c1c]">
-                    Canone fisso mensile
+                    Pagamento unico
                   </div>
                   <p className="mt-2 text-[0.9rem] text-[#1c1c1c]/70">
-                    Più una quota di attivazione una tantum. Cifra esatta in demo, sulla
-                    dimensione del vostro salone.
+                    Cifra esatta in demo, sulla dimensione del vostro salone.
                   </p>
                 </>
               )}

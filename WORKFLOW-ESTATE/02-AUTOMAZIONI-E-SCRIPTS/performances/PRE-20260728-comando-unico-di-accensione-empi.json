@@ -1,0 +1,15 @@
+{
+  "tipo": "prestazione",
+  "titolo": "Comando unico di accensione: empire avvia-estate + skill /avvia-estate-wk",
+  "autore": "Claude",
+  "prova": "python -m empire avvia-estate -> exit 0 ACCESO. Rigenera dashboard, valuta 11/13 gate, misura 58 agenti, conta 22 tracce, scrive traccia sessione. Skill /avvia-estate-wk nell'elenco skill.",
+  "quando": "2026-07-28T14:24:16+02:00",
+  "contesto": "Max: accendere tutto il sistema nervoso con UN comando. empire/avvia.py registrato via plugin loop (cli.py congelato). Non spara verso esterno (porte d'uscita = Max).",
+  "tags": [
+    "estate",
+    "avvio",
+    "comando-unico",
+    "sistema-nervoso"
+  ],
+  "id": "PRE-20260728-comando-unico-di-accensione-empi"
+}

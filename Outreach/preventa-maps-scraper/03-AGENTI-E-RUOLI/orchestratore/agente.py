@@ -8,7 +8,7 @@ Governo: APEX-7 Framework · preventa-maps-scraper
 Documentazione completa: ./AGENTE.md
 
 NON duplicare logica qui: l'orchestrazione event-driven (Scraper → Qualifier → Writer → Sender →
-Sheets → Gate E2E) vive nella classe Conductor di ../../02-AUTOMAZIONI-E-SCRIPTS/agents.py, e il
+Areus → Gate E2E) vive nella classe Conductor di ../../02-AUTOMAZIONI-E-SCRIPTS/agents.py, e il
 suo entry point CLI è ../../02-AUTOMAZIONI-E-SCRIPTS/orchestrator.py. Questo modulo re-esporta
 Conductor sotto il nome canonico OrchestratorAgent per coerenza col pattern cartella-per-agente,
 senza ricreare un secondo script CLI ~250 righe quasi identico a orchestrator.py (era il difetto

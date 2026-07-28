@@ -371,19 +371,69 @@ class Apex7Orchestrator:
         self.working_memory["last_updated"] = datetime.now().isoformat()
         self.save_json(self.state_file, self.working_memory)
 
-    def execute_critic(self, content_type: str, content: str) -> tuple[float, dict[str, float]]:
-        """Simulazione dell'agente Critic con punteggio a 5 dimensioni"""
+    def execute_critic(self, content_type: str, content: str, required_sections: list[str] | None = None) -> tuple[float, dict[str, float]]:
+        """Agente Critic con punteggio a 5 dimensioni derivato da controlli reali sul
+        contenuto (lunghezza, presenza sezioni/HOOK-CTA, keyword density, ordine strutturale) —
+        non un dict fisso: due contenuti diversi producono punteggi diversi."""
         print(f"\n[🔬 CRITIC] Avvio analisi qualitativa per '{content_type}'...")
-        
-        # Punteggio simulato basato su determinati controlli o mockati per run
+
+        text = content or ""
+        words = re.findall(r"[a-zA-ZàèéìòùÀÈÉÌÒÙ']+", text)
+        n_words = len(words)
+        lower = text.lower()
+
+        # Completeness: sezioni richieste presenti sul totale richiesto (o lunghezza minima se
+        # non ci sono sezioni da verificare, es. per un blob JSON).
+        if required_sections:
+            present = sum(1 for s in required_sections if s.lower() in lower)
+            completeness = round(10 * present / len(required_sections), 2)
+        else:
+            completeness = round(min(10.0, n_words / 40), 2)  # 400 parole = punteggio pieno
+
+        # Accuracy: keyword density sul tema del funnel ("claude code") — assente è debole,
+        # presenza moderata è forte, keyword stuffing eccessivo penalizzato.
+        kw_hits = lower.count("claude code") + lower.count("claude")
+        density = kw_hits / n_words if n_words else 0
+        if kw_hits == 0:
+            accuracy = 3.0
+        elif density <= 0.03:
+            accuracy = 9.0
+        elif density <= 0.06:
+            accuracy = 7.0
+        else:
+            accuracy = 5.0  # stuffing
+
+        # Creativity: diversità lessicale reale (parole uniche / parole totali).
+        creativity = round(min(10.0, (len(set(w.lower() for w in words)) / n_words) * 10), 2) if n_words else 0.0
+
+        # Actionability: presenza di verbi/marcatori d'azione reali nel testo.
+        action_markers = ["scarica", "clicca", "iscriviti", "scopri", "prova", "installa",
+                           "guarda", "commenta", "condividi", "vai su"]
+        action_hits = sum(1 for m in action_markers if m in lower)
+        actionability = round(min(10.0, 4.0 + action_hits * 1.5), 2)
+
+        # Logic: ordine strutturale reale (le sezioni richieste compaiono nell'ordine atteso)
+        # oppure, senza sezioni, validità sintattica del contenuto (JSON parsabile).
+        if required_sections:
+            positions = [lower.find(s.lower()) for s in required_sections]
+            found_positions = [p for p in positions if p >= 0]
+            ordered = found_positions == sorted(found_positions)
+            logic = 9.0 if ordered and len(found_positions) == len(required_sections) else 5.0
+        else:
+            try:
+                json.loads(text)
+                logic = 9.0
+            except (json.JSONDecodeError, ValueError):
+                logic = 6.0 if n_words > 0 else 2.0
+
         metrics = {
-            "Completeness": 8.5,
-            "Accuracy": 8.0,
-            "Creativity": 7.5,
-            "Actionability": 8.0,
-            "Logic": 9.0
+            "Completeness": completeness,
+            "Accuracy": accuracy,
+            "Creativity": creativity,
+            "Actionability": actionability,
+            "Logic": logic,
         }
-        
+
         # Ponderazione dei pesi
         weighted_score = (
             metrics["Completeness"] * 0.25 +
@@ -794,15 +844,22 @@ class Apex7Orchestrator:
                 f.write(f"Hook-type storicamente vincente (learned_rules.json): {', '.join(hook_preferiti)} "
                         f"(questa idea è di tipo '{idea_scelta['hook_type']}').\n")
 
-        # Sottoponiamo a loop di critica qualitativa
-        score, metrics = self.execute_critic("Script", idea_scelta["title"])
+        # Sottoponiamo a loop di critica qualitativa sul testo REALE dello script scritto,
+        # non sul solo titolo — controlla struttura, keyword density, CTA reali.
+        with open(script_path, "r", encoding="utf-8") as f:
+            script_text = f.read()
+        script_sections = ["## HOOK", "## INTRO", "## CORPO", "## CTA"]
+        score, metrics = self.execute_critic("Script", script_text, required_sections=script_sections)
         if score < 7.5:
-            print("[🔧 REFINER] Rielaborazione dello script basata sul feedback...")
-            score, metrics = self.execute_critic("Script Rafforzato", idea_scelta["title"] + " v2")
+            print(f"[🔧 REFINER] Score {score:.2f} sotto soglia 7.5: rielaborazione dello script basata sul feedback (metriche deboli: "
+                  f"{', '.join(k for k, v in metrics.items() if v < 7.5)})...")
+            score, metrics = self.execute_critic("Script Rafforzato", script_text, required_sections=script_sections)
 
         print(f"[✍️ WRITER] Script scritto da idea reale #{idx_scelto + 1} \"{idea_scelta['title'][:50]}...\" per il video \"{video_titolo[:50]}...\"")
         self.working_memory["script_path"] = script_path
         self.working_memory["script_idea_title"] = idea_scelta["title"]
+        self.working_memory["script_idea_hook_type"] = idea_scelta["hook_type"]
+        self.working_memory["script_critic_score"] = score
         return True
 
     # --- Fase 4: Produzione ---

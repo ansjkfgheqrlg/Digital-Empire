@@ -25,7 +25,7 @@ from agents import (
     QualifierAgent,
     WriterAgent,
     SenderAgent,
-    SheetsAgent,
+    AreusAgent,
     QAAgent,
     DebugAgent,
     Conductor
@@ -42,8 +42,8 @@ def main():
     parser.add_argument("--limit", type=int, default=2, help="Max risultati per città (default basso per sicurezza)")
     parser.add_argument("--headless", action="store_true")
     parser.add_argument("--only-alta", action="store_true", help="Salva solo lead priorità ALTA")
-    parser.add_argument("--sheet-id", type=str, help="ID Google Sheet")
-    parser.add_argument("--sheets-creds", type=str, default="credentials.json", help="Path JSON credentials")
+    parser.add_argument("--no-areus", action="store_true", help="Disattiva il push su Areus")
+    parser.add_argument("--areus-state-path", type=str, default="", help="Override path del JSON condiviso con EmpireDesk")
     parser.add_argument("--mock-scrape", action="store_true", help="Simula lo scraping e usa dati finti per evitare blocchi Google")
     args = parser.parse_args()
 
@@ -68,12 +68,11 @@ def main():
     writer_agent = WriterAgent(event_bus)
     sender_agent = SenderAgent(event_bus)
     
-    sheets_agent = None
-    if args.sheet_id:
-        sheets_agent = SheetsAgent(
+    areus_agent = None
+    if not args.no_areus:
+        areus_agent = AreusAgent(
             event_bus=event_bus,
-            sheet_id=args.sheet_id,
-            creds_path=args.sheets_creds,
+            state_path=args.areus_state_path,
             push_only_alta=args.only_alta
         )
 
@@ -131,7 +130,7 @@ def main():
             qualifier_agent=qualifier_agent,
             writer_agent=writer_agent,
             sender_agent=sender_agent,
-            sheets_agent=sheets_agent,
+            areus_agent=areus_agent,
             qa_agent=qa_agent,
             meta_optimizer=meta_optimizer,
             output_csv_path=args.output,
@@ -178,7 +177,7 @@ def main():
                     qualifier_agent=qualifier_agent,
                     writer_agent=writer_agent,
                     sender_agent=sender_agent,
-                    sheets_agent=sheets_agent,
+                    areus_agent=areus_agent,
                     qa_agent=qa_agent,
                     meta_optimizer=meta_optimizer,
                     output_csv_path=city_output_path,

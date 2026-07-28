@@ -52,7 +52,8 @@
 | **agency-empire/src/sections/03b-preventa.tsx** (sezione Preventa) | 01-AGENCY / Vetrina | A10-QA-Cliente | build Gael (CP-20260723-004) | MANDATO Art.8 · ADR-008 |
 | **agency-empire/src/sections/09b-prove-novacar.tsx** (caso Novacar) | 01-AGENCY / Vetrina | A10-QA-Cliente | build sessione parallela (CP-20260723-003) | MANDATO Art.8 · ADR-008 |
 | **concessionari-preventa campaign** (outreach concessionari) | 01-AGENCY / A2-Acquisizione | A2-QA (ag-a2-qa) | build Gael (CP-20260723-004) | MANDATO Art.8 · ADR-008 |
-| **STREAM-S7-BOT** (Solana NFT/Memecoin Bot - R&D Speculativo) | 00-CORE | 5-bis | build Gemini (GEM-07) | R&D Speculativa (0€ Revenue) |
+| **STREAM-S7-BOT** (Solana NFT/Memecoin Bot - R&D Speculativo) — reimplementazione orchestratore in migrazione verso motore condiviso `11-APEX-7-CORE`, non ancora ritirata (ADR-003 wrap-non-riscrittura) | 00-CORE | 5-bis | build Gemini (GEM-07) | R&D Speculativa (0€ Revenue) · ADR-010 |
+| **11-APEX-7-CORE / motore condiviso** (`memory_system.py` multi-tenant `domain=...`, `ruflo_core.py`, `BaseAgent`) — Coordination Fabric ufficiale del backbone Ruflo, Fase 1 pilota su YouTube+Stream-S7-Bot, gia' in uso da carousel-machine/skill-forge/cold-outreach (`domain="default"`) | 11-APEX-7-CORE | test_multi_tenant.py (4/4) + 5-bis | ADR-009 (promozione ecosistema) + ADR-010 (fusione Ruflo) | Art.8 · ADR-003 (wrap, non riscrittura) · ADR-010 |
 
 
 

@@ -46,10 +46,10 @@ GATE_DEFINITIONS = {
         ]
     },
     "L4_L5": {
-        "name": "Gate L4 -> L5 (Integrazione & Google Sheets)",
+        "name": "Gate L4 -> L5 (Integrazione & Areus)",
         "threshold": 1.0,  # 3/3
         "criteria": [
-            {"id": "C1", "description": "Connessione alle API di Google Sheets riuscita"},
+            {"id": "C1", "description": "Scrittura sul CRM Areus riuscita"},
             {"id": "C2", "description": "Deduplica dei telefoni eseguita con successo"},
             {"id": "C3", "description": "Nuove righe inserite correttamente nel foglio"}
         ]
@@ -67,7 +67,7 @@ GATE_DEFINITIONS = {
         "name": "Gate L6 -> L7 (APEX E2E Scraper Complete)",
         "threshold": 1.0,  # 4/4
         "criteria": [
-            {"id": "C1", "description": "Tutti i moduli (Scraper, Qualifier, Sheets) hanno terminato con successo"},
+            {"id": "C1", "description": "Tutti i moduli (Scraper, Qualifier, Areus) hanno terminato con successo"},
             {"id": "C2", "description": "Tutti i gate di controllo intermedi superati"},
             {"id": "C3", "description": "I dati finali corrispondono alla specifica di schema"},
             {"id": "C4", "description": "Log di telemetria scritto in memoria senza errori non gestiti"}
