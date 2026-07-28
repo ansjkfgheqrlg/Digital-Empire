@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: WORKFLOW ESTATE OPERATIVO · agenti PEZZO 3 · YT-Factory F1)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: WORKFLOW ESTATE OPERATIVO · YT-Factory F3/F2 · Preventa lead REALI · agenti PEZZO 3)
 
-## 🚀 2026-07-27 — WORKFLOW ESTATE OPERATIVO DA ADESSO — CP-20260727-012
+## 🚀 2026-07-27 — WORKFLOW ESTATE OPERATIVO DA ADESSO — CP-20260727-015
 Il cervello è acceso e ha un punto d'ingresso unico: `WORKFLOW-ESTATE/AVVIO-OPERATIVO.md`.
 **3 comandi** lo fanno girare e rispondono ai 3 desideri di Max (cosa fare/stato vero/lancia):
 `empire estate` · `empire forge scan` · `empire trace stato`.
@@ -15,8 +14,6 @@ di spawn: `estate`/`forge`/`trace` sono comandi diretti.
 Le 2 voci rosse (Gate-CONTATTI lead veri, Gate-REV incasso) restano di Max → `06-DASHBOARD-E-METRICHE/AZIONI-MAX.md`.
 
 ---
-=======
-# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: YT Factory F3 script reale · F2 video LIVE reali · agenti PEZZO 3 · Preventa lead REALI · F1 niche-gate bloccante · Estate=cervello)
 
 ## ✍️ 2026-07-28 — YOUTUBE-AUTOMATION-FACTORY: FASE 3 (SCRIPT) COLLEGATA A MATERIALE REALE — CP-20260727-014
 > Task 3 della lista in [CP-20260727-007](checkpoints/CP-20260727-007.md). `run_phase_3` ora
@@ -65,7 +62,6 @@ questi dati veri (`personalizza_messaggi.py` → `stato_e_followup.py --init` �
 
 **RIPRESA DA:** confermare con Gael se committare il fix di `agents.py` (bug reale, non
 feature). Dati lead restano locali/gitignored per policy. G-A4 in attesa di Max.
->>>>>>> origin/main
 
 ## 🔧 2026-07-27 — AGENTI OPERATIVI PEZZO 3: ANDREI-PASCU-MINER — CP-20260727-011
 Promosso 0→10/10 (competitor intelligence, alimenta S5 YouTube). Dati **reali** dal playbook
