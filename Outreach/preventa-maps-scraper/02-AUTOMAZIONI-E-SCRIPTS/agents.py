@@ -118,6 +118,7 @@ class Conductor:
         self.meta_optimizer = meta_optimizer
         self.output_csv_path = output_csv_path
         self.only_alta = only_alta
+        self.all_rows: List[Dict[str, Any]] = []
 
         # Sottoscrizione degli eventi della pipeline
         self.event_bus.subscribe("leads.extracted", self.on_leads_extracted)
@@ -188,7 +189,10 @@ class Conductor:
 
     def _finalize_and_save(self, rows: List[Dict[str, Any]], city: str):
         import run
-        final_sorted, filtered_sorted = run.save_csv(rows, self.output_csv_path, only_alta=self.only_alta)
+        # Accumula tra le città: save_csv scrive in overwrite, quindi va richiamato sempre
+        # con lo storico completo, altrimenti l'ultima città processata cancella le precedenti.
+        self.all_rows.extend(rows)
+        final_sorted, filtered_sorted = run.save_csv(self.all_rows, self.output_csv_path, only_alta=self.only_alta)
 
         # Validazione Gate L5→L6 (Salvataggio CSV)
         csv_check_str = f"salvato {self.output_csv_path} con {len(final_sorted)} righe. only-alta: {self.only_alta}"
