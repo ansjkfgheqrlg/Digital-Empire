@@ -33,8 +33,26 @@ ciascuno, output JSON verificato a runtime nel test suite): il problema non è c
 prodotto un video reale né mai processato una nicchia reale. Stesso pattern identificato in
 [[CP-20260724-007]] (7 piani ristrutturazione): "il problema non era la capacità, era l'esecuzione".
 
-### ✅ Task aperti, in ordine di priorità (nessuno eseguito — richiede via libera esplicita, vincolo sovrano additivo)
-1. **F1 → dati reali**: collegare `apex7_orchestrator.py::run_phase_1` a `WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/` (dati Gemini già pronti) invece del canale mock.
+### Task aperti, in ordine di priorità (via libera di Gael il 2026-07-27, si parte da F1)
+1. ✅ **F1 → dati reali (FATTO 2026-07-27)**: `apex7_orchestrator.py::run_phase_1` ora legge i 20
+   canali reali da `WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/01_MAPPA_CANALI.md`
+   (nuovo metodo `load_real_niche_channels()`), seleziona il canale con priorità di tier
+   "Altissima/Media-Alta opportunità per il Manuale" (dall'analisi di clusterizzazione reale del
+   documento) e a parità di tier per viste medie più alte. Il Cash Cow Index si calcola su una
+   stima aggregata onestamente dichiarata (view medie low/high del canale reale + età stimata
+   dalla frequenza di upload reale — 01_MAPPA_CANALI.md non ha dati singolo-video da Video IQ).
+   `scheda-nicchia.md` e il decision log ora riportano il **verdetto reale** (può essere FAIL:
+   verificato con un run manuale, canale scelto "Alberto Olla", indice 44.0, sotto soglia 60 →
+   niche-gate FAIL — la vecchia versione scriveva sempre "PASS" per costruzione, questa no).
+   11/11 test invariati verdi.
+   **Aggiornamento 2026-07-27 (stesso giorno, via libera Gael "includilo"): niche-gate ora reale
+   e bloccante.** `run_phase_1` prova i candidati in ordine di priorità finché uno non supera
+   davvero la soglia 60 (retry automatico, come farebbe un niche-scout umano — non si accontenta
+   del primo canale "in target" se le sue viste reali sono troppo basse). Verificato: Alberto Olla
+   (44.0), Martes AI (19.7), Piero Savastano (17.3), SOS Automazioni (20.2) scartati in sequenza,
+   **Andrea Ciraolo selezionato con indice reale 78.4 (PASS)**. Se TUTTI e 20 i canali reali
+   falliscono il gate, `run_phase_1` ora ritorna `False` per davvero (`sys.exit(1)`, "Riprendi con
+   --resume") invece di forzare comunque un PASS.
 2. **F2 → dati reali**: generare `candidati-video.json` dai video reali del canale scelto in F1, non dai 2 hardcoded.
 3. **F3 → script reale**: invocare l'agente `operatori/script-writer.md` sul video/nicchia reale, non scrivere sempre lo stesso testo.
 4. **F4 → produzione reale**: generare la spec Fliki dallo script reale di F3 (scene multiple, non 1 fissa).

@@ -1,6 +1,6 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Gael: agenti PEZZO 3 ANDREI-PASCU-MINER · Claude: audit YT-FACTORY · Estate=cervello · preventa 100% · APEX-7 Level 2)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: agenti PEZZO 3 · YT-Factory F1 niche-gate · Estate=cervello · preventa 100%)
 
-## 🔧 2026-07-27 — AGENTI OPERATIVI PEZZO 3: ANDREI-PASCU-MINER — CP-20260727-009
+## 🔧 2026-07-27 — AGENTI OPERATIVI PEZZO 3: ANDREI-PASCU-MINER — CP-20260727-011
 Promosso 0→10/10 (competitor intelligence, alimenta S5 YouTube). Dati **reali** dal playbook
 collegato (9 principi, 8-step didattico, AP VIDEO SYSTEM 0-15min, gate APSOC ≥23/25), non inventati.
 Guardia anti-invenzione: pattern non visto su frame reali = `DA VERIFICARE`. Additivo (7→131 righe).
@@ -15,6 +15,33 @@ dalla root** (candidato a controllo pre-commit).
 i profili soci AGENTE-CLAUDE/GAEL/MAX). Ogni agente = fase = checkpoint+commit+push.
 
 ---
+
+## 🚧 2026-07-27 — YOUTUBE-AUTOMATION-FACTORY: NICHE-GATE REALE E BLOCCANTE — CP-20260727-010
+> Gael ha chiesto ("includilo") di completare [CP-20260727-009](checkpoints/CP-20260727-009.md):
+> il verdetto FAIL era già calcolato onestamente ma non fermava nulla. Ora `run_phase_1` prova i
+> canali reali candidati in ordine di priorità finché uno non supera davvero la soglia 60 (retry
+> automatico, come farebbe un niche-scout umano — non hard-fail al primo tentativo, altrimenti
+> qualunque canale a fit alto ma views modeste avrebbe fermato l'intera pipeline).
+>
+> **Verificato:** Alberto Olla (44.0), Martes AI (19.7), Piero Savastano (17.3), SOS Automazioni
+> (20.2) scartati in sequenza — tutti tier "Altissima opportunità" ma viste reali basse — **Andrea
+> Ciraolo selezionato con indice reale 78.4 (PASS)**, tier "Media/Alta" ma viste 10.000-25.000.
+> Se tutti e 20 i canali reali falliscono, `run_phase_1` ritorna `False` per davvero
+> (`sys.exit(1)`). 11/11 test invariati verdi. Vedi [CP-20260727-010](checkpoints/CP-20260727-010.md).
+
+## 🚀 2026-07-27 — YOUTUBE-AUTOMATION-FACTORY: FASE 1 (SCOUTING) COLLEGATA A DATI REALI — CP-20260727-009
+> Via libera di Gael sul Task 1 di [CP-20260727-007](checkpoints/CP-20260727-007.md). `run_phase_1`
+> di `apex7_orchestrator.py` non usa più il canale mock "Legami d'amore": legge i 20 canali reali
+> italiani AI/automazione da `WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/01_MAPPA_CANALI.md`
+> (analisi Gemini), sceglie per tier di opportunità reale + viste medie, calcola il Cash Cow Index
+> su una stima aggregata onestamente dichiarata come tale (il documento non ha dati singolo-video).
+>
+> **Prova che il fix è reale:** un run manuale ha selezionato "Alberto Olla", indice **44.0 su
+> soglia 60 → verdetto FAIL** — la vecchia versione scriveva sempre "76.5, PASS" per costruzione.
+> 11/11 test invariati verdi. **Aperto:** se un FAIL debba bloccare davvero il workflow (oggi la
+> fase ritorna comunque `True`, il FAIL è solo scritto onestamente in `scheda-nicchia.md`) — scelta
+> di processo, non tecnica, da confermare prima o durante il Task 2 (F2, candidati-video reali).
+> Vedi [CP-20260727-009](checkpoints/CP-20260727-009.md).
 
 ## 🔎 2026-07-27 — AUDIT YOUTUBE-AUTOMATION-FACTORY (richiesta Gael) — CP-20260727-007
 > Gael ha chiesto lo stato dei task su `YOUTUBE-AUTOMATION-FACTORY`. Prima di rispondere, audit
