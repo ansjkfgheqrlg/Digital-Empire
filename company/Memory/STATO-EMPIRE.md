@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-07-27/28 (Claude: YT Factory F2 video LIVE reali · Preventa lead REALI + bug scraper fixato · YT Factory F1 niche-gate bloccante · Estate=cervello · APEX-7 Level 2 · agenti PEZZO 2)
+# STATO EMPIRE -- aggiornato 2026-07-27/28 (Claude: YT Factory F2 video LIVE reali · agenti PEZZO 3 · Preventa lead REALI + bug scraper fixato · YT Factory F1 niche-gate bloccante · Estate=cervello)
 
 ## 🎬 2026-07-27/28 — YOUTUBE-AUTOMATION-FACTORY: FASE 2 (SELEZIONE VIDEO) CON DATI LIVE REALI — CP-20260727-012
 > Gael ha lasciato a me la scelta dell'approccio per il Task 2 ("procedi come vuoi... quello che
@@ -17,7 +17,10 @@
 > Ciraolo: 26 video reali puliti, candidato A-upside "KIMI K3..." con SEO reale 17.5/100 (keyword
 > "claude" assente). Vedi [CP-20260727-012](checkpoints/CP-20260727-012.md).
 
-## ✅ 2026-07-27 — PREVENTA: BUG SCRAPER MULTI-CITTÀ FIXATO + 64 LEAD REALI — CP-20260727-011
+## ✅ 2026-07-27 — PREVENTA: BUG SCRAPER MULTI-CITTÀ FIXATO + 64 LEAD REALI — CP-20260727-013
+> Rinumerato da CP-20260727-011 per collisione con il checkpoint "Agenti operativi PEZZO 3"
+> (sezione subito sotto), stessa data, sessioni parallele. Contenuto invariato.
+
 Gael ha detto "fai quello che puoi" dopo la lista di azioni non bloccate da Max
 ([CP-20260727-006](checkpoints/CP-20260727-006.md)). Rilanciato lo scraper reale su Milano/
 Bergamo/Brescia per chiudere onestamente Gate-CONTATTI (ROSSO dal 24/07: i 61 lead dichiarati il
@@ -29,10 +32,24 @@ città processata (Brescia), Milano e Bergamo sparivano. Fix in `agents.py` (acc
 questi dati veri (`personalizza_messaggi.py` → `stato_e_followup.py --init` → `--followup-oggi`):
 19/19 lead `da_contattare`, 0 follow-up dovuti (corretto, nessuno ancora "contattato"). **G-A4
 (invio reale) resta gated M-EST-6/7/9**, nessun messaggio inviato. Vedi
-[CP-20260727-011](checkpoints/CP-20260727-011.md).
+[CP-20260727-013](checkpoints/CP-20260727-013.md).
 
 **RIPRESA DA:** confermare con Gael se committare il fix di `agents.py` (bug reale, non
 feature). Dati lead restano locali/gitignored per policy. G-A4 in attesa di Max.
+
+## 🔧 2026-07-27 — AGENTI OPERATIVI PEZZO 3: ANDREI-PASCU-MINER — CP-20260727-011
+Promosso 0→10/10 (competitor intelligence, alimenta S5 YouTube). Dati **reali** dal playbook
+collegato (9 principi, 8-step didattico, AP VIDEO SYSTEM 0-15min, gate APSOC ≥23/25), non inventati.
+Guardia anti-invenzione: pattern non visto su frame reali = `DA VERIFICARE`. Additivo (7→131 righe).
+**I 3 agenti-ruolo di `03-AGENTI-E-RUOLI` ora tutti operativi** (A8-Closer, CRO-COPY, ANDREI).
+```
+435 agenti reali:  58 OPERATIVO (13.3%) · 324 PARZIALE · 54 DOCUMENTALE
+```
+Report visibile aggiornato: `03-AGENTI-E-RUOLI/STATO-AGENTI.md`.
+**Difetto 5ª volta:** percorsi relativi in backtick rompono conform → **regola: sempre completi
+dalla root** (candidato a controllo pre-commit).
+**RIPRESA DA:** PEZZO 4 — DOCUMENTALE degli altri ecosistemi via `empire forge prossimo` (escludendo
+i profili soci AGENTE-CLAUDE/GAEL/MAX). Ogni agente = fase = checkpoint+commit+push.
 
 ---
 

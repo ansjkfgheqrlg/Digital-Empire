@@ -74,7 +74,7 @@ GATE_DEFINITIONS: Dict[str, Dict[str, Any]] = {
                 "id": "C1",
                 "name": "Feedback loop documentato e testato",
                 "description": "Esiste un ciclo output -> valutazione -> correzione, dimostrato da un test.",
-                "rubric": {"must_contain": ["feedback", "loop"], "any_of": ["test", "verifica"]},
+                "rubric": {"verify": "check_feedback_loop_real"},
             },
             {
                 "id": "C2",
@@ -98,7 +98,7 @@ GATE_DEFINITIONS: Dict[str, Dict[str, Any]] = {
                 "id": "C5",
                 "name": "Soglia di score calibrata su dati reali",
                 "description": "La soglia di accettazione nasce da esecuzioni misurate, non da un numero scelto a caso.",
-                "rubric": {"any_of": ["threshold", "soglia"], "must_contain": ["score"]},
+                "rubric": {"verify": "check_threshold_calibrated_real"},
             },
         ],
     },
