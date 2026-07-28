@@ -1,4 +1,43 @@
 {
-  "leads": [],
-  "aggiornato": null
+  "leads": [
+    {
+      "nome_attivita": "Auto 500",
+      "indirizzo": "Via Marostica, 2, 20146 Milano MI",
+      "telefono": "02 4870 6076",
+      "sito_web": "http://www.auto500.it/",
+      "ha_sito": true,
+      "numero_recensioni": 421,
+      "media_recensioni": 4.3,
+      "ha_ads_attive": true,
+      "priorita_lead": "ALTA",
+      "citta_ricerca": "Milano",
+      "categoria": "concessionario auto",
+      "note_qualifica": "Sito vecchio/scarso. Sito lento. Sito scarso/vecchio score 3. ",
+      "maps_url": "https://www.google.com/maps/place/Auto+500/@45.49359,8.9471153,11z/data=!4m10!1m2!2m1!1sconcessionario+auto+a+Milano!3m6!1s0x4786c17d3a6400d5:0x3c086516f96d45b1!8m2!3d45.4630167!4d9.1475696!15sChxjb25jZXNzaW9uYXJpbyBhdXRvIGEgTWlsYW5vWh4iHGNvbmNlc3Npb25hcmlvIGF1dG8gYSBtaWxhbm-SAQ91c2VkX2Nhcl9kZWFsZXKaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTlNhVTlFVkd0M1JSQULgAQD6AQUIwAEQSA!16s%2Fg%2F1tdk4159?entry=ttu&g_ep=EgoyMDI2MDcyMi4wIKXMDSoASAFQAw%3D%3D",
+      "data_estrazione": "2026-07-28",
+      "stage": "NEW",
+      "note": "",
+      "aggiunto_il": "2026-07-28 14:54"
+    },
+    {
+      "nome_attivita": "Auto Occasioni Milano",
+      "indirizzo": "Via Sangro, 10a, 20132 Milano MI",
+      "telefono": "392 760 9928",
+      "sito_web": "https://link.autoccasionimilano.it/gmb-home",
+      "ha_sito": true,
+      "numero_recensioni": 535,
+      "media_recensioni": 4.3,
+      "ha_ads_attive": false,
+      "priorita_lead": "ALTA",
+      "citta_ricerca": "Milano",
+      "categoria": "concessionario auto",
+      "note_qualifica": "Sito vecchio/scarso. Err check sito HTTPSConnectionPool(host='link.autoccasionimilano.it', port=443): Max retries exceeded with url: /gmb-home (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)'))). ",
+      "maps_url": "https://www.google.com/maps/place/Auto+Occasioni+Milano/@45.49359,8.9471153,11z/data=!3m1!5s0x4786c701bfc39341:0xceb93359e8b33e6f!4m10!1m2!2m1!1sconcessionario+auto+a+Milano!3m6!1s0x4786c701bf94ae5d:0x47e156d402961b92!8m2!3d45.49359!4d9.2355064!15sChxjb25jZXNzaW9uYXJpbyBhdXRvIGEgTWlsYW5vWh4iHGNvbmNlc3Npb25hcmlvIGF1dG8gYSBtaWxhbm-SAQthdXRvX2Jyb2tlcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSQ09YRmxVVkpCRUFF4AEA-gEECAAQRw!16s%2Fg%2F11c7sv2xl0?entry=ttu&g_ep=EgoyMDI2MDcyMi4wIKXMDSoASAFQAw%3D%3D",
+      "data_estrazione": "2026-07-28",
+      "stage": "NEW",
+      "note": "",
+      "aggiunto_il": "2026-07-28 14:54"
+    }
+  ],
+  "aggiornato": "2026-07-28 14:56"
 }

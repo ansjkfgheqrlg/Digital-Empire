@@ -1,4 +1,21 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+
+## ✅ 2026-07-28 — TASK-PREVENTA-AREUS-001 CHIUSA: EmpireDesk verificato, lead reali via Areus, decisione Kanban — CP-20260728-005
+Gael ha ripreso la task lasciata da Max in [CP-20260728-002](checkpoints/CP-20260728-002.md).
+Verificato end-to-end: `app.py --selftest` 19/19 (modulo `preventa` si registra da solo), run
+scraper reale → 2 lead ALTA pushati su Areus, pannello li mostra, round-trip cambio stage
+testato. Sanity-check dei file di ownership Gael (`agents.py`/`run.py`/`orchestrator.py`/
+`integratore-areus/*`/`quality_gate.py`/`test_apex7.py`) pulito, rimossa una cartella orfana
+`integratore-sheets/` (vuota, mai tracciata). **Decisione presa:** pannello Preventa resta
+standalone, non mappato nel Kanban `SalesPipeline.tsx` — i lead freddi da Google Maps non hanno
+email/contatto/valore reali richiesti dal tipo `Lead`, mescolarli ai deal veri falserebbe la
+pipeline. Stage enum già compatibile per una promozione manuale futura, lead per lead, quando
+rispondono con interesse reale. Task marcata `fatto` in `EmpireDesk/state/taskboard.json`.
+
+**RIPRESA DA:** nessun blocco tecnico. Prossimo passo operativo: contattare i lead reali e
+promuovere a mano nel Kanban chi risponde con interesse.
+
+---
 
 ## 🤖 2026-07-28 — STREAM-S7-BOT: loop trading reale collegato, dominio passato a Gael — CP-20260728-004
 Bug corretto: `main.py` eseguiva ogni trade **due volte**, la seconda bypassando il Risk Manager

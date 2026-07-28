@@ -149,11 +149,11 @@
       "owner": "Gael",
       "giorno": "2026-07-28",
       "titolo": "Preventa->Areus: verificare wiring EmpireDesk + decidere integrazione Kanban Aureus",
-      "stato": "da_fare",
-      "note": "Contesto completo in company/Memory/checkpoints/CP-20260728-002.md. Claude ha gia' fatto: migrato Outreach/preventa-maps-scraper da Google Sheets ad Areus (nuovo 02-AUTOMAZIONI-E-SCRIPTS/areus.py, agente integratore-areus, run.py/orchestrator.py con push default), nuovo EmpireDesk/modules/preventa.py (routes preventa/elenco + preventa/aggiorna_stage, pannello standalone 'Preventa - Outreach Freddo'), platform/utils/empireApi.ts esteso (preventaElenco/preventaAggiornaStage). Prezzo Preventa chiuso da Max: EUR 2.000 una tantum, gia' propagato su Crea siti/Preventa/index.html + agency-empire/03b-preventa.tsx. Test 13/13 verdi, empire estate 11/13 invariato. RESTA A TE: 1) avviare EmpireDesk (app.py) e verificare che il modulo preventa si registri e il pannello carichi i lead reali dopo un run scraper; 2) decidere se i lead restano nel pannello standalone o vanno mappati nel Kanban SalesPipeline.tsx (stage gia' compatibile con l'enum LeadStage esistente, quindi e' un mapping, non un redesign); 3) sanity-check delle tue file di ownership toccate da Claude (agents.py, run.py, orchestrator.py, integratore-areus/*, quality_gate.py, test_apex7.py). Per riprendere: scrivi solo 'TASK-PREVENTA-AREUS-001' nella chat Claude di questa cartella."
+      "stato": "fatto",
+      "note": "FATTO da Claude 2026-07-28: (1) EmpireDesk --selftest verde, modulo preventa si registra; (2) run scraper reale (2 lead ALTA Milano) -> push Areus confermato, pannello li mostra, round-trip cambio stage NEW->CONTACTED->NEW testato; (3) sanity-check file ownership Gael (agents.py/run.py/orchestrator.py/integratore-areus/quality_gate.py/test_apex7.py) tutti puliti, nessun residuo Sheets, rimossa cartella orfana integratore-sheets/ (vuota, non tracciata); (4) DECISIONE: pannello Preventa resta STANDALONE per ora, non mappato nel Kanban SalesPipeline.tsx -- il tipo Lead del Kanban richiede email/contactPerson/value reali che i lead scraper freddi non hanno (niente email da Google Maps, niente nome titolare, value sarebbe un placeholder finto su lead non ancora umanamente qualificati). Lo stage enum resta compatibile apposta per un domani: quando un lead risponde con interesse reale, si promuove a mano nel Kanban (mapping, non redesign). Dettaglio in CP-20260728-0XX."
     }
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-28 10:30"
+  "aggiornato": "2026-07-28 14:58"
 }
