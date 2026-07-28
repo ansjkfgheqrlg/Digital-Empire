@@ -1,0 +1,14 @@
+{
+  "tipo": "prestazione",
+  "titolo": "Workflow Estate dichiarato OPERATIVO: bottone di accensione + verifica cervello",
+  "autore": "Claude",
+  "prova": "estate 11/13 verdi, trace 20, forge 58 operativi, conform 0 block, 236+ test. AVVIO-OPERATIVO.md creato con i 3 comandi di accensione.",
+  "quando": "2026-07-28T09:37:59+02:00",
+  "contesto": "Cervello gia' operativo (decide/orchestra/misura/ricorda). Subagenti NON spawnati: falliscono per limite spesa mensile, spawnarli brucia crediti a vuoto. Operativi veri girano separati (Gael su YT-factory/preventa).",
+  "tags": [
+    "estate",
+    "operativo",
+    "avvio"
+  ],
+  "id": "PRE-20260728-workflow-estate-dichiarato-opera"
+}

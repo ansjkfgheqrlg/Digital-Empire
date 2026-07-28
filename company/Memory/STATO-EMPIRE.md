@@ -1,4 +1,19 @@
-# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: agenti PEZZO 3 · YT-Factory F1 niche-gate · Estate=cervello · preventa 100%)
+# STATO EMPIRE -- aggiornato 2026-07-27 (Claude: WORKFLOW ESTATE OPERATIVO · agenti PEZZO 3 · YT-Factory F1)
+
+## 🚀 2026-07-27 — WORKFLOW ESTATE OPERATIVO DA ADESSO — CP-20260727-012
+Il cervello è acceso e ha un punto d'ingresso unico: `WORKFLOW-ESTATE/AVVIO-OPERATIVO.md`.
+**3 comandi** lo fanno girare e rispondono ai 3 desideri di Max (cosa fare/stato vero/lancia):
+`empire estate` · `empire forge scan` · `empire trace stato`.
+```
+estate 11/13 verdi (2 gate rossi = Max) · trace 20 · forge 58 operativi · conform 0 block · 236+ test
+```
+**Decisione crediti (richiesta Max "meno crediti possibile"):** ZERO spawn subagenti — falliscono per
+limite di spesa mensile, spawnarli brucia crediti a vuoto. Lavoro in batch. Gli operativi veri
+(YT-factory, preventa-scraper, S7-bot) girano già in parallelo via Gael. Il cervello non ha bisogno
+di spawn: `estate`/`forge`/`trace` sono comandi diretti.
+Le 2 voci rosse (Gate-CONTATTI lead veri, Gate-REV incasso) restano di Max → `06-DASHBOARD-E-METRICHE/AZIONI-MAX.md`.
+
+---
 
 ## 🔧 2026-07-27 — AGENTI OPERATIVI PEZZO 3: ANDREI-PASCU-MINER — CP-20260727-011
 Promosso 0→10/10 (competitor intelligence, alimenta S5 YouTube). Dati **reali** dal playbook
