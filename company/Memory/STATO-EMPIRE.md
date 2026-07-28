@@ -1,4 +1,15 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: /avvia-estate-wk comando unico · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+
+## 🤖 2026-07-28 — STREAM-S7-BOT: loop trading reale collegato, dominio passato a Gael — CP-20260728-004
+Bug corretto: `main.py` eseguiva ogni trade **due volte**, la seconda bypassando il Risk Manager
+(capitale hardcoded a 1.0). Ora RiskManager sta sul bus, unico varco segnale→esecuzione;
+kill-switch legge il drawdown reale dal log (non piu' stub); AnalysisEngine ricalibra la soglia
+sui trade veri chiusi (feedback loop reale). `test_apex7.py` → **9/9 verde**, gate `L2_TO_L3` e
+`L6_TO_L7` PASSED sui dati reali del bot.
+**Handoff a Gael**: `company/Memory/tasks/TASK-GAEL-20260728-STREAM-S7-BOT.md` — 3 lotti (parser
+log Solana reale, position manager + uscita, fix spam segnali + baseline L3→L4). File APEX-7
+generici restano congelati (Claude); modalita' LIVE fuori perimetro senza ordine di Max.
+**RIPRESA DA:** Gael legge il task ID sopra e parte da G-A.
 
 ## ⚡ 2026-07-28 — COMANDO UNICO DI ACCENSIONE `/avvia-estate-wk` — CP-20260728-003
 Max: accendere tutto il sistema nervoso del Workflow Estate con UN comando. Fatto.
