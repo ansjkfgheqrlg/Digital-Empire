@@ -125,26 +125,30 @@ Le 2 voci rosse (Gate-CONTATTI lead veri, Gate-REV incasso) restano di Max → `
 
 ---
 
-## ⚠️ COORDINAMENTO — SERVE MAX: outreach concessionari (Preventa) fermo su 5 punti, uno urgente
+## ⚠️ COORDINAMENTO — SERVE MAX: outreach concessionari (Preventa), 2 punti aperti su 5 (aggiornato)
 
 Gael ha chiesto di poter far partire il flusso outreach completo (con invio email reale). Lato
 tecnico è pronto (64 lead reali su Milano/Bergamo/Brescia, 19 ALTA, pipeline G-A1→A2→A3
-testata — [CP-20260727-013](checkpoints/CP-20260727-013.md)). Bloccato su 5 punti, **tutti di Max**:
+testata — [CP-20260727-013](checkpoints/CP-20260727-013.md)).
 
+**Chiusi da Max il 28/07** (vedi [CP-20260728-002](checkpoints/CP-20260728-002.md)):
+- ~~M-EST-9 (province)~~ → `cities.txt`, default Nord+Centro.
+- ~~M-EST-4 (prezzo Preventa)~~ → €2.000 una tantum, DEC-EST-005 chiusa.
+
+**Restano aperti 3 punti:**
 1. **🔴 URGENTE — Rigenerare la App Password Gmail.** Trovata in chiaro in 11 script di
    `Outreach/Outreach Workflow/` (`test_smtp.py`, `send_now.py`, `send_ready.py`, ecc.), tracciata
    in git dal commit iniziale del monorepo, pushata su `origin/main` (repo privato, ma comunque
-   compromessa). Codice già sistemato per leggere da `.env` (commit `da4163eb`), ma la password
-   stessa resta quella vecchia finché Max non la rigenera su
+   compromessa). Codice già sistemato per leggere da `.env` (commit `da4163eb`/`5580ba6d`), ma la
+   password stessa resta quella vecchia finché Max non la rigenera su
    `myaccount.google.com/apppasswords` e non la sostituisce nel `.env` locale (gitignored).
-2. **M-EST-9** — lista province ufficiali su cui scalare lo scraper oltre il pilota.
-3. **M-EST-6** — ICP definitivo (dimensione concessionaria, zona, segnali di qualifica).
-4. **M-EST-7** — conferma capacità di delivery se più lead rispondono in parallelo.
-5. **M-EST-4** — prezzo Preventa definitivo (oggi veto attivo, landing con segnaposto).
+2. **M-EST-6** — ICP definitivo (dimensione concessionaria, zona, segnali di qualifica).
+3. **M-EST-7** — conferma capacità di delivery se più lead rispondono in parallelo.
 
 Nessun invio reale è stato fatto. Il motore SMTP esiste già e funziona (`send_ready.py`,
 verificato con `test_smtp.py` → login OK), va solo collegato a `stato_lead.csv` una volta
-sbloccati i punti sopra.
+sbloccati i punti sopra. Bonus: lo scraper è passato da Google Sheets al CRM interno Areus
+(push automatico, zero credenziali) — un pezzo di attrito in meno per Gael.
 
 ---
 
