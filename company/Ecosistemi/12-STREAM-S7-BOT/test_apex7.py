@@ -11,6 +11,7 @@ import csv
 import os
 import random
 import sys
+import time
 from datetime import datetime
 
 from event_bus import global_bus, EVENT_CATALOG, RETRY_POLICY
@@ -24,9 +25,83 @@ from ruflo_adapter import adapter
 from analysis_engine import AnalysisEngine
 from risk_manager import RiskManager
 from execution_engine import ExecutionEngine
+from position_monitor import PositionMonitor
 
 SRC = os.path.dirname(os.path.abspath(__file__))
 failures = []
+
+
+# =========================================================================== #
+# Fixture — risposte getTransaction realistiche (stessa forma del jsonParsed
+# reale), per testare il parser G-A senza dipendere dalla rete a ogni run.
+# La validazione contro transazioni VERE di mainnet e' in CP-20260728 (checkpoint):
+# qui serve determinismo, li' serve la prova che il parser regge sui dati reali.
+# =========================================================================== #
+
+def _fake_trade_tx(volume_sol: float, token: str) -> dict:
+    lamports = int(round(volume_sol * 1_000_000_000))
+    return {
+        "meta": {
+            "err": None,
+            "preBalances": [5_000_000_000, 1_000_000_000],
+            "postBalances": [5_000_000_000 - lamports, 1_000_000_000 + lamports],
+            "preTokenBalances": [{"accountIndex": 0, "mint": token, "uiTokenAmount": {"uiAmount": 1_000_000.0}}],
+            "postTokenBalances": [{"accountIndex": 0, "mint": token,
+                                   "uiTokenAmount": {"uiAmount": 1_000_000.0 + volume_sol * 1000}}],
+        }
+    }
+
+
+def _fake_failed_tx() -> dict:
+    return {"meta": {"err": {"InstructionError": [0, {"Custom": 1}]}, "preBalances": [], "postBalances": []}}
+
+
+def _fake_feeonly_tx() -> dict:
+    """Solo fee pagata, nessun delta token: non e' una trade (es. istruzione ancillare)."""
+    return {"meta": {"err": None, "preBalances": [5_000_000_000], "postBalances": [4_999_995_000],
+                     "preTokenBalances": [], "postTokenBalances": []}}
+
+
+def _fake_roundtrip_tx(token: str) -> dict:
+    """Bundle/arbitraggio che rientra a saldo netto zero sugli account osservati."""
+    return {"meta": {"err": None, "preBalances": [100, 200], "postBalances": [100, 200],
+                     "preTokenBalances": [{"accountIndex": 0, "mint": token, "uiTokenAmount": {"uiAmount": 10.0}}],
+                     "postTokenBalances": [{"accountIndex": 0, "mint": token, "uiTokenAmount": {"uiAmount": 10.0}}]}}
+
+
+def _fetcher_from_map(mapping: dict):
+    return lambda signature: mapping.get(signature)
+
+
+def _raw_event(signature: str) -> dict:
+    return {"params": {"result": {"value": {"signature": signature, "logs": []}}}}
+
+
+# Teardown — senza questo, gli agenti dei test STREAM S7 restano abbonati al
+# bus per il resto del processo e "sentono" gli eventi dei test successivi
+# (es. un secondo AnalysisEngine ricalibra la stessa strategia e la memoria,
+# deduplicando per contenuto, attribuisce la scrittura al primo che ha scritto
+# lo stesso valore — falsando i controlli per autore dei test successivi).
+
+def _teardown_analysis(engine: AnalysisEngine):
+    global_bus.unsubscribe("data.raw_event_received", f"{engine.agent_id}.raw_event")
+    global_bus.unsubscribe("trade.executed", f"{engine.agent_id}.trade_executed")
+    global_bus.unsubscribe("trade.failed", f"{engine.agent_id}.trade_failed")
+
+
+def _teardown_risk(risk: RiskManager):
+    global_bus.unsubscribe("analysis.signal_detected", f"{risk.agent_id}.signal")
+    global_bus.unsubscribe("trade.executed", f"{risk.agent_id}.position_opened")
+    global_bus.unsubscribe("position.closed", f"{risk.agent_id}.position_closed")
+
+
+def _teardown_execution(execution: ExecutionEngine):
+    global_bus.unsubscribe("risk.trade_approved", f"{execution.agent_id}.approved")
+
+
+def _teardown_position_monitor(monitor: PositionMonitor):
+    global_bus.unsubscribe("trade.executed", f"{monitor.agent_id}.opened")
+    global_bus.unsubscribe("data.raw_event_received", f"{monitor.agent_id}.tick")
 
 
 def section(title):
@@ -290,8 +365,44 @@ def test_ruflo():
 
 
 # =========================================================================== #
+def test_stream_s7_parser():
+    section("8. STREAM S7 (G-A) — parser dati reale: getTransaction, non regex sui log")
+
+    engine = AnalysisEngine(agent_id="TEST-PARSER", tx_fetcher=lambda sig: None)
+
+    real_trade = _fake_trade_tx(0.075, "TokReal1111111111111111111111111111111111")
+    engine._tx_fetcher = _fetcher_from_map({"sig-real": real_trade})
+    result = engine._extract_trade_data("sig-real")
+    check("Volume reale estratto dalle variazioni di saldo SOL (preBalances/postBalances)",
+          result is not None and abs(result["volume_sol"] - 0.075) < 1e-6, f"{result}")
+    check("Token address reale estratto dalle variazioni di saldo token, non hardcoded",
+          result is not None and result["token_address"] == "TokReal1111111111111111111111111111111111",
+          f"{result}")
+
+    engine._tx_fetcher = _fetcher_from_map({"sig-failed": _fake_failed_tx()})
+    check("Transazione fallita on-chain: nessun volume inventato",
+          engine._extract_trade_data("sig-failed") is None)
+
+    engine._tx_fetcher = _fetcher_from_map({"sig-feeonly": _fake_feeonly_tx()})
+    check("Transazione solo-fee (nessun delta token): correttamente ignorata, non e' una trade",
+          engine._extract_trade_data("sig-feeonly") is None)
+
+    engine._tx_fetcher = _fetcher_from_map({"sig-roundtrip": _fake_roundtrip_tx("TokRound1111111111111111111111111111111")})
+    check("Bundle che rientra a saldo netto zero: correttamente ignorato",
+          engine._extract_trade_data("sig-roundtrip") is None)
+
+    engine._tx_fetcher = _fetcher_from_map({})
+    check("Firma non risolvibile (getTransaction senza risultato): nessun dato inventato",
+          engine._extract_trade_data("sig-sconosciuta") is None)
+
+    print("      Validazione contro transazioni VERE di mainnet: vedi checkpoint CP-20260728 "
+          "(5 coppie volume/token reali estratte da signature Raydium/Pump.fun live).")
+    _teardown_analysis(engine)
+
+
+# =========================================================================== #
 def test_stream_s7_loop():
-    section("8. STREAM S7 — loop reale dati -> analisi -> rischio -> esecuzione -> memoria")
+    section("9. STREAM S7 — loop reale dati -> analisi -> rischio -> esecuzione -> memoria")
 
     random.seed(7)  # determinismo: _simulate_transaction tira a sorte sullo slippage
 
@@ -299,7 +410,19 @@ def test_stream_s7_loop():
     if os.path.exists(log_file):
         os.remove(log_file)
 
-    analysis = AnalysisEngine(agent_id="TEST-ANALYST")
+    # 3 round distinti, ognuno con 2 eventi da 60 SOL (soglia 100): con il fix
+    # G-C ogni round produce ESATTAMENTE un segnale (la finestra si svuota dopo
+    # ogni spike), non piu' uno per evento come nel bug originale.
+    mapping = {}
+    rounds = [("tok-round-a", 60.0), ("tok-round-b", 60.0), ("tok-round-c", 60.0)]
+    signatures = []
+    for i, (token, vol) in enumerate(rounds):
+        sig_a, sig_b = f"loop-{i}-a", f"loop-{i}-b"
+        mapping[sig_a] = _fake_trade_tx(vol, token)
+        mapping[sig_b] = _fake_trade_tx(vol, token)
+        signatures += [sig_a, sig_b]
+
+    analysis = AnalysisEngine(agent_id="TEST-ANALYST", tx_fetcher=_fetcher_from_map(mapping))
     risk = RiskManager(base_bankroll=10.0, max_position_pct=5.0, log_file=log_file, agent_id="TEST-RISK")
     execution = ExecutionEngine(mode="SIMULATION", agent_id="TEST-EXEC", log_file=log_file)
 
@@ -309,15 +432,11 @@ def test_stream_s7_loop():
     global_bus.subscribe("risk.trade_rejected", lambda e: rejected.append(e), subscriber_id="test.rejected")
 
     try:
-        for i in range(6):
-            raw_event = {"params": {"result": {"value": {
-                "signature": f"test-sig-{i}",
-                "logs": ["Program log: Instruction: Buy", f"Amount: {150 + i * 10} SOL"],
-            }}}}
-            global_bus.publish("data.raw_event_received", raw_event)
+        for sig in signatures:
+            global_bus.publish("data.raw_event_received", _raw_event(sig))
 
         check("Il Risk Manager e' nel percorso e approva trade reali",
-              len(approved) > 0, f"{len(approved)} approvati, {len(rejected)} rifiutati")
+              len(approved) == 3, f"{len(approved)} approvati, {len(rejected)} rifiutati (attesi 3 round distinti)")
         check("Il capitale eseguito e' quello approvato dal rischio, non un 1.0 fisso",
               bool(approved) and approved[0]["payload"]["allocated_capital"] == 10.0 * 5.0 / 100.0,
               f"atteso 0.5, approvato {approved[0]['payload']['allocated_capital'] if approved else None}")
@@ -365,6 +484,9 @@ def test_stream_s7_loop():
         global_bus.unsubscribe("risk.trade_rejected", "test.rejected")
         if os.path.exists(log_file):
             os.remove(log_file)
+        _teardown_analysis(analysis)
+        _teardown_risk(risk)
+        _teardown_execution(execution)
 
     # Il gate L2->L3 valuta il loop appena eseguito con dati veri, non testo
     report = gate_1.evaluate(
@@ -383,8 +505,157 @@ def test_stream_s7_loop():
 
 
 # =========================================================================== #
+def test_stream_s7_no_signal_spam():
+    section("10. STREAM S7 (G-C) — fix spam segnali sulla stessa finestra di spike")
+
+    mapping = {f"spam-{i}": _fake_trade_tx(60.0, "tok-spam") for i in range(4)}
+    engine = AnalysisEngine(agent_id="TEST-SPAM", tx_fetcher=_fetcher_from_map(mapping))
+
+    signals = []
+    global_bus.subscribe("analysis.signal_detected", lambda e: signals.append(e), subscriber_id="test.spam_signal")
+    try:
+        for i in range(4):
+            global_bus.publish("data.raw_event_received", _raw_event(f"spam-{i}"))
+
+        # 4 eventi da 60 SOL (soglia 100): col bug originale la finestra non si
+        # svuotava mai da sola nello stesso istante -> 3 segnali duplicati sullo
+        # stesso spike (uno per evento dal 2 in poi). Col fix, ogni segnale
+        # svuota la finestra: servono 2 eventi freschi per il prossimo -> 2
+        # segnali distinti su 4 eventi, mai uno per evento.
+        check("Nessun segnale duplicato sulla stessa finestra di spike",
+              len(signals) == 2, f"{len(signals)} segnali su 4 eventi (atteso 2, non uno per evento come nel bug)")
+    finally:
+        global_bus.unsubscribe("analysis.signal_detected", "test.spam_signal")
+        _teardown_analysis(engine)
+
+
+# =========================================================================== #
+def test_stream_s7_position_manager():
+    section("11. STREAM S7 (G-B) — position manager: limite posizioni + uscita TP/SL")
+
+    log_file = "test_position_log.csv"
+    if os.path.exists(log_file):
+        os.remove(log_file)
+    risk = RiskManager(base_bankroll=10.0, max_position_pct=5.0, log_file=log_file, agent_id="TEST-RISK-POS")
+
+    try:
+        for token in ("tok-1", "tok-2", "tok-3"):
+            global_bus.publish("trade.executed",
+                               {"signal": {"token_address": token, "strategy": "volume_spike_v1"}, "cost": 0.5})
+        check("3 posizioni tracciate dopo 3 trade eseguiti (open_positions non piu' vuoto)",
+              len(risk.open_positions) == 3, str(sorted(risk.open_positions)))
+
+        allocation_4th = risk.assess_trade({"token_address": "tok-4", "strategy": "volume_spike_v1"})
+        check("La 4a posizione viene rifiutata da RiskManager (limite di 3 raggiunto)",
+              allocation_4th is None, f"open_positions={len(risk.open_positions)}")
+
+        global_bus.publish("position.closed",
+                           {"token_address": "tok-1", "reason": "take_profit", "pnl_sol": 0.1, "pnl_pct": 20.0})
+        check("Lo slot si libera alla chiusura della posizione", len(risk.open_positions) == 2,
+              str(sorted(risk.open_positions)))
+
+        allocation_retry = risk.assess_trade({"token_address": "tok-4", "strategy": "volume_spike_v1"})
+        check("Dopo la chiusura di una posizione, la 4a viene accettata",
+              allocation_retry is not None, f"allocato {allocation_retry}")
+    finally:
+        if os.path.exists(log_file):
+            os.remove(log_file)
+        _teardown_risk(risk)
+
+    # Position Monitor: uscita TP/SL sul valore stimato (nessun feed prezzo live,
+    # vedi docstring position_monitor.py). RNG seedato per un test deterministico.
+    monitor = PositionMonitor(agent_id="TEST-POSMON", take_profit_pct=10.0, stop_loss_pct=10.0,
+                              rng=random.Random(42))
+    closed = []
+    global_bus.subscribe("position.closed", lambda e: closed.append(e), subscriber_id="test.posmon_closed")
+    try:
+        global_bus.publish("trade.executed",
+                           {"signal": {"token_address": "tok-mon", "strategy": "volume_spike_v1"}, "cost": 1.0})
+        check("Position Monitor apre la posizione su trade.executed (indipendente da RiskManager)",
+              "tok-mon" in monitor.positions, str(monitor.positions))
+
+        for _ in range(200):
+            global_bus.publish("data.raw_event_received", _raw_event("tick"))
+            if "tok-mon" not in monitor.positions:
+                break
+
+        check("Take-profit/stop-loss scattano sul valore stimato ed emettono position.closed",
+              len(closed) == 1 and "tok-mon" not in monitor.positions,
+              f"chiuse={len(closed)}, ancora aperte={list(monitor.positions)}")
+        if closed:
+            reason = closed[0]["payload"].get("reason")
+            check("La chiusura porta un motivo TP/SL esplicito, PnL dichiarato come stima",
+                  reason in ("take_profit", "stop_loss"), f"reason={reason}")
+    finally:
+        global_bus.unsubscribe("position.closed", "test.posmon_closed")
+        _teardown_position_monitor(monitor)
+
+
+# =========================================================================== #
+def test_stream_s7_gate_l3_l4():
+    section("12. STREAM S7 (G-C) — baseline reale + gate L3_TO_L4 sui dati del bot")
+
+    mapping = {"lat-a": _fake_trade_tx(60.0, "tok-latency"), "lat-b": _fake_trade_tx(60.0, "tok-latency")}
+    log_file = "test_latency_log.csv"
+    if os.path.exists(log_file):
+        os.remove(log_file)
+
+    analysis = AnalysisEngine(agent_id="TEST-LATENCY", tx_fetcher=_fetcher_from_map(mapping))
+    risk = RiskManager(base_bankroll=10.0, max_position_pct=5.0, log_file=log_file, agent_id="TEST-LATENCY-RISK")
+    execution = ExecutionEngine(mode="SIMULATION", agent_id="TEST-LATENCY-EXEC", log_file=log_file)
+
+    executed = []
+    global_bus.subscribe("trade.executed", lambda e: executed.append(e), subscriber_id="test.latency_executed")
+    global_bus.subscribe("trade.failed", lambda e: executed.append(e), subscriber_id="test.latency_failed")
+
+    try:
+        started = time.time()
+        for sig in ("lat-a", "lat-b"):
+            global_bus.publish("data.raw_event_received", _raw_event(sig))
+        elapsed_ms = max(1, int((time.time() - started) * 1000))
+
+        check("Il loop log-ricevuto -> trade-eseguito produce un esito reale, misurabile",
+              len(executed) >= 1, f"{len(executed)} esiti in {elapsed_ms}ms")
+
+        # Nota: non uso ad_orchestrator.set_baseline() qui. Quel metodo scrive
+        # kind="baseline" nel layer metrics SENZA scoping per gate: e' lo stesso
+        # record che il gate finale L6->L7 (sezione 13, di Claude) legge come
+        # "la" baseline di sistema per check_performance_vs_baseline. Sovrascriverlo
+        # con la latenza di un singolo loop di test (~decine di ms) avrebbe rotto
+        # quel gate (3000ms vs 1500ms -> 2x, atteso). La baseline del bot resta
+        # comunque reale e citata nel report: solo taggata diversamente in memoria.
+        global_memory.write("metrics", {
+            "kind": "stream_s7_latency_baseline", "value_ms": elapsed_ms,
+            "note": "log ricevuto -> trade eseguito, loop reale bot",
+        }, "TEST-LATENCY", importance=0.8)
+
+        report = gate_1.evaluate(
+            gate_id="GATE-L3-STREAM-S7", formal_gate_id="L3_TO_L4",
+            criteria=GATE_DEFINITIONS["L3_TO_L4"]["criteria"],
+            output_to_check=f"baseline reale stream s7, loop dati->analisi->rischio->esecuzione: "
+                            f"{elapsed_ms} ms tempo log-ricevuto -> trade-eseguito",
+            threshold=get_threshold("L3_TO_L4"), timeout_s=120, gate_history=[], attempt=1,
+        )
+        gate_1.reset()
+        print(f"      Verdetto L3->L4 sul bot: {report['result']} "
+              f"({report['criteria_passed']}/{report['criteria_total']}, score {report['score']})")
+        for r in report["criteria_results"]:
+            print(f"        {r['criterion']} {r['status']}: {r['evidence'][:100]}")
+        check("Il gate L3->L4 passa sui dati specifici del bot, non solo sul codice APEX generico",
+              report["result"] == "PASSED", f"score {report['score']}")
+    finally:
+        global_bus.unsubscribe("trade.executed", "test.latency_executed")
+        global_bus.unsubscribe("trade.failed", "test.latency_failed")
+        if os.path.exists(log_file):
+            os.remove(log_file)
+        _teardown_analysis(analysis)
+        _teardown_risk(risk)
+        _teardown_execution(execution)
+
+
+# =========================================================================== #
 def test_apex_gate():
-    section("9. GATE FINALE L6->L7 — il sistema giudica se stesso")
+    section("13. GATE FINALE L6->L7 — il sistema giudica se stesso")
 
     ad_orchestrator._record_metric("current", 1500, "TASK-APEX")
 
@@ -419,7 +690,11 @@ if __name__ == "__main__":
     test_full_cycle()
     test_escalation_and_override()
     test_ruflo()
+    test_stream_s7_parser()
     test_stream_s7_loop()
+    test_stream_s7_no_signal_spam()
+    test_stream_s7_position_manager()
+    test_stream_s7_gate_l3_l4()
     apex = test_apex_gate()
 
     section("RIEPILOGO")
