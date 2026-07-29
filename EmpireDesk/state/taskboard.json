@@ -189,8 +189,8 @@
       "owner": "Gael",
       "giorno": "2026-07-28",
       "titolo": "YT-Factory: Dashboard riflette l'esito reale (PASS/FAIL) della run corrente",
-      "stato": "da_fare",
-      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-005. Gate: run con niche-gate forzato a FAIL -> dashboard mostra FAIL, non sempre PASS."
+      "stato": "fatto",
+      "note": "FATTO da Claude 2026-07-29. Nuovo Apex7Orchestrator.write_dashboard() scrive la dashboard canonica dai dati REALI della run (canale/video scelti, esito vero per fase). execute_workflow traccia fasi_esito e chiama write_dashboard su successo E su fallimento (prima faceva sys.exit prima di scrivere -> dashboard non vedeva mai un FAIL). Ritirato il percorso fantasma run_youtube_apex7.py (Conductor mock, sempre 6x PASS su Dose Mentale): deprecato con banner, scrive su *-LEGACY.md, non clobbera piu la dashboard vera (non cancellato, vincolo additivo). Gate VERDE: caso PASS -> 6x verde RUN COMPLETA; caso F2 fallita -> F2 rosso FAIL + F3-F6 non eseguite, RUN FALLITA, exit 1; test_youtube_apex7 11/11. Dashboard committata a baseline onesto (0/6, nessuna run reale ancora). Vedi CP-20260729-006."
     },
     {
       "id": "TASK-YT-006",
@@ -211,5 +211,5 @@
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-29 (TASK-YT-004 fatto)"
+  "aggiornato": "2026-07-29 (TASK-YT-005 fatto — F1-F6+dashboard reali)"
 }

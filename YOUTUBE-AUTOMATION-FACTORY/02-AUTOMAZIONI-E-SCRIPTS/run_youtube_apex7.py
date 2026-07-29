@@ -2,6 +2,14 @@
 """
 Owner: GAEL · Controllore: A2-QA · Origine: FORGE
 Governo: APEX-7 YouTube E2E Swarm Runner (Plan 7)
+
+⚠️ DEPRECATO (TASK-YT-005, 2026-07-29). Questo runner usa il Conductor MOCK (agents.py) e
+scriveva la dashboard canonica con 6 fasi SEMPRE 🟢 PASS sul canale fisso "Dose Mentale",
+scollegato dalle fasi reali F1-F6. La dashboard canonica è ora scritta da
+`Apex7Orchestrator.write_dashboard()` (apex7_orchestrator.py) dai dati REALI della run.
+Per non clobberare più la dashboard vera, qui scriviamo su un file *-LEGACY.md e stampiamo
+un avviso. Non è stato cancellato (vincolo additivo): resta come simulazione swarm storica.
+Run reale: `python apex7_orchestrator.py run --phase 6`.
 """
 from __future__ import annotations
 
@@ -35,6 +43,8 @@ logging.basicConfig(
 log = logging.getLogger("preventa-pw.runner")
 
 def run_e2e_swarm():
+    log.warning("⚠️ [DEPRECATO] Simulazione MOCK (Conductor). La dashboard canonica reale è scritta "
+                "da Apex7Orchestrator.write_dashboard(). Qui scrivo solo un file *-LEGACY.md.")
     log.info("🎬 [APEX-7 Swarm Runner] Avvio della simulazione E2E per il canale Dose Mentale...")
     
     # Inizializzazione componenti
@@ -54,8 +64,8 @@ def run_e2e_swarm():
     meta_res = meta.analyze_and_optimize()
     log.info(f"🧠 [Meta-Agent] Ottimizzazione completata: {meta_res}")
     
-    # Generazione Dashboard delle metriche in 06-DASHBOARD-E-METRICHE/YOUTUBE-PERFORMANCE-DASHBOARD.md
-    dashboard_path = os.path.join(os.path.dirname(SCRIPT_DIR), "06-DASHBOARD-E-METRICHE", "YOUTUBE-PERFORMANCE-DASHBOARD.md")
+    # DEPRECATO: scriviamo su un file *-LEGACY.md per NON sovrascrivere la dashboard canonica reale.
+    dashboard_path = os.path.join(os.path.dirname(SCRIPT_DIR), "06-DASHBOARD-E-METRICHE", "YOUTUBE-PERFORMANCE-DASHBOARD-LEGACY.md")
     os.makedirs(os.path.dirname(dashboard_path), exist_ok=True)
     
     with open(dashboard_path, "w", encoding="utf-8") as f:

@@ -683,20 +683,86 @@ class Apex7Orchestrator:
             6: self.run_phase_6
         }
         
+        fasi_esito = self.working_memory.get("fasi_esito", {})
         for phase in range(current_phase, 7):
             if target_phase and phase > target_phase:
                 break
-            
+
             print(f"\n🚀 === FASE {phase} IN CORSO ===")
             success = phases[phase](interactive)
+            fasi_esito[str(phase)] = "PASS" if success else "FAIL"
+            self.working_memory["fasi_esito"] = fasi_esito
             if not success:
                 print(f"🔴 Fallimento nella Fase {phase}. Stato salvato. Riprendi con --resume.")
+                self.save_state()
+                # La dashboard deve riflettere il FAIL reale, non restare sempre 🟢 PASS (TASK-YT-005).
+                self.write_dashboard()
                 sys.exit(1)
-                
+
             self.working_memory["current_phase"] = phase + 1
             self.save_state()
-            
+
+        self.write_dashboard()
         print(f"\n🎉 Workflow completato con successo per la run {self.run_id}!")
+
+    def write_dashboard(self) -> str:
+        """Scrive la dashboard REALE della run corrente da self.working_memory: canale/video scelti
+        veri, esito vero di OGNI fase (PASS/FAIL/non eseguita). Sostituisce la dashboard fantasma
+        sempre-🟢-PASS su 'Dose Mentale' di run_youtube_apex7.py (TASK-YT-005)."""
+        dash_path = os.path.join(FACTORY_DIR, "06-DASHBOARD-E-METRICHE", "YOUTUBE-PERFORMANCE-DASHBOARD.md")
+        os.makedirs(os.path.dirname(dash_path), exist_ok=True)
+        wm = self.working_memory
+        esito = wm.get("fasi_esito", {})
+        fasi = [
+            (1, "Scouting", "Potenziale nicchia (niche-gate)"),
+            (2, "Selezione", "views/ora sopra soglia"),
+            (3, "Script", "HOOK/INTRO/CORPO/CTA"),
+            (4, "Produzione", "Spec Fliki multi-scena valida"),
+            (5, "Pubblicazione", "SEO score >= 70"),
+            (6, "Audit", "Metriche reali, niente dati finti"),
+        ]
+        fallita = next((n for n, _, _ in fasi if esito.get(str(n)) == "FAIL"), None)
+        eseguite = [n for n, _, _ in fasi if str(n) in esito]
+        if fallita:
+            stato = f"🔴 RUN FALLITA alla Fase F{fallita}"
+        elif len(eseguite) == 6:
+            stato = "🟢 RUN COMPLETA (6/6 fasi PASS)"
+        else:
+            stato = f"🟡 RUN PARZIALE ({len(eseguite)}/6 fasi eseguite)"
+
+        canale = wm.get("canale_scelto") or "—"
+        handle = wm.get("canale_scelto_handle") or ""
+        righe = [
+            "# YouTube Automation Factory - Performance Dashboard",
+            "",
+            f"- **Ultimo Run ID**: {self.run_id}",
+            f"- **Data Aggiornamento**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+            f"- **Canale scelto (reale)**: {canale}" + (f" ({handle})" if handle else ""),
+            f"- **Video di riferimento (reale)**: {wm.get('video_scelto') or '—'}",
+            f"- **Idea/script scelto (reale)**: {wm.get('script_idea_title') or '—'}",
+            f"- **Stato Run**: {stato}",
+            "",
+            "> Scritta da `Apex7Orchestrator.write_dashboard()` dai dati REALI della run corrente.",
+            "> Non più sempre-PASS: se una fase fallisce, qui appare 🔴 FAIL.",
+            "",
+            "## 📊 Esito reale delle fasi",
+            "| Fase | Componente | Stato | Esito Gate | Criterio |",
+            "|---|---|---|---|---|",
+        ]
+        for n, nome, criterio in fasi:
+            e = esito.get(str(n))
+            if e == "PASS":
+                stato_txt, gate = "Completato", "🟢 PASS"
+            elif e == "FAIL":
+                stato_txt, gate = "Fallito", "🔴 FAIL"
+            else:
+                stato_txt, gate = "Non eseguita", "⚪ —"
+            righe.append(f"| F{n} | {nome} | {stato_txt} | {gate} | {criterio} |")
+        righe.append("")
+        with open(dash_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(righe) + "\n")
+        print(f"[📊 DASHBOARD] Aggiornata (reale): {stato}")
+        return dash_path
 
     # --- Fase 1: Scouting ---
     def load_real_niche_channels(self) -> list[dict]:

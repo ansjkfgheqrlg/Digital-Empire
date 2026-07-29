@@ -1,3 +1,16 @@
+## YT-FACTORY 2026-07-29 — TASK-YT-005 CHIUSA (dashboard reale) — TUTTI I P1 CHIUSI — CP-20260729-006
+Quarto lotto YT della sessione. Nuovo Apex7Orchestrator.write_dashboard() scrive la dashboard dai
+dati REALI (canale/video/esito per fase); execute_workflow traccia fasi_esito e la chiama su successo
+E su fallimento (prima faceva sys.exit prima di scrivere -> non vedeva mai un FAIL). Ritirato il
+percorso fantasma run_youtube_apex7.py (Conductor mock, sempre 6x PASS su Dose Mentale): deprecato +
+scrive su *-LEGACY.md, non clobbera piu la dashboard vera (non cancellato). Gate VERDE: PASS -> 6x
+verde; F2 fallita -> F2 rosso + F3-F6 non eseguite + exit 1; test 11/11. **FABBRICA YOUTUBE: F1-F6
+reali + dashboard onesta. Tutti i lotti P1 (TASK-YT-002..005) CHIUSI in una sessione.** Restano solo
+P2: TASK-YT-006 (ritiro APEX-7 duplicato in Stream-S7, cross-eco, serve COORD) e TASK-YT-007 (docs).
+**RIPRESA DA:** TASK-YT-006 o TASK-YT-007.
+
+---
+
 ## YT-FACTORY 2026-07-29 — TASK-YT-004 CHIUSA (F6 audit onesto) — CP-20260729-005
 Terzo lotto YT della sessione. `run_phase_6` non appende piu views_per_hour 35.5 FINTO (il
 self-improver imparava su rumore inventato). Ora audit su manifest published_videos.json: nessuna
