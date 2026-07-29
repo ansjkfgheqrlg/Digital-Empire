@@ -1,4 +1,29 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-007 chiusa — docs allineate, TASK FORMALE YOUTUBE COMPLETO (TASK-YT-001..007) · TASK-YT-006 chiusa — NON migrato, motivazione scritta (Stream-S7-Bot piu' maturo di 11-APEX-7-CORE) · TASK-YT-005 chiusa — dashboard stato reale, run_youtube_apex7.py ritirato — TUTTI I LOTTI P1 (TASK-YT-001..005) CHIUSI · TASK-YT-004 chiusa — F6 audit onesto, niente metriche finte · TASK-YT-003 chiusa — F5 metadati reali · TASK-YT-002 chiusa — F4 spec Fliki reale multi-scena · TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+# STATO EMPIRE -- aggiornato 2026-07-29 (Gael: produzione contenuto reale YouTube — competitor+script+copertina fatti, video Fliki in attesa di API key — CP-20260729-001)
+
+## 🟠 2026-07-29 — GAEL: run reale fabbrica YouTube — copertina fatta (Arena.ai/Playwright), video Fliki in attesa di API key — CP-20260729-001
+Su richiesta diretta di Gael: scelto un video competitor su dati reali (Andrea Ciraolo, indice
+Cash Cow 78.4), scritto lo script migliorato, generata la spec Fliki e i metadati (già coperto
+dai lotti TASK-YT-001..005). **Novità di oggi**: la copertina. Canva (MCP collegato) ha la
+generazione AI disattivata per il team e nessun brand template disponibile — bloccato. Costruita
+ex-novo un'automazione Playwright reale di **arena.ai** (nuovo `arena_thumbnail.py`): Google
+blocca il login OAuth su browser controllati da CDP (comportamento noto di Google, non un nostro
+bug) — aggirato lanciando una finestra Chrome **normale** (non Playwright) sullo stesso profilo
+persistente per il login manuale una tantum, poi Playwright riusa la sessione salvata. Su
+correzione di Gael, modalità **Direct + modello "Max"** (non Battle Mode). Copertina reale
+generata: `05-TEMPLATES-E-KIT/copertina-arena-candidata-1.png`.
+
+**Video Fliki**: nessuna `FLIKI_API_KEY` trovata in questo ambiente (verificato a fondo: env
+utente/macchina/processo, tutti gli `.env`, grep codice). Documentazione reale dell'API Fliki
+Enterprise recuperata (`developer.fliki.ai`) e client scritto (`fliki_client.py`,
+`POST /v1/generate/video` + `/v1/voices` + `/v1/generate/status`) — pronto ma non eseguibile
+senza la chiave reale. **In attesa che Gael la fornisca.**
+
+Vedi [CP-20260729-001](checkpoints/CP-20260729-001.md) per il dettaglio tecnico completo
+(inclusa la sequenza di debug del blocco Google, utile per chi ritocca `arena_thumbnail.py`).
+
+**RIPRESA DA:** Gael passa `FLIKI_API_KEY` → eseguire `fliki_client.py` per il video reale.
+
+---
 
 ## ✅ 2026-07-28 — GAEL: TASK-YT-007 CHIUSA — docs allineate — TASK FORMALE YOUTUBE COMPLETO — CP-20260728-013
 Settimo e ultimo lotto. Aggiornati `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md` (blocco ADR-010:

@@ -362,5 +362,29 @@
     ],
     "confidence": 0.8,
     "timestamp": "2026-07-29T08:57:49.251309"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-video-20260729-152801",
+    "decision": "Selezione canale reale: Andrea Ciraolo (@ciraolone)",
+    "reason": "Cluster 'Low-Code Business Architect', opportunità 'Media/Alta' per il Manuale Claude Code (analisi niche-scout Gemini), view medie 10000-25000, indice cash cow reale 78.4 (PASS). Scartati prima per niche-gate FAIL: [('Alberto Olla', 44.0), ('Martes AI', 19.7), ('Piero Savastano', 17.3), ('SOS Automazioni', 20.2)].",
+    "alternatives_rejected": [
+      "Alberto Olla",
+      "Martes AI",
+      "Piero Savastano"
+    ],
+    "confidence": 0.65,
+    "timestamp": "2026-07-29T15:28:03.920764"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-video-20260729-152801",
+    "decision": "Scelta video target: KIMI K3 ✨ VIBE CODING Tutorial with AI",
+    "reason": "Velocity reale 263.89 views/ora (19000 viste in 72h) su Andrea Ciraolo — SEO score reale del titolo 17.5/100 per keyword 'claude': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "HOW TO CREATE AN AI VOICE AGENT THAT ANSWERS THE PHONE 📞 24/7"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-07-29T15:28:11.103704"
   }
 ]
