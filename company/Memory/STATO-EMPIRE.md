@@ -1,3 +1,38 @@
+## 📲 2026-07-29 — OUTREACH PREVENTA: INVIO WHATSAPP REALE + FLUSSO GIORNALIERO AUTOMATICO — CP-20260729-007
+> Max ha chiesto invio WhatsApp reale (non solo copy-paste) + flusso automatico multi-giorno,
+> minimo 50 concessionari scraped e 50 messaggi/giorno, focus totale su import, comando unico
+> `/avvia-outreach-preventa`.
+
+Sessione WhatsApp fixata al 2° tentativo: `storage_state` Playwright non cattura le chiavi
+IndexedDB di WhatsApp Web (causa vera della sessione persa), risolto con profilo Chromium
+persistente (`launch_persistent_context`, stesso pattern gia' usato per YouTube in questo repo).
+Invio reale confermato: messaggio mandato davvero ad "Auto Occasioni Milano", stage
+NEW->CONTACTED in Areus subito dopo (mai fake). Bug di normalizzazione numero fixato prima di
+mandare qualunque cosa (prefisso mobile 392/393 scambiato per gia'-internazionale).
+
+Nuovo `outreach_giornaliero.py` + skill `/avvia-outreach-preventa`: FASE 1 scraping import-focus
+(cities.txt espanso 10->55 città per rotazione multi-giorno senza esaurire lead freschi,
+`run.py` esteso con `--categorie` plurale) -> FASE 2 invio WhatsApp fino a 50/giorno, ritmo
+umano (45-120s), stop automatico su segnali di ban account o profilo Chrome occupato, mai più
+di 5 fallimenti consecutivi senza fermarsi.
+
+**Bug reale trovato testando, non ipotetico:** il primo test scraping (Brescia, import-focus)
+ha prodotto 12 lead nuovi ma solo 3 mobile, tutti priorità BASSA — il filtro invio originale
+(pensato per "sito vecchio") li escludeva tutti: 0 invii possibili, il focus-import svuotava
+il funnel. Fix onesto (non un trucco per gonfiare i numeri): nuovo **Gancio 4 "Import/annunci
+esteri"** in `personalizza_messaggi.py`, attivo su categoria import, ignora priorita_lead — il
+dolore reale di un concessionario import è tradurre annunci esteri, non "il sito fa schifo".
+Ri-testato: eligibili 0 -> 2, dry-run puliti su entrambi.
+
+Rischio comunicato esplicitamente a Max (non nascosto nei commenti): 50 msg/giorno da un numero
+personale è rischio ban reale, costruito con le protezioni possibili ma non a zero rischio.
+
+**RIPRESA DA:** comando pronto (`/avvia-outreach-preventa`). Consigliato (non imposto) un primo
+giorno a cap più basso per osservare la tenuta dell'account prima di salire a 50. Vedi
+[CP-20260729-007](checkpoints/CP-20260729-007.md).
+
+---
+
 ## YT-FACTORY 2026-07-29 — TASK-YT-005 CHIUSA (dashboard reale) — TUTTI I P1 CHIUSI — CP-20260729-006
 Quarto lotto YT della sessione. Nuovo Apex7Orchestrator.write_dashboard() scrive la dashboard dai
 dati REALI (canale/video/esito per fase); execute_workflow traccia fasi_esito e la chiama su successo

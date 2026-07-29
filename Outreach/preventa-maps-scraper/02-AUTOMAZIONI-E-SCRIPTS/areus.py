@@ -32,6 +32,24 @@ def normalize_phone(p: str) -> str:
     return re.sub(r"\s+", "", p or "").replace("-", "").replace("(", "").replace(")", "")
 
 
+def classifica_telefono_it(telefono: str) -> str:
+    """
+    "mobile" / "fisso" / "sconosciuto". Serve a filtrare chi e' raggiungibile su WhatsApp
+    (solo mobile). Numeri italiani: mobile = 10 cifre che iniziano per 3 (o 39+10 cifre
+    con prefisso internazionale gia' incluso); fisso = inizia per 0.
+    """
+    n = re.sub(r"[^\d+]", "", telefono or "").lstrip("+")
+    if n.startswith("39") and len(n) == 12:
+        n = n[2:]
+    if len(n) != 10:
+        return "sconosciuto"
+    if n.startswith("3"):
+        return "mobile"
+    if n.startswith("0"):
+        return "fisso"
+    return "sconosciuto"
+
+
 def _load(state_path: Path) -> Dict:
     if not state_path.exists():
         return {"leads": [], "aggiornato": None}
@@ -90,6 +108,7 @@ def upload_to_areus(leads: List[Dict], city: str, state_path: Optional[str] = No
             "note_qualifica": lead.get("note_qualifica", ""),
             "maps_url": lead.get("maps_url", ""),
             "data_estrazione": lead.get("data_estrazione", ""),
+            "telefono_tipo": classifica_telefono_it(lead.get("telefono", "")),
             "stage": STAGE_NEW,
             "note": "",
             "aggiunto_il": now,
