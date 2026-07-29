@@ -165,8 +165,8 @@
       "owner": "Gael",
       "giorno": "2026-07-28",
       "titolo": "YT-Factory: F4 Produzione, spec Fliki reale multi-scena da script.md di F3",
-      "stato": "da_fare",
-      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-002. Gate: 2 run diverse -> produzione-spec.json con scene_count/testo diversi."
+      "stato": "fatto",
+      "note": "FATTO da Claude 2026-07-29 (ordine Max: Estate prende il controllo dei modelli). run_phase_4 non e piu hardcoded (1 scena fissa): legge working_memory[script_path] (script.md reale di F3), nuova funzione module-level _scene_da_script parsa HOOK/INTRO/CORPO/CTA in scene multiple (taglia note di regia + timecode bullet, split a frase). video_id/title/hook_type reali dalla working_memory. Gate VERDE: 2 script diversi -> scene_count 9 vs 8 + testo diverso, validate_schemas produzione-spec PASS entrambi, test_youtube_apex7 11/11 OK. Vedi CP-20260729-003."
     },
     {
       "id": "TASK-YT-003",
@@ -211,5 +211,5 @@
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-28 16:10"
+  "aggiornato": "2026-07-29 (TASK-YT-002 fatto)"
 }

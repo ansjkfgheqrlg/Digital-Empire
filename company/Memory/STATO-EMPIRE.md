@@ -1,3 +1,14 @@
+## YT-FACTORY 2026-07-29 — TASK-YT-002 CHIUSA (F4 spec Fliki multi-scena) — CP-20260729-003
+Primo modello costruito dall'Estate dopo la presa di controllo (`empire cantiere`). `run_phase_4`
+non e piu hardcoded a 1 scena fissa: nuova `_scene_da_script` deriva le scene dallo script.md REALE
+di F3 (HOOK/INTRO/CORPO/CTA -> frasi, taglia regia+timecode), title/hook_type/video_id reali dalla
+working_memory. Gate VERDE: 2 script diversi -> scene_count 9 vs 8 + testo diverso, validate_schemas
+PASS entrambi, test_youtube_apex7 11/11 OK. Un solo file toccato (apex7_orchestrator.py, perimetro
+del lotto). Taskboard TASK-YT-002=fatto. **RIPRESA DA:** TASK-YT-003 (F5 metadati reali, oggi
+hardcoded come era F4), stesso metodo.
+
+---
+
 ## COORDINAMENTO 2026-07-29 (Claude) — TASK-YT-002 in lavorazione (F4 Produzione)
 Claude prende in mano **TASK-YT-002** (F4 Produzione: spec Fliki multi-scena da script.md reale) su
 ordine diretto di Max (il Workflow Estate deve costruire lui i modelli operativi). File toccato in

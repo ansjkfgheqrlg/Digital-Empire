@@ -285,6 +285,72 @@ def _parse_view_range(raw: str) -> tuple[float, float]:
         return vals[0], vals[0]
     return 0.0, 0.0
 
+
+# --- TASK-YT-002: parsing dello script.md reale di F3 in scene di produzione Fliki ---
+# Il narrato di un video Fliki e' una scena per unita' di parlato. Deriviamo le scene dal
+# contenuto REALE dello script (HOOK/INTRO/CORPO/CTA), non da una spec fissa: idee diverse
+# scritte in F3 -> testi e numero di scene diversi, che e' il gate del lotto.
+_SEZIONI_NARRABILI = {"HOOK", "INTRO", "CORPO", "CTA"}
+# Prefisso timecode dei bullet del CORPO scritti da run_phase_3, es. "0:00-1:30 ".
+_RE_TIMECODE = re.compile(r"^\d{1,2}:\d{2}\s*-\s*\d{1,2}:\d{2}\s*")
+# Confine di frase: dopo . ! ? seguiti da spazio.
+_RE_FRASE = re.compile(r"(?<=[.!?])\s+")
+
+
+def _slug_video_id(title: str) -> str:
+    """title reale -> id url-safe stabile (cambia quando cambia il titolo, come vuole il gate)."""
+    s = re.sub(r"[^a-z0-9]+", "-", (title or "").lower()).strip("-")
+    return (s[:48] or "video").rstrip("-")
+
+
+def _scene_da_script(script_text: str, *, secondi_per_parola: float = 0.4) -> list[dict]:
+    """Estrae le scene narrabili dallo script.md reale.
+
+    Regole (calibrate sul formato scritto da run_phase_3):
+      - si considerano solo le sezioni HOOK / INTRO / CORPO / CTA;
+      - le note di regia (tutto cio' che segue un '+' marcatore) vengono tagliate;
+      - i metadati bullet ('- **...') sono ignorati;
+      - i bullet del CORPO ('- 0:00-1:30 Testo') perdono il prefisso timecode;
+      - il testo di ogni sezione e' spezzato in frasi: una frase = una scena.
+    Ogni scena: {number, text, duration}. La durata e' stimata dalle parole (nessun TTS qui).
+    Se lo script non produce nulla di narrabile, ritorna [] (il chiamante gestisce il fallback).
+    """
+    scene_testi: list[str] = []
+    sezione: str | None = None
+    for raw in (script_text or "").splitlines():
+        riga = raw.rstrip()
+        if riga.startswith("## "):
+            # nome sezione = prima parola dopo '## ', maiuscola (ignora la parentesi descrittiva)
+            sezione = riga[3:].strip().split()[0].upper() if riga[3:].strip() else None
+            continue
+        if sezione not in _SEZIONI_NARRABILI:
+            continue
+        testo = riga.strip()
+        if not testo or testo.startswith("- **"):
+            continue
+        # bullet del CORPO -> togli '- ' e l'eventuale timecode
+        if testo.startswith("- "):
+            testo = testo[2:].strip()
+            testo = _RE_TIMECODE.sub("", testo).strip()
+        # taglia le note di regia introdotte dal marcatore '+' (U+2795 o '+')
+        for marcatore in ("➕", "➕"):
+            if marcatore in testo:
+                testo = testo.split(marcatore, 1)[0].strip()
+        if not testo:
+            continue
+        for frase in _RE_FRASE.split(testo):
+            f = frase.strip()
+            if len(f) >= 8:  # scarta frammenti non narrabili
+                scene_testi.append(f)
+
+    scene: list[dict] = []
+    for i, t in enumerate(scene_testi, start=1):
+        n_parole = len(t.split())
+        durata = round(max(2.0, n_parole * secondi_per_parola), 1)
+        scene.append({"number": i, "text": t, "duration": durata})
+    return scene
+
+
 class Apex7Orchestrator:
     def __init__(self, run_id: str | None = None, shared_domain: str = "youtube"):
         self.run_id = run_id or f"yt-{datetime.now().strftime('%Y%m%d-%H%M%S')}-{uuid.uuid4().hex[:6]}"
@@ -912,18 +978,37 @@ class Apex7Orchestrator:
     def run_phase_4(self, interactive: bool) -> bool:
         print("[✍️ WRITER] Generazione della spec di produzione Fliki...")
         spec_path = os.path.join(TEMPLATES_DIR, "produzione-spec.json")
+
+        # Titolo/hook reali della run corrente (scritti da run_phase_3), non piu' hardcoded.
+        title = self.working_memory.get("script_idea_title") or "Video Claude Code"
+        hook_type = self.working_memory.get("script_idea_hook_type") or "Question"
+
+        # Scene derivate dallo script.md REALE di F3 (multi-scena, non 1 fissa).
+        script_path = self.working_memory.get("script_path")
+        script_text = ""
+        if script_path and os.path.exists(script_path):
+            with open(script_path, "r", encoding="utf-8") as f:
+                script_text = f.read()
+        else:
+            print("[!] ATTENZIONE: script.md di F3 non trovato in working_memory: "
+                  "spec di produzione con la sola scena-titolo (esegui prima la Fase 3).")
+        scenes = _scene_da_script(script_text)
+        if not scenes:
+            # Fallback onesto: nessuna scena narrabile -> una sola scena col titolo reale,
+            # cosi' lo schema resta valido senza inventare contenuto.
+            scenes = [{"number": 1, "text": title, "duration": 4.0}]
+
         spec = {
-            "video_id": "claude-code-001",
-            "title": "Installare Claude Code locale",
+            "video_id": _slug_video_id(title),
+            "title": title,
             "voice": "Fabio (Italiano)",
             "music": "Soft ambient",
-            "hook_type": "Question",
-            "scene_count": 5,
-            "scenes": [
-                {"number": 1, "text": "Vuoi installare l'agente IA più veloce?", "duration": 5.0}
-            ]
+            "hook_type": hook_type,
+            "scene_count": len(scenes),
+            "scenes": scenes,
         }
         self.save_json(spec_path, spec)
+        print(f"[✍️ WRITER] Spec Fliki: {len(scenes)} scene da script reale, titolo \"{title[:50]}\".")
         
         # Validiamo
         val_res = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "validate_schemas.py"), "produzione-spec", spec_path], capture_output=True, text=True)
