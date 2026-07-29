@@ -1,4 +1,23 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-002 chiusa — F4 spec Fliki reale multi-scena · TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-003 chiusa — F5 metadati reali · TASK-YT-002 chiusa — F4 spec Fliki reale multi-scena · TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+
+## 🟣 2026-07-28 — GAEL: TASK-YT-003 CHIUSA — F5 Pubblicazione, metadati reali (titolo/descrizione/tag/brief) — CP-20260728-009
+Terzo lotto YT (dipende da TASK-YT-001/002). `run_phase_5` scriveva sempre lo stesso titolo/
+descrizione/tag, indipendentemente dal video/idea reali. Riscritta: titolo da
+`working_memory["script_idea_title"]`, descrizione da HOOK+INTRO+CTA reali di `script.md`
+(riusando `_parse_script_scenes` di TASK-YT-002), tag da `learned_rules.json` +
+`canale_cluster` reale di F1 (nuovo campo salvato in `run_phase_1`) + keyword tokenizzate
+dal titolo idea. `brief-miniatura.json`: `concept`/`text_overlay` derivati dall'HOOK reale. Il
+gate SEO ora logga onestamente il risultato reale invece di stampare sempre "PASS".
+
+**Gate**: 2 candidati reali diversi → titolo/tag diversi tra le run, `seo_score.py --json`
+reale eseguito su entrambe: run A `total=92.5` (nota onesta: titolo 73 caratteri fuori 20-70,
+non forzato), run B `total=100.0`, `pass_soglia_70: true` su entrambe. `test_youtube_apex7.py`
+11/11 verde. Vedi [CP-20260728-009](checkpoints/CP-20260728-009.md).
+
+**RIPRESA DA:** TASK-YT-004 (F6 Audit — gate onesto, niente `views_per_hour` finto, serve
+manifest `memory/published_videos.json`).
+
+---
 
 ## 🟣 2026-07-28 — GAEL: TASK-YT-002 CHIUSA — F4 Produzione, spec Fliki reale multi-scena da script.md — CP-20260728-008
 Secondo lotto YT (dipende da TASK-YT-001). `run_phase_4` scriveva sempre `scene_count: 5` con 1

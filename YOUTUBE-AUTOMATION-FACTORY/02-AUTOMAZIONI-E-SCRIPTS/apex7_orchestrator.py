@@ -725,6 +725,7 @@ class Apex7Orchestrator:
         self.working_memory["scheda_nicchia"] = scheda_nicchia_path
         self.working_memory["canale_scelto"] = scelto["channel"]
         self.working_memory["canale_scelto_handle"] = scelto["handle"]
+        self.working_memory["canale_cluster"] = scelto["cluster"]
         self.working_memory["cashcow_index"] = cashcow.get("index")
         return True
 
@@ -984,33 +985,83 @@ class Apex7Orchestrator:
     # --- Fase 5: Pubblicazione ---
     def run_phase_5(self, interactive: bool) -> bool:
         print("[✍️ WRITER] Generazione dei metadati e del brief della miniatura...")
+
+        script_path = self.working_memory.get("script_path")
+        idea_title = self.working_memory.get("script_idea_title")
+        hook_type = self.working_memory.get("script_idea_hook_type", "Question")
+        if not script_path or not os.path.exists(script_path) or not idea_title:
+            print("[!] ERRORE: nessuno script reale trovato (esegui prima la Fase 3). Impossibile generare metadati senza contenuto reale.")
+            return False
+
+        with open(script_path, "r", encoding="utf-8") as f:
+            script_text = f.read()
+        scene_by_section = {s["section"]: s["text"] for s in self._parse_script_scenes(script_text)}
+        # Le annotazioni "➕ ..." sono note per il producer (regia), non copy per lo spettatore.
+        hook_clean = scene_by_section.get("HOOK", "").split("➕")[0].strip()
+        intro_clean = scene_by_section.get("INTRO", "").split("➕")[0].strip()
+        cta_clean = scene_by_section.get("CTA", "").strip()
+        keyword = "claude code"
+
+        # --- Brief miniatura: concept/text_overlay derivati dall'HOOK reale, non fissi ---
         brief_path = os.path.join(TEMPLATES_DIR, "brief-miniatura.json")
+        overlay_words = hook_clean.split()[:5]
+        text_overlay = " ".join(overlay_words).upper().rstrip(".,;:!?") or idea_title.upper()[:40]
+        hook_excerpt = hook_clean[:120] + ("..." if len(hook_clean) > 120 else "")
         brief = {
-            "title": "Installare Claude Code locale",
-            "concept": "Console nera con scritte arancioni e logo Claude",
-            "text_overlay": "CLAUDE CODE LOCALE",
-            "image_prompt": "Minimal terminal styling with warm gradients"
+            "title": idea_title,
+            "concept": f"Frame ispirato all'hook reale ({hook_type}): \"{hook_excerpt}\"",
+            "text_overlay": text_overlay,
+            "image_prompt": "Minimal terminal styling con gradiente caldo, testo overlay leggibile in miniatura piccola"
         }
         self.save_json(brief_path, brief)
-        
+
+        # --- Metadati: titolo/descrizione/tag reali, non piu' statici ---
+        learned_rules = self.load_json(self.learned_rules_path, {})
+        cluster = self.working_memory.get("canale_cluster")
+        idea_tokens = sorted(_tokenize_for_matching(idea_title))[:6]
+        tag_candidates = list(learned_rules.get("high_performing_tags", [])) + ([cluster] if cluster else []) + idea_tokens + [keyword]
+        tags, seen = [], set()
+        for t in tag_candidates:
+            tl = (t or "").strip().lower()
+            if tl and tl not in seen:
+                seen.add(tl)
+                tags.append(t.strip())
+
+        description = (
+            f"{hook_clean}\n\n{intro_clean}\n\n{cta_clean}\n\n"
+            f"Iscriviti per altri video su claude code e trova la guida completa nel Manuale — link in descrizione."
+        )
+
         metadata_path = os.path.join(TEMPLATES_DIR, "metadati.json")
         metadata = {
-            "title": "Come Installare CLAUDE CODE in Locale (Guida Passo-Passo)",
-            "description": "Ecco come installare Claude Code nel terminale...",
-            "tags": ["claude code", "antigravity", "digital empire"],
-            "keyword": "claude code",
+            "title": idea_title,
+            "description": description,
+            "tags": tags,
+            "keyword": keyword,
             "thumbnail": True,
             "subtitles": True
         }
         self.save_json(metadata_path, metadata)
-        
-        # Calcolo del punteggio SEO deterministico
+
+        # Calcolo del punteggio SEO deterministico sui metadati reali appena generati
         seo_res = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "seo_score.py"), "--json", metadata_path], capture_output=True, text=True)
         print(f"[🔬 ANALYST] Calcolatore SEO Score:\n{seo_res.stdout}")
-        
+
+        try:
+            seo_result = json.loads(seo_res.stdout)
+        except (json.JSONDecodeError, ValueError):
+            seo_result = {}
+        passed = bool(seo_result.get("pass_soglia_70"))
+
         print("[🔬 CRITIC] Verifica del gate SEO (seo-gate)...")
-        print("[+] Gate SEO-Gate: PASS")
-        
+        if passed:
+            print(f"[+] Gate SEO-Gate: PASS (score reale {seo_result.get('total')}/100)")
+        else:
+            print(f"[!] Gate SEO-Gate: FAIL onesto (score reale {seo_result.get('total')}/100, sotto soglia 70) — debolezze: {seo_result.get('notes')}")
+
+        self.working_memory["metadati_path"] = metadata_path
+        self.working_memory["metadati_seo_score"] = seo_result.get("total")
+        self.working_memory["brief_miniatura_path"] = brief_path
         return True
 
     # --- Fase 6: Audit ---
