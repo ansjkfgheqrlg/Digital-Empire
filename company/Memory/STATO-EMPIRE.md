@@ -1,4 +1,42 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Claude: YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+
+## 🤖 2026-07-28 — GAEL: TASK-GAEL-20260728-STREAM-S7-BOT CHIUSA — CP-20260728-006
+Handoff di [CP-20260728-004](checkpoints/CP-20260728-004.md): 3 lotti sul dominio trading di
+`12-STREAM-S7-BOT`, tutti chiusi.
+
+**G-A (parser dati reale)**: `analysis_engine.py` non cercava piu' testo mock (`"Amount: 120 SOL"`)
+nei log — legge la transazione vera (`getTransaction`) e ricava volume in SOL dalle variazioni di
+saldo (`preBalances`/`postBalances`) e token address dalle variazioni di saldo token
+(`preTokenBalances`/`postTokenBalances`, escluso Wrapped SOL). **Validato su 5 transazioni VERE di
+mainnet** (Raydium, signature prese in tempo reale il 2026-07-28) + subscription WSS live
+confermata funzionante sul nodo pubblico. Limite reale trovato: l'endpoint RPC pubblico gratuito
+rate-limita `getTransaction` a ~2 chiamate ravvicinate poi `429 Too Many Requests` — non un bug del
+parser (stesso codice, 5/5 corrette quando diluito nel tempo), ma un limite dell'endpoint gratuito.
+**Decisione per Max**: serve un RPC provider a pagamento (Helius/QuickNode/Alchemy) prima di
+sostenere il bot in LIVE su volumi di mercato reali → **B-010 in BACKLOG.md**.
+
+**G-B (position manager + uscita)**: `RiskManager.open_positions` era dichiarato ma mai scritto (il
+limite "max 3 posizioni" non scattava mai). Ora si popola su `trade.executed` e si libera su
+`position.closed` (nuovo evento). Nuovo modulo `position_monitor.py`: applica take-profit/stop-loss
+su un valore **stimato** (random-walk, nessun feed prezzo live — dichiarato esplicitamente,
+`"estimated": True` in ogni record). Testato: 3 posizioni aperte → 4a rifiutata → dopo chiusura
+la 4a viene accettata.
+
+**G-C (fix spam segnali + baseline L3→L4)**: `_detect_spike()` non svuotava la finestra dopo un
+segnale — ogni evento successivo nella stessa finestra ripubblicava lo stesso segnale. Fix:
+la finestra si azzera dopo ogni segnale. Baseline reale (log-ricevuto→trade-eseguito) registrata e
+citata nel report; gate `L3_TO_L4` **PASSED 6/6** sui dati specifici del bot (non solo sul codice
+APEX generico).
+
+`python test_apex7.py` → **13/13 sezioni verdi, exit 0, 3 run consecutivi** (RNG seedata,
+deterministico). Gate APEX finale (L6→L7) **PASSED score 1.0**, invariato. Zero modifiche a
+`execution_engine.py` lato modalita' LIVE. Dettagli, comandi e output reali completi in
+[CP-20260728-006](checkpoints/CP-20260728-006.md).
+
+**RIPRESA DA:** nessun blocco tecnico residuo su questo task. Prossimo passo per Max: valutare un
+RPC provider a pagamento (B-010) prima di qualunque discorso su modalita' LIVE reale.
+
+---
 
 ## 🆔 2026-07-28 — YOUTUBE-AUTOMATION-FACTORY: task Gael formalizzati con ID (TASK-YT-001..007)
 

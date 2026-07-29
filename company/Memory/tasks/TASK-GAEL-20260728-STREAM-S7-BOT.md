@@ -6,6 +6,11 @@ Riferimenti: CP-20260727-002 (APEX-7 Level 2 chiuso) · APEX-7.md · STATO-RIPRE
              company/Ecosistemi/12-STREAM-S7-BOT/test_apex7.py
 ---
 
+> **STATO: ✅ FATTO (2026-07-28)** — tutti e 3 i lotti (G-A/G-B/G-C) chiusi, DoD verificata,
+> `test_apex7.py` 13/13 verde. Dettagli, comandi e output reali:
+> [CP-20260728-006](../checkpoints/CP-20260728-006.md). Un punto aperto per Max (non bloccante):
+> `BACKLOG.md` B-010 (RPC provider a pagamento prima di LIVE).
+
 # 🚨 ORDINE MAX — GAEL: rendi 12-STREAM-S7-BOT un bot che vende, non solo che compra
 
 ## 0. Perché (leggi, sono 10 righe, ti risparmiano un giorno)

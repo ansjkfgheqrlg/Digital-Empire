@@ -5,13 +5,15 @@
 **Ultimo aggiornamento:** 2026-07-28
 **Checkpoint Memory:** `company/Memory/checkpoints/CP-20260727-002.md`, `CP-20260728-004.md`
 
-## 🔁 OWNERSHIP PASSATA A GAEL (2026-07-28)
+## ✅ TASK GAEL CHIUSA (2026-07-28)
 
-Il lavoro sul dominio trading (parser dati reale, position manager, uscita) e' stato
-consegnato a Gael via task formale: **`company/Memory/tasks/TASK-GAEL-20260728-STREAM-S7-BOT.md`**.
-Leggi quel file per lo stato completo e i 3 lotti (G-A parser reale, G-B position manager,
-G-C fix spam segnali + baseline L3→L4). Le sezioni sotto restano come riferimento storico
-di cosa Claude ha chiuso (Level 2 APEX-7 generico + collegamento del loop trading).
+Il lavoro sul dominio trading (parser dati reale, position manager, uscita) consegnato a Gael via
+**`company/Memory/tasks/TASK-GAEL-20260728-STREAM-S7-BOT.md`** e' **chiuso**: tutti e 3 i lotti
+(G-A parser reale su `getTransaction`, G-B position manager con TP/SL, G-C fix spam segnali +
+baseline L3→L4 PASSED) verificati con dati reali. Dettagli e comandi in
+[CP-20260728-006](../../Memory/checkpoints/CP-20260728-006.md). Unico punto aperto per Max: un RPC
+provider a pagamento prima di LIVE (`BACKLOG.md` B-010). Le sezioni sotto restano come riferimento
+storico di cosa Claude aveva chiuso prima (Level 2 APEX-7 generico + collegamento del loop trading).
 
 ---
 
