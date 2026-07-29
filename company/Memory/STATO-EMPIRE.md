@@ -1,3 +1,16 @@
+## 🏗️ 2026-07-29 — PRESA DI COSTRUZIONE empire-wide: `empire cantiere` — CP-20260729-002
+Il cervello (WORKFLOW-ESTATE) ora GOVERNA i 3 modelli operativi, non li osserva soltanto.
+Nuovo comando `empire cantiere`: legge registro visibile `WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/MODELLI-OPERATIVI.json`
++ taskboard + STATO-RIPRESA per modello, dà il PROSSIMO PASSO di costruzione con check reali su disco
+(entrypoint esiste? altrimenti ASSENTE). Distinzione netta: `controllo`=porta USCITA (pronto a spedire?),
+`cantiere`=porta COSTRUZIONE (pronto a finire, prossimo passo?). Verità misurata: **3 modelli governati,
+1 costruibile adesso = YouTube/TASK-YT-002** (F4 Fliki multi-scena). Stream-S7 bloccato su B-010 (RPC a
+pagamento=Max); Outreach bloccato su re-login social + 'via' su invii (atti di Max). Dashboard visibile:
+`WORKFLOW-ESTATE/06-DASHBOARD-E-METRICHE/CANTIERE.md`. **RIPRESA DA:** costruire TASK-YT-002 col ciclo
+a 9 passi, previo blocco COORDINAMENTO per non collidere con Gael.
+
+---
+
 ## 🎛️ 2026-07-29 — CENTRO DI COMANDO empire-wide + correzione modello Playwright — CP-20260729-001
 `empire controllo` = plancia su TUTTI i workflow (YT/IG/LinkedIn/Outreach/S7/incasso), verdetto
 PARTE/SERVE-MAX per ognuno. **Errore mio corretto da Max:** avevo classificato le porte con OAuth/API

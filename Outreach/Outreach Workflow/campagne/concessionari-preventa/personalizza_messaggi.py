@@ -102,7 +102,7 @@ def whatsapp_msg3(nome_attivita: str) -> str:
     """Da 02_SCRIPT_WHATSAPP_EMAIL_3MSG.md — dopo sì a msg2, o G+5 di silenzio dopo msg1."""
     return (
         f"Fatto. Ti preparo io il demo con un vostro annuncio in 15 min su schermo, senza impegno.\n"
-        f"Licenza a canone, disdetta libera con kill-switch se non lo usate più.\n"
+        f"€2.000 una tantum, pagamento unico: nessun canone.\n"
         f"Domani alle 11:00 o giovedì alle 16:30 ti va meglio per vederlo?"
     )
 
@@ -129,7 +129,7 @@ def email3(nome_attivita: str, citta: str) -> dict:
             f"Chiudo il giro contatti nella zona di {citta} questa settimana.\n"
             f"Se non è prioritario per voi velocizzare i preventivi ora, nessun problema.\n"
             f"Se invece vuoi dare un'occhiata, ti faccio vedere tutto in 15 min su un vostro annuncio. "
-            f"Canone mensile, disdetta libera con kill-switch.\n"
+            f"€2.000 una tantum, pagamento unico, nessun canone.\n"
             f"Altrimenti archivio.\n"
             f"Va bene così?\n"
             f"{MITTENTE} - {BRAND}"
