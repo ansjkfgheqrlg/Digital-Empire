@@ -1,3 +1,14 @@
+## COORDINAMENTO 2026-07-29 (Claude) — TASK-YT-002 in lavorazione (F4 Produzione)
+Claude prende in mano **TASK-YT-002** (F4 Produzione: spec Fliki multi-scena da script.md reale) su
+ordine diretto di Max (il Workflow Estate deve costruire lui i modelli operativi). File toccato in
+ESCLUSIVA per questo lotto: `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/apex7_orchestrator.py`
+(solo `run_phase_4` + una funzione module-level `_scene_da_script`). NON tocco il motore condiviso
+11-APEX-7-CORE ne i file trading di Stream-S7. Gael: se stai su questo lotto, pingami prima di editare
+run_phase_4 per non collidere. Chiudo con gate (2 script diversi -> scene_count/testo diversi,
+validate_schemas PASS, test_youtube_apex7 11/11) + checkpoint + taskboard TASK-YT-002=fatto.
+
+---
+
 ## 🏗️ 2026-07-29 — PRESA DI COSTRUZIONE empire-wide: `empire cantiere` — CP-20260729-002
 Il cervello (WORKFLOW-ESTATE) ora GOVERNA i 3 modelli operativi, non li osserva soltanto.
 Nuovo comando `empire cantiere`: legge registro visibile `WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/MODELLI-OPERATIVI.json`
