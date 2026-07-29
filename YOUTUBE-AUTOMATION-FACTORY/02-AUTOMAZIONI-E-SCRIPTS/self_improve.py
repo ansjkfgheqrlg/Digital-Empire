@@ -61,9 +61,12 @@ def analyze():
         tags = run.get("tags", [])
         metrics = run.get("metrics", {})
         
-        vph = float(metrics.get("views_per_hour", 0.0))
-        ctr = float(metrics.get("ctr", 0.0))
-        retention = float(metrics.get("retention_rate", 0.0))
+        # `or 0.0` (non solo un default in .get): alcuni log reali hanno ctr/retention_rate
+        # esplicitamente `null` (dato non ottenibile da fetch pubblico, non inventato) — vanno
+        # trattati come 0.0 nelle statistiche, non far esplodere float(None).
+        vph = float(metrics.get("views_per_hour") or 0.0)
+        ctr = float(metrics.get("ctr") or 0.0)
+        retention = float(metrics.get("retention_rate") or 0.0)
         curve_type = str(metrics.get("curve_type", "")).strip().lower()
 
         # 1) Analisi Keyword

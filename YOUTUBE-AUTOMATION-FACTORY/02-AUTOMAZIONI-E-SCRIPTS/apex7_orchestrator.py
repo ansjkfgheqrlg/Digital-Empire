@@ -275,6 +275,22 @@ def _fetch_channel_videos_live(handle: str, max_videos: int = 30) -> list[dict]:
     return clean
 
 
+# --- Manifest video REALMENTE pubblicati (Fase 6) ---
+# Un video compare qui solo quando è stato davvero caricato su YouTube (da Gael/Max), non a ogni
+# run: F6 lo usa per decidere se c'è qualcosa di reale da auditare o se è ancora troppo presto.
+PUBLISHED_VIDEOS_PATH = os.path.join(MEMORY_DIR, "published_videos.json")
+
+
+def _extract_youtube_id(url: str) -> str:
+    """Estrae il videoId reale da un URL youtube.com/watch?v=... o youtu.be/...; stringa
+    vuota se l'URL non è riconosciuto (nessun ID inventato)."""
+    m = re.search(r"[?&]v=([\w-]+)", url or "")
+    if m:
+        return m.group(1)
+    m = re.search(r"youtu\.be/([\w-]+)", url or "")
+    return m.group(1) if m else ""
+
+
 def _parse_view_range(raw: str) -> tuple[float, float]:
     """'15.000 - 40.000' -> (15000.0, 40000.0). Gestisce anche un solo numero."""
     nums = re.findall(r"[\d.]+", raw)
@@ -1065,32 +1081,73 @@ class Apex7Orchestrator:
         return True
 
     # --- Fase 6: Audit ---
+    def _find_published_entry(self) -> dict | None:
+        """Voce del manifest published_videos.json per la run corrente, se esiste. Il
+        manifest è popolato solo quando un video è stato DAVVERO caricato su YouTube — non a
+        ogni run — quindi l'assenza di una voce è lo stato normale, non un errore."""
+        manifest = self.load_json(PUBLISHED_VIDEOS_PATH, [])
+        return next((e for e in manifest if e.get("run_id") == self.run_id), None)
+
     def run_phase_6(self, interactive: bool) -> bool:
         print("[🔬 ANALYST] Esecuzione Audit Performance ed auto-miglioramento...")
-        
-        # Carichiamo ed appendiamo i log di performance reali
+
+        entry = self._find_published_entry()
+        if not entry:
+            print(f"[i] Nessuna voce reale in published_videos.json per la run {self.run_id}: "
+                  f"video non ancora pubblicato. Nessuna scrittura in performance_logs.json (non è un errore).")
+            return True
+
+        published_at = entry.get("published_at")
+        try:
+            age_hours = (datetime.now() - datetime.fromisoformat(published_at)).total_seconds() / 3600
+        except (TypeError, ValueError):
+            print(f"[!] ERRORE: 'published_at' mancante o non valido in published_videos.json per la run {self.run_id}.")
+            return False
+
+        if age_hours < VIDEO_MATURITY_FLOOR_HOURS:
+            print(f"[i] Video pubblicato da {age_hours:.1f}h (< soglia {VIDEO_MATURITY_FLOOR_HOURS}h): "
+                  f"troppo presto per un audit reale. Nessuna scrittura.")
+            return True
+
+        handle = entry.get("channel_handle", "")
+        yt_video_id = _extract_youtube_id(entry.get("url", ""))
+        real_videos, provenienza = self._get_channel_videos(handle) if handle else ([], "nessuna")
+        match = next((v for v in real_videos if v.get("videoId") == yt_video_id), None)
+        if not match:
+            print(f"[!] Video {entry.get('video_id')} non trovato nel fetch pubblico ({provenienza}) "
+                  f"del canale '{handle}'. Nessuna scrittura (dato reale non disponibile, non inventato).")
+            return True
+
+        views_per_hour = round(match["views"] / max(match["age_hours"], 1.0), 2)
+
+        metadata = self.load_json(self.working_memory.get("metadati_path", ""), {})
         logs = self.load_json(self.perf_logs_path, [])
         new_log = {
-            "video_id": "claude-code-001",
-            "keyword": "claude code",
+            "video_id": entry.get("video_id"),
+            "keyword": metadata.get("keyword", "claude code"),
             "voice": "Fabio (Italiano)",
-            "hook_type": "Question",
-            "tags": ["claude code", "antigravity", "digital empire"],
+            "hook_type": self.working_memory.get("script_idea_hook_type", "Question"),
+            "tags": metadata.get("tags", []),
             "metrics": {
-                "views_per_hour": 35.5,
-                "ctr": 8.2,
-                "retention_rate": 55.0,
-                "curve_type": "regolare"
-            }
+                "views_per_hour": views_per_hour,
+                # CTR e retention rate richiedono YouTube Studio (dati privati): non ottenibili
+                # dal fetch pubblico usato qui, quindi non inventati — null esplicito.
+                "ctr": None,
+                "retention_rate": None,
+                "curve_type": "non disponibile (richiede YouTube Studio, non ottenibile da fetch pubblico)",
+            },
+            "source": provenienza,
         }
         logs.append(new_log)
         self.save_json(self.perf_logs_path, logs)
-        
+        print(f"[🔬 ANALYST] Audit reale: {views_per_hour} views/ora "
+              f"({match['views']:.0f} viste in {match['age_hours']:.0f}h, fonte {provenienza}).")
+
         # Eseguiamo il self-improver per aggiornare learned_rules.json
         print("[🔧 REFINER] Aggiornamento delle regole apprese dal database delle performance...")
         res = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "self_improve.py")], capture_output=True, text=True)
         print(f"[🔧 REFINER] Risultato self-improver:\n{res.stdout.strip()}")
-        
+
         return True
 
 def main():

@@ -1,4 +1,25 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-003 chiusa — F5 metadati reali · TASK-YT-002 chiusa — F4 spec Fliki reale multi-scena · TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-004 chiusa — F6 audit onesto, niente metriche finte · TASK-YT-003 chiusa — F5 metadati reali · TASK-YT-002 chiusa — F4 spec Fliki reale multi-scena · TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+
+## 🟣 2026-07-28 — GAEL: TASK-YT-004 CHIUSA — F6 Audit, gate onesto senza metriche finte — CP-20260728-010
+Quarto lotto YT (dipende da TASK-YT-001..003). `run_phase_6` scriveva sempre `views_per_hour:
+35.5` fisso — il self-improver imparava su rumore inventato. Nuovo manifest
+`memory/published_videos.json` (popolato solo per video DAVVERO caricati su YouTube, non a ogni
+run): senza voce per la run → nessuna scrittura (log onesto, non un errore); voce troppo recente
+(<24h) → nessuna scrittura; voce matura → riusa `_get_channel_videos` (stesso fetch pubblico di
+F2) per calcolare `views_per_hour` reale. `ctr`/`retention_rate` = `null` esplicito (richiedono
+YouTube Studio, non fabbricati). Fix collaterale necessario in `self_improve.py`
+(`float(None)` esplodeva sui nuovi log con metriche `null`).
+
+**Gate**: (a) run senza manifest → `performance_logs.json` invariato, 95 righe prima/dopo
+(diff zero); (b) run con manifest su un video reale già cachato → riga con `views_per_hour=
+263.89` (non 35.5). Entry di test rimossa dopo la verifica (non un video realmente pubblicato),
+file di produzione ripristinati puliti. `test_youtube_apex7.py` 11/11 verde.
+Vedi [CP-20260728-010](checkpoints/CP-20260728-010.md).
+
+**RIPRESA DA:** TASK-YT-005 (Dashboard — stato reale della run, oggi `run_youtube_apex7.py`
+scrive sempre tutto 🟢 PASS a prescindere).
+
+---
 
 ## 🟣 2026-07-28 — GAEL: TASK-YT-003 CHIUSA — F5 Pubblicazione, metadati reali (titolo/descrizione/tag/brief) — CP-20260728-009
 Terzo lotto YT (dipende da TASK-YT-001/002). `run_phase_5` scriveva sempre lo stesso titolo/

@@ -181,8 +181,8 @@
       "owner": "Gael",
       "giorno": "2026-07-28",
       "titolo": "YT-Factory: F6 Audit, gate onesto -- niente views_per_hour finti senza video reale pubblicato",
-      "stato": "da_fare",
-      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-004. Gate: manifest memory/published_videos.json, performance_logs.json invariato se manifest assente."
+      "stato": "fatto",
+      "note": "Nuovo manifest memory/published_videos.json (run_id/video_id/url/channel_handle/published_at), popolato solo per video davvero caricati. run_phase_6 riscritta: senza voce per la run -> return True senza scrivere (log onesto, non errore); voce troppo recente (<24h, riusa VIDEO_MATURITY_FLOOR_HOURS) -> nessuna scrittura; voce matura -> riusa _get_channel_videos (stesso fetch pubblico di F2) per calcolare views_per_hour reale. ctr/retention_rate = null esplicito (richiedono YouTube Studio, non fabbricati). Fix collaterale in self_improve.py (float(None) altrimenti esplode sui nuovi log null). Gate: (a) run senza manifest -> performance_logs.json invariato, 95 righe prima e dopo (diff zero); (b) run con manifest su video reale gia' cachato (@ciraolone) -> riga con views_per_hour=263.89 (non 35.5). Entry di test rimossa dopo la verifica (non era un video realmente pubblicato), file di produzione ripristinati puliti. test_youtube_apex7.py 11/11 verde. Vedi CP-20260728-010."
     },
     {
       "id": "TASK-YT-005",
@@ -211,5 +211,5 @@
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-28 17:45"
+  "aggiornato": "2026-07-28 18:30"
 }
