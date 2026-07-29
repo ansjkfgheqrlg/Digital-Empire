@@ -11,7 +11,7 @@
       "stato_ripresa": null,
       "task_prefissi": ["TASK-YT-"],
       "owner": "Gael",
-      "prossimo_passo": "TASK-YT-005 (Dashboard): write_dashboard() riflette PASS/FAIL reale della run corrente (oggi la dashboard e scritta da run_youtube_apex7.py, percorso fantasma, sempre PASS). F1-F6 gia reali (F4/F5/F6 chiuse 2026-07-29). Poi P2: TASK-YT-006 (ritiro APEX-7 duplicato) e TASK-YT-007 (docs).",
+      "prossimo_passo": "P1 TUTTI CHIUSI (2026-07-29): F1-F6 reali + dashboard onesta (TASK-YT-002..005). Restano solo 2 P2 non bloccanti: TASK-YT-006 (ritiro APEX-7 duplicato in 12-STREAM-S7-BOT, cross-eco, serve COORD) e TASK-YT-007 (docs REGISTRO-IMPRESA + dossier 07).",
       "blocco": null
     },
     {
