@@ -173,8 +173,8 @@
       "owner": "Gael",
       "giorno": "2026-07-28",
       "titolo": "YT-Factory: F5 Pubblicazione, metadati/titolo/tag reali dal video+script scelti",
-      "stato": "da_fare",
-      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-003. Gate: 2 run diverse -> metadati.json con titolo/tag diversi, seo_score.py restano PASS."
+      "stato": "fatto",
+      "note": "FATTO da Claude 2026-07-29. run_phase_5 non piu hardcoded: titolo da working_memory[script_idea_title], descrizione+brief miniatura costruiti dalle sezioni REALI dello script (_sezioni_script), tag da learned_rules[high_performing_tags] + token del titolo reale + hook_type. Gate VERDE: 2 script diversi -> titolo e tag diversi, seo_score 100/100 pass_soglia_70=True entrambi, validate_schemas metadati+brief-miniatura PASS, test_youtube_apex7 11/11. Vedi CP-20260729-004."
     },
     {
       "id": "TASK-YT-004",
@@ -211,5 +211,5 @@
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-29 (TASK-YT-002 fatto)"
+  "aggiornato": "2026-07-29 (TASK-YT-003 fatto)"
 }

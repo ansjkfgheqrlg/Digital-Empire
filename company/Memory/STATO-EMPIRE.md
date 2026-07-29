@@ -1,3 +1,13 @@
+## YT-FACTORY 2026-07-29 — TASK-YT-003 CHIUSA (F5 metadati/tag reali) — CP-20260729-004
+Secondo lotto costruito dall'Estate nella stessa sessione. `run_phase_5` non piu hardcoded: titolo
+da working_memory reale, descrizione+brief dalle sezioni REALI dello script (_sezioni_script), tag da
+learned_rules[high_performing_tags] + token del titolo + hook_type. Gate VERDE: 2 script -> titolo/tag
+diversi, seo_score 100/100 pass_soglia_70 entrambi, validate metadati+brief PASS, test 11/11.
+**Fabbrica YouTube: F1-F5 ora reali; restano finti F6 (TASK-YT-004) e Dashboard (TASK-YT-005).**
+**RIPRESA DA:** TASK-YT-004 (F6 audit onesto, manifest published_videos.json, niente views finte).
+
+---
+
 ## YT-FACTORY 2026-07-29 — TASK-YT-002 CHIUSA (F4 spec Fliki multi-scena) — CP-20260729-003
 Primo modello costruito dall'Estate dopo la presa di controllo (`empire cantiere`). `run_phase_4`
 non e piu hardcoded a 1 scena fissa: nuova `_scene_da_script` deriva le scene dallo script.md REALE

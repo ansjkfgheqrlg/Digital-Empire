@@ -351,6 +351,84 @@ def _scene_da_script(script_text: str, *, secondi_per_parola: float = 0.4) -> li
     return scene
 
 
+def _sezioni_script(script_text: str) -> dict:
+    """script.md reale -> {HOOK/INTRO/CORPO/CTA: testo pulito}. Stessa pulizia di _scene_da_script
+    (niente note di regia, niente metadati, niente timecode), ma testo unito per sezione — serve a
+    F5 per costruire descrizione e brief miniatura dal contenuto vero, non da placeholder."""
+    out: dict[str, list[str]] = {s: [] for s in _SEZIONI_NARRABILI}
+    sezione: str | None = None
+    for raw in (script_text or "").splitlines():
+        riga = raw.rstrip()
+        if riga.startswith("## "):
+            sezione = riga[3:].strip().split()[0].upper() if riga[3:].strip() else None
+            continue
+        if sezione not in _SEZIONI_NARRABILI:
+            continue
+        testo = riga.strip()
+        if not testo or testo.startswith("- **"):
+            continue
+        if testo.startswith("- "):
+            testo = _RE_TIMECODE.sub("", testo[2:].strip()).strip()
+        if "➕" in testo:
+            testo = testo.split("➕", 1)[0].strip()
+        if testo:
+            out[sezione].append(testo)
+    return {k: " ".join(v).strip() for k, v in out.items()}
+
+
+def _overlay_da_hook(hook: str, title: str) -> str:
+    """Testo di copertina breve derivato dall'HOOK reale (max ~5 parole, maiuscolo)."""
+    base = (hook or title or "").strip()
+    parole = re.findall(r"[A-Za-zÀ-ÿ0-9']+", base)[:5]
+    overlay = " ".join(parole).upper()
+    return overlay[:60] or "CLAUDE CODE"
+
+
+def _costruisci_metadati(title: str, hook_type: str, sezioni: dict,
+                         high_tags: list[str], keyword: str = "claude code") -> dict:
+    """Metadati YouTube reali dal contenuto dello script (titolo/descrizione/tag), non hardcoded."""
+    hook = sezioni.get("HOOK", "").strip()
+    intro = sezioni.get("INTRO", "").strip()
+    corpo = sezioni.get("CORPO", "").strip()
+    cta = sezioni.get("CTA", "").strip()
+
+    righe = [r for r in (hook, intro, corpo, cta) if r]
+    descr = "\n".join(righe).strip()
+    if keyword.lower() not in descr.lower():
+        descr += f"\n\nIn questo video vediamo {keyword} passo passo."
+    descr += "\n\n👉 Il Manuale completo: https://digitalempire.example/manuale"
+    descr += "\nIscriviti per altri tutorial su claude code."
+    # garanzia lunghezza (soglia SEO 200) senza inventare: ripiega sul titolo come sintesi
+    if len(descr) < 200:
+        descr += f"\n\nGuida completa: {title}."
+
+    tags: list[str] = []
+    seen: set[str] = set()
+
+    def _push(t: str) -> None:
+        t = (t or "").strip()
+        if t and t.lower() not in seen:
+            seen.add(t.lower())
+            tags.append(t)
+
+    _push(keyword)
+    for t in (high_tags or []):
+        _push(t)
+    for tok in re.findall(r"[A-Za-zÀ-ÿ]{4,}", title.lower()):
+        _push(tok)
+    for extra in ("tutorial", "guida", (hook_type or "").lower()):
+        _push(extra)
+
+    return {
+        "title": title,
+        "description": descr,
+        "tags": tags,
+        "keyword": keyword,
+        "thumbnail": True,
+        "subtitles": True,
+    }
+
+
 class Apex7Orchestrator:
     def __init__(self, run_id: str | None = None, shared_domain: str = "youtube"):
         self.run_id = run_id or f"yt-{datetime.now().strftime('%Y%m%d-%H%M%S')}-{uuid.uuid4().hex[:6]}"
@@ -1023,25 +1101,40 @@ class Apex7Orchestrator:
     # --- Fase 5: Pubblicazione ---
     def run_phase_5(self, interactive: bool) -> bool:
         print("[✍️ WRITER] Generazione dei metadati e del brief della miniatura...")
+
+        # Titolo/hook reali della run corrente (F3), non piu' hardcoded.
+        title = self.working_memory.get("script_idea_title") or "Video Claude Code"
+        hook_type = self.working_memory.get("script_idea_hook_type") or "Question"
+
+        # Sezioni reali dello script.md di F3: alimentano descrizione, tag e brief miniatura.
+        script_path = self.working_memory.get("script_path")
+        script_text = ""
+        if script_path and os.path.exists(script_path):
+            with open(script_path, "r", encoding="utf-8") as f:
+                script_text = f.read()
+        else:
+            print("[!] ATTENZIONE: script.md di F3 non trovato: metadati dal solo titolo reale.")
+        sezioni = _sezioni_script(script_text)
+
+        # Tag ad alta performance storica (learned_rules.json), non lista fissa.
+        learned_rules = self.load_json(self.learned_rules_path, {})
+        high_tags = learned_rules.get("high_performing_tags", [])
+
         brief_path = os.path.join(TEMPLATES_DIR, "brief-miniatura.json")
+        hook_txt = sezioni.get("HOOK", "")
         brief = {
-            "title": "Installare Claude Code locale",
-            "concept": "Console nera con scritte arancioni e logo Claude",
-            "text_overlay": "CLAUDE CODE LOCALE",
-            "image_prompt": "Minimal terminal styling with warm gradients"
+            "title": title,
+            "concept": (f"Frame ispirato all'hook reale: {hook_txt[:90]}" if hook_txt
+                        else "Console scura, accento arancione, logo Claude"),
+            "text_overlay": _overlay_da_hook(hook_txt, title),
+            "image_prompt": "Minimal terminal styling with warm gradients, high contrast",
         }
         self.save_json(brief_path, brief)
-        
+
         metadata_path = os.path.join(TEMPLATES_DIR, "metadati.json")
-        metadata = {
-            "title": "Come Installare CLAUDE CODE in Locale (Guida Passo-Passo)",
-            "description": "Ecco come installare Claude Code nel terminale...",
-            "tags": ["claude code", "antigravity", "digital empire"],
-            "keyword": "claude code",
-            "thumbnail": True,
-            "subtitles": True
-        }
+        metadata = _costruisci_metadati(title, hook_type, sezioni, high_tags)
         self.save_json(metadata_path, metadata)
+        print(f"[✍️ WRITER] Metadati reali: titolo \"{title[:50]}\", {len(metadata['tags'])} tag.")
         
         # Calcolo del punteggio SEO deterministico
         seo_res = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "seo_score.py"), "--json", metadata_path], capture_output=True, text=True)
