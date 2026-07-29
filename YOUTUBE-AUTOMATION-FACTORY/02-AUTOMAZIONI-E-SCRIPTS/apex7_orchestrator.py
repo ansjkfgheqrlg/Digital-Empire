@@ -18,6 +18,7 @@ import argparse
 import subprocess
 import urllib.request
 import urllib.error
+import importlib.util
 from datetime import datetime
 import io
 
@@ -38,6 +39,30 @@ TEMPLATES_DIR = os.path.join(FACTORY_DIR, "05-TEMPLATES-E-KIT")
 os.makedirs(RUNS_DIR, exist_ok=True)
 os.makedirs(DECIS_DIR, exist_ok=True)
 os.makedirs(TEMPLATES_DIR, exist_ok=True)
+
+# --- Motore condiviso 11-APEX-7-CORE (ADR-010, fusione Ruflo+APEX-7-CORE, pilota YouTube) ---
+# Caricato per percorso file (non via sys.path + `import memory`/`import agents`) perché questo
+# stesso pacchetto ha già moduli locali `memory.py` e `agents.py`: un import a pacchetto
+# colliderebbe con quelli già in sys.modules. I moduli condivisi sono self-contained (solo
+# stdlib), quindi il caricamento per file è sicuro e non richiede sys.path.insert.
+APEX7_CORE_DIR = os.path.abspath(os.path.join(FACTORY_DIR, "..", "company", "Ecosistemi", "11-APEX-7-CORE"))
+
+
+def _load_module_from_path(module_name: str, file_path: str):
+    spec = importlib.util.spec_from_file_location(module_name, file_path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+_shared_memory_mod = _load_module_from_path(
+    "apex7_core_memory_system", os.path.join(APEX7_CORE_DIR, "memory", "memory_system.py")
+)
+_shared_orchestrator_mod = _load_module_from_path(
+    "apex7_core_ruflo_core", os.path.join(APEX7_CORE_DIR, "orchestrator", "ruflo_core.py")
+)
+APEX7Memory = _shared_memory_mod.APEX7Memory
+RuFLOOrchestrator = _shared_orchestrator_mod.RuFLOOrchestrator
 
 # --- Dati REALI di niche-scout (Gemini, WORKFLOW-ESTATE) — Fase 1 ---
 # Vedi WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/LEGGIMI.md:
@@ -261,10 +286,10 @@ def _parse_view_range(raw: str) -> tuple[float, float]:
     return 0.0, 0.0
 
 class Apex7Orchestrator:
-    def __init__(self, run_id: str | None = None):
+    def __init__(self, run_id: str | None = None, shared_domain: str = "youtube"):
         self.run_id = run_id or f"yt-{datetime.now().strftime('%Y%m%d-%H%M%S')}-{uuid.uuid4().hex[:6]}"
         self.state_file = os.path.join(RUNS_DIR, f"run_{self.run_id}.json")
-        
+
         # 5-Layer Memory Ecosystem Paths
         self.working_memory = {}
         self.decision_log_path = os.path.join(MEMORY_DIR, "decision_log.json")
@@ -272,6 +297,12 @@ class Apex7Orchestrator:
         self.snapshots_path = os.path.join(MEMORY_DIR, "architecture_snapshots.json")
         self.learned_rules_path = os.path.join(MEMORY_DIR, "learned_rules.json")
         self.perf_logs_path = os.path.join(MEMORY_DIR, "performance_logs.json")
+
+        # Motore condiviso 11-APEX-7-CORE (ADR-010): il critic persiste il punteggio qui,
+        # non più solo localmente. `shared_domain` è parametrizzabile (default "youtube") per
+        # isolare i test dal dominio reale — vedi test_youtube_apex7.py.
+        self.shared_memory = APEX7Memory(domain=shared_domain)
+        self.ruflo = RuFLOOrchestrator(memory_system=self.shared_memory, domain=shared_domain)
 
         self.initialize_memory_files()
         
@@ -446,13 +477,28 @@ class Apex7Orchestrator:
         print("┌────────────────┬────────┬───────────┬──────────┐")
         print("│ Dimensione     │ Peso   │ Threshold │ Metrica  │")
         print("├────────────────┼────────┼───────────┼──────────┤")
+        weaknesses = []
         for dim, val in metrics.items():
             thresh = 7.5 if dim != "Creativity" and dim != "Logic" else (7.0 if dim == "Creativity" else 8.0)
             status = "🟢 PASS" if val >= thresh else "🔴 FAIL"
+            if val < thresh:
+                weaknesses.append(f"{dim}: {val:.1f} < soglia {thresh:.1f}")
             print(f"│ {dim:14} │ {0.25 if dim in ('Completeness', 'Accuracy') else (0.20 if dim in ('Creativity', 'Actionability') else 0.10):.2f}   │ {thresh:.1f}       │ {val:.1f} {status}│")
         print("└────────────────┴────────┴───────────┴──────────┘")
         print(f"[🔬 CRITIC] Score complessivo ponderato: {weighted_score:.2f} / 10")
-        
+
+        # Persistenza sul motore condiviso 11-APEX-7-CORE (ADR-010): il punteggio calcolato sopra
+        # (logica reale, invariata) non resta più locale al file YouTube — passa nel decision log
+        # SQLite del dominio condiviso, visibile a chi ispeziona `data/<domain>` empire-wide.
+        critique_id = self.shared_memory.log_critique(
+            task_id=f"{self.run_id}-{content_type}",
+            score=weighted_score,
+            dimensions=metrics,
+            weaknesses=weaknesses,
+        )
+        self.ruflo.create_checkpoint(f"critic:{content_type}", {"run_id": self.run_id, "score": weighted_score})
+        print(f"[🔬 CRITIC] Persistito su motore condiviso 11-APEX-7-CORE (domain={self.shared_memory.domain}), critique_id={critique_id}")
+
         return weighted_score, metrics
 
     def execute_workflow(self, target_phase: int, interactive: bool = False):

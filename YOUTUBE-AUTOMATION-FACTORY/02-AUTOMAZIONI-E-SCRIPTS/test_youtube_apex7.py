@@ -46,12 +46,23 @@ class TestYouTubeApex7(unittest.TestCase):
         self.original_agents_templates_dir = agents.TEMPLATES_DIR
         agents.TEMPLATES_DIR = self.test_templates_dir
 
+        # Dominio isolato per il motore condiviso 11-APEX-7-CORE (ADR-010): evita di scrivere
+        # critique/checkpoint di test dentro data/youtube (dominio reale).
+        self.shared_domain = f"test-youtube-{self.run_id}"
+        self.shared_data_dir = os.path.join(
+            apex7_orchestrator.APEX7_CORE_DIR, "memory", "data", self.shared_domain
+        )
+
     def tearDown(self):
         # Ripristina i percorsi originali
         import apex7_orchestrator
         apex7_orchestrator.TEMPLATES_DIR = self.original_templates_dir
         import agents
         agents.TEMPLATES_DIR = self.original_agents_templates_dir
+
+        # Rimuove i dati di test scritti nel dominio isolato del motore condiviso
+        if os.path.exists(self.shared_data_dir):
+            shutil.rmtree(self.shared_data_dir)
 
         # Pulisce tutti i file temporanei con self.run_id nel nome
         for f in os.listdir(self.memory.base_dir):
@@ -255,7 +266,7 @@ class TestYouTubeApex7(unittest.TestCase):
 
     def test_apex7_orchestrator_e2e(self):
         from apex7_orchestrator import Apex7Orchestrator
-        orchestrator = Apex7Orchestrator(run_id=self.run_id)
+        orchestrator = Apex7Orchestrator(run_id=self.run_id, shared_domain=self.shared_domain)
         
         # Override paths for safety
         orchestrator.state_file = os.path.join(self.memory.base_dir, "runs", f"run_{self.run_id}.json")

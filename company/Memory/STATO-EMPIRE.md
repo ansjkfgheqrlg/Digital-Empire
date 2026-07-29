@@ -1,4 +1,29 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+
+## 🟣 2026-07-28 — GAEL: TASK-YT-001 CHIUSA — critic + agents.py sul motore condiviso 11-APEX-7-CORE — CP-20260728-007
+Primo dei 7 lotti YT (`TASK-GAEL-20260728-YOUTUBE-FACTORY.md`), dipendenza architetturale per
+TASK-YT-002..007. `Apex7Orchestrator` ora istanzia `APEX7Memory(domain="youtube")` +
+`RuFLOOrchestrator(domain="youtube")` (dominio parametrizzabile, isolato nei test). Il punteggio
+reale di `execute_critic` (logica invariata: lunghezza/sezioni/keyword density/CTA) non resta più
+locale — persiste su `log_critique()` del motore condiviso + un checkpoint `ruflo`. Caricamento
+dei moduli condivisi per percorso file (`importlib`, non `sys.path`+`import`) per evitare
+collisione di nome con i moduli locali `memory.py`/`agents.py`.
+
+Indagine su `RuFLOOrchestrator.execute_workflow()`: è async e a stage fissi, incompatibile con le
+6 fasi sincrone già reali (F1-F3) — non forzato, usato solo `create_checkpoint()`. `agents.py`
+(il `Conductor` mock nominato nel task) verificato: pipeline parallela con dati fissi ("Legami
+d'amore"), non chiama mai `execute_critic`, non collegata a F1-F6 reali, nessun gate di
+TASK-YT-002..007 la tocca — **non retrofittata**, documentata come candidata a ritiro insieme a
+TASK-YT-006 invece di forzare un collegamento senza gate a guidarlo.
+
+**Gate**: `test_youtube_apex7.py` 11/11 verde (critique_id reale nel log) +
+`11-APEX-7-CORE/test_multi_tenant.py` 4/4 verde (isolamento dominio confermato dopo un secondo
+dominio attivo). Vedi [CP-20260728-007](checkpoints/CP-20260728-007.md).
+
+**RIPRESA DA:** TASK-YT-002 (F4 Produzione — spec Fliki reale multi-scena da `script.md` di F3,
+oggi 1 scena hardcoded), come da ordine di marcia del task formale.
+
+---
 
 ## 🤖 2026-07-28 — GAEL: TASK-GAEL-20260728-STREAM-S7-BOT CHIUSA — CP-20260728-006
 Handoff di [CP-20260728-004](checkpoints/CP-20260728-004.md): 3 lotti sul dominio trading di

@@ -157,8 +157,8 @@
       "owner": "Gael",
       "giorno": "2026-07-28",
       "titolo": "YT-Factory: retrofit execute_critic + agents.py sul motore condiviso 11-APEX-7-CORE (ADR-010)",
-      "stato": "da_fare",
-      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-001. Gate: test_youtube_apex7.py 11/11 verde dopo il retrofit."
+      "stato": "fatto",
+      "note": "Apex7Orchestrator ora istanzia APEX7Memory(domain)/RuFLOOrchestrator(domain) (default 'youtube', parametrizzabile per i test). execute_critic mantiene la logica di scoring reale invariata ma persiste score/dimensioni/debolezze via shared_memory.log_critique() + un checkpoint ruflo.create_checkpoint() invece di restare locale al file YouTube. Caricamento moduli condivisi per file (importlib, non sys.path+import) per evitare collisione con i moduli locali memory.py/agents.py. agents.py (Conductor mock 'Legami d'amore', Plan 2) verificato: e' una pipeline parallela e non collegata alle 6 fasi reali F1-F6, non chiama execute_critic e non e' toccata dai gate TASK-YT-002..007 - lasciata invariata in questo lotto, candidata a decisione di ritiro insieme a TASK-YT-006. Gate: test_youtube_apex7.py 11/11 verde (confermato, incluso critique_id reale nel log) + test_multi_tenant.py 4/4 verde. Vedi CP-20260728-007."
     },
     {
       "id": "TASK-YT-002",
@@ -211,5 +211,5 @@
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-28 15:20"
+  "aggiornato": "2026-07-28 16:10"
 }
