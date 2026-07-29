@@ -520,12 +520,12 @@ class Apex7Orchestrator:
     def execute_workflow(self, target_phase: int, interactive: bool = False):
         self.render_diagram()
         print(f"[*] Avvio esecuzione APEX-7 per la run {self.run_id}")
-        
+
         current_phase = self.working_memory.get("current_phase", 1)
         if target_phase < current_phase:
             print(f"[!] Attenzione: Stai rieseguendo la fase {target_phase} (già completata fino alla {current_phase})")
             current_phase = target_phase
-            
+
         phases = {
             1: self.run_phase_1,
             2: self.run_phase_2,
@@ -534,21 +534,94 @@ class Apex7Orchestrator:
             5: self.run_phase_5,
             6: self.run_phase_6
         }
-        
+
+        # Esito reale per fase, persistito in working_memory: sopravvive a un --resume su più
+        # invocazioni, cosi' la dashboard riflette la storia vera della run, non solo l'ultima chiamata.
+        phase_results: dict[int, bool] = {int(k): v for k, v in self.working_memory.get("phase_results", {}).items()}
+
         for phase in range(current_phase, 7):
             if target_phase and phase > target_phase:
                 break
-            
+
             print(f"\n🚀 === FASE {phase} IN CORSO ===")
             success = phases[phase](interactive)
+            phase_results[phase] = success
+            self.working_memory["phase_results"] = {str(k): v for k, v in phase_results.items()}
             if not success:
                 print(f"🔴 Fallimento nella Fase {phase}. Stato salvato. Riprendi con --resume.")
+                self.save_state()
+                dashboard_path = self.write_dashboard(phase_results)
+                print(f"[+] Dashboard aggiornata (stato reale): {dashboard_path}")
                 sys.exit(1)
-                
+
             self.working_memory["current_phase"] = phase + 1
             self.save_state()
-            
+
         print(f"\n🎉 Workflow completato con successo per la run {self.run_id}!")
+        dashboard_path = self.write_dashboard(phase_results)
+        print(f"[+] Dashboard aggiornata (stato reale): {dashboard_path}")
+
+    _PHASE_INFO = {
+        1: ("Scouting", "Niche-gate reale (Cash Cow Index >= 60, cashcow_check.py)"),
+        2: ("Selezione", "Video maturo (>=24h) con velocity views/ora reale"),
+        3: ("Script", "Critic score reale >= 7.5 (motore condiviso 11-APEX-7-CORE)"),
+        4: ("Produzione", "Schema produzione-spec valido, scene reali da script.md"),
+        5: ("Pubblicazione", "SEO score reale (seo_score.py)"),
+        6: ("Audit", "Manifest published_videos.json (video reale pubblicato)"),
+    }
+
+    def write_dashboard(self, phase_results: dict[int, bool]) -> str:
+        """Scrive 06-DASHBOARD-E-METRICHE/YOUTUBE-PERFORMANCE-DASHBOARD.md leggendo lo stato
+        REALE di self.working_memory della run corrente. `phase_results` contiene solo le fasi
+        effettivamente eseguite: PASS/FAIL veri, non una tabella statica sempre verde. Le fasi
+        non raggiunte (mai eseguite in questa run) restano onestamente "non eseguita"."""
+        dashboard_dir = os.path.join(FACTORY_DIR, "06-DASHBOARD-E-METRICHE")
+        os.makedirs(dashboard_dir, exist_ok=True)
+        dashboard_path = os.path.join(dashboard_dir, "YOUTUBE-PERFORMANCE-DASHBOARD.md")
+
+        failed_phases = sorted(p for p, ok in phase_results.items() if not ok)
+        last_run_phase = max(phase_results) if phase_results else 0
+        if failed_phases:
+            stato_fabbrica = f"🔴 BLOCCATA ALLA FASE {failed_phases[0]}"
+        elif last_run_phase < 6:
+            stato_fabbrica = f"🟡 PARZIALE (fermata alla fase {last_run_phase}, --phase limitato)"
+        else:
+            stato_fabbrica = "🟢 OPERATIVA (6/6 fasi reali PASS)"
+
+        wm = self.working_memory
+        with open(dashboard_path, "w", encoding="utf-8") as f:
+            f.write("# YouTube Automation Factory - Performance Dashboard\n\n")
+            f.write(f"- **Ultimo Run ID**: {self.run_id}\n")
+            f.write(f"- **Data Aggiornamento**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            canale = wm.get("canale_scelto")
+            f.write(f"- **Canale Target**: {canale + ' (`' + wm['canale_scelto_handle'] + '`)' if canale else 'N/D (Fase 1 non raggiunta)'}\n")
+            f.write(f"- **Video Replicato**: {wm.get('video_scelto', 'N/D (Fase 2 non raggiunta)')}\n")
+            f.write(f"- **Idea Script (Fase 3)**: {wm.get('script_idea_title', 'N/D (Fase 3 non raggiunta)')}\n")
+            f.write(f"- **SEO Score Metadati (Fase 5)**: {wm.get('metadati_seo_score', 'N/D')}\n")
+            f.write(f"- **Stato Fabbrica**: {stato_fabbrica}\n\n")
+
+            f.write("## 📊 Metriche di Esecuzione (esito REALE di questa run)\n")
+            f.write("| Fase | Componente | Stato | Esito Gate | Criterio |\n")
+            f.write("|---|---|---|---|---|\n")
+            for n in range(1, 7):
+                nome, criterio = self._PHASE_INFO[n]
+                if n not in phase_results:
+                    stato, esito = "Non eseguita", "⚪ N/D"
+                elif phase_results[n]:
+                    stato, esito = "Completata", "🟢 PASS"
+                else:
+                    stato, esito = "Fallita", "🔴 FAIL"
+                f.write(f"| F{n} | {nome} | {stato} | {esito} | {criterio} |\n")
+            f.write("\n")
+
+            f.write("## 🧠 Note\n")
+            f.write("Dashboard scritta da `Apex7Orchestrator.write_dashboard()` a fine "
+                    "`execute_workflow`, leggendo lo stato reale della run corrente — non da una "
+                    "pipeline separata. `run_youtube_apex7.py` (pipeline fantasma su un canale "
+                    "'Dose Mentale' fisso, mai collegata alle fasi reali F1-F6) è stata ritirata "
+                    "in TASK-YT-005: era l'unica altra scrittrice di questo file.\n")
+
+        return dashboard_path
 
     # --- Fase 1: Scouting ---
     def load_real_niche_channels(self) -> list[dict]:

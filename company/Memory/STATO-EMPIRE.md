@@ -1,4 +1,35 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-004 chiusa — F6 audit onesto, niente metriche finte · TASK-YT-003 chiusa — F5 metadati reali · TASK-YT-002 chiusa — F4 spec Fliki reale multi-scena · TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-005 chiusa — dashboard stato reale, run_youtube_apex7.py ritirato — TUTTI I LOTTI P1 (TASK-YT-001..005) CHIUSI · TASK-YT-004 chiusa — F6 audit onesto, niente metriche finte · TASK-YT-003 chiusa — F5 metadati reali · TASK-YT-002 chiusa — F4 spec Fliki reale multi-scena · TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+
+## 🟣 2026-07-28 — GAEL: TASK-YT-005 CHIUSA — Dashboard stato reale + ritiro run_youtube_apex7.py — TUTTI I LOTTI P1 CHIUSI — CP-20260728-011
+Quinto e ultimo lotto P1 (dipende da TASK-YT-001..004). La dashboard
+(`06-DASHBOARD-E-METRICHE/YOUTUBE-PERFORMANCE-DASHBOARD.md`) era scritta solo da
+`run_youtube_apex7.py`, pipeline fantasma su un canale fisso "Dose Mentale" (Conductor mock di
+`agents.py`), sempre 🟢 PASS su tutte e 6 le fasi a prescindere. Nuovo
+`Apex7Orchestrator.write_dashboard()`, chiamato a fine `execute_workflow` (successo e
+fallimento): legge `working_memory` reale, scrive PASS/FAIL/N.D. veri per fase, con `phase_results`
+persistito per sopravvivere a un `--resume`. Fix collaterale: mancava `self.save_state()` sul
+ramo di fallimento (il messaggio diceva già "Stato salvato" ma non lo faceva).
+
+**Decisione presa**: `run_youtube_apex7.py` **ritirato** (`git rm`) — unica altra scrittrice
+della dashboard, nessun rischio residuo di sovrascrittura silenziosa con dati fasulli; nessun
+codice/test lo importava. `agents.py` (il Conductor mock) resta vivo, esercitato da
+`test_conductor_workflow_e2e`, non toccato — stesso destino da decidere in TASK-YT-006.
+Aggiornato anche `implementation_plan.md` (voci 4-8, ferme dal 2026-07-27).
+
+**Gate**: caso FAIL (canale fabbricato, cashcow index reale 15.0 via `cashcow_check.py`, nessuna
+soglia bypassata) → dashboard mostra F1 FAIL, F2-F6 "non eseguita", stato "BLOCCATA ALLA FASE 1";
+caso PASS (run reale F1→F6, canale/video/idea reali) → 6/6 PASS, stato "OPERATIVA".
+`test_youtube_apex7.py` 11/11 verde. Vedi [CP-20260728-011](checkpoints/CP-20260728-011.md).
+
+**Con questo si chiudono TUTTI i lotti P1** (TASK-YT-001..005) del task formale
+`TASK-GAEL-20260728-YOUTUBE-FACTORY.md`: la fabbrica YouTube (F1-F6 + critic + dashboard) non
+scrive più nessun dato hardcoded/fittizio nel percorso reale.
+
+**RIPRESA DA:** TASK-YT-006 (P2, cross-ecosistema — ritiro reimplementazione APEX-7 indipendente
+in `12-STREAM-S7-BOT`) o TASK-YT-007 (P2 — aggiornare `REGISTRO-IMPRESA.md` +
+`PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md`).
+
+---
 
 ## 🟣 2026-07-28 — GAEL: TASK-YT-004 CHIUSA — F6 Audit, gate onesto senza metriche finte — CP-20260728-010
 Quarto lotto YT (dipende da TASK-YT-001..003). `run_phase_6` scriveva sempre `views_per_hour:

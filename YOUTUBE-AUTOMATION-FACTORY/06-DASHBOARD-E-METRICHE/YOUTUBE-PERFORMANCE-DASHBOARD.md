@@ -1,21 +1,22 @@
 # YouTube Automation Factory - Performance Dashboard
 
-- **Ultimo Run ID**: yt-run-20260725-085030
-- **Data Aggiornamento**: 2026-07-25 08:50:30
-- **Canale Target**: Dose Mentale ([@dosementale](https://www.youtube.com/@dosementale))
-- **Stato Fabbrica**: 🟢 OPERATIVA / APEX-7 COMPLIANT
+- **Ultimo Run ID**: test-yt-1785308277
+- **Data Aggiornamento**: 2026-07-29 08:57:59
+- **Canale Target**: Andrea Ciraolo (`@ciraolone`)
+- **Video Replicato**: KIMI K3 ✨ VIBE CODING Tutorial with AI
+- **Idea Script (Fase 3)**: Come installare e configurare Claude Code in 5 minuti (Tutorial Completo)
+- **SEO Score Metadati (Fase 5)**: 92.5
+- **Stato Fabbrica**: 🟢 OPERATIVA (6/6 fasi reali PASS)
 
-## 📊 Metriche di Esecuzione
+## 📊 Metriche di Esecuzione (esito REALE di questa run)
 | Fase | Componente | Stato | Esito Gate | Criterio |
 |---|---|---|---|---|
-| F1 | Scouting | Completato | 🟢 PASS | Potenziale Nicchia |
-| F2 | Selezione | Completato | 🟢 PASS | views/ora > 25 |
-| F3 | Script | Completato | 🟢 PASS | HOOK/CORPO/CTA |
-| F4 | Produzione | Completato | 🟢 PASS | Fliki Spec Valid |
-| F5 | Pubblicazione | Completato | 🟢 PASS | SEO score >= 70 |
-| F6 | Audit | Completato | 🟢 PASS | Auto-Miglioramento |
+| F1 | Scouting | Completata | 🟢 PASS | Niche-gate reale (Cash Cow Index >= 60, cashcow_check.py) |
+| F2 | Selezione | Completata | 🟢 PASS | Video maturo (>=24h) con velocity views/ora reale |
+| F3 | Script | Completata | 🟢 PASS | Critic score reale >= 7.5 (motore condiviso 11-APEX-7-CORE) |
+| F4 | Produzione | Completata | 🟢 PASS | Schema produzione-spec valido, scene reali da script.md |
+| F5 | Pubblicazione | Completata | 🟢 PASS | SEO score reale (seo_score.py) |
+| F6 | Audit | Completata | 🟢 PASS | Manifest published_videos.json (video reale pubblicato) |
 
-## 🧠 Regole Apprese & Ottimizzazioni (Meta-Agent)
-- **Colli di Bottiglia Rilevati**: {}
-- **Strategie Ottimizzate**: 3 aggiornate in `strategy_store.json`
-- **Stato Regole**: 🛡️ Blacklist e soglie caricate dinamicamente in `learned_rules.json`.
+## 🧠 Note
+Dashboard scritta da `Apex7Orchestrator.write_dashboard()` a fine `execute_workflow`, leggendo lo stato reale della run corrente — non da una pipeline separata. `run_youtube_apex7.py` (pipeline fantasma su un canale 'Dose Mentale' fisso, mai collegata alle fasi reali F1-F6) è stata ritirata in TASK-YT-005: era l'unica altra scrittrice di questo file.

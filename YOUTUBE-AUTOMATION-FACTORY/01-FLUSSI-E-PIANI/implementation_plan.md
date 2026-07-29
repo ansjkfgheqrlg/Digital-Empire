@@ -80,11 +80,35 @@ prodotto un video reale né mai processato una nicchia reale. Stesso pattern ide
    `➕` (convenzione di `script-writer.md` §4.5). Verificato: idea #1 "Come installare e
    configurare Claude Code in 5 minuti" selezionata per il video reale "KIMI K3 Vibe Coding
    Tutorial" (overlap tematico + tie-break deterministico). 11/11 test invariati verdi.
-4. **F4 → produzione reale**: generare la spec Fliki dallo script reale di F3 (scene multiple, non 1 fissa).
-5. **F5 → metadati/SEO reali**: titolo/tag/keyword dal video reale scelto, non sempre "claude code".
-6. **F6 → performance reali**: il log di performance deve venire da un video REALMENTE pubblicato, non da metriche inventate — altrimenti il self-improver ottimizza su rumore.
-7. **`execute_critic` → punteggio reale**: derivare le 5 dimensioni da controlli veri sul contenuto (lunghezza, presenza HOOK/CTA, keyword density), non da un dict fisso.
-8. **Dashboard → stato reale**: riflettere l'esito vero di ogni gate della run corrente, non una tabella statica sempre verde.
+4. ✅ **F4 → produzione reale (FATTO 2026-07-28, TASK-YT-002)**: `run_phase_4` ora parsa
+   `script.md` reale di F3 (`_parse_script_scenes`, sezioni HOOK/INTRO/CORPO/CTA — "Note SEO
+   inline" esclusa, è metadato) in scene reali con durata da un ritmo di lettura reale, non 1
+   scena fissa. `video_id`/`title`/`hook_type` dall'idea reale scelta in F3. 11/11 test invariati verdi.
+5. ✅ **F5 → metadati/SEO reali (FATTO 2026-07-28, TASK-YT-003)**: `run_phase_5` costruisce
+   titolo/descrizione/tag reali da HOOK+INTRO+CTA di `script.md` + `learned_rules.json` +
+   cluster reale di F1 (nuovo `working_memory["canale_cluster"]`). `brief-miniatura.json`
+   deriva `concept`/`text_overlay` dall'HOOK reale. Gate SEO logga onestamente pass/fail reale.
+6. ✅ **F6 → performance reali (FATTO 2026-07-28, TASK-YT-004)**: nuovo manifest
+   `memory/published_videos.json` (video DAVVERO pubblicati). Senza voce per la run → nessuna
+   scrittura (non un errore); voce troppo recente (<24h) → nessuna scrittura; voce matura →
+   `views_per_hour` reale dal fetch pubblico di F2. `ctr`/`retention_rate` = `null` esplicito
+   (richiedono YouTube Studio, non fabbricati).
+7. ✅ **`execute_critic` → punteggio reale (FATTO 2026-07-28, TASK-YT-001)**: le 5 dimensioni
+   derivano da controlli veri sul contenuto (lunghezza, sezioni, keyword density, ordine
+   strutturale); il punteggio persiste sul motore condiviso `11-APEX-7-CORE`
+   (`APEX7Memory(domain="youtube").log_critique()`, ADR-010) invece di restare locale.
+8. ✅ **Dashboard → stato reale (FATTO 2026-07-28, TASK-YT-005)**: nuovo
+   `Apex7Orchestrator.write_dashboard()`, chiamato a fine `execute_workflow` (successo e
+   fallimento), legge `working_memory` della run corrente e scrive PASS/FAIL veri per fase (le
+   fasi non raggiunte restano "non eseguita", non un PASS di comodo). `run_youtube_apex7.py`
+   (pipeline fantasma su "Dose Mentale", unica altra scrittrice di questo file, mai collegata
+   alle fasi reali) **ritirata**.
+
+**Stato al 2026-07-28: tutte le 6 fasi + critic + dashboard usano dati reali.** Restano aperti,
+fuori dal perimetro di questi 5 lotti: `agents.py` (Conductor mock "Legami d'amore", Plan 2 —
+pipeline parallela non collegata a F1-F6, non chiama `execute_critic`) e la reimplementazione
+APEX-7 indipendente in `12-STREAM-S7-BOT` — entrambi candidati a ritiro/consolidamento in
+TASK-YT-006.
 
 ---
 

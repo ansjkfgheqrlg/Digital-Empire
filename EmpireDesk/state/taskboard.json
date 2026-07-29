@@ -189,8 +189,8 @@
       "owner": "Gael",
       "giorno": "2026-07-28",
       "titolo": "YT-Factory: Dashboard riflette l'esito reale (PASS/FAIL) della run corrente",
-      "stato": "da_fare",
-      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-005. Gate: run con niche-gate forzato a FAIL -> dashboard mostra FAIL, non sempre PASS."
+      "stato": "fatto",
+      "note": "Nuovo Apex7Orchestrator.write_dashboard(), chiamato a fine execute_workflow (successo e fallimento): legge working_memory reale, scrive PASS/FAIL/N.D. per fase (non piu' sempre PASS). phase_results persistito in working_memory per sopravvivere a --resume. Fix collaterale: save_state() mancante sul ramo di fallimento (il messaggio diceva gia' 'Stato salvato' ma non lo faceva). Decisione presa: run_youtube_apex7.py RITIRATO (git rm) - unica altra scrittrice della dashboard, pipeline fantasma su 'Dose Mentale' mai collegata alle fasi reali, nessun codice/test lo importava. Aggiornato anche implementation_plan.md (voci 4-8). Gate: caso FAIL (canale fabbricato, cashcow index reale 15.0) -> dashboard mostra F1 FAIL e F2-F6 'non eseguita', stato fabbrica 'BLOCCATA ALLA FASE 1'; caso PASS (run reale F1-F6) -> 6/6 PASS, stato 'OPERATIVA'. test_youtube_apex7.py 11/11 verde. Vedi CP-20260728-011."
     },
     {
       "id": "TASK-YT-006",
@@ -211,5 +211,5 @@
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-28 18:30"
+  "aggiornato": "2026-07-28 19:15"
 }
