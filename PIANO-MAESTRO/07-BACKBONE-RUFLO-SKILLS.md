@@ -10,9 +10,29 @@
 > **⚡ Aggiornamento 2026-07-28 ([ADR-010](../company/Memory/decisions/ADR-010-fusione-ruflo-apex7.md)):**
 > questo Backbone non si costruisce da zero — la sua Coordination Fabric è il motore già scritto
 > e testato in `company/Ecosistemi/11-APEX-7-CORE/` (SQLite memory multi-tenant, `BaseAgent`,
-> EventBus), promosso da ecosistema stand-alone a motore ufficiale del Backbone. Fase 1 pilota
-> (YouTube + Stream-S7-Bot) in corso, poi rollout su tutti i 13 ecosistemi. Dettaglio tecnico e
-> stato di avanzamento: [CP-20260728-001](../company/Memory/checkpoints/CP-20260728-001.md).
+> EventBus), promosso da ecosistema stand-alone a motore ufficiale del Backbone.
+>
+> **Fase 1 pilota (YouTube + Stream-S7-Bot) chiusa, esito misto — stato reale, non aspirazionale:**
+> - **YouTube (YOUTUBE-AUTOMATION-FACTORY): ✅ in uso reale.** `Apex7Orchestrator` istanzia
+>   `APEX7Memory(domain="youtube")` + `RuFLOOrchestrator(domain="youtube")`; il punteggio del
+>   critic (scoring reale su lunghezza/sezioni/keyword density, invariato) persiste tramite
+>   `log_critique()` sul motore condiviso invece di restare locale. Le 6 fasi della fabbrica
+>   (scouting→audit) scrivono tutte dati reali, nessun hardcoded residuo, dashboard con
+>   PASS/FAIL veri per run. Lotti `TASK-YT-001..005`, chiusi 2026-07-28
+>   ([CP-20260728-007](../company/Memory/checkpoints/CP-20260728-007.md) →
+>   [CP-20260728-011](../company/Memory/checkpoints/CP-20260728-011.md)).
+> - **Stream-S7-Bot: ❌ NON migrato, decisione motivata.** Indagine (`TASK-YT-006`,
+>   [CP-20260728-012](../company/Memory/checkpoints/CP-20260728-012.md)): quell'ecosistema ha
+>   già un'implementazione APEX-7 Level 2 propria e più matura del motore condiviso su alcuni
+>   assi (6 gate a rubrica/33 criteri, Event Bus con DLQ+replay, memory con lock/checkpoint/
+>   restore, gate `L6→L7` self-giudicante). Spostarlo su `11-APEX-7-CORE` sarebbe un downgrade
+>   funzionale su un sistema che esegue trade reali su Solana mainnet — non eseguito. Il motore
+>   condiviso resta quindi a **1 ecosistema pilota reale su 2**, non 2/2 come pianificato:
+>   prima di un rollout sui restanti 11 ecosistemi, valutare se portare le funzionalità
+>   mancanti (rubrica/DLQ/replay/checkpoint) dentro `11-APEX-7-CORE` — raccomandazione aperta
+>   per Max, non decisa qui.
+>
+> Dettaglio tecnico completo: [CP-20260728-001](../company/Memory/checkpoints/CP-20260728-001.md).
 
 **Regola madre (ereditata da CF, ADR-005):** Ruflo COORDINA (stato, memoria, swarm, consensus),
 Claude Code ESEGUE (file, codice, contenuti). Ogni componente del Backbone ha un percorso MCP

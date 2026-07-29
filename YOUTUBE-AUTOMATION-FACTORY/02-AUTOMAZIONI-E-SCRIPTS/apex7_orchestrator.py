@@ -320,6 +320,10 @@ class Apex7Orchestrator:
         self.shared_memory = APEX7Memory(domain=shared_domain)
         self.ruflo = RuFLOOrchestrator(memory_system=self.shared_memory, domain=shared_domain)
 
+        # Overridabile dai test (come state_file/decision_log_path ecc.) per non sovrascrivere
+        # la dashboard reale tracciata a ogni run di test_youtube_apex7.py.
+        self.dashboard_path = os.path.join(FACTORY_DIR, "06-DASHBOARD-E-METRICHE", "YOUTUBE-PERFORMANCE-DASHBOARD.md")
+
         self.initialize_memory_files()
         
     def initialize_memory_files(self):
@@ -575,9 +579,8 @@ class Apex7Orchestrator:
         REALE di self.working_memory della run corrente. `phase_results` contiene solo le fasi
         effettivamente eseguite: PASS/FAIL veri, non una tabella statica sempre verde. Le fasi
         non raggiunte (mai eseguite in questa run) restano onestamente "non eseguita"."""
-        dashboard_dir = os.path.join(FACTORY_DIR, "06-DASHBOARD-E-METRICHE")
-        os.makedirs(dashboard_dir, exist_ok=True)
-        dashboard_path = os.path.join(dashboard_dir, "YOUTUBE-PERFORMANCE-DASHBOARD.md")
+        dashboard_path = self.dashboard_path
+        os.makedirs(os.path.dirname(dashboard_path), exist_ok=True)
 
         failed_phases = sorted(p for p, ok in phase_results.items() if not ok)
         last_run_phase = max(phase_results) if phase_results else 0

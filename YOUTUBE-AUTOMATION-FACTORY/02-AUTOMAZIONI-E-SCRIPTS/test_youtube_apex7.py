@@ -275,7 +275,8 @@ class TestYouTubeApex7(unittest.TestCase):
         orchestrator.snapshots_path = os.path.join(self.memory.base_dir, f"snapshots_{self.run_id}.json")
         orchestrator.learned_rules_path = os.path.join(self.memory.base_dir, f"learned_rules_{self.run_id}.json")
         orchestrator.perf_logs_path = os.path.join(self.memory.base_dir, f"performance_logs_{self.run_id}.json")
-        
+        orchestrator.dashboard_path = os.path.join(self.test_templates_dir, "YOUTUBE-PERFORMANCE-DASHBOARD.md")
+
         # Initialize memory files
         orchestrator.initialize_memory_files()
         

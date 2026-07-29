@@ -205,11 +205,11 @@
       "owner": "Gael",
       "giorno": "2026-07-28",
       "titolo": "YT-Factory: aggiornare REGISTRO-IMPRESA.md + PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md",
-      "stato": "da_fare",
-      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-007. P2, a valle del retrofit."
+      "stato": "fatto",
+      "note": "Entrambi i file aggiornati allo stato reale (non aspirazionale): 07-BACKBONE-RUFLO-SKILLS.md sostituisce 'Fase 1 pilota in corso' con l'esito reale e misto (YouTube in uso reale, Stream-S7-Bot NON migrato con motivazione). REGISTRO-IMPRESA.md: riga STREAM-S7-BOT aggiornata (rimossa dicitura obsoleta 'in migrazione'), riga 11-APEX-7-CORE aggiornata con stato vero, NUOVA riga YOUTUBE-AUTOMATION-FACTORY aggiunta in PRODOTTI & RUNTIME VIVI (non esisteva ancora nonostante fosse un runtime reale). Trovato e corretto un bug reale durante la chiusura: test_apex7_orchestrator_e2e sovrascriveva silenziosamente la dashboard reale tracciata ad ogni run di test (write_dashboard() non aveva un path overridabile come state_file/decision_log_path). Fix: nuovo self.dashboard_path overridabile su Apex7Orchestrator, test isolato su test_templates_dir. test_youtube_apex7.py 11/11 verde, git status pulito sulla dashboard dopo i test. CON QUESTO SI CHIUDE L'INTERO TASK FORMALE TASK-GAEL-20260728-YOUTUBE-FACTORY.md (TASK-YT-001..007). Vedi CP-20260728-013."
     }
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-28 19:45"
+  "aggiornato": "2026-07-28 20:15"
 }

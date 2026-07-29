@@ -1,4 +1,30 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-006 chiusa — NON migrato, motivazione scritta (Stream-S7-Bot piu' maturo di 11-APEX-7-CORE) · TASK-YT-005 chiusa — dashboard stato reale, run_youtube_apex7.py ritirato — TUTTI I LOTTI P1 (TASK-YT-001..005) CHIUSI · TASK-YT-004 chiusa — F6 audit onesto, niente metriche finte · TASK-YT-003 chiusa — F5 metadati reali · TASK-YT-002 chiusa — F4 spec Fliki reale multi-scena · TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-007 chiusa — docs allineate, TASK FORMALE YOUTUBE COMPLETO (TASK-YT-001..007) · TASK-YT-006 chiusa — NON migrato, motivazione scritta (Stream-S7-Bot piu' maturo di 11-APEX-7-CORE) · TASK-YT-005 chiusa — dashboard stato reale, run_youtube_apex7.py ritirato — TUTTI I LOTTI P1 (TASK-YT-001..005) CHIUSI · TASK-YT-004 chiusa — F6 audit onesto, niente metriche finte · TASK-YT-003 chiusa — F5 metadati reali · TASK-YT-002 chiusa — F4 spec Fliki reale multi-scena · TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+
+## ✅ 2026-07-28 — GAEL: TASK-YT-007 CHIUSA — docs allineate — TASK FORMALE YOUTUBE COMPLETO — CP-20260728-013
+Settimo e ultimo lotto. Aggiornati `PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md` (blocco ADR-010:
+"Fase 1 pilota in corso" → esito reale e misto, YouTube ✅ in uso reale / Stream-S7-Bot ❌ NON
+migrato con motivazione, link ai checkpoint) e `company/REGISTRO-IMPRESA.md` (righe
+STREAM-S7-BOT e 11-APEX-7-CORE aggiornate allo stato vero + **nuova riga
+YOUTUBE-AUTOMATION-FACTORY** in "Prodotti & Runtime Vivi", che non esisteva ancora).
+
+**Bug trovato e corretto in corsa**: `test_apex7_orchestrator_e2e` sovrascriveva silenziosamente
+la dashboard reale tracciata ad ogni run di test (`write_dashboard()`, TASK-YT-005, non aveva un
+path overridabile come gli altri file di stato) — stesso tipo di problema che l'intero task ha
+passato 5 lotti a eliminare. Fix: `self.dashboard_path` overridabile su `Apex7Orchestrator`, test
+isolato. `test_youtube_apex7.py` 11/11 verde, `git status` pulito sulla dashboard dopo i test.
+Vedi [CP-20260728-013](checkpoints/CP-20260728-013.md).
+
+**🏁 Con questo si chiude l'intero task formale `TASK-GAEL-20260728-YOUTUBE-FACTORY.md`
+(TASK-YT-001..007).** La fabbrica YouTube (6 fasi + critic + dashboard) non scrive più nessun
+dato hardcoded/fittizio nel percorso reale.
+
+**RIPRESA DA:** nessun lavoro tecnico residuo sul task YouTube. Prossimo passo operativo (Max):
+(a) decidere se investire su `11-APEX-7-CORE` per assorbire le funzionalità di Stream-S7-Bot
+prima del rollout sui restanti 11 ecosistemi; (b) eventualmente produrre un primo video reale
+con la fabbrica per popolare `memory/published_videos.json` e chiudere il loop di audit F6 con
+dati veri.
+
+---
 
 ## 🟡 2026-07-28 — GAEL: TASK-YT-006 CHIUSA — NON migrato, motivazione scritta (clausola gate) — CP-20260728-012
 Sesto lotto (P2, cross-ecosistema): migrare `event_bus`/`memory_interface`/`quality_gates`/
