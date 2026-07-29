@@ -1,3 +1,16 @@
+## 🎛️ 2026-07-29 — CENTRO DI COMANDO empire-wide + correzione modello Playwright — CP-20260729-001
+`empire controllo` = plancia su TUTTI i workflow (YT/IG/LinkedIn/Outreach/S7/incasso), verdetto
+PARTE/SERVE-MAX per ognuno. **Errore mio corretto da Max:** avevo classificato le porte con OAuth/API
+— l'azienda fa TUTTO con **Playwright** (browser reale loggato: `EmpireDesk/chrome-profile` 260M,
+`instagram_session.json`, `linkedin_session.json`). Gate riscritto: "sessione loggata + fresca?",
+non OAuth. **Nessun OAuth manca.** Restano atti fisici piccoli di Max: 2 re-login social (1 min l'uno,
+sessioni IG 54gg/LinkedIn 71gg), 1 video da renderizzare (.mp4), 2 Payment Link Stripe (incasso).
+PARTONO senza atto di Max: Outreach email (Gmail) + S7 (paper). **Non lancio invii/pubblicazioni a
+persone reali senza 'via' esplicito + dry-run** (irreversibile). Comandi: `empire controllo` ·
+`empire avvia-estate`.
+
+---
+
 # STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
 
 ## 🟣 2026-07-28 — GAEL: TASK-YT-001 CHIUSA — critic + agents.py sul motore condiviso 11-APEX-7-CORE — CP-20260728-007
