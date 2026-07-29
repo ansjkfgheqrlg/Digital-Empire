@@ -1,4 +1,23 @@
-# STATO EMPIRE -- aggiornato 2026-07-29 (Gael: produzione contenuto reale YouTube — competitor+script+copertina fatti, video Fliki in attesa di API key — CP-20260729-001)
+# STATO EMPIRE -- aggiornato 2026-07-29 (Gael: PRIMO VIDEO REALE generato dalla fabbrica YouTube end-to-end — competitor+script+copertina+video Fliki tutti reali — CP-20260729-001)
+
+## ✅ 2026-07-29 — GAEL: PRIMO VIDEO REALE dalla fabbrica YouTube (F1→F6 + copertina + Fliki, tutto reale) — CP-20260729-001
+Gael ha fornito la `FLIKI_API_KEY` reale (salvata in `.env`, gitignored). Corretti 2 bug in
+`fliki_client.py` (parsing scene via istanza, non funzione; language/dialect `_id` reali al
+posto degli slug) ed eseguito con successo: video scaricato in
+`06-DASHBOARD-E-METRICHE/video-generati/claude-code-installazione.mp4` (~28.7 MB, `.mp4`
+gitignored). Nota aperta: voce generata femminile ("Fiamma") invece di maschile per un bug di
+case-sensitivity nel filtro genere (corretto per le prossime run, non rigenerato questo video).
+
+**Per la prima volta la fabbrica ha prodotto un video reale end-to-end**: competitor scelto su
+dati reali (Andrea Ciraolo, indice 78.4) → script migliorato → copertina reale (Arena.ai via
+Playwright) → video reale (Fliki API). Dettaglio tecnico completo (inclusi tutti i bug e le
+correzioni della sessione) in [CP-20260729-001](checkpoints/CP-20260729-001.md).
+
+**RIPRESA DA:** decidere con Gael se rigenerare il video con voce maschile o tenere "Fiamma";
+poi popolare `memory/published_videos.json` quando il video verrà davvero caricato su YouTube,
+per chiudere il loop di audit reale di F6 (TASK-YT-004).
+
+---
 
 ## 🟠 2026-07-29 — GAEL: run reale fabbrica YouTube — copertina fatta (Arena.ai/Playwright), video Fliki in attesa di API key — CP-20260729-001
 Su richiesta diretta di Gael: scelto un video competitor su dati reali (Andrea Ciraolo, indice

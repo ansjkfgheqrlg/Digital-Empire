@@ -56,12 +56,34 @@ def _request(method: str, path: str, key: str, body: dict | None = None) -> dict
         raise SystemExit(f"[!] Errore API reale {method} {path}: HTTP {e.code} — {detail}")
 
 
-def find_italian_voice(key: str, prefer_gender: str = "male") -> str:
-    voices = _request("GET", "/voices?languageId=it&dialectId=it-IT", key)
-    items = voices.get("data", voices) if isinstance(voices, dict) else voices
+def _items(res) -> list:
+    items = res.get("data", res) if isinstance(res, dict) else res
     if isinstance(items, dict):
-        items = items.get("voices", [])
-    candidates = [v for v in items if v.get("gender") == prefer_gender] or items
+        # alcuni endpoint annidano la lista sotto una chiave (es. {"languages": [...]})
+        for v in items.values():
+            if isinstance(v, list):
+                return v
+        return []
+    return items
+
+
+def find_italian_voice(key: str, prefer_gender: str = "male") -> str:
+    # "it"/"it-IT" sono slug, non i veri _id richiesti dall'API: vanno risolti prima.
+    languages = _items(_request("GET", "/languages", key))
+    lang = next((l for l in languages if l.get("slug") == "it" or l.get("name") == "Italian"), None)
+    if not lang:
+        raise SystemExit(f"[!] Lingua italiana non trovata in /languages (risposta reale: {languages[:5]}...)")
+
+    dialects = _items(_request("GET", "/dialects", key))
+    dialect = next((d for d in dialects if str(d.get("slug", "")).startswith("it")), None)
+    if not dialect:
+        raise SystemExit(f"[!] Dialetto italiano non trovato in /dialects (risposta reale: {dialects[:5]}...)")
+
+    print(f"[+] Lingua reale: {lang.get('name')} ({lang['_id']}) — Dialetto reale: {dialect.get('name')} ({dialect['_id']})")
+    voices = _items(_request("GET", f"/voices?languageId={lang['_id']}&dialectId={dialect['_id']}", key))
+    # L'API reale ritorna "MALE"/"FEMALE" in maiuscolo (verificato: un confronto case-sensitive
+    # con "male" non trovava mai nulla e faceva sempre fallback sulla prima voce qualsiasi).
+    candidates = [v for v in voices if str(v.get("gender", "")).lower() == prefer_gender.lower()] or voices
     if not candidates:
         raise SystemExit("[!] Nessuna voce italiana trovata dall'API reale.")
     chosen = candidates[0]
@@ -79,7 +101,8 @@ def build_script_content() -> str:
     script_path = os.path.join(TEMPLATES_DIR, "script.md")
     with open(script_path, "r", encoding="utf-8") as f:
         script_text = f.read()
-    scenes = mod._parse_script_scenes(script_text)
+    orch = mod.Apex7Orchestrator(run_id="fliki-client")
+    scenes = orch._parse_script_scenes(script_text)
     if not scenes:
         raise SystemExit("[!] Nessuna scena reale trovata in script.md.")
     return "\n\n".join(s["text"].split("➕")[0].strip() for s in scenes)
