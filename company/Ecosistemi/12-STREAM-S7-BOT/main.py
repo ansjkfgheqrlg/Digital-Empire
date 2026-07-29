@@ -7,6 +7,7 @@ from data_manager import SolanaDataManager
 from analysis_engine import AnalysisEngine
 from execution_engine import ExecutionEngine
 from risk_manager import RiskManager
+from position_monitor import PositionMonitor
 from event_bus import global_bus
 
 # Configurazione Logging
@@ -27,14 +28,17 @@ async def main():
     base_bankroll = float(os.getenv("BASE_BANKROLL_SOL", 10.0))
     max_position = float(os.getenv("MAX_POSITION_PCT", 5.0))
     
-    # Inizializzazione dei 4 Layer. Da qui in poi si parlano solo via Event Bus:
+    # Inizializzazione dei 5 Layer. Da qui in poi si parlano solo via Event Bus:
     # data.raw_event_received -> AnalysisEngine -> analysis.signal_detected
-    # -> RiskManager -> risk.trade_approved -> ExecutionEngine. Un solo percorso,
-    # nessuna chiamata diretta che possa bypassare il controllo del rischio.
+    # -> RiskManager -> risk.trade_approved -> ExecutionEngine -> trade.executed
+    # -> RiskManager (apre open_positions) + PositionMonitor (apre e sorveglia
+    # TP/SL, pubblica position.closed) -> RiskManager libera lo slot.
+    # Un solo percorso, nessuna chiamata diretta che possa bypassare il rischio.
     data_manager = SolanaDataManager(wss_url=wss_url)
     analysis_engine = AnalysisEngine()
     risk_manager = RiskManager(base_bankroll=base_bankroll, max_position_pct=max_position)
     execution_engine = ExecutionEngine(mode=trade_mode)
+    position_monitor = PositionMonitor()
 
     async def on_new_event(event_data):
         global_bus.publish("data.raw_event_received", event_data)

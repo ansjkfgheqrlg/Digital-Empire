@@ -1,6 +1,7 @@
 import csv
 import logging
 import os
+import time
 from typing import Optional, Dict, Any
 
 from event_bus import global_bus
@@ -38,6 +39,38 @@ class RiskManager:
 
         global_bus.subscribe("analysis.signal_detected", self.handle_signal,
                              subscriber_id=f"{agent_id}.signal")
+        global_bus.subscribe("trade.executed", self._on_trade_executed,
+                             subscriber_id=f"{agent_id}.position_opened")
+        global_bus.subscribe("position.closed", self._on_position_closed,
+                             subscriber_id=f"{agent_id}.position_closed")
+
+    # ------------------------------------------------------------------ #
+    # Tracciamento posizioni — G-B: open_positions era dichiarato ma mai
+    # scritto, quindi il limite "max 3 aperte" non scattava mai. Ora si
+    # popola sul trade eseguito e si libera sulla chiusura (position.closed,
+    # pubblicato dal Position Monitor), sempre via bus, mai per chiamata diretta.
+    # ------------------------------------------------------------------ #
+
+    def _on_trade_executed(self, event_msg: dict):
+        payload = event_msg.get("payload", {})
+        signal = payload.get("signal", {})
+        token = signal.get("token_address")
+        if not token:
+            return
+        self.open_positions[token] = {
+            "token": token,
+            "entry_cost_sol": payload.get("cost", 0.0),
+            "opened_at": time.time(),
+        }
+        logger.info(f"[RISK] Posizione tracciata: {token} "
+                    f"(entry {payload.get('cost', 0.0)} SOL) — aperte: {len(self.open_positions)}")
+
+    def _on_position_closed(self, event_msg: dict):
+        payload = event_msg.get("payload", {})
+        token = payload.get("token_address")
+        if token in self.open_positions:
+            del self.open_positions[token]
+            logger.info(f"[RISK] Posizione chiusa: {token} — aperte: {len(self.open_positions)}")
 
     # ------------------------------------------------------------------ #
     # Ingresso dal bus

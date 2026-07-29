@@ -45,6 +45,7 @@ EVENT_CATALOG: Dict[str, Dict[str, str]] = {
     "trade.failed":             {"priority": P0, "delivery": AT_LEAST_ONCE, "publisher": "Execution Engine"},
     "risk.trade_approved":      {"priority": P1, "delivery": EXACTLY_ONCE,  "publisher": "Risk Manager"},
     "risk.trade_rejected":      {"priority": P2, "delivery": AT_LEAST_ONCE, "publisher": "Risk Manager"},
+    "position.closed":          {"priority": P1, "delivery": AT_LEAST_ONCE, "publisher": "Position Monitor"},
 }
 
 # Retry policy per priorità: secondi tra i tentativi, tentativi massimi, azione finale
