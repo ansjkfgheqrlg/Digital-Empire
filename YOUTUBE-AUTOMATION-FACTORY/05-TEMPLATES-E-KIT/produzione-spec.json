@@ -1,15 +1,34 @@
 {
-  "video_id": "claude-code-001",
-  "title": "Installare Claude Code locale",
+  "video_id": "come-installare-e-configurare-claude-code-in-5-minuti-tutori",
+  "title": "Come installare e configurare Claude Code in 5 minuti (Tutorial Completo)",
   "voice": "Fabio (Italiano)",
   "music": "Soft ambient",
-  "hook_type": "Question",
-  "scene_count": 5,
+  "hook_type": "Statement",
+  "scene_count": 4,
   "scenes": [
     {
       "number": 1,
-      "text": "Vuoi installare l'agente IA pi\u00f9 veloce?",
-      "duration": 5.0
+      "section": "HOOK",
+      "text": "Installare Claude Code sembra difficile perché si fa dal terminale, ma oggi ti mostro come farlo in 5 minuti reali senza rompere le configurazioni del tuo computer. Cronometro alla mano, iniziamo.\n➕ Adattamento: aggancia esplicitamente chi cerca contenuti simili a \"KIMI K3 ✨ VIBE CODING Tutorial with AI\" (query dove il video originale ha una SEO debole sulla nostra keyword 'claude code').",
+      "duration": 23.6
+    },
+    {
+      "number": 2,
+      "section": "INTRO",
+      "text": "Rimuovere l'ostacolo iniziale dell'installazione da terminale. ➕ Prometti da subito il risultato pratico che vedrai nel corpo del video.",
+      "duration": 7.2
+    },
+    {
+      "number": 3,
+      "section": "CORPO",
+      "text": "- 0:00-1:30 Hook + intro del problema\n- 1:30-10:00 Dimostrazione pratica reale (screencast Claude Code), correggendo esplicitamente: seo debole (score reale 17.5/25 sul titolo, keyword 'claude')\n- 10:00-15:00 Transizione morbida verso il Manuale (non \"compra ora\", ma \"questo è l'1% di quello che puoi fare\")",
+      "duration": 14.8
+    },
+    {
+      "number": 4,
+      "section": "CTA",
+      "text": "Ora che hai installato lo strumento, ti accorgerai che usarlo senza comandi ottimizzati ti fa sprecare API credits. Nel capitolo 2 del nostro Manuale trovi i 15 comandi salvatempo pronti all'uso. Link in descrizione.",
+      "duration": 12.8
     }
   ]
 }

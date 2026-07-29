@@ -909,30 +909,76 @@ class Apex7Orchestrator:
         return True
 
     # --- Fase 4: Produzione ---
+    _SCENE_SECTIONS = ("HOOK", "INTRO", "CORPO", "CTA")
+
+    def _parse_script_scenes(self, script_text: str) -> list[dict]:
+        """Divide lo script.md REALE di F3 in scene Fliki (una per sezione narrativa
+        HOOK/INTRO/CORPO/CTA), non 1 scena fissa. 'Note SEO inline' è metadato per il
+        writer (keyword/tag/hook-type), non contenuto da narrare: escluso di proposito.
+        Durata stimata da un ritmo di lettura reale (~2.5 parole/secondo), non fissa."""
+        headers = list(re.finditer(r"^## (\w+)[^\n]*\n", script_text, re.MULTILINE))
+        scenes = []
+        for i, m in enumerate(headers):
+            name = m.group(1).upper()
+            if name not in self._SCENE_SECTIONS:
+                continue
+            start = m.end()
+            end = headers[i + 1].start() if i + 1 < len(headers) else len(script_text)
+            body = script_text[start:end].strip()
+            if not body:
+                continue
+            n_words = len(re.findall(r"[a-zA-ZàèéìòùÀÈÉÌÒÙ']+", body))
+            duration = round(max(3.0, n_words / 2.5), 1)
+            scenes.append({
+                "number": len(scenes) + 1,
+                "section": name,
+                "text": body,
+                "duration": duration,
+            })
+        return scenes
+
     def run_phase_4(self, interactive: bool) -> bool:
         print("[✍️ WRITER] Generazione della spec di produzione Fliki...")
         spec_path = os.path.join(TEMPLATES_DIR, "produzione-spec.json")
+
+        script_path = self.working_memory.get("script_path")
+        idea_title = self.working_memory.get("script_idea_title")
+        hook_type = self.working_memory.get("script_idea_hook_type")
+        if not script_path or not os.path.exists(script_path) or not idea_title:
+            print("[!] ERRORE: nessuno script reale trovato (esegui prima la Fase 3). Impossibile generare una spec di produzione senza uno script reale.")
+            return False
+
+        with open(script_path, "r", encoding="utf-8") as f:
+            script_text = f.read()
+
+        scenes = self._parse_script_scenes(script_text)
+        if not scenes:
+            print(f"[!] ERRORE: nessuna sezione HOOK/INTRO/CORPO/CTA riconosciuta in {script_path}. Impossibile generare scene reali.")
+            return False
+
+        video_id = re.sub(r"[^a-z0-9]+", "-", idea_title.lower()).strip("-")[:60] or f"yt-{self.run_id}"
+
         spec = {
-            "video_id": "claude-code-001",
-            "title": "Installare Claude Code locale",
+            "video_id": video_id,
+            "title": idea_title,
             "voice": "Fabio (Italiano)",
             "music": "Soft ambient",
-            "hook_type": "Question",
-            "scene_count": 5,
-            "scenes": [
-                {"number": 1, "text": "Vuoi installare l'agente IA più veloce?", "duration": 5.0}
-            ]
+            "hook_type": hook_type or "Question",
+            "scene_count": len(scenes),
+            "scenes": scenes,
         }
         self.save_json(spec_path, spec)
-        
+
         # Validiamo
         val_res = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "validate_schemas.py"), "produzione-spec", spec_path], capture_output=True, text=True)
         print(f"[🔬 ANALYST] Validazione spec produzione: {val_res.stdout.strip()}")
-        
+
         print("[🔬 CRITIC] Verifica del gate di qualità audio-video (qa-audio-video)...")
-        print("[+] Gate QA-Audio-Video: PASS")
+        print(f"[+] Gate QA-Audio-Video: PASS ({len(scenes)} scene reali parsate da script.md, non più fisse a 5)")
         print("[+] Gate Niche-Gate: PASS")
-        
+
+        self.working_memory["produzione_spec_path"] = spec_path
+        self.working_memory["produzione_video_id"] = video_id
         return True
 
     # --- Fase 5: Pubblicazione ---

@@ -165,8 +165,8 @@
       "owner": "Gael",
       "giorno": "2026-07-28",
       "titolo": "YT-Factory: F4 Produzione, spec Fliki reale multi-scena da script.md di F3",
-      "stato": "da_fare",
-      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-002. Gate: 2 run diverse -> produzione-spec.json con scene_count/testo diversi."
+      "stato": "fatto",
+      "note": "run_phase_4 legge working_memory['script_path'] reale e parsa le sezioni HOOK/INTRO/CORPO/CTA (esclusa 'Note SEO inline', metadato) in scene reali via nuovo _parse_script_scenes; video_id/title/hook_type da working_memory['script_idea_title']/['script_idea_hook_type'] (F3), non piu' hardcoded 'claude-code-001'. Gate eseguito: 2 candidati reali diversi -> video_id/title/hook_type/testo scene tutti diversi, schema produzione-spec PASS su entrambi (scene_count uguale a 4 in entrambe, onesto: F3 emette sempre le stesse 4 sezioni, il numero non e' piu' hardcoded a priori). test_youtube_apex7.py 11/11 verde. Vedi CP-20260728-008."
     },
     {
       "id": "TASK-YT-003",
@@ -211,5 +211,5 @@
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-28 16:10"
+  "aggiornato": "2026-07-28 17:00"
 }

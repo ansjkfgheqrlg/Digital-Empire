@@ -1,4 +1,24 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-002 chiusa — F4 spec Fliki reale multi-scena · TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+
+## 🟣 2026-07-28 — GAEL: TASK-YT-002 CHIUSA — F4 Produzione, spec Fliki reale multi-scena da script.md — CP-20260728-008
+Secondo lotto YT (dipende da TASK-YT-001). `run_phase_4` scriveva sempre `scene_count: 5` con 1
+sola scena hardcoded, indipendente dallo script reale. Nuovo `_parse_script_scenes()`: divide il
+`script.md` reale di F3 nelle sue sezioni narrative (`## HOOK/INTRO/CORPO/CTA`, esclude `## Note
+SEO inline` che è metadato) in scene reali con durata stimata da un ritmo di lettura reale (non
+fissa). `video_id`/`title`/`hook_type` presi dall'idea reale scelta in F3
+(`working_memory["script_idea_title"/"script_idea_hook_type"]`), non più
+`"claude-code-001"`/`"Installare Claude Code locale"` fissi.
+
+**Gate**: 2 candidati reali diversi (F3+F4) → `video_id`/`title`/`hook_type`/testo scene tutti
+diversi tra le run, schema `produzione-spec` PASS su entrambe (`scene_count` uguale a 4 in
+entrambe: onesto, F3 emette sempre le stesse 4 sezioni per costruzione — il valore non è più
+hardcoded a priori, cambierebbe se una sezione mancasse). `test_youtube_apex7.py` 11/11 verde.
+Vedi [CP-20260728-008](checkpoints/CP-20260728-008.md).
+
+**RIPRESA DA:** TASK-YT-003 (F5 Pubblicazione — titolo/descrizione/tag reali, oggi sempre gli
+stessi metadati statici).
+
+---
 
 ## 🟣 2026-07-28 — GAEL: TASK-YT-001 CHIUSA — critic + agents.py sul motore condiviso 11-APEX-7-CORE — CP-20260728-007
 Primo dei 7 lotti YT (`TASK-GAEL-20260728-YOUTUBE-FACTORY.md`), dipendenza architetturale per
