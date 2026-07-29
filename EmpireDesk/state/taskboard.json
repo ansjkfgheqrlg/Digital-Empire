@@ -197,8 +197,8 @@
       "owner": "Gael",
       "giorno": "2026-07-28",
       "titolo": "YT-Factory (cross-eco): ritiro reimplementazione APEX-7 indipendente in 12-STREAM-S7-BOT",
-      "stato": "da_fare",
-      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-006. P2, non bloccante, fare dopo TASK-YT-001..005. Gate: test_apex7.py di Stream-S7-Bot resta 9/9 verde."
+      "stato": "fatto",
+      "note": "NON migrato - motivazione scritta (clausola esplicita del gate: 'o motivazione scritta se decidi di non farlo in questo giro'). Indagine (STATO-RIPRESA.md/APEX-7.md + python test_apex7.py baseline verde): non e' un mock hardcoded da ritirare come agents.py di YouTube, e' un'implementazione APEX-7 Level 2 matura (6 gate a rubrica/33 criteri, Event Bus con DLQ+replay, memory con lock/checkpoint/restore, gate L6->L7 self-giudicante) piu' avanzata di 11-APEX-7-CORE su questi assi. Migrarla sarebbe un downgrade funzionale, non un miglioramento, su un sistema di trading reale (Solana mainnet) appena chiuso da Gael lo stesso giorno (TASK-GAEL-20260728-STREAM-S7-BOT.md). Nessun file toccato in 12-STREAM-S7-BOT. Raccomandazione per Max nel checkpoint: eventualmente portare le funzionalita' mancanti di Stream-S7-Bot DENTRO 11-APEX-7-CORE, non il contrario - decisione architetturale sua, non presa qui. Vedi CP-20260728-012."
     },
     {
       "id": "TASK-YT-007",
@@ -211,5 +211,5 @@
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-28 19:15"
+  "aggiornato": "2026-07-28 19:45"
 }

@@ -1,4 +1,31 @@
-# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-005 chiusa — dashboard stato reale, run_youtube_apex7.py ritirato — TUTTI I LOTTI P1 (TASK-YT-001..005) CHIUSI · TASK-YT-004 chiusa — F6 audit onesto, niente metriche finte · TASK-YT-003 chiusa — F5 metadati reali · TASK-YT-002 chiusa — F4 spec Fliki reale multi-scena · TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-006 chiusa — NON migrato, motivazione scritta (Stream-S7-Bot piu' maturo di 11-APEX-7-CORE) · TASK-YT-005 chiusa — dashboard stato reale, run_youtube_apex7.py ritirato — TUTTI I LOTTI P1 (TASK-YT-001..005) CHIUSI · TASK-YT-004 chiusa — F6 audit onesto, niente metriche finte · TASK-YT-003 chiusa — F5 metadati reali · TASK-YT-002 chiusa — F4 spec Fliki reale multi-scena · TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
+
+## 🟡 2026-07-28 — GAEL: TASK-YT-006 CHIUSA — NON migrato, motivazione scritta (clausola gate) — CP-20260728-012
+Sesto lotto (P2, cross-ecosistema): migrare `event_bus`/`memory_interface`/`quality_gates`/
+`gate_agent`/`meta_agent`/`orchestrator` di `12-STREAM-S7-BOT` verso `11-APEX-7-CORE`. Il gate
+stesso prevedeva l'alternativa: *"o motivazione scritta se decidi di non farlo in questo giro."*
+
+**Indagine** (`STATO-RIPRESA.md`, `APEX-7.md`, `python test_apex7.py` baseline — tutto verde,
+`PASSED score 1.0`): Stream-S7-Bot **non è un mock hardcoded** come `agents.py` di YouTube —
+è un'implementazione APEX-7 **Level 2 matura** (costruita da Claude in sessioni precedenti) con
+6 gate a rubrica/33 criteri, Event Bus con priorità+DLQ+replay, memory con lock/checkpoint/
+restore, gate `L6→L7` self-giudicante, e un `ruflo_adapter.py` con pattern di disaccoppiamento
+già più corretto di quanto offra oggi `11-APEX-7-CORE`. Migrarla significherebbe **perdere**
+funzionalità reali per pura uniformità — un downgrade, non un miglioramento — su un sistema che
+esegue trade reali su Solana mainnet, verificato e chiuso da Gael **lo stesso giorno**
+([CP-20260728-006](checkpoints/CP-20260728-006.md)). `test_apex7.py` dimostra che i componenti
+"generici" e il dominio trading sono verificati **insieme**, non separabili senza rischio.
+
+**Decisione**: non migrato. Nessun file toccato in `12-STREAM-S7-BOT`. Raccomandazione scritta
+nel checkpoint per Max: se la fusione empire-wide resta obiettivo, la direzione più sensata è
+opposta — portare le funzionalità mancanti di Stream-S7-Bot DENTRO `11-APEX-7-CORE` (alzare il
+motore condiviso al livello del migliore dei quattro), non il contrario. Decisione architetturale
+di Max, non presa qui. Vedi [CP-20260728-012](checkpoints/CP-20260728-012.md).
+
+**RIPRESA DA:** TASK-YT-007 (ultimo lotto — aggiornare `REGISTRO-IMPRESA.md` +
+`PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md` allo stato reale).
+
+---
 
 ## 🟣 2026-07-28 — GAEL: TASK-YT-005 CHIUSA — Dashboard stato reale + ritiro run_youtube_apex7.py — TUTTI I LOTTI P1 CHIUSI — CP-20260728-011
 Quinto e ultimo lotto P1 (dipende da TASK-YT-001..004). La dashboard
