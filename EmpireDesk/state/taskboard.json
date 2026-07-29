@@ -181,8 +181,8 @@
       "owner": "Gael",
       "giorno": "2026-07-28",
       "titolo": "YT-Factory: F6 Audit, gate onesto -- niente views_per_hour finti senza video reale pubblicato",
-      "stato": "da_fare",
-      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-004. Gate: manifest memory/published_videos.json, performance_logs.json invariato se manifest assente."
+      "stato": "fatto",
+      "note": "FATTO da Claude 2026-07-29. run_phase_6 non appende piu views_per_hour 35.5 finto. Audit onesto su manifest memory/published_videos.json: senza voce reale per la run -> nessuna scrittura (self-improver non impara su dati inventati); voce troppo recente (<24h) -> nessuna scrittura; voce reale abbastanza vecchia -> views_per_hour CALCOLATO da fetch pubblico reale (_fetch_video_views), ctr/retention null (richiedono YouTube Studio, non si inventano). Gate VERDE: caso A (no manifest) e caso B (troppo recente) -> 0 righe aggiunte; test_youtube_apex7 11/11. Ramo fetch-reale documentato (serve un video davvero pubblicato). Vedi CP-20260729-005."
     },
     {
       "id": "TASK-YT-005",
@@ -211,5 +211,5 @@
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-29 (TASK-YT-003 fatto)"
+  "aggiornato": "2026-07-29 (TASK-YT-004 fatto)"
 }

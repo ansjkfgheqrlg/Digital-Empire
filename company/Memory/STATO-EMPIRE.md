@@ -1,3 +1,14 @@
+## YT-FACTORY 2026-07-29 — TASK-YT-004 CHIUSA (F6 audit onesto) — CP-20260729-005
+Terzo lotto YT della sessione. `run_phase_6` non appende piu views_per_hour 35.5 FINTO (il
+self-improver imparava su rumore inventato). Ora audit su manifest published_videos.json: nessuna
+voce reale -> nessuna scrittura; voce <24h -> nessuna scrittura; voce reale vecchia -> views_per_hour
+CALCOLATO da fetch pubblico reale (ctr/retention null, servono YouTube Studio). Gate VERDE: caso A
+(no manifest) e B (troppo recente) -> 0 righe aggiunte; test 11/11. **Fabbrica YouTube: F1-F6 ora
+oneste/reali.** Resta P1 TASK-YT-005 (dashboard PASS/FAIL reale), poi P2 006/007.
+**RIPRESA DA:** TASK-YT-005 (write_dashboard reale, gate forza un FAIL).
+
+---
+
 ## YT-FACTORY 2026-07-29 — TASK-YT-003 CHIUSA (F5 metadati/tag reali) — CP-20260729-004
 Secondo lotto costruito dall'Estate nella stessa sessione. `run_phase_5` non piu hardcoded: titolo
 da working_memory reale, descrizione+brief dalle sezioni REALI dello script (_sezioni_script), tag da
