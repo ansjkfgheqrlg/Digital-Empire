@@ -11,7 +11,7 @@
       "stato_ripresa": null,
       "task_prefissi": ["TASK-YT-"],
       "owner": "Gael",
-      "prossimo_passo": "TASK-YT-002 (F4 Produzione): spec Fliki reale multi-scena da script.md di F3. Gate: 2 run diverse -> produzione-spec.json con scene_count/testo diversi.",
+      "prossimo_passo": "TASK-YT-005 (Dashboard): write_dashboard() riflette PASS/FAIL reale della run corrente (oggi la dashboard e scritta da run_youtube_apex7.py, percorso fantasma, sempre PASS). F1-F6 gia reali (F4/F5/F6 chiuse 2026-07-29). Poi P2: TASK-YT-006 (ritiro APEX-7 duplicato) e TASK-YT-007 (docs).",
       "blocco": null
     },
     {

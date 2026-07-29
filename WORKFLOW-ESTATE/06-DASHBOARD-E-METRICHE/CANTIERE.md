@@ -9,10 +9,10 @@ prossimo passo di costruzione, chi lo possiede, se e' bloccato, se il codice esi
 
 - **Ruolo:** Genera video YouTube in automatico (pipeline APEX-7 a 6 fasi F1-F6).
 - **Owner:** Gael
-- **Avanzamento:** task board: 1/7 fatti
+- **Avanzamento:** task board: 4/7 fatti
 - **Entrypoint:** `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS` — presente
-- **Prossimo task board:** TASK-YT-002 — YT-Factory: F4 Produzione, spec Fliki reale multi-scena da script.md di F3 (owner Gael)
-- **Prossimo passo:** TASK-YT-002 (F4 Produzione): spec Fliki reale multi-scena da script.md di F3. Gate: 2 run diverse -> produzione-spec.json con scene_count/testo diversi.
+- **Prossimo task board:** TASK-YT-005 — YT-Factory: Dashboard riflette l'esito reale (PASS/FAIL) della run corrente (owner Gael)
+- **Prossimo passo:** TASK-YT-005 (Dashboard): write_dashboard() riflette PASS/FAIL reale della run corrente (oggi la dashboard e scritta da run_youtube_apex7.py, percorso fantasma, sempre PASS). F1-F6 gia reali (F4/F5/F6 chiuse 2026-07-29). Poi P2: TASK-YT-006 (ritiro APEX-7 duplicato) e TASK-YT-007 (docs).
 
 ## 12-STREAM-S7-BOT  (`stream-s7`)
 
