@@ -1,0 +1,10 @@
+[
+  {"id": "happy-01", "category": "happy", "prompt": "Lead senza risposta dopo 3 giorni dal tentativo 1.", "expected_behavior": "Genera handoff per tentativo 2 con angolo diverso e storico completo", "assertions": []},
+  {"id": "happy-02", "category": "happy", "prompt": "Risposta ricevuta per un lead in stage in_attesa.", "expected_behavior": "mark_responded immediato, nessun ulteriore follow-up", "assertions": []},
+  {"id": "happy-03", "category": "happy", "prompt": "Lead al tentativo 3 (breakup) senza risposta dopo 7 giorni.", "expected_behavior": "mark_archived, nessun tentativo 4", "assertions": []},
+  {"id": "edge-01", "category": "edge", "prompt": "Risposta arriva mentre un draft del tentativo successivo è già in validazione presso rule-keeper.", "expected_behavior": "mark_responded immediato, comunica di scartare il draft pendente", "assertions": []},
+  {"id": "edge-02", "category": "edge", "prompt": "Controllo periodico su un lead con solo 1 giorno passato dal tentativo 1.", "expected_behavior": "Non genera alcun handoff, il minimo (2-3gg) non è ancora passato", "assertions": []},
+  {"id": "failure-01", "category": "failure", "prompt": "Lead con ultimo_invio mancante/corrotto.", "expected_behavior": "ESCALATION, non decide alla cieca", "assertions": [{"type": "contains", "value": "ESCALATION"}]},
+  {"id": "constraint-01", "category": "constraint", "prompt": "Richiesta di generare un tentativo 4 per un lead già archiviato (simulazione di pressione esterna).", "expected_behavior": "Rifiuta, la sequenza è fissa a 3 tentativi massimo", "assertions": []},
+  {"id": "constraint-02", "category": "constraint", "prompt": "Richiesta di accorciare i tempi minimi per smaltire una coda grande di lead.", "expected_behavior": "Rifiuta, i tempi minimi non sono negoziabili per volume", "assertions": []}
+]

@@ -2348,9 +2348,11 @@
       "maps_url": "https://www.google.com/maps/place/L'Automobile/@45.093848,3.0466962,7z/data=!4m10!1m2!2m1!1sconcessionario+auto+import+a+Torino!3m6!1s0x47886db6d4c53871:0x6de52c1771d80f06!8m2!3d45.1173731!4d7.656305!15sCiNjb25jZXNzaW9uYXJpbyBhdXRvIGltcG9ydCBhIFRvcmlub1olIiNjb25jZXNzaW9uYXJpbyBhdXRvIGltcG9ydCBhIHRvcmlub5IBCmNhcl9kZWFsZXKaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTnNNRzlIVWtwbkVBReABAPoBBQiYAxA_!16s%2Fg%2F11h8jltrj0?entry=ttu&g_ep=EgoyMDI2MDcyNy4wIKXMDSoASAFQAw%3D%3D",
       "data_estrazione": "2026-07-30",
       "telefono_tipo": "mobile",
-      "stage": "NEW",
+      "stage": "CONTACTED",
       "note": "",
-      "aggiunto_il": "2026-07-30 09:27"
+      "aggiunto_il": "2026-07-30 09:27",
+      "canale_contatto": "whatsapp",
+      "contattato_il": "2026-07-30 10:17"
     },
     {
       "nome_attivita": "2000 Motors - Specialisti di auto americane - Officina, Concessionaria, vendita ricambi",
@@ -2388,9 +2390,11 @@
       "maps_url": "https://www.google.com/maps/place/Autoarancio+di+Car+4+World+Srl/@45.0769046,3.0223738,7z/data=!4m10!1m2!2m1!1sconcessionario+auto+import+a+Torino!3m6!1s0x47886d0e117ad3e9:0x444cdfd92bb4fb0d!8m2!3d45.0524091!4d7.6350179!15sCiNjb25jZXNzaW9uYXJpbyBhdXRvIGltcG9ydCBhIFRvcmlub1olIiNjb25jZXNzaW9uYXJpbyBhdXRvIGltcG9ydCBhIHRvcmlub5IBC2F1dG9fYnJva2VymgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ4Q2RFeFZWa2xQVm1SVlYwaEtiV0Z1UmpKT1ZHZzJVV3hrTTFaSVl4QULgAQD6AQQIABBH!16s%2Fg%2F11swtgfmp5?entry=ttu&g_ep=EgoyMDI2MDcyNy4wIKXMDSoASAFQAw%3D%3D",
       "data_estrazione": "2026-07-30",
       "telefono_tipo": "mobile",
-      "stage": "NEW",
+      "stage": "CONTACTED",
       "note": "",
-      "aggiunto_il": "2026-07-30 09:27"
+      "aggiunto_il": "2026-07-30 09:27",
+      "canale_contatto": "whatsapp",
+      "contattato_il": "2026-07-30 10:18"
     },
     {
       "nome_attivita": "Vandin Auto vendita e assistenza",
@@ -4573,5 +4577,5 @@
       "aggiunto_il": "2026-07-30 09:58"
     }
   ],
-  "aggiornato": "2026-07-30 10:10"
+  "aggiornato": "2026-07-30 10:18"
 }

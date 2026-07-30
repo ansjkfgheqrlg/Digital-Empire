@@ -106,6 +106,22 @@ async def invia_async(phone: str, message: str, dry_run: bool = False) -> dict:
             if "Numero di telefono non valido" in body_text or "Phone number shared via url is invalid" in body_text:
                 return {"esito": "numero_non_valido", "dettaglio": ""}
 
+            if "non è su whatsapp" in body_text.lower() or "is not on whatsapp" in body_text.lower():
+                # Popup legittimo di WhatsApp, non un errore tecnico: quel numero non ha
+                # un account WhatsApp. Chiudi il popup (altrimenti resta a schermo) e riporta.
+                try:
+                    ok_btn = await page.query_selector('button:has-text("OK")')
+                    if ok_btn:
+                        await ok_btn.click()
+                except Exception:
+                    pass
+                return {"esito": "numero_non_su_whatsapp", "dettaglio": ""}
+
+            # "Inizio chat in corso" e' un overlay di caricamento transitorio, non un blocco:
+            # dagli qualche secondo in piu' prima di considerare la chat non caricata.
+            if "inizio chat in corso" in body_text.lower() or "starting chat" in body_text.lower():
+                await asyncio.sleep(6)
+
             # Alcuni flussi mostrano un bottone "Continua in chat" prima di aprire la conversazione
             for sel in ['a:has-text("Continua in chat")', 'a:has-text("Continue to Chat")',
                         'button:has-text("Continua")', 'button:has-text("Continue")']:

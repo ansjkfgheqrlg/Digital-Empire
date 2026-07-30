@@ -1,0 +1,87 @@
+{
+  "clusters": [
+    {
+      "id": "cluster-A",
+      "label": "Il Paradigma: perché il Cold Outreach batte il Content",
+      "atom_ids": ["atom-content-fallacy", "atom-stats-proof"]
+    },
+    {
+      "id": "cluster-B",
+      "label": "Le due leve psicologiche di personalizzazione",
+      "atom_ids": ["atom-ai-slop-problem", "atom-barnum-effect", "atom-rainbow-effect"]
+    },
+    {
+      "id": "cluster-C",
+      "label": "I 5 Pilastri del Cold DM ad alta conversione",
+      "atom_ids": [
+        "atom-pillar-1-personalizzazione",
+        "atom-pillar-2-chiarezza-3sec",
+        "atom-pillar-3-valore-anticipato",
+        "atom-pillar-4-microcommitment",
+        "atom-pillar-5-basso-attrito"
+      ]
+    },
+    {
+      "id": "cluster-D",
+      "label": "Tecnica operativa: variabile hard-coded di nicchia",
+      "atom_ids": ["atom-niche-variable-hardcoded-technique"]
+    },
+    {
+      "id": "cluster-E",
+      "label": "Casi studio comparativi (cattivo vs corretto)",
+      "atom_ids": [
+        "atom-case-shakil",
+        "atom-case-operation-executive",
+        "atom-case-video-editor-bad",
+        "atom-case-video-editor-good"
+      ]
+    },
+    {
+      "id": "cluster-F",
+      "label": "Sequenza di follow-up (dove sono i soldi)",
+      "atom_ids": ["atom-followup-3-step-rates"]
+    }
+  ],
+  "edges": [
+    {"from": "atom-ai-slop-problem", "to": "atom-barnum-effect", "type": "motivates"},
+    {"from": "atom-ai-slop-problem", "to": "atom-rainbow-effect", "type": "motivates"},
+    {"from": "atom-barnum-effect", "to": "atom-pillar-1-personalizzazione", "type": "implements"},
+    {"from": "atom-rainbow-effect", "to": "atom-pillar-1-personalizzazione", "type": "implements"},
+    {"from": "atom-niche-variable-hardcoded-technique", "to": "atom-pillar-1-personalizzazione", "type": "implements"},
+    {"from": "atom-content-fallacy", "to": "atom-stats-proof", "type": "evidenced_by"},
+    {"from": "atom-case-shakil", "to": "atom-pillar-1-personalizzazione", "type": "violates"},
+    {"from": "atom-case-shakil", "to": "atom-pillar-2-chiarezza-3sec", "type": "violates"},
+    {"from": "atom-case-shakil", "to": "atom-pillar-3-valore-anticipato", "type": "violates"},
+    {"from": "atom-case-shakil", "to": "atom-pillar-5-basso-attrito", "type": "violates"},
+    {"from": "atom-case-operation-executive", "to": "atom-followup-3-step-rates", "type": "violates"},
+    {"from": "atom-case-video-editor-bad", "to": "atom-pillar-3-valore-anticipato", "type": "violates"},
+    {"from": "atom-case-video-editor-good", "to": "atom-pillar-1-personalizzazione", "type": "satisfies"},
+    {"from": "atom-case-video-editor-good", "to": "atom-pillar-3-valore-anticipato", "type": "satisfies"},
+    {"from": "atom-case-video-editor-good", "to": "atom-pillar-4-microcommitment", "type": "satisfies"},
+    {"from": "atom-case-video-editor-good", "to": "atom-pillar-5-basso-attrito", "type": "satisfies"},
+    {"from": "atom-case-video-editor-good", "to": "atom-niche-variable-hardcoded-technique", "type": "uses"},
+    {"from": "atom-pillar-3-valore-anticipato", "to": "atom-followup-3-step-rates", "type": "precedes"}
+  ],
+  "atoms": [
+    {"id": "atom-content-fallacy", "title": "La Content Fallacy", "cluster": "cluster-A"},
+    {"id": "atom-stats-proof", "title": "Le prove numeriche del creator", "cluster": "cluster-A"},
+    {"id": "atom-ai-slop-problem", "title": "AI slop: il filtro spam del cervello", "cluster": "cluster-B"},
+    {"id": "atom-barnum-effect", "title": "Effetto Barnum (Forer)", "cluster": "cluster-B"},
+    {"id": "atom-rainbow-effect", "title": "Inganno Arcobaleno (Rainbow Effect)", "cluster": "cluster-B"},
+    {"id": "atom-pillar-1-personalizzazione", "title": "Pilastro 1 — Personalizzazione reale", "cluster": "cluster-C"},
+    {"id": "atom-pillar-2-chiarezza-3sec", "title": "Pilastro 2 — Chiarezza d'intenti (regola dei 3 secondi)", "cluster": "cluster-C"},
+    {"id": "atom-pillar-3-valore-anticipato", "title": "Pilastro 3 — Valore anticipato & Artificial Case Study", "cluster": "cluster-C"},
+    {"id": "atom-pillar-4-microcommitment", "title": "Pilastro 4 — Micro-commitment", "cluster": "cluster-C"},
+    {"id": "atom-pillar-5-basso-attrito", "title": "Pilastro 5 — Basso attrito", "cluster": "cluster-C"},
+    {"id": "atom-niche-variable-hardcoded-technique", "title": "Variabile hard-coded di nicchia", "cluster": "cluster-D"},
+    {"id": "atom-case-shakil", "title": "Caso Shakil (Full Stack Developer) — fallimento totale", "cluster": "cluster-E"},
+    {"id": "atom-case-operation-executive", "title": "Caso Operation Executive — buon inizio, manca follow-up", "cluster": "cluster-E"},
+    {"id": "atom-case-video-editor-bad", "title": "Caso Video Editor v1 — chiede prima di dare", "cluster": "cluster-E"},
+    {"id": "atom-case-video-editor-good", "title": "Caso Video Editor v2 — il messaggio riscritto secondo i 5 pilastri", "cluster": "cluster-E"},
+    {"id": "atom-followup-3-step-rates", "title": "Tassi di risposta sequenza 3-step (20%/40%/30%)", "cluster": "cluster-F"}
+  ],
+  "gaps": [
+    "Il sorgente non specifica canali diversi da LinkedIn/DM generico in modo esplicito (email e WhatsApp sono richiesti da Max come estensione, non nel sorgente originale) — segnalato, applicato per analogia nel MKD, marcato ➕.",
+    "Il sorgente non da' una soglia numerica precisa per 'quando fermare' i follow-up oltre il 3° messaggio — assunto ragionevole (3 step, poi archivia) preso dal caso Shakil/email3 nel materiale gia' fornito."
+  ]
+}

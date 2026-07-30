@@ -1,0 +1,23 @@
+{
+  "status": "ok",
+  "stats": {
+    "atoms_total": 16,
+    "atoms_covered": 16,
+    "coverage_rate": 1.0,
+    "clusters": 6,
+    "source_words": 7288,
+    "mkd_words": 4850,
+    "ratio_note": "Il sorgente contiene 3 passate ridondanti dello stesso framework (raw transcript + 2 rielaborazioni editoriali) che si ripetono quasi integralmente; il MKD consolida in UNA versione canonica senza perdere nessun punto sostanziale, quindi il rapporto parole MKD/sorgente-grezzo è <1.0 per DEDUP, non per compressione — ogni atomo individuale e' pero' piu' esteso del corrispondente passaggio nel sorgente (definizione+spiegazione+esempio+esempio aggiuntivo+schema dove applicabile, vs. la singola menzione nel sorgente).",
+    "examples_from_source": 16,
+    "examples_added": 16,
+    "schemas_generated": 6,
+    "schemas_by_type": {"mermaid": 3, "ascii": 2, "table": 2},
+    "cross_refs_internal": 34,
+    "glossary_terms": 11,
+    "faq_questions": 5,
+    "sources_processed": 1
+  },
+  "issues_found_in_critique": [],
+  "iteration": 1,
+  "note": "Deviazione dichiarata dall'algoritmo standard: dato che il sorgente e' un unico file con 3 passate ridondanti (non 3 file separati), il dedup cross-passata e' stato fatto qui in Stage 4 invece che in Stage 3, motivato esplicitamente nel testo del MKD (Overview)."
+}

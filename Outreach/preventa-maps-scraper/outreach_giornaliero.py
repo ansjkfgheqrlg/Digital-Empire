@@ -146,7 +146,12 @@ def carica_lead_da_contattare(daily_cap: int) -> list[dict]:
     if saltati_fisso:
         log.info(f"Lead NEW con telefono fisso (non WhatsApp-abili, restano per chiamata manuale): {saltati_fisso}")
 
-    return eligibili[:rimanenti]
+    # Pool più grande del cap: non tutti gli "eligibili" risultano inviabili davvero (numero
+    # non su WhatsApp, chat non caricata...). Senza margine, un fallimento riduce silenziosamente
+    # il totale mandato sotto il minimo richiesto. Il loop di invio si ferma comunque appena
+    # raggiunge `rimanenti` invii REALI, non consuma il pool intero.
+    pool = eligibili[: max(rimanenti * 4, rimanenti)]
+    return pool, rimanenti
 
 
 def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
@@ -155,15 +160,23 @@ def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
     personalizza = _load_module(CAMPAIGN_DIR / "personalizza_messaggi.py", "personalizza_messaggi_gg")
     send_message = _load_module(WHATSAPP_DIR / "send_message.py", "send_message_gg")
 
-    lead_da_contattare = carica_lead_da_contattare(daily_cap)
+    lead_da_contattare, rimanenti_oggi = carica_lead_da_contattare(daily_cap)
     log.info(f"Lead eligibili trovati (NEW + mobile + [import: ogni priorita' / altri: ALTA/MEDIA]): {len(lead_da_contattare)}")
 
     inviati = 0
     falliti = 0
+    scartati_legittimi = 0  # numero non valido / non su WhatsApp: non e' un errore tecnico
     fallimenti_consecutivi = 0
     esiti_dettaglio = []
+    # target = quanti invii REALI mancano oggi per arrivare al cap, non il cap intero
+    # (altrimenti un rilancio nello stesso giorno ignora quanto gia' mandato e sfonda il cap).
+    target = rimanenti_oggi if not dry_run else len(lead_da_contattare)
 
     for i, lead in enumerate(lead_da_contattare):
+        if inviati >= target:
+            log.info(f"Cap raggiunto ({inviati}/{daily_cap} invii reali) — fermo qui.")
+            break
+
         nome = lead.get("nome_attivita", "?")
         telefono = lead.get("telefono", "")
         log.info(f"[{i+1}/{len(lead_da_contattare)}] {nome} ({telefono})")
@@ -186,6 +199,12 @@ def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
         elif esito["esito"] == "dry_run_ok":
             log.info("  OK dry-run (non inviato davvero)")
             fallimenti_consecutivi = 0
+        elif esito["esito"] in ("numero_non_valido", "numero_non_su_whatsapp"):
+            # Scarto legittimo sul dato, non un problema tecnico: non conta per il
+            # circuit-breaker (non e' segno che qualcosa nello script si e' rotto).
+            scartati_legittimi += 1
+            fallimenti_consecutivi = 0
+            log.info(f"  Scartato ({esito['esito']}): {nome} — non contattabile su WhatsApp")
         else:
             falliti += 1
             fallimenti_consecutivi += 1
@@ -199,7 +218,13 @@ def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
             log.info(f"  Pausa {pausa:.0f}s prima del prossimo invio...")
             time.sleep(pausa)
 
-    return {"inviati": inviati, "falliti": falliti, "eligibili": len(lead_da_contattare), "dettaglio": esiti_dettaglio}
+    return {
+        "inviati": inviati,
+        "falliti": falliti,
+        "scartati_legittimi": scartati_legittimi,
+        "eligibili": len(lead_da_contattare),
+        "dettaglio": esiti_dettaglio,
+    }
 
 
 def scrivi_report(risultato_scraping: dict | None, risultato_invio: dict | None):
@@ -210,7 +235,7 @@ def scrivi_report(risultato_scraping: dict | None, risultato_invio: dict | None)
         if risultato_scraping is not None:
             f.write(f"SCRAPING: exit_code={risultato_scraping.get('exit_code')}\n")
         if risultato_invio is not None:
-            f.write(f"INVIO: eligibili={risultato_invio['eligibili']} inviati={risultato_invio['inviati']} falliti={risultato_invio['falliti']}\n")
+            f.write(f"INVIO: eligibili={risultato_invio['eligibili']} inviati={risultato_invio['inviati']} falliti={risultato_invio['falliti']} scartati_legittimi={risultato_invio.get('scartati_legittimi',0)}\n")
             for d in risultato_invio["dettaglio"]:
                 f.write(f"  - {d['nome']} ({d['telefono']}): {d['esito']} {d.get('dettaglio','')}\n")
     log.info(f"Report scritto: {path}")
@@ -258,7 +283,8 @@ def main():
     log.info("RIEPILOGO GIORNATA")
     if risultato_invio:
         log.info(f"  Messaggi WhatsApp inviati: {risultato_invio['inviati']}/{daily_cap}")
-        log.info(f"  Falliti: {risultato_invio['falliti']}")
+        log.info(f"  Falliti (tecnici): {risultato_invio['falliti']}")
+        log.info(f"  Scartati (numero non su WhatsApp/non valido): {risultato_invio.get('scartati_legittimi',0)}")
     log.info("=" * 70)
 
 

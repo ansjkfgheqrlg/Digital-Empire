@@ -1,0 +1,23 @@
+{
+  "run_id": "forge-run-2026-07-30T-outreach-bible",
+  "started_at": "2026-07-30T10:30:00",
+  "input": {
+    "path": "Outreach/knowledge/raw_linkedin-cold-outreach-framework_2026-07-30.md",
+    "is_folder": false,
+    "files_count": 1,
+    "total_words": 7288,
+    "type": "transcript+rielaborazioni",
+    "input_mode": "single-file"
+  },
+  "target": "team",
+  "user_answers": {
+    "team_purpose": "Team di agenti per scrivere/valutare messaggi di cold outreach (LinkedIn DM, WhatsApp, email) applicando SEMPRE il framework come regole vincolanti non derogabili",
+    "constraint": "Il framework nel sorgente e' la Bibbia dei messaggi: non derogabile"
+  },
+  "current_stage": "stage-01",
+  "completed_stages": [],
+  "spawned_agents": [],
+  "iteration": 0,
+  "blocked_on": null,
+  "errors": []
+}

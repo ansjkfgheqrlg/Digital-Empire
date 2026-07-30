@@ -1,0 +1,22 @@
+{
+  "total_sources": 1,
+  "total_words": 7288,
+  "total_words_after_cleaning": 6900,
+  "input_mode": "single",
+  "input_root": "Outreach/knowledge/raw_linkedin-cold-outreach-framework_2026-07-30.md",
+  "sources": [
+    {
+      "id": "src-001",
+      "path": "Outreach/knowledge/raw_linkedin-cold-outreach-framework_2026-07-30.md",
+      "relative_path": "raw_linkedin-cold-outreach-framework_2026-07-30.md",
+      "size_bytes": 46000,
+      "word_count_original": 7288,
+      "word_count_cleaned": 6900,
+      "language_detected": "it",
+      "type_detected": "mixed (youtube_transcript_raw + 2x rielaborazione_editoriale)",
+      "range_in_cleaned": [0, 6900],
+      "note": "Sorgente unico ma con 3 passate ridondanti sullo stesso framework (trascrizione grezza + 2 rielaborazioni di Max). Trattate come 3 sub-fonti logiche (sub-001a raw, sub-001b rielaborazione-1, sub-001c rielaborazione-2) per il dedup cross-passata in Stage 3, con tracciabilita' preservata nel KG."
+    }
+  ],
+  "skipped_files": []
+}
