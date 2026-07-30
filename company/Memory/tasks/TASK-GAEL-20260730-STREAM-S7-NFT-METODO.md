@@ -10,7 +10,7 @@ Riferimenti: LOGICA-COMPLETA-S7.md · report-studio.md (verdetto attuale: BOCCIA
 ---
 
 > **STATO: ✅ CHIUSO 2026-07-30.** Tutti i lotti eseguiti (Fase 0 + Ondata 1-4 + Fase 2),
-> **78/78 controlli reali superati**, zero file frozen toccati, zero capitale vero.
+> **89/89 controlli reali superati**, zero file frozen toccati, zero capitale vero.
 > **Verdetto: INVARIATO — bocciato per live**, coerente con `report-studio.md` (Controllo
 > Chirurgico #2: solo 1 dei 3 problemi strutturali migliora, e solo parzialmente).
 > Checkpoint: [CP-20260730-002](../checkpoints/CP-20260730-002.md) →
@@ -229,17 +229,17 @@ sul resto del task.
       → `STUDIO-NFT-FASE0.md`, ogni criterio con comando/risposta reale (API Magic Eden, RPC
       Solana, CoinGecko). Criterio 7 (stop) scritto PRIMA di costruire.
 - [x] Ondata 1: 10 blocchi costruiti, ognuno con un test/numero reale
-      → `python test_nft_s7.py` **25/25 OK**. `nft_magiceden_client.py`, `nft_analysis_engine.py`,
+      → `python test_nft_s7.py` **39/39 OK**. `nft_magiceden_client.py`, `nft_analysis_engine.py`,
       `nft_monte_carlo.py`. Expectancy MC su degods 20.31%, IC95% [-2.00%, 34.70%].
 - [x] Ondata 2: 8 miglioramenti applicati, ognuno con prima/dopo misurato
-      → `python test_nft_ondata2.py` **21/21 OK**. Es. z 1.5→1.35; fit banda bassa mad_lads
+      → `python test_nft_ondata2.py` **26/26 OK**. Es. z 1.5→1.35; fit banda bassa mad_lads
       R² 0.0400→0.2825; kill-switch floor-crash che riusa `RiskManager` e scatta davvero.
 - [x] Ondata 3: 4 perfezionamenti, backtest reale incluso
-      → `python test_nft_ondata3.py` **10/10 OK**. Backtest su 3 collection (solo 1/3 dà
+      → `python test_nft_ondata3.py` **11/11 OK**. Backtest su 3 collection (solo 1/3 dà
       segnale), stress test, rug-pull breakeven 16.9%, bootstrap R² (fit instabile).
 - [x] Ondata 4: 3 controlli chirurgici superati, incluso il confronto esplicito con
       `report-studio.md`
-      → `python test_nft_ondata4.py` **15/15 OK**. Ricalcolo indipendente combacia; confronto
+      → `python test_nft_ondata4.py` **13/13 OK**. Ricalcolo indipendente combacia; confronto
       numerico problema-per-problema; Gate APEX-7 `L3_TO_L4` reale **PASSED 6/6 score 1.0**.
 - [x] Fase 2: repo clonato (o errore documentato) + `/content-forge` applicato
       → `gh repo clone ansjkfgheqrlg/master-build-architecture` riuscito (252 file).

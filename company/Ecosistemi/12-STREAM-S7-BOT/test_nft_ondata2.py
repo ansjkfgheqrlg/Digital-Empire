@@ -10,6 +10,7 @@ Esecuzione:  python test_nft_ondata2.py
 import json
 import os
 import sys
+import time
 
 from event_bus import global_bus
 from risk_manager import RiskManager
@@ -124,21 +125,49 @@ def test_miglioramento_4_segmentazione():
           f"per generalizzare, da riprendere in Ondata 3 con piu' dati")
 
 
+class _StubClient:
+    """Client finto e deterministico: la LOGICA di misura va verificata a ogni run,
+    anche quando la rete non c'e'. Dichiarato stub, non spacciato per reale."""
+
+    def __init__(self, sleep_s: float = 0.01, fail: bool = False):
+        self.sleep_s, self.fail = sleep_s, fail
+
+    def get_listings(self, symbol, offset=0, limit=5):
+        if self.fail:
+            raise TimeoutError("stub: rete non disponibile")
+        time.sleep(self.sleep_s)
+        return []
+
+
 def test_miglioramento_5_latenza():
     section("5. NFT (Miglioramento 5) — Latenza reale detection -> acquisto")
 
-    client = MagicEdenClient()
-    result = measure_real_latency(client, "mad_lads", n_calls=3)
+    # (a) LOGICA — deterministica, zero rete: gira sempre, e' il vero gate.
+    stub = measure_real_latency(_StubClient(sleep_s=0.01), "mad_lads", n_calls=3)
+    check("logica: 3 chiamate cronometrate e mediate (stub deterministico)",
+          stub["measured"] is True and stub["n_calls"] == 3 and stub["avg_ms"] > 0,
+          f"avg={stub['avg_ms']}ms su {stub['timings_ms']}")
+    check("logica: confronto esplicito col benchmark MEV di report-studio.md (300-800ms)",
+          stub["mev_benchmark_ms"] == (300, 800))
 
-    check("3 chiamate reali cronometrate", result["n_calls"] == 3, str(result["timings_ms"]))
-    check("latenza media reale calcolata (>0ms)", result["avg_ms"] > 0, f"{result['avg_ms']}ms")
-    check("confronto esplicito col benchmark MEV di report-studio.md (300-800ms)",
-          result["mev_benchmark_ms"] == (300, 800))
+    failed = measure_real_latency(_StubClient(fail=True), "mad_lads", n_calls=3)
+    check("logica: se la rete cade NON si inventa una latenza (measured=False + errore reale)",
+          failed["measured"] is False and "TimeoutError" in failed["error"],
+          failed["error"])
 
-    print(f"  [NOTA] avg reale {result['avg_ms']}ms include 1.2s di pacing prudenziale per chiamata "
-          f"(rate-limit safety, Blocco 2) — il path REST Magic Eden e' comunque piu' lento in ms assoluti "
-          f"del benchmark MEV mempool citato in report-studio.md, ma compete su una finestra di "
-          f"secondi/minuti (listing visibile finche' non venduto), non sullo stesso blocco Solana")
+    # (b) MISURA REALE — dipende dalla rete: si tenta, non si pretende.
+    real = measure_real_latency(MagicEdenClient(), "mad_lads", n_calls=3)
+    if real["measured"]:
+        check("misura reale riuscita (latenza > 0ms)", real["avg_ms"] > 0, f"{real['avg_ms']}ms")
+        print(f"  [NOTA] avg reale {real['avg_ms']}ms include 1.2s di pacing prudenziale per chiamata "
+              f"(rate-limit safety, Blocco 2) — il path REST Magic Eden e' comunque piu' lento in ms "
+              f"assoluti del benchmark MEV mempool citato in report-studio.md, ma compete su una "
+              f"finestra di secondi/minuti (listing visibile finche' non venduto), non sullo stesso "
+              f"blocco Solana")
+    else:
+        print(f"  [SALTATO — NON misurabile adesso] rete non disponibile: {real['error']}")
+        print(f"  Nessun numero inventato al suo posto. Misura reale gia' registrata il 2026-07-30 "
+              f"in CP-20260730-003 (avg 3333.1ms su 3 chiamate). La logica sopra resta verificata.")
 
 
 def test_miglioramento_6_correlazione():

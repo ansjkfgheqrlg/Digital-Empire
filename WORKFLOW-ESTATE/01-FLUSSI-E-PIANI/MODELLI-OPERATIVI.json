@@ -29,7 +29,7 @@
         "TASK-GAEL-20260730-STREAM-S7-NFT"
       ],
       "owner": "Gael/Claude",
-      "prossimo_passo": "AGGIORNATO 2026-07-30: chiusa TASK-GAEL-20260730-STREAM-S7-NFT-METODO (layer NFT floor-rarity mismatch su Magic Eden, 78/78 controlli reali, CP-20260730-002..007). VERDETTO: bocciato per live anche sulla lane NFT - l'edge non e' statisticamente distinguibile da zero al 95% (IC95% -2.00%/+34.70% sull'unica collection con segnale). Resta valido il passo tecnico precedente: L2->L3 (collegare analysis_engine/execution_engine al ciclo Orchestrator->Gate->Memory, tarare le soglie su esecuzioni misurate). Per un eventuale pilot live servono 3 prerequisiti OGGI ASSENTI: (a) RPC Solana a pagamento per l'esecuzione, (b) tasso storico reale di rug/abbandono su collection blue-chip, (c) piu' storico/collection per un campione solido.",
+      "prossimo_passo": "AGGIORNATO 2026-07-30: chiusa TASK-GAEL-20260730-STREAM-S7-NFT-METODO (layer NFT floor-rarity mismatch su Magic Eden, 89/89 controlli reali, CP-20260730-002..007). VERDETTO: bocciato per live anche sulla lane NFT - l'edge non e' statisticamente distinguibile da zero al 95% (IC95% -2.00%/+34.70% sull'unica collection con segnale). Resta valido il passo tecnico precedente: L2->L3 (collegare analysis_engine/execution_engine al ciclo Orchestrator->Gate->Memory, tarare le soglie su esecuzioni misurate). Per un eventuale pilot live servono 3 prerequisiti OGGI ASSENTI: (a) RPC Solana a pagamento per l'esecuzione, (b) tasso storico reale di rug/abbandono su collection blue-chip, (c) piu' storico/collection per un campione solido.",
       "blocco": "B-010 (BACKLOG.md): serve un RPC provider a pagamento prima di qualunque LIVE reale. Decisione capitale = Max."
     },
     {

@@ -166,15 +166,32 @@ def measure_real_latency(client: MagicEdenClient, symbol: str, n_calls: int = 3)
     report-studio.md), il path REST Magic Eden non era ancora stato misurato.
     DOPO: n chiamate reali cronometrate qui, stessa API usata in produzione
     dal motore NFT (get_listings) — confronto diretto in ms, non stimato.
+
+    La rete puo' non rispondere (timeout, 429, host giu'): in quel caso NON si
+    solleva e NON si inventa un numero — si ritorna `measured: False` con
+    l'errore reale, e chi chiama decide. Un valore di latenza fabbricato
+    varrebbe meno di nessun valore (Fase 0, criterio 2: ogni numero ha una
+    fonte reale o non esiste).
     """
     timings_ms = []
     for _ in range(n_calls):
         t0 = time.time()
-        client.get_listings(symbol, offset=0, limit=5)
+        try:
+            client.get_listings(symbol, offset=0, limit=5)
+        except Exception as e:  # rete/timeout/429: nessun numero inventato
+            return {
+                "measured": False,
+                "n_calls_attempted": n_calls,
+                "n_calls_completed": len(timings_ms),
+                "error": f"{type(e).__name__}: {e}",
+                "timings_ms": [round(t, 1) for t in timings_ms],
+                "mev_benchmark_ms": (300, 800),
+            }
         timings_ms.append((time.time() - t0) * 1000.0)
 
     avg_ms = sum(timings_ms) / len(timings_ms)
     return {
+        "measured": True,
         "n_calls": n_calls,
         "timings_ms": [round(t, 1) for t in timings_ms],
         "avg_ms": round(avg_ms, 1),
