@@ -41,19 +41,26 @@ def _api_key() -> str:
     return key
 
 
-def _request(method: str, path: str, key: str, body: dict | None = None) -> dict:
+def _request(method: str, path: str, key: str, body: dict | None = None, retries: int = 3) -> dict:
     url = f"{API_BASE}{path}"
     data = json.dumps(body).encode("utf-8") if body is not None else None
-    req = urllib.request.Request(url, data=data, method=method, headers={
-        "Authorization": f"Bearer {key}",
-        "Content-Type": "application/json",
-    })
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        detail = e.read().decode("utf-8", errors="ignore")
-        raise SystemExit(f"[!] Errore API reale {method} {path}: HTTP {e.code} — {detail}")
+    req_headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
+    last_err = None
+    for attempt in range(retries):
+        req = urllib.request.Request(url, data=data, method=method, headers=req_headers)
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode("utf-8", errors="ignore")
+            raise SystemExit(f"[!] Errore API reale {method} {path}: HTTP {e.code} — {detail}")
+        except (TimeoutError, urllib.error.URLError) as e:
+            # Timeout di rete transitorio (non un errore dell'API reale): ritenta invece di
+            # far crashare tutto lo script dopo 15+ minuti di generazione gia' completata.
+            last_err = e
+            print(f"[!] Timeout di rete su {method} {path} (tentativo {attempt+1}/{retries}): {e}")
+            time.sleep(5)
+    raise SystemExit(f"[!] Rete non raggiungibile dopo {retries} tentativi su {method} {path}: {last_err}")
 
 
 def _items(res) -> list:
@@ -121,6 +128,15 @@ def generate_video(key: str, content: str, voice_id: str, file_name: str) -> str
             "sceneBreakdown": "lineBreak",
             "fileName": file_name,
             "shouldExport": True,
+            # subtitlePresetId reale ottenuto cliccando il bottone "Copy subtitle preset ID"
+            # su fliki.ai/info/subtitle via Playwright (l'ID non e' nell'HTML statico ne'
+            # in nessuna chiamata di rete — va copiato dal bottone, come documentato).
+            "subtitlePresetId": "builtin-legacy-bold",
+            "highlightSubtitles": True,
+            # Il video precedente (senza duration esplicita) e' uscito di soli 230s invece
+            # dei ~15 minuti di contenuto reale scritto in script.md. Impostiamo una durata
+            # target esplicita (secondi) coerente con la lunghezza reale dello script.
+            "duration": 720,
         }]
     }
     res = _request("POST", "/generate/video", key, payload)

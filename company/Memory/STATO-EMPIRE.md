@@ -1,4 +1,16 @@
-# STATO EMPIRE -- aggiornato 2026-07-29 (Gael: PRIMO VIDEO REALE generato dalla fabbrica YouTube end-to-end — competitor+script+copertina+video Fliki tutti reali — CP-20260729-001)
+# STATO EMPIRE -- aggiornato 2026-07-29 (Gael: PIVOT — canale reale @dosementale, non Claude Code/Manuale morto. Regole fisse in RULES-VIDEO-FACTORY-DOSEMENTALE.md — CP-20260729-001/002)
+
+## ⚠️ 2026-07-29 — REGOLE FISSE fabbrica video Dose Mentale (leggere prima di toccare YOUTUBE-AUTOMATION-FACTORY)
+Il "Manuale Claude Code" è **morto, non nominarlo più**. Il progetto reale: canale YouTube
+monetizzato, obiettivo puro views, contenuto copiato/adattato da **@dosementale** (spiritualità/
+psicologia/benessere, non tech). Regole operative complete e standard qualità obbligatori
+(durata 12min+, voce e sottotitoli verificati col file reale, limite noto sulla velocità Fliki):
+[RULES-VIDEO-FACTORY-DOSEMENTALE.md](RULES-VIDEO-FACTORY-DOSEMENTALE.md). Dettaglio tecnico:
+[CP-20260729-001](checkpoints/CP-20260729-001.md), [CP-20260729-002](checkpoints/CP-20260729-002.md).
+
+---
+
+
 
 ## ✅ 2026-07-29 — GAEL: PRIMO VIDEO REALE dalla fabbrica YouTube (F1→F6 + copertina + Fliki, tutto reale) — CP-20260729-001
 Gael ha fornito la `FLIKI_API_KEY` reale (salvata in `.env`, gitignored). Corretti 2 bug in
