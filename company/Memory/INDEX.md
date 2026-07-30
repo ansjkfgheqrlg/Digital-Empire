@@ -26,6 +26,7 @@
 - [BACKLOG.md](BACKLOG.md) — cose rimandabili (token FB, prezzo manuale, team-prezzi B-003, ...)
 
 ## Checkpoint
+- [CP-20260730-005](checkpoints/CP-20260730-005.md) — 🎰 **TASK-GAEL-NFT-METODO: ONDATA 4 (controlli chirurgici) — VERDETTO FINALE bocciato per live** — 15/15 test OK, ricalcolo indipendente combacia, confronto numerico con report-studio.md (solo 1/3 problemi migliora, parzialmente), Gate APEX-7 L3→L4 reale PASSED 6/6 sul loop NFT. 78/78 controlli totali nel task — Claude
 - [CP-20260730-004](checkpoints/CP-20260730-004.md) — 🎰 **TASK-GAEL-NFT-METODO: ONDATA 3 (4 perfezionamenti)** — 10/10 test OK: solo 1/3 collection produce segnale tradeable, rug-pull breakeven=16.9% (soglia esplicita per il verdetto), bootstrap R² mostra fit instabile non solo debole — Claude
 - [CP-20260730-003](checkpoints/CP-20260730-003.md) — 🎰 **TASK-GAEL-NFT-METODO: ONDATA 2 (8 miglioramenti)** — 21/21 test OK: segmentazione prezzo migliora fit 7x su una banda (non consistente tra collection), filtro scam rifiuta degods per dato reale mancante (non per essere scam), kill-switch floor-crash riusa RiskManager esistente e scatta per davvero sul caso sintetico — Claude
 - [CP-20260730-002](checkpoints/CP-20260730-002.md) — 🎰 **TASK-GAEL-NFT-METODO: FASE 0 + ONDATA 1 (10 blocchi) su dati reali Magic Eden** — 25/25 test OK, expectancy Monte Carlo su degods 20.31% IC95%[-2.00%,34.70%], scoperta chiave: mercato reale scorre su bid/pool non buyNow diretto (rilevante per Ondata 4). Divergenza git locale/origin segnalata, non risolta (fuori perimetro) — Claude
