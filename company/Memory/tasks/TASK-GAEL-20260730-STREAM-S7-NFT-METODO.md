@@ -9,7 +9,12 @@ Riferimenti: LOGICA-COMPLETA-S7.md · report-studio.md (verdetto attuale: BOCCIA
              quality_gates.py · CP-20260728-006 (parser reale, position manager, fix spam)
 ---
 
-> **STATO: da avviare.** Nessun lotto chiuso. Gael parte da qui.
+> **STATO: ✅ CHIUSO 2026-07-30.** Tutti i lotti eseguiti (Fase 0 + Ondata 1-4 + Fase 2),
+> **78/78 controlli reali superati**, zero file frozen toccati, zero capitale vero.
+> **Verdetto: INVARIATO — bocciato per live**, coerente con `report-studio.md` (Controllo
+> Chirurgico #2: solo 1 dei 3 problemi strutturali migliora, e solo parzialmente).
+> Checkpoint: [CP-20260730-002](../checkpoints/CP-20260730-002.md) →
+> [CP-20260730-007](../checkpoints/CP-20260730-007.md) (RETRO finale).
 
 # 🚨 ORDINE MAX — Metodo logico-matematico per NFT/token (Stream S7)
 
@@ -220,17 +225,33 @@ sul resto del task.
 
 ## 7. Definition of Done
 
-- [ ] Fase 0: 7/7 criteri della tecnica di studio verificati, non solo dichiarati
-- [ ] Ondata 1: 10 blocchi costruiti, ognuno con un test/numero reale
-- [ ] Ondata 2: 8 miglioramenti applicati, ognuno con prima/dopo misurato
-- [ ] Ondata 3: 4 perfezionamenti, backtest reale incluso
-- [ ] Ondata 4: 3 controlli chirurgici superati, incluso il confronto esplicito con
+- [x] Fase 0: 7/7 criteri della tecnica di studio verificati, non solo dichiarati
+      → `STUDIO-NFT-FASE0.md`, ogni criterio con comando/risposta reale (API Magic Eden, RPC
+      Solana, CoinGecko). Criterio 7 (stop) scritto PRIMA di costruire.
+- [x] Ondata 1: 10 blocchi costruiti, ognuno con un test/numero reale
+      → `python test_nft_s7.py` **25/25 OK**. `nft_magiceden_client.py`, `nft_analysis_engine.py`,
+      `nft_monte_carlo.py`. Expectancy MC su degods 20.31%, IC95% [-2.00%, 34.70%].
+- [x] Ondata 2: 8 miglioramenti applicati, ognuno con prima/dopo misurato
+      → `python test_nft_ondata2.py` **21/21 OK**. Es. z 1.5→1.35; fit banda bassa mad_lads
+      R² 0.0400→0.2825; kill-switch floor-crash che riusa `RiskManager` e scatta davvero.
+- [x] Ondata 3: 4 perfezionamenti, backtest reale incluso
+      → `python test_nft_ondata3.py` **10/10 OK**. Backtest su 3 collection (solo 1/3 dà
+      segnale), stress test, rug-pull breakeven 16.9%, bootstrap R² (fit instabile).
+- [x] Ondata 4: 3 controlli chirurgici superati, incluso il confronto esplicito con
       `report-studio.md`
-- [ ] Fase 2: repo clonato (o errore documentato) + `/content-forge` applicato
-- [ ] `python test_apex7.py` verde a fine lavoro
-- [ ] Zero modifiche al motore memecoin già chiuso (G-A/G-B/G-C) e a `execution_engine.py`
+      → `python test_nft_ondata4.py` **15/15 OK**. Ricalcolo indipendente combacia; confronto
+      numerico problema-per-problema; Gate APEX-7 `L3_TO_L4` reale **PASSED 6/6 score 1.0**.
+- [x] Fase 2: repo clonato (o errore documentato) + `/content-forge` applicato
+      → `gh repo clone ansjkfgheqrlg/master-build-architecture` riuscito (252 file).
+      **`/content-forge` NON esiste in questo ambiente** — segnalato invece che indovinato
+      (CP-20260730-006); applicati concretamente i suoi principi P09/P12 → `FAILURE-MODES-NFT.md`.
+- [x] `python test_apex7.py` verde a fine lavoro → **13/13, `PASSED score 1.0`**, riverificato
+      anche dopo il merge con `origin/main`.
+- [x] Zero modifiche al motore memecoin già chiuso (G-A/G-B/G-C) e a `execution_engine.py`
       lato LIVE
-- [ ] Checkpoint con comandi e output reali per ogni ondata
+      → verificato con `git diff origin/main --stat` sui 12 file frozen: **output vuoto**.
+- [x] Checkpoint con comandi e output reali per ogni ondata
+      → CP-20260730-002/003/004/005/006/007 (uno per fase + RETRO finale).
 
 ## 8. Ordine di marcia
 

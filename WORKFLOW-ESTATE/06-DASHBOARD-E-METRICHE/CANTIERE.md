@@ -9,10 +9,9 @@ prossimo passo di costruzione, chi lo possiede, se e' bloccato, se il codice esi
 
 - **Ruolo:** Genera video YouTube in automatico (pipeline APEX-7 a 6 fasi F1-F6).
 - **Owner:** Gael
-- **Avanzamento:** task board: 6/7 fatti
+- **Avanzamento:** task board: 7/7 fatti
 - **Entrypoint:** `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS` — presente
-- **Prossimo task board:** TASK-YT-006 — YT-Factory (cross-eco): ritiro reimplementazione APEX-7 indipendente in 12-STREAM-S7-BOT (owner Gael)
-- **Prossimo passo:** QUASI CHIUSO (2026-07-29): F1-F6 reali + dashboard onesta + docs allineati (TASK-YT-002/003/004/005/007 fatti da Claude). Resta 1 solo lotto: TASK-YT-006 (ritiro APEX-7 duplicato in 12-STREAM-S7-BOT) ASSEGNATO A GAEL (cross-eco, suo ecosistema). Chiuso 006 -> YouTube 7/7. Operativo residuo per Max: render .mp4 + upload Playwright per pubblicare un video vero.
+- **Prossimo passo:** AGGIORNATO 2026-07-30: TASK-YT-006 CHIUSA (non migrato, motivazione scritta - clausola esplicita del gate; verificato al merge che 12-STREAM-S7-BOT ha ancora la sua implementazione APEX-7 propria, zero import da 11-APEX-7-CORE). YouTube 7/7 lotti chiusi. NOTA MERGE: i lotti TASK-YT-001..007 risultano eseguiti DUE VOLTE in parallelo da due sessioni che non si vedevano; sopravvive l'orchestratore con dashboard_path overridabile (richiesto dal test mergiato) + il ritiro additivo di run_youtube_apex7.py (deprecato con banner, non cancellato). Operativo residuo per Max: pubblicare davvero un video (upload Playwright) per chiudere il loop di audit F6 con dati veri.
 
 ## 12-STREAM-S7-BOT  (`stream-s7`)
 
@@ -20,7 +19,7 @@ prossimo passo di costruzione, chi lo possiede, se e' bloccato, se il codice esi
 - **Owner:** Gael/Claude
 - **Avanzamento:** task nel board: nessuno con questi prefissi
 - **Entrypoint:** `company/Ecosistemi/12-STREAM-S7-BOT/main.py` — presente
-- **Prossimo passo:** L2->L3: collegare analysis_engine/execution_engine al ciclo Orchestrator->Gate->Memory; tarare le soglie gate su esecuzioni misurate; far scrivere al bot le sue metriche nel layer memoria.
+- **Prossimo passo:** AGGIORNATO 2026-07-30: chiusa TASK-GAEL-20260730-STREAM-S7-NFT-METODO (layer NFT floor-rarity mismatch su Magic Eden, 78/78 controlli reali, CP-20260730-002..007). VERDETTO: bocciato per live anche sulla lane NFT - l'edge non e' statisticamente distinguibile da zero al 95% (IC95% -2.00%/+34.70% sull'unica collection con segnale). Resta valido il passo tecnico precedente: L2->L3 (collegare analysis_engine/execution_engine al ciclo Orchestrator->Gate->Memory, tarare le soglie su esecuzioni misurate). Per un eventuale pilot live servono 3 prerequisiti OGGI ASSENTI: (a) RPC Solana a pagamento per l'esecuzione, (b) tasso storico reale di rug/abbandono su collection blue-chip, (c) piu' storico/collection per un campione solido.
 - **BLOCCO:** B-010 (BACKLOG.md): serve un RPC provider a pagamento prima di qualunque LIVE reale. Decisione capitale = Max.
 
 ## Outreach (concessionari preventa + content/outreach factory)  (`outreach`)

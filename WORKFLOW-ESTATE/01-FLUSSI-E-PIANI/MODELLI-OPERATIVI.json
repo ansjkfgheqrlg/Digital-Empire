@@ -1,6 +1,6 @@
 {
   "_nota": "REGISTRO DEI MODELLI OPERATIVI GOVERNATI DAL WORKFLOW-ESTATE (il cervello). Letto da `empire cantiere`. Additivo: aggiungere un modello = una voce qui, nessun codice da toccare. I path sono relativi alla radice del monorepo (Digital Empire). Ogni voce dichiara dove sta il modello, il suo entrypoint reale, da dove si legge il suo avanzamento (taskboard/STATO-RIPRESA), e il prossimo passo di costruzione curato a mano (tenuto onesto: se cambia lo stato, si aggiorna qui).",
-  "_aggiornato": "2026-07-29",
+  "_aggiornato": "2026-07-30",
   "modelli": [
     {
       "id": "youtube",
@@ -9,9 +9,11 @@
       "ruolo": "Genera video YouTube in automatico (pipeline APEX-7 a 6 fasi F1-F6).",
       "entrypoint": "YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS",
       "stato_ripresa": null,
-      "task_prefissi": ["TASK-YT-"],
+      "task_prefissi": [
+        "TASK-YT-"
+      ],
       "owner": "Gael",
-      "prossimo_passo": "QUASI CHIUSO (2026-07-29): F1-F6 reali + dashboard onesta + docs allineati (TASK-YT-002/003/004/005/007 fatti da Claude). Resta 1 solo lotto: TASK-YT-006 (ritiro APEX-7 duplicato in 12-STREAM-S7-BOT) ASSEGNATO A GAEL (cross-eco, suo ecosistema). Chiuso 006 -> YouTube 7/7. Operativo residuo per Max: render .mp4 + upload Playwright per pubblicare un video vero.",
+      "prossimo_passo": "AGGIORNATO 2026-07-30: TASK-YT-006 CHIUSA (non migrato, motivazione scritta - clausola esplicita del gate; verificato al merge che 12-STREAM-S7-BOT ha ancora la sua implementazione APEX-7 propria, zero import da 11-APEX-7-CORE). YouTube 7/7 lotti chiusi. NOTA MERGE: i lotti TASK-YT-001..007 risultano eseguiti DUE VOLTE in parallelo da due sessioni che non si vedevano; sopravvive l'orchestratore con dashboard_path overridabile (richiesto dal test mergiato) + il ritiro additivo di run_youtube_apex7.py (deprecato con banner, non cancellato). Operativo residuo per Max: pubblicare davvero un video (upload Playwright) per chiudere il loop di audit F6 con dati veri.",
       "blocco": null
     },
     {
@@ -21,9 +23,13 @@
       "ruolo": "Bot trading Solana su segnali stream (paper trading per design).",
       "entrypoint": "company/Ecosistemi/12-STREAM-S7-BOT/main.py",
       "stato_ripresa": "company/Ecosistemi/12-STREAM-S7-BOT/STATO-RIPRESA.md",
-      "task_prefissi": ["TASK-GAEL-20260728-STREAM-S7", "TASK-S7-"],
+      "task_prefissi": [
+        "TASK-GAEL-20260728-STREAM-S7",
+        "TASK-S7-",
+        "TASK-GAEL-20260730-STREAM-S7-NFT"
+      ],
       "owner": "Gael/Claude",
-      "prossimo_passo": "L2->L3: collegare analysis_engine/execution_engine al ciclo Orchestrator->Gate->Memory; tarare le soglie gate su esecuzioni misurate; far scrivere al bot le sue metriche nel layer memoria.",
+      "prossimo_passo": "AGGIORNATO 2026-07-30: chiusa TASK-GAEL-20260730-STREAM-S7-NFT-METODO (layer NFT floor-rarity mismatch su Magic Eden, 78/78 controlli reali, CP-20260730-002..007). VERDETTO: bocciato per live anche sulla lane NFT - l'edge non e' statisticamente distinguibile da zero al 95% (IC95% -2.00%/+34.70% sull'unica collection con segnale). Resta valido il passo tecnico precedente: L2->L3 (collegare analysis_engine/execution_engine al ciclo Orchestrator->Gate->Memory, tarare le soglie su esecuzioni misurate). Per un eventuale pilot live servono 3 prerequisiti OGGI ASSENTI: (a) RPC Solana a pagamento per l'esecuzione, (b) tasso storico reale di rug/abbandono su collection blue-chip, (c) piu' storico/collection per un campione solido.",
       "blocco": "B-010 (BACKLOG.md): serve un RPC provider a pagamento prima di qualunque LIVE reale. Decisione capitale = Max."
     },
     {
@@ -33,7 +39,10 @@
       "ruolo": "Contatto concessionari (email/IG/LinkedIn via Playwright) + scraper preventa Maps -> lead reali su Areus.",
       "entrypoint": "Outreach/run_parallel.py",
       "stato_ripresa": null,
-      "task_prefissi": ["TASK-PREVENTA", "TASK-OUTREACH"],
+      "task_prefissi": [
+        "TASK-PREVENTA",
+        "TASK-OUTREACH"
+      ],
       "owner": "Claude/Max",
       "prossimo_passo": "Rinfrescare sessioni social (IG 54gg, LinkedIn 71gg) poi lanciare contatti via Playwright su target approvato (dry-run prima). Email SMTP gia' pronta: parte con 'via' + dry-run.",
       "blocco": "Invii a persone reali: irreversibili -> serve 'via' esplicito di Max + dry-run. Re-login social: atto fisico di Max (2FA)."
