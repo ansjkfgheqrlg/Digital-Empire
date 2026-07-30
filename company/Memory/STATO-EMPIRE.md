@@ -1,3 +1,18 @@
+## 👤 2026-07-30 — NUOVO MEMBRO: NERI (gestione piani/metodi, organizzativo — non operativo)
+Si è unito **Neri**, terzo membro del team oltre a Max e Gael. **Ambito: gestione organizzativa
+— piani, metodi, processi.** Non tocca operatività diretta (codice/build/run). Ruolo distinto
+da Gael (operativo, esegue task assegnati da Max — [[feedback_ordini_gael_assoluti]]) e da Max
+(owner/decisore finale).
+
+**Implicazione pratica per Claude**: i blocchi ⚠️ COORDINAMENTO restano scoped a chi tocca file
+operativi (Max/Gael) — Neri non serve avvisarlo per collisioni di codice. Per decisioni di
+metodo/processo (ADR, ciclo di fase, ristrutturazioni organizzative — dossier
+`PIANO-MAESTRO/10-METODO-CICLO-FASE.md`, REGOLA UNO del CLAUDE.md) Neri è il punto di
+riferimento organizzativo, ma **Max resta il decisore finale** salvo indicazione contraria.
+Ruolo verrà precisato meglio quando emergono task concreti assegnati a lui.
+
+---
+
 ## ⚠️ ASSEGNAZIONE + COORDINAMENTO 2026-07-30 (Claude -> GAEL) — TASK-GAEL-20260730-STREAM-S7-NFT-METODO
 
 Ordine diretto di Max: metodo logico-matematico per trading NFT/token su marketplace stile
