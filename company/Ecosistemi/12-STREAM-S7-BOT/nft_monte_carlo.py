@@ -30,6 +30,7 @@ def monte_carlo_expectancy(
     marketplace_fee_pct: float = MARKETPLACE_FEE_PCT,
     creator_royalty_pct: float = DEFAULT_CREATOR_ROYALTY_PCT,
     seed: int = 7,
+    return_raw: bool = False,
 ) -> Dict[str, Any]:
     """
     Per ogni simulazione:
@@ -96,7 +97,7 @@ def monte_carlo_expectancy(
     prob_negative = float(np.mean(net_pnls_pct < 0))
     prob_illiquid_scenario = float(np.mean(~sells_within_horizon))
 
-    return {
+    result = {
         "n_sims": n_sims,
         "n_eligible_real_listings_used": len(eligible_idx),
         "mean_net_pnl_pct": mean_pnl_pct,
@@ -106,3 +107,6 @@ def monte_carlo_expectancy(
         "prob_illiquid_scenario": prob_illiquid_scenario,
         "holding_horizon_days": holding_horizon_days,
     }
+    if return_raw:
+        result["raw_net_pnl_pct"] = net_pnls_pct  # per Ondata 3: stress test che aggiunge shock sopra la base
+    return result
