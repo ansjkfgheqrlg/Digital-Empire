@@ -1,4 +1,34 @@
-# STATO EMPIRE -- aggiornato 2026-07-29 (Gael: PIVOT — canale reale @dosementale, non Claude Code/Manuale morto. Regole fisse in RULES-VIDEO-FACTORY-DOSEMENTALE.md — CP-20260729-001/002)
+# STATO EMPIRE -- aggiornato 2026-07-30 (Gael: TASK-GAEL-NFT-METODO CHIUSO — 78/78 controlli, verdetto INVARIATO bocciato per live — CP-20260730-007)
+---
+
+## ✅ 2026-07-30 — GAEL: TASK-GAEL-NFT-METODO CHIUSO — 78/78 controlli, verdetto INVARIATO bocciato per live — CP-20260730-007
+
+Task diretto di Max (metodo logico-matematico NFT/token su Magic Eden, in ondate 7+10+8+4+3).
+Eseguito integralmente in `12-STREAM-S7-BOT`: Fase 0 (7/7) → Ondata 1 (25/25) → Ondata 2 (21/21)
+→ Ondata 3 (10/10) → Ondata 4 (15/15) → Fase 2 (repo esterno + pattern applicato). **78/78
+controlli reali**, tutti su dati Magic Eden veri (API pubblica, nessuna chiave), zero file
+frozen toccati (verificato via `git diff`), zero capitale vero, zero chiamate a pagamento.
+
+**Verdetto finale (Controllo Chirurgico #2, il punto che contava di piu'): INVARIATO rispetto
+a `report-studio.md` — bocciato per produzione live.** Solo 1 dei 3 problemi strutturali
+migliora (rate-limit RPC, solo lato scansione: 20 chiamate concorrenti reali vs 2 dell'RPC
+Solana), gli altri 2 (latenza, rug/abbandono) restano aperti. L'edge sull'unica collection con
+segnale reale (degods, 3/31 listing) non e' statisticamente distinguibile da zero al 95%% di
+confidenza. Dettaglio completo nei 6 checkpoint di oggi ([CP-20260730-002](checkpoints/CP-20260730-002.md)
+…[007](checkpoints/CP-20260730-007.md)).
+
+**Scoperte utili per il futuro**: il mercato NFT reale scorre su bid/pool, non buyNow diretto;
+non tutte le collection hanno rarity rank o tutti i campi stats attesi dall'API; Magic Eden
+REST e' molto piu' robusta dell'RPC Solana pubblico ma non infinita.
+
+**RIPRESA DA:** nessuna azione tecnica richiesta a Gael per chiudere — task completo secondo
+la propria Definition of Done. Aperto per Max/chi gestisce la sync: (a) riconciliare la
+divergenza git segnalata sotto prima di un push pulito futuro (questo lavoro NFT crea un
+secondo capo su `origin/main` finche' non si fa merge reale); (b) decidere se investire nei 3
+prerequisiti mancanti per un pilot live (RPC a pagamento, tasso storico reale di rug su
+blue-chip, piu' storico/collection) — nessuno dei 3 e' bloccante per la validita' del verdetto
+odierno, sono condizioni per un giro futuro.
+
 ---
 
 ## ⚠️ COORDINAMENTO GAEL/CLAUDE — 2026-07-30 — TASK-GAEL-20260730-STREAM-S7-NFT-METODO: divergenza git trovata prima di partire
