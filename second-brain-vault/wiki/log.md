@@ -1,5 +1,31 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-30 (Nuovo membro team: Neri, Claude/Max)
+- INGEST: Neri si è unito al team (gestione organizzativa/piani/metodi, non operativo) →
+  1 pagina creata [[entities/Neri|Neri]], linkata a [[projects/Piano_Maestro_EMPIRE_OS]],
+  [[concepts/SPARC_Methodology]], [[projects/Preventa/Preventa_Logica_Completa_Metodo]].
+  Aggiunta sezione "Team" in index.md. Specchio anche in `company/Memory/STATO-EMPIRE.md`
+  (nota organi/coordinamento) e memoria persistente Claude (`project_team_neri.md`).
+
+## 2026-07-30 (CORREZIONE — Stream S7: logica completa documentata, Claude/Max)
+- Max ha corretto: la richiesta era sul bot S7 (NFT/memecoin Solana), non su Preventa
+  (voce sotto, lasciata perché comunque valida ma fuori bersaglio). Letto codice reale
+  (`main.py`, `data_manager.py`, `analysis_engine.py`, `risk_manager.py`,
+  `execution_engine.py`, `position_monitor.py`, `report-studio.md`, `APEX-7.md`,
+  checkpoint CP-20260728-006) → file creato direttamente in
+  `company/Ecosistemi/12-STREAM-S7-BOT/LOGICA-COMPLETA-S7.md` (non in wiki: doc tecnico
+  legato al codice, resta accanto ad esso). Punto centrale: `report-studio.md` boccia
+  già il live trading (expectancy negativa, >85% rischio perdita capitale primo mese) —
+  S7 è R&D speculativo 0€ revenue, non un percorso di incasso attuale.
+
+## 2026-07-30 (Preventa: logica completa documentata, Claude/Max)
+- INGEST: mappata e documentata tutta la logica del sistema Preventa (scraping import-focus →
+  qualificazione → Areus → ganci → invio WhatsApp reale → follow-up), letta dal codice reale
+  (`outreach_giornaliero.py`, `run.py`, `checker.py`, `areus.py`, `personalizza_messaggi.py`,
+  `send_message.py`, `refresh_session.py`) + checkpoint CP-20260729-007. → 1 pagina creata:
+  [[projects/Preventa/Preventa_Logica_Completa_Metodo|Preventa — Logica Completa del Sistema]].
+  Obiettivo: base per fissare il Metodo prima di scalare l'operativo.
+
 ## 2026-07-23 (Task board Gael operativo + prompt Gemini S7 pronto, Claude/Max)
 - PLAN: dossier 25 = task board Gael autorevole. Scoperta chiave: **il lavoro è cablaggio, non costruzione**.
   Asset già su disco: `Outreach/preventa-outreach-pack/` (6 script APSOC concessionari già scritti),

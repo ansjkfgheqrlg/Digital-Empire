@@ -49,7 +49,7 @@ Se risposte: "Excel / 20-40 min / sì capita" -> Sei in target perfetto.
 > **ATTENZIONE:** "Esatto, è quello che vedo in tutti i saloni da 5 a 20 venditori."
 > **PROBLEMA:** "Il problema non è il gestionale. È che il gestionale è lento, il PDF esce brutto e non brandizzato, e il prezzo finale non lo controlla nessuno. Risultato: il venditore perde 30 minuti a preventivo, il cliente su WhatsApp intanto chiede ad altri 3."
 > **SOLUZIONE:** "Preventa fa una cosa sola, ma la fa bene: il venditore inserisce targa/allestimento/accessori in 2 minuti, clicca, esce un PDF brandizzato [NOME CONCESSIONARIA], con logo, foto veicolo, voci di costo bloccate da te, permuta, finanziamento, valido 7 giorni. Professionale. Controllato. Mandabile su WhatsApp al volo."
-> **OBIEZIONE PREVENTIVA (risolvi prima che la dica):** "Non è un altro gestionale da imparare. Non sostituisce quello che hai. Si affianca. Licenza a canone [PREZZO]/mese, se non lo usi lo stacchiamo da remoto, zero vincoli assurdi. Lo usano già [2 NOMI SOCIAL PROOF ZONA SE LI HAI, ALTRIMENTI Ometti]."
+> **OBIEZIONE PREVENTIVA (risolvi prima che la dica):** "Non è un altro gestionale da imparare. Non sostituisce quello che hai. Si affianca. €2.000 una tantum, pagamento unico, nessun canone. Lo usano già [2 NOMI SOCIAL PROOF ZONA SE LI HAI, ALTRIMENTI Ometti]."
 > **CTA MICRO-IMPEGNO:** "Guarda, facciamo così: ti faccio vedere come esce un preventivo con una vostra auto reale, in 15 minuti su schermo. Senza impegno. Se ti fa cagare me lo dici e fine lì. Domani alle 11:00 o giovedì alle 16:30 ti incastro meglio?"
 
 **Livello consapevolezza:** Solution-Aware -> Product-Aware.
@@ -75,7 +75,7 @@ Se risposte: "Excel / 20-40 min / sì capita" -> Sei in target perfetto.
 *Riporta al problema concreto.*
 
 **OBIEZIONE 5: "Costa troppo / Non ho budget"**
-> "Giusto che me lo dici. Infatti non ti ho ancora parlato di prezzo perché non so se ti serve. Il canone è [PREZZO], ma la domanda è: se un tuo venditore fa 3 preventivi al giorno e ne risparmia 20 minuti a preventivo, quante trattative in più chiude al mese? Facciamo due conti insieme in 15 min e poi decidi tu se ha senso. Ti rovina se fissiamo?"
+> "Giusto che me lo dici. Infatti non ti ho ancora parlato di prezzo perché non so se ti serve. Sono €2.000 una tantum, pagamento unico, nessun canone — ma la domanda è: se un tuo venditore fa 3 preventivi al giorno e ne risparmia 20 minuti a preventivo, quante trattative in più chiude al mese? Facciamo due conti insieme in 15 min e poi decidi tu se ha senso. Ti rovina se fissiamo?"
 
 **OBIEZIONE 6: "Devo parlarne con il titolare / socio / non ci sono"**
 > "Perfetto, è la persona giusta. Di solito quando lo fai vedere al titolare cosa gli interessa di più? Che i prezzi siano bloccati o che il PDF sia brandizzato? [PRENDI INFO]. Guarda, facciamo così: organizziamo una call di 15 min con te e lui insieme, così lo vede direttamente. Quando siete entrambi in sede?"

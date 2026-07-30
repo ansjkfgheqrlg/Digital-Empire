@@ -123,6 +123,7 @@ def main():
     parser.add_argument("--cities", type=str, help="Lista città separate da virgola: Milano,Bergamo,Brescia")
     parser.add_argument("--input", type=str, help="File txt con una città per riga")
     parser.add_argument("--categoria", type=str, default=DEFAULT_CATEGORIA)
+    parser.add_argument("--categorie", type=str, help="Piu' categorie separate da virgola: cerca OGNI categoria su OGNI citta' (usato per focus import). Se presente, ha priorita' su --categoria.")
     parser.add_argument("--output", type=str, default="data/leads_concessionari.csv")
     parser.add_argument("--limit", type=int, default=25, help="Max risultati per città")
     parser.add_argument("--headless", action="store_true")
@@ -134,7 +135,8 @@ def main():
     args = parser.parse_args()
 
     cities = load_cities(args)
-    log.info(f"Città: {cities} | Categoria: {args.categoria} | Limit: {args.limit} | only-alta={args.only_alta}")
+    categorie = [c.strip() for c in args.categorie.split(",") if c.strip()] if args.categorie else [args.categoria]
+    log.info(f"Città: {cities} | Categorie: {categorie} | Limit: {args.limit} | only-alta={args.only_alta}")
 
     headless = args.headless and not args.headed
     if not args.headless and not args.headed:
@@ -192,11 +194,12 @@ def main():
             only_alta=args.only_alta
         )
 
-        for i, city in enumerate(cities):
-            conductor.run_city_workflow(city, args.categoria, args.limit)
-            if i < len(cities)-1:
+        combos = [(city, cat) for city in cities for cat in categorie]
+        for i, (city, cat) in enumerate(combos):
+            conductor.run_city_workflow(city, cat, args.limit)
+            if i < len(combos)-1:
                 pausa = browser.random_delay(3.0, 6.0)
-                log.info(f"Pausa prima prossima città...")
+                log.info(f"Pausa prima prossima combinazione città/categoria...")
 
         br.close()
 

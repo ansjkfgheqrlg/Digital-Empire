@@ -30,7 +30,13 @@ Benvenuto nella tua Knowledge Base iper-organizzata. Tutto il materiale di Digit
 
 ---
 
+## 👤 Team
+- [[entities/Neri|Neri]] — Terzo membro del team (2026-07-30), gestione organizzativa/metodo — non operativo. Distinto da Max (owner) e Gael (operativo).
+
+---
+
 ## 🏭 Riferimenti Architetturali (Sistemi Costruiti)
+- [[projects/Preventa/Preventa_Logica_Completa_Metodo|📲 Preventa — Logica Completa del Sistema]] — Flusso end-to-end (2026-07-30): scraping import-focus Google Maps → qualifica priorità → CRM Areus → 4 ganci di aggancio → invio WhatsApp reale (profilo Chromium persistente) → follow-up. Rischi dichiarati (ban WhatsApp, single point of failure) + prossimi passi per fissarlo come Metodo. Prodotto: PDF preventivo da annuncio auto, €2.000 una tantum.
 - [[projects/Piano_Maestro_EMPIRE_OS|🏛️ PIANO MAESTRO EMPIRE OS]] — **IL piano fondativo di Digital Empire Group** (2026-06-10): holding di 10 ecosistemi di agenti AI, 10 dossier esecutivi in `PIANO-MAESTRO/`, roadmap F1→F12. Ecosistema 10 MEMORY già costruito (`company/Memory/` — memory-first obbligatorio: interroga prima, checkpoint dopo). Fase corrente: F1.
 - [[projects/Exponium/Exponium_Content_Factory_Studio|Exponium Content Factory (AION GROUP)]] — Holding AI enterprise per lancio Exponium. 6 ecosistemi, 8 reparti, Corporate Backbone, 68 quality check, pipeline UGC reale testata (2026-05-29). **Modello architettonico di riferimento per Digital Empire.**
 

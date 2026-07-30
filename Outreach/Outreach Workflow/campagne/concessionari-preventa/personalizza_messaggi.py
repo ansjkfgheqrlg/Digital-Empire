@@ -24,11 +24,20 @@ MITTENTE = "Max"
 BRAND = "Preventa"
 
 
-def scegli_gancio(note_qualifica: str, priorita: str, ha_sito: str) -> dict:
+def scegli_gancio(note_qualifica: str, priorita: str, ha_sito: str, categoria: str = "") -> dict:
     """Logica da preventa-maps-scraper/LEGGIMI.md §8: ALTA no sito/sito scarso -> Gancio 3,
-    ALTA poche recensioni -> Gancio 2, altrimenti Gancio 1 (control).
+    ALTA poche recensioni -> Gancio 2, altrimenti Gancio 1 (control), IMPORT -> Gancio 4.
     Nota: scraper.py marca ALTA sia "Senza sito web" sia "Sito vecchio/scarso" (ha_sito=True
-    ma punteggio basso) — entrambi i casi vanno sul Gancio 3 (leva immagine/brand)."""
+    ma punteggio basso) — entrambi i casi vanno sul Gancio 3 (leva immagine/brand).
+
+    Gancio 4 (import) ha priorità su tutto il resto e ignora priorita_lead: un concessionario
+    import può avere un sito curato (BASSA) e restare comunque un ottimo target, perché il suo
+    dolore non è "il sito è vecchio" ma "tradurre annunci esteri e fare il preventivo in italiano
+    richiede tempo doppio" — un problema diverso, non catturato dallo score sito."""
+    categoria_l = (categoria or "").lower()
+    if "import" in categoria_l:
+        return {"numero": 4, "nome": "Import / annunci esteri", "motivo": "concessionario import (query di scraping import-focus)"}
+
     note = (note_qualifica or "").lower()
     ha_sito_str = str(ha_sito).strip().lower()
     sito_assente = ha_sito_str in ("false", "no", "0", "", "none")
@@ -43,7 +52,16 @@ def scegli_gancio(note_qualifica: str, priorita: str, ha_sito: str) -> dict:
 
 def whatsapp_msg1(nome_attivita: str, citta: str, gancio: dict) -> str:
     nome_attivita = nome_attivita.strip()
-    if gancio["numero"] == 3:
+    if gancio["numero"] == 4:
+        corpo = (
+            f"Ciao, sono {MITTENTE} di {BRAND} 👋\n"
+            f"Ho visto {nome_attivita} su Maps — fate anche auto di importazione.\n"
+            f"Mi dicono diversi concessionari import in zona {citta}: con gli annunci esteri "
+            f"(tedeschi, ecc.) il preventivo in italiano richiede doppio lavoro, tra traduzione e "
+            f"calcoli a mano.\n"
+            f"Come li gestite oggi i preventivi sulle auto import?"
+        )
+    elif gancio["numero"] == 3:
         corpo = (
             f"Ciao, sono {MITTENTE} di {BRAND} 👋\n"
             f"Ho visto {nome_attivita} su Maps - immagine curata online.\n"
@@ -102,7 +120,7 @@ def whatsapp_msg3(nome_attivita: str) -> str:
     """Da 02_SCRIPT_WHATSAPP_EMAIL_3MSG.md — dopo sì a msg2, o G+5 di silenzio dopo msg1."""
     return (
         f"Fatto. Ti preparo io il demo con un vostro annuncio in 15 min su schermo, senza impegno.\n"
-        f"Licenza a canone, disdetta libera con kill-switch se non lo usate più.\n"
+        f"€2.000 una tantum, pagamento unico: nessun canone.\n"
         f"Domani alle 11:00 o giovedì alle 16:30 ti va meglio per vederlo?"
     )
 
@@ -129,7 +147,7 @@ def email3(nome_attivita: str, citta: str) -> dict:
             f"Chiudo il giro contatti nella zona di {citta} questa settimana.\n"
             f"Se non è prioritario per voi velocizzare i preventivi ora, nessun problema.\n"
             f"Se invece vuoi dare un'occhiata, ti faccio vedere tutto in 15 min su un vostro annuncio. "
-            f"Canone mensile, disdetta libera con kill-switch.\n"
+            f"€2.000 una tantum, pagamento unico, nessun canone.\n"
             f"Altrimenti archivio.\n"
             f"Va bene così?\n"
             f"{MITTENTE} - {BRAND}"
@@ -149,7 +167,8 @@ def genera_messaggi(riga: dict) -> dict:
     note = riga.get("note_qualifica", "")
     ha_sito = riga.get("ha_sito", "")
 
-    gancio = scegli_gancio(note, priorita, ha_sito)
+    categoria = riga.get("categoria", "")
+    gancio = scegli_gancio(note, priorita, ha_sito, categoria)
     canale_primario = "whatsapp" if normalizza_telefono(telefono) else "email"
 
     return {

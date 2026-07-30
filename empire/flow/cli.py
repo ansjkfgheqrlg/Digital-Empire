@@ -234,3 +234,12 @@ def register(sub) -> None:
         pass
     else:
         _controllo.register(sub)
+
+    # `empire cantiere` — presa di costruzione del cervello sui modelli operativi
+    # (prossimo passo per YT-Factory / Stream-S7 / Outreach). Registrato da qui (cli.py congelato).
+    try:
+        from .. import cantiere as _cantiere
+    except ImportError:
+        pass
+    else:
+        _cantiere.register(sub)

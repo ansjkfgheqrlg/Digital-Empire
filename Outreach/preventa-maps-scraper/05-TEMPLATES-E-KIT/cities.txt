@@ -1,7 +1,11 @@
 # Una città/provincia per riga
 # Righe con # ignorate
 # M-EST-9 chiusa (Max, 2026-07-28): Nord+Centro, pilota Milano/Bergamo/Brescia incluso
+# Espanso 2026-07-29 per il flusso automatico giornaliero /avvia-outreach-preventa:
+# pool grande cosi' la rotazione multi-giorno non esaurisce lead freschi in 2-3 run.
+# outreach_giornaliero.py pesca N città/giorno da qui a rotazione (indice = giorno % pool).
 
+# --- Pilota originale ---
 Milano
 Bergamo
 Brescia
@@ -12,3 +16,59 @@ Torino
 Verona
 Bologna
 Padova
+
+# --- Lombardia (resto) ---
+Pavia
+Cremona
+Mantova
+Lecco
+Lodi
+Sondrio
+Busto Arsizio
+Legnano
+Seregno
+Vigevano
+
+# --- Piemonte ---
+Novara
+Alessandria
+Asti
+Cuneo
+Vercelli
+Biella
+Moncalieri
+
+# --- Veneto ---
+Vicenza
+Treviso
+Rovigo
+Belluno
+Chioggia
+Bassano del Grappa
+
+# --- Emilia-Romagna ---
+Modena
+Reggio Emilia
+Parma
+Ferrara
+Ravenna
+Rimini
+Piacenza
+
+# --- Toscana ---
+Firenze
+Prato
+Livorno
+Pisa
+Arezzo
+Lucca
+
+# --- Liguria ---
+Genova
+La Spezia
+Savona
+
+# --- Marche/Umbria (bordo Centro) ---
+Ancona
+Pesaro
+Perugia

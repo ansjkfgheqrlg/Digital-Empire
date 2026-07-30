@@ -1,0 +1,15 @@
+{
+  "tipo": "errore",
+  "titolo": "Avevo diagnosticato le porte con OAuth/API: sbagliato, l'azienda usa Playwright per tutto",
+  "autore": "Claude",
+  "prova": "Trovati youtube_uploader_playwright.py (launch_persistent_context su chrome-profile 260M), instagram_session.json, linkedin_session.json. Nessun OAuth serve.",
+  "quando": "2026-07-29T08:35:21+02:00",
+  "contesto": "Correzione di Max: 'facciamo tutto con Playwright SEMPRE'. Il gate reale non e' OAuth ma sessione browser loggata (+freschezza). empire controllo riscritto col modello giusto.",
+  "tags": [
+    "controllo",
+    "playwright",
+    "correzione",
+    "errore"
+  ],
+  "id": "ERR-20260729-avevo-diagnosticato-le-porte-con"
+}

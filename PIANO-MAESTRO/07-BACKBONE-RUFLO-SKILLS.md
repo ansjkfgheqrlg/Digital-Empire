@@ -32,6 +32,14 @@
 >   mancanti (rubrica/DLQ/replay/checkpoint) dentro `11-APEX-7-CORE` — raccomandazione aperta
 >   per Max, non decisa qui.
 >
+> **Nota di merge (2026-07-30):** i lotti `TASK-YT-001..007` sono stati eseguiti **due volte in
+> parallelo** da due sessioni che non si vedevano (Gael/Claude e Max/Claude), con implementazioni
+> diverse dello stesso risultato. Sopravvive l'implementazione con `dashboard_path` overridabile
+> (richiesta dal `test_youtube_apex7.py` mergiato); di Max resta il ritiro *additivo* di
+> `run_youtube_apex7.py` (deprecato con banner + scrittura su `*-LEGACY.md`, migliore della
+> cancellazione: rispetta il vincolo additivo). Checkpoint di quella linea:
+> CP-20260729-003/004/005/006/008.
+>
 > Dettaglio tecnico completo: [CP-20260728-001](../company/Memory/checkpoints/CP-20260728-001.md).
 
 **Regola madre (ereditata da CF, ADR-005):** Ruflo COORDINA (stato, memoria, swarm, consensus),

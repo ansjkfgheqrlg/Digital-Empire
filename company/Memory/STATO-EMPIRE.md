@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-07-30 (Gael: TASK-GAEL-NFT-METODO CHIUSO — 78/78 controlli, verdetto INVARIATO bocciato per live — CP-20260730-007)
+# STATO EMPIRE -- aggiornato 2026-07-30 (Gael: TASK-GAEL-NFT-METODO CHIUSO — 78/78 controlli, verdetto INVARIATO bocciato per live — CP-20260730-007 · Max: nuovo membro NERI)
 ---
 
 ## ✅ 2026-07-30 — GAEL: TASK-GAEL-NFT-METODO CHIUSO — 78/78 controlli, verdetto INVARIATO bocciato per live — CP-20260730-007
@@ -81,13 +81,13 @@ monetizzato, obiettivo puro views, contenuto copiato/adattato da **@dosementale*
 psicologia/benessere, non tech). Regole operative complete e standard qualità obbligatori
 (durata 12min+, voce e sottotitoli verificati col file reale, limite noto sulla velocità Fliki):
 [RULES-VIDEO-FACTORY-DOSEMENTALE.md](RULES-VIDEO-FACTORY-DOSEMENTALE.md). Dettaglio tecnico:
-[CP-20260729-001](checkpoints/CP-20260729-001.md), [CP-20260729-002](checkpoints/CP-20260729-002.md).
+[CP-20260729-001](checkpoints/CP-20260729-009.md), [CP-20260729-002](checkpoints/CP-20260729-010.md).
 
 ---
 
 
 
-## ✅ 2026-07-29 — GAEL: PRIMO VIDEO REALE dalla fabbrica YouTube (F1→F6 + copertina + Fliki, tutto reale) — CP-20260729-001
+## ✅ 2026-07-29 — GAEL: PRIMO VIDEO REALE dalla fabbrica YouTube (F1→F6 + copertina + Fliki, tutto reale) — CP-20260729-009
 Gael ha fornito la `FLIKI_API_KEY` reale (salvata in `.env`, gitignored). Corretti 2 bug in
 `fliki_client.py` (parsing scene via istanza, non funzione; language/dialect `_id` reali al
 posto degli slug) ed eseguito con successo: video scaricato in
@@ -98,7 +98,7 @@ case-sensitivity nel filtro genere (corretto per le prossime run, non rigenerato
 **Per la prima volta la fabbrica ha prodotto un video reale end-to-end**: competitor scelto su
 dati reali (Andrea Ciraolo, indice 78.4) → script migliorato → copertina reale (Arena.ai via
 Playwright) → video reale (Fliki API). Dettaglio tecnico completo (inclusi tutti i bug e le
-correzioni della sessione) in [CP-20260729-001](checkpoints/CP-20260729-001.md).
+correzioni della sessione) in [CP-20260729-001](checkpoints/CP-20260729-009.md).
 
 **RIPRESA DA:** decidere con Gael se rigenerare il video con voce maschile o tenere "Fiamma";
 poi popolare `memory/published_videos.json` quando il video verrà davvero caricato su YouTube,
@@ -106,7 +106,7 @@ per chiudere il loop di audit reale di F6 (TASK-YT-004).
 
 ---
 
-## 🟠 2026-07-29 — GAEL: run reale fabbrica YouTube — copertina fatta (Arena.ai/Playwright), video Fliki in attesa di API key — CP-20260729-001
+## 🟠 2026-07-29 — GAEL: run reale fabbrica YouTube — copertina fatta (Arena.ai/Playwright), video Fliki in attesa di API key — CP-20260729-009
 Su richiesta diretta di Gael: scelto un video competitor su dati reali (Andrea Ciraolo, indice
 Cash Cow 78.4), scritto lo script migliorato, generata la spec Fliki e i metadati (già coperto
 dai lotti TASK-YT-001..005). **Novità di oggi**: la copertina. Canva (MCP collegato) ha la
@@ -124,7 +124,7 @@ Enterprise recuperata (`developer.fliki.ai`) e client scritto (`fliki_client.py`
 `POST /v1/generate/video` + `/v1/voices` + `/v1/generate/status`) — pronto ma non eseguibile
 senza la chiave reale. **In attesa che Gael la fornisca.**
 
-Vedi [CP-20260729-001](checkpoints/CP-20260729-001.md) per il dettaglio tecnico completo
+Vedi [CP-20260729-001](checkpoints/CP-20260729-009.md) per il dettaglio tecnico completo
 (inclusa la sequenza di debug del blocco Google, utile per chi ritocca `arena_thumbnail.py`).
 
 **RIPRESA DA:** Gael passa `FLIKI_API_KEY` → eseguire `fliki_client.py` per il video reale.
@@ -275,6 +275,174 @@ stessi metadati statici).
 
 ---
 
+
+## 👤 2026-07-30 — NUOVO MEMBRO: NERI (gestione piani/metodi, organizzativo — non operativo)
+Si è unito **Neri**, terzo membro del team oltre a Max e Gael. **Ambito: gestione organizzativa
+— piani, metodi, processi.** Non tocca operatività diretta (codice/build/run). Ruolo distinto
+da Gael (operativo, esegue task assegnati da Max — [[feedback_ordini_gael_assoluti]]) e da Max
+(owner/decisore finale).
+
+**Implicazione pratica per Claude**: i blocchi ⚠️ COORDINAMENTO restano scoped a chi tocca file
+operativi (Max/Gael) — Neri non serve avvisarlo per collisioni di codice. Per decisioni di
+metodo/processo (ADR, ciclo di fase, ristrutturazioni organizzative — dossier
+`PIANO-MAESTRO/10-METODO-CICLO-FASE.md`, REGOLA UNO del CLAUDE.md) Neri è il punto di
+riferimento organizzativo, ma **Max resta il decisore finale** salvo indicazione contraria.
+Ruolo verrà precisato meglio quando emergono task concreti assegnati a lui.
+
+---
+
+## ⚠️ ASSEGNAZIONE + COORDINAMENTO 2026-07-30 (Claude -> GAEL) — TASK-GAEL-20260730-STREAM-S7-NFT-METODO
+
+Ordine diretto di Max: metodo logico-matematico per trading NFT/token su marketplace stile
+"Magic Eden" (Solana), da costruire in ondate — **10 blocchi + 8 miglioramenti + 4
+perfezionamenti + 3 controlli chirurgici**, preceduto da una tecnica di studio/analisi a 7
+miglioramenti stile APEX-7, poi `/content-forge` + `gh repo clone
+ansjkfgheqrlg/master-build-architecture`. Spec completa, prompt originale integrato, gate e
+perimetro: `company/Memory/tasks/TASK-GAEL-20260730-STREAM-S7-NFT-METODO.md`. Dettagli in
+[CP-20260730-001](checkpoints/CP-20260730-001.md).
+
+**Zona di lavoro**: `company/Ecosistemi/12-STREAM-S7-BOT/`. File congelati invariati (event bus,
+memory, gate — vedi perimetro nel task). Nuovo layer NFT si affianca al motore memecoin già
+chiuso (G-A/G-B/G-C), non lo sostituisce. Resta paper trading: nessuna chiave privata vera,
+nessuna modalità LIVE senza PASS del gate L5. Classificazione R&D speculativo/0€ revenue
+(ECOSISTEMA.md) invariata finché `report-studio.md` non viene aggiornato con expectancy positiva
+verificata — chi lavora su altri stream (Preventa/YouTube/S1/S2) non deve fermarsi per questo.
+
+Prima di toccare `12-STREAM-S7-BOT/`: chiunque altro stia lavorando lì in parallelo, `git pull`
+e verifica `python test_apex7.py` verde (13/13) prima di iniziare, per non collidere con questo
+task.
+
+## ASSEGNAZIONE + COORDINAMENTO 2026-07-29 (Claude -> GAEL) — TASK-YT-006, finire YouTube OGGI
+Ordine di Max: finire YouTube oggi, split Claude+Gael. **Claude ha chiuso TASK-YT-002/003/004/005/007**
+(F4 multi-scena, F5 metadati/SEO, F6 audit onesto, dashboard PASS/FAIL reale, docs). Resta UN lotto:
+**TASK-YT-006 -> GAEL**. E cross-ecosistema (ritiro orchestratore APEX-7 duplicato dentro
+12-STREAM-S7-BOT, ecosistema tuo) percio va a te, non a Claude, per non collidere sui tuoi file trading.
+Spec pronta: company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-006. Gate:
+12-STREAM-S7-BOT/test_apex7.py resta verde (9/9) dopo aver migrato i moduli APEX-7 generici al motore
+condiviso 11-APEX-7-CORE, OPPURE motivazione scritta se decidi di non farlo in questo giro. Chiuso 006:
+aggiorna taskboard.json TASK-YT-006->fatto + CP; YouTube e al 100% (7/7 lotti). NON toccare
+apex7_orchestrator.py della YT-Factory (gia chiuso da Claude, F1-F6 reali). Vedi CP-20260729-008.
+
+---
+
+## 📲 2026-07-29 — OUTREACH PREVENTA: INVIO WHATSAPP REALE + FLUSSO GIORNALIERO AUTOMATICO — CP-20260729-007
+> Max ha chiesto invio WhatsApp reale (non solo copy-paste) + flusso automatico multi-giorno,
+> minimo 50 concessionari scraped e 50 messaggi/giorno, focus totale su import, comando unico
+> `/avvia-outreach-preventa`.
+
+Sessione WhatsApp fixata al 2° tentativo: `storage_state` Playwright non cattura le chiavi
+IndexedDB di WhatsApp Web (causa vera della sessione persa), risolto con profilo Chromium
+persistente (`launch_persistent_context`, stesso pattern gia' usato per YouTube in questo repo).
+Invio reale confermato: messaggio mandato davvero ad "Auto Occasioni Milano", stage
+NEW->CONTACTED in Areus subito dopo (mai fake). Bug di normalizzazione numero fixato prima di
+mandare qualunque cosa (prefisso mobile 392/393 scambiato per gia'-internazionale).
+
+Nuovo `outreach_giornaliero.py` + skill `/avvia-outreach-preventa`: FASE 1 scraping import-focus
+(cities.txt espanso 10->55 città per rotazione multi-giorno senza esaurire lead freschi,
+`run.py` esteso con `--categorie` plurale) -> FASE 2 invio WhatsApp fino a 50/giorno, ritmo
+umano (45-120s), stop automatico su segnali di ban account o profilo Chrome occupato, mai più
+di 5 fallimenti consecutivi senza fermarsi.
+
+**Bug reale trovato testando, non ipotetico:** il primo test scraping (Brescia, import-focus)
+ha prodotto 12 lead nuovi ma solo 3 mobile, tutti priorità BASSA — il filtro invio originale
+(pensato per "sito vecchio") li escludeva tutti: 0 invii possibili, il focus-import svuotava
+il funnel. Fix onesto (non un trucco per gonfiare i numeri): nuovo **Gancio 4 "Import/annunci
+esteri"** in `personalizza_messaggi.py`, attivo su categoria import, ignora priorita_lead — il
+dolore reale di un concessionario import è tradurre annunci esteri, non "il sito fa schifo".
+Ri-testato: eligibili 0 -> 2, dry-run puliti su entrambi.
+
+Rischio comunicato esplicitamente a Max (non nascosto nei commenti): 50 msg/giorno da un numero
+personale è rischio ban reale, costruito con le protezioni possibili ma non a zero rischio.
+
+**RIPRESA DA:** comando pronto (`/avvia-outreach-preventa`). Consigliato (non imposto) un primo
+giorno a cap più basso per osservare la tenuta dell'account prima di salire a 50. Vedi
+[CP-20260729-007](checkpoints/CP-20260729-007.md).
+
+---
+
+## YT-FACTORY 2026-07-29 — TASK-YT-005 CHIUSA (dashboard reale) — TUTTI I P1 CHIUSI — CP-20260729-006
+Quarto lotto YT della sessione. Nuovo Apex7Orchestrator.write_dashboard() scrive la dashboard dai
+dati REALI (canale/video/esito per fase); execute_workflow traccia fasi_esito e la chiama su successo
+E su fallimento (prima faceva sys.exit prima di scrivere -> non vedeva mai un FAIL). Ritirato il
+percorso fantasma run_youtube_apex7.py (Conductor mock, sempre 6x PASS su Dose Mentale): deprecato +
+scrive su *-LEGACY.md, non clobbera piu la dashboard vera (non cancellato). Gate VERDE: PASS -> 6x
+verde; F2 fallita -> F2 rosso + F3-F6 non eseguite + exit 1; test 11/11. **FABBRICA YOUTUBE: F1-F6
+reali + dashboard onesta. Tutti i lotti P1 (TASK-YT-002..005) CHIUSI in una sessione.** Restano solo
+P2: TASK-YT-006 (ritiro APEX-7 duplicato in Stream-S7, cross-eco, serve COORD) e TASK-YT-007 (docs).
+**RIPRESA DA:** TASK-YT-006 o TASK-YT-007.
+
+---
+
+## YT-FACTORY 2026-07-29 — TASK-YT-004 CHIUSA (F6 audit onesto) — CP-20260729-005
+Terzo lotto YT della sessione. `run_phase_6` non appende piu views_per_hour 35.5 FINTO (il
+self-improver imparava su rumore inventato). Ora audit su manifest published_videos.json: nessuna
+voce reale -> nessuna scrittura; voce <24h -> nessuna scrittura; voce reale vecchia -> views_per_hour
+CALCOLATO da fetch pubblico reale (ctr/retention null, servono YouTube Studio). Gate VERDE: caso A
+(no manifest) e B (troppo recente) -> 0 righe aggiunte; test 11/11. **Fabbrica YouTube: F1-F6 ora
+oneste/reali.** Resta P1 TASK-YT-005 (dashboard PASS/FAIL reale), poi P2 006/007.
+**RIPRESA DA:** TASK-YT-005 (write_dashboard reale, gate forza un FAIL).
+
+---
+
+## YT-FACTORY 2026-07-29 — TASK-YT-003 CHIUSA (F5 metadati/tag reali) — CP-20260729-004
+Secondo lotto costruito dall'Estate nella stessa sessione. `run_phase_5` non piu hardcoded: titolo
+da working_memory reale, descrizione+brief dalle sezioni REALI dello script (_sezioni_script), tag da
+learned_rules[high_performing_tags] + token del titolo + hook_type. Gate VERDE: 2 script -> titolo/tag
+diversi, seo_score 100/100 pass_soglia_70 entrambi, validate metadati+brief PASS, test 11/11.
+**Fabbrica YouTube: F1-F5 ora reali; restano finti F6 (TASK-YT-004) e Dashboard (TASK-YT-005).**
+**RIPRESA DA:** TASK-YT-004 (F6 audit onesto, manifest published_videos.json, niente views finte).
+
+---
+
+## YT-FACTORY 2026-07-29 — TASK-YT-002 CHIUSA (F4 spec Fliki multi-scena) — CP-20260729-003
+Primo modello costruito dall'Estate dopo la presa di controllo (`empire cantiere`). `run_phase_4`
+non e piu hardcoded a 1 scena fissa: nuova `_scene_da_script` deriva le scene dallo script.md REALE
+di F3 (HOOK/INTRO/CORPO/CTA -> frasi, taglia regia+timecode), title/hook_type/video_id reali dalla
+working_memory. Gate VERDE: 2 script diversi -> scene_count 9 vs 8 + testo diverso, validate_schemas
+PASS entrambi, test_youtube_apex7 11/11 OK. Un solo file toccato (apex7_orchestrator.py, perimetro
+del lotto). Taskboard TASK-YT-002=fatto. **RIPRESA DA:** TASK-YT-003 (F5 metadati reali, oggi
+hardcoded come era F4), stesso metodo.
+
+---
+
+## COORDINAMENTO 2026-07-29 (Claude) — TASK-YT-002 in lavorazione (F4 Produzione)
+Claude prende in mano **TASK-YT-002** (F4 Produzione: spec Fliki multi-scena da script.md reale) su
+ordine diretto di Max (il Workflow Estate deve costruire lui i modelli operativi). File toccato in
+ESCLUSIVA per questo lotto: `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/apex7_orchestrator.py`
+(solo `run_phase_4` + una funzione module-level `_scene_da_script`). NON tocco il motore condiviso
+11-APEX-7-CORE ne i file trading di Stream-S7. Gael: se stai su questo lotto, pingami prima di editare
+run_phase_4 per non collidere. Chiudo con gate (2 script diversi -> scene_count/testo diversi,
+validate_schemas PASS, test_youtube_apex7 11/11) + checkpoint + taskboard TASK-YT-002=fatto.
+
+---
+
+## 🏗️ 2026-07-29 — PRESA DI COSTRUZIONE empire-wide: `empire cantiere` — CP-20260729-002
+Il cervello (WORKFLOW-ESTATE) ora GOVERNA i 3 modelli operativi, non li osserva soltanto.
+Nuovo comando `empire cantiere`: legge registro visibile `WORKFLOW-ESTATE/01-FLUSSI-E-PIANI/MODELLI-OPERATIVI.json`
++ taskboard + STATO-RIPRESA per modello, dà il PROSSIMO PASSO di costruzione con check reali su disco
+(entrypoint esiste? altrimenti ASSENTE). Distinzione netta: `controllo`=porta USCITA (pronto a spedire?),
+`cantiere`=porta COSTRUZIONE (pronto a finire, prossimo passo?). Verità misurata: **3 modelli governati,
+1 costruibile adesso = YouTube/TASK-YT-002** (F4 Fliki multi-scena). Stream-S7 bloccato su B-010 (RPC a
+pagamento=Max); Outreach bloccato su re-login social + 'via' su invii (atti di Max). Dashboard visibile:
+`WORKFLOW-ESTATE/06-DASHBOARD-E-METRICHE/CANTIERE.md`. **RIPRESA DA:** costruire TASK-YT-002 col ciclo
+a 9 passi, previo blocco COORDINAMENTO per non collidere con Gael.
+
+---
+
+## 🎛️ 2026-07-29 — CENTRO DI COMANDO empire-wide + correzione modello Playwright — CP-20260729-001
+`empire controllo` = plancia su TUTTI i workflow (YT/IG/LinkedIn/Outreach/S7/incasso), verdetto
+PARTE/SERVE-MAX per ognuno. **Errore mio corretto da Max:** avevo classificato le porte con OAuth/API
+— l'azienda fa TUTTO con **Playwright** (browser reale loggato: `EmpireDesk/chrome-profile` 260M,
+`instagram_session.json`, `linkedin_session.json`). Gate riscritto: "sessione loggata + fresca?",
+non OAuth. **Nessun OAuth manca.** Restano atti fisici piccoli di Max: 2 re-login social (1 min l'uno,
+sessioni IG 54gg/LinkedIn 71gg), 1 video da renderizzare (.mp4), 2 Payment Link Stripe (incasso).
+PARTONO senza atto di Max: Outreach email (Gmail) + S7 (paper). **Non lancio invii/pubblicazioni a
+persone reali senza 'via' esplicito + dry-run** (irreversibile). Comandi: `empire controllo` ·
+`empire avvia-estate`.
+
+---
+
+# STATO EMPIRE -- aggiornato 2026-07-28 (Gael: TASK-YT-001 chiusa — critic+agents.py sul motore condiviso 11-APEX-7-CORE · TASK-GAEL-20260728-STREAM-S7-BOT chiusa — parser reale, position manager, fix spam · YT-Factory task Gael formalizzati con ID TASK-YT-001..007 · TASK-PREVENTA-AREUS-001 chiusa · STREAM-S7-BOT loop trading collegato + task Gael · /avvia-estate-wk · prezzo Preventa €2.000 · scraper→Areus · FUSIONE RUFLO+APEX-7 · WORKFLOW ESTATE OPERATIVO)
 ## 🟣 2026-07-28 — GAEL: TASK-YT-001 CHIUSA — critic + agents.py sul motore condiviso 11-APEX-7-CORE — CP-20260728-007
 Primo dei 7 lotti YT (`TASK-GAEL-20260728-YOUTUBE-FACTORY.md`), dipendenza architetturale per
 TASK-YT-002..007. `Apex7Orchestrator` ora istanzia `APEX7Memory(domain="youtube")` +

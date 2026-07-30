@@ -1,0 +1,42 @@
+{
+  "_nota": "REGISTRO DEI MODELLI OPERATIVI GOVERNATI DAL WORKFLOW-ESTATE (il cervello). Letto da `empire cantiere`. Additivo: aggiungere un modello = una voce qui, nessun codice da toccare. I path sono relativi alla radice del monorepo (Digital Empire). Ogni voce dichiara dove sta il modello, il suo entrypoint reale, da dove si legge il suo avanzamento (taskboard/STATO-RIPRESA), e il prossimo passo di costruzione curato a mano (tenuto onesto: se cambia lo stato, si aggiorna qui).",
+  "_aggiornato": "2026-07-29",
+  "modelli": [
+    {
+      "id": "youtube",
+      "nome": "YOUTUBE-AUTOMATION-FACTORY",
+      "path": "YOUTUBE-AUTOMATION-FACTORY",
+      "ruolo": "Genera video YouTube in automatico (pipeline APEX-7 a 6 fasi F1-F6).",
+      "entrypoint": "YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS",
+      "stato_ripresa": null,
+      "task_prefissi": ["TASK-YT-"],
+      "owner": "Gael",
+      "prossimo_passo": "QUASI CHIUSO (2026-07-29): F1-F6 reali + dashboard onesta + docs allineati (TASK-YT-002/003/004/005/007 fatti da Claude). Resta 1 solo lotto: TASK-YT-006 (ritiro APEX-7 duplicato in 12-STREAM-S7-BOT) ASSEGNATO A GAEL (cross-eco, suo ecosistema). Chiuso 006 -> YouTube 7/7. Operativo residuo per Max: render .mp4 + upload Playwright per pubblicare un video vero.",
+      "blocco": null
+    },
+    {
+      "id": "stream-s7",
+      "nome": "12-STREAM-S7-BOT",
+      "path": "company/Ecosistemi/12-STREAM-S7-BOT",
+      "ruolo": "Bot trading Solana su segnali stream (paper trading per design).",
+      "entrypoint": "company/Ecosistemi/12-STREAM-S7-BOT/main.py",
+      "stato_ripresa": "company/Ecosistemi/12-STREAM-S7-BOT/STATO-RIPRESA.md",
+      "task_prefissi": ["TASK-GAEL-20260728-STREAM-S7", "TASK-S7-"],
+      "owner": "Gael/Claude",
+      "prossimo_passo": "L2->L3: collegare analysis_engine/execution_engine al ciclo Orchestrator->Gate->Memory; tarare le soglie gate su esecuzioni misurate; far scrivere al bot le sue metriche nel layer memoria.",
+      "blocco": "B-010 (BACKLOG.md): serve un RPC provider a pagamento prima di qualunque LIVE reale. Decisione capitale = Max."
+    },
+    {
+      "id": "outreach",
+      "nome": "Outreach (concessionari preventa + content/outreach factory)",
+      "path": "Outreach",
+      "ruolo": "Contatto concessionari (email/IG/LinkedIn via Playwright) + scraper preventa Maps -> lead reali su Areus.",
+      "entrypoint": "Outreach/run_parallel.py",
+      "stato_ripresa": null,
+      "task_prefissi": ["TASK-PREVENTA", "TASK-OUTREACH"],
+      "owner": "Claude/Max",
+      "prossimo_passo": "Rinfrescare sessioni social (IG 54gg, LinkedIn 71gg) poi lanciare contatti via Playwright su target approvato (dry-run prima). Email SMTP gia' pronta: parte con 'via' + dry-run.",
+      "blocco": "Invii a persone reali: irreversibili -> serve 'via' esplicito di Max + dry-run. Re-login social: atto fisico di Max (2FA)."
+    }
+  ]
+}
