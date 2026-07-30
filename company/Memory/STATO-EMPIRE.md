@@ -1,4 +1,49 @@
 # STATO EMPIRE -- aggiornato 2026-07-29 (Gael: PIVOT — canale reale @dosementale, non Claude Code/Manuale morto. Regole fisse in RULES-VIDEO-FACTORY-DOSEMENTALE.md — CP-20260729-001/002)
+---
+
+## ⚠️ COORDINAMENTO GAEL/CLAUDE — 2026-07-30 — TASK-GAEL-20260730-STREAM-S7-NFT-METODO: divergenza git trovata prima di partire
+
+Prima di toccare qualunque cosa (ordine di marcia §1 del task), eseguito `git fetch origin main`
+per fare il `git pull` richiesto: **HEAD locale (`fa7b7e06`) e `origin/main` (`31403161`, il
+commit di riferimento del task) sono DIVERGENTI**, non un semplice fast-forward.
+
+**Comando eseguito e prova:**
+```
+git merge-base --is-ancestor HEAD origin/main  -> NOT_ANCESTOR
+git log --oneline HEAD..origin/main  -> 12 commit (incl. 31403161, task NFT; e77d7077/2d765ba2,
+                                         TASK-YT-006/007 chiusi in parallelo)
+git log --oneline origin/main..HEAD  -> 8 commit (incl. fa7b7e06/32bfcaf2, TASK-YT-002..007
+                                         chiusi anche qui, stessa numerazione, contenuto diverso)
+merge-base comune: fc8ba4e0
+```
+**Causa**: due sessioni (questa + una remota, presumibilmente Max) hanno eseguito **lo stesso
+lotto TASK-YT-002..007** in parallelo partendo dallo stesso antenato (`5f9fcea3`/`fc8ba4e0`),
+con implementazioni diverse (es. `run_youtube_apex7.py`: qui ritirato con `git rm` in
+TASK-YT-005, sul remoto invece riscritto/mantenuto). Un `git pull`/merge pieno toccherebbe
+`YOUTUBE-AUTOMATION-FACTORY/**`, `Outreach/**`, `company/Memory/STATO-EMPIRE.md`+`INDEX.md`
+(entrambi editati su entrambi i lati) — file **fuori dal perimetro di questo task NFT** e che
+non mi risulta di mia competenza risolvere unilateralmente (lavoro reale di un'altra sessione,
+non mio da giudicare).
+
+**Scelta fatta (non ho indovinato, ho verificato)**: **non ho eseguito un merge pieno.**
+Il perimetro di questo task (`12-STREAM-S7-BOT`, `company/Memory/tasks/`) **non ha alcuna
+divergenza reale** — `git diff --stat HEAD origin/main` non riporta nessun file di
+`12-STREAM-S7-BOT` in conflitto, solo un file nuovo (`LOGICA-COMPLETA-S7.md`) e il task stesso,
+entrambe aggiunte pure. Estratti chirurgicamente con `git show origin/main:<path> > <path>`
+(nessuna sovrascrittura, nessun file toccato oltre ai 2 nuovi):
+- `company/Ecosistemi/12-STREAM-S7-BOT/LOGICA-COMPLETA-S7.md`
+- `company/Memory/tasks/TASK-GAEL-20260730-STREAM-S7-NFT-METODO.md`
+
+`python test_apex7.py` confermato verde **13/13** (sezioni 1-13, verdetto finale
+`PASSED score 1.0`) sia prima che dopo l'estrazione (nessun file dell'ecosistema toccato dalla
+divergenza). Procedo sul task NFT su questa base.
+
+**Resta aperto per Max/chi gestisce la sync**: la divergenza di 8 vs 12 commit su
+YOUTUBE-AUTOMATION-FACTORY/Outreach/company/Memory resta da riconciliare a mano (merge reale,
+non automatico) — non risolta qui, segnalata soltanto. Vedere `git log --oneline HEAD..origin/main`
+e il verso opposto per il dettaglio commit-per-commit.
+
+---
 
 ## ⚠️ 2026-07-29 — REGOLE FISSE fabbrica video Dose Mentale (leggere prima di toccare YOUTUBE-AUTOMATION-FACTORY)
 Il "Manuale Claude Code" è **morto, non nominarlo più**. Il progetto reale: canale YouTube

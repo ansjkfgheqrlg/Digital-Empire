@@ -2,3 +2,6 @@
 # runtime artifact del test APEX-7
 memory_store.json
 paper_trade_log.csv
+
+# runtime artifact del test NFT (layer S7 NFT, Ondata 1 blocco 10)
+paper_trade_log_nft.csv
