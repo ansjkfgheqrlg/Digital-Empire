@@ -1124,9 +1124,11 @@
       "maps_url": "https://www.google.com/maps/place/M.m.+Auto+srl/@45.775424,8.7950024,13z/data=!4m10!1m2!2m1!1sconcessionario+auto+import+a+Varese!3m6!1s0x478686d915a0a953:0xcf050d0b65791827!8m2!3d45.775424!4d8.8671002!15sCiNjb25jZXNzaW9uYXJpbyBhdXRvIGltcG9ydCBhIFZhcmVzZVolIiNjb25jZXNzaW9uYXJpbyBhdXRvIGltcG9ydCBhIHZhcmVzZZIBC2F1dG9fYnJva2VymgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU53WjBwcU0zWjNSUkFC4AEA-gEECAAQSA!16s%2Fg%2F11f120zyy5?entry=ttu&g_ep=EgoyMDI2MDcyNy4wIKXMDSoASAFQAw%3D%3D",
       "data_estrazione": "2026-07-30",
       "telefono_tipo": "mobile",
-      "stage": "NEW",
+      "stage": "CONTACTED",
       "note": "",
-      "aggiunto_il": "2026-07-30 09:07"
+      "aggiunto_il": "2026-07-30 09:07",
+      "canale_contatto": "whatsapp",
+      "contattato_il": "2026-07-30 10:07"
     },
     {
       "nome_attivita": "Nippo Motors Srl",
@@ -1164,9 +1166,11 @@
       "maps_url": "https://www.google.com/maps/place/Auto+Ferrario+Srl/@45.801904,8.6326196,13z/data=!3m1!5s0x4786796034a39627:0x592c031d7f451ed1!4m10!1m2!2m1!1sconcessionario+auto+import+a+Varese!3m6!1s0x478679750d06db09:0x6f1894c965a41493!8m2!3d45.801904!4d8.7047174!15sCiNjb25jZXNzaW9uYXJpbyBhdXRvIGltcG9ydCBhIFZhcmVzZVolIiNjb25jZXNzaW9uYXJpbyBhdXRvIGltcG9ydCBhIHZhcmVzZZIBCmNhcl9kZWFsZXKaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTjJkVTgzZVVkbkVBReABAPoBBQjOAhAq!16s%2Fg%2F11q4bwlxd1?entry=ttu&g_ep=EgoyMDI2MDcyNy4wIKXMDSoASAFQAw%3D%3D",
       "data_estrazione": "2026-07-30",
       "telefono_tipo": "mobile",
-      "stage": "NEW",
+      "stage": "CONTACTED",
       "note": "",
-      "aggiunto_il": "2026-07-30 09:07"
+      "aggiunto_il": "2026-07-30 09:07",
+      "canale_contatto": "whatsapp",
+      "contattato_il": "2026-07-30 10:10"
     },
     {
       "nome_attivita": "Auto & Auto Varese",
@@ -4569,5 +4573,5 @@
       "aggiunto_il": "2026-07-30 09:58"
     }
   ],
-  "aggiornato": "2026-07-30 10:05"
+  "aggiornato": "2026-07-30 10:10"
 }
