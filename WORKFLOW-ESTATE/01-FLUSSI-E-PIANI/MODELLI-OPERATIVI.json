@@ -11,7 +11,7 @@
       "stato_ripresa": null,
       "task_prefissi": ["TASK-YT-"],
       "owner": "Gael",
-      "prossimo_passo": "P1 TUTTI CHIUSI (2026-07-29): F1-F6 reali + dashboard onesta (TASK-YT-002..005). Restano solo 2 P2 non bloccanti: TASK-YT-006 (ritiro APEX-7 duplicato in 12-STREAM-S7-BOT, cross-eco, serve COORD) e TASK-YT-007 (docs REGISTRO-IMPRESA + dossier 07).",
+      "prossimo_passo": "QUASI CHIUSO (2026-07-29): F1-F6 reali + dashboard onesta + docs allineati (TASK-YT-002/003/004/005/007 fatti da Claude). Resta 1 solo lotto: TASK-YT-006 (ritiro APEX-7 duplicato in 12-STREAM-S7-BOT) ASSEGNATO A GAEL (cross-eco, suo ecosistema). Chiuso 006 -> YouTube 7/7. Operativo residuo per Max: render .mp4 + upload Playwright per pubblicare un video vero.",
       "blocco": null
     },
     {

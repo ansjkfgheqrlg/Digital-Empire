@@ -1,6 +1,6 @@
 # CANTIERE — presa di costruzione del Workflow Estate sui modelli operativi
 
-> Generato da `empire cantiere` il 2026-07-29. Non modificare a mano: si rigenera.
+> Generato da `empire cantiere` il 2026-07-30. Non modificare a mano: si rigenera.
 
 Il cervello (WORKFLOW-ESTATE) governa questi modelli operativi. Per ognuno: dove sta il
 prossimo passo di costruzione, chi lo possiede, se e' bloccato, se il codice esiste davvero.
@@ -9,10 +9,10 @@ prossimo passo di costruzione, chi lo possiede, se e' bloccato, se il codice esi
 
 - **Ruolo:** Genera video YouTube in automatico (pipeline APEX-7 a 6 fasi F1-F6).
 - **Owner:** Gael
-- **Avanzamento:** task board: 5/7 fatti
+- **Avanzamento:** task board: 6/7 fatti
 - **Entrypoint:** `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS` — presente
 - **Prossimo task board:** TASK-YT-006 — YT-Factory (cross-eco): ritiro reimplementazione APEX-7 indipendente in 12-STREAM-S7-BOT (owner Gael)
-- **Prossimo passo:** P1 TUTTI CHIUSI (2026-07-29): F1-F6 reali + dashboard onesta (TASK-YT-002..005). Restano solo 2 P2 non bloccanti: TASK-YT-006 (ritiro APEX-7 duplicato in 12-STREAM-S7-BOT, cross-eco, serve COORD) e TASK-YT-007 (docs REGISTRO-IMPRESA + dossier 07).
+- **Prossimo passo:** QUASI CHIUSO (2026-07-29): F1-F6 reali + dashboard onesta + docs allineati (TASK-YT-002/003/004/005/007 fatti da Claude). Resta 1 solo lotto: TASK-YT-006 (ritiro APEX-7 duplicato in 12-STREAM-S7-BOT) ASSEGNATO A GAEL (cross-eco, suo ecosistema). Chiuso 006 -> YouTube 7/7. Operativo residuo per Max: render .mp4 + upload Playwright per pubblicare un video vero.
 
 ## 12-STREAM-S7-BOT  (`stream-s7`)
 
