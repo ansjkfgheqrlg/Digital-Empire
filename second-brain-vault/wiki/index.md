@@ -30,6 +30,11 @@ Benvenuto nella tua Knowledge Base iper-organizzata. Tutto il materiale di Digit
 
 ---
 
+## 👤 Team
+- [[entities/Neri|Neri]] — Terzo membro del team (2026-07-30), gestione organizzativa/metodo — non operativo. Distinto da Max (owner) e Gael (operativo).
+
+---
+
 ## 🏭 Riferimenti Architetturali (Sistemi Costruiti)
 - [[projects/Preventa/Preventa_Logica_Completa_Metodo|📲 Preventa — Logica Completa del Sistema]] — Flusso end-to-end (2026-07-30): scraping import-focus Google Maps → qualifica priorità → CRM Areus → 4 ganci di aggancio → invio WhatsApp reale (profilo Chromium persistente) → follow-up. Rischi dichiarati (ban WhatsApp, single point of failure) + prossimi passi per fissarlo come Metodo. Prodotto: PDF preventivo da annuncio auto, €2.000 una tantum.
 - [[projects/Piano_Maestro_EMPIRE_OS|🏛️ PIANO MAESTRO EMPIRE OS]] — **IL piano fondativo di Digital Empire Group** (2026-06-10): holding di 10 ecosistemi di agenti AI, 10 dossier esecutivi in `PIANO-MAESTRO/`, roadmap F1→F12. Ecosistema 10 MEMORY già costruito (`company/Memory/` — memory-first obbligatorio: interroga prima, checkpoint dopo). Fase corrente: F1.

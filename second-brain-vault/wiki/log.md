@@ -1,5 +1,12 @@
 # Wiki Log — Registro operazioni
 
+## 2026-07-30 (Nuovo membro team: Neri, Claude/Max)
+- INGEST: Neri si è unito al team (gestione organizzativa/piani/metodi, non operativo) →
+  1 pagina creata [[entities/Neri|Neri]], linkata a [[projects/Piano_Maestro_EMPIRE_OS]],
+  [[concepts/SPARC_Methodology]], [[projects/Preventa/Preventa_Logica_Completa_Metodo]].
+  Aggiunta sezione "Team" in index.md. Specchio anche in `company/Memory/STATO-EMPIRE.md`
+  (nota organi/coordinamento) e memoria persistente Claude (`project_team_neri.md`).
+
 ## 2026-07-30 (CORREZIONE — Stream S7: logica completa documentata, Claude/Max)
 - Max ha corretto: la richiesta era sul bot S7 (NFT/memecoin Solana), non su Preventa
   (voce sotto, lasciata perché comunque valida ma fuori bersaglio). Letto codice reale
