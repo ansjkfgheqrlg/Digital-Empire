@@ -358,9 +358,11 @@
       "maps_url": "https://www.google.com/maps/place/Le+Occasioni+Euro/@45.5687206,-9.1864161,5z/data=!4m10!1m2!2m1!1sconcessionario+auto+import+a+Monza!3m6!1s0x4786bf305901a97f:0x1fae85b45293ca0a!8m2!3d45.5591717!4d9.2046402!15sCiJjb25jZXNzaW9uYXJpbyBhdXRvIGltcG9ydCBhIE1vbnphWiQiImNvbmNlc3Npb25hcmlvIGF1dG8gaW1wb3J0IGEgbW9uemGSAQ91c2VkX2Nhcl9kZWFsZXKaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTnFkV1ZtWmtsQkVBReABAPoBBAgAEDs!16s%2Fg%2F11ggh3f7_2?entry=ttu&g_ep=EgoyMDI2MDcyNy4wIKXMDSoASAFQAw%3D%3D",
       "data_estrazione": "2026-07-30",
       "telefono_tipo": "mobile",
-      "stage": "NEW",
+      "stage": "CONTACTED",
       "note": "",
-      "aggiunto_il": "2026-07-30 08:53"
+      "aggiunto_il": "2026-07-30 08:53",
+      "canale_contatto": "whatsapp",
+      "contattato_il": "2026-07-30 10:01"
     },
     {
       "nome_attivita": "AutoMonza.it minicar | LIGIER MICROCAR CASALINI",
@@ -418,9 +420,11 @@
       "maps_url": "https://www.google.com/maps/place/AUTO+LG+SRL+-+VENDITA+E+ACQUISTO+AUTOMOBILI/@45.5687206,-9.1864161,5z/data=!3m1!5s0x4786b9a853f36695:0xb4d9549970ff0d2a!4m10!1m2!2m1!1sconcessionario+auto+import+a+Monza!3m6!1s0x4786bf1a7180aa0d:0x2024a1deb06e1f80!8m2!3d45.5819537!4d9.2908159!15sCiJjb25jZXNzaW9uYXJpbyBhdXRvIGltcG9ydCBhIE1vbnphWiQiImNvbmNlc3Npb25hcmlvIGF1dG8gaW1wb3J0IGEgbW9uemGSAQpjYXJfZGVhbGVymgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJRYXpSRFgyaG5SUkFC4AEA-gEECAAQRw!16s%2Fg%2F11ggzm28yj?entry=ttu&g_ep=EgoyMDI2MDcyNy4wIKXMDSoASAFQAw%3D%3D",
       "data_estrazione": "2026-07-30",
       "telefono_tipo": "mobile",
-      "stage": "NEW",
+      "stage": "CONTACTED",
       "note": "",
-      "aggiunto_il": "2026-07-30 08:53"
+      "aggiunto_il": "2026-07-30 08:53",
+      "canale_contatto": "whatsapp",
+      "contattato_il": "2026-07-30 10:03"
     },
     {
       "nome_attivita": "Motors Monza",
@@ -698,9 +702,11 @@
       "maps_url": "https://www.google.com/maps/place/AutOutlet+Monza/@45.5687206,9.1985173,13z/data=!4m10!1m2!2m1!1sconcessionario+auto+import+Germania+a+Monza!3m6!1s0x4786b91dddbce4ed:0x56d6e9d255e150a9!8m2!3d45.5687206!4d9.2706151!15sCitjb25jZXNzaW9uYXJpbyBhdXRvIGltcG9ydCBHZXJtYW5pYSBhIE1vbnphkgELYXV0b19icm9rZXLgAQA!16s%2Fg%2F11h5nnf5kb?entry=ttu&g_ep=EgoyMDI2MDcyNy4wIKXMDSoASAFQAw%3D%3D",
       "data_estrazione": "2026-07-30",
       "telefono_tipo": "mobile",
-      "stage": "NEW",
+      "stage": "CONTACTED",
       "note": "",
-      "aggiunto_il": "2026-07-30 08:58"
+      "aggiunto_il": "2026-07-30 08:58",
+      "canale_contatto": "whatsapp",
+      "contattato_il": "2026-07-30 10:05"
     },
     {
       "nome_attivita": "LB MOTORS SRL",
@@ -4563,5 +4569,5 @@
       "aggiunto_il": "2026-07-30 09:58"
     }
   ],
-  "aggiornato": "2026-07-30 09:58"
+  "aggiornato": "2026-07-30 10:05"
 }
