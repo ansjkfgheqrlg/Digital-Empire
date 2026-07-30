@@ -13,6 +13,16 @@
 > EventBus), promosso da ecosistema stand-alone a motore ufficiale del Backbone. Fase 1 pilota
 > (YouTube + Stream-S7-Bot) in corso, poi rollout su tutti i 13 ecosistemi. Dettaglio tecnico e
 > stato di avanzamento: [CP-20260728-001](../company/Memory/checkpoints/CP-20260728-001.md).
+>
+> **⚡ Stato reale pilota 2026-07-29:** lato **YouTube COMPLETO** — la fabbrica
+> `YOUTUBE-AUTOMATION-FACTORY` gira le 6 fasi F1-F6 tutte REALI sul motore condiviso
+> `11-APEX-7-CORE` (`domain="youtube"`): F1 scouting su 20 canali veri con niche-gate, F2 selezione
+> video live, F3 script da idee reali, F4 spec Fliki multi-scena dallo script, F5 metadati/SEO reali,
+> F6 audit onesto (nessuna metrica inventata senza un video davvero pubblicato). La dashboard
+> (`Apex7Orchestrator.write_dashboard()`) riflette PASS/FAIL VERO per fase, non più sempre-PASS.
+> Gate: `test_youtube_apex7.py` 11/11. TASK-YT-001..005 chiuse (CP-20260728-007,
+> CP-20260729-003/004/005/006). Lato **Stream-S7-Bot**: resta da ritirare l'orchestratore APEX-7
+> duplicato lì (**TASK-YT-006**, P2). Non aspirazionale: questo è lo stato misurato, non il piano.
 
 **Regola madre (ereditata da CF, ADR-005):** Ruflo COORDINA (stato, memoria, swarm, consensus),
 Claude Code ESEGUE (file, codice, contenuti). Ogni componente del Backbone ha un percorso MCP

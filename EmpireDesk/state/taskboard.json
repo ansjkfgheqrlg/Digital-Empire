@@ -198,18 +198,18 @@
       "giorno": "2026-07-28",
       "titolo": "YT-Factory (cross-eco): ritiro reimplementazione APEX-7 indipendente in 12-STREAM-S7-BOT",
       "stato": "da_fare",
-      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-006. P2, non bloccante, fare dopo TASK-YT-001..005. Gate: test_apex7.py di Stream-S7-Bot resta 9/9 verde."
+      "note": "ASSEGNATA A GAEL 2026-07-29 (ordine Max: finire YouTube oggi, split Claude+Gael). Unico lotto YouTube rimasto. Cross-eco: ritiro orchestratore APEX-7 duplicato in 12-STREAM-S7-BOT (ecosistema di Gael). Spec: TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto 006. Gate: 12-STREAM-S7-BOT/test_apex7.py resta verde dopo migrazione o motivazione scritta. Blocco COORDINAMENTO in STATO-EMPIRE."
     },
     {
       "id": "TASK-YT-007",
       "owner": "Gael",
       "giorno": "2026-07-28",
       "titolo": "YT-Factory: aggiornare REGISTRO-IMPRESA.md + PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md",
-      "stato": "da_fare",
-      "note": "Vedi company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-007. P2, a valle del retrofit."
+      "stato": "fatto",
+      "note": "FATTO da Claude 2026-07-29. REGISTRO-IMPRESA.md: nuova riga YOUTUBE-AUTOMATION-FACTORY con stato reale F1-F6 sul motore condiviso 11-APEX-7-CORE + riga 11-APEX aggiornata (pilota lato YouTube completo). Dossier 07: blocco stato reale pilota 2026-07-29. Gate: entrambi citano 11-APEX-7-CORE motore condiviso YouTube+Stream-S7 + stato vero 6 fasi. Vedi CP-20260729-008."
     }
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-07-29 (TASK-YT-005 fatto — F1-F6+dashboard reali)"
+  "aggiornato": "2026-07-29 (YT-007 fatto; YT-006 assegnata a Gael)"
 }

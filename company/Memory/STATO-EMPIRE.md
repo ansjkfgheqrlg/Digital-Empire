@@ -1,3 +1,16 @@
+## ASSEGNAZIONE + COORDINAMENTO 2026-07-29 (Claude -> GAEL) — TASK-YT-006, finire YouTube OGGI
+Ordine di Max: finire YouTube oggi, split Claude+Gael. **Claude ha chiuso TASK-YT-002/003/004/005/007**
+(F4 multi-scena, F5 metadati/SEO, F6 audit onesto, dashboard PASS/FAIL reale, docs). Resta UN lotto:
+**TASK-YT-006 -> GAEL**. E cross-ecosistema (ritiro orchestratore APEX-7 duplicato dentro
+12-STREAM-S7-BOT, ecosistema tuo) percio va a te, non a Claude, per non collidere sui tuoi file trading.
+Spec pronta: company/Memory/tasks/TASK-GAEL-20260728-YOUTUBE-FACTORY.md lotto TASK-YT-006. Gate:
+12-STREAM-S7-BOT/test_apex7.py resta verde (9/9) dopo aver migrato i moduli APEX-7 generici al motore
+condiviso 11-APEX-7-CORE, OPPURE motivazione scritta se decidi di non farlo in questo giro. Chiuso 006:
+aggiorna taskboard.json TASK-YT-006->fatto + CP; YouTube e al 100% (7/7 lotti). NON toccare
+apex7_orchestrator.py della YT-Factory (gia chiuso da Claude, F1-F6 reali). Vedi CP-20260729-008.
+
+---
+
 ## 📲 2026-07-29 — OUTREACH PREVENTA: INVIO WHATSAPP REALE + FLUSSO GIORNALIERO AUTOMATICO — CP-20260729-007
 > Max ha chiesto invio WhatsApp reale (non solo copy-paste) + flusso automatico multi-giorno,
 > minimo 50 concessionari scraped e 50 messaggi/giorno, focus totale su import, comando unico
