@@ -1,3 +1,24 @@
+## ⚠️ ASSEGNAZIONE + COORDINAMENTO 2026-07-30 (Claude -> GAEL) — TASK-GAEL-20260730-STREAM-S7-NFT-METODO
+
+Ordine diretto di Max: metodo logico-matematico per trading NFT/token su marketplace stile
+"Magic Eden" (Solana), da costruire in ondate — **10 blocchi + 8 miglioramenti + 4
+perfezionamenti + 3 controlli chirurgici**, preceduto da una tecnica di studio/analisi a 7
+miglioramenti stile APEX-7, poi `/content-forge` + `gh repo clone
+ansjkfgheqrlg/master-build-architecture`. Spec completa, prompt originale integrato, gate e
+perimetro: `company/Memory/tasks/TASK-GAEL-20260730-STREAM-S7-NFT-METODO.md`. Dettagli in
+[CP-20260730-001](checkpoints/CP-20260730-001.md).
+
+**Zona di lavoro**: `company/Ecosistemi/12-STREAM-S7-BOT/`. File congelati invariati (event bus,
+memory, gate — vedi perimetro nel task). Nuovo layer NFT si affianca al motore memecoin già
+chiuso (G-A/G-B/G-C), non lo sostituisce. Resta paper trading: nessuna chiave privata vera,
+nessuna modalità LIVE senza PASS del gate L5. Classificazione R&D speculativo/0€ revenue
+(ECOSISTEMA.md) invariata finché `report-studio.md` non viene aggiornato con expectancy positiva
+verificata — chi lavora su altri stream (Preventa/YouTube/S1/S2) non deve fermarsi per questo.
+
+Prima di toccare `12-STREAM-S7-BOT/`: chiunque altro stia lavorando lì in parallelo, `git pull`
+e verifica `python test_apex7.py` verde (13/13) prima di iniziare, per non collidere con questo
+task.
+
 ## ASSEGNAZIONE + COORDINAMENTO 2026-07-29 (Claude -> GAEL) — TASK-YT-006, finire YouTube OGGI
 Ordine di Max: finire YouTube oggi, split Claude+Gael. **Claude ha chiuso TASK-YT-002/003/004/005/007**
 (F4 multi-scena, F5 metadati/SEO, F6 audit onesto, dashboard PASS/FAIL reale, docs). Resta UN lotto:
