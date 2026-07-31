@@ -62,7 +62,11 @@
       "PowerShell(git -C $r diff -- YOUTUBE-AUTOMATION-FACTORY/memory/arena_thumbnail_status.json)",
       "PowerShell($r = \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\")",
       "PowerShell(git -C $r add -A)",
-      "PowerShell(git -C $r diff --cached --stat)"
+      "PowerShell(git -C $r diff --cached --stat)",
+      "PowerShell(git -C $r push origin main)",
+      "PowerShell(git -C $r rev-list --left-right --count origin/main...HEAD)",
+      "PowerShell(git -C $r add .claude/settings.json)",
+      "PowerShell(git -C $r log --oneline -6 origin/main)"
     ],
     "ask": [
       "Bash(git push*)",
