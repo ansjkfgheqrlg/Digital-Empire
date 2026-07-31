@@ -1,4 +1,43 @@
-# STATO EMPIRE -- aggiornato 2026-07-31 (Max: skill apex-7 verificata già su GitHub, repo sincronizzato — CP-20260731-002 · Gael: TASK-GAEL-NFT-METODO CHIUSO — CP-20260730-007)
+# STATO EMPIRE -- aggiornato 2026-07-31 (Gael: motore YouTube riscritto su @dosementale, decisione CP-20260731-001 CHIUSA — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002)
+---
+
+## ✅ 2026-07-31 — GAEL: motore YouTube F1-F5 riscritto su @dosementale + video approvato — CP-20260731-003
+
+**📌 MAX, LEGGI QUESTO: la decisione che ti avevo lasciato aperta in CP-20260731-001 è chiusa.**
+Gael ha detto "risolvi" → ho riscritto `apex7_orchestrator.py` invece di ridurlo.
+
+Il pivot a @dosementale era stato fatto solo sui CONTENUTI: tutto il motore F1→F5 era ancora
+cablato sul funnel morto "Manuale Claude Code" e **un run end-to-end sovrascriveva script,
+metadati e brief con contenuti sbagliati**. Ora:
+- **F1** canale target FISSO @dosementale (via lo scouting fra 20 canali AI). L'indice Cash Cow
+  è riportato ma non blocca più: era il gate di *scelta* fra candidati, che non esiste più.
+- **F2** ha il gate reale: il video da copiare deve fare ≥ 20 viste/ora reali.
+- **F3** usa `05-TEMPLATES-E-KIT/script-adattati/<videoId>.md`; se manca scarica il transcript
+  reale (yt-dlp) e si ferma indicando dove scriverlo. Blocca gli script sotto i 12 minuti.
+- **F5** keyword italiana, CTA senza "Manuale", copertina reale del video sorgente scaricata.
+
+**⚠️ Due mine disinnescate, rilevanti anche per te:**
+1. `agents.py` (simulazione Conductor già "ritirata") scriveva dentro `05-TEMPLATES-E-KIT`,
+   **sopra i file di produzione reali**: bastava lanciare il runner deprecato per distruggere il
+   lavoro vero. Ora scrive in `memory/simulazione-mock/`.
+2. `learned_rules.json` era stato appreso da 6 log di performance **finti**: da lì i tag
+   "claude code" rientravano nei metadati veri a ogni run. Archiviati e regole azzerate.
+
+**⛔ Configurazione Fliki da NON toccare**: Gael ha approvato il video v8 ("era perfetto, non
+modificare le regole e non cambiare niente, d'ora in poi falli tutti così"). I sottotitoli
+karaoke parola-per-parola **sono voluti**. Valori esatti e motivazione in
+[RULES-VIDEO-FACTORY-DOSEMENTALE.md](RULES-VIDEO-FACTORY-DOSEMENTALE.md) e nel blocco marcato
+`⛔` in `fliki_client.py`.
+
+**Verificato:** run F1→F6 completo più volte, tutti i gate PASS, SEO 100/100, test 11/11 verdi,
+copertina generata dal brief di F5 e video reale 727s (12min7s) voce maschile — approvato.
+
+**RIPRESA DA:** niente di bloccante, il flusso è completo e ripetibile
+(`apex7_orchestrator.py run --phase 6` → `arena_thumbnail.py` → `fliki_client.py --file-name X`).
+Per un video nuovo serve solo scrivere lo script adattato in `script-adattati/<videoId>.md`.
+Unico punto aperto, **da non toccare senza l'ok di Gael**: se le clip stock scelte da Fliki (a
+volte fuori target anagrafico) vadano bene o si passi a `visuals: "ai"` / `mediaUrls`.
+
 ---
 
 ## ✅ 2026-07-31 — MAX: skill apex-7 dallo zip già presente e identica + repo pushato — CP-20260731-002
