@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffprobe -v error -show_entries format=duration,size -show_entries stream=codec_type,codec_name,width,height -of default=noprint_wrappers=1 \"dopo-70-anni-camminare-non-basta-v8.mp4\")",
+      "Bash(python -u fliki_subtitle_presets.py)",
+      "Bash(python -c \"import ast;ast.parse\\(open\\('fliki_client.py',encoding='utf-8'\\).read\\(\\)\\);print\\('sintassi OK'\\)\")",
+      "Bash(sed -n '/payload = {/,/^    }$/p' fliki_client.py)",
+      "Bash(python -u fliki_client.py --file-name \"dopo-70-anni-camminare-non-basta-v9\")",
+      "Bash(start \"\" \"dopo-70-anni-camminare-non-basta-v8.mp4\")"
+    ]
+  }
+}

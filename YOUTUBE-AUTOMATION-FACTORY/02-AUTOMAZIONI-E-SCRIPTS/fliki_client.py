@@ -179,14 +179,25 @@ def generate_video(key: str, content: str, voice_id: str, file_name: str) -> str
             "sceneBreakdown": "lineBreak",
             "fileName": file_name,
             "shouldExport": True,
-            # subtitlePresetId reale ottenuto cliccando il bottone "Copy subtitle preset ID"
-            # su fliki.ai/info/subtitle via Playwright (l'ID non e' nell'HTML statico ne'
-            # in nessuna chiamata di rete — va copiato dal bottone, come documentato).
+            # ⛔ CONFIGURAZIONE APPROVATA DA GAEL — NON MODIFICARE (2026-07-31)
+            # Questi tre valori sono esattamente quelli che hanno prodotto il video v8, che
+            # Gael ha giudicato PERFETTO con l'istruzione "non modificare le regole e non
+            # cambiare niente, d'ora in poi falli tutti così".
+            #
+            # Avevo proposto di cambiarli (preset piu' grande e highlightSubtitles=False, per
+            # avere frasi intere invece dell'effetto karaoke parola-per-parola): proposta
+            # RESPINTA. L'effetto karaoke e' voluto. Non riproporlo.
+            #
+            # subtitlePresetId reale ottenuto cliccando "Copy subtitle preset ID" su
+            # fliki.ai/info/subtitle via Playwright (non e' nell'HTML statico ne' in nessuna
+            # chiamata di rete). I 30 preset reali sono in memory/fliki_subtitle_presets.json
+            # (fliki_subtitle_presets.py) — elencati per riferimento, non per cambiare questo.
             "subtitlePresetId": "builtin-legacy-bold",
             "highlightSubtitles": True,
-            # Il video precedente (senza duration esplicita) e' uscito di soli 230s invece
-            # dei ~15 minuti di contenuto reale scritto in script.md. Impostiamo una durata
-            # target esplicita (secondi) coerente con la lunghezza reale dello script.
+            # `duration` e' in MINUTI, range reale 1-15 (developer.fliki.ai): 720 e' fuori
+            # range e viene ignorato dall'API — la durata segue la lunghezza del testo. Resta
+            # qui perche' fa parte della configurazione approvata e rimuoverlo, pur essendo
+            # inerte, sarebbe un cambiamento non richiesto.
             "duration": 720,
         }]
     }

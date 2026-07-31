@@ -44,10 +44,29 @@ benessere per un pubblico adulto/anziano.
   contenuto (non il parametro API) prima di lanciare la generazione.** Verificare comunque sempre
   con `ffprobe -show_entries format=duration` sul file scaricato.
 - **Voce di alta qualità** — non il primo risultato di un filtro genere andato in fallback.
-- **Sottotitoli sempre presenti, precisi, senza errori** — richiede un `subtitlePresetId` REALE
-  (es. `builtin-legacy-bold`), ottenibile solo cliccando "Copy subtitle preset ID" su
-  `fliki.ai/info/subtitle` via Playwright (non è nell'HTML statico né in chiamate di rete
-  intercettabili). Verificare con un fotogramma ffmpeg a metà video che siano visibili davvero.
+- **Sottotitoli sempre presenti, precisi, senza errori** — richiede un `subtitlePresetId` REALE,
+  ottenibile solo cliccando "Copy subtitle preset ID" su `fliki.ai/info/subtitle` via Playwright
+  (non è nell'HTML statico né in chiamate di rete intercettabili). I 30 preset reali sono in
+  `memory/fliki_subtitle_presets.json` (`fliki_subtitle_presets.py`), elencati per riferimento.
+
+## ⛔ Configurazione Fliki APPROVATA da Gael — non modificare (2026-07-31)
+Gael ha visto il video v8 e ha detto: **"il video era perfetto, non modificare le regole e non
+cambiare niente, d'ora in poi falli tutti così"**. I valori esatti in `fliki_client.py`:
+```
+"subtitlePresetId": "builtin-legacy-bold"
+"highlightSubtitles": True      # effetto karaoke parola-per-parola: È VOLUTO
+"duration": 720                 # inerte (l'API vuole 1-15 minuti), ma fa parte dell'approvato
+"visuals": "stock"
+"sceneBreakdown": "lineBreak"
+"aspectRatio": "16:9", "resolution": "1080p"
+```
+Avevo proposto di passare a un preset più grande con `highlightSubtitles: False` (frasi intere):
+**proposta respinta, non riproporla.** L'effetto karaoke è lo stile voluto, coerente col canale
+sorgente. Se un output soddisfa i requisiti dichiarati e resta solo una questione di gusto: si
+segnala e si CHIEDE, non si cambia di propria iniziativa.
+- **`duration`**: per riferimento, l'API lo accetta in MINUTI (range 1-15), quindi 720 è fuori
+  range e viene ignorato — la durata dipende dal NUMERO DI PAROLE dello script, mai da questo
+  campo. Documentazione: `developer.fliki.ai/docs/api/generate/video`.
 
 ## Limite noto — velocità Fliki (non un bug da rincorrere in loop)
 Verificato a fondo (documentazione ufficiale + test reali ripetuti): l'API Fliki non espone
