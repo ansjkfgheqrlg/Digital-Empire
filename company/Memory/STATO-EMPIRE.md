@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-08-03 (Gael: STREAM-S7-BOT ricognizione — requirements.txt non installabile corretto, STATO-RIPRESA riallineato, decisione go/no-go aperta — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002)
+# STATO EMPIRE -- aggiornato 2026-08-03 (Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
 ---
 
 ## 🔵 2026-08-03 — GAEL: STREAM-S7-BOT — 2 difetti corretti, la decisione go/no-go resta aperta — CP-20260803-001
@@ -119,8 +119,67 @@ Committate le 3 modifiche pendenti (`7c4fbef3`: copertina arena rigenerata, time
 **RIPRESA DA:** invariata — resta la decisione di Gael su `apex7_orchestrator.py` (vedi blocco
 CP-20260731-001 più sotto): riscrivere F1-F5 su @dosementale oppure ridurre l'orchestratore al
 solo `_parse_script_scenes`. Nulla di oggi la modifica.
+## ⚠️ ASSEGNAZIONE + COORDINAMENTO 2026-07-31 (Claude -> GAEL) — TASK-GAEL-20260731-STREAM-S7-NFT-SESSIONI
+
+Max ha chiesto il flusso di tutte le sessioni per portare S7 verso l'operativo reale,
+correggendo il marketplace di riferimento da Magic Eden a **mintify.xyz** ("usa quale sito
+vuoi" — scelta tecnica delegata). Verifica fatta ora: `mintify.xyz` non risponde (HTTP 530),
+dominio ufficiale è `mintify.com` — aggregatore NFT **multichain** (Ethereum/Blast/Base/
+Ordinals/Flow/Apechain/Abstract/Berachain), **Solana esclusa**. Lo stack S7 esistente è
+Solana-nativo al 100%: non è uno swap di endpoint, è un cambio di famiglia blockchain.
+
+Spec completa (12 sessioni, gate A/B/C architetturale, nessuna sessione live senza ordine
+esplicito futuro di Max): `company/Memory/tasks/TASK-GAEL-20260731-STREAM-S7-NFT-SESSIONI.md`.
+Dettagli: [CP-20260731-004](checkpoints/CP-20260731-004.md) *(rinumerato da CP-20260731-003
+per collisione con il checkpoint YouTube @dosementale sullo stesso slot)*.
+
+**Attenzione dominio civetta**: `mntfy.xyz` (senza "i", http) non è Mintify — trovato durante
+la ricerca, non va usato.
+
+**Non riapre** `TASK-GAEL-20260730-STREAM-S7-NFT-METODO.md` (CHIUSO, CP-20260730-007): quel
+verdetto (bocciato per live su Magic Eden/Solana, 89/89 controlli) resta valido, questo task
+costruisce sopra.
 
 ---
+
+## 📋 2026-08-03 — CLAUDE: PIANO 3 FASI OUTREACH (filtro import, IG/LinkedIn gated, reparto produzione) — CP-20260803-004
+> Max: filtro outreach solo concessionari import (Fase 1, ora); espansione IG/LinkedIn SOLO
+> quando WhatsApp gira perfetto ogni giorno (Fase 2, bloccata); Reparto Produzione con
+> progetto Preventa/caroselli, riusa `carousel-factory`+Arena (Fase 3). Checkpoint scritto
+> per primo su richiesta esplicita di Max (crediti in esaurimento).
+
+**⚠️ Collisione trovata, non ancora risolta**: esiste già
+`company/Memory/tasks/TASK-CLAUDE-20260803-CAROUSEL-APEX7-WORKFLOW.md` (PLAN-v1, di
+un'altra sessione oggi stesso) che assegna a Claude un workflow APEX-7 a 7 agenti sullo
+stesso motore `Workfolw crea caroselli à/carousel-factory/` — ma per mentalità-brutale,
+non Preventa. Il motore è già organizzato per "brand" (`brands/<nome>/config.json`):
+Preventa dovrebbe diventare `brands/preventa/`, sibling, non un sistema nuovo. Prima di
+costruire, verificare lo stato di quel PLAN-v1 per non pestarsi i piedi su carousel-factory.
+Dettagli: [CP-20260803-004](checkpoints/CP-20260803-004.md).
+
+---
+
+---
+
+## 📖 2026-07-30/31 — BIBBIA DEI MESSAGGI OUTREACH + TEAM AGENTI + ENFORCEMENT REALE — CP-20260731-005
+> *(rinumerato da CP-20260731-001 per collisione con il checkpoint YouTube @dosementale copertina)*
+> Max: framework LinkedIn cold outreach (Barnum/Rainbow/5 Pilastri/follow-up 3-step) da
+> istituire come regola non derogabile via `/content-forge`, poi "implementare
+> perfettamente" (non solo documentare).
+
+Pubblicato `Outreach/knowledge/bibbia-messaggi-outreach.md` (MKD, 16 atomi/6 cluster) +
+`Outreach/agents/outreach-message-team/` (4 agenti — rule-keeper/message-writer/
+case-study-forge/followup-sequencer, 37 file, coverage 100%). Il rule-keeper LLM
+richiede una chiamata Claude per messaggio (non praticabile a 50/giorno): costruito
+`rule_keeper_lint.py`, versione deterministica dello stesso checklist a 5 Pilastri,
+agganciata in `outreach_giornaliero.py` PRIMA di ogni invio WhatsApp reale — un
+messaggio che viola un pilastro non parte, punto. Verificato sui 3 ganci già in
+produzione (incluso il Gancio 4 "import" di CP-20260729-007): 3/3 già conformi senza
+modifiche. 3 pagine wiki nuove, index.md aggiornato. Vedi
+[CP-20260731-005](checkpoints/CP-20260731-005.md).
+
+---
+
 
 ## ✅ 2026-07-30 — GAEL: TASK-GAEL-NFT-METODO CHIUSO — 89/89 controlli, verdetto INVARIATO bocciato per live — CP-20260730-007
 
