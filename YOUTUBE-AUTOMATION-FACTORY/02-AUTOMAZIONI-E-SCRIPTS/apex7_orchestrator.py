@@ -20,12 +20,18 @@ import urllib.request
 import urllib.error
 import importlib.util
 from datetime import datetime
-import io
 
-# Forza stdout e stderr in utf-8 su Windows per prevenire errori cp1252
+# Forza stdout e stderr in utf-8 su Windows per prevenire errori cp1252. line_buffering=True
+# e' necessario: senza, quando l'output e' rediretto su file lo stream usa il buffering a
+# blocchi e i print restano invisibili per decine di minuti (bug reale trovato il 2026-07-30).
+# reconfigure() (non un nuovo io.TextIOWrapper!): fliki_client.py importa questo modulo e fa lo
+# stesso wrapping — con due TextIOWrapper distinti sullo stesso buffer, il garbage collector del
+# primo chiude il buffer sottostante e il secondo esplode con "I/O operation on closed file" al
+# primo print (bug reale trovato il 2026-07-30). reconfigure() modifica lo stream esistente,
+# idempotente e sicuro anche se chiamato piu' volte da moduli diversi nello stesso processo.
 if sys.platform.startswith("win"):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
-    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8")
+    sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
+    sys.stderr.reconfigure(encoding="utf-8", line_buffering=True)
 
 # Percorsi principali
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))

@@ -24,7 +24,11 @@ benessere per un pubblico adulto/anziano.
    uno script adattato sullo stesso argomento reale, formato HOOK/INTRO/CORPO/CTA.
 3. Copertina: `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/arena_thumbnail.py` (Arena.ai
    via Playwright, profilo persistente `chrome-profile-arena/` — sessione già loggata, non
-   richiedere login di nuovo salvo scadenza).
+   richiedere login di nuovo salvo scadenza). **La copertina si ADATTA da quella reale del video
+   sorgente, non si inventa** (regola di Gael, 2026-07-31): scaricare
+   `https://i.ytimg.com/vi/<VIDEO_ID>/maxresdefault.jpg` in `05-TEMPLATES-E-KIT/source-thumbnail/`,
+   allegarla alla chat Arena e chiedere una MODIFICA (posa + testo) mantenendone il linguaggio
+   visivo. **Se la chat non funziona, chiuderla e aprirne una nuova** invece di insistere.
 4. Video: `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/fliki_client.py` (API Fliki reale).
 
 ## Standard qualità obbligatori (verificare sempre col file reale, non fidarsi della sola risposta API)
@@ -76,3 +80,24 @@ Sintesi:
 8. **Non terminare processi in background senza permesso esplicito**: un processo lento ma vivo
    (CPU bassa, nessun crash, entro un timeout interno noto) non va ucciso unilateralmente —
    butta via tempo reale già speso lato server. Chiedere prima.
+9. **Doppio-wrapping di stdout** (2026-07-30): il fix del punto 1 applicato in due moduli dello
+   stesso processo (`fliki_client.py` importa `apex7_orchestrator`) crea due `TextIOWrapper` sullo
+   stesso buffer — il GC del primo chiude il buffer del secondo → `ValueError: I/O operation on
+   closed file`. Usare SEMPRE `reconfigure()`, mai un nuovo `io.TextIOWrapper`.
+10. **Scena troppo lunga = job Fliki bloccato in coda all'infinito** (2026-07-30): un blocco da
+    594 parole (~4 min in una sola scena) ha tenuto un job in `queued` per oltre un'ora senza mai
+    passare a `processing` né dare errore. Dividere sempre il testo in scene da max ~130 parole
+    (mai a metà frase): `_split_into_bounded_chunks` in `fliki_client.py`. Un `queued` che supera
+    di molto i 14-17 min normali è sintomo di scene troppo grandi, non di lentezza.
+11. **Residui del progetto morto nel CODICE, non solo nei contenuti** (2026-07-31): dopo il pivot,
+    `build_prompt()` di `arena_thumbnail.py` conteneva ancora hardcoded l'estetica "terminal/
+    console, arancione #fb4604, tech coding tutorial" del Manuale Claude Code — il prompt inviato
+    contraddiceva il brief riscritto. Anche `candidati-video.json` aveva ancora i video del vecchio
+    canale tech. Dopo un pivot, fare grep del vecchio dominio anche dentro il codice (stringhe
+    hardcoded, prompt, default CLI, nomi file).
+12. **Non salvare come candidato un'immagine caricata da noi**: raccogliere solo i `src` comparsi
+    DOPO l'invio del messaggio, altrimenti la miniatura sorgente allegata finisce tra i risultati.
+
+## Esito verificato (2026-07-31)
+Video reale conforme a tutti gli standard: 727s (12min 7s), voce maschile reale (Calimero),
+sottotitoli visibili verificati su più fotogrammi, 19 scene bilanciate, nessun blocco in coda.

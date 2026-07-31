@@ -11,23 +11,27 @@ Endpoint reali usati (documentazione ufficiale, verificata 2026-07-29):
   GET  https://api.fliki.ai/v1/generate/status?fileId=...
 """
 import os
+import re
 import sys
 import json
 import time
 import argparse
 import urllib.request
 import urllib.error
-import io
 
 # Forza stdout/stderr in utf-8 su Windows: senza, qualunque carattere non-ASCII nei print
 # (es. "—") fa crashare con UnicodeEncodeError su cp1252. line_buffering=True e' OBBLIGATORIO:
-# senza, quando l'output e' rediretto su file (non un terminale) TextIOWrapper usa il
-# buffering a blocchi e i print restano invisibili per decine di minuti (bug reale trovato
-# il 2026-07-30, vedi errori_da_non_ripetere_fabbrica_video.md — un run e' rimasto "silenzioso"
-# 30+ minuti senza modo di sapere se fosse bloccato).
+# senza, quando l'output e' rediretto su file (non un terminale) lo stream usa il buffering a
+# blocchi e i print restano invisibili per decine di minuti (bug reale trovato il 2026-07-30).
+# reconfigure() (non un nuovo io.TextIOWrapper!) e' OBBLIGATORIO: questo script importa
+# apex7_orchestrator, che fa lo stesso wrapping — con due TextIOWrapper distinti sullo stesso
+# buffer, il garbage collector del primo chiude il buffer sottostante e il secondo esplode con
+# "I/O operation on closed file" al primo print (bug reale trovato il 2026-07-30, appena dopo
+# il fix precedente). reconfigure() modifica lo stream esistente, e' idempotente e sicuro anche
+# se chiamato piu' volte da moduli diversi nello stesso processo.
 if sys.platform.startswith("win"):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", line_buffering=True)
-    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", line_buffering=True)
+    sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
+    sys.stderr.reconfigure(encoding="utf-8", line_buffering=True)
 
 API_BASE = "https://api.fliki.ai/v1"
 
@@ -109,12 +113,39 @@ def find_italian_voice(key: str, prefer_gender: str = "male") -> str:
     return chosen["_id"]
 
 
+MAX_WORDS_PER_SCENE = 130
+
+
+def _split_into_bounded_chunks(text: str, max_words: int) -> list[str]:
+    """Divide un blocco di testo in pezzi di al massimo `max_words` parole, spezzando SEMPRE
+    a fine frase (mai a meta'), raggruppando frasi consecutive finche' il limite non e' superato.
+    Trovato il 2026-07-30: un singolo blocco da 594 parole (~4+ min di narrazione in UNA sola
+    scena/clip stock) ha fatto restare un job Fliki bloccato in coda per oltre un'ora senza mai
+    passare a 'processing' ne' dare un errore esplicito — nessuna scena deve superare questo
+    limite."""
+    sentences = re.split(r"(?<=[.!?])\s+(?=[A-ZÀÈÉÌÒÙ])", text.strip())
+    chunks, current, current_words = [], [], 0
+    for sentence in sentences:
+        n = len(sentence.split())
+        if current and current_words + n > max_words:
+            chunks.append(" ".join(current))
+            current, current_words = [], 0
+        current.append(sentence)
+        current_words += n
+    if current:
+        chunks.append(" ".join(current))
+    return chunks
+
+
 def build_script_content() -> str:
     """Testo reale dallo script.md di F3, riusando Apex7Orchestrator._parse_script_scenes
     (stesse 4 sezioni HOOK/INTRO/CORPO/CTA), con 'sceneBreakdown: lineBreak' cosi' Fliki
     rispetta i confini di scena reali invece di indovinarli. Il merge Git che rendeva
     apex7_orchestrator.py non importabile e' stato risolto (verificato 2026-07-30): si
-    reimporta il modulo reale invece di una copia standalone."""
+    reimporta il modulo reale invece di una copia standalone.
+
+    Ogni sezione viene inoltre ri-divisa in blocchi di massimo MAX_WORDS_PER_SCENE parole
+    (mai a meta' frase) — vedi _split_into_bounded_chunks per il perche'."""
     sys.path.insert(0, SCRIPT_DIR)
     import apex7_orchestrator as mod  # noqa: E402
 
@@ -125,7 +156,14 @@ def build_script_content() -> str:
     scenes = orch._parse_script_scenes(script_text)
     if not scenes:
         raise SystemExit("[!] Nessuna scena reale trovata in script.md.")
-    return "\n\n".join(s["text"].split("➕")[0].strip() for s in scenes)
+
+    all_chunks = []
+    for s in scenes:
+        section_text = s["text"].split("➕")[0].strip()
+        all_chunks.extend(_split_into_bounded_chunks(section_text, MAX_WORDS_PER_SCENE))
+    print(f"[+] Script diviso in {len(all_chunks)} scene (max {MAX_WORDS_PER_SCENE} parole ciascuna, "
+          f"da {len(scenes)} sezioni originali).")
+    return "\n\n".join(all_chunks)
 
 
 def generate_video(key: str, content: str, voice_id: str, file_name: str) -> str:

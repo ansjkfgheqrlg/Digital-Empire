@@ -4,16 +4,17 @@ rilanciare la richiesta di generazione. Serve quando il client principale ha rag
 timeout interno ma il job e' ancora vivo lato server."""
 import sys
 import os
-import re
 import time
 import json
 import urllib.request
 import urllib.error
-import io
 
+# reconfigure(), non un nuovo io.TextIOWrapper: due wrapper distinti sullo stesso buffer fanno
+# chiudere il buffer sottostante al garbage collection del primo ("I/O operation on closed
+# file", bug reale trovato il 2026-07-30). reconfigure() e' idempotente e sicuro.
 if sys.platform.startswith("win"):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", line_buffering=True)
-    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", line_buffering=True)
+    sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
+    sys.stderr.reconfigure(encoding="utf-8", line_buffering=True)
 
 FACTORY_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUT_DIR = os.path.join(FACTORY_DIR, "05-TEMPLATES-E-KIT")

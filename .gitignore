@@ -127,3 +127,6 @@ empire/.cache/
 # --- YOUTUBE AUTOMATION RUNTIME ARTIFACTS ---
 YOUTUBE-AUTOMATION-FACTORY/memory/runs/
 YOUTUBE-AUTOMATION-FACTORY/memory/decisions/
+
+# Screenshot di debug della sessione Arena: contiene la UI loggata (account personale)
+YOUTUBE-AUTOMATION-FACTORY/05-TEMPLATES-E-KIT/arena_debug_final.png
