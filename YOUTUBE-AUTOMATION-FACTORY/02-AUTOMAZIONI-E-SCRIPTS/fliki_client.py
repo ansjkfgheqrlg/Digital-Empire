@@ -17,6 +17,17 @@ import time
 import argparse
 import urllib.request
 import urllib.error
+import io
+
+# Forza stdout/stderr in utf-8 su Windows: senza, qualunque carattere non-ASCII nei print
+# (es. "—") fa crashare con UnicodeEncodeError su cp1252. line_buffering=True e' OBBLIGATORIO:
+# senza, quando l'output e' rediretto su file (non un terminale) TextIOWrapper usa il
+# buffering a blocchi e i print restano invisibili per decine di minuti (bug reale trovato
+# il 2026-07-30, vedi errori_da_non_ripetere_fabbrica_video.md — un run e' rimasto "silenzioso"
+# 30+ minuti senza modo di sapere se fosse bloccato).
+if sys.platform.startswith("win"):
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", line_buffering=True)
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", line_buffering=True)
 
 API_BASE = "https://api.fliki.ai/v1"
 
@@ -99,9 +110,11 @@ def find_italian_voice(key: str, prefer_gender: str = "male") -> str:
 
 
 def build_script_content() -> str:
-    """Testo reale dallo script.md di F3 (stesse 4 sezioni gia' parsate da
-    _parse_script_scenes in apex7_orchestrator.py), con 'sceneBreakdown: lineBreak'
-    cosi' Fliki rispetta i confini di scena reali invece di indovinarli."""
+    """Testo reale dallo script.md di F3, riusando Apex7Orchestrator._parse_script_scenes
+    (stesse 4 sezioni HOOK/INTRO/CORPO/CTA), con 'sceneBreakdown: lineBreak' cosi' Fliki
+    rispetta i confini di scena reali invece di indovinarli. Il merge Git che rendeva
+    apex7_orchestrator.py non importabile e' stato risolto (verificato 2026-07-30): si
+    reimporta il modulo reale invece di una copia standalone."""
     sys.path.insert(0, SCRIPT_DIR)
     import apex7_orchestrator as mod  # noqa: E402
 

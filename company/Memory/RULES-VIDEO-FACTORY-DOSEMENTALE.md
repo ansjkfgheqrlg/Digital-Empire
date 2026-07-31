@@ -28,17 +28,17 @@ benessere per un pubblico adulto/anziano.
 4. Video: `YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/fliki_client.py` (API Fliki reale).
 
 ## Standard qualità obbligatori (verificare sempre col file reale, non fidarsi della sola risposta API)
-- **Durata ≥ 12 minuti** — `duration` nell'API Fliki è in **MINUTI**, non secondi. Per
-  `workflowType: "script"`, il valore **0** è documentato come "usa il contenuto COSÌ COM'È,
-  senza riscriverlo" — senza `duration: 0`, Fliki riscrive/condensa il testo in un video breve
-  a lunghezza fissa (verificato: due run con script diversi sono uscite entrambe a 230.592s
-  identici, segno di riscrittura automatica indipendente dal contenuto). Con `duration: 0` la
-  durata finale dipende dalla lunghezza reale dello script. Verificare comunque sempre con
-  `ffprobe -show_entries format=duration` sul file scaricato.
-  - **Valori già provati, NON riprovarli** (storico reale, per non ripetere esperimenti a vuoto):
-    campo assente → 230.6s · `720` (creduto secondi, in realtà 720 MINUTI) → 230.6s **identico** ·
-    `0` con 4 scene → 230.6s identico · `0` con 18 scene (frase per frase) → 181.1s (diverso ma
-    più corto). Il valore reale in minuti (es. `15`) è l'unica combinazione sensata rimasta.
+- **Durata ≥ 12 minuti** — **causa reale trovata (2026-07-30, dopo 5 run reali sprecati a
+  sospettare il parametro `duration`)**: la durata di un video "script" dipende dalla lunghezza
+  REALE del testo (parole da narrare a ritmo naturale, ~140 parole/min in italiano), non dal
+  campo `duration`. `duration` in MINUTI e' stato provato in 4 combinazioni diverse (assente,
+  `720` creduto erroneamente secondi, `0` = "usa il testo cosi' com'e'", `15` minuti reali) **con
+  la stessa identica struttura a 4 scene, ottenendo SEMPRE 230.592s identico** — prova che il
+  parametro non era la leva. La vera causa: lo script scritto aveva solo ~560 parole (~230s di
+  lettura naturale) invece delle ~2.000 parole necessarie per 12-15 minuti. **Prima di generare,
+  contare le parole reali dello script e stimare `parole/140` minuti — se sotto 12, espandere il
+  contenuto (non il parametro API) prima di lanciare la generazione.** Verificare comunque sempre
+  con `ffprobe -show_entries format=duration` sul file scaricato.
 - **Voce di alta qualità** — non il primo risultato di un filtro genere andato in fallback.
 - **Sottotitoli sempre presenti, precisi, senza errori** — richiede un `subtitlePresetId` REALE
   (es. `builtin-legacy-bold`), ottenibile solo cliccando "Copy subtitle preset ID" su
@@ -51,3 +51,28 @@ nessun parametro di priorità/velocità/tier. Il tempo "queued" (~860-970s, ~14-
 è lato server, praticamente costante indipendentemente da contenuto/durata richiesta — non
 riducibile lato client. Se serve sotto i 10 minuti totali, l'unica leva è un eventuale tier a
 pagamento più alto sull'account Fliki (da verificare sul loro dashboard, non nel codice).
+
+## Registro auto-miglioramento — errori reali fatti, da non ripetere (2026-07-30)
+Gael ha chiesto esplicitamente un vero automiglioramento: ogni errore va salvato e mai ripetuto.
+Dettaglio esteso nella memoria persistente Claude `errori_da_non_ripetere_fabbrica_video.md`.
+Sintesi:
+1. **Buffering output**: avvolgere `sys.stdout` in `io.TextIOWrapper` grezzo per fix di encoding
+   rende l'output invisibile per decine di minuti quando rediretto su file (buffering a blocchi,
+   non a riga). Usare `sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)` o
+   `flush=True` sui print, e verificare SEMPRE che l'output compaia in tempo reale.
+2. **`duration` Fliki**: vedi sopra — non è la leva, è la lunghezza reale del testo.
+3. **Filtro voce case-sensitive**: l'API ritorna `"MALE"/"FEMALE"` maiuscolo, un confronto con
+   `"male"` minuscolo non trova mai nulla — sempre confronti case-insensitive su campi da API.
+4. **Sottotitoli**: mai assumere che un parametro abbia funzionato — verificare col file mp4
+   reale (ffmpeg frame-extract) prima di dichiarare un video pronto.
+5. **Canale sbagliato**: generato un intero video sul funnel Claude Code (morto) prima di
+   verificare che Gael intendesse @dosementale — quando l'utente fa riferimento a qualcosa "già
+   detto" non presente nel contesto, verificarlo concretamente prima di costruire.
+6. **Modalità Arena sbagliata**: generata la prima copertina in Battle Mode invece di Direct+Max
+   — quando l'utente nomina un'opzione UI specifica, esplorare l'interfaccia reale prima di usare
+   un default plausibile.
+7. **File di debug cancellati prima di leggerli**: non ripulire un artefatto diagnostico nella
+   stessa risposta in cui lo si genera.
+8. **Non terminare processi in background senza permesso esplicito**: un processo lento ma vivo
+   (CPU bassa, nessun crash, entro un timeout interno noto) non va ucciso unilateralmente —
+   butta via tempo reale già speso lato server. Chiedere prima.
