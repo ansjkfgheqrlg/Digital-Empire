@@ -1,4 +1,9 @@
 {
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "CLAUDE_FLOW_V3_ENABLED": "true",
+    "CLAUDE_FLOW_HOOKS_ENABLED": "true"
+  },
   "permissions": {
     "allow": [
       "Bash(awk '{print $NF}')",
@@ -45,7 +50,19 @@
       "Bash(npm test*)",
       "Bash(npm run test*)",
       "Bash(ls*)",
-      "Bash(dir*)"
+      "Bash(dir*)",
+      "Read(//c/Users/olhad/Downloads/**)",
+      "PowerShell(git -C \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\" remote -v)",
+      "PowerShell(git -C \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\" status --short)",
+      "PowerShell(git -C \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\" log --oneline -3 -- .agents/skills/apex-7)",
+      "PowerShell(git -C \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\" ls-files .agents/skills/apex-7)",
+      "PowerShell(git -C \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\" check-ignore -v .agents/skills/apex-7)",
+      "PowerShell(git -C $r status --short)",
+      "PowerShell(git -C $r diff -- .claude/settings.json)",
+      "PowerShell(git -C $r diff -- YOUTUBE-AUTOMATION-FACTORY/memory/arena_thumbnail_status.json)",
+      "PowerShell($r = \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\")",
+      "PowerShell(git -C $r add -A)",
+      "PowerShell(git -C $r diff --cached --stat)"
     ],
     "ask": [
       "Bash(git push*)",
@@ -84,10 +101,5 @@
         ]
       }
     ]
-  },
-  "env": {
-    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
-    "CLAUDE_FLOW_V3_ENABLED": "true",
-    "CLAUDE_FLOW_HOOKS_ENABLED": "true"
   }
 }
