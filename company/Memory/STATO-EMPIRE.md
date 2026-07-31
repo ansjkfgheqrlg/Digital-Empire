@@ -1,4 +1,25 @@
-# STATO EMPIRE -- aggiornato 2026-07-30 (Gael: TASK-GAEL-NFT-METODO CHIUSO — 89/89 controlli, verdetto INVARIATO bocciato per live — CP-20260730-007 · Max: nuovo membro NERI)
+# STATO EMPIRE -- aggiornato 2026-07-31 (Max: skill apex-7 verificata già su GitHub, repo sincronizzato — CP-20260731-002 · Gael: TASK-GAEL-NFT-METODO CHIUSO — CP-20260730-007)
+---
+
+## ✅ 2026-07-31 — MAX: skill apex-7 dallo zip già presente e identica + repo pushato — CP-20260731-002
+
+Richiesta: aggiungere su GitHub la skill `apex-7` contenuta in
+`Downloads\workspace-019f930a-...zip`. **Verificata prima di copiare: non serviva.**
+I 42 file di `apex-7/` nello zip sono **identici byte-per-byte (SHA256)** a
+`.agents/skills/apex-7/`, che è già tracciata e già su `origin/main` (42/42 file,
+`git diff origin/main HEAD` vuoto). Lo zip è uno snapshot di un workspace già sincronizzato:
+anche le altre 3 cartelle (`ruflo`, `content-forge2.0`, `master-build-architecture`) sono già
+in `.agents/skills/`.
+
+**Sincronizzazione Git**: la divergenza segnalata il 2026-07-30 (8 vs 12 commit) **è rientrata**
+— dopo `git fetch origin main` il locale risultava 3 avanti / 0 indietro, fast-forward pulito.
+Committate le 3 modifiche pendenti (`7c4fbef3`: copertina arena rigenerata, timestamp status,
+`.claude/settings.json`) e pushati **4 commit** su `origin/main`. Working tree pulito.
+
+**RIPRESA DA:** invariata — resta la decisione di Gael su `apex7_orchestrator.py` (vedi blocco
+CP-20260731-001 più sotto): riscrivere F1-F5 su @dosementale oppure ridurre l'orchestratore al
+solo `_parse_script_scenes`. Nulla di oggi la modifica.
+
 ---
 
 ## ✅ 2026-07-30 — GAEL: TASK-GAEL-NFT-METODO CHIUSO — 89/89 controlli, verdetto INVARIATO bocciato per live — CP-20260730-007
