@@ -66,12 +66,18 @@ def build_prompt(brief: dict, has_source_image: bool) -> str:
         "Modify the attached YouTube thumbnail" if has_source_image
         else f"Recreate this YouTube thumbnail style: {brief['source_style']}"
     )
+    # "pose" e' opzionale: se il brief e' scritto a mano puo' indicare la posa esatta del
+    # soggetto. F5 non puo' inventarla, quindi genera solo il contesto del tema (`concept`) e
+    # qui si chiede di adattare l'illustrazione al nuovo argomento.
+    cambio_soggetto = (f"Change 1 — the pose of the subject: {brief['pose']}" if brief.get("pose")
+                       else f"Change 1 — adapt the illustration to the new topic instead of the "
+                            f"original one. New topic context: {brief['concept']}")
     return (
         f"{base}, keeping its exact visual language: white background, warm yellow radial "
         "light rays behind the subject, hand-drawn pencil-sketch illustration of a smiling "
         "elderly man, very heavy bold black uppercase Italian text on the left half, key lines "
         "highlighted with a solid green box and white text. 16:9.\n\n"
-        f"Change 1 — the pose: {brief['concept']}\n"
+        f"{cambio_soggetto}\n"
         f"Change 2 — replace ALL text with exactly these lines, in this order: {text_block}\n"
         f"Lines that must sit inside the solid green highlight box: {highlight_block}\n\n"
         "Keep the text perfectly readable, no spelling mistakes, no extra words, no watermark. "

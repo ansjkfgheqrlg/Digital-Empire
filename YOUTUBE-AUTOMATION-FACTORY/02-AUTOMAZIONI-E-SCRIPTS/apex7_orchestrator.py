@@ -70,16 +70,32 @@ _shared_orchestrator_mod = _load_module_from_path(
 APEX7Memory = _shared_memory_mod.APEX7Memory
 RuFLOOrchestrator = _shared_orchestrator_mod.RuFLOOrchestrator
 
-# --- Dati REALI di niche-scout (Gemini, WORKFLOW-ESTATE) — Fase 1 ---
-# Vedi WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/LEGGIMI.md:
-# questo pacchetto sostituisce lo scouting a freddo con una mappa reale di 20 canali italiani.
-NICHE_SCOUT_DIR = os.path.abspath(os.path.join(FACTORY_DIR, "..", "WORKFLOW-ESTATE", "04-SKILLS-E-REFERENCE", "youtube-niche-scout-analysis"))
-MAPPA_CANALI_PATH = os.path.join(NICHE_SCOUT_DIR, "01_MAPPA_CANALI.md")
-IDEE_VIDEO_PATH = os.path.join(NICHE_SCOUT_DIR, "03_20_IDEE_VIDEO.md")
+# --- Canale target FISSO (Fase 1) ---
+# Questo progetto non fa piu' scouting di nicchia: il canale da cui copiare/adattare e' deciso e
+# fisso — @dosementale. Vedi company/Memory/RULES-VIDEO-FACTORY-DOSEMENTALE.md. Lo scouting fra
+# 20 canali AI apparteneva al funnel "Manuale Claude Code", progetto MORTO: rimosso del tutto il
+# 2026-07-31 perche' un run end-to-end sovrascriveva script/metadati/brief con contenuti sbagliati.
+CANALE_TARGET = {
+    "channel": "Dose Mentale",
+    "handle": "@dosementale",
+    "url": "https://www.youtube.com/@dosementale",
+    "temi": "spiritualita', psicologia, saggezza biblica/buddista, motivazione, salute e "
+            "benessere per un pubblico adulto/anziano",
+    # Tag tematici brevi del canale, da usare come tag YouTube. La descrizione estesa qui sopra
+    # e' leggibile ma come tag singolo e' inutilizzabile (una frase intera non e' un tag).
+    "tag_tema": ["spiritualità", "psicologia", "benessere", "crescita personale", "terza età"],
+}
 
-# AP Video System (02_PATTERN_VINCENTI.md §4): durata ideale per un video che converte sul
-# funnel Manuale Claude Code — numero reale documentato, non inventato qui.
+# Durata obbligatoria del video finale (standard di qualita' fissato da Gael): mai sotto i 12
+# minuti. Verificata sempre sul file mp4 reale, non sulla risposta dell'API.
 AP_VIDEO_SYSTEM_DURATION = "12-15 minuti"
+
+# Script adattati (uno per video sorgente, scritti a mano dal transcript REALE del video).
+# Non generiamo il parlato a runtime: un testo riscritto davvero richiede un lavoro di scrittura,
+# e copiare il transcript verbatim non e' ammesso. F3 pesca qui per `<videoId>.md`.
+SCRIPT_ADATTATI_DIR = os.path.join(TEMPLATES_DIR, "script-adattati")
+TRANSCRIPTS_DIR = os.path.join(FACTORY_DIR, "transcripts")
+SOURCE_THUMBS_DIR = os.path.join(TEMPLATES_DIR, "source-thumbnail")
 
 _SCRIPT_STOPWORDS = set(
     "di del della delle dei per con che il la lo le i gli un una uno e o ma se non a al alla ai "
@@ -93,58 +109,20 @@ def _tokenize_for_matching(text: str) -> set:
             if len(w) > 2 and w not in _SCRIPT_STOPWORDS}
 
 
-def _load_video_ideas() -> list[dict]:
-    """Le 20 idee video reali (titolo/angolo/hook/CTA) pre-scritte da Gemini per il funnel
-    Manuale Claude Code, in 03_20_IDEE_VIDEO.md. Non generiamo hook/CTA a runtime: selezioniamo
-    quella più affine al video reale scelto in F2 e la adattiamo (script-writer.md §2)."""
-    if not os.path.exists(IDEE_VIDEO_PATH):
-        return []
-    text = open(IDEE_VIDEO_PATH, encoding="utf-8").read()
-    titles = re.findall(r"\n### \d+\.\s*(.+)", text)
-    blocks = re.split(r"\n### \d+\.\s*.+\n", text)[1:]
-    ideas = []
-    for title, block in zip(titles, blocks):
-        angolo_m = re.search(r"\*\*Angolo:\*\*\s*(.+)", block)
-        hook_m = re.search(r'\*\*Hook \(Primi 15s\):\*\*\s*\*"(.+?)"\*', block, re.DOTALL)
-        cta_m = re.search(r'\*\*CTA Transition:\*\*\s*\*"(.+?)"\*', block, re.DOTALL)
-        hook = hook_m.group(1).strip() if hook_m else ""
-        ideas.append({
-            "title": title.strip(),
-            "angolo": angolo_m.group(1).strip() if angolo_m else "",
-            "hook": hook,
-            "cta": cta_m.group(1).strip() if cta_m else "",
-            "hook_type": "Question" if "?" in hook else "Statement",
-        })
-    return ideas
+def _keyword_from_title(title: str, max_words: int = 4) -> str:
+    """Keyword SEO reale ricavata dal titolo. Prima era fissa a 'claude code' (keyword del
+    funnel morto): su un canale di benessere non aveva senso e falsava ogni punteggio SEO.
 
-# Tier di opportunità per il Manuale Claude Code, dalla sezione "Analisi e Clusterizzazione dei
-# Formati" di 01_MAPPA_CANALI.md (analisi reale di Gemini — riportata qui, non inventata).
-OPPORTUNITA_TIER = {
-    "Martes AI": ("Altissima", "Tech-Hacker Screencast"),
-    "Piero Savastano": ("Altissima", "Tech-Hacker Screencast"),
-    "SOS Automazioni": ("Altissima", "Tech-Hacker Screencast"),
-    "Alberto Olla": ("Altissima", "Tech-Hacker Screencast"),
-    "AutomatiKing": ("Media/Alta", "Low-Code Business Architect"),
-    "Andrea Ciraolo": ("Media/Alta", "Low-Code Business Architect"),
-    "Raffaele Gaito": ("Media/Alta", "Low-Code Business Architect"),
-    "Stefano Mongardi": ("Media/Alta", "Low-Code Business Architect"),
-}
-DEFAULT_TIER = ("Bassa/Media", "Tech-Commentary/News")
-
-# Ore-tipo per frequenza di upload, usate per stimare l'età media di un video in stato
-# stazionario: 01_MAPPA_CANALI.md fornisce viste medie AGGREGATE per canale (analisi Gemini),
-# non dati singolo-video da un vero passaggio Video IQ — questa è quindi una stima dichiarata,
-# non un dato inventato: deriva da numeri reali (iscritti/viste) del canale reale scelto.
-FREQ_TO_HOURS = {
-    "giornaliero": 24,
-    "2-3 video / sett.": 60,
-    "1-2 video / sett.": 120,
-    "1 video / sett.": 168,
-    "settimanale (fast forward)": 168,
-    "1 video / 2 sett.": 336,
-    "1-2 video / mese": 504,
-}
-DEFAULT_FREQ_HOURS = 250  # fallback per frequenze irregolari/non mappate
+    Si prende una porzione CONTIGUA dall'inizio del titolo (fino alla prima punteggiatura),
+    non un insieme di parole sparse: seo_score.py cerca la keyword come sottostringa esatta,
+    quindi 'dopo anni camminare' non veniva mai trovata in "Dopo i 70 anni, camminare..." e il
+    titolo perdeva punti pur contenendo tutte quelle parole."""
+    primo_segmento = re.split(r"[,:;?!.—–]", (title or "").strip())[0]
+    parole = primo_segmento.split()[:max_words]
+    # Una keyword che finisce con una parola vuota ("le 2 parole che") non e' cercabile.
+    while parole and (parole[-1].lower() in _SCRIPT_STOPWORDS or len(parole[-1]) <= 2):
+        parole.pop()
+    return " ".join(parole).lower()
 
 
 # --- Fetch REALE dei video di un canale (Fase 2) ---
@@ -157,6 +135,14 @@ CHANNEL_VIDEOS_CACHE_DIR = os.path.join(MEMORY_DIR, "channel_videos")
 os.makedirs(CHANNEL_VIDEOS_CACHE_DIR, exist_ok=True)
 CHANNEL_CACHE_TTL_HOURS = 168  # 7 giorni
 VIDEO_MATURITY_FLOOR_HOURS = 24  # sotto questa età, la velocity views/ora è troppo rumorosa
+
+# Gate REALE della pipeline (F2): il video da copiare deve avere una velocity reale almeno pari
+# alla soglia con cui cashcow_check.py considera "performante" un video. Se nemmeno il migliore
+# del canale la supera, non c'e' niente che valga la pena replicare adesso e la fase fallisce
+# onestamente. Stessa soglia di cashcow_check.MIN_VPH, importata per non duplicare il numero.
+MIN_VPH_VIDEO = _load_module_from_path(
+    "apex7_cashcow_check", os.path.join(SCRIPT_DIR, "cashcow_check.py")
+).MIN_VPH
 
 
 def _cache_path_for_handle(handle: str) -> str:
@@ -284,6 +270,46 @@ def _fetch_channel_videos_live(handle: str, max_videos: int = 30) -> list[dict]:
 # --- Manifest video REALMENTE pubblicati (Fase 6) ---
 # Un video compare qui solo quando è stato davvero caricato su YouTube (da Gael/Max), non a ogni
 # run: F6 lo usa per decidere se c'è qualcosa di reale da auditare o se è ancora troppo presto.
+def _parse_vtt(path: str) -> str:
+    """Testo parlato reale da un file .vtt di sottotitoli automatici: via timestamp, tag di
+    posizione e le righe duplicate che YouTube ripete per l'effetto karaoke."""
+    righe, precedente = [], None
+    for raw in open(path, encoding="utf-8", errors="ignore"):
+        linea = raw.strip()
+        if (not linea or "-->" in linea or linea.startswith(("WEBVTT", "Kind:", "Language:"))
+                or linea.isdigit()):
+            continue
+        linea = re.sub(r"<[^>]+>", "", linea).strip()
+        if linea and linea != precedente:
+            righe.append(linea)
+            precedente = linea
+    return " ".join(righe)
+
+
+def _fetch_transcript(video_id: str, url: str, out_dir: str) -> str | None:
+    """Transcript REALE del video sorgente via yt-dlp (sottotitoli automatici it, poi en).
+    Nessun contenuto inventato: se yt-dlp non c'e' o il video non ha sottotitoli, ritorna None
+    e la fase fallisce onestamente."""
+    os.makedirs(out_dir, exist_ok=True)
+    base = os.path.join(out_dir, f"dosementale-{video_id}")
+    esistenti = [p for p in (f"{base}.it.vtt", f"{base}.en.vtt") if os.path.exists(p)]
+    if not esistenti:
+        try:
+            subprocess.run(
+                ["yt-dlp", "--skip-download", "--write-auto-sub", "--sub-lang", "it,en",
+                 "--sub-format", "vtt", "-o", base, url],
+                capture_output=True, text=True, timeout=180,
+            )
+        except (FileNotFoundError, subprocess.TimeoutExpired) as e:
+            print(f"[!] yt-dlp non disponibile o troppo lento ({e}): transcript reale non recuperabile.")
+            return None
+        esistenti = [p for p in (f"{base}.it.vtt", f"{base}.en.vtt") if os.path.exists(p)]
+    if not esistenti:
+        return None
+    testo = _parse_vtt(esistenti[0])
+    return testo or None
+
+
 PUBLISHED_VIDEOS_PATH = os.path.join(MEMORY_DIR, "published_videos.json")
 
 
@@ -296,16 +322,6 @@ def _extract_youtube_id(url: str) -> str:
     m = re.search(r"youtu\.be/([\w-]+)", url or "")
     return m.group(1) if m else ""
 
-
-def _parse_view_range(raw: str) -> tuple[float, float]:
-    """'15.000 - 40.000' -> (15000.0, 40000.0). Gestisce anche un solo numero."""
-    nums = re.findall(r"[\d.]+", raw)
-    vals = [float(n.replace(".", "")) for n in nums if n.replace(".", "").isdigit()]
-    if len(vals) >= 2:
-        return vals[0], vals[1]
-    if len(vals) == 1:
-        return vals[0], vals[0]
-    return 0.0, 0.0
 
 class Apex7Orchestrator:
     def __init__(self, run_id: str | None = None, shared_domain: str = "youtube"):
@@ -447,9 +463,15 @@ class Apex7Orchestrator:
         else:
             completeness = round(min(10.0, n_words / 40), 2)  # 400 parole = punteggio pieno
 
-        # Accuracy: keyword density sul tema del funnel ("claude code") — assente è debole,
-        # presenza moderata è forte, keyword stuffing eccessivo penalizzato.
-        kw_hits = lower.count("claude code") + lower.count("claude")
+        # Accuracy: keyword density sulla keyword REALE della run (ricavata dal video sorgente
+        # in F2) — assente è debole, presenza moderata è forte, stuffing penalizzato. Prima era
+        # fissa su "claude code": su un canale di benessere dava sempre 3.0 a qualunque script.
+        keyword = (self.working_memory.get("keyword") or "").lower().strip()
+        kw_hits = lower.count(keyword) if keyword else 0
+        if keyword:
+            # Anche le singole parole della keyword contano: "camminare over 70" difficilmente
+            # compare tutta attaccata nel parlato, ma i suoi termini sì.
+            kw_hits += sum(lower.count(p) for p in keyword.split() if len(p) > 3)
         density = kw_hits / n_words if n_words else 0
         if kw_hits == 0:
             accuracy = 3.0
@@ -572,8 +594,8 @@ class Apex7Orchestrator:
         print(f"[+] Dashboard aggiornata (stato reale): {dashboard_path}")
 
     _PHASE_INFO = {
-        1: ("Scouting", "Niche-gate reale (Cash Cow Index >= 60, cashcow_check.py)"),
-        2: ("Selezione", "Video maturo (>=24h) con velocity views/ora reale"),
+        1: ("Canale target", "Dati reali del canale fisso @dosementale (Cash Cow Index riportato, non bloccante)"),
+        2: ("Selezione", f"Video maturo (>=24h) con velocity reale >= {MIN_VPH_VIDEO} viste/ora"),
         3: ("Script", "Critic score reale >= 7.5 (motore condiviso 11-APEX-7-CORE)"),
         4: ("Produzione", "Schema produzione-spec valido, scene reali da script.md"),
         5: ("Pubblicazione", "SEO score reale (seo_score.py)"),
@@ -632,55 +654,15 @@ class Apex7Orchestrator:
 
         return dashboard_path
 
-    # --- Fase 1: Scouting ---
-    def load_real_niche_channels(self) -> list[dict]:
-        """Legge i 20 canali reali italiani AI/automazione da 01_MAPPA_CANALI.md (Gemini,
-        WORKFLOW-ESTATE/04-SKILLS-E-REFERENCE/youtube-niche-scout-analysis/). Sostituisce lo
-        scouting a freddo con dati di mercato reali già raccolti (vedi LEGGIMI.md del pacchetto)."""
-        if not os.path.exists(MAPPA_CANALI_PATH):
-            return []
-        with open(MAPPA_CANALI_PATH, "r", encoding="utf-8") as f:
-            text = f.read()
-
-        channels = []
-        for line in text.splitlines():
-            line = line.strip()
-            if not line.startswith("|") or line.startswith("|---") or line.startswith("| #"):
-                continue
-            cols = [c.strip() for c in line.strip("|").split("|")]
-            if len(cols) < 7:
-                continue
-            try:
-                rank = int(cols[0])
-            except ValueError:
-                continue
-            name = cols[1].replace("**", "").strip()
-            handle = cols[2].replace("`", "").strip()
-            iscritti_raw = re.sub(r"[^\d]", "", cols[3])
-            iscritti = int(iscritti_raw) if iscritti_raw else 0
-            view_low, view_high = _parse_view_range(cols[4])
-            freq = cols[5].strip()
-            formato = cols[6].strip()
-            tier, cluster = OPPORTUNITA_TIER.get(name, DEFAULT_TIER)
-            channels.append({
-                "rank": rank, "channel": name, "handle": handle, "iscritti": iscritti,
-                "view_medie_low": view_low, "view_medie_high": view_high,
-                "freq_upload": freq, "formato": formato,
-                "opportunita_manuale": tier, "cluster": cluster,
-            })
-        return channels
-
-    def _cashcow_for_channel(self, ch: dict) -> dict:
-        """Cashcow check su stima aggregata dal canale reale (01_MAPPA_CANALI.md non fornisce
-        dati singolo-video da Video IQ, solo range di viste medie per canale: usiamo low/high
-        come 2 punti dati rappresentativi, età stimata dalla frequenza di upload reale)."""
-        age_hours = FREQ_TO_HOURS.get(ch["freq_upload"].lower(), DEFAULT_FREQ_HOURS)
+    # --- Fase 1: Conferma canale target ---
+    def _cashcow_for_channel(self, channel_name: str, videos: list[dict]) -> dict:
+        """Cashcow check sui video REALI del canale (titolo/viste/età presi davvero dalla pagina
+        pubblica /videos), non piu' su una stima aggregata: dal 2026-07-31 il canale e' uno solo
+        e fisso, quindi i dati singolo-video ci sono davvero e non serve stimare nulla."""
         canale_reale = {
-            "channel": ch["channel"],
-            "videos": [
-                {"title": f"{ch['channel']} - stima video tipo (fascia bassa)", "views": ch["view_medie_low"], "age_hours": age_hours, "errors": []},
-                {"title": f"{ch['channel']} - stima video tipo (fascia alta)", "views": ch["view_medie_high"], "age_hours": age_hours, "errors": []},
-            ]
+            "channel": channel_name,
+            "videos": [{"title": v["title"], "views": v["views"], "age_hours": v["age_hours"], "errors": []}
+                       for v in videos],
         }
         tmp_json_path = os.path.join(FACTORY_DIR, f"canale_tmp_{uuid.uuid4().hex[:6]}.json")
         self.save_json(tmp_json_path, canale_reale)
@@ -733,97 +715,63 @@ class Apex7Orchestrator:
             return 0.0
 
     def run_phase_1(self, interactive: bool) -> bool:
-        print("[📋 PLANNER] Inizializzazione della ricerca di nicchia...")
-        topic = self.working_memory.get("topic")
-        if not topic:
-            if interactive:
-                topic = input("[?] Inserisci la nicchia o tema di partenza (es. AI/Claude IT): ")
-            else:
-                topic = "AI/Claude IT"
-            self.working_memory["topic"] = topic
+        """Il canale target non si cerca piu': e' fisso (@dosementale). Questa fase lo conferma
+        sui dati REALI del canale (video, viste, età) e verifica che sia ancora un cash cow —
+        se il canale smettesse di performare, la fase deve fallire onestamente, non passare."""
+        canale, handle = CANALE_TARGET["channel"], CANALE_TARGET["handle"]
+        topic = self.working_memory.get("topic") or CANALE_TARGET["temi"]
+        self.working_memory["topic"] = topic
 
-        print(f"[*] Nicchia target impostata: {topic}")
-        print(f"[🔬 ANALYST] Caricamento dati REALI niche-scout da {MAPPA_CANALI_PATH}...")
-
+        print(f"[📋 PLANNER] Canale target fisso: {canale} ({handle}) — {topic}")
         scheda_nicchia_path = os.path.join(TEMPLATES_DIR, "scheda-nicchia.md")
-        channels = self.load_real_niche_channels()
-        if not channels:
-            print(f"[!] ERRORE: dati reali niche-scout non trovati in {MAPPA_CANALI_PATH}. Impossibile procedere senza dati reali.")
+
+        real_videos, provenienza = self._get_channel_videos(handle)
+        if not real_videos:
+            print(f"[!] ERRORE: nessun video reale disponibile per {handle} (rete assente e nessuna cache). "
+                  f"Impossibile confermare il canale senza dati reali.")
+            return False
+        print(f"[🔬 ANALYST] {len(real_videos)} video reali di {canale} (fonte: {provenienza}).")
+
+        maturi = [v for v in real_videos if v["age_hours"] >= VIDEO_MATURITY_FLOOR_HOURS]
+        campione = sorted(maturi, key=lambda v: -(v["views"] / v["age_hours"]))[:10]
+        if not campione:
+            print(f"[!] ERRORE: nessun video di {canale} supera la soglia di maturità ({VIDEO_MATURITY_FLOOR_HOURS}h).")
             return False
 
-        # Selezione: priorità ai canali a opportunità "Altissima"/"Media-Alta" per il Manuale
-        # (analisi Gemini in 01_MAPPA_CANALI.md), a parità di tier vince la vista media più alta.
-        tier_weight = {"Altissima": 2, "Media/Alta": 1, "Bassa/Media": 0}
+        cashcow = self._cashcow_for_channel(canale, campione)
+        indice = cashcow.get("index")
+        # L'indice cash cow resta calcolato e riportato per trasparenza, ma NON blocca piu' la
+        # fase: era il gate di *selezione* fra 20 canali candidati, decisione che qui non esiste
+        # piu' (il canale e' fisso, comprato/deciso fuori dalla pipeline). Il gate reale si e'
+        # spostato in F2 sul singolo video da copiare — l'unica scelta rimasta alla pipeline.
+        print(f"[🔬 ANALYST] Cashcow Check su {len(campione)} video reali — indice {indice} "
+              f"(informativo: soglia 60 non bloccante, il canale e' una decisione di business)")
 
-        def score(ch):
-            return (tier_weight.get(ch["opportunita_manuale"], 0), (ch["view_medie_low"] + ch["view_medie_high"]) / 2)
-
-        ranked = sorted(channels, key=score, reverse=True)
-
-        # 🚧 Niche-gate REALE: prova i candidati in ordine di priorità finché uno non supera
-        # davvero la soglia (>=60). Non ci si ferma al primo della lista solo perché è "il più in
-        # target": un canale a fit alto ma views basse può fallire, si passa al prossimo candidato
-        # reale — esattamente come farebbe un niche-scout umano.
-        scartati = []
-        scelto, cashcow = None, None
-        for candidate in ranked:
-            result = self._cashcow_for_channel(candidate)
-            print(f"[🔬 ANALYST] Cashcow Check — {candidate['channel']}: indice {result.get('index')} "
-                  f"({'PASS' if result.get('is_cashcow') else 'FAIL'})")
-            if result.get("is_cashcow"):
-                scelto, cashcow = candidate, result
-                break
-            scartati.append((candidate["channel"], result.get("index")))
-
-        if scelto is None:
-            # Nessuno dei 20 canali reali supera la soglia niche-gate: fallimento reale, non un
-            # PASS di comodo. Si registra comunque il tentativo per l'audit.
-            print(f"[🔴 CRITIC] Niche-gate FAIL su tutti i {len(ranked)} canali candidati: {scartati}")
-            with open(scheda_nicchia_path, "w", encoding="utf-8") as f:
-                f.write(f"# Scheda Nicchia: {topic}\n\n")
-                f.write("- Fonte dati: niche-scout-analysis/01_MAPPA_CANALI.md (analisi reale, Gemini)\n")
-                f.write(f"- Verdetto niche-gate: FAIL su tutti i {len(ranked)} canali candidati (nessuno >= soglia 60)\n")
-                f.write(f"- Indici scartati: {scartati}\n")
-            self.log_decision(
-                "DEC-nicchia-001",
-                "Nessun canale reale supera il niche-gate",
-                f"Tutti i {len(ranked)} canali di 01_MAPPA_CANALI.md sono sotto soglia 60 di Cash Cow Index.",
-                [c for c, _ in scartati],
-                0.0
-            )
-            return False
-
-        verdetto = "PASS"
-        alternative = [c for c, _ in scartati[:3]] or [c["channel"] for c in ranked if c is not scelto][:3]
-
-        # Scrittura scheda-nicchia.md con dati reali (non più il canale mock "Legami d'amore")
+        viste = [v["views"] for v in campione]
         with open(scheda_nicchia_path, "w", encoding="utf-8") as f:
             f.write(f"# Scheda Nicchia: {topic}\n\n")
-            f.write(f"- Fonte dati: niche-scout-analysis/01_MAPPA_CANALI.md (analisi reale, Gemini)\n")
-            f.write(f"- Canale analizzato: {scelto['channel']} ({scelto['handle']})\n")
-            f.write(f"- Iscritti: ~{scelto['iscritti']:,}".replace(",", ".") + "\n")
-            f.write(f"- View medie stimate: {scelto['view_medie_low']:.0f} - {scelto['view_medie_high']:.0f}\n")
-            f.write(f"- Formato: {scelto['formato']}\n")
-            f.write(f"- Cluster / Opportunità per il Manuale: {scelto['cluster']} ({scelto['opportunita_manuale']})\n")
-            f.write(f"- Indice Cash Cow (stima da viste medie aggregate, non da Video IQ singolo-video): {cashcow.get('index')} (Soglia superata: SÌ)\n")
-            f.write(f"- Verdetto niche-gate: {verdetto}\n")
-            if scartati:
-                f.write(f"- Candidati scartati prima di questo (sotto soglia 60): {scartati}\n")
+            f.write(f"- Canale target (fisso): {canale} ({handle}) — {CANALE_TARGET['url']}\n")
+            f.write(f"- Fonte dati: pagina pubblica /videos del canale, fetch reale ({provenienza})\n")
+            f.write(f"- Video reali analizzati: {len(campione)} (i piu' alti per velocity, età >= {VIDEO_MATURITY_FLOOR_HOURS}h)\n")
+            f.write(f"- Viste reali del campione: min {min(viste):.0f} / max {max(viste):.0f} / media {sum(viste)/len(viste):.0f}\n")
+            f.write(f"- Velocity media reale del campione: {cashcow.get('avg_views_per_hour')} viste/ora\n")
+            f.write(f"- Indice Cash Cow (su dati singolo-video reali): {indice} — informativo, non bloccante\n")
+            f.write(f"- Gate reale della pipeline: velocity del singolo video scelto in F2 "
+                    f"(>= {MIN_VPH_VIDEO} viste/ora)\n")
 
         self.log_decision(
             "DEC-nicchia-001",
-            f"Selezione canale reale: {scelto['channel']} ({scelto['handle']})",
-            f"Cluster '{scelto['cluster']}', opportunità '{scelto['opportunita_manuale']}' per il Manuale Claude Code "
-            f"(analisi niche-scout Gemini), view medie {scelto['view_medie_low']:.0f}-{scelto['view_medie_high']:.0f}, "
-            f"indice cash cow reale {cashcow.get('index')} (PASS). Scartati prima per niche-gate FAIL: {scartati}.",
-            alternative,
-            0.85 if scelto["opportunita_manuale"] == "Altissima" else 0.65
+            f"Canale target confermato: {canale} ({handle})",
+            f"Canale fisso di progetto (nessuno scouting): {len(campione)} video reali analizzati, viste medie "
+            f"{sum(viste)/len(viste):.0f}, velocity media {cashcow.get('avg_views_per_hour')} viste/ora, "
+            f"indice cash cow reale {indice} (riportato, non bloccante: il gate e' sul video in F2).",
+            [], 0.9
         )
 
         self.working_memory["scheda_nicchia"] = scheda_nicchia_path
-        self.working_memory["canale_scelto"] = scelto["channel"]
-        self.working_memory["canale_scelto_handle"] = scelto["handle"]
-        self.working_memory["canale_cluster"] = scelto["cluster"]
+        self.working_memory["canale_scelto"] = canale
+        self.working_memory["canale_scelto_handle"] = handle
+        self.working_memory["canale_cluster"] = topic
         self.working_memory["cashcow_index"] = cashcow.get("index")
         return True
 
@@ -852,13 +800,30 @@ class Apex7Orchestrator:
             return False
         maturi.sort(key=lambda x: -x["vph"])
 
-        # Punteggio SEO reale (solo titolo: nessun dato reale di descrizione/tag per video di terzi)
-        keyword = "claude"  # keyword del funnel: Manuale Claude Code
+        # Punteggio SEO reale (solo titolo: nessun dato reale di descrizione/tag per video di terzi).
+        # Keyword ricavata dal video piu' performante del canale, non piu' fissa sul funnel morto.
+        maturi.sort(key=lambda x: -x["vph"])
+        keyword = _keyword_from_title(maturi[0]["title"])
+        print(f"[🔬 ANALYST] Keyword reale ricavata dal video top del canale: '{keyword}'")
         for v in maturi:
             v["seo_score"] = self._seo_score_title_only(v["title"], keyword)
 
         top = maturi[:5] if len(maturi) >= 5 else maturi
         a_upside = top[0]  # massima velocity reale = massima prova di domanda
+
+        # 🚧 Gate reale della pipeline: se nemmeno il video piu' veloce del canale supera la
+        # soglia di "video performante", non c'e' niente che valga la pena replicare adesso.
+        if a_upside["vph"] < MIN_VPH_VIDEO:
+            print(f"[🔴 CRITIC] Video-gate FAIL: il miglior video di {canale_nome} fa {a_upside['vph']} "
+                  f"viste/ora, sotto la soglia di {MIN_VPH_VIDEO}. Nessun candidato da replicare adesso.")
+            self.log_decision(
+                "DEC-video-001",
+                "Nessun video del canale supera il video-gate",
+                f"Miglior velocity reale {a_upside['vph']} viste/ora su {len(maturi)} video maturi, "
+                f"sotto la soglia {MIN_VPH_VIDEO}: replicare un video che non sta funzionando non ha senso.",
+                [v["title"] for v in top[1:3]], 0.0
+            )
+            return False
         # B-sicurezza: il successivo per velocity con SEO reale già pari o superiore ad A —
         # un'alternativa più prudente, già meglio posizionata sulla nostra keyword.
         b_sicurezza = next((v for v in top[1:] if v["seo_score"] >= a_upside["seo_score"]), None)
@@ -910,6 +875,11 @@ class Apex7Orchestrator:
 
         self.working_memory["video_scelto"] = a_upside["title"]
         self.working_memory["video_scelto_url"] = a_upside["url"]
+        self.working_memory["video_scelto_id"] = _extract_youtube_id(a_upside["url"])
+        # Keyword del VIDEO SORGENTE (spesso in inglese: @dosementale pubblica anche in inglese).
+        # Serve solo a punteggiare i candidati fra loro. La keyword del NOSTRO video la fissa F3
+        # sul titolo italiano dello script adattato — sono due cose diverse.
+        self.working_memory["keyword_sorgente"] = keyword
         self.working_memory["label_scelta"] = "A-upside"
         return True
 
@@ -933,66 +903,56 @@ class Apex7Orchestrator:
         a_upside_candidato = next((v for v in candidati.get("videos", []) if v.get("title") == video_titolo), {})
         errori = a_upside_candidato.get("errors", [])
 
-        # Selezione dell'idea reale più affine (03_20_IDEE_VIDEO.md, 20 idee pre-scritte da
-        # Gemini per il funnel Manuale Claude Code) — non generiamo hook/CTA a runtime.
-        idee = _load_video_ideas()
-        if not idee:
-            print(f"[!] ERRORE: nessuna idea video reale trovata in {IDEE_VIDEO_PATH}. Impossibile procedere senza materiale reale.")
+        # Lo script adattato di ogni video sorgente sta in script-adattati/<videoId>.md, scritto
+        # a mano dal transcript REALE del video (le 20 idee pre-scritte per il funnel Manuale
+        # Claude Code sono state rimosse il 2026-07-31: progetto morto, dominio sbagliato).
+        # Non si genera il parlato a runtime — un adattamento vero e' lavoro di scrittura, e
+        # copiare il transcript verbatim non e' ammesso.
+        video_id = self.working_memory.get("video_scelto_id") or _extract_youtube_id(video_url)
+        os.makedirs(SCRIPT_ADATTATI_DIR, exist_ok=True)
+        adattato_path = os.path.join(SCRIPT_ADATTATI_DIR, f"{video_id}.md")
+
+        if not os.path.exists(adattato_path):
+            print(f"[✍️ WRITER] Nessuno script adattato per il video {video_id}: recupero il transcript reale...")
+            transcript = _fetch_transcript(video_id, video_url, TRANSCRIPTS_DIR)
+            brief_path = os.path.join(SCRIPT_ADATTATI_DIR, f"{video_id}.DA-SCRIVERE.md")
+            with open(brief_path, "w", encoding="utf-8") as f:
+                f.write(f"# Da scrivere: script adattato per {video_id}\n\n")
+                f.write(f"- Video sorgente reale: \"{video_titolo}\" ({video_url})\n")
+                f.write(f"- SEO reale del titolo originale: {seo_score}/100\n")
+                if errori:
+                    f.write(f"- Debolezze da correggere: {'; '.join(errori)}\n")
+                f.write(f"- Durata obbligatoria: {AP_VIDEO_SYSTEM_DURATION} → servono ~2.000 parole "
+                        f"(~140 parole/minuto). Sotto le 12 minuti il video non e' accettabile.\n")
+                f.write(f"- Struttura obbligatoria: `# Script: <titolo>` + sezioni `## HOOK`, `## INTRO`, "
+                        f"`## CORPO`, `## CTA`.\n")
+                f.write("- Va RISCRITTO, non copiato: stesso argomento e stesse informazioni reali, "
+                        "parole proprie.\n\n")
+                f.write("## Transcript reale del video sorgente\n\n")
+                f.write(transcript or "(transcript non disponibile: yt-dlp assente o video senza sottotitoli)\n")
+            print(f"[!] ERRORE: script adattato mancante per il video scelto.\n"
+                  f"    Scrivilo in: {adattato_path}\n"
+                  f"    Materiale reale gia' pronto in: {brief_path}\n"
+                  f"    Poi rilancia la Fase 3.")
             return False
 
-        learned_rules = self.load_json(self.learned_rules_path, {})
-        hook_preferiti = set(learned_rules.get("successful_hook_types", []))
-        cand_tok = _tokenize_for_matching(video_titolo)
-
-        def idea_score(idx_idea):
-            idx, idea = idx_idea
-            overlap = len(cand_tok & _tokenize_for_matching(idea["title"] + " " + idea["angolo"] + " " + idea["hook"]))
-            hook_bonus = 1 if idea["hook_type"] in hook_preferiti else 0
-            return (overlap, hook_bonus, -idx)  # a parità: hook-type storicamente vincente, poi idea più bassa
-
-        idx_scelto, idea_scelta = max(enumerate(idee), key=idea_score)
+        with open(adattato_path, "r", encoding="utf-8") as f:
+            script_text = f.read()
+        titolo_m = re.search(r"^#\s*Script:\s*(.+)", script_text, re.MULTILINE)
+        if not titolo_m:
+            print(f"[!] ERRORE: {adattato_path} non ha l'intestazione '# Script: <titolo>'. "
+                  f"Impossibile ricavarne il titolo reale.")
+            return False
+        titolo = titolo_m.group(1).strip()
+        # Keyword del NOSTRO video: dal titolo italiano dello script adattato, non dal titolo
+        # (spesso inglese) del video sorgente. Va fissata prima del Critic, che la usa per
+        # misurare la keyword density del testo.
+        self.working_memory["keyword"] = _keyword_from_title(titolo)
 
         script_path = os.path.join(TEMPLATES_DIR, "script.md")
         with open(script_path, "w", encoding="utf-8") as f:
-            f.write(f"# Script: {idea_scelta['title']}\n\n")
-            f.write(f"- **Formato di riferimento (proven, dati reali):** \"{video_titolo}\" ({video_url})")
-            if seo_score is not None:
-                f.write(f" — SEO reale del titolo originale: {seo_score}/100")
-            if errori:
-                f.write(f" — debolezza da correggere: {'; '.join(errori)}")
-            f.write("\n")
-            f.write(f"- **Idea sorgente (03_20_IDEE_VIDEO.md, idea #{idx_scelto + 1}):** selezionata per affinità tematica reale col video candidato.\n\n")
+            f.write(script_text)
 
-            f.write("## HOOK (primi 10-15s)\n")
-            f.write(f"{idea_scelta['hook']}\n")
-            f.write(f"➕ Adattamento: aggancia esplicitamente chi cerca contenuti simili a \"{video_titolo}\" "
-                    f"(query dove il video originale ha una SEO debole sulla nostra keyword 'claude code').\n\n")
-
-            f.write("## INTRO (valore proposto)\n")
-            f.write(f"{idea_scelta['angolo']} ➕ Prometti da subito il risultato pratico che vedrai nel corpo del video.\n\n")
-
-            f.write(f"## CORPO ({AP_VIDEO_SYSTEM_DURATION} — AP Video System, 02_PATTERN_VINCENTI.md §4)\n")
-            f.write("- 0:00-1:30 Hook + intro del problema\n")
-            f.write("- 1:30-10:00 Dimostrazione pratica reale (screencast Claude Code)")
-            if errori:
-                f.write(f", correggendo esplicitamente: {'; '.join(errori)}")
-            f.write("\n- 10:00-15:00 Transizione morbida verso il Manuale (non \"compra ora\", ma \"questo è l'1% di quello che puoi fare\")\n\n")
-
-            f.write("## CTA (iniziale leggera + metà + finale forte)\n")
-            f.write(f"{idea_scelta['cta']}\n\n")
-
-            f.write("## Note SEO inline\n")
-            f.write("Keyword da spingere nel parlato: \"claude code\".\n")
-            if learned_rules.get("high_performing_tags"):
-                f.write(f"Tag ad alta performance storica (learned_rules.json): {', '.join(learned_rules['high_performing_tags'])}.\n")
-            if hook_preferiti:
-                f.write(f"Hook-type storicamente vincente (learned_rules.json): {', '.join(hook_preferiti)} "
-                        f"(questa idea è di tipo '{idea_scelta['hook_type']}').\n")
-
-        # Sottoponiamo a loop di critica qualitativa sul testo REALE dello script scritto,
-        # non sul solo titolo — controlla struttura, keyword density, CTA reali.
-        with open(script_path, "r", encoding="utf-8") as f:
-            script_text = f.read()
         script_sections = ["## HOOK", "## INTRO", "## CORPO", "## CTA"]
         score, metrics = self.execute_critic("Script", script_text, required_sections=script_sections)
         if score < 7.5:
@@ -1000,11 +960,23 @@ class Apex7Orchestrator:
                   f"{', '.join(k for k, v in metrics.items() if v < 7.5)})...")
             score, metrics = self.execute_critic("Script Rafforzato", script_text, required_sections=script_sections)
 
-        print(f"[✍️ WRITER] Script scritto da idea reale #{idx_scelto + 1} \"{idea_scelta['title'][:50]}...\" per il video \"{video_titolo[:50]}...\"")
+        parole = len(re.findall(r"[a-zA-ZàèéìòùÀÈÉÌÒÙ']+", script_text))
+        minuti_stimati = parole / 140
+        print(f"[✍️ WRITER] Script adattato reale per il video {video_id}: \"{titolo[:60]}\" "
+              f"({parole} parole ≈ {minuti_stimati:.1f} min di parlato).")
+        if minuti_stimati < 12:
+            print(f"[🔴 CRITIC] Script troppo corto ({minuti_stimati:.1f} min < 12 min obbligatori): "
+                  f"nessun parametro dell'API Fliki puo' allungarlo, va espanso il testo.")
+            return False
+
+        hook_m = re.search(r"^## HOOK[^\n]*\n(.+?)(?=\n## |\Z)", script_text, re.MULTILINE | re.DOTALL)
+        hook_text = (hook_m.group(1) if hook_m else "").split("➕")[0].strip()
+
         self.working_memory["script_path"] = script_path
-        self.working_memory["script_idea_title"] = idea_scelta["title"]
-        self.working_memory["script_idea_hook_type"] = idea_scelta["hook_type"]
+        self.working_memory["script_idea_title"] = titolo
+        self.working_memory["script_idea_hook_type"] = "Question" if "?" in hook_text else "Statement"
         self.working_memory["script_critic_score"] = score
+        self.working_memory["script_parole"] = parole
         return True
 
     # --- Fase 4: Produzione ---
@@ -1081,6 +1053,61 @@ class Apex7Orchestrator:
         return True
 
     # --- Fase 5: Pubblicazione ---
+    def _ensure_source_thumbnail(self, video_id: str) -> str | None:
+        """Scarica (se manca) la copertina REALE del video sorgente. E' la base che Arena deve
+        modificare: senza, la miniatura verrebbe inventata da zero. Ritorna il percorso relativo
+        a 05-TEMPLATES-E-KIT, o None se il download non riesce (il prompt testuale fa da ripiego)."""
+        if not video_id:
+            return None
+        os.makedirs(SOURCE_THUMBS_DIR, exist_ok=True)
+        nome = f"dosementale-{video_id}-maxres.jpg"
+        dest = os.path.join(SOURCE_THUMBS_DIR, nome)
+        rel = f"source-thumbnail/{nome}"
+        if os.path.exists(dest):
+            return rel
+        try:
+            req = urllib.request.Request(f"https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg",
+                                         headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                dati = resp.read()
+        except (urllib.error.URLError, TimeoutError) as e:
+            print(f"[!] Copertina sorgente non scaricabile per {video_id}: {e}")
+            return None
+        with open(dest, "wb") as f:
+            f.write(dati)
+        print(f"[✍️ WRITER] Copertina reale del video sorgente salvata: {rel}")
+        return rel
+
+    @staticmethod
+    def _overlay_lines_from_title(titolo: str, max_parole_riga: int = 5) -> list[str]:
+        """Testo della miniatura ricavato dal titolo reale, spezzato in righe corte come nelle
+        copertine di @dosementale. Si spezza PRIMA sulla punteggiatura del titolo (i suoi confini
+        naturali di senso), poi si va a capo solo se una parte resta troppo lunga: un taglio ogni
+        N parole fisse spezzava le frasi a meta' e faceva sparire le ultime parole del titolo."""
+        def a_capo(parole: list[str], per_riga: int) -> list[str]:
+            return [" ".join(parole[i:i + per_riga]) for i in range(0, len(parole), per_riga)]
+
+        segmenti = [s.strip() for s in re.split(r"[,:;—–]", titolo) if s.strip()]
+        righe = []
+        for seg in segmenti:
+            righe.extend(a_capo(seg.split(), max_parole_riga))
+
+        if len(righe) > 4:
+            # Troppe righe per una miniatura leggibile: si ribilancia tutto il titolo su 4 righe
+            # invece di troncare (nessuna parola del titolo va persa).
+            parole = titolo.replace(",", " ").replace(":", " ").split()
+            per_riga = -(-len(parole) // 4)
+            righe = a_capo(parole, per_riga)
+
+        # Una riga finale di una sola parola resta orfana in miniatura: si riunisce alla
+        # precedente se ci sta.
+        if len(righe) > 1 and len(righe[-1].split()) == 1 and \
+                len(righe[-2].split()) + 1 <= max_parole_riga + 1:
+            righe[-2:] = [f"{righe[-2]} {righe[-1]}"]
+
+        righe = [r.upper().rstrip(".,;:") for r in righe if r.strip()]
+        return righe or [titolo.upper()[:40]]
+
     def run_phase_5(self, interactive: bool) -> bool:
         print("[✍️ WRITER] Generazione dei metadati e del brief della miniatura...")
 
@@ -1098,26 +1125,43 @@ class Apex7Orchestrator:
         hook_clean = scene_by_section.get("HOOK", "").split("➕")[0].strip()
         intro_clean = scene_by_section.get("INTRO", "").split("➕")[0].strip()
         cta_clean = scene_by_section.get("CTA", "").strip()
-        keyword = "claude code"
+        keyword = self.working_memory.get("keyword") or _keyword_from_title(idea_title)
 
-        # --- Brief miniatura: concept/text_overlay derivati dall'HOOK reale, non fissi ---
+        # --- Brief miniatura: si parte dalla copertina REALE del video sorgente e la si ADATTA
+        # (regola di Gael, 2026-07-31), non si inventa un'immagine da una descrizione generica.
+        # arena_thumbnail.py allega questo file alla chat e chiede una modifica.
+        video_id = self.working_memory.get("video_scelto_id", "")
         brief_path = os.path.join(TEMPLATES_DIR, "brief-miniatura.json")
-        overlay_words = hook_clean.split()[:5]
-        text_overlay = " ".join(overlay_words).upper().rstrip(".,;:!?") or idea_title.upper()[:40]
-        hook_excerpt = hook_clean[:120] + ("..." if len(hook_clean) > 120 else "")
+        source_rel = self._ensure_source_thumbnail(video_id)
+        overlay_lines = self._overlay_lines_from_title(idea_title)
         brief = {
             "title": idea_title,
-            "concept": f"Frame ispirato all'hook reale ({hook_type}): \"{hook_excerpt}\"",
-            "text_overlay": text_overlay,
-            "image_prompt": "Minimal terminal styling con gradiente caldo, testo overlay leggibile in miniatura piccola"
+            "source_video_id": video_id,
+            "source_thumbnail": source_rel,
+            "source_style": "Copertina reale del video sorgente @dosementale, da adattare mantenendone "
+                            "il linguaggio visivo (vedi il file allegato).",
+            # Estratto tagliato a fine parola: "...fa bene al " troncato a meta' non dice nulla
+            # al modello che deve disegnare la scena.
+            "concept": f"scene inspired by the real hook ({hook_type}): "
+                       f"\"{hook_clean[:120].rsplit(' ', 1)[0].rstrip(',;:')}...\"",
+            # "pose" resta assente di proposito: la posa esatta del soggetto e' una scelta
+            # creativa che questo codice non puo' dedurre. arena_thumbnail.py, se manca, chiede
+            # di adattare l'illustrazione al tema partendo dal `concept`.
+            "text_overlay_lines": overlay_lines,
+            "text_overlay_highlight_lines": [overlay_lines[0], overlay_lines[-1]] if len(overlay_lines) > 1 else overlay_lines,
         }
         self.save_json(brief_path, brief)
+        val_brief = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "validate_schemas.py"), "brief-miniatura", brief_path], capture_output=True, text=True)
+        print(f"[🔬 ANALYST] Validazione brief miniatura: {val_brief.stdout.strip()}")
 
         # --- Metadati: titolo/descrizione/tag reali, non piu' statici ---
         learned_rules = self.load_json(self.learned_rules_path, {})
-        cluster = self.working_memory.get("canale_cluster")
+        # I temi del canale come tag SEPARATI: prima finiva tra i tag l'intera frase descrittiva
+        # del cluster ("spiritualita', psicologia, saggezza biblica/..."), che come tag YouTube
+        # non serve a niente.
         idea_tokens = sorted(_tokenize_for_matching(idea_title))[:6]
-        tag_candidates = list(learned_rules.get("high_performing_tags", [])) + ([cluster] if cluster else []) + idea_tokens + [keyword]
+        tag_candidates = (list(learned_rules.get("high_performing_tags", []))
+                          + CANALE_TARGET["tag_tema"] + idea_tokens + [keyword])
         tags, seen = [], set()
         for t in tag_candidates:
             tl = (t or "").strip().lower()
@@ -1127,7 +1171,7 @@ class Apex7Orchestrator:
 
         description = (
             f"{hook_clean}\n\n{intro_clean}\n\n{cta_clean}\n\n"
-            f"Iscriviti per altri video su claude code e trova la guida completa nel Manuale — link in descrizione."
+            f"Iscriviti per altri contenuti su {keyword}: consigli basati su studi reali, non su mode."
         )
 
         metadata_path = os.path.join(TEMPLATES_DIR, "metadati.json")
@@ -1206,7 +1250,7 @@ class Apex7Orchestrator:
         logs = self.load_json(self.perf_logs_path, [])
         new_log = {
             "video_id": entry.get("video_id"),
-            "keyword": metadata.get("keyword", "claude code"),
+            "keyword": metadata.get("keyword", self.working_memory.get("keyword", "")),
             "voice": "Fabio (Italiano)",
             "hook_type": self.working_memory.get("script_idea_hook_type", "Question"),
             "tags": metadata.get("tags", []),

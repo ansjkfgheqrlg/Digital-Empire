@@ -44,8 +44,13 @@ class MetaAgent:
         updated_strategies_count = 0
         for strat in strategies:
             strat_name = strat.get("name")
-            # Simuliamo l'associazione tra strategia e performance log
-            matching_perf = [log_rec for log_rec in perf_logs if log_rec.get("keyword") == "claude code"]
+            # Associazione strategia ↔ performance log: si considerano TUTTI i log con una
+            # keyword reale e un CTR misurato. Prima il filtro era fisso su `keyword ==
+            # "claude code"` (funnel morto): sui video di @dosementale non trovava mai nulla e
+            # il success rate delle strategie non veniva mai aggiornato (2026-07-31).
+            matching_perf = [log_rec for log_rec in perf_logs
+                             if log_rec.get("keyword")
+                             and (log_rec.get("metrics") or {}).get("ctr") is not None]
             
             if matching_perf:
                 # Calcola il CTR medio e la retention

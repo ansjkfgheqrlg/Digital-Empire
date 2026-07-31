@@ -17,7 +17,7 @@ Uso:
 
 canale.json:
 {
-  "channel": "Legami d'amore",
+  "channel": "Dose Mentale",
   "videos": [
     {"title": "...", "views": 120000, "age_hours": 800, "errors": ["seo debole"]},
     {"title": "...", "views": 300000, "age_hours": 1500, "errors": []}

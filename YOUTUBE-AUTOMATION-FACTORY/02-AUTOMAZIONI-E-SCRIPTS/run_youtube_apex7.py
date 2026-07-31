@@ -16,13 +16,15 @@ from __future__ import annotations
 import logging
 import os
 import sys
-import io
 from datetime import datetime
 
-# Forza stdout e stderr in utf-8 su Windows per prevenire errori cp1252
+# Forza stdout e stderr in utf-8 su Windows per prevenire errori cp1252. reconfigure() e non un
+# nuovo io.TextIOWrapper: quest'ultimo blocca l'output su file (buffering a blocchi) e, se un
+# altro modulo dello stesso processo fa lo stesso, chiude il buffer condiviso al garbage
+# collection ("I/O operation on closed file"). Bug reali trovati il 2026-07-30.
 if sys.platform.startswith("win"):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
-    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8")
+    sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
+    sys.stderr.reconfigure(encoding="utf-8", line_buffering=True)
 
 # Aggiungi cartella script a sys.path
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))

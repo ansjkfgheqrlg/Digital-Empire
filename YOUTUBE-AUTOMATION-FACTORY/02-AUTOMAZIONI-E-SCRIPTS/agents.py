@@ -22,7 +22,14 @@ log = logging.getLogger("preventa-pw.agents")
 # Assicuriamoci che i path siano corretti
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
 FACTORY_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-TEMPLATES_DIR = os.path.join(FACTORY_DIR, "05-TEMPLATES-E-KIT")
+
+# ⚠️ Questo Conductor e' la SIMULAZIONE mock (vedi run_youtube_apex7.py, deprecato in
+# TASK-YT-005): i suoi dati sono finti e ancora del vecchio funnel Claude Code. Fino al
+# 2026-07-31 scriveva dentro 05-TEMPLATES-E-KIT, cioe' sopra i file di produzione REALI
+# (script.md, metadati.json, brief-miniatura.json, ...): un solo lancio del runner deprecato
+# distruggeva il lavoro vero. Ora scrive in una sandbox separata. I test sovrascrivono
+# comunque questo path per isolarsi.
+TEMPLATES_DIR = os.path.join(FACTORY_DIR, "memory", "simulazione-mock")
 
 class NicheScoutAgent:
     def __init__(self, event_bus: EventBus, memory: MemoryQueryInterface):
@@ -38,10 +45,10 @@ class NicheScoutAgent:
         os.makedirs(os.path.dirname(scheda_path), exist_ok=True)
         
         canale_mock = {
-            "channel": "Legami d'amore",
+            "channel": "Canale simulato (dati finti)",
             "videos": [
-                {"title": "Come installare Claude Code", "views": 15000, "age_hours": 120, "errors": []},
-                {"title": "Costruire Agent Swarm", "views": 32000, "age_hours": 240, "errors": ["seo debole"]}
+                {"title": "Video simulato A (dati finti)", "views": 15000, "age_hours": 120, "errors": []},
+                {"title": "Video simulato B (dati finti)", "views": 32000, "age_hours": 240, "errors": ["seo debole"]}
             ]
         }
         mock_json_path = os.path.join(FACTORY_DIR, "canale_tmp.json")
@@ -57,7 +64,7 @@ class NicheScoutAgent:
         # Scrittura scheda-nicchia.md
         with open(scheda_path, "w", encoding="utf-8") as f:
             f.write(f"# Scheda Nicchia: {topic}\n\n")
-            f.write(f"- Canale cash cow analizzato: Legami d'amore\n")
+            f.write("- Canale cash cow analizzato: Canale simulato (dati finti)\n")
             f.write(f"- Indice Cash Cow: 76.5 (Soglia superata: SÌ)\n")
             f.write(f"- Verdetto: PASS\n")
             
@@ -79,9 +86,9 @@ class VideoHunterAgent:
         candidati_path_json = os.path.join(TEMPLATES_DIR, "candidati-video.json")
         
         candidati = {
-            "channel": "Legami d'amore",
+            "channel": "Canale simulato (dati finti)",
             "videos": [
-                {"title": "Installare Claude Code locale", "url": "https://youtube.com/watch?v=1", "views": 25000, "age_hours": 100, "errors": ["seo debole"]},
+                {"title": "Video simulato A (dati finti)", "url": "https://youtube.com/watch?v=1", "views": 25000, "age_hours": 100, "errors": ["seo debole"]},
                 {"title": "Prompt Engineering per Agent Swarm", "url": "https://youtube.com/watch?v=2", "views": 8000, "age_hours": 150, "errors": []}
             ]
         }
@@ -95,7 +102,7 @@ class VideoHunterAgent:
         seo_report_json = os.path.join(TEMPLATES_DIR, "seo-report.json")
         seo_report = {
             "videos": [
-                {"title": "Installare Claude Code locale", "seo_score": 45.0, "label": "A-upside"},
+                {"title": "Video simulato A (dati finti)", "seo_score": 45.0, "label": "A-upside"},
                 {"title": "Prompt Engineering per Agent Swarm", "seo_score": 85.0, "label": "B-sicurezza"}
             ]
         }
@@ -106,7 +113,7 @@ class VideoHunterAgent:
             event_type="video.selected",
             publisher=self.agent_id,
             payload={
-                "video_title": "Installare Claude Code locale",
+                "video_title": "Video simulato A (dati finti)",
                 "label": "A-upside",
                 "candidates_path": candidati_path_json,
                 "seo_report_path": seo_report_json
@@ -148,7 +155,7 @@ class VideoProducerAgent:
         spec_path = os.path.join(TEMPLATES_DIR, "produzione-spec.json")
         
         spec = {
-            "video_id": "claude-code-001",
+            "video_id": "video-simulato-001",
             "title": video_title,
             "voice": "Fabio (Italiano)",
             "music": "Soft ambient",
@@ -180,21 +187,37 @@ class MetadataOptimizerAgent:
     def execute_optimization(self, video_title: str):
         log.info(f"🏷️ [{self.agent_id}] Ottimizzazione metadati e thumbnail...")
         brief_path = os.path.join(TEMPLATES_DIR, "brief-miniatura.json")
+        # Schema brief-miniatura aggiornato il 2026-07-31 (miniatura adattata dalla sorgente +
+        # righe di testo): anche la simulazione deve restare conforme, altrimenti il gate di
+        # validazione la boccia.
         brief = {
             "title": video_title,
-            "concept": "Console nera con scritte arancioni e logo Claude",
-            "text_overlay": "CLAUDE CODE LOCALE",
-            "image_prompt": "Minimal terminal styling with warm gradients"
+            "source_video_id": "",
+            "source_thumbnail": None,
+            "source_style": "Stile simulato (dati finti, non usare in produzione)",
+            "concept": "Scena simulata (dati finti)",
+            "text_overlay_lines": ["TESTO SIMULATO", "SECONDA RIGA"],
+            "text_overlay_highlight_lines": ["TESTO SIMULATO"],
         }
         with open(brief_path, "w", encoding="utf-8") as f:
             json.dump(brief, f, indent=2)
             
         metadata_path = os.path.join(TEMPLATES_DIR, "metadati.json")
+        # Metadati simulati ma COERENTI con la keyword (presente in titolo, descrizione e tag) e
+        # con le soglie di seo_score.py: altrimenti il gate SEO L5_L6 boccia la simulazione e il
+        # workflow mock non arriva mai a "workflow.completed".
         metadata = {
-            "title": f"Come Installare {video_title} (Guida Passo-Passo)",
-            "description": "Ecco come installare Claude Code nel terminale in modo semplice...",
-            "tags": ["claude code", "antigravity", "digital empire"],
-            "keyword": "claude code",
+            "title": f"Argomento simulato: {video_title} (guida)",
+            "description": (
+                "Descrizione simulata (dati finti, non usare in produzione).\n"
+                "Seconda riga della descrizione simulata, con hook e valore fittizi.\n\n"
+                "Questo testo esiste solo per far girare la simulazione del Conductor su un "
+                "argomento simulato: non descrive nessun video reale e non deve mai finire su "
+                "YouTube. Iscriviti (CTA simulata) — link simulato: https://example.invalid"
+            ),
+            "tags": ["argomento simulato", "tag simulato", "dati finti", "simulazione",
+                     "conductor", "mock", "placeholder", "non usare"],
+            "keyword": "argomento simulato",
             "thumbnail": True,
             "subtitles": True
         }
@@ -224,11 +247,11 @@ class PerformanceAuditorAgent:
         # Append log storico
         logs = self.memory._load_json_noblock(self.memory.perf_logs_path, [])
         new_log = {
-            "video_id": "claude-code-001",
-            "keyword": "claude code",
+            "video_id": "video-simulato-001",
+            "keyword": "argomento simulato",
             "voice": "Fabio (Italiano)",
             "hook_type": "Question",
-            "tags": ["claude code", "antigravity", "digital empire"],
+            "tags": ["tag simulato", "dati finti"],
             "metrics": {
                 "views_per_hour": 35.5,
                 "ctr": 8.2,
@@ -377,9 +400,9 @@ class Conductor:
             log.warning(f"🔄 [{self.agent_id}] Rilevato fallimento gate {gate_id} (tentativo {attempt_number}). Avvio Remediation...")
             if gate_id == "L3_L4":
                 log.info(f"🔄 [{self.agent_id}] Remediation L3_L4: Rigenerazione script con istruzioni migliorate...")
-                self.writer_agent.execute_script_writing("Dose Mentale", "Installare Claude Code locale")
+                self.writer_agent.execute_script_writing("Dose Mentale", "Video simulato A (dati finti)")
             elif gate_id == "L5_L6":
                 log.info(f"🔄 [{self.agent_id}] Remediation L5_L6: Rigenerazione metadati con keyword prioritaria...")
-                self.optimizer_agent.execute_optimization("Installare Claude Code locale")
+                self.optimizer_agent.execute_optimization("Video simulato A (dati finti)")
         else:
             log.error(f"🚨 [{self.agent_id}] Raggiunto il limite di 3 tentativi falliti per il gate {gate_id}. Conduco protocollo di ESCALATION.")

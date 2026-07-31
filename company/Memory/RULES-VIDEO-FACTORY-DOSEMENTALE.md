@@ -98,6 +98,31 @@ Sintesi:
 12. **Non salvare come candidato un'immagine caricata da noi**: raccogliere solo i `src` comparsi
     DOPO l'invio del messaggio, altrimenti la miniatura sorgente allegata finisce tra i risultati.
 
+13. **Il pivot va fatto anche sul MOTORE, non solo sui contenuti** (2026-07-31): tutto
+    `apex7_orchestrator.py` F1→F5 era rimasto cablato sul funnel morto (scouting fra 20 canali AI,
+    20 idee pre-scritte per il Manuale, keyword fissa "claude code", CTA verso il Manuale) e un
+    run end-to-end sovrascriveva gli artefatti reali. Inoltre `agents.py` (simulazione ritirata)
+    scriveva nella stessa cartella dei file veri e i suoi log finti alimentavano
+    `learned_rules.json`. Dopo un pivot: lanciare la pipeline e leggere OGNI artefatto rigenerato.
+14. **Keyword = porzione contigua del titolo** (2026-07-31): `seo_score.py` cerca la keyword come
+    sottostringa esatta — parole sparse ("camminare contano davvero") non vengono mai trovate.
+    Verificare con `keyword in titolo.lower()`.
+
+## Come gira oggi il flusso (riscritto il 2026-07-31)
+`python apex7_orchestrator.py run --phase 6` esegue:
+- **F1** — canale target FISSO @dosementale, confermato su video/viste/età reali. L'indice Cash
+  Cow e' riportato ma NON blocca (era il gate di scelta fra 20 canali, decisione che non esiste
+  piu': il canale e' una scelta di business).
+- **F2** — sceglie il video da copiare per velocity reale. **Gate reale della pipeline**: se
+  nemmeno il migliore supera 20 viste/ora, fallisce onestamente.
+- **F3** — usa lo script adattato in `05-TEMPLATES-E-KIT/script-adattati/<videoId>.md`. Se manca,
+  scarica il transcript REALE (yt-dlp), scrive `<videoId>.DA-SCRIVERE.md` col materiale e si
+  ferma: lo script va riscritto a mano (mai copiato verbatim, mai generato a runtime). Blocca
+  anche se lo script e' sotto i 12 minuti stimati.
+- **F4/F5** — spec Fliki, metadati (keyword italiana dal nostro titolo) e brief miniatura con la
+  copertina reale del video sorgente scaricata automaticamente.
+Poi: `arena_thumbnail.py` (copertina) e `fliki_client.py --file-name <nome>` (video).
+
 ## Esito verificato (2026-07-31)
 Video reale conforme a tutti gli standard: 727s (12min 7s), voce maschile reale (Calimero),
 sottotitoli visibili verificati su più fotogrammi, 19 scene bilanciate, nessun blocco in coda.

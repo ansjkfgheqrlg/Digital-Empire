@@ -1,11 +1,9 @@
-# Scheda Nicchia: AI/Claude IT
+# Scheda Nicchia: spiritualita', psicologia, saggezza biblica/buddista, motivazione, salute e benessere per un pubblico adulto/anziano
 
-- Fonte dati: niche-scout-analysis/01_MAPPA_CANALI.md (analisi reale, Gemini)
-- Canale analizzato: Andrea Ciraolo (@ciraolone)
-- Iscritti: ~232.000
-- View medie stimate: 10000 - 25000
-- Formato: **Screencast / Tool Walkthrough.** Spiegazioni passo-passo di n8n, Notion, Obsidian e automazioni personali. Molto chiaro, orientato alla produttività e alla didattica visuale.
-- Cluster / Opportunità per il Manuale: Low-Code Business Architect (Media/Alta)
-- Indice Cash Cow (stima da viste medie aggregate, non da Video IQ singolo-video): 78.4 (Soglia superata: SÌ)
-- Verdetto niche-gate: PASS
-- Candidati scartati prima di questo (sotto soglia 60): [('Alberto Olla', 44.0), ('Martes AI', 19.7), ('Piero Savastano', 17.3), ('SOS Automazioni', 20.2)]
+- Canale target (fisso): Dose Mentale (@dosementale) — https://www.youtube.com/@dosementale
+- Fonte dati: pagina pubblica /videos del canale, fetch reale (cache)
+- Video reali analizzati: 10 (i piu' alti per velocity, età >= 24h)
+- Viste reali del campione: min 1200 / max 141000 / media 25240
+- Velocity media reale del campione: 9.4 viste/ora
+- Indice Cash Cow (su dati singolo-video reali): 21.1 — informativo, non bloccante
+- Gate reale della pipeline: velocity del singolo video scelto in F2 (>= 20.0 viste/ora)

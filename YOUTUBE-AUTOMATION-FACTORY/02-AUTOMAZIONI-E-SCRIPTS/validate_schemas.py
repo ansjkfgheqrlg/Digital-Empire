@@ -48,12 +48,24 @@ def validate_produzione_spec(data):
     return True
 
 def validate_brief_miniatura(data):
+    """Schema aggiornato il 2026-07-31: la miniatura si ADATTA da quella reale del video
+    sorgente (source_video_id/source_thumbnail) e il testo e' una LISTA di righe corte, come
+    nelle copertine di @dosementale. Il vecchio schema (text_overlay + image_prompt singoli)
+    apparteneva al flusso 'immagine inventata da una descrizione'."""
     if not isinstance(data, dict):
         raise ValueError("L'input deve essere un dizionario (oggetto JSON).")
-    required = ["title", "concept", "text_overlay", "image_prompt"]
-    for field in required:
+    for field in ["title", "concept", "source_style"]:
         if field not in data or not isinstance(data[field], str):
             raise ValueError(f"Campo '{field}' mancante o non stringa.")
+    righe = data.get("text_overlay_lines")
+    if not isinstance(righe, list) or not righe or not all(isinstance(r, str) and r.strip() for r in righe):
+        raise ValueError("Campo 'text_overlay_lines' mancante o non lista di stringhe non vuote.")
+    evidenziate = data.get("text_overlay_highlight_lines", [])
+    if not isinstance(evidenziate, list) or any(r not in righe for r in evidenziate):
+        raise ValueError("'text_overlay_highlight_lines' deve essere una lista di righe presenti in 'text_overlay_lines'.")
+    if "source_thumbnail" in data and data["source_thumbnail"] is not None \
+            and not isinstance(data["source_thumbnail"], str):
+        raise ValueError("Campo 'source_thumbnail' deve essere una stringa o null.")
     return True
 
 def validate_metadati(data):

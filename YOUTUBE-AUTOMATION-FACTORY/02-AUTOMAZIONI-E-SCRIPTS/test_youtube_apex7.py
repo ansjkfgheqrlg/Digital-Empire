@@ -176,7 +176,7 @@ class TestYouTubeApex7(unittest.TestCase):
         conductor.start_workflow("Dose Mentale")
         
         self.assertEqual(len(events_fired), 1)
-        self.assertEqual(events_fired[0].payload["video_title"], "Installare Claude Code locale")
+        self.assertEqual(events_fired[0].payload["video_title"], "Video simulato A (dati finti)")
 
     def test_remediation_and_escalation(self):
         failed_events = []
@@ -222,8 +222,8 @@ class TestYouTubeApex7(unittest.TestCase):
         # Inseriamo un record di performance finto per simulare un buon CTR
         logs = [
             {
-                "video_id": "claude-code-001",
-                "keyword": "claude code",
+                "video_id": "video-simulato-001",
+                "keyword": "argomento simulato",
                 "metrics": {
                     "views_per_hour": 50.0,
                     "ctr": 9.5,

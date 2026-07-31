@@ -1,14 +1,8 @@
 {
   "low_performing_keywords": [],
   "low_performing_voices": [],
-  "successful_hook_types": [
-    "Question"
-  ],
-  "high_performing_tags": [
-    "antigravity",
-    "claude code",
-    "digital empire"
-  ],
-  "dynamic_min_vph": 35.5,
-  "last_updated": "2026-07-29T08:50:44.945671"
+  "successful_hook_types": [],
+  "high_performing_tags": [],
+  "last_updated": "2026-07-31T15:28:22.601385",
+  "nota": "Azzerato il 2026-07-31: i valori precedenti (tag 'claude code'/'antigravity', dynamic_min_vph 35.5) erano stati appresi da 6 log di performance simulati del vecchio funnel, non da video reali. Si ripopolera' da misure vere."
 }

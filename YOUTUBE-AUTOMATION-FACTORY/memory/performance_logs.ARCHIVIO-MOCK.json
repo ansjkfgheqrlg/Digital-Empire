@@ -1,0 +1,100 @@
+{
+  "nota": "Log di performance FINTI prodotti dalla simulazione Conductor (agents.py, ritirata in TASK-YT-005) del vecchio funnel Manuale Claude Code. Archiviati il 2026-07-31: alimentavano learned_rules.json e da li' i tag 'claude code' rientravano nei metadati reali di @dosementale. La pipeline reale non puo' ottenere CTR/retention (dati privati di YouTube Studio) e scrive null: qualunque voce con un CTR numerico e' per costruzione simulata.",
+  "archiviati_il": "2026-07-31T15:28:22",
+  "voci": [
+    {
+      "video_id": "claude-code-001",
+      "keyword": "claude code",
+      "metrics": {
+        "views_per_hour": 50.0,
+        "ctr": 9.5,
+        "retention_rate": 60.0
+      }
+    },
+    {
+      "video_id": "claude-code-001",
+      "keyword": "claude code",
+      "voice": "Fabio (Italiano)",
+      "hook_type": "Question",
+      "tags": [
+        "claude code",
+        "antigravity",
+        "digital empire"
+      ],
+      "metrics": {
+        "views_per_hour": 35.5,
+        "ctr": 8.2,
+        "retention_rate": 55.0,
+        "curve_type": "regolare"
+      }
+    },
+    {
+      "video_id": "claude-code-001",
+      "keyword": "claude code",
+      "voice": "Fabio (Italiano)",
+      "hook_type": "Question",
+      "tags": [
+        "claude code",
+        "antigravity",
+        "digital empire"
+      ],
+      "metrics": {
+        "views_per_hour": 35.5,
+        "ctr": 8.2,
+        "retention_rate": 55.0,
+        "curve_type": "regolare"
+      }
+    },
+    {
+      "video_id": "claude-code-001",
+      "keyword": "claude code",
+      "voice": "Fabio (Italiano)",
+      "hook_type": "Question",
+      "tags": [
+        "claude code",
+        "antigravity",
+        "digital empire"
+      ],
+      "metrics": {
+        "views_per_hour": 35.5,
+        "ctr": 8.2,
+        "retention_rate": 55.0,
+        "curve_type": "regolare"
+      }
+    },
+    {
+      "video_id": "claude-code-001",
+      "keyword": "claude code",
+      "voice": "Fabio (Italiano)",
+      "hook_type": "Question",
+      "tags": [
+        "claude code",
+        "antigravity",
+        "digital empire"
+      ],
+      "metrics": {
+        "views_per_hour": 35.5,
+        "ctr": 8.2,
+        "retention_rate": 55.0,
+        "curve_type": "regolare"
+      }
+    },
+    {
+      "video_id": "claude-code-001",
+      "keyword": "claude code",
+      "voice": "Fabio (Italiano)",
+      "hook_type": "Question",
+      "tags": [
+        "claude code",
+        "antigravity",
+        "digital empire"
+      ],
+      "metrics": {
+        "views_per_hour": 35.5,
+        "ctr": 8.2,
+        "retention_rate": 55.0,
+        "curve_type": "regolare"
+      }
+    }
+  ]
+}

@@ -386,5 +386,165 @@
     ],
     "confidence": 0.8,
     "timestamp": "2026-07-29T15:28:11.103704"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260731-152017-b34b18",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25240, velocity media 9.4 viste/ora, indice cash cow reale 21.1 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-07-31T15:20:18.018857"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260731-152017-b34b18",
+    "decision": "Scelta video target: Are you 70-80 years old? STOP walking so much and do ONLY these 2 things.",
+    "reason": "Velocity reale 38.63 views/ora (141000 viste in 3650h) su Dose Mentale — SEO score reale del titolo 10.0/100 per keyword 'years walking things': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Toxic Family Members? Here's How God Drives You Away | Biblical Wisdom"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-07-31T15:20:22.209769"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260731-152230-0dc5b0",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25240, velocity media 9.4 viste/ora, indice cash cow reale 21.1 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-07-31T15:22:30.350744"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260731-152230-0dc5b0",
+    "decision": "Scelta video target: Are you 70-80 years old? STOP walking so much and do ONLY these 2 things.",
+    "reason": "Velocity reale 38.63 views/ora (141000 viste in 3650h) su Dose Mentale — SEO score reale del titolo 10.0/100 per keyword 'are you years': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Toxic Family Members? Here's How God Drives You Away | Biblical Wisdom"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-07-31T15:22:34.006405"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260731-152338-c870b6",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25240, velocity media 9.4 viste/ora, indice cash cow reale 21.1 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-07-31T15:23:39.140718"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260731-152338-c870b6",
+    "decision": "Scelta video target: Are you 70-80 years old? STOP walking so much and do ONLY these 2 things.",
+    "reason": "Velocity reale 38.63 views/ora (141000 viste in 3650h) su Dose Mentale — SEO score reale del titolo 17.5/100 per keyword 'are you 70-80 years': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Toxic Family Members? Here's How God Drives You Away | Biblical Wisdom"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-07-31T15:23:42.862793"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260731-152433-e18ac2",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25240, velocity media 9.4 viste/ora, indice cash cow reale 21.1 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-07-31T15:24:34.021301"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260731-152433-e18ac2",
+    "decision": "Scelta video target: Are you 70-80 years old? STOP walking so much and do ONLY these 2 things.",
+    "reason": "Velocity reale 38.63 views/ora (141000 viste in 3650h) su Dose Mentale — SEO score reale del titolo 17.5/100 per keyword 'are you 70-80 years': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Toxic Family Members? Here's How God Drives You Away | Biblical Wisdom"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-07-31T15:24:37.648413"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260731-152833-71868f",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25240, velocity media 9.4 viste/ora, indice cash cow reale 21.1 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-07-31T15:28:34.124231"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260731-152833-71868f",
+    "decision": "Scelta video target: Are you 70-80 years old? STOP walking so much and do ONLY these 2 things.",
+    "reason": "Velocity reale 38.63 views/ora (141000 viste in 3650h) su Dose Mentale — SEO score reale del titolo 17.5/100 per keyword 'are you 70-80 years': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Toxic Family Members? Here's How God Drives You Away | Biblical Wisdom"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-07-31T15:28:37.465670"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260731-152914-9aa816",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25240, velocity media 9.4 viste/ora, indice cash cow reale 21.1 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-07-31T15:29:14.609562"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260731-152914-9aa816",
+    "decision": "Scelta video target: Are you 70-80 years old? STOP walking so much and do ONLY these 2 things.",
+    "reason": "Velocity reale 38.63 views/ora (141000 viste in 3650h) su Dose Mentale — SEO score reale del titolo 17.5/100 per keyword 'are you 70-80 years': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Toxic Family Members? Here's How God Drives You Away | Biblical Wisdom"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-07-31T15:29:18.016355"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260731-153200-29fc73",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25240, velocity media 9.4 viste/ora, indice cash cow reale 21.1 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-07-31T15:32:00.540580"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260731-153200-29fc73",
+    "decision": "Scelta video target: Are you 70-80 years old? STOP walking so much and do ONLY these 2 things.",
+    "reason": "Velocity reale 38.63 views/ora (141000 viste in 3650h) su Dose Mentale — SEO score reale del titolo 17.5/100 per keyword 'are you 70-80 years': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Toxic Family Members? Here's How God Drives You Away | Biblical Wisdom"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-07-31T15:32:02.139053"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260731-153231-5e4b47",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25240, velocity media 9.4 viste/ora, indice cash cow reale 21.1 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-07-31T15:32:31.069150"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260731-153231-5e4b47",
+    "decision": "Scelta video target: Are you 70-80 years old? STOP walking so much and do ONLY these 2 things.",
+    "reason": "Velocity reale 38.63 views/ora (141000 viste in 3650h) su Dose Mentale — SEO score reale del titolo 17.5/100 per keyword 'are you 70-80 years': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Toxic Family Members? Here's How God Drives You Away | Biblical Wisdom"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-07-31T15:32:32.723577"
   }
 ]
