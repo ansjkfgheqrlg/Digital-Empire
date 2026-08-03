@@ -7,9 +7,10 @@ Riferimenti: [[entities/Neri|Neri]] (wiki) · project_team_neri.md (memoria Clau
              company/Memory/STATO-EMPIRE.md (nota ingresso team 2026-07-30)
 ---
 
-> **STATO: scaffolding creato, contenuto da definire.** Nessun task concreto ancora assegnato
-> a Neri — questo file esiste come contenitore pronto, stesso pattern dei task Gael
-> (`TASK-GAEL-*.md`), in attesa che Max specifichi il primo incarico.
+> **STATO: superato.** Primo incarico concreto assegnato il 2026-08-03:
+> [TASK-NERI-20260803-STREAM-S7-STRATEGIA.md](TASK-NERI-20260803-STREAM-S7-STRATEGIA.md)
+> (strato strategico dell'iniziativa Stream S7 — ricerche, report, architetture di metodo).
+> Questo file resta come riferimento del formato/pattern, non più come contenitore vuoto.
 
 # 📋 TASK NERI — Onboarding (ID + prompt)
 

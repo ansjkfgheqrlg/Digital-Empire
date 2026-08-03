@@ -16,7 +16,10 @@ tocca operatività diretta (codice, build, run).
   - **Max** — owner, decisore finale su tutto
   - **Gael** — operativo, esegue task assegnati (ordini su di lui sono legge)
   - **Neri** — organizzativo/metodo, non tocca file operativi
-- Task concreti assegnati: nessuno ancora — ruolo definito solo per macro-area
+- Task concreti assegnati: **TASK-NERI-20260803-STREAM-S7-STRATEGIA** (primo incarico reale,
+  2026-08-03) — strato strategico dell'iniziativa Stream S7 (trading NFT/token): 3 ricerche,
+  3 report (incluso Go/No-Go), 2 architetture di metodo. Non tocca il codice/esecuzione
+  (resta di Gael) — coerente col ruolo dichiarato
 
 ## 🎯 Come Impatta DE
 I blocchi ⚠️ COORDINAMENTO in `company/Memory/STATO-EMPIRE.md` (avviso pre-collisione su file di
@@ -36,8 +39,10 @@ indicazione contraria.
 
 ## 📈 Timeline
 - 2026-07-30: Ingresso nel team, ruolo dichiarato (gestione organizzativa/metodo)
+- 2026-08-03: Primo incarico concreto — strategia Stream S7 (ricerche+report+architetture),
+  vedi `company/Memory/tasks/TASK-NERI-20260803-STREAM-S7-STRATEGIA.md`
 
 ## 📍 Status
 - First added: 2026-07-30
-- Last updated: 2026-07-30
-- Confidence level: Media — ruolo dichiarato ma non ancora testato su task concreti
+- Last updated: 2026-08-03
+- Confidence level: Media — primo task concreto assegnato, ruolo ancora da validare sull'esito

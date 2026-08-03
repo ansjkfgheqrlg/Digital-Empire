@@ -1,5 +1,14 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-03 (Primo incarico reale a Neri: strategia Stream S7, Claude/Max)
+- PLAN: Max ha chiesto un piano strategico per Stream S7 e di passare l'iniziativa a Neri
+  (ricerche, report, architetture). Scritti `company/Ecosistemi/12-STREAM-S7-BOT/
+  PIANO-STRATEGICO-S7.md` + `company/Memory/tasks/TASK-NERI-20260803-STREAM-S7-STRATEGIA.md`
+  (fuori wiki, sono artefatti operativi di Memory/ecosistema — qui solo il log e l'aggiornamento
+  di [[entities/Neri]]). Convergenza notata con CP-20260803-001 (sessione diversa, stessa
+  diagnosi indipendente: "non manca codice, manca una decisione"). Interpretazione segnalata:
+  passa lo strato strategico a Neri, non l'esecuzione tecnica (resta di Gael).
+
 ## 2026-08-03 (Metodo Arena → Workflow Completo, Claude/Max)
 - INGEST: Max ha chiesto un piano dettagliato per usare Arena + skill `master-build-architecture`
   + motore APEX-7 (`11-APEX-7-CORE`, ADR-010) per costruire workflow completi (agenti/skill/
