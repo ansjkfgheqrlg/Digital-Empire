@@ -36,16 +36,29 @@ LIVE **mai implementata** (`execution_engine.py` rifiuta il ramo `!= SIMULATION`
 
 **RIPRESA DA:** niente di tecnico. Serve la chiamata go/no-go su S7.
 
-## ⚠️ COORDINAMENTO — 2026-08-03 — GAEL: cantiere aperto su YOUTUBE-AUTOMATION-FACTORY
+## ✅ 2026-08-03 — GAEL: YouTube Factory riorganizzata in reparti agentici gerarchici — CP-20260803-002
 
-**Max: non toccare `YOUTUBE-AUTOMATION-FACTORY/` finché questo blocco non diventa ✅.**
-In corso: riorganizzazione della fabbrica in **reparti agentici gerarchici** su richiesta di Gael
-(ricerca video via Playwright, capi-reparto che decidono cosa si copia, regolatori con potere di
-blocco, team copy basato sullo studio dei copy di @dosementale + controllo del settore copy
-Digital Empire, team intelligence competitor/performance, team ricerca canali e nicchie).
-File toccati: `03-AGENTI-E-RUOLI/**`, `01-FLUSSI-E-PIANI/**`, `02-AUTOMAZIONI-E-SCRIPTS/**`.
-Invariante da rispettare: la configurazione Fliki approvata (blocco ⛔ in `fliki_client.py`) non
-si tocca.
+**Cantiere CHIUSO, `YOUTUBE-AUTOMATION-FACTORY/` di nuovo libera.**
+
+Da 13 agenti piatti a **33 su 4 livelli**, con diritti di decisione espliciti
+([ORGANIGRAMMA.md](../../YOUTUBE-AUTOMATION-FACTORY/03-AGENTI-E-RUOLI/ORGANIGRAMMA.md)):
+**L0** direttore (coordina i capi, non produce) · **L1** 4 capi reparto che *decidono* ·
+**L2** operatori che *eseguono* · **L3** 5 regolatori che *bloccano*, con veto su tutti.
+Principio delle **3 firme**: esegue un operatore, approva il capo, non hanno bloccato i
+regolatori. Un blocco L3 non è appellabile: solo Gael può derogare.
+
+Reparti: **RICERCA** (cosa copiamo) · **COPY** (cosa diciamo) · **PRODUZIONE** (come lo facciamo)
+· **INTELLIGENCE** (dove andiamo).
+
+**Due strumenti nuovi funzionanti**, non solo specifiche:
+- `youtube_hunter_playwright.py` — entra davvero su YouTube con Playwright, 36 video reali da
+  @dosementale ora con i **titoli in italiano**. Trovati e corretti 2 bug veri: i selettori
+  storici di YouTube non esistono più (0 video su 36 card), e il titolo *"Hai 70-80 anni?"*
+  veniva letto come **età del video** facendolo crollare da 38.6 a 0.2 views/ora.
+- `copy_study_dosementale.py` — studio dei copy nel second brain. Dato più utile: il tema
+  **salute/età ha velocity mediana +456%**, il taglio **religioso −43%**.
+
+Verificato: run F1→F6 verde, SEO 100/100, test 11/11, configurazione Fliki approvata intatta.
 
 ---
 

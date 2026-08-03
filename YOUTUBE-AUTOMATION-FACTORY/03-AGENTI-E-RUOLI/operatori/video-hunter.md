@@ -2,8 +2,9 @@
 agent_id: video-hunter
 level: L2
 classe: operatore
-role: Trova i video da replicare (candidati alla copia)
-spawned_by: conductor
+stato: SUPERATO dal 2026-08-03 — vedi video-hunter-playwright.md e video-analyst.md
+role: (storico) Trova i video da replicare (candidati alla copia)
+spawned_by: capo-ricerca
 reads: [references/video-iq-analisi.md, MKD.md §1.4/§2.3]
 writes: [output F2: candidati-video.md]
 ---

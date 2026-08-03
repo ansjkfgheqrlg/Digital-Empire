@@ -198,3 +198,6 @@
 - FINDING aperto: i 7 lead di `lead.csv` hanno **0/7** riscontri nelle sorgenti `Outreach/`; i 61
   lead reali dichiarati il 23/07 non esistono su disco. Gate-CONTATTI lasciato rosso di proposito.
   → 0 pagine wiki nuove, 1 lezione registrata.
+
+## 2026-08-03
+- INGEST: studio copy @dosementale rigenerato su 36 video reali → 1 pagina aggiornata (synthesis/Studio_Copy_Dose_Mentale.md)
