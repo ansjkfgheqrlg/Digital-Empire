@@ -1,0 +1,5 @@
+﻿[2026-08-03 09:01:59] CONFLITTO DI SYNC
+Pull --rebase fallito: Created autostash: a33d2b72
+Il tuo lavoro e' al sicuro (committato in locale).
+Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
+Poi cancella questo file.

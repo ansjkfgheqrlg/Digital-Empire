@@ -1,0 +1,9 @@
+[
+  {"id": "happy-01", "category": "happy", "prompt": "Lead concessionario import, nessun case study reale.", "expected_behavior": "Produce artificial_case_study pattern Preventa (PDF preventivo esempio)", "assertions": [{"type": "contains", "value": "artificial_case_study"}]},
+  {"id": "happy-02", "category": "happy", "prompt": "Lead creator YouTube, case study reale disponibile nello store.", "expected_behavior": "Produce real_case_study con dato misurabile reale", "assertions": [{"type": "contains", "value": "real_case_study"}]},
+  {"id": "happy-03", "category": "happy", "prompt": "Lead con riferimento specifico (link annuncio) disponibile.", "expected_behavior": "Personalizza l'artificial case study includendo il riferimento specifico", "assertions": []},
+  {"id": "edge-01", "category": "edge", "prompt": "Lead grande (gruppo multi-sede) stessa nicchia di un lead piccolo già processato.", "expected_behavior": "Stessa offerta base, non scala arbitrariamente la dimensione dell'offerta", "assertions": []},
+  {"id": "failure-01", "category": "failure", "prompt": "Lead in nicchia mai vista (es. consulente fiscale).", "expected_behavior": "ESCALATION esplicita, non inventa un'offerta a caso", "assertions": [{"type": "contains", "value": "ESCALATION"}]},
+  {"id": "failure-02", "category": "failure", "prompt": "Store dei case study reali non raggiungibile/non esiste.", "expected_behavior": "Tratta come found:false, procede con artificial_case_study, non blocca il flusso", "assertions": []},
+  {"id": "constraint-01", "category": "constraint", "prompt": "Verifica che l'offerta prodotta sia realmente consegnabile dal team.", "expected_behavior": "Non produce offerte che il team non può onorare se il lead accetta", "assertions": []}
+]

@@ -5237,3 +5237,67 @@ Traceback (most recent call last):
     return open_func(self.baseFilename, self.mode,
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 PermissionError: [Errno 13] Permission denied: 'c:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Outreach\\LinkedIn Automation\\run_today_log.txt'
+2026-07-31 09:00:23,022  ============================================================
+2026-07-31 09:00:23,022  COMMENT WARMER  2026-07-31 09:00:23
+2026-07-31 09:00:23,022  ============================================================
+2026-07-31 09:00:23,177  Commenti da fare oggi: 30 (limite: 30)
+Traceback (most recent call last):
+  File "c:\Users\Utente\Desktop\qui tutto\Digital Empire\Outreach\LinkedIn Automation\comment_posts.py", line 381, in <module>
+    asyncio.run(main())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Utente\Desktop\qui tutto\Digital Empire\Outreach\LinkedIn Automation\comment_posts.py", line 307, in main
+    browser, ctx = await new_page(pw)
+                   ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Utente\Desktop\qui tutto\Digital Empire\Outreach\LinkedIn Automation\comment_posts.py", line 99, in new_page
+    browser = await playwright.chromium.launch(headless=False, args=["--start-maximized"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\playwright\async_api\_generated.py", line 15143, in launch
+    await self._impl_obj.launch(
+  File "C:\Users\Utente\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\playwright\_impl\_browser_type.py", line 98, in launch
+    await self._channel.send(
+  File "C:\Users\Utente\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utente\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: BrowserType.launch: Timeout 180000ms exceeded.
+Call log:
+  - <launching> C:\Users\Utente\AppData\Local\ms-playwright\chromium-1217\chrome-win64\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --start-maximized --user-data-dir=C:\Users\Utente\AppData\Local\Temp\playwright_chromiumdev_profile-Lrz55K --remote-debugging-pipe --no-startup-window
+  - <launched> pid=15236
+
+Traceback (most recent call last):
+  File "c:\Users\Utente\Desktop\qui tutto\Digital Empire\Outreach\LinkedIn Automation\run_today.py", line 33, in <module>
+    logging.FileHandler(LOG_FILE, encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1181, in __init__
+    StreamHandler.__init__(self, self._open())
+                                 ^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1213, in _open
+    return open_func(self.baseFilename, self.mode,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'c:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Outreach\\LinkedIn Automation\\run_today_log.txt'
+2026-08-03 08:23:18,781  ============================================================
+2026-08-03 08:23:18,782  COMMENT WARMER  2026-08-03 08:23:18
+2026-08-03 08:23:18,782  ============================================================
+2026-08-03 08:23:18,813  Commenti da fare oggi: 30 (limite: 30)
+2026-08-03 08:23:33,957  Verifica sessione LinkedIn...
+2026-08-03 08:23:45,023  [ERRORE] Sessione LinkedIn scaduta. Esegui: python refresh_session.py
+Traceback (most recent call last):
+  File "c:\Users\Utente\Desktop\qui tutto\Digital Empire\Outreach\LinkedIn Automation\run_today.py", line 33, in <module>
+    logging.FileHandler(LOG_FILE, encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1181, in __init__
+    StreamHandler.__init__(self, self._open())
+                                 ^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1213, in _open
+    return open_func(self.baseFilename, self.mode,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'c:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Outreach\\LinkedIn Automation\\run_today_log.txt'

@@ -1,5 +1,34 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-03 (Metodo Arena → Workflow Completo, Claude/Max)
+- INGEST: Max ha chiesto un piano dettagliato per usare Arena + skill `master-build-architecture`
+  + motore APEX-7 (`11-APEX-7-CORE`, ADR-010) per costruire workflow completi (agenti/skill/
+  flussi/automazioni). Recuperato dossier 26 (Arena: contratto operativo) da git — perso dal
+  disco in un rebase, mai ripristinato — e riletto `13-ARENA-APEX/ECOSISTEMA.md` (Regola APEX:
+  nessun agente esce dall'Arena senza APEX-7 integrato/testato). Creato
+  `PIANO-MAESTRO/27-ARENA-WORKFLOW-COMPLETO-METODO.md` — metodo riusabile in 3 fasi (Arena
+  progetta → Claude Code costruisce nel ciclo 9 passi → APEX-7 gate obbligatorio), con prompt
+  di apertura pronto e checklist di accettazione. 1 entry aggiunta in index.md
+  (Metodologie di Sviluppo).
+
+## 2026-07-30/31 (Bibbia dei Messaggi Outreach + team agenti, Claude/Max)
+- INGEST via `/content-forge`: trascrizione video + 2 rielaborazioni di Max sul framework
+  LinkedIn cold outreach (Barnum Effect, Rainbow Effect, 5 Pilastri, sequenza follow-up
+  3-step) → sorgente grezzo `Outreach/knowledge/raw_linkedin-cold-outreach-framework_2026-07-30.md`
+  (7.288 parole). Pipeline completa (KG 16 atomi/6 cluster → MKD → team) in
+  `Outreach/forge-run-2026-07-30T-outreach-bible/`.
+- BUILD: MKD pubblicato come **Bibbia dei Messaggi** (regola non derogabile, richiesta
+  esplicita di Max) in `Outreach/knowledge/bibbia-messaggi-outreach.md` (+glossario+FAQ+schemi).
+  Team di 4 agenti (`rule-keeper` gatekeeper, `message-writer`, `case-study-forge`,
+  `followup-sequencer`, 7 file canonici ciascuno) in `Outreach/agents/outreach-message-team/`.
+- 3 pagine wiki create: [[concepts/Framework_Cold_Outreach_APSOC]] (colmato link dangling
+  già presente in index.md), [[concepts/Framework_Barnum_Rainbow_5Pilastri]],
+  [[tools/Tool_Outreach_Message_Team]]. index.md sezione Framework aggiornata.
+- Cross-link con lavoro già in produzione: `personalizza_messaggi.py` (campagna
+  concessionari-preventa) aveva già un Gancio 4 "import" che applica lo stesso principio
+  (variabile hard-coded di nicchia) — la Bibbia lo rende esplicito/canonico invece che
+  implicito in un singolo script.
+
 ## 2026-07-30 (Nuovo membro team: Neri, Claude/Max)
 - INGEST: Neri si è unito al team (gestione organizzativa/piani/metodi, non operativo) →
   1 pagina creata [[entities/Neri|Neri]], linkata a [[projects/Piano_Maestro_EMPIRE_OS]],

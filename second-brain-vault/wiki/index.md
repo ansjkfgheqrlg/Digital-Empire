@@ -52,6 +52,7 @@ Benvenuto nella tua Knowledge Base iper-organizzata. Tutto il materiale di Digit
 - [[sources/Source_Claude_Design_Beggiato|Claude Design — Metodo in 4 Passi (Giovanni Beggiato)]] — Video ingerito 2026-06-09. Design System → Template → Skills → Lead Magnet. Anti-pattern "vibe design" (490k token → 0). skill-creator, featuresheet:cheat-skill, self-check visivo, Thought Leader Funnel, Founder Authority Stack, 25 Social Media Manager skills.
 
 ### Metodologie di Sviluppo
+- Arena → Workflow Completo (metodo) — `PIANO-MAESTRO/27-ARENA-WORKFLOW-COMPLETO-METODO.md` (2026-08-03): come usare Arena (progettazione/review) + skill `master-build-architecture` + motore APEX-7 (`11-APEX-7-CORE`, ADR-010) per costruire qualsiasi workflow completo (agenti/skill/flussi/automazioni), dentro il ciclo Empire a 9 passi.
 - [[concepts/SPARC_Methodology|SPARC Methodology]] — Spec → Pseudocode → Architecture → Refinement → Completion. Adottato per tutti i capitoli Exponium.
 - [[concepts/AgentDB_Memory_System|AgentDB Memory System]] — Sistema di memoria vettoriale HNSW per il Second Brain. Architettura per Cap.9 Exponium.
 - [[concepts/Swarm_Orchestration_Pattern|Swarm Orchestration Pattern]] — Multi-agent coordination: parallel scrapers, hierarchical teams. Cap.6+ Exponium.
@@ -84,7 +85,9 @@ Benvenuto nella tua Knowledge Base iper-organizzata. Tutto il materiale di Digit
 - [[concepts/Concept_Google_Docs_Copywriter_Workflow|Concept: Google Docs come Sistema Operativo del Copywriter]] — 3 livelli: pulizia formato (no-pagine), struttura navigabile (heading+outline), metadati di stato (note colorate, dropdown kanban, segnalibri, conteggio caratteri). Sistema cartelle Clienti visibile/non-visibile (rosso=warning). Anti-pattern: formattare titoli a mano invece di stili.
 
 ### Framework
-- [[concepts/Framework_Cold_Outreach_APSOC|Framework Cold Outreach APSOC+V]] — APSOC per cold email e DM (Barnum/Rainbow)
+- [[concepts/Framework_Cold_Outreach_APSOC|Framework Cold Outreach APSOC+V]] — APSOC (struttura persuasiva generale) applicato al cold outreach, rimanda al framework specifico sotto per la tecnica di apertura.
+- [[concepts/Framework_Barnum_Rainbow_5Pilastri|Framework Barnum-Rainbow / 5 Pilastri — La Bibbia dei Messaggi]] — Istituito da Max 2026-07-30 come regola non derogabile: Effetto Barnum + Inganno Arcobaleno per la personalizzazione, 5 Pilastri (personalizzazione/chiarezza-3sec/valore-anticipato/micro-commitment/basso-attrito), sequenza follow-up 3-step (20/40/30%). MKD completo in `Outreach/knowledge/bibbia-messaggi-outreach.md`.
+- [[tools/Tool_Outreach_Message_Team|Tool: Outreach Message Team]] — 4 agenti (rule-keeper, message-writer, case-study-forge, followup-sequencer) generati via `/content-forge` che applicano il framework sopra ad ogni messaggio di cold outreach (LinkedIn/WhatsApp/email). `Outreach/agents/outreach-message-team/`.
 - [[concepts/Concept_Percorso_Delle_Informazioni|Percorso delle Informazioni (Andrei Pascu)]] — Framework: ogni touchpoint consegna UN solo pezzo info nell'ordine corretto. FB ad: testo prima → immagine ultima. Inversione estetica vs ChatGPT. Social proof hook formula.
 
 ---

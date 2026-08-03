@@ -1,7 +1,8 @@
 # AGENTE: Writer-1 — Outbound Copywriting Agent
+
 > **Versione:** 2.0 · **Owner:** GAEL · **Controllore:** A2-QA · **Origine:** FORGE  
 > **Ecosistema:** preventa-maps-scraper · **Reparto:** Comunicazione & Outreach  
-> **File Python:** [`agente.py`](./agente.py) · **Reference:** [`reference/`](./reference/) · **QA:** [`controllo/`](./controllo/)
+> **File Python:** `[agente.py](./agente.py)` · **Reference:** `[reference/](./reference/)` · **QA:** `[controllo/](./controllo/)`
 
 ---
 
@@ -15,11 +16,13 @@ Trasforma i dati analitici estratti sui lead in comunicazioni ad **altissimo tas
 
 ---
 
+
+
 ## 2. State Machine Interna
 
 ```
 ┌──────────┐   lead_data    ┌──────────────┐
-│   IDLE   │───────────────▶│  ANALYZING   │
+│   IDLE   │───────────────▶│  ANALYZING  │
 └──────────┘                └──────┬───────┘
                                    │ priorità + canale determinati
                                    ▼
@@ -30,13 +33,13 @@ Trasforma i dati analitici estratti sui lead in comunicazioni ad **altissimo tas
                                    ▼
                           ┌─────────────────┐
                           │   GENERATING    │◀─────────────┐
-                          └────────┬────────┘              │
-                                   │                       │
-                    ┌──────────────┴──────────────┐        │
-                    ▼                             ▼        │
-             ┌────────────┐               ┌────────────┐   │
-             │  VALIDATED │               │  REJECTED  │   │
-             └─────┬──────┘               └─────┬──────┘   │
+                          └────────┬────────┘               │
+                                   │                        │
+                    ┌──────────────┴──────────────┐         │
+                    ▼                             ▼         │
+             ┌────────────┐               ┌────────────┐    │
+             │  VALIDATED │               │  REJECTED  │    │
+             └─────┬──────┘               └─────┬──────┘    │
                    │                            │ retry <3  │
                    │                            └───────────┘
                    ▼                            (3x → ESCALATING)
@@ -52,19 +55,25 @@ Trasforma i dati analitici estratti sui lead in comunicazioni ad **altissimo tas
 
 ---
 
+
+
 ## 3. Parametri di Configurazione
 
-| Parametro | Valore Default | Range Accettabile | Descrizione |
-|---|---|---|---|
-| `max_whatsapp_words` | 60 | 30–80 | Max parole per MSG WhatsApp |
-| `max_email_words` | 200 | 100–300 | Max parole per Email |
-| `gancio_alta_sito_scarso` | 3 | fisso | Gancio PDF brutto se sito obsoleto |
-| `gancio_alta_poche_rec` | 2 | fisso | Gancio cliente perso su WA se poche rec. |
-| `gancio_media` | 1 | fisso | Gancio tempo perso per priorità MEDIA |
-| `firma` | `"Max"` | fisso | Firma del messaggio |
-| `retry_max` | 3 | 1–5 | Tentativi massimi prima di ESCALATING |
+
+| Parametro                 | Valore Default | Range Accettabile | Descrizione                              |
+| ------------------------- | -------------- | ----------------- | ---------------------------------------- |
+| `max_whatsapp_words`      | 60             | 30–80             | Max parole per MSG WhatsApp              |
+| `max_email_words`         | 200            | 100–300           | Max parole per Email                     |
+| `gancio_alta_sito_scarso` | 3              | fisso             | Gancio PDF brutto se sito obsoleto       |
+| `gancio_alta_poche_rec`   | 2              | fisso             | Gancio cliente perso su WA se poche rec. |
+| `gancio_media`            | 1              | fisso             | Gancio tempo perso per priorità MEDIA    |
+| `firma`                   | `"Max"`        | fisso             | Firma del messaggio                      |
+| `retry_max`               | 3              | 1–5               | Tentativi massimi prima di ESCALATING    |
+
 
 ---
+
+
 
 ## 4. Logica di Selezione Gancio
 
@@ -91,6 +100,8 @@ IF priorita_lead == "BASSA":
 
 ---
 
+
+
 ## 5. Regole di Scrittura (Tassative)
 
 1. **Prima persona singolare** — Usa "io": *"ho visto", "ti scrivo", "ti propongo"*. MAI "noi offriamo".
@@ -103,18 +114,27 @@ IF priorita_lead == "BASSA":
 
 ---
 
+
+
 ## 6. Integrazione EventBus
 
-| Evento Pubblicato | Trigger | Payload |
-|---|---|---|
-| `messages.generated` | Al termine della generazione | `{city, messages[], count}` |
-| `writer.error` | In caso di eccezione non recuperabile | `{lead_name, error}` |
+
+| Evento Pubblicato    | Trigger                               | Payload                     |
+| -------------------- | ------------------------------------- | --------------------------- |
+| `messages.generated` | Al termine della generazione          | `{city, messages[], count}` |
+| `writer.error`       | In caso di eccezione non recuperabile | `{lead_name, error}`        |
+
 
 ---
 
+
+
 ## 7. Esempi di Output Attesi
 
+
+
 ### Gancio 3 — WhatsApp MSG1 (PDF brutto)
+
 ```
 Ciao, sono Max di Preventa 👋
 
@@ -126,7 +146,10 @@ poi però i preventivi escono su Excel o PDF del gestionale tutti storti.
 Come li mandate voi oggi?
 ```
 
+
+
 ### Gancio 2 — WhatsApp MSG1 (Cliente perso)
+
 ```
 Ciao, sono Max 👋
 
@@ -138,7 +161,10 @@ cosa riceve? Ho notato che molti saloni perdono 3-4 clienti a settimana solo lì
 Voi come gestite?
 ```
 
+
+
 ### Gancio 1 — Email Oggetto A (Tempo perso)
+
 **Oggetto:** Quanto tempo vi costa un preventivo oggi?
 
 ```
@@ -159,17 +185,23 @@ Max
 
 ---
 
+
+
 ## 8. Failure Modes e Gestione Errori
 
-| Scenario di Errore | Comportamento Atteso |
-|---|---|
+
+| Scenario di Errore                      | Comportamento Atteso                        |
+| --------------------------------------- | ------------------------------------------- |
 | `personalizza_messaggi` non importabile | Usa il fallback interno (Gancio 1 generico) |
-| Lead senza nome attività | Usa `"il vostro salone"` come placeholder |
-| Lead senza telefono E senza sito | Skippa il lead, pubblica `writer.error` |
-| Eccezione imprevista nel loop | Log ERROR, skippa il lead, continua |
-| 3 lead consecutivi in errore | Transizione a ESCALATING, interrompi |
+| Lead senza nome attività                | Usa `"il vostro salone"` come placeholder   |
+| Lead senza telefono E senza sito        | Skippa il lead, pubblica `writer.error`     |
+| Eccezione imprevista nel loop           | Log ERROR, skippa il lead, continua         |
+| 3 lead consecutivi in errore            | Transizione a ESCALATING, interrompi        |
+
 
 ---
+
+
 
 ## 9. Implementazione Python Completa
 
@@ -468,15 +500,19 @@ if __name__ == "__main__":
     _cli()
 ```
 
+
+
 ---
+
+
 
 ## 10. Riferimenti
 
-- [`reference/template_whatsapp.md`](./reference/template_whatsapp.md) — Template MSG1/2/3 per WhatsApp
-- [`reference/template_email.md`](./reference/template_email.md) — Template Email 1/2/3
-- [`reference/ganci_reference.md`](./reference/ganci_reference.md) — Libreria completa ganci A/B/C
-- [`controllo/test_writer.py`](./controllo/test_writer.py) — Test unitari dedicati
-- [`controllo/checklist_qc.md`](./controllo/checklist_qc.md) — Checklist quality control
+- `[reference/template_whatsapp.md](./reference/template_whatsapp.md)` — Template MSG1/2/3 per WhatsApp
+- `[reference/template_email.md](./reference/template_email.md)` — Template Email 1/2/3
+- `[reference/ganci_reference.md](./reference/ganci_reference.md)` — Libreria completa ganci A/B/C
+- `[controllo/test_writer.py](./controllo/test_writer.py)` — Test unitari dedicati
+- `[controllo/checklist_qc.md](./controllo/checklist_qc.md)` — Checklist quality control
 
 ---
 

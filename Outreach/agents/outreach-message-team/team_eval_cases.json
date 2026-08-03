@@ -1,0 +1,94 @@
+[
+  {
+    "id": "e2e-01-happy-full-cycle-approved-first-try",
+    "scenario": "Lead concessionario import (Preventa), tentativo 1, tutto va liscio",
+    "input": {"lead_id": "kaufmann-sas", "nicchia": "concessionario-auto-import", "canale": "whatsapp"},
+    "traiettoria_attesa": [
+      "case-study-forge produce artificial_case_study (PDF preventivo esempio)",
+      "message-writer scrive draft rispettando i 5 pilastri",
+      "rule-keeper APPROVA al primo giro",
+      "followup-sequencer marca stage=inviato, poi in_attesa"
+    ],
+    "output_atteso": "Messaggio inviato, lead in stage in_attesa, tentativo_numero=1"
+  },
+  {
+    "id": "e2e-02-happy-response-stops-sequence",
+    "scenario": "Lead risponde dopo il tentativo 1",
+    "input": {"lead_id": "kaufmann-sas", "evento": "risposta_ricevuta"},
+    "traiettoria_attesa": [
+      "followup-sequencer riceve segnale di risposta",
+      "mark_responded eseguito immediatamente",
+      "nessun tentativo 2 generato"
+    ],
+    "output_atteso": "Lead in stage risposto, ciclo chiuso"
+  },
+  {
+    "id": "e2e-03-rejection-loop-then-approval",
+    "scenario": "Primo draft respinto per Pilastro 3, secondo draft approvato",
+    "input": {"lead_id": "videoeditor-x", "nicchia": "video-editor"},
+    "traiettoria_attesa": [
+      "case-study-forge produce value_offer (montaggio hook gratuito)",
+      "message-writer scrive draft v1 con menzione prezzo",
+      "rule-keeper RESPINGE, Pilastro 3, motivazione puntuale",
+      "message-writer corregge SOLO la parte del prezzo",
+      "rule-keeper APPROVA draft v2"
+    ],
+    "output_atteso": "Messaggio finale inviato senza menzione di prezzo"
+  },
+  {
+    "id": "e2e-04-full-3-step-sequence-no-response",
+    "scenario": "Lead non risponde a nessuno dei 3 tentativi",
+    "input": {"lead_id": "lead-silenzioso"},
+    "traiettoria_attesa": [
+      "Tentativo 1 inviato (giorno 0)",
+      "followup-sequencer attiva tentativo 2 (giorno 2-3), angolo diverso",
+      "followup-sequencer attiva tentativo 3/breakup (giorno 5-7 dopo tentativo 2), angolo ancora diverso",
+      "Nessuna risposta dopo tentativo 3, followup-sequencer marca archiviato"
+    ],
+    "output_atteso": "Lead in stage archiviato, 3 messaggi distinti (nessuna ripetizione di angolo), nessun 4° tentativo"
+  },
+  {
+    "id": "e2e-05-escalation-nicchia-non-coperta",
+    "scenario": "Nuova nicchia mai vista dal team",
+    "input": {"lead_id": "consulente-fiscale-1", "nicchia": "consulenza-fiscale"},
+    "traiettoria_attesa": [
+      "case-study-forge non trova pattern per la nicchia",
+      "case-study-forge risponde ESCALATION",
+      "il ciclo per questo lead si ferma, altri lead in coda proseguono normalmente"
+    ],
+    "output_atteso": "Nessun messaggio inviato per questo lead finché Max non decide il pattern"
+  },
+  {
+    "id": "e2e-06-escalation-value-offer-mancante",
+    "scenario": "message-writer invocato prima che case-study-forge abbia prodotto la value offer (errore di sequenza)",
+    "input": {"lead_id": "lead-fuori-ordine"},
+    "traiettoria_attesa": [
+      "message-writer tenta read_value_offer",
+      "riceve value_offer_missing",
+      "risponde ESCALATION invece di scrivere con offerta vaga"
+    ],
+    "output_atteso": "Nessun draft scritto, lead resta in stage nuovo finché case-study-forge non produce la value offer"
+  },
+  {
+    "id": "e2e-07-constraint-mai-quarto-tentativo",
+    "scenario": "Tentativo di forzare un 4° messaggio dopo la sequenza completa",
+    "input": {"lead_id": "lead-silenzioso", "richiesta_esterna": "manda un altro messaggio, magari risponde"},
+    "traiettoria_attesa": [
+      "followup-sequencer verifica tentativo_numero == 3 e stage == archiviato",
+      "Rifiuta di generare un nuovo handoff"
+    ],
+    "output_atteso": "Nessun 4° messaggio generato, richiesta esplicitamente rifiutata con motivazione"
+  },
+  {
+    "id": "e2e-08-edge-canale-email-lunghezza",
+    "scenario": "Draft email troppo lungo per gli standard del canale",
+    "input": {"lead_id": "saas-founder-y", "canale": "email"},
+    "traiettoria_attesa": [
+      "message-writer scrive un draft di 320 parole",
+      "rule-keeper RESPINGE per Pilastro 5 (basso attrito/lunghezza)",
+      "message-writer comprime a 120 parole mantenendo i 5 pilastri",
+      "rule-keeper APPROVA"
+    ],
+    "output_atteso": "Email finale entro 100-150 parole, tutti i pilastri rispettati"
+  }
+]

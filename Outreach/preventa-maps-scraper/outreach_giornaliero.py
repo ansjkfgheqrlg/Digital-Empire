@@ -45,6 +45,7 @@ CITIES_FILE = BASE / "05-TEMPLATES-E-KIT" / "cities.txt"
 OUTREACH_ROOT = BASE.parent  # Outreach/
 CAMPAIGN_DIR = OUTREACH_ROOT / "Outreach Workflow" / "campagne" / "concessionari-preventa"
 WHATSAPP_DIR = OUTREACH_ROOT / "WhatsApp Automation"
+RULE_KEEPER_DIR = OUTREACH_ROOT / "agents" / "outreach-message-team"
 LOG_DIR = BASE / "logs"
 
 sys.path.insert(0, str(SCRIPTS))
@@ -159,6 +160,7 @@ def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
 
     personalizza = _load_module(CAMPAIGN_DIR / "personalizza_messaggi.py", "personalizza_messaggi_gg")
     send_message = _load_module(WHATSAPP_DIR / "send_message.py", "send_message_gg")
+    rule_keeper = _load_module(RULE_KEEPER_DIR / "rule_keeper_lint.py", "rule_keeper_lint_gg")
 
     lead_da_contattare, rimanenti_oggi = carica_lead_da_contattare(daily_cap)
     log.info(f"Lead eligibili trovati (NEW + mobile + [import: ogni priorita' / altri: ALTA/MEDIA]): {len(lead_da_contattare)}")
@@ -166,6 +168,7 @@ def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
     inviati = 0
     falliti = 0
     scartati_legittimi = 0  # numero non valido / non su WhatsApp: non e' un errore tecnico
+    bocciati_bibbia = 0  # messaggio non conforme ai 5 Pilastri: mai inviato
     fallimenti_consecutivi = 0
     esiti_dettaglio = []
     # target = quanti invii REALI mancano oggi per arrivare al cap, non il cap intero
@@ -183,6 +186,15 @@ def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
 
         msg_data = personalizza.genera_messaggi(lead)
         testo = msg_data["whatsapp_msg1"]
+
+        # Gate Bibbia dei Messaggi: nessun messaggio esce se viola i 5 Pilastri.
+        lint = rule_keeper.lint_messaggio(testo, nome, lead.get("citta_ricerca", ""), tentativo_numero=1)
+        if lint["esito"] == "RESPINTO":
+            bocciati_bibbia += 1
+            motivi = "; ".join(f"P{v['pilastro']} {v['nome']}: {v['motivo']}" for v in lint["violazioni"])
+            log.warning(f"  BOCCIATO da Rule Keeper (non inviato): {motivi}")
+            esiti_dettaglio.append({"nome": nome, "telefono": telefono, "esito": "bocciato_bibbia", "dettaglio": motivi})
+            continue
 
         esito = send_message.invia_sync(telefono, testo, dry_run=dry_run)
         esiti_dettaglio.append({"nome": nome, "telefono": telefono, **esito})
@@ -222,6 +234,7 @@ def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
         "inviati": inviati,
         "falliti": falliti,
         "scartati_legittimi": scartati_legittimi,
+        "bocciati_bibbia": bocciati_bibbia,
         "eligibili": len(lead_da_contattare),
         "dettaglio": esiti_dettaglio,
     }
@@ -235,7 +248,7 @@ def scrivi_report(risultato_scraping: dict | None, risultato_invio: dict | None)
         if risultato_scraping is not None:
             f.write(f"SCRAPING: exit_code={risultato_scraping.get('exit_code')}\n")
         if risultato_invio is not None:
-            f.write(f"INVIO: eligibili={risultato_invio['eligibili']} inviati={risultato_invio['inviati']} falliti={risultato_invio['falliti']} scartati_legittimi={risultato_invio.get('scartati_legittimi',0)}\n")
+            f.write(f"INVIO: eligibili={risultato_invio['eligibili']} inviati={risultato_invio['inviati']} falliti={risultato_invio['falliti']} scartati_legittimi={risultato_invio.get('scartati_legittimi',0)} bocciati_bibbia={risultato_invio.get('bocciati_bibbia',0)}\n")
             for d in risultato_invio["dettaglio"]:
                 f.write(f"  - {d['nome']} ({d['telefono']}): {d['esito']} {d.get('dettaglio','')}\n")
     log.info(f"Report scritto: {path}")
@@ -285,6 +298,7 @@ def main():
         log.info(f"  Messaggi WhatsApp inviati: {risultato_invio['inviati']}/{daily_cap}")
         log.info(f"  Falliti (tecnici): {risultato_invio['falliti']}")
         log.info(f"  Scartati (numero non su WhatsApp/non valido): {risultato_invio.get('scartati_legittimi',0)}")
+        log.info(f"  Bocciati da Rule Keeper (Bibbia dei Messaggi): {risultato_invio.get('bocciati_bibbia',0)}")
     log.info("=" * 70)
 
 
