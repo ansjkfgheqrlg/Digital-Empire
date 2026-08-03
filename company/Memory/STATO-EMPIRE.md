@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-08-03 (Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-03 (Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
 
 ## ⚠️ ASSEGNAZIONE + COORDINAMENTO 2026-08-03 (Claude -> NERI) — TASK-NERI-20260803-STREAM-S7-STRATEGIA
 
@@ -14,7 +14,7 @@ NFT Magic Eden: CP-20260730-007, 89/89 controlli) + una terza sessione (Gael, CP
 arrivata da sola alla stessa diagnosi: "non manca codice, manca una decisione".
 
 Output: `PIANO-STRATEGICO-S7.md` (in `12-STREAM-S7-BOT/`) + task Neri con 3 ricerche, 3 report,
-2 architetture di metodo — dettagli [CP-20260803-006](checkpoints/CP-20260803-006.md).
+2 architetture di metodo — dettagli [CP-20260803-007](checkpoints/CP-20260803-007.md).
 Raccomandazione finale (REP1 di Neri) va a Max, che decide se il task Gael riparte.
 
 ## ✅ 2026-08-03 — CLAUDE: FASE 1 CHIUSA — filtro SOLO-import reale (nome/note), non più query-bias vacuo — CP-20260803-005
