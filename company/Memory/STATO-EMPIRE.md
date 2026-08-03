@@ -1,4 +1,35 @@
-# STATO EMPIRE -- aggiornato 2026-08-03 (Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-03 (Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## ⚠️ COORDINAMENTO 2026-08-03 (Claude, ordine diretto Max) — TASK-CLAUDE-20260803-CAROUSEL-APEX7-WORKFLOW
+Max ha ordinato di usare Arena+`master-build-architecture`+APEX-7 per costruire un workflow
+completo (agenti/skill/flussi/automazioni). Metodo generico già scritto in
+[27-ARENA-WORKFLOW-COMPLETO-METODO.md](../../PIANO-MAESTRO/27-ARENA-WORKFLOW-COMPLETO-METODO.md).
+Scelta del workflow (decisa da Claude, ordine "procedi tu da solo"): **Carousel Factory —
+pipeline mentalità-brutale end-to-end**, chiude loop già aperto (batch caroselli incompleto) +
+2 task mai chiusi in taskboard.
+
+**Riassegnati da Gael a Claude**: `tb-seed-13` (batch 7 caroselli) e `tb-seed-14` (pipeline
+100% auto) in `EmpireDesk/state/taskboard.json` — per ordine diretto di Max, non richiesta di
+Gael. **Gael: se stai lavorando su questi due item, fermati — sono passati a Claude oggi.**
+
+PLAN-v1 completo (swarm 7 agenti, memory ecosystem, integrazione APEX-7 domain=
+"carousel-factory", pre-mortem, criteri di accettazione): vedi
+[TASK-CLAUDE-20260803-CAROUSEL-APEX7-WORKFLOW.md](tasks/TASK-CLAUDE-20260803-CAROUSEL-APEX7-WORKFLOW.md).
+Gap onesto dichiarato: generazione foto resta umano-nel-loop (nessuna chiave API image-gen in
+`.env`) finché Max non la fornisce — Fase 2 separata, non bloccante.
+
+**Zona di lavoro**: `Workfolw crea caroselli à/carousel-factory/` (nuova sottocartella
+`agents/`) + `company/Ecosistemi/11-APEX-7-CORE/` (solo lettura/integrazione EventBus, nessuna
+modifica al motore). **RIPRESA DA**: BUILD (49 file agente, 7×7) — non ancora iniziato in
+questo giro, il deliverable consegnato oggi è il PLAN-v1.
+
+**⚠️ Collisione con Fase 3 di [CP-20260803-004](checkpoints/CP-20260803-004.md) (Claude,
+piano Preventa carousel)**: stesso motore `carousel-factory`, due esigenze diverse
+(mentalità-brutale qui vs Preventa lì). Il motore è già organizzato per "brand"
+(`brands/<nome>/config.json`) — Preventa può diventare `brands/preventa/` sibling, senza
+toccare l'agents/ di questo PLAN-v1. Verificare comunque lo stato di questo BUILD prima di
+iniziare Preventa, per non lavorare in parallelo sulla stessa cartella senza saperlo.
+
 ---
 
 ## 🔵 2026-08-03 — GAEL: STREAM-S7-BOT — 2 difetti corretti, la decisione go/no-go resta aperta — CP-20260803-001
