@@ -46,7 +46,11 @@
       "Bash(PYTHONIOENCODING=utf-8 python -m pytest)",
       "Bash(PYTHONIOENCODING=utf-8 python -m pytest tests/test_automation_config.py::test_settings_ignora_selettori_non_json)",
       "Bash(python -m ruff check .)",
-      "Bash(python -m ruff check --fix .)"
+      "Bash(python -m ruff check --fix .)",
+      "Bash(python -m ruff format .)",
+      "Bash(export PYTHONIOENCODING=utf-8)",
+      "Bash(yaf check-config *)",
+      "Bash(yaf run-demo *)"
     ]
   }
 }

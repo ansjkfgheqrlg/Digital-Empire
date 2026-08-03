@@ -42,6 +42,7 @@ def parse_selectors(value: str) -> dict[str, str]:
         return {}
     return {str(k): str(v) for k, v in parsed.items()}
 
+
 #: Nicchia operativa primaria. E' protetta: nessun agente operativo, revisore o di produzione
 #: puo' modificarla a runtime. Solo il livello senior puo' *proporre* un cambio per workflow
 #: futuri (vedi ``ProfitableNicheAgent`` e ``docs/niche_research.md``).

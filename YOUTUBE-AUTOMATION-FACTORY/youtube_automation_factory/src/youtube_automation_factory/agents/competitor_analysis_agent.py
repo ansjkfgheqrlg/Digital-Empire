@@ -42,14 +42,11 @@ class CompetitorAnalysisAgent(BaseAgent):
             valori = list(views.values())
             mediana = statistics.median(valori)
             osservazioni.append(
-                f"Mediana delle visualizzazioni sul campione: {mediana:.0f} "
-                f"({len(valori)} video)."
+                f"Mediana delle visualizzazioni sul campione: {mediana:.0f} ({len(valori)} video)."
             )
             sopra = [t for t, v in views.items() if v > mediana]
             if sopra:
-                osservazioni.append(
-                    "Video sopra la mediana: " + ", ".join(sorted(sopra)[:5]) + "."
-                )
+                osservazioni.append("Video sopra la mediana: " + ", ".join(sorted(sopra)[:5]) + ".")
             osservazioni.append(
                 "La mediana e' preferita alla media: un singolo contenuto virale "
                 "sposterebbe la media e farebbe sembrare regolare un canale che non lo e'."

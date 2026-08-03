@@ -47,9 +47,7 @@ class OriginalityResult:
     checks: list[OriginalityCheck] = field(default_factory=list)
     reasons: list[str] = field(default_factory=list)
     checked_at: str = field(default_factory=lambda: utc_now().isoformat())
-    disclaimer: str = (
-        "Controllo di processo, non una certificazione legale di assenza di plagio."
-    )
+    disclaimer: str = "Controllo di processo, non una certificazione legale di assenza di plagio."
 
     @property
     def failed_checks(self) -> list[OriginalityCheck]:

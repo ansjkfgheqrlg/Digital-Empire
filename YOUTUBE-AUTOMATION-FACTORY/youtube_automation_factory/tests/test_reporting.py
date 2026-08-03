@@ -19,9 +19,7 @@ def test_safe_filename_rimuove_caratteri_pericolosi() -> None:
     assert nome.startswith("etc")
 
 
-def test_report_candidato_contiene_i_campi_obbligatori(
-    reports_dir: Path, run, candidate
-) -> None:
+def test_report_candidato_contiene_i_campi_obbligatori(reports_dir: Path, run, candidate) -> None:
     run.candidate = candidate
     percorso = ReportingService(reports_dir).candidate_report(run, candidate)
     testo = percorso.read_text(encoding="utf-8")
@@ -65,9 +63,7 @@ def test_demo_end_to_end_completa(reports_dir: Path, niche: str) -> None:
 
 
 def test_demo_non_completa_senza_revisione_esterna(reports_dir: Path, niche: str) -> None:
-    risultato = run_demo_workflow(
-        primary_niche=niche, reports_dir=reports_dir, complete=False
-    )
+    risultato = run_demo_workflow(primary_niche=niche, reports_dir=reports_dir, complete=False)
     assert risultato.run.state is WorkflowState.COPY_PENDING_DIGITAL_EMPIRE_REVIEW
     assert risultato.run.state is not WorkflowState.COMPLETED
 

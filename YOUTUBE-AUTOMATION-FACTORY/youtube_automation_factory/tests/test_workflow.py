@@ -46,9 +46,7 @@ def test_approvazione_riferimento_richiede_il_senior(
         workflow.transition(WorkflowState.APPROVED_AS_REFERENCE, actor="review-test")
 
 
-def test_approvazione_di_un_revisore_non_basta(
-    workflow: YouTubeFactoryWorkflow, candidate
-) -> None:
+def test_approvazione_di_un_revisore_non_basta(workflow: YouTubeFactoryWorkflow, candidate) -> None:
     workflow.run.candidate = candidate
     workflow.run.approvals.append(
         Approval(
@@ -75,9 +73,7 @@ def test_script_non_approvabile_senza_controllo_originalita(
         workflow.transition(WorkflowState.SCRIPT_APPROVED, actor="senior-test")
 
 
-def test_produzione_richiede_script_approvato(
-    workflow: YouTubeFactoryWorkflow, script
-) -> None:
+def test_produzione_richiede_script_approvato(workflow: YouTubeFactoryWorkflow, script) -> None:
     workflow.run.script = script
     workflow.run.state = WorkflowState.SCRIPT_APPROVED
     with pytest.raises(InvalidTransitionError, match="script approvato"):

@@ -197,9 +197,7 @@ class ReportingService:
 
     def originality_report(self, run: WorkflowRun, result: object) -> Path:
         checks = getattr(result, "checks", [])
-        righe = [
-            f"{'PASSA' if c.passed else 'BLOCCA'} — `{c.name}`: {c.detail}" for c in checks
-        ]
+        righe = [f"{'PASSA' if c.passed else 'BLOCCA'} — `{c.name}`: {c.detail}" for c in checks]
         asset_id = getattr(result, "asset_id", "?")
         passed = getattr(result, "passed", False)
         corpo = (
@@ -252,8 +250,7 @@ class ReportingService:
             + f"| Controllo originalita' | {thumbnail.originality_checked} |\n"
             + f"| Approvata | {thumbnail.approved} |\n"
             + "\n> Se il backend di generazione non e' configurato, il brief resta valido e la "
-            "copertina **non** viene dichiarata generata.\n"
-            + self._prossimo_passo(run.state)
+            "copertina **non** viene dichiarata generata.\n" + self._prossimo_passo(run.state)
         )
         return self._write(safe_filename("thumbnail", thumbnail.id) + ".md", corpo)
 

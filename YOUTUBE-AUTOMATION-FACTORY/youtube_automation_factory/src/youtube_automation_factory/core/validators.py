@@ -19,9 +19,7 @@ from ..core.models import (
 def validate_niche(candidate: VideoCandidate, primary_niche: str) -> list[str]:
     """Il candidato deve appartenere alla nicchia primaria."""
     if candidate.niche.strip().casefold() != primary_niche.strip().casefold():
-        return [
-            f"Nicchia '{candidate.niche}' diversa dalla nicchia primaria '{primary_niche}'."
-        ]
+        return [f"Nicchia '{candidate.niche}' diversa dalla nicchia primaria '{primary_niche}'."]
     return []
 
 

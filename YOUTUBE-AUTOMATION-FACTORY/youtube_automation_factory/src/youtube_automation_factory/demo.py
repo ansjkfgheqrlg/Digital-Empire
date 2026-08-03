@@ -95,9 +95,7 @@ def run_demo_workflow(
     result.reports.append(reporting.candidate_report(run, candidate))
 
     # 2. Revisione -------------------------------------------------------------------
-    wf.transition(
-        WorkflowState.UNDER_REVIEW, actor=reviewer.name, actor_level=reviewer.level
-    )
+    wf.transition(WorkflowState.UNDER_REVIEW, actor=reviewer.name, actor_level=reviewer.level)
     review = reviewer.review(candidate)
     run.review = review
     result.reports.append(reporting.review_report(run, review))
@@ -142,9 +140,7 @@ def run_demo_workflow(
     )
 
     # 5. Produzione ------------------------------------------------------------------
-    wf.transition(
-        WorkflowState.PRODUCTION_PENDING, actor=producer.name, actor_level=producer.level
-    )
+    wf.transition(WorkflowState.PRODUCTION_PENDING, actor=producer.name, actor_level=producer.level)
     job = producer.create_job(
         workflow_id=run.id,
         script=script,
@@ -153,21 +149,13 @@ def run_demo_workflow(
         subtitle_preset="standard",
     )
     run.production_job = job
-    wf.transition(
-        WorkflowState.IN_PRODUCTION, actor=producer.name, actor_level=producer.level
-    )
+    wf.transition(WorkflowState.IN_PRODUCTION, actor=producer.name, actor_level=producer.level)
     produzione = producer.wait_for_result(job)
-    result.notes.append(
-        f"Produzione simulata: {produzione.status}. Nessun video reale prodotto."
-    )
-    wf.transition(
-        WorkflowState.VIDEO_READY_FOR_QA, actor=producer.name, actor_level=producer.level
-    )
+    result.notes.append(f"Produzione simulata: {produzione.status}. Nessun video reale prodotto.")
+    wf.transition(WorkflowState.VIDEO_READY_FOR_QA, actor=producer.name, actor_level=producer.level)
 
     # 6. Copy ------------------------------------------------------------------------
-    wf.transition(
-        WorkflowState.COPY_DRAFT, actor=copywriter.name, actor_level=copywriter.level
-    )
+    wf.transition(WorkflowState.COPY_DRAFT, actor=copywriter.name, actor_level=copywriter.level)
     copy = copywriter.draft_copy(
         workflow_id=run.id,
         headline="Una domanda che cambia la risposta",
@@ -232,9 +220,7 @@ def run_demo_workflow(
     result.reports.append(reporting.thumbnail_report(run, thumbnail))
 
     # 8. Quality control -------------------------------------------------------------
-    wf.transition(
-        WorkflowState.QUALITY_CONTROL, actor=regulator.name, actor_level=regulator.level
-    )
+    wf.transition(WorkflowState.QUALITY_CONTROL, actor=regulator.name, actor_level=regulator.level)
     blocchi = regulator.final_quality_control(wf)
     if blocchi:
         result.notes.append("Blocco regolatorio: " + "; ".join(blocchi))

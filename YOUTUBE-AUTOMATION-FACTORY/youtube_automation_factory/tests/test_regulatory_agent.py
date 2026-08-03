@@ -14,18 +14,14 @@ def test_originalita_fallisce_in_copy_mode(originality: OriginalityService, scri
     assert any("copy_mode" in r for r in esito.reasons)
 
 
-def test_originalita_passa_su_asset_conforme(
-    originality: OriginalityService, script
-) -> None:
+def test_originalita_passa_su_asset_conforme(originality: OriginalityService, script) -> None:
     esito = originality.apply(script)
     assert esito.passed
     assert script.originality_checked is True
     assert esito.disclaimer
 
 
-def test_originalita_fallisce_senza_brief(
-    originality: OriginalityService, run
-) -> None:
+def test_originalita_fallisce_senza_brief(originality: OriginalityService, run) -> None:
     from youtube_automation_factory.core.models import ThumbnailAsset
 
     t = ThumbnailAsset(workflow_id=run.id, author="a", brief=" ", concept="c")
@@ -34,9 +30,7 @@ def test_originalita_fallisce_senza_brief(
     assert t.originality_checked is False
 
 
-def test_originalita_fallisce_su_script_troppo_corto(
-    originality: OriginalityService, run
-) -> None:
+def test_originalita_fallisce_su_script_troppo_corto(originality: OriginalityService, run) -> None:
     from youtube_automation_factory.core.models import ScriptAsset
 
     s = ScriptAsset(workflow_id=run.id, author="a", brief="b", title="t", body="troppo corto")
@@ -83,9 +77,7 @@ def test_sblocco_rifiutato_se_restano_non_conformita(regulator, workflow, script
         regulator.clear_block(workflow, WorkflowState.SCRIPT_DRAFT)
 
 
-def test_sblocco_riuscito_dopo_la_correzione(
-    regulator, workflow, script, originality
-) -> None:
+def test_sblocco_riuscito_dopo_la_correzione(regulator, workflow, script, originality) -> None:
     workflow.run.script = script
     regulator.block_if_needed(workflow)
     originality.apply(script)

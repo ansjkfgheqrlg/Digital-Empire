@@ -57,9 +57,7 @@ class SeniorDecisionAgent(BaseAgent):
         """Registra la decisione sul candidato. Riservata al livello senior."""
         self.authorize("approve_reference")
         valutazione = self.evaluate_candidate(candidate)
-        decisione = (
-            ApprovalDecision.APPROVED if valutazione.approved else ApprovalDecision.REJECTED
-        )
+        decisione = ApprovalDecision.APPROVED if valutazione.approved else ApprovalDecision.REJECTED
         return record_approval(
             run,
             subject_id=candidate.id,

@@ -69,9 +69,7 @@ def test_senior_respinge_candidato_con_poche_visualizzazioni(
     assert "visualizzazioni_significative" in approvazione.reason
 
 
-def test_revisore_chiede_integrazioni_se_mancano_dati(
-    reviewer: ReviewAgent, niche: str
-) -> None:
+def test_revisore_chiede_integrazioni_se_mancano_dati(reviewer: ReviewAgent, niche: str) -> None:
     incompleto = VideoCandidate(
         title="t",
         url="https://www.youtube.com/watch?v=z",
@@ -147,9 +145,7 @@ def test_senior_decide_proposta_senza_attivarla(niche: str) -> None:
 def test_copy_deve_essere_inviato_prima_di_essere_revisionato(run, niche: str) -> None:
     copywriter = CopywritingAgent("copy-1", niche)
     revisore = DigitalEmpireCopyReviewer()
-    copy = copywriter.draft_copy(
-        workflow_id=run.id, headline="h", body="b", brief="brief"
-    )
+    copy = copywriter.draft_copy(workflow_id=run.id, headline="h", body="b", brief="brief")
     with pytest.raises(ValueError, match="non e' stato inviato"):
         revisore.review(copy, approve=True, reason="ok")
 

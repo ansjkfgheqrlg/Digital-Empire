@@ -156,9 +156,7 @@ class _CreativeAsset(_Base):
     @model_validator(mode="after")
     def _no_approvazione_senza_controllo(self) -> _CreativeAsset:
         if self.approved and not self.originality_checked:
-            raise ValueError(
-                "Un asset non puo' risultare approvato con originality_checked=False."
-            )
+            raise ValueError("Un asset non puo' risultare approvato con originality_checked=False.")
         return self
 
 

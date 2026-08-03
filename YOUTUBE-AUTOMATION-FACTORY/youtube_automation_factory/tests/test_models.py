@@ -107,9 +107,7 @@ def test_copertina_non_puo_replicare_layout_altrui(run) -> None:
 
 def test_copertina_generata_deve_dichiarare_il_backend(run) -> None:
     with pytest.raises(ValidationError, match="backend"):
-        ThumbnailAsset(
-            workflow_id=run.id, author="a", brief="b", concept="c", generated=True
-        )
+        ThumbnailAsset(workflow_id=run.id, author="a", brief="b", concept="c", generated=True)
 
 
 def test_copertina_non_generata_non_puo_avere_file(run) -> None:
@@ -131,6 +129,4 @@ def test_proposta_nicchia_richiede_sempre_decisione_senior() -> None:
 
 def test_campi_sconosciuti_rifiutati(run) -> None:
     with pytest.raises(ValidationError):
-        ThumbnailAsset(
-            workflow_id=run.id, author="a", brief="b", concept="c", campo_inesistente=1
-        )
+        ThumbnailAsset(workflow_id=run.id, author="a", brief="b", concept="c", campo_inesistente=1)
