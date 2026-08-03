@@ -546,5 +546,25 @@
     ],
     "confidence": 0.8,
     "timestamp": "2026-07-31T15:32:32.723577"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260803-095012-1d8f7d",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25250, velocity media 9.1 viste/ora, indice cash cow reale 21.0 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-03T09:50:12.554272"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260803-095012-1d8f7d",
+    "decision": "Scelta video target: Hai 70-80 anni? SMETTI di Camminare tanto e fai SOLO Queste 2 Cose",
+    "reason": "Velocity reale 38.63 views/ora (141000 viste in 3650h) su Dose Mentale — SEO score reale del titolo 25.0/100 per keyword 'hai 70-80 anni': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Familiari Tossici? Ecco In Che Modo Dio Ti Allontana da Loro | Saggezza Biblica"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-03T09:50:16.170683"
   }
 ]

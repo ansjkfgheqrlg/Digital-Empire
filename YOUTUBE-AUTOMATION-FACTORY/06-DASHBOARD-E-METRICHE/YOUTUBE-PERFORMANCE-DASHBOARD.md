@@ -1,9 +1,9 @@
 # YouTube Automation Factory - Performance Dashboard
 
-- **Ultimo Run ID**: yt-20260731-153231-5e4b47
-- **Data Aggiornamento**: 2026-07-31 15:32:32
+- **Ultimo Run ID**: yt-20260803-095012-1d8f7d
+- **Data Aggiornamento**: 2026-08-03 09:50:16
 - **Canale Target**: Dose Mentale (`@dosementale`)
-- **Video Replicato**: Are you 70-80 years old? STOP walking so much and do ONLY these 2 things.
+- **Video Replicato**: Hai 70-80 anni? SMETTI di Camminare tanto e fai SOLO Queste 2 Cose
 - **Idea Script (Fase 3)**: Dopo i 70 anni, camminare non basta più: le 2 cose che contano davvero
 - **SEO Score Metadati (Fase 5)**: 100.0
 - **Stato Fabbrica**: 🟢 OPERATIVA (6/6 fasi reali PASS)
