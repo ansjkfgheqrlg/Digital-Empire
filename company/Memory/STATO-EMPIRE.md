@@ -1,4 +1,34 @@
-# STATO EMPIRE -- aggiornato 2026-08-03 (Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-03 (Claude: Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## ✅ 2026-08-03 — CLAUDE: FASE 1 CHIUSA — filtro SOLO-import reale (nome/note), non più query-bias vacuo — CP-20260803-005
+Max (via `AskUserQuestion`) ha scelto: keyword su nome_attivita/note_qualifica, accettando il
+rischio di restringere il funnel (segue [CP-20260803-004](checkpoints/CP-20260803-004.md) Fase 1).
+
+**Bug reale trovato**: `categoria` (= query di scraping, es. "concessionario auto import
+Germania") era usato come "segnale import" sia in `outreach_giornaliero.py` sia in
+`personalizza_messaggi.py::scegli_gancio()` — ma **tutte** le `IMPORT_QUERIES` contengono
+"import", quindi il check era sempre vero per ogni lead della campagna: non filtrava nulla,
+Gancio 4 veniva scelto al 100% a prescindere da chi importasse davvero.
+
+**Fix**: nuovo segnale reale `IMPORT_KEYWORDS` (lista larga: import/estero/tedesche/francesi/
+belgio/olanda/svizzera/austria/europa/km0/reimport...) cercato in `nome_attivita +
+note_qualifica`. Applicato in 3 file: `outreach_giornaliero.py` (nuova
+`sembra_import_reale()`, hard-gate in `carica_lead_da_contattare()`, nuovo contatore
+`scartati_no_import` sempre loggato/nel report, mai silenzioso) + le **2 copie** di
+`personalizza_messaggi.py` (`scegli_gancio()` ora prende anche `nome_attivita`).
+
+**Verificato su Areus reale** (228 lead): NEW+mobile+telefono = 29 → passano il filtro import
+reale = **8/29**. Funnel si restringe (~72%) ma non si azzera (a differenza dell'errore
+precedente CP-20260729-007). `py_compile` pulito sui 3 file. Dettagli/lista lead in
+[CP-20260803-005](checkpoints/CP-20260803-005.md).
+
+**RIPRESA DA**: Fase 1 chiusa, nessuna azione richiesta — `/avvia-outreach-preventa` usa già
+il nuovo filtro dal prossimo run. Prossimo: **Fase 3** (Reparto Produzione + Progetto Preventa
+carousel) — vedi collisione già mappata nel blocco COORDINAMENTO sotto (carousel-factory,
+PLAN-v1 mentalità-brutale ancora in stato PLAN, BUILD non iniziato). Fase 2 (IG/LinkedIn)
+resta bloccata fino a conferma esplicita di Max.
+
+---
 
 ## ⚠️ COORDINAMENTO 2026-08-03 (Claude, ordine diretto Max) — TASK-CLAUDE-20260803-CAROUSEL-APEX7-WORKFLOW
 Max ha ordinato di usare Arena+`master-build-architecture`+APEX-7 per costruire un workflow

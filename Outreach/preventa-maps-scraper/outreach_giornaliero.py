@@ -8,10 +8,14 @@ Outreach Preventa — flusso giornaliero automatico (comando /avvia-outreach-pre
 
 FASE 1 — SCRAPING (focus import): pesca N città/giorno a rotazione da
   05-TEMPLATES-E-KIT/cities.txt, cerca su Google Maps con query orientate a
-  concessionari IMPORT (non filtra per nome dopo — il focus si ottiene dalla
-  query di ricerca stessa, un filtro per keyword nel nome scarterebbe troppi
-  lead veri che importano senza avere "import" scritto in ragione sociale).
-  Ogni lead qualificato finisce in Areus (stage NEW).
+  concessionari IMPORT. Ogni lead qualificato finisce in Areus (stage NEW).
+  Filtro solo-import (ordine di Max 2026-08-03, vedi CP-20260803-004): la sola
+  query di ricerca NON basta più come segnale — un lead trovato da query import
+  può comunque non essere un vero importatore. `sembra_import_reale()` in FASE 2
+  richiede una keyword import/estero/tedesche/ecc. in nome_attivita o
+  note_qualifica prima di contattare. Rischio noto: filtro troppo stretto può
+  svuotare il funnel (già successo e corretto in CP-20260729-007) — per questo
+  il conteggio scartati è sempre loggato e mai silenzioso.
 
 FASE 2 — INVIO WHATSAPP: dai lead Areus con stage=NEW, telefono mobile,
   priorità ALTA/MEDIA (BASSA = già digitalizzati, non il target del pitch),
@@ -59,6 +63,20 @@ IMPORT_QUERIES = [
     "concessionario auto import",
     "concessionario auto import Germania",
     "auto import usate",
+]
+# Segnale reale "fa import" (non la query di ricerca, che è solo bias): keyword
+# cercate in nome_attivita + note_qualifica. Lista larga apposta — un filtro
+# stretto ha già svuotato il funnel una volta (CP-20260729-007).
+IMPORT_KEYWORDS = [
+    "import", "importazione", "importazioni", "importati", "importate",
+    "estero", "esteri", "estera", "estere",
+    "tedesca", "tedesche", "tedeschi", "germania", "german",
+    "francia", "francese", "francesi",
+    "belgio", "belga", "olanda", "olandese",
+    "svizzera", "svizzero", "austria", "austriaco",
+    "europa", "europee", "europei",
+    "km0", "km 0", "kmzero", "km zero",
+    "reimport", "re-import",
 ]
 CITTA_PER_GIORNO = 6
 LIMIT_PER_COMBO = 20
@@ -112,7 +130,15 @@ def fase1_scraping(cities: list[str], limit: int, headless: bool) -> dict:
     return {"exit_code": proc.returncode, "stdout_tail": proc.stdout[-2000:] if proc.stdout else ""}
 
 
-def carica_lead_da_contattare(daily_cap: int) -> list[dict]:
+def sembra_import_reale(lead: dict) -> bool:
+    """Segnale reale (non la query di ricerca, che è solo bias di scraping):
+    keyword import/estero/tedesche/ecc. in nome_attivita o note_qualifica.
+    Ordine esplicito di Max 2026-08-03: contattare SOLO chi fa import davvero."""
+    testo = f"{lead.get('nome_attivita','')} {lead.get('note_qualifica','')}".lower()
+    return any(kw in testo for kw in IMPORT_KEYWORDS)
+
+
+def carica_lead_da_contattare(daily_cap: int) -> tuple[list[dict], int, int]:
     data = areus._load(areus.DEFAULT_STATE_PATH)
     leads = data.get("leads", [])
 
@@ -125,21 +151,17 @@ def carica_lead_da_contattare(daily_cap: int) -> list[dict]:
     if gia_inviati_oggi:
         log.info(f"Già inviati oggi: {gia_inviati_oggi}/{daily_cap} — rimangono {rimanenti} slot")
 
-    def priorita_ok(l: dict) -> bool:
-        # Lead import: il gancio 4 (annunci esteri) funziona a QUALSIASI priorita' sito —
-        # il dolore non e' "sito vecchio", e' "tradurre annunci esteri". Per gli altri lead
-        # (non-import) resta il filtro originale: BASSA = gia' digitalizzato, pitch non calza.
-        if "import" in (l.get("categoria", "") or "").lower():
-            return True
-        return l.get("priorita_lead") in ("ALTA", "MEDIA")
-
-    eligibili = [
+    candidati = [
         l for l in leads
         if l.get("stage") == areus.STAGE_NEW
         and l.get("telefono_tipo") == "mobile"
-        and priorita_ok(l)
         and (l.get("telefono") or "").strip()
     ]
+
+    eligibili = [l for l in candidati if sembra_import_reale(l)]
+    scartati_no_import = len(candidati) - len(eligibili)
+    log.info(f"Filtro SOLO-import: {len(eligibili)}/{len(candidati)} lead con segnale import reale in nome/note (scartati {scartati_no_import} — query-bias da solo non basta più, vedi CP-20260803-004).")
+
     ordine = {"ALTA": 0, "MEDIA": 1, "BASSA": 2}
     eligibili.sort(key=lambda l: ordine.get(l.get("priorita_lead"), 2))
 
@@ -152,7 +174,7 @@ def carica_lead_da_contattare(daily_cap: int) -> list[dict]:
     # il totale mandato sotto il minimo richiesto. Il loop di invio si ferma comunque appena
     # raggiunge `rimanenti` invii REALI, non consuma il pool intero.
     pool = eligibili[: max(rimanenti * 4, rimanenti)]
-    return pool, rimanenti
+    return pool, rimanenti, scartati_no_import
 
 
 def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
@@ -162,8 +184,8 @@ def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
     send_message = _load_module(WHATSAPP_DIR / "send_message.py", "send_message_gg")
     rule_keeper = _load_module(RULE_KEEPER_DIR / "rule_keeper_lint.py", "rule_keeper_lint_gg")
 
-    lead_da_contattare, rimanenti_oggi = carica_lead_da_contattare(daily_cap)
-    log.info(f"Lead eligibili trovati (NEW + mobile + [import: ogni priorita' / altri: ALTA/MEDIA]): {len(lead_da_contattare)}")
+    lead_da_contattare, rimanenti_oggi, scartati_no_import = carica_lead_da_contattare(daily_cap)
+    log.info(f"Lead eligibili trovati (NEW + mobile + segnale import reale in nome/note): {len(lead_da_contattare)}")
 
     inviati = 0
     falliti = 0
@@ -235,6 +257,7 @@ def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
         "falliti": falliti,
         "scartati_legittimi": scartati_legittimi,
         "bocciati_bibbia": bocciati_bibbia,
+        "scartati_no_import": scartati_no_import,
         "eligibili": len(lead_da_contattare),
         "dettaglio": esiti_dettaglio,
     }
@@ -248,7 +271,7 @@ def scrivi_report(risultato_scraping: dict | None, risultato_invio: dict | None)
         if risultato_scraping is not None:
             f.write(f"SCRAPING: exit_code={risultato_scraping.get('exit_code')}\n")
         if risultato_invio is not None:
-            f.write(f"INVIO: eligibili={risultato_invio['eligibili']} inviati={risultato_invio['inviati']} falliti={risultato_invio['falliti']} scartati_legittimi={risultato_invio.get('scartati_legittimi',0)} bocciati_bibbia={risultato_invio.get('bocciati_bibbia',0)}\n")
+            f.write(f"INVIO: eligibili={risultato_invio['eligibili']} inviati={risultato_invio['inviati']} falliti={risultato_invio['falliti']} scartati_legittimi={risultato_invio.get('scartati_legittimi',0)} bocciati_bibbia={risultato_invio.get('bocciati_bibbia',0)} scartati_no_import={risultato_invio.get('scartati_no_import',0)}\n")
             for d in risultato_invio["dettaglio"]:
                 f.write(f"  - {d['nome']} ({d['telefono']}): {d['esito']} {d.get('dettaglio','')}\n")
     log.info(f"Report scritto: {path}")
@@ -298,6 +321,7 @@ def main():
         log.info(f"  Messaggi WhatsApp inviati: {risultato_invio['inviati']}/{daily_cap}")
         log.info(f"  Falliti (tecnici): {risultato_invio['falliti']}")
         log.info(f"  Scartati (numero non su WhatsApp/non valido): {risultato_invio.get('scartati_legittimi',0)}")
+        log.info(f"  Scartati (nessun segnale import reale in nome/note): {risultato_invio.get('scartati_no_import',0)}")
         log.info(f"  Bocciati da Rule Keeper (Bibbia dei Messaggi): {risultato_invio.get('bocciati_bibbia',0)}")
     log.info("=" * 70)
 

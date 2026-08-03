@@ -23,8 +23,24 @@ from pathlib import Path
 MITTENTE = "Max"
 BRAND = "Preventa"
 
+# Segnale reale "fa import" (non la query di scraping, che è solo bias): keyword
+# in nome_attivita + note_qualifica. Stessa lista di outreach_giornaliero.py —
+# tenerla larga apposta, un filtro stretto ha già svuotato il funnel una volta
+# (CP-20260729-007). Ordine esplicito di Max 2026-08-03 (CP-20260803-004).
+IMPORT_KEYWORDS = [
+    "import", "importazione", "importazioni", "importati", "importate",
+    "estero", "esteri", "estera", "estere",
+    "tedesca", "tedesche", "tedeschi", "germania", "german",
+    "francia", "francese", "francesi",
+    "belgio", "belga", "olanda", "olandese",
+    "svizzera", "svizzero", "austria", "austriaco",
+    "europa", "europee", "europei",
+    "km0", "km 0", "kmzero", "km zero",
+    "reimport", "re-import",
+]
 
-def scegli_gancio(note_qualifica: str, priorita: str, ha_sito: str, categoria: str = "") -> dict:
+
+def scegli_gancio(note_qualifica: str, priorita: str, ha_sito: str, categoria: str = "", nome_attivita: str = "") -> dict:
     """Logica da preventa-maps-scraper/LEGGIMI.md §8: ALTA no sito/sito scarso -> Gancio 3,
     ALTA poche recensioni -> Gancio 2, altrimenti Gancio 1 (control), IMPORT -> Gancio 4.
     Nota: scraper.py marca ALTA sia "Senza sito web" sia "Sito vecchio/scarso" (ha_sito=True
@@ -33,10 +49,14 @@ def scegli_gancio(note_qualifica: str, priorita: str, ha_sito: str, categoria: s
     Gancio 4 (import) ha priorità su tutto il resto e ignora priorita_lead: un concessionario
     import può avere un sito curato (BASSA) e restare comunque un ottimo target, perché il suo
     dolore non è "il sito è vecchio" ma "tradurre annunci esteri e fare il preventivo in italiano
-    richiede tempo doppio" — un problema diverso, non catturato dallo score sito."""
-    categoria_l = (categoria or "").lower()
-    if "import" in categoria_l:
-        return {"numero": 4, "nome": "Import / annunci esteri", "motivo": "concessionario import (query di scraping import-focus)"}
+    richiede tempo doppio" — un problema diverso, non catturato dallo score sito.
+
+    `categoria` (query di scraping usata) NON basta più da sola come segnale — contiene sempre
+    "import" in questa campagna, quindi matchava ogni lead. Il segnale reale è la keyword in
+    nome_attivita/note_qualifica (vedi IMPORT_KEYWORDS)."""
+    testo_segnale = f"{nome_attivita or ''} {note_qualifica or ''}".lower()
+    if any(kw in testo_segnale for kw in IMPORT_KEYWORDS):
+        return {"numero": 4, "nome": "Import / annunci esteri", "motivo": "keyword import/estero/tedesche/ecc. in nome o note"}
 
     note = (note_qualifica or "").lower()
     ha_sito_str = str(ha_sito).strip().lower()
@@ -168,7 +188,7 @@ def genera_messaggi(riga: dict) -> dict:
     ha_sito = riga.get("ha_sito", "")
 
     categoria = riga.get("categoria", "")
-    gancio = scegli_gancio(note, priorita, ha_sito, categoria)
+    gancio = scegli_gancio(note, priorita, ha_sito, categoria, nome_attivita)
     canale_primario = "whatsapp" if normalizza_telefono(telefono) else "email"
 
     return {
