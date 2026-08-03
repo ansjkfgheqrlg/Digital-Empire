@@ -1,4 +1,4 @@
-﻿[2026-08-03 09:29:21] CONFLITTO DI SYNC
+﻿[2026-08-03 09:33:56] CONFLITTO DI SYNC
 Rebase pre-push fallito: Auto-merging company/Memory/INDEX.md CONFLICT (content): Merge conflict in company/Memory/INDEX.md Auto-merging company/Memory/STATO-EMPIRE.md CONFLICT (content): Merge conflict in company/Memory/STATO-EMPIRE.md Auto-merging company/Memory/checkpoints/CP-20260731-003.md CONFLICT (add/add): Merge conflict in company/Memory/checkpoints/CP-20260731-003.md
 Il tuo lavoro e' al sicuro (committato in locale).
 Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
