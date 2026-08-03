@@ -248,9 +248,13 @@ def download_file(url: str, out_path: str):
 def main():
     ap = argparse.ArgumentParser(description="Genera il video reale via API Fliki dalla spec F3/F4.")
     ap.add_argument("--file-name", default="dosementale-video")
-    # Default "stock" = configurazione approvata da Gael (video v8): lanciando senza flag il
-    # risultato e' identico al v8. "ai" e' la variante da valutare per le clip fuori target.
-    ap.add_argument("--visuals", choices=["stock", "ai"], default="stock")
+    # Default "ai" dal 2026-08-03: Gael ha delegato la scelta ("scegli te") dopo il confronto
+    # fra le due versioni. Le clip stock, scelte da Fliki in autonomia, finivano fuori bersaglio
+    # (una ragazza di trent'anni mentre la voce parla a chi ha superato i settanta): con un
+    # pubblico che guarda un video su se' stesso e' una rottura di credibilita'. Le immagini
+    # generate nascono dal testo della scena, quindi restano sempre in tema.
+    # "stock" resta disponibile come variante esplicita.
+    ap.add_argument("--visuals", choices=["ai", "stock"], default="ai")
     ap.add_argument("--art-style", default="realistic",
                     help="Solo con --visuals ai. Valori reali: cinematic, realistic, illustration, "
                          "anime, comic book, 3d model, fantasy art, watercolor, line art, clay, "

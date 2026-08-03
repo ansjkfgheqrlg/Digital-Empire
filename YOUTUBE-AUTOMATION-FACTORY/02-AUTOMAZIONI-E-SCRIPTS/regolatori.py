@@ -186,13 +186,18 @@ def verifica_copy(testi: dict[str, str]) -> dict:
 # regolatore-configurazione — la configurazione Fliki approvata da Gael non si tocca
 # --------------------------------------------------------------------------------------
 CONFIG_APPROVATA = {
+    # Approvati da Gael il 2026-07-31 sul video v8 ("non cambiare niente, falli tutti cosi'").
+    # L'effetto karaoke parola-per-parola dei sottotitoli E' VOLUTO: non e' un difetto.
     "subtitlePresetId": "builtin-legacy-bold",
     "highlightSubtitles": True,
-    "duration": 720,
-    "visuals": "stock",
+    "duration": 720,          # inerte (l'API vuole 1-15 minuti) ma fa parte dell'approvato
     "sceneBreakdown": "lineBreak",
     "aspectRatio": "16:9",
     "resolution": "1080p",
+    # Cambiato il 2026-08-03 su delega esplicita di Gael ("scegli te"), dopo confronto fra le
+    # due versioni: le clip stock finivano fuori bersaglio anagrafico, le immagini generate
+    # nascono dal testo della scena e restano in tema.
+    "visuals": "ai",
 }
 
 

@@ -49,6 +49,17 @@ benessere per un pubblico adulto/anziano.
   (non è nell'HTML statico né in chiamate di rete intercettabili). I 30 preset reali sono in
   `memory/fliki_subtitle_presets.json` (`fliki_subtitle_presets.py`), elencati per riferimento.
 
+## Decisione del 2026-08-03: `visuals: ai` (delega esplicita di Gael)
+Gael ha delegato la scelta fra clip stock e immagini generate ("scegli te") dopo aver confrontato
+le due versioni. **Scelto `visuals: "ai"` con `artStyle: "realistic"`, ora default.**
+Motivo: le clip stock le sceglie Fliki in autonomia e finivano fuori bersaglio anagrafico — in
+una scena del v8 compariva una ragazza di trent'anni mentre la voce parlava a chi ha superato i
+settanta. Su un pubblico che guarda un video *su di sé* è una rottura di credibilità nel punto
+peggiore. Le immagini generate nascono dal testo della scena, quindi restano sempre in tema, e il
+registro è più vicino a @dosementale, che usa illustrazioni e non riprese di repertorio.
+Si perde un po' di movimento reale: scambio accettato.
+`--visuals stock` resta disponibile come variante esplicita.
+
 ## ⛔ Configurazione Fliki APPROVATA da Gael — non modificare (2026-07-31)
 Gael ha visto il video v8 e ha detto: **"il video era perfetto, non modificare le regole e non
 cambiare niente, d'ora in poi falli tutti così"**. I valori esatti in `fliki_client.py`:

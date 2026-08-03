@@ -20,7 +20,8 @@
       "Bash(timeout 280 python -u youtube_hunter_playwright.py --handle @dosementale --max-video 60 --headless)",
       "Bash(PYTHONIOENCODING=utf-8 python copy_study_dosementale.py)",
       "Bash(PYTHONIOENCODING=utf-8 python regolatori.py --video-id mkaNzHTBw1M --mp4 \"../06-DASHBOARD-E-METRICHE/video-generati/dopo-70-anni-camminare-non-basta-v8.mp4\")",
-      "Bash(echo \"exit=$?\")"
+      "Bash(echo \"exit=$?\")",
+      "Bash(python -u fliki_client.py --file-name \"dopo-70-anni-v10-DEFINITIVO\")"
     ]
   }
 }
