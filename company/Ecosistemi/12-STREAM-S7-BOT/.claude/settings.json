@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c 'import importlib.metadata as m *)",
+      "Bash(python -c \"import main\")",
+      "Bash(timeout 180 python -m pip install --dry-run -r requirements.txt)",
+      "Bash(timeout 240 python -m pip install --dry-run -r req-vecchio.txt)",
+      "Bash(timeout 120 python -m empire mem write --help)",
+      "Bash(timeout 180 python -m empire mem write --kind checkpoint --view --actor Claude --eco 12-STREAM-S7-BOT --status chiuso --title \"STREAM-S7-BOT: requirements.txt non installabile \\(corretto\\) + STATO-RIPRESA riallineato\" --refs CP-20260728-006 CP-20260728-012 CP-20260730-007 --artifacts \"company/Ecosistemi/12-STREAM-S7-BOT/requirements.txt\" \"company/Ecosistemi/12-STREAM-S7-BOT/STATO-RIPRESA.md\" --body -)"
+    ]
+  }
+}
