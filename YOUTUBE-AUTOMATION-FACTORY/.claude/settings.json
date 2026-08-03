@@ -6,7 +6,8 @@
       "Bash(python -c \"import ast;ast.parse\\(open\\('fliki_client.py',encoding='utf-8'\\).read\\(\\)\\);print\\('sintassi OK'\\)\")",
       "Bash(sed -n '/payload = {/,/^    }$/p' fliki_client.py)",
       "Bash(python -u fliki_client.py --file-name \"dopo-70-anni-camminare-non-basta-v9\")",
-      "Bash(start \"\" \"dopo-70-anni-camminare-non-basta-v8.mp4\")"
+      "Bash(start \"\" \"dopo-70-anni-camminare-non-basta-v8.mp4\")",
+      "Bash(awk '{print $5, $9}')"
     ]
   }
 }
