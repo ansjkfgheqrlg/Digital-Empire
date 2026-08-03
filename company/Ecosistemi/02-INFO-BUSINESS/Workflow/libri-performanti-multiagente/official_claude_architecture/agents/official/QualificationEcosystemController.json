@@ -1,0 +1,142 @@
+{
+  "id": "agent_iTnr6R7o7Wbvl2AHPPMmw",
+  "archived_at": null,
+  "created_at": "2026-08-03T09:21:48Z",
+  "description": "L2 Controller Qualification - detailed qualification plan reproducibility absurdity speed market fit plan validity go/no-go decisions official",
+  "mcp_servers": [],
+  "metadata": {
+    "hierarchy_level": "2",
+    "team": "EcosystemControlTeam",
+    "ecosystem": "QualificationEcosystem",
+    "official_claude_code": "true",
+    "managed_agents_api_version": "2026-04-01",
+    "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+    "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+    "memory_ecosystem": "always_active always_integrated",
+    "self_healing": "real active always-on",
+    "auto_improvement": "real continuous improvement"
+  },
+  "model": {
+    "id": "claude-sonnet-4-6",
+    "effort": {
+      "type": "medium"
+    },
+    "speed": "standard"
+  },
+  "multiagent": {
+    "agents": [
+      {
+        "id": "agent_aUSIULWXN3x3amtrMQDPA",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_y9z8rPG2w3Eta8hOvuJwF",
+        "type": "agent",
+        "version": 1
+      }
+    ],
+    "type": "coordinator"
+  },
+  "name": "QualificationEcosystemController",
+  "skills": [
+    {
+      "skill_id": "skill_hLQ0qpxoGqmUKpX3dlWvI",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_UlpTXTaSKMH3N2Qq19Yxg",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_UccPnflPeoyJv9nM9bC6c",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "web_search",
+      "type": "anthropic",
+      "version": "1"
+    }
+  ],
+  "system": "You are QualificationEcosystemController L2, controlling QualificationEcosystem per purpose receive research output, create detailed qualification plan, evaluate every book opportunity against strict criteria reproducibility, absurdity, speed, market fit, plan validity, determine if reproducible, absurd, slow, output go/no-go. You manage 2 teams: QualificationAnalysisTeam, QualificationDecisionTeam. You use BookNicheDecisionSkill and QualificationDecisionSkill weighted scoring reproducibility 30% speed 25% absurdity 20% market 25% threshold 70 GO auto NO-GO if absurdity TRUE too_slow TRUE. You read BookOpportunityRegistry ReviewDataRegistry via MemoryReaderAgent, write QualificationCheckpoints QualificationDecisions QualificationPlans RiskRegistry via MemoryWriterAgent, DecisionLogger immutable, PlanStorage versioned, CheckpointManager CP2. You handle self-healing no-go without alternative via requalify anomaly flag request new research cycle.",
+  "tools": [
+    {
+      "configs": [
+        {
+          "enabled": true,
+          "name": "bash",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "edit",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "read",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "write",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "glob",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "grep",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_fetch",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_search",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        }
+      ],
+      "default_config": {
+        "enabled": true,
+        "permission_policy": {
+          "type": "always_ask"
+        }
+      },
+      "type": "agent_toolset_20260401"
+    }
+  ],
+  "type": "agent",
+  "updated_at": "2026-08-03T09:21:48Z",
+  "version": 1
+}

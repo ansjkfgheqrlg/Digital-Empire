@@ -1,0 +1,172 @@
+{
+  "id": "agent_w5l8UdqbY13zZaT5tVeZz",
+  "archived_at": null,
+  "created_at": "2026-08-03T09:21:48Z",
+  "description": "L2 Ecosystem Controller Research - controls ResearchEcosystem 5 teams keyword search Amazon + review sites, manages AmazonResearchLeader ReviewResearchLeader DataPersistenceLeader KeywordExpansionLeader SearchOptimizationLeader, reports to Supreme, official managed agent",
+  "mcp_servers": [],
+  "metadata": {
+    "hierarchy_level": "2",
+    "team": "EcosystemControlTeam",
+    "ecosystem": "ResearchEcosystem",
+    "official_claude_code": "true",
+    "managed_agents_api_version": "2026-04-01",
+    "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+    "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+    "memory_ecosystem": "always_active always_integrated",
+    "self_healing": "real active always-on",
+    "auto_improvement": "real continuous improvement"
+  },
+  "model": {
+    "id": "claude-sonnet-4-6",
+    "effort": {
+      "type": "medium"
+    },
+    "speed": "standard"
+  },
+  "multiagent": {
+    "agents": [
+      {
+        "id": "agent_pZPL4OaTCs8HLyjkGgxB4",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_91xCH5tO51eNZck6z7hIu",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_n4Docc8Tuyr7fk7yuwAoS",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_tIqV8kPHtDfuAE4uWK86k",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_NV3EVERhJJ569z5jOhWnJ",
+        "type": "agent",
+        "version": 1
+      }
+    ],
+    "type": "coordinator"
+  },
+  "name": "ResearchEcosystemController",
+  "skills": [
+    {
+      "skill_id": "skill_UlpTXTaSKMH3N2Qq19Yxg",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_btTXIflZazX63lJ6ZXJNY",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_Rab24y1pOxxwqC2Z0KGZv",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_zznBvo9WNOzJJhk32bzBH",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_sUvRpZgVxYuGKPX5sau6b",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "web_search",
+      "type": "anthropic",
+      "version": "1"
+    }
+  ],
+  "system": "You are ResearchEcosystemController L2, controlling ResearchEcosystem per purpose find books via keyword search on Amazon, find sites that analyze Amazon reviews, collect all relevant data, save everything via Playwright. You manage 5 teams: AmazonKeywordResearchTeam, ReviewAnalysisResearchTeam, DataPersistenceTeam, KeywordExpansionTeam, SearchOptimizationTeam. Sub-ecosystems: PlaywrightOperationsSubEcosystem, PersistenceSub, ExpansionSub, OptimizationSub. You use real operational Playwright tool: navigate_amazon_keyword_search url https://www.amazon.com/s?k={keyword}, navigate_review_site, extract_data selectors titles authors, save_results results sources URLs notes, screenshot, handle_error retry timeout++ user_agent rotate. Allowed uses only per PLAYWRIGHT_USAGE_POLICY. You read important_notes FeedbackRegistry LearningLog PatternRegistry via MemoryReaderAgent for keyword patterns success failure, write ResearchCheckpoints BookOpportunityRegistry ReviewDataRegistry via MemoryWriterAgent, create CP1 via CheckpointManagerAgent. You handle self-healing empty result Playwright failure via PlaywrightErrorHandlerAgent. You enforce BookNicheDecisionSkill ranking.",
+  "tools": [
+    {
+      "configs": [
+        {
+          "enabled": true,
+          "name": "bash",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "edit",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "read",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "write",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "glob",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "grep",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_fetch",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_search",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        }
+      ],
+      "default_config": {
+        "enabled": true,
+        "permission_policy": {
+          "type": "always_ask"
+        }
+      },
+      "type": "agent_toolset_20260401"
+    }
+  ],
+  "type": "agent",
+  "updated_at": "2026-08-03T09:21:48Z",
+  "version": 1
+}

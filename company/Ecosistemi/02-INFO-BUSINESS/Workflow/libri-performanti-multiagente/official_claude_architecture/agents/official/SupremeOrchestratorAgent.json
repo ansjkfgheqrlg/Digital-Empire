@@ -1,0 +1,167 @@
+{
+  "id": "agent_J8Hs30KTKMmXCGXE56doM",
+  "archived_at": null,
+  "created_at": "2026-08-03T09:21:48Z",
+  "description": "L1 Supreme Orchestrator - unico top-level vede tutto decide macro override qualsiasi decisione gestisce stato globale inizia cicli valida gerarchie 7 livelli - perfetta sincronia armonia con L2 controllers - official Claude Code managed agent",
+  "mcp_servers": [],
+  "metadata": {
+    "hierarchy_level": "1",
+    "team": "SupremeOrchestratorTeam",
+    "ecosystem": "Global",
+    "official_claude_code": "true",
+    "managed_agents_api_version": "2026-04-01",
+    "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+    "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+    "memory_ecosystem": "always_active always_integrated",
+    "self_healing": "real active always-on",
+    "auto_improvement": "real continuous improvement"
+  },
+  "model": {
+    "id": "claude-opus-4-6",
+    "effort": {
+      "type": "high"
+    },
+    "speed": "standard"
+  },
+  "multiagent": {
+    "agents": [
+      {
+        "id": "agent_R6xussYq47lYOVnHxMNF2",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_ux0lR18eJedv9rJSPM0sH",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_BWKnhx4LKQudpOhB9UfH4",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_vQprELdzBonykJx3qsBhi",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_QAjmvN4GfJHkNXchoq69X",
+        "type": "agent",
+        "version": 1
+      }
+    ],
+    "type": "coordinator"
+  },
+  "name": "SupremeOrchestratorAgent",
+  "skills": [
+    {
+      "skill_id": "skill_UlpTXTaSKMH3N2Qq19Yxg",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_hLQ0qpxoGqmUKpX3dlWvI",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_513wWdt2Yv9DWlsuZb4NH",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_sUvRpZgVxYuGKPX5sau6b",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "web_search",
+      "type": "anthropic",
+      "version": "1"
+    }
+  ],
+  "system": "You are SupremeOrchestratorAgent L1, the single top-level agent controlling entire workflow per business goal quantity of performant books. You see everything, decide macro, can override any decision at any level, manage global state, initiate cycles, validate hierarchies 7 levels exactly. You receive reports from L2 ecosystem controllers, handle self-healing escalations severity critical, auto-improvement signals. You create CP0_INIT checkpoint via CheckpointManagerAgent L6, write hierarchies via HierarchyManagerAgent L6, read important_notes LearningLog FeedbackRegistry via MemoryReaderAgent L5. You enforce operational clarity, flow feasibility, selection quality, production sustainability, responsibility modularity, decision traceability, resilience via self-healing, continuous improvement via memory and feedback. You preserve video_structure REQUIRED verbatim as original requirement, do not remove reinterpret ignore, handle ambiguity via preserve_and_encapsulate create validation checkpoint. You use only allowed elements: platforms Amazon, research_methods keyword search on Amazon, external_sources sites that analyze Amazon reviews, automation_tools Playwright, system_components agent teams skills self-healing auto-improvement memory ecosystem, memory_contents checkpoints decisions plans hierarchies important notes.",
+  "tools": [
+    {
+      "configs": [
+        {
+          "enabled": true,
+          "name": "bash",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "edit",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "read",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "write",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "glob",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "grep",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_fetch",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_search",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        }
+      ],
+      "default_config": {
+        "enabled": true,
+        "permission_policy": {
+          "type": "always_ask"
+        }
+      },
+      "type": "agent_toolset_20260401"
+    }
+  ],
+  "type": "agent",
+  "updated_at": "2026-08-03T09:21:48Z",
+  "version": 1
+}

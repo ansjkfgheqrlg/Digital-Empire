@@ -1,0 +1,252 @@
+{
+  "total_agents": 95,
+  "level_counts": {
+    "1": 1,
+    "2": 8,
+    "3": 26,
+    "4": 35,
+    "5": 12,
+    "6": 6,
+    "7": 7
+  },
+  "total_teams": 26,
+  "teams_names": [
+    "AmazonKeywordResearchTeam",
+    "ReviewAnalysisResearchTeam",
+    "DataPersistenceTeam",
+    "KeywordExpansionTeam",
+    "SearchOptimizationTeam",
+    "QualificationAnalysisTeam",
+    "QualificationDecisionTeam",
+    "StructurePlanningTeam",
+    "ProductionReadinessTeam",
+    "ContentPlanningTeam",
+    "BookWritingTeam",
+    "ProductionQualityTeam",
+    "EditingTeam",
+    "GraphicDesignTeam",
+    "CoverDesignTeam",
+    "VisualPlaywrightOperationsTeam",
+    "VisualQualityTeam",
+    "MemoryManagementTeam",
+    "CheckpointSubEcosystem",
+    "DecisionLogSubEcosystem",
+    "DetectionTeam",
+    "DiagnosisTeam",
+    "RecoveryTeam",
+    "FeedbackCollectionTeam",
+    "ImprovementPlanningTeam",
+    "ImprovementExecutionTeam"
+  ],
+  "total_skills": 18,
+  "skills_names": [
+    "BookNicheDecisionSkill",
+    "QualificationDecisionSkill",
+    "SelfHealingSkill",
+    "VideoStructureDesignSkill",
+    "ChapterDesignSkill",
+    "SecondLevelPlanCoherenceSkill",
+    "ProductionReadinessSkill",
+    "BookWritingConsistencySkill",
+    "StyleEnforcementSkill",
+    "GraphicPromptEngineeringSkill",
+    "CoverConceptDesignSkill",
+    "PlaywrightNavigationSkill",
+    "PlaywrightDataExtractionSkill",
+    "PlaywrightSaveSkill",
+    "MemoryReadWriteSkill",
+    "CheckpointManagementSkill",
+    "AnomalyDetectionSkill",
+    "RecoveryExecutionSkill"
+  ],
+  "total_memories": 38,
+  "total_flows": 5,
+  "flows_names": [
+    "MAIN_PRODUCTION_FLOW",
+    "SELF_HEALING_FLOW",
+    "AUTO_IMPROVEMENT_FLOW",
+    "MEMORY_MAINTENANCE_FLOW",
+    "PLAYWRIGHT_OPERATIONS_FLOW"
+  ],
+  "total_ecosystems": 9,
+  "ecosystems_names": [
+    "ResearchEcosystem",
+    "QualificationEcosystem",
+    "PlanningEcosystem",
+    "ProductionEcosystem",
+    "VisualEcosystem",
+    "MemoryEcosystem",
+    "SelfHealingEcosystem",
+    "AutoImprovementEcosystem",
+    "PlaywrightOperationsSubEcosystem"
+  ],
+  "agents_per_ecosystem_detail": {
+    "ResearchEcosystem": {
+      "agents": 37,
+      "teams": 5,
+      "sub_ecos": 4,
+      "memories": 10
+    },
+    "QualificationEcosystem": {
+      "agents": 15,
+      "teams": 2,
+      "sub_ecos": 2,
+      "memories": 9
+    },
+    "PlanningEcosystem": {
+      "agents": 18,
+      "teams": 3,
+      "sub_ecos": 3,
+      "memories": 8
+    },
+    "ProductionEcosystem": {
+      "agents": 20,
+      "teams": 3,
+      "sub_ecos": 3,
+      "memories": 8
+    },
+    "VisualEcosystem": {
+      "agents": 26,
+      "teams": 4,
+      "sub_ecos": 4,
+      "memories": 6
+    },
+    "MemoryEcosystem": {
+      "agents": 24,
+      "teams": 3,
+      "sub_ecos": 5,
+      "memories": 38
+    },
+    "SelfHealingEcosystem": {
+      "agents": 20,
+      "teams": 3,
+      "sub_ecos": 3,
+      "memories": 7
+    },
+    "AutoImprovementEcosystem": {
+      "agents": 19,
+      "teams": 3,
+      "sub_ecos": 3,
+      "memories": 9
+    },
+    "PlaywrightOperationsSubEcosystem": {
+      "agents": 12,
+      "teams": 0,
+      "sub_ecos": 3,
+      "memories": 7
+    }
+  },
+  "hierarchy_levels": 7,
+  "hierarchy_validation": "exactly 7 levels L1 Supreme, L2 8 Controllers, L3 26 Leaders, L4 35 Senior, L5 12 Operational sample + micro, L6 6 Support sample + micro, L7 7 Micro sample - espandibile a 170+",
+  "playwright_real": {
+    "allowed_uses": [
+      "navigation and data collection from Amazon - keyword search on Amazon via AmazonSearchAgent L5",
+      "navigation and data collection from review analysis sites - sites that analyze or calculate Amazon reviews via ReviewSiteFinderAgent L5",
+      "saving results, sources, URLs, notes and useful material - via PlaywrightSaveAgent L5 DataFormatterAgent all research data",
+      "supporting visual team activities where required by the workflow - via VisualPlaywrightNavigatorAgent L7 VisualPlaywrightSaveAgent L6 visual_save for graphics cover"
+    ],
+    "methods": [
+      "navigate_amazon_keyword_search",
+      "navigate_review_site",
+      "extract_data",
+      "save_results",
+      "visual_save",
+      "screenshot",
+      "handle_error",
+      "rotate_user_agent"
+    ]
+  },
+  "critical_control_points": [
+    "CP-VIDEO-01 video_structure REQUIRED preserved verbatim",
+    "CP-PERF-01",
+    "CP-SPEED-ABSURD-01",
+    "CP-SITES-01",
+    "CP-VISUAL-01"
+  ],
+  "memory_ecosystem_active": {
+    "controller": "MemoryEcosystemController L2",
+    "sub_ecosystems_5": [
+      "CoreMemorySubEcosystem",
+      "CheckpointSubEcosystem",
+      "DecisionLogSubEcosystem",
+      "PlanStorageSubEcosystem",
+      "ImportantNotesSubEcosystem"
+    ],
+    "agents": 24,
+    "teams": [
+      "MemoryManagementTeam",
+      "CheckpointSubEcosystem",
+      "DecisionLogSubEcosystem"
+    ],
+    "memories": 38,
+    "description": "small but super efficient memory ecosystem always active always integrated always accessible active system with own agents managing validating serving memory to all other ecosystems - NOT passive storage"
+  },
+  "self_healing_ecosystem_real": {
+    "controller": "SelfHealingEcosystemController L2",
+    "sub_ecos_3": [
+      "DetectionSub",
+      "DiagnosisSub",
+      "RecoverySub"
+    ],
+    "agents": 20,
+    "teams": [
+      "DetectionTeam",
+      "DiagnosisTeam",
+      "RecoveryTeam"
+    ],
+    "flows": [
+      "SELF_HEALING_FLOW"
+    ],
+    "triggers_8": [
+      "missing output",
+      "incoherent output",
+      "blocked process",
+      "failed validation",
+      "empty result from research",
+      "no-go without alternative",
+      "memory write failure",
+      "Playwright failure"
+    ],
+    "actions_5": [
+      "retry",
+      "rollback",
+      "escalate",
+      "skip_and_log",
+      "requalify"
+    ]
+  },
+  "auto_improvement_ecosystem_real": {
+    "controller": "AutoImprovementEcosystemController L2",
+    "sub_ecos_3": [
+      "FeedbackSub",
+      "PlanningSub",
+      "ExecutionSub"
+    ],
+    "agents": 19,
+    "teams": [
+      "FeedbackCollectionTeam",
+      "ImprovementPlanningTeam",
+      "ImprovementExecutionTeam"
+    ],
+    "flows": [
+      "AUTO_IMPROVEMENT_FLOW"
+    ],
+    "feedback_6": [
+      "qualification outcomes",
+      "production speed metrics",
+      "book performance signals",
+      "self-healing activation frequency",
+      "plan validity scores",
+      "memory retrieval patterns"
+    ],
+    "targets_5": [
+      "future research quality",
+      "future qualification decisions",
+      "future plan accuracy",
+      "production flow speed",
+      "risk detection sensitivity"
+    ]
+  },
+  "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+  "handoff_protocol": "8-step: Source crea package structured output decisions risks checkpoint ref -> Memory logs via MemoryWriterAgent -> Source leader conferma ready scrive checkpoint -> Target leader conferma receipt legge memory via MemoryReaderAgent -> Target valida completeness via Validator -> If fails SelfHealing -> If passes target begins work -> Memory logs completion"
+}

@@ -1,0 +1,128 @@
+{
+  "id": "agent_xfgXh6zU1fm2GWVBmquVf",
+  "archived_at": null,
+  "created_at": "2026-08-03T09:21:48Z",
+  "description": "L4 Senior CRITICAL REQUIRED designs video_structure preserved verbatim original requirement do not remove reinterpret - CONTROL POINT CP-VIDEO-01 official",
+  "mcp_servers": [],
+  "metadata": {
+    "hierarchy_level": "4",
+    "team": "StructurePlanningTeam",
+    "ecosystem": "PlanningEcosystem",
+    "official_claude_code": "true",
+    "managed_agents_api_version": "2026-04-01",
+    "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+    "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+    "memory_ecosystem": "always_active always_integrated",
+    "self_healing": "real active always-on",
+    "auto_improvement": "real continuous improvement"
+  },
+  "model": {
+    "id": "claude-opus-4-5",
+    "effort": {
+      "type": "high"
+    },
+    "speed": "standard"
+  },
+  "multiagent": null,
+  "name": "VideoStructureArchitectAgent",
+  "skills": [
+    {
+      "skill_id": "skill_513wWdt2Yv9DWlsuZb4NH",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_UccPnflPeoyJv9nM9bC6c",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "web_search",
+      "type": "anthropic",
+      "version": "1"
+    }
+  ],
+  "system": "You are VideoStructureArchitectAgent L4 Senior CRITICAL REQUIRED per original requirement - you design video_structure REQUIRED as per original requirements preserved verbatim explicit control point CP-VIDEO-01 handle_ambiguity preserve_and_encapsulate create validation checkpoint forbidden fill_with_assumptions output explicit_control_point_in_workflow. You must not remove reinterpret ignore video_structure field. Original requirement: 'struttura del video' must be maintained exactly as provided without rewriting or reinterpreting. You create explicit control point in workflow as second level plan field. You use VideoStructureDesignSkill. You read QualificationDecisions RiskRegistry via MemoryReaderAgent. You write SecondLevelPlans VideoStructureControlPoints via MemoryWriterAgent PlanStorageAgent versioned CheckpointManager CP3. If video_structure missing -> critical failure self-healing rollback CP2 retry forced read original requirement escalate if persists after 3 retries. Decision authority tactical but critical threshold video_structure must exist non-empty non-reinterpreted. Traceability to original requirement mandatory. You enforce operational clarity concrete precise professional detailed coherent.",
+  "tools": [
+    {
+      "configs": [
+        {
+          "enabled": true,
+          "name": "bash",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "edit",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "read",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "write",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "glob",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "grep",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_fetch",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_search",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        }
+      ],
+      "default_config": {
+        "enabled": true,
+        "permission_policy": {
+          "type": "always_ask"
+        }
+      },
+      "type": "agent_toolset_20260401"
+    }
+  ],
+  "type": "agent",
+  "updated_at": "2026-08-03T09:21:48Z",
+  "version": 1
+}

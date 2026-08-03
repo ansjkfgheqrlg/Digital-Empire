@@ -1,0 +1,71 @@
+{
+  "total_agents": 104,
+  "total_teams": 19,
+  "total_skills": 3,
+  "total_memories": 31,
+  "total_flows": 4,
+  "total_ecosystems": 9,
+  "hierarchy_levels": 7,
+  "level_counts": {
+    "1": 1,
+    "2": 8,
+    "3": 19,
+    "4": 24,
+    "5": 20,
+    "6": 24,
+    "7": 8
+  },
+  "agents_per_ecosystem": {
+    "ResearchEcosystem": 19,
+    "QualificationEcosystem": 11,
+    "PlanningEcosystem": 10,
+    "ProductionEcosystem": 10,
+    "VisualEcosystem": 15,
+    "MemoryEcosystem": 10,
+    "SelfHealingEcosystem": 15,
+    "AutoImprovementEcosystem": 13,
+    "PlaywrightOperationsSubEcosystem": 4
+  },
+  "playwright_integration": {
+    "ResearchEcosystem": {
+      "agents_using": [
+        "AmazonSearchAgent",
+        "ReviewSiteFinderAgent",
+        "PlaywrightSaveAgent",
+        "PlaywrightNavigatorMicroAgent",
+        "PlaywrightDataCaptureMicroAgent",
+        "PlaywrightScreenshotMicroAgent"
+      ],
+      "allowed_actions": [
+        "navigate_amazon_keyword_search",
+        "navigate_review_site",
+        "extract_data",
+        "save_results",
+        "screenshot"
+      ],
+      "self_healing_agent": "PlaywrightErrorHandlerAgent",
+      "memory_category_written": "checkpoints"
+    },
+    "VisualEcosystem": {
+      "agents_using": [
+        "VisualPlaywrightNavigatorAgent",
+        "VisualPlaywrightSaveAgent",
+        "GraphicGeneratorAgent",
+        "CoverGeneratorAgent"
+      ],
+      "allowed_actions": [
+        "visual_save",
+        "save_results"
+      ],
+      "self_healing_agent": "PlaywrightErrorHandlerAgent",
+      "memory_category_written": "GeneratedGraphics"
+    }
+  },
+  "critical_control_points": [
+    "CP-VIDEO-01 video_structure REQUIRED preserved verbatim",
+    "CP-PERF-01 performanti defined as signals from Amazon + review sites",
+    "CP-SPEED-ABSURD-01 too slow and absurd qualitative with evidence",
+    "CP-SITES-01 review sites discovery via Playwright no predefined list",
+    "CP-VISUAL-01 graphics count from details no invented API"
+  ]
+}

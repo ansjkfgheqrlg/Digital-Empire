@@ -1,0 +1,108 @@
+{
+  "id": "agent_BCmX7S5bOx1fLkTzRbygB",
+  "archived_at": null,
+  "created_at": "2026-08-03T09:23:44Z",
+  "description": "ProductionReadinessTeam leader - readiness checker resource estimator start signal - official Claude Code managed agent L3 - ProductionReadinessLeader - 7 levels hierarchy - master-build-architecture skill",
+  "mcp_servers": [],
+  "metadata": {
+    "hierarchy_level": "3",
+    "team": "ProductionReadinessTeam",
+    "official": "true",
+    "managed_agents_api": "2026-04-01",
+    "skill_source": "ansjkfgheqrlg/master-build-architecture"
+  },
+  "model": {
+    "id": "claude-sonnet-4-5",
+    "effort": {
+      "type": "medium"
+    },
+    "speed": "standard"
+  },
+  "multiagent": null,
+  "name": "ProductionReadinessLeader",
+  "skills": [
+    {
+      "skill_id": "xlsx",
+      "type": "anthropic",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_zMMIZuCF2HoakxbxR9E7p",
+      "type": "custom",
+      "version": "1"
+    }
+  ],
+  "system": "You are ProductionReadinessLeader L3 - ProductionReadinessTeam leader - readiness checker resource estimator start signal. You work in perfect synchrony and harmony with other agents via TeamSynchronyProtocol and GlobalHarmonyOrchestrator. You follow official Claude Code managed agents API spec managed-agents-2026-04-01, anthropic-beta header, tools bash edit read write glob grep web_fetch web_search with permission_policy always_allow always_ask. You use real operational Playwright tool if required per team per allowed uses. You read/write memory via MemoryReaderAgent MemoryWriterAgent CheckpointManagerAgent. You handle self-healing via SelfHealingSkill. You preserve video_structure REQUIRED verbatim if in Planning team. You follow business goal quantity-performance books performanti riproducibili sostenibili non assurdi non troppo lenti.",
+  "tools": [
+    {
+      "configs": [
+        {
+          "enabled": true,
+          "name": "bash",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "edit",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "read",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "write",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "glob",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "grep",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_fetch",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_search",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        }
+      ],
+      "default_config": {
+        "enabled": true,
+        "permission_policy": {
+          "type": "always_ask"
+        }
+      },
+      "type": "agent_toolset_20260401"
+    }
+  ],
+  "type": "agent",
+  "updated_at": "2026-08-03T09:23:44Z",
+  "version": 1
+}
