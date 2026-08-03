@@ -18,7 +18,9 @@
       "Bash(timeout 200 python -u \"C:/Users/olhad/AppData/Local/Temp/claude/c--Users-olhad-Desktop-Digital-Empire-YOUTUBE-AUTOMATION-FACTORY/5e909b14-2e79-42a0-9a7e-a9466712b1ad/scratchpad/debug_yt.py\")",
       "Bash(python -c \"import ast;ast.parse\\(open\\('youtube_hunter_playwright.py',encoding='utf-8'\\).read\\(\\)\\);print\\('sintassi OK'\\)\")",
       "Bash(timeout 280 python -u youtube_hunter_playwright.py --handle @dosementale --max-video 60 --headless)",
-      "Bash(PYTHONIOENCODING=utf-8 python copy_study_dosementale.py)"
+      "Bash(PYTHONIOENCODING=utf-8 python copy_study_dosementale.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python regolatori.py --video-id mkaNzHTBw1M --mp4 \"../06-DASHBOARD-E-METRICHE/video-generati/dopo-70-anni-camminare-non-basta-v8.mp4\")",
+      "Bash(echo \"exit=$?\")"
     ]
   }
 }
