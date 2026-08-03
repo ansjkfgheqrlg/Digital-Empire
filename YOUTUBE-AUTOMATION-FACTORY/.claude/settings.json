@@ -7,7 +7,9 @@
       "Bash(sed -n '/payload = {/,/^    }$/p' fliki_client.py)",
       "Bash(python -u fliki_client.py --file-name \"dopo-70-anni-camminare-non-basta-v9\")",
       "Bash(start \"\" \"dopo-70-anni-camminare-non-basta-v8.mp4\")",
-      "Bash(awk '{print $5, $9}')"
+      "Bash(awk '{print $5, $9}')",
+      "Bash(PYTHONIOENCODING=utf-8 python -c ' *)",
+      "Bash(python -u fliki_client.py --file-name \"dopo-70-anni-VISUALS-AI\" --visuals ai --art-style realistic)"
     ]
   }
 }

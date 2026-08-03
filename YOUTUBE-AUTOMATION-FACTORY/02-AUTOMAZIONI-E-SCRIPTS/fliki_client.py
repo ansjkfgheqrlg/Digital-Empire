@@ -166,7 +166,8 @@ def build_script_content() -> str:
     return "\n\n".join(all_chunks)
 
 
-def generate_video(key: str, content: str, voice_id: str, file_name: str) -> str:
+def generate_video(key: str, content: str, voice_id: str, file_name: str,
+                   visuals: str = "stock", art_style: str | None = None) -> str:
     payload = {
         "payload": [{
             "workflowType": "script",
@@ -175,7 +176,13 @@ def generate_video(key: str, content: str, voice_id: str, file_name: str) -> str
             "voiceId": voice_id,
             "aspectRatio": "16:9",
             "resolution": "1080p",
-            "visuals": "stock",
+            # "stock" e' il DEFAULT APPROVATO (video v8). Con --visuals ai le immagini vengono
+            # generate dal testo della scena invece di essere pescate da un archivio: le clip
+            # stock che Fliki sceglie da sole a volte sono fuori target anagrafico (in una
+            # scena del v8 compare una ragazza giovane mentre il testo parla a over-70).
+            # L'API non offre alcun controllo per-scena sullo stock (verificato sulla
+            # documentazione ufficiale): o si accetta la sua scelta, o si generano le immagini.
+            "visuals": visuals,
             "sceneBreakdown": "lineBreak",
             "fileName": file_name,
             "shouldExport": True,
@@ -201,6 +208,8 @@ def generate_video(key: str, content: str, voice_id: str, file_name: str) -> str
             "duration": 720,
         }]
     }
+    if visuals == "ai" and art_style:
+        payload["payload"][0]["artStyle"] = art_style
     res = _request("POST", "/generate/video", key, payload)
     files_created = (res.get("data") or {}).get("filesCreated") or []
     if not files_created:
@@ -238,7 +247,14 @@ def download_file(url: str, out_path: str):
 
 def main():
     ap = argparse.ArgumentParser(description="Genera il video reale via API Fliki dalla spec F3/F4.")
-    ap.add_argument("--file-name", default="claude-code-installazione")
+    ap.add_argument("--file-name", default="dosementale-video")
+    # Default "stock" = configurazione approvata da Gael (video v8): lanciando senza flag il
+    # risultato e' identico al v8. "ai" e' la variante da valutare per le clip fuori target.
+    ap.add_argument("--visuals", choices=["stock", "ai"], default="stock")
+    ap.add_argument("--art-style", default="realistic",
+                    help="Solo con --visuals ai. Valori reali: cinematic, realistic, illustration, "
+                         "anime, comic book, 3d model, fantasy art, watercolor, line art, clay, "
+                         "whimsical, biblical, film noir, tiny world, technical illustration.")
     args = ap.parse_args()
 
     key = _api_key()
@@ -246,7 +262,9 @@ def main():
 
     content = build_script_content()
     voice_id = find_italian_voice(key)
-    file_id = generate_video(key, content, voice_id, args.file_name)
+    print(f"[+] Visuals: {args.visuals}" + (f" (artStyle={args.art_style})" if args.visuals == "ai" else " (default approvato)"))
+    file_id = generate_video(key, content, voice_id, args.file_name,
+                            visuals=args.visuals, art_style=args.art_style)
     download_url = poll_status(key, file_id)
 
     out_path = os.path.join(VIDEOS_DIR, f"{args.file_name}.mp4")
