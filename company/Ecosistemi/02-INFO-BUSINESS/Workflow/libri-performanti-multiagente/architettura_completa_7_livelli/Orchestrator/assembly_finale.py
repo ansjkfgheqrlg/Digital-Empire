@@ -1,5 +1,7 @@
-import sys; sys.path.insert(0, '/home/user/architettura_completa_7_livelli')
-import pathlib, importlib.util
+import sys, pathlib, importlib.util
+
+base = pathlib.Path(__file__).resolve().parents[1]  # architettura_completa_7_livelli/
+sys.path.insert(0, str(base))
 
 def load_mod(name, path):
     spec = importlib.util.spec_from_file_location(name, path)
@@ -7,8 +9,6 @@ def load_mod(name, path):
     sys.modules[name] = mod
     spec.loader.exec_module(mod)
     return mod
-
-base = pathlib.Path("/home/user/architettura_completa_7_livelli")
 
 # Load fixed levels
 L1 = load_mod("supreme", base / "L1" / "supreme.py")
