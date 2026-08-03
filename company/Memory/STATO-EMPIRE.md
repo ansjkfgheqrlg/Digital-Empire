@@ -1,5 +1,40 @@
-# STATO EMPIRE -- aggiornato 2026-07-31 (Gael: motore YouTube riscritto su @dosementale, decisione CP-20260731-001 CHIUSA — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002)
+# STATO EMPIRE -- aggiornato 2026-08-03 (Gael: STREAM-S7-BOT ricognizione — requirements.txt non installabile corretto, STATO-RIPRESA riallineato, decisione go/no-go aperta — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002)
 ---
+
+## 🔵 2026-08-03 — GAEL: STREAM-S7-BOT — 2 difetti corretti, la decisione go/no-go resta aperta — CP-20260803-001
+
+Gael ha chiesto la situazione dell'ecosistema `12-STREAM-S7-BOT`. Esito della ricognizione:
+**non manca codice, manca una decisione.** `python test_apex7.py` → gate finale **L6→L7 PASSED
+7/7, score 1.0**. Ma il verdetto commerciale è negativo **due volte**, da analisi indipendenti:
+`report-studio.md` (motore memecoin: expectancy NEGATIVA, >85% di perdere il capitale nel primo
+mese) e [CP-20260730-007](checkpoints/CP-20260730-007.md) (layer NFT, 89/89 controlli reali:
+INVARIATO, bocciato per live).
+
+**⚠️ DECISIONE APERTA su Gael e Max:** S7 resta laboratorio di paper trading (ed è finito), o si
+investe sull'infrastruttura? Finché non è presa, costruire altro lì è lavoro a vuoto. I 4
+prerequisiti reali per LIVE sono ora scritti in cima a `12-STREAM-S7-BOT/STATO-RIPRESA.md`:
+RPC a pagamento (B-010), latenza 2456-3624ms contro 300-800ms dei MEV (**non si compra**: serve
+Jito + bare-metal + Rust), nessun feed prezzo live (TP/SL girano su valore stimato), modalità
+LIVE **mai implementata** (`execution_engine.py` rifiuta il ramo `!= SIMULATION`).
+
+**Due difetti concreti trovati e corretti** (nessun file frozen toccato):
+1. **`requirements.txt` rompeva l'installazione su macchina pulita.** `solana==0.33.0` e
+   `solders==0.21.0` erano attivi ma **non importati da nessuna riga di codice**, e `solana`
+   richiede `websockets<12.0` mentre il file fissa `websockets==12.0`. Provato, non dedotto:
+   dry-run del file vecchio → `ResolutionImpossible`; del nuovo → risolve pulito. **Commentate,
+   non cancellate**: serviranno per la firma on-chain quando LIVE verrà scritta, e il file ora
+   spiega il conflitto da risolvere in quel momento. (Il conflitto era già stato *osservato* in
+   CP-20260728-006 e dichiarato non bloccante — corretto allora, ma il file è rimasto rotto.)
+2. **`STATO-RIPRESA.md` mandava a rifare lavoro già fatto**: indicava come prossimo passo il loop
+   L2→L3, chiuso dal 2026-07-28 (baseline L3→L4 PASSED in CP-20260728-006). Riscritto con in cima
+   la decisione, i prerequisiti, TASK-YT-006 (non migrato con motivazione) e il fatto che
+   `/content-forge` **non è disponibile** in questo ambiente — il "task parallelo di Max" era
+   scritto come se lo fosse. Storico L2→L3 conservato in fondo (vincolo additivo).
+
+**Git**: locale e `origin/main` erano già allineati; l'unica modifica pendente del monorepo
+(voce allowlist in `YOUTUBE-AUTOMATION-FACTORY/.claude/settings.json`) committata e pushata.
+
+**RIPRESA DA:** niente di tecnico. Serve la chiamata go/no-go su S7.
 
 ## ✅ 2026-07-31 — GAEL: motore YouTube F1-F5 riscritto su @dosementale + video approvato — CP-20260731-003
 

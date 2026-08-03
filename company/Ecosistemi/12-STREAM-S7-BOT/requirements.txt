@@ -1,6 +1,17 @@
-solana==0.33.0
-solders==0.21.0
-websockets==12.0
+# Dipendenze REALMENTE importate dal codice
+websockets==12.0        # data_manager.py (logsSubscribe su WSS Solana)
 pandas==2.2.0
 numpy==1.26.4
 python-dotenv==1.0.1
+
+# --- Firma transazioni on-chain: servira' SOLO quando si implementa TRADE_MODE=LIVE ---
+# Oggi nessun modulo importa `solana` o `solders`: la modalita' LIVE non esiste
+# (execution_engine.py rifiuta esplicitamente il ramo != SIMULATION), e il bot legge
+# la catena via WSS/JSON-RPC con `websockets` + urllib, senza SDK.
+#
+# ATTENZIONE al conflitto prima di riattivarle: solana==0.33.0 richiede websockets<12.0,
+# mentre data_manager.py gira su websockets==12.0. Vanno risolte insieme, non riaggiunte
+# a mano. Lasciate attive rompevano `pip install -r requirements.txt` su macchina pulita.
+#
+# solana==0.33.0
+# solders==0.21.0
