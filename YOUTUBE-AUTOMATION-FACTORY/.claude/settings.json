@@ -43,7 +43,10 @@
       "Bash(python -c \"import typer,pytest,ruff\")",
       "Bash(python -m pip install -e \".[dev]\")",
       "Bash(python -c \"import typer,pytest;print\\('typer/pytest OK'\\)\")",
-      "Bash(PYTHONIOENCODING=utf-8 python -m pytest)"
+      "Bash(PYTHONIOENCODING=utf-8 python -m pytest)",
+      "Bash(PYTHONIOENCODING=utf-8 python -m pytest tests/test_automation_config.py::test_settings_ignora_selettori_non_json)",
+      "Bash(python -m ruff check .)",
+      "Bash(python -m ruff check --fix .)"
     ]
   }
 }

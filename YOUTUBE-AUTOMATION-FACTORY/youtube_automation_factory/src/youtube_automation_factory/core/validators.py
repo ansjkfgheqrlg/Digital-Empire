@@ -88,11 +88,11 @@ def validate_ready_for_completion(run: WorkflowRun) -> list[str]:
 
     if run.script is None or not run.script.approved:
         motivi.append("Lo script non risulta approvato.")
-    if run.copy is None:
+    if run.copy_asset is None:
         motivi.append("Copy assente.")
     else:
-        motivi.extend(validate_copy(run.copy))
-        if not run.copy.approved:
+        motivi.extend(validate_copy(run.copy_asset))
+        if not run.copy_asset.approved:
             motivi.append("Il copy non risulta approvato.")
     if run.thumbnail is None:
         motivi.append("Copertina assente.")

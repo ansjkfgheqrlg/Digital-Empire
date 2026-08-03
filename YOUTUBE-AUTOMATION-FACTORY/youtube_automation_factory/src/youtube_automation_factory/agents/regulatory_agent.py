@@ -53,8 +53,8 @@ class RegulatoryAgent(BaseAgent):
 
         if run.script is not None:
             motivi.extend(validate_script(run.script))
-        if run.copy is not None:
-            motivi.extend(validate_copy(run.copy))
+        if run.copy_asset is not None:
+            motivi.extend(validate_copy(run.copy_asset))
         if run.thumbnail is not None:
             motivi.extend(validate_thumbnail(run.thumbnail))
 
@@ -67,7 +67,7 @@ class RegulatoryAgent(BaseAgent):
     def check_originality_of_all(self, run: WorkflowRun) -> list[str]:
         """Ricontrolla gli asset creativi presenti e riporta quelli non conformi."""
         problemi: list[str] = []
-        for asset in (run.script, run.copy, run.thumbnail):
+        for asset in (run.script, run.copy_asset, run.thumbnail):
             if asset is None:
                 continue
             result = self.originality.check(asset)

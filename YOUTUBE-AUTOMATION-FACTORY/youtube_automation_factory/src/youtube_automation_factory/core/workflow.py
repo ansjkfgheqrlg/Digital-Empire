@@ -192,15 +192,15 @@ class YouTubeFactoryWorkflow:
                 )
 
         elif target is WorkflowState.COPY_APPROVED:
-            if run.copy is None:
+            if run.copy_asset is None:
                 raise InvalidTransitionError(run.state, target, "nessun copy presente")
             from .enums import CopyReviewStatus  # import locale: evita cicli
 
-            if run.copy.digital_empire_status is not CopyReviewStatus.APPROVED:
+            if run.copy_asset.digital_empire_status is not CopyReviewStatus.APPROVED:
                 raise RegulatoryBlockError(
                     [
                         "Il copy non e' stato approvato dal settore copy di Digital Empire "
-                        f"(stato: {run.copy.digital_empire_status})."
+                        f"(stato: {run.copy_asset.digital_empire_status})."
                     ]
                 )
 

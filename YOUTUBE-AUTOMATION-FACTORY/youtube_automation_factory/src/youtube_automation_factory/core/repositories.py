@@ -68,4 +68,5 @@ class JsonFileWorkflowRepository:
             return None
 
     def list_ids(self) -> list[str]:
-        return sorted(p.stem.removeprefix("workflow-") for p in self.directory.glob("workflow-*.json"))
+        file = self.directory.glob("workflow-*.json")
+        return sorted(p.stem.removeprefix("workflow-") for p in file)

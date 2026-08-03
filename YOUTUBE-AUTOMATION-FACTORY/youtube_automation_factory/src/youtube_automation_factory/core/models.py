@@ -335,7 +335,7 @@ class WorkflowRun(_Base):
     review: ReviewRequest | None = None
     approvals: list[Approval] = Field(default_factory=list)
     script: ScriptAsset | None = None
-    copy: CopyAsset | None = None
+    copy_asset: CopyAsset | None = None
     thumbnail: ThumbnailAsset | None = None
     production_job: ProductionJob | None = None
     events: list[WorkflowEvent] = Field(default_factory=list)

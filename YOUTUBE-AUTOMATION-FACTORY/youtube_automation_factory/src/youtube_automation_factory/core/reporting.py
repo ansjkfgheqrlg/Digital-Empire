@@ -30,9 +30,20 @@ _UNSAFE = re.compile(r"[^A-Za-z0-9._-]+")
 
 
 def safe_filename(*parts: str) -> str:
-    """Nome file sicuro: solo caratteri innocui, niente percorsi relativi."""
-    pulite = [_UNSAFE.sub("-", p.strip()).strip("-") for p in parts if p and p.strip()]
-    base = "_".join(x for x in pulite if x) or "report"
+    """Nome file sicuro: solo caratteri innocui, niente percorsi ne' risalite di directory.
+
+    I punti consecutivi vengono collassati: ``..`` in un nome di file non sarebbe una risalita
+    (i separatori sono gia' stati rimossi), ma resta una forma da evitare.
+    """
+    pulite = []
+    for parte in parts:
+        if not parte or not parte.strip():
+            continue
+        pulita = _UNSAFE.sub("-", parte.strip())
+        pulita = re.sub(r"\.{2,}", ".", pulita).strip("-.")
+        if pulita:
+            pulite.append(pulita)
+    base = "_".join(pulite) or "report"
     return base[:120]
 
 
@@ -118,7 +129,7 @@ class ReportingService:
                 responsabile="ResearchAgent (operativo)",
             )
             + "## Dati raccolti\n\n"
-            + f"| Campo | Valore |\n|---|---|\n"
+            + "| Campo | Valore |\n|---|---|\n"
             + f"| Titolo | {candidate.title} |\n"
             + f"| URL | {candidate.url} |\n"
             + f"| Canale | {candidate.channel} |\n"
@@ -215,8 +226,8 @@ class ReportingService:
                 responsabile=f"{copy.author} (operativo)",
             )
             + f"## Headline\n{copy.headline}\n\n## Testo\n{copy.body}\n\n"
-            + f"## Revisione Digital Empire\n\n"
-            + f"| Campo | Valore |\n|---|---|\n"
+            + "## Revisione Digital Empire\n\n"
+            + "| Campo | Valore |\n|---|---|\n"
             + f"| Stato | **{copy.digital_empire_status}** |\n"
             + f"| Revisore | {copy.digital_empire_reviewer or '—'} |\n"
             + f"| Motivazione | {copy.digital_empire_reason or '—'} |\n"
@@ -234,7 +245,7 @@ class ReportingService:
                 responsabile=f"{thumbnail.author} (operativo)",
             )
             + f"## Concept\n{thumbnail.concept}\n\n## Brief\n{thumbnail.brief}\n\n"
-            + f"| Campo | Valore |\n|---|---|\n"
+            + "| Campo | Valore |\n|---|---|\n"
             + f"| Generata | **{thumbnail.generated}** |\n"
             + f"| Backend | {thumbnail.generation_backend or '—'} |\n"
             + f"| File | {thumbnail.image_path or '—'} |\n"
@@ -302,10 +313,13 @@ class ReportingService:
             + (f": {e.reason}" if e.reason else "")
             for e in run.events
         ]
+        script_ok = bool(run.script and run.script.approved)
+        copy_ok = bool(run.copy_asset and run.copy_asset.approved)
+        thumb_ok = bool(run.thumbnail and run.thumbnail.approved)
         asset_righe = [
-            f"Script: {'approvato' if run.script and run.script.approved else 'non approvato'}",
-            f"Copy: {'approvato' if run.copy and run.copy.approved else 'non approvato'}",
-            f"Copertina: {'approvata' if run.thumbnail and run.thumbnail.approved else 'non approvata'}",
+            f"Script: {'approvato' if script_ok else 'non approvato'}",
+            f"Copy: {'approvato' if copy_ok else 'non approvato'}",
+            f"Copertina: {'approvata' if thumb_ok else 'non approvata'}",
             f"Produzione: {run.production_job.status if run.production_job else 'assente'}",
         ]
         corpo = (
