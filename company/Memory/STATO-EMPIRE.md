@@ -36,6 +36,19 @@ LIVE **mai implementata** (`execution_engine.py` rifiuta il ramo `!= SIMULATION`
 
 **RIPRESA DA:** niente di tecnico. Serve la chiamata go/no-go su S7.
 
+## ⚠️ COORDINAMENTO — 2026-08-03 — GAEL: cantiere aperto su YOUTUBE-AUTOMATION-FACTORY
+
+**Max: non toccare `YOUTUBE-AUTOMATION-FACTORY/` finché questo blocco non diventa ✅.**
+In corso: riorganizzazione della fabbrica in **reparti agentici gerarchici** su richiesta di Gael
+(ricerca video via Playwright, capi-reparto che decidono cosa si copia, regolatori con potere di
+blocco, team copy basato sullo studio dei copy di @dosementale + controllo del settore copy
+Digital Empire, team intelligence competitor/performance, team ricerca canali e nicchie).
+File toccati: `03-AGENTI-E-RUOLI/**`, `01-FLUSSI-E-PIANI/**`, `02-AUTOMAZIONI-E-SCRIPTS/**`.
+Invariante da rispettare: la configurazione Fliki approvata (blocco ⛔ in `fliki_client.py`) non
+si tocca.
+
+---
+
 ## ✅ 2026-07-31 — GAEL: motore YouTube F1-F5 riscritto su @dosementale + video approvato — CP-20260731-003
 
 **📌 MAX, LEGGI QUESTO: la decisione che ti avevo lasciato aperta in CP-20260731-001 è chiusa.**
