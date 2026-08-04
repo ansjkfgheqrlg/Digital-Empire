@@ -17,9 +17,10 @@ tocca operatività diretta (codice, build, run).
   - **Gael** — operativo, esegue task assegnati (ordini su di lui sono legge)
   - **Neri** — organizzativo/metodo, non tocca file operativi
 - Task concreti assegnati: **TASK-NERI-20260803-STREAM-S7-STRATEGIA** (primo incarico reale,
-  2026-08-03) — strato strategico dell'iniziativa Stream S7 (trading NFT/token): 3 ricerche,
-  3 report (incluso Go/No-Go), 2 architetture di metodo. Non tocca il codice/esecuzione
-  (resta di Gael) — coerente col ruolo dichiarato
+  2026-08-03, consolidato in un unico documento il 2026-08-04) — strato strategico
+  dell'iniziativa Stream S7 (trading NFT/token): piano strategico integrale da migliorare
+  (non solo leggere), 3 ricerche, 3 report (incluso Go/No-Go), 2 architetture di metodo. Non
+  tocca il codice/esecuzione (resta di Gael) — coerente col ruolo dichiarato
 
 ## 🎯 Come Impatta DE
 I blocchi ⚠️ COORDINAMENTO in `company/Memory/STATO-EMPIRE.md` (avviso pre-collisione su file di
