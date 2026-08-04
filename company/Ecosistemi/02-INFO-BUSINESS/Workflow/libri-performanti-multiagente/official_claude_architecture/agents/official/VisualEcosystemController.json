@@ -1,0 +1,162 @@
+{
+  "id": "agent_L5YtpsvQGyPL223XKKAYN",
+  "archived_at": null,
+  "created_at": "2026-08-03T09:21:48Z",
+  "description": "L2 Controller Visual - graphics graphic_prompts cover via Playwright support official",
+  "mcp_servers": [],
+  "metadata": {
+    "hierarchy_level": "2",
+    "team": "EcosystemControlTeam",
+    "ecosystem": "VisualEcosystem",
+    "official_claude_code": "true",
+    "managed_agents_api_version": "2026-04-01",
+    "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+    "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+    "memory_ecosystem": "always_active always_integrated",
+    "self_healing": "real active always-on",
+    "auto_improvement": "real continuous improvement"
+  },
+  "model": {
+    "id": "claude-sonnet-4-6",
+    "effort": {
+      "type": "medium"
+    },
+    "speed": "standard"
+  },
+  "multiagent": {
+    "agents": [
+      {
+        "id": "agent_rw05Ku7zcIOnkUrzdNyIc",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_RTkLLKNNaRuSobEJeOpvT",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_gQY7fPlbbaas21Puyszx1",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_NhRsG9Js3Imo5nxaxJqlX",
+        "type": "agent",
+        "version": 1
+      }
+    ],
+    "type": "coordinator"
+  },
+  "name": "VisualEcosystemController",
+  "skills": [
+    {
+      "skill_id": "skill_TzBsbRDQ9ZROYo8EjUJUS",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_P8EDWzODGqC5WXpAkL8GL",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_btTXIflZazX63lJ6ZXJNY",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_zznBvo9WNOzJJhk32bzBH",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_S0ccsI8BRLXtwJjiUKkxp",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "web_search",
+      "type": "anthropic",
+      "version": "1"
+    }
+  ],
+  "system": "You are VisualEcosystemController L2, controlling VisualEcosystem per purpose create all graphics, create all prompts for graphics generation, create book cover, use Playwright where needed real operational tool. You manage GraphicDesignTeam, CoverDesignTeam, VisualPlaywrightOperationsTeam, VisualQualityTeam. Sub-ecosystems GraphicSub, CoverSub, VisualPlaywrightSub, VisualQualitySub. Teams: GraphicDesignTeam PromptCreator -> Generator via VisualPlaywrightSaveAgent visual_save support -> QualityReviewer -> RevisionAgent loop, CoverDesignTeam Concept -> PromptCreator -> Generator -> QualityReviewer -> RevisionAgent loop critical cannot skip_and_log must escalate if cover missing, VisualPlaywrightOperationsTeam VisualPlaywrightNavigatorAgent VisualPlaywrightSaveAgent save via playwright_tool.visual_save supporting visual team allowed use #4, VisualQualityTeam VisualQualityAuditor FinalVisualApproval. You write GraphicPrompts GeneratedGraphics CoverVersions VisualProductionLog VisualQualityLog via MemoryWriterAgent, CheckpointManager CP5 CP_FINAL parent CP4. Self-healing Playwright failure save -> retry skip_and_log non-critical graphic escalate cover. Use only allowed Playwright uses.",
+  "tools": [
+    {
+      "configs": [
+        {
+          "enabled": true,
+          "name": "bash",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "edit",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "read",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "write",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "glob",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "grep",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_fetch",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_search",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        }
+      ],
+      "default_config": {
+        "enabled": true,
+        "permission_policy": {
+          "type": "always_ask"
+        }
+      },
+      "type": "agent_toolset_20260401"
+    }
+  ],
+  "type": "agent",
+  "updated_at": "2026-08-03T09:21:48Z",
+  "version": 1
+}

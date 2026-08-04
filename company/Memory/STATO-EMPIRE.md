@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-08-03 (Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-03 (Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
 
 ## ⚠️ ASSEGNAZIONE + COORDINAMENTO 2026-08-03 (Claude -> NERI) — TASK-NERI-20260803-STREAM-S7-STRATEGIA
 
@@ -16,6 +16,34 @@ arrivata da sola alla stessa diagnosi: "non manca codice, manca una decisione".
 Output: `PIANO-STRATEGICO-S7.md` (in `12-STREAM-S7-BOT/`) + task Neri con 3 ricerche, 3 report,
 2 architetture di metodo — dettagli [CP-20260803-007](checkpoints/CP-20260803-007.md).
 Raccomandazione finale (REP1 di Neri) va a Max, che decide se il task Gael riparte.
+
+---
+
+## ✅ 2026-08-03 — CLAUDE: Workflow "Libri Performanti" (multi-agente KDP) importato + modulo Aureus/EmpireDesk — CP-20260803-006
+
+Richiesta di Max: importare `workspace-019fc6f4-...zip` (blueprint 782 file, 104 agenti
+dichiarati su 7 livelli, per pubblicare libri Amazon KDP performanti/riproducibili) su
+GitHub e implementarlo sia nella cartella Digital Empire che nell'app **Aureus (Empire
+Desk)**. Verificato prima di importare: non esisteva nulla di simile nel repo.
+
+Salvato in `company/Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente/`
+(non promosso a ecosistema 14 — ADR-009 lo richiederebbe con ADR formale, Max ha scelto di
+non aprirlo ora). Aggiunto `EmpireDesk/modules/libri.py` (pattern `dash.py`): tile readonly
++ route manifest + pannello. **Selftest EmpireDesk 21/21 verde**, modulo `libri` caricato
+senza conflitti.
+
+**⚠️ Limite dichiarato**: `main.py`/`orchestrator_assembly.py` consegnati nello zip
+referenziano `agents/all_agents.py` e `agents/senior_and_operational.py`, file assenti nella
+consegna — **non eseguibili as-is** (verificato con test di import, non assunto). Il modulo
+Aureus lo segnala esplicitamente (selftest + manifest), non lo nasconde. Playwright nel
+blueprint è confermato simulato (nessuna chiamata di rete reale).
+
+**RIPRESA DA:** se si vuole rendere l'architettura davvero eseguibile, serve riscrivere gli
+import dei due entrypoint per usare i file reali (`*_aggregated.py` + ~200 file singoli
+sotto `teams/`) — non tentato: avrebbe richiesto indovinare struttura interna senza verifica
+reale sui numeri dichiarati. Dettaglio completo in [CP-20260803-006](checkpoints/CP-20260803-006.md).
+
+---
 
 ## ✅ 2026-08-03 — CLAUDE: FASE 1 CHIUSA — filtro SOLO-import reale (nome/note), non più query-bias vacuo — CP-20260803-005
 Max (via `AskUserQuestion`) ha scelto: keyword su nome_attivita/note_qualifica, accettando il

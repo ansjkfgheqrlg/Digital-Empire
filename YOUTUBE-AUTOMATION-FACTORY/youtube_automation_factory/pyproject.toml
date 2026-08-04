@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "youtube-automation-factory"
+version = "0.1.0"
+description = "Fabbrica multi-agentica per la produzione di contenuti YouTube originali, con gerarchia decisionale e controlli regolatori applicati dal codice."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary" }
+dependencies = [
+    "pydantic>=2.7",
+    "pydantic-settings>=2.2",
+    "typer>=0.12",
+]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.44"]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+]
+
+[project.scripts]
+yaf = "youtube_automation_factory.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/youtube_automation_factory"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "ANN", "RUF"]
+ignore = [
+    "ANN401",  # Any consentito dove l'input e' volutamente opaco
+    "B008",    # typer usa i default nelle firme (Argument/Option)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["ANN201", "ANN001"]

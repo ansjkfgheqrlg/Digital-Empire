@@ -1,0 +1,23 @@
+# Segreti — mai versionati
+.env
+.env.*
+!.env.example
+
+# Artefatti generati dai run
+reports/*
+!reports/.gitkeep
+
+# Profili browser Playwright (contengono sessioni e cookie)
+browser-profiles/
+*-profile/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+.venv/
+venv/

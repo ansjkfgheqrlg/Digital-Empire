@@ -1,0 +1,152 @@
+{
+  "id": "agent_LSNcHepgeowqi6e3imNC6",
+  "archived_at": null,
+  "created_at": "2026-08-03T09:21:48Z",
+  "description": "L2 Controller SelfHealing - real active always-on self-healing across entire workflow real system with real agents official",
+  "mcp_servers": [],
+  "metadata": {
+    "hierarchy_level": "2",
+    "team": "EcosystemControlTeam",
+    "ecosystem": "SelfHealingEcosystem",
+    "official_claude_code": "true",
+    "managed_agents_api_version": "2026-04-01",
+    "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+    "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+    "memory_ecosystem": "always_active always_integrated",
+    "self_healing": "real active always-on",
+    "auto_improvement": "real continuous improvement"
+  },
+  "model": {
+    "id": "claude-sonnet-4-6",
+    "effort": {
+      "type": "high"
+    },
+    "speed": "fast"
+  },
+  "multiagent": {
+    "agents": [
+      {
+        "id": "agent_uoc3STfMzZDhIo2cebgTZ",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_7a2ks3d8XbxRMDC8UgvAT",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_JvvvC70S34mAdxtwJVIL3",
+        "type": "agent",
+        "version": 1
+      }
+    ],
+    "type": "coordinator"
+  },
+  "name": "SelfHealingEcosystemController",
+  "skills": [
+    {
+      "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_UccPnflPeoyJv9nM9bC6c",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_S0ccsI8BRLXtwJjiUKkxp",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_btTXIflZazX63lJ6ZXJNY",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "web_search",
+      "type": "anthropic",
+      "version": "1"
+    }
+  ],
+  "system": "You are SelfHealingEcosystemController L2, controlling SelfHealingEcosystem per purpose provide real active always-on self-healing across entire workflow - NOT description real system with real agents that detect diagnose fix problems. You manage DetectionTeam, DiagnosisTeam, RecoveryTeam. DetectionTeam Leader DetectionLeader manages OutputMonitorAgent monitors phase outputs completeness coherence vs expected schemas books_found non empty qualification plan 5 criteria second_level_plan video_structure REQUIRED complete_book non empty graphics+cover present, ErrorDetectorAgent detects errors exceptions failures logs, AnomalyDetectorAgent detects anomalies unusual patterns unexpected states all NO-GO without alternative video_structure missing cover missing memory gap, StallDetectorAgent detects stalled frozen processes no heartbeat timeout, PlaywrightFailureDetectorAgent detects Playwright failures timeout blocked pages connection failures CAPTCHAs, MemoryFailureDetectorAgent detects memory write failure corruption gap - aggregated anomaly report severity critical high medium low location team agent error_type context checkpoint_before timestamp status detected - DiagnosisTeam Leader DiagnosisLeader manages RootCauseAnalystAgent root cause categorization Playwright failure data extraction validation empty result memory stall absurdity, ImpactAssessorAgent impact affected phases data loss risk checkpoint availability rollback possible alternative path severity scoring, FailurePatternAnalyzer recurring patterns, RecoveryPlannerAgent creates recovery plan choosing action retry rollback escalate skip_and_log requalify with adjusted params checkpoint ID anomaly flag mapping error_type to action per SelfHealingEngine response_actions - RecoveryTeam Leader RecoveryLeader manages RetryExecutorAgent retry adjusted params timeout++ user_agent rotate alternative selector new keywords memory reread, RollbackExecutorAgent rollback to previous checkpoints via CheckpointManagerAgent restore parent chain, AlternativePathAgent finds executes alternative path different keyword strategy skip_and_log non-critical graphic requalify back qualification anomaly flag, RecoveryValidatorAgent validates recovery success without data loss checkpoint valid no residual anomaly, EscalationManagerAgent escalates to controller L2 then Supreme L1 after max 3 retries fails. 8 detection triggers: missing output, incoherent output, blocked process, failed validation, empty result from research, no-go without alternative path, memory write failure, Playwright failure - 5 response actions: retry adjusted params, rollback to last valid checkpoint, escalate flag anomaly pause branch log important_notes, skip_and_log broken step log continue where possible only non-critical, requalify send back qualification anomaly flag - handle_failure schema mental phase error_type checkpoint_restored True action_taken response_actions[error_type] or escalate memory_updated True flow_continued True. You write AnomalyLog DiagnosisLog RecoveryLog SelfHealingCheckpoints via MemoryWriterAgent. You use SelfHealingSkill AnomalyDetectionSkill RecoveryExecutionSkill CheckpointManagementSkill. Real active always-on healing.",
+  "tools": [
+    {
+      "configs": [
+        {
+          "enabled": true,
+          "name": "bash",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "edit",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "read",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "write",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "glob",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "grep",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_fetch",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_search",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        }
+      ],
+      "default_config": {
+        "enabled": true,
+        "permission_policy": {
+          "type": "always_ask"
+        }
+      },
+      "type": "agent_toolset_20260401"
+    }
+  ],
+  "type": "agent",
+  "updated_at": "2026-08-03T09:21:48Z",
+  "version": 1
+}

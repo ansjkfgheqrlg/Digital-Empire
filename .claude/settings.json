@@ -66,7 +66,14 @@
       "PowerShell(git -C $r push origin main)",
       "PowerShell(git -C $r rev-list --left-right --count origin/main...HEAD)",
       "PowerShell(git -C $r add .claude/settings.json)",
-      "PowerShell(git -C $r log --oneline -6 origin/main)"
+      "PowerShell(git -C $r log --oneline -6 origin/main)",
+      "Read(//c/Users/olhad/Desktop/**)",
+      "PowerShell(git -C $r fetch origin main)",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\" -Directory -Recurse -Depth 2 -ErrorAction SilentlyContinue | Where-Object { $_.Name -match '\\(?i\\)aureus|desk' } | Select-Object FullName)",
+      "Bash(mkdir -p \"/c/Users/olhad/Desktop/Digital Empire/company/Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente\")",
+      "PowerShell(git -C $r log --oneline -1 origin/main)",
+      "PowerShell(git -C $r show --stat --format=\"\" origin/main)",
+      "PowerShell(git -C $r merge --ff-only origin/main)"
     ],
     "ask": [
       "Bash(git push*)",
@@ -79,7 +86,8 @@
       "Bash(*--force*)"
     ],
     "additionalDirectories": [
-      "C:\\Users\\Utente\\.claude"
+      "C:\\Users\\Utente\\.claude",
+      "C:\\Users\\olhad\\Desktop\\Digital Empire\\company\\Ecosistemi\\02-INFO-BUSINESS\\Workflow"
     ]
   },
   "hooks": {

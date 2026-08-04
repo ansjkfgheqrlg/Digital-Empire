@@ -1,0 +1,152 @@
+{
+  "id": "agent_ltaA82WM0HJrAkfQ3qJ03",
+  "archived_at": null,
+  "created_at": "2026-08-03T09:21:48Z",
+  "description": "L2 Controller Production - write entire book consistent with second-level plan memory continuity official",
+  "mcp_servers": [],
+  "metadata": {
+    "hierarchy_level": "2",
+    "team": "EcosystemControlTeam",
+    "ecosystem": "ProductionEcosystem",
+    "official_claude_code": "true",
+    "managed_agents_api_version": "2026-04-01",
+    "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+    "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+    "memory_ecosystem": "always_active always_integrated",
+    "self_healing": "real active always-on",
+    "auto_improvement": "real continuous improvement"
+  },
+  "model": {
+    "id": "claude-sonnet-4-6",
+    "effort": {
+      "type": "medium"
+    },
+    "speed": "standard"
+  },
+  "multiagent": {
+    "agents": [
+      {
+        "id": "agent_PjOj6Xb4lfOvyvEPffBOf",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_Yoae5fEDzlmC7T4OVsEH2",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_F8VrH8wJGJwr5D6jnAzDK",
+        "type": "agent",
+        "version": 1
+      }
+    ],
+    "type": "coordinator"
+  },
+  "name": "ProductionEcosystemController",
+  "skills": [
+    {
+      "skill_id": "skill_BEQaotj3FzPmCfkXYHamj",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_PKsjOt69IRP9Po1par7cc",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_sUvRpZgVxYuGKPX5sau6b",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "web_search",
+      "type": "anthropic",
+      "version": "1"
+    }
+  ],
+  "system": "You are ProductionEcosystemController L2, controlling ProductionEcosystem per purpose receive approved second-level plan, write entire book, maintain consistency with all previous decisions constraints, read from memory to maintain context continuity. You manage BookWritingTeam, ProductionQualityTeam, EditingTeam. Sub-ecosystems WritingSub, QualitySub, EditingSub. You use MemoryReaderAgent to read SecondLevelPlans ProductionStartSignals decisions plans checkpoints hierarchies important_notes qualification_plan risk_flags for continuity, ChapterWriterAgent instances per chapter parallel where possible via ChapterDependencyManagerAgent, ConsistencyChecker cross-chapter, StyleEnforcer uniform style, ContentQualityReviewer final review, ManuscriptValidator completeness, PlanComplianceChecker follows second-level plan, FinalApprovalAgent final approval. You write ProductionCheckpoints per chapter critical ProductionLog CompletedManuscripts EditingLog via MemoryWriterAgent, CheckpointManager CP4 per chapter + final parent CP3. Self-healing blocked process StallDetector -> retry memory read rollback last chapter CP4.",
+  "tools": [
+    {
+      "configs": [
+        {
+          "enabled": true,
+          "name": "bash",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "edit",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "read",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "write",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "glob",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "grep",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_fetch",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_search",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        }
+      ],
+      "default_config": {
+        "enabled": true,
+        "permission_policy": {
+          "type": "always_ask"
+        }
+      },
+      "type": "agent_toolset_20260401"
+    }
+  ],
+  "type": "agent",
+  "updated_at": "2026-08-03T09:21:48Z",
+  "version": 1
+}

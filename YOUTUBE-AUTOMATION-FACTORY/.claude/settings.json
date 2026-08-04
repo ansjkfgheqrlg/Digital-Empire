@@ -21,7 +21,18 @@
       "Bash(PYTHONIOENCODING=utf-8 python copy_study_dosementale.py)",
       "Bash(PYTHONIOENCODING=utf-8 python regolatori.py --video-id mkaNzHTBw1M --mp4 \"../06-DASHBOARD-E-METRICHE/video-generati/dopo-70-anni-camminare-non-basta-v8.mp4\")",
       "Bash(echo \"exit=$?\")",
-      "Bash(python -u fliki_client.py --file-name \"dopo-70-anni-v10-DEFINITIVO\")"
+      "Bash(python -u fliki_client.py --file-name \"dopo-70-anni-v10-DEFINITIVO\")",
+      "Bash(PYTHONIOENCODING=utf-8 python regolatori.py --video-id mkaNzHTBw1M --mp4 \"../06-DASHBOARD-E-METRICHE/video-generati/dopo-70-anni-v10-DEFINITIVO.mp4\")",
+      "Bash(rm -f \"dopo-70-anni-camminare-non-basta-v7.mp4\" \"dopo-70-anni-camminare-non-basta-v8.mp4\" \"dopo-70-anni-VISUALS-AI.mp4\")",
+      "Bash(start \"\" \"dopo-70-anni-v10-DEFINITIVO.mp4\")",
+      "Bash(python -u fliki_client.py --file-name \"dopo-70-anni-v11-MOVIMENTO\")",
+      "Bash(PYTHONIOENCODING=utf-8 python regolatori.py --video-id mkaNzHTBw1M --mp4 \"../06-DASHBOARD-E-METRICHE/video-generati/dopo-70-anni-v11-MOVIMENTO.mp4\")",
+      "Bash(start \"\" \"dopo-70-anni-v11-MOVIMENTO.mp4\")",
+      "Bash(python -c \"import pydantic;print\\('pydantic',pydantic.VERSION\\)\")",
+      "Bash(python -c \"import typer;print\\('typer ok'\\)\")",
+      "Bash(python -c \"import pytest;print\\('pytest ok'\\)\")",
+      "Bash(python -m ruff --version)",
+      "Bash(python -c \"import playwright;print\\('playwright ok'\\)\")"
     ]
   }
 }

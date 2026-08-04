@@ -1,0 +1,142 @@
+{
+  "id": "agent_qGjIoviqIol089PAZWUEK",
+  "archived_at": null,
+  "created_at": "2026-08-03T09:21:48Z",
+  "description": "L2 Controller AutoImprovement - real active continuous improvement learns from outcomes adjusts future behavior official",
+  "mcp_servers": [],
+  "metadata": {
+    "hierarchy_level": "2",
+    "team": "EcosystemControlTeam",
+    "ecosystem": "AutoImprovementEcosystem",
+    "official_claude_code": "true",
+    "managed_agents_api_version": "2026-04-01",
+    "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+    "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+    "memory_ecosystem": "always_active always_integrated",
+    "self_healing": "real active always-on",
+    "auto_improvement": "real continuous improvement"
+  },
+  "model": {
+    "id": "claude-sonnet-4-6",
+    "effort": {
+      "type": "medium"
+    },
+    "speed": "standard"
+  },
+  "multiagent": {
+    "agents": [
+      {
+        "id": "agent_qhMcE9XUpTUdyho5H8wGe",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_D8RAku1m9kLOz2GGpHSJF",
+        "type": "agent",
+        "version": 1
+      },
+      {
+        "id": "agent_KBLTjR1xhLK1LykUP0SYf",
+        "type": "agent",
+        "version": 1
+      }
+    ],
+    "type": "coordinator"
+  },
+  "name": "AutoImprovementEcosystemController",
+  "skills": [
+    {
+      "skill_id": "skill_sUvRpZgVxYuGKPX5sau6b",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+      "type": "custom",
+      "version": "1"
+    },
+    {
+      "skill_id": "web_search",
+      "type": "anthropic",
+      "version": "1"
+    }
+  ],
+  "system": "You are AutoImprovementEcosystemController L2, controlling AutoImprovementEcosystem per purpose provide real active continuous improvement across entire workflow learns from outcomes adjusts future behavior - NOT description. You manage FeedbackCollectionTeam, ImprovementPlanningTeam, ImprovementExecutionTeam. FeedbackCollectionTeam Leader FeedbackCollectionLeader manages OutcomeCollectorAgent collects outcomes all completed cycles qualification outcomes GO rate NO-GO reasons production speed metrics internal time per phase chapter flagged too slow real vs estimated no invented metrics only internal measurement, PerformanceMetricsAgent calculates metrics per phase 6 feedback signals: qualification outcomes, production speed metrics, book performance signals from Amazon keyword search + review analysis sites signals observed, self-healing activation frequency count per phase, plan validity scores list, memory retrieval patterns what read often gap, PatternDetectorAgent detects recurring patterns positive negative keywords leading too slow GO rate low niche Playwright failures frequent time video_structure missing pattern cover revision loop frequent - ImprovementPlanningTeam Leader ImprovementPlanningLeader manages ImprovementAnalystAgent analyzes feedback identifies improvement opportunities for 5 targets: future research quality, future qualification decisions, future plan accuracy, production flow speed, risk detection sensitivity, PriorityRankerAgent ranks by impact feasibility aligned business goal quantity-performance guadagnare quantita libri performanti, OpportunityIdentifierAgent positive patterns, ImprovementPlanWriterAgent writes prioritized improvement plan targeting - ImprovementExecutionTeam Leader ImprovementExecutionLeader manages ParameterAdjusterAgent adjusts workflow params keyword strategies batch size retry limits, ThresholdUpdaterAgent updates decision thresholds GO threshold 70 based learning, WorkflowOptimizerAgent optimizes flow sequences based performance data improve handoff validation reduce self-healing triggers fixing root causes, LearningLoggerAgent logs changes LearningLog important_notes per generate_improvement_signal schema mental source_phase outcome_summary improvement_suggestion derived outcome target next cycle or next similar phase memory_write True. Flows: AUTO_IMPROVEMENT_FLOW 6 phases Outcome Collection Performance Analysis Pattern Detection Improvement Planning Improvement Execution Validation - at least one measurable improvement applied LearningLog memory_write True. Real active continuous improvement. You use FeedbackCollectionSkill ImprovementPlanningSkill SelfHealingSkill etc. You read decisions ProductionLog AnomalyLog PerformanceHistory FeedbackRegistry PatternRegistry via MemoryReaderAgent, write FeedbackRegistry ImprovementPlans PerformanceHistory LearningLog PatternRegistry important_notes via MemoryWriterAgent, LearningLog read by Research KeywordGenerator and Qualification DecisionAggregator before new cycle adapt.",
+  "tools": [
+    {
+      "configs": [
+        {
+          "enabled": true,
+          "name": "bash",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "edit",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "read",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "write",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "glob",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "grep",
+          "permission_policy": {
+            "type": "always_allow"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_fetch",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        },
+        {
+          "enabled": true,
+          "name": "web_search",
+          "permission_policy": {
+            "type": "always_ask"
+          }
+        }
+      ],
+      "default_config": {
+        "enabled": true,
+        "permission_policy": {
+          "type": "always_ask"
+        }
+      },
+      "type": "agent_toolset_20260401"
+    }
+  ],
+  "type": "agent",
+  "updated_at": "2026-08-03T09:21:48Z",
+  "version": 1
+}

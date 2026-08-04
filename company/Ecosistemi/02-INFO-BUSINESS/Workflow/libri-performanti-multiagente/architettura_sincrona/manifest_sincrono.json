@@ -1,0 +1,135 @@
+{
+  "architettura_sincrona_per_agent": {
+    "base_path": "/home/user/architettura_sincrona",
+    "total_py_files": 206,
+    "agent_dedicated_files": 176,
+    "teams_folders": 26,
+    "teams_list": [
+      "AmazonKeywordResearchTeam",
+      "RecoveryTeam",
+      "ReviewAnalysisResearchTeam",
+      "DataPersistenceTeam",
+      "QualificationAnalysisTeam",
+      "QualificationDecisionTeam",
+      "StructurePlanningTeam",
+      "ProductionReadinessTeam",
+      "BookWritingTeam",
+      "ProductionQualityTeam",
+      "GraphicDesignTeam",
+      "CoverDesignTeam",
+      "VisualPlaywrightOperationsTeam",
+      "MemoryManagementTeam",
+      "DetectionTeam",
+      "DiagnosisTeam",
+      "FeedbackCollectionTeam",
+      "ImprovementPlanningTeam",
+      "ImprovementExecutionTeam",
+      "KeywordExpansionTeam",
+      "SearchOptimizationTeam",
+      "ContentPlanningTeam",
+      "EditingTeam",
+      "VisualQualityTeam",
+      "CheckpointSubEcosystem",
+      "DecisionLogSubEcosystem"
+    ],
+    "l1_dedicated_files": 1,
+    "l2_dedicated_files": 8,
+    "per_team_example": {
+      "team": "AmazonKeywordResearchTeam",
+      "files": [
+        "team_AmazonKeywordResearchTeam_synchronizer.py",
+        "AmazonResearchLeader.py",
+        "KeywordGeneratorAgent.py",
+        "AmazonSearchAgent.py",
+        "AmazonDataExtractorAgent.py",
+        "AmazonResultsValidatorAgent.py",
+        "KeywordQualityAnalystAgent.py",
+        "NicheCompetitionAnalystAgent.py",
+        "SearchQualityValidatorAgent.py",
+        "NicheViabilityValidatorAgent.py",
+        "AmazonPageNavigatorAgent.py",
+        "AmazonDetailExtractorAgent.py"
+      ],
+      "agents_dedicated": 11,
+      "synchronizer": "team_AmazonKeywordResearchTeam_synchronizer.py"
+    },
+    "synchrony_protocol": "sync/harmony_protocol.py TeamSynchronyProtocol InterTeamHarmonyProtocol GlobalHarmonyOrchestrator + sync/team_synchronizer.py TeamSynchronizer",
+    "harmony_mechanism": "Ogni agente wrapper sincronizzato emit_ready() sync_checkpoint() communicate() validate_harmony() self_heal_synchronized() - checkpoint condiviso broadcast ALL_TEAM - ack obbligatorio - harmony_status synchronized"
+  },
+  "hierarchy_7_levels_per_file": {
+    "L1": 1,
+    "L2": 8,
+    "L3": 26,
+    "L4": 35,
+    "L5": 40,
+    "L6": 35,
+    "L7": 20,
+    "total_estimated": 165
+  },
+  "ecosistemi_dettaglio": {
+    "MemoryEcosystem": {
+      "controller_file": "L2/MemoryEcosystemController.py",
+      "teams_folders": [
+        "MemoryManagementTeam",
+        "CheckpointSubEcosystem",
+        "DecisionLogSubEcosystem"
+      ],
+      "agents_files": 24,
+      "sub_ecosystems": 5,
+      "memories": 38,
+      "active_system": true
+    },
+    "AutoImprovementEcosystem": {
+      "controller_file": "L2/AutoImprovementEcosystemController.py",
+      "teams_folders": [
+        "FeedbackCollectionTeam",
+        "ImprovementPlanningTeam",
+        "ImprovementExecutionTeam"
+      ],
+      "agents_files": 19,
+      "sub_ecosystems": 3,
+      "feedback_signals_6": [
+        "qualification outcomes",
+        "production speed metrics",
+        "book performance signals",
+        "self-healing activation frequency",
+        "plan validity scores",
+        "memory retrieval patterns"
+      ],
+      "targets_5": [
+        "future research quality",
+        "future qualification decisions",
+        "future plan accuracy",
+        "production flow speed",
+        "risk detection sensitivity"
+      ]
+    },
+    "SelfHealingEcosystem": {
+      "controller_file": "L2/SelfHealingEcosystemController.py",
+      "teams_folders": [
+        "DetectionTeam",
+        "DiagnosisTeam",
+        "RecoveryTeam"
+      ],
+      "agents_files": 20,
+      "sub_ecosystems": 3,
+      "triggers_8": 8,
+      "actions_5": 5
+    },
+    "ResearchEcosystem": {
+      "agents": 37,
+      "teams": 5,
+      "sub_ecos": 4
+    },
+    "VisualEcosystem": {
+      "agents": 26,
+      "teams": 4,
+      "sub_ecos": 4
+    }
+  },
+  "skills_espanse": 18,
+  "teams_espansi": 26,
+  "memories": 38,
+  "flows": 5,
+  "critical_control_point": "CP-VIDEO-01 video_structure REQUIRED preserved verbatim in StructurePlanningTeam/VideoStructureArchitectAgent.py L4"
+}

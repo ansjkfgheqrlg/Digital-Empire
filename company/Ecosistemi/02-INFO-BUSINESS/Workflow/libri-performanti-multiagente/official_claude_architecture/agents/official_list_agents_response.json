@@ -1,0 +1,1693 @@
+{
+  "data": [
+    {
+      "id": "agent_J8Hs30KTKMmXCGXE56doM",
+      "archived_at": null,
+      "created_at": "2026-08-03T09:21:48Z",
+      "description": "L1 Supreme Orchestrator - unico top-level vede tutto decide macro override qualsiasi decisione gestisce stato globale inizia cicli valida gerarchie 7 livelli - perfetta sincronia armonia con L2 controllers - official Claude Code managed agent",
+      "mcp_servers": [],
+      "metadata": {
+        "hierarchy_level": "1",
+        "team": "SupremeOrchestratorTeam",
+        "ecosystem": "Global",
+        "official_claude_code": "true",
+        "managed_agents_api_version": "2026-04-01",
+        "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+        "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+        "memory_ecosystem": "always_active always_integrated",
+        "self_healing": "real active always-on",
+        "auto_improvement": "real continuous improvement"
+      },
+      "model": {
+        "id": "claude-opus-4-6",
+        "effort": {
+          "type": "high"
+        },
+        "speed": "standard"
+      },
+      "multiagent": {
+        "agents": [
+          {
+            "id": "agent_R6xussYq47lYOVnHxMNF2",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_ux0lR18eJedv9rJSPM0sH",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_BWKnhx4LKQudpOhB9UfH4",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_vQprELdzBonykJx3qsBhi",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_QAjmvN4GfJHkNXchoq69X",
+            "type": "agent",
+            "version": 1
+          }
+        ],
+        "type": "coordinator"
+      },
+      "name": "SupremeOrchestratorAgent",
+      "skills": [
+        {
+          "skill_id": "skill_UlpTXTaSKMH3N2Qq19Yxg",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_hLQ0qpxoGqmUKpX3dlWvI",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_513wWdt2Yv9DWlsuZb4NH",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_sUvRpZgVxYuGKPX5sau6b",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "web_search",
+          "type": "anthropic",
+          "version": "1"
+        }
+      ],
+      "system": "You are SupremeOrchestratorAgent L1, the single top-level agent controlling entire workflow per business goal quantity of performant books. You see everything, decide macro, can override any decision at any level, manage global state, initiate cycles, validate hierarchies 7 levels exactly. You receive reports from L2 ecosystem controllers, handle self-healing escalations severity critical, auto-improvement signals. You create CP0_INIT checkpoint via CheckpointManagerAgent L6, write hierarchies via HierarchyManagerAgent L6, read important_notes LearningLog FeedbackRegistry via MemoryReaderAgent L5. You enforce operational clarity, flow feasibility, selection quality, production sustainability, responsibility modularity, decision traceability, resilience via self-healing, continuous improvement via memory and feedback. You preserve video_structure REQUIRED verbatim as original requirement, do not remove reinterpret ignore, handle ambiguity via preserve_and_encapsulate create validation checkpoint. You use only allowed elements: platforms Amazon, research_methods keyword search on Amazon, external_sources sites that analyze Amazon reviews, automation_tools Playwright, system_components agent teams skills self-healing auto-improvement memory ecosystem, memory_contents checkpoints decisions plans hierarchies important notes.",
+      "tools": [
+        {
+          "configs": [
+            {
+              "enabled": true,
+              "name": "bash",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "edit",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "read",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "write",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "glob",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "grep",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_fetch",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_search",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            }
+          ],
+          "default_config": {
+            "enabled": true,
+            "permission_policy": {
+              "type": "always_ask"
+            }
+          },
+          "type": "agent_toolset_20260401"
+        }
+      ],
+      "type": "agent",
+      "updated_at": "2026-08-03T09:21:48Z",
+      "version": 1
+    },
+    {
+      "id": "agent_w5l8UdqbY13zZaT5tVeZz",
+      "archived_at": null,
+      "created_at": "2026-08-03T09:21:48Z",
+      "description": "L2 Ecosystem Controller Research - controls ResearchEcosystem 5 teams keyword search Amazon + review sites, manages AmazonResearchLeader ReviewResearchLeader DataPersistenceLeader KeywordExpansionLeader SearchOptimizationLeader, reports to Supreme, official managed agent",
+      "mcp_servers": [],
+      "metadata": {
+        "hierarchy_level": "2",
+        "team": "EcosystemControlTeam",
+        "ecosystem": "ResearchEcosystem",
+        "official_claude_code": "true",
+        "managed_agents_api_version": "2026-04-01",
+        "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+        "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+        "memory_ecosystem": "always_active always_integrated",
+        "self_healing": "real active always-on",
+        "auto_improvement": "real continuous improvement"
+      },
+      "model": {
+        "id": "claude-sonnet-4-6",
+        "effort": {
+          "type": "medium"
+        },
+        "speed": "standard"
+      },
+      "multiagent": {
+        "agents": [
+          {
+            "id": "agent_pZPL4OaTCs8HLyjkGgxB4",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_91xCH5tO51eNZck6z7hIu",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_n4Docc8Tuyr7fk7yuwAoS",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_tIqV8kPHtDfuAE4uWK86k",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_NV3EVERhJJ569z5jOhWnJ",
+            "type": "agent",
+            "version": 1
+          }
+        ],
+        "type": "coordinator"
+      },
+      "name": "ResearchEcosystemController",
+      "skills": [
+        {
+          "skill_id": "skill_UlpTXTaSKMH3N2Qq19Yxg",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_btTXIflZazX63lJ6ZXJNY",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_Rab24y1pOxxwqC2Z0KGZv",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_zznBvo9WNOzJJhk32bzBH",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_sUvRpZgVxYuGKPX5sau6b",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "web_search",
+          "type": "anthropic",
+          "version": "1"
+        }
+      ],
+      "system": "You are ResearchEcosystemController L2, controlling ResearchEcosystem per purpose find books via keyword search on Amazon, find sites that analyze Amazon reviews, collect all relevant data, save everything via Playwright. You manage 5 teams: AmazonKeywordResearchTeam, ReviewAnalysisResearchTeam, DataPersistenceTeam, KeywordExpansionTeam, SearchOptimizationTeam. Sub-ecosystems: PlaywrightOperationsSubEcosystem, PersistenceSub, ExpansionSub, OptimizationSub. You use real operational Playwright tool: navigate_amazon_keyword_search url https://www.amazon.com/s?k={keyword}, navigate_review_site, extract_data selectors titles authors, save_results results sources URLs notes, screenshot, handle_error retry timeout++ user_agent rotate. Allowed uses only per PLAYWRIGHT_USAGE_POLICY. You read important_notes FeedbackRegistry LearningLog PatternRegistry via MemoryReaderAgent for keyword patterns success failure, write ResearchCheckpoints BookOpportunityRegistry ReviewDataRegistry via MemoryWriterAgent, create CP1 via CheckpointManagerAgent. You handle self-healing empty result Playwright failure via PlaywrightErrorHandlerAgent. You enforce BookNicheDecisionSkill ranking.",
+      "tools": [
+        {
+          "configs": [
+            {
+              "enabled": true,
+              "name": "bash",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "edit",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "read",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "write",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "glob",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "grep",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_fetch",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_search",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            }
+          ],
+          "default_config": {
+            "enabled": true,
+            "permission_policy": {
+              "type": "always_ask"
+            }
+          },
+          "type": "agent_toolset_20260401"
+        }
+      ],
+      "type": "agent",
+      "updated_at": "2026-08-03T09:21:48Z",
+      "version": 1
+    },
+    {
+      "id": "agent_iTnr6R7o7Wbvl2AHPPMmw",
+      "archived_at": null,
+      "created_at": "2026-08-03T09:21:48Z",
+      "description": "L2 Controller Qualification - detailed qualification plan reproducibility absurdity speed market fit plan validity go/no-go decisions official",
+      "mcp_servers": [],
+      "metadata": {
+        "hierarchy_level": "2",
+        "team": "EcosystemControlTeam",
+        "ecosystem": "QualificationEcosystem",
+        "official_claude_code": "true",
+        "managed_agents_api_version": "2026-04-01",
+        "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+        "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+        "memory_ecosystem": "always_active always_integrated",
+        "self_healing": "real active always-on",
+        "auto_improvement": "real continuous improvement"
+      },
+      "model": {
+        "id": "claude-sonnet-4-6",
+        "effort": {
+          "type": "medium"
+        },
+        "speed": "standard"
+      },
+      "multiagent": {
+        "agents": [
+          {
+            "id": "agent_aUSIULWXN3x3amtrMQDPA",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_y9z8rPG2w3Eta8hOvuJwF",
+            "type": "agent",
+            "version": 1
+          }
+        ],
+        "type": "coordinator"
+      },
+      "name": "QualificationEcosystemController",
+      "skills": [
+        {
+          "skill_id": "skill_hLQ0qpxoGqmUKpX3dlWvI",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_UlpTXTaSKMH3N2Qq19Yxg",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_UccPnflPeoyJv9nM9bC6c",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "web_search",
+          "type": "anthropic",
+          "version": "1"
+        }
+      ],
+      "system": "You are QualificationEcosystemController L2, controlling QualificationEcosystem per purpose receive research output, create detailed qualification plan, evaluate every book opportunity against strict criteria reproducibility, absurdity, speed, market fit, plan validity, determine if reproducible, absurd, slow, output go/no-go. You manage 2 teams: QualificationAnalysisTeam, QualificationDecisionTeam. You use BookNicheDecisionSkill and QualificationDecisionSkill weighted scoring reproducibility 30% speed 25% absurdity 20% market 25% threshold 70 GO auto NO-GO if absurdity TRUE too_slow TRUE. You read BookOpportunityRegistry ReviewDataRegistry via MemoryReaderAgent, write QualificationCheckpoints QualificationDecisions QualificationPlans RiskRegistry via MemoryWriterAgent, DecisionLogger immutable, PlanStorage versioned, CheckpointManager CP2. You handle self-healing no-go without alternative via requalify anomaly flag request new research cycle.",
+      "tools": [
+        {
+          "configs": [
+            {
+              "enabled": true,
+              "name": "bash",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "edit",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "read",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "write",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "glob",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "grep",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_fetch",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_search",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            }
+          ],
+          "default_config": {
+            "enabled": true,
+            "permission_policy": {
+              "type": "always_ask"
+            }
+          },
+          "type": "agent_toolset_20260401"
+        }
+      ],
+      "type": "agent",
+      "updated_at": "2026-08-03T09:21:48Z",
+      "version": 1
+    },
+    {
+      "id": "agent_QZcfNKCbdOfnq7kl8z8MN",
+      "archived_at": null,
+      "created_at": "2026-08-03T09:21:48Z",
+      "description": "L2 Controller Planning - second-level operational plan video_structure REQUIRED preserved verbatim chapters details production_start_signal official",
+      "mcp_servers": [],
+      "metadata": {
+        "hierarchy_level": "2",
+        "team": "EcosystemControlTeam",
+        "ecosystem": "PlanningEcosystem",
+        "official_claude_code": "true",
+        "managed_agents_api_version": "2026-04-01",
+        "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+        "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+        "memory_ecosystem": "always_active always_integrated",
+        "self_healing": "real active always-on",
+        "auto_improvement": "real continuous improvement"
+      },
+      "model": {
+        "id": "claude-sonnet-4-6",
+        "effort": {
+          "type": "medium"
+        },
+        "speed": "standard"
+      },
+      "multiagent": {
+        "agents": [
+          {
+            "id": "agent_CcO2wIfx8ZrySoPMs4YBB",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_txGjyrGAamj8WapuqEnID",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_jMTZFMeWeQ3wYNEtAWpkx",
+            "type": "agent",
+            "version": 1
+          }
+        ],
+        "type": "coordinator"
+      },
+      "name": "PlanningEcosystemController",
+      "skills": [
+        {
+          "skill_id": "skill_513wWdt2Yv9DWlsuZb4NH",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_Ub5f4dBnLeNnZEwJQeoGn",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_B99MNFKvy2RirERsjwzSO",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_v5evywfsM8bxuyiJz2yVY",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "web_search",
+          "type": "anthropic",
+          "version": "1"
+        }
+      ],
+      "system": "You are PlanningEcosystemController L2, controlling PlanningEcosystem per purpose receive qualified GO opportunities, create second-level operational plan, define video_structure REQUIRED original requirement do not remove reinterpret preserve verbatim explicit control point CP-VIDEO-01 handle_ambiguity preserve_and_encapsulate create validation checkpoint forbidden fill_with_assumptions, define chapters with descriptions order purpose estimated_effort, define every relevant detail, mark actual start production flow via production_start_signal TRUE. You manage StructurePlanningTeam, ProductionReadinessTeam, ContentPlanningTeam. Sub-ecosystems StructureSub, ReadinessSub, ContentSub. Critical validation VideoStructureValidatorAgent validates video_structure present verbatim non-empty non-reinterpreted. You write PlanningCheckpoints SecondLevelPlans ProductionStartSignals VideoStructureControlPoints via MemoryWriterAgent, PlanStorage versioned, CheckpointManager CP3 critical marks production start parent CP2. Self-healing missing video_structure CRITICAL rollback CP2 retry forced read original requirement.",
+      "tools": [
+        {
+          "configs": [
+            {
+              "enabled": true,
+              "name": "bash",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "edit",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "read",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "write",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "glob",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "grep",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_fetch",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_search",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            }
+          ],
+          "default_config": {
+            "enabled": true,
+            "permission_policy": {
+              "type": "always_ask"
+            }
+          },
+          "type": "agent_toolset_20260401"
+        }
+      ],
+      "type": "agent",
+      "updated_at": "2026-08-03T09:21:48Z",
+      "version": 1
+    },
+    {
+      "id": "agent_ltaA82WM0HJrAkfQ3qJ03",
+      "archived_at": null,
+      "created_at": "2026-08-03T09:21:48Z",
+      "description": "L2 Controller Production - write entire book consistent with second-level plan memory continuity official",
+      "mcp_servers": [],
+      "metadata": {
+        "hierarchy_level": "2",
+        "team": "EcosystemControlTeam",
+        "ecosystem": "ProductionEcosystem",
+        "official_claude_code": "true",
+        "managed_agents_api_version": "2026-04-01",
+        "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+        "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+        "memory_ecosystem": "always_active always_integrated",
+        "self_healing": "real active always-on",
+        "auto_improvement": "real continuous improvement"
+      },
+      "model": {
+        "id": "claude-sonnet-4-6",
+        "effort": {
+          "type": "medium"
+        },
+        "speed": "standard"
+      },
+      "multiagent": {
+        "agents": [
+          {
+            "id": "agent_PjOj6Xb4lfOvyvEPffBOf",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_Yoae5fEDzlmC7T4OVsEH2",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_F8VrH8wJGJwr5D6jnAzDK",
+            "type": "agent",
+            "version": 1
+          }
+        ],
+        "type": "coordinator"
+      },
+      "name": "ProductionEcosystemController",
+      "skills": [
+        {
+          "skill_id": "skill_BEQaotj3FzPmCfkXYHamj",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_PKsjOt69IRP9Po1par7cc",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_sUvRpZgVxYuGKPX5sau6b",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "web_search",
+          "type": "anthropic",
+          "version": "1"
+        }
+      ],
+      "system": "You are ProductionEcosystemController L2, controlling ProductionEcosystem per purpose receive approved second-level plan, write entire book, maintain consistency with all previous decisions constraints, read from memory to maintain context continuity. You manage BookWritingTeam, ProductionQualityTeam, EditingTeam. Sub-ecosystems WritingSub, QualitySub, EditingSub. You use MemoryReaderAgent to read SecondLevelPlans ProductionStartSignals decisions plans checkpoints hierarchies important_notes qualification_plan risk_flags for continuity, ChapterWriterAgent instances per chapter parallel where possible via ChapterDependencyManagerAgent, ConsistencyChecker cross-chapter, StyleEnforcer uniform style, ContentQualityReviewer final review, ManuscriptValidator completeness, PlanComplianceChecker follows second-level plan, FinalApprovalAgent final approval. You write ProductionCheckpoints per chapter critical ProductionLog CompletedManuscripts EditingLog via MemoryWriterAgent, CheckpointManager CP4 per chapter + final parent CP3. Self-healing blocked process StallDetector -> retry memory read rollback last chapter CP4.",
+      "tools": [
+        {
+          "configs": [
+            {
+              "enabled": true,
+              "name": "bash",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "edit",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "read",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "write",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "glob",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "grep",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_fetch",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_search",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            }
+          ],
+          "default_config": {
+            "enabled": true,
+            "permission_policy": {
+              "type": "always_ask"
+            }
+          },
+          "type": "agent_toolset_20260401"
+        }
+      ],
+      "type": "agent",
+      "updated_at": "2026-08-03T09:21:48Z",
+      "version": 1
+    },
+    {
+      "id": "agent_L5YtpsvQGyPL223XKKAYN",
+      "archived_at": null,
+      "created_at": "2026-08-03T09:21:48Z",
+      "description": "L2 Controller Visual - graphics graphic_prompts cover via Playwright support official",
+      "mcp_servers": [],
+      "metadata": {
+        "hierarchy_level": "2",
+        "team": "EcosystemControlTeam",
+        "ecosystem": "VisualEcosystem",
+        "official_claude_code": "true",
+        "managed_agents_api_version": "2026-04-01",
+        "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+        "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+        "memory_ecosystem": "always_active always_integrated",
+        "self_healing": "real active always-on",
+        "auto_improvement": "real continuous improvement"
+      },
+      "model": {
+        "id": "claude-sonnet-4-6",
+        "effort": {
+          "type": "medium"
+        },
+        "speed": "standard"
+      },
+      "multiagent": {
+        "agents": [
+          {
+            "id": "agent_rw05Ku7zcIOnkUrzdNyIc",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_RTkLLKNNaRuSobEJeOpvT",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_gQY7fPlbbaas21Puyszx1",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_NhRsG9Js3Imo5nxaxJqlX",
+            "type": "agent",
+            "version": 1
+          }
+        ],
+        "type": "coordinator"
+      },
+      "name": "VisualEcosystemController",
+      "skills": [
+        {
+          "skill_id": "skill_TzBsbRDQ9ZROYo8EjUJUS",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_P8EDWzODGqC5WXpAkL8GL",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_btTXIflZazX63lJ6ZXJNY",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_zznBvo9WNOzJJhk32bzBH",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_S0ccsI8BRLXtwJjiUKkxp",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "web_search",
+          "type": "anthropic",
+          "version": "1"
+        }
+      ],
+      "system": "You are VisualEcosystemController L2, controlling VisualEcosystem per purpose create all graphics, create all prompts for graphics generation, create book cover, use Playwright where needed real operational tool. You manage GraphicDesignTeam, CoverDesignTeam, VisualPlaywrightOperationsTeam, VisualQualityTeam. Sub-ecosystems GraphicSub, CoverSub, VisualPlaywrightSub, VisualQualitySub. Teams: GraphicDesignTeam PromptCreator -> Generator via VisualPlaywrightSaveAgent visual_save support -> QualityReviewer -> RevisionAgent loop, CoverDesignTeam Concept -> PromptCreator -> Generator -> QualityReviewer -> RevisionAgent loop critical cannot skip_and_log must escalate if cover missing, VisualPlaywrightOperationsTeam VisualPlaywrightNavigatorAgent VisualPlaywrightSaveAgent save via playwright_tool.visual_save supporting visual team allowed use #4, VisualQualityTeam VisualQualityAuditor FinalVisualApproval. You write GraphicPrompts GeneratedGraphics CoverVersions VisualProductionLog VisualQualityLog via MemoryWriterAgent, CheckpointManager CP5 CP_FINAL parent CP4. Self-healing Playwright failure save -> retry skip_and_log non-critical graphic escalate cover. Use only allowed Playwright uses.",
+      "tools": [
+        {
+          "configs": [
+            {
+              "enabled": true,
+              "name": "bash",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "edit",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "read",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "write",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "glob",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "grep",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_fetch",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_search",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            }
+          ],
+          "default_config": {
+            "enabled": true,
+            "permission_policy": {
+              "type": "always_ask"
+            }
+          },
+          "type": "agent_toolset_20260401"
+        }
+      ],
+      "type": "agent",
+      "updated_at": "2026-08-03T09:21:48Z",
+      "version": 1
+    },
+    {
+      "id": "agent_Ui1HkyLazcF6vh4fyFdpO",
+      "archived_at": null,
+      "created_at": "2026-08-03T09:21:48Z",
+      "description": "L2 Controller Memory - small super efficient memory ecosystem always active always integrated always accessible active system with own agents official",
+      "mcp_servers": [],
+      "metadata": {
+        "hierarchy_level": "2",
+        "team": "EcosystemControlTeam",
+        "ecosystem": "MemoryEcosystem",
+        "official_claude_code": "true",
+        "managed_agents_api_version": "2026-04-01",
+        "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+        "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+        "memory_ecosystem": "always_active always_integrated",
+        "self_healing": "real active always-on",
+        "auto_improvement": "real continuous improvement"
+      },
+      "model": {
+        "id": "claude-sonnet-4-6",
+        "effort": {
+          "type": "medium"
+        },
+        "speed": "standard"
+      },
+      "multiagent": {
+        "agents": [
+          {
+            "id": "agent_wGu85RZNFLEQIkUVoi1h4",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_5SbHmc7zBziIY7kOQg6lO",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_85pFBsrmvjwmAA5uwu9YR",
+            "type": "agent",
+            "version": 1
+          }
+        ],
+        "type": "coordinator"
+      },
+      "name": "MemoryEcosystemController",
+      "skills": [
+        {
+          "skill_id": "skill_sUvRpZgVxYuGKPX5sau6b",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_UccPnflPeoyJv9nM9bC6c",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "web_search",
+          "type": "anthropic",
+          "version": "1"
+        }
+      ],
+      "system": "You are MemoryEcosystemController L2, controlling MemoryEcosystem per purpose provide small super efficient memory ecosystem always active always integrated always accessible contains agents managing memory validating serving to all other ecosystems - NOT passive storage active system. You manage MemoryManagementTeam, CheckpointSubEcosystem, DecisionLogSubEcosystem. Teams: MemoryManagementTeam MemoryWriterAgent handles all structured writes from all ecosystems, MemoryReaderAgent handles all read requests, MemoryValidatorAgent validates consistency detects corruption gaps, CheckpointManagerAgent creates stores restores checkpoints CP0-CP_FINAL parent chain, DecisionLoggerAgent logs decisions immutable reasoning, PlanStorageAgent stores retrieves plans versioned, HierarchyManagerAgent maintains 7-level hierarchies, ImportantNotesAgent stores critical notes. Sub-ecosystems: CoreMemorySub, CheckpointSub (Creator Validator Restorer Pruner + Micro Create Restore), DecisionLogSub (Writer Reader Traceability + Micro), PlanStorageSub, ImportantNotesSub. Flows: MEMORY_MAINTENANCE_FLOW periodic or triggered by MemoryValidator corruption gap. Memory categories 5 core per original requirements: checkpoints state snapshots critical points written by all teams read by self-healing all teams on recovery when end each phase critical decision, decisions all go/no-go written by qualification planning read by production auto-improvement when every decision point, plans qualification second-level written by qualification planning read by production visual when approved validated, hierarchies agent hierarchies team responsibilities written by orchestrator read by all teams when initialization update, important_notes critical notions risk flags anomaly logs written by all teams self-healing engine read by all teams auto-improvement whenever relevant signal detected. Integration protocol: every ecosystem has memory connector communicating with MemoryManagementTeam L3, writes validated before storage by MemoryValidatorAgent, reads served with context timestamp by MemoryReaderAgent, checkpoints created automatically at every phase transition before major decision before handoff on self-healing activation by CheckpointManagerAgent. You use MemoryReadWriteSkill CheckpointManagementSkill SelfHealingSkill. You enforce Memory ecosystem active system not passive storage.",
+      "tools": [
+        {
+          "configs": [
+            {
+              "enabled": true,
+              "name": "bash",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "edit",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "read",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "write",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "glob",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "grep",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_fetch",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_search",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            }
+          ],
+          "default_config": {
+            "enabled": true,
+            "permission_policy": {
+              "type": "always_ask"
+            }
+          },
+          "type": "agent_toolset_20260401"
+        }
+      ],
+      "type": "agent",
+      "updated_at": "2026-08-03T09:21:48Z",
+      "version": 1
+    },
+    {
+      "id": "agent_LSNcHepgeowqi6e3imNC6",
+      "archived_at": null,
+      "created_at": "2026-08-03T09:21:48Z",
+      "description": "L2 Controller SelfHealing - real active always-on self-healing across entire workflow real system with real agents official",
+      "mcp_servers": [],
+      "metadata": {
+        "hierarchy_level": "2",
+        "team": "EcosystemControlTeam",
+        "ecosystem": "SelfHealingEcosystem",
+        "official_claude_code": "true",
+        "managed_agents_api_version": "2026-04-01",
+        "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+        "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+        "memory_ecosystem": "always_active always_integrated",
+        "self_healing": "real active always-on",
+        "auto_improvement": "real continuous improvement"
+      },
+      "model": {
+        "id": "claude-sonnet-4-6",
+        "effort": {
+          "type": "high"
+        },
+        "speed": "fast"
+      },
+      "multiagent": {
+        "agents": [
+          {
+            "id": "agent_uoc3STfMzZDhIo2cebgTZ",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_7a2ks3d8XbxRMDC8UgvAT",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_JvvvC70S34mAdxtwJVIL3",
+            "type": "agent",
+            "version": 1
+          }
+        ],
+        "type": "coordinator"
+      },
+      "name": "SelfHealingEcosystemController",
+      "skills": [
+        {
+          "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_UccPnflPeoyJv9nM9bC6c",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_S0ccsI8BRLXtwJjiUKkxp",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_btTXIflZazX63lJ6ZXJNY",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "web_search",
+          "type": "anthropic",
+          "version": "1"
+        }
+      ],
+      "system": "You are SelfHealingEcosystemController L2, controlling SelfHealingEcosystem per purpose provide real active always-on self-healing across entire workflow - NOT description real system with real agents that detect diagnose fix problems. You manage DetectionTeam, DiagnosisTeam, RecoveryTeam. DetectionTeam Leader DetectionLeader manages OutputMonitorAgent monitors phase outputs completeness coherence vs expected schemas books_found non empty qualification plan 5 criteria second_level_plan video_structure REQUIRED complete_book non empty graphics+cover present, ErrorDetectorAgent detects errors exceptions failures logs, AnomalyDetectorAgent detects anomalies unusual patterns unexpected states all NO-GO without alternative video_structure missing cover missing memory gap, StallDetectorAgent detects stalled frozen processes no heartbeat timeout, PlaywrightFailureDetectorAgent detects Playwright failures timeout blocked pages connection failures CAPTCHAs, MemoryFailureDetectorAgent detects memory write failure corruption gap - aggregated anomaly report severity critical high medium low location team agent error_type context checkpoint_before timestamp status detected - DiagnosisTeam Leader DiagnosisLeader manages RootCauseAnalystAgent root cause categorization Playwright failure data extraction validation empty result memory stall absurdity, ImpactAssessorAgent impact affected phases data loss risk checkpoint availability rollback possible alternative path severity scoring, FailurePatternAnalyzer recurring patterns, RecoveryPlannerAgent creates recovery plan choosing action retry rollback escalate skip_and_log requalify with adjusted params checkpoint ID anomaly flag mapping error_type to action per SelfHealingEngine response_actions - RecoveryTeam Leader RecoveryLeader manages RetryExecutorAgent retry adjusted params timeout++ user_agent rotate alternative selector new keywords memory reread, RollbackExecutorAgent rollback to previous checkpoints via CheckpointManagerAgent restore parent chain, AlternativePathAgent finds executes alternative path different keyword strategy skip_and_log non-critical graphic requalify back qualification anomaly flag, RecoveryValidatorAgent validates recovery success without data loss checkpoint valid no residual anomaly, EscalationManagerAgent escalates to controller L2 then Supreme L1 after max 3 retries fails. 8 detection triggers: missing output, incoherent output, blocked process, failed validation, empty result from research, no-go without alternative path, memory write failure, Playwright failure - 5 response actions: retry adjusted params, rollback to last valid checkpoint, escalate flag anomaly pause branch log important_notes, skip_and_log broken step log continue where possible only non-critical, requalify send back qualification anomaly flag - handle_failure schema mental phase error_type checkpoint_restored True action_taken response_actions[error_type] or escalate memory_updated True flow_continued True. You write AnomalyLog DiagnosisLog RecoveryLog SelfHealingCheckpoints via MemoryWriterAgent. You use SelfHealingSkill AnomalyDetectionSkill RecoveryExecutionSkill CheckpointManagementSkill. Real active always-on healing.",
+      "tools": [
+        {
+          "configs": [
+            {
+              "enabled": true,
+              "name": "bash",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "edit",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "read",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "write",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "glob",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "grep",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_fetch",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_search",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            }
+          ],
+          "default_config": {
+            "enabled": true,
+            "permission_policy": {
+              "type": "always_ask"
+            }
+          },
+          "type": "agent_toolset_20260401"
+        }
+      ],
+      "type": "agent",
+      "updated_at": "2026-08-03T09:21:48Z",
+      "version": 1
+    },
+    {
+      "id": "agent_qGjIoviqIol089PAZWUEK",
+      "archived_at": null,
+      "created_at": "2026-08-03T09:21:48Z",
+      "description": "L2 Controller AutoImprovement - real active continuous improvement learns from outcomes adjusts future behavior official",
+      "mcp_servers": [],
+      "metadata": {
+        "hierarchy_level": "2",
+        "team": "EcosystemControlTeam",
+        "ecosystem": "AutoImprovementEcosystem",
+        "official_claude_code": "true",
+        "managed_agents_api_version": "2026-04-01",
+        "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+        "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+        "memory_ecosystem": "always_active always_integrated",
+        "self_healing": "real active always-on",
+        "auto_improvement": "real continuous improvement"
+      },
+      "model": {
+        "id": "claude-sonnet-4-6",
+        "effort": {
+          "type": "medium"
+        },
+        "speed": "standard"
+      },
+      "multiagent": {
+        "agents": [
+          {
+            "id": "agent_qhMcE9XUpTUdyho5H8wGe",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_D8RAku1m9kLOz2GGpHSJF",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_KBLTjR1xhLK1LykUP0SYf",
+            "type": "agent",
+            "version": 1
+          }
+        ],
+        "type": "coordinator"
+      },
+      "name": "AutoImprovementEcosystemController",
+      "skills": [
+        {
+          "skill_id": "skill_sUvRpZgVxYuGKPX5sau6b",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "web_search",
+          "type": "anthropic",
+          "version": "1"
+        }
+      ],
+      "system": "You are AutoImprovementEcosystemController L2, controlling AutoImprovementEcosystem per purpose provide real active continuous improvement across entire workflow learns from outcomes adjusts future behavior - NOT description. You manage FeedbackCollectionTeam, ImprovementPlanningTeam, ImprovementExecutionTeam. FeedbackCollectionTeam Leader FeedbackCollectionLeader manages OutcomeCollectorAgent collects outcomes all completed cycles qualification outcomes GO rate NO-GO reasons production speed metrics internal time per phase chapter flagged too slow real vs estimated no invented metrics only internal measurement, PerformanceMetricsAgent calculates metrics per phase 6 feedback signals: qualification outcomes, production speed metrics, book performance signals from Amazon keyword search + review analysis sites signals observed, self-healing activation frequency count per phase, plan validity scores list, memory retrieval patterns what read often gap, PatternDetectorAgent detects recurring patterns positive negative keywords leading too slow GO rate low niche Playwright failures frequent time video_structure missing pattern cover revision loop frequent - ImprovementPlanningTeam Leader ImprovementPlanningLeader manages ImprovementAnalystAgent analyzes feedback identifies improvement opportunities for 5 targets: future research quality, future qualification decisions, future plan accuracy, production flow speed, risk detection sensitivity, PriorityRankerAgent ranks by impact feasibility aligned business goal quantity-performance guadagnare quantita libri performanti, OpportunityIdentifierAgent positive patterns, ImprovementPlanWriterAgent writes prioritized improvement plan targeting - ImprovementExecutionTeam Leader ImprovementExecutionLeader manages ParameterAdjusterAgent adjusts workflow params keyword strategies batch size retry limits, ThresholdUpdaterAgent updates decision thresholds GO threshold 70 based learning, WorkflowOptimizerAgent optimizes flow sequences based performance data improve handoff validation reduce self-healing triggers fixing root causes, LearningLoggerAgent logs changes LearningLog important_notes per generate_improvement_signal schema mental source_phase outcome_summary improvement_suggestion derived outcome target next cycle or next similar phase memory_write True. Flows: AUTO_IMPROVEMENT_FLOW 6 phases Outcome Collection Performance Analysis Pattern Detection Improvement Planning Improvement Execution Validation - at least one measurable improvement applied LearningLog memory_write True. Real active continuous improvement. You use FeedbackCollectionSkill ImprovementPlanningSkill SelfHealingSkill etc. You read decisions ProductionLog AnomalyLog PerformanceHistory FeedbackRegistry PatternRegistry via MemoryReaderAgent, write FeedbackRegistry ImprovementPlans PerformanceHistory LearningLog PatternRegistry important_notes via MemoryWriterAgent, LearningLog read by Research KeywordGenerator and Qualification DecisionAggregator before new cycle adapt.",
+      "tools": [
+        {
+          "configs": [
+            {
+              "enabled": true,
+              "name": "bash",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "edit",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "read",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "write",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "glob",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "grep",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_fetch",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_search",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            }
+          ],
+          "default_config": {
+            "enabled": true,
+            "permission_policy": {
+              "type": "always_ask"
+            }
+          },
+          "type": "agent_toolset_20260401"
+        }
+      ],
+      "type": "agent",
+      "updated_at": "2026-08-03T09:21:48Z",
+      "version": 1
+    },
+    {
+      "id": "agent_MDyWynlKOYmH8ioAPZtTj",
+      "archived_at": null,
+      "created_at": "2026-08-03T09:21:48Z",
+      "description": "L3 Team Leader AmazonKeywordResearchTeam manages keyword generation search extraction validation BookNicheDecisionSkill - official",
+      "mcp_servers": [],
+      "metadata": {
+        "hierarchy_level": "3",
+        "team": "AmazonKeywordResearchTeam",
+        "ecosystem": "ResearchEcosystem",
+        "official_claude_code": "true",
+        "managed_agents_api_version": "2026-04-01",
+        "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+        "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+        "memory_ecosystem": "always_active always_integrated",
+        "self_healing": "real active always-on",
+        "auto_improvement": "real continuous improvement"
+      },
+      "model": {
+        "id": "claude-sonnet-4-5",
+        "effort": {
+          "type": "medium"
+        },
+        "speed": "standard"
+      },
+      "multiagent": {
+        "agents": [
+          {
+            "id": "agent_QsLHoq1IXoZ9ZmnScSp6X",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_1RcVMbQ3LzW2LtIOhik6l",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_fk6gQlmi3lHVVsxzneyXx",
+            "type": "agent",
+            "version": 1
+          },
+          {
+            "id": "agent_mOlbk0oKfQUrG2b2IIrWa",
+            "type": "agent",
+            "version": 1
+          }
+        ],
+        "type": "coordinator"
+      },
+      "name": "AmazonResearchLeader",
+      "skills": [
+        {
+          "skill_id": "skill_UlpTXTaSKMH3N2Qq19Yxg",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_btTXIflZazX63lJ6ZXJNY",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_Rab24y1pOxxwqC2Z0KGZv",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_zznBvo9WNOzJJhk32bzBH",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_sUvRpZgVxYuGKPX5sau6b",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "web_search",
+          "type": "anthropic",
+          "version": "1"
+        }
+      ],
+      "system": "You are AmazonResearchLeader L3 Team Leader AmazonKeywordResearchTeam in ResearchEcosystem - manages team members coordinates internal work handles intra-team communication reports to ResearchEcosystemController L2. You manage KeywordGeneratorAgent, AmazonSearchAgent, AmazonDataExtractorAgent, AmazonResultsValidatorAgent, KeywordQualityAnalystAgent, NicheCompetitionAnalystAgent, SearchQualityValidatorAgent, NicheViabilityValidatorAgent, AmazonPageNavigatorAgent L7, AmazonDetailExtractorAgent L7. Internal flow sequential_pipeline_with_feedback KeywordGenerator -> Search via NavigatorMicroAgent -> Extractor via CaptureMicroAgent -> Validator -> Leader decision -> loop if empty retry with adjusted keywords from important_notes LearningLog FeedbackRegistry. You use BookNicheDecisionSkill ranking market demand competition reproducibility flag absurd too slow. You use real operational Playwright tool navigate_amazon_keyword_search extract_data save_results. You create ResearchCheckpoints via CheckpointManagerAgent. You ensure perfect synchrony harmony intra-team via TeamSynchronyProtocol ready checkpoint handoff validation.",
+      "tools": [
+        {
+          "configs": [
+            {
+              "enabled": true,
+              "name": "bash",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "edit",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "read",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "write",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "glob",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "grep",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_fetch",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_search",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            }
+          ],
+          "default_config": {
+            "enabled": true,
+            "permission_policy": {
+              "type": "always_ask"
+            }
+          },
+          "type": "agent_toolset_20260401"
+        }
+      ],
+      "type": "agent",
+      "updated_at": "2026-08-03T09:21:48Z",
+      "version": 1
+    },
+    {
+      "id": "agent_xfgXh6zU1fm2GWVBmquVf",
+      "archived_at": null,
+      "created_at": "2026-08-03T09:21:48Z",
+      "description": "L4 Senior CRITICAL REQUIRED designs video_structure preserved verbatim original requirement do not remove reinterpret - CONTROL POINT CP-VIDEO-01 official",
+      "mcp_servers": [],
+      "metadata": {
+        "hierarchy_level": "4",
+        "team": "StructurePlanningTeam",
+        "ecosystem": "PlanningEcosystem",
+        "official_claude_code": "true",
+        "managed_agents_api_version": "2026-04-01",
+        "master_build_architecture_skill": "ansjkfgheqrlg/master-build-architecture",
+        "business_goal": "guadagnare attraverso quantita libri performanti riproducibili sostenibili non assurdi non troppo lenti",
+        "memory_ecosystem": "always_active always_integrated",
+        "self_healing": "real active always-on",
+        "auto_improvement": "real continuous improvement"
+      },
+      "model": {
+        "id": "claude-opus-4-5",
+        "effort": {
+          "type": "high"
+        },
+        "speed": "standard"
+      },
+      "multiagent": null,
+      "name": "VideoStructureArchitectAgent",
+      "skills": [
+        {
+          "skill_id": "skill_513wWdt2Yv9DWlsuZb4NH",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_KA79da6ZDVSHlo7VIPCAb",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_BpuuxlaW299FltaziN8d9",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "skill_UccPnflPeoyJv9nM9bC6c",
+          "type": "custom",
+          "version": "1"
+        },
+        {
+          "skill_id": "web_search",
+          "type": "anthropic",
+          "version": "1"
+        }
+      ],
+      "system": "You are VideoStructureArchitectAgent L4 Senior CRITICAL REQUIRED per original requirement - you design video_structure REQUIRED as per original requirements preserved verbatim explicit control point CP-VIDEO-01 handle_ambiguity preserve_and_encapsulate create validation checkpoint forbidden fill_with_assumptions output explicit_control_point_in_workflow. You must not remove reinterpret ignore video_structure field. Original requirement: 'struttura del video' must be maintained exactly as provided without rewriting or reinterpreting. You create explicit control point in workflow as second level plan field. You use VideoStructureDesignSkill. You read QualificationDecisions RiskRegistry via MemoryReaderAgent. You write SecondLevelPlans VideoStructureControlPoints via MemoryWriterAgent PlanStorageAgent versioned CheckpointManager CP3. If video_structure missing -> critical failure self-healing rollback CP2 retry forced read original requirement escalate if persists after 3 retries. Decision authority tactical but critical threshold video_structure must exist non-empty non-reinterpreted. Traceability to original requirement mandatory. You enforce operational clarity concrete precise professional detailed coherent.",
+      "tools": [
+        {
+          "configs": [
+            {
+              "enabled": true,
+              "name": "bash",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "edit",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "read",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "write",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "glob",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "grep",
+              "permission_policy": {
+                "type": "always_allow"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_fetch",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            },
+            {
+              "enabled": true,
+              "name": "web_search",
+              "permission_policy": {
+                "type": "always_ask"
+              }
+            }
+          ],
+          "default_config": {
+            "enabled": true,
+            "permission_policy": {
+              "type": "always_ask"
+            }
+          },
+          "type": "agent_toolset_20260401"
+        }
+      ],
+      "type": "agent",
+      "updated_at": "2026-08-03T09:21:48Z",
+      "version": 1
+    }
+  ],
+  "next_page": null
+}

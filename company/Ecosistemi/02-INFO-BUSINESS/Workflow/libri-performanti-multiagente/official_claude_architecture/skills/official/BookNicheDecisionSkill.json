@@ -1,0 +1,12 @@
+{
+  "id": "skill_UlpTXTaSKMH3N2Qq19Yxg",
+  "name": "BookNicheDecisionSkill",
+  "description": "Decide which books and niches to target based on Amazon keyword search and review analysis sites signals, ranking by market demand competition reproducibility, flagging absurd too slow",
+  "type": "custom",
+  "version": "1",
+  "created_at": "2026-08-03T09:21:48Z",
+  "updated_at": "2026-08-03T09:21:48Z",
+  "official": true,
+  "managed_agents_api_compliant": true,
+  "anthropic_beta": "skills-2025-10-02"
+}

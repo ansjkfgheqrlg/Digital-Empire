@@ -166,8 +166,18 @@ def build_script_content() -> str:
     return "\n\n".join(all_chunks)
 
 
+# Modello di generazione video AI. `aiVideoClipPercentage` viene ignorato se questo campo NON
+# e' impostato (documentazione ufficiale): e' il motivo per cui il video v10 aveva tutte le
+# scene FERME nonostante il default del 20% — quel 20% non veniva mai applicato.
+AI_VIDEO_MODEL = "runware-kling-2.5-turbo"
+AI_VIDEO_CLIP_PERCENTAGE = 100   # tutte le scene come clip in movimento
+IMAGE_ANIMATION_PRESET = "Mix"   # movimento anche su eventuali immagini residue
+
+
 def generate_video(key: str, content: str, voice_id: str, file_name: str,
-                   visuals: str = "stock", art_style: str | None = None) -> str:
+                   visuals: str = "stock", art_style: str | None = None,
+                   ai_video_model: str | None = None,
+                   clip_percentage: int = AI_VIDEO_CLIP_PERCENTAGE) -> str:
     payload = {
         "payload": [{
             "workflowType": "script",
@@ -208,8 +218,16 @@ def generate_video(key: str, content: str, voice_id: str, file_name: str,
             "duration": 720,
         }]
     }
-    if visuals == "ai" and art_style:
-        payload["payload"][0]["artStyle"] = art_style
+    if visuals == "ai":
+        if art_style:
+            payload["payload"][0]["artStyle"] = art_style
+        # Senza `aiVideoModel` il campo `aiVideoClipPercentage` viene IGNORATO e le scene
+        # restano immagini ferme (verificato sul video v10: Gael — "sono meglio le immagini
+        # che si muovono nel video, non le immagini fisse").
+        if ai_video_model:
+            payload["payload"][0]["aiVideoModel"] = ai_video_model
+            payload["payload"][0]["aiVideoClipPercentage"] = clip_percentage
+            payload["payload"][0]["imageAnimationPreset"] = IMAGE_ANIMATION_PRESET
     res = _request("POST", "/generate/video", key, payload)
     files_created = (res.get("data") or {}).get("filesCreated") or []
     if not files_created:
@@ -257,8 +275,16 @@ def main():
     ap.add_argument("--visuals", choices=["ai", "stock"], default="ai")
     ap.add_argument("--art-style", default="realistic",
                     help="Solo con --visuals ai. Valori reali: cinematic, realistic, illustration, "
-                         "anime, comic book, 3d model, fantasy art, watercolor, line art, clay, "
-                         "whimsical, biblical, film noir, tiny world, technical illustration.")
+                         "anime, comicBook, threeDimensionModel, fantasyArt, waterColor, lineArt, "
+                         "modelingCompound, whimsical, biblical, filmNoir, tinyWorld, "
+                         "technicalIllustration.")
+    ap.add_argument("--ai-video-model", default=AI_VIDEO_MODEL,
+                    choices=["runware-kling-2.5-turbo", "runware-seedance-pro-fast",
+                             "runware-p-video", "runware-pixverse-v5-fast", "runware-ltx-2-fast",
+                             "nessuno"],
+                    help="Scene in MOVIMENTO invece che immagini ferme. 'nessuno' le lascia fisse.")
+    ap.add_argument("--clip-percentage", type=int, default=AI_VIDEO_CLIP_PERCENTAGE,
+                    help="Percentuale di scene resa come clip video (0-100).")
     args = ap.parse_args()
 
     key = _api_key()
@@ -266,9 +292,15 @@ def main():
 
     content = build_script_content()
     voice_id = find_italian_voice(key)
-    print(f"[+] Visuals: {args.visuals}" + (f" (artStyle={args.art_style})" if args.visuals == "ai" else " (default approvato)"))
+    modello = None if args.ai_video_model == "nessuno" else args.ai_video_model
+    if args.visuals == "ai":
+        print(f"[+] Visuals: ai (artStyle={args.art_style}, "
+              f"video={modello or 'NESSUNO — scene ferme'}, clip={args.clip_percentage}%)")
+    else:
+        print("[+] Visuals: stock (clip di repertorio)")
     file_id = generate_video(key, content, voice_id, args.file_name,
-                            visuals=args.visuals, art_style=args.art_style)
+                            visuals=args.visuals, art_style=args.art_style,
+                            ai_video_model=modello, clip_percentage=args.clip_percentage)
     download_url = poll_status(key, file_id)
 
     out_path = os.path.join(VIDEOS_DIR, f"{args.file_name}.mp4")
