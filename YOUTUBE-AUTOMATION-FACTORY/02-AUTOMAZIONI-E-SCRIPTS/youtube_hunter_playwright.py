@@ -14,7 +14,7 @@ resta come fallback in apex7_orchestrator._fetch_channel_videos_live().
 Uso:
     python youtube_hunter_playwright.py                    # @dosementale, max 60 video
     python youtube_hunter_playwright.py --handle @altro --max-video 100
-    python youtube_hunter_playwright.py --headless
+    python youtube_hunter_playwright.py --visibile   # finestra vera, per diagnosticare
 """
 import os
 import re
@@ -164,7 +164,7 @@ def estrai_video(page, max_video: int) -> list[dict]:
     return video
 
 
-def raccogli(handle: str, max_video: int, headless: bool) -> list[dict]:
+def raccogli(handle: str, max_video: int, *, headless: bool = True) -> list[dict]:
     os.makedirs(PROFILE_DIR, exist_ok=True)
     os.makedirs(CACHE_DIR, exist_ok=True)
 
@@ -223,11 +223,14 @@ def main():
     ap = argparse.ArgumentParser(description="Raccoglie i video reali di un canale YouTube via Playwright.")
     ap.add_argument("--handle", default="@dosementale")
     ap.add_argument("--max-video", type=int, default=60)
-    ap.add_argument("--headless", action="store_true",
-                    help="Senza finestra. Sconsigliato al primo giro: il banner cookie va accettato a mano.")
+    # Headless per DEFAULT (richiesta di Gael, 2026-08-04): una finestra del browser che si
+    # apre da sola ruba il focus a chi sta lavorando. Il banner dei cookie viene gestito dal
+    # codice, quindi non serve una finestra vera nemmeno al primo giro.
+    ap.add_argument("--visibile", action="store_true",
+                    help="Apre una finestra vera. Serve solo per capire perche' un fetch fallisce.")
     args = ap.parse_args()
 
-    video = raccogli(args.handle, args.max_video, args.headless)
+    video = raccogli(args.handle, args.max_video, headless=not args.visibile)
     if not video:
         raise SystemExit("[!] Nessun video reale raccolto. Nessuna cache scritta: meglio niente "
                          "che dati inventati.")

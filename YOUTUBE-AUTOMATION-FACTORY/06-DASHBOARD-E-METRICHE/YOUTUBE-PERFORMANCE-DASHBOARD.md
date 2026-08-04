@@ -1,10 +1,10 @@
 # YouTube Automation Factory - Performance Dashboard
 
-- **Ultimo Run ID**: yt-20260803-101249-ee0233
-- **Data Aggiornamento**: 2026-08-03 10:12:54
+- **Ultimo Run ID**: yt-20260804-094017-f02687
+- **Data Aggiornamento**: 2026-08-04 09:40:20
 - **Canale Target**: Dose Mentale (`@dosementale`)
-- **Video Replicato**: Hai 70-80 anni? SMETTI di Camminare tanto e fai SOLO Queste 2 Cose
-- **Idea Script (Fase 3)**: Dopo i 70 anni, camminare non basta più: le 2 cose che contano davvero
+- **Video Replicato**: Familiari Tossici? Ecco In Che Modo Dio Ti Allontana da Loro | Saggezza Biblica
+- **Idea Script (Fase 3)**: Familiari tossici: i 3 segnali che Dio ti sta già allontanando da loro
 - **SEO Score Metadati (Fase 5)**: 100.0
 - **Stato Fabbrica**: 🟢 OPERATIVA (6/6 fasi reali PASS)
 
@@ -12,7 +12,7 @@
 | Fase | Componente | Stato | Esito Gate | Criterio |
 |---|---|---|---|---|
 | F1 | Canale target | Completata | 🟢 PASS | Dati reali del canale fisso @dosementale (Cash Cow Index riportato, non bloccante) |
-| F2 | Selezione | Completata | 🟢 PASS | Video maturo (>=24h) con velocity reale >= 20.0 viste/ora |
+| F2 | Selezione | Completata | 🟢 PASS | Video maturo (>=24h), non gia' replicato, con velocity >= 3.0x la mediana del canale |
 | F3 | Script | Completata | 🟢 PASS | Critic score reale >= 7.5 (motore condiviso 11-APEX-7-CORE) |
 | F4 | Produzione | Completata | 🟢 PASS | Schema produzione-spec valido, scene reali da script.md |
 | F5 | Pubblicazione | Completata | 🟢 PASS | SEO score reale (seo_score.py) |

@@ -105,14 +105,33 @@ def _ngrammi(parole: list[str], n: int) -> set[str]:
     return {" ".join(parole[i:i + n]) for i in range(len(parole) - n + 1)}
 
 
+# Fonti citabili, per TEMA. La prima lista nasceva sul video di salute e conteneva solo
+# istituzioni di ricerca medica: su un contenuto spirituale non vedeva le citazioni bibliche e
+# bloccava uno script che il valore aggiunto ce l'aveva (falso negativo reale, 2026-08-04).
+# La nicchia copre spiritualita', psicologia, saggezza biblica E salute: servono entrambe.
+_FONTI = re.compile(
+    r"\b("
+    # ricerca e istituzioni sanitarie
+    r"Cleveland Clinic|Mayo Clinic|Stanford|Harvard|British Journal|PLOS|"
+    r"Istituto Superiore di Sanit[àa]|OMS|Journal of|uno studio|una ricerca|"
+    # testi e riferimenti della tradizione spirituale
+    r"Vangelo|Bibbia|Proverbi|Matteo|Luca|Giovanni|Salmi|Qoelet|Siracide|"
+    r"Scrittura|Genesi|Corinzi"
+    r")\b",
+    re.IGNORECASE,
+)
+
+
 def _elementi_nuovi(script: str) -> list[str]:
-    """Segnali concreti di valore aggiunto: studi citati, numeri, fonti."""
-    trovati = []
-    for m in re.finditer(r"\b(Cleveland Clinic|Mayo Clinic|Stanford|Harvard|British Journal|"
-                         r"Istituto Superiore di Sanit[àa]|OMS|Journal of|uno studio)\b",
-                         script, re.IGNORECASE):
-        trovati.append(m.group(0))
-    return sorted(set(trovati))
+    """Segnali concreti e verificabili di valore aggiunto: fonti e riferimenti citati.
+
+    Limite dichiarato: questa e' una misura *approssimata*. Un contributo originale puo'
+    consistere in una struttura o in un ragionamento nuovi, che nessuna espressione regolare
+    sa riconoscere. Per questo il giudizio finale sul valore aggiunto resta di `capo-copy`:
+    qui si verifica solo che lo script non sia una parafrasi priva di apporti propri.
+    """
+    trovati = [m.group(0) for m in _FONTI.finditer(script)]
+    return sorted({t.strip() for t in trovati})
 
 
 def verifica_originalita(script: str, transcript: str) -> dict:

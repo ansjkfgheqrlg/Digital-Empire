@@ -1,6 +1,6 @@
 {
   "handle": "@dosementale",
-  "fetched_at": "2026-08-03T09:49:50.880409",
+  "fetched_at": "2026-08-04T09:45:44.825151",
   "fonte": "playwright",
   "videos": [
     {
@@ -21,8 +21,8 @@
       "videoId": "MDF0nZAatLE",
       "title": "Ecco Come Dio Allontana I Familiari Che Non Ti Amano Veramente | Saggezza Biblica",
       "url": "https://www.youtube.com/watch?v=MDF0nZAatLE",
-      "views": 2400.0,
-      "age_hours": 288.0
+      "views": 2500.0,
+      "age_hours": 312.0
     },
     {
       "videoId": "fatYtX2wowY",
@@ -77,7 +77,7 @@
       "videoId": "bPJa57zvfKY",
       "title": "I 4 Segnali iniziali di TUTTE LE FALSE AMICIZIE | Psicologia e Amicizia",
       "url": "https://www.youtube.com/watch?v=bPJa57zvfKY",
-      "views": 9900.0,
+      "views": 10000.0,
       "age_hours": 3650.0
     },
     {
@@ -85,7 +85,7 @@
       "title": "Riconosci in 4 PASSI una PERSONA ALTAMENTE PERICOLOSA nella tua vita | Relazioni e Psicologia",
       "url": "https://www.youtube.com/watch?v=Df_NP1TCEu4",
       "views": 7500.0,
-      "age_hours": 2920.0
+      "age_hours": 3650.0
     },
     {
       "videoId": "311p1iTiTL4",
@@ -144,13 +144,6 @@
       "age_hours": 2920.0
     },
     {
-      "videoId": "NxgSwuBAsEU",
-      "title": "La Psicologia Dietro Le Persone Che Amano Avere La Casa Pulita",
-      "url": "https://www.youtube.com/watch?v=NxgSwuBAsEU",
-      "views": 1700.0,
-      "age_hours": 2190.0
-    },
-    {
       "videoId": "sRCemvdPjeg",
       "title": "La Storia dell’Uccello che si Lamentò con Dio | Riflessioni sulla Vita",
       "url": "https://www.youtube.com/watch?v=sRCemvdPjeg",
@@ -172,11 +165,11 @@
       "age_hours": 2190.0
     },
     {
-      "videoId": "4aI3W2br72o",
-      "title": "Non Difenderti Mai | Il Trucco Di Machiavelli Per Capovolgere Il Potere",
-      "url": "https://www.youtube.com/watch?v=4aI3W2br72o",
-      "views": 2500.0,
-      "age_hours": 3650.0
+      "videoId": "NxgSwuBAsEU",
+      "title": "La Psicologia Dietro Le Persone Che Amano Avere La Casa Pulita",
+      "url": "https://www.youtube.com/watch?v=NxgSwuBAsEU",
+      "views": 1700.0,
+      "age_hours": 2920.0
     },
     {
       "videoId": "TiZRMd2AO20",
@@ -198,6 +191,13 @@
       "url": "https://www.youtube.com/watch?v=9b26gLLfSjo",
       "views": 1700.0,
       "age_hours": 2920.0
+    },
+    {
+      "videoId": "4aI3W2br72o",
+      "title": "Non Difenderti Mai | Il Trucco Di Machiavelli Per Capovolgere Il Potere",
+      "url": "https://www.youtube.com/watch?v=4aI3W2br72o",
+      "views": 2500.0,
+      "age_hours": 4380.0
     },
     {
       "videoId": "47FJRCCh5hs",
@@ -252,7 +252,7 @@
       "videoId": "_4sHiaKensE",
       "title": "Hai Troppi Interessi? Ecco La Strategia Di Carriera Che Nessuno Ti Ha Mai Spiegato",
       "url": "https://www.youtube.com/watch?v=_4sHiaKensE",
-      "views": 655.0,
+      "views": 656.0,
       "age_hours": 3650.0
     }
   ]

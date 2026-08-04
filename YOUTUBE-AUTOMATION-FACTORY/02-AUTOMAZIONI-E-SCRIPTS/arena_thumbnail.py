@@ -11,6 +11,7 @@ import os
 import sys
 import time
 import json
+import argparse
 from playwright.sync_api import sync_playwright
 
 # Forza stdout/stderr in utf-8 su Windows, line_buffering=True obbligatorio: senza, quando
@@ -29,6 +30,10 @@ FACTORY_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
 PROFILE_DIR = os.path.join(FACTORY_DIR, "chrome-profile-arena")
 OUT_DIR = os.path.join(FACTORY_DIR, "05-TEMPLATES-E-KIT")
 STATUS_FILE = os.path.join(FACTORY_DIR, "memory", "arena_thumbnail_status.json")
+
+#: Impostato da main(). Headless per default: una finestra che si apre da sola
+#: interrompe il lavoro di chi sta usando il computer.
+HEADLESS = True
 
 os.makedirs(PROFILE_DIR, exist_ok=True)
 os.makedirs(OUT_DIR, exist_ok=True)
@@ -207,6 +212,16 @@ def run_attempt(page, brief, image_path, tentativo: int) -> list:
     # Login richiesto? Attesa nativa di Playwright (wait_for state=hidden).
     google_btn = page.get_by_role("button", name="Continue with Google")
     if google_btn.is_visible():
+        if HEADLESS:
+            # Senza finestra visibile nessuno puo' fare il login: aspettare 15 minuti sarebbe
+            # solo tempo perso. Si fallisce subito dicendo cosa fare.
+            write_status(
+                "login_richiesto_ma_headless",
+                messaggio="La sessione Arena e' scaduta. Rilancia UNA VOLTA con --visibile, "
+                          "fai il login a mano, poi i run successivi tornano headless da soli "
+                          "(il profilo e' persistente).",
+            )
+            return []
         write_status("attesa_login", messaggio="Login manuale richiesto nella finestra Chrome aperta — attendo fino a 15 minuti")
         try:
             google_btn.wait_for(state="hidden", timeout=900000)
@@ -235,14 +250,26 @@ def run_attempt(page, brief, image_path, tentativo: int) -> list:
 
 
 def main():
+    ap = argparse.ArgumentParser(description="Genera la copertina su Arena adattando quella reale del video sorgente.")
+    # Headless per DEFAULT (richiesta di Gael, 2026-08-04): una finestra del browser che si apre
+    # da sola ruba il focus e interrompe il lavoro. La sessione Google resta valida perche' il
+    # profilo persistente e' lo stesso: headless non significa "senza login".
+    ap.add_argument("--visibile", action="store_true",
+                    help="Apre una finestra vera. Serve SOLO per il primo login manuale su Arena.")
+    args = ap.parse_args()
+
+    global HEADLESS
+    HEADLESS = not args.visibile
+
     brief = load_brief()
     image_path = source_thumbnail_path(brief)
-    write_status("avviato", miniatura_sorgente=image_path, titolo=brief["title"])
+    write_status("avviato", miniatura_sorgente=image_path, titolo=brief["title"],
+                 headless=not args.visibile)
 
     with sync_playwright() as p:
         context = p.chromium.launch_persistent_context(
             user_data_dir=PROFILE_DIR,
-            headless=False,
+            headless=not args.visibile,
             viewport={"width": 1440, "height": 900},
             args=["--disable-blink-features=AutomationControlled"],
         )

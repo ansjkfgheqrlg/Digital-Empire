@@ -19,6 +19,7 @@ import subprocess
 import urllib.request
 import urllib.error
 import importlib.util
+import statistics
 from datetime import datetime
 
 # Forza stdout e stderr in utf-8 su Windows per prevenire errori cp1252. line_buffering=True
@@ -136,13 +137,22 @@ os.makedirs(CHANNEL_VIDEOS_CACHE_DIR, exist_ok=True)
 CHANNEL_CACHE_TTL_HOURS = 168  # 7 giorni
 VIDEO_MATURITY_FLOOR_HOURS = 24  # sotto questa età, la velocity views/ora è troppo rumorosa
 
-# Gate REALE della pipeline (F2): il video da copiare deve avere una velocity reale almeno pari
-# alla soglia con cui cashcow_check.py considera "performante" un video. Se nemmeno il migliore
-# del canale la supera, non c'e' niente che valga la pena replicare adesso e la fase fallisce
-# onestamente. Stessa soglia di cashcow_check.MIN_VPH, importata per non duplicare il numero.
-MIN_VPH_VIDEO = _load_module_from_path(
+# Soglia con cui cashcow_check.py considera "performante" un video in assoluto. Serve a
+# giudicare un CANALE, ed e' riportata qui per riferimento.
+MIN_VPH_ASSOLUTO_CANALE = _load_module_from_path(
     "apex7_cashcow_check", os.path.join(SCRIPT_DIR, "cashcow_check.py")
 ).MIN_VPH
+
+# Gate REALE della pipeline (F2): il video da replicare deve essere un OUTLIER rispetto al
+# proprio canale, non superare una soglia assoluta.
+#
+# Perche' relativa e non fissa (correzione del 2026-08-04): con la soglia assoluta a 20 viste/ora
+# la fabbrica si bloccava dopo UN SOLO video. Su @dosementale la mediana reale e' ~1.2 viste/ora:
+# il secondo miglior video del catalogo ne fa 15.5, cioe' 12 volte la mediana — funziona
+# chiaramente — ma restava sotto una soglia pensata per un altro scopo. Cio' che conta per
+# scegliere DENTRO un canale e' distinguersi dal resto di quel canale.
+VIDEO_MULTIPLO_MEDIANA = 3.0   # almeno 3x la mediana del canale
+VIDEO_VPH_MINIMO = 2.0         # pavimento assoluto: esclude "il migliore di un canale morto"
 
 
 def _cache_path_for_handle(handle: str) -> str:
@@ -311,6 +321,10 @@ def _fetch_transcript(video_id: str, url: str, out_dir: str) -> str | None:
 
 
 PUBLISHED_VIDEOS_PATH = os.path.join(MEMORY_DIR, "published_videos.json")
+
+# Registro dei video REALMENTE generati (scritto da fliki_client.py al download dell'mp4).
+# E' la fonte di verita' per sapere quali video sorgente non vanno piu' riproposti da F2.
+VIDEO_PRODOTTI_PATH = os.path.join(MEMORY_DIR, "video_prodotti.json")
 
 
 def _extract_youtube_id(url: str) -> str:
@@ -595,7 +609,8 @@ class Apex7Orchestrator:
 
     _PHASE_INFO = {
         1: ("Canale target", "Dati reali del canale fisso @dosementale (Cash Cow Index riportato, non bloccante)"),
-        2: ("Selezione", f"Video maturo (>=24h) con velocity reale >= {MIN_VPH_VIDEO} viste/ora"),
+        2: ("Selezione", f"Video maturo (>=24h), non gia' replicato, con velocity >= "
+                         f"{VIDEO_MULTIPLO_MEDIANA}x la mediana del canale"),
         3: ("Script", "Critic score reale >= 7.5 (motore condiviso 11-APEX-7-CORE)"),
         4: ("Produzione", "Schema produzione-spec valido, scene reali da script.md"),
         5: ("Pubblicazione", "SEO score reale (seo_score.py)"),
@@ -701,6 +716,29 @@ class Apex7Orchestrator:
 
         return [], "nessuna"
 
+    def _video_gia_prodotti(self) -> set[str]:
+        """videoId dei video sorgente per cui il VIDEO E' GIA' STATO GENERATO.
+
+        Attenzione a cosa conta come "prodotto": il registro `memory/video_prodotti.json`,
+        scritto da `fliki_client.py` quando un mp4 viene davvero scaricato, piu' il manifest
+        dei video pubblicati.
+
+        **Non** basta l'esistenza dello script adattato: uno script scritto significa "pronto
+        da produrre", non "fatto". Contarlo come prodotto creava un vicolo cieco — F2 scartava
+        il video, quindi F3 non trovava mai lo script appena scritto (difetto introdotto e
+        corretto il 2026-08-04).
+        """
+        prodotti: set[str] = set()
+        for voce in self.load_json(VIDEO_PRODOTTI_PATH, []):
+            sorgente = voce.get("source_video_id")
+            if sorgente:
+                prodotti.add(sorgente)
+        for voce in self.load_json(PUBLISHED_VIDEOS_PATH, []):
+            sorgente = voce.get("source_video_id")
+            if sorgente:
+                prodotti.add(sorgente)
+        return prodotti
+
     def _seo_score_title_only(self, title: str, keyword: str) -> float:
         """SEO score reale calcolato solo sul titolo: non abbiamo descrizione/tag reali per
         video di canali terzi, quindi non li inventiamo (restano ai default assenti di
@@ -756,8 +794,9 @@ class Apex7Orchestrator:
             f.write(f"- Viste reali del campione: min {min(viste):.0f} / max {max(viste):.0f} / media {sum(viste)/len(viste):.0f}\n")
             f.write(f"- Velocity media reale del campione: {cashcow.get('avg_views_per_hour')} viste/ora\n")
             f.write(f"- Indice Cash Cow (su dati singolo-video reali): {indice} — informativo, non bloccante\n")
-            f.write(f"- Gate reale della pipeline: velocity del singolo video scelto in F2 "
-                    f"(>= {MIN_VPH_VIDEO} viste/ora)\n")
+            f.write("- Gate reale della pipeline: il video scelto in F2 deve fare almeno "
+                    f"{VIDEO_MULTIPLO_MEDIANA}x la mediana del proprio canale, e non essere "
+                    "già stato replicato\n")
 
         self.log_decision(
             "DEC-nicchia-001",
@@ -798,11 +837,30 @@ class Apex7Orchestrator:
         if not maturi:
             print(f"[!] ERRORE: nessun video di {canale_nome} supera la soglia di maturità ({VIDEO_MATURITY_FLOOR_HOURS}h) per una stima di velocity affidabile.")
             return False
+
+        # 🚫 Esclude i video che ABBIAMO GIA' REPLICATO. Senza questo filtro la fase sceglieva
+        # ogni volta lo stesso video (il primo per velocity) e la fabbrica produceva sempre lo
+        # stesso contenuto — lacuna reale trovata il 2026-08-03. La fabbrica deve scorrere il
+        # catalogo, non ripetersi.
+        # La mediana si calcola su TUTTI i video maturi, prima di escludere i gia' prodotti:
+        # e' la fotografia del canale, non della coda che ci resta da lavorare.
+        mediana_canale = statistics.median([v["vph"] for v in maturi])
+
+        gia_prodotti = self._video_gia_prodotti()
+        if gia_prodotti:
+            prima = len(maturi)
+            maturi = [v for v in maturi if v.get("videoId") not in gia_prodotti]
+            print(f"[🔬 ANALYST] Esclusi {prima - len(maturi)} video già replicati "
+                  f"({', '.join(sorted(gia_prodotti))}).")
+        if not maturi:
+            print(f"[!] ERRORE: tutti i video maturi di {canale_nome} sono già stati replicati. "
+                  f"Attendere nuove pubblicazioni sul canale.")
+            return False
+
         maturi.sort(key=lambda x: -x["vph"])
 
         # Punteggio SEO reale (solo titolo: nessun dato reale di descrizione/tag per video di terzi).
-        # Keyword ricavata dal video piu' performante del canale, non piu' fissa sul funnel morto.
-        maturi.sort(key=lambda x: -x["vph"])
+        # Keyword ricavata dal miglior candidato ANCORA DISPONIBILE.
         keyword = _keyword_from_title(maturi[0]["title"])
         print(f"[🔬 ANALYST] Keyword reale ricavata dal video top del canale: '{keyword}'")
         for v in maturi:
@@ -811,19 +869,27 @@ class Apex7Orchestrator:
         top = maturi[:5] if len(maturi) >= 5 else maturi
         a_upside = top[0]  # massima velocity reale = massima prova di domanda
 
-        # 🚧 Gate reale della pipeline: se nemmeno il video piu' veloce del canale supera la
-        # soglia di "video performante", non c'e' niente che valga la pena replicare adesso.
-        if a_upside["vph"] < MIN_VPH_VIDEO:
-            print(f"[🔴 CRITIC] Video-gate FAIL: il miglior video di {canale_nome} fa {a_upside['vph']} "
-                  f"viste/ora, sotto la soglia di {MIN_VPH_VIDEO}. Nessun candidato da replicare adesso.")
+        # 🚧 Gate reale della pipeline: il candidato deve essere un OUTLIER del proprio canale.
+        # Confronto relativo alla mediana, non a una soglia assoluta: vedi il commento su
+        # VIDEO_MULTIPLO_MEDIANA per il perche'.
+        soglia_relativa = max(mediana_canale * VIDEO_MULTIPLO_MEDIANA, VIDEO_VPH_MINIMO)
+        multiplo = a_upside["vph"] / mediana_canale if mediana_canale else 0.0
+        print(f"[🔬 ANALYST] Mediana del canale: {mediana_canale:.2f} viste/ora — soglia "
+              f"candidato: {soglia_relativa:.2f} ({VIDEO_MULTIPLO_MEDIANA}x la mediana).")
+        if a_upside["vph"] < soglia_relativa:
+            print(f"[🔴 CRITIC] Video-gate FAIL: il miglior candidato di {canale_nome} fa "
+                  f"{a_upside['vph']} viste/ora ({multiplo:.1f}x la mediana), sotto la soglia di "
+                  f"{soglia_relativa:.2f}. Nessun candidato da replicare adesso.")
             self.log_decision(
                 "DEC-video-001",
                 "Nessun video del canale supera il video-gate",
-                f"Miglior velocity reale {a_upside['vph']} viste/ora su {len(maturi)} video maturi, "
-                f"sotto la soglia {MIN_VPH_VIDEO}: replicare un video che non sta funzionando non ha senso.",
+                f"Miglior velocity reale {a_upside['vph']} viste/ora ({multiplo:.1f}x la mediana "
+                f"del canale, {mediana_canale:.2f}) su {len(maturi)} candidati disponibili: non si "
+                f"distingue abbastanza dal resto del catalogo per giustificare una replica.",
                 [v["title"] for v in top[1:3]], 0.0
             )
             return False
+        print(f"[🔬 ANALYST] Video-gate PASS: {a_upside['vph']} viste/ora = {multiplo:.1f}x la mediana.")
         # B-sicurezza: il successivo per velocity con SEO reale già pari o superiore ad A —
         # un'alternativa più prudente, già meglio posizionata sulla nostra keyword.
         b_sicurezza = next((v for v in top[1:] if v["seo_score"] >= a_upside["seo_score"]), None)

@@ -33,7 +33,8 @@ def main():
     with sync_playwright() as p:
         context = p.chromium.launch_persistent_context(
             user_data_dir=PROFILE_DIR,
-            headless=False,
+            # Headless: nessuna finestra che ruba il focus (richiesta di Gael, 2026-08-04).
+            headless=True,
             viewport={"width": 1440, "height": 900},
             args=["--disable-blink-features=AutomationControlled"],
         )

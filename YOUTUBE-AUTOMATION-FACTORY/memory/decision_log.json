@@ -626,5 +626,147 @@
     ],
     "confidence": 0.8,
     "timestamp": "2026-08-03T10:12:54.245510"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260804-093109-80ece4",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25250, velocity media 9.1 viste/ora, indice cash cow reale 21.0 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-04T09:31:09.739332"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260804-093109-80ece4",
+    "decision": "Nessun video del canale supera il video-gate",
+    "reason": "Miglior velocity reale 15.53 viste/ora su 35 video maturi, sotto la soglia 20.0: replicare un video che non sta funzionando non ha senso.",
+    "alternatives_rejected": [
+      "Ecco Come Dio Allontana I Familiari Che Non Ti Amano Veramente | Saggezza Biblica",
+      "Le 2 PAROLE che Ti Svelano le Persone False e Tossiche (funziona sempre) | Fatti Psicologici"
+    ],
+    "confidence": 0.0,
+    "timestamp": "2026-08-04T09:31:12.962763"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260804-093123-5d2d2d",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25250, velocity media 9.1 viste/ora, indice cash cow reale 21.0 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-04T09:31:23.950377"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260804-093123-5d2d2d",
+    "decision": "Nessun video del canale supera il video-gate",
+    "reason": "Miglior velocity reale 15.53 viste/ora su 35 video maturi, sotto la soglia 20.0: replicare un video che non sta funzionando non ha senso.",
+    "alternatives_rejected": [
+      "Ecco Come Dio Allontana I Familiari Che Non Ti Amano Veramente | Saggezza Biblica",
+      "Le 2 PAROLE che Ti Svelano le Persone False e Tossiche (funziona sempre) | Fatti Psicologici"
+    ],
+    "confidence": 0.0,
+    "timestamp": "2026-08-04T09:31:26.828233"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260804-093336-5c2321",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25250, velocity media 9.1 viste/ora, indice cash cow reale 21.0 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-04T09:33:36.503735"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260804-093336-5c2321",
+    "decision": "Scelta video target: Familiari Tossici? Ecco In Che Modo Dio Ti Allontana da Loro | Saggezza Biblica",
+    "reason": "Velocity reale 15.53 views/ora (34000 viste in 2190h) su Dose Mentale — SEO score reale del titolo 17.5/100 per keyword 'familiari tossici': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Ecco Come Dio Allontana I Familiari Che Non Ti Amano Veramente | Saggezza Biblica"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-04T09:33:39.819819"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260804-093612-492cba",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25250, velocity media 9.1 viste/ora, indice cash cow reale 21.0 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-04T09:36:12.929605"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260804-093612-492cba",
+    "decision": "Scelta video target: Ecco Come Dio Allontana I Familiari Che Non Ti Amano Veramente | Saggezza Biblica",
+    "reason": "Velocity reale 8.33 views/ora (2400 viste in 288h) su Dose Mentale — SEO score reale del titolo 17.5/100 per keyword 'ecco come dio allontana': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Le 2 PAROLE che Ti Svelano le Persone False e Tossiche (funziona sempre) | Fatti Psicologici"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-04T09:36:16.410270"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260804-093756-64e1d0",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25250, velocity media 9.1 viste/ora, indice cash cow reale 21.0 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-04T09:37:56.833174"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260804-093756-64e1d0",
+    "decision": "Scelta video target: Familiari Tossici? Ecco In Che Modo Dio Ti Allontana da Loro | Saggezza Biblica",
+    "reason": "Velocity reale 15.53 views/ora (34000 viste in 2190h) su Dose Mentale — SEO score reale del titolo 17.5/100 per keyword 'familiari tossici': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Ecco Come Dio Allontana I Familiari Che Non Ti Amano Veramente | Saggezza Biblica"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-04T09:38:00.956190"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260804-093851-c2d7fd",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25250, velocity media 9.1 viste/ora, indice cash cow reale 21.0 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-04T09:38:51.281173"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260804-093851-c2d7fd",
+    "decision": "Scelta video target: Familiari Tossici? Ecco In Che Modo Dio Ti Allontana da Loro | Saggezza Biblica",
+    "reason": "Velocity reale 15.53 views/ora (34000 viste in 2190h) su Dose Mentale — SEO score reale del titolo 17.5/100 per keyword 'familiari tossici': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Ecco Come Dio Allontana I Familiari Che Non Ti Amano Veramente | Saggezza Biblica"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-04T09:38:54.855913"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260804-094017-f02687",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25250, velocity media 9.1 viste/ora, indice cash cow reale 21.0 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-04T09:40:17.429059"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260804-094017-f02687",
+    "decision": "Scelta video target: Familiari Tossici? Ecco In Che Modo Dio Ti Allontana da Loro | Saggezza Biblica",
+    "reason": "Velocity reale 15.53 views/ora (34000 viste in 2190h) su Dose Mentale — SEO score reale del titolo 17.5/100 per keyword 'familiari tossici': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Ecco Come Dio Allontana I Familiari Che Non Ti Amano Veramente | Saggezza Biblica"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-04T09:40:20.516755"
   }
 ]

@@ -263,6 +263,50 @@ def download_file(url: str, out_path: str):
             f.write(resp.read())
 
 
+VIDEO_PRODOTTI_PATH = os.path.join(FACTORY_DIR, "memory", "video_prodotti.json")
+
+
+def registra_video_prodotto(out_path: str, file_name: str) -> None:
+    """Annota nel registro che il video sorgente e' stato replicato.
+
+    E' cosi' che F2 sa quali video NON riproporre: senza questo registro la fabbrica
+    sceglierebbe ogni volta lo stesso video (il primo per velocity) e produrrebbe sempre lo
+    stesso contenuto. Il videoId sorgente si legge dall'intestazione di script.md, dove F3 lo
+    scrive insieme all'URL del riferimento.
+    """
+    script_path = os.path.join(TEMPLATES_DIR, "script.md")
+    source_id = ""
+    titolo = ""
+    if os.path.exists(script_path):
+        testo = open(script_path, encoding="utf-8").read()
+        m = re.search(r"youtube\.com/watch\?v=([\w-]+)", testo)
+        source_id = m.group(1) if m else ""
+        t = re.search(r"^#\s*Script:\s*(.+)", testo, re.MULTILINE)
+        titolo = t.group(1).strip() if t else ""
+    if not source_id:
+        print("[!] Video sorgente non ricavabile da script.md: registro non aggiornato. "
+              "F2 potrebbe riproporre lo stesso video.")
+        return
+
+    os.makedirs(os.path.dirname(VIDEO_PRODOTTI_PATH), exist_ok=True)
+    registro = []
+    if os.path.exists(VIDEO_PRODOTTI_PATH):
+        try:
+            registro = json.load(open(VIDEO_PRODOTTI_PATH, encoding="utf-8"))
+        except (json.JSONDecodeError, ValueError):
+            registro = []
+    registro = [v for v in registro if v.get("source_video_id") != source_id]
+    registro.append({
+        "source_video_id": source_id,
+        "titolo_nostro": titolo,
+        "file": os.path.basename(out_path),
+        "prodotto_il": time.strftime("%Y-%m-%dT%H:%M:%S"),
+    })
+    with open(VIDEO_PRODOTTI_PATH, "w", encoding="utf-8") as f:
+        json.dump(registro, f, ensure_ascii=False, indent=2)
+    print(f"[+] Registrato: il video sorgente {source_id} non verra' piu' riproposto da F2.")
+
+
 def main():
     ap = argparse.ArgumentParser(description="Genera il video reale via API Fliki dalla spec F3/F4.")
     ap.add_argument("--file-name", default="dosementale-video")
@@ -306,6 +350,7 @@ def main():
     out_path = os.path.join(VIDEOS_DIR, f"{args.file_name}.mp4")
     download_file(download_url, out_path)
     print(f"[+] Video reale scaricato: {out_path}")
+    registra_video_prodotto(out_path, args.file_name)
 
 
 if __name__ == "__main__":
