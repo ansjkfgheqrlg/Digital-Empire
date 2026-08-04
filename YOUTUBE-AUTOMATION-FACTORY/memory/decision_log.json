@@ -768,5 +768,25 @@
     ],
     "confidence": 0.8,
     "timestamp": "2026-08-04T09:40:20.516755"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260804-100647-473c38",
+    "decision": "Canale target confermato: Dose Mentale (@dosementale)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 25260, velocity media 9.1 viste/ora, indice cash cow reale 21.0 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-04T10:06:47.297829"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260804-100647-473c38",
+    "decision": "Scelta video target: Ecco Come Dio Allontana I Familiari Che Non Ti Amano Veramente | Saggezza Biblica",
+    "reason": "Velocity reale 8.01 views/ora (2500 viste in 312h) su Dose Mentale — SEO score reale del titolo 17.5/100 per keyword 'ecco come dio allontana': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "Le 2 PAROLE che Ti Svelano le Persone False e Tossiche (funziona sempre) | Fatti Psicologici"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-04T10:06:51.110443"
   }
 ]

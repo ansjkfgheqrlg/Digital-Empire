@@ -91,6 +91,16 @@ CANALE_TARGET = {
 # minuti. Verificata sempre sul file mp4 reale, non sulla risposta dell'API.
 AP_VIDEO_SYSTEM_DURATION = "12-15 minuti"
 
+# Ritmo REALE di lettura della voce usata (Calimero), MISURATO sui video prodotti:
+#   2186 parole -> 755s = 173.7 parole/minuto
+#   1865 parole -> 605s = 185.0 parole/minuto
+# Si usa il valore piu'alto: sovrastimare il ritmo significa chiedere piu' parole, quindi
+# sbagliare per eccesso di durata invece che per difetto. La stima precedente (140 p/m) era
+# un valore da manuale, non misurato: dava "13.3 minuti" per uno script che ne ha prodotti
+# 10, e faceva passare il gate a uno script troppo corto (difetto reale, 2026-08-04).
+PAROLE_AL_MINUTO = 185
+PAROLE_MINIME_SCRIPT = int(12 * PAROLE_AL_MINUTO)  # 2220 parole per stare sopra i 12 minuti
+
 # Script adattati (uno per video sorgente, scritti a mano dal transcript REALE del video).
 # Non generiamo il parlato a runtime: un testo riscritto davvero richiede un lavoro di scrittura,
 # e copiare il transcript verbatim non e' ammesso. F3 pesca qui per `<videoId>.md`.
@@ -731,7 +741,10 @@ class Apex7Orchestrator:
         prodotti: set[str] = set()
         for voce in self.load_json(VIDEO_PRODOTTI_PATH, []):
             sorgente = voce.get("source_video_id")
-            if sorgente:
+            # Un video che ha FALLITO il controllo qualita' non e' fatto: va rilavorato, quindi
+            # il suo sorgente resta disponibile. Senza questa condizione un video scartato dal
+            # QC bloccava per sempre il proprio argomento (difetto reale, 2026-08-04).
+            if sorgente and voce.get("qc") != "fallito":
                 prodotti.add(sorgente)
         for voce in self.load_json(PUBLISHED_VIDEOS_PATH, []):
             sorgente = voce.get("source_video_id")
@@ -1027,7 +1040,7 @@ class Apex7Orchestrator:
             score, metrics = self.execute_critic("Script Rafforzato", script_text, required_sections=script_sections)
 
         parole = len(re.findall(r"[a-zA-ZàèéìòùÀÈÉÌÒÙ']+", script_text))
-        minuti_stimati = parole / 140
+        minuti_stimati = parole / PAROLE_AL_MINUTO
         print(f"[✍️ WRITER] Script adattato reale per il video {video_id}: \"{titolo[:60]}\" "
               f"({parole} parole ≈ {minuti_stimati:.1f} min di parlato).")
         if minuti_stimati < 12:

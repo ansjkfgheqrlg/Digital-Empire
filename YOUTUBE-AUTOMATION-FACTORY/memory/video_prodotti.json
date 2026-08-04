@@ -4,5 +4,13 @@
     "titolo_nostro": "Dopo i 70 anni, camminare non basta più: le 2 cose che contano davvero",
     "file": "dopo-70-anni-v11-MOVIMENTO.mp4",
     "prodotto_il": "2026-08-03T11:15:00"
+  },
+  {
+    "source_video_id": "eax7OPi1q0M",
+    "titolo_nostro": "Familiari tossici: i 3 segnali che Dio ti sta già allontanando da loro",
+    "file": "familiari-tossici-3-segnali.mp4",
+    "prodotto_il": "2026-08-04T10:03:24",
+    "qc": "fallito",
+    "qc_motivo": "durata 605s < 720s richiesti"
   }
 ]

@@ -288,6 +288,36 @@ def verifica_qualita(percorso_mp4: str) -> dict:
 # --------------------------------------------------------------------------------------
 # Registro delle firme (principio delle 3 firme)
 # --------------------------------------------------------------------------------------
+VIDEO_PRODOTTI_PATH = os.path.join(MEMORY_DIR, "video_prodotti.json")
+
+
+def aggiorna_qc_registro(source_video_id: str, superato: bool, motivo: str = "") -> None:
+    """Scrive l'esito del controllo qualita' nel registro dei video prodotti.
+
+    Serve a F2: un video che ha fallito il QC non e' fatto, quindi il suo argomento deve
+    tornare disponibile per essere rilavorato. Senza questo passaggio un video scartato
+    bloccava per sempre il proprio sorgente.
+    """
+    if not source_video_id or not os.path.exists(VIDEO_PRODOTTI_PATH):
+        return
+    try:
+        registro = json.load(open(VIDEO_PRODOTTI_PATH, encoding="utf-8"))
+    except (json.JSONDecodeError, ValueError):
+        return
+    cambiato = False
+    for voce in registro:
+        if voce.get("source_video_id") == source_video_id:
+            voce["qc"] = "superato" if superato else "fallito"
+            if motivo:
+                voce["qc_motivo"] = motivo
+            cambiato = True
+    if cambiato:
+        with open(VIDEO_PRODOTTI_PATH, "w", encoding="utf-8") as f:
+            json.dump(registro, f, ensure_ascii=False, indent=2)
+        stato = "superato" if superato else "FALLITO"
+        print(f"[i] Registro aggiornato: QC {stato} per il sorgente {source_video_id}.")
+
+
 def registra_firma(run_id: str, artefatto: str, operatore: str, capo: str,
                    verdetti: list[dict]) -> dict:
     """Registra le 3 firme di un artefatto. Se un regolatore ha bloccato, la firma NON e' valida."""
@@ -348,7 +378,16 @@ def main():
             verdetti.append(verifica_originalita(script, transcript))
 
     if args.mp4:
-        verdetti.append(verifica_qualita(args.mp4))
+        esito_qualita = verifica_qualita(args.mp4)
+        verdetti.append(esito_qualita)
+        # L'esito finisce nel registro: F2 deve poter rimettere in lavorazione un video
+        # scartato dal controllo qualita'.
+        if video_id:
+            aggiorna_qc_registro(
+                video_id,
+                superato=esito_qualita["esito"] == "passa",
+                motivo="; ".join(esito_qualita.get("problemi", [])),
+            )
 
     for v in verdetti:
         simbolo = "🟢" if v["esito"] == "passa" else "🔴"
