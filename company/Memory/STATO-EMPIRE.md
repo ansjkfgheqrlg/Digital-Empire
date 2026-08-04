@@ -1,4 +1,38 @@
-# STATO EMPIRE -- aggiornato 2026-08-03 (Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-04 (Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## ⏸️ 2026-08-04 — CLAUDE: Audit YOUTUBE-AUTOMATION-FACTORY (33 agenti Gael) + mappa file-per-file — PAUSA su richiesta Max (crediti) — CP-20260804-001
+
+Max ha chiesto conferma che 6 capacità richieste a Gael fossero "implementate in modo perfetto,
+collegate a tutto l'ecosistema": team copy, regolatori, copertine originali riadattate, team
+competitor/performance, team altri canali nicchia, team altre nicchie profittevoli. Verificato
+**sul codice**, non sui checkpoint: 2/6 reali ma isolati (regolatori, cashcow_check), 2/6 parziali
+(copy team one-shot mai wired, copertine senza controllo di originalità), **2/6 non presenti —
+anzi rimossi apposta** (scouting multi-canale/multi-nicchia: `apex7_orchestrator.py:74-76`,
+"rimosso del tutto", canale fisso by design su `RULES-VIDEO-FACTORY-DOSEMENTALE.md`). Dettaglio
+completo, file:riga, in [CP-20260804-001](checkpoints/CP-20260804-001.md).
+
+Scritta anche una mappa completa file-per-file di tutto il repo:
+[ARCHITETTURA-COMPLETA-FILE-PER-FILE.md](../../YOUTUBE-AUTOMATION-FACTORY/ARCHITETTURA-COMPLETA-FILE-PER-FILE.md).
+Trovato un secondo motore parallelo mai finito, `youtube_automation_factory/` (package nuovo,
+non installato, test falliscono), nato dal commit `f4f50f22` senza checkpoint dedicato.
+
+**⚠️ COORDINAMENTO — prima di editare `apex7_orchestrator.py` o `regolatori.py`, verificare lo
+stato di Gael** (`git fetch` + `git log --oneline HEAD..origin/main`). Durante questa sessione
+sono arrivati 3 commit di Gael in tempo reale (09:46 e 10:08 di oggi) che toccano esattamente
+questi due file — produzione video reale in corso (`memory/video_prodotti.json`, F2 ora scorre
+il catalogo, ritmo di lettura ricalibrato). Segnalato a Max con `AskUserQuestion` prima di
+scrivere codice: risposta esplicita **fermarsi ora**, non "procedi comunque" — nessun file di
+produzione toccato in questa sessione, sicuro riprendere senza rollback.
+
+**RIPRESA DA:** i 4 punti di lavoro concreti (regolatori→wiring automatico F3/F4-F5,
+regolatore-copertina nuovo con hash percettivo Pillow, bridge `copy_study_dosementale.py`→file
+JSON separato da `learned_rules.json` per non farsi sovrascrivere da `self_improve.py`, tool
+advisory `channel_discovery.py`/`niche_discovery.py` che propongono senza mai toccare
+`CANALE_TARGET`) sono elencati con dettaglio tecnico in fondo a CP-20260804-001. Prima domanda
+aperta per Max/Gael: costruire questi 4 punti nel motore reale o completare/collegare invece lo
+scaffold `youtube_automation_factory/` che ha già 2 di questi pezzi scritti (non installati).
+
+---
 
 ## ✅ 2026-08-03 — CLAUDE: FASE 3 — Reparto Produzione + Progetto Preventa carousel (scaffold completo, visual non ancora lanciato) — CP-20260803-008
 Segue [CP-20260803-005](checkpoints/CP-20260803-005.md) (Fase 1, chiusa). Piano di
