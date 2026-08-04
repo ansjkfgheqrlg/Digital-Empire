@@ -1,4 +1,46 @@
-# STATO EMPIRE -- aggiornato 2026-08-03 (Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-03 (Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## ✅ 2026-08-03 — CLAUDE: FASE 3 — Reparto Produzione + Progetto Preventa carousel (scaffold completo, visual non ancora lanciato) — CP-20260803-008
+Segue [CP-20260803-005](checkpoints/CP-20260803-005.md) (Fase 1, chiusa). Piano di
+riferimento: [CP-20260803-004](checkpoints/CP-20260803-004.md).
+
+**Scoperta che corregge CP-20260803-004**: quel checkpoint assumeva che
+"carousel-factory" fosse il motore "collegato con Arena via Playwright" citato da
+Max. Falso — esistono **3 motori caroselli indipendenti** sul disco (ArenaAI
+Playwright reale in `caroselli - agency/`, carousel-factory Puppeteer+Gemini
+manuale, skill carousel-empire standalone). Chiesto a Max via `AskUserQuestion`:
+confermato **ArenaAI**.
+
+**⚠️ Sicurezza (segnalata, NON risolta)**: `caroselli - agency/config.py` ha
+email+password reali di Arena.ai e chiavi Groq/OpenRouter **in chiaro, committate
+in git** dal commit iniziale del monorepo, già pushate su GitHub. In attesa di
+decisione Max (`.env` + rotazione o altro).
+
+**Costruito**: `caroselli - preventa/` sibling di `caroselli - agency/` (mai
+toccata/modificata) — copywriter Preventa-specifico (CTA brand-awareness, non
+"scrivimi in DM" di Agency, Preventa vende via WhatsApp outreach), orchestrator
+che riusa `ArenaAI/arena_generator.py` via import senza copiarlo, primo esempio
+di copy scritto a mano (3 slide, colori brand reali `#101E3E`/`#FF4D00`).
+
+**Bug reale trovato e corretto in corso d'opera**: assunto inizialmente che
+servisse una chat Arena dedicata (`ARENA_CHAT_URL`) per isolare lo stile
+Preventa da Agency — falso, verificato leggendo `arena_generator.py`: la funzione
+riapre `https://arena.ai/` da zero per ogni slide, la continuità viene dal
+ricaricare l'immagine precedente come allegato. Corretto il design di
+conseguenza (isolamento vero = `LOCAL_DOWNLOAD_DIR`/`ALLEGATI_DIR` sovrascritti
+sul modulo `config` condiviso).
+
+Wiki: [[Reparto_Produzione_Digital_Empire]], [[Progetto_Preventa_Carousel]].
+`py_compile` pulito su tutto il codice nuovo.
+
+**RIPRESA DA**: (1) decisione Max su sicurezza credenziali, (2) via libera per il
+run live `orchestrator_preventa.py` (browser reale sull'account Arena di Max, non
+lanciato senza conferma esplicita — stesso principio già usato per WhatsApp in
+questa sessione), (3) dopo il primo run riuscito, copiare la slide 1 in
+`allegati di contesto (slide)/` per dare reference ai caroselli successivi.
+Dettaglio completo in [CP-20260803-008](checkpoints/CP-20260803-008.md).
+
+---
 
 ## ⚠️ ASSEGNAZIONE + COORDINAMENTO 2026-08-03 (Claude -> NERI) — TASK-NERI-20260803-STREAM-S7-STRATEGIA
 
