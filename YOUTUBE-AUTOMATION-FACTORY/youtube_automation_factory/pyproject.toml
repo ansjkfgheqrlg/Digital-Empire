@@ -1,6 +1,6 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "youtube-automation-factory"
@@ -25,8 +25,8 @@ dev = [
 [project.scripts]
 yaf = "youtube_automation_factory.cli:app"
 
-[tool.hatch.build.targets.wheel]
-packages = ["src/youtube_automation_factory"]
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

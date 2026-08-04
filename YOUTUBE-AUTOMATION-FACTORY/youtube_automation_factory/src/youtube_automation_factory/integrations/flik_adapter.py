@@ -98,9 +98,7 @@ class MockFlikAdapter(FlikAdapter):
                 "Lo script non e' approvato: la produzione non puo' essere avviata."
             )
         if not script.originality_checked:
-            raise FlikAdapterError(
-                "Lo script non ha superato il controllo di originalita'."
-            )
+            raise FlikAdapterError("Lo script non ha superato il controllo di originalita'.")
 
         job = ProductionJob(
             workflow_id=workflow_id,

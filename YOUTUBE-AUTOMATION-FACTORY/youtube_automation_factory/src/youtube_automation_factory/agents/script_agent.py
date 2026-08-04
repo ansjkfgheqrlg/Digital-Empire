@@ -55,7 +55,5 @@ class ScriptAgent(BaseAgent):
             reference_candidate_id=candidate.id,
             derived_from_transcript=False,
         )
-        logger.info(
-            "[%s] bozza script %s (%s parole)", self.name, script.id, script.word_count
-        )
+        logger.info("[%s] bozza script %s (%s parole)", self.name, script.id, script.word_count)
         return script

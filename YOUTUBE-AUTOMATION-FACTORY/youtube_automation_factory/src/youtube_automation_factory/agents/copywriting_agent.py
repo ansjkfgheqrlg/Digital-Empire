@@ -75,7 +75,10 @@ class DigitalEmpireCopyReviewer:
         copy.digital_empire_reviewer = self.reviewer_name
         copy.digital_empire_reason = reason
         logger.info(
-            "[%s] copy %s: %s — %s", self.reviewer_name, copy.id,
-            copy.digital_empire_status, reason,
+            "[%s] copy %s: %s — %s",
+            self.reviewer_name,
+            copy.id,
+            copy.digital_empire_status,
+            reason,
         )
         return copy

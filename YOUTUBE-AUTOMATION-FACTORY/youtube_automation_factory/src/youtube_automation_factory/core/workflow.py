@@ -53,18 +53,14 @@ ALLOWED_TRANSITIONS: dict[WorkflowState, frozenset[WorkflowState]] = {
     WorkflowState.IN_PRODUCTION: frozenset(
         {WorkflowState.VIDEO_READY_FOR_QA, WorkflowState.BLOCKED}
     ),
-    WorkflowState.VIDEO_READY_FOR_QA: frozenset(
-        {WorkflowState.COPY_DRAFT, WorkflowState.BLOCKED}
-    ),
+    WorkflowState.VIDEO_READY_FOR_QA: frozenset({WorkflowState.COPY_DRAFT, WorkflowState.BLOCKED}),
     WorkflowState.COPY_DRAFT: frozenset(
         {WorkflowState.COPY_PENDING_DIGITAL_EMPIRE_REVIEW, WorkflowState.BLOCKED}
     ),
     WorkflowState.COPY_PENDING_DIGITAL_EMPIRE_REVIEW: frozenset(
         {WorkflowState.COPY_APPROVED, WorkflowState.COPY_DRAFT, WorkflowState.BLOCKED}
     ),
-    WorkflowState.COPY_APPROVED: frozenset(
-        {WorkflowState.THUMBNAIL_DRAFT, WorkflowState.BLOCKED}
-    ),
+    WorkflowState.COPY_APPROVED: frozenset({WorkflowState.THUMBNAIL_DRAFT, WorkflowState.BLOCKED}),
     WorkflowState.THUMBNAIL_DRAFT: frozenset(
         {WorkflowState.THUMBNAIL_PENDING_REVIEW, WorkflowState.BLOCKED}
     ),
@@ -78,9 +74,7 @@ ALLOWED_TRANSITIONS: dict[WorkflowState, frozenset[WorkflowState]] = {
     WorkflowState.THUMBNAIL_APPROVED: frozenset(
         {WorkflowState.QUALITY_CONTROL, WorkflowState.BLOCKED}
     ),
-    WorkflowState.QUALITY_CONTROL: frozenset(
-        {WorkflowState.COMPLETED, WorkflowState.BLOCKED}
-    ),
+    WorkflowState.QUALITY_CONTROL: frozenset({WorkflowState.COMPLETED, WorkflowState.BLOCKED}),
     # Da BLOCKED si torna indietro solo dove un regolatore ha sbloccato esplicitamente.
     WorkflowState.BLOCKED: frozenset(
         {
@@ -171,9 +165,7 @@ class YouTubeFactoryWorkflow:
 
         if target is WorkflowState.APPROVED_AS_REFERENCE:
             if run.candidate is None:
-                raise InvalidTransitionError(
-                    run.state, target, "nessun candidato da approvare"
-                )
+                raise InvalidTransitionError(run.state, target, "nessun candidato da approvare")
             assert_senior_approval(run, run.candidate.id, "Candidato video")
 
         elif target is WorkflowState.SCRIPT_APPROVED:
@@ -192,15 +184,15 @@ class YouTubeFactoryWorkflow:
                 )
 
         elif target is WorkflowState.COPY_APPROVED:
-            if run.copy is None:
+            if run.copy_asset is None:
                 raise InvalidTransitionError(run.state, target, "nessun copy presente")
             from .enums import CopyReviewStatus  # import locale: evita cicli
 
-            if run.copy.digital_empire_status is not CopyReviewStatus.APPROVED:
+            if run.copy_asset.digital_empire_status is not CopyReviewStatus.APPROVED:
                 raise RegulatoryBlockError(
                     [
                         "Il copy non e' stato approvato dal settore copy di Digital Empire "
-                        f"(stato: {run.copy.digital_empire_status})."
+                        f"(stato: {run.copy_asset.digital_empire_status})."
                     ]
                 )
 

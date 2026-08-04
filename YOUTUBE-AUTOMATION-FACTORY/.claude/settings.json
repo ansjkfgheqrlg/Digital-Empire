@@ -32,7 +32,25 @@
       "Bash(python -c \"import typer;print\\('typer ok'\\)\")",
       "Bash(python -c \"import pytest;print\\('pytest ok'\\)\")",
       "Bash(python -m ruff --version)",
-      "Bash(python -c \"import playwright;print\\('playwright ok'\\)\")"
+      "Bash(python -c \"import playwright;print\\('playwright ok'\\)\")",
+      "Bash(printf '\"\"\"Configurazione del progetto.\"\"\"\\\\n\\\\nfrom .settings import PRIMARY_NICHE, Settings, get_settings\\\\n\\\\n__all__ = [\"PRIMARY_NICHE\", \"Settings\", \"get_settings\"]\\\\n')",
+      "Bash(printf '\"\"\"Test del pacchetto youtube_automation_factory.\"\"\"\\\\n')",
+      "Bash(printf '\"\"\"Client Playwright configurabili \\(YouTube, Arena\\).\"\"\"\\\\n')",
+      "Bash(printf '\"\"\"Integrazioni con fornitori esterni.\"\"\"\\\\n')",
+      "Bash(printf '\"\"\"Servizi di dominio.\"\"\"\\\\n\\\\nfrom .originality_service import OriginalityResult, OriginalityService\\\\n\\\\n__all__ = [\"OriginalityResult\", \"OriginalityService\"]\\\\n')",
+      "Bash(python -m pip install -q -e \".[dev]\")",
+      "Bash(echo \"--- exit=$? ---\")",
+      "Bash(python -c \"import typer,pytest,ruff\")",
+      "Bash(python -m pip install -e \".[dev]\")",
+      "Bash(python -c \"import typer,pytest;print\\('typer/pytest OK'\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 python -m pytest)",
+      "Bash(PYTHONIOENCODING=utf-8 python -m pytest tests/test_automation_config.py::test_settings_ignora_selettori_non_json)",
+      "Bash(python -m ruff check .)",
+      "Bash(python -m ruff check --fix .)",
+      "Bash(python -m ruff format .)",
+      "Bash(export PYTHONIOENCODING=utf-8)",
+      "Bash(yaf check-config *)",
+      "Bash(yaf run-demo *)"
     ]
   }
 }

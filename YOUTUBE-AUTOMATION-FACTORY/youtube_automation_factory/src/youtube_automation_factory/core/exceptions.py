@@ -29,9 +29,7 @@ class AuthorizationError(FactoryError):
         self.agent = agent
         self.level = level
         self.action = action
-        super().__init__(
-            f"L'agente '{agent}' (livello {level}) non e' autorizzato a: {action}"
-        )
+        super().__init__(f"L'agente '{agent}' (livello {level}) non e' autorizzato a: {action}")
 
 
 class NicheLockError(FactoryError):

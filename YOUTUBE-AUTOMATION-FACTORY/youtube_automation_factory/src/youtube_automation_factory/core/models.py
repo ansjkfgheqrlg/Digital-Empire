@@ -156,9 +156,7 @@ class _CreativeAsset(_Base):
     @model_validator(mode="after")
     def _no_approvazione_senza_controllo(self) -> _CreativeAsset:
         if self.approved and not self.originality_checked:
-            raise ValueError(
-                "Un asset non puo' risultare approvato con originality_checked=False."
-            )
+            raise ValueError("Un asset non puo' risultare approvato con originality_checked=False.")
         return self
 
 
@@ -335,7 +333,7 @@ class WorkflowRun(_Base):
     review: ReviewRequest | None = None
     approvals: list[Approval] = Field(default_factory=list)
     script: ScriptAsset | None = None
-    copy: CopyAsset | None = None
+    copy_asset: CopyAsset | None = None
     thumbnail: ThumbnailAsset | None = None
     production_job: ProductionJob | None = None
     events: list[WorkflowEvent] = Field(default_factory=list)

@@ -1,0 +1,1 @@
+"""Integrazioni con fornitori esterni."""

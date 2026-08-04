@@ -32,16 +32,18 @@ non aprirlo ora). Aggiunto `EmpireDesk/modules/libri.py` (pattern `dash.py`): ti
 + route manifest + pannello. **Selftest EmpireDesk 21/21 verde**, modulo `libri` caricato
 senza conflitti.
 
-**⚠️ Limite dichiarato**: `main.py`/`orchestrator_assembly.py` consegnati nello zip
-referenziano `agents/all_agents.py` e `agents/senior_and_operational.py`, file assenti nella
-consegna — **non eseguibili as-is** (verificato con test di import, non assunto). Il modulo
-Aureus lo segnala esplicitamente (selftest + manifest), non lo nasconde. Playwright nel
-blueprint è confermato simulato (nessuna chiamata di rete reale).
+**Update stesso giorno — Max ha chiesto "sistema te"**: trovata nello stesso zip una SECONDA
+variante auto-consistente (`architettura_completa_7_livelli/`, non quella importata di
+default). Fix di un path hardcoded (nessuna modifica di logica) l'ha resa **davvero
+eseguibile** — verificato con esecuzione reale sia da riga di comando sia lanciata dall'app
+Aureus stessa via `/api/launch`: `exit_code: 0` in entrambi i casi, manifest rigenerato
+deterministico. Risultato reale: **95 agenti, 26 team, 18 skill, 9 ecosistemi** (numero
+diverso dai 104 dichiarati nella prima variante — sono due varianti distinte nello stesso
+zip, non lo stesso conteggio). La tile Aureus ora lancia per davvero questa variante.
+`workflow_architecture/main.py` (prima variante) resta non toccata/non eseguibile, non più
+necessaria. Playwright confermato simulato in entrambe (nessuna chiamata di rete reale).
 
-**RIPRESA DA:** se si vuole rendere l'architettura davvero eseguibile, serve riscrivere gli
-import dei due entrypoint per usare i file reali (`*_aggregated.py` + ~200 file singoli
-sotto `teams/`) — non tentato: avrebbe richiesto indovinare struttura interna senza verifica
-reale sui numeri dichiarati. Dettaglio completo in [CP-20260803-006](checkpoints/CP-20260803-006.md).
+**RIPRESA DA:** nessuna, task chiuso. Dettaglio completo in [CP-20260803-006](checkpoints/CP-20260803-006.md).
 
 ---
 
