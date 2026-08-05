@@ -36,6 +36,12 @@ C'è un versetto dei Proverbi che dice di custodire il proprio cuore più di ogn
 
 Ti dico anche la parte scomoda: questa lucidità all'inizio non è affatto liberatoria. Fa male. Perché insieme alla verità arriva il conto di tutti gli anni in cui non l'avevi vista. È normale, ed è passeggera.
 
+C'è ancora una cosa da dire su questo secondo segnale, perché è la parte che manda in crisi le persone più oneste. Quando cade il velo, la prima reazione quasi sempre non è rabbia verso di loro: è rabbia verso se stessi. Come ho fatto a non vederlo prima. Come ho fatto a difenderli davanti a chi provava a dirmelo. Come ho fatto a passarci trent'anni.
+
+Ti do la risposta, ed è più semplice di quanto sembri: non l'hai visto perché non potevi permettertelo. Da bambino non avevi alternative. Non potevi fare le valigie, non potevi cambiare casa, non potevi scegliere un'altra famiglia. L'unico modo di sopravvivere era convincerti che andasse bene così, e quella convinzione ti ha protetto per anni. È servita. Non è stata stupidità, è stata sopravvivenza.
+
+Il velo cade adesso perché adesso, finalmente, puoi reggerne il peso. Prima non avresti potuto. E se ti stai chiedendo perché proprio ora, dopo tanto tempo, la risposta forse è tutta lì.
+
 **Terzo segnale: le occasioni si diradano da sole.**
 
 Il terzo segnale è il più concreto e il più curioso, perché sembra caso e quasi mai lo è.
