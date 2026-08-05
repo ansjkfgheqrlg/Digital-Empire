@@ -19,6 +19,27 @@ LIBRI_PUBBLICATI_DIR = LIBRI_DIR / "libri_pubblicati"
 AMAZON_SESSION_PATH = SESSIONS_DIR / "amazon_state.json"
 LMARENA_SESSION_PATH = SESSIONS_DIR / "lmarena_state.json"
 
+# --------------------------------------------------------------------------- #
+# Chrome profile reale (per CP1, dopo che Google ha bloccato il login OAuth
+# dentro un browser automatizzato — bloccato sia con Chromium bundlato sia con
+# channel="chrome", verificato con 2 tentativi reali il 2026-08-05). Si riusa
+# un profilo Chrome GIÀ autenticato invece di fare un login nuovo dentro
+# l'automazione. Scelto da Gael: Profile 8 (max.infoproducer@gmail.com).
+# Copiato in sessions/ (esclusa cache) — IL PROFILO ORIGINALE NON VIENE MAI
+# SCRITTO, solo letto per la copia iniziale.
+# --------------------------------------------------------------------------- #
+import os as _os
+
+CHROME_USER_DATA_ROOT = Path(_os.environ.get("LOCALAPPDATA", "")) / "Google" / "Chrome" / "User Data"
+CHROME_SOURCE_PROFILE_NAME = "Profile 8"  # max.infoproducer@gmail.com — scelto da Gael 2026-08-05
+CHROME_PROFILE_COPY_DIR = SESSIONS_DIR / "chrome_profile_copy"
+CHROME_COPY_EXCLUDE_DIRS = {
+    "Cache", "Cache_Data", "Code Cache", "GPUCache", "DawnCache",
+    "DawnGraphiteCache", "GrShaderCache", "ShaderCache", "Service Worker",
+    "blob_storage", "Crashpad", "component_crx_cache", "Extensions",
+    "Extension State", "File System", "IndexedDB",
+}
+
 for _d in (SESSIONS_DIR, LIBRI_PRONTI_DIR, LIBRI_PUBBLICATI_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 
