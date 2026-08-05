@@ -1,6 +1,30 @@
-# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
 
-## 🔄 2026-08-05 — CLAUDE: PIANO KDP 67 — 5/13 checkpoint chiusi, bloccato su CP1 (login manuale Gael) — CP-20260805-002
+## 🔄 2026-08-05 — CLAUDE: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato con dati live, LM Arena bloccato — CP-20260805-004
+
+Seguito da [CP-20260805-002](checkpoints/CP-20260805-002.md). Google blocca il login OAuth
+dentro QUALSIASI browser automatizzato (Chromium bundlato E Chrome reale via
+`channel="chrome"`, testato entrambi) — non un bug mio, è rilevamento CDP di Google. Fix:
+riuso di un profilo Chrome già autenticato (Profile 8, `max.infoproducer@gmail.com`, scelto
+esplicitamente da Gael tra 9 profili trovati sul PC condiviso — mai presunto), copiato SENZA
+mai scrivere l'originale (esclusa cache, ~100-200MB invece di 787MB).
+
+**Amazon: ✅ sessione salvata e verificata** (16.8KB reali). **CP2 verificato con ricerca
+Amazon LIVE**: 16 risultati reali (titoli/ASIN/prezzi/rating), bug reale trovato nel campo
+autore (segnalato, non bloccante).
+
+**LM Arena: ❌ ancora bloccato**, stesso errore Google — ma riprodotto **anche nel Chrome
+normale non automatizzato di Gael**, fuori da qualsiasi script. Non è (solo) rilevamento
+automazione: è un problema esterno che Gael avrebbe comunque, fuori dal mio controllo.
+Fermato il debug invece di continuare a inseguirlo alla cieca — 3 opzioni scritte per Gael
+in `PIANO-KDP-67.md §3` punto 5.
+
+**RIPRESA DA:** decisione di Gael sul blocco LM Arena. Dettaglio completo in
+[CP-20260805-004](checkpoints/CP-20260805-004.md) e nel piano stesso.
+
+---
+
+## 🔄 2026-08-05 (chiuso, superato dall'aggiornamento sopra) — CLAUDE: PIANO KDP 67 — 5/13 checkpoint chiusi, bloccato su CP1 (login manuale Gael) — CP-20260805-002
 
 Gael ha dato il via libera. Chiusi e verificati con esecuzione reale (non dichiarazione):
 **CP0** (setup, `config.py` con path relativi — mai `/home/user/...` hardcoded), **CP3**
