@@ -153,6 +153,45 @@ MIN_VPH_ASSOLUTO_CANALE = _load_module_from_path(
     "apex7_cashcow_check", os.path.join(SCRIPT_DIR, "cashcow_check.py")
 ).MIN_VPH
 
+# Regolatori L3 (nicchia/copy/originalita/firme) — fino al 2026-08-04 esistevano solo come CLI
+# manuale (regolatori.py), mai chiamati da una run automatica: le regole scritte non venivano
+# mai davvero applicate senza un lancio a mano. Caricato per percorso come gli altri moduli
+# locali di questo pacchetto (stesso motivo: nessuna collisione di import a pacchetto).
+REGOLATORI = _load_module_from_path(
+    "apex7_regolatori", os.path.join(SCRIPT_DIR, "regolatori.py")
+)
+
+
+def _esegui_regolatori(run_id: str, artefatto: str, operatore: str, capo: str,
+                        testi: dict, video_id: str | None = None) -> bool:
+    """Esegue nicchia+copy (sempre) e originalita' (se esiste un transcript reale per
+    video_id), stampa gli esiti, registra le 3 firme e ritorna False se un regolatore ha
+    bloccato. Un blocco L3 non e' un errore di sistema: e' l'esito onesto del controllo."""
+    verdetti = [REGOLATORI.verifica_nicchia(testi), REGOLATORI.verifica_copy(testi)]
+    if video_id:
+        transcript = ""
+        for lingua in ("it", "en"):
+            p = os.path.join(TRANSCRIPTS_DIR, f"dosementale-{video_id}.{lingua}.vtt")
+            if os.path.exists(p):
+                with open(p, "r", encoding="utf-8") as tf:
+                    transcript = tf.read()
+                break
+        if transcript:
+            verdetti.append(REGOLATORI.verifica_originalita(testi.get("script", ""), transcript))
+
+    for v in verdetti:
+        simbolo = "🟢" if v["esito"] == "passa" else "🔴"
+        print(f"[{simbolo} {v['regolatore']}] {v['esito']} — {v['motivo']}")
+        for chiave in ("violazioni", "esempi"):
+            for riga in v.get(chiave, []):
+                print(f"      · {riga}")
+
+    REGOLATORI.registra_firma(run_id, artefatto, operatore, capo, verdetti)
+    bloccato = any(v["esito"] == "BLOCCO" for v in verdetti)
+    if bloccato:
+        print(f"[!] Regolatori L3: BLOCCO su '{artefatto}'. Firma non valida, fase non superata.")
+    return not bloccato
+
 # Gate REALE della pipeline (F2): il video da replicare deve essere un OUTLIER rispetto al
 # proprio canale, non superare una soglia assoluta.
 #
@@ -1007,6 +1046,17 @@ class Apex7Orchestrator:
                         f"`## CORPO`, `## CTA`.\n")
                 f.write("- Va RISCRITTO, non copiato: stesso argomento e stesse informazioni reali, "
                         "parole proprie.\n\n")
+                copy_intel = self.load_json(os.path.join(MEMORY_DIR, "copy_intelligence.json"), {})
+                favorevoli = copy_intel.get("schemi_favorevoli", [])
+                sfavorevoli = copy_intel.get("schemi_sfavorevoli", [])
+                if favorevoli or sfavorevoli:
+                    f.write(f"## Schemi di copy misurati su {copy_intel.get('n_video_campione', '?')} "
+                            f"video reali del canale (copy_study_dosementale.py)\n\n")
+                    for s in favorevoli:
+                        f.write(f"- **USARE** — {s['schema']} ({s['delta_pct']:+.0f}% velocity): {s['descrizione']}\n")
+                    for s in sfavorevoli:
+                        f.write(f"- **EVITARE** — {s['schema']} ({s['delta_pct']:+.0f}% velocity): {s['descrizione']}\n")
+                    f.write("\n")
                 f.write("## Transcript reale del video sorgente\n\n")
                 f.write(transcript or "(transcript non disponibile: yt-dlp assente o video senza sottotitoli)\n")
             print(f"[!] ERRORE: script adattato mancante per il video scelto.\n"
@@ -1050,6 +1100,14 @@ class Apex7Orchestrator:
 
         hook_m = re.search(r"^## HOOK[^\n]*\n(.+?)(?=\n## |\Z)", script_text, re.MULTILINE | re.DOTALL)
         hook_text = (hook_m.group(1) if hook_m else "").split("➕")[0].strip()
+
+        # Regolatori L3 sul contenuto narrato (mai sulle note di produzione, vedi
+        # regolatori.testo_narrato): fino ad ora la regola esisteva ma nessuna run
+        # automatica la applicava davvero.
+        testi_l3 = {"script": REGOLATORI.testo_narrato(script_text), "titolo": titolo, "descrizione": ""}
+        if not _esegui_regolatori(self.run_id, "script", "script-writer", "capo-copy",
+                                   testi_l3, video_id=video_id):
+            return False
 
         self.working_memory["script_path"] = script_path
         self.working_memory["script_idea_title"] = titolo
@@ -1239,7 +1297,14 @@ class Apex7Orchestrator:
         # del cluster ("spiritualita', psicologia, saggezza biblica/..."), che come tag YouTube
         # non serve a niente.
         idea_tokens = sorted(_tokenize_for_matching(idea_title))[:6]
+        # copy_intelligence.json (copy_study_dosementale.py): pattern misurati sui video REALI
+        # del competitor, non su performance proprie — l'unica fonte disponibile finche'
+        # learned_rules.json resta vuoto (nessun video ancora pubblicato). Fino al 2026-08-05
+        # questo studio esisteva solo su wiki, mai letto da una run automatica.
+        copy_intel = self.load_json(os.path.join(MEMORY_DIR, "copy_intelligence.json"), {})
+        copy_intel_tags = [s["schema"].replace("_", " ") for s in copy_intel.get("schemi_favorevoli", [])]
         tag_candidates = (list(learned_rules.get("high_performing_tags", []))
+                          + copy_intel_tags
                           + CANALE_TARGET["tag_tema"] + idea_tokens + [keyword])
         tags, seen = [], set()
         for t in tag_candidates:
@@ -1279,6 +1344,12 @@ class Apex7Orchestrator:
             print(f"[+] Gate SEO-Gate: PASS (score reale {seo_result.get('total')}/100)")
         else:
             print(f"[!] Gate SEO-Gate: FAIL onesto (score reale {seo_result.get('total')}/100, sotto soglia 70) — debolezze: {seo_result.get('notes')}")
+
+        # Regolatori L3 sui metadati finali: titolo/descrizione sono testo NUOVO generato qui
+        # (non lo stesso testo gia' controllato in F3), quindi vanno ricontrollati.
+        testi_l3 = {"script": "", "titolo": idea_title, "descrizione": description}
+        if not _esegui_regolatori(self.run_id, "metadati", "metadata-optimizer", "capo-copy", testi_l3):
+            return False
 
         self.working_memory["metadati_path"] = metadata_path
         self.working_memory["metadati_seo_score"] = seo_result.get("total")

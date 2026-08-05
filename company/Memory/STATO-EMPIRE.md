@@ -1,4 +1,50 @@
-# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## ✅ 2026-08-05 — CLAUDE: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005
+
+Segue [CP-20260804-001](checkpoints/CP-20260804-001.md). I 4 gap trovati nell'audit sono ora
+**agganciati alla pipeline reale**, non solo scritti come codice isolato:
+1. **Regolatori L3** (nicchia/copy/originalità) ora girano davvero a fine F3 e F5, con BLOCCO
+   reale e prima firma mai scritta in `memory/firme.json`. `regolatore-configurazione` agganciato
+   in `fliki_client.py` prima della chiamata Fliki vera (non in F4/F5: i campi che controlla
+   esistono solo lì).
+2. **`regolatore-copertina` nuovo** — hash percettivo (Pillow) fra copertina generata e sorgente,
+   agganciato in `arena_thumbnail.py`. Prima: zero controlli sulle copertine.
+3. **`copy_intelligence.json` nuovo** — bridge fra `copy_study_dosementale.py` (prima solo wiki)
+   e la produzione: tag F5 + guida "USARE/EVITARE" nel brief F3. Tenuto separato da
+   `learned_rules.json` apposta (quel file viene riscritto per intero da `self_improve.py`).
+4. **`channel_discovery.py` + `niche_discovery.py` nuovi** — advisory, propongono canali/temi
+   reali (ricerca YouTube vera + cache), **non toccano mai `CANALE_TARGET`**: lo scouting
+   multi-canale era stato tolto apposta il 2026-07-31, questi tool non lo riattivano.
+
+Tutto verificato in esecuzione reale (non solo unit-test): run reale con stato iniettato →
+regolatori PASS su script vero di Gael, `channel_discovery.py` ha trovato 3 canali reali via
+Playwright e misurato il loro Cash Cow Index, `niche_discovery.py` ha prodotto 3 proposte di
+tema su dati aggregati reali.
+
+**⚠️ Trovato (non causato da questa sessione)**: `test_apex7_orchestrator_e2e` fallisce
+10/11 — confermato con `git stash` che il fallimento è identico con o senza le modifiche di
+oggi. Causa: la ricalibrazione di Gael di ieri (185 parole/min) rende `eax7OPi1q0M.md` (1865
+parole) troppo corto per il gate dei 12 minuti — stesso fallimento in produzione reale, non
+solo nel test. Un commit di Gael su quel file (+6 righe) è arrivato durante questa sessione:
+da riverificare se risolve.
+
+**⚠️ Collisioni di numerazione non mie, isolate non risolte**: due, sullo stesso pattern (altre
+sessioni scrivono sullo stesso slot CP-YYYYMMDD-NNN mentre lavoro) — `git stash list` →
+"sessione parallela (Outreach Preventa follow-up, non mia) - STATO-EMPIRE.md +
+CP-20260805-001.md" e "mio blocco STATO-EMPIRE.md YouTube CP-005, da riapplicare su testa
+fresca" (quest'ultimo ormai riapplicato, può essere scartato). Vedi dettaglio in
+[CP-20260805-005](checkpoints/CP-20260805-005.md) §Collisione.
+
+Dettaglio tecnico completo, file:riga, in [CP-20260805-005](checkpoints/CP-20260805-005.md).
+
+**RIPRESA DA:** verificare il gate dei 12 minuti dopo il commit di Gael; poi run F1→F6
+completa vera per vedere i regolatori in azione su una run non sintetica. Aperta la domanda di
+governance di Max: `PIANO-MAESTRO/03-ECOSISTEMA-CONTENT-FACTORY-V2.md` descrive un reparto
+formale (CF-Director) mai costruito — la fabbrica resta autogovernata dalla propria gerarchia
+interna.
+
+---
 
 ## 🔄 2026-08-05 — CLAUDE: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato con dati live, LM Arena bloccato — CP-20260805-004
 

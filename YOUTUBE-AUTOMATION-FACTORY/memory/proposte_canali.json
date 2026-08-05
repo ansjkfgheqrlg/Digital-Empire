@@ -1,0 +1,39 @@
+{
+  "generato": "2026-08-05T07:24:59.980481",
+  "query": [
+    "saggezza spirituale anziani"
+  ],
+  "nota": "Proposte, non decisioni. Nessuna run di produzione legge questo file. CANALE_TARGET cambia solo per decisione esplicita di Gael/Max.",
+  "canali": [
+    {
+      "handle": "@blablain2",
+      "url": "https://www.youtube.com/@blablain2",
+      "nome": "BlaBlaIn2 - Saggezza Spirituale",
+      "iscritti": null,
+      "query_origine": [
+        "saggezza spirituale anziani"
+      ],
+      "cashcow_index": 15.1
+    },
+    {
+      "handle": "@saggezzaspiritualeemotivazione",
+      "url": "https://www.youtube.com/@saggezzaspiritualeemotivazione",
+      "nome": "Saggezza spirituale e motivazione",
+      "iscritti": null,
+      "query_origine": [
+        "saggezza spirituale anziani"
+      ],
+      "cashcow_index": 15.0
+    },
+    {
+      "handle": "@saggezzaspiritualeufficiale",
+      "url": "https://www.youtube.com/@saggezzaspiritualeufficiale",
+      "nome": "Saggezza Spirituale",
+      "iscritti": null,
+      "query_origine": [
+        "saggezza spirituale anziani"
+      ],
+      "cashcow_index": 15.0
+    }
+  ]
+}

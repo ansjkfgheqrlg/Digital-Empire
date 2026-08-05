@@ -1,0 +1,35 @@
+{
+  "generato": "2026-08-05T08:32:18.604272",
+  "canali_analizzati": [
+    "@ciraolone",
+    "@dosementale"
+  ],
+  "n_video_totali": 62,
+  "nota": "Proposte di TEMA dentro la nicchia esistente, misurate sui canali in cache. Non e' un cambio di nicchia: CANALE_TARGET cambia solo per decisione esplicita di Gael/Max. Con un solo canale in cache il segnale e' debole (vedi canali_analizzati) — piu' fonti da channel_discovery.py lo rafforzano.",
+  "proposte": [
+    {
+      "tema": "salute_eta",
+      "descrizione": "Tema salute o età",
+      "delta_pct_velocity": 127.3,
+      "verdetto": "favorevole",
+      "n_video_con_tema": 3,
+      "n_video_totali_campione": 62
+    },
+    {
+      "tema": "relazioni",
+      "descrizione": "Tema relazioni/famiglia",
+      "delta_pct_velocity": 61.5,
+      "verdetto": "favorevole",
+      "n_video_con_tema": 14,
+      "n_video_totali_campione": 62
+    },
+    {
+      "tema": "religioso",
+      "descrizione": "Riferimento spirituale o biblico",
+      "delta_pct_velocity": -66.3,
+      "verdetto": "sfavorevole",
+      "n_video_con_tema": 11,
+      "n_video_totali_campione": 62
+    }
+  ]
+}
