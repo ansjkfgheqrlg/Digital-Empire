@@ -1,0 +1,29 @@
+{
+  "topic": "tempo-perso-preventivi-manuali",
+  "brand": "preventa",
+  "colori": {
+    "primario": "#101E3E",
+    "accento_cta": "#FF4D00",
+    "sfondo_chiaro": "#F6F7F9"
+  },
+  "slides": [
+    {
+      "slide_numero": 1,
+      "titolo_nascosto": "Hook",
+      "testo_esatto": "20 minuti su excel mentre il cliente scrive gia ad altri 3"
+    },
+    {
+      "slide_numero": 2,
+      "titolo_nascosto": "Soluzione",
+      "testo_esatto": "incolli il link dell'annuncio, esce il pdf pronto in italiano"
+    },
+    {
+      "slide_numero": 3,
+      "titolo_nascosto": "CTA",
+      "testo_esatto": "preventa. il preventivo pronto prima che il cliente cambi idea"
+    }
+  ],
+  "descrizione": "Il cliente scrive gia' ad altri 3 concessionari mentre tu sei ancora su Excel. Preventa trasforma un link (anche di un annuncio tedesco) in un PDF preventivo pronto, brandizzato, con i tuoi prezzi bloccati. #concessionari #autoimport #preventivi #gestionale",
+  "stato": "COPY_PRONTO_visual_non_ancora_generato",
+  "nota": "Scritto a mano da Claude riusando la stessa logica di generate_carousel_copy_preventa() (Agents/copywriter_agent_preventa.py) - stesso schema JSON, cosi' e' gia' pronto per essere passato a generate_carousel_visuals() senza passare dalla chiamata LLM. Nessuna immagine ancora generata: richiede il run live su Arena (vedi REGOLE.md + RIPRESA DA nel checkpoint)."
+}

@@ -1,5 +1,16 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-03 (Fase 1 + Fase 3 outreach Preventa: filtro import reale + Reparto Produzione, Claude/Max)
+- INGEST: chiusura Fase 1 (filtro solo-import reale, bug `categoria` vacuo trovato e
+  corretto, verificato su Areus reale 8/29 lead) — CP-20260803-005, nessuna pagina wiki
+  nuova (dettaglio tecnico, vive nel checkpoint).
+- INGEST: Fase 3, mappati 3 motori caroselli reali sul disco (confusi tra loro fino ad
+  oggi) e confermato con Max quale intendeva. Creato Progetto Preventa sotto un nuovo
+  concetto "Reparto Produzione" → 2 pagine create:
+  [[concepts/Reparto_Produzione_Digital_Empire]], [[projects/Preventa/Progetto_Preventa_Carousel]].
+  Sicurezza segnalata (non risolta): credenziali Arena/API in chiaro in
+  `caroselli - agency/config.py`, committate in git.
+
 ## 2026-08-03 (Primo incarico reale a Neri: strategia Stream S7, Claude/Max)
 - PLAN: Max ha chiesto un piano strategico per Stream S7 e di passare l'iniziativa a Neri
   (ricerche, report, architetture). Scritti `company/Ecosistemi/12-STREAM-S7-BOT/

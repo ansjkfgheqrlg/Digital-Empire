@@ -33,22 +33,24 @@ invariante #6: failure-modes e verifica come first-class).
 
 ---
 
+
+
 ## Pipeline a 6 fasi + feedback
 
 ```
-                 ┌───────────────────────────────────────────────────────────┐
+                 ┌──────────────────────────────────────────────────────────  ─┐
                  │                     FEEDBACK LOOP (Auto-miglioramento)      │
                  ▼                                                             │
-[F1] SCOUTING ──► niche-scout ──► ⟨niche-gate⟩ ──► [F2] SELEZIONE VIDEO       │
+[F1] SCOUTING ──► niche-scout ──► ⟨niche-gate⟩ ──► [F2] SELEZIONE VIDEO         │
                                                      video-hunter              │
                                                      seo-analyst               │
                                                      └─► DECISIONE A/B         │
                                                             │                  │
                                                             ▼                  │
-[F3] SCRIPT ◄──────────────────────────────────── script-writer               │
+[F3] SCRIPT ◄──────────────────────────────────── script-writer                │
    │                                                                           │
    ▼                                                                           │
-[F4] PRODUZIONE ──► video-producer ──► ⟨qa-audio-video⟩ ──► ⟨niche-gate⟩       │
+[F4] PRODUZIONE ──► video-producer ──► ⟨qa-audio-video⟩ ──► ⟨niche-gate⟩        │
    │                                                                           │
    ▼                                                                           │
 [F5] PUBBLICAZIONE ──► thumbnail-designer ──► metadata-optimizer ──► ⟨seo-gate⟩ ➔ PUBBLICA
@@ -61,6 +63,8 @@ Gate `⟨...⟩` = bloccanti. Se rossi, il flusso torna all'operatore competente
 *Nota sulla mappatura:* Le 6 fasi della pipeline reale sono mappate su 5 file workflow in `workflows/` poiché la Fase 3 (Script) e la Fase 4 (Produzione) sono accorpate in `WF3-production.md` per coerenza di sviluppo.
 
 ---
+
+
 
 ## Gerarchia file
 
@@ -122,9 +126,12 @@ youtube-automation-factory/
 
 ---
 
+
+
 ## Le 7 sezioni canoniche per agente (MBA invariante #5, forma compatta)
 
 Ogni file agente contiene, in un unico documento navigabile:
+
 1. **Spec** — id, ruolo, input, output, quando si attiva.
 2. **System prompt** — istruzioni operative.
 3. **Tools** — cosa usa (script, reference, Agent tool).
@@ -140,6 +147,9 @@ Ogni file agente contiene, in un unico documento navigabile:
 
 ---
 
+
+
 ## Traceability
+
 Ogni artefatto risale al [MKD.md](MKD.md): F1↔MKD §1-2, F2↔MKD §2, F3↔MKD §4, F4↔MKD §3,
 F5↔MKD §2.4/§3.4, F6↔MKD §2.2/§5. Coverage degli atomi sorgente: 100% nel MKD.
