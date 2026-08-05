@@ -131,6 +131,24 @@ def sessions_status() -> dict:
     }
 
 
+class _Tee:
+    """Duplica tutto ciò che viene stampato anche su file di log — così se la finestra
+    si chiude per sbaglio (successo davvero, 2026-08-05), il log resta leggibile.
+    NON tocca stdin: input() continua a leggere dalla console normalmente."""
+
+    def __init__(self, *streams):
+        self._streams = streams
+
+    def write(self, data):
+        for s in self._streams:
+            s.write(data)
+            s.flush()
+
+    def flush(self):
+        for s in self._streams:
+            s.flush()
+
+
 if __name__ == "__main__":
     if "--check" in sys.argv:
         status = sessions_status()
@@ -139,11 +157,24 @@ if __name__ == "__main__":
             print(f"{site}: {stato} ({info['path']})")
         sys.exit(0)
 
-    profile_dir = _copy_chrome_profile_if_needed()
+    log_path = config.SESSIONS_DIR / "login_log.txt"
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    log_file = open(log_path, "w", encoding="utf-8")
+    sys.stdout = _Tee(sys.__stdout__, log_file)
+    sys.stderr = _Tee(sys.__stderr__, log_file)
+    print(f"[log] anche scritto in {log_path}")
 
-    with sync_playwright() as p:
-        amazon_existed = ensure_amazon_session(p, profile_dir)
-        lmarena_existed = ensure_lmarena_session(p, profile_dir)
+    try:
+        profile_dir = _copy_chrome_profile_if_needed()
+
+        with sync_playwright() as p:
+            amazon_existed = ensure_amazon_session(p, profile_dir)
+            lmarena_existed = ensure_lmarena_session(p, profile_dir)
+    except Exception:
+        import traceback
+        traceback.print_exc()
+        log_file.flush()
+        raise
 
     print("\n=== CP1: stato sessioni ===")
     print(f"Amazon: {'già presente' if amazon_existed else 'creata ora'}")
