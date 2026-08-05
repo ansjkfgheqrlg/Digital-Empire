@@ -33,11 +33,17 @@ def _ensure_session(playwright: Playwright, site_name: str, home_url: str, sessi
     print(f"\n[{site_name}] NESSUNA sessione salvata trovata.")
     print(f"[{site_name}] Apro un browser visibile su {home_url} — fai login a mano "
           f"(username/password/2FA), poi torna qui.")
+    # channel="chrome": usa il Google Chrome REALE installato sul PC (non il Chromium
+    # bundlato di Playwright) — Google blocca esplicitamente il Chromium automatizzato
+    # su "Accedi con Google" ("This browser or app may not be secure", rilevato via
+    # Chrome DevTools Protocol). Trovato un caso reale: login Amazon via Google SSO
+    # bloccato dal Chromium bundlato, non riproducibile con Chrome reale.
     # --start-maximized + finestra portata in primo piano: su Windows un browser
     # headless=False può aprirsi minimizzato o dietro altre finestre — reso impossibile
-    # da perdere (trovato un caso reale in cui l'utente non vedeva la finestra).
+    # da perdere (trovato anche questo, caso reale in cui l'utente non vedeva la finestra).
     browser = playwright.chromium.launch(
         headless=False,
+        channel="chrome",
         args=["--start-maximized", "--new-window"],
     )
     context = browser.new_context(no_viewport=True)
