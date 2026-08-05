@@ -1,4 +1,33 @@
-# STATO EMPIRE -- aggiornato 2026-08-04 (Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: PIANO KDP 67 salvato — motore reale workflow Amazon KDP, NON ANCORA INIZIATO, in attesa via libera Gael — CP-20260805-001 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## 🔴 2026-08-05 — CLAUDE: PIANO KDP 67 salvato — motore reale per il workflow Amazon KDP, NON INIZIATO — CP-20260805-001
+
+**⚠️ SE STAI RIPRENDENDO DOPO SPEGNIMENTO/FINE CREDITI**: Gael ha detto "continua con il piano
+KDP 67" → apri [PIANO-KDP-67.md](../Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente/PIANO-KDP-67.md),
+leggi quale checkpoint è ✅/🔄/🔴, riprendi dal primo non completato, aggiorna il file dopo ogni
+checkpoint chiuso.
+
+Gael ha consegnato un nuovo zip ("workflow Amazon aggiornato") chiedendo un audit puro (nessuna
+correzione). Trovato: **zero automazione reale dietro 971 file di documentazione**. Lo zip dice
+esplicitamente "non verrà usato su lmarena, userà Claude Code" — l'opposto del requisito reale
+di Gael (autonomo, zero crediti Claude Code, tutto via Playwright+LM Arena con sessioni salvate).
+Playwright ancora simulato (stesso bug di CP-20260803-006), zero righe di codice che parlano con
+LM Arena, zero gestione sessioni, e soprattutto: `genera_nuovo_libro.py` non genera nulla — copia
+sempre lo stesso file template (provato con dimensioni byte identiche su 5 "libri" diversi).
+Dettaglio completo dei 7 problemi in [PIANO-KDP-67.md §0](../Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente/PIANO-KDP-67.md).
+
+Su richiesta esplicita di Gael, creato **PIANO-KDP-67.md** con 13 checkpoint (CP0→CP12) per
+costruire il motore reale — sessioni Playwright reali, ricerca Amazon reale, scrittura via LM
+Arena reale a capitoli con continuità, formattazione KDP con validazione pagine reale in loop,
+copertina reale unica per libro, integrazione Aureus con tile "Avvia", pulizia archivio delle 4
+varianti finte. **Nessun checkpoint ancora iniziato** — il piano è stato consegnato PRIMA di
+iniziare la correzione, come richiesto esplicitamente da Gael.
+
+**RIPRESA DA:** CP0, dopo via libera di Gael. 4 decisioni aperte elencate in PIANO-KDP-67.md §3
+(modello LM Arena da usare, dove salvare le sessioni, conferma rischio ToS Amazon/LM Arena,
+archiviare vs cancellare le 4 varianti finte).
+
+---
 
 ## ⏸️ 2026-08-04 — CLAUDE: Audit YOUTUBE-AUTOMATION-FACTORY (33 agenti Gael) + mappa file-per-file — PAUSA su richiesta Max (crediti) — CP-20260804-001
 
