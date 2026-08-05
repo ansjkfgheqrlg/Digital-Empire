@@ -1,6 +1,32 @@
-# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: PIANO KDP 67 salvato — motore reale workflow Amazon KDP, NON ANCORA INIZIATO, in attesa via libera Gael — CP-20260805-001 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
 
-## 🔴 2026-08-05 — CLAUDE: PIANO KDP 67 salvato — motore reale per il workflow Amazon KDP, NON INIZIATO — CP-20260805-001
+## 🔄 2026-08-05 — CLAUDE: PIANO KDP 67 — 5/13 checkpoint chiusi, bloccato su CP1 (login manuale Gael) — CP-20260805-002
+
+Gael ha dato il via libera. Chiusi e verificati con esecuzione reale (non dichiarazione):
+**CP0** (setup, `config.py` con path relativi — mai `/home/user/...` hardcoded), **CP3**
+(story validator deterministico, 5/5 test — bug reale trovato e corretto durante il test),
+**CP6** (KDP formatter python-docx reale, mirror margins + campo pagina verificati via XML —
+self-test replica ESATTAMENTE il bug "120 pagine dichiarate, 21 vere" dello zip originale e lo
+cattura correttamente), **CP8** (output manager riscritto — il bug più grave dell'audit,
+`genera_nuovo_libro.py` che copiava sempre lo stesso file, non si riproduce più: verificato
+con file di dimensione diversa per libri diversi), **CP11** (le 4 varianti finte archiviate in
+`_archivio_blueprint_narrativo/`, non cancellate — trovato e corretto un effetto collaterale
+reale: il path spostato rompeva `EmpireDesk/modules/libri.py`, selftest sceso a 17/21,
+corretto e riverificato a modulo `libri` OK).
+
+**CP1 bloccato**: `session_manager.py` pronto e verificato in modalità check, ma il login vero
+su Amazon+LM Arena richiede Gael fisicamente al PC (2FA/captcha) — comando:
+`python -m engine.session_manager` dalla cartella `libri-performanti-multiagente/`. CP2/CP4/
+CP5/CP7 bloccati a cascata, deliberatamente non abbozzati alla cieca senza sessione reale da
+ispezionare.
+
+**RIPRESA DA:** login di Gael per CP1, poi CP2→CP4→CP5→CP7→CP9→CP10→CP12. Dettaglio completo
+in [CP-20260805-002](checkpoints/CP-20260805-002.md) e nel piano stesso
+([PIANO-KDP-67.md](../Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente/PIANO-KDP-67.md)).
+
+---
+
+## 🔴 2026-08-05 (chiuso, superato dall'aggiornamento sopra) — CLAUDE: PIANO KDP 67 salvato — motore reale per il workflow Amazon KDP, NON INIZIATO — CP-20260805-001
 
 **⚠️ SE STAI RIPRENDENDO DOPO SPEGNIMENTO/FINE CREDITI**: Gael ha detto "continua con il piano
 KDP 67" → apri [PIANO-KDP-67.md](../Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente/PIANO-KDP-67.md),

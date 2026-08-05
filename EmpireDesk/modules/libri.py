@@ -31,7 +31,11 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 BLUEPRINT_DIR = (REPO_ROOT / "company" / "Ecosistemi" / "02-INFO-BUSINESS" / "Workflow"
                   / "libri-performanti-multiagente")
-VERIFIED_DIR = BLUEPRINT_DIR / "architettura_completa_7_livelli"
+# PIANO-KDP-67 CP11 (2026-08-05): le varianti narrative (compresa questa) sono state
+# archiviate in _archivio_blueprint_narrativo/ — sostituite dal motore reale in engine/
+# (vedi modulo Aureus dedicato modules/libri_kdp.py, CP10). Path aggiornato di conseguenza,
+# questa tile resta solo per rileggere/rilanciare la validazione strutturale storica.
+VERIFIED_DIR = BLUEPRINT_DIR / "_archivio_blueprint_narrativo" / "architettura_completa_7_livelli"
 MANIFEST_PATH = VERIFIED_DIR / "Orchestrator" / "manifest_finale_completo.json"
 ENTRYPOINT = VERIFIED_DIR / "Orchestrator" / "assembly_finale.py"
 

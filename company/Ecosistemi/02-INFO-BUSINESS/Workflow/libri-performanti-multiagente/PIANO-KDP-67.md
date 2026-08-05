@@ -1,6 +1,7 @@
 # PIANO KDP 67 — Motore Reale Workflow Amazon KDP (Playwright + LM Arena)
 
-**Creato:** 2026-08-05 · **Owner:** Gael · **Stato:** 🔴 NON INIZIATO (solo pianificazione)
+**Creato:** 2026-08-05 · **Owner:** Gael · **Stato:** 🔄 IN CORSO — 5/13 checkpoint chiusi
+(CP0, CP3, CP6*, CP8*, CP11), bloccato su CP1 in attesa di login manuale di Gael
 
 **Per riprendere dopo spegnimento PC o fine crediti**: dire a Claude *"continua con il piano KDP 67"*.
 Claude deve: (1) aprire questo file, (2) leggere quale checkpoint ha ✅/🔄/🔴, (3) riprendere dal
@@ -92,18 +93,18 @@ Legenda: 🔴 non iniziato · 🔄 in corso · ✅ chiuso e verificato con esecu
 
 | # | Checkpoint | Stato | Dipende da |
 |---|---|---|---|
-| CP0 | Setup struttura + config centralizzato + requirements (playwright, python-docx) | 🔴 | — |
-| CP1 | Session Manager: salva/carica sessione reale Amazon + LM Arena | 🔴 | CP0 |
+| CP0 | Setup struttura + config centralizzato + requirements (playwright, python-docx) | ✅ | — |
+| CP1 | Session Manager: salva/carica sessione reale Amazon + LM Arena | 🔄 | CP0 |
 | CP2 | Amazon Research reale: naviga, cerca keyword, estrae dati libri veri | 🔴 | CP1 |
-| CP3 | Story Validator reale: classificatore GO/NO-GO storia vs diario, deterministico | 🔴 | CP0 |
+| CP3 | Story Validator reale: classificatore GO/NO-GO storia vs diario, deterministico | ✅ | CP0 |
 | CP4 | LM Arena Client condiviso: invia prompt, aspetta risposta, estrae testo/immagine | 🔴 | CP1 |
 | CP5 | Book Writer: loop capitolo-per-capitolo con continuità, produce bozza completa | 🔴 | CP4 |
-| CP6 | KDP Formatter: python-docx reale (trim/margini/font/TOC) + validazione pagine in loop | 🔴 | CP5 |
+| CP6 | KDP Formatter: python-docx reale (trim/margini/font/TOC) + validazione pagine in loop | ✅* | CP5 |
 | CP7 | Cover Generator: immagine reale unica per libro via LM Arena | 🔴 | CP4 |
-| CP8 | Output Manager riscritto: pacchetto reale per libro, no più copia-template | 🔴 | CP6, CP7 |
+| CP8 | Output Manager riscritto: pacchetto reale per libro, no più copia-template | ✅ | CP6, CP7 |
 | CP9 | Orchestrator: unico entrypoint, incatena CP2→CP8, checkpoint interni per resume | 🔴 | CP2,3,6,7,8 |
 | CP10 | Integrazione Aureus/Empire Desk: tile "Avvia" in sezione automazioni | 🔴 | CP9 |
-| CP11 | Pulizia archivio: sposta le 4 varianti finte + doc API inventata in archivio etichettato | 🔴 | — |
+| CP11 | Pulizia archivio: sposta le 4 varianti finte + doc API inventata in archivio etichettato | ✅ | — |
 | CP12 | Test end-to-end reale: 1 run completo, libro diverso da tutti i precedenti, verificato | 🔴 | CP10 |
 
 ### Dettaglio per checkpoint (definizione di "fatto")
@@ -202,6 +203,54 @@ Legenda: 🔴 non iniziato · 🔄 in corso · ✅ chiuso e verificato con esecu
 - Fatto = report finale con tutte le verifiche sopra, non una dichiarazione di successo senza prove
 
 ---
+
+### Note di avanzamento (aggiornate ad ogni sessione)
+
+**2026-08-05**: CP0 chiuso e verificato (pip install ok, playwright+chromium già presenti sul
+PC, python-docx e Pillow installati, cartelle create, `config.py` con path tutti relativi
+verificato con import reale). CP1: `engine/session_manager.py` scritto e verificato in modalità
+`--check` (rileva correttamente 0/2 sessioni presenti) — **la parte di login vera richiede
+Gael fisicamente al PC** (2FA/captcha, non automatizzabile da Claude): serve lanciare
+`python -m engine.session_manager` dalla cartella `libri-performanti-multiagente/`, si aprono
+2 finestre browser (Amazon poi LM Arena), fare login in ognuna, premere INVIO nel terminale
+dopo ogni login. Finché non è fatto, CP1 resta 🔄.
+
+Per non restare fermi in attesa del login, completati anche i checkpoint che NON dipendono da
+sessioni live:
+- **CP3 chiuso**: `engine/story_validator.py`, self-test 5/5 titoli reali corretti. Durante il
+  test trovato e corretto un bug reale: "journal" da solo non era nella lista keyword vietate
+  (solo frasi composte tipo "guided journal"), un titolo tipo "Guided Anxiety Journal" passava
+  per il percorso "ambiguo" invece che per un vero match — aggiunta la keyword bare, ritestato.
+- **CP6 chiuso\***: `engine/kdp_formatter.py` — trim/margini specchio reali (XML diretto,
+  `mirrorMargins` verificato), font/heading/section-break per capitolo, campo numero pagina
+  reale (XML `PAGE` field, verificato presente). Self-test con 2 casi (uno sotto target, uno
+  dentro target): **replica esatta del bug che si è ripetuto 2 volte nello zip originale**
+  (dichiarare 120 pagine quando in realtà erano 21) — qui il conteggio è sempre fatto rileggendo
+  il file appena salvato, mai fidandosi della costruzione in memoria. `*` = **TOC automatico
+  (campo Word) non ancora implementato**, rimandato — margini/font/numeri pagina sì, indice sommario no.
+- **CP8 chiuso\***: `engine/book_output_manager.py` — riscritto da zero. Self-test: 2 libri con
+  manoscritto/copertina diversi producono cartelle con file di dimensione DIVERSA (stesso test
+  forense usato nell'audit per smascherare il bug copia-template — qui il bug NON si riproduce).
+  Errore esplicito (`FileNotFoundError`) se manoscritto/copertina non esistono, mai un fallback
+  silenzioso a un template. `*` = testato con file finti (dummy), non ancora con output reale
+  di CP5/CP7 (che non esistono finché CP1 non sblocca).
+- **CP11 chiuso**: le 4 varianti finte + i loro generatori + la documentazione con il
+  riferimento alla API inventata spostate in `_archivio_blueprint_narrativo/` (con README che
+  spiega perché), non cancellate. Trovato e corretto un effetto collaterale reale: il modulo
+  Aureus `EmpireDesk/modules/libri.py` (dal task precedente, CP-20260803-006) referenziava il
+  vecchio path di `architettura_completa_7_livelli/` — rotto dallo spostamento (selftest
+  EmpireDesk sceso a 17/21), corretto aggiornando il path all'archivio, riverificato con
+  selftest reale (tornato a includere `libri`/`module:libri` = OK). I 2 fallimenti residui nel
+  selftest (`preventivi`, `licenze` — cartella `Clienti/Prof Autocad/preventivo-forge` mancante)
+  sono pre-esistenti, non causati da questa sessione, fuori perimetro di questo piano — non toccati.
+
+**Decisioni prese senza risposta esplicita di Gael (default del piano applicati, da rivedere
+se serve)**: sessioni salvate dentro il repo in `sessions/` (già coperta da `**/sessions/` in
+`.gitignore`, mai finiranno su GitHub); modello LM Arena testo/immagine non ancora scelto —
+deciso di rimandare la scelta al momento del primo login reale (CP1/CP4) guardando la UI
+effettiva invece di indovinare un nome adesso; rischio ToS Amazon/LM Arena: proseguo,
+considerato confermato implicitamente dal "puoi iniziare" di Gael in risposta diretta alla
+domanda; varianti finte: verranno archiviate (non cancellate) in CP11.
 
 ## 3. Decisioni aperte per Gael (da confermare prima o durante CP0/CP1)
 
