@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
 
 ## 🔄 2026-08-05 — CLAUDE: PIANO KDP 67 — 5/13 checkpoint chiusi, bloccato su CP1 (login manuale Gael) — CP-20260805-002
 
@@ -128,6 +128,26 @@ lanciato senza conferma esplicita — stesso principio già usato per WhatsApp i
 questa sessione), (3) dopo il primo run riuscito, copiare la slide 1 in
 `allegati di contesto (slide)/` per dare reference ai caroselli successivi.
 Dettaglio completo in [CP-20260803-008](checkpoints/CP-20260803-008.md).
+
+---
+
+## ⚠️ ASSEGNAZIONE + COORDINAMENTO 2026-08-05 (Claude -> NERI) — TASK-NERI-20260805-S7-STRATEGY-FACTORY-ARENA
+
+Secondo task per Neri (il primo, strategia S7, resta aperto — vedi blocco sotto). Max ha
+chiesto un prompt completo e autosufficiente da dare a Neri per progettare via Arena.ai una
+"fabbrica di strategie" per Stream S7: mantiene il catalogo delle strategie di trading e genera
+un agente operativo dedicato per ognuna (oggi 2 esistono già, memecoin e NFT, entrambe
+architetturalmente solide ma bocciate per l'uso con capitale vero).
+
+Riusato il metodo già scritto (`PIANO-MAESTRO/27-ARENA-WORKFLOW-COMPLETO-METODO.md`), non
+reinventato. Prompt completo pronto da incollare in Arena in
+`company/Memory/tasks/TASK-NERI-20260805-S7-STRATEGY-FACTORY-ARENA.md`. Dettagli:
+[CP-20260805-003](checkpoints/CP-20260805-003.md).
+
+**Tensione segnalata, non nascosta**: questo task convive con quello sotto (Go/No-Go non
+ancora consegnato). Arena progetta soltanto, zero capitale/esecuzione — può procedere in
+parallelo. Gli agenti che la fabbrica genererà restano paper-trading-by-default finché Max non
+decide diversamente sulla base di REP1.
 
 ---
 

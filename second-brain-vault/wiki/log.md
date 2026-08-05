@@ -1,5 +1,16 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-05 (Secondo incarico a Neri: fabbrica strategie S7 via Arena, Claude/Max)
+- PLAN: Max ha chiesto un prompt completo e autosufficiente per Neri, da usare in Arena.ai per
+  progettare una "fabbrica" che genera un agente-strategia dedicato per ogni strategia di
+  trading di Stream S7 (oggi: memecoin + NFT, entrambe già costruite). Riusato il metodo
+  esistente `PIANO-MAESTRO/27-ARENA-WORKFLOW-COMPLETO-METODO.md`, non reinventato. Scritto
+  `company/Memory/tasks/TASK-NERI-20260805-S7-STRATEGY-FACTORY-ARENA.md` (fuori wiki, artefatto
+  operativo di Memory — qui solo il log e l'aggiornamento di [[entities/Neri]]). Segnalata
+  esplicitamente la tensione con l'altro task di Neri (Go/No-Go non ancora consegnato): la
+  progettazione via Arena procede in parallelo (zero capitale/esecuzione), gli agenti generati
+  restano paper-trading-by-default finché Max non decide.
+
 ## 2026-08-03 (Fase 1 + Fase 3 outreach Preventa: filtro import reale + Reparto Produzione, Claude/Max)
 - INGEST: chiusura Fase 1 (filtro solo-import reale, bug `categoria` vacuo trovato e
   corretto, verificato su Areus reale 8/29 lead) — CP-20260803-005, nessuna pagina wiki
@@ -249,4 +260,7 @@
   → 0 pagine wiki nuove, 1 lezione registrata.
 
 ## 2026-08-03
+- INGEST: studio copy @dosementale rigenerato su 36 video reali → 1 pagina aggiornata (synthesis/Studio_Copy_Dose_Mentale.md)
+
+## 2026-08-05
 - INGEST: studio copy @dosementale rigenerato su 36 video reali → 1 pagina aggiornata (synthesis/Studio_Copy_Dose_Mentale.md)

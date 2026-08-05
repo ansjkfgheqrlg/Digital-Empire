@@ -16,11 +16,14 @@ tocca operatività diretta (codice, build, run).
   - **Max** — owner, decisore finale su tutto
   - **Gael** — operativo, esegue task assegnati (ordini su di lui sono legge)
   - **Neri** — organizzativo/metodo, non tocca file operativi
-- Task concreti assegnati: **TASK-NERI-20260803-STREAM-S7-STRATEGIA** (primo incarico reale,
-  2026-08-03, consolidato in un unico documento il 2026-08-04) — strato strategico
-  dell'iniziativa Stream S7 (trading NFT/token): piano strategico integrale da migliorare
-  (non solo leggere), 3 ricerche, 3 report (incluso Go/No-Go), 2 architetture di metodo. Non
-  tocca il codice/esecuzione (resta di Gael) — coerente col ruolo dichiarato
+- Task concreti assegnati:
+  - **TASK-NERI-20260803-STREAM-S7-STRATEGIA** (2026-08-03, consolidato 2026-08-04) — strato
+    strategico dell'iniziativa Stream S7: piano da migliorare, 3 ricerche, 3 report (incluso
+    Go/No-Go), 2 architetture di metodo
+  - **TASK-NERI-20260805-S7-STRATEGY-FACTORY-ARENA** (2026-08-05) — progettare via Arena.ai
+    (non build) una "fabbrica" che genera un agente-strategia per ogni strategia di trading S7
+  - Nessuno dei due tocca codice/esecuzione (resta di Gael/Claude) — coerente col ruolo
+    dichiarato: Neri progetta e valuta, non costruisce
 
 ## 🎯 Come Impatta DE
 I blocchi ⚠️ COORDINAMENTO in `company/Memory/STATO-EMPIRE.md` (avviso pre-collisione su file di
@@ -42,8 +45,10 @@ indicazione contraria.
 - 2026-07-30: Ingresso nel team, ruolo dichiarato (gestione organizzativa/metodo)
 - 2026-08-03: Primo incarico concreto — strategia Stream S7 (ricerche+report+architetture),
   vedi `company/Memory/tasks/TASK-NERI-20260803-STREAM-S7-STRATEGIA.md`
+- 2026-08-05: Secondo incarico — progettazione via Arena.ai di una "fabbrica di strategie" per
+  Stream S7, vedi `company/Memory/tasks/TASK-NERI-20260805-S7-STRATEGY-FACTORY-ARENA.md`
 
 ## 📍 Status
 - First added: 2026-07-30
-- Last updated: 2026-08-03
-- Confidence level: Media — primo task concreto assegnato, ruolo ancora da validare sull'esito
+- Last updated: 2026-08-05
+- Confidence level: Media — 2 task concreti assegnati, ruolo ancora da validare sull'esito
