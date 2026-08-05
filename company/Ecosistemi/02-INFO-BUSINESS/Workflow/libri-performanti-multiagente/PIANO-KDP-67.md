@@ -1,7 +1,8 @@
 # PIANO KDP 67 — Motore Reale Workflow Amazon KDP (Playwright + LM Arena)
 
 **Creato:** 2026-08-05 · **Owner:** Gael · **Stato:** 🔄 IN CORSO — 5/13 checkpoint chiusi
-(CP0, CP3, CP6*, CP8*, CP11), bloccato su CP1 in attesa di login manuale di Gael
+(CP0, CP3, CP6*, CP8*, CP11) + CP9 parziale (logica checkpoint/resume verificata con moduli
+finti), bloccato su CP1 in attesa di login manuale di Gael
 
 **Per riprendere dopo spegnimento PC o fine crediti**: dire a Claude *"continua con il piano KDP 67"*.
 Claude deve: (1) aprire questo file, (2) leggere quale checkpoint ha ✅/🔄/🔴, (3) riprendere dal
@@ -102,7 +103,7 @@ Legenda: 🔴 non iniziato · 🔄 in corso · ✅ chiuso e verificato con esecu
 | CP6 | KDP Formatter: python-docx reale (trim/margini/font/TOC) + validazione pagine in loop | ✅* | CP5 |
 | CP7 | Cover Generator: immagine reale unica per libro via LM Arena | 🔴 | CP4 |
 | CP8 | Output Manager riscritto: pacchetto reale per libro, no più copia-template | ✅ | CP6, CP7 |
-| CP9 | Orchestrator: unico entrypoint, incatena CP2→CP8, checkpoint interni per resume | 🔴 | CP2,3,6,7,8 |
+| CP9 | Orchestrator: unico entrypoint, incatena CP2→CP8, checkpoint interni per resume | 🔄 | CP2,3,6,7,8 |
 | CP10 | Integrazione Aureus/Empire Desk: tile "Avvia" in sezione automazioni | 🔴 | CP9 |
 | CP11 | Pulizia archivio: sposta le 4 varianti finte + doc API inventata in archivio etichettato | ✅ | — |
 | CP12 | Test end-to-end reale: 1 run completo, libro diverso da tutti i precedenti, verificato | 🔴 | CP10 |

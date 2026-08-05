@@ -33,10 +33,20 @@ def _ensure_session(playwright: Playwright, site_name: str, home_url: str, sessi
     print(f"\n[{site_name}] NESSUNA sessione salvata trovata.")
     print(f"[{site_name}] Apro un browser visibile su {home_url} — fai login a mano "
           f"(username/password/2FA), poi torna qui.")
-    browser = playwright.chromium.launch(headless=False)
-    context = browser.new_context()
+    # --start-maximized + finestra portata in primo piano: su Windows un browser
+    # headless=False può aprirsi minimizzato o dietro altre finestre — reso impossibile
+    # da perdere (trovato un caso reale in cui l'utente non vedeva la finestra).
+    browser = playwright.chromium.launch(
+        headless=False,
+        args=["--start-maximized", "--new-window"],
+    )
+    context = browser.new_context(no_viewport=True)
     page = context.new_page()
+    page.bring_to_front()
     page.goto(home_url, wait_until="domcontentloaded", timeout=config.DEFAULT_TIMEOUT_MS)
+    page.bring_to_front()
+    print(f"[{site_name}] browser aperto e navigato su {home_url} — se non la vedi, "
+          f"controlla la barra delle applicazioni / altri monitor / desktop virtuali.")
 
     input(f"\n>>> [{site_name}] Premi INVIO qui nel terminale DOPO aver completato il login "
           f"nel browser aperto...\n")
