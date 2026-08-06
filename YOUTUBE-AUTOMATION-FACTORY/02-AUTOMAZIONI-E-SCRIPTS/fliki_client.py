@@ -228,6 +228,20 @@ def generate_video(key: str, content: str, voice_id: str, file_name: str,
             payload["payload"][0]["aiVideoModel"] = ai_video_model
             payload["payload"][0]["aiVideoClipPercentage"] = clip_percentage
             payload["payload"][0]["imageAnimationPreset"] = IMAGE_ANIMATION_PRESET
+
+    # regolatore-configurazione: fino ad ora la configurazione approvata da Gael era protetta
+    # solo da un commento "NON MODIFICARE" — nessun controllo la impediva davvero prima della
+    # chiamata reale. `visuals` e' passato come variante esplicita: e' l'unico campo per cui
+    # regolatori.py accetta uno scostamento autorizzato dall'operatore a riga di comando.
+    # Stesso pattern di build_script_content(): si reimporta il modulo reale (REGOLATORI e'
+    # gia' caricato li' come modulo condiviso) invece di duplicarne il caricamento.
+    sys.path.insert(0, SCRIPT_DIR)
+    import apex7_orchestrator as _mod  # noqa: E402
+    esito_config = _mod.REGOLATORI.verifica_configurazione(payload["payload"][0], flag_espliciti={"visuals": visuals})
+    print(f"[regolatore-configurazione] {esito_config['esito']} — {esito_config['motivo']}")
+    if esito_config["esito"] == "BLOCCO":
+        raise SystemExit(f"[!] regolatore-configurazione BLOCCO: {esito_config.get('differenze')}")
+
     res = _request("POST", "/generate/video", key, payload)
     files_created = (res.get("data") or {}).get("filesCreated") or []
     if not files_created:

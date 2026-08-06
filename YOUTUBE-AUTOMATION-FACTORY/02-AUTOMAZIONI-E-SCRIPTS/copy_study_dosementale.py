@@ -25,7 +25,7 @@ import sys
 import json
 import argparse
 import statistics
-from datetime import date
+from datetime import date, datetime
 
 if sys.platform.startswith("win"):
     sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
@@ -37,6 +37,15 @@ EMPIRE_DIR = os.path.abspath(os.path.join(FACTORY_DIR, ".."))
 CACHE_DIR = os.path.join(FACTORY_DIR, "memory", "channel_videos")
 WIKI_SYNTHESIS = os.path.join(EMPIRE_DIR, "second-brain-vault", "wiki", "synthesis")
 WIKI_LOG = os.path.join(EMPIRE_DIR, "second-brain-vault", "wiki", "log.md")
+# Fino al 2026-08-05 questo studio finiva SOLO sulla wiki (Markdown, letto da un umano se e
+# quando capitava): apex7_orchestrator.py non lo consumava mai in una run automatica. Questo
+# file JSON e' il ponte. Va tenuto SEPARATO da memory/learned_rules.json apposta: quel file
+# viene riscritto per intero da self_improve.py ad ogni Fase 6 (anche vuoto, se non ci sono
+# ancora log di performance reali) — se ci scrivessimo qui dentro, il prossimo F6 lo
+# cancellerebbe. learned_rules.json = performance reali post-pubblicazione (oggi vuoto, nessun
+# video pubblicato). copy_intelligence.json = pattern del competitor, disponibili SUBITO senza
+# aspettare un video pubblicato: due fonti distinte, stesso punto di consumo in F5.
+COPY_INTELLIGENCE_PATH = os.path.join(FACTORY_DIR, "memory", "copy_intelligence.json")
 
 
 # Ogni schema e' (nome, descrizione, test). Il test dice solo se il titolo CONTIENE lo schema:
@@ -156,6 +165,28 @@ def scrivi_studio(handle: str, video: list[dict], risultati: list[dict], percors
         f.write("- `YOUTUBE-AUTOMATION-FACTORY/03-AGENTI-E-RUOLI/operatori/copy-researcher.md` — l'agente che lo mantiene\n")
 
 
+def scrivi_copy_intelligence(handle: str, n_video: int, risultati: list[dict], percorso: str):
+    """Stessi risultati dello studio wiki, in JSON strutturato per il consumo automatico da
+    parte di apex7_orchestrator.py (tag F5, brief F3) — vedi nota su COPY_INTELLIGENCE_PATH sul
+    perche' non e' semplicemente learned_rules.json."""
+    dati = {
+        "handle": handle,
+        "generato": datetime.now().isoformat(),
+        "n_video_campione": n_video,
+        "schemi_favorevoli": [
+            {"schema": r["schema"], "descrizione": r["descrizione"], "delta_pct": r["delta_pct"]}
+            for r in risultati if r.get("verdetto") == "favorevole"
+        ],
+        "schemi_sfavorevoli": [
+            {"schema": r["schema"], "descrizione": r["descrizione"], "delta_pct": r["delta_pct"]}
+            for r in risultati if r.get("verdetto") == "sfavorevole"
+        ],
+    }
+    os.makedirs(os.path.dirname(percorso), exist_ok=True)
+    with open(percorso, "w", encoding="utf-8") as f:
+        json.dump(dati, f, ensure_ascii=False, indent=2)
+
+
 def aggiorna_log_wiki(n_video: int):
     riga = (f"\n## {date.today()}\n"
             f"- INGEST: studio copy @dosementale rigenerato su {n_video} video reali "
@@ -179,8 +210,10 @@ def main():
     scrivi_studio(args.handle, video, risultati, percorso)
     if os.path.exists(WIKI_LOG):
         aggiorna_log_wiki(len(video))
+    scrivi_copy_intelligence(args.handle, len(video), risultati, COPY_INTELLIGENCE_PATH)
 
-    print(f"[+] Studio scritto su {len(video)} video reali → {percorso}\n")
+    print(f"[+] Studio scritto su {len(video)} video reali → {percorso}")
+    print(f"[+] Copy intelligence per la fabbrica → {COPY_INTELLIGENCE_PATH}\n")
     for r in risultati:
         if r["verdetto"] == "campione insufficiente":
             print(f"    {r['schema']:24} campione insufficiente ({r['n_con']}/{r['n_senza']})")

@@ -286,6 +286,65 @@ def verifica_qualita(percorso_mp4: str) -> dict:
 
 
 # --------------------------------------------------------------------------------------
+# regolatore-copertina — la copertina generata deve essere visivamente distinta dalla sorgente
+# --------------------------------------------------------------------------------------
+# Fino al 2026-08-05 "riadattata, non ricalcata" era solo una frase nel prompt inviato ad Arena
+# (arena_thumbnail.build_prompt): nessun controllo verificava il risultato. Qui si misura, non
+# si deduce dal testo del prompt.
+HASH_SIZE = 8
+DISTANZA_MINIMA_BIT = 10  # su HASH_SIZE**2 bit totali (64): sotto, le due immagini sono troppo simili
+
+
+def _average_hash(percorso_immagine: str) -> str:
+    """Average hash 8x8: ridimensiona in scala di grigi, confronta ogni pixel con la media.
+    Robusto a differenze di compressione/dimensione, sensibile a differenze di composizione —
+    esattamente cio' che serve per distinguere 'stessa foto ricompressa' da 'foto riadattata'."""
+    from PIL import Image
+    img = Image.open(percorso_immagine).convert("L").resize((HASH_SIZE, HASH_SIZE), Image.LANCZOS)
+    pixel = list(img.getdata())
+    media = sum(pixel) / len(pixel)
+    return "".join("1" if p > media else "0" for p in pixel)
+
+
+def _distanza_hamming(a: str, b: str) -> int:
+    return sum(1 for x, y in zip(a, b) if x != y)
+
+
+def verifica_copertina(source_path: str | None, generated_path: str | None) -> dict:
+    """Confronta la copertina generata con quella reale del competitor via hash percettivo.
+
+    Limite dichiarato (come per regolatore-originalita sui testi): questa e' una misura
+    approssimata di somiglianza visiva, non un giudizio di qualita' creativa. Una distanza
+    alta non prova che la copertina sia buona; una distanza bassa prova solo che e' quasi
+    identica alla sorgente — il minimo indispensabile perche' 'riadattata' non resti solo
+    una parola nel prompt.
+    """
+    if not generated_path or not os.path.exists(generated_path):
+        return esito("regolatore-copertina", False, f"Copertina generata inesistente: {generated_path}")
+    if not source_path or not os.path.exists(source_path):
+        return esito("regolatore-copertina", True,
+                     "Nessuna copertina sorgente da confrontare (nessun adattamento da video "
+                     "sorgente, prompt generico): controllo non applicabile.")
+    try:
+        hash_source = _average_hash(source_path)
+        hash_generata = _average_hash(generated_path)
+    except Exception as e:
+        return esito("regolatore-copertina", False, f"Impossibile leggere le immagini: {e}")
+
+    distanza = _distanza_hamming(hash_source, hash_generata)
+    if distanza < DISTANZA_MINIMA_BIT:
+        return esito("regolatore-copertina", False,
+                     f"Copertina troppo simile alla sorgente (distanza percettiva {distanza}/"
+                     f"{HASH_SIZE * HASH_SIZE} bit, minimo richiesto {DISTANZA_MINIMA_BIT}): "
+                     f"non sembra riadattata.",
+                     distanza_hash=distanza)
+    return esito("regolatore-copertina", True,
+                 f"Copertina visivamente distinta dalla sorgente (distanza percettiva "
+                 f"{distanza}/{HASH_SIZE * HASH_SIZE} bit).",
+                 distanza_hash=distanza)
+
+
+# --------------------------------------------------------------------------------------
 # Registro delle firme (principio delle 3 firme)
 # --------------------------------------------------------------------------------------
 VIDEO_PRODOTTI_PATH = os.path.join(MEMORY_DIR, "video_prodotti.json")

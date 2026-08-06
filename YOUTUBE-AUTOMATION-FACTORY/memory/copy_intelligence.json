@@ -1,0 +1,59 @@
+{
+  "handle": "@dosementale",
+  "generato": "2026-08-05T07:16:13.714491",
+  "n_video_campione": 36,
+  "schemi_favorevoli": [
+    {
+      "schema": "salute_eta",
+      "descrizione": "Tema salute o età",
+      "delta_pct": 455.6
+    },
+    {
+      "schema": "relazioni",
+      "descrizione": "Tema relazioni/famiglia",
+      "delta_pct": 338.3
+    },
+    {
+      "schema": "rivelazione",
+      "descrizione": "Promette di svelare qualcosa di nascosto",
+      "delta_pct": 263.8
+    },
+    {
+      "schema": "numero_secco",
+      "descrizione": "Promette un numero preciso di cose ('le 2 parole', '3 azioni')",
+      "delta_pct": 252.9
+    },
+    {
+      "schema": "comando_maiuscolo",
+      "descrizione": "Un verbo imperativo tutto maiuscolo (SMETTI, STOP, ECCO)",
+      "delta_pct": 223.1
+    },
+    {
+      "schema": "domanda",
+      "descrizione": "Il titolo pone una domanda",
+      "delta_pct": 83.3
+    },
+    {
+      "schema": "interpellazione_diretta",
+      "descrizione": "Parla direttamente allo spettatore (hai / tu / ti / tuo)",
+      "delta_pct": 78.2
+    },
+    {
+      "schema": "allarme",
+      "descrizione": "Segnale di allerta o urgenza (ALLARME, ATTENZIONE, 99%)",
+      "delta_pct": 61.1
+    }
+  ],
+  "schemi_sfavorevoli": [
+    {
+      "schema": "religioso",
+      "descrizione": "Riferimento spirituale o biblico",
+      "delta_pct": -43.1
+    },
+    {
+      "schema": "parentesi",
+      "descrizione": "Aggiunge una precisazione fra parentesi",
+      "delta_pct": -49.9
+    }
+  ]
+}

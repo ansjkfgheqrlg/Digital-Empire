@@ -2,8 +2,8 @@
 Type: SYNTHESIS
 Status: Active
 Tags: #youtube #copy #dosementale #ricerca
-Created: 2026-08-03
-Last updated: 2026-08-03
+Created: 2026-08-05
+Last updated: 2026-08-05
 ---
 
 # Studio Copy — @dosementale
@@ -24,24 +24,24 @@ Analisi degli schemi di copy nei titoli reali di `@dosementale` (36 video), misu
 | Schema | Con | Senza | Mediana con | Mediana senza | Δ | Verdetto |
 |---|---|---|---|---|---|---|
 | `salute_eta` | 3 | 33 | 4.57 | 0.82 | +455.6% | **favorevole** |
-| `relazioni` | 14 | 22 | 2.86 | 0.71 | +304.5% | **favorevole** |
-| `numero_secco` | 17 | 19 | 2.57 | 0.68 | +275.0% | **favorevole** |
-| `rivelazione` | 10 | 26 | 2.7 | 0.75 | +258.3% | **favorevole** |
-| `comando_maiuscolo` | 10 | 26 | 2.64 | 0.75 | +250.5% | **favorevole** |
+| `relazioni` | 14 | 22 | 2.88 | 0.66 | +338.3% | **favorevole** |
+| `rivelazione` | 10 | 26 | 2.7 | 0.74 | +263.8% | **favorevole** |
+| `numero_secco` | 17 | 19 | 2.05 | 0.58 | +252.9% | **favorevole** |
+| `comando_maiuscolo` | 10 | 26 | 2.4 | 0.74 | +223.1% | **favorevole** |
 | `domanda` | 9 | 27 | 1.51 | 0.82 | +83.3% | **favorevole** |
-| `interpellazione_diretta` | 15 | 21 | 1.34 | 0.78 | +72.9% | **favorevole** |
+| `interpellazione_diretta` | 15 | 21 | 1.34 | 0.75 | +78.2% | **favorevole** |
 | `allarme` | 11 | 25 | 1.32 | 0.82 | +61.1% | **favorevole** |
 | `religioso` | 11 | 25 | 0.75 | 1.32 | -43.1% | **sfavorevole** |
 | `parentesi` | 6 | 30 | 0.67 | 1.33 | -49.9% | **sfavorevole** |
 
 ## Schemi da usare
 - **salute_eta** (+455.6%, su 3 video) — Tema salute o età
-- **relazioni** (+304.5%, su 14 video) — Tema relazioni/famiglia
-- **numero_secco** (+275.0%, su 17 video) — Promette un numero preciso di cose ('le 2 parole', '3 azioni')
-- **rivelazione** (+258.3%, su 10 video) — Promette di svelare qualcosa di nascosto
-- **comando_maiuscolo** (+250.5%, su 10 video) — Un verbo imperativo tutto maiuscolo (SMETTI, STOP, ECCO)
+- **relazioni** (+338.3%, su 14 video) — Tema relazioni/famiglia
+- **rivelazione** (+263.8%, su 10 video) — Promette di svelare qualcosa di nascosto
+- **numero_secco** (+252.9%, su 17 video) — Promette un numero preciso di cose ('le 2 parole', '3 azioni')
+- **comando_maiuscolo** (+223.1%, su 10 video) — Un verbo imperativo tutto maiuscolo (SMETTI, STOP, ECCO)
 - **domanda** (+83.3%, su 9 video) — Il titolo pone una domanda
-- **interpellazione_diretta** (+72.9%, su 15 video) — Parla direttamente allo spettatore (hai / tu / ti / tuo)
+- **interpellazione_diretta** (+78.2%, su 15 video) — Parla direttamente allo spettatore (hai / tu / ti / tuo)
 - **allarme** (+61.1%, su 11 video) — Segnale di allerta o urgenza (ALLARME, ATTENZIONE, 99%)
 
 ## Schemi da evitare
@@ -52,7 +52,7 @@ Analisi degli schemi di copy nei titoli reali di `@dosementale` (36 video), misu
 
 - `38.6` views/ora · 141.000 viste — "Hai 70-80 anni? SMETTI di Camminare tanto e fai SOLO Queste 2 Cose"
 - `15.5` views/ora · 34.000 viste — "Familiari Tossici? Ecco In Che Modo Dio Ti Allontana da Loro | Saggezza Biblica"
-- `8.3` views/ora · 2.400 viste — "Ecco Come Dio Allontana I Familiari Che Non Ti Amano Veramente | Saggezza Biblica"
+- `8.0` views/ora · 2.500 viste — "Ecco Come Dio Allontana I Familiari Che Non Ti Amano Veramente | Saggezza Biblica"
 - `5.5` views/ora · 16.000 viste — "Le 2 PAROLE che Ti Svelano le Persone False e Tossiche (funziona sempre) | Fatti Psicologici"
 - `5.1` views/ora · 15.000 viste — "ALLARME FAMIGLIA! Come Smascherare i Parenti Invidiosi - 3 Avvertimenti Sottili | Relazioni"
 - `4.6` views/ora · 10.000 viste — "Quanto Vivrai Davvero Dopo i 70 Anni? La Risposta È In Questi 6 Segnali"

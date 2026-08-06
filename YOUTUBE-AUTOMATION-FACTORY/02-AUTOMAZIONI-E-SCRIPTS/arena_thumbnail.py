@@ -298,7 +298,20 @@ def main():
                 open_new_chat(page)
 
         page.screenshot(path=os.path.join(OUT_DIR, "arena_debug_final.png"), full_page=True)
-        write_status("completato" if saved else "fallito", immagini_salvate=saved)
+
+        # regolatore-copertina: fino ad ora nessun controllo verificava che la copertina
+        # generata fosse davvero riadattata e non solo un ricalco della sorgente — "originale"
+        # era affidato solo al testo del prompt (build_prompt), mai misurato dopo il fatto.
+        esito_copertina = None
+        if saved:
+            sys.path.insert(0, SCRIPT_DIR)
+            import regolatori as _regolatori  # noqa: E402
+            esito_copertina = _regolatori.verifica_copertina(image_path, saved[0])
+            simbolo = "🟢" if esito_copertina["esito"] == "passa" else "🔴"
+            print(f"[{simbolo} regolatore-copertina] {esito_copertina['esito']} — {esito_copertina['motivo']}")
+
+        write_status("completato" if saved else "fallito", immagini_salvate=saved,
+                     regolatore_copertina=esito_copertina)
         context.close()
 
 
