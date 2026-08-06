@@ -273,3 +273,6 @@
 
 ## 2026-08-05
 - INGEST: studio copy @dosementale rigenerato su 36 video reali → 1 pagina aggiornata (synthesis/Studio_Copy_Dose_Mentale.md)
+
+## 2026-08-06
+- INGEST: studio copy @Legamidiamore + 4 competitor rigenerato su 176 video reali → 1 pagina aggiornata (synthesis/Studio_Copy_Legamidiamore.md)

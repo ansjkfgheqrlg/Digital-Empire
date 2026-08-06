@@ -1,0 +1,55 @@
+{
+  "handles": [
+    "@Legamidiamore",
+    "@PsicologiadellAttrazionee",
+    "@PsicologiaFemminile-f8c",
+    "@DinamicheSocialiAcademy",
+    "@codicedonna"
+  ],
+  "generato": "2026-08-06T08:25:23.172527",
+  "n_video_campione": 176,
+  "schemi_favorevoli": [
+    {
+      "schema": "segnali_espliciti",
+      "descrizione": "La parola 'segnal-'/'segn-' nel titolo (il framing dominante della nicchia)",
+      "delta_pct": 344.4
+    },
+    {
+      "schema": "genere_esplicito",
+      "descrizione": "Nomina esplicitamente donna/uomo/donne/uomini",
+      "delta_pct": 311.7
+    },
+    {
+      "schema": "numero_secco",
+      "descrizione": "Promette un numero preciso di cose ('7 segnali', '3 test')",
+      "delta_pct": 250.0
+    },
+    {
+      "schema": "parentesi",
+      "descrizione": "Aggiunge una precisazione fra parentesi",
+      "delta_pct": 229.0
+    },
+    {
+      "schema": "comando_maiuscolo",
+      "descrizione": "Un verbo o termine tutto maiuscolo",
+      "delta_pct": 177.7
+    },
+    {
+      "schema": "allarme_negativo",
+      "descrizione": "Paura/minaccia/perdita (distrugge, blocca, single, sbagli)",
+      "delta_pct": 123.3
+    },
+    {
+      "schema": "interpellazione_diretta",
+      "descrizione": "Parla direttamente allo spettatore (hai / tu / ti / tuo / sei)",
+      "delta_pct": 115.9
+    }
+  ],
+  "schemi_sfavorevoli": [
+    {
+      "schema": "rivelazione",
+      "descrizione": "Promette di svelare qualcosa di nascosto (segreto, verita', nessuno te lo dira')",
+      "delta_pct": -87.7
+    }
+  ]
+}
