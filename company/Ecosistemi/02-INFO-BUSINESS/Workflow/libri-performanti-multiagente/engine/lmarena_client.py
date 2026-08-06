@@ -34,32 +34,41 @@ from playwright.sync_api import Page, Playwright
 
 from . import config
 
-ARENA_LAUNCH_ARGS = ["--disable-blink-features=AutomationControlled", "--profile-directory=Default"]
+ARENA_LAUNCH_ARGS = ["--disable-blink-features=AutomationControlled"]
 
 
 @dataclass
 class ArenaSession:
+    browser: object
     context: object
     page: Page
 
     def close(self) -> None:
         self.context.close()
+        self.browser.close()
 
 
 def open_session(playwright: Playwright, headless: bool = True) -> ArenaSession:
     """Apre LM Arena con la sessione reale salvata (CP1) e seleziona la modalita' Direct.
-    Fatto = pronta per send_text_prompt/send_image_prompt, nessun login richiesto."""
-    if not config.BRAVE_PROFILE_COPY_DIR.exists():
+    Fatto = pronta per send_text_prompt/send_image_prompt, nessun login richiesto.
+
+    CORRETTO 2026-08-06: prima lanciava l'intero profilo Brave reale copiato (381MB,
+    con Safe Browsing/Crowd Deny/component-updater/estensioni) via
+    `launch_persistent_context` — trovato essere la causa di lanci del browser che vanno
+    in timeout (180s) dopo l'accumulo di ~20+ lanci automatizzati sulla stessa copia.
+    Ora usa lo STESSO pattern gia' verificato affidabile per Amazon
+    (`session_manager.load_context`): Chromium bundlato di Playwright, pulito ad ogni
+    lancio, con solo cookie/localStorage iniettati da `lmarena_state.json` (esportato in
+    CP1) — nessun profilo browser reale coinvolto, nessuno stato che si accumula."""
+    if not config.LMARENA_SESSION_PATH.exists():
         raise FileNotFoundError(
-            f"Profilo Brave copiato non trovato: {config.BRAVE_PROFILE_COPY_DIR}. "
+            f"Sessione LM Arena non trovata: {config.LMARENA_SESSION_PATH}. "
             f"Esegui prima: python -m engine.session_manager"
         )
-    context = playwright.chromium.launch_persistent_context(
-        user_data_dir=str(config.BRAVE_PROFILE_COPY_DIR),
-        headless=headless,
-        executable_path=str(config.BRAVE_EXECUTABLE_PATH),
+    browser = playwright.chromium.launch(headless=headless, args=ARENA_LAUNCH_ARGS)
+    context = browser.new_context(
+        storage_state=str(config.LMARENA_SESSION_PATH),
         viewport={"width": 1440, "height": 900},
-        args=ARENA_LAUNCH_ARGS,
     )
     page = context.pages[0] if context.pages else context.new_page()
     # domcontentloaded, non networkidle: arena.ai tiene connessioni persistenti aperte
@@ -72,7 +81,7 @@ def open_session(playwright: Playwright, headless: bool = True) -> ArenaSession:
     except Exception:
         pass
     _select_direct_mode(page)
-    return ArenaSession(context=context, page=page)
+    return ArenaSession(browser=browser, context=context, page=page)
 
 
 def _robust_click(el, timeout: int = 10000) -> None:
