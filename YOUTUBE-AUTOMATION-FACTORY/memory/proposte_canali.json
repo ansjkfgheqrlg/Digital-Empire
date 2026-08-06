@@ -1,39 +1,81 @@
 {
-  "generato": "2026-08-05T07:24:59.980481",
+  "generato": "2026-08-05T16:03:11.499625",
   "query": [
-    "saggezza spirituale anziani"
+    "psicologia femminile segnali attrazione",
+    "linguaggio del corpo attrazione"
   ],
   "nota": "Proposte, non decisioni. Nessuna run di produzione legge questo file. CANALE_TARGET cambia solo per decisione esplicita di Gael/Max.",
   "canali": [
     {
-      "handle": "@blablain2",
-      "url": "https://www.youtube.com/@blablain2",
-      "nome": "BlaBlaIn2 - Saggezza Spirituale",
+      "handle": "@PsicologiaFemminile-f8c",
+      "url": "https://www.youtube.com/@PsicologiaFemminile-f8c",
+      "nome": "Psicologia Femminile",
       "iscritti": null,
       "query_origine": [
-        "saggezza spirituale anziani"
+        "psicologia femminile segnali attrazione"
+      ],
+      "cashcow_index": 15.3
+    },
+    {
+      "handle": "@PsicologiadellAttrazionee",
+      "url": "https://www.youtube.com/@PsicologiadellAttrazionee",
+      "nome": "Psicologia dell’Attrazione",
+      "iscritti": null,
+      "query_origine": [
+        "psicologia femminile segnali attrazione",
+        "linguaggio del corpo attrazione"
       ],
       "cashcow_index": 15.1
     },
     {
-      "handle": "@saggezzaspiritualeemotivazione",
-      "url": "https://www.youtube.com/@saggezzaspiritualeemotivazione",
-      "nome": "Saggezza spirituale e motivazione",
+      "handle": "@codicedonna",
+      "url": "https://www.youtube.com/@codicedonna",
+      "nome": "Codice Donna",
       "iscritti": null,
       "query_origine": [
-        "saggezza spirituale anziani"
+        "psicologia femminile segnali attrazione"
       ],
       "cashcow_index": 15.0
     },
     {
-      "handle": "@saggezzaspiritualeufficiale",
-      "url": "https://www.youtube.com/@saggezzaspiritualeufficiale",
-      "nome": "Saggezza Spirituale",
+      "handle": "@DinamicheSocialiAcademy",
+      "url": "https://www.youtube.com/@DinamicheSocialiAcademy",
+      "nome": "Relazioni in Focus",
       "iscritti": null,
       "query_origine": [
-        "saggezza spirituale anziani"
+        "psicologia femminile segnali attrazione"
       ],
       "cashcow_index": 15.0
+    },
+    {
+      "handle": "@linguaggiosegretodelcorpo-6589",
+      "url": "https://www.youtube.com/@linguaggiosegretodelcorpo-6589",
+      "nome": "Linguaggio segreto del corpo - Giuliano Scarpati",
+      "iscritti": null,
+      "query_origine": [
+        "linguaggio del corpo attrazione"
+      ],
+      "cashcow_index": 15.0
+    },
+    {
+      "handle": "@Kupidines",
+      "url": "https://www.youtube.com/@Kupidines",
+      "nome": "Kupidines",
+      "iscritti": null,
+      "query_origine": [
+        "linguaggio del corpo attrazione"
+      ],
+      "cashcow_index": null
+    },
+    {
+      "handle": "@PaxtonElmir",
+      "url": "https://www.youtube.com/@PaxtonElmir",
+      "nome": "Paxton Elmir",
+      "iscritti": null,
+      "query_origine": [
+        "linguaggio del corpo attrazione"
+      ],
+      "cashcow_index": null
     }
   ]
 }

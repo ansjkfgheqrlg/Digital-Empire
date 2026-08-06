@@ -1,4 +1,38 @@
-# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## 🔀 2026-08-05 — CLAUDE: YOUTUBE — pausa Dose Mentale, pivot su @Legamidiamore, login reale + audit sbloccato — CP-20260805-009
+
+Ordine esplicito di Max: **pausa il progetto canale-copia di Dose Mentale**, priorità ora è
+**@Legamidiamore** (nicchia italiana psicologia femminile/attrazione, **invariata** — confermato
+da Max su domanda diretta). Credenziali fornite in chat, mai salvate in nessun file: login
+manuale una tantum in browser visibile, profilo Chrome persistente (`chrome-profile-legamidiamore`)
+salva la sessione.
+
+**Blocco aperto da 2 settimane risolto**: `Entity_Legami_dAmore_Channel.md` (07-22) chiedeva un
+login per sapere stato monetizzazione/chi gestisce i 471 video. Fatto oggi: **14.793 iscritti,
+revenue ultimi 28gg €44,02** (conferma "rende quasi nulla" del 07-22), monetizzazione attiva,
+canale confermato di Max. Anche corretto un dato vecchio: non è inglese, è quasi tutto italiano
+(scrape reale oggi, 60 video).
+
+Trovati 5 competitor reali nella nicchia (Codice Donna, Psicologia dell'Attrazione, Psicologia
+Femminile, Linguaggio Segreto del Corpo, Dinamiche Sociali Academy) via `channel_discovery.py`
+(costruito ieri in CP-20260805-005, riusato senza modifiche — prova che era davvero generico).
+
+Costruito anche `legamidiamore_session_check.py` su richiesta esplicita di Max ("che questa
+sessione non si sbagli mai"): verifica in pochi secondi se il login è ancora valido prima di
+automatizzare su un canale vero. 3 bug reali trovati e corretti costruendolo (User-Agent che
+faceva apparire un interstiziale "browser non supportato" al posto della dashboard, selettore
+Studio morto, `networkidle` che non si ferma mai su questa pagina) — verificato 3/3 run verdi.
+
+Dettaglio completo in [CP-20260805-009](checkpoints/CP-20260805-009.md).
+
+**RIPRESA DA**: fabbrica F1-F6 ancora cablata solo su Dose Mentale (`CANALE_TARGET` fisso,
+regolatore-nicchia con temi sbagliati per questa nicchia) — va parametrizzata prima di produrre
+per @Legamidiamore. Poi: studio copy su un competitor scelto, calendario contenuti, e **solo con
+conferma esplicita di Max** il primo upload reale (mai fatto finora su questa fabbrica, sempre
+mock).
+
+---
 
 ## 🐛 2026-08-05 — CLAUDE: Progetto Preventa carousel — 4 bug reali nel motore ArenaAI + login Google bloccato — CP-20260805-008
 Max ha dato il via libera al run live ("1 si fai tutto deve essere tutto perfettamente
