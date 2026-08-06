@@ -80,6 +80,29 @@ def open_session(playwright: Playwright, headless: bool = True) -> ArenaSession:
         page.get_by_text("Accept Cookies", exact=True).click(timeout=3000)
     except Exception:
         pass
+    # Modale "Terms of Use & Privacy Policy" (mai visto prima di questa sessione, appare
+    # con un overlay scuro che intercetta i click su tutto quello che sta sotto — bug
+    # reale trovato via screenshot dal vivo dopo hang inspiegabili: senza dismissarlo,
+    # _robust_click cade sul fallback per coordinate e clicca sull'overlay/il bottone
+    # "Agree" stesso invece del vero bottone di invio, spiegando parte degli hang
+    # intermittenti di questa sessione).
+    try:
+        page.get_by_role("button", name="Agree", exact=True).click(timeout=3000)
+    except Exception:
+        pass
+    # Verifica esplicita di login — MAI procedere alla cieca su una sessione rotta.
+    # Bug reale trovato con screenshot dal vivo: lo stesso identico storage_state, nella
+    # stessa sessione di debug, e' risultato a volte autenticato e a volte no (bottone
+    # "Log In" visibile in sidebar) — coerente con un'invalidazione della sessione lato
+    # servizio sotto uso automatizzato intenso, non un bug di codice. Fallire subito con
+    # un errore chiaro invece di procedere a inviare prompt su una chat mai raggiungibile
+    # (causa root di alcuni degli hang "silenziosi" osservati oggi).
+    if page.get_by_text("Log In", exact=True).count() > 0:
+        raise RuntimeError(
+            "LM Arena: sessione NON autenticata (bottone 'Log In' visibile) — "
+            f"probabile invalidazione lato servizio di {config.LMARENA_SESSION_PATH}. "
+            "Rifare il login: python -m engine.session_manager"
+        )
     _select_direct_mode(page)
     return ArenaSession(browser=browser, context=context, page=page)
 
