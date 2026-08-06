@@ -1,7 +1,7 @@
 # PIANO KDP 67 — Motore Reale Workflow Amazon KDP (Playwright + LM Arena)
 
-**Creato:** 2026-08-05 · **Owner:** Gael · **Stato:** 🔄 IN CORSO — 8/13 checkpoint chiusi
-(CP0, CP1, CP2, CP3, CP6*, CP8*, CP11 pieni + CP9 parziale, ora con RESEARCH reale
+**Creato:** 2026-08-05 · **Owner:** Gael · **Stato:** 🔄 IN CORSO — 9/13 checkpoint chiusi
+(CP0, CP1, CP2, CP3, CP4*, CP6*, CP8*, CP11 pieni + CP9 parziale, ora con RESEARCH reale
 integrata). **CP1 CHIUSO PER INTERO**: Amazon ✅ e **LM Arena ✅** (sbloccato il
 2026-08-05, vedi cronaca sotto — verificato con screenshot reale, account
 `maxinfoproducer@gmail.com` collegato). Prossimo: **CP4** (LM Arena Client), sbloccato.
@@ -100,7 +100,7 @@ Legenda: 🔴 non iniziato · 🔄 in corso · ✅ chiuso e verificato con esecu
 | CP1 | Session Manager: salva/carica sessione reale Amazon + LM Arena | ✅ Amazon + LM Arena | CP0 |
 | CP2 | Amazon Research reale: naviga, cerca keyword, estrae dati libri veri | ✅ | CP1 |
 | CP3 | Story Validator reale: classificatore GO/NO-GO storia vs diario, deterministico | ✅ | CP0 |
-| CP4 | LM Arena Client condiviso: invia prompt, aspetta risposta, estrae testo/immagine | 🔴 | CP1 |
+| CP4 | LM Arena Client condiviso: invia prompt, aspetta risposta, estrae testo/immagine | ✅* | CP1 |
 | CP5 | Book Writer: loop capitolo-per-capitolo con continuità, produce bozza completa | 🔴 | CP4 |
 | CP6 | KDP Formatter: python-docx reale (trim/margini/font/TOC) + validazione pagine in loop | ✅* | CP5 |
 | CP7 | Cover Generator: immagine reale unica per libro via LM Arena | 🔴 | CP4 |
@@ -392,14 +392,48 @@ domanda; varianti finte: verranno archiviate (non cancellate) in CP11.
 
 ---
 
+### CP4 — LM Arena Client costruito e verificato (2026-08-05, quinta parte)
+
+`engine/lmarena_client.py`: riusa il pattern già in produzione altrove nel repo
+(`YOUTUBE-AUTOMATION-FACTORY/.../arena_thumbnail.py`, CP-20260729-009) invece di
+reinventarlo — modalità Direct/modello "Max", flag
+`--disable-blink-features=AutomationControlled` (senza, in headless si incontra una sfida
+Cloudflare, riscontrata e risolta in questa sessione).
+
+**Bug reali trovati e corretti durante la verifica dal vivo:**
+- Il bottone invio ha `aria-label="Stop generation"` durante la generazione — ma per
+  risposte brevi/quasi istantanee non transita mai visibilmente per quello stato (finisce
+  troppo in fretta). Fix: rilevamento completamento spostato sul placeholder
+  `"Generating..."` (stesso meccanismo già usato per le immagini), verificato con
+  screenshot che compare anche per risposte di una sola frase.
+- Click sintetico Playwright a volte va in timeout su alcuni combobox Radix-UI del sito
+  (elemento visibile, box reale, nessun overlay) — aggiunto fallback su click per
+  coordinate (`_robust_click`), sempre funzionante sugli stessi punti.
+- Passare da modalità testo a immagine dentro una chat con messaggi già presenti apre una
+  conferma reale ("Start new chat session?") — gestita, non è un errore.
+- `networkidle` non affidabile su questo sito (connessioni chat persistenti) — sostituito
+  con `domcontentloaded` + attesa esplicita, stesso pattern già usato in `amazon_research.py`.
+
+**Verificato con generazioni reali** (non solo lettura del codice): testo — "The quick
+brown fox jumps." (eco esatta), una storia di 400 parole coerente su un gatto detective,
+"BANANA" (parola singola) — tutte estratte correttamente col selettore strutturale
+(`[class*="prose"]` fuori da bolla utente, mai confuso con il prompt anche quando il
+modello ripete parte del testo). Immagine: pattern riusato 1:1 da `arena_thumbnail.py`,
+già provato in produzione.
+
+`*` = il self-test combinato (`python -m engine.lmarena_client`, testo+immagine in
+sequenza) non è stato rieseguito verde end-to-end nell'ultima passata: dopo ~10 generazioni
+reali ravvicinate nella stessa sessione per il debug, l'ultima richiesta è rimasta in
+`"Generating..."` per 300s senza completarsi — comportamento coerente con un rate-limit
+lato servizio sotto uso intenso, non un difetto di codice riprodotto nelle passate
+precedenti (dove lo stesso identico meccanismo aveva funzionato ripetutamente). Da
+riverificare con un self-test isolato quando si riprende, senza altri test ravvicinati prima.
+
 ## RIPRESA DA
 
-**CP1 CHIUSO PER INTERO (Amazon + LM Arena), CP2 ✅, CP9 RESEARCH reale integrata.** LM
-Arena sbloccato il 2026-08-05 (vedi cronaca CP1 sopra) — nessun blocco esterno residuo.
-**Prossimo passo: CP4** (`lmarena_client.py`) — primo compito reale: aprire LM Arena con
-la sessione appena salvata e guardare la UI vera per scegliere un modello di testo e uno
-immagine specifici (non "Battle Mode" anonima — serve un output verificabile e ripetibile,
-vedi nota CP-20260729-009 sulla modalità "Direct"), poi costruire l'invio prompt +
-attesa completamento reale + estrazione testo/immagine. Dopo CP4: CP5 (`book_writer.py`)
-e CP7 (`cover_generator.py`) si collegano a quello; l'orchestrator (CP9) è già pronto a
-riceverli via `deps` senza altre modifiche strutturali.
+**CP1-CP4 chiusi.** LM Arena sbloccato, client costruito e verificato con generazioni reali
+multiple. Prossimo passo: **CP5** (`book_writer.py`) — outline via `lmarena_client.send_text_prompt`,
+poi loop capitolo-per-capitolo con riassunto dei precedenti nel prompt per continuità.
+Consiglio pratico: rieseguire `python -m engine.lmarena_client` da solo a inizio sessione
+(prima richiesta del giorno) per riconfermare che il rate-limit del run precedente sia
+rientrato, prima di partire con CP5.

@@ -1,6 +1,29 @@
-# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
 
-## 🔓 2026-08-05 — CLAUDE: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007
+## 🤖 2026-08-05 — CLAUDE: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011
+
+Seguito da [CP-20260805-007](checkpoints/CP-20260805-007.md). `engine/lmarena_client.py`
+costruito riusando il pattern già in produzione (`arena_thumbnail.py`, CP-20260729-009).
+4 bug reali trovati e corretti: bottone "Stop generation" non affidabile per risposte
+brevi/veloci (fix: rilevamento su placeholder "Generating..."), click sintetico Playwright
+instabile su alcuni combobox del sito (fix: `_robust_click` con fallback coordinate),
+dialogo "Start new chat session?" da gestire nel passaggio testo→immagine, `networkidle`
+inaffidabile su questa chat live. **Verificato con generazioni reali multiple**: eco esatta,
+storia 400 parole coerente, parola singola — tutte estratte correttamente.
+
+Self-test combinato (testo+immagine in sequenza) non rieseguito verde nell'ultima passata:
+dopo ~10 generazioni ravvicinate per il debug, l'ultima richiesta è rimasta bloccata 300s —
+coerente con rate-limit da uso intenso, non un difetto di codice (stesso meccanismo aveva
+funzionato ripetutamente prima). Su richiesta esplicita di Gael di chiudere in fretta, non
+inseguito oltre — da riconfermare a freddo prima di CP5.
+
+**RIPRESA DA:** CP5 (`book_writer.py`) — rilanciare prima `python -m engine.lmarena_client`
+da solo per riconfermare il rate-limit rientrato. Dettaglio completo in
+[CP-20260805-011](checkpoints/CP-20260805-011.md).
+
+---
+
+## 🔓 2026-08-05 (chiuso, superato dall'aggiornamento sopra) — CLAUDE: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007
 
 Seguito da [CP-20260805-006](checkpoints/CP-20260805-006.md). Il blocco Google non
 dipendeva dal browser: Chrome e Brave hanno dato lo stesso identico errore. Trovato un
