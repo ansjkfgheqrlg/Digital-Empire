@@ -1,22 +1,34 @@
 """Conferma il completamento ('Si') e scarica DAVVERO lo ZIP finale sul
-disco locale - non ci si fida del solo testo della chat che dice 'pronto'."""
+disco locale - non ci si fida del solo testo della chat che dice 'pronto'.
+
+Salva nell'Arsenale Caroselli (libreria dei caroselli finiti, un prodotto =
+una cartella - richiesta esplicita di Max 2026-08-06), non dentro la cartella
+del motore - qui vive solo il codice, non gli output."""
 import os
 import sys
 import time
+from datetime import date
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-AGENCY_DIR = os.path.join(os.path.dirname(PROJECT_DIR), "caroselli - agency")
+WORKFLOW_DIR = os.path.dirname(PROJECT_DIR)  # "Workflow agency creative/"
+AGENCY_DIR = os.path.join(WORKFLOW_DIR, "caroselli - agency")
 sys.path.insert(0, AGENCY_DIR)
 
 from ArenaAI.arena_generator import wait_for_login, dismiss_blocking_dialogs  # noqa: E402
 from Core.browser_manager import BrowserManager  # noqa: E402
 
 DEBUG_DIR = os.path.join(PROJECT_DIR, "debug_screens_factory")
-OUTPUT_DIR = os.path.join(PROJECT_DIR, "output_preventa", "carosello-01-content-factory")
+
+# Nome cartella prodotto: passa un argomento (es. "python confirm_and_download.py Preventa
+# nome-carosello") o usa il default Preventa/data-di-oggi.
+PRODOTTO = sys.argv[1] if len(sys.argv) > 1 else "Preventa"
+NOME_CAROSELLO = sys.argv[2] if len(sys.argv) > 2 else date.today().isoformat()
+OUTPUT_DIR = os.path.join(WORKFLOW_DIR, "Arsenale Caroselli", PRODOTTO, NOME_CAROSELLO)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+print(f"[DOWNLOAD] Destinazione: {OUTPUT_DIR}")
 
 manager = BrowserManager('ArenaAI', headless=False)
 try:

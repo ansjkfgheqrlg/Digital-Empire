@@ -66,7 +66,10 @@ autenticato, non duplicano il motore): `run_content_factory.py`, `check_status.p
 
 ## Stato al 2026-08-06
 - ✅ **Primo carosello reale generato e scaricato**: 8 PNG (1080×1350, upscalati da
-  4K) + `copy.json`, in `output_preventa/carosello-01-content-factory/`. Verificato
+  4K) + `copy.json`, salvato in
+  `Arsenale Caroselli/Preventa/2026-08-06_tempo-perso-import/` — libreria dei
+  caroselli finiti, separata dal motore (richiesta esplicita di Max: "un'arsenale
+  dei caroselli, una cartella per ogni prodotto"). Verificato
   con `unzip -l` (10 file, dimensioni reali) e ispezione visiva (slide 8/8: prezzo,
   target, brand tutti corretti).
 - ✅ Scaffold del progetto Preventa completo, `py_compile` pulito su tutti gli script.

@@ -26,9 +26,15 @@ Instagram":
 | **carousel-factory** | `Workfolw crea caroselli à/carousel-factory/` | Puppeteer + Handlebars (HTML→PNG), foto generate **a mano su Gemini** (nessuna chiave API image-gen in `.env`) | mentalità-brutale (PLAN-v1 APEX-7 di un'altra sessione in corso, non toccato) |
 | **carousel-empire** (skill Claude) | `~/.claude/skills/carousel-empire/` | Python standalone, genera 7 PNG 1080×1350 senza foto/Arena | Digital Empire Agency (usato per @crea.illtuo_impero) |
 
-**Confermato da Max**: quando dice "quello stile perfetto collegato con Arena
-attraverso Playwright" intende **ArenaAI (caroselli - agency)** — il primo della
-tabella, non gli altri due.
+**Confermato da Max** (2026-08-05): quando dice "quello stile perfetto collegato con
+Arena attraverso Playwright" intende ArenaAI, ma **non il motore Playwright grezzo**
+(chat Direct+Image, prompt scritti a mano) — intende un **Agent workspace già
+costruito DENTRO Arena stessa** (Arena "Agent Mode"), con un file system persistente
+(`apex7/agents/memory/orchestrator/playwright_bridge/...`), raggiungibile solo tramite
+una chat archiviata specifica + comando `/inizio-generazione`. Vedi [[CP-20260805-010]]
+e [[CP-20260805-013]] (primo output reale, flusso esatto verificato). Il motore
+Playwright grezzo resta comunque infrastruttura condivisa reale (usata per Agency),
+solo non è il percorso per nuovi progetti come Preventa.
 
 ## Come è organizzato oggi (dopo Progetto Preventa)
 ```
@@ -53,6 +59,15 @@ e sovrascrive i due attributi di `config` (il modulo condiviso) prima di chiamar
 Mai duplicare `ArenaAI/`/`Core/` — è il motore, si riusa.
 
 Dettaglio tecnico del come/perché in [[Progetto_Preventa_Carousel]].
+
+## Arsenale Caroselli — libreria dei caroselli finiti (nuovo, 2026-08-06)
+Richiesta esplicita di Max: "un'arsenale dei caroselli, una cartella per ogni
+prodotto". Separato dalle cartelle motore (dove vive solo codice): gli output
+finiti (PNG + copy.json + zip) vanno in
+`SKILL & Agenti/Workflow agency creative/Arsenale Caroselli/<Prodotto>/<data_topic>/`.
+Non un motore nuovo — solo dove atterrano i risultati, indipendentemente da quale
+motore/progetto li ha generati. Vedi il `README.md` dentro quella cartella per la
+struttura esatta.
 
 ## ⚠️ Nota sicurezza (non ancora risolta, decisione di Max)
 `caroselli - agency/config.py` contiene email+password reali di Arena.ai e le
