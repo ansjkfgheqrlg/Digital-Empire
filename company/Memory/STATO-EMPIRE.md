@@ -1,6 +1,45 @@
-# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
 
-## 🔄 2026-08-05 — CLAUDE: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato con dati live, LM Arena bloccato — CP-20260805-004
+## 🔓 2026-08-05 — CLAUDE: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007
+
+Seguito da [CP-20260805-006](checkpoints/CP-20260805-006.md). Il blocco Google non
+dipendeva dal browser: Chrome e Brave hanno dato lo stesso identico errore. Trovato un
+precedente reale in memoria ([CP-20260729-009](checkpoints/CP-20260729-009.md), stesso
+sito arena.ai già sbloccato per Max) invece di improvvisare su una richiesta ambigua di
+Gael — causa vera: Playwright collegato via CDP **durante il login live** è ciò che Google
+rileva, a prescindere dal browser. Fix: login in un processo OS indipendente (non
+Playwright), poi Playwright riusa la sessione già fatta solo per esportarla. Intercettato
+un secondo falso positivo (sessione salvata ma non autenticata — lo script la salva sempre
+dopo INVIO, a prescindere dal successo del login) prima che fosse dato per buono.
+**Verificato con screenshot reale**: account `maxinfoproducer@gmail.com` collegato su
+arena.ai, nessun pulsante login.
+
+**RIPRESA DA:** CP4 (`lmarena_client.py`) — scegliere modello testo/immagine guardando la
+UI vera (ora accessibile), poi costruire invio prompt + estrazione risposta. Dettaglio
+completo in [CP-20260805-007](checkpoints/CP-20260805-007.md).
+
+---
+
+## 🔧 2026-08-05 (chiuso, superato dall'aggiornamento sopra) — CLAUDE: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9 — CP-20260805-006
+
+Seguito da [CP-20260805-004](checkpoints/CP-20260805-004.md), lavoro possibile senza LM
+Arena come indicato lì. **CP2**: bug autore diagnosticato sul DOM vero (dump HTML, non
+ipotesi) — un solo div Amazon contiene sia il link serie sia quello autore, separati da
+"|"; il selettore vecchio prendeva sempre il primo (la serie). Fix verificato su 2 ricerche
+live indipendenti (16/16 e un caso limite audiolibro-narratore). Limite reale scoperto (non
+un bug): su alcune ricerche molte card non hanno l'autore nel DOM affatto — lasciato `None`
+onestamente, non inventato. **CP9**: `make_real_research_dep()` sostituisce il modulo finto
+usato nei test — verificato end-to-end con 16 competitor Amazon reali salvati nel
+checkpoint, qualifica GO reale, si ferma onesto su PLANNING (CP4/LM Arena bloccato, atteso),
+resume testato anche su dati reali.
+
+**RIPRESA DA:** nessun lavoro rimasto che non richieda LM Arena — decisione di Gael
+richiesta di nuovo (vedi sotto). Dettaglio completo in
+[CP-20260805-006](checkpoints/CP-20260805-006.md).
+
+---
+
+## 🔄 2026-08-05 (chiuso, superato dall'aggiornamento sopra) — CLAUDE: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato con dati live, LM Arena bloccato — CP-20260805-004
 
 Seguito da [CP-20260805-002](checkpoints/CP-20260805-002.md). Google blocca il login OAuth
 dentro QUALSIASI browser automatizzato (Chromium bundlato E Chrome reale via

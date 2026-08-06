@@ -40,6 +40,22 @@ CHROME_COPY_EXCLUDE_DIRS = {
     "Extension State", "File System", "IndexedDB",
 }
 
+# --------------------------------------------------------------------------- #
+# Brave profile reale (SOLO per LM Arena — il login Google su LM Arena resta
+# bloccato anche dentro Chrome/profilo reale, 2026-08-05, secondo tentativo di
+# Gael dopo CP1. Soluzione proposta da Gael: usare Brave invece di Chrome per
+# quel sito). Stesso principio del profilo Chrome sopra: si riusa un profilo
+# Brave GIÀ autenticato, mai un login nuovo dentro l'automazione, originale
+# solo letto mai scritto. Scelto da Gael: Profile 9 (etichetta "gd" in Local
+# State) — 7 profili Brave trovati senza email visibile, NON presunto, chiesto
+# esplicitamente. Amazon resta su Chrome (CP1 già verificato funzionante lì,
+# non toccato).
+# --------------------------------------------------------------------------- #
+BRAVE_EXECUTABLE_PATH = Path(r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe")
+BRAVE_USER_DATA_ROOT = Path(_os.environ.get("LOCALAPPDATA", "")) / "BraveSoftware" / "Brave-Browser" / "User Data"
+BRAVE_SOURCE_PROFILE_NAME = "Profile 9"  # etichetta "gd" — scelto da Gael 2026-08-05
+BRAVE_PROFILE_COPY_DIR = SESSIONS_DIR / "brave_profile_copy"
+
 for _d in (SESSIONS_DIR, LIBRI_PRONTI_DIR, LIBRI_PUBBLICATI_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 

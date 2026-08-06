@@ -1,9 +1,10 @@
 # PIANO KDP 67 — Motore Reale Workflow Amazon KDP (Playwright + LM Arena)
 
-**Creato:** 2026-08-05 · **Owner:** Gael · **Stato:** 🔄 IN CORSO — 7/13 checkpoint chiusi
-(CP0, CP2*, CP3, CP6*, CP8*, CP11 pieni + CP9 parziale). **CP1 diviso**: Amazon ✅ (sessione
-reale salvata e verificata), LM Arena ❌ bloccato da un errore Google riprodotto anche fuori
-da qualsiasi automazione — serve una decisione di Gael su come procedere (vedi §3).
+**Creato:** 2026-08-05 · **Owner:** Gael · **Stato:** 🔄 IN CORSO — 8/13 checkpoint chiusi
+(CP0, CP1, CP2, CP3, CP6*, CP8*, CP11 pieni + CP9 parziale, ora con RESEARCH reale
+integrata). **CP1 CHIUSO PER INTERO**: Amazon ✅ e **LM Arena ✅** (sbloccato il
+2026-08-05, vedi cronaca sotto — verificato con screenshot reale, account
+`maxinfoproducer@gmail.com` collegato). Prossimo: **CP4** (LM Arena Client), sbloccato.
 
 **Per riprendere dopo spegnimento PC o fine crediti**: dire a Claude *"continua con il piano KDP 67"*.
 Claude deve: (1) aprire questo file, (2) leggere quale checkpoint ha ✅/🔄/🔴, (3) riprendere dal
@@ -96,8 +97,8 @@ Legenda: 🔴 non iniziato · 🔄 in corso · ✅ chiuso e verificato con esecu
 | # | Checkpoint | Stato | Dipende da |
 |---|---|---|---|
 | CP0 | Setup struttura + config centralizzato + requirements (playwright, python-docx) | ✅ | — |
-| CP1 | Session Manager: salva/carica sessione reale Amazon + LM Arena | 🔄 Amazon ✅ / LM Arena ❌ bloccato | CP0 |
-| CP2 | Amazon Research reale: naviga, cerca keyword, estrae dati libri veri | ✅* | CP1 |
+| CP1 | Session Manager: salva/carica sessione reale Amazon + LM Arena | ✅ Amazon + LM Arena | CP0 |
+| CP2 | Amazon Research reale: naviga, cerca keyword, estrae dati libri veri | ✅ | CP1 |
 | CP3 | Story Validator reale: classificatore GO/NO-GO storia vs diario, deterministico | ✅ | CP0 |
 | CP4 | LM Arena Client condiviso: invia prompt, aspetta risposta, estrae testo/immagine | 🔴 | CP1 |
 | CP5 | Book Writer: loop capitolo-per-capitolo con continuità, produce bozza completa | 🔴 | CP4 |
@@ -254,6 +255,77 @@ sbagliato tra due `div.a-row.a-size-base.a-color-secondary` simili nella card Am
 Non blocca il criterio del checkpoint (titolo/ASIN/prezzo/rating tutti corretti e
 verificabili), ma va raffinato prima di usarlo in produzione per la qualifica automatica.
 
+### CP2 — bug autore risolto + CP9 research reale integrata (2026-08-05, terza parte)
+
+**CP2, bug autore**: diagnosticato sul DOM vero (non per ipotesi) via dump HTML di card
+reali. Causa vera: quando il libro fa parte di una serie, Amazon mette **un unico** div
+`a-row a-size-base a-color-secondary` con DENTRO sia il link serie ("Book X of Y: ...")
+sia il link autore ("by Nome Autore"), separati da `|` — il selettore vecchio prendeva il
+primo `<a>` del div (sempre la serie). Fix: cercare lo `<span>` con testo esatto "by" e
+prendere l'elemento che lo segue (gestisce sia `<a>` sia `<span>` semplice, per i casi
+audiolibro multi-narratore tipo "by Autore, Narratore, et al."). Verificato su 2 ricerche
+reali indipendenti: "cozy mystery cats" 16/16 autori corretti (era 0-1/16 prima), "small
+town romance suspense" confermato lo stesso meccanismo su un caso con narratore.
+**Limite reale, non un bug**: per molti risultati di tipo serie in certe ricerche (es.
+"small town romance suspense", 19/20), la card SERP di Amazon non contiene ALCUN dato
+autore nel DOM — solo il link serie. Verificato col dump HTML: non c'è nulla da estrarre
+senza aprire la pagina prodotto singola (fuori scope, moltiplicherebbe le richieste per
+libro). Il codice lascia `author=None` onestamente in questo caso, non inventa un nome.
+
+**CP9, RESEARCH reale integrata**: aggiunta `orchestrator.make_real_research_dep(keyword,
+title, description)` — usa `amazon_research.search_amazon()` reale al posto del modulo
+finto. Nuova modalità CLI: `python -m engine.orchestrator --keyword "..." --title "..."`
+esegue un run vero (non il self-test). Verificato: RESEARCH reale (16 competitor Amazon
+salvati nel checkpoint con dati verificabili) → QUALIFICATION reale (GO) → si ferma
+onestamente su PLANNING con `NotImplementedError` (CP4/LM Arena ancora bloccato, atteso).
+Verificato anche il resume: rilanciato con lo stesso `--run-id`, NON ha rifatto la
+ricerca Amazon (checkpoint già conteneva i dati), è ripartito direttamente da planning.
+Self-test esistente (meccanismo checkpoint/resume con moduli finti) invariato, ancora
+verde — non toccato, resta lo strumento per testare il resume in isolamento.
+
+### CP1 — LM Arena SBLOCCATO (2026-08-05, quarta parte)
+
+Percorso reale (3 tentativi falliti prima di trovare la causa vera):
+1. Login dentro `launch_persistent_context` su profilo Chrome copiato → bloccato da Google
+   (stesso errore di sempre).
+2. Su idea di Gael, stesso identico approccio ma con **Brave** (profilo "gd", Profile 9,
+   scelto esplicitamente da Gael tra 7 profili — nessuna email visibile, non presunto) →
+   **stesso identico errore**. Prova decisiva: il blocco NON dipende dal browser.
+3. Trovato un precedente reale in memoria ([CP-20260729-009](../../../../Memory/checkpoints/CP-20260729-009.md)):
+   lo stesso sito (arena.ai, ex LM Arena) era già stato sbloccato per Max su un altro
+   progetto con una tecnica precisa — login in una finestra lanciata come **processo OS
+   normale** (`Start-Process`/`subprocess.Popen`, NON Playwright), poi Playwright riusa la
+   sessione già autenticata SENZA mai fare lui stesso l'handshake OAuth. La causa vera non
+   era il browser: era che Playwright restava collegato via CDP **durante tutto il login**,
+   incluso il momento sensibile dell'OAuth — è quello il segnale che Google rileva, a
+   prescindere da quale eseguibile Chromium-based lo ospita.
+4. Riscritto `session_manager.py::ensure_lmarena_session` su due fasi: (a)
+   `_manual_login_raw_browser()` apre Brave via `subprocess.Popen` (processo indipendente,
+   zero CDP), Gael fa login lì e chiude la finestra; (b) Playwright riapre lo STESSO
+   profilo (`launch_persistent_context`) solo per esportare `storage_state()` — nessun
+   login/OAuth in questa fase, quindi nessun rilevamento possibile.
+5. Primo tentativo di fase (b) fallito con `TargetClosedError` ("Apertura nella sessione
+   del browser esistente") — un'istanza Brave era ancora viva in background quando
+   Playwright ha provato ad aprire il profilo. Risolto verificando `Get-Process brave`
+   (0 processi) e ritentando: la fase (b), da sola, ha funzionato al primo colpo una volta
+   che nessun'altra istanza Brave era attiva.
+6. **Verificato con screenshot reale** (non solo assenza del testo "Log In"): sidebar
+   completa (New Chat/Leaderboard/Search/Battle Mode), account `maxinfoproducer@gmail.com`
+   visibile in basso a sinistra con avatar. 58 cookie salvati (`.arena.ai`,
+   `.auth.arena.ai`, domini Google) — molto più ricco dei 20 cookie di un tentativo
+   precedente rivelatosi NON autenticato (scartato e cancellato prima di essere scambiato
+   per buono, vedi nota sotto).
+
+**Nota importante — falso positivo intercettato**: durante il debug è comparso un
+`sessions/lmarena_state.json` inatteso (resto del primissimo tentativo su Chrome, mai
+cancellato dallo script anche se il login era fallito — lo script salva SEMPRE lo state
+dopo l'INVIO, a prescindere dal successo). Verificato caricandolo davvero e cercando "Log
+In" nella pagina: presente → sessione finta, cancellata subito. Lezione: un file di
+sessione che esiste non significa che sia valido — va sempre verificato caricandolo,
+mai dato per buono solo perché presente su disco (coerente con `load_context()` che solleva
+`FileNotFoundError` se manca, ma non verifica la VALIDITÀ del contenuto — verificare a
+mano resta necessario dopo ogni login nuovo).
+
 ### Note di avanzamento (aggiornate ad ogni sessione)
 
 **2026-08-05**: CP0 chiuso e verificato (pip install ok, playwright+chromium già presenti sul
@@ -309,28 +381,25 @@ domanda; varianti finte: verranno archiviate (non cancellate) in CP11.
 3. ~~Rischio ToS Amazon/LM Arena~~ → confermato implicitamente (Gael ha detto "vai" dopo
    la spiegazione esplicita del rischio).
 4. ~~Le 4 varianti finte~~ → archiviate (CP11 chiuso).
-5. **NUOVO — blocco reale LM Arena**: il login "Accedi con Google" su LM Arena viene
-   rifiutato da Google ("Questo browser o questa app potrebbero non essere sicuri") **anche
-   nel Chrome normale e non automatizzato di Gael** — quindi non è (solo) un problema di
-   automazione rilevata, è un blocco che Gael sperimenterebbe comunque, con o senza questo
-   progetto. Serve una decisione:
-   - **(a)** Gael verifica se LM Arena offre un metodo di login alternativo (email/password,
-     magic link) sulla pagina di accesso, non solo "Accedi con Google";
-   - **(b)** si prova con un account Google diverso (magari il problema è specifico
-     dell'account max.infoproducer@gmail.com, es. verifica in due passaggi non completata,
-     account nuovo non ancora "fidato" da Google, ecc.);
-   - **(c)** si valuta un servizio diverso da LM Arena per testo/immagini se il blocco
-     risulta permanente (cambierebbe CP4/CP5/CP7, non l'architettura generale).
-
-Nessun default applicabile per il punto 5 — è un fatto esterno verificato, non una scelta
-di design: **richiede input reale di Gael per sapere come muoversi**.
+5. ✅ **RISOLTO (2026-08-05)** — blocco reale LM Arena. Causa vera trovata (non era il
+   browser, vedi cronaca CP1 sopra): Playwright collegato via CDP **durante il login live**
+   è ciò che Google rileva, a prescindere dall'eseguibile. Fix: login in un processo OS
+   normale (non Playwright), poi Playwright riusa la sessione già fatta solo per
+   esportarla — stesso schema già validato su questo sito in
+   [CP-20260729-009](../../../../Memory/checkpoints/CP-20260729-009.md). Verificato con
+   screenshot reale, account collegato. `session_manager.py::ensure_lmarena_session`
+   riscritta di conseguenza.
 
 ---
 
 ## RIPRESA DA
 
-**CP1 Amazon ✅ e CP2 ✅\* chiusi e verificati con dati reali live.** CP1 LM Arena, CP4, CP5,
-CP7 bloccati sul punto 5 di cui sopra — decisione di Gael necessaria per sapere se/come
-sbloccarli. Nel frattempo si può procedere a rifinire CP2 (bug autore) o integrare
-`amazon_research.py` reale dentro l'orchestrator (CP9) al posto del modulo finto usato nei
-test — entrambi non richiedono LM Arena.
+**CP1 CHIUSO PER INTERO (Amazon + LM Arena), CP2 ✅, CP9 RESEARCH reale integrata.** LM
+Arena sbloccato il 2026-08-05 (vedi cronaca CP1 sopra) — nessun blocco esterno residuo.
+**Prossimo passo: CP4** (`lmarena_client.py`) — primo compito reale: aprire LM Arena con
+la sessione appena salvata e guardare la UI vera per scegliere un modello di testo e uno
+immagine specifici (non "Battle Mode" anonima — serve un output verificabile e ripetibile,
+vedi nota CP-20260729-009 sulla modalità "Direct"), poi costruire l'invio prompt +
+attesa completamento reale + estrazione testo/immagine. Dopo CP4: CP5 (`book_writer.py`)
+e CP7 (`cover_generator.py`) si collegano a quello; l'orchestrator (CP9) è già pronto a
+riceverli via `deps` senza altre modifiche strutturali.

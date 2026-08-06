@@ -32,25 +32,24 @@ from playwright.sync_api import BrowserContext, Playwright, sync_playwright
 from . import config
 
 
-def _copy_chrome_profile_if_needed() -> Path:
-    """Copia (una volta sola) il profilo Chrome sorgente scelto da Gael in
-    sessions/chrome_profile_copy/, escludendo cache/estensioni. Il profilo originale
-    viene SOLO letto, mai scritto. Ritorna il path della copia (root "User Data")."""
-    dest_root = config.CHROME_PROFILE_COPY_DIR
+def _copy_browser_profile_if_needed(source_user_data_root: Path, source_profile_name: str,
+                                     dest_root: Path, browser_label: str) -> Path:
+    """Copia (una volta sola) un profilo browser Chromium-based (Chrome o Brave) scelto da
+    Gael in dest_root, escludendo cache/estensioni. Il profilo originale viene SOLO letto,
+    mai scritto. Ritorna il path della copia (root "User Data")."""
     dest_profile = dest_root / "Default"
     if dest_profile.exists():
-        print(f"[chrome-profile] copia già presente: {dest_root}")
+        print(f"[{browser_label}-profile] copia già presente: {dest_root}")
         return dest_root
 
-    source_profile = config.CHROME_USER_DATA_ROOT / config.CHROME_SOURCE_PROFILE_NAME
-    source_local_state = config.CHROME_USER_DATA_ROOT / "Local State"
+    source_profile = source_user_data_root / source_profile_name
+    source_local_state = source_user_data_root / "Local State"
     if not source_profile.exists():
         raise FileNotFoundError(
-            f"Profilo Chrome sorgente non trovato: {source_profile}. "
-            f"Controlla config.CHROME_SOURCE_PROFILE_NAME."
+            f"Profilo {browser_label} sorgente non trovato: {source_profile}."
         )
 
-    print(f"[chrome-profile] copio {source_profile} -> {dest_profile} (esclusa cache)...")
+    print(f"[{browser_label}-profile] copio {source_profile} -> {dest_profile} (esclusa cache)...")
 
     def _ignore(dir_path: str, names: list[str]) -> set[str]:
         return {n for n in names if n in config.CHROME_COPY_EXCLUDE_DIRS}
@@ -61,28 +60,50 @@ def _copy_chrome_profile_if_needed() -> Path:
         shutil.copy2(source_local_state, dest_root / "Local State")
 
     size_mb = sum(f.stat().st_size for f in dest_root.rglob("*") if f.is_file()) / (1024 * 1024)
-    print(f"[chrome-profile] copia completata: {size_mb:.1f} MB (originale mai scritto)")
+    print(f"[{browser_label}-profile] copia completata: {size_mb:.1f} MB (originale mai scritto)")
     return dest_root
 
 
+def _copy_chrome_profile_if_needed() -> Path:
+    return _copy_browser_profile_if_needed(
+        config.CHROME_USER_DATA_ROOT, config.CHROME_SOURCE_PROFILE_NAME,
+        config.CHROME_PROFILE_COPY_DIR, "chrome",
+    )
+
+
+def _copy_brave_profile_if_needed() -> Path:
+    return _copy_browser_profile_if_needed(
+        config.BRAVE_USER_DATA_ROOT, config.BRAVE_SOURCE_PROFILE_NAME,
+        config.BRAVE_PROFILE_COPY_DIR, "brave",
+    )
+
+
 def _ensure_session(playwright: Playwright, site_name: str, home_url: str, session_path: Path,
-                     profile_dir: Path) -> bool:
+                     profile_dir: Path, *, channel: str | None = "chrome",
+                     executable_path: Path | None = None) -> bool:
     """Garantisce che esista una sessione salvata per `site_name`, usando il profilo
-    Chrome copiato (già autenticato, non bloccato da Google come un browser vuoto).
-    Ritorna True se la sessione era già presente, False se è stata appena creata."""
+    browser copiato (già autenticato, non bloccato da Google come un browser vuoto).
+    Di default lancia Chrome (`channel="chrome"`); passando `executable_path` lancia
+    quell'eseguibile invece (es. Brave, stesso motore Chromium, non un canale Playwright
+    nativo). Ritorna True se la sessione era già presente, False se è stata appena creata."""
     if session_path.exists():
         print(f"[{site_name}] sessione trovata: {session_path}")
         return True
 
+    browser_label = Path(executable_path).stem if executable_path else channel
     print(f"\n[{site_name}] NESSUNA sessione salvata trovata.")
-    print(f"[{site_name}] Apro Chrome con il profilo copiato (già autenticato) su {home_url}...")
-    context = playwright.chromium.launch_persistent_context(
+    print(f"[{site_name}] Apro {browser_label} con il profilo copiato (già autenticato) su {home_url}...")
+    launch_kwargs = dict(
         user_data_dir=str(profile_dir),
         headless=False,
-        channel="chrome",
         args=["--start-maximized", "--profile-directory=Default"],
         no_viewport=True,
     )
+    if executable_path is not None:
+        launch_kwargs["executable_path"] = str(executable_path)
+    else:
+        launch_kwargs["channel"] = channel
+    context = playwright.chromium.launch_persistent_context(**launch_kwargs)
     page = context.pages[0] if context.pages else context.new_page()
     page.bring_to_front()
     page.goto(home_url, wait_until="domcontentloaded", timeout=config.DEFAULT_TIMEOUT_MS)
@@ -105,8 +126,63 @@ def ensure_amazon_session(playwright: Playwright, profile_dir: Path) -> bool:
     return _ensure_session(playwright, "Amazon", config.AMAZON_BASE_URL, config.AMAZON_SESSION_PATH, profile_dir)
 
 
+def _manual_login_raw_browser(executable_path: Path, profile_dir: Path, url: str, site_name: str) -> None:
+    """Login manuale in un browser lanciato come processo OS NORMALE — NON tramite
+    Playwright/CDP. Verificato oggi (2026-08-05) che LM Arena blocca il login Google a
+    prescindere dal browser (Chrome E Brave, stesso identico errore) quando la finestra è
+    collegata via CDP FIN DALL'INIZIO del login — coerente con un precedente reale già
+    risolto su questo stesso sito (arena.ai, ex LM Arena) in CP-20260729-009: login in una
+    finestra Chrome lanciata via `Start-Process`, poi Playwright riusa la sessione già
+    autenticata SENZA mai fare lui stesso l'handshake OAuth. Qui si applica lo stesso
+    schema con `subprocess.Popen` (equivalente Python di Start-Process) e Brave."""
+    import subprocess
+
+    print(f"\n[{site_name}] Apro {executable_path.stem} come processo NORMALE (NON Playwright) "
+          f"su {url} — qui Google non dovrebbe rilevare automazione, perché nessun CDP è "
+          f"collegato durante il login.")
+    proc = subprocess.Popen([
+        str(executable_path), f"--user-data-dir={profile_dir}",
+        "--profile-directory=Default", url,
+    ])
+    input(f"\n>>> [{site_name}] Fai login nella finestra che si è aperta (browser NORMALE, "
+          f"non automatizzato). Quando hai finito, CHIUDI quella finestra, poi premi INVIO "
+          f"qui nel terminale...\n")
+    if proc.poll() is None:
+        print(f"[{site_name}] ATTENZIONE: il processo del browser risulta ancora attivo. "
+              f"Se non hai chiuso la finestra, chiudila ora prima di continuare — Playwright "
+              f"non può aprire lo stesso profilo se è già in uso da un'altra istanza.")
+
+
 def ensure_lmarena_session(playwright: Playwright, profile_dir: Path) -> bool:
-    return _ensure_session(playwright, "LM Arena", config.LMARENA_BASE_URL, config.LMARENA_SESSION_PATH, profile_dir)
+    """LM Arena richiede un flusso diverso da Amazon: login manuale in un browser NON
+    collegato a Playwright (vedi `_manual_login_raw_browser`), poi Playwright riapre lo
+    STESSO profilo (ormai già autenticato) solo per esportare `storage_state()` — nessun
+    login/OAuth avviene in questa seconda fase, quindi nessun rilevamento CDP possibile."""
+    if config.LMARENA_SESSION_PATH.exists():
+        print(f"[LM Arena] sessione trovata: {config.LMARENA_SESSION_PATH}")
+        return True
+
+    print(f"\n[LM Arena] NESSUNA sessione salvata trovata.")
+    _manual_login_raw_browser(config.BRAVE_EXECUTABLE_PATH, profile_dir, config.LMARENA_BASE_URL, "LM Arena")
+
+    print(f"[LM Arena] Riapro il profilo con Playwright SOLO per salvare la sessione "
+          f"(nessun login qui, solo lettura di cookie già presenti su disco)...")
+    context = playwright.chromium.launch_persistent_context(
+        user_data_dir=str(profile_dir),
+        headless=False,
+        executable_path=str(config.BRAVE_EXECUTABLE_PATH),
+        args=["--profile-directory=Default"],
+        no_viewport=True,
+    )
+    page = context.pages[0] if context.pages else context.new_page()
+    page.goto(config.LMARENA_BASE_URL, wait_until="domcontentloaded", timeout=config.DEFAULT_TIMEOUT_MS)
+    page.wait_for_timeout(2000)
+
+    config.LMARENA_SESSION_PATH.parent.mkdir(parents=True, exist_ok=True)
+    context.storage_state(path=str(config.LMARENA_SESSION_PATH))
+    context.close()
+    print(f"[LM Arena] sessione salvata in {config.LMARENA_SESSION_PATH}")
+    return False
 
 
 def load_context(playwright: Playwright, session_path: Path, headless: bool = True) -> BrowserContext:
@@ -165,11 +241,12 @@ if __name__ == "__main__":
     print(f"[log] anche scritto in {log_path}")
 
     try:
-        profile_dir = _copy_chrome_profile_if_needed()
+        chrome_profile_dir = _copy_chrome_profile_if_needed()
+        brave_profile_dir = _copy_brave_profile_if_needed()
 
         with sync_playwright() as p:
-            amazon_existed = ensure_amazon_session(p, profile_dir)
-            lmarena_existed = ensure_lmarena_session(p, profile_dir)
+            amazon_existed = ensure_amazon_session(p, chrome_profile_dir)
+            lmarena_existed = ensure_lmarena_session(p, brave_profile_dir)
     except Exception:
         import traceback
         traceback.print_exc()

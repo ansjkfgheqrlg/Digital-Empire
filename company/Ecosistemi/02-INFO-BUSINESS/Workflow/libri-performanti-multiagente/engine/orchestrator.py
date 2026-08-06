@@ -26,7 +26,7 @@ from enum import Enum
 from pathlib import Path
 from typing import Callable
 
-from . import book_output_manager, config, kdp_formatter, story_validator
+from . import amazon_research, book_output_manager, config, kdp_formatter, story_validator
 
 
 class Phase(str, Enum):
@@ -182,10 +182,68 @@ class Orchestrator:
         return state
 
 
+def make_real_research_dep(keyword: str, working_title: str, description: str = "") -> Callable[[], dict]:
+    """Dependency REALE per la fase RESEARCH (CP9, sostituisce il modulo finto usato nel
+    self-test sotto): esegue una ricerca Amazon vera (CP2, sessione reale salvata in CP1)
+    sul keyword indicato e la allega come dato di mercato reale al libro in lavorazione.
+
+    Il titolo/descrizione del libro da SCRIVERE restano quelli forniti da chi lancia il
+    run (Gael) — non vengono inventati qui: generare titolo/outline in autonomia richiede
+    CP4 (LM Arena, bloccato dal 2026-08-05, vedi PIANO-KDP-67.md §3 punto 5). Finche' CP4
+    resta bloccato, un run con questa dependency supera RESEARCH e QUALIFICATION con dati
+    reali, poi si ferma onestamente su PLANNING con NotImplementedError — non e' un bug,
+    e' lo stato reale del piano."""
+    from dataclasses import asdict
+
+    from playwright.sync_api import sync_playwright
+
+    def _research() -> dict:
+        with sync_playwright() as p:
+            competitors = amazon_research.search_amazon(p, keyword, headless=True)
+        print(f"[orchestrator] research reale: {len(competitors)} competitor trovati su "
+              f"Amazon per '{keyword}'")
+        return {
+            "keyword": keyword,
+            "title": working_title,
+            "description": description,
+            "competitors": [asdict(c) for c in competitors],
+        }
+
+    return _research
+
+
 if __name__ == "__main__":
+    import argparse
     import shutil
     import sys
     import tempfile
+
+    cli = argparse.ArgumentParser(
+        description="CP9 Orchestrator — senza argomenti esegue il self-test del "
+                     "meccanismo checkpoint/resume; con --keyword/--title esegue un run "
+                     "REALE (ricerca Amazon vera), che si ferma onestamente su PLANNING "
+                     "finche' CP4/LM Arena resta bloccato."
+    )
+    cli.add_argument("--keyword", help="Keyword reale per la ricerca Amazon (CP2)")
+    cli.add_argument("--title", help="Titolo di lavoro del libro da qualificare (CP3)")
+    cli.add_argument("--description", default="", help="Descrizione/sinossi di lavoro")
+    cli.add_argument("--run-id", default=None, help="Run id per checkpoint/resume (default: timestamp)")
+    args = cli.parse_args()
+
+    if args.keyword or args.title:
+        if not (args.keyword and args.title):
+            cli.error("--keyword e --title vanno passati insieme")
+        run_id = args.run_id or f"real_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        print(f"=== CP9 run REALE (run_id={run_id}): research=Amazon vera, resto ancora "
+              f"bloccato su CP4/LM Arena ===\n")
+        deps = {"research": make_real_research_dep(args.keyword, args.title, args.description)}
+        orch = Orchestrator(run_id, deps=deps)
+        try:
+            orch.run()
+        except NotImplementedError as e:
+            print(f"\n[orchestrator] fermato onestamente dopo QUALIFICATION: {e}")
+            print(f"[orchestrator] checkpoint salvato: {orch.checkpoint_path}")
+        sys.exit(0)
 
     print("=== CP9 self-test: meccanismo checkpoint/resume, fasi non costruite "
           "sostituite da moduli finti (dependency injection) ===\n")

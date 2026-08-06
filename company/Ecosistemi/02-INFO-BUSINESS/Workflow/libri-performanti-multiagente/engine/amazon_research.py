@@ -51,8 +51,19 @@ def _extract_listings(page: Page, max_results: int = 20) -> list[BookListing]:
         if not title:
             continue  # niente titolo = non è un vero risultato libro, salta senza inventare
 
+        # Bug reale trovato in CP2 (2026-08-05), diagnosticato sul DOM vero (non un'ipotesi):
+        # quando il libro fa parte di una serie, il div `a-row a-size-base a-color-secondary`
+        # e' UNICO e contiene ENTRAMBI i link (serie E autore) separati da "|":
+        #   <a>Book 3 of 4: Nome Serie</a> | <span>by </span><a>Nome Autore</a> | <data>
+        # Prendere il primo <a> del div (fix precedente, sbagliato) prende sempre la serie.
+        # Fix reale: individuare lo <span> con testo esatto "by" e prendere il link che lo segue.
+        # Un caso residuo (audiolibro multi-autore/narratore): il nome non e' dentro un
+        # <a> ma in uno <span> semplice ("by Autore, Narratore, et al.") — accettato anche
+        # quel tag, prendendo solo il primo nome (autore principale), non l'intera lista.
         author = None
-        author_loc = item.locator("div.a-row.a-size-base.a-color-secondary a").first
+        author_loc = item.locator(
+            'div.a-row.a-size-base.a-color-secondary span:text-is("by") + :is(a, span)'
+        ).first
         if author_loc.count() > 0:
             author = author_loc.inner_text(timeout=2000).strip() or None
 
