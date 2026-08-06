@@ -149,7 +149,24 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 300) -> str:
     affidabile da solo — bug reale trovato in CP4: per risposte brevi/quasi istantanee il
     bottone non transita mai visibilmente per lo stato 'Stop generation' (la generazione
     finisce troppo in fretta), mentre il placeholder 'Generating...' compare comunque anche
-    per risposte di una sola frase (verificato con screenshot reale)."""
+    per risposte di una sola frase (verificato con screenshot reale).
+
+    Stabilita' testo post-placeholder (bug reale trovato dopo il fix della sessione
+    leggera 2026-08-06): il placeholder 'Generating...' puo' sparire un istante PRIMA che
+    l'ultimo chunk di testo sia effettivamente renderizzato nel DOM — estrarre subito dopo
+    da' un testo troncato a meta' frase (osservato: risposta finita su "...becomes" senza
+    punto). Fix: dopo la sparizione del placeholder, si rilegge il testo finche' non resta
+    IDENTICO fra due letture consecutive (testo ancora cambiante = ancora in rendering).
+
+    Retry via reload (bug reale trovato in CP5, intermittente — a volte al primo
+    messaggio, a volte al secondo, nessun pattern fisso): il placeholder 'Generating...'
+    a volte non sparisce mai lato client pur essendo la risposta gia' pronta lato server
+    — coerente con una connessione live (WebSocket) persa silenziosamente durante una
+    sessione headless lunga, mai un vero hang del modello (l'account funziona
+    normalmente in un browser umano normale, confermato da Gael). Fix: se il timeout
+    scatta, si ricarica la pagina (forza una riconnessione pulita, la chat e' salvata
+    lato server quindi non si perde nulla) e si ricontrolla — MAI si rimanda il prompt,
+    solo si rilegge lo stato vero. Fino a config.MAX_RETRIES tentativi totali."""
     textbox = page.locator("textarea, [contenteditable='true']").first
     textbox.click()
     textbox.fill(prompt)
@@ -159,6 +176,31 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 300) -> str:
                       # del primo controllo — senza, un check troppo rapido puo' vederlo
                       # ancora assente e uscire subito credendo (erroneamente) che sia finita
 
+    last_error: Exception | None = None
+    for attempt in range(1, config.MAX_RETRIES + 1):
+        # Solo il primo tentativo usa il timeout pieno (la generazione puo' essere
+        # genuinamente lunga). I retry dopo un reload servono a rilevare una risposta
+        # GIA' pronta lato server ma non riflessa lato client (vedi docstring) — se il
+        # reload non la rivela in una manciata di secondi, aspettare di nuovo per intero
+        # non aiuta: meglio ricaricare ancora che stare fermi.
+        attempt_timeout = timeout_s if attempt == 1 else min(timeout_s, 45)
+        try:
+            return _wait_for_completion_and_extract(page, attempt_timeout)
+        except (TimeoutError, RuntimeError) as exc:
+            last_error = exc
+            if attempt < config.MAX_RETRIES:
+                # Reload SOLO se l'URL e' gia' quello di una chat specifica (bug reale
+                # trovato: se si ricarica mentre l'URL e' ancora quello base, si perde
+                # la chat intera invece di recuperare la risposta gia' pronta — la
+                # pagina torna a una chat nuova vuota). Sulla base URL ci si limita ad
+                # aspettare ancora, senza navigare via da nulla.
+                if page.url.rstrip("/") != config.LMARENA_BASE_URL.rstrip("/"):
+                    page.reload(wait_until="domcontentloaded", timeout=config.DEFAULT_TIMEOUT_MS)
+                    time.sleep(2)
+    raise last_error
+
+
+def _wait_for_completion_and_extract(page: Page, timeout_s: int) -> str:
     waited, max_wait = 0, timeout_s
     while waited < max_wait:
         pending = page.get_by_text("Generating", exact=False).count()
@@ -171,6 +213,16 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 300) -> str:
     time.sleep(1)  # margine per il rendering finale dopo la sparizione del placeholder
 
     text = _extract_latest_response_text(page)
+    stable_checks, max_stable_checks, total_checks, max_total_checks = 0, 2, 0, 30
+    while stable_checks < max_stable_checks and total_checks < max_total_checks:
+        time.sleep(1)
+        total_checks += 1
+        recheck = _extract_latest_response_text(page)
+        if recheck == text and recheck is not None:
+            stable_checks += 1
+        else:
+            text = recheck
+            stable_checks = 0
     if text is None:
         raise RuntimeError("LM Arena: nessuna risposta testuale trovata dopo la generazione")
     return text
