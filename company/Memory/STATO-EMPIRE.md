@@ -1,4 +1,44 @@
-# STATO EMPIRE -- aggiornato 2026-08-06 (Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-003 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-06 (Claude: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005 · Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-003 · Claude: Arsenale Caroselli, libreria output per prodotto — CP-20260806-002 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## 🏛️ 2026-08-06 — CLAUDE: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005
+Max ha chiesto conferma: "il lavoro caroselli è dentro il reparto dedicato dell'Impero?
+Non devono esistere reparti a caso, strutturiamo tutto per bene." Risposta onesta: no,
+era fuori (`SKILL & Agenti/`, non `company/Ecosistemi/`).
+
+Trovati **2 reparti formali preesistenti** per i caroselli, mai collegati al lavoro di
+oggi, **entrambi mai eseguiti** (verificato: zero cartelle `orders/` su disco prima di
+oggi): `03-CONTENT-FACTORY/Reparti/CF-R5-Visual-Design-Caroselli/` (scritto 19-23
+giugno, 10 agenti/4 workflow/gate/KPI, 3 rami A/B/C mai costruiti — dichiarazione
+esplicita nel proprio README "da costruire") e `13-ARENA-APEX/prompts/
+carousel-engine-v2.md` (spec Arena diversa, mai eseguita).
+
+**Deciso con Max**: non ricostruire CF-R5 da zero, non lasciare il lavoro di oggi
+fuori dalla governance. Integrato il sistema reale e verificato (Arena Agent
+Workspace) come **Ramo D** di CF-R5, accanto ai 3 rami mai costruiti (non
+cancellati). Primo ordine reale mai esistito nel reparto: `orders/
+CF-2026-PREVENTA-001/` con `state.json`+`trace.jsonl` a timestamp reali (dai
+metadata dello ZIP scaricato). `carousel-engine-v2.md` marcato come superato (non
+cancellato). Gap onesti dichiarati: gate CF-R5-QA verificati a mano (script reale non
+costruito), `brand_kit.json` Preventa non esiste in CF-R2, CF-R6 non costruito —
+l'ordine si ferma a "consegnato", non passa oltre.
+
+**RIPRESA DA**: se Max vuole il reparto CF-R5 operativo per davvero oltre al solo Ramo
+D funzionante — vedi [CP-20260806-005](checkpoints/CP-20260806-005.md) §RIPRESA DA per
+i pezzi mancanti in ordine di probabile valore.
+
+---
+
+## 📦 2026-08-06 — CLAUDE: Arsenale Caroselli — libreria output finiti, una cartella per prodotto — CP-20260806-002
+Richiesta esplicita di Max dopo aver visto il primo carosello Preventa reale, sepolto
+in un percorso troppo nidificato. Nuova `SKILL & Agenti/Workflow agency creative/
+Arsenale Caroselli/<Prodotto>/<data_topic>/` — separata dalle cartelle motore (dove
+vive solo codice). File spostati con `git mv` (storia preservata). `confirm_and_download.py`
+ora ci salva di default, accetta prodotto/nome da riga di comando per i prossimi
+caroselli. Trovate ma non integrate 2 cartelle preesistenti non documentate
+(`caroselli-motodo-empire/`, un workspace scaricato) — dettaglio in
+[CP-20260806-002](checkpoints/CP-20260806-002.md).
+
+---
 
 ## 🔧 2026-08-06 — CLAUDE: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004
 

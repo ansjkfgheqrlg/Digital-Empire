@@ -50,6 +50,45 @@ dry_run(job)    → produce solo slides-copy.json + prompt-set.json senza avviar
 
 ---
 
+### `cf-carousel-arena` (wrapper Arena Agent Workspace — Ramo D) ✅ VERIFICATO 2026-08-06
+
+**Scopo:** Wrappa l'Agent workspace già costruito dentro Arena.ai stessa (non nostro
+codice — vive lato Arena, raggiunto via UI + chat archiviata "PROMPT INGEGNERIZZATI
+PER [ARENA.AI]" + comando `/inizio-generazione`). **Unico ramo di CF-R5 con un output
+reale verificato** — vedi `orders/CF-2026-PREVENTA-001/` e [[CP-20260805-013]].
+
+**[WRAPPA] Arena Agent Workspace — asset esterno, non modificabile da qui.**
+
+**Implementazione reale** (fuori da `company/`, per ADR-003 — stesso pattern di
+`carousel-factory/`): `SKILL & Agenti/Workflow agency creative/caroselli - preventa/`
+- `run_content_factory.py` — apre la chat, attiva/salta `/inizio-generazione`, manda il brief
+- `check_status.py` — osservazione pura, quante slide su 8 sono pronte
+- `resume_generation.py` — manda "continua" se un timeout Arena blocca la generazione
+- `confirm_and_download.py` — conferma "Sì" e scarica il file reale in
+  `Arsenale Caroselli/<Prodotto>/<data_topic>/`
+
+**Contratto esposto (informale — non ancora un modulo Python richiamabile da coord):**
+```
+genera(brief_ricco)  → esegue i 4 script in sequenza, produce 8 PNG + copy.json + zip
+check_stato()        → quante slide generate finora, se bloccato su timeout
+```
+
+**Differenza strutturale dagli altri rami:** non prende `slides-copy.json` come
+input — il brief ricco (testo libero: prodotto, pain point, leve, target, prezzo,
+tono) viene mandato direttamente, l'Agent scrive copy e genera visual insieme.
+Struttura slide fissa (8: problema/verità/soluzione/come funziona/risultato/
+domanda/CTA), non parametrica come gli altri rami.
+
+**Cosa NON fa (ancora):**
+- Non è richiamabile come funzione/modulo da `cf-r5-coord` — sono script standalone,
+  lanciati a mano da riga di comando.
+- Non passa da GATE-FORMATO/GATE-BRAND automatico (`cf-r5-qa` non costruito) — verifica
+  manuale finora.
+- Non aggiorna `state.json`/`trace.jsonl` in automatico — scritti a mano per l'ordine
+  CF-2026-PREVENTA-001.
+
+---
+
 ## Script target CF-R5 (da costruire quando i wrapper sono collegati)
 
 ### `format-gate-check`

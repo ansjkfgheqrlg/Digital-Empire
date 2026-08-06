@@ -1,4 +1,14 @@
 # PROMPT: CAROUSEL-ENGINE v2.0
+
+> ⚠️ **SUPERATO (2026-08-06)**: mai trovato collegato a un'esecuzione reale (nessun
+> output verificato prima di questa data). Il sistema che genera davvero caroselli
+> oggi è l'**Arena Agent Workspace** (Ramo D di
+> `company/Ecosistemi/03-CONTENT-FACTORY/Reparti/CF-R5-Visual-Design-Caroselli/`,
+> vedi ARCHITETTURA.md + [[CP-20260805-013]]) — chat archiviata "PROMPT
+> INGEGNERIZZATI PER [ARENA.AI]" + comando `/inizio-generazione`, struttura 8 slide
+> fisse, non il prompt singolo glassmorphism qui sotto. Non cancellato (può tornare
+> utile come stile alternativo se mai costruito davvero), ma non è il percorso attivo.
+
 ## Stream S1-B | Agente: Writer + Image Generation | Memory: strategies/store.json → "Glassmorphism Premium Style"
 
 ---

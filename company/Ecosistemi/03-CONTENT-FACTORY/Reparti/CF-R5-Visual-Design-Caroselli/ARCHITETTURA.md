@@ -32,37 +32,75 @@ CF-Director: usa sempre il canale L1-PROD (separazione gerarchica MEGA-REPARTO A
 
 ---
 
-## Architettura engine: Canva MCP vs Render Locale
+## Architettura engine: Canva MCP vs Render Locale vs Arena Agent Workspace
 
-CF-R5 orchestra due engine di produzione paralleli. La scelta è strutturata, non arbitraria:
+CF-R5 orchestra quattro engine di produzione paralleli. La scelta è strutturata, non
+arbitraria. **Stato reale al 2026-08-06** (verificato, non presunto): Rami A/B/C sono
+progettati ma mai eseguiti (nessuna cartella `orders/` esisteva su disco prima di oggi).
+Il **Ramo D è l'unico verificato con un output reale** (primo carosello Preventa,
+[[CP-20260805-013]]) — vedi `orders/CF-2026-PREVENTA-001/` per lo state.json reale.
 
 ```
                           [CF-R5-COORD decide engine]
                                     │
-          ┌─────────────────────────┼─────────────────────────┐
-          │                         │                         │
-   RAMO A                    RAMO B                   RAMO C
-   (Prompt AI)             (Canva MCP)            (Render Locale)
-          │                         │                         │
-CF-R5-PROMPT               CF-R5-CANVA             CF-R5-RENDER
-  │                    generate-design          render.mjs Puppeteer
-  ▼                    brand-template           HTML→PNG 1080x1350
-Gemini / Higgsfield    editing-operations       [WRAPPA carousel-factory]
-  immagini             export PNG
-  (oggi: collo
-   di bottiglia
-   segnalato)
+     ┌──────────────┬───────────────┼───────────────┬──────────────┐
+     │              │               │               │
+  RAMO A          RAMO B          RAMO C          RAMO D
+ (Prompt AI)     (Canva MCP)   (Render Locale)  (Arena Agent Workspace)
+     │              │               │               │
+CF-R5-PROMPT    CF-R5-CANVA    CF-R5-RENDER    [WRAPPA Arena Agent Mode]
+  │           generate-design  render.mjs      chat archiviata
+  ▼           brand-template   Puppeteer       "PROMPT INGEGNERIZZATI"
+Gemini /      editing-ops      HTML→PNG        + comando /inizio-generazione
+Higgsfield    export PNG       1080x1350       → 8 slide 4K + copy.json + ZIP
+immagini      [WRAPPA carousel-factory]        [WRAPPA caroselli - preventa/*.py]
+(mai testato) (mai testato)    (mai testato)   ✅ TESTATO — Preventa 2026-08-06
 ```
 
 **Regola di selezione engine (CF-R5-COORD):**
 - `brand_kit.visual.canva_brand_template_ids` non vuoto → Ramo B (Canva MCP preferito)
 - Brief con stile fotografico o UGC → Ramo A (Gemini/Higgsfield per le immagini di fondo)
 - Brief con slide HTML parametriche o brand senza Canva → Ramo C (render locale)
+- **Brief con struttura fissa a 8 slide (problema/verità/soluzione/come funziona/
+  risultato/domanda/CTA) e brand senza asset Canva pronti → Ramo D (default oggi,
+  unico verificato)**
 - Batch ≥ 5 caroselli → swarm fan-out su tutti i rami; merge al GATE-FORMATO
 
 **Il ramo C usa `render.mjs` che è parte del `carousel-factory`.
 Non si modifica `render.mjs`: si chiama come wrapper esterno. Dichiarazione obbligatoria:
 `[WRAPPA] carousel-factory/render.mjs — runtime originale non modificato.`**
+
+### Ramo D — Arena Agent Workspace (dettaglio, ADR-003 wrap)
+
+Non un motore nuovo: **wrappa** un Agent workspace già costruito dentro Arena stessa
+(non in questo repo — vive lato Arena, raggiungibile solo via UI). Il wrapper locale
+(`caroselli - preventa/*.py`, in
+`SKILL & Agenti/Workflow agency creative/`, fuori da `company/` per ADR-003 — stesso
+pattern di `carousel-factory/`, mai duplicato dentro `company/Ecosistemi/`) pilota
+questo workspace via Playwright:
+
+1. Apre `arena.ai` → Search → tab Archived → chat **"PROMPT INGEGNERIZZATI PER
+   [ARENA.AI]"** (asset esterno, non nostro — di proprietà dell'account Arena).
+2. Scrive `/inizio-generazione` (se non già attivo).
+3. Manda un brief ricco (prodotto, pain point, leve, target, prezzo, tono — NON un
+   one-liner, l'Agent non ha contesto di suo).
+4. L'Agent genera 8 slide fisse (struttura non configurabile: IL PROBLEMA, LA VERITÀ,
+   LA SOLUZIONE, COME FUNZIONA, IL RISULTATO, LA DOMANDA VERA, INIZIA ORA) + copy.json
+   + ZIP, con eventuali timeout risolti mandando "continua".
+5. Il wrapper scarica il file reale (non si fida del testo "pronto" in chat) e lo
+   deposita in `Arsenale Caroselli/<Prodotto>/<data_topic>/` (libreria output finiti,
+   parallela a `orders/` — vedi nota sotto).
+
+**Limite noto**: struttura a 8 slide fissa, non parametrica come i Rami A/B/C — va bene
+per un formato "advertorial" standard, non per format custom (es. thumbnail singola,
+grafica statica). Per quei casi restano i Rami A/B/C, quando verranno costruiti.
+
+**`orders/` vs `Arsenale Caroselli/`**: `orders/<id>/` è il tracking per-ordine
+(WIP, state machine, gate) coerente con lo schema CF-R5 esistente. `Arsenale Caroselli/`
+(`SKILL & Agenti/Workflow agency creative/Arsenale Caroselli/`) è la libreria degli
+output FINITI per prodotto, indipendente da quale ordine/ramo li ha generati — un
+carosello passato dal Ramo D finisce in entrambi i posti: lo stato in `orders/`, il
+file finale nell'Arsenale.
 
 ---
 

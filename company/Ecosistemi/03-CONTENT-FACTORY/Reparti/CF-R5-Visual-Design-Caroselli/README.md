@@ -21,10 +21,17 @@ validato che richiede output visivo. L'asset più maturo di Digital Empire — i
 `carousel-factory` — viene wrappato tramite la skill `cf-carousel` senza toccare il
 runtime originale (ADR-003: wrap, mai riscrittura).
 
-Il reparto lavora su due engine paralleli: **Canva MCP** (via `cf-r5-canva`) per i
-template brand e le grafiche standard, e **render locale** (via `cf-r5-render` +
-`render.mjs` Puppeteer) per la pipeline HTML→PNG ad alto controllo. La scelta tra
-i due engine è responsabilità di `cf-r5-coord` in base al brand_kit e al brief ricevuto.
+Il reparto lavora su quattro engine paralleli: **Canva MCP** (via `cf-r5-canva`) per i
+template brand, **render locale** (via `cf-r5-render` + `render.mjs` Puppeteer) per la
+pipeline HTML→PNG ad alto controllo, **prompt AI diretto** (Ramo A, Gemini/Higgsfield),
+e **Arena Agent Workspace** (Ramo D, via `cf-carousel-arena`). La scelta tra gli engine
+è responsabilità di `cf-r5-coord` in base al brand_kit e al brief ricevuto.
+
+**Stato reale (2026-08-06, non presunto)**: dei 4 rami, solo il **Ramo D è stato
+verificato con un output reale** (primo carosello Preventa, `orders/
+CF-2026-PREVENTA-001/`, [[CP-20260805-013]]). Rami A/B/C restano progettati ma mai
+eseguiti — nessuna prova di run prima di questa data. Vedi ARCHITETTURA.md per il
+dettaglio del Ramo D.
 
 ---
 

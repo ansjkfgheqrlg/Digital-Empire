@@ -1,0 +1,70 @@
+{
+  "order_id": "CF-2026-PREVENTA-001",
+  "workflow": "WF-CAROSELLO",
+  "brand": "Preventa",
+  "brand_kit_path": null,
+  "ramo_attivo": "D",
+  "nota_ramo": "Ramo D (Arena Agent Workspace) - unico ramo esistente eseguito davvero, vedi ARCHITETTURA.md",
+  "avviato_il": "2026-08-06T08:20:00Z",
+  "fasi": {
+    "00-dry-run": {
+      "stato": "non_applicabile",
+      "nota": "Ramo D non ha uno step dry-run separato: il brief ricco viene mandato direttamente all'Agent Arena, che genera copy e visual insieme."
+    },
+    "brief": {
+      "stato": "completato",
+      "ts": "2026-08-06T08:22:00Z",
+      "owner": "claude",
+      "contenuto": "Prodotto Preventa: link annuncio (anche estero) -> PDF preventivo brandizzato; pain point 20-30min manuali; leve: perdita imminente, sollievo tempo, vergogna Excel vs PDF, doppio lavoro import; target concessionari import Germania; prezzo 2000EUR una tantum",
+      "script": "caroselli - preventa/run_content_factory.py::ARGOMENTO_CAROSELLO"
+    },
+    "03-design_04-render": {
+      "stato": "completato",
+      "ts_inizio": "2026-08-06T08:24:00Z",
+      "ts_fine": "2026-08-06T08:50:00Z",
+      "owner": "cf-r5-render (wrapper Ramo D)",
+      "engine": "arena-agent-workspace",
+      "n_slide_prodotte": 8,
+      "png_path": "SKILL & Agenti/Workflow agency creative/Arsenale Caroselli/Preventa/2026-08-06_tempo-perso-import/",
+      "copy_path": "SKILL & Agenti/Workflow agency creative/Arsenale Caroselli/Preventa/2026-08-06_tempo-perso-import/copy.json",
+      "zip_path": "SKILL & Agenti/Workflow agency creative/Arsenale Caroselli/Preventa/2026-08-06_tempo-perso-import/Preventa_CAROSELLO_8SLIDE_ULTRA_GRAIN_4K.zip",
+      "timestamp_reali_slide": {
+        "slide_01.png": "2026-08-06T08:34:00Z",
+        "slide_02.png": "2026-08-06T08:35:00Z",
+        "slide_03.png": "2026-08-06T08:46:00Z",
+        "slide_04.png": "2026-08-06T08:46:00Z",
+        "slide_05.png": "2026-08-06T08:47:00Z",
+        "slide_06.png": "2026-08-06T08:48:00Z",
+        "slide_07.png": "2026-08-06T08:49:00Z",
+        "slide_08.png": "2026-08-06T08:49:00Z"
+      },
+      "eventi_anomali": "Timeout Arena (\"The AI took too long to respond\") dopo slide 2/8 - risolto mandando 'continua' nel composer, non un rework CF-R5-QA. Vedi trace.jsonl."
+    },
+    "gate-formato": {
+      "stato": "PASS",
+      "ts": "2026-08-06T09:00:00Z",
+      "metodo": "verifica manuale (CF-R5-QA non ancora costruito come script reale)",
+      "dettaglio": "8 PNG, dimensione 1080x1350 (upscalate da 4K 2160x2700), peso 1.27-1.66MB/slide (< 8MB), verificato con unzip -l"
+    },
+    "gate-brand": {
+      "stato": "PASS",
+      "ts": "2026-08-06T09:00:00Z",
+      "metodo": "verifica manuale (brand_kit.json Preventa non esiste come file CF-R2 formale)",
+      "dettaglio": "Prezzo 2000EUR una tantum corretto, target import Germania corretto, brand Digital Empire presente slide 8/8 - ispezione visiva diretta"
+    },
+    "caption": {
+      "stato": "completato",
+      "ts": "2026-08-06T08:50:00Z",
+      "nota": "Prodotta dall'Agent Arena insieme alle slide, non da CF-R4-CAPTION - dentro copy.json"
+    },
+    "handoff-cf-r6": {
+      "stato": "non_eseguito",
+      "ts": null,
+      "nota": "CF-R6-QA-Gate non ancora costruito come reparto operativo"
+    }
+  },
+  "n_rework": 0,
+  "crediti_engine": "non tracciato (Arena non espone costo per-generazione in UI)",
+  "stato_finale": "consegnato",
+  "gap_onesto": "Questo ordine dimostra che il Ramo D funziona end-to-end, non che l'intero reparto CF-R5 sia operativo. GATE-FORMATO/GATE-BRAND verificati a mano, non da agenti CF-R5-QA reali. Vedi WF-CAROSELLO.md sezione 'Esempio operativo REALE'."
+}

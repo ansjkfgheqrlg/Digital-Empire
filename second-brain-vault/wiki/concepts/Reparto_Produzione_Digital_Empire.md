@@ -1,19 +1,33 @@
 ---
 Type: CONCEPT
-Status: Active
+Status: Superseded-parziale
 Tags: #reparto-produzione #caroselli #arena #playwright #contenuti #preventa #agency
 Created: 2026-08-03
-Last updated: 2026-08-03
+Last updated: 2026-08-06
 ---
 
 # Reparto Produzione — Digital Empire
 
-## Overview
+## ⚠️ Correzione (2026-08-06): il reparto formale esiste già, non era questo
+Max ha chiesto conferma: "questo che ho costruito è dentro il reparto dedicato
+dell'Impero?" — risposta: no. Esiste già, scritto il 2026-06-19, **prima** di questa
+pagina: **`company/Ecosistemi/03-CONTENT-FACTORY/Reparti/
+CF-R5-Visual-Design-Caroselli/`** — 10 agenti, 4 workflow, gate, KPI, tutto scritto
+ma **mai eseguito** (zero cartelle `orders/` esistevano prima di oggi). Il lavoro di
+questa pagina (Preventa/Agency/Arsenale) è stato integrato lì come **Ramo D** (Arena
+Agent Workspace) — l'unico dei 4 rami di CF-R5 verificato con un output reale, vedi
+`orders/CF-2026-PREVENTA-001/` e [[CP-20260806-005]]. Questa pagina resta come
+cronaca di come ci si è arrivati (utile per capire le decisioni), ma il punto di
+riferimento formale ora è CF-R5, non questa pagina.
+
+## Overview (contesto storico, 2026-08-03)
 Ordine di Max (2026-08-03, [[CP-20260803-004]]/[[CP-20260803-006]]): l'azienda deve
 avere un concetto organizzativo di **"progetti"** e **"categorie"** per la produzione
 di contenuti — non un motore unico monolitico, ma un umbrella sotto cui ogni
 brand/prodotto ha il proprio progetto, riusando lo stesso motore tecnico dove
-possibile (ADR-003: wrap, mai riscrittura).
+possibile (ADR-003: wrap, mai riscrittura). Al momento non sapevo che
+`03-CONTENT-FACTORY` esistesse già con questo esatto scopo — trovato solo il
+2026-08-06 quando Max ha chiesto conferma della struttura.
 
 ## I 3 motori caroselli trovati su disco (non sono la stessa cosa)
 Prima di costruire qualsiasi cosa, sono stati mappati 3 sistemi caroselli reali,

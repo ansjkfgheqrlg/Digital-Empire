@@ -32,6 +32,7 @@ L'asset più maturo di DE. Il carousel-factory preesistente viene wrappato senza
 | 2A | Ramo A — Prompt AI | CF-R5-PROMPT | `prompt-set.json` approvato | `03-design/prompts/prompt-NNN.txt` × N slide | Prompt ultra-specifici: stile, palette, composizione |
 | 2B | Ramo B — Canva template | CF-R5-CANVA | `slides-copy.json` + brand_template_id | `03-design/canva-export/slide-NNN.png` × N slide | Template coerente con brand_kit |
 | 2C | Ramo C — HTML + render.mjs | CF-R5-RENDER | `slides-copy.json` + `brand_kit` | `04-render/PNG/slide-NNN.png` × N slide | Puppeteer render 1080×1350 |
+| 2D | Ramo D — Arena Agent Workspace ✅ TESTATO | CF-R5-RENDER (wrapper `caroselli - preventa/`) | brief ricco (prodotto/pain/leve/target/prezzo), non `slides-copy.json` — l'Agent scrive il copy da solo | 8 PNG 4K + `copy.json` in `Arsenale Caroselli/<Prodotto>/` | Struttura fissa 8 slide, non riconfigurabile — vedi ARCHITETTURA.md |
 | 3 | GATE-FORMATO | CF-R5-QA | PNG ramo scelto + `brand_kit` | `verdict-formato.json` | 1080×1350 ±2px; ≤8 slide+cover; < 8MB/slide; contrasto ≥4.5:1; safe-area 72px |
 | 4 | GATE-BRAND | CF-R5-QA | PNG ramo scelto + `brand_kit` | `verdict-brand.json` | Palette, font, logo conforme brand_kit |
 | 5 | Caption + hashtag | CF-R5-CANVA / CF-R4-CAPTION | `slides-copy.json` + brand_kit.voice | `caption.txt` + `hashtag-set.txt` | Caption ≤2.200 char IG; hashtag ≤30; parole_vietate assenti |
@@ -176,6 +177,37 @@ in cover e CTA → PASS.
 (≤30, aderenti al brand_kit e al topic del carosello).
 
 **Passo 6:** state.json aggiornato. `pronto_per_cf_r6: true`. CF-R6-GATE gestisce GATE-COPY-APSOC.
+
+---
+
+## Esempio operativo REALE — Ramo D (unico eseguito davvero, 2026-08-06)
+
+A differenza dell'esempio sopra (Ramo B, illustrativo — nessun `orders/` esisteva su
+disco prima di oggi), questo è un run reale, verificato con screenshot e file scaricati.
+Ordine: `CF-2026-PREVENTA-001` · brand: Preventa · vedi
+`orders/CF-2026-PREVENTA-001/` per state.json e trace.jsonl completi.
+
+1. Niente dry-run separato: il brief ricco (prodotto, pain point, leve psicologiche,
+   target, prezzo, tono) viene mandato direttamente all'Agent Arena, che genera copy
+   e visual insieme, slide per slide.
+2. Generazione slide 1-2 riuscita, poi `"The AI took too long to respond"` (timeout
+   reale lato Arena) — risolto mandando `"continua"`, non un rework CF-R5-QA.
+3. 8/8 slide completate, l'Agent chiede conferma "Questo compito è riuscito? Sì/No" —
+   confermato Sì.
+4. GATE-FORMATO verificato **a mano** (non da CF-R5-QA automatico, non ancora costruito):
+   1080×1350 ✓ (upscalate da 4K), 8 PNG ✓, peso 1.27-1.66MB/slide (< 8MB) ✓.
+   GATE-BRAND verificato a mano: prezzo €2.000, target import Germania, brand Digital
+   Empire in slide 8/8 — coerenti con `brand_kit` Preventa (mai formalizzato in CF-R2,
+   solo nella wiki `Preventa_Logica_Completa_Metodo`).
+5. Output finale in `Arsenale Caroselli/Preventa/2026-08-06_tempo-perso-import/`
+   (non `orders/<id>/04-render/PNG/` — l'Arsenale è la libreria per-prodotto, l'ordine
+   traccia lo stato del batch, vedi ARCHITETTURA.md).
+
+**Gap onesto verso lo standard CF-R5**: GATE-FORMATO/GATE-BRAND non sono stati
+eseguiti dall'agente `cf-r5-qa` (non ancora costruito come script reale) — verifica
+visiva manuale. `brand_kit.json` di Preventa non esiste come file CF-R2 formale.
+Handoff a CF-R6 non eseguito (CF-R6 non costruito). Questo run dimostra che il Ramo D
+funziona, non che l'intero reparto CF-R5 sia operativo end-to-end.
 
 ---
 
