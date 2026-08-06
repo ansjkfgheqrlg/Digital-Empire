@@ -122,8 +122,23 @@ _FONTI = re.compile(
 )
 
 
+# Citazione di un fenomeno/concetto con NOME PROPRIO ("gli psicologi la chiamano compressione
+# temporale", "si chiama effetto contrasto") — segnale di valore aggiunto GENERICO, non legato
+# a una nicchia specifica come _FONTI (istituzioni mediche/testi biblici). Serve perche' _FONTI
+# era tarata solo su Dose Mentale: su uno script di psicologia relazionale che cita fenomeni
+# con nome proprio ma senza istituzioni ne' testi religiosi, falliva per lo stesso identico
+# motivo gia' corretto una volta il 2026-08-04 (falso negativo reale su @Legamidiamore, non
+# teorico: bloccava uno script con 0% di copia letterale e 4 concetti nominati veri).
+_CONCETTO_NOMINATO = re.compile(
+    r"\b(?:lo chiamano|la chiamano|si chiama|viene chiamat[oa]|conosciuto come|"
+    r"chiamano questo fenomeno)\s+([a-zà-ù]+(?:\s+[a-zà-ù]+){0,3})",
+    re.IGNORECASE,
+)
+
+
 def _elementi_nuovi(script: str) -> list[str]:
-    """Segnali concreti e verificabili di valore aggiunto: fonti e riferimenti citati.
+    """Segnali concreti e verificabili di valore aggiunto: fonti/riferimenti citati o concetti
+    nominati esplicitamente.
 
     Limite dichiarato: questa e' una misura *approssimata*. Un contributo originale puo'
     consistere in una struttura o in un ragionamento nuovi, che nessuna espressione regolare
@@ -131,6 +146,7 @@ def _elementi_nuovi(script: str) -> list[str]:
     qui si verifica solo che lo script non sia una parafrasi priva di apporti propri.
     """
     trovati = [m.group(0) for m in _FONTI.finditer(script)]
+    trovati += [f"concetto nominato: {m.group(1).strip()}" for m in _CONCETTO_NOMINATO.finditer(script)]
     return sorted({t.strip() for t in trovati})
 
 

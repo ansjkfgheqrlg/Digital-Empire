@@ -1,4 +1,35 @@
-# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-06 (Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## 🔧 2026-08-06 — CLAUDE: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su F1→F5 — CP-20260806-001
+
+Segue [CP-20260805-012](checkpoints/CP-20260805-012.md). `apex7_orchestrator.py` era cablato su
+un solo canale (`CANALE_TARGET` costante globale = Dose Mentale). Sostituito con registro
+`CANALI` (2 voci) + `--canale`/`--video-sorgente` sulla CLI, persistiti nello stato della run
+(un `--resume` senza ripetere `--canale` non torna più silenziosamente a Dose Mentale). Nuovo
+`--video-sorgente <url>`: il video da replicare per @Legamidiamore viene da un **competitor**,
+non dal proprio catalogo — cerca l'ID in tutte le cache canale, salta il video-gate (già vagliato
+da studio copy + calendario), nomina transcript/copertina col canale di **origine**, non di
+destinazione.
+
+**2 bug reali trovati eseguendo il ramo per la prima volta** (mai esercitato prima: gli script
+adattati di Dose Mentale esistevano già): `yt-dlp` non sul PATH (fix: `python -m yt_dlp`) e
+`_elementi_nuovi()` del regolatore-originalità tarata solo su istituzioni mediche/testi biblici
+(dominio Dose Mentale) — bloccava un vero script sulla nicchia relazioni. Fix generico (non
+un'altra lista): nuovo pattern `_CONCETTO_NOMINATO` che riconosce "lo chiamano X"/"si chiama X"
+indipendentemente dalla nicchia.
+
+**Primo script reale scritto** (video sorgente da @PsicologiaFemminile-f8c, giorno 1 del
+calendario): primo giro bloccato per davvero dal regolatore-originalità (12 sequenze copiate),
+riscritto, poi bloccato di nuovo su valore aggiunto insufficiente (bug sopra), fixato, infine
+**verde su tutti i controlli F1→F5**: SEO 100/100, critic 8.37/10, nicchia/copy/originalità
+tutti passa, copertina sorgente salvata col prefisso corretto. `pytest` 10/11 invariato (stesso
+fallimento pre-esistente di Gael, non mio, non ancora risolto).
+
+**RIPRESA DA:** nessuna chiamata Fliki né upload reale finora (mai fatto su questa fabbrica,
+serve conferma esplicita di Max prima del primo costo/pubblicazione reale). Giorni 2-10 del
+calendario restano da scrivere uno alla volta.
+
+---
 
 ## 🎠✅ 2026-08-05/06 — CLAUDE: Primo carosello Preventa REALE generato e scaricato, verificato pixel per pixel — CP-20260805-013
 Chiude il ciclo aperto in [CP-20260805-010](checkpoints/CP-20260805-010.md) (scoperta del

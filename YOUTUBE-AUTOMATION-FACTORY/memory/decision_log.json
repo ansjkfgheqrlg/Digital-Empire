@@ -808,5 +808,131 @@
     ],
     "confidence": 0.8,
     "timestamp": "2026-08-05T08:39:41.826630"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260806-084824-1ec7b6",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 12840, velocity media 2.8 viste/ora, indice cash cow reale 15.6 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-06T08:48:24.353797"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260806-084824-1ec7b6",
+    "decision": "Video sorgente scelto manualmente (calendario): Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 17.8 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-06T08:48:24.490833"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260806-084929-d9a91c",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 12840, velocity media 2.8 viste/ora, indice cash cow reale 15.6 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-06T08:49:29.938080"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260806-084929-d9a91c",
+    "decision": "Video sorgente scelto manualmente (calendario): Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 17.8 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-06T08:49:30.032651"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260806-085041-a2a93a",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 12840, velocity media 2.8 viste/ora, indice cash cow reale 15.6 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-06T08:50:41.190169"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260806-085041-a2a93a",
+    "decision": "Video sorgente scelto manualmente (calendario): Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 17.8 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-06T08:50:41.294683"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260806-090153-01174b",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 12840, velocity media 2.8 viste/ora, indice cash cow reale 15.6 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-06T09:01:53.109885"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260806-090153-01174b",
+    "decision": "Video sorgente scelto manualmente (calendario): Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 17.8 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-06T09:01:53.203508"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260806-090423-3c8fb4",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 12840, velocity media 2.8 viste/ora, indice cash cow reale 15.6 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-06T09:04:23.453505"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260806-090423-3c8fb4",
+    "decision": "Video sorgente scelto manualmente (calendario): Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 17.8 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-06T09:04:23.544325"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260806-090556-990446",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 12840, velocity media 2.8 viste/ora, indice cash cow reale 15.6 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-06T09:05:57.115717"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260806-090556-990446",
+    "decision": "Video sorgente scelto manualmente (calendario): Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 17.8 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-06T09:05:57.209257"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260806-090635-eac8fb",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 12840, velocity media 2.8 viste/ora, indice cash cow reale 15.6 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-06T09:06:35.140368"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260806-090635-eac8fb",
+    "decision": "Video sorgente scelto manualmente (calendario): Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 17.8 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-06T09:06:35.238664"
   }
 ]

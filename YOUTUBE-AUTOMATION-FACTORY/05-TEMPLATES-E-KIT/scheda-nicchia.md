@@ -1,9 +1,9 @@
-# Scheda Nicchia: spiritualita', psicologia, saggezza biblica/buddista, motivazione, salute e benessere per un pubblico adulto/anziano
+# Scheda Nicchia: psicologia femminile e maschile, segnali di attrazione, dinamiche relazionali — pubblico adulto interessato a relazioni/dating
 
-- Canale target (fisso): Dose Mentale (@dosementale) — https://www.youtube.com/@dosementale
+- Canale target (fisso): Legami d'Amore (@Legamidiamore) — https://www.youtube.com/@Legamidiamore
 - Fonte dati: pagina pubblica /videos del canale, fetch reale (cache)
 - Video reali analizzati: 10 (i piu' alti per velocity, età >= 24h)
-- Viste reali del campione: min 1200 / max 141000 / media 25260
-- Velocity media reale del campione: 9.1 viste/ora
-- Indice Cash Cow (su dati singolo-video reali): 21.0 — informativo, non bloccante
+- Viste reali del campione: min 2400 / max 29000 / media 12840
+- Velocity media reale del campione: 2.8 viste/ora
+- Indice Cash Cow (su dati singolo-video reali): 15.6 — informativo, non bloccante
 - Gate reale della pipeline: il video scelto in F2 deve fare almeno 3.0x la mediana del proprio canale, e non essere già stato replicato

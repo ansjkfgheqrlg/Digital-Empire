@@ -76,16 +76,39 @@ RuFLOOrchestrator = _shared_orchestrator_mod.RuFLOOrchestrator
 # fisso — @dosementale. Vedi company/Memory/RULES-VIDEO-FACTORY-DOSEMENTALE.md. Lo scouting fra
 # 20 canali AI apparteneva al funnel "Manuale Claude Code", progetto MORTO: rimosso del tutto il
 # 2026-07-31 perche' un run end-to-end sovrascriveva script/metadati/brief con contenuti sbagliati.
-CANALE_TARGET = {
-    "channel": "Dose Mentale",
-    "handle": "@dosementale",
-    "url": "https://www.youtube.com/@dosementale",
-    "temi": "spiritualita', psicologia, saggezza biblica/buddista, motivazione, salute e "
-            "benessere per un pubblico adulto/anziano",
-    # Tag tematici brevi del canale, da usare come tag YouTube. La descrizione estesa qui sopra
-    # e' leggibile ma come tag singolo e' inutilizzabile (una frase intera non e' un tag).
-    "tag_tema": ["spiritualità", "psicologia", "benessere", "crescita personale", "terza età"],
+# Registro canali: dal 2026-08-05 la fabbrica non produce piu' per un solo canale fisso.
+# Ogni voce e' la stessa forma di CANALE_TARGET originale + 2 campi nuovi per isolare gli
+# artefatti per canale (transcript/copertine con prefisso diverso, copy intelligence separata
+# — stesso principio gia' applicato a copy_intelligence_legamidiamore.json, vedi
+# copy_study_legamidiamore.py: non si mischiano dati di nicchie diverse nello stesso file).
+CANALI = {
+    "dosementale": {
+        "channel": "Dose Mentale",
+        "handle": "@dosementale",
+        "url": "https://www.youtube.com/@dosementale",
+        "temi": "spiritualita', psicologia, saggezza biblica/buddista, motivazione, salute e "
+                "benessere per un pubblico adulto/anziano",
+        # Tag tematici brevi del canale, da usare come tag YouTube. La descrizione estesa qui
+        # sopra e' leggibile ma come tag singolo e' inutilizzabile (una frase intera non e' un tag).
+        "tag_tema": ["spiritualità", "psicologia", "benessere", "crescita personale", "terza età"],
+        "prefisso_file": "dosementale",
+        "copy_intelligence_file": "copy_intelligence.json",
+    },
+    "legamidiamore": {
+        "channel": "Legami d'Amore",
+        "handle": "@Legamidiamore",
+        "url": "https://www.youtube.com/@Legamidiamore",
+        "temi": "psicologia femminile e maschile, segnali di attrazione, dinamiche relazionali "
+                "— pubblico adulto interessato a relazioni/dating",
+        "tag_tema": ["psicologia femminile", "psicologia maschile", "attrazione", "segnali",
+                     "linguaggio del corpo", "relazioni"],
+        "prefisso_file": "legamidiamore",
+        "copy_intelligence_file": "copy_intelligence_legamidiamore.json",
+    },
 }
+# Alias per compatibilita': codice/test esistenti che leggono CANALE_TARGET continuano a
+# vedere Dose Mentale (comportamento di default invariato senza --canale esplicito).
+CANALE_TARGET = CANALI["dosementale"]
 
 # Durata obbligatoria del video finale (standard di qualita' fissato da Gael): mai sotto i 12
 # minuti. Verificata sempre sul file mp4 reale, non sulla risposta dell'API.
@@ -163,15 +186,17 @@ REGOLATORI = _load_module_from_path(
 
 
 def _esegui_regolatori(run_id: str, artefatto: str, operatore: str, capo: str,
-                        testi: dict, video_id: str | None = None) -> bool:
+                        testi: dict, video_id: str | None = None,
+                        prefisso: str = "dosementale") -> bool:
     """Esegue nicchia+copy (sempre) e originalita' (se esiste un transcript reale per
     video_id), stampa gli esiti, registra le 3 firme e ritorna False se un regolatore ha
-    bloccato. Un blocco L3 non e' un errore di sistema: e' l'esito onesto del controllo."""
+    bloccato. Un blocco L3 non e' un errore di sistema: e' l'esito onesto del controllo.
+    `prefisso` seleziona i file del canale giusto (vedi CANALI['<id>']['prefisso_file'])."""
     verdetti = [REGOLATORI.verifica_nicchia(testi), REGOLATORI.verifica_copy(testi)]
     if video_id:
         transcript = ""
         for lingua in ("it", "en"):
-            p = os.path.join(TRANSCRIPTS_DIR, f"dosementale-{video_id}.{lingua}.vtt")
+            p = os.path.join(TRANSCRIPTS_DIR, f"{prefisso}-{video_id}.{lingua}.vtt")
             if os.path.exists(p):
                 with open(p, "r", encoding="utf-8") as tf:
                     transcript = tf.read()
@@ -345,18 +370,25 @@ def _parse_vtt(path: str) -> str:
     return " ".join(righe)
 
 
-def _fetch_transcript(video_id: str, url: str, out_dir: str) -> str | None:
+def _fetch_transcript(video_id: str, url: str, out_dir: str, prefisso: str = "dosementale") -> str | None:
     """Transcript REALE del video sorgente via yt-dlp (sottotitoli automatici it, poi en).
     Nessun contenuto inventato: se yt-dlp non c'e' o il video non ha sottotitoli, ritorna None
-    e la fase fallisce onestamente."""
+    e la fase fallisce onestamente. `prefisso` identifica il canale del video sorgente nel nome
+    file (vedi CANALI['<id>']['prefisso_file']) — un transcript di un competitor di
+    @Legamidiamore non deve chiamarsi "dosementale-<id>.vtt"."""
     os.makedirs(out_dir, exist_ok=True)
-    base = os.path.join(out_dir, f"dosementale-{video_id}")
+    base = os.path.join(out_dir, f"{prefisso}-{video_id}")
     esistenti = [p for p in (f"{base}.it.vtt", f"{base}.en.vtt") if os.path.exists(p)]
     if not esistenti:
         try:
+            # `python -m yt_dlp`, non l'eseguibile "yt-dlp": il pacchetto e' installato ed
+            # importabile in questo ambiente, ma il suo entry-point CLI non e' sempre sul PATH
+            # (bug reale trovato il 2026-08-05, prima volta che questo ramo veniva esercitato
+            # per davvero — mai capitato prima perche' gli script adattati esistevano gia').
+            # Stesso interprete Python, stesso comportamento, zero dipendenza dal PATH.
             subprocess.run(
-                ["yt-dlp", "--skip-download", "--write-auto-sub", "--sub-lang", "it,en",
-                 "--sub-format", "vtt", "-o", base, url],
+                [sys.executable, "-m", "yt_dlp", "--skip-download", "--write-auto-sub",
+                 "--sub-lang", "it,en", "--sub-format", "vtt", "-o", base, url],
                 capture_output=True, text=True, timeout=180,
             )
         except (FileNotFoundError, subprocess.TimeoutExpired) as e:
@@ -387,9 +419,19 @@ def _extract_youtube_id(url: str) -> str:
 
 
 class Apex7Orchestrator:
-    def __init__(self, run_id: str | None = None, shared_domain: str = "youtube"):
+    def __init__(self, run_id: str | None = None, shared_domain: str = "youtube", canale_id: str = "dosementale",
+                 video_sorgente_url: str | None = None):
         self.run_id = run_id or f"yt-{datetime.now().strftime('%Y%m%d-%H%M%S')}-{uuid.uuid4().hex[:6]}"
         self.state_file = os.path.join(RUNS_DIR, f"run_{self.run_id}.json")
+        if canale_id not in CANALI:
+            raise ValueError(f"canale_id '{canale_id}' sconosciuto. Validi: {sorted(CANALI)}")
+        self.canale_id = canale_id
+        self.canale = CANALI[canale_id]
+        # Selezione manuale del video sorgente (F2), per una produzione guidata da calendario
+        # invece che da auto-selezione sul catalogo di un solo canale — serve quando il video da
+        # replicare arriva da un COMPETITOR (vedi CALENDARIO-LEGAMIDIAMORE.md), non dal canale di
+        # destinazione stesso. None = comportamento originale invariato (auto-selezione).
+        self.video_sorgente_url = video_sorgente_url
 
         # 5-Layer Memory Ecosystem Paths
         self.working_memory = {}
@@ -498,12 +540,24 @@ class Apex7Orchestrator:
         if os.path.exists(self.state_file):
             self.working_memory = self.load_json(self.state_file, {})
             self.run_id = self.working_memory.get("run_id", self.run_id)
+            # Il canale scelto e' parte dello STATO della run, non solo un argomento CLI: senza
+            # questo, un --resume senza ripetere --canale tornerebbe silenziosamente a
+            # "dosementale" (default del costruttore) su una run avviata per un altro canale.
+            canale_salvato = self.working_memory.get("canale_id")
+            if canale_salvato and canale_salvato != self.canale_id:
+                print(f"[i] Canale della run ripristinato da stato salvato: '{canale_salvato}' "
+                     f"(era '{self.canale_id}')")
+                self.canale_id = canale_salvato
+                self.canale = CANALI[canale_salvato]
+            if self.working_memory.get("video_sorgente_url") and not self.video_sorgente_url:
+                self.video_sorgente_url = self.working_memory["video_sorgente_url"]
             print(f"[+] Stato ripristinato per la run {self.run_id}.")
             return True
         return False
 
     def save_state(self):
         self.working_memory["run_id"] = self.run_id
+        self.working_memory["canale_id"] = self.canale_id
         self.working_memory["last_updated"] = datetime.now().isoformat()
         self.save_json(self.state_file, self.working_memory)
 
@@ -791,6 +845,32 @@ class Apex7Orchestrator:
                 prodotti.add(sorgente)
         return prodotti
 
+    @staticmethod
+    def _cerca_video_in_cache(video_id: str) -> dict | None:
+        """Cerca un videoId in TUTTE le cache di canale (memory/channel_videos/*.json), non
+        solo in quella del canale di destinazione. Serve alla selezione manuale del video
+        sorgente (calendario): il video da replicare per @Legamidiamore viene da un
+        COMPETITOR, non dal catalogo del canale di destinazione — vedi
+        CALENDARIO-LEGAMIDIAMORE.md. Nessun dato inventato: se il video non e' in nessuna
+        cache reale, ritorna None (l'operatore deve prima lanciare
+        youtube_hunter_playwright.py sul suo canale)."""
+        if not os.path.isdir(CHANNEL_VIDEOS_CACHE_DIR):
+            return None
+        for nome_file in os.listdir(CHANNEL_VIDEOS_CACHE_DIR):
+            if not nome_file.endswith(".json"):
+                continue
+            percorso = os.path.join(CHANNEL_VIDEOS_CACHE_DIR, nome_file)
+            try:
+                dati = json.load(open(percorso, encoding="utf-8"))
+            except (json.JSONDecodeError, OSError):
+                continue
+            for v in dati.get("videos", []):
+                if v.get("videoId") == video_id:
+                    trovato = dict(v)
+                    trovato["canale_origine"] = dati.get("handle", nome_file[:-5])
+                    return trovato
+        return None
+
     def _seo_score_title_only(self, title: str, keyword: str) -> float:
         """SEO score reale calcolato solo sul titolo: non abbiamo descrizione/tag reali per
         video di canali terzi, quindi non li inventiamo (restano ai default assenti di
@@ -808,8 +888,8 @@ class Apex7Orchestrator:
         """Il canale target non si cerca piu': e' fisso (@dosementale). Questa fase lo conferma
         sui dati REALI del canale (video, viste, età) e verifica che sia ancora un cash cow —
         se il canale smettesse di performare, la fase deve fallire onestamente, non passare."""
-        canale, handle = CANALE_TARGET["channel"], CANALE_TARGET["handle"]
-        topic = self.working_memory.get("topic") or CANALE_TARGET["temi"]
+        canale, handle = self.canale["channel"], self.canale["handle"]
+        topic = self.working_memory.get("topic") or self.canale["temi"]
         self.working_memory["topic"] = topic
 
         print(f"[📋 PLANNER] Canale target fisso: {canale} ({handle}) — {topic}")
@@ -840,7 +920,7 @@ class Apex7Orchestrator:
         viste = [v["views"] for v in campione]
         with open(scheda_nicchia_path, "w", encoding="utf-8") as f:
             f.write(f"# Scheda Nicchia: {topic}\n\n")
-            f.write(f"- Canale target (fisso): {canale} ({handle}) — {CANALE_TARGET['url']}\n")
+            f.write(f"- Canale target (fisso): {canale} ({handle}) — {self.canale['url']}\n")
             f.write(f"- Fonte dati: pagina pubblica /videos del canale, fetch reale ({provenienza})\n")
             f.write(f"- Video reali analizzati: {len(campione)} (i piu' alti per velocity, età >= {VIDEO_MATURITY_FLOOR_HOURS}h)\n")
             f.write(f"- Viste reali del campione: min {min(viste):.0f} / max {max(viste):.0f} / media {sum(viste)/len(viste):.0f}\n")
@@ -874,6 +954,52 @@ class Apex7Orchestrator:
         if not handle:
             print("[!] ERRORE: nessun canale scelto in Fase 1 (esegui prima la Fase 1). Impossibile procedere senza un canale reale.")
             return False
+
+        # Selezione manuale (calendario): il video da replicare e' scelto a monte da un
+        # competitor reale, non dal catalogo del canale di destinazione. Salta l'auto-selezione
+        # ma NON i controlli — SEO/errori restano calcolati per davvero sul titolo reale.
+        if self.video_sorgente_url:
+            video_id_manuale = _extract_youtube_id(self.video_sorgente_url)
+            trovato = self._cerca_video_in_cache(video_id_manuale)
+            if not trovato:
+                print(f"[!] ERRORE: video sorgente {self.video_sorgente_url} non trovato in nessuna "
+                      f"cache reale (memory/channel_videos/*.json). Lancia prima "
+                      f"youtube_hunter_playwright.py --handle <canale_del_video>.")
+                return False
+            vph = trovato["views"] / max(trovato["age_hours"], 1.0)
+            keyword = _keyword_from_title(trovato["title"])
+            seo = self._seo_score_title_only(trovato["title"], keyword)
+            print(f"[🔬 ANALYST] Video sorgente selezionato manualmente da {trovato['canale_origine']}: "
+                  f"\"{trovato['title'][:60]}\" — {vph:.1f} viste/ora reali, SEO titolo {seo}/100.")
+            print("[i] Video-gate saltato: selezione gia' vagliata a monte (studio copy + calendario), "
+                  "non da un auto-scan del catalogo.")
+
+            candidati = {"channel": trovato["canale_origine"], "videos": [{
+                "title": trovato["title"], "url": trovato["url"], "views": trovato["views"],
+                "age_hours": trovato["age_hours"],
+                "errors": [] if seo >= 20 else [f"seo debole (score reale {seo}/25 sul titolo, keyword '{keyword}')"],
+            }]}
+            self.save_json(os.path.join(TEMPLATES_DIR, "candidati-video.json"), candidati)
+            self.save_json(os.path.join(TEMPLATES_DIR, "seo-report.json"),
+                           {"videos": [{"title": trovato["title"], "seo_score": seo, "label": "A-upside"}]})
+
+            self.log_decision(
+                "DEC-video-001",
+                f"Video sorgente scelto manualmente (calendario): {trovato['title']}",
+                f"Da {trovato['canale_origine']}, non dal catalogo di {canale_nome}. "
+                f"Velocity reale {vph:.1f} viste/ora, SEO titolo {seo}/100. Video-gate non applicato: "
+                f"la selezione viene dal calendario contenuti (studio copy multi-canale), non da "
+                f"un auto-scan.", [], 0.8,
+            )
+            self.working_memory["video_scelto"] = trovato["title"]
+            self.working_memory["video_scelto_url"] = trovato["url"]
+            self.working_memory["video_scelto_id"] = video_id_manuale
+            self.working_memory["video_sorgente_url"] = self.video_sorgente_url
+            self.working_memory["video_sorgente_prefisso"] = re.sub(
+                r"[^a-zA-Z0-9_-]", "_", trovato["canale_origine"].lstrip("@")).lower()
+            self.working_memory["keyword_sorgente"] = keyword
+            self.working_memory["label_scelta"] = "A-upside"
+            return True
 
         print(f"[🔬 ANALYST] Recupero video REALI di {canale_nome} ({handle})...")
         real_videos, provenienza = self._get_channel_videos(handle)
@@ -1029,10 +1155,14 @@ class Apex7Orchestrator:
         video_id = self.working_memory.get("video_scelto_id") or _extract_youtube_id(video_url)
         os.makedirs(SCRIPT_ADATTATI_DIR, exist_ok=True)
         adattato_path = os.path.join(SCRIPT_ADATTATI_DIR, f"{video_id}.md")
+        # Il prefisso dei file (transcript, copertina) segue il canale D'ORIGINE del video
+        # sorgente, non il canale di destinazione: sono cose diverse quando il video viene da
+        # un competitor (selezione manuale via calendario, vedi run_phase_2).
+        prefisso_sorgente = self.working_memory.get("video_sorgente_prefisso") or self.canale["prefisso_file"]
 
         if not os.path.exists(adattato_path):
             print(f"[✍️ WRITER] Nessuno script adattato per il video {video_id}: recupero il transcript reale...")
-            transcript = _fetch_transcript(video_id, video_url, TRANSCRIPTS_DIR)
+            transcript = _fetch_transcript(video_id, video_url, TRANSCRIPTS_DIR, prefisso=prefisso_sorgente)
             brief_path = os.path.join(SCRIPT_ADATTATI_DIR, f"{video_id}.DA-SCRIVERE.md")
             with open(brief_path, "w", encoding="utf-8") as f:
                 f.write(f"# Da scrivere: script adattato per {video_id}\n\n")
@@ -1046,12 +1176,12 @@ class Apex7Orchestrator:
                         f"`## CORPO`, `## CTA`.\n")
                 f.write("- Va RISCRITTO, non copiato: stesso argomento e stesse informazioni reali, "
                         "parole proprie.\n\n")
-                copy_intel = self.load_json(os.path.join(MEMORY_DIR, "copy_intelligence.json"), {})
+                copy_intel = self.load_json(os.path.join(MEMORY_DIR, self.canale["copy_intelligence_file"]), {})
                 favorevoli = copy_intel.get("schemi_favorevoli", [])
                 sfavorevoli = copy_intel.get("schemi_sfavorevoli", [])
                 if favorevoli or sfavorevoli:
                     f.write(f"## Schemi di copy misurati su {copy_intel.get('n_video_campione', '?')} "
-                            f"video reali del canale (copy_study_dosementale.py)\n\n")
+                            f"video reali del canale ({self.canale['copy_intelligence_file']})\n\n")
                     for s in favorevoli:
                         f.write(f"- **USARE** — {s['schema']} ({s['delta_pct']:+.0f}% velocity): {s['descrizione']}\n")
                     for s in sfavorevoli:
@@ -1106,7 +1236,7 @@ class Apex7Orchestrator:
         # automatica la applicava davvero.
         testi_l3 = {"script": REGOLATORI.testo_narrato(script_text), "titolo": titolo, "descrizione": ""}
         if not _esegui_regolatori(self.run_id, "script", "script-writer", "capo-copy",
-                                   testi_l3, video_id=video_id):
+                                   testi_l3, video_id=video_id, prefisso=prefisso_sorgente):
             return False
 
         self.working_memory["script_path"] = script_path
@@ -1197,7 +1327,8 @@ class Apex7Orchestrator:
         if not video_id:
             return None
         os.makedirs(SOURCE_THUMBS_DIR, exist_ok=True)
-        nome = f"dosementale-{video_id}-maxres.jpg"
+        prefisso_sorgente = self.working_memory.get("video_sorgente_prefisso") or self.canale["prefisso_file"]
+        nome = f"{prefisso_sorgente}-{video_id}-maxres.jpg"
         dest = os.path.join(SOURCE_THUMBS_DIR, nome)
         rel = f"source-thumbnail/{nome}"
         if os.path.exists(dest):
@@ -1301,11 +1432,11 @@ class Apex7Orchestrator:
         # del competitor, non su performance proprie — l'unica fonte disponibile finche'
         # learned_rules.json resta vuoto (nessun video ancora pubblicato). Fino al 2026-08-05
         # questo studio esisteva solo su wiki, mai letto da una run automatica.
-        copy_intel = self.load_json(os.path.join(MEMORY_DIR, "copy_intelligence.json"), {})
+        copy_intel = self.load_json(os.path.join(MEMORY_DIR, self.canale["copy_intelligence_file"]), {})
         copy_intel_tags = [s["schema"].replace("_", " ") for s in copy_intel.get("schemi_favorevoli", [])]
         tag_candidates = (list(learned_rules.get("high_performing_tags", []))
                           + copy_intel_tags
-                          + CANALE_TARGET["tag_tema"] + idea_tokens + [keyword])
+                          + self.canale["tag_tema"] + idea_tokens + [keyword])
         tags, seen = [], set()
         for t in tag_candidates:
             tl = (t or "").strip().lower()
@@ -1433,10 +1564,18 @@ def main():
     ap.add_argument("--resume", action="store_true", help="Ripristina la run dall'ultimo stato salvato")
     ap.add_argument("--run-id", help="Specifica un Run ID specifico")
     ap.add_argument("--interactive", action="store_true", help="Abilita input interattivi per le fasi")
-    
+    ap.add_argument("--canale", choices=sorted(CANALI), default="dosementale",
+                    help="Canale di destinazione (default: dosementale). Determina identita' "
+                         "(handle/tag/tono), non necessariamente da dove viene il video sorgente.")
+    ap.add_argument("--video-sorgente", default=None,
+                    help="URL del video da replicare, gia' scelto a monte (es. dal calendario "
+                         "contenuti) invece di farlo scegliere automaticamente alla Fase 2. "
+                         "Deve essere gia' in una cache reale (youtube_hunter_playwright.py).")
+
     args = ap.parse_args()
-    
-    orchestrator = Apex7Orchestrator(run_id=args.run_id)
+
+    orchestrator = Apex7Orchestrator(run_id=args.run_id, canale_id=args.canale,
+                                     video_sorgente_url=args.video_sorgente)
     
     if args.cmd == "status":
         print(f"APEX-7 Orchestrator — Stato Run Corrente")

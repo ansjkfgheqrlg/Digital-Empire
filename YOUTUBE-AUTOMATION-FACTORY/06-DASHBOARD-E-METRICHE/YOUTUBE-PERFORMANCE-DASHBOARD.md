@@ -1,21 +1,21 @@
 # YouTube Automation Factory - Performance Dashboard
 
-- **Ultimo Run ID**: yt-20260805-083938-af5e94
-- **Data Aggiornamento**: 2026-08-05 08:39:41
-- **Canale Target**: Dose Mentale (`@dosementale`)
-- **Video Replicato**: Familiari Tossici? Ecco In Che Modo Dio Ti Allontana da Loro | Saggezza Biblica
-- **Idea Script (Fase 3)**: N/D (Fase 3 non raggiunta)
-- **SEO Score Metadati (Fase 5)**: N/D
-- **Stato Fabbrica**: 🔴 BLOCCATA ALLA FASE 3
+- **Ultimo Run ID**: yt-20260806-090635-eac8fb
+- **Data Aggiornamento**: 2026-08-06 09:06:35
+- **Canale Target**: Legami d'Amore (`@Legamidiamore`)
+- **Video Replicato**: Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia
+- **Idea Script (Fase 3)**: 7 SEGNALI che una DONNA si sta innamorando (anche se non lo dice)
+- **SEO Score Metadati (Fase 5)**: 100.0
+- **Stato Fabbrica**: 🟡 PARZIALE (fermata alla fase 5, --phase limitato)
 
 ## 📊 Metriche di Esecuzione (esito REALE di questa run)
 | Fase | Componente | Stato | Esito Gate | Criterio |
 |---|---|---|---|---|
 | F1 | Canale target | Completata | 🟢 PASS | Dati reali del canale fisso @dosementale (Cash Cow Index riportato, non bloccante) |
 | F2 | Selezione | Completata | 🟢 PASS | Video maturo (>=24h), non gia' replicato, con velocity >= 3.0x la mediana del canale |
-| F3 | Script | Fallita | 🔴 FAIL | Critic score reale >= 7.5 (motore condiviso 11-APEX-7-CORE) |
-| F4 | Produzione | Non eseguita | ⚪ N/D | Schema produzione-spec valido, scene reali da script.md |
-| F5 | Pubblicazione | Non eseguita | ⚪ N/D | SEO score reale (seo_score.py) |
+| F3 | Script | Completata | 🟢 PASS | Critic score reale >= 7.5 (motore condiviso 11-APEX-7-CORE) |
+| F4 | Produzione | Completata | 🟢 PASS | Schema produzione-spec valido, scene reali da script.md |
+| F5 | Pubblicazione | Completata | 🟢 PASS | SEO score reale (seo_score.py) |
 | F6 | Audit | Non eseguita | ⚪ N/D | Manifest published_videos.json (video reale pubblicato) |
 
 ## 🧠 Note
