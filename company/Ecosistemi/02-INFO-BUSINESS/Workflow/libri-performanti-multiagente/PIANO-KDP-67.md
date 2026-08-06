@@ -105,7 +105,7 @@ Legenda: 🔴 non iniziato · 🔄 in corso · ✅ chiuso e verificato con esecu
 | CP6 | KDP Formatter: python-docx reale (trim/margini/font/TOC) + validazione pagine in loop | ✅* | CP5 |
 | CP7 | Cover Generator: immagine reale unica per libro via LM Arena | 🔴 | CP4 |
 | CP8 | Output Manager riscritto: pacchetto reale per libro, no più copia-template | ✅ | CP6, CP7 |
-| CP9 | Orchestrator: unico entrypoint, incatena CP2→CP8, checkpoint interni per resume | 🔄 | CP2,3,6,7,8 |
+| CP9 | Orchestrator: unico entrypoint, incatena CP2→CP8, checkpoint interni per resume | 🔄* | CP2,3,6,7,8 |
 | CP10 | Integrazione Aureus/Empire Desk: tile "Avvia" in sezione automazioni | 🔴 | CP9 |
 | CP11 | Pulizia archivio: sposta le 4 varianti finte + doc API inventata in archivio etichettato | ✅ | — |
 | CP12 | Test end-to-end reale: 1 run completo, libro diverso da tutti i precedenti, verificato | 🔴 | CP10 |
@@ -492,6 +492,21 @@ richiesto. Una volta rifatto, CP5 (`book_writer.py`, già scritto e con outline 
 funzionante in un run precedente) dovrebbe procedere senza gli hang intermittenti di oggi,
 ora che il fail-fast previene di procedere su una sessione rotta invece di limitarsi a
 descriverla dopo il fatto.
+
+### CP9 — planning/writing reali collegati all'orchestrator (2026-08-06)
+
+`orchestrator.py`: aggiunte `make_real_planning_dep()` e `make_real_writing_dep(total_chapters,
+words_per_chapter)`, stesso schema di `make_real_research_dep` (ognuna apre/chiude una propria
+sessione LM Arena — non condivisa fra fasi, cosi' un resume dopo crash puo' rilanciare WRITING
+da sola in un processo diverso senza bisogno di un browser gia' aperto in memoria). CLI
+aggiornata: `python -m engine.orchestrator --keyword ... --title ...` ora incatena RESEARCH
+(Amazon vera) → QUALIFICATION → PLANNING (LM Arena vera) → WRITING (LM Arena vera,
+default 24 capitoli x 1500 parole = 36000, dentro il range target 120±5 pagine) → FORMATTING,
+fermandosi onestamente su COVER (unica fase non ancora costruita, CP7). Self-test del
+meccanismo checkpoint/resume (moduli finti, isolato dal costo/tempo di LM Arena) rieseguito
+verde 4/4 dopo la modifica. **Non ancora verificato con un run end-to-end reale**: richiede
+una sessione LM Arena valida (bloccata al momento, vedi CP4 sopra — serve login manuale di
+Gael prima di poter lanciare un run reale completo).
 
 ## RIPRESA DA
 

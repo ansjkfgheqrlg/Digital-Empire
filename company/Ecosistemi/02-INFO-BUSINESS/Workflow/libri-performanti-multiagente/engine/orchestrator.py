@@ -212,6 +212,51 @@ def make_real_research_dep(keyword: str, working_title: str, description: str = 
     return _research
 
 
+def make_real_planning_dep() -> Callable[[dict], dict]:
+    """Dependency REALE per la fase PLANNING (CP9, sostituisce il modulo finto): apre una
+    sessione LM Arena propria (CP4, sessione salvata in CP1), genera l'outline reale (CP5)
+    e chiude la sessione. Sessione indipendente dalla fase WRITING (non condivisa) perche'
+    un resume dopo crash puo' rilanciare WRITING da sola, in un processo diverso, senza
+    l'outline della fase precedente in memoria di un browser gia' aperto."""
+    from playwright.sync_api import sync_playwright
+
+    from . import book_writer, lmarena_client
+
+    def _planning(research: dict) -> dict:
+        with sync_playwright() as p:
+            session = lmarena_client.open_session(p, headless=True)
+            try:
+                outline = book_writer.generate_outline(session.page, research)
+            finally:
+                session.close()
+        print(f"[orchestrator] planning reale: outline '{outline['title']}' generata")
+        return outline
+
+    return _planning
+
+
+def make_real_writing_dep(total_chapters: int = 24, words_per_chapter: int = 1500) -> Callable[[dict], dict]:
+    """Dependency REALE per la fase WRITING (CP9): apre una sessione LM Arena propria,
+    genera il manoscritto capitolo per capitolo con continuita' (CP5), chiude la sessione.
+    Default 24 capitoli x 1500 parole = 36000 parole, dentro il range target di
+    kdp_formatter (120±5 pagine a 300 parole/pagina = 34500-37500)."""
+    from playwright.sync_api import sync_playwright
+
+    from . import book_writer, lmarena_client
+
+    def _writing(planning: dict) -> dict:
+        with sync_playwright() as p:
+            session = lmarena_client.open_session(p, headless=True)
+            try:
+                book = book_writer.write_chapters(session.page, planning, total_chapters, words_per_chapter)
+            finally:
+                session.close()
+        print(f"[orchestrator] writing reale: {len(book['chapters'])} capitoli generati")
+        return book
+
+    return _writing
+
+
 if __name__ == "__main__":
     import argparse
     import shutil
@@ -221,27 +266,33 @@ if __name__ == "__main__":
     cli = argparse.ArgumentParser(
         description="CP9 Orchestrator — senza argomenti esegue il self-test del "
                      "meccanismo checkpoint/resume; con --keyword/--title esegue un run "
-                     "REALE (ricerca Amazon vera), che si ferma onestamente su PLANNING "
-                     "finche' CP4/LM Arena resta bloccato."
+                     "REALE (research Amazon + planning/writing via LM Arena), che si "
+                     "ferma onestamente su COVER finche' CP7 non e' costruito."
     )
     cli.add_argument("--keyword", help="Keyword reale per la ricerca Amazon (CP2)")
     cli.add_argument("--title", help="Titolo di lavoro del libro da qualificare (CP3)")
     cli.add_argument("--description", default="", help="Descrizione/sinossi di lavoro")
     cli.add_argument("--run-id", default=None, help="Run id per checkpoint/resume (default: timestamp)")
+    cli.add_argument("--total-chapters", type=int, default=24, help="Numero capitoli (default 24)")
+    cli.add_argument("--words-per-chapter", type=int, default=1500, help="Parole/capitolo (default 1500)")
     args = cli.parse_args()
 
     if args.keyword or args.title:
         if not (args.keyword and args.title):
             cli.error("--keyword e --title vanno passati insieme")
         run_id = args.run_id or f"real_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-        print(f"=== CP9 run REALE (run_id={run_id}): research=Amazon vera, resto ancora "
-              f"bloccato su CP4/LM Arena ===\n")
-        deps = {"research": make_real_research_dep(args.keyword, args.title, args.description)}
+        print(f"=== CP9 run REALE (run_id={run_id}): research=Amazon vera, "
+              f"planning/writing=LM Arena vera, cover ancora bloccata su CP7 ===\n")
+        deps = {
+            "research": make_real_research_dep(args.keyword, args.title, args.description),
+            "planning": make_real_planning_dep(),
+            "writing": make_real_writing_dep(args.total_chapters, args.words_per_chapter),
+        }
         orch = Orchestrator(run_id, deps=deps)
         try:
             orch.run()
         except NotImplementedError as e:
-            print(f"\n[orchestrator] fermato onestamente dopo QUALIFICATION: {e}")
+            print(f"\n[orchestrator] fermato onestamente dopo WRITING/FORMATTING: {e}")
             print(f"[orchestrator] checkpoint salvato: {orch.checkpoint_path}")
         sys.exit(0)
 
@@ -357,6 +408,10 @@ if __name__ == "__main__":
             config.LIBRI_PRONTI_DIR = libri_pronti_original
 
     print("CP9 self-test: TUTTO VERIFICATO OK (meccanismo checkpoint/resume)")
-    print("NOTA: fasi RESEARCH/PLANNING/WRITING/COVER reali NON ancora integrate — "
-          "sostituite da moduli finti in questo test. Integrazione vera dopo CP1/CP2/CP4/CP5/CP7.")
+    print("NOTA: qui sopra le fasi sono moduli finti (dependency injection), per isolare il "
+          "test del meccanismo checkpoint/resume dal costo/tempo di chiamate reali. Le "
+          "dependency REALI esistono e sono integrate nella CLI (make_real_research_dep, "
+          "make_real_planning_dep, make_real_writing_dep) — usale con "
+          "'python -m engine.orchestrator --keyword ... --title ...'. COVER (CP7) resta "
+          "l'unica fase non ancora costruita.")
     sys.exit(0)
