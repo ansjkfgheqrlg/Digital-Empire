@@ -1,4 +1,48 @@
-# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## 🐛 2026-08-05 — CLAUDE: Progetto Preventa carousel — 4 bug reali nel motore ArenaAI + login Google bloccato — CP-20260805-008
+Max ha dato il via libera al run live ("1 si fai tutto deve essere tutto perfettamente
+funzionante"). 2 run completi (9 tentativi, 0 immagini, 0 eccezioni nel log) diagnosticati
+con uno script minimo dedicato + screenshot reali invece di indovinare sui selettori —
+`force=True` di Playwright non genera mai errore quando il click finisce su/sotto un modal,
+quindi il log restava "pulito" anche con zero risultati.
+
+**4 bug reali trovati e corretti** (catalogo completo in `ArenaAI/KNOWN-ISSUES.md`, richiesta
+esplicita di Max — "salvati tutti gli errori così non si ripetono mai più"): crash encoding
+console su emoji, selettore che clickava un duplicato nascosto (mode-switch mai passava a
+Direct), browser crashato a metà run mai recuperato, e la root cause vera — **2 modal mai
+gestiti** (banner cookie al primo caricamento + gate "Terms of Use/Agree" al primo submit
+reale) che bloccavano ogni interazione in silenzio.
+
+**⚠️ Blocco non risolvibile lato codice**: la sessione Arena salvata (ferma dal 22 maggio) è
+scaduta a metà run, reindirizzando a un vero login Google — bloccato da Google stesso
+("browser non sicuro"), non un problema di stealth insufficiente (già Chrome reale +
+anti-detection + playwright-stealth). **Convergenza indipendente con
+[CP-20260805-004](checkpoints/CP-20260805-004.md)/[007](checkpoints/CP-20260805-007.md)**
+(Gael, stesso giorno, progetto diverso KDP/LM Arena — stesso identico blocco, root cause
+precisata da Gael: il segnale che Google rileva è Playwright rimasto collegato via CDP
+durante il login). Fix reale: aperto Chrome **non guidato da Playwright** sullo stesso
+profilo, perché Max faccia login lui stesso con input reali.
+
+**🚨 CORREZIONE CRITICA post-login (Max, in chat)**: il sistema "perfetto" a cui Max si
+riferiva fin dall'inizio (CP-20260803-004) **non è** il motore Playwright grezzo in
+`caroselli - agency/ArenaAI/` che ho pilotato tutto il giorno — è un **Agent workspace già
+costruito dentro Arena stessa** (Agent Mode, file system persistente con cartelle
+`apex7/agents/memory/orchestrator/outputs/playwright_bridge/prompts/reference/skills/
+workflows/`, `arena_generator.py`, `main.py`), raggiungibile SOLO aprendo la chat archiviata
+specifica **"# PROMPT INGEGNERIZZATI PER [ARENA.AI]"** (Arena → Search → tab Archived) e
+scrivendo il comando `/inizio-generazione`. Struttura reale: 8 slide fisse (IL PROBLEMA, LA
+VERITÀ, LA SOLUZIONE, COME FUNZIONA, IL RISULTATO, DOMANDA VERA, CTA) + immagini 4K
+2160×2700 ultra grain (38% bg + 22% card + 5% testo + 12% pill + 15% bottone) + ZIP
+download automatico — non 3 slide generiche col gradiente hardcoded che stavo usando.
+Dettaglio completo del flusso esatto in [CP-20260805-010](checkpoints/CP-20260805-010.md).
+
+**RIPRESA DA**: eseguire il flusso reale appena descritto per Preventa (non il motore
+ArenaAI grezzo — quello resta valido come infrastruttura di riserva/per Agency, ma non è il
+percorso "perfetto" per Preventa). Dettagli in
+[CP-20260805-008](checkpoints/CP-20260805-008.md) + [CP-20260805-010](checkpoints/CP-20260805-010.md).
+
+---
 
 ## 🔓 2026-08-05 — CLAUDE: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007
 

@@ -20,6 +20,13 @@ from __future__ import annotations
 import os
 import sys
 
+# Console Windows di default e' cp1252 - crasha su emoji (il copywriter le mette
+# nella caption apposta, il prompt lo chiede). Stesso bug/fix gia' noto nella
+# fabbrica YouTube (vedi CP-20260731-001, "stdout via reconfigure()").
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 AGENCY_DIR = os.path.join(os.path.dirname(PROJECT_DIR), "caroselli - agency")
 sys.path.insert(0, PROJECT_DIR)
