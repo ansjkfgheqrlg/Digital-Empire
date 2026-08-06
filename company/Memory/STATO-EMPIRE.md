@@ -1,4 +1,36 @@
-# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-05 (Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## 🎠✅ 2026-08-05/06 — CLAUDE: Primo carosello Preventa REALE generato e scaricato, verificato pixel per pixel — CP-20260805-013
+Chiude il ciclo aperto in [CP-20260805-010](checkpoints/CP-20260805-010.md) (scoperta del
+vero Agent workspace Arena). Flusso funzionante end-to-end: chat archiviata "PROMPT
+INGEGNERIZZATI" → `/inizio-generazione` → argomento **ricco** (non un one-liner — Max ha
+corretto: "non ha idea di che prodotto sia, dagli molto più contesto") → 8 slide generate
+una alla volta (IL PROBLEMA, LA VERITÀ, LA SOLUZIONE, COME FUNZIONA, IL RISULTATO, LA
+DOMANDA VERA, INIZIA ORA) → si è fermato una volta su timeout, sbloccato scrivendo
+"continua" → confermato "Sì" al completamento → **scaricato davvero** il file (non fidato
+del solo testo "pronto" in chat): `Preventa_CAROSELLO_8SLIDE_ULTRA_GRAIN_4K.zip`, 11.35MB,
+verificato con `unzip -l` (8 PNG 1.2-1.6MB l'uno + copy.json). Slide 8/8 aperta e ispezionata
+visivamente: prezzo €2.000 pagamento unico corretto, target import Germania/estero corretto,
+brand Digital Empire coerente con tutto il resto del sistema.
+
+Scoperte tecniche aggiuntive (oltre ai 4 bug già in
+[CP-20260805-008](checkpoints/CP-20260805-008.md)/`KNOWN-ISSUES.md`): il composer di questa
+chat è un editor TipTap/ProseMirror diverso da quello Direct+Image, trovato solo
+interrogando il DOM reale dopo 2 selettori falliti; testo multi-riga va inserito con
+`page.keyboard.insert_text()` non `type()` (Enter=invia in questa chat, `type()` avrebbe
+spezzato il messaggio a metà); il download reale è un chip inline (non un bottone di lista)
+che apre un pannello con un bottone "Download file" preciso (occhio a non confondersi con
+"Download workspace", che scarica tutto il progetto).
+
+Script riusabili in `caroselli - preventa/`: `run_content_factory.py`, `check_status.py`,
+`resume_generation.py`, `confirm_and_download.py`. Dettaglio completo in
+[CP-20260805-013](checkpoints/CP-20260805-013.md).
+
+**RIPRESA DA**: Progetto Preventa carousel ha un primo output reale verificato. Prossimi
+caroselli: stesso flusso, cambiare solo `ARGOMENTO_CAROSELLO`. Restano aperte: decisione
+Max su credenziali Arena/API in chiaro (non risolta), Fase 2 IG/LinkedIn ancora bloccata.
+
+---
 
 ## 📅 2026-08-05 — CLAUDE: @Legamidiamore — studio copy multi-canale + calendario 10 giorni — CP-20260805-012
 

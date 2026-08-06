@@ -3,7 +3,7 @@ Type: PROJECT
 Status: Active
 Tags: #preventa #caroselli #arena #playwright #instagram #reparto-produzione
 Created: 2026-08-03
-Last updated: 2026-08-03
+Last updated: 2026-08-06
 ---
 
 # Progetto Preventa — Caroselli Instagram
@@ -11,17 +11,21 @@ Last updated: 2026-08-03
 ## Overview
 Primo progetto creato sotto [[Reparto_Produzione_Digital_Empire]] (ordine di Max,
 Fase 3 del piano [[CP-20260803-004]]). Genera caroselli Instagram promozionali per
-Preventa riusando il motore ArenaAI (Playwright su Arena.ai) già costruito e
-funzionante per il progetto Agency — non un motore nuovo, un progetto nuovo sullo
-stesso motore.
+Preventa. **Primo carosello reale prodotto e verificato il 2026-08-06** ([[CP-20260805-013]]).
+
+## ⚠️ Correzione importante (2026-08-05/06)
+La prima versione di questa pagina descriveva il motore sbagliato. Il motore reale
+"perfetto" a cui Max si riferiva **non è** `ArenaAI/arena_generator.py` (Playwright
+grezzo, chat Direct+Image, 3 slide, gradiente hardcoded) — è un **Agent workspace
+già costruito dentro Arena stessa** (Arena "Agent Mode"), con un file system persistente
+(`apex7/agents/memory/orchestrator/playwright_bridge/...`), raggiungibile SOLO tramite
+una chat archiviata specifica. Il motore Playwright grezzo resta comunque utile come
+infrastruttura condivisa (usato per Agency) ma non è il percorso per Preventa.
 
 ## Perché non è un funnel di vendita
 Preventa vende tramite outreach WhatsApp diretto ai concessionari (vedi
-[[Preventa_Logica_Completa_Metodo]]), non tramite DM Instagram. Il template
-Agency ha una CTA fissa "scrivimi X in DM per una call" — inadatta a Preventa.
-Il copywriter Preventa (`Agents/copywriter_agent_preventa.py`) genera invece CTA
-di brand awareness/social proof (segui/scopri di più), mai vendita diretta in
-slide.
+[[Preventa_Logica_Completa_Metodo]]), non tramite DM Instagram. I caroselli servono
+per brand awareness/social proof, non per generare lead diretti dai commenti/DM.
 
 ## Percorso
 `SKILL & Agenti/Workflow agency creative/caroselli - preventa/`
@@ -34,41 +38,44 @@ Preso da `Crea siti/Preventa/index.html` + `agency-empire/.../03b-preventa.tsx` 
 - Prezzo: €2.000 una tantum, nessun canone.
 - Target: concessionari import (stesso segnale di [[CP-20260803-005]] — filtro
   solo-import dell'outreach).
-- Colori brand reali: `#101E3E` (blu fiducia/automotive) primario,
-  `#FF4D00` (arancio) solo per CTA/accenti, mai oltre il 10% della slide.
+- Leve psicologiche usate nel copy (stesse validate nell'outreach): perdita
+  imminente (cliente scrive AGLI ALTRI concessionari ora), sollievo dal tempo perso
+  (20-30 min → 5 sec), vergogna Excel disordinato vs PDF professionale, doppio
+  lavoro import (tradurre + ricalcolare).
 
-## Come funziona tecnicamente (verificato leggendo il codice, non assunto)
-`ArenaAI/arena_generator.py::generate_carousel_visuals()` **non riusa una chat
-Arena salvata** — riapre `https://arena.ai/` da zero per ogni slide. La
-continuità stilistica tra slide 1→2→3 viene dal ricaricare l'immagine appena
-generata come allegato (pattern "Edit" descritto in `REGOLE.md` di Agency), non
-da un URL di chat. Quello che isola davvero Preventa da Agency:
-- `config_preventa.LOCAL_DOWNLOAD_DIR` → `caroselli - preventa/output_preventa/`
-  (mai dentro la cartella Agency)
-- `config_preventa.ALLEGATI_DIR` → cartella dedicata Preventa, **vuota al primo
-  run** (nessun carosello Preventa esiste ancora — lo stile viene descritto a
-  parole nel prompt; la slide 1 del primo run reale diventa reference per i
-  successivi)
+## Come funziona DAVVERO (verificato con un run reale completo, non assunto)
+1. Arena → sidebar **Search** → tab **Archived** → apri la chat
+   **"# PROMPT INGEGNERIZZATI PER [ARENA.AI]"**.
+2. Scrivi **`/inizio-generazione`** (se la chat non è già attivata).
+3. Quando chiede l'argomento: dagli un **contesto ricco** (prodotto, pain point,
+   leve, target, prezzo, tono) — un one-liner non basta, la chat non conosce il
+   prodotto (correzione di Max dopo il primo tentativo troppo scarno).
+4. Genera 8 slide fisse: IL PROBLEMA, LA VERITÀ, LA SOLUZIONE, COME FUNZIONA,
+   IL RISULTATO, LA DOMANDA VERA, INIZIA ORA — una alla volta, con immagini 4K
+   ultra grain.
+5. Può fermarsi su "The AI took too long to respond" — si sblocca scrivendo
+   "continua".
+6. Chiede conferma finale "Questo compito è riuscito? Sì/No" — confermare "Sì".
+7. Il file ZIP appare come un chip inline nel testo — cliccarlo apre un pannello
+   con un bottone "Download file" (non confondere con "Download workspace", che
+   scarica tutto il progetto).
 
-`orchestrator_preventa.py` sovrascrive questi due attributi sul modulo `config`
-condiviso (quello di Agency, l'unico `config.py` sul path — Python lo tratta
-come singleton) subito prima di chiamare `generate_carousel_visuals()`, così il
-motore condiviso scrive dove deve senza che il suo codice venga toccato.
+Script che automatizzano questo flusso via Playwright (riusano l'account Arena già
+autenticato, non duplicano il motore): `run_content_factory.py`, `check_status.py`,
+`resume_generation.py`, `confirm_and_download.py`, tutti in `caroselli - preventa/`.
 
-## Stato al 2026-08-03
-- ✅ Scaffold completo: `config_preventa.py`, `Agents/copywriter_agent_preventa.py`,
-  `orchestrator_preventa.py`, `REGOLE.md` — tutti `py_compile` puliti.
-- ✅ Primo esempio di copy scritto a mano (stesso schema JSON del copywriter):
-  `output_preventa/esempio-01-tempo-perso/carousel_plan.json` — 3 slide (hook
-  tempo perso → soluzione PDF automatico → CTA brand).
-- ❌ **Nessun visual ancora generato** — richiede il run live
-  (`python orchestrator_preventa.py`), che apre un browser reale sull'account
-  Arena di Max: non lanciato senza conferma esplicita (stesso principio già
-  applicato per l'invio WhatsApp reale in questa stessa sessione).
-- ❌ Cartella Agency (`caroselli - agency/`) non modificata — solo letta/importata,
-  rispettando il suo `REGOLE.md` di confinamento.
+## Stato al 2026-08-06
+- ✅ **Primo carosello reale generato e scaricato**: 8 PNG (1080×1350, upscalati da
+  4K) + `copy.json`, in `output_preventa/carosello-01-content-factory/`. Verificato
+  con `unzip -l` (10 file, dimensioni reali) e ispezione visiva (slide 8/8: prezzo,
+  target, brand tutti corretti).
+- ✅ Scaffold del progetto Preventa completo, `py_compile` pulito su tutti gli script.
+- ✅ Cartella Agency (`caroselli - agency/`) non modificata nella sua logica di
+  business — solo il motore condiviso `ArenaAI/arena_generator.py` ha ricevuto fix
+  di bug reali (vedi [[CP-20260805-013]]) che beneficiano anche Agency.
 
 ## Connessioni
 - [[Reparto_Produzione_Digital_Empire]] — il concetto organizzativo che questo progetto inaugura
 - [[Preventa_Logica_Completa_Metodo]] — il prodotto/sistema outreach che questi caroselli promuovono
 - [[CP-20260803-005]] — filtro solo-import (stesso target audience)
+- [[CP-20260805-013]] — primo output reale, flusso esatto verificato

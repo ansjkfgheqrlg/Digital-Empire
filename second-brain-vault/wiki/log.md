@@ -1,5 +1,15 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-06 (Primo carosello Preventa reale: Agent workspace Arena, non il motore grezzo, Claude/Max)
+- CORREZIONE: `projects/Preventa/Progetto_Preventa_Carousel.md` descriveva il motore
+  sbagliato (Playwright grezzo `ArenaAI/arena_generator.py`, 3 slide gradiente
+  hardcoded). Il sistema reale "perfetto" di Max è un Agent workspace dentro Arena
+  stessa, raggiungibile via una chat archiviata + comando `/inizio-generazione`.
+  Pagina riscritta con il flusso verificato passo-passo.
+- INGEST: primo carosello Preventa reale generato e scaricato (8 slide 4K + copy.json,
+  11.35MB), verificato con unzip + ispezione visiva. 4 script Playwright riusabili
+  scritti. Dettaglio in `company/Memory/checkpoints/CP-20260805-013.md`.
+
 ## 2026-08-05 (Pivot @Legamidiamore: audit reale sblocca blocco 07-22, Claude/Max)
 - UPDATE: `entities/Entity_Legami_dAmore_Channel.md` — status da "⚠️ Da riconciliare — accessi
   ignoti" a "✅ Riconciliato". Login reale in YouTube Studio (credenziali fornite da Max in chat,
