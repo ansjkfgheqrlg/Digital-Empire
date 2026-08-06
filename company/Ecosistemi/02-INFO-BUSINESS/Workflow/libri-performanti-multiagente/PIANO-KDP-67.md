@@ -1,10 +1,11 @@
 # PIANO KDP 67 — Motore Reale Workflow Amazon KDP (Playwright + LM Arena)
 
-**Creato:** 2026-08-05 · **Owner:** Gael · **Stato:** 🔄 IN CORSO — 9/13 checkpoint chiusi
-(CP0, CP1, CP2, CP3, CP4*, CP6*, CP8*, CP11 pieni + CP9 parziale, ora con RESEARCH reale
-integrata). **CP1 CHIUSO PER INTERO**: Amazon ✅ e **LM Arena ✅** (sbloccato il
-2026-08-05, vedi cronaca sotto — verificato con screenshot reale, account
-`maxinfoproducer@gmail.com` collegato). Prossimo: **CP4** (LM Arena Client), sbloccato.
+**Creato:** 2026-08-05 · **Owner:** Gael · **Stato:** 🔄 IN CORSO — 8/13 checkpoint chiusi
+(CP0, CP1, CP2, CP3, CP4*, CP6*, CP8*, CP11 pieni), CP5/CP7/CP9 scritti e collegati ma non
+ancora verificati con esecuzione reale — **bloccati su un unico punto**: sessione LM Arena
+invalidata, serve nuovo login manuale di Gael (2FA non automatizzabile, vedi cronaca CP4
+2026-08-06 sotto). Codice di CP5/CP7/CP9 completo e strutturato secondo lo stesso standard
+verificato delle altre fasi, non placeholder — manca solo la verifica con generazioni reali.
 
 **Per riprendere dopo spegnimento PC o fine crediti**: dire a Claude *"continua con il piano KDP 67"*.
 Claude deve: (1) aprire questo file, (2) leggere quale checkpoint ha ✅/🔄/🔴, (3) riprendere dal
@@ -103,7 +104,7 @@ Legenda: 🔴 non iniziato · 🔄 in corso · ✅ chiuso e verificato con esecu
 | CP4 | LM Arena Client condiviso: invia prompt, aspetta risposta, estrae testo/immagine | ✅* | CP1 |
 | CP5 | Book Writer: loop capitolo-per-capitolo con continuità, produce bozza completa | 🔴 | CP4 |
 | CP6 | KDP Formatter: python-docx reale (trim/margini/font/TOC) + validazione pagine in loop | ✅* | CP5 |
-| CP7 | Cover Generator: immagine reale unica per libro via LM Arena | 🔴 | CP4 |
+| CP7 | Cover Generator: immagine reale unica per libro via LM Arena | 🔄* | CP4 |
 | CP8 | Output Manager riscritto: pacchetto reale per libro, no più copia-template | ✅ | CP6, CP7 |
 | CP9 | Orchestrator: unico entrypoint, incatena CP2→CP8, checkpoint interni per resume | 🔄* | CP2,3,6,7,8 |
 | CP10 | Integrazione Aureus/Empire Desk: tile "Avvia" in sezione automazioni | 🔴 | CP9 |
@@ -493,20 +494,34 @@ funzionante in un run precedente) dovrebbe procedere senza gli hang intermittent
 ora che il fail-fast previene di procedere su una sessione rotta invece di limitarsi a
 descriverla dopo il fatto.
 
-### CP9 — planning/writing reali collegati all'orchestrator (2026-08-06)
+### CP7/CP9 — Cover Generator scritto, planning/writing/cover reali collegati all'orchestrator (2026-08-06)
 
-`orchestrator.py`: aggiunte `make_real_planning_dep()` e `make_real_writing_dep(total_chapters,
-words_per_chapter)`, stesso schema di `make_real_research_dep` (ognuna apre/chiude una propria
-sessione LM Arena — non condivisa fra fasi, cosi' un resume dopo crash puo' rilanciare WRITING
-da sola in un processo diverso senza bisogno di un browser gia' aperto in memoria). CLI
-aggiornata: `python -m engine.orchestrator --keyword ... --title ...` ora incatena RESEARCH
-(Amazon vera) → QUALIFICATION → PLANNING (LM Arena vera) → WRITING (LM Arena vera,
-default 24 capitoli x 1500 parole = 36000, dentro il range target 120±5 pagine) → FORMATTING,
-fermandosi onestamente su COVER (unica fase non ancora costruita, CP7). Self-test del
-meccanismo checkpoint/resume (moduli finti, isolato dal costo/tempo di LM Arena) rieseguito
-verde 4/4 dopo la modifica. **Non ancora verificato con un run end-to-end reale**: richiede
-una sessione LM Arena valida (bloccata al momento, vedi CP4 sopra — serve login manuale di
-Gael prima di poter lanciare un run reale completo).
+`engine/cover_generator.py` (NUOVO, CP7): `_build_cover_prompt()` costruisce il prompt dai
+dettagli REALI del libro (titolo, genere/keyword, personaggi, trama da research+planning) —
+mai un prompt fisso copiato da un altro libro, altrimenti copertine di libri diversi
+finirebbero indistinguibili (stesso bug di fondo dell'audit originale su
+`genera_nuovo_libro.py`). `generate_cover()` usa `lmarena_client.send_image_prompt` (CP4,
+gia' verificato in produzione). Self-test genera 2 copertine per 2 libri diversi (cozy
+mystery vs thriller post-apocalittico) e verifica che le dimensioni file siano DIVERSE —
+stesso test forense gia' usato per CP2/CP8 per smascherare bug copia-template.
+
+`orchestrator.py`: aggiunte `make_real_planning_dep()`, `make_real_writing_dep(total_chapters,
+words_per_chapter)`, collegata `cover_generator.make_real_cover_dep()` — stesso schema di
+`make_real_research_dep` (ognuna apre/chiude una propria sessione LM Arena, non condivisa fra
+fasi, cosi' un resume dopo crash puo' rilanciare una fase da sola in un processo diverso).
+`_phase_cover` ora passa il contesto completo (research+planning+writing) alla dependency
+cover, non solo il titolo. CLI aggiornata: `python -m engine.orchestrator --keyword ... --title ...`
+incatena TUTTE le fasi reali (RESEARCH Amazon → QUALIFICATION → PLANNING LM Arena → WRITING
+LM Arena, default 24 capitoli x 1500 parole = 36000 dentro il range target 120±5 pagine →
+FORMATTING → COVER LM Arena → PACKAGING). Errori reali (NO-GO qualifica, formattazione fuori
+target, sessione LM Arena non valida) ora escono con `exit(1)`, mai mascherati da un
+`exit(0)` come gli stop onesti per fase-non-ancora-costruita.
+
+Self-test del meccanismo checkpoint/resume (moduli finti, isolato dal costo/tempo di LM
+Arena) rieseguito verde 4/4 dopo ogni modifica. **CP7 e CP9 non ancora verificati con
+generazioni/run reali**: entrambi richiedono una sessione LM Arena valida (bloccata al
+momento, vedi CP4 sopra — serve login manuale di Gael). Il codice e' scritto e strutturato
+secondo lo stesso standard verificato delle altre fasi (CP2/CP4/CP5), non e' un placeholder.
 
 ## RIPRESA DA
 

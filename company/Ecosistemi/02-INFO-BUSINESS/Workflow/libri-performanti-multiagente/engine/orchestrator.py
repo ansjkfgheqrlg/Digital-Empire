@@ -26,7 +26,7 @@ from enum import Enum
 from pathlib import Path
 from typing import Callable
 
-from . import amazon_research, book_output_manager, config, kdp_formatter, story_validator
+from . import amazon_research, book_output_manager, config, cover_generator, kdp_formatter, story_validator
 
 
 class Phase(str, Enum):
@@ -143,7 +143,14 @@ class Orchestrator:
         fn = self.deps.get("cover")
         if fn is None:
             raise NotImplementedError("Fase COVER non ancora costruita (CP7, bloccata su CP4/CP1)")
-        state.data["cover"] = fn(state.data["writing"])
+        # Contesto completo (non solo `writing`): il prompt di copertina reale (CP7) usa
+        # genere/personaggi/trama da research+planning, non solo il titolo — altrimenti
+        # copertine di libri diversi rischierebbero di somigliarsi troppo.
+        state.data["cover"] = fn({
+            "writing": state.data["writing"],
+            "planning": state.data.get("planning", {}),
+            "research": state.data.get("research", {}),
+        })
 
     def _phase_packaging(self, state: RunState) -> None:
         formatting = state.data["formatting"]
@@ -266,8 +273,8 @@ if __name__ == "__main__":
     cli = argparse.ArgumentParser(
         description="CP9 Orchestrator — senza argomenti esegue il self-test del "
                      "meccanismo checkpoint/resume; con --keyword/--title esegue un run "
-                     "REALE (research Amazon + planning/writing via LM Arena), che si "
-                     "ferma onestamente su COVER finche' CP7 non e' costruito."
+                     "REALE completo (research Amazon + planning/writing/cover via LM "
+                     "Arena + formatting/packaging)."
     )
     cli.add_argument("--keyword", help="Keyword reale per la ricerca Amazon (CP2)")
     cli.add_argument("--title", help="Titolo di lavoro del libro da qualificare (CP3)")
@@ -281,19 +288,29 @@ if __name__ == "__main__":
         if not (args.keyword and args.title):
             cli.error("--keyword e --title vanno passati insieme")
         run_id = args.run_id or f"real_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-        print(f"=== CP9 run REALE (run_id={run_id}): research=Amazon vera, "
-              f"planning/writing=LM Arena vera, cover ancora bloccata su CP7 ===\n")
+        print(f"=== CP9 run REALE completo (run_id={run_id}): research Amazon + "
+              f"planning/writing/cover via LM Arena + formatting/packaging ===\n")
         deps = {
             "research": make_real_research_dep(args.keyword, args.title, args.description),
             "planning": make_real_planning_dep(),
             "writing": make_real_writing_dep(args.total_chapters, args.words_per_chapter),
+            "cover": cover_generator.make_real_cover_dep(),
         }
         orch = Orchestrator(run_id, deps=deps)
         try:
             orch.run()
         except NotImplementedError as e:
-            print(f"\n[orchestrator] fermato onestamente dopo WRITING/FORMATTING: {e}")
+            # fase non ancora costruita — stato atteso del piano, non un errore reale
+            print(f"\n[orchestrator] fermato onestamente, fase non ancora costruita: {e}")
             print(f"[orchestrator] checkpoint salvato: {orch.checkpoint_path}")
+            sys.exit(0)
+        except RuntimeError as e:
+            # errore reale (NO-GO qualifica, formattazione fuori target, sessione LM Arena
+            # non valida, ecc.) — MAI mascherato da exit 0, altrimenti un run fallito
+            # sembrerebbe riuscito a chiunque controlli solo l'exit code
+            print(f"\n[orchestrator] FALLITO: {e}")
+            print(f"[orchestrator] checkpoint salvato: {orch.checkpoint_path}")
+            sys.exit(1)
         sys.exit(0)
 
     print("=== CP9 self-test: meccanismo checkpoint/resume, fasi non costruite "
@@ -410,8 +427,8 @@ if __name__ == "__main__":
     print("CP9 self-test: TUTTO VERIFICATO OK (meccanismo checkpoint/resume)")
     print("NOTA: qui sopra le fasi sono moduli finti (dependency injection), per isolare il "
           "test del meccanismo checkpoint/resume dal costo/tempo di chiamate reali. Le "
-          "dependency REALI esistono e sono integrate nella CLI (make_real_research_dep, "
-          "make_real_planning_dep, make_real_writing_dep) — usale con "
-          "'python -m engine.orchestrator --keyword ... --title ...'. COVER (CP7) resta "
-          "l'unica fase non ancora costruita.")
+          "dependency REALI esistono per TUTTE le fasi (research/planning/writing/cover) e "
+          "sono integrate nella CLI — usale con "
+          "'python -m engine.orchestrator --keyword ... --title ...'. Run end-to-end reale "
+          "non ancora verificato: richiede una sessione LM Arena valida (vedi PIANO-KDP-67.md).")
     sys.exit(0)
