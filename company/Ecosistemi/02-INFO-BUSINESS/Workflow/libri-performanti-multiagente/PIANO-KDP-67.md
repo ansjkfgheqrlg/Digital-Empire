@@ -459,25 +459,48 @@ il volume elevato di richieste automatizzate fatte su questo account in queste d
 di debug (stimabile 30+ generazioni reali in poche ore). **Fuori dal controllo del codice
 da qui** — dichiarato onestamente, non aggirato con trucchi di evasione.
 
-**Raccomandazione pratica per la ripresa**: (1) NON rilanciare test automatizzati a raffica
-— aspettare un periodo di pausa reale (ore, non minuti) prima del prossimo tentativo; (2)
-verificare manualmente nel browser normale di Gael se l'account (`maxinfoproducer@gmail.com`)
-mostra un qualunque avviso di rate-limit/utilizzo eccessivo sulla UI di LM Arena stesso;
-(3) quando si riprende, un SOLO self-test isolato (`python -m engine.lmarena_client`) prima
-di qualunque altro tentativo, esattamente come già raccomandato e già seguito questa volta
-— se fallisce di nuovo con lo stesso sintomo, il blocco è ancora attivo, aspettare ancora.
-CP5 (`book_writer.py`) resta scritto e pronto, verificato PARZIALMENTE (outline reale
-generata correttamente in un run pulito), non ancora verificato end-to-end (3 capitoli)
-per lo stesso motivo.
+**Raccomandazione pratica per la ripresa (SUPERATA — vedi sezione seguente)**: era "aspettare
+una pausa, poi un solo self-test isolato". Seguita alla lettera nella stessa sessione — ha
+portato alla causa reale, vedi sotto.
+
+### CP4 — causa reale trovata con screenshot dal vivo: sessione invalidata, non un hang
+
+Dopo la pausa e il self-test isolato raccomandati sopra, nuovo fallimento con sintomo
+diverso (`RuntimeError: nessuna risposta testuale trovata`, non più un timeout). Invece di
+ritentare di nuovo alla cieca, diagnosticato con uno screenshot reale del momento esatto del
+fallimento: la pagina mostrava un bottone **"Log In"** in sidebar (sessione NON autenticata)
+più un modale **"Terms of Use & Privacy Policy"** mai gestito dal codice, con overlay scuro
+che intercetta i click su tutto quello che sta sotto.
+
+Punto chiave: lo STESSO identico file di sessione (`lmarena_state.json`), nella STESSA
+sessione di debug, era risultato autenticato in un run precedente (generazione riuscita in
+4.5s) e non autenticato in questo — coerente con un'invalidazione della sessione lato
+servizio sotto uso automatizzato intenso in due sessioni consecutive, non con un problema di
+rete/rendering come ipotizzato prima (quell'ipotesi spiegava i sintomi ma non la causa vera).
+
+**Fix applicati** (`engine/lmarena_client.py`, `open_session()`): (1) dismissione del
+modale Terms of Use se presente (click su "Agree"); (2) controllo esplicito di login subito
+dopo l'apertura pagina — se "Log In" è visibile, solleva `RuntimeError` chiaro e immediato
+invece di procedere alla cieca e andare in hang cercando di usare una chat mai raggiungibile.
+**Verificato**: il fail-fast funziona, confermato che la sessione attuale è davvero
+invalidata (non un falso allarme).
+
+**Blocco reale per la ripresa**: serve un nuovo login manuale su LM Arena (2FA/OAuth non
+automatizzabile — stesso vincolo dichiarato esplicitamente fin da CP1 nella sezione "Rischi
+dichiarati"). Eseguire `python -m engine.session_manager` e rifare il login quando
+richiesto. Una volta rifatto, CP5 (`book_writer.py`, già scritto e con outline verificata
+funzionante in un run precedente) dovrebbe procedere senza gli hang intermittenti di oggi,
+ora che il fail-fast previene di procedere su una sessione rotta invece di limitarsi a
+descriverla dopo il fatto.
 
 ## RIPRESA DA
 
-**CP1-CP4 chiusi** (CP4 con fix di sessione leggera + stabilità testo, vedi sezione sopra
-2026-08-06). `engine/book_writer.py` (CP5) scritto, outline verificata funzionante in un run
-pulito, capitoli non ancora verificati end-to-end per un hang confermato lato servizio
-(non lato codice — vedi sezione "Hang residuo" sopra). **Prima di riprendere**: aspettare
-una pausa reale (non minuti) dall'ultimo tentativo, poi UN SOLO self-test isolato
-(`python -m engine.lmarena_client`) prima di qualunque altra cosa — se verde, procedere con
-`python -m engine.book_writer` (anch'esso isolato, nessun altro test prima). Se anche il
-self-test isolato va in hang, il blocco lato servizio è ancora attivo: non ritentare a
-raffica, segnalarlo e aspettare ancora.
+**CP1-CP4 chiusi** (CP4 con fix di sessione leggera + stabilità testo + fail-fast login,
+vedi sezioni sopra 2026-08-06). **Blocco reale attuale, non lato codice**: la sessione LM
+Arena salvata è invalidata (confermato con screenshot + fail-fast, non un'ipotesi). **Serve
+Gael fisicamente al PC**: `python -m engine.session_manager` e rifare il login manuale su LM
+Arena (2FA, non automatizzabile — stesso identico passo di CP1 la primissima volta). Una
+volta fatto, procedere con `python -m engine.book_writer` (CP5, già scritto, outline già
+verificata funzionante in un run precedente) — il fail-fast appena aggiunto dovrebbe
+prevenire nuovi hang silenziosi anche se la sessione dovesse invalidarsi di nuovo durante il
+run (fallirà subito con un errore chiaro invece di bloccarsi).

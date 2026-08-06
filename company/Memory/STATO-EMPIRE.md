@@ -19,10 +19,18 @@ precedente) è rimasto comunque bloccato in "Generating...", e persino un sempli
 di richieste automatizzate su 2 sessioni di debug consecutive. Dichiarato onestamente, non
 aggirato con tecniche di evasione.
 
-**RIPRESA DA:** aspettare una pausa reale (ore, non minuti) prima del prossimo tentativo;
-verificare manualmente se l'account mostra un avviso di rate-limit nella UI di LM Arena;
-poi UN SOLO self-test isolato prima di CP5. Dettaglio completo in
-[CP-20260806-003](checkpoints/CP-20260806-003.md).
+**Aggiornamento — causa reale trovata poco dopo**: seguita la propria raccomandazione
+(pausa + self-test isolato), nuovo fallimento con sintomo diverso. Screenshot del momento
+esatto: bottone "Log In" visibile (sessione NON autenticata, lo stesso file che funzionava
+poco prima nella stessa sessione di debug) + modale "Terms of Use" mai gestito, con overlay
+che intercetta i click sottostanti. Causa reale, non un'ipotesi di rate-limit generico.
+Fix: dismissione modale + controllo esplicito di login con `RuntimeError` immediato invece
+di procedere alla cieca verso un hang.
+
+**RIPRESA DA:** serve Gael fisicamente al PC per rifare il login manuale su LM Arena
+(`python -m engine.session_manager`, 2FA non automatizzabile). Poi
+`python -m engine.book_writer` (CP5, outline già verificata funzionante). Dettaglio
+completo in [CP-20260806-003](checkpoints/CP-20260806-003.md).
 
 ---
 
