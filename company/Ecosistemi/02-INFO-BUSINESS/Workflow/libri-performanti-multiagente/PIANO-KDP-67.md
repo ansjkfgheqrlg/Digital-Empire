@@ -429,11 +429,55 @@ lato servizio sotto uso intenso, non un difetto di codice riprodotto nelle passa
 precedenti (dove lo stesso identico meccanismo aveva funzionato ripetutamente). Da
 riverificare con un self-test isolato quando si riprende, senza altri test ravvicinati prima.
 
+### CP4/CP5 — sessione 2026-08-06: bug reale di architettura risolto, hang residuo confermato lato servizio
+
+**Bug reale trovato e risolto**: `open_session()` lanciava l'intero profilo Brave reale
+copiato (381MB, con Safe Browsing/Crowd Deny/component-updater/estensioni accumulati da
+~20+ lanci automatizzati precedenti) via `launch_persistent_context` — causa vera sia del
+browser che andava in timeout al lancio (180s) sia, plausibilmente, di parte degli hang di
+generazione. Fix: stesso pattern già verificato affidabile per Amazon
+(`session_manager.load_context`) — Chromium bundlato di Playwright, pulito ad ogni lancio,
+con solo cookie/localStorage iniettati da `lmarena_state.json` (già esportato in CP1),
+nessun profilo browser reale coinvolto. **Verificato**: sessione aperta in 13.7s (vs
+timeout 180s prima), generazione testo risposta in 4.5s (vs hang indefinito prima).
+
+**Secondo bug reale trovato e risolto**: testo troncato a metà frase (placeholder
+`"Generating..."` sparisce un istante prima che l'ultimo chunk sia renderizzato nel DOM).
+Fix: rilettura del testo finché non resta identico fra due letture consecutive.
+**Verificato**: outline completa e corretta generata con successo dopo il fix.
+
+**Hang residuo — confermato NON essere un bug di codice**: anche dopo i due fix sopra,
+generazioni isolate (una sola richiesta, sessione pulita, nessun altro test ravvicinato
+prima, esattamente come raccomandato dalla nota "RIPRESA DA" precedente) sono rimaste in
+`"Generating..."` senza completarsi, e in un caso persino un semplice `page.reload()` (pura
+navigazione, nessuna generazione in corso) è andato in timeout dopo 30s — un hang a livello
+di rendering/rete della pagina, non della logica applicativa. Verificata la connettività di
+base nello stesso momento: `curl https://lmarena.ai/` risponde in 0.25s (301), quindi NON è
+un'interruzione di rete generale — è specifico alla sessione automatizzata (account/cookie/
+fingerprint), coerente con un blocco soft anti-bot o rate-limit lato LM Arena scattato dopo
+il volume elevato di richieste automatizzate fatte su questo account in queste due sessioni
+di debug (stimabile 30+ generazioni reali in poche ore). **Fuori dal controllo del codice
+da qui** — dichiarato onestamente, non aggirato con trucchi di evasione.
+
+**Raccomandazione pratica per la ripresa**: (1) NON rilanciare test automatizzati a raffica
+— aspettare un periodo di pausa reale (ore, non minuti) prima del prossimo tentativo; (2)
+verificare manualmente nel browser normale di Gael se l'account (`maxinfoproducer@gmail.com`)
+mostra un qualunque avviso di rate-limit/utilizzo eccessivo sulla UI di LM Arena stesso;
+(3) quando si riprende, un SOLO self-test isolato (`python -m engine.lmarena_client`) prima
+di qualunque altro tentativo, esattamente come già raccomandato e già seguito questa volta
+— se fallisce di nuovo con lo stesso sintomo, il blocco è ancora attivo, aspettare ancora.
+CP5 (`book_writer.py`) resta scritto e pronto, verificato PARZIALMENTE (outline reale
+generata correttamente in un run pulito), non ancora verificato end-to-end (3 capitoli)
+per lo stesso motivo.
+
 ## RIPRESA DA
 
-**CP1-CP4 chiusi.** LM Arena sbloccato, client costruito e verificato con generazioni reali
-multiple. Prossimo passo: **CP5** (`book_writer.py`) — outline via `lmarena_client.send_text_prompt`,
-poi loop capitolo-per-capitolo con riassunto dei precedenti nel prompt per continuità.
-Consiglio pratico: rieseguire `python -m engine.lmarena_client` da solo a inizio sessione
-(prima richiesta del giorno) per riconfermare che il rate-limit del run precedente sia
-rientrato, prima di partire con CP5.
+**CP1-CP4 chiusi** (CP4 con fix di sessione leggera + stabilità testo, vedi sezione sopra
+2026-08-06). `engine/book_writer.py` (CP5) scritto, outline verificata funzionante in un run
+pulito, capitoli non ancora verificati end-to-end per un hang confermato lato servizio
+(non lato codice — vedi sezione "Hang residuo" sopra). **Prima di riprendere**: aspettare
+una pausa reale (non minuti) dall'ultimo tentativo, poi UN SOLO self-test isolato
+(`python -m engine.lmarena_client`) prima di qualunque altra cosa — se verde, procedere con
+`python -m engine.book_writer` (anch'esso isolato, nessun altro test prima). Se anche il
+self-test isolato va in hang, il blocco lato servizio è ancora attivo: non ritentare a
+raffica, segnalarlo e aspettare ancora.
