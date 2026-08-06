@@ -1,9 +1,9 @@
 # YouTube Automation Factory - Performance Dashboard
 
-- **Ultimo Run ID**: yt-20260804-100647-473c38
-- **Data Aggiornamento**: 2026-08-04 10:06:51
+- **Ultimo Run ID**: yt-20260805-083938-af5e94
+- **Data Aggiornamento**: 2026-08-05 08:39:41
 - **Canale Target**: Dose Mentale (`@dosementale`)
-- **Video Replicato**: Ecco Come Dio Allontana I Familiari Che Non Ti Amano Veramente | Saggezza Biblica
+- **Video Replicato**: Familiari Tossici? Ecco In Che Modo Dio Ti Allontana da Loro | Saggezza Biblica
 - **Idea Script (Fase 3)**: N/D (Fase 3 non raggiunta)
 - **SEO Score Metadati (Fase 5)**: N/D
 - **Stato Fabbrica**: 🔴 BLOCCATA ALLA FASE 3

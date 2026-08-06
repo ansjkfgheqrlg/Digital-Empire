@@ -1,5 +1,14 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-05 (Pivot @Legamidiamore: audit reale sblocca blocco 07-22, Claude/Max)
+- UPDATE: `entities/Entity_Legami_dAmore_Channel.md` — status da "⚠️ Da riconciliare — accessi
+  ignoti" a "✅ Riconciliato". Login reale in YouTube Studio (credenziali fornite da Max in chat,
+  mai salvate su disco) conferma: canale suo, monetizzato, 14.793 iscritti, revenue €44,02/28gg
+  (quasi nulla nonostante i numeri — confermata la diagnosi del 07-22). Corretto anche un dato
+  vecchio: non è inglese, è quasi tutto italiano (scrape reale, 60 video). → 1 pagina aggiornata.
+- CONTESTO: Max ha messo in pausa il progetto Dose Mentale-copia per dare priorità a questo
+  canale esistente. Dettaglio tecnico in `company/Memory/checkpoints/CP-20260805-009.md`.
+
 ## 2026-08-05 (Secondo incarico a Neri: fabbrica strategie S7 via Arena, Claude/Max)
 - PLAN: Max ha chiesto un prompt completo e autosufficiente per Neri, da usare in Arena.ai per
   progettare una "fabbrica" che genera un agente-strategia dedicato per ogni strategia di
