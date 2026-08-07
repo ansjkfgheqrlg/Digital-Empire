@@ -401,13 +401,88 @@ def _assert_direct_mode(page: Page, where: str) -> None:
 
 
 def _wrap_prompt_with_markers(prompt: str, req_id: str) -> str:
-    """Avvolge il prompt con l'istruzione di delimitare la risposta con marcatori univoci."""
+    """Avvolge il prompt con l'istruzione di delimitare la risposta con marcatori univoci.
+
+    I marcatori sono DESCRITTI a parole, mai scritti per esteso (bug reale trovato subito
+    al primo run del nuovo metodo, 2026-08-07): la pagina mostra anche l'eco del prompt
+    inviato, quindi se il prompt contenesse i marcatori letterali la ricerca li troverebbe
+    li' dentro ed estrarrebbe un pezzo dell'istruzione invece della risposta (osservato:
+    "' and end it with the exact line '"). Descrivendoli, il testo esatto compare SOLO
+    nella risposta del modello, che li compone."""
     return (
         f"{prompt}\n\n"
-        f"IMPORTANT OUTPUT RULE: start your reply with the exact line '<<<{req_id}' and "
-        f"end it with the exact line '{req_id}>>>'. Put your entire answer between those "
-        f"two lines. Do not mention these markers anywhere else."
+        f"IMPORTANT OUTPUT RULE: your reply must begin with three '#' characters "
+        f"immediately followed by {req_id}, then a newline. Your reply must end with a "
+        f"newline followed by {req_id} immediately followed by three '#' characters. "
+        f"Put your entire answer between those two delimiter lines."
     )
+
+
+def _markers_for(req_id: str) -> tuple[str, str]:
+    return f"###{req_id}", f"{req_id}###"
+
+
+def start_new_chat(page: Page) -> None:
+    """Apre una chat NUOVA prima di inviare il prompt.
+
+    Perche' (2026-08-07, osservazione dai run reali): il captcha non compare mai sul primo
+    messaggio di una chat, ma quasi sempre su quelli successivi nella stessa conversazione
+    — coerente col fatto che il workflow gia' in produzione (`arena_thumbnail.py`, una
+    richiesta per run) non lo incontra mai. Qui non serve la memoria della conversazione:
+    ogni prompt di capitolo contiene GIA' trama completa e riassunto dei capitoli
+    precedenti (vedi `book_writer._chapter_prompt`), quindi una chat nuova per richiesta
+    non perde nessun contesto. Non aggira nessuna verifica: evita di innescarla."""
+    for name in ("New Chat", "Nuova chat"):
+        try:
+            btn = page.get_by_role("button", name=name, exact=False)
+            if btn.count() == 0:
+                btn = page.get_by_text(name, exact=False)
+            for i in range(btn.count()):
+                el = btn.nth(i)
+                if el.is_visible():
+                    _robust_click(el, timeout=5000)
+                    time.sleep(2)
+                    _debug_log("new_chat_started", via=name)
+                    return
+        except Exception:
+            continue
+    # Fallback: navigazione diretta alla pagina di chat nuova
+    try:
+        page.goto(config.LMARENA_BASE_URL, wait_until="domcontentloaded",
+                  timeout=config.DEFAULT_TIMEOUT_MS)
+        time.sleep(2)
+        _select_direct_mode(page)
+        _debug_log("new_chat_started", via="goto")
+    except Exception as exc:
+        _debug_log("new_chat_failed", error=str(exc))
+
+
+def _dismiss_blocking_overlay(page: Page) -> None:
+    """Chiude un eventuale dialog/overlay che intercetta i click (bug reale 2026-08-07:
+    `<div data-state="open" ... bg-black/80> intercepts pointer events` impediva di
+    cliccare la casella di testo). Prova i bottoni di conferma noti, poi Escape."""
+    try:
+        overlay = page.locator("div[data-state='open'][aria-hidden='true']")
+        if overlay.count() == 0:
+            return
+    except Exception:
+        return
+    for name in ("Continue", "Agree", "Accept", "OK", "Got it", "Continua", "Accetta"):
+        try:
+            btn = page.get_by_role("button", name=name, exact=False)
+            if btn.count() > 0 and btn.first.is_visible():
+                _robust_click(btn.first, timeout=3000)
+                time.sleep(0.8)
+                _debug_log("overlay_dismissed", via=name)
+                return
+        except Exception:
+            continue
+    try:
+        page.keyboard.press("Escape")
+        time.sleep(0.5)
+        _debug_log("overlay_dismissed", via="Escape")
+    except Exception:
+        pass
 
 
 def _extract_between_markers(page: Page, req_id: str) -> str | None:
@@ -433,10 +508,8 @@ def _extract_between_markers(page: Page, req_id: str) -> str | None:
     Ritorna None se la risposta non e' ancora completa (marcatori assenti) — il chiamante
     interpreta questo come "continua ad aspettare"."""
     body = page.evaluate("() => document.body.innerText") or ""
-    open_marker, close_marker = f"<<<{req_id}", f"{req_id}>>>"
-    # Si parte dall'ULTIMA occorrenza del marcatore di apertura: l'eco del prompt inviato
-    # contiene gli stessi marcatori, ma la risposta arriva dopo.
-    start = body.rfind(open_marker)
+    open_marker, close_marker = _markers_for(req_id)
+    start = body.find(open_marker)
     if start == -1:
         return None
     end = body.find(close_marker, start + len(open_marker))
@@ -515,6 +588,10 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600) -> str:
 
     def _fill_and_send() -> None:
         _throttle_before_send()
+        # Chat nuova per ogni richiesta: evita di innescare il captcha, che nei run reali
+        # non compare mai sul primo messaggio di una chat (vedi `start_new_chat`).
+        start_new_chat(page)
+        _dismiss_blocking_overlay(page)
         tb = page.locator("textarea, [contenteditable='true']").first
         tb.click()
         tb.fill(wrapped)
