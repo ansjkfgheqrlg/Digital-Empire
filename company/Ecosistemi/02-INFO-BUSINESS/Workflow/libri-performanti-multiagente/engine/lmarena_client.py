@@ -72,6 +72,29 @@ GENERATION_ERROR_MARKERS = [
 # Quante volte cliccare il "Retry" della UI prima di arrendersi su una singola richiesta.
 MAX_UI_RETRY_CLICKS = 3
 
+# Pausa minima fra due invii consecutivi nella stessa sessione (2026-08-07). Osservazione
+# reale: il self-test CP4 (1 sola richiesta per tipo) non ha mai incontrato il captcha,
+# mentre CP5 (outline + 3 capitoli in rapida successione) lo incontra quasi sempre — il
+# fattore scatenante sembra il RITMO delle richieste, non il browser. Non e' un tentativo
+# di aggirare la verifica: e' semplicemente non martellare un servizio esterno, che e' il
+# comportamento corretto a prescindere (stessa lezione gia' annotata in CP-20260805-011:
+# "spaziare i test, non lanciare raffiche").
+MIN_SECONDS_BETWEEN_SENDS = 20
+_last_send_at: float = 0.0
+
+
+def _throttle_before_send() -> None:
+    """Attende, se necessario, per rispettare `MIN_SECONDS_BETWEEN_SENDS`."""
+    global _last_send_at
+    if _last_send_at:
+        elapsed = time.time() - _last_send_at
+        if elapsed < MIN_SECONDS_BETWEEN_SENDS:
+            pause = MIN_SECONDS_BETWEEN_SENDS - elapsed
+            print(f"[lmarena] pausa {pause:.0f}s prima del prossimo invio "
+                  f"(ritmo sostenibile, non raffiche)", flush=True)
+            time.sleep(pause)
+    _last_send_at = time.time()
+
 
 def _generation_error_present(page: Page) -> bool:
     """True se la UI mostra il banner d'errore di generazione (con bottone Retry)."""
@@ -87,15 +110,42 @@ def _generation_error_present(page: Page) -> bool:
 def _click_retry_button(page: Page) -> bool:
     """Clicca il bottone "Retry" del banner d'errore — e' la UI stessa a offrirlo per
     questo scopo, quindi usarlo e' l'uso previsto, non un aggiramento di nulla.
+
+    Piu' strategie di selezione (2026-08-07): la prima versione usava solo
+    `get_by_role("button", name="Retry", exact=True)` e falliva silenziosamente — il log
+    lo ha mostrato (`generation_error_fatal` con `retries_used: 0`, cioe' errore rilevato
+    ma click mai riuscito). Il bottone ha un'icona accanto al testo, quindi il nome
+    accessibile puo' non essere esattamente "Retry". Si prova per ruolo (non esatto), poi
+    per testo, poi per CSS.
+
     Ritorna True se il click e' riuscito."""
     for name in ("Retry", "Riprova"):
+        # 1) per ruolo, match non esatto (tollera icona/spazi nel nome accessibile)
         try:
-            btn = page.get_by_role("button", name=name, exact=True)
+            btn = page.get_by_role("button", name=name, exact=False)
             if btn.count() > 0:
                 _robust_click(btn.first, timeout=5000)
                 return True
         except Exception:
-            continue
+            pass
+        # 2) per testo visibile
+        try:
+            btn = page.get_by_text(name, exact=False)
+            for i in range(btn.count()):
+                el = btn.nth(i)
+                if el.is_visible():
+                    _robust_click(el, timeout=5000)
+                    return True
+        except Exception:
+            pass
+        # 3) selettore CSS diretto su un button che contiene quel testo
+        try:
+            btn = page.locator(f"button:has-text('{name}')")
+            if btn.count() > 0:
+                _robust_click(btn.first, timeout=5000)
+                return True
+        except Exception:
+            pass
     return False
 
 # Quanto attendere che un umano risolva il captcha prima di arrendersi (0 = non attendere).
@@ -452,6 +502,7 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600) -> str:
                baseline_count=baseline_count, url=page.url)
 
     def _fill_and_send() -> None:
+        _throttle_before_send()
         tb = page.locator("textarea, [contenteditable='true']").first
         tb.click()
         tb.fill(prompt)
