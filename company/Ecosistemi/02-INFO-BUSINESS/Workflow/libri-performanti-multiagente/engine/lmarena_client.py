@@ -60,6 +60,9 @@ class CaptchaRequired(RuntimeError):
 
 CAPTCHA_MARKERS = ["Security Verification", "I'm not a robot", "Non sono un robot"]
 
+# Quanto attendere che un umano risolva il captcha prima di arrendersi (0 = non attendere).
+CAPTCHA_WAIT_SECONDS = 300
+
 
 def _captcha_present(page: Page) -> bool:
     """True se la sfida captcha e' visibile ORA. Cerca per testo (marcatori verificati dal
@@ -71,6 +74,43 @@ def _captcha_present(page: Page) -> bool:
                 return True
         except Exception:
             continue
+    return False
+
+
+def _wait_for_human_to_solve_captcha(page: Page, where: str) -> bool:
+    """Mette in PAUSA e aspetta che una persona risolva il captcha nella finestra aperta,
+    invece di far morire l'intero run (2026-08-07).
+
+    Perche' cosi': il captcha e' progettato apposta perche' lo risolva un umano — non lo
+    aggiro e non ci provo. Ma far fallire tutto il run costringeva a rilanciare da zero
+    ogni volta (rigenerando outline e capitoli gia' fatti). Aspettando, l'intervento umano
+    serve UNA volta e il lavoro gia' fatto non si perde.
+
+    Ritorna True se il captcha e' stato risolto entro il tempo, False altrimenti."""
+    if CAPTCHA_WAIT_SECONDS <= 0:
+        return False
+    print("\n" + "=" * 70, flush=True)
+    print(">>> CAPTCHA da risolvere nella finestra del browser aperta.", flush=True)
+    print(f">>> Clicca 'Non sono un robot', poi il lavoro riprende da solo.", flush=True)
+    print(f">>> (attendo fino a {CAPTCHA_WAIT_SECONDS // 60} minuti, controllo ogni 3s)", flush=True)
+    print("=" * 70 + "\n", flush=True)
+    _debug_log("captcha_waiting_for_human", where=where, max_wait=CAPTCHA_WAIT_SECONDS)
+
+    try:
+        page.bring_to_front()
+    except Exception:
+        pass
+
+    waited = 0
+    while waited < CAPTCHA_WAIT_SECONDS:
+        time.sleep(3)
+        waited += 3
+        if not _captcha_present(page):
+            print(f">>> Captcha risolto dopo {waited}s — riprendo.\n", flush=True)
+            _debug_log("captcha_solved_by_human", where=where, waited=waited)
+            time.sleep(2)  # margine perche' la UI torni operativa dopo la sparizione
+            return True
+    _debug_log("captcha_wait_timeout", where=where, waited=waited)
     return False
 
 
@@ -176,11 +216,12 @@ def open_session(playwright: Playwright, headless: bool = False) -> ArenaSession
     # procedere e scoprirlo dopo minuti di attesa sul primo prompt (errore reale di CP5).
     if _captcha_present(page):
         _debug_log("captcha_detected", where="open_session")
-        raise CaptchaRequired(
-            "LM Arena: sfida 'Security Verification' (captcha) gia' presente all'apertura "
-            "della sessione. Risolvila a mano nella finestra del browser aperta, poi "
-            "rilancia. Non e' aggirabile da codice e non va aggirata."
-        )
+        if not _wait_for_human_to_solve_captcha(page, "open_session"):
+            raise CaptchaRequired(
+                "LM Arena: sfida 'Security Verification' (captcha) presente all'apertura "
+                f"della sessione e non risolta entro {CAPTCHA_WAIT_SECONDS}s. Risolvila a "
+                "mano nella finestra aperta e rilancia. Non e' aggirabile da codice."
+            )
     _select_direct_mode(page)
     _assert_direct_mode(page, "open_session")
     return ArenaSession(browser=browser, context=context, page=page)
@@ -345,32 +386,51 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600) -> str:
     _debug_log("send_start", prompt_len=len(prompt), prompt_preview=prompt[:120],
                baseline_count=baseline_count, url=page.url)
 
-    textbox = page.locator("textarea, [contenteditable='true']").first
-    textbox.click()
-    textbox.fill(prompt)
-    time.sleep(0.3)
-    _robust_click(page.locator("form button[aria-label='Send message']"))
-    time.sleep(0.8)  # margine perche' il placeholder 'Generating...' compaia nel DOM prima
-                      # del primo controllo — senza, un check troppo rapido puo' vederlo
-                      # ancora assente e uscire subito credendo (erroneamente) che sia finita
+    def _fill_and_send() -> None:
+        tb = page.locator("textarea, [contenteditable='true']").first
+        tb.click()
+        tb.fill(prompt)
+        time.sleep(0.3)
+        _robust_click(page.locator("form button[aria-label='Send message']"))
+        time.sleep(0.8)  # margine perche' il placeholder 'Generating...' compaia nel DOM
+                          # prima del primo controllo — senza, un check troppo rapido puo'
+                          # vederlo ancora assente e uscire credendo che sia gia' finita
+
+    _fill_and_send()
+    fresh_send = True  # True quando il prompt e' appena stato (ri)mandato: serve il
+                       # timeout pieno, non quello breve dei retry-da-reload
 
     last_error: Exception | None = None
     for attempt in range(1, config.MAX_RETRIES + 1):
-        # Solo il primo tentativo usa il timeout pieno (la generazione puo' essere
-        # genuinamente lunga). I retry dopo un reload servono a rilevare una risposta
-        # GIA' pronta lato server ma non riflessa lato client (vedi docstring) — se il
-        # reload non la rivela in una manciata di secondi, aspettare di nuovo per intero
-        # non aiuta: meglio ricaricare ancora che stare fermi.
-        attempt_timeout = timeout_s if attempt == 1 else min(timeout_s, 45)
+        # Timeout pieno solo quando si attende una generazione appena avviata (la
+        # generazione puo' essere genuinamente lunga). I retry dopo un reload servono a
+        # rilevare una risposta GIA' pronta lato server ma non riflessa lato client (vedi
+        # docstring) — se il reload non la rivela in una manciata di secondi, aspettare di
+        # nuovo per intero non aiuta: meglio ricaricare ancora che stare fermi.
+        attempt_timeout = timeout_s if fresh_send else min(timeout_s, 45)
+        fresh_send = False
         try:
             text = _wait_for_completion_and_extract(page, attempt_timeout, baseline_count, prior_text)
             _debug_log("send_ok", attempt=attempt, **_text_fingerprint(text))
             return text
         except CaptchaRequired as exc:
-            # MAI ritentata in automatico: serve un umano, ritentare allunga solo l'attesa
-            # su una causa gia' identificata con certezza.
+            # Il captcha NON si aggira: si mette in pausa e si aspetta che lo risolva una
+            # persona nella finestra aperta. Se risolto, si RIMANDA il prompt (quello di
+            # prima non e' mai partito davvero, era bloccato dal captcha) e si continua —
+            # cosi' l'intervento umano serve una volta sola, senza perdere il lavoro gia'
+            # fatto nelle fasi precedenti del run.
             _debug_log("captcha_detected", attempt=attempt, error=str(exc))
-            raise
+            if not _wait_for_human_to_solve_captcha(page, "send_text_prompt"):
+                raise CaptchaRequired(
+                    "LM Arena: captcha non risolto entro "
+                    f"{CAPTCHA_WAIT_SECONDS}s — run interrotto. Risolvilo nella finestra "
+                    "aperta e rilancia. Non e' aggirabile da codice e non va aggirata."
+                ) from exc
+            baseline_count = _count_assistant_messages(page)
+            prior_text = _extract_latest_response_text(page) if baseline_count > 0 else None
+            _fill_and_send()
+            fresh_send = True
+            continue
         except (TimeoutError, RuntimeError) as exc:
             last_error = exc
             _debug_log("send_attempt_failed", attempt=attempt, error=str(exc))
@@ -398,8 +458,7 @@ def _wait_for_completion_and_extract(page: Page, timeout_s: int, baseline_count:
         if _captcha_present(page):
             raise CaptchaRequired(
                 "LM Arena: sfida 'Security Verification' (captcha) attiva — la generazione "
-                "non puo' proseguire. Risolvila a mano nella finestra del browser aperta, "
-                "poi rilancia. Non e' aggirabile da codice e non va aggirata."
+                "e' bloccata finche' non viene risolta a mano."
             )
         pending = page.get_by_text("Generating", exact=False).count()
         # baseline_count: mai considerare "fatto" finche' non e' comparso un messaggio IN
@@ -503,11 +562,21 @@ def send_image_prompt(page: Page, prompt: str, out_path: Path,
     while waited < max_wait:
         if _captcha_present(page):
             _debug_log("captcha_detected", where="send_image_prompt", waited=waited)
-            raise CaptchaRequired(
-                "LM Arena: sfida 'Security Verification' (captcha) attiva durante la "
-                "generazione immagine. Risolvila a mano nella finestra del browser aperta, "
-                "poi rilancia. Non e' aggirabile da codice e non va aggirata."
-            )
+            if not _wait_for_human_to_solve_captcha(page, "send_image_prompt"):
+                raise CaptchaRequired(
+                    "LM Arena: captcha durante la generazione immagine, non risolto entro "
+                    f"{CAPTCHA_WAIT_SECONDS}s. Risolvilo nella finestra aperta e rilancia. "
+                    "Non e' aggirabile da codice e non va aggirata."
+                )
+            # Captcha risolto: la generazione era bloccata, va rimandata da capo.
+            textbox = page.locator("textarea, [contenteditable='true']").first
+            textbox.click()
+            textbox.fill(prompt)
+            time.sleep(0.3)
+            _robust_click(page.locator("form button[aria-label='Send message']"))
+            time.sleep(0.8)
+            waited = 0
+            continue
         pending = page.get_by_text("Generating image...").count()
         if pending == 0:
             break
