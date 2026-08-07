@@ -1,5 +1,17 @@
 # PIANO KDP 67 — Motore Reale Workflow Amazon KDP (Playwright + LM Arena)
 
+> ## ⚠️ SUPERATO IN PARTE — leggere prima [PIANO-KDP-V2-CLAUDE-CODE.md](PIANO-KDP-V2-CLAUDE-CODE.md)
+>
+> **2026-08-07, decisione di Gael**: la SCRITTURA DEL TESTO (CP4/CP5, LM Arena via
+> Playwright) è abbandonata. Due giorni di lavoro reale hanno dimostrato che LM Arena non
+> regge una generazione lunga in serie: il captcha "Security Verification" scatta dopo
+> poche richieste per sessione, anche con profilo persistente, chat nuove e pause fra gli
+> invii — non aggirabile e non va aggirato. Il testo passerà a Claude (API/CLI).
+>
+> **Resta valido e già costruito**: CP0, CP1 (Amazon), CP2, CP3, CP6, CP8, CP9, CP11 —
+> e le COPERTINE su LM Arena (CP7), che funzionano davvero (una sola richiesta per libro,
+> nessun captcha, immagini reali verificate).
+
 **Creato:** 2026-08-05 · **Owner:** Gael · **Stato:** 🔄 IN CORSO — 8/13 checkpoint chiusi
 (CP0, CP1, CP2, CP3, CP4*, CP6*, CP8*, CP11 pieni), CP5/CP7/CP9 scritti e collegati ma non
 ancora verificati con esecuzione reale — **bloccati su un unico punto**: sessione LM Arena
