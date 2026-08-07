@@ -400,6 +400,51 @@ def _assert_direct_mode(page: Page, where: str) -> None:
         )
 
 
+def _wrap_prompt_with_markers(prompt: str, req_id: str) -> str:
+    """Avvolge il prompt con l'istruzione di delimitare la risposta con marcatori univoci."""
+    return (
+        f"{prompt}\n\n"
+        f"IMPORTANT OUTPUT RULE: start your reply with the exact line '<<<{req_id}' and "
+        f"end it with the exact line '{req_id}>>>'. Put your entire answer between those "
+        f"two lines. Do not mention these markers anywhere else."
+    )
+
+
+def _extract_between_markers(page: Page, req_id: str) -> str | None:
+    """Estrae la risposta cercando i marcatori univoci nel testo dell'INTERA pagina.
+
+    APPROCCIO RISCRITTO IL 2026-08-07 (su richiesta esplicita di Gael: "è da 2 giorni che
+    continui a dire di aver trovato il bug vero, cambia completamente approccio"). Il
+    metodo precedente indovinava quale nodo della DOM fosse la risposta (`[class*="prose"]`
+    fuori da una bolla utente, primo o ultimo elemento) e ha prodotto una catena di bug
+    diversi: risposta del turno precedente, risposta identica all'outline, ordine DOM
+    invertito, testo troncato. Ognuno "risolto" da un'ipotesi nuova sulla struttura della
+    pagina, che il ciclo dopo si rivelava sbagliata.
+
+    Qui non si indovina piu' niente. Ogni richiesta porta un ID univoco che il modello
+    deve ripetere in apertura e chiusura; si legge `document.body.innerText` (stesso
+    approccio di `read_arena_chat.py`, in produzione) e si prende cio' che sta fra i due
+    marcatori. Proprieta' garantite senza assunzioni sulla UI:
+    - impossibile restituire la risposta di un altro turno (l'ID e' unico per richiesta);
+    - la presenza del marcatore di CHIUSURA prova che la risposta e' COMPLETA, non
+      troncata a meta' (bug che prima serviva un controllo separato per rilevare);
+    - indipendente da classi CSS, ordine dei nodi, bolle utente/assistente.
+
+    Ritorna None se la risposta non e' ancora completa (marcatori assenti) — il chiamante
+    interpreta questo come "continua ad aspettare"."""
+    body = page.evaluate("() => document.body.innerText") or ""
+    open_marker, close_marker = f"<<<{req_id}", f"{req_id}>>>"
+    # Si parte dall'ULTIMA occorrenza del marcatore di apertura: l'eco del prompt inviato
+    # contiene gli stessi marcatori, ma la risposta arriva dopo.
+    start = body.rfind(open_marker)
+    if start == -1:
+        return None
+    end = body.find(close_marker, start + len(open_marker))
+    if end == -1:
+        return None
+    return body[start + len(open_marker):end].strip()
+
+
 def _count_assistant_messages(page: Page) -> int:
     """Conta i messaggi di risposta del modello presenti ORA (elementi `[class*="prose"]`
     fuori da una bolla utente). Usato per verificare che l'estrazione prenda davvero la
@@ -420,226 +465,124 @@ def _extract_latest_response_text(page: Page) -> str | None:
     """Elemento `[class*="prose"]` FUORI da una bolla utente (`bg-surface-raised`) — la
     risposta del modello, mai il prompt, verificato per struttura non per contenuto.
 
-    Prende l'ULTIMO elemento che soddisfa il criterio, non il primo — bug reale trovato in
-    CP5 (2026-08-06, verificato dal vivo): con prompt di generazione piu' lunga/pesante
-    (i capitoli veri, non gli echo brevi dei test precedenti), un retry-con-reload poteva
-    innescarsi mentre la generazione era ancora davvero in corso lato server; al reload la
-    UI mostrava temporaneamente solo i messaggi GIA' completati, e prendere il primo
-    elemento fuori da bolla utente restituiva sempre la risposta del PRIMO turno della chat
-    — sintomo osservato: 3 capitoli "diversi" richiesti, testo IDENTICO parola per parola
-    per tutti e 3. La DOM cresce in ordine cronologico (verificato con diagnostica dal vivo:
-    il conteggio elementi passa 1→2→3 dopo turni successivi), quindi l'ultimo elemento e'
-    sempre il piu' recente — combinato con la verifica del conteggio in
-    `_wait_for_completion_and_extract` (mai accettare una risposta se il conteggio dei
-    messaggi non e' aumentato rispetto a prima dell'invio)."""
+    Prende il PRIMO elemento che soddisfa il criterio: nella DOM di questa chat i messaggi
+    sono in ordine INVERTITO (il piu' recente per primo). Verificato dal vivo il 2026-08-07
+    con un dump completo degli elementi: idx=0 era il prompt appena inviato, idx=4 il primo
+    messaggio della conversazione.
+
+    Storia di questo selettore, per non ripetere l'errore: era `first`, poi cambiato in
+    `last` il 2026-08-06 credendo che la DOM crescesse in ordine cronologico — quel cambio
+    ha INTRODOTTO un bug peggiore (si estraeva sempre il messaggio piu' VECCHIO, cioe'
+    l'outline al posto di ogni capitolo), trovato subito dopo grazie al log di debug e alla
+    guardia `prior_text`. Tornato a `first`, che e' corretto per questa UI. Le guardie
+    (`baseline_count`, `prior_text`, anti-duplicato in book_writer) restano: sono loro ad
+    aver reso visibile l'errore invece di lasciar passare capitoli sbagliati."""
     return page.evaluate(
         """() => {
             const els = document.querySelectorAll('[class*="prose"]');
-            let last = null;
             for (const el of els) {
-                if (!el.closest('[class*="bg-surface-raised"]')) last = el;
+                if (!el.closest('[class*="bg-surface-raised"]')) return el.innerText;
             }
-            return last ? last.innerText : null;
+            return null;
         }"""
     )
 
 
 def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600) -> str:
-    """Invia un prompt di testo, aspetta il completamento REALE, estrae e torna la risposta
-    reale. Solleva TimeoutError/RuntimeError espliciti se qualcosa non torna, mai un testo
-    finto.
+    """Invia un prompt, aspetta la risposta COMPLETA, la estrae e la ritorna.
 
-    Rilevamento completamento: placeholder 'Generating...' che sparisce (stesso pattern gia'
-    verificato per le immagini, non un timeout fisso). Il bottone 'Stop generation' NON e'
-    affidabile da solo — bug reale trovato in CP4: per risposte brevi/quasi istantanee il
-    bottone non transita mai visibilmente per lo stato 'Stop generation' (la generazione
-    finisce troppo in fretta), mentre il placeholder 'Generating...' compare comunque anche
-    per risposte di una sola frase (verificato con screenshot reale).
+    METODO RISCRITTO IL 2026-08-07 — vedi `_extract_between_markers` per il perche'
+    (richiesta esplicita di Gael di cambiare approccio dopo una catena di bug diversi
+    tutti dovuti a ipotesi sbagliate sulla struttura della pagina).
 
-    Stabilita' testo post-placeholder (bug reale trovato dopo il fix della sessione
-    leggera 2026-08-06): il placeholder 'Generating...' puo' sparire un istante PRIMA che
-    l'ultimo chunk di testo sia effettivamente renderizzato nel DOM — estrarre subito dopo
-    da' un testo troncato a meta' frase (osservato: risposta finita su "...becomes" senza
-    punto). Fix: dopo la sparizione del placeholder, si rilegge il testo finche' non resta
-    IDENTICO fra due letture consecutive (testo ancora cambiante = ancora in rendering).
+    Come funziona ora, senza indovinare nulla della UI:
+    1. si genera un ID univoco e si chiede al modello di delimitare la risposta con esso;
+    2. si invia (rispettando una pausa minima fra invii, per non martellare il servizio);
+    3. si legge il testo dell'intera pagina finche' NON compaiono entrambi i marcatori —
+       la presenza di quello di chiusura e' la prova che la risposta e' finita e completa,
+       quindi non serve piu' indovinare "quando ha finito" dal placeholder 'Generating...';
+    4. lungo l'attesa si gestiscono captcha (pausa per intervento umano) ed errore lato
+       sito (click sul 'Retry' della UI).
 
-    Retry via reload (bug reale trovato in CP5, intermittente — a volte al primo
-    messaggio, a volte al secondo, nessun pattern fisso): il placeholder 'Generating...'
-    a volte non sparisce mai lato client pur essendo la risposta gia' pronta lato server
-    — coerente con una connessione live (WebSocket) persa silenziosamente durante una
-    sessione headless lunga, mai un vero hang del modello (l'account funziona
-    normalmente in un browser umano normale, confermato da Gael). Fix: se il timeout
-    scatta, si ricarica la pagina (forza una riconnessione pulita, la chat e' salvata
-    lato server quindi non si perde nulla) e si ricontrolla — MAI si rimanda il prompt,
-    solo si rilegge lo stato vero. Fino a config.MAX_RETRIES tentativi totali.
+    Solleva errori espliciti (TimeoutError/RuntimeError/CaptchaRequired) — mai un testo
+    finto, mai una risposta di un altro turno."""
+    import uuid
 
-    Verifica anti-risposta-vecchia (CP5, 2026-08-06): si conta quanti messaggi di risposta
-    esistono PRIMA di inviare il prompt (`baseline_count`) — dopo, si accetta solo un
-    conteggio maggiore, mai una risposta "gia' li'" da un turno precedente (vedi bug
-    descritto in `_extract_latest_response_text`).
-
-    Ogni tentativo e' loggato in `sessions/debug_logs/lmarena_<data>.jsonl` (prompt/risposta
-    con hash e lunghezza, mai il testo intero per non gonfiare il log) — nato dal bug
-    duplicati di CP5, per non dover piu' ricostruire cosa e' successo rilanciando tutto.
-
-    Verifica anti-risposta-invariata (CP5, 2026-08-07, secondo bug reale trovato dopo il
-    fix precedente): il conteggio messaggi da solo non basta — osservato un caso in cui il
-    conteggio NON e' nemmeno servito da segnale (l'estrazione ha restituito il testo
-    dell'OUTLINE, generata da una chiamata precedente, come "risposta" del primo capitolo).
-    Fix aggiuntivo: si cattura il testo dell'ultima risposta ESISTENTE prima dell'invio
-    (`prior_text`) e si rifiuta esplicitamente un risultato identico ad esso — indipendente
-    dal conteggio, cattura anche i casi in cui quest'ultimo da solo non basta.
-
-    Timeout di default alzato a 600s (CP5, 2026-08-07): verificato con diagnostica dal vivo
-    che generazioni strutturate/lunghe (outline, capitoli) possono restare genuinamente in
-    corso oltre i 300s precedenti, senza alcun blocco reale — semplicemente piu' lente di
-    una risposta breve. I retry dopo reload restano a 45s (invariato): quel timeout ha uno
-    scopo diverso, rilevare in fretta una risposta gia' pronta ma non riflessa lato client,
-    non aspettare una generazione lenta da zero."""
-    baseline_count = _count_assistant_messages(page)
-    prior_text = _extract_latest_response_text(page) if baseline_count > 0 else None
-    _debug_log("send_start", prompt_len=len(prompt), prompt_preview=prompt[:120],
-               baseline_count=baseline_count, url=page.url)
+    req_id = f"REQ{uuid.uuid4().hex[:10].upper()}"
+    wrapped = _wrap_prompt_with_markers(prompt, req_id)
+    _debug_log("send_start", req_id=req_id, prompt_len=len(prompt),
+               prompt_preview=prompt[:120], url=page.url)
 
     def _fill_and_send() -> None:
         _throttle_before_send()
         tb = page.locator("textarea, [contenteditable='true']").first
         tb.click()
-        tb.fill(prompt)
+        tb.fill(wrapped)
         time.sleep(0.3)
         _robust_click(page.locator("form button[aria-label='Send message']"))
-        time.sleep(0.8)  # margine perche' il placeholder 'Generating...' compaia nel DOM
-                          # prima del primo controllo — senza, un check troppo rapido puo'
-                          # vederlo ancora assente e uscire credendo che sia gia' finita
+        time.sleep(1.0)
 
     _fill_and_send()
-    fresh_send = True  # True quando il prompt e' appena stato (ri)mandato: serve il
-                       # timeout pieno, non quello breve dei retry-da-reload
-    # Contatore condiviso dei click su "Retry" della UI (lista di 1 elemento perche' va
-    # mutato da dentro `_wait_for_completion_and_extract`, che riceve il riferimento).
-    retries_used = [0]
 
-    last_error: Exception | None = None
-    for attempt in range(1, config.MAX_RETRIES + 1):
-        # Timeout pieno solo quando si attende una generazione appena avviata (la
-        # generazione puo' essere genuinamente lunga). I retry dopo un reload servono a
-        # rilevare una risposta GIA' pronta lato server ma non riflessa lato client (vedi
-        # docstring) — se il reload non la rivela in una manciata di secondi, aspettare di
-        # nuovo per intero non aiuta: meglio ricaricare ancora che stare fermi.
-        attempt_timeout = timeout_s if fresh_send else min(timeout_s, 45)
-        fresh_send = False
-        try:
-            text = _wait_for_completion_and_extract(page, attempt_timeout, baseline_count,
-                                                     prior_text, retries_used)
-            _debug_log("send_ok", attempt=attempt, **_text_fingerprint(text))
+    ui_retries = 0
+    resends = 0
+    waited = 0
+    while waited < timeout_s:
+        # 1) risposta completa? (entrambi i marcatori presenti)
+        text = _extract_between_markers(page, req_id)
+        if text:
+            _debug_log("send_ok", req_id=req_id, waited=waited, **_text_fingerprint(text))
             return text
-        except CaptchaRequired as exc:
-            # Il captcha NON si aggira: si mette in pausa e si aspetta che lo risolva una
-            # persona nella finestra aperta. Se risolto, si RIMANDA il prompt (quello di
-            # prima non e' mai partito davvero, era bloccato dal captcha) e si continua —
-            # cosi' l'intervento umano serve una volta sola, senza perdere il lavoro gia'
-            # fatto nelle fasi precedenti del run.
-            _debug_log("captcha_detected", attempt=attempt, error=str(exc))
+
+        # 2) captcha: pausa, intervento umano, poi si rimanda il prompt
+        if _captcha_present(page):
+            _debug_log("captcha_detected", req_id=req_id, waited=waited)
             if not _wait_for_human_to_solve_captcha(page, "send_text_prompt"):
                 raise CaptchaRequired(
-                    "LM Arena: captcha non risolto entro "
-                    f"{CAPTCHA_WAIT_SECONDS}s — run interrotto. Risolvilo nella finestra "
-                    "aperta e rilancia. Non e' aggirabile da codice e non va aggirata."
-                ) from exc
-            baseline_count = _count_assistant_messages(page)
-            prior_text = _extract_latest_response_text(page) if baseline_count > 0 else None
-            _fill_and_send()
-            fresh_send = True
-            continue
-        except (TimeoutError, RuntimeError) as exc:
-            last_error = exc
-            _debug_log("send_attempt_failed", attempt=attempt, error=str(exc))
-            if attempt < config.MAX_RETRIES:
-                # Reload SOLO se l'URL e' gia' quello di una chat specifica (bug reale
-                # trovato: se si ricarica mentre l'URL e' ancora quello base, si perde
-                # la chat intera invece di recuperare la risposta gia' pronta — la
-                # pagina torna a una chat nuova vuota). Sulla base URL ci si limita ad
-                # aspettare ancora, senza navigare via da nulla.
-                if page.url.rstrip("/") != config.LMARENA_BASE_URL.rstrip("/"):
-                    page.reload(wait_until="domcontentloaded", timeout=config.DEFAULT_TIMEOUT_MS)
-                    time.sleep(2)
-                    _debug_log("reload_retry", attempt=attempt)
-    _debug_log("send_failed_all_attempts", error=str(last_error))
-    raise last_error
+                    f"LM Arena: captcha non risolto entro {CAPTCHA_WAIT_SECONDS}s. "
+                    "Risolvilo nella finestra aperta e rilancia. Non e' aggirabile da "
+                    "codice e non va aggirata."
+                )
+            if resends < config.MAX_RETRIES:
+                resends += 1
+                _fill_and_send()
+                waited = 0
+                continue
+            raise RuntimeError("LM Arena: troppi captcha consecutivi, run interrotto")
 
-
-def _wait_for_completion_and_extract(page: Page, timeout_s: int, baseline_count: int,
-                                      prior_text: str | None,
-                                      retries_used: list[int] | None = None) -> str:
-    if retries_used is None:
-        retries_used = [0]
-    waited, max_wait = 0, timeout_s
-    while waited < max_wait:
-        # Captcha: controllato PRIMA di tutto il resto e ad ogni giro. Se compare, la
-        # generazione non partira' mai — continuare ad aspettare significa solo bruciare
-        # l'intero timeout su una causa gia' nota (errore reale ripetuto in CP5).
-        if _captcha_present(page):
-            raise CaptchaRequired(
-                "LM Arena: sfida 'Security Verification' (captcha) attiva — la generazione "
-                "e' bloccata finche' non viene risolta a mano."
-            )
-        # Errore lato server con bottone "Retry" nella UI: senza questo controllo si
-        # aspettava una generazione che non sarebbe mai arrivata, fino al timeout
-        # (segnalato da Gael con screenshot, 2026-08-07). Si usa il Retry della UI stessa,
-        # fino a un numero limitato di volte, poi si fallisce onestamente.
+        # 3) errore lato sito: si usa il bottone 'Retry' che la UI stessa offre
         if _generation_error_present(page):
-            if retries_used[0] < MAX_UI_RETRY_CLICKS and _click_retry_button(page):
-                retries_used[0] += 1
-                _debug_log("generation_error_retry", attempt=retries_used[0], waited=waited)
-                print(f"[lmarena] errore di generazione lato sito — clicco 'Retry' "
-                      f"({retries_used[0]}/{MAX_UI_RETRY_CLICKS})", flush=True)
+            if ui_retries < MAX_UI_RETRY_CLICKS and _click_retry_button(page):
+                ui_retries += 1
+                _debug_log("generation_error_retry", req_id=req_id, attempt=ui_retries)
+                print(f"[lmarena] errore lato sito — clicco 'Retry' "
+                      f"({ui_retries}/{MAX_UI_RETRY_CLICKS})", flush=True)
                 time.sleep(3)
                 waited += 3
                 continue
-            _debug_log("generation_error_fatal", retries_used=retries_used[0])
+            if resends < config.MAX_RETRIES:
+                resends += 1
+                _debug_log("generation_error_resend", req_id=req_id, resend=resends)
+                print(f"[lmarena] errore lato sito, 'Retry' non disponibile — rimando il "
+                      f"prompt ({resends}/{config.MAX_RETRIES})", flush=True)
+                _fill_and_send()
+                waited = 0
+                continue
+            _debug_log("generation_error_fatal", req_id=req_id)
             raise RuntimeError(
-                "LM Arena: errore di generazione lato sito ('Something went wrong') "
-                f"non risolto dopo {retries_used[0]} click su Retry — mai mascherato "
-                "da timeout generico."
+                "LM Arena: errore di generazione lato sito ('Something went wrong') non "
+                f"risolto dopo {ui_retries} Retry e {resends} reinvii."
             )
-        pending = page.get_by_text("Generating", exact=False).count()
-        # baseline_count: mai considerare "fatto" finche' non e' comparso un messaggio IN
-        # PIU' rispetto a prima dell'invio — senza questo controllo, un reload che rivela
-        # solo l'ultimo messaggio GIA' completato (il turno precedente, non quello nuovo)
-        # verrebbe scambiato per "generazione finita" (bug reale corretto in CP5).
-        if pending == 0 and _count_assistant_messages(page) > baseline_count:
-            break
-        time.sleep(1)
-        waited += 1
-    else:
-        raise TimeoutError(f"LM Arena: generazione testo non completata dopo {max_wait}s")
-    time.sleep(1)  # margine per il rendering finale dopo la sparizione del placeholder
 
-    text = _extract_latest_response_text(page)
-    stable_checks, max_stable_checks, total_checks, max_total_checks = 0, 2, 0, 30
-    while stable_checks < max_stable_checks and total_checks < max_total_checks:
-        time.sleep(1)
-        total_checks += 1
-        recheck = _extract_latest_response_text(page)
-        if recheck == text and recheck is not None:
-            stable_checks += 1
-        else:
-            text = recheck
-            stable_checks = 0
-    if text is None:
-        raise RuntimeError("LM Arena: nessuna risposta testuale trovata dopo la generazione")
-    if _count_assistant_messages(page) <= baseline_count:
-        raise RuntimeError(
-            "LM Arena: nessun messaggio nuovo rilevato dopo la generazione (probabile "
-            "estrazione di una risposta di un turno precedente) — mai accettata"
-        )
-    if prior_text is not None and text == prior_text:
-        raise RuntimeError(
-            "LM Arena: la risposta estratta e' IDENTICA all'ultima risposta gia' presente "
-            "prima dell'invio (probabile estrazione di una risposta vecchia/di un turno "
-            "precedente, bug reale trovato in CP5 2026-08-07) — mai accettata"
-        )
-    return text
+        time.sleep(3)
+        waited += 3
+
+    _debug_log("send_timeout", req_id=req_id, waited=waited)
+    raise TimeoutError(
+        f"LM Arena: risposta completa non ricevuta dopo {timeout_s}s "
+        f"(marcatori {req_id} mai comparsi entrambi)"
+    )
+
 
 
 def _current_img_srcs(page: Page) -> set:
