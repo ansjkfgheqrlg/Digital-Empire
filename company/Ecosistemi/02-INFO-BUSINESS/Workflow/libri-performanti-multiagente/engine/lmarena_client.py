@@ -26,8 +26,11 @@ prompt anche quando il modello ripete parte del testo dell'utente.
 """
 from __future__ import annotations
 
+import hashlib
+import json
 import time
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 
 from playwright.sync_api import Page, Playwright
@@ -35,6 +38,63 @@ from playwright.sync_api import Page, Playwright
 from . import config
 
 ARENA_LAUNCH_ARGS = ["--disable-blink-features=AutomationControlled"]
+
+DEBUG_LOG_DIR = config.SESSIONS_DIR / "debug_logs"
+
+
+class CaptchaRequired(RuntimeError):
+    """LM Arena mostra una sfida "Security Verification" (reCAPTCHA "I'm not a robot").
+
+    NON e' aggirabile da codice, e non va aggirata: e' un controllo di sicurezza pensato
+    apposta per distinguere una persona da un programma — superarlo automaticamente
+    significherebbe ingannarlo. L'unica gestione corretta e' fermarsi e chiedere a un umano
+    di risolverlo nella finestra del browser (che per questo motivo gira in modalita'
+    visibile, non headless).
+
+    Esiste come eccezione DEDICATA (non un TimeoutError generico) perche' in CP5 il captcha
+    e' stato ripetutamente scambiato per lentezza/blocco del servizio, facendo perdere ore
+    di diagnosi su una causa sbagliata: un errore esplicito rende la causa ovvia al primo
+    colpo. Per lo stesso motivo NON viene ritentata automaticamente dal loop di retry:
+    ritentare senza intervento umano non puo' funzionare, allunga solo l'attesa."""
+
+
+CAPTCHA_MARKERS = ["Security Verification", "I'm not a robot", "Non sono un robot"]
+
+
+def _captcha_present(page: Page) -> bool:
+    """True se la sfida captcha e' visibile ORA. Cerca per testo (marcatori verificati dal
+    vivo con screenshot reale il 2026-08-07, sia in inglese sia in italiano — la UI segue
+    la lingua del browser)."""
+    for marker in CAPTCHA_MARKERS:
+        try:
+            if page.get_by_text(marker, exact=False).count() > 0:
+                return True
+        except Exception:
+            continue
+    return False
+
+
+def _debug_log(event: str, **fields) -> None:
+    """Log di debug per ogni scambio prompt/risposta reale con LM Arena — un file .jsonl
+    per giorno, mai silenzioso. Nato dal bug reale di CP5 (2026-08-06, capitoli duplicati
+    passati inosservati perche' nessun log registrava prompt/risposta effettivi): senza
+    questo, diagnosticare un problema richiede rilanciare tutto da capo con script ad-hoc.
+    Con questo, il log stesso mostra cosa e' successo davvero, riga per riga, in ordine."""
+    DEBUG_LOG_DIR.mkdir(parents=True, exist_ok=True)
+    log_path = DEBUG_LOG_DIR / f"lmarena_{datetime.now().strftime('%Y%m%d')}.jsonl"
+    entry = {"ts": datetime.now().isoformat(), "event": event, **fields}
+    with log_path.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+
+def _text_fingerprint(text: str | None) -> dict:
+    if text is None:
+        return {"len": 0, "hash": None, "preview": None}
+    return {
+        "len": len(text),
+        "hash": hashlib.sha256(text.encode("utf-8")).hexdigest()[:16],
+        "preview": text[:120],
+    }
 
 
 @dataclass
@@ -48,9 +108,18 @@ class ArenaSession:
         self.browser.close()
 
 
-def open_session(playwright: Playwright, headless: bool = True) -> ArenaSession:
+def open_session(playwright: Playwright, headless: bool = False) -> ArenaSession:
     """Apre LM Arena con la sessione reale salvata (CP1) e seleziona la modalita' Direct.
     Fatto = pronta per send_text_prompt/send_image_prompt, nessun login richiesto.
+
+    DEFAULT headless=False (2026-08-07, bug reale trovato e verificato con screenshot):
+    in modalita' nascosta (headless=True) LM Arena mostra una sfida "Security
+    Verification" (reCAPTCHA "I'm not a robot") che blocca ogni generazione — verificato
+    che NON compare affatto in una finestra normale (headless=False), a parita' di
+    profilo/sessione/account, con Gael che ha confermato una generazione riuscita subito
+    dopo l'apertura. Non e' un problema di rate-limit o di codice: e' un rilevamento
+    specifico della modalita' headless lato servizio. Nessun tentativo di aggirare la
+    verifica stessa — si evita semplicemente di innescarla, usando una finestra reale.
 
     CORRETTO 2026-08-06: prima lanciava l'intero profilo Brave reale copiato (381MB,
     con Safe Browsing/Crowd Deny/component-updater/estensioni) via
@@ -103,6 +172,15 @@ def open_session(playwright: Playwright, headless: bool = True) -> ArenaSession:
             f"probabile invalidazione lato servizio di {config.LMARENA_SESSION_PATH}. "
             "Rifare il login: python -m engine.session_manager"
         )
+    # Captcha gia' presente all'apertura: fallire SUBITO con la causa giusta, invece di
+    # procedere e scoprirlo dopo minuti di attesa sul primo prompt (errore reale di CP5).
+    if _captcha_present(page):
+        _debug_log("captcha_detected", where="open_session")
+        raise CaptchaRequired(
+            "LM Arena: sfida 'Security Verification' (captcha) gia' presente all'apertura "
+            "della sessione. Risolvila a mano nella finestra del browser aperta, poi "
+            "rilancia. Non e' aggirabile da codice e non va aggirata."
+        )
     _select_direct_mode(page)
     return ArenaSession(browser=browser, context=context, page=page)
 
@@ -146,23 +224,51 @@ def _select_direct_mode(page: Page) -> None:
     time.sleep(0.5)
 
 
-def _extract_latest_response_text(page: Page) -> str | None:
-    """Elemento `[class*="prose"]` FUORI da una bolla utente (`bg-surface-raised`) — la
-    risposta del modello, mai il prompt, verificato per struttura non per contenuto."""
+def _count_assistant_messages(page: Page) -> int:
+    """Conta i messaggi di risposta del modello presenti ORA (elementi `[class*="prose"]`
+    fuori da una bolla utente). Usato per verificare che l'estrazione prenda davvero la
+    risposta NUOVA e non una vecchia (vedi bug in `_extract_latest_response_text`)."""
     return page.evaluate(
         """() => {
             const els = document.querySelectorAll('[class*="prose"]');
+            let n = 0;
             for (const el of els) {
-                if (!el.closest('[class*="bg-surface-raised"]')) {
-                    return el.innerText;
-                }
+                if (!el.closest('[class*="bg-surface-raised"]')) n++;
             }
-            return null;
+            return n;
         }"""
     )
 
 
-def send_text_prompt(page: Page, prompt: str, timeout_s: int = 300) -> str:
+def _extract_latest_response_text(page: Page) -> str | None:
+    """Elemento `[class*="prose"]` FUORI da una bolla utente (`bg-surface-raised`) — la
+    risposta del modello, mai il prompt, verificato per struttura non per contenuto.
+
+    Prende l'ULTIMO elemento che soddisfa il criterio, non il primo — bug reale trovato in
+    CP5 (2026-08-06, verificato dal vivo): con prompt di generazione piu' lunga/pesante
+    (i capitoli veri, non gli echo brevi dei test precedenti), un retry-con-reload poteva
+    innescarsi mentre la generazione era ancora davvero in corso lato server; al reload la
+    UI mostrava temporaneamente solo i messaggi GIA' completati, e prendere il primo
+    elemento fuori da bolla utente restituiva sempre la risposta del PRIMO turno della chat
+    — sintomo osservato: 3 capitoli "diversi" richiesti, testo IDENTICO parola per parola
+    per tutti e 3. La DOM cresce in ordine cronologico (verificato con diagnostica dal vivo:
+    il conteggio elementi passa 1→2→3 dopo turni successivi), quindi l'ultimo elemento e'
+    sempre il piu' recente — combinato con la verifica del conteggio in
+    `_wait_for_completion_and_extract` (mai accettare una risposta se il conteggio dei
+    messaggi non e' aumentato rispetto a prima dell'invio)."""
+    return page.evaluate(
+        """() => {
+            const els = document.querySelectorAll('[class*="prose"]');
+            let last = null;
+            for (const el of els) {
+                if (!el.closest('[class*="bg-surface-raised"]')) last = el;
+            }
+            return last ? last.innerText : null;
+        }"""
+    )
+
+
+def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600) -> str:
     """Invia un prompt di testo, aspetta il completamento REALE, estrae e torna la risposta
     reale. Solleva TimeoutError/RuntimeError espliciti se qualcosa non torna, mai un testo
     finto.
@@ -189,7 +295,36 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 300) -> str:
     normalmente in un browser umano normale, confermato da Gael). Fix: se il timeout
     scatta, si ricarica la pagina (forza una riconnessione pulita, la chat e' salvata
     lato server quindi non si perde nulla) e si ricontrolla — MAI si rimanda il prompt,
-    solo si rilegge lo stato vero. Fino a config.MAX_RETRIES tentativi totali."""
+    solo si rilegge lo stato vero. Fino a config.MAX_RETRIES tentativi totali.
+
+    Verifica anti-risposta-vecchia (CP5, 2026-08-06): si conta quanti messaggi di risposta
+    esistono PRIMA di inviare il prompt (`baseline_count`) — dopo, si accetta solo un
+    conteggio maggiore, mai una risposta "gia' li'" da un turno precedente (vedi bug
+    descritto in `_extract_latest_response_text`).
+
+    Ogni tentativo e' loggato in `sessions/debug_logs/lmarena_<data>.jsonl` (prompt/risposta
+    con hash e lunghezza, mai il testo intero per non gonfiare il log) — nato dal bug
+    duplicati di CP5, per non dover piu' ricostruire cosa e' successo rilanciando tutto.
+
+    Verifica anti-risposta-invariata (CP5, 2026-08-07, secondo bug reale trovato dopo il
+    fix precedente): il conteggio messaggi da solo non basta — osservato un caso in cui il
+    conteggio NON e' nemmeno servito da segnale (l'estrazione ha restituito il testo
+    dell'OUTLINE, generata da una chiamata precedente, come "risposta" del primo capitolo).
+    Fix aggiuntivo: si cattura il testo dell'ultima risposta ESISTENTE prima dell'invio
+    (`prior_text`) e si rifiuta esplicitamente un risultato identico ad esso — indipendente
+    dal conteggio, cattura anche i casi in cui quest'ultimo da solo non basta.
+
+    Timeout di default alzato a 600s (CP5, 2026-08-07): verificato con diagnostica dal vivo
+    che generazioni strutturate/lunghe (outline, capitoli) possono restare genuinamente in
+    corso oltre i 300s precedenti, senza alcun blocco reale — semplicemente piu' lente di
+    una risposta breve. I retry dopo reload restano a 45s (invariato): quel timeout ha uno
+    scopo diverso, rilevare in fretta una risposta gia' pronta ma non riflessa lato client,
+    non aspettare una generazione lenta da zero."""
+    baseline_count = _count_assistant_messages(page)
+    prior_text = _extract_latest_response_text(page) if baseline_count > 0 else None
+    _debug_log("send_start", prompt_len=len(prompt), prompt_preview=prompt[:120],
+               baseline_count=baseline_count, url=page.url)
+
     textbox = page.locator("textarea, [contenteditable='true']").first
     textbox.click()
     textbox.fill(prompt)
@@ -208,9 +343,17 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 300) -> str:
         # non aiuta: meglio ricaricare ancora che stare fermi.
         attempt_timeout = timeout_s if attempt == 1 else min(timeout_s, 45)
         try:
-            return _wait_for_completion_and_extract(page, attempt_timeout)
+            text = _wait_for_completion_and_extract(page, attempt_timeout, baseline_count, prior_text)
+            _debug_log("send_ok", attempt=attempt, **_text_fingerprint(text))
+            return text
+        except CaptchaRequired as exc:
+            # MAI ritentata in automatico: serve un umano, ritentare allunga solo l'attesa
+            # su una causa gia' identificata con certezza.
+            _debug_log("captcha_detected", attempt=attempt, error=str(exc))
+            raise
         except (TimeoutError, RuntimeError) as exc:
             last_error = exc
+            _debug_log("send_attempt_failed", attempt=attempt, error=str(exc))
             if attempt < config.MAX_RETRIES:
                 # Reload SOLO se l'URL e' gia' quello di una chat specifica (bug reale
                 # trovato: se si ricarica mentre l'URL e' ancora quello base, si perde
@@ -220,14 +363,30 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 300) -> str:
                 if page.url.rstrip("/") != config.LMARENA_BASE_URL.rstrip("/"):
                     page.reload(wait_until="domcontentloaded", timeout=config.DEFAULT_TIMEOUT_MS)
                     time.sleep(2)
+                    _debug_log("reload_retry", attempt=attempt)
+    _debug_log("send_failed_all_attempts", error=str(last_error))
     raise last_error
 
 
-def _wait_for_completion_and_extract(page: Page, timeout_s: int) -> str:
+def _wait_for_completion_and_extract(page: Page, timeout_s: int, baseline_count: int,
+                                      prior_text: str | None) -> str:
     waited, max_wait = 0, timeout_s
     while waited < max_wait:
+        # Captcha: controllato PRIMA di tutto il resto e ad ogni giro. Se compare, la
+        # generazione non partira' mai — continuare ad aspettare significa solo bruciare
+        # l'intero timeout su una causa gia' nota (errore reale ripetuto in CP5).
+        if _captcha_present(page):
+            raise CaptchaRequired(
+                "LM Arena: sfida 'Security Verification' (captcha) attiva — la generazione "
+                "non puo' proseguire. Risolvila a mano nella finestra del browser aperta, "
+                "poi rilancia. Non e' aggirabile da codice e non va aggirata."
+            )
         pending = page.get_by_text("Generating", exact=False).count()
-        if pending == 0:
+        # baseline_count: mai considerare "fatto" finche' non e' comparso un messaggio IN
+        # PIU' rispetto a prima dell'invio — senza questo controllo, un reload che rivela
+        # solo l'ultimo messaggio GIA' completato (il turno precedente, non quello nuovo)
+        # verrebbe scambiato per "generazione finita" (bug reale corretto in CP5).
+        if pending == 0 and _count_assistant_messages(page) > baseline_count:
             break
         time.sleep(1)
         waited += 1
@@ -248,6 +407,17 @@ def _wait_for_completion_and_extract(page: Page, timeout_s: int) -> str:
             stable_checks = 0
     if text is None:
         raise RuntimeError("LM Arena: nessuna risposta testuale trovata dopo la generazione")
+    if _count_assistant_messages(page) <= baseline_count:
+        raise RuntimeError(
+            "LM Arena: nessun messaggio nuovo rilevato dopo la generazione (probabile "
+            "estrazione di una risposta di un turno precedente) — mai accettata"
+        )
+    if prior_text is not None and text == prior_text:
+        raise RuntimeError(
+            "LM Arena: la risposta estratta e' IDENTICA all'ultima risposta gia' presente "
+            "prima dell'invio (probabile estrazione di una risposta vecchia/di un turno "
+            "precedente, bug reale trovato in CP5 2026-08-07) — mai accettata"
+        )
     return text
 
 
@@ -334,7 +504,7 @@ if __name__ == "__main__":
     print("=== CP4 self-test REALE: testo + immagine su LM Arena (sessione vera) ===\n")
 
     with sync_playwright() as p:
-        session = open_session(p, headless=True)
+        session = open_session(p, headless=False)
         try:
             print("[1/2] invio prompt di testo reale...")
             reply = send_text_prompt(

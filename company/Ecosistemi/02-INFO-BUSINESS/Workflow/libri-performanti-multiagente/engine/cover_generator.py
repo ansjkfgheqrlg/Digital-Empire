@@ -64,7 +64,7 @@ def make_real_cover_dep() -> Callable[[dict], dict]:
         out_dir = config.LIBRI_DIR / "_wip"
         out_path = out_dir / f"{safe_title}_cover.png"
         with sync_playwright() as p:
-            session = lmarena_client.open_session(p, headless=True)
+            session = lmarena_client.open_session(p, headless=False)
             try:
                 cover_path = generate_cover(session.page, book_context, out_path)
             finally:
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     }
 
     with sync_playwright() as p:
-        session = lmarena_client.open_session(p, headless=True)
+        session = lmarena_client.open_session(p, headless=False)
         try:
             out_a = Path(tempfile.gettempdir()) / "cp7_selftest_cover_a.png"
             out_b = Path(tempfile.gettempdir()) / "cp7_selftest_cover_b.png"
