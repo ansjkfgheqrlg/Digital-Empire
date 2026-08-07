@@ -182,6 +182,7 @@ def open_session(playwright: Playwright, headless: bool = False) -> ArenaSession
             "rilancia. Non e' aggirabile da codice e non va aggirata."
         )
     _select_direct_mode(page)
+    _assert_direct_mode(page, "open_session")
     return ArenaSession(browser=browser, context=context, page=page)
 
 
@@ -222,6 +223,25 @@ def _select_direct_mode(page: Page) -> None:
     except Exception:
         pass
     time.sleep(0.5)
+
+
+def _assert_direct_mode(page: Page, where: str) -> None:
+    """Verifica che la modalita' sia davvero Direct, non Battle Mode (segnalato da Gael il
+    2026-08-07: le immagini venivano generate in Battle Mode). `_select_direct_mode` fa un
+    tentativo ma non verificava mai l'esito — se il click falliva silenziosamente si
+    generava con 2 modelli anonimi invece del modello scelto, rendendo l'output non
+    verificabile ne' ripetibile. Qui si controlla e, se serve, si riprova una volta."""
+    if page.locator("button:has-text('Battle Mode')").count() == 0:
+        return  # gia' in Direct
+    _debug_log("battle_mode_detected", where=where)
+    _select_direct_mode(page)
+    time.sleep(0.5)
+    if page.locator("button:has-text('Battle Mode')").count() > 0:
+        raise RuntimeError(
+            f"LM Arena: impossibile passare a modalita' Direct ({where}) — la UI resta in "
+            f"Battle Mode (2 modelli anonimi). Output non verificabile/ripetibile, mai "
+            f"accettato: serve controllare la UI a mano."
+        )
 
 
 def _count_assistant_messages(page: Page) -> int:
@@ -426,11 +446,18 @@ def _current_img_srcs(page: Page) -> set:
 
 
 def send_image_prompt(page: Page, prompt: str, out_path: Path,
-                       source_image_path: Path | None = None, timeout_s: int = 240) -> Path:
+                       source_image_path: Path | None = None, timeout_s: int = 480) -> Path:
     """Passa in modalita' immagine, invia il prompt (con allegato opzionale), aspetta il
     completamento REALE (placeholder 'Generating image...' che sparisce), salva il file .png
     reale su disco in `out_path`. Stesso pattern gia' verificato in produzione in
-    arena_thumbnail.py — qui generalizzato (out_path esplicito, non hardcoded)."""
+    arena_thumbnail.py — qui generalizzato (out_path esplicito, non hardcoded).
+
+    Rilevamento captcha + log + timeout allungato (2026-08-07): stesse protezioni gia'
+    costruite e verificate per il testo, applicate qui perche' il sintomo osservato sulle
+    immagini (placeholder 'Generating image...' che non sparisce mai fino al timeout) e'
+    IDENTICO a quello che sul testo si e' rivelato essere il captcha — ipotesi non ancora
+    confermata dal vivo sulle immagini, ma le protezioni sono corrette a prescindere:
+    se e' captcha lo dice subito, se non lo e' il log mostra cos'altro succede."""
     try:
         _robust_click(page.locator("form button[aria-label='Image']"), timeout=8000)
         time.sleep(0.5)
@@ -448,6 +475,12 @@ def send_image_prompt(page: Page, prompt: str, out_path: Path,
     except Exception:
         pass
 
+    # Il passaggio in modalita' immagine puo' riportare la UI in Battle Mode (segnalato da
+    # Gael il 2026-08-07 guardando la finestra reale: le copertine venivano generate in
+    # Battle Mode invece che in Direct/Max). Riverificato e ricorretto qui, DOPO il cambio
+    # modalita' — farlo solo in open_session non basta.
+    _assert_direct_mode(page, "send_image_prompt")
+
     if source_image_path is not None:
         page.locator("input[type='file']").first.set_input_files(str(source_image_path), timeout=8000)
         try:
@@ -457,6 +490,8 @@ def send_image_prompt(page: Page, prompt: str, out_path: Path,
             pass
 
     ignore_srcs = _current_img_srcs(page)
+    _debug_log("image_send_start", prompt_len=len(prompt), prompt_preview=prompt[:120],
+               known_imgs=len(ignore_srcs), url=page.url)
     textbox = page.locator("textarea, [contenteditable='true']").first
     textbox.click()
     textbox.fill(prompt)
@@ -466,12 +501,20 @@ def send_image_prompt(page: Page, prompt: str, out_path: Path,
 
     waited, max_wait = 0, timeout_s
     while waited < max_wait:
+        if _captcha_present(page):
+            _debug_log("captcha_detected", where="send_image_prompt", waited=waited)
+            raise CaptchaRequired(
+                "LM Arena: sfida 'Security Verification' (captcha) attiva durante la "
+                "generazione immagine. Risolvila a mano nella finestra del browser aperta, "
+                "poi rilancia. Non e' aggirabile da codice e non va aggirata."
+            )
         pending = page.get_by_text("Generating image...").count()
         if pending == 0:
             break
         time.sleep(3)
         waited += 3
     else:
+        _debug_log("image_timeout", waited=waited)
         raise TimeoutError(f"LM Arena: generazione immagine non completata dopo {max_wait}s")
     time.sleep(3)  # margine per il rendering completo dopo la sparizione del placeholder
 
@@ -490,8 +533,10 @@ def send_image_prompt(page: Page, prompt: str, out_path: Path,
             out_path.write_bytes(resp.body())
         else:
             img.screenshot(path=str(out_path))
+        _debug_log("image_ok", path=str(out_path), size_kb=round(out_path.stat().st_size / 1024, 1))
         return out_path
 
+    _debug_log("image_not_found", total_imgs=imgs.count(), known_imgs=len(ignore_srcs))
     raise RuntimeError("LM Arena: nessuna immagine nuova trovata dopo la generazione")
 
 
