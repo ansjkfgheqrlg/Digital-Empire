@@ -60,6 +60,44 @@ class CaptchaRequired(RuntimeError):
 
 CAPTCHA_MARKERS = ["Security Verification", "I'm not a robot", "Non sono un robot"]
 
+# Errore lato server di arena.ai: compare un banner rosso con un bottone "Retry" nella UI
+# stessa. Segnalato da Gael con screenshot il 2026-08-07 ("non ti accorgi che da errori?"):
+# il codice non lo rilevava e restava ad aspettare una generazione che non sarebbe mai
+# arrivata, fino al timeout — causa di parte dei blocchi attribuiti erroneamente ad altro.
+GENERATION_ERROR_MARKERS = [
+    "Something went wrong while generating the response",
+    "Something went wrong",
+]
+
+# Quante volte cliccare il "Retry" della UI prima di arrendersi su una singola richiesta.
+MAX_UI_RETRY_CLICKS = 3
+
+
+def _generation_error_present(page: Page) -> bool:
+    """True se la UI mostra il banner d'errore di generazione (con bottone Retry)."""
+    for marker in GENERATION_ERROR_MARKERS:
+        try:
+            if page.get_by_text(marker, exact=False).count() > 0:
+                return True
+        except Exception:
+            continue
+    return False
+
+
+def _click_retry_button(page: Page) -> bool:
+    """Clicca il bottone "Retry" del banner d'errore — e' la UI stessa a offrirlo per
+    questo scopo, quindi usarlo e' l'uso previsto, non un aggiramento di nulla.
+    Ritorna True se il click e' riuscito."""
+    for name in ("Retry", "Riprova"):
+        try:
+            btn = page.get_by_role("button", name=name, exact=True)
+            if btn.count() > 0:
+                _robust_click(btn.first, timeout=5000)
+                return True
+        except Exception:
+            continue
+    return False
+
 # Quanto attendere che un umano risolva il captcha prima di arrendersi (0 = non attendere).
 CAPTCHA_WAIT_SECONDS = 300
 
@@ -144,41 +182,68 @@ class ArenaSession:
     page: Page
 
     def close(self) -> None:
+        # Con launch_persistent_context il browser e' di proprieta' del context: chiuderlo
+        # a parte solleva errori. Si chiude il context e basta (best-effort sul browser,
+        # che con un persistent context risulta gia' chiuso).
         self.context.close()
-        self.browser.close()
+        try:
+            if self.browser is not None and self.browser.is_connected():
+                self.browser.close()
+        except Exception:
+            pass
 
 
-def open_session(playwright: Playwright, headless: bool = False) -> ArenaSession:
-    """Apre LM Arena con la sessione reale salvata (CP1) e seleziona la modalita' Direct.
+def _seed_profile_from_saved_session(context) -> None:
+    """Inietta UNA VOLTA i cookie della sessione salvata (CP1) nel profilo persistente
+    appena creato, cosi' non serve rifare il login a mano. Da li' in poi il profilo
+    mantiene tutto da solo e questa funzione non viene piu' chiamata."""
+    import json
+    data = json.loads(config.LMARENA_SESSION_PATH.read_text(encoding="utf-8"))
+    cookies = data.get("cookies", [])
+    if cookies:
+        context.add_cookies(cookies)
+    print(f"[lmarena] profilo persistente inizializzato con {len(cookies)} cookie "
+          f"dalla sessione salvata (login non richiesto)")
+
+
+def open_session(playwright: Playwright, headless: bool = True) -> ArenaSession:
+    """Apre LM Arena su un PROFILO PERSISTENTE dedicato e seleziona la modalita' Direct.
     Fatto = pronta per send_text_prompt/send_image_prompt, nessun login richiesto.
 
-    DEFAULT headless=False (2026-08-07, bug reale trovato e verificato con screenshot):
-    in modalita' nascosta (headless=True) LM Arena mostra una sfida "Security
-    Verification" (reCAPTCHA "I'm not a robot") che blocca ogni generazione — verificato
-    che NON compare affatto in una finestra normale (headless=False), a parita' di
-    profilo/sessione/account, con Gael che ha confermato una generazione riuscita subito
-    dopo l'apertura. Non e' un problema di rate-limit o di codice: e' un rilevamento
-    specifico della modalita' headless lato servizio. Nessun tentativo di aggirare la
-    verifica stessa — si evita semplicemente di innescarla, usando una finestra reale.
+    PROFILO PERSISTENTE, non contesto effimero (2026-08-07 — causa reale del captcha,
+    trovata dopo che Gael ha fatto notare che "in molti altri workflow questo problema del
+    captcha non c'era"): il workflow gia' in produzione sullo STESSO sito
+    (YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/arena_thumbnail.py, profilo
+    `chrome-profile-arena`) gira headless senza mai incontrare la sfida "Security
+    Verification". La differenza non era headless si'/no: era che quel workflow usa
+    `launch_persistent_context` su un profilo che PERSISTE fra i run, mentre qui si creava
+    un contesto nuovo ad ogni avvio (`browser.new_context(storage_state=...)`) — arena.ai
+    vedeva ogni volta un browser mai visto prima, senza storia, e chiedeva la verifica.
+    Con un profilo persistente il sito riconosce lo stesso browser che torna: nessuna
+    sfida da innescare, quindi nessuna da aggirare (che non si farebbe comunque).
 
-    CORRETTO 2026-08-06: prima lanciava l'intero profilo Brave reale copiato (381MB,
-    con Safe Browsing/Crowd Deny/component-updater/estensioni) via
-    `launch_persistent_context` — trovato essere la causa di lanci del browser che vanno
-    in timeout (180s) dopo l'accumulo di ~20+ lanci automatizzati sulla stessa copia.
-    Ora usa lo STESSO pattern gia' verificato affidabile per Amazon
-    (`session_manager.load_context`): Chromium bundlato di Playwright, pulito ad ogni
-    lancio, con solo cookie/localStorage iniettati da `lmarena_state.json` (esportato in
-    CP1) — nessun profilo browser reale coinvolto, nessuno stato che si accumula."""
-    if not config.LMARENA_SESSION_PATH.exists():
+    Il profilo e' VUOTO e dedicato, creato da Playwright — NON la copia da 381MB del
+    profilo Brave reale, che causava timeout al lancio (CP4 2026-08-06) e che resta
+    archiviata ma non piu' usata. Al primo avvio i cookie della sessione salvata in CP1
+    vengono iniettati una volta sola, cosi' il login manuale non va rifatto."""
+    profile_dir = config.LMARENA_PROFILE_DIR
+    first_run = not profile_dir.exists()
+    if first_run and not config.LMARENA_SESSION_PATH.exists():
         raise FileNotFoundError(
-            f"Sessione LM Arena non trovata: {config.LMARENA_SESSION_PATH}. "
-            f"Esegui prima: python -m engine.session_manager"
+            f"Profilo LM Arena assente e nessuna sessione salvata in "
+            f"{config.LMARENA_SESSION_PATH}. Esegui prima: python -m engine.session_manager"
         )
-    browser = playwright.chromium.launch(headless=headless, args=ARENA_LAUNCH_ARGS)
-    context = browser.new_context(
-        storage_state=str(config.LMARENA_SESSION_PATH),
+    profile_dir.mkdir(parents=True, exist_ok=True)
+
+    context = playwright.chromium.launch_persistent_context(
+        user_data_dir=str(profile_dir),
+        headless=headless,
         viewport={"width": 1440, "height": 900},
+        args=ARENA_LAUNCH_ARGS,
     )
+    browser = context.browser
+    if first_run and config.LMARENA_SESSION_PATH.exists():
+        _seed_profile_from_saved_session(context)
     page = context.pages[0] if context.pages else context.new_page()
     # domcontentloaded, non networkidle: arena.ai tiene connessioni persistenti aperte
     # (chat live) che a volte impediscono a networkidle di scattare mai (timeout reale
@@ -399,6 +464,9 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600) -> str:
     _fill_and_send()
     fresh_send = True  # True quando il prompt e' appena stato (ri)mandato: serve il
                        # timeout pieno, non quello breve dei retry-da-reload
+    # Contatore condiviso dei click su "Retry" della UI (lista di 1 elemento perche' va
+    # mutato da dentro `_wait_for_completion_and_extract`, che riceve il riferimento).
+    retries_used = [0]
 
     last_error: Exception | None = None
     for attempt in range(1, config.MAX_RETRIES + 1):
@@ -410,7 +478,8 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600) -> str:
         attempt_timeout = timeout_s if fresh_send else min(timeout_s, 45)
         fresh_send = False
         try:
-            text = _wait_for_completion_and_extract(page, attempt_timeout, baseline_count, prior_text)
+            text = _wait_for_completion_and_extract(page, attempt_timeout, baseline_count,
+                                                     prior_text, retries_used)
             _debug_log("send_ok", attempt=attempt, **_text_fingerprint(text))
             return text
         except CaptchaRequired as exc:
@@ -449,7 +518,10 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600) -> str:
 
 
 def _wait_for_completion_and_extract(page: Page, timeout_s: int, baseline_count: int,
-                                      prior_text: str | None) -> str:
+                                      prior_text: str | None,
+                                      retries_used: list[int] | None = None) -> str:
+    if retries_used is None:
+        retries_used = [0]
     waited, max_wait = 0, timeout_s
     while waited < max_wait:
         # Captcha: controllato PRIMA di tutto il resto e ad ogni giro. Se compare, la
@@ -459,6 +531,25 @@ def _wait_for_completion_and_extract(page: Page, timeout_s: int, baseline_count:
             raise CaptchaRequired(
                 "LM Arena: sfida 'Security Verification' (captcha) attiva — la generazione "
                 "e' bloccata finche' non viene risolta a mano."
+            )
+        # Errore lato server con bottone "Retry" nella UI: senza questo controllo si
+        # aspettava una generazione che non sarebbe mai arrivata, fino al timeout
+        # (segnalato da Gael con screenshot, 2026-08-07). Si usa il Retry della UI stessa,
+        # fino a un numero limitato di volte, poi si fallisce onestamente.
+        if _generation_error_present(page):
+            if retries_used[0] < MAX_UI_RETRY_CLICKS and _click_retry_button(page):
+                retries_used[0] += 1
+                _debug_log("generation_error_retry", attempt=retries_used[0], waited=waited)
+                print(f"[lmarena] errore di generazione lato sito — clicco 'Retry' "
+                      f"({retries_used[0]}/{MAX_UI_RETRY_CLICKS})", flush=True)
+                time.sleep(3)
+                waited += 3
+                continue
+            _debug_log("generation_error_fatal", retries_used=retries_used[0])
+            raise RuntimeError(
+                "LM Arena: errore di generazione lato sito ('Something went wrong') "
+                f"non risolto dopo {retries_used[0]} click su Retry — mai mascherato "
+                "da timeout generico."
             )
         pending = page.get_by_text("Generating", exact=False).count()
         # baseline_count: mai considerare "fatto" finche' non e' comparso un messaggio IN
@@ -559,6 +650,7 @@ def send_image_prompt(page: Page, prompt: str, out_path: Path,
     time.sleep(0.8)  # stesso margine di send_text_prompt: evita un primo check troppo rapido
 
     waited, max_wait = 0, timeout_s
+    img_retries = 0
     while waited < max_wait:
         if _captcha_present(page):
             _debug_log("captcha_detected", where="send_image_prompt", waited=waited)
@@ -577,6 +669,21 @@ def send_image_prompt(page: Page, prompt: str, out_path: Path,
             time.sleep(0.8)
             waited = 0
             continue
+        # Stesso errore lato sito gestito per il testo (banner + bottone Retry della UI).
+        if _generation_error_present(page):
+            if img_retries < MAX_UI_RETRY_CLICKS and _click_retry_button(page):
+                img_retries += 1
+                _debug_log("image_generation_error_retry", attempt=img_retries, waited=waited)
+                print(f"[lmarena] errore generazione immagine lato sito — clicco 'Retry' "
+                      f"({img_retries}/{MAX_UI_RETRY_CLICKS})", flush=True)
+                time.sleep(3)
+                waited += 3
+                continue
+            _debug_log("image_generation_error_fatal", retries_used=img_retries)
+            raise RuntimeError(
+                "LM Arena: errore di generazione immagine lato sito ('Something went "
+                f"wrong') non risolto dopo {img_retries} click su Retry."
+            )
         pending = page.get_by_text("Generating image...").count()
         if pending == 0:
             break
@@ -618,7 +725,7 @@ if __name__ == "__main__":
     print("=== CP4 self-test REALE: testo + immagine su LM Arena (sessione vera) ===\n")
 
     with sync_playwright() as p:
-        session = open_session(p, headless=False)
+        session = open_session(p)
         try:
             print("[1/2] invio prompt di testo reale...")
             reply = send_text_prompt(

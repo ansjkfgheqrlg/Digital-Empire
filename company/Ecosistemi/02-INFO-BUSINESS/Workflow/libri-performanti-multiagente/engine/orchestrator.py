@@ -231,7 +231,7 @@ def make_real_planning_dep() -> Callable[[dict], dict]:
 
     def _planning(research: dict) -> dict:
         with sync_playwright() as p:
-            session = lmarena_client.open_session(p, headless=False)
+            session = lmarena_client.open_session(p)
             try:
                 outline = book_writer.generate_outline(session.page, research)
             finally:
@@ -253,7 +253,7 @@ def make_real_writing_dep(total_chapters: int = 24, words_per_chapter: int = 150
 
     def _writing(planning: dict) -> dict:
         with sync_playwright() as p:
-            session = lmarena_client.open_session(p, headless=False)
+            session = lmarena_client.open_session(p)
             try:
                 book = book_writer.write_chapters(session.page, planning, total_chapters, words_per_chapter)
             finally:

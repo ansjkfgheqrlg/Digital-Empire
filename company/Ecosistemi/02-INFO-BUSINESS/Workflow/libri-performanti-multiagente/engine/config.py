@@ -56,6 +56,24 @@ BRAVE_USER_DATA_ROOT = Path(_os.environ.get("LOCALAPPDATA", "")) / "BraveSoftwar
 BRAVE_SOURCE_PROFILE_NAME = "Profile 9"  # etichetta "gd" — scelto da Gael 2026-08-05
 BRAVE_PROFILE_COPY_DIR = SESSIONS_DIR / "brave_profile_copy"
 
+# --------------------------------------------------------------------------- #
+# Profilo PERSISTENTE dedicato per LM Arena (2026-08-07). Motivo, verificato:
+# arena.ai mostra una sfida captcha "Security Verification" quando il browser
+# si presenta come contesto NUOVO ad ogni avvio (`browser.new_context(
+# storage_state=...)`), perche' non riconosce nessuna storia precedente. Il
+# workflow gia' in produzione sullo stesso sito
+# (YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/arena_thumbnail.py,
+# `chrome-profile-arena`) gira headless SENZA MAI incontrare captcha perche'
+# usa `launch_persistent_context` su un profilo dedicato che persiste fra i
+# run — segnalato da Gael: "in molti altri workflow questo problema non
+# c'era". Qui si replica quel pattern invece di reinventarlo.
+#
+# NB: e' un profilo VUOTO creato da Playwright, non la copia da 381MB del
+# profilo Brave reale (quella causava timeout al lancio, vedi CP4 2026-08-06):
+# leggero, dedicato, e non tocca nessun profilo personale.
+# --------------------------------------------------------------------------- #
+LMARENA_PROFILE_DIR = SESSIONS_DIR / "chrome-profile-arena"
+
 for _d in (SESSIONS_DIR, LIBRI_PRONTI_DIR, LIBRI_PUBBLICATI_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 

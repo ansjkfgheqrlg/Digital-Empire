@@ -243,7 +243,7 @@ if __name__ == "__main__":
     }
 
     with sync_playwright() as p:
-        session = _lc.open_session(p, headless=False)
+        session = _lc.open_session(p)
         try:
             print("[1/2] genero outline reale...")
             outline = generate_outline(session.page, research)
