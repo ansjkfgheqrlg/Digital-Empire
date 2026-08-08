@@ -16,6 +16,22 @@ They put me on a sleep schedule that is enforced by nurses, which is a strange t
 
 The first three nights are bad in the ordinary way.
 
+The ward is eleven beds and a corridor with a window at the end that looks at a car park, and I am the only person on it who has ever worked in a building like it, which turns out to matter more than I expect.
+
+I know the rhythm. I know that the eight o'clock obs are late because the handover overran. I know why the drugs trolley stops at bed four for six minutes. I catch myself, on the second morning, standing up to help a woman called Jackie who has dropped her cardigan, and a nurse says "sit down, love, I've got it," and I sit down, and something in me falls over.
+
+Being on the wrong side of it is not humbling. That's the word people use and it's wrong. It's *disorienting* — like hearing your own voice on a recording. All the same sounds, arranged for somebody else.
+
+Jackie is sixty-one and has been here five weeks and tells me on the first day, without being asked, exactly what she's in for, in the flat manner of someone who has stopped finding it interesting.
+
+"Are you going to tell me yours?" she says.
+
+"No."
+
+"Fair enough." She goes back to her puzzle book. "You will by Thursday."
+
+I tell her on the Wednesday.
+
 On the fourth night I sleep six hours and wake up and cry for forty minutes in a bathroom with a plastic mirror, and a healthcare assistant called Marcus sits outside the door and says nothing and does not go away.
 
 On the sixth day Dr. Iyer says the word.

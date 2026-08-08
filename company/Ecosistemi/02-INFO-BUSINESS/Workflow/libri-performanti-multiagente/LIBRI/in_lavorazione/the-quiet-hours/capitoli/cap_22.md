@@ -54,6 +54,40 @@ She looks at me for a long moment.
 
 ---
 
+She dies in March, of pneumonia, which is what most of them die of in the end whatever it says on the form.
+
+Denise rings to tell me, which she did not have to do and which I understand is a kindness aimed at both of us.
+
+There are nine people at the funeral. Four are staff from Ridgemont on their day off. There is no family. The celebrant reads out a life in six minutes — born in Naples in 1943, came to England at nineteen, married Roberto in 1966, forty-one years at Kesselwood Cottages, no children — and gets her name wrong twice, and nobody corrects him, because there is nobody there whose job it is to.
+
+I stand at the back like a guitar teacher.
+
+Afterwards, in the car park, Priya finds me. She's in a black coat that doesn't fit her and she looks about nineteen.
+
+"You left," she says. "You just — email."
+
+"I know."
+
+"I thought I'd done something."
+
+That lands somewhere it will stay for a while.
+
+"You didn't do anything," I say. "You asked me if I was all right and I lied to you, and that was mine, not yours."
+
+She thinks about it.
+
+"Are you all right now?"
+
+And I stand in a crematorium car park in March and give a colleague of eleven years the first accurate answer I have given anybody in that building.
+
+"No," I say. "But I'm being treated, and I'm sleeping, and I'll tell you the whole thing if you want it, but not here."
+
+Priya nods slowly.
+
+"There's a place on Farrow Street," she says. "Does coffee at hours that suit people who work nights."
+
+---
+
 Okonjo retires in September. She tells me at a pub near the station, over a lemonade, having told me at the door that she's driving and that she'd have liked a pint.
 
 "Twenty-six years," she says. "The party's on the fourth. It'll be dreadful."

@@ -52,6 +52,18 @@ The clock in my mother's front room ticks the way clocks in front rooms do.
 
 And then I sit down.
 
+I have thought since about what it cost to say it in that room rather than in a police station or a consulting room, and the answer is that a police station and a consulting room are places where people are paid to hear things.
+
+Rachel from the school is not paid to hear it. My uncle is not paid to hear it. My mother's neighbour with a plate of sandwiches in her hand is not paid to hear it, and she is going to go home tonight and tell her husband, and by Tuesday four people in Bellhouse who knew my sister will know what I did.
+
+That's the part. Not the saying. The Tuesday.
+
+Dr. Iyer asked me, before I was discharged, what I was most afraid of, and I said *remembering*, and she said "you already remember," and I said fine, then, being charged with something.
+
+And she said, "I don't think that's it either."
+
+She was right. What I was afraid of is a room in Bellhouse on a Saturday in December with fourteen people in it who loved her, finding out that the last thing I said to her was *fine*.
+
 ---
 
 Here is what happens.
@@ -83,3 +95,19 @@ Then she says: "She'd have been so angry with you."
 I laugh, which is not what I expect to do at the sink at my mother's house on the fourteenth of December.
 
 "Yeah," I say. "She would."
+
+Rachel picks up another plate.
+
+"She talked about you all the time," she says. "You know that, don't you? Staff room, every Monday. *My sister the nurse.*" She dries carefully. "There was a thing in October, before — a kid in her class whose mum was in hospital, and Nina didn't know what to say to him, and she rang you at lunchtime from the corridor and asked you what happens on a ward, so she could tell him something true."
+
+I stop with my hands in the water.
+
+I remember that call. I was on a night rotation and asleep and I was short with her, and I told her about visiting hours and what the machines do and why they beep, and she said *thanks El* and rang off, and I went back to bed irritated.
+
+"He's fine, by the way," Rachel says. "The kid. His mum's fine. He's in year six now and he's a nightmare."
+
+We stand at the sink for a while.
+
+"I didn't know she did that," I say.
+
+"No," says Rachel. "Well. You were asleep."

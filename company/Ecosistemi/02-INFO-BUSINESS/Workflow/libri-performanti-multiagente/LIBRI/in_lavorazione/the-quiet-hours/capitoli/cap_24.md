@@ -8,6 +8,22 @@ I have a car with a boot full of dressings and a folder with a list in it. There
 
 It is a completely ordinary job and I am extremely bad at being thanked for it, which Priti says is a thing we will get to eventually.
 
+Mr. Okafor's dog is called Sandra. He tells me this on the first visit with an entirely straight face and it takes me three weeks to work out he is not joking. Sandra is fourteen and arthritic and lies across his feet while I do the dressing, and the ulcer is going to close in about four months and both of us know it and neither of us says so, because saying so is how you jinx a thing.
+
+The new one on Farrow Street is called Mrs. Adeyemi and she is not reluctant to engage, she is furious, which is different and which the notes did not say. She is furious because she is sixty-eight and has been sent home from a hospital that did not tell her what it had found, and nobody has explained anything to her in nine days.
+
+So I sit down at her kitchen table and I explain it. All of it, twice, with a pen and the back of an envelope.
+
+It takes forty minutes I do not have. There are meetings about this — about "capacity" and "visit duration" and a phrase I have come to hate, which is "scope of role."
+
+I have started, in these meetings, to say things out loud.
+
+That's new. For eleven years at Ridgemont I was the person who did the thing properly and said nothing about the fact that the thing was impossible. Now I put my hand up and say: *this is a forty-minute job and you've costed it at fifteen, and I'd like that written in the minutes.*
+
+It doesn't change anything. It goes in the minutes.
+
+Priti says this is what she means by *the wanting to not know* being the thing to watch — that the opposite of it isn't confessing, it's just saying ordinary true things at ordinary volume, on Thursdays, in rooms where it's inconvenient.
+
 ---
 
 I sleep.

@@ -40,6 +40,18 @@ She turns her cup a quarter turn on the saucer, the thing she does.
 
 "Because you kept ringing," she says. "And in twenty-six years I have never once had a person work that hard to open a case that would only ever hurt them."
 
+She finishes her tea.
+
+"There's a thing I've been going to say to you for a month and I keep not saying it, so I'll say it now while I've still got the warrant card." She sets the cup down. "You're going to spend the next few years deciding what kind of story this was. Everybody does. And there are two on offer.
+
+"One is: a woman got out of a car in temper and her sister died and she hid it for fourteen months.
+
+"The other is: a woman who could not remember something spent fourteen months, at four in the morning, in the cold, driving to the place it happened and writing it down, until she made herself find out. At enormous cost. When absolutely nobody was making her."
+
+I look at her.
+
+"Both of those are accurate," Okonjo says. "I've read the file. They're the same set of facts. You'll pick one and you'll live inside it, and I'd like to be on record as having told you that the second one is also true, because in about eighteen months you'll have forgotten anybody ever said it."
+
 ---
 
 I read the notebook properly in July, on a bench outside the flat, in daylight, with a coffee, like a person reading a book.

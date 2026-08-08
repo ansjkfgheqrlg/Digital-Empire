@@ -103,3 +103,25 @@ I look up sharply.
 "Then what is it?"
 
 "It's you," Okonjo says, "trying to tell you something you can't hear while you're awake."
+
+I sit with my hands flat on a table covered in paper that describes six hours of my own life that I cannot account for.
+
+"I want to ask you something," I say, "and I want the police answer, not the kind one."
+
+"Go on."
+
+"If it turns out I was there. On that road. If that's what this is." I make myself finish it. "What happens to me?"
+
+Okonjo does not soften it, which is the only reason I can hear it.
+
+"Depends entirely on what you did. Being on a road isn't an offence. Being a passenger isn't an offence. Failing to report a collision can be, in some circumstances." She counts it off evenly. "Perverting the course of justice would be, if you'd lied to us in a statement — and you've never given a statement, which is a piece of luck I don't think you engineered."
+
+"And if I stood there and didn't call anyone?"
+
+The question sits in the middle of the table.
+
+"There's no general offence of failing to help," she says. "Not in this country. Morally people find that unbearable and legally it's the position." A pause. "If a court ever heard about a woman who did that, what they'd hear about first is the fourteen months afterwards. Judges are not stupid about grief. Neither am I."
+
+"You're being kind."
+
+"I'm being accurate," she says. "You'll notice I haven't said *it wasn't your fault*, and I'm not going to, because I don't know, and because you'd stop listening to me the second I did."

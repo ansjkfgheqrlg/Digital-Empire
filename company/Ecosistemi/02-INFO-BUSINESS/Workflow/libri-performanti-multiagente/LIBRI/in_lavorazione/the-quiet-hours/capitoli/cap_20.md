@@ -26,6 +26,28 @@ I put my hands over my face.
 
 "That's not absolution," she says. "It's information. You'll do what you want with it."
 
+I sit with my hands in my lap in a small room with a box of tissues nobody has touched.
+
+"I keep waiting for you to be different with me," I say.
+
+"Different how?"
+
+"Colder. Now that you know." I look up. "I told you I stood at a barrier and watched and did nothing. You've written it down. And you're sitting there the same as you sat there in February when you thought I was a tired woman looking for a door."
+
+Okonjo takes a moment.
+
+"Do you want the professional answer or the other one?"
+
+"The other one."
+
+"I've been doing this twenty-six years," she says. "In that time I have met perhaps nine people who did something genuinely cruel. Nine. Everybody else was frightened, or drunk, or twenty-two, or standing somewhere they couldn't cope with being." She puts her pen down. "You stood at a barrier for eleven minutes. I've met a man who drove home from a hit-and-run and had his tea. You are not in the same category as that man, and I've been at this long enough to know the difference at a glance, and I'd rather say so out loud than let you sit there constructing a version of me that's disgusted with you."
+
+I look at the tissues.
+
+"I'd built one," I admit.
+
+"Course you had," she says. "You've been building one of everybody for two years."
+
 ---
 
 Adrian on the Tuesday. Last visit before I'm discharged.
@@ -93,3 +115,33 @@ I ring my mother.
 She answers on the fourth ring, and she says "Elena?" in the specific voice she has used since December of the year before last, the one with the flinch built into it.
 
 And I say: "Mum. I need to tell you where I was that night."
+
+There is a silence on the line of a particular length.
+
+"Right," my mother says. "Hang on. I'm going to sit down."
+
+I hear her sit down. I hear the chair in the hall, the one nobody sits in, the one by the telephone table that has been there since 1994.
+
+"Go on then," she says.
+
+And I tell her. All of it, in order, in a day room with terrible chairs, while a man two hundred miles into his own guilt waits in the car park because I asked him to.
+
+It takes eleven minutes.
+
+When I finish, my mother is quiet for long enough that I check the screen to see if the call has dropped.
+
+Then she says: "Was she frightened?"
+
+Of all the questions.
+
+"I don't know," I say. "I don't have the last four minutes. I don't think I ever will."
+
+"No," my mother says. "Well."
+
+Another silence.
+
+"I knew she'd been drinking," she says. "The police told me at the time and I've never said it out loud to a single person, not to you, not to your uncle, not to anybody at the funeral. Two years." Her voice does not break; my mother's voice does not break, it just gets very flat, which is worse. "I've let people think it was the road."
+
+"Mum—"
+
+"So there's two of us, then," she says. "Sitting on it."

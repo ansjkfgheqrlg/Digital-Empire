@@ -40,6 +40,20 @@ I got in the passenger seat. That is the fact I have not been able to hold for f
 
 We got as far as Kesselwood Cottages.
 
+I want to put down what was actually said in the car, because for fourteen months the thing I could not hold was not the crash. It was this.
+
+She said: "You've been waiting for this."
+
+I said: "That's not fair."
+
+She said: "You've been waiting two years for me to do something you could be right about."
+
+And I said — and this is mine, this is the one I own, this is not the sentence an eighty-two-year-old woman heard through a hedge but the one that came before it —
+
+I said: "I'd rather be right than go to your funeral."
+
+Twelve words. In a car, at midnight, doing fifty, to a woman who had been crying since the ring road.
+
 By then the argument had turned. She was crying and driving, which is worse than either. I said pull over. She pulled over hard, on the verge by the hedge, and put the hazards on.
 
 *Click, click, click.*
@@ -79,6 +93,22 @@ But I know how they ended, because at 00:42 there was a sound from round the ben
 And I walked down. With the torch on my phone — the other phone, the one nobody knew about. And I stood at the barrier, and I looked down at the car in the dark and the water, and I did not go down the bank, and I did not ring 999.
 
 I stood there for a while.
+
+People will want to know why, and I have had two years and a great deal of professional help, and the honest answer is in three parts and none of them is good enough.
+
+The first is that I could see the roof of the car and the angle of it and the way the water was moving around it, and I have been a nurse for eleven years and I knew. Not hoped. Knew.
+
+The second is that the bank was steep and wet and dark and I was alone, and there is a calculation you are taught in every first-aid course ever written which is *do not become the second casualty*, and I have taught that calculation to other people, and I performed it, correctly, in about four seconds, standing at a barrier looking at my sister's car.
+
+The third is the one I could not hold.
+
+The third is that in the moment I stood at that barrier, some part of me — small, fast, and entirely real — was aware that if I called 999 I would have to say who I was and where I had been and why I had got out of the car.
+
+I want to be exact, because being exact is all I have. I do not think I decided not to call in order to protect myself. It was not that clean, and I would almost prefer it if it had been.
+
+I think I stood at a barrier in the dark and became, for about eleven minutes, a person who could not act, because acting in any direction meant saying the sentence out loud.
+
+*She asked me to stay in the car and I got out.*
 
 Then I walked back up the road and knocked on the door of a cottage where an old woman was too frightened to answer.
 
