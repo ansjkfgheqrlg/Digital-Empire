@@ -40,6 +40,26 @@ I told the police that. I told them she'd seemed a bit off, that she'd hinted at
 
 Fourteen months of turning that over and it still won't open.
 
+Here is the thing about my sister that I have never managed to explain to anybody who didn't know her, and that I need you to understand or none of the rest of this will make sense.
+
+Nina was five years younger and had been in charge of me since she was about nine.
+
+That's not a figure of speech. When our father left — I was fourteen, she was nine — I did the sensible things: I got the bus timetables sorted, I learned to do a shepherd's pie, I filled in the forms. And Nina walked into the kitchen one evening about three weeks in, at nine years old, and said, "You're being weird. You've stopped being annoying and it's worse."
+
+I have thought about that sentence for twenty years. Nine years old.
+
+She was the only person alive who could tell me a true thing about myself and have me actually hear it. Everybody else, I'd be composing the rebuttal before they finished. With her, it just went in.
+
+Which is exactly why, when she sat on my sofa on the eleventh of December with a glass in both hands and asked me a question in the careful way she asked it, I made a joke.
+
+I've had fourteen months to work out why, and I think it's this: it was the first time in twenty years the direction of travel had reversed. She was asking me for something. And I didn't have any equipment for it, so I reached for the thing I did have, which was being funny at her.
+
+*Both. In that order. Obviously.*
+
+She laughed. She let me off.
+
+I have never been let off anything so completely in my life.
+
 The doorbell goes at four.
 
 I'm not expecting anyone. I never am. My mother phones on Sundays and does not visit; there is a whole architecture of grief in my family built around not looking at each other while we talk.

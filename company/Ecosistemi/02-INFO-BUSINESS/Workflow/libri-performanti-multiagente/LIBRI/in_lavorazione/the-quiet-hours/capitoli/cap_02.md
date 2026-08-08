@@ -34,6 +34,26 @@ The coroner said what coroners say. Detective Okonjo — who I met twice, who ha
 
 I was at home that night. That's the sentence I've said perhaps two hundred times, to police, to my mother, to the woman from the counselling service, to Nina's friends who wanted to know if she'd seemed all right. *I was at home that night.* It has the smoothness of a sentence that has been handled a lot.
 
+There's a thing I do that I have never told the counselling woman about, and it is this: I keep a list.
+
+It's in the notes app on my phone, and it's called *Groceries*, which is a level of cowardice I'm aware of. It has forty-one items on it. They are all the things about that night that don't sit right.
+
+Item one: *she said see you at Mum's — we weren't going to Mum's until the 23rd.*
+
+Item four: *nobody at the party remembers her leaving.*
+
+Item eleven: *the taxi.*
+
+Item nineteen: *why did she park at the ring road that morning.*
+
+Item thirty-three: *her keys.*
+
+Nina's house keys were never found. Not in the car, not in the water, not on the verge, not in the bag they gave my mother in a plastic envelope with a form to sign. Her phone was there. Her purse was there, with forty pounds in it and a receipt from a garage. Her keys, on the ring with the enamel puffin she bought in Reykjavik and would not shut up about, were not.
+
+I asked about it twice. The first time a very young officer said things move about in an impact, which is true. The second time, six weeks later, a different officer said they'd have been logged if they'd been recovered, which is also true, and which is not an answer to the question I was asking.
+
+Item forty-one is the newest and it says: *2:14.*
+
 I take out my laptop and I search *voicemail delayed delivery fourteen months* and I read forum posts by people who are angry at telecom companies. It happens, apparently. Carrier faults. Messages that sit in a queue on a server for weeks. I find one case where a man received a voicemail six months late.
 
 Six months is not fourteen. But six months proves the mechanism, and once you have the mechanism, the rest is just a bigger number.

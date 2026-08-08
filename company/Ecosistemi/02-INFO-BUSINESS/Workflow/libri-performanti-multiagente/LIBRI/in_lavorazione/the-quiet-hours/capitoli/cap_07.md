@@ -74,6 +74,14 @@ HELP. YELP. WHELP.
 
 Or it isn't part of a word at all. Or it's a maker's mark. Or it's nothing, the way most things are nothing.
 
+I stand in the gravel behind a storage facility that used to be a garden centre and I think about the fact that I have driven past this place three hundred times.
+
+Three hundred times, minimum. Every trip to my mother's goes this way. Every trip to the retail park. The Kesselwood road is not a road I avoid; it's the road, the one everybody in this town uses, and in fourteen months I have gone past that bend perhaps a hundred and fifty times and I have never once stopped.
+
+I've always been slightly proud of that. In a grim way. *I don't do the shrine thing. I don't put flowers on a verge. I drive past at forty like a person with a life.*
+
+Standing in the gravel it occurs to me for the first time that not stopping is not the same as being all right about it, and that a woman who arranges never to slow down on a particular stretch of B road has arranged something.
+
 ---
 
 Adrian is on the stairs when I get back to the flats, sitting on the third step from the top with a guitar case beside him and his phone in his hand, and he stands up too fast when he sees me, which is the first ungraceful thing I've seen him do.
@@ -97,6 +105,10 @@ I hear myself say: "Not coffee."
 "There's a pub on Farrow Street. The Ring. It's terrible."
 
 "I've been," he says. "It's genuinely terrible. Yes."
+
+The Ring has a carpet that was chosen in about 1988 by somebody who has since apologised. There are four people in it and two of them are the same man in a mirror. The barmaid puts my drink down and says "you all right?" in the way that is not a question.
+
+I have not been in a pub in fourteen months. I notice this at the exact moment I sit down, the way you notice a tooth.
 
 We go to The Ring, which is terrible, and I drink half a pint of something bad, and he asks me nothing about myself for forty minutes, which I realise afterward was a decision and not an accident.
 

@@ -16,7 +16,27 @@ I hold it up to the light and wait for my brain to do the thing brains do, the s
 
 I go through the reasonable explanations because that's what you do. A patient handed it to me and I pocketed it without thinking — possible, we're told to hand found objects to the front desk, but possible. A colleague borrowed my coat — nobody borrows my coat. It came with the coat — I've had this coat two winters.
 
+There's a fourth explanation and I don't look at it directly, the way you don't look directly at the sun or at a bill you haven't opened. The fourth explanation is that I put it there.
+
 I put the key on the shelf next to the kettle, where lost things go, and I go start my rounds.
+
+The rounds are the same rounds. I want to describe them properly, because the ordinariness matters — because everything that comes after has to be laid on top of eight hours of a job I have done four nights a week for eleven years and can do with my hands while my head is somewhere else entirely.
+
+Room 3, Mrs. Duffy, hip replacement six weeks ago, sleeping on her back with her mouth open and one hand up by her ear like a child. Room 5, empty since Tuesday, stripped bed, and I still look in. Room 7, Mr. Aldridge, awake.
+
+"What year is it?"
+
+"It's 2026, love."
+
+"Is it." He takes this the way he always takes it, with the small tired courtesy of a man who has been given a wrong answer by a competent person. "I thought it was earlier than that."
+
+"You're not the only one."
+
+Room 9, the Kelly sisters, who are not sisters and who have insisted on being roomed together for two years and hold hands in their sleep across the gap between the beds. Room 11, Mr. Osei, who does not sleep either and who has read four hundred pages of the same Wilbur Smith since January and who lifts a hand to me without looking up.
+
+This is the part of the job nobody writes about. It's not dramatic. It's eleven people breathing in eleven rooms and one woman walking between them making sure they keep doing it.
+
+I love it. I've never once said that out loud to anyone.
 
 Room 12 rings at eleven forty. Mrs. Ferrante is awake and sitting up, hands folded on the blanket like she's waiting for a train.
 
@@ -33,6 +53,38 @@ I check her chart. I check her water. I do the things my hands know how to do wh
 But the clarity has already drained out of her face, and she's asking me whether her husband has taken the car, and her husband has been dead since 2009, and I tell her he's parked out front and she says *good, good,* and settles back into the pillow.
 
 I write it in the log. *Patient briefly disoriented, settled without medication, 23:52.*
+
+What I don't write in the log is that Marguerite Ferrante has said *you're early* to me every night for eleven months, and that in eleven months I have never once asked her early for what.
+
+That's not true. I asked her once, in April. She said something I didn't catch and I let it go because there was a fall in room 5 and by the time I came back she was asleep.
+
+I have thought about that unheard sentence perhaps forty times since.
+
+---
+
+The middle of a night shift has a shape. Between one and three you do the paperwork nobody does in daylight — the audits, the fridge temperatures, the controlled drugs count that takes two signatures and eleven minutes and which Angela and I have done together so many times we no longer speak during it.
+
+Tonight Angela is on the other wing, so I do the count with Priya, who is on her third week of nights and still thinks they're interesting.
+
+"Does it get boring?" she asks, while I'm reading numbers off a blister pack.
+
+"Yes."
+
+"Everyone says the nights are peaceful."
+
+"Everyone who says that works days."
+
+She laughs. She has a good laugh, unguarded, the laugh of someone who has not yet had a phone call at ten past one in the morning.
+
+"Can I ask you something?" she says. "Why nights? You could do days. You've got the seniority, Denise would have you on days tomorrow."
+
+I count out four ampoules and write the number in the column.
+
+"I like knowing where everybody is," I say.
+
+It's the truest answer I've given anybody in fourteen months and she takes it for a joke, and laughs again, and I let her.
+
+---
 
 At three in the morning the building goes quiet the way it does, and I sit at the desk with the tea I make and never drink, and I take out my phone to look at nothing in particular.
 

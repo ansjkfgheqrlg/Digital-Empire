@@ -54,6 +54,18 @@ I think about that for a second. "Say the rest of it."
 
 "Good."
 
+There's a photograph on her desk, angled away from me. I can see the back of the frame and about a centimetre of the edge of the picture, and I catch myself trying to work out from that centimetre whether it's children or a dog.
+
+She notices me noticing.
+
+"Two boys," she says. "Nineteen and twenty-two. The nineteen-year-old is currently informing me that university is a scam."
+
+"Is it?"
+
+"Increasingly." She almost smiles. "I turn it round because people talk more freely at a desk that isn't showing them somebody else's family. You'd be surprised how many people stop halfway through a sentence when they see a photograph of a child."
+
+I file that away as the first honest piece of technique anybody in this building has ever shown me.
+
 I sit with my hands around a plastic cup of the worst coffee in the county and I ask the question I came to ask, and I ask it badly.
 
 "Was there anything in her file that didn't fit?"
@@ -82,7 +94,21 @@ The room does something. Not spins — I'm not going to give you spinning rooms,
 
 "You could have told me."
 
-"You didn't ask," Okonjo says, and it isn't cruel, it's just true, and it lands like something dropped from a height. "You told me she was fine when she left. You told me twice. You told me she hugged you at the door and said *see you at Mum's*, and then you told me you were at home all night, and I believed you, and I still do." A pause, the exact length of a held breath. "You never once asked me what happened in between."
+"You didn't ask," Okonjo says, and it isn't cruel, it's just true, and it lands like something dropped from a height.
+
+I sit with it.
+
+"That can't be right," I say. "I asked hundreds of questions. I rang this building so often the woman on the front desk knew my voice."
+
+"You did." She doesn't look away. "You asked whether the barrier had been maintained. You asked about the road surface. You asked twice about the drainage, and I got a man from the council to send me a survey, and I sent it to you, and you rang back with a question about the camber."
+
+"Because those were the things that—"
+
+"They were all questions about the *road*," she says. "Not one of them was a question about your sister. In fourteen months you have never once asked me what state she was in when she left that party, or who she spoke to, or where she went for thirty-one minutes."
+
+The clock on her wall does its thing.
+
+"I've watched a lot of families do this," she says, more gently. "Everybody has a question they don't ask. Usually it's *did she suffer*. That one I understand." She turns her mug. "Yours isn't that one. Yours is a whole half hour, and I've been waiting fourteen months for you to notice it's missing." "You told me she was fine when she left. You told me twice. You told me she hugged you at the door and said *see you at Mum's*, and then you told me you were at home all night, and I believed you, and I still do." A pause, the exact length of a held breath. "You never once asked me what happened in between."
 
 I don't have an answer for that.
 

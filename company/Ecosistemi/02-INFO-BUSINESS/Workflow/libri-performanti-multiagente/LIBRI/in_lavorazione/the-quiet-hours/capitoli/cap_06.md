@@ -22,6 +22,22 @@ I AirDrop him eleven seconds of nothing and he puts it on a screen and it become
 
 He works for forty minutes. He talks the entire time — about noise reduction, about a thing called spectral repair, about a job he did in 1994 for a coroner in Leeds that he clearly still thinks about. I drink the tea. Duchess relocates from the speaker to my lap without consulting me.
 
+"You'll want to know about the Leeds one," he says, without turning round, which is how I learn that Ken Boyd has been building to this for half an hour.
+
+"Go on."
+
+"Girl of nineteen. Answerphone message, forty seconds, family said it was her, police said it wasn't." He drags something across the screen. "It was her. Took me a week. And when I told the mother, she asked me a question I've never got over, which was: *does that mean it's my fault I didn't pick up?*"
+
+The garage hums. Somewhere out the back a boiler fires.
+
+"What did you tell her?"
+
+"I told her I do sound, not fault." He shrugs, one shoulder. "Which was a cowardly answer and I've had thirty years to think of a better one and I haven't." He glances at me sideways. "You'll ask me that question at some point. Not today. But you will, and I want you to know in advance that I'm going to give you the same cowardly answer, because it's the only true one I've got."
+
+"I wasn't going to ask you anything."
+
+"No," Ken agrees, pleasantly. "Nobody ever is."
+
 "Right," he says at last. "Two things. Then a third thing, and you're going to want to sit down for the third thing, except you're already sitting down, so."
 
 "Just tell me."

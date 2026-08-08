@@ -84,6 +84,30 @@ I do not remember waking up on the fourteenth of February with any sense that th
 
 He plays it again.
 
+I make myself watch it properly this time, the way I'd watch a patient's gait — clinically, looking for the tell.
+
+The woman comes out of the stairwell at a normal walking pace. Her arms swing. She is not shuffling and she is not gliding and she does not have her hands out in front of her like the thing people do in films.
+
+At the door she stops. Square on. Both feet.
+
+And then, at about the ninety-second mark, she does something that puts a cold line straight down my spine.
+
+She reaches up with her right hand and tucks a piece of hair behind her ear.
+
+It's nothing. It's a thing I do forty times a day. It's a thing I have done since I was eleven years old and my mother told me to stop.
+
+It is also, categorically, not a thing a body does on autopilot in the middle of a non-REM parasomnia, because it is not walking or standing or opening a door. It's a small vain fussy gesture made by a person who is aware of herself in a room.
+
+"Bernie," I say. "Can you go back thirty seconds and let it run without me talking?"
+
+He does.
+
+I watch the woman on the screen tuck her hair behind her ear at 02:48:31 on the fourteenth of February, on a floor that has been closed since November, outside a room that has been stripped to the boards.
+
+And then — and this is the part I do not tell Bernie, or Okonjo, or anybody, for another five weeks — she turns her head very slightly toward the camera.
+
+Not to it. Past it. The way you glance at something you already know is there.
+
 I watch myself walk out of the stairwell and stop in front of a door on a floor that has been closed for four months, and stand there without moving for six minutes and eleven seconds, and then walk away.
 
 "El?"

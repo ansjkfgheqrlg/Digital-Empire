@@ -52,6 +52,26 @@ She lived there until March of last year. The accident was the December before t
 
 She was living four hundred metres from where my sister died, on the night my sister died.
 
+There's more in the file, and I read all of it, sitting on a plastic chair in a room that smells of toner at twenty past three in the morning.
+
+Her admission was expedited. That's unusual — the waiting list at Ridgemont runs eleven months and people die on it. Marguerite Ferrante went from referral to bed in nine days, and the reason is in a social work note dated the second of March last year:
+
+*Mrs F unable to remain at current address. Repeated night-time wandering, on two occasions found on the carriageway. Neighbour intervention. Risk assessed as high, immediate placement sought.*
+
+On two occasions found on the carriageway.
+
+I read it three times.
+
+An eighty-two-year-old woman with dementia, who lived four hundred metres from a bend where my sister died, was walking out onto that road at night, repeatedly, in the months afterward.
+
+There's a second note, from a different hand, undated:
+
+*Family GP reports Mrs F has become preoccupied with a road traffic incident in the vicinity of her property (Dec, previous year). Discussed with daughter of neighbour — no family of her own. Reassurance given. Preoccupation likely fixation secondary to cognitive decline; content not reality-based.*
+
+*Content not reality-based.*
+
+Somebody wrote that sentence about a woman who had stood at her gate in a dressing gown and heard it happen.
+
 I put the file back. I finish my rounds. I chart everything I'm meant to chart and nothing I'm not.
 
 At six, Priya arrives with her hair wet and a coffee in each hand and gives me one without being asked, which is a small kindness I have no idea how to receive, and I take it and say thanks and drink it and it's too sweet.
