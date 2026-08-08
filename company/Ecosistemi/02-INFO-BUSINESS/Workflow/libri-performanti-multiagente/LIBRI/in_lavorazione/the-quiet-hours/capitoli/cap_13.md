@@ -1,5 +1,31 @@
 # On Purpose
 
+Before any of it, there is a thing I have to say, and I say it standing in his doorway.
+
+"I've been sitting in my flat for two days deciding whether you did this to me."
+
+Adrian doesn't move.
+
+"Whether I did what?"
+
+"The key. The voicemail. All of it." My voice is steady, which surprises me. "You knew my sister. You paid her phone bill, which means you had access to her account. You moved into this building in October. You knew my name before I told you and you gave me an explanation that was a lie — there's no photograph of the two of us in my hall, there hasn't been for a year."
+
+He goes very pale. That's the first honest reaction I've had out of him and I watch it happen.
+
+"Say something," I say.
+
+"I'm trying to work out which bit to answer first."
+
+"Answer the one you're most frightened of."
+
+"They're all the same one," Adrian says. "Yes, I know how it looks. I've known how it looks since about November. There's a version of me standing here that you should absolutely be frightened of, and I've got no way of proving to you that I'm not him except by talking, and talking is exactly what he'd do."
+
+We stand there.
+
+"That's the most reassuring thing you could have said," I tell him.
+
+"I know," he says. "That's the problem."
+
 We do it in his kitchen after all, because you cannot have this conversation on a landing and both of us know it.
 
 His flat is the mirror image of mine, which is disorienting — the same rooms in the wrong order, like a word said backwards. There's a piano where my sofa is. There are boxes he hasn't unpacked after five months.

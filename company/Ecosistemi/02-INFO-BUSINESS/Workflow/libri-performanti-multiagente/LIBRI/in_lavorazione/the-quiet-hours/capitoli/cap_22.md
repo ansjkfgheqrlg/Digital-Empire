@@ -142,6 +142,24 @@ It is, by any measure, the lightest possible outcome, and I walk out into a car 
 
 Which is: I had rather been hoping they'd strike me off.
 
+Ken Boyd dies in the same month, which I find out from Okonjo, who finds out from a colleague, because Ken had no one to put in a phone.
+
+Heart, in his kitchen, quickly. He was seventy-nine.
+
+I go to that funeral too. There are more people than I expect — a lot of men in their seventies who all seem to know each other from somewhere technical, and who talk in the crematorium car park about a job in Leeds in 1994 as if it happened last year.
+
+I introduce myself to one of them and say Ken helped me with an audio file.
+
+"Oh, he'd have loved that," the man says. "He got bored, you know. He'd have had you in that garage for hours."
+
+"He did."
+
+"Good." He nods, satisfied. "Good."
+
+The cat went to a niece in Carlisle, apparently. Duchess. Deaf as a post and eleven years old.
+
+I think about Ken more than I expect to, over that autumn. About a man who spent thirty years cleaning up the last recorded seconds of other people's lives, and who told me straight out, at the very beginning, that he did sound and not fault — and who was the only person in the whole of it who warned me, before I'd even started, that I was about to build a house on eleven seconds.
+
 I get a job in October. Community nursing, days, four days a week. It pays less. It has meetings in it, which I hate.
 
 I sleep about six hours a night. Some weeks five. In February — the anniversary of the anniversary, which nobody warns you about — I have a run of four bad nights and I ring Priti and she moves my appointment up, and that's the whole crisis: I make a phone call and someone moves an appointment.

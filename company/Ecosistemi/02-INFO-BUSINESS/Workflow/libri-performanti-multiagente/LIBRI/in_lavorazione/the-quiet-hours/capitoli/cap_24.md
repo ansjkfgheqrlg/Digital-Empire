@@ -102,6 +102,26 @@ You can hold that. It turns out you can hold that, if you can say it out loud, a
 
 ---
 
+On the way back to the car I stop at the gate of 8 Kesselwood Cottages.
+
+Somebody lives there now. There's a child's scooter on its side by the step and a hanging basket that has been given up on, and the hedge has been cut back hard, and the gate is the same gate.
+
+I stand at it for a minute.
+
+She was eighty-two. She had a hip that wouldn't take the bank. She had no telephone because the line had been off since Roberto, and no children, and no one to tell, and she stood at this gate in a dressing gown in December and heard a thing happen four hundred metres away and could not do anything about it, and for the last fourteen months of her life she apologised for it every single night to a woman who was doing exactly the same thing.
+
+The two of us, four hundred metres apart, both standing in the dark not answering a door.
+
+The difference is that she was old and frightened and had no way to help, and I was thirty-four with a phone in my hand.
+
+I've stopped trying to make that comparison come out in my favour. It doesn't. But I've also stopped needing it to, which took longer.
+
+There's a woman in the front window of the cottage now, looking out at me with the polite alarm of somebody who has noticed a stranger at her gate.
+
+I lift a hand. She lifts one back, uncertainly.
+
+I go back to the car.
+
 I drive home before it gets dark.
 
 There's a piano going when I come up the stairs — scales, badly, because his eleven o'clock has clearly moved to a five o'clock and is no better for it.

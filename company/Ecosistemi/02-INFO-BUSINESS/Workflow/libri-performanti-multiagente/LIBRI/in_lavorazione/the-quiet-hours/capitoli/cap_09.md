@@ -24,6 +24,34 @@ The woman on that monitor walked out of a stairwell at a normal pace, stopped at
 
 ---
 
+I go home at seven and I do not sleep, and at eleven I drive to my mother's.
+
+I have not been to my mother's on a weekday in two years. She opens the door in her cardigan with a duster in her hand and says "is something wrong?" which is what she says now instead of hello.
+
+"No. I was passing."
+
+"You were not passing. Nobody passes Bellhouse." But she stands back and lets me in.
+
+Nina's room is still Nina's room. Not a shrine — my mother is far too practical for a shrine — but the bed is made with the same duvet cover and there are three boxes stacked by the wardrobe with things in them that neither of us has been able to take to the charity shop.
+
+"You can look," my mother says from the doorway. "You don't have to ask me."
+
+I sit on the floor and go through a box.
+
+Her school lanyard. A birthday card from a child in her class with a drawing of what is either a horse or a dog. Two paperbacks with the spines broken. A phone charger. A pair of sunglasses with one arm gone.
+
+And underneath: a photograph in a frame, face down.
+
+It's the two of us at Whitby in 2003. I'm nineteen and doing a face; she's fourteen and doing a better one.
+
+"She had that on her windowsill at the flat," my mother says. "The police brought it back with the other bits."
+
+"Why's it face down?"
+
+My mother is quiet for a second.
+
+"Because I couldn't decide where to put it," she says, "and face down felt like less of a decision."
+
 I ask to see Mrs. Ferrante's admission notes properly. This time I do it the right way — I ask the manager, and I give a reason that is true enough to survive contact.
 
 "She's been vocalising about her old address at night. I want to know what's in there that we might be able to use to settle her."

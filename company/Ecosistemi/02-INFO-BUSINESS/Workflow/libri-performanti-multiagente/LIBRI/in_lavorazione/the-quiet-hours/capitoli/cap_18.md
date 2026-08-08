@@ -74,6 +74,38 @@ I don't answer.
 
 ---
 
+My mother comes on the Saturday.
+
+She has not been inside a hospital since the mortuary, and I know what it costs her to walk down that corridor, and neither of us says so.
+
+She brings grapes, because that is what her generation brings, and a cardigan of mine she has washed and which I did not know she had.
+
+We sit in the day room with the terrible chairs.
+
+"They're looking after you?"
+
+"They are."
+
+"Good." She smooths her skirt. "Your uncle rang. I told him you'd got a chest thing."
+
+"Mum."
+
+"Well, what would you have me tell him?" It comes out sharper than she means and she hears it and stops. "Sorry."
+
+We sit.
+
+"I've been thinking about your father," she says, which is not a sentence I have heard from her since about 2009.
+
+"Right."
+
+"When he went, you did the same thing." She's looking at the window, not at me. "Fourteen years old. You did the shopping and you did the forms and you were very useful, and I let you, because I couldn't do any of it and it was such a relief that somebody could." Her hands are still on her lap. "And I remember thinking at the time: she'll pay for this later.
+
+"And then I never thought about it again for twenty years."
+
+I don't say anything, because there isn't anything, and because my throat has closed.
+
+"So," my mother says, and pats my knee twice, briskly, which in our family is roughly equivalent to an hour of weeping. "That's what I've been thinking about. Eat the grapes."
+
 Adrian comes on the Sunday. He brings a book I don't want and a bag of the specific pears I like, which he has no way of knowing and which I don't ask about.
 
 We sit in the day room with the terrible chairs.

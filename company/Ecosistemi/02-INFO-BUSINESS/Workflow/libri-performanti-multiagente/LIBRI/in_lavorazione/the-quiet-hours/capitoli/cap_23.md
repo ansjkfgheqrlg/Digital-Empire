@@ -14,6 +14,36 @@ She rings in November and says: "I thought we'd have people. At the house. Nothi
 
 ---
 
+I spend the week before it in a state I recognise from nursing exams: not dread exactly, but a kind of constant low hum, the body getting ready for something the mind hasn't admitted to yet.
+
+Priti and I do two sessions instead of one.
+
+"You're going to tell them," she says on the Tuesday. It isn't a question.
+
+"I don't know."
+
+"Elena."
+
+"I don't *know*." I hate this room sometimes, and the fact that I hate it is apparently progress. "I've written it out. I've got it down to about four hundred words."
+
+"Read it to me."
+
+"No."
+
+"All right." She lets it go, which she does about once a month and only when it counts. "Then tell me what you're most afraid will happen."
+
+And I say, without thinking about it at all: "That somebody will say it's not my fault."
+
+Priti writes something down for the first time in twenty minutes.
+
+"Why is that the frightening one?"
+
+"Because if it's not my fault then it's nothing," I say. "It's just a thing that happened. And she'd be dead for no reason at all, and there'd be nowhere to put any of it."
+
+There is a silence in that room of a particular quality.
+
+"Right," Priti says eventually. "Well. Now we know what we've actually been doing for eight months."
+
 There are fourteen of us in a front room in Bellhouse with too many chairs.
 
 Nina's friends from the school. Two women from university I've met three times. An uncle. My mother's neighbour who has done all the food and will not sit down.

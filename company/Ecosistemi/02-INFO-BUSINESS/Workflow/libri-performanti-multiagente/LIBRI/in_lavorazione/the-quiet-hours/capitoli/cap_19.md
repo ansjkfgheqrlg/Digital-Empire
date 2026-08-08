@@ -8,6 +8,32 @@ I am asleep. Then I am awake, sitting up in a hospital bed on Ward 4 at ten past
 
 I don't shout. I don't ring the buzzer. I sit in the bed with my hands in my lap and I let it be true.
 
+What comes first is not an image. It's a physical sensation, entirely specific and entirely undeniable: the weight of a car door against my left shoulder as I push it open into cold air.
+
+That's all. That's the whole of it, for about ninety seconds — a door, my shoulder, the temperature change.
+
+And I sit in a hospital bed and I do not chase it, because Dr. Iyer has spent six days telling me that chasing is what closes it, and for once in my life I do as I'm told.
+
+Then the rest arrives, in no order at all, the way a room arrives when someone turns on the light.
+
+The smell of the inside of Nina's car, which was vanilla air freshener over cigarettes she pretended she'd stopped smoking.
+
+The specific green of the dashboard lights.
+
+Her hands on the wheel at ten and two, which she did when she was concentrating, which she did when she was drunk.
+
+The click of the hazards.
+
+And my own voice, saying a word.
+
+I sit with all of it for perhaps twenty minutes. The ward does its night sounds — a buzzer somewhere, a trolley, the low conversation of two people at the desk who think everyone is asleep.
+
+At some point I notice I am not frightened.
+
+I had expected terror. I had built the moment up for fourteen months as a thing that would break me, and what it actually feels like, sitting up in a hospital bed at ten past three, is the specific relief of finally putting down something heavy you had stopped noticing you were carrying.
+
+It is the worst thing I have ever known and it is a relief. Both. At the same time. Nobody prepares you for that either.
+
 ---
 
 Here is what happened on the fourteenth of December.

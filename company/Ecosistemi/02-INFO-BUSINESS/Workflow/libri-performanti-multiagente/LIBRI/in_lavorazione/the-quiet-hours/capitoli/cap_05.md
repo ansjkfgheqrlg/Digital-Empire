@@ -74,6 +74,30 @@ Somebody wrote that sentence about a woman who had stood at her gate in a dressi
 
 I put the file back. I finish my rounds. I chart everything I'm meant to chart and nothing I'm not.
 
+Before Priya comes on I do the last round, which at Ridgemont is the one everybody says they like and nobody explains why.
+
+Half five. The building starts to change. There's a specific grey that comes into the corridors about twenty minutes before the day staff arrive, and the machine that has been running for eight hours starts handing itself over.
+
+Mr. Osei is asleep with the Wilbur Smith open on his chest, page two hundred and eleven, which is four pages further than yesterday.
+
+The Kelly sisters, who are not sisters, have found each other across the gap again.
+
+Mrs. Duffy has kicked the blanket off and I put it back, and she says something in her sleep that is not words, and settles.
+
+In room 7 Mr. Aldridge is awake, sitting on the edge of the bed with his slippers on the wrong feet, waiting.
+
+"It's not time yet, love."
+
+"I know," he says. "I like to be ready."
+
+I swap his slippers round. He watches me do it with the total absence of embarrassment of a man of eighty-eight who has decided that dignity is a thing other people can worry about.
+
+"You look tired," he says.
+
+"Everyone keeps telling me that."
+
+"Well," says Mr. Aldridge, "we've got nothing else to do in here but look at you."
+
 At six, Priya arrives with her hair wet and a coffee in each hand and gives me one without being asked, which is a small kindness I have no idea how to receive, and I take it and say thanks and drink it and it's too sweet.
 
 "Elena." She's looking at me over the lid of her cup. "Can I say a thing?"

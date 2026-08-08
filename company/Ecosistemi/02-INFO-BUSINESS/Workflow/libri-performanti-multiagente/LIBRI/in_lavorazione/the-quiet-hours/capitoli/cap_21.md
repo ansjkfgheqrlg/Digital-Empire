@@ -108,6 +108,40 @@ Some part of me had been keeping her voice going, and using it, and pointing it 
 
 ---
 
+There's one entry I go back to more than the others, and it isn't one of the dramatic ones.
+
+It's from a Tuesday in May, and it says:
+
+> *Bought bread. Put it in the freezer. She used to say I bought bread like someone expecting a siege. Wrote this down because I laughed and there was no one in the room.*
+
+Nineteen words about bread.
+
+I sat on that bench in July and read that entry and cried for about ten minutes, properly, with the noise, in a public place, for the first time since the second week.
+
+Because that's her. Not the road, not the barrier, not the eleven seconds. A woman standing in a kitchen at four in the morning laughing on her own at something her dead sister used to say about bread, and writing it down because there was nobody to tell.
+
+Fourteen months. Sixty-one entries. And in all of them, the thing that comes off the page is not guilt.
+
+It's how much she missed her.
+
+I have spent two years believing that what I was carrying was a secret. It wasn't. Or it wasn't only that. Underneath the secret there was just an enormous, ordinary, unspectacular missing, which had nowhere to go because I would not let it out in daylight — so it went out at four in the morning, in a locker in a record shop, in nineteen words about bread.
+
+---
+
+Priti asks me, in September, what I want to do with the notebook.
+
+"That's a therapy question."
+
+"It's a practical question. It's an object and it's in your wardrobe and you'll have to decide."
+
+I say I'll think about it. I think about it for three weeks.
+
+I don't burn it, which is what I assume I'll do and which I have a small ceremony half-planned for. Burning it would make it a symbol, and it isn't a symbol, it's sixty-one nights of work by a version of me who had nobody to help her.
+
+I don't read it again either. I've read it twice and there's nothing left in it I don't have.
+
+In the end I put it in the box with the photographs, because that's where the rest of her is, and because a woman who wrote nineteen words about bread at four in the morning belongs in the same box as a photograph of Whitby in 2003.
+
 I put the notebook in the wardrobe, with the box of photographs I couldn't walk past in January of last year.
 
 Then, because I have learned one thing in eleven days on Ward 4 and four months of Thursday afternoons with a woman called Priti who does not let me get away with anything, I take the box out again, and I take the photographs out of it, and I put two of them on the hall table.

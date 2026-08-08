@@ -62,6 +62,20 @@ That's what I tell myself, and it works for almost an hour, and then I think: th
 
 At 2:14 this morning I was on the second floor of Ridgemont Care Home, checking a drip.
 
+There's a thing that happens with grief and paperwork that nobody warns you about.
+
+For about six weeks after a death, you are extremely busy. There are forms. There is a registrar's appointment and a certificate that costs eleven pounds a copy and you need nine copies. There are banks to ring, each of which has a bereavement department staffed by people who are unexpectedly, disarmingly kind, and each of which requires the same conversation from the beginning.
+
+I did all of it. My mother could not, and there was nobody else, so I sat at this table with a folder and a list and I closed my sister's life down in six weeks flat.
+
+I cancelled her gym. I cancelled a magazine subscription she'd had since university. I rang a dentist to cancel a check-up on the nineteenth of January and the receptionist said "and can I ask why she's cancelling?" and I said the words and she said "oh, love" and I had to sit on the floor.
+
+And then it stops.
+
+That's the part. Around week seven you close the last account and there is suddenly nothing to do, and the not-having-anything-to-do is where it comes for you.
+
+I think a lot about the fact that the insomnia didn't start at the funeral. It started in the last week of January, the week the folder was finished.
+
 I go to bed at eight in the morning with the blackout blind down and my body making the specific complaint bodies make when you ask them to sleep against the sun.
 
 I do the routine. Blind down. Phone face down and across the room. Fan on for the noise. The counselling woman gave me a list and I still do the list, more out of superstition now than belief.
