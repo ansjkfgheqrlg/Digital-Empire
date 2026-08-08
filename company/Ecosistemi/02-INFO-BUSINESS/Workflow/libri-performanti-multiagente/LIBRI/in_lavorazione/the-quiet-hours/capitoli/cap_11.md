@@ -66,6 +66,20 @@ And on top of the shoebox, a spiral-bound notebook, A5, the cheap kind you buy i
 
 I take them both out and I sit down on the floor of a record shop storeroom with my back against the lockers, because my legs have made an executive decision.
 
+Before I open anything I sit there and I do the thing I have been trained to do, which is to think about who else could have done this.
+
+It's a short list and I make myself walk it.
+
+My mother. Who has not driven at night since 2011 and who would have had to get a key cut, rent a locker in a record shop, and write sixty pages in my handwriting.
+
+Adrian. Who I have known five weeks and who could not have written entries dated last January.
+
+Somebody who knew Nina. Same problem: the handwriting.
+
+That's the wall I keep hitting and have been hitting since the second page. It isn't a handwriting *like* mine. There is a loop on my lowercase g that my old ward sister used to take the mickey out of, an actual physical habit I have had since I was seven, and it is on every page.
+
+So the list has one name on it, and I have known that since I sat down, and everything I have been doing for the last four minutes is a way of not turning round.
+
 The shoebox first.
 
 Nina's things. Not the important ones — not her jewellery, not her laptop, none of the objects the family divided in that awful week. Small things. A hair tie. A lipstick worn down to the metal. Three ticket stubs. A hotel keycard. A photograph of the two of us on a beach at Whitby in about 2003, curled at one corner.

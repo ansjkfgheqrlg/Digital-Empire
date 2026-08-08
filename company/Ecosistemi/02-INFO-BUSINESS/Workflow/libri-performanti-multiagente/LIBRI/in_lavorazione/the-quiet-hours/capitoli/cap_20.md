@@ -66,6 +66,32 @@ He looks at the floor for a while.
 
 "Nina and I were seeing each other." He says it like a man putting down something he has carried up a hill. "From about the March before she died until she died. Nine months."
 
+I look at the day room carpet, which is the colour of nothing.
+
+"Nine months," I say.
+
+"Yes."
+
+"I spoke to her probably three hundred times in those nine months."
+
+"I know."
+
+"We went to Whitby in August. We spent four days in a caravan. She was on her phone constantly and I took the piss out of her for it and she said it was work." I hear my own voice doing something unpleasant. "It was you."
+
+"It was me."
+
+"Did she—" I stop, and make myself ask the real one. "Did she say why she wasn't telling me?"
+
+Adrian is quiet for a moment.
+
+"She said you'd be disappointed in her," he says. "Not angry. Disappointed. She said anger she could work with and disappointment was the other thing." He turns his hands over. "And she said — and I've thought about whether to tell you this for four months — she said *El thinks I'm the one who gets away with things.*"
+
+The room hums.
+
+"She wasn't wrong," I say.
+
+"No," says Adrian. "She wasn't."
+
 The day room hums.
 
 "She was thirty," I say. "You were—"

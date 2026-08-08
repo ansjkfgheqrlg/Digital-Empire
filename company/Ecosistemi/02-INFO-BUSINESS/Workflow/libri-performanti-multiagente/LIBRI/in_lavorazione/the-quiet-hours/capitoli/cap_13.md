@@ -105,3 +105,23 @@ There is no text from Nina on the fourteenth of December on my phone. I have bee
 "There's no text," I say.
 
 "There was," he says. "She showed me the screen. She'd already sent it."
+
+I get my phone out and I go to her thread, which I have not deleted and will not delete, and I scroll to December.
+
+The last message from Nina is dated the eleventh. *thanks for tonight. sorry i was weird. see you at mums xx*
+
+Then nothing. Then the twelfth, thirteenth, and on the fourteenth, at 21:04, one message.
+
+From me.
+
+Just: *?*
+
+A question mark, sent by me to my sister at four minutes past nine on the night she died, in reply to nothing.
+
+Adrian looks at the screen for a long time.
+
+"That's an answer to something," he says quietly.
+
+"There's nothing above it."
+
+"No," he says. "There isn't now."

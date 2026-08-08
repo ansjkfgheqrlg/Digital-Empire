@@ -68,6 +68,26 @@ The entry is dated the fourth of September.
 
 ---
 
+Before I go downstairs I do something I have been avoiding for eleven days, which is to look properly at my own flat.
+
+Not tidy it. Search it.
+
+I start in the wardrobe because that is where I put things I can't look at, and the box of photographs is where I left it in January of last year, and under the box there is a carrier bag I do not recognise.
+
+Inside the carrier bag: an Ordnance Survey map of the area, folded to the Kesselwood sheet, with a biro ring round the bend. A head torch, still in its packaging, bought from a shop on the retail park according to the sticker. A pair of walking boots, size six, mine, muddy, which I have never owned.
+
+I sit on the bedroom floor with a pair of boots I bought and wore and cleaned nothing off.
+
+The receipt is in the boot. Fourteenth of March last year, 04:51, twenty-four-hour supermarket on the ring road.
+
+Ten to five in the morning. I would have been asleep. I was asleep — that's a Tuesday, I know it's a Tuesday because I did four nights that week and Wednesday was my first off, and I would have got home at seven on the Tuesday morning and gone to bed.
+
+Except at ten to five I was in a supermarket on the ring road buying walking boots with my own bank card.
+
+I check the statement on my phone, standing in the bedroom.
+
+It's there. £34.99. I have looked at that statement eleven times in fourteen months and never once queried a thirty-five pound transaction, because who queries thirty-five pounds.
+
 I go and knock on his door at nine in the morning, which is when he told me he does scales, and I can hear the scales through the door before I knock, so at least one thing in the world is what it claims to be.
 
 He opens it. He's in a jumper with a hole in the elbow and he has a pencil behind his ear and he looks pleased to see me for about half a second before he reads my face.

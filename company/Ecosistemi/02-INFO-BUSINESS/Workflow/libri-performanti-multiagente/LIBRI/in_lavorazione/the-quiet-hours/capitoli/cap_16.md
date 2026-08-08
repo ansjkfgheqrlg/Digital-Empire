@@ -58,6 +58,22 @@ I know what it is. That's the thing I want to be very clear about. I know it is 
 
 And I still turn my head away from the corner by the bookshelf, because knowing what a thing is does not stop you from having to be in a room with it.
 
+Somewhere in the third night I go looking for the list.
+
+*Groceries.* Forty-one items. The things that didn't sit right.
+
+It isn't there. Not deleted-and-recoverable, not in the archive — the note is gone, and the app tells me in its cheerful way that it was last edited eleven days ago, and eleven days ago is the night the voicemail arrived.
+
+I stand in the kitchen at four in the morning and I understand that some version of me has closed the file.
+
+Not hidden it. Closed it. The way you close a case: this is finished, there is nothing further to investigate, thank you for your time.
+
+And I sit down on the kitchen floor with my back against the cupboard, and I say out loud, to an empty flat, in a voice that comes out much smaller than I intend:
+
+"I don't want to know."
+
+It's the first completely honest sentence I have said in fourteen months and there is nobody in the room to hear it.
+
 At some point on the fourth night I am standing in the kitchen and the notebook is on the table.
 
 The notebook is in a police evidence bag in a building on the other side of the city.

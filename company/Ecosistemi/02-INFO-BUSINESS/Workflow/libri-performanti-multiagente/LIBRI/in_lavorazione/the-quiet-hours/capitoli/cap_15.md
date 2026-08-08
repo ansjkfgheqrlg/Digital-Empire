@@ -32,6 +32,22 @@ I go back to work on the Thursday, because Denise rings and asks and because the
 
 Ridgemont at ten at night. The smell of it. The machine with its eleven moving parts.
 
+Denise has me in the office before I start.
+
+"Occupational health," she says, sliding a form across. "Not a punishment. It's what I'd do for anyone who'd been off with what you've been off with."
+
+"I've been off four days."
+
+"You've been off four days *this time*." She doesn't blink. "Elena, you've done four hundred and eleven nights in the last two years. I ran it this morning because I wanted the number before I sat down with you." She taps the desk. "Four hundred and eleven. That's not a rota, that's a person hiding."
+
+I look at the form.
+
+"There's something I want to say and then I'll shut up," Denise says. "When your sister died I gave you three weeks and you took eight days, and I let you come back because we were short and because you told me work was the only thing holding you together, and I believed you because it was convenient for me to believe you."
+
+She's not looking at me now. She's looking at the wall.
+
+"That was two years ago and I've thought about it a lot," she says. "So this time you're going to fill in the form."
+
 I don't go to room 12.
 
 I make it four hours. At two in the morning I'm at the desk with the tea I don't drink and I think about an eighty-two-year-old woman four hundred metres from a bend and a torch moving about in the dark, and at 02:10 I put down the pen and go.

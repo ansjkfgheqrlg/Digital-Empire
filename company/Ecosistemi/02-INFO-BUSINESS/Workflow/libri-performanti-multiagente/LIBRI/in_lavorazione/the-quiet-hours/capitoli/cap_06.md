@@ -94,6 +94,20 @@ And Ken Boyd, who has been generous and clear and kind for the last hour, looks 
 
 ---
 
+Before I leave, Ken says: "One more thing and then I'll let you go."
+
+He's turned off the monitor. That's deliberate; I notice it and I appreciate it.
+
+"The gate on that recording. The compression." He rubs the back of his neck. "I said anything quiet gets thrown away. That's true. But there's a bit at the very end, after your three syllables, about a second and a half, where the noise floor changes."
+
+"Changes how?"
+
+"It gets *quieter*." He shrugs, uncomfortable. "Which happens when a phone is moved away from a source of noise. Or when a car door shuts."
+
+"So she got out of the car."
+
+"Or somebody else got in," says Ken Boyd. "Or she put the phone down. Or she moved her arm. That's the honest end of it and I'd like you to hold on to the honest end, because you've got the look of somebody who's about to build a house on eleven seconds."
+
 I drive home the long way. I don't decide to; I just find myself on the ring road, going past the exit I want, and then the next one.
 
 She called me at 00:31.

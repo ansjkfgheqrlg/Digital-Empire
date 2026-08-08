@@ -1,5 +1,23 @@
 # I Film Myself Sleeping
 
+I don't sleep for two days after the corridor.
+
+Not from fear — I want to be accurate about this, because it would be a tidier book if I'd been frightened. What I feel is something closer to professional embarrassment, which I recognise as absurd even at the time.
+
+I have spent eleven years assessing other people's cognition. I have a laminated card in my bag with the abbreviated mental test on it. I have sat opposite families and explained, kindly, that the man they are describing is not "having a funny turn," he is exhibiting a symptom, and that symptoms are things you take to a doctor.
+
+And here is a woman in a corridor on a closed floor for six minutes and eleven seconds, and I have told the security guard it was a smell.
+
+On the second afternoon I get as far as the GP surgery car park.
+
+I sit there for twenty minutes with the engine off. I have the appointment. I made it on the phone that morning, and the receptionist asked what it was regarding and I said *sleep*, which was true and which was the smallest possible true thing I could have said.
+
+And then I think about what happens if I go in and say the rest of it.
+
+Because I know the pathway. I *am* the pathway. You disclose parasomnia with amnesia and confusional arousal to a GP, and if you're lucky you get a sleep clinic referral in nine months. And if you're unlucky — if the GP is thorough, if they ask the right question about your driving — there is a form, and the form goes to the DVLA, and my licence is my job.
+
+I drive home without going in.
+
 I buy the camera that afternoon.
 
 It's a cheap thing, a security camera meant for people who want to watch their dogs — sixty pounds, plugs into a socket, streams to an app, records to a card when it detects motion. I set it up on the bookshelf in the bedroom facing the bed and I test it by walking about, and the app shows me a small grainy grey woman walking about, and something about seeing myself in infrared makes my skin crawl in a way I decide not to examine.

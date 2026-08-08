@@ -34,6 +34,24 @@ I tell her on the Wednesday.
 
 On the fourth night I sleep six hours and wake up and cry for forty minutes in a bathroom with a plastic mirror, and a healthcare assistant called Marcus sits outside the door and says nothing and does not go away.
 
+On the fifth day they let me walk in the garden, which is a rectangle of grass with a bench and a smoking area that everybody uses including the people who don't smoke, because it is the only place on the ward where you can have a conversation nobody writes down.
+
+Jackie comes out with me and rolls a cigarette she doesn't light.
+
+"Can I tell you the thing I've worked out in five weeks?" she says.
+
+"Go on."
+
+"Everybody in there is in for the same thing." She gestures at the building with the unlit roll-up. "Different names on the notes. Same thing underneath. Every single one of us is in here because there's something we can't say."
+
+"That's a bit neat."
+
+"It's completely neat and I don't care." She puts the cigarette behind her ear. "Mine's that I hated my mother. Twenty years of caring for her, wiping her, doing everything, and I hated her the entire time, and she died and I couldn't say it, and eventually I stopped being able to leave the house." She says it without drama, the way you'd list ingredients. "Six weeks of tablets and a woman called Deborah and all I actually needed was to say the sentence in a room with a person in it."
+
+"And that worked?"
+
+"Christ, no. I said it and I felt worse for a fortnight." Jackie laughs. "But then it was *out*, and once it's out you can look at it, and it turns out I hated her and loved her, which apparently is allowed, and nobody had ever told me that."
+
 On the sixth day Dr. Iyer says the word.
 
 "Dissociative amnesia."

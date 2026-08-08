@@ -108,6 +108,22 @@ It is the first straight answer I have had from anybody in fourteen months and i
 
 ---
 
+On the way out she stops at the front desk and asks the civilian on duty for a form, and fills in three lines of it standing up, and I watch her do it without understanding what I'm watching.
+
+"What's that?"
+
+"Referral," she says, not looking up. "Victim support. You're entitled to it and you should have been offered it fourteen months ago and I've just checked and you weren't, because the file was closed as accidental and accidental deaths fall down a gap."
+
+"I don't want—"
+
+"I know you don't want it." She signs the bottom. "They'll ring you. You can tell them to get lost, and that's your business, but the offer will have been made and it'll be on the system that it was made, and if in eight months you change your mind you won't have to start from nothing."
+
+She hands the form over the desk.
+
+"That's not detective work," I say.
+
+"No," Okonjo agrees. "That's the job, though."
+
 She walks me out. In the corridor, near the doors, she stops.
 
 "The key," she says. "Have you still got it?"

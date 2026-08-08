@@ -32,6 +32,14 @@ Not perfectly. I want to say that clearly, because I've read the books where the
 
 I sleep six hours, most nights. Some nights four. In the run-up to December it gets worse and I know now that it will get worse, which is most of the battle.
 
+There are practical things, and nobody writes about the practical things, so I will.
+
+I gave my car keys to Adrian for four months. Not symbolically — he kept them in his flat and I knocked on his door in the morning when I needed the car, which is humiliating for about three weeks and then becomes as ordinary as anything else.
+
+There is a bolt on the inside of my front door, high up, at a height I have to consciously reach for. Dr. Iyer's suggestion. The theory is that a sleeping brain will do a familiar action and not an unfamiliar one, and the theory has held so far.
+
+I do not work nights. That's permanent. It cost me eleven years of seniority and about six thousand a year, and it is not negotiable, and when the agency rings — they always ring, they are always short — I say no in the first sentence.
+
 Twice in the first year I woke up somewhere I didn't remember going. Once in the hall. Once in the car, on the drive, with the engine off and the keys in my lap.
 
 Both times I went back inside and rang Priti in the morning and said the words *it happened again*, out loud, to another person, and both times the world did not end.
@@ -49,6 +57,16 @@ I go on the fourteenth of December, in the afternoon, in daylight, and I park in
 There's a fence post I know. There's a stretch of new barrier that has weathered now and doesn't look new. There's the gate at the cottages where an old woman stood in her dressing gown and was too frightened to answer her door, and did not forgive herself for it for the rest of her life, which ended in March of this year, and whose funeral I went to and stood at the back of like a guitar teacher.
 
 I stand at the barrier for a while.
+
+The council put a sign up in the spring. SLOW — BEND. It is the third sign on that stretch and it will not make any difference to anybody, and I know because I sat in a room in February and asked for it, along with a request for the barrier to be extended forty metres, which was refused on cost.
+
+I did that properly, in daylight, with a form. It took four months and two meetings and I was polite in both of them.
+
+The sign is not for her. I want to be clear about that with myself, standing here, because it would be very easy to let it be a headstone and it isn't one; she has a headstone, in Bellhouse, and I go there too, and it says her name and two dates and *loved*.
+
+The sign is for whoever comes round that bend at midnight next December.
+
+That's the only useful thing I have found to do with any of it, in the end. It is embarrassingly small, like everything else that works.
 
 I don't talk to her. There's nothing there to talk to; I've been very consistent about that and I'm not going to lose my nerve at the end.
 

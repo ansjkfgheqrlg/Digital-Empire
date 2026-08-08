@@ -54,6 +54,30 @@ I look at her.
 
 ---
 
+There is one thing in the notebook that Okonjo asks me about directly, in the café, before she hands it over.
+
+"Page fifty-three," she says. "I need to ask, and then I'll never ask again."
+
+I know the page. Everybody who has read the notebook knows the page.
+
+It's from the twelfth of November, three months before it all came apart, and it says:
+
+> *If I can't get there by December I'll do the other thing. I've thought about the other thing enough now that it's not frightening, which is how you know.*
+
+"Were you planning to kill yourself?" Okonjo says.
+
+The café does its noise around us.
+
+"I don't know," I say. "That's the honest answer and I've had it out with Priti four times. I don't remember writing it. I don't remember thinking it." I turn the cup. "But I read it and I don't feel like it belongs to a stranger, which is the bit that frightens me."
+
+"Have you told your doctor?"
+
+"Day two on the ward. It's in my notes. There's a plan and there's a number and I've used it once."
+
+Okonjo nods slowly.
+
+"Good," she says, and that's all, and she never asks again, and I find out about eleven months later — from a nurse on a completely unrelated ward, of all places — that she rang Dr. Iyer's team the day she read it, before she ever raised it with me.
+
 I read the notebook properly in July, on a bench outside the flat, in daylight, with a coffee, like a person reading a book.
 
 Sixty-one entries, fourteen months. I read them in order and it takes four hours and I stop twice.

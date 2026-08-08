@@ -124,6 +124,24 @@ I think about it honestly.
 
 ---
 
+There's a hearing in August. Not a court — the nursing council, because Angela wrote it up as she said she would and because a registered nurse spending forty minutes questioning a resident with dementia at two in the morning is a thing that has to go somewhere.
+
+I don't defend it. That surprises everybody including me.
+
+I sit in a room with three people and a laptop and when they ask me to respond to the allegation I say: "It's accurate. I did that. She was distressed and I kept going because I wanted something from her."
+
+The woman chairing it looks up.
+
+"Do you want to tell us about the mitigating circumstances?"
+
+"There are some," I say. "I'd rather they were in the notes than in my mouth."
+
+They give me a caution and a condition: supervised practice for twelve months, and a return-to-work interview with occupational health before I take another post.
+
+It is, by any measure, the lightest possible outcome, and I walk out into a car park in August feeling worse than when I went in, and it takes Priti about three sessions to get out of me why.
+
+Which is: I had rather been hoping they'd strike me off.
+
 I get a job in October. Community nursing, days, four days a week. It pays less. It has meetings in it, which I hate.
 
 I sleep about six hours a night. Some weeks five. In February — the anniversary of the anniversary, which nobody warns you about — I have a run of four bad nights and I ring Priti and she moves my appointment up, and that's the whole crisis: I make a phone call and someone moves an appointment.
