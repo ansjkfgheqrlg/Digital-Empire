@@ -35,20 +35,112 @@ def _build_cover_prompt(book_context: dict) -> str:
     if plot:
         details += f" Setting/premise: {plot}"
 
+    # Il formato va chiesto in modo insistente e all'INIZIO: chiedendolo di sfuggita in
+    # coda ("portrait orientation") il modello ha restituito un quadrato 1024x1024,
+    # inutilizzabile per un 6x9 (caso reale, 2026-08-08).
     return (
+        f"IMPORTANT: the image must be a TALL VERTICAL PORTRAIT rectangle with a 2:3 "
+        f"aspect ratio (like a real book cover, e.g. 1024 wide by 1536 tall). Do NOT "
+        f"produce a square image.\n\n"
         f"Design a professional book cover illustration for a {genre} novel titled "
-        f"\"{title}\". {details} No text or typography in the image (title/author are "
-        f"added separately during KDP formatting) — illustration only, evocative of the "
-        f"genre and story, portrait orientation, high detail, publisher-quality artwork."
+        f"\"{title}\". {details} No text, no words, no lettering anywhere in the image "
+        f"(title and author are added separately during KDP formatting) — illustration "
+        f"only, evocative of the genre and story, high detail, publisher-quality artwork, "
+        f"composed for a tall vertical book cover."
     )
 
 
-def generate_cover(page: Page, book_context: dict, out_path: Path) -> Path:
+# Requisiti KDP reali per una copertina 6x9in (fonte: kdp.amazon.com, cover guidelines):
+# rapporto altezza/larghezza 1.5, minimo 300 DPI sul trim con abbondanza.
+KDP_ASPECT_RATIO = 1.5
+KDP_ASPECT_TOLERANCE = 0.05
+KDP_MIN_WIDTH_PX = 1600   # sotto questa larghezza KDP segnala bassa risoluzione
+
+
+def verifica_copertina_kdp(path: Path) -> dict:
+    """Controlla che l'immagine sia davvero utilizzabile su KDP (2026-08-08).
+
+    Nato da un caso reale: la prima copertina generata per "The Quiet Hours" era bella e
+    coerente ma **quadrata 1024x1024**, cioe' inutilizzabile per un 6x9 — e il codice
+    l'aveva accettata perche' controllava solo che il file esistesse e pesasse piu' di 5KB.
+    Un controllo sulla dimensione del file non dice NIENTE sull'usabilita': serve guardare
+    le proporzioni e la risoluzione, come farebbe KDP al caricamento."""
+    from PIL import Image
+
+    with Image.open(path) as im:
+        w, h = im.size
+    ratio = h / w if w else 0
+    problemi = []
+    if abs(ratio - KDP_ASPECT_RATIO) > KDP_ASPECT_TOLERANCE:
+        problemi.append(
+            f"proporzioni sbagliate: 1:{ratio:.2f} invece di 1:{KDP_ASPECT_RATIO} "
+            f"(6x9in) — KDP rifiuta o deforma"
+        )
+    if w < KDP_MIN_WIDTH_PX:
+        problemi.append(f"risoluzione bassa: {w}px di larghezza, minimo {KDP_MIN_WIDTH_PX}px")
+    return {"larghezza": w, "altezza": h, "rapporto": round(ratio, 3),
+            "ok": not problemi, "problemi": problemi}
+
+
+def adatta_a_kdp(src: Path, dest: Path | None = None,
+                  larghezza_finale: int = 1800) -> Path:
+    """Trasforma un'immagine qualsiasi in una copertina conforme a KDP (6x9in, 300 DPI).
+
+    Perche' serve (2026-08-08): i modelli immagine di LM Arena restituiscono un quadrato
+    1024x1024 qualunque cosa chieda il prompt — verificato chiedendo il formato verticale
+    sia in coda sia in apertura, in maiuscolo, con le proporzioni esplicite. Invece di
+    rigenerare all'infinito sperando in un formato diverso, si adatta l'immagine ottenuta:
+    deterministico, ripetibile, indipendente dal modello.
+
+    Come: ritaglio CENTRATO al rapporto 2:3 (i soggetti generati stanno praticamente
+    sempre al centro), poi ingrandimento a risoluzione KDP con LANCZOS.
+
+    Limite dichiarato, non nascosto: partendo da 1024px si ingrandisce di ~2.6x, quindi la
+    resa e' buona ma non pari a un'illustrazione nativa ad alta risoluzione. Per un libro
+    di punta conviene far rifinire la copertina a un grafico; per il volume di pubblicazione
+    va bene."""
+    from PIL import Image
+
+    dest = dest or src.with_name(src.stem + "_kdp.png")
+    altezza_finale = int(larghezza_finale * KDP_ASPECT_RATIO)
+
+    with Image.open(src) as im:
+        im = im.convert("RGB")
+        w, h = im.size
+        # ritaglio centrato al rapporto corretto
+        if h / w < KDP_ASPECT_RATIO:          # troppo larga: taglio ai lati
+            nuova_w = int(h / KDP_ASPECT_RATIO)
+            sinistra = (w - nuova_w) // 2
+            im = im.crop((sinistra, 0, sinistra + nuova_w, h))
+        else:                                  # troppo alta: taglio sopra/sotto
+            nuova_h = int(w * KDP_ASPECT_RATIO)
+            alto = (h - nuova_h) // 2
+            im = im.crop((0, alto, w, alto + nuova_h))
+        im = im.resize((larghezza_finale, altezza_finale), Image.LANCZOS)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        im.save(dest, "PNG")
+
+    print(f"[cover] adattata a KDP: {dest.name} ({larghezza_finale}x{altezza_finale}, 6x9in @300dpi)")
+    return dest
+
+
+def generate_cover(page: Page, book_context: dict, out_path: Path,
+                    verifica: bool = True) -> Path:
     """Genera la copertina reale (CP7) via LM Arena e la salva in `out_path`. Fatto = un
     file .png reale su disco, con un prompt diverso per ogni libro diverso (mai lo stesso
-    prompt fisso — quello e' il bug che questo checkpoint deve evitare per costruzione)."""
+    prompt fisso — quello e' il bug che questo checkpoint deve evitare per costruzione)
+    E verificato utilizzabile su KDP (proporzioni + risoluzione), non solo esistente."""
     prompt = _build_cover_prompt(book_context)
-    return lmarena_client.send_image_prompt(page, prompt, out_path)
+    saved = lmarena_client.send_image_prompt(page, prompt, out_path)
+    if verifica:
+        esito = verifica_copertina_kdp(saved)
+        if not esito["ok"]:
+            print(f"[cover] ATTENZIONE, copertina NON pronta per KDP "
+                  f"({esito['larghezza']}x{esito['altezza']}):")
+            for p in esito["problemi"]:
+                print(f"  - {p}")
+            print(f"  File comunque salvato in {saved} — va adattato prima dell'uso.")
+    return saved
 
 
 def make_real_cover_dep() -> Callable[[dict], dict]:
