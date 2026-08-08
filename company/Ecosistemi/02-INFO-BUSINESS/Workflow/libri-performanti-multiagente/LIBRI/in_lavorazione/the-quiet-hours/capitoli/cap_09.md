@@ -82,6 +82,22 @@ I cannot speak.
 
 ---
 
+I sit with her until she goes under, which takes a long time, and while I sit there I do something I have not done in fourteen months, which is to think about it as a nurse.
+
+Not as a sister. As the person who would be called if it happened in front of me.
+
+A vehicle leaves the road at speed and enters water. The occupant is unrestrained or restrained. The mechanism of injury is deceleration — the body stops when the car stops, and the organs inside the body stop a fraction of a second later, and that fraction is what kills people.
+
+There is a version of that where a person is alive for twenty minutes and drowns.
+
+There is a version where a person is not alive at the moment the noise stops.
+
+I have known both versions existed since the day it happened, and I have made myself not look at which one applied, and I have told myself that was because it didn't matter, and sitting in a chair beside an old woman at four in the morning I understand with complete clarity that it was because of the torch.
+
+Somebody was down there before the ambulance.
+
+If the first version is the true one, then somebody stood at that barrier while my sister was alive in the water and did not go down.
+
 I get through the rest of the shift. I don't know how; the hands do it.
 
 At six I hand over. At quarter past I'm in the car park and my phone rings and it's Ruth Okonjo, at twenty past six in the morning, which is not a time a detective calls you for a good reason.

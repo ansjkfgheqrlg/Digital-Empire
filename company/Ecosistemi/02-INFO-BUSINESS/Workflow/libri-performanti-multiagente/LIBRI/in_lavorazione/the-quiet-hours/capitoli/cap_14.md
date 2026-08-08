@@ -38,6 +38,12 @@ Then I get out of bed and walk out of frame.
 
 **03:26, 03:31, 03:35.** Empty room, empty room, empty room.
 
+I watch the empty room clips anyway. All five of them. Twenty-two minutes of an unmade bed in infrared, at half six in the morning, sitting on the edge of a bath.
+
+I don't know what I think I'm going to see. That's not true — I do know. I think I'm going to see somebody else come into the room.
+
+Nobody comes into the room. It's a bed with a duvet thrown back and a dent in the pillow, and a clock radio, and the corner of a wardrobe, and nothing moves for twenty-two minutes except the timestamp.
+
 **04:02 — 3 minutes 11.**
 
 I walk back into frame. I stand at the foot of the bed. I'm holding something in my right hand that the infrared washes out into a pale rectangle.

@@ -34,6 +34,14 @@ Sixty-one entries. Fourteen months.
 
 Some of it is unbearable in an ordinary way. There's an entry from the week of what would have been Nina's thirtieth that just says *couldn't* four times.
 
+There's one from March that is four pages long and is a letter to her, and I read half of it and stop, because it is addressed to *N* and it says *I keep doing the thing where I compose the text before I remember,* and I have done that thing perhaps two hundred times awake and had no idea I did it asleep as well.
+
+There's one from an August night that says only: *Priya asked if I was all right and I said yes and she believed me, which is the most frightening thing that's happened to me this year.*
+
+I remember that. I remember Priya asking. I remember saying yes.
+
+I do not remember writing it down at four in the morning in a locker in a record shop, and both of those things are now true at once, and I have to sit with that.
+
 But the pattern underneath the grief is the thing.
 
 She — I — whoever writes in this notebook goes back to the Kesselwood road. Repeatedly. Twenty-two of the sixty-one entries reference the bend, the gate, the cottages, the verge. There are measurements. There is, on one page, a sketch of the road with an X and an arrow and the note *no glass here, why*.

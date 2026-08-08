@@ -16,6 +16,18 @@ Day two he brings soup.
 
 Day three he says, "You need a doctor," and I say "I have one," and he says "when did you last see them," and I say something that isn't an answer, and he lets it go, which he shouldn't, and which I am grateful for and angry about at the same time.
 
+On the third afternoon I ring Denise and resign.
+
+I don't plan it. I ring to say I need more time and what comes out is *I'm handing in my notice*, and Denise says "Elena, no, don't do this on a Wednesday," which is one of the wisest things anybody says to me in the whole of that year, and I say it's already done.
+
+The reason is not the suspension. The reason is that on the fourth of the four nights I could not remember, standing in my kitchen, whether I had given Mr. Osei his eight o'clock or only thought about giving it.
+
+I hadn't been at work. I hadn't been at work in six days. It didn't matter: for about ninety seconds I could not establish it, and I stood there with a glass in my hand doing the arithmetic, and the thing that frightened me was not the confusion.
+
+It was how calm I was while I did it.
+
+An hour later I sent the email. Eleven years. Two paragraphs.
+
 Day four he sits on the arm of my sofa at four in the afternoon in the dark with the blind down and says, "I'm going to say the thing now."
 
 "Don't."

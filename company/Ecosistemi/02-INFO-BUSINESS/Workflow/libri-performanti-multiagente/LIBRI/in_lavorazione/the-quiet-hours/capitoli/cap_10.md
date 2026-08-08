@@ -80,6 +80,32 @@ I see the shape of it.
 
 "I think you're exhausted and you're looking for a door." Her voice doesn't change at all. "And I think somebody sent you that voicemail on purpose. Both of those can be true, and if they are, you are being handled, and the person handling you knows you haven't slept since your sister died."
 
+I put the cup down.
+
+"Can I say something you're not going to like?"
+
+"You can say anything you like. I'm a police officer, it's mostly what happens to me."
+
+"You keep telling me what you can't do." My voice comes out steadier than I expect. "You can't reopen it. You can't tie a data connection to a person. You can't use a witness with a diagnosis. You've told me four things you can't do and one thing you can, which was give me the number of a retired man with a cat."
+
+Okonjo doesn't move.
+
+"And I understand all of it," I say. "I work in a system too. I know what *no resource* looks like from the inside, I know it isn't personal, I know there's a woman on your desk right now who's alive and needs you more than my sister does. I'm not asking you to be a better police officer."
+
+"Then what are you asking?"
+
+"I'm asking whether *you* think something happened."
+
+The plant on the windowsill has three dead leaves at the bottom that nobody has picked off.
+
+"Yes," Ruth Okonjo says.
+
+It is the first straight answer I have had from anybody in fourteen months and it goes through me like cold water.
+
+"Since when?"
+
+"Since about eleven minutes into the second time I interviewed you," she says. "And I want to be careful now, because there's a difference between a thing I think and a thing I know, and if I blur it for you I'll do more harm than good." She meets my eyes. "I have thought something was wrong with that file since February of last year. I have not been able to find it. Those are two separate facts and you'll want to weld them together, and I'd ask you not to."
+
 ---
 
 She walks me out. In the corridor, near the doors, she stops.

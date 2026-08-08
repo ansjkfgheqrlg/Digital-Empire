@@ -106,6 +106,20 @@ And then her face changes, and she says, "Is Roberto back with the car?"
 
 ---
 
+I stay with her while she cries, because that is the job and because I did this to her.
+
+I want that written down plainly. I went into the room of an eighty-two-year-old woman with dementia at ten past two in the morning and I pushed her, deliberately, past the point where I could see it was distressing her, because I wanted something she had.
+
+There is a version of me — the one who has done this job for eleven years, the one who trains new starters and tells them that a person with dementia is a person first — who would have stopped at the second question.
+
+I did not stop at the second question. I asked eleven.
+
+She settles eventually. She always settles; she has been settling for eighty-two years, through a war she doesn't remember and a husband she does. She asks about Roberto. I tell her about the car.
+
+And then she takes my hand, in the dark, and says something in a small ordinary voice that is worse than any of it.
+
+She says: "You're a good girl for coming down."
+
 The night sister finds me eleven minutes later, sitting on the floor of the corridor outside room 12 with my back against the wall.
 
 Her name is Angela and she has been doing this for thirty years, and she crouches down in front of me with her knees cracking and she says, "Right. Come on. Office."

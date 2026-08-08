@@ -102,6 +102,32 @@ M.F.
 
 Page after page. Dates through the winter and spring and summer of last year, into the autumn, into January of this one. Some entries are three lines. Some run over. All of them are mine, and I have no memory — not a fragment, not a shadow — of writing a single word.
 
+I sit on that floor and I read for a long time, and what gets me is not the content.
+
+It's the handwriting on page forty.
+
+Because on page forty the writing changes. Not the hand — it's still mine — but the *pressure*. Up to page thirty-nine everything is written in the neat, small, slightly cramped way I write notes at work, the way you write when you might have to read it back to a coroner.
+
+From page forty on, the pen goes through the paper in places.
+
+> **11 September.** *Went again. Stood at the gate for an hour. A car stopped and a man got out and I went back to the car before he could get to me. I don't know who he was. I don't like that I don't know who he was.*
+
+She knew. Some version of me, on that road, in September, saw Adrian Cole get out of a car and made a decision to leave before he reached her.
+
+And then went home and got into bed and woke up and did not know it.
+
+> **14 September.** *If someone stops me I'll have to explain and I can't explain. Stop going. STOP GOING.*
+
+> **19 September.** *Went.*
+
+I have to put the notebook down for a minute at that point. I sit in a storeroom that smells of dust and cardboard with my hand over my mouth.
+
+*Stop going. STOP GOING.*
+
+*Went.*
+
+The most frightening thing in that notebook is not that a stranger wrote it. It's that she and I are exactly the same woman: she made a rule, in capitals, for her own good, and then broke it five days later, and wrote down that she'd broken it, in the same flat voice I use for everything.
+
 I turn to the last written page.
 
 The date is **eleven days ago**.

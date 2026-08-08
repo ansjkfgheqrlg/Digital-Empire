@@ -42,6 +42,16 @@ I sit down. I hadn't been sitting.
 
 "So I moved into the flat downstairs when it came up," he says, "because I'd worked out that if it happened again I'd rather be a hundred feet away than eleven miles. And yes, I know exactly how that sounds. I've heard it in my own head every day for five months."
 
+"Say it out loud, then. How it sounds."
+
+He doesn't dodge.
+
+"It sounds like a man who developed a fixation on a bereaved woman and engineered proximity to her." He holds my eyes while he says it, which costs him. "It sounds like the first four minutes of a documentary. I'm aware that if you told this to any sensible person, the sensible person would tell you to move house."
+
+"And what would you say to the sensible person?"
+
+"I'd say they were probably right and I'd do it again." He turns the mug. "There's no version of this where I come out of it looking like someone with good judgement. There's only the version where you were on that road at half two in the morning and somebody knew, and the version where you were on that road at half two in the morning and nobody did."
+
 "It sounds insane."
 
 "It is insane," he agrees. "It's also the only thing I could think of that meant somebody was awake."
