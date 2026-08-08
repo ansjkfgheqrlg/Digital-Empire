@@ -1,5 +1,7 @@
 # Script: 7 SEGNALI che una DONNA si sta innamorando (anche se non lo dice)
 
+- **Formato di riferimento (proven, dati reali):** "Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia" (https://www.youtube.com/watch?v=CxdlEsEnZ9g) — canale @PsicologiaFemminile-f8c, 13.000 viste reali, 17.8 viste/ora (cache reale del 2026-08-06). Destinazione: @Legamidiamore.
+
 ## HOOK
 Una donna non dice quasi mai apertamente "mi sto innamorando di te" per prima. Ma il suo modo di parlarti
 cambia molto prima che lei stessa se ne renda conto. Oggi ti mostro 7 segnali linguistici

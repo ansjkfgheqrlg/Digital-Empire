@@ -1,0 +1,16 @@
+{
+  "_nota": "Ordine dei lavori per produci_video_completo.py (= pulsante 'Produci video + copertina' in Aureus). Si produce solo cio' che ha gia' uno script adattato scritto a mano in 05-TEMPLATES-E-KIT/script-adattati/<videoId>.md: la fabbrica non genera il parlato a runtime per scelta (vedi apex7_orchestrator.run_phase_3). Le voci gia' prodotte (memory/video_prodotti.json) vengono saltate da sole, non serve rimuoverle.",
+  "canale_predefinito": "legamidiamore",
+  "coda": [
+    {
+      "video_sorgente_id": "CxdlEsEnZ9g",
+      "canale": "legamidiamore",
+      "nota": "Script adattato pronto (CP-20260806-001, primo script reale @Legamidiamore). Sorgente competitor @PsicologiaFemminile-f8c, 13.000 viste / 17.8 viste-ora, in cache dal 2026-08-06."
+    },
+    {
+      "video_sorgente_id": "eax7OPi1q0M",
+      "canale": "dosementale",
+      "nota": "Gia' prodotto il 2026-08-04 ma con qc FALLITO (durata 605s < 720s richiesti): il sorgente resta lavorabile. Da rifare solo dopo aver espanso lo script sopra le 2220 parole, altrimenti il gate dei 12 minuti in F3 lo blocca di nuovo."
+    }
+  ]
+}
