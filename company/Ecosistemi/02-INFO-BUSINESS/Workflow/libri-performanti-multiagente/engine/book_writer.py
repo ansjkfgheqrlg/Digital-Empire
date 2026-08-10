@@ -18,7 +18,7 @@ from typing import Callable
 
 from playwright.sync_api import Page
 
-from . import lmarena_client
+from . import config, lmarena_client
 
 SUMMARY_MARKER = "---RIASSUNTO---"
 
@@ -61,7 +61,15 @@ def _parse_outline(raw: str) -> dict:
 def generate_outline(page: Page, research: dict) -> dict:
     """Genera titolo, personaggi, trama in 3 atti (CP5). `research` e' l'output reale
     della fase RESEARCH (CP2/CP9): keyword, titolo di lavoro, descrizione, competitor
-    Amazon veri — usati come riferimento di nicchia, non copiati."""
+    Amazon veri — usati come riferimento di nicchia, non copiati.
+
+    Retry su risposta incompleta (CP5, 2026-08-07): verificato dal vivo che il modello a
+    volte interrompe la risposta a meta' (es. outline che finisce dentro "ACT 2:", campo
+    ACT 3 mai scritto) — non un bug di estrazione (quelli sono gestiti a monte in
+    `lmarena_client`), proprio il modello che non completa. In quel caso si RIMANDA il
+    prompt (una generazione nuova, non una rilettura della stessa risposta) fino a
+    `config.MAX_RETRIES` volte, invece di far fallire l'intero run per una risposta
+    troncata."""
     competitors = research.get("competitors") or []
     competitors_note = ""
     if competitors:
@@ -80,10 +88,20 @@ def generate_outline(page: Page, research: dict) -> dict:
         "ACT 2: <confrontation/rising action, 2-3 sentences>\n"
         "ACT 3: <resolution, 2-3 sentences>"
     )
-    raw = lmarena_client.send_text_prompt(page, prompt)
-    outline = _parse_outline(raw)
-    outline["keyword"] = research.get("keyword", "")
-    return outline
+
+    last_error: ValueError | None = None
+    for attempt in range(1, config.MAX_RETRIES + 1):
+        raw = lmarena_client.send_text_prompt(page, prompt)
+        try:
+            outline = _parse_outline(raw)
+        except ValueError as exc:
+            last_error = exc
+            print(f"[book_writer] outline incompleta al tentativo {attempt}/"
+                  f"{config.MAX_RETRIES} ({exc}) — rigenero")
+            continue
+        outline["keyword"] = research.get("keyword", "")
+        return outline
+    raise last_error
 
 
 def _split_chapter_and_summary(raw: str) -> tuple[str, str]:
@@ -119,21 +137,68 @@ def _chapter_prompt(outline: dict, chapter_number: int, total_chapters: int,
     )
 
 
+def _assert_not_duplicate(body: str, chapter_number: int, seen_bodies: list[str]) -> None:
+    """Guardia anti-duplicato (CP5, bug reale trovato il 2026-08-06): un bug nel client
+    LM Arena poteva restituire la risposta di un turno PRECEDENTE invece di quella nuova —
+    3 capitoli richiesti, testo IDENTICO parola per parola per tutti e 3, passato inosservato
+    perche' il self-test controllava solo "non vuoto", mai "diverso dai precedenti". Corretto
+    alla radice in `lmarena_client.py`, ma questo controllo resta come rete di sicurezza
+    esplicita e specifica del dominio — se scatta, e' un segnale che qualcosa nella pipeline
+    di estrazione e' di nuovo rotto, da NON ignorare mai."""
+    normalized = " ".join(body.split()).lower()
+    for prev_number, prev_body in enumerate(seen_bodies, start=1):
+        prev_normalized = " ".join(prev_body.split()).lower()
+        if normalized == prev_normalized:
+            raise RuntimeError(
+                f"Capitolo {chapter_number}: testo IDENTICO al capitolo {prev_number} — "
+                f"quasi certamente un bug di estrazione (risposta di un turno precedente "
+                f"riletta per errore), mai una coincidenza reale a questa lunghezza. "
+                f"Controllare sessions/debug_logs/ per il dettaglio dello scambio reale."
+            )
+
+
+def _generate_one_chapter(page: Page, outline: dict, chapter_number: int, total_chapters: int,
+                           running_summary: str, words_per_chapter: int,
+                           seen_bodies: list[str]) -> tuple[str, str]:
+    """Genera UN capitolo, con retry su risposta troncata/duplicata (CP5, 2026-08-07).
+    Stesso principio di `generate_outline`: il modello a volte interrompe a meta' (niente
+    marcatore riassunto) — si rimanda il prompt per una generazione NUOVA invece di far
+    fallire l'intero libro per un capitolo troncato. `CaptchaRequired` NON viene catturata:
+    li' serve un umano, ritentare da soli non puo' funzionare."""
+    prompt = _chapter_prompt(outline, chapter_number, total_chapters, running_summary,
+                             words_per_chapter)
+    last_error: Exception | None = None
+    for attempt in range(1, config.MAX_RETRIES + 1):
+        raw = lmarena_client.send_text_prompt(page, prompt, timeout_s=600)
+        try:
+            body, summary = _split_chapter_and_summary(raw)
+            _assert_not_duplicate(body, chapter_number, seen_bodies)
+            return body, summary
+        except lmarena_client.CaptchaRequired:
+            raise  # serve un umano: ritentare da soli non puo' funzionare
+        except (ValueError, RuntimeError) as exc:
+            last_error = exc
+            print(f"[book_writer] capitolo {chapter_number}: risposta non valida al "
+                  f"tentativo {attempt}/{config.MAX_RETRIES} ({exc}) — rigenero")
+    raise last_error
+
+
 def write_chapters(page: Page, outline: dict, total_chapters: int,
                     words_per_chapter: int = 1500) -> dict:
     """Loop capitolo per capitolo con continuita' REALE (CP5): ogni prompt include SOLO il
     riassunto accumulato dei capitoli precedenti, mai il testo intero. Fatto = bozza
     completa, un capitolo per iterazione, nessun capitolo saltato o finto."""
     chapters = []
+    seen_bodies: list[str] = []
     running_summary = ""
     for i in range(1, total_chapters + 1):
-        prompt = _chapter_prompt(outline, i, total_chapters, running_summary, words_per_chapter)
-        raw = lmarena_client.send_text_prompt(page, prompt, timeout_s=300)
-        body, summary = _split_chapter_and_summary(raw)
+        body, summary = _generate_one_chapter(page, outline, i, total_chapters,
+                                               running_summary, words_per_chapter, seen_bodies)
         paragraphs = [p.strip() for p in body.split("\n\n") if p.strip()]
         if not paragraphs:
             raise RuntimeError(f"Capitolo {i}: nessun paragrafo estratto da una risposta non vuota")
         chapters.append({"title": f"Chapter {i}", "paragraphs": paragraphs})
+        seen_bodies.append(body)
         running_summary = f"{running_summary} {summary}".strip()
 
     return {
@@ -178,7 +243,7 @@ if __name__ == "__main__":
     }
 
     with sync_playwright() as p:
-        session = _lc.open_session(p, headless=True)
+        session = _lc.open_session(p)
         try:
             print("[1/2] genero outline reale...")
             outline = generate_outline(session.page, research)

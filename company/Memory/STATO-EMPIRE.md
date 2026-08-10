@@ -1,4 +1,95 @@
-# STATO EMPIRE -- aggiornato 2026-08-06 (Claude: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005 · Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-006 · Claude: Arsenale Caroselli, libreria output per prodotto — CP-20260806-002 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-08 (Claude: PRIMO LIBRO KDP COMPLETO — "The Quiet Hours", 115 pagine reali + copertina, pacchetto pronto — CP-20260808-002 · Claude: Aureus — pulsante unico "Produci video + copertina", catena YouTube Factory incatenata e verificata — CP-20260808-001 · Claude: PIANO KDP — LM Arena abbandonato per il testo (captcha non aggirabile), si passa a Claude, copertine restano su LM Arena — CP-20260807-001 · Claude: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005 · Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-003 · Claude: Arsenale Caroselli, libreria output per prodotto — CP-20260806-002 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## 📕 2026-08-08 — CLAUDE: PRIMO LIBRO KDP COMPLETO — "The Quiet Hours", 115 pagine reali + copertina — CP-20260808-002
+
+Seguito da [CP-20260807-001](checkpoints/CP-20260807-001.md). Il workflow libri è passato
+da LM Arena (abbandonato per il testo: captcha non aggirabile) a una **SOP a 7 step** con i
+capitoli scritti in sessione e salvati come file — cambio di impostazione chiesto da Gael
+("devi creare i flussi, dei SOP, dividi tutto in step"). Il pezzo mancante era il PONTE:
+`engine/book_project.py`, un progetto = una cartella, `nuovo`/`stato`/`assembla`.
+
+**Primo libro vero prodotto end-to-end**: nicchia scelta dal nuovo `niche_finder.py` su dati
+Amazon reali (psychological thriller, 81.2/100), 24 capitoli, copertina da LM Arena,
+pacchetto in `LIBRI/libri_pronti/The_Quiet_Hours/` con .docx + **PDF da 115 pagine contate**
++ copertina 1800x2700 conforme.
+
+**Il "team agenti nicchia" del blueprint erano 282 schede descrittive** con `decision_logic`
+a parole e path `/home/user/`: mostrata la mappatura reale (quasi tutto già implementato nei
+moduli con altri nomi) e costruito l'unico pezzo mancante davvero.
+
+**Tre bug reali, tutti dello stesso tipo — numeri dichiarati e mai verificati**: copertina
+quadrata accettata perché si controllava solo il peso del file; pagine STIMATE invece che
+contate (115.5 dichiarate, 106 reali nel PDF); PDF assente dal pacchetto. Tutti corretti con
+verifiche sulla proprietà che conta, non su una proxy comoda.
+
+**RIPRESA DA:** libro 1 pronto per il caricamento manuale su KDP. Restano dal piano V2 le
+**tile Aureus "Libri KDP" e "Outreach"** chieste da Gael. Dettaglio in
+[CP-20260808-002](checkpoints/CP-20260808-002.md).
+
+---
+
+## 🎬 2026-08-08 — CLAUDE: Aureus — pulsante unico "Produci video + copertina" — CP-20260808-001
+
+Richiesta diretta: «va implementato nell'app un pulsante di avvio, che quando ci clicco inizia
+a creare un video più la copertina seguendo il workflow youtube automation factory».
+
+La pipeline reale c'era già ma era **spezzata in tre lanci manuali** (`apex7_orchestrator.py
+run --phase 5` → `arena_thumbnail.py` → `fliki_client.py`): nessuno la incatenava, e
+`modules/youtube.py` esponeva in Aureus solo i tool deterministici, senza avvio.
+
+Costruiti: `02-AUTOMAZIONI-E-SCRIPTS/produci_video_completo.py` (incatena i tre pezzi, si ferma
+al primo fallimento dicendo perché, `--preflight` controlla senza spendere) e
+`EmpireDesk/modules/yt_produzione.py` (tile `ytprod` + 2 route in sola lettura).
+**`platform/` NON toccata** (grafica = Max): Aureus disegna già le card da `/api/tiles` con
+bottone Avvia, log live ed exit code — il pulsante nasce dal backend.
+
+**Vincolo non aggirato**: F3 non genera il parlato a runtime, pesca lo script adattato scritto
+a mano in `script-adattati/<videoId>.md`. Quindi il pulsante produce il prossimo lavoro **già
+pronto**, e se non c'è nulla esce con 2 elencando i brief `.DA-SCRIVERE.md` — non finge.
+**Difetto reale corretto**: `CxdlEsEnZ9g.md` non aveva la riga con l'URL sorgente, che
+`fliki_client.registra_video_prodotto()` usa per il registro — senza, F2 avrebbe riproposto
+per sempre lo stesso video.
+
+Verificato: preflight **OK** (exit 0) sul lavoro reale `CxdlEsEnZ9g` → @Legamidiamore;
+`app.py --selftest` `[OK] ytprod` + `[OK] module:yt_produzione` (21/23 — i 2 FAIL sono
+preesistenti: `Clienti/` non esiste su questo PC); app avviata, tile viva su `/api/tiles`,
+`ytprod/stato` → `pronto_a_partire: true`.
+
+**RIPRESA DA:** primo run end-to-end reale del pulsante (consuma crediti Fliki veri, decine di
+minuti). Dettaglio in [CP-20260808-001](checkpoints/CP-20260808-001.md).
+
+---
+
+## 🔀 2026-08-07 — CLAUDE: PIANO KDP — LM Arena abbandonato per il testo, si passa a Claude — CP-20260807-001
+
+Due giorni di debug reale su LM Arena via Playwright hanno prodotto fix veri (sessione
+invalidata, browser che non partiva per un profilo Brave da 381MB, captcha in headless
+risolto replicando il profilo persistente di `arena_thumbnail.py`, errore "Something went
+wrong" mai rilevato) ma il blocco di fondo resta: il **captcha scatta sui messaggi
+successivi al primo** in una sessione, e un libro ne richiede 24+. Non aggirato e non
+aggirabile — è un controllo di sicurezza.
+
+**Errore di metodo riconosciuto**: per due giorni ogni fix era una nuova ipotesi sulla
+struttura della pagina, e ogni ciclo ne smentiva una. Gael ha imposto il cambio di
+approccio ("è da 2 giorni che continui a dire di aver trovato il bug vero") → estrazione
+con ID univoco per richiesta + `document.body.innerText`, che **funziona** (outline
+generata ed estratta correttamente al primo colpo). Lezione: quando ogni fix è un'ipotesi
+nuova sulla stessa cosa, è il metodo a essere sbagliato, non l'ipotesi.
+
+**Decisione di Gael**: il testo passa a Claude, LM Arena resta SOLO per le copertine (che
+funzionano davvero: una richiesta per libro, immagini reali verificate). Rovescia il
+vincolo fondante del piano originale ("zero crediti Claude Code") — scelta consapevole,
+documentata come tale. Nuovo piano `PIANO-KDP-V2-CLAUDE-CODE.md` (V0-V9), che include
+anche le due tile Aureus richieste: Libri KDP e Outreach.
+
+**Richiesta declinata**: automatizzare claude.ai via Playwright — viola i ToS Anthropic
+(l'API esiste esattamente per questo uso) ed è la stessa strada appena fallita.
+
+**RIPRESA DA:** V0 — configurare `ANTHROPIC_API_KEY` (verificato: `claude` non è
+invocabile da CLI su questo PC, SDK `anthropic` v0.118.0 già installato). Poi V1-V9.
+Dettaglio in [CP-20260807-001](checkpoints/CP-20260807-001.md).
+
+---
 
 ## 🏛️ 2026-08-06 — CLAUDE: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005
 Max ha chiesto conferma: "il lavoro caroselli è dentro il reparto dedicato dell'Impero?
@@ -42,7 +133,7 @@ caroselli. Trovate ma non integrate 2 cartelle preesistenti non documentate
 
 ## 🔧 2026-08-06 — CLAUDE: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004
 
-Seguito da [CP-20260806-006](checkpoints/CP-20260806-006.md), su richiesta esplicita di
+Seguito da [CP-20260806-003](checkpoints/CP-20260806-003.md), su richiesta esplicita di
 Gael ("procedi col piano") di continuare tutto cio' che NON dipende dalla sessione LM Arena
 invalidata. `cover_generator.py` (CP7, nuovo): prompt di copertina dai dettagli reali del
 libro (titolo/genere/personaggi/trama), mai fisso — self-test verifica 2 copertine per libri
@@ -63,7 +154,7 @@ e CP12 (test end-to-end finale). Dettaglio completo in
 
 ---
 
-## 🔧 2026-08-06 — CLAUDE: PIANO KDP 67 — bug architetturale LM Arena risolto, hang residuo confermato lato servizio — CP-20260806-006
+## 🔧 2026-08-06 — CLAUDE: PIANO KDP 67 — bug architetturale LM Arena risolto, hang residuo confermato lato servizio — CP-20260806-003
 
 Seguito da [CP-20260805-011](checkpoints/CP-20260805-011.md). Bug reale trovato e risolto:
 `open_session()` lanciava l'intero profilo Brave reale copiato (381MB, stato accumulato da
@@ -93,7 +184,7 @@ di procedere alla cieca verso un hang.
 **RIPRESA DA:** serve Gael fisicamente al PC per rifare il login manuale su LM Arena
 (`python -m engine.session_manager`, 2FA non automatizzabile). Poi
 `python -m engine.book_writer` (CP5, outline già verificata funzionante). Dettaglio
-completo in [CP-20260806-006](checkpoints/CP-20260806-006.md).
+completo in [CP-20260806-003](checkpoints/CP-20260806-003.md).
 
 ---
 

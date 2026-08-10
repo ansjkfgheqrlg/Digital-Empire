@@ -32,6 +32,53 @@ class BookPackageResult:
     manuscript_dest: Path
     cover_dest: Path
     metadata_dest: Path
+    pdf_dest: Path | None = None
+
+
+def converti_in_pdf(docx_path: Path, pdf_path: Path | None = None) -> Path | None:
+    """Converte il manoscritto .docx in PDF mantenendo la formattazione KDP reale
+    (richiesta di Gael, 2026-08-08: nella cartella del libro finito ci devono essere il
+    PDF e la copertina).
+
+    Usa `docx2pdf`, che pilota Word installato sul PC: e' l'unico modo di ottenere un PDF
+    con gli STESSI margini specchio, interruzioni di sezione e numeri di pagina del .docx —
+    una libreria che ridisegna il documento da zero produrrebbe un impaginato diverso da
+    quello verificato, e il conteggio pagine non corrisponderebbe piu'.
+
+    Ritorna None (senza far fallire il pacchetto) se la conversione non e' possibile:
+    meglio un pacchetto con .docx e copertina che nessun pacchetto."""
+    docx_path = Path(docx_path)
+    pdf_path = Path(pdf_path) if pdf_path else docx_path.with_suffix(".pdf")
+    try:
+        from docx2pdf import convert
+        convert(str(docx_path), str(pdf_path))
+    except Exception as exc:
+        print(f"[output] PDF non generato ({type(exc).__name__}: {exc}). "
+              f"Serve Microsoft Word installato. Il pacchetto resta valido col .docx.")
+        return None
+    if not pdf_path.exists():
+        print("[output] PDF non generato: la conversione non ha prodotto il file.")
+        return None
+    print(f"[output] PDF creato: {pdf_path.name} ({pdf_path.stat().st_size / 1024:.0f} KB)")
+    return pdf_path
+
+
+def conta_pagine_pdf(pdf_path: Path) -> int | None:
+    """Conta le pagine REALI del PDF impaginato.
+
+    Perche' conta (2026-08-08): fino a oggi il numero di pagine era una STIMA
+    (parole / 300). Sul primo libro vero la stima diceva 115.5 e il PDF impaginato da Word
+    ne ha 106 — perche' Garamond 11pt su 6x9 con quei margini sta a ~327 parole/pagina, non
+    300. Una stima ottimista del 9% e' esattamente il tipo di numero dichiarato-e-mai-
+    verificato che questo progetto esiste per eliminare: KDP impagina il PDF, non la stima.
+
+    Conta le occorrenze di /Type /Page nel PDF, senza dipendenze esterne."""
+    import re
+    data = Path(pdf_path).read_bytes()
+    if not data.startswith(b"%PDF-"):
+        return None
+    pagine = len(re.findall(rb"/Type\s*/Page[^s]", data))
+    return pagine or None
 
 
 def create_book_package(
@@ -65,6 +112,22 @@ def create_book_package(
     shutil.copy2(manuscript_path, manuscript_dest)
     shutil.copy2(cover_path, cover_dest)
 
+    # PDF accanto al .docx: e' il formato in cui il libro si legge e si controlla prima di
+    # pubblicarlo (richiesta esplicita di Gael, 2026-08-08).
+    pdf_dest = converti_in_pdf(manuscript_dest, folder_path / f"{safe_title}.pdf")
+
+    # Pagine REALI dal PDF impaginato, non la stima parole/300: e' il numero che vedra' KDP.
+    pagine_reali = conta_pagine_pdf(pdf_dest) if pdf_dest else None
+    if pagine_reali:
+        minimo = config.TARGET_PAGE_COUNT - config.TARGET_PAGE_COUNT_TOLERANCE
+        stato = "OK" if pagine_reali >= minimo else f"SOTTO IL TARGET (minimo {minimo})"
+        print(f"[output] pagine REALI nel PDF: {pagine_reali} — {stato}")
+        if pagine_reali < minimo:
+            print(f"[output] la stima diceva {page_count} pagine: e' ottimista perche' "
+                  f"calcolata a {config.WORDS_PER_PAGE_ESTIMATE} parole/pagina, "
+                  f"l'impaginato reale ne sta di piu'. Servono ancora circa "
+                  f"{(minimo - pagine_reali) * 330} parole.")
+
     metadata_dest = folder_path / "KDP_METADATA.txt"
     metadata_dest.write_text(kdp_metadata_text, encoding="utf-8")
 
@@ -74,6 +137,7 @@ def create_book_package(
         f"Generato: {datetime.now().isoformat()}\n"
         f"Word count: {word_count} — Pagine stimate: {page_count} @{config.WORDS_PER_PAGE_ESTIMATE}wpp\n"
         f"Manoscritto: {manuscript_dest.name}\n"
+        f"PDF: {pdf_dest.name if pdf_dest else 'NON generato (serve Word installato)'}\n"
         f"Copertina: {cover_dest.name}\n"
         f"Quando pubblicato: sposta manualmente questa cartella in LIBRI/libri_pubblicati/\n",
         encoding="utf-8",
@@ -84,6 +148,7 @@ def create_book_package(
         manuscript_dest=manuscript_dest,
         cover_dest=cover_dest,
         metadata_dest=metadata_dest,
+        pdf_dest=pdf_dest,
     )
 
 

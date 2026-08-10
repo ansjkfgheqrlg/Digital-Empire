@@ -26,8 +26,11 @@ prompt anche quando il modello ripete parte del testo dell'utente.
 """
 from __future__ import annotations
 
+import hashlib
+import json
 import time
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 
 from playwright.sync_api import Page, Playwright
@@ -35,6 +38,191 @@ from playwright.sync_api import Page, Playwright
 from . import config
 
 ARENA_LAUNCH_ARGS = ["--disable-blink-features=AutomationControlled"]
+
+DEBUG_LOG_DIR = config.SESSIONS_DIR / "debug_logs"
+
+
+class CaptchaRequired(RuntimeError):
+    """LM Arena mostra una sfida "Security Verification" (reCAPTCHA "I'm not a robot").
+
+    NON e' aggirabile da codice, e non va aggirata: e' un controllo di sicurezza pensato
+    apposta per distinguere una persona da un programma — superarlo automaticamente
+    significherebbe ingannarlo. L'unica gestione corretta e' fermarsi e chiedere a un umano
+    di risolverlo nella finestra del browser (che per questo motivo gira in modalita'
+    visibile, non headless).
+
+    Esiste come eccezione DEDICATA (non un TimeoutError generico) perche' in CP5 il captcha
+    e' stato ripetutamente scambiato per lentezza/blocco del servizio, facendo perdere ore
+    di diagnosi su una causa sbagliata: un errore esplicito rende la causa ovvia al primo
+    colpo. Per lo stesso motivo NON viene ritentata automaticamente dal loop di retry:
+    ritentare senza intervento umano non puo' funzionare, allunga solo l'attesa."""
+
+
+CAPTCHA_MARKERS = ["Security Verification", "I'm not a robot", "Non sono un robot"]
+
+# Errore lato server di arena.ai: compare un banner rosso con un bottone "Retry" nella UI
+# stessa. Segnalato da Gael con screenshot il 2026-08-07 ("non ti accorgi che da errori?"):
+# il codice non lo rilevava e restava ad aspettare una generazione che non sarebbe mai
+# arrivata, fino al timeout — causa di parte dei blocchi attribuiti erroneamente ad altro.
+GENERATION_ERROR_MARKERS = [
+    "Something went wrong while generating the response",
+    "Something went wrong",
+]
+
+# Quante volte cliccare il "Retry" della UI prima di arrendersi su una singola richiesta.
+MAX_UI_RETRY_CLICKS = 3
+
+# Pausa minima fra due invii consecutivi nella stessa sessione (2026-08-07). Osservazione
+# reale: il self-test CP4 (1 sola richiesta per tipo) non ha mai incontrato il captcha,
+# mentre CP5 (outline + 3 capitoli in rapida successione) lo incontra quasi sempre — il
+# fattore scatenante sembra il RITMO delle richieste, non il browser. Non e' un tentativo
+# di aggirare la verifica: e' semplicemente non martellare un servizio esterno, che e' il
+# comportamento corretto a prescindere (stessa lezione gia' annotata in CP-20260805-011:
+# "spaziare i test, non lanciare raffiche").
+MIN_SECONDS_BETWEEN_SENDS = 20
+_last_send_at: float = 0.0
+
+
+def _throttle_before_send() -> None:
+    """Attende, se necessario, per rispettare `MIN_SECONDS_BETWEEN_SENDS`."""
+    global _last_send_at
+    if _last_send_at:
+        elapsed = time.time() - _last_send_at
+        if elapsed < MIN_SECONDS_BETWEEN_SENDS:
+            pause = MIN_SECONDS_BETWEEN_SENDS - elapsed
+            print(f"[lmarena] pausa {pause:.0f}s prima del prossimo invio "
+                  f"(ritmo sostenibile, non raffiche)", flush=True)
+            time.sleep(pause)
+    _last_send_at = time.time()
+
+
+def _generation_error_present(page: Page) -> bool:
+    """True se la UI mostra il banner d'errore di generazione (con bottone Retry)."""
+    for marker in GENERATION_ERROR_MARKERS:
+        try:
+            if page.get_by_text(marker, exact=False).count() > 0:
+                return True
+        except Exception:
+            continue
+    return False
+
+
+def _click_retry_button(page: Page) -> bool:
+    """Clicca il bottone "Retry" del banner d'errore — e' la UI stessa a offrirlo per
+    questo scopo, quindi usarlo e' l'uso previsto, non un aggiramento di nulla.
+
+    Piu' strategie di selezione (2026-08-07): la prima versione usava solo
+    `get_by_role("button", name="Retry", exact=True)` e falliva silenziosamente — il log
+    lo ha mostrato (`generation_error_fatal` con `retries_used: 0`, cioe' errore rilevato
+    ma click mai riuscito). Il bottone ha un'icona accanto al testo, quindi il nome
+    accessibile puo' non essere esattamente "Retry". Si prova per ruolo (non esatto), poi
+    per testo, poi per CSS.
+
+    Ritorna True se il click e' riuscito."""
+    for name in ("Retry", "Riprova"):
+        # 1) per ruolo, match non esatto (tollera icona/spazi nel nome accessibile)
+        try:
+            btn = page.get_by_role("button", name=name, exact=False)
+            if btn.count() > 0:
+                _robust_click(btn.first, timeout=5000)
+                return True
+        except Exception:
+            pass
+        # 2) per testo visibile
+        try:
+            btn = page.get_by_text(name, exact=False)
+            for i in range(btn.count()):
+                el = btn.nth(i)
+                if el.is_visible():
+                    _robust_click(el, timeout=5000)
+                    return True
+        except Exception:
+            pass
+        # 3) selettore CSS diretto su un button che contiene quel testo
+        try:
+            btn = page.locator(f"button:has-text('{name}')")
+            if btn.count() > 0:
+                _robust_click(btn.first, timeout=5000)
+                return True
+        except Exception:
+            pass
+    return False
+
+# Quanto attendere che un umano risolva il captcha prima di arrendersi (0 = non attendere).
+CAPTCHA_WAIT_SECONDS = 300
+
+
+def _captcha_present(page: Page) -> bool:
+    """True se la sfida captcha e' visibile ORA. Cerca per testo (marcatori verificati dal
+    vivo con screenshot reale il 2026-08-07, sia in inglese sia in italiano — la UI segue
+    la lingua del browser)."""
+    for marker in CAPTCHA_MARKERS:
+        try:
+            if page.get_by_text(marker, exact=False).count() > 0:
+                return True
+        except Exception:
+            continue
+    return False
+
+
+def _wait_for_human_to_solve_captcha(page: Page, where: str) -> bool:
+    """Mette in PAUSA e aspetta che una persona risolva il captcha nella finestra aperta,
+    invece di far morire l'intero run (2026-08-07).
+
+    Perche' cosi': il captcha e' progettato apposta perche' lo risolva un umano — non lo
+    aggiro e non ci provo. Ma far fallire tutto il run costringeva a rilanciare da zero
+    ogni volta (rigenerando outline e capitoli gia' fatti). Aspettando, l'intervento umano
+    serve UNA volta e il lavoro gia' fatto non si perde.
+
+    Ritorna True se il captcha e' stato risolto entro il tempo, False altrimenti."""
+    if CAPTCHA_WAIT_SECONDS <= 0:
+        return False
+    print("\n" + "=" * 70, flush=True)
+    print(">>> CAPTCHA da risolvere nella finestra del browser aperta.", flush=True)
+    print(f">>> Clicca 'Non sono un robot', poi il lavoro riprende da solo.", flush=True)
+    print(f">>> (attendo fino a {CAPTCHA_WAIT_SECONDS // 60} minuti, controllo ogni 3s)", flush=True)
+    print("=" * 70 + "\n", flush=True)
+    _debug_log("captcha_waiting_for_human", where=where, max_wait=CAPTCHA_WAIT_SECONDS)
+
+    try:
+        page.bring_to_front()
+    except Exception:
+        pass
+
+    waited = 0
+    while waited < CAPTCHA_WAIT_SECONDS:
+        time.sleep(3)
+        waited += 3
+        if not _captcha_present(page):
+            print(f">>> Captcha risolto dopo {waited}s — riprendo.\n", flush=True)
+            _debug_log("captcha_solved_by_human", where=where, waited=waited)
+            time.sleep(2)  # margine perche' la UI torni operativa dopo la sparizione
+            return True
+    _debug_log("captcha_wait_timeout", where=where, waited=waited)
+    return False
+
+
+def _debug_log(event: str, **fields) -> None:
+    """Log di debug per ogni scambio prompt/risposta reale con LM Arena — un file .jsonl
+    per giorno, mai silenzioso. Nato dal bug reale di CP5 (2026-08-06, capitoli duplicati
+    passati inosservati perche' nessun log registrava prompt/risposta effettivi): senza
+    questo, diagnosticare un problema richiede rilanciare tutto da capo con script ad-hoc.
+    Con questo, il log stesso mostra cosa e' successo davvero, riga per riga, in ordine."""
+    DEBUG_LOG_DIR.mkdir(parents=True, exist_ok=True)
+    log_path = DEBUG_LOG_DIR / f"lmarena_{datetime.now().strftime('%Y%m%d')}.jsonl"
+    entry = {"ts": datetime.now().isoformat(), "event": event, **fields}
+    with log_path.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+
+def _text_fingerprint(text: str | None) -> dict:
+    if text is None:
+        return {"len": 0, "hash": None, "preview": None}
+    return {
+        "len": len(text),
+        "hash": hashlib.sha256(text.encode("utf-8")).hexdigest()[:16],
+        "preview": text[:120],
+    }
 
 
 @dataclass
@@ -44,32 +232,68 @@ class ArenaSession:
     page: Page
 
     def close(self) -> None:
+        # Con launch_persistent_context il browser e' di proprieta' del context: chiuderlo
+        # a parte solleva errori. Si chiude il context e basta (best-effort sul browser,
+        # che con un persistent context risulta gia' chiuso).
         self.context.close()
-        self.browser.close()
+        try:
+            if self.browser is not None and self.browser.is_connected():
+                self.browser.close()
+        except Exception:
+            pass
+
+
+def _seed_profile_from_saved_session(context) -> None:
+    """Inietta UNA VOLTA i cookie della sessione salvata (CP1) nel profilo persistente
+    appena creato, cosi' non serve rifare il login a mano. Da li' in poi il profilo
+    mantiene tutto da solo e questa funzione non viene piu' chiamata."""
+    import json
+    data = json.loads(config.LMARENA_SESSION_PATH.read_text(encoding="utf-8"))
+    cookies = data.get("cookies", [])
+    if cookies:
+        context.add_cookies(cookies)
+    print(f"[lmarena] profilo persistente inizializzato con {len(cookies)} cookie "
+          f"dalla sessione salvata (login non richiesto)")
 
 
 def open_session(playwright: Playwright, headless: bool = True) -> ArenaSession:
-    """Apre LM Arena con la sessione reale salvata (CP1) e seleziona la modalita' Direct.
+    """Apre LM Arena su un PROFILO PERSISTENTE dedicato e seleziona la modalita' Direct.
     Fatto = pronta per send_text_prompt/send_image_prompt, nessun login richiesto.
 
-    CORRETTO 2026-08-06: prima lanciava l'intero profilo Brave reale copiato (381MB,
-    con Safe Browsing/Crowd Deny/component-updater/estensioni) via
-    `launch_persistent_context` — trovato essere la causa di lanci del browser che vanno
-    in timeout (180s) dopo l'accumulo di ~20+ lanci automatizzati sulla stessa copia.
-    Ora usa lo STESSO pattern gia' verificato affidabile per Amazon
-    (`session_manager.load_context`): Chromium bundlato di Playwright, pulito ad ogni
-    lancio, con solo cookie/localStorage iniettati da `lmarena_state.json` (esportato in
-    CP1) — nessun profilo browser reale coinvolto, nessuno stato che si accumula."""
-    if not config.LMARENA_SESSION_PATH.exists():
+    PROFILO PERSISTENTE, non contesto effimero (2026-08-07 — causa reale del captcha,
+    trovata dopo che Gael ha fatto notare che "in molti altri workflow questo problema del
+    captcha non c'era"): il workflow gia' in produzione sullo STESSO sito
+    (YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/arena_thumbnail.py, profilo
+    `chrome-profile-arena`) gira headless senza mai incontrare la sfida "Security
+    Verification". La differenza non era headless si'/no: era che quel workflow usa
+    `launch_persistent_context` su un profilo che PERSISTE fra i run, mentre qui si creava
+    un contesto nuovo ad ogni avvio (`browser.new_context(storage_state=...)`) — arena.ai
+    vedeva ogni volta un browser mai visto prima, senza storia, e chiedeva la verifica.
+    Con un profilo persistente il sito riconosce lo stesso browser che torna: nessuna
+    sfida da innescare, quindi nessuna da aggirare (che non si farebbe comunque).
+
+    Il profilo e' VUOTO e dedicato, creato da Playwright — NON la copia da 381MB del
+    profilo Brave reale, che causava timeout al lancio (CP4 2026-08-06) e che resta
+    archiviata ma non piu' usata. Al primo avvio i cookie della sessione salvata in CP1
+    vengono iniettati una volta sola, cosi' il login manuale non va rifatto."""
+    profile_dir = config.LMARENA_PROFILE_DIR
+    first_run = not profile_dir.exists()
+    if first_run and not config.LMARENA_SESSION_PATH.exists():
         raise FileNotFoundError(
-            f"Sessione LM Arena non trovata: {config.LMARENA_SESSION_PATH}. "
-            f"Esegui prima: python -m engine.session_manager"
+            f"Profilo LM Arena assente e nessuna sessione salvata in "
+            f"{config.LMARENA_SESSION_PATH}. Esegui prima: python -m engine.session_manager"
         )
-    browser = playwright.chromium.launch(headless=headless, args=ARENA_LAUNCH_ARGS)
-    context = browser.new_context(
-        storage_state=str(config.LMARENA_SESSION_PATH),
+    profile_dir.mkdir(parents=True, exist_ok=True)
+
+    context = playwright.chromium.launch_persistent_context(
+        user_data_dir=str(profile_dir),
+        headless=headless,
         viewport={"width": 1440, "height": 900},
+        args=ARENA_LAUNCH_ARGS,
     )
+    browser = context.browser
+    if first_run and config.LMARENA_SESSION_PATH.exists():
+        _seed_profile_from_saved_session(context)
     page = context.pages[0] if context.pages else context.new_page()
     # domcontentloaded, non networkidle: arena.ai tiene connessioni persistenti aperte
     # (chat live) che a volte impediscono a networkidle di scattare mai (timeout reale
@@ -103,7 +327,18 @@ def open_session(playwright: Playwright, headless: bool = True) -> ArenaSession:
             f"probabile invalidazione lato servizio di {config.LMARENA_SESSION_PATH}. "
             "Rifare il login: python -m engine.session_manager"
         )
+    # Captcha gia' presente all'apertura: fallire SUBITO con la causa giusta, invece di
+    # procedere e scoprirlo dopo minuti di attesa sul primo prompt (errore reale di CP5).
+    if _captcha_present(page):
+        _debug_log("captcha_detected", where="open_session")
+        if not _wait_for_human_to_solve_captcha(page, "open_session"):
+            raise CaptchaRequired(
+                "LM Arena: sfida 'Security Verification' (captcha) presente all'apertura "
+                f"della sessione e non risolta entro {CAPTCHA_WAIT_SECONDS}s. Risolvila a "
+                "mano nella finestra aperta e rilancia. Non e' aggirabile da codice."
+            )
     _select_direct_mode(page)
+    _assert_direct_mode(page, "open_session")
     return ArenaSession(browser=browser, context=context, page=page)
 
 
@@ -146,109 +381,285 @@ def _select_direct_mode(page: Page) -> None:
     time.sleep(0.5)
 
 
+def _assert_direct_mode(page: Page, where: str) -> None:
+    """Verifica che la modalita' sia davvero Direct, non Battle Mode (segnalato da Gael il
+    2026-08-07: le immagini venivano generate in Battle Mode). `_select_direct_mode` fa un
+    tentativo ma non verificava mai l'esito — se il click falliva silenziosamente si
+    generava con 2 modelli anonimi invece del modello scelto, rendendo l'output non
+    verificabile ne' ripetibile. Qui si controlla e, se serve, si riprova una volta."""
+    if page.locator("button:has-text('Battle Mode')").count() == 0:
+        return  # gia' in Direct
+    _debug_log("battle_mode_detected", where=where)
+    _select_direct_mode(page)
+    time.sleep(0.5)
+    if page.locator("button:has-text('Battle Mode')").count() > 0:
+        raise RuntimeError(
+            f"LM Arena: impossibile passare a modalita' Direct ({where}) — la UI resta in "
+            f"Battle Mode (2 modelli anonimi). Output non verificabile/ripetibile, mai "
+            f"accettato: serve controllare la UI a mano."
+        )
+
+
+def _wrap_prompt_with_markers(prompt: str, req_id: str) -> str:
+    """Avvolge il prompt con l'istruzione di delimitare la risposta con marcatori univoci.
+
+    I marcatori sono DESCRITTI a parole, mai scritti per esteso (bug reale trovato subito
+    al primo run del nuovo metodo, 2026-08-07): la pagina mostra anche l'eco del prompt
+    inviato, quindi se il prompt contenesse i marcatori letterali la ricerca li troverebbe
+    li' dentro ed estrarrebbe un pezzo dell'istruzione invece della risposta (osservato:
+    "' and end it with the exact line '"). Descrivendoli, il testo esatto compare SOLO
+    nella risposta del modello, che li compone."""
+    return (
+        f"{prompt}\n\n"
+        f"IMPORTANT OUTPUT RULE: your reply must begin with three '#' characters "
+        f"immediately followed by {req_id}, then a newline. Your reply must end with a "
+        f"newline followed by {req_id} immediately followed by three '#' characters. "
+        f"Put your entire answer between those two delimiter lines."
+    )
+
+
+def _markers_for(req_id: str) -> tuple[str, str]:
+    return f"###{req_id}", f"{req_id}###"
+
+
+def start_new_chat(page: Page) -> None:
+    """Apre una chat NUOVA prima di inviare il prompt.
+
+    Perche' (2026-08-07, osservazione dai run reali): il captcha non compare mai sul primo
+    messaggio di una chat, ma quasi sempre su quelli successivi nella stessa conversazione
+    — coerente col fatto che il workflow gia' in produzione (`arena_thumbnail.py`, una
+    richiesta per run) non lo incontra mai. Qui non serve la memoria della conversazione:
+    ogni prompt di capitolo contiene GIA' trama completa e riassunto dei capitoli
+    precedenti (vedi `book_writer._chapter_prompt`), quindi una chat nuova per richiesta
+    non perde nessun contesto. Non aggira nessuna verifica: evita di innescarla."""
+    for name in ("New Chat", "Nuova chat"):
+        try:
+            btn = page.get_by_role("button", name=name, exact=False)
+            if btn.count() == 0:
+                btn = page.get_by_text(name, exact=False)
+            for i in range(btn.count()):
+                el = btn.nth(i)
+                if el.is_visible():
+                    _robust_click(el, timeout=5000)
+                    time.sleep(2)
+                    _debug_log("new_chat_started", via=name)
+                    return
+        except Exception:
+            continue
+    # Fallback: navigazione diretta alla pagina di chat nuova
+    try:
+        page.goto(config.LMARENA_BASE_URL, wait_until="domcontentloaded",
+                  timeout=config.DEFAULT_TIMEOUT_MS)
+        time.sleep(2)
+        _select_direct_mode(page)
+        _debug_log("new_chat_started", via="goto")
+    except Exception as exc:
+        _debug_log("new_chat_failed", error=str(exc))
+
+
+def _dismiss_blocking_overlay(page: Page) -> None:
+    """Chiude un eventuale dialog/overlay che intercetta i click (bug reale 2026-08-07:
+    `<div data-state="open" ... bg-black/80> intercepts pointer events` impediva di
+    cliccare la casella di testo). Prova i bottoni di conferma noti, poi Escape."""
+    try:
+        overlay = page.locator("div[data-state='open'][aria-hidden='true']")
+        if overlay.count() == 0:
+            return
+    except Exception:
+        return
+    for name in ("Continue", "Agree", "Accept", "OK", "Got it", "Continua", "Accetta"):
+        try:
+            btn = page.get_by_role("button", name=name, exact=False)
+            if btn.count() > 0 and btn.first.is_visible():
+                _robust_click(btn.first, timeout=3000)
+                time.sleep(0.8)
+                _debug_log("overlay_dismissed", via=name)
+                return
+        except Exception:
+            continue
+    try:
+        page.keyboard.press("Escape")
+        time.sleep(0.5)
+        _debug_log("overlay_dismissed", via="Escape")
+    except Exception:
+        pass
+
+
+def _extract_between_markers(page: Page, req_id: str) -> str | None:
+    """Estrae la risposta cercando i marcatori univoci nel testo dell'INTERA pagina.
+
+    APPROCCIO RISCRITTO IL 2026-08-07 (su richiesta esplicita di Gael: "è da 2 giorni che
+    continui a dire di aver trovato il bug vero, cambia completamente approccio"). Il
+    metodo precedente indovinava quale nodo della DOM fosse la risposta (`[class*="prose"]`
+    fuori da una bolla utente, primo o ultimo elemento) e ha prodotto una catena di bug
+    diversi: risposta del turno precedente, risposta identica all'outline, ordine DOM
+    invertito, testo troncato. Ognuno "risolto" da un'ipotesi nuova sulla struttura della
+    pagina, che il ciclo dopo si rivelava sbagliata.
+
+    Qui non si indovina piu' niente. Ogni richiesta porta un ID univoco che il modello
+    deve ripetere in apertura e chiusura; si legge `document.body.innerText` (stesso
+    approccio di `read_arena_chat.py`, in produzione) e si prende cio' che sta fra i due
+    marcatori. Proprieta' garantite senza assunzioni sulla UI:
+    - impossibile restituire la risposta di un altro turno (l'ID e' unico per richiesta);
+    - la presenza del marcatore di CHIUSURA prova che la risposta e' COMPLETA, non
+      troncata a meta' (bug che prima serviva un controllo separato per rilevare);
+    - indipendente da classi CSS, ordine dei nodi, bolle utente/assistente.
+
+    Ritorna None se la risposta non e' ancora completa (marcatori assenti) — il chiamante
+    interpreta questo come "continua ad aspettare"."""
+    body = page.evaluate("() => document.body.innerText") or ""
+    open_marker, close_marker = _markers_for(req_id)
+    start = body.find(open_marker)
+    if start == -1:
+        return None
+    end = body.find(close_marker, start + len(open_marker))
+    if end == -1:
+        return None
+    return body[start + len(open_marker):end].strip()
+
+
+def _count_assistant_messages(page: Page) -> int:
+    """Conta i messaggi di risposta del modello presenti ORA (elementi `[class*="prose"]`
+    fuori da una bolla utente). Usato per verificare che l'estrazione prenda davvero la
+    risposta NUOVA e non una vecchia (vedi bug in `_extract_latest_response_text`)."""
+    return page.evaluate(
+        """() => {
+            const els = document.querySelectorAll('[class*="prose"]');
+            let n = 0;
+            for (const el of els) {
+                if (!el.closest('[class*="bg-surface-raised"]')) n++;
+            }
+            return n;
+        }"""
+    )
+
+
 def _extract_latest_response_text(page: Page) -> str | None:
     """Elemento `[class*="prose"]` FUORI da una bolla utente (`bg-surface-raised`) — la
-    risposta del modello, mai il prompt, verificato per struttura non per contenuto."""
+    risposta del modello, mai il prompt, verificato per struttura non per contenuto.
+
+    Prende il PRIMO elemento che soddisfa il criterio: nella DOM di questa chat i messaggi
+    sono in ordine INVERTITO (il piu' recente per primo). Verificato dal vivo il 2026-08-07
+    con un dump completo degli elementi: idx=0 era il prompt appena inviato, idx=4 il primo
+    messaggio della conversazione.
+
+    Storia di questo selettore, per non ripetere l'errore: era `first`, poi cambiato in
+    `last` il 2026-08-06 credendo che la DOM crescesse in ordine cronologico — quel cambio
+    ha INTRODOTTO un bug peggiore (si estraeva sempre il messaggio piu' VECCHIO, cioe'
+    l'outline al posto di ogni capitolo), trovato subito dopo grazie al log di debug e alla
+    guardia `prior_text`. Tornato a `first`, che e' corretto per questa UI. Le guardie
+    (`baseline_count`, `prior_text`, anti-duplicato in book_writer) restano: sono loro ad
+    aver reso visibile l'errore invece di lasciar passare capitoli sbagliati."""
     return page.evaluate(
         """() => {
             const els = document.querySelectorAll('[class*="prose"]');
             for (const el of els) {
-                if (!el.closest('[class*="bg-surface-raised"]')) {
-                    return el.innerText;
-                }
+                if (!el.closest('[class*="bg-surface-raised"]')) return el.innerText;
             }
             return null;
         }"""
     )
 
 
-def send_text_prompt(page: Page, prompt: str, timeout_s: int = 300) -> str:
-    """Invia un prompt di testo, aspetta il completamento REALE, estrae e torna la risposta
-    reale. Solleva TimeoutError/RuntimeError espliciti se qualcosa non torna, mai un testo
-    finto.
+def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600) -> str:
+    """Invia un prompt, aspetta la risposta COMPLETA, la estrae e la ritorna.
 
-    Rilevamento completamento: placeholder 'Generating...' che sparisce (stesso pattern gia'
-    verificato per le immagini, non un timeout fisso). Il bottone 'Stop generation' NON e'
-    affidabile da solo — bug reale trovato in CP4: per risposte brevi/quasi istantanee il
-    bottone non transita mai visibilmente per lo stato 'Stop generation' (la generazione
-    finisce troppo in fretta), mentre il placeholder 'Generating...' compare comunque anche
-    per risposte di una sola frase (verificato con screenshot reale).
+    METODO RISCRITTO IL 2026-08-07 — vedi `_extract_between_markers` per il perche'
+    (richiesta esplicita di Gael di cambiare approccio dopo una catena di bug diversi
+    tutti dovuti a ipotesi sbagliate sulla struttura della pagina).
 
-    Stabilita' testo post-placeholder (bug reale trovato dopo il fix della sessione
-    leggera 2026-08-06): il placeholder 'Generating...' puo' sparire un istante PRIMA che
-    l'ultimo chunk di testo sia effettivamente renderizzato nel DOM — estrarre subito dopo
-    da' un testo troncato a meta' frase (osservato: risposta finita su "...becomes" senza
-    punto). Fix: dopo la sparizione del placeholder, si rilegge il testo finche' non resta
-    IDENTICO fra due letture consecutive (testo ancora cambiante = ancora in rendering).
+    Come funziona ora, senza indovinare nulla della UI:
+    1. si genera un ID univoco e si chiede al modello di delimitare la risposta con esso;
+    2. si invia (rispettando una pausa minima fra invii, per non martellare il servizio);
+    3. si legge il testo dell'intera pagina finche' NON compaiono entrambi i marcatori —
+       la presenza di quello di chiusura e' la prova che la risposta e' finita e completa,
+       quindi non serve piu' indovinare "quando ha finito" dal placeholder 'Generating...';
+    4. lungo l'attesa si gestiscono captcha (pausa per intervento umano) ed errore lato
+       sito (click sul 'Retry' della UI).
 
-    Retry via reload (bug reale trovato in CP5, intermittente — a volte al primo
-    messaggio, a volte al secondo, nessun pattern fisso): il placeholder 'Generating...'
-    a volte non sparisce mai lato client pur essendo la risposta gia' pronta lato server
-    — coerente con una connessione live (WebSocket) persa silenziosamente durante una
-    sessione headless lunga, mai un vero hang del modello (l'account funziona
-    normalmente in un browser umano normale, confermato da Gael). Fix: se il timeout
-    scatta, si ricarica la pagina (forza una riconnessione pulita, la chat e' salvata
-    lato server quindi non si perde nulla) e si ricontrolla — MAI si rimanda il prompt,
-    solo si rilegge lo stato vero. Fino a config.MAX_RETRIES tentativi totali."""
-    textbox = page.locator("textarea, [contenteditable='true']").first
-    textbox.click()
-    textbox.fill(prompt)
-    time.sleep(0.3)
-    _robust_click(page.locator("form button[aria-label='Send message']"))
-    time.sleep(0.8)  # margine perche' il placeholder 'Generating...' compaia nel DOM prima
-                      # del primo controllo — senza, un check troppo rapido puo' vederlo
-                      # ancora assente e uscire subito credendo (erroneamente) che sia finita
+    Solleva errori espliciti (TimeoutError/RuntimeError/CaptchaRequired) — mai un testo
+    finto, mai una risposta di un altro turno."""
+    import uuid
 
-    last_error: Exception | None = None
-    for attempt in range(1, config.MAX_RETRIES + 1):
-        # Solo il primo tentativo usa il timeout pieno (la generazione puo' essere
-        # genuinamente lunga). I retry dopo un reload servono a rilevare una risposta
-        # GIA' pronta lato server ma non riflessa lato client (vedi docstring) — se il
-        # reload non la rivela in una manciata di secondi, aspettare di nuovo per intero
-        # non aiuta: meglio ricaricare ancora che stare fermi.
-        attempt_timeout = timeout_s if attempt == 1 else min(timeout_s, 45)
-        try:
-            return _wait_for_completion_and_extract(page, attempt_timeout)
-        except (TimeoutError, RuntimeError) as exc:
-            last_error = exc
-            if attempt < config.MAX_RETRIES:
-                # Reload SOLO se l'URL e' gia' quello di una chat specifica (bug reale
-                # trovato: se si ricarica mentre l'URL e' ancora quello base, si perde
-                # la chat intera invece di recuperare la risposta gia' pronta — la
-                # pagina torna a una chat nuova vuota). Sulla base URL ci si limita ad
-                # aspettare ancora, senza navigare via da nulla.
-                if page.url.rstrip("/") != config.LMARENA_BASE_URL.rstrip("/"):
-                    page.reload(wait_until="domcontentloaded", timeout=config.DEFAULT_TIMEOUT_MS)
-                    time.sleep(2)
-    raise last_error
+    req_id = f"REQ{uuid.uuid4().hex[:10].upper()}"
+    wrapped = _wrap_prompt_with_markers(prompt, req_id)
+    _debug_log("send_start", req_id=req_id, prompt_len=len(prompt),
+               prompt_preview=prompt[:120], url=page.url)
 
+    def _fill_and_send() -> None:
+        _throttle_before_send()
+        # Chat nuova per ogni richiesta: evita di innescare il captcha, che nei run reali
+        # non compare mai sul primo messaggio di una chat (vedi `start_new_chat`).
+        start_new_chat(page)
+        _dismiss_blocking_overlay(page)
+        tb = page.locator("textarea, [contenteditable='true']").first
+        tb.click()
+        tb.fill(wrapped)
+        time.sleep(0.3)
+        _robust_click(page.locator("form button[aria-label='Send message']"))
+        time.sleep(1.0)
 
-def _wait_for_completion_and_extract(page: Page, timeout_s: int) -> str:
-    waited, max_wait = 0, timeout_s
-    while waited < max_wait:
-        pending = page.get_by_text("Generating", exact=False).count()
-        if pending == 0:
-            break
-        time.sleep(1)
-        waited += 1
-    else:
-        raise TimeoutError(f"LM Arena: generazione testo non completata dopo {max_wait}s")
-    time.sleep(1)  # margine per il rendering finale dopo la sparizione del placeholder
+    _fill_and_send()
 
-    text = _extract_latest_response_text(page)
-    stable_checks, max_stable_checks, total_checks, max_total_checks = 0, 2, 0, 30
-    while stable_checks < max_stable_checks and total_checks < max_total_checks:
-        time.sleep(1)
-        total_checks += 1
-        recheck = _extract_latest_response_text(page)
-        if recheck == text and recheck is not None:
-            stable_checks += 1
-        else:
-            text = recheck
-            stable_checks = 0
-    if text is None:
-        raise RuntimeError("LM Arena: nessuna risposta testuale trovata dopo la generazione")
-    return text
+    ui_retries = 0
+    resends = 0
+    waited = 0
+    while waited < timeout_s:
+        # 1) risposta completa? (entrambi i marcatori presenti)
+        text = _extract_between_markers(page, req_id)
+        if text:
+            _debug_log("send_ok", req_id=req_id, waited=waited, **_text_fingerprint(text))
+            return text
+
+        # 2) captcha: pausa, intervento umano, poi si rimanda il prompt
+        if _captcha_present(page):
+            _debug_log("captcha_detected", req_id=req_id, waited=waited)
+            if not _wait_for_human_to_solve_captcha(page, "send_text_prompt"):
+                raise CaptchaRequired(
+                    f"LM Arena: captcha non risolto entro {CAPTCHA_WAIT_SECONDS}s. "
+                    "Risolvilo nella finestra aperta e rilancia. Non e' aggirabile da "
+                    "codice e non va aggirata."
+                )
+            if resends < config.MAX_RETRIES:
+                resends += 1
+                _fill_and_send()
+                waited = 0
+                continue
+            raise RuntimeError("LM Arena: troppi captcha consecutivi, run interrotto")
+
+        # 3) errore lato sito: si usa il bottone 'Retry' che la UI stessa offre
+        if _generation_error_present(page):
+            if ui_retries < MAX_UI_RETRY_CLICKS and _click_retry_button(page):
+                ui_retries += 1
+                _debug_log("generation_error_retry", req_id=req_id, attempt=ui_retries)
+                print(f"[lmarena] errore lato sito — clicco 'Retry' "
+                      f"({ui_retries}/{MAX_UI_RETRY_CLICKS})", flush=True)
+                time.sleep(3)
+                waited += 3
+                continue
+            if resends < config.MAX_RETRIES:
+                resends += 1
+                _debug_log("generation_error_resend", req_id=req_id, resend=resends)
+                print(f"[lmarena] errore lato sito, 'Retry' non disponibile — rimando il "
+                      f"prompt ({resends}/{config.MAX_RETRIES})", flush=True)
+                _fill_and_send()
+                waited = 0
+                continue
+            _debug_log("generation_error_fatal", req_id=req_id)
+            raise RuntimeError(
+                "LM Arena: errore di generazione lato sito ('Something went wrong') non "
+                f"risolto dopo {ui_retries} Retry e {resends} reinvii."
+            )
+
+        time.sleep(3)
+        waited += 3
+
+    _debug_log("send_timeout", req_id=req_id, waited=waited)
+    raise TimeoutError(
+        f"LM Arena: risposta completa non ricevuta dopo {timeout_s}s "
+        f"(marcatori {req_id} mai comparsi entrambi)"
+    )
+
 
 
 def _current_img_srcs(page: Page) -> set:
@@ -256,11 +667,18 @@ def _current_img_srcs(page: Page) -> set:
 
 
 def send_image_prompt(page: Page, prompt: str, out_path: Path,
-                       source_image_path: Path | None = None, timeout_s: int = 240) -> Path:
+                       source_image_path: Path | None = None, timeout_s: int = 480) -> Path:
     """Passa in modalita' immagine, invia il prompt (con allegato opzionale), aspetta il
     completamento REALE (placeholder 'Generating image...' che sparisce), salva il file .png
     reale su disco in `out_path`. Stesso pattern gia' verificato in produzione in
-    arena_thumbnail.py — qui generalizzato (out_path esplicito, non hardcoded)."""
+    arena_thumbnail.py — qui generalizzato (out_path esplicito, non hardcoded).
+
+    Rilevamento captcha + log + timeout allungato (2026-08-07): stesse protezioni gia'
+    costruite e verificate per il testo, applicate qui perche' il sintomo osservato sulle
+    immagini (placeholder 'Generating image...' che non sparisce mai fino al timeout) e'
+    IDENTICO a quello che sul testo si e' rivelato essere il captcha — ipotesi non ancora
+    confermata dal vivo sulle immagini, ma le protezioni sono corrette a prescindere:
+    se e' captcha lo dice subito, se non lo e' il log mostra cos'altro succede."""
     try:
         _robust_click(page.locator("form button[aria-label='Image']"), timeout=8000)
         time.sleep(0.5)
@@ -278,6 +696,12 @@ def send_image_prompt(page: Page, prompt: str, out_path: Path,
     except Exception:
         pass
 
+    # Il passaggio in modalita' immagine puo' riportare la UI in Battle Mode (segnalato da
+    # Gael il 2026-08-07 guardando la finestra reale: le copertine venivano generate in
+    # Battle Mode invece che in Direct/Max). Riverificato e ricorretto qui, DOPO il cambio
+    # modalita' — farlo solo in open_session non basta.
+    _assert_direct_mode(page, "send_image_prompt")
+
     if source_image_path is not None:
         page.locator("input[type='file']").first.set_input_files(str(source_image_path), timeout=8000)
         try:
@@ -287,6 +711,8 @@ def send_image_prompt(page: Page, prompt: str, out_path: Path,
             pass
 
     ignore_srcs = _current_img_srcs(page)
+    _debug_log("image_send_start", prompt_len=len(prompt), prompt_preview=prompt[:120],
+               known_imgs=len(ignore_srcs), url=page.url)
     textbox = page.locator("textarea, [contenteditable='true']").first
     textbox.click()
     textbox.fill(prompt)
@@ -295,13 +721,47 @@ def send_image_prompt(page: Page, prompt: str, out_path: Path,
     time.sleep(0.8)  # stesso margine di send_text_prompt: evita un primo check troppo rapido
 
     waited, max_wait = 0, timeout_s
+    img_retries = 0
     while waited < max_wait:
+        if _captcha_present(page):
+            _debug_log("captcha_detected", where="send_image_prompt", waited=waited)
+            if not _wait_for_human_to_solve_captcha(page, "send_image_prompt"):
+                raise CaptchaRequired(
+                    "LM Arena: captcha durante la generazione immagine, non risolto entro "
+                    f"{CAPTCHA_WAIT_SECONDS}s. Risolvilo nella finestra aperta e rilancia. "
+                    "Non e' aggirabile da codice e non va aggirata."
+                )
+            # Captcha risolto: la generazione era bloccata, va rimandata da capo.
+            textbox = page.locator("textarea, [contenteditable='true']").first
+            textbox.click()
+            textbox.fill(prompt)
+            time.sleep(0.3)
+            _robust_click(page.locator("form button[aria-label='Send message']"))
+            time.sleep(0.8)
+            waited = 0
+            continue
+        # Stesso errore lato sito gestito per il testo (banner + bottone Retry della UI).
+        if _generation_error_present(page):
+            if img_retries < MAX_UI_RETRY_CLICKS and _click_retry_button(page):
+                img_retries += 1
+                _debug_log("image_generation_error_retry", attempt=img_retries, waited=waited)
+                print(f"[lmarena] errore generazione immagine lato sito — clicco 'Retry' "
+                      f"({img_retries}/{MAX_UI_RETRY_CLICKS})", flush=True)
+                time.sleep(3)
+                waited += 3
+                continue
+            _debug_log("image_generation_error_fatal", retries_used=img_retries)
+            raise RuntimeError(
+                "LM Arena: errore di generazione immagine lato sito ('Something went "
+                f"wrong') non risolto dopo {img_retries} click su Retry."
+            )
         pending = page.get_by_text("Generating image...").count()
         if pending == 0:
             break
         time.sleep(3)
         waited += 3
     else:
+        _debug_log("image_timeout", waited=waited)
         raise TimeoutError(f"LM Arena: generazione immagine non completata dopo {max_wait}s")
     time.sleep(3)  # margine per il rendering completo dopo la sparizione del placeholder
 
@@ -320,8 +780,10 @@ def send_image_prompt(page: Page, prompt: str, out_path: Path,
             out_path.write_bytes(resp.body())
         else:
             img.screenshot(path=str(out_path))
+        _debug_log("image_ok", path=str(out_path), size_kb=round(out_path.stat().st_size / 1024, 1))
         return out_path
 
+    _debug_log("image_not_found", total_imgs=imgs.count(), known_imgs=len(ignore_srcs))
     raise RuntimeError("LM Arena: nessuna immagine nuova trovata dopo la generazione")
 
 
@@ -334,7 +796,7 @@ if __name__ == "__main__":
     print("=== CP4 self-test REALE: testo + immagine su LM Arena (sessione vera) ===\n")
 
     with sync_playwright() as p:
-        session = open_session(p, headless=True)
+        session = open_session(p)
         try:
             print("[1/2] invio prompt di testo reale...")
             reply = send_text_prompt(

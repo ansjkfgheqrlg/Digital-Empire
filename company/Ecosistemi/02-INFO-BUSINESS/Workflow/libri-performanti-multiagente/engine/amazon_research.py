@@ -10,6 +10,7 @@ esplicitamente (lista vuota + errore loggato), non inventa risultati.
 """
 from __future__ import annotations
 
+import re
 import time
 from dataclasses import dataclass
 
@@ -26,6 +27,7 @@ class BookListing:
     rating: str | None
     asin: str | None
     url: str | None
+    reviews_count: int | None = None
 
 
 def _extract_listings(page: Page, max_results: int = 20) -> list[BookListing]:
@@ -77,6 +79,21 @@ def _extract_listings(page: Page, max_results: int = 20) -> list[BookListing]:
         if rating_loc.count() > 0:
             rating = rating_loc.inner_text(timeout=2000).strip() or None
 
+        # Numero di recensioni: metrica chiave per valutare quanto e' aggredibile una
+        # nicchia (pochi concorrenti con poche recensioni = spazio per entrare). Amazon lo
+        # espone come link accanto alle stelle, con l'aria-label che contiene il conteggio.
+        reviews_count = None
+        for sel in ["a[aria-label*='ratings']", "a[aria-label*='rating']",
+                     "span[aria-label*='ratings']", "span.a-size-base.s-underline-text"]:
+            loc = item.locator(sel).first
+            if loc.count() == 0:
+                continue
+            raw = (loc.get_attribute("aria-label") or loc.inner_text(timeout=2000) or "").strip()
+            digits = re.sub(r"[^\d]", "", raw.split("ratings")[0] if "ratings" in raw else raw)
+            if digits:
+                reviews_count = int(digits)
+                break
+
         link_loc = item.locator("h2 a").first
         url = None
         if link_loc.count() > 0:
@@ -84,7 +101,8 @@ def _extract_listings(page: Page, max_results: int = 20) -> list[BookListing]:
             if href:
                 url = href if href.startswith("http") else config.AMAZON_BASE_URL + href
 
-        listings.append(BookListing(title=title, author=author, price=price, rating=rating, asin=asin, url=url))
+        listings.append(BookListing(title=title, author=author, price=price, rating=rating,
+                                     asin=asin, url=url, reviews_count=reviews_count))
 
     return listings
 
