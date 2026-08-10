@@ -35,7 +35,8 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
-from . import book_output_manager, book_report, config, kdp_formatter, validators
+from . import (book_output_manager, book_report, config, kdp_formatter,
+                report_validazione, validators)
 
 PROGETTI_DIR = config.LIBRI_DIR / "in_lavorazione"
 
@@ -279,8 +280,31 @@ class BookProject:
                 encoding="utf-8",
             )
             out["report"] = str(report_path)
+
+            # --- Verdetto unico: pubblicabile o no ---------------------------- #
+            verdetto = report_validazione.ReportValidazione()
+            minimo = config.TARGET_PAGE_COUNT - config.TARGET_PAGE_COUNT_TOLERANCE
+            if pagine_reali and pagine_reali < minimo:
+                verdetto.blocca(f"Pagine reali {pagine_reali}, il minimo per il target e' {minimo}")
+            for etichetta, voci in esiti.items():
+                gravita = "bloccante" if etichetta.startswith("Titolo sulla copertina") else "avviso"
+                # Un avviso "verifica a mano" (dipendenza assente) non e' un difetto del
+                # libro: non deve bloccare, ma deve restare scritto.
+                voci_vere = [v for v in voci if not v.startswith("VERIFICA A MANO")]
+                voci_manuali = [v for v in voci if v.startswith("VERIFICA A MANO")]
+                verdetto.aggiungi(etichetta, voci_vere, gravita)
+                verdetto.aggiungi(etichetta, voci_manuali, "avviso")
+
+            verdetto.salva(pacchetto.folder_path / "validazione.json")
+            out["pubblicabile"] = verdetto.pubblicabile
+            print(verdetto.riepilogo())
             print(f"[assembla] report di consegna: {report_path.name}")
             print(f"[assembla] pacchetto pronto: {pacchetto.folder_path}")
+            if not verdetto.pubblicabile and not forza:
+                raise RuntimeError(
+                    "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': "
+                    + "; ".join(verdetto.bloccanti)
+                )
         else:
             print("[assembla] copertina non fornita — genera prima la copertina "
                   "(python -m engine.cover_generator) e ripassala con --cover")
