@@ -52,18 +52,26 @@ per la prosa (Haiku) tenendo i modelli grossi solo per l'outline.
 
 Legenda: 🔴 non iniziato · 🔄 in corso · ✅ chiuso e verificato con esecuzione reale
 
+> **AGGIORNAMENTO 2026-08-10** — V0-V3 sono stati **superati da una scelta diversa di
+> Gael**: *"devi creare i flussi, cioè dei SOP per scrivere i libri, devi dividere tutto in
+> step"*. Niente canale API e niente `claude_writer`: i capitoli li scrive Claude in
+> sessione e li salva come file, `engine/book_project.py` fa da ponte verso il motore già
+> costruito. Zero costi esterni, zero captcha. Il primo libro è stato prodotto così.
+
 | # | Checkpoint | Stato | Dipende da |
 |---|---|---|---|
-| V0 | Scelta e verifica del canale (CLI headless vs SDK+API key) — decisione di Gael + prova che una chiamata reale risponde | 🔴 | — |
-| V1 | `claude_writer.py`: modulo che genera testo via il canale scelto, con retry e costo minimo | 🔴 | V0 |
-| V2 | `book_writer.py` riscritto su `claude_writer` (outline + capitoli), LM Arena rimosso dal percorso testo | 🔴 | V1 |
-| V3 | Ottimizzazione crediti: modello economico per la prosa, prompt compatti, nessuna rigenerazione inutile — misurata su un libro vero | 🔴 | V2 |
-| V4 | `cover_generator.py` invariato (LM Arena) ma isolato: se la copertina fallisce il libro si produce comunque, con copertina segnalata mancante | 🔴 | — |
-| V5 | `orchestrator.py` aggiornato: research (Amazon) → qualifica → outline+capitoli (Claude) → formattazione → copertina (LM Arena) → pacchetto | 🔴 | V2, V4 |
-| V6 | Test end-to-end reale: 1 libro completo 120 pagine + copertina, verificato (conteggio pagine reale, coerenza trama, copertina diversa dalle precedenti) | 🔴 | V5 |
+| V0 | ~~Scelta canale API~~ → **superato**: si scrive in sessione, nessun canale esterno | ⬛ | — |
+| V1 | ~~`claude_writer.py`~~ → **sostituito** da `book_project.py` (progetto = cartella, capitoli = file) + `SOP-SCRIVERE-UN-LIBRO.md` | ✅ | — |
+| V2 | ~~`book_writer.py` su API~~ → **superato**: il testo si scrive in sessione seguendo la SOP | ⬛ | — |
+| V3 | ~~Ottimizzazione crediti~~ → **non applicabile**: nessun consumo esterno per il testo | ⬛ | — |
+| V4 | Copertina isolata: se fallisce, il libro si produce comunque e la copertina è segnalata mancante | ✅ | — |
+| V5 | Flusso completo in `book_project.assembla`: capitoli → .docx → PDF → copertina → pacchetto + report | ✅ | V1, V4 |
+| V6 | **Test end-to-end reale**: "The Quiet Hours", 115 pagine REALI contate sul PDF, copertina col titolo, pacchetto completo | ✅ | V5 |
+| V6b | Report di consegna + validatori (trattini, numerazione, sillabazione, titolo copertina via OCR) — richiesta 2026-08-10 | ✅ | V6 |
 | V7 | Tile "Libri KDP" in Aureus/EmpireDesk, sezione automazioni, con bottone Avvia funzionante | 🔴 | V6 |
 | V8 | Tile "Outreach" nella stessa sezione automazioni (richiesta esplicita di Gael) | 🔴 | — |
 | V9 | Pulizia: codice LM Arena per il testo archiviato (non cancellato), PIANO-KDP-67 aggiornato con rimando a questo piano | 🔴 | V5 |
+| V10 | Comando unico da riga di comando per l'intero flusso (dal piano del 2026-08-10, RF-05) | 🔴 | V5 |
 
 ### Definizione di "fatto" per ciascuno
 
