@@ -35,7 +35,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
-from . import book_output_manager, config, kdp_formatter
+from . import book_output_manager, book_report, config, kdp_formatter, validators
 
 PROGETTI_DIR = config.LIBRI_DIR / "in_lavorazione"
 
@@ -221,7 +221,27 @@ class BookProject:
                 f"{docx_path} per controllo, ma NON e' pubblicabile cosi'."
             )
 
+        # --- Controlli editoriali sul testo, PRIMA di impacchettare ----------- #
+        testo_completo = "\n\n".join(
+            self.path_capitolo(n).read_text(encoding="utf-8") for n in stato.capitoli_scritti
+        )
+        # Trattini nel sorgente: SEGNALATI, non bloccanti (2026-08-10). Bloccare qui era
+        # sbagliato: in narrativa inglese i trattini sono grammatica ('twenty-nine',
+        # 'night-time'), e il testo puo' contenerne di voluti ("M-A-R-S-H", un personaggio
+        # che fa lo spelling). Il difetto vero — parole spezzate dall'impaginazione — si
+        # cerca sul PDF, dove nasce (`valida_sillabazione_pdf`).
+        trattini = validators.valida_trattini(testo_completo)
+        esiti = {"Trattini nel testo (da rivedere a occhio)": trattini}
+        if trattini:
+            print(f"[assembla] {len(trattini)} trattini segnalati nel testo — controlla il "
+                  f"REPORT: in inglese molti sono corretti, non vanno cambiati alla cieca.")
+
         if cover_path and Path(cover_path).exists():
+            esiti["Titolo sulla copertina"] = validators.valida_copertina_testo(
+                Path(cover_path), cfg["titolo"])
+            for avviso in esiti["Titolo sulla copertina"]:
+                print(f"[assembla] copertina: {avviso}")
+
             pacchetto = book_output_manager.create_book_package(
                 book_title=cfg["titolo"],
                 manuscript_path=docx_path,
@@ -231,6 +251,35 @@ class BookProject:
                 page_count=risultato.estimated_pages,
             )
             out["pacchetto"] = str(pacchetto.folder_path)
+
+            pagine_reali = (book_output_manager.conta_pagine_pdf(pacchetto.pdf_dest)
+                            if pacchetto.pdf_dest else None)
+            if pacchetto.pdf_dest:
+                esiti["Numerazione pagine"] = validators.valida_numerazione_pagine(pacchetto.pdf_dest)
+                for avviso in esiti["Numerazione pagine"]:
+                    print(f"[assembla] numerazione: {avviso}")
+                esiti["Parole spezzate a fine riga"] = validators.valida_sillabazione_pdf(
+                    pacchetto.pdf_dest, testo_sorgente=testo_completo)
+                for avviso in esiti["Parole spezzate a fine riga"][:3]:
+                    print(f"[assembla] sillabazione: {avviso}")
+
+            # --- REPORT di consegna (richiesta di Gael, 2026-08-10) ----------- #
+            report_path = pacchetto.folder_path / "REPORT.md"
+            report_path.write_text(
+                book_report.genera_report(
+                    cfg, stato, risultato, pagine_reali,
+                    {
+                        "PDF (da leggere)": pacchetto.pdf_dest,
+                        "Copertina": pacchetto.cover_dest,
+                        "Manoscritto Word": pacchetto.manuscript_dest,
+                        "Metadati KDP": pacchetto.metadata_dest,
+                    },
+                    esiti,
+                ),
+                encoding="utf-8",
+            )
+            out["report"] = str(report_path)
+            print(f"[assembla] report di consegna: {report_path.name}")
             print(f"[assembla] pacchetto pronto: {pacchetto.folder_path}")
         else:
             print("[assembla] copertina non fornita — genera prima la copertina "
