@@ -219,49 +219,34 @@ def make_real_research_dep(keyword: str, working_title: str, description: str = 
     return _research
 
 
+def _scrittura_archiviata(nome: str):
+    """Le fasi PLANNING e WRITING via LM Arena sono state ARCHIVIATE il 2026-08-10.
+
+    Il testo non si genera piu' pilotando LM Arena: il captcha scatta dopo poche richieste
+    e un libro ne richiede 24+ (cronaca in PIANO-KDP-67.md). I capitoli li scrive Claude in
+    sessione seguendo SOP-SCRIVERE-UN-LIBRO.md e finiscono come file su disco; da li' li
+    raccoglie `engine/book_project.py`.
+
+    Queste funzioni restano come segnaposto per non lasciare un import rotto in silenzio:
+    chiamarle da' un errore che dice cosa fare, invece di un ImportError oscuro su un
+    modulo spostato in archivio."""
+    raise NotImplementedError(
+        f"{nome} non e' piu' disponibile: la scrittura via LM Arena e' archiviata in "
+        f"_archivio_testo_lmarena/ (captcha non aggirabile). Usa il flusso attuale: "
+        f"python -m engine.kdp nuovo \"<titolo>\" --nicchia \"<nicchia>\", scrivi i "
+        f"capitoli seguendo SOP-SCRIVERE-UN-LIBRO.md, poi "
+        f"python -m engine.kdp consegna <slug> --cover <copertina.png>"
+    )
+
+
 def make_real_planning_dep() -> Callable[[dict], dict]:
-    """Dependency REALE per la fase PLANNING (CP9, sostituisce il modulo finto): apre una
-    sessione LM Arena propria (CP4, sessione salvata in CP1), genera l'outline reale (CP5)
-    e chiude la sessione. Sessione indipendente dalla fase WRITING (non condivisa) perche'
-    un resume dopo crash puo' rilanciare WRITING da sola, in un processo diverso, senza
-    l'outline della fase precedente in memoria di un browser gia' aperto."""
-    from playwright.sync_api import sync_playwright
-
-    from . import book_writer, lmarena_client
-
-    def _planning(research: dict) -> dict:
-        with sync_playwright() as p:
-            session = lmarena_client.open_session(p)
-            try:
-                outline = book_writer.generate_outline(session.page, research)
-            finally:
-                session.close()
-        print(f"[orchestrator] planning reale: outline '{outline['title']}' generata")
-        return outline
-
-    return _planning
+    """ARCHIVIATA — vedi `_scrittura_archiviata`."""
+    return lambda research: _scrittura_archiviata("make_real_planning_dep")
 
 
 def make_real_writing_dep(total_chapters: int = 24, words_per_chapter: int = 1500) -> Callable[[dict], dict]:
-    """Dependency REALE per la fase WRITING (CP9): apre una sessione LM Arena propria,
-    genera il manoscritto capitolo per capitolo con continuita' (CP5), chiude la sessione.
-    Default 24 capitoli x 1500 parole = 36000 parole, dentro il range target di
-    kdp_formatter (120±5 pagine a 300 parole/pagina = 34500-37500)."""
-    from playwright.sync_api import sync_playwright
-
-    from . import book_writer, lmarena_client
-
-    def _writing(planning: dict) -> dict:
-        with sync_playwright() as p:
-            session = lmarena_client.open_session(p)
-            try:
-                book = book_writer.write_chapters(session.page, planning, total_chapters, words_per_chapter)
-            finally:
-                session.close()
-        print(f"[orchestrator] writing reale: {len(book['chapters'])} capitoli generati")
-        return book
-
-    return _writing
+    """ARCHIVIATA — vedi `_scrittura_archiviata`."""
+    return lambda planning: _scrittura_archiviata("make_real_writing_dep")
 
 
 if __name__ == "__main__":
