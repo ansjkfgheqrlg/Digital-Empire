@@ -129,10 +129,34 @@ FORBIDDEN_NICHE_KEYWORDS = [
     "habit tracker", "planner", "organizer", "30-day challenge",
     "prompt journal", "log book", "logbook",
 ]
+# Generi narrativi riconosciuti. La lista va tenuta LARGA: una keyword mancante non
+# produce un "non lo so", produce un NO-GO che butta via una nicchia buona — successo
+# davvero il 2026-08-12 con "cozy paranormal mystery witch", scartata (punteggio forzato a
+# 0) solo perche' "paranormal" e "witch" non erano in elenco, pur essendo uno dei generi
+# piu' venduti su KDP. Il compito di questa lista e' distinguere una STORIA da un
+# diario/planner, non giudicare se il genere piace.
 REQUIRED_NICHE_KEYWORDS = [
+    # gia' presenti
     "cozy mystery", "small town romance", "psychological thriller",
     "family secret", "cozy bakery mystery", "small-town rural fiction",
     "memoir", "true crime", "novella", "detective", "suspense",
+    # mystery e crime
+    "mystery", "whodunit", "murder", "crime", "noir", "investigation",
+    "amateur sleuth", "police procedural", "heist",
+    # thriller
+    "thriller", "domestic suspense", "spy", "espionage", "conspiracy",
+    # romance (uno dei generi piu' venduti su KDP)
+    "romance", "romantic", "love story", "amish", "regency", "historical romance",
+    "second chance", "enemies to lovers", "billionaire", "cowboy",
+    # paranormale, fantasy, horror
+    "paranormal", "witch", "vampire", "werewolf", "shifter", "ghost", "haunted",
+    "fantasy", "magic", "urban fantasy", "horror", "supernatural", "occult",
+    # fantascienza e distopia
+    "science fiction", "sci-fi", "dystopian", "post-apocalyptic", "space opera",
+    "time travel", "cyberpunk",
+    # altri narrativi
+    "western", "adventure", "saga", "coming of age", "literary fiction",
+    "historical fiction", "war", "survival", "young adult",
 ]
 
 # --------------------------------------------------------------------------- #
