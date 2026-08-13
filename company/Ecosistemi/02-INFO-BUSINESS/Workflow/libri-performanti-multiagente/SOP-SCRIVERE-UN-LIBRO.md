@@ -18,7 +18,7 @@ Da lì Claude segue questa procedura senza bisogno di altre istruzioni.
 ## STEP 1 — Ricerca nicchia *(automatico)*
 
 ```
-python -m engine.amazon_research "cozy mystery cats"
+python -m engine.kdp nicchie --keywords "cozy mystery cats" "small town romance"
 ```
 
 Restituisce i libri concorrenti reali su Amazon: titoli, autori, prezzi, recensioni.
@@ -31,7 +31,7 @@ Restituisce i libri concorrenti reali su Amazon: titoli, autori, prezzi, recensi
 ## STEP 2 — Validazione nicchia *(automatico)*
 
 ```
-python -m engine.story_validator "<titolo di lavoro>" "<descrizione>"
+# (incluso nel comando sopra: una nicchia che non e' una storia esce con punteggio 0)
 ```
 
 Blocca diari, planner, journal e affini: non sono storie, vendono male e non è quello che
@@ -44,7 +44,7 @@ stiamo costruendo. Se esce **NO-GO, si cambia idea** — non si forza.
 ## STEP 3 — Creazione progetto e outline *(Claude scrive)*
 
 ```
-python -m engine.book_project nuovo "<Titolo Del Libro>" --nicchia "<nicchia>"
+python -m engine.kdp nuovo "<Titolo Del Libro>" --nicchia "<nicchia>"
 ```
 
 Crea la cartella del libro. Poi Claude scrive `outline.md` con:
@@ -84,7 +84,7 @@ Secondo paragrafo.
 
 **Controllo a ogni blocco**:
 ```
-python -m engine.book_project stato <slug>
+python -m engine.kdp stato <slug>
 ```
 Dice capitoli scritti, parole totali, pagine stimate e qual è il prossimo capitolo.
 
@@ -109,7 +109,7 @@ genere.
 ## STEP 6 — Assemblaggio e controllo *(automatico)*
 
 ```
-python -m engine.book_project assembla <slug> --cover <percorso-copertina.png>
+python -m engine.kdp consegna <slug> --cover <percorso-copertina.png>
 ```
 
 Produce il `.docx` formattato KDP (6×9", margini specchio, numeri di pagina) e **conta le
@@ -136,8 +136,8 @@ Dopo la pubblicazione, spostare la cartella in `LIBRI/libri_pubblicati/`.
 Niente si perde: i capitoli sono file su disco.
 
 ```
-python -m engine.book_project stato            # elenco di tutti i libri in lavorazione
-python -m engine.book_project stato <slug>     # a che punto è questo
+python -m engine.kdp stato                     # elenco di tutti i libri in lavorazione
+python -m engine.kdp stato <slug>     # a che punto è questo
 ```
 
 Poi si rileggono `outline.md` e `riassunti.md` e si riparte dal capitolo indicato.
