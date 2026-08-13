@@ -5,6 +5,14 @@ import asyncio
 import sys
 from pathlib import Path
 
+# B-013: su Windows stdout e' cp1252 e i banner qui sotto (box-drawing) facevano
+# morire main.py alla riga 21, prima ancora di arrivare al workflow. Un entry
+# point puo' dichiarare l'encoding che gli serve; una libreria no (per questo
+# ruflo_core.py stampa solo ASCII).
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 # Add parent to path
 sys.path.insert(0, str(Path(__file__).parent))
 

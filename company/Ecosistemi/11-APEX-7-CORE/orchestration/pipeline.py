@@ -47,31 +47,45 @@ from .healing import SelfHealingEngine
 DEFAULT_ROLES = ("planner", "analyst", "writer", "critic", "refiner", "meta")
 
 
+_profondita_stdout = 0
+_errors_originale = None
+
+
 @contextmanager
 def stdout_tollerante() -> Iterator[None]:
     """
-    Rende i print del motore condiviso incapaci di far cadere un run.
+    Impedisce che un carattere stampato decida l'esito di un'orchestrazione.
 
-    `ruflo_core.execute_workflow` stampa un carattere non-ASCII: su una console
-    Windows cp1252 solleva UnicodeEncodeError nel percorso principale, non su
-    un ramo d'errore. Il difetto e' del motore e va corretto la' (vedi
-    README.md §Difetti del motore); qui si evita solo che la stampa di una
-    freccia decida l'esito di un'orchestrazione. Ripristina lo stato originale
-    all'uscita.
+    `ruflo_core` stampa solo ASCII (B-013 corretto), ma gli agenti di dominio
+    registrati nello swarm sono codice di terzi: se uno stampa un'emoji su
+    console Windows cp1252, l'UnicodeEncodeError arriva dal percorso normale e
+    fa cadere il run. Qui si degrada la stampa, non l'esecuzione.
+
+    Rientrante: i 3 stream di ArenaGenerator girano in `asyncio.gather` e
+    questi context manager si annidano; solo il piu' esterno ripristina.
     """
+    global _profondita_stdout, _errors_originale
     stream = sys.stdout
     riconfigura = getattr(stream, "reconfigure", None)
     if riconfigura is None:
         yield
         return
-    precedente = getattr(stream, "errors", None)
+
+    if _profondita_stdout == 0:
+        _errors_originale = getattr(stream, "errors", None)
+        try:
+            riconfigura(errors="replace")
+        except Exception:
+            yield
+            return
+    _profondita_stdout += 1
     try:
-        riconfigura(errors="replace")
         yield
     finally:
-        if precedente:
+        _profondita_stdout -= 1
+        if _profondita_stdout == 0 and _errors_originale:
             try:
-                riconfigura(errors=precedente)
+                riconfigura(errors=_errors_originale)
             except Exception:
                 pass
 

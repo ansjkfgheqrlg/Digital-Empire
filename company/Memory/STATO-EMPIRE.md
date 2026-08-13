@@ -1,4 +1,50 @@
-# STATO EMPIRE -- aggiornato 2026-08-13 (Claude: ORCHESTRATION LAYER APEX-7 innestato in 11-APEX-7-CORE — 7 quality gate che bloccano davvero, motore condiviso intatto, 46/46 test — CP-20260813-001 · Claude: PRIMO LIBRO KDP COMPLETO — "The Quiet Hours", 115 pagine reali + copertina, pacchetto pronto — CP-20260808-002 · Claude: Aureus — pulsante unico "Produci video + copertina", catena YouTube Factory incatenata e verificata — CP-20260808-001 · Claude: PIANO KDP — LM Arena abbandonato per il testo (captcha non aggirabile), si passa a Claude, copertine restano su LM Arena — CP-20260807-001 · Claude: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005 · Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-003 · Claude: Arsenale Caroselli, libreria output per prodotto — CP-20260806-002 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-13 (Claude: APEX-7 — i 3 stream di produzione passano dai 7 gate, main.py riparte su Windows, censimento chiuso con ADR-011, 49+4+11 test verdi — CP-20260813-002 · Claude: ORCHESTRATION LAYER APEX-7 innestato in 11-APEX-7-CORE — 7 quality gate che bloccano davvero, motore condiviso intatto, 46/46 test — CP-20260813-001 · Claude: PRIMO LIBRO KDP COMPLETO — "The Quiet Hours", 115 pagine reali + copertina, pacchetto pronto — CP-20260808-002 · Claude: Aureus — pulsante unico "Produci video + copertina", catena YouTube Factory incatenata e verificata — CP-20260808-001 · Claude: PIANO KDP — LM Arena abbandonato per il testo (captcha non aggirabile), si passa a Claude, copertine restano su LM Arena — CP-20260807-001 · Claude: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005 · Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-003 · Claude: Arsenale Caroselli, libreria output per prodotto — CP-20260806-002 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## ⚙️ 2026-08-13 — CLAUDE: I 3 STREAM DI PRODUZIONE PASSANO DAI 7 GATE — CP-20260813-002
+
+Seguito di CP-20260813-001, su "fai tutto" di Max.
+
+**B-013 era più grave di come l'avevo scritto.** Non una freccia unicode in libreria:
+**`main.py`, l'entry point del motore canonico, non partiva affatto su Windows** —
+moriva alla riga 21 sul proprio banner box-drawing, prima ancora del workflow. Il motore
+ufficiale della Coordination Fabric non era eseguibile sulla macchina di lavoro. Fix con
+lo split che conta: la **libreria** stampa solo ASCII (non può imporre un encoding ai
+chiamanti), gli **entry point** forzano UTF-8 e si tengono i banner. **B-014 chiuso**: il
+`task_id` sopravvive ai restart, quindi il guard-rail dei 3 giri scatta e uno score 2.0
+termina invece di andare in `RecursionError`.
+
+**Consumatore reale agganciato.** `arena_generator.py` è skill-forge + carousel-machine +
+cold-outreach — i tre che ADR-010 elenca come già in uso sul motore condiviso. Tutti e tre
+passavano dal workflow **nudo**; ora dai 7 gate, con un `<nome>.gate.json` scritto accanto
+all'output (`[GATE] skill-forge: CERTIFICATO L1->L7 in 315ms`). Prima quei file venivano
+scritti sempre e dal file non si capiva se valessero qualcosa. `strict=False` di default
+(salva ma avvisa), `strict=True` pronto: non spengo da un giorno all'altro una pipeline che
+produce — ADR-003 dice che il sostituto si valida in parallelo.
+
+**Il test YouTube rosso era un difetto del test, non del codice.** La Fase 3 viene
+bloccata dal gate dei 12 minuti su uno script reale da 11.0 min (critic score 8.09, sopra
+soglia: è la durata a fermarlo) — lo stesso gate che CP-20260805-005 aveva reso bloccante
+apposta. Il test pretendeva sempre di arrivare alla fase 6, rendendo **un gate che funziona
+indistinguibile da un crash**. Riscritto per verificare il comportamento vero → 11/11.
+
+**ADR-011**: il censimento di ADR-010 contava 4 linee APEX-7 divergenti, ne esistono **6**.
+`empire/intelligence/apex7/` è la più onesta del repo (mock e `LLMBackend` separati
+esplicitamente, adapter RuFLO che dichiara cosa manca) → censita come deprecata-non-
+cancellata, i suoi 2 pezzi che al canone mancano da promuovere. **Fase 2 di ADR-010
+bloccata** finché il seam backend LLM non è promosso: scalare su 13 ecosistemi un motore
+che non sa parlare a un LLM reale propaga il limite tredici volte.
+
+**Verificato**: 49 orchestration + 4 multi-tenant + 11 YouTube, tutte verdi (la suite
+YouTube era 10/11 da giorni).
+
+**RIPRESA DA:** tre cose, in ordine. (1) **Accendere `strict=True`** sui 3 stream dopo aver
+letto qualche scorecard vera — è il passo che rende i gate vincolanti, e lo decide Max.
+(2) **Promuovere `backends.py`/`ruflo_adapter.py`** da `empire/intelligence/apex7/` nel
+motore canonico (B-015, ADR-011): oggi il canone non ha un seam per il backend LLM.
+(3) Solo dopo, Fase 2 di ADR-010. Dettaglio in
+[CP-20260813-002](checkpoints/CP-20260813-002.md).
+
+---
 
 ## ⚙️ 2026-08-13 — CLAUDE: ORCHESTRATION LAYER APEX-7 INNESTATO NEL MOTORE CANONICO — CP-20260813-001
 

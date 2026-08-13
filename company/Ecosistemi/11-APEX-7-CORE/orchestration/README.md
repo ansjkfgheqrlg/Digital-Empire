@@ -85,23 +85,43 @@ i path `/home/user` cablati.
 | Cicli nel grafo scoperti dopo 20 iterazioni a vuoto | `topological_order` solleva `DAGCycleError` **prima** di eseguire |
 | SLA documentato `<500ms`, codice che controllava `<5000ms` | `DEFAULT_SLA_MS = 500.0`, configurabile per run |
 
-## Difetti del motore condiviso — trovati qui, NON corretti qui
+## Consumatore agganciato
 
-Emersi facendo girare l'innesto contro `orchestrator/ruflo_core.py`. Il motore e'
-condiviso da YouTube, carousel-machine, skill-forge e cold-outreach: si tocca in
-un ciclo dedicato, non di straforo. Tracciati in `company/Memory/BACKLOG.md`,
-fissati da `TestDifettiDelMotore` (che li dimostra senza innescarli).
+`arena_generator.py` — i **3 stream di produzione** (skill-forge, carousel-machine,
+cold-outreach) girano attraverso i 7 gate invece che sul workflow nudo. Ogni run
+scrive un `<nome>.gate.json` accanto all'output: il file da solo non dice se vale
+qualcosa, la scorecard sì.
 
-1. **`execute_workflow` cade su console Windows** — `print(f"[FLOW] → {stage}")`
-   solleva `UnicodeEncodeError` su stdout cp1252, nel percorso principale.
-   Contenuto qui da `stdout_tollerante()`.
-2. **Ricorsione infinita sotto score 4.0** — `execute_workflow` genera un
-   `task_id` nuovo a ogni restart, quindi `DynamicWorkflowRouter.loop_count` non
-   accumula mai e il workflow riparte per sempre. Contenuto qui: la pipeline lo
-   intercetta come guasto e blocca a L4 invece di appendersi.
+```
+[GATE] skill-forge: CERTIFICATO L1->L7 in 315ms
+```
+
+`ArenaGenerator(strict=True)` **non salva** l'output di una run non certificata.
+Default `strict=False`: salva, ma con scorecard e avviso esplicito — serve a
+raccogliere verdetti su run veri prima di rendere i gate vincolanti su una
+pipeline che oggi produce (ADR-003: il sostituto si valida in parallelo).
+
+## Difetti del motore condiviso — trovati qui, corretti in un secondo giro
+
+Emersi facendo girare l'innesto contro `orchestrator/ruflo_core.py`. Prima
+tracciati in BACKLOG e contenuti dal layer, poi **chiusi** in CP-20260813-002 con
+tutte le suite dei consumatori verdi (49 + 4 + 11).
+
+1. **B-013 ✅ — l'entry point del motore non partiva su Windows.** Piu' grave del
+   previsto: `main.py` moriva alla riga 21 sul proprio banner box-drawing, prima
+   ancora del workflow. Split: la **libreria** (`ruflo_core.py`) stampa solo ASCII
+   perche' non puo' imporre un encoding ai chiamanti; gli **entry point**
+   (`main.py`, `run_demo.py`) forzano UTF-8 e si tengono i banner.
+2. **B-014 ✅ — ricorsione infinita sotto score 4.0.** Il `task_id` si rigenerava a
+   ogni restart, quindi `loop_count` non accumulava e il guard-rail dei 3 giri non
+   poteva scattare. Ora il `task_id` sopravvive ai restart.
 3. **`EventBus` inghiotte le eccezioni degli handler in un `print`** — nessuna
-   traccia ispezionabile. Risolto qui da `InstrumentedEventBus`, che aggiunge
-   `failed_deliveries` e `dead_letter_queue` per sottoclasse.
+   traccia ispezionabile. Risolto **senza toccare il motore**: `InstrumentedEventBus`
+   aggiunge `failed_deliveries` e `dead_letter_queue` per sottoclasse.
+
+`stdout_tollerante()` resta: `ruflo_core` ora e' pulito, ma gli agenti di dominio
+registrati nello swarm sono codice di terzi e una loro emoji non deve poter
+decidere l'esito di un'orchestrazione.
 
 ## File
 
@@ -120,12 +140,16 @@ orchestration/
 
 ```bash
 cd company/Ecosistemi/11-APEX-7-CORE
-python test_orchestration.py      # 46 test
+python test_orchestration.py      # 49 test (meta' verificano che i gate RIFIUTINO)
 python test_multi_tenant.py       # 4 test preesistenti, invariati
+
+cd ../../../YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS
+python test_youtube_apex7.py      # 11 test, consumatore del motore condiviso
 ```
 
 ## Connessioni
 
 - [[ADR-010-fusione-ruflo-apex7]] — perche' l'innesto sta qui e non altrove
-- [[ADR-003-migrazione-wrap-non-riscrittura]] — perche' il motore non e' stato toccato
-- [[ADR-005-backlog-non-blocca]] — perche' i difetti del motore sono in BACKLOG
+- [[ADR-011-quinta-implementazione-apex7]] — censimento chiuso, nessuna linea nuova fuori di qui
+- [[ADR-003-migrazione-wrap-non-riscrittura]] — perche' `strict` parte da False
+- [[ADR-005-backlog-non-blocca]] — B-013/B-014 nati qui, chiusi in un ciclo dedicato

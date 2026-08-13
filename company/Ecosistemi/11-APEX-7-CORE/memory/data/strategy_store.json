@@ -9,10 +9,12 @@
     "parameters": {
       "levels": 7
     },
-    "times_used": 3,
-    "last_used": "2026-07-23T07:58:13.148226",
+    "times_used": 5,
+    "last_used": "2026-08-13T17:30:44.346724",
     "success_rate": 8.5,
     "score_history": [
+      8.5,
+      8.5,
       8.5,
       8.5,
       8.5
@@ -26,10 +28,12 @@
       "all_outputs"
     ],
     "parameters": {},
-    "times_used": 3,
-    "last_used": "2026-07-23T07:58:13.148434",
+    "times_used": 5,
+    "last_used": "2026-08-13T17:30:44.346724",
     "success_rate": 9.0,
     "score_history": [
+      9.0,
+      9.0,
       9.0,
       9.0,
       9.0
@@ -43,10 +47,12 @@
       "persistence"
     ],
     "parameters": {},
-    "times_used": 3,
-    "last_used": "2026-07-23T07:58:13.148637",
+    "times_used": 5,
+    "last_used": "2026-08-13T17:30:44.347724",
     "success_rate": 8.8,
     "score_history": [
+      8.8,
+      8.8,
       8.8,
       8.8,
       8.8

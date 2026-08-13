@@ -19,6 +19,7 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 # Import APEX-7 components
 from memory.memory_system import APEX7Memory, seed_memory
 from orchestrator.ruflo_core import RuFLOOrchestrator
+from orchestration import OrchestrationPipeline
 from agents.planner import PlannerAgent
 from agents.writer import WriterAgent
 from agents.analyst import AnalystAgent
@@ -88,13 +89,31 @@ class ArenaClient:
                     return {"error": str(e), "fallback": True, "prompt": final_prompt[:200]}
 
 class ArenaGenerator:
-    def __init__(self, model: str = "GPT-4o"):
+    """
+    I 3 stream di produzione (skill-forge, carousel-machine, cold-outreach)
+    girano attraverso i 7 quality gate dell'orchestration layer invece che sul
+    workflow nudo: ogni run produce una scorecard L1->L7 salvata accanto
+    all'output, cosi' si sa SE quel file vale qualcosa e non solo che esiste.
+
+    `strict` decide cosa fare quando un gate blocca:
+      - False (default) — l'output viene comunque scritto, con la scorecard
+        accanto e un avviso esplicito. Serve a raccogliere verdetti su run veri
+        senza fermare da un giorno all'altro una pipeline che oggi produce.
+      - True — l'output NON viene scritto se la run non e' certificata.
+        Da accendere quando i verdetti sui run reali sono stati letti (ADR-003:
+        il sostituto si valida in parallelo prima di diventare vincolante).
+    """
+
+    def __init__(self, model: str = "GPT-4o", strict: bool = False):
         self.model = model
+        self.strict = strict
         self.prompts_config = json.loads(PROMPTS_FILE.read_text(encoding='utf-8'))
         self.client = ArenaClient(model_preference=model)
         self.memory = APEX7Memory()
         self.orchestrator = RuFLOOrchestrator(memory_system=self.memory)
         self._register_agents()
+        # SLA generoso: qui dentro girano agenti veri, non calcoli aritmetici
+        self.pipeline = OrchestrationPipeline(self.orchestrator, self.memory, sla_ms=120_000.0)
 
     def _register_agents(self):
         agents = {
@@ -110,25 +129,66 @@ class ArenaGenerator:
             self.orchestrator.register_agent(name, agent)
         self.agents = agents
 
+    # ── esecuzione certificata (orchestration layer) ────────────────────────
+
+    async def _esegui_certificato(self, stream: str, user_input: str, context: Dict):
+        """Fa girare uno stream attraverso i 7 gate e stampa il verdetto vero."""
+        esito = await self.pipeline.run(user_input, context=context, quality_threshold=7.5)
+        if esito.certified:
+            print(f"[GATE] {stream}: CERTIFICATO L1->L7 in {esito.duration_ms:.0f}ms")
+        else:
+            print(f"[GATE] {stream}: NON CERTIFICATO — bloccato a {esito.blocked_at}")
+            print(esito.ledger.render())
+        return esito.workflow_output, esito
+
+    @staticmethod
+    def _salva_scorecard(out_dir: Path, nome: str, esito) -> Path:
+        """La scorecard vive accanto all'output: il file da solo non dice se vale."""
+        percorso = out_dir / f"{nome}.gate.json"
+        percorso.write_text(json.dumps({
+            "run_id": esito.run_id,
+            "certified": esito.certified,
+            "blocked_at": esito.blocked_at,
+            "duration_ms": round(esito.duration_ms, 2),
+            "scorecard": esito.ledger.scorecard(),
+        }, indent=2, ensure_ascii=False), encoding="utf-8")
+        return percorso
+
+    def _blocca_scrittura(self, stream: str, esito) -> bool:
+        """True se in modalita' strict la run non certificata non va salvata."""
+        if self.strict and not esito.certified:
+            print(f"[GATE] {stream}: strict=True -> output NON salvato "
+                  f"(bloccato a {esito.blocked_at})")
+            return True
+        if not esito.certified:
+            print(f"[GATE] {stream}: output salvato ma NON certificato — "
+                  f"leggere la scorecard prima di usarlo")
+        return False
+
     async def run_skill_forge(self, raw_notes: str) -> Dict:
         """Stream S0 - Fabbrica delle Skill"""
         print(f"\n[STREAM S0] Skill-Forge - Model: {self.model}")
         template = next(p["template"] for p in self.prompts_config["prompts"] if p["id"] == "skill-forge")
         variables = {"raw_notes": raw_notes}
         
-        # Esegui via orchestrator APEX-7
-        result = await self.orchestrator.execute_workflow(
-            user_input=f"SKILL-FORGE: {raw_notes[:200]}",
-            context={"raw_notes": raw_notes, "intent": "skill-forge"}
+        # Esegui via orchestration layer APEX-7 (7 gate bloccanti)
+        result, esito = await self._esegui_certificato(
+            "skill-forge",
+            f"SKILL-FORGE: {raw_notes[:200]}",
+            {"raw_notes": raw_notes, "intent": "skill-forge"},
         )
-        
+
         # Salva output
         out_dir = OUTPUT_DIR / "skill-forge"
         out_dir.mkdir(exist_ok=True)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self._salva_scorecard(out_dir, f"SKILL_{timestamp}", esito)
+        if self._blocca_scrittura("skill-forge", esito):
+            return result
+
         writer_out = result.get("writer_output") or result.get("final_output") or {}
         content = writer_out.get("content") if isinstance(writer_out, dict) else str(writer_out)
-        
+
         (out_dir / f"SKILL_{timestamp}.md").write_text(content, encoding='utf-8')
         print(f"[S0] Saved SKILL to {out_dir / f'SKILL_{timestamp}.md'}")
         return result
@@ -148,22 +208,31 @@ class ArenaGenerator:
         
         out_dir = OUTPUT_DIR / "carousel" / f"set_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         out_dir.mkdir(exist_ok=True)
+        salvate = 0
         for i, res in enumerate(results, 1):
+            esito = res["gate"]
+            self._salva_scorecard(out_dir, f"slide_{i}", esito)
+            if self._blocca_scrittura(f"carousel-slide-{i}", esito):
+                continue
             (out_dir / f"slide_{i}_prompt.txt").write_text(res["final_prompt"], encoding='utf-8')
+            salvate += 1
             # In modalità reale, qui salveresti l'immagine generata da Arena
             # res contiene image URL o base64
-        
-        print(f"[S1] Saved {len(results)} slide prompts to {out_dir}")
-        return {"slides": results, "output_dir": str(out_dir)}
+
+        print(f"[S1] Saved {salvate}/{len(results)} slide prompts to {out_dir}")
+        return {"slides": results, "output_dir": str(out_dir), "salvate": salvate}
 
     async def _generate_single_slide(self, template: str, variables: Dict, slide_num: int):
         final_prompt = template.replace("[NUMERO]", str(variables["slide_number"])).replace("[INSERISCI TESTO SLIDE]", variables["slide_text"])
-        core_result = await self.orchestrator.execute_workflow(
-            user_input=f"CAROUSEL SLIDE {slide_num}: {variables['slide_text']}",
-            context={"slide_text": variables["slide_text"], "slide_number": slide_num, "intent": "carousel-machine"}
+        core_result, esito = await self._esegui_certificato(
+            f"carousel-slide-{slide_num}",
+            f"CAROUSEL SLIDE {slide_num}: {variables['slide_text']}",
+            {"slide_text": variables["slide_text"], "slide_number": slide_num,
+             "intent": "carousel-machine"},
         )
         arena_res = await self.client.generate(template, variables, f"S1-slide-{slide_num}")
-        return {"slide": slide_num, "final_prompt": final_prompt, "apex_result": core_result, "arena": arena_res}
+        return {"slide": slide_num, "final_prompt": final_prompt, "apex_result": core_result,
+                "arena": arena_res, "gate": esito}
 
     async def run_cold_outreach(self, target: str, service: str) -> Dict:
         """Stream S2 - Cold Outreach APSOC"""
@@ -171,21 +240,28 @@ class ArenaGenerator:
         template = next(p["template"] for p in self.prompts_config["prompts"] if p["id"] == "cold-outreach")
         variables = {"target": target, "service": service}
         
-        result = await self.orchestrator.execute_workflow(
-            user_input=f"COLD OUTREACH per {target} vendergli {service} framework APSOC",
-            context={"target": target, "service": service, "intent": "cold-outreach"}
+        result, esito = await self._esegui_certificato(
+            "cold-outreach",
+            f"COLD OUTREACH per {target} vendergli {service} framework APSOC",
+            {"target": target, "service": service, "intent": "cold-outreach"},
         )
-        
+
         out_dir = OUTPUT_DIR / "outreach" / f"{target.replace(' ', '_')[:20]}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-        out_dir.mkdir(exist_ok=True)
+        out_dir.mkdir(parents=True, exist_ok=True)
+        self._salva_scorecard(out_dir, "sequenza_apsoc", esito)
+
+        arena_res = await self.client.generate(template, variables, "S2-cold-outreach")
+
+        if self._blocca_scrittura("cold-outreach", esito):
+            return {"result": result, "arena": arena_res, "output_dir": str(out_dir),
+                    "salvato": False}
+
         writer_out = result.get("writer_output") or {}
         content = writer_out.get("content") if isinstance(writer_out, dict) else str(writer_out)
         (out_dir / "sequenza_apsoc.txt").write_text(content, encoding='utf-8')
-        
-        arena_res = await self.client.generate(template, variables, "S2-cold-outreach")
-        
+
         print(f"[S2] Saved sequence to {out_dir / 'sequenza_apsoc.txt'}")
-        return {"result": result, "arena": arena_res, "output_dir": str(out_dir)}
+        return {"result": result, "arena": arena_res, "output_dir": str(out_dir), "salvato": True}
 
     async def run_all_parallel(self, skill_raw_notes: str = None, carousel_texts: List[str] = None, outreach_target: str = None, outreach_service: str = None):
         """Esecuzione parallela di tutti e 3 gli stream - massima ROI"""

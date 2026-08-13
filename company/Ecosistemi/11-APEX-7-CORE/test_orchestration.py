@@ -420,6 +420,49 @@ class TestPipelineIntegrata(unittest.TestCase):
         self.assertEqual(esito.blocked_at, "GATE_L4_SWARM")
 
 
+class TestConsumatoreReale(unittest.TestCase):
+    """
+    `ArenaGenerator` (skill-forge, carousel-machine, cold-outreach) e' il
+    consumatore di produzione agganciato alla pipeline certificata. Qui si
+    verifica la logica di salvataggio senza toccare il disco ne' Arena.
+    """
+
+    class _Esito:
+        def __init__(self, certificato):
+            self.certified = certificato
+            self.blocked_at = None if certificato else "GATE_L5_QUALITY"
+
+    @staticmethod
+    def _generatore(strict):
+        from arena_generator import ArenaGenerator
+        g = ArenaGenerator.__new__(ArenaGenerator)   # niente I/O, niente Arena
+        g.strict = strict
+        return g
+
+    def test_strict_impedisce_di_salvare_output_non_certificato(self):
+        g = self._generatore(strict=True)
+        self.assertTrue(g._blocca_scrittura("s", self._Esito(False)))
+        self.assertFalse(g._blocca_scrittura("s", self._Esito(True)))
+
+    def test_senza_strict_salva_ma_avvisa(self):
+        g = self._generatore(strict=False)
+        self.assertFalse(g._blocca_scrittura("s", self._Esito(False)))
+        self.assertFalse(g._blocca_scrittura("s", self._Esito(True)))
+
+    def test_i_tre_stream_passano_dalla_pipeline_certificata(self):
+        """Nessuno stream deve chiamare execute_workflow direttamente."""
+        import inspect
+        import arena_generator
+        sorgente = inspect.getsource(arena_generator.ArenaGenerator)
+        self.assertNotIn(
+            "self.orchestrator.execute_workflow", sorgente,
+            "uno stream chiama ancora il workflow nudo, saltando i 7 gate",
+        )
+        for metodo in ("run_skill_forge", "_generate_single_slide", "run_cold_outreach"):
+            corpo = inspect.getsource(getattr(arena_generator.ArenaGenerator, metodo))
+            self.assertIn("_esegui_certificato", corpo, f"{metodo} non passa dai gate")
+
+
 class TestDifettiDelMotore(unittest.TestCase):
     """
     Difetti PREESISTENTI di `orchestrator/ruflo_core.py`, trovati durante

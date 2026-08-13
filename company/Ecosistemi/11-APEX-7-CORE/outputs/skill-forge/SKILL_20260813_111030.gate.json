@@ -1,0 +1,85 @@
+{
+  "run_id": "APEX7_c26882bf34",
+  "certified": true,
+  "blocked_at": null,
+  "duration_ms": 314.99,
+  "scorecard": [
+    {
+      "gate_id": "GATE_L1_FOUNDATION",
+      "level": 1,
+      "passed": true,
+      "score": 1.0,
+      "threshold": 1.0,
+      "checks_total": 3,
+      "checks_passed": 3,
+      "failures": [],
+      "duration_ms": 0.143
+    },
+    {
+      "gate_id": "GATE_L2_DAG",
+      "level": 2,
+      "passed": true,
+      "score": 1.0,
+      "threshold": 0.9,
+      "checks_total": 6,
+      "checks_passed": 6,
+      "failures": [],
+      "duration_ms": 0.046
+    },
+    {
+      "gate_id": "GATE_L3_BUS_MEMORY",
+      "level": 3,
+      "passed": true,
+      "score": 1.0,
+      "threshold": 0.85,
+      "checks_total": 5,
+      "checks_passed": 5,
+      "failures": [],
+      "duration_ms": 0.056
+    },
+    {
+      "gate_id": "GATE_L4_SWARM",
+      "level": 4,
+      "passed": true,
+      "score": 1.0,
+      "threshold": 0.85,
+      "checks_total": 3,
+      "checks_passed": 3,
+      "failures": [],
+      "duration_ms": 0.164
+    },
+    {
+      "gate_id": "GATE_L5_QUALITY",
+      "level": 5,
+      "passed": true,
+      "score": 1.0,
+      "threshold": 0.9,
+      "checks_total": 3,
+      "checks_passed": 3,
+      "failures": [],
+      "duration_ms": 0.03
+    },
+    {
+      "gate_id": "GATE_L6_EVOLUTION",
+      "level": 6,
+      "passed": true,
+      "score": 1.0,
+      "threshold": 1.0,
+      "checks_total": 5,
+      "checks_passed": 5,
+      "failures": [],
+      "duration_ms": 0.06
+    },
+    {
+      "gate_id": "GATE_L7_APEX",
+      "level": 7,
+      "passed": true,
+      "score": 1.0,
+      "threshold": 1.0,
+      "checks_total": 7,
+      "checks_passed": 7,
+      "failures": [],
+      "duration_ms": 0.069
+    }
+  ]
+}
