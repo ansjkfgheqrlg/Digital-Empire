@@ -88,21 +88,50 @@ def step1_competitor(keyword: str) -> dict:
 # STEP 2 — scrittura con Haiku
 # --------------------------------------------------------------------------- #
 
+def estrai_titolo(outline: str) -> str | None:
+    """Pesca il titolo definitivo dall'impianto, o None se non c'e'.
+
+    Tollera la decorazione markdown (2026-08-13): il modello scrive spesso `**TITLE:** X`
+    o `# TITLE: X` invece della riga nuda chiesta dal prompt. La versione precedente
+    accettava solo `TITLE:` in testa e in silenzio teneva il titolo di lavoro — il primo
+    libro prodotto si chiamava "Untitled Small Town Romance Suspense 202608131759", che e'
+    esattamente il genere di titolo che fa segnalare un libro su KDP."""
+    for riga in outline.splitlines():
+        pulita = riga.strip().lstrip("#*_ \t").strip()
+        if not pulita.upper().startswith("TITLE"):
+            continue
+        _, sep, valore = pulita.partition(":")
+        if not sep:
+            continue
+        valore = valore.strip().strip("*_\"'").strip()
+        if valore:
+            return valore
+    return None
+
+
 def step2_scrivi(nicchia: str, titolo_lavoro: str, competitor: list[str],
-                  capitoli: int, parole_per_capitolo: int) -> "BookProject":
+                  capitoli: int, parole_per_capitolo: int,
+                  tentativi_outline: int = 3) -> "BookProject":
     from . import book_project, scrittore_haiku
 
     print(f"[STEP 2] impianto del libro (modello {scrittore_haiku.MODELLO})...")
-    outline_grezzo = scrittore_haiku.genera(
-        scrittore_haiku.prompt_outline(nicchia, titolo_lavoro, competitor))
-
-    titolo = titolo_lavoro
-    for riga in outline_grezzo.splitlines():
-        if riga.strip().upper().startswith("TITLE:"):
-            candidato = riga.split(":", 1)[1].strip()
-            if candidato:
-                titolo = candidato
+    titolo, outline_grezzo = None, ""
+    for tentativo in range(1, tentativi_outline + 1):
+        outline_grezzo = scrittore_haiku.genera(
+            scrittore_haiku.prompt_outline(nicchia, titolo_lavoro, competitor))
+        titolo = estrai_titolo(outline_grezzo)
+        if titolo:
             break
+        print(f"  [outline] tentativo {tentativo}: nessuna riga TITLE: leggibile — rigenero")
+
+    # Meglio fermare un libro che pubblicarne uno intitolato "Untitled ...": il titolo e' la
+    # prima cosa che vede il lettore e un placeholder brucia credibilita' all'intero catalogo.
+    if not titolo:
+        raise RuntimeError(
+            f"L'impianto non contiene un titolo leggibile dopo {tentativi_outline} tentativi. "
+            f"Il libro non viene creato: un titolo placeholder su KDP e' un rischio per "
+            f"l'account. Prime righe ricevute: {outline_grezzo[:200]!r}"
+        )
 
     progetto = book_project.BookProject.crea(titolo, nicchia, capitoli=capitoli,
                                               parole_per_capitolo=parole_per_capitolo)

@@ -17,11 +17,36 @@ DIFESE, tutte nate da problemi REALI gia' incontrati su questo progetto:
 - capitolo identico al precedente -> si rigenera (bug realmente visto: 3 capitoli uguali);
 - CLI assente o non autenticato -> errore che dice esattamente cosa fare, mai un fallimento
   oscuro a meta' libro.
+
+I TRE DIFETTI TROVATI AL PRIMO GIRO END-TO-END (2026-08-13), tutti corretti qui:
+
+1. **MAI passare da `claude.CMD`** (2026-08-13, il piu' grave). Il CLI installato da npm su
+   Windows e' un wrapper batch che rilancia l'eseguibile con `%*`. Un argomento che contiene
+   A CAPO viene troncato da cmd.exe alla PRIMA RIGA, e gli argomenti successivi spariscono.
+   Misurato con una sonda su argv, stesso prompt di 11 righe:
+       via .CMD  -> ARGC=2, prompt = solo 'Sei uno scrittore di narrativa di genere.'
+       via .exe  -> ARGC=4, prompt intero, --model haiku presente
+   Due conseguenze, entrambe viste in produzione: il modello riceveva solo la riga del ruolo
+   e rispondeva "il tuo messaggio imposta il ruolo ma non il task"; e **`--model haiku` non
+   arrivava**, quindi si pagava il modello di default. Cioe' l'esatto contrario della scelta
+   di Gael, in silenzio. Tutti i prompt di questo modulo sono multiriga: si chiama SEMPRE
+   l'eseguibile nativo.
+
+2. **cwd fuori dal repo.** `claude` e' un agente, non un generatore di testo: dalla cartella
+   di lavoro risale l'albero e carica i `CLAUDE.md` che trova. Lanciato dentro il progetto
+   caricava le regole di Digital Empire, leggeva lo stato del disco e rispondeva da assistente
+   ("riprendo The Ninth Winter o ne apro uno nuovo?"). Si lancia da una cartella neutra fuori
+   dall'albero, con un system prompt proprio e i tool negati.
+
+3. **stdin chiuso.** Senza, il CLI aspetta 3 secondi di stdin a ogni chiamata e stampa un
+   warning: su 25 chiamate per libro e' piu' di un minuto buttato per niente.
 """
 from __future__ import annotations
 
+import os
 import shutil
 import subprocess
+import tempfile
 from pathlib import Path
 
 from . import config
@@ -30,28 +55,74 @@ MODELLO = "haiku"          # scelta vincolante di Gael, non cambiare senza dirgl
 TIMEOUT_CAPITOLO_S = 600   # un capitolo lungo puo' richiedere qualche minuto
 PAROLE_MINIME_CAPITOLO = 800   # sotto questa soglia il capitolo non e' utilizzabile
 
+# Il CLI e' un AGENTE: senza un system prompt proprio si comporta da assistente e fa
+# domande invece di scrivere. Questo lo riduce a generatore di testo.
+SYSTEM_PROMPT = (
+    "You are a professional genre-fiction ghostwriter. You output only the requested "
+    "creative text, in the exact format requested. You never ask questions, never add "
+    "commentary, never mention files, projects or tools, and never use tools."
+)
+
+# Negati esplicitamente: il modulo genera prosa, non deve poter toccare il disco.
+TOOL_NEGATI = "Bash Read Write Edit Glob Grep WebFetch WebSearch Task TodoWrite NotebookEdit"
+
 
 class ClaudeNonDisponibile(RuntimeError):
     """Il CLI di Claude Code non e' installato o non e' autenticato."""
 
 
+class LimiteSpesaRaggiunto(RuntimeError):
+    """Il piano ha esaurito il budget: nessun capitolo si puo' scrivere finche' non si alza."""
+
+
+def _cartella_neutra() -> Path:
+    """Una cartella di lavoro FUORI dall'albero del repo (vedi punto 2 del docstring).
+
+    Serve perche' `claude` risale l'albero dalla cwd e carica i CLAUDE.md che trova: lanciato
+    dentro il progetto si mette a fare l'assistente di Digital Empire invece di scrivere."""
+    d = Path(tempfile.gettempdir()) / "kdp_scrittore_cwd"
+    d.mkdir(parents=True, exist_ok=True)
+    return d
+
+
 def _eseguibile() -> str:
-    """Trova il CLI. Su Windows npm installa `claude.cmd`, che `shutil.which` trova solo
-    se la shell ha la cartella npm nel PATH: si controllano anche i percorsi standard."""
-    trovato = shutil.which("claude") or shutil.which("claude.cmd")
-    if trovato:
-        return trovato
-    import os
-    for candidato in (
-        Path(os.environ.get("APPDATA", "")) / "npm" / "claude.cmd",
-        Path(os.environ.get("APPDATA", "")) / "npm" / "claude",
+    """Trova l'ESEGUIBILE NATIVO del CLI, mai il wrapper `.cmd`/`.bat`.
+
+    Il wrapper batch tronca alla prima riga qualunque argomento contenga un a capo e perde
+    quelli successivi (punto 1 del docstring, misurato): siccome ogni prompt di questo modulo
+    e' multiriga, passare di li' significa mandare un prompt mutilato SENZA `--model haiku`
+    e non accorgersene, perche' il CLI risponde comunque con successo."""
+    candidati = [
+        Path(os.environ.get("APPDATA", "")) / "npm" / "node_modules" / "@anthropic-ai"
+        / "claude-code" / "bin" / "claude.exe",
         Path(os.environ.get("LOCALAPPDATA", "")) / "Programs" / "claude" / "claude.exe",
-    ):
-        if candidato.exists():
-            return str(candidato)
+    ]
+    trovato = shutil.which("claude")
+    if trovato and Path(trovato).suffix.lower() not in (".cmd", ".bat"):
+        candidati.insert(0, Path(trovato))
+
+    for c in candidati:
+        if c.exists():
+            return str(c)
+
+    # Su Windows `which` trova quasi sempre solo il wrapper: se esiste, l'eseguibile nativo
+    # e' accanto ad esso e va cercato li' invece di arrendersi.
+    wrapper = shutil.which("claude.cmd") or shutil.which("claude")
+    if wrapper:
+        accanto = (Path(wrapper).parent / "node_modules" / "@anthropic-ai" / "claude-code"
+                   / "bin" / "claude.exe")
+        if accanto.exists():
+            return str(accanto)
+        raise ClaudeNonDisponibile(
+            f"Trovato solo il wrapper batch ({wrapper}) e non l'eseguibile nativo accanto.\n"
+            f"Il wrapper NON e' utilizzabile: tronca i prompt multiriga alla prima riga e "
+            f"perde --model, quindi scriverebbe libri sbagliati pagando il modello sbagliato.\n"
+            f"Reinstalla con:  npm install -g @anthropic-ai/claude-code --include=optional"
+        )
+
     raise ClaudeNonDisponibile(
         "CLI di Claude Code non trovato. Installalo con:\n"
-        "  npm install -g @anthropic-ai/claude-code\n"
+        "  npm install -g @anthropic-ai/claude-code --include=optional\n"
         "poi autenticalo lanciando `claude` una volta e seguendo il login."
     )
 
@@ -59,18 +130,36 @@ def _eseguibile() -> str:
 def genera(prompt: str, timeout_s: int = TIMEOUT_CAPITOLO_S) -> str:
     """Una chiamata a Claude Code con Haiku. Ritorna il testo prodotto."""
     esito = subprocess.run(
-        [_eseguibile(), "-p", prompt, "--model", MODELLO],
+        [_eseguibile(), "-p", prompt,
+         "--model", MODELLO,
+         "--system-prompt", SYSTEM_PROMPT,
+         "--disallowed-tools", TOOL_NEGATI],
         capture_output=True, text=True, timeout=timeout_s,
-        cwd=str(config.WORKFLOW_DIR), encoding="utf-8", errors="replace",
+        cwd=str(_cartella_neutra()),          # mai dentro il repo: caricherebbe i CLAUDE.md
+        stdin=subprocess.DEVNULL,             # senza, aspetta 3s di stdin a ogni chiamata
+        encoding="utf-8", errors="replace",
     )
+    uscita = ((esito.stdout or "") + "\n" + (esito.stderr or "")).strip()
+
+    # Il limite di spesa arriva come messaggio normale, non come errore di autenticazione:
+    # senza questo controllo un libro intero fallirebbe capitolo per capitolo con 24
+    # messaggi oscuri invece di uno chiaro.
+    if "spend limit" in uscita.lower() or "limite di spesa" in uscita.lower():
+        raise LimiteSpesaRaggiunto(
+            "Il piano Claude ha raggiunto il limite di spesa mensile: nessun capitolo puo' "
+            "essere scritto finche' non viene alzato su claude.ai/settings/usage. "
+            f"Messaggio del CLI: {uscita[:200]}"
+        )
+
     if esito.returncode != 0:
-        errore = (esito.stderr or "").strip()[:400]
+        errore = (esito.stderr or "").strip()[:400] or uscita[:400]
         if "auth" in errore.lower() or "login" in errore.lower():
             raise ClaudeNonDisponibile(
                 f"Claude Code non e' autenticato. Lancia `claude` da terminale una volta "
                 f"e completa il login, poi rilancia. Dettaglio: {errore}"
             )
         raise RuntimeError(f"Claude Code ha risposto con errore {esito.returncode}: {errore}")
+
     testo = (esito.stdout or "").strip()
     if not testo:
         raise RuntimeError("Claude Code non ha restituito testo.")
