@@ -1,4 +1,57 @@
-# STATO EMPIRE -- aggiornato 2026-08-13 (Claude: APEX-7 — i 3 stream di produzione passano dai 7 gate, main.py riparte su Windows, censimento chiuso con ADR-011, 49+4+11 test verdi — CP-20260813-002 · Claude: ORCHESTRATION LAYER APEX-7 innestato in 11-APEX-7-CORE — 7 quality gate che bloccano davvero, motore condiviso intatto, 46/46 test — CP-20260813-001 · Claude: PRIMO LIBRO KDP COMPLETO — "The Quiet Hours", 115 pagine reali + copertina, pacchetto pronto — CP-20260808-002 · Claude: Aureus — pulsante unico "Produci video + copertina", catena YouTube Factory incatenata e verificata — CP-20260808-001 · Claude: PIANO KDP — LM Arena abbandonato per il testo (captcha non aggirabile), si passa a Claude, copertine restano su LM Arena — CP-20260807-001 · Claude: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005 · Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-003 · Claude: Arsenale Caroselli, libreria output per prodotto — CP-20260806-002 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-14 (Claude: KDP 4 STEP — primo giro end-to-end, STEP 0/1 verdi su Amazon reale, STEP 2 scriveva col modello sbagliato (wrapper .cmd), 47 test verdi, bloccato sul limite di spesa — CP-20260814-001 · Claude: APEX-7 — i 3 stream di produzione passano dai 7 gate, main.py riparte su Windows, censimento chiuso con ADR-011, 49+4+11 test verdi — CP-20260813-002 · Claude: ORCHESTRATION LAYER APEX-7 innestato in 11-APEX-7-CORE — 7 quality gate che bloccano davvero, motore condiviso intatto, 46/46 test — CP-20260813-001 · Claude: PRIMO LIBRO KDP COMPLETO — "The Quiet Hours", 115 pagine reali + copertina, pacchetto pronto — CP-20260808-002 · Claude: Aureus — pulsante unico "Produci video + copertina", catena YouTube Factory incatenata e verificata — CP-20260808-001 · Claude: PIANO KDP — LM Arena abbandonato per il testo (captcha non aggirabile), si passa a Claude, copertine restano su LM Arena — CP-20260807-001 · Claude: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005 · Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-003 · Claude: Arsenale Caroselli, libreria output per prodotto — CP-20260806-002 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## 📕 2026-08-14 — CLAUDE: WORKFLOW KDP A 4 STEP, PRIMO GIRO END-TO-END — CP-20260814-001
+
+Primo lancio reale del workflow riscritto da Gael sui 4 step (nicchia PERSISTENTE →
+competitor → scrittura Haiku → copertina → pacchetto).
+
+**Il CLI non era da autenticare: era rotto.** `claude.exe` era uno **stub da 500 byte** —
+il binario nativo non era mai stato scaricato. Windows diceva "versione incompatibile",
+che manda sulla pista sbagliata. Riparato con `--include=optional` (307MB veri).
+
+**STEP 0 e STEP 1 girano su dati reali.** Nicchia del catalogo fissata una tantum su 56
+concorrenti Amazon letti: `small town romance suspense` **77.7/100**. Scelta non per le
+recensioni (amish le ha più basse) ma perché è l'unica a prendere pieno sul prezzo: a
+$5.95 amish darebbe metà margine per copia, e l'obiettivo dichiarato è il volume di
+**vendite**, non di titoli. STEP 1: 20 concorrenti, riferimento reale.
+
+**Il difetto vero: STEP 2 non passava da Haiku.** `claude.CMD` è un wrapper batch, e
+cmd.exe **tronca alla prima riga** qualunque argomento contenga un a capo, perdendo pure
+quelli dopo. Misurato con una sonda su argv, stesso prompt di 11 righe: via `.CMD` ARGC=2
+(solo la riga del ruolo), via `.exe` ARGC=4 (prompt intero + `--model haiku`). Due
+conseguenze **entrambe silenziose**: il modello rispondeva da assistente ("il tuo messaggio
+imposta il ruolo ma non il task"), e **`--model haiku` non arrivava affatto** — si pagava
+il modello di default, annullando l'intera premessa economica del catalogo mentre il CLI
+rispondeva "successo" a ogni chiamata.
+
+**La prima ipotesi era sbagliata e l'ho smentita provandola** (avevo accusato le parentesi
+angolari lette da cmd come redirezioni: con l'argomento quotato non succede). E il mio
+primo smoke test **passava** solo perché aveva una riga sola — il test facile confermava
+la cosa che non stavo testando.
+
+Corretti nello stesso giro: **cwd dentro il repo** (`claude` è un AGENTE — risaliva
+l'albero, caricava i `CLAUDE.md` di Digital Empire e leggeva lo stato del disco; ora gira
+da cartella neutra fuori dall'albero con system prompt proprio e tool negati), **stdin non
+chiuso** (3s buttati × 25 chiamate per libro), e il **titolo placeholder** — il primo libro
+si chiamava "Untitled Small Town Romance Suspense 202608131759", ora il libro si **blocca**
+se non c'è un titolo vero, perché un placeholder pubblicato mette a rischio l'account e
+l'account *è* il catalogo.
+
+**Verificato**: 30 test preesistenti invariati + 17 nuovi = **47 verdi**, nessuno chiama un
+modello. `test_il_wrapper_batch_tronca_davvero` riproduce il guasto con la sonda invece di
+dichiararlo.
+
+**RIPRESA DA:** ⛔ **il piano ha raggiunto il limite di spesa mensile** durante la diagnosi
+(verosimilmente proprio perché le chiamate finivano sul modello di default invece che su
+Haiku). Serve alzarlo su `claude.ai/settings/usage` — atto di Max/Gael, non aggirabile.
+Poi: (1) rilanciare `python -m engine.workflow libro` e verificare che STEP 2 scriva davvero
+**e che la spesa risulti su Haiku**; (2) STEP 3 (copertina LM Arena) e STEP 4 (pacchetto)
+**non sono mai stati raggiunti** — la sessione LM Arena è del 07/08, da considerare da
+verificare; (3) `produci_libro()` non ha ripresa: se STEP 3 fallisce dopo 24 capitoli il
+testo resta su disco ma il rilancio riparte da zero. Dettaglio in
+[CP-20260814-001](checkpoints/CP-20260814-001.md).
+
+---
 
 ## ⚙️ 2026-08-13 — CLAUDE: I 3 STREAM DI PRODUZIONE PASSANO DAI 7 GATE — CP-20260813-002
 
