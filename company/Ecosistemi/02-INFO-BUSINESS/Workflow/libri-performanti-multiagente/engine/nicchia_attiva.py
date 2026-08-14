@@ -43,6 +43,10 @@ SOGLIA_SALUTE = 60.0
 MARGINE_PER_CAMBIARE = 12.0
 
 
+class NicchiaGiaScelta(RuntimeError):
+    """Esiste gia' una nicchia attiva: non si sceglie una seconda volta, si valuta un cambio."""
+
+
 @dataclass
 class Nicchia:
     keyword: str
@@ -51,6 +55,10 @@ class Nicchia:
     motivazione: str
     libri_pubblicati: list[str] = field(default_factory=list)
     controlli: list[dict] = field(default_factory=list)
+    # Storia dei cambi di nicchia. Vuota finche' non se ne cambia una: serve a sapere su
+    # cosa si era costruito prima e perche' si e' lasciato, altrimenti un cambio cancella
+    # in silenzio il motivo per cui il catalogo precedente esisteva.
+    storico: list[dict] = field(default_factory=list)
 
     @property
     def punteggio_corrente(self) -> float:
@@ -78,12 +86,65 @@ def salva(n: Nicchia) -> Path:
 
 
 def imposta(keyword: str, punteggio: float, motivazione: str) -> Nicchia:
-    """Fissa la nicchia del catalogo. Da qui in poi tutti i libri nascono da questa."""
+    """Fissa la nicchia del catalogo LA PRIMA VOLTA. Da qui tutti i libri nascono da questa.
+
+    Si rifiuta di sovrascrivere una nicchia gia' attiva (2026-08-14). Prima la sovrascriveva
+    in silenzio: bastava rilanciare 'nicchia-scegli' per ritrovarsi con una nicchia nuova e
+    un catalogo orfano — cioe' esattamente l'impostazione sbagliata che questo modulo esiste
+    per impedire. Per cambiare c'e' `cambia()`, che pretende un margine e tiene la storia."""
+    esistente = carica()
+    if esistente is not None:
+        raise NicchiaGiaScelta(
+            f"C'e' gia' una nicchia attiva: '{esistente.keyword}' "
+            f"({esistente.punteggio_corrente}/100, {len(esistente.libri_pubblicati)} libri). "
+            f"La nicchia si sceglie UNA VOLTA. Per valutare un cambio: "
+            f"'nicchia-confronta --keywords ...' — si cambia solo con almeno "
+            f"{MARGINE_PER_CAMBIARE} punti di vantaggio."
+        )
     n = Nicchia(keyword=keyword, punteggio_iniziale=punteggio,
                 scelta_il=datetime.now().isoformat(timespec="seconds"),
                 motivazione=motivazione)
     salva(n)
     return n
+
+
+def cambia(keyword: str, punteggio: float, motivazione: str) -> Nicchia:
+    """Sostituisce la nicchia del catalogo, PRETENDENDO il margine.
+
+    E' l'unico modo di cambiare nicchia, e serve perche' prima non esisteva affatto: la
+    regola del margine era calcolata da `valuta_cambio()` e poi buttata via, perche' nessun
+    percorso di codice cambiava mai la nicchia davvero.
+
+    Cambiare costa: si perdono l'associazione fra i titoli, le recensioni che si spingono a
+    vicenda e il pubblico gia' raggiunto. Per questo la nicchia lasciata non viene cancellata
+    ma archiviata in `storico`, coi libri che ci erano stati costruiti sopra."""
+    attuale = carica()
+    if attuale is None:
+        return imposta(keyword, punteggio, motivazione)
+
+    soglia = attuale.punteggio_corrente + MARGINE_PER_CAMBIARE
+    if punteggio < soglia:
+        raise NicchiaGiaScelta(
+            f"'{keyword}' fa {punteggio}, sotto la soglia di {soglia:.0f} che giustificherebbe "
+            f"di abbandonare '{attuale.keyword}' ({attuale.punteggio_corrente}/100) e i "
+            f"{len(attuale.libri_pubblicati)} libri costruiti li'. Si resta."
+        )
+
+    nuova = Nicchia(
+        keyword=keyword, punteggio_iniziale=punteggio,
+        scelta_il=datetime.now().isoformat(timespec="seconds"),
+        motivazione=motivazione,
+        storico=attuale.storico + [{
+            "keyword": attuale.keyword,
+            "punteggio_finale": attuale.punteggio_corrente,
+            "libri_pubblicati": list(attuale.libri_pubblicati),
+            "lasciata_il": datetime.now().isoformat(timespec="seconds"),
+            "motivo": f"'{keyword}' ha fatto {punteggio} contro "
+                      f"{attuale.punteggio_corrente} (soglia {soglia:.0f})",
+        }],
+    )
+    salva(nuova)
+    return nuova
 
 
 def registra_libro(titolo: str) -> Nicchia | None:
@@ -128,11 +189,16 @@ def controlla_salute(headless: bool = True) -> dict:
     salva(n)
 
     delta = v.punteggio - n.punteggio_iniziale
+    # I competitor appena scaricati viaggiano nell'esito: lo STEP 1 li riusa invece di
+    # rifare la STESSA identica ricerca su Amazon (difetto reale, 2026-08-14 — lo STEP 0
+    # passava e lo STEP 1 falliva tre volte di fila sulla stessa keyword, buttando il run).
     if v.punteggio >= SOGLIA_SALUTE:
         return {"stato": "sana", "nicchia": n.keyword, "punteggio": v.punteggio, "delta": delta,
+                "competitor": v.top_titoli,
                 "messaggio": f"Nicchia sana ({v.punteggio}/100, {delta:+.1f} dall'inizio). "
                              f"Si scrive il prossimo libro qui."}
     return {"stato": "peggiorata", "nicchia": n.keyword, "punteggio": v.punteggio, "delta": delta,
+            "competitor": v.top_titoli,
             "messaggio": f"Nicchia sotto soglia ({v.punteggio}/100, minimo {SOGLIA_SALUTE}). "
                          f"Vale la pena cercare alternative — si cambia solo se una supera "
                          f"{v.punteggio + MARGINE_PER_CAMBIARE:.0f}."}
