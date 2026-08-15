@@ -256,9 +256,17 @@ def _seed_profile_from_saved_session(context) -> None:
           f"dalla sessione salvata (login non richiesto)")
 
 
-def open_session(playwright: Playwright, headless: bool = True) -> ArenaSession:
+def open_session(playwright: Playwright, headless: bool = True, *,
+                  profilo_reale: bool = False, browser_reale: str = "brave") -> ArenaSession:
     """Apre LM Arena su un PROFILO PERSISTENTE dedicato e seleziona la modalita' Direct.
     Fatto = pronta per send_text_prompt/send_image_prompt, nessun login richiesto.
+
+    `profilo_reale=True` usa invece il profilo browser REALE della persona (Brave Profile 9
+    di default) — la configurazione che la Fase 0 valida. Default `False`: il comportamento
+    di tutti i chiamanti esistenti (copertine, orchestrator) resta identico finche' la
+    Fase 0 non dice che il profilo reale e' meglio. Con `profilo_reale=True` il browser
+    NON deve essere aperto altrove: il lock Chromium e' condiviso su tutta la cartella
+    `User Data` (il lancio si ferma con un messaggio chiaro se lo e').
 
     PROFILO PERSISTENTE, non contesto effimero (2026-08-07 — causa reale del captcha,
     trovata dopo che Gael ha fatto notare che "in molti altri workflow questo problema del
@@ -276,6 +284,19 @@ def open_session(playwright: Playwright, headless: bool = True) -> ArenaSession:
     profilo Brave reale, che causava timeout al lancio (CP4 2026-08-06) e che resta
     archiviata ma non piu' usata. Al primo avvio i cookie della sessione salvata in CP1
     vengono iniettati una volta sola, cosi' il login manuale non va rifatto."""
+    if profilo_reale:
+        # Profilo REALE della persona (quello che usa ogni giorno), non quello dedicato e
+        # vuoto. Aggiunto il 2026-08-15 perche' la Fase 0 (`lmarena_captcha_probe`) misura
+        # proprio questa configurazione: senza questo ramo, un esito positivo del probe non
+        # sarebbe utilizzabile in produzione e la validazione non servirebbe a niente.
+        # NB: qui NON si semina la sessione salvata e NON si crea niente — il profilo e'
+        # gia' autenticato per conto suo, e non va mai alterato.
+        from .lmarena_captcha_probe import _launch_real_profile
+
+        context, page = _launch_real_profile(playwright, browser_reale)
+        prepare_authenticated_direct_page(page, "open_session(profilo_reale)")
+        return ArenaSession(browser=context.browser, context=context, page=page)
+
     profile_dir = config.LMARENA_PROFILE_DIR
     first_run = not profile_dir.exists()
     if first_run and not config.LMARENA_SESSION_PATH.exists():

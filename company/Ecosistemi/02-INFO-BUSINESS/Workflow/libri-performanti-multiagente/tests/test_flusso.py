@@ -150,29 +150,99 @@ def test_copertina_fallita_non_perde_il_libro(tmp_path, monkeypatch, capsys):
     assert "riprendi" in uscita and p.slug in uscita
 
 
-def test_riprendi_non_riscrive_i_capitoli_gia_fatti(tmp_path, monkeypatch, capsys):
-    """Riprendere deve costare solo il pezzo mancante: e' il senso della ripresa."""
-    from engine import scrittore_haiku
+class _SessioneFinta:
+    """Sta in piedi al posto di una ArenaSession, senza aprire nessun browser."""
 
+    def __init__(self):
+        self.page = type("P", (), {"url": "https://arena.ai/c/finta",
+                                    "goto": lambda self, *a, **k: None})()
+        self.chiusa = False
+
+    def close(self):
+        self.chiusa = True
+
+
+class _PlaywrightFinto:
+    def start(self):
+        return self
+
+    def stop(self):
+        pass
+
+
+def _niente_browser(monkeypatch, tmp_path):
+    """Sostituisce tutto cio' che aprirebbe un browser vero. Se un giorno `riprendi_libro`
+    aggiunge un'altra chiamata di rete, questi test si piantano invece di passare in
+    silenzio — e' voluto: un test che apre Chrome davvero non e' un test."""
+    from engine import arena_book_writer, lmarena_client
+
+    sessione = _SessioneFinta()
+    monkeypatch.setattr("playwright.sync_api.sync_playwright", lambda: _PlaywrightFinto())
+    monkeypatch.setattr(lmarena_client, "open_session", lambda *a, **k: sessione)
+    monkeypatch.setattr(workflow, "_apri_staging_google_doc", lambda *a, **k: None)
+    monkeypatch.setattr(workflow, "step2b_copy", lambda *a, **k: {})
+    monkeypatch.setattr(workflow, "_step3_e_step4", lambda *a, **k: workflow.OK)
+
+    chiamate = {}
+
+    def finto_write_chapters(page, progetto, piano, **kw):
+        chiamate.update(kw)
+
+    monkeypatch.setattr(arena_book_writer, "write_chapters", finto_write_chapters)
+    return sessione, chiamate
+
+
+def test_riprendi_riparte_dal_capitolo_mancante(tmp_path, monkeypatch):
+    """Riprendere deve costare solo il pezzo mancante: e' il senso della ripresa."""
     p = _progetto_finto(tmp_path, monkeypatch, capitoli=3, scritti=(1, 2))
+    p.salva_piano({"title": "T", "characters": "C", "act1": "1", "act2": "2", "act3": "3",
+                   "chapters": ["a", "b", "c"], "cover_prompt": "X"})
     contenuto_originale = p.path_capitolo(1).read_text(encoding="utf-8")
 
-    scritti = []
-
-    def finto_capitolo(titolo, nicchia, outline, numero, totale, riassunto, parole, gia):
-        scritti.append(numero)
-        return ("# Capitolo nuovo\n\n" + "parola " * 900, "riassunto")
-
-    monkeypatch.setattr(scrittore_haiku, "scrivi_capitolo", finto_capitolo)
-    monkeypatch.setattr(workflow, "step3_copertina", lambda *a, **k: tmp_path / "cover.png")
-    monkeypatch.setattr(type(p), "assembla", lambda self, cover, forza=False: {"pacchetto": "X"})
-    monkeypatch.setattr(workflow, "_step3_e_step4", lambda *a, **k: workflow.OK)
+    sessione, chiamate = _niente_browser(monkeypatch, tmp_path)
 
     rc = workflow.riprendi_libro(p.slug)
 
     assert rc == workflow.OK
-    assert scritti == [3], f"doveva scrivere solo il capitolo mancante, ha scritto {scritti}"
+    assert chiamate.get("da_capitolo") == 3, (
+        f"doveva ripartire dal capitolo 3, ha chiesto {chiamate.get('da_capitolo')}"
+    )
     assert p.path_capitolo(1).read_text(encoding="utf-8") == contenuto_originale
+    assert sessione.chiusa, "la sessione Arena va sempre chiusa, anche riprendendo"
+
+
+def test_riprendi_senza_piano_non_apre_niente(tmp_path, monkeypatch, capsys):
+    """Un libro iniziato con un flusso precedente non ha un piano: va detto, non tentato."""
+    p = _progetto_finto(tmp_path, monkeypatch, capitoli=3, scritti=(1,))
+
+    def esplodi(*a, **k):
+        raise AssertionError("non deve aprire nessuna sessione senza un piano")
+
+    from engine import lmarena_client
+    monkeypatch.setattr(lmarena_client, "open_session", esplodi)
+
+    rc = workflow.riprendi_libro(p.slug)
+
+    assert rc == workflow.CONFIG_ERRATA
+    assert "piano" in capsys.readouterr().out.lower()
+
+
+def test_riprendi_libro_gia_completo_salta_la_scrittura(tmp_path, monkeypatch):
+    """Se capitoli e copy ci sono gia', non si riapre Arena per niente: si va a copertina."""
+    p = _progetto_finto(tmp_path, monkeypatch, capitoli=2, scritti=(1, 2))
+    p.salva_piano({"title": "T", "characters": "C", "act1": "1", "act2": "2", "act3": "3",
+                   "chapters": ["a", "b"], "cover_prompt": "X"})
+    p.salva_copy({"titolo_finale": "T", "descrizione": "D", "keywords": ["k"]})
+
+    from engine import lmarena_client
+
+    def esplodi(*a, **k):
+        raise AssertionError("non doveva aprire una sessione: non c'e' niente da scrivere")
+
+    monkeypatch.setattr(lmarena_client, "open_session", esplodi)
+    monkeypatch.setattr(workflow, "_step3_e_step4", lambda *a, **k: workflow.OK)
+
+    assert workflow.riprendi_libro(p.slug) == workflow.OK
 
 
 def test_riprendi_su_slug_inesistente_non_esplode(tmp_path, monkeypatch, capsys):
