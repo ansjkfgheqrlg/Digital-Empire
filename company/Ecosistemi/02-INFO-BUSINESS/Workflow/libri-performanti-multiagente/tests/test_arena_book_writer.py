@@ -164,6 +164,49 @@ def test_chapter_prompt_primo_capitolo_non_finge_continuita():
     assert "FIRST chapter" in prompt
 
 
+def test_progetto_nuovo_non_ha_riassunto(tmp_path, monkeypatch):
+    """Bug reale (2026-08-15): `crea()` scrive in riassunti.md un'intestazione e un
+    commento di istruzioni. Leggere il file grezzo li restituiva come se fossero la storia
+    accaduta finora — il capitolo 1 di OGNI libro nasceva istruito male, in silenzio."""
+    monkeypatch.setattr(book_project, "PROGETTI_DIR", tmp_path)
+    progetto = book_project.BookProject.crea("Riassunto Vuoto", "cozy mystery",
+                                              capitoli=3, parole_per_capitolo=100)
+
+    grezzo = progetto.riassunti_path.read_text(encoding="utf-8")
+    assert "Riassunti progressivi" in grezzo, "il segnaposto deve esserci nel file"
+    assert progetto.riassunto_progressivo() == "", (
+        "un progetto senza capitoli non ha riassunto: il segnaposto non e' contenuto"
+    )
+
+
+def test_riassunto_progressivo_conserva_il_contenuto_vero(tmp_path, monkeypatch):
+    monkeypatch.setattr(book_project, "PROGETTI_DIR", tmp_path)
+    progetto = book_project.BookProject.crea("Riassunto Pieno", "cozy mystery",
+                                              capitoli=3, parole_per_capitolo=100)
+    progetto.riassunti_path.write_text(
+        "# Riassunti progressivi — Riassunto Pieno\n\n"
+        "<!-- commento di istruzioni -->\n"
+        "Anna trova un indizio. Sam apre l'indagine.\n",
+        encoding="utf-8",
+    )
+    assert progetto.riassunto_progressivo() == "Anna trova un indizio. Sam apre l'indagine."
+
+
+def test_primo_capitolo_di_un_libro_nuovo_sa_di_essere_il_primo(tmp_path, monkeypatch):
+    """Il test che avrebbe intercettato il bug: verifica il PROMPT, non solo che il file
+    venga scritto — gli altri test usano un invio finto che ignora il prompt."""
+    monkeypatch.setattr(book_project, "PROGETTI_DIR", tmp_path)
+    progetto = book_project.BookProject.crea("Primo Capitolo", "cozy mystery",
+                                              capitoli=3, parole_per_capitolo=100)
+
+    prompt = abw._chapter_prompt(_piano_valido(), 1, 3,
+                                 progetto.riassunto_progressivo(), 1500)
+
+    assert "FIRST chapter" in prompt
+    assert "Riassunti progressivi" not in prompt
+    assert "Un paragrafo per capitolo" not in prompt
+
+
 def test_write_chapters_scrive_su_disco_e_riprende_dal_mancante(tmp_path, monkeypatch):
     """Il capitolo va su disco APPENA generato — è ciò che rende possibile il resume."""
     monkeypatch.setattr(book_project, "PROGETTI_DIR", tmp_path)

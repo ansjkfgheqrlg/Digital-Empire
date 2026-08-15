@@ -163,6 +163,26 @@ class BookProject:
     def copy_kdp(self) -> dict | None:
         return self._config().get("copy_kdp")
 
+    def riassunto_progressivo(self) -> str:
+        """Il riassunto REALE dei capitoli gia' scritti — stringa vuota se non ce n'e'.
+
+        Serve perche' `crea()` scrive in `riassunti.md` un'intestazione e un commento di
+        istruzioni segnaposto, e leggere il file grezzo li restituisce come se fossero
+        contenuto (bug reale trovato il 2026-08-15 con una prova diretta): il prompt del
+        capitolo 1 riceveva "What has happened so far: # Riassunti progressivi — <titolo>
+        <!-- Un paragrafo per capitolo... -->" invece del ramo "questo e' il PRIMO
+        capitolo". Ogni libro nasceva con il primo capitolo istruito male, in silenzio —
+        i test non lo vedevano perche' usano un invio finto che ignora il prompt.
+
+        Toglie righe di intestazione markdown e commenti HTML: se non resta niente, il
+        riassunto non esiste ancora e la risposta corretta e' "" (non il segnaposto)."""
+        if not self.riassunti_path.exists():
+            return ""
+        testo = self.riassunti_path.read_text(encoding="utf-8")
+        testo = re.sub(r"<!--.*?-->", " ", testo, flags=re.DOTALL)
+        righe = [r for r in testo.splitlines() if not r.lstrip().startswith("#")]
+        return " ".join(" ".join(righe).split()).strip()
+
     def salva_url_chat(self, url: str) -> None:
         """URL dell'ultima chat Arena usata per i capitoli — serve alla Fase 5 (il copy va
         scritto nella STESSA chat) di sopravvivere a un'interruzione: un `riprendi` in un

@@ -311,8 +311,10 @@ def riprendi_libro(slug: str) -> int:
     # STEP 2, solo il pezzo mancante: i capitoli gia' su disco non si riscrivono.
     if not stato.completo:
         outline = progetto.outline_path.read_text(encoding="utf-8")
-        riassunto = (progetto.riassunti_path.read_text(encoding="utf-8")
-                     if progetto.riassunti_path.exists() else "")
+        # Mai la lettura grezza di riassunti.md: contiene l'intestazione e il commento
+        # segnaposto scritti da `crea()`, che riprendendo un progetto senza capitoli
+        # finirebbero nel prompt come storia gia' accaduta (bug reale, 2026-08-15).
+        riassunto = progetto.riassunto_progressivo()
         corpi = [progetto.path_capitolo(n).read_text(encoding="utf-8")
                  for n in stato.capitoli_scritti]
         try:

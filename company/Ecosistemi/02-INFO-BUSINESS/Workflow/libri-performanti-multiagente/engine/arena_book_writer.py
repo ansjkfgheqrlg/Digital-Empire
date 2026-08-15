@@ -325,8 +325,10 @@ def write_chapters(page: Page, progetto, piano: dict, *, force_new_chat: bool = 
     capitolo appena scritto come staging di sicurezza — MAI bloccante: un fallimento li'
     non deve mai far fallire la scrittura, che ha gia' un canale affidabile (il file)."""
     totale = len(piano["chapters"])
-    riassunto = (progetto.riassunti_path.read_text(encoding="utf-8")
-                if progetto.riassunti_path.exists() else "")
+    # `riassunto_progressivo()` e non la lettura grezza del file: `crea()` ci lascia dentro
+    # un'intestazione e un commento segnaposto, che letti cosi' finivano nel prompt del
+    # capitolo 1 come se fossero la storia accaduta finora (bug reale, 2026-08-15).
+    riassunto = progetto.riassunto_progressivo()
     gia_scritti = [
         progetto.path_capitolo(n).read_text(encoding="utf-8")
         for n in range(1, da_capitolo)
