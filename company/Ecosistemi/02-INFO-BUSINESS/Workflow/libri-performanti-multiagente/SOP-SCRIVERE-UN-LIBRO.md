@@ -1,17 +1,41 @@
 # SOP — Scrivere e pubblicare un libro KDP
 
 **Procedura operativa standard.** Vale per ogni libro nuovo, sempre uguale. Chi la esegue:
-Claude (scrittura) + gli script del motore (tutto il resto) + Gael (pubblicazione finale).
+Claude (scrittura) + gli script del motore (tutto il resto) + Gael (copertina e pubblicazione).
 
 **Tempo indicativo per un libro da 120 pagine**: 2-4 ore di lavoro di scrittura, spezzabili
 in più sessioni senza perdere niente.
+
+> **Il principio (2026-08-15)**: il libro lo scrive **Claude in sessione**. Il codice non
+> chiama nessun modello — impagina, conta le pagine vere, valida, impacchetta. Tre tentativi
+> di automatizzare la scrittura sono falliti (LM Arena→captcha ×2, Claude CLI→prompt troncati
+> e limite di spesa); l'unico libro completo mai prodotto è nato scrivendolo a mano qui.
+> Dettagli in `_archivio_automazione_modelli/LEGGIMI.md`.
 
 ---
 
 ## Come si avvia
 
-Dire a Claude: **"scrivi un libro sulla nicchia <X>"** oppure **"riprendi il libro <slug>"**.
-Da lì Claude segue questa procedura senza bisogno di altre istruzioni.
+**`/libro`** — la skill fa partire tutta la procedura. In alternativa, a parole: *"scrivi un
+libro sulla nicchia X"* oppure *"riprendi il libro <slug>"*.
+
+---
+
+## STEP 0 — Il magazzino argomenti *(una volta a settimana)*
+
+Una ricerca sola produce 7 argomenti pronti, poi ogni libro ne consuma uno senza rifare
+l'analisi. Claude cerca sul web le nicchie che vendono, poi **verifica ognuna con numeri
+veri** prima di metterla in magazzino.
+
+```
+python -m engine.kdp magazzino                     # cosa c'è di pronto
+python -m engine.kdp magazzino --aggiungi f.json   # inserisce la ricerca fatta
+python -m engine.kdp magazzino --prendi            # il prossimo da scrivere
+```
+
+Il codice **rifiuta** argomenti senza dati Amazon e quelli che non sono storie: è voluto.
+
+**Fatto quando**: il magazzino ha argomenti liberi.
 
 ---
 
@@ -92,17 +116,17 @@ Dice capitoli scritti, parole totali, pagine stimate e qual è il prossimo capit
 
 ---
 
-## STEP 5 — Copertina *(automatico, LM Arena)*
+## STEP 5 — Copertina *(Claude scrive il prompt, Gael genera l'immagine)*
 
-```
-python -m engine.cover_generator
-```
+Claude scrive `copertina-prompt.md` nella cartella del libro: un prompt **lungo e completo**,
+che descrive **tutta la copertina finita, testo incluso** — non solo lo sfondo. Ci vanno
+scena, atmosfera, luce, palette, stile, composizione, resa e nitidezza, **e il titolo scritto
+lettera per lettera** con posizione, carattere ed effetti, più il nome dell'autore.
 
-Genera l'immagine dal titolo e dalla trama del libro. Una sola richiesta: qui LM Arena
-funziona bene (verificato con immagini reali).
+Gael lo usa sul suo modello di immagini e salva il PNG.
 
-**Fatto quando**: file `.png` reale su disco, > 500 KB, guardato e giudicato adeguato al
-genere.
+**Fatto quando**: c'è un `.png` reale, guardato e giudicato adeguato al genere, col titolo
+leggibile anche in miniatura.
 
 ---
 
@@ -111,6 +135,11 @@ genere.
 ```
 python -m engine.kdp consegna <slug> --cover <percorso-copertina.png>
 ```
+
+Il codice porta l'immagine a norma KDP (2:3, 1800×2700) **senza riscriverci sopra il titolo**:
+l'ha già disegnato il modello seguendo il prompt. Se invece l'immagine arriva senza testo o
+col titolo sbagliato, `--scrivi-titolo` lo stampa sopra con un font vero — rete di sicurezza,
+non la norma.
 
 Produce il `.docx` formattato KDP (6×9", margini specchio, numeri di pagina) e **conta le
 pagine vere rileggendo il file salvato**. Se è sotto le 115 pagine **si ferma** e dice

@@ -363,8 +363,9 @@ class BookProject:
                     + "; ".join(verdetto.bloccanti)
                 )
         else:
-            print("[assembla] copertina non fornita — genera prima la copertina "
-                  "(python -m engine.cover_generator) e ripassala con --cover")
+            print("[assembla] copertina non fornita — serve il .png generato dal prompt in "
+                  "`copertina-prompt.md`, poi: python -m engine.kdp consegna <slug> "
+                  "--cover <file.png>")
         return out
 
     def _metadata_kdp(self, cfg: dict, risultato) -> str:

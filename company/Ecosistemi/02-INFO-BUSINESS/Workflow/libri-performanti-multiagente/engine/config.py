@@ -17,7 +17,6 @@ LIBRI_PRONTI_DIR = LIBRI_DIR / "libri_pronti"
 LIBRI_PUBBLICATI_DIR = LIBRI_DIR / "libri_pubblicati"
 
 AMAZON_SESSION_PATH = SESSIONS_DIR / "amazon_state.json"
-LMARENA_SESSION_PATH = SESSIONS_DIR / "lmarena_state.json"
 
 # --------------------------------------------------------------------------- #
 # Chrome profile reale (per CP1, dopo che Google ha bloccato il login OAuth
@@ -40,72 +39,19 @@ CHROME_COPY_EXCLUDE_DIRS = {
     "Extension State", "File System", "IndexedDB",
 }
 
-# --------------------------------------------------------------------------- #
-# Brave profile reale (SOLO per LM Arena — il login Google su LM Arena resta
-# bloccato anche dentro Chrome/profilo reale, 2026-08-05, secondo tentativo di
-# Gael dopo CP1. Soluzione proposta da Gael: usare Brave invece di Chrome per
-# quel sito). Stesso principio del profilo Chrome sopra: si riusa un profilo
-# Brave GIÀ autenticato, mai un login nuovo dentro l'automazione, originale
-# solo letto mai scritto. Scelto da Gael: Profile 9 (etichetta "gd" in Local
-# State) — 7 profili Brave trovati senza email visibile, NON presunto, chiesto
-# esplicitamente. Amazon resta su Chrome (CP1 già verificato funzionante lì,
-# non toccato).
-# --------------------------------------------------------------------------- #
-BRAVE_EXECUTABLE_PATH = Path(r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe")
-BRAVE_USER_DATA_ROOT = Path(_os.environ.get("LOCALAPPDATA", "")) / "BraveSoftware" / "Brave-Browser" / "User Data"
-BRAVE_SOURCE_PROFILE_NAME = "Profile 9"  # etichetta "gd" — scelto da Gael 2026-08-05
-BRAVE_PROFILE_COPY_DIR = SESSIONS_DIR / "brave_profile_copy"
-
-# --------------------------------------------------------------------------- #
-# Profilo PERSISTENTE dedicato per LM Arena (2026-08-07). Motivo, verificato:
-# arena.ai mostra una sfida captcha "Security Verification" quando il browser
-# si presenta come contesto NUOVO ad ogni avvio (`browser.new_context(
-# storage_state=...)`), perche' non riconosce nessuna storia precedente. Il
-# workflow gia' in produzione sullo stesso sito
-# (YOUTUBE-AUTOMATION-FACTORY/02-AUTOMAZIONI-E-SCRIPTS/arena_thumbnail.py,
-# `chrome-profile-arena`) gira headless SENZA MAI incontrare captcha perche'
-# usa `launch_persistent_context` su un profilo dedicato che persiste fra i
-# run — segnalato da Gael: "in molti altri workflow questo problema non
-# c'era". Qui si replica quel pattern invece di reinventarlo.
-#
-# NB: e' un profilo VUOTO creato da Playwright, non la copia da 381MB del
-# profilo Brave reale (quella causava timeout al lancio, vedi CP4 2026-08-06):
-# leggero, dedicato, e non tocca nessun profilo personale.
-# --------------------------------------------------------------------------- #
-LMARENA_PROFILE_DIR = SESSIONS_DIR / "chrome-profile-arena"
-
-# --------------------------------------------------------------------------- #
-# Google Docs — staging di sicurezza per i capitoli (2026-08-15, PIANO-KDP libri
-# via Arena v3). Stesso principio del profilo persistente Arena sopra: un editor
-# stateful come Google Docs beneficia di un browser "riconosciuto" almeno quanto
-# Arena, non di storage_state effimero come Amazon. Vedi engine/google_doc_staging.py.
-# --------------------------------------------------------------------------- #
-GOOGLE_DOCS_PROFILE_DIR = SESSIONS_DIR / "chrome-profile-google-docs"
-GOOGLE_SESSION_PATH = SESSIONS_DIR / "google_docs_state.json"
-# Interruttore unico (2026-08-15): un fallimento di Google Docs non deve mai bloccare
-# la scrittura dei capitoli (decisione esplicita di Gael — e' solo staging). Se il
-# modulo si rivela un pozzo di tempo in produzione, si spegne da qui con una riga,
-# senza toccare il percorso critico in workflow.py.
-GOOGLE_DOC_STAGING_ENABLED = True
-
 for _d in (SESSIONS_DIR, LIBRI_PRONTI_DIR, LIBRI_PUBBLICATI_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 
 # --------------------------------------------------------------------------- #
-# Amazon
+# Amazon — l'unico sito che il codice apre ancora (2026-08-15). Serve a MISURARE
+# le nicchie con dati veri, non a generare contenuto: nessun modello dietro.
+# Le costanti di LM Arena, Brave e Google Docs sono state tolte da qui quando
+# l'automazione della scrittura e' stata archiviata in
+# `_archivio_automazione_modelli/` — vivono ancora la' dentro, per chi dovesse
+# rileggere quel codice.
 # --------------------------------------------------------------------------- #
 AMAZON_BASE_URL = "https://www.amazon.com"
 AMAZON_SEARCH_URL_TEMPLATE = AMAZON_BASE_URL + "/s?k={keyword}"
-
-# --------------------------------------------------------------------------- #
-# LM Arena — URL confermato reale (lmarena.ai). Il MODELLO specifico (testo e
-# immagine) NON è ancora deciso: Gael non ha risposto alla domanda in
-# PIANO-KDP-67.md §3 punto 1. Da scegliere al primo login reale in CP1/CP4
-# guardando l'interfaccia effettiva — non indovinato qui alla cieca.
-# --------------------------------------------------------------------------- #
-LMARENA_BASE_URL = "https://lmarena.ai/"
-LMARENA_TEXT_MODEL = None  # TODO CP4: confermare guardando la UI reale
-LMARENA_IMAGE_MODEL = None  # TODO CP4: confermare guardando la UI reale
 
 # --------------------------------------------------------------------------- #
 # KDP formatting (da REPORT_KDP_FORMATTING.md consegnato — regole KDP reali,

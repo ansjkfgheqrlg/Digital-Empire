@@ -1,14 +1,22 @@
 """
-Comando unico del workflow KDP (Snippet 8 del piano del 2026-08-10, RF-05).
+Comando unico del workflow KDP — l'attrezzatura che uso mentre scrivo (2026-08-15).
 
-Prima servivano tre comandi separati e bisognava ricordarsi l'ordine. Qui c'e' un solo
-punto d'ingresso con sottocomandi, exit code espliciti e un log su file per ogni
-esecuzione.
+QUESTO E' L'UNICO PUNTO D'INGRESSO. Dal 2026-08-15 il libro lo scrivo io in sessione:
+nessun modulo qui chiama un modello, ne' via API, ne' via CLI, ne' pilotando un browser
+su un sito di chat. Il codice fa solo cio' che una macchina fa meglio di me — misurare
+nicchie su Amazon, impaginare secondo le regole KDP, contare le pagine VERE dal PDF,
+validare e impacchettare.
 
+    python -m engine.kdp magazzino                      # gli argomenti pronti
+    python -m engine.kdp magazzino --aggiungi f.json    # ci metto la ricerca fatta
+    python -m engine.kdp magazzino --prendi             # il prossimo da scrivere
     python -m engine.kdp nicchie --keywords "cozy mystery" "small town romance"
+    python -m engine.kdp nicchia-stato | nicchia-scegli | nicchia-confronta
     python -m engine.kdp nuovo "Titolo Del Libro" --nicchia "cozy mystery"
     python -m engine.kdp stato [slug]
     python -m engine.kdp consegna <slug> --cover copertina.png
+
+La procedura completa e' in `SOP-SCRIVERE-UN-LIBRO.md` e nella skill `/libro`.
 
 EXIT CODE (contratto stabile, usabile da uno script o da una tile Aureus):
     0  tutto a posto
@@ -19,6 +27,7 @@ EXIT CODE (contratto stabile, usabile da uno script o da una tile Aureus):
 from __future__ import annotations
 
 import argparse
+import json
 import logging
 import sys
 from datetime import datetime
@@ -75,6 +84,158 @@ def _cmd_nicchie(args) -> int:
     return OK
 
 
+def estrai_titolo(testo: str) -> str | None:
+    """Pesca il titolo definitivo da un outline, o None se non c'e'.
+
+    Tollera la decorazione markdown: il modello scrive spesso `**TITLE:** X` o `# TITLE: X`
+    invece della riga nuda. La versione rigida accettava solo `TITLE:` in testa e in
+    silenzio teneva il titolo di lavoro — il primo libro prodotto si chiamava "Untitled
+    Small Town Romance Suspense 202608131759", che e' esattamente il genere di titolo che
+    fa segnalare un libro su KDP.
+
+    Vive qui (spostata da `workflow.py` il 2026-08-15, quando quel modulo e' stato
+    archiviato) perche' e' una funzione pura su stringhe e serve ancora: la uso per
+    ricontrollare un outline che ho appena scritto."""
+    for riga in testo.splitlines():
+        pulita = riga.strip().lstrip("#*_ \t").strip()
+        if not pulita.upper().startswith("TITLE"):
+            continue
+        _, sep, valore = pulita.partition(":")
+        if not sep:
+            continue
+        valore = valore.strip().strip("*_\"'").strip()
+        if valore:
+            return valore
+    return None
+
+
+def _cmd_magazzino(args) -> int:
+    """Il magazzino degli argomenti: il "flusso atemporale" di Gael."""
+    from . import magazzino
+
+    if args.aggiungi:
+        percorso = Path(args.aggiungi)
+        if not percorso.exists():
+            log.error("File non trovato: %s", percorso)
+            return CONFIG_ERRATA
+        try:
+            dati = json.loads(percorso.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            log.error("JSON non valido in %s: %s", percorso, e)
+            return CONFIG_ERRATA
+        if isinstance(dati, dict):
+            dati = [dati]
+
+        inseriti, problemi = magazzino.aggiungi(dati)
+        for p in problemi:
+            log.warning("SCARTATO — %s", p)
+        print(f"\nInseriti {len(inseriti)} argomenti su {len(dati)} proposti.")
+        for a in inseriti:
+            print(f"  + {a.titolo_lavoro}  ({a.nicchia})")
+        # Se non e' entrato NIENTE ed erano stati proposti argomenti, e' un fallimento:
+        # meglio un exit code che dice "non e' successo quello che credevi".
+        return OK if inseriti or not dati else CONFIG_ERRATA
+
+    if args.prendi:
+        a = magazzino.prendi()
+        if a is None:
+            print("Magazzino esaurito: nessun argomento libero.")
+            print("Serve una ricerca nuova prima di scrivere il prossimo libro.")
+            return CONFIG_ERRATA
+        print(f"\nProssimo argomento (ora marcato in uso):\n")
+        print(f"  Titolo di lavoro : {a.titolo_lavoro}")
+        print(f"  Nicchia          : {a.nicchia}")
+        print(f"  Premessa         : {a.premessa}")
+        print(f"  Dati Amazon      : {a.dati_amazon}")
+        print(f"\nCrea il progetto con:")
+        print(f"  python -m engine.kdp nuovo \"{a.titolo_lavoro}\" --nicchia \"{a.nicchia}\"\n")
+        return OK
+
+    argomenti = magazzino.carica()
+    if not argomenti:
+        print("Magazzino vuoto. Va riempito con una ricerca "
+              "(python -m engine.kdp magazzino --aggiungi <file.json>).")
+        return OK
+    c = magazzino.conteggi()
+    print(f"\nMagazzino argomenti — {c['totale']} totali: "
+          f"{c['libero']} liberi, {c['in_uso']} in uso, {c['fatto']} fatti\n")
+    for a in argomenti:
+        print("  " + a.riga())
+    print()
+    return OK
+
+
+def _cmd_nicchia(args) -> int:
+    """Gestione della nicchia persistente del catalogo.
+
+    Salvata da `workflow.py` prima della sua archiviazione (2026-08-15): e' logica
+    deterministica sui dati Amazon, non ha mai avuto niente a che fare con un modello.
+    La regola resta quella di Gael: la nicchia si sceglie UNA VOLTA e ci si costruisce
+    sopra un catalogo; si cambia solo se ne esiste una nettamente migliore."""
+    from . import nicchia_attiva
+
+    if args.comando == "nicchia-stato":
+        n = nicchia_attiva.carica()
+        if n is None:
+            print("Nessuna nicchia attiva.")
+            return CONFIG_ERRATA
+        print(f"Nicchia: {n.keyword}")
+        print(f"Scelta il: {n.scelta_il[:10]} con punteggio {n.punteggio_iniziale}/100")
+        print(f"Punteggio corrente: {n.punteggio_corrente}/100 "
+              f"({'sana' if n.sana else 'SOTTO SOGLIA'})")
+        print(f"Libri nel catalogo: {len(n.libri_pubblicati)}")
+        for t in n.libri_pubblicati:
+            print(f"  - {t}")
+        return OK
+
+    if args.comando == "nicchia-scegli":
+        from . import niche_finder
+
+        attuale = nicchia_attiva.carica()
+        if attuale is not None:
+            print(f"C'e' gia' una nicchia attiva: '{attuale.keyword}' "
+                  f"({attuale.punteggio_corrente}/100, {len(attuale.libri_pubblicati)} libri).")
+            print("La nicchia si sceglie UNA VOLTA e ci si costruisce sopra il catalogo.")
+            print("Per valutare un cambio (serve un vantaggio netto):")
+            print("  python -m engine.kdp nicchia-confronta --keywords \"...\" --applica")
+            return CONFIG_ERRATA
+
+        esiti = niche_finder.trova_nicchie(args.keywords)
+        if not esiti:
+            return ERRORE_SISTEMA
+        niche_finder.stampa_classifica(esiti)
+        migliore = esiti[0]
+        n = nicchia_attiva.imposta(migliore.keyword, migliore.punteggio, migliore.motivazione)
+        print(f"\nNICCHIA DEL CATALOGO FISSATA: '{n.keyword}' ({n.punteggio_iniziale}/100)")
+        return OK
+
+    # nicchia-confronta
+    esito = nicchia_attiva.valuta_cambio(args.keywords)
+    print(f"\n{esito.get('messaggio', esito)}")
+    if not args.applica:
+        if esito.get("stato") == "conviene_cambiare":
+            print("\nPer cambiare davvero rilancia con --applica "
+                  "(la nicchia lasciata resta archiviata nello storico).")
+        return OK
+    if esito.get("stato") != "conviene_cambiare":
+        print("\nNiente da applicare: nessuna candidata supera il margine.")
+        return OK
+
+    migliore = esito["migliore_candidata"]
+    try:
+        n = nicchia_attiva.cambia(migliore["keyword"], migliore["punteggio"],
+                                   migliore["motivazione"])
+    except nicchia_attiva.NicchiaGiaScelta as e:
+        print(f"\nCambio rifiutato: {e}")
+        return CONFIG_ERRATA
+    precedente = n.storico[-1]
+    print(f"\nNICCHIA CAMBIATA: '{precedente['keyword']}' -> '{n.keyword}' "
+          f"({n.punteggio_iniziale}/100)")
+    print(f"  Archiviati nello storico i {len(precedente['libri_pubblicati'])} libri "
+          f"costruiti sulla nicchia precedente.")
+    return OK
+
+
 def _cmd_nuovo(args) -> int:
     from .book_project import BookProject
 
@@ -116,6 +277,7 @@ def _cmd_stato(args) -> int:
 
 def _cmd_consegna(args) -> int:
     """Assembla il pacchetto finale e dice se il libro e' pubblicabile."""
+    from . import copertina_kdp
     from .book_project import BookProject
 
     progetto = BookProject(args.slug)
@@ -123,6 +285,24 @@ def _cmd_consegna(args) -> int:
     if cover and not cover.exists():
         log.error("Copertina non trovata: %s", cover)
         return CONFIG_ERRATA
+
+    # La copertina arriva da fuori (generata da Gael col prompt che ho scritto io): prima
+    # di impacchettarla va portata a norma KDP — 2:3, 1800x2700. Se il titolo e' gia'
+    # disegnato dentro l'immagine (il modo normale dal 2026-08-15) NON si riscrive sopra,
+    # altrimenti comparirebbe due volte.
+    if cover:
+        try:
+            cfg = progetto._config()
+            esito_cover = copertina_kdp.prepara_copertina(
+                cover, titolo=cfg["titolo"], autore=cfg.get("autore", "Digital Empire"),
+                titolo_gia_in_copertina=not args.scrivi_titolo)
+            cover = esito_cover["path"]
+        except FileNotFoundError as e:
+            log.error("%s", e)
+            return CONFIG_ERRATA
+        except Exception as e:
+            log.exception("Impossibile preparare la copertina: %s", e)
+            return ERRORE_SISTEMA
 
     try:
         esito = progetto.assembla(cover, forza=args.forza)
@@ -160,11 +340,27 @@ def costruisci_parser() -> argparse.ArgumentParser:
     cli.add_argument("--verbose", action="store_true", help="log dettagliato")
     sub = cli.add_subparsers(dest="comando", required=True)
 
+    m = sub.add_parser("magazzino", help="gli argomenti pronti da scrivere (flusso atemporale)")
+    m.add_argument("--aggiungi", metavar="FILE.JSON",
+                   help="inserisce gli argomenti di una ricerca (validati prima di entrare)")
+    m.add_argument("--prendi", action="store_true",
+                   help="restituisce il prossimo argomento libero e lo marca in uso")
+
     n = sub.add_parser("nicchie", help="analizza nicchie su Amazon e le classifica")
     n.add_argument("--keywords", nargs="+")
     n.add_argument("--file", help="file con una keyword per riga")
     n.add_argument("--top", type=int, default=10)
     n.add_argument("--visibile", action="store_true", help="mostra il browser")
+
+    sub.add_parser("nicchia-stato", help="la nicchia attiva del catalogo e come sta")
+
+    ns = sub.add_parser("nicchia-scegli", help="[una tantum] fissa la nicchia del catalogo")
+    ns.add_argument("--keywords", nargs="+", required=True)
+
+    nc = sub.add_parser("nicchia-confronta", help="verifica se conviene cambiare nicchia")
+    nc.add_argument("--keywords", nargs="+", required=True)
+    nc.add_argument("--applica", action="store_true",
+                    help="se una candidata supera il margine, cambia davvero la nicchia")
 
     c = sub.add_parser("nuovo", help="crea un nuovo progetto libro")
     c.add_argument("titolo")
@@ -178,7 +374,11 @@ def costruisci_parser() -> argparse.ArgumentParser:
 
     d = sub.add_parser("consegna", help="assembla il pacchetto finale (docx, pdf, copertina, report)")
     d.add_argument("slug")
-    d.add_argument("--cover", help="percorso della copertina .png")
+    d.add_argument("--cover", help="percorso della copertina .png generata da te")
+    d.add_argument("--scrivi-titolo", action="store_true",
+                   help="scrive titolo e autore SOPRA la copertina con Pillow. Serve solo "
+                        "se l'immagine e' arrivata senza testo o col testo sbagliato: "
+                        "normalmente il titolo e' gia' dentro l'immagine (lo chiede il prompt)")
     d.add_argument("--forza", action="store_true", help="assembla anche se fuori target")
 
     return cli
@@ -189,7 +389,9 @@ def main(argv: list[str] | None = None) -> int:
     _configura_log(config.LIBRI_DIR / "_log", args.verbose)
     log.debug("Comando: %s", args.comando)
 
-    azioni = {"nicchie": _cmd_nicchie, "nuovo": _cmd_nuovo,
+    azioni = {"magazzino": _cmd_magazzino, "nicchie": _cmd_nicchie,
+              "nicchia-stato": _cmd_nicchia, "nicchia-scegli": _cmd_nicchia,
+              "nicchia-confronta": _cmd_nicchia, "nuovo": _cmd_nuovo,
               "stato": _cmd_stato, "consegna": _cmd_consegna}
     try:
         return azioni[args.comando](args)
