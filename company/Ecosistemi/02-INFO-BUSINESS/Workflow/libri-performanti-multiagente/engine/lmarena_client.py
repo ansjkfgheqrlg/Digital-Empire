@@ -295,6 +295,20 @@ def open_session(playwright: Playwright, headless: bool = True) -> ArenaSession:
     if first_run and config.LMARENA_SESSION_PATH.exists():
         _seed_profile_from_saved_session(context)
     page = context.pages[0] if context.pages else context.new_page()
+    prepare_authenticated_direct_page(page, "open_session")
+    return ArenaSession(browser=browser, context=context, page=page)
+
+
+def prepare_authenticated_direct_page(page: Page, where: str) -> None:
+    """Naviga su LM Arena, chiude i dialoghi noti, verifica login+captcha, seleziona Direct.
+
+    Estratta da `open_session()` (2026-08-15, PIANO-KDP libri via Arena v3) perche' la
+    Fase 0 di validazione captcha deve fare esattamente questi controlli su un CONTEXT
+    diverso (profilo Brave/Chrome reale, non il profilo Playwright dedicato) — duplicare
+    la logica di login/captcha in due file e' il modo sicuro per farla divergere in
+    silenzio. `open_session()` non cambia comportamento: questa funzione e' lo stesso
+    codice, solo richiamabile da un punto solo. `where` identifica il chiamante nei log di
+    debug e nei messaggi d'errore (prima era sempre "open_session", ora e' parametrico)."""
     # domcontentloaded, non networkidle: arena.ai tiene connessioni persistenti aperte
     # (chat live) che a volte impediscono a networkidle di scattare mai (timeout reale
     # riscontrato in CP4, 2026-08-05) — stesso pattern gia' usato in amazon_research.py.
@@ -323,23 +337,22 @@ def open_session(playwright: Playwright, headless: bool = True) -> ArenaSession:
     # (causa root di alcuni degli hang "silenziosi" osservati oggi).
     if page.get_by_text("Log In", exact=True).count() > 0:
         raise RuntimeError(
-            "LM Arena: sessione NON autenticata (bottone 'Log In' visibile) — "
-            f"probabile invalidazione lato servizio di {config.LMARENA_SESSION_PATH}. "
-            "Rifare il login: python -m engine.session_manager"
+            f"LM Arena ({where}): sessione NON autenticata (bottone 'Log In' visibile) — "
+            "probabile invalidazione lato servizio o profilo non loggato su Arena. "
+            "Verifica il login nel browser."
         )
     # Captcha gia' presente all'apertura: fallire SUBITO con la causa giusta, invece di
     # procedere e scoprirlo dopo minuti di attesa sul primo prompt (errore reale di CP5).
     if _captcha_present(page):
-        _debug_log("captcha_detected", where="open_session")
-        if not _wait_for_human_to_solve_captcha(page, "open_session"):
+        _debug_log("captcha_detected", where=where)
+        if not _wait_for_human_to_solve_captcha(page, where):
             raise CaptchaRequired(
-                "LM Arena: sfida 'Security Verification' (captcha) presente all'apertura "
-                f"della sessione e non risolta entro {CAPTCHA_WAIT_SECONDS}s. Risolvila a "
-                "mano nella finestra aperta e rilancia. Non e' aggirabile da codice."
+                f"LM Arena ({where}): sfida 'Security Verification' (captcha) presente "
+                f"all'apertura della sessione e non risolta entro {CAPTCHA_WAIT_SECONDS}s. "
+                "Risolvila a mano nella finestra aperta e rilancia. Non e' aggirabile da codice."
             )
     _select_direct_mode(page)
-    _assert_direct_mode(page, "open_session")
-    return ArenaSession(browser=browser, context=context, page=page)
+    _assert_direct_mode(page, where)
 
 
 def _robust_click(el, timeout: int = 10000) -> None:
@@ -561,7 +574,8 @@ def _extract_latest_response_text(page: Page) -> str | None:
     )
 
 
-def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600) -> str:
+def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600,
+                      force_new_chat: bool = True) -> str:
     """Invia un prompt, aspetta la risposta COMPLETA, la estrae e la ritorna.
 
     METODO RISCRITTO IL 2026-08-07 — vedi `_extract_between_markers` per il perche'
@@ -577,6 +591,13 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600) -> str:
     4. lungo l'attesa si gestiscono captcha (pausa per intervento umano) ed errore lato
        sito (click sul 'Retry' della UI).
 
+    `force_new_chat` (2026-08-15, PIANO-KDP libri via Arena v3): di default apre una chat
+    nuova a ogni invio (comportamento invariato dal 2026-08-07, vedi `start_new_chat`).
+    Impostare `False` riusa la chat corrente — serve alla Fase 0 di validazione captcha per
+    confrontare i due pattern, e alla scrittura del copy KDP che deve girare nella STESSA
+    chat degli ultimi capitoli. Non e' provato quale pattern eviti meglio il captcha: e'
+    proprio cio' che la Fase 0 misura, non un'assunzione.
+
     Solleva errori espliciti (TimeoutError/RuntimeError/CaptchaRequired) — mai un testo
     finto, mai una risposta di un altro turno."""
     import uuid
@@ -584,13 +605,15 @@ def send_text_prompt(page: Page, prompt: str, timeout_s: int = 600) -> str:
     req_id = f"REQ{uuid.uuid4().hex[:10].upper()}"
     wrapped = _wrap_prompt_with_markers(prompt, req_id)
     _debug_log("send_start", req_id=req_id, prompt_len=len(prompt),
-               prompt_preview=prompt[:120], url=page.url)
+               prompt_preview=prompt[:120], url=page.url, force_new_chat=force_new_chat)
 
     def _fill_and_send() -> None:
         _throttle_before_send()
-        # Chat nuova per ogni richiesta: evita di innescare il captcha, che nei run reali
-        # non compare mai sul primo messaggio di una chat (vedi `start_new_chat`).
-        start_new_chat(page)
+        # Chat nuova per ogni richiesta (default): evita di innescare il captcha, che nei
+        # run reali non compare mai sul primo messaggio di una chat (vedi `start_new_chat`).
+        # Se force_new_chat=False si riusa la chat corrente (vedi docstring sopra).
+        if force_new_chat:
+            start_new_chat(page)
         _dismiss_blocking_overlay(page)
         tb = page.locator("textarea, [contenteditable='true']").first
         tb.click()

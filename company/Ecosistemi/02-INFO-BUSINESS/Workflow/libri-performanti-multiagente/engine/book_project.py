@@ -135,6 +135,43 @@ class BookProject:
     def path_capitolo(self, numero: int) -> Path:
         return self.capitoli_dir / f"cap_{numero:02d}.md"
 
+    # --- piano di produzione e copy KDP (flusso Arena v3, 2026-08-15) --------- #
+    def _aggiorna_config(self, **campi) -> None:
+        cfg = self._config()
+        cfg.update(campi)
+        self.progetto_path.write_text(
+            json.dumps(cfg, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
+    def salva_piano(self, piano: dict) -> None:
+        """Salva il piano di produzione (Fase 2) come dato STRUTTURATO in progetto.json.
+
+        `outline.md` resta il documento leggibile da una persona, ma il dato autoritativo
+        vive qui: Fase 3 (traccia per capitolo), Fase 4 (prompt copertina) e il resume
+        devono poter leggere un campo preciso senza ri-parsare testo libero ogni volta."""
+        self._aggiorna_config(piano=piano)
+
+    def piano(self) -> dict | None:
+        return self._config().get("piano")
+
+    def salva_copy(self, copy: dict) -> None:
+        """Salva il copy KDP (Fase 5): titolo finale, sottotitolo, descrizione, keyword,
+        categorie. Da qui `_metadata_kdp()` produce un KDP_METADATA.txt davvero
+        compilabile, invece del minimo storico (solo titolo/parole/pagine)."""
+        self._aggiorna_config(copy_kdp=copy)
+
+    def copy_kdp(self) -> dict | None:
+        return self._config().get("copy_kdp")
+
+    def salva_url_chat(self, url: str) -> None:
+        """URL dell'ultima chat Arena usata per i capitoli — serve alla Fase 5 (il copy va
+        scritto nella STESSA chat) di sopravvivere a un'interruzione: un `riprendi` in un
+        processo nuovo puo' tentare di riaprirla invece di perdere la continuita'."""
+        self._aggiorna_config(url_chat_arena=url)
+
+    def url_chat(self) -> str | None:
+        return self._config().get("url_chat_arena")
+
     # --- stato --------------------------------------------------------------- #
     def capitoli_presenti(self) -> list[int]:
         if not self.capitoli_dir.exists():
@@ -311,14 +348,45 @@ class BookProject:
         return out
 
     def _metadata_kdp(self, cfg: dict, risultato) -> str:
-        return (
-            f"Titolo: {cfg['titolo']}\n"
-            f"Autore: {cfg.get('autore', 'Digital Empire')}\n"
-            f"Nicchia/keyword: {cfg.get('nicchia', '')}\n"
-            f"Parole: {risultato.word_count}\n"
-            f"Pagine stimate: {risultato.estimated_pages}\n"
-            f"Trim size: {config.TRIM_SIZE_INCHES[0]}x{config.TRIM_SIZE_INCHES[1]} in\n"
-        )
+        """Metadati pronti da incollare nella form di KDP.
+
+        Se esiste il copy della Fase 5 (`copy_kdp`) include titolo finale, sottotitolo,
+        descrizione, keyword e categorie — cioe' i campi che si compilano davvero al
+        caricamento. Se non esiste (libro scritto senza passare dalla Fase 5, o progetto
+        vecchio) resta il set minimo storico: mai un errore, mai campi finti."""
+        copy = cfg.get("copy_kdp") or {}
+        titolo_finale = copy.get("titolo_finale") or cfg["titolo"]
+
+        righe = [
+            f"Titolo: {titolo_finale}",
+            f"Autore: {cfg.get('autore', 'Digital Empire')}",
+        ]
+        if copy.get("sottotitolo"):
+            righe.append(f"Sottotitolo: {copy['sottotitolo']}")
+        righe.append(f"Nicchia/keyword: {cfg.get('nicchia', '')}")
+
+        if copy.get("descrizione"):
+            righe.append("")
+            righe.append("Descrizione (back cover):")
+            righe.append(copy["descrizione"])
+
+        if copy.get("keywords"):
+            righe.append("")
+            righe.append(f"Keyword KDP ({len(copy['keywords'])}):")
+            righe.extend(f"  {k}" for k in copy["keywords"])
+
+        if copy.get("categorie"):
+            righe.append("")
+            righe.append("Categorie:")
+            righe.extend(f"  {c}" for c in copy["categorie"])
+
+        righe.extend([
+            "",
+            f"Parole: {risultato.word_count}",
+            f"Pagine stimate: {risultato.estimated_pages}",
+            f"Trim size: {config.TRIM_SIZE_INCHES[0]}x{config.TRIM_SIZE_INCHES[1]} in",
+        ])
+        return "\n".join(righe) + "\n"
 
 
 def lista_progetti() -> list[str]:

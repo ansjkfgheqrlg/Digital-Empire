@@ -185,6 +185,18 @@ def ensure_lmarena_session(playwright: Playwright, profile_dir: Path) -> bool:
     return False
 
 
+def ensure_google_docs_session(playwright: Playwright) -> bool:
+    """Sessione Google Docs per lo staging dei capitoli (2026-08-15, flusso Arena v3).
+
+    Delega a `google_doc_staging.ensure_google_session`, che usa un profilo PERSISTENTE
+    dedicato: una volta fatto il login a mano la prima volta, il profilo resta autenticato
+    fra i run. Qui esiste solo perche' tutte le sessioni si creino da un punto solo
+    (`python -m engine.session_manager`), coerente con Amazon e LM Arena."""
+    from . import google_doc_staging
+
+    return google_doc_staging.ensure_google_session(playwright, headless=False)
+
+
 def load_context(playwright: Playwright, session_path: Path, headless: bool = True) -> BrowserContext:
     """Carica un browser context con la sessione salvata su disco (uso normale, dopo CP1).
     Solleva FileNotFoundError esplicito se la sessione non esiste — mai un browser
@@ -204,6 +216,8 @@ def sessions_status() -> dict:
     return {
         "amazon": {"path": str(config.AMAZON_SESSION_PATH), "exists": config.AMAZON_SESSION_PATH.exists()},
         "lmarena": {"path": str(config.LMARENA_SESSION_PATH), "exists": config.LMARENA_SESSION_PATH.exists()},
+        "google_docs": {"path": str(config.GOOGLE_SESSION_PATH),
+                         "exists": config.GOOGLE_SESSION_PATH.exists()},
     }
 
 

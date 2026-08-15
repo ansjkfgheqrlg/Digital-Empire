@@ -74,6 +74,20 @@ BRAVE_PROFILE_COPY_DIR = SESSIONS_DIR / "brave_profile_copy"
 # --------------------------------------------------------------------------- #
 LMARENA_PROFILE_DIR = SESSIONS_DIR / "chrome-profile-arena"
 
+# --------------------------------------------------------------------------- #
+# Google Docs — staging di sicurezza per i capitoli (2026-08-15, PIANO-KDP libri
+# via Arena v3). Stesso principio del profilo persistente Arena sopra: un editor
+# stateful come Google Docs beneficia di un browser "riconosciuto" almeno quanto
+# Arena, non di storage_state effimero come Amazon. Vedi engine/google_doc_staging.py.
+# --------------------------------------------------------------------------- #
+GOOGLE_DOCS_PROFILE_DIR = SESSIONS_DIR / "chrome-profile-google-docs"
+GOOGLE_SESSION_PATH = SESSIONS_DIR / "google_docs_state.json"
+# Interruttore unico (2026-08-15): un fallimento di Google Docs non deve mai bloccare
+# la scrittura dei capitoli (decisione esplicita di Gael — e' solo staging). Se il
+# modulo si rivela un pozzo di tempo in produzione, si spegne da qui con una riga,
+# senza toccare il percorso critico in workflow.py.
+GOOGLE_DOC_STAGING_ENABLED = True
+
 for _d in (SESSIONS_DIR, LIBRI_PRONTI_DIR, LIBRI_PUBBLICATI_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 
