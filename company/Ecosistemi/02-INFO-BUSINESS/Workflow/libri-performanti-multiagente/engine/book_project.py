@@ -363,9 +363,31 @@ class BookProject:
                     + "; ".join(verdetto.bloccanti)
                 )
         else:
-            print("[assembla] copertina non fornita — serve il .png generato dal prompt in "
-                  "`copertina-prompt.md`, poi: python -m engine.kdp consegna <slug> "
-                  "--cover <file.png>")
+            # Senza copertina non si puo' fare il pacchetto, ma il PDF si fa lo stesso
+            # (richiesta di Gael, 2026-08-17: "i libri devi darmeli sempre in PDF").
+            # Non e' una comodita': la stima a 300 parole/pagina sbaglia sistematicamente
+            # per eccesso — su due libri veri il rapporto misurato e' ~320 — quindi il
+            # numero di pagine che conta si vede SOLO qui. Saperlo a meta' libro invece
+            # che alla consegna e' la differenza fra aggiungere una scena e riscrivere.
+            pdf_path = book_output_manager.converti_in_pdf(docx_path)
+            if pdf_path:
+                out["pdf"] = str(pdf_path)
+                pagine_reali = book_output_manager.conta_pagine_pdf(pdf_path)
+                out["pagine_reali"] = pagine_reali
+                minimo = config.TARGET_PAGE_COUNT - config.TARGET_PAGE_COUNT_TOLERANCE
+                if pagine_reali:
+                    stato_pagine = ("OK" if pagine_reali >= minimo
+                                    else f"SOTTO IL MINIMO di {minimo - pagine_reali}")
+                    print(f"[assembla] pagine reali dal PDF: {pagine_reali} "
+                          f"(minimo {minimo}) — {stato_pagine}")
+                for avviso in validators.valida_numerazione_pagine(pdf_path):
+                    print(f"[assembla] numerazione: {avviso}")
+                for avviso in validators.valida_sillabazione_pdf(
+                        pdf_path, testo_sorgente=testo_completo)[:3]:
+                    print(f"[assembla] sillabazione: {avviso}")
+            print("[assembla] copertina non fornita — il pacchetto finale richiede il .png "
+                  "generato dal prompt in `copertina-prompt.md`, poi: "
+                  "python -m engine.kdp consegna <slug> --cover <file.png>")
         return out
 
     def _metadata_kdp(self, cfg: dict, risultato) -> str:

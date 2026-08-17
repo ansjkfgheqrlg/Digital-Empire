@@ -1,6 +1,54 @@
 # The Tenth of April
 
-It did not happen the way Rebecca had imagined it, because nothing does.
+She handed it over on the last day of February, in the front room, with her mother sitting beside her on the settee.
+
+Marla Cruz had come alone, in her own car, and had brought a folder and a recorder and a form Rebecca had to sign, and the whole business took eleven minutes and was one of the strangest experiences of Rebecca's life — because she had carried the thing for six weeks and had expected the handing over to feel like something, and it felt like filling in a delivery note.
+
+She put on the table: her work ledger, open at the pages after the Lapp baby's weight, with eleven pages of dates and initials copied in her own hand. The folded sheet from the toe of her boot. The Bible from the shed with its flyleaf covered in pencil.
+
+"Three copies," said Cruz. "You weren't joking."
+
+"You told me to."
+
+"People are told a great many things." The detective turned the ledger around and looked at the copied pages for a while without saying anything. Then she looked at the pages before them, and the pages after — the births, the weights, the times, nine years of a woman's small even handwriting running unbroken through the same book. "Ms. Yoder, do you understand what this is?"
+
+"It's a copy. You said the copy was worth less."
+
+"I said the handwriting was gone and I was sorry about it, and that's still true." Cruz tapped the page. "But this is a contemporaneous record kept by a professional in the ordinary course of her work, and the copy sits inside it, between a birth on the fourth and a birth on the ninth, in the same ink, in the same hand, in a book that has never been out of your possession. Nobody made that later. Nobody could." She sat back. "A defense lawyer will still go at it. But he'll have to go at *you*, on a stand, in front of a jury, and he'll be attacking a midwife's record-keeping. I've seen worse positions."
+
+Rebecca had not thought of it that way at all.
+
+"And this," said Cruz, picking up the Bible, "is the strangest exhibit I have ever been handed, and I have been handed a frozen chicken."
+
+Miriam Yoder made a sound that was almost a laugh.
+
+Then Cruz set the recorder in the middle of the table and said, "Mrs. Yoder. Whenever you're ready, and you can stop at any point, and if you want to stop and not start again that's your right and I'll pack up and go."
+
+Miriam looked at the little black thing for a moment.
+
+"It's smaller than I thought," she said.
+
+"They usually are."
+
+Rebecca's mother folded her hands in her lap, and looked at a point on the wall about four feet above the recorder, and said, in a completely steady voice:
+
+"My name is Miriam Yoder. On the fourteenth of August in the year my daughter Sarah was seventeen, she came into my kitchen at about four in the afternoon with the left sleeve of her dress torn at the shoulder and her hair down on one side, and she told me she had fallen off the back of the Zooks' wagon."
+
+She spoke for nineteen minutes.
+
+She did not cry, and she did not stop, and she did not once look at Rebecca. When she had finished she said, "That's all of it," and Cruz said, "Thank you," and turned the recorder off, and Miriam stood up and went into the kitchen and began, immediately and loudly, to do something with pans.
+
+Cruz let her go.
+
+"Nineteen minutes," she said quietly, to Rebecca. "In eighteen years I have taken perhaps four statements that clean. She's been rehearsing that in her head since 2017."
+
+"She never said a word of it."
+
+"No," said Marla Cruz. "That's usually when they rehearse it most."
+
+---
+
+After that, nothing happened, and it did not happen the way Rebecca had imagined it, because nothing does.
 
 There was no moment. That was the thing nobody tells you about the law: it does not arrive. It accumulates.
 

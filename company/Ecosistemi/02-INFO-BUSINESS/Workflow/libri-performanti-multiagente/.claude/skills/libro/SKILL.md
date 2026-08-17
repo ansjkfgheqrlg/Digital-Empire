@@ -113,7 +113,12 @@ Secondo paragrafo.
 
 **Regole di lavoro, non negoziabili:**
 - **4-6 capitoli per volta**, mai tutti insieme: la qualità cala e la sessione si appesantisce
-- **~1500 parole a capitolo** (24 × 1500 = 36.000 = ~120 pagine)
+- **~1650 parole a capitolo** (24 × 1650 = 39.600 = ~124 pagine reali).
+  **Mai 1500**: 36.000 parole impaginate fanno 112 pagine, *sotto* il minimo di 115.
+  La misura vera è **320 parole a pagina**, non 300.
+- **Verifico la lunghezza media già dopo il primo blocco di 4-6 capitoli.** Se sto sotto
+  1.500 a capitolo il libro chiuderà corto e a fine libro non si recupera senza riscrivere.
+  (*The Ninth Winter*: primi 8 capitoli a ~1.030 parole, scoperto al capitolo 24.)
 - **Dopo ogni blocco aggiorno `riassunti.md`**: 2-3 righe per capitolo scritto
 - **Prima di ogni blocco rileggo `outline.md` + `riassunti.md`** — la continuità viene da lì,
   non dalla memoria della sessione

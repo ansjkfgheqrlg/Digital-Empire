@@ -100,7 +100,13 @@ Secondo paragrafo.
 **Regole di lavoro**:
 - **4-6 capitoli per volta**, non tutti in una botta: la qualità cala e la sessione si
   appesantisce.
-- Ogni capitolo **~1500 parole** (24 × 1500 = 36.000 = ~120 pagine).
+- Ogni capitolo **~1650 parole** (24 × 1650 = 39.600 = ~124 pagine reali).
+  ⚠️ **Non 1500**: 24 × 1500 = 36.000 parole, che impaginate fanno **112 pagine — sotto il
+  minimo di 115**. È l'errore che ha fatto arrivare *The Ninth Winter* a 111 pagine con il
+  conteggio parole "in target". La misura vera è **320 parole a pagina**, non 300.
+- **Controllare la lunghezza già al primo blocco**, non a fine libro: se i primi 4 capitoli
+  stanno a 1.000 parole, il libro chiuderà a ~24.000 e non c'è modo di recuperare senza
+  riscriverlo.
 - Dopo ogni blocco, aggiornare `riassunti.md` con 2-3 righe per capitolo scritto: è la
   memoria del libro, permette di riprendere in una sessione nuova senza rileggere tutto.
 - Prima di scrivere un blocco nuovo, **rileggere `outline.md` + `riassunti.md`**: bastano
@@ -112,7 +118,7 @@ python -m engine.kdp stato <slug>
 ```
 Dice capitoli scritti, parole totali, pagine stimate e qual è il prossimo capitolo.
 
-**Fatto quando**: 24/24 capitoli e parole ≥ 34.500.
+**Fatto quando**: 24/24 capitoli e parole ≥ 36.800 (= 115 pagine × 320).
 
 ---
 

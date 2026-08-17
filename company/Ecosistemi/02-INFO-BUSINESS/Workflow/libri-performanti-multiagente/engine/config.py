@@ -72,7 +72,14 @@ COVER_SIZE_WITH_BLEED_INCHES = (
     TRIM_SIZE_INCHES[1] + 2 * COVER_BLEED_INCHES,
 )
 
-WORDS_PER_PAGE_ESTIMATE = 300  # stima conservativa usata per validare il target
+# Misurato su due libri veri impaginati con `kdp_formatter` (6x9in, margini specchio):
+#   The Quiet Hours  37.279 parole -> 115 pagine reali = 324 p/pag
+#   The Ninth Winter 36.756 parole -> 115 pagine reali = 320 p/pag
+# A 300 la stima NON era conservativa: sbagliava per ECCESSO di pagine (~+6%), cioe' nella
+# direzione pericolosa. The Ninth Winter e' passato dal controllo parole a 34.897 ("116,3
+# pagine") ed e' arrivato al PDF con 111 pagine reali, sotto il minimo. 320 e' il piu' basso
+# dei due rapporti misurati: prudente sul minimo parole, senza inventare margine.
+WORDS_PER_PAGE_ESTIMATE = 320
 TARGET_PAGE_COUNT = 120
 TARGET_PAGE_COUNT_TOLERANCE = 5  # accettato: 115-125 pagine
 TARGET_WORD_COUNT_MIN = (TARGET_PAGE_COUNT - TARGET_PAGE_COUNT_TOLERANCE) * WORDS_PER_PAGE_ESTIMATE

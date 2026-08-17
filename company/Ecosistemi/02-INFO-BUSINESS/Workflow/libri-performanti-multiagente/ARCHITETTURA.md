@@ -133,7 +133,10 @@ ed effetti, il nome dell'autore, e cosa NON deve esserci.
 
 **Regole di lavoro:**
 - **4-6 capitoli per volta**, mai tutti insieme: la qualità cala
-- **~1500 parole a capitolo** (24 × 1500 = 36.000 = ~120 pagine)
+- **~1650 parole a capitolo** (24 × 1650 = 39.600 = ~124 pagine reali). **Non 1500**:
+  36.000 parole impaginate fanno 112 pagine, sotto il minimo di 115 — vedi la nota sulle
+  320 parole/pagina più sotto
+- **la lunghezza si controlla al primo blocco**, non a fine libro
 - **dopo ogni blocco** aggiorno `riassunti.md` (2-3 righe per capitolo)
 - **prima di ogni blocco** rileggo `outline.md` + `riassunti.md`
 
@@ -164,9 +167,13 @@ Il codice poi lo porta a norma KDP: ritaglio 2:3, upscale a 1800×2700 (6×9in @
 
 | | |
 |---|---|
-| **Esegue** | `kdp consegna <slug> --cover <png>` |
+| **Esegue** | `kdp consegna <slug>` — con `--cover <png>` fa anche il pacchetto |
 | **Controlla** | 6 controllori in fila (sotto) |
-| **Produce** | `LIBRI/libri_pronti/<Titolo>/` |
+| **Produce** | **sempre** il `.docx` e il **PDF** nella cartella del libro; con la copertina anche `LIBRI/libri_pronti/<Titolo>/` |
+
+> **Il PDF si fa sempre, anche senza copertina** (2026-08-17). Non è comodità: è l'unico
+> posto dove si vede il numero di pagine vero. Aspettare la copertina per scoprirlo
+> significa scoprirlo troppo tardi.
 
 **I sei controllori, in ordine.** I primi tre **bloccano**, gli altri segnalano:
 
@@ -182,6 +189,13 @@ Il codice poi lo porta a norma KDP: ritaglio 2:3, upscale a 1800×2700 (6×9in @
 > Il controllo 3 esiste per un bug reale ripetuto due volte: il vecchio workflow dichiarava
 > "120 pagine" e il PDF ne aveva 21. Ora le pagine si **contano rileggendo il PDF impaginato**,
 > quello che vedrà KDP.
+>
+> **E il controllo 2 non sostituisce il 3.** La stima parole→pagine è tarata su
+> `WORDS_PER_PAGE_ESTIMATE`, che valeva 300 ed era sbagliato: misurato su due libri veri
+> impaginati, il rapporto è **320** (*The Quiet Hours* 324, *The Ninth Winter* 320). A 300 la
+> stima gonfiava le pagine del 6% — nella direzione pericolosa. *The Ninth Winter* è passato
+> dal controllo 2 con 34.897 parole ("116,3 pagine") ed è arrivato al PDF con **111 pagine
+> reali**. Costante corretta a 320 il 2026-08-17; il minimo parole è ora 36.800.
 
 Il verdetto finale sta in `validazione.json` (`pubblicabile: true/false`) e in `REPORT.md`.
 
