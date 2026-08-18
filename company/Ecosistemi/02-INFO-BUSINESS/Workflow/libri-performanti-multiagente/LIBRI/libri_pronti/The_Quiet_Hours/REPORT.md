@@ -1,6 +1,6 @@
 # Report di consegna — The Quiet Hours
 
-_Generato il 10/08/2026 alle 11:42_
+_Generato il 18/08/2026 alle 10:14_
 
 ---
 

@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import re
 import shutil
+import tempfile
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -88,6 +89,7 @@ def create_book_package(
     kdp_metadata_text: str,
     word_count: int,
     page_count: float,
+    sostituisci: bool = False,
 ) -> BookPackageResult:
     """Crea LIBRI/libri_pronti/<Nome-Libro>/ con dentro libro e copertina APPENA
     generati per questo libro specifico. Solleva FileNotFoundError esplicito se
@@ -102,9 +104,36 @@ def create_book_package(
 
     safe_title = sanitize_title(book_title)
     folder_path = config.LIBRI_PRONTI_DIR / safe_title
+    rifugio: Path | None = None
     if folder_path.exists():
-        timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-        folder_path = config.LIBRI_PRONTI_DIR / f"{safe_title}_{timestamp}"
+        if sostituisci:
+            # Stesso libro riconsegnato: la cartella e' UNA, e contiene l'ultima versione.
+            # Prima si accumulavano copie col timestamp a ogni riconsegna (2026-08-17: due
+            # cartelle per The Ninth Winter, una del giro bloccato e una di quello buono) e
+            # dalla cartella non si capiva piu' quale fosse il libro da caricare su KDP.
+            #
+            # ATTENZIONE: sorgente e destinazione possono coincidere. Rilanciare la consegna
+            # passando la copertina che sta GIA' nel pacchetto e' la cosa piu' naturale del
+            # mondo — e senza questa protezione la cancellazione distrugge la copertina
+            # prima di copiarla. Successo davvero il 2026-08-18 su The Quiet Hours: cartella
+            # svuotata, copertina persa (recuperata solo perche' era su git).
+            def _al_sicuro(p: Path) -> Path:
+                nonlocal rifugio
+                if folder_path.resolve() not in p.resolve().parents:
+                    return p
+                if rifugio is None:
+                    rifugio = Path(tempfile.mkdtemp(prefix="kdp_sorgenti_"))
+                copia = rifugio / p.name
+                shutil.copy2(p, copia)
+                return copia
+
+            manuscript_path = _al_sicuro(manuscript_path)
+            cover_path = _al_sicuro(cover_path)
+            shutil.rmtree(folder_path)
+        else:
+            # Libro DIVERSO con lo stesso titolo: non si sovrascrive mai il lavoro altrui.
+            timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+            folder_path = config.LIBRI_PRONTI_DIR / f"{safe_title}_{timestamp}"
     folder_path.mkdir(parents=True, exist_ok=False)
 
     manuscript_dest = folder_path / f"{safe_title}{manuscript_path.suffix}"
@@ -142,6 +171,9 @@ def create_book_package(
         f"Quando pubblicato: sposta manualmente questa cartella in LIBRI/libri_pubblicati/\n",
         encoding="utf-8",
     )
+
+    if rifugio is not None:
+        shutil.rmtree(rifugio, ignore_errors=True)
 
     return BookPackageResult(
         folder_path=folder_path,

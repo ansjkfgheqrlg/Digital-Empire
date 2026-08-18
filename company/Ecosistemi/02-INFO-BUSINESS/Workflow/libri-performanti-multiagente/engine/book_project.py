@@ -307,6 +307,9 @@ class BookProject:
                 kdp_metadata_text=self._metadata_kdp(cfg, risultato),
                 word_count=risultato.word_count,
                 page_count=risultato.estimated_pages,
+                # Riconsegnare lo stesso libro deve aggiornare la sua cartella, non
+                # aggiungerne una nuova col timestamp: qui il libro lo conosciamo per slug.
+                sostituisci=True,
             )
             out["pacchetto"] = str(pacchetto.folder_path)
 

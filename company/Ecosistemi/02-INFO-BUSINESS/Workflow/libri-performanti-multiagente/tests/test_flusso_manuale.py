@@ -312,3 +312,67 @@ def test_titolo_gia_in_copertina_non_viene_riscritto(tmp_path):
 def test_copertina_inesistente_errore_chiaro(tmp_path):
     with pytest.raises(FileNotFoundError, match="Copertina non trovata"):
         copertina_kdp.prepara_copertina(tmp_path / "non_esiste.png", titolo="X")
+
+
+# --------------------------------------------------------------------------- #
+# Pacchetto finale: una cartella per libro, e mai distruggere le sorgenti
+# --------------------------------------------------------------------------- #
+
+@pytest.fixture
+def pronti_isolati(tmp_path, monkeypatch):
+    from engine import book_output_manager, config
+    dir_pronti = tmp_path / "libri_pronti"
+    dir_pronti.mkdir()
+    monkeypatch.setattr(config, "LIBRI_PRONTI_DIR", dir_pronti)
+    # Il PDF richiede Word installato: qui non serve, si sta verificando il montaggio.
+    monkeypatch.setattr(book_output_manager, "converti_in_pdf", lambda *a, **k: None)
+    return dir_pronti
+
+
+def _pacchetto(manoscritto, copertina, sostituisci):
+    from engine import book_output_manager
+    return book_output_manager.create_book_package(
+        book_title="Libro Prova", manuscript_path=manoscritto, cover_path=copertina,
+        kdp_metadata_text="metadati", word_count=1000, page_count=3.3,
+        sostituisci=sostituisci)
+
+
+def test_riconsegna_stesso_libro_non_crea_una_seconda_cartella(pronti_isolati, tmp_path):
+    """Il 2026-08-17 The Ninth Winter aveva due cartelle — quella del giro bloccato e
+    quella buona — e non si capiva piu' quale caricare su KDP."""
+    ms = tmp_path / "Libro.docx"; ms.write_text("testo")
+    cov = _png(tmp_path / "cover.png", 1800, 2700)
+
+    primo = _pacchetto(ms, cov, sostituisci=True)
+    secondo = _pacchetto(ms, cov, sostituisci=True)
+
+    assert primo.folder_path == secondo.folder_path
+    assert [p.name for p in pronti_isolati.iterdir()] == ["Libro_Prova"]
+
+
+def test_libro_diverso_stesso_titolo_non_sovrascrive(pronti_isolati, tmp_path):
+    """Senza `sostituisci` la cartella esistente e' intoccabile: potrebbe essere
+    il libro di un altro."""
+    ms = tmp_path / "Libro.docx"; ms.write_text("testo")
+    cov = _png(tmp_path / "cover.png", 1800, 2700)
+
+    primo = _pacchetto(ms, cov, sostituisci=False)
+    secondo = _pacchetto(ms, cov, sostituisci=False)
+
+    assert primo.folder_path != secondo.folder_path
+    assert primo.manuscript_dest.exists(), "il primo pacchetto non va distrutto"
+
+
+def test_copertina_dentro_il_pacchetto_sopravvive_alla_riconsegna(pronti_isolati, tmp_path):
+    """Regressione 2026-08-18: rilanciare la consegna passando la copertina che sta gia'
+    nel pacchetto la cancellava prima di copiarla. Cartella svuotata, copertina persa —
+    recuperata solo perche' era su git. E' l'uso piu' naturale che ci sia."""
+    ms = tmp_path / "Libro.docx"; ms.write_text("testo")
+    primo = _pacchetto(ms, _png(tmp_path / "cover.png", 1800, 2700), sostituisci=True)
+
+    # Adesso si riconsegna indicando le copie DENTRO il pacchetto appena creato.
+    secondo = _pacchetto(primo.manuscript_dest, primo.cover_dest, sostituisci=True)
+
+    assert secondo.cover_dest.exists(), "la copertina e' stata distrutta dalla sostituzione"
+    assert secondo.cover_dest.stat().st_size > 0
+    assert secondo.manuscript_dest.read_text() == "testo"

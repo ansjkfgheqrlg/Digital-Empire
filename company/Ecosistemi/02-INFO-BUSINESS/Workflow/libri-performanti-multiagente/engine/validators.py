@@ -197,6 +197,34 @@ def _normalizza(s: str) -> str:
     return re.sub(r"[^a-z0-9 ]+", " ", s.lower())
 
 
+def _letture_ocr(img):
+    """Piu' letture della stessa copertina, perche' una sola non basta.
+
+    Tesseract e' tarato su pagine di testo, non su copertine: sull'immagine intera a
+    1800x2700, con un titolo alto 200 px sopra un cielo sfumato, restituisce rumore.
+    Misurato il 2026-08-17 sulle due copertine vere del progetto:
+
+        The Ninth Winter  immagine intera -> 'FE ee eeeely ee er TN'   (0/3 parole)
+        The Quiet Hours   immagine intera -> 'THE QUIET'               (2/3, passata per un pelo)
+
+    Le stesse due, ritagliate in alto e binarizzate, danno 'THE NINTH WINTER' e
+    'THE QUIET HOURS': 3/3 entrambe. Quindi si prova in piu' modi e si unisce il letto.
+
+    Unire NON indebolisce il controllo: le parole devono comunque comparire davvero. Una
+    copertina col titolo sbagliato non le produce in nessuna delle varianti."""
+    from PIL import Image, ImageOps
+
+    yield img                                    # com'e' — a volte basta
+    if img.width > 1000:                         # i caratteri giganti confondono Tesseract
+        yield img.resize((900, round(900 * img.height / img.width)), Image.LANCZOS)
+    # Il titolo sta nella meta' alta: la si isola e si spinge il contrasto. Le due soglie
+    # coprono i due casi opposti — testo chiaro su fondo scuro e testo scuro su fondo chiaro.
+    meta = ImageOps.grayscale(img.crop((0, 0, img.width, img.height // 2)))
+    yield meta.point(lambda x: 0 if x < 170 else 255)
+    yield meta.point(lambda x: 255 if x < 110 else 0)
+    yield ImageOps.autocontrast(meta)
+
+
 def valida_copertina_testo(cover_path: Path, titolo_atteso: str | None = None) -> list[str]:
     """Verifica via OCR che la copertina contenga testo e, se richiesto, il titolo.
 
@@ -228,7 +256,14 @@ def valida_copertina_testo(cover_path: Path, titolo_atteso: str | None = None) -
                 "https://github.com/UB-Mannheim/tesseract/wiki e reinstalla; nel frattempo "
                 "controlla a occhio che il titolo sulla copertina sia scritto correttamente."]
 
-    testo = pytesseract.image_to_string(Image.open(cover_path)).strip()
+    immagine = Image.open(cover_path)
+    letture = []
+    for variante in _letture_ocr(immagine):
+        try:
+            letture.append(pytesseract.image_to_string(variante).strip())
+        except Exception as exc:                 # una variante che fallisce non ferma le altre
+            logger.debug("OCR copertina, variante saltata: %s", exc)
+    testo = "\n".join(t for t in letture if t).strip()
     if not testo:
         return [f"Copertina '{cover_path.name}': nessun testo rilevato. "
                 f"Deve riportare il titolo del libro."]
@@ -243,11 +278,11 @@ def valida_copertina_testo(cover_path: Path, titolo_atteso: str | None = None) -
     if not parole_titolo:
         return []
     quota = len(trovate) / len(parole_titolo)
-    # Soglia al 50% e non piu' alta perche' l'OCR perde regolarmente qualche parola anche
-    # su un titolo scritto benissimo: su questa copertina legge "THE QUIET" e si mangia
-    # "HOURS", pur essendo perfettamente leggibile a occhio (verificato, 2026-08-10). Il
-    # controllo serve a intercettare il caso grave — copertina senza titolo, o con un
-    # titolo diverso da quello del libro — non a fare le pulci all'OCR.
+    # Soglia al 50%. Con le letture multiple (`_letture_ocr`) entrambe le copertine vere del
+    # progetto danno 3/3, quindi si potrebbe alzarla — ma resta bassa di proposito: questo
+    # controllo BLOCCA, e un blocco che sbaglia insegna a scavalcarlo con --forza, il che
+    # svuota tutti gli altri. Serve a intercettare il caso grave — copertina senza titolo, o
+    # con un titolo diverso da quello del libro — non a fare le pulci all'OCR.
     if quota < 0.5:
         mancanti = [p for p in parole_titolo if p not in trovate]
         return [f"Copertina '{cover_path.name}': il titolo non sembra leggibile. "
