@@ -24,7 +24,7 @@ She got up into the buggy and turned the horse west.
 
 ---
 
-Graber Aggregate & Stone was not a large operation. Rebecca had expected — she was not sure what she had expected. Something with a shape to it. What was there was a yard of gray stone dust with a scale house, a portable office on blocks, two sheds, a stack of concrete pipe, three trucks, and beyond it all the cut face of the hill going up gray and wet-looking with snow in the ledges.
+Graber Aggregate & Stone was not a large operation. Rebecca was not sure what she had expected. Something with a shape to it. What was there was a yard of gray stone dust with a scale house, a portable office on blocks, two sheds, a stack of concrete pipe, three trucks, and beyond it all the cut face of the hill going up gray and wet-looking with snow in the ledges.
 
 There was a bell on a post by the office with a hand-lettered sign: DELIVERIES RING.
 
@@ -130,9 +130,9 @@ Here was what she had.
 
 He had not flinched at *Sarah*. He had not flinched at *the market stand*, or at *nine years ago*, or at *the old quarry*. He had taken his cap off. He had been sorry, and it had not looked like anything but sorry.
 
-Either Wilmer Graber had had nothing to do with her sister —
+Either Wilmer Graber had had nothing to do with her sister.
 
-— or he was a man who could hold his cap in his hands and be sorry to a dead girl's sister on a Tuesday morning and then eat his dinner.
+Or he was a man who could hold his cap in his hands and be sorry to a dead girl's sister on a Tuesday morning and then eat his dinner.
 
 And Rebecca had no way at all of telling those two men apart. That was the thing she had not understood until she was in the yard with him: she had come out here with the private conviction that she would *know*. That a person could stand in front of it and feel the shape of it.
 
@@ -144,6 +144,6 @@ Then she thought about the one thing in the entire conversation that she could a
 
 *My wife'd know. She buys the chow-chow.*
 
-The Zooks kept the stand's ledger. Every stand kept a ledger — who bought what, who owed, who paid at the end of the month. Nine years of them, in a box in a back room, because Amish families did not throw out a ledger.
+The Zooks kept the stand's ledger. Every stand kept a ledger: who bought what, who owed, who paid at the end of the month. Nine years of them, in a box in a back room, because Amish families did not throw out a ledger.
 
 Rebecca clicked her tongue at the horse and put him into a trot on the flat, and did not go home.

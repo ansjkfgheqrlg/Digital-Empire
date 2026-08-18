@@ -126,7 +126,7 @@ We sit in the terrible chairs.
 
 "Ruth knows about the two of you now," I say. It isn't a question.
 
-"I told her on Thursday. Before you remembered anything. She was — " he makes a small sound that isn't a laugh — "she was extremely unimpressed with me, and she wrote it all down, and she said the phrase *you should have come forward in December of last year, Mr. Cole,* and she's right."
+"I told her on Thursday. Before you remembered anything. She was — " he makes a small sound that isn't a laugh, "she was extremely unimpressed with me, and she wrote it all down, and she said the phrase *you should have come forward in December of last year, Mr. Cole,* and she's right."
 
 "Are you in trouble?"
 

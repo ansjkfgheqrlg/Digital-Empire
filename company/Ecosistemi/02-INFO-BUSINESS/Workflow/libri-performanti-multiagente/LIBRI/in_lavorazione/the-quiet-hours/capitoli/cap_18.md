@@ -2,7 +2,7 @@
 
 They keep me eleven days.
 
-It isn't what people imagine. There's no dramatic admission, no restraint, nobody says *sectioned* — I go in voluntarily on the Friday afternoon with a bag Adrian packs badly, and a consultant called Dr. Iyer takes a history for two hours and asks me, at the end of it, the only question anybody has asked me correctly in fourteen months:
+It isn't what people imagine. There's no dramatic admission, no restraint, nobody says *sectioned*. I go in voluntarily on the Friday afternoon with a bag Adrian packs badly, and a consultant called Dr. Iyer takes a history for two hours and asks me, at the end of it, the only question anybody has asked me correctly in fourteen months:
 
 "When did you decide you weren't allowed to sleep?"
 
@@ -20,7 +20,7 @@ The ward is eleven beds and a corridor with a window at the end that looks at a 
 
 I know the rhythm. I know that the eight o'clock obs are late because the handover overran. I know why the drugs trolley stops at bed four for six minutes. I catch myself, on the second morning, standing up to help a woman called Jackie who has dropped her cardigan, and a nurse says "sit down, love, I've got it," and I sit down, and something in me falls over.
 
-Being on the wrong side of it is not humbling. That's the word people use and it's wrong. It's *disorienting* — like hearing your own voice on a recording. All the same sounds, arranged for somebody else.
+Being on the wrong side of it is not humbling. That's the word people use and it's wrong. It's *disorienting*, like hearing your own voice on a recording. All the same sounds, arranged for somebody else.
 
 Jackie is sixty-one and has been here five weeks and tells me on the first day, without being asked, exactly what she's in for, in the flat manner of someone who has stopped finding it interesting.
 

@@ -2,7 +2,7 @@
 
 The Lapp baby came at twenty past three in the morning, which was, in Rebecca Yoder's professional opinion, exactly when babies preferred to come.
 
-She had known it would be a long one from the moment she stepped into the house. Not from anything Katie Lapp said — Katie was on her fourth and had the particular stubborn silence of a woman who had decided in advance not to make a fuss — but from the way the older children had been sent to the grandparents two days early, and from the way Enos Lapp had laid the fire in the front room at nine o'clock and then sat beside it doing nothing at all.
+She had known it would be a long one from the moment she stepped into the house. Not from anything Katie Lapp said, because Katie was on her fourth and had the particular stubborn silence of a woman who had decided in advance not to make a fuss, but from the way the older children had been sent to the grandparents two days early, and from the way Enos Lapp had laid the fire in the front room at nine o'clock and then sat beside it doing nothing at all.
 
 Men who sat doing nothing at all knew something.
 
@@ -12,7 +12,7 @@ Now the lamp threw its yellow circle across the bed and the room smelled of clea
 
 The baby came into her hands. A girl, small, furious, entirely alive.
 
-There was a moment — there was always this moment, and in nine years of the work Rebecca had never stopped noticing it — when the room contained a person it had not contained a breath before. Nothing in the *Ordnung*, nothing in any sermon she had sat through on a hard bench in a cold barn, had ever explained that moment to her satisfaction. It simply happened, again and again, in rooms like this one, at hours like this one.
+There was a moment, and there was always this moment, and in nine years of the work Rebecca had never stopped noticing it, when the room contained a person it had not contained a breath before. Nothing in the *Ordnung*, nothing in any sermon she had sat through on a hard bench in a cold barn, had ever explained that moment to her satisfaction. It simply happened, again and again, in rooms like this one, at hours like this one.
 
 "A girl," she said.
 
@@ -30,7 +30,7 @@ Enos Lapp nodded twice. Then he said, "*Denki*," and then, because that was not 
 
 She did not go home.
 
-There was no particular reason to stay — Katie's mother would arrive at six, and there was nothing left that needed a midwife — but the roads were bad and her horse was tired and Katie had asked her, in the loose sleepy voice women got afterward, to stay until light.
+There was no particular reason to stay. Katie's mother would arrive at six, and there was nothing left that needed a midwife. But the roads were bad and her horse was tired and Katie had asked her, in the loose sleepy voice women got afterward, to stay until light.
 
 So Rebecca sat in the kitchen with a cup of coffee she did not drink and listened to the house.
 

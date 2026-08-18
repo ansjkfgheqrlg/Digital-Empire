@@ -407,3 +407,19 @@ def test_lineette_contate_per_riga():
     esito = validators.valida_lineette("uno \u2014 due \u2014 tre\nquattro, cinque")
     assert len(esito) == 1, "una sola riga contiene lineette"
     assert "2 lineetta" in esito[0]
+
+
+def test_lineetta_dentro_le_virgolette_e_permessa():
+    """Nel parlato la lineetta segna la parola tagliata: chi interrompe e chi si corregge
+    da solo. Non e' scrittura automatica, e' come si trascrive una voce (Gael, 2026-08-18)."""
+    from engine import validators
+    assert validators.valida_lineette('"There\'s Efrain\'s boy\'s wife. She\'d be \u2014 "') == []
+    assert validators.valida_lineette('"No. Stay. I\'ll \u2014 it\'ll be nothing."') == []
+
+
+def test_lineetta_nella_narrazione_blocca_anche_accanto_a_un_dialogo():
+    """Il caso insidioso: riga mista. La lineetta sta FUORI dalle virgolette."""
+    from engine import validators
+    riga = 'And Sarah had said \u2014 and she was certain of it \u2014 "Do you think he knows?"'
+    esito = validators.valida_lineette(riga)
+    assert esito and "2 lineetta" in esito[0]

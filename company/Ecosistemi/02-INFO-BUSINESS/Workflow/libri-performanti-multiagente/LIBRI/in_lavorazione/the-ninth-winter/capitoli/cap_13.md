@@ -48,7 +48,7 @@ At the end Cruz sat back and looked at her list.
 
 "I thought it was somebody meeting somebody," said Rebecca, "which is the usual reason for a truck in a pull-off at two in the morning, and it wasn't my business, and I'd a woman in labor a mile up the road."
 
-Cruz laughed — one short breath through the nose.
+Cruz laughed, one short breath through the nose.
 
 "Fair. That's the nineteenth. The Kauffman shop was done on the twentieth." She tapped the page. "That's the first hard thing anyone's given me. Thank you."
 
@@ -58,7 +58,7 @@ Cruz laughed — one short breath through the nose.
 
 Rebecca looked at the pie she had not touched.
 
-The whole way here she had rehearsed an approach — something careful, something that gave away the least. She had got as far as *a person might have found some papers* twice in her head and had known both times how it would sound.
+The whole way here she had rehearsed an approach: something careful, something that gave away the least. She had got as far as *a person might have found some papers* twice in her head and had known both times how it would sound.
 
 "My sister kept a notebook," she said. "For nine and a half months before she died. It looks like recipes. In the margins it's dates and initials and money, every Thursday, and I think it's a record of a man taking wages off men who couldn't complain about it."
 
@@ -148,4 +148,4 @@ Rebecca sat in the booth with two slices of shoofly pie in front of her and did 
 
 *Somebody they'd told.*
 
-And in nine years, in all the turning over and the counting and the four readings of a thin file, that possibility had never once crossed her mind — that her sister had not been alone with it.
+And in nine years, in all the turning over and the counting and the four readings of a thin file, that possibility had never once crossed her mind: that her sister had not been alone with it.

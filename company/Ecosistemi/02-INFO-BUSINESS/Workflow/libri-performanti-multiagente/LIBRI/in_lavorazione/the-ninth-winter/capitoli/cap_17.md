@@ -4,7 +4,7 @@ They did not speak of it.
 
 That was the thing Rebecca found she could not get over, in the four days that followed: that the bishop's buggy had gone down the lane and her mother had stood up and washed the two coffee cups and said, "You'll want to look in on the Fisher girl before it snows," and the household had closed over the morning like water over a stone.
 
-She let it. That was the part she would examine later with something close to disgust. She let it, because thirty years of that kitchen were in her bones, and because she was afraid of what would come out if she pushed, and because — she was honest enough to know this — she wanted to have the rest of it in her hands before she asked her mother a question she could not un-ask.
+She let it. That was the part she would examine later with something close to disgust. She let it, because thirty years of that kitchen were in her bones, and because she was afraid of what would come out if she pushed, and because (she was honest enough to know this) she wanted to have the rest of it in her hands before she asked her mother a question she could not un-ask.
 
 So she looked in on the Fisher girl. She did the week's work. She wrote her ledger.
 
@@ -14,11 +14,11 @@ The quilt lay flat.
 
 Rebecca stood in the middle of the room with the candle in her hand.
 
-She did not immediately understand what she was looking at. That was the strange part — her mind offered her, for one full second, the explanation that she must have moved it herself and forgotten. Then the second passed.
+She did not immediately understand what she was looking at. That was the strange part: her mind offered her, for one full second, the explanation that she must have moved it herself and forgotten. Then the second passed.
 
 She crossed the room and pulled the quilt back anyway, because a person has to, and there was the mattress, gray and bare and slightly dented in the middle where nine years of nothing had pressed it, and there was no muslin bundle on it and none under it and none anywhere in the bed at all.
 
-She checked the whole room. She was aware of doing it stupidly — the drawer, the chest, under her own bed, the windowsill — and she did it anyway, twice, with the candle guttering.
+She checked the whole room. She was aware of doing it stupidly (the drawer, the chest, under her own bed, the windowsill) and she did it anyway, twice, with the candle guttering.
 
 Then she sat down on the edge of her own bed with her hands in her lap.
 
@@ -34,7 +34,7 @@ Rebecca had never once thought about that in twenty-eight years. It was not a ru
 
 She sat in the dark and understood the shape of her own house for the first time.
 
-Anyone. Any hour. Her mother, obviously — her mother, who had known about the loose board since Rebecca was fifteen and who had had four days and a great deal of reason. But not only her mother. The door at the bottom of the stairs was never bolted before nine. The kitchen door stood unlocked from four in the morning when the milking started. In the last four days there had been in this house: her mother; Naomi Esh, twice, about a poultice; the Fisher boy with eggs; Enos Lapp, who had come to say thank you again about Katie in the awkward way of a man who could not stop saying it; and Sadie Beiler with a jar of pickled beets, who had gone up to use the necessary and had been gone, Rebecca now recalled, rather a long time.
+Anyone. Any hour. Her mother, obviously. Her mother, who had known about the loose board since Rebecca was fifteen and who had had four days and a great deal of reason. But not only her mother. The door at the bottom of the stairs was never bolted before nine. The kitchen door stood unlocked from four in the morning when the milking started. In the last four days there had been in this house: her mother; Naomi Esh, twice, about a poultice; the Fisher boy with eggs; Enos Lapp, who had come to say thank you again about Katie in the awkward way of a man who could not stop saying it; and Sadie Beiler with a jar of pickled beets, who had gone up to use the necessary and had been gone, Rebecca now recalled, rather a long time.
 
 Any of them. Any of them at all, and not one of them would have had to do anything more furtive than climb a staircase in a house where climbing the staircase is not a thing anybody notices.
 
@@ -48,7 +48,7 @@ She did not go down and wake her mother.
 
 She thought about it for perhaps an hour, lying on top of the covers with her boots still on, and what stopped her was not tact and not fear. It was that she could not decide what she would do if her mother said *yes*.
 
-If Miriam Yoder sat up in bed and said *I took it, and I burned it, and I'd do it again* — what then? Rebecca could not leave. She could not report her mother to anybody; there was nobody to report her to. She could not stop loving her, having tried that for four days already with no success whatever.
+If Miriam Yoder sat up in bed and said *I took it, and I burned it, and I'd do it again*: what then? Rebecca could not leave. She could not report her mother to anybody; there was nobody to report her to. She could not stop loving her, having tried that for four days already with no success whatever.
 
 So she lay in the dark and did the only thing that was actually available to her, which was to think.
 
@@ -56,7 +56,7 @@ And thinking, she found the small hard fact at the bottom of it, and held onto i
 
 *I copied it.*
 
-Eleven pages, in her own hand, in her own work ledger, at half past five in the morning with her fingers going numb — because of a thought that had come to her at three o'clock and would not let her sleep. *The notebook can be taken.*
+Eleven pages, in her own hand, in her own work ledger, at half past five in the morning with her fingers going numb, because of a thought that had come to her at three o'clock and would not let her sleep. *The notebook can be taken.*
 
 The ledger was not in the house.
 
@@ -64,7 +64,7 @@ The ledger went where she went. It was in her midwife's bag, which was on the ho
 
 She got up, went down the stairs in her stockings past her mother's door, took the bag off the hook, and brought it back up.
 
-She sat on the floor with her back against the bed and the candle on the boards and turned past the weights and the dates and the names of eleven years of babies, and there it was, in the pages after the Lapp girl: *11/2 — W.G. — 40*, in Rebecca Yoder's small even hand.
+She sat on the floor with her back against the bed and the candle on the boards and turned past the weights and the dates and the names of eleven years of babies, and there it was, in the pages after the Lapp girl: *11/2, W.G. 40*, in Rebecca Yoder's small even hand.
 
 She put her forehead down on the open book and stayed like that for a while.
 
@@ -72,13 +72,13 @@ She put her forehead down on the open book and stayed like that for a while.
 
 In the morning she did three things before breakfast.
 
-The first was to go out to the buggy shed with a pencil and copy the eleven pages again, onto the flyleaf and endpapers of a battered Bible that lived in the shed for reading in the noon rest — a book nobody would ever pick up and nobody would ever burn.
+The first was to go out to the buggy shed with a pencil and copy the eleven pages again, onto the flyleaf and endpapers of a battered Bible that lived in the shed for reading in the noon rest, a book nobody would ever pick up and nobody would ever burn.
 
 The second was to write out a third copy on a folded sheet of paper, which she put in the toe of her spare boot in the trunk in the hall.
 
 The third was harder, and she stood in the cold for ten minutes before she did it.
 
-She went in, put on her coat, harnessed the horse, and drove to the phone shanty at the end of the Millers' lane — the one the district kept for calling the vet and the ambulance and the driver — and took a card out of her apron pocket, and dialed the number written on the back.
+She went in, put on her coat, harnessed the horse, and drove to the phone shanty at the end of the Millers' lane (the one the district kept for calling the vet and the ambulance and the driver) and took a card out of her apron pocket, and dialed the number written on the back.
 
 It rang four times.
 

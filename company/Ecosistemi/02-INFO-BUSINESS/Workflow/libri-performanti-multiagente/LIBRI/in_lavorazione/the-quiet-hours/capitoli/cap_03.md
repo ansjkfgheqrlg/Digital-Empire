@@ -4,7 +4,7 @@ I don't go to the storage place.
 
 I get as far as the car. I get as far as putting the key in the ignition and sitting there with the engine running and the wipers going against a rain that has just started, and then I turn the engine off and go back inside, and I am not going to pretend to you that I know why.
 
-Actually — that's the first lie, and we're only three days in, so let me correct it while I still can.
+Actually, no. That's the first lie, and we're only three days in, so let me correct it while I still can.
 
 I know why. I didn't go because if unit 47 exists, and if the key opens it, then somebody rented a storage unit on the road where my sister died, and put the key in my coat, and I would have to find out who. And there is a version of that answer I am not ready to hold in my hands.
 
@@ -26,7 +26,7 @@ Around ten she got quiet. Nina getting quiet was an event, like weather. She sat
 
 "Ask me."
 
-And she said — and I want to be exact — she said, "If I told you I'd done something stupid, would you help me fix it, or would you tell me it was stupid first?"
+And she said, and I want to be exact about this, she said, "If I told you I'd done something stupid, would you help me fix it, or would you tell me it was stupid first?"
 
 And I said, "Both. In that order. Obviously."
 
@@ -44,7 +44,7 @@ Here is the thing about my sister that I have never managed to explain to anybod
 
 Nina was five years younger and had been in charge of me since she was about nine.
 
-That's not a figure of speech. When our father left — I was fourteen, she was nine — I did the sensible things: I got the bus timetables sorted, I learned to do a shepherd's pie, I filled in the forms. And Nina walked into the kitchen one evening about three weeks in, at nine years old, and said, "You're being weird. You've stopped being annoying and it's worse."
+That's not a figure of speech. When our father left (I was fourteen, she was nine) I did the sensible things: I got the bus timetables sorted, I learned to do a shepherd's pie, I filled in the forms. And Nina walked into the kitchen one evening about three weeks in, at nine years old, and said, "You're being weird. You've stopped being annoying and it's worse."
 
 I have thought about that sentence for twenty years. Nine years old.
 
@@ -82,7 +82,7 @@ The man on the step is about forty, dark coat, wet hair, and he's holding a parc
 
 "It is."
 
-I take the parcel. It's from an online pharmacy — magnesium tablets, the third supplement I've tried since November, all of which have done nothing for anything.
+I take the parcel. It's from an online pharmacy: magnesium tablets, the third supplement I've tried since November, all of which have done nothing for anything.
 
 He doesn't leave. He stands there in the rain and looks past me into the flat, not intrusively, just the ordinary curiosity of a neighbour, and he says, "I teach music. Piano, mostly, some guitar. If you ever hear scales at nine in the morning and want to kill someone, it's me. I'll take the criticism."
 
@@ -96,7 +96,7 @@ The rain does its thing on the path. Somewhere down the road a car alarm starts 
 
 "How do you know my name?"
 
-"It's on the parcel." He turns his hand over — the parcel that is now in my hands, my name printed on the label in the middle of the address, exactly where names go.
+"It's on the parcel." He turns his hand over, the parcel that is now in my hands, my name printed on the label in the middle of the address, exactly where names go.
 
 "Right," I say. "Sorry. I'm — it's been a long shift."
 
@@ -104,7 +104,7 @@ The rain does its thing on the path. Somewhere down the road a car alarm starts 
 
 "It's been a long fourteen months."
 
-I don't know why I say it. I don't say things like that to people I've known for ninety seconds. I don't say things like that to people I've known for years — ask my mother.
+I don't know why I say it. I don't say things like that to people I've known for ninety seconds. I don't say things like that to people I've known for years. Ask my mother.
 
 Adrian doesn't do the face. That's the thing I notice, and the thing I will keep noticing for the next six weeks: he doesn't do the sympathetic head-tilt, the *oh I'm sorry*, the whole small performance people run when you accidentally hand them something heavy.
 

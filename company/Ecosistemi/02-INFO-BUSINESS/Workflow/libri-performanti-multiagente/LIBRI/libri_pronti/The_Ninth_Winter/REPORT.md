@@ -1,6 +1,6 @@
 # Report di consegna — The Ninth Winter
 
-_Generato il 18/08/2026 alle 10:07_
+_Generato il 18/08/2026 alle 10:55_
 
 ---
 
@@ -10,8 +10,8 @@ _Generato il 18/08/2026 alle 10:07_
 - **Autore**: Rebecca Miller
 - **Nicchia**: amish romance suspense
 - **Capitoli**: 24
-- **Parole**: 36.814
-- **Pagine reali** (contate sul PDF impaginato): **115**
+- **Parole**: 36.853
+- **Pagine reali** (contate sul PDF impaginato): **116**
 - **Formato**: 6.0x9.0 pollici
 
 ## File consegnati
@@ -51,10 +51,11 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260813_175812.json`
 
 ## Controlli automatici eseguiti
 
+- ✅ **Lineette lunghe (non devono esserci)**: nessun problema
 - ⚠️ **Trattini nel testo (da rivedere a occhio)**: 14 da verificare
     - riga 142: trattino in 'not-talking' — contesto: 'That was not unusual. Miriam Yoder had never been a talker, and in the'
-    - riga 290: trattino in 'chow-chow' — contesto: 'The first four were recipes. Actual recipes, in Sarah's hand — shoofly'
-    - riga 940: trattino in 'wet-looking' — contesto: 'Graber Aggregate & Stone was not a large operation. Rebecca had expect'
+    - riga 290: trattino in 'chow-chow' — contesto: 'The first four were recipes. Actual recipes, in Sarah's hand: shoofly '
+    - riga 940: trattino in 'wet-looking' — contesto: 'Graber Aggregate & Stone was not a large operation. Rebecca was not su'
     - riga 942: trattino in 'hand-lettered' — contesto: 'There was a bell on a post by the office with a hand-lettered sign: DE'
     - riga 1004: trattino in 'chow-chow' — contesto: '"Sarah." He said it the way a man says a name he is being handed. He t'
     - _...e altri 9_

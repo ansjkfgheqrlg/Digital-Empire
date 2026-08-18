@@ -18,7 +18,7 @@ At twenty past ten she came down again in her stockings with a candle she did no
 
 ---
 
-The buggy shed in January at that hour was a place with its own weather. Colder than outside, somehow, the way sheds are — the cold coming up out of the packed dirt floor as much as in through the boards.
+The buggy shed in January at that hour was a place with its own weather. Colder than outside, somehow, the way sheds are, the cold coming up out of the packed dirt floor as much as in through the boards.
 
 She set the candle on the workbench and knelt.
 
@@ -38,13 +38,13 @@ Rebecca sat back on her heels with her hands on her knees and let that arrange i
 
 *It's not right that such things should sit about in a shed.*
 
-He had said *a shed*. Not *your shed*, not *the buggy shed*, not *under the bench*. A shed. It was the sort of thing a man said. It was very nearly the sort of thing a man said by accident — the way you might say *don't leave it lying about in a drawer somewhere* to a person who had never mentioned a drawer.
+He had said *a shed*. Not *your shed*, not *the buggy shed*, not *under the bench*. A shed. It was the sort of thing a man said. It was very nearly the sort of thing a man said by accident, the way you might say *don't leave it lying about in a drawer somewhere* to a person who had never mentioned a drawer.
 
 She turned it over, looking for the innocent shape of it, because she had spent her working life learning that the frightening explanation is usually not the true one. A breech presentation is usually a baby lying awkwardly, not a disaster. A fever on the fourth day is usually a duct. You check the ordinary thing first, and you check it honestly, or you will spend your life terrifying women for nothing.
 
 So: the ordinary thing.
 
-Enos Lapp had told the bishop about the box. That was almost certainly true and cost nothing to believe. And a man telling his bishop about a box he had kept in his attic for nine years would say, in the telling, *I gave it to Rebecca Yoder and she took it away in her buggy* — and a bishop hearing that would picture a woman driving home with a cardboard box, and would say, later, without thinking about it at all, *don't leave it in a shed*.
+Enos Lapp had told the bishop about the box. That was almost certainly true and cost nothing to believe. And a man telling his bishop about a box he had kept in his attic for nine years would say, in the telling, *I gave it to Rebecca Yoder and she took it away in her buggy*, and a bishop hearing that would picture a woman driving home with a cardboard box, and would say, later, without thinking about it at all, *don't leave it in a shed*.
 
 That was the ordinary thing. It fit. It required nobody to have done anything.
 
@@ -72,7 +72,7 @@ The second column. That was the part she had not worked properly.
 
 *E.M. 25. J.R. 15. R.T. 20. L.C. 15.*
 
-Four sets of initials that appeared in the spring and grew to five by July, each with a number smaller than forty. If the reading was right — forty paid, twenty-five received — then E.M. was a man being handed twenty-five dollars out of forty.
+Four sets of initials that appeared in the spring and grew to five by July, each with a number smaller than forty. If the reading was right (forty paid, twenty-five received) then E.M. was a man being handed twenty-five dollars out of forty.
 
 But the others were not twenty-five. They were fifteen, and twenty, and fifteen.
 
@@ -86,13 +86,13 @@ Someone had been taking more as the summer went on. Taking more, from more men, 
 
 Rebecca put her pencil down.
 
-That was not a scheme. A scheme is a thing a man decides on. That was a man finding out, one week at a time, exactly how much he could take before somebody stopped him — and discovering, one week at a time, that nobody was going to.
+That was not a scheme. A scheme is a thing a man decides on. That was a man finding out, one week at a time, exactly how much he could take before somebody stopped him, and discovering, one week at a time, that nobody was going to.
 
 And a seventeen-year-old girl selling shoofly pie four hundred yards away had written it down for nine months.
 
 *Ask him what he tells them it is for.*
 
-She had not asked *him*, Rebecca thought. Whatever else Sarah had done, she had not asked Wilmer Graber. Because that line was written on the seventeenth of August, and if she had asked him in August she would not have been alive in January — no. That was not right either. That was the kind of thinking that ran ahead of its evidence.
+She had not asked *him*, Rebecca thought. Whatever else Sarah had done, she had not asked Wilmer Graber. Because that line was written on the seventeenth of August, and if she had asked him in August she would not have been alive in January. No. That was not right either. That was the kind of thinking that ran ahead of its evidence.
 
 *She might have asked him.* That was all that could be said. She had written down the intention to ask, in the last entry, and then the notebook stopped.
 

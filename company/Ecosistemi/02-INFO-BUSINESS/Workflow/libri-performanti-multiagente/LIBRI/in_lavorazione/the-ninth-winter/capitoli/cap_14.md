@@ -52,7 +52,7 @@ He set the plane down. He had a way of putting a tool down that Rebecca had noti
 
 She told him.
 
-Not all of it — she held back the bishop, and the sawdust on the join, and Cruz. But she told him the box, and the notebook, and eleven pages of Thursdays, and the market stand four hundred yards from a gate, and what Barbara Zook had said about a girl who changed her day and was easier after.
+Not all of it. She held back the bishop, and the sawdust on the join, and Cruz. But she told him the box, and the notebook, and eleven pages of Thursdays, and the market stand four hundred yards from a gate, and what Barbara Zook had said about a girl who changed her day and was easier after.
 
 Daniel Beiler listened the way she had not heard anybody listen in nine years, which was: entirely, and without preparing what he was going to say.
 
@@ -148,7 +148,7 @@ Unless.
 
 Rebecca stood in the Beilers' lane with the cold going through her and finally saw the shape of it, and it was not the shape of a girl running away.
 
-It was the shape of a girl who had decided to go — and who was waiting until she could take somebody with her.
+It was the shape of a girl who had decided to go, and who was waiting until she could take somebody with her.
 
 Somebody who could not simply get on a bus.
 

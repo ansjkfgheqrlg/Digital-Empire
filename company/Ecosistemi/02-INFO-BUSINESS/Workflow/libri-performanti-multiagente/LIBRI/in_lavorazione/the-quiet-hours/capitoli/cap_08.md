@@ -1,6 +1,6 @@
 # The Corridor I Was Never In
 
-He doesn't flinch. That's what I keep coming back to afterward — he doesn't flinch, doesn't scramble, doesn't do the thing a caught person does.
+He doesn't flinch. That's what I keep coming back to afterward. He doesn't flinch, doesn't scramble, doesn't do the thing a caught person does.
 
 He says: "No. You told me it had been a long fourteen months, and you said it like a date rather than a feeling, and then last week you were in the car park at half four in the morning not driving anywhere." He turns his glass a quarter turn. "And there's a photograph on your hall table you can see from the door. Two of you. She's got your face and about eleven years fewer of it."
 
@@ -38,7 +38,7 @@ The photograph on the hall table is not two of us. It's Nina on her own, at a we
 
 There is no photograph of the two of us anywhere in that flat. There hasn't been since January of last year, when I put them all in a box in the wardrobe because I couldn't walk past them.
 
-He got it right that I have a sister. He got the eleven years right — she was five years younger, but she looked it, and people always said it.
+He got it right that I have a sister. He got the eleven years right, because she was five years younger, but she looked it, and people always said it.
 
 And he got the photograph wrong in the specific way a person gets a thing wrong when they are describing something they were told about rather than something they saw.
 
@@ -66,7 +66,7 @@ The corridor is empty. Long, lit low, the fire door at the end with its green ma
 
 And then I walk into frame.
 
-I come from the stairwell. I'm in my uniform. I stop about six feet in, and I stand there, facing the wall — not the wall, the door, room 24 — and I stand there for a long time. Bernie scrubs the timeline forward and I keep standing there. The counter runs on. Two minutes. Four.
+I come from the stairwell. I'm in my uniform. I stop about six feet in, and I stand there, facing the wall. Not the wall, the door, room 24. And I stand there for a long time. Bernie scrubs the timeline forward and I keep standing there. The counter runs on. Two minutes. Four.
 
 At six minutes and change I turn around and walk back to the stairwell, and the corridor is empty again.
 
@@ -84,7 +84,7 @@ I do not remember waking up on the fourteenth of February with any sense that th
 
 He plays it again.
 
-I make myself watch it properly this time, the way I'd watch a patient's gait — clinically, looking for the tell.
+I make myself watch it properly this time, the way I'd watch a patient's gait: clinically, looking for the tell.
 
 The woman comes out of the stairwell at a normal walking pace. Her arms swing. She is not shuffling and she is not gliding and she does not have her hands out in front of her like the thing people do in films.
 
@@ -104,7 +104,7 @@ He does.
 
 I watch the woman on the screen tuck her hair behind her ear at 02:48:31 on the fourteenth of February, on a floor that has been closed since November, outside a room that has been stripped to the boards.
 
-And then — and this is the part I do not tell Bernie, or Okonjo, or anybody, for another five weeks — she turns her head very slightly toward the camera.
+And then, and this is the part I do not tell Bernie, or Okonjo, or anybody, for another five weeks, she turns her head very slightly toward the camera.
 
 Not to it. Past it. The way you glance at something you already know is there.
 

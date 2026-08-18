@@ -46,7 +46,7 @@ They talked on the step for forty minutes in the cold, and he did not once invit
 
 He told it plainly and without drama, which made it worse.
 
-The pit paid cash on Thursdays. That was normal — half the seasonal work in the county paid cash. The rate was agreed at forty a day, and for the first two seasons that was what came, and Efrain had thought it a fair place, better than the mushroom houses, and had brought his nephew.
+The pit paid cash on Thursdays. That was normal. Half the seasonal work in the county paid cash. The rate was agreed at forty a day, and for the first two seasons that was what came, and Efrain had thought it a fair place, better than the mushroom houses, and had brought his nephew.
 
 Then in the spring of that year there had begun to be a deduction.
 
@@ -142,7 +142,7 @@ He stood up, using the rail, and he was a fifty-eight-year-old man with a bad sh
 
 "No," said Rebecca. "I don't. I've never once had to know a thing like that, and I'd be lying if I said otherwise."
 
-Something in Efrain's face eased fractionally — not warmth, but a kind of recognition.
+Something in Efrain's face eased fractionally, not warmth, but a kind of recognition.
 
 "Leave me the winter," he said. "The baby comes in April. After that — " he made a gesture that meant nothing and everything " — after that, ask me again."
 

@@ -2,7 +2,7 @@
 
 The case took fourteen months, which everybody had told her and nobody had made her understand.
 
-Wilmer Graber pleaded to the wage charges in the following March — two counts, restitution ordered, a fine, no custody. The assault went to a hearing and then, eleven days before trial, to a plea as well: a lesser count, two years' probation, his name on a list.
+Wilmer Graber pleaded to the wage charges in the following March: two counts, restitution ordered, a fine, no custody. The assault went to a hearing and then, eleven days before trial, to a plea as well: a lesser count, two years' probation, his name on a list.
 
 He sold the pit that summer to a company out of Harrisburg and moved to Ohio, where his daughter was.
 
@@ -98,11 +98,11 @@ The evening was very still. Somewhere behind the house a screen door went.
 
 Rebecca Yoder stood in a yard in July with her hands in her apron.
 
-She had known, of course. She had known since the winter — since a woodshed in February, since a man saying *I'd rather be it here for a year with a reason*, since the walk out of the Fishers' barn in front of the whole district on the tenth of April with everybody watching and Daniel Beiler holding the door and saying *let them all see it, and get it over with.*
+She had known, of course. She had known since the winter, since a woodshed in February, since a man saying *I'd rather be it here for a year with a reason*, since the walk out of the Fishers' barn in front of the whole district on the tenth of April with everybody watching and Daniel Beiler holding the door and saying *let them all see it, and get it over with.*
 
 What surprised her was not the question.
 
-What surprised her was that there was nothing at all in the way. She had spent nine years with a thing standing between herself and every ordinary future, so solidly and for so long that she had stopped seeing it as a thing and had begun to think of it as the shape of the world. And it had gone. Not resolved — it would never be resolved — but moved, set down, put where she could walk around it.
+What surprised her was that there was nothing at all in the way. She had spent nine years with a thing standing between herself and every ordinary future, so solidly and for so long that she had stopped seeing it as a thing and had begun to think of it as the shape of the world. And it had gone. Not resolved, and it would never be resolved, but moved, set down, put where she could walk around it.
 
 "You'll have to ask my mother," she said.
 
@@ -134,7 +134,7 @@ The four families who had left the meal early did not, and Rebecca had known the
 
 Their first was a boy. Their second, two years after, was a girl.
 
-They named her Sarah, which was not the custom — the Amish do not name a child for the dead in that way, not usually, not so soon — and there was some talk about it, and Amos Stoltzfus said nothing about it at all, publicly or privately, which was how Rebecca knew what he thought.
+They named her Sarah, which was not the custom (the Amish do not name a child for the dead in that way, not usually, not so soon) and there was some talk about it, and Amos Stoltzfus said nothing about it at all, publicly or privately, which was how Rebecca knew what he thought.
 
 ---
 
@@ -152,9 +152,25 @@ And then it had gone, the way weather goes, and she could not have said in which
 
 The one who never came round was Sadie Beiler, who had washed the floors of the Yoder house on her knees for a week in the January that Sarah died. She came to the wedding, and shook Rebecca's hand, and said the right things. And in the eleven years after it she never once sat at the same table.
 
-Rebecca stopped minding it in the end, or nearly. She understood the arithmetic of it: Sadie had given the one thing she had to give, in the worst week of another woman's life, and had believed she was buying peace with it. To be told nine years later that the peace had been the wrong shape — that the floors had been washed over a hole — was not a thing you could simply be talked out of.
+Rebecca stopped minding it in the end, or nearly. She understood the arithmetic of it: Sadie had given the one thing she had to give, in the worst week of another woman's life, and had believed she was buying peace with it. To be told nine years later that the peace had been the wrong shape, that the floors had been washed over a hole, was not a thing you could simply be talked out of.
 
 *You take what people can give*, Naomi Esh said once, on the subject, at ninety-one, with her mouth full. *And you don't send it back because it wasn't enough.*
+
+---
+
+Emma Stoltzfus sent for her in the March of the third year, at four in the morning, for her fourth.
+
+Rebecca had wondered what she would do if that ever happened, and had settled on the answer that she would go, because there was no other answer a midwife had, and had also privately expected to be sent for somebody else.
+
+The labour was quick and unremarkable and the child was a boy. Afterward, in the grey of it, with the room tidied and the water carried out, Emma held her son and said, without looking up:
+
+"I've wanted to say something to you for two years and I've never once got it right in my head."
+
+"Then don't," Rebecca said. "It's four in the morning and you've a son."
+
+Emma Stoltzfus laughed, wetly, once.
+
+They never did discuss it, that year or any year after. Emma sent for her for the fifth as well, and the sixth, and that was the whole of what was ever said about it, and both of them understood it perfectly.
 
 ---
 
@@ -186,7 +202,7 @@ The pines moved.
 
 "I'm going to stop coming," Rebecca said.
 
-She had not known she was going to say that, and having said it she understood that she had decided it some time ago — perhaps in a kitchen, perhaps in a shanty in a field, perhaps standing in a barn doorway watching a truck go down a lane.
+She had not known she was going to say that, and having said it she understood that she had decided it some time ago: perhaps in a kitchen, perhaps in a shanty in a field, perhaps standing in a barn doorway watching a truck go down a lane.
 
 "Not because it's finished," she said. "It isn't and it won't be. Because I've a girl at home with your name and I'll not raise her in January."
 

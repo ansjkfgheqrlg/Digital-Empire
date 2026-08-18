@@ -2,7 +2,7 @@
 
 She managed four days.
 
-Four days of carrying it — in her apron in the morning, under the mattress at night, once, ridiculously, in the bottom of her midwife's bag on a call to the Hostetlers, because she could not stand the thought of it being in the house without her.
+Four days of carrying it: in her apron in the morning, under the mattress at night, once, ridiculously, in the bottom of her midwife's bag on a call to the Hostetlers, because she could not stand the thought of it being in the house without her.
 
 Four days of watching her mother move around the kitchen and thinking: *you might know something.*
 
@@ -104,4 +104,4 @@ They finished the wash. They ate dinner. Miriam said nothing else about it, that
 
 But she did not put the notebook back in the box.
 
-She took the muslin bundle out to the buggy shed on Tuesday night with a candle, and pried up the loose board under the workbench where she had hidden things as a girl — a novel, once, and a lipstick that Sarah had dared her to buy and that neither of them had ever had the courage to wear — and she put her sister's arithmetic underneath it, and stood the board back, and swept the sawdust over the join with her foot.
+She took the muslin bundle out to the buggy shed on Tuesday night with a candle, and pried up the loose board under the workbench where she had hidden things as a girl (a novel, once, and a lipstick that Sarah had dared her to buy and that neither of them had ever had the courage to wear) and she put her sister's arithmetic underneath it, and stood the board back, and swept the sawdust over the join with her foot.

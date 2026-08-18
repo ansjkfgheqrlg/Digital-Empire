@@ -108,16 +108,26 @@ def valida_lineette(testo: str) -> list[str]:
     inglese sono ortografia, non stile, e toglierli produrrebbe testo sgrammaticato. Quelli
     restano in carico a `valida_trattini`, che segnala e non blocca.
 
-    Si sostituiscono con: virgola, punto, punto e virgola, due punti o parentesi — cioe'
+    NON tocca nemmeno le lineette DENTRO le virgolette: nel discorso diretto la lineetta
+    ha una funzione vera che nessun altro segno fa, cioe' la parola tagliata a meta' —
+    "There's Efrain's boy's wife. She'd be — " quando qualcuno interrompe, e "I'll — it'll
+    be nothing" quando chi parla si corregge da solo. Quella non e' scrittura automatica,
+    e' come si trascrive una voce (deciso con Gael, 2026-08-18).
+
+    Si sostituiscono con: virgola, punto, punto e virgola, due punti o parentesi, cioe'
     riscrivendo la frase, non cambiando il segno."""
     errori: list[str] = []
     for n, riga in enumerate(testo.splitlines(), start=1):
         spoglia = riga.strip()
         if not spoglia or _RE_SEPARATORE.match(spoglia):
             continue
-        quante = len(_RE_LINEETTA.findall(spoglia))
+        # Spezzando sulle virgolette, i pezzi di posto pari sono narrazione e quelli di
+        # posto dispari sono parlato: si guarda solo la narrazione.
+        narrazione = "".join(spoglia.split('"')[::2])
+        quante = len(_RE_LINEETTA.findall(narrazione))
         if quante:
-            errori.append(f"riga {n}: {quante} lineetta/e lunghe — '{spoglia[:70]}'")
+            errori.append(f"riga {n}: {quante} lineetta/e lunghe fuori dal dialogo "
+                          f"— '{spoglia[:70]}'")
     if errori:
         logger.warning("valida_lineette: %d righe con lineette lunghe", len(errori))
     return errori

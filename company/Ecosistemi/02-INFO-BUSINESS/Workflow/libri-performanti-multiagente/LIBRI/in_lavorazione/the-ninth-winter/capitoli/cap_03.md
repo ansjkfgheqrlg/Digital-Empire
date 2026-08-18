@@ -12,7 +12,7 @@ Rebecca, washing her hands at the pump, went completely still.
 
 "What?"
 
-"I've been meaning." He was not looking at her. He was looking at the stove. "Nine years I've been meaning. My mother had them — she was the one cleared out the sewing room at your place, after. Your *mamm* couldn't do it and my mother did it, and there was a box she couldn't put on the fire, and she brought it here and put it in the attic, and then she died and I forgot it was there until I was up for the cradle in December."
+"I've been meaning." He was not looking at her. He was looking at the stove. "Nine years I've been meaning. My mother had them. She was the one cleared out the sewing room at your place, after. Your *mamm* couldn't do it and my mother did it, and there was a box she couldn't put on the fire, and she brought it here and put it in the attic, and then she died and I forgot it was there until I was up for the cradle in December."
 
 The pump handle was cold under Rebecca's hand.
 
@@ -54,7 +54,7 @@ And under that, wrapped in a square of muslin, a silver hair clip with a scrollw
 
 Rebecca sat back on her heels in the cold and looked at it lying in her palm.
 
-An Amish girl did not own that. Not because she could not — there was no rule, exactly, written anywhere, about hair clips — but because there was no place in the whole architecture of her life where such a thing could be worn, or shown, or explained. It was not *rumspringa* jewelry, the cheap loud stuff the boys bought at the mall and the girls kept in their coat pockets. It was worked silver, old, and it had been wrapped in muslin and put in a box under a pile of ordinary things.
+An Amish girl did not own that. Not because she could not (there was no rule, exactly, written anywhere, about hair clips) but because there was no place in the whole architecture of her life where such a thing could be worn, or shown, or explained. It was not *rumspringa* jewelry, the cheap loud stuff the boys bought at the mall and the girls kept in their coat pockets. It was worked silver, old, and it had been wrapped in muslin and put in a box under a pile of ordinary things.
 
 "That's not hers," said Enos Lapp, from the top of the stairs.
 
@@ -68,15 +68,15 @@ She put it back in the muslin. She put the muslin in her apron pocket, not the b
 
 Then she picked up the recipe book, and it fell open the way books do at the page you have opened most often.
 
-*Shoofly Pie — Mammi's.*
+*Shoofly Pie, Mammi's.*
 
 Half a cup molasses. Three quarters cup boiling water. And in the margin, in Sarah's round careful hand, in pencil:
 
-*11/2 — W.G. — 40*
+*11/2, W.G. 40*
 
 And below it:
 
-*11/9 — W.G. — 40*
+*11/9, W.G. 40*
 
 And below that, and below that, down the margin and onto the next page, dates and initials and numbers, in a recipe book, in a girl's handwriting, for eleven pages.
 

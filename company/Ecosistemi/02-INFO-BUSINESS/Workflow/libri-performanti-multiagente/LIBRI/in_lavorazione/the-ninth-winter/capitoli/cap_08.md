@@ -24,7 +24,7 @@ She sat on the bench by the door.
 
 "Enos was frightened and I wasn't. That's all a person is paying for, most of the time."
 
-The bishop laughed at that — a real one, short — and Rebecca allowed herself, for a moment, to think that this was going to be an ordinary visit.
+The bishop laughed at that (a real one, short) and Rebecca allowed herself, for a moment, to think that this was going to be an ordinary visit.
 
 Then Amos Stoltzfus said, "You've your sister's box."
 
@@ -48,7 +48,7 @@ She was doing arithmetic of a different kind now, and it was going badly.
 
 Enos Lapp had given her the box on Thursday of the week before. She had told her mother on the Monday. She had told nobody else. Not Katie, who had been asleep. Not Daniel. Not a soul.
 
-Eight days. And the bishop of Willow Creek knew about it, and knew it had come out of the Lapps' attic, in a district where a woman could not buy a bonnet in Gap without three people mentioning it — except that Rebecca had not bought a bonnet, she had carried a cardboard box down a ladder in an empty house with one man watching.
+Eight days. And the bishop of Willow Creek knew about it, and knew it had come out of the Lapps' attic, in a district where a woman could not buy a bonnet in Gap without three people mentioning it. Except that Rebecca had not bought a bonnet, she had carried a cardboard box down a ladder in an empty house with one man watching.
 
 *Enos told him.*
 
@@ -78,7 +78,7 @@ The bishop's face did not change, and she watched it not change with an attentio
 
 "Well." He picked up the harness again. "Then you've got something of her, which is more than you had a month ago, and I'm glad of it for you. Truly."
 
-He said it kindly. Rebecca believed the kindness — that was the trouble with Amos Stoltzfus, and always had been. The kindness was never false.
+He said it kindly. Rebecca believed the kindness. That was the trouble with Amos Stoltzfus, and always had been. The kindness was never false.
 
 "Now," he said. "The other thing."
 

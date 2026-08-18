@@ -2,7 +2,7 @@
 
 She handed it over on the last day of February, in the front room, with her mother sitting beside her on the settee.
 
-Marla Cruz had come alone, in her own car, and had brought a folder and a recorder and a form Rebecca had to sign, and the whole business took eleven minutes and was one of the strangest experiences of Rebecca's life — because she had carried the thing for six weeks and had expected the handing over to feel like something, and it felt like filling in a delivery note.
+Marla Cruz had come alone, in her own car, and had brought a folder and a recorder and a form Rebecca had to sign, and the whole business took eleven minutes and was one of the strangest experiences of Rebecca's life, because she had carried the thing for six weeks and had expected the handing over to feel like something, and it felt like filling in a delivery note.
 
 She put on the table: her work ledger, open at the pages after the Lapp baby's weight, with eleven pages of dates and initials copied in her own hand. The folded sheet from the toe of her boot. The Bible from the shed with its flyleaf covered in pencil.
 
@@ -10,7 +10,7 @@ She put on the table: her work ledger, open at the pages after the Lapp baby's w
 
 "You told me to."
 
-"People are told a great many things." The detective turned the ledger around and looked at the copied pages for a while without saying anything. Then she looked at the pages before them, and the pages after — the births, the weights, the times, nine years of a woman's small even handwriting running unbroken through the same book. "Ms. Yoder, do you understand what this is?"
+"People are told a great many things." The detective turned the ledger around and looked at the copied pages for a while without saying anything. Then she looked at the pages before them, and the pages after: the births, the weights, the times, nine years of a woman's small even handwriting running unbroken through the same book. "Ms. Yoder, do you understand what this is?"
 
 "It's a copy. You said the copy was worth less."
 

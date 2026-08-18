@@ -2,7 +2,7 @@
 
 The police came to Willow Creek about a generator.
 
-It was, in the end, a very ordinary crime. Somebody had been going through the outbuildings of the district for six weeks — a generator from the Hostetlers, a chop saw and two chains from Amos Kauffman's shop, a pressure washer, and finally a whole toolbox out of the back of Enos Lapp's spring wagon while he was at church.
+It was, in the end, a very ordinary crime. Somebody had been going through the outbuildings of the district for six weeks: a generator from the Hostetlers, a chop saw and two chains from Amos Kauffman's shop, a pressure washer, and finally a whole toolbox out of the back of Enos Lapp's spring wagon while he was at church.
 
 Nobody had reported any of it.
 

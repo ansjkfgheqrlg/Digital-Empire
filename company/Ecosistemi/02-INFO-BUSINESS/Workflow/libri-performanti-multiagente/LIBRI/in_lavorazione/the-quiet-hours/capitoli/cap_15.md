@@ -76,11 +76,11 @@ The corridor light hums.
 
 "There was someone else in the car," I say.
 
-"There were two of them, love." She frowns, not at me — at the memory, the way you frown at a thing you're holding up to the light. "They'd been shouting. Not screaming, mind. Shouting the way sisters do."
+"There were two of them, love." She frowns, not at me but at the memory, the way you frown at a thing you're holding up to the light. "They'd been shouting. Not screaming, mind. Shouting the way sisters do."
 
 I hear myself ask it. "What did they say?"
 
-And Mrs. Ferrante — eighty-two, dementia, a witness no lawyer would touch — says, in a completely different voice, a young voice, a mimic's voice, the voice of a woman repeating something she heard once through a hedge in the cold and has not been able to put down since:
+And Mrs. Ferrante, eighty-two, dementia, a witness no lawyer would touch, says, in a completely different voice, a young voice, a mimic's voice, the voice of a woman repeating something she heard once through a hedge in the cold and has not been able to put down since:
 
 "*Then get out. If you're that frightened of me, get out and walk.*"
 
@@ -126,7 +126,7 @@ I stay with her while she cries, because that is the job and because I did this 
 
 I want that written down plainly. I went into the room of an eighty-two-year-old woman with dementia at ten past two in the morning and I pushed her, deliberately, past the point where I could see it was distressing her, because I wanted something she had.
 
-There is a version of me — the one who has done this job for eleven years, the one who trains new starters and tells them that a person with dementia is a person first — who would have stopped at the second question.
+There is a version of me, the one who has done this job for eleven years, the one who trains new starters and tells them that a person with dementia is a person first, who would have stopped at the second question.
 
 I did not stop at the second question. I asked eleven.
 

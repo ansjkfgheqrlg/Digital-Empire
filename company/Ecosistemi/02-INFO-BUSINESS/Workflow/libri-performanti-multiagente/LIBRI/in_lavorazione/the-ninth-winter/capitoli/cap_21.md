@@ -6,7 +6,7 @@ Rebecca was in the barn.
 
 She heard the engine come up the lane and thought it was the milk hauler, who was late; and then it stopped in the yard and did not have the milk hauler's diesel rattle, and she came out of the stall with a fork in her hand and saw the truck standing in front of her mother's house, and Wilmer Graber getting down out of it in his canvas coat.
 
-Her whole body understood before she did. She felt it go through her — the drop, the cold in the hands — and she stood in the barn doorway and made herself finish the breath she was on.
+Her whole body understood before she did. She felt it go through her, the drop, the cold in the hands, and she stood in the barn doorway and made herself finish the breath she was on.
 
 *A light bar on the cab. Four thousand vehicles in this county.*
 
@@ -36,7 +36,7 @@ Rebecca set the fork against the doorframe, tines down, and kept her hands where
 
 It was, Rebecca thought, an extremely good answer.
 
-It was so good that she felt the ground move under her — because it accounted for everything. A deduction that started small and grew as the season went on and as more men came. A thing the men would not question because the explanation was true enough to be unanswerable.
+It was so good that she felt the ground move under her, because it accounted for everything. A deduction that started small and grew as the season went on and as more men came. A thing the men would not question because the explanation was true enough to be unanswerable.
 
 "Fifteen dollars a week," she said. "For nine months. From five men."
 
@@ -124,7 +124,7 @@ Wilmer Graber's face relaxed by some fraction so small that she would not have c
 
 He got into the truck and turned it in the yard and went down the lane, and Rebecca Yoder stood in the doorway and watched a dark pickup with a light bar on the cab go out onto the road, and did not move for a very long time.
 
-Then she went into the house, past her mother at the stove, up the stairs, and sat on the edge of her bed and wrote it all down — every word of it, in order, in her work ledger, with the date and the hour at the top of the page — while her hands were still steady enough to do it.
+Then she went into the house, past her mother at the stove, up the stairs, and sat on the edge of her bed and wrote it all down, every word of it, in order, in her work ledger, with the date and the hour at the top of the page, while her hands were still steady enough to do it.
 
 At the bottom she wrote:
 

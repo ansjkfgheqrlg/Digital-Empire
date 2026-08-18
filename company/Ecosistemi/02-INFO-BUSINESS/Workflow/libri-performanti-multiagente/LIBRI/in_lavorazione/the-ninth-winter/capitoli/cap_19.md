@@ -64,7 +64,7 @@ Rebecca reached into her bag.
 
 "I want to show you something," she said, "and I want to say first that I'm sorry to bring it into your house."
 
-She put down, on the kitchen table, the folded sheet of paper on which she had drawn it — because the clip itself was in a creek below the Millers' bridge, and Rebecca had spent an hour with a pencil getting the scrollwork right.
+She put down, on the kitchen table, the folded sheet of paper on which she had drawn it, because the clip itself was in a creek below the Millers' bridge, and Rebecca had spent an hour with a pencil getting the scrollwork right.
 
 Rosa Mendez looked at the drawing.
 

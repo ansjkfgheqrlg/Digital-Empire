@@ -2,7 +2,7 @@
 
 There is a protocol for this. There is a protocol for everything, which is the part of the job that keeps you upright when the rest of it doesn't.
 
-A patient with dementia says something that appears to reference real events. You do not engage with the content. You do not confirm, you do not deny, you do not chase. You orient gently — *it's Tuesday, love, it's two in the morning, you're at Ridgemont* — you check their obs, and you write it in the log without editorial.
+A patient with dementia says something that appears to reference real events. You do not engage with the content. You do not confirm, you do not deny, you do not chase. You orient gently, *it's Tuesday, love, it's two in the morning, you're at Ridgemont*, and you check their obs, and you write it in the log without editorial.
 
 I stand at the foot of Mrs. Ferrante's bed and I do none of it.
 
@@ -24,7 +24,7 @@ Nina's car was a blue Corsa with a dent in the passenger door from a bollard she
 
 "Which door, love?"
 
-And the light goes out of it. I watch it happen — I've watched it happen a thousand times, in this room and forty others, and it never stops being like seeing a tide go out fast. Her hands start working at the blanket hem. Her mouth softens.
+And the light goes out of it. I watch it happen. I've watched it happen a thousand times, in this room and forty others, and it never stops being like seeing a tide go out fast. Her hands start working at the blanket hem. Her mouth softens.
 
 "Is Roberto back with the car?"
 
@@ -54,7 +54,7 @@ She was living four hundred metres from where my sister died, on the night my si
 
 There's more in the file, and I read all of it, sitting on a plastic chair in a room that smells of toner at twenty past three in the morning.
 
-Her admission was expedited. That's unusual — the waiting list at Ridgemont runs eleven months and people die on it. Marguerite Ferrante went from referral to bed in nine days, and the reason is in a social work note dated the second of March last year:
+Her admission was expedited. That's unusual. The waiting list at Ridgemont runs eleven months and people die on it. Marguerite Ferrante went from referral to bed in nine days, and the reason is in a social work note dated the second of March last year:
 
 *Mrs F unable to remain at current address. Repeated night-time wandering, on two occasions found on the carriageway. Neighbour intervention. Risk assessed as high, immediate placement sought.*
 
@@ -66,7 +66,7 @@ An eighty-two-year-old woman with dementia, who lived four hundred metres from a
 
 There's a second note, from a different hand, undated:
 
-*Family GP reports Mrs F has become preoccupied with a road traffic incident in the vicinity of her property (Dec, previous year). Discussed with daughter of neighbour — no family of her own. Reassurance given. Preoccupation likely fixation secondary to cognitive decline; content not reality-based.*
+*Family GP reports Mrs F has become preoccupied with a road traffic incident in the vicinity of her property (Dec, previous year). Discussed with daughter of neighbour, no family of her own. Reassurance given. Preoccupation likely fixation secondary to cognitive decline; content not reality-based.*
 
 *Content not reality-based.*
 
@@ -128,7 +128,7 @@ I get home at half six and pull the blind and lie in the dark and my brain does 
 
 Here is what I know about that night, and I'm going to set it out plainly, because I think if I set it out plainly the shape of it will hold.
 
-Nina left mine at eleven thirty in a taxi. I know because I heard the taxi. I know because I stood at the window and watched her get in — I remember the specific way she got into cars, half a duck, half a fall.
+Nina left mine at eleven thirty in a taxi. I know because I heard the taxi. I know because I stood at the window and watched her get in. I remember the specific way she got into cars, half a duck, half a fall.
 
 I then washed up two pasta bowls and two wine glasses.
 
@@ -138,7 +138,7 @@ I then went to bed.
 
 At ten past one my phone rang and it was my mother, and my mother was making a sound I had never heard a person make.
 
-Between going to bed and my mother's phone call there is nothing. Not a gap — that's the wrong word, a gap implies edges. There's just the ordinary blankness of a night you slept through, the same blankness as every other night I'd slept through in thirty-four years, indistinguishable from all of them.
+Between going to bed and my mother's phone call there is nothing. Not a gap. That's the wrong word, a gap implies edges. There's just the ordinary blankness of a night you slept through, the same blankness as every other night I'd slept through in thirty-four years, indistinguishable from all of them.
 
 That's the whole problem with sleep. It doesn't leave a receipt.
 
@@ -146,7 +146,7 @@ At eleven in the morning I get up, because lying there has stopped being rest an
 
 There's a text from a number I don't have saved.
 
-*Ruth gave me your number. She says you've got eleven seconds you want cleaning up. I'm free most days, I'm retired, that's a joke that stops being funny around the third time. — Ken Boyd*
+*Ruth gave me your number. She says you've got eleven seconds you want cleaning up. I'm free most days, I'm retired, that's a joke that stops being funny around the third time. Ken Boyd*
 
 I look at it for a long moment.
 

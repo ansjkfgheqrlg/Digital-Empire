@@ -2,7 +2,7 @@
 
 The second summons was not casual.
 
-The first had come sideways, through Ammon at the gate, in the way of a man who would be glad if she stopped in. This one came on a Tuesday morning in the person of Amos Stoltzfus himself, in his own buggy, up the Yoders' lane, at nine o'clock — which meant that every soul on that road saw him go up it and would know by dinner that the bishop had driven out to Miriam Yoder's.
+The first had come sideways, through Ammon at the gate, in the way of a man who would be glad if she stopped in. This one came on a Tuesday morning in the person of Amos Stoltzfus himself, in his own buggy, up the Yoders' lane, at nine o'clock, which meant that every soul on that road saw him go up it and would know by dinner that the bishop had driven out to Miriam Yoder's.
 
 Rebecca watched him come from the kitchen window and knew, with a calm that surprised her, that this was the day.
 
@@ -16,7 +16,7 @@ Her mother knew too. Miriam had gone very quiet at the sink.
 
 He wanted the table.
 
-He sat where the bishop always sat, at the end nearest the door, and he took the coffee Miriam gave him and did not drink it, and he waited while she found something to do at the far end of the kitchen — not leaving, because a woman does not leave her own kitchen, and not sitting either.
+He sat where the bishop always sat, at the end nearest the door, and he took the coffee Miriam gave him and did not drink it, and he waited while she found something to do at the far end of the kitchen. Not leaving, because a woman does not leave her own kitchen, and not sitting either.
 
 "Rebecca," said Amos Stoltzfus. "You've been to Kinzers."
 
@@ -94,7 +94,7 @@ And Rebecca watched his face, which she had watched all her life, and saw someth
 
 "No," said Amos Stoltzfus. "It was not Daniel Beiler."
 
-It came out before he had decided to say it. She knew that. He knew it too — she saw him know it, saw the flicker of a man who has spent nineteen years never once being caught out and has just been caught out by a question he was not braced for.
+It came out before he had decided to say it. She knew that. He knew it too. She saw him know it, saw the flicker of a man who has spent nineteen years never once being caught out and has just been caught out by a question he was not braced for.
 
 He put both hands flat on the table.
 
@@ -122,7 +122,7 @@ He put both hands flat on the table.
 
 "Rebecca." Her mother's hand came down flat on the table. "Enough."
 
-And there was something in it — some pitch, some warning — that made Rebecca turn and look at her properly for the first time since the bishop had sat down.
+And there was something in it, some pitch, some warning, that made Rebecca turn and look at her properly for the first time since the bishop had sat down.
 
 Miriam Yoder was white to the lips.
 
@@ -156,7 +156,7 @@ Rebecca stood in her mother's kitchen with her hands still on the table.
 
 *Did not confess to killing anybody.*
 
-Which meant that whatever had happened in the shop with the door shut, it had been something else — something a man could confess and be forgiven for and go on living two miles away for nine years.
+Which meant that whatever had happened in the shop with the door shut, it had been something else: something a man could confess and be forgiven for and go on living two miles away for nine years.
 
 Something less than a death.
 

@@ -2,7 +2,7 @@
 
 Ruth Okonjo has an office that looks like someone described an office to her over the phone. Grey walls, a plant that is technically alive, a photograph turned at an angle that means it faces her and not the person in the visitor's chair.
 
-She remembers me. That's the first thing that unsettles me — I'd prepared for having to explain who I was, had the sentence ready (*my sister was the Kesselwood road, December, you took my statement twice*), and she came out to the front desk and said "Elena" before I'd stood up.
+She remembers me. That's the first thing that unsettles me. I'd prepared for having to explain who I was, had the sentence ready (*my sister was the Kesselwood road, December, you took my statement twice*), and she came out to the front desk and said "Elena" before I'd stood up.
 
 "You look tired," she says now, in the chair opposite, which from anyone else would be an insult and from her is just an observation entered into a record.
 
@@ -82,7 +82,7 @@ Okonjo's expression doesn't change but something behind it does.
 
 "The drive is nineteen."
 
-The room does something. Not spins — I'm not going to give you spinning rooms, I'm a nurse, I know what actually happens to bodies. The room does the thing where you become extremely aware of the chair.
+The room does something. Not spins. I'm not going to give you spinning rooms, I'm a nurse, I know what actually happens to bodies. The room does the thing where you become extremely aware of the chair.
 
 "Nobody told me that."
 
@@ -116,7 +116,7 @@ I have never had an answer for that.
 
 In the car park I sit in the driver's seat and don't start the engine and think about thirty-one minutes, and about what a person does with thirty-one minutes on the Kesselwood road at midnight in December, and about the fact that a mile before the bend there is a building with a sign you can read at fifty miles an hour.
 
-SECURE SELF STORAGE — 24HR ACCESS.
+SECURE SELF STORAGE, 24HR ACCESS.
 
 I drive there. I sit in the car park with the engine running for eleven minutes by the clock on the dashboard.
 

@@ -6,7 +6,7 @@ Rebecca sat where she always sat, fourth row, between her mother and old Naomi E
 
 Daniel Beiler sat at the very back.
 
-Not with the married men, because he was not married. Not with the young men, because he was thirty-two and had been gone nine years and did not belong there either. At the back, alone, on the end of the bench, in a coat that was the right color and the wrong cut — bought or borrowed, made by someone who knew what a Plain coat looked like but not how it was supposed to sit.
+Not with the married men, because he was not married. Not with the young men, because he was thirty-two and had been gone nine years and did not belong there either. At the back, alone, on the end of the bench, in a coat that was the right color and the wrong cut, bought or borrowed, made by someone who knew what a Plain coat looked like but not how it was supposed to sit.
 
 The singing started. The *Loblied*, the way it always was, the second hymn, the one that took twenty minutes because you held each syllable until it turned into something that had stopped being a word.
 
@@ -22,11 +22,11 @@ She got it back.
 
 At the meal afterward, the community did what a community does, which is nothing, very deliberately, in a way that everyone can see.
 
-Nobody refused to speak to Daniel Beiler. That was not the way. The bann had never been laid on him — he had left before baptism, in the year of his *rumspringa*, which meant that technically, doctrinally, in the eyes of the *Ordnung* and of God, he had done nothing that required shunning. He had simply gone out and not come back, and there were young men who did that in every district in Lancaster County, and their mothers wept and their fathers did not speak of it and life continued.
+Nobody refused to speak to Daniel Beiler. That was not the way. The bann had never been laid on him. He had left before baptism, in the year of his *rumspringa*, which meant that technically, doctrinally, in the eyes of the *Ordnung* and of God, he had done nothing that required shunning. He had simply gone out and not come back, and there were young men who did that in every district in Lancaster County, and their mothers wept and their fathers did not speak of it and life continued.
 
 So nobody refused to speak to him. They simply had a great deal to do.
 
-Rebecca watched it from the women's table, over the heads of forty people eating bread and pickles and cold roast beef off borrowed plates. She watched Daniel stand at the edge of the men with his hands at his sides. She watched three separate men greet him — pleasantly, briefly, and then remember something. She watched him accept it without any expression at all, which told her more about the last nine years than anything else could have.
+Rebecca watched it from the women's table, over the heads of forty people eating bread and pickles and cold roast beef off borrowed plates. She watched Daniel stand at the edge of the men with his hands at his sides. She watched three separate men greet him, pleasantly, briefly, and then remember something. She watched him accept it without any expression at all, which told her more about the last nine years than anything else could have.
 
 "He's thinner," said Naomi Esh, at a volume calibrated for her own bad ear.
 
@@ -64,7 +64,7 @@ It was not a question, and Rebecca did not answer it, because the answer was: ye
 
 They came up their own lane. Rebecca got down to open the gate.
 
-When she got back up, her mother was looking straight ahead at the house, and she said, in a completely different voice — a small one, an old one, one Rebecca had heard maybe three times in her life:
+When she got back up, her mother was looking straight ahead at the house, and she said, in a completely different voice, a small one, an old one, one Rebecca had heard maybe three times in her life:
 
 "I don't want it started again, Rebecca."
 

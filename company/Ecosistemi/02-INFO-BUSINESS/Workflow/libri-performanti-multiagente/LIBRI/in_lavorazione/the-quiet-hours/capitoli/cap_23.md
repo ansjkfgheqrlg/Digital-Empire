@@ -4,7 +4,7 @@ The fourteenth of December falls on a Saturday.
 
 Two years.
 
-My mother organises it, which is itself remarkable — for two years my mother has organised nothing, has answered the phone on Sundays and put it down after eleven minutes, has kept a house so tidy you could tell nobody was living in it.
+My mother organises it, which is itself remarkable, because for two years my mother has organised nothing, has answered the phone on Sundays and put it down after eleven minutes, has kept a house so tidy you could tell nobody was living in it.
 
 She rings in November and says: "I thought we'd have people. At the house. Nothing — not a service. Just people. She'd have hated a service."
 

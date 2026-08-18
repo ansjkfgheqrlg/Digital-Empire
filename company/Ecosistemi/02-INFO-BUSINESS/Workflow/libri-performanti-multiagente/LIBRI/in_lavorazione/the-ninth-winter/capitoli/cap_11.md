@@ -8,7 +8,7 @@ Barbara Zook was seventy-one and had run the stand on Route 340 for thirty-four 
 
 "There's always one." Barbara set the lamp on the table in the back room and began pulling the boxes down off the shelf with the flat competence of a woman half her age. "I've every year since 'ninety-one. Elam says burn them. I say when I'm dead he can burn what he likes."
 
-Rebecca had come in on a pretext that had lasted about ninety seconds — Lydia's ankles, the cousin coming in April, the general question of who was expecting — before Barbara Zook had looked at her over her glasses and said, "You're not here about ankles."
+Rebecca had come in on a pretext that had lasted about ninety seconds (Lydia's ankles, the cousin coming in April, the general question of who was expecting) before Barbara Zook had looked at her over her glasses and said, "You're not here about ankles."
 
 And Rebecca, who had been in the district her whole life and knew exactly how far she would get lying to this particular woman, had said: "No. I'm here about Sarah."
 
@@ -24,22 +24,22 @@ Barbara turned it around on the table so it faced Rebecca and opened it at June.
 
 The margin ran down the page in Barbara Zook's small square hand.
 
-*Th — S*
-*Sa — S, M*
-*Th — S*
-*Sa — S, M*
+*Th: S*
+*Sa: S, M*
+*Th: S*
+*Sa: S, M*
 
-Rebecca turned the page. July. The same. August: the same, the same, the same, and then —
+Rebecca turned the page. July. The same. August: the same, the same, the same, and then:
 
 She stopped.
 
-*Th 8/17 — S*
+*Th 8/17: S*
 
 And after it, for the rest of August, and September, and October, and November, and December, every Thursday in the margin was blank or held an *M*, and Sarah's initial did not appear on a Thursday again.
 
 Not once.
 
-It appeared on Saturdays. All through the autumn — *Sa — S, M*, *Sa — S, M*, right through to the middle of December when the stand shut for the winter. She had gone on working. She had simply stopped working Thursdays.
+It appeared on Saturdays. All through the autumn: *Sa: S, M*, *Sa: S, M*, right through to the middle of December when the stand shut for the winter. She had gone on working. She had simply stopped working Thursdays.
 
 Rebecca put her finger on the seventeenth of August and did not move it.
 
@@ -85,7 +85,7 @@ Not frightened. Finished with something.
 
 Rebecca wrote it in her ledger, under the copied pages, in the space she had left blank.
 
-*8/17 — paid out to S — 22.50 — asked for it that night.*
+*8/17, paid out to S, 22.50. Asked for it that night.*
 
 ---
 
@@ -155,7 +155,7 @@ A girl who has decided something.
 
 Rebecca turned in at her own lane and got down to open the gate, and stood for a second in the cold with her hand on the wet wood.
 
-Five months. From the seventeenth of August to the sixteenth of January. Five months in which Sarah Yoder had done nothing at all, so far as anyone had ever known — had gone to church, and folded quilts on Saturdays, and been quiet at supper on the fifteenth, and asked her sister a question about their mother and then said *never mind*.
+Five months. From the seventeenth of August to the sixteenth of January. Five months in which Sarah Yoder had done nothing at all, so far as anyone had ever known. She had gone to church, and folded quilts on Saturdays, and been quiet at supper on the fifteenth, and asked her sister a question about their mother and then said *never mind*.
 
 Five months was not the shape of a girl who had run away from something.
 

@@ -1,6 +1,6 @@
 # Report di consegna — The Quiet Hours
 
-_Generato il 18/08/2026 alle 10:14_
+_Generato il 18/08/2026 alle 10:56_
 
 ---
 
@@ -10,7 +10,7 @@ _Generato il 18/08/2026 alle 10:14_
 - **Autore**: Digital Empire
 - **Nicchia**: psychological thriller unreliable narrator
 - **Capitoli**: 24
-- **Parole**: 37.279
+- **Parole**: 37.150
 - **Pagine reali** (contate sul PDF impaginato): **115**
 - **Formato**: 6.0x9.0 pollici
 
@@ -51,6 +51,7 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260807_155815.json`
 
 ## Controlli automatici eseguiti
 
+- ✅ **Lineette lunghe (non devono esserci)**: nessun problema
 - ⚠️ **Trattini nel testo (da rivedere a occhio)**: 29 da verificare
     - riga 214: trattino in 'not-having' — contesto: 'That's the part. Around week seven you close the last account and ther'
     - riga 214: trattino in 'anything-to' — contesto: 'That's the part. Around week seven you close the last account and ther'

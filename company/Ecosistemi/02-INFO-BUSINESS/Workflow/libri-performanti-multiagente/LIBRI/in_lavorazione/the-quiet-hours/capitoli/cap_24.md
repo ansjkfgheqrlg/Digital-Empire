@@ -14,7 +14,7 @@ The new one on Farrow Street is called Mrs. Adeyemi and she is not reluctant to 
 
 So I sit down at her kitchen table and I explain it. All of it, twice, with a pen and the back of an envelope.
 
-It takes forty minutes I do not have. There are meetings about this — about "capacity" and "visit duration" and a phrase I have come to hate, which is "scope of role."
+It takes forty minutes I do not have. There are meetings about this: about "capacity" and "visit duration" and a phrase I have come to hate, which is "scope of role."
 
 I have started, in these meetings, to say things out loud.
 
@@ -22,7 +22,7 @@ That's new. For eleven years at Ridgemont I was the person who did the thing pro
 
 It doesn't change anything. It goes in the minutes.
 
-Priti says this is what she means by *the wanting to not know* being the thing to watch — that the opposite of it isn't confessing, it's just saying ordinary true things at ordinary volume, on Thursdays, in rooms where it's inconvenient.
+Priti says this is what she means by *the wanting to not know* being the thing to watch: that the opposite of it isn't confessing, it's just saying ordinary true things at ordinary volume, on Thursdays, in rooms where it's inconvenient.
 
 ---
 
@@ -34,11 +34,11 @@ I sleep six hours, most nights. Some nights four. In the run-up to December it g
 
 There are practical things, and nobody writes about the practical things, so I will.
 
-I gave my car keys to Adrian for four months. Not symbolically — he kept them in his flat and I knocked on his door in the morning when I needed the car, which is humiliating for about three weeks and then becomes as ordinary as anything else.
+I gave my car keys to Adrian for four months. Not symbolically. He kept them in his flat and I knocked on his door in the morning when I needed the car, which is humiliating for about three weeks and then becomes as ordinary as anything else.
 
 There is a bolt on the inside of my front door, high up, at a height I have to consciously reach for. Dr. Iyer's suggestion. The theory is that a sleeping brain will do a familiar action and not an unfamiliar one, and the theory has held so far.
 
-I do not work nights. That's permanent. It cost me eleven years of seniority and about six thousand a year, and it is not negotiable, and when the agency rings — they always ring, they are always short — I say no in the first sentence.
+I do not work nights. That's permanent. It cost me eleven years of seniority and about six thousand a year, and it is not negotiable, and when the agency rings, and they always ring, they are always short, I say no in the first sentence.
 
 Twice in the first year I woke up somewhere I didn't remember going. Once in the hall. Once in the car, on the drive, with the engine off and the keys in my lap.
 
@@ -58,7 +58,7 @@ There's a fence post I know. There's a stretch of new barrier that has weathered
 
 I stand at the barrier for a while.
 
-The council put a sign up in the spring. SLOW — BEND. It is the third sign on that stretch and it will not make any difference to anybody, and I know because I sat in a room in February and asked for it, along with a request for the barrier to be extended forty metres, which was refused on cost.
+The council put a sign up in the spring. SLOW, BEND. It is the third sign on that stretch and it will not make any difference to anybody, and I know because I sat in a room in February and asked for it, along with a request for the barrier to be extended forty metres, which was refused on cost.
 
 I did that properly, in daylight, with a form. It took four months and two meetings and I was polite in both of them.
 
@@ -70,7 +70,7 @@ That's the only useful thing I have found to do with any of it, in the end. It i
 
 I don't talk to her. There's nothing there to talk to; I've been very consistent about that and I'm not going to lose my nerve at the end.
 
-But I stand there, and I hold in my head the four minutes and eleven seconds I still don't have and probably never will — and the thing I have come round to, after two years and a woman called Priti and a great deal of arguing, is that the four minutes were probably not important.
+But I stand there, and I hold in my head the four minutes and eleven seconds I still don't have and probably never will, and the thing I have come round to, after two years and a woman called Priti and a great deal of arguing, is that the four minutes were probably not important.
 
 I know what my sister was like. I know exactly what she'd have said, because she said it to me on a verge eleven seconds earlier and it is carved into me: *if you're that frightened of me, get out and walk.*
 
@@ -92,7 +92,7 @@ Priti asked me, in about the ninth month, what I thought forgiveness would look 
 
 I've thought about that a lot.
 
-I don't think what happened to me was that I was forgiven. Nobody had the standing to do it — not my mother, not Ruth Okonjo, not Adrian, and certainly not me.
+I don't think what happened to me was that I was forgiven. Nobody had the standing to do it: not my mother, not Ruth Okonjo, not Adrian, and certainly not me.
 
 What happened is smaller and more useful. I stopped requiring myself to have been a better sister than I was, at midnight, in December, in a car with a woman I loved and was furious with.
 
@@ -124,13 +124,13 @@ I go back to the car.
 
 I drive home before it gets dark.
 
-There's a piano going when I come up the stairs — scales, badly, because his eleven o'clock has clearly moved to a five o'clock and is no better for it.
+There's a piano going when I come up the stairs: scales, badly, because his eleven o'clock has clearly moved to a five o'clock and is no better for it.
 
 I let myself in. The photograph of the two of us at Whitby in 2003 is on the hall table where anybody can see it, curled at one corner, in a frame that doesn't match anything.
 
 I put the kettle on. I make the tea. I drink it, this time.
 
-And at eleven o'clock I go to bed, and I lie down in the dark, and the flat does its noises — the fridge, the radiator, the particular frequency in the walls at that hour that I can still hear whenever I choose to listen for it.
+And at eleven o'clock I go to bed, and I lie down in the dark, and the flat does its noises: the fridge, the radiator, the particular frequency in the walls at that hour that I can still hear whenever I choose to listen for it.
 
 I don't listen for it.
 

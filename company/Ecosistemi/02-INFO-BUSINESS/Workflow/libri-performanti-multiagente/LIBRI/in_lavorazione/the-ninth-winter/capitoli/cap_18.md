@@ -4,7 +4,7 @@ It came out on a Sunday, which was not a church Sunday, in the long empty aftern
 
 Rebecca had spent three days not asking.
 
-She had decided that she would ask on the Monday, in the daylight, at the wash, on her feet — and then her mother came into the front room at two o'clock in the afternoon with her hands still wet from something and said, without any preamble at all:
+She had decided that she would ask on the Monday, in the daylight, at the wash, on her feet. And then her mother came into the front room at two o'clock in the afternoon with her hands still wet from something and said, without any preamble at all:
 
 "It was me."
 
@@ -142,7 +142,7 @@ Miriam Yoder went very still.
 
 "Three."
 
-Something went across her mother's face — a great many things at once, and Rebecca watched them go, and could not name most of them. Grief. Anger. And underneath, unmistakably, in a woman who had just admitted to burning her daughter's handwriting in a stove:
+Something went across her mother's face, a great many things at once, and Rebecca watched them go, and could not name most of them. Grief. Anger. And underneath, unmistakably, in a woman who had just admitted to burning her daughter's handwriting in a stove:
 
 Relief.
 

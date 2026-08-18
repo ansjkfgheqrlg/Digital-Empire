@@ -82,7 +82,7 @@ So the list has one name on it, and I have known that since I sat down, and ever
 
 The shoebox first.
 
-Nina's things. Not the important ones — not her jewellery, not her laptop, none of the objects the family divided in that awful week. Small things. A hair tie. A lipstick worn down to the metal. Three ticket stubs. A hotel keycard. A photograph of the two of us on a beach at Whitby in about 2003, curled at one corner.
+Nina's things. Not the important ones: not her jewellery, not her laptop, none of the objects the family divided in that awful week. Small things. A hair tie. A lipstick worn down to the metal. Three ticket stubs. A hotel keycard. A photograph of the two of us on a beach at Whitby in about 2003, curled at one corner.
 
 And underneath: her house keys, on the ring with the enamel puffin she bought in Iceland.
 
@@ -96,7 +96,7 @@ The first page has a date at the top: **17 January**. That's five weeks after sh
 
 The handwriting is mine.
 
-Not similar to mine. Mine — the specific way I make a lowercase g with the tail that doesn't close, the way I cross a t high, the leftward slant I've had since school and hated since school.
+Not similar to mine. Mine. The specific way I make a lowercase g with the tail that doesn't close, the way I cross a t high, the leftward slant I've had since school and hated since school.
 
 The entry says:
 
@@ -114,13 +114,13 @@ I turn the page.
 
 M.F.
 
-Page after page. Dates through the winter and spring and summer of last year, into the autumn, into January of this one. Some entries are three lines. Some run over. All of them are mine, and I have no memory — not a fragment, not a shadow — of writing a single word.
+Page after page. Dates through the winter and spring and summer of last year, into the autumn, into January of this one. Some entries are three lines. Some run over. All of them are mine, and I have no memory, not a fragment, not a shadow, of writing a single word.
 
 I sit on that floor and I read for a long time, and what gets me is not the content.
 
 It's the handwriting on page forty.
 
-Because on page forty the writing changes. Not the hand — it's still mine — but the *pressure*. Up to page thirty-nine everything is written in the neat, small, slightly cramped way I write notes at work, the way you write when you might have to read it back to a coroner.
+Because on page forty the writing changes. Not the hand, which is still mine, but the *pressure*. Up to page thirty-nine everything is written in the neat, small, slightly cramped way I write notes at work, the way you write when you might have to read it back to a coroner.
 
 From page forty on, the pen goes through the paper in places.
 

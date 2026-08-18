@@ -62,7 +62,7 @@ Somewhere in the third night I go looking for the list.
 
 *Groceries.* Forty-one items. The things that didn't sit right.
 
-It isn't there. Not deleted-and-recoverable, not in the archive — the note is gone, and the app tells me in its cheerful way that it was last edited eleven days ago, and eleven days ago is the night the voicemail arrived.
+It isn't there. Not deleted-and-recoverable, not in the archive. The note is gone, and the app tells me in its cheerful way that it was last edited eleven days ago, and eleven days ago is the night the voicemail arrived.
 
 I stand in the kitchen at four in the morning and I understand that some version of me has closed the file.
 
@@ -78,7 +78,7 @@ At some point on the fourth night I am standing in the kitchen and the notebook 
 
 The notebook is in a police evidence bag in a building on the other side of the city.
 
-I stand in my kitchen at — I don't know, the clock has stopped meaning anything, let's say some hour — and I look at a spiral-bound A5 notebook that is not there, and I think, quite calmly: right. This is the bit where I go to hospital.
+I stand in my kitchen at, I don't know, the clock has stopped meaning anything, let's say some hour, and I look at a spiral-bound A5 notebook that is not there, and I think, quite calmly: right. This is the bit where I go to hospital.
 
 And then I pick it up.
 
@@ -108,7 +108,7 @@ And there is a woman standing on the verge about thirty feet ahead of the car, i
 
 She has my hair, tied the way I tie it.
 
-I don't move. I don't blink. I sit with my hands at ten and two and I look at her, and she does not turn around, and I say — and I hear my own voice, thin and reasonable in the closed car — I say:
+I don't move. I don't blink. I sit with my hands at ten and two and I look at her, and she does not turn around, and I say, and I hear my own voice, thin and reasonable in the closed car, I say:
 
 "I'm not doing this. You're not there."
 
@@ -122,4 +122,4 @@ When I look back at the verge the woman is gone, and my headlights are lighting 
 
 I put the car in gear.
 
-And instead of driving home, I drive the three hundred metres to the bend, and I stop on the verge with the hazards on — *click, click, click,* one beat a second, the sound under eleven seconds of nothing — and I get out.
+And instead of driving home, I drive the three hundred metres to the bend, and I stop on the verge with the hazards on, *click, click, click,* one beat a second, the sound under eleven seconds of nothing, and I get out.
