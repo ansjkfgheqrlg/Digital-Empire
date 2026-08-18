@@ -123,6 +123,26 @@ Secondo paragrafo.
 - **Prima di ogni blocco rileggo `outline.md` + `riassunti.md`** — la continuità viene da lì,
   non dalla memoria della sessione
 - Ogni capitolo chiude su un gancio che tira al successivo
+- **MAI lineette lunghe: `—` `–` `--`.** Regola non negoziabile di Gael (2026-08-18), e il
+  controllo `valida_lineette` **blocca la consegna** se ce ne sono. Sono la firma più
+  riconoscibile della scrittura automatica: su Amazon "sembra scritto dall'AI" è la
+  recensione che affonda un titolo.
+  Si tolgono **riscrivendo la frase**, non sostituendo il segno con un altro segno:
+
+  | invece di | scrivi |
+  |---|---|
+  | `Rebecca è ostetrica — mani ferme — e conta i giorni` | `Rebecca è ostetrica, mani ferme, e conta i giorni` |
+  | `Lui si voltò — non c'era nessuno` | `Lui si voltò. Non c'era nessuno.` |
+  | `Una cosa sola contava — la verità` | `Una cosa sola contava: la verità` |
+  | `Aveva ragione — o almeno lo credeva` | `Aveva ragione (o almeno lo credeva)` |
+
+  **I trattini delle parole composte restano**: `twenty-nine`, `hand-lettered`, `chow-chow`
+  in inglese sono ortografia, non stile. Toglierli fa sembrare il libro scritto male.
+  Controllo rapido su un blocco appena scritto:
+  ```
+  grep -c "—" LIBRI/in_lavorazione/<slug>/capitoli/cap_*.md
+  ```
+  Deve dare **0 ovunque**. Verificalo a ogni blocco, non a fine libro.
 
 Controllo l'avanzamento quando serve:
 ```

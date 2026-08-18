@@ -289,7 +289,17 @@ class BookProject:
         # che fa lo spelling). Il difetto vero — parole spezzate dall'impaginazione — si
         # cerca sul PDF, dove nasce (`valida_sillabazione_pdf`).
         trattini = validators.valida_trattini(testo_completo)
-        esiti = {"Trattini nel testo (da rivedere a occhio)": trattini}
+        # Le lineette lunghe invece BLOCCANO (regola di Gael, 2026-08-18): sono la firma
+        # piu' riconoscibile della scrittura automatica, e si tolgono riscrivendo la frase.
+        lineette = validators.valida_lineette(testo_completo)
+        esiti = {
+            "Lineette lunghe (non devono esserci)": lineette,
+            "Trattini nel testo (da rivedere a occhio)": trattini,
+        }
+        if lineette:
+            print(f"[assembla] {len(lineette)} righe contengono lineette lunghe (— – --). "
+                  f"Vanno tolte riscrivendo la frase: virgola, punto, punto e virgola o "
+                  f"parentesi. Elenco completo nel REPORT.")
         if trattini:
             print(f"[assembla] {len(trattini)} trattini segnalati nel testo — controlla il "
                   f"REPORT: in inglese molti sono corretti, non vanno cambiati alla cieca.")
@@ -346,8 +356,9 @@ class BookProject:
             minimo = config.TARGET_PAGE_COUNT - config.TARGET_PAGE_COUNT_TOLERANCE
             if pagine_reali and pagine_reali < minimo:
                 verdetto.blocca(f"Pagine reali {pagine_reali}, il minimo per il target e' {minimo}")
+            bloccanti = ("Titolo sulla copertina", "Lineette lunghe")
             for etichetta, voci in esiti.items():
-                gravita = "bloccante" if etichetta.startswith("Titolo sulla copertina") else "avviso"
+                gravita = "bloccante" if etichetta.startswith(bloccanti) else "avviso"
                 # Un avviso "verifica a mano" (dipendenza assente) non e' un difetto del
                 # libro: non deve bloccare, ma deve restare scritto.
                 voci_vere = [v for v in voci if not v.startswith("VERIFICA A MANO")]

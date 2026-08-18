@@ -94,6 +94,35 @@ def valida_trattini(testo: str) -> list[str]:
     return errori
 
 
+_RE_LINEETTA = re.compile(r"[—–]|(?<= )--(?= )")
+
+
+def valida_lineette(testo: str) -> list[str]:
+    """Cerca le LINEETTE LUNGHE (— em dash, – en dash, ' -- ') e le boccia tutte.
+
+    Regola di Gael, 2026-08-18: nei libri non ci devono essere. Sono la firma piu'
+    riconoscibile della scrittura automatica — un lettore abituale di narrativa le nota, e
+    su Amazon "sembra scritto dall'AI" e' una recensione che affonda un titolo.
+
+    NON tocca i trattini delle parole composte ('twenty-nine', 'hand-lettered'): in
+    inglese sono ortografia, non stile, e toglierli produrrebbe testo sgrammaticato. Quelli
+    restano in carico a `valida_trattini`, che segnala e non blocca.
+
+    Si sostituiscono con: virgola, punto, punto e virgola, due punti o parentesi — cioe'
+    riscrivendo la frase, non cambiando il segno."""
+    errori: list[str] = []
+    for n, riga in enumerate(testo.splitlines(), start=1):
+        spoglia = riga.strip()
+        if not spoglia or _RE_SEPARATORE.match(spoglia):
+            continue
+        quante = len(_RE_LINEETTA.findall(spoglia))
+        if quante:
+            errori.append(f"riga {n}: {quante} lineetta/e lunghe — '{spoglia[:70]}'")
+    if errori:
+        logger.warning("valida_lineette: %d righe con lineette lunghe", len(errori))
+    return errori
+
+
 # --------------------------------------------------------------------------- #
 # Numerazione pagine
 # --------------------------------------------------------------------------- #

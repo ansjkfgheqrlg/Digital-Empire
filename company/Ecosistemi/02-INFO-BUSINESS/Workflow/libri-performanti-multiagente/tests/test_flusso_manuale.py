@@ -376,3 +376,34 @@ def test_copertina_dentro_il_pacchetto_sopravvive_alla_riconsegna(pronti_isolati
     assert secondo.cover_dest.exists(), "la copertina e' stata distrutta dalla sostituzione"
     assert secondo.cover_dest.stat().st_size > 0
     assert secondo.manuscript_dest.read_text() == "testo"
+
+
+# --------------------------------------------------------------------------- #
+# Lineette lunghe: regola di Gael 2026-08-18, blocca la consegna
+# --------------------------------------------------------------------------- #
+
+def test_lineetta_lunga_viene_trovata():
+    from engine import validators
+    for segno in ("\u2014", "\u2013", " -- "):
+        esito = validators.valida_lineette(f"Rebecca si volto{segno}non c'era nessuno.")
+        assert esito, f"la lineetta {segno!r} deve essere trovata"
+
+
+def test_trattino_di_parola_composta_non_e_una_lineetta():
+    """In inglese 'twenty-nine' e 'hand-lettered' sono ortografia: toglierli produrrebbe
+    testo sgrammaticato. Se ne occupa valida_trattini, che segnala e non blocca."""
+    from engine import validators
+    testo = "She had counted twenty-nine days and read the hand-lettered sign."
+    assert validators.valida_lineette(testo) == []
+
+
+def test_riga_di_separazione_non_e_una_lineetta():
+    from engine import validators
+    assert validators.valida_lineette("---") == []
+
+
+def test_lineette_contate_per_riga():
+    from engine import validators
+    esito = validators.valida_lineette("uno \u2014 due \u2014 tre\nquattro, cinque")
+    assert len(esito) == 1, "una sola riga contiene lineette"
+    assert "2 lineetta" in esito[0]

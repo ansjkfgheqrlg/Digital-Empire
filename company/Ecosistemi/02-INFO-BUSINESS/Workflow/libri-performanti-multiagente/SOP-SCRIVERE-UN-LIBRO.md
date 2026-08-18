@@ -107,6 +107,12 @@ Secondo paragrafo.
 - **Controllare la lunghezza già al primo blocco**, non a fine libro: se i primi 4 capitoli
   stanno a 1.000 parole, il libro chiuderà a ~24.000 e non c'è modo di recuperare senza
   riscriverlo.
+- **MAI lineette lunghe: `—` `–` `--`** (regola di Gael, 2026-08-18). La consegna **blocca**
+  se ce ne sono: sono la firma più riconoscibile della scrittura automatica. Si tolgono
+  riscrivendo la frase (virgola, punto, punto e virgola, due punti, parentesi), non
+  scambiando un segno con un altro. I trattini delle parole composte (`twenty-nine`,
+  `hand-lettered`) **restano**: in inglese sono ortografia. Verifica a ogni blocco con
+  `grep -c "—" capitoli/cap_*.md` — deve dare 0 ovunque.
 - Dopo ogni blocco, aggiornare `riassunti.md` con 2-3 righe per capitolo scritto: è la
   memoria del libro, permette di riprendere in una sessione nuova senza rileggere tutto.
 - Prima di scrivere un blocco nuovo, **rileggere `outline.md` + `riassunti.md`**: bastano

@@ -183,8 +183,15 @@ Il codice poi lo porta a norma KDP: ritaglio 2:3, upscale a 1800×2700 (6×9in @
 | 2 | `kdp_formatter.count_words_and_pages()` | parole entro il target | **sì** |
 | 3 | `book_output_manager.conta_pagine_pdf()` | **pagine vere lette dal PDF** ≥ 115 | **sì** |
 | 4 | `validators.valida_copertina_testo()` | il titolo è leggibile (OCR) | **sì** |
-| 5 | `validators.valida_numerazione_pagine()` | numeri sempre in alto o sempre in basso | no, segnala |
-| 6 | `validators.valida_sillabazione_pdf()` | parole spezzate a fine riga | no, segnala |
+| 5 | `validators.valida_lineette()` | **nessuna lineetta lunga `—` `–` `--`** | **sì** |
+| 6 | `validators.valida_numerazione_pagine()` | numeri sempre in alto o sempre in basso | no, segnala |
+| 7 | `validators.valida_sillabazione_pdf()` | parole spezzate a fine riga | no, segnala |
+
+> Il controllo 5 è una regola di Gael (2026-08-18): le lineette lunghe sono la firma più
+> riconoscibile della scrittura automatica, e su Amazon "sembra scritto dall'AI" è la
+> recensione che affonda un titolo. Si tolgono **riscrivendo la frase**, non scambiando il
+> segno. I trattini delle parole composte (`twenty-nine`, `hand-lettered`) **restano**: in
+> inglese sono ortografia, e li tratta il controllo 7, che segnala e non blocca.
 
 > Il controllo 3 esiste per un bug reale ripetuto due volte: il vecchio workflow dichiarava
 > "120 pagine" e il PDF ne aveva 21. Ora le pagine si **contano rileggendo il PDF impaginato**,
