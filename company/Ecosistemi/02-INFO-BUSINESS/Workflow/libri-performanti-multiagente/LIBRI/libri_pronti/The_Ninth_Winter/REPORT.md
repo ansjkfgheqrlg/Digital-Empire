@@ -1,6 +1,6 @@
 # Report di consegna — The Ninth Winter
 
-_Generato il 18/08/2026 alle 10:55_
+_Generato il 19/08/2026 alle 14:05_
 
 ---
 
@@ -51,6 +51,7 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260813_175812.json`
 
 ## Controlli automatici eseguiti
 
+- ✅ **Capitoli interrotti a meta'**: nessun problema
 - ✅ **Lineette lunghe (non devono esserci)**: nessun problema
 - ⚠️ **Trattini nel testo (da rivedere a occhio)**: 14 da verificare
     - riga 142: trattino in 'not-talking' — contesto: 'That was not unusual. Miriam Yoder had never been a talker, and in the'

@@ -134,6 +134,56 @@ def valida_lineette(testo: str) -> list[str]:
 
 
 # --------------------------------------------------------------------------- #
+# Capitolo interrotto a meta'
+# --------------------------------------------------------------------------- #
+
+# Un capitolo finito chiude cosi': punteggiatura forte, eventualmente seguita da una
+# virgoletta di chiusura o da un asterisco di corsivo.
+_RE_CHIUSURA_VERA = re.compile(r"""[.!?]["'\u201d\u00bb*]*\s*$|["'\u201d\u00bb]\s*$|\*\s*$""")
+
+# Un capitolo troncato finisce in sospeso. Il \b davanti all'elenco e' OBBLIGATORIO: senza,
+# il ramo "(the)\s*$" aggancia la fine di "breathe" e "(an)\s*$" quella di "woman", cioe'
+# parole normalissime a fine riga. E' lo stesso genere di falso positivo gia' costato caro
+# qui due volte (i trattini di 'twenty-nine', l'OCR della copertina).
+_RE_FINALE_SOSPESO = re.compile(
+    r"[,;:]\s*$"                                       # virgola, punto e virgola, due punti
+    r"|\.\.\.\s*$|\u2026\s*$"                          # puntini di sospensione
+    r"|\b(and|but|or|nor|the|an|of|in|on|at|to|for|with|that|which|who|"
+    r"was|were|is|are|had|has|been|because|when|while|as|if|"
+    r"ma|che|di|il|la|lo|un|una|per|con|su|tra|fra|quando|mentre)\s*$",
+    re.IGNORECASE,
+)
+
+
+def valida_troncamento(testo: str, nome: str = "capitolo") -> list[str]:
+    """Dice se un testo si interrompe a meta', invece di finire.
+
+    Serve per me, non per un modello: quando scrivo un blocco di capitoli, uno che
+    finisce a meta' frase e' un difetto che nessun altro controllo vede — il conteggio
+    parole e' a posto, le pagine pure, e il libro va in stampa con un capitolo mozzo.
+
+    **Non guarda le virgolette bilanciate**, di proposito. E' l'euristica ovvia ed e'
+    sbagliata sulla narrativa: una battuta che prosegue per due paragrafi apre le
+    virgolette nel primo e le chiude nel secondo, e conta come "sbilanciata" pur essendo
+    scritta bene. Su The Ninth Winter produrrebbe decine di falsi positivi. Un controllo
+    che sbaglia insegna a scavalcarlo, e allora non serve piu' a niente.
+
+    Guarda solo come finisce l'ultima riga di testo vero, che e' l'unico segnale
+    affidabile e non ha falsi positivi in prosa curata."""
+    righe = [r.strip() for r in testo.strip().splitlines() if r.strip()]
+    righe = [r for r in righe if not _RE_SEPARATORE.match(r)]
+    if not righe:
+        return [f"{nome}: vuoto"]
+
+    ultima = righe[-1]
+    if _RE_FINALE_SOSPESO.search(ultima):
+        return [f"{nome}: finisce in sospeso — \"...{ultima[-60:]}\""]
+    if not _RE_CHIUSURA_VERA.search(ultima):
+        return [f"{nome}: l'ultima riga non chiude — \"...{ultima[-60:]}\""]
+    return []
+
+
+# --------------------------------------------------------------------------- #
 # Numerazione pagine
 # --------------------------------------------------------------------------- #
 

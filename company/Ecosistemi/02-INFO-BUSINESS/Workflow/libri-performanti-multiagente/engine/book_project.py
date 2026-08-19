@@ -35,7 +35,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
-from . import (book_output_manager, book_report, config, kdp_formatter,
+from . import (book_output_manager, book_report, config, ispirazione, kdp_formatter,
                 report_validazione, validators)
 
 PROGETTI_DIR = config.LIBRI_DIR / "in_lavorazione"
@@ -88,6 +88,7 @@ class BookProject:
         self.progetto_path = self.dir / "progetto.json"
         self.outline_path = self.dir / "outline.md"
         self.riassunti_path = self.dir / "riassunti.md"
+        self.ispirazione_path = self.dir / "ispirazione.json"
 
     # --- creazione / lettura ------------------------------------------------ #
     @classmethod
@@ -162,6 +163,19 @@ class BookProject:
 
     def copy_kdp(self) -> dict | None:
         return self._config().get("copy_kdp")
+
+    def salva_ispirazione(self, scheda: "ispirazione.Ispirazione") -> Path:
+        """Salva la scheda del concorrente da cui nasce questo libro.
+
+        Sta in un file suo e non in progetto.json perche' e' ricerca, non configurazione:
+        si rilegge scrivendo, si porta nel pacchetto finale, e fra due mesi dice perche'
+        questo libro e' stato fatto cosi'."""
+        return ispirazione.salva(scheda, self.ispirazione_path)
+
+    def ispirazione(self) -> "ispirazione.Ispirazione | None":
+        if not self.ispirazione_path.exists():
+            return None
+        return ispirazione.carica(self.ispirazione_path)
 
     def riassunto_progressivo(self) -> str:
         """Il riassunto REALE dei capitoli gia' scritti — stringa vuota se non ce n'e'.
@@ -292,10 +306,19 @@ class BookProject:
         # Le lineette lunghe invece BLOCCANO (regola di Gael, 2026-08-18): sono la firma
         # piu' riconoscibile della scrittura automatica, e si tolgono riscrivendo la frase.
         lineette = validators.valida_lineette(testo_completo)
+        # Capitolo interrotto a meta': nessun altro controllo lo vede. Il conteggio parole
+        # e' a posto, le pagine pure, e il libro andrebbe in stampa con un capitolo mozzo.
+        troncati = []
+        for n in stato.capitoli_scritti:
+            troncati += validators.valida_troncamento(
+                self.path_capitolo(n).read_text(encoding="utf-8"), f"cap_{n:02d}")
         esiti = {
+            "Capitoli interrotti a meta'": troncati,
             "Lineette lunghe (non devono esserci)": lineette,
             "Trattini nel testo (da rivedere a occhio)": trattini,
         }
+        for avviso in troncati:
+            print(f"[assembla] {avviso}")
         if lineette:
             print(f"[assembla] {len(lineette)} righe contengono lineette lunghe (— – --). "
                   f"Vanno tolte riscrivendo la frase: virgola, punto, punto e virgola o "
@@ -322,6 +345,25 @@ class BookProject:
                 sostituisci=True,
             )
             out["pacchetto"] = str(pacchetto.folder_path)
+
+            # Scheda del concorrente: va nel pacchetto in due formati, JSON per il codice
+            # e testo per chi apre la cartella. Se manca si dice, non si finge.
+            scheda = self.ispirazione()
+            if scheda is None:
+                esiti["Scheda libro di ispirazione"] = [
+                    "assente: nessun ispirazione.json nel progetto. Non blocca, ma il "
+                    "libro non porta con se' il perche' e' stato fatto cosi'."]
+            else:
+                ok, mancanti = scheda.valida()
+                if not ok:
+                    esiti["Scheda libro di ispirazione"] = [
+                        f"incompleta, mancano: {', '.join(mancanti)}"]
+                ispirazione.salva(scheda, pacchetto.folder_path / "ISPIRAZIONE.json")
+                (pacchetto.folder_path / "ISPIRAZIONE.txt").write_text(
+                    scheda.testo(), encoding="utf-8")
+                out["ispirazione"] = str(pacchetto.folder_path / "ISPIRAZIONE.json")
+            for avviso in esiti.get("Scheda libro di ispirazione", []):
+                print(f"[assembla] ispirazione: {avviso}")
 
             pagine_reali = (book_output_manager.conta_pagine_pdf(pacchetto.pdf_dest)
                             if pacchetto.pdf_dest else None)
@@ -356,7 +398,8 @@ class BookProject:
             minimo = config.TARGET_PAGE_COUNT - config.TARGET_PAGE_COUNT_TOLERANCE
             if pagine_reali and pagine_reali < minimo:
                 verdetto.blocca(f"Pagine reali {pagine_reali}, il minimo per il target e' {minimo}")
-            bloccanti = ("Titolo sulla copertina", "Lineette lunghe")
+            bloccanti = ("Titolo sulla copertina", "Lineette lunghe",
+                         "Capitoli interrotti")
             for etichetta, voci in esiti.items():
                 gravita = "bloccante" if etichetta.startswith(bloccanti) else "avviso"
                 # Un avviso "verifica a mano" (dipendenza assente) non e' un difetto del
@@ -436,6 +479,29 @@ class BookProject:
             righe.append("")
             righe.append("Categorie:")
             righe.extend(f"  {c}" for c in copy["categorie"])
+
+        # Campi presi dal piano del 2026-08-19: sono quelli che al caricamento su KDP si
+        # compilano davvero e che finora mancavano, costringendo a inventarli sul momento.
+        if copy.get("codici_bisac"):
+            righe.append("")
+            righe.append("Codici BISAC (KDP ne chiede fino a 3):")
+            righe.extend(f"  {b}" for b in copy["codici_bisac"])
+
+        if copy.get("bio_autore"):
+            righe.append("")
+            righe.append("Bio autore (campo 'Author Bio' su KDP):")
+            righe.append(copy["bio_autore"])
+
+        if copy.get("descrizione_html"):
+            righe.append("")
+            righe.append("Descrizione Amazon in HTML (da incollare cosi' com'e' —")
+            righe.append("KDP accetta <b> <i> <br> <p> <ul> <li> <h4>):")
+            righe.append(copy["descrizione_html"])
+
+        if copy.get("prezzo_suggerito_usd"):
+            righe.append("")
+            righe.append(f"Prezzo suggerito: ${copy['prezzo_suggerito_usd']} "
+                         f"(royalty 60% sopra $9.99 per il cartaceo)")
 
         righe.extend([
             "",

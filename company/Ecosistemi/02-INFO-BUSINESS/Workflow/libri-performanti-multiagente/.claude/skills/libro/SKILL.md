@@ -123,6 +123,12 @@ Secondo paragrafo.
 - **Prima di ogni blocco rileggo `outline.md` + `riassunti.md`** — la continuità viene da lì,
   non dalla memoria della sessione
 - Ogni capitolo chiude su un gancio che tira al successivo
+- **Nessun capitolo finisce a metà frase.** Sembra ovvio e invece è il difetto che passa:
+  parole a posto, pagine a posto, e va in stampa un capitolo mozzo. Dopo ogni blocco:
+  ```
+  python -c "from pathlib import Path; from engine import validators as v;     [print(x) for c in sorted(Path('LIBRI/in_lavorazione/<slug>/capitoli').glob('cap_*.md'))      for x in v.valida_troncamento(c.read_text(encoding='utf-8'), c.stem)]"
+  ```
+  Silenzio = tutti chiusi. La consegna lo ricontrolla e **blocca**.
 - **MAI lineette lunghe: `—` `–` `--`.** Regola non negoziabile di Gael (2026-08-18), e il
   controllo `valida_lineette` **blocca la consegna** se ce ne sono. Sono la firma più
   riconoscibile della scrittura automatica: su Amazon "sembra scritto dall'AI" è la

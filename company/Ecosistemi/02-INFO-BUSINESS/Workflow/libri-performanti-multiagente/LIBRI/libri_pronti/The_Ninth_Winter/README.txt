@@ -1,5 +1,5 @@
 LIBRO: The Ninth Winter
-Generato: 2026-08-18T10:55:26.231149
+Generato: 2026-08-19T14:05:16.484489
 Word count: 36853 — Pagine stimate: 115.2 @320wpp
 Manoscritto: The_Ninth_Winter.docx
 PDF: The_Ninth_Winter.pdf

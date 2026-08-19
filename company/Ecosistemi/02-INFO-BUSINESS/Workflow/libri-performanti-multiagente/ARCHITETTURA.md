@@ -168,14 +168,14 @@ Il codice poi lo porta a norma KDP: ritaglio 2:3, upscale a 1800×2700 (6×9in @
 | | |
 |---|---|
 | **Esegue** | `kdp consegna <slug>` — con `--cover <png>` fa anche il pacchetto |
-| **Controlla** | 6 controllori in fila (sotto) |
+| **Controlla** | 8 controllori in fila (sotto) |
 | **Produce** | **sempre** il `.docx` e il **PDF** nella cartella del libro; con la copertina anche `LIBRI/libri_pronti/<Titolo>/` |
 
 > **Il PDF si fa sempre, anche senza copertina** (2026-08-17). Non è comodità: è l'unico
 > posto dove si vede il numero di pagine vero. Aspettare la copertina per scoprirlo
 > significa scoprirlo troppo tardi.
 
-**I sei controllori, in ordine.** I primi tre **bloccano**, gli altri segnalano:
+**Gli otto controllori, in ordine.** I primi sei **bloccano**, gli altri segnalano:
 
 | # | Controllore | Cosa verifica | Blocca? |
 |---|---|---|---|
@@ -184,9 +184,16 @@ Il codice poi lo porta a norma KDP: ritaglio 2:3, upscale a 1800×2700 (6×9in @
 | 3 | `book_output_manager.conta_pagine_pdf()` | **pagine vere lette dal PDF** ≥ 115 | **sì** |
 | 4 | `validators.valida_copertina_testo()` | il titolo è leggibile (OCR) | **sì** |
 | 5 | `validators.valida_lineette()` | **nessuna lineetta lunga `—` `–` `--`** | **sì** |
-| 6 | `validators.valida_numerazione_pagine()` | numeri sempre in alto o sempre in basso | no, segnala |
-| 7 | `validators.valida_sillabazione_pdf()` | parole spezzate a fine riga | no, segnala |
+| 6 | `validators.valida_troncamento()` | **nessun capitolo interrotto a metà frase** | **sì** |
+| 7 | `validators.valida_numerazione_pagine()` | numeri sempre in alto o sempre in basso | no, segnala |
+| 8 | `validators.valida_sillabazione_pdf()` | parole spezzate a fine riga | no, segnala |
 
+> Il controllo 6 esiste perché un capitolo che finisce a metà frase non lo vede nessun
+> altro: parole a posto, pagine a posto, e il libro va in stampa mozzo. **Non guarda le
+> virgolette bilanciate**, che è l'euristica ovvia ed è sbagliata — una battuta che
+> prosegue su due paragrafi le apre nel primo e le chiude nel secondo. Guarda come
+> finisce l'ultima riga: zero falsi positivi sui 48 capitoli veri, e prende il taglio.
+>
 > Il controllo 5 è una regola di Gael (2026-08-18): le lineette lunghe sono la firma più
 > riconoscibile della scrittura automatica, e su Amazon "sembra scritto dall'AI" è la
 > recensione che affonda un titolo. Si tolgono **riscrivendo la frase**, non scambiando il

@@ -1,6 +1,6 @@
 # Report di consegna — The Quiet Hours
 
-_Generato il 18/08/2026 alle 10:56_
+_Generato il 19/08/2026 alle 14:06_
 
 ---
 
@@ -51,6 +51,7 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260807_155815.json`
 
 ## Controlli automatici eseguiti
 
+- ✅ **Capitoli interrotti a meta'**: nessun problema
 - ✅ **Lineette lunghe (non devono esserci)**: nessun problema
 - ⚠️ **Trattini nel testo (da rivedere a occhio)**: 29 da verificare
     - riga 214: trattino in 'not-having' — contesto: 'That's the part. Around week seven you close the last account and ther'

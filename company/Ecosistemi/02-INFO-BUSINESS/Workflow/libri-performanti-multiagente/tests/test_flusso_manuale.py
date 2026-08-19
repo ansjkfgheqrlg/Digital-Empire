@@ -423,3 +423,91 @@ def test_lineetta_nella_narrazione_blocca_anche_accanto_a_un_dialogo():
     riga = 'And Sarah had said \u2014 and she was certain of it \u2014 "Do you think he knows?"'
     esito = validators.valida_lineette(riga)
     assert esito and "2 lineetta" in esito[0]
+
+
+# --------------------------------------------------------------------------- #
+# Capitolo interrotto a meta'
+# --------------------------------------------------------------------------- #
+
+def test_capitolo_finito_non_viene_segnalato():
+    from engine import validators
+    assert validators.valida_troncamento("Rebecca stood in the yard.") == []
+    assert validators.valida_troncamento('"Then ask it badly."') == []
+    assert validators.valida_troncamento("*twenty-seven in the spring.*") == []
+
+
+def test_capitolo_interrotto_viene_preso():
+    from engine import validators
+    assert validators.valida_troncamento("She closed the clipboard, put it on")
+    assert validators.valida_troncamento("It was cold, and")
+    assert validators.valida_troncamento("He said,")
+
+
+def test_parole_che_finiscono_come_una_congiunzione_non_ingannano():
+    """Il \b nel pattern e' obbligatorio: senza, il ramo '(the)$' aggancia la fine di
+    'breathe' e '(an)$' quella di 'woman'. Stesso genere di falso positivo dei trattini
+    di 'twenty-nine' e dell'OCR della copertina."""
+    from engine import validators
+    assert validators.valida_troncamento("She let out a long breathe.") == []
+    assert validators.valida_troncamento("It was an ordinary woman.") == []
+
+
+def test_troncamento_non_usa_le_virgolette_bilanciate():
+    """L'euristica ovvia (virgolette dispari = troncato) e' sbagliata sulla narrativa: una
+    battuta che prosegue per due paragrafi le apre nel primo e le chiude nel secondo."""
+    from engine import validators
+    battuta_su_due_paragrafi = '"I told her on Thursday.\n\n"And she wrote it down."'
+    assert validators.valida_troncamento(battuta_su_due_paragrafi) == []
+
+
+# --------------------------------------------------------------------------- #
+# Scheda di ispirazione: numeri veri o niente
+# --------------------------------------------------------------------------- #
+
+def test_scheda_senza_numeri_amazon_non_e_valida():
+    """Una scheda con numeri inventati e' peggio di nessuna scheda: sembra ricerca e non
+    lo e'. Stessa regola di magazzino.valida_argomento()."""
+    from engine.ispirazione import Ispirazione
+    solo_testo = Ispirazione(
+        nicchia="amish suspense", genere="suspense", lettore_tipo="donne 35-65",
+        temi_chiave=["lutto"], stile="terza persona", tono="trattenuto",
+        come_ci_distinguiamo="finale che non assolve",
+    )
+    ok, mancanti = solo_testo.valida()
+    assert not ok
+    assert any("recensioni_mediana" in m for m in mancanti)
+    assert any("prezzo_medio" in m for m in mancanti)
+
+
+def test_scheda_completa_e_valida():
+    from engine.ispirazione import Ispirazione
+    piena = Ispirazione(
+        nicchia="amish suspense", genere="suspense", lettore_tipo="donne 35-65",
+        temi_chiave=["lutto"], stile="terza persona", tono="trattenuto",
+        come_ci_distinguiamo="finale che non assolve",
+        recensioni_mediana=180.0, prezzo_medio=5.95, rilevato_il="2026-08-13",
+    )
+    assert piena.valida() == (True, [])
+
+
+def test_numeri_presi_per_copia_dalla_ricerca():
+    """I numeri veri entrano per copia, non ribattuti a mano: e' il modo piu' comune in cui
+    un numero vero diventa un numero sbagliato."""
+    from engine.ispirazione import da_ricerca_nicchia
+    voce = {"keyword": "amish romance suspense", "n_risultati": 16,
+            "recensioni_mediana": 180.0, "recensioni_min": 14, "prezzo_medio": 5.95,
+            "rating_medio": 4.5, "concorrenti_deboli": 6, "punteggio": 73.1}
+    campi = da_ricerca_nicchia(voce)
+    assert campi["nicchia"] == "amish romance suspense"
+    assert campi["recensioni_mediana"] == 180.0
+    assert campi["concorrenti_deboli"] == 6
+
+
+def test_scheda_va_e_torna_dal_file(tmp_path):
+    from engine import ispirazione
+    originale = ispirazione.Ispirazione(
+        nicchia="cozy mystery", recensioni_mediana=386, prezzo_medio=8.99,
+        temi_chiave=["gatti", "paese piccolo"], rilevato_il="2026-08-07")
+    percorso = ispirazione.salva(originale, tmp_path / "ispirazione.json")
+    riletta = ispirazione.carica(percorso)
+    assert riletta == originale, "il campo _nota non deve rientrare nella dataclass"
