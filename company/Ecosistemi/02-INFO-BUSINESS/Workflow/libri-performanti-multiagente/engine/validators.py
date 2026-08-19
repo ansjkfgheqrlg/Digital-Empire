@@ -187,6 +187,36 @@ def valida_troncamento(testo: str, nome: str = "capitolo") -> list[str]:
 # Numerazione pagine
 # --------------------------------------------------------------------------- #
 
+# --------------------------------------------------------------------------- #
+# Lettura del PDF, una volta sola
+# --------------------------------------------------------------------------- #
+
+# Aprire un PDF di 116 pagine con pdfplumber costa ~9 secondi, e la consegna lo faceva DUE
+# volte: una per la sillabazione e una per la numerazione. Misurato il 2026-08-19 mentre si
+# tagliavano i tempi di produzione: 41s totali di codice, di cui 19 solo per rileggere due
+# volte lo stesso file. Qui si legge una volta e si tiene, con la chiave che comprende
+# mtime e dimensione: se il PDF viene rigenerato, la cache non serve un dato vecchio.
+_CACHE_PDF: dict = {}
+
+
+def _pagine_pdf(pdf_path: Path):
+    """[(testo, parole, altezza)] per pagina. Rilegge solo se il file e' cambiato."""
+    import pdfplumber
+
+    st = Path(pdf_path).stat()
+    chiave = (str(Path(pdf_path).resolve()), st.st_mtime_ns, st.st_size)
+    if chiave in _CACHE_PDF:
+        return _CACHE_PDF[chiave]
+    with pdfplumber.open(pdf_path) as pdf:
+        pagine = [(pagina.extract_text() or "", pagina.extract_words(), pagina.height)
+                  for pagina in pdf.pages]
+    # Un libro alla volta: tenerne di piu' terrebbe in memoria centinaia di pagine per
+    # niente, visto che la consegna lavora su un PDF solo.
+    _CACHE_PDF.clear()
+    _CACHE_PDF[chiave] = pagine
+    return pagine
+
+
 def valida_sillabazione_pdf(pdf_path: Path, testo_sorgente: str | None = None) -> list[str]:
     """Cerca parole SPEZZATE a fine riga nel PDF impaginato (es. "impagina-\\nzione").
 
@@ -208,9 +238,8 @@ def valida_sillabazione_pdf(pdf_path: Path, testo_sorgente: str | None = None) -
 
     sorgente = (testo_sorgente or "").lower()
     errori: list[str] = []
-    with pdfplumber.open(pdf_path) as pdf:
-        for n, pagina in enumerate(pdf.pages, start=1):
-            testo = pagina.extract_text() or ""
+    for n, (testo, _parole, _h) in enumerate(_pagine_pdf(pdf_path), start=1):
+        if True:
             for riga in testo.splitlines():
                 riga = riga.rstrip()
                 m = re.search(r"(\S+)-$", riga)
@@ -243,10 +272,9 @@ def valida_numerazione_pagine(pdf_path: Path) -> list[str]:
                 "posizione dei numeri di pagina. Installa con: pip install pdfplumber"]
 
     posizioni: list[tuple[int, str]] = []
-    with pdfplumber.open(pdf_path) as pdf:
-        for n, pagina in enumerate(pdf.pages, start=1):
-            h = pagina.height
-            for parola in pagina.extract_words():
+    for n, (_testo, parole, h) in enumerate(_pagine_pdf(pdf_path), start=1):
+        if True:
+            for parola in parole:
                 testo = (parola.get("text") or "").strip()
                 if not testo.isdigit():
                     continue
@@ -303,15 +331,17 @@ def _letture_ocr(img):
     copertina col titolo sbagliato non le produce in nessuna delle varianti."""
     from PIL import Image, ImageOps
 
-    yield img                                    # com'e' — a volte basta
-    if img.width > 1000:                         # i caratteri giganti confondono Tesseract
-        yield img.resize((900, round(900 * img.height / img.width)), Image.LANCZOS)
-    # Il titolo sta nella meta' alta: la si isola e si spinge il contrasto. Le due soglie
-    # coprono i due casi opposti — testo chiaro su fondo scuro e testo scuro su fondo chiaro.
+    # ORDINE VOLUTO (2026-08-19): prima quella che sulle copertine vere funziona. Chi chiama
+    # si ferma appena il titolo si legge, quindi la prima variante decide il costo. Sulle due
+    # copertine del progetto la meta' alta binarizzata da' 3 parole su 3 da sola, mentre
+    # l'immagine intera ne da' 0 e 2. Cambiare quest'ordine rallenta e basta.
     meta = ImageOps.grayscale(img.crop((0, 0, img.width, img.height // 2)))
-    yield meta.point(lambda x: 0 if x < 170 else 255)
-    yield meta.point(lambda x: 255 if x < 110 else 0)
+    yield meta.point(lambda x: 0 if x < 170 else 255)   # testo chiaro su fondo scuro
+    yield meta.point(lambda x: 255 if x < 110 else 0)   # testo scuro su fondo chiaro
     yield ImageOps.autocontrast(meta)
+    yield img                                           # com'e'
+    if img.width > 1000:                                # i caratteri giganti confondono Tesseract
+        yield img.resize((900, round(900 * img.height / img.width)), Image.LANCZOS)
 
 
 def valida_copertina_testo(cover_path: Path, titolo_atteso: str | None = None) -> list[str]:
@@ -346,12 +376,23 @@ def valida_copertina_testo(cover_path: Path, titolo_atteso: str | None = None) -
                 "controlla a occhio che il titolo sulla copertina sia scritto correttamente."]
 
     immagine = Image.open(cover_path)
+    parole_titolo = [w for w in _normalizza(titolo_atteso or "").split() if len(w) > 2]
     letture = []
-    for variante in _letture_ocr(immagine):
+    for n_var, variante in enumerate(_letture_ocr(immagine), start=1):
         try:
             letture.append(pytesseract.image_to_string(variante).strip())
-        except Exception as exc:                 # una variante che fallisce non ferma le altre
+        except Exception as exc:
             logger.debug("OCR copertina, variante saltata: %s", exc)
+            continue
+        # Uscita anticipata: se il titolo si legge gia' tutto, le letture successive non
+        # possono cambiare l'esito. Con l'ordine di `_letture_ocr` la prima variante basta
+        # su entrambe le copertine vere del progetto.
+        letto = _normalizza("\n".join(letture))
+        if parole_titolo and all(w in letto for w in parole_titolo):
+            logger.debug("OCR copertina: titolo completo alla variante %d di 5", n_var)
+            break
+        if not parole_titolo and letture[-1]:
+            break
     testo = "\n".join(t for t in letture if t).strip()
     if not testo:
         return [f"Copertina '{cover_path.name}': nessun testo rilevato. "
@@ -361,7 +402,6 @@ def valida_copertina_testo(cover_path: Path, titolo_atteso: str | None = None) -
     if not titolo_atteso:
         return []
 
-    parole_titolo = [p for p in _normalizza(titolo_atteso).split() if len(p) > 2]
     ocr = _normalizza(testo)
     trovate = [p for p in parole_titolo if p in ocr]
     if not parole_titolo:

@@ -225,8 +225,9 @@ def test_progetto_nuovo_non_ha_riassunto(tmp_path, monkeypatch):
     progetto = book_project.BookProject.crea("Riassunto Vuoto", "cozy mystery",
                                               capitoli=3, parole_per_capitolo=100)
 
-    assert "Riassunti progressivi" in progetto.riassunti_path.read_text(encoding="utf-8")
-    assert progetto.riassunto_progressivo() == ""
+    modello = progetto.riassunti_path.read_text(encoding="utf-8")
+    assert "## Fili aperti" in modello and "### cap_01" in modello,         "il modello deve gia' avere la struttura che gate_blocco legge"
+    assert progetto.riassunto_progressivo() == "",         "istruzioni e intestazioni non devono passare per storia accaduta"
 
 
 def test_riassunto_progressivo_conserva_il_contenuto_vero(tmp_path, monkeypatch):
@@ -511,3 +512,108 @@ def test_scheda_va_e_torna_dal_file(tmp_path):
     percorso = ispirazione.salva(originale, tmp_path / "ispirazione.json")
     riletta = ispirazione.carica(percorso)
     assert riletta == originale, "il campo _nota non deve rientrare nella dataclass"
+
+
+# --------------------------------------------------------------------------- #
+# Gate di blocco (2026-08-19): fermare i difetti al capitolo 8, non al 24
+# --------------------------------------------------------------------------- #
+
+@pytest.fixture
+def libro_finto(tmp_path, monkeypatch):
+    """Crea un progetto e ci mette dentro capitoli di lunghezza scelta."""
+    monkeypatch.setattr(book_project, "PROGETTI_DIR", tmp_path)
+
+    def costruisci(parole_per_capitolo, quanti=8, riassunti=None, lineette=False,
+                   tronca=False):
+        p = book_project.BookProject.crea("Libro Gate", "cozy mystery")
+        for n in range(1, quanti + 1):
+            corpo = " ".join(["parola"] * (parole_per_capitolo - 3))
+            if lineette and n == 1:
+                corpo = "Lei si volto\u2014non c'era nessuno. " + corpo
+            fine = "" if tronca and n == quanti else "."
+            p.path_capitolo(n).write_text(f"# Cap {n}\n\n{corpo}{fine}\n", encoding="utf-8")
+        if riassunti is not None:
+            p.riassunti_path.write_text(riassunti, encoding="utf-8")
+        else:
+            sezioni = "\n".join(f"### cap_{n:02d}\n- Succede: cose\n" for n in range(1, quanti + 1))
+            p.riassunti_path.write_text(
+                f"# Riassunti\n\n## Fili aperti\n\n## Capitoli\n\n{sezioni}", encoding="utf-8")
+        return p
+    return costruisci
+
+
+def _motivi(esito):
+    return " | ".join(esito.blocchi)
+
+
+def test_gate_ferma_i_capitoli_troppo_corti(libro_finto):
+    """IL controllo che giustifica tutto il gate. Stato reale del 2026-08-13: 8 capitoli a
+    1.041 parole, proiezione 25.000 su un minimo di 36.800. Il difetto e' stato scoperto al
+    capitolo 24 ed e' costato quattro riprese piu' scene aggiunte in coda."""
+    from engine import gate_blocco
+    esito = gate_blocco.controlla(libro_finto(1041))
+    assert not esito.si_prosegue
+    assert "sotto il minimo" in _motivi(esito)
+    assert esito.proiezione < 26000, "la proiezione deve dire dove ATTERRA il libro"
+
+
+def test_gate_lascia_passare_la_lunghezza_giusta(libro_finto):
+    from engine import gate_blocco
+    esito = gate_blocco.controlla(libro_finto(1600))
+    assert esito.si_prosegue, _motivi(esito)
+    assert esito.proiezione == 1600 * 24
+
+
+def test_gate_prende_le_lineette_al_capitolo_8(libro_finto):
+    """A fine libro sono state 193 righe da riscrivere a mano. Qui sono una."""
+    from engine import gate_blocco
+    esito = gate_blocco.controlla(libro_finto(1600, lineette=True))
+    assert not esito.si_prosegue
+    assert "lineette" in _motivi(esito)
+
+
+def test_gate_prende_il_capitolo_troncato(libro_finto):
+    from engine import gate_blocco
+    esito = gate_blocco.controlla(libro_finto(1600, tronca=True))
+    assert not esito.si_prosegue
+    assert "cap_08" in _motivi(esito)
+
+
+def test_gate_pretende_i_riassunti_aggiornati(libro_finto):
+    """Su The Ninth Winter riassunti.md non fu mai aggiornato, e il capitolo 9 sarebbe stato
+    scritto alla cieca: nessun controllo automatico se ne accorgeva."""
+    from engine import gate_blocco
+    esito = gate_blocco.controlla(libro_finto(1600, riassunti="# Riassunti\n\n## Capitoli\n"))
+    assert not esito.si_prosegue
+    assert "riassunti.md non copre" in _motivi(esito)
+
+
+def test_gate_ferma_un_filo_aperto_da_troppo(libro_finto):
+    """Efrain: lasciato in sospeso al cap. 15, chiuso con una scena-toppa al 24."""
+    from engine import gate_blocco
+    sezioni = "\n".join(f"### cap_{n:02d}\n- Succede: cose\n" for n in range(1, 23))
+    riassunti = ("# Riassunti\n\n## Fili aperti\n\n"
+                 "- [cap 15] Efrain ha chiesto di non essere ricontattato prima di aprile\n\n"
+                 f"## Capitoli\n\n{sezioni}")
+    esito = gate_blocco.controlla(libro_finto(1600, quanti=22, riassunti=riassunti))
+    assert not esito.si_prosegue
+    assert "filo aperto dal capitolo 15" in _motivi(esito)
+
+
+def test_filo_aperto_da_poco_non_blocca(libro_finto):
+    from engine import gate_blocco
+    sezioni = "\n".join(f"### cap_{n:02d}\n- Succede: cose\n" for n in range(1, 19))
+    riassunti = ("# Riassunti\n\n## Fili aperti\n\n- [cap 15] Efrain aspetta aprile\n\n"
+                 f"## Capitoli\n\n{sezioni}")
+    esito = gate_blocco.controlla(libro_finto(1600, quanti=18, riassunti=riassunti))
+    assert esito.si_prosegue, _motivi(esito)
+
+
+def test_bersaglio_al_centro_della_finestra():
+    """Mirare al minimo e' quello che e' costato quattro riprese su The Ninth Winter."""
+    from engine import book_project as bp, config
+    bersaglio = bp.DEFAULT_WORDS_PER_CHAPTER * bp.DEFAULT_TOTAL_CHAPTERS
+    centro = (config.TARGET_WORD_COUNT_MIN + config.TARGET_WORD_COUNT_MAX) / 2
+    assert abs(bersaglio - centro) <= 50, f"bersaglio {bersaglio}, centro {centro}"
+    assert bersaglio - config.TARGET_WORD_COUNT_MIN >= 1500, "serve margine sotto"
+    assert config.TARGET_WORD_COUNT_MAX - bersaglio >= 1500, "serve margine sopra"

@@ -40,10 +40,45 @@ from . import (book_output_manager, book_report, config, ispirazione, kdp_format
 
 PROGETTI_DIR = config.LIBRI_DIR / "in_lavorazione"
 
-# Default coerenti col target KDP di config.py (120 pagine ± 5 a 300 parole/pagina):
-# 24 capitoli x 1500 parole = 36000 parole = 120 pagine.
+# Si mira al CENTRO della finestra, non al bordo (2026-08-19). config.py accetta 115-125
+# pagine: il centro e' 120 pagine = 38.400 parole a 320 p/pag, cioe' 1600 parole per 24
+# capitoli. Mirare al minimo e' quello che e' costato caro: The Ninth Winter e' atterrato a
+# 115,2 pagine, sul bordo inferiore, e ogni ritocco lo faceva cadere sotto — sono servite
+# quattro riprese (111 -> 113 -> 114 -> 115 -> 116), ognuna con un PDF da rigenerare.
+# Al centro il margine e' +-1.600 parole per parte e la prima misura passa.
 DEFAULT_TOTAL_CHAPTERS = 24
-DEFAULT_WORDS_PER_CHAPTER = 1500
+DEFAULT_WORDS_PER_CHAPTER = round(
+    (config.TARGET_PAGE_COUNT * config.WORDS_PER_PAGE_ESTIMATE) / 24 / 50) * 50  # 1600
+
+
+# Formato dei riassunti, fisso (2026-08-19). Non e' pignoleria: `gate_blocco` lo legge.
+#
+# Prima era prosa libera, e su The Ninth Winter e' cresciuto fino a 4.441 parole per fare lo
+# stesso lavoro che su The Quiet Hours ne prendeva 666. Lo rileggo prima di ogni blocco,
+# quindi quel peso si paga 3-5 volte per libro.
+#
+# La sezione "Fili aperti" e' la parte che conta: e' l'unica cosa che avrebbe intercettato
+# Efrain (lasciato in sospeso al cap. 15, chiuso con una scena-toppa al 24) ed Emma (mai
+# chiusa, aggiunta all'ultimo). Il gate la legge e blocca se un filo invecchia troppo.
+MODELLO_RIASSUNTI = """# Riassunti — {titolo}
+
+## Fili aperti
+
+<!-- Una riga per filo, formato:  - [cap NN] cosa e' rimasto in sospeso
+     `kdp blocco` BLOCCA se un filo resta aperto per piu' di 6 capitoli: e' cosi' che
+     nascono le scene-toppa in coda. Quando il filo si chiude, si cancella la riga. -->
+
+## Capitoli
+
+<!-- Tre righe per capitolo, scritte NELLO STESSO passaggio in cui scrivo il capitolo, mai
+     in un giro separato. `kdp blocco` BLOCCA se manca la sezione di un capitolo scritto.
+
+### cap_01
+- Succede: cosa accade, una riga
+- Cambia: cosa e' diverso da prima (chi sa cosa, chi ha cosa, chi si fida di chi)
+- Resta aperto: cosa il lettore si aspetta e non ha ancora avuto
+-->
+"""
 
 
 def slugify(titolo: str) -> str:
@@ -66,11 +101,19 @@ class StatoProgetto:
     def __str__(self) -> str:
         pagine = round(self.parole_scritte / config.WORDS_PER_PAGE_ESTIMATE, 1)
         pagine_target = round(self.parole_target / config.WORDS_PER_PAGE_ESTIMATE)
+        # Il MINIMO che blocca la consegna vive in config, non in progetto.json: un libro
+        # creato prima di un cambio di taratura porterebbe in giro un bersaglio vecchio e
+        # si fermerebbe corto seguendo il proprio file (successo davvero: 'target 36000'
+        # stampato quando il minimo era gia' 36.800).
+        minimo = config.TARGET_WORD_COUNT_MIN
         righe = [
             f"Libro: {self.titolo}  [{self.slug}]",
             f"Capitoli: {len(self.capitoli_scritti)}/{self.capitoli_totali}",
-            f"Parole: {self.parole_scritte} (~{pagine} pagine) — target {self.parole_target} (~{pagine_target} pagine)",
+            f"Parole: {self.parole_scritte} (~{pagine} pagine) — mira a {self.parole_target} "
+            f"(~{pagine_target} pagine), minimo per la consegna {minimo}",
         ]
+        if self.parole_scritte and self.parole_scritte < minimo:
+            righe.append(f"         mancano {minimo - self.parole_scritte} parole al minimo")
         if self.completo:
             righe.append("STATO: tutti i capitoli scritti — pronto per 'assembla'")
         else:
@@ -119,10 +162,7 @@ class BookProject:
                 encoding="utf-8")
         if not p.riassunti_path.exists():
             p.riassunti_path.write_text(
-                f"# Riassunti progressivi — {titolo}\n\n"
-                "<!-- Un paragrafo per capitolo, aggiunto dopo averlo scritto. Serve a "
-                "mantenere la continuita' quando si riprende in una sessione nuova. -->\n",
-                encoding="utf-8")
+                MODELLO_RIASSUNTI.format(titolo=titolo), encoding="utf-8")
         return p
 
     def _config(self) -> dict:

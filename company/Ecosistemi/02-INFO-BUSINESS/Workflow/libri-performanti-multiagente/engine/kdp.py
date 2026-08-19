@@ -247,10 +247,42 @@ def _cmd_nuovo(args) -> int:
         return CONFIG_ERRATA
 
     log.info("Progetto creato: %s", p.dir)
-    print(f"\n  1. Scrivi l'outline:   {p.outline_path}")
-    print(f"  2. Poi i capitoli in:  {p.capitoli_dir}")
-    print(f"  3. Controlla lo stato: python -m engine.kdp stato {p.slug}\n")
+    cfg = p._config()
+    bersaglio = cfg["capitoli_totali"] * cfg["parole_per_capitolo"]
+    pagine = round(bersaglio / config.WORDS_PER_PAGE_ESTIMATE)
+    print()
+    print(f"  Bersaglio: {cfg['parole_per_capitolo']} parole x {cfg['capitoli_totali']} "
+          f"capitoli = {bersaglio} parole (~{pagine} pagine)")
+    print(f"  Finestra accettata: {config.TARGET_WORD_COUNT_MIN}-"
+          f"{config.TARGET_WORD_COUNT_MAX} parole. Il bersaglio sta in MEZZO, non al minimo:")
+    print( "  e' voluto. Mirare al bordo costa quattro riprese a fine libro.")
+    print()
+    print(f"  1. Outline:          {p.outline_path}")
+    print(f"  2. Prompt copertina: {p.dir / 'copertina-prompt.md'}")
+    print( "     >> DALLO A GAEL SUBITO, prima di scrivere i capitoli. Genera l'immagine")
+    print( "     mentre scrivi: aspettarla a libro finito e' costato un giorno intero")
+    print( "     su The Ninth Winter (libro finito il 17, copertina il 18).")
+    print(f"  3. Capitoli in:      {p.capitoli_dir}")
+    print(f"  4. Dopo OGNI blocco: python -m engine.kdp blocco {p.slug}")
+    print( "     Meno di un secondo, e ferma i difetti al capitolo 8 invece che al 24.")
+    print(f"  5. Alla fine:        python -m engine.kdp consegna {p.slug} --cover <png>")
+    print()
     return OK
+
+
+def _cmd_blocco(args) -> int:
+    """Il gate da lanciare dopo ogni gruppo di capitoli. Gira in meno di un secondo:
+    niente PDF, niente OCR — quelli restano alla consegna, che si fa una volta sola."""
+    from .book_project import BookProject
+    from . import gate_blocco
+
+    try:
+        esito = gate_blocco.controlla(BookProject(args.slug))
+    except FileNotFoundError as e:
+        log.error("%s", e)
+        return CONFIG_ERRATA
+    print(esito)
+    return OK if esito.si_prosegue else NON_PUBBLICABILE
 
 
 def _cmd_stato(args) -> int:
@@ -367,7 +399,14 @@ def costruisci_parser() -> argparse.ArgumentParser:
     c.add_argument("--nicchia", required=True)
     c.add_argument("--autore", default="Digital Empire")
     c.add_argument("--capitoli", type=int, default=24)
-    c.add_argument("--parole-per-capitolo", type=int, default=1500)
+    from .book_project import DEFAULT_WORDS_PER_CHAPTER
+    c.add_argument("--parole-per-capitolo", type=int,
+                   default=DEFAULT_WORDS_PER_CHAPTER,
+                   help="default calcolato dal centro della finestra pagine di config")
+
+    b = sub.add_parser("blocco",
+                       help="gate rapido dopo un gruppo di capitoli (<1s, niente PDF)")
+    b.add_argument("slug")
 
     s = sub.add_parser("stato", help="a che punto sono i libri")
     s.add_argument("slug", nargs="?")
@@ -392,7 +431,8 @@ def main(argv: list[str] | None = None) -> int:
     azioni = {"magazzino": _cmd_magazzino, "nicchie": _cmd_nicchie,
               "nicchia-stato": _cmd_nicchia, "nicchia-scegli": _cmd_nicchia,
               "nicchia-confronta": _cmd_nicchia, "nuovo": _cmd_nuovo,
-              "stato": _cmd_stato, "consegna": _cmd_consegna}
+              "stato": _cmd_stato, "blocco": _cmd_blocco,
+               "consegna": _cmd_consegna}
     try:
         return azioni[args.comando](args)
     except KeyboardInterrupt:

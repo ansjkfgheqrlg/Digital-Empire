@@ -80,6 +80,11 @@ Se l'outline è solido i capitoli vengono da sé e restano coerenti. Se è vago,
 contraddizione al capitolo 12 — è già successo.
 
 ### 3. Scrivo `copertina-prompt.md` — il prompt per Gael
+**PRIMA dei capitoli, e glielo consegno subito nel messaggio.** Non è un dettaglio d'ordine:
+su The Ninth Winter il libro è stato finito il 17 e la copertina è arrivata il 18, **un
+giorno intero di attesa a libro fermo**. Il prompt si può scrivere adesso, quindi si scrive
+adesso e Gael genera mentre io scrivo i capitoli.
+
 **Gael genera l'immagine, io scrivo il prompt.** Deve essere lungo, specifico e completo:
 non solo lo sfondo, ma **tutta la copertina finita, testo incluso**.
 
@@ -112,23 +117,36 @@ Secondo paragrafo.
 ```
 
 **Regole di lavoro, non negoziabili:**
-- **4-6 capitoli per volta**, mai tutti insieme: la qualità cala e la sessione si appesantisce
-- **~1650 parole a capitolo** (24 × 1650 = 39.600 = ~124 pagine reali).
-  **Mai 1500**: 36.000 parole impaginate fanno 112 pagine, *sotto* il minimo di 115.
-  La misura vera è **320 parole a pagina**, non 300.
-- **Verifico la lunghezza media già dopo il primo blocco di 4-6 capitoli.** Se sto sotto
-  1.500 a capitolo il libro chiuderà corto e a fine libro non si recupera senza riscrivere.
-  (*The Ninth Winter*: primi 8 capitoli a ~1.030 parole, scoperto al capitolo 24.)
-- **Dopo ogni blocco aggiorno `riassunti.md`**: 2-3 righe per capitolo scritto
+- **8 capitoli per blocco, 3 blocchi in tutto.** Prima erano 4-6 per timore che la qualità
+  calasse; adesso il gate qui sotto intercetta il calo, quindi il limite non serve più. Se
+  il gate boccia un blocco da 8, torno a 6 **e lo dico**.
+- **~1600 parole a capitolo** (24 × 1600 = 38.400 = **120 pagine, il centro esatto** della
+  finestra 115-125). **Mirare al minimo è l'errore che costa**: The Ninth Winter è atterrato
+  a 115,2 pagine, sul bordo, e ogni ritocco lo faceva cadere sotto — quattro riprese, quattro
+  PDF rigenerati. Al centro ho ±1.600 parole di margine.
+- **DOPO OGNI BLOCCO, sempre, prima di scrivere il successivo:**
+  ```
+  python -m engine.kdp blocco <slug>
+  ```
+  Gira in meno di un secondo (niente PDF, niente OCR) e controlla: dove atterra il libro a
+  questo ritmo, lineette, capitoli troncati, riassunti aggiornati, fili aperti da troppo.
+  **Se esce con errore mi fermo e correggo QUEL blocco**, non i prossimi.
+
+  > Provato sullo stato reale del 13 agosto: il gate boccia gli 8 capitoli a 1.041 parole
+  > dicendo *"il libro chiude a 25.176 parole, 11.624 sotto il minimo"*, più 37 lineette e i
+  > riassunti mancanti. Tutti e tre i difetti che sono stati scoperti al capitolo 24.
+
+- **`riassunti.md` si scrive DENTRO lo stesso passaggio dei capitoli**, mai in un giro
+  separato. Formato fisso, tre righe per capitolo (Succede / Cambia / Resta aperto) più la
+  lista **Fili aperti** in testa: `- [cap NN] cosa è rimasto in sospeso`. Il gate legge quella
+  lista e blocca se un filo invecchia di oltre 6 capitoli — è ciò che avrebbe pescato Efrain
+  al capitolo 22 invece che con una scena-toppa al 24.
 - **Prima di ogni blocco rileggo `outline.md` + `riassunti.md`** — la continuità viene da lì,
   non dalla memoria della sessione
 - Ogni capitolo chiude su un gancio che tira al successivo
-- **Nessun capitolo finisce a metà frase.** Sembra ovvio e invece è il difetto che passa:
-  parole a posto, pagine a posto, e va in stampa un capitolo mozzo. Dopo ogni blocco:
-  ```
-  python -c "from pathlib import Path; from engine import validators as v;     [print(x) for c in sorted(Path('LIBRI/in_lavorazione/<slug>/capitoli').glob('cap_*.md'))      for x in v.valida_troncamento(c.read_text(encoding='utf-8'), c.stem)]"
-  ```
-  Silenzio = tutti chiusi. La consegna lo ricontrolla e **blocca**.
+- **Nessun capitolo finisce a metà frase.** Lo controlla `kdp blocco`, e lo ricontrolla la
+  consegna. Parole a posto, pagine a posto, e va in stampa un capitolo mozzo: è il difetto
+  che nessun altro controllo vede.
 - **MAI lineette lunghe: `—` `–` `--`.** Regola non negoziabile di Gael (2026-08-18), e il
   controllo `valida_lineette` **blocca la consegna** se ce ne sono. Sono la firma più
   riconoscibile della scrittura automatica: su Amazon "sembra scritto dall'AI" è la
@@ -144,11 +162,8 @@ Secondo paragrafo.
 
   **I trattini delle parole composte restano**: `twenty-nine`, `hand-lettered`, `chow-chow`
   in inglese sono ortografia, non stile. Toglierli fa sembrare il libro scritto male.
-  Controllo rapido su un blocco appena scritto:
-  ```
-  grep -c "—" LIBRI/in_lavorazione/<slug>/capitoli/cap_*.md
-  ```
-  Deve dare **0 ovunque**. Verificalo a ogni blocco, non a fine libro.
+  Lo verifica `kdp blocco` a ogni blocco. A fine libro sono state **193 righe** da
+  riscrivere a mano su due libri: al capitolo 8 sarebbero state 37.
 
 Controllo l'avanzamento quando serve:
 ```
