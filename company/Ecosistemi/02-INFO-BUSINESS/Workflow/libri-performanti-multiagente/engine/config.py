@@ -79,6 +79,15 @@ COVER_SIZE_WITH_BLEED_INCHES = (
 # direzione pericolosa. The Ninth Winter e' passato dal controllo parole a 34.897 ("116,3
 # pagine") ed e' arrivato al PDF con 111 pagine reali, sotto il minimo. 320 e' il piu' basso
 # dei due rapporti misurati: prudente sul minimo parole, senza inventare margine.
+# AGGIORNAMENTO 2026-08-20, dopo il terzo libro: il rapporto NON e' costante fra stili.
+#   The Quiet Hours           37.168 / 115 = 323 p/pag   (scarto stima 1,2 pagine)
+#   The Ninth Winter          36.871 / 116 = 318 p/pag   (scarto stima 0,8 pagine)
+#   The Second-Hand Spellbook 38.110 / 115 = 331 p/pag   (scarto stima 4,3 pagine)
+# Un libro con molti dialoghi brevi e molte interruzioni di scena impagina diversamente da
+# uno di prosa continua. Percio' 320 resta il valore prudente per PIANIFICARE, ma la stima
+# non sostituisce il PDF: su The Second-Hand Spellbook diceva 117,3 pagine e le pagine vere
+# erano 113, cioe' sotto il minimo. Il PDF va generato almeno una volta PRIMA della consegna
+# finale, per tarare il rapporto vero di quel libro.
 WORDS_PER_PAGE_ESTIMATE = 320
 TARGET_PAGE_COUNT = 120
 TARGET_PAGE_COUNT_TOLERANCE = 5  # accettato: 115-125 pagine

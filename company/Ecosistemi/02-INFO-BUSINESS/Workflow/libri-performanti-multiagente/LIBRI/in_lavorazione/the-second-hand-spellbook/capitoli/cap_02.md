@@ -38,6 +38,20 @@ But Ines Hallow had a way of leaving that did not permit questions, and the door
 
 ---
 
+She did two hours of work before she went up, at the counter, on the laptop, because there was a manual for a heat exchanger due on Friday and because the world outside Saltmarch had not been informed of any of this.
+
+It was the ordinary part of her life and she did it in the ordinary way: three hundred and forty pages of somebody else's English, checking that every cross-reference pointed where it claimed to, that the numbering did not skip, that a warning on page ninety was the same warning on page two hundred and eleven.
+
+She had been doing it for twelve years and was very good at it, and she had never once managed to explain at a party what it actually consisted of, because what it actually consisted of was holding a large document in your head and waiting for the place where it stopped agreeing with itself.
+
+At about half five she found one. A torque figure given in two units in two places, and the conversion wrong by a factor that would not hurt anybody but would cost some fitter in Rotterdam a morning. She wrote the query and flagged it and felt the small clean satisfaction that was, she was aware, the entire reason she had never looked for a different job.
+
+Then she closed the laptop and looked up and remembered where she was.
+
+That was the first time it happened, and it happened perhaps two hundred times over the following months: two hours inside a document, and then a shop, arriving all at once, like a room you have walked into in the dark.
+
+---
+
 Maren went upstairs at half past six, because at half past six it got dark and the alternative was standing in a shop with the lights on where anybody walking past on Quay Street could look in at her.
 
 The flat above the shop was three rooms and a bathroom, and it had not been altered since 1974, and Maren had slept in the small back room for six summers between the ages of nine and fifteen.

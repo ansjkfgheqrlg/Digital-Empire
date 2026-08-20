@@ -2,12 +2,7 @@
 
 ## Fili aperti
 
-- [cap 01, arco lungo] Perché Maren non è tornata a Saltmarch per undici anni. Accennato, mai spiegato. **Si chiude al cap 24: è il prezzo che sceglie di pagare.**
-- [cap 16, arco lungo] Maren non ha deciso se resta a Saltmarch. Sua madre gliel'ha chiesto e lei ha detto non lo so.
-- [cap 13] Peder Vane sa cosa chiese suo padre nel 1990 e non lo dice. Torna al cap 21.
-- [cap 16] La "ragione brutta": Maren ha calcolato che 4 prestiti al giorno le riempirebbero la sala il 22. Non ha ancora deciso.
-- [cap 14] L'assemblea pubblica è il 22 novembre, il voto il 30. Ines ha 61 lettere.
-- [cap 10] Skerrit ha chiesto un corridoio d'ospedale e Maren gli ha detto di tornare martedì. Non è ancora tornato.
+(nessuno: libro chiuso 24/24)
 
 ## Capitoli
 
@@ -90,3 +85,43 @@
 - Succede: undici giorni dopo, al telefono con la madre, Maren sente il proprio nome e capisce che **non distingue più i due modi in cui sua madre lo dice**. Erano sulla lista HELD.
 - Cambia: il prezzo di Cato è arrivato, ed è l'unica cosa dell'elenco che Maren avrebbe scelto per ultima. E sua madre è **viva**: dirà quel nome mercoledì e non lo saprà mai.
 - Resta aperto: Maren dice a Tobias la ragione brutta — quattro prestiti al giorno fino al 22 le riempirebbero la sala. Non ha deciso.
+
+### cap_17
+- Succede: il 20 novembre, due giorni PRIMA dell'assemblea, Maren chiude lo scaffale con una striscia di carta marrone. Spiega a Skerrit il numero vero: ~7% di tutto il piccolo, in sei settimane.
+- Cambia: rinuncia alla leva nella settimana in cui avrebbe funzionato. Ines glielo dice: "Ilse avrebbe aspettato".
+- Resta aperto: se l'assemblea reggerà senza.
+
+### cap_18
+- Succede: 22 novembre, sala parrocchiale. Novanta sedie, 190 persone. Vane risponde a tutto senza usare suo figlio. Ines chiede una cosa sola: riscrivete le undici parole del rapporto. Maren si alza e dice di essere venuta per vendere.
+- Cambia: la tesi non è "non costruite" ma "descrivete bene ciò che abbattete".
+- Resta aperto: il voto del 30.
+
+### cap_19
+- Succede: lite in cortile con Tobias, per un bidone. Lui le dice che sta aspettando che sia il consiglio a decidere se resta. Mercoledì lei ammette la cosa vera: nessuno le ha mai chiesto se le piace stare lì.
+- Cambia: dice sì. Tobias rimanda il resto a dicembre, "nell'ordine giusto".
+- Resta aperto: la risposta di dicembre.
+
+### cap_20
+- Succede: Vane racconta cosa chiese suo padre nel 1990 — un pomeriggio di domenica ordinario, l'ultimo prima dell'ospedale. Ilse disse no spiegandogli il costo *suo*, non il proprio. Vane non chiede niente e le dice come voterà: a favore, come ha sempre detto.
+- Cambia: ammette che in ottobre avrebbe chiesto, e che le è grato di aver chiuso prima. Regola 13.
+- Resta aperto: nessuno.
+
+### cap_21
+- Succede: 30 novembre, sei a tre, passa. La descrizione però è stata riscritta ed è agli atti. Ines: nel 1996 non fermarono la scuola, le diedero diciannove anni.
+- Cambia: Maren capisce che può essere semplicemente una che vive lì. Scrive la lista COSE CHE NON SONO L'EDIFICIO, e nota di non averci messo lo scaffale.
+- Resta aperto: come si tiene una stanza senza l'edificio.
+
+### cap_22
+- Succede: il 9 dicembre trova nel quarto registro una lettera mai spedita del 4 settembre 2015. Ilse le aveva detto no al telefono per un motivo falso: voleva chiudere lo scaffale e richiamarla a venticinque anni, con un inizio pulito. Morì dieci giorni dopo.
+- Cambia: gli undici anni non erano un rifiuto, erano una protezione fatta male. Maren dice a sua madre che resta.
+- Resta aperto: cosa fare di quaranta libri.
+
+### cap_23
+- Succede: dicembre. Quattro opzioni per lo scaffale, tutte cattive. Sceglie la quarta: scrivere tutto. Un libro in quattro parti, con una pagina davanti dove chi verrà scrive quanti ne farà prima di cominciare. Dice a Cato che non li avrà, e perché.
+- Cambia: la catena di tre generazioni di donne che non si sono dette niente si interrompe.
+- Resta aperto: nessuno.
+
+### cap_24
+- Succede: 4 marzo. Un solo prestito, scelto da lei, a Peder Vane, il pomeriggio del 1990, quando ormai non c'è più niente che lui possa darle. Undici settimane dopo, sulla strada del porto, cerca il rancore di undici anni e non lo trova.
+- Cambia: **e non riesce a stabilire se sia stato lo scaffale o nove mesi in quel paese.** Non c'è modo di verificarlo, non c'è mai stato, ed è il progetto. Regola 14: non ti arriva nessuna ricevuta.
+- Resta aperto: niente. Il libro chiude ammettendo ciò che non si potrà sapere.
