@@ -34,7 +34,15 @@ from . import config, validators
 # aperto dal capitolo 15 al 24 ed e' costato una scena aggiunta in coda.
 MAX_CAPITOLI_FILO_APERTO = 6
 
-_RE_FILO = re.compile(r"^\s*[-*]\s*\[cap\s*(\d{1,2})\]\s*(.+)$", re.IGNORECASE | re.MULTILINE)
+# Un filo puo' essere dichiarato ad ARCO LUNGO: `- [cap 01, arco lungo] ...`. Serve perche'
+# la domanda centrale di un libro resta aperta per costruzione fino all'ultimo capitolo, e
+# un gate che la segnala a ogni blocco grida al lupo e si smette di ascoltarlo. Trovato al
+# primo uso reale su The Second-Hand Spellbook: "perche' Maren non e' tornata per undici
+# anni" e' il cuore del libro, si chiude al cap. 24, e il gate lo trattava come dimenticato.
+_RE_FILO = re.compile(
+    r"^\s*[-*]\s*\[cap\s*(\d{1,2})(,\s*arco\s+lungo)?\]\s*(.+)$",
+    re.IGNORECASE | re.MULTILINE,
+)
 _RE_SEZIONE_CAP = re.compile(r"^###\s*cap[_\s]*(\d{1,2})", re.IGNORECASE | re.MULTILINE)
 
 
@@ -76,7 +84,9 @@ class EsitoBlocco:
 def _fili_aperti(riassunti: str) -> list[tuple[int, str]]:
     """Legge la sezione 'Fili aperti': righe come '- [cap 07] Efrain aspetta aprile'."""
     testa = riassunti.split("## Capitoli")[0]
-    return [(int(n), testo.strip()) for n, testo in _RE_FILO.findall(testa)]
+    return [(int(n), testo.strip())
+            for n, arco_lungo, testo in _RE_FILO.findall(testa)
+            if not arco_lungo]
 
 
 def controlla(progetto) -> EsitoBlocco:
@@ -89,6 +99,7 @@ def controlla(progetto) -> EsitoBlocco:
 
     media = round(stato.parole_scritte / len(scritti)) if scritti else 0
     proiezione = media * totali
+    ritmo_bersaglio = cfg.get("parole_per_capitolo") or round(minimo / totali)
 
     esito = EsitoBlocco(
         slug=progetto.slug, capitoli_scritti=len(scritti), capitoli_totali=totali,
@@ -103,10 +114,15 @@ def controlla(progetto) -> EsitoBlocco:
     # Non "la media e' bassa" ma "il libro finira' corto", che e' la domanda vera.
     if proiezione < minimo:
         mancano = minimo - proiezione
+        # Si indica il ritmo del BERSAGLIO, non quello del minimo. Indicare il minimo
+        # rimanderebbe dritti al bordo della finestra, che e' l'errore che CP-1 ha appena
+        # tolto di mezzo: The Ninth Winter atterrato a 115,2 pagine e quattro riprese per
+        # tenerlo sopra. Trovato al primo uso reale, con una proiezione a 8 parole dal minimo.
         esito.blocchi.append(
             f"a {media} parole/capitolo il libro chiude a {proiezione} parole: "
-            f"{mancano} sotto il minimo. Servono ~{round(minimo / totali)} parole/capitolo. "
-            f"Allunga QUESTI capitoli adesso, non i prossimi."
+            f"{mancano} sotto il minimo di {minimo}. Il bersaglio e' "
+            f"{ritmo_bersaglio} parole/capitolo ({ritmo_bersaglio * totali} totali, "
+            f"in mezzo alla finestra). Allunga QUESTI capitoli adesso, non i prossimi."
         )
     elif proiezione > config.TARGET_WORD_COUNT_MAX:
         esito.avvisi.append(

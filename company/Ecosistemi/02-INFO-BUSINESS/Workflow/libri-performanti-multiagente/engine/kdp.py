@@ -282,7 +282,7 @@ def _cmd_blocco(args) -> int:
         log.error("%s", e)
         return CONFIG_ERRATA
     print(esito)
-    return OK if esito.si_prosegue else NON_PUBBLICABILE
+    return OK if esito.si_prosegue else VALIDAZIONE_FALLITA
 
 
 def _cmd_stato(args) -> int:
