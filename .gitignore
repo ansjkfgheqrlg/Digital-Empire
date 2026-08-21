@@ -130,3 +130,12 @@ YOUTUBE-AUTOMATION-FACTORY/memory/decisions/
 
 # Screenshot di debug della sessione Arena: contiene la UI loggata (account personale)
 YOUTUBE-AUTOMATION-FACTORY/05-TEMPLATES-E-KIT/arena_debug_final.png
+
+# --- COPIA RUNTIME PreventivoForge ALLA RADICE (2026-08-21, Gael) ---
+#     La copia BUONA e tracciata e' "Agency page/Clienti/Prof Autocad/preventivo-forge/".
+#     Questa a root/ e' solo scarto d'esecuzione: 508 MB di profilo Chrome con cookie,
+#     build/, dist/, logs/, __pycache__, PDF di archivio. Zero sorgenti. Mai su GitHub.
+/Clienti/
+
+# Profili browser Playwright/Selenium (cookie + sessioni loggate)
+**/browser-profile*/
