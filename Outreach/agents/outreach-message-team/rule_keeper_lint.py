@@ -22,6 +22,14 @@ VERBI_DEMAND_ALTO_ATTRITO = [
     "chiamami", "prenota una call", "prenota un appuntamento", "compra",
     "acquista ora", "paga", "firma", "iscriviti",
 ]
+# Pilastro 3 al msg2 ("VALORE/PROVA" per 02_SCRIPT_WHATSAPP_EMAIL_3MSG.md): non basta piu'
+# "niente parola prezzo" come al msg1 — il msg2 esiste apposta per offrire qualcosa di
+# concreto e gratuito (case study artificiale), quindi deve contenere un marcatore di
+# offerta reale, non solo essere silenzioso sui soldi.
+PAROLE_OFFERTA_VALORE = [
+    "gratis", "gratuit", "senza impegno", "ti preparo", "ti mando", "ti faccio vedere",
+    "esempio", "demo", "prova",
+]
 
 
 def _conta_parole(testo: str) -> int:
@@ -78,6 +86,18 @@ def lint_messaggio(testo: str, nome_attivita: str, citta: str, tentativo_numero:
                     "motivo": f"Il primo messaggio menziona '{parola}' — si chiede prima di dare valore (vedi caso Video Editor v1, bocciato).",
                 })
                 break
+
+    # Pilastro 3 al msg2 — deve contenere un'offerta di valore concreta (case study
+    # artificiale/esempio gratuito), non solo evitare il prezzo. Un msg2 senza questo e'
+    # un follow-up vuoto ("ciao, novita'?"), esattamente cio' che la Bibbia bolla come
+    # inefficace quanto il silenzio.
+    if tentativo_numero == 2:
+        if not any(_match_parola_intera(p, testo_senza_nome_l) if " " not in p else p in testo_senza_nome_l
+                   for p in PAROLE_OFFERTA_VALORE):
+            violazioni.append({
+                "pilastro": 3, "nome": "Valore anticipato",
+                "motivo": "Il messaggio 2 non contiene un'offerta di valore riconoscibile (gratis/esempio/demo/ti preparo) — il msg2 esiste per dare qualcosa di concreto, non solo per ricontattare.",
+            })
 
     # Pilastro 4 — Micro-commitment: CTA deve essere una domanda, non un comando ad alto impegno
     ultima_frase = testo.strip().split("\n")[-1] if testo.strip() else ""

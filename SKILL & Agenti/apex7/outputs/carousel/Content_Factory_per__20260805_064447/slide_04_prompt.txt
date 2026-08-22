@@ -1,0 +1,69 @@
+Sei un Art Director senior per Digital Empire. Devi replicare ESATTAMENTE lo stile reference fornito (black + red grain premium).
+
+SLIDE 1/8 - Label: "LA SOLUZIONE" - Icona: star rossa #FF3B1F
+
+Testo esatto da renderizzare: "Una fabbrica di contenuti per Content Factory per personal brand che lavora per te. Ricerca, scrittura, grafica, pubblicazione. Tutto automatico. Tutto nella tua voce. La macchina che pubblica al posto tuo. Brand voice cucita su di te. Da idea a post in 4 minuti per Content Factory per personal brand. Pubblicazione automatica."
+- REGOLA CONTRASTO TIPOGRAFICO: Parole da evidenziare in ROSSO SERIF ITALIC: fabbrica -> devono essere in elegant serif italic (Instrument Serif Italic / Playfair Display Italic / Editorial New Italic) colore #FF3B1F 110-140pt italic 12deg. Resto del titolo in sans extrabold 800-900 Satoshi / General Sans / Inter Tight 110-140pt colore bianco sporco #F5F5F0 con grain texture 3% leggera (NON flat #FFFFFF puro). Mix 70% sans white + 30% serif italic red.
+- Layout generale: Canvas 1080x1350px, margini 64px tutt'intorno, 952px content width.
+
+SFONDO - OBBLIGATORIO:
+- Base #000000 puro nero
+- OVERLAY film grain noise texture pesante 35% opacity, grain size 1-2px visibile su TUTTA immagine - EFFETTO CHIAVE, non deve sembrare vettoriale pulito digitale
+- 2 radial glow rosso-arancione #FF3B1F / #FF4D2E: uno top-right (posizione x=90% y=0%) radius 500-600px blur 120px opacity 50-60%, uno bottom-left o bottom-right radius 600px opacity 40% - effetto aura, non tinta piatta
+- Vignette dark 15% sui bordi
+- Bordo sinistro a volte glow rosso verticale sottile 40px width opacity 30% (solo per slide tipo IL PROBLEMA)
+
+TOP PILL:
+- Posizione top 64px, height 36px, border 1px solid rgba(255,255,255,0.25), border-radius 24px, padding 12px 20px, display flex gap 8px
+- Icona sinistra star colore #FF3B1F dimensione 16px (occhio per LA VERITÀ, ingranaggi per CONTENT FACTORY, stella per LA SOLUZIONE, nodo per COME FUNZIONA, grafico a barre per IL RISULTATO, scudo con ? per LA DOMANDA VERA, fulmine per INIZIA ORA, orologio per IL PROBLEMA)
+- Testo pill: monospace JetBrains Mono / Space Mono uppercase 13-15pt tracking 0.12em line-height 1 colore #E5E5E5 "LA SOLUZIONE"
+
+HEADLINE:
+- Inizio 180px from top, line-height 0.9 tight, letter-spacing -0.03em, max 4 righe, word-wrap balance
+- Sans white: bold extra, leggero grain/bump texture 3% (effetto stampa premium)
+- Serif italic red: italic 12deg, colore #FF3B1F
+
+BODY (se presente sotto titolo):
+- Font Inter Regular 22-26pt line-height 1.4 colore #9CA3AF #A1A1AA, gap 24px da headline, max 2 righe per paragrafo, mobile spacing
+
+COMPONENTI SPECIALI PER TIPO SLIDE:
+- TIPO "COME FUNZIONA" 3 step: crea 3 dark cards vertical list gap 16px. Ogni card: number left 01/02/03 in serif italic red #FF3B1F 80-90pt, divider verticale 1px rgba(255,255,255,0.1) gap 24px, titolo Ricerca/Generazione/Pubblicazione sans bold white 24pt, body gray 16pt. Card bg rgba(12,12,12,0.95) border rgba(255,255,255,0.08) radius 20px padding 28px 32px con inner highlight top 1px rgba(255,255,255,0.12)
+- TIPO "IL RISULTATO" metrics: 3 cards affiancate orizzontali gap 16px (su mobile verticale). Card: bg rgba(15,15,15,0.9) border rgba(255,255,255,0.08) radius 20px padding 24px. Header mono 11pt #6B7280 "TEMPO RISPARMIATO", numero grande 56-64pt white bold (97% white) o red italic (120+) #FF3B1F, sotto body 14pt gray #9CA3AF
+- TIPO "LA SOLUZIONE" card light: Una card grande centrale gradient diagonale 135deg #F5F5F2 -> #FFB088 / #FFC9A8 peach, radius 24px padding 36px. Header pill nera bg #0A0A0A con icona ingranaggi red + "CONTENT FACTORY" mono white 12pt. Titolo card sans bold black 28pt "La macchina che pubblica al posto tuo." Body Inter 16pt #2A2A2A. Lista check con icon check bold black + testo bold. Footer tags mono 11pt #6B6B6B "Trend Scraping · Brand Voice AI · Auto-Publishing" + divider 1px rgba(0,0,0,0.1)
+- TIPO "LA DOMANDA VERA": Titolo con virgolette angolari «» rosse #FF3B1F 40pt prima di "Ma" e dopo "AI?" + card dark grande con header mono 12pt "PERCHÉ NON SEMBRA AI" + 3 rows con check rosso #FF3B1F 24px + titolo bold white 18pt + body gray 14pt
+- TIPO "INIZIA ORA" CTA offer: Card offer dark bg rgba(12,12,12,0.95) border rgba(255,255,255,0.1) radius 20px padding 28px con header mono "OFFERTA LIMITATA · PRIMI 5 CLIENTI" 11pt #9CA3AF, prezzo barrato €6.400 gray #6B7280 32pt barrato rosso #FF3B1F 2px + prezzo grande €3.200 white 56pt bold + pill -50% bg #FF3B1F red text black bold 14pt radius 8px, sotto features mono "Setup completo · Brand voice import · 30gg supporto" 12pt #9CA3AF, bottone sotto gradient 90deg #FFFFFF #F5F5F0 -> #FF8A5B #FF6B35, text black bold 18pt uppercase "PRENOTA LA CALL GRATUITA →" radius 16px padding 22px 32px glow esterno orange 20px blur opacity 40%, sotto caption mono "Solo 30 minuti. Zero impegno. Solo chiarezza." 11pt #6B7280
+- TIPO "IL PROBLEMA" list: Headline grande con "3 ore." in red italic serif, sotto body gray 20pt, sezione "OGNI SETTIMANA SUCCEDE QUESTO" mono 12pt #6B7280 + 3 bullet con freccia → rossa #FF3B1F 20pt + testo white bold + gray regular
+
+FOOTER OBBLIGATORIO - BOTTOM:
+- Position absolute bottom 64px left 64px right 64px flex space-between align center
+- Left: page number "1/8" JetBrains Mono 14pt #6B7280
+- Right: logo container flex gap 12px align center - logo E quadrato 48x48px rounded 12px background gradient 135deg #FF8A5B #FF3B1F -> #FFE5D9, lettera E sans bold white 22pt centered, accanto testo "Digital Empire" Inter medium 18pt #E5E5E5 tracking -0.01em
+
+EFFETTI FINALI NON NEGOZIABILI:
+- Heavy film grain noise 35% su TUTTO, anche su testo bianco (fa sembrare stampato, non rendering pulito)
+- No flat vector illustration, no 3D cheesy unrealistic, no stock icons (solo icone monolinea rosse minimal)
+- Image must look like premium editorial print with grain, not clean digital
+- High detail, 300DPI, sharp text rendering
+- Atmosphere: dark luxury agency, underground, high-end, like Linear + Framer marketing with red accent
+
+Genera ESCLUSIVAMENTE l'immagine descritta 1080x1350. Niente testo extra fuori dal canvas. Solo PNG con grain.
+
+Testo esatto finale da stampare: "Una fabbrica di contenuti per Content Factory per personal brand che lavora per te. Ricerca, scrittura, grafica, pubblicazione. Tutto automatico. Tutto nella tua voce. La macchina che pubblica al posto tuo. Brand voice cucita su di te. Da idea a post in 4 minuti per Content Factory per personal brand. Pubblicazione automatica."
+
+
+
+
+ULTRA QUALITY ENHANCEMENT - APPLICA SU OGNI ELEMENTO (richiesta utente):
+- BACKGROUND: #000000 con ULTRA grain 38% overlay + extra photographic grain texture 1px su TUTTA superficie, grain visibile anche nelle aree glow rosso, non solo nero puro, ultra high resolution 8K texture, photographic film grain 35mm Kodak Portra + digital noise 15%
+- OGNI ELEMENTO CON GRANA: 
+  * Card dark: grain 22% overlay sulla card stessa, non solo background, texture cartacea sottile + film grain
+  * Card light: grain 18% su gradient peach, carta texturizzata
+  * Testo bianco: grain 5% leggero su ogni lettera, effetto stampa letterpress granulosa, non vettoriale liscio
+  * Pill: grain 12% sul bordo pill e background pill trasparente
+  * Bottone: grain 15% sul gradient bianco-arancione
+  * Logo E: grain 10% sul quadrato arancione
+- RISOLUZIONE E NITIDEZZA: 4K Ultra HD 2160x2700 (2x di 1080x1350) downscaled con Lanczos sharp per nitidezza estrema, DPI 300, subpixel anti-aliasing, ultra sharp focus, crisp edges, high-frequency detail, no blur, no soft focus, textura micro-dettaglio visibile, 8K texture maps
+- GRAIN UNIFICATO: stessa tipologia grain su tutti gli elementi per coerenza, non grain diverso per background vs card, usa film grain uniforme Kodak 2383 + subtle paper grain overlay 8%
+- EXTRA: aggiungere very subtle chromatic aberration 0.5px sui bordi glow rosso per realismo, lens grain, analog film look
+
+FOCUS: Nitidezza estrema mantenendo grain ultra quality - deve sembrare scattato con camera 8K e pellicola high-end, non rendering digitale morbido.

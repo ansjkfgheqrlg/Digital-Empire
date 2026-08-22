@@ -1,0 +1,882 @@
+{
+  "source_url": "https://m.mobile.de/auto-inserat/audi-tt-roadster-2-0-tfsi-alcantara-b-o-gepflegt-dortmund/449181583.html?ref=seo&refId=3318726f-e8db-a6db-aeaa-995606ea9c2b&searchId=3318726f-e8db-a6db-aeaa-995606ea9c2b&type=ad",
+  "scraped_at": "2026-07-05T09:10:46+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug"
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Cabrio/Roadster"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "8S/FV"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "2.0 TFSI"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "DI1377"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "98.500 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.984 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "169 kW (230 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "6,2 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "144 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "6,2 l/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "2"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "2/3"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Schaltgetriebe"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "07/2015"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Hinten, Vorne"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "BRILLANTSCHWARZ"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Schwarz Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Alcantara, Schwarz"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.395 kg"
+      },
+      {
+        "label": "Letzte Wartung (Datum)",
+        "tag": "lastMaintenanceDate",
+        "value": "02/2026"
+      },
+      {
+        "label": "Letzte Wartung (km)",
+        "tag": "lastMaintenanceMileage",
+        "value": "97.000 km"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      },
+      {
+        "label": "Tankgröße",
+        "tag": "fuelTankVolume",
+        "value": "50 l"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Audi TT",
+    "subTitle": "Roadster 2.0 TFSI*ALCANTARA*B&O*GEPFLEGT*",
+    "makeKey": "Audi",
+    "modelKey": "TT",
+    "isNew": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Alarmanlage",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Bluetooth",
+      "Bordcomputer",
+      "CD-Spieler",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Sitzeinstellung",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Frontantrieb",
+      "Garantie",
+      "Gepäckraumabtrennung",
+      "Innenspiegel autom. abblendend",
+      "Inspektion neu",
+      "Isofix",
+      "Lederlenkrad",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Navigationsvorbereitung",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Scheckheftgepflegt",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sommerreifen",
+      "Soundsystem",
+      "Sportfahrwerk",
+      "Sportpaket",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Tagfahrlicht",
+      "Tempomat",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "Umklappbarer Beifahrersitz",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Winterpaket",
+      "Xenonscheinwerfer",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "ALCANTARA",
+      "B&O",
+      "AUDI SCHECKHEFT"
+    ],
+    "sellerId": 37594948,
+    "priceRating": {
+      "rating": "GOOD_PRICE",
+      "ratingLabel": "Guter Preis",
+      "thresholdLabels": [
+        "16.100 €",
+        "20.900 €",
+        "22.500 €",
+        "25.100 €",
+        "26.900 €",
+        "29.900 €"
+      ],
+      "vehiclePriceOffset": 34
+    },
+    "segment": "Car",
+    "title": "Audi TT Roadster 2.0 TFSI*ALCANTARA*B&O*GEPFLEGT*",
+    "url": "https://suchen.mobile.de/auto-inserat/audi-tt-roadster-2-0-tfsi-alcantara-b-o-gepflegt-dortmund/449181583.html",
+    "vc": "Car",
+    "category": "Cabrio",
+    "id": 449181583,
+    "price": {
+      "gross": "21.450 €",
+      "grossAmount": 21450,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "kba": {
+      "hsn": "8307",
+      "tsn": "ABT"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_logo_24_name_NA_languages_NA"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Sonderausstattung:</b><br>Einparkhilfe hinten (APS), Innenspiegel mit Abblendautomatik, Komfort-Klimaautomatik 2-Zonen, Lendenwirbelstützen vorn, elektr. verstellbar, Media-Sound-Paket, Multi-Media-Interface MMI Navigation Plus mit MMI Touch, Sitzbezug / Polsterung: Alcantara/Leder, Sitzheizung vorn, Sound-System Bang &amp; Olufsen, Windschott elektr. versenkbar<br><br><b>Weitere Ausstattung:</b><br>Adaptives Bremslicht, Airbag Beifahrerseite abschaltbar, Akustik-Verdeck, Antriebs-Schlupfregelung (ASR), Antriebs-Schlupfregelung (ASR) mit EDS, AUX-IN-Anschluss, Außenspiegel asphärisch, links, Außenspiegel elektr. verstellbar, beide, Außenspiegel konvex, rechts, Außenspiegel Wagenfarbe, Blinkleuchten LED in Außenspiegel integriert, Bremsanlage mit Rekuperationssystem, Bremsassistent, Einstiegsleisten mit Aluminiumeinlage, Fahrassistenz-System: Spurhalteassistent (active lane assist), Heckleuchten LED, Heckscheibe heizbar, Heckspoiler (elektrisch ausfahrbar), Innenausstattung: Dekoreinlagen Feinlack, Isofix-Aufnahmen für Kindersitz an Beifahrersitz, Karosserie: 2-türig, Kombiinstrument digital (virtual cockpit), Kopf-Airbag-System (Sideguard), Lenksäule (Lenkrad) mech. Höhen-/Längsverstellung, LM-Felgen, Motor 2,0 Ltr. - 169 kW 16V TFSI, Multi-Media-Interface MMI Basic / MMI Radio, Nebelschlussleuchte integriert, Nichtraucher-Paket, Parkbremse elektro-mechanisch, Reifen-Reparaturkit, Reifendruck-Kontrollsystem, Reifenkontroll-Anzeige, Schadstoffarm nach Abgasnorm Euro 6, Seitenairbag vorn, Sitze vorn höhenverstellbar, Sportsitze vorn, Start/Stop-Anlage, Wärmeschutzverglasung (Dämmglas), Wärmeschutzverglasung grün getönt, Xenon-Scheinwerfer Plus (Abblend- und Fernlicht)<br><br>Innenspiegel automatisch abblendend, Sitzheizung vorn<br><br>Sonstiges<br><ul><li>Telefonische Terminvereinbarung zwecks Besichtigung und Probefahrt..</li><li>01732529545 - 0231 98667553 - 01623877877</li><li>Ihren Gebrauchten nehmen wir gerne zum fairen Preis in Zahlung.</li><li>12 Monate Gewährleistung,</li><li>Gebrauchtwagengarantie / Finanzierung möglich.</li><li>Trotz größter Sorgfalt können Inserat - oder Eingabefehler leider vorkommen.</li><li>Irrtum und Zwischenverkauf vorbehalten</li><li>Handy: 01627225555</li></ul><br><br><b>Ausstattung:</b><ul><li>Abgedunkelte Scheiben</li><li>Armlehne</li><li>Elektr. Fensterheber</li><li>Elektr. Seitenspiegel</li><li>Elektr. Sitzeinstellung</li><li>Innenspiegel autom. abblendend</li><li>Lederlenkrad</li><li>Lordosenstütze</li><li>Sitzheizung</li><li>Umklappbarer Beifahrersitz</li><li>Zentralverriegelung</li><li>Bordcomputer</li><li>Multifunktionslenkrad</li><li>Servolenkung</li><li>Volldigitales Kombiinstrument</li><li>Android Auto</li><li>Bluetooth</li><li>Apple CarPlay</li><li>CD-Spieler</li><li>Musikstreaming integriert</li><li>Navigationssystem</li><li>Navigationsvorbereitung</li><li>Soundsystem</li><li>Sprachsteuerung</li><li>Touchscreen</li><li>USB</li><li>Sommerreifen</li><li>Leichtmetallfelgen</li><li>Winterpaket</li></ul><br><b>Geschwindigkeitsregulierung:</b><ul><li>Tempomat</li></ul><br><b>Klimatisierung:</b><ul><li>2-Zonen-Klimaautomatik</li></ul><br><b>Sicherheit:</b><ul><li>Alarmanlage</li><li>ABS</li><li>Elektr. Wegfahrsperre</li><li>ESP</li><li>Fernlichtassistent</li><li>Gepäckraumabtrennung</li><li>Isofix</li><li>Lichtsensor</li><li>Müdigkeitswarner</li><li>Notbremsassistent</li><li>Regensensor</li><li>Reifendruckkontrolle</li><li>Spurhalteassistent</li><li>Start/Stopp-Automatik</li><li>Traktionskontrolle</li><li>Verkehrszeichenerkennung</li></ul><br><b>Airbags:</b><ul><li>Front-, Seiten- und weitere Airbags</li></ul><br><b>Tagfahrlicht (Art):</b><ul><li>Tagfahrlicht</li></ul><br><b>Hauptscheinwerfer:</b><ul><li>Xenonscheinwerfer</li></ul><br><b>Sport:</b><ul><li>Sportfahrwerk</li><li>Sportpaket</li><li>Sportsitze</li></ul><br><b>Innenausstattung:</b><ul><li>Alcantara</li></ul><br><b>Farbe der Innenausstattung:</b><ul><li>Schwarz</li></ul><br><br>Sonstiges<br><ul><li>Telefonische Terminvereinbarung zwecks Besichtigung und Probefahrt..</li><li>01732529545 - 0231 98667553 - 01623877877</li><li>Ihren Gebrauchten nehmen wir gerne zum fairen Preis in Zahlung.</li><li>12 Monate Gewährleistung,</li><li>Gebrauchtwagengarantie / Finanzierung möglich.</li><li>Trotz größter Sorgfalt können Inserat - oder Eingabefehler leider vorkommen.</li><li>Irrtum und Zwischenverkauf vorbehalten</li><li>Handy: 01627225555</li></ul>",
+    "contactInfo": {
+      "address1": "Arminiusstraße 54",
+      "address2": "DE-44149 Dortmund",
+      "name": "Autohaus Hinter dem Salze Dortmund",
+      "markingText": "<p><strong>Herzlich Willkommen im Autohaus Hinter dem Salze,</strong></p><p><strong>Im Autohaus Hinter dem Salze präsentieren wir Ihnen eine vielfältige Auswahl an Fahrzeugen, die für jedes Budget geeignet sind. Unser Anspruch ist es, sowohl den Verkauf als auch den Ankauf von PKWs auf transparente und faire Weise abzuwickeln. Alle unsere Fahrzeuge werden sorgfältig gewartet und von unserer bewährten Partnerwerkstatt gründlich geprüft, um sicherzustellen, dass sie in bestem Zustand sind. Wir legen großen Wert darauf, dass Sie bei uns nur qualitativ hochwertige Fahrzeuge finden, die Ihren Ansprüchen gerecht werden.</strong></p>",
+      "openingHours": [
+        {
+          "day": "Mo",
+          "time": "10:00 Uhr - 18:00 Uhr"
+        },
+        {
+          "day": "Di",
+          "time": "10:00 Uhr - 18:00 Uhr"
+        },
+        {
+          "day": "Mi",
+          "time": "10:00 Uhr - 18:00 Uhr"
+        },
+        {
+          "day": "Do",
+          "time": "10:00 Uhr - 18:00 Uhr"
+        },
+        {
+          "day": "Fr",
+          "time": "10:00 Uhr - 18:00 Uhr"
+        },
+        {
+          "day": "Sa",
+          "time": "10:00 Uhr - 18:00 Uhr"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 18.11.2024",
+      "rating": {
+        "count": 18,
+        "totalCount": 18,
+        "score": 4.4,
+        "scoreLocalized": "4,4",
+        "link": "https://www.mobile.de/bewertungen/AutohausHinterdemSalzeDortmund?lang=de",
+        "recommendationRate": 80,
+        "adRealityRate": 100,
+        "consultingScore": 4,
+        "friendlinessScore": 4.5,
+        "responseTimeScore": 4.722222222222222
+      },
+      "languages": "Deutsch",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9e/9ed8fccc-3097-4802-a145-57c0f65bfc64?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9e/9ed8fccc-3097-4802-a145-57c0f65bfc64?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/9e/9ed8fccc-3097-4802-a145-57c0f65bfc64?rule=mo-360 360w",
+        "alt": "Autohaus Hinter dem Salze Dortmund"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "Mobil",
+          "number": "+49 (0)162 7225555",
+          "uri": "tel:+491627225555"
+        },
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)231 98667553",
+          "uri": "tel:+4923198667553"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "Erhan Cevik",
+        "role": "Verkaufsberater"
+      },
+      "mapLink": "https://maps.google.com/maps?q=51.519255,7.419761100000001+(Autohaus%20Hinter%20dem%20Salze%20Dortmund)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 51.519255,
+        "lon": 7.419761100000001
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=37594948",
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/05/058019ad-bace-4927-8915-f6816e812904?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/05/058019ad-bace-4927-8915-f6816e812904?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/05/058019ad-bace-4927-8915-f6816e812904?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/05/058019ad-bace-4927-8915-f6816e812904?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 82,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=449181583&loanType=balloon&loanDuration=60&downPayment=4290&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 4290,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 17160,
+        "interestRateNominal": 4.88,
+        "interestRateEffective": 4.99,
+        "monthlyInstallment": 183.21,
+        "finalInstallment": 9652.5,
+        "totalInterest": 3302.02,
+        "totalAmount": 20462.02,
+        "localized": {
+          "downPayment": "4.290 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "17.160 €",
+          "interestRateNominal": "4,88%",
+          "interestRateEffective": "4,99%",
+          "monthlyInstallment": "184 €",
+          "finalInstallment": "9.652,50 €",
+          "totalInterest": "3.302,02 €",
+          "totalAmount": "20.462,02 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8207610-73fd-4b04-a7a8-bdc3b3242d55?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8207610-73fd-4b04-a7a8-bdc3b3242d55?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c8/c8207610-73fd-4b04-a7a8-bdc3b3242d55?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c8/c8207610-73fd-4b04-a7a8-bdc3b3242d55?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8207610-73fd-4b04-a7a8-bdc3b3242d55?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4ed11ad8-07fe-48bf-ae72-b91adc024eee?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4ed11ad8-07fe-48bf-ae72-b91adc024eee?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4e/4ed11ad8-07fe-48bf-ae72-b91adc024eee?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4e/4ed11ad8-07fe-48bf-ae72-b91adc024eee?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4ed11ad8-07fe-48bf-ae72-b91adc024eee?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/57/5745a9d1-be5b-4e78-a007-e5f4ae8c3a90?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/57/5745a9d1-be5b-4e78-a007-e5f4ae8c3a90?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/57/5745a9d1-be5b-4e78-a007-e5f4ae8c3a90?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/57/5745a9d1-be5b-4e78-a007-e5f4ae8c3a90?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/57/5745a9d1-be5b-4e78-a007-e5f4ae8c3a90?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/86/86d5f689-12a0-4e8f-a657-db5df4d3b453?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/86/86d5f689-12a0-4e8f-a657-db5df4d3b453?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/86/86d5f689-12a0-4e8f-a657-db5df4d3b453?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/86/86d5f689-12a0-4e8f-a657-db5df4d3b453?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/86/86d5f689-12a0-4e8f-a657-db5df4d3b453?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/90/90906bb4-b0cc-4038-aabd-0f3d61b04355?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/90/90906bb4-b0cc-4038-aabd-0f3d61b04355?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/90/90906bb4-b0cc-4038-aabd-0f3d61b04355?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/90/90906bb4-b0cc-4038-aabd-0f3d61b04355?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/90/90906bb4-b0cc-4038-aabd-0f3d61b04355?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c4/c402ad20-8f67-4eb3-8dce-ac405272ed1b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c4/c402ad20-8f67-4eb3-8dce-ac405272ed1b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c4/c402ad20-8f67-4eb3-8dce-ac405272ed1b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c4/c402ad20-8f67-4eb3-8dce-ac405272ed1b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c4/c402ad20-8f67-4eb3-8dce-ac405272ed1b?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1667905-e10e-40fd-b0ec-18c9cdb80687?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1667905-e10e-40fd-b0ec-18c9cdb80687?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a1/a1667905-e10e-40fd-b0ec-18c9cdb80687?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a1/a1667905-e10e-40fd-b0ec-18c9cdb80687?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1667905-e10e-40fd-b0ec-18c9cdb80687?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/53/53491143-d6c8-4981-9c1c-f47f6838c5f0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/53/53491143-d6c8-4981-9c1c-f47f6838c5f0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/53/53491143-d6c8-4981-9c1c-f47f6838c5f0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/53/53491143-d6c8-4981-9c1c-f47f6838c5f0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/53/53491143-d6c8-4981-9c1c-f47f6838c5f0?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b695a74d-ccb7-4190-aadc-f252815dbe0e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b695a74d-ccb7-4190-aadc-f252815dbe0e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b6/b695a74d-ccb7-4190-aadc-f252815dbe0e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b6/b695a74d-ccb7-4190-aadc-f252815dbe0e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b695a74d-ccb7-4190-aadc-f252815dbe0e?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/47/47ce9f49-2233-4d40-90a6-4a7e9baa12b4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/47/47ce9f49-2233-4d40-90a6-4a7e9baa12b4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/47/47ce9f49-2233-4d40-90a6-4a7e9baa12b4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/47/47ce9f49-2233-4d40-90a6-4a7e9baa12b4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/47/47ce9f49-2233-4d40-90a6-4a7e9baa12b4?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/97/973e1fa0-85f4-4b29-a8f3-f05e74e28484?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/97/973e1fa0-85f4-4b29-a8f3-f05e74e28484?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/97/973e1fa0-85f4-4b29-a8f3-f05e74e28484?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/97/973e1fa0-85f4-4b29-a8f3-f05e74e28484?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/97/973e1fa0-85f4-4b29-a8f3-f05e74e28484?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0f69b99-f824-4798-9588-b2aed1aad4e3?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0f69b99-f824-4798-9588-b2aed1aad4e3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b0/b0f69b99-f824-4798-9588-b2aed1aad4e3?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b0/b0f69b99-f824-4798-9588-b2aed1aad4e3?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0f69b99-f824-4798-9588-b2aed1aad4e3?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/40/4069532b-a87b-4b4a-9070-7ab63eca4d35?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/40/4069532b-a87b-4b4a-9070-7ab63eca4d35?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/40/4069532b-a87b-4b4a-9070-7ab63eca4d35?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/40/4069532b-a87b-4b4a-9070-7ab63eca4d35?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/40/4069532b-a87b-4b4a-9070-7ab63eca4d35?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d32f5ee-75b6-40d7-9c22-11fd5f7ddefe?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d32f5ee-75b6-40d7-9c22-11fd5f7ddefe?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5d/5d32f5ee-75b6-40d7-9c22-11fd5f7ddefe?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5d/5d32f5ee-75b6-40d7-9c22-11fd5f7ddefe?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d32f5ee-75b6-40d7-9c22-11fd5f7ddefe?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/0e/0ec85a13-98fa-409e-b3ef-b7075023ec50?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/0e/0ec85a13-98fa-409e-b3ef-b7075023ec50?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/0e/0ec85a13-98fa-409e-b3ef-b7075023ec50?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/0e/0ec85a13-98fa-409e-b3ef-b7075023ec50?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/0e/0ec85a13-98fa-409e-b3ef-b7075023ec50?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d794b78-bb1a-4b27-91b0-0311a9749d8b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d794b78-bb1a-4b27-91b0-0311a9749d8b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1d/1d794b78-bb1a-4b27-91b0-0311a9749d8b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1d/1d794b78-bb1a-4b27-91b0-0311a9749d8b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d794b78-bb1a-4b27-91b0-0311a9749d8b?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/97/97da61df-4b55-4090-a3fc-85ef9f22e8e6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/97/97da61df-4b55-4090-a3fc-85ef9f22e8e6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/97/97da61df-4b55-4090-a3fc-85ef9f22e8e6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/97/97da61df-4b55-4090-a3fc-85ef9f22e8e6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/97/97da61df-4b55-4090-a3fc-85ef9f22e8e6?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3821532-eab7-4c6e-bfd6-7bbd3851656c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3821532-eab7-4c6e-bfd6-7bbd3851656c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e3/e3821532-eab7-4c6e-bfd6-7bbd3851656c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e3/e3821532-eab7-4c6e-bfd6-7bbd3851656c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3821532-eab7-4c6e-bfd6-7bbd3851656c?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0f0f7a8-5192-4547-84f5-578e74299da8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0f0f7a8-5192-4547-84f5-578e74299da8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a0/a0f0f7a8-5192-4547-84f5-578e74299da8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a0/a0f0f7a8-5192-4547-84f5-578e74299da8?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0f0f7a8-5192-4547-84f5-578e74299da8?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/68/6899b6d2-a2fb-4d6d-9820-f253ad3c88e0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/68/6899b6d2-a2fb-4d6d-9820-f253ad3c88e0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/68/6899b6d2-a2fb-4d6d-9820-f253ad3c88e0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/68/6899b6d2-a2fb-4d6d-9820-f253ad3c88e0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/68/6899b6d2-a2fb-4d6d-9820-f253ad3c88e0?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/af/af538885-63d3-4ee9-90fe-bd2e8edebcf3?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/af/af538885-63d3-4ee9-90fe-bd2e8edebcf3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/af/af538885-63d3-4ee9-90fe-bd2e8edebcf3?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/af/af538885-63d3-4ee9-90fe-bd2e8edebcf3?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/af/af538885-63d3-4ee9-90fe-bd2e8edebcf3?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4dac49d1-7f0e-49a4-ac70-6f2304a66459?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4dac49d1-7f0e-49a4-ac70-6f2304a66459?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4d/4dac49d1-7f0e-49a4-ac70-6f2304a66459?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4d/4dac49d1-7f0e-49a4-ac70-6f2304a66459?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4dac49d1-7f0e-49a4-ac70-6f2304a66459?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/74/7499b498-1bf8-4834-86d3-8b187f6f0625?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/74/7499b498-1bf8-4834-86d3-8b187f6f0625?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/74/7499b498-1bf8-4834-86d3-8b187f6f0625?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/74/7499b498-1bf8-4834-86d3-8b187f6f0625?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/74/7499b498-1bf8-4834-86d3-8b187f6f0625?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/df/df101910-40d5-437f-80dc-f21f660a377d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/df/df101910-40d5-437f-80dc-f21f660a377d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/df/df101910-40d5-437f-80dc-f21f660a377d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/df/df101910-40d5-437f-80dc-f21f660a377d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/df/df101910-40d5-437f-80dc-f21f660a377d?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi TT"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8207610-73fd-4b04-a7a8-bdc3b3242d55?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8207610-73fd-4b04-a7a8-bdc3b3242d55?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=cossrpsbsmodelimprovementsv1&client.abtests=cossrpcorerecommenderpopularfiltersoff&client.abtests=accwebpublichomegaaa4off&adId=449181583"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=21450&c=Cabrio&ms=1900%3B23&id%21=449181583&vc=Car&sid=37594948"
+    },
+    "vehicleCondition": "used",
+    "make": "Audi",
+    "model": "TT",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/audi.html",
+            "name": "Audi"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/audi-tt.html",
+            "name": "TT"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Audi TT für 21.450 €",
+    "price_text": "Preis 21.450 € Guter Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug",
+      "Kategorie": "Cabrio/Roadster",
+      "Baureihe": "8S/FV",
+      "Ausstattungslinie": "2.0 TFSI",
+      "Fahrzeugnummer": "DI1377",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "98.500 km",
+      "Hubraum": "1.984 cm³",
+      "Leistung": "169 kW (230 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Energieverbrauch (komb.) 2": "6,2 l/100km",
+      "CO₂-Emissionen (komb.) 2": "144 g/km",
+      "Kraftstoffverbrauch 2": "6,2 l/100km (kombiniert)",
+      "Anzahl Sitzplätze": "2",
+      "Anzahl der Türen": "2/3",
+      "Getriebe": "Schaltgetriebe",
+      "Schadstoffklasse": "Euro6",
+      "Erstzulassung": "07/2015",
+      "Anzahl der Fahrzeughalter": "1",
+      "HU": "Neu",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Hinten, Vorne",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "BRILLANTSCHWARZ",
+      "Farbe": "Schwarz Metallic",
+      "Innenausstattung": "Alcantara, Schwarz",
+      "Gewicht": "1.395 kg",
+      "Letzte Wartung (Datum)": "02/2026",
+      "Letzte Wartung (km)": "97.000 km",
+      "Zylinder": "4",
+      "Tankgröße": "50 l"
+    },
+    "description": "Gebrauchtfahrzeug • 98.500 km • 169 kW (230 PS) • Benzin • Schaltgetriebe • 07/2015",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8207610-73fd-4b04-a7a8-bdc3b3242d55?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4e/4ed11ad8-07fe-48bf-ae72-b91adc024eee?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/57/5745a9d1-be5b-4e78-a007-e5f4ae8c3a90?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/86/86d5f689-12a0-4e8f-a657-db5df4d3b453?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/90/90906bb4-b0cc-4038-aabd-0f3d61b04355?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c4/c402ad20-8f67-4eb3-8dce-ac405272ed1b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1667905-e10e-40fd-b0ec-18c9cdb80687?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/53/53491143-d6c8-4981-9c1c-f47f6838c5f0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b6/b695a74d-ccb7-4190-aadc-f252815dbe0e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/47/47ce9f49-2233-4d40-90a6-4a7e9baa12b4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/97/973e1fa0-85f4-4b29-a8f3-f05e74e28484?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0f69b99-f824-4798-9588-b2aed1aad4e3?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/40/4069532b-a87b-4b4a-9070-7ab63eca4d35?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d32f5ee-75b6-40d7-9c22-11fd5f7ddefe?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0e/0ec85a13-98fa-409e-b3ef-b7075023ec50?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d794b78-bb1a-4b27-91b0-0311a9749d8b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/97/97da61df-4b55-4090-a3fc-85ef9f22e8e6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3821532-eab7-4c6e-bfd6-7bbd3851656c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0f0f7a8-5192-4547-84f5-578e74299da8?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/68/6899b6d2-a2fb-4d6d-9820-f253ad3c88e0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/af/af538885-63d3-4ee9-90fe-bd2e8edebcf3?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4d/4dac49d1-7f0e-49a4-ac70-6f2304a66459?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/74/7499b498-1bf8-4834-86d3-8b187f6f0625?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/df/df101910-40d5-437f-80dc-f21f660a377d?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8207610-73fd-4b04-a7a8-bdc3b3242d55?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4ed11ad8-07fe-48bf-ae72-b91adc024eee?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/57/5745a9d1-be5b-4e78-a007-e5f4ae8c3a90?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/86/86d5f689-12a0-4e8f-a657-db5df4d3b453?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/90/90906bb4-b0cc-4038-aabd-0f3d61b04355?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c4/c402ad20-8f67-4eb3-8dce-ac405272ed1b?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1667905-e10e-40fd-b0ec-18c9cdb80687?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/53/53491143-d6c8-4981-9c1c-f47f6838c5f0?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b695a74d-ccb7-4190-aadc-f252815dbe0e?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/47/47ce9f49-2233-4d40-90a6-4a7e9baa12b4?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/97/973e1fa0-85f4-4b29-a8f3-f05e74e28484?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0f69b99-f824-4798-9588-b2aed1aad4e3?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/40/4069532b-a87b-4b4a-9070-7ab63eca4d35?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d32f5ee-75b6-40d7-9c22-11fd5f7ddefe?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/0e/0ec85a13-98fa-409e-b3ef-b7075023ec50?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d794b78-bb1a-4b27-91b0-0311a9749d8b?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/97/97da61df-4b55-4090-a3fc-85ef9f22e8e6?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3821532-eab7-4c6e-bfd6-7bbd3851656c?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0f0f7a8-5192-4547-84f5-578e74299da8?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/68/6899b6d2-a2fb-4d6d-9820-f253ad3c88e0?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/af/af538885-63d3-4ee9-90fe-bd2e8edebcf3?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 21,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4dac49d1-7f0e-49a4-ac70-6f2304a66459?rule=mo-1600",
+      "local_path": "foto/21.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 22,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/74/7499b498-1bf8-4834-86d3-8b187f6f0625?rule=mo-1600",
+      "local_path": "foto/22.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 23,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/df/df101910-40d5-437f-80dc-f21f660a377d?rule=mo-1600",
+      "local_path": "foto/23.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,17 @@
+{"ts": "2026-07-06T18:27:59+00:00", "event": "run_created", "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=459113984&sb=rel&od=up&vc=Car&dam=false&fr=2018&ml=%3A80000&ms=16700%3B%3B%3B&ms=4%3B%3B%3B&ms=1700%3B%3B%3B&ms=1900%3B%3B%3B&ms=3100%3B%3B%3B&ms=3500%3B%3B%3B&ms=4700%3B%3B%3B&ms=8600%3B%3B%3B&ms=270%3B%3B%3B&ms=14600%3B%3B%3B&ms=12400%3B%3B%3B&ms=11650%3B%3B%3B&ms=14800%3B%3B%3B&ms=15200%3B%3B%3B&ms=15500%3B%3B%3B&ms=15900%3B%3B%3B&ms=16600%3B%3B%3B&ms=17200%3B%3B%3B&ms=20100%3B%3B%3B&ms=21600%3B%3B%3B&ms=137%3B%3B%3B&p=35000&pa=CAM_360_DEGREES&pa=REAR_VIEW_CAM&pageNumber=2&s=Car&ref=srp&searchId=e4c5b6ba-e01a-130f-35d0-6f7f2a07cbad&refId=e4c5b6ba-e01a-130f-35d0-6f7f2a07cbad"}
+{"ts": "2026-07-06T18:28:00+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-06T18:28:20+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-06T18:28:20+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-06T18:28:20+00:00", "event": "step", "step": "S2_parsing", "status": "done", "note": ""}
+{"ts": "2026-07-06T18:28:20+00:00", "event": "step", "step": "GATE_A", "status": "passed", "note": ""}
+{"ts": "2026-07-06T18:28:20+00:00", "event": "step", "step": "S3_translate_copy", "status": "running", "note": ""}
+{"ts": "2026-07-06T18:28:20+00:00", "event": "step", "step": "S3_translate_copy", "status": "done", "note": ""}
+{"ts": "2026-07-06T18:28:20+00:00", "event": "step", "step": "GATE_B", "status": "passed", "note": ""}
+{"ts": "2026-07-06T18:28:20+00:00", "event": "step", "step": "S4_pricing", "status": "running", "note": ""}
+{"ts": "2026-07-06T18:28:20+00:00", "event": "step", "step": "S4_pricing", "status": "done", "note": "Mercedes-Benz GLC 43 AMG AMG Line 59.537 €"}
+{"ts": "2026-07-06T18:28:20+00:00", "event": "step", "step": "GATE_C", "status": "passed", "note": ""}
+{"ts": "2026-07-06T18:28:20+00:00", "event": "step", "step": "S5_pdf_render", "status": "running", "note": ""}
+{"ts": "2026-07-06T18:28:25+00:00", "event": "step", "step": "S5_pdf_render", "status": "done", "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260706-202759-459113984\\preventivo_mercedes-benz-glc-43-amg.pdf"}
+{"ts": "2026-07-06T18:28:25+00:00", "event": "step", "step": "GATE_D", "status": "passed", "note": ""}
+{"ts": "2026-07-06T18:28:25+00:00", "event": "step", "step": "GATE_IMG", "status": "passed", "note": ""}
+{"ts": "2026-07-06T18:28:26+00:00", "event": "step", "step": "GATE_R", "status": "passed", "note": ""}

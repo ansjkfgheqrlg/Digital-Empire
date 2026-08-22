@@ -1,0 +1,1049 @@
+{
+  "source_url": "https://m.mobile.de/auto-inserat/renault-kadjar-t%C3%BCv-inspektion-neu-scheckheftgepflegt-m%C3%B6nchengladbach/459570928.html?ref=seo&refId=91653578-3c85-8e20-fd35-9fd76eebfc30&searchId=91653578-3c85-8e20-fd35-9fd76eebfc30&type=ad",
+  "scraped_at": "2026-07-05T09:58:11+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug"
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "RFE"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "Experience"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "78"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "74.000 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.197 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "96 kW (131 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "5,6 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "133 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "5,6 l/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Schaltgetriebe"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "12/2015"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "2"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Hinten, Vorne"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "Weiß"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Weiß Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Stoff, Schwarz"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "1.200 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "690 kg"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.381 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      },
+      {
+        "label": "Tankgröße",
+        "tag": "fuelTankVolume",
+        "value": "55 l"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Renault Kadjar",
+    "subTitle": "*Tüv&Inspektion Neu* Scheckheftgepflegt*",
+    "makeKey": "Renault",
+    "modelKey": "Kadjar",
+    "isNew": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Allwetterreifen",
+      "Armlehne",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "CD-Spieler",
+      "Dachreling",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Freisprecheinrichtung",
+      "Frontantrieb",
+      "Garantie",
+      "Geschwindigkeitsbegrenzer",
+      "Innenspiegel autom. abblendend",
+      "Inspektion neu",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Multifunktionslenkrad",
+      "Navigationsvorbereitung",
+      "Nebelscheinwerfer",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Reifendruckkontrolle",
+      "Reserverad",
+      "Scheckheftgepflegt",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Soundsystem",
+      "Sportpaket",
+      "Sprachsteuerung",
+      "Start/Stopp-Automatik",
+      "Tempomat",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "Tüv & Inspektion Neu",
+      "Scheckheftgepflegt",
+      "Allwetterreifen"
+    ],
+    "sellerId": 9285226,
+    "priceRating": {
+      "rating": "GOOD_PRICE",
+      "ratingLabel": "Guter Preis",
+      "thresholdLabels": [
+        "7.100 €",
+        "9.200 €",
+        "9.900 €",
+        "11.000 €",
+        "11.800 €",
+        "13.100 €"
+      ],
+      "vehiclePriceOffset": 78
+    },
+    "segment": "Car",
+    "title": "Renault Kadjar *Tüv&Inspektion Neu* Scheckheftgepflegt*",
+    "url": "https://suchen.mobile.de/auto-inserat/renault-kadjar-t%C3%BCv-inspektion-neu-scheckheftgepflegt-m%C3%B6nchengladbach/459570928.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 459570928,
+    "price": {
+      "gross": "9.750 €",
+      "grossAmount": 9750,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "kba": {
+      "hsn": "3333",
+      "tsn": "BDW"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_NA_35_name_photo_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Top-Finanzierung? Nur mit der Santander Bank!<br><br>✔️ Santander Bank – Ihr starker Partner für Fahrzeugfinanzierungen<br><br>✔️ Flexible Laufzeiten bis zu 120 Monate<br><br>✔️ Mit oder ohne Anzahlung möglich<br><br>✔️Schnelle Zusage &amp; attraktive Konditionen<br><br>In vielen Fällen günstiger als Ihre Hausbank!<br><br>Lassen Sie sich jetzt unverbindlich beraten – direkt bei uns im Auto Shop Mönchengladbach.<br><br>Finanzieren Sie Ihr Wunschfahrzeug ganz einfach – mit der Santander Bank!<br><br><br>✔️ Gerne nehmen wir auch Ihr altes Fahrzeug in Zahlung – egal wie alt und unabhängig vom Zustand. ✔️<br><br><br><br><br><br>Entdecken Sie den gepflegten Renault Kadjar SUV, Erstzulassung 2015, mit umfangreicher Ausstattung für Komfort und Sicherheit.</b><br><br>Dieser Frontantrieb-SUV in metallischem Weiß mit schwarzem Stoffinterieur bietet Platz für 5 Personen und überzeugt durch seine Vielseitigkeit.<br><br>Der 131 PS starke Benzinmotor mit 1197 ccm Hubraum und manuellem Getriebe entspricht der Euro-6-Norm (grüne Umweltplakette).<br><br><br>Die Ausstattung umfasst eine 2-Zonen-Klimaautomatik, Navigationsvorbereitung, LED-Tagfahrlicht, Einparksensoren vorne und hinten sowie zahlreiche Sicherheitssysteme wie Kollisionsvermeidung, ESP und Berganfahrhilfe.<br><br>Der Innenraum bietet Bluetooth-Konnektivität, USB-Anschluss, Multifunktionslenkrad aus Leder und Sprachsteuerung.<br><br><br><br><b>Sonderausstattung:<br></b><br><br><br><ul><li>City-Paket,</li><li>Reserverad als Notrad,</li></ul><br><br><br><b>Weitere Ausstattung:<br><br></b><br><ul><li>Airbag Beifahrerseite abschaltbar,</li><li>Airbag Fahrer-/Beifahrerseite,</li><li>Antischlupfregelung (ASR),</li><li>Audiosystem: Radio mit CD-Player (MP3-fähig),</li><li>Außenspiegel asphärisch, links,</li><li>Außenspiegel elektr. verstell- und heizbar,</li><li>Außenspiegel Wagenfarbe, Blinkleuchten LED in Außenspiegel integriert,</li><li>Bremsassistent,</li><li>Coming-Home-Lichtfunktion,</li><li>Dachhimmel Grau,</li><li>Dachreling verchromt,</li><li>Fahrassistenz-System: Berganfahr-Assistent (HSA),</li><li>Fensterheber elektrisch vorn + hinten,</li><li>Fensterzierleisten verchromt,</li><li>Gepäckraumabdeckung / Rollo,</li><li>Geschwindigkeits-Begrenzeranlage,</li><li>Heckleuchten LED,</li><li>Isofix-Aufnahmen für Kindersitz,</li><li>Karosserie: 5-türig,</li><li>Komfort-Paket,</li><li>Kopf-Airbag-System hinten,</li><li>Kopf-Airbag-System vorn,</li><li>Lendenwirbelstütze Sitz vorn links,</li><li>Lenksäule (Lenkrad) höhenverstellbar,</li><li>Lenksäule (Lenkrad) längsverstellbar,</li><li>LM-Felgen,</li><li>Motor 1,2 Ltr. - 96 kW TCE Energy,</li><li>Parkbremse elektrisch,</li><li>Radstand 2646 mm,</li><li>Reifendruck-Kontrollsystem,</li><li>Rücksitzbank geteilt/klappbar (1/3-2/3),</li><li>Schadstoffarm nach Abgasnorm Euro 6,</li><li>Schalt-/Wählhebelgriff Leder,</li><li>Seitenairbag vorn,</li><li>Seitenschutzleisten mit Chromeinlage,</li><li>Sitz vorn links höhenverstellbar,</li><li>Sitzbezug / Polsterung: Stoff,</li><li>Start/Stop-Anlage,</li><li>Steckdose (12V-Anschluß) 2.Sitzreihe,</li><li>Unterfahrschutz vorn und hinten lackiert,</li><li>Verglasung hinten abgedunkelt (Privacy Glass),</li></ul><br><br><br><br><hr><br><br><br><b>Unsere Öffnungszeiten sind:</b><br><br><b>Montag bis Freitag von 10:00 bis 18:00 Uhr</b><br><b>Samstag von 10:00 bis 14:00 Uhr<br>Sonntag von 12:00 bis 16:00 Uhr</b><br><br><br><br><b>Termine außerhalb dieser Zeiten nach Vereinbarung möglich.</b><br><br><br><b>Probefahrten und Besichtigungen sind nach telefonischer Absprache möglich.</b><br><br><br><br><b>Wir bieten auch Inzahlungnahme sowie An- und Abmeldeservice an.</b><br><b>Gegen Aufpreis ist auch eine Anlieferung oder der Transport möglich.</b><br><br><br><br><b>Wichtiger Hinweis/Wichtige Information:</b><br><br><b>Trotz sorgfältiger Überprüfung aller Details in unserem Angebot kann es vorkommen, dass sich Fehler einschleichen. Teilweise können Übertragungsfehler in den Systemen der verschiedenen Plattformanbieter auftreten. Daher möchten wir darauf hinweisen, dass alle Angaben ohne Gewähr sind und keinen Rechtsanspruch darstellen.</b><br><br><b>Rechtliches:</b><br><br><b>Diese Verkaufsanzeige stellt kein Angebot im Sinne des §145 BGB dar.</b><br><b>Vielmehr handelt es sich um Informationen zur Vertragsanbahnung.</b><br><b>Die hier gemachten Angaben sind ohne Gewähr und stellen somit keine zugesicherten Eigenschaften dar.</b><br>",
+    "contactInfo": {
+      "address1": "Am Alsbach 8",
+      "address2": "DE-41066 Mönchengladbach",
+      "name": "Auto Shop Mönchengladbach",
+      "markingText": "<div>Wir sind für Sie da: Montag bis Freitag von 10:00 bis 18:00 Uhr, Samstag von 10:00 bis 14:00 Uhr, an Sonn-Feiertagen von 12:00 Uhr bis 16:00 Uhr und Termine außerhalb unserer Öffnungszeiten sind nach vorheriger Absprache möglich. Wir hoffen, dass Sie Ihr Fahrzeug bei uns finden. Andernfalls sprechen Sie uns einfach an.<br /></div>",
+      "openingHours": [
+        {
+          "time": "10:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "10:00 Uhr - 14:00 Uhr",
+          "day": "Sa"
+        },
+        {
+          "time": "12:00 Uhr - 16:00 Uhr (Schautag)",
+          "day": "So"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 05.02.2013",
+      "rating": {
+        "count": 41,
+        "totalCount": 142,
+        "score": 5,
+        "scoreLocalized": "5,0",
+        "link": "https://www.mobile.de/bewertungen/AutoShopMoenchengladbach?lang=de",
+        "recommendationRate": 100,
+        "adRealityRate": 100,
+        "consultingScore": 4.975609756097561,
+        "friendlinessScore": 5,
+        "responseTimeScore": 4.975609756097561
+      },
+      "languages": "Deutsch, English, Türkçe",
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "Mobil",
+          "number": "+49 (0)162 7990799",
+          "uri": "tel:+491627990799"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "logo": {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/44/44444ce3-99f7-4269-959c-58a9bfc21580?rule=mo-80",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/44/44444ce3-99f7-4269-959c-58a9bfc21580?rule=mo-80 80w, https://img.classistatic.de/api/v1/mo-prod/images/44/44444ce3-99f7-4269-959c-58a9bfc21580?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/44/44444ce3-99f7-4269-959c-58a9bfc21580?rule=mo-240 240w"
+        },
+        "name": "Ismail Serin",
+        "role": "Verkaufsleiter- Fahrzeugankauf"
+      },
+      "mapLink": "https://maps.google.com/maps?q=51.209871,6.462522+(Auto%20Shop%20M%C3%B6nchengladbach)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 51.209871,
+        "lon": 6.462522
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=9285226",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/75/750a8776-2c3a-43c5-8229-56be19567c41?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/75/750a8776-2c3a-43c5-8229-56be19567c41?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/75/750a8776-2c3a-43c5-8229-56be19567c41?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/75/750a8776-2c3a-43c5-8229-56be19567c41?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/75/750a8776-2c3a-43c5-8229-56be19567c41?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/aa/aad0f231-8e3e-4f12-94b1-3d7ccfabaf4b?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/aa/aad0f231-8e3e-4f12-94b1-3d7ccfabaf4b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/aa/aad0f231-8e3e-4f12-94b1-3d7ccfabaf4b?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/aa/aad0f231-8e3e-4f12-94b1-3d7ccfabaf4b?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/aa/aad0f231-8e3e-4f12-94b1-3d7ccfabaf4b?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/f4/f43fddb5-2410-4e97-b460-cbf1fc42efa8?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f4/f43fddb5-2410-4e97-b460-cbf1fc42efa8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f4/f43fddb5-2410-4e97-b460-cbf1fc42efa8?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/f4/f43fddb5-2410-4e97-b460-cbf1fc42efa8?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f4/f43fddb5-2410-4e97-b460-cbf1fc42efa8?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/fd/fd3149ff-e140-444d-a413-d94982c32e24?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fd/fd3149ff-e140-444d-a413-d94982c32e24?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fd/fd3149ff-e140-444d-a413-d94982c32e24?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/fd/fd3149ff-e140-444d-a413-d94982c32e24?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fd/fd3149ff-e140-444d-a413-d94982c32e24?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d25437a8-f2ff-47b1-8468-3c4d904ae2ef?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d25437a8-f2ff-47b1-8468-3c4d904ae2ef?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d2/d25437a8-f2ff-47b1-8468-3c4d904ae2ef?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/d2/d25437a8-f2ff-47b1-8468-3c4d904ae2ef?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d25437a8-f2ff-47b1-8468-3c4d904ae2ef?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa385c65-1e61-4750-8113-51bae646ec5a?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa385c65-1e61-4750-8113-51bae646ec5a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fa/fa385c65-1e61-4750-8113-51bae646ec5a?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/fa/fa385c65-1e61-4750-8113-51bae646ec5a?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa385c65-1e61-4750-8113-51bae646ec5a?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/72/72152006-2276-46ed-bb20-0bbb7057742f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/72/72152006-2276-46ed-bb20-0bbb7057742f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/72/72152006-2276-46ed-bb20-0bbb7057742f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/72/72152006-2276-46ed-bb20-0bbb7057742f?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 59,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=459570928&loanType=balloon&loanDuration=60&downPayment=1950&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 1950,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 7800,
+        "interestRateNominal": 6.78,
+        "interestRateEffective": 6.99,
+        "monthlyInstallment": 93.29,
+        "finalInstallment": 4387.5,
+        "totalInterest": 2091.89,
+        "totalAmount": 9891.89,
+        "localized": {
+          "downPayment": "1.950 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "7.800 €",
+          "interestRateNominal": "6,78%",
+          "interestRateEffective": "6,99%",
+          "monthlyInstallment": "94 €",
+          "finalInstallment": "4.387,50 €",
+          "totalInterest": "2.091,89 €",
+          "totalAmount": "9.891,89 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/21/21de02a8-1c29-4439-856b-919ff8401a34?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/21/21de02a8-1c29-4439-856b-919ff8401a34?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/21/21de02a8-1c29-4439-856b-919ff8401a34?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/21/21de02a8-1c29-4439-856b-919ff8401a34?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/21/21de02a8-1c29-4439-856b-919ff8401a34?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/33/33fbb49d-9707-43a3-b146-c7a78e63f905?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/33/33fbb49d-9707-43a3-b146-c7a78e63f905?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/33/33fbb49d-9707-43a3-b146-c7a78e63f905?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/33/33fbb49d-9707-43a3-b146-c7a78e63f905?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/33/33fbb49d-9707-43a3-b146-c7a78e63f905?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/53/536a43af-32ae-4390-b296-642dcc988fca?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/53/536a43af-32ae-4390-b296-642dcc988fca?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/53/536a43af-32ae-4390-b296-642dcc988fca?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/53/536a43af-32ae-4390-b296-642dcc988fca?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/53/536a43af-32ae-4390-b296-642dcc988fca?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/69/692c3d99-db1e-4b6c-a431-180852f94bfd?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/69/692c3d99-db1e-4b6c-a431-180852f94bfd?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/69/692c3d99-db1e-4b6c-a431-180852f94bfd?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/69/692c3d99-db1e-4b6c-a431-180852f94bfd?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/69/692c3d99-db1e-4b6c-a431-180852f94bfd?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/3d/3d38f467-4a7e-4205-ae85-447d2051248f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/3d/3d38f467-4a7e-4205-ae85-447d2051248f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/3d/3d38f467-4a7e-4205-ae85-447d2051248f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/3d/3d38f467-4a7e-4205-ae85-447d2051248f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/3d/3d38f467-4a7e-4205-ae85-447d2051248f?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/35/35f97bdb-b431-4fa0-934d-28e48ea5894e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/35/35f97bdb-b431-4fa0-934d-28e48ea5894e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/35/35f97bdb-b431-4fa0-934d-28e48ea5894e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/35/35f97bdb-b431-4fa0-934d-28e48ea5894e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/35/35f97bdb-b431-4fa0-934d-28e48ea5894e?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c1e56eb-a5d1-4fbd-a969-8a481da8fe9a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c1e56eb-a5d1-4fbd-a969-8a481da8fe9a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/9c/9c1e56eb-a5d1-4fbd-a969-8a481da8fe9a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/9c/9c1e56eb-a5d1-4fbd-a969-8a481da8fe9a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c1e56eb-a5d1-4fbd-a969-8a481da8fe9a?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/be/be024963-1187-4c82-a055-f68d782ee3da?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/be/be024963-1187-4c82-a055-f68d782ee3da?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/be/be024963-1187-4c82-a055-f68d782ee3da?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/be/be024963-1187-4c82-a055-f68d782ee3da?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/be/be024963-1187-4c82-a055-f68d782ee3da?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/88/88e4e5ce-1c4e-469e-b71c-abc58973c5cf?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/88/88e4e5ce-1c4e-469e-b71c-abc58973c5cf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/88/88e4e5ce-1c4e-469e-b71c-abc58973c5cf?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/88/88e4e5ce-1c4e-469e-b71c-abc58973c5cf?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/88/88e4e5ce-1c4e-469e-b71c-abc58973c5cf?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/56/56c55bbe-91f2-4369-9872-d52805650dfa?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/56/56c55bbe-91f2-4369-9872-d52805650dfa?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/56/56c55bbe-91f2-4369-9872-d52805650dfa?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/56/56c55bbe-91f2-4369-9872-d52805650dfa?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/56/56c55bbe-91f2-4369-9872-d52805650dfa?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb979b9b-3208-4030-b27d-019fd00d7d4e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb979b9b-3208-4030-b27d-019fd00d7d4e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bb/bb979b9b-3208-4030-b27d-019fd00d7d4e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bb/bb979b9b-3208-4030-b27d-019fd00d7d4e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb979b9b-3208-4030-b27d-019fd00d7d4e?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e56b1bdd-fac2-4c5b-8654-98f98a01cd58?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e56b1bdd-fac2-4c5b-8654-98f98a01cd58?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e5/e56b1bdd-fac2-4c5b-8654-98f98a01cd58?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e5/e56b1bdd-fac2-4c5b-8654-98f98a01cd58?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e56b1bdd-fac2-4c5b-8654-98f98a01cd58?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f83bff8-64b4-4c67-a1af-b6d37027901c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f83bff8-64b4-4c67-a1af-b6d37027901c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8f/8f83bff8-64b4-4c67-a1af-b6d37027901c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/8f/8f83bff8-64b4-4c67-a1af-b6d37027901c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f83bff8-64b4-4c67-a1af-b6d37027901c?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/96/967873ae-add0-4155-a36f-1585fedff02e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/96/967873ae-add0-4155-a36f-1585fedff02e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/96/967873ae-add0-4155-a36f-1585fedff02e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/96/967873ae-add0-4155-a36f-1585fedff02e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/96/967873ae-add0-4155-a36f-1585fedff02e?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b7b08234-a2f6-49f6-b1a7-f74e60fbe8e6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b7b08234-a2f6-49f6-b1a7-f74e60fbe8e6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b7/b7b08234-a2f6-49f6-b1a7-f74e60fbe8e6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b7/b7b08234-a2f6-49f6-b1a7-f74e60fbe8e6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b7b08234-a2f6-49f6-b1a7-f74e60fbe8e6?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/06/06d65352-e838-433d-ad2e-4562d77e24e6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/06/06d65352-e838-433d-ad2e-4562d77e24e6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/06/06d65352-e838-433d-ad2e-4562d77e24e6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/06/06d65352-e838-433d-ad2e-4562d77e24e6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/06/06d65352-e838-433d-ad2e-4562d77e24e6?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/80/8042c075-5b09-4b88-bd73-52ce10f97705?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/80/8042c075-5b09-4b88-bd73-52ce10f97705?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/80/8042c075-5b09-4b88-bd73-52ce10f97705?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/80/8042c075-5b09-4b88-bd73-52ce10f97705?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/80/8042c075-5b09-4b88-bd73-52ce10f97705?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5bd01d08-bda2-446d-876b-5a4291d43093?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5bd01d08-bda2-446d-876b-5a4291d43093?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5bd01d08-bda2-446d-876b-5a4291d43093?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5bd01d08-bda2-446d-876b-5a4291d43093?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5bd01d08-bda2-446d-876b-5a4291d43093?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0813fd8-f7a0-412b-83ea-4549c8c7da95?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0813fd8-f7a0-412b-83ea-4549c8c7da95?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e0/e0813fd8-f7a0-412b-83ea-4549c8c7da95?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e0/e0813fd8-f7a0-412b-83ea-4549c8c7da95?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0813fd8-f7a0-412b-83ea-4549c8c7da95?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/30/301d5262-e420-4ce8-ad10-d0fbfa1a4456?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/30/301d5262-e420-4ce8-ad10-d0fbfa1a4456?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/30/301d5262-e420-4ce8-ad10-d0fbfa1a4456?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/30/301d5262-e420-4ce8-ad10-d0fbfa1a4456?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/30/301d5262-e420-4ce8-ad10-d0fbfa1a4456?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a3/a3e18db6-4802-4e5a-b47f-14541bdf24bb?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a3/a3e18db6-4802-4e5a-b47f-14541bdf24bb?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a3/a3e18db6-4802-4e5a-b47f-14541bdf24bb?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a3/a3e18db6-4802-4e5a-b47f-14541bdf24bb?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a3/a3e18db6-4802-4e5a-b47f-14541bdf24bb?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fbb51c-809a-431f-a3ef-e83bfa4861b6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fbb51c-809a-431f-a3ef-e83bfa4861b6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fbb51c-809a-431f-a3ef-e83bfa4861b6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fbb51c-809a-431f-a3ef-e83bfa4861b6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fbb51c-809a-431f-a3ef-e83bfa4861b6?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f0/f0614782-e40c-4871-a093-794bd09e9566?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f0/f0614782-e40c-4871-a093-794bd09e9566?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f0/f0614782-e40c-4871-a093-794bd09e9566?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f0/f0614782-e40c-4871-a093-794bd09e9566?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f0/f0614782-e40c-4871-a093-794bd09e9566?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae3abbbf-7500-4949-b9c3-54cd10e83979?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae3abbbf-7500-4949-b9c3-54cd10e83979?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ae/ae3abbbf-7500-4949-b9c3-54cd10e83979?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ae/ae3abbbf-7500-4949-b9c3-54cd10e83979?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae3abbbf-7500-4949-b9c3-54cd10e83979?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6123f93-3eb5-4a01-be3d-b9e02f9a244a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6123f93-3eb5-4a01-be3d-b9e02f9a244a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c6/c6123f93-3eb5-4a01-be3d-b9e02f9a244a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c6/c6123f93-3eb5-4a01-be3d-b9e02f9a244a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6123f93-3eb5-4a01-be3d-b9e02f9a244a?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/69/696fc59c-454e-4dbe-b6c0-a9437b02b8fc?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/69/696fc59c-454e-4dbe-b6c0-a9437b02b8fc?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/69/696fc59c-454e-4dbe-b6c0-a9437b02b8fc?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/69/696fc59c-454e-4dbe-b6c0-a9437b02b8fc?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/69/696fc59c-454e-4dbe-b6c0-a9437b02b8fc?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4858870-241c-4eba-894d-a7012e6c578e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4858870-241c-4eba-894d-a7012e6c578e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d4/d4858870-241c-4eba-894d-a7012e6c578e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d4/d4858870-241c-4eba-894d-a7012e6c578e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4858870-241c-4eba-894d-a7012e6c578e?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f6110795-3fe0-4e51-9cc8-043445d85958?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f6110795-3fe0-4e51-9cc8-043445d85958?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f6/f6110795-3fe0-4e51-9cc8-043445d85958?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f6/f6110795-3fe0-4e51-9cc8-043445d85958?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f6110795-3fe0-4e51-9cc8-043445d85958?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3c66fc2-dd42-49e0-8a55-1b7beb4401df?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3c66fc2-dd42-49e0-8a55-1b7beb4401df?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e3/e3c66fc2-dd42-49e0-8a55-1b7beb4401df?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e3/e3c66fc2-dd42-49e0-8a55-1b7beb4401df?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3c66fc2-dd42-49e0-8a55-1b7beb4401df?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b47bcc8-6348-40be-af52-91837d9149b3?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b47bcc8-6348-40be-af52-91837d9149b3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1b/1b47bcc8-6348-40be-af52-91837d9149b3?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1b/1b47bcc8-6348-40be-af52-91837d9149b3?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b47bcc8-6348-40be-af52-91837d9149b3?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ba/bae97d2b-f31d-4b1b-96ff-6dfa5923169e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ba/bae97d2b-f31d-4b1b-96ff-6dfa5923169e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ba/bae97d2b-f31d-4b1b-96ff-6dfa5923169e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ba/bae97d2b-f31d-4b1b-96ff-6dfa5923169e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ba/bae97d2b-f31d-4b1b-96ff-6dfa5923169e?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a2e2170-3887-4d14-ae03-e8cf959e8d5e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a2e2170-3887-4d14-ae03-e8cf959e8d5e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4a/4a2e2170-3887-4d14-ae03-e8cf959e8d5e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4a/4a2e2170-3887-4d14-ae03-e8cf959e8d5e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a2e2170-3887-4d14-ae03-e8cf959e8d5e?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/39/39a3e138-4d45-41c7-8912-2945851a521d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/39/39a3e138-4d45-41c7-8912-2945851a521d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/39/39a3e138-4d45-41c7-8912-2945851a521d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/39/39a3e138-4d45-41c7-8912-2945851a521d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/39/39a3e138-4d45-41c7-8912-2945851a521d?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b73fcb4e-16c6-444b-a542-dec241872808?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b73fcb4e-16c6-444b-a542-dec241872808?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b7/b73fcb4e-16c6-444b-a542-dec241872808?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b7/b73fcb4e-16c6-444b-a542-dec241872808?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b73fcb4e-16c6-444b-a542-dec241872808?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/2e/2e1e6c67-2b69-420a-9293-4e299a06623e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/2e/2e1e6c67-2b69-420a-9293-4e299a06623e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/2e/2e1e6c67-2b69-420a-9293-4e299a06623e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/2e/2e1e6c67-2b69-420a-9293-4e299a06623e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/2e/2e1e6c67-2b69-420a-9293-4e299a06623e?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Kadjar"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/21/21de02a8-1c29-4439-856b-919ff8401a34?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/21/21de02a8-1c29-4439-856b-919ff8401a34?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=accwebpublichomegaaa4on&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpsbsmodelimprovementsv1&client.abtests=cossrpcorerecommenderpopularfiltersoff&adId=459570928"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=9750&c=OffRoad&ms=20700%3B48&id%21=459570928&vc=Car&sid=9285226"
+    },
+    "vehicleCondition": "used",
+    "make": "Renault",
+    "model": "Kadjar",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/renault.html",
+            "name": "Renault"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/renault-kadjar.html",
+            "name": "Kadjar"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Renault Kadjar für 9.750 €",
+    "price_text": "Preis 9.750 € Guter Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Baureihe": "RFE",
+      "Ausstattungslinie": "Experience",
+      "Fahrzeugnummer": "78",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "74.000 km",
+      "Hubraum": "1.197 cm³",
+      "Leistung": "96 kW (131 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Energieverbrauch (komb.) 2": "5,6 l/100km",
+      "CO₂-Emissionen (komb.) 2": "133 g/km",
+      "Kraftstoffverbrauch 2": "5,6 l/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Schaltgetriebe",
+      "Schadstoffklasse": "Euro6",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "12/2015",
+      "Anzahl der Fahrzeughalter": "2",
+      "HU": "Neu",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Hinten, Vorne",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "Weiß",
+      "Farbe": "Weiß Metallic",
+      "Innenausstattung": "Stoff, Schwarz",
+      "Anhängelast gebremst": "1.200 kg",
+      "Anhängelast ungebremst": "690 kg",
+      "Gewicht": "1.381 kg",
+      "Zylinder": "4",
+      "Tankgröße": "55 l"
+    },
+    "description": "Gebrauchtfahrzeug • 74.000 km • 96 kW (131 PS) • Benzin • Schaltgetriebe • 12/2015",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/21/21de02a8-1c29-4439-856b-919ff8401a34?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/33/33fbb49d-9707-43a3-b146-c7a78e63f905?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/53/536a43af-32ae-4390-b296-642dcc988fca?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/69/692c3d99-db1e-4b6c-a431-180852f94bfd?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3d/3d38f467-4a7e-4205-ae85-447d2051248f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/35/35f97bdb-b431-4fa0-934d-28e48ea5894e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c1e56eb-a5d1-4fbd-a969-8a481da8fe9a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/be/be024963-1187-4c82-a055-f68d782ee3da?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/88/88e4e5ce-1c4e-469e-b71c-abc58973c5cf?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/56/56c55bbe-91f2-4369-9872-d52805650dfa?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb979b9b-3208-4030-b27d-019fd00d7d4e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e5/e56b1bdd-fac2-4c5b-8654-98f98a01cd58?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f83bff8-64b4-4c67-a1af-b6d37027901c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/96/967873ae-add0-4155-a36f-1585fedff02e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b7/b7b08234-a2f6-49f6-b1a7-f74e60fbe8e6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/06/06d65352-e838-433d-ad2e-4562d77e24e6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/80/8042c075-5b09-4b88-bd73-52ce10f97705?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5b/5bd01d08-bda2-446d-876b-5a4291d43093?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0813fd8-f7a0-412b-83ea-4549c8c7da95?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/30/301d5262-e420-4ce8-ad10-d0fbfa1a4456?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a3/a3e18db6-4802-4e5a-b47f-14541bdf24bb?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fbb51c-809a-431f-a3ef-e83bfa4861b6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f0/f0614782-e40c-4871-a093-794bd09e9566?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae3abbbf-7500-4949-b9c3-54cd10e83979?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6123f93-3eb5-4a01-be3d-b9e02f9a244a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/69/696fc59c-454e-4dbe-b6c0-a9437b02b8fc?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4858870-241c-4eba-894d-a7012e6c578e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f6/f6110795-3fe0-4e51-9cc8-043445d85958?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3c66fc2-dd42-49e0-8a55-1b7beb4401df?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b47bcc8-6348-40be-af52-91837d9149b3?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ba/bae97d2b-f31d-4b1b-96ff-6dfa5923169e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a2e2170-3887-4d14-ae03-e8cf959e8d5e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/39/39a3e138-4d45-41c7-8912-2945851a521d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b7/b73fcb4e-16c6-444b-a542-dec241872808?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2e/2e1e6c67-2b69-420a-9293-4e299a06623e?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/21/21de02a8-1c29-4439-856b-919ff8401a34?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/33/33fbb49d-9707-43a3-b146-c7a78e63f905?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/53/536a43af-32ae-4390-b296-642dcc988fca?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/69/692c3d99-db1e-4b6c-a431-180852f94bfd?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/3d/3d38f467-4a7e-4205-ae85-447d2051248f?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/35/35f97bdb-b431-4fa0-934d-28e48ea5894e?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c1e56eb-a5d1-4fbd-a969-8a481da8fe9a?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/be/be024963-1187-4c82-a055-f68d782ee3da?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/88/88e4e5ce-1c4e-469e-b71c-abc58973c5cf?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/56/56c55bbe-91f2-4369-9872-d52805650dfa?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb979b9b-3208-4030-b27d-019fd00d7d4e?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e56b1bdd-fac2-4c5b-8654-98f98a01cd58?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f83bff8-64b4-4c67-a1af-b6d37027901c?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/96/967873ae-add0-4155-a36f-1585fedff02e?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b7b08234-a2f6-49f6-b1a7-f74e60fbe8e6?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/06/06d65352-e838-433d-ad2e-4562d77e24e6?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/80/8042c075-5b09-4b88-bd73-52ce10f97705?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5bd01d08-bda2-446d-876b-5a4291d43093?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0813fd8-f7a0-412b-83ea-4549c8c7da95?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/30/301d5262-e420-4ce8-ad10-d0fbfa1a4456?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a3/a3e18db6-4802-4e5a-b47f-14541bdf24bb?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 21,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fbb51c-809a-431f-a3ef-e83bfa4861b6?rule=mo-1600",
+      "local_path": "foto/21.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 22,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f0/f0614782-e40c-4871-a093-794bd09e9566?rule=mo-1600",
+      "local_path": "foto/22.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 23,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae3abbbf-7500-4949-b9c3-54cd10e83979?rule=mo-1600",
+      "local_path": "foto/23.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 24,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6123f93-3eb5-4a01-be3d-b9e02f9a244a?rule=mo-1600",
+      "local_path": "foto/24.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 25,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/69/696fc59c-454e-4dbe-b6c0-a9437b02b8fc?rule=mo-1600",
+      "local_path": "foto/25.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 26,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4858870-241c-4eba-894d-a7012e6c578e?rule=mo-1600",
+      "local_path": "foto/26.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 27,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f6110795-3fe0-4e51-9cc8-043445d85958?rule=mo-1600",
+      "local_path": "foto/27.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 28,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3c66fc2-dd42-49e0-8a55-1b7beb4401df?rule=mo-1600",
+      "local_path": "foto/28.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 29,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b47bcc8-6348-40be-af52-91837d9149b3?rule=mo-1600",
+      "local_path": "foto/29.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 30,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ba/bae97d2b-f31d-4b1b-96ff-6dfa5923169e?rule=mo-1600",
+      "local_path": "foto/30.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 31,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a2e2170-3887-4d14-ae03-e8cf959e8d5e?rule=mo-1600",
+      "local_path": "foto/31.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 32,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/39/39a3e138-4d45-41c7-8912-2945851a521d?rule=mo-1600",
+      "local_path": "foto/32.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 33,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b73fcb4e-16c6-444b-a542-dec241872808?rule=mo-1600",
+      "local_path": "foto/33.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 34,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/2e/2e1e6c67-2b69-420a-9293-4e299a06623e?rule=mo-1600",
+      "local_path": "foto/34.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "AF-20260705-120321-459633015",
+  "source_url": "https://m.mobile.de/auto-inserat/mercedes-benz-cla-200-shooting-brake-automat-pano-nav-led-dist-mannheim/459633015.html?ref=seo&refId=cb916ebb-4bd0-784a-078c-f098936d186c&searchId=cb916ebb-4bd0-784a-078c-f098936d186c&type=ad",
+  "created_at": "2026-07-05T10:03:21+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "done",
+      "at": "2026-07-05T10:03:56+00:00",
+      "note": ""
+    },
+    "S2_parsing": {
+      "status": "done",
+      "at": "2026-07-05T10:03:56+00:00",
+      "note": ""
+    },
+    "GATE_A": {
+      "status": "passed",
+      "at": "2026-07-05T10:03:56+00:00",
+      "note": ""
+    },
+    "S3_translate_copy": {
+      "status": "done",
+      "at": "2026-07-05T10:03:57+00:00",
+      "note": ""
+    },
+    "GATE_B": {
+      "status": "passed",
+      "at": "2026-07-05T10:03:57+00:00",
+      "note": ""
+    },
+    "S4_pricing": {
+      "status": "done",
+      "at": "2026-07-05T10:03:57+00:00",
+      "note": "Mercedes-Benz CLA 200 Shooting Brake CLA 200 SHOOTING BRAKE AUTOMAT+PANO+NAV+LED+DIST 22.240 €"
+    },
+    "GATE_C": {
+      "status": "passed",
+      "at": "2026-07-05T10:03:57+00:00",
+      "note": ""
+    },
+    "S5_pdf_render": {
+      "status": "done",
+      "at": "2026-07-05T10:04:12+00:00",
+      "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260705-120321-459633015\\preventivo_mercedes-benz-cla-200-shooting-brake.pdf"
+    },
+    "GATE_D": {
+      "status": "passed",
+      "at": "2026-07-05T10:04:15+00:00",
+      "note": ""
+    },
+    "GATE_IMG": {
+      "status": "passed",
+      "at": "2026-07-05T10:04:17+00:00",
+      "note": ""
+    },
+    "GATE_R": {
+      "status": "passed",
+      "at": "2026-07-05T10:04:22+00:00",
+      "note": ""
+    }
+  }
+}

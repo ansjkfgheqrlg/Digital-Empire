@@ -1,0 +1,1043 @@
+{
+  "source_url": "https://suchen.mobile.de/auto-inserat/land-rover-range-rover-evoque-d165-s-awd-automatik-m%C3%BCnchen/459198935.html?lst=p",
+  "scraped_at": "2026-07-05T00:18:09+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Neufahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "-"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "S"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "In 5 Monaten ab Bestellung verfügbar"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "0 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.998 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "120 kW (163 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Diesel"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "6,5 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "171 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-F",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "6,5 l/100km (kombiniert)",
+          "7,8 l/100km (Innenstadt)",
+          "6,8 l/100km (Stadtrand)",
+          "5,7 l/100km (Landstraße)",
+          "6,6 l/100km (Autobahn)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
+        "tag": "envkv.consumptionCosts",
+        "value": "1.608 €/Jahr",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffpreis",
+        "tag": "envkv.fuel.price",
+        "value": "1,65 €/l (Jahresdurchschnitt 2025)"
+      },
+      {
+        "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
+        "tag": "envkv.co2Costs",
+        "value": [
+          "3.258 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 127 €/t)",
+          "1.539 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
+          "5.130 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 200 €/t)"
+        ],
+        "infoText": {
+          "headline": "Mögliche CO₂-Kosten über die nächsten 10 Jahre",
+          "text": "<p>Aufgrund der CO₂-Bepreisung sind künftige Erhöhungen der Kraftstoffkosten möglich. Die künftige CO₂-Preisentwicklung ist unsicher, daher werden die möglichen CO₂-Kosten anhand von drei angenommenen CO₂-Preisen für den Zeitraum 2026 bis 2035 berechnet.</p><p>Die tatsächlichen CO₂-Preise können sowohl höher als auch niedriger als in den hier zugrunde liegenden Modellrechnungen ausfallen. Die CO₂-Kosten sind beim Tanken mit den Kraftstoffkosten zu bezahlen.</p><p>Weitere Informationen unter <a href=\"https://www.alternativ-mobil.info/\" target=\"_blank\">www.alternativ-mobil.info/</a></p>"
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftfahrzeugsteuer",
+        "tag": "envkv.tax",
+        "value": "370 €/Jahr"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro 6e"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "360°-Kamera, Vorne, Hinten"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "Santorini Black"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Schwarz Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Vollleder, Schwarz"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": true
+    },
+    "shortTitle": "Land Rover Range Rover Evoque",
+    "subTitle": "D165 S AWD Automatik",
+    "makeKey": "Land Rover",
+    "modelKey": "Range Rover Evoque",
+    "isNew": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": true,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Allradantrieb",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Berganfahrassistent",
+      "Blendfreies Fernlicht",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Sitzeinstellung",
+      "Elektr. Sitzeinstellung mit Memory-Funktion",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Geschwindigkeitsbegrenzer",
+      "Induktionsladen für Smartphones",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Panorama-Dach",
+      "Partikelfilter",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sommerreifen",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Tagfahrlicht",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 471484,
+    "priceRating": {
+      "rating": "VERY_GOOD_PRICE",
+      "ratingLabel": "Sehr guter Preis",
+      "thresholdLabels": [
+        "42.600 €",
+        "55.300 €",
+        "59.600 €",
+        "66.300 €",
+        "71.100 €",
+        "79.000 €"
+      ],
+      "vehiclePriceOffset": 58
+    },
+    "segment": "Car",
+    "title": "Land Rover Range Rover Evoque D165 S AWD Automatik",
+    "url": "https://suchen.mobile.de/auto-inserat/land-rover-range-rover-evoque-d165-s-awd-automatik-m%C3%BCnchen/459198935.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 459198935,
+    "price": {
+      "gross": "49.990 €",
+      "grossAmount": 49990,
+      "grossCurrency": "EUR",
+      "net": "42.008 €",
+      "netAmount": 42008.4,
+      "type": "LEASING_ONLY",
+      "vat": "19% MwSt."
+    },
+    "kba": {
+      "hsn": "1590",
+      "tsn": "AKB"
+    },
+    "customDimensions": {
+      "10": "gold",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "hero_logo_7_name_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "Der Land Rover Range Rover Evoque in elegantem Schwarz-Metallic vereint kompakte Abmessungen mit beeindruckender Geländetauglichkeit und einem durchdachten Technologiepaket. Der 163 PS starke Dieselmotor mit Allradantrieb und Automatikgetriebe sorgt für souveräne Fahrleistungen, während das Partikelfiltersystem und die Euro-6e-Abgasnorm für Umweltbewusstsein stehen. Das schwarze Lederinterieur mit elektrisch verstellbaren und beheizbaren Vordersitzen sowie Memoryfunktion schafft eine komfortable Atmosphäre, ergänzt durch Ambientebeleuchtung und ein Panoramaglasdach.<br>Die Konnektivität überzeugt mit Apple CarPlay, Android Auto, DAB-Radio, Touchscreen-Navigation und kabellosem Laden. Sicherheit wird großgeschrieben: Kollisionsvermeidung, Totwinkelüberwachung, Spurhalteassistent, adaptiver Tempomat sowie ein 360-Grad-Kamerasystem mit Front- und Hecksensoren begleiten jeden Kilometer. Keyless Entry, elektrische Heckklappe und automatische Zweizonenklimanlage runden das Gesamtpaket ab.<br><ul><li>Allradantrieb mit 163 PS Dieselmotor und Automatikgetriebe</li><li>Schwarzes Leder-Interieur mit elektrisch verstellbaren, beheizbaren Vordersitzen und Memoryfunktion</li><li>Panoramaglasdach und Ambientebeleuchtung</li><li>Apple CarPlay, Android Auto, Navigation und kabelloses Laden</li><li>360-Grad-Kamerasystem mit Front- und Hecksensoren</li><li>Adaptiver Tempomat, Totwinkelüberwachung und Kollisionsvermeidung</li><li>Automatische Zweizonenklimanlage und elektrische Heckklappe</li><li>Euro-6e-Norm mit Dieselpartikelfilter und AdBlue-System</li></ul><br><b>Ausstattung:</b><ul><li>Abgedunkelte Scheiben</li><li>Ambiente-Beleuchtung</li><li>Armlehne</li><li>Elektr. Fensterheber</li><li>Elektr. Heckklappe</li><li>Elektr. Seitenspiegel</li><li>Elektr. Seitenspiegel anklappbar</li><li>Elektr. Sitzeinstellung</li><li>Elektr. Sitzeinstellung mit Memory-Funktion</li><li>Innenspiegel autom. abblendend</li><li>Lederlenkrad</li><li>Lordosenstütze</li><li>Panorama-Dach</li><li>Schlüssellose Zentralverriegelung (Keyless)</li><li>Sitzheizung</li><li>Zentralverriegelung</li><li>Berganfahrassistent</li><li>Bordcomputer</li><li>Multifunktionslenkrad</li><li>Schaltwippen</li><li>Servolenkung</li><li>Android Auto</li><li>Bluetooth</li><li>Apple CarPlay</li><li>Freisprecheinrichtung</li><li>Induktionsladen für Smartphones</li><li>Navigationssystem</li><li>Sprachsteuerung</li><li>Touchscreen</li><li>USB</li><li>Sommerreifen</li><li>Leichtmetallfelgen</li></ul><br><b>Geschwindigkeitsregulierung:</b><ul><li>Abstandstempomat</li></ul><br><b>Klimatisierung:</b><ul><li>2-Zonen-Klimaautomatik</li></ul><br><b>Sicherheit:</b><ul><li>ABS</li><li>Abstandswarner</li><li>Blendfreies Fernlicht</li><li>Elektr. Wegfahrsperre</li><li>ESP</li><li>Fernlichtassistent</li><li>Geschwindigkeitsbegrenzer</li><li>Isofix</li><li>Lichtsensor</li><li>Müdigkeitswarner</li><li>Notbremsassistent</li><li>Notrufsystem</li><li>Regensensor</li><li>Reifendruckkontrolle</li><li>Spurhalteassistent</li><li>Start/Stopp-Automatik</li><li>Totwinkel-Assistent</li><li>Traktionskontrolle</li><li>Verkehrszeichenerkennung</li></ul><br><b>Airbags:</b><ul><li>Front-, Seiten- und weitere Airbags</li></ul><br><b>Tagfahrlicht (Art):</b><ul><li>Tagfahrlicht</li></ul><br><b>Hauptscheinwerfer:</b><ul><li>LED-Scheinwerfer</li></ul><br><b>Innenausstattung:</b><ul><li>Vollleder</li></ul><br><b>Farbe der Innenausstattung:</b><ul><li>Schwarz</li></ul>",
+    "contactInfo": {
+      "address1": "Moosacher Straße 58",
+      "address2": "DE-80809 München",
+      "name": "Avalon Premium Cars GmbH",
+      "markingText": "<div><b>Avalon Premium Cars GmbH München Nord - Ihr Neuwagen-, Gebrauchtwagen- und Serviceprofi für die Marken JAGUAR, LAND ROVER und VOLVO -<br /></b><hr />Wir sind Spezialisten für die Premium-Automarken <b>JAGUAR, LAND ROVER und VOLVO</b>, die ihren Wert aus dem Mythos einer traditionsreichen Vergangenheit ziehen und gleichzeitig immer wieder neue technische Maßstäbe setzten.</div><div><br /></div><div>Eines haben Sie gemeinsam:<b> Ihren Sinn für das Besondere</b>.<br /></div><div><br /></div><div>Ihr Team von Avalon Premium Cars München Nord freut sich auf Ihren Besuch.<br /></div>",
+      "openingHours": [
+        {
+          "time": "08:00 Uhr - 18:30 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "10:00 Uhr - 14:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 09.08.2001",
+      "rating": {
+        "count": 5,
+        "totalCount": 181,
+        "score": 4,
+        "scoreLocalized": "4,0",
+        "link": "https://www.mobile.de/bewertungen/AVALON-MUENCHEN?lang=de",
+        "recommendationRate": 50,
+        "adRealityRate": 75,
+        "consultingScore": 3.5,
+        "friendlinessScore": 4.8,
+        "responseTimeScore": 3.6
+      },
+      "languages": "Deutsch, English, Français",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac5ee8e4-e122-44ea-9bc1-9ba39ca1c143?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac5ee8e4-e122-44ea-9bc1-9ba39ca1c143?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/ac/ac5ee8e4-e122-44ea-9bc1-9ba39ca1c143?rule=mo-360 360w",
+        "alt": "Avalon Premium Cars GmbH"
+      },
+      "hasContactPhones": false,
+      "phones": [],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "Internet Vertriebsteam"
+      },
+      "mapLink": "https://maps.google.com/maps?q=48.1864132,11.5523407+(Avalon%20Premium%20Cars%20GmbH)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 48.1864132,
+        "lon": 11.5523407
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=471484",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/13/13333d76-7aec-4ac6-9605-45e816ae91b3?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/13/13333d76-7aec-4ac6-9605-45e816ae91b3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/13/13333d76-7aec-4ac6-9605-45e816ae91b3?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/13/13333d76-7aec-4ac6-9605-45e816ae91b3?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/13/13333d76-7aec-4ac6-9605-45e816ae91b3?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b7e33ff-1f69-49cb-9818-34280dd42ca2?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b7e33ff-1f69-49cb-9818-34280dd42ca2?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1b/1b7e33ff-1f69-49cb-9818-34280dd42ca2?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/1b/1b7e33ff-1f69-49cb-9818-34280dd42ca2?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b7e33ff-1f69-49cb-9818-34280dd42ca2?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/31/314ec936-21ec-480d-abde-5618b2d3451b?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/31/314ec936-21ec-480d-abde-5618b2d3451b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/31/314ec936-21ec-480d-abde-5618b2d3451b?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/31/314ec936-21ec-480d-abde-5618b2d3451b?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/31/314ec936-21ec-480d-abde-5618b2d3451b?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/96/96e03fb4-63eb-4aee-9177-8b8feb66118e?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/96/96e03fb4-63eb-4aee-9177-8b8feb66118e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/96/96e03fb4-63eb-4aee-9177-8b8feb66118e?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/96/96e03fb4-63eb-4aee-9177-8b8feb66118e?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/96/96e03fb4-63eb-4aee-9177-8b8feb66118e?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/ef/efb2b35b-5368-4fc1-bddf-ee828144a461?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ef/efb2b35b-5368-4fc1-bddf-ee828144a461?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ef/efb2b35b-5368-4fc1-bddf-ee828144a461?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/ef/efb2b35b-5368-4fc1-bddf-ee828144a461?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ef/efb2b35b-5368-4fc1-bddf-ee828144a461?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/47/47b44e5f-f187-49c1-b21c-c252d6d491c6?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/47/47b44e5f-f187-49c1-b21c-c252d6d491c6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/47/47b44e5f-f187-49c1-b21c-c252d6d491c6?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/47/47b44e5f-f187-49c1-b21c-c252d6d491c6?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/47/47b44e5f-f187-49c1-b21c-c252d6d491c6?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b51fcbd-06f5-4c29-9129-6156d767cf69?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b51fcbd-06f5-4c29-9129-6156d767cf69?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1b/1b51fcbd-06f5-4c29-9129-6156d767cf69?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1b/1b51fcbd-06f5-4c29-9129-6156d767cf69?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 155,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "deal": {
+      "types": [
+        "DEAL",
+        "LEASING_CURATED"
+      ],
+      "badge": {
+        "tag": "DEAL",
+        "colorScheme": "default"
+      },
+      "leasingBadge": {
+        "tag": "DEAL",
+        "colorScheme": "default"
+      }
+    },
+    "financePlan": null,
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/99/99a00f63-eda8-4845-9fe3-e60440112910?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/99/99a00f63-eda8-4845-9fe3-e60440112910?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/99/99a00f63-eda8-4845-9fe3-e60440112910?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/99/99a00f63-eda8-4845-9fe3-e60440112910?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/99/99a00f63-eda8-4845-9fe3-e60440112910?rule=mo-80w",
+        "type": "image",
+        "alt": "Land Rover Range Rover Evoque"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc10b1b4-5e0e-4089-b446-ad9a723c938c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc10b1b4-5e0e-4089-b446-ad9a723c938c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fc/fc10b1b4-5e0e-4089-b446-ad9a723c938c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/fc/fc10b1b4-5e0e-4089-b446-ad9a723c938c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc10b1b4-5e0e-4089-b446-ad9a723c938c?rule=mo-80w",
+        "type": "image",
+        "alt": "Land Rover Range Rover Evoque"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/38/3875eb91-e90f-4cab-a71d-8e7b5c83eda1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/38/3875eb91-e90f-4cab-a71d-8e7b5c83eda1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/38/3875eb91-e90f-4cab-a71d-8e7b5c83eda1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/38/3875eb91-e90f-4cab-a71d-8e7b5c83eda1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/38/3875eb91-e90f-4cab-a71d-8e7b5c83eda1?rule=mo-80w",
+        "type": "image",
+        "alt": "Land Rover Range Rover Evoque"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ba/baafb885-4705-4166-8894-5252f99f8171?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ba/baafb885-4705-4166-8894-5252f99f8171?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ba/baafb885-4705-4166-8894-5252f99f8171?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ba/baafb885-4705-4166-8894-5252f99f8171?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ba/baafb885-4705-4166-8894-5252f99f8171?rule=mo-80w",
+        "type": "image",
+        "alt": "Land Rover Range Rover Evoque"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/0c/0c7a7091-0e65-46a5-b766-f8c6e3ef158e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/0c/0c7a7091-0e65-46a5-b766-f8c6e3ef158e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/0c/0c7a7091-0e65-46a5-b766-f8c6e3ef158e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/0c/0c7a7091-0e65-46a5-b766-f8c6e3ef158e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/0c/0c7a7091-0e65-46a5-b766-f8c6e3ef158e?rule=mo-80w",
+        "type": "image",
+        "alt": "Land Rover Range Rover Evoque"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b5/b5de7e2c-130e-479b-99ae-0f676ccc09c2?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b5/b5de7e2c-130e-479b-99ae-0f676ccc09c2?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b5/b5de7e2c-130e-479b-99ae-0f676ccc09c2?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b5/b5de7e2c-130e-479b-99ae-0f676ccc09c2?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b5/b5de7e2c-130e-479b-99ae-0f676ccc09c2?rule=mo-80w",
+        "type": "image",
+        "alt": "Land Rover Range Rover Evoque"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/29/29af77c6-af4f-4ddc-be1b-cb725bf7c79e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/29/29af77c6-af4f-4ddc-be1b-cb725bf7c79e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/29/29af77c6-af4f-4ddc-be1b-cb725bf7c79e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/29/29af77c6-af4f-4ddc-be1b-cb725bf7c79e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/29/29af77c6-af4f-4ddc-be1b-cb725bf7c79e?rule=mo-80w",
+        "type": "image",
+        "alt": "Land Rover Range Rover Evoque"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/99/99a00f63-eda8-4845-9fe3-e60440112910?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/99/99a00f63-eda8-4845-9fe3-e60440112910?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpsbsmodelimprovementsv2&client.abtests=accwebpublichomegaaa4on&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpcorerecommenderpopularfilterspopularfilters&adId=459198935"
+    },
+    "similarAdsInfo": {
+      "type": "similar-ads",
+      "apiParams": "/ml-recommendations-by-id/459198935"
+    },
+    "vehicleCondition": "new_order",
+    "make": "Land Rover",
+    "model": "Range Rover Evoque",
+    "leasingRate": {
+      "type": "PRIVATE",
+      "downPayment": 0,
+      "termOfContract": 24,
+      "annualMileage": 10000,
+      "grossRate": 359,
+      "leasingFactor": 0.58,
+      "totalAmount": 8616,
+      "destinationCharges": 1490,
+      "registrationFees": 190,
+      "extraMileageCosts": 18.63,
+      "lowMileageCompensation": 12.42
+    },
+    "leasingDetails": {
+      "grossListPrice": 62099,
+      "vatRate": 19,
+      "lender": "ALD Lease Finanz GmbH, Fuhlsbüttler Str. 437, 22309 Hamburg",
+      "rates": [
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 10000,
+          "grossRate": 359,
+          "leasingFactor": 0.58,
+          "totalAmount": 8616,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 30,
+          "annualMileage": 10000,
+          "grossRate": 362,
+          "leasingFactor": 0.58,
+          "totalAmount": 10860,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 10000,
+          "grossRate": 375,
+          "leasingFactor": 0.6,
+          "totalAmount": 13500,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 10000,
+          "grossRate": 395,
+          "leasingFactor": 0.64,
+          "totalAmount": 18960,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 60,
+          "annualMileage": 10000,
+          "grossRate": 419,
+          "leasingFactor": 0.67,
+          "totalAmount": 25140,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 15000,
+          "grossRate": 399,
+          "leasingFactor": 0.64,
+          "totalAmount": 9576,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 30,
+          "annualMileage": 15000,
+          "grossRate": 397,
+          "leasingFactor": 0.64,
+          "totalAmount": 11910,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 15000,
+          "grossRate": 409,
+          "leasingFactor": 0.66,
+          "totalAmount": 14724,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 15000,
+          "grossRate": 429,
+          "leasingFactor": 0.69,
+          "totalAmount": 20592,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 60,
+          "annualMileage": 15000,
+          "grossRate": 449,
+          "leasingFactor": 0.72,
+          "totalAmount": 26940,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 20000,
+          "grossRate": 435,
+          "leasingFactor": 0.7,
+          "totalAmount": 10440,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 30,
+          "annualMileage": 20000,
+          "grossRate": 432,
+          "leasingFactor": 0.7,
+          "totalAmount": 12960,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 20000,
+          "grossRate": 449,
+          "leasingFactor": 0.72,
+          "totalAmount": 16164,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 20000,
+          "grossRate": 465,
+          "leasingFactor": 0.75,
+          "totalAmount": 22320,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 60,
+          "annualMileage": 20000,
+          "grossRate": 479,
+          "leasingFactor": 0.77,
+          "totalAmount": 28740,
+          "destinationCharges": 1490,
+          "registrationFees": 190,
+          "extraMileageCosts": 18.63,
+          "lowMileageCompensation": 12.42
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 10000,
+          "netRate": 299,
+          "leasingFactor": 0.57,
+          "totalAmount": 7176,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 30,
+          "annualMileage": 10000,
+          "netRate": 305,
+          "leasingFactor": 0.58,
+          "totalAmount": 9150,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 10000,
+          "netRate": 315,
+          "leasingFactor": 0.6,
+          "totalAmount": 11340,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 10000,
+          "netRate": 333,
+          "leasingFactor": 0.64,
+          "totalAmount": 15984,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 60,
+          "annualMileage": 10000,
+          "netRate": 349,
+          "leasingFactor": 0.67,
+          "totalAmount": 20940,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 15000,
+          "netRate": 334,
+          "leasingFactor": 0.64,
+          "totalAmount": 8016,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 30,
+          "annualMileage": 15000,
+          "netRate": 337,
+          "leasingFactor": 0.65,
+          "totalAmount": 10110,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 15000,
+          "netRate": 345,
+          "leasingFactor": 0.66,
+          "totalAmount": 12420,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 15000,
+          "netRate": 359,
+          "leasingFactor": 0.69,
+          "totalAmount": 17232,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 60,
+          "annualMileage": 15000,
+          "netRate": 379,
+          "leasingFactor": 0.73,
+          "totalAmount": 22740,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 20000,
+          "netRate": 367,
+          "leasingFactor": 0.7,
+          "totalAmount": 8808,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 30,
+          "annualMileage": 20000,
+          "netRate": 365,
+          "leasingFactor": 0.7,
+          "totalAmount": 10950,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 20000,
+          "netRate": 375,
+          "leasingFactor": 0.72,
+          "totalAmount": 13500,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 20000,
+          "netRate": 389,
+          "leasingFactor": 0.75,
+          "totalAmount": 18672,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 60,
+          "annualMileage": 20000,
+          "netRate": 405,
+          "leasingFactor": 0.78,
+          "totalAmount": 24300,
+          "destinationCharges": 1252.11,
+          "registrationFees": 159.67
+        }
+      ],
+      "specialConditions": {},
+      "dealType": "CLASSIC"
+    },
+    "leasingSpecialConditions": {},
+    "partnerLinks": null,
+    "isLeasingOnlyAd": true
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/land rover.html",
+            "name": "Land Rover"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/land-rover-range-rover-evoque.html",
+            "name": "Range Rover Evoque"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Land Rover Range Rover Evoque für 49.990 €",
+    "price_text": "Preis 359 € mtl. ( inkl. MwSt. 4 ) Anschaffungszweck Privat Gewerbe 4 Laufzeit ändern 24 Monate Fahrleistung ändern 10.000 km Anzahlung 0 € Leasingangebot anfragen Leasingdetails Leasingbeispiel Nettodarlehensbetr. (Anschaffungspreis) Anzahlung 0 € Fahrleistung pro Jahr 10.000 km Laufzeit 24 Monate 24 Monatsraten à 359 € Leasing-Gesamtbetrag 8.616 € Zusätzliche Informationen Bruttolistenpreis 62.099 € Bereitstellungskosten 1.490 € Zulassungskosten 190 € Mehr-Kilometer-Kosten 18,63 Cent/km Minder-Kilometer-Vergütung 12,42 Cent/km Ein unverbindliches Leasingangebot der ALD Lease Finanz GmbH, Fuhlsbüttler Str. 437, 22309 Hamburg , Bonität vorausgesetzt . Die Angaben entsprechen zugleich dem 2/3 Beispiel nach §17 Abs. 4 PangV. Es besteht ein gesetzliches Widerrufsrecht für Verbraucher. 3 Diese Angaben gelten für das Angebot ohne Anzahlung. 4 Dieses Angebot richtet sich nur an Kunden in Deutschland.",
+    "attributes": {
+      "Fahrzeugzustand": "Neufahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Baureihe": "-",
+      "Ausstattungslinie": "S",
+      "Verfügbarkeit": "In 5 Monaten ab Bestellung verfügbar",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "0 km",
+      "Hubraum": "1.998 cm³",
+      "Leistung": "120 kW (163 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Diesel",
+      "Energieverbrauch (komb.) 2": "6,5 l/100km",
+      "CO₂-Emissionen (komb.) 2": "171 g/km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Kraftstoffverbrauch 2": "6,5 l/100km (kombiniert) 7,8 l/100km (Innenstadt) 6,8 l/100km (Stadtrand) 5,7 l/100km (Landstraße) 6,6 l/100km (Autobahn)",
+      "Energiekosten bei 15.000 km Jahresfahrleistung 2": "1.608 €/Jahr",
+      "Kraftstoffpreis": "1,65 €/l (Jahresdurchschnitt 2025)",
+      "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr) 2": "3.258 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 127 €/t) 1.539 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t) 5.130 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 200 €/t)",
+      "Kraftfahrzeugsteuer": "370 €/Jahr",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro 6e",
+      "Umweltplakette": "4 (Grün)",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "360°-Kamera, Vorne, Hinten",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "Santorini Black",
+      "Farbe": "Schwarz Metallic",
+      "Innenausstattung": "Vollleder, Schwarz",
+      "Zylinder": "4",
+      "Nettodarlehensbetr. (Anschaffungspreis)": "",
+      "Anzahlung": "0 €",
+      "Fahrleistung pro Jahr": "10.000 km",
+      "Laufzeit": "24 Monate",
+      "24 Monatsraten à": "359 €",
+      "Leasing-Gesamtbetrag": "8.616 €",
+      "Bruttolistenpreis": "62.099 €",
+      "Bereitstellungskosten": "1.490 €",
+      "Zulassungskosten": "190 €",
+      "Mehr-Kilometer-Kosten": "18,63 Cent/km",
+      "Minder-Kilometer-Vergütung": "12,42 Cent/km"
+    },
+    "description": "Neufahrzeug, Unfallfrei • 0 km • 120 kW (163 PS) • Diesel • Automatik",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/99/99a00f63-eda8-4845-9fe3-e60440112910?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc10b1b4-5e0e-4089-b446-ad9a723c938c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/38/3875eb91-e90f-4cab-a71d-8e7b5c83eda1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ba/baafb885-4705-4166-8894-5252f99f8171?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0c/0c7a7091-0e65-46a5-b766-f8c6e3ef158e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b5/b5de7e2c-130e-479b-99ae-0f676ccc09c2?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/29/29af77c6-af4f-4ddc-be1b-cb725bf7c79e?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/99/99a00f63-eda8-4845-9fe3-e60440112910?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc10b1b4-5e0e-4089-b446-ad9a723c938c?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/38/3875eb91-e90f-4cab-a71d-8e7b5c83eda1?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ba/baafb885-4705-4166-8894-5252f99f8171?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/0c/0c7a7091-0e65-46a5-b766-f8c6e3ef158e?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b5/b5de7e2c-130e-479b-99ae-0f676ccc09c2?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/29/29af77c6-af4f-4ddc-be1b-cb725bf7c79e?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

@@ -48,6 +48,14 @@ version: "1.0"
    `memory/`. Nessun run è "fatto" finché non è salvato.
 7. **Espansione, mai riassunto** (CF2 invariante #1) per gli artefatti di conoscenza (script, MKD,
    reference): si arricchisce, non si comprime.
+8. **Canale attivo esclusivo: Legami d'Amore.** Dose Mentale è in pausa (richiesta Max,
+   2026-08-13) — nessun agente ne tocca la configurazione o lo sceglie come target senza un nuovo
+   ordine esplicito. Regole permanenti per Legami d'Amore: voce Fliki sempre femminile e
+   realistica, sottotitoli presenti ma non troppo grandi, step miniatura skippabile
+   temporaneamente (flag `--skip-thumbnail`), pubblicazione sempre PRIVATA (flag opt-in
+   `--upload` per l'upload reale via Playwright) finché non arriva ordine esplicito di rendere
+   pubblico. Vedi
+   [WORKFLOW-LEGAMI-DAMORE-MASTER.md](../../../YOUTUBE-AUTOMATION-FACTORY/01-FLUSSI-E-PIANI/WORKFLOW-LEGAMI-DAMORE-MASTER.md).
 
 ---
 

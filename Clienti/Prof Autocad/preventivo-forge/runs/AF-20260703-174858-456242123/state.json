@@ -1,0 +1,32 @@
+{
+  "run_id": "AF-20260703-174858-456242123",
+  "source_url": "https://suchen.mobile.de/auto-inserat/skoda-epiq-55-0-25-led-klima-dab-acc-shz-pdch-18-alu-gera/456242123.html?lst=p",
+  "created_at": "2026-07-03T15:48:58+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "done",
+      "at": "2026-07-03T15:49:14+00:00",
+      "note": ""
+    },
+    "S2_parsing": {
+      "status": "done",
+      "at": "2026-07-03T15:49:14+00:00",
+      "note": ""
+    },
+    "GATE_A": {
+      "status": "passed",
+      "at": "2026-07-03T15:49:14+00:00",
+      "note": ""
+    },
+    "S3_translate_copy": {
+      "status": "done",
+      "at": "2026-07-03T15:49:14+00:00",
+      "note": ""
+    },
+    "GATE_B": {
+      "status": "blocked",
+      "at": "2026-07-03T15:49:14+00:00",
+      "note": "2 residui tedeschi in content: ['Ausparkassistent', 'Gepäckraumabtrennung']"
+    }
+  }
+}

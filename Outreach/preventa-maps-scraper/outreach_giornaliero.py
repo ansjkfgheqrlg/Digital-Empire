@@ -23,12 +23,22 @@ FASE 2 — INVIO WHATSAPP: dai lead Areus con stage=NEW, telefono mobile,
   umano (attesa random tra invii), stage->CONTACTED dopo ogni invio REALE.
   Si ferma subito se rileva segnali di blocco account (non insiste).
 
+FASE 3 — FOLLOW-UP (msg2/msg3, CP-20260805): dai lead Areus con stage=CONTACTED
+  via WhatsApp, manda msg2 dopo 24h di silenzio dal msg1 e msg3 dopo 5gg di
+  silenzio dal msg1 (mai dopo 24h dal msg2, vedi guardia FOLLOWUP_ORE_MIN_DAL_MSG2).
+  Nessuna rilevazione automatica di risposta: se un lead avanza oltre CONTACTED
+  in EmpireDesk (PROPOSAL/NEGOTIATION/CLOSED_*), esce dalla coda follow-up.
+  Stesso gate Bibbia dei Messaggi, stesso circuit-breaker/ban-detection di Fase 2.
+
 Uso:
-    python outreach_giornaliero.py                     # run normale, cap 50
+    python outreach_giornaliero.py                     # run normale: scraping + invio + follow-up
     python outreach_giornaliero.py --test               # run di prova, limiti minimi
     python outreach_giornaliero.py --solo-scraping      # solo fase 1
-    python outreach_giornaliero.py --solo-invio         # solo fase 2 (usa Areus già popolato)
-    python outreach_giornaliero.py --daily-cap 10       # cap invii personalizzato
+    python outreach_giornaliero.py --solo-invio         # fase 2 + fase 3 (usa Areus già popolato)
+    python outreach_giornaliero.py --solo-followup      # solo fase 3 (msg2/msg3)
+    python outreach_giornaliero.py --niente-followup    # fase 1+2, salta fase 3
+    python outreach_giornaliero.py --daily-cap 10       # cap invii msg1 personalizzato
+    python outreach_giornaliero.py --daily-cap-followup 10  # cap follow-up personalizzato
 """
 from __future__ import annotations
 
@@ -71,19 +81,35 @@ IMPORT_KEYWORDS = [
     "import", "importazione", "importazioni", "importati", "importate",
     "estero", "esteri", "estera", "estere",
     "tedesca", "tedesche", "tedeschi", "germania", "german",
-    "francia", "francese", "francesi",
-    "belgio", "belga", "olanda", "olandese",
+    "francia", "francese", "francesi", "france",
+    "belgio", "belga", "olanda", "olandese", "holland",
     "svizzera", "svizzero", "austria", "austriaco",
     "europa", "europee", "europei",
     "km0", "km 0", "kmzero", "km zero",
     "reimport", "re-import",
+    "gebraucht",  # aggiunto 2026-08-20 (ordine Max): copertura lessicale DE.
+    # "occasion" RIMOSSO (stesso giorno): falso positivo confermato su "Occasioni" (italiano
+    # standard per "auto usate", zero legame import) — sostringa senza confine di parola ha
+    # fatto scattare match su "Auto Occasioni Como", nessun segnale import reale. Un messaggio
+    # e' gia' partito per errore prima della correzione (vedi CP del giorno).
 ]
-CITTA_PER_GIORNO = 6
+CITTA_PER_GIORNO = 18  # alzato da 6 (2026-08-15, ordine Max): filtro import troppo rigido su
+# poco materiale, 19 contatti reali totali in 3 settimane. Stesso filtro, piu' citta'/giorno.
 LIMIT_PER_COMBO = 20
 DAILY_CAP_DEFAULT = 50
 DELAY_MIN_SEC = 45
 DELAY_MAX_SEC = 120
 MAX_FALLIMENTI_CONSECUTIVI = 5
+
+# Follow-up (msg2/msg3, mai automatizzati finora — CP-20260805). Soglie:
+# msg2 a G+24h di silenzio dal msg1 (fonte: preventa-outreach-pack/02_SCRIPT_WHATSAPP_EMAIL_3MSG.md).
+# msg3 a G+5gg (120h) di silenzio dal msg1, MAI dal msg2 (fonte: docstring whatsapp_msg3 in
+# personalizza_messaggi.py) — con guardia separata di 24h dal msg2 per evitare che un msg2
+# partito in ritardo faccia scattare msg3 nello stesso run.
+FOLLOWUP_ORE_MSG2 = 24
+FOLLOWUP_ORE_MSG3 = 120
+FOLLOWUP_ORE_MIN_DAL_MSG2 = 24
+DAILY_CAP_FOLLOWUP_DEFAULT = 30
 
 
 def _load_module(path: Path, name: str):
@@ -226,7 +252,7 @@ def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
             break
 
         if esito["esito"] == "inviato":
-            areus.mark_contacted(telefono, canale="whatsapp")
+            areus.mark_contacted(telefono, canale="whatsapp", testo=testo)
             inviati += 1
             fallimenti_consecutivi = 0
             log.info(f"  OK inviato ({inviati}/{daily_cap})")
@@ -263,7 +289,101 @@ def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
     }
 
 
-def scrivi_report(risultato_scraping: dict | None, risultato_invio: dict | None):
+def fase3_followup(daily_cap: int, dry_run: bool) -> dict:
+    """Msg2/msg3 della sequenza 20/40/30 (Cluster F della Bibbia — 'i soldi non sono mai nel
+    primo messaggio'). Fino a CP-20260805 questi messaggi esistevano solo come funzioni
+    inutilizzate in personalizza_messaggi.py; questa fase li aggancia al run giornaliero."""
+    log.info(f"FASE 3 — Follow-up msg2/msg3 (cap: {daily_cap}, dry_run={dry_run})")
+
+    personalizza = _load_module(CAMPAIGN_DIR / "personalizza_messaggi.py", "personalizza_messaggi_gg")
+    send_message = _load_module(WHATSAPP_DIR / "send_message.py", "send_message_gg")
+    rule_keeper = _load_module(RULE_KEEPER_DIR / "rule_keeper_lint.py", "rule_keeper_lint_gg")
+
+    lead_msg2 = areus.carica_lead_per_followup(2, FOLLOWUP_ORE_MSG2, state_path=None)
+    lead_msg3 = areus.carica_lead_per_followup(3, FOLLOWUP_ORE_MSG3, FOLLOWUP_ORE_MIN_DAL_MSG2, state_path=None)
+    log.info(f"Pronti per msg2 (silenzio >={FOLLOWUP_ORE_MSG2}h dal msg1): {len(lead_msg2)}")
+    log.info(f"Pronti per msg3 (silenzio >={FOLLOWUP_ORE_MSG3}h dal msg1, >={FOLLOWUP_ORE_MIN_DAL_MSG2}h dal msg2): {len(lead_msg3)}")
+
+    # msg3 prima: un lead in silenzio da 5gg e' piu' vicino a essere perso (breakup message)
+    # di uno in silenzio da 24h — a parita' di cap, priorita' a chi rischia di piu'.
+    coda = [(3, l) for l in lead_msg3] + [(2, l) for l in lead_msg2]
+
+    inviati = 0
+    falliti = 0
+    scartati_legittimi = 0
+    bocciati_bibbia = 0
+    fallimenti_consecutivi = 0
+    esiti_dettaglio = []
+    target = len(coda) if dry_run else daily_cap
+
+    for i, (step, lead) in enumerate(coda):
+        if inviati >= target:
+            log.info(f"Cap follow-up raggiunto ({inviati}/{daily_cap}) — fermo qui.")
+            break
+
+        nome = lead.get("nome_attivita", "?")
+        telefono = lead.get("telefono", "")
+        citta = lead.get("citta_ricerca", "")
+        log.info(f"[{i+1}/{len(coda)}] msg{step} -> {nome} ({telefono})")
+
+        if step == 2:
+            testo = personalizza.whatsapp_msg2(nome)
+            testi_precedenti = [lead.get("msg1_testo", "")]
+        else:
+            testo = personalizza.whatsapp_msg3(nome)
+            testi_precedenti = [lead.get("msg1_testo", ""), lead.get("msg2_testo", "")]
+
+        lint = rule_keeper.lint_messaggio(testo, nome, citta, tentativo_numero=step, testi_precedenti=testi_precedenti)
+        if lint["esito"] == "RESPINTO":
+            bocciati_bibbia += 1
+            motivi = "; ".join(f"P{v['pilastro']} {v['nome']}: {v['motivo']}" for v in lint["violazioni"])
+            log.warning(f"  BOCCIATO da Rule Keeper (non inviato): {motivi}")
+            esiti_dettaglio.append({"nome": nome, "telefono": telefono, "esito": f"bocciato_bibbia_msg{step}", "dettaglio": motivi})
+            continue
+
+        esito = send_message.invia_sync(telefono, testo, dry_run=dry_run)
+        esiti_dettaglio.append({"nome": nome, "telefono": telefono, "step": step, **esito})
+
+        if esito["esito"] in ("account_limitato", "profilo_in_uso", "profilo_mancante"):
+            log.error(f"STOP IMMEDIATO — {esito['esito']}: {esito.get('dettaglio','')}")
+            break
+
+        if esito["esito"] == "inviato":
+            areus.mark_followup_sent(telefono, step, testo=testo)
+            inviati += 1
+            fallimenti_consecutivi = 0
+            log.info(f"  OK inviato msg{step} ({inviati}/{daily_cap})")
+        elif esito["esito"] == "dry_run_ok":
+            log.info("  OK dry-run (non inviato davvero)")
+            fallimenti_consecutivi = 0
+        elif esito["esito"] in ("numero_non_valido", "numero_non_su_whatsapp"):
+            scartati_legittimi += 1
+            fallimenti_consecutivi = 0
+            log.info(f"  Scartato ({esito['esito']}): {nome}")
+        else:
+            falliti += 1
+            fallimenti_consecutivi += 1
+            log.warning(f"  Fallito: {esito['esito']} — {esito.get('dettaglio','')}")
+            if fallimenti_consecutivi >= MAX_FALLIMENTI_CONSECUTIVI:
+                log.error(f"STOP — {fallimenti_consecutivi} fallimenti consecutivi.")
+                break
+
+        if i < len(coda) - 1:
+            pausa = random.uniform(DELAY_MIN_SEC, DELAY_MAX_SEC)
+            log.info(f"  Pausa {pausa:.0f}s prima del prossimo invio...")
+            time.sleep(pausa)
+
+    return {
+        "inviati": inviati,
+        "falliti": falliti,
+        "scartati_legittimi": scartati_legittimi,
+        "bocciati_bibbia": bocciati_bibbia,
+        "eligibili": len(coda),
+        "dettaglio": esiti_dettaglio,
+    }
+
+
+def scrivi_report(risultato_scraping: dict | None, risultato_invio: dict | None, risultato_followup: dict | None = None):
     LOG_DIR.mkdir(parents=True, exist_ok=True)
     path = LOG_DIR / f"outreach_{date.today().isoformat()}.log"
     with open(path, "a", encoding="utf-8") as f:
@@ -274,6 +394,10 @@ def scrivi_report(risultato_scraping: dict | None, risultato_invio: dict | None)
             f.write(f"INVIO: eligibili={risultato_invio['eligibili']} inviati={risultato_invio['inviati']} falliti={risultato_invio['falliti']} scartati_legittimi={risultato_invio.get('scartati_legittimi',0)} bocciati_bibbia={risultato_invio.get('bocciati_bibbia',0)} scartati_no_import={risultato_invio.get('scartati_no_import',0)}\n")
             for d in risultato_invio["dettaglio"]:
                 f.write(f"  - {d['nome']} ({d['telefono']}): {d['esito']} {d.get('dettaglio','')}\n")
+        if risultato_followup is not None:
+            f.write(f"FOLLOW-UP: eligibili={risultato_followup['eligibili']} inviati={risultato_followup['inviati']} falliti={risultato_followup['falliti']} scartati_legittimi={risultato_followup.get('scartati_legittimi',0)} bocciati_bibbia={risultato_followup.get('bocciati_bibbia',0)}\n")
+            for d in risultato_followup["dettaglio"]:
+                f.write(f"  - msg{d.get('step','?')} {d['nome']} ({d['telefono']}): {d['esito']} {d.get('dettaglio','')}\n")
     log.info(f"Report scritto: {path}")
 
 
@@ -282,8 +406,11 @@ def main():
     parser.add_argument("--test", action="store_true", help="Run di prova: 1 città, limit basso, dry-run invio")
     parser.add_argument("--solo-scraping", action="store_true", help="Esegue solo la fase 1")
     parser.add_argument("--solo-invio", action="store_true", help="Esegue solo la fase 2 (Areus già popolato)")
-    parser.add_argument("--daily-cap", type=int, default=DAILY_CAP_DEFAULT, help="Max messaggi WhatsApp da inviare oggi")
-    parser.add_argument("--dry-run-invio", action="store_true", help="Fase 2 in dry-run: precompila ma non invia davvero")
+    parser.add_argument("--solo-followup", action="store_true", help="Esegue solo la fase 3 (msg2/msg3 su lead già CONTACTED)")
+    parser.add_argument("--niente-followup", action="store_true", help="Salta la fase 3 (follow-up msg2/msg3)")
+    parser.add_argument("--daily-cap", type=int, default=DAILY_CAP_DEFAULT, help="Max messaggi WhatsApp (msg1) da inviare oggi")
+    parser.add_argument("--daily-cap-followup", type=int, default=DAILY_CAP_FOLLOWUP_DEFAULT, help="Max follow-up (msg2+msg3) da inviare oggi")
+    parser.add_argument("--dry-run-invio", action="store_true", help="Fase 2/3 in dry-run: precompila ma non invia davvero")
     parser.add_argument("--headless", action="store_true", help="Scraping in modalità headless (default: headed, più stabile)")
     args = parser.parse_args()
 
@@ -296,33 +423,53 @@ def main():
         pool = carica_pool_citta()
         cities = citta_di_oggi(pool, 1)
         daily_cap = 2
+        daily_cap_followup = 2
         dry_run_invio = True
         limit = 5
     else:
         cities = citta_di_oggi(carica_pool_citta(), CITTA_PER_GIORNO)
         daily_cap = args.daily_cap
+        daily_cap_followup = args.daily_cap_followup
         dry_run_invio = args.dry_run_invio
         limit = LIMIT_PER_COMBO
 
     risultato_scraping = None
     risultato_invio = None
+    risultato_followup = None
+
+    if args.solo_followup:
+        risultato_followup = fase3_followup(daily_cap_followup, dry_run_invio)
+        scrivi_report(None, None, risultato_followup)
+        log.info("=" * 70)
+        log.info("RIEPILOGO FOLLOW-UP")
+        log.info(f"  Follow-up (msg2+msg3) inviati: {risultato_followup['inviati']}/{daily_cap_followup}")
+        log.info(f"  Falliti (tecnici): {risultato_followup['falliti']}")
+        log.info(f"  Bocciati da Rule Keeper: {risultato_followup.get('bocciati_bibbia',0)}")
+        log.info("=" * 70)
+        return
 
     if not args.solo_invio:
         risultato_scraping = fase1_scraping(cities, limit, args.headless)
 
     if not args.solo_scraping:
         risultato_invio = fase2_invio(daily_cap, dry_run_invio)
+        if not args.niente_followup:
+            risultato_followup = fase3_followup(daily_cap_followup, dry_run_invio)
 
-    scrivi_report(risultato_scraping, risultato_invio)
+    scrivi_report(risultato_scraping, risultato_invio, risultato_followup)
 
     log.info("=" * 70)
     log.info("RIEPILOGO GIORNATA")
     if risultato_invio:
-        log.info(f"  Messaggi WhatsApp inviati: {risultato_invio['inviati']}/{daily_cap}")
+        log.info(f"  Messaggi WhatsApp inviati (msg1): {risultato_invio['inviati']}/{daily_cap}")
         log.info(f"  Falliti (tecnici): {risultato_invio['falliti']}")
         log.info(f"  Scartati (numero non su WhatsApp/non valido): {risultato_invio.get('scartati_legittimi',0)}")
         log.info(f"  Scartati (nessun segnale import reale in nome/note): {risultato_invio.get('scartati_no_import',0)}")
         log.info(f"  Bocciati da Rule Keeper (Bibbia dei Messaggi): {risultato_invio.get('bocciati_bibbia',0)}")
+    if risultato_followup:
+        log.info(f"  Follow-up (msg2+msg3) inviati: {risultato_followup['inviati']}/{daily_cap_followup}")
+        log.info(f"  Follow-up falliti (tecnici): {risultato_followup['falliti']}")
+        log.info(f"  Follow-up bocciati da Rule Keeper: {risultato_followup.get('bocciati_bibbia',0)}")
     log.info("=" * 70)
 
 

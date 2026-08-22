@@ -8,6 +8,7 @@ import time
 import json
 import urllib.request
 import urllib.error
+import http.client
 
 # reconfigure(), non un nuovo io.TextIOWrapper: due wrapper distinti sullo stesso buffer fanno
 # chiudere il buffer sottostante al garbage collection del primo ("I/O operation on closed
@@ -19,6 +20,25 @@ if sys.platform.startswith("win"):
 FACTORY_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUT_DIR = os.path.join(FACTORY_DIR, "05-TEMPLATES-E-KIT")
 VIDEOS_DIR = os.path.join(FACTORY_DIR, "06-DASHBOARD-E-METRICHE", "video-generati")
+LOCK_PATH = os.path.join(FACTORY_DIR, "memory", "fliki_lock.json")
+# Prima del 2026-08-20 uno stallo lato Fliki restava invisibile per 1-2h (fino al timeout
+# interno): scoperto solo controllando a mano. Con un job realmente bloccato per ore, un
+# allarme a 30 min invece che 60-120 accorcia di molto il tempo prima che un umano se ne accorga.
+ALERT_QUEUED_THRESHOLD_S = 1800
+
+
+def _clear_lock_if_ours(file_id: str) -> None:
+    if not os.path.exists(LOCK_PATH):
+        return
+    try:
+        lock = json.load(open(LOCK_PATH, encoding="utf-8"))
+    except (json.JSONDecodeError, ValueError):
+        return
+    if lock.get("file_id") == file_id:
+        try:
+            os.remove(LOCK_PATH)
+        except OSError:
+            pass
 
 
 def api_key():
@@ -31,7 +51,14 @@ def api_key():
 def main(file_id: str, out_name: str, max_wait_s: int = 3600):
     key = api_key()
     waited = 0
+    alertato = False
     while waited < max_wait_s:
+        if not alertato and waited >= ALERT_QUEUED_THRESHOLD_S:
+            print(f"[!!! ALLARME] fileId={file_id} ancora in coda dopo {waited//60} minuti senza "
+                  f"mai passare a 'processing'. Non e' normale attesa di coda: verifica dashboard "
+                  f"Fliki (credito/limite piano) invece di continuare ad aspettare in silenzio.",
+                  flush=True)
+            alertato = True
         req = urllib.request.Request(
             f"https://api.fliki.ai/v1/generate/status?fileId={file_id}",
             headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
@@ -39,7 +66,7 @@ def main(file_id: str, out_name: str, max_wait_s: int = 3600):
         try:
             with urllib.request.urlopen(req, timeout=30) as resp:
                 res = json.loads(resp.read().decode("utf-8"))
-        except (TimeoutError, urllib.error.URLError) as e:
+        except (TimeoutError, urllib.error.URLError, ConnectionError, http.client.RemoteDisconnected) as e:
             print(f"[!] timeout rete, ritento: {e}", flush=True)
             time.sleep(10)
             waited += 10
@@ -54,8 +81,10 @@ def main(file_id: str, out_name: str, max_wait_s: int = 3600):
                 with open(out_path, "wb") as f:
                     f.write(resp2.read())
             print(f"[+] Video scaricato: {out_path}", flush=True)
+            _clear_lock_if_ours(file_id)
             return
         if status in ("error", "canceled"):
+            _clear_lock_if_ours(file_id)
             raise SystemExit(f"Generazione fallita: {res}")
         time.sleep(15)
         waited += 15

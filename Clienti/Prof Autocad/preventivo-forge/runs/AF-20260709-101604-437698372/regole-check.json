@@ -1,0 +1,58 @@
+{
+  "R-01": {
+    "pass": true,
+    "note": "prima pagina solo logo"
+  },
+  "R-02": {
+    "pass": true,
+    "note": "logo in ogni pagina di contenuto"
+  },
+  "R-03": {
+    "pass": true,
+    "note": "dati azienda 2ª pagina"
+  },
+  "R-04": {
+    "pass": true,
+    "note": "titolo vettura"
+  },
+  "R-05": {
+    "pass": true,
+    "note": "scheda tecnica"
+  },
+  "R-06": {
+    "pass": true,
+    "note": "equipaggiamento"
+  },
+  "R-07": {
+    "pass": true,
+    "note": "condizioni di garanzia"
+  },
+  "R-08": {
+    "pass": true,
+    "note": "prezzo totale in strada"
+  },
+  "R-09": {
+    "pass": true,
+    "note": "immagini tutte/complete/non tagliate"
+  },
+  "R-10": {
+    "pass": true,
+    "note": "ultima pagina solo logo"
+  },
+  "R-11": {
+    "pass": true,
+    "note": "italiano, no tedesco, no invenzioni"
+  },
+  "R-12": {
+    "pass": true,
+    "note": "prezzo verificato + dati coerenti"
+  },
+  "R-13": {
+    "pass": true,
+    "note": "dati/logo/colori dal config concessionaria"
+  },
+  "R-14": {
+    "pass": true,
+    "note": "nessun elemento mancante"
+  }
+}

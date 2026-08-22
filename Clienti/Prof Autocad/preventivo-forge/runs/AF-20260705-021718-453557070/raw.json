@@ -1,0 +1,989 @@
+{
+  "source_url": "https://suchen.mobile.de/auto-inserat/volvo-ex30-single-motor-core-sitzheiung-lenkradheizung-amberg/453557070.html?lst=p",
+  "scraped_at": "2026-07-05T00:17:39+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Neufahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "416"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "Core"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "CLONW30Core"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Ab 28.09.2026"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "1 km"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "200 kW (272 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Elektromotor"
+      },
+      {
+        "label": "Anderer Energieträger",
+        "tag": "envkv.otherEnergySource",
+        "value": "Strom"
+      },
+      {
+        "label": "Ladedauer (11 kW)",
+        "tag": "chargingTime",
+        "value": "6 Std."
+      },
+      {
+        "label": "Schnellladezeit",
+        "tag": "chargingTimeFast",
+        "value": "26 Min."
+      },
+      {
+        "label": "Steckertypen",
+        "tag": "plugTypes",
+        "value": "CCS- oder Combo-Stecker, Typ 2-Stecker"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "16,2 kWh/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "0 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Elektrische Reichweite",
+        "tag": "envkv.electricalRange",
+        "value": "337 km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-A",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Stromverbrauch",
+        "tag": "envkv.consumptionDetails.power",
+        "value": [
+          "16,2 kWh/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro 7"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Hinten, Vorne, Kamera"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "CLOUD BLUE"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Blau"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Stoff"
+      },
+      {
+        "label": "Reichweite",
+        "tag": "range",
+        "value": "337 km"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": true
+    },
+    "shortTitle": "Volvo EX30",
+    "subTitle": "Single Motor Core*SITZHEIUNG*LENKRADHEIZUNG",
+    "makeKey": "Volvo",
+    "modelKey": "EX30",
+    "isNew": false,
+    "batteryInformation": {
+      "wltpRange": {
+        "label": "Reichweite (WLTP)",
+        "value": "337 km",
+        "infoText": {
+          "headline": "Reichweite",
+          "text": "Die Reichweite eines Fahrzeugs mit vollständig geladener Batterie ist nur eine Schätzung. Die unter realen Bedingungen tatsächlich erzielbare Reichweite ist abhängig vom Fahrverhalten (Geschwindigkeit, Fahrzeugbeladung, Effizienz), den Wetter- und Straßenbedingungen, der verbleibenden Batteriekapazität und anderen Faktoren – und kann daher stark variieren."
+        }
+      },
+      "warrantyInfo": {
+        "label": "Garantie ab Erstzulassung",
+        "value": "8 Jahre oder 160.000 km",
+        "infoText": {
+          "headline": "Batterie-Garantie",
+          "text": "Die Garantie für eine E-Fahrzeug-Batterie sichert dem Käufer in der Regel zu, dass die Leistungsfähigkeit der Batterie nicht zu stark abbaut. Entweder über einen festgelegten Zeitraum (meist 8 Jahre) oder eine bestimmte Laufleistung (meist zw. 100.000 - 160.000 km). Oft wird ein Wert von 70 bis 80 Prozent der ursprünglichen Kapazität zugesichert. Je nach Hersteller gibt es größere Unterschiede. Erkundige dich daher direkt beim Verkäufer nach den konkreten Garantiebedingungen."
+        }
+      },
+      "chargingTimes": {
+        "label": "Ladezeit",
+        "fastDc": {
+          "label": "Schnellladen (DC, max 300 kW)",
+          "value": "26 Min.",
+          "infoText": {
+            "headline": "Öffentliches Laden (50 kW)",
+            "text": "Die Schnellladezeit für Elektrofahrzeuge wird hauptsächlich durch die maximale Ladegeschwindigkeit bestimmt, die sowohl vom bordeigenen Ladegerät des Fahrzeugs als auch durch die Ladestation abhängt. Je höher die kW-Leistung beim Laden, desto schneller die Aufladung der Batterie und desto kürzer die Ladedauer.\n\nDie Ladezeit ist allerdings auch abhängig von anderen Faktoren: dem Ladezustand der Batterie (je leerer die Batterie, desto höher die Ladeleistung), der Außentemperatur und ob an der gleichen Ladesäule noch ein weiteres Fahrzeug lädt."
+          }
+        },
+        "homeAc": {
+          "label": "Zu Hause (AC, 11 kW)",
+          "value": "6 Std.",
+          "infoText": {
+            "headline": "Aufladen zu Hause (11 kW)",
+            "text": "Wer den nötigen Platz hat, kann sein Elektrofahrzeug bequem zu Hause aufladen. Notwendig ist nur ein Platz auf dem Grundstück – Garage, Carport, Einfahrt – und eine Wallbox.\n\nEine Wallbox erzeugt eine höhere Ladeleistung als eine Haushaltssteckdose und lädt das Fahrzeug deutlich schneller. Die Leistung reicht von ca. 4 kW bis 22 kW – je höher die Leistung, desto kürzer die Ladezeit."
+          }
+        }
+      },
+      "chargingPlugTypes": {
+        "label": "Steckertypen",
+        "value": [
+          "Typ 2-Stecker",
+          "CCS- oder Combo-Stecker"
+        ],
+        "infoText": {
+          "headline": "Steckertypen",
+          "text": "Der Ladestecker verbindet das Ladekabel (bzw. das E-Fahrzeug) mit der Ladesäule. Es gibt verschiedene Typen für Ladestecker. Unterschiede gibt es hinsichtlich der Ladeleistung/-geschwindigkeit, der Kompatibilität oder der Stromart (Gleich- od. Wechselstrom). Die gebräuchlichsten Stecker: Typ 2-Stecker (für Wallboxen); CCS- oder Combo-Stecker und CHAdeMO-Stecker (beide für Gleichstrom-Schnellladesäulen); und der Schuko-Stecker (Haushaltssteckdose)."
+        }
+      },
+      "bidirectionalChargingTypes": {
+        "label": "Bidirektionales Laden",
+        "value": [
+          "V2L"
+        ],
+        "infoText": {
+          "headline": "Bidirektionales Laden",
+          "text": "Beim bidirektionalen Laden kann der Strom in zwei Richtungen fließen: Entweder vom Netz zur Batterie des Fahrzeugs oder vom Fahrzeug zurück ins Netz. Das ermöglicht E-Fahrzeugen, mit ihrem Strom verschiedene Empfänger zu versorgen. Die gängigsten Anwendungen sind: die Rückspeisung von Energie in das Netz (V2G = Vehicle to Grid); die Weiterleitung an Ihr Haus (V2H = Vehicle to Home); oder die Versorgung beliebiger Geräte, z. B. auch ein anderes Fahrzeug (V2L = Vehicle to Load)."
+        }
+      }
+    },
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": true,
+    "hasElectricEngine": true,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Anhängerkupplung-Vorbereitung",
+      "Apple CarPlay",
+      "Armlehne",
+      "Beheizbares Lenkrad",
+      "Berganfahrassistent",
+      "Bidirektionales Laden",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Gepäckraumabtrennung",
+      "Geschwindigkeitsbegrenzer",
+      "Heckantrieb",
+      "Induktionsladen für Smartphones",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Isofix Beifahrersitz",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sommerreifen",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Standheizung",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Winterpaket",
+      "WLAN / Wifi Hotspot",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 465733,
+    "priceRating": {
+      "rating": "VERY_GOOD_PRICE",
+      "ratingLabel": "Sehr guter Preis",
+      "thresholdLabels": [
+        "28.800 €",
+        "37.500 €",
+        "40.400 €",
+        "44.900 €",
+        "48.200 €",
+        "53.600 €"
+      ],
+      "vehiclePriceOffset": 81
+    },
+    "segment": "Car",
+    "title": "Volvo EX30 Single Motor Core*SITZHEIUNG*LENKRADHEIZUNG",
+    "url": "https://suchen.mobile.de/auto-inserat/volvo-ex30-single-motor-core-sitzheiung-lenkradheizung-amberg/453557070.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 453557070,
+    "price": {
+      "gross": "35.890 €",
+      "grossAmount": 35890,
+      "grossCurrency": "EUR",
+      "net": "30.160 €",
+      "netAmount": 30159.66,
+      "type": "FIXED",
+      "vat": "19% MwSt."
+    },
+    "kba": {
+      "hsn": "9101",
+      "tsn": "BZO"
+    },
+    "customDimensions": {
+      "10": "silver",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "NA_NA_12_NA_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "dealershipDetails": true
+    },
+    "htmlDescription": "VON IHREM VOLVO VERTRAGSPARTNER IN AMBERG<hr>NEUWAGEN EX30 P5 CORE mit toller Ausstattung und Winterpaket<hr>JETZT LEASEN UND VON DER E-PRÄMIE BIS ZU 6.000.- EURO PROFITIEREN - FRAGEN SIE UNS<hr><br><b>Ausstattung:</b><ul><li>Abgedunkelte Scheiben</li><li>Ambiente-Beleuchtung</li><li>Armlehne</li><li>Beheizbares Lenkrad</li><li>Elektr. Fensterheber</li><li>Elektr. Seitenspiegel</li><li>Elektr. Seitenspiegel anklappbar</li><li>Innenspiegel autom. abblendend</li><li>Lederlenkrad</li><li>Schlüssellose Zentralverriegelung (Keyless)</li><li>Sitzheizung</li><li>Standheizung</li><li>Zentralverriegelung</li><li>Berganfahrassistent</li><li>Bordcomputer</li><li>Multifunktionslenkrad</li><li>Servolenkung</li><li>Volldigitales Kombiinstrument</li><li>Android Auto</li><li>Bluetooth</li><li>Apple CarPlay</li><li>Freisprecheinrichtung</li><li>Induktionsladen für Smartphones</li><li>Musikstreaming integriert</li><li>Navigationssystem</li><li>Sprachsteuerung</li><li>Touchscreen</li><li>USB</li><li>WLAN / Wifi Hotspot</li><li>Sommerreifen</li><li>Leichtmetallfelgen</li><li>Winterpaket</li></ul><br><b>Geschwindigkeitsregulierung:</b><ul><li>Abstandstempomat</li></ul><br><b>Anhängerkupplung:</b><ul><li>Anhängerkupplung-Vorbereitung</li></ul><br><b>Klimatisierung:</b><ul><li>Klimaautomatik</li></ul><br><b>Sicherheit:</b><ul><li>ABS</li><li>Abstandswarner</li><li>Elektr. Wegfahrsperre</li><li>ESP</li><li>Fernlichtassistent</li><li>Gepäckraumabtrennung</li><li>Geschwindigkeitsbegrenzer</li><li>Isofix</li><li>Isofix Beifahrersitz</li><li>Lichtsensor</li><li>Müdigkeitswarner</li><li>Notbremsassistent</li><li>Notrufsystem</li><li>Regensensor</li><li>Reifendruckkontrolle</li><li>Spurhalteassistent</li><li>Totwinkel-Assistent</li><li>Traktionskontrolle</li><li>Verkehrszeichenerkennung</li></ul><br><b>Airbags:</b><ul><li>Front-, Seiten- und weitere Airbags</li></ul><br><b>Tagfahrlicht (Art):</b><ul><li>LED-Tagfahrlicht</li></ul><br><b>Hauptscheinwerfer:</b><ul><li>LED-Scheinwerfer</li></ul><br><b>Pannenhilfe:</b><ul><li>Pannenkit</li></ul><br><b>Innenausstattung:</b><ul><li>Stoff</li></ul>",
+    "contactInfo": {
+      "address1": "Kuemmersbrucker Strasse 6a",
+      "address2": "DE-92224 Amberg",
+      "name": "Autohaus Hofmann GmbH",
+      "openingHours": [
+        {
+          "time": "08:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "09:00 Uhr - 13:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 19.06.2001",
+      "rating": {
+        "count": 12,
+        "totalCount": 114,
+        "score": 4.7,
+        "scoreLocalized": "4,7",
+        "link": "https://www.mobile.de/bewertungen/HOFMANN-AMBERG?lang=de",
+        "recommendationRate": 90,
+        "adRealityRate": 88,
+        "consultingScore": 4.5,
+        "friendlinessScore": 4.916666666666667,
+        "responseTimeScore": 4.666666666666667
+      },
+      "languages": "Deutsch, English, Magyar, Română",
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)9621 78230",
+          "uri": "tel:+49962178230"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 9621 782310"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {},
+      "mapLink": "https://maps.google.com/maps?q=49.4330597,11.8732569+(Autohaus%20Hofmann%20GmbH)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 49.4330597,
+        "lon": 11.8732569
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=465733",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad148f81-bd65-48bc-aa3c-a3c8a58d43ee?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad148f81-bd65-48bc-aa3c-a3c8a58d43ee?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ad/ad148f81-bd65-48bc-aa3c-a3c8a58d43ee?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/ad/ad148f81-bd65-48bc-aa3c-a3c8a58d43ee?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad148f81-bd65-48bc-aa3c-a3c8a58d43ee?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/e1/e196aebd-7742-441d-a7b7-a79f7595d44f?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e1/e196aebd-7742-441d-a7b7-a79f7595d44f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e1/e196aebd-7742-441d-a7b7-a79f7595d44f?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/e1/e196aebd-7742-441d-a7b7-a79f7595d44f?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e1/e196aebd-7742-441d-a7b7-a79f7595d44f?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/45/459519a5-6782-4997-9245-d050d675ccea?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/45/459519a5-6782-4997-9245-d050d675ccea?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/45/459519a5-6782-4997-9245-d050d675ccea?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/45/459519a5-6782-4997-9245-d050d675ccea?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/45/459519a5-6782-4997-9245-d050d675ccea?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "type": "Händler",
+      "numResultsTotal": 58,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=453557070&loanType=balloon&loanDuration=60&downPayment=7178&channel=desktop",
+      "type": "AO",
+      "flowType": "AO",
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 7178,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 28712,
+        "interestRateNominal": 5.26,
+        "interestRateEffective": 5.39,
+        "monthlyInstallment": 377.79,
+        "finalInstallment": 11843.7,
+        "totalInterest": 5421.56,
+        "totalAmount": 34133.56,
+        "localized": {
+          "downPayment": "7.178 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "28.712 €",
+          "interestRateNominal": "5,26%",
+          "interestRateEffective": "5,39%",
+          "monthlyInstallment": "378 €",
+          "finalInstallment": "11.843,70 €",
+          "totalInterest": "5.421,56 €",
+          "totalAmount": "34.133,56 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000 €, effektiver Jahreszins 5,39%, fester Sollzinssatz 5,26% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 143,60 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.772,13 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach"
+        }
+      },
+      "shortFlow": false,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c7c50d2-e2ad-4388-b36b-4916c2aaf8c3?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c7c50d2-e2ad-4388-b36b-4916c2aaf8c3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/3c/3c7c50d2-e2ad-4388-b36b-4916c2aaf8c3?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/3c/3c7c50d2-e2ad-4388-b36b-4916c2aaf8c3?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c7c50d2-e2ad-4388-b36b-4916c2aaf8c3?rule=mo-80w",
+        "type": "image",
+        "alt": "Volvo EX30"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ee2ebc-0c4b-4ce5-8479-99c8713483a1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ee2ebc-0c4b-4ce5-8479-99c8713483a1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ee2ebc-0c4b-4ce5-8479-99c8713483a1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ee2ebc-0c4b-4ce5-8479-99c8713483a1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ee2ebc-0c4b-4ce5-8479-99c8713483a1?rule=mo-80w",
+        "type": "image",
+        "alt": "Volvo EX30"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d2b93062-fe8d-4b7c-8651-ae4682e649cb?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d2b93062-fe8d-4b7c-8651-ae4682e649cb?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d2/d2b93062-fe8d-4b7c-8651-ae4682e649cb?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d2/d2b93062-fe8d-4b7c-8651-ae4682e649cb?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d2b93062-fe8d-4b7c-8651-ae4682e649cb?rule=mo-80w",
+        "type": "image",
+        "alt": "Volvo EX30"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/62/627f7ea5-43d7-4a2d-ae1d-513644fd504a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/62/627f7ea5-43d7-4a2d-ae1d-513644fd504a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/62/627f7ea5-43d7-4a2d-ae1d-513644fd504a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/62/627f7ea5-43d7-4a2d-ae1d-513644fd504a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/62/627f7ea5-43d7-4a2d-ae1d-513644fd504a?rule=mo-80w",
+        "type": "image",
+        "alt": "Volvo EX30"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b01c46eb-6752-4cad-933c-02ff2a15832d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b01c46eb-6752-4cad-933c-02ff2a15832d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b0/b01c46eb-6752-4cad-933c-02ff2a15832d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b0/b01c46eb-6752-4cad-933c-02ff2a15832d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b01c46eb-6752-4cad-933c-02ff2a15832d?rule=mo-80w",
+        "type": "image",
+        "alt": "Volvo EX30"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b146ff7-1100-4f63-a30c-8f9f3055797f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b146ff7-1100-4f63-a30c-8f9f3055797f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5b146ff7-1100-4f63-a30c-8f9f3055797f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5b146ff7-1100-4f63-a30c-8f9f3055797f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b146ff7-1100-4f63-a30c-8f9f3055797f?rule=mo-80w",
+        "type": "image",
+        "alt": "Volvo EX30"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c174ca4-c63e-46e0-8df2-7344ae93020d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c174ca4-c63e-46e0-8df2-7344ae93020d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1c/1c174ca4-c63e-46e0-8df2-7344ae93020d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1c/1c174ca4-c63e-46e0-8df2-7344ae93020d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c174ca4-c63e-46e0-8df2-7344ae93020d?rule=mo-80w",
+        "type": "image",
+        "alt": "Volvo EX30"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/53/5388f7c9-85dc-4870-abe9-a25254054b6f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/53/5388f7c9-85dc-4870-abe9-a25254054b6f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/53/5388f7c9-85dc-4870-abe9-a25254054b6f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/53/5388f7c9-85dc-4870-abe9-a25254054b6f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/53/5388f7c9-85dc-4870-abe9-a25254054b6f?rule=mo-80w",
+        "type": "image",
+        "alt": "Volvo EX30"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/29/29199180-7265-4480-9974-4b99ac420707?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/29/29199180-7265-4480-9974-4b99ac420707?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/29/29199180-7265-4480-9974-4b99ac420707?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/29/29199180-7265-4480-9974-4b99ac420707?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/29/29199180-7265-4480-9974-4b99ac420707?rule=mo-80w",
+        "type": "image",
+        "alt": "Volvo EX30"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/25/2595c666-51f0-4c7e-b18c-8dcf2f539c82?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/25/2595c666-51f0-4c7e-b18c-8dcf2f539c82?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/25/2595c666-51f0-4c7e-b18c-8dcf2f539c82?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/25/2595c666-51f0-4c7e-b18c-8dcf2f539c82?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/25/2595c666-51f0-4c7e-b18c-8dcf2f539c82?rule=mo-80w",
+        "type": "image",
+        "alt": "Volvo EX30"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/85/85a618b4-a801-415c-9adb-1cb963c0f39e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/85/85a618b4-a801-415c-9adb-1cb963c0f39e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/85/85a618b4-a801-415c-9adb-1cb963c0f39e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/85/85a618b4-a801-415c-9adb-1cb963c0f39e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/85/85a618b4-a801-415c-9adb-1cb963c0f39e?rule=mo-80w",
+        "type": "image",
+        "alt": "Volvo EX30"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c192471d-f5a3-4643-bbf5-b945c1e672a2?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c192471d-f5a3-4643-bbf5-b945c1e672a2?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c1/c192471d-f5a3-4643-bbf5-b945c1e672a2?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c1/c192471d-f5a3-4643-bbf5-b945c1e672a2?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c192471d-f5a3-4643-bbf5-b945c1e672a2?rule=mo-80w",
+        "type": "image",
+        "alt": "Volvo EX30"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c7c50d2-e2ad-4388-b36b-4916c2aaf8c3?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c7c50d2-e2ad-4388-b36b-4916c2aaf8c3?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=cossrpsbsmodelimprovementsv1&client.abtests=cossrpcorerecommenderpopularfilterspopularfilters&client.abtests=accwebpublichomegaaa4off&adId=453557070"
+    },
+    "similarAdsInfo": {
+      "type": "similar-ads",
+      "apiParams": "/ml-recommendations-by-id/453557070"
+    },
+    "vehicleCondition": "new_order",
+    "make": "Volvo",
+    "model": "EX30",
+    "leasingRate": {
+      "type": "PRIVATE",
+      "downPayment": 0,
+      "termOfContract": 48,
+      "annualMileage": 5000,
+      "grossRate": 282,
+      "leasingFactor": 0.7,
+      "totalAmount": 13536,
+      "destinationCharges": 1195
+    },
+    "leasingDetails": {
+      "grossListPrice": 40190,
+      "vatRate": 19,
+      "lender": "Volvo Car Financial Services, ein Service der Santander Consumer Leasing GmbH, Santander-Platz 1 41061 Mönchengladbach",
+      "rates": [
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 5000,
+          "grossRate": 285,
+          "leasingFactor": 0.71,
+          "totalAmount": 10260,
+          "destinationCharges": 1195
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 5000,
+          "grossRate": 282,
+          "leasingFactor": 0.7,
+          "totalAmount": 13536,
+          "destinationCharges": 1195
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 10000,
+          "grossRate": 309,
+          "leasingFactor": 0.77,
+          "totalAmount": 11124,
+          "destinationCharges": 1195
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 10000,
+          "grossRate": 299,
+          "leasingFactor": 0.74,
+          "totalAmount": 14352,
+          "destinationCharges": 1195
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 15000,
+          "grossRate": 333,
+          "leasingFactor": 0.83,
+          "totalAmount": 11988,
+          "destinationCharges": 1195
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 15000,
+          "grossRate": 324,
+          "leasingFactor": 0.81,
+          "totalAmount": 15552,
+          "destinationCharges": 1195
+        }
+      ],
+      "specialConditions": {
+        "EV_BONUS": {
+          "customDealerText": "Leasingangebot ohne Anzahlung. Förderung bis zu 6.000.- Euro möglich, wenn Du die Voraussetzungen erfüllst und die Mindestlaufzeit/Haltedauer laut E‑Auto‑Förderrichtlinie einhältst. Kein Rechtsanspruch.",
+          "title": "E-Auto-Förderung",
+          "text": "Dieses Fahrzeug ist berechtigt für eine E-Auto-Förderung. Weitere Informationen findest du in den Hinweisen des Händlers.",
+          "adjustedRates": {
+            "36": {
+              "5000": {
+                "3000": 201.67,
+                "3500": 187.78,
+                "4000": 173.89,
+                "4500": 160,
+                "5000": 146.11,
+                "5500": 132.22,
+                "6000": 118.33
+              },
+              "10000": {
+                "3000": 225.67,
+                "3500": 211.78,
+                "4000": 197.89,
+                "4500": 184,
+                "5000": 170.11,
+                "5500": 156.22,
+                "6000": 142.33
+              },
+              "15000": {
+                "3000": 249.67,
+                "3500": 235.78,
+                "4000": 221.89,
+                "4500": 208,
+                "5000": 194.11,
+                "5500": 180.22,
+                "6000": 166.33
+              }
+            },
+            "48": {
+              "5000": {
+                "3000": 219.5,
+                "3500": 209.08,
+                "4000": 198.67,
+                "4500": 188.25,
+                "5000": 177.83,
+                "5500": 167.42,
+                "6000": 157
+              },
+              "10000": {
+                "3000": 236.5,
+                "3500": 226.08,
+                "4000": 215.67,
+                "4500": 205.25,
+                "5000": 194.83,
+                "5500": 184.42,
+                "6000": 174
+              },
+              "15000": {
+                "3000": 261.5,
+                "3500": 251.08,
+                "4000": 240.67,
+                "4500": 230.25,
+                "5000": 219.83,
+                "5500": 209.42,
+                "6000": 199
+              }
+            }
+          }
+        }
+      },
+      "dealType": "CLASSIC"
+    },
+    "leasingSpecialConditions": {
+      "EV_BONUS": {
+        "customDealerText": "Leasingangebot ohne Anzahlung. Förderung bis zu 6.000.- Euro möglich, wenn Du die Voraussetzungen erfüllst und die Mindestlaufzeit/Haltedauer laut E‑Auto‑Förderrichtlinie einhältst. Kein Rechtsanspruch.",
+        "title": "E-Auto-Förderung",
+        "text": "Dieses Fahrzeug ist berechtigt für eine E-Auto-Förderung. Weitere Informationen findest du in den Hinweisen des Händlers.",
+        "adjustedRates": {
+          "36": {
+            "5000": {
+              "3000": 201.67,
+              "3500": 187.78,
+              "4000": 173.89,
+              "4500": 160,
+              "5000": 146.11,
+              "5500": 132.22,
+              "6000": 118.33
+            },
+            "10000": {
+              "3000": 225.67,
+              "3500": 211.78,
+              "4000": 197.89,
+              "4500": 184,
+              "5000": 170.11,
+              "5500": 156.22,
+              "6000": 142.33
+            },
+            "15000": {
+              "3000": 249.67,
+              "3500": 235.78,
+              "4000": 221.89,
+              "4500": 208,
+              "5000": 194.11,
+              "5500": 180.22,
+              "6000": 166.33
+            }
+          },
+          "48": {
+            "5000": {
+              "3000": 219.5,
+              "3500": 209.08,
+              "4000": 198.67,
+              "4500": 188.25,
+              "5000": 177.83,
+              "5500": 167.42,
+              "6000": 157
+            },
+            "10000": {
+              "3000": 236.5,
+              "3500": 226.08,
+              "4000": 215.67,
+              "4500": 205.25,
+              "5000": 194.83,
+              "5500": 184.42,
+              "6000": 174
+            },
+            "15000": {
+              "3000": 261.5,
+              "3500": 251.08,
+              "4000": 240.67,
+              "4500": 230.25,
+              "5000": 219.83,
+              "5500": 209.42,
+              "6000": 199
+            }
+          }
+        }
+      }
+    },
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/volvo.html",
+            "name": "Volvo"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/volvo-ex30.html",
+            "name": "EX30"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Volvo EX30 für 35.890 €",
+    "price_text": "Preis 35.890 € Sehr guter Preis 30.160 € (Netto) , 19% MwSt. Finanzierung Leasing Monatsrate ab 378 € Finanzierung berechnen Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Online abschließen Schließe die Finanzierung bequem online von Zuhause ab Online-Kredit Dieses Inserat bietet den Online-Kreditvergleich Unabhängige Finanzierung mit der Bank deiner Wahl Einfach von Zuhause online abschließen Nach wenigen Minuten erhältst du dein persönliches Kreditangebot von verschiedenen Banken 282 € mtl. ( inkl. MwSt. 4 ) Anschaffungszweck Privat Laufzeit ändern 48 Monate Fahrleistung ändern 5.000 km Anzahlung 0 € E-Auto-Förderung Dieses Fahrzeug ist berechtigt für eine E-Auto-Förderung. Weitere Informationen findest du in den Hinweisen des Händlers. Siehe auch 'Wichtige Hinweise des Händlers'. Leasingangebot anfragen Wichtige Hinweise des Händlers Leasingdetails Leasingbeispiel Nettodarlehensbetr. (Anschaffungspreis) Anzahlung 0 € Fahrleistung pro Jahr 5.000 km Laufzeit 48 Monate 48 Monatsraten à 282 € Leasing-Gesamtbetrag 13.536 € Zusätzliche Informationen Bruttolistenpreis 40.190 € Bereitstellungskosten 1.195 € Zulassungskosten Keine Angabe Mehr-Kilometer-Kosten Keine Angabe Minder-Kilometer-Vergütung Keine Angabe Ein unverbindliches Leasingangebot der Volvo Car Financial Services, ein Service der Santander Consumer Leasing GmbH, Santander-Platz 1 41061 Mönchengladbach , Bonität vorausgesetzt . Die Angaben entsprechen zugleich dem 2/3 Beispiel nach §17 Abs. 4 PangV. Es besteht ein gesetzliches Widerrufsrecht für Verbraucher. 3 Diese Angaben gelten für das Angebot ohne Anzahlung. 4 Dieses Angebot richtet sich nur an Kunden in Deutschland.",
+    "attributes": {
+      "Fahrzeugzustand": "Neufahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Baureihe": "416",
+      "Ausstattungslinie": "Core",
+      "Fahrzeugnummer": "CLONW30Core",
+      "Verfügbarkeit": "Ab 28.09.2026",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "1 km",
+      "Leistung": "200 kW (272 PS)",
+      "Antriebsart": "Elektromotor",
+      "Anderer Energieträger": "Strom",
+      "Ladedauer (11 kW)": "6 Std.",
+      "Schnellladezeit": "26 Min.",
+      "Steckertypen": "CCS- oder Combo-Stecker, Typ 2-Stecker",
+      "Energieverbrauch (komb.) 2": "16,2 kWh/100km",
+      "CO₂-Emissionen (komb.) 2": "0 g/km",
+      "Elektrische Reichweite 2": "337 km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Stromverbrauch 2": "16,2 kWh/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro 7",
+      "Umweltplakette": "4 (Grün)",
+      "Klimatisierung": "Klimaautomatik",
+      "Einparkhilfe": "Hinten, Vorne, Kamera",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "CLOUD BLUE",
+      "Farbe": "Blau",
+      "Innenausstattung": "Stoff",
+      "Reichweite": "337 km",
+      "Nettodarlehensbetr. (Anschaffungspreis)": "",
+      "Anzahlung": "0 €",
+      "Fahrleistung pro Jahr": "5.000 km",
+      "Laufzeit": "48 Monate",
+      "48 Monatsraten à": "282 €",
+      "Leasing-Gesamtbetrag": "13.536 €",
+      "Bruttolistenpreis": "40.190 €",
+      "Bereitstellungskosten": "1.195 €",
+      "Zulassungskosten": "Keine Angabe",
+      "Mehr-Kilometer-Kosten": "Keine Angabe",
+      "Minder-Kilometer-Vergütung": "Keine Angabe"
+    },
+    "description": "Neufahrzeug, Unfallfrei • 1 km • 200 kW (272 PS) • Automatik",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c7c50d2-e2ad-4388-b36b-4916c2aaf8c3?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ee2ebc-0c4b-4ce5-8479-99c8713483a1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d2/d2b93062-fe8d-4b7c-8651-ae4682e649cb?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/62/627f7ea5-43d7-4a2d-ae1d-513644fd504a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b0/b01c46eb-6752-4cad-933c-02ff2a15832d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b146ff7-1100-4f63-a30c-8f9f3055797f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c174ca4-c63e-46e0-8df2-7344ae93020d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/53/5388f7c9-85dc-4870-abe9-a25254054b6f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/29/29199180-7265-4480-9974-4b99ac420707?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/25/2595c666-51f0-4c7e-b18c-8dcf2f539c82?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/85/85a618b4-a801-415c-9adb-1cb963c0f39e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c1/c192471d-f5a3-4643-bbf5-b945c1e672a2?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c7c50d2-e2ad-4388-b36b-4916c2aaf8c3?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ee2ebc-0c4b-4ce5-8479-99c8713483a1?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d2b93062-fe8d-4b7c-8651-ae4682e649cb?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/62/627f7ea5-43d7-4a2d-ae1d-513644fd504a?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b01c46eb-6752-4cad-933c-02ff2a15832d?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b146ff7-1100-4f63-a30c-8f9f3055797f?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c174ca4-c63e-46e0-8df2-7344ae93020d?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/53/5388f7c9-85dc-4870-abe9-a25254054b6f?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/29/29199180-7265-4480-9974-4b99ac420707?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/25/2595c666-51f0-4c7e-b18c-8dcf2f539c82?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/85/85a618b4-a801-415c-9adb-1cb963c0f39e?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c192471d-f5a3-4643-bbf5-b945c1e672a2?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

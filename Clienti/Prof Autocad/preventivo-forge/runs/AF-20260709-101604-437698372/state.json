@@ -1,0 +1,62 @@
+{
+  "run_id": "AF-20260709-101604-437698372",
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=437698372&action=topOfPage&dam=false&ms=19000%3B%3B%3B&od=up&ref=seo&refId=5f11fca4-c297-bf68-7cae-e5512e9d126d&s=Car&sb=rel&searchId=5f11fca4-c297-bf68-7cae-e5512e9d126d&vc=Car",
+  "created_at": "2026-07-09T08:16:04+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "done",
+      "at": "2026-07-09T08:16:27+00:00",
+      "note": ""
+    },
+    "S2_parsing": {
+      "status": "done",
+      "at": "2026-07-09T08:16:27+00:00",
+      "note": ""
+    },
+    "GATE_A": {
+      "status": "passed",
+      "at": "2026-07-09T08:16:27+00:00",
+      "note": ""
+    },
+    "S3_translate_copy": {
+      "status": "done",
+      "at": "2026-07-09T08:16:27+00:00",
+      "note": ""
+    },
+    "GATE_B": {
+      "status": "passed",
+      "at": "2026-07-09T08:16:28+00:00",
+      "note": ""
+    },
+    "S4_pricing": {
+      "status": "done",
+      "at": "2026-07-09T08:16:28+00:00",
+      "note": "Opel Grandland (X) EDITION Hybrid 145 A 30.789 €"
+    },
+    "GATE_C": {
+      "status": "passed",
+      "at": "2026-07-09T08:16:28+00:00",
+      "note": ""
+    },
+    "S5_pdf_render": {
+      "status": "done",
+      "at": "2026-07-09T08:16:36+00:00",
+      "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260709-101604-437698372\\preventivo_opel-grandland-x.pdf"
+    },
+    "GATE_D": {
+      "status": "passed",
+      "at": "2026-07-09T08:16:37+00:00",
+      "note": ""
+    },
+    "GATE_IMG": {
+      "status": "passed",
+      "at": "2026-07-09T08:16:37+00:00",
+      "note": ""
+    },
+    "GATE_R": {
+      "status": "passed",
+      "at": "2026-07-09T08:16:38+00:00",
+      "note": ""
+    }
+  }
+}

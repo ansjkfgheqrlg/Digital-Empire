@@ -1,0 +1,884 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=458863047&dam=false&ms=20700%3B%3B%3B&od=up&ref=seo&refId=ddc77b69-c15d-021c-1ded-32b99f35906e&s=Car&sb=rel&searchId=ddc77b69-c15d-021c-1ded-32b99f35906e&vc=Car",
+  "scraped_at": "2026-07-09T08:13:14+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "RHN"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "Techno"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "22"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Sofort"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "10.400 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.332 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "116 kW (158 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "6,5 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "148 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-E",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "6,5 l/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro 6e"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "01/2026"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Vorne, Kamera, Hinten"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "grau Metallic"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grau Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Teilleder, Schwarz"
+      }
+    ],
+    "mediaGallery": {
+      "youtubeId": "nuKk-AmFpHs",
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Renault Austral",
+    "subTitle": "Techno Autom. LED+Navi+Panodach+20 Zoll",
+    "makeKey": "Renault",
+    "modelKey": "Austral",
+    "isNew": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Adaptives Kurvenlicht",
+      "Allwetterreifen",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Anhängerkupplung abnehmbar",
+      "Apple CarPlay",
+      "Armlehne",
+      "Beheizbare Frontscheibe",
+      "Beheizbares Lenkrad",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Dachreling",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Frontantrieb",
+      "Garantie",
+      "Geschwindigkeitsbegrenzer",
+      "Induktionsladen für Smartphones",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Panorama-Dach",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Scheckheftgepflegt",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 458529,
+    "priceRating": {
+      "rating": "REASONABLE_PRICE",
+      "ratingLabel": "Fairer Preis",
+      "thresholdLabels": [
+        "23.200 €",
+        "30.100 €",
+        "32.400 €",
+        "36.100 €",
+        "38.700 €",
+        "43.000 €"
+      ],
+      "vehiclePriceOffset": 29
+    },
+    "segment": "Car",
+    "title": "Renault Austral Techno Autom. LED+Navi+Panodach+20 Zoll",
+    "url": "https://suchen.mobile.de/auto-inserat/renault-austral-techno-autom-led-navi-panodach-20-zoll-harmstorf-hamburg/458863047.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 458863047,
+    "price": {
+      "gross": "33.489 €",
+      "grossAmount": 33489,
+      "grossCurrency": "EUR",
+      "net": "28.142 €",
+      "netAmount": 28142.02,
+      "type": "FIXED",
+      "vat": "19% MwSt."
+    },
+    "kba": {
+      "hsn": "3333",
+      "tsn": "BPR"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "hero_logo_28_NA_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "Renault Austral Techno<br><br>- 20 Zoll Alufelgen mit Ganzjahresreifen<br>- Anhängerkupplung abnehmbar<br>- Navigationssystem<br>- Sitzheizung<br>- Panoramadach<br>- LED Scheinwerfer mit Fernlichtassistent<br>- Rückfahrkamera<br>- Totwinkelassistent<br>- Spurhalteassistent<br>- beheizbare Frontscheibe<br>- beheizbares Lenkrad<br>- etc.<br><br>Probefahrten nur nach terminlicher Absprache möglich<br>-Inzahlungnahme Ihres gebrauchten Pkw zu fairen Preisen<br>-Finanzierung und Leasing zu attraktiven Konditionen über unsere Partner möglich<br>-Gebrauchtwagengarantie / Neuwagenanschlussgarantie gegen Aufpreis möglich<br>-Irrtümer &amp; Zwischenverkauf vorbehalten<br><br>Zusatzleistungen:<br><br>Falls Ihr favorisiertes Fahrzeug keine Anhängerkupplung, keine Sitzheizung, keine Einparkhilfe oder sonstige Extras verbaut hat, können wir Ihnen diese kostengünstig nachrüsten.<br><br>Ihre Ansprechpartner im Autohaus Harmstorf freuen sich auf Ihren Anruf:<br>Herr Björn Matthiesen Tel. 04105-6133-50<br>Herr Markus Müller Tel. 04105-6133-50<br>Herr Benjamin Heinz Tel. 04105-6133-50<br><br>Email Anfragen: verkauf@autohaus-harmstorf.de<br>Öffnungszeiten im Verkauf:<br>Montag – Freitag: 09:00 – 18:00 Uhr<br>Samstag: 09:30 – 13:00 Uhr<br>",
+    "contactInfo": {
+      "address1": "Hauptstrasse 17",
+      "address2": "DE-21228 Harmstorf/Hamburg",
+      "name": "Autohaus Harmstorf GmbH & Co KG",
+      "openingHours": [
+        {
+          "time": "08:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "09:30 Uhr - 13:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 11.05.2001",
+      "rating": {
+        "count": 10,
+        "totalCount": 300,
+        "score": 4.3,
+        "scoreLocalized": "4,3",
+        "link": "https://www.mobile.de/bewertungen/AUTOHAUS-HARMSTORF?lang=de",
+        "recommendationRate": 88,
+        "adRealityRate": 100,
+        "consultingScore": 4.2,
+        "friendlinessScore": 4.7,
+        "responseTimeScore": 4.1
+      },
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/20/201181f4-1111-4345-aec1-ec6a5742ce89?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/20/201181f4-1111-4345-aec1-ec6a5742ce89?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/20/201181f4-1111-4345-aec1-ec6a5742ce89?rule=mo-360 360w",
+        "alt": "Autohaus Harmstorf GmbH & Co KG"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)4105 613350",
+          "uri": "tel:+494105613350"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 (0)4105 613352"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {},
+      "mapLink": "https://maps.google.com/maps?q=53.348703,9.988913799999999+(Autohaus%20Harmstorf%20GmbH%20%26%20Co%20KG)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 53.348703,
+        "lon": 9.988913799999999
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=458529",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/72/7220fa05-4546-45cf-a0e1-812e04a09254?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/72/7220fa05-4546-45cf-a0e1-812e04a09254?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/72/7220fa05-4546-45cf-a0e1-812e04a09254?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/72/7220fa05-4546-45cf-a0e1-812e04a09254?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/72/7220fa05-4546-45cf-a0e1-812e04a09254?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/0d/0d920215-f32e-477d-a0ed-a4b3196247d8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/0d/0d920215-f32e-477d-a0ed-a4b3196247d8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/0d/0d920215-f32e-477d-a0ed-a4b3196247d8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/0d/0d920215-f32e-477d-a0ed-a4b3196247d8?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 97,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Bank11",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=458863047&loanType=balloon&loanDuration=60&downPayment=6697&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Bank11",
+        "bankName": "Bank11 für Privatkunden und Handel GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6697,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 26792,
+        "interestRateNominal": 5.83,
+        "interestRateEffective": 5.99,
+        "monthlyInstallment": 254.39,
+        "finalInstallment": 18418.95,
+        "totalInterest": 6636.03,
+        "totalAmount": 33428.03,
+        "localized": {
+          "downPayment": "6.697 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "26.792 €",
+          "interestRateNominal": "5,83%",
+          "interestRateEffective": "5,99%",
+          "monthlyInstallment": "255 €",
+          "finalInstallment": "18.418,95 €",
+          "totalInterest": "6.636,03 €",
+          "totalAmount": "33.428,03 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Bank11 für Privatkunden und Handel GmbH (Darlehensgeber), Hammer Landstraße 91, 41460 Neuss. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/de/dee53f34-0b5c-454e-a2c0-925d870dabf9?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/de/dee53f34-0b5c-454e-a2c0-925d870dabf9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/de/dee53f34-0b5c-454e-a2c0-925d870dabf9?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/de/dee53f34-0b5c-454e-a2c0-925d870dabf9?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/de/dee53f34-0b5c-454e-a2c0-925d870dabf9?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/73/7372f976-b6f3-4fa7-9a47-72e3fe4ddb4d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/73/7372f976-b6f3-4fa7-9a47-72e3fe4ddb4d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/73/7372f976-b6f3-4fa7-9a47-72e3fe4ddb4d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/73/7372f976-b6f3-4fa7-9a47-72e3fe4ddb4d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/73/7372f976-b6f3-4fa7-9a47-72e3fe4ddb4d?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e301234-d1ee-4c6c-a261-c1f1c64bda12?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e301234-d1ee-4c6c-a261-c1f1c64bda12?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6e/6e301234-d1ee-4c6c-a261-c1f1c64bda12?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6e/6e301234-d1ee-4c6c-a261-c1f1c64bda12?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e301234-d1ee-4c6c-a261-c1f1c64bda12?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d12a801-d7af-495a-af87-d649b6df6ea6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d12a801-d7af-495a-af87-d649b6df6ea6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1d/1d12a801-d7af-495a-af87-d649b6df6ea6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1d/1d12a801-d7af-495a-af87-d649b6df6ea6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d12a801-d7af-495a-af87-d649b6df6ea6?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/dd/dd053c05-2e3a-45d1-9c10-d0683ebda1de?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/dd/dd053c05-2e3a-45d1-9c10-d0683ebda1de?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/dd/dd053c05-2e3a-45d1-9c10-d0683ebda1de?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/dd/dd053c05-2e3a-45d1-9c10-d0683ebda1de?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/dd/dd053c05-2e3a-45d1-9c10-d0683ebda1de?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c5c51a14-1bc0-40c7-a89c-3c18cf0eafef?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c5c51a14-1bc0-40c7-a89c-3c18cf0eafef?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c5/c5c51a14-1bc0-40c7-a89c-3c18cf0eafef?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c5/c5c51a14-1bc0-40c7-a89c-3c18cf0eafef?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c5c51a14-1bc0-40c7-a89c-3c18cf0eafef?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f34ed90-a67a-41a7-9070-d6e7a4d4e39a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f34ed90-a67a-41a7-9070-d6e7a4d4e39a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5f/5f34ed90-a67a-41a7-9070-d6e7a4d4e39a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5f/5f34ed90-a67a-41a7-9070-d6e7a4d4e39a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f34ed90-a67a-41a7-9070-d6e7a4d4e39a?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/57/57056995-f54a-4f16-ab23-98be75963f13?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/57/57056995-f54a-4f16-ab23-98be75963f13?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/57/57056995-f54a-4f16-ab23-98be75963f13?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/57/57056995-f54a-4f16-ab23-98be75963f13?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/57/57056995-f54a-4f16-ab23-98be75963f13?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e95d0e35-6133-4eea-8911-570c47c0039e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e95d0e35-6133-4eea-8911-570c47c0039e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e9/e95d0e35-6133-4eea-8911-570c47c0039e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e9/e95d0e35-6133-4eea-8911-570c47c0039e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e95d0e35-6133-4eea-8911-570c47c0039e?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/20/206cf5e9-0854-4fec-97b1-18cf0b027677?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/20/206cf5e9-0854-4fec-97b1-18cf0b027677?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/20/206cf5e9-0854-4fec-97b1-18cf0b027677?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/20/206cf5e9-0854-4fec-97b1-18cf0b027677?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/20/206cf5e9-0854-4fec-97b1-18cf0b027677?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/57/578afaff-cf15-4727-b319-be0fc18c5fa3?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/57/578afaff-cf15-4727-b319-be0fc18c5fa3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/57/578afaff-cf15-4727-b319-be0fc18c5fa3?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/57/578afaff-cf15-4727-b319-be0fc18c5fa3?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/57/578afaff-cf15-4727-b319-be0fc18c5fa3?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1e/1e74c704-4ce8-4166-8ab1-dc481ac90c10?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1e/1e74c704-4ce8-4166-8ab1-dc481ac90c10?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1e/1e74c704-4ce8-4166-8ab1-dc481ac90c10?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1e/1e74c704-4ce8-4166-8ab1-dc481ac90c10?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1e/1e74c704-4ce8-4166-8ab1-dc481ac90c10?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b6bc55d-1315-4e38-9868-95ac86d8433a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b6bc55d-1315-4e38-9868-95ac86d8433a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5b6bc55d-1315-4e38-9868-95ac86d8433a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5b6bc55d-1315-4e38-9868-95ac86d8433a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b6bc55d-1315-4e38-9868-95ac86d8433a?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/03/031630b9-1ccc-4804-b412-c1c0740e5d2d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/03/031630b9-1ccc-4804-b412-c1c0740e5d2d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/03/031630b9-1ccc-4804-b412-c1c0740e5d2d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/03/031630b9-1ccc-4804-b412-c1c0740e5d2d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/03/031630b9-1ccc-4804-b412-c1c0740e5d2d?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/59/592327b1-d005-45ed-ba5c-4ecacdb0289c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/59/592327b1-d005-45ed-ba5c-4ecacdb0289c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/59/592327b1-d005-45ed-ba5c-4ecacdb0289c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/59/592327b1-d005-45ed-ba5c-4ecacdb0289c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/59/592327b1-d005-45ed-ba5c-4ecacdb0289c?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a75bc395-89bf-49c3-95ee-4dfa9a9a2a56?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a75bc395-89bf-49c3-95ee-4dfa9a9a2a56?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a7/a75bc395-89bf-49c3-95ee-4dfa9a9a2a56?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a7/a75bc395-89bf-49c3-95ee-4dfa9a9a2a56?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a75bc395-89bf-49c3-95ee-4dfa9a9a2a56?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a2/a245f35b-76cf-47fe-a326-27bdb6c56285?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a2/a245f35b-76cf-47fe-a326-27bdb6c56285?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a2/a245f35b-76cf-47fe-a326-27bdb6c56285?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a2/a245f35b-76cf-47fe-a326-27bdb6c56285?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a2/a245f35b-76cf-47fe-a326-27bdb6c56285?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e8/e8ccdbd6-645b-4d99-95ec-365425290fcc?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e8/e8ccdbd6-645b-4d99-95ec-365425290fcc?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e8/e8ccdbd6-645b-4d99-95ec-365425290fcc?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e8/e8ccdbd6-645b-4d99-95ec-365425290fcc?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e8/e8ccdbd6-645b-4d99-95ec-365425290fcc?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/28/2839924b-b82a-4a7d-8efc-ef9b1406e806?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/28/2839924b-b82a-4a7d-8efc-ef9b1406e806?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/28/2839924b-b82a-4a7d-8efc-ef9b1406e806?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/28/2839924b-b82a-4a7d-8efc-ef9b1406e806?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/28/2839924b-b82a-4a7d-8efc-ef9b1406e806?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c33411db-31e3-4289-ad76-8a07d3cb13fb?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c33411db-31e3-4289-ad76-8a07d3cb13fb?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c3/c33411db-31e3-4289-ad76-8a07d3cb13fb?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c3/c33411db-31e3-4289-ad76-8a07d3cb13fb?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c33411db-31e3-4289-ad76-8a07d3cb13fb?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4f3708f-154d-48d9-9bf3-c54a742d8efb?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4f3708f-154d-48d9-9bf3-c54a742d8efb?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d4/d4f3708f-154d-48d9-9bf3-c54a742d8efb?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d4/d4f3708f-154d-48d9-9bf3-c54a742d8efb?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4f3708f-154d-48d9-9bf3-c54a742d8efb?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/48/4870673a-6ea9-4b3b-b010-800ac9a62c87?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/48/4870673a-6ea9-4b3b-b010-800ac9a62c87?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/48/4870673a-6ea9-4b3b-b010-800ac9a62c87?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/48/4870673a-6ea9-4b3b-b010-800ac9a62c87?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/48/4870673a-6ea9-4b3b-b010-800ac9a62c87?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/12/12baeb23-697e-4b6a-b998-f753338459b0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/12/12baeb23-697e-4b6a-b998-f753338459b0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/12/12baeb23-697e-4b6a-b998-f753338459b0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/12/12baeb23-697e-4b6a-b998-f753338459b0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/12/12baeb23-697e-4b6a-b998-f753338459b0?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee7468e-cd68-49da-a348-c77ebbe3684c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee7468e-cd68-49da-a348-c77ebbe3684c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee7468e-cd68-49da-a348-c77ebbe3684c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee7468e-cd68-49da-a348-c77ebbe3684c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee7468e-cd68-49da-a348-c77ebbe3684c?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/44/44735398-d430-4743-940b-e7ebdcefee71?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/44/44735398-d430-4743-940b-e7ebdcefee71?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/44/44735398-d430-4743-940b-e7ebdcefee71?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/44/44735398-d430-4743-940b-e7ebdcefee71?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/44/44735398-d430-4743-940b-e7ebdcefee71?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9a/9aab6cf7-60d3-4852-bad4-2d31b1825938?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9a/9aab6cf7-60d3-4852-bad4-2d31b1825938?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/9a/9aab6cf7-60d3-4852-bad4-2d31b1825938?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/9a/9aab6cf7-60d3-4852-bad4-2d31b1825938?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/9a/9aab6cf7-60d3-4852-bad4-2d31b1825938?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/72/7238e939-8a1e-4168-96fc-60aa4434a8e6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/72/7238e939-8a1e-4168-96fc-60aa4434a8e6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/72/7238e939-8a1e-4168-96fc-60aa4434a8e6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/72/7238e939-8a1e-4168-96fc-60aa4434a8e6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/72/7238e939-8a1e-4168-96fc-60aa4434a8e6?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/23/23b41573-88ba-449f-b7a7-7ef9c9fa4ce9?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/23/23b41573-88ba-449f-b7a7-7ef9c9fa4ce9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/23/23b41573-88ba-449f-b7a7-7ef9c9fa4ce9?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/23/23b41573-88ba-449f-b7a7-7ef9c9fa4ce9?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/23/23b41573-88ba-449f-b7a7-7ef9c9fa4ce9?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/de/dee53f34-0b5c-454e-a2c0-925d870dabf9?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/de/dee53f34-0b5c-454e-a2c0-925d870dabf9?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpcorerecommenderpopularfiltersnobanner&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpsbsmodelimprovementsv1&client.abtests=accwebpublichomegaaa4off&adId=458863047"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=33489&c=OffRoad&ms=20700%3B65&id%21=458863047&vc=Car&sid=458529"
+    },
+    "vehicleCondition": "used",
+    "make": "Renault",
+    "model": "Austral",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "ddc77b69-c15d-021c-1ded-32b99f35906e"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Renault Austral für 33.489 €",
+    "price_text": "Preis 33.489 € Fairer Preis 28.142 € (Netto) , 19% MwSt. Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Baureihe": "RHN",
+      "Ausstattungslinie": "Techno",
+      "Fahrzeugnummer": "22",
+      "Verfügbarkeit": "Sofort",
+      "Kilometerstand": "10.400 km",
+      "Hubraum": "1.332 cm³",
+      "Leistung": "116 kW (158 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Energieverbrauch (komb.) 2": "6,5 l/100km",
+      "CO₂-Emissionen (komb.) 2": "148 g/km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Kraftstoffverbrauch 2": "6,5 l/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro 6e",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "01/2026",
+      "Anzahl der Fahrzeughalter": "1",
+      "HU": "Neu",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Vorne, Kamera, Hinten",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "grau Metallic",
+      "Farbe": "Grau Metallic",
+      "Innenausstattung": "Teilleder, Schwarz"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 10.400 km • 116 kW (158 PS) • Benzin • Automatik • 01/2026",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/de/dee53f34-0b5c-454e-a2c0-925d870dabf9?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/73/7372f976-b6f3-4fa7-9a47-72e3fe4ddb4d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e301234-d1ee-4c6c-a261-c1f1c64bda12?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d12a801-d7af-495a-af87-d649b6df6ea6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/dd/dd053c05-2e3a-45d1-9c10-d0683ebda1de?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c5/c5c51a14-1bc0-40c7-a89c-3c18cf0eafef?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f34ed90-a67a-41a7-9070-d6e7a4d4e39a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/57/57056995-f54a-4f16-ab23-98be75963f13?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e9/e95d0e35-6133-4eea-8911-570c47c0039e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/20/206cf5e9-0854-4fec-97b1-18cf0b027677?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/57/578afaff-cf15-4727-b319-be0fc18c5fa3?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1e/1e74c704-4ce8-4166-8ab1-dc481ac90c10?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b6bc55d-1315-4e38-9868-95ac86d8433a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/03/031630b9-1ccc-4804-b412-c1c0740e5d2d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/59/592327b1-d005-45ed-ba5c-4ecacdb0289c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a7/a75bc395-89bf-49c3-95ee-4dfa9a9a2a56?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a2/a245f35b-76cf-47fe-a326-27bdb6c56285?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e8/e8ccdbd6-645b-4d99-95ec-365425290fcc?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/28/2839924b-b82a-4a7d-8efc-ef9b1406e806?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c3/c33411db-31e3-4289-ad76-8a07d3cb13fb?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4f3708f-154d-48d9-9bf3-c54a742d8efb?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/48/4870673a-6ea9-4b3b-b010-800ac9a62c87?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/12/12baeb23-697e-4b6a-b998-f753338459b0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee7468e-cd68-49da-a348-c77ebbe3684c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/44/44735398-d430-4743-940b-e7ebdcefee71?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9a/9aab6cf7-60d3-4852-bad4-2d31b1825938?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/72/7238e939-8a1e-4168-96fc-60aa4434a8e6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/23/23b41573-88ba-449f-b7a7-7ef9c9fa4ce9?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/de/dee53f34-0b5c-454e-a2c0-925d870dabf9?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/73/7372f976-b6f3-4fa7-9a47-72e3fe4ddb4d?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e301234-d1ee-4c6c-a261-c1f1c64bda12?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d12a801-d7af-495a-af87-d649b6df6ea6?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/dd/dd053c05-2e3a-45d1-9c10-d0683ebda1de?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c5c51a14-1bc0-40c7-a89c-3c18cf0eafef?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f34ed90-a67a-41a7-9070-d6e7a4d4e39a?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/57/57056995-f54a-4f16-ab23-98be75963f13?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e95d0e35-6133-4eea-8911-570c47c0039e?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/20/206cf5e9-0854-4fec-97b1-18cf0b027677?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/57/578afaff-cf15-4727-b319-be0fc18c5fa3?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1e/1e74c704-4ce8-4166-8ab1-dc481ac90c10?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b6bc55d-1315-4e38-9868-95ac86d8433a?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/03/031630b9-1ccc-4804-b412-c1c0740e5d2d?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/59/592327b1-d005-45ed-ba5c-4ecacdb0289c?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a75bc395-89bf-49c3-95ee-4dfa9a9a2a56?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a2/a245f35b-76cf-47fe-a326-27bdb6c56285?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e8/e8ccdbd6-645b-4d99-95ec-365425290fcc?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/28/2839924b-b82a-4a7d-8efc-ef9b1406e806?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c33411db-31e3-4289-ad76-8a07d3cb13fb?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4f3708f-154d-48d9-9bf3-c54a742d8efb?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 21,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/48/4870673a-6ea9-4b3b-b010-800ac9a62c87?rule=mo-1600",
+      "local_path": "foto/21.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 22,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/12/12baeb23-697e-4b6a-b998-f753338459b0?rule=mo-1600",
+      "local_path": "foto/22.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 23,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee7468e-cd68-49da-a348-c77ebbe3684c?rule=mo-1600",
+      "local_path": "foto/23.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 24,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/44/44735398-d430-4743-940b-e7ebdcefee71?rule=mo-1600",
+      "local_path": "foto/24.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 25,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/9a/9aab6cf7-60d3-4852-bad4-2d31b1825938?rule=mo-1600",
+      "local_path": "foto/25.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 26,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/72/7238e939-8a1e-4168-96fc-60aa4434a8e6?rule=mo-1600",
+      "local_path": "foto/26.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 27,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/23/23b41573-88ba-449f-b7a7-7ef9c9fa4ce9?rule=mo-1600",
+      "local_path": "foto/27.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

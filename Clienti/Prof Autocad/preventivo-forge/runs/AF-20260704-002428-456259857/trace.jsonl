@@ -1,0 +1,6 @@
+{"ts": "2026-07-03T22:24:28+00:00", "event": "run_created", "source_url": "file://C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\tests\\fixtures\\mobile_de_gla_456259857.html"}
+{"ts": "2026-07-03T22:24:28+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-03T22:24:28+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-03T22:24:28+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-03T22:24:28+00:00", "event": "step", "step": "S2_parsing", "status": "warning", "note": "images: [] should be non-empty"}
+{"ts": "2026-07-03T22:24:28+00:00", "event": "step", "step": "GATE_A", "status": "blocked", "note": "schema: images: [] should be non-empty; nessuna foto estratta"}

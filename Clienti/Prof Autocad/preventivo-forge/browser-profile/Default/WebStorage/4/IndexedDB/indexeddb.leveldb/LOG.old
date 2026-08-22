@@ -1,0 +1,7 @@
+2026/07/05-12:03:40.473 1b1c Reusing MANIFEST C:\Users\Utente\Desktop\qui tutto\Digital Empire\Clienti\Prof Autocad\preventivo-forge\browser-profile\Default\WebStorage\4\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2026/07/05-12:03:40.474 1b1c Recovering log #3
+2026/07/05-12:03:40.476 1b1c Reusing old log C:\Users\Utente\Desktop\qui tutto\Digital Empire\Clienti\Prof Autocad\preventivo-forge\browser-profile\Default\WebStorage\4\IndexedDB\indexeddb.leveldb/000003.log 
+2026/07/05-12:03:41.620 1b1c Level-0 table #5: started
+2026/07/05-12:03:41.623 1b1c Level-0 table #5: 3587 bytes OK
+2026/07/05-12:03:41.625 1b1c Delete type=0 #3
+2026/07/05-12:03:41.626 1b1c Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

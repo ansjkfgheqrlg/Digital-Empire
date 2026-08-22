@@ -1,0 +1,17 @@
+{"ts": "2026-07-05T09:59:40+00:00", "event": "run_created", "source_url": "https://m.mobile.de/auto-inserat/audi-a4-2-0-tfsi-s-tronic-s-line-led-acc-navi-kamera-zwickau/458139485.html?ref=seo&refId=3318726f-e8db-a6db-aeaa-995606ea9c2b&searchId=3318726f-e8db-a6db-aeaa-995606ea9c2b&type=ad"}
+{"ts": "2026-07-05T09:59:40+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-05T10:00:11+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-05T10:00:11+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-05T10:00:11+00:00", "event": "step", "step": "S2_parsing", "status": "done", "note": ""}
+{"ts": "2026-07-05T10:00:11+00:00", "event": "step", "step": "GATE_A", "status": "passed", "note": ""}
+{"ts": "2026-07-05T10:00:11+00:00", "event": "step", "step": "S3_translate_copy", "status": "running", "note": ""}
+{"ts": "2026-07-05T10:00:11+00:00", "event": "step", "step": "S3_translate_copy", "status": "done", "note": ""}
+{"ts": "2026-07-05T10:00:11+00:00", "event": "step", "step": "GATE_B", "status": "passed", "note": ""}
+{"ts": "2026-07-05T10:00:11+00:00", "event": "step", "step": "S4_pricing", "status": "running", "note": ""}
+{"ts": "2026-07-05T10:00:11+00:00", "event": "step", "step": "S4_pricing", "status": "done", "note": "Audi A4 2.0 TFSI S-tronic S-Line LED ACC Navi Kamera 27.668 €"}
+{"ts": "2026-07-05T10:00:11+00:00", "event": "step", "step": "GATE_C", "status": "passed", "note": ""}
+{"ts": "2026-07-05T10:00:11+00:00", "event": "step", "step": "S5_pdf_render", "status": "running", "note": ""}
+{"ts": "2026-07-05T10:00:20+00:00", "event": "step", "step": "S5_pdf_render", "status": "done", "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260705-115940-458139485\\preventivo_audi-a4.pdf"}
+{"ts": "2026-07-05T10:00:22+00:00", "event": "step", "step": "GATE_D", "status": "passed", "note": ""}
+{"ts": "2026-07-05T10:00:25+00:00", "event": "step", "step": "GATE_IMG", "status": "passed", "note": ""}
+{"ts": "2026-07-05T10:00:29+00:00", "event": "step", "step": "GATE_R", "status": "passed", "note": ""}

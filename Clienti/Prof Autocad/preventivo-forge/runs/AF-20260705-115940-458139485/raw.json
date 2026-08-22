@@ -1,0 +1,981 @@
+{
+  "source_url": "https://m.mobile.de/auto-inserat/audi-a4-2-0-tfsi-s-tronic-s-line-led-acc-navi-kamera-zwickau/458139485.html?ref=seo&refId=3318726f-e8db-a6db-aeaa-995606ea9c2b&searchId=3318726f-e8db-a6db-aeaa-995606ea9c2b&type=ad",
+  "scraped_at": "2026-07-05T10:00:02+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug"
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Limousine"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "0332C"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Sofort"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "77.881 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.984 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "140 kW (190 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin, E10-geeignet"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "06/2017"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Selbstlenkende Systeme, Kamera"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "Daytonagrau Perleffekt"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grau Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Teilleder, Schwarz"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Audi A4",
+    "subTitle": "2.0 TFSI S-tronic S-Line LED ACC Navi Kamera",
+    "makeKey": "Audi",
+    "modelKey": "A4",
+    "isNew": false,
+    "isConditionNew": false,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Alarmanlage",
+      "Armlehne",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Geschwindigkeitsbegrenzer",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Multifunktionslenkrad",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Notrufsystem",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Scheckheftgepflegt",
+      "Servolenkung",
+      "Sitzbelüftung",
+      "Sitzheizung",
+      "Sportpaket",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Totwinkel-Assistent",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "Klimaautomatik",
+      "Navigationssystem",
+      "Sitzheizung"
+    ],
+    "sellerId": 22312353,
+    "priceRating": {
+      "rating": "INCREASED_PRICE",
+      "ratingLabel": "Erhöhter Preis",
+      "thresholdLabels": [
+        "14.600 €",
+        "19.000 €",
+        "20.500 €",
+        "22.800 €",
+        "24.500 €",
+        "27.200 €"
+      ],
+      "vehiclePriceOffset": 67
+    },
+    "segment": "Car",
+    "title": "Audi A4 2.0 TFSI S-tronic S-Line LED ACC Navi Kamera",
+    "url": "https://suchen.mobile.de/auto-inserat/audi-a4-2-0-tfsi-s-tronic-s-line-led-acc-navi-kamera-zwickau/458139485.html",
+    "vc": "Car",
+    "category": "Limousine",
+    "id": 458139485,
+    "price": {
+      "gross": "23.950 €",
+      "grossAmount": 23950,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_logo_35_name_photo_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Komfort</b><br><ul><li>Klimaautomatik</li> <li>Zentralverriegelung m. FB</li> <li>4x el. Fensterheber</li> <li>el. Spiegel</li> <li>Bordcomputer</li> <li>Sitzheizung vorn</li> <li>Rückfahr-Kamera</li> <li>el. anklappbare Spiegel</li> <li>beheizbare Aussenspiegel</li> <li>autom. abblendende Außenspiegel</li> <li>autom. abblendender Innenspiegel</li> <li>Regensensor</li> <li>Multifunktionslenkrad</li> <li>Teillederausstattung</li> <li>Mittelarmlehne vorn</li> <li>Mittelarmlehne hinten</li> <li>getönte Scheiben hinten</li> <li>geteilte Rücksitzbank</li> <li>umklappbare Rücksitzbank</li> <li>Schaltwippen</li> <li>Getränkehalter</li> <li>Abstandsregeltempomat</li> <li>Auto Hold</li> <li>höhenverst. Fahrersitz</li> <li>höhenverst. Beifahrersitz</li> <li>höhenverst. Lenkrad</li> <li>Lederlenkrad</li> <li>Anfahrassistent</li> <li>Komfortschließung mit FB</li> <li>Lendenwirbelstütze</li> <li>Ablagenpaket</li> <li>Sitzbelüftung</li> <li>Schaltpunktanzeige</li> <li>Notbremsassistent</li> </ul><br><b>Multimedia</b><br><ul><li>Navi mit Touchscreen</li> <li>AUX-Anschluss</li> <li>USB-Anschluss</li> <li>Media Interface</li> <li>Bluetoothfunktion</li> <li>SD-Kartenleser</li> <li>Sprachsteuerung</li> <li>Fond-Entertaimentsystem</li> <li>Radio mit Farbdisplay</li> <li>Radio</li> </ul><br><b>Sicherheit</b><br><ul><li>6x Airbag</li> <li>el. Stabilitätsprogramm</li> <li>Selbstlenkende Systeme</li> <li>ISOFIX Kindersitzvorrüstung</li> <li>Freisprechanlage</li> <li>Spurhalte-Assistent</li> <li>Alarmanlage</li> <li>Lichtsensor</li> <li>Wegfahrsperre</li> <li>Antiblockiersystem</li> <li>Antischlupfregulierung</li> <li>Beifahrerairbag abschaltbar</li> <li>Geschwindigkeit-Begrenzungsanlage</li> <li>LED-Tagfahrlicht</li> <li>LED-Scheinwerfer (Voll-LED)</li> <li>LED Heckleuchten</li> <li>3te Bremsleuchte</li> <li>Berganfahrhilfe</li> <li>Reifendruckkontrolle</li> <li>Leuchtweiten-Regulierung</li> <li>Traktionskontrolle</li> <li>Bremsassistent</li> <li>Abstandswarnsystem</li> <li>Totwinkel-Assistent</li> <li>Notrufassistent</li> <li>Verkehrszeichen-Erkennung</li> <li>Gurt-Airbag</li> </ul><br><b>Umwelt</b><br><ul><li>Start-Stop Automatik</li> <li>grüne Feinstaubplakette</li> <li>E10-geeignet</li> <li>geregelter Katalysator</li> </ul><br><b>Getriebe</b><br><ul><li>Automatikgetriebe</li> <li>7-Gang Getriebe</li> </ul><br><b>Extras</b><br><ul><li>Alufelgen</li> <li>Metalliclackierung</li> <li>Coming/Leaving Home Funktion</li> <li>Außentemperaturanzeige</li> <li>Drehzahlmesser</li> <li>Fahrerinformationssystem</li> <li>Laderaumabdeckung</li> <li>Befestigungsösen im Laderaum</li> <li>Verzurrösen</li> <li>S-Line Interieur</li> <li>S-Line Exterieur</li> <li>Zierteile Aluminium</li> <li>Seitenschweller</li> <li>Sportlenkrad</li> </ul><br><b>Weiteres</b><br><ul><li>Euro 6</li> <li>aus 1.Hand</li> <li>Checkheftgepflegt</li> <li>Außenspiegel in Wagenfarbe</li> <li>Stoßfänger in Wagenfarbe</li> <li>Seitenleisten in Wagenfarbe</li> <li>el. Parkbremse</li> <li>Stoff Bi-Color</li> <li>Heckscheibenheizung</li> <li>Heckscheibenwischer</li> <li>5-Sitzer</li> <li>Kopfstützen hinten</li> <li>Fahrassistenz-System: Fahrprofilauswahl</li> <li>Kollisionswarnsystem</li> <li>Fahrassistenz-System: Stauassistent</li> <li>Innenausstattung: Teilleder</li> </ul><br><hr><br><b>Weitere Informationen</b><br><br>Preisänderungen und Irrtümer vorbehalten<br><b>Finanzierung auch ohne Anzahlung</b><br><b>Inzahlungnahme auch mit Alt-Kredit-Ablösung</b><br><br><b>Autoland – Deutschlands größter Autodiscounter</b><br>Seit fast 50 Jahren steht Autoland für beste Preise, geprüfte Qualität und höchste Kundenwillkommenskultur. Als größtes herstellerunabhängiges Automobilhandelsunternehmen Deutschlands bieten wir Ihnen maximale Wahlfreiheit: über 15.000 sofort verfügbare Fahrzeuge, mehr als 30 Marken, 37 Standorte deutschlandweit und flexible Finanzierungsmodelle. Bei Autoland profitieren Sie schon auf den ersten Blick von starken Preisvorteilen: Neuwagen bis zu 30 % günstiger, Jahreswagen bis zu 40 % günstiger und geprüfte Gebrauchtwagen mit Bestpreisgarantie. Bei uns finden Sie für nahezu jeden Bedarf das passende Fahrzeug. Gerne jetzt entdecken auf www.autoland.de. <br><br><b>Ihre Vorteile bei Autoland</b><br><ul><li>Neuwagen bis zu 30 % günstiger</li> <li>Jahreswagen bis zu 40 % günstiger</li> <li>Geprüfte Gebrauchtwagen mit Bestpreisgarantie</li> <li>Flexible Finanzierung – mit 0 % Anzahlung und niedrigen monatlichen Raten</li> <li>Unterstützung bei bestehender Finanzierung (Altkreditablösung)</li> <li>Inzahlungnahme Ihres aktuellen Fahrzeugs</li> <li>Kostenlose Lieferung in Ihre Wunschniederlassung</li> <li>Sichere, bargeldlose Bezahlung</li> <li>Garantieverlängerung</li> <li>Zulassungsservice</li> <li>Autoland Meisterwerkstatt an allen Standorten für dauerhafte Mobilität</li> </ul><br><b>Größte Auswahl für jeden Bedarf</b><br>Ob SUV, Kombi, Kleinwagen, Limousine oder Sportwagen – bei uns finden Sie das passende Fahrzeug. Wählen Sie aus verschiedenen Antriebsarten wie Benzin, Diesel, Hybrid oder Elektro.<br> <br><b>Flexible Finanzierung für Ihre Mobilität</b><br>Gestalten Sie Ihre Finanzierung individuell: Laufzeit, Monatsrate und Finanzierungsmodell passen wir Ihren Bedürfnissen an. Mit niedrigen monatlichen Raten sichern Sie sich besonders viel finanziellen Spielraum während der Laufzeit bei maximaler Flexibilität zum Vertragsende.<br> ",
+    "contactInfo": {
+      "address1": "Uhdestraße 20",
+      "address2": "DE-08056 Zwickau",
+      "name": "Autoland NL Zwickau",
+      "markingText": "<p>Herzlich willkommen bei Autoland Zwickau.</p><p>Wir freuen uns, Sie bei uns begrüßen zu dürfen. Bei uns stehen Sie an erster Stelle, denn <strong>Service</strong> wird bei uns nicht nur großgeschrieben, sondern gelebt. Egal, ob Sie auf der Suche nach einem Neuen sind oder Ihren Gebrauchten abgeben möchten: Wir machen Ihnen ein faires Angebot für den <strong>Ankauf oder die Inzahlungnahme</strong> Ihres aktuellen Fahrzeugs. Damit der Traum vom neuen Auto direkt wahr wird, bieten wir Ihnen zudem <strong>Finanzierungen aller Art</strong> an, unkompliziert und genau passend für Ihr Budget.</p><p>Kommen Sie vorbei, wir beraten Sie gern!</p>",
+      "openingHours": [
+        {
+          "time": "08:00 Uhr - 20:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "08:00 Uhr - 18:00 Uhr",
+          "day": "Sa"
+        },
+        {
+          "time": "09:00 Uhr - 18:00 Uhr (Schautag)",
+          "day": "So"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 04.11.2019",
+      "rating": {
+        "count": 22,
+        "totalCount": 79,
+        "score": 4.6,
+        "scoreLocalized": "4,6",
+        "link": "https://www.mobile.de/bewertungen/AUTOLANDAGNIEDERLASSUNGZWICKAU?lang=de",
+        "recommendationRate": 85,
+        "adRealityRate": 89,
+        "consultingScore": 4.454545454545454,
+        "friendlinessScore": 4.681818181818182,
+        "responseTimeScore": 4.545454545454546
+      },
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/3b/3b163386-a548-4e1d-ab25-f4199c391623?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/3b/3b163386-a548-4e1d-ab25-f4199c391623?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/3b/3b163386-a548-4e1d-ab25-f4199c391623?rule=mo-360 360w",
+        "alt": "Autoland NL Zwickau"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)375 56573003",
+          "uri": "tel:+4937556573003"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 (0)375 2700627"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "logo": {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e052e2a8-cbc5-4c90-a9b7-1a94ae0a03cd?rule=mo-80",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e052e2a8-cbc5-4c90-a9b7-1a94ae0a03cd?rule=mo-80 80w, https://img.classistatic.de/api/v1/mo-prod/images/e0/e052e2a8-cbc5-4c90-a9b7-1a94ae0a03cd?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/e0/e052e2a8-cbc5-4c90-a9b7-1a94ae0a03cd?rule=mo-240 240w"
+        },
+        "name": "Randy Czerny",
+        "role": "Verkauf"
+      },
+      "mapLink": "https://maps.google.com/maps?q=50.712958,12.4995344+(Autoland%20NL%20Zwickau)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 50.712958,
+        "lon": 12.4995344
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=22312353",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/7c/7cb01258-18de-436f-819a-9485863341e2?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7c/7cb01258-18de-436f-819a-9485863341e2?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7c/7cb01258-18de-436f-819a-9485863341e2?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/7c/7cb01258-18de-436f-819a-9485863341e2?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7c/7cb01258-18de-436f-819a-9485863341e2?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/2f/2f4d513d-7b89-4e08-8ad5-dd1a5736b398?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/2f/2f4d513d-7b89-4e08-8ad5-dd1a5736b398?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/2f/2f4d513d-7b89-4e08-8ad5-dd1a5736b398?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/2f/2f4d513d-7b89-4e08-8ad5-dd1a5736b398?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/2f/2f4d513d-7b89-4e08-8ad5-dd1a5736b398?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/44/440bcd4d-85ff-4199-966d-31cc1761afd7?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/44/440bcd4d-85ff-4199-966d-31cc1761afd7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/44/440bcd4d-85ff-4199-966d-31cc1761afd7?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/44/440bcd4d-85ff-4199-966d-31cc1761afd7?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/44/440bcd4d-85ff-4199-966d-31cc1761afd7?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff2c1574-b99c-42c6-b53a-b63cbfe89ac6?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff2c1574-b99c-42c6-b53a-b63cbfe89ac6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ff/ff2c1574-b99c-42c6-b53a-b63cbfe89ac6?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/ff/ff2c1574-b99c-42c6-b53a-b63cbfe89ac6?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff2c1574-b99c-42c6-b53a-b63cbfe89ac6?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdf4a273-bc35-4e40-82f3-ac93a6d3c795?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdf4a273-bc35-4e40-82f3-ac93a6d3c795?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bd/bdf4a273-bc35-4e40-82f3-ac93a6d3c795?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/bd/bdf4a273-bc35-4e40-82f3-ac93a6d3c795?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdf4a273-bc35-4e40-82f3-ac93a6d3c795?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e508994b-77d8-4f23-ad19-c129dfb28f28?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e508994b-77d8-4f23-ad19-c129dfb28f28?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e5/e508994b-77d8-4f23-ad19-c129dfb28f28?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/e5/e508994b-77d8-4f23-ad19-c129dfb28f28?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e508994b-77d8-4f23-ad19-c129dfb28f28?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/62/62aad332-90a2-4d52-9dd8-dbab2c4df4b4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/62/62aad332-90a2-4d52-9dd8-dbab2c4df4b4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/62/62aad332-90a2-4d52-9dd8-dbab2c4df4b4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/62/62aad332-90a2-4d52-9dd8-dbab2c4df4b4?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 264,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=458139485&loanType=balloon&loanDuration=60&downPayment=4790&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 4790,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 19160,
+        "interestRateNominal": 6.78,
+        "interestRateEffective": 6.99,
+        "monthlyInstallment": 229.17,
+        "finalInstallment": 10777.5,
+        "totalInterest": 5138.54,
+        "totalAmount": 24298.54,
+        "localized": {
+          "downPayment": "4.790 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "19.160 €",
+          "interestRateNominal": "6,78%",
+          "interestRateEffective": "6,99%",
+          "monthlyInstallment": "230 €",
+          "finalInstallment": "10.777,50 €",
+          "totalInterest": "5.138,54 €",
+          "totalAmount": "24.298,54 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/51/51df12b7-a3d3-4c63-89e1-e2d1bafd4f76?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/51/51df12b7-a3d3-4c63-89e1-e2d1bafd4f76?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/51/51df12b7-a3d3-4c63-89e1-e2d1bafd4f76?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/51/51df12b7-a3d3-4c63-89e1-e2d1bafd4f76?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/51/51df12b7-a3d3-4c63-89e1-e2d1bafd4f76?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/0d/0d70eb79-92b9-4531-bd1b-f91167b9db09?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/0d/0d70eb79-92b9-4531-bd1b-f91167b9db09?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/0d/0d70eb79-92b9-4531-bd1b-f91167b9db09?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/0d/0d70eb79-92b9-4531-bd1b-f91167b9db09?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/0d/0d70eb79-92b9-4531-bd1b-f91167b9db09?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/92/92541d23-c995-40e5-9e41-eefd2386e544?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/92/92541d23-c995-40e5-9e41-eefd2386e544?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/92/92541d23-c995-40e5-9e41-eefd2386e544?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/92/92541d23-c995-40e5-9e41-eefd2386e544?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/92/92541d23-c995-40e5-9e41-eefd2386e544?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/94/94917ca1-9a7f-4191-b5b3-011c89bcc0a0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/94/94917ca1-9a7f-4191-b5b3-011c89bcc0a0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/94/94917ca1-9a7f-4191-b5b3-011c89bcc0a0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/94/94917ca1-9a7f-4191-b5b3-011c89bcc0a0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/94/94917ca1-9a7f-4191-b5b3-011c89bcc0a0?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f55ecb94-04de-471e-b5a2-0e06d502a1e1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f55ecb94-04de-471e-b5a2-0e06d502a1e1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f55ecb94-04de-471e-b5a2-0e06d502a1e1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f55ecb94-04de-471e-b5a2-0e06d502a1e1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f55ecb94-04de-471e-b5a2-0e06d502a1e1?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/97/974ffac8-4a82-475b-ba56-91282e8f375b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/97/974ffac8-4a82-475b-ba56-91282e8f375b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/97/974ffac8-4a82-475b-ba56-91282e8f375b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/97/974ffac8-4a82-475b-ba56-91282e8f375b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/97/974ffac8-4a82-475b-ba56-91282e8f375b?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6f1bb4d8-41db-4b07-82c7-238205b681c2?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6f1bb4d8-41db-4b07-82c7-238205b681c2?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6f/6f1bb4d8-41db-4b07-82c7-238205b681c2?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6f/6f1bb4d8-41db-4b07-82c7-238205b681c2?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6f1bb4d8-41db-4b07-82c7-238205b681c2?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/49/492990f8-9fef-4f5c-ae7e-634e8114a459?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/49/492990f8-9fef-4f5c-ae7e-634e8114a459?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/49/492990f8-9fef-4f5c-ae7e-634e8114a459?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/49/492990f8-9fef-4f5c-ae7e-634e8114a459?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/49/492990f8-9fef-4f5c-ae7e-634e8114a459?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3abc3b6-402a-4d5b-90e4-09d0c28818d6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3abc3b6-402a-4d5b-90e4-09d0c28818d6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b3/b3abc3b6-402a-4d5b-90e4-09d0c28818d6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b3/b3abc3b6-402a-4d5b-90e4-09d0c28818d6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3abc3b6-402a-4d5b-90e4-09d0c28818d6?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5c9af7b-1104-440d-8f7c-fe0b701e667c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5c9af7b-1104-440d-8f7c-fe0b701e667c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f5c9af7b-1104-440d-8f7c-fe0b701e667c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f5c9af7b-1104-440d-8f7c-fe0b701e667c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5c9af7b-1104-440d-8f7c-fe0b701e667c?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/26/26ea86d7-917c-43d5-bdc7-8654003bf773?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/26/26ea86d7-917c-43d5-bdc7-8654003bf773?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/26/26ea86d7-917c-43d5-bdc7-8654003bf773?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/26/26ea86d7-917c-43d5-bdc7-8654003bf773?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/26/26ea86d7-917c-43d5-bdc7-8654003bf773?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/72/721c1edd-a340-41a0-a493-5ef2ddb6a0c0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/72/721c1edd-a340-41a0-a493-5ef2ddb6a0c0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/72/721c1edd-a340-41a0-a493-5ef2ddb6a0c0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/72/721c1edd-a340-41a0-a493-5ef2ddb6a0c0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/72/721c1edd-a340-41a0-a493-5ef2ddb6a0c0?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/27/27677468-c09a-4d5f-9ba0-1904b5b41b03?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/27/27677468-c09a-4d5f-9ba0-1904b5b41b03?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/27/27677468-c09a-4d5f-9ba0-1904b5b41b03?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/27/27677468-c09a-4d5f-9ba0-1904b5b41b03?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/27/27677468-c09a-4d5f-9ba0-1904b5b41b03?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/12/12b80ea4-1cca-411a-8592-15bba53f793d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/12/12b80ea4-1cca-411a-8592-15bba53f793d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/12/12b80ea4-1cca-411a-8592-15bba53f793d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/12/12b80ea4-1cca-411a-8592-15bba53f793d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/12/12b80ea4-1cca-411a-8592-15bba53f793d?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/de/de231ee5-646e-4caf-bace-9fba8afa79a0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/de/de231ee5-646e-4caf-bace-9fba8afa79a0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/de/de231ee5-646e-4caf-bace-9fba8afa79a0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/de/de231ee5-646e-4caf-bace-9fba8afa79a0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/de/de231ee5-646e-4caf-bace-9fba8afa79a0?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4f/4f4f54b5-538f-4fee-9525-dc31a51cbf67?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4f/4f4f54b5-538f-4fee-9525-dc31a51cbf67?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4f/4f4f54b5-538f-4fee-9525-dc31a51cbf67?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4f/4f4f54b5-538f-4fee-9525-dc31a51cbf67?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4f/4f4f54b5-538f-4fee-9525-dc31a51cbf67?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/80/8091dfd5-818b-4bd0-847a-d71bf1838754?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/80/8091dfd5-818b-4bd0-847a-d71bf1838754?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/80/8091dfd5-818b-4bd0-847a-d71bf1838754?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/80/8091dfd5-818b-4bd0-847a-d71bf1838754?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/80/8091dfd5-818b-4bd0-847a-d71bf1838754?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/39/3942e399-993e-4ab9-867e-ee330b94f245?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/39/3942e399-993e-4ab9-867e-ee330b94f245?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/39/3942e399-993e-4ab9-867e-ee330b94f245?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/39/3942e399-993e-4ab9-867e-ee330b94f245?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/39/3942e399-993e-4ab9-867e-ee330b94f245?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0fc70e43-8d7e-4f31-ad30-a3cb946e494f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0fc70e43-8d7e-4f31-ad30-a3cb946e494f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/0f/0fc70e43-8d7e-4f31-ad30-a3cb946e494f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/0f/0fc70e43-8d7e-4f31-ad30-a3cb946e494f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0fc70e43-8d7e-4f31-ad30-a3cb946e494f?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/35/35d407bf-c16c-4da3-9d9b-74b53403c86e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/35/35d407bf-c16c-4da3-9d9b-74b53403c86e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/35/35d407bf-c16c-4da3-9d9b-74b53403c86e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/35/35d407bf-c16c-4da3-9d9b-74b53403c86e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/35/35d407bf-c16c-4da3-9d9b-74b53403c86e?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc8663ce-4188-46c6-9615-e481668425df?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc8663ce-4188-46c6-9615-e481668425df?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fc/fc8663ce-4188-46c6-9615-e481668425df?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/fc/fc8663ce-4188-46c6-9615-e481668425df?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc8663ce-4188-46c6-9615-e481668425df?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6eccd348-45d6-4356-991d-8f6030b36596?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6eccd348-45d6-4356-991d-8f6030b36596?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6e/6eccd348-45d6-4356-991d-8f6030b36596?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6e/6eccd348-45d6-4356-991d-8f6030b36596?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6eccd348-45d6-4356-991d-8f6030b36596?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5ff3bcaa-6045-49b7-a806-d0d4029aa3ce?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5ff3bcaa-6045-49b7-a806-d0d4029aa3ce?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5f/5ff3bcaa-6045-49b7-a806-d0d4029aa3ce?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5f/5ff3bcaa-6045-49b7-a806-d0d4029aa3ce?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5ff3bcaa-6045-49b7-a806-d0d4029aa3ce?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9804dda-c5d3-4bd4-912c-3a98cb8d4ea2?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9804dda-c5d3-4bd4-912c-3a98cb8d4ea2?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f9804dda-c5d3-4bd4-912c-3a98cb8d4ea2?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f9804dda-c5d3-4bd4-912c-3a98cb8d4ea2?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9804dda-c5d3-4bd4-912c-3a98cb8d4ea2?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/89/89e9042d-0a4a-4502-b7f8-b51f1223bfaf?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/89/89e9042d-0a4a-4502-b7f8-b51f1223bfaf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/89/89e9042d-0a4a-4502-b7f8-b51f1223bfaf?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/89/89e9042d-0a4a-4502-b7f8-b51f1223bfaf?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/89/89e9042d-0a4a-4502-b7f8-b51f1223bfaf?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/13/13066c3b-76a4-4f03-b989-0ad83707c08a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/13/13066c3b-76a4-4f03-b989-0ad83707c08a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/13/13066c3b-76a4-4f03-b989-0ad83707c08a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/13/13066c3b-76a4-4f03-b989-0ad83707c08a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/13/13066c3b-76a4-4f03-b989-0ad83707c08a?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff7d5d9c-a162-4c05-8781-e82fc1cccf11?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff7d5d9c-a162-4c05-8781-e82fc1cccf11?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ff/ff7d5d9c-a162-4c05-8781-e82fc1cccf11?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ff/ff7d5d9c-a162-4c05-8781-e82fc1cccf11?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff7d5d9c-a162-4c05-8781-e82fc1cccf11?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/52/5256dc6a-7583-414d-bfaf-4b479603f1aa?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/52/5256dc6a-7583-414d-bfaf-4b479603f1aa?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/52/5256dc6a-7583-414d-bfaf-4b479603f1aa?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/52/5256dc6a-7583-414d-bfaf-4b479603f1aa?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/52/5256dc6a-7583-414d-bfaf-4b479603f1aa?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/7c/7cb7e054-2673-4bb6-b238-7121bc3ed7a9?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7c/7cb7e054-2673-4bb6-b238-7121bc3ed7a9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7c/7cb7e054-2673-4bb6-b238-7121bc3ed7a9?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/7c/7cb7e054-2673-4bb6-b238-7121bc3ed7a9?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7c/7cb7e054-2673-4bb6-b238-7121bc3ed7a9?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/3a/3afae73f-5c10-4815-9e89-4994471b2b46?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/3a/3afae73f-5c10-4815-9e89-4994471b2b46?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/3a/3afae73f-5c10-4815-9e89-4994471b2b46?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/3a/3afae73f-5c10-4815-9e89-4994471b2b46?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/3a/3afae73f-5c10-4815-9e89-4994471b2b46?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/66/66718c0d-a0ef-45db-9a55-63039cbd89e2?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/66/66718c0d-a0ef-45db-9a55-63039cbd89e2?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/66/66718c0d-a0ef-45db-9a55-63039cbd89e2?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/66/66718c0d-a0ef-45db-9a55-63039cbd89e2?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/66/66718c0d-a0ef-45db-9a55-63039cbd89e2?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2c020ab-397b-49ce-aca8-d3c6950e9eaa?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2c020ab-397b-49ce-aca8-d3c6950e9eaa?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f2/f2c020ab-397b-49ce-aca8-d3c6950e9eaa?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f2/f2c020ab-397b-49ce-aca8-d3c6950e9eaa?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2c020ab-397b-49ce-aca8-d3c6950e9eaa?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad08a8ea-5a80-45d7-a02e-5b0a14012b48?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad08a8ea-5a80-45d7-a02e-5b0a14012b48?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ad/ad08a8ea-5a80-45d7-a02e-5b0a14012b48?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ad/ad08a8ea-5a80-45d7-a02e-5b0a14012b48?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad08a8ea-5a80-45d7-a02e-5b0a14012b48?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/cd/cdf545c6-d8e5-41bb-827d-08aeb8cf3c17?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/cd/cdf545c6-d8e5-41bb-827d-08aeb8cf3c17?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/cd/cdf545c6-d8e5-41bb-827d-08aeb8cf3c17?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/cd/cdf545c6-d8e5-41bb-827d-08aeb8cf3c17?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/cd/cdf545c6-d8e5-41bb-827d-08aeb8cf3c17?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f010364-4c72-4afc-bb32-19aabf9988ab?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f010364-4c72-4afc-bb32-19aabf9988ab?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8f/8f010364-4c72-4afc-bb32-19aabf9988ab?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/8f/8f010364-4c72-4afc-bb32-19aabf9988ab?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f010364-4c72-4afc-bb32-19aabf9988ab?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A4"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/51/51df12b7-a3d3-4c63-89e1-e2d1bafd4f76?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/51/51df12b7-a3d3-4c63-89e1-e2d1bafd4f76?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpsbsmodelimprovementsv1&client.abtests=cossrpcorerecommenderpopularfiltersoff&client.abtests=accwebpublichomegaaa4off&adId=458139485"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=23950&c=Limousine&ms=1900%3B9&id%21=458139485&vc=Car&sid=22312353"
+    },
+    "vehicleCondition": "used",
+    "make": "Audi",
+    "model": "A4",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/audi.html",
+            "name": "Audi"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/audi-a4.html",
+            "name": "A4"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Audi A4 für 23.950 €",
+    "price_text": "Preis 23.950 € Erhöhter Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug",
+      "Kategorie": "Limousine",
+      "Fahrzeugnummer": "0332C",
+      "Verfügbarkeit": "Sofort",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "77.881 km",
+      "Hubraum": "1.984 cm³",
+      "Leistung": "140 kW (190 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin, E10-geeignet",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro6",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "06/2017",
+      "HU": "Neu",
+      "Klimatisierung": "Klimaautomatik",
+      "Einparkhilfe": "Selbstlenkende Systeme, Kamera",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "Daytonagrau Perleffekt",
+      "Farbe": "Grau Metallic",
+      "Innenausstattung": "Teilleder, Schwarz",
+      "Zylinder": "4"
+    },
+    "description": "Gebrauchtfahrzeug • 77.881 km • 140 kW (190 PS) • Benzin, E10-geeignet • Automatik • 06/2017",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/51/51df12b7-a3d3-4c63-89e1-e2d1bafd4f76?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0d/0d70eb79-92b9-4531-bd1b-f91167b9db09?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/92/92541d23-c995-40e5-9e41-eefd2386e544?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/94/94917ca1-9a7f-4191-b5b3-011c89bcc0a0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f5/f55ecb94-04de-471e-b5a2-0e06d502a1e1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/97/974ffac8-4a82-475b-ba56-91282e8f375b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6f/6f1bb4d8-41db-4b07-82c7-238205b681c2?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/49/492990f8-9fef-4f5c-ae7e-634e8114a459?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3abc3b6-402a-4d5b-90e4-09d0c28818d6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5c9af7b-1104-440d-8f7c-fe0b701e667c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/26/26ea86d7-917c-43d5-bdc7-8654003bf773?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/72/721c1edd-a340-41a0-a493-5ef2ddb6a0c0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/27/27677468-c09a-4d5f-9ba0-1904b5b41b03?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/12/12b80ea4-1cca-411a-8592-15bba53f793d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/de/de231ee5-646e-4caf-bace-9fba8afa79a0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4f/4f4f54b5-538f-4fee-9525-dc31a51cbf67?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/80/8091dfd5-818b-4bd0-847a-d71bf1838754?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/39/3942e399-993e-4ab9-867e-ee330b94f245?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0f/0fc70e43-8d7e-4f31-ad30-a3cb946e494f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/35/35d407bf-c16c-4da3-9d9b-74b53403c86e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc8663ce-4188-46c6-9615-e481668425df?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6e/6eccd348-45d6-4356-991d-8f6030b36596?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5ff3bcaa-6045-49b7-a806-d0d4029aa3ce?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9804dda-c5d3-4bd4-912c-3a98cb8d4ea2?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/89/89e9042d-0a4a-4502-b7f8-b51f1223bfaf?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/13/13066c3b-76a4-4f03-b989-0ad83707c08a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff7d5d9c-a162-4c05-8781-e82fc1cccf11?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/52/5256dc6a-7583-414d-bfaf-4b479603f1aa?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7c/7cb7e054-2673-4bb6-b238-7121bc3ed7a9?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3a/3afae73f-5c10-4815-9e89-4994471b2b46?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/66/66718c0d-a0ef-45db-9a55-63039cbd89e2?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2c020ab-397b-49ce-aca8-d3c6950e9eaa?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad08a8ea-5a80-45d7-a02e-5b0a14012b48?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cd/cdf545c6-d8e5-41bb-827d-08aeb8cf3c17?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f010364-4c72-4afc-bb32-19aabf9988ab?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/51/51df12b7-a3d3-4c63-89e1-e2d1bafd4f76?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/0d/0d70eb79-92b9-4531-bd1b-f91167b9db09?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/92/92541d23-c995-40e5-9e41-eefd2386e544?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/94/94917ca1-9a7f-4191-b5b3-011c89bcc0a0?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f55ecb94-04de-471e-b5a2-0e06d502a1e1?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/97/974ffac8-4a82-475b-ba56-91282e8f375b?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6f1bb4d8-41db-4b07-82c7-238205b681c2?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/49/492990f8-9fef-4f5c-ae7e-634e8114a459?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3abc3b6-402a-4d5b-90e4-09d0c28818d6?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5c9af7b-1104-440d-8f7c-fe0b701e667c?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/26/26ea86d7-917c-43d5-bdc7-8654003bf773?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/72/721c1edd-a340-41a0-a493-5ef2ddb6a0c0?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/27/27677468-c09a-4d5f-9ba0-1904b5b41b03?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/12/12b80ea4-1cca-411a-8592-15bba53f793d?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/de/de231ee5-646e-4caf-bace-9fba8afa79a0?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4f/4f4f54b5-538f-4fee-9525-dc31a51cbf67?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/80/8091dfd5-818b-4bd0-847a-d71bf1838754?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/39/3942e399-993e-4ab9-867e-ee330b94f245?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0fc70e43-8d7e-4f31-ad30-a3cb946e494f?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/35/35d407bf-c16c-4da3-9d9b-74b53403c86e?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc8663ce-4188-46c6-9615-e481668425df?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 21,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6eccd348-45d6-4356-991d-8f6030b36596?rule=mo-1600",
+      "local_path": "foto/21.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 22,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5ff3bcaa-6045-49b7-a806-d0d4029aa3ce?rule=mo-1600",
+      "local_path": "foto/22.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 23,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9804dda-c5d3-4bd4-912c-3a98cb8d4ea2?rule=mo-1600",
+      "local_path": "foto/23.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 24,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/89/89e9042d-0a4a-4502-b7f8-b51f1223bfaf?rule=mo-1600",
+      "local_path": "foto/24.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 25,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/13/13066c3b-76a4-4f03-b989-0ad83707c08a?rule=mo-1600",
+      "local_path": "foto/25.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 26,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff7d5d9c-a162-4c05-8781-e82fc1cccf11?rule=mo-1600",
+      "local_path": "foto/26.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 27,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/52/5256dc6a-7583-414d-bfaf-4b479603f1aa?rule=mo-1600",
+      "local_path": "foto/27.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 28,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/7c/7cb7e054-2673-4bb6-b238-7121bc3ed7a9?rule=mo-1600",
+      "local_path": "foto/28.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 29,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/3a/3afae73f-5c10-4815-9e89-4994471b2b46?rule=mo-1600",
+      "local_path": "foto/29.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 30,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/66/66718c0d-a0ef-45db-9a55-63039cbd89e2?rule=mo-1600",
+      "local_path": "foto/30.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 31,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2c020ab-397b-49ce-aca8-d3c6950e9eaa?rule=mo-1600",
+      "local_path": "foto/31.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 32,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad08a8ea-5a80-45d7-a02e-5b0a14012b48?rule=mo-1600",
+      "local_path": "foto/32.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 33,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/cd/cdf545c6-d8e5-41bb-827d-08aeb8cf3c17?rule=mo-1600",
+      "local_path": "foto/33.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 34,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f010364-4c72-4afc-bb32-19aabf9988ab?rule=mo-1600",
+      "local_path": "foto/34.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

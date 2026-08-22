@@ -1,0 +1,115 @@
+# APEX-7 Playwright Bridge Config - Arena.ai Automation for Claude Code
+# Questo file configura il bridge Playwright che permette a Claude Code (che non può generare immagini nativamente) di controllare Arena.ai
+
+arena:
+  # "https://arena.ai" da solo e' la home marketing/leaderboard (niente chat,
+  # niente login) - bug reale trovato in un run vero (2026-08-05): il login
+  # apriva quella pagina, Max non vedeva ne' login ne' account. L'app di
+  # generazione immagini vera e' /image (confermato dalla sessione ArenaAI
+  # gia' funzionante in caroselli - agency/).
+  url: "https://arena.ai/image"
+  # URL alternativi se Arena cambia endpoint image gen
+  fallback_urls:
+    - "https://arena.ai/?mode=image"
+    - "https://arena.ai"
+    - "https://lmarena.ai"
+  # Modelli supportati - GPT-4o migliore per text rendering, Claude 3.5 Sonnet per copy
+  models:
+    default: "GPT-4o"
+    alternatives: ["Claude 3.5 Sonnet", "GPT-4o-mini"]
+  
+  # Selettori DOM - configurabili perché Arena può aggiornare UI
+  # Se un selettore fallisce, il client prova i fallback
+  selectors:
+    # Input prompt principale. Verificato su un run reale (2026-08-05, screenshot
+    # debug): il placeholder vero su /image e' "Describe the image you want to
+    # generate..." - nessuno dei selettori originali lo copriva (tutti pensati
+    # per una chat generica, non per l'app image-gen), risultato: 0/8 immagini
+    # generate, sempre "Prompt input not found". 'textarea' nudo in fondo come
+    # ultima rete di sicurezza (l'unico textarea visibile sulla pagina e' il
+    # composer).
+    prompt_input:
+      - 'textarea[placeholder*="Describe"]'
+      - 'textarea[placeholder*="Ask"]'
+      - 'textarea[placeholder*="Message"]'
+      - 'div[contenteditable="true"]'
+      - '#prompt'
+      - 'textarea[name="prompt"]'
+      - 'textarea'
+    # Bottone invio/genera
+    generate_button:
+      - 'button:has-text("Send")'
+      - 'button:has-text("Generate")'
+      - 'button[type="submit"]'
+      - 'button[aria-label="Send"]'
+      - '[data-testid="send-button"]'
+    # Modello selector
+    model_selector:
+      - 'button:has-text("GPT-4o")'
+      - '[data-testid="model-selector"]'
+      - 'select[name="model"]'
+    # Immagini generate - per estrarre URLs
+    generated_images:
+      - 'img[src*="generated"]'
+      - 'img[src*="blob"]'
+      - '[data-testid="generated-image"]'
+      - '.generated-image img'
+      - 'img[alt*="Generated"]'
+    # Attachment / Upload
+    attachment_area:
+      - '[data-testid="attachment"]'
+      - 'input[type="file"]'
+
+# Carousel generation
+carousel:
+  output_dir: "./outputs/carousel"
+  resolution: "2160x2700" # 4K equivalent di 1080x1350 x2 per ultra nitidezza, poi downscale sharp
+  format: "png"
+  quality: 100
+  # Grana ultra su ogni elemento
+  grain_config:
+    background_grain: 38  # % - aumentato da 35% a 38% per ultra quality
+    element_grain: 15      # grain su cards, testo, bottoni - NUOVO: ogni elemento ha grain
+    text_grain: 5          # grain leggero su testo bianco
+    card_grain: 22         # grain su cards dark e light
+    noise_type: "film grain + photographic grain + paper texture"
+    resolution: "8K texture overlay, 1px grain size, ultra sharp"
+  # Nitidezza ultra
+  sharpness:
+    upscale: 2              # genera 2x poi downscale lanczos per nitidezza
+    sharpen_amount: 1.3
+    dpi: 300
+    anti_alias: "subpixel"
+
+# Claude Code integration
+claude_code:
+  command_triggers:
+    - "/inizio-generazione"
+    - "/inzio-generazione"  # typo comune
+    - "/inizio-carosello"
+    - "/genera-carosello"
+  flow:
+    step1_ask_topic: "Dimmi l'argomento del carosello (es. 'Content Factory per coach', 'Sistema AI per concessionari', 'Recupero carrelli e-commerce')"
+    step2_generate_copy: true
+    step3_generate_images: true
+    step4_package_zip: true
+    step5_provide_download: true
+  messages:
+    waiting_topic: "🎯 Perfetto, sto aspettando il tuo argomento... Scrivimi di cosa deve parlare il carosello."
+    generating_copy: "✍️ Genero copy 8 slide con framework Digital Empire (IL PROBLEMA, LA VERITÀ, LA SOLUZIONE, COME FUNZIONA, IL RISULTATO, DOMANDA VERA, CTA)..."
+    generating_images: "🎨 Genero immagini 4K ultra-grain con Playwright su Arena.ai - Modello {model} - {current}/{total} slide..."
+    done: "✅ Carosello pronto! 8 slide 1080x1350 con grana ultra su ogni elemento, risoluzione 4K nitida, pronte per download."
+    download_ready: "📦 Scarica ZIP: {zip_path} - Contiene 8 PNG + prompt + caption"
+
+# Playwright
+playwright:
+  headless: true          # false se vuoi vedere browser
+  browser: "chromium"     # chromium, firefox, webkit
+  timeout: 60000           # ms per generazione immagine
+  slow_mo: 50             # rallenta per debug
+  viewport:
+    width: 1920
+    height: 1080
+  args:
+    - "--no-sandbox"
+    - "--disable-blink-features=AutomationControlled"

@@ -1,0 +1,636 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=459066628&sb=rel&od=up&vc=Car&dam=false&fr=2018&ml=%3A80000&ms=16700%3B%3B%3B&ms=4%3B%3B%3B&ms=1700%3B%3B%3B&ms=1900%3B%3B%3B&ms=3100%3B%3B%3B&ms=3500%3B%3B%3B&ms=4700%3B%3B%3B&ms=8600%3B%3B%3B&ms=270%3B%3B%3B&ms=14600%3B%3B%3B&ms=12400%3B%3B%3B&ms=11650%3B%3B%3B&ms=14800%3B%3B%3B&ms=15200%3B%3B%3B&ms=15500%3B%3B%3B&ms=15900%3B%3B%3B&ms=16600%3B%3B%3B&ms=17200%3B%3B%3B&ms=20100%3B%3B%3B&ms=21600%3B%3B%3B&ms=137%3B%3B%3B&p=35000&pa=CAM_360_DEGREES&pa=REAR_VIEW_CAM&s=Car&ref=srp&searchId=c1daec15-2b92-693c-3380-0110736613e9&refId=c1daec15-2b92-693c-3380-0110736613e9",
+  "scraped_at": "2026-07-06T18:30:56+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Limousine, Jahreswagen"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "8Y"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "SA117426MA"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Sofort"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "9.124 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.984 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "245 kW (333 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6d"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "05/2025"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "06/2028"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "3-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "Mythosschwarz Metallic"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Schwarz Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Teilleder, Schwarz"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Audi S3",
+    "subTitle": "Sportback TFSI S tronic qu *HUP*Pano*SONOS*Vi",
+    "makeKey": "Audi",
+    "modelKey": "S3",
+    "isNew": false,
+    "isConditionNew": false,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Allradantrieb",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Blendfreies Fernlicht",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Sitzeinstellung",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Geschwindigkeitsbegrenzer",
+      "Head-Up Display",
+      "Induktionsladen für Smartphones",
+      "Isofix",
+      "Kurvenlicht",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Panorama-Dach",
+      "Partikelfilter",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Scheckheftgepflegt",
+      "Scheinwerferreinigung",
+      "Schiebedach",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sommerreifen",
+      "Soundsystem",
+      "Sportfahrwerk",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "www.avemo-group.de",
+      "20.000 Autos abrufbar",
+      "gratis FZ-Bewertung"
+    ],
+    "sellerId": 455100,
+    "priceRating": {
+      "rating": "GOOD_PRICE",
+      "ratingLabel": "Guter Preis",
+      "thresholdLabels": [
+        "35.000 €",
+        "45.500 €",
+        "49.000 €",
+        "54.500 €",
+        "58.500 €",
+        "65.000 €"
+      ],
+      "vehiclePriceOffset": 11
+    },
+    "segment": "Car",
+    "title": "Audi S3 Sportback TFSI S tronic qu *HUP*Pano*SONOS*Vi",
+    "url": "https://suchen.mobile.de/auto-inserat/audi-s3-sportback-tfsi-s-tronic-qu-hup-pano-sonos-vi-heidenheim-a-d-b/459066628.html",
+    "vc": "Car",
+    "category": "Limousine",
+    "id": 459066628,
+    "price": {
+      "gross": "45.890 €",
+      "grossAmount": 45890.01,
+      "grossCurrency": "EUR",
+      "net": "38.563 €",
+      "netAmount": 38563.03,
+      "type": "FIXED",
+      "vat": "19% MwSt."
+    },
+    "kba": {
+      "hsn": "0588",
+      "tsn": "CAZ"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_logo_11_NA_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Highlights:</b><br><ul><li>SONOS Premium Soundsystem mit 3D-Klang</li><li>Audi virtual cockpit plus</li><li>Dekoreinlage Aluminium Spektrum dunkel</li><li>Panorama-Glasdach</li><li>Head-up Display</li></ul><br><b>Assistenzsysteme:</b><br><ul><li>Licht-/Regensensor</li><li>Audi pre sense front</li><li>Reifendruck-Kontrollanzeige</li><li>Geschwindigkeitsbegrenzungsanlage</li><li>Spurverlassenswarnung inklusive Notfallassistent</li><li>Ausweichassistent und Abbiegeassistent</li><li>Kamerabasierte Verkehrszeichenerkennung</li><li>Mit Speedlimiter (LIM)</li><li>Ablenkungs- und Müdigkeitserkennung</li><li>Adaptiver Geschwindigkeitsassistent</li><li>Assistenzpaket Fahren und Parken plus</li></ul><br><b>Multimedia:</b><br><ul><li>USB-Anschlüsse mit Ladefunktion im Fond</li><li>Digitaler Radioempfang</li><li>MMI Radio plus</li><li>MMI experience pro</li><li>Audi phone box</li><li>MMI Navigation plus mit MMI touch</li><li>Navigationspaket</li><li>Audi Application Store und Smartphone-Interface</li><li>Audi connect Navigation &amp; Infotainment plus</li><li>LTE-Unterstützung für Audi phone box</li></ul><br><b>Technik &amp; Sicherheit:</b><br><ul><li>Tagfahrlicht</li><li>Parkassistent mit Einparkhilfe plus</li><li>Start-Stop-System</li><li>Wegfahrsperre, elektronisch</li><li>Seitenairbags vorn mit Kopfairbagsystem und Interaktionsairbag vorn</li><li>Abgaskonzept, WLTP3 M1, N1-I//EU6EA</li><li>Airbags vorn, Beifahrerairbag deaktivierbar</li><li>Komfortschlüssel ohne Safelock</li><li>Audi drive select</li><li>Progressivlenkung</li><li>S-Sportfahrwerk</li><li>Reifenreparaturset</li><li>gesetzlicher Notruf</li><li>Audi connect Notruf &amp; Service mit Audi connect Remote &amp; Control</li><li>Scheinwerfer-Reinigungsanlage</li><li>LED-Heckleuchten mit dynamischer Lichtinszenierung und dynamischem Blinklicht</li><li>Matrix-LED-Scheinwerfer mit dynamischer Lichtinszenierung und dynamischem Blinklicht</li><li>Außenspiegelgehäuse in Wagenfarbe</li><li>Businesspaket</li><li>Matrix LED-Scheinwerfer, LED-Heckleuchten und Scheinwerfer-Reinigungsanlage</li><li>3-Zonen-Komfortklimaautomatik</li><li>Rückfahrkamera</li></ul><br><b>Interieur:</b><br><ul><li>Mittelarmlehne vorn</li><li>Sportkontur-Lederlenkrad, 3-Speichen, unten abgeflacht mit Multifunktion plus und Schaltwippen</li><li>4-Wege-Lendenwirbelstütze für die Vordersitze</li><li>Interieur S mit Sportsitzen, Mikrofaser Dinamica/Kunstleder-Kombination schwarz</li><li>Lenkradapplikation Chromoptik, S-Emblem, Lenkradgriffe perforiertes Leder und Kontrastnaht</li><li>Sitzheizung vorn</li><li>Fahrersitz elektrisch einstellbar</li><li>Rücksitzlehne, geteilt umklappbar</li><li>Einstiegsleisten mit Aluminiumeinlegern vorn, beleuchtet, S-Schriftzug</li><li>Sportsitze vorn</li></ul><br><b>Exterieur:</b><br><ul><li>Manuelle Gepäckraumklappe</li><li>Räder der Audi Sport / Quattro GmbH</li><li>Optikpaket schwarz plus</li><li>Räder Audi Sport, 5-Y-Doppelspeichen, schwarz metallic, 8,0Jx18, Reifen 225/40 R18</li><li>Sonnenschutzverglasung abgedunkelt</li></ul><br><b>Sonstiges:</b><br><ul><li>Assistenzpaket Schutz- und Warnsysteme</li><li>Außenspiegel elektrisch einstell- und beheizbar</li><li>Seitenschweller Standard</li><li>S-Dachkantenspoiler</li><li>Kindersicherung elektrisch betätigt</li><li>i-Size und Top Tether für die äußeren Fondsitze</li><li>Modellkennzeichnung am Heck</li><li>Stoßfänger S-Modell</li><li>quattro</li><li>Fußmatten vorn und hinten</li><li>4-Lenker-Hinterachse</li><li>Multifunktionskamera</li><li>Serviceanzeige 30000 km oder 2 Jahre (variabel)</li><li>Sportback</li><li>Datenmodul Europa</li><li>Reifen performanceoptimiert 225/40 R18 92Y XL</li><li>7-Gang-Automatikgetriebe für Allrad</li><li>without Service Package</li><li>Interieurpaket 9 ( Nur für AU/PO )</li><li>Assistenzpaket 2 ( Nur für Audi und Nutzfahrzeuge )</li><li>Klimatisierungspaket plus</li><li>Wärmeschutzverglasung Frontscheibe</li><li>Endrohrblenden schwarz verchromt</li><li>Audi Neuwagen-Reifengarantie</li><li>&amp;quot,after sales 1&amp;quot</li><li>Ambiente-Lichtpaket pro</li><li>Interieurapplikationen Aluminiumoptik</li></ul><br>Audi Connect je nach Dienst zeitlich begrenzt, danach kostenpflichtig verlängerbar, Garantie 24 Monate ab Tag der Erstzulassung<br><br><b>Extras:</b><br><ul><li>Wir liefern Ihr neues Fahrzeug vor die Haustür! Bundesweit! (Preis auf Anfrage)</li><li>Zulassung bundesweit mit Wunschkennzeichen, ab 169 Euro!</li><li>Über 1000 Fahrzeuge für Sie auf Lager! Sofort verfügbar!</li><li>100 % Sicherheit beim Kauf!</li><li><b>Top Finanzierung &amp; Leasing Konditionen </b></li><li>Auch ohne Anzahlung möglich</li><li><b>Wir rechnen Ihre Wunschrate direkt am Telefon </b> - Laufzeit und Schlussrate wie gewünscht</li><li>Sofortige Kreditentscheidung!</li><li>Gebrauchtwagen-Inzahlungnahme inkl. Altkreditablöse</li><li>Besuchen Sie uns online unter www.marnet.de</li><li>Ehemaliger Listenneupreis am Tag der Erstzulassung: 71356.79</li><li>Fahrzeugnummer: SA117426MA</li></ul><br>Angaben zum Hersteller: AUDI AG, Audi, Auto-Union-Straße 1, 85057 Ingolstadt, Deutschland, +49-841-89-0, kundenbetreuung(at)audi.de<br><br>Produktinformationen: https://www.audi.de/de/rechtliches/gpsr/<br><hr>Die angegebenen Verbrauchsangaben beziehen sich auf WLTP-Werte. Zwischenverkauf und Irrtümer für dieses Angebot sind ausdrücklich vorbehalten. Ausschlaggebend sind einzig und allein die Vereinbarungen in der Auftragsbestätigung oder im Kaufvertrag. Den genauen Ausstattungsumfang, die genauen Kilometer und den Verkaufspreis erhalten Sie von unserem Verkaufspersonal. Bitte kontaktieren Sie uns.",
+    "contactInfo": {
+      "address1": "Aufhausener Str. 23",
+      "address2": "DE-89520 Heidenheim a. d. B.",
+      "name": "Autohaus Marnet GmbH & Co. KG",
+      "markingText": "<p>Als Teil der AVEMO Group bietet dir die Autohausgruppe alle Vorteile einer starken Gemeinschaft. Sieben Marken – Audi, Volkswagen, Volkswagen Nutzfahrzeuge, Škoda, SEAT, CUPRA und Etrusco – vereint unter einem Dach. Das bedeutet für dich: mehr Auswahl, mehr Service, mehr Möglichkeiten.</p><p><strong>Über 4.500 sofort verfügbare Fahrzeuge</strong></p><p><strong>38 Standorte in Hessen, Bayern, Thüringen und Baden-Württemberg</strong></p><p><strong>Alles aus einer Hand: Finanzierung, Leasing, Versicherung &amp; mehr</strong></p><p><strong>Mehr erfahren unter marnet.de</strong></p>",
+      "openingHours": [
+        {
+          "time": "07:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "08:00 Uhr - 13:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 22.02.2007",
+      "rating": {
+        "count": 16,
+        "totalCount": 157,
+        "score": 4.1,
+        "scoreLocalized": "4,1",
+        "link": "https://www.mobile.de/bewertungen/AUTOHAUSMARNETHERBRECHTINGEN?lang=de",
+        "recommendationRate": 78,
+        "adRealityRate": 75,
+        "consultingScore": 3.769230769230769,
+        "friendlinessScore": 4.2,
+        "responseTimeScore": 4.3125
+      },
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c50295e4-5394-4c63-ac7d-ed7fd198fb34?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c50295e4-5394-4c63-ac7d-ed7fd198fb34?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/c5/c50295e4-5394-4c63-ac7d-ed7fd198fb34?rule=mo-360 360w",
+        "alt": "Autohaus Marnet GmbH & Co. KG"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)7321 9269950",
+          "uri": "tel:+4973219269950"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {},
+      "mapLink": "https://maps.google.com/maps?q=48.7139837,10.1589507+(Autohaus%20Marnet%20GmbH%20%26%20Co.%20KG)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 48.7139837,
+        "lon": 10.1589507
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=455100",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/55/550b052e-3dc8-4482-9e2d-a97b86cf7c5f?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/55/550b052e-3dc8-4482-9e2d-a97b86cf7c5f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/55/550b052e-3dc8-4482-9e2d-a97b86cf7c5f?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/55/550b052e-3dc8-4482-9e2d-a97b86cf7c5f?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/55/550b052e-3dc8-4482-9e2d-a97b86cf7c5f?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac8e34d7-8a90-4984-af4c-17dfed795fd0?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac8e34d7-8a90-4984-af4c-17dfed795fd0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ac/ac8e34d7-8a90-4984-af4c-17dfed795fd0?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/ac/ac8e34d7-8a90-4984-af4c-17dfed795fd0?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac8e34d7-8a90-4984-af4c-17dfed795fd0?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/00/0002328a-ee55-4489-94db-a7b0e03520cf?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/00/0002328a-ee55-4489-94db-a7b0e03520cf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/00/0002328a-ee55-4489-94db-a7b0e03520cf?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/00/0002328a-ee55-4489-94db-a7b0e03520cf?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/00/0002328a-ee55-4489-94db-a7b0e03520cf?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/96/96031242-8b38-4774-a40b-c7386ea79cc0?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/96/96031242-8b38-4774-a40b-c7386ea79cc0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/96/96031242-8b38-4774-a40b-c7386ea79cc0?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/96/96031242-8b38-4774-a40b-c7386ea79cc0?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/96/96031242-8b38-4774-a40b-c7386ea79cc0?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b3bf6f0-9734-40d9-be69-5e5c61a7aa89?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b3bf6f0-9734-40d9-be69-5e5c61a7aa89?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5b3bf6f0-9734-40d9-be69-5e5c61a7aa89?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5b3bf6f0-9734-40d9-be69-5e5c61a7aa89?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b3bf6f0-9734-40d9-be69-5e5c61a7aa89?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/2f/2f144405-4215-4332-a25b-4ce382fbe1c5?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/2f/2f144405-4215-4332-a25b-4ce382fbe1c5?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/2f/2f144405-4215-4332-a25b-4ce382fbe1c5?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/2f/2f144405-4215-4332-a25b-4ce382fbe1c5?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/2f/2f144405-4215-4332-a25b-4ce382fbe1c5?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0874a4a-b3c1-472d-89e1-9b46042a118e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0874a4a-b3c1-472d-89e1-9b46042a118e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a0/a0874a4a-b3c1-472d-89e1-9b46042a118e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a0/a0874a4a-b3c1-472d-89e1-9b46042a118e?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 64,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=459066628&loanType=balloon&loanDuration=60&downPayment=9178&channel=desktop",
+      "type": "AO",
+      "flowType": "AO",
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 9178,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 36712,
+        "interestRateNominal": 5.26,
+        "interestRateEffective": 5.39,
+        "monthlyInstallment": 483.06,
+        "finalInstallment": 15143.7,
+        "totalInterest": 6932.17,
+        "totalAmount": 43644.17,
+        "localized": {
+          "downPayment": "9.178 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "36.712 €",
+          "interestRateNominal": "5,26%",
+          "interestRateEffective": "5,39%",
+          "monthlyInstallment": "484 €",
+          "finalInstallment": "15.143,70 €",
+          "totalInterest": "6.932,17 €",
+          "totalAmount": "43.644,17 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000 €, effektiver Jahreszins 5,39%, fester Sollzinssatz 5,26% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 143,60 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.772,13 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach"
+        }
+      },
+      "shortFlow": false,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/45/45b6cde3-2dcc-412f-8363-c92e23626d34?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/45/45b6cde3-2dcc-412f-8363-c92e23626d34?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/45/45b6cde3-2dcc-412f-8363-c92e23626d34?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/45/45b6cde3-2dcc-412f-8363-c92e23626d34?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/45/45b6cde3-2dcc-412f-8363-c92e23626d34?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi S3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e35872bb-8274-4158-a7db-c0a6a37ac527?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e35872bb-8274-4158-a7db-c0a6a37ac527?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e3/e35872bb-8274-4158-a7db-c0a6a37ac527?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e3/e35872bb-8274-4158-a7db-c0a6a37ac527?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e35872bb-8274-4158-a7db-c0a6a37ac527?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi S3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/07/07db0767-3529-45fa-a60f-4dd90bb09668?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/07/07db0767-3529-45fa-a60f-4dd90bb09668?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/07/07db0767-3529-45fa-a60f-4dd90bb09668?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/07/07db0767-3529-45fa-a60f-4dd90bb09668?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/07/07db0767-3529-45fa-a60f-4dd90bb09668?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi S3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/86/8661d6b4-a7bf-4768-ac6e-f2a0691a1289?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/86/8661d6b4-a7bf-4768-ac6e-f2a0691a1289?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/86/8661d6b4-a7bf-4768-ac6e-f2a0691a1289?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/86/8661d6b4-a7bf-4768-ac6e-f2a0691a1289?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/86/8661d6b4-a7bf-4768-ac6e-f2a0691a1289?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi S3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/2d/2da6fbd5-39bc-4fd5-bdb6-e62e6c6b0182?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/2d/2da6fbd5-39bc-4fd5-bdb6-e62e6c6b0182?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/2d/2da6fbd5-39bc-4fd5-bdb6-e62e6c6b0182?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/2d/2da6fbd5-39bc-4fd5-bdb6-e62e6c6b0182?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/2d/2da6fbd5-39bc-4fd5-bdb6-e62e6c6b0182?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi S3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/13/130dd823-4ce8-45cf-b992-523a3ce88f63?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/13/130dd823-4ce8-45cf-b992-523a3ce88f63?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/13/130dd823-4ce8-45cf-b992-523a3ce88f63?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/13/130dd823-4ce8-45cf-b992-523a3ce88f63?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/13/130dd823-4ce8-45cf-b992-523a3ce88f63?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi S3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a03ac8bc-9764-4ff4-b467-5b7e3b354370?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a03ac8bc-9764-4ff4-b467-5b7e3b354370?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a0/a03ac8bc-9764-4ff4-b467-5b7e3b354370?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a0/a03ac8bc-9764-4ff4-b467-5b7e3b354370?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a03ac8bc-9764-4ff4-b467-5b7e3b354370?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi S3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fcc6be-c682-45bb-9f27-e4078d327066?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fcc6be-c682-45bb-9f27-e4078d327066?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fcc6be-c682-45bb-9f27-e4078d327066?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fcc6be-c682-45bb-9f27-e4078d327066?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fcc6be-c682-45bb-9f27-e4078d327066?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi S3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1e56b32-114d-414f-883c-f897eb537195?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1e56b32-114d-414f-883c-f897eb537195?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c1/c1e56b32-114d-414f-883c-f897eb537195?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c1/c1e56b32-114d-414f-883c-f897eb537195?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1e56b32-114d-414f-883c-f897eb537195?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi S3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ab/ab73e3ee-fbc8-4857-95ff-86ce7e91ac1c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ab/ab73e3ee-fbc8-4857-95ff-86ce7e91ac1c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ab/ab73e3ee-fbc8-4857-95ff-86ce7e91ac1c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ab/ab73e3ee-fbc8-4857-95ff-86ce7e91ac1c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ab/ab73e3ee-fbc8-4857-95ff-86ce7e91ac1c?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi S3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/02/02a22652-2a6f-45a3-b46a-cc028b646e8c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/02/02a22652-2a6f-45a3-b46a-cc028b646e8c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/02/02a22652-2a6f-45a3-b46a-cc028b646e8c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/02/02a22652-2a6f-45a3-b46a-cc028b646e8c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/02/02a22652-2a6f-45a3-b46a-cc028b646e8c?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi S3"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/45/45b6cde3-2dcc-412f-8363-c92e23626d34?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/45/45b6cde3-2dcc-412f-8363-c92e23626d34?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=accwebpublichomegaaa4on&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpsbsmodelimprovementscontrol&client.abtests=cossrpcorerecommenderpopularfiltersoff&adId=459066628"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=45890&c=Limousine&ms=1900%3B19&id%21=459066628&vc=Car&sid=455100"
+    },
+    "vehicleCondition": "used",
+    "make": "Audi",
+    "model": "S3",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "c1daec15-2b92-693c-3380-0110736613e9"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Audi S3 für 45.890 €",
+    "price_text": "Preis 45.890 € Guter Preis 38.563 € (Netto) , 19% MwSt. Finanzierung Monatsrate ab 484 € Finanzierung berechnen Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Online abschließen Schließe die Finanzierung bequem online von Zuhause ab Online-Kredit Dieses Inserat bietet den Online-Kreditvergleich Unabhängige Finanzierung mit der Bank deiner Wahl Einfach von Zuhause online abschließen Nach wenigen Minuten erhältst du dein persönliches Kreditangebot von verschiedenen Banken",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "Limousine, Jahreswagen",
+      "Baureihe": "8Y",
+      "Fahrzeugnummer": "SA117426MA",
+      "Verfügbarkeit": "Sofort",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "9.124 km",
+      "Hubraum": "1.984 cm³",
+      "Leistung": "245 kW (333 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro6d",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "05/2025",
+      "Anzahl der Fahrzeughalter": "1",
+      "HU": "06/2028",
+      "Klimatisierung": "3-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Selbstlenkende Systeme, Vorne, Hinten, Kamera",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "Mythosschwarz Metallic",
+      "Farbe": "Schwarz Metallic",
+      "Innenausstattung": "Teilleder, Schwarz",
+      "Zylinder": "4"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 9.124 km • 245 kW (333 PS) • Benzin • Automatik • 05/2025",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/45/45b6cde3-2dcc-412f-8363-c92e23626d34?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e3/e35872bb-8274-4158-a7db-c0a6a37ac527?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/07/07db0767-3529-45fa-a60f-4dd90bb09668?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/86/8661d6b4-a7bf-4768-ac6e-f2a0691a1289?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2d/2da6fbd5-39bc-4fd5-bdb6-e62e6c6b0182?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/13/130dd823-4ce8-45cf-b992-523a3ce88f63?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a0/a03ac8bc-9764-4ff4-b467-5b7e3b354370?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fcc6be-c682-45bb-9f27-e4078d327066?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1e56b32-114d-414f-883c-f897eb537195?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ab/ab73e3ee-fbc8-4857-95ff-86ce7e91ac1c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/02/02a22652-2a6f-45a3-b46a-cc028b646e8c?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/45/45b6cde3-2dcc-412f-8363-c92e23626d34?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e35872bb-8274-4158-a7db-c0a6a37ac527?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/07/07db0767-3529-45fa-a60f-4dd90bb09668?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/86/8661d6b4-a7bf-4768-ac6e-f2a0691a1289?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/2d/2da6fbd5-39bc-4fd5-bdb6-e62e6c6b0182?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/13/130dd823-4ce8-45cf-b992-523a3ce88f63?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a03ac8bc-9764-4ff4-b467-5b7e3b354370?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7fcc6be-c682-45bb-9f27-e4078d327066?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1e56b32-114d-414f-883c-f897eb537195?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ab/ab73e3ee-fbc8-4857-95ff-86ce7e91ac1c?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/02/02a22652-2a6f-45a3-b46a-cc028b646e8c?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

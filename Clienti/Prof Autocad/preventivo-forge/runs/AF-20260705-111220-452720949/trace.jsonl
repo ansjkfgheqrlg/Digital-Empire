@@ -1,0 +1,17 @@
+{"ts": "2026-07-05T09:12:20+00:00", "event": "run_created", "source_url": "https://m.mobile.de/auto-inserat/mercedes-benz-c-180-cgi-aut-avantgarde-navi-led-ahk-t%C3%BCv28-hamburg/452720949.html?ref=seo&refId=cb916ebb-4bd0-784a-078c-f098936d186c&searchId=cb916ebb-4bd0-784a-078c-f098936d186c&type=ad"}
+{"ts": "2026-07-05T09:12:20+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:12:53+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-05T09:12:53+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:12:53+00:00", "event": "step", "step": "S2_parsing", "status": "done", "note": ""}
+{"ts": "2026-07-05T09:12:53+00:00", "event": "step", "step": "GATE_A", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:12:53+00:00", "event": "step", "step": "S3_translate_copy", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:12:53+00:00", "event": "step", "step": "S3_translate_copy", "status": "done", "note": ""}
+{"ts": "2026-07-05T09:12:53+00:00", "event": "step", "step": "GATE_B", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:12:53+00:00", "event": "step", "step": "S4_pricing", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:12:53+00:00", "event": "step", "step": "S4_pricing", "status": "done", "note": "Mercedes-Benz C 180 AVANTGARDE 20.509 €"}
+{"ts": "2026-07-05T09:12:53+00:00", "event": "step", "step": "GATE_C", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:12:53+00:00", "event": "step", "step": "S5_pdf_render", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:13:04+00:00", "event": "step", "step": "S5_pdf_render", "status": "done", "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260705-111220-452720949\\preventivo_mercedes-benz-c-180.pdf"}
+{"ts": "2026-07-05T09:13:08+00:00", "event": "step", "step": "GATE_D", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:13:12+00:00", "event": "step", "step": "GATE_IMG", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:13:19+00:00", "event": "step", "step": "GATE_R", "status": "passed", "note": ""}

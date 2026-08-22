@@ -1,0 +1,583 @@
+{
+  "source_url": "https://m.mobile.de/auto-inserat/audi-a5-40-tfsi-s-tronic-sport-sport-duisburg/459522453.html?ref=seo&refId=3318726f-e8db-a6db-aeaa-995606ea9c2b&searchId=3318726f-e8db-a6db-aeaa-995606ea9c2b&type=page1Ad",
+  "scraped_at": "2026-07-05T09:09:16+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug"
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Sportwagen/Coupé"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "103.000 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.984 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "140 kW (190 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "4"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "2/3"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6d-TEMP"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "06/2019"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "2"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "08/2026"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "3-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Selbstlenkende Systeme, Vorne, 360°-Kamera, Hinten"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Schwarz Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Alcantara, Schwarz"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": true
+    },
+    "shortTitle": "Audi A5",
+    "subTitle": "40 TFSI S tronic sport sport",
+    "makeKey": "Audi",
+    "modelKey": "A5",
+    "isNew": false,
+    "isConditionNew": false,
+    "features": [
+      "ABS",
+      "Abstandswarner",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Beheizbare Frontscheibe",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "CD-Spieler",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Sitzeinstellung",
+      "ESP",
+      "Frontantrieb",
+      "Geschwindigkeitsbegrenzer",
+      "Head-Up Display",
+      "Induktionsladen für Smartphones",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Lederlenkrad",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Massagesitze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Partikelfilter",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Schiebedach",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sitzheizung hinten",
+      "Sommerreifen",
+      "Soundsystem",
+      "Sportpaket",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Standheizung",
+      "Start/Stopp-Automatik",
+      "Totwinkel-Assistent",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "Umklappbarer Beifahrersitz",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "WLAN / Wifi Hotspot",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 37605648,
+    "priceRating": {
+      "rating": "REASONABLE_PRICE",
+      "ratingLabel": "Fairer Preis",
+      "thresholdLabels": [
+        "17.300 €",
+        "22.500 €",
+        "24.200 €",
+        "26.900 €",
+        "28.900 €",
+        "32.100 €"
+      ],
+      "vehiclePriceOffset": 100
+    },
+    "segment": "Car",
+    "title": "Audi A5 40 TFSI S tronic sport sport",
+    "url": "https://suchen.mobile.de/auto-inserat/audi-a5-40-tfsi-s-tronic-sport-sport-duisburg/459522453.html",
+    "vc": "Car",
+    "category": "SportsCar",
+    "id": 459522453,
+    "price": {
+      "gross": "26.900 €",
+      "grossAmount": 26900,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "customDimensions": {
+      "10": "fsbo",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "NA_NA_15_NA_NA_NA_NA"
+    },
+    "htmlDescription": "Soweit ich weiß, ist das Fahrzeug nahezu in Vollausstattung – hier die Highlights, die das Fahrerlebnis wirklich unvergesslich machen:<br><br>- Die Highlights – was dieses Auto besonders macht:<br><br>-Bang &amp; Olufsen 3D Soundsystem – 19 Lautsprecher, sattes Klangerlebnis wie im Konzertsaal<br>- Massagefunktion Vordersitze – entspannt auch auf langen Strecken<br>- Memory-Funktion Fahrersitz – deine perfekte Position immer auf Knopfdruck<br>- Audi Virtual Cockpit – volldigitales 12,3 Zoll Kombiinstrument<br>-Panorama-Glasdach elektrisch – Sonne &amp; Freiheit auf Knopfdruck<br>-Audi Drive Select – Comfort, Auto, Dynamic, Individual – dein Auto, dein Fahrgefühl<br>- 360° Kamera – einparken ohne Stress, jeder Winkel sichtbar<br>- Matrix LED-Scheinwerfer – blendet entgegenkommende Fahrer nie, leuchtet die Straße perfekt aus<br>- Sitzheizung vorne &amp; hinten + Lenkradheizung – warm vom ersten Moment<br>- MMI Navigation Plus – präzise Navigation mit Echtzeit-Verkehr<br>- Apple CarPlay &amp; Android Auto – dein Smartphone nahtlos integriert<br>- Head-up Display – Geschwindigkeit &amp; Navigation direkt in der Windschutzscheibe<br>- S line Sportpaket – Sportsitze Leder-Alcantara, Sportfahrwerk, S line Exterieur<br>- 3-Zonen Klimaautomatik – jeder im Auto hat seine perfekte Temperatur<br><br>-<br>-<br>-<br><br>Motor &amp; Getriebe<br><br>2.0 TFSI Benzinmotor, 190 PS (140 kW)<br>7-Gang S tronic Doppelkupplungsgetriebe<br>Hubraum: 1.984 ccm<br>Höchstgeschwindigkeit: 241 km/h<br><br>Verbrauch &amp; Emissionen<br><br>Kraftstoffverbrauch (komb.): 6,0 l/100 km<br>Kraftstoffverbrauch (innerorts): 7,4 l/100 km<br>Kraftstoffverbrauch (außerorts): 5,1 l/100 km<br>CO₂-Emissionen (komb.): 136 g/km<br>Schadstoffklasse: Euro 6d-TEMP<br>Umweltplakette: Grün (Klasse 4)<br><br><br>Exterieur<br><br>Matrix LED-Scheinwerfer mit dynamischem Blinklicht<br>LED-Tagfahrlicht &amp; LED-Rückleuchten<br>Panorama-Glasdach elektrisch<br>19&quot; / 20&quot; Leichtmetallfelgen (Audi Sport)<br>Elektrische Heckklappe<br>Außenspiegel elektrisch einstell- &amp; beheizbar<br>Dachhimmel in Schwarz<br>S line Exterieurpaket (Stoßfänger, Seitenschweller, Diffusor)<br>Schwarze Optik Paket (Fensterrahmen, Spiegelkappen)<br><br><br>Interieur &amp; Komfort<br><br>Audi Virtual Cockpit (12,3 Zoll digitales Kombiinstrument)<br>MMI Navigation Plus mit 8,3 Zoll<br>S-Line Sportsitze in Leder-Alcantara Kombination<br>Sportsitze vorne elektrisch einstellbar mit Memory-Funktion<br>Sitzheizung vorne &amp; hinten<br>Lenkradheizung<br>3-Zonen Klimaautomatik<br>Ambientebeleuchtung (30 Farben)<br>Head-up Display<br>Berganfahrassistent<br>Elektrische Parkbremse mit Auto-Hold<br>Start-Stopp-Automatik<br>Audi Drive Select (Fahrmodi: Comfort / Auto / Dynamic / Individual)<br><br><br>Infotainment &amp; Konnektivität<br><br>Audi MMI Navigation Plus<br>Apple CarPlay &amp; Android Auto<br>Audi Phone Box (induktives Laden)<br>Bang &amp; Olufsen Soundsystem (3D Sound, 19 Lautsprecher)<br>Bluetooth &amp; USB-Schnittstellen<br>WLAN Hotspot / Audi Connect<br>Sprachsteuerung<br>Zwei SD-Kartenslots<br><br><br>Fahrassistenzsysteme<br><br>Adaptiver Tempomat (ACC) mit Stauassistent<br>Spurhalteassistent<br>Spurwechselassistent (Audi Side Assist)<br>Totwinkelwarner<br>Audi Pre Sense Front &amp; Rear (Notbremsassistent)<br>Einparkhilfe vorne &amp; hinten mit Rückfahrkamera<br>360° Kamera (Umgebungskameras)<br>Verkehrszeichenerkennung<br>Fernlichtassistent<br>Ausparkassistent<br><br><br>Sicherheit<br><br>8 Airbags<br>ABS, ESP, ASR<br>Reifendruckkontrollsystem (RDKS)<br>Isofix Kindersitzbefestigung hinten<br>Audi Pre Sense Basic &amp; City<br><br>Privatverkauf – keine Garantie, keine Rücknahme, keine Gewährleistung.<br>Besichtigung und Probefahrt nach Terminvereinbarung möglich.<br>Fahrzeug steht in Duisburg.<br>",
+    "contactInfo": {
+      "address2": "DE-47139 Duisburg",
+      "hasContactPhones": false,
+      "phones": [],
+      "sellerType": "FSBO",
+      "mapLink": "https://maps.google.com/maps?q=DE-47139 Duisburg",
+      "latLong": {
+        "lat": 51.4758022,
+        "lon": 6.7112395
+      },
+      "country": "DE",
+      "type": "Privatanbieter",
+      "numResultsTotal": 1
+    },
+    "financePlan": {
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=459522453&loanType=balloon&loanDuration=60&downPayment=5380&channel=desktop",
+      "type": "AO",
+      "flowType": "AO",
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5380,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 21520,
+        "interestRateNominal": 5.26,
+        "interestRateEffective": 5.39,
+        "monthlyInstallment": 283.16,
+        "finalInstallment": 8877,
+        "totalInterest": 4063.53,
+        "totalAmount": 25583.53,
+        "localized": {
+          "downPayment": "5.380 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "21.520 €",
+          "interestRateNominal": "5,26%",
+          "interestRateEffective": "5,39%",
+          "monthlyInstallment": "284 €",
+          "finalInstallment": "8.877,00 €",
+          "totalInterest": "4.063,53 €",
+          "totalAmount": "25.583,53 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000 €, effektiver Jahreszins 5,39%, fester Sollzinssatz 5,26% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 143,60 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.772,13 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach"
+        }
+      },
+      "shortFlow": false,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca04a9b5-f1ec-4a2f-abbf-640cb355e1e8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca04a9b5-f1ec-4a2f-abbf-640cb355e1e8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ca/ca04a9b5-f1ec-4a2f-abbf-640cb355e1e8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ca/ca04a9b5-f1ec-4a2f-abbf-640cb355e1e8?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca04a9b5-f1ec-4a2f-abbf-640cb355e1e8?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/58/586d91bf-f904-4619-80a6-2fe107a4d3d0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/58/586d91bf-f904-4619-80a6-2fe107a4d3d0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/58/586d91bf-f904-4619-80a6-2fe107a4d3d0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/58/586d91bf-f904-4619-80a6-2fe107a4d3d0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/58/586d91bf-f904-4619-80a6-2fe107a4d3d0?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/84/8484193b-ff96-4cba-baa7-e816fbd91470?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/84/8484193b-ff96-4cba-baa7-e816fbd91470?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/84/8484193b-ff96-4cba-baa7-e816fbd91470?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/84/8484193b-ff96-4cba-baa7-e816fbd91470?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/84/8484193b-ff96-4cba-baa7-e816fbd91470?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6de465c0-df09-4ad1-a49f-8e28790ba9db?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6de465c0-df09-4ad1-a49f-8e28790ba9db?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6d/6de465c0-df09-4ad1-a49f-8e28790ba9db?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6d/6de465c0-df09-4ad1-a49f-8e28790ba9db?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6de465c0-df09-4ad1-a49f-8e28790ba9db?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9bcdf88-5095-4574-b6bc-5ae207759e86?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9bcdf88-5095-4574-b6bc-5ae207759e86?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f9bcdf88-5095-4574-b6bc-5ae207759e86?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f9bcdf88-5095-4574-b6bc-5ae207759e86?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9bcdf88-5095-4574-b6bc-5ae207759e86?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/73/73c09e76-eed2-4ba4-bf13-abbaa6bed2a1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/73/73c09e76-eed2-4ba4-bf13-abbaa6bed2a1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/73/73c09e76-eed2-4ba4-bf13-abbaa6bed2a1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/73/73c09e76-eed2-4ba4-bf13-abbaa6bed2a1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/73/73c09e76-eed2-4ba4-bf13-abbaa6bed2a1?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9f/9fa64fb4-19a6-49e6-8930-2598e1ca8dd9?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9f/9fa64fb4-19a6-49e6-8930-2598e1ca8dd9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/9f/9fa64fb4-19a6-49e6-8930-2598e1ca8dd9?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/9f/9fa64fb4-19a6-49e6-8930-2598e1ca8dd9?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/9f/9fa64fb4-19a6-49e6-8930-2598e1ca8dd9?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee6ddcb-6fc5-40bc-92e1-c7aa3c1182a4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee6ddcb-6fc5-40bc-92e1-c7aa3c1182a4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee6ddcb-6fc5-40bc-92e1-c7aa3c1182a4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee6ddcb-6fc5-40bc-92e1-c7aa3c1182a4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee6ddcb-6fc5-40bc-92e1-c7aa3c1182a4?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d4d9204-01f7-4b0c-b828-178bd18cffe4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d4d9204-01f7-4b0c-b828-178bd18cffe4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7d/7d4d9204-01f7-4b0c-b828-178bd18cffe4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/7d/7d4d9204-01f7-4b0c-b828-178bd18cffe4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d4d9204-01f7-4b0c-b828-178bd18cffe4?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/81/8111f486-8951-4c37-8ec5-25a7c2e9395e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/81/8111f486-8951-4c37-8ec5-25a7c2e9395e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/81/8111f486-8951-4c37-8ec5-25a7c2e9395e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/81/8111f486-8951-4c37-8ec5-25a7c2e9395e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/81/8111f486-8951-4c37-8ec5-25a7c2e9395e?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f99cb227-b69e-4617-9f42-d08e70702583?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f99cb227-b69e-4617-9f42-d08e70702583?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f99cb227-b69e-4617-9f42-d08e70702583?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f99cb227-b69e-4617-9f42-d08e70702583?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f99cb227-b69e-4617-9f42-d08e70702583?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/29/2986546c-3e44-4453-80f7-d4c23f5fd3b3?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/29/2986546c-3e44-4453-80f7-d4c23f5fd3b3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/29/2986546c-3e44-4453-80f7-d4c23f5fd3b3?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/29/2986546c-3e44-4453-80f7-d4c23f5fd3b3?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/29/2986546c-3e44-4453-80f7-d4c23f5fd3b3?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9692954-4b04-4350-918a-a1feb1d0ac8f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9692954-4b04-4350-918a-a1feb1d0ac8f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c9/c9692954-4b04-4350-918a-a1feb1d0ac8f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c9/c9692954-4b04-4350-918a-a1feb1d0ac8f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9692954-4b04-4350-918a-a1feb1d0ac8f?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/48/488c28f0-9636-43cf-a6f4-87ade018d340?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/48/488c28f0-9636-43cf-a6f4-87ade018d340?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/48/488c28f0-9636-43cf-a6f4-87ade018d340?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/48/488c28f0-9636-43cf-a6f4-87ade018d340?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/48/488c28f0-9636-43cf-a6f4-87ade018d340?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/42/422cfb36-2445-4cfb-a5ec-efea080dfe5f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/42/422cfb36-2445-4cfb-a5ec-efea080dfe5f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/42/422cfb36-2445-4cfb-a5ec-efea080dfe5f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/42/422cfb36-2445-4cfb-a5ec-efea080dfe5f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/42/422cfb36-2445-4cfb-a5ec-efea080dfe5f?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi A5"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca04a9b5-f1ec-4a2f-abbf-640cb355e1e8?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca04a9b5-f1ec-4a2f-abbf-640cb355e1e8?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpcorerecommenderpopularfilterspopularfilters&client.abtests=cossrpsbsmodelimprovementscontrol&client.abtests=accwebpublichomegaaa4off&adId=459522453"
+    },
+    "similarAdsInfo": {
+      "type": "similar-ads",
+      "apiParams": "/ml-recommendations-by-id/459522453"
+    },
+    "vehicleCondition": "used",
+    "make": "Audi",
+    "model": "A5",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/audi.html",
+            "name": "Audi"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/audi-a5.html",
+            "name": "A5"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Audi A5 für 26.900 €",
+    "price_text": "Preis 26.900 € Fairer Preis Finanzierung Monatsrate ab 284 € Finanzierung berechnen Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Online abschließen Schließe die Finanzierung bequem online von Zuhause ab Online-Kredit Dieses Inserat bietet den Online-Kreditvergleich Unabhängige Finanzierung mit der Bank deiner Wahl Einfach von Zuhause online abschließen Nach wenigen Minuten erhältst du dein persönliches Kreditangebot von verschiedenen Banken",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug",
+      "Kategorie": "Sportwagen/Coupé",
+      "Kilometerstand": "103.000 km",
+      "Hubraum": "1.984 cm³",
+      "Leistung": "140 kW (190 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Anzahl Sitzplätze": "4",
+      "Anzahl der Türen": "2/3",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro6d-TEMP",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "06/2019",
+      "Anzahl der Fahrzeughalter": "2",
+      "HU": "08/2026",
+      "Klimatisierung": "3-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Selbstlenkende Systeme, Vorne, 360°-Kamera, Hinten",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe": "Schwarz Metallic",
+      "Innenausstattung": "Alcantara, Schwarz"
+    },
+    "description": "Gebrauchtfahrzeug • 103.000 km • 140 kW (190 PS) • Benzin • Automatik • 06/2019",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca04a9b5-f1ec-4a2f-abbf-640cb355e1e8?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/58/586d91bf-f904-4619-80a6-2fe107a4d3d0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/84/8484193b-ff96-4cba-baa7-e816fbd91470?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6d/6de465c0-df09-4ad1-a49f-8e28790ba9db?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9bcdf88-5095-4574-b6bc-5ae207759e86?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/73/73c09e76-eed2-4ba4-bf13-abbaa6bed2a1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9f/9fa64fb4-19a6-49e6-8930-2598e1ca8dd9?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee6ddcb-6fc5-40bc-92e1-c7aa3c1182a4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d4d9204-01f7-4b0c-b828-178bd18cffe4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/81/8111f486-8951-4c37-8ec5-25a7c2e9395e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f9/f99cb227-b69e-4617-9f42-d08e70702583?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/29/2986546c-3e44-4453-80f7-d4c23f5fd3b3?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9692954-4b04-4350-918a-a1feb1d0ac8f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/48/488c28f0-9636-43cf-a6f4-87ade018d340?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/42/422cfb36-2445-4cfb-a5ec-efea080dfe5f?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca04a9b5-f1ec-4a2f-abbf-640cb355e1e8?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/58/586d91bf-f904-4619-80a6-2fe107a4d3d0?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/84/8484193b-ff96-4cba-baa7-e816fbd91470?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6de465c0-df09-4ad1-a49f-8e28790ba9db?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9bcdf88-5095-4574-b6bc-5ae207759e86?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/73/73c09e76-eed2-4ba4-bf13-abbaa6bed2a1?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/9f/9fa64fb4-19a6-49e6-8930-2598e1ca8dd9?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee6ddcb-6fc5-40bc-92e1-c7aa3c1182a4?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d4d9204-01f7-4b0c-b828-178bd18cffe4?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/81/8111f486-8951-4c37-8ec5-25a7c2e9395e?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f99cb227-b69e-4617-9f42-d08e70702583?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/29/2986546c-3e44-4453-80f7-d4c23f5fd3b3?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9692954-4b04-4350-918a-a1feb1d0ac8f?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/48/488c28f0-9636-43cf-a6f4-87ade018d340?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/42/422cfb36-2445-4cfb-a5ec-efea080dfe5f?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

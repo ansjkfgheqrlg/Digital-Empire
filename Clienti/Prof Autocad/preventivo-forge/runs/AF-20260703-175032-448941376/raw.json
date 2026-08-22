@@ -1,0 +1,1099 @@
+{
+  "source_url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-c-200-d-avantgarde-navi-led-park-paket-kamera-sh-dietzenbach-bei-frankfurt/448941376.html?lst=p",
+  "scraped_at": "2026-07-03T15:50:41+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug"
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Kombi"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "BM 206"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "Avantgarde"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "467194"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Sofort"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "29.561 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.993 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "120 kW (163 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Diesel"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "5,3 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "139 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-E",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "5,3 l/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "11/2024"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "Schwarz"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Schwarz"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Teilleder, Schwarz"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      },
+      {
+        "label": "Tankgröße",
+        "tag": "fuelTankVolume",
+        "value": "66 l"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Mercedes-Benz C 200",
+    "subTitle": "d Avantgarde Navi|LED|Park-Paket|Kamera|SH",
+    "makeKey": "Mercedes-Benz",
+    "modelKey": "C 200",
+    "isNew": false,
+    "onCustomerBehalf": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "ABS",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Beheizbares Lenkrad",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Dachreling",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Sitzeinstellung",
+      "Elektr. Sitzeinstellung, hinten",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Geschwindigkeitsbegrenzer",
+      "Heckantrieb",
+      "Induktionsladen für Smartphones",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Partikelfilter",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Scheckheftgepflegt",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Tempomat",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Volldigitales Kombiinstrument",
+      "Winterpaket",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "Direkt v. Leasinggeber",
+      "Rückfahrkamera",
+      "Aktiver Park-Assistent"
+    ],
+    "sellerId": 30610537,
+    "priceRating": {
+      "rating": "VERY_GOOD_PRICE",
+      "ratingLabel": "Sehr guter Preis",
+      "thresholdLabels": [
+        "23.900 €",
+        "31.000 €",
+        "33.400 €",
+        "37.200 €",
+        "39.900 €",
+        "44.300 €"
+      ],
+      "vehiclePriceOffset": 56
+    },
+    "segment": "Car",
+    "title": "Mercedes-Benz C 200 d Avantgarde Navi|LED|Park-Paket|Kamera|SH",
+    "url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-c-200-d-avantgarde-navi-led-park-paket-kamera-sh-dietzenbach-bei-frankfurt/448941376.html",
+    "vc": "Car",
+    "category": "EstateCar",
+    "id": 448941376,
+    "price": {
+      "gross": "27.935 €",
+      "grossAmount": 27935,
+      "grossCurrency": "EUR",
+      "net": "23.475 €",
+      "netAmount": 23474.79,
+      "type": "FIXED",
+      "vat": "19% MwSt."
+    },
+    "kba": {
+      "hsn": "2222",
+      "tsn": "BDF"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_logo_18_NA_photo_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<hr> <b>Leasingbeispiel:</b> <br><br><br> <b>Rate mtl.: 279,00€</b><br><br><b>Anzahlung: 0,00€</b><br><br><b>Laufzeit: 36 Monate</b><br><br><b>Gesamtlaufleistung: 30.000 km</b><br><br><b>Bereitstellungskosten: 999,00€</b><br> <br><br> <b>Gerne erstellen wir Ihnen ein individuelles Leasing-/Finanzierungsangebot</b><br> <hr> <b>HIGHLIGHTS &amp; PAKETE</b><br><ul><li>Park-Paket</li><li>Spiegel-Paket</li><li>Ablage-Paket</li><li>Innenraumlicht-Paket</li><li>Laderaum-Paket</li></ul><br><b>ASSISTENZSYSTEME</b><br><ul><li><b>Rückfahrkamera</b></li><li><b>Aktiver Park-Assistent</b></li><li><b>Aktiver Spurhalteassistent</b></li><li>Parktronic-System PTS (vorn und hinten)</li></ul><br><b>MOTOR GETRIEBE &amp; FAHRWERK</b><br><ul><li>Sport-Fahrwerk</li><li><b>Keyless Go Startanlage</b></li><li>Getriebe Automatik - (9-Stufen)</li><li>Komfort-Fahrwerk tiefergelegt (Agility Control)</li></ul><br><b>AUDIO &amp; KOMMUNIKATION</b><br><ul><li><b>Navigationssystem</b></li><li>DAB-Tuner (Radioempfang digital)</li><li>MBUX Navigation Premium</li><li>Sprachbediensystem Erweiterte Funktionen (MBUX)</li></ul><br><b>INTERIEUR</b><br><ul><li>Sitzheizung</li><li><b>Klimaautomatik (Thermatic 2-Zonen)</b></li><li><b>Rücksitzlehne elektr. verstellbar</b></li><li><b>Sitzbezug / Polsterung: Stoff / Ledernachbildung Artico</b></li><li>Ambiente-Beleuchtung</li><li>Lenkrad (Sport) mit Multifunktion</li><li>Steckdose (12V-Anschluss) im Fond</li></ul><br><b>LICHT &amp; SICHT</b><br><ul><li><b>Scheinwerfer LED High Performance</b></li><li>Aussen-/Innenspiegel mit Abblendautomatik</li><li>Scheibenwischer mit Regensensor</li></ul><br><b>RÄDER</b><br><ul><li>LM-Felgen</li></ul><br><b>TECHNIK &amp; SICHERHEIT</b><br><ul><li><b>Aktiver Bremsassistent</b></li><li><b>Tempomat</b></li></ul><br><b>EXTERIEUR</b><br><ul><li>Aussenspiegel elektr. anklappbar</li><li>Heckklappe mit automatischem Öffnungs- und Schliesssystem</li></ul><br><b>Weitere Merkmale</b><br><ul><li>Entry-Paket</li><li>Ausstattungs-Paket USB</li><li>Avantgarde Interieur</li><li>Elektromotor 17 kW (Hybridantrieb)</li><li>Fingerabdruck-Scanner für MBUX</li><li>Mild-Hybrid 137 kW (Motor 2.0 Ltr. - 120 kW CDI)</li><li>Mittenairbag vorn</li><li>Multimediasystem MBUX (Connect 20 MID)</li><li>Remote Service (Plus) </li></ul><hr> <b>Zwischenverkauf und Irrtümer vorbehalten.</b> Die Fahrzeugbeschreibung dient lediglich der allgemeinen Identifizierung des Fahrzeuges und stellt keine Gewährleistung im kaufrechtlichen Sinne dar. Den genauen Ausstattungsumfang erhalten Sie von unserem Verkaufspersonal. Bitte kontaktieren Sie uns. <br>",
+    "contactInfo": {
+      "address1": "Voltastraße 8",
+      "address2": "DE-63128 Dietzenbach bei Frankfurt",
+      "name": "MeinAuto.de Gebrauchtwagen",
+      "openingHours": [
+        {
+          "time": "09:00 Uhr - 18:30 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "09:00 Uhr - 15:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 23.12.2022",
+      "rating": {
+        "count": 256,
+        "totalCount": 515,
+        "score": 4.7,
+        "scoreLocalized": "4,7",
+        "link": "https://www.mobile.de/bewertungen/MEINAUTODEGEBRAUCHTWAGENDIETZENBACHBEIFRANKFURT?lang=de",
+        "recommendationRate": 96,
+        "adRealityRate": 98,
+        "consultingScore": 4.703557312252965,
+        "friendlinessScore": 4.823529411764706,
+        "responseTimeScore": 4.7109375
+      },
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c116e79-6c03-45d5-873e-51140d9b53ba?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c116e79-6c03-45d5-873e-51140d9b53ba?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/3c/3c116e79-6c03-45d5-873e-51140d9b53ba?rule=mo-360 360w",
+        "alt": "MeinAuto.de Gebrauchtwagen"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)6074 8187200",
+          "uri": "tel:+4960748187200"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "logo": {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/d5/d5f6c8ee-f1e3-426d-8205-b79cea211494?rule=mo-80",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d5/d5f6c8ee-f1e3-426d-8205-b79cea211494?rule=mo-80 80w, https://img.classistatic.de/api/v1/mo-prod/images/d5/d5f6c8ee-f1e3-426d-8205-b79cea211494?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/d5/d5f6c8ee-f1e3-426d-8205-b79cea211494?rule=mo-240 240w"
+        },
+        "role": "Dein Wie-Neuwagen Team"
+      },
+      "mapLink": "https://maps.google.com/maps?q=50.00261219999999,8.7902773+(MeinAuto.de%20Gebrauchtwagen)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 50.00261219999999,
+        "lon": 8.7902773
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=30610537",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/7c/7c8cff5c-920e-4ddb-a3b1-a3af9504a6a2?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7c/7c8cff5c-920e-4ddb-a3b1-a3af9504a6a2?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7c/7c8cff5c-920e-4ddb-a3b1-a3af9504a6a2?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/7c/7c8cff5c-920e-4ddb-a3b1-a3af9504a6a2?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7c/7c8cff5c-920e-4ddb-a3b1-a3af9504a6a2?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d3973c4-764c-4720-af39-ea89c29c2703?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d3973c4-764c-4720-af39-ea89c29c2703?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4d/4d3973c4-764c-4720-af39-ea89c29c2703?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/4d/4d3973c4-764c-4720-af39-ea89c29c2703?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d3973c4-764c-4720-af39-ea89c29c2703?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9d77357-b407-498a-8976-708dc16e07e9?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9d77357-b407-498a-8976-708dc16e07e9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a9/a9d77357-b407-498a-8976-708dc16e07e9?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/a9/a9d77357-b407-498a-8976-708dc16e07e9?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9d77357-b407-498a-8976-708dc16e07e9?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8062460-968c-49de-8017-fa099fa72ae3?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8062460-968c-49de-8017-fa099fa72ae3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c8/c8062460-968c-49de-8017-fa099fa72ae3?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c8/c8062460-968c-49de-8017-fa099fa72ae3?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 401,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Renault",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=448941376&loanType=balloon&loanDuration=60&downPayment=5587&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Renault",
+        "bankName": "Mobilize Financial Services, Geschäftsbereich der RCI Banque S.A. Niederlassung Deutschland",
+        "loanType": "BALLOON",
+        "downPayment": 5587,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 22348,
+        "interestRateNominal": 4.88,
+        "interestRateEffective": 4.99,
+        "monthlyInstallment": 280.42,
+        "finalInstallment": 9777.25,
+        "totalInterest": 3974.24,
+        "totalAmount": 26322.24,
+        "localized": {
+          "downPayment": "5.587 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "22.348 €",
+          "interestRateNominal": "4,88%",
+          "interestRateEffective": "4,99%",
+          "monthlyInstallment": "281 €",
+          "finalInstallment": "9.777,25 €",
+          "totalInterest": "3.974,24 €",
+          "totalAmount": "26.322,24 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Mobilize Financial Services, Geschäftsbereich der RCI Banque S.A. Niederlassung Deutschland (Darlehensgeber), Jagenbergstraße 1, 41468 Neuss. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/01/012b5897-98b3-4f9c-96cf-403925635e0c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/01/012b5897-98b3-4f9c-96cf-403925635e0c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/01/012b5897-98b3-4f9c-96cf-403925635e0c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/01/012b5897-98b3-4f9c-96cf-403925635e0c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/01/012b5897-98b3-4f9c-96cf-403925635e0c?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7557980-8612-4cb7-a23f-f1521f1ff5ac?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7557980-8612-4cb7-a23f-f1521f1ff5ac?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f7/f7557980-8612-4cb7-a23f-f1521f1ff5ac?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f7/f7557980-8612-4cb7-a23f-f1521f1ff5ac?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7557980-8612-4cb7-a23f-f1521f1ff5ac?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d8d8b1c9-39e6-4b77-b380-21c1c60621c5?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d8d8b1c9-39e6-4b77-b380-21c1c60621c5?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d8/d8d8b1c9-39e6-4b77-b380-21c1c60621c5?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d8/d8d8b1c9-39e6-4b77-b380-21c1c60621c5?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d8d8b1c9-39e6-4b77-b380-21c1c60621c5?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ce/cebeb5c5-7c1e-46fc-a340-4f12339e9530?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ce/cebeb5c5-7c1e-46fc-a340-4f12339e9530?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ce/cebeb5c5-7c1e-46fc-a340-4f12339e9530?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ce/cebeb5c5-7c1e-46fc-a340-4f12339e9530?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ce/cebeb5c5-7c1e-46fc-a340-4f12339e9530?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9ccc046-8641-487f-a096-0b0c60c2af84?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9ccc046-8641-487f-a096-0b0c60c2af84?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d9/d9ccc046-8641-487f-a096-0b0c60c2af84?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d9/d9ccc046-8641-487f-a096-0b0c60c2af84?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9ccc046-8641-487f-a096-0b0c60c2af84?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/39/39b0890c-c554-460d-842c-551247071863?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/39/39b0890c-c554-460d-842c-551247071863?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/39/39b0890c-c554-460d-842c-551247071863?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/39/39b0890c-c554-460d-842c-551247071863?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/39/39b0890c-c554-460d-842c-551247071863?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0654450-5fc6-467b-abce-662a7cc5eed7?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0654450-5fc6-467b-abce-662a7cc5eed7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d0/d0654450-5fc6-467b-abce-662a7cc5eed7?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d0/d0654450-5fc6-467b-abce-662a7cc5eed7?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0654450-5fc6-467b-abce-662a7cc5eed7?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a393dff-0b87-4382-bc96-09543d3c32e1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a393dff-0b87-4382-bc96-09543d3c32e1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4a/4a393dff-0b87-4382-bc96-09543d3c32e1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4a/4a393dff-0b87-4382-bc96-09543d3c32e1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a393dff-0b87-4382-bc96-09543d3c32e1?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/68/680470b2-862e-44e9-96d8-d62c3d0f51aa?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/68/680470b2-862e-44e9-96d8-d62c3d0f51aa?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/68/680470b2-862e-44e9-96d8-d62c3d0f51aa?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/68/680470b2-862e-44e9-96d8-d62c3d0f51aa?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/68/680470b2-862e-44e9-96d8-d62c3d0f51aa?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ae/aedaea43-73f4-444e-9cb4-633ddd04b8d2?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ae/aedaea43-73f4-444e-9cb4-633ddd04b8d2?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ae/aedaea43-73f4-444e-9cb4-633ddd04b8d2?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ae/aedaea43-73f4-444e-9cb4-633ddd04b8d2?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ae/aedaea43-73f4-444e-9cb4-633ddd04b8d2?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac537c8a-1879-4642-88c8-f5e918781f15?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac537c8a-1879-4642-88c8-f5e918781f15?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ac/ac537c8a-1879-4642-88c8-f5e918781f15?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ac/ac537c8a-1879-4642-88c8-f5e918781f15?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac537c8a-1879-4642-88c8-f5e918781f15?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/03/03091de4-b97a-4e40-9a64-9e7e3d71a5ac?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/03/03091de4-b97a-4e40-9a64-9e7e3d71a5ac?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/03/03091de4-b97a-4e40-9a64-9e7e3d71a5ac?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/03/03091de4-b97a-4e40-9a64-9e7e3d71a5ac?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/03/03091de4-b97a-4e40-9a64-9e7e3d71a5ac?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/97/97fc4949-b6b3-475b-ae4b-3812feb2a457?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/97/97fc4949-b6b3-475b-ae4b-3812feb2a457?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/97/97fc4949-b6b3-475b-ae4b-3812feb2a457?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/97/97fc4949-b6b3-475b-ae4b-3812feb2a457?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/97/97fc4949-b6b3-475b-ae4b-3812feb2a457?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ea/eadc9048-ab9b-4a16-98ad-98132d9a715b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ea/eadc9048-ab9b-4a16-98ad-98132d9a715b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ea/eadc9048-ab9b-4a16-98ad-98132d9a715b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ea/eadc9048-ab9b-4a16-98ad-98132d9a715b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ea/eadc9048-ab9b-4a16-98ad-98132d9a715b?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/34/3445a163-2d51-462a-aeb4-702085929170?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/34/3445a163-2d51-462a-aeb4-702085929170?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/34/3445a163-2d51-462a-aeb4-702085929170?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/34/3445a163-2d51-462a-aeb4-702085929170?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/34/3445a163-2d51-462a-aeb4-702085929170?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/62/6278cba8-d02f-47e1-acee-8ee7c8d127c4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/62/6278cba8-d02f-47e1-acee-8ee7c8d127c4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/62/6278cba8-d02f-47e1-acee-8ee7c8d127c4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/62/6278cba8-d02f-47e1-acee-8ee7c8d127c4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/62/6278cba8-d02f-47e1-acee-8ee7c8d127c4?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9cb1b900-6353-4182-adba-21e65d264d70?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9cb1b900-6353-4182-adba-21e65d264d70?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/9c/9cb1b900-6353-4182-adba-21e65d264d70?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/9c/9cb1b900-6353-4182-adba-21e65d264d70?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9cb1b900-6353-4182-adba-21e65d264d70?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/56/56db5634-21b4-4224-99fa-bd41b9384460?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/56/56db5634-21b4-4224-99fa-bd41b9384460?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/56/56db5634-21b4-4224-99fa-bd41b9384460?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/56/56db5634-21b4-4224-99fa-bd41b9384460?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/56/56db5634-21b4-4224-99fa-bd41b9384460?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/01/012b5897-98b3-4f9c-96cf-403925635e0c?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/01/012b5897-98b3-4f9c-96cf-403925635e0c?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpsbsmodelimprovementsv2&client.abtests=cossrpcorerecommenderpopularfiltersnobanner&client.abtests=coshomepageworldcupleasingvariant&client.abtests=accwebpublichomegaaa4off&adId=448941376"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=27935&c=EstateCar&ms=17200%3B18&id%21=448941376&vc=Car&sid=30610537"
+    },
+    "vehicleCondition": "used",
+    "make": "Mercedes-Benz",
+    "model": "C 200",
+    "leasingRate": {
+      "type": "PRIVATE",
+      "downPayment": 0,
+      "termOfContract": 36,
+      "annualMileage": 10000,
+      "grossRate": 279,
+      "leasingFactor": 0.48,
+      "netLoanAmount": 0,
+      "totalAmount": 10044,
+      "annualPercentageRate": 0,
+      "nominalInterestRate": 0,
+      "destinationCharges": 999,
+      "extraMileageCosts": 20,
+      "lowMileageCompensation": 8
+    },
+    "leasingDetails": {
+      "grossListPrice": 58245,
+      "vatRate": 19,
+      "lender": "Mobility Concept GmbH, Grünwalder Weg 34, 82041 Oberhaching",
+      "rates": [
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 10000,
+          "netRate": 234.45,
+          "leasingFactor": 0.48,
+          "netLoanAmount": 0,
+          "totalAmount": 8440.2,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 10000,
+          "netRate": 251.26,
+          "leasingFactor": 0.51,
+          "netLoanAmount": 0,
+          "totalAmount": 6030.24,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 12,
+          "annualMileage": 10000,
+          "netRate": 318.49,
+          "leasingFactor": 0.65,
+          "netLoanAmount": 0,
+          "totalAmount": 3821.88,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 15000,
+          "netRate": 251.26,
+          "leasingFactor": 0.51,
+          "netLoanAmount": 0,
+          "totalAmount": 9045.36,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 15000,
+          "netRate": 276.47,
+          "leasingFactor": 0.56,
+          "netLoanAmount": 0,
+          "totalAmount": 6635.28,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 12,
+          "annualMileage": 15000,
+          "netRate": 360.5,
+          "leasingFactor": 0.74,
+          "netLoanAmount": 0,
+          "totalAmount": 4326,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 20000,
+          "netRate": 276.47,
+          "leasingFactor": 0.56,
+          "netLoanAmount": 0,
+          "totalAmount": 9952.92,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 20000,
+          "netRate": 318.49,
+          "leasingFactor": 0.65,
+          "netLoanAmount": 0,
+          "totalAmount": 7643.76,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 12,
+          "annualMileage": 20000,
+          "netRate": 419.33,
+          "leasingFactor": 0.86,
+          "netLoanAmount": 0,
+          "totalAmount": 5031.96,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 10000,
+          "grossRate": 279,
+          "leasingFactor": 0.48,
+          "netLoanAmount": 0,
+          "totalAmount": 10044,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 10000,
+          "grossRate": 299,
+          "leasingFactor": 0.51,
+          "netLoanAmount": 0,
+          "totalAmount": 7176,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 12,
+          "annualMileage": 10000,
+          "grossRate": 379,
+          "leasingFactor": 0.65,
+          "netLoanAmount": 0,
+          "totalAmount": 4548,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 15000,
+          "grossRate": 299,
+          "leasingFactor": 0.51,
+          "netLoanAmount": 0,
+          "totalAmount": 10764,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 15000,
+          "grossRate": 329,
+          "leasingFactor": 0.56,
+          "netLoanAmount": 0,
+          "totalAmount": 7896,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 12,
+          "annualMileage": 15000,
+          "grossRate": 429,
+          "leasingFactor": 0.74,
+          "netLoanAmount": 0,
+          "totalAmount": 5148,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 20000,
+          "grossRate": 329,
+          "leasingFactor": 0.56,
+          "netLoanAmount": 0,
+          "totalAmount": 11844,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 20000,
+          "grossRate": 379,
+          "leasingFactor": 0.65,
+          "netLoanAmount": 0,
+          "totalAmount": 9096,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 12,
+          "annualMileage": 20000,
+          "grossRate": 499,
+          "leasingFactor": 0.86,
+          "netLoanAmount": 0,
+          "totalAmount": 5988,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 999,
+          "extraMileageCosts": 20,
+          "lowMileageCompensation": 8
+        }
+      ],
+      "dealType": "CLASSIC"
+    },
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/mercedes-benz.html",
+            "name": "Mercedes-Benz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/mercedes-benz-c-200.html",
+            "name": "C 200"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Mercedes-Benz C 200 für 27.935 €",
+    "price_text": "Preis 27.935 € Sehr guter Preis 23.475 € (Netto) , 19% MwSt. Finanzierung Leasing Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich mtl. ( zzgl. MwSt. 4 ) Anschaffungszweck Privat Gewerbe 4 Laufzeit undefined Monate Fahrleistung 0 km Anzahlung 0 € Leasingangebot anfragen Leasingdetails Leasingbeispiel Nettodarlehensbetr. (Anschaffungspreis) Anzahlung Fahrleistung pro Jahr 0 km Laufzeit 12 Monate Monatsraten à Leasing-Gesamtbetrag Zusätzliche Informationen Bruttolistenpreis 58.245 € Bereitstellungskosten Keine Angabe Zulassungskosten Keine Angabe Mehr-Kilometer-Kosten Keine Angabe Minder-Kilometer-Vergütung Keine Angabe Ein unverbindliches Leasingangebot der Mobility Concept GmbH, Grünwalder Weg 34, 82041 Oberhaching , Bonität vorausgesetzt . Die Angaben entsprechen zugleich dem 2/3 Beispiel nach §17 Abs. 4 PangV. Es besteht ein gesetzliches Widerrufsrecht für Verbraucher. 3 Diese Angaben gelten für das Angebot ohne Anzahlung. 4 Dieses Angebot richtet sich nur an Kunden in Deutschland.",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug",
+      "Kategorie": "Kombi",
+      "Baureihe": "BM 206",
+      "Ausstattungslinie": "Avantgarde",
+      "Fahrzeugnummer": "467194",
+      "Verfügbarkeit": "Sofort",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "29.561 km",
+      "Hubraum": "1.993 cm³",
+      "Leistung": "120 kW (163 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Diesel",
+      "Energieverbrauch (komb.) 2": "5,3 l/100km",
+      "CO₂-Emissionen (komb.) 2": "139 g/km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Kraftstoffverbrauch 2": "5,3 l/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro6",
+      "Erstzulassung": "11/2024",
+      "Anzahl der Fahrzeughalter": "1",
+      "HU": "Neu",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "Schwarz",
+      "Farbe": "Schwarz",
+      "Innenausstattung": "Teilleder, Schwarz",
+      "Zylinder": "4",
+      "Tankgröße": "66 l",
+      "Nettodarlehensbetr. (Anschaffungspreis)": "",
+      "Anzahlung": "",
+      "Fahrleistung pro Jahr": "0 km",
+      "Laufzeit": "12 Monate",
+      "Monatsraten à": "",
+      "Leasing-Gesamtbetrag": "",
+      "Bruttolistenpreis": "58.245 €",
+      "Bereitstellungskosten": "Keine Angabe",
+      "Zulassungskosten": "Keine Angabe",
+      "Mehr-Kilometer-Kosten": "Keine Angabe",
+      "Minder-Kilometer-Vergütung": "Keine Angabe"
+    },
+    "description": "Gebrauchtfahrzeug • 29.561 km • 120 kW (163 PS) • Diesel • Automatik • 11/2024",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/01/012b5897-98b3-4f9c-96cf-403925635e0c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7557980-8612-4cb7-a23f-f1521f1ff5ac?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d8/d8d8b1c9-39e6-4b77-b380-21c1c60621c5?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ce/cebeb5c5-7c1e-46fc-a340-4f12339e9530?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9ccc046-8641-487f-a096-0b0c60c2af84?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/39/39b0890c-c554-460d-842c-551247071863?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0654450-5fc6-467b-abce-662a7cc5eed7?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a393dff-0b87-4382-bc96-09543d3c32e1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/68/680470b2-862e-44e9-96d8-d62c3d0f51aa?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ae/aedaea43-73f4-444e-9cb4-633ddd04b8d2?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac537c8a-1879-4642-88c8-f5e918781f15?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/03/03091de4-b97a-4e40-9a64-9e7e3d71a5ac?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/97/97fc4949-b6b3-475b-ae4b-3812feb2a457?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ea/eadc9048-ab9b-4a16-98ad-98132d9a715b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/34/3445a163-2d51-462a-aeb4-702085929170?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/62/6278cba8-d02f-47e1-acee-8ee7c8d127c4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9c/9cb1b900-6353-4182-adba-21e65d264d70?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/56/56db5634-21b4-4224-99fa-bd41b9384460?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/01/012b5897-98b3-4f9c-96cf-403925635e0c?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7557980-8612-4cb7-a23f-f1521f1ff5ac?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d8d8b1c9-39e6-4b77-b380-21c1c60621c5?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ce/cebeb5c5-7c1e-46fc-a340-4f12339e9530?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9ccc046-8641-487f-a096-0b0c60c2af84?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/39/39b0890c-c554-460d-842c-551247071863?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0654450-5fc6-467b-abce-662a7cc5eed7?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a393dff-0b87-4382-bc96-09543d3c32e1?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/68/680470b2-862e-44e9-96d8-d62c3d0f51aa?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ae/aedaea43-73f4-444e-9cb4-633ddd04b8d2?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac537c8a-1879-4642-88c8-f5e918781f15?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/03/03091de4-b97a-4e40-9a64-9e7e3d71a5ac?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/97/97fc4949-b6b3-475b-ae4b-3812feb2a457?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ea/eadc9048-ab9b-4a16-98ad-98132d9a715b?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/34/3445a163-2d51-462a-aeb4-702085929170?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/62/6278cba8-d02f-47e1-acee-8ee7c8d127c4?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9cb1b900-6353-4182-adba-21e65d264d70?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/56/56db5634-21b4-4224-99fa-bd41b9384460?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

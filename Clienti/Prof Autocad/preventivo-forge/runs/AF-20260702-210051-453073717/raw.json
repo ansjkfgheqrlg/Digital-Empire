@@ -1,0 +1,854 @@
+{
+  "source_url": "https://suchen.mobile.de/auto-inserat/kia-ev2-42-2-kwh-air-5s-air-win-wp-nav-hda2-paderborn/453073717.html",
+  "scraped_at": "2026-07-02T19:01:57+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Neufahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "-"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "Air"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "006216"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "In 3 Monaten ab Bestellung verfügbar"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "10 km"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "108 kW (147 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Elektromotor"
+      },
+      {
+        "label": "Anderer Energieträger",
+        "tag": "envkv.otherEnergySource",
+        "value": "Strom"
+      },
+      {
+        "label": "Ladedauer (11 kW)",
+        "tag": "chargingTime",
+        "value": "4 Std. 5 Min."
+      },
+      {
+        "label": "Schnellladezeit",
+        "tag": "chargingTimeFast",
+        "value": "29 Min."
+      },
+      {
+        "label": "Steckertypen",
+        "tag": "plugTypes",
+        "value": "Typ 2-Stecker, CCS- oder Combo-Stecker"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "15,1 kWh/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "0 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Elektrische Reichweite",
+        "tag": "envkv.electricalRange",
+        "value": "317 km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-A",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Stromverbrauch",
+        "tag": "envkv.consumptionDetails.power",
+        "value": [
+          "15,1 kWh/100km (kombiniert)",
+          "10,8 kWh/100km (Innenstadt)",
+          "11,9 kWh/100km (Stadtrand)",
+          "13,6 kWh/100km (Landstraße)",
+          "19,8 kWh/100km (Autobahn)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
+        "tag": "envkv.co2Costs",
+        "value": [
+          "707 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 0 €/t)",
+          "0 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
+          "0 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 127 €/t)"
+        ],
+        "infoText": {
+          "headline": "Mögliche CO₂-Kosten über die nächsten 10 Jahre",
+          "text": "<p>Aufgrund der CO₂-Bepreisung sind künftige Erhöhungen der Kraftstoffkosten möglich. Die künftige CO₂-Preisentwicklung ist unsicher, daher werden die möglichen CO₂-Kosten anhand von drei angenommenen CO₂-Preisen für den Zeitraum 2025 bis 2036 berechnet.</p><p>Die tatsächlichen CO₂-Preise können sowohl höher als auch niedriger als in den hier zugrunde liegenden Modellrechnungen ausfallen. Die CO₂-Kosten sind beim Tanken mit den Kraftstoffkosten zu bezahlen.</p><p>Weitere Informationen unter <a href=\"https://www.alternativ-mobil.info/\" target=\"_blank\">www.alternativ-mobil.info/</a></p>"
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftfahrzeugsteuer",
+        "tag": "envkv.tax",
+        "value": "0 €/Jahr"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6d"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Kamera, Vorne, Hinten"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "Morgenbrise Grau"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grau Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Stoff, Grau"
+      },
+      {
+        "label": "Reichweite",
+        "tag": "range",
+        "value": "317 km"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Kia EV2",
+    "subTitle": "42,2 kWh Air 5S AIR WIN WP NAV HDA2",
+    "makeKey": "Kia",
+    "modelKey": "EV2",
+    "isNew": false,
+    "batteryInformation": {
+      "wltpRange": {
+        "label": "Reichweite (WLTP)",
+        "value": "317 km",
+        "infoText": {
+          "headline": "Reichweite",
+          "text": "Die Reichweite eines Fahrzeugs mit vollständig geladener Batterie ist nur eine Schätzung. Die unter realen Bedingungen tatsächlich erzielbare Reichweite ist abhängig vom Fahrverhalten (Geschwindigkeit, Fahrzeugbeladung, Effizienz), den Wetter- und Straßenbedingungen, der verbleibenden Batteriekapazität und anderen Faktoren – und kann daher stark variieren."
+        }
+      },
+      "warrantyInfo": {
+        "label": "Garantie ab Erstzulassung",
+        "value": "8 Jahre oder 160.000 km",
+        "infoText": {
+          "headline": "Batterie-Garantie",
+          "text": "Die Garantie für eine E-Fahrzeug-Batterie sichert dem Käufer in der Regel zu, dass die Leistungsfähigkeit der Batterie nicht zu stark abbaut. Entweder über einen festgelegten Zeitraum (meist 8 Jahre) oder eine bestimmte Laufleistung (meist zw. 100.000 - 160.000 km). Oft wird ein Wert von 70 bis 80 Prozent der ursprünglichen Kapazität zugesichert. Je nach Hersteller gibt es größere Unterschiede. Erkundige dich daher direkt beim Verkäufer nach den konkreten Garantiebedingungen."
+        }
+      },
+      "chargingTimes": {
+        "label": "Ladezeit",
+        "fastDc": {
+          "label": "Schnellladen (DC, max 300 kW)",
+          "value": "29 Min.",
+          "infoText": {
+            "headline": "Öffentliches Laden (50 kW)",
+            "text": "Die Schnellladezeit für Elektrofahrzeuge wird hauptsächlich durch die maximale Ladegeschwindigkeit bestimmt, die sowohl vom bordeigenen Ladegerät des Fahrzeugs als auch durch die Ladestation abhängt. Je höher die kW-Leistung beim Laden, desto schneller die Aufladung der Batterie und desto kürzer die Ladedauer.\n\nDie Ladezeit ist allerdings auch abhängig von anderen Faktoren: dem Ladezustand der Batterie (je leerer die Batterie, desto höher die Ladeleistung), der Außentemperatur und ob an der gleichen Ladesäule noch ein weiteres Fahrzeug lädt."
+          }
+        },
+        "homeAc": {
+          "label": "Zu Hause (AC, 11 kW)",
+          "value": "4 Std. 5 Min.",
+          "infoText": {
+            "headline": "Aufladen zu Hause (11 kW)",
+            "text": "Wer den nötigen Platz hat, kann sein Elektrofahrzeug bequem zu Hause aufladen. Notwendig ist nur ein Platz auf dem Grundstück – Garage, Carport, Einfahrt – und eine Wallbox.\n\nEine Wallbox erzeugt eine höhere Ladeleistung als eine Haushaltssteckdose und lädt das Fahrzeug deutlich schneller. Die Leistung reicht von ca. 4 kW bis 22 kW – je höher die Leistung, desto kürzer die Ladezeit."
+          }
+        }
+      },
+      "chargingPlugTypes": {
+        "label": "Steckertypen",
+        "value": [
+          "Typ 2-Stecker",
+          "CCS- oder Combo-Stecker"
+        ],
+        "infoText": {
+          "headline": "Steckertypen",
+          "text": "Der Ladestecker verbindet das Ladekabel (bzw. das E-Fahrzeug) mit der Ladesäule. Es gibt verschiedene Typen für Ladestecker. Unterschiede gibt es hinsichtlich der Ladeleistung/-geschwindigkeit, der Kompatibilität oder der Stromart (Gleich- od. Wechselstrom). Die gebräuchlichsten Stecker: Typ 2-Stecker (für Wallboxen); CCS- oder Combo-Stecker und CHAdeMO-Stecker (beide für Gleichstrom-Schnellladesäulen); und der Schuko-Stecker (Haushaltssteckdose)."
+        }
+      }
+    },
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": true,
+    "hasElectricEngine": true,
+    "features": [
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Beheizbares Lenkrad",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "ESP",
+      "Fernlichtassistent",
+      "Frontantrieb",
+      "Geschwindigkeitsbegrenzer",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Navigationssystem",
+      "Notbremsassistent",
+      "Pannenkit",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Spurhalteassistent",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Wärmepumpe",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 10132933,
+    "priceRating": {
+      "rating": "REASONABLE_PRICE",
+      "ratingLabel": "Fairer Preis",
+      "thresholdLabels": [
+        "20.700 €",
+        "26.800 €",
+        "28.900 €",
+        "32.200 €",
+        "34.500 €",
+        "38.400 €"
+      ],
+      "vehiclePriceOffset": 17
+    },
+    "segment": "Car",
+    "title": "Kia EV2 42,2 kWh Air 5S AIR WIN WP NAV HDA2",
+    "url": "https://suchen.mobile.de/auto-inserat/kia-ev2-42-2-kwh-air-5s-air-win-wp-nav-hda2-paderborn/453073717.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 453073717,
+    "price": {
+      "gross": "29.490 €",
+      "grossAmount": 29490,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "NA_logo_17_name_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>P1 - Winter-Paket</b><br>Sitzheizung vorn<br>Beifahrersitz höhenverstellbar<br>Lenkrad beheizbar<br><b>Opt. 1 - Wärmepumpe (i. V. m. P1)</b><br>Wärmepumpe für die Innenraumklimatisierung<br><b>Opt. 2 - Navigation (i. V. m. P1 &amp; Opt. 1)</b><br>Autobahnassistent 2.0 (Highway Driving Assist, HDA 2.0)<br>Kia-Kartennavigation mit 31,2 cm (12,3 Zoll) Bildschirmdiagonale, digitalem Radioempfang DAB+, Apple CarPlay™<br>und Android<br><b>Antrieb/Fahrwerk</b><br>Virtuelles Motorsoundsystem (Virtual Engine Sound)<br>Reifenreparaturset<br>16-Zoll-Leichtmetallfelgen<br>AMS (Alternator Management System)<br>Vorheizsystem für die Batterie<br>42.2 kWh Batterie<br>On-Board Charger (3 Phasen, AC, 11 kW)<br>Gangwahl-Hebel (Shift by Wire)<br><b>Audio/Navigation</b><br>2 Frontlautsprecher<br>2 Hecklautsprecher<br>2 Hochtöner vorn<br>Multifunktionslenkrad<br>Bluetooth-Freisprecheinrichtung<br><b>Sicherheitsausstattung</b><br>Notruf-Service e-Call<br>Fahreraufmerksamkeitsassistent (In-Cabin Camera, ICC)<br>Kindersicherung in den hinteren Türen<br>Drittes Bremslicht (LED)<br>ISOFIX-Halterung an äußeren Rücksitzen<br>Aktives Bremslicht (Emergency Stop Signal, ESS)--<br>Aktiver Spurhalteassistent mit korrigierendem Lenkeingriff, Müdigkeitswarner<br>Wegfahrsperre<br>Reifendruckkontrollsystem (TPMS) mit Druckanzeige für jedes Rad im Display des Bordcomputers<br>ABS, Elektronisches Stabilitätsprogramm ESC, Berganfahrhilfe, Multikollisionsbremse<br>Mittenairbag<br>Kopfstützen vorn neigungsverstellbar &amp; höhenverstellbar<br>Intelligenter Geschwindigkeitsassistent (Intelligent Speed Limit Assist, ISLA)<br>Aktiver Totwinkelassistent mit Lenk- und Bremseingriff (Blind Spot Collision Avoidance Assist, BCA)<br>2 Vorhangairbags, 2 Seitenairbags--<br>Kopfstützen hinten höhenverstellbar<br>Spurfolgeassistent 2.0 (Lane Follow Assist, LFA 2.0)<br>2 Frontairbags (Beifahrerairbag abschaltbar)<br>Insassenalarm (Rear Occupant Alert, ROA<br><b>Außenausstattung</b><br>Türgriffe mit manueller Flush-Funktion<br>Dachreling<br>Außenspiegel anklappbar, elektrisch<br>Außenspiegel elektrisch einstellbar und beheizbar<br>Außenspiegel mit integrierten Blinkleuchten<br><b>Sitze</b><br>Sitzbezüge in Stoff<br>Rücksitzlehne asymmetrisch geteilt (60:40), umklappbar<br>Mittelarmlehne vorn mit Staufach, verschiebbar<br>Fahrersitz höhenverstellbar<br><b>Innenausstattung</b><br>Getränkehalter vorn<br>Lenkrad höhen- und tiefenverstellbar<br>Fußmattenset<br>Sonnenblenden mit Make-up-Spiegel<br>Gepäcknetzösen im Gepäckraum<br>Gepäckraumabdeckung<br>Gepäckraumbeleuchtung<br>Innenraumbeleuchtung<br>Dachkonsole vorn mit Lesespots<br><b>Funktions-/Komfortausstattung</b><br>Zentralverriegelung<br>Elektronische Parkbremse mit Auto-Hold-Funktion<br>Smart-Key und Startknopf<br>Servolenkung, elektronisch unterstützt<br>LED-Scheinwerfer mit Fernlichtassistent (HBA)<br>Dämmerungssensor<br>LED-Tagfahrlicht<br>LED-Rückleuchten<br>Elektrische Fensterheber vorn und hinten, Impulsfunktion und Einklemmschutz auf der Fahrerseite vorn<br>USB-Ladebuchsen, zwei<br>USB-Ladebuchsen an den Seiten der Vordersitze (je eine)<br>USB-C-Anschluss, Ladebuchse und 12-V-Steckdose in der Zentralkonsole<br>Regensensor<br>Rückfahrkamera<br>Parksensoren vorn und hinten<br>Wippen am Lenkrad<br>Geschwindigkeitsregelanlage, adaptiv, inkl. Stopp &amp; Go-Funktion (Smart Cruise Control, SCC 2.0 mit S&amp;G)<br>Innenrückspiegel selbstabblendend (elektrochromatisch)<br>Integriertes 31,2-cm-Digitaldisplay (12,3 Zoll)<br>Klimaautomatik (2 Zonen) mit Antibeschlagsystem<br>Zuheizer, elektrisch<br>Antibeschlagsystem<br>Kia-Infotainmentsystem mit 31,2 cm (12,3 Zoll) Bildschirmdiagonale, digitalem Radioempfang DAB+, Apple<br>CarPlay™ und Andr<br>",
+    "contactInfo": {
+      "address1": "Otto Stadler Straße 1",
+      "address2": "DE-33100 Paderborn",
+      "name": "Autohaus Schirmer GmbH",
+      "openingHours": [
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "09:00 Uhr - 13:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 18.06.2013",
+      "rating": {
+        "count": 4,
+        "totalCount": 14,
+        "score": 5,
+        "scoreLocalized": "5,0",
+        "link": "https://www.mobile.de/bewertungen/AUTOFITSCHIRMERGMBH?lang=de",
+        "recommendationRate": 100,
+        "adRealityRate": 100,
+        "consultingScore": 5,
+        "friendlinessScore": 5,
+        "responseTimeScore": 5
+      },
+      "languages": "Deutsch, Pусский, English, Türkçe",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1b8d4f9-fff6-47d4-835f-6dcb405a464b?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1b8d4f9-fff6-47d4-835f-6dcb405a464b?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/c1/c1b8d4f9-fff6-47d4-835f-6dcb405a464b?rule=mo-360 360w",
+        "alt": "Autohaus Schirmer GmbH"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)5251 87929242",
+          "uri": "tel:+49525187929242"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 5251 87929233"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "Holger Striewe",
+        "role": "Verkaufsberater"
+      },
+      "mapLink": "https://maps.google.com/maps?q=51.734723,8.7808653+(Autohaus%20Schirmer%20GmbH)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 51.734723,
+        "lon": 8.7808653
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=10132933",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/2b/2bc638d6-9d42-427c-ae74-8bea78ed56af?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/2b/2bc638d6-9d42-427c-ae74-8bea78ed56af?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/2b/2bc638d6-9d42-427c-ae74-8bea78ed56af?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/2b/2bc638d6-9d42-427c-ae74-8bea78ed56af?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/2b/2bc638d6-9d42-427c-ae74-8bea78ed56af?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f607973d-0667-418b-8a9a-cfa20e3515da?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f607973d-0667-418b-8a9a-cfa20e3515da?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f6/f607973d-0667-418b-8a9a-cfa20e3515da?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/f6/f607973d-0667-418b-8a9a-cfa20e3515da?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f607973d-0667-418b-8a9a-cfa20e3515da?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/09/09d46f55-4afb-42f0-a914-1ec29cee1a43?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/09/09d46f55-4afb-42f0-a914-1ec29cee1a43?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/09/09d46f55-4afb-42f0-a914-1ec29cee1a43?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/09/09d46f55-4afb-42f0-a914-1ec29cee1a43?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/09/09d46f55-4afb-42f0-a914-1ec29cee1a43?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/cf/cfb007c3-4bcf-4f3f-8b35-6494d65ab06d?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/cf/cfb007c3-4bcf-4f3f-8b35-6494d65ab06d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/cf/cfb007c3-4bcf-4f3f-8b35-6494d65ab06d?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/cf/cfb007c3-4bcf-4f3f-8b35-6494d65ab06d?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/cf/cfb007c3-4bcf-4f3f-8b35-6494d65ab06d?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/8b/8b28d56d-b85f-435c-a48a-3f41b36168a1?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8b/8b28d56d-b85f-435c-a48a-3f41b36168a1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8b/8b28d56d-b85f-435c-a48a-3f41b36168a1?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/8b/8b28d56d-b85f-435c-a48a-3f41b36168a1?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8b/8b28d56d-b85f-435c-a48a-3f41b36168a1?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "type": "Händler",
+      "numResultsTotal": 47,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "deal": {
+      "types": [
+        "KIA_BRAND_PORTAL"
+      ]
+    },
+    "financePlan": {
+      "bankId": "Bank11",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=453073717&loanType=balloon&loanDuration=60&downPayment=5898&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Bank11",
+        "bankName": "Bank11 für Privatkunden und Handel GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5898,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 23592,
+        "interestRateNominal": 6.78,
+        "interestRateEffective": 6.99,
+        "monthlyInstallment": 240.16,
+        "finalInstallment": 16219.5,
+        "totalInterest": 6796.9,
+        "totalAmount": 30388.9,
+        "localized": {
+          "downPayment": "5.898 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "23.592 €",
+          "interestRateNominal": "6,78%",
+          "interestRateEffective": "6,99%",
+          "monthlyInstallment": "241 €",
+          "finalInstallment": "16.219,50 €",
+          "totalInterest": "6.796,90 €",
+          "totalAmount": "30.388,90 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Bank11 für Privatkunden und Handel GmbH (Darlehensgeber), Hammer Landstraße 91, 41460 Neuss. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a4e75ab-1dc4-47a0-9e14-72d44c1feb64?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a4e75ab-1dc4-47a0-9e14-72d44c1feb64?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6a/6a4e75ab-1dc4-47a0-9e14-72d44c1feb64?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6a/6a4e75ab-1dc4-47a0-9e14-72d44c1feb64?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a4e75ab-1dc4-47a0-9e14-72d44c1feb64?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc2f3f4d-49c9-4a38-83da-f6756ac8076a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc2f3f4d-49c9-4a38-83da-f6756ac8076a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bc/bc2f3f4d-49c9-4a38-83da-f6756ac8076a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bc/bc2f3f4d-49c9-4a38-83da-f6756ac8076a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc2f3f4d-49c9-4a38-83da-f6756ac8076a?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f1/f1ea34ff-c1aa-4db1-a735-1223a564f284?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f1/f1ea34ff-c1aa-4db1-a735-1223a564f284?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f1/f1ea34ff-c1aa-4db1-a735-1223a564f284?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f1/f1ea34ff-c1aa-4db1-a735-1223a564f284?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f1/f1ea34ff-c1aa-4db1-a735-1223a564f284?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/69/698c735f-577a-4c32-b7ae-04ed8a1c3da9?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/69/698c735f-577a-4c32-b7ae-04ed8a1c3da9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/69/698c735f-577a-4c32-b7ae-04ed8a1c3da9?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/69/698c735f-577a-4c32-b7ae-04ed8a1c3da9?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/69/698c735f-577a-4c32-b7ae-04ed8a1c3da9?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/20/2077bc64-e3d5-4d86-8bf0-fd51da1cbc99?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/20/2077bc64-e3d5-4d86-8bf0-fd51da1cbc99?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/20/2077bc64-e3d5-4d86-8bf0-fd51da1cbc99?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/20/2077bc64-e3d5-4d86-8bf0-fd51da1cbc99?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/20/2077bc64-e3d5-4d86-8bf0-fd51da1cbc99?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/66/6687e825-f7d9-4f06-995a-edb9ef0130f7?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/66/6687e825-f7d9-4f06-995a-edb9ef0130f7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/66/6687e825-f7d9-4f06-995a-edb9ef0130f7?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/66/6687e825-f7d9-4f06-995a-edb9ef0130f7?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/66/6687e825-f7d9-4f06-995a-edb9ef0130f7?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bda77868-fcce-4430-bc62-ced1222a4c09?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bda77868-fcce-4430-bc62-ced1222a4c09?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bd/bda77868-fcce-4430-bc62-ced1222a4c09?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bd/bda77868-fcce-4430-bc62-ced1222a4c09?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bda77868-fcce-4430-bc62-ced1222a4c09?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d5/d528fdef-d07a-4327-95f1-66539f861dcd?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d5/d528fdef-d07a-4327-95f1-66539f861dcd?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d5/d528fdef-d07a-4327-95f1-66539f861dcd?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d5/d528fdef-d07a-4327-95f1-66539f861dcd?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d5/d528fdef-d07a-4327-95f1-66539f861dcd?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/40/40250715-feba-4a50-9513-6458dd832e71?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/40/40250715-feba-4a50-9513-6458dd832e71?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/40/40250715-feba-4a50-9513-6458dd832e71?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/40/40250715-feba-4a50-9513-6458dd832e71?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/40/40250715-feba-4a50-9513-6458dd832e71?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/86/86fd1ae2-65c3-4790-9d67-1b5634d22f7b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/86/86fd1ae2-65c3-4790-9d67-1b5634d22f7b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/86/86fd1ae2-65c3-4790-9d67-1b5634d22f7b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/86/86fd1ae2-65c3-4790-9d67-1b5634d22f7b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/86/86fd1ae2-65c3-4790-9d67-1b5634d22f7b?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/69/696d2045-856f-49d4-a61c-5eb92bf46ef6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/69/696d2045-856f-49d4-a61c-5eb92bf46ef6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/69/696d2045-856f-49d4-a61c-5eb92bf46ef6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/69/696d2045-856f-49d4-a61c-5eb92bf46ef6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/69/696d2045-856f-49d4-a61c-5eb92bf46ef6?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b63dc38-6c77-467e-8b91-e891fa9256f3?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b63dc38-6c77-467e-8b91-e891fa9256f3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6b/6b63dc38-6c77-467e-8b91-e891fa9256f3?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6b/6b63dc38-6c77-467e-8b91-e891fa9256f3?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b63dc38-6c77-467e-8b91-e891fa9256f3?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8dc22135-8574-444e-9eed-fc62dce3bc09?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8dc22135-8574-444e-9eed-fc62dce3bc09?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8d/8dc22135-8574-444e-9eed-fc62dce3bc09?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/8d/8dc22135-8574-444e-9eed-fc62dce3bc09?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8dc22135-8574-444e-9eed-fc62dce3bc09?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/94/94ffd5d6-b74a-4eee-8b91-6f545e84237a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/94/94ffd5d6-b74a-4eee-8b91-6f545e84237a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/94/94ffd5d6-b74a-4eee-8b91-6f545e84237a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/94/94ffd5d6-b74a-4eee-8b91-6f545e84237a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/94/94ffd5d6-b74a-4eee-8b91-6f545e84237a?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7ecbda6-b653-4b4b-8258-3161f9be5d3f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7ecbda6-b653-4b4b-8258-3161f9be5d3f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d7/d7ecbda6-b653-4b4b-8258-3161f9be5d3f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d7/d7ecbda6-b653-4b4b-8258-3161f9be5d3f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7ecbda6-b653-4b4b-8258-3161f9be5d3f?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f0/f06a7fdd-f518-41aa-a7f4-afe2fae9cdc8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f0/f06a7fdd-f518-41aa-a7f4-afe2fae9cdc8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f0/f06a7fdd-f518-41aa-a7f4-afe2fae9cdc8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f0/f06a7fdd-f518-41aa-a7f4-afe2fae9cdc8?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f0/f06a7fdd-f518-41aa-a7f4-afe2fae9cdc8?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/06/06fbcd54-291b-4522-9016-539c801ad06d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/06/06fbcd54-291b-4522-9016-539c801ad06d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/06/06fbcd54-291b-4522-9016-539c801ad06d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/06/06fbcd54-291b-4522-9016-539c801ad06d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/06/06fbcd54-291b-4522-9016-539c801ad06d?rule=mo-80w",
+        "type": "image",
+        "alt": "Kia EV2"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a4e75ab-1dc4-47a0-9e14-72d44c1feb64?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a4e75ab-1dc4-47a0-9e14-72d44c1feb64?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpsbsmodelimprovementsv2&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=cossrpcorerecommenderpopularfiltersoff&client.abtests=accwebpublichomegaaa4off&adId=453073717"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=29490&c=OffRoad&ms=13200%3B67&id%21=453073717&vc=Car&sid=10132933"
+    },
+    "vehicleCondition": "new_order",
+    "make": "Kia",
+    "model": "EV2",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/kia.html",
+            "name": "Kia"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/kia-ev2.html",
+            "name": "EV2"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Kia EV2 für 29.490 €",
+    "price_text": "Preis 29.490 € Fairer Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Neufahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Baureihe": "-",
+      "Ausstattungslinie": "Air",
+      "Fahrzeugnummer": "006216",
+      "Verfügbarkeit": "In 3 Monaten ab Bestellung verfügbar",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "10 km",
+      "Leistung": "108 kW (147 PS)",
+      "Antriebsart": "Elektromotor",
+      "Anderer Energieträger": "Strom",
+      "Ladedauer (11 kW)": "4 Std. 5 Min.",
+      "Schnellladezeit": "29 Min.",
+      "Steckertypen": "Typ 2-Stecker, CCS- oder Combo-Stecker",
+      "Energieverbrauch (komb.) 2": "15,1 kWh/100km",
+      "CO₂-Emissionen (komb.) 2": "0 g/km",
+      "Elektrische Reichweite 2": "317 km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Stromverbrauch 2": "15,1 kWh/100km (kombiniert) 10,8 kWh/100km (Innenstadt) 11,9 kWh/100km (Stadtrand) 13,6 kWh/100km (Landstraße) 19,8 kWh/100km (Autobahn)",
+      "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr) 2": "707 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 0 €/t) 0 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t) 0 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 127 €/t)",
+      "Kraftfahrzeugsteuer": "0 €/Jahr",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro6d",
+      "Umweltplakette": "4 (Grün)",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Kamera, Vorne, Hinten",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "Morgenbrise Grau",
+      "Farbe": "Grau Metallic",
+      "Innenausstattung": "Stoff, Grau",
+      "Reichweite": "317 km"
+    },
+    "description": "Neufahrzeug, Unfallfrei • 10 km • 108 kW (147 PS) • Automatik",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a4e75ab-1dc4-47a0-9e14-72d44c1feb64?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc2f3f4d-49c9-4a38-83da-f6756ac8076a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f1/f1ea34ff-c1aa-4db1-a735-1223a564f284?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/69/698c735f-577a-4c32-b7ae-04ed8a1c3da9?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/20/2077bc64-e3d5-4d86-8bf0-fd51da1cbc99?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/66/6687e825-f7d9-4f06-995a-edb9ef0130f7?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bd/bda77868-fcce-4430-bc62-ced1222a4c09?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d5/d528fdef-d07a-4327-95f1-66539f861dcd?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/40/40250715-feba-4a50-9513-6458dd832e71?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/86/86fd1ae2-65c3-4790-9d67-1b5634d22f7b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/69/696d2045-856f-49d4-a61c-5eb92bf46ef6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b63dc38-6c77-467e-8b91-e891fa9256f3?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8d/8dc22135-8574-444e-9eed-fc62dce3bc09?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/94/94ffd5d6-b74a-4eee-8b91-6f545e84237a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7ecbda6-b653-4b4b-8258-3161f9be5d3f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f0/f06a7fdd-f518-41aa-a7f4-afe2fae9cdc8?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/06/06fbcd54-291b-4522-9016-539c801ad06d?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a4e75ab-1dc4-47a0-9e14-72d44c1feb64?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc2f3f4d-49c9-4a38-83da-f6756ac8076a?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f1/f1ea34ff-c1aa-4db1-a735-1223a564f284?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/69/698c735f-577a-4c32-b7ae-04ed8a1c3da9?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/20/2077bc64-e3d5-4d86-8bf0-fd51da1cbc99?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/66/6687e825-f7d9-4f06-995a-edb9ef0130f7?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bda77868-fcce-4430-bc62-ced1222a4c09?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d5/d528fdef-d07a-4327-95f1-66539f861dcd?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/40/40250715-feba-4a50-9513-6458dd832e71?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/86/86fd1ae2-65c3-4790-9d67-1b5634d22f7b?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/69/696d2045-856f-49d4-a61c-5eb92bf46ef6?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b63dc38-6c77-467e-8b91-e891fa9256f3?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8dc22135-8574-444e-9eed-fc62dce3bc09?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/94/94ffd5d6-b74a-4eee-8b91-6f545e84237a?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7ecbda6-b653-4b4b-8258-3161f9be5d3f?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f0/f06a7fdd-f518-41aa-a7f4-afe2fae9cdc8?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/06/06fbcd54-291b-4522-9016-539c801ad06d?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

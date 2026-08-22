@@ -50,7 +50,8 @@
       "Bash(python -m ruff format .)",
       "Bash(export PYTHONIOENCODING=utf-8)",
       "Bash(yaf check-config *)",
-      "Bash(yaf run-demo *)"
+      "Bash(yaf run-demo *)",
+      "Read(.env)"
     ]
   }
 }

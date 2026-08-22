@@ -139,7 +139,7 @@ def whatsapp_msg2(nome_attivita: str) -> str:
 def whatsapp_msg3(nome_attivita: str) -> str:
     """Da 02_SCRIPT_WHATSAPP_EMAIL_3MSG.md — dopo sì a msg2, o G+5 di silenzio dopo msg1."""
     return (
-        f"Fatto. Ti preparo io il demo con un vostro annuncio in 15 min su schermo, senza impegno.\n"
+        f"Fatto. Ti preparo io (Max di Preventa) il demo per {nome_attivita} con un vostro annuncio in 15 min su schermo, senza impegno.\n"
         f"€2.000 una tantum, pagamento unico: nessun canone.\n"
         f"Domani alle 11:00 o giovedì alle 16:30 ti va meglio per vederlo?"
     )

@@ -1,0 +1,17 @@
+{"ts": "2026-07-05T10:01:10+00:00", "event": "run_created", "source_url": "https://m.mobile.de/auto-inserat/opel-grandland-x-gs-line-leder-navi-shz-nur9200km-troisdorf-k%C3%B6ln-bonn/455520426.html?ref=seo&refId=b75c5b25-5c12-06b2-59d9-0b304b7631b7&searchId=b75c5b25-5c12-06b2-59d9-0b304b7631b7&type=topAd"}
+{"ts": "2026-07-05T10:01:10+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-05T10:01:38+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-05T10:01:38+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-05T10:01:38+00:00", "event": "step", "step": "S2_parsing", "status": "done", "note": ""}
+{"ts": "2026-07-05T10:01:38+00:00", "event": "step", "step": "GATE_A", "status": "passed", "note": ""}
+{"ts": "2026-07-05T10:01:38+00:00", "event": "step", "step": "S3_translate_copy", "status": "running", "note": ""}
+{"ts": "2026-07-05T10:01:38+00:00", "event": "step", "step": "S3_translate_copy", "status": "done", "note": ""}
+{"ts": "2026-07-05T10:01:38+00:00", "event": "step", "step": "GATE_B", "status": "passed", "note": ""}
+{"ts": "2026-07-05T10:01:38+00:00", "event": "step", "step": "S4_pricing", "status": "running", "note": ""}
+{"ts": "2026-07-05T10:01:38+00:00", "event": "step", "step": "S4_pricing", "status": "done", "note": "Opel Grandland (X) GS Line 27.668 €"}
+{"ts": "2026-07-05T10:01:38+00:00", "event": "step", "step": "GATE_C", "status": "passed", "note": ""}
+{"ts": "2026-07-05T10:01:38+00:00", "event": "step", "step": "S5_pdf_render", "status": "running", "note": ""}
+{"ts": "2026-07-05T10:01:45+00:00", "event": "step", "step": "S5_pdf_render", "status": "done", "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260705-120110-455520426\\preventivo_opel-grandland-x.pdf"}
+{"ts": "2026-07-05T10:01:47+00:00", "event": "step", "step": "GATE_D", "status": "passed", "note": ""}
+{"ts": "2026-07-05T10:01:48+00:00", "event": "step", "step": "GATE_IMG", "status": "passed", "note": ""}
+{"ts": "2026-07-05T10:01:51+00:00", "event": "step", "step": "GATE_R", "status": "passed", "note": ""}

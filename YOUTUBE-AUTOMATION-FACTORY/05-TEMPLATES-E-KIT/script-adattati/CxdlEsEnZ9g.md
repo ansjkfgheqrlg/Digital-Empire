@@ -9,7 +9,8 @@ precisi — frasi che sembrano innocue ma che, secondo la psicologia relazionale
 attaccamento emotivo già in corso, molto prima che diventi una dichiarazione esplicita. Guarda
 bene il numero 4: è quello che quasi tutti gli uomini
 interpretano male, e li fa allontanare proprio nel momento sbagliato — e il bonus finale, che
-quasi nessuno nota perché non passa mai dalle parole dirette. ➕ ritmo veloce, taglio diretto,
+quasi nessuno nota perché non passa mai dalle parole dirette. Sono segnali piccoli, quasi
+invisibili, ma una volta che sai cosa cercare diventano impossibili da non vedere. ➕ ritmo veloce, taglio diretto,
 nessuna esitazione
 
 ## INTRO
@@ -24,7 +25,8 @@ chiedendo se una persona nella tua vita provi davvero qualcosa per te, smetti di
 dichiarazione esplicita che magari non arriverà mai in quella forma. Ascolta i segnali sottili.
 Sono 7, più un bonus, e te li spiego uno per uno — cosa significano davvero secondo la
 psicologia relazionale, e come rispondere senza rovinare il momento con troppa insistenza o
-troppa freddezza. ➕ tono da guida pratica, non da confessione
+troppa freddezza. Non serve interpretare tutto alla perfezione dal primo ascolto: basta iniziare
+a notare questi schemi più spesso di quanto tu abbia fatto finora. ➕ tono da guida pratica, non da confessione
 
 ## CORPO
 **1. "Ho la sensazione di conoscerti da sempre."**
@@ -139,6 +141,18 @@ tutti: si può decidere di dire una frase, ma non si può decidere a chi pensare
 facendo tutt'altro. Per questo, fra i sette più il bonus, molti psicologi relazionali lo
 considerano il più affidabile in assoluto.
 
+**8. Ricorda dettagli che tu stesso avevi dimenticato di aver detto.**
+Non parliamo della data del vostro primo appuntamento — quella la ricordano quasi tutti. Parliamo
+di un dettaglio minuscolo, buttato lì en passant settimane prima: il nome di un collega che ti
+sta antipatico, una canzone che ti mette a disagio, il modo in cui prendi il caffè. Gli psicologi
+lo chiamano codifica emotiva selettiva: il cervello archivia con più cura le informazioni legate
+a una persona verso cui sta costruendo un legame, molto più di quanto faccia con conoscenze
+qualsiasi. Se lei tira fuori quel dettaglio al momento giusto — magari per farti una sorpresa, o
+solo per dimostrarti che ascolta davvero — non è memoria eccezionale in generale, è memoria
+selettiva su di te in particolare. Riconoscilo apertamente: "non pensavo nemmeno di avertelo
+detto, e te lo ricordi ancora" — è un modo semplice per farle capire che hai notato lo sforzo,
+senza trasformarlo in un momento imbarazzante.
+
 **Un avvertimento onesto, prima di continuare.** Nessuno di questi 7 segnali, da solo, è una
 prova. Una persona può dirti "sei diverso da chiunque abbia mai conosciuto" per pura cortesia,
 o "parlare con te mi fa sentire capita" dopo una singola bella serata, senza che ci sia dietro
@@ -171,5 +185,7 @@ senza rovinare il momento con troppa insistenza o con troppa freddezza. Se ricon
 3 di questi segnali in una persona della tua vita, scrivi nei commenti quale ti ha colpito di
 più — è così che si capisce chi guarda davvero oltre la superficie di una conversazione. Se il
 video ti è stato utile, metti like e iscriviti: ogni settimana analizzo un segnale psicologico
-reale delle relazioni, sempre con dati e mai con luoghi comuni. A presto, e ricorda: chi presta davvero attenzione a questi dettagli è raro davvero — e di solito è
+reale delle relazioni, sempre con dati e mai con luoghi comuni. E se hai già vissuto una
+situazione in cui hai riconosciuto uno di questi segnali solo con il senno di poi, raccontala nei
+commenti — è il modo migliore per imparare a leggerli in anticipo la prossima volta. A presto, e ricorda: chi presta davvero attenzione a questi dettagli è raro davvero — e di solito è
 anche esattamente la persona con cui vale la pena costruire qualcosa di vero e duraturo. Ci vediamo nel prossimo video.

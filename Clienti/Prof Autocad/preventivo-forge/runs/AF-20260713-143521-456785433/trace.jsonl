@@ -1,0 +1,3 @@
+{"ts": "2026-07-13T12:35:21+00:00", "event": "run_created", "source_url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-e-400-e-limousine-e-400-d-4matic-amg-line-karlsruhe-gr%C3%B6tzingen/456785433.html"}
+{"ts": "2026-07-13T12:35:22+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-13T12:36:53+00:00", "event": "step", "step": "S1_scraping", "status": "failed", "note": "mobile.de: anti-bot Akamai non superato dopo più tentativi. Riprova tra poco (di solito passa con IP di casa/hotspot pulito), oppure usa run.py --manual <annuncio.html> <foto_dir>."}

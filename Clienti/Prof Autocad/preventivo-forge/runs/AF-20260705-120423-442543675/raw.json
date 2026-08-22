@@ -1,0 +1,890 @@
+{
+  "source_url": "https://m.mobile.de/auto-inserat/mercedes-benz-c-180-limo-avantgarde-1-hand-led-nav-standhzg-magdeburg/442543675.html?ref=seo&refId=cb916ebb-4bd0-784a-078c-f098936d186c&searchId=cb916ebb-4bd0-784a-078c-f098936d186c&type=ad",
+  "scraped_at": "2026-07-05T10:04:49+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug"
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Limousine"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "BM 205"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "Avantgarde"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "225"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "95.013 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.595 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "115 kW (156 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "5,0 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "116 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "5,0 l/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Schaltgetriebe"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "03/2015"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "3-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Vorne, Hinten"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "PALLADIUMSILBER"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Silber Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Teilleder, Grau"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "1.400 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "700 kg"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.395 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      },
+      {
+        "label": "Tankgröße",
+        "tag": "fuelTankVolume",
+        "value": "41 l"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Mercedes-Benz C 180",
+    "subTitle": "Limo. *AVANTGARDE*1.HAND*LED*NAV*STANDHZG*",
+    "makeKey": "Mercedes-Benz",
+    "modelKey": "C 180",
+    "isNew": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "ABS",
+      "Armlehne",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Sitzeinstellung",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Geschwindigkeitsbegrenzer",
+      "Heckantrieb",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Navigationssystem",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Scheinwerferreinigung",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sommerreifen",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Standheizung",
+      "Start/Stopp-Automatik",
+      "Tempomat",
+      "Totwinkel-Assistent",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "Winterpaket",
+      "Winterreifen",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 14232991,
+    "priceRating": {
+      "rating": "REASONABLE_PRICE",
+      "ratingLabel": "Fairer Preis",
+      "thresholdLabels": [
+        "10.700 €",
+        "13.900 €",
+        "15.000 €",
+        "16.700 €",
+        "17.900 €",
+        "19.900 €"
+      ],
+      "vehiclePriceOffset": 88
+    },
+    "segment": "Car",
+    "title": "Mercedes-Benz C 180 Limo. *AVANTGARDE*1.HAND*LED*NAV*STANDHZG*",
+    "url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-c-180-limo-avantgarde-1-hand-led-nav-standhzg-magdeburg/442543675.html",
+    "vc": "Car",
+    "category": "Limousine",
+    "id": 442543675,
+    "price": {
+      "gross": "16.500 €",
+      "grossAmount": 16500,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "kba": {
+      "hsn": "1313",
+      "tsn": "DZD"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "hero_logo_26_name_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Sehr gepflegter Mercedes C 180 Avantgarde Limo.mit folgender Ausstattung<br><br>Sonderausstattung:<br></b><br><ul><li><b>Audiosystem Audio 20 (mit Touchpad)</b></li><li><b>Avantgarde Interieur</b></li><li>Fahrassistenz-Paket: Spur</li><li>Fahrassistenz-System: aktiver Park-Assistent</li><li><b>Fahrassistenz-System: Fernlichtassistent Adaptive plus</b></li><li><b>Intelligent Light System LED</b></li><li><b>3-Zonen Klimaautomatik (Thermotronik)</b></li><li>Komfort Direktlenkung</li><li>Komfort-Fahrwerk tiefergelegt (Agility Control)</li><li>Kraftstofftank: vergrößert</li><li>Metallic-Lackierung</li><li><b>Navigationsmodul Garmin MAP Pilot</b></li><li>Rücksitzlehne geteilt / klappbar</li><li><b>Sitzheizung vorn</b></li><li><b>Spiegel-Paket</b></li><li><b>Totwinkel Assistent</b></li><li><b>Navigationssystem (Garmin MAP Pilot)</b></li><li>Vorrüstung Mobiltelefon/Handy / Komfort-Telefonie / LTE-fähig</li><li><b>Zusatzheizung (Standheizung)</b></li></ul><b><br>Weitere Ausstattung:<br></b><br><ul><li>Adaptives Bremslicht</li><li>Airbag Fahrer-/Beifahrerseite</li><li>Aktive Motorhaube</li><li>Außenspiegel elektr. verstell- und heizbar, beide</li><li>Außenspiegel Wagenfarbe</li><li>Außentemperaturanzeige</li><li>Beckenairbag vorn (Pelvisbag)</li><li>Blinkleuchte in Außenspiegel integriert</li><li><b> Design- und Ausstattungslinie Avantgarde</b></li><li>Einschaltautomatik für Fahrlicht</li><li>Fahrassistenz-System: Attention-Assist (Müdigkeitserkennungs-Sensor)</li><li>Fahrassistenz-System: Auffahrwarnsystem mit Bremsfunktion (Collision Prevention Assist)</li><li>Fahrassistenz-System: Berganfahrhilfe</li><li>Fernentriegelung Heckdeckel</li><li>Feststellbremse elektrisch</li><li>Infotainment-System: Mercedes me connect</li><li>Innenhimmel Stoff</li><li>Isofix-Aufnahmen für Kindersitz an Rücksitz</li><li>Karosserie: 4-türig</li><li>Knieairbag Fahrerseite</li><li>Kopf-Airbag-System (Windowbag)</li><li>Lenkrad mit Multifunktion</li><li>Mercedes-Benz Notrufsystem</li><li><b>Motor 1,6 Ltr. - 115 kW KAT</b></li><li>Reifendruck-Kontrollsystem</li><li>Reiserechner</li><li>Schadstoffarm nach Abgasnorm Euro 6</li><li>Scheinwerfer mit integriertem Tagfahrlicht</li><li>Seitenairbag (Sidebag) vorn</li><li>Sitz vorn links elektr. verstellbar</li><li>Sitz vorn rechts elektr. verstellbar</li><li>Sitzbelegungserkennung für Airbag Beifahrerseite</li><li>Sonnenblenden mit Spiegel (beleuchtet)</li><li>Start/Stop-Anlage</li><li>Steckdose (12V-Anschluß)</li><li>Warnanlage / Statusanzeige für Sicherheitsgurte im Fond</li><li>Wärmeschutzverglasung / Heckscheibe ESG</li></ul><br><br><b>Servicenachweis vorhanden<br><br><br>Was wir Ihnen anbieten:<br><br>- Inspektion / Ölservice<br>- 1 Jahr gesetzliche Gewährleistung<br>- Hauptuntersuchung / Abgasuntersuchung<br><br>Gerne unterbreiten wir Ihnen ein individuelles Finanzierungs-Angebot.<br><br>Sie möchten Ihren PKW/LKW verkaufen oder in Zahlung geben, dann rufen Sie uns an (auch Unfall + Motorschaden). Der Ankauf erfolgt sofort in BAR!<br><br>Text, Änderungen, Irrtümer und Zwischenverkauf vorbehalten.<br><br>Unsere Öffnungszeiten:<br>Mo. - Fr. von 09.00 bis 18.00 Uhr<br>Sa. von 09.00 bis 16.00 Uhr<br><br>Sie erreichen uns unter 0391-6221103.<br>Für Fragen stehen wir Ihnen sehr gerne zur Verfügung. Finanzierung, auch ohne Anzahlung möglich.<br><br>- Inzahlungnahme zu einem fairen Preis<br>- Zulassungsservice bundesweit<br><br><br><br></b>",
+    "contactInfo": {
+      "address1": "Blankenburgerstr. 56",
+      "address2": "DE-39112 Magdeburg",
+      "name": "Auto Zentrum Magdeburg",
+      "markingText": "Wir freuen uns, Sie auf unserer Internetseite begrüßen zu dürfen. Hier finden Sie unsere top aktuellen Fahrzeugangebote und viele interessante Informationen über unsere Autohäuser in Magdeburg und ihren kompetenten Mitarbeitern. Wussten Sie, dass wir ständig über 200 Gebrauchtwagen und Nutzfahrzeuge in unseren Autohäusern im Angebot haben? Informieren Sie sich über unser aktuelles Gebrauchtwagenangebot und profitieren Sie von der Erfahrung und Kompetenz unserer Mitarbeiter. Besuchen Sie uns doch einfach in einer unserer Filialen, oder fordern Sie ein unverbindliches Angebot an.",
+      "openingHours": [
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "09:00 Uhr - 16:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 14.01.2016",
+      "rating": {
+        "count": 6,
+        "totalCount": 49,
+        "score": 3.8,
+        "scoreLocalized": "3,8",
+        "link": "https://www.mobile.de/bewertungen/KFZBARANKAUFZENTRUM?lang=de",
+        "recommendationRate": 50,
+        "adRealityRate": 66,
+        "consultingScore": 3.5,
+        "friendlinessScore": 4,
+        "responseTimeScore": 4
+      },
+      "languages": "Deutsch, Pусский, English, Polski, Türkçe, Nederlands",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9ce31ae6-d17a-4932-82b8-16c0d6314817?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9ce31ae6-d17a-4932-82b8-16c0d6314817?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/9c/9ce31ae6-d17a-4932-82b8-16c0d6314817?rule=mo-360 360w",
+        "alt": "Auto Zentrum Magdeburg"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)391 81069505",
+          "uri": "tel:+4939181069505"
+        },
+        {
+          "type": "Mobil",
+          "number": "+49 (0)172 5434298",
+          "uri": "tel:+491725434298"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 391 81069515"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "Ariana Köhler"
+      },
+      "mapLink": "https://maps.google.com/maps?q=52.1041092,11.6004232+(Auto%20Zentrum%20Magdeburg)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 52.1041092,
+        "lon": 11.6004232
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=14232991",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bbd55b48-070a-4dea-89dc-4a3bb0142241?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bbd55b48-070a-4dea-89dc-4a3bb0142241?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bb/bbd55b48-070a-4dea-89dc-4a3bb0142241?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/bb/bbd55b48-070a-4dea-89dc-4a3bb0142241?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bbd55b48-070a-4dea-89dc-4a3bb0142241?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3f62961-28ab-4654-9bfa-71a9f3dca077?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3f62961-28ab-4654-9bfa-71a9f3dca077?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c3/c3f62961-28ab-4654-9bfa-71a9f3dca077?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c3/c3f62961-28ab-4654-9bfa-71a9f3dca077?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 145,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=442543675&loanType=balloon&loanDuration=60&downPayment=3300&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 3300,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 13200,
+        "interestRateNominal": 6.78,
+        "interestRateEffective": 6.99,
+        "monthlyInstallment": 157.88,
+        "finalInstallment": 7425,
+        "totalInterest": 3540.12,
+        "totalAmount": 16740.12,
+        "localized": {
+          "downPayment": "3.300 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "13.200 €",
+          "interestRateNominal": "6,78%",
+          "interestRateEffective": "6,99%",
+          "monthlyInstallment": "158 €",
+          "finalInstallment": "7.425,00 €",
+          "totalInterest": "3.540,12 €",
+          "totalAmount": "16.740,12 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/87/875c2afb-d10f-401b-9793-8d52a025603b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/87/875c2afb-d10f-401b-9793-8d52a025603b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/87/875c2afb-d10f-401b-9793-8d52a025603b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/87/875c2afb-d10f-401b-9793-8d52a025603b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/87/875c2afb-d10f-401b-9793-8d52a025603b?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a4170da-8d7a-48d6-971a-31b638a20943?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a4170da-8d7a-48d6-971a-31b638a20943?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1a/1a4170da-8d7a-48d6-971a-31b638a20943?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1a/1a4170da-8d7a-48d6-971a-31b638a20943?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a4170da-8d7a-48d6-971a-31b638a20943?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/32/32016cdf-ebd1-42fb-a84d-5c34efc1f965?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/32/32016cdf-ebd1-42fb-a84d-5c34efc1f965?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/32/32016cdf-ebd1-42fb-a84d-5c34efc1f965?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/32/32016cdf-ebd1-42fb-a84d-5c34efc1f965?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/32/32016cdf-ebd1-42fb-a84d-5c34efc1f965?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/53/53fe687b-308b-4e26-a9de-edc39e487415?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/53/53fe687b-308b-4e26-a9de-edc39e487415?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/53/53fe687b-308b-4e26-a9de-edc39e487415?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/53/53fe687b-308b-4e26-a9de-edc39e487415?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/53/53fe687b-308b-4e26-a9de-edc39e487415?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/24/24b678a1-8dc5-4b50-8c8b-941454727538?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/24/24b678a1-8dc5-4b50-8c8b-941454727538?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/24/24b678a1-8dc5-4b50-8c8b-941454727538?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/24/24b678a1-8dc5-4b50-8c8b-941454727538?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/24/24b678a1-8dc5-4b50-8c8b-941454727538?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/89/8924cfb0-53d1-4a22-80bb-ac5ec1c7f532?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/89/8924cfb0-53d1-4a22-80bb-ac5ec1c7f532?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/89/8924cfb0-53d1-4a22-80bb-ac5ec1c7f532?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/89/8924cfb0-53d1-4a22-80bb-ac5ec1c7f532?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/89/8924cfb0-53d1-4a22-80bb-ac5ec1c7f532?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/30/30977d1d-031b-4811-b1d0-48c6732fc883?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/30/30977d1d-031b-4811-b1d0-48c6732fc883?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/30/30977d1d-031b-4811-b1d0-48c6732fc883?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/30/30977d1d-031b-4811-b1d0-48c6732fc883?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/30/30977d1d-031b-4811-b1d0-48c6732fc883?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba8b2dcb-3ff5-428f-a13d-9d5d9a7d4c55?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba8b2dcb-3ff5-428f-a13d-9d5d9a7d4c55?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ba/ba8b2dcb-3ff5-428f-a13d-9d5d9a7d4c55?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ba/ba8b2dcb-3ff5-428f-a13d-9d5d9a7d4c55?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba8b2dcb-3ff5-428f-a13d-9d5d9a7d4c55?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/01/01ebb289-57c4-4ada-b2dd-61a3f39efb68?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/01/01ebb289-57c4-4ada-b2dd-61a3f39efb68?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/01/01ebb289-57c4-4ada-b2dd-61a3f39efb68?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/01/01ebb289-57c4-4ada-b2dd-61a3f39efb68?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/01/01ebb289-57c4-4ada-b2dd-61a3f39efb68?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fe0d78e-c151-45d8-bd23-ae56f46d46cc?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fe0d78e-c151-45d8-bd23-ae56f46d46cc?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6f/6fe0d78e-c151-45d8-bd23-ae56f46d46cc?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6f/6fe0d78e-c151-45d8-bd23-ae56f46d46cc?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fe0d78e-c151-45d8-bd23-ae56f46d46cc?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdd6aae7-e8c4-4cc9-b741-78e4f95dfbda?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdd6aae7-e8c4-4cc9-b741-78e4f95dfbda?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bd/bdd6aae7-e8c4-4cc9-b741-78e4f95dfbda?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bd/bdd6aae7-e8c4-4cc9-b741-78e4f95dfbda?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdd6aae7-e8c4-4cc9-b741-78e4f95dfbda?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdaa65a5-7287-4cca-a396-3a0287f440db?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdaa65a5-7287-4cca-a396-3a0287f440db?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bd/bdaa65a5-7287-4cca-a396-3a0287f440db?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bd/bdaa65a5-7287-4cca-a396-3a0287f440db?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdaa65a5-7287-4cca-a396-3a0287f440db?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bc/bccf1fc6-32d6-4d98-a782-97e2cdca1d44?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bc/bccf1fc6-32d6-4d98-a782-97e2cdca1d44?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bc/bccf1fc6-32d6-4d98-a782-97e2cdca1d44?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bc/bccf1fc6-32d6-4d98-a782-97e2cdca1d44?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bc/bccf1fc6-32d6-4d98-a782-97e2cdca1d44?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/db/dbe89404-2872-4d37-b23f-2667cfdedda4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/db/dbe89404-2872-4d37-b23f-2667cfdedda4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/db/dbe89404-2872-4d37-b23f-2667cfdedda4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/db/dbe89404-2872-4d37-b23f-2667cfdedda4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/db/dbe89404-2872-4d37-b23f-2667cfdedda4?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f3/f3bd1cba-4b44-4505-a55f-c112111e4461?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f3/f3bd1cba-4b44-4505-a55f-c112111e4461?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f3/f3bd1cba-4b44-4505-a55f-c112111e4461?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f3/f3bd1cba-4b44-4505-a55f-c112111e4461?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f3/f3bd1cba-4b44-4505-a55f-c112111e4461?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e152e6f-12ac-45ac-bb30-e992aa7b9450?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e152e6f-12ac-45ac-bb30-e992aa7b9450?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4e/4e152e6f-12ac-45ac-bb30-e992aa7b9450?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4e/4e152e6f-12ac-45ac-bb30-e992aa7b9450?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e152e6f-12ac-45ac-bb30-e992aa7b9450?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/61/61341d84-f435-46d3-a4cc-194c1c44c6c8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/61/61341d84-f435-46d3-a4cc-194c1c44c6c8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/61/61341d84-f435-46d3-a4cc-194c1c44c6c8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/61/61341d84-f435-46d3-a4cc-194c1c44c6c8?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/61/61341d84-f435-46d3-a4cc-194c1c44c6c8?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc667987-0b6c-45e6-a19e-6fb16072e20c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc667987-0b6c-45e6-a19e-6fb16072e20c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fc/fc667987-0b6c-45e6-a19e-6fb16072e20c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/fc/fc667987-0b6c-45e6-a19e-6fb16072e20c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc667987-0b6c-45e6-a19e-6fb16072e20c?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3275513-5d68-45f9-ab37-c3ea0a0db350?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3275513-5d68-45f9-ab37-c3ea0a0db350?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e3/e3275513-5d68-45f9-ab37-c3ea0a0db350?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e3/e3275513-5d68-45f9-ab37-c3ea0a0db350?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3275513-5d68-45f9-ab37-c3ea0a0db350?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/01/01f82b17-dba3-4ccc-aba2-c05dcdf55d2f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/01/01f82b17-dba3-4ccc-aba2-c05dcdf55d2f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/01/01f82b17-dba3-4ccc-aba2-c05dcdf55d2f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/01/01f82b17-dba3-4ccc-aba2-c05dcdf55d2f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/01/01f82b17-dba3-4ccc-aba2-c05dcdf55d2f?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca1cfc7e-c2e6-4f2b-b4d2-3ee0576aa39a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca1cfc7e-c2e6-4f2b-b4d2-3ee0576aa39a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ca/ca1cfc7e-c2e6-4f2b-b4d2-3ee0576aa39a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ca/ca1cfc7e-c2e6-4f2b-b4d2-3ee0576aa39a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca1cfc7e-c2e6-4f2b-b4d2-3ee0576aa39a?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ba/bae2cf18-079e-435a-bd27-12bb905f29d4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ba/bae2cf18-079e-435a-bd27-12bb905f29d4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ba/bae2cf18-079e-435a-bd27-12bb905f29d4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ba/bae2cf18-079e-435a-bd27-12bb905f29d4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ba/bae2cf18-079e-435a-bd27-12bb905f29d4?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d1a836-fca7-44b8-89fd-19354c65b0fa?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d1a836-fca7-44b8-89fd-19354c65b0fa?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d1a836-fca7-44b8-89fd-19354c65b0fa?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d1a836-fca7-44b8-89fd-19354c65b0fa?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d1a836-fca7-44b8-89fd-19354c65b0fa?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/8c/8cfda0bd-d6de-4137-af89-15e5c1cff463?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8c/8cfda0bd-d6de-4137-af89-15e5c1cff463?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8c/8cfda0bd-d6de-4137-af89-15e5c1cff463?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/8c/8cfda0bd-d6de-4137-af89-15e5c1cff463?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8c/8cfda0bd-d6de-4137-af89-15e5c1cff463?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/90/9058deb4-e7f5-4c7a-84f3-47c8174dc9cd?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/90/9058deb4-e7f5-4c7a-84f3-47c8174dc9cd?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/90/9058deb4-e7f5-4c7a-84f3-47c8174dc9cd?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/90/9058deb4-e7f5-4c7a-84f3-47c8174dc9cd?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/90/9058deb4-e7f5-4c7a-84f3-47c8174dc9cd?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/45/4522289c-86dd-4f50-9843-24811869c6e8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/45/4522289c-86dd-4f50-9843-24811869c6e8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/45/4522289c-86dd-4f50-9843-24811869c6e8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/45/4522289c-86dd-4f50-9843-24811869c6e8?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/45/4522289c-86dd-4f50-9843-24811869c6e8?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 180"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/87/875c2afb-d10f-401b-9793-8d52a025603b?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/87/875c2afb-d10f-401b-9793-8d52a025603b?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpcorerecommenderpopularfiltersnobanner&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=accwebpublichomegaaa4on&client.abtests=cossrpsbsmodelimprovementsv1&adId=442543675"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=16500&c=Limousine&ms=17200%3B17&id%21=442543675&vc=Car&sid=14232991"
+    },
+    "vehicleCondition": "used",
+    "make": "Mercedes-Benz",
+    "model": "C 180",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/mercedes-benz.html",
+            "name": "Mercedes-Benz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/mercedes-benz-c-180.html",
+            "name": "C 180"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Mercedes-Benz C 180 für 16.500 €",
+    "price_text": "Preis 16.500 € Fairer Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug",
+      "Kategorie": "Limousine",
+      "Baureihe": "BM 205",
+      "Ausstattungslinie": "Avantgarde",
+      "Fahrzeugnummer": "225",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "95.013 km",
+      "Hubraum": "1.595 cm³",
+      "Leistung": "115 kW (156 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Energieverbrauch (komb.) 2": "5,0 l/100km",
+      "CO₂-Emissionen (komb.) 2": "116 g/km",
+      "Kraftstoffverbrauch 2": "5,0 l/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Schaltgetriebe",
+      "Schadstoffklasse": "Euro6",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "03/2015",
+      "Anzahl der Fahrzeughalter": "1",
+      "HU": "Neu",
+      "Klimatisierung": "3-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Vorne, Hinten",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "PALLADIUMSILBER",
+      "Farbe": "Silber Metallic",
+      "Innenausstattung": "Teilleder, Grau",
+      "Anhängelast gebremst": "1.400 kg",
+      "Anhängelast ungebremst": "700 kg",
+      "Gewicht": "1.395 kg",
+      "Zylinder": "4",
+      "Tankgröße": "41 l"
+    },
+    "description": "Gebrauchtfahrzeug • 95.013 km • 115 kW (156 PS) • Benzin • Schaltgetriebe • 03/2015",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/87/875c2afb-d10f-401b-9793-8d52a025603b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a4170da-8d7a-48d6-971a-31b638a20943?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/32/32016cdf-ebd1-42fb-a84d-5c34efc1f965?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/53/53fe687b-308b-4e26-a9de-edc39e487415?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/24/24b678a1-8dc5-4b50-8c8b-941454727538?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/89/8924cfb0-53d1-4a22-80bb-ac5ec1c7f532?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/30/30977d1d-031b-4811-b1d0-48c6732fc883?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba8b2dcb-3ff5-428f-a13d-9d5d9a7d4c55?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/01/01ebb289-57c4-4ada-b2dd-61a3f39efb68?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fe0d78e-c151-45d8-bd23-ae56f46d46cc?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdd6aae7-e8c4-4cc9-b741-78e4f95dfbda?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdaa65a5-7287-4cca-a396-3a0287f440db?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bc/bccf1fc6-32d6-4d98-a782-97e2cdca1d44?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/db/dbe89404-2872-4d37-b23f-2667cfdedda4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f3/f3bd1cba-4b44-4505-a55f-c112111e4461?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e152e6f-12ac-45ac-bb30-e992aa7b9450?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/61/61341d84-f435-46d3-a4cc-194c1c44c6c8?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc667987-0b6c-45e6-a19e-6fb16072e20c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3275513-5d68-45f9-ab37-c3ea0a0db350?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/01/01f82b17-dba3-4ccc-aba2-c05dcdf55d2f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca1cfc7e-c2e6-4f2b-b4d2-3ee0576aa39a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ba/bae2cf18-079e-435a-bd27-12bb905f29d4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d1a836-fca7-44b8-89fd-19354c65b0fa?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8c/8cfda0bd-d6de-4137-af89-15e5c1cff463?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/90/9058deb4-e7f5-4c7a-84f3-47c8174dc9cd?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/45/4522289c-86dd-4f50-9843-24811869c6e8?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/87/875c2afb-d10f-401b-9793-8d52a025603b?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a4170da-8d7a-48d6-971a-31b638a20943?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/32/32016cdf-ebd1-42fb-a84d-5c34efc1f965?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/53/53fe687b-308b-4e26-a9de-edc39e487415?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/24/24b678a1-8dc5-4b50-8c8b-941454727538?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/89/8924cfb0-53d1-4a22-80bb-ac5ec1c7f532?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/30/30977d1d-031b-4811-b1d0-48c6732fc883?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba8b2dcb-3ff5-428f-a13d-9d5d9a7d4c55?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/01/01ebb289-57c4-4ada-b2dd-61a3f39efb68?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fe0d78e-c151-45d8-bd23-ae56f46d46cc?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdd6aae7-e8c4-4cc9-b741-78e4f95dfbda?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdaa65a5-7287-4cca-a396-3a0287f440db?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/bc/bccf1fc6-32d6-4d98-a782-97e2cdca1d44?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/db/dbe89404-2872-4d37-b23f-2667cfdedda4?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f3/f3bd1cba-4b44-4505-a55f-c112111e4461?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e152e6f-12ac-45ac-bb30-e992aa7b9450?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/61/61341d84-f435-46d3-a4cc-194c1c44c6c8?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc667987-0b6c-45e6-a19e-6fb16072e20c?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3275513-5d68-45f9-ab37-c3ea0a0db350?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/01/01f82b17-dba3-4ccc-aba2-c05dcdf55d2f?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca1cfc7e-c2e6-4f2b-b4d2-3ee0576aa39a?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 21,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ba/bae2cf18-079e-435a-bd27-12bb905f29d4?rule=mo-1600",
+      "local_path": "foto/21.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 22,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d1a836-fca7-44b8-89fd-19354c65b0fa?rule=mo-1600",
+      "local_path": "foto/22.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 23,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8c/8cfda0bd-d6de-4137-af89-15e5c1cff463?rule=mo-1600",
+      "local_path": "foto/23.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 24,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/90/9058deb4-e7f5-4c7a-84f3-47c8174dc9cd?rule=mo-1600",
+      "local_path": "foto/24.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 25,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/45/4522289c-86dd-4f50-9843-24811869c6e8?rule=mo-1600",
+      "local_path": "foto/25.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

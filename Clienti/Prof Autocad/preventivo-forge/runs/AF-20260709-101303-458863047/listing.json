@@ -1,0 +1,300 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=458863047&dam=false&ms=20700%3B%3B%3B&od=up&ref=seo&refId=ddc77b69-c15d-021c-1ded-32b99f35906e&s=Car&sb=rel&searchId=ddc77b69-c15d-021c-1ded-32b99f35906e&vc=Car",
+  "source_id": "458863047",
+  "scraped_at": "2026-07-09T08:13:14+00:00",
+  "scrape_method": "chrome-cdp",
+  "make": "Renault",
+  "model": "Austral",
+  "variant": "Techno",
+  "title_de": "Renault Austral Techno Autom. LED+Navi+Panodach+20 Zoll",
+  "year": 2026,
+  "first_registration": "01/2026",
+  "mileage_km": 10400,
+  "price_listed_eur": 33489.0,
+  "price_is_gross": true,
+  "vat_deductible": true,
+  "fuel": "Benzina",
+  "gearbox": "Automatico",
+  "power_kw": 116,
+  "power_hp": 158,
+  "body_type": "SUV/Geländewagen/Pickup",
+  "drivetrain": null,
+  "doors": 5,
+  "seats": 5,
+  "color": "Grau Metallic",
+  "color_manufacturer": "grau Metallic",
+  "interior": "Teilleder, Schwarz",
+  "emission_class": "Euro 6e",
+  "co2_g_km": 148.0,
+  "vin": null,
+  "equipment_de": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Adaptives Kurvenlicht",
+    "Allwetterreifen",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Anhängerkupplung abnehmbar",
+    "Apple CarPlay",
+    "Armlehne",
+    "Beheizbare Frontscheibe",
+    "Beheizbares Lenkrad",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Frontantrieb",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Pannenkit",
+    "Panorama-Dach",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Zentralverriegelung"
+  ],
+  "description_de": "Renault Austral Techno\n\n- 20 Zoll Alufelgen mit Ganzjahresreifen\n- Anhängerkupplung abnehmbar\n- Navigationssystem\n- Sitzheizung\n- Panoramadach\n- LED Scheinwerfer mit Fernlichtassistent\n- Rückfahrkamera\n- Totwinkelassistent\n- Spurhalteassistent\n- beheizbare Frontscheibe\n- beheizbares Lenkrad\n- etc.\n\nProbefahrten nur nach terminlicher Absprache möglich\n-Inzahlungnahme Ihres gebrauchten Pkw zu fairen Preisen\n-Finanzierung und Leasing zu attraktiven Konditionen über unsere Partner möglich\n-Gebrauchtwagengarantie / Neuwagenanschlussgarantie gegen Aufpreis möglich\n-Irrtümer & Zwischenverkauf vorbehalten\n\nZusatzleistungen:\n\nFalls Ihr favorisiertes Fahrzeug keine Anhängerkupplung, keine Sitzheizung, keine Einparkhilfe oder sonstige Extras verbaut hat, können wir Ihnen diese kostengünstig nachrüsten.\n\nIhre Ansprechpartner im Autohaus Harmstorf freuen sich auf Ihren Anruf:\nHerr Björn Matthiesen Tel. 04105-6133-50\nHerr Markus Müller Tel. 04105-6133-50\nHerr Benjamin Heinz Tel. 04105-6133-50\n\nEmail Anfragen: verkauf@autohaus-harmstorf.de\nÖffnungszeiten im Verkauf:\nMontag – Freitag: 09:00 – 18:00 Uhr\nSamstag: 09:30 – 13:00 Uhr",
+  "raw_specs": {
+    "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+    "Kategorie": "SUV/Geländewagen/Pickup",
+    "Baureihe": "RHN",
+    "Ausstattungslinie": "Techno",
+    "Fahrzeugnummer": "22",
+    "Verfügbarkeit": "Sofort",
+    "Kilometerstand": "10.400 km",
+    "Hubraum": "1.332 cm³",
+    "Leistung": "116 kW (158 PS)",
+    "Antriebsart": "Verbrennungsmotor",
+    "Kraftstoffart": "Benzin",
+    "Energieverbrauch (komb.)": "6,5 l/100km",
+    "CO₂-Emissionen (komb.)": "148 g/km",
+    "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+    "Kraftstoffverbrauch": "6,5 l/100km (kombiniert)",
+    "Anzahl Sitzplätze": "5",
+    "Anzahl der Türen": "4/5",
+    "Getriebe": "Automatik",
+    "Schadstoffklasse": "Euro 6e",
+    "Umweltplakette": "4 (Grün)",
+    "Erstzulassung": "01/2026",
+    "Anzahl der Fahrzeughalter": "1",
+    "HU": "Neu",
+    "Klimatisierung": "2-Zonen-Klimaautomatik",
+    "Einparkhilfe": "Vorne, Kamera, Hinten",
+    "Airbags": "Front-, Seiten- und weitere Airbags",
+    "Farbe (Hersteller)": "grau Metallic",
+    "Farbe": "Grau Metallic",
+    "Innenausstattung": "Teilleder, Schwarz"
+  },
+  "seller": {},
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/de/dee53f34-0b5c-454e-a2c0-925d870dabf9?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/73/7372f976-b6f3-4fa7-9a47-72e3fe4ddb4d?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e301234-d1ee-4c6c-a261-c1f1c64bda12?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d12a801-d7af-495a-af87-d649b6df6ea6?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/dd/dd053c05-2e3a-45d1-9c10-d0683ebda1de?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c5c51a14-1bc0-40c7-a89c-3c18cf0eafef?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f34ed90-a67a-41a7-9070-d6e7a4d4e39a?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/57/57056995-f54a-4f16-ab23-98be75963f13?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e95d0e35-6133-4eea-8911-570c47c0039e?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/20/206cf5e9-0854-4fec-97b1-18cf0b027677?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/57/578afaff-cf15-4727-b319-be0fc18c5fa3?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1e/1e74c704-4ce8-4166-8ab1-dc481ac90c10?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b6bc55d-1315-4e38-9868-95ac86d8433a?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/03/031630b9-1ccc-4804-b412-c1c0740e5d2d?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/59/592327b1-d005-45ed-ba5c-4ecacdb0289c?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a75bc395-89bf-49c3-95ee-4dfa9a9a2a56?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a2/a245f35b-76cf-47fe-a326-27bdb6c56285?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e8/e8ccdbd6-645b-4d99-95ec-365425290fcc?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/28/2839924b-b82a-4a7d-8efc-ef9b1406e806?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c33411db-31e3-4289-ad76-8a07d3cb13fb?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4f3708f-154d-48d9-9bf3-c54a742d8efb?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 21,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/48/4870673a-6ea9-4b3b-b010-800ac9a62c87?rule=mo-1600",
+      "local_path": "foto/21.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 22,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/12/12baeb23-697e-4b6a-b998-f753338459b0?rule=mo-1600",
+      "local_path": "foto/22.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 23,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee7468e-cd68-49da-a348-c77ebbe3684c?rule=mo-1600",
+      "local_path": "foto/23.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 24,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/44/44735398-d430-4743-940b-e7ebdcefee71?rule=mo-1600",
+      "local_path": "foto/24.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 25,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/9a/9aab6cf7-60d3-4852-bad4-2d31b1825938?rule=mo-1600",
+      "local_path": "foto/25.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 26,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/72/7238e939-8a1e-4168-96fc-60aa4434a8e6?rule=mo-1600",
+      "local_path": "foto/26.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 27,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/23/23b41573-88ba-449f-b7a7-7ef9c9fa4ce9?rule=mo-1600",
+      "local_path": "foto/27.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

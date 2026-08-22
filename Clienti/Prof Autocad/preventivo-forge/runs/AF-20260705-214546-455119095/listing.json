@@ -1,0 +1,378 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=455119095&sb=rel&od=up&vc=Car&dam=false&fr=2018&ml=%3A80000&ms=16700%3B%3B%3B&ms=4%3B%3B%3B&ms=1700%3B%3B%3B&ms=1900%3B%3B%3B&ms=3100%3B%3B%3B&ms=3500%3B%3B%3B&ms=4700%3B%3B%3B&ms=8600%3B%3B%3B&ms=270%3B%3B%3B&ms=14600%3B%3B%3B&ms=12400%3B%3B%3B&ms=11650%3B%3B%3B&ms=14800%3B%3B%3B&ms=15200%3B%3B%3B&ms=15500%3B%3B%3B&ms=15900%3B%3B%3B&ms=16600%3B%3B%3B&ms=17200%3B%3B%3B&ms=20100%3B%3B%3B&ms=21600%3B%3B%3B&ms=137%3B%3B%3B&p=35000&pa=CAM_360_DEGREES&pa=REAR_VIEW_CAM&s=Car&ref=srp&searchId=c750c3f0-83bb-fc94-9e70-bdb893464f75&refId=c750c3f0-83bb-fc94-9e70-bdb893464f75",
+  "source_id": "455119095",
+  "scraped_at": "2026-07-05T19:45:54+00:00",
+  "scrape_method": "chrome-cdp",
+  "make": "Mercedes-Benz",
+  "model": "E 63 AMG",
+  "variant": "E 63 AMG 4Matic (213.288)",
+  "title_de": "Mercedes-Benz E63 AMG T 4Matic *Sp.auspuff*Matrix*Stzklm.*1.HD",
+  "year": 2019,
+  "first_registration": "08/2019",
+  "mileage_km": 32500,
+  "price_listed_eur": 53900.0,
+  "price_is_gross": true,
+  "vat_deductible": true,
+  "fuel": "Benzina",
+  "gearbox": "Automatico",
+  "power_kw": 420,
+  "power_hp": 571,
+  "body_type": "Kombi",
+  "drivetrain": "Integrale",
+  "doors": 5,
+  "seats": 5,
+  "color": "Grau Metallic",
+  "color_manufacturer": "SELENITGRAU - METALLICLACK",
+  "interior": "Vollleder, Schwarz",
+  "emission_class": null,
+  "co2_g_km": 246.0,
+  "vin": null,
+  "equipment_de": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Adaptives Fahrwerk",
+    "Adaptives Kurvenlicht",
+    "Alarmanlage",
+    "Allradantrieb",
+    "Ambiente-Beleuchtung",
+    "Anhängerrangierassistent",
+    "Armlehne",
+    "Ausparkassistent",
+    "Beheizbare Frontscheibe",
+    "Beheizbares Lenkrad",
+    "Berganfahrassistent",
+    "Blendfreies Fernlicht",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Sitzeinstellung",
+    "Elektr. Sitzeinstellung, hinten",
+    "Elektr. Sitzeinstellung mit Memory-Funktion",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Inspektion neu",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Luftfederung",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Navigationsvorbereitung",
+    "Nebelscheinwerfer",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Pannenkit",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzbelüftung",
+    "Sitzheizung",
+    "Sitzheizung hinten",
+    "Sommerreifen",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Umklappbarer Beifahrersitz",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Winterreifen",
+    "Zentralverriegelung"
+  ],
+  "description_de": "Angeboten wird ein erstklassiger Mercedes-Benz E63 AMG aus erster Hand. Der Wagen hat wenig km und ist Scheckheft gepflegt bei Mercedes.\n\nSonderausstattung: \n AMG Driver's Package\n Audio-Navigationssystem: COMAND Online\n Einstiegsleisten beleuchtet\n Fahrzeug ohne Modellbezeichnung\n Kombiinstrument mit variabler Anzeige (Widescreen Cockpit)\n Kraftstofftank: 80 Ltr. (vergrößerter Inhalt, Volumen 2)\n Memory-Paket\n Multibeam LED\n Park-Paket\n Seitenscheiben hinten und Heckscheibe abgedunkelt\n Sitze vorn: Klimatisierung\n Smartphone integriert\n Spiegel-Paket\n Sport-Auspuffanlage (AMG Performance)\n Zeituhr (Analog)\n\n Weitere Ausstattung: \n Abgasanlage 2-flutig\n Adaptives Bremslicht\n Airbag Beifahrerseite abschaltbar\n Airbag Fahrer-/Beifahrerseite\n AMG-Line Exterieur\n AMG-Line Interieur\n AMG-Optic-/Styling-Paket 1\n Armaturentafel Oberteil in Ledernachbildung Artico\n Beckenairbag vorn (Pelvisbag)\n Bremsanlage mit großen Bremsscheiben (Hochleistungs-Bremssystem)\n Bremssättel lackiert\n Dachreling (Aluminium)\n Design- und Ausstattungslinie Standard\n Elektron. Sperrdifferential\n Fahrassistenz-System: Agility Select / Dynamic Select (Fahrmodusschalter)\n Fahrassistenz-System: aktiver Bremsassistent\n Fahrassistenz-System: aktiver Park-Assistent\n Fahrassistenz-System: Attention-Assist (Müdigkeitserkennungs-Sensor)\n Fensterheber elektrisch vorn + hinten\n Fußmatten AMG\n Gepäck-/Laderaumabdeckung inkl. Sicherheitsnetz\n Heckklappe mit automatischem Öffnungs- und Schließsystem\n Innenausstattung: Zierteile Aluminium\n Innenhimmel schwarz\n Isofix-Aufnahmen für Kindersitz an Rücksitz\n Karosserie: 5-türig\n KeyFree-Startsystem\n Klimaautomatik (Thermatic 2-Zonen)\n Knieairbag Fahrerseite\n Kommunikationsmodul (LTE) Vorbereitung Mercedes me connect\n Kopf-Airbag-System vorn\n Kühlergrill verchromt\n LM-Felgen\n Luftfederung mit Niveauregulierung Hinterachse\n Media-Display\n Mercedes-Benz Notrufsystem\n Mittelkonsole Klavierlack-Optik\n Motor 4,0 Ltr. - 420 kW V8 KAT\n Motorhaube mit Powerdome\n PRE-SAFE-System\n Reifendruck-Kontrollsystem\n Rücksitzlehne geteilt / klappbar\n Schadstoffarm nach Abgasnorm Euro 6d-TEMP\n Seitenairbag (Sidebag) vorn\n Sitzbezug / Polsterung: Leder Nappa\n Sitze vorn elektr. verstellbar\n Sitzheizung vorn und hinten\n Steckdose (12V-Anschluß) im Koffer-/Laderaum\n\n Ihr Vorteil - Unsere Flexiblen Finanzierungsmöglichkeiten!\n\n Wir möchten, dass Sie Ihren Traumwagen mühelos und stressfrei besitzen können. Deshalb bieten wir Ihnen maßgeschneiderte Finanzierungslösungen an, die perfekt auf Ihre individuellen Bedürfnisse zugeschnitten sind. Egal, ob Sie eine niedrige monatliche Rate oder eine schnelle Abwicklung wünschen, unser Expertenteam steht Ihnen zur Seite, um Ihnen die besten Finanzierungsoptionen zu bieten. \n\nInzahlungnahme - Machen Sie Platz für Ihr neues Traumauto!\n\n Sie möchten sich von Ihrem aktuellen Fahrzeug trennen und in ein aufregendes neues Auto umsteigen? Kein Problem! Wir akzeptieren gerne Ihr derzeitiges Fahrzeug als Inzahlungnahme für Ihren neuen Kauf. Profitieren Sie von einer fairen und transparenten Bewertung, um den bestmöglichen Preis für Ihr Auto zu erhalten. So wird der Weg zu Ihrem Traumauto noch einfacher und bequemer. \n\nVertrauen Sie auf unsere Erfahrung und Expertise\n\n Als vertrauenswürdiger Autohändler mit fast zwei Jahrzehnten Erfahrung in der Branche und ein Team von Experten, das Ihnen mit Rat und Tat zur Seite steht. Kundenzufriedenheit steht bei uns an erster Stelle, und wir sind stolz darauf, dass unsere Kunden immer wieder zu uns zurückkehren. Besuchen Sie uns noch heute und erleben Sie die Vielfalt und Qualität unserer Fahrzeuge. Entdecken Sie Ihren Traumwagen und lassen Sie sich von unseren Finanzierungsmöglichkeiten sowie der bequemen Inzahlungnahmeoption begeistern. Ihr Weg zu Ihrem Traumauto beginnt hier – vereinbaren Sie jetzt einen Termin oder besuchen Sie uns spontan! Wir freuen uns darauf, Sie persönlich kennenzulernen und Ihnen dabei zu helfen, Ihr Traumauto zu finden.",
+  "raw_specs": {
+    "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+    "Kategorie": "Kombi",
+    "Baureihe": "E -Klasse T-Modell (BM 213)(06.2016->)",
+    "Ausstattungslinie": "E 63 AMG 4Matic (213.288)",
+    "Herkunft": "Deutsche Ausführung",
+    "Kilometerstand": "32.500 km",
+    "Hubraum": "3.982 cm³",
+    "Leistung": "420 kW (571 PS)",
+    "Antriebsart": "Verbrennungsmotor",
+    "Kraftstoffart": "Benzin",
+    "Energieverbrauch (komb.)": "10,8 l/100km",
+    "CO₂-Emissionen (komb.)": "246 g/km",
+    "Kraftstoffverbrauch": "10,8 l/100km (kombiniert)",
+    "Anzahl Sitzplätze": "5",
+    "Anzahl der Türen": "4/5",
+    "Getriebe": "Automatik",
+    "Erstzulassung": "08/2019",
+    "Anzahl der Fahrzeughalter": "1",
+    "HU": "Neu",
+    "Klimatisierung": "2-Zonen-Klimaautomatik",
+    "Einparkhilfe": "Vorne, Hinten, Selbstlenkende Systeme, Kamera",
+    "Airbags": "Front-, Seiten- und weitere Airbags",
+    "Farbe (Hersteller)": "SELENITGRAU - METALLICLACK",
+    "Farbe": "Grau Metallic",
+    "Innenausstattung": "Vollleder, Schwarz",
+    "Anhängelast gebremst": "1.900 kg",
+    "Anhängelast ungebremst": "750 kg",
+    "Gewicht": "2.060 kg",
+    "Zylinder": "8",
+    "Tankgröße": "80 l"
+  },
+  "seller": {},
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/26/26470b1f-b24e-439b-ae97-d9dcc5dff6bf?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd0af3c-ce7c-40f6-85f6-f1c2ad5f5e22?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/81/8104b5f0-66d9-4b10-b142-e5e838a3c45c?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/77/7739aebf-5a40-45ed-b734-b8c959ef6438?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/06/069ee0d7-2ea6-461a-9f21-e08ff4e3605d?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c6c34bb-02ac-4eb1-944e-0b161422934b?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/12/126b4a7c-537f-43ab-9508-4d50b07d6a68?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1035fc3-b404-4303-be40-75fb2650770c?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/53/533690a5-2f38-4854-9a65-8e156f6a3456?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/49/492ed36d-ce2f-43cd-8938-74852f1e3eb4?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef7861b7-9f43-4c41-b18d-02c50b8802e1?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a96173f-a081-447b-a301-329cccf3966f?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a2/a24209d8-9ab0-4ad7-b628-5ee766ccd44b?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/62/623d649a-87ba-4f6b-a829-8d23e146d9d0?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6fb1a96-cf1e-4274-bfc4-37a3aa63f1d7?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/00/00fefa91-c16b-48d8-8f87-3f8dea4ab433?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f505a4ae-19e9-486a-bd81-4faa6a59f8b8?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/68/68e702f3-2164-4046-b0f7-5cb87b50d6d4?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c701f336-e695-4eec-b0b3-38e9f9ffa914?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/2a/2a5977fc-45ab-4128-b659-55d1538db3e9?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d3/d396928c-9846-4784-a084-8b225fbd59df?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 21,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/98/9879e36b-c1ed-4b76-8919-852dc801f89f?rule=mo-1600",
+      "local_path": "foto/21.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 22,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/22/22f3aa3a-efd2-4c20-a81a-ad28b68bfe58?rule=mo-1600",
+      "local_path": "foto/22.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 23,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/db/dba149ce-8bb3-44af-8c7a-8014c0afde0b?rule=mo-1600",
+      "local_path": "foto/23.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 24,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/94/9464cbf5-1c8e-4699-b427-c60d1ad0ff46?rule=mo-1600",
+      "local_path": "foto/24.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 25,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0c64589-bd83-4e33-a1ec-bfe80bb4a32b?rule=mo-1600",
+      "local_path": "foto/25.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 26,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c2/c25ada67-8a03-429c-bba1-58f99465e5db?rule=mo-1600",
+      "local_path": "foto/26.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 27,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe14bd3f-4485-415a-97a7-0392fb52ea50?rule=mo-1600",
+      "local_path": "foto/27.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 28,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ffdf01ff-157f-401a-ba2b-031f9c49dacd?rule=mo-1600",
+      "local_path": "foto/28.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 29,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/34/34b6587e-04a2-4ad0-9b39-c009ec7c696d?rule=mo-1600",
+      "local_path": "foto/29.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 30,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/60/60a227d8-073d-4467-b133-7fd2e866453b?rule=mo-1600",
+      "local_path": "foto/30.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 31,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0a9e176-8281-46f6-b5be-6a4a1b09cd35?rule=mo-1600",
+      "local_path": "foto/31.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 32,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e6ff702-724f-4312-8367-01daa10e09b1?rule=mo-1600",
+      "local_path": "foto/32.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 33,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/96/96929a86-a3f5-47fa-b71c-151cee15ee4f?rule=mo-1600",
+      "local_path": "foto/33.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 34,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c61ece35-661f-4e7d-9fe9-0f60f3f13d1f?rule=mo-1600",
+      "local_path": "foto/34.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 35,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/2d/2df3c81c-bd8e-4fc6-ad2c-665b8d9c6e06?rule=mo-1600",
+      "local_path": "foto/35.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 36,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/93/9307e63a-dacb-4182-a227-131a22666780?rule=mo-1600",
+      "local_path": "foto/36.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 37,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2e459e1-f790-4866-8898-15d92abff96e?rule=mo-1600",
+      "local_path": "foto/37.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

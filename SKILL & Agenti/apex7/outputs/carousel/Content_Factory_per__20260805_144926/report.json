@@ -1,0 +1,125 @@
+{
+  "topic": "Content Factory per coach",
+  "model": "GPT-4o",
+  "slides": [
+    {
+      "slide_num": 1,
+      "pill_label": "CONTENT FACTORY",
+      "icon": "gears",
+      "text": "E se i tuoi Content Factory per coach si scrivessero da soli? Content Factory: la fabbrica che produce, scrive e pubblica per te.",
+      "red_words": "Content Factory per coach si scrivessero",
+      "role": "hook"
+    },
+    {
+      "slide_num": 2,
+      "pill_label": "IL PROBLEMA",
+      "icon": "clock",
+      "text": "Ogni post su Content Factory per coach ti ruba 3 ore. E lo sai. OGNI SETTIMANA SUCCEDE QUESTO → Cerchi idee per Content Factory per coach, scrolli per ore. → Scrivi il copy, riscrivi 4 volte. → Pubblichi tardi, perdi il momento.",
+      "red_words": "3 ore, momento",
+      "role": "problem"
+    },
+    {
+      "slide_num": 3,
+      "pill_label": "LA VERITÀ",
+      "icon": "eye",
+      "text": "Non hai un problema di Content Factory per coach. Hai un problema di esecuzione. Le idee su Content Factory per coach le hai. È il tempo che ti manca per trasformarle in contenuti pubblicati. L'esecuzione è la differenza tra chi cresce e chi resta fermo.",
+      "red_words": "problema, esecuzione, idea",
+      "role": "truth"
+    },
+    {
+      "slide_num": 4,
+      "pill_label": "LA SOLUZIONE",
+      "icon": "star",
+      "text": "Una fabbrica di contenuti per Content Factory per coach che lavora per te. Ricerca, scrittura, grafica, pubblicazione. Tutto automatico. Tutto nella tua voce. La macchina che pubblica al posto tuo. Brand voice cucita su di te. Da idea a post in 4 minuti per Content Factory per coach. Pubblicazione automatica.",
+      "red_words": "fabbrica",
+      "role": "solution"
+    },
+    {
+      "slide_num": 5,
+      "pill_label": "COME FUNZIONA",
+      "icon": "nodes",
+      "text": "3 step. Zero tuo tempo per Content Factory per coach. Il workflow completo dalla ricerca alla pubblicazione. 01 Ricerca - Scansiona trend, competitor e community su Content Factory per coach. Trova ciò che funziona ora. 02 Generazione - Crea copy, caption e grafica nella tua brand voice per Content Factory per coach. 03 Pubblicazione - Programma e pubblica su Instagram, LinkedIn, X.",
+      "red_words": "Zero",
+      "role": "how"
+    },
+    {
+      "slide_num": 6,
+      "pill_label": "IL RISULTATO",
+      "icon": "chart bars",
+      "text": "Da 3 ore a 4 minuti per post su Content Factory per coach. Il tempo che recuperi è il tempo che usi per costruire. TEMPO RISPARMIATO 97% Da 3 ore a 4 minuti per ogni post pubblicato. OUTPUT MENSILE 120+ Contenuti pronti su Content Factory per coach al mese, multicanale. TUO INTERVENTO 5min Solo per approvare. Il resto è automatico.",
+      "red_words": "3 ore, 4 minuti",
+      "role": "result"
+    },
+    {
+      "slide_num": 7,
+      "pill_label": "LA DOMANDA VERA",
+      "icon": "shield ?",
+      "text": "Ma i contenuti su Content Factory per coach sembreranno generati dall'AI? No. E ti spieghiamo perché in 3 punti. PERCHÉ NON SEMBRA AI ✓ Brand voice estratta dal tuo materiale su Content Factory per coach. Analizziamo i tuoi post migliori. ✓ Output sempre diversi, mai ripetitivi. Variazione strutturale automatica. ✓ Tu approvi prima di pubblicare. Vedi tutto, modifichi se vuoi.",
+      "red_words": "dall'AI?",
+      "role": "objection"
+    },
+    {
+      "slide_num": 8,
+      "pill_label": "INIZIA ORA",
+      "icon": "lightning",
+      "text": "Smetti di scrivere su Content Factory per coach. Inizia a lanciare. La tua Content Factory per Content Factory per coach pronta in 10 giorni. Installata, configurata, già a lavoro. OFFERTA LIMITATA PRIMI 5 CLIENTI €6.400 €3.200 -50% Setup completo Brand voice import 30gg supporto PRENOTA LA CALL GRATUITA → Solo 30 minuti. Zero impegno. Solo chiarezza.",
+      "red_words": "scrivere, lanciare",
+      "role": "cta"
+    }
+  ],
+  "image_results": [
+    {
+      "status": "fallback_saved",
+      "path": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\apex7\\outputs\\carousel\\Content_Factory_per__20260805_144926\\slide_01.png",
+      "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"textarea[placeholder*=\\\"Describe\\\"]\").first\n    - locator resolved to <textarea rows=\"1\" autofocus=\"\" name=\"message\" autocomplete=\"off\" placeholder=\"Describe how you want to edit this image…\" class=\"box-border w-full flex-none resize-none focus:outline-none active:outline-none placeholder:text-text-placeholder bg-surface-secondary body-base text-text-primary max-h-[40vh] p-1 md:p-3 md:min-h-[80px]\"></textarea>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button type=\"button\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ring-offset-2 focus-visible:ring-offset-surface-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 px-4 py-3 text-sm text-interactive-on-cta bg-interactive-cta hover:bg-interactive-cta-hover active:bg-interactive-cta-active rounded-[4px] font-normal min-w-max flex-1\">Accept Cookies</button> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-_r_6_\" data-state=\"open\" aria-labelledby=\"radix-_r_7_\" aria-describedby=\"radix-_r_8_\" class=\"bg-surface-primary data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]…>…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button type=\"button\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ring-offset-2 focus-visible:ring-offset-surface-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 px-4 py-3 text-sm text-interactive-on-cta bg-interactive-cta hover:bg-interactive-cta-hover active:bg-interactive-cta-active rounded-[4px] font-normal min-w-max flex-1\">Accept Cookies</button> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-_r_6_\" data-state=\"open\" aria-labelledby=\"radix-_r_7_\" aria-describedby=\"radix-_r_8_\" class=\"bg-surface-primary data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]…>…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    58 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button type=\"button\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ring-offset-2 focus-visible:ring-offset-surface-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 px-4 py-3 text-sm text-interactive-on-cta bg-interactive-cta hover:bg-interactive-cta-hover active:bg-interactive-cta-active rounded-[4px] font-normal min-w-max flex-1\">Accept Cookies</button> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-_r_6_\" data-state=\"open\" aria-labelledby=\"radix-_r_7_\" aria-describedby=\"radix-_r_8_\" class=\"bg-surface-primary data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]…>…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n",
+      "slide": 1
+    },
+    {
+      "status": "fallback_saved",
+      "path": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\apex7\\outputs\\carousel\\Content_Factory_per__20260805_144926\\slide_02.png",
+      "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"textarea[placeholder*=\\\"Describe\\\"]\").first\n    - locator resolved to <textarea rows=\"1\" autofocus=\"\" name=\"message\" autocomplete=\"off\" placeholder=\"Describe how you want to edit this image…\" class=\"box-border w-full flex-none resize-none focus:outline-none active:outline-none placeholder:text-text-placeholder bg-surface-secondary body-base text-text-primary max-h-[40vh] p-1 md:p-3 md:min-h-[80px]\"></textarea>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button type=\"button\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ring-offset-2 focus-visible:ring-offset-surface-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 px-4 py-3 text-sm text-interactive-on-cta bg-interactive-cta hover:bg-interactive-cta-hover active:bg-interactive-cta-active rounded-[4px] font-normal min-w-max flex-1\">Accept Cookies</button> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-_r_6_\" data-state=\"open\" aria-labelledby=\"radix-_r_7_\" aria-describedby=\"radix-_r_8_\" class=\"bg-surface-primary data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]…>…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button type=\"button\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ring-offset-2 focus-visible:ring-offset-surface-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 px-4 py-3 text-sm text-interactive-on-cta bg-interactive-cta hover:bg-interactive-cta-hover active:bg-interactive-cta-active rounded-[4px] font-normal min-w-max flex-1\">Accept Cookies</button> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-_r_6_\" data-state=\"open\" aria-labelledby=\"radix-_r_7_\" aria-describedby=\"radix-_r_8_\" class=\"bg-surface-primary data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]…>…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    58 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button type=\"button\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ring-offset-2 focus-visible:ring-offset-surface-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 px-4 py-3 text-sm text-interactive-on-cta bg-interactive-cta hover:bg-interactive-cta-hover active:bg-interactive-cta-active rounded-[4px] font-normal min-w-max flex-1\">Accept Cookies</button> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-_r_6_\" data-state=\"open\" aria-labelledby=\"radix-_r_7_\" aria-describedby=\"radix-_r_8_\" class=\"bg-surface-primary data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]…>…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n",
+      "slide": 2
+    },
+    {
+      "status": "fallback_saved",
+      "path": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\apex7\\outputs\\carousel\\Content_Factory_per__20260805_144926\\slide_03.png",
+      "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"textarea[placeholder*=\\\"Describe\\\"]\").first\n    - locator resolved to <textarea rows=\"1\" autofocus=\"\" name=\"message\" autocomplete=\"off\" placeholder=\"Describe how you want to edit this image…\" class=\"box-border w-full flex-none resize-none focus:outline-none active:outline-none placeholder:text-text-placeholder bg-surface-secondary body-base text-text-primary max-h-[40vh] p-1 md:p-3 md:min-h-[80px]\"></textarea>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button type=\"button\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ring-offset-2 focus-visible:ring-offset-surface-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 px-4 py-3 text-sm text-interactive-on-cta bg-interactive-cta hover:bg-interactive-cta-hover active:bg-interactive-cta-active rounded-[4px] font-normal min-w-max flex-1\">Accept Cookies</button> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-_r_6_\" data-state=\"open\" aria-labelledby=\"radix-_r_7_\" aria-describedby=\"radix-_r_8_\" class=\"bg-surface-primary data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]…>…</div> subtree intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button type=\"button\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ring-offset-2 focus-visible:ring-offset-surface-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 px-4 py-3 text-sm text-interactive-on-cta bg-interactive-cta hover:bg-interactive-cta-hover active:bg-interactive-cta-active rounded-[4px] font-normal min-w-max flex-1\">Accept Cookies</button> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-_r_6_\" data-state=\"open\" aria-labelledby=\"radix-_r_7_\" aria-describedby=\"radix-_r_8_\" class=\"bg-surface-primary data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]…>…</div> subtree intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    58 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button type=\"button\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ring-offset-2 focus-visible:ring-offset-surface-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 px-4 py-3 text-sm text-interactive-on-cta bg-interactive-cta hover:bg-interactive-cta-hover active:bg-interactive-cta-active rounded-[4px] font-normal min-w-max flex-1\">Accept Cookies</button> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-_r_6_\" data-state=\"open\" aria-labelledby=\"radix-_r_7_\" aria-describedby=\"radix-_r_8_\" class=\"bg-surface-primary data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]…>…</div> subtree intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n",
+      "slide": 3
+    },
+    {
+      "status": "success",
+      "path": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\apex7\\outputs\\carousel\\Content_Factory_per__20260805_144926\\slide_04.png",
+      "src_type": "screenshot_fallback",
+      "slide": 4
+    },
+    {
+      "status": "fallback_saved",
+      "path": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\apex7\\outputs\\carousel\\Content_Factory_per__20260805_144926\\slide_05.png",
+      "error": "Prompt input not found - fallback",
+      "slide": 5
+    },
+    {
+      "status": "fallback_saved",
+      "path": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\apex7\\outputs\\carousel\\Content_Factory_per__20260805_144926\\slide_06.png",
+      "error": "Prompt input not found - fallback",
+      "slide": 6
+    },
+    {
+      "status": "success",
+      "path": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\apex7\\outputs\\carousel\\Content_Factory_per__20260805_144926\\slide_07.png",
+      "src_type": "screenshot_fallback",
+      "slide": 7
+    },
+    {
+      "status": "fallback_saved",
+      "path": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\apex7\\outputs\\carousel\\Content_Factory_per__20260805_144926\\slide_08.png",
+      "error": "Image generation timeout",
+      "slide": 8
+    }
+  ],
+  "output_dir": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\apex7\\outputs\\carousel\\Content_Factory_per__20260805_144926",
+  "zip_path": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\SKILL & Agenti\\apex7\\outputs\\carousel\\Content_Factory_per__20260805_144926_CAROSELLO.zip",
+  "timestamp": "2026-08-05T14:53:48.844113",
+  "quality": "ULTRA grain 38% bg + 15-22% su ogni elemento + 4K sharp 2160x2700",
+  "total_slides": 8
+}

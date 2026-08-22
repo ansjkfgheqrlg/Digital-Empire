@@ -1,0 +1,18 @@
+{"ts": "2026-07-04T23:41:59+00:00", "event": "run_created", "source_url": "https://suchen.mobile.de/auto-inserat/hyundai-i20-fl-1-0-t-gdi-90-ps-6-mt-2wd-select-hamburg/459479745.html?lst=p"}
+{"ts": "2026-07-04T23:42:00+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-04T23:42:27+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-04T23:42:27+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-04T23:42:28+00:00", "event": "step", "step": "S2_parsing", "status": "done", "note": ""}
+{"ts": "2026-07-04T23:42:28+00:00", "event": "step", "step": "GATE_A", "status": "passed", "note": ""}
+{"ts": "2026-07-04T23:42:28+00:00", "event": "step", "step": "S3_translate_copy", "status": "running", "note": ""}
+{"ts": "2026-07-04T23:42:28+00:00", "event": "step", "step": "S3_translate_copy", "status": "done", "note": ""}
+{"ts": "2026-07-04T23:42:28+00:00", "event": "step", "step": "GATE_B", "status": "passed", "note": ""}
+{"ts": "2026-07-04T23:42:28+00:00", "event": "step", "step": "S4_pricing", "status": "running", "note": ""}
+{"ts": "2026-07-04T23:42:28+00:00", "event": "step", "step": "S4_pricing", "status": "done", "note": "Hyundai i20 select 24.620 €"}
+{"ts": "2026-07-04T23:42:28+00:00", "event": "step", "step": "GATE_C", "status": "passed", "note": ""}
+{"ts": "2026-07-04T23:42:28+00:00", "event": "step", "step": "S5_pdf_render", "status": "running", "note": ""}
+{"ts": "2026-07-04T23:42:32+00:00", "event": "step", "step": "S5_pdf_render", "status": "done", "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260705-014159-459479745\\preventivo_hyundai-i20.pdf"}
+{"ts": "2026-07-04T23:42:32+00:00", "event": "step", "step": "GATE_D", "status": "passed", "note": ""}
+{"ts": "2026-07-04T23:42:32+00:00", "event": "step", "step": "GATE_IMG", "status": "passed", "note": ""}
+{"ts": "2026-07-04T23:42:33+00:00", "event": "step", "step": "GATE_R", "status": "passed", "note": ""}
+{"ts": "2026-07-04T23:53:49+00:00", "event": "run_created", "source_url": "https://x"}

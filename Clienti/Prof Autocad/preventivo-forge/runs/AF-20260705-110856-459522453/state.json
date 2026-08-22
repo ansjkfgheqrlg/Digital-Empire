@@ -1,0 +1,62 @@
+{
+  "run_id": "AF-20260705-110856-459522453",
+  "source_url": "https://m.mobile.de/auto-inserat/audi-a5-40-tfsi-s-tronic-sport-sport-duisburg/459522453.html?ref=seo&refId=3318726f-e8db-a6db-aeaa-995606ea9c2b&searchId=3318726f-e8db-a6db-aeaa-995606ea9c2b&type=page1Ad",
+  "created_at": "2026-07-05T09:08:56+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "done",
+      "at": "2026-07-05T09:09:27+00:00",
+      "note": ""
+    },
+    "S2_parsing": {
+      "status": "done",
+      "at": "2026-07-05T09:09:27+00:00",
+      "note": ""
+    },
+    "GATE_A": {
+      "status": "passed",
+      "at": "2026-07-05T09:09:27+00:00",
+      "note": ""
+    },
+    "S3_translate_copy": {
+      "status": "done",
+      "at": "2026-07-05T09:09:27+00:00",
+      "note": ""
+    },
+    "GATE_B": {
+      "status": "passed",
+      "at": "2026-07-05T09:09:27+00:00",
+      "note": ""
+    },
+    "S4_pricing": {
+      "status": "done",
+      "at": "2026-07-05T09:09:27+00:00",
+      "note": "Audi A5 40 TFSI S tronic sport sport 30.707 €"
+    },
+    "GATE_C": {
+      "status": "passed",
+      "at": "2026-07-05T09:09:27+00:00",
+      "note": ""
+    },
+    "S5_pdf_render": {
+      "status": "done",
+      "at": "2026-07-05T09:09:31+00:00",
+      "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260705-110856-459522453\\preventivo_audi-a5.pdf"
+    },
+    "GATE_D": {
+      "status": "passed",
+      "at": "2026-07-05T09:09:32+00:00",
+      "note": ""
+    },
+    "GATE_IMG": {
+      "status": "passed",
+      "at": "2026-07-05T09:09:32+00:00",
+      "note": ""
+    },
+    "GATE_R": {
+      "status": "passed",
+      "at": "2026-07-05T09:09:33+00:00",
+      "note": ""
+    }
+  }
+}

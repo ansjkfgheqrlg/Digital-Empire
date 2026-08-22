@@ -7,8 +7,10 @@ comando che genera un carosello fino al PNG (quando lanciato). Scritto perché
 Max ha chiesto di poter verificare, punto per punto, che sia stato fatto quello
 che ha chiesto.
 
-**Data**: 2026-08-03. **Stato**: outreach WhatsApp operativo e verificato su
-invii reali. Produzione caroselli: scaffold completo, non ancora lanciata dal
+**Data**: 2026-08-03, aggiornato 2026-08-05 (§2.10 — follow-up msg2/msg3 collegato,
+CP-20260805-001). **Stato**: outreach WhatsApp operativo e verificato su invii reali
+(msg1); msg2/msg3 collegati e testati con dati sintetici, non ancora eseguiti contro
+Areus di produzione. Produzione caroselli: scaffold completo, non ancora lanciata dal
 vivo (richiede conferma esplicita, vedi §7).
 
 ---
@@ -191,6 +193,40 @@ Dopo un invio riuscito: `areus.mark_contacted()` sposta il lead a stage
 - ✅ Gate Bibbia verificato contro i 3 ganci reali di produzione.
 - ✅ Circuit breaker e rilevamento ban implementati (non ancora innescati da
   un vero blocco account, perché non se n'è mai verificato uno finora).
+- ✅ Follow-up msg2/msg3 collegato al run giornaliero (CP-20260805-001, vedi
+  §2.10) — testato con dati sintetici, non ancora contro Areus di produzione.
+
+### 2.10 Follow-up automatico msg2/msg3 (🆕 costruito 2026-08-05, CP-20260805-001)
+
+**Il problema che c'era prima**: `personalizza_messaggi.py` scriveva già `whatsapp_msg2()` e
+`whatsapp_msg3()` — la sequenza "20/40/30" della Bibbia dei Messaggi (msg2 converte più del
+doppio del msg1) — ma nessuno script le chiamava mai. Solo il msg1 partiva davvero.
+
+**Cosa fa ora** (`outreach_giornaliero.py::fase3_followup()`, gira dopo Fase 2 nel run normale):
+prende i lead Areus in stage `CONTACTED` via WhatsApp e manda:
+- **msg2** dopo **24h** di silenzio dal msg1 (fonte: `preventa-outreach-pack/
+  02_SCRIPT_WHATSAPP_EMAIL_3MSG.md`).
+- **msg3** dopo **5 giorni (120h)** di silenzio **dal msg1**, non dal msg2 (fonte: docstring
+  già presente in `personalizza_messaggi.py`), con una guardia di sicurezza di 24h dal msg2 per
+  non spararli entrambi nello stesso run se msg2 era partito in ritardo.
+
+Stessi controlli di Fase 5: gate Bibbia (`rule_keeper_lint.py`), circuit breaker, rilevamento
+ban, ritmo umano 45-120s tra invii.
+
+**Limite noto, non nascosto**: `send_message.py` apre la chat WhatsApp e scrive, non legge le
+risposte in arrivo. Il segnale "il lead ha risposto, ferma i follow-up" è lo stage che avanza
+oltre `CONTACTED` (PROPOSAL/NEGOTIATION/CLOSED_*) **fatto a mano in EmpireDesk**. Se un lead
+risponde e nessuno aggiorna lo stage, la Fase 3 continua a trattarlo come silenzio.
+
+**2 bug reali trovati collegando msg3 per la prima volta** (mai emersi prima perché non veniva
+mai eseguito): il parametro `nome_attivita` non era mai inserito nel testo (Pilastro 1 lo
+avrebbe bocciato sempre), e il messaggio non nominava mai "Max"/"Preventa" (Pilastro 2 idem).
+Corretti in entrambe le copie sincronizzate del file.
+
+**Pilastro 3 (Valore anticipato) ora reale sul msg2**: prima il rule-keeper controllava solo
+"niente parola prezzo" — valido per il msg1, ma il msg2 esiste apposta per offrire qualcosa di
+concreto (`02_SCRIPT...`: "MSG2 - VALORE/PROVA"). Ora un msg2 senza un'offerta riconoscibile
+(gratis/esempio/demo/ti preparo) viene bocciato.
 
 ---
 
@@ -335,6 +371,7 @@ c'è il via libera per il run reale.
 ## 6. Checklist — cosa ho fatto rispetto a quello che hai chiesto
 
 - [x] Fase 1 — filtro solo-import reale (non più query-bias vacuo)
+- [x] Follow-up msg2/msg3 collegato al run giornaliero (§2.10, CP-20260805-001)
 - [x] Fase 2 — IG/LinkedIn: **non toccato**, resta bloccato come richiesto
 - [x] Fase 3 — Reparto Produzione + Progetto Preventa: scaffold completo,
       motore corretto identificato e confermato con te, nessuna collisione

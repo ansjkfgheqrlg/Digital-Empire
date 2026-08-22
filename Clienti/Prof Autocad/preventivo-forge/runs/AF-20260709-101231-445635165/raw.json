@@ -1,0 +1,598 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=445635165&dam=false&ms=24100%3B%3B%3B&od=up&ref=seo&refId=b7ffbaf8-657c-1b8e-8812-3dc63d98ce5b&s=Car&sb=rel&searchId=b7ffbaf8-657c-1b8e-8812-3dc63d98ce5b&vc=Car",
+  "scraped_at": "2026-07-09T08:12:43+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Kleinwagen"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "Aygo X"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "Business Edition"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "106790"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "40.990 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "998 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "53 kW (72 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "-- l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "-- g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "5,7 l/100km (Innenstadt)",
+          "4,5 l/100km (Stadtrand)",
+          "4,2 l/100km (Landstraße)",
+          "5,8 l/100km (Autobahn)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "4"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6d"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "11/2024"
+      },
+      {
+        "label": "Baujahr",
+        "tag": "constructionYear",
+        "value": "2024"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "02/2028"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Selbstlenkende Systeme, Kamera"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "Celistite Grey"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grau Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Stoff"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.090 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "3"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Toyota Aygo (X)",
+    "subTitle": "Aygo X 1.0 Automatik 53 kW (72 PS), Variomati...",
+    "makeKey": "Toyota",
+    "modelKey": "Aygo (X)",
+    "isNew": false,
+    "onCustomerBehalf": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "ABS",
+      "Abstandswarner",
+      "Allwetterreifen",
+      "Android Auto",
+      "Apple CarPlay",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Geschwindigkeitsbegrenzer",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Tagfahrlicht",
+      "Lichtsensor",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Notbremsassistent",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Scheckheftgepflegt",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Tempomat",
+      "Touchscreen",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 24053420,
+    "priceRating": {
+      "rating": "GOOD_PRICE",
+      "ratingLabel": "Guter Preis",
+      "thresholdLabels": [
+        "11.800 €",
+        "15.300 €",
+        "16.500 €",
+        "18.300 €",
+        "19.700 €",
+        "21.800 €"
+      ],
+      "vehiclePriceOffset": 58
+    },
+    "segment": "Car",
+    "title": "Toyota Aygo X 1.0 Automatik 53 kW (72 PS), Variomati...",
+    "url": "https://suchen.mobile.de/auto-inserat/toyota-aygo-x-1-0-automatik-53-kw-72-ps-variomati-t%C3%B6ging/445635165.html",
+    "vc": "Car",
+    "category": "SmallCar",
+    "id": 445635165,
+    "price": {
+      "gross": "15.999 €",
+      "grossAmount": 15999,
+      "grossCurrency": "EUR",
+      "net": "13.445 €",
+      "netAmount": 13444.54,
+      "type": "FIXED",
+      "vat": "19% MwSt."
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "NA_logo_10_name_NA_languages_NA"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Innen:</b> <br> <ul><li>Audiobedienung am Lenkrad</li> <li>Audiosystem: Multimedia Toyota Touch</li> <li>DAB-Tuner (Radioempfang digital)</li> <li>Multimedia Display (7,0 Zoll)</li> <li>Smartphone-Integration x-connect (Apple CarPlay und Android Auto)</li> <li>Fensterheber elektrisch vorn</li> <li>Gepäckraumabdeckung / Rollo</li> <li>Innenraumfilter: Staub- und Pollenfilter mit Aktivkohlefilter</li> <li>Isofix-Kindersitz-System</li> <li>Kindersicherung</li> <li>Klimaanlage</li> <li>Kopfstützen hinten</li> <li>Lenkrad (Leder) mit Multifunktion</li> <li>Lenkrad (3-Speichen)</li> <li>Lenkrad (Leder)</li> <li>Lenkrad Applikationen in Pianoschwarz</li> <li>Lenksäule (Lenkrad) höhenverstellbar</li> <li>Multimedia Display (9,0 Zoll)</li> <li>Rücksitz klappbar</li> <li>Rücksitz geteilt</li> <li>Sitz vorn links höhenverstellbar</li> <li>Sitzheizung vorn</li> <li>Sonnenblenden mit Make-up-Spiegel</li> <li>Sonnenblende rechts mit Make-up-Spiegel</li> <li>Türgriffe innen verchromt</li> <li>Warnanlage für Sicherheitsgurte hinten</li> <li>Warnanlage für Sicherheitsgurte vorn</li></ul><br><br> <b>Infotainment &amp; Kommunikation:</b> <br> <ul><li>Freisprechanlage Bluetooth</li> <li>Bluetooth-Schnittstelle</li> <li>USB-Schnittstelle</li></ul><br><br> <b>Sicherheit &amp; Assistenz:</b> <br> <ul><li>Airbag Fahrer-/Beifahrerseite</li> <li>Autom. Begleitfunktion der Beleuchtung (Follow me home, FMH)</li> <li>Fahrassistenz-System: Fernlichtassistent (Abblendautomatik Fahrlicht, AHB)</li> <li>Geschwindigkeits-Begrenzeranlage</li> <li>Geschwindigkeits-Regelanlage (Tempomat) mit Abstandsregelung</li> <li>Kopf-Airbag-System</li> <li>Park-Assistent mit Rückfahrkamera</li> <li>Seitenairbag vorn</li> <li>Stop&amp;Go-System (TSGS)</li> <li>Tagfahrlicht LED</li> <li>Toyota Safety Sense</li> <li>Fahrassistenz-System: Verkehrszeichenerkennung (RSA)</li> <li>Fahrassistenz-System: Pre-Collision-System (PCS)</li> <li>Fahrassistenz-System: Spurhalteassistent (LDA)</li> <li>Fahrassistenz-System: Müdigkeitserkennungs-Sensor</li> <li>Zentralverriegelung mit Fernbedienung</li> <li>Zentralverriegelung</li></ul><br><br> <b>Außen:</b> <br> <ul><li>3. Bremsleuchte</li> <li>Außenspiegel elektr. verstell- und heizbar</li> <li>Außenspiegel schwarz lackiert</li> <li>Stoßfänger Wagenfarbe</li> <li>Türgriffe außen Wagenfarbe</li></ul><br><br> <b>Räder &amp; Technik:</b> <br> <ul><li>Anti-Blockier-System (ABS)</li> <li>Elektron. Stabilitäts-Programm mit Antriebs-Schlupfregelung (VSC mit TRC)</li> <li>Reifen-Reparaturkit</li> <li>Reifendruck-Kontrollsystem</li> <li>Schadstoffarm nach Abgasnorm Euro 6d</li> <li>Servolenkung elektrisch</li></ul><br><br> <b>Sonstiges:</b> <br> <ul><li>Fahrassistenz-System: Sicherheitssystem Toyota Connect mit automatischem Notruf (eCall)</li></ul><br><br>Bei Verkauf neuer Kundendienst bei Toyota<br>Neuer TÜV<br>sofort lieferbar",
+    "contactInfo": {
+      "address1": "Egerlandstrasse 42 42",
+      "address2": "DE-84513 Töging",
+      "name": "Autogalerie Seidel GmbH",
+      "openingHours": [
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "09:00 Uhr - 12:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 02.07.2020",
+      "rating": {
+        "count": 36,
+        "totalCount": 161,
+        "score": 5,
+        "scoreLocalized": "5,0",
+        "link": "https://www.mobile.de/bewertungen/AutogalerieSeidelGmbH?lang=de",
+        "recommendationRate": 100,
+        "adRealityRate": 100,
+        "consultingScore": 5,
+        "friendlinessScore": 5,
+        "responseTimeScore": 5
+      },
+      "languages": "Deutsch",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad7188bd-cc90-458a-9e65-87a62e4ea4ef?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad7188bd-cc90-458a-9e65-87a62e4ea4ef?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/ad/ad7188bd-cc90-458a-9e65-87a62e4ea4ef?rule=mo-360 360w",
+        "alt": "Autogalerie Seidel GmbH"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "Mobil",
+          "number": "+49 (0)160 95101470",
+          "uri": "tel:+4916095101470"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "Gerald Seidel",
+        "role": "Geschäftsführer"
+      },
+      "mapLink": "https://maps.google.com/maps?q=48.2622247,12.5925867+(Autogalerie%20Seidel%20GmbH)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 48.2622247,
+        "lon": 12.5925867
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=24053420",
+      "country": "DE",
+      "type": "Händler",
+      "numResultsTotal": 9,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=445635165&loanType=balloon&loanDuration=60&downPayment=3199&channel=desktop",
+      "type": "AO",
+      "flowType": "AO",
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 3199,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 12800,
+        "interestRateNominal": 5.26,
+        "interestRateEffective": 5.39,
+        "monthlyInstallment": 168.43,
+        "finalInstallment": 5279.67,
+        "totalInterest": 2416.93,
+        "totalAmount": 15216.93,
+        "localized": {
+          "downPayment": "3.199 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "12.800 €",
+          "interestRateNominal": "5,26%",
+          "interestRateEffective": "5,39%",
+          "monthlyInstallment": "169 €",
+          "finalInstallment": "5.279,67 €",
+          "totalInterest": "2.416,93 €",
+          "totalAmount": "15.216,93 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000 €, effektiver Jahreszins 5,39%, fester Sollzinssatz 5,26% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 143,60 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.772,13 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach"
+        }
+      },
+      "shortFlow": false,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2017c86-4984-4fa4-b098-3a8d8646453d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2017c86-4984-4fa4-b098-3a8d8646453d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e2/e2017c86-4984-4fa4-b098-3a8d8646453d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e2/e2017c86-4984-4fa4-b098-3a8d8646453d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2017c86-4984-4fa4-b098-3a8d8646453d?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota Aygo (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/11/1191df43-fc80-48ca-b991-b0ed1cf53262?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/11/1191df43-fc80-48ca-b991-b0ed1cf53262?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/11/1191df43-fc80-48ca-b991-b0ed1cf53262?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/11/1191df43-fc80-48ca-b991-b0ed1cf53262?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/11/1191df43-fc80-48ca-b991-b0ed1cf53262?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota Aygo (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9f0d1bf-d8a6-412d-bcae-116de6e8cae1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9f0d1bf-d8a6-412d-bcae-116de6e8cae1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d9/d9f0d1bf-d8a6-412d-bcae-116de6e8cae1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d9/d9f0d1bf-d8a6-412d-bcae-116de6e8cae1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9f0d1bf-d8a6-412d-bcae-116de6e8cae1?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota Aygo (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3a4061e-e598-458c-a6ef-6fa9b587e0d8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3a4061e-e598-458c-a6ef-6fa9b587e0d8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e3/e3a4061e-e598-458c-a6ef-6fa9b587e0d8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e3/e3a4061e-e598-458c-a6ef-6fa9b587e0d8?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3a4061e-e598-458c-a6ef-6fa9b587e0d8?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota Aygo (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5da67fe-b92b-4039-a6d6-81ae00adb162?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5da67fe-b92b-4039-a6d6-81ae00adb162?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f5da67fe-b92b-4039-a6d6-81ae00adb162?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f5da67fe-b92b-4039-a6d6-81ae00adb162?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5da67fe-b92b-4039-a6d6-81ae00adb162?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota Aygo (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/da/dad633ec-33ba-47d4-a894-cfdeb5d44e69?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/da/dad633ec-33ba-47d4-a894-cfdeb5d44e69?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/da/dad633ec-33ba-47d4-a894-cfdeb5d44e69?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/da/dad633ec-33ba-47d4-a894-cfdeb5d44e69?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/da/dad633ec-33ba-47d4-a894-cfdeb5d44e69?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota Aygo (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/00/00410cfc-2043-4420-a1e9-5931d728cdd0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/00/00410cfc-2043-4420-a1e9-5931d728cdd0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/00/00410cfc-2043-4420-a1e9-5931d728cdd0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/00/00410cfc-2043-4420-a1e9-5931d728cdd0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/00/00410cfc-2043-4420-a1e9-5931d728cdd0?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota Aygo (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e76ab966-4ecb-4d24-83da-02dcfd796424?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e76ab966-4ecb-4d24-83da-02dcfd796424?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e7/e76ab966-4ecb-4d24-83da-02dcfd796424?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e7/e76ab966-4ecb-4d24-83da-02dcfd796424?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e76ab966-4ecb-4d24-83da-02dcfd796424?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota Aygo (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/74/7441938b-261b-45d7-ba83-18071978d67d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/74/7441938b-261b-45d7-ba83-18071978d67d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/74/7441938b-261b-45d7-ba83-18071978d67d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/74/7441938b-261b-45d7-ba83-18071978d67d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/74/7441938b-261b-45d7-ba83-18071978d67d?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota Aygo (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f1/f1d9e60a-d920-4aed-a4a7-217ed75e9ab8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f1/f1d9e60a-d920-4aed-a4a7-217ed75e9ab8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f1/f1d9e60a-d920-4aed-a4a7-217ed75e9ab8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f1/f1d9e60a-d920-4aed-a4a7-217ed75e9ab8?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f1/f1d9e60a-d920-4aed-a4a7-217ed75e9ab8?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota Aygo (X)"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2017c86-4984-4fa4-b098-3a8d8646453d?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2017c86-4984-4fa4-b098-3a8d8646453d?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpsbsmodelimprovementsv2&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=cossrpcorerecommenderpopularfilterspopularfilters&client.abtests=accwebpublichomegaaa4off&adId=445635165"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=15999&c=SmallCar&ms=24100%3B5&id%21=445635165&vc=Car&sid=24053420"
+    },
+    "vehicleCondition": "used",
+    "make": "Toyota",
+    "model": "Aygo (X)",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "b7ffbaf8-657c-1b8e-8812-3dc63d98ce5b"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Toyota Aygo (X) für 15.999 €",
+    "price_text": "Preis 15.999 € Guter Preis 13.445 € (Netto) , 19% MwSt. Finanzierung Monatsrate ab 169 € Finanzierung berechnen Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Online abschließen Schließe die Finanzierung bequem online von Zuhause ab Online-Kredit Dieses Inserat bietet den Online-Kreditvergleich Unabhängige Finanzierung mit der Bank deiner Wahl Einfach von Zuhause online abschließen Nach wenigen Minuten erhältst du dein persönliches Kreditangebot von verschiedenen Banken",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "Kleinwagen",
+      "Baureihe": "Aygo X",
+      "Ausstattungslinie": "Business Edition",
+      "Fahrzeugnummer": "106790",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "40.990 km",
+      "Hubraum": "998 cm³",
+      "Leistung": "53 kW (72 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Energieverbrauch (komb.) 2": "-- l/100km",
+      "CO₂-Emissionen (komb.) 2": "-- g/km",
+      "Kraftstoffverbrauch 2": "5,7 l/100km (Innenstadt) 4,5 l/100km (Stadtrand) 4,2 l/100km (Landstraße) 5,8 l/100km (Autobahn)",
+      "Anzahl Sitzplätze": "4",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro6d",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "11/2024",
+      "Baujahr": "2024",
+      "Anzahl der Fahrzeughalter": "1",
+      "HU": "02/2028",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Selbstlenkende Systeme, Kamera",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "Celistite Grey",
+      "Farbe": "Grau Metallic",
+      "Innenausstattung": "Stoff",
+      "Gewicht": "1.090 kg",
+      "Zylinder": "3"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 40.990 km • 53 kW (72 PS) • Benzin • Automatik • 11/2024",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2017c86-4984-4fa4-b098-3a8d8646453d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/11/1191df43-fc80-48ca-b991-b0ed1cf53262?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9f0d1bf-d8a6-412d-bcae-116de6e8cae1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3a4061e-e598-458c-a6ef-6fa9b587e0d8?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5da67fe-b92b-4039-a6d6-81ae00adb162?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/da/dad633ec-33ba-47d4-a894-cfdeb5d44e69?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/00/00410cfc-2043-4420-a1e9-5931d728cdd0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e76ab966-4ecb-4d24-83da-02dcfd796424?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/74/7441938b-261b-45d7-ba83-18071978d67d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f1/f1d9e60a-d920-4aed-a4a7-217ed75e9ab8?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2017c86-4984-4fa4-b098-3a8d8646453d?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/11/1191df43-fc80-48ca-b991-b0ed1cf53262?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9f0d1bf-d8a6-412d-bcae-116de6e8cae1?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e3/e3a4061e-e598-458c-a6ef-6fa9b587e0d8?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5da67fe-b92b-4039-a6d6-81ae00adb162?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/da/dad633ec-33ba-47d4-a894-cfdeb5d44e69?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/00/00410cfc-2043-4420-a1e9-5931d728cdd0?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e76ab966-4ecb-4d24-83da-02dcfd796424?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/74/7441938b-261b-45d7-ba83-18071978d67d?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f1/f1d9e60a-d920-4aed-a4a7-217ed75e9ab8?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

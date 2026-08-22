@@ -1,0 +1,237 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=458283239&action=topInCategory&dam=false&ms=24100%3B%3B%3B&od=up&ref=seo&refId=b7ffbaf8-657c-1b8e-8812-3dc63d98ce5b&s=Car&sb=rel&searchId=b7ffbaf8-657c-1b8e-8812-3dc63d98ce5b&vc=Car",
+  "source_id": "458283239",
+  "scraped_at": "2026-07-09T08:11:29+00:00",
+  "scrape_method": "chrome-cdp",
+  "make": "Toyota",
+  "model": "Proace City",
+  "variant": "1.2 Turbo L1 Duty *LED*PDC*DAB*Tempo",
+  "title_de": "Toyota Proace City 1.2 Turbo L1 Duty *LED*PDC*DAB*Tempo",
+  "year": 2024,
+  "first_registration": "12/2024",
+  "mileage_km": 17330,
+  "price_listed_eur": 18580.0,
+  "price_is_gross": true,
+  "vat_deductible": true,
+  "fuel": "Benzina",
+  "gearbox": "Manuale",
+  "power_kw": 81,
+  "power_hp": 110,
+  "body_type": "Andere",
+  "drivetrain": null,
+  "doors": 5,
+  "seats": 2,
+  "color": "Weiß",
+  "color_manufacturer": "ICE WHITE",
+  "interior": "Stoff, Grau",
+  "emission_class": "Euro6d",
+  "co2_g_km": 150.0,
+  "vin": null,
+  "equipment_de": [
+    "ABS",
+    "Abstandswarner",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Elektr. Fensterheber",
+    "Elektr. Seitenspiegel",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Frontantrieb",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Inspektion neu",
+    "LED-Scheinwerfer",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Radio DAB",
+    "Reifendruckkontrolle",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Spurhalteassistent",
+    "Stahlfelgen",
+    "Start/Stopp-Automatik",
+    "Tagfahrlicht",
+    "Tempomat",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "Verkehrszeichenerkennung",
+    "Zentralverriegelung"
+  ],
+  "description_de": "Weitere Ausstattungen: \n Getriebe: Schaltgetriebe\n Technik: Bordcomputer, Start-Stop-Automatik\n Assistenten: Müdigkeitserkennung, Verkehrszeichenerkennung, Fernlichtassistent, Lichtsensor, Notbremsassistent, Berganfahrassistent, Spurhalteassistent, Abstands-/Kollisionswarner\n Komfort: Klimaanlage, Servolenkung, Zentralverriegelung, Elektrischer Fensterheber, Elektrische Aussenspiegel, Tempomat, Park Distance Control, Multifunktionslenkrad, Innenraumfilter, Lordosenstütze, Geschwindigkeitsbegrenzungsanlage, Funkfernbedienung\n Sicht: LED-Hauptscheinwerfer, Tagfahrlicht, Aussenspiegel beheizbar\n Sicherheit: ABS, Airbag, Beifahrer-Airbag, Wegfahrsperre, Seitenairbags, ESP, Antriebsschlupfregelung, Reifendruckkontrolle, Traktionskontrolle, Kopfairbag, Notrufsystem\n Entertainment: Radio, Bluetooth, Freisprecheinrichtung, DAB\n Umwelt: Abgasnorm Euro 6D, Grüne Umweltplakette\n Qualität: Garantie, Scheckheftgepflegt, Dekra Siegel, HUAU neu, Nichtraucherfahrzeug, Inspektion neu\n Sonstiges: Katalysator, Stahlfelgen, Schiebetür rechts\n Weiteres: \n Int.KnNr: 57285-26, \n\nFür sämtliche Fahrzeuge bieten wir Ihnen folgenden Service an:\n\n jedes unserer Fahrzeuge wird durch unsere Werkstatt geprüft! \n individuelle Finanzierungs- und Leasingangebote \n Inzahlungnahme Ihres Gebrauchten \n individuelles Versicherungsangebot \n\nWir freuen uns schon jetzt auf Ihren Besuch!\n \nIrrtümer und Zwischenverkauf vorbehalten. Die Fahrzeugbeschreibung als auch -ausstattung sind vorläufig und unverbindlich und werden in dieser Form nicht automatisch zum Vertragsinhalt.\n\nDer Verkäufer weist darauf hin, dass die Verbrauchsangaben des Herstellers zum Fahrzeug als Neufahrzeug für das vertragsgegenständliche Gebrauchtfahrzeug keine zugesicherten Eigenschaften sind.\n\n quality by dotzilla",
+  "raw_specs": {
+    "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+    "Kategorie": "Andere",
+    "Baureihe": "Mk1",
+    "Fahrzeugnummer": "57285-26",
+    "Verfügbarkeit": "Sofort",
+    "Herkunft": "Deutsche Ausführung",
+    "Kilometerstand": "17.330 km",
+    "Hubraum": "1.199 cm³",
+    "Leistung": "81 kW (110 PS)",
+    "Antriebsart": "Verbrennungsmotor",
+    "Kraftstoffart": "Benzin",
+    "Energieverbrauch (komb.)": "6,7 l/100km",
+    "CO₂-Emissionen (komb.)": "150 g/km",
+    "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+    "Kraftstoffverbrauch": "6,7 l/100km (kombiniert); 7,8 l/100km (Innenstadt); 6,3 l/100km (Stadtrand); 5,7 l/100km (Landstraße); 7,3 l/100km (Autobahn)",
+    "Energiekosten bei 15.000 km Jahresfahrleistung": "1.805 €/Jahr",
+    "Kraftstoffpreis": "1,80 €/l (Jahresdurchschnitt 2024)",
+    "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)": "2.858 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 127 €/t); 1.350 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t); 4.500 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 200 €/t)",
+    "Kraftfahrzeugsteuer": "145 €/Jahr",
+    "Anzahl Sitzplätze": "2",
+    "Anzahl der Türen": "4/5",
+    "Schiebetür": "Schiebetür rechts",
+    "Getriebe": "Schaltgetriebe",
+    "Schadstoffklasse": "Euro6d",
+    "Umweltplakette": "4 (Grün)",
+    "Erstzulassung": "12/2024",
+    "Baujahr": "2024",
+    "Anzahl der Fahrzeughalter": "1",
+    "HU": "Neu",
+    "Klimatisierung": "Klimaanlage",
+    "Einparkhilfe": "Hinten",
+    "Airbags": "Front-, Seiten- und weitere Airbags",
+    "Farbe (Hersteller)": "ICE WHITE",
+    "Farbe": "Weiß",
+    "Innenausstattung": "Stoff, Grau",
+    "Zylinder": "3"
+  },
+  "seller": {},
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5c/5c6b49a5-0255-432c-9ab9-16b0b243540e?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/63/63eec5cc-91df-4d1b-b5f1-bb6595ae2842?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7972005-8ee7-4772-8267-d77dfd72e911?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/15/15a2fec6-3eff-45d5-8d60-c1d977ae85dd?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2b434a6-68e4-4b07-858e-37883f99d9ac?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8c/8c9de819-c0da-4acb-97d3-bc84f72d8038?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/7b/7ba3972a-9cb9-4d49-af6a-e762ae17464f?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a12b7e90-b49b-4402-8275-468b9cf37809?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/87/87fc93a8-392c-4108-a79b-c5039b0f5f32?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/76/7650d289-8291-412e-a3a0-948a6d29ac48?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/fb/fb5d2fbe-59a9-4db6-a4ec-c2162faefa7a?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/9d/9dfd8d1a-6517-4b94-bc38-3700893ed368?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b9/b9b26d6a-15eb-4fcf-a142-74da383ae4ea?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c75d3d29-81d0-43d6-8931-ebaa7077f2c1?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/00/004ea25e-ea46-4be9-9f25-530c44e3e405?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e207099b-8e4a-49d8-90a5-a3eef776e23f?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a6/a62092f2-16c6-491f-b5f1-6c6d01a266cf?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/9a/9aa26a90-76f3-407a-a800-f0044b7a9b60?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/68/68448931-bd04-4d78-8be9-ce3d9291e648?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/40/40675940-3606-4d63-abfe-4b8b64e25875?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f2/f236cbec-232e-434a-b60a-ca18702d31fa?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

@@ -18,6 +18,7 @@ import time
 import argparse
 import urllib.request
 import urllib.error
+import http.client
 
 # Forza stdout/stderr in utf-8 su Windows: senza, qualunque carattere non-ASCII nei print
 # (es. "—") fa crashare con UnicodeEncodeError su cp1252. line_buffering=True e' OBBLIGATORIO:
@@ -69,9 +70,11 @@ def _request(method: str, path: str, key: str, body: dict | None = None, retries
         except urllib.error.HTTPError as e:
             detail = e.read().decode("utf-8", errors="ignore")
             raise SystemExit(f"[!] Errore API reale {method} {path}: HTTP {e.code} — {detail}")
-        except (TimeoutError, urllib.error.URLError) as e:
-            # Timeout di rete transitorio (non un errore dell'API reale): ritenta invece di
-            # far crashare tutto lo script dopo 15+ minuti di generazione gia' completata.
+        except (TimeoutError, urllib.error.URLError, ConnectionError, http.client.RemoteDisconnected) as e:
+            # Timeout/interruzione di rete transitoria (non un errore dell'API reale): ritenta
+            # invece di far crashare tutto lo script dopo 15+ minuti di generazione gia' in
+            # corso. RemoteDisconnected aggiunto il 2026-08-20: un crash reale ha fatto perdere
+            # 20+ minuti di attesa gia' scontata su un job che stava solo aspettando il suo turno.
             last_err = e
             print(f"[!] Timeout di rete su {method} {path} (tentativo {attempt+1}/{retries}): {e}")
             time.sleep(5)
@@ -169,15 +172,83 @@ def build_script_content() -> str:
 # Modello di generazione video AI. `aiVideoClipPercentage` viene ignorato se questo campo NON
 # e' impostato (documentazione ufficiale): e' il motivo per cui il video v10 aveva tutte le
 # scene FERME nonostante il default del 20% — quel 20% non veniva mai applicato.
-AI_VIDEO_MODEL = "runware-kling-2.5-turbo"
+# "runware-kling-2.5-turbo" non e' piu' valido (bug reale trovato il 2026-08-13, chiamata API
+# reale rifiutata con 400 Validation failed): Fliki ha aggiornato la lista modelli. Sostituito
+# con l'erede diretto della stessa famiglia fra quelli accettati dall'API in quel momento.
+AI_VIDEO_MODEL = "runware-kling-2.6-pro"
 AI_VIDEO_CLIP_PERCENTAGE = 100   # tutte le scene come clip in movimento
 IMAGE_ANIMATION_PRESET = "Mix"   # movimento anche su eventuali immagini residue
+
+# Lock anti-sottomissioni-parallele (bug reale 2026-08-19/20): 3 generazioni realistic AI
+# lanciate insieme come 3 processi separati sono rimaste "queued" per 2h45+ senza mai passare a
+# "processing" — nessuna delle 3, non solo le successive alla prima. Ipotesi piu' plausibile
+# (mai confermata da Fliki, l'API non espone credito/limite piano): il piano ha un tetto di
+# generazioni simultanee e l'eccesso resta silenziosamente in coda invece di fallire con un
+# errore chiaro. Questo lock rende impossibile ripetere l'errore per DISEGNO, non per disciplina:
+# nessuna seconda generate/video parte finche' la precedente non e' arrivata a uno stato
+# terminale (success/error) o il lock non e' scaduto da solo.
+LOCK_PATH = os.path.join(FACTORY_DIR, "memory", "fliki_lock.json")
+LOCK_MAX_AGE_S = 3 * 3600  # oltre questa eta' il lock si considera abbandonato (crash/kill del processo che l'ha creato) e si sblocca da solo
+
+
+def _read_lock() -> dict | None:
+    if not os.path.exists(LOCK_PATH):
+        return None
+    try:
+        return json.load(open(LOCK_PATH, encoding="utf-8"))
+    except (json.JSONDecodeError, ValueError):
+        return None
+
+
+def _write_lock(file_id: str, canale: str) -> None:
+    os.makedirs(os.path.dirname(LOCK_PATH), exist_ok=True)
+    with open(LOCK_PATH, "w", encoding="utf-8") as f:
+        json.dump({"file_id": file_id, "canale": canale, "submitted_at": time.time()}, f, indent=2)
+
+
+def clear_lock(file_id_atteso: str | None = None) -> None:
+    """Rimuove il lock. Se file_id_atteso e' dato, cancella solo se combacia (evita che un
+    processo in ritardo cancelli il lock di una generazione piu' recente di un altro processo)."""
+    lock = _read_lock()
+    if lock is None:
+        return
+    if file_id_atteso is not None and lock.get("file_id") != file_id_atteso:
+        return
+    try:
+        os.remove(LOCK_PATH)
+    except OSError:
+        pass
+
+
+def _verifica_nessuna_generazione_in_corso(canale: str, force_parallel: bool) -> None:
+    lock = _read_lock()
+    if lock is None:
+        return
+    eta_s = time.time() - lock.get("submitted_at", 0)
+    if eta_s > LOCK_MAX_AGE_S:
+        print(f"[i] Lock trovato ma vecchio di {eta_s/3600:.1f}h (> {LOCK_MAX_AGE_S/3600:.0f}h): "
+              f"considerato abbandonato, sblocco automatico. fileId precedente: {lock.get('file_id')}")
+        return
+    msg = (f"[!] Generazione Fliki gia' in corso: fileId={lock.get('file_id')} "
+           f"(canale={lock.get('canale')}, sottomessa {eta_s/60:.0f} min fa, non ancora conclusa). "
+           f"Sottomettere una seconda generazione in parallelo e' la causa CONFERMATA del blocco "
+           f"reale del 2026-08-19/20 (3 job simultanei rimasti 'queued' per ore). "
+           f"Aspetta che questa finisca (o usa fliki_poll_only.py {lock.get('file_id')} per "
+           f"riprenderne il polling), oppure passa --force-parallel se sei ASSOLUTAMENTE certo "
+           f"di volerlo fare comunque (consuma credito reale a rischio).")
+    if force_parallel:
+        print(f"[!] --force-parallel: procedo IGNORANDO il lock attivo. {msg}")
+        return
+    raise SystemExit(msg)
 
 
 def generate_video(key: str, content: str, voice_id: str, file_name: str,
                    visuals: str = "stock", art_style: str | None = None,
                    ai_video_model: str | None = None,
-                   clip_percentage: int = AI_VIDEO_CLIP_PERCENTAGE) -> str:
+                   clip_percentage: int = AI_VIDEO_CLIP_PERCENTAGE,
+                   subtitle_preset_id: str = "builtin-legacy-bold",
+                   canale: str = "dosementale", force_parallel: bool = False) -> str:
+    _verifica_nessuna_generazione_in_corso(canale, force_parallel)
     payload = {
         "payload": [{
             "workflowType": "script",
@@ -196,26 +267,37 @@ def generate_video(key: str, content: str, voice_id: str, file_name: str,
             "sceneBreakdown": "lineBreak",
             "fileName": file_name,
             "shouldExport": True,
-            # ⛔ CONFIGURAZIONE APPROVATA DA GAEL — NON MODIFICARE (2026-07-31)
-            # Questi tre valori sono esattamente quelli che hanno prodotto il video v8, che
+            # ⛔ CONFIGURAZIONE APPROVATA DA GAEL — NON MODIFICARE IL DEFAULT (2026-07-31)
+            # Questi valori sono esattamente quelli che hanno prodotto il video v8, che
             # Gael ha giudicato PERFETTO con l'istruzione "non modificare le regole e non
-            # cambiare niente, d'ora in poi falli tutti così".
+            # cambiare niente, d'ora in poi falli tutti così". Il default della funzione resta
+            # bit-per-bit quello approvato — dosementale (e qualunque chiamata senza override
+            # esplicito) non e' toccato da questa modifica.
             #
-            # Avevo proposto di cambiarli (preset piu' grande e highlightSubtitles=False, per
-            # avere frasi intere invece dell'effetto karaoke parola-per-parola): proposta
-            # RESPINTA. L'effetto karaoke e' voluto. Non riproporlo.
+            # Avevo proposto di cambiare preset+highlightSubtitles insieme (preset piu' grande e
+            # highlightSubtitles=False, per avere frasi intere invece dell'effetto karaoke
+            # parola-per-parola): proposta RESPINTA. L'effetto karaoke resta voluto per TUTTI i
+            # canali — non tocco highlightSubtitles qui.
+            #
+            # Override per-canale (Max, 2026-08-15): SOLO il preset (dimensione sottotitoli) puo'
+            # variare per canale via CANALI[canale]['subtitle_preset'] in apex7_orchestrator.py
+            # (risolto in main() e passato come subtitle_preset_id) — legamidiamore usa un preset
+            # diverso da bold, dosementale resta sul default approvato sopra.
             #
             # subtitlePresetId reale ottenuto cliccando "Copy subtitle preset ID" su
             # fliki.ai/info/subtitle via Playwright (non e' nell'HTML statico ne' in nessuna
             # chiamata di rete). I 30 preset reali sono in memory/fliki_subtitle_presets.json
-            # (fliki_subtitle_presets.py) — elencati per riferimento, non per cambiare questo.
-            "subtitlePresetId": "builtin-legacy-bold",
+            # (fliki_subtitle_presets.py) — elencati per riferimento.
+            "subtitlePresetId": subtitle_preset_id,
             "highlightSubtitles": True,
-            # `duration` e' in MINUTI, range reale 1-15 (developer.fliki.ai): 720 e' fuori
-            # range e viene ignorato dall'API — la durata segue la lunghezza del testo. Resta
-            # qui perche' fa parte della configurazione approvata e rimuoverlo, pur essendo
-            # inerte, sarebbe un cambiamento non richiesto.
-            "duration": 720,
+            # `duration` e' in MINUTI, range reale 1-15 (developer.fliki.ai). Il valore 720 era
+            # documentato come "fuori range ma ignorato dall'API" — falso, verificato dal vivo
+            # il 2026-08-19: Fliki ora lo VALIDA sul serio e rifiuta la richiesta con HTTP 400
+            # ("duration must be a number of minutes between 0 and 15") se fuori range. Bug reale
+            # che bloccava OGNI generazione. Il campo resta comunque inerte sulla durata finale
+            # (quella segue la lunghezza del testo/scene) — 15 e' il valore valido piu' vicino
+            # all'intento originale, non un cambiamento di comportamento.
+            "duration": 15,
         }]
     }
     if visuals == "ai":
@@ -237,7 +319,13 @@ def generate_video(key: str, content: str, voice_id: str, file_name: str,
     # gia' caricato li' come modulo condiviso) invece di duplicarne il caricamento.
     sys.path.insert(0, SCRIPT_DIR)
     import apex7_orchestrator as _mod  # noqa: E402
-    esito_config = _mod.REGOLATORI.verifica_configurazione(payload["payload"][0], flag_espliciti={"visuals": visuals})
+    # subtitlePresetId: variante autorizzata SOLO se arriva da CANALI[canale]['subtitle_preset']
+    # (Max, 2026-08-15 — override esplicito legamidiamore, dosementale resta sul default
+    # approvato). Non e' un bypass generico: autorizza esattamente e soltanto il valore che sta
+    # per essere davvero inviato, letto dalla fonte di verita' in apex7_orchestrator.py.
+    esito_config = _mod.REGOLATORI.verifica_configurazione(
+        payload["payload"][0],
+        flag_espliciti={"visuals": visuals, "subtitlePresetId": subtitle_preset_id})
     print(f"[regolatore-configurazione] {esito_config['esito']} — {esito_config['motivo']}")
     if esito_config["esito"] == "BLOCCO":
         raise SystemExit(f"[!] regolatore-configurazione BLOCCO: {esito_config.get('differenze')}")
@@ -248,6 +336,7 @@ def generate_video(key: str, content: str, voice_id: str, file_name: str,
         raise SystemExit(f"[!] Risposta API reale senza filesCreated: {res}")
     file_id = files_created[0]
     print(f"[+] Generazione avviata, fileId={file_id}")
+    _write_lock(file_id, canale)
     return file_id
 
 
@@ -343,13 +432,30 @@ def main():
                     help="Scene in MOVIMENTO invece che immagini ferme. 'nessuno' le lascia fisse.")
     ap.add_argument("--clip-percentage", type=int, default=AI_VIDEO_CLIP_PERCENTAGE,
                     help="Percentuale di scene resa come clip video (0-100).")
+    # Determina il genere voce da CANALI[canale]['voice_gender'] in apex7_orchestrator.py
+    # (dosementale=male invariato, legamidiamore=female — richiesta Max, 2026-08-13). Il
+    # default resta "dosementale" cosi' una chiamata senza --canale esplicito non cambia
+    # comportamento rispetto a prima di questa modifica.
+    ap.add_argument("--canale", choices=["dosementale", "legamidiamore"], default="dosementale",
+                    help="Determina il genere voce dal canale (default: dosementale/maschile, "
+                         "comportamento invariato). Usa 'legamidiamore' per la voce femminile.")
+    ap.add_argument("--force-parallel", action="store_true",
+                    help="Ignora il lock anti-generazioni-simultanee (memory/fliki_lock.json). "
+                         "Causa CONFERMATA del blocco reale 2026-08-19/20 (3 job insieme rimasti "
+                         "'queued' per ore): usalo solo se sei certo di volerlo fare comunque.")
     args = ap.parse_args()
 
     key = _api_key()
     os.makedirs(VIDEOS_DIR, exist_ok=True)
 
     content = build_script_content()
-    voice_id = find_italian_voice(key)
+    sys.path.insert(0, SCRIPT_DIR)
+    import apex7_orchestrator as _mod  # noqa: E402
+    voice_gender = _mod.CANALI[args.canale].get("voice_gender", "male")
+    subtitle_preset_id = _mod.CANALI[args.canale].get("subtitle_preset", "builtin-legacy-bold")
+    print(f"[+] Canale={args.canale} -> genere voce richiesto: {voice_gender}, "
+          f"preset sottotitoli: {subtitle_preset_id}")
+    voice_id = find_italian_voice(key, prefer_gender=voice_gender)
     modello = None if args.ai_video_model == "nessuno" else args.ai_video_model
     if args.visuals == "ai":
         print(f"[+] Visuals: ai (artStyle={args.art_style}, "
@@ -358,8 +464,17 @@ def main():
         print("[+] Visuals: stock (clip di repertorio)")
     file_id = generate_video(key, content, voice_id, args.file_name,
                             visuals=args.visuals, art_style=args.art_style,
-                            ai_video_model=modello, clip_percentage=args.clip_percentage)
-    download_url = poll_status(key, file_id)
+                            ai_video_model=modello, clip_percentage=args.clip_percentage,
+                            subtitle_preset_id=subtitle_preset_id,
+                            canale=args.canale, force_parallel=args.force_parallel)
+    try:
+        download_url = poll_status(key, file_id)
+    finally:
+        # Libera il lock SOLO se e' ancora il nostro fileId (potrebbe gia' essere stato
+        # sostituito da una generazione successiva se questo processo e' rimasto appeso a lungo).
+        # Si libera anche su timeout/errore: un job fallito non deve tenere bloccate le
+        # generazioni successive per altre 3h.
+        clear_lock(file_id)
 
     out_path = os.path.join(VIDEOS_DIR, f"{args.file_name}.mp4")
     download_file(download_url, out_path)

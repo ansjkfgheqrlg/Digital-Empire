@@ -1,0 +1,62 @@
+{
+  "run_id": "AF-20260709-101116-458283239",
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=458283239&action=topInCategory&dam=false&ms=24100%3B%3B%3B&od=up&ref=seo&refId=b7ffbaf8-657c-1b8e-8812-3dc63d98ce5b&s=Car&sb=rel&searchId=b7ffbaf8-657c-1b8e-8812-3dc63d98ce5b&vc=Car",
+  "created_at": "2026-07-09T08:11:16+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "done",
+      "at": "2026-07-09T08:11:39+00:00",
+      "note": ""
+    },
+    "S2_parsing": {
+      "status": "done",
+      "at": "2026-07-09T08:11:39+00:00",
+      "note": ""
+    },
+    "GATE_A": {
+      "status": "passed",
+      "at": "2026-07-09T08:11:39+00:00",
+      "note": ""
+    },
+    "S3_translate_copy": {
+      "status": "done",
+      "at": "2026-07-09T08:11:39+00:00",
+      "note": ""
+    },
+    "GATE_B": {
+      "status": "passed",
+      "at": "2026-07-09T08:11:39+00:00",
+      "note": ""
+    },
+    "S4_pricing": {
+      "status": "done",
+      "at": "2026-07-09T08:11:39+00:00",
+      "note": "Toyota Proace City 1.2 Turbo L1 Duty *LED*PDC*DAB*Tempo 22.137 €"
+    },
+    "GATE_C": {
+      "status": "passed",
+      "at": "2026-07-09T08:11:39+00:00",
+      "note": ""
+    },
+    "S5_pdf_render": {
+      "status": "done",
+      "at": "2026-07-09T08:11:50+00:00",
+      "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260709-101116-458283239\\preventivo_toyota-proace-city.pdf"
+    },
+    "GATE_D": {
+      "status": "passed",
+      "at": "2026-07-09T08:11:51+00:00",
+      "note": ""
+    },
+    "GATE_IMG": {
+      "status": "passed",
+      "at": "2026-07-09T08:11:53+00:00",
+      "note": ""
+    },
+    "GATE_R": {
+      "status": "passed",
+      "at": "2026-07-09T08:11:55+00:00",
+      "note": ""
+    }
+  }
+}

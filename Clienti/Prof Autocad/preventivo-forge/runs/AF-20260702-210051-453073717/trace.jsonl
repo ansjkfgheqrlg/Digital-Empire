@@ -1,0 +1,9 @@
+{"ts": "2026-07-02T19:00:51+00:00", "event": "run_created", "source_url": "https://suchen.mobile.de/auto-inserat/kia-ev2-42-2-kwh-air-5s-air-win-wp-nav-hda2-paderborn/453073717.html"}
+{"ts": "2026-07-02T19:00:51+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-02T19:02:05+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-02T19:02:05+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-02T19:02:06+00:00", "event": "step", "step": "S2_parsing", "status": "done", "note": ""}
+{"ts": "2026-07-02T19:02:06+00:00", "event": "step", "step": "GATE_A", "status": "passed", "note": ""}
+{"ts": "2026-07-02T19:02:06+00:00", "event": "step", "step": "S3_translate_copy", "status": "running", "note": ""}
+{"ts": "2026-07-02T19:02:06+00:00", "event": "step", "step": "S3_translate_copy", "status": "done", "note": ""}
+{"ts": "2026-07-02T19:02:06+00:00", "event": "step", "step": "GATE_B", "status": "blocked", "note": "1 residui tedeschi in content: ['Wärmepumpe']"}

@@ -1,0 +1,586 @@
+{
+  "source_url": "https://suchen.mobile.de/auto-inserat/opel-grandland-edition-mhev-f%C3%BCrth/444005413.html?lst=p",
+  "scraped_at": "2026-07-03T15:46:20+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "-"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "ASSP0000006038192D"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Sofort"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "10 km"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "106 kW (144 PS)"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Hybrid (Benzin/Elektro)"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "5,6 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "128 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-D",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "5,6 l/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "07/2025"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Kamera, Hinten, Vorne"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Stoff, Schwarz"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": true
+    },
+    "shortTitle": "Opel Grandland (X)",
+    "subTitle": "Grandland Edition MHEV",
+    "makeKey": "Opel",
+    "modelKey": "Grandland (X)",
+    "isNew": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "ABS",
+      "Abstandswarner",
+      "Allwetterreifen",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Beheizbares Lenkrad",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Geschwindigkeitsbegrenzer",
+      "Innenspiegel autom. abblendend",
+      "Isofix Beifahrersitz",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Radio DAB",
+      "Reifendruckkontrolle",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Tempomat",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 33448133,
+    "priceRating": {
+      "rating": "INCREASED_PRICE",
+      "ratingLabel": "Erhöhter Preis",
+      "thresholdLabels": [
+        "20.000 €",
+        "25.900 €",
+        "27.900 €",
+        "31.100 €",
+        "33.300 €",
+        "37.100 €"
+      ],
+      "vehiclePriceOffset": 85
+    },
+    "segment": "Car",
+    "title": "Opel Grandland Edition MHEV",
+    "url": "https://suchen.mobile.de/auto-inserat/opel-grandland-edition-mhev-f%C3%BCrth/444005413.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 444005413,
+    "price": {
+      "gross": "32.990 €",
+      "grossAmount": 32990,
+      "grossCurrency": "EUR",
+      "net": "27.723 €",
+      "netAmount": 27722.69,
+      "type": "LEASING_ONLY",
+      "vat": "19% MwSt."
+    },
+    "customDimensions": {
+      "10": "bronze",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "NA_NA_4_NA_NA_languages_NA"
+    },
+    "htmlDescription": "Grandland Edition MHEV<br><br>Irrtümer und Zwischenverkauf vorbehalten !<hr><br> <br> *  Klimaautomatik<br>*  LED-Scheinwerfer<br>*  Parkhilfe(PDC) vorne + hinten<br>*  Start/Stop-Automatik<br>*  Spurassistent<br>*  Keyless Entry (Open&amp;Start)<br>*  Verkehrszeichenerkennung<br>*  Bluetooth(f. Handy)<br>*  Media Connector<br>*  Elekt. Heckklappe<br>*  el. Fensterheber vorne+hinten<br>*  Aussenspiegel elektr. anklappbar<br>*  Zentralverriegelung<br>*  VirtualCockpit<br>*  Automatik<br>*  Uhr&amp;Drehzahlmesser<br>*  Aussenspiegel el. verstellbar und beheizbar<br>*  Aussenspiegel el. verstellbar<br>*  Lenkradheizung<br>*  Müdigkeitswarnsystem<br>*  Touchscreen<br>*  USB<br>*  Abstandwarner<br>*  Android Auto<br>*  Apple CarPlay<br>*  Allwetterreifen<br>*  Fahrersitz höhenverstellbar<br>*  Audiosystem MP3-fähig<br>*  Rücksitzbank geteilt klappbar<br>*  Scheckheftgepflegt<br>*  Kopfairbag<br>*  beheizte Aussenspiegel<br>*  Lordosenstütze<br>*  Sitzheizung<br>*  metallic<br>*  Tempomat<br>*  Leichtmetallfelgen<br>*  Stabilitätsprogramm (ESP)<br>*  ABS<br>*  Seitenairbags<br>*  Frontairbag<br>*  Bordcomputer<br>*  Nichtraucher<br>*  Servolenkung<br>*  Multifunktionslenkrad<br>*  Lichtsensor<br>*  Berganfahrhilfe<br>*  Lederlenkrad<br>*  elektr. Parkbremse<br>*  Mittelarmlehne<br>*  Reifendruckkontrolle<br>*  E10 geeignet<br>*  Rückfahrkamera<br>*  Sonnenschutzverglasung<br>*  Wegfahrsperre<br>*  Traktionskontrolle<br>*   <br><hr> Als Vertragshändler bieten wir Ihnen besten Service und kompetente Beratung zu allen Fragen rund ums Automobil. Bitte kontaktieren Sie uns<br>*  wir freuen uns auf Ihren Anruf. <br>",
+    "contactInfo": {
+      "address1": "Seeackerstr. 55",
+      "address2": "DE-90765 Fürth",
+      "name": "Autohaus Kropf GmbH",
+      "openingHours": [
+        {
+          "time": "08:30 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "09:00 Uhr - 13:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 10.10.2023",
+      "rating": {
+        "count": 2,
+        "totalCount": 3,
+        "score": 5,
+        "scoreLocalized": "5,0",
+        "link": "https://www.mobile.de/bewertungen/AutohausKropfGmbHFuerth?lang=de",
+        "recommendationRate": 100,
+        "adRealityRate": 100,
+        "consultingScore": 5,
+        "friendlinessScore": 5,
+        "responseTimeScore": 5
+      },
+      "languages": "Deutsch, English, Türkçe",
+      "hasContactPhones": false,
+      "phones": [],
+      "sellerType": "DEALER",
+      "person": {},
+      "mapLink": "https://maps.google.com/maps?q=49.4972842,11.0021629+(Autohaus%20Kropf%20GmbH)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 49.4972842,
+        "lon": 11.0021629
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=33448133",
+      "country": "DE",
+      "type": "Händler",
+      "numResultsTotal": 60,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "deal": {
+      "types": [
+        "LEASING_CURATED",
+        "DEAL"
+      ],
+      "badge": {
+        "tag": "DEAL",
+        "colorScheme": "default"
+      },
+      "leasingBadge": {
+        "tag": "DEAL",
+        "colorScheme": "default"
+      }
+    },
+    "financePlan": null,
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d86ea26-30a4-4b7f-8d1f-087fb5ecbb38?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d86ea26-30a4-4b7f-8d1f-087fb5ecbb38?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4d/4d86ea26-30a4-4b7f-8d1f-087fb5ecbb38?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4d/4d86ea26-30a4-4b7f-8d1f-087fb5ecbb38?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d86ea26-30a4-4b7f-8d1f-087fb5ecbb38?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/31/313a6df0-ee24-41a3-ac13-123493eec539?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/31/313a6df0-ee24-41a3-ac13-123493eec539?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/31/313a6df0-ee24-41a3-ac13-123493eec539?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/31/313a6df0-ee24-41a3-ac13-123493eec539?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/31/313a6df0-ee24-41a3-ac13-123493eec539?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/99/994bb673-14f2-47de-8587-f098a158d152?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/99/994bb673-14f2-47de-8587-f098a158d152?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/99/994bb673-14f2-47de-8587-f098a158d152?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/99/994bb673-14f2-47de-8587-f098a158d152?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/99/994bb673-14f2-47de-8587-f098a158d152?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/2b/2b5c0567-6975-4471-b806-db4a80ddf76c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/2b/2b5c0567-6975-4471-b806-db4a80ddf76c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/2b/2b5c0567-6975-4471-b806-db4a80ddf76c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/2b/2b5c0567-6975-4471-b806-db4a80ddf76c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/2b/2b5c0567-6975-4471-b806-db4a80ddf76c?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d86ea26-30a4-4b7f-8d1f-087fb5ecbb38?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d86ea26-30a4-4b7f-8d1f-087fb5ecbb38?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=accwebpublichomegaaa4on&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpcorerecommenderpopularfilterspopularfilters&client.abtests=cossrpsbsmodelimprovementscontrol&adId=444005413"
+    },
+    "similarAdsInfo": {
+      "type": "similar-ads",
+      "apiParams": "/ml-recommendations-by-id/444005413"
+    },
+    "vehicleCondition": "used",
+    "make": "Opel",
+    "model": "Grandland (X)",
+    "leasingRate": {
+      "type": "PRIVATE",
+      "downPayment": 0,
+      "termOfContract": 36,
+      "annualMileage": 5000,
+      "grossRate": 169,
+      "leasingFactor": 0.43,
+      "netLoanAmount": 39640,
+      "totalAmount": 6084,
+      "annualPercentageRate": 0,
+      "nominalInterestRate": 0,
+      "destinationCharges": 1295
+    },
+    "leasingDetails": {
+      "grossListPrice": 39639,
+      "vatRate": 19,
+      "lender": "Stellantis Bank SA Niederlassung Deutschland, Siemensstraße 10, 63263 Neu-Isenburg",
+      "rates": [
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 5000,
+          "grossRate": 169,
+          "leasingFactor": 0.43,
+          "netLoanAmount": 39640,
+          "totalAmount": 6084,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 1295
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 5000,
+          "grossRate": 219,
+          "leasingFactor": 0.55,
+          "netLoanAmount": 39640,
+          "totalAmount": 10512,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 1295
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 10000,
+          "grossRate": 199,
+          "leasingFactor": 0.5,
+          "netLoanAmount": 39640,
+          "totalAmount": 7164,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 1295
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 10000,
+          "grossRate": 239,
+          "leasingFactor": 0.6,
+          "netLoanAmount": 39640,
+          "totalAmount": 11472,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 1295
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 15000,
+          "grossRate": 229,
+          "leasingFactor": 0.58,
+          "netLoanAmount": 39640,
+          "totalAmount": 8244,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 1295
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 15000,
+          "grossRate": 259,
+          "leasingFactor": 0.65,
+          "netLoanAmount": 39640,
+          "totalAmount": 12432,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 1295
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 20000,
+          "grossRate": 259,
+          "leasingFactor": 0.65,
+          "netLoanAmount": 39640,
+          "totalAmount": 9324,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 1295
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 20000,
+          "grossRate": 279,
+          "leasingFactor": 0.7,
+          "netLoanAmount": 39640,
+          "totalAmount": 13392,
+          "annualPercentageRate": 0,
+          "nominalInterestRate": 0,
+          "destinationCharges": 1295
+        }
+      ],
+      "specialConditions": {},
+      "dealType": "CLASSIC"
+    },
+    "leasingSpecialConditions": {},
+    "partnerLinks": null,
+    "isLeasingOnlyAd": true
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/opel.html",
+            "name": "Opel"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/opel-grandland-x.html",
+            "name": "Grandland (X)"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Opel Grandland (X) für 32.990 €",
+    "price_text": "Preis 169 € mtl. ( inkl. MwSt. 4 ) Anschaffungszweck Privat Laufzeit ändern 36 Monate Fahrleistung ändern 5.000 km Anzahlung 0 € Leasingangebot anfragen Leasingdetails Leasingbeispiel Nettodarlehensbetr. (Anschaffungspreis) 39.640 € Anzahlung 0 € Fahrleistung pro Jahr 5.000 km Laufzeit 36 Monate 36 Monatsraten à 169 € Leasing-Gesamtbetrag 6.084 € Zusätzliche Informationen Bruttolistenpreis 39.639 € Bereitstellungskosten 1.295 € Zulassungskosten Keine Angabe Mehr-Kilometer-Kosten Keine Angabe Minder-Kilometer-Vergütung Keine Angabe Ein unverbindliches Leasingangebot der Stellantis Bank SA Niederlassung Deutschland, Siemensstraße 10, 63263 Neu-Isenburg , Bonität vorausgesetzt . Die Angaben entsprechen zugleich dem 2/3 Beispiel nach §17 Abs. 4 PangV. Es besteht ein gesetzliches Widerrufsrecht für Verbraucher. 3 Diese Angaben gelten für das Angebot ohne Anzahlung. 4 Dieses Angebot richtet sich nur an Kunden in Deutschland.",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Ausstattungslinie": "-",
+      "Fahrzeugnummer": "ASSP0000006038192D",
+      "Verfügbarkeit": "Sofort",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "10 km",
+      "Leistung": "106 kW (144 PS)",
+      "Kraftstoffart": "Hybrid (Benzin/Elektro)",
+      "Energieverbrauch (komb.) 2": "5,6 l/100km",
+      "CO₂-Emissionen (komb.) 2": "128 g/km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Kraftstoffverbrauch 2": "5,6 l/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Erstzulassung": "07/2025",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Kamera, Hinten, Vorne",
+      "Innenausstattung": "Stoff, Schwarz",
+      "Nettodarlehensbetr. (Anschaffungspreis)": "39.640 €",
+      "Anzahlung": "0 €",
+      "Fahrleistung pro Jahr": "5.000 km",
+      "Laufzeit": "36 Monate",
+      "36 Monatsraten à": "169 €",
+      "Leasing-Gesamtbetrag": "6.084 €",
+      "Bruttolistenpreis": "39.639 €",
+      "Bereitstellungskosten": "1.295 €",
+      "Zulassungskosten": "Keine Angabe",
+      "Mehr-Kilometer-Kosten": "Keine Angabe",
+      "Minder-Kilometer-Vergütung": "Keine Angabe"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 10 km • 106 kW (144 PS) • Hybrid (Benzin/Elektro) • Automatik • 07/2025",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d86ea26-30a4-4b7f-8d1f-087fb5ecbb38?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/31/313a6df0-ee24-41a3-ac13-123493eec539?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/99/994bb673-14f2-47de-8587-f098a158d152?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2b/2b5c0567-6975-4471-b806-db4a80ddf76c?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d86ea26-30a4-4b7f-8d1f-087fb5ecbb38?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/31/313a6df0-ee24-41a3-ac13-123493eec539?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/99/994bb673-14f2-47de-8587-f098a158d152?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/2b/2b5c0567-6975-4471-b806-db4a80ddf76c?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

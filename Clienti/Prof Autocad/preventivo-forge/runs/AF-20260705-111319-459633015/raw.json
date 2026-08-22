@@ -1,0 +1,883 @@
+{
+  "source_url": "https://m.mobile.de/auto-inserat/mercedes-benz-cla-200-shooting-brake-automat-pano-nav-led-dist-mannheim/459633015.html?ref=seo&refId=cb916ebb-4bd0-784a-078c-f098936d186c&searchId=cb916ebb-4bd0-784a-078c-f098936d186c&type=ad",
+  "scraped_at": "2026-07-05T09:13:40+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug"
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Kombi"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "N435095"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "84.800 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.595 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "115 kW (156 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "09/2016"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "2"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "Klimaanlage"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Selbstlenkende Systeme, Hinten, Vorne"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "JUPITERROT"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Rot"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Vollleder, Schwarz"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "1.400 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "730 kg"
+      },
+      {
+        "label": "Stützlast",
+        "tag": "maxNoseWeight",
+        "value": "75 kg"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.430 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      }
+    ],
+    "mediaGallery": {
+      "youtubeId": "wAsqHpWm6hg",
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Mercedes-Benz CLA 200 Shooting Brake",
+    "subTitle": "CLA 200 SHOOTING BRAKE AUTOMAT+PANO+NAV+LED+DIST",
+    "makeKey": "Mercedes-Benz",
+    "modelKey": "CLA 200 Shooting Brake",
+    "isNew": false,
+    "isConditionNew": false,
+    "features": [
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Ambiente-Beleuchtung",
+      "Anhängerkupplung schwenkbar",
+      "Armlehne",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "CD-Spieler",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Freisprecheinrichtung",
+      "Frontantrieb",
+      "Garantie",
+      "Gepäckraumabtrennung",
+      "Geschwindigkeitsbegrenzer",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Panorama-Dach",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Scheckheftgepflegt",
+      "Servolenkung",
+      "Sitzheizung",
+      "Soundsystem",
+      "Sportpaket",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Start/Stopp-Automatik",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Winterpaket",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "DISTRONIC PRO",
+      "AktivPark,E-Heckklappe",
+      "Regelmässige Wartung"
+    ],
+    "sellerId": 9564498,
+    "priceRating": {
+      "rating": "GOOD_PRICE",
+      "ratingLabel": "Guter Preis",
+      "thresholdLabels": [
+        "13.800 €",
+        "17.900 €",
+        "19.300 €",
+        "21.500 €",
+        "23.000 €",
+        "25.600 €"
+      ],
+      "vehiclePriceOffset": 55
+    },
+    "segment": "Car",
+    "title": "Mercedes-Benz CLA 200 SHOOTING BRAKE AUTOMAT+PANO+NAV+LED+DIST",
+    "url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-cla-200-shooting-brake-automat-pano-nav-led-dist-mannheim/459633015.html",
+    "vc": "Car",
+    "category": "EstateCar",
+    "id": 459633015,
+    "price": {
+      "gross": "18.680 €",
+      "grossAmount": 18680,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "kba": {
+      "hsn": "1313",
+      "tsn": "ELH"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_logo_25_name_photo_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "Mercedes-Benz CLA Shooting Brake – Jupiterrot. Pure Dynamik auf den ersten Blick<br><br>Der <b>Mercedes-Benz CLA Shooting Brake</b> in Jupiterrot ist kein Fahrzeug für Zurückhaltung. Seine aggressive Linienführung, die tiefe Silhouette und die kraftvolle Ausstrahlung machen sofort klar: Hier geht es um Performance, Emotion und Fahrspaß.<br>Ein Shooting Brake, der die Alltagstauglichkeit eines Kombis mit der DNA eines Sportwagens verbindet. Jede Fahrt fühlt sich direkter an, jede Kurve intensiver – genau so, wie man es von einem sportlich geprägten Mercedes erwartet.<br><br>Vielen Dank für Ihr Interesse an unserem Fahrzeug. Wir sind gerne persönlich für Sie da. Sie erreichen uns telefonisch, per Mail und per WhatsApp (Chat oder Videoanruf).<br><hr>Performance &amp; Fahrgefühl<ul><li>Panoramaglasschiebedach ohne Funktion</li><li>7-Gang Doppelkupplungsgetriebe – schnelle, präzise Schaltvorgänge</li><li>Sportliches Fahrverhalten mit direkter Rückmeldung</li><li>DISTRONIC PRO – dynamisches Fahren mit Komfort</li><li>Tempomat mit Geschwindigkeitsbegrenzer</li></ul><hr><b>Interieur – sportlich und hochwertig</b><ul><li>Leder-/Stoff Innenausstattung anthrazit</li><li>Sportsitze vorne mit Lordosestütze</li><li>Sitzheizung vorne</li><li>Sportlederlenkrad mit Multifunktion &amp; Schaltwippen</li><li>Mittelarmlehne vorne</li><li>Elektrische Fensterheber vorne &amp; hinten</li></ul><b>Infotainment &amp; Navigation</b><br><ul><li>Navigationssystem mit Farbdisplay</li><li>Radio mit CD-Spieler &amp; USB-Anschluss</li><li>Bluetooth Freisprecheinrichtung &amp; Musikstreaming</li></ul><b>Assistenz &amp; Sicherheit</b><br><ul><li>Aktives Parksystem mit PDC vorne &amp; hinten</li><li>ABS &amp; ESP</li><li>7 Airbags inkl. Knieairbag</li><li>ISOFIX Kindersitzbefestigung</li></ul><b>Licht &amp; Sicht</b><br><ul><li>LED High Performance Scheinwerfer</li><li>LED-Tagfahrlicht</li><li>Licht- &amp; Regensensor</li><li>Bordcomputer mit Außentemperaturanzeige</li></ul><b>Exterieur – Ausdruck purer Sportlichkeit</b><br><ul><li>18'' Leichtmetallräder im Dreifachspeichen-Design anthrazit</li><li>Jupiterrote Lackierung mit starker Präsenz</li><li>Elektrische Heckklappe</li><li>Anhängerkupplung schwenkbar</li><li>Colorverglasung</li><li>Elektrisch anklappbare &amp; beheizbare Außenspiegel</li></ul><b>Technik</b><br><ul><li>Start-/Stop-Automatik</li><li>Servolenkung</li><li>Geteilte Rücksitzbank</li></ul><hr>Zustand: Sehr gepflegtes Fahrzeug mit regelmäßig durchgeführten Wartungen.<br>Ein CLA Shooting Brake, der sowohl optisch als auch fahrdynamisch überzeugt.<br><hr>Warum dieser CLA? Markantes Design mit echtem Sportcharakter.<br>Dynamik, die man sieht und fühlt.<br>Alltagstauglich – aber alles andere als gewöhnlich.<br>Ein Fahrzeug für Fahrer, die mehr wollen als nur von A nach B zu kommen.<br><hr>Unser Service für Sie: Wir bieten Ihnen mehr als 30 Jahre Automobilerfahrung.<br>Gerne nehmen wir Ihr aktuelles Fahrzeug oder Motorrad in Zahlung. Auf Wunsch erstellen wir Ihnen ein individuelles Finanzierungs- oder Leasingangebot.<br>Für ausgewählte Fahrzeuge besteht optional die Möglichkeit einer Gebrauchtwagengarantie von bis zu 60 Monaten. Auf Anfrage holen wir Sie vom Bahnhof in Mannheim ab.<br>Die Fahrzeugüberführung erfolgt flexibel per Kurzzeitkennzeichen oder bundesweit direkt zu Ihnen nach Hause. Erleben Sie diesen CLA persönlich.<br><hr>Hinweise<ul><li>Alle Angaben sind trotz sorgfältiger Prüfung ohne Gewähr</li><li>Inserats- oder Tippfehler sowie Zwischenverkauf vorbehalten</li></ul><hr>Für weitere Fragen oder zur Terminvereinbarung stehen wir Ihnen jederzeit gerne zur Verfügung.<br><hr> ... Reifendruckanzeige, Start/Stop-Automatik, Tagfahrlicht, Berganfahrhilfe, Reifendruckverlust-Warnung, Freisprecheinrichtung Bluetooth, Einparkautomatik (selbstlenkend), Doppelkupplungsgetriebe, Lenkrad-Schaltpaddles, ISOFIX (Kindersitz), LED-Scheinwerfer, LED-Blinkleuchten, Tagfahrlicht-LED, Panoramadach, Bluetooth, MP3-Schnittstelle, Einparkhilfe-Sensor vorn, Einparkhilfe-Sensor hinten, Sportpaket, Airbag Knie, Freisprecheinrichtung",
+    "contactInfo": {
+      "address1": "Radeberger Straße 1",
+      "address2": "DE-68309 Mannheim",
+      "name": "Reffgen & Schmuck Automobile GmbH",
+      "markingText": "<div><b>Wir sind Montag bis Freitag von 9.00 - 18.00 Uhr und Samstag 9.00 - 14.00 Uhr für Sie da.</b><br /></div><div><hr /><b>Wir freuen uns über Ihren Besuch oder telefonischen Kontakt!</b><br /></div><div><br /></div><div><b>Benjamin Müller, Steffen Reffgen und Michael Schmuck</b><br /></div>",
+      "openingHours": [
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mo"
+        },
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Di"
+        },
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mi"
+        },
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Do"
+        },
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Fr"
+        },
+        {
+          "time": "09:00 Uhr - 14:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 21.03.2013",
+      "rating": {
+        "count": 12,
+        "totalCount": 274,
+        "score": 4.8,
+        "scoreLocalized": "4,8",
+        "link": "https://www.mobile.de/bewertungen/REFFGENSCHMUCKAUTOMOBILEGMBHCOKG?lang=de",
+        "recommendationRate": 91,
+        "adRealityRate": 90,
+        "consultingScore": 4.666666666666667,
+        "friendlinessScore": 4.833333333333333,
+        "responseTimeScore": 5
+      },
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad56b323-5323-4125-8740-d32c4d0eb8bc?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad56b323-5323-4125-8740-d32c4d0eb8bc?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/ad/ad56b323-5323-4125-8740-d32c4d0eb8bc?rule=mo-360 360w",
+        "alt": "Reffgen & Schmuck Automobile GmbH"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)621 76222313",
+          "uri": "tel:+4962176222313"
+        },
+        {
+          "type": "2. Tel-Nr.",
+          "number": "+49 (0)621 76223617",
+          "uri": "tel:+4962176223617"
+        },
+        {
+          "type": "Mobil",
+          "number": "+49 (0)1523 8214176",
+          "uri": "tel:+4915238214176"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 621 76223465"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "logo": {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa451245-e55c-4c8f-afd5-da18d4a8e947?rule=mo-80",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa451245-e55c-4c8f-afd5-da18d4a8e947?rule=mo-80 80w, https://img.classistatic.de/api/v1/mo-prod/images/fa/fa451245-e55c-4c8f-afd5-da18d4a8e947?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/fa/fa451245-e55c-4c8f-afd5-da18d4a8e947?rule=mo-240 240w"
+        },
+        "name": "Benjamin Müller",
+        "role": "Verkauf"
+      },
+      "mapLink": "https://maps.google.com/maps?q=49.5149944,8.5502054+(Reffgen%20%26%20Schmuck%20Automobile%20GmbH)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 49.5149944,
+        "lon": 8.5502054
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=9564498",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/88/8812de60-7ee7-40ef-9471-f09a951beba7?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/88/8812de60-7ee7-40ef-9471-f09a951beba7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/88/8812de60-7ee7-40ef-9471-f09a951beba7?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/88/8812de60-7ee7-40ef-9471-f09a951beba7?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/88/8812de60-7ee7-40ef-9471-f09a951beba7?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/90/9053d509-0c71-4095-b59d-c7b092abf069?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/90/9053d509-0c71-4095-b59d-c7b092abf069?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/90/9053d509-0c71-4095-b59d-c7b092abf069?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/90/9053d509-0c71-4095-b59d-c7b092abf069?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/90/9053d509-0c71-4095-b59d-c7b092abf069?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f529bbf9-bfe6-4c77-9b87-86878b32c871?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f529bbf9-bfe6-4c77-9b87-86878b32c871?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f529bbf9-bfe6-4c77-9b87-86878b32c871?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f529bbf9-bfe6-4c77-9b87-86878b32c871?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f529bbf9-bfe6-4c77-9b87-86878b32c871?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f910a699-187f-40a5-aab3-889860cf4416?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f910a699-187f-40a5-aab3-889860cf4416?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f910a699-187f-40a5-aab3-889860cf4416?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f910a699-187f-40a5-aab3-889860cf4416?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f910a699-187f-40a5-aab3-889860cf4416?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb4e8aae-a17c-4cd6-968a-41b268eb80be?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb4e8aae-a17c-4cd6-968a-41b268eb80be?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bb/bb4e8aae-a17c-4cd6-968a-41b268eb80be?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bb/bb4e8aae-a17c-4cd6-968a-41b268eb80be?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 80,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=459633015&loanType=balloon&loanDuration=60&downPayment=3736&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 3736,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 14944,
+        "interestRateNominal": 5.83,
+        "interestRateEffective": 5.99,
+        "monthlyInstallment": 169.17,
+        "finalInstallment": 8406,
+        "totalInterest": 3443.14,
+        "totalAmount": 18387.14,
+        "localized": {
+          "downPayment": "3.736 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "14.944 €",
+          "interestRateNominal": "5,83%",
+          "interestRateEffective": "5,99%",
+          "monthlyInstallment": "170 €",
+          "finalInstallment": "8.406,00 €",
+          "totalInterest": "3.443,14 €",
+          "totalAmount": "18.387,14 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/00/0077a2b0-36f9-402f-8f59-fd150535f391?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/00/0077a2b0-36f9-402f-8f59-fd150535f391?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/00/0077a2b0-36f9-402f-8f59-fd150535f391?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/00/0077a2b0-36f9-402f-8f59-fd150535f391?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/00/0077a2b0-36f9-402f-8f59-fd150535f391?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9a/9a589f87-113a-4eab-8ff6-5624718d0474?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9a/9a589f87-113a-4eab-8ff6-5624718d0474?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/9a/9a589f87-113a-4eab-8ff6-5624718d0474?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/9a/9a589f87-113a-4eab-8ff6-5624718d0474?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/9a/9a589f87-113a-4eab-8ff6-5624718d0474?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4b/4b25b5ce-9e5b-4473-b050-52823ef4989e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4b/4b25b5ce-9e5b-4473-b050-52823ef4989e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4b/4b25b5ce-9e5b-4473-b050-52823ef4989e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4b/4b25b5ce-9e5b-4473-b050-52823ef4989e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4b/4b25b5ce-9e5b-4473-b050-52823ef4989e?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1bb9f78-2216-4221-a772-7764180a9247?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1bb9f78-2216-4221-a772-7764180a9247?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a1/a1bb9f78-2216-4221-a772-7764180a9247?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a1/a1bb9f78-2216-4221-a772-7764180a9247?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1bb9f78-2216-4221-a772-7764180a9247?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/34/341fc1b9-dd05-47da-b88e-1ea4def66b85?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/34/341fc1b9-dd05-47da-b88e-1ea4def66b85?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/34/341fc1b9-dd05-47da-b88e-1ea4def66b85?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/34/341fc1b9-dd05-47da-b88e-1ea4def66b85?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/34/341fc1b9-dd05-47da-b88e-1ea4def66b85?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4c/4c10826a-2bcc-411a-b46c-7d94bffb6e58?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4c/4c10826a-2bcc-411a-b46c-7d94bffb6e58?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4c/4c10826a-2bcc-411a-b46c-7d94bffb6e58?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4c/4c10826a-2bcc-411a-b46c-7d94bffb6e58?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4c/4c10826a-2bcc-411a-b46c-7d94bffb6e58?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/36/366719ba-819f-4e02-a0a2-eb58aaab616c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/36/366719ba-819f-4e02-a0a2-eb58aaab616c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/36/366719ba-819f-4e02-a0a2-eb58aaab616c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/36/366719ba-819f-4e02-a0a2-eb58aaab616c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/36/366719ba-819f-4e02-a0a2-eb58aaab616c?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/29/29eccc31-6d39-4371-adeb-7c9b96565471?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/29/29eccc31-6d39-4371-adeb-7c9b96565471?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/29/29eccc31-6d39-4371-adeb-7c9b96565471?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/29/29eccc31-6d39-4371-adeb-7c9b96565471?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/29/29eccc31-6d39-4371-adeb-7c9b96565471?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/37/37aa31f1-7661-44d7-89d4-4be23b7acfef?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/37/37aa31f1-7661-44d7-89d4-4be23b7acfef?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/37/37aa31f1-7661-44d7-89d4-4be23b7acfef?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/37/37aa31f1-7661-44d7-89d4-4be23b7acfef?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/37/37aa31f1-7661-44d7-89d4-4be23b7acfef?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f640a721-a867-41a7-8599-ece83b4d74e6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f640a721-a867-41a7-8599-ece83b4d74e6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f6/f640a721-a867-41a7-8599-ece83b4d74e6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f6/f640a721-a867-41a7-8599-ece83b4d74e6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f640a721-a867-41a7-8599-ece83b4d74e6?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/54/54fdd1c4-9ee2-4f0c-9ab0-6d0b4acb90cc?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/54/54fdd1c4-9ee2-4f0c-9ab0-6d0b4acb90cc?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/54/54fdd1c4-9ee2-4f0c-9ab0-6d0b4acb90cc?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/54/54fdd1c4-9ee2-4f0c-9ab0-6d0b4acb90cc?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/54/54fdd1c4-9ee2-4f0c-9ab0-6d0b4acb90cc?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba0b3eac-3e22-47c9-8692-896475a00f9e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba0b3eac-3e22-47c9-8692-896475a00f9e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ba/ba0b3eac-3e22-47c9-8692-896475a00f9e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ba/ba0b3eac-3e22-47c9-8692-896475a00f9e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba0b3eac-3e22-47c9-8692-896475a00f9e?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0597fcf-ed1d-4277-bb7f-ecdc8fad246e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0597fcf-ed1d-4277-bb7f-ecdc8fad246e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b0/b0597fcf-ed1d-4277-bb7f-ecdc8fad246e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b0/b0597fcf-ed1d-4277-bb7f-ecdc8fad246e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0597fcf-ed1d-4277-bb7f-ecdc8fad246e?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/62/6233f722-d285-42a8-8709-871dc8f0eb0d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/62/6233f722-d285-42a8-8709-871dc8f0eb0d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/62/6233f722-d285-42a8-8709-871dc8f0eb0d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/62/6233f722-d285-42a8-8709-871dc8f0eb0d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/62/6233f722-d285-42a8-8709-871dc8f0eb0d?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ba/baecc4a6-2947-427f-adf0-788e363fdd9e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ba/baecc4a6-2947-427f-adf0-788e363fdd9e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ba/baecc4a6-2947-427f-adf0-788e363fdd9e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ba/baecc4a6-2947-427f-adf0-788e363fdd9e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ba/baecc4a6-2947-427f-adf0-788e363fdd9e?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c89f1b8b-f520-4232-b682-8e24777846be?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c89f1b8b-f520-4232-b682-8e24777846be?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c8/c89f1b8b-f520-4232-b682-8e24777846be?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c8/c89f1b8b-f520-4232-b682-8e24777846be?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c89f1b8b-f520-4232-b682-8e24777846be?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/48/4881389c-256f-4c4c-b9d5-fda7d88d3a2e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/48/4881389c-256f-4c4c-b9d5-fda7d88d3a2e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/48/4881389c-256f-4c4c-b9d5-fda7d88d3a2e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/48/4881389c-256f-4c4c-b9d5-fda7d88d3a2e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/48/4881389c-256f-4c4c-b9d5-fda7d88d3a2e?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/30/30b7d34b-bda1-4b56-ab49-5723f5469730?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/30/30b7d34b-bda1-4b56-ab49-5723f5469730?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/30/30b7d34b-bda1-4b56-ab49-5723f5469730?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/30/30b7d34b-bda1-4b56-ab49-5723f5469730?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/30/30b7d34b-bda1-4b56-ab49-5723f5469730?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/85/85450514-7174-4020-9bf1-7c87ec2d0ac2?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/85/85450514-7174-4020-9bf1-7c87ec2d0ac2?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/85/85450514-7174-4020-9bf1-7c87ec2d0ac2?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/85/85450514-7174-4020-9bf1-7c87ec2d0ac2?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/85/85450514-7174-4020-9bf1-7c87ec2d0ac2?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9d/9dab3b78-ef6f-400a-ba60-1f8ff833d2c8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9d/9dab3b78-ef6f-400a-ba60-1f8ff833d2c8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/9d/9dab3b78-ef6f-400a-ba60-1f8ff833d2c8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/9d/9dab3b78-ef6f-400a-ba60-1f8ff833d2c8?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/9d/9dab3b78-ef6f-400a-ba60-1f8ff833d2c8?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/92/9227c66b-3b24-440b-bde7-8233ef731023?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/92/9227c66b-3b24-440b-bde7-8233ef731023?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/92/9227c66b-3b24-440b-bde7-8233ef731023?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/92/9227c66b-3b24-440b-bde7-8233ef731023?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/92/9227c66b-3b24-440b-bde7-8233ef731023?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz CLA 200 Shooting Brake"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/00/0077a2b0-36f9-402f-8f59-fd150535f391?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/00/0077a2b0-36f9-402f-8f59-fd150535f391?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=accwebpublichomegaaa4on&client.abtests=cossrpsbsmodelimprovementscontrol&client.abtests=cossrpcorerecommenderpopularfiltersoff&adId=459633015"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=18680&c=EstateCar&ms=17200%3B256&id%21=459633015&vc=Car&sid=9564498"
+    },
+    "vehicleCondition": "used",
+    "make": "Mercedes-Benz",
+    "model": "CLA 200 Shooting Brake",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/mercedes-benz.html",
+            "name": "Mercedes-Benz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/mercedes-benz-cla-200-shooting-brake.html",
+            "name": "CLA 200 Shooting Brake"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Mercedes-Benz CLA 200 Shooting Brake für 18.680 €",
+    "price_text": "Preis 18.680 € Guter Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug",
+      "Kategorie": "Kombi",
+      "Fahrzeugnummer": "N435095",
+      "Kilometerstand": "84.800 km",
+      "Hubraum": "1.595 cm³",
+      "Leistung": "115 kW (156 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro6",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "09/2016",
+      "Anzahl der Fahrzeughalter": "2",
+      "HU": "Neu",
+      "Klimatisierung": "Klimaanlage",
+      "Einparkhilfe": "Selbstlenkende Systeme, Hinten, Vorne",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "JUPITERROT",
+      "Farbe": "Rot",
+      "Innenausstattung": "Vollleder, Schwarz",
+      "Anhängelast gebremst": "1.400 kg",
+      "Anhängelast ungebremst": "730 kg",
+      "Stützlast": "75 kg",
+      "Gewicht": "1.430 kg",
+      "Zylinder": "4"
+    },
+    "description": "Gebrauchtfahrzeug • 84.800 km • 115 kW (156 PS) • Benzin • Automatik • 09/2016",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/00/0077a2b0-36f9-402f-8f59-fd150535f391?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9a/9a589f87-113a-4eab-8ff6-5624718d0474?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4b/4b25b5ce-9e5b-4473-b050-52823ef4989e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1bb9f78-2216-4221-a772-7764180a9247?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/34/341fc1b9-dd05-47da-b88e-1ea4def66b85?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4c/4c10826a-2bcc-411a-b46c-7d94bffb6e58?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/36/366719ba-819f-4e02-a0a2-eb58aaab616c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/29/29eccc31-6d39-4371-adeb-7c9b96565471?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/37/37aa31f1-7661-44d7-89d4-4be23b7acfef?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f6/f640a721-a867-41a7-8599-ece83b4d74e6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/54/54fdd1c4-9ee2-4f0c-9ab0-6d0b4acb90cc?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba0b3eac-3e22-47c9-8692-896475a00f9e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0597fcf-ed1d-4277-bb7f-ecdc8fad246e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/62/6233f722-d285-42a8-8709-871dc8f0eb0d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ba/baecc4a6-2947-427f-adf0-788e363fdd9e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c8/c89f1b8b-f520-4232-b682-8e24777846be?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/48/4881389c-256f-4c4c-b9d5-fda7d88d3a2e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/30/30b7d34b-bda1-4b56-ab49-5723f5469730?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/85/85450514-7174-4020-9bf1-7c87ec2d0ac2?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9d/9dab3b78-ef6f-400a-ba60-1f8ff833d2c8?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/92/9227c66b-3b24-440b-bde7-8233ef731023?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/00/0077a2b0-36f9-402f-8f59-fd150535f391?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/9a/9a589f87-113a-4eab-8ff6-5624718d0474?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4b/4b25b5ce-9e5b-4473-b050-52823ef4989e?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1bb9f78-2216-4221-a772-7764180a9247?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/34/341fc1b9-dd05-47da-b88e-1ea4def66b85?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4c/4c10826a-2bcc-411a-b46c-7d94bffb6e58?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/36/366719ba-819f-4e02-a0a2-eb58aaab616c?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/29/29eccc31-6d39-4371-adeb-7c9b96565471?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/37/37aa31f1-7661-44d7-89d4-4be23b7acfef?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f640a721-a867-41a7-8599-ece83b4d74e6?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/54/54fdd1c4-9ee2-4f0c-9ab0-6d0b4acb90cc?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba0b3eac-3e22-47c9-8692-896475a00f9e?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0597fcf-ed1d-4277-bb7f-ecdc8fad246e?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/62/6233f722-d285-42a8-8709-871dc8f0eb0d?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ba/baecc4a6-2947-427f-adf0-788e363fdd9e?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c89f1b8b-f520-4232-b682-8e24777846be?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/48/4881389c-256f-4c4c-b9d5-fda7d88d3a2e?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/30/30b7d34b-bda1-4b56-ab49-5723f5469730?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/85/85450514-7174-4020-9bf1-7c87ec2d0ac2?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/9d/9dab3b78-ef6f-400a-ba60-1f8ff833d2c8?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 21,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-1600",
+      "local_path": "foto/21.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 22,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-1600",
+      "local_path": "foto/22.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 23,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-1600",
+      "local_path": "foto/23.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 24,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/92/9227c66b-3b24-440b-bde7-8233ef731023?rule=mo-1600",
+      "local_path": "foto/24.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

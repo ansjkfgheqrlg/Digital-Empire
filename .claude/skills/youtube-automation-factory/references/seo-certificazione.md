@@ -30,6 +30,15 @@ Nessun video è perfetto. Prima di replicare, isola gli errori:
 4. **Miniatura** — primo elemento visto; chiara e rappresentativa.
 5. **Sottotitoli** — indicizzati da YouTube → migliorano SEO e accessibilità.
 
+### Tassonomia dei tag (4 livelli)
+Regola operativa per `metadata-optimizer` quando compila i tag YouTube:
+1. **Tag identici** — almeno 3 keyword/frasi che compaiono IDENTICHE in titolo, descrizione e tag (rinforzo di rilevanza per l'algoritmo).
+2. **Tag di contesto** — generali (nicchia ampia) e specifici (sotto-argomento preciso del video).
+3. **Tag di volume** — keyword ad alto volume di ricerca note del settore, anche se non iper-specifiche al singolo video.
+4. **Meta-tag** — tag composti da frasi intere (titoli alternativi/domande complete), non singole parole.
+
+Vincoli YouTube da rispettare sempre: **max 500 caratteri totali** su tutti i tag sommati, ciascun tag **indicativamente ≤30-40 caratteri** (tag più lunghi rischiano troncamento/rifiuto).
+
 ## Effetto sul coinvolgimento
 Buona SEO ⇒ più visibilità **e** più watch time (contenuto pertinente alla ricerca ⇒ visto fino in
 fondo ⇒ interazione/condivisione). La SEO è un **processo continuo**: monitora e correggi dopo la

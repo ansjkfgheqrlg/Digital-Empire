@@ -14,6 +14,7 @@ import json
 import logging
 import re
 import time
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional
 
@@ -126,8 +127,10 @@ def upload_to_areus(leads: List[Dict], city: str, state_path: Optional[str] = No
     return {"aggiunti": added, "duplicati": skipped, "path": str(path)}
 
 
-def mark_contacted(telefono: str, canale: str = "", state_path: Optional[str] = None) -> bool:
-    """Usato da contact_leads.py: segna un lead come CONTACTED in Areus dopo l'invio."""
+def mark_contacted(telefono: str, canale: str = "", state_path: Optional[str] = None, testo: Optional[str] = None) -> bool:
+    """Usato da contact_leads.py: segna un lead come CONTACTED in Areus dopo l'invio.
+    `testo` (msg1 effettivamente inviato) viene salvato per permettere al rule-keeper del
+    follow-up di controllare l'"angolo diverso" (Pilastro 6) contro cosa e' stato scritto."""
     path = Path(state_path) if state_path else DEFAULT_STATE_PATH
     data = _load(path)
     key = normalize_phone(telefono)
@@ -139,7 +142,97 @@ def mark_contacted(telefono: str, canale: str = "", state_path: Optional[str] = 
             lead["stage"] = STAGE_CONTACTED
             lead["canale_contatto"] = canale
             lead["contattato_il"] = time.strftime("%Y-%m-%d %H:%M")
+            if testo:
+                lead["msg1_testo"] = testo
             found = True
     if found:
         _save(path, data)
     return found
+
+
+def mark_followup_sent(telefono: str, step: int, testo: Optional[str] = None, state_path: Optional[str] = None) -> bool:
+    """Segna l'invio di un follow-up (step=2 o 3) su un lead gia' CONTACTED. Non tocca lo
+    stage (resta CONTACTED: solo un avanzamento manuale in EmpireDesk a PROPOSAL/NEGOTIATION/
+    CLOSED_* segnala che il lead ha risposto e ferma i follow-up successivi, vedi
+    `carica_lead_per_followup` — questo script non ha modo di leggere le risposte WhatsApp)."""
+    if step not in (2, 3):
+        raise ValueError(f"step deve essere 2 o 3, ricevuto {step}")
+    path = Path(state_path) if state_path else DEFAULT_STATE_PATH
+    data = _load(path)
+    key = normalize_phone(telefono)
+    if not key:
+        return False
+    found = False
+    for lead in data.get("leads", []):
+        if normalize_phone(lead.get("telefono", "")) == key:
+            lead[f"msg{step}_inviato_il"] = time.strftime("%Y-%m-%d %H:%M")
+            if testo:
+                lead[f"msg{step}_testo"] = testo
+            found = True
+    if found:
+        _save(path, data)
+    return found
+
+
+def _parse_ts(s: Optional[str]):
+    if not s:
+        return None
+    try:
+        return datetime.strptime(s, "%Y-%m-%d %H:%M")
+    except ValueError:
+        return None
+
+
+def _ore_trascorse(ts: Optional[str]) -> Optional[float]:
+    dt = _parse_ts(ts)
+    if dt is None:
+        return None
+    return (datetime.now() - dt).total_seconds() / 3600.0
+
+
+def carica_lead_per_followup(step: int, ore_attesa: float, ore_min_dal_precedente: float = 0,
+                              state_path: Optional[str] = None) -> List[Dict]:
+    """Lead CONTACTED via WhatsApp pronti per il follow-up `step` (2 o 3), FIFO (piu' vecchi
+    prima). Nessuna rilevazione automatica di risposta (send_message.py non legge la chat):
+    il segnale "ha risposto, non mandare piu' follow-up" e' lo stage che avanza oltre
+    CONTACTED (PROPOSAL/NEGOTIATION/CLOSED_*) fatto a mano in EmpireDesk. Se un lead resta
+    CONTACTED, per questo script e' "silenzio" — coerente con la sequenza 20/40/30 della
+    Bibbia (msg2/msg3 vanno mandati anche in assenza di risposta esplicita).
+
+    step=2: soglia `ore_attesa` misurata da msg1 (contattato_il) — es. 24h di silenzio.
+    step=3: soglia `ore_attesa` misurata da msg1 (contattato_il), non da msg2 — la regola
+    originale in personalizza_messaggi.py e' "G+5 di silenzio dopo msg1", non dopo msg2.
+    `ore_min_dal_precedente` e' una guardia separata su msg2 (default 24h nel chiamante) per
+    non sparare msg2 e msg3 nello stesso run se msg2 e' partito in ritardo."""
+    if step not in (2, 3):
+        raise ValueError(f"step deve essere 2 o 3, ricevuto {step}")
+    path = Path(state_path) if state_path else DEFAULT_STATE_PATH
+    data = _load(path)
+    leads = data.get("leads", [])
+
+    campo_step = f"msg{step}_inviato_il"
+
+    eligibili = []
+    for lead in leads:
+        if lead.get("stage") != STAGE_CONTACTED:
+            continue
+        if lead.get("canale_contatto") != "whatsapp":
+            continue
+        if lead.get(campo_step):
+            continue  # follow-up di questo step gia' mandato
+        if step == 3 and not lead.get("msg2_inviato_il"):
+            continue  # msg3 richiede che msg2 sia gia' partito
+
+        ore_da_msg1 = _ore_trascorse(lead.get("contattato_il"))
+        if ore_da_msg1 is None or ore_da_msg1 < ore_attesa:
+            continue
+
+        if step == 3 and ore_min_dal_precedente:
+            ore_da_msg2 = _ore_trascorse(lead.get("msg2_inviato_il"))
+            if ore_da_msg2 is None or ore_da_msg2 < ore_min_dal_precedente:
+                continue
+
+        eligibili.append((ore_da_msg1, lead))
+
+    eligibili.sort(key=lambda t: -t[0])  # piu' ore trascorse = piu' vecchio = prima
+    return [l for _, l in eligibili]

@@ -1,0 +1,1 @@
+import{g as e,t}from"./browser.chunk.js";import{bt as n,ga as r,ha as i}from"./biometrics.chunk.js";var a=e({api:()=>s,sendMessage:()=>o}),o=(e,n={})=>t.runtime.sendMessage({...n,type:e}).then(r).catch(i),s=n({sendMessage:o,logMessage:e=>{}});export{a as n,o as r,s as t};

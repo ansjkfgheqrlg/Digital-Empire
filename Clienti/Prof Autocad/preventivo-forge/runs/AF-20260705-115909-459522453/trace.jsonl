@@ -1,0 +1,17 @@
+{"ts": "2026-07-05T09:59:09+00:00", "event": "run_created", "source_url": "https://m.mobile.de/auto-inserat/audi-a5-40-tfsi-s-tronic-sport-sport-duisburg/459522453.html?ref=seo&refId=3318726f-e8db-a6db-aeaa-995606ea9c2b&searchId=3318726f-e8db-a6db-aeaa-995606ea9c2b&type=page1Ad"}
+{"ts": "2026-07-05T09:59:09+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:59:34+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-05T09:59:34+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:59:34+00:00", "event": "step", "step": "S2_parsing", "status": "done", "note": ""}
+{"ts": "2026-07-05T09:59:34+00:00", "event": "step", "step": "GATE_A", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:59:34+00:00", "event": "step", "step": "S3_translate_copy", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:59:34+00:00", "event": "step", "step": "S3_translate_copy", "status": "done", "note": ""}
+{"ts": "2026-07-05T09:59:34+00:00", "event": "step", "step": "GATE_B", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:59:34+00:00", "event": "step", "step": "S4_pricing", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:59:34+00:00", "event": "step", "step": "S4_pricing", "status": "done", "note": "Audi A5 40 TFSI S tronic sport sport 30.707 €"}
+{"ts": "2026-07-05T09:59:34+00:00", "event": "step", "step": "GATE_C", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:59:34+00:00", "event": "step", "step": "S5_pdf_render", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:59:38+00:00", "event": "step", "step": "S5_pdf_render", "status": "done", "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260705-115909-459522453\\preventivo_audi-a5.pdf"}
+{"ts": "2026-07-05T09:59:38+00:00", "event": "step", "step": "GATE_D", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:59:39+00:00", "event": "step", "step": "GATE_IMG", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:59:40+00:00", "event": "step", "step": "GATE_R", "status": "passed", "note": ""}

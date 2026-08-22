@@ -1,0 +1,9 @@
+{"ts": "2026-07-03T15:48:58+00:00", "event": "run_created", "source_url": "https://suchen.mobile.de/auto-inserat/skoda-epiq-55-0-25-led-klima-dab-acc-shz-pdch-18-alu-gera/456242123.html?lst=p"}
+{"ts": "2026-07-03T15:48:58+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-03T15:49:14+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-03T15:49:14+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-03T15:49:14+00:00", "event": "step", "step": "S2_parsing", "status": "done", "note": ""}
+{"ts": "2026-07-03T15:49:14+00:00", "event": "step", "step": "GATE_A", "status": "passed", "note": ""}
+{"ts": "2026-07-03T15:49:14+00:00", "event": "step", "step": "S3_translate_copy", "status": "running", "note": ""}
+{"ts": "2026-07-03T15:49:14+00:00", "event": "step", "step": "S3_translate_copy", "status": "done", "note": ""}
+{"ts": "2026-07-03T15:49:14+00:00", "event": "step", "step": "GATE_B", "status": "blocked", "note": "2 residui tedeschi in content: ['Ausparkassistent', 'Gepäckraumabtrennung']"}

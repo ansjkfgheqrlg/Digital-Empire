@@ -1,0 +1,62 @@
+{
+  "run_id": "AF-20260705-114719-455255173",
+  "source_url": "https://m.mobile.de/auto-inserat/renault-austral-evolution-150-shz-navi-keyless-pdc-kamer-wesel/455255173.html?ref=seo&refId=91653578-3c85-8e20-fd35-9fd76eebfc30&searchId=91653578-3c85-8e20-fd35-9fd76eebfc30&type=topAd",
+  "created_at": "2026-07-05T09:47:19+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "done",
+      "at": "2026-07-05T09:47:44+00:00",
+      "note": ""
+    },
+    "S2_parsing": {
+      "status": "done",
+      "at": "2026-07-05T09:47:44+00:00",
+      "note": ""
+    },
+    "GATE_A": {
+      "status": "passed",
+      "at": "2026-07-05T09:47:44+00:00",
+      "note": ""
+    },
+    "S3_translate_copy": {
+      "status": "done",
+      "at": "2026-07-05T09:47:44+00:00",
+      "note": ""
+    },
+    "GATE_B": {
+      "status": "passed",
+      "at": "2026-07-05T09:47:44+00:00",
+      "note": ""
+    },
+    "S4_pricing": {
+      "status": "done",
+      "at": "2026-07-05T09:47:44+00:00",
+      "note": "Renault Austral Evolution 35.950 €"
+    },
+    "GATE_C": {
+      "status": "passed",
+      "at": "2026-07-05T09:47:44+00:00",
+      "note": ""
+    },
+    "S5_pdf_render": {
+      "status": "done",
+      "at": "2026-07-05T09:47:49+00:00",
+      "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260705-114719-455255173\\preventivo_renault-austral.pdf"
+    },
+    "GATE_D": {
+      "status": "passed",
+      "at": "2026-07-05T09:47:50+00:00",
+      "note": ""
+    },
+    "GATE_IMG": {
+      "status": "passed",
+      "at": "2026-07-05T09:47:51+00:00",
+      "note": ""
+    },
+    "GATE_R": {
+      "status": "passed",
+      "at": "2026-07-05T09:47:52+00:00",
+      "note": ""
+    }
+  }
+}

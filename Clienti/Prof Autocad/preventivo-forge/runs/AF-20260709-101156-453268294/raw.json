@@ -1,0 +1,648 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=453268294&dam=false&ms=24100%3B%3B%3B&od=up&ref=seo&refId=b7ffbaf8-657c-1b8e-8812-3dc63d98ce5b&s=Car&sb=rel&searchId=b7ffbaf8-657c-1b8e-8812-3dc63d98ce5b&vc=Car",
+  "scraped_at": "2026-07-09T08:12:08+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "X10"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "Flow"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "86.500 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.197 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "85 kW (116 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin, E10-geeignet"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "6,0 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "136 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "6,0 l/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Schaltgetriebe"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "04/2018"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Kamera, Hinten"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "MAGNETIC GREY"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grau Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Andere, Andere"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "1.300 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "720 kg"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.320 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      },
+      {
+        "label": "Tankgröße",
+        "tag": "fuelTankVolume",
+        "value": "50 l"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": true
+    },
+    "shortTitle": "Toyota C-HR",
+    "subTitle": "Flow",
+    "makeKey": "Toyota",
+    "modelKey": "C-HR",
+    "isNew": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Frontantrieb",
+      "Garantie",
+      "Gepäckraumabtrennung",
+      "Geschwindigkeitsbegrenzer",
+      "Inspektion neu",
+      "Isofix",
+      "Lederlenkrad",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Multifunktionslenkrad",
+      "Navigationsvorbereitung",
+      "Nebelscheinwerfer",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Pannenkit",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Scheckheftgepflegt",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sommerreifen",
+      "Soundsystem",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Tagfahrlicht",
+      "Totwinkel-Assistent",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "Winterräder "
+    ],
+    "sellerId": 8112056,
+    "priceRating": {
+      "rating": "REASONABLE_PRICE",
+      "ratingLabel": "Fairer Preis",
+      "thresholdLabels": [
+        "10.600 €",
+        "13.800 €",
+        "14.900 €",
+        "16.600 €",
+        "17.800 €",
+        "19.800 €"
+      ],
+      "vehiclePriceOffset": 99
+    },
+    "sealDetails": {
+      "label": "Qualitätssiegel",
+      "localizedName": "Toyota Geprüfte Gebrauchtwagen",
+      "infoUrl": "//static.classistatic.de/vcs/assets/pages/seal_info/toyota-dc55c8ae176669df4b8162fd6fa87bd0/index.html",
+      "icons": {
+        "FULL_ICON": {
+          "url": "//static.classistatic.de/vcs/assets/images/used_car_seals/140x30/6bc119c997f7ec6dac725405c0bd7b0a.toyota.svg",
+          "width": 140,
+          "height": 30
+        },
+        "SMALL_ICON": {
+          "url": "//static.classistatic.de/vcs/assets/images/used_car_seals/40x20/e8ecbd2a5c75e8717429dbf88aa929ab.toyota.svg",
+          "width": 40,
+          "height": 20
+        },
+        "MEDIUM_ICON": {
+          "url": "//static.classistatic.de/vcs/assets/images/used_car_seals/60x30/e8ecbd2a5c75e8717429dbf88aa929ab.toyota.svg",
+          "width": 60,
+          "height": 30
+        }
+      },
+      "elements": [
+        "Toyota Qualitätscheck",
+        "Toyota Relax Garantie bis zu einem Fahrzeugalter von 15 Jahren",
+        "Mobilitätsgarantie",
+        "Inzahlungnahme",
+        "Zubehörgutschein"
+      ]
+    },
+    "segment": "Car",
+    "title": "Toyota C-HR Flow",
+    "url": "https://suchen.mobile.de/auto-inserat/toyota-c-hr-flow-villingen-schwenningen/453268294.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 453268294,
+    "price": {
+      "gross": "16.590 €",
+      "grossAmount": 16590,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "kba": {
+      "hsn": "5013",
+      "tsn": "AKZ"
+    },
+    "customDimensions": {
+      "10": "gold",
+      "47": "NA_NA_NA_NA_NA_1usp",
+      "126": "NA_logo_11_name_NA_languages_NA"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Sonderausstattung:</b><br>Assistenz-Paket Comfort, Metallic-Lackierung<br><br><b>Weitere Ausstattung:</b><br>Airbag Fahrer-/Beifahrerseite, Audiosystem: Multimedia Toyota Touch, Außenspiegel elektr. verstell- und heizbar, Bremsassistent, Fahrassistenz-System: Berganfahrkontrolle (HAC), Fensterheber elektrisch vorn + hinten, Freisprechanlage Bluetooth, Karosserie: 5-türig, Klimaautomatik 2-Zonen, Knieairbag Fahrerseite, Kopf-Airbag-System, Lenksäule (Lenkrad) verstellbar, LM-Felgen, Motor 1,2 Ltr. - 85 kW 16V Turbo KAT, Radstand 2640 mm, Reifen-Reparaturkit, Reifendruck-Kontrollsystem, Rücksitz klappbar, Schadstoffarm nach Abgasnorm Euro 6, Schalt-/Wählhebelgriff Leder, Seitenairbag vorn, Sitz vorn links höhenverstellbar, Sonnenblenden mit Spiegel (beleuchtet), Toyota Safety Sense",
+    "contactInfo": {
+      "address1": "Steinkirchring 76",
+      "address2": "DE-78056 Villingen-Schwenningen",
+      "name": "Autohaus Lavicka",
+      "markingText": "<div>Herzlich Willkommen bei Ihrem Toyota Vertragshändler!<br /></div><div>Toyota Fahrer lieben Ihr Auto, deshalb ist es wichtig, einen Ansprechpartner zu haben, der Sie versteht und Ihren Wagen mit genauso viel Liebe behandelt.<br /></div><div>Einen Toyota zu fahren, war schon immer etwas Besonderes, deshalb ist unser Service auch besonders gut!<br /></div><div>Wir bieten Ihnen eine professionelle und vor allen Dingen faire Beratung beim Neu- und Gebrauchtwagenkauf.<br /></div><div>Verkauf, Finanzierung, Leasing, Versicherung, Garantieverlängerungen und Mobilitätslösungen. Alles aus einer Hand.<br /></div><div>Damit Sie jede Fahrt mit Ihrem neuen Toyota genießen können.<br /></div>",
+      "openingHours": [
+        {
+          "day": "Mo - Fr",
+          "time": "08:00 Uhr - 18:00 Uhr"
+        },
+        {
+          "day": "Sa",
+          "time": "09:00 Uhr - 13:00 Uhr"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 11.07.2012",
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7539203-aa35-4380-88bd-2823ddb090d3?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7539203-aa35-4380-88bd-2823ddb090d3?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/e7/e7539203-aa35-4380-88bd-2823ddb090d3?rule=mo-360 360w",
+        "alt": "Autohaus Lavicka"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)7720 993340",
+          "uri": "tel:+497720993340"
+        },
+        {
+          "type": "Mobil",
+          "number": "+49 (0)162 5881569",
+          "uri": "tel:+491625881569"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 (0)7720 9933420"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "Carina Hoffmann",
+        "role": "Verkauf"
+      },
+      "mapLink": "https://maps.google.com/maps?q=48.0667223,8.559672599999999+(Autohaus%20Lavicka)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 48.0667223,
+        "lon": 8.559672599999999
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=8112056",
+      "country": "DE",
+      "type": "Händler",
+      "numResultsTotal": 20,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=453268294&loanType=balloon&loanDuration=60&downPayment=3318&channel=desktop",
+      "type": "AO",
+      "flowType": "AO",
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 3318,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 13272,
+        "interestRateNominal": 5.26,
+        "interestRateEffective": 5.39,
+        "monthlyInstallment": 174.63,
+        "finalInstallment": 5474.7,
+        "totalInterest": 2506.09,
+        "totalAmount": 15778.09,
+        "localized": {
+          "downPayment": "3.318 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "13.272 €",
+          "interestRateNominal": "5,26%",
+          "interestRateEffective": "5,39%",
+          "monthlyInstallment": "175 €",
+          "finalInstallment": "5.474,70 €",
+          "totalInterest": "2.506,09 €",
+          "totalAmount": "15.778,09 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000 €, effektiver Jahreszins 5,39%, fester Sollzinssatz 5,26% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 143,60 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.772,13 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach"
+        }
+      },
+      "shortFlow": false,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9d8ac71-3982-4e98-b97a-550da090546d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9d8ac71-3982-4e98-b97a-550da090546d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c9/c9d8ac71-3982-4e98-b97a-550da090546d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c9/c9d8ac71-3982-4e98-b97a-550da090546d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9d8ac71-3982-4e98-b97a-550da090546d?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota C-HR"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/13/13b3c6e0-70cb-44ef-8ecd-dc6e49d8352b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/13/13b3c6e0-70cb-44ef-8ecd-dc6e49d8352b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/13/13b3c6e0-70cb-44ef-8ecd-dc6e49d8352b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/13/13b3c6e0-70cb-44ef-8ecd-dc6e49d8352b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/13/13b3c6e0-70cb-44ef-8ecd-dc6e49d8352b?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota C-HR"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/53/535ce8cd-412e-40fa-85f6-36831d6bb5f3?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/53/535ce8cd-412e-40fa-85f6-36831d6bb5f3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/53/535ce8cd-412e-40fa-85f6-36831d6bb5f3?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/53/535ce8cd-412e-40fa-85f6-36831d6bb5f3?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/53/535ce8cd-412e-40fa-85f6-36831d6bb5f3?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota C-HR"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/94/947beff9-fff7-400d-b581-d237e4a5c434?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/94/947beff9-fff7-400d-b581-d237e4a5c434?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/94/947beff9-fff7-400d-b581-d237e4a5c434?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/94/947beff9-fff7-400d-b581-d237e4a5c434?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/94/947beff9-fff7-400d-b581-d237e4a5c434?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota C-HR"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8093601-d259-4b0f-a337-76c935266cbf?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8093601-d259-4b0f-a337-76c935266cbf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c8/c8093601-d259-4b0f-a337-76c935266cbf?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c8/c8093601-d259-4b0f-a337-76c935266cbf?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8093601-d259-4b0f-a337-76c935266cbf?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota C-HR"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/df/df534f90-fe70-43f1-b74b-e12e82cc3ea4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/df/df534f90-fe70-43f1-b74b-e12e82cc3ea4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/df/df534f90-fe70-43f1-b74b-e12e82cc3ea4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/df/df534f90-fe70-43f1-b74b-e12e82cc3ea4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/df/df534f90-fe70-43f1-b74b-e12e82cc3ea4?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota C-HR"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/95/95767e8a-8336-4d80-8798-413777ac3af9?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/95/95767e8a-8336-4d80-8798-413777ac3af9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/95/95767e8a-8336-4d80-8798-413777ac3af9?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/95/95767e8a-8336-4d80-8798-413777ac3af9?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/95/95767e8a-8336-4d80-8798-413777ac3af9?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota C-HR"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/da/daf94df1-8b52-49c7-82a9-ca1af854cded?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/da/daf94df1-8b52-49c7-82a9-ca1af854cded?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/da/daf94df1-8b52-49c7-82a9-ca1af854cded?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/da/daf94df1-8b52-49c7-82a9-ca1af854cded?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/da/daf94df1-8b52-49c7-82a9-ca1af854cded?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota C-HR"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/88/886ceb1f-6b1f-4667-ba76-392ac4c12adf?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/88/886ceb1f-6b1f-4667-ba76-392ac4c12adf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/88/886ceb1f-6b1f-4667-ba76-392ac4c12adf?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/88/886ceb1f-6b1f-4667-ba76-392ac4c12adf?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/88/886ceb1f-6b1f-4667-ba76-392ac4c12adf?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota C-HR"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/80/8009fadc-5c32-4fde-83a9-49e4f1f7901b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/80/8009fadc-5c32-4fde-83a9-49e4f1f7901b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/80/8009fadc-5c32-4fde-83a9-49e4f1f7901b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/80/8009fadc-5c32-4fde-83a9-49e4f1f7901b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/80/8009fadc-5c32-4fde-83a9-49e4f1f7901b?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota C-HR"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e2d0c2e-88e1-412c-b52c-30b7018a2609?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e2d0c2e-88e1-412c-b52c-30b7018a2609?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/3e/3e2d0c2e-88e1-412c-b52c-30b7018a2609?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/3e/3e2d0c2e-88e1-412c-b52c-30b7018a2609?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e2d0c2e-88e1-412c-b52c-30b7018a2609?rule=mo-80w",
+        "type": "image",
+        "alt": "Toyota C-HR"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9d8ac71-3982-4e98-b97a-550da090546d?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9d8ac71-3982-4e98-b97a-550da090546d?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpsbsmodelimprovementsv2&client.abtests=cossrpcorerecommenderpopularfiltersnobanner&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=accwebpublichomegaaa4on&adId=453268294"
+    },
+    "similarAdsInfo": {
+      "type": "similar-ads",
+      "apiParams": "/ml-recommendations-by-id/453268294"
+    },
+    "vehicleCondition": "used",
+    "make": "Toyota",
+    "model": "C-HR",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "b7ffbaf8-657c-1b8e-8812-3dc63d98ce5b"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Toyota C-HR für 16.590 €",
+    "price_text": "Preis 16.590 € Fairer Preis Finanzierung Monatsrate ab 175 € Finanzierung berechnen Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Online abschließen Schließe die Finanzierung bequem online von Zuhause ab Online-Kredit Dieses Inserat bietet den Online-Kreditvergleich Unabhängige Finanzierung mit der Bank deiner Wahl Einfach von Zuhause online abschließen Nach wenigen Minuten erhältst du dein persönliches Kreditangebot von verschiedenen Banken",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Baureihe": "X10",
+      "Ausstattungslinie": "Flow",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "86.500 km",
+      "Hubraum": "1.197 cm³",
+      "Leistung": "85 kW (116 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin, E10-geeignet",
+      "Energieverbrauch (komb.) 2": "6,0 l/100km",
+      "CO₂-Emissionen (komb.) 2": "136 g/km",
+      "Kraftstoffverbrauch 2": "6,0 l/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Schaltgetriebe",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "04/2018",
+      "Anzahl der Fahrzeughalter": "1",
+      "HU": "Neu",
+      "Klimatisierung": "Klimaautomatik",
+      "Einparkhilfe": "Kamera, Hinten",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "MAGNETIC GREY",
+      "Farbe": "Grau Metallic",
+      "Innenausstattung": "Andere, Andere",
+      "Anhängelast gebremst": "1.300 kg",
+      "Anhängelast ungebremst": "720 kg",
+      "Gewicht": "1.320 kg",
+      "Zylinder": "4",
+      "Tankgröße": "50 l"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 86.500 km • 85 kW (116 PS) • Benzin, E10-geeignet • Schaltgetriebe • 04/2018",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9d8ac71-3982-4e98-b97a-550da090546d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/13/13b3c6e0-70cb-44ef-8ecd-dc6e49d8352b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/53/535ce8cd-412e-40fa-85f6-36831d6bb5f3?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/94/947beff9-fff7-400d-b581-d237e4a5c434?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8093601-d259-4b0f-a337-76c935266cbf?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/df/df534f90-fe70-43f1-b74b-e12e82cc3ea4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/95/95767e8a-8336-4d80-8798-413777ac3af9?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/da/daf94df1-8b52-49c7-82a9-ca1af854cded?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/88/886ceb1f-6b1f-4667-ba76-392ac4c12adf?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/80/8009fadc-5c32-4fde-83a9-49e4f1f7901b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e2d0c2e-88e1-412c-b52c-30b7018a2609?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9d8ac71-3982-4e98-b97a-550da090546d?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/13/13b3c6e0-70cb-44ef-8ecd-dc6e49d8352b?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/53/535ce8cd-412e-40fa-85f6-36831d6bb5f3?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/94/947beff9-fff7-400d-b581-d237e4a5c434?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8093601-d259-4b0f-a337-76c935266cbf?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/df/df534f90-fe70-43f1-b74b-e12e82cc3ea4?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/95/95767e8a-8336-4d80-8798-413777ac3af9?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/da/daf94df1-8b52-49c7-82a9-ca1af854cded?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/88/886ceb1f-6b1f-4667-ba76-392ac4c12adf?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/80/8009fadc-5c32-4fde-83a9-49e4f1f7901b?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e2d0c2e-88e1-412c-b52c-30b7018a2609?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

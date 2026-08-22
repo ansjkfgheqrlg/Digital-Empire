@@ -1,0 +1,12 @@
+{
+  "run_id": "AF-20260701-160153-456259857",
+  "source_url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-gla-220-d-4m-amg-sport-pano-ahk-night-mbeam-cam-schwelm/456259857.html",
+  "created_at": "2026-07-01T14:01:53+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "failed",
+      "at": "2026-07-01T14:02:10+00:00",
+      "note": "Impossibile connettersi a Chrome via CDP (porta non pronta)."
+    }
+  }
+}

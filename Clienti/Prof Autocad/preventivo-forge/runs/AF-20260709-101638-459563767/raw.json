@@ -1,0 +1,854 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=459563767&dam=false&ms=19000%3B%3B%3B&od=up&ref=seo&refId=5f11fca4-c297-bf68-7cae-e5512e9d126d&s=Car&sb=rel&searchId=5f11fca4-c297-bf68-7cae-e5512e9d126d&vc=Car",
+  "scraped_at": "2026-07-09T08:16:51+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Limousine"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "B"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "Dynamic"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "4501"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "72.595 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.490 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "121 kW (165 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "6,0 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "136 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "6,0 l/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Schaltgetriebe"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "08/2017"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "2"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Vorne, 360°-Kamera, Hinten"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "Onyx Schwarz"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Schwarz Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Vollleder, Schwarz"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "1.405 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "700 kg"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.440 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      },
+      {
+        "label": "Tankgröße",
+        "tag": "fuelTankVolume",
+        "value": "62 l"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Opel Insignia",
+    "subTitle": "B Grand Sport LED/360/Sitzluft/HUD/Navi",
+    "makeKey": "Opel",
+    "modelKey": "Insignia",
+    "isNew": true,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Armlehne",
+      "Ausparkassistent",
+      "Beheizbares Lenkrad",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Sitzeinstellung",
+      "Elektr. Sitzeinstellung mit Memory-Funktion",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Frontantrieb",
+      "Garantie",
+      "Gepäckraumabtrennung",
+      "Geschwindigkeitsbegrenzer",
+      "Head-Up Display",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Kurvenlicht",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Massagesitze",
+      "Multifunktionslenkrad",
+      "Navigationssystem",
+      "Nebelscheinwerfer",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzbelüftung",
+      "Sitzheizung",
+      "Skisack",
+      "Sommerreifen",
+      "Soundsystem",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 17952952,
+    "priceRating": {
+      "rating": "REASONABLE_PRICE",
+      "ratingLabel": "Fairer Preis",
+      "thresholdLabels": [
+        "10.500 €",
+        "13.700 €",
+        "14.700 €",
+        "16.400 €",
+        "17.600 €",
+        "19.500 €"
+      ],
+      "vehiclePriceOffset": 73
+    },
+    "segment": "Car",
+    "title": "Opel Insignia B Grand Sport LED/360/Sitzluft/HUD/Navi",
+    "url": "https://suchen.mobile.de/auto-inserat/opel-insignia-b-grand-sport-led-360-sitzluft-hud-navi-goslar/459563767.html",
+    "vc": "Car",
+    "category": "Limousine",
+    "id": 459563767,
+    "price": {
+      "gross": "15.950 €",
+      "grossAmount": 15950,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "kba": {
+      "hsn": "0035",
+      "tsn": "BKN"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "hero_logo_25_name_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Sonderausstattung:</b><br>Head-up-Display, Induktionsladeschale für Smartphone (Wireless Charging), Klimaautomatik 2-Zonen, Lenkrad heizbar, Metallic-/Mineraleffekt-Lackierung, Premium-Paket 2 / Leder perforiert, Sicht-Paket, Sitz-Paket, Technologie-Paket Park &amp; Go Premium<br><br><b>Weitere Ausstattung:</b><br>3-Punkt-Sicherheitsgurt hinten mitte, Airbag Fahrer-/Beifahrerseite, Ambiente-Beleuchtung Armaturentafel, Audio-Navigationssystem Navi RF 900 Europa Touch (IntelliLink 8&quot;-Display), Außenspiegel Wagenfarbe, Bluetooth Audio-Streaming, Bremsassistent, Drehzahlmesser, Einstiegsleisten mit Schriftzug, Elektron. Traktionskontrolle, Ergonomiesitz vorn links, Farbdisplay (8,0 Zoll), Fensterheber elektrisch hinten, Feststellbremse elektrisch, Freisprecheinrichtung Bluetooth, Frontkamera, Fußgänger-Schutzsystem: Aktive Motorhaube, Heckleuchten LED, Isofix-Aufnahmen für Kindersitz an Rücksitz, Karosserie: 5-türig, Kindersicherung, Kopf-Airbag-System, Kopfstützen hinten (3-fach), LM-Felgen, Motor 1,5 Ltr. - 121 kW 16V SIDI Turbo, MP3-Schnittstelle für Mobiltelefon/Handy, OnStar SOS Service, Pedale Aluminium, Reifen 245/45 R18 ..W, Schadstoffarm nach Abgasnorm Euro 6, Seitenairbag vorn, Smartphone Schnittstelle (Apple CarPlay &amp; Android Auto), Sonnenblenden mit Spiegel (beleuchtet), Start/Stop-Anlage, Türgriffe außen Wagenfarbe, Wärmeschutzverglasung hinten abgedunkelt (Solar-Protect)<br><br><ul><li><b>Besichtigung nach Terminabsprache auch gerne am Wochenende.</b></li></ul><hr><b>Unsere Leistungen im Überblick:<br><br></b>- <b>An- und Verkauf</b> von geprüften Fahrzeugen<br>- <b>Inzahlungnahme</b> möglich<br>- <b>Finanzierung</b> mit oder ohne Anzahlung möglich<br>- Nach Terminvereinbarung mit Abholservice vom Bahnhof Goslar<br><br>- Haupt- und Abgasuntersuchungen in autorisierten Prüforganisationen<br>- Inspektionen nach Herstellervorgaben<br><br>- Kurzzeitkennzeichen für die Überführung<br>- Exportkennzeichen für die Überführung<br><br>- Professionelle Aufbereitung in verschiedenen Paketen (Low, Medium, Premium)<br><br>- Zusätzlich bieten wir Ihnen eine Gebrauchtwagengarantie ab einem Aufpreis von 450 € an.<br><b><br></b><hr><b><br></b>Die Fahrzeugbeschreibung stellt keine Gewährleistung im kaufrechtlichen Sinne dar. Keine Haftung/ Gewährleistung für Tipp- und Datenübermittlungsfehler. Irrtum und Zwischenverkauf vorbehalten.<br>",
+    "contactInfo": {
+      "address1": "Walter-Krämer-Straße 4",
+      "address2": "DE-38642 Goslar",
+      "name": "Autohaus am Fliegerhorst",
+      "markingText": "<div>Außerdem bieten wir Ihnen folgende Dienstleistungen an: <br /></div><ul><li>An- und Verkauf von geprüften Fahrzeugen<br /></li><li>Inzahlungnahme möglich<br /></li><li>Finanzierung mit oder ohne Anzahlung möglich<br /></li><li>Nach Terminvereinbarung mit Abholservice vom Bahnhof Goslar<br /></li><li>Haupt- und Abgasuntersuchungen in autorisierten Prüforganisationen<br /></li><li>Inspektionen nach Herstellervorgaben<br /></li><li>Kurzzeit- oder Exportkennzeichen für die Überführung<br /></li><li>Professionelle Aufbereitung in verschiedenen Paketen (Low, Medium oder Premium)<br /></li><li>Zusätzlich bieten wir Ihnen eine Gebrauchtwagengarantie ab einem Aufpreis von 350€ an.<br /></li></ul>",
+      "openingHours": [
+        {
+          "time": "10:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "10:00 Uhr - 16:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 12.03.2018",
+      "rating": {
+        "count": 12,
+        "totalCount": 196,
+        "score": 4.6,
+        "scoreLocalized": "4,6",
+        "link": "https://www.mobile.de/bewertungen/AUTOHAUSAMFLIEGERHORST?lang=de",
+        "recommendationRate": 90,
+        "adRealityRate": 81,
+        "consultingScore": 4.333333333333333,
+        "friendlinessScore": 4.75,
+        "responseTimeScore": 4.583333333333333
+      },
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/2f/2f5e1032-5003-4a30-9641-ec1b29f3a321?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/2f/2f5e1032-5003-4a30-9641-ec1b29f3a321?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/2f/2f5e1032-5003-4a30-9641-ec1b29f3a321?rule=mo-360 360w",
+        "alt": "Autohaus am Fliegerhorst"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "Mobil",
+          "number": "+49 (0)174 2028054",
+          "uri": "tel:+491742028054"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "Niklas Frey",
+        "role": "Verkaufsberater"
+      },
+      "mapLink": "https://maps.google.com/maps?q=51.9318405,10.4293608+(Autohaus%20am%20Fliegerhorst)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 51.9318405,
+        "lon": 10.4293608
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=17952952",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/88/88ec38b0-0be2-4e43-8290-ffc7091fe5fd?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/88/88ec38b0-0be2-4e43-8290-ffc7091fe5fd?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/88/88ec38b0-0be2-4e43-8290-ffc7091fe5fd?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/88/88ec38b0-0be2-4e43-8290-ffc7091fe5fd?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/88/88ec38b0-0be2-4e43-8290-ffc7091fe5fd?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7f7a3ca-4ca1-477b-99cc-fec9a5258905?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7f7a3ca-4ca1-477b-99cc-fec9a5258905?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d7/d7f7a3ca-4ca1-477b-99cc-fec9a5258905?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d7/d7f7a3ca-4ca1-477b-99cc-fec9a5258905?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 66,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "BDK",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=459563767&loanType=balloon&loanDuration=60&downPayment=3190&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "BDK",
+        "bankName": "Bank Deutsches Kraftfahrzeuggewerbe GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 3190,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 12760,
+        "interestRateNominal": 5.17,
+        "interestRateEffective": 5.29,
+        "monthlyInstallment": 103.15,
+        "finalInstallment": 9570,
+        "totalInterest": 2895.88,
+        "totalAmount": 15655.88,
+        "localized": {
+          "downPayment": "3.190 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "12.760 €",
+          "interestRateNominal": "5,17%",
+          "interestRateEffective": "5,29%",
+          "monthlyInstallment": "104 €",
+          "finalInstallment": "9.570,00 €",
+          "totalInterest": "2.895,88 €",
+          "totalAmount": "15.655,88 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Bank Deutsches Kraftfahrzeuggewerbe GmbH (Darlehensgeber), Fuhlsbüttler Straße 437, 22309 Hamburg. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fcd6ef1-b971-4274-b0a3-0c959bdd8ac1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fcd6ef1-b971-4274-b0a3-0c959bdd8ac1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6f/6fcd6ef1-b971-4274-b0a3-0c959bdd8ac1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6f/6fcd6ef1-b971-4274-b0a3-0c959bdd8ac1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fcd6ef1-b971-4274-b0a3-0c959bdd8ac1?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9347e6e-8e54-41a3-8799-a21dbd3ec12d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9347e6e-8e54-41a3-8799-a21dbd3ec12d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d9/d9347e6e-8e54-41a3-8799-a21dbd3ec12d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d9/d9347e6e-8e54-41a3-8799-a21dbd3ec12d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9347e6e-8e54-41a3-8799-a21dbd3ec12d?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/3b/3bf3af00-e86a-4790-8a6d-4b7d29088a69?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/3b/3bf3af00-e86a-4790-8a6d-4b7d29088a69?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/3b/3bf3af00-e86a-4790-8a6d-4b7d29088a69?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/3b/3bf3af00-e86a-4790-8a6d-4b7d29088a69?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/3b/3bf3af00-e86a-4790-8a6d-4b7d29088a69?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/eb/eb0cc821-5b30-41f9-b3d7-319626de761f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/eb/eb0cc821-5b30-41f9-b3d7-319626de761f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/eb/eb0cc821-5b30-41f9-b3d7-319626de761f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/eb/eb0cc821-5b30-41f9-b3d7-319626de761f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/eb/eb0cc821-5b30-41f9-b3d7-319626de761f?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a123d7a3-c4dd-48c6-b739-cca5047a244b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a123d7a3-c4dd-48c6-b739-cca5047a244b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a1/a123d7a3-c4dd-48c6-b739-cca5047a244b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a1/a123d7a3-c4dd-48c6-b739-cca5047a244b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a123d7a3-c4dd-48c6-b739-cca5047a244b?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/92/92d54804-d4b6-4919-addf-89b1431f46a5?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/92/92d54804-d4b6-4919-addf-89b1431f46a5?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/92/92d54804-d4b6-4919-addf-89b1431f46a5?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/92/92d54804-d4b6-4919-addf-89b1431f46a5?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/92/92d54804-d4b6-4919-addf-89b1431f46a5?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b986104-fc2c-4fd3-a89c-010c8a556935?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b986104-fc2c-4fd3-a89c-010c8a556935?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1b/1b986104-fc2c-4fd3-a89c-010c8a556935?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1b/1b986104-fc2c-4fd3-a89c-010c8a556935?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b986104-fc2c-4fd3-a89c-010c8a556935?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/91/91cb78fb-1858-4049-b39a-a28042d57514?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/91/91cb78fb-1858-4049-b39a-a28042d57514?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/91/91cb78fb-1858-4049-b39a-a28042d57514?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/91/91cb78fb-1858-4049-b39a-a28042d57514?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/91/91cb78fb-1858-4049-b39a-a28042d57514?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ec/ec144e94-46d7-41bb-82bb-5e52730ffcdc?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ec/ec144e94-46d7-41bb-82bb-5e52730ffcdc?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ec/ec144e94-46d7-41bb-82bb-5e52730ffcdc?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ec/ec144e94-46d7-41bb-82bb-5e52730ffcdc?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ec/ec144e94-46d7-41bb-82bb-5e52730ffcdc?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/17/17d251c3-d763-40a9-8f66-102315104a10?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/17/17d251c3-d763-40a9-8f66-102315104a10?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/17/17d251c3-d763-40a9-8f66-102315104a10?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/17/17d251c3-d763-40a9-8f66-102315104a10?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/17/17d251c3-d763-40a9-8f66-102315104a10?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/08/08dd27d4-06fe-4a7c-b6f3-bc776444ce04?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/08/08dd27d4-06fe-4a7c-b6f3-bc776444ce04?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/08/08dd27d4-06fe-4a7c-b6f3-bc776444ce04?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/08/08dd27d4-06fe-4a7c-b6f3-bc776444ce04?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/08/08dd27d4-06fe-4a7c-b6f3-bc776444ce04?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac63947d-0108-44f6-ac4a-2b6903336b86?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac63947d-0108-44f6-ac4a-2b6903336b86?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ac/ac63947d-0108-44f6-ac4a-2b6903336b86?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ac/ac63947d-0108-44f6-ac4a-2b6903336b86?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac63947d-0108-44f6-ac4a-2b6903336b86?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d06bd140-1f60-44a3-b0f1-e2c3f3234f28?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d06bd140-1f60-44a3-b0f1-e2c3f3234f28?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d0/d06bd140-1f60-44a3-b0f1-e2c3f3234f28?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d0/d06bd140-1f60-44a3-b0f1-e2c3f3234f28?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d06bd140-1f60-44a3-b0f1-e2c3f3234f28?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/57/57db169b-ccc8-4200-870e-22e1d8ef30db?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/57/57db169b-ccc8-4200-870e-22e1d8ef30db?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/57/57db169b-ccc8-4200-870e-22e1d8ef30db?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/57/57db169b-ccc8-4200-870e-22e1d8ef30db?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/57/57db169b-ccc8-4200-870e-22e1d8ef30db?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/12/120f4ae7-f824-42d7-bd42-766608e17cb1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/12/120f4ae7-f824-42d7-bd42-766608e17cb1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/12/120f4ae7-f824-42d7-bd42-766608e17cb1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/12/120f4ae7-f824-42d7-bd42-766608e17cb1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/12/120f4ae7-f824-42d7-bd42-766608e17cb1?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b80ad57-98df-4bea-ad3e-acfdfa3d9f3d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b80ad57-98df-4bea-ad3e-acfdfa3d9f3d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6b/6b80ad57-98df-4bea-ad3e-acfdfa3d9f3d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6b/6b80ad57-98df-4bea-ad3e-acfdfa3d9f3d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b80ad57-98df-4bea-ad3e-acfdfa3d9f3d?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c0/c068dd8b-c955-480b-8ec4-65af82f8092e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c0/c068dd8b-c955-480b-8ec4-65af82f8092e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c0/c068dd8b-c955-480b-8ec4-65af82f8092e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c0/c068dd8b-c955-480b-8ec4-65af82f8092e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c0/c068dd8b-c955-480b-8ec4-65af82f8092e?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/01/0126798c-4e9c-4fff-b48d-cd774b5f6184?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/01/0126798c-4e9c-4fff-b48d-cd774b5f6184?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/01/0126798c-4e9c-4fff-b48d-cd774b5f6184?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/01/0126798c-4e9c-4fff-b48d-cd774b5f6184?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/01/0126798c-4e9c-4fff-b48d-cd774b5f6184?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/09/09fa9ace-8872-4f55-9bae-f055b7f06335?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/09/09fa9ace-8872-4f55-9bae-f055b7f06335?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/09/09fa9ace-8872-4f55-9bae-f055b7f06335?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/09/09fa9ace-8872-4f55-9bae-f055b7f06335?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/09/09fa9ace-8872-4f55-9bae-f055b7f06335?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e8/e8c423a0-c8c8-4b18-8637-cae2921895e0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e8/e8c423a0-c8c8-4b18-8637-cae2921895e0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e8/e8c423a0-c8c8-4b18-8637-cae2921895e0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e8/e8c423a0-c8c8-4b18-8637-cae2921895e0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e8/e8c423a0-c8c8-4b18-8637-cae2921895e0?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ee/ee440190-bb90-4b07-a806-4efe13a85099?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ee/ee440190-bb90-4b07-a806-4efe13a85099?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ee/ee440190-bb90-4b07-a806-4efe13a85099?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ee/ee440190-bb90-4b07-a806-4efe13a85099?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ee/ee440190-bb90-4b07-a806-4efe13a85099?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1fff24c-471d-4b44-985e-71f74d14641e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1fff24c-471d-4b44-985e-71f74d14641e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b1/b1fff24c-471d-4b44-985e-71f74d14641e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b1/b1fff24c-471d-4b44-985e-71f74d14641e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1fff24c-471d-4b44-985e-71f74d14641e?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5c/5cb23299-fe49-4ec9-9411-62e57f09796c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5c/5cb23299-fe49-4ec9-9411-62e57f09796c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5c/5cb23299-fe49-4ec9-9411-62e57f09796c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5c/5cb23299-fe49-4ec9-9411-62e57f09796c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5c/5cb23299-fe49-4ec9-9411-62e57f09796c?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c51073e1-8525-4275-b64c-ad96d942f467?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c51073e1-8525-4275-b64c-ad96d942f467?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c5/c51073e1-8525-4275-b64c-ad96d942f467?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c5/c51073e1-8525-4275-b64c-ad96d942f467?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c51073e1-8525-4275-b64c-ad96d942f467?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b366d5d5-a8d8-4ac6-b624-b240ad88b4df?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b366d5d5-a8d8-4ac6-b624-b240ad88b4df?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b3/b366d5d5-a8d8-4ac6-b624-b240ad88b4df?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b3/b366d5d5-a8d8-4ac6-b624-b240ad88b4df?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b366d5d5-a8d8-4ac6-b624-b240ad88b4df?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Insignia"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fcd6ef1-b971-4274-b0a3-0c959bdd8ac1?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fcd6ef1-b971-4274-b0a3-0c959bdd8ac1?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpsbsmodelimprovementsv1&client.abtests=cossrpcorerecommenderpopularfilterspopularfilters&client.abtests=accwebpublichomegaaa4off&adId=459563767"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=15950&c=Limousine&ms=19000%3B35&id%21=459563767&vc=Car&sid=17952952"
+    },
+    "vehicleCondition": "used",
+    "make": "Opel",
+    "model": "Insignia",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "5f11fca4-c297-bf68-7cae-e5512e9d126d"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Opel Insignia für 15.950 €",
+    "price_text": "Preis 15.950 € Fairer Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "Limousine",
+      "Baureihe": "B",
+      "Ausstattungslinie": "Dynamic",
+      "Fahrzeugnummer": "4501",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "72.595 km",
+      "Hubraum": "1.490 cm³",
+      "Leistung": "121 kW (165 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Energieverbrauch (komb.) 2": "6,0 l/100km",
+      "CO₂-Emissionen (komb.) 2": "136 g/km",
+      "Kraftstoffverbrauch 2": "6,0 l/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Schaltgetriebe",
+      "Schadstoffklasse": "Euro6",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "08/2017",
+      "Anzahl der Fahrzeughalter": "2",
+      "HU": "Neu",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Vorne, 360°-Kamera, Hinten",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "Onyx Schwarz",
+      "Farbe": "Schwarz Metallic",
+      "Innenausstattung": "Vollleder, Schwarz",
+      "Anhängelast gebremst": "1.405 kg",
+      "Anhängelast ungebremst": "700 kg",
+      "Gewicht": "1.440 kg",
+      "Zylinder": "4",
+      "Tankgröße": "62 l"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 72.595 km • 121 kW (165 PS) • Benzin • Schaltgetriebe • 08/2017",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fcd6ef1-b971-4274-b0a3-0c959bdd8ac1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9347e6e-8e54-41a3-8799-a21dbd3ec12d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3b/3bf3af00-e86a-4790-8a6d-4b7d29088a69?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/eb/eb0cc821-5b30-41f9-b3d7-319626de761f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a1/a123d7a3-c4dd-48c6-b739-cca5047a244b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/92/92d54804-d4b6-4919-addf-89b1431f46a5?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b986104-fc2c-4fd3-a89c-010c8a556935?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/91/91cb78fb-1858-4049-b39a-a28042d57514?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ec/ec144e94-46d7-41bb-82bb-5e52730ffcdc?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/17/17d251c3-d763-40a9-8f66-102315104a10?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/08/08dd27d4-06fe-4a7c-b6f3-bc776444ce04?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac63947d-0108-44f6-ac4a-2b6903336b86?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d0/d06bd140-1f60-44a3-b0f1-e2c3f3234f28?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/57/57db169b-ccc8-4200-870e-22e1d8ef30db?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/12/120f4ae7-f824-42d7-bd42-766608e17cb1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b80ad57-98df-4bea-ad3e-acfdfa3d9f3d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c0/c068dd8b-c955-480b-8ec4-65af82f8092e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/01/0126798c-4e9c-4fff-b48d-cd774b5f6184?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/09/09fa9ace-8872-4f55-9bae-f055b7f06335?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e8/e8c423a0-c8c8-4b18-8637-cae2921895e0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ee/ee440190-bb90-4b07-a806-4efe13a85099?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1fff24c-471d-4b44-985e-71f74d14641e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5c/5cb23299-fe49-4ec9-9411-62e57f09796c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c5/c51073e1-8525-4275-b64c-ad96d942f467?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b3/b366d5d5-a8d8-4ac6-b624-b240ad88b4df?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fcd6ef1-b971-4274-b0a3-0c959bdd8ac1?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9347e6e-8e54-41a3-8799-a21dbd3ec12d?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/3b/3bf3af00-e86a-4790-8a6d-4b7d29088a69?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/eb/eb0cc821-5b30-41f9-b3d7-319626de761f?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a123d7a3-c4dd-48c6-b739-cca5047a244b?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/92/92d54804-d4b6-4919-addf-89b1431f46a5?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b986104-fc2c-4fd3-a89c-010c8a556935?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/91/91cb78fb-1858-4049-b39a-a28042d57514?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ec/ec144e94-46d7-41bb-82bb-5e52730ffcdc?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/17/17d251c3-d763-40a9-8f66-102315104a10?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/08/08dd27d4-06fe-4a7c-b6f3-bc776444ce04?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac63947d-0108-44f6-ac4a-2b6903336b86?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d06bd140-1f60-44a3-b0f1-e2c3f3234f28?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/57/57db169b-ccc8-4200-870e-22e1d8ef30db?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/12/120f4ae7-f824-42d7-bd42-766608e17cb1?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b80ad57-98df-4bea-ad3e-acfdfa3d9f3d?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c0/c068dd8b-c955-480b-8ec4-65af82f8092e?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/01/0126798c-4e9c-4fff-b48d-cd774b5f6184?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/09/09fa9ace-8872-4f55-9bae-f055b7f06335?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e8/e8c423a0-c8c8-4b18-8637-cae2921895e0?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ee/ee440190-bb90-4b07-a806-4efe13a85099?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 21,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1fff24c-471d-4b44-985e-71f74d14641e?rule=mo-1600",
+      "local_path": "foto/21.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 22,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5c/5cb23299-fe49-4ec9-9411-62e57f09796c?rule=mo-1600",
+      "local_path": "foto/22.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 23,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c51073e1-8525-4275-b64c-ad96d942f467?rule=mo-1600",
+      "local_path": "foto/23.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 24,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b366d5d5-a8d8-4ac6-b624-b240ad88b4df?rule=mo-1600",
+      "local_path": "foto/24.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,671 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=377883614&action=topInCategory&dam=false&ms=20700%3B%3B%3B&od=up&ref=seo&refId=ddc77b69-c15d-021c-1ded-32b99f35906e&s=Car&sb=rel&searchId=ddc77b69-c15d-021c-1ded-32b99f35906e&vc=Car",
+  "scraped_at": "2026-07-09T08:14:14+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug"
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Van/Minibus"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "45.000 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "2.299 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "96 kW (131 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Diesel"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "3"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Schiebetür",
+        "tag": "slidingDoor",
+        "value": "Schiebetür rechts"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Schaltgetriebe"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "12/2019"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Hinten"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Fahrer-Airbag"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "MINERAL WEISS"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Weiß"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Stoff, Schwarz"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": true
+    },
+    "shortTitle": "Renault Master",
+    "subTitle": "Kasten L3H2 HKa 3,5t 1-Hand Scheckheft",
+    "makeKey": "Renault",
+    "modelKey": "Master",
+    "isNew": false,
+    "isConditionNew": false,
+    "features": [
+      "ABS",
+      "Allwetterreifen",
+      "Armlehne",
+      "Bluetooth",
+      "Bordcomputer",
+      "CD-Spieler",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Multifunktionslenkrad",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Partikelfilter",
+      "Radio DAB",
+      "Regensensor",
+      "Scheckheftgepflegt",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sprachsteuerung",
+      "Standheizung",
+      "Start/Stopp-Automatik",
+      "Tagfahrlicht",
+      "Tempomat",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "HU/AU & Service neu"
+    ],
+    "sellerId": 15339626,
+    "priceRating": {
+      "rating": "GOOD_PRICE",
+      "ratingLabel": "Guter Preis",
+      "thresholdLabels": [
+        "15.100 €",
+        "19.600 €",
+        "21.100 €",
+        "23.400 €",
+        "25.200 €",
+        "28.000 €"
+      ],
+      "vehiclePriceOffset": 93
+    },
+    "segment": "Car",
+    "title": "Renault Master Kasten L3H2 HKa 3,5t 1-Hand Scheckheft",
+    "url": "https://suchen.mobile.de/auto-inserat/renault-master-kasten-l3h2-hka-3-5t-1-hand-scheckheft-g%C3%B6rlitz/377883614.html",
+    "vc": "Car",
+    "category": "Van",
+    "id": 377883614,
+    "price": {
+      "gross": "20.999 €",
+      "grossAmount": 20999,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "customDimensions": {
+      "10": "gold",
+      "47": "tic_NA_NA_NA_NA_1usp",
+      "126": "NA_logo_21_name_NA_languages_NA"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Renault Master, das Fahrzeug befindet sich technisch und optisch in einem sehr guten Zustand.<br>Beim Kauf des Fahrzeuges bekommen Sie HU/AU und Service neu, sowie eine Gebrauchtwagengarantie von 12 Monaten.<br><br>- Finanzierung auch ohne Anzahlung möglich<br>- Gerne nehmen wir Ihr altes Fahrzeug nach Absprache in Zahlung<br><br>Sonderausstattung:</b><br>Klare-Sicht-Paket, Komfort-Plus-Paket, Laderaumtrennwand mit Fenster (vergittert), Radvollabdeckungen, Raucher-Paket, Sitze im Fahrerhaus: Beifahrerdoppelsitz multifunktional mit Staufach, Sitze im Fahrerhaus: Fahrersitz heizbar, Trittstufe hinten, Verzurrösen im Laderaum seitlich<br><br><b>Weitere Ausstattung:</b><br>Ablagegalerie, Airbag Fahrerseite, Außenspiegel elektr. verstell- und heizbar, Außentemperaturanzeige, Begrenzungsleuchten seitlich, Bremsassistent, Drehzahlmesser, Elektr. Bremskraftverteilung, Generator 185 A, Heckflügeltüren ohne Verglasung, Innenraumfilter: Pollenfilter, Karosserie/Aufbau: Kasten Hochraum, Kraftstofftank: 105 Ltr., Kühlergrill mit Chromeinfassung, Lenksäule (Lenkrad) höhenverstellbar, Modellpflege, Motor 2,3 Ltr. - 96 kW dCi Diesel KAT, Radstand 4332 mm, Reifen-Reparaturset, Schadstoffarm nach Abgasnorm Euro 6, Schaltpunktanzeige, Schiebetür Lade-/Fahrgastraum rechts, Schmutzfänger vorn, Seitenschutzleisten, Sitzbezug / Polsterung: Stoff, Sitze im Fahrerhaus: Fahrersitz höhenverstellbar, Tagfahrlicht LED, Verzurrösen Laderaumboden, Wärmeschutzverglasung, Zul. Gesamtgewicht 3,50 t<br><br><b>Wir freuen uns auf Ihren Anruf</b><br><br><b>Unsere Öffnungszeiten:<br></b> Montag bis Freitag 9:00 - 18:00 Uhr <b><br></b> Samstag 10:00 - 14:00 Uhr <b><br></b> Sonntag geschlossen<br><b><br></b> Zwischenverkauf, Irrtümer und Tippfehler vorbehalten<br>Nach §25a MwSt. nicht ausweisbar<br>",
+    "contactInfo": {
+      "address1": "Nieskyer Strasse 901",
+      "address2": "DE-02826 Görlitz",
+      "name": "Gebrauchtwagenmarkt-Görlitz",
+      "openingHours": [
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "10:00 Uhr - 14:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 16.09.2016",
+      "rating": {
+        "count": 9,
+        "totalCount": 103,
+        "score": 4.7,
+        "scoreLocalized": "4,7",
+        "link": "https://www.mobile.de/bewertungen/GebrauchtwagenmarktGoerlitz?lang=de",
+        "recommendationRate": 88,
+        "adRealityRate": 87,
+        "consultingScore": 4.333333333333333,
+        "friendlinessScore": 5,
+        "responseTimeScore": 4.888888888888889
+      },
+      "languages": "Deutsch, Pусский, Български, Polski",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/20/206e4bd0-0e70-493e-8e2a-71cea3e059c9?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/20/206e4bd0-0e70-493e-8e2a-71cea3e059c9?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/20/206e4bd0-0e70-493e-8e2a-71cea3e059c9?rule=mo-360 360w",
+        "alt": "Gebrauchtwagenmarkt-Görlitz"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "Mobil",
+          "number": "+49 (0)1525 3740891",
+          "uri": "tel:+4915253740891"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 3581 767526"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "Johann Cheganov",
+        "role": "Inhaber"
+      },
+      "mapLink": "https://maps.google.com/maps?q=51.15718159999999,14.983623+(Gebrauchtwagenmarkt-G%C3%B6rlitz)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 51.15718159999999,
+        "lon": 14.983623
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=15339626",
+      "country": "DE",
+      "type": "Händler",
+      "numResultsTotal": 82,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=377883614&loanType=balloon&loanDuration=60&downPayment=4199&channel=desktop",
+      "type": "DF",
+      "flowType": "COMBINED",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 4199,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 16800,
+        "interestRateNominal": 4.88,
+        "interestRateEffective": 4.99,
+        "monthlyInstallment": 179.38,
+        "finalInstallment": 9449.55,
+        "totalInterest": 3232.7,
+        "totalAmount": 20032.7,
+        "localized": {
+          "downPayment": "4.199 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "16.800 €",
+          "interestRateNominal": "4,88%",
+          "interestRateEffective": "4,99%",
+          "monthlyInstallment": "180 €",
+          "finalInstallment": "9.449,55 €",
+          "totalInterest": "3.232,70 €",
+          "totalAmount": "20.032,70 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/af/af2b044c-76df-4a1d-a0ce-58780d8139a5?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/af/af2b044c-76df-4a1d-a0ce-58780d8139a5?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/af/af2b044c-76df-4a1d-a0ce-58780d8139a5?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/af/af2b044c-76df-4a1d-a0ce-58780d8139a5?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/af/af2b044c-76df-4a1d-a0ce-58780d8139a5?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c867da14-a2ce-411f-9256-60a97100613e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c867da14-a2ce-411f-9256-60a97100613e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c8/c867da14-a2ce-411f-9256-60a97100613e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c8/c867da14-a2ce-411f-9256-60a97100613e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c867da14-a2ce-411f-9256-60a97100613e?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2ec97d1-d155-4704-90ec-36c52b8d4827?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2ec97d1-d155-4704-90ec-36c52b8d4827?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f2/f2ec97d1-d155-4704-90ec-36c52b8d4827?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f2/f2ec97d1-d155-4704-90ec-36c52b8d4827?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2ec97d1-d155-4704-90ec-36c52b8d4827?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d064390-7c72-4071-b8bb-cbf855369313?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d064390-7c72-4071-b8bb-cbf855369313?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5d/5d064390-7c72-4071-b8bb-cbf855369313?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5d/5d064390-7c72-4071-b8bb-cbf855369313?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d064390-7c72-4071-b8bb-cbf855369313?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/cb/cb9559f7-e8db-4313-9bc4-d75f96f3c905?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/cb/cb9559f7-e8db-4313-9bc4-d75f96f3c905?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/cb/cb9559f7-e8db-4313-9bc4-d75f96f3c905?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/cb/cb9559f7-e8db-4313-9bc4-d75f96f3c905?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/cb/cb9559f7-e8db-4313-9bc4-d75f96f3c905?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/81/815331f0-c284-4dec-a7e6-5d1751ad00e5?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/81/815331f0-c284-4dec-a7e6-5d1751ad00e5?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/81/815331f0-c284-4dec-a7e6-5d1751ad00e5?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/81/815331f0-c284-4dec-a7e6-5d1751ad00e5?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/81/815331f0-c284-4dec-a7e6-5d1751ad00e5?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/36/36820ad5-02a4-4cd3-8ffd-bc35ab6141ee?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/36/36820ad5-02a4-4cd3-8ffd-bc35ab6141ee?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/36/36820ad5-02a4-4cd3-8ffd-bc35ab6141ee?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/36/36820ad5-02a4-4cd3-8ffd-bc35ab6141ee?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/36/36820ad5-02a4-4cd3-8ffd-bc35ab6141ee?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d1afb72-6ce5-4870-bcc5-ac916f61aec5?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d1afb72-6ce5-4870-bcc5-ac916f61aec5?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6d/6d1afb72-6ce5-4870-bcc5-ac916f61aec5?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6d/6d1afb72-6ce5-4870-bcc5-ac916f61aec5?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d1afb72-6ce5-4870-bcc5-ac916f61aec5?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/06/067afee7-ea30-4ed0-948a-e3db4139a08a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/06/067afee7-ea30-4ed0-948a-e3db4139a08a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/06/067afee7-ea30-4ed0-948a-e3db4139a08a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/06/067afee7-ea30-4ed0-948a-e3db4139a08a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/06/067afee7-ea30-4ed0-948a-e3db4139a08a?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9779208-7478-48fa-8ce2-a951c69c502f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9779208-7478-48fa-8ce2-a951c69c502f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f9779208-7478-48fa-8ce2-a951c69c502f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f9779208-7478-48fa-8ce2-a951c69c502f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9779208-7478-48fa-8ce2-a951c69c502f?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/67/67b05c77-d58c-4375-bb44-307fffb80efd?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/67/67b05c77-d58c-4375-bb44-307fffb80efd?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/67/67b05c77-d58c-4375-bb44-307fffb80efd?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/67/67b05c77-d58c-4375-bb44-307fffb80efd?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/67/67b05c77-d58c-4375-bb44-307fffb80efd?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b5/b589551b-4038-413a-a228-eec0a4ee35a0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b5/b589551b-4038-413a-a228-eec0a4ee35a0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b5/b589551b-4038-413a-a228-eec0a4ee35a0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b5/b589551b-4038-413a-a228-eec0a4ee35a0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b5/b589551b-4038-413a-a228-eec0a4ee35a0?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b634ff20-61d8-4102-a5c2-764f308f9ac1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b634ff20-61d8-4102-a5c2-764f308f9ac1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b6/b634ff20-61d8-4102-a5c2-764f308f9ac1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b6/b634ff20-61d8-4102-a5c2-764f308f9ac1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b634ff20-61d8-4102-a5c2-764f308f9ac1?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/aa/aac206c3-2172-4859-af73-0070327f5571?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/aa/aac206c3-2172-4859-af73-0070327f5571?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/aa/aac206c3-2172-4859-af73-0070327f5571?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/aa/aac206c3-2172-4859-af73-0070327f5571?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/aa/aac206c3-2172-4859-af73-0070327f5571?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8db43c51-2919-4c8a-a0e5-2e5447aca9d7?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8db43c51-2919-4c8a-a0e5-2e5447aca9d7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8d/8db43c51-2919-4c8a-a0e5-2e5447aca9d7?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/8d/8db43c51-2919-4c8a-a0e5-2e5447aca9d7?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8db43c51-2919-4c8a-a0e5-2e5447aca9d7?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ed/ed10f5bb-9d39-4a40-91ce-54841ccad239?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ed/ed10f5bb-9d39-4a40-91ce-54841ccad239?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ed/ed10f5bb-9d39-4a40-91ce-54841ccad239?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ed/ed10f5bb-9d39-4a40-91ce-54841ccad239?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ed/ed10f5bb-9d39-4a40-91ce-54841ccad239?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5e15f6f-6f57-40f3-916c-bfbb9c8375c8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5e15f6f-6f57-40f3-916c-bfbb9c8375c8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e5/e5e15f6f-6f57-40f3-916c-bfbb9c8375c8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e5/e5e15f6f-6f57-40f3-916c-bfbb9c8375c8?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5e15f6f-6f57-40f3-916c-bfbb9c8375c8?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b797c813-30d3-43bd-af1a-7b5315db888f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b797c813-30d3-43bd-af1a-7b5315db888f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b7/b797c813-30d3-43bd-af1a-7b5315db888f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b7/b797c813-30d3-43bd-af1a-7b5315db888f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b797c813-30d3-43bd-af1a-7b5315db888f?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c77a822-3839-49a8-8dad-54340a72afa6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c77a822-3839-49a8-8dad-54340a72afa6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1c/1c77a822-3839-49a8-8dad-54340a72afa6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1c/1c77a822-3839-49a8-8dad-54340a72afa6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c77a822-3839-49a8-8dad-54340a72afa6?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/87/874b077a-656c-4943-bb35-23876ac760bf?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/87/874b077a-656c-4943-bb35-23876ac760bf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/87/874b077a-656c-4943-bb35-23876ac760bf?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/87/874b077a-656c-4943-bb35-23876ac760bf?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/87/874b077a-656c-4943-bb35-23876ac760bf?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2f9b9d-6e0a-4130-bf7f-a17f11cf8ecc?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2f9b9d-6e0a-4130-bf7f-a17f11cf8ecc?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2f9b9d-6e0a-4130-bf7f-a17f11cf8ecc?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2f9b9d-6e0a-4130-bf7f-a17f11cf8ecc?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2f9b9d-6e0a-4130-bf7f-a17f11cf8ecc?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Master"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/af/af2b044c-76df-4a1d-a0ce-58780d8139a5?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/af/af2b044c-76df-4a1d-a0ce-58780d8139a5?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpcorerecommenderpopularfiltersnobanner&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpsbsmodelimprovementscontrol&client.abtests=accwebpublichomegaaa4off&adId=377883614"
+    },
+    "similarAdsInfo": {
+      "type": "similar-ads",
+      "apiParams": "/ml-recommendations-by-id/377883614"
+    },
+    "vehicleCondition": "used",
+    "make": "Renault",
+    "model": "Master",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "ddc77b69-c15d-021c-1ded-32b99f35906e"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Renault Master für 20.999 €",
+    "price_text": "Preis 20.999 € Guter Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug",
+      "Kategorie": "Van/Minibus",
+      "Kilometerstand": "45.000 km",
+      "Hubraum": "2.299 cm³",
+      "Leistung": "96 kW (131 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Diesel",
+      "Anzahl Sitzplätze": "3",
+      "Anzahl der Türen": "4/5",
+      "Schiebetür": "Schiebetür rechts",
+      "Getriebe": "Schaltgetriebe",
+      "Schadstoffklasse": "Euro6",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "12/2019",
+      "Anzahl der Fahrzeughalter": "1",
+      "HU": "Neu",
+      "Klimatisierung": "Klimaautomatik",
+      "Einparkhilfe": "Hinten",
+      "Airbags": "Fahrer-Airbag",
+      "Farbe (Hersteller)": "MINERAL WEISS",
+      "Farbe": "Weiß",
+      "Innenausstattung": "Stoff, Schwarz"
+    },
+    "description": "Gebrauchtfahrzeug • 45.000 km • 96 kW (131 PS) • Diesel • Schaltgetriebe • 12/2019",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/af/af2b044c-76df-4a1d-a0ce-58780d8139a5?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c8/c867da14-a2ce-411f-9256-60a97100613e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2ec97d1-d155-4704-90ec-36c52b8d4827?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d064390-7c72-4071-b8bb-cbf855369313?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cb/cb9559f7-e8db-4313-9bc4-d75f96f3c905?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/81/815331f0-c284-4dec-a7e6-5d1751ad00e5?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/36/36820ad5-02a4-4cd3-8ffd-bc35ab6141ee?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d1afb72-6ce5-4870-bcc5-ac916f61aec5?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/06/067afee7-ea30-4ed0-948a-e3db4139a08a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9779208-7478-48fa-8ce2-a951c69c502f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/67/67b05c77-d58c-4375-bb44-307fffb80efd?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b5/b589551b-4038-413a-a228-eec0a4ee35a0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b6/b634ff20-61d8-4102-a5c2-764f308f9ac1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/aa/aac206c3-2172-4859-af73-0070327f5571?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8d/8db43c51-2919-4c8a-a0e5-2e5447aca9d7?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ed/ed10f5bb-9d39-4a40-91ce-54841ccad239?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5e15f6f-6f57-40f3-916c-bfbb9c8375c8?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b7/b797c813-30d3-43bd-af1a-7b5315db888f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c77a822-3839-49a8-8dad-54340a72afa6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/87/874b077a-656c-4943-bb35-23876ac760bf?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2f9b9d-6e0a-4130-bf7f-a17f11cf8ecc?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/af/af2b044c-76df-4a1d-a0ce-58780d8139a5?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c867da14-a2ce-411f-9256-60a97100613e?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2ec97d1-d155-4704-90ec-36c52b8d4827?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d064390-7c72-4071-b8bb-cbf855369313?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/cb/cb9559f7-e8db-4313-9bc4-d75f96f3c905?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/81/815331f0-c284-4dec-a7e6-5d1751ad00e5?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/36/36820ad5-02a4-4cd3-8ffd-bc35ab6141ee?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d1afb72-6ce5-4870-bcc5-ac916f61aec5?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/06/067afee7-ea30-4ed0-948a-e3db4139a08a?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9779208-7478-48fa-8ce2-a951c69c502f?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/67/67b05c77-d58c-4375-bb44-307fffb80efd?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b5/b589551b-4038-413a-a228-eec0a4ee35a0?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b634ff20-61d8-4102-a5c2-764f308f9ac1?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/aa/aac206c3-2172-4859-af73-0070327f5571?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8db43c51-2919-4c8a-a0e5-2e5447aca9d7?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ed/ed10f5bb-9d39-4a40-91ce-54841ccad239?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5e15f6f-6f57-40f3-916c-bfbb9c8375c8?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b797c813-30d3-43bd-af1a-7b5315db888f?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c77a822-3839-49a8-8dad-54340a72afa6?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/87/874b077a-656c-4943-bb35-23876ac760bf?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2f9b9d-6e0a-4130-bf7f-a17f11cf8ecc?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

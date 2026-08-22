@@ -1,0 +1,610 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=457609011&sb=rel&od=up&vc=Car&dam=false&fr=2018&ml=%3A80000&ms=16700%3B%3B%3B&ms=4%3B%3B%3B&ms=1700%3B%3B%3B&ms=1900%3B%3B%3B&ms=3100%3B%3B%3B&ms=3500%3B%3B%3B&ms=4700%3B%3B%3B&ms=8600%3B%3B%3B&ms=270%3B%3B%3B&ms=14600%3B%3B%3B&ms=12400%3B%3B%3B&ms=11650%3B%3B%3B&ms=14800%3B%3B%3B&ms=15200%3B%3B%3B&ms=15500%3B%3B%3B&ms=15900%3B%3B%3B&ms=16600%3B%3B%3B&ms=17200%3B%3B%3B&ms=20100%3B%3B%3B&ms=21600%3B%3B%3B&ms=137%3B%3B%3B&p=35000&pa=CAM_360_DEGREES&pa=REAR_VIEW_CAM&s=Car&ref=srp&searchId=c1daec15-2b92-693c-3380-0110736613e9&refId=c1daec15-2b92-693c-3380-0110736613e9",
+  "scraped_at": "2026-07-06T18:29:30+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Sportwagen/Coupé"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "C Coupe (BM 205)(12.2015->)"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "C 63 S AMG (205.387)"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Sofort"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "67.900 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "3.982 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "375 kW (510 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "4"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "2/3"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6d"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "07/2021"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "360°-Kamera, Vorne, Hinten, Selbstlenkende Systeme"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "OBSIDIANSCHWARZ - METALLIC"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Schwarz Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Vollleder"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.820 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "8"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Mercedes-Benz C 63 AMG",
+    "subTitle": "S *PANO*WIDE*KLAPPE*HUD*BURME*VOLL!!",
+    "makeKey": "Mercedes-Benz",
+    "modelKey": "C 63 AMG",
+    "isNew": false,
+    "onCustomerBehalf": false,
+    "isConditionNew": false,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Adaptives Fahrwerk",
+      "Adaptives Kurvenlicht",
+      "Alarmanlage",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Ausparkassistent",
+      "Berganfahrassistent",
+      "Blendfreies Fernlicht",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Sitzeinstellung",
+      "Elektr. Sitzeinstellung mit Memory-Funktion",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Gepäckraumabtrennung",
+      "Geschwindigkeitsbegrenzer",
+      "Head-Up Display",
+      "Heckantrieb",
+      "Innenspiegel autom. abblendend",
+      "Inspektion neu",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Massagesitze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Panorama-Dach",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Scheckheftgepflegt",
+      "Schiebedach",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sommerreifen",
+      "Soundsystem",
+      "Sportfahrwerk",
+      "Sportpaket",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Winterpaket",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "DEUTSCHES FAHRZEUG"
+    ],
+    "sellerId": 38758395,
+    "priceRating": {
+      "rating": "REASONABLE_PRICE",
+      "ratingLabel": "Fairer Preis",
+      "thresholdLabels": [
+        "44.200 €",
+        "57.500 €",
+        "61.900 €",
+        "68.900 €",
+        "73.900 €",
+        "82.200 €"
+      ],
+      "vehiclePriceOffset": 86
+    },
+    "segment": "Car",
+    "title": "Mercedes-Benz C 63 AMG S *PANO*WIDE*KLAPPE*HUD*BURME*VOLL!!",
+    "url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-c-63-amg-s-pano-wide-klappe-hud-burme-voll-roth/457609011.html",
+    "vc": "Car",
+    "category": "SportsCar",
+    "id": 457609011,
+    "price": {
+      "gross": "67.950 €",
+      "grossAmount": 67950,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "kba": {
+      "hsn": "1313",
+      "tsn": "EXC"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_1usp",
+      "126": "hero_logo_10_NA_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Herzlich willkommen bei Autohaus Noris GmbH! Schön, dass Sie sich für unsere jungen, qualitativ hochwertigen Gebrauchtfahrzeuge interessieren.</b><br><b>Bei uns finden Sie sorgfältig ausgewählte Fahrzeuge, die für ihre Qualität und Zuverlässigkeit bekannt sind. Jedes Auto wird gründlich geprüft, um Ihnen das besteFahrerlebnis zu bieten. </b><br><b>Zögern Sie nicht, uns bei Fragen zu kontaktieren – wir sind hier, um Ihnen zu helfen! Viel Freude beim Entdecken Ihres neuen Fahrzeugs!</b><br><b>Sonderausstattung:</b><br>\t<ul><li><b>Deutsches FAHRZEUG / UNFALLFREI / Carvertical bericht vorhanden.</b></li>\t<li><b>Ablage-Paket</b></li>\t<li><b>Ambiente-Beleuchtung</b></li>\t<li><b>AMG Track Package</b></li>\t<li><b>Armaturentafel Oberteil in Nappaoptik</b></li>\t<li><b>Diebstahlschutz-Paket</b></li>\t<li><b>Digitales Instrumenten-Display</b></li>\t<li><b>Fahrassistenz-Paket High-End</b></li>\t<li><b>Fahrassistenz-System: Verkehrszeichenerkennung</b></li>\t<li><b>Gurtbringer</b></li>\t<li><b>Head-up-Display (Frontsichtanzeige)</b></li>\t<li><b>Infotainment-Paket High-End</b></li>\t<li><b>Innenausstattung: Zierteile Carbon (AMG)</b></li>\t<li><b>Keyless-Go-Paket</b></li>\t<li><b>Komfort-Paket Advanced</b></li>\t<li><b>Lenkrad (AMG Performance, Leder)</b></li>\t<li><b>Licht-Paket High-End</b></li>\t<li><b>LM-Felgen vorn/hinten: 9x19 / 10,5x20 (AMG, Kreuzspeichen, geschmiedet)</b></li>\t<li><b>Metallic-Lackierung</b></li>\t<li><b>Multifunktions-Telefonie</b></li>\t<li><b>Panorama-Schiebedach</b></li>\t<li><b>Park-Paket High-End</b></li>\t<li><b>Reifen-Reparaturset (Tirefit)</b></li>\t<li><b>Scheibenwaschanlage beheizt</b></li>\t<li><b>Seitenscheiben hinten und Heckscheibe abgedunkelt</b></li>\t<li><b>Sender für Garagentoröffner (integriert)</b></li>\t<li><b>Sicherheitsgurte rot</b></li>\t<li><b>Sitzbezug / Polsterung: Leder Nappa</b></li>\t<li><b>Sitze vorn: Klimatisierung</b></li>\t<li><b>Sport-Auspuffanlage (AMG Performance)</b></li>\t<li><b>Surround-System Burmester</b></li>\t<li><b>Vorrüstung Mobiltelefon/Handy / Komfort-Telefonie / LTE-fähig</b></li></ul><br><b>Serien-Ausstattung:</b><br>\t<ul><li>Adaptives Bremslicht</li>\t<li>Airbag Beifahrerseite abschaltbar</li>\t<li>Airbag Fahrer-/Beifahrerseite</li>\t<li>Aktive Motorhaube</li>\t<li>AMG Driver's Package</li>\t<li>AMG-Line Exterieur</li>\t<li>Anti-Blockier-System (ABS)</li>\t<li>Armauflage vorn mit Fach</li>\t<li>Außenspiegel elektr. verstell- und heizbar, beide</li>\t<li>Außenspiegel Wagenfarbe</li>\t<li>Beckenairbag vorn (Pelvisbag)</li>\t<li>Bremssättel Rot lackiert</li>\t<li>DAB-Tuner (Radioempfang digital)</li>\t<li>Design- und Ausstattungslinie Standard</li>\t<li>Dynamische Motorlagerung</li>\t<li>Edelstahlpedale Sportdesign</li>\t<li>Einschaltautomatik für Fahrlicht</li>\t<li>Einstiegsleisten (AMG) beleuchtet</li>\t<li>Elektron. Sperrdifferential</li>\t<li>Elektron. Stabilitäts-Programm (ESP)</li>\t<li>Fahrassistenz-System: Agility Select / Dynamic Select (Fahrmodusschalter)</li>\t<li>Fahrassistenz-System: Attention-Assist (Müdigkeitserkennungs-Sensor)</li>\t<li>Fahrassistenz-System: Auffahrwarnsystem mit Bremsfunktion (Collision Prevention Assist)</li>\t<li>Fahrassistenz-System: Berganfahrhilfe</li>\t<li>Fahrzeug Setup (Onlinedienste / Apps)</li>\t<li>Fahrzeug-Monitoring (Fahrzeugortungssystem)</li>\t<li>Fensterheber elektr. mit Einklemmschutz</li>\t<li>Fernentriegelung Heckdeckel</li>\t<li>Feststellbremse elektrisch</li>\t<li>Frontschürze</li>\t<li>Fußmatten AMG</li>\t<li>Getriebe Automatik - (9-Stufen)</li>\t<li>Heckleuchten LED</li>\t<li>Heckschürze</li>\t<li>Infotainment-System: Mercedes me connect</li>\t<li>Innenhimmel schwarz</li>\t<li>Innenraumlicht-Paket</li>\t<li>Isofix-Aufnahmen für Kindersitz an Rücksitz</li>\t<li>Karosserie: 2-türig</li>\t<li>Keyless Go Startanlage</li>\t<li>Klimaautomatik (Thermatic 2-Zonen)</li>\t<li>Knieairbag Fahrerseite</li>\t<li>Kommunikationsmodul (LTE) Vorbereitung Mercedes me connect</li>\t<li>Kopf-Airbag-System (Windowbag)</li>\t<li>Kraftstofftank: vergrößert</li>\t<li>Kühlergrill Diamant-Optik</li>\t<li>Lenkrad - AMG Lenkradtasten</li>\t<li>Lenkrad mit Schaltwippen/-tasten</li>\t<li>Mercedes-Benz Notrufsystem</li>\t<li>Modellpflege mit Code</li>\t<li>Motor 4,0 Ltr. - 375 kW V8 KAT</li>\t<li>Motorhaube mit Powerdome</li>\t<li>Parameterlenkung</li>\t<li>Reifendruck-Kontrollsystem</li>\t<li>Reiserechner</li>\t<li>Rücksitzlehne geteilt / klappbar</li>\t<li>Schadstoffarm nach Abgasnorm Euro 6d</li>\t<li>Scheibenwischer mit Regensensor</li>\t<li>Seitenairbag (Sidebag) vorn</li>\t<li>Sport-Fahrwerk (AMG Ride Control)</li>\t<li>Sportsitze vorn</li>\t<li>Start/Stop-Anlage</li>\t<li>Styling-Paket (AMG / Exterieur)</li>\t<li>Traction-Control-System (AMG)</li>\t<li>Verkleidung / Spoiler hinten (AMG)</li>\t<li>Warnanlage / Statusanzeige für Sicherheitsgurte im Fond</li>\t<li>Wegfahrsperre</li>\t<li>Wärmeschutzverglasung</li>\t<li>Zentralverriegelung mit Fernbedienung</li></ul> <br>- <b>Winterreifen </b>gg. Aufpreis verfügbar<br><b>-Finanzierung </b>bis zu 84 Monaten und TOP-Konditionen möglich // Direkte Zusage sowie<br>Altkreditablösung.<br> <br>- <b>Inzahlungnahme </b>Ihres Fahrzeuges // Wir bieten Ihnen die Möglichkeit einer Fernbewertung Ihres<br>Fahrzeuges gerne per WhatsApp +491621669212<br><br>- Wir bieten: <b>Regionalen Zulassungsservice</b> inklusive <b>Kennzeichen</b> und Amtsgebühren sowie<br><b>Kurzzeitkennzeichen, Ausfuhrkennzeichen</b> und <b>komplette Zollabwicklung</b>. (gegen Aufpreis)<br> <br>- Wir sind seit 2009 in der<b> Automobil-, Sportwagen- und</b><br><b>Gebrauchtwagenbranche</b> tätig.<br>- Auf wunsch liefern wir <b>Bundesweit</b> ihr Fahrzeug bis zur <b>Haustür. (gg. Aufpreis)</b><br> <br><b>Unser Dealer Management System überträgt alles anhand der Fahrgestellnummer. Trotz größter Sorgfalt bei der Erstellung unserer Inserate sind Datenübermittlungsfehler nicht ausgeschlossen. Alle Angaben, Bilder und Beschreibungen dienen der allgemeinen Fahrzeugbeschreibung und stellen keine zugesicherten Eigenschaften dar. Verbindlich sind ausschließlich die im Kaufvertrag genannten Angaben. Zwischenverkauf, Änderungen und Irrtümer vorbehalten.</b><br> <br><br> <br> <br>",
+    "contactInfo": {
+      "address1": "Welser Str. 4",
+      "address2": "DE-91154 Roth",
+      "name": "Autohaus Noris GmbH",
+      "markingText": "<b>Herzlich willkommen bei Autohaus Noris GmbH!</b><br />Wir sind Ihr vertrauensvoller Partner im Handel mit hochwertigen Gebrauchtwagen. Unser junges, dynamisches Team legt großen Wert auf familiäre Atmosphäre und persönlichen Service. Bei uns finden Sie sorgfältig geprüfte Fahrzeuge, die nicht nur technisch einwandfrei sind, sondern auch mit einem hervorragenden Preis-Leistungs-Verhältnis überzeugen.Egal ob Sie Ihr Traumauto suchen oder Ihr altes Fahrzeug in gute Hände geben möchten Vertrauen Sie auf unsere Erfahrung und lassen Sie sich von uns zu Ihrem perfekten Fahrzeug führen!Ihr Autohaus Noris Team",
+      "openingHours": [
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "10:00 Uhr - 13:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 20.03.2025",
+      "rating": {
+        "count": 9,
+        "totalCount": 9,
+        "score": 4.9,
+        "scoreLocalized": "4,9",
+        "link": "https://www.mobile.de/bewertungen/AutohausNorisGmbH?lang=de",
+        "recommendationRate": 100,
+        "adRealityRate": 100,
+        "consultingScore": 4.888888888888889,
+        "friendlinessScore": 5,
+        "responseTimeScore": 4.888888888888889
+      },
+      "languages": "Deutsch, Slovenščina, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa8d1a5d-4bce-4b65-8552-08b98dd623fd?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa8d1a5d-4bce-4b65-8552-08b98dd623fd?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/fa/fa8d1a5d-4bce-4b65-8552-08b98dd623fd?rule=mo-360 360w",
+        "alt": "Autohaus Noris GmbH"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "Mobil",
+          "number": "+49 (0)162 1669212",
+          "uri": "tel:+491621669212"
+        },
+        {
+          "type": "Mobil",
+          "number": "+49 (0)162 3931258",
+          "uri": "tel:+491623931258"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {},
+      "mapLink": "https://maps.google.com/maps?q=49.2497823,11.1077268+(Autohaus%20Noris%20GmbH)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 49.2497823,
+        "lon": 11.1077268
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=38758395",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b272fc9-77bf-462f-87dc-0a1b970fefe1?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b272fc9-77bf-462f-87dc-0a1b970fefe1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6b/6b272fc9-77bf-462f-87dc-0a1b970fefe1?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/6b/6b272fc9-77bf-462f-87dc-0a1b970fefe1?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b272fc9-77bf-462f-87dc-0a1b970fefe1?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/79/790aacae-6980-4a9f-ad6d-acecc0791e07?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/79/790aacae-6980-4a9f-ad6d-acecc0791e07?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/79/790aacae-6980-4a9f-ad6d-acecc0791e07?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/79/790aacae-6980-4a9f-ad6d-acecc0791e07?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/79/790aacae-6980-4a9f-ad6d-acecc0791e07?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/b4/b425fd75-766e-4133-86d3-448f0498a415?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b4/b425fd75-766e-4133-86d3-448f0498a415?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b4/b425fd75-766e-4133-86d3-448f0498a415?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/b4/b425fd75-766e-4133-86d3-448f0498a415?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b4/b425fd75-766e-4133-86d3-448f0498a415?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/16/169ddbd0-ebbb-43fa-9e48-5b646b371043?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/16/169ddbd0-ebbb-43fa-9e48-5b646b371043?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/16/169ddbd0-ebbb-43fa-9e48-5b646b371043?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/16/169ddbd0-ebbb-43fa-9e48-5b646b371043?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/16/169ddbd0-ebbb-43fa-9e48-5b646b371043?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c44af35-39f0-4dcf-9e96-4bb24365018c?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c44af35-39f0-4dcf-9e96-4bb24365018c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6c/6c44af35-39f0-4dcf-9e96-4bb24365018c?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/6c/6c44af35-39f0-4dcf-9e96-4bb24365018c?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c44af35-39f0-4dcf-9e96-4bb24365018c?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3faca17-66e5-4eef-9075-b265ba181c93?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3faca17-66e5-4eef-9075-b265ba181c93?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b3/b3faca17-66e5-4eef-9075-b265ba181c93?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b3/b3faca17-66e5-4eef-9075-b265ba181c93?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 19,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "BDK",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=457609011&loanType=balloon&loanDuration=60&downPayment=13590&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "BDK",
+        "bankName": "Bank Deutsches Kraftfahrzeuggewerbe GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 13590,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 54360,
+        "interestRateNominal": 6.78,
+        "interestRateEffective": 6.99,
+        "monthlyInstallment": 504.96,
+        "finalInstallment": 40770,
+        "totalInterest": 16202.41,
+        "totalAmount": 70562.41,
+        "localized": {
+          "downPayment": "13.590 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "54.360 €",
+          "interestRateNominal": "6,78%",
+          "interestRateEffective": "6,99%",
+          "monthlyInstallment": "505 €",
+          "finalInstallment": "40.770,00 €",
+          "totalInterest": "16.202,41 €",
+          "totalAmount": "70.562,41 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Bank Deutsches Kraftfahrzeuggewerbe GmbH (Darlehensgeber), Fuhlsbüttler Straße 437, 22309 Hamburg. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/05/05e749b9-9e43-47b5-bdcd-9edd07246eb9?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/05/05e749b9-9e43-47b5-bdcd-9edd07246eb9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/05/05e749b9-9e43-47b5-bdcd-9edd07246eb9?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/05/05e749b9-9e43-47b5-bdcd-9edd07246eb9?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/05/05e749b9-9e43-47b5-bdcd-9edd07246eb9?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f4/f42d37b2-5133-4cc6-814e-d3d5d46dd378?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f4/f42d37b2-5133-4cc6-814e-d3d5d46dd378?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f4/f42d37b2-5133-4cc6-814e-d3d5d46dd378?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f4/f42d37b2-5133-4cc6-814e-d3d5d46dd378?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f4/f42d37b2-5133-4cc6-814e-d3d5d46dd378?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/00/00bf9c73-7cf2-4986-87be-b7c84eb53821?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/00/00bf9c73-7cf2-4986-87be-b7c84eb53821?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/00/00bf9c73-7cf2-4986-87be-b7c84eb53821?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/00/00bf9c73-7cf2-4986-87be-b7c84eb53821?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/00/00bf9c73-7cf2-4986-87be-b7c84eb53821?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/74/74b065bb-64d2-41c2-a84e-8121b2b4d53a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/74/74b065bb-64d2-41c2-a84e-8121b2b4d53a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/74/74b065bb-64d2-41c2-a84e-8121b2b4d53a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/74/74b065bb-64d2-41c2-a84e-8121b2b4d53a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/74/74b065bb-64d2-41c2-a84e-8121b2b4d53a?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a628c3b-08a9-4594-af83-9c7dfb3a9473?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a628c3b-08a9-4594-af83-9c7dfb3a9473?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5a/5a628c3b-08a9-4594-af83-9c7dfb3a9473?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5a/5a628c3b-08a9-4594-af83-9c7dfb3a9473?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a628c3b-08a9-4594-af83-9c7dfb3a9473?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0ffc7f89-a637-4ecd-99ee-49cf93774de4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0ffc7f89-a637-4ecd-99ee-49cf93774de4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/0f/0ffc7f89-a637-4ecd-99ee-49cf93774de4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/0f/0ffc7f89-a637-4ecd-99ee-49cf93774de4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0ffc7f89-a637-4ecd-99ee-49cf93774de4?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/87/876512fb-ad6b-4e38-8794-4c521b967e6c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/87/876512fb-ad6b-4e38-8794-4c521b967e6c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/87/876512fb-ad6b-4e38-8794-4c521b967e6c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/87/876512fb-ad6b-4e38-8794-4c521b967e6c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/87/876512fb-ad6b-4e38-8794-4c521b967e6c?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac75262b-ecdf-40c0-896c-6ad15296e797?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac75262b-ecdf-40c0-896c-6ad15296e797?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ac/ac75262b-ecdf-40c0-896c-6ad15296e797?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ac/ac75262b-ecdf-40c0-896c-6ad15296e797?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac75262b-ecdf-40c0-896c-6ad15296e797?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/46/46794559-c333-4424-aaa1-c385ab295a4b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/46/46794559-c333-4424-aaa1-c385ab295a4b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/46/46794559-c333-4424-aaa1-c385ab295a4b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/46/46794559-c333-4424-aaa1-c385ab295a4b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/46/46794559-c333-4424-aaa1-c385ab295a4b?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f61f3b6f-2c65-4995-9dad-408a38fbbec5?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f61f3b6f-2c65-4995-9dad-408a38fbbec5?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f6/f61f3b6f-2c65-4995-9dad-408a38fbbec5?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f6/f61f3b6f-2c65-4995-9dad-408a38fbbec5?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f61f3b6f-2c65-4995-9dad-408a38fbbec5?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 63 AMG"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/05/05e749b9-9e43-47b5-bdcd-9edd07246eb9?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/05/05e749b9-9e43-47b5-bdcd-9edd07246eb9?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpcorerecommenderpopularfiltersnobanner&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=accwebpublichomegaaa4on&client.abtests=cossrpsbsmodelimprovementsv1&adId=457609011"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=67950&c=SportsCar&ms=17200%3B198&id%21=457609011&vc=Car&sid=38758395"
+    },
+    "vehicleCondition": "used",
+    "make": "Mercedes-Benz",
+    "model": "C 63 AMG",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "c1daec15-2b92-693c-3380-0110736613e9"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Mercedes-Benz C 63 AMG für 67.950 €",
+    "price_text": "Preis 67.950 € Fairer Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "Sportwagen/Coupé",
+      "Baureihe": "C Coupe (BM 205)(12.2015->)",
+      "Ausstattungslinie": "C 63 S AMG (205.387)",
+      "Verfügbarkeit": "Sofort",
+      "Kilometerstand": "67.900 km",
+      "Hubraum": "3.982 cm³",
+      "Leistung": "375 kW (510 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Anzahl Sitzplätze": "4",
+      "Anzahl der Türen": "2/3",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro6d",
+      "Erstzulassung": "07/2021",
+      "HU": "Neu",
+      "Klimatisierung": "Klimaautomatik",
+      "Einparkhilfe": "360°-Kamera, Vorne, Hinten, Selbstlenkende Systeme",
+      "Farbe (Hersteller)": "OBSIDIANSCHWARZ - METALLIC",
+      "Farbe": "Schwarz Metallic",
+      "Innenausstattung": "Vollleder",
+      "Gewicht": "1.820 kg",
+      "Zylinder": "8"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 67.900 km • 375 kW (510 PS) • Benzin • Automatik • 07/2021",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/05/05e749b9-9e43-47b5-bdcd-9edd07246eb9?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f4/f42d37b2-5133-4cc6-814e-d3d5d46dd378?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/00/00bf9c73-7cf2-4986-87be-b7c84eb53821?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/74/74b065bb-64d2-41c2-a84e-8121b2b4d53a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a628c3b-08a9-4594-af83-9c7dfb3a9473?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0f/0ffc7f89-a637-4ecd-99ee-49cf93774de4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/87/876512fb-ad6b-4e38-8794-4c521b967e6c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac75262b-ecdf-40c0-896c-6ad15296e797?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/46/46794559-c333-4424-aaa1-c385ab295a4b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f6/f61f3b6f-2c65-4995-9dad-408a38fbbec5?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/05/05e749b9-9e43-47b5-bdcd-9edd07246eb9?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f4/f42d37b2-5133-4cc6-814e-d3d5d46dd378?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/00/00bf9c73-7cf2-4986-87be-b7c84eb53821?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/74/74b065bb-64d2-41c2-a84e-8121b2b4d53a?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a628c3b-08a9-4594-af83-9c7dfb3a9473?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0ffc7f89-a637-4ecd-99ee-49cf93774de4?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/87/876512fb-ad6b-4e38-8794-4c521b967e6c?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac75262b-ecdf-40c0-896c-6ad15296e797?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/46/46794559-c333-4424-aaa1-c385ab295a4b?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f61f3b6f-2c65-4995-9dad-408a38fbbec5?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

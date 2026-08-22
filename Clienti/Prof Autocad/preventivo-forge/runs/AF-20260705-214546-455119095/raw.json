@@ -1,0 +1,1088 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=455119095&sb=rel&od=up&vc=Car&dam=false&fr=2018&ml=%3A80000&ms=16700%3B%3B%3B&ms=4%3B%3B%3B&ms=1700%3B%3B%3B&ms=1900%3B%3B%3B&ms=3100%3B%3B%3B&ms=3500%3B%3B%3B&ms=4700%3B%3B%3B&ms=8600%3B%3B%3B&ms=270%3B%3B%3B&ms=14600%3B%3B%3B&ms=12400%3B%3B%3B&ms=11650%3B%3B%3B&ms=14800%3B%3B%3B&ms=15200%3B%3B%3B&ms=15500%3B%3B%3B&ms=15900%3B%3B%3B&ms=16600%3B%3B%3B&ms=17200%3B%3B%3B&ms=20100%3B%3B%3B&ms=21600%3B%3B%3B&ms=137%3B%3B%3B&p=35000&pa=CAM_360_DEGREES&pa=REAR_VIEW_CAM&s=Car&ref=srp&searchId=c750c3f0-83bb-fc94-9e70-bdb893464f75&refId=c750c3f0-83bb-fc94-9e70-bdb893464f75",
+  "scraped_at": "2026-07-05T19:45:54+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Kombi"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "E -Klasse T-Modell (BM 213)(06.2016->)"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "E 63 AMG 4Matic (213.288)"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "32.500 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "3.982 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "420 kW (571 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "10,8 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "246 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "10,8 l/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "08/2019"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Vorne, Hinten, Selbstlenkende Systeme, Kamera"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "SELENITGRAU - METALLICLACK"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grau Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Vollleder, Schwarz"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "1.900 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "750 kg"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "2.060 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "8"
+      },
+      {
+        "label": "Tankgröße",
+        "tag": "fuelTankVolume",
+        "value": "80 l"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Mercedes-Benz E 63 AMG",
+    "subTitle": "E63 AMG T 4Matic *Sp.auspuff*Matrix*Stzklm.*1.HD",
+    "makeKey": "Mercedes-Benz",
+    "modelKey": "E 63 AMG",
+    "isNew": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Adaptives Fahrwerk",
+      "Adaptives Kurvenlicht",
+      "Alarmanlage",
+      "Allradantrieb",
+      "Ambiente-Beleuchtung",
+      "Anhängerrangierassistent",
+      "Armlehne",
+      "Ausparkassistent",
+      "Beheizbare Frontscheibe",
+      "Beheizbares Lenkrad",
+      "Berganfahrassistent",
+      "Blendfreies Fernlicht",
+      "Bluetooth",
+      "Bordcomputer",
+      "Dachreling",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Sitzeinstellung",
+      "Elektr. Sitzeinstellung, hinten",
+      "Elektr. Sitzeinstellung mit Memory-Funktion",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Gepäckraumabtrennung",
+      "Geschwindigkeitsbegrenzer",
+      "Induktionsladen für Smartphones",
+      "Innenspiegel autom. abblendend",
+      "Inspektion neu",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Luftfederung",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Navigationsvorbereitung",
+      "Nebelscheinwerfer",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Scheckheftgepflegt",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzbelüftung",
+      "Sitzheizung",
+      "Sitzheizung hinten",
+      "Sommerreifen",
+      "Soundsystem",
+      "Sportfahrwerk",
+      "Sportpaket",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Umklappbarer Beifahrersitz",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Winterreifen",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "Finanzierung",
+      "Inzahlungnahme",
+      "Inklusive Anmeldung"
+    ],
+    "sellerId": 810532,
+    "priceRating": {
+      "rating": "VERY_GOOD_PRICE",
+      "ratingLabel": "Sehr guter Preis",
+      "thresholdLabels": [
+        "46.200 €",
+        "60.100 €",
+        "64.700 €",
+        "71.900 €",
+        "77.200 €",
+        "85.800 €"
+      ],
+      "vehiclePriceOffset": 55
+    },
+    "segment": "Car",
+    "title": "Mercedes-Benz E63 AMG T 4Matic *Sp.auspuff*Matrix*Stzklm.*1.HD",
+    "url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-e63-amg-t-4matic-sp-auspuff-matrix-stzklm-1-hd-burg/455119095.html",
+    "vc": "Car",
+    "category": "EstateCar",
+    "id": 455119095,
+    "price": {
+      "gross": "53.900 €",
+      "grossAmount": 53900,
+      "grossCurrency": "EUR",
+      "net": "45.294 €",
+      "netAmount": 45294.12,
+      "type": "FIXED",
+      "vat": "19% MwSt.",
+      "delivery": "inkl. kostenlose Lieferung"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_logo_38_NA_NA_languages_NA"
+    },
+    "deliveryOption": "Lieferung möglich",
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "nationalDelivery": {
+      "radius": "200 km",
+      "period": "3 Tage"
+    },
+    "htmlDescription": "<b>Angeboten wird ein erstklassiger Mercedes-Benz E63 AMG aus erster Hand. Der Wagen hat wenig km und ist Scheckheft gepflegt bei Mercedes.<br><br><br>Sonderausstattung:</b><br><ul><li>AMG Driver's Package</li><li>Audio-Navigationssystem: COMAND Online</li><li>Einstiegsleisten beleuchtet</li><li>Fahrzeug ohne Modellbezeichnung</li><li>Kombiinstrument mit variabler Anzeige (Widescreen Cockpit)</li><li>Kraftstofftank: 80 Ltr. (vergrößerter Inhalt, Volumen 2)</li><li>Memory-Paket</li><li>Multibeam LED</li><li>Park-Paket</li><li>Seitenscheiben hinten und Heckscheibe abgedunkelt</li><li>Sitze vorn: Klimatisierung</li><li>Smartphone integriert</li><li>Spiegel-Paket</li><li>Sport-Auspuffanlage (AMG Performance)</li><li>Zeituhr (Analog)</li></ul><br><br><b>Weitere Ausstattung:</b><br><ul><li>Abgasanlage 2-flutig</li><li>Adaptives Bremslicht</li><li>Airbag Beifahrerseite abschaltbar</li><li>Airbag Fahrer-/Beifahrerseite</li><li>AMG-Line Exterieur</li><li>AMG-Line Interieur</li><li>AMG-Optic-/Styling-Paket 1</li><li>Armaturentafel Oberteil in Ledernachbildung Artico</li><li>Beckenairbag vorn (Pelvisbag)</li><li>Bremsanlage mit großen Bremsscheiben (Hochleistungs-Bremssystem)</li><li>Bremssättel lackiert</li><li>Dachreling (Aluminium)</li><li>Design- und Ausstattungslinie Standard</li><li>Elektron. Sperrdifferential</li><li>Fahrassistenz-System: Agility Select / Dynamic Select (Fahrmodusschalter)</li><li>Fahrassistenz-System: aktiver Bremsassistent</li><li>Fahrassistenz-System: aktiver Park-Assistent</li><li>Fahrassistenz-System: Attention-Assist (Müdigkeitserkennungs-Sensor)</li><li>Fensterheber elektrisch vorn + hinten</li><li>Fußmatten AMG</li><li>Gepäck-/Laderaumabdeckung inkl. Sicherheitsnetz</li><li>Heckklappe mit automatischem Öffnungs- und Schließsystem</li><li>Innenausstattung: Zierteile Aluminium</li><li>Innenhimmel schwarz</li><li>Isofix-Aufnahmen für Kindersitz an Rücksitz</li><li>Karosserie: 5-türig</li><li>KeyFree-Startsystem</li><li>Klimaautomatik (Thermatic 2-Zonen)</li><li>Knieairbag Fahrerseite</li><li>Kommunikationsmodul (LTE) Vorbereitung Mercedes me connect</li><li>Kopf-Airbag-System vorn</li><li>Kühlergrill verchromt</li><li>LM-Felgen</li><li>Luftfederung mit Niveauregulierung Hinterachse</li><li>Media-Display</li><li>Mercedes-Benz Notrufsystem</li><li>Mittelkonsole Klavierlack-Optik</li><li>Motor 4,0 Ltr. - 420 kW V8 KAT</li><li>Motorhaube mit Powerdome</li><li>PRE-SAFE-System</li><li>Reifendruck-Kontrollsystem</li><li>Rücksitzlehne geteilt / klappbar</li><li>Schadstoffarm nach Abgasnorm Euro 6d-TEMP</li><li>Seitenairbag (Sidebag) vorn</li><li>Sitzbezug / Polsterung: Leder Nappa</li><li>Sitze vorn elektr. verstellbar</li><li>Sitzheizung vorn und hinten</li><li>Steckdose (12V-Anschluß) im Koffer-/Laderaum</li></ul><br><br><b>Ihr Vorteil - Unsere Flexiblen Finanzierungsmöglichkeiten!<br><br></b>Wir möchten, dass Sie Ihren Traumwagen mühelos und stressfrei besitzen können. Deshalb bieten wir Ihnen maßgeschneiderte Finanzierungslösungen an, die perfekt auf Ihre individuellen Bedürfnisse zugeschnitten sind. Egal, ob Sie eine niedrige monatliche Rate oder eine schnelle Abwicklung wünschen, unser Expertenteam steht Ihnen zur Seite, um Ihnen die besten Finanzierungsoptionen zu bieten.<b><br><br>Inzahlungnahme - Machen Sie Platz für Ihr neues Traumauto!<br><br></b>Sie möchten sich von Ihrem aktuellen Fahrzeug trennen und in ein aufregendes neues Auto umsteigen? Kein Problem! Wir akzeptieren gerne Ihr derzeitiges Fahrzeug als Inzahlungnahme für Ihren neuen Kauf. Profitieren Sie von einer fairen und transparenten Bewertung, um den bestmöglichen Preis für Ihr Auto zu erhalten. So wird der Weg zu Ihrem Traumauto noch einfacher und bequemer.<b><br><br>Vertrauen Sie auf unsere Erfahrung und Expertise<br><br></b>Als vertrauenswürdiger Autohändler mit fast zwei Jahrzehnten Erfahrung in der Branche und ein Team von Experten, das Ihnen mit Rat und Tat zur Seite steht. Kundenzufriedenheit steht bei uns an erster Stelle, und wir sind stolz darauf, dass unsere Kunden immer wieder zu uns zurückkehren. Besuchen Sie uns noch heute und erleben Sie die Vielfalt und Qualität unserer Fahrzeuge. Entdecken Sie Ihren Traumwagen und lassen Sie sich von unseren Finanzierungsmöglichkeiten sowie der bequemen Inzahlungnahmeoption begeistern. Ihr Weg zu Ihrem Traumauto beginnt hier – vereinbaren Sie jetzt einen Termin oder besuchen Sie uns spontan! Wir freuen uns darauf, Sie persönlich kennenzulernen und Ihnen dabei zu helfen, Ihr Traumauto zu finden.",
+    "contactInfo": {
+      "address1": "Magdeburger Chaussee 75A",
+      "address2": "DE-39288 Burg",
+      "name": "KFZ-Börse-Burg",
+      "openingHours": [
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "09:30 Uhr - 13:30 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 22.10.2007",
+      "rating": {
+        "count": 4,
+        "totalCount": 24,
+        "score": 5,
+        "scoreLocalized": "5,0",
+        "link": "https://www.mobile.de/bewertungen/KFZBARANKAUFBOERSE?lang=de",
+        "recommendationRate": 100,
+        "adRealityRate": 100,
+        "consultingScore": 5,
+        "friendlinessScore": 5,
+        "responseTimeScore": 5
+      },
+      "languages": "Deutsch, Pусский, English, Italiano, Polski, Türkçe",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/92/92fa4cbe-f15c-4041-b6f6-02712455e058?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/92/92fa4cbe-f15c-4041-b6f6-02712455e058?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/92/92fa4cbe-f15c-4041-b6f6-02712455e058?rule=mo-360 360w",
+        "alt": "KFZ-Börse-Burg"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)3921 726890",
+          "uri": "tel:+493921726890"
+        },
+        {
+          "type": "Mobil",
+          "number": "+49 (0)162 6887208",
+          "uri": "tel:+491626887208"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 (0)3921 7290688"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {},
+      "mapLink": "https://maps.google.com/maps?q=52.261593,11.8450736+(KFZ-B%C3%B6rse-Burg)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 52.261593,
+        "lon": 11.8450736
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=810532",
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/27/27f20354-2bc7-401d-9646-e88f4315726a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/27/27f20354-2bc7-401d-9646-e88f4315726a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/27/27f20354-2bc7-401d-9646-e88f4315726a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/27/27f20354-2bc7-401d-9646-e88f4315726a?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 46,
+      "deliveryLabel": "Lieferung möglich",
+      "deliveryDetailsInfo": {
+        "radius": "200 km",
+        "period": "3 Tage"
+      },
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=455119095&loanType=balloon&loanDuration=60&downPayment=10780&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 10780,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 43120,
+        "interestRateNominal": 6.78,
+        "interestRateEffective": 6.99,
+        "monthlyInstallment": 515.75,
+        "finalInstallment": 24255,
+        "totalInterest": 11564.4,
+        "totalAmount": 54684.4,
+        "localized": {
+          "downPayment": "10.780 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "43.120 €",
+          "interestRateNominal": "6,78%",
+          "interestRateEffective": "6,99%",
+          "monthlyInstallment": "516 €",
+          "finalInstallment": "24.255,00 €",
+          "totalInterest": "11.564,40 €",
+          "totalAmount": "54.684,40 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/26/26470b1f-b24e-439b-ae97-d9dcc5dff6bf?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/26/26470b1f-b24e-439b-ae97-d9dcc5dff6bf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/26/26470b1f-b24e-439b-ae97-d9dcc5dff6bf?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/26/26470b1f-b24e-439b-ae97-d9dcc5dff6bf?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/26/26470b1f-b24e-439b-ae97-d9dcc5dff6bf?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd0af3c-ce7c-40f6-85f6-f1c2ad5f5e22?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd0af3c-ce7c-40f6-85f6-f1c2ad5f5e22?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd0af3c-ce7c-40f6-85f6-f1c2ad5f5e22?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd0af3c-ce7c-40f6-85f6-f1c2ad5f5e22?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd0af3c-ce7c-40f6-85f6-f1c2ad5f5e22?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/81/8104b5f0-66d9-4b10-b142-e5e838a3c45c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/81/8104b5f0-66d9-4b10-b142-e5e838a3c45c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/81/8104b5f0-66d9-4b10-b142-e5e838a3c45c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/81/8104b5f0-66d9-4b10-b142-e5e838a3c45c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/81/8104b5f0-66d9-4b10-b142-e5e838a3c45c?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/77/7739aebf-5a40-45ed-b734-b8c959ef6438?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/77/7739aebf-5a40-45ed-b734-b8c959ef6438?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/77/7739aebf-5a40-45ed-b734-b8c959ef6438?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/77/7739aebf-5a40-45ed-b734-b8c959ef6438?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/77/7739aebf-5a40-45ed-b734-b8c959ef6438?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/06/069ee0d7-2ea6-461a-9f21-e08ff4e3605d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/06/069ee0d7-2ea6-461a-9f21-e08ff4e3605d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/06/069ee0d7-2ea6-461a-9f21-e08ff4e3605d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/06/069ee0d7-2ea6-461a-9f21-e08ff4e3605d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/06/069ee0d7-2ea6-461a-9f21-e08ff4e3605d?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c6c34bb-02ac-4eb1-944e-0b161422934b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c6c34bb-02ac-4eb1-944e-0b161422934b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6c/6c6c34bb-02ac-4eb1-944e-0b161422934b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6c/6c6c34bb-02ac-4eb1-944e-0b161422934b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c6c34bb-02ac-4eb1-944e-0b161422934b?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/12/126b4a7c-537f-43ab-9508-4d50b07d6a68?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/12/126b4a7c-537f-43ab-9508-4d50b07d6a68?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/12/126b4a7c-537f-43ab-9508-4d50b07d6a68?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/12/126b4a7c-537f-43ab-9508-4d50b07d6a68?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/12/126b4a7c-537f-43ab-9508-4d50b07d6a68?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1035fc3-b404-4303-be40-75fb2650770c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1035fc3-b404-4303-be40-75fb2650770c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c1/c1035fc3-b404-4303-be40-75fb2650770c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c1/c1035fc3-b404-4303-be40-75fb2650770c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1035fc3-b404-4303-be40-75fb2650770c?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/53/533690a5-2f38-4854-9a65-8e156f6a3456?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/53/533690a5-2f38-4854-9a65-8e156f6a3456?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/53/533690a5-2f38-4854-9a65-8e156f6a3456?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/53/533690a5-2f38-4854-9a65-8e156f6a3456?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/53/533690a5-2f38-4854-9a65-8e156f6a3456?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/49/492ed36d-ce2f-43cd-8938-74852f1e3eb4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/49/492ed36d-ce2f-43cd-8938-74852f1e3eb4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/49/492ed36d-ce2f-43cd-8938-74852f1e3eb4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/49/492ed36d-ce2f-43cd-8938-74852f1e3eb4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/49/492ed36d-ce2f-43cd-8938-74852f1e3eb4?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef7861b7-9f43-4c41-b18d-02c50b8802e1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef7861b7-9f43-4c41-b18d-02c50b8802e1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ef/ef7861b7-9f43-4c41-b18d-02c50b8802e1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ef/ef7861b7-9f43-4c41-b18d-02c50b8802e1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef7861b7-9f43-4c41-b18d-02c50b8802e1?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a96173f-a081-447b-a301-329cccf3966f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a96173f-a081-447b-a301-329cccf3966f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5a/5a96173f-a081-447b-a301-329cccf3966f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5a/5a96173f-a081-447b-a301-329cccf3966f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a96173f-a081-447b-a301-329cccf3966f?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a2/a24209d8-9ab0-4ad7-b628-5ee766ccd44b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a2/a24209d8-9ab0-4ad7-b628-5ee766ccd44b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a2/a24209d8-9ab0-4ad7-b628-5ee766ccd44b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a2/a24209d8-9ab0-4ad7-b628-5ee766ccd44b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a2/a24209d8-9ab0-4ad7-b628-5ee766ccd44b?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/62/623d649a-87ba-4f6b-a829-8d23e146d9d0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/62/623d649a-87ba-4f6b-a829-8d23e146d9d0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/62/623d649a-87ba-4f6b-a829-8d23e146d9d0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/62/623d649a-87ba-4f6b-a829-8d23e146d9d0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/62/623d649a-87ba-4f6b-a829-8d23e146d9d0?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6fb1a96-cf1e-4274-bfc4-37a3aa63f1d7?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6fb1a96-cf1e-4274-bfc4-37a3aa63f1d7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d6/d6fb1a96-cf1e-4274-bfc4-37a3aa63f1d7?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d6/d6fb1a96-cf1e-4274-bfc4-37a3aa63f1d7?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6fb1a96-cf1e-4274-bfc4-37a3aa63f1d7?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/00/00fefa91-c16b-48d8-8f87-3f8dea4ab433?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/00/00fefa91-c16b-48d8-8f87-3f8dea4ab433?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/00/00fefa91-c16b-48d8-8f87-3f8dea4ab433?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/00/00fefa91-c16b-48d8-8f87-3f8dea4ab433?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/00/00fefa91-c16b-48d8-8f87-3f8dea4ab433?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f505a4ae-19e9-486a-bd81-4faa6a59f8b8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f505a4ae-19e9-486a-bd81-4faa6a59f8b8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f505a4ae-19e9-486a-bd81-4faa6a59f8b8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f505a4ae-19e9-486a-bd81-4faa6a59f8b8?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f505a4ae-19e9-486a-bd81-4faa6a59f8b8?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/68/68e702f3-2164-4046-b0f7-5cb87b50d6d4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/68/68e702f3-2164-4046-b0f7-5cb87b50d6d4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/68/68e702f3-2164-4046-b0f7-5cb87b50d6d4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/68/68e702f3-2164-4046-b0f7-5cb87b50d6d4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/68/68e702f3-2164-4046-b0f7-5cb87b50d6d4?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c701f336-e695-4eec-b0b3-38e9f9ffa914?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c701f336-e695-4eec-b0b3-38e9f9ffa914?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c7/c701f336-e695-4eec-b0b3-38e9f9ffa914?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c7/c701f336-e695-4eec-b0b3-38e9f9ffa914?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c701f336-e695-4eec-b0b3-38e9f9ffa914?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/2a/2a5977fc-45ab-4128-b659-55d1538db3e9?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/2a/2a5977fc-45ab-4128-b659-55d1538db3e9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/2a/2a5977fc-45ab-4128-b659-55d1538db3e9?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/2a/2a5977fc-45ab-4128-b659-55d1538db3e9?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/2a/2a5977fc-45ab-4128-b659-55d1538db3e9?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d3/d396928c-9846-4784-a084-8b225fbd59df?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d3/d396928c-9846-4784-a084-8b225fbd59df?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d3/d396928c-9846-4784-a084-8b225fbd59df?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d3/d396928c-9846-4784-a084-8b225fbd59df?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d3/d396928c-9846-4784-a084-8b225fbd59df?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/98/9879e36b-c1ed-4b76-8919-852dc801f89f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/98/9879e36b-c1ed-4b76-8919-852dc801f89f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/98/9879e36b-c1ed-4b76-8919-852dc801f89f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/98/9879e36b-c1ed-4b76-8919-852dc801f89f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/98/9879e36b-c1ed-4b76-8919-852dc801f89f?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/22/22f3aa3a-efd2-4c20-a81a-ad28b68bfe58?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/22/22f3aa3a-efd2-4c20-a81a-ad28b68bfe58?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/22/22f3aa3a-efd2-4c20-a81a-ad28b68bfe58?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/22/22f3aa3a-efd2-4c20-a81a-ad28b68bfe58?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/22/22f3aa3a-efd2-4c20-a81a-ad28b68bfe58?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/db/dba149ce-8bb3-44af-8c7a-8014c0afde0b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/db/dba149ce-8bb3-44af-8c7a-8014c0afde0b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/db/dba149ce-8bb3-44af-8c7a-8014c0afde0b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/db/dba149ce-8bb3-44af-8c7a-8014c0afde0b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/db/dba149ce-8bb3-44af-8c7a-8014c0afde0b?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/94/9464cbf5-1c8e-4699-b427-c60d1ad0ff46?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/94/9464cbf5-1c8e-4699-b427-c60d1ad0ff46?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/94/9464cbf5-1c8e-4699-b427-c60d1ad0ff46?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/94/9464cbf5-1c8e-4699-b427-c60d1ad0ff46?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/94/9464cbf5-1c8e-4699-b427-c60d1ad0ff46?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0c64589-bd83-4e33-a1ec-bfe80bb4a32b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0c64589-bd83-4e33-a1ec-bfe80bb4a32b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d0/d0c64589-bd83-4e33-a1ec-bfe80bb4a32b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d0/d0c64589-bd83-4e33-a1ec-bfe80bb4a32b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0c64589-bd83-4e33-a1ec-bfe80bb4a32b?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c2/c25ada67-8a03-429c-bba1-58f99465e5db?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c2/c25ada67-8a03-429c-bba1-58f99465e5db?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c2/c25ada67-8a03-429c-bba1-58f99465e5db?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c2/c25ada67-8a03-429c-bba1-58f99465e5db?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c2/c25ada67-8a03-429c-bba1-58f99465e5db?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe14bd3f-4485-415a-97a7-0392fb52ea50?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe14bd3f-4485-415a-97a7-0392fb52ea50?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fe/fe14bd3f-4485-415a-97a7-0392fb52ea50?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/fe/fe14bd3f-4485-415a-97a7-0392fb52ea50?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe14bd3f-4485-415a-97a7-0392fb52ea50?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ffdf01ff-157f-401a-ba2b-031f9c49dacd?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ffdf01ff-157f-401a-ba2b-031f9c49dacd?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ff/ffdf01ff-157f-401a-ba2b-031f9c49dacd?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ff/ffdf01ff-157f-401a-ba2b-031f9c49dacd?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ffdf01ff-157f-401a-ba2b-031f9c49dacd?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/34/34b6587e-04a2-4ad0-9b39-c009ec7c696d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/34/34b6587e-04a2-4ad0-9b39-c009ec7c696d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/34/34b6587e-04a2-4ad0-9b39-c009ec7c696d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/34/34b6587e-04a2-4ad0-9b39-c009ec7c696d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/34/34b6587e-04a2-4ad0-9b39-c009ec7c696d?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/60/60a227d8-073d-4467-b133-7fd2e866453b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/60/60a227d8-073d-4467-b133-7fd2e866453b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/60/60a227d8-073d-4467-b133-7fd2e866453b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/60/60a227d8-073d-4467-b133-7fd2e866453b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/60/60a227d8-073d-4467-b133-7fd2e866453b?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0a9e176-8281-46f6-b5be-6a4a1b09cd35?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0a9e176-8281-46f6-b5be-6a4a1b09cd35?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b0/b0a9e176-8281-46f6-b5be-6a4a1b09cd35?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b0/b0a9e176-8281-46f6-b5be-6a4a1b09cd35?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0a9e176-8281-46f6-b5be-6a4a1b09cd35?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e6ff702-724f-4312-8367-01daa10e09b1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e6ff702-724f-4312-8367-01daa10e09b1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/3e/3e6ff702-724f-4312-8367-01daa10e09b1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/3e/3e6ff702-724f-4312-8367-01daa10e09b1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e6ff702-724f-4312-8367-01daa10e09b1?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/96/96929a86-a3f5-47fa-b71c-151cee15ee4f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/96/96929a86-a3f5-47fa-b71c-151cee15ee4f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/96/96929a86-a3f5-47fa-b71c-151cee15ee4f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/96/96929a86-a3f5-47fa-b71c-151cee15ee4f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/96/96929a86-a3f5-47fa-b71c-151cee15ee4f?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c61ece35-661f-4e7d-9fe9-0f60f3f13d1f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c61ece35-661f-4e7d-9fe9-0f60f3f13d1f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c6/c61ece35-661f-4e7d-9fe9-0f60f3f13d1f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c6/c61ece35-661f-4e7d-9fe9-0f60f3f13d1f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c61ece35-661f-4e7d-9fe9-0f60f3f13d1f?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/2d/2df3c81c-bd8e-4fc6-ad2c-665b8d9c6e06?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/2d/2df3c81c-bd8e-4fc6-ad2c-665b8d9c6e06?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/2d/2df3c81c-bd8e-4fc6-ad2c-665b8d9c6e06?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/2d/2df3c81c-bd8e-4fc6-ad2c-665b8d9c6e06?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/2d/2df3c81c-bd8e-4fc6-ad2c-665b8d9c6e06?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/93/9307e63a-dacb-4182-a227-131a22666780?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/93/9307e63a-dacb-4182-a227-131a22666780?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/93/9307e63a-dacb-4182-a227-131a22666780?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/93/9307e63a-dacb-4182-a227-131a22666780?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/93/9307e63a-dacb-4182-a227-131a22666780?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2e459e1-f790-4866-8898-15d92abff96e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2e459e1-f790-4866-8898-15d92abff96e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e2/e2e459e1-f790-4866-8898-15d92abff96e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e2/e2e459e1-f790-4866-8898-15d92abff96e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2e459e1-f790-4866-8898-15d92abff96e?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 63 AMG"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/26/26470b1f-b24e-439b-ae97-d9dcc5dff6bf?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/26/26470b1f-b24e-439b-ae97-d9dcc5dff6bf?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=accwebpublichomegaaa4on&client.abtests=cossrpsbsmodelimprovementsv1&client.abtests=cossrpcorerecommenderpopularfilterspopularfilters&adId=455119095"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=53900&c=EstateCar&ms=17200%3B179&id%21=455119095&vc=Car&sid=810532"
+    },
+    "vehicleCondition": "used",
+    "make": "Mercedes-Benz",
+    "model": "E 63 AMG",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "c750c3f0-83bb-fc94-9e70-bdb893464f75"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/mercedes-benz.html",
+            "name": "Mercedes-Benz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/mercedes-benz-e-63-amg.html",
+            "name": "E 63 AMG"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Mercedes-Benz E 63 AMG für 53.900 €",
+    "price_text": "Preis 53.900 € Sehr guter Preis 45.294 € (Netto) , 19% MwSt. , inkl. kostenlose Lieferung Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "Kombi",
+      "Baureihe": "E -Klasse T-Modell (BM 213)(06.2016->)",
+      "Ausstattungslinie": "E 63 AMG 4Matic (213.288)",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "32.500 km",
+      "Hubraum": "3.982 cm³",
+      "Leistung": "420 kW (571 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Energieverbrauch (komb.) 2": "10,8 l/100km",
+      "CO₂-Emissionen (komb.) 2": "246 g/km",
+      "Kraftstoffverbrauch 2": "10,8 l/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Erstzulassung": "08/2019",
+      "Anzahl der Fahrzeughalter": "1",
+      "HU": "Neu",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Vorne, Hinten, Selbstlenkende Systeme, Kamera",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "SELENITGRAU - METALLICLACK",
+      "Farbe": "Grau Metallic",
+      "Innenausstattung": "Vollleder, Schwarz",
+      "Anhängelast gebremst": "1.900 kg",
+      "Anhängelast ungebremst": "750 kg",
+      "Gewicht": "2.060 kg",
+      "Zylinder": "8",
+      "Tankgröße": "80 l"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 32.500 km • 420 kW (571 PS) • Benzin • Automatik • 08/2019",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/26/26470b1f-b24e-439b-ae97-d9dcc5dff6bf?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd0af3c-ce7c-40f6-85f6-f1c2ad5f5e22?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/81/8104b5f0-66d9-4b10-b142-e5e838a3c45c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/77/7739aebf-5a40-45ed-b734-b8c959ef6438?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/06/069ee0d7-2ea6-461a-9f21-e08ff4e3605d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c6c34bb-02ac-4eb1-944e-0b161422934b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/12/126b4a7c-537f-43ab-9508-4d50b07d6a68?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1035fc3-b404-4303-be40-75fb2650770c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/53/533690a5-2f38-4854-9a65-8e156f6a3456?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/49/492ed36d-ce2f-43cd-8938-74852f1e3eb4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef7861b7-9f43-4c41-b18d-02c50b8802e1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a96173f-a081-447b-a301-329cccf3966f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a2/a24209d8-9ab0-4ad7-b628-5ee766ccd44b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/62/623d649a-87ba-4f6b-a829-8d23e146d9d0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6fb1a96-cf1e-4274-bfc4-37a3aa63f1d7?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/00/00fefa91-c16b-48d8-8f87-3f8dea4ab433?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f5/f505a4ae-19e9-486a-bd81-4faa6a59f8b8?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/68/68e702f3-2164-4046-b0f7-5cb87b50d6d4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c7/c701f336-e695-4eec-b0b3-38e9f9ffa914?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2a/2a5977fc-45ab-4128-b659-55d1538db3e9?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d3/d396928c-9846-4784-a084-8b225fbd59df?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/98/9879e36b-c1ed-4b76-8919-852dc801f89f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/22/22f3aa3a-efd2-4c20-a81a-ad28b68bfe58?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/db/dba149ce-8bb3-44af-8c7a-8014c0afde0b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/94/9464cbf5-1c8e-4699-b427-c60d1ad0ff46?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0c64589-bd83-4e33-a1ec-bfe80bb4a32b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c2/c25ada67-8a03-429c-bba1-58f99465e5db?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe14bd3f-4485-415a-97a7-0392fb52ea50?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ff/ffdf01ff-157f-401a-ba2b-031f9c49dacd?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/34/34b6587e-04a2-4ad0-9b39-c009ec7c696d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/60/60a227d8-073d-4467-b133-7fd2e866453b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0a9e176-8281-46f6-b5be-6a4a1b09cd35?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e6ff702-724f-4312-8367-01daa10e09b1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/96/96929a86-a3f5-47fa-b71c-151cee15ee4f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c6/c61ece35-661f-4e7d-9fe9-0f60f3f13d1f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2d/2df3c81c-bd8e-4fc6-ad2c-665b8d9c6e06?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/93/9307e63a-dacb-4182-a227-131a22666780?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2e459e1-f790-4866-8898-15d92abff96e?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/26/26470b1f-b24e-439b-ae97-d9dcc5dff6bf?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd0af3c-ce7c-40f6-85f6-f1c2ad5f5e22?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/81/8104b5f0-66d9-4b10-b142-e5e838a3c45c?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/77/7739aebf-5a40-45ed-b734-b8c959ef6438?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/06/069ee0d7-2ea6-461a-9f21-e08ff4e3605d?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c6c34bb-02ac-4eb1-944e-0b161422934b?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/12/126b4a7c-537f-43ab-9508-4d50b07d6a68?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1035fc3-b404-4303-be40-75fb2650770c?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/53/533690a5-2f38-4854-9a65-8e156f6a3456?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/49/492ed36d-ce2f-43cd-8938-74852f1e3eb4?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef7861b7-9f43-4c41-b18d-02c50b8802e1?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a96173f-a081-447b-a301-329cccf3966f?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a2/a24209d8-9ab0-4ad7-b628-5ee766ccd44b?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/62/623d649a-87ba-4f6b-a829-8d23e146d9d0?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6fb1a96-cf1e-4274-bfc4-37a3aa63f1d7?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/00/00fefa91-c16b-48d8-8f87-3f8dea4ab433?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f505a4ae-19e9-486a-bd81-4faa6a59f8b8?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/68/68e702f3-2164-4046-b0f7-5cb87b50d6d4?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c701f336-e695-4eec-b0b3-38e9f9ffa914?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/2a/2a5977fc-45ab-4128-b659-55d1538db3e9?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d3/d396928c-9846-4784-a084-8b225fbd59df?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 21,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/98/9879e36b-c1ed-4b76-8919-852dc801f89f?rule=mo-1600",
+      "local_path": "foto/21.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 22,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/22/22f3aa3a-efd2-4c20-a81a-ad28b68bfe58?rule=mo-1600",
+      "local_path": "foto/22.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 23,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/db/dba149ce-8bb3-44af-8c7a-8014c0afde0b?rule=mo-1600",
+      "local_path": "foto/23.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 24,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/94/9464cbf5-1c8e-4699-b427-c60d1ad0ff46?rule=mo-1600",
+      "local_path": "foto/24.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 25,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0c64589-bd83-4e33-a1ec-bfe80bb4a32b?rule=mo-1600",
+      "local_path": "foto/25.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 26,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c2/c25ada67-8a03-429c-bba1-58f99465e5db?rule=mo-1600",
+      "local_path": "foto/26.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 27,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe14bd3f-4485-415a-97a7-0392fb52ea50?rule=mo-1600",
+      "local_path": "foto/27.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 28,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ffdf01ff-157f-401a-ba2b-031f9c49dacd?rule=mo-1600",
+      "local_path": "foto/28.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 29,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/34/34b6587e-04a2-4ad0-9b39-c009ec7c696d?rule=mo-1600",
+      "local_path": "foto/29.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 30,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/60/60a227d8-073d-4467-b133-7fd2e866453b?rule=mo-1600",
+      "local_path": "foto/30.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 31,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0a9e176-8281-46f6-b5be-6a4a1b09cd35?rule=mo-1600",
+      "local_path": "foto/31.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 32,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e6ff702-724f-4312-8367-01daa10e09b1?rule=mo-1600",
+      "local_path": "foto/32.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 33,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/96/96929a86-a3f5-47fa-b71c-151cee15ee4f?rule=mo-1600",
+      "local_path": "foto/33.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 34,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c61ece35-661f-4e7d-9fe9-0f60f3f13d1f?rule=mo-1600",
+      "local_path": "foto/34.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 35,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/2d/2df3c81c-bd8e-4fc6-ad2c-665b8d9c6e06?rule=mo-1600",
+      "local_path": "foto/35.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 36,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/93/9307e63a-dacb-4182-a227-131a22666780?rule=mo-1600",
+      "local_path": "foto/36.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 37,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2e459e1-f790-4866-8898-15d92abff96e?rule=mo-1600",
+      "local_path": "foto/37.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

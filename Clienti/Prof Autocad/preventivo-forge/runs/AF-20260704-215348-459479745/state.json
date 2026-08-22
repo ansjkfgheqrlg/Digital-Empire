@@ -1,0 +1,22 @@
+{
+  "run_id": "AF-20260704-215348-459479745",
+  "source_url": "https://suchen.mobile.de/auto-inserat/hyundai-i20-fl-1-0-t-gdi-90-ps-6-mt-2wd-select-hamburg/459479745.html?lst=p",
+  "created_at": "2026-07-04T19:53:48+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "done",
+      "at": "2026-07-04T19:54:15+00:00",
+      "note": ""
+    },
+    "S2_parsing": {
+      "status": "warning",
+      "at": "2026-07-04T19:54:15+00:00",
+      "note": "images: [] should be non-empty; price_listed_eur: None is not of type 'number'"
+    },
+    "GATE_A": {
+      "status": "blocked",
+      "at": "2026-07-04T19:54:15+00:00",
+      "note": "schema: images: [] should be non-empty; schema: price_listed_eur: None is not of type 'number'; price_listed_eur non numerico/mancante: None; nessuna foto estratta"
+    }
+  }
+}

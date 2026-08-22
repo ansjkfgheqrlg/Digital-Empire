@@ -1,0 +1,14 @@
+2026/07/09-10:13:09.650 83b8 Reusing MANIFEST C:\Users\Utente\Desktop\qui tutto\Digital Empire\Clienti\Prof Autocad\preventivo-forge\browser-profile\Default\WebStorage\4\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2026/07/09-10:13:09.651 83b8 Recovering log #4
+2026/07/09-10:13:09.652 83b8 Reusing old log C:\Users\Utente\Desktop\qui tutto\Digital Empire\Clienti\Prof Autocad\preventivo-forge\browser-profile\Default\WebStorage\4\IndexedDB\indexeddb.leveldb/000004.log 
+2026/07/09-10:13:10.129 6ccc Level-0 table #8: started
+2026/07/09-10:13:10.133 6ccc Level-0 table #8: 6964 bytes OK
+2026/07/09-10:13:10.136 6ccc Delete type=0 #4
+2026/07/09-10:13:10.138 6ccc Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/07/09-10:13:10.138 6ccc Manual compaction at level-1 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at '\x00\x04\x00\x00\xc8\x11\x00L\x00o\x00g\x00s\x00R\x00e\x00q\x00u\x00e\x00s\x00t\x00s\x00S\x00t\x00o\x00r\x00e' @ 284 : 1
+2026/07/09-10:13:10.138 6ccc Compacting 1@1 + 1@2 files
+2026/07/09-10:13:10.141 6ccc Generated table #9@1: 40 keys, 1063 bytes
+2026/07/09-10:13:10.141 6ccc Compacted 1@1 + 1@2 files => 1063 bytes
+2026/07/09-10:13:10.143 6ccc compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/07/09-10:13:10.144 6ccc Delete type=2 #8
+2026/07/09-10:13:10.144 6ccc Manual compaction at level-1 from '\x00\x04\x00\x00\xc8\x11\x00L\x00o\x00g\x00s\x00R\x00e\x00q\x00u\x00e\x00s\x00t\x00s\x00S\x00t\x00o\x00r\x00e' @ 284 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)

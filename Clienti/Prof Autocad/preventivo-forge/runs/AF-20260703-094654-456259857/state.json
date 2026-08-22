@@ -1,0 +1,52 @@
+{
+  "run_id": "AF-20260703-094654-456259857",
+  "source_url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-gla-220-d-4m-amg-sport-pano-ahk-night-mbeam-cam-schwelm/456259857.html",
+  "created_at": "2026-07-03T07:46:54+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "done",
+      "at": "2026-07-03T07:47:29+00:00",
+      "note": ""
+    },
+    "S2_parsing": {
+      "status": "done",
+      "at": "2026-07-03T07:47:29+00:00",
+      "note": ""
+    },
+    "GATE_A": {
+      "status": "passed",
+      "at": "2026-07-03T07:47:29+00:00",
+      "note": ""
+    },
+    "S3_translate_copy": {
+      "status": "done",
+      "at": "2026-07-03T07:47:29+00:00",
+      "note": ""
+    },
+    "GATE_B": {
+      "status": "passed",
+      "at": "2026-07-03T07:47:29+00:00",
+      "note": ""
+    },
+    "S4_pricing": {
+      "status": "done",
+      "at": "2026-07-03T07:47:29+00:00",
+      "note": "Mercedes-Benz GLA 220 AMG 51.915 €"
+    },
+    "GATE_C": {
+      "status": "passed",
+      "at": "2026-07-03T07:47:29+00:00",
+      "note": ""
+    },
+    "S5_pdf_render": {
+      "status": "done",
+      "at": "2026-07-03T07:47:40+00:00",
+      "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260703-094654-456259857\\preventivo_mercedes-benz-gla-220.pdf"
+    },
+    "GATE_D": {
+      "status": "passed",
+      "at": "2026-07-03T07:47:41+00:00",
+      "note": ""
+    }
+  }
+}

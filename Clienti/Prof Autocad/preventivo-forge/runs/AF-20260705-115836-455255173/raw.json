@@ -1,0 +1,687 @@
+{
+  "source_url": "https://m.mobile.de/auto-inserat/renault-austral-evolution-150-shz-navi-keyless-pdc-kamer-wesel/455255173.html?ref=seo&refId=91653578-3c85-8e20-fd35-9fd76eebfc30&searchId=91653578-3c85-8e20-fd35-9fd76eebfc30&type=topAd",
+  "scraped_at": "2026-07-05T09:58:57+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Neufahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "Evolution"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "H0731E"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Sofort"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "50 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.332 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "109 kW (148 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin, E10-geeignet"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "6,5 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "148 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-E",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "6,5 l/100km (kombiniert)",
+          "7,8 l/100km (Innenstadt)",
+          "6,1 l/100km (Stadtrand)",
+          "5,6 l/100km (Landstraße)",
+          "7,2 l/100km (Autobahn)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
+        "tag": "envkv.consumptionCosts",
+        "value": "1.696 €/Jahr",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffpreis",
+        "tag": "envkv.fuel.price",
+        "value": "1,74 €/l (Jahresdurchschnitt 2024)"
+      },
+      {
+        "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
+        "tag": "envkv.co2Costs",
+        "value": [
+          "2.819 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 127 €/t)",
+          "1.332 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
+          "4.440 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 200 €/t)"
+        ],
+        "infoText": {
+          "headline": "Mögliche CO₂-Kosten über die nächsten 10 Jahre",
+          "text": "<p>Aufgrund der CO₂-Bepreisung sind künftige Erhöhungen der Kraftstoffkosten möglich. Die künftige CO₂-Preisentwicklung ist unsicher, daher werden die möglichen CO₂-Kosten anhand von drei angenommenen CO₂-Preisen für den Zeitraum 2026 bis 2035 berechnet.</p><p>Die tatsächlichen CO₂-Preise können sowohl höher als auch niedriger als in den hier zugrunde liegenden Modellrechnungen ausfallen. Die CO₂-Kosten sind beim Tanken mit den Kraftstoffkosten zu bezahlen.</p><p>Weitere Informationen unter <a href=\"https://www.alternativ-mobil.info/\" target=\"_blank\">www.alternativ-mobil.info/</a></p>"
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftfahrzeugsteuer",
+        "tag": "envkv.tax",
+        "value": "144 €/Jahr"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro 6e"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "0"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Hinten, Kamera, Vorne"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-Airbags"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Stoff, Andere"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.548 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": true
+    },
+    "shortTitle": "Renault Austral",
+    "subTitle": "Evolution 150*SHZ*NAVI*KEYLESS*PDC*KAMER",
+    "makeKey": "Renault",
+    "modelKey": "Austral",
+    "isNew": false,
+    "onCustomerBehalf": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": true,
+    "features": [
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Berganfahrassistent",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Frontantrieb",
+      "Isofix",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Müdigkeitswarner",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Soundsystem",
+      "Spurhalteassistent",
+      "Traktionskontrolle",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 456940,
+    "priceRating": {
+      "rating": "REASONABLE_PRICE",
+      "ratingLabel": "Fairer Preis",
+      "thresholdLabels": [
+        "21.700 €",
+        "28.200 €",
+        "30.400 €",
+        "33.800 €",
+        "36.300 €",
+        "40.300 €"
+      ],
+      "vehiclePriceOffset": 46
+    },
+    "segment": "Car",
+    "title": "Renault Austral Evolution 150*SHZ*NAVI*KEYLESS*PDC*KAMER",
+    "url": "https://suchen.mobile.de/auto-inserat/renault-austral-evolution-150-shz-navi-keyless-pdc-kamer-wesel/455255173.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 455255173,
+    "price": {
+      "gross": "31.990 €",
+      "grossAmount": 31990,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "kba": {
+      "hsn": "3333",
+      "tsn": "BSD"
+    },
+    "customDimensions": {
+      "10": "gold",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "hero_logo_12_name_NA_languages_NA"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Sonderausstattung</b><br> <ul><li>Sitzheizung vorn</li> <li>Sonderlackierung Dolomit-Grau / Schiefer-Grau Metallic</li> </ul><br> <b>Serienausstattung</b><br> <ul><li>Adaptive Geschwindigkeitsregelanlage (ACC)</li> <li>Airbag Beifahrerseite</li> <li>Airbag Beifahrerseite abschaltbar</li> <li>Airbag Fahrerseite</li> <li>Anti-Blockier-System (ABS)</li> <li>Antriebsart: Frontantrieb</li> <li>Außenspiegel elektr. anklappbar</li> <li>Außenspiegel elektr. verstell- und heizbar</li> <li>Außenspiegel schwarz lackiert</li> <li>Dachantenne im Haifischflossen-Design</li> <li>Eco Mode (Fahrmodusschalter)</li> <li>Einparkhilfe vorn, hinten und seitlich mit Rückfahrkamera</li> <li>Elektr. Bremskraftverteilung</li> <li>Elektron. Stabilitäts-Programm (ESP)</li> <li>Fahrassistenz-System: Abstandswarner</li> <li>Fahrassistenz-System: Aktiver Notbrems-Assistent mit Fußgängererkennung</li> <li>Fahrassistenz-System: Berganfahr-Assistent (HSA)</li> <li>Fahrassistenz-System: Müdigkeitserkennungs-Sensor</li> <li>Fahrassistenz-System: Sicherheitssystem mit automatischem Notruf (ERA GLONASS / eCall)</li> <li>Fahrassistenz-System: Spurhalteassistent Aktiv</li> <li>Fahrassistenz-System: Verkehrszeichenerkennung</li> <li>Fensterheber elektr. mit Einklemmschutz</li> <li>Fensterheber elektr. mit Impulsgeber</li> <li>Fensterheber elektrisch vorn + hinten</li> <li>Geräuschsimulator (Außensound)</li> <li>Getriebe Automatik stufenlos - CVT</li> <li>Heckleuchten LED</li> <li>Heckscheibe heizbar</li> <li>8 Lautsprecher</li> <li>Smartphone kabellose Schnittstelle (Apple CarPlay &amp; Android Auto)</li> <li>Infotainment-System: OpenR link (9&quot; Touchscreen, Arkamys Classic Sound, DAB+) (8 Lautsprecher, Smartphone kabellose Schnittstelle (Apple CarPlay &amp; Android Auto) )</li> <li>Ionisator zur Luftreinigung</li> <li>Isofix-Aufnahmen für Kindersitz</li> <li>Karosserie: 5-türig</li> <li>Keyless Go</li> <li>Kinderspiegel (zusätzlicher Innenspiegel für den Fond)</li> <li>Klimaautomatik 2-Zonen mit autom. Umluft-Control</li> <li>Kombiinstrument digital (12,3 Zoll)</li> <li>Kopf-Airbag-System hinten</li> <li>Kopf-Airbag-System vorn</li> <li>Kopfstützen hinten</li> <li>Lackierung Arktis-Weiß</li> <li>Lenkrad (Leder-Optik)</li> <li>Lenkrad mit Schaltwippen/-tasten</li> <li>Lenksäule (Lenkrad) höhenverstellbar</li> <li>Lenksäule (Lenkrad) längsverstellbar</li> <li>Licht- und Regensensor</li> <li>LM-Felgen</li> <li>Mild-Hybrid 109 kW (Motor 1,3 Ltr. - 109 kW)</li> <li>Mild-Hybrid-Technologie</li> <li>Mittelkonsole mit Armlehne und Staufach</li> <li>Modellpflege</li> <li>Parkbremse elektrisch mit Auto-Hold-Funktion</li> <li>Radstand 2667 mm</li> <li>Reifen-Reparaturkit</li> <li>Reifendruck-Kontrollsystem</li> <li>Rücksitzbank geteilt/klappbar (1/3-2/3)</li> <li>Schadstoffarm nach Abgasnorm Euro 6e</li> <li>Schaltpunktanzeige</li> <li>Scheinwerfer Full-LED mit LED-Signatur (Pure Vision)</li> <li>Seitenairbag vorn</li> <li>Seitenairbag vorn mitte (Center-Airbag)</li> <li>Sitz vorn links verstellbar (6-fach)</li> <li>Sitzbezug / Polsterung: Stoff</li> <li>Sonderlackierung Metallic Dezir Rot</li> <li>Sonnenblenden mit Spiegel (beleuchtet)</li> <li>Tagfahrlicht LED</li> <li>USB-Anschlüsse (Typ C) Mittelkonsole hinten</li> <li>USB-Anschlüsse (Typ C) Mittelkonsole vorn</li> <li>Warnanlage für Sicherheitsgurte</li> <li>Zentralverriegelung mit Fernbedienung</li> </ul><br>",
+    "contactInfo": {
+      "address1": "Schermbecker Landstr. 25",
+      "address2": "DE-46485 Wesel",
+      "name": "Auto Maibom OHG",
+      "openingHours": [
+        {
+          "day": "Mo - Fr",
+          "time": "09:00 Uhr - 18:00 Uhr"
+        },
+        {
+          "day": "Sa",
+          "time": "09:00 Uhr - 13:00 Uhr"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 01.02.2000",
+      "rating": {
+        "count": 5,
+        "totalCount": 50,
+        "score": 4.5,
+        "scoreLocalized": "4,5",
+        "link": "https://www.mobile.de/bewertungen/AUTOHAUS-MAIBOM?lang=de",
+        "recommendationRate": 100,
+        "adRealityRate": 100,
+        "consultingScore": 4.2,
+        "friendlinessScore": 4.6,
+        "responseTimeScore": 4.8
+      },
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/50/5013862c-1cb6-45ae-b471-1c6f2f1ec153?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/50/5013862c-1cb6-45ae-b471-1c6f2f1ec153?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/50/5013862c-1cb6-45ae-b471-1c6f2f1ec153?rule=mo-360 360w",
+        "alt": "Auto Maibom OHG"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)281 9523334",
+          "uri": "tel:+492819523334"
+        },
+        {
+          "type": "2. Tel-Nr.",
+          "number": "+49 (0)2064 82900",
+          "uri": "tel:+49206482900"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 281 9523337"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "MaibomGruppe",
+        "role": "Verkäufer"
+      },
+      "mapLink": "https://maps.google.com/maps?q=51.6601274,6.638013099999999+(Auto%20Maibom%20OHG)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 51.6601274,
+        "lon": 6.638013099999999
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=456940",
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/0c/0c8489ce-5428-496a-85dd-06073b6f639d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/0c/0c8489ce-5428-496a-85dd-06073b6f639d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/0c/0c8489ce-5428-496a-85dd-06073b6f639d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/0c/0c8489ce-5428-496a-85dd-06073b6f639d?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 196,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=455255173&loanType=balloon&loanDuration=60&downPayment=6398&channel=desktop",
+      "type": "DF",
+      "flowType": "COMBINED",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 6398,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 25592,
+        "interestRateNominal": 5.83,
+        "interestRateEffective": 5.99,
+        "monthlyInstallment": 289.71,
+        "finalInstallment": 14395.5,
+        "totalInterest": 5896.47,
+        "totalAmount": 31488.47,
+        "localized": {
+          "downPayment": "6.398 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "25.592 €",
+          "interestRateNominal": "5,83%",
+          "interestRateEffective": "5,99%",
+          "monthlyInstallment": "290 €",
+          "finalInstallment": "14.395,50 €",
+          "totalInterest": "5.896,47 €",
+          "totalAmount": "31.488,47 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/03/03efef22-d339-43e4-a2bc-68410d60a0f9?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/03/03efef22-d339-43e4-a2bc-68410d60a0f9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/03/03efef22-d339-43e4-a2bc-68410d60a0f9?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/03/03efef22-d339-43e4-a2bc-68410d60a0f9?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/03/03efef22-d339-43e4-a2bc-68410d60a0f9?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/38/38fb5e87-bc3d-4aaf-bff1-569469e0defb?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/38/38fb5e87-bc3d-4aaf-bff1-569469e0defb?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/38/38fb5e87-bc3d-4aaf-bff1-569469e0defb?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/38/38fb5e87-bc3d-4aaf-bff1-569469e0defb?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/38/38fb5e87-bc3d-4aaf-bff1-569469e0defb?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/8b/8b627028-93e4-4889-8931-335970db94de?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8b/8b627028-93e4-4889-8931-335970db94de?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8b/8b627028-93e4-4889-8931-335970db94de?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/8b/8b627028-93e4-4889-8931-335970db94de?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8b/8b627028-93e4-4889-8931-335970db94de?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bc/bcb5dc8e-aba1-4697-99d3-904c4971c219?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bc/bcb5dc8e-aba1-4697-99d3-904c4971c219?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bc/bcb5dc8e-aba1-4697-99d3-904c4971c219?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bc/bcb5dc8e-aba1-4697-99d3-904c4971c219?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bc/bcb5dc8e-aba1-4697-99d3-904c4971c219?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a6/a6aa7c68-c968-4f74-b553-068c3e6d6ead?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a6/a6aa7c68-c968-4f74-b553-068c3e6d6ead?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a6/a6aa7c68-c968-4f74-b553-068c3e6d6ead?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a6/a6aa7c68-c968-4f74-b553-068c3e6d6ead?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a6/a6aa7c68-c968-4f74-b553-068c3e6d6ead?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/57/57a80a3a-7c86-4f95-b558-a54358a9933c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/57/57a80a3a-7c86-4f95-b558-a54358a9933c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/57/57a80a3a-7c86-4f95-b558-a54358a9933c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/57/57a80a3a-7c86-4f95-b558-a54358a9933c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/57/57a80a3a-7c86-4f95-b558-a54358a9933c?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/76/7607759f-1317-4420-9a2f-9f15edd2cbd7?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/76/7607759f-1317-4420-9a2f-9f15edd2cbd7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/76/7607759f-1317-4420-9a2f-9f15edd2cbd7?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/76/7607759f-1317-4420-9a2f-9f15edd2cbd7?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/76/7607759f-1317-4420-9a2f-9f15edd2cbd7?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a89a0a9-2502-4e30-9c6d-8698eef771b5?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a89a0a9-2502-4e30-9c6d-8698eef771b5?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1a/1a89a0a9-2502-4e30-9c6d-8698eef771b5?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1a/1a89a0a9-2502-4e30-9c6d-8698eef771b5?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a89a0a9-2502-4e30-9c6d-8698eef771b5?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0a43d44-44b1-449b-9801-6b8207085e51?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0a43d44-44b1-449b-9801-6b8207085e51?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c0/c0a43d44-44b1-449b-9801-6b8207085e51?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c0/c0a43d44-44b1-449b-9801-6b8207085e51?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0a43d44-44b1-449b-9801-6b8207085e51?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f787c44a-b7bf-4abc-8e34-ec7382225320?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f787c44a-b7bf-4abc-8e34-ec7382225320?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f7/f787c44a-b7bf-4abc-8e34-ec7382225320?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f7/f787c44a-b7bf-4abc-8e34-ec7382225320?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f787c44a-b7bf-4abc-8e34-ec7382225320?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d1/d11b258b-a02c-4185-8c1c-e30a89b57e7b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d1/d11b258b-a02c-4185-8c1c-e30a89b57e7b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d1/d11b258b-a02c-4185-8c1c-e30a89b57e7b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d1/d11b258b-a02c-4185-8c1c-e30a89b57e7b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d1/d11b258b-a02c-4185-8c1c-e30a89b57e7b?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9ce19ca-1873-4ef0-b0a7-97e68b79210f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9ce19ca-1873-4ef0-b0a7-97e68b79210f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f9ce19ca-1873-4ef0-b0a7-97e68b79210f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f9ce19ca-1873-4ef0-b0a7-97e68b79210f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9ce19ca-1873-4ef0-b0a7-97e68b79210f?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Austral"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/03/03efef22-d339-43e4-a2bc-68410d60a0f9?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/03/03efef22-d339-43e4-a2bc-68410d60a0f9?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=accwebpublichomegaaa4on&client.abtests=cossrpcorerecommenderpopularfilterspopularfilters&client.abtests=cossrpsbsmodelimprovementscontrol&adId=455255173"
+    },
+    "similarAdsInfo": {
+      "type": "similar-ads",
+      "apiParams": "/ml-recommendations-by-id/455255173"
+    },
+    "vehicleCondition": "new_stock",
+    "make": "Renault",
+    "model": "Austral",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/renault.html",
+            "name": "Renault"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/renault-austral.html",
+            "name": "Austral"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Renault Austral für 31.990 €",
+    "price_text": "Preis 31.990 € Fairer Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Neufahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Ausstattungslinie": "Evolution",
+      "Fahrzeugnummer": "H0731E",
+      "Verfügbarkeit": "Sofort",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "50 km",
+      "Hubraum": "1.332 cm³",
+      "Leistung": "109 kW (148 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin, E10-geeignet",
+      "Energieverbrauch (komb.) 2": "6,5 l/100km",
+      "CO₂-Emissionen (komb.) 2": "148 g/km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Kraftstoffverbrauch 2": "6,5 l/100km (kombiniert) 7,8 l/100km (Innenstadt) 6,1 l/100km (Stadtrand) 5,6 l/100km (Landstraße) 7,2 l/100km (Autobahn)",
+      "Energiekosten bei 15.000 km Jahresfahrleistung 2": "1.696 €/Jahr",
+      "Kraftstoffpreis": "1,74 €/l (Jahresdurchschnitt 2024)",
+      "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr) 2": "2.819 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 127 €/t) 1.332 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t) 4.440 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 200 €/t)",
+      "Kraftfahrzeugsteuer": "144 €/Jahr",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro 6e",
+      "Umweltplakette": "4 (Grün)",
+      "Anzahl der Fahrzeughalter": "0",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Hinten, Kamera, Vorne",
+      "Airbags": "Front-Airbags",
+      "Innenausstattung": "Stoff, Andere",
+      "Gewicht": "1.548 kg",
+      "Zylinder": "4"
+    },
+    "description": "Neufahrzeug, Unfallfrei • 50 km • 109 kW (148 PS) • Benzin, E10-geeignet • Automatik",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/03/03efef22-d339-43e4-a2bc-68410d60a0f9?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/38/38fb5e87-bc3d-4aaf-bff1-569469e0defb?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8b/8b627028-93e4-4889-8931-335970db94de?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bc/bcb5dc8e-aba1-4697-99d3-904c4971c219?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a6/a6aa7c68-c968-4f74-b553-068c3e6d6ead?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/57/57a80a3a-7c86-4f95-b558-a54358a9933c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/76/7607759f-1317-4420-9a2f-9f15edd2cbd7?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a89a0a9-2502-4e30-9c6d-8698eef771b5?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0a43d44-44b1-449b-9801-6b8207085e51?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f7/f787c44a-b7bf-4abc-8e34-ec7382225320?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d1/d11b258b-a02c-4185-8c1c-e30a89b57e7b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9ce19ca-1873-4ef0-b0a7-97e68b79210f?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/03/03efef22-d339-43e4-a2bc-68410d60a0f9?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/38/38fb5e87-bc3d-4aaf-bff1-569469e0defb?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8b/8b627028-93e4-4889-8931-335970db94de?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/bc/bcb5dc8e-aba1-4697-99d3-904c4971c219?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a6/a6aa7c68-c968-4f74-b553-068c3e6d6ead?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/57/57a80a3a-7c86-4f95-b558-a54358a9933c?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/76/7607759f-1317-4420-9a2f-9f15edd2cbd7?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a89a0a9-2502-4e30-9c6d-8698eef771b5?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0a43d44-44b1-449b-9801-6b8207085e51?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f787c44a-b7bf-4abc-8e34-ec7382225320?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d1/d11b258b-a02c-4185-8c1c-e30a89b57e7b?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9ce19ca-1873-4ef0-b0a7-97e68b79210f?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

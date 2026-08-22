@@ -1,0 +1,17 @@
+{"ts": "2026-07-09T08:14:01+00:00", "event": "run_created", "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=377883614&action=topInCategory&dam=false&ms=20700%3B%3B%3B&od=up&ref=seo&refId=ddc77b69-c15d-021c-1ded-32b99f35906e&s=Car&sb=rel&searchId=ddc77b69-c15d-021c-1ded-32b99f35906e&vc=Car"}
+{"ts": "2026-07-09T08:14:02+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-09T08:14:23+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-09T08:14:23+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-09T08:14:23+00:00", "event": "step", "step": "S2_parsing", "status": "done", "note": ""}
+{"ts": "2026-07-09T08:14:24+00:00", "event": "step", "step": "GATE_A", "status": "passed", "note": ""}
+{"ts": "2026-07-09T08:14:24+00:00", "event": "step", "step": "S3_translate_copy", "status": "running", "note": ""}
+{"ts": "2026-07-09T08:14:24+00:00", "event": "step", "step": "S3_translate_copy", "status": "done", "note": ""}
+{"ts": "2026-07-09T08:14:24+00:00", "event": "step", "step": "GATE_B", "status": "passed", "note": ""}
+{"ts": "2026-07-09T08:14:24+00:00", "event": "step", "step": "S4_pricing", "status": "running", "note": ""}
+{"ts": "2026-07-09T08:14:24+00:00", "event": "step", "step": "S4_pricing", "status": "done", "note": "Renault Master Kasten L3H2 HKa 3,5t 1-Hand Scheckheft 24.629 €"}
+{"ts": "2026-07-09T08:14:24+00:00", "event": "step", "step": "GATE_C", "status": "passed", "note": ""}
+{"ts": "2026-07-09T08:14:24+00:00", "event": "step", "step": "S5_pdf_render", "status": "running", "note": ""}
+{"ts": "2026-07-09T08:14:39+00:00", "event": "step", "step": "S5_pdf_render", "status": "done", "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260709-101401-377883614\\preventivo_renault-master.pdf"}
+{"ts": "2026-07-09T08:14:42+00:00", "event": "step", "step": "GATE_D", "status": "passed", "note": ""}
+{"ts": "2026-07-09T08:14:45+00:00", "event": "step", "step": "GATE_IMG", "status": "passed", "note": ""}
+{"ts": "2026-07-09T08:14:51+00:00", "event": "step", "step": "GATE_R", "status": "passed", "note": ""}

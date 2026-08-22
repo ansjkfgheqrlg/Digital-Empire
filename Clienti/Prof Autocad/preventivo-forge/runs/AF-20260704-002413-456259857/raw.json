@@ -1,0 +1,762 @@
+{
+  "source_url": "file://C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\tests\\fixtures\\mobile_de_gla_456259857.html",
+  "scraped_at": "2026-07-03T22:24:14+00:00",
+  "scrape_method": "manual",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup, Vorführfahrzeug"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "H247"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "AMG"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "150722"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Sofort"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "9.077 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.950 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "140 kW (190 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Diesel"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "6,1 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "159 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-F",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "6,1 l/100km (kombiniert)",
+          "7,6 l/100km (Innenstadt)",
+          "6,1 l/100km (Stadtrand)",
+          "5,3 l/100km (Landstraße)",
+          "6,2 l/100km (Autobahn)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "05/2025"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "manufaktur lack manufaktur alpin"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grau"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Teilleder, Schwarz"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "2.000 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "750 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      },
+      {
+        "label": "Tankgröße",
+        "tag": "fuelTankVolume",
+        "value": "51 l"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Mercedes-Benz GLA 220",
+    "subTitle": "d 4M AMG-Sport/Pano/AHK/Night/MBeam/Cam",
+    "makeKey": "Mercedes-Benz",
+    "modelKey": "GLA 220",
+    "isNew": false,
+    "onCustomerBehalf": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "ABS",
+      "Abstandswarner",
+      "Adaptives Kurvenlicht",
+      "Allradantrieb",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Anhängerkupplung schwenkbar",
+      "Apple CarPlay",
+      "Armlehne",
+      "Beheizbares Lenkrad",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Dachreling",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Geschwindigkeitsbegrenzer",
+      "Induktionsladen für Smartphones",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Panorama-Dach",
+      "Partikelfilter",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Schiebedach",
+      "Servolenkung",
+      "Sitzheizung",
+      "Soundsystem",
+      "Sportpaket",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Winterpaket",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "Panorama-Schiebedach",
+      "Anhängevorrichtung",
+      "MULTIBEAM LED"
+    ],
+    "sellerId": 460808,
+    "priceRating": {
+      "rating": "GOOD_PRICE",
+      "ratingLabel": "Guter Preis",
+      "thresholdLabels": [
+        "34.400 €",
+        "44.800 €",
+        "48.200 €",
+        "53.600 €",
+        "57.600 €",
+        "64.000 €"
+      ],
+      "vehiclePriceOffset": 79
+    },
+    "segment": "Car",
+    "title": "Mercedes-Benz GLA 220 d 4M AMG-Sport/Pano/AHK/Night/MBeam/Cam",
+    "url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-gla-220-d-4m-amg-sport-pano-ahk-night-mbeam-cam-schwelm/456259857.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 456259857,
+    "price": {
+      "gross": "47.490 €",
+      "grossAmount": 47490,
+      "grossCurrency": "EUR",
+      "net": "39.908 €",
+      "netAmount": 39907.56,
+      "type": "FIXED",
+      "vat": "19% MwSt."
+    },
+    "kba": {
+      "hsn": "2222",
+      "tsn": "APU"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_logo_26_NA_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Fahrzeugnummer: 150722</b><br><br><b>Ehemalige unverbindliche Preisempfehlung des Automobilherstellers: 64.105 €</b><br><hr> Zwischenverkauf und Irrtümer sind ausdrücklich vorbehalten. <hr> <b>EXTERIEUR</b><br><ul><li><b>Anhängevorrichtung mit ESP Anhängerstabilisierung</b></li><li><b>Wärmedämmend dunkel getöntes Glas</b></li><li>Dachreling schwarz</li><li>Scheibenwischer mit Regensensor</li><li>Außenspiegel elektrisch anklappbar</li><li>EASY-PACK Heckklappe</li></ul><br><b>RÄDER</b><br><ul><li><b>AMG Styling</b></li><li>Sommerreifen</li></ul><br><b>HIGHLIGHTS &amp; PAKETE</b><br><ul><li><b>Panorama-Schiebedach</b></li><li><b>AMG Line Advanced Plus</b></li><li><b>Volldigitales Instrumenten-Display</b></li><li>Winter-Paket</li><li>Advanced-Plus-Paket mit  Digitalen Extras</li><li>Ablagefach in Mittelkonsole mit Rollo</li><li>Sitzheizung für Fahrer und Beifahrer</li></ul><br><b>ASSISTENZSYSTEME</b><br><ul><li><b>Rückfahrkamera</b></li><li>Aktiver Spurhalte-Assistent</li><li>Aktiver Brems-Assistent</li><li>Galvanisierte Lenkradschaltpaddles</li><li>Aktiver Park-Assistent mit PARKTRONIC</li></ul><br><b>AUDIO &amp; KOMMUNIKATION</b><br><ul><li><b>Apple CarPlay</b></li><li><b>Android Auto</b></li><li>Kommunikationsmodul (LTE) für die Nutzung von Digitalen Extras</li><li>Digitales Extra: Festplatten-Navigation</li><li>Digitales Radio</li><li>Digitales Extra: Smartphone Integration</li><li>Advanced Soundsystem</li></ul><br><b>INTERIEUR</b><br><ul><li><b>MULTIBEAM LED</b></li><li>Ambientebeleuchtung</li><li>Innenspiegel automatisch abblendend</li><li>4-Wege-Lordosenstütze</li><li>Kabelloses Ladesystem für mobile Endgeräte vorn</li><li>Sportbremsanlage</li><li>Sitzlehnen im Fond klappbar</li><li>Lenkradheizung</li><li>i-Size Kindersitzbefestigung</li><li>Zierelemente Aluminium mit Längsschliff hell</li><li>CENTRAL MEDIA DISPLAY</li><li>Klimatisierungsautomatik THERMATIC</li><li>Sportsitze</li><li>Geschwindigkeitslimit-Assistent</li><li>Multifunktions-Sportlenkrad in Leder Nappa</li></ul><br><b>TECHNIK &amp; SICHERHEIT</b><br><ul><li>Reifendruckkontrolle</li><li>Automatische Beifahrerairbag-Abschaltung</li><li>Abgasreinigung EURO 6 Technik</li><li>Fingerabdrucksensor</li><li>Kneebag</li><li>Adaptiver Fernlicht-Assistent Plus</li></ul><br><b>SONSTIGE AUSSTATTUNGEN</b><br><ul><li><b>Digitales Extra: Erweiterte Funktionen MBUX</b></li><li><b>AMG Fußmatten</b></li><li><b>AMG Line</b></li><li><b>Digitales Extra: MBUX Navigation Premium</b></li><li>Mercedes-Benz Notrufsystem</li><li>Scheibenwaschanlage beheizt</li><li>Fondgurt-Statusanzeige im Kombiinstrument</li><li>Steuercode Umstellung WLTP mit RDE</li><li>Kraftstoffbehälter mit 51 Liter Inhalt</li><li>Digitales Extra: Vorrüstung für Live Traffic Information</li><li>Innenhimmel Stoff schwarz</li><li>Modelljahrcode</li><li>Linkslenkung</li><li>TIREFIT</li><li>DYNAMIC SELECT</li><li>Digitales Extra: Vorrüstung für Navigationsdienste</li><li>Sonnenblende mit beleuchtetem Make-up-Spiegel</li><li>12V-Steckdose im Gepäckraum</li><li>Laderaum-Paket</li><li>Sportlicher Motorsound</li><li>GPS-Antenne</li><li>Offroad-Technik-Paket</li><li>Doppelcupholder</li><li>Komfortfahrwerk mit Tieferlegung</li><li>Vorrüstung für digitales Radio</li><li>Gepäcknetz an Fahrer- und Beifahrerlehne</li><li>Sitzkomfort-Paket</li><li>Digitales Extra: Aktiver Abstands-Assistent DISTRONIC</li><li>COC-Papier EU6 mit Zulassungsbescheinigung Teil 2</li><li>USB-Paket Plus</li><li>Fußgängerschutz</li><li>Licht- und Sicht-Paket</li><li>Park-Paket mit Rückfahrkamera</li><li>Direktlenkung</li><li>Spiegel-Paket</li><li>Das Fahrzeug wurde als Mietwagen genutzt</li><li>Ladekantenschutz in Chrom</li><li>FS Vorführwagen</li><li>Haltedauer gemäß Herstellervorgabe</li></ul><br><b>MOTOR GETRIEBE &amp; FAHRWERK</b><br><ul><li>8G-DCT</li></ul><br><b>Weitere Merkmale</b><br><ul><li><b>Night-Paket</b></li><li>Diesel-Abgasreinigungsanlage BlueTEC inklusive AdBlue Behälter </li></ul><hr> Die Beschreibung dient der allgemeinen Identifizierung des Fahrzeuges und stellt keine Gewährleistung im kaufrechtlichen Sinne dar. Ausschlaggebend ist die Beschreibung gemäß Kaufvertrag. Es gelten unsere Allgemeinen Geschäftsbedingungen. <br>",
+    "isMercedesBenzCertifiedListing": true,
+    "contactInfo": {
+      "address1": "In der Graslake 33",
+      "address2": "DE-58332 Schwelm",
+      "name": "Jürgens GmbH Autorisierter Mercedes-Benz Verkauf und Service",
+      "markingText": "Wir sind ein zukunftsorientierter, qualitätsbewusster und zuverlässiger Partner. Ob Beratung, Verkauf, Reparatur oder Instandsetzung – Kundenzufriedenheit durch qualifizierten Service in allen Bereichen steht bei uns seit <b>1919</b> an erster Stelle.<br /> <br />Wir präsentieren eine attraktive und sehr große Auswahl von rund 450 Gebrauchtwagen, Geschäfts-, Vorführ- oder Jahreswagen. Dazu der direkte Zugriff auf rund 5.000 Mercedes-Benz Jahreswagen. Auch im Bereich Nutzfahrzeuge bieten wir eine breite Modellpalette für alle Transport-Anforderungen an.<br />",
+      "openingHours": [
+        {
+          "time": "08:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "09:00 Uhr - 14:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 29.07.2004",
+      "rating": {
+        "count": 14,
+        "totalCount": 28,
+        "score": 4.5,
+        "scoreLocalized": "4,5",
+        "link": "https://www.mobile.de/bewertungen/JUERGENS-SCHWELM?lang=de",
+        "recommendationRate": 92,
+        "adRealityRate": 92,
+        "consultingScore": 4.416666666666667,
+        "friendlinessScore": 4.538461538461538,
+        "responseTimeScore": 4.642857142857143
+      },
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a8bae0c3-5ac0-49e7-81c5-14ee4bab7866?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a8bae0c3-5ac0-49e7-81c5-14ee4bab7866?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/a8/a8bae0c3-5ac0-49e7-81c5-14ee4bab7866?rule=mo-360 360w",
+        "alt": "Jürgens GmbH Autorisierter Mercedes-Benz Verkauf und Service"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)2336 47681012",
+          "uri": "tel:+49233647681012"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {},
+      "mapLink": "https://maps.google.com/maps?q=51.28543,7.27292+(J%C3%BCrgens%20GmbH%20Autorisierter%20Mercedes-Benz%20Verkauf%20und%20Service)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 51.28543,
+        "lon": 7.27292
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=460808",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e276d077-1d95-431f-b699-2c8968b8ed90?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e276d077-1d95-431f-b699-2c8968b8ed90?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e2/e276d077-1d95-431f-b699-2c8968b8ed90?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/e2/e276d077-1d95-431f-b699-2c8968b8ed90?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e276d077-1d95-431f-b699-2c8968b8ed90?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/23/231eacf6-e99e-460c-8458-0f544dfa609d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/23/231eacf6-e99e-460c-8458-0f544dfa609d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/23/231eacf6-e99e-460c-8458-0f544dfa609d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/23/231eacf6-e99e-460c-8458-0f544dfa609d?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 59,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=456259857&loanType=balloon&loanDuration=60&downPayment=9498&channel=desktop",
+      "type": "AO",
+      "flowType": "AO",
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 9498,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 37992,
+        "interestRateNominal": 5.26,
+        "interestRateEffective": 5.39,
+        "monthlyInstallment": 499.9,
+        "finalInstallment": 15671.7,
+        "totalInterest": 7173.86,
+        "totalAmount": 45165.86,
+        "localized": {
+          "downPayment": "9.498 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "37.992 €",
+          "interestRateNominal": "5,26%",
+          "interestRateEffective": "5,39%",
+          "monthlyInstallment": "500 €",
+          "finalInstallment": "15.671,70 €",
+          "totalInterest": "7.173,86 €",
+          "totalAmount": "45.165,86 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000 €, effektiver Jahreszins 5,39%, fester Sollzinssatz 5,26% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 143,60 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.772,13 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach"
+        }
+      },
+      "shortFlow": false,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd9ae1b8-fa81-4798-90b2-de4ed32721cb?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd9ae1b8-fa81-4798-90b2-de4ed32721cb?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bd/bd9ae1b8-fa81-4798-90b2-de4ed32721cb?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bd/bd9ae1b8-fa81-4798-90b2-de4ed32721cb?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd9ae1b8-fa81-4798-90b2-de4ed32721cb?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/2c/2cae797c-770b-48f8-9f7b-6e14e7aadc3b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/2c/2cae797c-770b-48f8-9f7b-6e14e7aadc3b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/2c/2cae797c-770b-48f8-9f7b-6e14e7aadc3b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/2c/2cae797c-770b-48f8-9f7b-6e14e7aadc3b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/2c/2cae797c-770b-48f8-9f7b-6e14e7aadc3b?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d868c6a-c9e5-449b-984e-77761ab4d397?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d868c6a-c9e5-449b-984e-77761ab4d397?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/9d/9d868c6a-c9e5-449b-984e-77761ab4d397?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/9d/9d868c6a-c9e5-449b-984e-77761ab4d397?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d868c6a-c9e5-449b-984e-77761ab4d397?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b65e01f-3f85-4a88-91ea-b4748f57548f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b65e01f-3f85-4a88-91ea-b4748f57548f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5b65e01f-3f85-4a88-91ea-b4748f57548f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5b65e01f-3f85-4a88-91ea-b4748f57548f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b65e01f-3f85-4a88-91ea-b4748f57548f?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef89a483-15dd-42e0-a4e9-a40240d78292?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef89a483-15dd-42e0-a4e9-a40240d78292?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ef/ef89a483-15dd-42e0-a4e9-a40240d78292?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ef/ef89a483-15dd-42e0-a4e9-a40240d78292?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef89a483-15dd-42e0-a4e9-a40240d78292?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/75/75e976cf-5486-4a73-9f2d-951757d60346?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/75/75e976cf-5486-4a73-9f2d-951757d60346?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/75/75e976cf-5486-4a73-9f2d-951757d60346?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/75/75e976cf-5486-4a73-9f2d-951757d60346?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/75/75e976cf-5486-4a73-9f2d-951757d60346?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/89/891b528d-a45c-4cc2-a139-43f81ed09436?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/89/891b528d-a45c-4cc2-a139-43f81ed09436?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/89/891b528d-a45c-4cc2-a139-43f81ed09436?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/89/891b528d-a45c-4cc2-a139-43f81ed09436?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/89/891b528d-a45c-4cc2-a139-43f81ed09436?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/83/8358a4cf-2936-4f80-8b02-4f598334f492?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/83/8358a4cf-2936-4f80-8b02-4f598334f492?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/83/8358a4cf-2936-4f80-8b02-4f598334f492?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/83/8358a4cf-2936-4f80-8b02-4f598334f492?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/83/8358a4cf-2936-4f80-8b02-4f598334f492?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/85/85d86453-82a8-4ea8-aa02-2ddaa2cbfb5d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/85/85d86453-82a8-4ea8-aa02-2ddaa2cbfb5d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/85/85d86453-82a8-4ea8-aa02-2ddaa2cbfb5d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/85/85d86453-82a8-4ea8-aa02-2ddaa2cbfb5d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/85/85d86453-82a8-4ea8-aa02-2ddaa2cbfb5d?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba548236-e5aa-48eb-b839-fff75eba927c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba548236-e5aa-48eb-b839-fff75eba927c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ba/ba548236-e5aa-48eb-b839-fff75eba927c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ba/ba548236-e5aa-48eb-b839-fff75eba927c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba548236-e5aa-48eb-b839-fff75eba927c?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b728c9ce-34f3-4704-9810-fefb85b39fc6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b728c9ce-34f3-4704-9810-fefb85b39fc6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b7/b728c9ce-34f3-4704-9810-fefb85b39fc6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b7/b728c9ce-34f3-4704-9810-fefb85b39fc6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b728c9ce-34f3-4704-9810-fefb85b39fc6?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/3b/3beec20b-b761-45d6-9980-4ddfaa600d01?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/3b/3beec20b-b761-45d6-9980-4ddfaa600d01?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/3b/3beec20b-b761-45d6-9980-4ddfaa600d01?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/3b/3beec20b-b761-45d6-9980-4ddfaa600d01?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/3b/3beec20b-b761-45d6-9980-4ddfaa600d01?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/7d/7de0b331-8bc0-43fd-b2d2-e3396935852b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7d/7de0b331-8bc0-43fd-b2d2-e3396935852b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7d/7de0b331-8bc0-43fd-b2d2-e3396935852b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/7d/7de0b331-8bc0-43fd-b2d2-e3396935852b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7d/7de0b331-8bc0-43fd-b2d2-e3396935852b?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd85a043-f2d6-4357-a38c-79bb6caef770?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd85a043-f2d6-4357-a38c-79bb6caef770?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bd/bd85a043-f2d6-4357-a38c-79bb6caef770?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bd/bd85a043-f2d6-4357-a38c-79bb6caef770?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd85a043-f2d6-4357-a38c-79bb6caef770?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb818132-69da-4b75-96b2-884ab6581ad6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb818132-69da-4b75-96b2-884ab6581ad6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bb/bb818132-69da-4b75-96b2-884ab6581ad6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bb/bb818132-69da-4b75-96b2-884ab6581ad6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb818132-69da-4b75-96b2-884ab6581ad6?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a87a817-85ab-4783-8ab6-3186492034e1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a87a817-85ab-4783-8ab6-3186492034e1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5a/5a87a817-85ab-4783-8ab6-3186492034e1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5a/5a87a817-85ab-4783-8ab6-3186492034e1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a87a817-85ab-4783-8ab6-3186492034e1?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/31/318a5c47-7645-4779-bf03-3a08c3661f1f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/31/318a5c47-7645-4779-bf03-3a08c3661f1f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/31/318a5c47-7645-4779-bf03-3a08c3661f1f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/31/318a5c47-7645-4779-bf03-3a08c3661f1f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/31/318a5c47-7645-4779-bf03-3a08c3661f1f?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d8bd5ecd-3190-49a6-8818-d4e63602b8f7?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d8bd5ecd-3190-49a6-8818-d4e63602b8f7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d8/d8bd5ecd-3190-49a6-8818-d4e63602b8f7?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d8/d8bd5ecd-3190-49a6-8818-d4e63602b8f7?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d8bd5ecd-3190-49a6-8818-d4e63602b8f7?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6690ccc-079a-450c-9d2e-3845ab76061c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6690ccc-079a-450c-9d2e-3845ab76061c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d6/d6690ccc-079a-450c-9d2e-3845ab76061c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d6/d6690ccc-079a-450c-9d2e-3845ab76061c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6690ccc-079a-450c-9d2e-3845ab76061c?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5c/5c1afdce-25af-4d9f-8d14-9d455691a193?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5c/5c1afdce-25af-4d9f-8d14-9d455691a193?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5c/5c1afdce-25af-4d9f-8d14-9d455691a193?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5c/5c1afdce-25af-4d9f-8d14-9d455691a193?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5c/5c1afdce-25af-4d9f-8d14-9d455691a193?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9b/9b883050-a0c3-4c67-baac-265432529296?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9b/9b883050-a0c3-4c67-baac-265432529296?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/9b/9b883050-a0c3-4c67-baac-265432529296?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/9b/9b883050-a0c3-4c67-baac-265432529296?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/9b/9b883050-a0c3-4c67-baac-265432529296?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/60/606b5108-9d1b-421a-925d-40d026ec3840?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/60/606b5108-9d1b-421a-925d-40d026ec3840?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/60/606b5108-9d1b-421a-925d-40d026ec3840?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/60/606b5108-9d1b-421a-925d-40d026ec3840?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/60/606b5108-9d1b-421a-925d-40d026ec3840?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/25/25b29671-b420-4eba-ba0f-43737ea41972?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/25/25b29671-b420-4eba-ba0f-43737ea41972?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/25/25b29671-b420-4eba-ba0f-43737ea41972?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/25/25b29671-b420-4eba-ba0f-43737ea41972?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/25/25b29671-b420-4eba-ba0f-43737ea41972?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/20/201ece32-683d-4e31-ac93-0e3ad94f478a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/20/201ece32-683d-4e31-ac93-0e3ad94f478a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/20/201ece32-683d-4e31-ac93-0e3ad94f478a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/20/201ece32-683d-4e31-ac93-0e3ad94f478a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/20/201ece32-683d-4e31-ac93-0e3ad94f478a?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/19/194e59c2-ecf0-4890-8193-48461bf9234d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/19/194e59c2-ecf0-4890-8193-48461bf9234d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/19/194e59c2-ecf0-4890-8193-48461bf9234d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/19/194e59c2-ecf0-4890-8193-48461bf9234d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/19/194e59c2-ecf0-4890-8193-48461bf9234d?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1df2e35c-8655-4f02-b9e6-303752cfda27?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1df2e35c-8655-4f02-b9e6-303752cfda27?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1d/1df2e35c-8655-4f02-b9e6-303752cfda27?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1d/1df2e35c-8655-4f02-b9e6-303752cfda27?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1df2e35c-8655-4f02-b9e6-303752cfda27?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz GLA 220"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd9ae1b8-fa81-4798-90b2-de4ed32721cb?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd9ae1b8-fa81-4798-90b2-de4ed32721cb?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpsbsmodelimprovementsv2&client.abtests=cossrpcorerecommenderpopularfiltersnobanner&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=accwebpublichomegaaa4on&adId=456259857"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=47490&c=OffRoad&ms=17200%3B232&id%21=456259857&vc=Car&sid=460808"
+    },
+    "vehicleCondition": "used",
+    "make": "Mercedes-Benz",
+    "model": "GLA 220",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/mercedes-benz.html",
+            "name": "Mercedes-Benz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/mercedes-benz-gla-220.html",
+            "name": "GLA 220"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Mercedes-Benz GLA 220 für 47.490 €",
+    "price_text": "Preis 47.490 € Guter Preis 39.908 € (Netto) , 19% MwSt. Finanzierung Monatsrate ab 500 € Finanzierung berechnen Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Online abschließen Schließe die Finanzierung bequem online von Zuhause ab Online-Kredit Dieses Inserat bietet den Online-Kreditvergleich Unabhängige Finanzierung mit der Bank deiner Wahl Einfach von Zuhause online abschließen Nach wenigen Minuten erhältst du dein persönliches Kreditangebot von verschiedenen Banken",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup, Vorführfahrzeug",
+      "Baureihe": "H247",
+      "Ausstattungslinie": "AMG",
+      "Fahrzeugnummer": "150722",
+      "Verfügbarkeit": "Sofort",
+      "Kilometerstand": "9.077 km",
+      "Hubraum": "1.950 cm³",
+      "Leistung": "140 kW (190 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Diesel",
+      "Energieverbrauch (komb.) 2": "6,1 l/100km",
+      "CO₂-Emissionen (komb.) 2": "159 g/km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Kraftstoffverbrauch 2": "6,1 l/100km (kombiniert) 7,6 l/100km (Innenstadt) 6,1 l/100km (Stadtrand) 5,3 l/100km (Landstraße) 6,2 l/100km (Autobahn)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro6",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "05/2025",
+      "Anzahl der Fahrzeughalter": "1",
+      "HU": "Neu",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Vorne, Kamera, Hinten, Selbstlenkende Systeme",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "manufaktur lack manufaktur alpin",
+      "Farbe": "Grau",
+      "Innenausstattung": "Teilleder, Schwarz",
+      "Anhängelast gebremst": "2.000 kg",
+      "Anhängelast ungebremst": "750 kg",
+      "Zylinder": "4",
+      "Tankgröße": "51 l"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 9.077 km • 140 kW (190 PS) • Diesel • Automatik • 05/2025",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd9ae1b8-fa81-4798-90b2-de4ed32721cb?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2c/2cae797c-770b-48f8-9f7b-6e14e7aadc3b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d868c6a-c9e5-449b-984e-77761ab4d397?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b65e01f-3f85-4a88-91ea-b4748f57548f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef89a483-15dd-42e0-a4e9-a40240d78292?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/75/75e976cf-5486-4a73-9f2d-951757d60346?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/89/891b528d-a45c-4cc2-a139-43f81ed09436?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/83/8358a4cf-2936-4f80-8b02-4f598334f492?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/85/85d86453-82a8-4ea8-aa02-2ddaa2cbfb5d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba548236-e5aa-48eb-b839-fff75eba927c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b7/b728c9ce-34f3-4704-9810-fefb85b39fc6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3b/3beec20b-b761-45d6-9980-4ddfaa600d01?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7d/7de0b331-8bc0-43fd-b2d2-e3396935852b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd85a043-f2d6-4357-a38c-79bb6caef770?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb818132-69da-4b75-96b2-884ab6581ad6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a87a817-85ab-4783-8ab6-3186492034e1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/31/318a5c47-7645-4779-bf03-3a08c3661f1f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d8/d8bd5ecd-3190-49a6-8818-d4e63602b8f7?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6690ccc-079a-450c-9d2e-3845ab76061c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5c/5c1afdce-25af-4d9f-8d14-9d455691a193?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9b/9b883050-a0c3-4c67-baac-265432529296?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/60/606b5108-9d1b-421a-925d-40d026ec3840?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/25/25b29671-b420-4eba-ba0f-43737ea41972?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/20/201ece32-683d-4e31-ac93-0e3ad94f478a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/19/194e59c2-ecf0-4890-8193-48461bf9234d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1df2e35c-8655-4f02-b9e6-303752cfda27?rule=mo-1600"
+  ],
+  "images": [],
+  "warnings": []
+}

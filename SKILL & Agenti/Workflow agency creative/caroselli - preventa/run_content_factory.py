@@ -33,7 +33,8 @@ os.makedirs(DEBUG_DIR, exist_ok=True)
 # prodotto Preventa, va dato tutto il contesto reale (posizionamento, pain
 # point, leve psicologiche gia' validate nei 4 ganci di outreach in
 # produzione) - segnalato da Max ("non ha idea di che prodotto sia").
-ARGOMENTO_CAROSELLO = """Prodotto: Preventa.
+# Override da riga di comando: python run_content_factory.py "<argomento>"
+ARGOMENTO_DEFAULT = """Prodotto: Preventa.
 
 Cosa fa: il titolare di un concessionario auto incolla il link di un annuncio
 (anche di un sito estero, es. un portale tedesco) e in pochi secondi ottiene
@@ -72,12 +73,18 @@ Tono: diretto, concreto, mai fuffa da "rivoluziona il tuo business" - parla di
 tempo reale perso e clienti reali persi, con esempi specifici, non promesse
 vaghe."""
 
+ARGOMENTO_CAROSELLO = sys.argv[1] if len(sys.argv) > 1 else ARGOMENTO_DEFAULT
+
 manager = BrowserManager('ArenaAI', headless=False)
 try:
     context = manager.get_context()
     page = manager.new_page(context)
 
-    page.goto("https://arena.ai/", timeout=60000)
+    # wait_until="load" non spara mai su arena.ai (SPA con polling/websocket di
+    # sfondo che tiene la rete "occupata") - verificato con screenshot reale:
+    # a 60s la pagina e' gia' completamente pronta, e' solo l'evento 'load' che
+    # non arriva. "domcontentloaded" e' la condizione giusta qui.
+    page.goto("https://arena.ai/", timeout=60000, wait_until="domcontentloaded")
     time.sleep(4)
     dismiss_blocking_dialogs(page)
 

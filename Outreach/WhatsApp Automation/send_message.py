@@ -29,6 +29,16 @@ UA = (
     "Chrome/124.0.0.0 Safari/537.36"
 )
 
+# Self-healing su Page.goto: osservato 2026-08-12, 2 lead di fila falliti con "Timeout
+# 30000ms exceeded" (il default di Playwright) mentre curl raggiungeva web.whatsapp.com in
+# ~6s — probabile contesa risorse (altre automazioni Chrome sulla stessa macchina), non un
+# blocco reale. Un retry con timeout piu' largo dentro la stessa chiamata risolve i blip
+# transitori senza sprecare un intero "fallimento tecnico" (e senza avvicinare inutilmente
+# il circuit-breaker di outreach_giornaliero.py) per un semplice ritardo di rete.
+GOTO_MAX_TENTATIVI = 3
+GOTO_TIMEOUT_MS = 45000
+GOTO_PAUSA_RETRY_SEC = 5
+
 # Segnali noti di blocco/limitazione account WhatsApp — se compaiono, FERMA subito
 # il batch del giorno (non ha senso continuare a mandare se l'account e' segnalato).
 SEGNALI_BAN = [
@@ -95,7 +105,22 @@ async def invia_async(phone: str, message: str, dry_run: bool = False) -> dict:
         try:
             page = ctx.pages[0] if ctx.pages else await ctx.new_page()
 
-            await page.goto(url, wait_until="domcontentloaded")
+            ultimo_errore_goto = None
+            for tentativo in range(1, GOTO_MAX_TENTATIVI + 1):
+                try:
+                    await page.goto(url, wait_until="domcontentloaded", timeout=GOTO_TIMEOUT_MS)
+                    ultimo_errore_goto = None
+                    break
+                except Exception as e:
+                    ultimo_errore_goto = e
+                    if tentativo < GOTO_MAX_TENTATIVI:
+                        await asyncio.sleep(GOTO_PAUSA_RETRY_SEC)
+            if ultimo_errore_goto is not None:
+                return {
+                    "esito": "errore",
+                    "dettaglio": f"Page.goto fallito dopo {GOTO_MAX_TENTATIVI} tentativi ({GOTO_TIMEOUT_MS}ms ciascuno): {ultimo_errore_goto}",
+                }
+
             await asyncio.sleep(6)
 
             body_text = await page.evaluate("() => document.body.innerText")

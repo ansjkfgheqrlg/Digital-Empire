@@ -1,0 +1,757 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=458567878&sb=rel&od=up&vc=Car&dam=false&fr=2018&ml=%3A80000&ms=16700%3B%3B%3B&ms=4%3B%3B%3B&ms=1700%3B%3B%3B&ms=1900%3B%3B%3B&ms=3100%3B%3B%3B&ms=3500%3B%3B%3B&ms=4700%3B%3B%3B&ms=8600%3B%3B%3B&ms=270%3B%3B%3B&ms=14600%3B%3B%3B&ms=12400%3B%3B%3B&ms=11650%3B%3B%3B&ms=14800%3B%3B%3B&ms=15200%3B%3B%3B&ms=15500%3B%3B%3B&ms=15900%3B%3B%3B&ms=16600%3B%3B%3B&ms=17200%3B%3B%3B&ms=20100%3B%3B%3B&ms=21600%3B%3B%3B&ms=137%3B%3B%3B&p=35000&pa=CAM_360_DEGREES&pa=REAR_VIEW_CAM&pageNumber=4&s=Car&ref=srp&searchId=0cf3070c-8b31-10e5-6da7-3ca8818eecbe&refId=0cf3070c-8b31-10e5-6da7-3ca8818eecbe",
+  "scraped_at": "2026-07-06T18:34:02+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Limousine"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "PI-5490"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "58.222 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.993 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "147 kW (200 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Diesel"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "07/2023"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "3-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Hinten, Vorne, Kamera"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "SCHWARZ -"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Schwarz Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Kunstleder, Schwarz"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "750 kg"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.750 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      },
+      {
+        "label": "Tankgröße",
+        "tag": "fuelTankVolume",
+        "value": "50 l"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Mercedes-Benz E 220",
+    "subTitle": "d AMG-LINE Multibeam*Panorama",
+    "makeKey": "Mercedes-Benz",
+    "modelKey": "E 220",
+    "isNew": false,
+    "onCustomerBehalf": false,
+    "isConditionNew": false,
+    "features": [
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Adaptives Fahrwerk",
+      "Adaptives Kurvenlicht",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Anhängerrangierassistent",
+      "Apple CarPlay",
+      "Armlehne",
+      "Ausparkassistent",
+      "Berganfahrassistent",
+      "Blendfreies Fernlicht",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Sitzeinstellung",
+      "Elektr. Sitzeinstellung mit Memory-Funktion",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Gepäckraumabtrennung",
+      "Geschwindigkeitsbegrenzer",
+      "Heckantrieb",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Isofix Beifahrersitz",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Navigationsvorbereitung",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Panorama-Dach",
+      "Partikelfilter",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Scheckheftgepflegt",
+      "Schiebedach",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sommerreifen",
+      "Soundsystem",
+      "Sportpaket",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Winterpaket",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "FINANZIERUNG AB 3,99%",
+      "KFZ-ANKAUF",
+      "Multibeam LED"
+    ],
+    "sellerId": 37133914,
+    "priceRating": {
+      "rating": "GOOD_PRICE",
+      "ratingLabel": "Guter Preis",
+      "thresholdLabels": [
+        "30.700 €",
+        "39.900 €",
+        "43.000 €",
+        "47.900 €",
+        "51.400 €",
+        "57.100 €"
+      ],
+      "vehiclePriceOffset": 32
+    },
+    "segment": "Car",
+    "title": "Mercedes-Benz E 220 d AMG-LINE Multibeam*Panorama",
+    "url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-e-220-d-amg-line-multibeam-panorama-pinneberg/458567878.html",
+    "vc": "Car",
+    "category": "Limousine",
+    "id": 458567878,
+    "price": {
+      "gross": "40.900 €",
+      "grossAmount": 40900,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "kba": {
+      "hsn": "2222",
+      "tsn": "BEJ"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_logo_20_name_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<br>Lieber Interessent,<br><br>fragen Sie uns gerne nach den aktuellen Finanzierungsmöglichkeiten zu diesem Fahrzeug. Auch eine Einschätzung des Inzahlungnahmepreises für Ihr Fahrzeug ist auf Wunsch vorab möglich. Dahingehend wäre eine Meldung über die Fahrgestell-Nummer, Erstzulassung sowie der aktuelle Kilometer-Stand wünschenswert.<br><br>Vor Ihrem Besuch genügt ein kurzer Anruf und wir stellen sicher, dass ihr Wunschfahrzeug auch vor Ort sowie eine Probefahrt möglich ist, da es ansonsten zu einer längeren Wartezeit kommen kann.<br><br>Zögern Sie bitte nicht, uns anzurufen oder eine E-Mail zu senden.<br><br>Unser Vertriebsteam steht Ihnen selbstverständlich gerne für alle Fragen zur Verfügung.<br><br>Weitere attraktive Fahrzeugangebote finden Sie auf unsere Homepage: www.hs-automobile-hamburg.de<br><br>Freundliche Grüße<br><br>Ihr H&amp;S Automobile Team!<br><br> <br><br>Alle Angaben sind ohne Gewähr und es gelten die im Kaufvertrag vereinbarten Ausstattungsmerkmale.<br><br> <b> Sonderausstattung </b> <br> <ul><li>Ausstattungs-Paket: Business</li></ul>         ◦ Infotainment-Paket High-End<br>        ◦ Konnektivität-Paket<br>        ◦ Smartphone integriert<br>        ◦ Kombiinstrument mit Variabler Anzeige (Widescreen Cockpit)<br>        ◦ Service-System: MBUX Augmented Reality für Navigation<br>        ◦ Induktionsladeschale für Smartphone<br>        ◦ Fahrassistenz-System: Verkehrszeichenerkennung<br>        ◦ Park-Paket<br>        ◦ Fahrassistenz-System: aktiver Park-Assistent<br>        ◦ Rückfahrkamera<br>        ◦ Sitzheizung vorn<br>        ◦ Kraftstofftank: vergrößert<br> <ul><li>AMG-Line Interieur</li></ul>         ◦ Sitz-Komfort-Paket<br>        ◦ Innenausstattung: Zierteile Aluminium Längsschliff<br>        ◦ Edelstahlpedale Sportdesign<br>        ◦ Fußmatten AMG<br>        ◦ Sitzbezug / Polsterung: Ledernachbildung Artico / Dinamica<br>        ◦ Ambiente-Beleuchtung<br>        ◦ Lenkrad (Leder Nappa, unten abgeflacht)<br>        ◦ Lenkrad (Sport) mit Multifunktion<br> <ul><li>Panorama-Schiebedach elektrisch (vollverglaste Dachfläche)</li> <li>Multibeam LED</li></ul>         ◦ Fahrassistenz-System: Fernlichtassistent Adaptive plus<br> <ul><li>Surround-System Burmester</li> <li>Media-Display</li> <li>Night-Paket</li></ul>         ◦ Außenspiegel schwarz lackiert<br>        ◦ Seitenscheiben hinten und Heckscheibe abgedunkelt<br>        ◦ LM-Felgen<br>        ◦ LM-Felgen<br> <ul><li>Spiegel-Paket</li></ul>         ◦ Außenspiegel elektr. anklappbar<br>        ◦ Außen-/Innenspiegel mit Abblendautomatik<br> <ul><li>Außenspiegel mit Totwinkel-Assistent</li> <li>Rücksitzlehne geteilt / klappbar</li> <li>Innenhimmel schwarz</li> <li>Verkleidung / Spoiler hinten (AMG)</li> <li>Vorbereitung Navigationssystem (Garmin MAP Pilot)</li> <li>Kühlerjalousie, regelbar (Airpanel)</li> <li>Einstiegsleisten beleuchtet</li> <li>Scheibenwaschanlage beheizt</li> <li>Mittelkonsole Edelholz Esche, schwarz</li> <li>Reifen-Reparaturset (Tirefit)</li> <li>Isofix-Aufnahmen für Kindersitz an Rücksitz</li> <li>Lendenwirbelstützen vorn, elektr. verstellbar</li> </ul><b> Außenausstattung </b> <br> <ul><li>Fensterheber elektrisch vorn + hinten</li> <li>Harnstofftank (AdBlue), vergrößert</li> <li>Scheibenwischer mit Regensensor</li> <li>SCR-System (AdBlue-Technologie)</li> <li>Zentralverriegelung mit Fernbedienung</li> </ul><b> Sicherheit &amp; Umwelt </b> <br> <ul><li>Airbag Beifahrerseite abschaltbar</li> <li>Airbag Fahrer-/Beifahrerseite</li> <li>Beckenairbag vorn (Pelvisbag)</li> <li>Knieairbag Fahrerseite</li> <li>Kopf-Airbag-System vorn</li> <li>Seitenairbag (Sidebag) vorn</li> </ul><b> Technik + Sicherheit </b> <br> <ul><li>Servolenkung</li> </ul><b> Innenausstattung </b> <br> <ul><li>Klimaautomatik (Thermatic 2-Zonen)</li> <li>Navigationssystem: Festplattennavigation</li> </ul><b> Assistenzsysteme </b> <br> <ul><li>Anti-Blockier-System (ABS)</li> <li>Elektron. Stabilitäts-Programm (ESP)</li> <li>Fahrassistenz-System: Agility Select / Dynamic Select (Fahrmodusschalter)</li> <li>Fahrassistenz-System: Attention-Assist (Müdigkeitserkennungs-Sensor)</li> <li>Fahrassistenz-System: Auffahrwarnsystem mit Bremsfunktion (Collision Prevention Assist)</li> <li>Fahrassistenz-System: Berganfahrhilfe</li> <li>Mercedes-Benz Notrufsystem</li> <li>Reifendruck-Kontrollsystem</li> <li>Rußpartikelfilter</li> </ul><b> Sitze + Polster </b> <br> <ul><li>Sitze vorn elektr. verstellbar</li> </ul><b> Sonstiges </b> <br> <ul><li>Ablage-Paket</li> <li>DAB-Tuner (Radioempfang digital)</li> <li>Design- und Ausstattungslinie AMG Line</li> <li>Fahrassistenz-System: Verkehrs-Informations-System Live Traffic</li> <li>Getriebe Automatik - (9-Stufen)</li> <li>Infotainment-System: Remote Service (Plus)</li> <li>Karosserie: 4-türig</li> <li>KeyFree-Startsystem</li> <li>Mild-Hybrid 162 kW (Motor 2,0 Ltr. - 147 kW CDI)</li> <li>Modellpflege mit Code</li> <li>Multimedia-Infotainment-System MBUX (Connect 20 High)</li> <li>PRE-SAFE-System</li> <li>Schadstoffarm nach Abgasnorm Euro 6d</li> <li>Sprachbediensystem Erweiterte Funktionen (MBUX)</li> <li>Touchpad (Mittelkonsole)</li></ul><br>Weitere Fotos, Details und Top Angebote finden Sie unter  <b> www.hs-automobile-hamburg.de </b> <br><hr>",
+    "contactInfo": {
+      "address1": "Elmshorner Str. 146",
+      "address2": "DE-25421 Pinneberg",
+      "name": "H&S Automobile Hamburg Gmbh",
+      "openingHours": [
+        {
+          "day": "Mo - Fr",
+          "time": "09:00 Uhr - 18:00 Uhr"
+        },
+        {
+          "day": "Sa",
+          "time": "09:30 Uhr - 16:00 Uhr"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 02.10.2024",
+      "rating": {
+        "count": 49,
+        "totalCount": 49,
+        "score": 4.6,
+        "scoreLocalized": "4,6",
+        "link": "https://www.mobile.de/bewertungen/HSAutomobileHamburgGmbhPinneberg?lang=de",
+        "recommendationRate": 90,
+        "adRealityRate": 93,
+        "consultingScore": 4.446808510638298,
+        "friendlinessScore": 4.729166666666667,
+        "responseTimeScore": 4.571428571428571
+      },
+      "languages": "Deutsch, Pусский, English, Türkçe",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/37/37c43602-81b7-4dd3-912f-9512854e48f1?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/37/37c43602-81b7-4dd3-912f-9512854e48f1?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/37/37c43602-81b7-4dd3-912f-9512854e48f1?rule=mo-360 360w",
+        "alt": "H&S Automobile Hamburg Gmbh"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "Mobil",
+          "number": "+49 (0)176 22578171",
+          "uri": "tel:+4917622578171"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "H&S Automobile Hamburg GmbH"
+      },
+      "mapLink": "https://maps.google.com/maps?q=53.67556159999999,9.794048799999999+(H%26S%20Automobile%20Hamburg%20Gmbh)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 53.67556159999999,
+        "lon": 9.794048799999999
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=37133914",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a713c851-c9ef-4260-9f45-be5c89aefc75?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a713c851-c9ef-4260-9f45-be5c89aefc75?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a7/a713c851-c9ef-4260-9f45-be5c89aefc75?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/a7/a713c851-c9ef-4260-9f45-be5c89aefc75?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a713c851-c9ef-4260-9f45-be5c89aefc75?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c7de968-8fc2-4076-934b-415fc790df1c?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c7de968-8fc2-4076-934b-415fc790df1c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/9c/9c7de968-8fc2-4076-934b-415fc790df1c?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/9c/9c7de968-8fc2-4076-934b-415fc790df1c?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c7de968-8fc2-4076-934b-415fc790df1c?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c96544af-6ab0-435c-b734-720d040939eb?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c96544af-6ab0-435c-b734-720d040939eb?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c9/c96544af-6ab0-435c-b734-720d040939eb?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/c9/c96544af-6ab0-435c-b734-720d040939eb?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c9/c96544af-6ab0-435c-b734-720d040939eb?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee57c5e-815e-4ef4-b701-32350a8cad46?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee57c5e-815e-4ef4-b701-32350a8cad46?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee57c5e-815e-4ef4-b701-32350a8cad46?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee57c5e-815e-4ef4-b701-32350a8cad46?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee57c5e-815e-4ef4-b701-32350a8cad46?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a783c1c7-0e35-467d-a170-e869e2d630ea?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a783c1c7-0e35-467d-a170-e869e2d630ea?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a7/a783c1c7-0e35-467d-a170-e869e2d630ea?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a7/a783c1c7-0e35-467d-a170-e869e2d630ea?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 123,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=458567878&loanType=balloon&loanDuration=60&downPayment=8180&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 8180,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 32720,
+        "interestRateNominal": 4.88,
+        "interestRateEffective": 4.99,
+        "monthlyInstallment": 349.34,
+        "finalInstallment": 18405,
+        "totalInterest": 6296.16,
+        "totalAmount": 39016.16,
+        "localized": {
+          "downPayment": "8.180 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "32.720 €",
+          "interestRateNominal": "4,88%",
+          "interestRateEffective": "4,99%",
+          "monthlyInstallment": "350 €",
+          "finalInstallment": "18.405,00 €",
+          "totalInterest": "6.296,16 €",
+          "totalAmount": "39.016,16 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/57/574df7c6-a726-4921-8371-5592341700cf?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/57/574df7c6-a726-4921-8371-5592341700cf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/57/574df7c6-a726-4921-8371-5592341700cf?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/57/574df7c6-a726-4921-8371-5592341700cf?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/57/574df7c6-a726-4921-8371-5592341700cf?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff433c97-fc8f-40b1-8054-a558147a9cd6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff433c97-fc8f-40b1-8054-a558147a9cd6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ff/ff433c97-fc8f-40b1-8054-a558147a9cd6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ff/ff433c97-fc8f-40b1-8054-a558147a9cd6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff433c97-fc8f-40b1-8054-a558147a9cd6?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/7e/7ecb068e-4f2c-495d-8086-6014b0f52ff1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7e/7ecb068e-4f2c-495d-8086-6014b0f52ff1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7e/7ecb068e-4f2c-495d-8086-6014b0f52ff1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/7e/7ecb068e-4f2c-495d-8086-6014b0f52ff1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7e/7ecb068e-4f2c-495d-8086-6014b0f52ff1?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c4/c433a535-d479-46dd-9de1-eb0a16ea990d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c4/c433a535-d479-46dd-9de1-eb0a16ea990d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c4/c433a535-d479-46dd-9de1-eb0a16ea990d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c4/c433a535-d479-46dd-9de1-eb0a16ea990d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c4/c433a535-d479-46dd-9de1-eb0a16ea990d?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4c/4c982987-eb7d-4b29-97ff-e09ef6e1e835?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4c/4c982987-eb7d-4b29-97ff-e09ef6e1e835?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4c/4c982987-eb7d-4b29-97ff-e09ef6e1e835?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4c/4c982987-eb7d-4b29-97ff-e09ef6e1e835?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4c/4c982987-eb7d-4b29-97ff-e09ef6e1e835?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0a301cc-2238-4890-a263-c36c28b69cfa?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0a301cc-2238-4890-a263-c36c28b69cfa?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a0/a0a301cc-2238-4890-a263-c36c28b69cfa?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a0/a0a301cc-2238-4890-a263-c36c28b69cfa?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0a301cc-2238-4890-a263-c36c28b69cfa?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/17/17a169de-e1b7-4917-b481-75d76928048b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/17/17a169de-e1b7-4917-b481-75d76928048b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/17/17a169de-e1b7-4917-b481-75d76928048b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/17/17a169de-e1b7-4917-b481-75d76928048b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/17/17a169de-e1b7-4917-b481-75d76928048b?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef48230d-3e51-4bcf-a14e-636762cdabba?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef48230d-3e51-4bcf-a14e-636762cdabba?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ef/ef48230d-3e51-4bcf-a14e-636762cdabba?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ef/ef48230d-3e51-4bcf-a14e-636762cdabba?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef48230d-3e51-4bcf-a14e-636762cdabba?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3163711-a3ad-4025-b178-91129b70b17c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3163711-a3ad-4025-b178-91129b70b17c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b3/b3163711-a3ad-4025-b178-91129b70b17c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b3/b3163711-a3ad-4025-b178-91129b70b17c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3163711-a3ad-4025-b178-91129b70b17c?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d0cef41-36b5-4419-8692-0c6fb38c9a61?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d0cef41-36b5-4419-8692-0c6fb38c9a61?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4d/4d0cef41-36b5-4419-8692-0c6fb38c9a61?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4d/4d0cef41-36b5-4419-8692-0c6fb38c9a61?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d0cef41-36b5-4419-8692-0c6fb38c9a61?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d22b3f73-8650-4025-8236-2574f24e885e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d22b3f73-8650-4025-8236-2574f24e885e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d2/d22b3f73-8650-4025-8236-2574f24e885e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d2/d22b3f73-8650-4025-8236-2574f24e885e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d22b3f73-8650-4025-8236-2574f24e885e?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/77/77a9e9e9-ce86-4f07-90f5-b8d3ca7d4ab6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/77/77a9e9e9-ce86-4f07-90f5-b8d3ca7d4ab6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/77/77a9e9e9-ce86-4f07-90f5-b8d3ca7d4ab6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/77/77a9e9e9-ce86-4f07-90f5-b8d3ca7d4ab6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/77/77a9e9e9-ce86-4f07-90f5-b8d3ca7d4ab6?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/80/80f50494-bced-48b2-a27a-0e5a13dc0af7?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/80/80f50494-bced-48b2-a27a-0e5a13dc0af7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/80/80f50494-bced-48b2-a27a-0e5a13dc0af7?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/80/80f50494-bced-48b2-a27a-0e5a13dc0af7?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/80/80f50494-bced-48b2-a27a-0e5a13dc0af7?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/64/64845660-028a-4dd5-8c4e-c68552338600?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/64/64845660-028a-4dd5-8c4e-c68552338600?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/64/64845660-028a-4dd5-8c4e-c68552338600?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/64/64845660-028a-4dd5-8c4e-c68552338600?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/64/64845660-028a-4dd5-8c4e-c68552338600?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b568027-e936-4be3-8757-a69094db35a6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b568027-e936-4be3-8757-a69094db35a6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6b/6b568027-e936-4be3-8757-a69094db35a6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6b/6b568027-e936-4be3-8757-a69094db35a6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b568027-e936-4be3-8757-a69094db35a6?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/69/6995c113-db81-4bfe-ae21-87ce5fd03670?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/69/6995c113-db81-4bfe-ae21-87ce5fd03670?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/69/6995c113-db81-4bfe-ae21-87ce5fd03670?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/69/6995c113-db81-4bfe-ae21-87ce5fd03670?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/69/6995c113-db81-4bfe-ae21-87ce5fd03670?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d1/d1b6db0c-dc12-42a7-afd5-d0f48ec7f099?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d1/d1b6db0c-dc12-42a7-afd5-d0f48ec7f099?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d1/d1b6db0c-dc12-42a7-afd5-d0f48ec7f099?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d1/d1b6db0c-dc12-42a7-afd5-d0f48ec7f099?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d1/d1b6db0c-dc12-42a7-afd5-d0f48ec7f099?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d832e03e-3149-4342-b5dc-95da9f0cb9ae?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d832e03e-3149-4342-b5dc-95da9f0cb9ae?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d8/d832e03e-3149-4342-b5dc-95da9f0cb9ae?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d8/d832e03e-3149-4342-b5dc-95da9f0cb9ae?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d832e03e-3149-4342-b5dc-95da9f0cb9ae?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c4/c429fdaa-4246-4432-a9ce-8cdb8528709d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c4/c429fdaa-4246-4432-a9ce-8cdb8528709d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c4/c429fdaa-4246-4432-a9ce-8cdb8528709d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c4/c429fdaa-4246-4432-a9ce-8cdb8528709d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c4/c429fdaa-4246-4432-a9ce-8cdb8528709d?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/0b/0be223f2-b512-4fac-a04b-d0bc3926df98?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/0b/0be223f2-b512-4fac-a04b-d0bc3926df98?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/0b/0be223f2-b512-4fac-a04b-d0bc3926df98?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/0b/0be223f2-b512-4fac-a04b-d0bc3926df98?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/0b/0be223f2-b512-4fac-a04b-d0bc3926df98?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz E 220"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/57/574df7c6-a726-4921-8371-5592341700cf?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/57/574df7c6-a726-4921-8371-5592341700cf?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpcorerecommenderpopularfiltersnobanner&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=accwebpublichomegaaa4on&client.abtests=cossrpsbsmodelimprovementscontrol&adId=458567878"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=40900&c=Limousine&ms=17200%3B48&id%21=458567878&vc=Car&sid=37133914"
+    },
+    "vehicleCondition": "used",
+    "make": "Mercedes-Benz",
+    "model": "E 220",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "0cf3070c-8b31-10e5-6da7-3ca8818eecbe"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Mercedes-Benz E 220 für 40.900 €",
+    "price_text": "Preis 40.900 € Guter Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "Limousine",
+      "Fahrzeugnummer": "PI-5490",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "58.222 km",
+      "Hubraum": "1.993 cm³",
+      "Leistung": "147 kW (200 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Diesel",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro6",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "07/2023",
+      "HU": "Neu",
+      "Klimatisierung": "3-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Hinten, Vorne, Kamera",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "SCHWARZ -",
+      "Farbe": "Schwarz Metallic",
+      "Innenausstattung": "Kunstleder, Schwarz",
+      "Anhängelast ungebremst": "750 kg",
+      "Gewicht": "1.750 kg",
+      "Zylinder": "4",
+      "Tankgröße": "50 l"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 58.222 km • 147 kW (200 PS) • Diesel • Automatik • 07/2023",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/57/574df7c6-a726-4921-8371-5592341700cf?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff433c97-fc8f-40b1-8054-a558147a9cd6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7e/7ecb068e-4f2c-495d-8086-6014b0f52ff1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c4/c433a535-d479-46dd-9de1-eb0a16ea990d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4c/4c982987-eb7d-4b29-97ff-e09ef6e1e835?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0a301cc-2238-4890-a263-c36c28b69cfa?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/17/17a169de-e1b7-4917-b481-75d76928048b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef48230d-3e51-4bcf-a14e-636762cdabba?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3163711-a3ad-4025-b178-91129b70b17c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d0cef41-36b5-4419-8692-0c6fb38c9a61?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d2/d22b3f73-8650-4025-8236-2574f24e885e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/77/77a9e9e9-ce86-4f07-90f5-b8d3ca7d4ab6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/80/80f50494-bced-48b2-a27a-0e5a13dc0af7?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/64/64845660-028a-4dd5-8c4e-c68552338600?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b568027-e936-4be3-8757-a69094db35a6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/69/6995c113-db81-4bfe-ae21-87ce5fd03670?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d1/d1b6db0c-dc12-42a7-afd5-d0f48ec7f099?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d8/d832e03e-3149-4342-b5dc-95da9f0cb9ae?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c4/c429fdaa-4246-4432-a9ce-8cdb8528709d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0b/0be223f2-b512-4fac-a04b-d0bc3926df98?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/57/574df7c6-a726-4921-8371-5592341700cf?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff433c97-fc8f-40b1-8054-a558147a9cd6?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/7e/7ecb068e-4f2c-495d-8086-6014b0f52ff1?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c4/c433a535-d479-46dd-9de1-eb0a16ea990d?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4c/4c982987-eb7d-4b29-97ff-e09ef6e1e835?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0a301cc-2238-4890-a263-c36c28b69cfa?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/17/17a169de-e1b7-4917-b481-75d76928048b?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef48230d-3e51-4bcf-a14e-636762cdabba?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3163711-a3ad-4025-b178-91129b70b17c?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d0cef41-36b5-4419-8692-0c6fb38c9a61?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d22b3f73-8650-4025-8236-2574f24e885e?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/77/77a9e9e9-ce86-4f07-90f5-b8d3ca7d4ab6?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/80/80f50494-bced-48b2-a27a-0e5a13dc0af7?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/64/64845660-028a-4dd5-8c4e-c68552338600?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b568027-e936-4be3-8757-a69094db35a6?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/69/6995c113-db81-4bfe-ae21-87ce5fd03670?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d1/d1b6db0c-dc12-42a7-afd5-d0f48ec7f099?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d832e03e-3149-4342-b5dc-95da9f0cb9ae?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c4/c429fdaa-4246-4432-a9ce-8cdb8528709d?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/0b/0be223f2-b512-4fac-a04b-d0bc3926df98?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

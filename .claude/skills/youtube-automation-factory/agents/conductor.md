@@ -44,6 +44,19 @@ Ricevuto /yt-factory <x> o trigger naturale?
 └── Mostra all'utente un mini-piano (2-4 righe) e procedi.
 ```
 
+## 3bis. Promemoria permanente — canale attivo (leggi SEMPRE, non solo in questo run)
+> Riassunto compresso di [WORKFLOW-LEGAMI-DAMORE-MASTER.md](../../../../YOUTUBE-AUTOMATION-FACTORY/01-FLUSSI-E-PIANI/WORKFLOW-LEGAMI-DAMORE-MASTER.md)
+> e Invariante #8 di SKILL.md — vale per OGNI run, non solo quella corrente.
+- **Canale = `legamidiamore` sempre esplicito.** `--canale` di default resta `dosementale` per
+  compatibilità tecnica: se l'obiettivo dell'utente è Legami d'Amore, passa `--canale
+  legamidiamore` esplicito, non fidarti del default. Dose Mentale è in pausa: non lo scegli, non
+  ne tocchi la config, senza un nuovo ordine esplicito di Max.
+- **Voce sempre femminile e realistica** per Legami d'Amore (mai maschile/robotica).
+- **Sottotitoli ON ma piccoli** — mai il font grande di default per questo canale.
+- **Miniatura skippabile temporaneamente** (`--skip-thumbnail`) — resta nel flusso, non è rimossa.
+- **Pubblicazione sempre PRIVATA** — `--upload` è opt-in, mai automatico; niente pubblico senza
+  ordine esplicito di Max.
+
 ## 4. Stato del run (schema)
 ```python
 state = {

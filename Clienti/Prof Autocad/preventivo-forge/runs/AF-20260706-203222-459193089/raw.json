@@ -1,0 +1,780 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=459193089&sb=rel&od=up&vc=Car&dam=false&fr=2018&ml=%3A80000&ms=16700%3B%3B%3B&ms=4%3B%3B%3B&ms=1700%3B%3B%3B&ms=1900%3B%3B%3B&ms=3100%3B%3B%3B&ms=3500%3B%3B%3B&ms=4700%3B%3B%3B&ms=8600%3B%3B%3B&ms=270%3B%3B%3B&ms=14600%3B%3B%3B&ms=12400%3B%3B%3B&ms=11650%3B%3B%3B&ms=14800%3B%3B%3B&ms=15200%3B%3B%3B&ms=15500%3B%3B%3B&ms=15900%3B%3B%3B&ms=16600%3B%3B%3B&ms=17200%3B%3B%3B&ms=20100%3B%3B%3B&ms=21600%3B%3B%3B&ms=137%3B%3B%3B&p=35000&pa=CAM_360_DEGREES&pa=REAR_VIEW_CAM&pageNumber=2&s=Car&ref=srp&searchId=e4c5b6ba-e01a-130f-35d0-6f7f2a07cbad&refId=e4c5b6ba-e01a-130f-35d0-6f7f2a07cbad",
+  "scraped_at": "2026-07-06T18:32:53+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "H243"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "AMG Line"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "44411"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Sofort"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "22.741 km"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "215 kW (292 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Elektromotor"
+      },
+      {
+        "label": "Anderer Energieträger",
+        "tag": "envkv.otherEnergySource",
+        "value": "Strom"
+      },
+      {
+        "label": "Batterie",
+        "tag": "battery",
+        "value": "inklusive"
+      },
+      {
+        "label": "Batteriekapazität (in kWh)",
+        "tag": "batteryCapacity",
+        "value": "67 kWh"
+      },
+      {
+        "label": "Schnellladezeit",
+        "tag": "chargingTimeFast",
+        "value": "32 Min."
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "17,9 kWh/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "0 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Elektrische Reichweite",
+        "tag": "envkv.electricalRange",
+        "value": "427 km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-A",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Stromverbrauch",
+        "tag": "envkv.consumptionDetails.power",
+        "value": [
+          "17,9 kWh/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "07/2023"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Kamera, Vorne, Hinten, Selbstlenkende Systeme"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "manufaktur magno lack manufaktur"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grau"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Teilleder, Schwarz"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "1.800 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "750 kg"
+      },
+      {
+        "label": "Reichweite",
+        "tag": "range",
+        "value": "427 km"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Mercedes-Benz EQA",
+    "subTitle": "350 AMG 4M AHK DYNLICHT SHZ TEMPOMAT PDC",
+    "makeKey": "Mercedes-Benz",
+    "modelKey": "EQA",
+    "isNew": false,
+    "onCustomerBehalf": false,
+    "batteryInformation": {
+      "wltpRange": {
+        "label": "Reichweite (WLTP)",
+        "value": "427 km",
+        "infoText": {
+          "headline": "Reichweite",
+          "text": "Die Reichweite eines Fahrzeugs mit vollständig geladener Batterie ist nur eine Schätzung. Die unter realen Bedingungen tatsächlich erzielbare Reichweite ist abhängig vom Fahrverhalten (Geschwindigkeit, Fahrzeugbeladung, Effizienz), den Wetter- und Straßenbedingungen, der verbleibenden Batteriekapazität und anderen Faktoren – und kann daher stark variieren."
+        }
+      },
+      "warrantyInfo": {
+        "label": "Verbleibende Garantie",
+        "value": "Nicht angegeben",
+        "infoText": {
+          "headline": "Batterie-Garantie",
+          "text": "Die Garantie für eine E-Fahrzeug-Batterie sichert dem Käufer in der Regel zu, dass die Leistungsfähigkeit der Batterie nicht zu stark abbaut. Entweder über einen festgelegten Zeitraum (meist 8 Jahre) oder eine bestimmte Laufleistung (meist zw. 100.000 - 160.000 km). Oft wird ein Wert von 70 bis 80 Prozent der ursprünglichen Kapazität zugesichert. Je nach Hersteller gibt es größere Unterschiede. Erkundige dich daher direkt beim Verkäufer nach den konkreten Garantiebedingungen."
+        }
+      },
+      "batteryCapacity": {
+        "label": "Batteriekapazität (in kWh)",
+        "value": "67 kWh"
+      },
+      "chargingTimes": {
+        "label": "Ladezeit",
+        "fastDc": {
+          "label": "Schnellladen (DC, max 300 kW)",
+          "value": "32 Min.",
+          "infoText": {
+            "headline": "Öffentliches Laden (50 kW)",
+            "text": "Die Schnellladezeit für Elektrofahrzeuge wird hauptsächlich durch die maximale Ladegeschwindigkeit bestimmt, die sowohl vom bordeigenen Ladegerät des Fahrzeugs als auch durch die Ladestation abhängt. Je höher die kW-Leistung beim Laden, desto schneller die Aufladung der Batterie und desto kürzer die Ladedauer.\n\nDie Ladezeit ist allerdings auch abhängig von anderen Faktoren: dem Ladezustand der Batterie (je leerer die Batterie, desto höher die Ladeleistung), der Außentemperatur und ob an der gleichen Ladesäule noch ein weiteres Fahrzeug lädt."
+          }
+        },
+        "homeAc": {
+          "label": "Zu Hause (AC, 11 kW)",
+          "value": "-",
+          "infoText": {
+            "headline": "Aufladen zu Hause (11 kW)",
+            "text": "Wer den nötigen Platz hat, kann sein Elektrofahrzeug bequem zu Hause aufladen. Notwendig ist nur ein Platz auf dem Grundstück – Garage, Carport, Einfahrt – und eine Wallbox.\n\nEine Wallbox erzeugt eine höhere Ladeleistung als eine Haushaltssteckdose und lädt das Fahrzeug deutlich schneller. Die Leistung reicht von ca. 4 kW bis 22 kW – je höher die Leistung, desto kürzer die Ladezeit."
+          }
+        }
+      }
+    },
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "hasElectricEngine": true,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandswarner",
+      "Allradantrieb",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Anhängerkupplung schwenkbar",
+      "Apple CarPlay",
+      "Armlehne",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Dachreling",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Sitzeinstellung",
+      "Elektr. Sitzeinstellung mit Memory-Funktion",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Geschwindigkeitsbegrenzer",
+      "Induktionsladen für Smartphones",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Partikelfilter",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Scheckheftgepflegt",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Soundsystem",
+      "Sportpaket",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Tempomat",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "WLAN / Wifi Hotspot",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 462825,
+    "priceRating": {
+      "rating": "REASONABLE_PRICE",
+      "ratingLabel": "Fairer Preis",
+      "thresholdLabels": [
+        "28.300 €",
+        "36.800 €",
+        "39.600 €",
+        "44.000 €",
+        "47.300 €",
+        "52.500 €"
+      ],
+      "vehiclePriceOffset": 6
+    },
+    "segment": "Car",
+    "title": "Mercedes-Benz EQA 350 AMG 4M AHK DYNLICHT SHZ TEMPOMAT PDC",
+    "url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-eqa-350-amg-4m-ahk-dynlicht-shz-tempomat-pdc-hamburg/459193089.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 459193089,
+    "price": {
+      "gross": "39.890 €",
+      "grossAmount": 39890,
+      "grossCurrency": "EUR",
+      "net": "33.521 €",
+      "netAmount": 33521.01,
+      "type": "FIXED",
+      "vat": "19% MwSt."
+    },
+    "kba": {
+      "hsn": "2222",
+      "tsn": "AXW"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "hero_logo_16_name_NA_languages_NA"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Fahrzeugnummer: 44411</b><br><br><b>Sitzbezug: Ledernachbildung ARTICO / Mikrofaser MICROCUT schwarz </b><br><br><b>unfallfrei, scheckheftgepflegt, Nichtraucher</b><br><hr> Wir beraten Sie gerne online oder per VideoCall WhatsApp / Facetime.<hr> <b>HIGHLIGHTS &amp; PAKETE</b><br><ul><li>772 AMG Styling</li><li>942 Laderaum-Paket</li><li>P17 KEYLESS-GO Komfort-Paket</li><li>950 AMG Line</li><li>U59 Sitzkomfort-Paket</li><li>PDB Advanced-Plus-Paket mit  Digitalen Extras</li><li>U62 Licht- und Sicht-Paket</li><li>P49 Spiegel-Paket</li><li>73B Ablagefach in Mittelkonsole mit Rollo</li><li>331 Zierelement hinterleuchtet</li><li>458 Volldigitales Instrumenten-Display</li></ul><br><b>ASSISTENZSYSTEME</b><br><ul><li>234 Totwinkel-Assistent</li><li>513 Digitales Extra:  Verkehrszeichen-Assistent</li><li>243 Aktiver Spurhalte-Assistent</li><li>440 TEMPOMAT</li><li>P44 Park-Paket mit Rückfahrkamera</li><li>218 Rückfahrkamera</li><li>235 Park-Assistent PARKTRONIC</li></ul><br><b>MOTOR GETRIEBE &amp; FAHRWERK</b><br><ul><li>677 Komfortfahrwerk mit Tieferlegung</li></ul><br><b>AUDIO &amp; KOMMUNIKATION</b><br><ul><li><b>16U Apple CarPlay</b></li><li><b>17U Android Auto</b></li><li>362 Kommunikationsmodul (LTE) für die Nutzung von Digitalen Extras</li><li>365 Digitales Extra: Festplatten-Navigation</li><li>889 KEYLESS-GO</li><li>537 Digitales Radio</li><li>548 MBUX Multimediasystem</li><li>270 GPS Antenne</li><li>14U Digitales Extra: Smartphone Integration</li><li>853 Advanced Soundsystem</li><li>859 CENTRAL MEDIA DISPLAY</li></ul><br><b>INTERIEUR</b><br><ul><li><b>7U4 Sportsitze</b></li><li>873 Sitzheizung für Fahrer und Beifahrer</li><li>877 Ambientebeleuchtung</li><li>400 Armlehne im Fond</li><li>51U Innenhimmel Stoff schwarz</li><li>252 Innenspiegel automatisch abblendend</li><li>U22 4-Wege-Lordosenstütze</li><li>897 Kabelloses Ladesystem für mobile Endgeräte vorn</li><li>543 Sonnenblende mit beleuchtetem Make-up-Spiegel</li><li>U35 12V-Steckdose im Gepäckraum</li><li>275 Fahrersitz elektrisch einstellbar mit Memory-Funktion</li><li>310 Doppelcupholder</li><li>431 Galvanisierte Lenkradschaltpaddles</li><li>286 Gepäcknetz an Fahrer- und Beifahrerlehne</li><li>287 Sitzlehnen im Fond klappbar</li><li>446 Touchpad</li><li>8U8 i-Size Kindersitzbefestigung</li><li>294 Kneebag</li><li>B13 Ladekantenschutz in Chromoptik</li><li>581 Klimatisierungsautomatik THERMOTRONIC</li><li>L5C Multifunktions-Sportlenkrad in Leder Nappa</li><li>ledernachbildung artico / mikrofaser microcut schwarz</li></ul><br><b>LICHT &amp; SICHT</b><br><ul><li>632 LED High Performance-Scheinwerfer</li><li>608 Digitales Extra: Adaptiver Fernlicht-Assistent</li><li>345 Scheibenwischer mit Regensensor</li></ul><br><b>RÄDER</b><br><ul><li>475 Reifendruckkontrolle</li></ul><br><b>TECHNIK &amp; SICHERHEIT</b><br><ul><li><b>258 Aktiver Brems-Assistent</b></li><li>351 Mercedes-Benz Notrufsystem</li><li>871 HANDS-FREE ACCESS</li><li>U01 Fondgurt-Statusanzeige im Instrumenten-Display</li><li>U10 Beifahrersitz mit Gewichtserkennung</li><li>B53 Akustischer Umfeldschutz</li><li>B59 DYNAMIC SELECT</li><li>273 Ausstiegswarnfunktion</li><li>U60 Fußgängerschutz</li></ul><br><b>EXTERIEUR</b><br><ul><li><b>550 Anhängevorrichtung mit ESP Anhängerstabilisierung</b></li><li>890 EASY-PACK Heckklappe</li><li>840 Wärmedämmend dunkel getöntes Glas</li><li>725 Dachreling in poliertem Aluminium</li><li>500 Außenspiegel elektrisch anklappbar</li></ul><br><b>SONSTIGE AUSSTATTUNGEN</b><br><ul><li>355 Digitales Extra: Erweiterte Funktionen MBUX</li><li>998 Steuercode Umstellung WLTP mit RDE</li><li>63B Fahrzeugsteckdose</li><li>9B2 Ladekabel für Wallbox und öffentliche Ladestation, 5m, glatt</li><li>367 Digitales Extra: Vorrüstung für Live Traffic Information</li><li>13U Digitales Extra: Vorrüstung für Remote- und Navigationsdienste</li><li>01U Digitales Extra: Vorrüstung für Navigationsdienste</li><li>PBF Digitales Extra: MBUX Navigation Plus</li><li>79B Vorrüstung für digitales Radio</li><li>83B On-board DC-Lader</li><li>20U Vorrüstung für digitale Schlüsselübergabe</li><li>986 Identifikationsschild mit VIN-Nummer</li><li>904 Erweiterte Serienausstattung </li></ul><hr> Standort des Fahrzeuges kann innerhalb der Betriebe von Nord-Ostsee-Automobile abweichen. Zwischenverkauf und Irrtümer vorbehalten. Die Fahrzeugbeschreibung des Herstellersystems dient lediglich der Information und Abweichungen möglich. <br>",
+    "contactInfo": {
+      "address1": "Lehfeld 6",
+      "address2": "DE-21029 Hamburg",
+      "name": "Nord-Ostsee Automobile SE & Co. KG, Autorisierter Mercedes-Benz Verkauf und Service Hamburg",
+      "openingHours": [
+        {
+          "day": "Mo - Fr",
+          "time": "08:00 Uhr - 18:00 Uhr"
+        },
+        {
+          "day": "Sa",
+          "time": "09:00 Uhr - 14:00 Uhr"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 16.08.2000",
+      "rating": {
+        "count": 9,
+        "totalCount": 85,
+        "score": 4.7,
+        "scoreLocalized": "4,7",
+        "link": "https://www.mobile.de/bewertungen/NORD-OSTSEE-BERGEDORF?lang=de",
+        "recommendationRate": 87,
+        "adRealityRate": 87,
+        "consultingScore": 4.625,
+        "friendlinessScore": 4.777777777777778,
+        "responseTimeScore": 4.777777777777778
+      },
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/86/8654c6bf-90a0-4561-a82e-0006ac027a68?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/86/8654c6bf-90a0-4561-a82e-0006ac027a68?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/86/8654c6bf-90a0-4561-a82e-0006ac027a68?rule=mo-360 360w",
+        "alt": "Nord-Ostsee Automobile SE & Co. KG, Autorisierter Mercedes-Benz Verkauf und Service Hamburg"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)40 822104091",
+          "uri": "tel:+4940822104091"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 40 72570779"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "Online-Vertriebsteam"
+      },
+      "mapLink": "https://maps.google.com/maps?q=53.48076229999999,10.2065138+(Nord-Ostsee%20Automobile%20SE%20%26%20Co.%20KG%2C%20Autorisierter%20Mercedes-Benz%20Verkauf%20und%20Service%20Hamburg)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 53.48076229999999,
+        "lon": 10.2065138
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=462825",
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/98/985ad70a-6a8d-4c81-b2e7-2fc245474c77?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/98/985ad70a-6a8d-4c81-b2e7-2fc245474c77?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/98/985ad70a-6a8d-4c81-b2e7-2fc245474c77?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/98/985ad70a-6a8d-4c81-b2e7-2fc245474c77?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 95,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=459193089&loanType=balloon&loanDuration=60&downPayment=7978&channel=desktop",
+      "type": "AO",
+      "flowType": "AO",
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 7978,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 31912,
+        "interestRateNominal": 5.26,
+        "interestRateEffective": 5.39,
+        "monthlyInstallment": 419.9,
+        "finalInstallment": 13163.7,
+        "totalInterest": 6025.8,
+        "totalAmount": 37937.8,
+        "localized": {
+          "downPayment": "7.978 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "31.912 €",
+          "interestRateNominal": "5,26%",
+          "interestRateEffective": "5,39%",
+          "monthlyInstallment": "420 €",
+          "finalInstallment": "13.163,70 €",
+          "totalInterest": "6.025,80 €",
+          "totalAmount": "37.937,80 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000 €, effektiver Jahreszins 5,39%, fester Sollzinssatz 5,26% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 143,60 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.772,13 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach"
+        }
+      },
+      "shortFlow": false,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/49/49a78f97-ba48-467a-bcfa-c89a5b59afab?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/49/49a78f97-ba48-467a-bcfa-c89a5b59afab?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/49/49a78f97-ba48-467a-bcfa-c89a5b59afab?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/49/49a78f97-ba48-467a-bcfa-c89a5b59afab?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/49/49a78f97-ba48-467a-bcfa-c89a5b59afab?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9117421-6feb-425d-ad37-b44d547b8a7a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9117421-6feb-425d-ad37-b44d547b8a7a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d9/d9117421-6feb-425d-ad37-b44d547b8a7a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d9/d9117421-6feb-425d-ad37-b44d547b8a7a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9117421-6feb-425d-ad37-b44d547b8a7a?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc0c4fdb-53ee-4af0-8f30-2a668a869884?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc0c4fdb-53ee-4af0-8f30-2a668a869884?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fc/fc0c4fdb-53ee-4af0-8f30-2a668a869884?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/fc/fc0c4fdb-53ee-4af0-8f30-2a668a869884?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc0c4fdb-53ee-4af0-8f30-2a668a869884?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c8335d2-3a9c-4fea-8f94-3a30a38246d1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c8335d2-3a9c-4fea-8f94-3a30a38246d1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/9c/9c8335d2-3a9c-4fea-8f94-3a30a38246d1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/9c/9c8335d2-3a9c-4fea-8f94-3a30a38246d1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c8335d2-3a9c-4fea-8f94-3a30a38246d1?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/34/343929f1-cc4c-43b4-a200-06bce0abb323?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/34/343929f1-cc4c-43b4-a200-06bce0abb323?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/34/343929f1-cc4c-43b4-a200-06bce0abb323?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/34/343929f1-cc4c-43b4-a200-06bce0abb323?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/34/343929f1-cc4c-43b4-a200-06bce0abb323?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/71/71058a74-d18d-40b3-813a-b15e3dc0a29a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/71/71058a74-d18d-40b3-813a-b15e3dc0a29a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/71/71058a74-d18d-40b3-813a-b15e3dc0a29a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/71/71058a74-d18d-40b3-813a-b15e3dc0a29a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/71/71058a74-d18d-40b3-813a-b15e3dc0a29a?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/27/2745708a-c795-45ca-a236-12689240fe9a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/27/2745708a-c795-45ca-a236-12689240fe9a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/27/2745708a-c795-45ca-a236-12689240fe9a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/27/2745708a-c795-45ca-a236-12689240fe9a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/27/2745708a-c795-45ca-a236-12689240fe9a?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e9a43e05-400b-402b-9ee7-87a1a0e13b53?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e9a43e05-400b-402b-9ee7-87a1a0e13b53?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e9/e9a43e05-400b-402b-9ee7-87a1a0e13b53?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e9/e9a43e05-400b-402b-9ee7-87a1a0e13b53?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e9a43e05-400b-402b-9ee7-87a1a0e13b53?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/05/0566769c-06d4-4584-b285-0ac026193bb5?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/05/0566769c-06d4-4584-b285-0ac026193bb5?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/05/0566769c-06d4-4584-b285-0ac026193bb5?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/05/0566769c-06d4-4584-b285-0ac026193bb5?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/05/0566769c-06d4-4584-b285-0ac026193bb5?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/72/72557426-8d2f-4b5b-82a0-be309ac02d41?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/72/72557426-8d2f-4b5b-82a0-be309ac02d41?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/72/72557426-8d2f-4b5b-82a0-be309ac02d41?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/72/72557426-8d2f-4b5b-82a0-be309ac02d41?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/72/72557426-8d2f-4b5b-82a0-be309ac02d41?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/02/023a23d5-e81d-47f4-9350-fb1d75f34a70?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/02/023a23d5-e81d-47f4-9350-fb1d75f34a70?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/02/023a23d5-e81d-47f4-9350-fb1d75f34a70?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/02/023a23d5-e81d-47f4-9350-fb1d75f34a70?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/02/023a23d5-e81d-47f4-9350-fb1d75f34a70?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e172f44-2bb1-4aad-a6ed-c3c122a1d4c4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e172f44-2bb1-4aad-a6ed-c3c122a1d4c4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4e/4e172f44-2bb1-4aad-a6ed-c3c122a1d4c4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4e/4e172f44-2bb1-4aad-a6ed-c3c122a1d4c4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e172f44-2bb1-4aad-a6ed-c3c122a1d4c4?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/52/52b35fad-c7a1-4a05-92ed-51dfd3d55df1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/52/52b35fad-c7a1-4a05-92ed-51dfd3d55df1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/52/52b35fad-c7a1-4a05-92ed-51dfd3d55df1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/52/52b35fad-c7a1-4a05-92ed-51dfd3d55df1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/52/52b35fad-c7a1-4a05-92ed-51dfd3d55df1?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f579d26-44e4-4503-a8cc-901f547716da?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f579d26-44e4-4503-a8cc-901f547716da?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/0f/0f579d26-44e4-4503-a8cc-901f547716da?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/0f/0f579d26-44e4-4503-a8cc-901f547716da?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f579d26-44e4-4503-a8cc-901f547716da?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b9/b9ac3aff-339c-4171-8be3-5981089d9440?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b9/b9ac3aff-339c-4171-8be3-5981089d9440?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b9/b9ac3aff-339c-4171-8be3-5981089d9440?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b9/b9ac3aff-339c-4171-8be3-5981089d9440?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b9/b9ac3aff-339c-4171-8be3-5981089d9440?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c2/c2a8e730-76d8-43aa-b282-3ef8f1eae374?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c2/c2a8e730-76d8-43aa-b282-3ef8f1eae374?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c2/c2a8e730-76d8-43aa-b282-3ef8f1eae374?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c2/c2a8e730-76d8-43aa-b282-3ef8f1eae374?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c2/c2a8e730-76d8-43aa-b282-3ef8f1eae374?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz EQA"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/49/49a78f97-ba48-467a-bcfa-c89a5b59afab?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/49/49a78f97-ba48-467a-bcfa-c89a5b59afab?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpcorerecommenderpopularfiltersnobanner&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=accwebpublichomegaaa4on&client.abtests=cossrpsbsmodelimprovementscontrol&adId=459193089"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=39890&c=OffRoad&ms=17200%3B346&id%21=459193089&vc=Car&sid=462825"
+    },
+    "vehicleCondition": "used",
+    "make": "Mercedes-Benz",
+    "model": "EQA",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "e4c5b6ba-e01a-130f-35d0-6f7f2a07cbad"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Mercedes-Benz EQA für 39.890 €",
+    "price_text": "Preis 39.890 € Fairer Preis 33.521 € (Netto) , 19% MwSt. Finanzierung Monatsrate ab 420 € Finanzierung berechnen Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Online abschließen Schließe die Finanzierung bequem online von Zuhause ab Online-Kredit Dieses Inserat bietet den Online-Kreditvergleich Unabhängige Finanzierung mit der Bank deiner Wahl Einfach von Zuhause online abschließen Nach wenigen Minuten erhältst du dein persönliches Kreditangebot von verschiedenen Banken",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Baureihe": "H243",
+      "Ausstattungslinie": "AMG Line",
+      "Fahrzeugnummer": "44411",
+      "Verfügbarkeit": "Sofort",
+      "Kilometerstand": "22.741 km",
+      "Leistung": "215 kW (292 PS)",
+      "Antriebsart": "Elektromotor",
+      "Anderer Energieträger": "Strom",
+      "Batterie": "inklusive",
+      "Batteriekapazität (in kWh)": "67 kWh",
+      "Schnellladezeit": "32 Min.",
+      "Energieverbrauch (komb.) 2": "17,9 kWh/100km",
+      "CO₂-Emissionen (komb.) 2": "0 g/km",
+      "Elektrische Reichweite 2": "427 km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Stromverbrauch 2": "17,9 kWh/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "07/2023",
+      "HU": "Neu",
+      "Klimatisierung": "Klimaautomatik",
+      "Einparkhilfe": "Kamera, Vorne, Hinten, Selbstlenkende Systeme",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "manufaktur magno lack manufaktur",
+      "Farbe": "Grau",
+      "Innenausstattung": "Teilleder, Schwarz",
+      "Anhängelast gebremst": "1.800 kg",
+      "Anhängelast ungebremst": "750 kg",
+      "Reichweite": "427 km"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 22.741 km • 215 kW (292 PS) • Automatik • 07/2023",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/49/49a78f97-ba48-467a-bcfa-c89a5b59afab?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9117421-6feb-425d-ad37-b44d547b8a7a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc0c4fdb-53ee-4af0-8f30-2a668a869884?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c8335d2-3a9c-4fea-8f94-3a30a38246d1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/34/343929f1-cc4c-43b4-a200-06bce0abb323?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/71/71058a74-d18d-40b3-813a-b15e3dc0a29a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/27/2745708a-c795-45ca-a236-12689240fe9a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e9/e9a43e05-400b-402b-9ee7-87a1a0e13b53?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/05/0566769c-06d4-4584-b285-0ac026193bb5?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/72/72557426-8d2f-4b5b-82a0-be309ac02d41?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/02/023a23d5-e81d-47f4-9350-fb1d75f34a70?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e172f44-2bb1-4aad-a6ed-c3c122a1d4c4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/52/52b35fad-c7a1-4a05-92ed-51dfd3d55df1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f579d26-44e4-4503-a8cc-901f547716da?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b9/b9ac3aff-339c-4171-8be3-5981089d9440?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c2/c2a8e730-76d8-43aa-b282-3ef8f1eae374?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/49/49a78f97-ba48-467a-bcfa-c89a5b59afab?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9117421-6feb-425d-ad37-b44d547b8a7a?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc0c4fdb-53ee-4af0-8f30-2a668a869884?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c8335d2-3a9c-4fea-8f94-3a30a38246d1?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/34/343929f1-cc4c-43b4-a200-06bce0abb323?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/71/71058a74-d18d-40b3-813a-b15e3dc0a29a?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/27/2745708a-c795-45ca-a236-12689240fe9a?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e9a43e05-400b-402b-9ee7-87a1a0e13b53?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/05/0566769c-06d4-4584-b285-0ac026193bb5?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/72/72557426-8d2f-4b5b-82a0-be309ac02d41?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/02/023a23d5-e81d-47f4-9350-fb1d75f34a70?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e172f44-2bb1-4aad-a6ed-c3c122a1d4c4?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/52/52b35fad-c7a1-4a05-92ed-51dfd3d55df1?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f579d26-44e4-4503-a8cc-901f547716da?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b9/b9ac3aff-339c-4171-8be3-5981089d9440?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c2/c2a8e730-76d8-43aa-b282-3ef8f1eae374?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

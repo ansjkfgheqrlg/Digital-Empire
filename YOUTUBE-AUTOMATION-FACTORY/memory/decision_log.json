@@ -934,5 +934,650 @@
     "alternatives_rejected": [],
     "confidence": 0.8,
     "timestamp": "2026-08-06T09:06:35.238664"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260806-131439-8c8835",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 12840, velocity media 2.8 viste/ora, indice cash cow reale 15.6 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-06T13:14:39.194533"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260806-131439-8c8835",
+    "decision": "Video sorgente scelto manualmente (calendario): Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 17.8 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-06T13:14:39.296581"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260815-181248-42cf0b",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-15T18:12:50.155421"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260815-181344-ede3f4",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-15T18:13:44.994728"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260815-181344-ede3f4",
+    "decision": "Scelta video target: 5 Signs He Wants You to Get Closer | Female Psychology",
+    "reason": "Velocity reale 2.47 views/ora (3600 viste in 1460h) su Legami d'Amore — SEO score reale del titolo 25.0/100 per keyword '5 signs he wants': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "5 Signs He Wants You to Get Closer | Female Psychology"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-15T18:13:48.083084"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260815-181528-5e8d3e",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-15T18:15:28.476788"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260815-181528-5e8d3e",
+    "decision": "Scelta video target: 5 Signs He Wants You to Get Closer | Female Psychology",
+    "reason": "Velocity reale 2.47 views/ora (3600 viste in 1460h) su Legami d'Amore — SEO score reale del titolo 25.0/100 per keyword '5 signs he wants': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "5 Signs He Wants You to Get Closer | Female Psychology"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-15T18:15:31.309203"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260815-181641-5344c3",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-15T18:16:41.544494"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260815-181641-5344c3",
+    "decision": "Scelta video target: 5 Signs He Wants You to Get Closer | Female Psychology",
+    "reason": "Velocity reale 2.47 views/ora (3600 viste in 1460h) su Legami d'Amore — SEO score reale del titolo 25.0/100 per keyword '5 signs he wants': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "5 Signs He Wants You to Get Closer | Female Psychology"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-15T18:16:45.042129"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260815-181748-77672f",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-15T18:17:48.986796"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260815-181748-77672f",
+    "decision": "Scelta video target: 5 Signs He Wants You to Get Closer | Female Psychology",
+    "reason": "Velocity reale 2.47 views/ora (3600 viste in 1460h) su Legami d'Amore — SEO score reale del titolo 25.0/100 per keyword '5 signs he wants': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "5 Signs He Wants You to Get Closer | Female Psychology"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-15T18:17:52.011022"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260815-181807-c9892a",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-15T18:18:07.247790"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260815-181807-c9892a",
+    "decision": "Scelta video target: 5 Signs He Wants You to Get Closer | Female Psychology",
+    "reason": "Velocity reale 2.47 views/ora (3600 viste in 1460h) su Legami d'Amore — SEO score reale del titolo 25.0/100 per keyword '5 signs he wants': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "5 Signs He Wants You to Get Closer | Female Psychology"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-15T18:18:10.111629"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260816-110700-79b341",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-16T11:07:01.135927"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260816-110700-79b341",
+    "decision": "Scelta video target: 5 Signs He Wants You to Get Closer | Female Psychology",
+    "reason": "Velocity reale 2.47 views/ora (3600 viste in 1460h) su Legami d'Amore — SEO score reale del titolo 25.0/100 per keyword '5 signs he wants': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "5 Signs He Wants You to Get Closer | Female Psychology"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-16T11:07:04.972033"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260816-110736-74e2a6",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-16T11:07:36.500464"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260816-110736-74e2a6",
+    "decision": "Scelta video target: 5 Signs He Wants You to Get Closer | Female Psychology",
+    "reason": "Velocity reale 2.47 views/ora (3600 viste in 1460h) su Legami d'Amore — SEO score reale del titolo 25.0/100 per keyword '5 signs he wants': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "5 Signs He Wants You to Get Closer | Female Psychology"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-16T11:07:40.583862"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260816-110942-5d8541",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-16T11:09:42.567040"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260816-110942-5d8541",
+    "decision": "Scelta video target: 5 Signs He Wants You to Get Closer | Female Psychology",
+    "reason": "Velocity reale 2.47 views/ora (3600 viste in 1460h) su Legami d'Amore — SEO score reale del titolo 25.0/100 per keyword '5 signs he wants': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "5 Signs He Wants You to Get Closer | Female Psychology"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-16T11:09:46.697470"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260817-111925-bdc882",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-17T11:19:25.381852"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260817-111925-bdc882",
+    "decision": "Scelta video target: 5 Signs He Wants You to Get Closer | Female Psychology",
+    "reason": "Velocity reale 2.47 views/ora (3600 viste in 1460h) su Legami d'Amore — SEO score reale del titolo 25.0/100 per keyword '5 signs he wants': margine di miglioramento concreto replicandolo con SEO ottimizzata sul nostro funnel.",
+    "alternatives_rejected": [
+      "5 Signs He Wants You to Get Closer | Female Psychology"
+    ],
+    "confidence": 0.8,
+    "timestamp": "2026-08-17T11:19:29.495544"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260817-133245-e83c88",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-17T13:32:45.554634"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260817-133245-e83c88",
+    "decision": "Nessun video del canale supera il video-gate",
+    "reason": "Miglior velocity reale 1.0 viste/ora (2.9x la mediana del canale, 0.34) su 29 candidati disponibili: non si distingue abbastanza dal resto del catalogo per giustificare una replica.",
+    "alternatives_rejected": [
+      "7 Signs She Really Wants You Female Psychology",
+      "When to Make a Move on Her | 7 Surefire Signs"
+    ],
+    "confidence": 0.0,
+    "timestamp": "2026-08-17T13:32:49.159083"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-142338-ef5fd6",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:23:38.240100"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-142338-ef5fd6",
+    "decision": "Nessun video del canale supera il video-gate",
+    "reason": "Miglior velocity reale 1.0 viste/ora (2.9x la mediana del canale, 0.34) su 29 candidati disponibili: non si distingue abbastanza dal resto del catalogo per giustificare una replica.",
+    "alternatives_rejected": [
+      "7 Signs She Really Wants You Female Psychology",
+      "When to Make a Move on Her | 7 Surefire Signs"
+    ],
+    "confidence": 0.0,
+    "timestamp": "2026-08-19T14:23:40.716391"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-142446-f4187e",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:24:46.756025"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-142446-f4187e",
+    "decision": "Video sorgente scelto manualmente (calendario): Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 17.8 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:24:46.930974"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-142612-2ccfab",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:26:12.743505"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-142612-2ccfab",
+    "decision": "Video sorgente scelto manualmente (calendario): Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 17.8 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:26:12.851520"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-142723-ccc6c7",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:27:23.648526"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-142723-ccc6c7",
+    "decision": "Video sorgente scelto manualmente (calendario): Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 17.8 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:27:23.751387"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-142735-b7047c",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:27:35.622867"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-142735-b7047c",
+    "decision": "Video sorgente scelto manualmente (calendario): Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 17.8 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:27:35.710144"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-142813-859cbf",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:28:13.409280"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-142813-859cbf",
+    "decision": "Video sorgente scelto manualmente (calendario): Pensi che non sia interessata? Guarda prima questo",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 7.8 viste/ora, SEO titolo 25.0/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:28:13.505380"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-143117-3d468a",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:31:17.579466"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-143117-3d468a",
+    "decision": "Video sorgente scelto manualmente (calendario): Pensi che non sia interessata? Guarda prima questo",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 7.8 viste/ora, SEO titolo 25.0/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:31:17.666389"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-143245-b11975",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:32:45.348578"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-143245-b11975",
+    "decision": "Video sorgente scelto manualmente (calendario): Pensi che non sia interessata? Guarda prima questo",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 7.8 viste/ora, SEO titolo 25.0/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:32:45.448426"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-143337-a98204",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:33:38.088069"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-143337-a98204",
+    "decision": "Video sorgente scelto manualmente (calendario): Pensi che non sia interessata? Guarda prima questo",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 7.8 viste/ora, SEO titolo 25.0/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:33:38.182748"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-143409-cfce55",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:34:09.447132"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-143409-cfce55",
+    "decision": "Video sorgente scelto manualmente (calendario): Pensi che non sia interessata? Guarda prima questo",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 7.8 viste/ora, SEO titolo 25.0/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:34:09.540006"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-143452-7121e0",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:34:52.606174"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-143452-7121e0",
+    "decision": "Video sorgente scelto manualmente (calendario): Pensi che non sia interessata? Guarda prima questo",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 7.8 viste/ora, SEO titolo 25.0/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:34:52.704613"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-143529-fe1d47",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:35:29.147738"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-143529-fe1d47",
+    "decision": "Video sorgente scelto manualmente (calendario): Pensi che non sia interessata? Guarda prima questo",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 7.8 viste/ora, SEO titolo 25.0/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:35:29.237728"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-143627-cf4111",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:36:27.641062"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-143627-cf4111",
+    "decision": "Video sorgente scelto manualmente (calendario): Pensi che non sia interessata? Guarda prima questo",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 7.8 viste/ora, SEO titolo 25.0/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:36:27.729310"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-143725-03f7f1",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:37:25.358951"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-143725-03f7f1",
+    "decision": "Video sorgente scelto manualmente (calendario): Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 4.4 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:37:25.489778"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-143852-55075e",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:38:52.396609"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-143852-55075e",
+    "decision": "Video sorgente scelto manualmente (calendario): Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 4.4 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:38:52.482890"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-144005-25a798",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:40:05.866490"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-144005-25a798",
+    "decision": "Video sorgente scelto manualmente (calendario): Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 4.4 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:40:05.956284"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-144057-73b68a",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:40:58.102344"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-144057-73b68a",
+    "decision": "Video sorgente scelto manualmente (calendario): Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 4.4 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:40:58.192153"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-144136-6f86b4",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:41:36.198576"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-144136-6f86b4",
+    "decision": "Video sorgente scelto manualmente (calendario): Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 4.4 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:41:36.285476"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-144205-4744dc",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:42:05.314149"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-144205-4744dc",
+    "decision": "Video sorgente scelto manualmente (calendario): Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 4.4 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:42:05.401907"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-144305-7f4b7a",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:43:05.470884"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-144305-7f4b7a",
+    "decision": "Video sorgente scelto manualmente (calendario): Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 4.4 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:43:05.565256"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-144327-947012",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:43:27.597485"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-144327-947012",
+    "decision": "Video sorgente scelto manualmente (calendario): Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 4.4 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:43:27.686820"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-144409-290b29",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:44:09.212472"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-144409-290b29",
+    "decision": "Video sorgente scelto manualmente (calendario): Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 4.4 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:44:09.314160"
+  },
+  {
+    "id": "DEC-nicchia-001",
+    "run_id": "yt-20260819-144459-3fd40c",
+    "decision": "Canale target confermato: Legami d'Amore (@Legamidiamore)",
+    "reason": "Canale fisso di progetto (nessuno scouting): 10 video reali analizzati, viste medie 2100, velocity media 0.8 viste/ora, indice cash cow reale 15.2 (riportato, non bloccante: il gate e' sul video in F2).",
+    "alternatives_rejected": [],
+    "confidence": 0.9,
+    "timestamp": "2026-08-19T14:44:59.566272"
+  },
+  {
+    "id": "DEC-video-001",
+    "run_id": "yt-20260819-144459-3fd40c",
+    "decision": "Video sorgente scelto manualmente (calendario): Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini",
+    "reason": "Da @PsicologiaFemminile-f8c, non dal catalogo di Legami d'Amore. Velocity reale 4.4 viste/ora, SEO titolo 17.5/100. Video-gate non applicato: la selezione viene dal calendario contenuti (studio copy multi-canale), non da un auto-scan.",
+    "alternatives_rejected": [],
+    "confidence": 0.8,
+    "timestamp": "2026-08-19T14:44:59.665477"
   }
 ]

@@ -1,0 +1,666 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=456304113&sb=rel&od=up&vc=Car&dam=false&fr=2018&ml=%3A80000&ms=16700%3B%3B%3B&ms=4%3B%3B%3B&ms=1700%3B%3B%3B&ms=1900%3B%3B%3B&ms=3100%3B%3B%3B&ms=3500%3B%3B%3B&ms=4700%3B%3B%3B&ms=8600%3B%3B%3B&ms=270%3B%3B%3B&ms=14600%3B%3B%3B&ms=12400%3B%3B%3B&ms=11650%3B%3B%3B&ms=14800%3B%3B%3B&ms=15200%3B%3B%3B&ms=15500%3B%3B%3B&ms=15900%3B%3B%3B&ms=16600%3B%3B%3B&ms=17200%3B%3B%3B&ms=20100%3B%3B%3B&ms=21600%3B%3B%3B&ms=137%3B%3B%3B&p=35000&pa=CAM_360_DEGREES&pa=REAR_VIEW_CAM&s=Car&ref=srp&searchId=c1daec15-2b92-693c-3380-0110736613e9&refId=c1daec15-2b92-693c-3380-0110736613e9",
+  "scraped_at": "2026-07-06T18:30:00+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "F3"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "2.5 TFSI quattro"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "1710"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "51.241 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "2.480 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "294 kW (400 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "8,8 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "201 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "8,8 l/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "01/2022"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "01/2027"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "360°-Kamera, Hinten, Vorne"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "NARDOGRAU"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grau"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Vollleder, Schwarz"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "1.900 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "750 kg"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.775 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "5"
+      },
+      {
+        "label": "Tankgröße",
+        "tag": "fuelTankVolume",
+        "value": "60 l"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Audi RSQ3",
+    "subTitle": "Sportback 2.5 TFSI quattro*21Z\"360°RS-AGA*",
+    "makeKey": "Audi",
+    "modelKey": "RSQ3",
+    "isNew": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Adaptives Fahrwerk",
+      "Adaptives Kurvenlicht",
+      "Alarmanlage",
+      "Allradantrieb",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Berganfahrassistent",
+      "Blendfreies Fernlicht",
+      "Bluetooth",
+      "Bordcomputer",
+      "CD-Spieler",
+      "Dachreling",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Sitzeinstellung",
+      "Elektr. Sitzeinstellung mit Memory-Funktion",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Gepäckraumabtrennung",
+      "Geschwindigkeitsbegrenzer",
+      "Induktionsladen für Smartphones",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Laserlicht",
+      "Lederlenkrad",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Navigationssystem",
+      "Nebelscheinwerfer",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Scheckheftgepflegt",
+      "Scheinwerferreinigung",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sommerreifen",
+      "Soundsystem",
+      "Sportfahrwerk",
+      "Sportpaket",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Tagfahrlicht",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "Umklappbarer Beifahrersitz",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "WLAN / Wifi Hotspot",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "RS-SPORTSITZE",
+      "RS-SPORTABGAS",
+      "*WERKSGARANTIE AUDI*"
+    ],
+    "sellerId": 25763889,
+    "priceRating": {
+      "rating": "REASONABLE_PRICE",
+      "ratingLabel": "Fairer Preis",
+      "thresholdLabels": [
+        "33.400 €",
+        "43.400 €",
+        "46.700 €",
+        "52.000 €",
+        "55.800 €",
+        "62.000 €"
+      ],
+      "vehiclePriceOffset": 62
+    },
+    "segment": "Car",
+    "title": "Audi RSQ3 Sportback 2.5 TFSI quattro*21Z\"360°RS-AGA*",
+    "url": "https://suchen.mobile.de/auto-inserat/audi-rsq3-sportback-2-5-tfsi-quattro-21z-360-rs-aga-salzgitter/456304113.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 456304113,
+    "price": {
+      "gross": "49.999 €",
+      "grossAmount": 49999,
+      "grossCurrency": "EUR",
+      "net": "42.016 €",
+      "netAmount": 42015.97,
+      "type": "FIXED",
+      "vat": "19% MwSt."
+    },
+    "kba": {
+      "hsn": "1860",
+      "tsn": "AAZ"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_logo_8_name_photo_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Herzlich Willkommen</b><hr><b>Audi RSQ3 Sportback quattro 2.5 TFSI 294kW 7-Gang S tronic 4 Türen</b><hr><ul><li><b>1 Hand </b></li><li><b>Audi Scheckheft gepflegt </b></li><li><b>Unfall- und Nachlackierungsfrei</b></li><li><b>Werksgarantie bis 100.000KM oder 01/2027</b></li></ul><hr><b>Highlights:</b><b></b><br><ul><li>RS-Sportabgasanlage</li><li>RS-Sportsitze vorn in Leder Feinnappa mit Wabensteppung</li><li>Umgebungskameras 360°</li><li>Ambiente-Lichtpaket plus</li><li>Matrix LED-Scheinwerfer</li><li>Optikpaket schwarz plus</li><li>21 Zoll Leichtmetallräder</li><li>App-Connect Wireless</li><li>Spurwechsel- u. Spurhalteassistent (Side Assist und Lane Assist)</li></ul><hr><b><br><br><br><br>Sonderausstattung:</b><br>Ablage- und Gepäckraum-Paket, Audi Smartphone Interface, Außenspiegel elektr. verstell-, heiz- und anklappbar, Diebstahlsicherung für Räder (Felgenschlösser), Gepäckraumklappe elektr. betätigt (öffnen + schliessen), Innenspiegel mit Abblendautomatik, Isofix-Aufnahmen für Kindersitz an Beifahrersitz, Kamerasystem Umgebungsansicht (Top View), Kombiinstrument digital (virtual cockpit plus), Komfort-Klimaautomatik 2-Zonen, Kontur / Ambientebeleuchtungs-Paket (plus), LM-Felgen 8,5x21, Matrix-LED-Scheinwerfer, Multi-Media-Interface MMI Navigation Plus mit MMI Touch, Optik-Paket schwarz Audi Ringe und Schriftzug, RS-Sportabgasanlage, RS-Sportsitze vorn, Seitenairbag hinten, Sitze vorn elektr. verstellbar, Sitzheizung vorn, Steckdose (12V-Anschluß) im Fond (Mittelkonsole), Universal-Schnittstelle Bluetooth, App-Connect Wireless (Apple CarPlay, Android Auto, MirrorLink), Innenspiegel automatisch abblendend, Sitzheizung vorn<br><br><b>Weitere Ausstattung:</b><br>3. Bremsleuchte, Airbag Fahrer-/Beifahrerseite, Antriebs-Schlupfregelung (ASR), Audi connect (Notruf- und Assistance-System), Audi Drive Select, Audi music interface, Außenspiegel schwarz, Blinkleuchten LED in Außenspiegel integriert, Bluetooth-Schnittstelle (Mobiltelefon) inkl. Gurtmikrofon, Bremsanlage mit Rekuperationssystem, Bremsassistent, Bremssättel Schwarz lackiert, Dachhimmel Stoff, schwarz, Dachreling (Aluminium), Dachspoiler, Doppel-Sonnenblenden (verschiebbar, ausziehbar), Einparkhilfe vorn und hinten, akustisch und optisch mit selektiver Anzeige (APS Plus), Einparkhilfe vorn und hinten, optisch (APS Plus), Einstiegsleisten mit Aluminiumeinlage und Schriftzug, beleuchtet, Elektron. Differentialsperre (EDS), Fahrassistenz-System: Berganfahr-Assistent, Fahrassistenz-System: Bremsassistent (Audi pre sense front), Fahrassistenz-System: Spurwechsel- u. Spurhalteassistent (Side Assist und Lane Assist), Fahrer-Informations-System (FIS) mit Farbdisplay, Fensterheber elektrisch vorn + hinten, Frontscheibe Akustikglas, Fußmatten Velours, Gepäckraumabdeckung (faltbar), Geschwindigkeits-Begrenzeranlage, Getränkehalter in Mittelkonsole, Heckleuchten LED mit dynamischem Blinklicht, Heckscheibe heizbar, Heckspoiler Wagenfarbe, Innenausstattung: Aluminium-Optik, Innenausstattung: Dekoreinlagen Akzentteile in der Armaturentafel in Glasoptik schwarz, Innenausstattung: Dekoreinlagen Aluminium Race Anthrazit, Isofix-Aufnahmen für Kindersitz, Karosserie: 4-türig, Kindersicherung elektr. betätigt, Komfortschaltung elektr. Fensterheber / Schiebedach, Kopf-Airbag-System (Sideguard), Kopfstützen hinten (3-fach), Kühlergrill Wabenstyling, Ladekantenschutz (Edelstahl), Lendenwirbelstützen vorn, elektr. verstellbar, Lenkrad (Sport/Leder - 3-Speichen, unten abgeflacht) mit Multifunktion und Schaltfunktion, Lenksäule (Lenkrad) mech. Höhen-/Längsverstellung, Leuchtweitenregelung automatisch, Lichtsensor (Coming Home, Leaving Home), Make-up-Spiegel beleuchtet, Motor 2,5 Ltr. - 294 kW 20V TFSI, Multi-Media-Interface MMI Basic Plus / MMI Radio Plus, Nichtraucher-Paket, Optik-Paket schwarz, Otto-Partikelfilter (OPF), Parkbremse elektro-mechanisch, Pedale und Fußstütze in Edelstahl, Progressivlenkung, Radioempfang digital (DAB), Radstand 2680 mm, Reifen-Reparaturkit, Reifenkontroll-Anzeige, Rücksitzlehne geteilt/klappbar, verschiebbar mit Mittelarmlehne (40:20:40), Schadstoffarm nach Abgasnorm Euro 6d, Schalt-/Wählhebelgriff Leder, Scheibenwaschdüsen heizbar, Seitenairbag vorn, Sonderlackierung Nardo Grau, Sound-System DSP / Audi Sound-System, Sport-Fahrwerk S / RS spezifisch, Start/Stop-Anlage, Steckdose (12V-Anschluß) in Mittelkonsole vorn, Stoßfänger Sport-Design (S-line), USB-Schnittstelle, Vorrüstung Mobiltelefon/Handy mit Bluetooth-Schnittstelle<hr>Unser Service:<br><br><ul><li><b>Auf Wunsch Optische Veränderung</b></li><li>Finanzierung bis zu 120 Monaten möglich</li><li><b>Inzahlungnahme aller Marken möglich</b></li><li>Bis zu 36 Monate Gebrauchtwagengarantie</li><li><b>Kurzzeitkennzeichen (5 Tage)</b></li><li>Ausfuhrkennzeichen in ca. 30 Minuten</li><li><b>Kurzzeitkennzeichen - Komplette Zoll Abfertigung</b></li><li>Lieferung &amp; Online Besichtigung möglich</li></ul><br><hr><b>Irrtümer und Tippfehler vorbehalten!</b><br><b>Wir bitten vor dem Kauf die Ausstattung zu überprüfen, da im Nachgang keine Haftung für Tippfehler akzeptiert werden.</b><br><hr><b><br>Besuchen sie uns auch auf Instagram: autohauskoenigsz</b>",
+    "contactInfo": {
+      "address1": "Hinter dem Salze 117",
+      "address2": "DE-38259 Salzgitter",
+      "name": "Autohaus König",
+      "markingText": "<div>Unser kompetentes Team hilft Ihnen dabei Ihren Traumwagen zu finden!<br /></div><div>Vereinbaren Sie heute noch einen Termin mit uns per Mail oder per Anruf! <br /></div><div><b>Wir freuen uns auf Ihren Besuch!</b><br /></div><div><br /></div><div>Autohaus König</div>",
+      "openingHours": [
+        {
+          "time": "10:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "11:00 Uhr - 14:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 26.02.2021",
+      "rating": {
+        "count": 47,
+        "totalCount": 102,
+        "score": 4.8,
+        "scoreLocalized": "4,8",
+        "link": "https://www.mobile.de/bewertungen/AutohausKoenigSalzgitterBad?lang=de",
+        "recommendationRate": 97,
+        "adRealityRate": 97,
+        "consultingScore": 4.826086956521739,
+        "friendlinessScore": 4.851063829787234,
+        "responseTimeScore": 4.851063829787234
+      },
+      "languages": "Deutsch, English, Polski, Türkçe",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/36/368509a9-73c9-44cc-bbc6-c5aec978cef8?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/36/368509a9-73c9-44cc-bbc6-c5aec978cef8?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/36/368509a9-73c9-44cc-bbc6-c5aec978cef8?rule=mo-360 360w",
+        "alt": "Autohaus König"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "Mobil",
+          "number": "+49 (0)170 5552389",
+          "uri": "tel:+491705552389"
+        },
+        {
+          "type": "Mobil",
+          "number": "+49 (0)1512 3825966",
+          "uri": "tel:+4915123825966"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "logo": {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c551a6fc-acff-4bb6-b501-0723031579a1?rule=mo-80",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c5/c551a6fc-acff-4bb6-b501-0723031579a1?rule=mo-80 80w, https://img.classistatic.de/api/v1/mo-prod/images/c5/c551a6fc-acff-4bb6-b501-0723031579a1?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/c5/c551a6fc-acff-4bb6-b501-0723031579a1?rule=mo-240 240w"
+        },
+        "name": "Herr Arslan",
+        "role": "Verkaufsberatung"
+      },
+      "mapLink": "https://maps.google.com/maps?q=52.0424223,10.3606443+(Autohaus%20K%C3%B6nig)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 52.0424223,
+        "lon": 10.3606443
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=25763889",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0917901-af56-414a-b59e-af211cdef555?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0917901-af56-414a-b59e-af211cdef555?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e0/e0917901-af56-414a-b59e-af211cdef555?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/e0/e0917901-af56-414a-b59e-af211cdef555?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0917901-af56-414a-b59e-af211cdef555?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/75/755a0f73-792b-47b6-ab70-4e905743d27d?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/75/755a0f73-792b-47b6-ab70-4e905743d27d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/75/755a0f73-792b-47b6-ab70-4e905743d27d?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/75/755a0f73-792b-47b6-ab70-4e905743d27d?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/75/755a0f73-792b-47b6-ab70-4e905743d27d?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/27/27c11a14-1375-43fd-a2c3-0afe635eb2de?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/27/27c11a14-1375-43fd-a2c3-0afe635eb2de?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/27/27c11a14-1375-43fd-a2c3-0afe635eb2de?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/27/27c11a14-1375-43fd-a2c3-0afe635eb2de?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/27/27c11a14-1375-43fd-a2c3-0afe635eb2de?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/ef/efe7a9e5-3133-4ef9-b78d-733f71a356b8?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ef/efe7a9e5-3133-4ef9-b78d-733f71a356b8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ef/efe7a9e5-3133-4ef9-b78d-733f71a356b8?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/ef/efe7a9e5-3133-4ef9-b78d-733f71a356b8?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ef/efe7a9e5-3133-4ef9-b78d-733f71a356b8?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/f3/f342b3b2-e203-4cda-bbed-0d9b6bc34470?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f3/f342b3b2-e203-4cda-bbed-0d9b6bc34470?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f3/f342b3b2-e203-4cda-bbed-0d9b6bc34470?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/f3/f342b3b2-e203-4cda-bbed-0d9b6bc34470?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f3/f342b3b2-e203-4cda-bbed-0d9b6bc34470?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d37d988-4639-4321-b2b1-88c66e817e23?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d37d988-4639-4321-b2b1-88c66e817e23?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4d/4d37d988-4639-4321-b2b1-88c66e817e23?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/4d/4d37d988-4639-4321-b2b1-88c66e817e23?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d37d988-4639-4321-b2b1-88c66e817e23?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/77/77639b42-11af-46e5-9858-cf9b90af2095?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/77/77639b42-11af-46e5-9858-cf9b90af2095?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/77/77639b42-11af-46e5-9858-cf9b90af2095?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/77/77639b42-11af-46e5-9858-cf9b90af2095?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 83,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=456304113&loanType=balloon&loanDuration=60&downPayment=9999&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 9999,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 40000,
+        "interestRateNominal": 4.88,
+        "interestRateEffective": 4.99,
+        "monthlyInstallment": 427.07,
+        "finalInstallment": 22499.55,
+        "totalInterest": 7696.97,
+        "totalAmount": 47696.97,
+        "localized": {
+          "downPayment": "9.999 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "40.000 €",
+          "interestRateNominal": "4,88%",
+          "interestRateEffective": "4,99%",
+          "monthlyInstallment": "428 €",
+          "finalInstallment": "22.499,55 €",
+          "totalInterest": "7.696,97 €",
+          "totalAmount": "47.696,97 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b6fd49c5-a182-41a8-b37a-cf4d9518878c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b6fd49c5-a182-41a8-b37a-cf4d9518878c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b6/b6fd49c5-a182-41a8-b37a-cf4d9518878c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b6/b6fd49c5-a182-41a8-b37a-cf4d9518878c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b6fd49c5-a182-41a8-b37a-cf4d9518878c?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RSQ3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/84/84582c31-ab18-4add-9d37-780f3a905b9e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/84/84582c31-ab18-4add-9d37-780f3a905b9e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/84/84582c31-ab18-4add-9d37-780f3a905b9e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/84/84582c31-ab18-4add-9d37-780f3a905b9e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/84/84582c31-ab18-4add-9d37-780f3a905b9e?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RSQ3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/65/65d4e3b4-73f8-4055-b629-b8e657b8014e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/65/65d4e3b4-73f8-4055-b629-b8e657b8014e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/65/65d4e3b4-73f8-4055-b629-b8e657b8014e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/65/65d4e3b4-73f8-4055-b629-b8e657b8014e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/65/65d4e3b4-73f8-4055-b629-b8e657b8014e?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RSQ3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/53/5307c009-c766-43b2-8004-ebc02ea8e536?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/53/5307c009-c766-43b2-8004-ebc02ea8e536?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/53/5307c009-c766-43b2-8004-ebc02ea8e536?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/53/5307c009-c766-43b2-8004-ebc02ea8e536?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/53/5307c009-c766-43b2-8004-ebc02ea8e536?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RSQ3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1796e04-eeeb-4c03-a7dd-442ee93df256?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1796e04-eeeb-4c03-a7dd-442ee93df256?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a1/a1796e04-eeeb-4c03-a7dd-442ee93df256?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a1/a1796e04-eeeb-4c03-a7dd-442ee93df256?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1796e04-eeeb-4c03-a7dd-442ee93df256?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RSQ3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/40/4099ccd7-7130-49e2-8b87-fbe55d3e5eb0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/40/4099ccd7-7130-49e2-8b87-fbe55d3e5eb0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/40/4099ccd7-7130-49e2-8b87-fbe55d3e5eb0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/40/4099ccd7-7130-49e2-8b87-fbe55d3e5eb0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/40/4099ccd7-7130-49e2-8b87-fbe55d3e5eb0?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RSQ3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9ac9664-527a-4c5e-8d62-ba5f2a735fda?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9ac9664-527a-4c5e-8d62-ba5f2a735fda?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a9/a9ac9664-527a-4c5e-8d62-ba5f2a735fda?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a9/a9ac9664-527a-4c5e-8d62-ba5f2a735fda?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9ac9664-527a-4c5e-8d62-ba5f2a735fda?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RSQ3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac60bc01-6b2b-4555-922b-070098ab1d45?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac60bc01-6b2b-4555-922b-070098ab1d45?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ac/ac60bc01-6b2b-4555-922b-070098ab1d45?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ac/ac60bc01-6b2b-4555-922b-070098ab1d45?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac60bc01-6b2b-4555-922b-070098ab1d45?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RSQ3"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b6fd49c5-a182-41a8-b37a-cf4d9518878c?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b6fd49c5-a182-41a8-b37a-cf4d9518878c?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpsbsmodelimprovementsv2&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=accwebpublichomegaaa4on&client.abtests=cossrpcorerecommenderpopularfiltersoff&adId=456304113"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=49999&c=OffRoad&ms=1900%3B41&id%21=456304113&vc=Car&sid=25763889"
+    },
+    "vehicleCondition": "used",
+    "make": "Audi",
+    "model": "RSQ3",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "c1daec15-2b92-693c-3380-0110736613e9"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Audi RSQ3 für 49.999 €",
+    "price_text": "Preis 49.999 € Fairer Preis 42.016 € (Netto) , 19% MwSt. Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Baureihe": "F3",
+      "Ausstattungslinie": "2.5 TFSI quattro",
+      "Fahrzeugnummer": "1710",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "51.241 km",
+      "Hubraum": "2.480 cm³",
+      "Leistung": "294 kW (400 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Energieverbrauch (komb.) 2": "8,8 l/100km",
+      "CO₂-Emissionen (komb.) 2": "201 g/km",
+      "Kraftstoffverbrauch 2": "8,8 l/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Erstzulassung": "01/2022",
+      "Anzahl der Fahrzeughalter": "1",
+      "HU": "01/2027",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "360°-Kamera, Hinten, Vorne",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "NARDOGRAU",
+      "Farbe": "Grau",
+      "Innenausstattung": "Vollleder, Schwarz",
+      "Anhängelast gebremst": "1.900 kg",
+      "Anhängelast ungebremst": "750 kg",
+      "Gewicht": "1.775 kg",
+      "Zylinder": "5",
+      "Tankgröße": "60 l"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 51.241 km • 294 kW (400 PS) • Benzin • Automatik • 01/2022",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/b6/b6fd49c5-a182-41a8-b37a-cf4d9518878c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/84/84582c31-ab18-4add-9d37-780f3a905b9e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/65/65d4e3b4-73f8-4055-b629-b8e657b8014e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/53/5307c009-c766-43b2-8004-ebc02ea8e536?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1796e04-eeeb-4c03-a7dd-442ee93df256?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/40/4099ccd7-7130-49e2-8b87-fbe55d3e5eb0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9ac9664-527a-4c5e-8d62-ba5f2a735fda?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac60bc01-6b2b-4555-922b-070098ab1d45?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b6fd49c5-a182-41a8-b37a-cf4d9518878c?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/84/84582c31-ab18-4add-9d37-780f3a905b9e?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/65/65d4e3b4-73f8-4055-b629-b8e657b8014e?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/53/5307c009-c766-43b2-8004-ebc02ea8e536?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1796e04-eeeb-4c03-a7dd-442ee93df256?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/40/4099ccd7-7130-49e2-8b87-fbe55d3e5eb0?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9ac9664-527a-4c5e-8d62-ba5f2a735fda?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac60bc01-6b2b-4555-922b-070098ab1d45?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

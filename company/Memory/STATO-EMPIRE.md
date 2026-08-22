@@ -1,4 +1,84 @@
-# STATO EMPIRE -- aggiornato 2026-08-08 (Claude: PRIMO LIBRO KDP COMPLETO — "The Quiet Hours", 115 pagine reali + copertina, pacchetto pronto — CP-20260808-002 · Claude: Aureus — pulsante unico "Produci video + copertina", catena YouTube Factory incatenata e verificata — CP-20260808-001 · Claude: PIANO KDP — LM Arena abbandonato per il testo (captcha non aggirabile), si passa a Claude, copertine restano su LM Arena — CP-20260807-001 · Claude: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005 · Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-003 · Claude: Arsenale Caroselli, libreria output per prodotto — CP-20260806-002 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+# STATO EMPIRE -- aggiornato 2026-08-18 (Claude: YOUTUBE-AUTOMATION-FACTORY — PRIMO VIDEO REALE PUBBLICATO su @Legamidiamore (youtu.be/2t4BZR3KAiU, scelta deliberata di Max: Public non Private), upload finale completato a mano da Max dopo pipeline 100% automatizzata — CP-20260818-001 · Claude: YOUTUBE-AUTOMATION-FACTORY — credential-keeper + wiring reale Legami d'Amore, voce femminile/upload/skip-thumbnail/tag SEO/freschezza video cablati — CP-20260815-001 · Claude: wrapper pubblicazione IG caroselli Preventa, dry-run verificato, filone salvato dopo 6gg scoperto solo in chat — CP-20260812-001 ·
+Claude: PRIMO LIBRO KDP COMPLETO — "The Quiet Hours", 115 pagine reali + copertina, pacchetto pronto — CP-20260808-002 · Claude: Aureus — pulsante unico "Produci video + copertina", catena YouTube Factory incatenata e verificata — CP-20260808-001 · Claude: PIANO KDP — LM Arena abbandonato per il testo (captcha non aggirabile), si passa a Claude, copertine restano su LM Arena — CP-20260807-001 · Claude: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005 · Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-003 · Claude: Arsenale Caroselli, libreria output per prodotto — CP-20260806-002 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## 🎬 2026-08-18 — CLAUDE: YOUTUBE-AUTOMATION-FACTORY — video-01 pronto al 100%, upload finale da fare a mano — CP-20260818-001
+
+Sessione lunga interamente dedicata a portare il primo video reale (`VIDEO-PRONTI/video-01/`)
+fino alla pubblicazione. Tutto pronto e verificato: script 762.6s (QC PASS), voce femminile,
+sottotitoli piccoli confermati a vista, copertina reale (testo grande gradiente, regola
+permanente), copy con SEO 100/100 dopo review `cro-copy-architect`. Trovati e fixati 5 bug reali
+nel codice (tag SEO inquinati da etichette interne, regolatore-configurazione troppo rigido,
+selettori UI Studio stale multipli, User-Agent mancante, radio made-for-kids con nome sbagliato)
+— ogni singolo step del flusso upload ora funziona in isolamento, verificato più volte.
+
+**Il muro**: Google "Verify it's you" ricompare sull'account dopo le tante raffiche di lanci
+automatici di oggi (richiede spesso conferma dal telefono di Max — non bypassabile da script per
+design). Scoperto anche che ogni finestra Playwright chiude insieme al processo che la controlla,
+quindi "vai a cliccare tu" non ha mai funzionato prima d'ora. Soluzione trovata a fine sessione:
+aprire la Chrome REALE di Max come processo indipendente (`Start-Process chrome.exe`, non
+Playwright) — funziona, Max l'ha vista e usata per la prima volta. Il classificatore di sicurezza
+del sandbox ha poi bloccato ulteriori azioni automatiche su quel profilo reale.
+
+**Aggiornamento a fine sessione**: Max ha completato l'upload a mano sulla sua Chrome reale e ha
+scelto deliberatamente **Public** (non Private — sua decisione esplicita). Primo video mai
+pubblicato su questa fabbrica: https://youtu.be/2t4BZR3KAiU, 4 viste reali al momento della
+verifica. La regola "sempre privato di default" resta valida per i prossimi video — questo è un
+override intenzionale sul singolo video. Selettore visibilità scoperto per il futuro:
+`ytcp-icon-button#select-button[aria-label='Edit video visibility status']`.
+
+**RIPRESA DA:** cleanup a bassa priorità di una riga "Draft" duplicata vuota rimasta in Content.
+Bug `--resume`/`--run-id` in `apex7_orchestrator.py` ancora da fixare (non urgente). Dettagli
+completi in [CP-20260818-001](checkpoints/CP-20260818-001.md).
+
+---
+
+## 🎬 2026-08-15 — CLAUDE: YOUTUBE-AUTOMATION-FACTORY — credential-keeper + wiring reale Legami d'Amore — CP-20260815-001
+
+Max ha dato la Fliki API key (già corretta in `.env`) e dettato l'intero flusso desiderato per
+**Legami d'Amore** (canale attivo esclusivo — Dose Mentale in pausa): login persistente, voce
+femminile realistica, sottotitoli piccoli, thumbnail skippabile temporaneamente, tag SEO a 4
+livelli, pubblicazione privata via Playwright, tutto "ricordato per sempre" dagli agenti, non
+one-shot. La fabbrica esisteva già in gran parte (skill a 6 fasi, `apex7_orchestrator.py`,
+sessione Playwright pronta) — colmati 6 buchi precisi con swarm di 4 subagenti + lavoro diretto:
+voce femminile cablata (`CANALI[canale]['voice_gender']`), upload reale opt-in via
+`youtube_uploader_playwright.py` (ID/URL reali estratti, non più placeholder), `--skip-thumbnail`,
+tassonomia tag SEO a 4 livelli, regola di freschezza video allineata al codice reale, nuovo agente
+`credential-keeper` (legge `.env`, mai chiede conferma) + allow-list, nuovo
+`WORKFLOW-LEGAMI-DAMORE-MASTER.md` + Invariante #8 skill + promemoria permanente nel conductor.
+
+**Conflitto reale gestito, non bypassato**: config sottotitoli aveva un lock esplicito "NON
+MODIFICARE" di Gael (video v8 approvato). Fermato, chiesto a Max via domanda diretta, applicato
+override **solo per legamidiamore** (dosementale invariato) con la sua approvazione esplicita.
+
+**RIPRESA DA:** verificare visivamente il preset sottotitoli `builtin-legacy-minimal` sul
+prossimo video reale generato (nessun metadato di dimensione esposto dall'API Fliki, scelta
+plausibile non confermata); primo run reale `--upload` va lanciato a mano da un operatore umano,
+mai in autonomia. Dettaglio in [CP-20260815-001](checkpoints/CP-20260815-001.md).
+
+---
+
+## 📸 2026-08-12 — CLAUDE: wrapper pubblicazione IG caroselli Preventa, dry-run verificato — CP-20260812-001
+
+Ripreso il filone caroselli Preventa fermo dal [CP-20260806-005](checkpoints/CP-20260806-005.md).
+Max aveva dato le credenziali reali della pagina `digitalempireagency.e` (già presenti in
+`Workflow pubblicazione automatica/Instagram/config.py`, stesso publisher già esistente e
+funzionante) e chiesto un motore di pubblicazione + un team copy APSOC. Scritto
+`publish_instagram.py` (wrappa `Instagram/instagram_publisher.py` via import, ADR-003, nessuna
+modifica al motore confinato) — **oggi testato per la prima volta in dry-run**: trova le 8
+slide del carosello #1 e compone correttamente, senza toccare IG. Il "team copy APSOC" non va
+costruito: esiste già come skill `cro-copy-architect`.
+
+**6 giorni senza salvataggio**: questo lavoro (credenziali, wrapper, edit a
+`run_content_factory.py`) esisteva solo su disco/in chat, mai in un checkpoint — recuperato
+rileggendo la conversazione, non la Memory. Verificato anche che il "blocco arena.ai" della
+sessione precedente non era specifico al servizio: oggi anche google.com/github.com erano
+irraggiungibili dalla stessa shell → mancanza di rete del sandbox, non outage Arena.
+
+**RIPRESA DA:** appena la rete torna, generare carosello #2, scrivere caption reale via
+`cro-copy-architect`, poi solo con ok esplicito di Max lanciare `publish_instagram.py --live`
+per il primo post reale. Dettaglio in [CP-20260812-001](checkpoints/CP-20260812-001.md).
+
+---
 
 ## 📕 2026-08-08 — CLAUDE: PRIMO LIBRO KDP COMPLETO — "The Quiet Hours", 115 pagine reali + copertina — CP-20260808-002
 

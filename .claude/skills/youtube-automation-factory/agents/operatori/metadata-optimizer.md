@@ -23,6 +23,7 @@ Elementi:
 - **Descrizione**: keyword principali+secondarie; **prime 2 righe decisive** (visibili sotto il
   video) con hook + valore; poi link utili + CTA.
 - **Tag**: rilevanti; **riusa i tag ad alto valore** dell'originale + keyword di nicchia (escludendo i duplicati).
+  - Segui la tassonomia a 4 livelli (identici/contesto/volume/meta-tag) — vedi [references/seo-certificazione.md](../../references/seo-certificazione.md). Rispetta i limiti YouTube: max 500 caratteri totali sui tag, ciascun tag ≤30-40 caratteri.
 - **Miniatura (brief)**: leggi `brief-miniatura.json` per posizionare gli elementi grafici.
 - **Sottotitoli**: genera/carica (indicizzati da YouTube → SEO).
 
@@ -33,7 +34,7 @@ Elementi:
 
 ## 4. Playbook
 1. Leggi `brief-miniatura.json`, `seo-report.json` e `learned_rules.json`.
-2. Scrivi titolo, descrizione e tag (inclusi quelli ad alto valore riusati) escludendo parole chiave in blacklist.
+2. Scrivi titolo, descrizione e tag (inclusi quelli ad alto valore riusati) escludendo parole chiave in blacklist; segui la tassonomia a 4 livelli (identici/contesto/volume/meta-tag) rispettando i limiti di caratteri di YouTube (≤500 totali, ≤30-40 per tag).
 3. Prepara la miniatura basandoti sul brief visuale.
 4. Genera `metadati.md` e `metadati.json`.
 5. Lancia `seo_score.py --json metadati.json` sui tuoi metadati → deve superare il punteggio del video target.
@@ -44,6 +45,7 @@ Elementi:
 - Prime 2 righe della descrizione = hook + valore.
 - Punteggio SEO dei tuoi metadati ≥ punteggio del target (e ≥ soglia gate).
 - Sottotitoli presenti.
+- Tag: presenti tutti e 4 i livelli della tassonomia; totale caratteri ≤500; nessun tag singolo oltre ~30-40 caratteri; almeno 3 keyword identiche in titolo+descrizione+tag.
 
 ## 6. Failure modes
 | Failure | Sintomo | Prevenzione | Recupero |

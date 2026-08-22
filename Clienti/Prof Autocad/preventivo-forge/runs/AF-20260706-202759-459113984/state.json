@@ -1,0 +1,62 @@
+{
+  "run_id": "AF-20260706-202759-459113984",
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=459113984&sb=rel&od=up&vc=Car&dam=false&fr=2018&ml=%3A80000&ms=16700%3B%3B%3B&ms=4%3B%3B%3B&ms=1700%3B%3B%3B&ms=1900%3B%3B%3B&ms=3100%3B%3B%3B&ms=3500%3B%3B%3B&ms=4700%3B%3B%3B&ms=8600%3B%3B%3B&ms=270%3B%3B%3B&ms=14600%3B%3B%3B&ms=12400%3B%3B%3B&ms=11650%3B%3B%3B&ms=14800%3B%3B%3B&ms=15200%3B%3B%3B&ms=15500%3B%3B%3B&ms=15900%3B%3B%3B&ms=16600%3B%3B%3B&ms=17200%3B%3B%3B&ms=20100%3B%3B%3B&ms=21600%3B%3B%3B&ms=137%3B%3B%3B&p=35000&pa=CAM_360_DEGREES&pa=REAR_VIEW_CAM&pageNumber=2&s=Car&ref=srp&searchId=e4c5b6ba-e01a-130f-35d0-6f7f2a07cbad&refId=e4c5b6ba-e01a-130f-35d0-6f7f2a07cbad",
+  "created_at": "2026-07-06T18:27:59+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "done",
+      "at": "2026-07-06T18:28:20+00:00",
+      "note": ""
+    },
+    "S2_parsing": {
+      "status": "done",
+      "at": "2026-07-06T18:28:20+00:00",
+      "note": ""
+    },
+    "GATE_A": {
+      "status": "passed",
+      "at": "2026-07-06T18:28:20+00:00",
+      "note": ""
+    },
+    "S3_translate_copy": {
+      "status": "done",
+      "at": "2026-07-06T18:28:20+00:00",
+      "note": ""
+    },
+    "GATE_B": {
+      "status": "passed",
+      "at": "2026-07-06T18:28:20+00:00",
+      "note": ""
+    },
+    "S4_pricing": {
+      "status": "done",
+      "at": "2026-07-06T18:28:20+00:00",
+      "note": "Mercedes-Benz GLC 43 AMG AMG Line 59.537 €"
+    },
+    "GATE_C": {
+      "status": "passed",
+      "at": "2026-07-06T18:28:20+00:00",
+      "note": ""
+    },
+    "S5_pdf_render": {
+      "status": "done",
+      "at": "2026-07-06T18:28:25+00:00",
+      "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260706-202759-459113984\\preventivo_mercedes-benz-glc-43-amg.pdf"
+    },
+    "GATE_D": {
+      "status": "passed",
+      "at": "2026-07-06T18:28:25+00:00",
+      "note": ""
+    },
+    "GATE_IMG": {
+      "status": "passed",
+      "at": "2026-07-06T18:28:25+00:00",
+      "note": ""
+    },
+    "GATE_R": {
+      "status": "passed",
+      "at": "2026-07-06T18:28:25+00:00",
+      "note": ""
+    }
+  }
+}

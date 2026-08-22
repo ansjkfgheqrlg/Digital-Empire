@@ -5318,3 +5318,61 @@ Traceback (most recent call last):
     return open_func(self.baseFilename, self.mode,
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 PermissionError: [Errno 13] Permission denied: 'c:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Outreach\\LinkedIn Automation\\run_today_log.txt'
+2026-08-05 08:17:18,264  ============================================================
+2026-08-05 08:17:18,265  COMMENT WARMER  2026-08-05 08:17:18
+2026-08-05 08:17:18,265  ============================================================
+2026-08-05 08:17:18,289  Commenti da fare oggi: 30 (limite: 30)
+2026-08-05 08:17:31,500  Verifica sessione LinkedIn...
+2026-08-05 08:17:45,503  [ERRORE] Sessione LinkedIn scaduta. Esegui: python refresh_session.py
+Traceback (most recent call last):
+  File "c:\Users\Utente\Desktop\qui tutto\Digital Empire\Outreach\LinkedIn Automation\run_today.py", line 33, in <module>
+    logging.FileHandler(LOG_FILE, encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1181, in __init__
+    StreamHandler.__init__(self, self._open())
+                                 ^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1213, in _open
+    return open_func(self.baseFilename, self.mode,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'c:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Outreach\\LinkedIn Automation\\run_today_log.txt'
+2026-08-06 09:00:14,340  ============================================================
+2026-08-06 09:00:14,340  COMMENT WARMER  2026-08-06 09:00:14
+2026-08-06 09:00:14,340  ============================================================
+2026-08-06 09:00:14,394  Commenti da fare oggi: 30 (limite: 30)
+2026-08-06 09:00:34,423  Verifica sessione LinkedIn...
+2026-08-06 09:00:40,613  [ERRORE] Sessione LinkedIn scaduta. Esegui: python refresh_session.py
+Traceback (most recent call last):
+  File "c:\Users\Utente\Desktop\qui tutto\Digital Empire\Outreach\LinkedIn Automation\run_today.py", line 33, in <module>
+    logging.FileHandler(LOG_FILE, encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1181, in __init__
+    StreamHandler.__init__(self, self._open())
+                                 ^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1213, in _open
+    return open_func(self.baseFilename, self.mode,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'c:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Outreach\\LinkedIn Automation\\run_today_log.txt'
+2026-08-07 09:04:41,845  ============================================================
+2026-08-07 09:04:41,845  COMMENT WARMER  2026-08-07 09:04:41
+2026-08-07 09:04:41,845  ============================================================
+2026-08-07 09:04:41,864  Commenti da fare oggi: 30 (limite: 30)
+2026-08-07 09:04:57,539  Verifica sessione LinkedIn...
+2026-08-07 09:05:10,502  [ERRORE] Sessione LinkedIn scaduta. Esegui: python refresh_session.py
+Traceback (most recent call last):
+  File "c:\Users\Utente\Desktop\qui tutto\Digital Empire\Outreach\LinkedIn Automation\run_today.py", line 33, in <module>
+    logging.FileHandler(LOG_FILE, encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1181, in __init__
+    StreamHandler.__init__(self, self._open())
+                                 ^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1213, in _open
+    return open_func(self.baseFilename, self.mode,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'c:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Outreach\\LinkedIn Automation\\run_today_log.txt'
+2026-08-12 10:08:22,580  ============================================================
+2026-08-12 10:08:22,581  COMMENT WARMER  2026-08-12 10:08:22
+2026-08-12 10:08:22,581  ============================================================
+2026-08-12 10:08:22,636  Commenti da fare oggi: 30 (limite: 30)
+2026-08-12 10:08:43,398  Verifica sessione LinkedIn...
+2026-08-12 10:08:51,858  [ERRORE] Sessione LinkedIn scaduta. Esegui: python refresh_session.py
+^C

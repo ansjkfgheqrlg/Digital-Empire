@@ -1,7 +1,5 @@
 {
-  "status": "completato",
-  "ts": "2026-08-04T09:42:22",
-  "immagini_salvate": [
-    "C:\\Users\\olhad\\Desktop\\Digital Empire\\YOUTUBE-AUTOMATION-FACTORY\\05-TEMPLATES-E-KIT\\copertina-arena-candidata-1.png"
-  ]
+  "status": "apertura_chrome_reale",
+  "ts": "2026-08-11T10:11:12",
+  "messaggio": "Apro chrome.exe vero, non Playwright — attendo la porta di debug."
 }

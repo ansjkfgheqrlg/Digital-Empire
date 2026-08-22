@@ -1,0 +1,29 @@
+# APEX-7 Playwright Bridge - Requirements for Claude Code installation
+# Install on Claude Code host: pip install -r requirements_playwright.txt && playwright install chromium
+
+# Core APEX-7 (already present but listed)
+pyyaml>=6.0
+pillow>=10.0
+aiohttp>=3.8
+
+# Playwright automation - core for Claude Code ↔ Arena.ai bridge
+playwright>=1.40.0
+
+# Server for /inizio-generazione endpoint
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+pydantic>=2.0
+
+# Optional but recommended for 4K ultra sharp processing
+numpy>=1.24.0
+opencv-python>=4.8.0  # for Lanczos downscale 2160x2700 -> 1080x1350 sharp
+
+# SQLite already stdlib - used for Decision Log
+# No extra deps for memory_system
+
+# For zip packaging (stdlib shutil, but ensure)
+# For image validation
+# Already installed via playwright install chromium -> downloads browser binaries
+
+# Dev
+pytest>=7.4

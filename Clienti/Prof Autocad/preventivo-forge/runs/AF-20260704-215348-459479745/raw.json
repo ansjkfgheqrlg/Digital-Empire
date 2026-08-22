@@ -1,0 +1,21 @@
+{
+  "source_url": "https://suchen.mobile.de/auto-inserat/hyundai-i20-fl-1-0-t-gdi-90-ps-6-mt-2wd-select-hamburg/459479745.html?lst=p",
+  "scraped_at": "2026-07-04T19:54:15+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": null,
+  "jsonld": [],
+  "dom": {
+    "title": "Hyundai i20 für 20.990 €",
+    "price_text": null,
+    "attributes": {},
+    "description": "Neufahrzeug • 15 km • 66 kW (90 PS) • Benzin • Schaltgetriebe",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [],
+  "images": [],
+  "warnings": [
+    "nessuna URL immagine estratta",
+    "window.__INITIAL_STATE__ non trovato: parser userà JSON-LD/DOM (dati ridotti)"
+  ]
+}

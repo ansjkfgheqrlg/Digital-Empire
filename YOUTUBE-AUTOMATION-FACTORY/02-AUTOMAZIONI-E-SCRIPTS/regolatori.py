@@ -225,7 +225,11 @@ CONFIG_APPROVATA = {
     # L'effetto karaoke parola-per-parola dei sottotitoli E' VOLUTO: non e' un difetto.
     "subtitlePresetId": "builtin-legacy-bold",
     "highlightSubtitles": True,
-    "duration": 720,          # inerte (l'API vuole 1-15 minuti) ma fa parte dell'approvato
+    # Era 720 ("inerte, l'API vuole 1-15 minuti") — falso, verificato dal vivo il 2026-08-19:
+    # Fliki valida sul serio e rifiuta con HTTP 400 se fuori range. Bug reale, non una modifica
+    # di comportamento: 15 e' il valore valido piu' vicino, il campo resta comunque inerte sulla
+    # durata finale (segue la lunghezza del testo). Vedi fliki_client.py per lo stesso fix.
+    "duration": 15,
     "sceneBreakdown": "lineBreak",
     "aspectRatio": "16:9",
     "resolution": "1080p",

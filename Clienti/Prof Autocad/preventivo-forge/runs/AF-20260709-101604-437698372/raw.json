@@ -1,0 +1,755 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=437698372&action=topOfPage&dam=false&ms=19000%3B%3B%3B&od=up&ref=seo&refId=5f11fca4-c297-bf68-7cae-e5512e9d126d&s=Car&sb=rel&searchId=5f11fca4-c297-bf68-7cae-e5512e9d126d&vc=Car",
+  "scraped_at": "2026-07-09T08:16:19+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup, Vorführfahrzeug"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "OV64"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "EDITION Hybrid 145 A"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "S6037532_48294"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Sofort"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "7.990 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.199 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "107 kW (145 PS)"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Hybrid (Benzin/Elektro)"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "5,6 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "128 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-D",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "5,6 l/100km (kombiniert)",
+          "5,3 l/100km (Innenstadt)",
+          "5,3 l/100km (Stadtrand)",
+          "4,9 l/100km (Landstraße)",
+          "6,6 l/100km (Autobahn)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
+        "tag": "envkv.consumptionCosts",
+        "value": "1.509 €/Jahr",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffpreis",
+        "tag": "envkv.fuel.price",
+        "value": "1,80 €/l (Jahresdurchschnitt 2025)"
+      },
+      {
+        "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
+        "tag": "envkv.co2Costs",
+        "value": [
+          "2.438 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 127 €/t)",
+          "1.152 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
+          "3.840 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 200 €/t)"
+        ],
+        "infoText": {
+          "headline": "Mögliche CO₂-Kosten über die nächsten 10 Jahre",
+          "text": "<p>Aufgrund der CO₂-Bepreisung sind künftige Erhöhungen der Kraftstoffkosten möglich. Die künftige CO₂-Preisentwicklung ist unsicher, daher werden die möglichen CO₂-Kosten anhand von drei angenommenen CO₂-Preisen für den Zeitraum 2027 bis 2036 berechnet.</p><p>Die tatsächlichen CO₂-Preise können sowohl höher als auch niedriger als in den hier zugrunde liegenden Modellrechnungen ausfallen. Die CO₂-Kosten sind beim Tanken mit den Kraftstoffkosten zu bezahlen.</p><p>Weitere Informationen unter <a href=\"https://www.alternativ-mobil.info/\" target=\"_blank\">www.alternativ-mobil.info/</a></p>"
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftfahrzeugsteuer",
+        "tag": "envkv.tax",
+        "value": "92 €/Jahr"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "09/2025"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Hinten, Vorne, Kamera"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "Perla Nera Schwarz"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Schwarz Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Stoff, Grau"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "3"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": true
+    },
+    "shortTitle": "Opel Grandland (X)",
+    "subTitle": "Grandland EDITION Hybrid 145 A *DAB*SHZ*Kamera",
+    "makeKey": "Opel",
+    "modelKey": "Grandland (X)",
+    "isNew": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "batteryCertificate": true,
+    "features": [
+      "ABS",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Frontantrieb",
+      "Garantie",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Isofix Beifahrersitz",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Nichtraucher-Fahrzeug",
+      "Pannenkit",
+      "Partikelfilter",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Servolenkung",
+      "Sitzheizung",
+      "Tempomat",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 456764,
+    "priceRating": {
+      "rating": "GOOD_PRICE",
+      "ratingLabel": "Guter Preis",
+      "thresholdLabels": [
+        "20.600 €",
+        "26.800 €",
+        "28.800 €",
+        "32.000 €",
+        "34.400 €",
+        "38.200 €"
+      ],
+      "vehiclePriceOffset": 9
+    },
+    "segment": "Car",
+    "title": "Opel Grandland EDITION Hybrid 145 A *DAB*SHZ*Kamera",
+    "url": "https://suchen.mobile.de/auto-inserat/opel-grandland-edition-hybrid-145-a-dab-shz-kamera-wiesbaden/437698372.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 437698372,
+    "price": {
+      "gross": "26.980 €",
+      "grossAmount": 26980,
+      "grossCurrency": "EUR",
+      "net": "22.672 €",
+      "netAmount": 22672.27,
+      "type": "FIXED",
+      "vat": "19% MwSt."
+    },
+    "kba": {
+      "hsn": "2525",
+      "tsn": "AEQ"
+    },
+    "customDimensions": {
+      "10": "gold",
+      "47": "top_NA_NA_NA_NA_NA",
+      "126": "hero_logo_19_NA_NA_languages_NA"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "Das Fahrzeug verfügt über ein Batterie Zertifikat. Für weitere Informationen nehmen Sie bitte direkten Kontakt auf.<br><hr><b>Komfort:</b><br> <ul><li>Android Auto</li> <li>Apple CarPlay</li> <li>Außenspiegel beheizbar</li> <li>Außenspiegel elektr.</li> <li>Bordcomputer</li> <li>Einparkhilfe (PDC) mit Kamera</li> <li>Einparkhilfe (PDC) Sensoren hinten</li> <li>Einparkhilfe (PDC) Sensoren vorne</li> <li>Elektr. Fensterheber</li> <li>Elektr. Fensterheber vorne/hinten</li> <li>Elektrische Heckklappe</li> <li>Fahrersitz höhenverstellbar</li> <li>keyless-Go</li> <li>Klimaautomatik</li> <li>Klimaautomatik 2 Zonen</li> <li>Lederlenkrad</li> <li>Lenksäule einstellbar</li> <li>Mittelarmlehne</li> <li>Multifunktionslenkrad</li> <li>Multimediasystem</li> <li>Musikstreaming integriert</li> <li>Nichtraucherfahrzeug</li> <li>Rücksitzbank geteilt</li> <li>Sitzheizung</li> <li>Sitzheizung Vordersitze</li> <li>Tempomat</li> <li>Touchscreen</li> <li>Zentralverriegelung</li> <li>Zentralverriegelung mit Fernbedienung</li> </ul><b>Multimedia / Radio / Navi:</b><br> <ul><li>Bluetooth Freisprecheinrichtung</li> <li>DAB+ Digital Radio</li> <li>Freisprecheinrichtung</li> <li>Radio/MP3</li> <li>Radio/Tuner</li> </ul><b>Licht:</b><br> <ul><li>LED-Scheinwerfer</li> </ul><b>Sicherheit allgemein:</b><br> <ul><li>3. Bremsleuchte</li> <li>ABS</li> <li>Antriebsschlupfregelung (ASR)</li> <li>elektr. Stabilitätsprogramm (ESP)</li> <li>Fernlichtassistent</li> <li>ISOFIX</li> <li>ISOFIX Beifahrersitz</li> <li>LED-Tagfahrlicht</li> <li>Lichtautomatik</li> <li>Pannenkit</li> <li>Regensensor</li> <li>Reifendruckkontrolle</li> <li>Rückfahrkamera</li> <li>Servolenkung</li> <li>Spiegel automatisch abblendbar</li> <li>Tagfahrlicht</li> <li>Traktionskontrolle</li> <li>Wegfahrsperre</li> </ul><b>Sonstiges:</b><br> <ul><li>Berganfahrhilfe</li> <li>Heckklappe (elektrisch)</li> <li>LM-Felgen</li> </ul><b>Weitere Beschreibung:</b><br> <ul><li>Komfort-Paket</li> <li>Ergonomiesitz vorn links/rechts</li> <li>Isofix-Aufnahmen für Kindersitz an Beifahrersitz</li> <li>Kofferraumdeckel / Heckklappe elektr. betätigt (öffnen + schliessen. sensorgesteuert)</li> <li>Lenkrad heizbar</li> <li>Rückfahrkamera mit 180° Umgebungsansicht</li> <li>Sitzheizung vorn</li> <li>LM-Felgen 7.5x19 (Diamond Cut)</li> <li>Metallic-/Mineraleffekt-Lackierung</li> <li>Antriebsart: Frontantrieb</li> <li>Blinkleuchten LED</li> <li>Dach Wagenfarbe</li> <li>Einschaltautomatik für Fahrlicht</li> <li>Elektron. Stabilitäts-Programm (ESP)</li> <li>Fahrassistenz-System: Berganfahr-Assistent (HSA. Hill Start Assist)</li> <li>Fahrassistenz-System: Fernlichtassistent</li> <li>Fensterheber elektrisch hinten</li> <li>Fensterheber elektrisch vorn</li> <li>Feststellbremse elektrisch</li> <li>Gepäck-/Laderaumboden doppelt</li> <li>Getriebe Automatik - Doppelkupplungsgetriebe (6-Stufen. Hybrid)</li> <li>Heckleuchten LED</li> <li>Infotainment-System: Multimedia mit 10&quot; Touchscreen. DAB. Bluetooth-Schnittstelle</li> <li>DAB-Tuner (Radioempfang digital)</li> <li>Opel Connect</li> <li>Innenspiegel mit Abblendautomatik</li> <li>Isofix-Aufnahmen für Kindersitz an Rücksitz</li> <li>Karosserie: 5-türig</li> <li>Kindersicherung</li> <li>Klimaautomatik 2-Zonen</li> <li>Leseleuchten Seitentüren (Eco Kuppel-LED)</li> <li>Leseleuchten vorn (Eco Kuppel-LED)</li> <li>Leuchtweitenregelung</li> <li>Motor 1.2 Ltr. - 100 kW (System: 107 kW) Mild-Hybrid</li> <li>Mild-Hybrid 107 kW (Motor 1.2 Ltr. - 100 kW)</li> <li>Otto-Partikelfilter (OPF)</li> <li>Parkpilotsystem vorn und hinten</li> <li>Radstand Standard</li> <li>Reifen-Reparaturkit</li> <li>Reifendruck-Kontrollsystem</li> <li>Rücksitzlehne geteilt (40:20:40)</li> <li>Schadstoffarm nach Abgasnorm Euro 6e</li> <li>Scheibenwischer mit Regensensor</li> <li>Scheinwerfer LED Eco</li> <li>Schließ-/Startsystem Keyless Open</li> <li>Sonnenblende / Sonnenblenden mit Spiegel</li> <li>Tagfahrlicht LED</li> </ul><hr> <ul><li>Inzahlungnahme Ihres Gebrauchten, Finanzierung oder Leasing möglich.</li> <li>Eine riesen Auswahl weiterer Angebote finden Sie auf unseren Internetseiten.</li> <li>Den genauen Ausstattungsumfang erhalten Sie von unserem Verkaufspersonal, bitte kontaktieren Sie uns.</li> <li>Änderungen, Irrtümer und Zwischenverkauf vorbehalten.</li> </ul><hr>  <br> ",
+    "contactInfo": {
+      "address1": "Rheingaustraße 61-63",
+      "address2": "DE-65201 Wiesbaden",
+      "name": "Stellantis &You Deutschland GmbH Wiesbaden Rheingaustraße",
+      "openingHours": [
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "09:00 Uhr - 14:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 16.01.2001",
+      "rating": {
+        "count": 3,
+        "totalCount": 80,
+        "score": 4.7,
+        "scoreLocalized": "4,7",
+        "link": "https://www.mobile.de/bewertungen/PEUGEOT-RHEIN-MAIN-GMBH8?lang=de",
+        "recommendationRate": 100,
+        "adRealityRate": 100,
+        "consultingScore": 4.666666666666667,
+        "friendlinessScore": 4.666666666666667,
+        "responseTimeScore": 4.666666666666667
+      },
+      "languages": "Deutsch",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a4/a43cf960-be22-4a75-ae21-fe72d86b8e29?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a4/a43cf960-be22-4a75-ae21-fe72d86b8e29?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/a4/a43cf960-be22-4a75-ae21-fe72d86b8e29?rule=mo-360 360w",
+        "alt": "Stellantis &You Deutschland GmbH Wiesbaden Rheingaustraße"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)611 99683060",
+          "uri": "tel:+4961199683060"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 611 99683060"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {},
+      "mapLink": "https://maps.google.com/maps?q=50.0426017,8.2086762+(Stellantis%20%26You%20Deutschland%20GmbH%20Wiesbaden%20Rheingaustra%C3%9Fe)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 50.0426017,
+        "lon": 8.2086762
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=456764",
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b8/b8225587-83c0-4ce7-970d-f2b75d086971?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b8/b8225587-83c0-4ce7-970d-f2b75d086971?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b8/b8225587-83c0-4ce7-970d-f2b75d086971?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b8/b8225587-83c0-4ce7-970d-f2b75d086971?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 137,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=437698372&loanType=balloon&loanDuration=60&downPayment=5396&channel=desktop",
+      "type": "AO",
+      "flowType": "AO",
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5396,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 21584,
+        "interestRateNominal": 5.26,
+        "interestRateEffective": 5.39,
+        "monthlyInstallment": 284,
+        "finalInstallment": 8903.4,
+        "totalInterest": 4075.61,
+        "totalAmount": 25659.61,
+        "localized": {
+          "downPayment": "5.396 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "21.584 €",
+          "interestRateNominal": "5,26%",
+          "interestRateEffective": "5,39%",
+          "monthlyInstallment": "285 €",
+          "finalInstallment": "8.903,40 €",
+          "totalInterest": "4.075,61 €",
+          "totalAmount": "25.659,61 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000 €, effektiver Jahreszins 5,39%, fester Sollzinssatz 5,26% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 143,60 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.772,13 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach"
+        }
+      },
+      "shortFlow": false,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6826678-5a96-4078-8d1d-1a0330a7be48?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6826678-5a96-4078-8d1d-1a0330a7be48?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c6/c6826678-5a96-4078-8d1d-1a0330a7be48?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c6/c6826678-5a96-4078-8d1d-1a0330a7be48?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6826678-5a96-4078-8d1d-1a0330a7be48?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5936e6d-50ff-4e27-a103-aa61d4f32035?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5936e6d-50ff-4e27-a103-aa61d4f32035?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e5/e5936e6d-50ff-4e27-a103-aa61d4f32035?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e5/e5936e6d-50ff-4e27-a103-aa61d4f32035?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5936e6d-50ff-4e27-a103-aa61d4f32035?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3c21498-65da-46f7-9ddf-ae9729110002?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3c21498-65da-46f7-9ddf-ae9729110002?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b3/b3c21498-65da-46f7-9ddf-ae9729110002?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b3/b3c21498-65da-46f7-9ddf-ae9729110002?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3c21498-65da-46f7-9ddf-ae9729110002?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d5/d50b152e-c68f-4e9f-a4c0-47128c1c693d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d5/d50b152e-c68f-4e9f-a4c0-47128c1c693d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d5/d50b152e-c68f-4e9f-a4c0-47128c1c693d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d5/d50b152e-c68f-4e9f-a4c0-47128c1c693d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d5/d50b152e-c68f-4e9f-a4c0-47128c1c693d?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/44/446a0fcb-b066-4433-a8bf-939938fe1550?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/44/446a0fcb-b066-4433-a8bf-939938fe1550?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/44/446a0fcb-b066-4433-a8bf-939938fe1550?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/44/446a0fcb-b066-4433-a8bf-939938fe1550?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/44/446a0fcb-b066-4433-a8bf-939938fe1550?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/61/6160ed91-2d50-496c-a642-b2c7e89316da?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/61/6160ed91-2d50-496c-a642-b2c7e89316da?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/61/6160ed91-2d50-496c-a642-b2c7e89316da?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/61/6160ed91-2d50-496c-a642-b2c7e89316da?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/61/6160ed91-2d50-496c-a642-b2c7e89316da?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fcf26168-5cb0-4335-b531-41005b110ef4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fcf26168-5cb0-4335-b531-41005b110ef4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fc/fcf26168-5cb0-4335-b531-41005b110ef4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/fc/fcf26168-5cb0-4335-b531-41005b110ef4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fcf26168-5cb0-4335-b531-41005b110ef4?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/17/17a61a9f-8c99-4645-bc7b-defb8dadd745?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/17/17a61a9f-8c99-4645-bc7b-defb8dadd745?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/17/17a61a9f-8c99-4645-bc7b-defb8dadd745?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/17/17a61a9f-8c99-4645-bc7b-defb8dadd745?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/17/17a61a9f-8c99-4645-bc7b-defb8dadd745?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/32/32b2aae3-6970-408b-93d0-17aeed47fa47?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/32/32b2aae3-6970-408b-93d0-17aeed47fa47?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/32/32b2aae3-6970-408b-93d0-17aeed47fa47?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/32/32b2aae3-6970-408b-93d0-17aeed47fa47?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/32/32b2aae3-6970-408b-93d0-17aeed47fa47?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb172209-af92-402e-b147-ae7bca9fe961?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb172209-af92-402e-b147-ae7bca9fe961?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bb/bb172209-af92-402e-b147-ae7bca9fe961?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bb/bb172209-af92-402e-b147-ae7bca9fe961?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb172209-af92-402e-b147-ae7bca9fe961?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/89/891db851-54df-4a77-8cf9-dc514e6528c6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/89/891db851-54df-4a77-8cf9-dc514e6528c6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/89/891db851-54df-4a77-8cf9-dc514e6528c6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/89/891db851-54df-4a77-8cf9-dc514e6528c6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/89/891db851-54df-4a77-8cf9-dc514e6528c6?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c156c404-895c-4309-83de-a61dbf49cd46?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c156c404-895c-4309-83de-a61dbf49cd46?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c1/c156c404-895c-4309-83de-a61dbf49cd46?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c1/c156c404-895c-4309-83de-a61dbf49cd46?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c156c404-895c-4309-83de-a61dbf49cd46?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/87/873b39e2-224a-4083-9412-a349456594cf?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/87/873b39e2-224a-4083-9412-a349456594cf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/87/873b39e2-224a-4083-9412-a349456594cf?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/87/873b39e2-224a-4083-9412-a349456594cf?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/87/873b39e2-224a-4083-9412-a349456594cf?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/51/518b484a-0fb0-41f6-93f6-9c00b2bbf01f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/51/518b484a-0fb0-41f6-93f6-9c00b2bbf01f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/51/518b484a-0fb0-41f6-93f6-9c00b2bbf01f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/51/518b484a-0fb0-41f6-93f6-9c00b2bbf01f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/51/518b484a-0fb0-41f6-93f6-9c00b2bbf01f?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/00/009c3d9b-03ac-45f3-bcab-68cc1f5e3eec?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/00/009c3d9b-03ac-45f3-bcab-68cc1f5e3eec?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/00/009c3d9b-03ac-45f3-bcab-68cc1f5e3eec?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/00/009c3d9b-03ac-45f3-bcab-68cc1f5e3eec?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/00/009c3d9b-03ac-45f3-bcab-68cc1f5e3eec?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e24842c0-5aeb-4385-b1c2-40f380c45eb7?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e24842c0-5aeb-4385-b1c2-40f380c45eb7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e2/e24842c0-5aeb-4385-b1c2-40f380c45eb7?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e2/e24842c0-5aeb-4385-b1c2-40f380c45eb7?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e24842c0-5aeb-4385-b1c2-40f380c45eb7?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5fc2ef55-2cd4-463c-b626-23147d6ab081?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5fc2ef55-2cd4-463c-b626-23147d6ab081?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5f/5fc2ef55-2cd4-463c-b626-23147d6ab081?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5f/5fc2ef55-2cd4-463c-b626-23147d6ab081?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5fc2ef55-2cd4-463c-b626-23147d6ab081?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bf/bfe3bba5-2e40-4bd9-a9e5-7dc46fec3346?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bf/bfe3bba5-2e40-4bd9-a9e5-7dc46fec3346?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bf/bfe3bba5-2e40-4bd9-a9e5-7dc46fec3346?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bf/bfe3bba5-2e40-4bd9-a9e5-7dc46fec3346?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bf/bfe3bba5-2e40-4bd9-a9e5-7dc46fec3346?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/df/df5af637-a210-421a-8218-5e116eacefb1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/df/df5af637-a210-421a-8218-5e116eacefb1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/df/df5af637-a210-421a-8218-5e116eacefb1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/df/df5af637-a210-421a-8218-5e116eacefb1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/df/df5af637-a210-421a-8218-5e116eacefb1?rule=mo-80w",
+        "type": "image",
+        "alt": "Opel Grandland (X)"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6826678-5a96-4078-8d1d-1a0330a7be48?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6826678-5a96-4078-8d1d-1a0330a7be48?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpcorerecommenderpopularfiltersnobanner&client.abtests=accwebpublichomegaaa4on&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpsbsmodelimprovementsv1&adId=437698372"
+    },
+    "similarAdsInfo": {
+      "type": "similar-ads",
+      "apiParams": "/ml-recommendations-by-id/437698372"
+    },
+    "vehicleCondition": "used",
+    "make": "Opel",
+    "model": "Grandland (X)",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "5f11fca4-c297-bf68-7cae-e5512e9d126d"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Opel Grandland (X) für 26.980 €",
+    "price_text": "Preis 26.980 € Guter Preis 22.672 € (Netto) , 19% MwSt. Finanzierung Monatsrate ab 285 € Finanzierung berechnen Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Online abschließen Schließe die Finanzierung bequem online von Zuhause ab Online-Kredit Dieses Inserat bietet den Online-Kreditvergleich Unabhängige Finanzierung mit der Bank deiner Wahl Einfach von Zuhause online abschließen Nach wenigen Minuten erhältst du dein persönliches Kreditangebot von verschiedenen Banken",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup, Vorführfahrzeug",
+      "Baureihe": "OV64",
+      "Ausstattungslinie": "EDITION Hybrid 145 A",
+      "Fahrzeugnummer": "S6037532_48294",
+      "Verfügbarkeit": "Sofort",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "7.990 km",
+      "Hubraum": "1.199 cm³",
+      "Leistung": "107 kW (145 PS)",
+      "Kraftstoffart": "Hybrid (Benzin/Elektro)",
+      "Mit Batterie-Zertifikat": "Getestet vom Händler",
+      "Energieverbrauch (komb.) 2": "5,6 l/100km",
+      "CO₂-Emissionen (komb.) 2": "128 g/km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Kraftstoffverbrauch 2": "5,6 l/100km (kombiniert) 5,3 l/100km (Innenstadt) 5,3 l/100km (Stadtrand) 4,9 l/100km (Landstraße) 6,6 l/100km (Autobahn)",
+      "Energiekosten bei 15.000 km Jahresfahrleistung 2": "1.509 €/Jahr",
+      "Kraftstoffpreis": "1,80 €/l (Jahresdurchschnitt 2025)",
+      "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr) 2": "2.438 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 127 €/t) 1.152 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t) 3.840 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 200 €/t)",
+      "Kraftfahrzeugsteuer": "92 €/Jahr",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "09/2025",
+      "Anzahl der Fahrzeughalter": "1",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Hinten, Vorne, Kamera",
+      "Farbe (Hersteller)": "Perla Nera Schwarz",
+      "Farbe": "Schwarz Metallic",
+      "Innenausstattung": "Stoff, Grau",
+      "Zylinder": "3"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 7.990 km • 107 kW (145 PS) • Hybrid (Benzin/Elektro) • Automatik • 09/2025",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6826678-5a96-4078-8d1d-1a0330a7be48?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5936e6d-50ff-4e27-a103-aa61d4f32035?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3c21498-65da-46f7-9ddf-ae9729110002?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d5/d50b152e-c68f-4e9f-a4c0-47128c1c693d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/44/446a0fcb-b066-4433-a8bf-939938fe1550?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/61/6160ed91-2d50-496c-a642-b2c7e89316da?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fc/fcf26168-5cb0-4335-b531-41005b110ef4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/17/17a61a9f-8c99-4645-bc7b-defb8dadd745?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/32/32b2aae3-6970-408b-93d0-17aeed47fa47?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb172209-af92-402e-b147-ae7bca9fe961?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/89/891db851-54df-4a77-8cf9-dc514e6528c6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c1/c156c404-895c-4309-83de-a61dbf49cd46?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/87/873b39e2-224a-4083-9412-a349456594cf?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/51/518b484a-0fb0-41f6-93f6-9c00b2bbf01f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/00/009c3d9b-03ac-45f3-bcab-68cc1f5e3eec?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e2/e24842c0-5aeb-4385-b1c2-40f380c45eb7?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5fc2ef55-2cd4-463c-b626-23147d6ab081?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bf/bfe3bba5-2e40-4bd9-a9e5-7dc46fec3346?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/df/df5af637-a210-421a-8218-5e116eacefb1?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6826678-5a96-4078-8d1d-1a0330a7be48?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5936e6d-50ff-4e27-a103-aa61d4f32035?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3c21498-65da-46f7-9ddf-ae9729110002?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d5/d50b152e-c68f-4e9f-a4c0-47128c1c693d?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/44/446a0fcb-b066-4433-a8bf-939938fe1550?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/61/6160ed91-2d50-496c-a642-b2c7e89316da?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fcf26168-5cb0-4335-b531-41005b110ef4?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/17/17a61a9f-8c99-4645-bc7b-defb8dadd745?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/32/32b2aae3-6970-408b-93d0-17aeed47fa47?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb172209-af92-402e-b147-ae7bca9fe961?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/89/891db851-54df-4a77-8cf9-dc514e6528c6?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c1/c156c404-895c-4309-83de-a61dbf49cd46?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/87/873b39e2-224a-4083-9412-a349456594cf?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/51/518b484a-0fb0-41f6-93f6-9c00b2bbf01f?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/00/009c3d9b-03ac-45f3-bcab-68cc1f5e3eec?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e24842c0-5aeb-4385-b1c2-40f380c45eb7?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5fc2ef55-2cd4-463c-b626-23147d6ab081?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/bf/bfe3bba5-2e40-4bd9-a9e5-7dc46fec3346?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/df/df5af637-a210-421a-8218-5e116eacefb1?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

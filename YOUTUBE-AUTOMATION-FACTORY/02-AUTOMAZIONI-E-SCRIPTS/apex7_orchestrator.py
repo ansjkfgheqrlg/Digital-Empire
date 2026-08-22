@@ -93,6 +93,15 @@ CANALI = {
         "tag_tema": ["spiritualità", "psicologia", "benessere", "crescita personale", "terza età"],
         "prefisso_file": "dosementale",
         "copy_intelligence_file": "copy_intelligence.json",
+        # Voce Fliki (maschile, "Calimero" — invariato) e profilo Chrome autenticato per upload
+        # reale. dosementale non ha un profilo Studio autenticato oggi (chrome-profile-youtube e'
+        # solo scraping anonimo, vedi legamidiamore_login.py): None fa scattare il fallback mock
+        # sicuro in youtube_uploader_playwright.py invece di tentare un upload senza sessione.
+        "voice_gender": "male",
+        "chrome_profile_dir": None,
+        # ⛔ Preset sottotitoli APPROVATO DA GAEL (2026-07-31, config del video v8 "perfetto") —
+        # NON CAMBIARE per questo canale. Vedi commento gemello in fliki_client.py:generate_video.
+        "subtitle_preset": "builtin-legacy-bold",
     },
     "legamidiamore": {
         "channel": "Legami d'Amore",
@@ -104,6 +113,18 @@ CANALI = {
                      "linguaggio del corpo", "relazioni"],
         "prefisso_file": "legamidiamore",
         "copy_intelligence_file": "copy_intelligence_legamidiamore.json",
+        # Voce femminile realistica (richiesta esplicita, 2026-08-13) e profilo Chrome persistente
+        # gia' autenticato su YouTube Studio (bootstrap fatto da legamidiamore_login.py) — unico
+        # canale con upload reale abilitabile via --upload su run_phase_5.
+        "voice_gender": "female",
+        "chrome_profile_dir": "chrome-profile-legamidiamore",
+        # Override ESPLICITO solo per questo canale (Max, 2026-08-15): sottotitoli piu' piccoli.
+        # "minimal" e' la scelta piu' plausibile fra i 30 preset reali in
+        # memory/fliki_subtitle_presets.json (nessuno ha metadati di dimensione/descrizione
+        # esposti dall'API — nessun preset e' documentato come "piccolo"): DA CONFERMARE
+        # visivamente sul prossimo video reale generato per legamidiamore, e da cambiare qui se
+        # non e' quello giusto. Non tocca dosementale (resta "builtin-legacy-bold", lock Gael).
+        "subtitle_preset": "builtin-legacy-minimal",
     },
 }
 # Alias per compatibilita': codice/test esistenti che leggono CANALE_TARGET continuano a
@@ -716,7 +737,8 @@ class Apex7Orchestrator:
                          f"{VIDEO_MULTIPLO_MEDIANA}x la mediana del canale"),
         3: ("Script", "Critic score reale >= 7.5 (motore condiviso 11-APEX-7-CORE)"),
         4: ("Produzione", "Schema produzione-spec valido, scene reali da script.md"),
-        5: ("Pubblicazione", "SEO score reale (seo_score.py)"),
+        5: ("Pubblicazione", "SEO score reale (seo_score.py); upload reale via --upload "
+                              "(opt-in, altrimenti solo preparazione metadati)"),
         6: ("Audit", "Manifest published_videos.json (video reale pubblicato)"),
     }
 
@@ -997,6 +1019,7 @@ class Apex7Orchestrator:
             self.working_memory["video_sorgente_url"] = self.video_sorgente_url
             self.working_memory["video_sorgente_prefisso"] = re.sub(
                 r"[^a-zA-Z0-9_-]", "_", trovato["canale_origine"].lstrip("@")).lower()
+            self.working_memory["video_sorgente_handle"] = trovato["canale_origine"]
             self.working_memory["keyword_sorgente"] = keyword
             self.working_memory["label_scelta"] = "A-upside"
             return True
@@ -1400,27 +1423,38 @@ class Apex7Orchestrator:
         # arena_thumbnail.py allega questo file alla chat e chiede una modifica.
         video_id = self.working_memory.get("video_scelto_id", "")
         brief_path = os.path.join(TEMPLATES_DIR, "brief-miniatura.json")
-        source_rel = self._ensure_source_thumbnail(video_id)
-        overlay_lines = self._overlay_lines_from_title(idea_title)
-        brief = {
-            "title": idea_title,
-            "source_video_id": video_id,
-            "source_thumbnail": source_rel,
-            "source_style": "Copertina reale del video sorgente @dosementale, da adattare mantenendone "
-                            "il linguaggio visivo (vedi il file allegato).",
-            # Estratto tagliato a fine parola: "...fa bene al " troncato a meta' non dice nulla
-            # al modello che deve disegnare la scena.
-            "concept": f"scene inspired by the real hook ({hook_type}): "
-                       f"\"{hook_clean[:120].rsplit(' ', 1)[0].rstrip(',;:')}...\"",
-            # "pose" resta assente di proposito: la posa esatta del soggetto e' una scelta
-            # creativa che questo codice non puo' dedurre. arena_thumbnail.py, se manca, chiede
-            # di adattare l'illustrazione al tema partendo dal `concept`.
-            "text_overlay_lines": overlay_lines,
-            "text_overlay_highlight_lines": [overlay_lines[0], overlay_lines[-1]] if len(overlay_lines) > 1 else overlay_lines,
-        }
-        self.save_json(brief_path, brief)
-        val_brief = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "validate_schemas.py"), "brief-miniatura", brief_path], capture_output=True, text=True)
-        print(f"[🔬 ANALYST] Validazione brief miniatura: {val_brief.stdout.strip()}")
+        # --skip-thumbnail (richiesta Max, 2026-08-13): la copertina resta nel flusso ma e'
+        # opzionale per ora — priorita' piu' bassa di produzione/pubblicazione. Il resto della
+        # Fase 5 (metadati, tag, pubblicazione) procede comunque.
+        skip_thumbnail = getattr(self, "skip_thumbnail", False)
+        if skip_thumbnail:
+            print("[i] Step miniatura saltato (--skip-thumbnail): si procede senza brief reale.")
+        else:
+            source_rel = self._ensure_source_thumbnail(video_id)
+            overlay_lines = self._overlay_lines_from_title(idea_title)
+            # Handle del canale D'ORIGINE del video (puo' essere un competitor, non il canale di
+            # destinazione — vedi video_sorgente_handle in run_phase_2). Bug reale trovato il
+            # 2026-08-06: questo testo diceva sempre "@dosementale" a prescindere dal canale vero.
+            handle_sorgente = self.working_memory.get("video_sorgente_handle") or self.canale["handle"]
+            brief = {
+                "title": idea_title,
+                "source_video_id": video_id,
+                "source_thumbnail": source_rel,
+                "source_style": f"Copertina reale del video sorgente {handle_sorgente}, da adattare "
+                                "mantenendone il linguaggio visivo (vedi il file allegato).",
+                # Estratto tagliato a fine parola: "...fa bene al " troncato a meta' non dice nulla
+                # al modello che deve disegnare la scena.
+                "concept": f"scene inspired by the real hook ({hook_type}): "
+                           f"\"{hook_clean[:120].rsplit(' ', 1)[0].rstrip(',;:')}...\"",
+                # "pose" resta assente di proposito: la posa esatta del soggetto e' una scelta
+                # creativa che questo codice non puo' dedurre. arena_thumbnail.py, se manca, chiede
+                # di adattare l'illustrazione al tema partendo dal `concept`.
+                "text_overlay_lines": overlay_lines,
+                "text_overlay_highlight_lines": [overlay_lines[0], overlay_lines[-1]] if len(overlay_lines) > 1 else overlay_lines,
+            }
+            self.save_json(brief_path, brief)
+            val_brief = subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "validate_schemas.py"), "brief-miniatura", brief_path], capture_output=True, text=True)
+            print(f"[🔬 ANALYST] Validazione brief miniatura: {val_brief.stdout.strip()}")
 
         # --- Metadati: titolo/descrizione/tag reali, non piu' statici ---
         learned_rules = self.load_json(self.learned_rules_path, {})
@@ -1432,10 +1466,14 @@ class Apex7Orchestrator:
         # del competitor, non su performance proprie — l'unica fonte disponibile finche'
         # learned_rules.json resta vuoto (nessun video ancora pubblicato). Fino al 2026-08-05
         # questo studio esisteva solo su wiki, mai letto da una run automatica.
-        copy_intel = self.load_json(os.path.join(MEMORY_DIR, self.canale["copy_intelligence_file"]), {})
-        copy_intel_tags = [s["schema"].replace("_", " ") for s in copy_intel.get("schemi_favorevoli", [])]
+        # NOTA (bug reale trovato in test 2026-08-16): copy_intelligence*.json contiene ETICHETTE
+        # INTERNE di pattern di copy misurati ("segnali_espliciti", "comando_maiuscolo", ecc. —
+        # usati per scrivere titoli/hook efficaci), NON parole chiave cercabili su YouTube.
+        # Prima finivano dritte fra i tag reali ("comando maiuscolo" come tag: nessuno lo cerca
+        # su YouTube, inquina la tassonomia a 4 livelli senza aggiungere nulla di utile). Rimossi
+        # dai tag: restano solo fonti che sono keyword vere (temi canale, parole del titolo,
+        # keyword principale, tag ad alto rendimento storico).
         tag_candidates = (list(learned_rules.get("high_performing_tags", []))
-                          + copy_intel_tags
                           + self.canale["tag_tema"] + idea_tokens + [keyword])
         tags, seen = [], set()
         for t in tag_candidates:
@@ -1455,7 +1493,7 @@ class Apex7Orchestrator:
             "description": description,
             "tags": tags,
             "keyword": keyword,
-            "thumbnail": True,
+            "thumbnail": not skip_thumbnail,
             "subtitles": True
         }
         self.save_json(metadata_path, metadata)
@@ -1485,6 +1523,90 @@ class Apex7Orchestrator:
         self.working_memory["metadati_path"] = metadata_path
         self.working_memory["metadati_seo_score"] = seo_result.get("total")
         self.working_memory["brief_miniatura_path"] = brief_path
+
+        # --upload (opt-in, richiesta Max 2026-08-13): pubblicazione reale via Playwright,
+        # SEMPRE privata (visibilita' PRIVATE hardcoded in youtube_uploader_playwright.py, non
+        # negoziabile finche' Max non chiede esplicitamente il pubblico). Il file mp4 e' prodotto
+        # a monte da fliki_client.py (comando manuale, non ancora orchestrato automaticamente):
+        # --video-file deve puntare al file reale gia' scaricato.
+        if getattr(self, "upload_reale", False):
+            video_folder = getattr(self, "video_folder", None)
+            video_file = getattr(self, "video_file", None)
+
+            # Regola permanente Max 2026-08-18: MAI upload senza copertina reale. La copertina
+            # non e' piu' generata da arena_thumbnail.py/prompt AI — Max la mette a mano nella
+            # cartella dedicata del video (VIDEO-PRONTI/video-NN/). --skip-thumbnail salta solo
+            # il vecchio step di brief AI qui sopra, NON questo controllo: nessuna eccezione.
+            thumbnail_path = None
+            if video_folder:
+                if not os.path.isdir(video_folder):
+                    print(f"[!] ERRORE: --video-folder non trovata ('{video_folder}').")
+                    return False
+                if not video_file:
+                    candidato_video = os.path.join(video_folder, "video.mp4")
+                    if os.path.exists(candidato_video):
+                        video_file = candidato_video
+                for nome in sorted(os.listdir(video_folder)):
+                    if nome.lower().endswith((".png", ".jpg", ".jpeg", ".webp")):
+                        thumbnail_path = os.path.join(video_folder, nome)
+                        break
+
+            if not video_file or not os.path.exists(video_file):
+                print(f"[!] ERRORE: --upload richiesto ma nessun file mp4 valido trovato "
+                      f"('{video_file}'). Genera prima il video con fliki_client.py e passa "
+                      f"--video-folder (cartella con dentro video.mp4 e la copertina) o "
+                      f"--video-file esplicito.")
+                return False
+
+            if not thumbnail_path:
+                print(f"[!] ERRORE: nessuna copertina reale trovata in '{video_folder}'. "
+                      "Regola permanente: nessun upload senza copertina. Metti un'immagine "
+                      "(jpg/png/webp) nella cartella dedicata del video e riprova.")
+                return False
+
+            profile_name = self.canale.get("chrome_profile_dir")
+            # Nessun profilo autenticato per questo canale (es. dosementale oggi): path
+            # deliberatamente inesistente, fa scattare il fallback mock sicuro gia' presente in
+            # youtube_uploader_playwright.py invece di tentare un upload senza sessione.
+            profile_dir = (os.path.join(FACTORY_DIR, profile_name) if profile_name
+                            else os.path.join(MEMORY_DIR, "nessun_profilo_autenticato"))
+
+            print(f"[📤 PUBLISHER] Avvio upload reale via Playwright (profilo: {profile_dir})...")
+            upload_cmd = [sys.executable, os.path.join(SCRIPT_DIR, "youtube_uploader_playwright.py"),
+                          "--video", video_file, "--meta", metadata_path, "--profile", profile_dir,
+                          "--thumbnail", thumbnail_path]
+            upload_res = subprocess.run(upload_cmd, capture_output=True, text=True)
+            print(f"[📤 PUBLISHER] Output uploader:\n{upload_res.stdout.strip()}")
+            if upload_res.stderr:
+                print(f"[📤 PUBLISHER] Stderr uploader:\n{upload_res.stderr.strip()}")
+
+            upload_result = {}
+            for riga in reversed(upload_res.stdout.strip().splitlines()):
+                if riga.startswith("Risultato: "):
+                    try:
+                        upload_result = json.loads(riga[len("Risultato: "):])
+                    except ValueError:
+                        upload_result = {}
+                    break
+
+            if upload_result.get("status") == "success" and upload_result.get("video_id"):
+                manifest = self.load_json(PUBLISHED_VIDEOS_PATH, [])
+                manifest = [e for e in manifest if e.get("run_id") != self.run_id]
+                manifest.append({
+                    "run_id": self.run_id,
+                    "video_id": self.working_memory.get("produzione_video_id"),
+                    "url": upload_result.get("url"),
+                    "channel_handle": self.canale["handle"],
+                    "published_at": datetime.now().isoformat(),
+                })
+                self.save_json(PUBLISHED_VIDEOS_PATH, manifest)
+                print(f"[+] Upload reale completato — {upload_result.get('url')} (PRIVATO). "
+                      f"Registrato in {PUBLISHED_VIDEOS_PATH}.")
+            else:
+                print(f"[!] Upload non riuscito o ID reale non estratto: {upload_result}. "
+                      f"Nessuna scrittura in {PUBLISHED_VIDEOS_PATH} (dato reale non disponibile).")
+                return False
+
         return True
 
     # --- Fase 6: Audit ---
@@ -1571,12 +1693,33 @@ def main():
                     help="URL del video da replicare, gia' scelto a monte (es. dal calendario "
                          "contenuti) invece di farlo scegliere automaticamente alla Fase 2. "
                          "Deve essere gia' in una cache reale (youtube_hunter_playwright.py).")
+    ap.add_argument("--upload", action="store_true",
+                    help="Esegue l'upload reale su YouTube Studio via Playwright a fine Fase 5 "
+                         "(profilo autenticato del canale, visibilita' sempre PRIVATA). Default: "
+                         "NO, solo preparazione metadati come oggi. Richiede --video-file.")
+    ap.add_argument("--video-file", default=None,
+                    help="Path del file mp4 reale gia' prodotto e scaricato da fliki_client.py "
+                         "(es. 06-DASHBOARD-E-METRICHE/video-generati/<nome>.mp4). Ignorato se "
+                         "--video-folder e' passato (si usa <cartella>/video.mp4).")
+    ap.add_argument("--video-folder", default=None,
+                    help="Cartella dedicata del video (es. VIDEO-PRONTI/video-01/), con dentro "
+                         "video.mp4 e la copertina reale messa a mano da Max. Regola permanente "
+                         "2026-08-18: senza una copertina reale in questa cartella, --upload si "
+                         "rifiuta di procedere.")
+    ap.add_argument("--skip-thumbnail", action="store_true",
+                    help="Salta temporaneamente la generazione del brief AI/arena_thumbnail in "
+                         "Fase 5 (--upload non e' comunque possibile senza copertina reale in "
+                         "--video-folder: regola permanente 2026-08-18, nessuna eccezione).")
 
     args = ap.parse_args()
 
     orchestrator = Apex7Orchestrator(run_id=args.run_id, canale_id=args.canale,
                                      video_sorgente_url=args.video_sorgente)
-    
+    orchestrator.upload_reale = args.upload
+    orchestrator.video_file = args.video_file
+    orchestrator.video_folder = args.video_folder
+    orchestrator.skip_thumbnail = args.skip_thumbnail
+
     if args.cmd == "status":
         print(f"APEX-7 Orchestrator — Stato Run Corrente")
         print(f"  Run ID: {orchestrator.run_id}")

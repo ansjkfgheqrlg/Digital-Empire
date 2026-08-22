@@ -1,0 +1,18 @@
+{"ts": "2026-07-05T09:13:19+00:00", "event": "run_created", "source_url": "https://m.mobile.de/auto-inserat/mercedes-benz-cla-200-shooting-brake-automat-pano-nav-led-dist-mannheim/459633015.html?ref=seo&refId=cb916ebb-4bd0-784a-078c-f098936d186c&searchId=cb916ebb-4bd0-784a-078c-f098936d186c&type=ad"}
+{"ts": "2026-07-05T09:13:20+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:13:48+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-05T09:13:48+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:13:48+00:00", "event": "step", "step": "S2_parsing", "status": "done", "note": ""}
+{"ts": "2026-07-05T09:13:48+00:00", "event": "step", "step": "GATE_A", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:13:48+00:00", "event": "step", "step": "S3_translate_copy", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:13:48+00:00", "event": "step", "step": "S3_translate_copy", "status": "done", "note": ""}
+{"ts": "2026-07-05T09:13:48+00:00", "event": "step", "step": "GATE_B", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:13:48+00:00", "event": "step", "step": "S4_pricing", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:13:48+00:00", "event": "step", "step": "S4_pricing", "status": "done", "note": "Mercedes-Benz CLA 200 Shooting Brake CLA 200 SHOOTING BRAKE AUTOMAT+PANO+NAV+LED+DIST 22.240 €"}
+{"ts": "2026-07-05T09:13:48+00:00", "event": "step", "step": "GATE_C", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:13:48+00:00", "event": "step", "step": "S5_pdf_render", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:13:55+00:00", "event": "step", "step": "S5_pdf_render", "status": "done", "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260705-111319-459633015\\preventivo_mercedes-benz-cla-200-shooting-brake.pdf"}
+{"ts": "2026-07-05T09:13:56+00:00", "event": "step", "step": "GATE_D", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:13:58+00:00", "event": "step", "step": "GATE_IMG", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:14:01+00:00", "event": "step", "step": "GATE_R", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:24:51+00:00", "event": "run_created", "source_url": "https://x"}

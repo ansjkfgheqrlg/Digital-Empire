@@ -1,0 +1,12 @@
+{
+  "run_id": "AF-20260704-213349-459479745",
+  "source_url": "https://suchen.mobile.de/auto-inserat/hyundai-i20-fl-1-0-t-gdi-90-ps-6-mt-2wd-select-hamburg/459479745.html?lst=p",
+  "created_at": "2026-07-04T19:33:49+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "failed",
+      "at": "2026-07-04T19:35:55+00:00",
+      "note": "mobile.de: challenge Akamai non superata dopo più tentativi. Riprova tra poco (di solito passa con Google Chrome + IP residenziale/di casa), oppure usa il fallback: apri l'annuncio nel browser, salva la pagina come HTML e lancia run.py --manual <annuncio.html> <foto_dir>."
+    }
+  }
+}

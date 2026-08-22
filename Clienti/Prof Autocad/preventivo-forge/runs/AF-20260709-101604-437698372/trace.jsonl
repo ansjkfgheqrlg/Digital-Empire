@@ -1,0 +1,17 @@
+{"ts": "2026-07-09T08:16:04+00:00", "event": "run_created", "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=437698372&action=topOfPage&dam=false&ms=19000%3B%3B%3B&od=up&ref=seo&refId=5f11fca4-c297-bf68-7cae-e5512e9d126d&s=Car&sb=rel&searchId=5f11fca4-c297-bf68-7cae-e5512e9d126d&vc=Car"}
+{"ts": "2026-07-09T08:16:07+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-09T08:16:27+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-09T08:16:27+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-09T08:16:27+00:00", "event": "step", "step": "S2_parsing", "status": "done", "note": ""}
+{"ts": "2026-07-09T08:16:27+00:00", "event": "step", "step": "GATE_A", "status": "passed", "note": ""}
+{"ts": "2026-07-09T08:16:27+00:00", "event": "step", "step": "S3_translate_copy", "status": "running", "note": ""}
+{"ts": "2026-07-09T08:16:27+00:00", "event": "step", "step": "S3_translate_copy", "status": "done", "note": ""}
+{"ts": "2026-07-09T08:16:28+00:00", "event": "step", "step": "GATE_B", "status": "passed", "note": ""}
+{"ts": "2026-07-09T08:16:28+00:00", "event": "step", "step": "S4_pricing", "status": "running", "note": ""}
+{"ts": "2026-07-09T08:16:28+00:00", "event": "step", "step": "S4_pricing", "status": "done", "note": "Opel Grandland (X) EDITION Hybrid 145 A 30.789 €"}
+{"ts": "2026-07-09T08:16:28+00:00", "event": "step", "step": "GATE_C", "status": "passed", "note": ""}
+{"ts": "2026-07-09T08:16:28+00:00", "event": "step", "step": "S5_pdf_render", "status": "running", "note": ""}
+{"ts": "2026-07-09T08:16:36+00:00", "event": "step", "step": "S5_pdf_render", "status": "done", "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260709-101604-437698372\\preventivo_opel-grandland-x.pdf"}
+{"ts": "2026-07-09T08:16:37+00:00", "event": "step", "step": "GATE_D", "status": "passed", "note": ""}
+{"ts": "2026-07-09T08:16:37+00:00", "event": "step", "step": "GATE_IMG", "status": "passed", "note": ""}
+{"ts": "2026-07-09T08:16:38+00:00", "event": "step", "step": "GATE_R", "status": "passed", "note": ""}

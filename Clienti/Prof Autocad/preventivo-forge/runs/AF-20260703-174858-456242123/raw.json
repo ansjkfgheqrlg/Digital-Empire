@@ -1,0 +1,1712 @@
+{
+  "source_url": "https://suchen.mobile.de/auto-inserat/skoda-epiq-55-0-25-led-klima-dab-acc-shz-pdch-18-alu-gera/456242123.html?lst=p",
+  "scraped_at": "2026-07-03T15:49:07+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Neufahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "EPIQ"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "Essence"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Ab 15.11.2026"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "15 km"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "155 kW (211 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Elektromotor"
+      },
+      {
+        "label": "Anderer Energieträger",
+        "tag": "envkv.otherEnergySource",
+        "value": "Strom"
+      },
+      {
+        "label": "Batterie",
+        "tag": "battery",
+        "value": "inklusive"
+      },
+      {
+        "label": "Batteriekapazität (in kWh)",
+        "tag": "batteryCapacity",
+        "value": "56 kWh"
+      },
+      {
+        "label": "Ladedauer (11 kW)",
+        "tag": "chargingTime",
+        "value": "5 Std. 30 Min."
+      },
+      {
+        "label": "Schnellladezeit",
+        "tag": "chargingTimeFast",
+        "value": "24 Min."
+      },
+      {
+        "label": "Steckertypen",
+        "tag": "plugTypes",
+        "value": "Typ 1-Stecker, CCS- oder Combo-Stecker, SchuKo- und CEE-Stecker, Tesla-Supercharger, Typ 2-Stecker"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "13,7 kWh/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "0 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Elektrische Reichweite",
+        "tag": "envkv.electricalRange",
+        "value": "440 km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-A",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Stromverbrauch",
+        "tag": "envkv.consumptionDetails.power",
+        "value": [
+          "13,7 kWh/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro 7"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Hinten"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "Marbel-Grau"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grau"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Stoff, Grau"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "1.200 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "750 kg"
+      },
+      {
+        "label": "Stützlast",
+        "tag": "maxNoseWeight",
+        "value": "75 kg"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.636 kg"
+      },
+      {
+        "label": "Reichweite",
+        "tag": "range",
+        "value": "440 km"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": true
+    },
+    "shortTitle": "Skoda Epiq",
+    "subTitle": "55 *0,25*LED*KLIMA*DAB+*ACC*SHZ*PDCh*18\"ALU",
+    "makeKey": "Skoda",
+    "modelKey": "Epiq",
+    "isNew": false,
+    "batteryInformation": {
+      "wltpRange": {
+        "label": "Reichweite (WLTP)",
+        "value": "440 km",
+        "infoText": {
+          "headline": "Reichweite",
+          "text": "Die Reichweite eines Fahrzeugs mit vollständig geladener Batterie ist nur eine Schätzung. Die unter realen Bedingungen tatsächlich erzielbare Reichweite ist abhängig vom Fahrverhalten (Geschwindigkeit, Fahrzeugbeladung, Effizienz), den Wetter- und Straßenbedingungen, der verbleibenden Batteriekapazität und anderen Faktoren – und kann daher stark variieren."
+        }
+      },
+      "warrantyInfo": {
+        "label": "Garantie ab Erstzulassung",
+        "value": "8 Jahre oder 160.000 km",
+        "infoText": {
+          "headline": "Batterie-Garantie",
+          "text": "Die Garantie für eine E-Fahrzeug-Batterie sichert dem Käufer in der Regel zu, dass die Leistungsfähigkeit der Batterie nicht zu stark abbaut. Entweder über einen festgelegten Zeitraum (meist 8 Jahre) oder eine bestimmte Laufleistung (meist zw. 100.000 - 160.000 km). Oft wird ein Wert von 70 bis 80 Prozent der ursprünglichen Kapazität zugesichert. Je nach Hersteller gibt es größere Unterschiede. Erkundige dich daher direkt beim Verkäufer nach den konkreten Garantiebedingungen."
+        }
+      },
+      "batteryCapacity": {
+        "label": "Batteriekapazität (in kWh)",
+        "value": "56 kWh"
+      },
+      "chargingTimes": {
+        "label": "Ladezeit",
+        "fastDc": {
+          "label": "Schnellladen (DC, max 300 kW)",
+          "value": "24 Min.",
+          "infoText": {
+            "headline": "Öffentliches Laden (50 kW)",
+            "text": "Die Schnellladezeit für Elektrofahrzeuge wird hauptsächlich durch die maximale Ladegeschwindigkeit bestimmt, die sowohl vom bordeigenen Ladegerät des Fahrzeugs als auch durch die Ladestation abhängt. Je höher die kW-Leistung beim Laden, desto schneller die Aufladung der Batterie und desto kürzer die Ladedauer.\n\nDie Ladezeit ist allerdings auch abhängig von anderen Faktoren: dem Ladezustand der Batterie (je leerer die Batterie, desto höher die Ladeleistung), der Außentemperatur und ob an der gleichen Ladesäule noch ein weiteres Fahrzeug lädt."
+          }
+        },
+        "homeAc": {
+          "label": "Zu Hause (AC, 11 kW)",
+          "value": "5 Std. 30 Min.",
+          "infoText": {
+            "headline": "Aufladen zu Hause (11 kW)",
+            "text": "Wer den nötigen Platz hat, kann sein Elektrofahrzeug bequem zu Hause aufladen. Notwendig ist nur ein Platz auf dem Grundstück – Garage, Carport, Einfahrt – und eine Wallbox.\n\nEine Wallbox erzeugt eine höhere Ladeleistung als eine Haushaltssteckdose und lädt das Fahrzeug deutlich schneller. Die Leistung reicht von ca. 4 kW bis 22 kW – je höher die Leistung, desto kürzer die Ladezeit."
+          }
+        }
+      },
+      "chargingPlugTypes": {
+        "label": "Steckertypen",
+        "value": [
+          "Typ 2-Stecker",
+          "SchuKo- und CEE-Stecker",
+          "Tesla-Supercharger",
+          "Typ 1-Stecker",
+          "CCS- oder Combo-Stecker"
+        ],
+        "infoText": {
+          "headline": "Steckertypen",
+          "text": "Der Ladestecker verbindet das Ladekabel (bzw. das E-Fahrzeug) mit der Ladesäule. Es gibt verschiedene Typen für Ladestecker. Unterschiede gibt es hinsichtlich der Ladeleistung/-geschwindigkeit, der Kompatibilität oder der Stromart (Gleich- od. Wechselstrom). Die gebräuchlichsten Stecker: Typ 2-Stecker (für Wallboxen); CCS- oder Combo-Stecker und CHAdeMO-Stecker (beide für Gleichstrom-Schnellladesäulen); und der Schuko-Stecker (Haushaltssteckdose)."
+        }
+      }
+    },
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": true,
+    "hasElectricEngine": true,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Alarmanlage",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Ausparkassistent",
+      "Beheizbares Lenkrad",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Dachreling",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Frontantrieb",
+      "Garantie",
+      "Gepäckraumabtrennung",
+      "Geschwindigkeitsbegrenzer",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Isofix Beifahrersitz",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Navigationsvorbereitung",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Partikelfilter",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sommerreifen",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Winterpaket",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 459756,
+    "priceRating": {
+      "rating": "NO_RATING",
+      "ratingLabel": "Ohne Bewertung",
+      "noRatingReason": "mobile.de bewertet nur dann den Preis eines Fahrzeugs, wenn ausreichend viele Vergleichsdaten vorliegen. Ist dies nicht der Fall, kann mobile.de keine realistische Preisbewertung vornehmen."
+    },
+    "segment": "Car",
+    "title": "Skoda Epiq 55 *0,25*LED*KLIMA*DAB+*ACC*SHZ*PDCh*18\"ALU",
+    "url": "https://suchen.mobile.de/auto-inserat/skoda-epiq-55-0-25-led-klima-dab-acc-shz-pdch-18-alu-gera/456242123.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 456242123,
+    "price": {
+      "gross": "29.990 €",
+      "grossAmount": 29990,
+      "grossCurrency": "EUR",
+      "net": "25.202 €",
+      "netAmount": 25201.68,
+      "type": "FIXED",
+      "vat": "19% MwSt."
+    },
+    "customDimensions": {
+      "10": "silver",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "NA_NA_14_name_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "dealershipDetails": true
+    },
+    "htmlDescription": "<b>Für Privat- &amp; Gewerbekunden der neue Skoda Epiq 55 &quot;Essence&quot;<br><br></b><ul><li>8 Jahre Herstellergarantie auf die Hochvoltbatterie (oder max. 160.000 Kilometer)</li><li>2 Jahre Herstellergarantie auf das Fahrzeug</li></ul><hr><b>Brutto-Listenneupreis (am Tag der Erstzulassung): 34.030,00 Euro<br>∗profitieren Sie bei diesem Fahrzeug von der 0,25% Dienstwagenversteuerung.<br></b><br><br><ul><li><b>Farbe: </b>Marbel-Grau</li><li><b>Räder:</b> 18&quot; Leichtmetallfelgen Plover Schwarz Bereifung 225/50 R18</li><li><b>Interieur: </b>Loft Grau (Stoffausstattung Schwarz/Grau, Dachhimmel Grau)</li></ul><br><b>Ausstattungspaket:<br><br>Komfort:<br></b>Beheizbares Lenkrad mit Multifunktionstasten<br>Klimaanlage Climatronic (2-Zonen)<br>beheizbare Vordersitze<br>Brillenfach<br>Verkleidung für das Staufach unter dem variablen Ladeboden im Kofferraum<br>Sunset (Heckscheibe und hintere Seitenscheiben dunkel getönt)<br>7 Lautsprecher<br>Automatisch abblendbarer Innenspiegel<br><br><b>Serienausstattung:</b><br><br>Frontradarassistent (Front Assist)<br>Dachreling in Schwarz<br>Verkehrszeichenerkennung<br>Ambientebeleuchtung<br>Fernlichtassistent (Light Assist)<br>Aufmerksamkeits- und Müdigkeitserkennung mit Innenraumkamera<br>Notruffunktion eCall+<br><br><b>Sicherheits-, Funktions- und Komfortausstattung:</b><br><br>Airbag für Fahrer und Beifahrer mit Beifahrer-Airbag-Deaktivierung<br>Elektrisch einstell-, klapp- und beheizbare Außenspiegel<br>Elektrische Fensterheber vorn und hinten inklusive<br>Einklemmschutz und Kindersicherung<br>Wireless SmartLink (Android Auto, Apple CarPlay)<br>Diebstahlwarnanlage mit Innenraumüberwachung<br>Parksensoren hinten mit Rangierbremsfunkion<br>2 USB-Anschlüsse vorn<br>Adaptiver Abstandsassistent ACC<br>Rücksitzlehne geteilt umlegbar (60:40) mit Mittelarmlehne<br>Klimaanlage Climatronic (1-Zone)<br>LED-Hauptscheinwerfer<br>Variabler Ladeboden im Gepäckraum<br>Intelligenter Geschwindigkeitsassistent (ISA) und<br>Speedlimiter (Geschwindigkeitsbegrenzer)<br>Notladekabel (Mode-2-Ladekabel, Schuko, 10A)<br>Ladekabel für AC-Ladestationen (Mode-3-Ladekabel, Typ 2, 16A)<br>5 Lautsprecher<br>Infotainmentsystem<br>13&quot; Infotainmentdisplay<br>Seitenairbags vorn sowie Center-Airbag und Kopfairbags<br>Interieur aus Stoff, kombiniert mit hochwertigen Materialien<br>Höheneinstellbare Vordersitze<br>Kreuzungsassistent (Crossroad Assist)<br>Spurwechsel- und Ausparkassistent sowie Ausstiegswarner (Side Assist)<br>Spurhalteassistent (Lane Assist) und Notfallassistent (Emergency Assist)<br>12 Volt-Steckdose im Innenraum<br>Regensensor und Fahrlichtassistent (Easy Light Assist)<br>Zentralverriegelung und Easy Start sowie SAFE-Sicherung<br>Digitaler Radioempfang DAB+<br>Bluetooth Freisprecheinrichtung<br><br><b>Außenausstattung:</b><br><br>LED-Heckleuchten<br><br><b>Interieur:</b><br><br>Lenkrad mit Multifunktionstasten<br>Fußmatten<br>ISOFIX-Verankerung auf dem Beifahrersitz und<br>den äußeren Rücksitzen inklusive Top-Tether<br><hr><b>Wir nehmen Ihr Fahrzeug in Zahlung, auch wenn es noch finanziert ist.</b><br><b>Wir bieten Ihnen eine faire Finanzierung, auch ohne Anzahlung und mit kleiner Rate.</b><br><b>Günstige Versicherung direkt bei uns im Haus. Wir kümmern uns gern um die gesamte Abwicklung!</b><br><br>Zwischenverkauf und Irrtum sowie Eingabefehler, insbesondere zu den technischen Angaben und der beworbenen Ausstattung für dieses Angebot sind ausdrücklich vorbehalten. Die Fahrzeugbeschreibung dient lediglich der allgemeinen Identifizierung des Fahrzeuges und stellt keine Gewährleistung im kaufrechtlichen Sinne dar. Ausschlaggebend sind einzig und allein die Vereinbarungen in der Auftragsbestätigung oder im Kaufvertrag.<br><br>Bei Fragen zum exakten Ausstattungsumfang kontaktieren Sie uns bitte vorab.<br>Jede Anfrage wird kurzfristig per eMail oder telefonisch beantwortet!<br><br><b>Öffnungszeiten:</b><br>Mo - Fr 08:00 - 18:00 Uhr<br>Sa 08:00 - 13:00 Uhr<br>So 08:00 - 21:00 Uhr (Schautag)<br><br>Mehr Informationen unter www.Auto-Planet.de<br><br><b>Ihr Skoda Vertriebs-Team der Auto-Planet AG, Telefon 0365 / 43 68 10, Fahrzeugnummer: 123396</b>",
+    "contactInfo": {
+      "address1": "An der Beerweinschänke   3+5",
+      "address2": "DE-07554 Gera",
+      "name": "Auto-Planet AG",
+      "openingHours": [
+        {
+          "time": "07:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "08:00 Uhr - 13:00 Uhr",
+          "day": "Sa"
+        },
+        {
+          "time": "08:00 Uhr - 19:00 Uhr (Schautag)",
+          "day": "So"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 28.11.2002",
+      "rating": {
+        "count": 49,
+        "totalCount": 418,
+        "score": 4.9,
+        "scoreLocalized": "4,9",
+        "link": "https://www.mobile.de/bewertungen/AUTO-PLANET?lang=de",
+        "recommendationRate": 100,
+        "adRealityRate": 100,
+        "consultingScore": 4.875,
+        "friendlinessScore": 4.959183673469388,
+        "responseTimeScore": 4.877551020408164
+      },
+      "languages": "Deutsch, English",
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)365 436810",
+          "uri": "tel:+49365436810"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 365 4368160"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "Ihr Verkaufsteam",
+        "role": "der Auto-Planet AG"
+      },
+      "mapLink": "https://maps.google.com/maps?q=50.88484,12.13761+(Auto-Planet%20AG)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 50.88484,
+        "lon": 12.13761
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=459756",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae0950c2-cc60-4cab-b38e-7ba0c6f871b1?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae0950c2-cc60-4cab-b38e-7ba0c6f871b1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ae/ae0950c2-cc60-4cab-b38e-7ba0c6f871b1?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/ae/ae0950c2-cc60-4cab-b38e-7ba0c6f871b1?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae0950c2-cc60-4cab-b38e-7ba0c6f871b1?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/81/818feeda-86e0-4a21-a81e-021163bd90e4?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/81/818feeda-86e0-4a21-a81e-021163bd90e4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/81/818feeda-86e0-4a21-a81e-021163bd90e4?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/81/818feeda-86e0-4a21-a81e-021163bd90e4?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/81/818feeda-86e0-4a21-a81e-021163bd90e4?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/ab/aba0d8b0-0165-430d-8b54-d39c9299a5cc?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ab/aba0d8b0-0165-430d-8b54-d39c9299a5cc?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ab/aba0d8b0-0165-430d-8b54-d39c9299a5cc?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/ab/aba0d8b0-0165-430d-8b54-d39c9299a5cc?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ab/aba0d8b0-0165-430d-8b54-d39c9299a5cc?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/34/34e911d3-df40-4e29-835e-07aaf95f38e3?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/34/34e911d3-df40-4e29-835e-07aaf95f38e3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/34/34e911d3-df40-4e29-835e-07aaf95f38e3?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/34/34e911d3-df40-4e29-835e-07aaf95f38e3?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/34/34e911d3-df40-4e29-835e-07aaf95f38e3?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/fd/fd78c482-908b-4d3c-a23b-5a10e180066f?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fd/fd78c482-908b-4d3c-a23b-5a10e180066f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fd/fd78c482-908b-4d3c-a23b-5a10e180066f?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/fd/fd78c482-908b-4d3c-a23b-5a10e180066f?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fd/fd78c482-908b-4d3c-a23b-5a10e180066f?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/51/51ecb883-a6c8-462e-8907-9b5aa76a459c?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/51/51ecb883-a6c8-462e-8907-9b5aa76a459c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/51/51ecb883-a6c8-462e-8907-9b5aa76a459c?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/51/51ecb883-a6c8-462e-8907-9b5aa76a459c?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/51/51ecb883-a6c8-462e-8907-9b5aa76a459c?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "type": "Händler",
+      "numResultsTotal": 240,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=456242123&loanType=balloon&loanDuration=60&downPayment=5998&channel=desktop",
+      "type": "DF",
+      "flowType": "COMBINED",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 5998,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 23992,
+        "interestRateNominal": 5.83,
+        "interestRateEffective": 5.99,
+        "monthlyInstallment": 271.6,
+        "finalInstallment": 13495.5,
+        "totalInterest": 5527.83,
+        "totalAmount": 29519.83,
+        "localized": {
+          "downPayment": "5.998 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "23.992 €",
+          "interestRateNominal": "5,83%",
+          "interestRateEffective": "5,99%",
+          "monthlyInstallment": "272 €",
+          "finalInstallment": "13.495,50 €",
+          "totalInterest": "5.527,83 €",
+          "totalAmount": "29.519,83 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/02/021a0d94-5eb2-4c92-91e5-2e779ccd158d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/02/021a0d94-5eb2-4c92-91e5-2e779ccd158d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/02/021a0d94-5eb2-4c92-91e5-2e779ccd158d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/02/021a0d94-5eb2-4c92-91e5-2e779ccd158d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/02/021a0d94-5eb2-4c92-91e5-2e779ccd158d?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e6/e61d61f2-7575-461b-aab1-bf45cfdab7df?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e6/e61d61f2-7575-461b-aab1-bf45cfdab7df?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e6/e61d61f2-7575-461b-aab1-bf45cfdab7df?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e6/e61d61f2-7575-461b-aab1-bf45cfdab7df?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e6/e61d61f2-7575-461b-aab1-bf45cfdab7df?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bf/bfa71f9b-723e-4cd0-bc50-1fe8c8842778?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bf/bfa71f9b-723e-4cd0-bc50-1fe8c8842778?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bf/bfa71f9b-723e-4cd0-bc50-1fe8c8842778?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bf/bfa71f9b-723e-4cd0-bc50-1fe8c8842778?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/bf/bfa71f9b-723e-4cd0-bc50-1fe8c8842778?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/56/5623ff1a-d03e-4726-a7fc-1cafcb21fb2c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/56/5623ff1a-d03e-4726-a7fc-1cafcb21fb2c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/56/5623ff1a-d03e-4726-a7fc-1cafcb21fb2c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/56/5623ff1a-d03e-4726-a7fc-1cafcb21fb2c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/56/5623ff1a-d03e-4726-a7fc-1cafcb21fb2c?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d34293e-ee13-4e48-a64e-da7447b60c34?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d34293e-ee13-4e48-a64e-da7447b60c34?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1d/1d34293e-ee13-4e48-a64e-da7447b60c34?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1d/1d34293e-ee13-4e48-a64e-da7447b60c34?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d34293e-ee13-4e48-a64e-da7447b60c34?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e0b6dfe-f884-45f5-9e1c-6d6c463cbc39?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e0b6dfe-f884-45f5-9e1c-6d6c463cbc39?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4e/4e0b6dfe-f884-45f5-9e1c-6d6c463cbc39?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4e/4e0b6dfe-f884-45f5-9e1c-6d6c463cbc39?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e0b6dfe-f884-45f5-9e1c-6d6c463cbc39?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/dc/dc11da6d-5fdf-4178-8076-19aafccaa013?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/dc/dc11da6d-5fdf-4178-8076-19aafccaa013?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/dc/dc11da6d-5fdf-4178-8076-19aafccaa013?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/dc/dc11da6d-5fdf-4178-8076-19aafccaa013?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/dc/dc11da6d-5fdf-4178-8076-19aafccaa013?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98d900-ce8b-4d71-a464-e7b4d0115d2d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98d900-ce8b-4d71-a464-e7b4d0115d2d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98d900-ce8b-4d71-a464-e7b4d0115d2d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98d900-ce8b-4d71-a464-e7b4d0115d2d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98d900-ce8b-4d71-a464-e7b4d0115d2d?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c75b45c4-41d9-4d77-873d-03ab63cca24a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c75b45c4-41d9-4d77-873d-03ab63cca24a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c7/c75b45c4-41d9-4d77-873d-03ab63cca24a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c7/c75b45c4-41d9-4d77-873d-03ab63cca24a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c75b45c4-41d9-4d77-873d-03ab63cca24a?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/01/01fb2b67-ee78-454a-942b-8c7e618e9674?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/01/01fb2b67-ee78-454a-942b-8c7e618e9674?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/01/01fb2b67-ee78-454a-942b-8c7e618e9674?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/01/01fb2b67-ee78-454a-942b-8c7e618e9674?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/01/01fb2b67-ee78-454a-942b-8c7e618e9674?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4edc5f48-8492-4f94-8bf8-63c1f8a89cfa?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4edc5f48-8492-4f94-8bf8-63c1f8a89cfa?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4e/4edc5f48-8492-4f94-8bf8-63c1f8a89cfa?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4e/4edc5f48-8492-4f94-8bf8-63c1f8a89cfa?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4edc5f48-8492-4f94-8bf8-63c1f8a89cfa?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9b/9bdfe46c-5f7d-4760-b7b4-3a1727599d89?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9b/9bdfe46c-5f7d-4760-b7b4-3a1727599d89?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/9b/9bdfe46c-5f7d-4760-b7b4-3a1727599d89?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/9b/9bdfe46c-5f7d-4760-b7b4-3a1727599d89?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/9b/9bdfe46c-5f7d-4760-b7b4-3a1727599d89?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a89a128a-5cae-4fee-ab32-f8f818f2344f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a89a128a-5cae-4fee-ab32-f8f818f2344f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a8/a89a128a-5cae-4fee-ab32-f8f818f2344f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a8/a89a128a-5cae-4fee-ab32-f8f818f2344f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a89a128a-5cae-4fee-ab32-f8f818f2344f?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b8/b8864a0e-5243-4123-8c58-cc7df9d67ddc?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b8/b8864a0e-5243-4123-8c58-cc7df9d67ddc?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b8/b8864a0e-5243-4123-8c58-cc7df9d67ddc?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b8/b8864a0e-5243-4123-8c58-cc7df9d67ddc?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b8/b8864a0e-5243-4123-8c58-cc7df9d67ddc?rule=mo-80w",
+        "type": "image",
+        "alt": "Skoda Epiq"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/02/021a0d94-5eb2-4c92-91e5-2e779ccd158d?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/02/021a0d94-5eb2-4c92-91e5-2e779ccd158d?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=coshomepageworldcupleasingcontrol&client.abtests=cossrpsbsmodelimprovementsv1&client.abtests=cossrpcorerecommenderpopularfilterspopularfilters&client.abtests=accwebpublichomegaaa4off&adId=456242123"
+    },
+    "similarAdsInfo": {
+      "type": "similar-ads",
+      "apiParams": "/ml-recommendations-by-id/456242123"
+    },
+    "vehicleCondition": "new_order",
+    "make": "Skoda",
+    "model": "Epiq",
+    "leasingRate": {
+      "type": "PRIVATE",
+      "downPayment": 0,
+      "termOfContract": 48,
+      "annualMileage": 10000,
+      "grossRate": 287,
+      "leasingFactor": 0.84,
+      "netLoanAmount": 29990,
+      "totalAmount": 13776,
+      "destinationCharges": 1487.5,
+      "registrationFees": 240,
+      "extraMileageCosts": 9.16,
+      "lowMileageCompensation": 4.17
+    },
+    "leasingDetails": {
+      "grossListPrice": 34030,
+      "vatRate": 19,
+      "lender": " Skoda Leasing ZNL der VW Leasing GmbH, 38112 Braunschweig",
+      "rates": [
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 10000,
+          "grossRate": 371,
+          "leasingFactor": 1.09,
+          "netLoanAmount": 29990,
+          "totalAmount": 8904,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 10000,
+          "grossRate": 318,
+          "leasingFactor": 0.93,
+          "netLoanAmount": 29990,
+          "totalAmount": 11448,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 10000,
+          "grossRate": 287,
+          "leasingFactor": 0.84,
+          "netLoanAmount": 29990,
+          "totalAmount": 13776,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 12000,
+          "grossRate": 379,
+          "leasingFactor": 1.11,
+          "netLoanAmount": 29990,
+          "totalAmount": 9096,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 12000,
+          "grossRate": 326,
+          "leasingFactor": 0.96,
+          "netLoanAmount": 29990,
+          "totalAmount": 11736,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 12000,
+          "grossRate": 295,
+          "leasingFactor": 0.87,
+          "netLoanAmount": 29990,
+          "totalAmount": 14160,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 15000,
+          "grossRate": 389,
+          "leasingFactor": 1.14,
+          "netLoanAmount": 29990,
+          "totalAmount": 9336,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 15000,
+          "grossRate": 334,
+          "leasingFactor": 0.98,
+          "netLoanAmount": 29990,
+          "totalAmount": 12024,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 15000,
+          "grossRate": 303,
+          "leasingFactor": 0.89,
+          "netLoanAmount": 29990,
+          "totalAmount": 14544,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 20000,
+          "grossRate": 405,
+          "leasingFactor": 1.19,
+          "netLoanAmount": 29990,
+          "totalAmount": 9720,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 20000,
+          "grossRate": 349,
+          "leasingFactor": 1.03,
+          "netLoanAmount": 29990,
+          "totalAmount": 12564,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 20000,
+          "grossRate": 318,
+          "leasingFactor": 0.93,
+          "netLoanAmount": 29990,
+          "totalAmount": 15264,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 25000,
+          "grossRate": 427,
+          "leasingFactor": 1.25,
+          "netLoanAmount": 29990,
+          "totalAmount": 10248,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 25000,
+          "grossRate": 365,
+          "leasingFactor": 1.07,
+          "netLoanAmount": 29990,
+          "totalAmount": 13140,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 25000,
+          "grossRate": 341,
+          "leasingFactor": 1,
+          "netLoanAmount": 29990,
+          "totalAmount": 16368,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 30000,
+          "grossRate": 442,
+          "leasingFactor": 1.3,
+          "netLoanAmount": 29990,
+          "totalAmount": 10608,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 30000,
+          "grossRate": 379,
+          "leasingFactor": 1.11,
+          "netLoanAmount": 29990,
+          "totalAmount": 13644,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 30000,
+          "grossRate": 354,
+          "leasingFactor": 1.04,
+          "netLoanAmount": 29990,
+          "totalAmount": 16992,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 40000,
+          "grossRate": 478,
+          "leasingFactor": 1.4,
+          "netLoanAmount": 29990,
+          "totalAmount": 11472,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 40000,
+          "grossRate": 422,
+          "leasingFactor": 1.24,
+          "netLoanAmount": 29990,
+          "totalAmount": 15192,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 40000,
+          "grossRate": 379,
+          "leasingFactor": 1.11,
+          "netLoanAmount": 29990,
+          "totalAmount": 18192,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 9.16,
+          "lowMileageCompensation": 4.17
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 10000,
+          "netRate": 316,
+          "leasingFactor": 1.11,
+          "totalAmount": 7584,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 10000,
+          "netRate": 270,
+          "leasingFactor": 0.94,
+          "totalAmount": 9720,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 10000,
+          "netRate": 243,
+          "leasingFactor": 0.85,
+          "totalAmount": 11664,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 12000,
+          "netRate": 323,
+          "leasingFactor": 1.13,
+          "totalAmount": 7752,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 12000,
+          "netRate": 277,
+          "leasingFactor": 0.97,
+          "totalAmount": 9972,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 12000,
+          "netRate": 249,
+          "leasingFactor": 0.87,
+          "totalAmount": 11952,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 15000,
+          "netRate": 331,
+          "leasingFactor": 1.16,
+          "totalAmount": 7944,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 15000,
+          "netRate": 283,
+          "leasingFactor": 0.99,
+          "totalAmount": 10188,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 15000,
+          "netRate": 256,
+          "leasingFactor": 0.9,
+          "totalAmount": 12288,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 20000,
+          "netRate": 344,
+          "leasingFactor": 1.2,
+          "totalAmount": 8256,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 20000,
+          "netRate": 297,
+          "leasingFactor": 1.04,
+          "totalAmount": 10692,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 20000,
+          "netRate": 269,
+          "leasingFactor": 0.94,
+          "totalAmount": 12912,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 25000,
+          "netRate": 363,
+          "leasingFactor": 1.27,
+          "totalAmount": 8712,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 25000,
+          "netRate": 310,
+          "leasingFactor": 1.08,
+          "totalAmount": 11160,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 25000,
+          "netRate": 289,
+          "leasingFactor": 1.01,
+          "totalAmount": 13872,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 30000,
+          "netRate": 375,
+          "leasingFactor": 1.31,
+          "totalAmount": 9000,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 30000,
+          "netRate": 321,
+          "leasingFactor": 1.12,
+          "totalAmount": 11556,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 30000,
+          "netRate": 299,
+          "leasingFactor": 1.05,
+          "totalAmount": 14352,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 24,
+          "annualMileage": 40000,
+          "netRate": 405,
+          "leasingFactor": 1.42,
+          "totalAmount": 9720,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 40000,
+          "netRate": 358,
+          "leasingFactor": 1.25,
+          "totalAmount": 12888,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        },
+        {
+          "type": "COMMERCIAL",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 40000,
+          "netRate": 321,
+          "leasingFactor": 1.12,
+          "totalAmount": 15408,
+          "destinationCharges": 1487.5,
+          "registrationFees": 240,
+          "extraMileageCosts": 7.7,
+          "lowMileageCompensation": 3.5
+        }
+      ],
+      "specialConditions": {
+        "EV_BONUS": {
+          "customDealerText": "Förderung möglich, wenn Du die Voraussetzungen erfüllst und die Mindestlaufzeit/Haltedauer laut E‑Auto‑Förderrichtlinie einhältst. Kein Rechtsanspruch.",
+          "title": "E-Auto-Förderung",
+          "text": "Dieses Fahrzeug ist berechtigt für eine E-Auto-Förderung. Weitere Informationen findest du in den Hinweisen des Händlers.",
+          "adjustedRates": {
+            "36": {
+              "10000": {
+                "3000": 234.67,
+                "3500": 220.78,
+                "4000": 206.89,
+                "4500": 193,
+                "5000": 179.11,
+                "5500": 165.22,
+                "6000": 151.33
+              },
+              "12000": {
+                "3000": 242.67,
+                "3500": 228.78,
+                "4000": 214.89,
+                "4500": 201,
+                "5000": 187.11,
+                "5500": 173.22,
+                "6000": 159.33
+              },
+              "15000": {
+                "3000": 250.67,
+                "3500": 236.78,
+                "4000": 222.89,
+                "4500": 209,
+                "5000": 195.11,
+                "5500": 181.22,
+                "6000": 167.33
+              },
+              "20000": {
+                "3000": 265.67,
+                "3500": 251.78,
+                "4000": 237.89,
+                "4500": 224,
+                "5000": 210.11,
+                "5500": 196.22,
+                "6000": 182.33
+              },
+              "25000": {
+                "3000": 281.67,
+                "3500": 267.78,
+                "4000": 253.89,
+                "4500": 240,
+                "5000": 226.11,
+                "5500": 212.22,
+                "6000": 198.33
+              },
+              "30000": {
+                "3000": 295.67,
+                "3500": 281.78,
+                "4000": 267.89,
+                "4500": 254,
+                "5000": 240.11,
+                "5500": 226.22,
+                "6000": 212.33
+              },
+              "40000": {
+                "3000": 338.67,
+                "3500": 324.78,
+                "4000": 310.89,
+                "4500": 297,
+                "5000": 283.11,
+                "5500": 269.22,
+                "6000": 255.33
+              }
+            },
+            "48": {
+              "10000": {
+                "3000": 224.5,
+                "3500": 214.08,
+                "4000": 203.67,
+                "4500": 193.25,
+                "5000": 182.83,
+                "5500": 172.42,
+                "6000": 162
+              },
+              "12000": {
+                "3000": 232.5,
+                "3500": 222.08,
+                "4000": 211.67,
+                "4500": 201.25,
+                "5000": 190.83,
+                "5500": 180.42,
+                "6000": 170
+              },
+              "15000": {
+                "3000": 240.5,
+                "3500": 230.08,
+                "4000": 219.67,
+                "4500": 209.25,
+                "5000": 198.83,
+                "5500": 188.42,
+                "6000": 178
+              },
+              "20000": {
+                "3000": 255.5,
+                "3500": 245.08,
+                "4000": 234.67,
+                "4500": 224.25,
+                "5000": 213.83,
+                "5500": 203.42,
+                "6000": 193
+              },
+              "25000": {
+                "3000": 278.5,
+                "3500": 268.08,
+                "4000": 257.67,
+                "4500": 247.25,
+                "5000": 236.83,
+                "5500": 226.42,
+                "6000": 216
+              },
+              "30000": {
+                "3000": 291.5,
+                "3500": 281.08,
+                "4000": 270.67,
+                "4500": 260.25,
+                "5000": 249.83,
+                "5500": 239.42,
+                "6000": 229
+              },
+              "40000": {
+                "3000": 316.5,
+                "3500": 306.08,
+                "4000": 295.67,
+                "4500": 285.25,
+                "5000": 274.83,
+                "5500": 264.42,
+                "6000": 254
+              }
+            }
+          }
+        }
+      },
+      "dealType": "CLASSIC"
+    },
+    "leasingSpecialConditions": {
+      "EV_BONUS": {
+        "customDealerText": "Förderung möglich, wenn Du die Voraussetzungen erfüllst und die Mindestlaufzeit/Haltedauer laut E‑Auto‑Förderrichtlinie einhältst. Kein Rechtsanspruch.",
+        "title": "E-Auto-Förderung",
+        "text": "Dieses Fahrzeug ist berechtigt für eine E-Auto-Förderung. Weitere Informationen findest du in den Hinweisen des Händlers.",
+        "adjustedRates": {
+          "36": {
+            "10000": {
+              "3000": 234.67,
+              "3500": 220.78,
+              "4000": 206.89,
+              "4500": 193,
+              "5000": 179.11,
+              "5500": 165.22,
+              "6000": 151.33
+            },
+            "12000": {
+              "3000": 242.67,
+              "3500": 228.78,
+              "4000": 214.89,
+              "4500": 201,
+              "5000": 187.11,
+              "5500": 173.22,
+              "6000": 159.33
+            },
+            "15000": {
+              "3000": 250.67,
+              "3500": 236.78,
+              "4000": 222.89,
+              "4500": 209,
+              "5000": 195.11,
+              "5500": 181.22,
+              "6000": 167.33
+            },
+            "20000": {
+              "3000": 265.67,
+              "3500": 251.78,
+              "4000": 237.89,
+              "4500": 224,
+              "5000": 210.11,
+              "5500": 196.22,
+              "6000": 182.33
+            },
+            "25000": {
+              "3000": 281.67,
+              "3500": 267.78,
+              "4000": 253.89,
+              "4500": 240,
+              "5000": 226.11,
+              "5500": 212.22,
+              "6000": 198.33
+            },
+            "30000": {
+              "3000": 295.67,
+              "3500": 281.78,
+              "4000": 267.89,
+              "4500": 254,
+              "5000": 240.11,
+              "5500": 226.22,
+              "6000": 212.33
+            },
+            "40000": {
+              "3000": 338.67,
+              "3500": 324.78,
+              "4000": 310.89,
+              "4500": 297,
+              "5000": 283.11,
+              "5500": 269.22,
+              "6000": 255.33
+            }
+          },
+          "48": {
+            "10000": {
+              "3000": 224.5,
+              "3500": 214.08,
+              "4000": 203.67,
+              "4500": 193.25,
+              "5000": 182.83,
+              "5500": 172.42,
+              "6000": 162
+            },
+            "12000": {
+              "3000": 232.5,
+              "3500": 222.08,
+              "4000": 211.67,
+              "4500": 201.25,
+              "5000": 190.83,
+              "5500": 180.42,
+              "6000": 170
+            },
+            "15000": {
+              "3000": 240.5,
+              "3500": 230.08,
+              "4000": 219.67,
+              "4500": 209.25,
+              "5000": 198.83,
+              "5500": 188.42,
+              "6000": 178
+            },
+            "20000": {
+              "3000": 255.5,
+              "3500": 245.08,
+              "4000": 234.67,
+              "4500": 224.25,
+              "5000": 213.83,
+              "5500": 203.42,
+              "6000": 193
+            },
+            "25000": {
+              "3000": 278.5,
+              "3500": 268.08,
+              "4000": 257.67,
+              "4500": 247.25,
+              "5000": 236.83,
+              "5500": 226.42,
+              "6000": 216
+            },
+            "30000": {
+              "3000": 291.5,
+              "3500": 281.08,
+              "4000": 270.67,
+              "4500": 260.25,
+              "5000": 249.83,
+              "5500": 239.42,
+              "6000": 229
+            },
+            "40000": {
+              "3000": 316.5,
+              "3500": 306.08,
+              "4000": 295.67,
+              "4500": 285.25,
+              "5000": 274.83,
+              "5500": 264.42,
+              "6000": 254
+            }
+          }
+        }
+      }
+    },
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/skoda.html",
+            "name": "Skoda"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/skoda-epiq.html",
+            "name": "Epiq"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Skoda Epiq für 29.990 €",
+    "price_text": "Preis 29.990 € Ohne Bewertung 25.202 € (Netto) , 19% MwSt. Finanzierung Leasing Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich 287 € mtl. ( inkl. MwSt. 4 ) Anschaffungszweck Privat Gewerbe 4 Laufzeit ändern 48 Monate Fahrleistung ändern 10.000 km Anzahlung 0 € E-Auto-Förderung Dieses Fahrzeug ist berechtigt für eine E-Auto-Förderung. Weitere Informationen findest du in den Hinweisen des Händlers. Siehe auch 'Wichtige Hinweise des Händlers'. Leasingangebot anfragen Wichtige Hinweise des Händlers Leasingdetails Leasingbeispiel Nettodarlehensbetr. (Anschaffungspreis) 29.990 € Anzahlung 0 € Fahrleistung pro Jahr 10.000 km Laufzeit 48 Monate 48 Monatsraten à 287 € Leasing-Gesamtbetrag 13.776 € Zusätzliche Informationen Bruttolistenpreis 34.030 € Bereitstellungskosten 1.487,50 € Zulassungskosten 240 € Mehr-Kilometer-Kosten 9,16 Cent/km Minder-Kilometer-Vergütung 4,17 Cent/km Ein unverbindliches Leasingangebot der Skoda Leasing ZNL der VW Leasing GmbH, 38112 Braunschweig , Bonität vorausgesetzt . Die Angaben entsprechen zugleich dem 2/3 Beispiel nach §17 Abs. 4 PangV. Es besteht ein gesetzliches Widerrufsrecht für Verbraucher. 3 Diese Angaben gelten für das Angebot ohne Anzahlung. 4 Dieses Angebot richtet sich nur an Kunden in Deutschland.",
+    "attributes": {
+      "Fahrzeugzustand": "Neufahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Baureihe": "EPIQ",
+      "Ausstattungslinie": "Essence",
+      "Verfügbarkeit": "Ab 15.11.2026",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "15 km",
+      "Leistung": "155 kW (211 PS)",
+      "Antriebsart": "Elektromotor",
+      "Anderer Energieträger": "Strom",
+      "Batterie": "inklusive",
+      "Batteriekapazität (in kWh)": "56 kWh",
+      "Ladedauer (11 kW)": "5 Std. 30 Min.",
+      "Schnellladezeit": "24 Min.",
+      "Steckertypen": "Typ 1-Stecker, CCS- oder Combo-Stecker, SchuKo- und CEE-Stecker, Tesla-Supercharger, Typ 2-Stecker",
+      "Energieverbrauch (komb.) 2": "13,7 kWh/100km",
+      "CO₂-Emissionen (komb.) 2": "0 g/km",
+      "Elektrische Reichweite 2": "440 km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Stromverbrauch 2": "13,7 kWh/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro 7",
+      "Umweltplakette": "4 (Grün)",
+      "Klimatisierung": "Klimaautomatik",
+      "Einparkhilfe": "Hinten",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "Marbel-Grau",
+      "Farbe": "Grau",
+      "Innenausstattung": "Stoff, Grau",
+      "Anhängelast gebremst": "1.200 kg",
+      "Anhängelast ungebremst": "750 kg",
+      "Stützlast": "75 kg",
+      "Gewicht": "1.636 kg",
+      "Reichweite": "440 km",
+      "Nettodarlehensbetr. (Anschaffungspreis)": "29.990 €",
+      "Anzahlung": "0 €",
+      "Fahrleistung pro Jahr": "10.000 km",
+      "Laufzeit": "48 Monate",
+      "48 Monatsraten à": "287 €",
+      "Leasing-Gesamtbetrag": "13.776 €",
+      "Bruttolistenpreis": "34.030 €",
+      "Bereitstellungskosten": "1.487,50 €",
+      "Zulassungskosten": "240 €",
+      "Mehr-Kilometer-Kosten": "9,16 Cent/km",
+      "Minder-Kilometer-Vergütung": "4,17 Cent/km"
+    },
+    "description": "Neufahrzeug, Unfallfrei • 15 km • 155 kW (211 PS) • Automatik",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/02/021a0d94-5eb2-4c92-91e5-2e779ccd158d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e6/e61d61f2-7575-461b-aab1-bf45cfdab7df?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bf/bfa71f9b-723e-4cd0-bc50-1fe8c8842778?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/56/5623ff1a-d03e-4726-a7fc-1cafcb21fb2c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d34293e-ee13-4e48-a64e-da7447b60c34?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e0b6dfe-f884-45f5-9e1c-6d6c463cbc39?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/dc/dc11da6d-5fdf-4178-8076-19aafccaa013?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98d900-ce8b-4d71-a464-e7b4d0115d2d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c7/c75b45c4-41d9-4d77-873d-03ab63cca24a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/01/01fb2b67-ee78-454a-942b-8c7e618e9674?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4e/4edc5f48-8492-4f94-8bf8-63c1f8a89cfa?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9b/9bdfe46c-5f7d-4760-b7b4-3a1727599d89?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a8/a89a128a-5cae-4fee-ab32-f8f818f2344f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b8/b8864a0e-5243-4123-8c58-cc7df9d67ddc?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/02/021a0d94-5eb2-4c92-91e5-2e779ccd158d?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e6/e61d61f2-7575-461b-aab1-bf45cfdab7df?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/bf/bfa71f9b-723e-4cd0-bc50-1fe8c8842778?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/56/5623ff1a-d03e-4726-a7fc-1cafcb21fb2c?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d34293e-ee13-4e48-a64e-da7447b60c34?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e0b6dfe-f884-45f5-9e1c-6d6c463cbc39?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/dc/dc11da6d-5fdf-4178-8076-19aafccaa013?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98d900-ce8b-4d71-a464-e7b4d0115d2d?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c75b45c4-41d9-4d77-873d-03ab63cca24a?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/01/01fb2b67-ee78-454a-942b-8c7e618e9674?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/4e/4edc5f48-8492-4f94-8bf8-63c1f8a89cfa?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/9b/9bdfe46c-5f7d-4760-b7b4-3a1727599d89?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a89a128a-5cae-4fee-ab32-f8f818f2344f?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b8/b8864a0e-5243-4123-8c58-cc7df9d67ddc?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

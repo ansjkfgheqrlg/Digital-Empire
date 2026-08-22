@@ -1,0 +1,22 @@
+{
+  "run_id": "AF-20260701-160400-456259857",
+  "source_url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-gla-220-d-4m-amg-sport-pano-ahk-night-mbeam-cam-schwelm/456259857.html",
+  "created_at": "2026-07-01T14:04:00+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "done",
+      "at": "2026-07-01T14:04:32+00:00",
+      "note": ""
+    },
+    "S2_parsing": {
+      "status": "warning",
+      "at": "2026-07-01T14:04:32+00:00",
+      "note": "raw_specs/Kraftstoffverbrauch: ['6,1 l/100km (kombiniert)', '7,6 l/100km (Innenstadt)', '6,1 l/100km (Stadtrand)', '5,3 l/100km (Landstraße)', '6,2 l/100km (Autobahn)'] is not of type 'string', 'number', 'boolean', 'null'; scrape_method: 'chrome-cdp' is not one of ['playwright', 'manual']"
+    },
+    "GATE_A": {
+      "status": "blocked",
+      "at": "2026-07-01T14:04:32+00:00",
+      "note": "schema: raw_specs/Kraftstoffverbrauch: ['6,1 l/100km (kombiniert)', '7,6 l/100km (Innenstadt)', '6,1 l/100km (Stadtrand)', '5,3 l/100km (Landstraße)', '6,2 l/100km (Autobahn)'] is not of type 'string', 'number', 'boolean', 'null'; schema: scrape_method: 'chrome-cdp' is not one of ['playwright', 'manual']"
+    }
+  }
+}

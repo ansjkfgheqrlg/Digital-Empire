@@ -1,0 +1,815 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=458285379&sb=rel&od=up&vc=Car&dam=false&fr=2018&ml=%3A80000&ms=16700%3B%3B%3B&ms=4%3B%3B%3B&ms=1700%3B%3B%3B&ms=1900%3B%3B%3B&ms=3100%3B%3B%3B&ms=3500%3B%3B%3B&ms=4700%3B%3B%3B&ms=8600%3B%3B%3B&ms=270%3B%3B%3B&ms=14600%3B%3B%3B&ms=12400%3B%3B%3B&ms=11650%3B%3B%3B&ms=14800%3B%3B%3B&ms=15200%3B%3B%3B&ms=15500%3B%3B%3B&ms=15900%3B%3B%3B&ms=16600%3B%3B%3B&ms=17200%3B%3B%3B&ms=20100%3B%3B%3B&ms=21600%3B%3B%3B&ms=137%3B%3B%3B&p=35000&pa=CAM_360_DEGREES&pa=REAR_VIEW_CAM&pageNumber=4&s=Car&ref=srp&searchId=0cf3070c-8b31-10e5-6da7-3ca8818eecbe&refId=0cf3070c-8b31-10e5-6da7-3ca8818eecbe",
+  "scraped_at": "2026-07-06T18:33:25+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug"
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Limousine"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "8YS"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "2.5 TFSI quattro"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "62.000 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "2.480 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "294 kW (400 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "7,5 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "188 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-A",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "7,5 l/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6d-TEMP"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "02/2022"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "4-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Vorne, Selbstlenkende Systeme, Hinten, Kamera"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "VERDE MANTIS"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grün"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Vollleder, Andere"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.650 kg"
+      },
+      {
+        "label": "Letzte Wartung (Datum)",
+        "tag": "lastMaintenanceDate",
+        "value": "02/2026"
+      },
+      {
+        "label": "Letzte Wartung (km)",
+        "tag": "lastMaintenanceMileage",
+        "value": "62.000 km"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "5"
+      },
+      {
+        "label": "Tankgröße",
+        "tag": "fuelTankVolume",
+        "value": "55 l"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Audi RS3",
+    "subTitle": "Limosine 2.5 TFSI*RS-Abgas*Matrix*Kamera*B&O",
+    "makeKey": "Audi",
+    "modelKey": "RS3",
+    "isNew": true,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandstempomat",
+      "Abstandswarner",
+      "Adaptives Fahrwerk",
+      "Adaptives Kurvenlicht",
+      "Alarmanlage",
+      "Allradantrieb",
+      "Allwetterreifen",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Ausparkassistent",
+      "Berganfahrassistent",
+      "Blendfreies Fernlicht",
+      "Bluetooth",
+      "Bordcomputer",
+      "CD-Spieler",
+      "Dachreling",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Geschwindigkeitsbegrenzer",
+      "Induktionsladen für Smartphones",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Isofix Beifahrersitz",
+      "Laserlicht",
+      "Lederlenkrad",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Luftfederung",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Navigationssystem",
+      "Nebelscheinwerfer",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Partikelfilter",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Scheckheftgepflegt",
+      "Scheinwerferreinigung",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Skisack",
+      "Soundsystem",
+      "Sportfahrwerk",
+      "Sportpaket",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "TV",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Winterpaket",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "1-Hand / Bremsen neu",
+      "Inzahlungnahme",
+      "RS Sport-Auspuffanlage"
+    ],
+    "sellerId": 17035765,
+    "priceRating": {
+      "rating": "GOOD_PRICE",
+      "ratingLabel": "Guter Preis",
+      "thresholdLabels": [
+        "37.500 €",
+        "48.700 €",
+        "52.400 €",
+        "58.300 €",
+        "62.600 €",
+        "69.600 €"
+      ],
+      "vehiclePriceOffset": 35
+    },
+    "segment": "Car",
+    "title": "Audi RS3 Limosine 2.5 TFSI*RS-Abgas*Matrix*Kamera*B&O",
+    "url": "https://suchen.mobile.de/auto-inserat/audi-rs3-limosine-2-5-tfsi-rs-abgas-matrix-kamera-b-o-lehrte/458285379.html",
+    "vc": "Car",
+    "category": "Limousine",
+    "id": 458285379,
+    "price": {
+      "gross": "49.999 €",
+      "grossAmount": 49999,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "kba": {
+      "hsn": "1860",
+      "tsn": "ABF"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_logo_20_name_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Angeboten wird hier ein sehr gepflegter und sportlicher Audi RS3 als Limousine mit 400 PS und 7-Gang S-tronic.<br><br>RS-Sportabgasanlage ab Werk.<br><br>Komplette Bremsanlage neu (Vorne &amp; Hinten).<br><br>Audi Scheckheft gepflegt.<br><br>1-Hand.<br><br>Deutsches Fahrzeug.<br><br>TÜV/AU bis 02/2027.<br><br>Nichtraucher.<br><br>Keine Tiere.<br><br>Sonderausstattung:</b><br>Audi Drive Select + Fahrwerk mit Dämpferregelung (Magnetic Ride), Audi Smartphone Interface, Außenspiegel elektr. verstell-, heiz- und anklappbar, mit Abblendautomatik und Bordsteinautomatik, Bluetooth-Freisprecheinrichtung mit Spracherkennung (Audi Phone Box), Bremssättel Rot lackiert, Dachkuppel Kontrastfarbe, Design-Paket: RS grün, erweitert (plus), Fahrassistenz-System: Insassen-Schutzsystem (Audi pre sense basic), Fahrassistenz-System: Spurwechselassistent (Side Assist) mit Ausstiegswarnung und Querverkehrs-Assistent, Innenspiegel mit Abblendautomatik, Kindersicherung elektr. betätigt, Komfortschlüssel mit sensorgesteuerter Heckklappenentriegelung und Diebstahl-Warnanlage, LM-Felgen vorn/hinten: 9x19 / 8x19 (5-Y-Speichen, schwarz matt), Matrix-LED-Scheinwerfer, Optik-Paket schwarz plus, RS Exterieur-Paket Schwarz glänzend, Rückfahrkamera, Sitzbelegungserkennung für Sicherheitsgurte, Sitzheizung vorn, Sonderlackierung Kyalami-Grün, Sound-System Bang &amp; Olufsen, Sport-Auspuffanlage, Verglasung hinten abgedunkelt (Privacyverglasung)<br><br><b>Weitere Ausstattung:</b><br>Ablage- und Gepäckraum-Paket, Adaptives Bremslicht, Airbag Beifahrerseite abschaltbar, Airbag Fahrer-/Beifahrerseite, Antriebs-Schlupfregelung (ASR) mit EDS, Audi connect (Notruf- und Assistance-System), Audi Drive Select, Außenspiegel schwarz, Blinkleuchten LED in Außenspiegel integriert, Dachhimmel Stoff, schwarz, Einparkhilfe vorn und hinten, akustisch und optisch mit selektiver Anzeige (APS Plus), Einstiegsleisten mit Aluminiumeinlage und Schriftzug, beleuchtet, Einstiegsleuchten LED mit Projektionsfunktion, Fahrassistenz-System: Ausweich-Assistent, Fahrassistenz-System: Bremsassistent (Audi pre sense front), Fahrassistenz-System: Bremsassistent (Folgekollision), Fahrassistenz-System: Parklenkassistent, Fahrassistenz-System: Spurverlassenswarnung, Fahrer-Informations-System (FIS) mit Farbdisplay, Frontscheibe Akustikglas, Gepäckraumabdeckung / Rollo, Geschwindigkeits-Begrenzeranlage, Heckklappenöffnung automatisch, Heckleuchten LED mit dynamischem Blinklicht, Heckspoiler, Innenausstattung: Aluminium-Optik, Innenausstattung: Dekoreinlagen Carbon Atlas, Isofix-Aufnahmen für Kindersitz, Karosserie: 4-türig, Kombiinstrument digital (virtual cockpit plus) mit RS-Design, Komfort-Klimaautomatik 2-Zonen, Kontur / Ambientebeleuchtungs-Paket (plus), Kopf-Airbag-System (Sideguard), Kopfstützen hinten (3-fach), Kotflügelverbreiterung, Lenkrad (Sport/Leder - 3-Speichen, unten abgeflacht) mit Multifunktion plus und Schaltfunktion, Motor 2,5 Ltr. - 294 kW 20V TFSI, Multi-Media-Interface MMI Basic Plus / MMI Radio Plus, Nichtraucher-Paket, Optik-Paket schwarz, Pedale und Fußstütze in Edelstahl, Progressivlenkung, Radioempfang digital (DAB), Reifen-Reparaturkit, Reifenkontroll-Anzeige, RS-Frontstoßfänger Sport-Design, RS-Sportsitze vorn, Rücksitzlehne geteilt/klappbar (40:20:40), Schadstoffarm nach Abgasnorm Euro 6d, Schalt-/Wählhebelgriff Alcantara / Mikrofaser, Seitenairbag vorn, Seitenairbag vorn mitte (Interaktionsairbag), Sitze vorn manuell einstellbar, Start/Stop-Anlage, Steckdose (12V-Anschluß) im Fond (Mittelkonsole), Stoßfänger Sport-Design mit Diffusoreinsatz hinten, Türverkleidungseinsätze in Alcantara, Universal-Schnittstelle Bluetooth<br><br>, App-Connect Wireless (Apple CarPlay, Android Auto, MirrorLink), Innenspiegel automatisch abblendend, Sitzheizung vorn<br><br><b>Telefonischer Kontakt: 0175 88 16 305<br>E-Mail: schlueter-automobile@web.de<br></b><br><b>Wir bitten um Ihr Verständnis, dass Irrtümer, Eingabefehler sowie Zwischenverkauf vorbehalten sind.<br><br>- Wir bieten auch einen fairen KFZ-Ankauf Ihres Fahrzeugs an, auch wenn Sie bei uns nicht Ihren &quot;neuen&quot; Gebrauchten gefunden haben. Verkauf im Kundenauftrag.<br></b><br>- <b>Inzahlungnahme von Fahrzeugen ebenfalls möglich.<br><br>- Gerne rechnen wir Ihnen auch ein individuelles Finanzierungsangebot.<br><br>- Finanzierung auch ohne Anzahlung möglich.<br></b><br><b>Bei Fahrzeugbesichtigung bitten wir Sie um vorherige Terminvereinbarung!</b><br><b>Telefonische Erreichbarkeit täglich von 08.00-20.00Uhr.</b><br>",
+    "contactInfo": {
+      "address1": "Im Tiefenbruch 2",
+      "address2": "DE-31275 Lehrte",
+      "name": "Autowelt Schlüter",
+      "markingText": "<p>Herzlich Willkommen bei der Autowelt Schlüter. Unser kompetentes Team steht Ihnen bei jeglichen Fragen zur Seite und hilft Ihnen, Ihr Traumauto zu finden. Schauen Sie gerne in unseren Bestand von über 80 verschiedenen gepflegten Gebrauchtwagen. Vereinbaren Sie gerne noch heute einen Termin zur Besichtigung und Probefahrt. Ihr altes Fahrzeug bewerten wir gerne und machen Ihnen einen fairen Ankaufspreis.</p>",
+      "openingHours": [
+        {
+          "day": "Mo - Fr",
+          "time": "10:00 Uhr - 18:00 Uhr"
+        },
+        {
+          "day": "Sa",
+          "time": "10:00 Uhr - 14:00 Uhr"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 06.10.2017",
+      "rating": {
+        "count": 16,
+        "totalCount": 93,
+        "score": 4.9,
+        "scoreLocalized": "4,9",
+        "link": "https://www.mobile.de/bewertungen/SCHLUETERAUTOMOBILE?lang=de",
+        "recommendationRate": 100,
+        "adRealityRate": 100,
+        "consultingScore": 4.9375,
+        "friendlinessScore": 4.9375,
+        "responseTimeScore": 4.75
+      },
+      "languages": "Deutsch, English, Polski",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/52/5279bcf9-2860-4477-a3ce-7c4f88d02950?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/52/5279bcf9-2860-4477-a3ce-7c4f88d02950?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/52/5279bcf9-2860-4477-a3ce-7c4f88d02950?rule=mo-360 360w",
+        "alt": "Autowelt Schlüter"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "Mobil",
+          "number": "+49 (0)1523 6809451",
+          "uri": "tel:+4915236809451"
+        },
+        {
+          "type": "Mobil",
+          "number": "+49 (0)1512 6380545",
+          "uri": "tel:+4915126380545"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "Maurice Schlüter",
+        "role": "Inhaber"
+      },
+      "mapLink": "https://maps.google.com/maps?q=52.3859173,9.9674198+(Autowelt%20Schl%C3%BCter)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 52.3859173,
+        "lon": 9.9674198
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=17035765",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa7f3613-1c58-45b6-8363-17135dd99894?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa7f3613-1c58-45b6-8363-17135dd99894?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fa/fa7f3613-1c58-45b6-8363-17135dd99894?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/fa/fa7f3613-1c58-45b6-8363-17135dd99894?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa7f3613-1c58-45b6-8363-17135dd99894?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe83b507-54e5-4e3b-8a3c-de2b37dd8b89?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe83b507-54e5-4e3b-8a3c-de2b37dd8b89?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fe/fe83b507-54e5-4e3b-8a3c-de2b37dd8b89?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/fe/fe83b507-54e5-4e3b-8a3c-de2b37dd8b89?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe83b507-54e5-4e3b-8a3c-de2b37dd8b89?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/0c/0cdb98cd-c0e3-4a53-90e8-90caca24e892?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/0c/0cdb98cd-c0e3-4a53-90e8-90caca24e892?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/0c/0cdb98cd-c0e3-4a53-90e8-90caca24e892?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/0c/0cdb98cd-c0e3-4a53-90e8-90caca24e892?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/0c/0cdb98cd-c0e3-4a53-90e8-90caca24e892?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0485229-3543-4ee5-b9a2-ca10685967a4?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0485229-3543-4ee5-b9a2-ca10685967a4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c0/c0485229-3543-4ee5-b9a2-ca10685967a4?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/c0/c0485229-3543-4ee5-b9a2-ca10685967a4?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0485229-3543-4ee5-b9a2-ca10685967a4?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a16304e3-51b9-4d03-a632-1cab4f3ad3de?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a16304e3-51b9-4d03-a632-1cab4f3ad3de?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a1/a16304e3-51b9-4d03-a632-1cab4f3ad3de?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a1/a16304e3-51b9-4d03-a632-1cab4f3ad3de?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 75,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=458285379&loanType=balloon&loanDuration=60&downPayment=9999&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 9999,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 40000,
+        "interestRateNominal": 6.3,
+        "interestRateEffective": 6.49,
+        "monthlyInstallment": 465.65,
+        "finalInstallment": 22499.55,
+        "totalInterest": 9972.76,
+        "totalAmount": 49972.76,
+        "localized": {
+          "downPayment": "9.999 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "40.000 €",
+          "interestRateNominal": "6,30%",
+          "interestRateEffective": "6,49%",
+          "monthlyInstallment": "466 €",
+          "finalInstallment": "22.499,55 €",
+          "totalInterest": "9.972,76 €",
+          "totalAmount": "49.972,76 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/89/89cc93ef-5132-4c7f-942a-e5c075083ae3?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/89/89cc93ef-5132-4c7f-942a-e5c075083ae3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/89/89cc93ef-5132-4c7f-942a-e5c075083ae3?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/89/89cc93ef-5132-4c7f-942a-e5c075083ae3?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/89/89cc93ef-5132-4c7f-942a-e5c075083ae3?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2e6f8b-4d3b-4c37-949e-cd3f43885549?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2e6f8b-4d3b-4c37-949e-cd3f43885549?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2e6f8b-4d3b-4c37-949e-cd3f43885549?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2e6f8b-4d3b-4c37-949e-cd3f43885549?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2e6f8b-4d3b-4c37-949e-cd3f43885549?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/65/65f88c86-19ea-4a8e-85fc-fe9a254a93cc?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/65/65f88c86-19ea-4a8e-85fc-fe9a254a93cc?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/65/65f88c86-19ea-4a8e-85fc-fe9a254a93cc?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/65/65f88c86-19ea-4a8e-85fc-fe9a254a93cc?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/65/65f88c86-19ea-4a8e-85fc-fe9a254a93cc?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d1bd37f-e7e8-4a0c-b008-d23250856dbd?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d1bd37f-e7e8-4a0c-b008-d23250856dbd?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/9d/9d1bd37f-e7e8-4a0c-b008-d23250856dbd?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/9d/9d1bd37f-e7e8-4a0c-b008-d23250856dbd?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d1bd37f-e7e8-4a0c-b008-d23250856dbd?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7682338-3096-468b-8767-427e48286083?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7682338-3096-468b-8767-427e48286083?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e7/e7682338-3096-468b-8767-427e48286083?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e7/e7682338-3096-468b-8767-427e48286083?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7682338-3096-468b-8767-427e48286083?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/83/835ed6b9-d4da-4db7-a403-72278a115c03?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/83/835ed6b9-d4da-4db7-a403-72278a115c03?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/83/835ed6b9-d4da-4db7-a403-72278a115c03?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/83/835ed6b9-d4da-4db7-a403-72278a115c03?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/83/835ed6b9-d4da-4db7-a403-72278a115c03?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7af74fc-072a-49ad-8077-6ed109844898?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7af74fc-072a-49ad-8077-6ed109844898?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f7/f7af74fc-072a-49ad-8077-6ed109844898?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f7/f7af74fc-072a-49ad-8077-6ed109844898?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7af74fc-072a-49ad-8077-6ed109844898?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b24153b-dc52-4bd5-ac65-93186a6476ef?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b24153b-dc52-4bd5-ac65-93186a6476ef?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1b/1b24153b-dc52-4bd5-ac65-93186a6476ef?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1b/1b24153b-dc52-4bd5-ac65-93186a6476ef?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b24153b-dc52-4bd5-ac65-93186a6476ef?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b17b122d-174c-4f08-9303-72f999b4403b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b17b122d-174c-4f08-9303-72f999b4403b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b1/b17b122d-174c-4f08-9303-72f999b4403b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b1/b17b122d-174c-4f08-9303-72f999b4403b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b17b122d-174c-4f08-9303-72f999b4403b?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/70/70bfbde6-4a45-492f-aa05-696966330191?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/70/70bfbde6-4a45-492f-aa05-696966330191?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/70/70bfbde6-4a45-492f-aa05-696966330191?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/70/70bfbde6-4a45-492f-aa05-696966330191?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/70/70bfbde6-4a45-492f-aa05-696966330191?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ea62f4-9f39-4067-ab4e-3e19fe502535?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ea62f4-9f39-4067-ab4e-3e19fe502535?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ea62f4-9f39-4067-ab4e-3e19fe502535?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ea62f4-9f39-4067-ab4e-3e19fe502535?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ea62f4-9f39-4067-ab4e-3e19fe502535?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/78/78462964-4d17-4e8d-8611-6b61889028d8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/78/78462964-4d17-4e8d-8611-6b61889028d8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/78/78462964-4d17-4e8d-8611-6b61889028d8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/78/78462964-4d17-4e8d-8611-6b61889028d8?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/78/78462964-4d17-4e8d-8611-6b61889028d8?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/43/43239652-9c8a-4e84-9e07-e5f16c9005e0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/43/43239652-9c8a-4e84-9e07-e5f16c9005e0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/43/43239652-9c8a-4e84-9e07-e5f16c9005e0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/43/43239652-9c8a-4e84-9e07-e5f16c9005e0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/43/43239652-9c8a-4e84-9e07-e5f16c9005e0?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e6/e6ad6d51-d670-431b-b7a5-19ddfa12cc27?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e6/e6ad6d51-d670-431b-b7a5-19ddfa12cc27?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e6/e6ad6d51-d670-431b-b7a5-19ddfa12cc27?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e6/e6ad6d51-d670-431b-b7a5-19ddfa12cc27?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e6/e6ad6d51-d670-431b-b7a5-19ddfa12cc27?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/02/0229c666-69ae-4db1-8e01-fbb019fdc8ca?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/02/0229c666-69ae-4db1-8e01-fbb019fdc8ca?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/02/0229c666-69ae-4db1-8e01-fbb019fdc8ca?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/02/0229c666-69ae-4db1-8e01-fbb019fdc8ca?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/02/0229c666-69ae-4db1-8e01-fbb019fdc8ca?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/10/10134d17-5391-4f90-86e4-a39ad33ca1cd?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/10/10134d17-5391-4f90-86e4-a39ad33ca1cd?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/10/10134d17-5391-4f90-86e4-a39ad33ca1cd?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/10/10134d17-5391-4f90-86e4-a39ad33ca1cd?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/10/10134d17-5391-4f90-86e4-a39ad33ca1cd?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f473c99-2360-4239-a004-547a1c005474?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f473c99-2360-4239-a004-547a1c005474?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5f/5f473c99-2360-4239-a004-547a1c005474?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5f/5f473c99-2360-4239-a004-547a1c005474?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f473c99-2360-4239-a004-547a1c005474?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d8e74b1-be55-43e2-9f24-5122d45a74d1?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d8e74b1-be55-43e2-9f24-5122d45a74d1?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7d/7d8e74b1-be55-43e2-9f24-5122d45a74d1?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/7d/7d8e74b1-be55-43e2-9f24-5122d45a74d1?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d8e74b1-be55-43e2-9f24-5122d45a74d1?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/72/72db32fb-34ef-47b9-b605-138840eb0ae4?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/72/72db32fb-34ef-47b9-b605-138840eb0ae4?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/72/72db32fb-34ef-47b9-b605-138840eb0ae4?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/72/72db32fb-34ef-47b9-b605-138840eb0ae4?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/72/72db32fb-34ef-47b9-b605-138840eb0ae4?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5e/5ec5d83d-abd6-4943-beda-87a9272429b7?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5e/5ec5d83d-abd6-4943-beda-87a9272429b7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5e/5ec5d83d-abd6-4943-beda-87a9272429b7?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5e/5ec5d83d-abd6-4943-beda-87a9272429b7?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5e/5ec5d83d-abd6-4943-beda-87a9272429b7?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi RS3"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/89/89cc93ef-5132-4c7f-942a-e5c075083ae3?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/89/89cc93ef-5132-4c7f-942a-e5c075083ae3?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpcorerecommenderpopularfiltersnobanner&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpsbsmodelimprovementsv1&client.abtests=accwebpublichomegaaa4off&adId=458285379"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=49999&c=Limousine&ms=1900%3B36&id%21=458285379&vc=Car&sid=17035765"
+    },
+    "vehicleCondition": "used",
+    "make": "Audi",
+    "model": "RS3",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "0cf3070c-8b31-10e5-6da7-3ca8818eecbe"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Audi RS3 für 49.999 €",
+    "price_text": "Preis 49.999 € Guter Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug",
+      "Kategorie": "Limousine",
+      "Baureihe": "8YS",
+      "Ausstattungslinie": "2.5 TFSI quattro",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "62.000 km",
+      "Hubraum": "2.480 cm³",
+      "Leistung": "294 kW (400 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Energieverbrauch (komb.) 2": "7,5 l/100km",
+      "CO₂-Emissionen (komb.) 2": "188 g/km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Kraftstoffverbrauch 2": "7,5 l/100km (kombiniert)",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro6d-TEMP",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "02/2022",
+      "Anzahl der Fahrzeughalter": "1",
+      "HU": "Neu",
+      "Klimatisierung": "4-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Vorne, Selbstlenkende Systeme, Hinten, Kamera",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "VERDE MANTIS",
+      "Farbe": "Grün",
+      "Innenausstattung": "Vollleder, Andere",
+      "Gewicht": "1.650 kg",
+      "Letzte Wartung (Datum)": "02/2026",
+      "Letzte Wartung (km)": "62.000 km",
+      "Zylinder": "5",
+      "Tankgröße": "55 l"
+    },
+    "description": "Gebrauchtfahrzeug • 62.000 km • 294 kW (400 PS) • Benzin • Automatik • 02/2022",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/89/89cc93ef-5132-4c7f-942a-e5c075083ae3?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2e6f8b-4d3b-4c37-949e-cd3f43885549?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/65/65f88c86-19ea-4a8e-85fc-fe9a254a93cc?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d1bd37f-e7e8-4a0c-b008-d23250856dbd?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7682338-3096-468b-8767-427e48286083?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/83/835ed6b9-d4da-4db7-a403-72278a115c03?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7af74fc-072a-49ad-8077-6ed109844898?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b24153b-dc52-4bd5-ac65-93186a6476ef?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b1/b17b122d-174c-4f08-9303-72f999b4403b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/70/70bfbde6-4a45-492f-aa05-696966330191?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ea62f4-9f39-4067-ab4e-3e19fe502535?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/78/78462964-4d17-4e8d-8611-6b61889028d8?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/43/43239652-9c8a-4e84-9e07-e5f16c9005e0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e6/e6ad6d51-d670-431b-b7a5-19ddfa12cc27?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/02/0229c666-69ae-4db1-8e01-fbb019fdc8ca?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/10/10134d17-5391-4f90-86e4-a39ad33ca1cd?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f473c99-2360-4239-a004-547a1c005474?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d8e74b1-be55-43e2-9f24-5122d45a74d1?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/72/72db32fb-34ef-47b9-b605-138840eb0ae4?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5e/5ec5d83d-abd6-4943-beda-87a9272429b7?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/89/89cc93ef-5132-4c7f-942a-e5c075083ae3?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2e6f8b-4d3b-4c37-949e-cd3f43885549?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/65/65f88c86-19ea-4a8e-85fc-fe9a254a93cc?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d1bd37f-e7e8-4a0c-b008-d23250856dbd?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7682338-3096-468b-8767-427e48286083?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/83/835ed6b9-d4da-4db7-a403-72278a115c03?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7af74fc-072a-49ad-8077-6ed109844898?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b24153b-dc52-4bd5-ac65-93186a6476ef?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b17b122d-174c-4f08-9303-72f999b4403b?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/70/70bfbde6-4a45-492f-aa05-696966330191?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ea62f4-9f39-4067-ab4e-3e19fe502535?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/78/78462964-4d17-4e8d-8611-6b61889028d8?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/43/43239652-9c8a-4e84-9e07-e5f16c9005e0?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e6/e6ad6d51-d670-431b-b7a5-19ddfa12cc27?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/02/0229c666-69ae-4db1-8e01-fbb019fdc8ca?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/10/10134d17-5391-4f90-86e4-a39ad33ca1cd?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f473c99-2360-4239-a004-547a1c005474?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d8e74b1-be55-43e2-9f24-5122d45a74d1?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/72/72db32fb-34ef-47b9-b605-138840eb0ae4?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5e/5ec5d83d-abd6-4943-beda-87a9272429b7?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

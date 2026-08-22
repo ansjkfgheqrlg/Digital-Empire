@@ -1,0 +1,219 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=377883614&action=topInCategory&dam=false&ms=20700%3B%3B%3B&od=up&ref=seo&refId=ddc77b69-c15d-021c-1ded-32b99f35906e&s=Car&sb=rel&searchId=ddc77b69-c15d-021c-1ded-32b99f35906e&vc=Car",
+  "source_id": "377883614",
+  "scraped_at": "2026-07-09T08:14:14+00:00",
+  "scrape_method": "chrome-cdp",
+  "make": "Renault",
+  "model": "Master",
+  "variant": "Kasten L3H2 HKa 3,5t 1-Hand Scheckheft",
+  "title_de": "Renault Master Kasten L3H2 HKa 3,5t 1-Hand Scheckheft",
+  "year": 2019,
+  "first_registration": "12/2019",
+  "mileage_km": 45000,
+  "price_listed_eur": 20999.0,
+  "price_is_gross": true,
+  "vat_deductible": null,
+  "fuel": "Diesel",
+  "gearbox": "Manuale",
+  "power_kw": 96,
+  "power_hp": 131,
+  "body_type": "Van/Minibus",
+  "drivetrain": null,
+  "doors": 5,
+  "seats": 3,
+  "color": "Weiß",
+  "color_manufacturer": "MINERAL WEISS",
+  "interior": "Stoff, Schwarz",
+  "emission_class": "Euro6",
+  "co2_g_km": null,
+  "vin": null,
+  "equipment_de": [
+    "ABS",
+    "Allwetterreifen",
+    "Armlehne",
+    "Bluetooth",
+    "Bordcomputer",
+    "CD-Spieler",
+    "Elektr. Fensterheber",
+    "Elektr. Seitenspiegel",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sprachsteuerung",
+    "Standheizung",
+    "Start/Stopp-Automatik",
+    "Tagfahrlicht",
+    "Tempomat",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Zentralverriegelung"
+  ],
+  "description_de": "Renault Master, das Fahrzeug befindet sich technisch und optisch in einem sehr guten Zustand.\nBeim Kauf des Fahrzeuges bekommen Sie HU/AU und Service neu, sowie eine Gebrauchtwagengarantie von 12 Monaten.\n\n- Finanzierung auch ohne Anzahlung möglich\n- Gerne nehmen wir Ihr altes Fahrzeug nach Absprache in Zahlung\n\nSonderausstattung: \nKlare-Sicht-Paket, Komfort-Plus-Paket, Laderaumtrennwand mit Fenster (vergittert), Radvollabdeckungen, Raucher-Paket, Sitze im Fahrerhaus: Beifahrerdoppelsitz multifunktional mit Staufach, Sitze im Fahrerhaus: Fahrersitz heizbar, Trittstufe hinten, Verzurrösen im Laderaum seitlich\n\n Weitere Ausstattung: \nAblagegalerie, Airbag Fahrerseite, Außenspiegel elektr. verstell- und heizbar, Außentemperaturanzeige, Begrenzungsleuchten seitlich, Bremsassistent, Drehzahlmesser, Elektr. Bremskraftverteilung, Generator 185 A, Heckflügeltüren ohne Verglasung, Innenraumfilter: Pollenfilter, Karosserie/Aufbau: Kasten Hochraum, Kraftstofftank: 105 Ltr., Kühlergrill mit Chromeinfassung, Lenksäule (Lenkrad) höhenverstellbar, Modellpflege, Motor 2,3 Ltr. - 96 kW dCi Diesel KAT, Radstand 4332 mm, Reifen-Reparaturset, Schadstoffarm nach Abgasnorm Euro 6, Schaltpunktanzeige, Schiebetür Lade-/Fahrgastraum rechts, Schmutzfänger vorn, Seitenschutzleisten, Sitzbezug / Polsterung: Stoff, Sitze im Fahrerhaus: Fahrersitz höhenverstellbar, Tagfahrlicht LED, Verzurrösen Laderaumboden, Wärmeschutzverglasung, Zul. Gesamtgewicht 3,50 t\n\n Wir freuen uns auf Ihren Anruf \n\n Unsere Öffnungszeiten:\n Montag bis Freitag 9:00 - 18:00 Uhr \n Samstag 10:00 - 14:00 Uhr \n Sonntag geschlossen\n \n Zwischenverkauf, Irrtümer und Tippfehler vorbehalten\nNach §25a MwSt. nicht ausweisbar",
+  "raw_specs": {
+    "Fahrzeugzustand": "Gebrauchtfahrzeug",
+    "Kategorie": "Van/Minibus",
+    "Kilometerstand": "45.000 km",
+    "Hubraum": "2.299 cm³",
+    "Leistung": "96 kW (131 PS)",
+    "Antriebsart": "Verbrennungsmotor",
+    "Kraftstoffart": "Diesel",
+    "Anzahl Sitzplätze": "3",
+    "Anzahl der Türen": "4/5",
+    "Schiebetür": "Schiebetür rechts",
+    "Getriebe": "Schaltgetriebe",
+    "Schadstoffklasse": "Euro6",
+    "Umweltplakette": "4 (Grün)",
+    "Erstzulassung": "12/2019",
+    "Anzahl der Fahrzeughalter": "1",
+    "HU": "Neu",
+    "Klimatisierung": "Klimaautomatik",
+    "Einparkhilfe": "Hinten",
+    "Airbags": "Fahrer-Airbag",
+    "Farbe (Hersteller)": "MINERAL WEISS",
+    "Farbe": "Weiß",
+    "Innenausstattung": "Stoff, Schwarz"
+  },
+  "seller": {},
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/af/af2b044c-76df-4a1d-a0ce-58780d8139a5?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c8/c867da14-a2ce-411f-9256-60a97100613e?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2ec97d1-d155-4704-90ec-36c52b8d4827?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d064390-7c72-4071-b8bb-cbf855369313?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/cb/cb9559f7-e8db-4313-9bc4-d75f96f3c905?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/81/815331f0-c284-4dec-a7e6-5d1751ad00e5?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/36/36820ad5-02a4-4cd3-8ffd-bc35ab6141ee?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d1afb72-6ce5-4870-bcc5-ac916f61aec5?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/06/067afee7-ea30-4ed0-948a-e3db4139a08a?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9779208-7478-48fa-8ce2-a951c69c502f?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/67/67b05c77-d58c-4375-bb44-307fffb80efd?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b5/b589551b-4038-413a-a228-eec0a4ee35a0?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b6/b634ff20-61d8-4102-a5c2-764f308f9ac1?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/aa/aac206c3-2172-4859-af73-0070327f5571?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8db43c51-2919-4c8a-a0e5-2e5447aca9d7?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ed/ed10f5bb-9d39-4a40-91ce-54841ccad239?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5e15f6f-6f57-40f3-916c-bfbb9c8375c8?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b797c813-30d3-43bd-af1a-7b5315db888f?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c77a822-3839-49a8-8dad-54340a72afa6?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/87/874b077a-656c-4943-bb35-23876ac760bf?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8a/8a2f9b9d-6e0a-4130-bf7f-a17f11cf8ecc?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

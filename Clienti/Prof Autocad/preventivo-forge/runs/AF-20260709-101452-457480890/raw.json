@@ -1,0 +1,721 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=457480890&dam=false&ms=20700%3B%3B%3B&od=up&ref=seo&refId=ddc77b69-c15d-021c-1ded-32b99f35906e&s=Car&sb=rel&searchId=ddc77b69-c15d-021c-1ded-32b99f35906e&vc=Car",
+  "scraped_at": "2026-07-09T08:15:04+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug, Unfallfrei",
+        "infoText": {
+          "headline": "Info",
+          "text": "Beschädigt sind Fahrzeuge mit unrepariertem, erheblichem Schaden, z. B. durch Verkehrsunfall, Brand, Hagel, Wasser, Motor- oder Getriebeschaden. Nicht gemeint ist damit: 1.) normaler Verschleiß; 2.) Bagatellschäden; 3.) ein ehemals verunfalltes, inzwischen aber repariertes Fahrzeug. Weiterhin gilt ein Fahrzeug nur dann als unfallfrei, wenn es noch nie einen erheblichen Unfallschaden erlitten hat. Darunter versteht man alle Schäden, die über einen Bagatellschaden hinausgehen (z. B. Kratzer im Lack). Auch wenn der Schaden sachgerecht repariert wurde, gilt das Fahrzeug nicht mehr als unfallfrei. Mit 'Fahrtauglich' ist schließlich gemeint, dass das Fahrzeug technisch in der Lage ist zu fahren (kein Motorschaden o. Ä.). Dies bezieht sich nicht auf Aspekte der Verkehrssicherheit oder die sonstige Verkehrstauglichkeit des Fahrzeugs."
+        }
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "HF"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "Intens"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "38.299 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "999 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "67 kW (91 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin, E10-geeignet"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "5,5 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "126 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "5,5 l/100km (kombiniert)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Schaltgetriebe"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "02/2022"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "2"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Vorne, Hinten, 360°-Kamera"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Rot Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Stoff"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "1.200 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "630 kg"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.257 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "3"
+      },
+      {
+        "label": "Tankgröße",
+        "tag": "fuelTankVolume",
+        "value": "48 l"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Renault Captur",
+    "subTitle": "II Intens",
+    "makeKey": "Renault",
+    "modelKey": "Captur",
+    "isNew": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Alarmanlage",
+      "Allwetterreifen",
+      "Ambiente-Beleuchtung",
+      "Armlehne",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Dachreling",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Freisprecheinrichtung",
+      "Frontantrieb",
+      "Garantie",
+      "Gepäckraumabtrennung",
+      "Geschwindigkeitsbegrenzer",
+      "Induktionsladen für Smartphones",
+      "Innenspiegel autom. abblendend",
+      "Inspektion neu",
+      "Isofix",
+      "LED-Scheinwerfer",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Partikelfilter",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Scheckheftgepflegt",
+      "Scheinwerferreinigung",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Soundsystem",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Tempomat",
+      "Totwinkel-Assistent",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "Easy-Parking-Paket",
+      "City-Paket 360°"
+    ],
+    "sellerId": 6746258,
+    "priceRating": {
+      "rating": "INCREASED_PRICE",
+      "ratingLabel": "Erhöhter Preis",
+      "thresholdLabels": [
+        "10.800 €",
+        "14.000 €",
+        "15.100 €",
+        "16.800 €",
+        "18.000 €",
+        "20.000 €"
+      ],
+      "vehiclePriceOffset": 15
+    },
+    "segment": "Car",
+    "title": "Renault Captur II Intens",
+    "url": "https://suchen.mobile.de/auto-inserat/renault-captur-ii-intens-marne/457480890.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 457480890,
+    "price": {
+      "gross": "16.990 €",
+      "grossAmount": 16990,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "kba": {
+      "hsn": "3333",
+      "tsn": "BOA"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_2usp",
+      "126": "hero_logo_16_name_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Sonderausstattung:</b><br>City-Paket 360°, Easy-Parking-Paket, Komfort-Plus-Paket, Multimedia-System Easy Link mit Navigationssystem (Touchscreen 7&quot;), Sonderlackierung Metallic Dezir Rot<br><br><b>Weitere Ausstattung:</b><br>2-Farben-Lackierung Metallic, Airbag Beifahrerseite abschaltbar, Airbag Fahrer-/Beifahrerseite, Audio-/Radio-Fernbedienung am Lenkrad, AUX-IN-Anschluss, Außenspiegel anklappbar, Außenspiegel elektr. anklappbar, Blinkleuchte in Außenspiegel integriert, Bremsassistent, Dachantenne, Eco Mode (Fahrmodusschalter), Fahrassistenz-System: Aktiver Notbrems-Assistent, Fahrassistenz-System: Berganfahr-Assistent (HSA), Fahrassistenz-System: Fernlichtassistent, Fahrassistenz-System: Fußgängererkennung, Fahrassistenz-System: Spurhalteassistent Aktiv, Fahrassistenz-System: Spurwechsel-Warnsystem, Freisprecheinrichtung (Bluetooth) mit Sprachsteuerung, Geschwindigkeits-Begrenzeranlage, Gurtstraffer, Heckleuchten LED, C-förmig mit Signature, Heckscheibe heizbar, Innenbeleuchtung LED, Innenspiegel mit Abblendautomatik, Isofix-Aufnahmen für Kindersitz, Isofix-Aufnahmen für Kindersitz an Beifahrersitz, Karosserie: 5-türig, Klimaautomatik, Koffer-/Laderaumboden doppelt, Kofferraumabdeckung, Kombiinstrument digital (7,0 Zoll), Kopf-Airbag-System vorn, Kopfstützen hinten verstellbar, Lenkrad (Leder-Optik), Lenksäule (Lenkrad) höhenverstellbar, Lenksäule (Lenkrad) längsverstellbar, LM-Felgen, Motor 1,0 Ltr. - 67 kW TCE, Radioempfang digital (DAB+), Radstand 2639 mm, Reifen-Reparaturkit, Reifendruck-Kontrollsystem, Rücksitzbank geteilt/klappbar (1/3-2/3), Schadstoffarm nach Abgasnorm Euro 6d, Schaltpunktanzeige, Scheinwerfer Full-LED mit LED-Signatur (Pure Vision), Seitenairbag hinten, Seitenairbag vorn, Seitenschutzleisten mit Chromeinlage, Sicherheitsgurte vorn höhenverstellbar, Sitz vorn links höhenverstellbar, Sitzbezug / Polsterung: Stoff / Leder-Optik, Start/Stop-Anlage, Trommelbremse hinten, Türgriffe außen Wagenfarbe, Unterfahrschutz Chrom, satiniert, USB-Anschluss, Warnanlage für Sicherheitsgurte<br><br>, Innenspiegel automatisch abblendend, Regensensor<br><b>Ausstattung:</b><ul><li>Abgedunkelte Scheiben</li><li>Ambiente-Beleuchtung</li><li>Armlehne</li><li>Elektr. Fensterheber</li><li>Elektr. Seitenspiegel</li><li>Elektr. Seitenspiegel anklappbar</li><li>Innenspiegel autom. abblendend</li><li>Schlüssellose Zentralverriegelung (Keyless)</li><li>Zentralverriegelung</li><li>Berganfahrassistent</li><li>Bordcomputer</li><li>Multifunktionslenkrad</li><li>Servolenkung</li><li>Volldigitales Kombiinstrument</li><li>Bluetooth</li><li>Freisprecheinrichtung</li><li>Induktionsladen für Smartphones</li><li>Navigationssystem</li><li>Soundsystem</li><li>Sprachsteuerung</li><li>Touchscreen</li><li>USB</li><li>Allwetterreifen</li><li>Leichtmetallfelgen</li><li>Dachreling</li><li>Scheinwerferreinigung</li></ul><br><b>Geschwindigkeitsregulierung:</b><ul><li>Tempomat</li></ul><br><b>Klimatisierung:</b><ul><li>Klimaautomatik</li></ul><br><b>Sicherheit:</b><ul><li>Alarmanlage</li><li>ABS</li><li>Elektr. Wegfahrsperre</li><li>ESP</li><li>Gepäckraumabtrennung</li><li>Geschwindigkeitsbegrenzer</li><li>Isofix</li><li>Lichtsensor</li><li>Müdigkeitswarner</li><li>Notbremsassistent</li><li>Notrufsystem</li><li>Regensensor</li><li>Reifendruckkontrolle</li><li>Spurhalteassistent</li><li>Start/Stopp-Automatik</li><li>Totwinkel-Assistent</li><li>Traktionskontrolle</li><li>Verkehrszeichenerkennung</li></ul><br><b>Airbags:</b><ul><li>Front-, Seiten- und weitere Airbags</li></ul><br><b>Hauptscheinwerfer:</b><ul><li>LED-Scheinwerfer</li></ul><br><b>Innenausstattung:</b><ul><li>Stoff</li></ul>",
+    "contactInfo": {
+      "address1": "St.Michaelisdonnerstrasse 6",
+      "address2": "DE-25709 Marne",
+      "name": "Autohaus Metz GmbH",
+      "openingHours": [
+        {
+          "day": "Mo - Fr",
+          "time": "07:30 Uhr - 18:00 Uhr"
+        },
+        {
+          "day": "Sa",
+          "time": "08:00 Uhr - 12:00 Uhr"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 04.11.2011",
+      "languages": "Deutsch, Pусский, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/07/070b895a-41aa-4cbd-bc96-b1217a2ac419?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/07/070b895a-41aa-4cbd-bc96-b1217a2ac419?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/07/070b895a-41aa-4cbd-bc96-b1217a2ac419?rule=mo-360 360w",
+        "alt": "Autohaus Metz GmbH"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)4851 3151",
+          "uri": "tel:+4948513151"
+        },
+        {
+          "type": "Mobil",
+          "number": "+49 (0)162 9835358",
+          "uri": "tel:+491629835358"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 (0)4851 85490"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "Arthur Metz"
+      },
+      "mapLink": "https://maps.google.com/maps?q=53.9525893,9.0109622+(Autohaus%20Metz%20GmbH)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 53.9525893,
+        "lon": 9.0109622
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=6746258",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/10/10de86f8-93eb-4224-8e3a-ae3dfa2151a0?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/10/10de86f8-93eb-4224-8e3a-ae3dfa2151a0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/10/10de86f8-93eb-4224-8e3a-ae3dfa2151a0?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/10/10de86f8-93eb-4224-8e3a-ae3dfa2151a0?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/10/10de86f8-93eb-4224-8e3a-ae3dfa2151a0?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/98/98667147-96d3-40cf-8f6a-5f655a401612?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/98/98667147-96d3-40cf-8f6a-5f655a401612?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/98/98667147-96d3-40cf-8f6a-5f655a401612?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/98/98667147-96d3-40cf-8f6a-5f655a401612?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/98/98667147-96d3-40cf-8f6a-5f655a401612?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/09/09a7d5e7-6910-4b1e-a5d2-cbbb8ea1a3bf?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/09/09a7d5e7-6910-4b1e-a5d2-cbbb8ea1a3bf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/09/09a7d5e7-6910-4b1e-a5d2-cbbb8ea1a3bf?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/09/09a7d5e7-6910-4b1e-a5d2-cbbb8ea1a3bf?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/09/09a7d5e7-6910-4b1e-a5d2-cbbb8ea1a3bf?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/42/421c6b48-0219-4d80-99c6-fa40ac0f199d?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/42/421c6b48-0219-4d80-99c6-fa40ac0f199d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/42/421c6b48-0219-4d80-99c6-fa40ac0f199d?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/42/421c6b48-0219-4d80-99c6-fa40ac0f199d?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/42/421c6b48-0219-4d80-99c6-fa40ac0f199d?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/5c/5c2d1140-fca6-4267-a690-df2c2daa9b4e?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5c/5c2d1140-fca6-4267-a690-df2c2daa9b4e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5c/5c2d1140-fca6-4267-a690-df2c2daa9b4e?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/5c/5c2d1140-fca6-4267-a690-df2c2daa9b4e?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5c/5c2d1140-fca6-4267-a690-df2c2daa9b4e?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/4a/4af2d456-311a-488f-829c-c4a5c81c5cd6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/4a/4af2d456-311a-488f-829c-c4a5c81c5cd6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/4a/4af2d456-311a-488f-829c-c4a5c81c5cd6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/4a/4af2d456-311a-488f-829c-c4a5c81c5cd6?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 49,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=457480890&loanType=balloon&loanDuration=60&downPayment=3398&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 3398,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 13592,
+        "interestRateNominal": 6.4,
+        "interestRateEffective": 6.59,
+        "monthlyInstallment": 159.1,
+        "finalInstallment": 7645.5,
+        "totalInterest": 3440.11,
+        "totalAmount": 17032.11,
+        "localized": {
+          "downPayment": "3.398 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "13.592 €",
+          "interestRateNominal": "6,40%",
+          "interestRateEffective": "6,59%",
+          "monthlyInstallment": "160 €",
+          "finalInstallment": "7.645,50 €",
+          "totalInterest": "3.440,11 €",
+          "totalAmount": "17.032,11 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/21/211cf853-1223-46c3-91de-9fe05dd0b806?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/21/211cf853-1223-46c3-91de-9fe05dd0b806?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/21/211cf853-1223-46c3-91de-9fe05dd0b806?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/21/211cf853-1223-46c3-91de-9fe05dd0b806?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/21/211cf853-1223-46c3-91de-9fe05dd0b806?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/7a/7a426f61-e03f-44a7-a323-364f05b46186?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7a/7a426f61-e03f-44a7-a323-364f05b46186?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7a/7a426f61-e03f-44a7-a323-364f05b46186?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/7a/7a426f61-e03f-44a7-a323-364f05b46186?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7a/7a426f61-e03f-44a7-a323-364f05b46186?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d264cbcc-a3ae-41e6-8fc0-778fe05c8b4e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d264cbcc-a3ae-41e6-8fc0-778fe05c8b4e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d2/d264cbcc-a3ae-41e6-8fc0-778fe05c8b4e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d2/d264cbcc-a3ae-41e6-8fc0-778fe05c8b4e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d264cbcc-a3ae-41e6-8fc0-778fe05c8b4e?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/64/6456d6b7-0ed0-42c5-a46b-13e83f80ebc6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/64/6456d6b7-0ed0-42c5-a46b-13e83f80ebc6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/64/6456d6b7-0ed0-42c5-a46b-13e83f80ebc6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/64/6456d6b7-0ed0-42c5-a46b-13e83f80ebc6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/64/6456d6b7-0ed0-42c5-a46b-13e83f80ebc6?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a815eddc-7d6c-40b8-b607-fb1cd0d09af9?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a815eddc-7d6c-40b8-b607-fb1cd0d09af9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a8/a815eddc-7d6c-40b8-b607-fb1cd0d09af9?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a8/a815eddc-7d6c-40b8-b607-fb1cd0d09af9?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a815eddc-7d6c-40b8-b607-fb1cd0d09af9?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/82/82bce8d3-0105-4032-8e22-8c6fdcb28239?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/82/82bce8d3-0105-4032-8e22-8c6fdcb28239?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/82/82bce8d3-0105-4032-8e22-8c6fdcb28239?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/82/82bce8d3-0105-4032-8e22-8c6fdcb28239?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/82/82bce8d3-0105-4032-8e22-8c6fdcb28239?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f0/f016a341-a6cb-47bb-887a-dfeeefd6e435?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f0/f016a341-a6cb-47bb-887a-dfeeefd6e435?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f0/f016a341-a6cb-47bb-887a-dfeeefd6e435?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f0/f016a341-a6cb-47bb-887a-dfeeefd6e435?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f0/f016a341-a6cb-47bb-887a-dfeeefd6e435?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/35/355dfb71-8e3f-44d3-ad38-13cf63ffaf71?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/35/355dfb71-8e3f-44d3-ad38-13cf63ffaf71?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/35/355dfb71-8e3f-44d3-ad38-13cf63ffaf71?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/35/355dfb71-8e3f-44d3-ad38-13cf63ffaf71?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/35/355dfb71-8e3f-44d3-ad38-13cf63ffaf71?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f55d07e1-ae64-4f69-99e1-e8accce9dcfc?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f55d07e1-ae64-4f69-99e1-e8accce9dcfc?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f55d07e1-ae64-4f69-99e1-e8accce9dcfc?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f55d07e1-ae64-4f69-99e1-e8accce9dcfc?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f55d07e1-ae64-4f69-99e1-e8accce9dcfc?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/66/6605d4f6-3631-450c-bee5-167f4f0a3e0e?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/66/6605d4f6-3631-450c-bee5-167f4f0a3e0e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/66/6605d4f6-3631-450c-bee5-167f4f0a3e0e?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/66/6605d4f6-3631-450c-bee5-167f4f0a3e0e?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/66/6605d4f6-3631-450c-bee5-167f4f0a3e0e?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca6846e7-21d7-4647-8234-1b5b5accc47d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca6846e7-21d7-4647-8234-1b5b5accc47d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ca/ca6846e7-21d7-4647-8234-1b5b5accc47d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ca/ca6846e7-21d7-4647-8234-1b5b5accc47d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca6846e7-21d7-4647-8234-1b5b5accc47d?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae4fd134-e0db-446a-a96c-795d58b48641?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae4fd134-e0db-446a-a96c-795d58b48641?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ae/ae4fd134-e0db-446a-a96c-795d58b48641?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ae/ae4fd134-e0db-446a-a96c-795d58b48641?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae4fd134-e0db-446a-a96c-795d58b48641?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d6dd20-a3e4-4237-b515-840e128d4e43?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d6dd20-a3e4-4237-b515-840e128d4e43?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d6dd20-a3e4-4237-b515-840e128d4e43?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d6dd20-a3e4-4237-b515-840e128d4e43?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d6dd20-a3e4-4237-b515-840e128d4e43?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/7f/7f8568b4-40b2-4cce-950c-ad62ccddf3a8?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7f/7f8568b4-40b2-4cce-950c-ad62ccddf3a8?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7f/7f8568b4-40b2-4cce-950c-ad62ccddf3a8?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/7f/7f8568b4-40b2-4cce-950c-ad62ccddf3a8?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7f/7f8568b4-40b2-4cce-950c-ad62ccddf3a8?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/94/940f3d32-b56a-4d80-b6ba-4a70677fd8c3?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/94/940f3d32-b56a-4d80-b6ba-4a70677fd8c3?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/94/940f3d32-b56a-4d80-b6ba-4a70677fd8c3?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/94/940f3d32-b56a-4d80-b6ba-4a70677fd8c3?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/94/940f3d32-b56a-4d80-b6ba-4a70677fd8c3?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/34/34e4be2d-b6a7-4e44-b59b-2aa6b5fdd9ea?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/34/34e4be2d-b6a7-4e44-b59b-2aa6b5fdd9ea?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/34/34e4be2d-b6a7-4e44-b59b-2aa6b5fdd9ea?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/34/34e4be2d-b6a7-4e44-b59b-2aa6b5fdd9ea?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/34/34e4be2d-b6a7-4e44-b59b-2aa6b5fdd9ea?rule=mo-80w",
+        "type": "image",
+        "alt": "Renault Captur"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/21/211cf853-1223-46c3-91de-9fe05dd0b806?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/21/211cf853-1223-46c3-91de-9fe05dd0b806?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpsbsmodelimprovementsv2&client.abtests=cossrpcorerecommenderpopularfiltersnobanner&client.abtests=accwebpublichomegaaa4on&client.abtests=coshomepageworldcupleasingvariant&adId=457480890"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=16990&c=OffRoad&ms=20700%3B47&id%21=457480890&vc=Car&sid=6746258"
+    },
+    "vehicleCondition": "used",
+    "make": "Renault",
+    "model": "Captur",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "ddc77b69-c15d-021c-1ded-32b99f35906e"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Renault Captur für 16.990 €",
+    "price_text": "Preis 16.990 € Erhöhter Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug, Unfallfrei",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Baureihe": "HF",
+      "Ausstattungslinie": "Intens",
+      "Kilometerstand": "38.299 km",
+      "Hubraum": "999 cm³",
+      "Leistung": "67 kW (91 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin, E10-geeignet",
+      "Energieverbrauch (komb.) 2": "5,5 l/100km",
+      "CO₂-Emissionen (komb.) 2": "126 g/km",
+      "Kraftstoffverbrauch 2": "5,5 l/100km (kombiniert)",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Schaltgetriebe",
+      "Schadstoffklasse": "Euro6",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "02/2022",
+      "Anzahl der Fahrzeughalter": "2",
+      "Klimatisierung": "Klimaautomatik",
+      "Einparkhilfe": "Vorne, Hinten, 360°-Kamera",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe": "Rot Metallic",
+      "Innenausstattung": "Stoff",
+      "Anhängelast gebremst": "1.200 kg",
+      "Anhängelast ungebremst": "630 kg",
+      "Gewicht": "1.257 kg",
+      "Zylinder": "3",
+      "Tankgröße": "48 l"
+    },
+    "description": "Gebrauchtfahrzeug, Unfallfrei • 38.299 km • 67 kW (91 PS) • Benzin, E10-geeignet • Schaltgetriebe • 02/2022",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/21/211cf853-1223-46c3-91de-9fe05dd0b806?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7a/7a426f61-e03f-44a7-a323-364f05b46186?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d2/d264cbcc-a3ae-41e6-8fc0-778fe05c8b4e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/64/6456d6b7-0ed0-42c5-a46b-13e83f80ebc6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a8/a815eddc-7d6c-40b8-b607-fb1cd0d09af9?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/82/82bce8d3-0105-4032-8e22-8c6fdcb28239?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f0/f016a341-a6cb-47bb-887a-dfeeefd6e435?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/35/355dfb71-8e3f-44d3-ad38-13cf63ffaf71?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f5/f55d07e1-ae64-4f69-99e1-e8accce9dcfc?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/66/6605d4f6-3631-450c-bee5-167f4f0a3e0e?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca6846e7-21d7-4647-8234-1b5b5accc47d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae4fd134-e0db-446a-a96c-795d58b48641?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d6dd20-a3e4-4237-b515-840e128d4e43?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7f/7f8568b4-40b2-4cce-950c-ad62ccddf3a8?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/94/940f3d32-b56a-4d80-b6ba-4a70677fd8c3?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/34/34e4be2d-b6a7-4e44-b59b-2aa6b5fdd9ea?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/21/211cf853-1223-46c3-91de-9fe05dd0b806?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/7a/7a426f61-e03f-44a7-a323-364f05b46186?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d2/d264cbcc-a3ae-41e6-8fc0-778fe05c8b4e?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/64/6456d6b7-0ed0-42c5-a46b-13e83f80ebc6?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a815eddc-7d6c-40b8-b607-fb1cd0d09af9?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/82/82bce8d3-0105-4032-8e22-8c6fdcb28239?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f0/f016a341-a6cb-47bb-887a-dfeeefd6e435?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/35/355dfb71-8e3f-44d3-ad38-13cf63ffaf71?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f55d07e1-ae64-4f69-99e1-e8accce9dcfc?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/66/6605d4f6-3631-450c-bee5-167f4f0a3e0e?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca6846e7-21d7-4647-8234-1b5b5accc47d?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae4fd134-e0db-446a-a96c-795d58b48641?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e4/e4d6dd20-a3e4-4237-b515-840e128d4e43?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/7f/7f8568b4-40b2-4cce-950c-ad62ccddf3a8?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/94/940f3d32-b56a-4d80-b6ba-4a70677fd8c3?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/34/34e4be2d-b6a7-4e44-b59b-2aa6b5fdd9ea?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

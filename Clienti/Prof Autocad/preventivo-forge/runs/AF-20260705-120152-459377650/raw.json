@@ -1,0 +1,904 @@
+{
+  "source_url": "https://m.mobile.de/auto-inserat/mercedes-benz-c-200-automat-nav-led-einparkhilfe-allwetter-t%C3%BCv-mannheim/459377650.html?ref=seo&refId=cb916ebb-4bd0-784a-078c-f098936d186c&searchId=cb916ebb-4bd0-784a-078c-f098936d186c&type=ad",
+  "scraped_at": "2026-07-05T10:02:12+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug"
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Limousine"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "F330481"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "127.500 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "1.991 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "135 kW (184 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro6"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "02/2016"
+      },
+      {
+        "label": "HU",
+        "tag": "hu",
+        "value": "Neu"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "2-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Vorne, Hinten"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "IRIDIUMSILBER"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Silber Metallic"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Teilleder, Schwarz"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "1.800 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "730 kg"
+      },
+      {
+        "label": "Stützlast",
+        "tag": "maxNoseWeight",
+        "value": "75 kg"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "1.445 kg"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "4"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Mercedes-Benz C 200",
+    "subTitle": "AUTOMAT NAV+LED+EINPARKHILFE+ALLWETTER+TÜV",
+    "makeKey": "Mercedes-Benz",
+    "modelKey": "C 200",
+    "isNew": false,
+    "isConditionNew": false,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandswarner",
+      "Allwetterreifen",
+      "Ambiente-Beleuchtung",
+      "Armlehne",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "CD-Spieler",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Sitzeinstellung",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Gepäckraumabtrennung",
+      "Geschwindigkeitsbegrenzer",
+      "Heckantrieb",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "LED-Tagfahrlicht",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Nichtraucher-Fahrzeug",
+      "Notrufsystem",
+      "Pannenkit",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Scheckheftgepflegt",
+      "Servolenkung",
+      "Sitzheizung",
+      "Soundsystem",
+      "Sportpaket",
+      "Sportsitze",
+      "Sprachsteuerung",
+      "Start/Stopp-Automatik",
+      "Tempomat",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Winterpaket",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "SitzheizungTempomat",
+      "Bluetooth,Allwetter",
+      "Regelmässige Wartung"
+    ],
+    "sellerId": 9564498,
+    "priceRating": {
+      "rating": "INCREASED_PRICE",
+      "ratingLabel": "Erhöhter Preis",
+      "thresholdLabels": [
+        "12.300 €",
+        "16.000 €",
+        "17.200 €",
+        "19.200 €",
+        "20.600 €",
+        "22.900 €"
+      ],
+      "vehiclePriceOffset": 49
+    },
+    "segment": "Car",
+    "title": "Mercedes-Benz C 200 AUTOMAT NAV+LED+EINPARKHILFE+ALLWETTER+TÜV",
+    "url": "https://suchen.mobile.de/auto-inserat/mercedes-benz-c-200-automat-nav-led-einparkhilfe-allwetter-t%C3%BCv-mannheim/459377650.html",
+    "vc": "Car",
+    "category": "Limousine",
+    "id": 459377650,
+    "price": {
+      "gross": "19.890 €",
+      "grossAmount": 19890,
+      "grossCurrency": "EUR",
+      "type": "FIXED"
+    },
+    "kba": {
+      "hsn": "1313",
+      "tsn": "DZE"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_logo_27_name_photo_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<b>Mercedes-Benz C 200 Limousine Avantgarde – Stil, Komfort und Qualität vereint<br></b><br>Diese Mercedes-Benz C 200 Limousine Avantgarde überzeugt durch zeitlose Eleganz, hochwertige Verarbeitung und ein souveränes Fahrerlebnis. Die klare Linienführung in Kombination mit einer komfortorientierten Ausstattung macht dieses Fahrzeug zu einem stilvollen und zuverlässigen Begleiter – sowohl im Alltag als auch auf längeren Strecken.<br><br>Ein Fahrzeug für Menschen, die besonderen Wert auf Qualität, Komfort und ein gepflegtes Erscheinungsbild legen.<br><hr><b>Ausstattung im Überblick</b> <b>Komfort &amp; Innenraum</b><br><ul><li>2-Zonen-Klimaautomatik</li><li>Sitzheizung vorne</li><li>Elektrische Sportsitze vorne mit Lordosenstütze</li><li>Leder-/Stoff-Innenausstattung in Anthrazit</li><li>Mittelarmlehne vorne</li><li>Geteilte Rücksitzbank</li><li>ISOFIX-Kindersitzbefestigung</li></ul><b>Technologie &amp; Infotainment</b><br><ul><li>Navigationssystem mit Farbbildschirm</li><li>Radio mit CD-Spieler und USB-Anschluss</li><li>Bluetooth-Freisprecheinrichtung und Musik-Streaming</li><li>Bordcomputer mit Außentemperaturanzeige</li></ul><b>Fahrkomfort &amp; Sicherheit</b><br><ul><li>Automatikgetriebe</li><li>Tempomat mit Geschwindigkeitsbegrenzung (Limit)</li><li>Einparkhilfe (PDC) vorne und hinten</li><li>ABS und ESP</li><li>7 Airbags (inkl. Knieairbag)</li><li>Licht- und Regensensor</li><li>Servolenkung</li></ul><b>Exterieur &amp; Design</b><br><ul><li>LED High Performance Scheinwerfer mit LED-Tagfahrlicht</li><li>Leichtmetallräder im Doppelspeichen-Design (17 Zoll, anthrazit)</li><li>Colorverglasung (hinten abgedunkelt)</li><li>Elektrisch verstell-, beheiz- und anklappbare Außenspiegel</li></ul><b>Weitere Ausstattung</b><br><ul><li>Elektrische Fensterheber vorne und hinten</li><li>Zentralverriegelung mit Fernbedienung</li><li>Start-Stopp-Automatik</li><li>Sportlederlenkrad mit Multifunktion und Schaltwippen</li></ul><hr><b>Fahrzeugzustand</b><ul><li>Seit 07/2018 durchgehend in einem Besitz</li><li>Sehr gepflegter Gesamtzustand</li><li>Nachvollziehbare Wartungshistorie</li></ul><hr><b>Unser Service für Sie</b>Seit über 30 Jahren stehen wir für Kompetenz und Vertrauen im Automobilbereich.<br><ul><li>Inzahlungnahme Ihres aktuellen Fahrzeugs oder Motorrads möglich</li><li>Individuelle Finanzierungs- und Leasingangebote</li><li>Optional: Gebrauchtwagengarantie bis zu 60 Monate</li><li>Abholung vom Bahnhof in Mannheim möglich</li><li>Flexible Fahrzeugüberführung (Kurzzeitkennzeichen oder Lieferung bundesweit zu Ihnen nach Hause)</li></ul>Wir laden Sie herzlich ein, sich persönlich von diesem Fahrzeug in unserer Ausstellung in Mannheim zu überzeugen.<br><hr><b>Kontakt</b>Vielen Dank für Ihr Interesse.<br><br>Für eine persönliche Beratung stehen wir Ihnen jederzeit gerne zur Verfügung – telefonisch, per E-Mail oder bequem per WhatsApp (Chat oder Videoanruf).<br><hr><b>Hinweise</b><ul><li>Alle Angaben ohne Gewähr</li><li>Irrtümer, Tippfehler und Zwischenverkauf vorbehalten</li></ul> ... Teilleder, Sonnenblende mit Spiegel (beleuchtet), Reifendruckanzeige, Start/Stop-Automatik, Tagfahrlicht, Berganfahrhilfe, Reifendruckverlust-Warnung, Freisprecheinrichtung Bluetooth, Lenkrad-Schaltpaddles, ISOFIX (Kindersitz), LED-Scheinwerfer, Tagfahrlicht-LED, Bluetooth, MP3-Schnittstelle, Einparkhilfe-Sensor vorn, Einparkhilfe-Sensor hinten, Sportpaket, Airbag Knie, Freisprecheinrichtung",
+    "contactInfo": {
+      "address1": "Radeberger Straße 1",
+      "address2": "DE-68309 Mannheim",
+      "name": "Reffgen & Schmuck Automobile GmbH",
+      "markingText": "<div><b>Wir sind Montag bis Freitag von 9.00 - 18.00 Uhr und Samstag 9.00 - 14.00 Uhr für Sie da.</b><br /></div><div><hr /><b>Wir freuen uns über Ihren Besuch oder telefonischen Kontakt!</b><br /></div><div><br /></div><div><b>Benjamin Müller, Steffen Reffgen und Michael Schmuck</b><br /></div>",
+      "openingHours": [
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mo"
+        },
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Di"
+        },
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mi"
+        },
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Do"
+        },
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Fr"
+        },
+        {
+          "time": "09:00 Uhr - 14:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 21.03.2013",
+      "rating": {
+        "count": 12,
+        "totalCount": 274,
+        "score": 4.8,
+        "scoreLocalized": "4,8",
+        "link": "https://www.mobile.de/bewertungen/REFFGENSCHMUCKAUTOMOBILEGMBHCOKG?lang=de",
+        "recommendationRate": 91,
+        "adRealityRate": 90,
+        "consultingScore": 4.666666666666667,
+        "friendlinessScore": 4.833333333333333,
+        "responseTimeScore": 5
+      },
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad56b323-5323-4125-8740-d32c4d0eb8bc?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad56b323-5323-4125-8740-d32c4d0eb8bc?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/ad/ad56b323-5323-4125-8740-d32c4d0eb8bc?rule=mo-360 360w",
+        "alt": "Reffgen & Schmuck Automobile GmbH"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)621 76222313",
+          "uri": "tel:+4962176222313"
+        },
+        {
+          "type": "2. Tel-Nr.",
+          "number": "+49 (0)621 76223617",
+          "uri": "tel:+4962176223617"
+        },
+        {
+          "type": "Mobil",
+          "number": "+49 (0)1523 8214176",
+          "uri": "tel:+4915238214176"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 621 76223465"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "logo": {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa451245-e55c-4c8f-afd5-da18d4a8e947?rule=mo-80",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa451245-e55c-4c8f-afd5-da18d4a8e947?rule=mo-80 80w, https://img.classistatic.de/api/v1/mo-prod/images/fa/fa451245-e55c-4c8f-afd5-da18d4a8e947?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/fa/fa451245-e55c-4c8f-afd5-da18d4a8e947?rule=mo-240 240w"
+        },
+        "name": "Benjamin Müller",
+        "role": "Verkauf"
+      },
+      "mapLink": "https://maps.google.com/maps?q=49.5149944,8.5502054+(Reffgen%20%26%20Schmuck%20Automobile%20GmbH)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 49.5149944,
+        "lon": 8.5502054
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=9564498",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/88/8812de60-7ee7-40ef-9471-f09a951beba7?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/88/8812de60-7ee7-40ef-9471-f09a951beba7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/88/8812de60-7ee7-40ef-9471-f09a951beba7?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/88/8812de60-7ee7-40ef-9471-f09a951beba7?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/88/8812de60-7ee7-40ef-9471-f09a951beba7?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/90/9053d509-0c71-4095-b59d-c7b092abf069?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/90/9053d509-0c71-4095-b59d-c7b092abf069?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/90/9053d509-0c71-4095-b59d-c7b092abf069?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/90/9053d509-0c71-4095-b59d-c7b092abf069?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/90/9053d509-0c71-4095-b59d-c7b092abf069?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f529bbf9-bfe6-4c77-9b87-86878b32c871?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f529bbf9-bfe6-4c77-9b87-86878b32c871?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f529bbf9-bfe6-4c77-9b87-86878b32c871?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/f5/f529bbf9-bfe6-4c77-9b87-86878b32c871?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f5/f529bbf9-bfe6-4c77-9b87-86878b32c871?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f910a699-187f-40a5-aab3-889860cf4416?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f910a699-187f-40a5-aab3-889860cf4416?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f910a699-187f-40a5-aab3-889860cf4416?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/f9/f910a699-187f-40a5-aab3-889860cf4416?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f910a699-187f-40a5-aab3-889860cf4416?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb4e8aae-a17c-4cd6-968a-41b268eb80be?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb4e8aae-a17c-4cd6-968a-41b268eb80be?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/bb/bb4e8aae-a17c-4cd6-968a-41b268eb80be?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/bb/bb4e8aae-a17c-4cd6-968a-41b268eb80be?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 80,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=459377650&loanType=balloon&loanDuration=60&downPayment=3978&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 3978,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 15912,
+        "interestRateNominal": 5.83,
+        "interestRateEffective": 5.99,
+        "monthlyInstallment": 180.13,
+        "finalInstallment": 8950.5,
+        "totalInterest": 3666.17,
+        "totalAmount": 19578.17,
+        "localized": {
+          "downPayment": "3.978 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "15.912 €",
+          "interestRateNominal": "5,83%",
+          "interestRateEffective": "5,99%",
+          "monthlyInstallment": "181 €",
+          "finalInstallment": "8.950,50 €",
+          "totalInterest": "3.666,17 €",
+          "totalAmount": "19.578,17 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/7f/7fdba226-2591-4970-a945-b5d91c596130?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7f/7fdba226-2591-4970-a945-b5d91c596130?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7f/7fdba226-2591-4970-a945-b5d91c596130?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/7f/7fdba226-2591-4970-a945-b5d91c596130?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7f/7fdba226-2591-4970-a945-b5d91c596130?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/68/682e3550-7ad0-4daa-8523-19719f32310f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/68/682e3550-7ad0-4daa-8523-19719f32310f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/68/682e3550-7ad0-4daa-8523-19719f32310f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/68/682e3550-7ad0-4daa-8523-19719f32310f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/68/682e3550-7ad0-4daa-8523-19719f32310f?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b8/b82477a6-cac2-40d1-9b8a-b6600c04d85d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b8/b82477a6-cac2-40d1-9b8a-b6600c04d85d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b8/b82477a6-cac2-40d1-9b8a-b6600c04d85d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b8/b82477a6-cac2-40d1-9b8a-b6600c04d85d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b8/b82477a6-cac2-40d1-9b8a-b6600c04d85d?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b2/b2d79741-0268-4e51-94db-96428db4a9e6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b2/b2d79741-0268-4e51-94db-96428db4a9e6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b2/b2d79741-0268-4e51-94db-96428db4a9e6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b2/b2d79741-0268-4e51-94db-96428db4a9e6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b2/b2d79741-0268-4e51-94db-96428db4a9e6?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3717c19-e545-4a73-8578-092bcacf3632?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3717c19-e545-4a73-8578-092bcacf3632?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c3/c3717c19-e545-4a73-8578-092bcacf3632?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c3/c3717c19-e545-4a73-8578-092bcacf3632?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3717c19-e545-4a73-8578-092bcacf3632?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/31/3145f9d8-53cf-4c9c-b48f-c720725be39c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/31/3145f9d8-53cf-4c9c-b48f-c720725be39c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/31/3145f9d8-53cf-4c9c-b48f-c720725be39c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/31/3145f9d8-53cf-4c9c-b48f-c720725be39c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/31/3145f9d8-53cf-4c9c-b48f-c720725be39c?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e86491b-e1d7-4385-b2a2-4c0c3f97c10a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e86491b-e1d7-4385-b2a2-4c0c3f97c10a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6e/6e86491b-e1d7-4385-b2a2-4c0c3f97c10a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6e/6e86491b-e1d7-4385-b2a2-4c0c3f97c10a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e86491b-e1d7-4385-b2a2-4c0c3f97c10a?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/27/279c42a6-fe14-4108-8141-c5cdb2cd5587?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/27/279c42a6-fe14-4108-8141-c5cdb2cd5587?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/27/279c42a6-fe14-4108-8141-c5cdb2cd5587?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/27/279c42a6-fe14-4108-8141-c5cdb2cd5587?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/27/279c42a6-fe14-4108-8141-c5cdb2cd5587?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/48/483e34a4-a5ac-424d-b9e3-b1240a693a59?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/48/483e34a4-a5ac-424d-b9e3-b1240a693a59?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/48/483e34a4-a5ac-424d-b9e3-b1240a693a59?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/48/483e34a4-a5ac-424d-b9e3-b1240a693a59?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/48/483e34a4-a5ac-424d-b9e3-b1240a693a59?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc02cb1f-5822-42cb-88a0-524a35bb8026?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc02cb1f-5822-42cb-88a0-524a35bb8026?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fc/fc02cb1f-5822-42cb-88a0-524a35bb8026?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/fc/fc02cb1f-5822-42cb-88a0-524a35bb8026?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc02cb1f-5822-42cb-88a0-524a35bb8026?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/02/0233f73a-b129-4f11-a147-82f86852cead?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/02/0233f73a-b129-4f11-a147-82f86852cead?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/02/0233f73a-b129-4f11-a147-82f86852cead?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/02/0233f73a-b129-4f11-a147-82f86852cead?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/02/0233f73a-b129-4f11-a147-82f86852cead?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5aba41f3-d3b8-4ff5-9361-dbae5db1729f?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5aba41f3-d3b8-4ff5-9361-dbae5db1729f?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5a/5aba41f3-d3b8-4ff5-9361-dbae5db1729f?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5a/5aba41f3-d3b8-4ff5-9361-dbae5db1729f?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5aba41f3-d3b8-4ff5-9361-dbae5db1729f?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe6107ab-c422-4cb6-990e-82a16326bb91?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe6107ab-c422-4cb6-990e-82a16326bb91?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/fe/fe6107ab-c422-4cb6-990e-82a16326bb91?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/fe/fe6107ab-c422-4cb6-990e-82a16326bb91?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe6107ab-c422-4cb6-990e-82a16326bb91?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98e4d0-ffcc-4111-9986-e4500e918430?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98e4d0-ffcc-4111-9986-e4500e918430?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98e4d0-ffcc-4111-9986-e4500e918430?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98e4d0-ffcc-4111-9986-e4500e918430?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98e4d0-ffcc-4111-9986-e4500e918430?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/aa/aa49032a-8051-4ac3-8b10-43e82a47e9c9?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/aa/aa49032a-8051-4ac3-8b10-43e82a47e9c9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/aa/aa49032a-8051-4ac3-8b10-43e82a47e9c9?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/aa/aa49032a-8051-4ac3-8b10-43e82a47e9c9?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/aa/aa49032a-8051-4ac3-8b10-43e82a47e9c9?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d7094f4-8b1d-4805-9994-3155ffb123b6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d7094f4-8b1d-4805-9994-3155ffb123b6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6d/6d7094f4-8b1d-4805-9994-3155ffb123b6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6d/6d7094f4-8b1d-4805-9994-3155ffb123b6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d7094f4-8b1d-4805-9994-3155ffb123b6?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/36/36adeb1e-dfab-48d2-862a-867df38537ee?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/36/36adeb1e-dfab-48d2-862a-867df38537ee?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/36/36adeb1e-dfab-48d2-862a-867df38537ee?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/36/36adeb1e-dfab-48d2-862a-867df38537ee?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/36/36adeb1e-dfab-48d2-862a-867df38537ee?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef1c485d-b32d-4968-87ff-f6397dbf7415?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef1c485d-b32d-4968-87ff-f6397dbf7415?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ef/ef1c485d-b32d-4968-87ff-f6397dbf7415?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ef/ef1c485d-b32d-4968-87ff-f6397dbf7415?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef1c485d-b32d-4968-87ff-f6397dbf7415?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ea/eaa9c21f-c3a4-4b22-97db-805c214abb64?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ea/eaa9c21f-c3a4-4b22-97db-805c214abb64?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ea/eaa9c21f-c3a4-4b22-97db-805c214abb64?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ea/eaa9c21f-c3a4-4b22-97db-805c214abb64?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ea/eaa9c21f-c3a4-4b22-97db-805c214abb64?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/cd/cdea037d-6b34-42b8-91bf-166ba5300153?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/cd/cdea037d-6b34-42b8-91bf-166ba5300153?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/cd/cdea037d-6b34-42b8-91bf-166ba5300153?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/cd/cdea037d-6b34-42b8-91bf-166ba5300153?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/cd/cdea037d-6b34-42b8-91bf-166ba5300153?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e92f215e-66aa-4811-908c-39118565a57c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e92f215e-66aa-4811-908c-39118565a57c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e9/e92f215e-66aa-4811-908c-39118565a57c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e9/e92f215e-66aa-4811-908c-39118565a57c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e92f215e-66aa-4811-908c-39118565a57c?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5fe04379-f1bf-4320-a04b-c0e7a6239fa6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5fe04379-f1bf-4320-a04b-c0e7a6239fa6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5f/5fe04379-f1bf-4320-a04b-c0e7a6239fa6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5f/5fe04379-f1bf-4320-a04b-c0e7a6239fa6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5fe04379-f1bf-4320-a04b-c0e7a6239fa6?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/71/71afd227-5fbf-4914-9b2d-418a325574af?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/71/71afd227-5fbf-4914-9b2d-418a325574af?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/71/71afd227-5fbf-4914-9b2d-418a325574af?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/71/71afd227-5fbf-4914-9b2d-418a325574af?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/71/71afd227-5fbf-4914-9b2d-418a325574af?rule=mo-80w",
+        "type": "image",
+        "alt": "Mercedes-Benz C 200"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/7f/7fdba226-2591-4970-a945-b5d91c596130?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7f/7fdba226-2591-4970-a945-b5d91c596130?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpsbsmodelimprovementscontrol&client.abtests=cossrpcorerecommenderpopularfiltersoff&client.abtests=accwebpublichomegaaa4off&adId=459377650"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=19890&c=Limousine&ms=17200%3B18&id%21=459377650&vc=Car&sid=9564498"
+    },
+    "vehicleCondition": "used",
+    "make": "Mercedes-Benz",
+    "model": "C 200",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/mercedes-benz.html",
+            "name": "Mercedes-Benz"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/mercedes-benz-c-200.html",
+            "name": "C 200"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Mercedes-Benz C 200 für 19.890 €",
+    "price_text": "Preis 19.890 € Erhöhter Preis Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug",
+      "Kategorie": "Limousine",
+      "Fahrzeugnummer": "F330481",
+      "Kilometerstand": "127.500 km",
+      "Hubraum": "1.991 cm³",
+      "Leistung": "135 kW (184 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Schadstoffklasse": "Euro6",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "02/2016",
+      "HU": "Neu",
+      "Klimatisierung": "2-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Vorne, Hinten",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "IRIDIUMSILBER",
+      "Farbe": "Silber Metallic",
+      "Innenausstattung": "Teilleder, Schwarz",
+      "Anhängelast gebremst": "1.800 kg",
+      "Anhängelast ungebremst": "730 kg",
+      "Stützlast": "75 kg",
+      "Gewicht": "1.445 kg",
+      "Zylinder": "4"
+    },
+    "description": "Gebrauchtfahrzeug • 127.500 km • 135 kW (184 PS) • Benzin • Automatik • 02/2016",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/7f/7fdba226-2591-4970-a945-b5d91c596130?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/68/682e3550-7ad0-4daa-8523-19719f32310f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b8/b82477a6-cac2-40d1-9b8a-b6600c04d85d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b2/b2d79741-0268-4e51-94db-96428db4a9e6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3717c19-e545-4a73-8578-092bcacf3632?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/31/3145f9d8-53cf-4c9c-b48f-c720725be39c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e86491b-e1d7-4385-b2a2-4c0c3f97c10a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/27/279c42a6-fe14-4108-8141-c5cdb2cd5587?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/48/483e34a4-a5ac-424d-b9e3-b1240a693a59?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc02cb1f-5822-42cb-88a0-524a35bb8026?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/02/0233f73a-b129-4f11-a147-82f86852cead?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5a/5aba41f3-d3b8-4ff5-9361-dbae5db1729f?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe6107ab-c422-4cb6-990e-82a16326bb91?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98e4d0-ffcc-4111-9986-e4500e918430?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/aa/aa49032a-8051-4ac3-8b10-43e82a47e9c9?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d7094f4-8b1d-4805-9994-3155ffb123b6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/36/36adeb1e-dfab-48d2-862a-867df38537ee?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef1c485d-b32d-4968-87ff-f6397dbf7415?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ea/eaa9c21f-c3a4-4b22-97db-805c214abb64?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cd/cdea037d-6b34-42b8-91bf-166ba5300153?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e9/e92f215e-66aa-4811-908c-39118565a57c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5fe04379-f1bf-4320-a04b-c0e7a6239fa6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/71/71afd227-5fbf-4914-9b2d-418a325574af?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/7f/7fdba226-2591-4970-a945-b5d91c596130?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/68/682e3550-7ad0-4daa-8523-19719f32310f?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b8/b82477a6-cac2-40d1-9b8a-b6600c04d85d?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/44/44bc3383-9b1c-42dc-bb6f-ed61db831bcf?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b2/b2d79741-0268-4e51-94db-96428db4a9e6?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3717c19-e545-4a73-8578-092bcacf3632?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/31/3145f9d8-53cf-4c9c-b48f-c720725be39c?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e86491b-e1d7-4385-b2a2-4c0c3f97c10a?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/27/279c42a6-fe14-4108-8141-c5cdb2cd5587?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/48/483e34a4-a5ac-424d-b9e3-b1240a693a59?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc02cb1f-5822-42cb-88a0-524a35bb8026?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/02/0233f73a-b129-4f11-a147-82f86852cead?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5a/5aba41f3-d3b8-4ff5-9361-dbae5db1729f?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe6107ab-c422-4cb6-990e-82a16326bb91?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d98e4d0-ffcc-4111-9986-e4500e918430?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 15,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/aa/aa49032a-8051-4ac3-8b10-43e82a47e9c9?rule=mo-1600",
+      "local_path": "foto/15.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 16,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d7094f4-8b1d-4805-9994-3155ffb123b6?rule=mo-1600",
+      "local_path": "foto/16.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 17,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/36/36adeb1e-dfab-48d2-862a-867df38537ee?rule=mo-1600",
+      "local_path": "foto/17.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 18,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef1c485d-b32d-4968-87ff-f6397dbf7415?rule=mo-1600",
+      "local_path": "foto/18.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 19,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ea/eaa9c21f-c3a4-4b22-97db-805c214abb64?rule=mo-1600",
+      "local_path": "foto/19.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 20,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/cd/cdea037d-6b34-42b8-91bf-166ba5300153?rule=mo-1600",
+      "local_path": "foto/20.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 21,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e9/e92f215e-66aa-4811-908c-39118565a57c?rule=mo-1600",
+      "local_path": "foto/21.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 22,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4589ff3-05e4-4c54-ae76-49a44225ed02?rule=mo-1600",
+      "local_path": "foto/22.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 23,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5fe04379-f1bf-4320-a04b-c0e7a6239fa6?rule=mo-1600",
+      "local_path": "foto/23.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 24,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5b/5b147453-f240-4d0f-a74e-bd81bda0ad76?rule=mo-1600",
+      "local_path": "foto/24.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 25,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/cc/cc1fa81f-41c1-42f4-aa38-3ac29223a189?rule=mo-1600",
+      "local_path": "foto/25.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 26,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/71/71afd227-5fbf-4914-9b2d-418a325574af?rule=mo-1600",
+      "local_path": "foto/26.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

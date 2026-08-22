@@ -1,0 +1,17 @@
+{"ts": "2026-07-05T09:57:49+00:00", "event": "run_created", "source_url": "https://m.mobile.de/auto-inserat/renault-kadjar-t%C3%BCv-inspektion-neu-scheckheftgepflegt-m%C3%B6nchengladbach/459570928.html?ref=seo&refId=91653578-3c85-8e20-fd35-9fd76eebfc30&searchId=91653578-3c85-8e20-fd35-9fd76eebfc30&type=ad"}
+{"ts": "2026-07-05T09:57:49+00:00", "event": "step", "step": "S1_scraping", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:58:20+00:00", "event": "step", "step": "S1_scraping", "status": "done", "note": ""}
+{"ts": "2026-07-05T09:58:20+00:00", "event": "step", "step": "S2_parsing", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:58:20+00:00", "event": "step", "step": "S2_parsing", "status": "done", "note": ""}
+{"ts": "2026-07-05T09:58:20+00:00", "event": "step", "step": "GATE_A", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:58:20+00:00", "event": "step", "step": "S3_translate_copy", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:58:20+00:00", "event": "step", "step": "S3_translate_copy", "status": "done", "note": ""}
+{"ts": "2026-07-05T09:58:20+00:00", "event": "step", "step": "GATE_B", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:58:20+00:00", "event": "step", "step": "S4_pricing", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:58:20+00:00", "event": "step", "step": "S4_pricing", "status": "done", "note": "Renault Kadjar Experience 13.042 €"}
+{"ts": "2026-07-05T09:58:20+00:00", "event": "step", "step": "GATE_C", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:58:20+00:00", "event": "step", "step": "S5_pdf_render", "status": "running", "note": ""}
+{"ts": "2026-07-05T09:58:27+00:00", "event": "step", "step": "S5_pdf_render", "status": "done", "note": "C:\\Users\\Utente\\Desktop\\qui tutto\\Digital Empire\\Clienti\\Prof Autocad\\preventivo-forge\\runs\\AF-20260705-115749-459570928\\preventivo_renault-kadjar.pdf"}
+{"ts": "2026-07-05T09:58:29+00:00", "event": "step", "step": "GATE_D", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:58:32+00:00", "event": "step", "step": "GATE_IMG", "status": "passed", "note": ""}
+{"ts": "2026-07-05T09:58:36+00:00", "event": "step", "step": "GATE_R", "status": "passed", "note": ""}

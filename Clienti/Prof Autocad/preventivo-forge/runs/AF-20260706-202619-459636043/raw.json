@@ -1,0 +1,742 @@
+{
+  "source_url": "https://suchen.mobile.de/fahrzeuge/details.html?id=459636043&sb=rel&od=up&vc=Car&dam=false&fr=2018&ml=%3A80000&ms=16700%3B%3B%3B&ms=4%3B%3B%3B&ms=1700%3B%3B%3B&ms=1900%3B%3B%3B&ms=3100%3B%3B%3B&ms=3500%3B%3B%3B&ms=4700%3B%3B%3B&ms=8600%3B%3B%3B&ms=270%3B%3B%3B&ms=14600%3B%3B%3B&ms=12400%3B%3B%3B&ms=11650%3B%3B%3B&ms=14800%3B%3B%3B&ms=15200%3B%3B%3B&ms=15500%3B%3B%3B&ms=15900%3B%3B%3B&ms=16600%3B%3B%3B&ms=17200%3B%3B%3B&ms=20100%3B%3B%3B&ms=21600%3B%3B%3B&ms=137%3B%3B%3B&p=35000&pa=CAM_360_DEGREES&pa=REAR_VIEW_CAM&pageNumber=2&s=Car&ref=srp&searchId=e4c5b6ba-e01a-130f-35d0-6f7f2a07cbad&refId=e4c5b6ba-e01a-130f-35d0-6f7f2a07cbad",
+  "scraped_at": "2026-07-06T18:26:40+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Gebrauchtfahrzeug"
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "SUV/Geländewagen/Pickup"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "F4B"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "55 e-tron quattro / S-Line"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "61.000 km"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "250 kW (340 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Elektromotor"
+      },
+      {
+        "label": "Anderer Energieträger",
+        "tag": "envkv.otherEnergySource",
+        "value": "Strom"
+      },
+      {
+        "label": "Batterie",
+        "tag": "battery",
+        "value": "inklusive"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "-- kWh/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "0 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Automatik"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Erstzulassung",
+        "tag": "firstRegistration",
+        "value": "05/2024"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "1"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "3-Zonen-Klimaautomatik"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Vorne, Hinten, Kamera"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front-, Seiten- und weitere Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "Kieselgrau"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grau"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Vollleder, Schwarz"
+      },
+      {
+        "label": "Anhängelast gebremst",
+        "tag": "trailerLoadBraked",
+        "value": "1.800 kg"
+      },
+      {
+        "label": "Anhängelast ungebremst",
+        "tag": "trailerLoadUnbraked",
+        "value": "750 kg"
+      },
+      {
+        "label": "Gewicht",
+        "tag": "netWeight",
+        "value": "2.235 kg"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": false
+    },
+    "shortTitle": "Audi Q4 e-tron",
+    "subTitle": "55 quattro S-Line *20Zoll*LEDER*Wärmep",
+    "makeKey": "Audi",
+    "modelKey": "Q4 e-tron",
+    "isNew": false,
+    "batteryInformation": {
+      "warrantyInfo": {
+        "label": "Verbleibende Garantie",
+        "value": "Nicht angegeben",
+        "infoText": {
+          "headline": "Batterie-Garantie",
+          "text": "Die Garantie für eine E-Fahrzeug-Batterie sichert dem Käufer in der Regel zu, dass die Leistungsfähigkeit der Batterie nicht zu stark abbaut. Entweder über einen festgelegten Zeitraum (meist 8 Jahre) oder eine bestimmte Laufleistung (meist zw. 100.000 - 160.000 km). Oft wird ein Wert von 70 bis 80 Prozent der ursprünglichen Kapazität zugesichert. Je nach Hersteller gibt es größere Unterschiede. Erkundige dich daher direkt beim Verkäufer nach den konkreten Garantiebedingungen."
+        }
+      },
+      "chargingTimes": {
+        "label": "Ladezeit",
+        "fastDc": {
+          "label": "Schnellladen (DC, max 300 kW)",
+          "value": "-",
+          "infoText": {
+            "headline": "Öffentliches Laden (50 kW)",
+            "text": "Die Schnellladezeit für Elektrofahrzeuge wird hauptsächlich durch die maximale Ladegeschwindigkeit bestimmt, die sowohl vom bordeigenen Ladegerät des Fahrzeugs als auch durch die Ladestation abhängt. Je höher die kW-Leistung beim Laden, desto schneller die Aufladung der Batterie und desto kürzer die Ladedauer.\n\nDie Ladezeit ist allerdings auch abhängig von anderen Faktoren: dem Ladezustand der Batterie (je leerer die Batterie, desto höher die Ladeleistung), der Außentemperatur und ob an der gleichen Ladesäule noch ein weiteres Fahrzeug lädt."
+          }
+        },
+        "homeAc": {
+          "label": "Zu Hause (AC, 11 kW)",
+          "value": "-",
+          "infoText": {
+            "headline": "Aufladen zu Hause (11 kW)",
+            "text": "Wer den nötigen Platz hat, kann sein Elektrofahrzeug bequem zu Hause aufladen. Notwendig ist nur ein Platz auf dem Grundstück – Garage, Carport, Einfahrt – und eine Wallbox.\n\nEine Wallbox erzeugt eine höhere Ladeleistung als eine Haushaltssteckdose und lädt das Fahrzeug deutlich schneller. Die Leistung reicht von ca. 4 kW bis 22 kW – je höher die Leistung, desto kürzer die Ladezeit."
+          }
+        }
+      }
+    },
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": false,
+    "hasElectricEngine": true,
+    "features": [
+      "Abgedunkelte Scheiben",
+      "ABS",
+      "Abstandstempomat",
+      "Allradantrieb",
+      "Ambiente-Beleuchtung",
+      "Android Auto",
+      "Apple CarPlay",
+      "Armlehne",
+      "Beheizbare Frontscheibe",
+      "Beheizbares Lenkrad",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Dachreling",
+      "Elektr. Fensterheber",
+      "Elektr. Heckklappe",
+      "Elektr. Seitenspiegel",
+      "Elektr. Seitenspiegel anklappbar",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Garantie",
+      "Geschwindigkeitsbegrenzer",
+      "Head-Up Display",
+      "Innenspiegel autom. abblendend",
+      "Isofix",
+      "Isofix Beifahrersitz",
+      "Lederlenkrad",
+      "LED-Scheinwerfer",
+      "Leichtmetallfelgen",
+      "Lichtsensor",
+      "Lordosenstütze",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Radio DAB",
+      "Regensensor",
+      "Reifendruckkontrolle",
+      "Schaltwippen",
+      "Schlüssellose Zentralverriegelung (Keyless)",
+      "Servolenkung",
+      "Sitzheizung",
+      "Sommerreifen",
+      "Soundsystem",
+      "Sportpaket",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Tagfahrlicht",
+      "Touchscreen",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Wärmepumpe",
+      "Zentralverriegelung"
+    ],
+    "highlights": [
+      "Dynamik-Paket plus",
+      "Assistenz-Paket plus",
+      "Sonos Premium HIFI"
+    ],
+    "sellerId": 457843,
+    "priceRating": {
+      "rating": "REASONABLE_PRICE",
+      "ratingLabel": "Fairer Preis",
+      "thresholdLabels": [
+        "27.700 €",
+        "35.900 €",
+        "38.700 €",
+        "43.100 €",
+        "46.200 €",
+        "51.400 €"
+      ],
+      "vehiclePriceOffset": 97
+    },
+    "segment": "Car",
+    "title": "Audi Q4 e-tron 55 quattro S-Line *20Zoll*LEDER*Wärmep",
+    "url": "https://suchen.mobile.de/auto-inserat/audi-q4-e-tron-55-quattro-s-line-20zoll-leder-w%C3%A4rmep-helmstedt/459636043.html",
+    "vc": "Car",
+    "category": "OffRoad",
+    "id": 459636043,
+    "price": {
+      "gross": "42.970 €",
+      "grossAmount": 42970,
+      "grossCurrency": "EUR",
+      "net": "36.109 €",
+      "netAmount": 36109.24,
+      "type": "FIXED",
+      "vat": "19% MwSt."
+    },
+    "kba": {
+      "hsn": "0588",
+      "tsn": "CAP"
+    },
+    "customDimensions": {
+      "10": "platinum",
+      "47": "NA_NA_NA_NA_NA_3usp",
+      "126": "hero_logo_15_NA_NA_languages_showroom"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "Sonderausstattung:<ul><li>Akustikglas Türscheiben vorn</li><li>Assistenz-Paket plus</li><li>Audi connect (Internetbasierende Dienste)</li><li>Dynamik-Paket plus</li><li>Einstiegsleisten mit Aluminiumeinlage, beleuchtet</li><li>Exterieur-Paket S line</li><li>Fahrassistenz-System: Fernlichtassistent</li><li>Frontscheibe Klimakomfort / Akustikglas, heizbar</li><li>Gepäckraumklappe elektr. betätigt (öffnen + schliessen) mit sensorgesteuerter Entriegelung</li><li>Heizungs-/Klimaanlage: Wärmepumpe</li><li>Interieur-Paket: Normalsitze, Sitzbezug Kunstleder / Leder, schwarz</li><li>Klima-Paket</li><li>Komfort-Paket</li><li>Kontur / Ambientebeleuchtungs-Paket (plus)</li><li>Lenkrad (Leder - Doppelspeichen) mit Multifunktion und Schaltfunktion</li><li>Lenkrad heizbar (Leder)</li><li>Multi-Media-Interface MMI Navigation Pro mit MMI Touch</li><li>Schließ-/Startsystem Advanced Key (Komfortschlüssel)</li><li>Seitenairbag vorn und hinten</li><li>Smartphone-Paket</li><li>Sound-System Sonos Premium</li><li>Verglasung hinten abgedunkelt (Privacyverglasung)</li><li>Augmented-Reality-Head-up-Display</li><li>LM-Felgen 20Zoll (5-Y-Speichen)</li></ul><br>Serienausstattung:<ul><li>Airbag Beifahrerseite abschaltbar</li><li>Akustischer Fußgängerschutz, Außensound (e-sound)</li><li>Antriebsart: Allradantrieb</li><li>Audi connect (Notruf- und Assistance-System)</li><li>Audi connect (Remote / Control)</li><li>Dachhimmel Stoff</li><li>Dachreling (Aluminium)</li><li>Elektromotor 250 kW (cont. 77 kW, Dual-Elektromotor)</li><li>Elektron. Stabilitäts-Programm (ESP)</li><li>Fahrassistenz-System: Ausweich-Assistent</li><li>Fahrassistenz-System: Bremsassistent (Audi pre sense front)</li><li>Fahrassistenz-System: Müdigkeitserkennung (Pausenempfehlung)</li><li>Fahrassistenz-System: Spurverlassenswarnung</li><li>Fensterheber elektrisch vorn + hinten</li><li>Geschwindigkeits-Begrenzeranlage</li><li>Getriebe für Elektrofahrzeug</li><li>Glanz-Paket</li><li>Heckleuchten LED</li><li>HV-Batterie 82 kWh brutto / 77 kWh netto</li><li>Isofix-Aufnahmen für Kindersitz an Beifahrersitz und Rücksitz</li><li>Komfort-Standklimatisierung</li><li>Kontrast-Lackierung</li><li>Licht- und Regensensor</li><li>Mittelarmlehne vorn Komfortausstattung</li><li>On-Board-Ladegerät (bis 11 kW)</li><li>Progressivlenkung</li><li>Radstand 2764 mm</li><li>Reifenkontroll-Anzeige</li><li>Scheinwerfer LED</li><li>Sitzheizung vorn</li><li>Steckdose (12V-Anschluß) in Mittelkonsole vorn</li><li>Tagfahrlicht LED</li><li>Uni-Lackierung</li><li>Wegfahrsperre (elektronisch)</li><li>1.HAND / Deutsches Fahrzeug</li><li>Netto/Export möglich</li><li>Irrtümer und Zwischenverkauf vorbehalten....</li></ul><br><b>Zwischenverkauf und Irrtümer für dieses Angebot sind ausdrücklich vorbehalten. Die Fahrzeugbeschreibung dient lediglich der allgemeinen Identifizierung des Fahrzeuges und stellt keine Gewährleistung im kaufrechtlichen Sinne dar. Bitte kontaktieren Sie unser Verkaufspersonal.</b>",
+    "contactInfo": {
+      "address1": "Am Lohen 11",
+      "address2": "DE-38350 Helmstedt",
+      "name": "KALE-Automobile GmbH",
+      "markingText": "<div>Herzlich willkommen bei <b>KALE-Automobile GmbH</b> - <b>offizieller Vertragshändler für </b><b>HYMER-,</b> <b>KNAUS, Carado-, ERIBA, LMC- sowie Tabbert</b>-Reisemobile<br /></div><div><br /></div><div>Ihrem kompetenten<b> Ansprechtpartner für </b>top gepflegte <b>Gebrauchtwagen und Reisemobile</b>.<br /></div><div><br /></div><div>Bei uns finden Sie ständig über 900 werkstattgeprüfte Gebrauchtwagen &amp; Wohnmobile im Angebot vor Ort.<br /></div><div><br /></div><div>An unserem zweiten Standort bieten wir Ihnen außerdem als <b>offizieller Vertragshändler für Carado</b>-, <b>HYMER-,</b> <b>KNAUS, LMC- sowie Tabbert</b>-Reisemobile, ständig eine <b>große Auswahl an neuen Wohnmobilen und Wohnwagen</b> vor Ort.<br /></div><div><br /></div><div>Wir freuen uns auf Ihren Besuch.<br /></div><div><br /></div><div><b>www.kale-automobile.de</b><br /></div>",
+      "openingHours": [
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "09:30 Uhr - 14:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 21.03.2000",
+      "rating": {
+        "count": 82,
+        "totalCount": 855,
+        "score": 4.7,
+        "scoreLocalized": "4,7",
+        "link": "https://www.mobile.de/bewertungen/KALE-AUTOMOBILE?lang=de",
+        "recommendationRate": 95,
+        "adRealityRate": 95,
+        "consultingScore": 4.569620253164557,
+        "friendlinessScore": 4.790123456790123,
+        "responseTimeScore": 4.7682926829268295
+      },
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d83a1b4c-de98-4971-899e-c69b93f5dd6a?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/d8/d83a1b4c-de98-4971-899e-c69b93f5dd6a?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/d8/d83a1b4c-de98-4971-899e-c69b93f5dd6a?rule=mo-360 360w",
+        "alt": "KALE-Automobile GmbH"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)5351 3997940",
+          "uri": "tel:+4953513997940"
+        },
+        {
+          "type": "2. Tel-Nr.",
+          "number": "+49 (0)5351 553300",
+          "uri": "tel:+495351553300"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 (0)5351 5533029"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {},
+      "mapLink": "https://maps.google.com/maps?q=52.2524564,10.990613+(KALE-Automobile%20GmbH)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 52.2524564,
+        "lon": 10.990613
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=457843",
+      "showroomGallery": [
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/89/8923ba2c-8a1f-4c7a-bd4c-4e084c85ab39?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/89/8923ba2c-8a1f-4c7a-bd4c-4e084c85ab39?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/89/8923ba2c-8a1f-4c7a-bd4c-4e084c85ab39?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/89/8923ba2c-8a1f-4c7a-bd4c-4e084c85ab39?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/89/8923ba2c-8a1f-4c7a-bd4c-4e084c85ab39?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/71/713fcedd-2090-4047-a5a6-339167b38c4d?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/71/713fcedd-2090-4047-a5a6-339167b38c4d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/71/713fcedd-2090-4047-a5a6-339167b38c4d?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/71/713fcedd-2090-4047-a5a6-339167b38c4d?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/71/713fcedd-2090-4047-a5a6-339167b38c4d?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/dc/dcb6beb1-0997-4660-bf44-b1cd23b075cd?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/dc/dcb6beb1-0997-4660-bf44-b1cd23b075cd?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/dc/dcb6beb1-0997-4660-bf44-b1cd23b075cd?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/dc/dcb6beb1-0997-4660-bf44-b1cd23b075cd?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/dc/dcb6beb1-0997-4660-bf44-b1cd23b075cd?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/2a/2ab3803e-0b68-46fb-a9e4-9b52e0bd3edb?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/2a/2ab3803e-0b68-46fb-a9e4-9b52e0bd3edb?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/2a/2ab3803e-0b68-46fb-a9e4-9b52e0bd3edb?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/2a/2ab3803e-0b68-46fb-a9e4-9b52e0bd3edb?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/2a/2ab3803e-0b68-46fb-a9e4-9b52e0bd3edb?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/ac/acb12604-0bab-4572-8bcd-378d148d706e?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ac/acb12604-0bab-4572-8bcd-378d148d706e?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ac/acb12604-0bab-4572-8bcd-378d148d706e?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/ac/acb12604-0bab-4572-8bcd-378d148d706e?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ac/acb12604-0bab-4572-8bcd-378d148d706e?rule=mo-80",
+          "type": "image"
+        },
+        {
+          "src": "https://img.classistatic.de/api/v1/mo-prod/images/99/993e8118-eede-4408-8f05-e5b48145ae04?rule=mo-360",
+          "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/99/993e8118-eede-4408-8f05-e5b48145ae04?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/99/993e8118-eede-4408-8f05-e5b48145ae04?rule=mo-640 640w, https://img.classistatic.de/api/v1/mo-prod/images/99/993e8118-eede-4408-8f05-e5b48145ae04?rule=mo-1600 1600w",
+          "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/99/993e8118-eede-4408-8f05-e5b48145ae04?rule=mo-80",
+          "type": "image"
+        }
+      ],
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ea/ea8e1d7b-249f-4a85-9347-014d44356ea9?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ea/ea8e1d7b-249f-4a85-9347-014d44356ea9?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ea/ea8e1d7b-249f-4a85-9347-014d44356ea9?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ea/ea8e1d7b-249f-4a85-9347-014d44356ea9?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 439,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=459636043&loanType=balloon&loanDuration=60&downPayment=8594&channel=desktop",
+      "type": "DF",
+      "flowType": "DF",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 8594,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 34376,
+        "interestRateNominal": 6.78,
+        "interestRateEffective": 6.99,
+        "monthlyInstallment": 411.17,
+        "finalInstallment": 19336.5,
+        "totalInterest": 9219.34,
+        "totalAmount": 43595.34,
+        "localized": {
+          "downPayment": "8.594 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "34.376 €",
+          "interestRateNominal": "6,78%",
+          "interestRateEffective": "6,99%",
+          "monthlyInstallment": "412 €",
+          "finalInstallment": "19.336,50 €",
+          "totalInterest": "9.219,34 €",
+          "totalAmount": "43.595,34 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a6/a632ead7-f5de-477d-a16d-f17e285f07ac?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a6/a632ead7-f5de-477d-a16d-f17e285f07ac?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a6/a632ead7-f5de-477d-a16d-f17e285f07ac?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a6/a632ead7-f5de-477d-a16d-f17e285f07ac?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a6/a632ead7-f5de-477d-a16d-f17e285f07ac?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/95/958f43cb-27e0-407f-a10e-253022972cf6?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/95/958f43cb-27e0-407f-a10e-253022972cf6?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/95/958f43cb-27e0-407f-a10e-253022972cf6?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/95/958f43cb-27e0-407f-a10e-253022972cf6?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/95/958f43cb-27e0-407f-a10e-253022972cf6?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b366e71a-735e-4684-bdb5-80a3f02946e0?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b366e71a-735e-4684-bdb5-80a3f02946e0?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b3/b366e71a-735e-4684-bdb5-80a3f02946e0?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b3/b366e71a-735e-4684-bdb5-80a3f02946e0?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b366e71a-735e-4684-bdb5-80a3f02946e0?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/81/810849cd-8df2-435e-ab2f-b77fb3f39ea5?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/81/810849cd-8df2-435e-ab2f-b77fb3f39ea5?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/81/810849cd-8df2-435e-ab2f-b77fb3f39ea5?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/81/810849cd-8df2-435e-ab2f-b77fb3f39ea5?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/81/810849cd-8df2-435e-ab2f-b77fb3f39ea5?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/98/988a4e99-a387-41ad-a1a5-c55a88a6161d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/98/988a4e99-a387-41ad-a1a5-c55a88a6161d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/98/988a4e99-a387-41ad-a1a5-c55a88a6161d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/98/988a4e99-a387-41ad-a1a5-c55a88a6161d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/98/988a4e99-a387-41ad-a1a5-c55a88a6161d?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e34dc6-ed4b-44dd-a624-14081f93a2cf?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e34dc6-ed4b-44dd-a624-14081f93a2cf?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e34dc6-ed4b-44dd-a624-14081f93a2cf?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e34dc6-ed4b-44dd-a624-14081f93a2cf?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e34dc6-ed4b-44dd-a624-14081f93a2cf?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/15/15dcdc8c-a680-42c7-ba21-a7ea33fc4e1b?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/15/15dcdc8c-a680-42c7-ba21-a7ea33fc4e1b?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/15/15dcdc8c-a680-42c7-ba21-a7ea33fc4e1b?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/15/15dcdc8c-a680-42c7-ba21-a7ea33fc4e1b?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/15/15dcdc8c-a680-42c7-ba21-a7ea33fc4e1b?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/7e/7eaed448-2790-4d2f-83a7-859b98abbe84?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7e/7eaed448-2790-4d2f-83a7-859b98abbe84?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7e/7eaed448-2790-4d2f-83a7-859b98abbe84?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/7e/7eaed448-2790-4d2f-83a7-859b98abbe84?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7e/7eaed448-2790-4d2f-83a7-859b98abbe84?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/74/74aebf3d-28a6-4bb9-9703-c8a13c7c1013?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/74/74aebf3d-28a6-4bb9-9703-c8a13c7c1013?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/74/74aebf3d-28a6-4bb9-9703-c8a13c7c1013?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/74/74aebf3d-28a6-4bb9-9703-c8a13c7c1013?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/74/74aebf3d-28a6-4bb9-9703-c8a13c7c1013?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e6/e6789601-55b9-4671-bf87-a30ac2c6da31?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e6/e6789601-55b9-4671-bf87-a30ac2c6da31?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e6/e6789601-55b9-4671-bf87-a30ac2c6da31?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e6/e6789601-55b9-4671-bf87-a30ac2c6da31?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e6/e6789601-55b9-4671-bf87-a30ac2c6da31?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/ac/accccd3a-9a40-47d5-8f5d-c4322bbc2b51?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/ac/accccd3a-9a40-47d5-8f5d-c4322bbc2b51?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/ac/accccd3a-9a40-47d5-8f5d-c4322bbc2b51?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/ac/accccd3a-9a40-47d5-8f5d-c4322bbc2b51?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/ac/accccd3a-9a40-47d5-8f5d-c4322bbc2b51?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e05ef9b7-1be5-41dd-8abd-04c85a8ae174?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e05ef9b7-1be5-41dd-8abd-04c85a8ae174?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/e0/e05ef9b7-1be5-41dd-8abd-04c85a8ae174?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/e0/e05ef9b7-1be5-41dd-8abd-04c85a8ae174?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e05ef9b7-1be5-41dd-8abd-04c85a8ae174?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f639377-d9ef-42a6-a507-5f413a78304c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f639377-d9ef-42a6-a507-5f413a78304c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/5f/5f639377-d9ef-42a6-a507-5f413a78304c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/5f/5f639377-d9ef-42a6-a507-5f413a78304c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f639377-d9ef-42a6-a507-5f413a78304c?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/31/314832b6-d106-46c1-986c-2a070048e0a7?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/31/314832b6-d106-46c1-986c-2a070048e0a7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/31/314832b6-d106-46c1-986c-2a070048e0a7?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/31/314832b6-d106-46c1-986c-2a070048e0a7?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/31/314832b6-d106-46c1-986c-2a070048e0a7?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e2bdca-bb4f-4227-ad04-22fdb6c542f7?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e2bdca-bb4f-4227-ad04-22fdb6c542f7?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e2bdca-bb4f-4227-ad04-22fdb6c542f7?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e2bdca-bb4f-4227-ad04-22fdb6c542f7?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e2bdca-bb4f-4227-ad04-22fdb6c542f7?rule=mo-80w",
+        "type": "image",
+        "alt": "Audi Q4 e-tron"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/a6/a632ead7-f5de-477d-a16d-f17e285f07ac?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a6/a632ead7-f5de-477d-a16d-f17e285f07ac?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpcorerecommenderpopularfilterspopularfilters&client.abtests=cossrpsbsmodelimprovementscontrol&client.abtests=accwebpublichomegaaa4off&adId=459636043"
+    },
+    "similarAdsInfo": {
+      "type": "similar-seller-ads",
+      "apiParams": "/similar/?p=42970&c=OffRoad&ms=1900%3B61&id%21=459636043&vc=Car&sid=457843"
+    },
+    "vehicleCondition": "used",
+    "make": "Audi",
+    "model": "Q4 e-tron",
+    "leasingRate": null,
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false,
+    "searchId": "e4c5b6ba-e01a-130f-35d0-6f7f2a07cbad"
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    }
+  ],
+  "dom": {
+    "title": "Audi Q4 e-tron für 42.970 €",
+    "price_text": "Preis 42.970 € Fairer Preis 36.109 € (Netto) , 19% MwSt. Finanzierung Wie funktioniert's? 1. Daten eintragen Die Angaben werden zur Prüfung deiner Finanzierungsanfrage benötigt 2. Ergebnis erhalten Du erhältst dein unverbindliches Finanzierungsangebot 3. Vor Ort abschließen Schließe die Finanzierung einfach direkt vor Ort beim Händler ab Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich",
+    "attributes": {
+      "Fahrzeugzustand": "Gebrauchtfahrzeug",
+      "Kategorie": "SUV/Geländewagen/Pickup",
+      "Baureihe": "F4B",
+      "Ausstattungslinie": "55 e-tron quattro / S-Line",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "61.000 km",
+      "Leistung": "250 kW (340 PS)",
+      "Antriebsart": "Elektromotor",
+      "Anderer Energieträger": "Strom",
+      "Batterie": "inklusive",
+      "Energieverbrauch (komb.) 2": "-- kWh/100km",
+      "CO₂-Emissionen (komb.) 2": "0 g/km",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Automatik",
+      "Umweltplakette": "4 (Grün)",
+      "Erstzulassung": "05/2024",
+      "Anzahl der Fahrzeughalter": "1",
+      "Klimatisierung": "3-Zonen-Klimaautomatik",
+      "Einparkhilfe": "Vorne, Hinten, Kamera",
+      "Airbags": "Front-, Seiten- und weitere Airbags",
+      "Farbe (Hersteller)": "Kieselgrau",
+      "Farbe": "Grau",
+      "Innenausstattung": "Vollleder, Schwarz",
+      "Anhängelast gebremst": "1.800 kg",
+      "Anhängelast ungebremst": "750 kg",
+      "Gewicht": "2.235 kg"
+    },
+    "description": "Gebrauchtfahrzeug • 61.000 km • 250 kW (340 PS) • Automatik • 05/2024",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/a6/a632ead7-f5de-477d-a16d-f17e285f07ac?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/95/958f43cb-27e0-407f-a10e-253022972cf6?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b3/b366e71a-735e-4684-bdb5-80a3f02946e0?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/81/810849cd-8df2-435e-ab2f-b77fb3f39ea5?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/98/988a4e99-a387-41ad-a1a5-c55a88a6161d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e34dc6-ed4b-44dd-a624-14081f93a2cf?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/15/15dcdc8c-a680-42c7-ba21-a7ea33fc4e1b?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7e/7eaed448-2790-4d2f-83a7-859b98abbe84?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/74/74aebf3d-28a6-4bb9-9703-c8a13c7c1013?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e6/e6789601-55b9-4671-bf87-a30ac2c6da31?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ac/accccd3a-9a40-47d5-8f5d-c4322bbc2b51?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e0/e05ef9b7-1be5-41dd-8abd-04c85a8ae174?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f639377-d9ef-42a6-a507-5f413a78304c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/31/314832b6-d106-46c1-986c-2a070048e0a7?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e2bdca-bb4f-4227-ad04-22fdb6c542f7?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a6/a632ead7-f5de-477d-a16d-f17e285f07ac?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/95/958f43cb-27e0-407f-a10e-253022972cf6?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b3/b366e71a-735e-4684-bdb5-80a3f02946e0?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/81/810849cd-8df2-435e-ab2f-b77fb3f39ea5?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/98/988a4e99-a387-41ad-a1a5-c55a88a6161d?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e34dc6-ed4b-44dd-a624-14081f93a2cf?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/15/15dcdc8c-a680-42c7-ba21-a7ea33fc4e1b?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/7e/7eaed448-2790-4d2f-83a7-859b98abbe84?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/74/74aebf3d-28a6-4bb9-9703-c8a13c7c1013?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e6/e6789601-55b9-4671-bf87-a30ac2c6da31?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/ac/accccd3a-9a40-47d5-8f5d-c4322bbc2b51?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/e0/e05ef9b7-1be5-41dd-8abd-04c85a8ae174?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f639377-d9ef-42a6-a507-5f413a78304c?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/31/314832b6-d106-46c1-986c-2a070048e0a7?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 14,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1e2bdca-bb4f-4227-ad04-22fdb6c542f7?rule=mo-1600",
+      "local_path": "foto/14.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

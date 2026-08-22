@@ -1,0 +1,877 @@
+{
+  "source_url": "https://suchen.mobile.de/auto-inserat/hyundai-i20-fl-1-0-t-gdi-90-ps-6-mt-2wd-select-hamburg/459479745.html?lst=p",
+  "scraped_at": "2026-07-04T11:11:29+00:00",
+  "scrape_method": "chrome-cdp",
+  "initial_state_ad": {
+    "attributes": [
+      {
+        "label": "Fahrzeugzustand",
+        "tag": "damageCondition",
+        "value": "Neufahrzeug"
+      },
+      {
+        "label": "Kategorie",
+        "tag": "category",
+        "value": "Kleinwagen"
+      },
+      {
+        "label": "Baureihe",
+        "tag": "modelRange",
+        "value": "BC3"
+      },
+      {
+        "label": "Ausstattungslinie",
+        "tag": "trimLine",
+        "value": "select"
+      },
+      {
+        "label": "Fahrzeugnummer",
+        "tag": "sku",
+        "value": "202612083"
+      },
+      {
+        "label": "Verfügbarkeit",
+        "tag": "availability",
+        "value": "Sofort"
+      },
+      {
+        "label": "Herkunft",
+        "tag": "countryVersion",
+        "value": "Deutsche Ausführung"
+      },
+      {
+        "label": "Kilometerstand",
+        "tag": "mileage",
+        "value": "15 km"
+      },
+      {
+        "label": "Hubraum",
+        "tag": "cubicCapacity",
+        "value": "998 cm³"
+      },
+      {
+        "label": "Leistung",
+        "tag": "power",
+        "value": "66 kW (90 PS)"
+      },
+      {
+        "label": "Antriebsart",
+        "tag": "envkv.engineType",
+        "value": "Verbrennungsmotor"
+      },
+      {
+        "label": "Kraftstoffart",
+        "tag": "fuel",
+        "value": "Benzin"
+      },
+      {
+        "label": "Energieverbrauch (komb.)",
+        "tag": "envkv.energyConsumption",
+        "value": "5,7 l/100km",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Emissionen (komb.)",
+        "tag": "envkv.co2Emissions",
+        "value": "129 g/km",
+        "infoText": {
+          "headline": "CO₂-Emissionen",
+          "text": "Es werden nur die CO₂-Emissionen angegeben, die durch den Betrieb des Pkw entstehen. CO₂-Emissionen, die durch die Produktion und Bereitstellung des Pkw sowie des Kraftstoffes bzw. der Energieträger entstehen oder vermieden werden, werden bei der Ermittlung der CO₂-Emissionen gemäß WLTP nicht berücksichtigt."
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "CO₂-Klasse",
+        "tag": "envkv.co2Class",
+        "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+        "image": "img.classistatic.de/api/v1/mo-prod/images/co2class-D",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffverbrauch",
+        "tag": "envkv.consumptionDetails.fuel",
+        "value": [
+          "5,7 l/100km (kombiniert)",
+          "7,2 l/100km (Innenstadt)",
+          "5,5 l/100km (Stadtrand)",
+          "4,9 l/100km (Landstraße)",
+          "6,0 l/100km (Autobahn)"
+        ],
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
+        "tag": "envkv.consumptionCosts",
+        "value": "1.536 €/Jahr",
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftstoffpreis",
+        "tag": "envkv.fuel.price",
+        "value": "1,80 €/l (Jahresdurchschnitt 2024)"
+      },
+      {
+        "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
+        "tag": "envkv.co2Costs",
+        "value": [
+          "2.457 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 127 €/t)",
+          "1.161 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
+          "3.870 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 200 €/t)"
+        ],
+        "infoText": {
+          "headline": "Mögliche CO₂-Kosten über die nächsten 10 Jahre",
+          "text": "<p>Aufgrund der CO₂-Bepreisung sind künftige Erhöhungen der Kraftstoffkosten möglich. Die künftige CO₂-Preisentwicklung ist unsicher, daher werden die möglichen CO₂-Kosten anhand von drei angenommenen CO₂-Preisen für den Zeitraum 2026 bis 2035 berechnet.</p><p>Die tatsächlichen CO₂-Preise können sowohl höher als auch niedriger als in den hier zugrunde liegenden Modellrechnungen ausfallen. Die CO₂-Kosten sind beim Tanken mit den Kraftstoffkosten zu bezahlen.</p><p>Weitere Informationen unter <a href=\"https://www.alternativ-mobil.info/\" target=\"_blank\">www.alternativ-mobil.info/</a></p>"
+        },
+        "footnoteIndices": [
+          0
+        ]
+      },
+      {
+        "label": "Kraftfahrzeugsteuer",
+        "tag": "envkv.tax",
+        "value": "90 €/Jahr"
+      },
+      {
+        "label": "Anzahl Sitzplätze",
+        "tag": "numSeats",
+        "value": "5"
+      },
+      {
+        "label": "Anzahl der Türen",
+        "tag": "doorCount",
+        "value": "4/5"
+      },
+      {
+        "label": "Getriebe",
+        "tag": "transmission",
+        "value": "Schaltgetriebe"
+      },
+      {
+        "label": "Schadstoffklasse",
+        "tag": "emissionClass",
+        "value": "Euro 6e"
+      },
+      {
+        "label": "Umweltplakette",
+        "tag": "emissionsSticker",
+        "value": "4 (Grün)"
+      },
+      {
+        "label": "Baujahr",
+        "tag": "constructionYear",
+        "value": "2026"
+      },
+      {
+        "label": "Anzahl der Fahrzeughalter",
+        "tag": "numberOfPreviousOwners",
+        "value": "0"
+      },
+      {
+        "label": "Klimatisierung",
+        "tag": "climatisation",
+        "value": "Klimaanlage"
+      },
+      {
+        "label": "Einparkhilfe",
+        "tag": "parkAssists",
+        "value": "Kamera, Hinten"
+      },
+      {
+        "label": "Airbags",
+        "tag": "airbag",
+        "value": "Front- und Seiten-Airbags"
+      },
+      {
+        "label": "Farbe (Hersteller)",
+        "tag": "manufacturerColorName",
+        "value": "Aurora Grey / MET"
+      },
+      {
+        "label": "Farbe",
+        "tag": "color",
+        "value": "Grau"
+      },
+      {
+        "label": "Innenausstattung",
+        "tag": "interior",
+        "value": "Stoff, Schwarz"
+      },
+      {
+        "label": "Zylinder",
+        "tag": "cylinder",
+        "value": "3"
+      }
+    ],
+    "mediaGallery": {
+      "slideShow": false,
+      "additionalAds": true
+    },
+    "shortTitle": "Hyundai i20",
+    "subTitle": "FL 1.0 T-GDI (90 PS) 6-MT 2WD Select",
+    "makeKey": "Hyundai",
+    "modelKey": "i20",
+    "isNew": false,
+    "onCustomerBehalf": false,
+    "footnotes": [
+      "Die Informationen erfolgen gemäß der Pkw-Energieverbrauchskennzeichnungsverordnung. Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren WLTP (Worldwide Harmonised Light-Duty Vehicles Test Procedure) ermittelt. Der Kraftstoffverbrauch und der CO₂-Ausstoß eines Pkw sind nicht nur von der effizienten Ausnutzung des Kraftstoffs durch den Pkw, sondern auch vom Fahrstil und anderen nichttechnischen Faktoren abhängig. CO₂ ist das für die Erderwärmung hauptverantwortliche Treibhausgas. Ein Leitfaden über den Kraftstoffverbrauch und die CO₂-Emissionen aller in Deutschland angebotenen neuen Pkw-Modelle ist unentgeltlich einsehbar an jedem Verkaufsort in Deutschland, an dem neue Pkw ausgestellt oder angeboten werden. Der Leitfaden ist auch hier abrufbar: <a href=\"https://www.dat.de/co2/\" target=\"_blank\">www.dat.de/co2/</a>",
+      "Es gelten die Bedingungen des Service-Anbieters."
+    ],
+    "isConditionNew": true,
+    "features": [
+      "ABS",
+      "Abstandswarner",
+      "Alarmanlage",
+      "Android Auto",
+      "Apple CarPlay",
+      "Berganfahrassistent",
+      "Bluetooth",
+      "Bordcomputer",
+      "Elektr. Fensterheber",
+      "Elektr. Seitenspiegel",
+      "Elektr. Wegfahrsperre",
+      "ESP",
+      "Fernlichtassistent",
+      "Freisprecheinrichtung",
+      "Frontantrieb",
+      "Geschwindigkeitsbegrenzer",
+      "Isofix",
+      "Lederlenkrad",
+      "LED-Tagfahrlicht",
+      "Lichtsensor",
+      "Müdigkeitswarner",
+      "Multifunktionslenkrad",
+      "Musikstreaming integriert",
+      "Navigationssystem",
+      "Notbremsassistent",
+      "Notrufsystem",
+      "Pannenkit",
+      "Radio DAB",
+      "Reifendruckkontrolle",
+      "Servolenkung",
+      "Sprachsteuerung",
+      "Spurhalteassistent",
+      "Start/Stopp-Automatik",
+      "Tempomat",
+      "Touchscreen",
+      "Traktionskontrolle",
+      "Tuner/Radio",
+      "USB",
+      "Verkehrszeichenerkennung",
+      "Volldigitales Kombiinstrument",
+      "Zentralverriegelung"
+    ],
+    "sellerId": 455177,
+    "priceRating": {
+      "rating": "REASONABLE_PRICE",
+      "ratingLabel": "Fairer Preis",
+      "thresholdLabels": [
+        "14.000 €",
+        "18.200 €",
+        "19.600 €",
+        "21.800 €",
+        "23.400 €",
+        "26.000 €"
+      ],
+      "vehiclePriceOffset": 63
+    },
+    "segment": "Car",
+    "title": "Hyundai i20 FL 1.0 T-GDI (90 PS) 6-MT 2WD Select",
+    "url": "https://suchen.mobile.de/auto-inserat/hyundai-i20-fl-1-0-t-gdi-90-ps-6-mt-2wd-select-hamburg/459479745.html",
+    "vc": "Car",
+    "category": "SmallCar",
+    "id": 459479745,
+    "price": {
+      "gross": "20.990 €",
+      "grossAmount": 20990,
+      "grossCurrency": "EUR",
+      "net": "17.639 €",
+      "netAmount": 17638.66,
+      "type": "FIXED",
+      "vat": "19% MwSt."
+    },
+    "kba": {
+      "hsn": "5984",
+      "tsn": "ACC"
+    },
+    "customDimensions": {
+      "10": "gold",
+      "47": "NA_NA_NA_NA_NA_NA",
+      "126": "hero_logo_14_name_NA_languages_NA"
+    },
+    "onLoadFlags": {
+      "welcomeMessage": true,
+      "dealershipDetails": true,
+      "map": true
+    },
+    "htmlDescription": "<ul><li><b>Getriebe:</b> Schaltgetriebe</li><li><b>Technik:</b> Bordcomputer, Start-Stop-Automatik, Volldigitales Kombiinstrument</li><li><b>Assistenten:</b> Müdigkeitserkennung, Verkehrszeichenerkennung, Fernlichtassistent, Lichtsensor, Notbremsassistent, Berganfahrassistent, Spurhalteassistent, Abstands-/Kollisionswarner</li><li><b>Komfort:</b> Klimaanlage, Servolenkung, Zentralverriegelung, Elektrischer Fensterheber, Elektrische Aussenspiegel, Teilbare Ruecksitzlehne, Tempomat, Park Distance Control, Multifunktionslenkrad, Innenraumfilter, Lenksaeule einstellbar, Lederlenkrad, Geschwindigkeitsbegrenzungsanlage, Funkfernbedienung</li><li><b>Sicht:</b> LED-Tagfahrlicht, Scheinwerferregulierung, Colorverglasung, Aussenspiegel beheizbar, Rückfahrkamera</li><li><b>Sicherheit:</b> ABS, Airbag, Beifahrer-Airbag, Wegfahrsperre, Seitenairbags, Alarmanlage, ESP, Antriebsschlupfregelung, Reifendruckkontrolle, Traktionskontrolle, Kindersitzbefestigung, Notrufsystem, Pannenkit, Airbag hinten</li><li><b>Entertainment:</b> Navigationssystem, Radio, Telefonvorbereitung, USB-Anschluss, MP3, Bluetooth, Freisprecheinrichtung, Apple CarPlay, Android Auto, Sprachsteuerung, DAB, Touchscreen, Musikstreaming</li><li><b>Umwelt:</b> Abgasnorm Euro 6E, Grüne Umweltplakette</li><li><b>Sonstiges:</b> Gepaeckraumabdeckung, Fahrerprofilauswahl, Spoiler</li><li><b>Weiteres:</b>  BORDCOMPUTER, Klimaanlage, Reifendruck-Kontrollsystem, Schalt-/Wählhebelgriff Leder, Rückfahrkamera, Verglasung getönt, Außenspiegel elektr. verstell- und heizbar, beide, Einparkhilfe hinten, Getriebe 6-Gang, Touchscreen-Farbdisplay (10,25 Zoll), Schadstoffarm nach Abgasnorm Euro 6e, Service-System: Online Update OTA (Over The Air), Motor 1,0 Ltr. - 66 kW TGDI KAT, Fahrassistenz-System: Insassenalarm (Rear Occopant Alert, ROA), 6 Lautsprecher, Audio-Navigationssystem, Dachspoiler, Mica-Lackierung / Mineraleffekt-Lackierung, Anti-Blockier-System (ABS), Tagfahrlicht LED, Fensterheber elektrisch vorn, Lenksäule (Lenkrad) höhenverstellbar, Seitenairbag vorn, Servolenkung, Wegfahrsperre (elektronisch), Rücksitzlehne geteilt/klappbar, Airbag Beifahrerseite, Airbag Fahrerseite, Fahrer-Informations-System (Display 4,2 Zoll), Wireless SmartLink (Apple CarPlay), Audiosystem mit Hochtönern, Aufmerksamkeits-Assistent, Außenspiegel lackiert, Autonome Notbremsfunktion inkl. Frontkollisionswarnung (FCA), Berganfahrhilfe, Blinkleuchte in Außenspiegel integriert, Dachspoiler in Wagenfarbe, Drive-Mode Auswahl, Einschaltautomatik für Fahrlicht / Lichtsensor, elektr. Fensterheber mit Einklemmschutz, Elektron. Stabilitätskontrolle (ESC) mit Bremsassistent, Fensterheber elektrisch vorn und hinten, Fernlichtassistent, Freisprechanlage Bluetooth, Heckscheibe heizbar, Isofix-Aufnahmen für Kindersitz, Kopfstützen hinten, Kühlergrill schwarz glanzlackiert, Lederlenkrad, Lenksäule höhen-/längsverstellbar, Multikollisionsbremse (Multi Collision Brake), Sicherheitssystem mit automatischem Notruf (ERA GLONASS / eCall), Sitzhöhenverstellung Fahrersitz, Start/Stop-Anlage, Türgriffe lackiert, Verkehrszeichenerkennung, erweitert (Geschwindigkeits-Regel-/Begrenzeranlage), ZV mit Fernbedienung</li><li>Int.KnNr: 202612083</li><li>Änderungen, Zwischenverkauf und Irrtümer vorbehalten.</li></ul><hr> quality by dotzilla",
+    "contactInfo": {
+      "address1": "Volksparkstrasse 38",
+      "address2": "DE-22525 Hamburg",
+      "name": "Claas Wehner Autohaus GmbH",
+      "markingText": "<p>Herzlich willkommen beim Claas Wehner Autohaus!</p><p>Als inhabergeführtes Familienunternehmen legen wir großen Wert auf persönliche Beratung und ein familiäres Miteinander. An sechs Standorten in und um Hamburg stehen wir Ihnen kompetent zur Seite – ob Neuwagen von Hyundai, Fiat, Jeep, Abarth, Fiat Professional Transporter oder Opel – oder ein geprüfter Gebrauchtwagen mit Garantie: Bei uns finden Sie Ihr Wunschfahrzeug aus über 600 verfügbaren Modellen.</p><p>Auch nach dem Kauf sind wir mit umfassendem Werkstatt- und Mobilitätsservice für Sie da. Wir freuen uns darauf, Sie persönlich kennenzulernen!</p>",
+      "openingHours": [
+        {
+          "time": "09:00 Uhr - 18:00 Uhr",
+          "day": "Mo - Fr"
+        },
+        {
+          "time": "10:00 Uhr - 16:00 Uhr",
+          "day": "Sa"
+        }
+      ],
+      "withMobileSince": "Bei mobile.de seit 28.07.2000",
+      "rating": {
+        "count": 3,
+        "totalCount": 86,
+        "score": 4.6,
+        "scoreLocalized": "4,6",
+        "link": "https://www.mobile.de/bewertungen/AH-WEHNER?lang=de",
+        "recommendationRate": 100,
+        "adRealityRate": 50,
+        "consultingScore": 4.666666666666667,
+        "friendlinessScore": 4.333333333333333,
+        "responseTimeScore": 4.666666666666667
+      },
+      "languages": "Deutsch, English",
+      "logo": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b7575418-747c-4c6a-a047-9515110988f2?rule=mo-160",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/b7/b7575418-747c-4c6a-a047-9515110988f2?rule=mo-160 160w, https://img.classistatic.de/api/v1/mo-prod/images/b7/b7575418-747c-4c6a-a047-9515110988f2?rule=mo-360 360w",
+        "alt": "Claas Wehner Autohaus GmbH"
+      },
+      "hasContactPhones": true,
+      "phones": [
+        {
+          "type": "1. Tel-Nr.",
+          "number": "+49 (0)40 244260",
+          "uri": "tel:+4940244260"
+        },
+        {
+          "type": "Fax",
+          "number": "+49 40 24426199"
+        }
+      ],
+      "sellerType": "DEALER",
+      "person": {
+        "name": "das Verkaufsteam vom",
+        "role": "Autohaus Claas Wehner"
+      },
+      "mapLink": "https://maps.google.com/maps?q=53.5924852,9.9227362+(Claas%20Wehner%20Autohaus%20GmbH)&iwloc=A&iwstate=1",
+      "latLong": {
+        "lat": 53.5924852,
+        "lon": 9.9227362
+      },
+      "dealerHomepageLink": "https://home.mobile.de/home/redirect.html?customerId=455177",
+      "country": "DE",
+      "heroImage": {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/41/41a786c1-856a-4d18-994c-dd2b94def201?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/41/41a786c1-856a-4d18-994c-dd2b94def201?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/41/41a786c1-856a-4d18-994c-dd2b94def201?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/41/41a786c1-856a-4d18-994c-dd2b94def201?rule=mo-1600 1600w"
+      },
+      "type": "Händler",
+      "numResultsTotal": 191,
+      "canBeFollowed": true,
+      "isDealerFollowed": false
+    },
+    "deal": {
+      "types": [
+        "HYUNDAI_LEASING_BRAND_PORTAL",
+        "DEAL",
+        "HYUNDAI_BRAND_PORTAL",
+        "LEASING"
+      ],
+      "badge": {
+        "tag": "DEAL",
+        "colorScheme": "default"
+      },
+      "leasingBadge": {
+        "tag": "DEAL",
+        "colorScheme": "default"
+      }
+    },
+    "financePlan": {
+      "bankId": "Santander",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=459479745&loanType=balloon&loanDuration=60&downPayment=4198&channel=desktop",
+      "type": "DF",
+      "flowType": "COMBINED",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 4198,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 16792,
+        "interestRateNominal": 5.83,
+        "interestRateEffective": 5.99,
+        "monthlyInstallment": 190.09,
+        "finalInstallment": 9445.5,
+        "totalInterest": 3868.93,
+        "totalAmount": 20660.93,
+        "localized": {
+          "downPayment": "4.198 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "16.792 €",
+          "interestRateNominal": "5,83%",
+          "interestRateEffective": "5,99%",
+          "monthlyInstallment": "191 €",
+          "finalInstallment": "9.445,50 €",
+          "totalInterest": "3.868,93 €",
+          "totalAmount": "20.660,93 €",
+          "disclaimer": "Obige Angaben stellen gleichzeitig ein repräsentatives Beispiel nach § 17 Preisangabenverordnung dar. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      },
+      "shortFlow": true,
+      "promotion": false
+    },
+    "galleryImages": [
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a8f5110a-561b-4356-b412-a7669ed3b5e2?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a8f5110a-561b-4356-b412-a7669ed3b5e2?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a8/a8f5110a-561b-4356-b412-a7669ed3b5e2?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a8/a8f5110a-561b-4356-b412-a7669ed3b5e2?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a8f5110a-561b-4356-b412-a7669ed3b5e2?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bce9b9d-3f09-4765-b3f6-dcb7857b400d?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bce9b9d-3f09-4765-b3f6-dcb7857b400d?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/7b/7bce9b9d-3f09-4765-b3f6-dcb7857b400d?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/7b/7bce9b9d-3f09-4765-b3f6-dcb7857b400d?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bce9b9d-3f09-4765-b3f6-dcb7857b400d?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/28/28eab970-c040-4908-932e-58f183ab3c24?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/28/28eab970-c040-4908-932e-58f183ab3c24?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/28/28eab970-c040-4908-932e-58f183ab3c24?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/28/28eab970-c040-4908-932e-58f183ab3c24?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/28/28eab970-c040-4908-932e-58f183ab3c24?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/68/68f89cb7-d6b5-441d-8bda-4f763375bf53?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/68/68f89cb7-d6b5-441d-8bda-4f763375bf53?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/68/68f89cb7-d6b5-441d-8bda-4f763375bf53?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/68/68f89cb7-d6b5-441d-8bda-4f763375bf53?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/68/68f89cb7-d6b5-441d-8bda-4f763375bf53?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a75b7084-daf9-4e5c-bb33-3ad5390f91ea?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a75b7084-daf9-4e5c-bb33-3ad5390f91ea?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/a7/a75b7084-daf9-4e5c-bb33-3ad5390f91ea?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/a7/a75b7084-daf9-4e5c-bb33-3ad5390f91ea?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a75b7084-daf9-4e5c-bb33-3ad5390f91ea?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/03/03bcd012-99cf-4585-85a2-bf802b7e826a?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/03/03bcd012-99cf-4585-85a2-bf802b7e826a?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/03/03bcd012-99cf-4585-85a2-bf802b7e826a?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/03/03bcd012-99cf-4585-85a2-bf802b7e826a?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/03/03bcd012-99cf-4585-85a2-bf802b7e826a?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/94/940791fb-958d-41c4-b88e-5814f671108c?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/94/940791fb-958d-41c4-b88e-5814f671108c?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/94/940791fb-958d-41c4-b88e-5814f671108c?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/94/940791fb-958d-41c4-b88e-5814f671108c?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/94/940791fb-958d-41c4-b88e-5814f671108c?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/53/535e4219-7a38-4503-9b4b-28e9b2f36eda?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/53/535e4219-7a38-4503-9b4b-28e9b2f36eda?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/53/535e4219-7a38-4503-9b4b-28e9b2f36eda?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/53/535e4219-7a38-4503-9b4b-28e9b2f36eda?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/53/535e4219-7a38-4503-9b4b-28e9b2f36eda?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/48/48b41a87-85c2-42a3-b7b3-eb38e8e4c2ba?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/48/48b41a87-85c2-42a3-b7b3-eb38e8e4c2ba?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/48/48b41a87-85c2-42a3-b7b3-eb38e8e4c2ba?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/48/48b41a87-85c2-42a3-b7b3-eb38e8e4c2ba?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/48/48b41a87-85c2-42a3-b7b3-eb38e8e4c2ba?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1be63f01-7ef9-47b2-ba75-343eae4cf1d5?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1be63f01-7ef9-47b2-ba75-343eae4cf1d5?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/1b/1be63f01-7ef9-47b2-ba75-343eae4cf1d5?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/1b/1be63f01-7ef9-47b2-ba75-343eae4cf1d5?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1be63f01-7ef9-47b2-ba75-343eae4cf1d5?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fdbbeef-fe78-4140-945b-f4783e394dbc?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fdbbeef-fe78-4140-945b-f4783e394dbc?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/6f/6fdbbeef-fe78-4140-945b-f4783e394dbc?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/6f/6fdbbeef-fe78-4140-945b-f4783e394dbc?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fdbbeef-fe78-4140-945b-f4783e394dbc?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/10/10cc92be-5782-4240-8e50-58b39c246d91?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/10/10cc92be-5782-4240-8e50-58b39c246d91?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/10/10cc92be-5782-4240-8e50-58b39c246d91?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/10/10cc92be-5782-4240-8e50-58b39c246d91?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/10/10cc92be-5782-4240-8e50-58b39c246d91?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/72/72f23e92-50e4-44e0-ac4c-373bc073c569?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/72/72f23e92-50e4-44e0-ac4c-373bc073c569?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/72/72f23e92-50e4-44e0-ac4c-373bc073c569?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/72/72f23e92-50e4-44e0-ac4c-373bc073c569?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/72/72f23e92-50e4-44e0-ac4c-373bc073c569?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      },
+      {
+        "src": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c7114e8e-9f1b-43d3-9cb8-cc3b2cb0d858?rule=mo-360",
+        "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c7114e8e-9f1b-43d3-9cb8-cc3b2cb0d858?rule=mo-360 360w, https://img.classistatic.de/api/v1/mo-prod/images/c7/c7114e8e-9f1b-43d3-9cb8-cc3b2cb0d858?rule=mo-1024 1024w, https://img.classistatic.de/api/v1/mo-prod/images/c7/c7114e8e-9f1b-43d3-9cb8-cc3b2cb0d858?rule=mo-1600 1600w",
+        "thumbnailSrc": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c7114e8e-9f1b-43d3-9cb8-cc3b2cb0d858?rule=mo-80w",
+        "type": "image",
+        "alt": "Hyundai i20"
+      }
+    ],
+    "ogImage": {
+      "src": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a8f5110a-561b-4356-b412-a7669ed3b5e2?rule=mo-1600",
+      "srcSet": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a8f5110a-561b-4356-b412-a7669ed3b5e2?rule=mo-1600 1600w"
+    },
+    "serviceLinks": {
+      "insuranceLink": "https://www.mobile.de/adv/insurance/redirect?pageId=DE/P/S/DV&placementId=CHECK24_INSURANCE_LINK&client.header.x-mobile-client=de.mobile.consumer-webapp/search.desktop&client.abtests=corekameleoonwebexperimentationon&client.abtests=cosaisearchallwebvariant&client.abtests=cossrpsbsmodelimprovementsv2&client.abtests=accwebpublichomegaaa4on&client.abtests=coshomepageworldcupleasingvariant&client.abtests=cossrpcorerecommenderpopularfilterspopularfilters&adId=459479745"
+    },
+    "similarAdsInfo": {
+      "type": "similar-ads",
+      "apiParams": "/ml-recommendations-by-id/459479745"
+    },
+    "vehicleCondition": "new_stock",
+    "make": "Hyundai",
+    "model": "i20",
+    "leasingRate": {
+      "type": "PRIVATE",
+      "downPayment": 0,
+      "termOfContract": 30,
+      "annualMileage": 5000,
+      "grossRate": 109,
+      "leasingFactor": 0.52,
+      "totalAmount": 3270,
+      "destinationCharges": 1390
+    },
+    "leasingDetails": {
+      "grossListPrice": 20990,
+      "vatRate": 19,
+      "lender": "Allane SE - Dr.-Carl-von-Linde-Straße 2 - 82049 Pullach",
+      "rates": [
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 30,
+          "annualMileage": 5000,
+          "grossRate": 109,
+          "leasingFactor": 0.52,
+          "totalAmount": 3270,
+          "destinationCharges": 1390
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 5000,
+          "grossRate": 112,
+          "leasingFactor": 0.53,
+          "totalAmount": 4032,
+          "destinationCharges": 1390
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 5000,
+          "grossRate": 112,
+          "leasingFactor": 0.53,
+          "totalAmount": 5376,
+          "destinationCharges": 1390
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 30,
+          "annualMileage": 10000,
+          "grossRate": 122,
+          "leasingFactor": 0.58,
+          "totalAmount": 3660,
+          "destinationCharges": 1390
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 10000,
+          "grossRate": 124,
+          "leasingFactor": 0.59,
+          "totalAmount": 4464,
+          "destinationCharges": 1390
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 10000,
+          "grossRate": 123,
+          "leasingFactor": 0.59,
+          "totalAmount": 5904,
+          "destinationCharges": 1390
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 30,
+          "annualMileage": 15000,
+          "grossRate": 135,
+          "leasingFactor": 0.64,
+          "totalAmount": 4050,
+          "destinationCharges": 1390
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 36,
+          "annualMileage": 15000,
+          "grossRate": 133,
+          "leasingFactor": 0.63,
+          "totalAmount": 4788,
+          "destinationCharges": 1390
+        },
+        {
+          "type": "PRIVATE",
+          "downPayment": 0,
+          "termOfContract": 48,
+          "annualMileage": 15000,
+          "grossRate": 133,
+          "leasingFactor": 0.63,
+          "totalAmount": 6384,
+          "destinationCharges": 1390
+        }
+      ],
+      "specialConditions": {},
+      "dealType": "CLASSIC"
+    },
+    "leasingSpecialConditions": {},
+    "partnerLinks": null,
+    "isLeasingOnlyAd": false
+  },
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "mobile.de",
+      "legalName": "mobile.de GmbH",
+      "url": "https://www.mobile.de/",
+      "sameAs": [
+        "https://www.facebook.com/mobile.de",
+        "https://www.linkedin.com/company/mobile-de-gmbh/",
+        "https://www.xing.com/pages/mobilede",
+        "https://www.youtube.com/c/mobilede",
+        "https://www.tiktok.com/@mobile.de",
+        "https://www.instagram.com/mobile_de/",
+        "https://www.youtube.com/channel/UCpss16IYd0Ms-jKwYikPlkA"
+      ]
+    },
+    {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.mobile.de",
+            "name": "Home Page"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://m.mobile.de/fahrzeuge/detailsuche",
+            "name": "Used and New Cars"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://m.mobile.de/auto/hyundai.html",
+            "name": "Hyundai"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://m.mobile.de/auto/hyundai-i20.html",
+            "name": "i20"
+          }
+        }
+      ],
+      "@type": "BreadcrumbList"
+    }
+  ],
+  "dom": {
+    "title": "Hyundai i20 für 20.990 €",
+    "price_text": "Preis 20.990 € Fairer Preis DEAL 17.639 € (Netto) , 19% MwSt. Finanzierung Leasing Wie funktioniert's? Händlerfinanzierung Dieses Inserat bietet die mobile.de Händlerfinanzierung Finanzierung und Auto bequem aus einer Hand Vor Ort beim Händler abschließen Oft weitere Konditionen über die Hausbank des Händlers möglich mtl. ( zzgl. MwSt. 4 ) Anschaffungszweck Gewerbe Laufzeit undefined Monate Fahrleistung 0 km Anzahlung 0 € Leasingangebot anfragen Leasingdetails Leasingbeispiel Nettodarlehensbetr. (Anschaffungspreis) Anzahlung Fahrleistung pro Jahr 0 km Laufzeit 12 Monate Monatsraten à Leasing-Gesamtbetrag Zusätzliche Informationen Bruttolistenpreis 20.990 € Bereitstellungskosten Keine Angabe Zulassungskosten Keine Angabe Mehr-Kilometer-Kosten Keine Angabe Minder-Kilometer-Vergütung Keine Angabe Ein unverbindliches Leasingangebot der Allane SE - Dr.-Carl-von-Linde-Straße 2 - 82049 Pullach , Bonität vorausgesetzt . Die Angaben entsprechen zugleich dem 2/3 Beispiel nach §17 Abs. 4 PangV. Es besteht ein gesetzliches Widerrufsrecht für Verbraucher. 3 Diese Angaben gelten für das Angebot ohne Anzahlung. 4 Dieses Angebot richtet sich nur an Kunden in Deutschland.",
+    "attributes": {
+      "Fahrzeugzustand": "Neufahrzeug",
+      "Kategorie": "Kleinwagen",
+      "Baureihe": "BC3",
+      "Ausstattungslinie": "select",
+      "Fahrzeugnummer": "202612083",
+      "Verfügbarkeit": "Sofort",
+      "Herkunft": "Deutsche Ausführung",
+      "Kilometerstand": "15 km",
+      "Hubraum": "998 cm³",
+      "Leistung": "66 kW (90 PS)",
+      "Antriebsart": "Verbrennungsmotor",
+      "Kraftstoffart": "Benzin",
+      "Energieverbrauch (komb.) 2": "5,7 l/100km",
+      "CO₂-Emissionen (komb.) 2": "129 g/km",
+      "CO₂-Klasse": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "Kraftstoffverbrauch 2": "5,7 l/100km (kombiniert) 7,2 l/100km (Innenstadt) 5,5 l/100km (Stadtrand) 4,9 l/100km (Landstraße) 6,0 l/100km (Autobahn)",
+      "Energiekosten bei 15.000 km Jahresfahrleistung 2": "1.536 €/Jahr",
+      "Kraftstoffpreis": "1,80 €/l (Jahresdurchschnitt 2024)",
+      "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr) 2": "2.457 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 127 €/t) 1.161 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t) 3.870 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 200 €/t)",
+      "Kraftfahrzeugsteuer": "90 €/Jahr",
+      "Anzahl Sitzplätze": "5",
+      "Anzahl der Türen": "4/5",
+      "Getriebe": "Schaltgetriebe",
+      "Schadstoffklasse": "Euro 6e",
+      "Umweltplakette": "4 (Grün)",
+      "Baujahr": "2026",
+      "Anzahl der Fahrzeughalter": "0",
+      "Klimatisierung": "Klimaanlage",
+      "Einparkhilfe": "Kamera, Hinten",
+      "Airbags": "Front- und Seiten-Airbags",
+      "Farbe (Hersteller)": "Aurora Grey / MET",
+      "Farbe": "Grau",
+      "Innenausstattung": "Stoff, Schwarz",
+      "Zylinder": "3",
+      "Nettodarlehensbetr. (Anschaffungspreis)": "",
+      "Anzahlung": "",
+      "Fahrleistung pro Jahr": "0 km",
+      "Laufzeit": "12 Monate",
+      "Monatsraten à": "",
+      "Leasing-Gesamtbetrag": "",
+      "Bruttolistenpreis": "20.990 €",
+      "Bereitstellungskosten": "Keine Angabe",
+      "Zulassungskosten": "Keine Angabe",
+      "Mehr-Kilometer-Kosten": "Keine Angabe",
+      "Minder-Kilometer-Vergütung": "Keine Angabe"
+    },
+    "description": "Neufahrzeug • 15 km • 66 kW (90 PS) • Benzin • Schaltgetriebe",
+    "equipment": [],
+    "seller": {}
+  },
+  "image_urls": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/a8/a8f5110a-561b-4356-b412-a7669ed3b5e2?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bce9b9d-3f09-4765-b3f6-dcb7857b400d?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/28/28eab970-c040-4908-932e-58f183ab3c24?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/68/68f89cb7-d6b5-441d-8bda-4f763375bf53?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a7/a75b7084-daf9-4e5c-bb33-3ad5390f91ea?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/03/03bcd012-99cf-4585-85a2-bf802b7e826a?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/94/940791fb-958d-41c4-b88e-5814f671108c?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/53/535e4219-7a38-4503-9b4b-28e9b2f36eda?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/48/48b41a87-85c2-42a3-b7b3-eb38e8e4c2ba?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1b/1be63f01-7ef9-47b2-ba75-343eae4cf1d5?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fdbbeef-fe78-4140-945b-f4783e394dbc?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/10/10cc92be-5782-4240-8e50-58b39c246d91?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/72/72f23e92-50e4-44e0-ac4c-373bc073c569?rule=mo-1600",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c7/c7114e8e-9f1b-43d3-9cb8-cc3b2cb0d858?rule=mo-1600"
+  ],
+  "images": [
+    {
+      "index": 0,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a8/a8f5110a-561b-4356-b412-a7669ed3b5e2?rule=mo-1600",
+      "local_path": "foto/00.jpg",
+      "is_cover": true
+    },
+    {
+      "index": 1,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bce9b9d-3f09-4765-b3f6-dcb7857b400d?rule=mo-1600",
+      "local_path": "foto/01.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 2,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/28/28eab970-c040-4908-932e-58f183ab3c24?rule=mo-1600",
+      "local_path": "foto/02.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 3,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/68/68f89cb7-d6b5-441d-8bda-4f763375bf53?rule=mo-1600",
+      "local_path": "foto/03.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 4,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/a7/a75b7084-daf9-4e5c-bb33-3ad5390f91ea?rule=mo-1600",
+      "local_path": "foto/04.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 5,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/03/03bcd012-99cf-4585-85a2-bf802b7e826a?rule=mo-1600",
+      "local_path": "foto/05.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 6,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/94/940791fb-958d-41c4-b88e-5814f671108c?rule=mo-1600",
+      "local_path": "foto/06.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 7,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/53/535e4219-7a38-4503-9b4b-28e9b2f36eda?rule=mo-1600",
+      "local_path": "foto/07.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 8,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/48/48b41a87-85c2-42a3-b7b3-eb38e8e4c2ba?rule=mo-1600",
+      "local_path": "foto/08.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 9,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/1b/1be63f01-7ef9-47b2-ba75-343eae4cf1d5?rule=mo-1600",
+      "local_path": "foto/09.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 10,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/6f/6fdbbeef-fe78-4140-945b-f4783e394dbc?rule=mo-1600",
+      "local_path": "foto/10.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 11,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/10/10cc92be-5782-4240-8e50-58b39c246d91?rule=mo-1600",
+      "local_path": "foto/11.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 12,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/72/72f23e92-50e4-44e0-ac4c-373bc073c569?rule=mo-1600",
+      "local_path": "foto/12.jpg",
+      "is_cover": false
+    },
+    {
+      "index": 13,
+      "original_url": "https://img.classistatic.de/api/v1/mo-prod/images/c7/c7114e8e-9f1b-43d3-9cb8-cc3b2cb0d858?rule=mo-1600",
+      "local_path": "foto/13.jpg",
+      "is_cover": false
+    }
+  ],
+  "warnings": []
+}

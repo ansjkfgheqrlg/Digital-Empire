@@ -1,0 +1,32 @@
+{
+  "run_id": "AF-20260705-120152-459377650",
+  "source_url": "https://m.mobile.de/auto-inserat/mercedes-benz-c-200-automat-nav-led-einparkhilfe-allwetter-t%C3%BCv-mannheim/459377650.html?ref=seo&refId=cb916ebb-4bd0-784a-078c-f098936d186c&searchId=cb916ebb-4bd0-784a-078c-f098936d186c&type=ad",
+  "created_at": "2026-07-05T10:01:52+00:00",
+  "steps": {
+    "S1_scraping": {
+      "status": "done",
+      "at": "2026-07-05T10:02:19+00:00",
+      "note": ""
+    },
+    "S2_parsing": {
+      "status": "done",
+      "at": "2026-07-05T10:02:19+00:00",
+      "note": ""
+    },
+    "GATE_A": {
+      "status": "passed",
+      "at": "2026-07-05T10:02:19+00:00",
+      "note": ""
+    },
+    "S3_translate_copy": {
+      "status": "done",
+      "at": "2026-07-05T10:02:21+00:00",
+      "note": ""
+    },
+    "GATE_B": {
+      "status": "blocked",
+      "at": "2026-07-05T10:02:21+00:00",
+      "note": "tedesco residuo significativo: ['TÜV']"
+    }
+  }
+}
