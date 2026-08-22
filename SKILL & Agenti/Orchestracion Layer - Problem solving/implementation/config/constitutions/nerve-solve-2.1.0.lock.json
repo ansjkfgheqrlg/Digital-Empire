@@ -1,0 +1,27 @@
+{
+  "architecture": {
+    "path": "../ARCHITETTURA_DEFINITIVA_NERVE-SOLVE_Orchestration_Layer_v2.1.md",
+    "sha256": "b04ac7d7ae6ae05dc1770062f15dde2334fb927aa9cd1ec0d41c288d819ff781"
+  },
+  "artifact_status": "LOCAL_TEST_CANDIDATE_NOT_ACTIVE",
+  "bundle": {
+    "file_sha256": "68539ec3b530dad524a279f758eea7a105e2aeb5a2dd4a03520295997e158ed7",
+    "key_id": "local-test-component-a-2026-08-13",
+    "path": "config/constitutions/nerve-solve-2.1.0.bundle.json",
+    "signature_algorithm": "Ed25519"
+  },
+  "payload": {
+    "canonical_sha256": "66a9a215c5af4f0ed3011b6f51489170c01fb4ba09e4af8a8fc0318b850642c4",
+    "file_sha256": "fbd5d16597283a4dca48be7d55e559f73742da8276cd1a6cf0a85241851165c5",
+    "path": "config/constitutions/nerve-solve-2.1.0.payload.json"
+  },
+  "private_key_persisted": false,
+  "production_activation_authorized": false,
+  "schema_version": "1.0",
+  "trust_store": {
+    "file_sha256": "76bc80bf0b723af05955aee24ecbcb25a417fa1c59cbb786424a4709144ecba5",
+    "path": "config/trust/constitutional-test-roots.json",
+    "public_key_sha256": "c713d06c64ae5dc759feb8c99a5c5ce74228d0b0fce93eeea5ec470fbc66a6bc",
+    "status": "LOCAL_TEST_ONLY_NOT_PRODUCTION_TRUST"
+  }
+}

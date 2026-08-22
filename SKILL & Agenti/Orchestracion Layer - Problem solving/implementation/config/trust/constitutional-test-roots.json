@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "algorithm": "Ed25519",
+      "key_id": "local-test-component-a-2026-08-13",
+      "public_key_b64": "nF9LCh7SkrK9RR0cNdqxLsfPoYEdPgYyQ39+kjUwlHk=",
+      "public_key_sha256": "c713d06c64ae5dc759feb8c99a5c5ce74228d0b0fce93eeea5ec470fbc66a6bc"
+    }
+  ],
+  "schema_version": "1.0",
+  "status": "LOCAL_TEST_ONLY_NOT_PRODUCTION_TRUST"
+}

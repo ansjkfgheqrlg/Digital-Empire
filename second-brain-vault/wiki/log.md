@@ -286,3 +286,6 @@
 
 ## 2026-08-06
 - INGEST: studio copy @Legamidiamore + 4 competitor rigenerato su 176 video reali → 1 pagina aggiornata (synthesis/Studio_Copy_Legamidiamore.md)
+
+## 2026-08-22
+- INGEST: NERVE-SOLVE (Orchestration Layer 1 — Problem Solving Engine) estratto da `SKILL & Agenti/Orchestracion Layer - Problem solving.zip`, distillato architettura v2.2 in skill Claude Code operativa `.claude/skills/nerve-solve/` (mirror `.agents/skills/`), scartato kernel Python crittografico orfano della fonte. Registrato in `company/skills-map.yaml` (ADR-008) sotto 08-INTELLIGENCE/Cognitive-Control. → 1 pagina wiki nuova (tools/Tool_Nerve_Solve_Orchestration_Layer.md) + index.md aggiornato.

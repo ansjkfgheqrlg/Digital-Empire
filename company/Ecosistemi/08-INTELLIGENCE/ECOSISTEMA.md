@@ -17,6 +17,7 @@ Ogni operazione logga in `wiki/log.md` (wiki-first, pattern #12).
 | L2.2 | Wiki & Knowledge | gestione `second-brain-vault/wiki/`: INGEST, QUERY, LINT, SYNTHESIS | `Reparti/Wiki/` |
 | L2.3 | Memory Empire | enrichment skill, reasoningbank, learning dai fallimenti | `Reparti/Memory-Empire/` |
 | L2.4 | Research & Trend | ricerca ICP, competitor, trend mercato, nuove opportunità | `Reparti/Research/` |
+| L2.5 | Cognitive Control (NERVE-SOLVE) | sistema nervoso problem-solving, TRASVERSALE a tutta la holding (come APEX-7-CORE) | `.claude/skills/nerve-solve/` |
 
 ## Asset attivi
 
@@ -27,6 +28,7 @@ Ogni operazione logga in `wiki/log.md` (wiki-first, pattern #12).
 | Memory Empire skill | ATTIVO | installata globalmente |
 | Wiki index | ATTIVO | `second-brain-vault/wiki/index.md` |
 | Wiki log | ATTIVO | `second-brain-vault/wiki/log.md` |
+| NERVE-SOLVE (Orchestration Layer 1) | ATTIVO | `.claude/skills/nerve-solve/SKILL.md` (mirror `.agents/skills/nerve-solve/`) |
 
 ## Ingestioni canali YouTube (PENDENTE)
 

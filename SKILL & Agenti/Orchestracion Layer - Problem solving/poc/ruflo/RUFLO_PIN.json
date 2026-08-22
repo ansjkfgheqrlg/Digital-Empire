@@ -1,0 +1,84 @@
+{
+  "schema_version": "2.1",
+  "qualified_at": "2026-08-15T11:20:32+02:00",
+  "mode": "isolated_non_authoritative_coordination_poc",
+  "runtime_pin": {
+    "ruflo": {
+      "version": "3.38.8",
+      "npm_integrity": "sha512-oN7y1yxM9OrznNJUQrr+jEyetcf1bdqhpu/8IS2kgNdGFitT3/1JGWkraK1QDgxRPALYpl5Wyn2zWJMArAppgA==",
+      "npm_git_head": "5efd5937e588d6e2d20d974f14593a4795562ef8"
+    },
+    "@claude-flow/cli": {
+      "version": "3.38.8",
+      "npm_integrity": "sha512-sl7ljf8it2iueNm0cKhXwuQNCCzu5usARJgZf9tXCpVQIXVFsOYiNP0Mq5Zp0PpRUxLTSCKnvcQCD4xUpc/50g==",
+      "npm_git_head": "5efd5937e588d6e2d20d974f14593a4795562ef8"
+    },
+    "package_json_sha256": "26dcf4662f6eb78c9c9ca982e94b1c90e07140cdfcd4fdb0fa264067f426acb6",
+    "package_lock_sha256": "963a94087412e498f2a7f5cca020337e9d341c28fee172fead6ae562e8f75931",
+    "reported_cli_version": "ruflo v3.38.8",
+    "restore_command": "npm ci --ignore-scripts --no-audit --no-fund"
+  },
+  "source_pin": {
+    "path": "../ruflo-source",
+    "tag": "v3.38.8",
+    "commit": "5efd5937e588d6e2d20d974f14593a4795562ef8",
+    "tree": "6ae9e1a6e5a35ff117e608a96b32617ae860012a",
+    "checkout": "detached_head_sparse",
+    "git_status_at_qualification": "clean",
+    "requested_gh_clone_result": "BLOCKED_AUTH_REQUIRED",
+    "public_git_clone_fallback": "PASS",
+    "receipt": "RUFLO_SOURCE_PIN.json"
+  },
+  "swarm": {
+    "swarm_id": "swarm-1786609847075-cjvrv8",
+    "topology": "hierarchical",
+    "max_agents": 6,
+    "auto_scaling": false,
+    "permission_preset": "strict_read_only_v22_migration",
+    "registered_roles": [
+      "coordinator",
+      "core-architect",
+      "coder",
+      "tester",
+      "security-auditor",
+      "reviewer"
+    ],
+    "registered_role_count": 6,
+    "daemon_status_at_qualification": "RUNNING_CURRENT_REACTIVATION",
+    "daemon_pid_at_qualification": 1599,
+    "daemon_process_supervision": "Arena background process ruflo-coordination-registry-d936b617",
+    "daemon_ttl_seconds": 43200,
+    "ai_workers_enabled": false,
+    "agent_auto_tools": false,
+    "historical_tasks_cancelled": 10,
+    "component_a_v22_migration_tasks_persisted_and_assigned": 6,
+    "component_a_v22_worker_outputs_observed": 0,
+    "activation_manifest": "swarm-a-v22-migration-activation-manifest.tsv",
+    "activation_validation": "PASS: 100 bounded coordination assertions",
+    "daemon_resupervised_at": "2026-08-16T11:36:58+02:00",
+    "daemon_previous_supervised_pid": 1950,
+    "daemon_liveness_scope": "Current Arena process only; revalidate after any workspace/session materialization."
+  },
+  "poc_status": "ACTIVE_COORDINATION_REGISTRY_LIMITED_NOT_EXECUTION_QUALIFIED",
+  "authority_boundaries": {
+    "authoritative_state": false,
+    "critical_path": false,
+    "signing_authority": false,
+    "release_authority": false,
+    "deployment_authority": false,
+    "constitutional_activation_authority": false,
+    "production_side_effects": false
+  },
+  "known_limitations": [
+    "GitHub CLI 2.97.0 was checksum-verified, but gh repo clone required authentication; no token was requested or stored, and the public clone used git as an explicit fallback.",
+    "CLI task list and swarm counters report zero tasks while the task store contains six assigned in-progress migration records and ten cancelled historical records.",
+    "Requested task dependencies were not persisted by the pinned CLI; ordering exists in the activation manifest but is not runtime-enforced.",
+    "No agent message, artifact, token usage, last-activity timestamp or task progress proves independent worker execution.",
+    "AI workers are disabled and no supported claude executable was found; the host remains responsible for implementation and verification.",
+    "Permission manifests deny writes, shell, network, secrets, trust material and activation actions, but runtime enforcement has not been independently penetration-tested.",
+    "Daemon status reports seven enabled local maintenance workers despite the bounded six-role swarm registry.",
+    "Platform snapshots exclude node_modules; package.json and package-lock.json are the reproducible persisted runtime specification."
+  ],
+  "qualification_report": "ACTIVATION_REPORT_2026-08-15.md",
+  "current_reactivation_report": "REACTIVATION_REPORT_2026-08-16.md"
+}

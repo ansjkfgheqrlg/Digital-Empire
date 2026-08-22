@@ -1,0 +1,10 @@
+{
+  "name": "nerve-solve-ruflo-coordination-poc",
+  "version": "0.0.0-private",
+  "private": true,
+  "description": "Isolated, non-authoritative RuFLO coordination POC for NERVE-SOLVE Layer 1",
+  "dependencies": {
+    "@claude-flow/cli": "3.38.8",
+    "ruflo": "3.38.8"
+  }
+}

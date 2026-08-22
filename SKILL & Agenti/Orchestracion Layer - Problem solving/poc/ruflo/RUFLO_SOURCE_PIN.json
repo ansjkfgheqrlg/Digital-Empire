@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-08-15",
+  "requested_clone": {
+    "command": "gh repo clone ruvnet/ruflo poc/ruflo-source -- --filter=blob:none",
+    "github_cli_version": "2.97.0",
+    "result": "BLOCKED_AUTH_REQUIRED",
+    "reason": "GitHub CLI required gh auth login or GH_TOKEN even for the public OWNER/REPO and HTTPS forms; no credential was requested or stored."
+  },
+  "fallback_clone": {
+    "command": "git clone --filter=blob:none https://github.com/ruvnet/ruflo.git poc/ruflo-source",
+    "remote": "https://github.com/ruvnet/ruflo.git",
+    "result": "PASS"
+  },
+  "source_pin": {
+    "tag": "v3.38.8",
+    "commit": "5efd5937e588d6e2d20d974f14593a4795562ef8",
+    "tree": "6ae9e1a6e5a35ff117e608a96b32617ae860012a",
+    "checkout_mode": "detached_head_sparse",
+    "sparse_paths": [
+      "docs",
+      "ruflo",
+      "v3/@claude-flow/cli",
+      "v3/implementation/adrs"
+    ],
+    "git_status_at_pin": "clean"
+  },
+  "runtime_binding": {
+    "ruflo": "3.38.8",
+    "@claude-flow/cli": "3.38.8",
+    "package_json_sha256": "26dcf4662f6eb78c9c9ca982e94b1c90e07140cdfcd4fdb0fa264067f426acb6",
+    "package_lock_sha256": "963a94087412e498f2a7f5cca020337e9d341c28fee172fead6ae562e8f75931",
+    "npm_git_head": "5efd5937e588d6e2d20d974f14593a4795562ef8",
+    "install_command": "npm ci --ignore-scripts --no-audit --no-fund"
+  },
+  "authority": {
+    "authoritative_state": false,
+    "critical_path": false,
+    "signing": false,
+    "release": false,
+    "activation": false,
+    "deployment": false,
+    "production_side_effects": false
+  }
+}

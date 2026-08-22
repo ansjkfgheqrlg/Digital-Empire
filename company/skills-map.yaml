@@ -455,7 +455,14 @@ skills_and_workflows:
     tipo: knowledge
     stato: active
 
-  # ── 09-OPERATIONS / Runtime ──────────────────────────────────
+  - id: nerve-solve
+    nome: "NERVE-SOLVE — Orchestration Layer 1 (Problem Solving Engine)"
+    percorso: ".claude/skills/nerve-solve/ (mirror .agents/skills/nerve-solve/)"
+    ecosistema: 08-INTELLIGENCE
+    reparto: Cognitive-Control
+    tipo: skill
+    stato: active
+    note: "TRASVERSALE (come APEX-7-CORE, ADR-010): sistema nervoso cognitivo, non scoped a un solo ecosistema. Primo di 3 orchestration layer pianificati (L2 strategico/finanziario, L3 da definire, non ancora costruiti). Estratto+distillato da 'SKILL & Agenti/Orchestracion Layer - Problem solving.zip' (architettura v2.2): mantenuta identita/DNA/fasi/depth-router come skill prompt-operativa; SCARTATO il kernel Python crittografico orfano (Ed25519 signing, Component B mai costruito) — disallineato dal pattern skill/agente reale di DE. Fonte architetturale completa: 'SKILL & Agenti/Orchestracion Layer - Problem solving/ARCHITETTURA_DEFINITIVA_NERVE-SOLVE_Orchestration_Layer_v2.2.md'."
 
   - id: avvia-scripts
     nome: Script AVVIA-* (launcher operativi)

@@ -48,6 +48,7 @@ Benvenuto nella tua Knowledge Base iper-organizzata. Tutto il materiale di Digit
 
 ### AI Orchestration
 - [[tools/Tool_ClaudeFlow_Orchestration|Claude-Flow V3 (Ruflo) — Multi-Agent Orchestration]] — 138 skill estratte. 15 installate in Claude Code. Architettura: swarm + AgentDB + SPARC. **Installato in globale `ruflo@3.10.13` (npm -g) il 2026-05-30** — comando disponibile ovunque (≠ vendor snapshot, che è solo archivio).
+- [[tools/Tool_Nerve_Solve_Orchestration_Layer|NERVE-SOLVE — Orchestration Layer 1 (Problem Solving Engine)]] — Sistema nervoso cognitivo, primo di 3 orchestration layer pianificati per il Modello Internet Artificiale DE (2026-08-22). Identità/DNA/fasi P-1→P12/depth-router D0-D3 distillati in skill Claude Code operativa (`.claude/skills/nerve-solve/`); scartato il kernel Python crittografico orfano della fonte (Ed25519, mai completato). Trasversale a tutta la holding.
 
 ### Modelli AI — Aggiornamenti
 - [[sources/Source_Claude_Opus_48_7_Casi_Uso|Claude Opus 4.8 — 7 Casi d'Uso Reali + Prompt]] — Video ingerito 2026-06-08. Dynamic Workflows (agenti paralleli), Effort Controls (low/high/max), System Entries API. Pricing: $5/$25 per M token standard, Fast Mode 2.5× a $10/$50. OSWorld 82.3%, Mind2Web 84%.

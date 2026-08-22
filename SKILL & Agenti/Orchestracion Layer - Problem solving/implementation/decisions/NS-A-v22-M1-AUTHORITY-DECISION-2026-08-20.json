@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "decision_reference": "NS-A-v22-M1-DECISION-2026-08-20-001",
+  "decision_timestamp": "2026-08-20T14:13:30+02:00",
+  "decision_stage": "M1",
+  "authority": {
+    "identity": "NERVE-SOLVE user",
+    "governed_role": "Project Owner / Constitutional Authority",
+    "authorization_evidence": "Explicit self-attestation in the Arena conversation authority prompt: YES_OWNER selected.",
+    "identity_assurance": "SELF_ATTESTED_CONVERSATION_CONTEXT",
+    "production_identity_verified": false
+  },
+  "decision": {
+    "disposition": "APPROVE_AS_CONSTITUTIONAL_CHANGE",
+    "rationale": "The approved delta changes falsifiable nervous principles and the Layer 1 capability boundary. Those fields are constitution-controlled and cannot be safely demoted to lower-authority operational policy.",
+    "scope": [
+      "NERVE-SOLVE Layer 1",
+      "Component A constitutional kernel",
+      "constitution migration 2.1.0 to proposed 2.2.0",
+      "the exact hashes bound below"
+    ]
+  },
+  "request": {
+    "path": "proposals/authority/NS-A-v22-M1-AUTHORITY-DECISION-REQUEST.md",
+    "sha256": "473e9272313ef609e3fc02165b80c14863f2a8bb0ab3bced4ef12c8ecc423379"
+  },
+  "bound_evidence": {
+    "architecture_v2_2": {
+      "path": "../ARCHITETTURA_DEFINITIVA_NERVE-SOLVE_Orchestration_Layer_v2.2.md",
+      "sha256": "d7862b9407ee38e469cfb0d1d1776dd1ee60223bc84eae405ae6546db28cad5b"
+    },
+    "system_prompt_v2_2": {
+      "path": "../SYSTEM_PROMPT_Orchestration_Layer_Architect_v2.2.md",
+      "sha256": "214e4145dfa0cd2595a414ca58faca10ce5ef54eef5a9ebad88c86a77f9a05f2"
+    },
+    "proposed_payload_file": {
+      "path": "proposals/constitution/nerve-solve-2.2.0.payload.proposed.json",
+      "sha256": "9dd23985e37961cefcb08fa11ac84cd4d84775f9358856692a869bc2323415d1"
+    },
+    "migration_plan_at_decision": {
+      "path": "plans/NS-A_MIGRATION_v2.1_TO_v2.2_PROPOSAL.md",
+      "sha256": "1821abb59faf4ed9a6a566e9d884ec21f5f3d61d2e589b891b940eba1c8f3c42"
+    },
+    "m1_technical_recommendation": {
+      "path": "evidence/NS-A-v22-M1-TECHNICAL-RECOMMENDATION.md",
+      "sha256": "6c490e2c5c38fb69408a8e4a3ea2c392ea3f5963ef33b0108ca9d3065568077b"
+    },
+    "m2_preparatory_report": {
+      "path": "evidence/NS-A-v22-M2-PREPARATORY-REPORT.md",
+      "sha256": "a4bf3ae624606617985e442bc54b0922eb42cc309b3c0e2f6049b56be0248e9c"
+    },
+    "m2_comprehensive_gate": {
+      "path": "evidence/NS-A-v22-M2-PREPARATORY-COMPREHENSIVE-GATE.log",
+      "sha256": "a93df192bc1c9573dfcf9dd2a08c761ef9b94fa07f6d4bbbde6cabcd5998e70b"
+    }
+  },
+  "canonical_payload_sha256": "a7d3d32d41eb22ae2dd02ae5297be1660e8edb9a701cd5e6f641148b345ade4d",
+  "explicit_non_authorizations": {
+    "production_signature": false,
+    "private_key_generation": false,
+    "trust_root_approval": false,
+    "bundle_release": false,
+    "lock_creation": false,
+    "activation": false,
+    "deployment": false,
+    "component_b_start": false,
+    "layer_2_start": false,
+    "layer_3_start": false
+  },
+  "attestation": {
+    "method": "EXPLICIT_STRUCTURED_USER_SELECTION_IN_ARENA_CONVERSATION",
+    "selection": "YES_OWNER + APPROVE",
+    "cryptographic_signature_present": false,
+    "valid_for_local_governance_classification": true,
+    "valid_as_production_signing_identity": false
+  },
+  "effects": {
+    "m1": "PASS_LOCAL_AUTHORITY_ATTESTATION",
+    "m2_may_be_reconciled": true,
+    "m3_requires_separate_signer_and_trust_approval": true,
+    "v2_2_remains_unsigned_untrusted_inactive": true
+  }
+}

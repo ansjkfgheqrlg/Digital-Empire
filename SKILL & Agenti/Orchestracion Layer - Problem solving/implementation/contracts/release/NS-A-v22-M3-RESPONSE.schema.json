@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:nerve-solve:component-a:m3-signer-trust-response:1.0",
+  "title": "NERVE-SOLVE Component A v2.2 M3 signer/trust response",
+  "description": "Public evidence only. Private keys, signing seeds and secret material are forbidden.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "response_reference",
+    "response_status",
+    "signer",
+    "trust_approval",
+    "signature",
+    "provenance",
+    "independent_verification",
+    "explicit_non_authorizations"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "response_reference": {"$ref": "#/$defs/nonempty"},
+    "response_status": {"const": "M3_SIGNED_CANDIDATE"},
+    "signer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "identity",
+        "governed_role",
+        "authorization_reference",
+        "separation_attestation"
+      ],
+      "properties": {
+        "identity": {"$ref": "#/$defs/nonempty"},
+        "governed_role": {"const": "SEPARATE_CONSTITUTION_SIGNER"},
+        "authorization_reference": {"$ref": "#/$defs/nonempty"},
+        "separation_attestation": {"const": true}
+      }
+    },
+    "trust_approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "approver_identity",
+        "governed_role",
+        "approval_reference",
+        "key_id",
+        "algorithm",
+        "public_key_b64",
+        "public_key_sha256",
+        "status",
+        "revoked",
+        "revocation_authority",
+        "revocation_status_reference"
+      ],
+      "properties": {
+        "approver_identity": {"$ref": "#/$defs/nonempty"},
+        "governed_role": {"const": "CONSTITUTION_TRUST_AUTHORITY"},
+        "approval_reference": {"$ref": "#/$defs/nonempty"},
+        "key_id": {"$ref": "#/$defs/nonempty"},
+        "algorithm": {"const": "Ed25519"},
+        "public_key_b64": {"type": "string", "minLength": 44, "maxLength": 44},
+        "public_key_sha256": {"$ref": "#/$defs/sha256"},
+        "status": {"const": "APPROVED"},
+        "revoked": {"const": false},
+        "revocation_authority": {"$ref": "#/$defs/nonempty"},
+        "revocation_status_reference": {"$ref": "#/$defs/nonempty"}
+      }
+    },
+    "signature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key_id",
+        "algorithm",
+        "signed_content",
+        "canonical_payload_sha256",
+        "value_b64"
+      ],
+      "properties": {
+        "key_id": {"$ref": "#/$defs/nonempty"},
+        "algorithm": {"const": "Ed25519"},
+        "signed_content": {"const": "CANONICAL_CONSTITUTION_PAYLOAD_JSON"},
+        "canonical_payload_sha256": {
+          "const": "a7d3d32d41eb22ae2dd02ae5297be1660e8edb9a701cd5e6f641148b345ade4d"
+        },
+        "value_b64": {"type": "string", "minLength": 88, "maxLength": 88}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "payload_file_sha256",
+        "architecture_sha256",
+        "system_prompt_sha256",
+        "m1_decision_reference",
+        "m1_decision_sha256",
+        "m2_gate_sha256",
+        "ceremony_reference",
+        "signed_at"
+      ],
+      "properties": {
+        "payload_file_sha256": {
+          "const": "9dd23985e37961cefcb08fa11ac84cd4d84775f9358856692a869bc2323415d1"
+        },
+        "architecture_sha256": {
+          "const": "d7862b9407ee38e469cfb0d1d1776dd1ee60223bc84eae405ae6546db28cad5b"
+        },
+        "system_prompt_sha256": {
+          "const": "214e4145dfa0cd2595a414ca58faca10ce5ef54eef5a9ebad88c86a77f9a05f2"
+        },
+        "m1_decision_reference": {"const": "NS-A-v22-M1-DECISION-2026-08-20-001"},
+        "m1_decision_sha256": {
+          "const": "3c1bbc095ffc8bf120a9dc3bc289da309c5d72e8c98f06d1b185b6f493cc3fc9"
+        },
+        "m2_gate_sha256": {
+          "const": "b6d58ff4d9cd5f70fff0b424bbc28ab9aa73406051f89578b9a7813246d3739a"
+        },
+        "ceremony_reference": {"$ref": "#/$defs/nonempty"},
+        "signed_at": {"$ref": "#/$defs/timestamp"}
+      }
+    },
+    "independent_verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verifier_identity",
+        "governed_role",
+        "verification_reference",
+        "verified_at"
+      ],
+      "properties": {
+        "verifier_identity": {"$ref": "#/$defs/nonempty"},
+        "governed_role": {"const": "INDEPENDENT_SIGNATURE_VERIFIER"},
+        "verification_reference": {"$ref": "#/$defs/nonempty"},
+        "verified_at": {"$ref": "#/$defs/timestamp"}
+      }
+    },
+    "explicit_non_authorizations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "activation",
+        "deployment",
+        "active_lock_change",
+        "case_migration",
+        "component_b_start",
+        "layer_2_start",
+        "layer_3_start"
+      ],
+      "properties": {
+        "activation": {"const": false},
+        "deployment": {"const": false},
+        "active_lock_change": {"const": false},
+        "case_migration": {"const": false},
+        "component_b_start": {"const": false},
+        "layer_2_start": {"const": false},
+        "layer_3_start": {"const": false}
+      }
+    }
+  },
+  "$defs": {
+    "nonempty": {"type": "string", "minLength": 1},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "timestamp": {"type": "string", "format": "date-time"}
+  }
+}
