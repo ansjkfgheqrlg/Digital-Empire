@@ -23,7 +23,10 @@ with sync_playwright() as p:
     context = p.chromium.launch_persistent_context(
         user_data_dir=PROFILE_DIR, headless=False,
         viewport={"width": 1440, "height": 900},
-        args=["--disable-blink-features=AutomationControlled"],
+        # Porta CDP dedicata: permette a un secondo script di connettersi alla STESSA sessione
+        # gia' aperta (screenshot solo della tab, non dell'intero desktop) senza dover aprire un
+        # secondo profilo (che darebbe lockfile conflict, gia' visto).
+        args=["--disable-blink-features=AutomationControlled", "--remote-debugging-port=9333"],
         user_agent=USER_AGENT,
     )
     page = context.pages[0] if context.pages else context.new_page()
