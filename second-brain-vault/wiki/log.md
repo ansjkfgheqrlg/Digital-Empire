@@ -1,5 +1,10 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-23 (Mappa root Digital Empire, Cursor/Max)
+- MAPPA: censimento 49 cartelle di primo livello (~35k file, vendor escluso) + alberi di company, PIANO-MAESTRO, DIGITAL-EMPIRE, empire, wiki, fabbriche.
+- ARTEFATTO: canvas `digital-empire-mappa.canvas.tsx` (schema a livelli, catalogo filtrabile, openFile sui file di verità).
+- CP: `company/Memory/checkpoints/CP-20260823-002.md`
+
 ## 2026-08-06 (Primo carosello Preventa reale: Agent workspace Arena, non il motore grezzo, Claude/Max)
 - CORREZIONE: `projects/Preventa/Progetto_Preventa_Carousel.md` descriveva il motore
   sbagliato (Playwright grezzo `ArenaAI/arena_generator.py`, 3 slide gradiente
