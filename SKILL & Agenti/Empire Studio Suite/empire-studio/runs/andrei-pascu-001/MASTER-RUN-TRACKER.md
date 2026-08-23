@@ -1,6 +1,6 @@
 # MASTER RUN TRACKER — andrei-pascu-001
 ## Andrei Pascu: Ecosistema Completo YouTube (323 video)
-**Run creato:** 2026-06-13 | **Ultimo aggiornamento:** 2026-07-20
+**Run creato:** 2026-06-13 | **Ultimo aggiornamento:** 2026-08-23
 **Pipeline:** Empire Studio Suite v2.0 | **Sessioni attive:** Caveman Mode FULL
 
 ---
@@ -9,17 +9,17 @@
 
 | Categoria | Video totali | Completati | In corso | Pending |
 |-----------|-------------|-----------|---------|--------|
-| cat1-copywriting | 29 | 10 | 0 | 19 |
+| cat1-copywriting | 29 | 11 | 0 | 18 |
 | cat2-marketing | ~45 | 0 | 0 | TBD |
 | cat3-freelancer | ~60 | 0 | 0 | TBD |
 | cat4-ai | ~30 | 0 | 0 | TBD |
 | cat5-mindset | ~45 | 0 | 0 | TBD |
 | cat6-soldi | ~30 | 0 | 0 | TBD |
 | cat7-shortform | ~25 | 0 | 0 | TBD |
-| **TOTALE PRIORITÀ** | **~29** | **10** | **0** | **19** |
+| **TOTALE PRIORITÀ** | **~29** | **11** | **0** | **18** |
 
-**RIPRESA DA:** video 11/29 — `nRm7JLsP1bc` ("Basta usare formule clichè di copywriting") — Stage 1 (yt_ingest.py) da avviare, serve ambiente con Python/yt-dlp/ffmpeg (non presente in questa sessione)
-**WATCH-001:** N_video=10 = N_MemoryEmpire=10 → MATCH ✅
+**RIPRESA DA:** video 12/29 — `hb89lccIacY` ("10 strategie PROVATE per EMAIL copywriting") — Stage 1 (yt_ingest.py) da avviare
+**WATCH-001:** N_video=11 = N_MemoryEmpire=11 → MATCH ✅
 
 ---
 
@@ -39,7 +39,7 @@ Ordine di ingestion stabilito. Non modificare senza creare ADR.
 | 8 | `lQMO0LdeI2c` | Copywriter Analyzes Copywriting (Live) | 1348 | ✅ | ✅ | **DONE** |
 | 9 | `IWCHN_mE2Vo` | Copywriter Analizza Copywriting (Live) [ITA] | 1858 | ✅ | ✅ | **DONE** |
 | 10 | `Ahp_6rHSOsU` | Usa Google Docs come un copywriter PRO (8 consigli) | 334 | ✅ | ✅ | **DONE** |
-| 11 | `nRm7JLsP1bc` | Basta usare formule clichè di copywriting | ⬜ | ⬜ | ⬜ | **TODO** |
+| 11 | `nRm7JLsP1bc` | Basta usare formule clichè di copywriting | 23 | ✅ | ✅ | **DONE** |
 | 12 | `hb89lccIacY` | 10 strategie PROVATE per EMAIL copywriting | ⬜ | ⬜ | ⬜ | **TODO** |
 | 13 | `fGpz-uOgr4k` | email marketing povero, email marketing ricco | ⬜ | ⬜ | ⬜ | **TODO** |
 | 14 | `nP4ojCzvjr8` | L'email marketing dal POV dei lettori | ⬜ | ⬜ | ⬜ | **TODO** |
@@ -221,14 +221,13 @@ memory-empire/memory/ingestions/YYYY-MM-DD-[titolo-slug].md
 
 | Sessione | Video # | Target |
 |----------|---------|--------|
-| Corrente | 10/29 | Ahp_6rHSOsU (Google Docs PRO) — COMPLETATO |
-| Prossima | 11/29 | nRm7JLsP1bc (Basta formule clichè) |
-| +2 | 12/29 | hb89lccIacY (10 strategie email copywriting) |
-| +3 | 13/29 | fGpz-uOgr4k (email marketing povero/ricco) |
-| +4 | 14/29 | nP4ojCzvjr8 (email marketing dal POV lettori) |
-| ... | ... | continua per 19 video rimanenti cat1 |
+| Corrente | 11/29 | nRm7JLsP1bc (Basta formule clichè) — COMPLETATO |
+| Prossima | 12/29 | hb89lccIacY (10 strategie email copywriting) |
+| +2 | 13/29 | fGpz-uOgr4k (email marketing povero/ricco) |
+| +3 | 14/29 | nP4ojCzvjr8 (email marketing dal POV lettori) |
+| ... | ... | continua per 18 video rimanenti cat1 |
 
-**Stima totale sessioni cat1**: ~19 sessioni aggiuntive (1 video/sessione)
+**Stima totale sessioni cat1**: ~18 sessioni aggiuntive (1 video/sessione)
 **Stima totale sessioni run completo**: ~60-80 sessioni (tutte cat)
 
 ---
