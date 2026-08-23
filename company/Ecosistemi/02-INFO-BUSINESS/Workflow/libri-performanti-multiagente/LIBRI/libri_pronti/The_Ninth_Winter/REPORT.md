@@ -1,6 +1,6 @@
 # Report di consegna — The Ninth Winter
 
-_Generato il 23/08/2026 alle 11:48_
+_Generato il 23/08/2026 alle 12:08_
 
 ---
 
@@ -65,8 +65,7 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260813_175812.json`
     - _...e altri 9_
 - ⚠️ **Prezzo rispetto alla nicchia**: 1 da verificare
     - prezzo $12.99 contro una media misurata di $5.95 nella nicchia: piu' del doppio. Verifica che sia voluto.
-- ⚠️ **Titolo sulla copertina**: 1 da verificare
-    - VERIFICA A MANO: il motore Tesseract non e' installato sul PC (il pacchetto Python da solo non basta). Scaricalo da https://github.com/UB-Mannheim/tesseract/wiki e reinstalla; nel frattempo controlla a occhio che il titolo sulla copertina sia scritto correttamente.
+- ✅ **Titolo sulla copertina**: nessun problema
 - ✅ **EPUB (ebook)**: nessun problema
 - ✅ **Numerazione pagine**: nessun problema
 - ✅ **Parole spezzate a fine riga**: nessun problema

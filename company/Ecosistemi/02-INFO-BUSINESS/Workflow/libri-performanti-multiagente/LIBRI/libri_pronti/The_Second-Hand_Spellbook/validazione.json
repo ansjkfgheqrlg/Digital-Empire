@@ -3,9 +3,7 @@
   "pagine_reali": 118,
   "bloccanti": [],
   "errori": [],
-  "verifiche_non_eseguite": [
-    "[Titolo sulla copertina] VERIFICA A MANO: il motore Tesseract non e' installato sul PC (il pacchetto Python da solo non basta). Scaricalo da https://github.com/UB-Mannheim/tesseract/wiki e reinstalla; nel frattempo controlla a occhio che il titolo sulla copertina sia scritto correttamente."
-  ],
+  "verifiche_non_eseguite": [],
   "avvisi": [
     "[Trattini nel testo (da rivedere a occhio)] riga 5: trattino in 'rust-coloured' — contesto: 'She recognised it from the harbour at Fenn, before she had even read t'",
     "[Trattini nel testo (da rivedere a occhio)] riga 52: trattino in 'coal-tar' — contesto: 'That was the thing that did it, in the end. Not the board and not the '",

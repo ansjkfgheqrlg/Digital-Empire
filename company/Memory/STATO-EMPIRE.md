@@ -56,6 +56,8 @@ vive solo nella skill, ARCHITETTURA e' la mappa del codice, la SOP e' un puntato
 **I tre pacchetti riconsegnati PUBBLICABILE con EPUB**: 119 / 118 / 118 pagine reali.
 Il codice e' finito nel commit `30a23a33` (raccolto dal sync automatico).
 
+**Tesseract installato** (winget, v5.4.0, nel percorso che il codice cerca gia'): titolo di copertina letto **3 su 3** in meno di mezzo secondo, e i tre pacchetti riconsegnati escono con **`verifiche_non_eseguite: 0`** — la prima volta che ogni controllo bloccante della consegna gira per davvero. B-016 chiuso.
+
 **RIPRESA DA:** invariata e ora unica: **caricare i tre libri su KDP**, poi
 `kdp pubblicato <slug> --asin B0…` per ognuno. Poi la decisione che vale piu' di ogni
 modifica al codice: **una nicchia e un solo nome d'autore** per i prossimi libri. Da rivedere

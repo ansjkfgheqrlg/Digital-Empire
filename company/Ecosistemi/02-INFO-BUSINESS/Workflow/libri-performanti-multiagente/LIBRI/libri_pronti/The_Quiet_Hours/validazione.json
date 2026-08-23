@@ -3,9 +3,7 @@
   "pagine_reali": 118,
   "bloccanti": [],
   "errori": [],
-  "verifiche_non_eseguite": [
-    "[Titolo sulla copertina] VERIFICA A MANO: il motore Tesseract non e' installato sul PC (il pacchetto Python da solo non basta). Scaricalo da https://github.com/UB-Mannheim/tesseract/wiki e reinstalla; nel frattempo controlla a occhio che il titolo sulla copertina sia scritto correttamente."
-  ],
+  "verifiche_non_eseguite": [],
   "avvisi": [
     "[Trattini nel testo (da rivedere a occhio)] riga 214: trattino in 'not-having' — contesto: 'That's the part. Around week seven you close the last account and ther'",
     "[Trattini nel testo (da rivedere a occhio)] riga 214: trattino in 'anything-to' — contesto: 'That's the part. Around week seven you close the last account and ther'",

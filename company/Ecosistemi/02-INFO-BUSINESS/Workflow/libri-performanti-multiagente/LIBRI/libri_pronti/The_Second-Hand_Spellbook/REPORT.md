@@ -1,6 +1,6 @@
 # Report di consegna — The Second-Hand Spellbook
 
-_Generato il 23/08/2026 alle 11:48_
+_Generato il 23/08/2026 alle 12:09_
 
 ---
 
@@ -64,8 +64,7 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260820_135214.json`
     - riga 550: trattino in 'blind-stamped' — contesto: 'She stopped about two thirds of the way along, at a squat brown one wi'
     - _...e altri 10_
 - ✅ **Prezzo rispetto alla nicchia**: nessun problema
-- ⚠️ **Titolo sulla copertina**: 1 da verificare
-    - VERIFICA A MANO: il motore Tesseract non e' installato sul PC (il pacchetto Python da solo non basta). Scaricalo da https://github.com/UB-Mannheim/tesseract/wiki e reinstalla; nel frattempo controlla a occhio che il titolo sulla copertina sia scritto correttamente.
+- ✅ **Titolo sulla copertina**: nessun problema
 - ✅ **EPUB (ebook)**: nessun problema
 - ✅ **Numerazione pagine**: nessun problema
 - ✅ **Parole spezzate a fine riga**: nessun problema

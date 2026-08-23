@@ -241,10 +241,10 @@ dichiarava 3 su 6, e su una macchina pulita `python -m engine.kdp stato` moriva 
 
 Due programmi che pip **non** installa:
 
-| | Serve a | Se manca |
-|---|---|---|
-| **Microsoft Word** | `docx2pdf` → il PDF | niente PDF ⇒ niente pagine vere ⇒ **la consegna blocca** |
-| **Tesseract OCR** | `pytesseract` → titolo in copertina | il controllo finisce in `verifiche_non_eseguite`, non blocca |
+| | Serve a | Se manca | Su questa macchina |
+|---|---|---|---|
+| **Microsoft Word** | `docx2pdf` → il PDF | niente PDF ⇒ niente pagine vere ⇒ **la consegna blocca** | ✅ Office16 |
+| **Tesseract OCR** | `pytesseract` → titolo in copertina | il controllo finisce in `verifiche_non_eseguite`, non blocca | ✅ v5.4.0, `winget install --id UB-Mannheim.TesseractOCR` (2026-08-23) |
 
 ---
 
@@ -267,7 +267,10 @@ errore realmente avvenuto qui.
 | `the-ninth-winter` | ✅ pacchetto completo, 119 pagine reali, PUBBLICABILE |
 | `the-second-hand-spellbook` | ✅ pacchetto completo, 118 pagine reali, PUBBLICABILE |
 
-Tutti e tre con `.docx` + PDF + **EPUB** + copertina a norma + copy pulito.
+Tutti e tre con `.docx` + PDF + **EPUB** + copertina a norma + copy pulito, e con
+**`bloccanti: 0` e `verifiche_non_eseguite: 0`**: da quando Tesseract è installato, ogni
+controllo bloccante della consegna ha girato per davvero e ha detto di sì. Prima d'ora non
+era mai successo — c'era sempre almeno l'OCR della copertina che non poteva girare.
 **Nessuno è ancora su KDP**: `libri_pubblicati/` è vuoto, e finché resta vuoto il collo di
 bottiglia non è la produzione.
 

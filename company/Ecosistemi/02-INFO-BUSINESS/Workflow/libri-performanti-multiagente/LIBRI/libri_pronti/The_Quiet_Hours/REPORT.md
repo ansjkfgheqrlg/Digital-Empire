@@ -1,6 +1,6 @@
 # Report di consegna — The Quiet Hours
 
-_Generato il 23/08/2026 alle 11:48_
+_Generato il 23/08/2026 alle 12:09_
 
 ---
 
@@ -64,8 +64,7 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260807_155815.json`
     - riga 571: trattino in 'night-time' — contesto: '*Mrs F unable to remain at current address. Repeated night-time wander'
     - _...e altri 24_
 - ✅ **Prezzo rispetto alla nicchia**: nessun problema
-- ⚠️ **Titolo sulla copertina**: 1 da verificare
-    - VERIFICA A MANO: il motore Tesseract non e' installato sul PC (il pacchetto Python da solo non basta). Scaricalo da https://github.com/UB-Mannheim/tesseract/wiki e reinstalla; nel frattempo controlla a occhio che il titolo sulla copertina sia scritto correttamente.
+- ✅ **Titolo sulla copertina**: nessun problema
 - ✅ **EPUB (ebook)**: nessun problema
 - ✅ **Numerazione pagine**: nessun problema
 - ✅ **Parole spezzate a fine riga**: nessun problema

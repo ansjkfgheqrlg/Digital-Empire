@@ -3,9 +3,7 @@
   "pagine_reali": 119,
   "bloccanti": [],
   "errori": [],
-  "verifiche_non_eseguite": [
-    "[Titolo sulla copertina] VERIFICA A MANO: il motore Tesseract non e' installato sul PC (il pacchetto Python da solo non basta). Scaricalo da https://github.com/UB-Mannheim/tesseract/wiki e reinstalla; nel frattempo controlla a occhio che il titolo sulla copertina sia scritto correttamente."
-  ],
+  "verifiche_non_eseguite": [],
   "avvisi": [
     "[Trattini nel testo (da rivedere a occhio)] riga 142: trattino in 'not-talking' — contesto: 'That was not unusual. Miriam Yoder had never been a talker, and in the'",
     "[Trattini nel testo (da rivedere a occhio)] riga 290: trattino in 'chow-chow' — contesto: 'The first four were recipes. Actual recipes, in Sarah's hand: shoofly '",

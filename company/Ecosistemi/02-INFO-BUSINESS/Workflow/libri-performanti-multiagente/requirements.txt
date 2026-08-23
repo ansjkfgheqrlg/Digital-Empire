@@ -24,5 +24,10 @@ pytest>=8.0           # la suite in tests/
 #   Tesseract OCR     serve a pytesseract. Senza: il titolo in copertina non viene
 #                     letto e resta da controllare a occhio. Non blocca.
 #                     https://github.com/UB-Mannheim/tesseract/wiki
+#                     Su questa macchina: installato il 2026-08-23 con
+#                       winget install --id UB-Mannheim.TesseractOCR --exact
+#                     (v5.4.0 in C:\Program Files\Tesseract-OCR, il percorso che
+#                     `validators.valida_copertina_testo` cerca da solo). Provato sulle tre
+#                     copertine vere: titolo letto 3 volte su 3, meno di mezzo secondo.
 #
 # Dopo l'installazione di playwright, una volta sola:  python -m playwright install chromium
