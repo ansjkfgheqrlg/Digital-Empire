@@ -23,9 +23,14 @@ uscita; il consiglio che rimandava al ritmo del minimo invece che del bersaglio,
 che contraddiceva CP-1). Lo scraper Amazon **funziona senza login manuale**: magazzino
 riempito, 2 argomenti ancora liberi. 85 test verdi.
 
-**RIPRESA DA:** caricare i **tre** libri su KDP e spostarli in `libri_pubblicati/`. Le
-copertine sono a 139 e 171 DPI reali contro i 300 di KDP: da rigenerare a ≥1800×2700 se si
-vuole il cartaceo nitido. Prossimo libro: dark academia mystery, già in magazzino, mirando a
+**RIPRESA DA:** caricare i **tre** libri su KDP e spostarli in `libri_pubblicati/`.
+**⚠️ CORREZIONE 2026-08-23 (Gael, verifica sui file):** la riga qui sopra diceva
+"copertine a 139 e 171 DPI, da rigenerare" — **è obsoleta, non rifare quel lavoro.**
+Misurate tutte e tre sui byte dei PNG: **1800×2700 = 300 DPI esatti**, già a norma KDP
+(rigenerate in `03b031ee` 18/08 e `6631c83e` 20/08). Verificato anche il resto del pacchetto:
+PDF a **116 / 115 / 115** pagine reali (minimo 115) e i tre gate `pubblicabile=true` con
+**0 bloccanti**. Nessun ostacolo tecnico all'upload: i tre pacchetti sono completi.
+Prossimo libro: dark academia mystery, già in magazzino, mirando a
 **1.750 parole/capitolo** per atterrare a 1.600. Dettagli in
 [CP-20260820-001](checkpoints/CP-20260820-001.md).
 
