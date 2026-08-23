@@ -231,9 +231,33 @@
       "titolo": "Consolidare Workflow pubblicazione automatica esistente in comando richiamabile (input: cartella caroselli -> pubblica/dry-run su canale reale). Sblocca sia Caroselli che futuro KDP/YouTube",
       "stato": "da_fare",
       "note": "Continuazione mirata, non ricostruzione da zero. Motore: SKILL & Agenti/Workflow pubblicazione automatica/. Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
+    },
+    {
+      "id": "TASK-ARENA-SESSION-W1",
+      "owner": "Gael",
+      "giorno": "Settimana 1 (24-30 ago 2026) — SECONDARIA/fallback",
+      "titolo": "Consolidare in un solo modulo condiviso le 3 automazioni Arena/browser duplicate (caroselli, arena_thumbnail YouTube, resti KDP-Arena) — riduce bug ricorrenti di profilo/login/hang",
+      "stato": "da_fare",
+      "note": "SECONDARIA: fare solo se una primaria (KDP/CAROSELLI/PUBLISHER) e' bloccata. Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
+    },
+    {
+      "id": "TASK-MEMORY-SYNC-W1",
+      "owner": "Gael",
+      "giorno": "Settimana 1 (24-30 ago 2026) — SECONDARIA/fallback",
+      "titolo": "Far rispettare per davvero l'anti-collisione checkpoint (B-009, riaccaduta 2026-08-23): un controllo che blocca il commit invece di scoprirla al merge",
+      "stato": "da_fare",
+      "note": "SECONDARIA: fare solo se una primaria e' bloccata. Vedi BACKLOG.md B-009. Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
+    },
+    {
+      "id": "TASK-GITLFS-W1",
+      "owner": "Gael",
+      "giorno": "Settimana 1 (24-30 ago 2026) — SECONDARIA/fallback",
+      "titolo": "Chiudere B-008: Git LFS o gitignore mirato per i blob (PDF/DOCX/PNG) prima che la produzione KDP/Caroselli/YouTube faccia ingrassare il repo senza controllo",
+      "stato": "da_fare",
+      "note": "SECONDARIA: fare solo se una primaria e' bloccata. Vedi BACKLOG.md B-008. Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
     }
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md + company/Memory/tasks/TASK-GAEL-20260824-SETTIMANA-01.md (cadenza settimanale da 2026-08-23)",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-08-23 (Max: passaggio a task settimanali; assegnate TASK-KDP-W1, TASK-CAROSELLI-W1, TASK-PUBLISHER-W1 a Gael)"
+  "aggiornato": "2026-08-23 (Max: passaggio a task settimanali; assegnate 3 primarie TASK-KDP-W1/TASK-CAROSELLI-W1/TASK-PUBLISHER-W1 + 3 secondarie/fallback TASK-ARENA-SESSION-W1/TASK-MEMORY-SYNC-W1/TASK-GITLFS-W1 a Gael)"
 }

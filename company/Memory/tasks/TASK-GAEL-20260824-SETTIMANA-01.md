@@ -18,9 +18,14 @@ fine settimana. Ogni task chiusa (o comunque ogni fine sessione) → checkpoint 
 Item minori che spuntano mentre lavori → `company/Memory/BACKLOG.md`, non fermano la
 settimana.
 
-3 task questa settimana. Le prime due sono le tue aree note (KDP, Caroselli — quest'ultima
-ora **ufficiale**, non più fuori taskboard). La terza è pezzo di costruzione Impero che
-serve davvero alle prime due, non costruzione fine a se stessa.
+3 task PRIMARIE questa settimana. Le prime due sono le tue aree note (KDP, Caroselli —
+quest'ultima ora **ufficiale**, non più fuori taskboard). La terza è pezzo di costruzione
+Impero che serve davvero alle prime due, non costruzione fine a se stessa.
+
+**+ 3 task SECONDARIE** (§ in fondo): non sono il centro della settimana, ma sono lì apposta
+per quando una primaria si blocca (dipendenza esterna, captcha, credenziale, decisione che
+serve a Max) — così non resti fermo ad aspettare. Priorità: primarie prima, secondarie solo
+quando una primaria è bloccata o completamente chiusa.
 
 ---
 
@@ -106,12 +111,93 @@ almeno un canale reale. Incolla comando + esito nel checkpoint.
 
 ---
 
+# Task SECONDARIE — Settimana 1 (fallback, priorità minore ma reali)
+
+Da fare **solo quando una primaria è bloccata o chiusa**, non in parallelo per scelta. Tutte
+e 3 nascono da problemi reali già documentati (non inventate) — ognuna migliora come
+funziona l'Impero, senza essere "ricominciare a costruire da zero".
+
+## 🟤 TASK-ARENA-SESSION-W1 — Un solo motore di sessione Arena/browser condiviso
+
+Oggi esistono **almeno 3 automazioni Arena/browser separate** che reinventano la stessa
+logica (apertura profilo, login, gestione captcha/hang): il motore caroselli
+(`SKILL & Agenti/Workflow agency creative/caroselli - preventa/`, Arena Agent Workspace),
+`YOUTUBE-AUTOMATION-FACTORY/.../arena_thumbnail.py` (appena corretto oggi: Chrome reale via
+CDP), e i resti del tentativo KDP-su-Arena (`_archivio_automazione_modelli/lmarena_client.py`,
+archiviato ma non cancellato). Storico reale di bug dovuti a questa duplicazione: profilo
+Brave pieno che causava hang da 180s (CP-20260806-006), sessione non autenticata scoperta
+solo via screenshot, modale "Terms of Use" mai gestita.
+
+**Obiettivo**: UN modulo condiviso (sessione persistente + CDP + controllo login esplicito +
+gestione captcha/hang) che i 3 consumatori richiamano invece di reimplementare ciascuno la
+propria variante. Non è un motore nuovo — è consolidare quello che già esiste e già ha
+mostrato gli stessi bug in punti diversi.
+
+**Gate**: almeno 2 dei 3 consumatori (es. carosello + arena_thumbnail) usano lo stesso modulo
+di sessione, non due copie. Verificato con un run reale su entrambi.
+
+---
+
+## ⚪ TASK-MEMORY-SYNC-W1 — Far smettere per davvero le collisioni di checkpoint
+
+Problema reale, documentato, **riaccaduto ancora oggi 2026-08-23** (4ª-5ª volta, vedi
+`BACKLOG.md` B-009): due sessioni parallele scrivono un checkpoint con lo stesso ID
+(`CP-YYYYMMDD-NNN`) e allo `stato-empire`/`INDEX.md`. Il fix esiste da tempo
+(`python -m empire mem write --kind checkpoint --view`, lock anti-collisione in
+`empire/memory/store.py`) ma **non viene usato** — checkpoint continuano a nascere scritti a
+mano. Oggi la collisione ha coinvolto 5 file contemporaneamente + un bug di merge separato
+(CRLF vs LF su `STATO-EMPIRE.md` che stava per duplicare ~6500 righe di storico) — ore di
+lavoro solo per disincagliare il merge.
+
+**Obiettivo**: non "spiegare di nuovo la regola" (già scritta 2 volte in BACKLOG, ignorata 2
+volte) — costruire qualcosa che la fa rispettare da sola. Es: un controllo (pre-commit o
+script di verifica) che blocca un commit se sta per creare un file `checkpoints/CP-*.md` con
+lo stesso nome di uno già esistente, invece di scoprirlo al merge.
+
+**Gate**: prova che il controllo blocca davvero una collisione simulata (crea due checkpoint
+con lo stesso ID in due branch/cartelle diverse, dimostra che il controllo la intercetta
+prima del commit, non dopo).
+
+---
+
+## ⚫ TASK-GITLFS-W1 — Decidere e chiudere la questione blob grossi in git (B-008)
+
+`company/Memory/BACKLOG.md` B-008, mai chiuso: screenshot/PDF/video finiscono committati
+diretti nel repo (oggi stesso: ~15 screenshot fliki + PDF/DOCX libri KDP nel merge). Rischio
+già materializzato una volta (push da 899MB morto per rete instabile). Con KDP a 5-10
+libri/settimana (copertine, PDF) + Caroselli (immagini) + YouTube (screenshot) il volume di
+binari nel repo sale, non scende.
+
+**Obiettivo**: una decisione presa e applicata, non solo scritta in backlog — Git LFS per le
+estensioni pesanti (`.pdf`, `.docx`, `.png` nelle cartelle di output), oppure `.gitignore`
+mirato + convenzione di storage locale per gli artefatti che non devono stare nella storia
+git. Non serve migrare la storia esistente, serve che da ora in poi il repo non continui a
+ingrassare senza controllo.
+
+**Gate**: un file di test del tipo giusto (es. uno screenshot nuovo) non finisce più nella
+storia normale di git dopo il fix, verificato con `git log --stat` sul commit di prova.
+
+---
+
+## Nota di Claude sul "sistema nervoso" (Orchestration Layer)
+
+Max ha chiesto se ha senso un nuovo layer stile NERVE-SOLVE (L1). Non lo metto come task
+questa settimana: **L2/L3 restano indefiniti apposta** (deciso in CP-20260822-001, sessione
+dedicata futura) e costruirne uno ora senza un problema reale da risolvere sarebbe esattamente
+il "ricominciare a costruire" che Max ha detto di evitare. La cosa più vicina a un vero
+"sistema nervoso" che serve **adesso** è TASK-MEMORY-SYNC-W1 sopra: la memoria condivisa
+(`company/Memory/`) è già il sistema nervoso reale dell'Impero — oggi non si fida di se
+stesso (si contraddice tra sessioni). Irrobustire quello vale più di un L2 nuovo e teorico.
+
+---
+
 ## Regole valide per tutte e 3
 
 1. **Prova, non dichiarazione** — comando + output reale incollato nel checkpoint per ogni gate.
 2. **Task chiusa → checkpoint** in `company/Memory/checkpoints/CP-20260824-NNN.md` (primo
    numero libero quando parti) + `stato` aggiornato in `EmpireDesk/state/taskboard.json`
-   per l'ID corrispondente (`TASK-KDP-W1`, `TASK-CAROSELLI-W1`, `TASK-PUBLISHER-W1`).
+   per l'ID corrispondente (`TASK-KDP-W1`, `TASK-CAROSELLI-W1`, `TASK-PUBLISHER-W1`,
+   `TASK-ARENA-SESSION-W1`, `TASK-MEMORY-SYNC-W1`, `TASK-GITLFS-W1`).
 3. Su TASK-CAROSELLI-W1 e TASK-PUBLISHER-W1: se ti blocchi più di una sessione sullo stesso
    punto, scrivi il blocco in `STATO-EMPIRE.md` (blocco ⚠️ COORDINAMENTO) invece di
    insistere da solo — Claude interviene.
@@ -124,7 +210,14 @@ almeno un canale reale. Incolla comando + esito nel checkpoint.
 
 ## Definition of Done — Settimana 1
 
+Primarie (centro della settimana):
 - [ ] TASK-KDP-W1: 1 libro reale, flusso unico avvio->cartella finale con 3 artefatti (testo/copertina-prompt/copy Amazon)
 - [ ] TASK-CAROSELLI-W1: 1 comando+argomento -> caroselli reali salvati ordinati
 - [ ] TASK-PUBLISHER-W1: 1 comando che pubblica (o dry-run verificato) un output caroselli su un canale reale
-- [ ] checkpoint di fine settimana con stato reale delle 3 (fatto / parziale+dove sei / bloccato+perché)
+
+Secondarie (fallback, solo se una primaria si blocca o chiude prima):
+- [ ] TASK-ARENA-SESSION-W1: 2+ consumatori Arena sullo stesso modulo di sessione, non copie
+- [ ] TASK-MEMORY-SYNC-W1: controllo che blocca collisioni checkpoint prima del commit, dimostrato
+- [ ] TASK-GITLFS-W1: decisione LFS/gitignore applicata, verificata su un file di test
+
+- [ ] checkpoint di fine settimana con stato reale di tutte e 6 (fatto / parziale+dove sei / bloccato+perché / non toccata)
