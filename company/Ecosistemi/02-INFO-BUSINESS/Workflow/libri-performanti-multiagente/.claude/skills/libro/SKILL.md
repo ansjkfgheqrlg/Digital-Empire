@@ -182,11 +182,36 @@ titolo** — quello l'ha già disegnato il modello seguendo il prompt.
 > `--scrivi-titolo` lo stampa sopra con un font vero. È la rete di sicurezza, non la norma.
 
 ### 6. Consegna
-`consegna` produce il `.docx` KDP, il PDF, conta le **pagine vere rileggendo il PDF** e
-scrive `REPORT.md` + `validazione.json`. Se è sotto le 115 pagine **si ferma e dice quanti
-capitoli mancano**.
+`consegna` produce il `.docx` KDP, il PDF, **l'EPUB**, conta le **pagine vere rileggendo il
+PDF** e scrive `REPORT.md` + `validazione.json`. Se è sotto le 115 pagine **si ferma e dice
+quanti capitoli mancano**.
 
 Il pacchetto finito esce in `LIBRI/libri_pronti/<Titolo>/`. Da lì lo carica Gael a mano.
+
+**Tre cose da sapere sul verdetto:**
+
+- **`verifiche_non_eseguite` non è una sezione di avvisi.** Elenca i controlli che *non hanno
+  detto di sì* perché mancava lo strumento. Se il PDF non si è potuto fare, la consegna
+  **blocca**: un numero di pagine non misurato non vale come misurato.
+- **Il copy passa dagli stessi controlli del libro.** Niente lineette lunghe nella
+  descrizione, nel sottotitolo, nella bio e nell'HTML: è il testo che si legge *prima* di
+  comprare, ed è lì che "sembra scritto dall'AI" costa una vendita. Blocca.
+- **Il prezzo viene confrontato col prezzo medio misurato nella nicchia.** Non blocca, ma se
+  è più del doppio o meno della metà lo dice: quel numero è già stato rilevato su Amazon e
+  sta in `ispirazione.json`, non va deciso a sentimento.
+
+### 7. Quando il libro è su KDP
+```
+python -m engine.kdp pubblicato <slug> --asin B0XXXXXXXX [--prezzo 13.99]
+```
+Archivia il pacchetto in `libri_pubblicati/`, ci copia dentro i sorgenti (capitoli, outline,
+riassunti, metriche) verificandoli byte per byte, registra ASIN e prezzo in
+`pubblicazione.json`, aggiunge il libro alla nicchia del catalogo, chiude l'argomento in
+magazzino e cancella la cartella di lavorazione.
+
+**Da fare sempre**: è il passo che chiude il ciclo e che alimenta il "Also by" in fondo ai
+libri successivi. Finché non viene fatto, ogni libro nuovo esce senza sapere che gli altri
+esistono.
 
 ---
 
@@ -201,14 +226,16 @@ python -m engine.kdp stato <slug>     # a che punto è questo
 
 Poi rileggo `outline.md` e `riassunti.md` e riparto dal capitolo indicato.
 
-**Attenzione a un caso reale**: `the-ninth-winter` è fermo a 8/24 capitoli e il suo
-`riassunti.md` **non è mai stato aggiornato** — contiene solo il segnaposto. Se i riassunti
-mancano o sono vuoti, **li ricostruisco rileggendo i capitoli già scritti** prima di
-proseguire. Scrivere il capitolo 9 senza sapere cosa è successo nei primi 8 produce un libro
-incoerente, e il controllo automatico non se ne accorge.
+**Il caso reale da cui viene questa regola**: `the-ninth-winter` è rimasto fermo a 8/24
+capitoli con il suo `riassunti.md` **mai aggiornato**, e con i capitoli a ~1.040 parole invece
+di 1.600. Se i riassunti mancano o sono vuoti, **li ricostruisco rileggendo i capitoli già
+scritti** prima di proseguire: scrivere il capitolo 9 senza sapere cosa è successo nei primi
+8 produce un libro incoerente. Oggi entrambi i difetti li prende `kdp blocco` al primo giro,
+ma quel libro è costato quattro riprese perché sono stati scoperti al capitolo 24.
 
-Stesso libro: i capitoli esistenti sono ~1.040 parole invece di 1.500. Se il conto finale
-resta sotto le 115 pagine, servono capitoli più lunghi o più capitoli — lo dice `stato`.
+`kdp stato <slug>` mostra anche le **metriche di produzione**: quanto tempo è passato, quante
+volte il gate ha bocciato e perché, quante riconsegne. È lì che si vede dove va il tempo —
+il codice, cronometrato, ne prende meno di un minuto.
 
 ---
 
@@ -216,12 +243,17 @@ resta sotto le 115 pagine, servono capitoli più lunghi o più capitoli — lo d
 
 1. **Mai dichiarare finito un libro sotto le 115 pagine reali.** Il controllo blocca da solo;
    `--forza` serve solo per ispezionare una bozza, mai per consegnare.
-2. **Mai un capitolo identico o quasi a un altro.** Se succede è un errore di processo:
-   si riscrive.
+2. **Mai un capitolo identico o quasi a un altro.** Da oggi lo controlla
+   `valida_ripetizioni`, sia al gate di blocco sia alla consegna, e **blocca**: era l'unica
+   di queste regole che nessuna funzione faceva rispettare.
 3. **Mai copiare da un concorrente.** La ricerca serve a capire il mercato, non i testi.
 4. **La coerenza viene da `outline.md` + `riassunti.md`**, non dalla memoria della sessione.
 5. **Il codice non chiama modelli.** Se una modifica futura lo reintroduce, è un passo
    indietro verso tre fallimenti già pagati.
+6. **Un libro si scrive nella nicchia del catalogo.** `kdp nuovo` rifiuta una nicchia diversa
+   da quella attiva senza `--motivo`. I primi tre libri sono usciti in tre nicchie diverse,
+   con tre nomi d'autore diversi: nessuno dei tre aiuta a vendere gli altri, ed è il modo
+   più caro di fare tre libri.
 
 ---
 
@@ -234,9 +266,11 @@ python -m engine.kdp magazzino --prendi              # il prossimo da scrivere
 python -m engine.kdp nicchie --keywords "..." "..."  # misura nicchie su Amazon
 python -m engine.kdp nicchia-stato                   # la nicchia del catalogo
 python -m engine.kdp nicchia-confronta --keywords "..." [--applica]
-python -m engine.kdp nuovo "<Titolo>" --nicchia "<n>"
-python -m engine.kdp stato [slug]
+python -m engine.kdp nuovo "<Titolo>" --nicchia "<n>" [--autore "<nome>"] [--motivo "..."]
+python -m engine.kdp blocco <slug>                   # DOPO OGNI BLOCCO. <1 secondo.
+python -m engine.kdp stato [slug]                    # avanzamento + metriche di produzione
 python -m engine.kdp consegna <slug> --cover <png> [--scrivi-titolo] [--forza]
+python -m engine.kdp pubblicato <slug> --asin B0XXXXXXXX [--prezzo 13.99]
 ```
 
 Exit code: `0` ok · `1` non pubblicabile · `2` parametri sbagliati · `3` errore di sistema.

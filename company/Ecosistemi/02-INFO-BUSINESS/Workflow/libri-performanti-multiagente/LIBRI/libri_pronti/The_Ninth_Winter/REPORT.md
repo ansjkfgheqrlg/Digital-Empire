@@ -1,6 +1,6 @@
 # Report di consegna — The Ninth Winter
 
-_Generato il 19/08/2026 alle 14:44_
+_Generato il 23/08/2026 alle 11:48_
 
 ---
 
@@ -10,8 +10,8 @@ _Generato il 19/08/2026 alle 14:44_
 - **Autore**: Rebecca Miller
 - **Nicchia**: amish romance suspense
 - **Capitoli**: 24
-- **Parole**: 36.853
-- **Pagine reali** (contate sul PDF impaginato): **116**
+- **Parole**: 36.857
+- **Pagine reali** (contate sul PDF impaginato): **119**
 - **Formato**: 6.0x9.0 pollici
 
 ## File consegnati
@@ -53,6 +53,9 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260813_175812.json`
 
 - ✅ **Capitoli interrotti a meta'**: nessun problema
 - ✅ **Lineette lunghe (non devono esserci)**: nessun problema
+- ✅ **Capitoli che si ripetono**: nessun problema
+- ✅ **Capitoli simili (da rileggere)**: nessun problema
+- ✅ **Copy KDP (lo legge chi compra)**: nessun problema
 - ⚠️ **Trattini nel testo (da rivedere a occhio)**: 14 da verificare
     - riga 142: trattino in 'not-talking' — contesto: 'That was not unusual. Miriam Yoder had never been a talker, and in the'
     - riga 290: trattino in 'chow-chow' — contesto: 'The first four were recipes. Actual recipes, in Sarah's hand: shoofly '
@@ -60,7 +63,11 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260813_175812.json`
     - riga 942: trattino in 'hand-lettered' — contesto: 'There was a bell on a post by the office with a hand-lettered sign: DE'
     - riga 1004: trattino in 'chow-chow' — contesto: '"Sarah." He said it the way a man says a name he is being handed. He t'
     - _...e altri 9_
-- ✅ **Titolo sulla copertina**: nessun problema
+- ⚠️ **Prezzo rispetto alla nicchia**: 1 da verificare
+    - prezzo $12.99 contro una media misurata di $5.95 nella nicchia: piu' del doppio. Verifica che sia voluto.
+- ⚠️ **Titolo sulla copertina**: 1 da verificare
+    - VERIFICA A MANO: il motore Tesseract non e' installato sul PC (il pacchetto Python da solo non basta). Scaricalo da https://github.com/UB-Mannheim/tesseract/wiki e reinstalla; nel frattempo controlla a occhio che il titolo sulla copertina sia scritto correttamente.
+- ✅ **EPUB (ebook)**: nessun problema
 - ✅ **Numerazione pagine**: nessun problema
 - ✅ **Parole spezzate a fine riga**: nessun problema
 

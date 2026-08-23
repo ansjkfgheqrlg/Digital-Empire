@@ -1,3 +1,28 @@
-playwright>=1.45
-python-docx>=1.1
-Pillow>=10.0
+# Dipendenze REALI del motore. Elenco completo verificato il 2026-08-23 leggendo gli
+# import di engine/ e tests/: prima ne dichiarava 3 su 6 e `python -m engine.kdp stato`
+# moriva con "ModuleNotFoundError: No module named 'docx'" su una macchina pulita.
+#
+#     pip install -r requirements.txt
+#
+python-docx>=1.1      # manoscritto .docx impaginato KDP (kdp_formatter)
+docx2pdf>=0.1.8       # .docx -> PDF pilotando Word (book_output_manager)
+pdfplumber>=0.11      # rilettura del PDF: numerazione, sillabazione (validators)
+Pillow>=10.0          # copertina a norma KDP (copertina_kdp)
+playwright>=1.45      # misura delle nicchie su Amazon (amazon_research)
+pytesseract>=0.3.10   # OCR del titolo in copertina (validators)
+pytest>=8.0           # la suite in tests/
+
+# --------------------------------------------------------------------------- #
+# DUE PROGRAMMI ESTERNI, che pip non installa. Senza, il relativo controllo NON
+# gira — e da oggi il verdetto lo dichiara invece di tacere (`verifiche_non_eseguite`
+# in validazione.json):
+#
+#   Microsoft Word    serve a docx2pdf. Senza: niente PDF, quindi niente conteggio
+#                     pagine reali, e la consegna si FERMA (le pagine sono il numero
+#                     che decide se il libro e' pubblicabile: non si tirano a indovinare).
+#
+#   Tesseract OCR     serve a pytesseract. Senza: il titolo in copertina non viene
+#                     letto e resta da controllare a occhio. Non blocca.
+#                     https://github.com/UB-Mannheim/tesseract/wiki
+#
+# Dopo l'installazione di playwright, una volta sola:  python -m playwright install chromium

@@ -1,6 +1,6 @@
 # Report di consegna — The Second-Hand Spellbook
 
-_Generato il 20/08/2026 alle 14:43_
+_Generato il 23/08/2026 alle 11:48_
 
 ---
 
@@ -10,8 +10,8 @@ _Generato il 20/08/2026 alle 14:43_
 - **Autore**: Maren Ashcroft
 - **Nicchia**: cozy fantasy bookshop
 - **Capitoli**: 24
-- **Parole**: 38.110
-- **Pagine reali** (contate sul PDF impaginato): **115**
+- **Parole**: 38.114
+- **Pagine reali** (contate sul PDF impaginato): **118**
 - **Formato**: 6.0x9.0 pollici
 
 ## File consegnati
@@ -53,6 +53,9 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260820_135214.json`
 
 - ✅ **Capitoli interrotti a meta'**: nessun problema
 - ✅ **Lineette lunghe (non devono esserci)**: nessun problema
+- ✅ **Capitoli che si ripetono**: nessun problema
+- ✅ **Capitoli simili (da rileggere)**: nessun problema
+- ✅ **Copy KDP (lo legge chi compra)**: nessun problema
 - ⚠️ **Trattini nel testo (da rivedere a occhio)**: 15 da verificare
     - riga 5: trattino in 'rust-coloured' — contesto: 'She recognised it from the harbour at Fenn, before she had even read t'
     - riga 52: trattino in 'coal-tar' — contesto: 'That was the thing that did it, in the end. Not the board and not the '
@@ -60,7 +63,10 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260820_135214.json`
     - riga 191: trattino in 'blind-stamped' — contesto: 'It came away easily. It was heavier than it looked, the way books alwa'
     - riga 550: trattino in 'blind-stamped' — contesto: 'She stopped about two thirds of the way along, at a squat brown one wi'
     - _...e altri 10_
-- ✅ **Titolo sulla copertina**: nessun problema
+- ✅ **Prezzo rispetto alla nicchia**: nessun problema
+- ⚠️ **Titolo sulla copertina**: 1 da verificare
+    - VERIFICA A MANO: il motore Tesseract non e' installato sul PC (il pacchetto Python da solo non basta). Scaricalo da https://github.com/UB-Mannheim/tesseract/wiki e reinstalla; nel frattempo controlla a occhio che il titolo sulla copertina sia scritto correttamente.
+- ✅ **EPUB (ebook)**: nessun problema
 - ✅ **Numerazione pagine**: nessun problema
 - ✅ **Parole spezzate a fine riga**: nessun problema
 

@@ -1,7 +1,11 @@
 {
   "pubblicabile": true,
+  "pagine_reali": 119,
   "bloccanti": [],
   "errori": [],
+  "verifiche_non_eseguite": [
+    "[Titolo sulla copertina] VERIFICA A MANO: il motore Tesseract non e' installato sul PC (il pacchetto Python da solo non basta). Scaricalo da https://github.com/UB-Mannheim/tesseract/wiki e reinstalla; nel frattempo controlla a occhio che il titolo sulla copertina sia scritto correttamente."
+  ],
   "avvisi": [
     "[Trattini nel testo (da rivedere a occhio)] riga 142: trattino in 'not-talking' — contesto: 'That was not unusual. Miriam Yoder had never been a talker, and in the'",
     "[Trattini nel testo (da rivedere a occhio)] riga 290: trattino in 'chow-chow' — contesto: 'The first four were recipes. Actual recipes, in Sarah's hand: shoofly '",
@@ -16,6 +20,7 @@
     "[Trattini nel testo (da rivedere a occhio)] riga 2536: trattino in 'dry-eyed' — contesto: '\"Nobody in my house has said it out loud since the year it happened. M'",
     "[Trattini nel testo (da rivedere a occhio)] riga 2732: trattino in 'I-9s' — contesto: '\"So here it is,\" said Graber. \"There is a deduction. There has been fo'",
     "[Trattini nel testo (da rivedere a occhio)] riga 2764: trattino in 'chow-chow' — contesto: '\"You said, *my wife'd know, she buys the chow-chow*.\"'",
-    "[Trattini nel testo (da rivedere a occhio)] riga 3004: trattino in 'record-keeping' — contesto: '\"I said the handwriting was gone and I was sorry about it, and that's '"
+    "[Trattini nel testo (da rivedere a occhio)] riga 3004: trattino in 'record-keeping' — contesto: '\"I said the handwriting was gone and I was sorry about it, and that's '",
+    "[Prezzo rispetto alla nicchia] prezzo $12.99 contro una media misurata di $5.95 nella nicchia: piu' del doppio. Verifica che sia voluto."
   ]
 }

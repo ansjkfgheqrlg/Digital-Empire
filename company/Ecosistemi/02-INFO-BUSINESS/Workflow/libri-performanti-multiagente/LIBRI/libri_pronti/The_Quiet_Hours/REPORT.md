@@ -1,6 +1,6 @@
 # Report di consegna — The Quiet Hours
 
-_Generato il 19/08/2026 alle 14:06_
+_Generato il 23/08/2026 alle 11:48_
 
 ---
 
@@ -10,8 +10,8 @@ _Generato il 19/08/2026 alle 14:06_
 - **Autore**: Digital Empire
 - **Nicchia**: psychological thriller unreliable narrator
 - **Capitoli**: 24
-- **Parole**: 37.150
-- **Pagine reali** (contate sul PDF impaginato): **115**
+- **Parole**: 37.160
+- **Pagine reali** (contate sul PDF impaginato): **118**
 - **Formato**: 6.0x9.0 pollici
 
 ## File consegnati
@@ -53,6 +53,9 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260807_155815.json`
 
 - ✅ **Capitoli interrotti a meta'**: nessun problema
 - ✅ **Lineette lunghe (non devono esserci)**: nessun problema
+- ✅ **Capitoli che si ripetono**: nessun problema
+- ✅ **Capitoli simili (da rileggere)**: nessun problema
+- ✅ **Copy KDP (lo legge chi compra)**: nessun problema
 - ⚠️ **Trattini nel testo (da rivedere a occhio)**: 29 da verificare
     - riga 214: trattino in 'not-having' — contesto: 'That's the part. Around week seven you close the last account and ther'
     - riga 214: trattino in 'anything-to' — contesto: 'That's the part. Around week seven you close the last account and ther'
@@ -60,7 +63,10 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260807_155815.json`
     - riga 426: trattino in 'carrier-delayed' — contesto: '"The rest of it is that carrier-delayed voicemail is a real, documente'
     - riga 571: trattino in 'night-time' — contesto: '*Mrs F unable to remain at current address. Repeated night-time wander'
     - _...e altri 24_
-- ✅ **Titolo sulla copertina**: nessun problema
+- ✅ **Prezzo rispetto alla nicchia**: nessun problema
+- ⚠️ **Titolo sulla copertina**: 1 da verificare
+    - VERIFICA A MANO: il motore Tesseract non e' installato sul PC (il pacchetto Python da solo non basta). Scaricalo da https://github.com/UB-Mannheim/tesseract/wiki e reinstalla; nel frattempo controlla a occhio che il titolo sulla copertina sia scritto correttamente.
+- ✅ **EPUB (ebook)**: nessun problema
 - ✅ **Numerazione pagine**: nessun problema
 - ✅ **Parole spezzate a fine riga**: nessun problema
 

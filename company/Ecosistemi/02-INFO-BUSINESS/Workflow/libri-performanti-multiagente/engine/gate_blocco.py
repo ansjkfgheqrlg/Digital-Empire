@@ -162,4 +162,15 @@ def controlla(progetto) -> EsitoBlocco:
                 f"filo aperto dal capitolo {da_capitolo} ({eta} capitoli fa): {testo}. "
                 f"Chiudilo entro il blocco prossimo o diventera' una scena aggiunta in coda."
             )
+
+    # 5. Capitoli che si ripetono (2026-08-23). E' il difetto piu' probabile quando si
+    # scrivono 8 capitoli di fila con la scaletta sotto gli occhi: due che fanno la stessa
+    # scena in due punti diversi del libro. Costa 828 confronti di insiemi su un libro
+    # intero, cioe' niente, e la regola "mai un capitolo quasi identico a un altro" era la
+    # sola delle sei non negoziabili che nessuna funzione faceva rispettare.
+    ripetizioni = validators.valida_ripetizioni(
+        {f"cap_{n:02d}": testo for n, testo in testi.items()})
+    bloccanti_rip = validators.ripetizioni_bloccanti(ripetizioni)
+    esito.blocchi += bloccanti_rip
+    esito.avvisi += [r for r in ripetizioni if r not in bloccanti_rip]
     return esito

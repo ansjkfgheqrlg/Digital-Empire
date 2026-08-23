@@ -33,7 +33,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from . import config
+from . import config, metriche
 
 OK, VALIDAZIONE_FALLITA, CONFIG_ERRATA, ERRORE_SISTEMA = 0, 1, 2, 3
 
@@ -236,8 +236,57 @@ def _cmd_nicchia(args) -> int:
     return OK
 
 
+def _controlla_nicchia_catalogo(nicchia: str, motivo: str | None) -> str | None:
+    """La disciplina di catalogo, applicata quando serve: alla creazione del libro.
+
+    PERCHE' (2026-08-23). `nicchia_attiva.py` esiste da 12 giorni, sono 251 righe con
+    storico, soglia di salute e margine per cambiare, e i primi tre libri del catalogo sono
+    usciti in TRE nicchie diverse — nessuna delle quali e' quella attiva:
+
+        nicchia attiva            small town romance suspense
+        The Quiet Hours           psychological thriller unreliable narrator
+        The Ninth Winter          amish romance suspense
+        The Second-Hand Spellbook cozy fantasy bookshop
+
+    Il controllo c'era e nessun percorso di codice lo interrogava: si sceglieva la nicchia
+    con un comando e poi se ne scriveva un'altra con un comando diverso. Su KDP quello che
+    vende il primo libro e' il secondo libro dello stesso autore nella stessa nicchia:
+    saltare a ogni titolo butta via l'associazione fra i libri, la pagina autore e le
+    recensioni che si spingono a vicenda.
+
+    Non blocca in modo cieco: `--motivo` lascia passare uno scarto dichiarato (una prova,
+    un libro di prestito a un'altra nicchia). Quello che non e' piu' possibile e' cambiare
+    nicchia **senza accorgersene**. Ritorna il messaggio da stampare, o None."""
+    from . import nicchia_attiva
+
+    attiva = nicchia_attiva.carica()
+    if attiva is None:
+        return ("Nessuna nicchia di catalogo fissata. Si puo' scrivere lo stesso, ma finche' "
+                "non c'e' i libri non si sommano: 'kdp nicchia-scegli --keywords \"...\"'.")
+    if nicchia.strip().lower() == attiva.keyword.strip().lower():
+        return None
+    if motivo:
+        return (f"Scarto DICHIARATO dalla nicchia di catalogo '{attiva.keyword}': {motivo}. "
+                f"Registrato in progetto.json.")
+    raise ValueError(
+        f"La nicchia del catalogo e' '{attiva.keyword}' ({attiva.punteggio_corrente}/100, "
+        f"{len(attiva.libri_pubblicati)} libri), questo libro sarebbe '{nicchia}'.\n"
+        f"  Su KDP il secondo libro nella stessa nicchia e' cio' che vende il primo: "
+        f"associazione fra titoli, pagina autore, recensioni che si spingono.\n"
+        f"  Se e' voluto:  --motivo \"<perche'>\"   (resta scritto nel progetto)\n"
+        f"  Se la nicchia e' da cambiare per davvero: "
+        f"kdp nicchia-confronta --keywords \"{nicchia}\" --applica"
+    )
+
+
 def _cmd_nuovo(args) -> int:
     from .book_project import BookProject
+
+    try:
+        nota_nicchia = _controlla_nicchia_catalogo(args.nicchia, args.motivo)
+    except ValueError as e:
+        log.error("%s", e)
+        return CONFIG_ERRATA
 
     try:
         p = BookProject.crea(args.titolo, args.nicchia, args.autore,
@@ -246,7 +295,13 @@ def _cmd_nuovo(args) -> int:
         log.error("%s", e)
         return CONFIG_ERRATA
 
+    if args.motivo:
+        p._aggiorna_config(scarto_nicchia={"nicchia_catalogo": args.nicchia,
+                                           "motivo": args.motivo})
+    metriche.registra(p.slug, "progetto_creato", nicchia=args.nicchia, autore=args.autore)
     log.info("Progetto creato: %s", p.dir)
+    if nota_nicchia:
+        print(f"\n  NICCHIA: {nota_nicchia}")
     cfg = p._config()
     bersaglio = cfg["capitoli_totali"] * cfg["parole_per_capitolo"]
     pagine = round(bersaglio / config.WORDS_PER_PAGE_ESTIMATE)
@@ -282,6 +337,13 @@ def _cmd_blocco(args) -> int:
         log.error("%s", e)
         return CONFIG_ERRATA
     print(esito)
+    # Ogni passaggio dal gate lascia una riga: e' da qui che si vede, a libro finito, che
+    # i 18 minuti in piu' erano tre bocciature per capitoli corti e non "il flusso lento".
+    metriche.registra(args.slug, "blocco",
+                      esito="ok" if esito.si_prosegue else "bocciato",
+                      capitoli=esito.capitoli_scritti, parole=esito.parole,
+                      media_per_capitolo=esito.media_per_capitolo,
+                      motivi=esito.blocchi or None)
     return OK if esito.si_prosegue else VALIDAZIONE_FALLITA
 
 
@@ -304,6 +366,8 @@ def _cmd_stato(args) -> int:
     except FileNotFoundError as e:
         log.error("%s", e)
         return CONFIG_ERRATA
+    print()
+    print(metriche.riepilogo(args.slug))
     return OK
 
 
@@ -344,10 +408,16 @@ def _cmd_consegna(args) -> int:
     except RuntimeError as e:
         # Il libro esiste ma non e' pubblicabile: pagine sotto target, capitoli mancanti.
         log.error("%s", e)
+        metriche.registra(args.slug, "consegna", esito="non_pubblicabile",
+                          con_copertina=bool(cover), motivi=[str(e)[:200]])
         return VALIDAZIONE_FALLITA
     except Exception as e:  # imprevisto vero
         log.exception("Errore di sistema durante la consegna: %s", e)
         return ERRORE_SISTEMA
+
+    metriche.registra(args.slug, "consegna", esito="ok", con_copertina=bool(cover),
+                      pagine_reali=esito.get("pagine_reali"),
+                      parole=esito.get("parole"))
 
     if not esito.get("pacchetto"):
         log.warning("Pacchetto non creato: manca la copertina. Passa --cover <file.png>.")
@@ -356,6 +426,30 @@ def _cmd_consegna(args) -> int:
     print(f"\nPacchetto pronto: {esito['pacchetto']}")
     if esito.get("report"):
         print(f"Report di consegna: {Path(esito['report']).name}")
+    print(f"Quando e' su KDP:  python -m engine.kdp pubblicato {args.slug} --asin <ASIN>")
+    return OK
+
+
+def _cmd_pubblicato(args) -> int:
+    """Chiude il ciclo: il libro e' su KDP, l'archivio lo registra e i doppioni spariscono."""
+    from . import pubblicazione
+
+    try:
+        esito = pubblicazione.pubblica(
+            args.slug, asin=args.asin, url=args.url or "", prezzo=args.prezzo,
+            forza=args.forza, tieni_lavorazione=args.tieni_lavorazione)
+    except pubblicazione.NonPubblicabile as e:
+        log.error("%s", e)
+        return VALIDAZIONE_FALLITA
+    except (FileNotFoundError, FileExistsError) as e:
+        log.error("%s", e)
+        return CONFIG_ERRATA
+    except Exception as e:
+        log.exception("Errore durante l'archiviazione: %s", e)
+        return ERRORE_SISTEMA
+
+    print()
+    print(esito)
     return OK
 
 
@@ -397,6 +491,10 @@ def costruisci_parser() -> argparse.ArgumentParser:
     c = sub.add_parser("nuovo", help="crea un nuovo progetto libro")
     c.add_argument("titolo")
     c.add_argument("--nicchia", required=True)
+    c.add_argument("--motivo", default=None,
+                   help="perche' questo libro esce dalla nicchia del catalogo. Senza, un "
+                        "libro in una nicchia diversa da quella attiva viene rifiutato: e' "
+                        "cosi' che i primi tre sono usciti in tre nicchie scollegate")
     c.add_argument("--autore", default="Digital Empire")
     c.add_argument("--capitoli", type=int, default=24)
     from .book_project import DEFAULT_WORDS_PER_CHAPTER
@@ -420,6 +518,19 @@ def costruisci_parser() -> argparse.ArgumentParser:
                         "normalmente il titolo e' gia' dentro l'immagine (lo chiede il prompt)")
     d.add_argument("--forza", action="store_true", help="assembla anche se fuori target")
 
+    pb = sub.add_parser("pubblicato",
+                        help="il libro e' su KDP: archivia il pacchetto, registra l'ASIN, "
+                             "toglie i doppioni")
+    pb.add_argument("slug")
+    pb.add_argument("--asin", required=True, help="l'ASIN che KDP assegna al libro")
+    pb.add_argument("--url", default=None, help="link alla pagina Amazon (se diverso da /dp/ASIN)")
+    pb.add_argument("--prezzo", type=float, default=None, help="prezzo di listino effettivo")
+    pb.add_argument("--tieni-lavorazione", action="store_true",
+                    help="non cancellare LIBRI/in_lavorazione/<slug>/ dopo l'archiviazione")
+    pb.add_argument("--forza", action="store_true",
+                    help="archivia anche un pacchetto non pubblicabile (resta scritto in "
+                         "pubblicazione.json)")
+
     return cli
 
 
@@ -432,7 +543,7 @@ def main(argv: list[str] | None = None) -> int:
               "nicchia-stato": _cmd_nicchia, "nicchia-scegli": _cmd_nicchia,
               "nicchia-confronta": _cmd_nicchia, "nuovo": _cmd_nuovo,
               "stato": _cmd_stato, "blocco": _cmd_blocco,
-               "consegna": _cmd_consegna}
+              "consegna": _cmd_consegna, "pubblicato": _cmd_pubblicato}
     try:
         return azioni[args.comando](args)
     except KeyboardInterrupt:

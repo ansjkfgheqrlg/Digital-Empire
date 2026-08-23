@@ -1,8 +1,11 @@
 # Architettura del workflow libri KDP
 
-**Aggiornato: 2026-08-15.** Questo è il documento di riferimento: cosa c'è, come è diviso,
-chi fa cosa, e in che ordine. Se qualcosa qui non corrisponde al codice, vince il codice —
-e questo file va corretto.
+**Aggiornato: 2026-08-23.** Questo è il documento di riferimento del **codice**: cosa c'è,
+come è diviso, chi controlla cosa. La **procedura** (come si scrive un libro) sta in un solo
+posto, [`.claude/skills/libro/SKILL.md`](.claude/skills/libro/SKILL.md), e qui non viene
+ripetuta: era ripetuta in tre file e i tre file si erano messi a dire numeri diversi.
+
+Se qualcosa qui non corrisponde al codice, **vince il codice** — e questo file va corretto.
 
 ---
 
@@ -14,9 +17,8 @@ impagina, conta, valida, impacchetta.**
 Perché è così: il progetto ha provato **tre volte** a far scrivere i libri a un programma
 (LM Arena via browser ×2, CLI di Claude con Haiku). Tutte e tre le volte è fallito — captcha,
 prompt troncati, limite di spesa — e **nessuno dei tre tentativi ha mai prodotto un libro
-finito**. L'unico libro completo mai uscito da qui, *The Quiet Hours* (115 pagine reali), è
-stato scritto in sessione. Quel codice non è stato cancellato: sta in
-`_archivio_automazione_modelli/`, con un LEGGIMI che spiega cosa è successo.
+finito**. I libri completi usciti da qui sono stati scritti in sessione. Quel codice non è
+stato cancellato: sta in `_archivio_automazione_modelli/`, con un LEGGIMI.
 
 ---
 
@@ -30,19 +32,25 @@ Gli attori veri sono tre, e ogni fase ha **un esecutore** e **un controllore**:
 
 | Attore | Cos'è | Cosa fa |
 |---|---|---|
-| **Claude** (io) | l'assistente in sessione | ricerca, sceglie gli argomenti, scrive outline, capitoli, prompt copertina, copy |
+| **Claude** | l'assistente in sessione | ricerca, sceglie gli argomenti, scrive outline, capitoli, prompt copertina, copy |
 | **L'attrezzatura** (`engine/`) | codice Python deterministico | misura le nicchie, impagina, conta le pagine vere, valida, impacchetta |
 | **Gael** | la persona | genera l'immagine di copertina, carica su KDP |
 
 **I "controllori" sono funzioni Python che bloccano davvero.** Non sono consigli: se un
 controllo fallisce, il comando esce con un codice di errore e il libro non passa. È l'unico
-tipo di controllo che vale, perché non dipende dal fatto che io mi ricordi una regola.
+tipo di controllo che vale, perché non dipende dal fatto che chi scrive si ricordi la regola.
+
+> **E un controllo che non è potuto girare non è un controllo passato** (2026-08-23). Se
+> manca lo strumento (Word per il PDF, Tesseract per l'OCR), l'esito finisce in
+> `verifiche_non_eseguite` dentro `validazione.json`, non fra gli avvisi. Prima un
+> pacchetto poteva uscire `pubblicabile: true` con **zero** dei tre controlli pesanti
+> eseguiti, e dal verdetto non si vedeva.
 
 ---
 
 ## 3. Il flusso, fase per fase
 
-Sette fasi. La 0 si fa una volta a settimana, le altre una volta per libro.
+Otto fasi. La 0 si fa una volta a settimana, le altre una volta per libro.
 
 ```
    FASE 0  Magazzino argomenti        (1 volta a settimana → 7 argomenti)
@@ -50,212 +58,139 @@ Sette fasi. La 0 si fa una volta a settimana, le altre una volta per libro.
       ▼
    FASE 1  Progetto                   ┐
    FASE 2  Outline                    │
-   FASE 3  Prompt copertina           ├─ 1 volta per libro
-   FASE 4  Capitoli  ←──── il grosso  │
+   FASE 3  Prompt copertina           │
+   FASE 4  Capitoli  ←──── il grosso  ├─ 1 volta per libro
    FASE 5  Copertina (Gael)           │
-   FASE 6  Consegna                   ┘
-      │
-      ▼
-   Pubblicazione (Gael, a mano)
+   FASE 6  Consegna                   │
+   FASE 7  Pubblicato (dopo KDP)      ┘
 ```
 
----
+| Fase | Esegue | Controlla, e blocca | Comando |
+|---|---|---|---|
+| 0 | Claude cerca le nicchie | `magazzino.valida_argomento` + `story_validator` | `kdp nicchie`, `kdp magazzino --aggiungi` |
+| 1 | il codice crea la cartella | `BookProject.crea` (progetto già esistente) + **disciplina di nicchia** | `kdp nuovo` |
+| 2 | **Claude** scrive `outline.md` | `kdp.estrai_titolo` (titolo leggibile) | — |
+| 3 | **Claude** scrive `copertina-prompt.md` | Gael, guardando l'immagine | — |
+| 4 | **Claude** scrive i capitoli | **`gate_blocco.controlla`** dopo ogni blocco | `kdp blocco <slug>` |
+| 5 | **Gael** genera il PNG | `copertina_kdp.verifica_copertina_kdp` | — |
+| 6 | il codice impagina e impacchetta | **10 controllori** (sotto) | `kdp consegna <slug> --cover` |
+| 7 | il codice archivia | `pubblicazione` rifiuta un libro non pubblicabile | `kdp pubblicato <slug> --asin` |
 
-### FASE 0 — Magazzino argomenti · *settimanale*
+### FASE 1 — la disciplina di nicchia *(2026-08-23)*
 
-Serve a pagare la fase di giudizio **una volta sola** e avere una settimana di libri pronti.
-Gael la chiama "flusso atemporale".
+`kdp nuovo` **rifiuta** un libro in una nicchia diversa da quella attiva del catalogo, a meno
+di `--motivo "<perché>"`, che resta scritto nel progetto.
 
-| | |
-|---|---|
-| **Esegue** | Claude: cerca sul web le nicchie che vendono |
-| **Controlla** | `magazzino.valida_argomento()` + `story_validator.validate()` |
-| **Comando** | `kdp nicchie --keywords "..."` poi `kdp magazzino --aggiungi f.json` |
-| **Produce** | `LIBRI/magazzino_argomenti.json` — 7 argomenti |
+Serviva: `nicchia_attiva.py` esisteva da 12 giorni, 251 righe con storico e soglia di cambio,
+e i primi tre libri sono usciti in **tre nicchie diverse, nessuna delle quali era quella
+attiva**. Il controllo c'era e nessun percorso di codice lo interrogava. Su KDP quello che
+vende il primo libro è il secondo libro dello stesso autore nella stessa nicchia.
 
-**Cosa blocca il controllore**, e non è aggirabile:
-- un argomento **senza dati Amazon veri** non entra ("mi sembra una buona nicchia" non basta)
-- un argomento che **non è una storia** non entra (diari, planner, journal, tracker)
-- un **duplicato** non entra due volte
+### FASE 4 — il gate rapido
 
-> Provato dal vivo: su 4 argomenti proposti ne sono entrati 2. Respinti un planner e uno
-> senza numeri.
+`kdp blocco <slug>` gira in **meno di un secondo** (niente PDF, niente OCR) e guarda: dove
+atterra il libro a questo ritmo, lineette, capitoli troncati, riassunti aggiornati, fili
+aperti da troppo, **capitoli che si ripetono**. Trovare "sto scrivendo corto" al capitolo 8
+costa 8 capitoli; al capitolo 24 ne costa 24.
 
----
+### FASE 6 — i dieci controllori della consegna
 
-### FASE 1 — Progetto · *per libro*
-
-| | |
-|---|---|
-| **Esegue** | `kdp magazzino --prendi` poi `kdp nuovo "<Titolo>" --nicchia "<n>"` |
-| **Controlla** | `BookProject.crea()` — rifiuta se il progetto esiste già |
-| **Produce** | la cartella `LIBRI/in_lavorazione/<slug>/` |
-
----
-
-### FASE 2 — Outline · *per libro*
-
-| | |
-|---|---|
-| **Esegue** | **Claude**: scrive `outline.md` |
-| **Controlla** | `kdp.estrai_titolo()` verifica che il titolo sia leggibile |
-| **Produce** | `outline.md` |
-
-Deve contenere tutti e quattro: **titolo definitivo**, **personaggi** (nome, età, ruolo, cosa
-vuole), **trama in 3 atti**, **scaletta dei 24 capitoli** (una riga ciascuno).
-
-> Se l'outline è vago, il libro va in contraddizione al capitolo 12. È già successo.
-
----
-
-### FASE 3 — Prompt copertina · *per libro*
-
-| | |
-|---|---|
-| **Esegue** | **Claude**: scrive `copertina-prompt.md` |
-| **Controlla** | Gael, guardando l'immagine che ne esce |
-| **Produce** | `copertina-prompt.md` |
-
-Il prompt descrive **tutta la copertina finita, testo incluso** — non solo lo sfondo:
-formato 2:3, scena e soggetto, atmosfera e luce, palette, stile e nitidezza, composizione
-(dove resta spazio per il titolo), **il titolo lettera per lettera** con carattere, posizione
-ed effetti, il nome dell'autore, e cosa NON deve esserci.
-
----
-
-### FASE 4 — Capitoli · *per libro, è il grosso del lavoro*
-
-| | |
-|---|---|
-| **Esegue** | **Claude**: scrive `capitoli/cap_NN.md`, 4-6 per volta |
-| **Controlla** | `kdp stato <slug>` — capitoli, parole, pagine stimate |
-| **Produce** | 24 file di capitolo + `riassunti.md` aggiornato |
-
-**Regole di lavoro:**
-- **4-6 capitoli per volta**, mai tutti insieme: la qualità cala
-- **~1650 parole a capitolo** (24 × 1650 = 39.600 = ~124 pagine reali). **Non 1500**:
-  36.000 parole impaginate fanno 112 pagine, sotto il minimo di 115 — vedi la nota sulle
-  320 parole/pagina più sotto
-- **la lunghezza si controlla al primo blocco**, non a fine libro
-- **dopo ogni blocco** aggiorno `riassunti.md` (2-3 righe per capitolo)
-- **prima di ogni blocco** rileggo `outline.md` + `riassunti.md`
-
-> **La coerenza viene dai file, non dalla memoria della sessione.** Se `riassunti.md` non è
-> aggiornato, il capitolo 9 non sa cosa è successo nei primi 8 — e nessun controllo
-> automatico se ne accorge.
-
----
-
-### FASE 5 — Copertina · *Gael*
-
-| | |
-|---|---|
-| **Esegue** | **Gael**: usa il prompt della Fase 3 sul suo modello di immagini |
-| **Controlla** | `copertina_kdp.verifica_copertina_kdp()` — proporzioni e risoluzione |
-| **Produce** | un file `.png` |
-
-Il codice poi lo porta a norma KDP: ritaglio 2:3, upscale a 1800×2700 (6×9in @300dpi).
-
-> **Il titolo NON viene riscritto sopra**: l'ha già disegnato il modello seguendo il prompt.
-> Riscriverlo lo farebbe comparire due volte. Se invece l'immagine arriva senza testo o col
-> titolo sbagliato, `--scrivi-titolo` lo stampa con un font vero — è la rete di sicurezza,
-> non la norma.
-
----
-
-### FASE 6 — Consegna · *automatico*
-
-| | |
-|---|---|
-| **Esegue** | `kdp consegna <slug>` — con `--cover <png>` fa anche il pacchetto |
-| **Controlla** | 8 controllori in fila (sotto) |
-| **Produce** | **sempre** il `.docx` e il **PDF** nella cartella del libro; con la copertina anche `LIBRI/libri_pronti/<Titolo>/` |
-
-> **Il PDF si fa sempre, anche senza copertina** (2026-08-17). Non è comodità: è l'unico
-> posto dove si vede il numero di pagine vero. Aspettare la copertina per scoprirlo
-> significa scoprirlo troppo tardi.
-
-**Gli otto controllori, in ordine.** I primi sei **bloccano**, gli altri segnalano:
+I bloccanti sono in `book_project.GRAVITA_ESITI`, che è una **tabella**, non un confronto fra
+stringhe: prima la gravità dipendeva da come era scritta l'etichetta del controllo.
 
 | # | Controllore | Cosa verifica | Blocca? |
 |---|---|---|---|
 | 1 | `BookProject.stato()` | tutti i capitoli ci sono | **sì** |
-| 2 | `kdp_formatter.count_words_and_pages()` | parole entro il target | **sì** |
-| 3 | `book_output_manager.conta_pagine_pdf()` | **pagine vere lette dal PDF** ≥ 115 | **sì** |
+| 2 | `kdp_formatter.count_words_and_pages()` | parole entro il target (**paratesto escluso**) | **sì** |
+| 3 | `book_output_manager.conta_pagine_pdf()` | **pagine vere dal PDF** ≥ 115 — e `None` blocca | **sì** |
 | 4 | `validators.valida_copertina_testo()` | il titolo è leggibile (OCR) | **sì** |
-| 5 | `validators.valida_lineette()` | **nessuna lineetta lunga `—` `–` `--`** | **sì** |
-| 6 | `validators.valida_troncamento()` | **nessun capitolo interrotto a metà frase** | **sì** |
-| 7 | `validators.valida_numerazione_pagine()` | numeri sempre in alto o sempre in basso | no, segnala |
-| 8 | `validators.valida_sillabazione_pdf()` | parole spezzate a fine riga | no, segnala |
+| 5 | `validators.valida_lineette()` | nessuna lineetta lunga nella narrazione | **sì** |
+| 6 | `validators.valida_troncamento()` | nessun capitolo interrotto a metà frase | **sì** |
+| 7 | `validators.valida_ripetizioni()` | **nessun capitolo quasi identico a un altro** | **sì** |
+| 8 | `validators.valida_copy_kdp()` | **niente lineette e limiti KDP nel copy** | **sì** |
+| 9 | `BookProject._controlla_epub()` | l'EPUB contiene lo stesso libro del .docx | **sì** |
+| 10 | `validators.valida_prezzo()` | il prezzo sta vicino alla media misurata | no, segnala |
+| + | `valida_numerazione_pagine`, `valida_sillabazione_pdf`, `valida_trattini` | rifiniture sul PDF e sul testo | no, segnalano |
 
-> Il controllo 6 esiste perché un capitolo che finisce a metà frase non lo vede nessun
-> altro: parole a posto, pagine a posto, e il libro va in stampa mozzo. **Non guarda le
-> virgolette bilanciate**, che è l'euristica ovvia ed è sbagliata — una battuta che
-> prosegue su due paragrafi le apre nel primo e le chiude nel secondo. Guarda come
-> finisce l'ultima riga: zero falsi positivi sui 48 capitoli veri, e prende il taglio.
+> **Il 3 esiste per un bug ripetuto due volte**: il vecchio workflow dichiarava "120 pagine"
+> e il PDF ne aveva 21. Ora le pagine si contano rileggendo il PDF impaginato. **E dal
+> 2026-08-23 `None` blocca**: la condizione era `if pagine_reali and pagine_reali < minimo`,
+> quindi un PDF non prodotto faceva sparire il controllo e il libro usciva pubblicabile
+> senza che nessuno avesse contato una pagina.
 >
-> Il controllo 5 è una regola di Gael (2026-08-18): le lineette lunghe sono la firma più
-> riconoscibile della scrittura automatica, e su Amazon "sembra scritto dall'AI" è la
-> recensione che affonda un titolo. Si tolgono **riscrivendo la frase**, non scambiando il
-> segno. I trattini delle parole composte (`twenty-nine`, `hand-lettered`) **restano**: in
-> inglese sono ortografia, e li tratta il controllo 7, che segnala e non blocca.
-
-> Il controllo 3 esiste per un bug reale ripetuto due volte: il vecchio workflow dichiarava
-> "120 pagine" e il PDF ne aveva 21. Ora le pagine si **contano rileggendo il PDF impaginato**,
-> quello che vedrà KDP.
+> **Il 7 esiste** perché "mai un capitolo identico o quasi a un altro" era l'unica delle sei
+> regole non negoziabili senza nessuna funzione che la facesse rispettare. Le soglie sono
+> misurate sui 72 capitoli veri: massimo legittimo 2,7%, un capitolo ricopiato a metà dà
+> 98,8%, si blocca al 15%.
 >
-> **E il controllo 2 non sostituisce il 3.** La stima parole→pagine è tarata su
-> `WORDS_PER_PAGE_ESTIMATE`, che valeva 300 ed era sbagliato: misurato su due libri veri
-> impaginati, il rapporto è **320** (*The Quiet Hours* 324, *The Ninth Winter* 320). A 300 la
-> stima gonfiava le pagine del 6% — nella direzione pericolosa. *The Ninth Winter* è passato
-> dal controllo 2 con 34.897 parole ("116,3 pagine") ed è arrivato al PDF con **111 pagine
-> reali**. Costante corretta a 320 il 2026-08-17; il minimo parole è ora 36.800.
+> **L'8 esiste** perché la regola sulle lineette girava solo sui capitoli, e nei pacchetti
+> già consegnati c'erano **3 lineette nella descrizione di The Ninth Winter e 2 in quella di
+> The Quiet Hours** — cioè nel testo che il compratore legge prima di comprare.
 
-Il verdetto finale sta in `validazione.json` (`pubblicabile: true/false`) e in `REPORT.md`.
+Il verdetto finale sta in `validazione.json` (`pubblicabile`, `pagine_reali`, `bloccanti`,
+`verifiche_non_eseguite`, `avvisi`) e in `REPORT.md`.
+
+### FASE 7 — pubblicato
+
+`kdp pubblicato <slug> --asin B0…` copia i sorgenti dentro il pacchetto, **li verifica byte
+per byte**, sposta il pacchetto in `libri_pubblicati/`, scrive `pubblicazione.json` con
+ASIN e prezzo, registra il libro sulla nicchia, chiude l'argomento in magazzino e solo allora
+cancella la cartella di lavorazione.
+
+Serviva: "sposta la cartella a mano quando pubblichi" era scritto in tre documenti ed è
+l'unico passo del flusso **mai eseguito** dopo tre libri finiti — con 23 MB di doppioni e
+nessuna traccia dell'ASIN.
 
 ---
 
-## 4. La struttura dei file
+## 4. Cosa produce un libro finito
 
-### Radice
+```
+LIBRI/libri_pronti/<Titolo>/
+├── <Titolo>.docx           manoscritto KDP 6×9, margini specchio, numeri di pagina
+├── <Titolo>.pdf            quello che si legge e da cui si contano le pagine vere
+├── <Titolo>.epub           l'ebook (copertina alleggerita: su Kindle si paga a MB)
+├── Cover_<Titolo>.png      copertina 1800×2700 a norma
+├── KDP_METADATA.txt        titolo, descrizione, keyword, BISAC, bio, prezzo + media nicchia
+├── ISPIRAZIONE.json/.txt   da dove nasce il libro, coi numeri veri della nicchia
+├── REPORT.md               cosa è stato verificato
+└── validazione.json        il verdetto, e su quale numero di pagine è stato dato
+```
 
-| File / cartella | Cos'è |
-|---|---|
-| `ARCHITETTURA.md` | **questo file** |
-| `SOP-SCRIVERE-UN-LIBRO.md` | la procedura in 7 step, per una persona |
-| `.claude/skills/libro/SKILL.md` | la stessa procedura, che eseguo io con `/libro` |
-| `engine/` | l'attrezzatura Python |
-| `tests/` | 38 test, nessuno apre un browser o chiama un modello |
-| `LIBRI/` | i libri e lo stato |
-| `sessions/` | sessione Amazon salvata (gitignored) |
-| `_archivio_automazione_modelli/` | i 3 tentativi falliti di automazione + LEGGIMI |
-| `_archivio_blueprint_narrativo/` | l'architettura a 95+ agenti finti, archiviata |
-| `PIANO-KDP-67.md`, `PIANO-KDP-V2-CLAUDE-CODE.md` | cronaca storica dei piani precedenti |
+Dentro il libro ci sono anche le pagine che non sono il romanzo (`engine/paratesto.py`):
+**copyright** davanti, **richiesta di recensione**, **"Also by"** e **bio** in fondo. Non
+contano nel conteggio parole — hanno uno stile dedicato proprio per poterle escludere.
 
-### `engine/` — 16 moduli, nessuno chiama un modello
+---
+
+## 5. `engine/` — 21 moduli, nessuno chiama un modello
 
 **Il punto d'ingresso**
 
 | Modulo | Righe | Cosa fa |
 |---|---|---|
-| `kdp.py` | 407 | **La CLI che uso io.** Tutti i comandi passano da qui |
+| `kdp.py` | 558 | **La CLI.** Tutti i comandi passano da qui |
 
 **Il libro**
 
 | Modulo | Righe | Cosa fa |
 |---|---|---|
-| `book_project.py` | 476 | Un progetto = una cartella. Stato, assemblaggio, orchestrazione dei controlli |
-| `kdp_formatter.py` | 215 | Costruisce il `.docx` KDP: 6×9in, margini specchio, numeri di pagina |
-| `book_output_manager.py` | 211 | Pacchetto finale, PDF, **conta le pagine vere** |
+| `book_project.py` | 744 | Un progetto = una cartella. Stato, assemblaggio, orchestrazione dei controlli |
+| `kdp_formatter.py` | 280 | Il `.docx` KDP: 6×9in, margini specchio, numeri di pagina, paratesto |
+| `epub.py` | 280 | L'**ebook**. Solo `zipfile`: nessuna dipendenza esterna |
+| `paratesto.py` | 155 | Copyright, richiesta di recensione, "Also by", bio |
+| `book_output_manager.py` | 243 | Pacchetto finale, PDF, **conta le pagine vere** |
 | `book_report.py` | 151 | Scrive `REPORT.md` |
+| `pubblicazione.py` | 209 | Archivia un libro pubblicato, con ASIN, e toglie i doppioni |
 
 **I controlli**
 
 | Modulo | Righe | Cosa fa |
 |---|---|---|
-| `validators.py` | 260 | Trattini, sillabazione nel PDF, numerazione, titolo in copertina (OCR) |
-| `report_validazione.py` | 69 | Raccoglie gli esiti e dà **un** verdetto: pubblicabile sì/no |
-| `story_validator.py` | 90 | GO/NO-GO: è una storia o è un diario? Nessun modello, solo keyword |
+| `validators.py` | 623 | Lineette, troncamento, **ripetizioni**, **copy KDP**, **prezzo**, sillabazione, numerazione, OCR copertina |
+| `gate_blocco.py` | 176 | Il gate rapido di fase 4, sotto il secondo |
+| `report_validazione.py` | 95 | Un verdetto solo, con la quarta categoria: **non verificato** |
+| `story_validator.py` | 90 | GO/NO-GO: è una storia o è un diario? Solo keyword |
 
 **La ricerca** *(gli unici che aprono un browser — su Amazon, per misurare)*
 
@@ -266,106 +201,78 @@ Il verdetto finale sta in `validazione.json` (`pubblicabile: true/false`) e in `
 | `session_manager.py` | 187 | La sessione Amazon salvata |
 | `nicchia_attiva.py` | 251 | La nicchia del catalogo: si sceglie **una volta**, si cambia solo con margine |
 | `magazzino.py` | 179 | Gli argomenti pronti (Fase 0) |
+| `ispirazione.py` | 185 | La scheda "da dove nasce questo libro", coi numeri della nicchia |
 
-**La copertina e la configurazione**
+**Contorno**
 
 | Modulo | Righe | Cosa fa |
 |---|---|---|
-| `copertina_kdp.py` | 216 | Porta a norma KDP il PNG che genera Gael. Solo Pillow, nessun browser |
-| `config.py` | 126 | Costanti: trim 6×9, margini, target pagine, keyword GO/NO-GO |
+| `copertina_kdp.py` | 216 | Porta a norma KDP il PNG di Gael. Solo Pillow |
+| `metriche.py` | 132 | Quanto è costato davvero fare il libro: tempo, bocciature, riconsegne |
+| `config.py` | 142 | Costanti: trim 6×9, margini, target pagine, keyword GO/NO-GO |
 
 ### Come dipendono l'uno dall'altro
 
 ```
 kdp.py ──┬─→ magazzino ──→ story_validator
          ├─→ nicchia_attiva ──→ niche_finder ──→ amazon_research ──→ session_manager
-         ├─→ copertina_kdp                                    └──→ story_validator
-         └─→ book_project ──┬─→ kdp_formatter
+         ├─→ copertina_kdp
+         ├─→ metriche
+         ├─→ pubblicazione ──→ book_project, magazzino, nicchia_attiva
+         └─→ book_project ──┬─→ kdp_formatter ──→ paratesto
+                            ├─→ epub
                             ├─→ book_output_manager
                             ├─→ validators
                             ├─→ report_validazione
+                            ├─→ ispirazione
                             └─→ book_report
-
                     tutti ──→ config
 ```
 
-Nessuna freccia esce verso un modello. **È la prova che il principio è nel codice**, non solo
-dichiarato: `grep -rn "lmarena\|api\|openai" engine/` non trova niente di operativo.
-
-### `LIBRI/` — dove vivono i libri
-
-```
-LIBRI/
-├── magazzino_argomenti.json     gli argomenti pronti (Fase 0)
-├── nicchia_attiva.json          la nicchia del catalogo + storico
-├── in_lavorazione/<slug>/       un libro in scrittura
-│   ├── progetto.json            titolo, autore, nicchia, capitoli, parole target
-│   ├── outline.md               la mappa (Fase 2)
-│   ├── copertina-prompt.md      il prompt per Gael (Fase 3)
-│   ├── capitoli/cap_NN.md       un file per capitolo (Fase 4)
-│   └── riassunti.md             la memoria del libro
-├── libri_pronti/<Titolo>/       il pacchetto finito
-│   ├── <Titolo>.docx            manoscritto KDP
-│   ├── <Titolo>.pdf             quello che si legge e si controlla
-│   ├── Cover_<Titolo>.png       copertina a norma
-│   ├── KDP_METADATA.txt         titolo, descrizione, keyword, categorie
-│   ├── REPORT.md                cosa è stato verificato
-│   └── validazione.json         il verdetto
-└── libri_pubblicati/            ci si sposta a mano dopo il caricamento
-```
+Nessuna freccia esce verso un modello: `grep -rn "lmarena\|openai\|anthropic" engine/` non
+trova niente di operativo. **È la prova che il principio è nel codice**, non solo dichiarato.
 
 ---
 
-## 5. Tutti i comandi
+## 6. Dipendenze
 
-```bash
-# FASE 0 — magazzino
-python -m engine.kdp nicchie --keywords "cozy mystery cats" "small town romance"
-python -m engine.kdp magazzino                        # cosa c'è di pronto
-python -m engine.kdp magazzino --aggiungi f.json      # inserisce la ricerca
-python -m engine.kdp magazzino --prendi               # il prossimo da scrivere
+`requirements.txt` elenca **tutto** quello che il codice importa (fino al 2026-08-23 ne
+dichiarava 3 su 6, e su una macchina pulita `python -m engine.kdp stato` moriva subito).
 
-# nicchia del catalogo
-python -m engine.kdp nicchia-stato
-python -m engine.kdp nicchia-confronta --keywords "..." [--applica]
+Due programmi che pip **non** installa:
 
-# FASI 1-4 — il libro
-python -m engine.kdp nuovo "<Titolo>" --nicchia "<nicchia>"
-python -m engine.kdp stato [slug]
+| | Serve a | Se manca |
+|---|---|---|
+| **Microsoft Word** | `docx2pdf` → il PDF | niente PDF ⇒ niente pagine vere ⇒ **la consegna blocca** |
+| **Tesseract OCR** | `pytesseract` → titolo in copertina | il controllo finisce in `verifiche_non_eseguite`, non blocca |
 
-# FASE 6 — consegna
-python -m engine.kdp consegna <slug> --cover <png> [--scrivi-titolo] [--forza]
+---
+
+## 7. Test
+
+```
+python -m pytest tests/ -q        # 127 test, ~4 secondi
 ```
 
-**Exit code**, uguali per tutti i comandi: `0` ok · `1` non pubblicabile · `2` parametri
-sbagliati · `3` errore di sistema.
+Nessuno apre un browser, chiama un modello o pretende Word. Quasi ogni test riproduce un
+errore realmente avvenuto qui.
 
 ---
 
-## 6. Le regole non negoziabili
-
-1. **Mai dichiarare finito un libro sotto le 115 pagine reali.** Il controllo blocca da solo.
-   `--forza` serve per ispezionare una bozza, **mai** per consegnare.
-2. **Mai un capitolo identico o quasi a un altro.** Se succede è un errore di processo.
-3. **Mai copiare da un concorrente.** La ricerca serve a capire il mercato, non i testi.
-4. **La coerenza viene da `outline.md` + `riassunti.md`**, non dalla memoria della sessione.
-5. **Il codice non chiama modelli.** Se una modifica lo reintroduce, è un passo indietro
-   verso tre fallimenti già pagati.
-6. **Un libro incompleto si finisce prima di aprirne un altro.** Un catalogo si costruisce
-   con libri finiti, non con bozze.
-
----
-
-## 7. Stato attuale
+## 8. Stato attuale *(2026-08-23)*
 
 | Libro | Stato |
 |---|---|
-| `the-quiet-hours` | ✅ finito, 24/24 capitoli, 37.297 parole — pacchetto in `libri_pronti/` |
-| `the-ninth-winter` | ⚠️ **8/24 capitoli**, 8.395 parole (~1.040 a capitolo, sotto il target di 1.500). `riassunti.md` **mai aggiornato** |
+| `the-quiet-hours` | ✅ pacchetto completo, 118 pagine reali, PUBBLICABILE |
+| `the-ninth-winter` | ✅ pacchetto completo, 119 pagine reali, PUBBLICABILE |
+| `the-second-hand-spellbook` | ✅ pacchetto completo, 118 pagine reali, PUBBLICABILE |
 
-**Nicchia del catalogo**: `small town romance suspense` — 77.4/100, sana.
-**Magazzino**: vuoto, va riempito.
+Tutti e tre con `.docx` + PDF + **EPUB** + copertina a norma + copy pulito.
+**Nessuno è ancora su KDP**: `libri_pubblicati/` è vuoto, e finché resta vuoto il collo di
+bottiglia non è la produzione.
 
-> Su `the-ninth-winter`: prima di scrivere il capitolo 9 vanno **ricostruiti i riassunti**
-> rileggendo i capitoli esistenti. E i capitoli sono corti: se il conto finale resta sotto le
-> 115 pagine servono capitoli più lunghi o più capitoli — lo dice `kdp stato`.
+**Magazzino**: 3 argomenti, 2 liberi (dark academia mystery, cozy mystery bakery).
+**Nicchia del catalogo**: `small town romance suspense` — **e nessuno dei tre libri è in
+quella nicchia**. Da rivedere: o si cambia la nicchia attiva con `nicchia-confronta
+--applica`, o i prossimi libri si scrivono lì dentro. Da oggi `kdp nuovo` non lascia più
+divergere in silenzio.

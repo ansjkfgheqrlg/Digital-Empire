@@ -1,0 +1,19 @@
+{
+  "slug": "the-second-hand-spellbook",
+  "eventi": [
+    {
+      "quando": "2026-08-23T11:45:20",
+      "cosa": "consegna",
+      "esito": "ok",
+      "con_copertina": true,
+      "parole": 38114
+    },
+    {
+      "quando": "2026-08-23T11:48:10",
+      "cosa": "consegna",
+      "esito": "ok",
+      "con_copertina": true,
+      "parole": 38114
+    }
+  ]
+}

@@ -524,10 +524,16 @@ def libro_finto(tmp_path, monkeypatch):
     monkeypatch.setattr(book_project, "PROGETTI_DIR", tmp_path)
 
     def costruisci(parole_per_capitolo, quanti=8, riassunti=None, lineette=False,
-                   tronca=False):
+                   tronca=False, duplica=False):
         p = book_project.BookProject.crea("Libro Gate", "cozy mystery")
         for n in range(1, quanti + 1):
-            corpo = " ".join(["parola"] * (parole_per_capitolo - 3))
+            # Ogni capitolo ha parole SUE (2026-08-23). Prima erano tutti la stessa
+            # sequenza di "parola" ripetuta: un libro finto in cui i 24 capitoli erano
+            # identici fra loro, che passava il gate. Da quando esiste
+            # `valida_ripetizioni` quel finto e' bocciato, giustamente \u2014 e il finto va
+            # corretto, non il controllo.
+            marcatore = "duplicato" if duplica and n in (1, 2) else f"capitolo{n}"
+            corpo = " ".join([f"parola{marcatore}"] * (parole_per_capitolo - 3))
             if lineette and n == 1:
                 corpo = "Lei si volto\u2014non c'era nessuno. " + corpo
             fine = "" if tronca and n == quanti else "."

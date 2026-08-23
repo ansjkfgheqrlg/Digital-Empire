@@ -35,8 +35,8 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
-from . import (book_output_manager, book_report, config, ispirazione, kdp_formatter,
-                report_validazione, validators)
+from . import (book_output_manager, book_report, config, epub, ispirazione, kdp_formatter,
+                paratesto, report_validazione, validators)
 
 PROGETTI_DIR = config.LIBRI_DIR / "in_lavorazione"
 
@@ -79,6 +79,22 @@ MODELLO_RIASSUNTI = """# Riassunti — {titolo}
 - Resta aperto: cosa il lettore si aspetta e non ha ancora avuto
 -->
 """
+
+
+# Cosa BLOCCA la consegna e cosa no, per esteso (2026-08-23). Prima la decisione si
+# prendeva con `etichetta.startswith(("Titolo sulla copertina", "Lineette lunghe", ...))`:
+# funzionava, ma legava la gravita' di un controllo a come era scritta la sua etichetta —
+# un esito nuovo chiamato "Copy KDP assente" sarebbe diventato bloccante per sbaglio.
+# Qui la gravita' e' un dato, non una coincidenza di stringhe. Chi non e' in tabella e'
+# un avviso.
+GRAVITA_ESITI = {
+    "Titolo sulla copertina": "bloccante",
+    "Lineette lunghe (non devono esserci)": "bloccante",
+    "Capitoli interrotti a meta'": "bloccante",
+    "Capitoli che si ripetono": "bloccante",
+    "Copy KDP (lo legge chi compra)": "bloccante",
+    "EPUB (ebook)": "bloccante",
+}
 
 
 def slugify(titolo: str) -> str:
@@ -237,15 +253,6 @@ class BookProject:
         righe = [r for r in testo.splitlines() if not r.lstrip().startswith("#")]
         return " ".join(" ".join(righe).split()).strip()
 
-    def salva_url_chat(self, url: str) -> None:
-        """URL dell'ultima chat Arena usata per i capitoli — serve alla Fase 5 (il copy va
-        scritto nella STESSA chat) di sopravvivere a un'interruzione: un `riprendi` in un
-        processo nuovo puo' tentare di riaprirla invece di perdere la continuita'."""
-        self._aggiorna_config(url_chat_arena=url)
-
-    def url_chat(self) -> str | None:
-        return self._config().get("url_chat_arena")
-
     # --- stato --------------------------------------------------------------- #
     def capitoli_presenti(self) -> list[int]:
         if not self.capitoli_dir.exists():
@@ -293,6 +300,42 @@ class BookProject:
             raise ValueError(f"Capitolo {numero} vuoto dopo la lettura: {self.path_capitolo(numero)}")
         return kdp_formatter.Chapter(title=titolo, paragraphs=paragrafi)
 
+    def _costruisci_epub(self, cfg: dict, capitoli: list, contorno: dict,
+                         destinazione: Path, cover: Path | None = None) -> tuple[Path, int]:
+        """Scrive l'EPUB e riconta le parole DENTRO il file appena creato."""
+        copy = cfg.get("copy_kdp") or {}
+        libro = epub.LibroEpub(
+            titolo=cfg["titolo"],
+            autore=cfg.get("autore", "Digital Empire"),
+            capitoli=[epub.CapitoloEpub(c.title, c.paragraphs) for c in capitoli],
+            sottotitolo=copy.get("sottotitolo", ""),
+            descrizione=copy.get("descrizione", ""),
+            copertina=Path(cover) if cover and Path(cover).exists() else None,
+            # Il copyright non va nell'indice di un ebook, la richiesta di recensione e il
+            # "Also by" si': sono le pagine che un lettore puo' voler raggiungere.
+            pagine_iniziali=[(t, p, False) for t, p in contorno["iniziali"]],
+            pagine_finali=[(t, p, True) for t, p in contorno["finali"]],
+        )
+        percorso = epub.costruisci(libro, destinazione)
+        return percorso, epub.conta_parole_epub(percorso)
+
+    @staticmethod
+    def _controlla_epub(parole_epub: int, parole_docx: int) -> list[str]:
+        """L'EPUB deve contenere lo stesso libro del .docx.
+
+        Non e' un controllo di forma: una conversione che perde un capitolo per strada
+        produce un file che si apre benissimo e che e' meta' romanzo, ed e' il genere di
+        difetto che si scopre da una recensione a una stella. Si tollera uno scarto del 3%,
+        che e' la differenza fra come si contano le parole in XHTML e in Word."""
+        if not parole_docx:
+            return []
+        scarto = abs(parole_epub - parole_docx) / parole_docx
+        if scarto > 0.03:
+            return [f"l'EPUB ha {parole_epub} parole contro le {parole_docx} del "
+                    f"manoscritto ({scarto * 100:.0f}% di scarto): la conversione ha perso "
+                    f"o duplicato del testo, non caricarlo cosi'."]
+        return []
+
     def assembla(self, cover_path: Path | None = None, forza: bool = False) -> dict:
         """Assembla il .docx reale dai capitoli su disco e, se c'e' la copertina, crea il
         pacchetto finale pronto per KDP.
@@ -310,10 +353,19 @@ class BookProject:
                 f"assemblare, oppure usa --forza per assemblare comunque una bozza parziale."
             )
 
+        # Le pagine di contorno (copyright davanti; recensione, "Also by" e bio in fondo)
+        # entrano sia nel .docx sia nell'EPUB, e non contano nel conteggio parole.
+        autore = cfg.get("autore", "Digital Empire")
+        contorno = paratesto.costruisci(cfg["titolo"], autore, cfg.get("copy_kdp"),
+                                        slug=self.slug)
+        capitoli_letti = [self._leggi_capitolo(n) for n in stato.capitoli_scritti]
         manoscritto = kdp_formatter.BookManuscript(
             title=cfg["titolo"],
-            author=cfg.get("autore", "Digital Empire"),
-            chapters=[self._leggi_capitolo(n) for n in stato.capitoli_scritti],
+            author=autore,
+            chapters=capitoli_letti,
+            subtitle=(cfg.get("copy_kdp") or {}).get("sottotitolo", ""),
+            pagine_iniziali=contorno["iniziali"],
+            pagine_finali=contorno["finali"],
         )
         docx_path = self.dir / f"{book_output_manager.sanitize_title(cfg['titolo'])}.docx"
         risultato = kdp_formatter.build_manuscript_docx(manoscritto, docx_path)
@@ -348,15 +400,42 @@ class BookProject:
         lineette = validators.valida_lineette(testo_completo)
         # Capitolo interrotto a meta': nessun altro controllo lo vede. Il conteggio parole
         # e' a posto, le pagine pure, e il libro andrebbe in stampa con un capitolo mozzo.
+        testi_capitoli = {f"cap_{n:02d}": self.path_capitolo(n).read_text(encoding="utf-8")
+                          for n in stato.capitoli_scritti}
         troncati = []
-        for n in stato.capitoli_scritti:
-            troncati += validators.valida_troncamento(
-                self.path_capitolo(n).read_text(encoding="utf-8"), f"cap_{n:02d}")
+        for nome, testo_cap in testi_capitoli.items():
+            troncati += validators.valida_troncamento(testo_cap, nome)
+        # Regola non negoziabile n.2 ("mai un capitolo identico o quasi a un altro"): era
+        # l'unica delle sei senza una funzione che la facesse rispettare.
+        ripetizioni = validators.valida_ripetizioni(testi_capitoli)
+        rip_bloccanti = validators.ripetizioni_bloccanti(ripetizioni)
+        # Il copy passa dagli stessi controlli del libro: e' il testo che si legge PRIMA di
+        # comprare, ed e' rimasto scoperto fino al 2026-08-23 (3 lineette nella descrizione
+        # di The Ninth Winter e 2 in quella di The Quiet Hours, gia' consegnate).
+        copy_kdp = cfg.get("copy_kdp")
         esiti = {
             "Capitoli interrotti a meta'": troncati,
             "Lineette lunghe (non devono esserci)": lineette,
+            "Capitoli che si ripetono": rip_bloccanti,
+            "Capitoli simili (da rileggere)": [r for r in ripetizioni if r not in rip_bloccanti],
+            "Copy KDP (lo legge chi compra)": validators.valida_copy_kdp(copy_kdp),
             "Trattini nel testo (da rivedere a occhio)": trattini,
         }
+        scheda_ispirazione = self.ispirazione()
+        esiti["Prezzo rispetto alla nicchia"] = validators.valida_prezzo(
+            (copy_kdp or {}).get("prezzo_suggerito_usd"),
+            scheda_ispirazione.prezzo_medio if scheda_ispirazione else None)
+        for avviso in esiti["Prezzo rispetto alla nicchia"]:
+            print(f"[assembla] prezzo: {avviso}")
+        if not copy_kdp:
+            esiti["Copy per KDP assente"] = [
+                "nessun copy salvato: KDP_METADATA.txt uscira' col minimo storico (titolo, "
+                "parole, pagine) e descrizione, keyword, BISAC e bio andranno inventati "
+                "davanti alla form di caricamento."]
+        for avviso in esiti["Capitoli che si ripetono"] + esiti["Capitoli simili (da rileggere)"]:
+            print(f"[assembla] ripetizione: {avviso}")
+        for avviso in esiti["Copy KDP (lo legge chi compra)"]:
+            print(f"[assembla] copy: {avviso}")
         for avviso in troncati:
             print(f"[assembla] {avviso}")
         if lineette:
@@ -385,6 +464,17 @@ class BookProject:
                 sostituisci=True,
             )
             out["pacchetto"] = str(pacchetto.folder_path)
+
+            # EPUB accanto al cartaceo (2026-08-23): e' il formato dell'ebook, cioe' il
+            # canale che nei generi che scriviamo fa il volume. Fino a oggi il pacchetto
+            # era solo .docx + PDF, quindi solo carta.
+            epub_dest = pacchetto.folder_path / f"{book_output_manager.sanitize_title(cfg['titolo'])}.epub"
+            percorso_epub, parole_epub = self._costruisci_epub(
+                cfg, capitoli_letti, contorno, epub_dest, cover=pacchetto.cover_dest)
+            out["epub"] = str(percorso_epub)
+            esiti["EPUB (ebook)"] = self._controlla_epub(parole_epub, risultato.word_count)
+            for avviso in esiti["EPUB (ebook)"]:
+                print(f"[assembla] epub: {avviso}")
 
             # Scheda del concorrente: va nel pacchetto in due formati, JSON per il codice
             # e testo per chi apre la cartella. Se manca si dice, non si finge.
@@ -434,20 +524,35 @@ class BookProject:
             out["report"] = str(report_path)
 
             # --- Verdetto unico: pubblicabile o no ---------------------------- #
-            verdetto = report_validazione.ReportValidazione()
+            verdetto = report_validazione.ReportValidazione(pagine_reali=pagine_reali)
             minimo = config.TARGET_PAGE_COUNT - config.TARGET_PAGE_COUNT_TOLERANCE
-            if pagine_reali and pagine_reali < minimo:
+            if pagine_reali is None:
+                # NON MISURATO NON E' A POSTO (2026-08-23). Prima la condizione era
+                # `if pagine_reali and pagine_reali < minimo`: con `None` — cioe' quando il
+                # PDF non si era potuto fare — il controllo spariva in silenzio e il libro
+                # usciva `pubblicabile: true` senza che nessuno avesse contato una pagina.
+                # E' il difetto originale del progetto (120 pagine dichiarate, 21 reali)
+                # rientrato dalla finestra, in un ramo che nessuno guardava.
+                verdetto.blocca(
+                    "Pagine reali NON CONTATE: il PDF non e' stato prodotto (serve Microsoft "
+                    "Word, lo pilota docx2pdf). Il conteggio pagine e' l'unico requisito KDP "
+                    "che questo pacchetto non puo' dimostrare, e la stima a "
+                    f"{config.WORDS_PER_PAGE_ESTIMATE} parole/pagina non lo sostituisce: sui "
+                    "tre libri veri ha sbagliato fino a 4,3 pagine, una volta dando per buono "
+                    "un libro da 113 pagine contro un minimo di 115."
+                )
+            elif pagine_reali < minimo:
                 verdetto.blocca(f"Pagine reali {pagine_reali}, il minimo per il target e' {minimo}")
-            bloccanti = ("Titolo sulla copertina", "Lineette lunghe",
-                         "Capitoli interrotti")
             for etichetta, voci in esiti.items():
-                gravita = "bloccante" if etichetta.startswith(bloccanti) else "avviso"
-                # Un avviso "verifica a mano" (dipendenza assente) non e' un difetto del
-                # libro: non deve bloccare, ma deve restare scritto.
+                gravita = GRAVITA_ESITI.get(etichetta, "avviso")
+                # "VERIFICA A MANO" = lo strumento non c'era, il controllo non e' girato.
+                # Non e' un difetto del libro e non blocca, ma non e' nemmeno un avviso da
+                # sfogliare: finisce in `verifiche_non_eseguite`, dove si vede che quel
+                # controllo NON ha detto di si'.
                 voci_vere = [v for v in voci if not v.startswith("VERIFICA A MANO")]
                 voci_manuali = [v for v in voci if v.startswith("VERIFICA A MANO")]
                 verdetto.aggiungi(etichetta, voci_vere, gravita)
-                verdetto.aggiungi(etichetta, voci_manuali, "avviso")
+                verdetto.aggiungi(etichetta, voci_manuali, "non_verificato")
 
             verdetto.salva(pacchetto.folder_path / "validazione.json")
             out["pubblicabile"] = verdetto.pubblicabile
@@ -482,6 +587,16 @@ class BookProject:
                 for avviso in validators.valida_sillabazione_pdf(
                         pdf_path, testo_sorgente=testo_completo)[:3]:
                     print(f"[assembla] sillabazione: {avviso}")
+            # L'EPUB si fa anche senza copertina, per lo stesso motivo del PDF: e' un
+            # formato in piu' da controllare, e va visto prima della consegna finale.
+            percorso_epub, parole_epub = self._costruisci_epub(
+                cfg, capitoli_letti, contorno,
+                docx_path.with_suffix(".epub"), cover=None)
+            out["epub"] = str(percorso_epub)
+            print(f"[assembla] EPUB creato: {percorso_epub.name} "
+                  f"({percorso_epub.stat().st_size / 1024:.0f} KB, {parole_epub} parole)")
+            for avviso in self._controlla_epub(parole_epub, risultato.word_count):
+                print(f"[assembla] epub: {avviso}")
             print("[assembla] copertina non fornita — il pacchetto finale richiede il .png "
                   "generato dal prompt in `copertina-prompt.md`, poi: "
                   "python -m engine.kdp consegna <slug> --cover <file.png>")
@@ -534,7 +649,10 @@ class BookProject:
 
         if copy.get("descrizione_html"):
             righe.append("")
-            righe.append("Descrizione Amazon in HTML (da incollare cosi' com'e' —")
+            # Niente lineetta lunga nemmeno nelle etichette di questo file: e' il foglio da
+            # cui si copia-incolla dentro KDP, e una lineetta di troppo si porta dietro
+            # senza accorgersene.
+            righe.append("Descrizione Amazon in HTML (da incollare cosi' com'e';")
             righe.append("KDP accetta <b> <i> <br> <p> <ul> <li> <h4>):")
             righe.append(copy["descrizione_html"])
 
@@ -542,6 +660,14 @@ class BookProject:
             righe.append("")
             righe.append(f"Prezzo suggerito: ${copy['prezzo_suggerito_usd']} "
                          f"(royalty 60% sopra $9.99 per il cartaceo)")
+            # Il numero scelto accanto al numero misurato: erano due dati che vivevano nello
+            # stesso progetto senza mai incontrarsi.
+            scheda = self.ispirazione()
+            if scheda is not None and scheda.prezzo_medio:
+                righe.append(f"  prezzo medio rilevato nella nicchia "
+                             f"'{scheda.nicchia}': ${scheda.prezzo_medio:.2f} "
+                             f"su {scheda.concorrenti_analizzati or '?'} concorrenti "
+                             f"({scheda.rilevato_il or 'data non registrata'})")
 
         righe.extend([
             "",

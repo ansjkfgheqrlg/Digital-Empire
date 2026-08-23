@@ -9,6 +9,15 @@ Qui la distinzione e' esplicita:
 - **bloccante** = il libro non si pubblica cosi' (pagine sotto target, copertina senza titolo)
 - **errore** = difetto reale ma non impeditivo
 - **avviso** = da guardare con l'occhio umano (i trattini, che in inglese sono spesso corretti)
+- **non verificato** = il controllo NON E' STATO ESEGUITO, perche' manca lo strumento
+  (Tesseract per l'OCR, Word per il PDF). Non e' un esito: e' l'assenza di un esito.
+
+QUARTA CATEGORIA, aggiunta il 2026-08-23. Prima un controllo che non poteva girare
+ritornava un avviso "VERIFICA A MANO" e finiva mescolato ai trattini da guardare a occhio:
+un pacchetto usciva `pubblicabile: true` con avvisi in fondo, e nessuno vedeva la
+differenza fra "controllato e a posto" e "non controllato affatto". Su questo progetto e'
+la distinzione piu' importante che ci sia — esiste per non dichiarare numeri che nessuno
+ha misurato.
 """
 from __future__ import annotations
 
@@ -22,6 +31,11 @@ class ReportValidazione:
     bloccanti: list[str] = field(default_factory=list)
     errori: list[str] = field(default_factory=list)
     avvisi: list[str] = field(default_factory=list)
+    non_verificati: list[str] = field(default_factory=list)
+    # Il numero su cui si e' deciso, scritto accanto al verdetto (2026-08-23). Prima
+    # `validazione.json` diceva "pubblicabile: true" senza dire su quante pagine: per
+    # sapere il dato che aveva deciso bisognava riaprire il PDF. None = non misurato.
+    pagine_reali: int | None = None
 
     @property
     def pubblicabile(self) -> bool:
@@ -37,17 +51,26 @@ class ReportValidazione:
     def avvisa(self, messaggio: str) -> None:
         self.avvisi.append(messaggio)
 
+    def non_verificato(self, messaggio: str) -> None:
+        """Il controllo non e' stato eseguito. Non conta come promosso ne' come bocciato."""
+        self.non_verificati.append(messaggio)
+
     def aggiungi(self, etichetta: str, esiti: list[str], gravita: str = "avviso") -> None:
         """Aggiunge in blocco l'esito di un validatore, prefissandolo con la sua etichetta."""
         for e in esiti:
             messaggio = f"[{etichetta}] {e}"
-            {"bloccante": self.blocca, "errore": self.errore}.get(gravita, self.avvisa)(messaggio)
+            {"bloccante": self.blocca, "errore": self.errore,
+             "non_verificato": self.non_verificato}.get(gravita, self.avvisa)(messaggio)
 
     def riepilogo(self) -> str:
         righe = ["=" * 62,
                  f"VALIDAZIONE: {'PUBBLICABILE' if self.pubblicabile else 'NON PUBBLICABILE'}",
                  "=" * 62,
-                 f"Bloccanti: {len(self.bloccanti)} | Errori: {len(self.errori)} | Avvisi: {len(self.avvisi)}"]
+                 f"Bloccanti: {len(self.bloccanti)} | Errori: {len(self.errori)} | "
+                 f"Avvisi: {len(self.avvisi)} | NON verificati: {len(self.non_verificati)}"]
+        if self.non_verificati:
+            righe.append("\n--- CONTROLLI NON ESEGUITI (manca lo strumento) ---")
+            righe += [f"  {i}. {v}" for i, v in enumerate(self.non_verificati, 1)]
         for titolo, voci in (("BLOCCANTI", self.bloccanti), ("ERRORI", self.errori)):
             if voci:
                 righe.append(f"\n--- {titolo} ---")
@@ -60,7 +83,10 @@ class ReportValidazione:
 
     def to_dict(self) -> dict:
         return {"pubblicabile": self.pubblicabile,
-                "bloccanti": self.bloccanti, "errori": self.errori, "avvisi": self.avvisi}
+                "pagine_reali": self.pagine_reali,
+                "bloccanti": self.bloccanti, "errori": self.errori,
+                "verifiche_non_eseguite": self.non_verificati,
+                "avvisi": self.avvisi}
 
     def salva(self, path: Path) -> Path:
         path = Path(path)

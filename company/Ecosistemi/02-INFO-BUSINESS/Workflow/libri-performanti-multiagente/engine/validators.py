@@ -134,6 +134,188 @@ def valida_lineette(testo: str) -> list[str]:
 
 
 # --------------------------------------------------------------------------- #
+# Capitoli che si ripetono
+# --------------------------------------------------------------------------- #
+
+# Lunghezza della sequenza di parole usata come impronta. 8 parole di fila uguali sono
+# gia' una coincidenza rara in prosa; 3-4 no (le frasi fatte le fanno scattare).
+_PAROLE_IMPRONTA = 8
+_RE_SEPARA_PAROLE = re.compile(r"[^\w']+", re.UNICODE)
+
+# Soglie MISURATE, non scelte a sentimento (2026-08-23). Confrontate tutte le coppie di
+# capitoli dei tre libri veri, 828 confronti in tutto:
+#
+#   The Ninth Winter           sovrapposizione massima  1,78%   (cap_18 vs cap_21)
+#   The Quiet Hours                                     2,72%   (cap_11 vs cap_21)
+#   The Second-Hand Spellbook                           0,92%   (cap_13 vs cap_24)
+#   mediana, tutti e tre                                0,00%
+#
+# Controprova sullo stesso corpus: un capitolo di cui si ricopia META' e si allunga con
+# testo nuovo esce al **98,8%**. Fra il caso peggiore vero (2,7%) e una duplicazione vera
+# c'e' un fattore 36: qualsiasi soglia in mezzo funziona, e queste stanno larghe da
+# entrambi i lati — 15% e' 5,5 volte il peggior caso legittimo mai visto qui.
+SOGLIA_RIPETIZIONE_BLOCCA = 0.15
+SOGLIA_RIPETIZIONE_AVVISA = 0.08
+
+
+def _impronta(testo: str) -> set[int]:
+    parole = [p for p in _RE_SEPARA_PAROLE.split(testo.lower()) if p]
+    return {hash(tuple(parole[i:i + _PAROLE_IMPRONTA]))
+            for i in range(max(0, len(parole) - _PAROLE_IMPRONTA + 1))}
+
+
+def valida_ripetizioni(capitoli: dict[str, str]) -> list[str]:
+    """Cerca capitoli che si ripetono l'un l'altro.
+
+    PERCHE' ESISTE (2026-08-23). "Mai un capitolo identico o quasi a un altro" e' una delle
+    sei regole non negoziabili del progetto, ed era l'unica **senza nessun controllo**:
+    scritta in tre documenti, verificata da nessuno. Le altre cinque hanno tutte una
+    funzione che blocca. Questa aspettava che me ne accorgessi rileggendo, che e'
+    esattamente il tipo di garanzia che qui non vale niente.
+
+    E' anche il difetto piu' probabile quando si scrivono 8 capitoli in un blocco solo con
+    la scaletta sotto gli occhi: due capitoli che fanno la stessa scena in due posti
+    diversi del libro.
+
+    Confronta le sequenze di 8 parole di ogni capitolo con quelle di ogni altro, e misura
+    quanta parte del capitolo piu' corto ricompare nell'altro. Sopra il 15% e' una
+    ripetizione da riscrivere, sopra l'8% vale una riletta."""
+    firme = {nome: _impronta(testo) for nome, testo in capitoli.items()}
+    nomi = sorted(firme)
+    problemi: list[str] = []
+    for i, a in enumerate(nomi):
+        for b in nomi[i + 1:]:
+            fa, fb = firme[a], firme[b]
+            if not fa or not fb:
+                continue
+            quota = len(fa & fb) / min(len(fa), len(fb))
+            if quota >= SOGLIA_RIPETIZIONE_AVVISA:
+                gravita = ("si ripetono" if quota >= SOGLIA_RIPETIZIONE_BLOCCA
+                           else "si somigliano molto")
+                problemi.append(
+                    f"{a} e {b} {gravita}: il {quota * 100:.0f}% delle sequenze di "
+                    f"{_PAROLE_IMPRONTA} parole e' in comune. Riscrivi quello dei due che "
+                    f"aggiunge meno alla storia."
+                )
+    if problemi:
+        logger.warning("valida_ripetizioni: %d coppie sospette", len(problemi))
+    return problemi
+
+
+def ripetizioni_bloccanti(problemi: list[str]) -> list[str]:
+    """Delle coppie trovate, quelle che devono fermare la consegna."""
+    return [p for p in problemi if "si ripetono" in p]
+
+
+# --------------------------------------------------------------------------- #
+# Copy KDP (la descrizione che legge chi compra)
+# --------------------------------------------------------------------------- #
+
+# Limiti della form KDP. Servono a non scoprire in fase di caricamento che la descrizione
+# non ci sta: a quel punto la si taglia di fretta, ed e' il testo che vende il libro.
+KDP_MAX_DESCRIZIONE = 4000
+KDP_MAX_SOTTOTITOLO = 200
+KDP_MAX_KEYWORD = 7
+KDP_MAX_CARATTERI_KEYWORD = 50
+
+_CAMPI_COPY_TESTUALI = (
+    ("titolo_finale", "titolo"),
+    ("sottotitolo", "sottotitolo"),
+    ("descrizione", "descrizione"),
+    ("descrizione_html", "descrizione HTML"),
+    ("bio_autore", "bio autore"),
+)
+
+
+def valida_copy_kdp(copy: dict | None) -> list[str]:
+    """Applica al COPY le stesse regole che valgono per il testo del libro.
+
+    PERCHE' ESISTE (2026-08-23). La regola "niente lineette lunghe" girava solo sui
+    capitoli. Il risultato, misurato sui pacchetti gia' consegnati: **3 lineette nella
+    descrizione di The Ninth Winter e 2 in quella di The Quiet Hours**, cioe' nel testo
+    che il compratore legge PRIMA di comprare — l'unico posto dove "sembra scritto
+    dall'AI" costa davvero una vendita. Il controllo c'era e mancava proprio dove serve.
+
+    Qui, a differenza dei capitoli, la lineetta NON e' mai lecita: nel copy non c'e'
+    discorso diretto interrotto, quindi si guarda tutto il campo, virgolette comprese.
+
+    Controlla anche i limiti della form KDP: descrizione, sottotitolo, numero e lunghezza
+    delle keyword. Un copy senza campi (progetto vecchio) non e' un difetto del copy:
+    ritorna vuoto, e a segnalarlo e' chi chiama."""
+    if not copy:
+        return []
+    problemi: list[str] = []
+
+    for chiave, nome in _CAMPI_COPY_TESTUALI:
+        valore = (copy.get(chiave) or "").strip()
+        if not valore:
+            continue
+        for m in _RE_LINEETTA.finditer(valore):
+            inizio = max(0, m.start() - 45)
+            problemi.append(
+                f"{nome}: lineetta lunga — \"...{valore[inizio:m.end() + 45]}...\". "
+                f"Riscrivi la frase (virgola, punto, due punti o parentesi)."
+            )
+
+    descrizione = (copy.get("descrizione") or "").strip()
+    if len(descrizione) > KDP_MAX_DESCRIZIONE:
+        problemi.append(f"descrizione di {len(descrizione)} caratteri: KDP ne accetta "
+                        f"{KDP_MAX_DESCRIZIONE}, va accorciata prima del caricamento.")
+    sottotitolo = (copy.get("sottotitolo") or "").strip()
+    if len(sottotitolo) > KDP_MAX_SOTTOTITOLO:
+        problemi.append(f"sottotitolo di {len(sottotitolo)} caratteri: il massimo e' "
+                        f"{KDP_MAX_SOTTOTITOLO}.")
+
+    keywords = copy.get("keywords") or []
+    if len(keywords) > KDP_MAX_KEYWORD:
+        problemi.append(f"{len(keywords)} keyword: KDP ne prende {KDP_MAX_KEYWORD}, "
+                        f"le altre andrebbero perse senza accorgersene.")
+    for k in keywords:
+        if len(k) > KDP_MAX_CARATTERI_KEYWORD:
+            problemi.append(f"keyword troppo lunga ({len(k)} caratteri, massimo "
+                            f"{KDP_MAX_CARATTERI_KEYWORD}): '{k}'")
+
+    if problemi:
+        logger.warning("valida_copy_kdp: %d problemi nel copy", len(problemi))
+    return problemi
+
+
+# --------------------------------------------------------------------------- #
+# Prezzo
+# --------------------------------------------------------------------------- #
+
+# Quanto ci si puo' allontanare dal prezzo medio MISURATO nella nicchia prima che valga la
+# pena riguardarlo. Larghi di proposito: un libro puo' legittimamente stare sopra o sotto
+# la media, quello che non deve succedere e' starci fuori **senza essersene accorti**.
+PREZZO_MIN_RAPPORTO = 0.5
+PREZZO_MAX_RAPPORTO = 2.0
+
+
+def valida_prezzo(prezzo: float | None, prezzo_medio_nicchia: float | None) -> list[str]:
+    """Confronta il prezzo scelto col prezzo medio davvero rilevato su Amazon.
+
+    PERCHE' (2026-08-23). I prezzi dei primi tre libri ($11.99, $12.99, $13.99) sono stati
+    decisi a mano, mentre il prezzo medio della nicchia era gia' stato MISURATO e stava
+    scritto nel progetto: $10.77, $15.96, $21.19 a seconda della nicchia. Il dato c'era e
+    non veniva guardato. Non e' un calcolo di redditivita' (per quello servirebbero le
+    tariffe di stampa KDP, che cambiano e non sono misurate qui): e' un confronto fra due
+    numeri che abbiamo entrambi."""
+    if prezzo is None or not prezzo_medio_nicchia:
+        return []
+    rapporto = prezzo / prezzo_medio_nicchia
+    if rapporto < PREZZO_MIN_RAPPORTO:
+        return [f"prezzo ${prezzo:.2f} contro una media misurata di "
+                f"${prezzo_medio_nicchia:.2f} nella nicchia: meta' del mercato. Su KDP un "
+                f"prezzo molto sotto la media non segnala convenienza, segnala un libro "
+                f"che vale meno."]
+    if rapporto > PREZZO_MAX_RAPPORTO:
+        return [f"prezzo ${prezzo:.2f} contro una media misurata di "
+                f"${prezzo_medio_nicchia:.2f} nella nicchia: piu' del doppio. Verifica che "
+                f"sia voluto."]
+    return []
+
+
+# --------------------------------------------------------------------------- #
 # Capitolo interrotto a meta'
 # --------------------------------------------------------------------------- #
 
@@ -199,6 +381,15 @@ def valida_troncamento(testo: str, nome: str = "capitolo") -> list[str]:
 _CACHE_PDF: dict = {}
 
 
+class PdfIlleggibile(RuntimeError):
+    """Il PDF c'e' ma non si apre. Non e' un difetto del libro: e' un controllo che non
+    e' potuto girare, e va detto come tale invece di far cadere tutta la consegna.
+
+    Trovato scrivendo i test il 2026-08-23: bastava un PDF troncato o scritto a meta' e
+    `assembla` moriva con l'eccezione di pdfminer, senza verdetto e senza REPORT, dopo aver
+    gia' fatto tutto il lavoro."""
+
+
 def _pagine_pdf(pdf_path: Path):
     """[(testo, parole, altezza)] per pagina. Rilegge solo se il file e' cambiato."""
     import pdfplumber
@@ -238,21 +429,25 @@ def valida_sillabazione_pdf(pdf_path: Path, testo_sorgente: str | None = None) -
 
     sorgente = (testo_sorgente or "").lower()
     errori: list[str] = []
-    for n, (testo, _parole, _h) in enumerate(_pagine_pdf(pdf_path), start=1):
-        if True:
-            for riga in testo.splitlines():
-                riga = riga.rstrip()
-                m = re.search(r"(\S+)-$", riga)
-                if not m or not re.search(r"[a-zA-ZàèéìòùÀÈÉÌÒÙ]-$", riga):
-                    continue
-                # Distinzione che conta: un a capo su un trattino GIA' PRESENTE nel testo
-                # ("second-cheapest" spezzato dopo "second-") e' impaginazione corretta;
-                # una parola spezzata dove il trattino non c'era e' sillabazione automatica,
-                # ed e' il difetto da correggere. Si controlla nel sorgente.
-                frammento = m.group(1).lower()
-                if sorgente and f"{frammento}-" in sorgente:
-                    continue
-                errori.append(f"pagina {n}: parola spezzata a fine riga — '{riga.strip()[-40:]}'")
+    try:
+        pagine = _pagine_pdf(pdf_path)
+    except Exception as exc:  # noqa: BLE001 — un PDF illeggibile non fa cadere la consegna
+        return [f"VERIFICA A MANO: il PDF non si apre ({type(exc).__name__}), "
+                f"impossibile cercare le parole spezzate a fine riga."]
+    for n, (testo, _parole, _h) in enumerate(pagine, start=1):
+        for riga in testo.splitlines():
+            riga = riga.rstrip()
+            m = re.search(r"(\S+)-$", riga)
+            if not m or not re.search(r"[a-zA-ZàèéìòùÀÈÉÌÒÙ]-$", riga):
+                continue
+            # Distinzione che conta: un a capo su un trattino GIA' PRESENTE nel testo
+            # ("second-cheapest" spezzato dopo "second-") e' impaginazione corretta;
+            # una parola spezzata dove il trattino non c'era e' sillabazione automatica,
+            # ed e' il difetto da correggere. Si controlla nel sorgente.
+            frammento = m.group(1).lower()
+            if sorgente and f"{frammento}-" in sorgente:
+                continue
+            errori.append(f"pagina {n}: parola spezzata a fine riga — '{riga.strip()[-40:]}'")
     if errori:
         logger.warning("valida_sillabazione_pdf: %d righe con parola spezzata", len(errori))
     return errori
@@ -272,27 +467,31 @@ def valida_numerazione_pagine(pdf_path: Path) -> list[str]:
                 "posizione dei numeri di pagina. Installa con: pip install pdfplumber"]
 
     posizioni: list[tuple[int, str]] = []
-    for n, (_testo, parole, h) in enumerate(_pagine_pdf(pdf_path), start=1):
-        if True:
-            for parola in parole:
-                testo = (parola.get("text") or "").strip()
-                if not testo.isdigit():
-                    continue
-                # Il numero di PAGINA e' quello che corrisponde alla posizione nel PDF.
-                # Senza questo controllo un anno citato nel testo ("un tappeto scelto nel
-                # 1988") in cima alla pagina veniva scambiato per numerazione in alto e
-                # segnalato come incoerenza — falso positivo reale, 2026-08-10.
-                # Si tollera uno scarto: la numerazione stampata puo' non partire da pag. 1
-                # (frontespizio, pagine romane).
-                if abs(int(testo) - n) > 5:
-                    continue
-                y = parola.get("top", 0)
-                if y < h * 0.15:
-                    posizioni.append((n, "alto"))
-                    break
-                if y > h * 0.85:
-                    posizioni.append((n, "basso"))
-                    break
+    try:
+        pagine = _pagine_pdf(pdf_path)
+    except Exception as exc:  # noqa: BLE001
+        return [f"VERIFICA A MANO: il PDF non si apre ({type(exc).__name__}), "
+                f"impossibile controllare la posizione dei numeri di pagina."]
+    for n, (_testo, parole, h) in enumerate(pagine, start=1):
+        for parola in parole:
+            testo = (parola.get("text") or "").strip()
+            if not testo.isdigit():
+                continue
+            # Il numero di PAGINA e' quello che corrisponde alla posizione nel PDF.
+            # Senza questo controllo un anno citato nel testo ("un tappeto scelto nel
+            # 1988") in cima alla pagina veniva scambiato per numerazione in alto e
+            # segnalato come incoerenza — falso positivo reale, 2026-08-10.
+            # Si tollera uno scarto: la numerazione stampata puo' non partire da pag. 1
+            # (frontespizio, pagine romane).
+            if abs(int(testo) - n) > 5:
+                continue
+            y = parola.get("top", 0)
+            if y < h * 0.15:
+                posizioni.append((n, "alto"))
+                break
+            if y > h * 0.85:
+                posizioni.append((n, "basso"))
+                break
 
     if not posizioni:
         return ["VERIFICA A MANO: nessun numero di pagina rilevato nel PDF."]
