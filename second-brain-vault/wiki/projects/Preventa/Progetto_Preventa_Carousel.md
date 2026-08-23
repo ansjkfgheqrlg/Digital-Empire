@@ -3,7 +3,7 @@ Type: PROJECT
 Status: Active
 Tags: #preventa #caroselli #arena #playwright #instagram #reparto-produzione
 Created: 2026-08-03
-Last updated: 2026-08-06
+Last updated: 2026-08-23
 ---
 
 # Progetto Preventa — Caroselli Instagram
@@ -76,6 +76,29 @@ autenticato, non duplicano il motore): `run_content_factory.py`, `check_status.p
 - ✅ Cartella Agency (`caroselli - agency/`) non modificata nella sua logica di
   business — solo il motore condiviso `ArenaAI/arena_generator.py` ha ricevuto fix
   di bug reali (vedi [[CP-20260805-013]]) che beneficiano anche Agency.
+
+## Aggiornamento 2026-08-12 — motore di pubblicazione IG, dry-run verificato
+
+Max ha fornito le credenziali reali della pagina `digitalempireagency.e` (già presenti
+in `Workflow pubblicazione automatica/Instagram/config.py`, stesso publisher già
+esistente e funzionante) e chiesto un motore di pubblicazione + un team copy APSOC.
+
+Scritto `publish_instagram.py` — **wrappa** `Instagram/instagram_publisher.py` via
+import (ADR-003, nessuna modifica al motore condiviso). Testato per la prima volta
+in **dry-run**: trova le 8 slide del carosello #1 e le compone correttamente, senza
+toccare IG. Il "team copy APSOC" richiesto **non va costruito**: esiste già come
+skill [[cro-copy-architect]].
+
+**Nota di processo**: questo lavoro (credenziali, wrapper, edit a
+`run_content_factory.py`) era esistito solo su disco/in chat per 6 giorni prima di
+essere salvato in un checkpoint — recuperato rileggendo la conversazione, non la
+Memory. Verificato anche che il "blocco arena.ai" di una sessione precedente non era
+specifico al servizio: nello stesso momento anche google.com/github.com erano
+irraggiungibili dalla stessa shell → mancanza di rete del sandbox, non outage Arena.
+
+**Prossimo passo (non ancora fatto)**: generare carosello #2, scrivere caption reale
+via `cro-copy-architect`, poi solo con ok esplicito di Max lanciare
+`publish_instagram.py --live` per il primo post reale.
 
 ## Connessioni
 - [[Reparto_Produzione_Digital_Empire]] — il concetto organizzativo che questo progetto inaugura

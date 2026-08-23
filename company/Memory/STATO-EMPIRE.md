@@ -1,5 +1,65 @@
-# STATO EMPIRE -- aggiornato 2026-08-22 (Claude: NERVE-SOLVE — Orchestration Layer 1 (Problem Solving Engine) estratto e implementato come skill Claude Code operativa (`.claude/skills/nerve-solve/`), primo di 3 sistemi nervosi pianificati per il Modello Internet Artificiale della holding; scartato il kernel Python crittografico orfano della fonte (mai completato, motore reasoning mai costruito) — CP-20260822-001 · Claude: YOUTUBE-AUTOMATION-FACTORY — PRIMO VIDEO REALE PUBBLICATO su @Legamidiamore (youtu.be/2t4BZR3KAiU, scelta deliberata di Max: Public non Private), upload finale completato a mano da Max dopo pipeline 100% automatizzata — CP-20260818-001 · Claude: YOUTUBE-AUTOMATION-FACTORY — credential-keeper + wiring reale Legami d'Amore, voce femminile/upload/skip-thumbnail/tag SEO/freschezza video cablati — CP-20260815-001 · Claude: wrapper pubblicazione IG caroselli Preventa, dry-run verificato, filone salvato dopo 6gg scoperto solo in chat — CP-20260812-001 ·
+# STATO EMPIRE -- aggiornato 2026-08-23 (Claude: WIKI — trovato e colmato buco reale di 16gg tra 06 e 22 agosto (16 checkpoint di lavoro reale mai riversati nella wiki), causa identificata (due sistemi di memoria paralleli, solo company/Memory rispettato sempre), colmato lo scope agosto su richiesta di Max, resto dell'estate in backlog B-013; NERVE-SOLVE reso davvero automatico via terzo hook UserPromptSubmit — CP-20260823-001 · Claude: NERVE-SOLVE — Orchestration Layer 1 (Problem Solving Engine) estratto e implementato come skill Claude Code operativa (`.claude/skills/nerve-solve/`), primo di 3 sistemi nervosi pianificati per il Modello Internet Artificiale della holding; scartato il kernel Python crittografico orfano della fonte (mai completato, motore reasoning mai costruito) — CP-20260822-001 · Claude: YOUTUBE-AUTOMATION-FACTORY — PRIMO VIDEO REALE PUBBLICATO su @Legamidiamore (youtu.be/2t4BZR3KAiU, scelta deliberata di Max: Public non Private), upload finale completato a mano da Max dopo pipeline 100% automatizzata — CP-20260818-001 · Claude: YOUTUBE-AUTOMATION-FACTORY — credential-keeper + wiring reale Legami d'Amore, voce femminile/upload/skip-thumbnail/tag SEO/freschezza video cablati — CP-20260815-001 · Claude: wrapper pubblicazione IG caroselli Preventa, dry-run verificato, filone salvato dopo 6gg scoperto solo in chat — CP-20260812-001 ·
 Claude: PRIMO LIBRO KDP COMPLETO — "The Quiet Hours", 115 pagine reali + copertina, pacchetto pronto — CP-20260808-002 · Claude: Aureus — pulsante unico "Produci video + copertina", catena YouTube Factory incatenata e verificata — CP-20260808-001 · Claude: PIANO KDP — LM Arena abbandonato per il testo (captcha non aggirabile), si passa a Claude, copertine restano su LM Arena — CP-20260807-001 · Claude: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005 · Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-003 · Claude: Arsenale Caroselli, libreria output per prodotto — CP-20260806-002 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## 📋 2026-08-23 — CLAUDE: cadenza task Gael passa da giornaliera a settimanale — 3 task W1 assegnate
+
+Richiesta esplicita di Gael (comodità sua), approvata da Max: da ora le task si assegnano
+**a settimana**, non a giorno — generali di proposito, non micro-step, così Gael gestisce
+da solo i giorni pieni/leggeri. Assegnate 3 task per la Settimana 1 (24-30 agosto 2026), ID
+stabili in `EmpireDesk/state/taskboard.json`:
+
+- **TASK-KDP-W1** — chiudere il ciclo Workflow KDP end-to-end (avvio->libro+prompt
+  copertina+copy Amazon->cartella ordinata); nord dopo che gira pulito = 5-10 libri/settimana.
+- **TASK-CAROSELLI-W1** — Carousel Factory **ufficiale da oggi** (prima fuori taskboard):
+  comando unico + argomento topic -> caroselli salvati ordinati. Flusso complicato per
+  ammissione di Max — **Claude assiste direttamente**, non lasciato solo.
+- **TASK-PUBLISHER-W1** — consolidare il workflow di pubblicazione multi-canale già esistente
+  (`SKILL & Agenti/Workflow pubblicazione automatica/`) in un comando richiamabile. Scelta di
+  Claude come 3° task (Max ha chiesto di continuare l'Impero solo se serve alle priorità
+  correnti, non ricominciare a costruire): questo sblocca sia Caroselli sia in futuro
+  KDP/YouTube, non è costruzione fine a sé stessa.
+
+Dettaglio completo in [`company/Memory/tasks/TASK-GAEL-20260824-SETTIMANA-01.md`](tasks/TASK-GAEL-20260824-SETTIMANA-01.md).
+
+**RIPRESA DA**: fine Settimana 1 (dom 30 ago) — checkpoint di chiusura con stato reale delle 3
+task (fatto/parziale/bloccato), poi si emette la Settimana 2.
+
+---
+
+## 🕵️ 2026-08-23 — CLAUDE: WIKI — trovato e colmato buco reale di 16gg (06→22 agosto) — CP-20260823-001
+
+Max ha chiesto conferma diretta: la wiki (second-brain-vault) viene davvero aggiornata ad ogni
+conversazione, e il suo contesto viene davvero usato per rispondere? Sospettava di no. Verificato
+con evidenza reale, non a naso (approccio NERVE-SOLVE): `wiki/log.md` non aveva **nessuna entry**
+tra il 2026-08-06 e il 2026-08-22 — 16 giorni — mentre `company/Memory/checkpoints/` ha **16
+checkpoint reali** nello stesso identico periodo (primo libro KDP completo, primo video YouTube
+pubblicato, wrapper IG Preventa, fix self-healing WhatsApp, ecc.).
+
+**Causa reale**: due sistemi di memoria paralleli in questa azienda. `company/Memory/` (REGOLA
+ZERO, ADR-002) è stato rispettato **sempre**, senza buchi — il contesto operativo usato per
+rispondere a Max in queste settimane esisteva davvero. La wiki (REGOLA FONDAMENTALE, seconda in
+ordine nel CLAUDE.md) invece ha buchi reali: prova concreta, "The Quiet Hours" (primo libro KDP
+mai completato dall'azienda) non aveva **nessuna** pagina wiki.
+
+**Rimedio** (scope concordato con Max via domanda esplicita: solo agosto, non tutta l'estate):
+2 pagine wiki nuove (`entities/Entity_The_Quiet_Hours_Libro_KDP.md`,
+`tools/Tool_Pipeline_Libri_KDP.md`) + 3 aggiornate (Legami d'Amore: video pubblicato + 3 in
+produzione + bug fix; Preventa Logica: fix self-healing rete; Preventa Carousel: wrapper IG
+dry-run) + `index.md`/`log.md` aggiornati. `company/Memory/BACKLOG.md` B-013: il periodo
+PRE-luglio (10/06→04/07, altro gap trovato) resta apertamente non auditato, in attesa di via
+libera esplicito.
+
+**Errore ammesso a Max nella stessa sessione**: prima di controllare quando l'hook wiki-first
+fosse stato installato, ho modificato lo stesso file globale (`~/.claude/settings.json`) per
+aggiungere l'hook NERVE-SOLVE (vedi sotto), sovrascrivendone la mtime — prova forense persa, non
+posso stabilire con certezza se il problema fosse "l'hook non esisteva" o "esisteva ma non veniva
+rispettato". Detto onestamente a Max invece di inventare una risposta plausibile.
+
+**RIPRESA DA:** nessun passo obbligatorio. Se Max vuole il backfill anche del periodo PRE-luglio,
+è B-013 in backlog, in attesa di via libera esplicito (lavoro grande, richiede swarm ADR-006).
+Dettaglio in [CP-20260823-001](checkpoints/CP-20260823-001.md).
+
+---
 
 ## 🧠 2026-08-22 — CLAUDE: NERVE-SOLVE — Orchestration Layer 1 (Problem Solving Engine) implementato — CP-20260822-001
 

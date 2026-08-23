@@ -3,7 +3,7 @@ Type: PROJECT
 Status: Active
 Tags: #preventa #outreach #whatsapp #concessionari #metodo #gael
 Created: 2026-07-30
-Last updated: 2026-07-30
+Last updated: 2026-08-23
 ---
 
 # Preventa — Logica Completa del Sistema (bozza del Metodo)
@@ -201,6 +201,25 @@ la Fase 2):
    manuale in Areus per ora.
 
 ---
+
+## Aggiornamento 2026-08-13 — self-healing su `page.goto` (retry automatico)
+
+Diversi lead con filtro import fallivano l'invio con errori di rete **diversi ogni
+volta** (`Timeout 30000ms exceeded`, `ERR_NAME_NOT_RESOLVED`, `ERR_CONNECTION_TIMED_OUT`).
+**Diagnosi confermata**: non è un bug di sessione né di logica applicativa (verificato:
+nello stesso run, stesso profilo, altri lead passavano) — è rete/sistema instabile nel
+momento esatto del caricamento di `web.whatsapp.com`, aggravato da altre automazioni
+Chrome pesanti (Arena/YouTube) attive in parallelo sulla stessa macchina.
+
+**Fix**: `page.goto` ora gira dentro un ciclo di 3 tentativi, timeout 45s ciascuno (era
+30s implicito), 5s di pausa tra un tentativo e l'altro — solo dopo 3 fallimenti reali il
+lead viene segnato `errore` verso il circuit-breaker esterno (5 falliti consecutivi = stop
+del run), che così torna a segnalare un problema vero e non un blip transitorio.
+Verificato su invio reale: un lead che falliva sempre è passato al primo giro del retry.
+
+**Lezione per il futuro**: se il pattern continua nonostante il retry, valutare se
+schedulare gli outreach run in finestre orarie diverse dalle altre automazioni Chrome
+pesanti, invece di alzare ulteriormente i timeout.
 
 ## Cosa serve perché la logica diventi "Metodo" (prossimi passi)
 
