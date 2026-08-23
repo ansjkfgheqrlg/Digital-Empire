@@ -8,7 +8,12 @@
   (checklist anti-clichè hook, generalizzabile a tutto il copy/ads DE).
 - ENRICHMENT-RESEARCH: vedi `company/Memory/memory-empire/memory/ingestions/2026-08-23-*.md`
   per proposta d'uso del contenuto nella skill `cro-copy-architect` (gate Attenzione/APSOC).
-- WATCH-001: N_video=11, N_MemoryEmpire=11 → MATCH ✅. Checkpoint: CP-20260823-XXX.
+- WATCH-001: N_video=11, N_MemoryEmpire=11 → MATCH ✅. Checkpoint: CP-20260823-003.
+
+## 2026-08-23 (Mappa root Digital Empire, Cursor/Max)
+- MAPPA: censimento 49 cartelle di primo livello (~35k file, vendor escluso) + alberi di company, PIANO-MAESTRO, DIGITAL-EMPIRE, empire, wiki, fabbriche.
+- ARTEFATTO: canvas `digital-empire-mappa.canvas.tsx` (schema a livelli, catalogo filtrabile, openFile sui file di verità).
+- CP: `company/Memory/checkpoints/CP-20260823-004.md`
 
 ## 2026-08-06 (Primo carosello Preventa reale: Agent workspace Arena, non il motore grezzo, Claude/Max)
 - CORREZIONE: `projects/Preventa/Progetto_Preventa_Carousel.md` descriveva il motore
