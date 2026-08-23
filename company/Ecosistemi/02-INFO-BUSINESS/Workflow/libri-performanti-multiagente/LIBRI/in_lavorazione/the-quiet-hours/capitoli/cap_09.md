@@ -14,7 +14,7 @@ There's a word for this. I know the word, because I did a module on it and becau
 
 Parasomnia. Non-REM. Sleepwalking, if you want the word people use, though the clinical version is broader and stranger than the cartoon of a person with their arms out. People drive. People cook. People have conversations that make grammatical sense and remember none of it.
 
-And the biggest risk factor — the one at the top of every list, above alcohol, above medication, above stress — is chronic sleep deprivation.
+And the biggest risk factor, the one at the top of every list, above alcohol, above medication, above stress, is chronic sleep deprivation.
 
 I have not slept more than four hours in a night since December of last year.
 
@@ -32,7 +32,7 @@ I have not been to my mother's on a weekday in two years. She opens the door in 
 
 "You were not passing. Nobody passes Bellhouse." But she stands back and lets me in.
 
-Nina's room is still Nina's room. Not a shrine — my mother is far too practical for a shrine — but the bed is made with the same duvet cover and there are three boxes stacked by the wardrobe with things in them that neither of us has been able to take to the charity shop.
+Nina's room is still Nina's room. Not a shrine (my mother is far too practical for a shrine) but the bed is made with the same duvet cover and there are three boxes stacked by the wardrobe with things in them that neither of us has been able to take to the charity shop.
 
 "You can look," my mother says from the doorway. "You don't have to ask me."
 
@@ -52,7 +52,7 @@ My mother is quiet for a second.
 
 "Because I couldn't decide where to put it," she says, "and face down felt like less of a decision."
 
-I ask to see Mrs. Ferrante's admission notes properly. This time I do it the right way — I ask the manager, and I give a reason that is true enough to survive contact.
+I ask to see Mrs. Ferrante's admission notes properly. This time I do it the right way. I ask the manager, and I give a reason that is true enough to survive contact.
 
 "She's been vocalising about her old address at night. I want to know what's in there that we might be able to use to settle her."
 
@@ -62,7 +62,7 @@ Denise says fine, and I sit in the office at half three with a lukewarm tea and 
 
 Then, further down, in the section for personal effects logged at admission, in the biro handwriting of whoever was on that day:
 
-*1 suitcase, clothing. 1 photo album. 1 jewellery box (costume). 1 key, brass, unlabelled — resident distressed when removal attempted, permitted to retain.*
+*1 suitcase, clothing. 1 photo album. 1 jewellery box (costume). 1 key, brass, unlabelled. Resident distressed when removal attempted, permitted to retain.*
 
 I read it four times.
 
@@ -114,7 +114,7 @@ I sit with her until she goes under, which takes a long time, and while I sit th
 
 Not as a sister. As the person who would be called if it happened in front of me.
 
-A vehicle leaves the road at speed and enters water. The occupant is unrestrained or restrained. The mechanism of injury is deceleration — the body stops when the car stops, and the organs inside the body stop a fraction of a second later, and that fraction is what kills people.
+A vehicle leaves the road at speed and enters water. The occupant is unrestrained or restrained. The mechanism of injury is deceleration: the body stops when the car stops, and the organs inside the body stop a fraction of a second later, and that fraction is what kills people.
 
 There is a version of that where a person is alive for twenty minutes and drowns.
 

@@ -2,7 +2,7 @@
 
 I don't sleep for two days after the corridor.
 
-Not from fear — I want to be accurate about this, because it would be a tidier book if I'd been frightened. What I feel is something closer to professional embarrassment, which I recognise as absurd even at the time.
+Not from fear. I want to be accurate about this, because it would be a tidier book if I'd been frightened. What I feel is something closer to professional embarrassment, which I recognise as absurd even at the time.
 
 I have spent eleven years assessing other people's cognition. I have a laminated card in my bag with the abbreviated mental test on it. I have sat opposite families and explained, kindly, that the man they are describing is not "having a funny turn," he is exhibiting a symptom, and that symptoms are things you take to a doctor.
 
@@ -14,13 +14,13 @@ I sit there for twenty minutes with the engine off. I have the appointment. I ma
 
 And then I think about what happens if I go in and say the rest of it.
 
-Because I know the pathway. I *am* the pathway. You disclose parasomnia with amnesia and confusional arousal to a GP, and if you're lucky you get a sleep clinic referral in nine months. And if you're unlucky — if the GP is thorough, if they ask the right question about your driving — there is a form, and the form goes to the DVLA, and my licence is my job.
+Because I know the pathway. I *am* the pathway. You disclose parasomnia with amnesia and confusional arousal to a GP, and if you're lucky you get a sleep clinic referral in nine months. And if you're unlucky, if the GP is thorough, if they ask the right question about your driving, there is a form, and the form goes to the DVLA, and my licence is my job.
 
 I drive home without going in.
 
 I buy the camera that afternoon.
 
-It's a cheap thing, a security camera meant for people who want to watch their dogs — sixty pounds, plugs into a socket, streams to an app, records to a card when it detects motion. I set it up on the bookshelf in the bedroom facing the bed and I test it by walking about, and the app shows me a small grainy grey woman walking about, and something about seeing myself in infrared makes my skin crawl in a way I decide not to examine.
+It's a cheap thing, a security camera meant for people who want to watch their dogs: sixty pounds, plugs into a socket, streams to an app, records to a card when it detects motion. I set it up on the bookshelf in the bedroom facing the bed and I test it by walking about, and the app shows me a small grainy grey woman walking about, and something about seeing myself in infrared makes my skin crawl in a way I decide not to examine.
 
 Then I do everything right.
 
@@ -36,33 +36,33 @@ The app has nine clips.
 
 I sit on the edge of the bath at half six in the morning with the phone in both hands and I watch them in order.
 
-**01:47 — 12 seconds.** I turn over. Nothing.
+**01:47, 12 seconds.** I turn over. Nothing.
 
-**02:31 — 8 seconds.** My arm comes out from under the duvet and hangs there. Nothing.
+**02:31, 8 seconds.** My arm comes out from under the duvet and hangs there. Nothing.
 
-**03:12 — 4 minutes 30, the maximum clip length.**
+**03:12, 4 minutes 30, the maximum clip length.**
 
 I sit up.
 
-Not the way a person sits up when they wake — none of the negotiation, the propping, the two false starts. I sit up in one movement, straight-backed, and I stay there.
+Not the way a person sits up when they wake: none of the negotiation, the propping, the two false starts. I sit up in one movement, straight-backed, and I stay there.
 
 For a minute and a half I don't move at all. My eyes are open. In infrared they're two white discs and I have to look away from the screen and then make myself look back.
 
 Then I get out of bed and walk out of frame.
 
-**03:17 — 4 minutes 30.** Empty room.
+**03:17, 4 minutes 30.** Empty room.
 
-**03:22 — 4 minutes 30.** Empty room.
+**03:22, 4 minutes 30.** Empty room.
 
 **03:26, 03:31, 03:35.** Empty room, empty room, empty room.
 
 I watch the empty room clips anyway. All five of them. Twenty-two minutes of an unmade bed in infrared, at half six in the morning, sitting on the edge of a bath.
 
-I don't know what I think I'm going to see. That's not true — I do know. I think I'm going to see somebody else come into the room.
+I don't know what I think I'm going to see. That's not true. I do know. I think I'm going to see somebody else come into the room.
 
 Nobody comes into the room. It's a bed with a duvet thrown back and a dent in the pillow, and a clock radio, and the corner of a wardrobe, and nothing moves for twenty-two minutes except the timestamp.
 
-**04:02 — 3 minutes 11.**
+**04:02, 3 minutes 11.**
 
 I walk back into frame. I stand at the foot of the bed. I'm holding something in my right hand that the infrared washes out into a pale rectangle.
 

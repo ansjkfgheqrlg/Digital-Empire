@@ -20,7 +20,7 @@ I AirDrop him eleven seconds of nothing and he puts it on a screen and it become
 
 "There *was* more. There's no getting it back. What's left is what survived the compression." He clicks something. The waveform gets taller. "But what survived can be helped."
 
-He works for forty minutes. He talks the entire time — about noise reduction, about a thing called spectral repair, about a job he did in 1994 for a coroner in Leeds that he clearly still thinks about. I drink the tea. Duchess relocates from the speaker to my lap without consulting me.
+He works for forty minutes. He talks the entire time: about noise reduction, about a thing called spectral repair, about a job he did in 1994 for a coroner in Leeds that he clearly still thinks about. I drink the tea. Duchess relocates from the speaker to my lap without consulting me.
 
 "You'll want to know about the Leeds one," he says, without turning round, which is how I learn that Ken Boyd has been building to this for half an hour.
 

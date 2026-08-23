@@ -2,6 +2,14 @@
 Run Demo - Dimostra intero sistema APEX-7 con tutti i livelli
 """
 import asyncio
+import sys
+
+# B-013: le emoji nei print qui sotto fanno morire il demo su console Windows
+# cp1252. Un entry point dichiara l'encoding che gli serve.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 from arena_generator import ArenaGenerator
 
 async def full_demo():

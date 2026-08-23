@@ -2,25 +2,25 @@
 
 The night shift starts at ten, and by ten past I already know how the next eight hours will go. Room 12 will ring twice before midnight. Mr. Aldridge in 7 will ask me what year it is and accept my answer with the polite disappointment of a man who was hoping for a different one. The vending machine on the second floor will eat someone's coins. Somewhere around three, the building will go so quiet I can hear the radiators thinking.
 
-I like it. That's the part people don't understand when they hear *night nurse* and make a face. They picture loneliness. What I get is order. During the day, Ridgemont Care Home is chaos with a schedule taped over it — families, deliveries, physical therapists tracking rain across the linoleum. At night it becomes a machine with eleven moving parts, and I know all eleven by name.
+I like it. That's the part people don't understand when they hear *night nurse* and make a face. They picture loneliness. What I get is order. During the day, Ridgemont Care Home is chaos with a schedule taped over it: families, deliveries, physical therapists tracking rain across the linoleum. At night it becomes a machine with eleven moving parts, and I know all eleven by name.
 
 Fourteen months ago I would have said I liked the day shift. Fourteen months ago I slept.
 
 I hang my coat in the staff room and that's when I find it.
 
-There's a key in my left pocket. Not my house key — that one lives on a ring with a plastic tag from a hotel in Brighton, a place I went once and never again. This is a single key, brass, cut square at the shoulder, with a stamped number on the bow: 47. It's cold, which means it's been in the pocket long enough to lose whatever warmth my body would have given it.
+There's a key in my left pocket. Not my house key. That one lives on a ring with a plastic tag from a hotel in Brighton, a place I went once and never again. This is a single key, brass, cut square at the shoulder, with a stamped number on the bow: 47. It's cold, which means it's been in the pocket long enough to lose whatever warmth my body would have given it.
 
 I hold it up to the light and wait for my brain to do the thing brains do, the small click of recognition. Nothing clicks.
 
 "That's not mine," I say, out loud, to the staff room, which does not respond.
 
-I go through the reasonable explanations because that's what you do. A patient handed it to me and I pocketed it without thinking — possible, we're told to hand found objects to the front desk, but possible. A colleague borrowed my coat — nobody borrows my coat. It came with the coat — I've had this coat two winters.
+I go through the reasonable explanations because that's what you do. A patient handed it to me and I pocketed it without thinking. Possible, we're told to hand found objects to the front desk, but possible. A colleague borrowed my coat. Nobody borrows my coat. It came with the coat. I've had this coat two winters.
 
 There's a fourth explanation and I don't look at it directly, the way you don't look directly at the sun or at a bill you haven't opened. The fourth explanation is that I put it there.
 
 I put the key on the shelf next to the kettle, where lost things go, and I go start my rounds.
 
-The rounds are the same rounds. I want to describe them properly, because the ordinariness matters — because everything that comes after has to be laid on top of eight hours of a job I have done four nights a week for eleven years and can do with my hands while my head is somewhere else entirely.
+The rounds are the same rounds. I want to describe them properly, because the ordinariness matters, because everything that comes after has to be laid on top of eight hours of a job I have done four nights a week for eleven years and can do with my hands while my head is somewhere else entirely.
 
 Room 3, Mrs. Duffy, hip replacement six weeks ago, sleeping on her back with her mouth open and one hand up by her ear like a child. Room 5, empty since Tuesday, stripped bed, and I still look in. Room 7, Mr. Aldridge, awake.
 
@@ -62,7 +62,7 @@ I have thought about that unheard sentence perhaps forty times since.
 
 ---
 
-The middle of a night shift has a shape. Between one and three you do the paperwork nobody does in daylight — the audits, the fridge temperatures, the controlled drugs count that takes two signatures and eleven minutes and which Angela and I have done together so many times we no longer speak during it.
+The middle of a night shift has a shape. Between one and three you do the paperwork nobody does in daylight: the audits, the fridge temperatures, the controlled drugs count that takes two signatures and eleven minutes and which Angela and I have done together so many times we no longer speak during it.
 
 Tonight Angela is on the other wing, so I do the count with Priya, who is on her third week of nights and still thinks they're interesting.
 
@@ -112,7 +112,7 @@ I take it out and set it on the desk in front of me and I look at it for a long 
 
 I did not put it there. I put it on the shelf by the kettle, next to the box of teabags with the lid that doesn't close, and I have not been back into the staff room since.
 
-The thing about not sleeping — the thing nobody tells you, because the people who tell you things about sleep are people who sleep — is that it doesn't feel like exhaustion. Not after the first months. It feels like standing slightly to the left of your own body. Everything still works. You still take blood pressure and chart medications and talk to a frightened old woman about a car that isn't there. You just do it from an inch outside yourself, watching your hands be competent.
+The thing about not sleeping, the thing nobody tells you, because the people who tell you things about sleep are people who sleep, is that it doesn't feel like exhaustion. Not after the first months. It feels like standing slightly to the left of your own body. Everything still works. You still take blood pressure and chart medications and talk to a frightened old woman about a car that isn't there. You just do it from an inch outside yourself, watching your hands be competent.
 
 From an inch outside myself, I watch my hands put the key back in my pocket.
 

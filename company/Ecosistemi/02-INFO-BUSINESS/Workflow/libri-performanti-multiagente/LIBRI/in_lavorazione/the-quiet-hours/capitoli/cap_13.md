@@ -28,7 +28,7 @@ We stand there.
 
 We do it in his kitchen after all, because you cannot have this conversation on a landing and both of us know it.
 
-His flat is the mirror image of mine, which is disorienting — the same rooms in the wrong order, like a word said backwards. There's a piano where my sofa is. There are boxes he hasn't unpacked after five months.
+His flat is the mirror image of mine, which is disorienting: the same rooms in the wrong order, like a word said backwards. There's a piano where my sofa is. There are boxes he hasn't unpacked after five months.
 
 He makes tea neither of us drinks. That's the second time this week somebody has done that for me.
 

@@ -106,7 +106,115 @@
     },
     "diff_from_previous": "Previous: v7.0-APEX -> v7.1-live",
     "score": 6.85,
-    "status": "current",
+    "status": "deprecated",
     "timestamp": "2026-07-23T07:58:17.257082"
+  },
+  {
+    "version": "v7.0-APEX",
+    "description": "Full system con swarm + memory + ruflo",
+    "config": {
+      "orchestrator": "ruflo",
+      "memory_layers": 5
+    },
+    "agents": [
+      "planner",
+      "writer",
+      "analyst",
+      "critic",
+      "refiner",
+      "meta"
+    ],
+    "workflows": [
+      "apex7_prompt_generation"
+    ],
+    "performance_metrics": {
+      "latency_ms": 120,
+      "quality": 8.5
+    },
+    "diff_from_previous": "Previous: v7.1-live -> v7.0-APEX",
+    "score": 8.5,
+    "status": "deprecated",
+    "timestamp": "2026-08-13T11:01:25.061526"
+  },
+  {
+    "version": "v7.1-live",
+    "description": "Live execution score 5.8",
+    "config": {
+      "last_score": 5.8,
+      "patterns": []
+    },
+    "agents": [
+      "planner",
+      "writer",
+      "analyst",
+      "critic",
+      "refiner",
+      "meta"
+    ],
+    "workflows": [
+      "apex7_prompt_generation"
+    ],
+    "performance_metrics": {
+      "quality_score": 5.8,
+      "patterns_detected": 0
+    },
+    "diff_from_previous": "Previous: v7.0-APEX -> v7.1-live",
+    "score": 5.8,
+    "status": "deprecated",
+    "timestamp": "2026-08-13T11:01:25.106691"
+  },
+  {
+    "version": "v7.0-APEX",
+    "description": "Full system con swarm + memory + ruflo",
+    "config": {
+      "orchestrator": "ruflo",
+      "memory_layers": 5
+    },
+    "agents": [
+      "planner",
+      "writer",
+      "analyst",
+      "critic",
+      "refiner",
+      "meta"
+    ],
+    "workflows": [
+      "apex7_prompt_generation"
+    ],
+    "performance_metrics": {
+      "latency_ms": 120,
+      "quality": 8.5
+    },
+    "diff_from_previous": "Previous: v7.1-live -> v7.0-APEX",
+    "score": 8.5,
+    "status": "deprecated",
+    "timestamp": "2026-08-13T17:30:44.348722"
+  },
+  {
+    "version": "v7.1-live",
+    "description": "Live execution score 5.8",
+    "config": {
+      "last_score": 5.8,
+      "patterns": []
+    },
+    "agents": [
+      "planner",
+      "writer",
+      "analyst",
+      "critic",
+      "refiner",
+      "meta"
+    ],
+    "workflows": [
+      "apex7_prompt_generation"
+    ],
+    "performance_metrics": {
+      "quality_score": 5.8,
+      "patterns_detected": 0
+    },
+    "diff_from_previous": "Previous: v7.0-APEX -> v7.1-live",
+    "score": 5.8,
+    "status": "current",
+    "timestamp": "2026-08-13T17:30:44.377649"
   }
 ]

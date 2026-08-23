@@ -12,7 +12,7 @@ The clarity lasts about ninety seconds. Long enough to think one clean thought, 
 
 *I knew the PIN without having to remember it.*
 
-Not *I remembered it.* It came out of my mouth ahead of me, the way your own front door code does, the way a thing you have typed does — the fingers know before the head.
+Not *I remembered it.* It came out of my mouth ahead of me, the way your own front door code does, the way a thing you have typed does: the fingers know before the head.
 
 I have never in my life logged into my sister's voicemail.
 
@@ -128,7 +128,7 @@ She walks me out. In the corridor, near the doors, she stops.
 
 "The key," she says. "Have you still got it?"
 
-I take it out. She turns it over in her palm and looks at the worn characters on the reverse — the ones I photographed, the ELP.
+I take it out. She turns it over in her palm and looks at the worn characters on the reverse, the ones I photographed, the ELP.
 
 "You've been reading these as letters," she says.
 

@@ -39,6 +39,29 @@ class BookManuscript:
     front_matter_notes: list[str] = field(default_factory=list)
     prologue: list[str] | None = None
     epilogue: list[str] | None = None
+    # Pagine che non sono il romanzo: copyright davanti, richiesta di recensione e "Also
+    # by" in fondo (2026-08-23). Ognuna e' (titolo, paragrafi). Le costruisce `paratesto`.
+    pagine_iniziali: list[tuple[str, list[str]]] = field(default_factory=list)
+    pagine_finali: list[tuple[str, list[str]]] = field(default_factory=list)
+
+
+# Le pagine di contorno vanno nel libro ma NON nel conteggio parole che decide se il
+# romanzo e' abbastanza lungo (2026-08-23). Senza questa distinzione, aggiungere il
+# copyright e la richiesta di recensione avrebbe regalato ~250 parole al controllo di
+# lunghezza: un libro con 250 parole di STORIA in meno sarebbe passato lo stesso. Lo stile
+# viene salvato dentro il .docx, quindi la distinzione sopravvive alla rilettura del file —
+# che e' come qui si contano le cose, mai dalla struttura in memoria.
+PARATESTO_STYLE = "Paratesto"
+
+
+def _nome_stile(paragrafo) -> str:
+    """Il nome dello stile, o stringa vuota. Un .docx riletto puo' avere paragrafi senza
+    stile associato: chiederglielo direttamente solleverebbe, e far cadere il conteggio
+    parole per un dettaglio di formato sarebbe assurdo."""
+    try:
+        return paragrafo.style.name or ""
+    except Exception:  # noqa: BLE001
+        return ""
 
 
 @dataclass
@@ -57,8 +80,13 @@ class PageCountResult:
 
 
 def count_words_and_pages(doc: Document) -> PageCountResult:
-    """Conta le parole REALI nel documento (mai un numero dichiarato senza ricontrollo)."""
-    word_count = sum(len(p.text.split()) for p in doc.paragraphs if p.text.strip())
+    """Conta le parole REALI nel documento (mai un numero dichiarato senza ricontrollo).
+
+    Salta le pagine di contorno (copyright, richiesta di recensione, "Also by"): stanno nel
+    libro ma non sono il romanzo, e farle contare vorrebbe dire accettare un romanzo piu'
+    corto del minimo."""
+    word_count = sum(len(p.text.split()) for p in doc.paragraphs
+                     if p.text.strip() and _nome_stile(p) != PARATESTO_STYLE)
     estimated_pages = round(word_count / config.WORDS_PER_PAGE_ESTIMATE, 1)
     within_target = config.TARGET_WORD_COUNT_MIN <= word_count <= config.TARGET_WORD_COUNT_MAX
     return PageCountResult(
@@ -123,6 +151,25 @@ def _style_body(document: Document) -> None:
         hf.space_after = Pt(60)
 
 
+def _crea_stile_paratesto(document: Document):
+    """Stile dedicato alle pagine di contorno, per poterle ESCLUDERE dal conteggio parole
+    anche dopo aver riletto il file da disco."""
+    from docx.enum.style import WD_STYLE_TYPE
+
+    esistenti = [s.name for s in document.styles]
+    if PARATESTO_STYLE in esistenti:
+        return document.styles[PARATESTO_STYLE]
+    stile = document.styles.add_style(PARATESTO_STYLE, WD_STYLE_TYPE.PARAGRAPH)
+    stile.base_style = document.styles["Normal"]
+    stile.font.name = config.BODY_FONT_NAME
+    stile.font.size = Pt(config.BODY_FONT_SIZE_PT - 1)
+    pf = stile.paragraph_format
+    pf.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    pf.first_line_indent = Inches(0)
+    pf.space_after = Pt(10)
+    return stile
+
+
 def build_manuscript_docx(manuscript: BookManuscript, output_path: Path) -> PageCountResult:
     """Assembla il manoscritto in .docx con formattazione KDP applicata per davvero.
     Ritorna il conteggio pagine REALE, riletto dal file appena salvato su disco."""
@@ -130,6 +177,8 @@ def build_manuscript_docx(manuscript: BookManuscript, output_path: Path) -> Page
     _style_body(document)
     _set_trim_and_mirror_margins(document.sections[0])
     _add_page_number_field(document.sections[0].footer)
+
+    _crea_stile_paratesto(document)
 
     document.add_heading(manuscript.title, level=0)
     if manuscript.subtitle:
@@ -141,6 +190,19 @@ def build_manuscript_docx(manuscript: BookManuscript, output_path: Path) -> Page
     def _new_chapter_section() -> None:
         section = document.add_section(WD_SECTION.NEW_PAGE)
         _set_trim_and_mirror_margins(section)
+
+    def _pagina_paratesto(titolo: str, paragrafi: list[str]) -> None:
+        _new_chapter_section()
+        if titolo:
+            intestazione = document.add_paragraph(titolo, style=PARATESTO_STYLE)
+            intestazione.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            intestazione.runs[0].bold = True
+        for testo in paragrafi:
+            p = document.add_paragraph(testo, style=PARATESTO_STYLE)
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+    for titolo, paragrafi in manuscript.pagine_iniziali:
+        _pagina_paratesto(titolo, paragrafi)
 
     if manuscript.prologue:
         _new_chapter_section()
@@ -159,6 +221,9 @@ def build_manuscript_docx(manuscript: BookManuscript, output_path: Path) -> Page
         document.add_heading("Epilogue", level=1)
         for para in manuscript.epilogue:
             document.add_paragraph(para)
+
+    for titolo, paragrafi in manuscript.pagine_finali:
+        _pagina_paratesto(titolo, paragrafi)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     document.save(str(output_path))

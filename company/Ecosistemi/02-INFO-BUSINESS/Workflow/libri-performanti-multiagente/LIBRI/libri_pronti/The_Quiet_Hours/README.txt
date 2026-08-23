@@ -1,6 +1,6 @@
 LIBRO: The Quiet Hours
-Generato: 2026-08-08T10:19:30.552610
-Word count: 37279 — Pagine stimate: 124.3 @300wpp
+Generato: 2026-08-23T12:08:58.597849
+Word count: 37160 — Pagine stimate: 116.1 @320wpp
 Manoscritto: The_Quiet_Hours.docx
 PDF: The_Quiet_Hours.pdf
 Copertina: Cover_The_Quiet_Hours.png

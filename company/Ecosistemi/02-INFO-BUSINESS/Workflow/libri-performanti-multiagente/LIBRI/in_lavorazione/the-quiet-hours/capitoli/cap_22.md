@@ -12,7 +12,7 @@ I ring Denise. I ask if I can visit as a visitor. There is a pause on the line o
 
 ---
 
-Room 12 in daylight is a different room. I have only ever seen it at two in the morning. There's a window I've never seen the view from — the car park, four cars, a hedge and the road.
+Room 12 in daylight is a different room. I have only ever seen it at two in the morning. There's a window I've never seen the view from: the car park, four cars, a hedge and the road.
 
 She's in the chair, not the bed, with a blanket over her knees and the television on with the sound off.
 
@@ -58,7 +58,7 @@ She dies in March, of pneumonia, which is what most of them die of in the end wh
 
 Denise rings to tell me, which she did not have to do and which I understand is a kindness aimed at both of us.
 
-There are nine people at the funeral. Four are staff from Ridgemont on their day off. There is no family. The celebrant reads out a life in six minutes — born in Naples in 1943, came to England at nineteen, married Roberto in 1966, forty-one years at Kesselwood Cottages, no children — and gets her name wrong twice, and nobody corrects him, because there is nobody there whose job it is to.
+There are nine people at the funeral. Four are staff from Ridgemont on their day off. There is no family. The celebrant reads out a life in six minutes (born in Naples in 1943, came to England at nineteen, married Roberto in 1966, forty-one years at Kesselwood Cottages, no children) and gets her name wrong twice, and nobody corrects him, because there is nobody there whose job it is to.
 
 I stand at the back like a guitar teacher.
 
@@ -124,7 +124,7 @@ I think about it honestly.
 
 ---
 
-There's a hearing in August. Not a court — the nursing council, because Angela wrote it up as she said she would and because a registered nurse spending forty minutes questioning a resident with dementia at two in the morning is a thing that has to go somewhere.
+There's a hearing in August. Not a court. The nursing council, because Angela wrote it up as she said she would and because a registered nurse spending forty minutes questioning a resident with dementia at two in the morning is a thing that has to go somewhere.
 
 I don't defend it. That surprises everybody including me.
 
@@ -146,7 +146,7 @@ Ken Boyd dies in the same month, which I find out from Okonjo, who finds out fro
 
 Heart, in his kitchen, quickly. He was seventy-nine.
 
-I go to that funeral too. There are more people than I expect — a lot of men in their seventies who all seem to know each other from somewhere technical, and who talk in the crematorium car park about a job in Leeds in 1994 as if it happened last year.
+I go to that funeral too. There are more people than I expect: a lot of men in their seventies who all seem to know each other from somewhere technical, and who talk in the crematorium car park about a job in Leeds in 1994 as if it happened last year.
 
 I introduce myself to one of them and say Ken helped me with an audio file.
 
@@ -158,11 +158,11 @@ I introduce myself to one of them and say Ken helped me with an audio file.
 
 The cat went to a niece in Carlisle, apparently. Duchess. Deaf as a post and eleven years old.
 
-I think about Ken more than I expect to, over that autumn. About a man who spent thirty years cleaning up the last recorded seconds of other people's lives, and who told me straight out, at the very beginning, that he did sound and not fault — and who was the only person in the whole of it who warned me, before I'd even started, that I was about to build a house on eleven seconds.
+I think about Ken more than I expect to, over that autumn. About a man who spent thirty years cleaning up the last recorded seconds of other people's lives, and who told me straight out, at the very beginning, that he did sound and not fault, and who was the only person in the whole of it who warned me, before I'd even started, that I was about to build a house on eleven seconds.
 
 I get a job in October. Community nursing, days, four days a week. It pays less. It has meetings in it, which I hate.
 
-I sleep about six hours a night. Some weeks five. In February — the anniversary of the anniversary, which nobody warns you about — I have a run of four bad nights and I ring Priti and she moves my appointment up, and that's the whole crisis: I make a phone call and someone moves an appointment.
+I sleep about six hours a night. Some weeks five. In February, the anniversary of the anniversary, which nobody warns you about, I have a run of four bad nights and I ring Priti and she moves my appointment up, and that's the whole crisis: I make a phone call and someone moves an appointment.
 
 It is astonishing to me, still, that this is available to people. That it was available the whole time.
 
@@ -184,6 +184,6 @@ Neither of us mentions her, for two hours, and then at the end, over the bill, h
 
 "She'd have made *the* noise," I say.
 
-And we both do it, at the same time, badly — the specific noise Nina made, half a groan and half a laugh, the one she made when something was too much and she loved it.
+And we both do it, at the same time, badly: the specific noise Nina made, half a groan and half a laugh, the one she made when something was too much and she loved it.
 
 We do it in the middle of a restaurant and the couple at the next table look over, and I laugh so hard I have to put my head down on the table, and it is the first time since the fourteenth of December of the year before last that I have laughed like that, with my whole chest, without checking myself halfway through.

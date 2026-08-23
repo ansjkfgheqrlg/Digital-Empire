@@ -2,7 +2,7 @@
 
 It comes back on the ninth night, and it does not come back like they say it does.
 
-Nobody's memory returns in a flash. Mine returns the way a photograph develops in a tray — you look at it and there's nothing, and you look at it and there's nothing, and then you look away and back and it has been there the whole time.
+Nobody's memory returns in a flash. Mine returns the way a photograph develops in a tray: you look at it and there's nothing, and you look at it and there's nothing, and then you look away and back and it has been there the whole time.
 
 I am asleep. Then I am awake, sitting up in a hospital bed on Ward 4 at ten past three in the morning with the blue night-light on, and I know.
 
@@ -10,7 +10,7 @@ I don't shout. I don't ring the buzzer. I sit in the bed with my hands in my lap
 
 What comes first is not an image. It's a physical sensation, entirely specific and entirely undeniable: the weight of a car door against my left shoulder as I push it open into cold air.
 
-That's all. That's the whole of it, for about ninety seconds — a door, my shoulder, the temperature change.
+That's all. That's the whole of it, for about ninety seconds: a door, my shoulder, the temperature change.
 
 And I sit in a hospital bed and I do not chase it, because Dr. Iyer has spent six days telling me that chasing is what closes it, and for once in my life I do as I'm told.
 
@@ -26,7 +26,7 @@ The click of the hazards.
 
 And my own voice, saying a word.
 
-I sit with all of it for perhaps twenty minutes. The ward does its night sounds — a buzzer somewhere, a trolley, the low conversation of two people at the desk who think everyone is asleep.
+I sit with all of it for perhaps twenty minutes. The ward does its night sounds: a buzzer somewhere, a trolley, the low conversation of two people at the desk who think everyone is asleep.
 
 At some point I notice I am not frightened.
 
@@ -40,9 +40,9 @@ Here is what happened on the fourteenth of December.
 
 At nine o'clock Nina texted me from the party at Cranleigh. The text said:
 
-*El don't be like this but I've had 2 and I'm driving home in a bit. Before you type the thing — I know. I'm telling you because you asked me to tell you. x*
+*El don't be like this but I've had 2 and I'm driving home in a bit. Before you type the thing, I know. I'm telling you because you asked me to tell you. x*
 
-I read it standing in my kitchen and I felt the whole of it arrive at once — the fear, and under the fear, immediately, the anger, because with me they have never been separable, and because three days earlier she had sat in my flat and asked me a question and I had made a joke of the answer.
+I read it standing in my kitchen and I felt the whole of it arrive at once: the fear, and under the fear, immediately, the anger, because with me they have never been separable, and because three days earlier she had sat in my flat and asked me a question and I had made a joke of the answer.
 
 I rang her. She didn't pick up.
 
@@ -74,7 +74,7 @@ I said: "That's not fair."
 
 She said: "You've been waiting two years for me to do something you could be right about."
 
-And I said — and this is mine, this is the one I own, this is not the sentence an eighty-two-year-old woman heard through a hedge but the one that came before it —
+And I said, and this is mine, this is the one I own, this is not the sentence an eighty-two-year-old woman heard through a hedge but the one that came before it.
 
 I said: "I'd rather be right than go to your funeral."
 
@@ -92,7 +92,7 @@ And she said: "I've had two glasses of wine."
 
 And I said: "You've had more than two and you're crying and you can't see and I want you to get out and I'll ring someone."
 
-And she said — and here it is, the sentence, the one an eighty-two-year-old woman heard through a hedge and could not put down, the one I have known every second of every day for fourteen months without once being able to say it out loud:
+And she said, and here it is, the sentence, the one an eighty-two-year-old woman heard through a hedge and could not put down, the one I have known every second of every day for fourteen months without once being able to say it out loud:
 
 **"Then get out. If you're that frightened of me, get out and walk."**
 
@@ -108,7 +108,7 @@ Except my phone wasn't on the verge.
 
 At 23:52, standing in the taxi with my sister laughing beside me, I had turned my phone off. Because my mother had rung twice about Christmas and I hadn't wanted the interruption while I was busy being right.
 
-So she called the other one. The pay-as-you-go, in my coat pocket, bought in cash in Cranleigh in November — bought because in November she had promised me she'd stop and I had not believed her, and I had wanted a number she wouldn't recognise, so that if she wouldn't answer to me she might answer to a stranger. That's what it was for. That is the whole shabby, loving, useless reason it existed.
+So she called the other one. The pay-as-you-go, in my coat pocket, bought in cash in Cranleigh in November, bought because in November she had promised me she'd stop and I had not believed her, and I had wanted a number she wouldn't recognise, so that if she wouldn't answer to me she might answer to a stranger. That's what it was for. That is the whole shabby, loving, useless reason it existed.
 
 She rang it at 00:31 and I answered it, standing on the verge, and we spoke for four minutes and eleven seconds.
 
@@ -116,7 +116,7 @@ I don't have those four minutes. Not yet. Maybe not ever.
 
 But I know how they ended, because at 00:42 there was a sound from round the bend like nothing on the television, and then nothing at all, which is worse.
 
-And I walked down. With the torch on my phone — the other phone, the one nobody knew about. And I stood at the barrier, and I looked down at the car in the dark and the water, and I did not go down the bank, and I did not ring 999.
+And I walked down. With the torch on my phone, the other phone, the one nobody knew about. And I stood at the barrier, and I looked down at the car in the dark and the water, and I did not go down the bank, and I did not ring 999.
 
 I stood there for a while.
 
@@ -128,7 +128,7 @@ The second is that the bank was steep and wet and dark and I was alone, and ther
 
 The third is the one I could not hold.
 
-The third is that in the moment I stood at that barrier, some part of me — small, fast, and entirely real — was aware that if I called 999 I would have to say who I was and where I had been and why I had got out of the car.
+The third is that in the moment I stood at that barrier, some part of me, small, fast, and entirely real, was aware that if I called 999 I would have to say who I was and where I had been and why I had got out of the car.
 
 I want to be exact, because being exact is all I have. I do not think I decided not to call in order to protect myself. It was not that clean, and I would almost prefer it if it had been.
 
@@ -140,7 +140,7 @@ Then I walked back up the road and knocked on the door of a cottage where an old
 
 And then I walked home. Eleven miles. In December.
 
-And at 06:15 I turned my phone back on in my own flat, and at ten past one — no. That's wrong. That's the version. My mother rang at ten past one and I was on the Kesselwood road.
+And at 06:15 I turned my phone back on in my own flat, and at ten past one. No. That's wrong. That's the version. My mother rang at ten past one and I was on the Kesselwood road.
 
 My mother rang at ten past one and it went to a phone that was switched off on my kitchen table.
 

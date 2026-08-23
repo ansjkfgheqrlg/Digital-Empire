@@ -6,7 +6,7 @@ And I say no.
 
 I want to be very clear about what happens in that moment, because it's the hinge of the whole thing and I have had a long time to look at it since.
 
-I am sitting in her office. The notebook is in my bag, on the floor, between my feet. The shoebox is in the boot of my car with Nina's house keys in it — house keys I reported missing, which makes them, at minimum, an item of interest in a file, and which makes me, at minimum, a person who found them and said nothing.
+I am sitting in her office. The notebook is in my bag, on the floor, between my feet. The shoebox is in the boot of my car with Nina's house keys in it, house keys I reported missing, which makes them, at minimum, an item of interest in a file, and which makes me, at minimum, a person who found them and said nothing.
 
 She says: "Any joy with the key?"
 
@@ -14,7 +14,7 @@ And I hear myself say: "No. I've had it under a light. It's just a maker's mark.
 
 There is no decision. That's what I want to put down. I do not weigh it up. There is no moment in which I consider telling her about a locker in a record shop and a notebook in my own handwriting and decide against it. The lie is simply what comes out, fully formed and calm, in the voice I use for handovers.
 
-And the thing underneath it — the reason, which I can see now and could not see then — is this:
+And the thing underneath it, the reason, which I can see now and could not see then, is this:
 
 If I show her the notebook, then it stops being *possible* that I'm being handled by somebody, and starts being *certain* that for fourteen months I have been getting up in the night and doing things and coming back and putting the kettle on.
 
@@ -28,7 +28,7 @@ That's what I take away from the meeting, in the end, and it takes me another el
 
 ---
 
-I read the notebook properly that night. Not at work — I've asked for two shifts off, which I have never done, and Denise agreed so fast that I understand I look worse than I think I do.
+I read the notebook properly that night. Not at work. I've asked for two shifts off, which I have never done, and Denise agreed so fast that I understand I look worse than I think I do.
 
 Sixty-one entries. Fourteen months.
 
@@ -44,7 +44,7 @@ I do not remember writing it down at four in the morning in a locker in a record
 
 But the pattern underneath the grief is the thing.
 
-She — I — whoever writes in this notebook goes back to the Kesselwood road. Repeatedly. Twenty-two of the sixty-one entries reference the bend, the gate, the cottages, the verge. There are measurements. There is, on one page, a sketch of the road with an X and an arrow and the note *no glass here, why*.
+She, or I, or whoever writes in this notebook, goes back to the Kesselwood road. Repeatedly. Twenty-two of the sixty-one entries reference the bend, the gate, the cottages, the verge. There are measurements. There is, on one page, a sketch of the road with an X and an arrow and the note *no glass here, why*.
 
 There are entries about Mrs. Ferrante going back nine months, long before I would have said I'd ever exchanged more than pleasantries with her.
 
@@ -80,7 +80,7 @@ I sit on the bedroom floor with a pair of boots I bought and wore and cleaned no
 
 The receipt is in the boot. Fourteenth of March last year, 04:51, twenty-four-hour supermarket on the ring road.
 
-Ten to five in the morning. I would have been asleep. I was asleep — that's a Tuesday, I know it's a Tuesday because I did four nights that week and Wednesday was my first off, and I would have got home at seven on the Tuesday morning and gone to bed.
+Ten to five in the morning. I would have been asleep. I was asleep. That's a Tuesday, I know it's a Tuesday because I did four nights that week and Wednesday was my first off, and I would have got home at seven on the Tuesday morning and gone to bed.
 
 Except at ten to five I was in a supermarket on the ring road buying walking boots with my own bank card.
 
@@ -108,7 +108,7 @@ I had a follow-up ready. I had six. All of them assumed a no.
 
 "How."
 
-"She was my student." He leans on the doorframe, not casually — like he needs it. "Guitar, badly, for about a year. She was the worst student I've ever had and the only one I ever looked forward to." Something moves across his face and he lets it. "She talked about you constantly. *My sister the nurse who doesn't sleep.* That was before — she meant it as a joke about your shifts."
+"She was my student." He leans on the doorframe, not casually, like he needs it. "Guitar, badly, for about a year. She was the worst student I've ever had and the only one I ever looked forward to." Something moves across his face and he lets it. "She talked about you constantly. *My sister the nurse who doesn't sleep.* That was before — she meant it as a joke about your shifts."
 
 "You paid her phone bill."
 
@@ -128,6 +128,6 @@ I had a follow-up ready. I had six. All of them assumed a no.
 
 "On purpose."
 
-And here — finally — he does something with his face.
+And here, finally, he does something with his face.
 
 "Yes," he says.

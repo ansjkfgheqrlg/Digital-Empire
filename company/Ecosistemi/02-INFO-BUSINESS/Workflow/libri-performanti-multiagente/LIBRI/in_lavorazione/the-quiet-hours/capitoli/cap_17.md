@@ -20,7 +20,7 @@ Here is a thing I have not said, because it has taken me until now to work out h
 
 *That's a no said politely, and I respect it.* *If it's that, we stop.* *Not asking.*
 
-I have spent four months treating that as a technique — the patience of a man managing me. And lying on a bed at eight in the morning in a coat, it occurs to me for the first time that it might simply be what it looks like, which is a person being careful with someone.
+I have spent four months treating that as a technique: the patience of a man managing me. And lying on a bed at eight in the morning in a coat, it occurs to me for the first time that it might simply be what it looks like, which is a person being careful with someone.
 
 I have got very bad at telling the difference. That's what fourteen months of this does: everybody's kindness starts to look like a move.
 

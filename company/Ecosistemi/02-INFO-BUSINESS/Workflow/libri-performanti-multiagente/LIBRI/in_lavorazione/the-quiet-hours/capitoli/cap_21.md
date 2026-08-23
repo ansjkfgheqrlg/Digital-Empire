@@ -76,17 +76,17 @@ The café does its noise around us.
 
 Okonjo nods slowly.
 
-"Good," she says, and that's all, and she never asks again, and I find out about eleven months later — from a nurse on a completely unrelated ward, of all places — that she rang Dr. Iyer's team the day she read it, before she ever raised it with me.
+"Good," she says, and that's all, and she never asks again, and I find out about eleven months later, from a nurse on a completely unrelated ward, of all places, that she rang Dr. Iyer's team the day she read it, before she ever raised it with me.
 
 I read the notebook properly in July, on a bench outside the flat, in daylight, with a coffee, like a person reading a book.
 
 Sixty-one entries, fourteen months. I read them in order and it takes four hours and I stop twice.
 
-It is not a horror object. That's what surprises me. Awake, I had been frightened of it — a thing written by a stranger with my hands.
+It is not a horror object. That's what surprises me. Awake, I had been frightened of it: a thing written by a stranger with my hands.
 
 But it isn't a stranger. It's me, obviously, patently, on every page. The same jokes. The same impatience. The same habit of writing *right* at the start of a paragraph when I'm about to make myself do something.
 
-She — I — spent fourteen months going back to a road twice a month in the dark, taking measurements, drawing the bend from memory, noting where the glass wasn't. Sitting in a lay-by. Standing at a gate.
+She, or I, spent fourteen months going back to a road twice a month in the dark, taking measurements, drawing the bend from memory, noting where the glass wasn't. Sitting in a lay-by. Standing at a gate.
 
 Doing, in other words, exactly what I would have done in daylight if I had been able to bear it. Working the problem. It's the only way I know how to be.
 
@@ -96,7 +96,7 @@ The last entry, the one from eleven days before it all came apart, I read four t
 
 *She won't do anything unless she has to.*
 
-I had read that in a record shop storeroom and heard something monstrous in it — a third person, a stranger in my own hand, talking about me.
+I had read that in a record shop storeroom and heard something monstrous in it: a third person, a stranger in my own hand, talking about me.
 
 Sitting on a bench in July I read it and hear my sister.
 
@@ -124,7 +124,7 @@ Fourteen months. Sixty-one entries. And in all of them, the thing that comes off
 
 It's how much she missed her.
 
-I have spent two years believing that what I was carrying was a secret. It wasn't. Or it wasn't only that. Underneath the secret there was just an enormous, ordinary, unspectacular missing, which had nowhere to go because I would not let it out in daylight — so it went out at four in the morning, in a locker in a record shop, in nineteen words about bread.
+I have spent two years believing that what I was carrying was a secret. It wasn't. Or it wasn't only that. Underneath the secret there was just an enormous, ordinary, unspectacular missing, which had nowhere to go because I would not let it out in daylight, so it went out at four in the morning, in a locker in a record shop, in nineteen words about bread.
 
 ---
 

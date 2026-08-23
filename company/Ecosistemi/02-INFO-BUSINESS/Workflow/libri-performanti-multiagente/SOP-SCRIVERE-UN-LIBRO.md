@@ -1,155 +1,99 @@
 # SOP — Scrivere e pubblicare un libro KDP
 
-**Procedura operativa standard.** Vale per ogni libro nuovo, sempre uguale. Chi la esegue:
-Claude (scrittura) + gli script del motore (tutto il resto) + Gael (pubblicazione finale).
-
-**Tempo indicativo per un libro da 120 pagine**: 2-4 ore di lavoro di scrittura, spezzabili
-in più sessioni senza perdere niente.
-
----
-
-## Come si avvia
-
-Dire a Claude: **"scrivi un libro sulla nicchia <X>"** oppure **"riprendi il libro <slug>"**.
-Da lì Claude segue questa procedura senza bisogno di altre istruzioni.
-
----
-
-## STEP 1 — Ricerca nicchia *(automatico)*
-
-```
-python -m engine.amazon_research "cozy mystery cats"
-```
-
-Restituisce i libri concorrenti reali su Amazon: titoli, autori, prezzi, recensioni.
-**Serve a**: capire cosa vende in quella nicchia e con che taglio, non a copiare.
-
-**Fatto quando**: hai una lista di 10-20 concorrenti veri sotto gli occhi.
+> **Questo file non contiene più la procedura.** La procedura vive in **UN SOLO POSTO**:
+> [`.claude/skills/libro/SKILL.md`](.claude/skills/libro/SKILL.md) — la skill `/libro`, cioè
+> quella che viene *eseguita*.
+>
+> **Perché (2026-08-23).** La stessa procedura era scritta per esteso in tre file, e i tre
+> file si erano messi a dire cose diverse:
+>
+> | | SKILL (eseguita) | SOP | ARCHITETTURA |
+> |---|---|---|---|
+> | parole per capitolo | **1600** | 1650 | 1650 |
+> | capitoli per blocco | **8** | 4-6 | 4-6 |
+> | `kdp blocco` (il gate) | 3 volte | **mai nominato** | **mai nominato** |
+>
+> Il gate che ferma i difetti al capitolo 8 invece che al 24 — il pezzo più importante
+> costruito il 19 agosto — non esisteva in due documenti su tre. Un documento che mente è
+> peggio di un documento che manca: chi riprende segue quello sbagliato in buona fede.
+>
+> Da qui in avanti: **la procedura si scrive nella skill**, l'architettura del codice in
+> [`ARCHITETTURA.md`](ARCHITETTURA.md), e questo file tiene solo i comandi.
 
 ---
 
-## STEP 2 — Validazione nicchia *(automatico)*
+## In due righe
 
-```
-python -m engine.story_validator "<titolo di lavoro>" "<descrizione>"
-```
+Il libro lo scrive **Claude in sessione**. Il codice non chiama nessun modello: misura le
+nicchie, impagina, conta le pagine vere sul PDF, valida, impacchetta (cartaceo **e** ebook).
+Gael genera la copertina e carica su KDP.
 
-Blocca diari, planner, journal e affini: non sono storie, vendono male e non è quello che
-stiamo costruendo. Se esce **NO-GO, si cambia idea** — non si forza.
-
-**Fatto quando**: esito GO.
-
----
-
-## STEP 3 — Creazione progetto e outline *(Claude scrive)*
-
-```
-python -m engine.book_project nuovo "<Titolo Del Libro>" --nicchia "<nicchia>"
-```
-
-Crea la cartella del libro. Poi Claude scrive `outline.md` con:
-
-- **Titolo definitivo** — commerciale, chiaro sul genere
-- **Personaggi** — protagonista, comprimari, antagonista: nome + ruolo in una riga ciascuno
-- **Trama in 3 atti** — impianto, sviluppo/complicazione, risoluzione
-- **Scaletta dei 24 capitoli** — una riga per capitolo, cosa succede
-
-L'outline è la mappa: se è solida, i capitoli vengono da sé e restano coerenti.
-
-**Fatto quando**: `outline.md` contiene tutti e quattro i punti sopra.
+Tre tentativi di far scrivere i libri a un programma sono falliti (LM Arena → captcha ×2,
+CLI di Claude → prompt troncati e limite di spesa); il codice di allora sta in
+[`_archivio_automazione_modelli/`](_archivio_automazione_modelli/) con un LEGGIMI.
 
 ---
 
-## STEP 4 — Scrittura capitoli *(Claude scrive, a blocchi)*
+## Tutti i comandi, in ordine di flusso
 
-Un file per capitolo: `capitoli/cap_01.md`, `cap_02.md`, …
+```bash
+# --- una volta, per iniziare -------------------------------------------------
+pip install -r requirements.txt
+python -m playwright install chromium
 
-**Formato di ogni file**:
-```markdown
-# Titolo del capitolo
+# --- FASE 0: magazzino argomenti (una volta a settimana) ---------------------
+python -m engine.kdp nicchie --keywords "cozy mystery cats" "dark academia"
+python -m engine.kdp magazzino                       # cosa c'è di pronto
+python -m engine.kdp magazzino --aggiungi ricerca.json
+python -m engine.kdp magazzino --prendi              # il prossimo da scrivere
 
-Primo paragrafo.
+# --- la nicchia del catalogo (si sceglie UNA volta) --------------------------
+python -m engine.kdp nicchia-stato
+python -m engine.kdp nicchia-scegli --keywords "cozy fantasy bookshop"
+python -m engine.kdp nicchia-confronta --keywords "..." [--applica]
 
-Secondo paragrafo.
+# --- FASI 1-4: il libro ------------------------------------------------------
+python -m engine.kdp nuovo "<Titolo>" --nicchia "<nicchia>" [--autore "<nome>"]
+python -m engine.kdp blocco <slug>       # DOPO OGNI BLOCCO DI CAPITOLI. <1 secondo.
+python -m engine.kdp stato [slug]        # avanzamento + metriche di produzione
+
+# --- FASI 5-6: copertina e consegna -----------------------------------------
+python -m engine.kdp consegna <slug> --cover <copertina.png> [--scrivi-titolo] [--forza]
+
+# --- FASE 7: quando il libro è su KDP ---------------------------------------
+python -m engine.kdp pubblicato <slug> --asin B0XXXXXXXX [--prezzo 13.99]
 ```
 
-**Regole di lavoro**:
-- **4-6 capitoli per volta**, non tutti in una botta: la qualità cala e la sessione si
-  appesantisce.
-- Ogni capitolo **~1500 parole** (24 × 1500 = 36.000 = ~120 pagine).
-- Dopo ogni blocco, aggiornare `riassunti.md` con 2-3 righe per capitolo scritto: è la
-  memoria del libro, permette di riprendere in una sessione nuova senza rileggere tutto.
-- Prima di scrivere un blocco nuovo, **rileggere `outline.md` + `riassunti.md`**: bastano
-  quelli per la continuità.
-
-**Controllo a ogni blocco**:
-```
-python -m engine.book_project stato <slug>
-```
-Dice capitoli scritti, parole totali, pagine stimate e qual è il prossimo capitolo.
-
-**Fatto quando**: 24/24 capitoli e parole ≥ 34.500.
+**Exit code** (uguali per tutti): `0` ok · `1` non pubblicabile · `2` parametri sbagliati ·
+`3` errore di sistema.
 
 ---
 
-## STEP 5 — Copertina *(automatico, LM Arena)*
+## Le sei regole non negoziabili
 
-```
-python -m engine.cover_generator
-```
+Sono le stesse della skill. Cinque su sei hanno una funzione che le fa rispettare e
+**blocca**; la sesta è una decisione, non un controllo.
 
-Genera l'immagine dal titolo e dalla trama del libro. Una sola richiesta: qui LM Arena
-funziona bene (verificato con immagini reali).
+| | Regola | Chi la fa rispettare |
+|---|---|---|
+| 1 | Mai un libro sotto le **115 pagine reali** | `conta_pagine_pdf` + verdetto: blocca |
+| 2 | Mai un capitolo identico o quasi a un altro | `valida_ripetizioni`: blocca |
+| 3 | Mai copiare da un concorrente | nessun controllo: è una scelta di chi scrive |
+| 4 | La coerenza viene da `outline.md` + `riassunti.md` | `kdp blocco`: blocca se i riassunti mancano |
+| 5 | Il codice non chiama modelli | nessun import verso un modello in `engine/` |
+| 6 | Un libro incompleto si finisce prima di aprirne un altro | `kdp stato` lo dice, `--forza` resta dichiarato |
 
-**Fatto quando**: file `.png` reale su disco, > 500 KB, guardato e giudicato adeguato al
-genere.
-
----
-
-## STEP 6 — Assemblaggio e controllo *(automatico)*
-
-```
-python -m engine.book_project assembla <slug> --cover <percorso-copertina.png>
-```
-
-Produce il `.docx` formattato KDP (6×9", margini specchio, numeri di pagina) e **conta le
-pagine vere rileggendo il file salvato**. Se è sotto le 115 pagine **si ferma** e dice
-quanti capitoli mancano — non esiste il caso "dichiarato pronto ma corto" (era il bug
-ricorrente del vecchio workflow: 120 pagine dichiarate, 21 reali).
-
-**Fatto quando**: pacchetto creato in `LIBRI/libri_pronti/<Titolo>/` con manoscritto +
-copertina + metadata.
+E la regola che vale per tutto il testo stampato: **niente lineette lunghe** `—` `–` `--`
+nella narrazione e nel copy KDP. `valida_lineette` e `valida_copy_kdp` bloccano entrambi.
 
 ---
 
-## STEP 7 — Pubblicazione *(manuale, Gael)*
+## Se qualcosa non torna
 
-Caricare su KDP il pacchetto pronto. **Questo passo resta manuale di proposito**: il
-caricamento su un account editoriale reale è meglio che passi da una persona.
-
-Dopo la pubblicazione, spostare la cartella in `LIBRI/libri_pubblicati/`.
-
----
-
-## Riprendere un libro interrotto
-
-Niente si perde: i capitoli sono file su disco.
-
-```
-python -m engine.book_project stato            # elenco di tutti i libri in lavorazione
-python -m engine.book_project stato <slug>     # a che punto è questo
-```
-
-Poi si rileggono `outline.md` e `riassunti.md` e si riparte dal capitolo indicato.
-
----
-
-## Regole non negoziabili
-
-1. **Mai dichiarare finito un libro sotto le 115 pagine reali.** Il controllo è automatico
-   e blocca: non aggirarlo con `--forza` se non per ispezionare una bozza.
-2. **Mai un capitolo identico o quasi a un altro.** Se succede è un errore di processo, non
-   una coincidenza: riscriverlo.
-3. **Mai copiare da un concorrente.** La ricerca serve a capire il mercato, non i testi.
-4. **La coerenza viene da outline + riassunti**, non dalla memoria della sessione: se non
-   sono aggiornati, il libro va in contraddizione al capitolo 12.
+- **`ModuleNotFoundError`** → `pip install -r requirements.txt` (l'elenco è completo e
+  verificato; servono anche **Microsoft Word** per il PDF e **Tesseract** per l'OCR della
+  copertina, che pip non installa).
+- **"Pagine reali NON CONTATE"** → manca Word: senza PDF non si conta niente, e un numero
+  non misurato non vale come misurato.
+- **`validazione.json` con `verifiche_non_eseguite`** → quel controllo *non ha detto di sì*:
+  non è un via libera, è un'assenza. Guarda cosa manca prima di caricare.

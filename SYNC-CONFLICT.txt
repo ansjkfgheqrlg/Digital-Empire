@@ -1,5 +1,0 @@
-﻿[2026-08-23 12:42:55] CONFLITTO DI SYNC
-Pull --rebase fallito: Created autostash: 7ba826b2 CONFLICT (modify/delete): SYNC-CONFLICT.txt deleted in HEAD and modified in a811b42a (sync(Max): aggiornamento automatico 2026-08-22 20:06).  Version a811b42a (sync(Max): aggiornamento automatico 2026-08-22 20:06) of SYNC-CONFLICT.txt left in tree. Auto-merging company/Memory/STATO-EMPIRE.md CONFLICT (content): Merge conflict in company/Memory/STATO-EMPIRE.md Auto-merging company/Memory/checkpoints/CP-20260813-001.md CONFLICT (add/add): Merge conflict in company/Memory/checkpoints/CP-20260813-001.md Auto-merging company/Memory/checkpoints/CP-20260815-001.md CONFLICT (add/add): Merge conflict in company/Memory/checkpoints/CP-20260815-001.md Auto-merging company/Memory/checkpoints/CP-20260818-001.md CONFLICT (add/add): Merge conflict in company/Memory/checkpoints/CP-20260818-001.md Auto-merging company/Memory/checkpoints/CP-20260819-001.md CONFLICT (add/add): Merge conflict in company/Memory/checkpoints/CP-20260819-001.md
-Il tuo lavoro e' al sicuro (committato in locale).
-Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
-Poi cancella questo file.

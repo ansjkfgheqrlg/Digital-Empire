@@ -1,0 +1,50 @@
+[
+  {
+    "nicchia": "cozy fantasy bookshop",
+    "titolo_lavoro": "The Second-Hand Spellbook",
+    "premessa": "Maren eredita dalla prozia una libreria dell'usato in una cittadina di mare, e scopre che i libri del ripiano alto restituiscono a chi li prende in prestito qualcosa che quella persona aveva perso: una parola, una ricetta, un pomeriggio. Deve imparare a gestirli mentre il consiglio comunale vuole demolire l'edificio, e mentre capisce perche' la prozia aveva smesso di prestare quei libri.",
+    "dati_amazon": {
+      "punteggio": 83.1,
+      "recensioni_mediana": 33,
+      "prezzo_medio": 21.19,
+      "concorrenti_deboli": 7,
+      "concorrenti_analizzati": 16,
+      "rilevato_il": "2026-08-20"
+    },
+    "aggiunto_il": "2026-08-20T13:52:59",
+    "stato": "in_uso",
+    "slug_libro": ""
+  },
+  {
+    "nicchia": "dark academia mystery",
+    "titolo_lavoro": "The Winter Term",
+    "premessa": "In un collegio del nord, una borsista al primo anno scopre che la ragazza il cui posto ha preso non si e' ritirata: e' scomparsa a gennaio, e nessuno dei suoi cinque amici racconta la stessa versione. Piu' entra nel loro gruppo, piu' capisce che la sta lasciando entrare per una ragione.",
+    "dati_amazon": {
+      "punteggio": 81.6,
+      "recensioni_mediana": 106,
+      "prezzo_medio": 9.23,
+      "concorrenti_deboli": 7,
+      "concorrenti_analizzati": 16,
+      "rilevato_il": "2026-08-20"
+    },
+    "aggiunto_il": "2026-08-20T13:52:59",
+    "stato": "libero",
+    "slug_libro": ""
+  },
+  {
+    "nicchia": "cozy mystery bakery small town",
+    "titolo_lavoro": "A Death in the Proving Drawer",
+    "premessa": "Una panettiera che ha appena rilevato il forno del paese trova il presidente della pro loco morto nel suo laboratorio, la mattina della sagra. La polizia guarda lei, perche' la ricetta trovata in tasca al morto e' scritta a mano da sua madre, che e' morta da tre anni.",
+    "dati_amazon": {
+      "punteggio": 77.7,
+      "recensioni_mediana": 58,
+      "prezzo_medio": 5.4,
+      "concorrenti_deboli": 9,
+      "concorrenti_analizzati": 16,
+      "rilevato_il": "2026-08-20"
+    },
+    "aggiunto_il": "2026-08-20T13:52:59",
+    "stato": "libero",
+    "slug_libro": ""
+  }
+]

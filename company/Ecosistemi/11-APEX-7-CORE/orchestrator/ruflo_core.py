@@ -304,7 +304,12 @@ class RuFLOOrchestrator:
         """Flusso completo v3 + v4 con parallelismo"""
         print(f"\n[APEX-7] START Workflow: {user_input[:60]}...")
         stages = ["INTAKE", "PARALLEL_EXECUTION", "CRITIQUE", "REFINEMENT", "OUTPUT"]
-        current_context = {"input": user_input, "context": context or {}, "critique_score": 0, "task_id": str(uuid.uuid4())}
+        # B-014: il task_id deve sopravvivere ai restart. Il router conta i giri
+        # su questa chiave e, rigenerandola a ogni ricorsione, un punteggio di
+        # critica < 4.0 faceva ripartire il workflow all'infinito: il guard-rail
+        # dei 3 giri in DynamicWorkflowRouter non poteva mai scattare.
+        task_id = (context or {}).get("_apex7_task_id") or str(uuid.uuid4())
+        current_context = {"input": user_input, "context": context or {}, "critique_score": 0, "task_id": task_id}
 
         # STAGE 1
         stage = "INTAKE"
@@ -316,7 +321,12 @@ class RuFLOOrchestrator:
         # Simulate agent execution with dynamic routing
         for stage in stages:
             self.event_bus.publish_sync("stage_start", {"stage": stage})
-            print(f"[FLOW] → {stage}")
+            # B-013: output ASCII. Questa e' una libreria: la freccia unicode
+            # faceva cadere execute_workflow con UnicodeEncodeError su qualsiasi
+            # chiamante con stdout cp1252 (console Windows), nel percorso
+            # principale e non su un ramo d'errore. Chi vuole i caratteri belli
+            # forza UTF-8 nel proprio entry point, come fa main.py.
+            print(f"[FLOW] -> {stage}")
 
             if stage == "PARALLEL_EXECUTION":
                 # Esecuzione parallela reale
@@ -351,7 +361,12 @@ class RuFLOOrchestrator:
                         break
                     elif next_stage == "INTAKE":
                         print("[ROUTER] Score <4.0, restarting workflow...")
-                        return await self.execute_workflow(user_input, context)
+                        # B-014: si porta dietro il task_id, cosi' il router
+                        # conta questo restart e al giro dopo raffina invece di
+                        # ripartire da capo per sempre.
+                        restart_context = dict(context or {})
+                        restart_context["_apex7_task_id"] = task_id
+                        return await self.execute_workflow(user_input, restart_context)
 
             elif stage == "REFINEMENT":
                 refiner_task = next((t for t in tasks if t.agent == "refiner"), None)

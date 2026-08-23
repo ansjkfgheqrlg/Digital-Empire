@@ -52,9 +52,9 @@ I stand in the middle of the car park in the February dark that starts at four i
 
 Then I walk round the back.
 
-The greenhouse is there, or a third of it — a rusted frame with most of the glass gone, standing in a rectangle of gravel that the storage company clearly ran out of budget before dealing with. There's a chain-link fence with a gap in it. There's a shopping trolley on its side, which is the international symbol for a place nobody comes to.
+The greenhouse is there, or a third of it: a rusted frame with most of the glass gone, standing in a rectangle of gravel that the storage company clearly ran out of budget before dealing with. There's a chain-link fence with a gap in it. There's a shopping trolley on its side, which is the international symbol for a place nobody comes to.
 
-There's nothing here. Of course there's nothing here. What did I think I would find — a door with 47 on it and my sister's handwriting on a label?
+There's nothing here. Of course there's nothing here. What did I think I would find, a door with 47 on it and my sister's handwriting on a label?
 
 I put my hands over my face and stand in the gravel and I don't cry, because I haven't managed that since the second week, but I do the thing that happens instead, which is a kind of dry shaking that goes on for a minute and then stops.
 
@@ -96,7 +96,7 @@ Adrian is on the stairs when I get back to the flats, sitting on the third step 
 
 "Thursday. Farrow Street. Coffee at an hour that suits a person who works nights." He watches my face. "You said you'd bear it in mind. I'm aware that's not a yes. I've been sitting here for eleven minutes calling it a maybe."
 
-Under any other circumstance I would say no. I have said no to every invitation issued to me since December of last year — my mother's, Priya's, the counselling group's, twice.
+Under any other circumstance I would say no. I have said no to every invitation issued to me since December of last year: my mother's, Priya's, the counselling group's, twice.
 
 I hear myself say: "Not coffee."
 

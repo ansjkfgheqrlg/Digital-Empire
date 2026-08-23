@@ -1,4 +1,4 @@
-# STATO EMPIRE -- aggiornato 2026-08-23 (Claude: WIKI — trovato e colmato buco reale di 16gg tra 06 e 22 agosto (16 checkpoint di lavoro reale mai riversati nella wiki), causa identificata (due sistemi di memoria paralleli, solo company/Memory rispettato sempre), colmato lo scope agosto su richiesta di Max, resto dell'estate in backlog B-013; NERVE-SOLVE reso davvero automatico via terzo hook UserPromptSubmit — CP-20260823-001 · Claude: NERVE-SOLVE — Orchestration Layer 1 (Problem Solving Engine) estratto e implementato come skill Claude Code operativa (`.claude/skills/nerve-solve/`), primo di 3 sistemi nervosi pianificati per il Modello Internet Artificiale della holding; scartato il kernel Python crittografico orfano della fonte (mai completato, motore reasoning mai costruito) — CP-20260822-001 · Claude: YOUTUBE-AUTOMATION-FACTORY — PRIMO VIDEO REALE PUBBLICATO su @Legamidiamore (youtu.be/2t4BZR3KAiU, scelta deliberata di Max: Public non Private), upload finale completato a mano da Max dopo pipeline 100% automatizzata — CP-20260818-001 · Claude: YOUTUBE-AUTOMATION-FACTORY — credential-keeper + wiring reale Legami d'Amore, voce femminile/upload/skip-thumbnail/tag SEO/freschezza video cablati — CP-20260815-001 · Claude: wrapper pubblicazione IG caroselli Preventa, dry-run verificato, filone salvato dopo 6gg scoperto solo in chat — CP-20260812-001 ·
+# STATO EMPIRE -- aggiornato 2026-08-23 (Claude: WORKFLOW LIBRI — audit completo e riparazione: il gate delle pagine diventava verde quando il PDF non si faceva, le lineette non venivano controllate nel copy (5 gia' consegnate), "mai un capitolo uguale a un altro" era una regola senza controllo; aggiunti EPUB, paratesto (copyright/recensione/Also by), `kdp pubblicato --asin`, metriche di produzione, disciplina di nicchia bloccante; 127 test verdi (prima non giravano: mancavano 3 dipendenze su 6) — CP-20260823-002 · Claude: WIKI — trovato e colmato buco reale di 16gg tra 06 e 22 agosto (16 checkpoint di lavoro reale mai riversati nella wiki), causa identificata (due sistemi di memoria paralleli, solo company/Memory rispettato sempre), colmato lo scope agosto su richiesta di Max, resto dell'estate in backlog B-013; NERVE-SOLVE reso davvero automatico via terzo hook UserPromptSubmit — CP-20260823-001 · Claude: NERVE-SOLVE — Orchestration Layer 1 (Problem Solving Engine) estratto e implementato come skill Claude Code operativa (`.claude/skills/nerve-solve/`), primo di 3 sistemi nervosi pianificati per il Modello Internet Artificiale della holding; scartato il kernel Python crittografico orfano della fonte (mai completato, motore reasoning mai costruito) — CP-20260822-001 · Claude: CP-7 CHIUSO — The Second-Hand Spellbook, terzo libro, 115 pagine reali PUBBLICABILE in 48 minuti; il gate ha bocciato 3 volte (scrivo corto in fretta) e la prova ha falsificato CP-3 — CP-20260820-001 · Claude: UN LIBRO IN MEZZ'ORA — CP-1..CP-6 fatti (gate `kdp blocco` a 0,06s, bersaglio al centro, codice 41s->27,6s), CP-7 prova cronometrata in sospeso: manca l'argomento — CP-20260819-002 · Claude: piano kdp_workflow — prese le 3 parti deterministiche (troncamento, copy BISAC/bio/HTML, scheda ispirazione), rifiutata l'architettura con model_caller gia' archiviata; 77 test verdi — CP-20260819-003 · Claude: NIENTE LINEETTE LUNGHE nei libri (regola Gael) + The Ninth Winter e The Quiet Hours entrambi PUBBLICABILE con PDF, copertina e copy — CP-20260818-002 · Claude: YOUTUBE-AUTOMATION-FACTORY — PRIMO VIDEO REALE PUBBLICATO su @Legamidiamore (youtu.be/2t4BZR3KAiU, scelta deliberata di Max: Public non Private), upload finale completato a mano da Max dopo pipeline 100% automatizzata — CP-20260818-001 · Claude: PDF SEMPRE + stima pagine corretta a 320 parole/pagina — la regola "1500 parole a capitolo" produceva libri sotto il minimo di 115 pagine; The Ninth Winter a 36.814 parole / 115 pagine reali — CP-20260817-002 · Claude: THE NINTH WINTER FINITO — 24/24 capitoli, 34.897 parole, dentro il target; prima verifica end-to-end del flusso "lo scrivo io", manca solo la copertina — CP-20260817-001 · Claude: LIBRI KDP — CAMBIO DI MODELLO: il libro lo scrive Claude in sessione, il Python smette di chiamare modelli e diventa attrezzatura; Arena archiviata dopo 3 tentativi falliti; 60 test verdi (prima la suite andava in timeout) — CP-20260815-002 · Claude: LIBRI KDP tornano su LM Arena — flusso a 5 fasi costruito tranne l'aggancio, bloccato in attesa della prova sul captcha (Fase 0 da lanciare al PC), 83 test verdi — CP-20260815-003 · Claude: YOUTUBE-AUTOMATION-FACTORY — credential-keeper + wiring reale Legami d'Amore, voce femminile/upload/skip-thumbnail/tag SEO/freschezza video cablati — CP-20260815-001 · Claude: APEX-7 CALC LAYER — calcolatore a 16 moduli (probabilità, royalty KDP, rendimenti), ponte JSON predisposto verso gli altri layer, 39+49+4 test verdi — CP-20260814-003 · Claude: KDP 4 STEP — primo giro end-to-end, STEP 0/1 verdi su Amazon reale, STEP 2 scriveva col modello sbagliato (wrapper .cmd), 47 test verdi, bloccato sul limite di spesa — CP-20260814-001 · Claude: APEX-7 — i 3 stream di produzione passano dai 7 gate, main.py riparte su Windows, censimento chiuso con ADR-011, 49+4+11 test verdi — CP-20260813-002 · Claude: ORCHESTRATION LAYER APEX-7 innestato in 11-APEX-7-CORE — 7 quality gate che bloccano davvero, motore condiviso intatto, 46/46 test — CP-20260813-003 · Claude: wrapper pubblicazione IG caroselli Preventa, dry-run verificato, filone salvato dopo 6gg scoperto solo in chat — CP-20260812-001 ·
 Claude: PRIMO LIBRO KDP COMPLETO — "The Quiet Hours", 115 pagine reali + copertina, pacchetto pronto — CP-20260808-002 · Claude: Aureus — pulsante unico "Produci video + copertina", catena YouTube Factory incatenata e verificata — CP-20260808-001 · Claude: PIANO KDP — LM Arena abbandonato per il testo (captcha non aggirabile), si passa a Claude, copertine restano su LM Arena — CP-20260807-001 · Claude: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005 · Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-003 · Claude: Arsenale Caroselli, libreria output per prodotto — CP-20260806-002 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
 
 ## 📋 2026-08-23 — CLAUDE: cadenza task Gael passa da giornaliera a settimanale — 3 task W1 assegnate
@@ -23,6 +23,71 @@ Dettaglio completo in [`company/Memory/tasks/TASK-GAEL-20260824-SETTIMANA-01.md`
 
 **RIPRESA DA**: fine Settimana 1 (dom 30 ago) — checkpoint di chiusura con stato reale delle 3
 task (fatto/parziale/bloccato), poi si emette la Settimana 2.
+
+---
+
+## 🔧 2026-08-23 — CLAUDE: WORKFLOW LIBRI — l'audit ha trovato gate che tacevano, e sono stati chiusi — CP-20260823-002
+
+Gael ha chiesto prima l'analisi del workflow, poi: *"non posso fare nulla a livello
+economico, risolvi tutti gli errori e migliora le cose strutturali e interne"*. Nessun
+upload, nessuna spesa: solo quello che si fa dentro il repository.
+
+**L'attrezzatura non partiva.** `python -m engine.kdp stato` moriva con
+`ModuleNotFoundError: No module named 'docx'`: `requirements.txt` dichiarava **3 dipendenze
+su 6**. Quindi anche gli "85 test verdi" citati in tre checkpoint non erano riproducibili —
+pytest non era installato. Ora l'elenco e' completo e la suite gira: **127 test verdi**.
+
+**Tre difetti veri nei controlli:**
+
+1. **Il gate delle pagine diventava verde in silenzio.** `if pagine_reali and pagine_reali <
+   minimo`: con il PDF non prodotto (Word assente) il controllo spariva e il libro usciva
+   `pubblicabile: true` **senza che nessuno avesse contato una pagina**. E' il difetto
+   originale del progetto (120 pagine dichiarate, 21 reali) rientrato da un ramo che nessuno
+   guardava. Ora `None` **blocca**, ed esiste la quarta categoria `verifiche_non_eseguite`:
+   un controllo che non ha potuto girare **non ha detto di si'**.
+2. **Le lineette non venivano controllate nel copy**: 3 nella descrizione di The Ninth Winter
+   e 2 in quella di The Quiet Hours, **gia' consegnate**, cioe' nel testo che si legge prima
+   di comprare. Tolte riscrivendo le frasi; `valida_copy_kdp` ora blocca (con i limiti veri
+   della form KDP).
+3. **"Mai un capitolo identico o quasi a un altro" era l'unica delle sei regole non
+   negoziabili senza una funzione che la facesse rispettare.** Soglie misurate su 828
+   confronti fra capitoli veri: massimo legittimo **2,72%**, un capitolo ricopiato a meta'
+   da' **98,8%**, si blocca al 15%.
+
+**Cosa mancava del tutto: l'ebook.** `grep -ri epub` sul progetto dava **zero**. Il pacchetto
+era solo cartaceo, mentre nei nostri generi il volume sta nell'ebook. Nuovo `engine/epub.py`
+con la sola libreria standard; la copertina viene alleggerita perche' su Kindle la consegna
+si paga a MB (**258/391/465 KB** invece di 2,6/4,8/6,3 MB). E il libro **non chiedeva la
+recensione a nessuno**: aggiunte pagina di copyright, richiesta di recensione, "Also by" e
+bio, con uno stile dedicato per non farle contare nel conteggio parole.
+
+> **Il "Also by" esce vuoto su tutti e tre i libri**: sono firmati con tre nomi d'autore
+> diversi, in tre nicchie diverse, e **nessuna e' la nicchia attiva del catalogo**.
+> `nicchia_attiva.py` esisteva da 12 giorni e nessun percorso di codice lo interrogava. Ora
+> `kdp nuovo` rifiuta (exit 2) una nicchia diversa senza `--motivo`.
+
+**Lo step mai eseguito**: "sposta la cartella a mano in `libri_pubblicati/`" era scritto in
+tre documenti e dopo tre libri quella cartella conteneva solo il `.gitkeep`. Nuovo
+`kdp pubblicato <slug> --asin`, che copia i sorgenti nel pacchetto, **li verifica byte per
+byte** e solo allora cancella la lavorazione.
+
+**E il tempo, che non misurava nessuno**: nuovo `metriche.json` per libro, cosi' "un libro in
+mezz'ora" diventa una misura invece che un ricordo scritto dopo.
+
+**I tre documenti si contraddicevano** (SKILL 1600 parole/8 capitoli e `kdp blocco`;
+SOP e ARCHITETTURA 1650/4-6 e il gate **mai nominato**). Risolto alla radice: la procedura
+vive solo nella skill, ARCHITETTURA e' la mappa del codice, la SOP e' un puntatore.
+
+**I tre pacchetti riconsegnati PUBBLICABILE con EPUB**: 119 / 118 / 118 pagine reali.
+Il codice e' finito nel commit `30a23a33` (raccolto dal sync automatico).
+
+**Tesseract installato** (winget, v5.4.0, nel percorso che il codice cerca gia'): titolo di copertina letto **3 su 3** in meno di mezzo secondo, e i tre pacchetti riconsegnati escono con **`verifiche_non_eseguite: 0`** — la prima volta che ogni controllo bloccante della consegna gira per davvero. B-016 chiuso.
+
+**RIPRESA DA:** invariata e ora unica: **caricare i tre libri su KDP**, poi
+`kdp pubblicato <slug> --asin B0…` per ognuno. Poi la decisione che vale piu' di ogni
+modifica al codice: **una nicchia e un solo nome d'autore** per i prossimi libri. Da rivedere
+anche il prezzo di The Ninth Winter ($12.99 contro una media misurata di $5.95). Dettagli in
+[CP-20260823-002](checkpoints/CP-20260823-002.md).
 
 ---
 
@@ -94,6 +159,129 @@ richiesta esplicita di Max, in sessione dedicata. Dettaglio in
 
 ---
 
+## 📚 2026-08-20 — CLAUDE: CP-7 CHIUSO — terzo libro in 48 minuti, e la prova ha smentito un pezzo del piano — CP-20260820-001
+
+**The Second-Hand Spellbook: 24/24, 38.110 parole, 115 pagine reali, PUBBLICABILE** con
+copertina, copy e scheda ispirazione. Terzo libro del catalogo.
+
+**48 minuti, non 30, e il perché è misurato.** Il gate ha bocciato **tre volte**, sempre per
+lo stesso difetto: i capitoli uscivano corti (1.357, poi **1.099**, poi 1.436 contro un
+bersaglio di 1.600). Ogni giro ~6 minuti di allungamento: 18 minuti, che sono esattamente lo
+scarto. Non è il flusso che non funziona, è il flusso che **presenta il conto tre volte
+invece di una**. Il difetto è mio e ora è quantificato: **scrivo corto quando scrivo in
+fretta.**
+
+**CP-3 falsificato dal libro stesso.** L'assunzione "la stima è accurata entro 1 pagina,
+quindi il PDF si fa una volta sola" è caduta: qui la stima diceva 117,3 pagine e il PDF ne
+ha date **113**, sotto il minimo. Il rapporto dipende dallo stile (318 / 323 / **331** p/pag
+sui tre libri). Corretto: il PDF va generato **prima** della consegna finale per tarare.
+Il criterio di rinuncia era scritto nel piano e si è attivato.
+
+Il gate, usato per davvero, ha trovato anche **due bug suoi** (NameError sulla costante di
+uscita; il consiglio che rimandava al ritmo del minimo invece che del bersaglio, cioè CP-2
+che contraddiceva CP-1). Lo scraper Amazon **funziona senza login manuale**: magazzino
+riempito, 2 argomenti ancora liberi. 85 test verdi.
+
+**RIPRESA DA:** caricare i **tre** libri su KDP e spostarli in `libri_pubblicati/`.
+**⚠️ CORREZIONE 2026-08-23 (Gael, verifica sui file):** la riga qui sopra diceva
+"copertine a 139 e 171 DPI, da rigenerare" — **è obsoleta, non rifare quel lavoro.**
+Misurate tutte e tre sui byte dei PNG: **1800×2700 = 300 DPI esatti**, già a norma KDP
+(rigenerate in `03b031ee` 18/08 e `6631c83e` 20/08). Verificato anche il resto del pacchetto:
+PDF a **116 / 115 / 115** pagine reali (minimo 115) e i tre gate `pubblicabile=true` con
+**0 bloccanti**. Nessun ostacolo tecnico all'upload: i tre pacchetti sono completi.
+Prossimo libro: dark academia mystery, già in magazzino, mirando a
+**1.750 parole/capitolo** per atterrare a 1.600. Dettagli in
+[CP-20260820-001](checkpoints/CP-20260820-001.md).
+
+---
+
+## ⏱️ 2026-08-19 — CLAUDE: UN LIBRO IN MEZZ'ORA — CP-1..CP-6 fatti, CP-7 in sospeso — CP-20260819-002
+
+Gael chiede un libro in **massimo 30 minuti**. Misurato prima di toccare niente: **il codice
+costa 41 secondi**, il 2% del budget. Il tempo se lo mangia la **rilavorazione**, provata
+dalla cronologia git — The Quiet Hours scritto in 18 minuti, uscito a 84 pagine e
+**riscritto intero** il giorno dopo; The Ninth Winter con i primi 8 capitoli a 1.041 parole,
+difetto scoperto al capitolo **24**.
+
+**Fatti e verificati:** bersaglio portato al **centro** della finestra (1600 par./cap =
+38.400 = 120 pagine, ±1.600 di margine; prima 1500 = 112 pagine, *sotto il minimo*); nuovo
+**`kdp blocco`** che gira in **0,06s** e ferma i difetti a metà libro; riassunti a formato
+fisso con lista **Fili aperti** (−72% di peso); copertina consegnata in Fase 3 invece che a
+libro finito; codice **41s → 27,6s**.
+
+> **La verifica che regge il piano**: recuperato da git lo stato reale del 13 agosto e
+> passato al gate. Boccia tutti e tre i difetti storici — proiezione a 25.176 parole contro
+> un minimo di 36.800, 37 lineette, riassunti mancanti. Gli stessi scoperti al capitolo 24.
+
+**Non fatto: CP-7, la prova cronometrata.** Serve un argomento e il magazzino è vuoto:
+finché non gira, **i 30 minuti sono una previsione, non un fatto**. 85 test verdi.
+
+**RIPRESA DA:** `/libro ricerca` per avere un argomento, poi la prova a cronometro. Resta
+aperta la copertina di The Ninth Winter da rigenerare a ≥1600×2400 (ora 832×1248 = 139 DPI
+contro i 300 di KDP). Dettagli in [CP-20260819-002](checkpoints/CP-20260819-002.md).
+
+---
+
+## 🧩 2026-08-19 — CLAUDE: PIANO "kdp_workflow" — preso il buono, rifiutata l'architettura archiviata — CP-20260819-003
+
+Gael ha portato un piano per un nuovo `kdp_workflow/` con `model_caller` + `anthropic` SDK e
+capitoli generati **in parallelo**: è l'architettura archiviata il 15/08 dopo tre fallimenti.
+Non l'ho costruita in silenzio né rifiutata in blocco — ho verificato, elencato i difetti
+concreti e chiesto. Gael ha scelto **"porta solo le parti buone"**.
+
+**Difetti reali nel piano** (non obiezioni di principio): `min_chapter_words: 800` → 60 pagine
+contro un minimo di 115, e nessun conteggio pagine; la **generazione parallela distrugge la
+continuità** perché `prev.content` è vuoto sotto `asyncio.gather`; il `CircuitBreaker` è
+**codice morto** (`record_failure()` mai chiamato); il rilevatore di troncamento boccia le
+virgolette sbilanciate, che in narrativa sono normali. E **mancava un terzo del piano**,
+troncato due volte a 50.000 caratteri.
+
+**Innestato in `engine/`, zero chiamate a modelli:** (1) `valida_troncamento()` bloccante —
+0 falsi positivi sui 48 capitoli veri; (2) copy KDP con **BISAC, bio autore, HTML, prezzo**;
+(3) `engine/ispirazione.py` → `ISPIRAZIONE.json`+`.txt` nel pacchetto.
+
+**Scostamento dichiarato**: l'unità è la **nicchia**, non il singolo concorrente. Il piano
+chiedeva un ASIN, ma il dato che misuriamo davvero è aggregato — riempirlo avrebbe voluto
+dire inventarlo. Numeri presi per copia da `_ricerca_nicchie/`.
+
+Controllori da 6 a 8 (6 bloccanti). 77 test verdi. Entrambi i libri riconsegnati
+PUBBLICABILE: 116 e 115 pagine reali.
+
+**RIPRESA DA:** invariata — la copertina di Gael è **832×1248** (139 DPI reali contro i 300
+di KDP), da rigenerare a ≥1600×2400. Poi caricare i due libri e spostarli in
+`libri_pubblicati/`. Il magazzino è **vuoto**: serve `/libro ricerca`. Dettagli in
+[CP-20260819-003](checkpoints/CP-20260819-003.md).
+
+---
+
+## ✍️ 2026-08-18 — CLAUDE: NIENTE LINEETTE LUNGHE + I DUE LIBRI PRONTI DAVVERO — CP-20260818-002
+
+**Regola nuova di Gael:** nei libri non ci devono essere lineette lunghe `—`. Sono la firma
+più riconoscibile della scrittura automatica. **Restano** i trattini delle parole composte
+(`twenty-nine`: in inglese è ortografia) e **restano** quelle dentro le virgolette (la parola
+tagliata a metà nel discorso diretto). `valida_lineette()` guarda solo la narrazione e
+**blocca**. Applicata a mano su **193 righe**, caso per caso: virgola, punto, due punti o
+parentesi a seconda di cosa faceva la lineetta.
+
+Togliere lineette **accorcia**: The Ninth Winter è finito 125 parole sotto il minimo e il
+controllo l'ha bocciato. Invece di gonfiare ho chiuso l'ultimo filo aperto, **Emma Stoltzfus**.
+
+**E consegnando ho trovato tre difetti**: (1) il **copy non c'era su nessuno dei due libri**,
+scritta la Fase 5 per entrambi; (2) **cartelle doppie** per lo stesso libro — correggendolo ho
+distrutto la copertina di The Quiet Hours, che stava dentro la cartella cancellata, recuperata
+solo perché era su git; (3) l'**OCR bocciava una copertina corretta** (`FE ee eeeely ee er TN`
+da un titolo leggibilissimo), ora fa più letture: 3/3 su entrambe.
+
+**Entrambi PUBBLICABILE**, con PDF, copertina e copy: The Ninth Winter 36.853 parole / 116
+pagine reali, The Quiet Hours 37.150 / 115. 69 test verdi.
+
+**RIPRESA DA:** la copertina di Gael è **832×1248**, cioè 139 DPI reali contro i 300 che KDP
+chiede: ottima in miniatura, **morbida sul cartaceo**. Da rigenerare a ≥1600×2400 con lo stesso
+prompt, poi ricaricare. Poi il magazzino è **vuoto**: serve `/libro ricerca`. Dettagli in
+[CP-20260818-002](checkpoints/CP-20260818-002.md).
+
+---
+
 ## 🎬 2026-08-18 — CLAUDE: YOUTUBE-AUTOMATION-FACTORY — video-01 pronto al 100%, upload finale da fare a mano — CP-20260818-001
 
 Sessione lunga interamente dedicata a portare il primo video reale (`VIDEO-PRONTI/video-01/`)
@@ -125,6 +313,169 @@ completi in [CP-20260818-001](checkpoints/CP-20260818-001.md).
 
 ---
 
+## 📏 2026-08-17 — CLAUDE: PDF SEMPRE, E LA STIMA PAGINE ERA SBAGLIATA — CP-20260817-002
+
+Richiesta di Gael: *"i libri devi darmeli sempre in PDF"*. Fatto — `kdp consegna` ora
+produce **sempre** `.docx` **e PDF** e conta le pagine vere, anche senza copertina (prima il
+PDF nasceva solo dentro `create_book_package`, che la copertina la pretende: il numero vero
+si vedeva solo a fine corsa).
+
+**E la richiesta ha scoperto un difetto serio.** `WORDS_PER_PAGE_ESTIMATE = 300` sbagliava
+di ~6% **per eccesso di pagine**, cioè nella direzione pericolosa: *The Ninth Winter* era
+passato dal controllo parole con 34.897 parole dichiarate **"116,3 pagine"**, e il PDF ne
+aveva **111** — sotto il minimo di 115, non pubblicabile. Misurato su due libri veri
+impaginati: The Quiet Hours 324 p/pag, The Ninth Winter 320. Costante portata a **320** (il
+più basso dei due), minimo parole da 34.500 a **36.800**. Ora stima e PDF coincidono: 115.
+
+**La parte che conta**: la regola scritta in SOP + ARCHITETTURA + skill `/libro` diceva
+"~1500 parole a capitolo" = 36.000 parole = **112 pagine**. Cioè *un libro scritto seguendo
+le istruzioni alla lettera finiva sotto il minimo*. Corretto a **1650**, con l'obbligo di
+verificare la lunghezza media **al primo blocco di capitoli**, non a fine libro.
+
+Libro portato a **36.814 parole / 115 pagine reali** con tre scene che chiudevano fili
+davvero aperti (consegna prove a Cruz + deposizione di Miriam; le famiglie che tornano; la
+restituzione ai cinque uomini). Nessun riempitivo. 60 test verdi in 1,96s. Commit `9c287ed3`,
+pushato.
+
+**RIPRESA DA:** invariata — serve la **copertina di Gael** (prompt pronto in
+`LIBRI/in_lavorazione/the-ninth-winter/copertina-prompt.md`), poi
+`python -m engine.kdp consegna the-ninth-winter --cover <png>`. Dopo, il magazzino argomenti
+è **vuoto**: serve un `/libro ricerca`. Dettagli in
+[CP-20260817-002](checkpoints/CP-20260817-002.md).
+
+---
+
+## 📕 2026-08-17 — CLAUDE: THE NINTH WINTER FINITO — CP-20260817-001
+
+**Prima verifica end-to-end del modello "lo scrivo io"** — e non su un caso ideale: sul
+libro fermo dal 13 agosto a **8 capitoli su 24**, con un difetto dentro. Il flusso ha retto,
+e il codice non ha mai chiamato un modello.
+
+**Prima di scrivere una riga**, due cose che il flusso impone ed erano state saltate:
+`riassunti.md` **non era mai stato aggiornato** (conteneva solo il segnaposto) — ricostruito
+rileggendo tutti e 8 i capitoli, perché senza, il capitolo 9 sarebbe stato scritto alla cieca
+ed è **esattamente il caso in cui nessun controllo automatico si accorge di niente**. E la
+scaletta divergeva dalla trama vera (l'outline metteva ai cap. 9 e 11 cose già avvenute ai
+cap. 4, 6 e 7): riallineata dichiarandolo.
+
+**Il gate ha fatto il suo lavoro, e ha migliorato il prodotto.** A 24/24 il libro era a
+34.347 parole: **153 sotto il minimo di 34.500** che la consegna blocca. Invece di gonfiare
+ho chiuso un arco davvero rimasto aperto — Efrain, che al capitolo 15 aveva chiesto di essere
+ricontattato ad aprile e non aveva mai avuto una scena di chiusura. Risultato: **34.897
+parole, dentro il target, e un libro migliore**. È il miglior argomento che abbia contro
+l'idea di aggirare un gate con `--forza`.
+
+```
+[assembla] 34897 parole = 116.3 pagine @300wpp (target 34500-37500) — OK entro il target
+```
+
+**Il difetto vero era il ritmo dei capitoli**, non la trama: i primi 8 stavano a ~1.030
+parole, e a quel passo il libro chiudeva a ~25.000 — sotto il minimo, senza che nessuno se ne
+accorgesse fino alla consegna. Da ricordare: **la lunghezza per capitolo si controlla al primo
+blocco, non a fine libro.**
+
+Scritto anche **`ARCHITETTURA.md`** (struttura dei file, flusso a 7 fasi, chi controlla cosa),
+dichiarando la scelta di **non inventare una gerarchia di agenti software che si parlano**:
+sarebbe una finzione, ed è già stata costruita qui una volta (95+ agenti, zero automazione
+reale). Gli attori sono tre — Claude, l'attrezzatura, Gael — e ogni fase ha un esecutore e un
+controllore che **blocca davvero**.
+
+**RIPRESA DA:** manca solo la **copertina**. `copertina-prompt.md` è pronto — prompt completo
+di scena, palette, stile, composizione **e testo** (titolo, sottotitolo, autore) da far
+disegnare al modello di immagini. Gael genera il PNG, poi
+`python -m engine.kdp consegna the-ninth-winter --cover <png>` produce il pacchetto in
+`libri_pronti/` con PDF e **pagine vere contate dal PDF**. Dopo di che il magazzino argomenti
+è **vuoto**: serve un `/libro ricerca` prima di cominciare il prossimo libro. Dettaglio in
+[CP-20260817-001](checkpoints/CP-20260817-001.md).
+
+---
+
+## ✍️ 2026-08-15 — CLAUDE: IL LIBRO LO SCRIVE CLAUDE IN SESSIONE — CP-20260815-002
+
+Gael ha chiuso la questione: *"quando usi Python ti costringi per forza ad utilizzare le api
+e non puoi più utilizzare te stesso... tu devi farlo tu, è un workflow per te"*.
+
+**Tre tentativi di far scrivere i libri a un programma, tutti falliti**: LM Arena via
+Playwright (captcha — il capitolo 1 andato in captcha 4 volte consecutive, *dopo* la difesa
+"chat nuova per richiesta"), Claude CLI con Haiku (wrapper `.cmd` che troncava i prompt e
+faceva sparire `--model haiku`, poi limite di spesa), e di nuovo Arena (fermato prima di
+ripercorrerla). **Nessuno dei tre ha mai prodotto un libro finito.** L'unico libro completo
+mai uscito da questo progetto — *The Quiet Hours*, 115 pagine reali — era nato l'8 agosto
+**scrivendolo in sessione**. Questo lavoro torna lì e lo formalizza.
+
+**Costruito**: `copertina_kdp.py` (porta a norma KDP una copertina che genera **Gael**, dal
+prompt lunghissimo e completo — testo incluso — che scrivo io); `magazzino.py`, il "flusso
+atemporale" con 7 argomenti pronti dove entra **solo** ciò che ha numeri Amazon veri ed è una
+**storia**; la skill **`/libro`**.
+
+**Segnalata una conseguenza non ovvia**: `aggiungi_titolo()` stampava il titolo con Pillow
+*proprio perché* i modelli sbagliavano le lettere ("New Voicemail" invece di "1 New
+Voicemail"). Ora che il titolo lo disegna il modello di immagini, quel passo va saltato o il
+titolo compare due volte.
+
+**Archiviati** con `git mv` (storia preservata, **niente cancellato**) 8 moduli e 3 test —
+ma **prima** salvati i comandi nicchia, `estrai_titolo` e ~29 test ancora validi. Il grep ha
+poi scovato 3 residui reali che sarebbero esplosi a runtime (`session_manager` importava un
+modulo archiviato).
+
+**Verificato**: **60 test verdi in 5 secondi — prima la suite andava in TIMEOUT** (un test
+apriva una sessione Playwright vera). `grep` su `engine/` e `tests/`: nessun riferimento
+operativo a un modello, cioè il principio è rispettato dal codice, non solo dichiarato.
+
+**RIPRESA DA:** finire **`the-ninth-winter`** — 8 capitoli su 24, ~1.040 parole a capitolo
+(sotto il target di 1.500), e `riassunti.md` **mai aggiornato**: prima del capitolo 9 vanno
+ricostruiti i riassunti rileggendo i capitoli esistenti, altrimenti il libro va in
+contraddizione e nessun controllo automatico se ne accorge. È anche la prova end-to-end più
+onesta del flusso nuovo. Dettaglio in [CP-20260815-002](checkpoints/CP-20260815-002.md).
+
+---
+
+## 📚 2026-08-15 — CLAUDE: LIBRI KDP TORNANO SU LM ARENA — CP-20260815-003
+
+Gael: la scrittura dei libri **non deve più passare da Claude** (né CLI né API). Si torna a
+LM Arena via Playwright, con un flusso a 5 fasi dettato passo per passo: libro da copiare →
+piano di produzione (sommario capitoli **e** prompt copertina) → capitoli uno alla volta in
+Direct/Max con staging su Google Doc → copertina dal prompt del piano → copy KDP nella
+stessa chat dei capitoli. Più "team di agenti che controllano ogni fase".
+
+**Prima di costruire ho letto i LOG REALI**, non la documentazione. Le uniche 3 sessioni in
+cui questo progetto ha davvero parlato con Arena dicono che, anche **dopo** la difesa
+anti-captcha "chat nuova per ogni richiesta", il capitolo 1 è andato in captcha **4 volte
+consecutive** (risolto a mano, ripresentato ogni volta), e che perfino le copertine — 1 solo
+invio a libro — l'hanno incontrato in 2 sessioni su 3. Questo **contraddice** la nota in
+`_archivio_testo_lmarena/LEGGIMI.md` ("le copertine non hanno mai dato problemi"), scritta
+lo stesso giorno del secondo episodio.
+
+**Un vincolo nascosto, verificato di persona**: `lmarena_client.send_text_prompt` chiamava
+`start_new_chat` **incondizionatamente a ogni invio**. Quindi "il copy nella STESSA chat dei
+capitoli" era **impossibile** senza toccare il codice — non un dettaglio, un pezzo della
+richiesta che nessuno aveva notato essere irrealizzabile.
+
+**Conseguenza sul metodo**: il piano parte da una **Fase 0** che misura con 6 invii (non un
+libro intero) se il profilo browser **reale** regga dove quello Playwright vuoto ha fallito
+— l'unica variabile mai isolata. **Tutto ciò che dipende da quell'esito NON è stato
+costruito**: è l'errore già commesso su questo stesso dominio
+(`_archivio_blueprint_narrativo/`: 95+ agenti costruiti, controllati, trovati a zero
+automazione reale).
+
+**Costruito**: probe Fase 0 (due sotto-test A/B, il secondo solo se il primo è pulito — il
+captcha-solving costa tempo umano); `arena_book_writer` con piano/capitoli/copy e
+verificatori che girano davvero; staging Google Doc che **non può mai perdere un capitolo**;
+split del prompt copertina che **preserva i vincoli KDP conquistati con bug reali**
+(verificato byte-identico); `KDP_METADATA.txt` finalmente compilabile.
+
+**Verificato**: 56 → **83 test verdi**, nessuno apre un browser o chiama un modello.
+
+**RIPRESA DA:** ⛔ **lanciare la Fase 0** — atto di Gael, fisicamente al PC, con Brave
+chiuso: `python -m engine.lmarena_captcha_probe --browser brave`. Se **PIENO** → agganciare
+`workflow.py` e fare un libro reale in scala ridotta (3 capitoli corti) end-to-end. Se
+**FALLIMENTO** → il profilo reale non è la causa, e la scrittura via Arena va riconsiderata
+insieme a Gael prima di spendere altro. Solo dopo un libro completo: spostare
+`scrittore_haiku.py` in archivio (LEGGIMI già pronto, codice ancora attivo — ADR-003).
+Dettaglio in [CP-20260815-003](checkpoints/CP-20260815-003.md).
+
+---
+
 ## 🎬 2026-08-15 — CLAUDE: YOUTUBE-AUTOMATION-FACTORY — credential-keeper + wiring reale Legami d'Amore — CP-20260815-001
 
 Max ha dato la Fliki API key (già corretta in `.env`) e dettato l'intero flusso desiderato per
@@ -147,6 +498,197 @@ override **solo per legamidiamore** (dosementale invariato) con la sua approvazi
 prossimo video reale generato (nessun metadato di dimensione esposto dall'API Fliki, scelta
 plausibile non confermata); primo run reale `--upload` va lanciato a mano da un operatore umano,
 mai in autonomia. Dettaglio in [CP-20260815-001](checkpoints/CP-20260815-001.md).
+
+---
+
+## 🧮 2026-08-14 — CLAUDE: APEX-7 CALC LAYER, IL CALCOLATORE DELL'IMPERO — CP-20260814-003
+
+Secondo layer chiesto da Max: **calcola probabilità su qualsiasi cosa, percentuali su
+tutto, royalty e guadagni**. Costruito `company/Ecosistemi/11-APEX-7-CORE/calc/` come
+**registro di funzioni pure** — 16 moduli in 4 categorie: *base* (percentuali, variazioni,
+crescita composta), *probabilità* (AND/OR di eventi, Bayes, probabilità di superare una
+soglia, Monte Carlo con percentili, scenari calibrati), *denaro* (rendimento netto reale,
+costi invisibili voce per voce, confronto risk-free, VaR), *guadagni* (royalty, **KDP ebook
+70%/35% e cartaceo 60%**, prezzo ottimale data l'elasticità).
+
+**Tre regole**: nessun numero senza fonte (i default entrati nel calcolo escono nella lista
+`assunzioni` con la provenienza — un numero uscito da un default non è un numero misurato);
+nessuna eccezione oltre il confine (`esegui` non solleva mai, un errore torna come
+`ok: False` col motivo); i vincoli **rifiutano invece di arrotondare** (probabilità fuori da
+0-100, distribuzioni che non sommano a 100, perdite oltre il capitale, elasticità positiva).
+
+**Il ponte è predisposto ma NON costruito.** Max ha anticipato che questo layer dovrà
+parlare con almeno altri due: per questo l'interfaccia pubblica è già `esegui(dict)->dict`
+e `catalogo()`, solo JSON, nessun oggetto Python attraversa il confine. Il ponte vero
+(routing, trasporto, handshake) va progettato quando si sa quanti e quali layer devono
+parlarsi. `esegui_grafo` incatena più calcoli sul DAG dell'orchestration layer (cicli e
+riferimenti a campi inesistenti bloccano **prima** di eseguire); `esegui_certificato` fa
+passare un calcolo dai 7 quality gate.
+
+**Corretti i 2 errori dello zip che ribaltavano la conclusione**: le tasse si pagano sulla
+plusvalenza *nominale* (in Italia non c'è indicizzazione all'inflazione — lo zip tassava il
+rendimento reale, +2,4% di errore a 10 anni e −11,4% a 30) e il confronto col risk-free
+dev'essere omogeneo. Sullo stesso caso del dossier dello zip (ETF All-World 7,5%, 10 anni):
+lo zip concludeva **−€10.812** (l'ETF perde contro il BTP), il calcolo corretto dà
+**+€28.023**. Ognuno ha un test `REGRESSIONE`.
+
+**Verificato**: 39 calc + 49 orchestration + 4 multi-tenant, tutti verdi.
+
+**RIPRESA DA:** il **ponte fra layer** — è il prossimo pezzo e serve che Max dica quanti e
+quali layer devono parlarsi. Restano poi: accendere `strict=True` sui 3 stream, e B-015
+(promuovere il seam backend LLM). Nota onesta: i default (risk-free 3,8%, inflazione 2,5%,
+consegna KDP 0,15/MB) sono dichiarati come tali e viaggiano nelle `assunzioni`, ma nessuno
+li ha verificati su fonte primaria oggi. Dettaglio in
+[CP-20260814-003](checkpoints/CP-20260814-003.md).
+
+---
+
+## 📕 2026-08-14 — CLAUDE: WORKFLOW KDP A 4 STEP, PRIMO GIRO END-TO-END — CP-20260814-001
+
+Primo lancio reale del workflow riscritto da Gael sui 4 step (nicchia PERSISTENTE →
+competitor → scrittura Haiku → copertina → pacchetto).
+
+**Il CLI non era da autenticare: era rotto.** `claude.exe` era uno **stub da 500 byte** —
+il binario nativo non era mai stato scaricato. Windows diceva "versione incompatibile",
+che manda sulla pista sbagliata. Riparato con `--include=optional` (307MB veri).
+
+**STEP 0 e STEP 1 girano su dati reali.** Nicchia del catalogo fissata una tantum su 56
+concorrenti Amazon letti: `small town romance suspense` **77.7/100**. Scelta non per le
+recensioni (amish le ha più basse) ma perché è l'unica a prendere pieno sul prezzo: a
+$5.95 amish darebbe metà margine per copia, e l'obiettivo dichiarato è il volume di
+**vendite**, non di titoli. STEP 1: 20 concorrenti, riferimento reale.
+
+**Il difetto vero: STEP 2 non passava da Haiku.** `claude.CMD` è un wrapper batch, e
+cmd.exe **tronca alla prima riga** qualunque argomento contenga un a capo, perdendo pure
+quelli dopo. Misurato con una sonda su argv, stesso prompt di 11 righe: via `.CMD` ARGC=2
+(solo la riga del ruolo), via `.exe` ARGC=4 (prompt intero + `--model haiku`). Due
+conseguenze **entrambe silenziose**: il modello rispondeva da assistente ("il tuo messaggio
+imposta il ruolo ma non il task"), e **`--model haiku` non arrivava affatto** — si pagava
+il modello di default, annullando l'intera premessa economica del catalogo mentre il CLI
+rispondeva "successo" a ogni chiamata.
+
+**La prima ipotesi era sbagliata e l'ho smentita provandola** (avevo accusato le parentesi
+angolari lette da cmd come redirezioni: con l'argomento quotato non succede). E il mio
+primo smoke test **passava** solo perché aveva una riga sola — il test facile confermava
+la cosa che non stavo testando.
+
+Corretti nello stesso giro: **cwd dentro il repo** (`claude` è un AGENTE — risaliva
+l'albero, caricava i `CLAUDE.md` di Digital Empire e leggeva lo stato del disco; ora gira
+da cartella neutra fuori dall'albero con system prompt proprio e tool negati), **stdin non
+chiuso** (3s buttati × 25 chiamate per libro), e il **titolo placeholder** — il primo libro
+si chiamava "Untitled Small Town Romance Suspense 202608131759", ora il libro si **blocca**
+se non c'è un titolo vero, perché un placeholder pubblicato mette a rischio l'account e
+l'account *è* il catalogo.
+
+**Verificato**: 30 test preesistenti invariati + 17 nuovi = **47 verdi**, nessuno chiama un
+modello. `test_il_wrapper_batch_tronca_davvero` riproduce il guasto con la sonda invece di
+dichiararlo.
+
+**RIPRESA DA:** ⛔ **il piano ha raggiunto il limite di spesa mensile** durante la diagnosi
+(verosimilmente proprio perché le chiamate finivano sul modello di default invece che su
+Haiku). Serve alzarlo su `claude.ai/settings/usage` — atto di Max/Gael, non aggirabile.
+Poi: (1) rilanciare `python -m engine.workflow libro` e verificare che STEP 2 scriva davvero
+**e che la spesa risulti su Haiku**; (2) STEP 3 (copertina LM Arena) e STEP 4 (pacchetto)
+**non sono mai stati raggiunti** — la sessione LM Arena è del 07/08, da considerare da
+verificare; (3) `produci_libro()` non ha ripresa: se STEP 3 fallisce dopo 24 capitoli il
+testo resta su disco ma il rilancio riparte da zero. Dettaglio in
+[CP-20260814-001](checkpoints/CP-20260814-001.md).
+
+---
+
+## ⚙️ 2026-08-13 — CLAUDE: I 3 STREAM DI PRODUZIONE PASSANO DAI 7 GATE — CP-20260813-002
+
+Seguito di CP-20260813-003, su "fai tutto" di Max.
+
+**B-013 era più grave di come l'avevo scritto.** Non una freccia unicode in libreria:
+**`main.py`, l'entry point del motore canonico, non partiva affatto su Windows** —
+moriva alla riga 21 sul proprio banner box-drawing, prima ancora del workflow. Il motore
+ufficiale della Coordination Fabric non era eseguibile sulla macchina di lavoro. Fix con
+lo split che conta: la **libreria** stampa solo ASCII (non può imporre un encoding ai
+chiamanti), gli **entry point** forzano UTF-8 e si tengono i banner. **B-014 chiuso**: il
+`task_id` sopravvive ai restart, quindi il guard-rail dei 3 giri scatta e uno score 2.0
+termina invece di andare in `RecursionError`.
+
+**Consumatore reale agganciato.** `arena_generator.py` è skill-forge + carousel-machine +
+cold-outreach — i tre che ADR-010 elenca come già in uso sul motore condiviso. Tutti e tre
+passavano dal workflow **nudo**; ora dai 7 gate, con un `<nome>.gate.json` scritto accanto
+all'output (`[GATE] skill-forge: CERTIFICATO L1->L7 in 315ms`). Prima quei file venivano
+scritti sempre e dal file non si capiva se valessero qualcosa. `strict=False` di default
+(salva ma avvisa), `strict=True` pronto: non spengo da un giorno all'altro una pipeline che
+produce — ADR-003 dice che il sostituto si valida in parallelo.
+
+**Il test YouTube rosso era un difetto del test, non del codice.** La Fase 3 viene
+bloccata dal gate dei 12 minuti su uno script reale da 11.0 min (critic score 8.09, sopra
+soglia: è la durata a fermarlo) — lo stesso gate che CP-20260805-005 aveva reso bloccante
+apposta. Il test pretendeva sempre di arrivare alla fase 6, rendendo **un gate che funziona
+indistinguibile da un crash**. Riscritto per verificare il comportamento vero → 11/11.
+
+**ADR-011**: il censimento di ADR-010 contava 4 linee APEX-7 divergenti, ne esistono **6**.
+`empire/intelligence/apex7/` è la più onesta del repo (mock e `LLMBackend` separati
+esplicitamente, adapter RuFLO che dichiara cosa manca) → censita come deprecata-non-
+cancellata, i suoi 2 pezzi che al canone mancano da promuovere. **Fase 2 di ADR-010
+bloccata** finché il seam backend LLM non è promosso: scalare su 13 ecosistemi un motore
+che non sa parlare a un LLM reale propaga il limite tredici volte.
+
+**Verificato**: 49 orchestration + 4 multi-tenant + 11 YouTube, tutte verdi (la suite
+YouTube era 10/11 da giorni).
+
+**RIPRESA DA:** tre cose, in ordine. (1) **Accendere `strict=True`** sui 3 stream dopo aver
+letto qualche scorecard vera — è il passo che rende i gate vincolanti, e lo decide Max.
+(2) **Promuovere `backends.py`/`ruflo_adapter.py`** da `empire/intelligence/apex7/` nel
+motore canonico (B-015, ADR-011): oggi il canone non ha un seam per il backend LLM.
+(3) Solo dopo, Fase 2 di ADR-010. Dettaglio in
+[CP-20260813-002](checkpoints/CP-20260813-002.md).
+
+---
+
+## ⚙️ 2026-08-13 — CLAUDE: ORCHESTRATION LAYER APEX-7 INNESTATO NEL MOTORE CANONICO — CP-20260813-003
+
+Max ha consegnato uno zip (83MB, 5.591 file) con un "orchestration layer" chiamato
+`apex7_orchestrator`, chiedendo di analizzarlo e integrarlo "nella maniera più corretta".
+
+**L'audit, fatto girando il codice e non leggendolo**: il dossier dichiarava
+`100% PASS (Tolleranza Zero L1-L7)`, ma **il Gate L6 non veniva mai eseguito** (importato,
+mai chiamato) e quella stringa era **hardcoded** nel generatore di report. `GATE_L7`
+controllava solo L1..L5, quindi l'assenza di L6 non era nemmeno rilevabile. Lo swarm
+"RuFLO" restituiva dizionari scritti a mano (`confidence: 0.95` fisso) e non importava
+una riga del repo clonato (~5.100 file di zavorra). Quattro gate avevano `checks += 1`
+incondizionato. Testato con input assurdi: rendimento 500% → certificato; risk tolerance
+150% → **certificato con capitale finale negativo**; inflazione −50% → certificato.
+
+**RECALL che ha corretto il piano**: avevo proposto di innestare su
+`empire/intelligence/apex7/`; **ADR-010** dice che il motore canonico è
+`11-APEX-7-CORE` e che il problema è proprio la frammentazione. Cambiato bersaglio
+dichiarandolo, non in silenzio.
+
+**Costruito**: `11-APEX-7-CORE/orchestration/` — catena di stato Merkle, DAG con
+circuit breaker e stato `BLOCKED` esplicito, `InstrumentedEventBus` con DLQ, i 7 gate
+generalizzati (dominio-agnostici), self-healing, guardia sugli invarianti, e la
+`OrchestrationPipeline` che avvolge il `RuFLOOrchestrator` esistente. Tre regole di
+casa, ognuna nata da un difetto dello zip: **nessun punto regalato** (un check che non
+si applica non viene emesso, non viene emesso "passato"), **passare richiede zero
+fallimenti**, **la scorecard si legge dal registro** (nessuna stringa "100% PASS"
+esiste nel codice).
+
+**Il motore condiviso non è stato toccato.** Avevo patchato `ruflo_core.py`; Max ha
+fermato la verifica e il file è tornato a HEAD. Preso il segnale e **rifatto come wrap
+puro**: la DLQ è passata in una sottoclasse. `git diff` su `ruflo_core.py` è vuoto —
+più fedele ad ADR-003 della mia prima versione.
+
+**Due bug reali del motore condiviso trovati e NON corretti** (B-013, B-014): su console
+Windows `execute_workflow` cade con `UnicodeEncodeError` nel percorso principale; con
+punteggio di critica < 4.0 ricorre all'infinito perché il `task_id` si rigenera a ogni
+restart. Contenuti dal layer, fissati da test che li dimostrano senza innescarli, mandati
+in BACKLOG perché il file è condiviso da 4 consumatori e si tocca in un ciclo dedicato.
+Censita anche una **quinta** reimplementazione APEX-7 non documentata da ADR-010 (B-015).
+
+**Verificato**: `test_orchestration.py` 46/46, `test_multi_tenant.py` 4/4 invariato.
+
+**RIPRESA DA:** il layer gira solo sui propri test — **nessun consumatore reale è ancora
+agganciato alla pipeline certificata**. Il passo che produce valore è agganciare il primo
+(candidato naturale: carousel-machine o skill-forge, già sul motore condiviso). Poi
+B-013/B-014 in un ciclo dedicato sul motore. Dettaglio in
+[CP-20260813-003](checkpoints/CP-20260813-003.md).
 
 ---
 

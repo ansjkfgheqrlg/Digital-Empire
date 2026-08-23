@@ -15,11 +15,47 @@ from playwright.sync_api import Page
 from . import book_output_manager, config, lmarena_client
 
 
+def _wrap_cover_prompt(creative_description: str, title: str, author: str = "Digital Empire",
+                        genre: str = "fiction") -> str:
+    """Avvolge una descrizione CREATIVA nei requisiti tecnici KDP.
+
+    Estratta da `_build_cover_prompt` il 2026-08-15 (flusso libri via Arena v3): dalla
+    Fase 2 il prompt copertina arriva dal PIANO generato su Arena, ma contiene solo la
+    parte creativa (scena/atmosfera/palette). I requisiti tecnici qui sotto NON vanno mai
+    rigenerati da un modello: sono stati conquistati con bug reali e vanno applicati
+    identici a ogni copertina, da qualunque fonte venga la descrizione.
+
+    Due cose vanno chieste in modo insistente e all'INIZIO, non di sfuggita in coda:
+    1) il formato verticale — chiedendolo in fondo il modello ha restituito un quadrato
+       1024x1024, inutilizzabile per un 6x9 (caso reale, 2026-08-08);
+    2) il TITOLO scritto sulla copertina — scelta di Gael del 2026-08-10. Va ripetuto e
+       messo tra virgolette perche' i modelli immagine sbagliano facilmente le lettere:
+       per questo esiste il controllo OCR in `validators.valida_copertina_testo`, che
+       verifica che il titolo sia davvero leggibile prima della consegna."""
+    return (
+        f"IMPORTANT — FORMAT: the image must be a TALL VERTICAL PORTRAIT rectangle with a "
+        f"2:3 aspect ratio (like a real book cover, e.g. 1024 wide by 1536 tall). Do NOT "
+        f"produce a square image.\n\n"
+        f"IMPORTANT — TEXT: the cover must display the book title spelled EXACTLY as "
+        f"\"{title}\" in large, bold, perfectly legible lettering in the upper third, and "
+        f"the author name \"{author}\" smaller at the bottom. Spell every letter correctly. "
+        f"Do not add any other words.\n\n"
+        f"Design a professional book cover for a {genre} novel. {creative_description} "
+        f"Evocative of the genre and story, high detail, publisher-quality artwork, strong "
+        f"contrast between the lettering and the artwork so the title stays readable as a "
+        f"small thumbnail."
+    )
+
+
 def _build_cover_prompt(book_context: dict) -> str:
     """Costruisce il prompt dai dettagli REALI del libro. `book_context` ha 3 chiavi
     opzionali (research/planning/writing, output delle rispettive fasi orchestrator) — usa
     quello che trova, non richiede tutte e 3 (es. un run con solo `writing`, senza
-    planning/research a monte, produce comunque un prompt valido dal titolo)."""
+    planning/research a monte, produce comunque un prompt valido dal titolo).
+
+    Percorso ORIGINALE (costruzione a runtime dai dati del libro), invariato: serve ancora
+    a `orchestrator.py`. Il flusso nuovo passa invece da `generate_cover_from_plan`, dove
+    la parte creativa arriva dal piano di Fase 2 — stesso wrapper tecnico per entrambi."""
     writing = book_context.get("writing") or {}
     planning = book_context.get("planning") or {}
     research = book_context.get("research") or {}
@@ -35,19 +71,8 @@ def _build_cover_prompt(book_context: dict) -> str:
     if plot:
         details += f" Setting/premise: {plot}"
 
-    # Il formato va chiesto in modo insistente e all'INIZIO: chiedendolo di sfuggita in
-    # coda ("portrait orientation") il modello ha restituito un quadrato 1024x1024,
-    # inutilizzabile per un 6x9 (caso reale, 2026-08-08).
-    return (
-        f"IMPORTANT: the image must be a TALL VERTICAL PORTRAIT rectangle with a 2:3 "
-        f"aspect ratio (like a real book cover, e.g. 1024 wide by 1536 tall). Do NOT "
-        f"produce a square image.\n\n"
-        f"Design a professional book cover illustration for a {genre} novel titled "
-        f"\"{title}\". {details} No text, no words, no lettering anywhere in the image "
-        f"(title and author are added separately during KDP formatting) — illustration "
-        f"only, evocative of the genre and story, high detail, publisher-quality artwork, "
-        f"composed for a tall vertical book cover."
-    )
+    author = book_context.get("planning", {}).get("author") or "Digital Empire"
+    return _wrap_cover_prompt(details, title=title, author=author, genre=genre)
 
 
 # Requisiti KDP reali per una copertina 6x9in (fonte: kdp.amazon.com, cover guidelines):
@@ -124,6 +149,89 @@ def adatta_a_kdp(src: Path, dest: Path | None = None,
     return dest
 
 
+def _font(dimensione: int):
+    """Carica un font di sistema leggibile. Ordine di preferenza: serif eleganti prima
+    (stanno bene su un thriller), poi qualunque cosa esista, poi il font di default."""
+    from PIL import ImageFont
+    candidati = ["georgiab.ttf", "timesbd.ttf", "constanb.ttf", "arialbd.ttf", "segoeuib.ttf"]
+    for nome in candidati:
+        try:
+            return ImageFont.truetype(nome, dimensione)
+        except OSError:
+            continue
+    return ImageFont.load_default()
+
+
+def aggiungi_titolo(cover_path: Path, titolo: str, autore: str = "Digital Empire",
+                     dest: Path | None = None) -> Path:
+    """Scrive titolo e autore sulla copertina con un font vero.
+
+    Perche' cosi' e non chiedendolo al modello (2026-08-10): il modello immagine e' stato
+    provato due volte con istruzioni esplicite e non ha prodotto nulla di usabile (errori
+    lato sito + un captcha da risolvere a mano ogni tentativo). Anche quando riesce, i
+    modelli sbagliano le lettere — nella prima copertina aveva scritto "New Voicemail"
+    troncando "1 New Voicemail". Scrivendo il testo qui: ortografia sempre corretta, font
+    e posizione controllati, risultato ripetibile senza dipendere da un servizio esterno.
+
+    Composizione: fascia scura semitrasparente in alto per il titolo (garantisce leggibilita'
+    qualunque sia l'illustrazione sotto) e una in basso per l'autore."""
+    from PIL import Image, ImageDraw
+
+    cover_path = Path(cover_path)
+    dest = dest or cover_path.with_name(cover_path.stem + "_titolo.png")
+
+    with Image.open(cover_path) as im:
+        im = im.convert("RGB")
+        L, H = im.size
+        disegno = ImageDraw.Draw(im, "RGBA")
+
+        # --- titolo: a capo automatico per stare nei margini ------------------ #
+        dim = int(L * 0.13)
+        margine = int(L * 0.08)
+        larghezza_max = L - 2 * margine
+        while dim > 20:
+            font = _font(dim)
+            parole, righe, riga = titolo.upper().split(), [], ""
+            for p in parole:
+                prova = f"{riga} {p}".strip()
+                if disegno.textlength(prova, font=font) <= larghezza_max:
+                    riga = prova
+                else:
+                    if riga:
+                        righe.append(riga)
+                    riga = p
+            if riga:
+                righe.append(riga)
+            if len(righe) <= 3:
+                break
+            dim = int(dim * 0.9)
+
+        alt_riga = int(dim * 1.25)
+        alt_blocco = alt_riga * len(righe)
+        cima = int(H * 0.06)
+        disegno.rectangle([0, cima - int(alt_riga * 0.4),
+                            L, cima + alt_blocco + int(alt_riga * 0.35)], fill=(0, 0, 0, 165))
+        for i, riga in enumerate(righe):
+            w = disegno.textlength(riga, font=font)
+            y = cima + i * alt_riga
+            disegno.text(((L - w) / 2 + 3, y + 3), riga, font=font, fill=(0, 0, 0, 190))
+            disegno.text(((L - w) / 2, y), riga, font=font, fill=(255, 255, 255, 255))
+
+        # --- autore in basso -------------------------------------------------- #
+        font_a = _font(int(L * 0.055))
+        testo_a = autore.upper()
+        wa = disegno.textlength(testo_a, font=font_a)
+        ya = int(H * 0.90)
+        disegno.rectangle([0, ya - int(L * 0.025), L, ya + int(L * 0.085)], fill=(0, 0, 0, 165))
+        disegno.text(((L - wa) / 2 + 2, ya + 2), testo_a, font=font_a, fill=(0, 0, 0, 190))
+        disegno.text(((L - wa) / 2, ya), testo_a, font=font_a, fill=(238, 232, 220, 255))
+
+        im.save(dest, "PNG")
+
+    print(f"[cover] titolo scritto sulla copertina: {dest.name}")
+    return dest
+
+
 def generate_cover(page: Page, book_context: dict, out_path: Path,
                     verifica: bool = True) -> Path:
     """Genera la copertina reale (CP7) via LM Arena e la salva in `out_path`. Fatto = un
@@ -131,6 +239,40 @@ def generate_cover(page: Page, book_context: dict, out_path: Path,
     prompt fisso — quello e' il bug che questo checkpoint deve evitare per costruzione)
     E verificato utilizzabile su KDP (proporzioni + risoluzione), non solo esistente."""
     prompt = _build_cover_prompt(book_context)
+    saved = lmarena_client.send_image_prompt(page, prompt, out_path)
+    if verifica:
+        esito = verifica_copertina_kdp(saved)
+        if not esito["ok"]:
+            print(f"[cover] ATTENZIONE, copertina NON pronta per KDP "
+                  f"({esito['larghezza']}x{esito['altezza']}):")
+            for p in esito["problemi"]:
+                print(f"  - {p}")
+            print(f"  File comunque salvato in {saved} — va adattato prima dell'uso.")
+    return saved
+
+
+def generate_cover_from_plan(page: Page, piano: dict, title: str,
+                              author: str = "Digital Empire", out_path: Path | None = None,
+                              genre: str = "fiction", verifica: bool = True) -> Path:
+    """Genera la copertina usando il prompt CREATIVO gia' deciso nel piano (Fase 2).
+
+    Differenza dal percorso originale `generate_cover`: li' la descrizione creativa si
+    costruisce a runtime dai dati del libro; qui arriva dal piano generato su Arena
+    insieme al sommario dei capitoli — richiesta esplicita di Gael ("nel piano non solo
+    c'e' il sommario, ma anche il prompt per la copertina"). Il wrapper tecnico KDP e' lo
+    STESSO per entrambi (`_wrap_cover_prompt`): i vincoli di formato e spelling del titolo
+    non si delegano mai a un modello."""
+    creative = (piano.get("cover_prompt") or "").strip()
+    if not creative:
+        raise ValueError(
+            "Il piano non contiene 'cover_prompt': la copertina non si genera da un prompt "
+            "vuoto. Rigenerare il piano (Fase 2) — `verifica_piano` lo intercetta prima."
+        )
+    if out_path is None:
+        safe_title = book_output_manager.sanitize_title(title)
+        out_path = config.LIBRI_DIR / "_wip" / f"{safe_title}_cover.png"
+
+    prompt = _wrap_cover_prompt(creative, title=title, author=author, genre=genre)
     saved = lmarena_client.send_image_prompt(page, prompt, out_path)
     if verifica:
         esito = verifica_copertina_kdp(saved)

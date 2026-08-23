@@ -2,7 +2,7 @@
 
 The voicemail is eleven seconds long.
 
-The first four are nothing. Not silence — the particular textured nothing of a call placed somewhere with air moving. A room with a window open. A car with the engine off.
+The first four are nothing. Not silence: the particular textured nothing of a call placed somewhere with air moving. A room with a window open. A car with the engine off.
 
 At second five there's a sound that might be a breath.
 
@@ -18,7 +18,7 @@ It could be *Elena.* It could be a car door. It could be a woman two streets awa
 
 I drive home doing thirty in a forty because my hands have started shaking and I am aware, in the detached way I'm aware of most things now, that this is a physiological response to shock and that it will pass in about twenty minutes.
 
-The flat is exactly as I left it. That sounds like a stupid thing to note. It isn't. I've started noticing it every time — the specific arrangement of things, the mug on the drainer, the angle of the chair — because noticing it means I can compare it against the next time, and comparison is the only way I have left of knowing whether the world is behaving.
+The flat is exactly as I left it. That sounds like a stupid thing to note. It isn't. I've started noticing it every time (the specific arrangement of things, the mug on the drainer, the angle of the chair) because noticing it means I can compare it against the next time, and comparison is the only way I have left of knowing whether the world is behaving.
 
 Everything is where it should be. Good.
 
@@ -30,7 +30,7 @@ Nina was twenty-nine. She taught year fours and had the specific patience that r
 
 On the fourteenth of December she drove home from a party on the Kesselwood road at twenty past midnight and went through the barrier on the bend where the road drops toward the river. There was no other vehicle. The report used the phrase *loss of control consistent with excess speed.* Her blood alcohol was over the limit. Not spectacularly. Over.
 
-The coroner said what coroners say. Detective Okonjo — who I met twice, who has a way of listening that makes you keep talking past the point where you meant to stop — said what she was allowed to say, which was that there was nothing further to investigate, said kindly, said twice.
+The coroner said what coroners say. Detective Okonjo, who I met twice, who has a way of listening that makes you keep talking past the point where you meant to stop, said what she was allowed to say, which was that there was nothing further to investigate, said kindly, said twice.
 
 I was at home that night. That's the sentence I've said perhaps two hundred times, to police, to my mother, to the woman from the counselling service, to Nina's friends who wanted to know if she'd seemed all right. *I was at home that night.* It has the smoothness of a sentence that has been handled a lot.
 
@@ -38,7 +38,7 @@ There's a thing I do that I have never told the counselling woman about, and it 
 
 It's in the notes app on my phone, and it's called *Groceries*, which is a level of cowardice I'm aware of. It has forty-one items on it. They are all the things about that night that don't sit right.
 
-Item one: *she said see you at Mum's — we weren't going to Mum's until the 23rd.*
+Item one: *she said see you at Mum's, and we weren't going to Mum's until the 23rd.*
 
 Item four: *nobody at the party remembers her leaving.*
 
@@ -58,7 +58,7 @@ I take out my laptop and I search *voicemail delayed delivery fourteen months* a
 
 Six months is not fourteen. But six months proves the mechanism, and once you have the mechanism, the rest is just a bigger number.
 
-That's what I tell myself, and it works for almost an hour, and then I think: the timestamp says 2:14 *this morning*. Not the fourteenth of December. This morning. Which means either the phone is recording the delivery time rather than the call time — plausible, likely, probably documented somewhere in a support page I could find if I looked — or the call was placed at 2:14 this morning.
+That's what I tell myself, and it works for almost an hour, and then I think: the timestamp says 2:14 *this morning*. Not the fourteenth of December. This morning. Which means either the phone is recording the delivery time rather than the call time (plausible, likely, probably documented somewhere in a support page I could find if I looked) or the call was placed at 2:14 this morning.
 
 At 2:14 this morning I was on the second floor of Ridgemont Care Home, checking a drip.
 
@@ -100,7 +100,7 @@ Not a house. Houses don't have keys like this. Padlocks do. Lockers do.
 
 Storage units do.
 
-There is a place on the Kesselwood road, about a mile before the bend, with a sign that says SECURE SELF STORAGE — 24HR ACCESS in letters big enough to read at fifty miles an hour. I have driven past it perhaps three hundred times. I have never once gone in.
+There is a place on the Kesselwood road, about a mile before the bend, with a sign that says SECURE SELF STORAGE, 24HR ACCESS in letters big enough to read at fifty miles an hour. I have driven past it perhaps three hundred times. I have never once gone in.
 
 I sit on the edge of the bath with a towel around me and the key in my hand and I think: I am not going to do this.
 

@@ -1,0 +1,43 @@
+{
+  "_nota": "Numeri rilevati su Amazon, mai stimati. Vedi engine/ispirazione.py.",
+  "nicchia": "psychological thriller unreliable narrator",
+  "recensioni_mediana": 156,
+  "recensioni_minime": 2,
+  "prezzo_medio": 11.48,
+  "rating_medio": 4.26,
+  "concorrenti_analizzati": 16,
+  "concorrenti_deboli": 6,
+  "punteggio": 81.2,
+  "rilevato_il": "2026-08-07",
+  "titolo_concorrente": "",
+  "autore_concorrente": "",
+  "asin": "",
+  "prezzo_concorrente": null,
+  "recensioni_concorrente": null,
+  "genere": "Psychological thriller",
+  "sottogenere": "domestic suspense / narratore inaffidabile",
+  "lettore_tipo": "Adulti 30-55, lettori da book club. Vogliono un twist che regga alla rilettura e si arrabbiano se il finale bara.",
+  "temi_chiave": [
+    "colpa del sopravvissuto",
+    "memoria che non si puo' interrogare",
+    "insonnia",
+    "lutto fra sorelle",
+    "chi crediamo di essere di notte"
+  ],
+  "stile": "Prima persona, presente. Voce clinica, precisa, che si sgretola per esattezza e non per isteria.",
+  "tono": "Lucido e freddo. La narratrice e' piu' spaventata dalla propria affidabilita' che da un intruso.",
+  "struttura": "24 capitoli. Il twist al capitolo 19, poi cinque capitoli di conseguenze: il genere di solito chiude subito dopo il colpo di scena.",
+  "cosa_funziona": [
+    "titoli e sottotitoli che promettono il twist",
+    "capitoli corti che chiudono su un gancio",
+    "prezzo medio $11.48, il piu' alto fra le nicchie analizzate"
+  ],
+  "dove_sono_deboli": [
+    "il twist spesso bara: indizi non presenti a pagina",
+    "la protagonista e' inaffidabile per comodita' di trama, non per una ragione",
+    "il finale assolve: nessuno paga davvero",
+    "6 concorrenti deboli su 16, con mediana 156 recensioni: si entra"
+  ],
+  "come_ci_distinguiamo": "Il twist e' giocato onesto: ogni indizio e' a pagina dal capitolo uno e il lettore puo' arrivarci prima di Elena. L'inaffidabilita' ha una causa medica reale e documentata (privazione di sonno cronica), non e' un espediente. E il finale non assolve: e' un'ammissione, non un'assoluzione.",
+  "scritta_il": "2026-08-19"
+}
