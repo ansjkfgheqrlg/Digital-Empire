@@ -1,0 +1,78 @@
+{
+  "video_id": "nRm7JLsP1bc",
+  "total_atoms": 8,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "nRm7JLsP1bc#00:00:00",
+      "frame": "frame-001",
+      "category": "Content / Hook a lista",
+      "section": "S0",
+      "tags": ["hook", "contro-lista", "polarizzazione"],
+      "atom": "Hook diretto e polarizzante: 'Queste sono tre formule di copywriting che devi smettere di usare perche' non se ne puo' piu', le usano tutti, fanno schifo'. Format 'N cose da NON fare' genera piu' curiosita' del classico 'N cose da fare' perche' va contro l'aspettativa."
+    },
+    {
+      "id": "KA-02",
+      "source": "nRm7JLsP1bc#00:00:12",
+      "frame": "frame-007",
+      "category": "Copy / Anti-pattern",
+      "section": "S1",
+      "tags": ["value-prop", "anti-pattern", "opener-generico"],
+      "atom": "Clichè #1: apertura 'Se ami/ti interessa X, allora sei nel posto giusto' (esempio: 'Se ami il caffè allora sei nel posto giusto'). Sovrausato e riconoscibile come pubblicita' generica, il lettore lo processa come rumore."
+    },
+    {
+      "id": "KA-03",
+      "source": "nRm7JLsP1bc#00:00:18",
+      "frame": "frame-010",
+      "category": "Copy / Anti-pattern",
+      "section": "S2",
+      "tags": ["listicle", "curiosity-gap", "clickbait"],
+      "atom": "Clichè #2: '[N] cose che non sapevi su [Y]' — formula listicle da clickbait, esausta per il pubblico."
+    },
+    {
+      "id": "KA-04",
+      "source": "nRm7JLsP1bc#00:00:30",
+      "frame": "frame-016",
+      "category": "Copy / Anti-pattern",
+      "section": "S2",
+      "tags": ["listicle", "clickbait", "farmaceutico-parodia"],
+      "atom": "Variante aggravata del clichè #2, parodia diretta: 'I dottori lo odiano perché ha scoperto il dolorifico più salutare' — pattern da ads farmaceutici/integratori/dimagrimento ('i medici odiano questo trucco'), tra i piu' abusati e meno credibili nel copy ads."
+    },
+    {
+      "id": "KA-05",
+      "source": "nRm7JLsP1bc#00:00:36",
+      "frame": "frame-018",
+      "category": "Copy / Anti-pattern",
+      "section": "S3",
+      "tags": ["secret-framing", "cospirazione", "anti-pattern"],
+      "atom": "Clichè #3: 'Il segreto che [industria/autorita'] non ti vuole far sapere su [Y]' — framing da cospirazione/rivelazione, esemplificato con 'il segreto che i ristoranti non vogliono farti sapere sulla carne congelata'."
+    },
+    {
+      "id": "KA-06",
+      "source": "nRm7JLsP1bc#00:00:42",
+      "frame": "frame-021",
+      "category": "Content / Retention-payoff",
+      "section": "S4",
+      "tags": ["payoff", "quarta-parete", "shareability"],
+      "atom": "Tecnica di chiusura short-form: mette in scena letteralmente il claim assurdo del clichè (aprire un vero frigorifero) e poi lo smonta a voce ('non ti chiudo veramente') — rottura della quarta parete come punchline. Rende il video shareable/rewatchable anche senza il contenuto didattico."
+    },
+    {
+      "id": "KA-07",
+      "source": "nRm7JLsP1bc#00:00:00-00:16",
+      "frame": "frame-001,frame-006",
+      "category": "Formato / Segnaletica visiva",
+      "section": "S0-S1",
+      "tags": ["costume-switch", "occhiali-da-sole", "micro-recitazione"],
+      "atom": "Uso ricorrente degli occhiali da sole come 'costume switch': indossarli/toglierli/spostarli sulla fronte segnala il cambio di registro (narratore serio -> mimica del 'guru fake') senza taglio di scena esplicito o testo aggiuntivo."
+    },
+    {
+      "id": "KA-08",
+      "source": "nRm7JLsP1bc#00:00:16",
+      "frame": "frame-009",
+      "category": "Formato / Montaggio",
+      "section": "S1-S2",
+      "tags": ["color-grading", "marcatore-sezione", "montaggio"],
+      "atom": "Passaggio da colore a bianco/nero a meta' video usato come marcatore di sezione visivo, sostituendo un taglio testuale 'capitolo 2' — coerente con l'assenza di on-screen counter espliciti."
+    }
+  ]
+}

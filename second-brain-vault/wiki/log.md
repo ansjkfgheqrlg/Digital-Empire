@@ -1,5 +1,15 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-23 (Empire Studio ripreso — Andrei Pascu cat1-copywriting video 11/29, Claude/Max)
+- INGEST: run andrei-pascu-001 ripreso dopo blocco (mancava Python/yt-dlp/ffmpeg in sessione
+  precedente, ora verificato presente). Pipeline completa per `nRm7JLsP1bc` ("Basta usare
+  formule clichè di copywriting"): Stage 1-5 + Stage 7 + Memory Empire C-H. 23/23 frame letti
+  (video 46s, coverage totale). 8 KA P12-traced. 1 nuova Source page + 1 nuovo Concept page
+  (checklist anti-clichè hook, generalizzabile a tutto il copy/ads DE).
+- ENRICHMENT-RESEARCH: vedi `company/Memory/memory-empire/memory/ingestions/2026-08-23-*.md`
+  per proposta d'uso del contenuto nella skill `cro-copy-architect` (gate Attenzione/APSOC).
+- WATCH-001: N_video=11, N_MemoryEmpire=11 → MATCH ✅. Checkpoint: CP-20260823-XXX.
+
 ## 2026-08-06 (Primo carosello Preventa reale: Agent workspace Arena, non il motore grezzo, Claude/Max)
 - CORREZIONE: `projects/Preventa/Progetto_Preventa_Carousel.md` descriveva il motore
   sbagliato (Playwright grezzo `ArenaAI/arena_generator.py`, 3 slide gradiente
