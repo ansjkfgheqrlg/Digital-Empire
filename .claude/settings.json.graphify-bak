@@ -1,0 +1,139 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "CLAUDE_FLOW_V3_ENABLED": "true",
+    "CLAUDE_FLOW_HOOKS_ENABLED": "true"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(awk '{print $NF}')",
+      "Read(//tmp/**)",
+      "Bash(xargs grep *)",
+      "Edit(~/.claude/skills/wiki-context/**)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(python3 -c \"import json; f=open\\('C:/Users/Utente/.claude/settings.json'\\); d=json.load\\(f\\); print\\('JSON valid'\\); print\\('Hook event:', list\\(d.get\\('hooks',{}\\).keys\\(\\)\\)\\)\")",
+      "PowerShell($content = Get-Content 'C:\\\\Users\\\\Utente\\\\.claude\\\\settings.json' -Raw -Encoding UTF8; try { $null = $content | ConvertFrom-Json; Write-Host \"JSON valid\"; $hooks = \\($content | ConvertFrom-Json\\).hooks; Write-Host \"Hook events: $\\($hooks.PSObject.Properties.Name -join ', '\\)\" } catch { Write-Host \"ERROR: $_\" })",
+      "Bash(bash -c \"pwd | grep -qi 'Digital Empire' && printf '{\\\\\"hookSpecificOutput\\\\\":{\\\\\"hookEventName\\\\\":\\\\\"UserPromptSubmit\\\\\",\\\\\"additionalContext\\\\\":\\\\\"WIKI-FIRST ATTIVO: Sei nella directory Digital Empire.\\\\\"}}' || printf '{}'\")",
+      "Read(//c/Users/Utente/Desktop/**)",
+      "Bash(bash -c \"pwd | grep -qi 'Digital Empire' && printf '{\\\\\"hookSpecificOutput\\\\\":{\\\\\"hookEventName\\\\\":\\\\\"UserPromptSubmit\\\\\",\\\\\"additionalContext\\\\\":\\\\\"WIKI-FIRST ATTIVO\\\\\"}}' || printf '{}'\")",
+      "Bash(python -c \"import openai; import requests; import dotenv; print\\('OK - tutti i pacchetti presenti'\\)\")",
+      "Bash(python run.py --target 10 --anteprima)",
+      "Bash(set PYTHONIOENCODING=utf-8)",
+      "Bash(python -X utf8 run.py --target 10 --anteprima)",
+      "Bash(python -c ' *)",
+      "Bash(python -X utf8 test_pipeline.py)",
+      "Bash(python -X utf8 -c ' *)",
+      "Bash(npx @claude-flow*)",
+      "Bash(npx claude-flow*)",
+      "Bash(node .claude/*)",
+      "mcp__claude-flow__*",
+      "Write(company/**)",
+      "Edit(company/**)",
+      "Read",
+      "Glob",
+      "Grep",
+      "Write(**)",
+      "Edit(**)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git show*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git stash*)",
+      "Bash(git branch*)",
+      "Bash(git fetch*)",
+      "Bash(pytest*)",
+      "Bash(python -m pytest*)",
+      "Bash(python -m unittest*)",
+      "Bash(npm test*)",
+      "Bash(npm run test*)",
+      "Bash(ls*)",
+      "Bash(dir*)",
+      "Read(//c/Users/olhad/Downloads/**)",
+      "PowerShell(git -C \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\" remote -v)",
+      "PowerShell(git -C \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\" status --short)",
+      "PowerShell(git -C \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\" log --oneline -3 -- .agents/skills/apex-7)",
+      "PowerShell(git -C \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\" ls-files .agents/skills/apex-7)",
+      "PowerShell(git -C \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\" check-ignore -v .agents/skills/apex-7)",
+      "PowerShell(git -C $r status --short)",
+      "PowerShell(git -C $r diff -- .claude/settings.json)",
+      "PowerShell(git -C $r diff -- YOUTUBE-AUTOMATION-FACTORY/memory/arena_thumbnail_status.json)",
+      "PowerShell($r = \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\")",
+      "PowerShell(git -C $r add -A)",
+      "PowerShell(git -C $r diff --cached --stat)",
+      "PowerShell(git -C $r push origin main)",
+      "PowerShell(git -C $r rev-list --left-right --count origin/main...HEAD)",
+      "PowerShell(git -C $r add .claude/settings.json)",
+      "PowerShell(git -C $r log --oneline -6 origin/main)",
+      "Read(//c/Users/olhad/Desktop/**)",
+      "PowerShell(git -C $r fetch origin main)",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\olhad\\\\Desktop\\\\Digital Empire\" -Directory -Recurse -Depth 2 -ErrorAction SilentlyContinue | Where-Object { $_.Name -match '\\(?i\\)aureus|desk' } | Select-Object FullName)",
+      "Bash(mkdir -p \"/c/Users/olhad/Desktop/Digital Empire/company/Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente\")",
+      "PowerShell(git -C $r log --oneline -1 origin/main)",
+      "PowerShell(git -C $r show --stat --format=\"\" origin/main)",
+      "PowerShell(git -C $r merge --ff-only origin/main)",
+      "Bash(nohup python app.py)",
+      "Bash(disown)",
+      "Bash(powershell -Command \"Get-Process python -ErrorAction SilentlyContinue | Select-Object Id,ProcessName\")",
+      "PowerShell(Get-Process | Where-Object { $_.ProcessName -match 'chrome|python' } | Select-Object Id, ProcessName, MainWindowTitle | Format-Table -AutoSize)",
+      "Bash(python assembly_finale.py)",
+      "Bash(git -C \"/c/Users/olhad/Desktop/Digital Empire\" diff -- \"company/Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente/architettura_completa_7_livelli/Orchestrator/manifest_finale_completo.json\")",
+      "Bash(git -C \"/c/Users/olhad/Desktop/Digital Empire\" diff -w --stat -- \"company/Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente/architettura_completa_7_livelli/Orchestrator/manifest_finale_completo.json\")",
+      "Bash(git -C \"/c/Users/olhad/Desktop/Digital Empire\" diff --ignore-space-at-eol --stat -- \"company/Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente/architettura_completa_7_livelli/Orchestrator/manifest_finale_completo.json\")",
+      "Bash(git -C \"/c/Users/olhad/Desktop/Digital Empire\" checkout -- \"company/Ecosistemi/02-INFO-BUSINESS/Workflow/libri-performanti-multiagente/architettura_completa_7_livelli/Orchestrator/manifest_finale_completo.json\")",
+      "Bash(git -C \"/c/Users/olhad/Desktop/Digital Empire\" status --short)",
+      "Bash(curl -s -X POST http://127.0.0.1:8765/api/launch -H \"Content-Type: application/json\" -d '{\"tile_id\":\"libri\"}')",
+      "Bash(curl -s -X POST http://localhost:5555/api/launch -H \"Content-Type: application/json\" -d '{\"tile_id\":\"libri\"}')",
+      "PowerShell(Get-NetTCPConnection -OwningProcess 10072 -State Listen -ErrorAction SilentlyContinue)",
+      "Bash(curl -s -X POST http://127.0.0.1:51149/api/launch -H \"Content-Type: application/json\" -d '{\"tile_id\":\"libri\"}')",
+      "Bash(curl -s -X POST http://127.0.0.1:51149/api/poll -H \"Content-Type: application/json\" -d '{\"tile_id\":\"libri\"}')",
+      "Bash(curl -s -X POST http://127.0.0.1:51149/api/launch -H \"Content-Type: application/json\" -d '{\"id\":\"libri\"}')",
+      "Bash(curl -s -X POST http://127.0.0.1:51149/api/poll -H \"Content-Type: application/json\" -d '{\"id\":\"libri\"}')",
+      "Bash(curl -s -X POST http://127.0.0.1:61267/api/launch -H \"Content-Type: application/json\" -d '{\"id\":\"libri\"}')",
+      "Bash(curl -s -X POST http://127.0.0.1:61267/api/poll -H \"Content-Type: application/json\" -d '{\"id\":\"libri\"}')",
+      "Bash(curl -s -X POST http://127.0.0.1:61267/api/libri/manifest -H \"Content-Type: application/json\" -d '{}')",
+      "Bash(git -C \"/c/Users/olhad/Desktop/Digital Empire\" diff --stat -- .claude/settings.json YOUTUBE-AUTOMATION-FACTORY/.claude/settings.json)",
+      "Bash(taskkill //PID 13472 //F)"
+    ],
+    "ask": [
+      "Bash(git push*)",
+      "Bash(git reset --hard*)",
+      "Bash(git clean*)",
+      "Bash(git checkout -- *)",
+      "Bash(git restore*)",
+      "Bash(rm *)",
+      "Bash(Remove-Item*)",
+      "Bash(*--force*)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Utente\\.claude",
+      "C:\\Users\\olhad\\Desktop\\Digital Empire\\company\\Ecosistemi\\02-INFO-BUSINESS\\Workflow"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/empire-sync.ps1 -Mode pull",
+            "timeout": 90
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/empire-sync.ps1 -Mode push",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}
