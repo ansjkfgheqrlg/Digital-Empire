@@ -255,9 +255,25 @@
       "titolo": "Chiudere B-008: Git LFS o gitignore mirato per i blob (PDF/DOCX/PNG) prima che la produzione KDP/Caroselli/YouTube faccia ingrassare il repo senza controllo",
       "stato": "da_fare",
       "note": "SECONDARIA: fare solo se una primaria e' bloccata. Vedi BACKLOG.md B-008. Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
+    },
+    {
+      "id": "TASK-PREVENTA-CANALI-W1",
+      "owner": "Neri",
+      "giorno": "Settimana 1 (24-30 ago 2026)",
+      "titolo": "Preventa: aggiungere fonti lead (Instagram + Libreria Inserzioni Meta, oltre Google Maps esistente) e canale invio Gmail (oltre WhatsApp esistente) — anche solo 1 delle 3 va bene per questa settimana",
+      "stato": "da_fare",
+      "note": "Primo task operativo di Neri (pivot da ruolo organizzativo, 2026-08-23). Emperator Agent lo segue da vicino. Dettaglio in TASK-NERI-20260824-SETTIMANA-01.md"
+    },
+    {
+      "id": "TASK-OUTREACHFACTORY-CANALI-W1",
+      "owner": "Neri",
+      "giorno": "Settimana 1 (24-30 ago 2026)",
+      "titolo": "Outreach Factory: aggiungere 1 canale nuovo (es. Pagine Gialle) o sistemare uno dei 3 esistenti (Email/IG/LinkedIn) se non gira piu bene",
+      "stato": "da_fare",
+      "note": "Prodotto flagship potenziale piu alto (PIANO-MAESTRO 23). Neri decide la strada e motiva la scelta nel checkpoint. Dettaglio in TASK-NERI-20260824-SETTIMANA-01.md"
     }
   ],
-  "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md + company/Memory/tasks/TASK-GAEL-20260824-SETTIMANA-01.md (cadenza settimanale da 2026-08-23)",
+  "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md + company/Memory/tasks/TASK-GAEL-20260824-SETTIMANA-01.md + TASK-NERI-20260824-SETTIMANA-01.md (cadenza settimanale da 2026-08-23)",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-08-23 (Max: passaggio a task settimanali; assegnate 3 primarie TASK-KDP-W1/TASK-CAROSELLI-W1/TASK-PUBLISHER-W1 + 3 secondarie/fallback TASK-ARENA-SESSION-W1/TASK-MEMORY-SYNC-W1/TASK-GITLFS-W1 a Gael)"
+  "aggiornato": "2026-08-23 (Max: passaggio a task settimanali; 3 primarie + 3 secondarie a Gael; Neri passa a operativo su Outreach con 2 task W1, supporto mentore Emperator Agent)"
 }

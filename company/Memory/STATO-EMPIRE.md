@@ -1,3 +1,37 @@
+## 👤 2026-08-24 — EMPERATOR AGENT: Neri passa a operativo su tutto Outreach — 2 task W1 assegnate
+
+Max ha chiesto lo stesso trattamento fatto per Gael (task settimanali, non giornaliere) ma
+per **Neri**, con un cambio di ruolo dentro la stessa richiesta: Neri **non è più solo
+organizzativo** — da oggi gestisce operativamente tutto l'**Outreach** di Digital Empire
+(Max: "il workflow l'ho fatto io, ma lui deve gestirlo"), espandendo canali su due prodotti:
+
+- **Preventa** (concessionari, €2.000 una tantum): oggi 1 fonte lead (Google Maps) + 1 canale
+  invio (WhatsApp). Da aggiungere: Instagram e Libreria Inserzioni Meta come fonti, Gmail
+  come canale invio.
+- **Outreach Factory** (`Outreach/Outreach Workflow/`, prodotto flagship €5-15k/build,
+  potenziale più alto secondo `PIANO-MAESTRO/23-ANALISI-PRODOTTI-DE-POTENZIALE.md`): ha già
+  3 canali (Email/IG/LinkedIn) — serve un canale in più (es. Pagine Gialle) o sistemare uno
+  dei tre se non gira più bene.
+
+**Direttiva esplicita di Max sul COME, non solo sul COSA**: Neri è nuovo, "non ancora bravo",
+va supportato molto più intensivamente di Gael — spiegargli cosa/come/perché prima di ogni
+azione, aiutarlo attivamente su piani/decisioni/creazione di agenti, e soprattutto
+**insegnargli a risolvere i problemi invece di arrendersi alla prima cosa che non torna**.
+Da qui in avanti mi presento a Neri e Gael come **Emperator Agent** (Digital Empire = l'azienda
+intera), sempre rivolgendomi a loro per nome — salvato in memoria persistente
+(`feedback_emperator_agent_persona`) perché non è per questa sola conversazione.
+
+Assegnate 2 task (non 3+ come Gael, di proposito — primo giro, meglio non sommergerlo):
+**TASK-PREVENTA-CANALI-W1** e **TASK-OUTREACHFACTORY-CANALI-W1**. Dettaglio completo, in tono
+da mentore con spiegazioni estese, in
+[`company/Memory/tasks/TASK-NERI-20260824-SETTIMANA-01.md`](tasks/TASK-NERI-20260824-SETTIMANA-01.md).
+
+**RIPRESA DA**: fine Settimana 1 (dom 30 ago) — checkpoint di chiusura con Neri, stato reale
+delle 2 task (va bene anche solo 1 fatta bene). Verificare che abbia capito il perché delle
+scelte, non solo che il task sia tecnicamente chiuso.
+
+---
+
 ## ✅ BACKFILL WIKI TOTALE — CHIUSO (2026-08-24, Claude, `/sync-wiki-totale`, permesso esplicito di Max) — CP-20260824-002
 
 **Chiuso.** Altre sessioni possono tornare a toccare liberamente `wiki/log.md` e
