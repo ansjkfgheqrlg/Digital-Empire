@@ -1,5 +1,132 @@
-# STATO EMPIRE -- aggiornato 2026-08-23 (Claude: EMPIRE STUDIO ripreso dopo stop crediti — Andrei Pascu cat1-copywriting video 11/29 completato (pipeline 9 stage, coverage 100% frame), gate anti-clichè hook applicato realmente a `cro-copy-architect`, blocco Python/yt-dlp/ffmpeg della sessione precedente verificato risolto — CP-20260823-003 · Claude: Mappa Digital Empire aperta (cartelle+nuclei, canvas navigabile) — CP-20260823-004 · Claude: WORKFLOW LIBRI — audit completo e riparazione: il gate delle pagine diventava verde quando il PDF non si faceva, le lineette non venivano controllate nel copy (5 gia' consegnate), "mai un capitolo uguale a un altro" era una regola senza controllo; aggiunti EPUB, paratesto (copyright/recensione/Also by), `kdp pubblicato --asin`, metriche di produzione, disciplina di nicchia bloccante; 127 test verdi (prima non giravano: mancavano 3 dipendenze su 6) — CP-20260823-002 · Claude: WIKI — trovato e colmato buco reale di 16gg tra 06 e 22 agosto (16 checkpoint di lavoro reale mai riversati nella wiki), causa identificata (due sistemi di memoria paralleli, solo company/Memory rispettato sempre), colmato lo scope agosto su richiesta di Max, resto dell'estate in backlog B-013; NERVE-SOLVE reso davvero automatico via terzo hook UserPromptSubmit — CP-20260823-001 · Claude: NERVE-SOLVE — Orchestration Layer 1 (Problem Solving Engine) estratto e implementato come skill Claude Code operativa (`.claude/skills/nerve-solve/`), primo di 3 sistemi nervosi pianificati per il Modello Internet Artificiale della holding; scartato il kernel Python crittografico orfano della fonte (mai completato, motore reasoning mai costruito) — CP-20260822-001 · Claude: CP-7 CHIUSO — The Second-Hand Spellbook, terzo libro, 115 pagine reali PUBBLICABILE in 48 minuti; il gate ha bocciato 3 volte (scrivo corto in fretta) e la prova ha falsificato CP-3 — CP-20260820-001 · Claude: UN LIBRO IN MEZZ'ORA — CP-1..CP-6 fatti (gate `kdp blocco` a 0,06s, bersaglio al centro, codice 41s->27,6s), CP-7 prova cronometrata in sospeso: manca l'argomento — CP-20260819-002 · Claude: piano kdp_workflow — prese le 3 parti deterministiche (troncamento, copy BISAC/bio/HTML, scheda ispirazione), rifiutata l'architettura con model_caller gia' archiviata; 77 test verdi — CP-20260819-003 · Claude: NIENTE LINEETTE LUNGHE nei libri (regola Gael) + The Ninth Winter e The Quiet Hours entrambi PUBBLICABILE con PDF, copertina e copy — CP-20260818-002 · Claude: YOUTUBE-AUTOMATION-FACTORY — PRIMO VIDEO REALE PUBBLICATO su @Legamidiamore (youtu.be/2t4BZR3KAiU, scelta deliberata di Max: Public non Private), upload finale completato a mano da Max dopo pipeline 100% automatizzata — CP-20260818-001 · Claude: PDF SEMPRE + stima pagine corretta a 320 parole/pagina — la regola "1500 parole a capitolo" produceva libri sotto il minimo di 115 pagine; The Ninth Winter a 36.814 parole / 115 pagine reali — CP-20260817-002 · Claude: THE NINTH WINTER FINITO — 24/24 capitoli, 34.897 parole, dentro il target; prima verifica end-to-end del flusso "lo scrivo io", manca solo la copertina — CP-20260817-001 · Claude: LIBRI KDP — CAMBIO DI MODELLO: il libro lo scrive Claude in sessione, il Python smette di chiamare modelli e diventa attrezzatura; Arena archiviata dopo 3 tentativi falliti; 60 test verdi (prima la suite andava in timeout) — CP-20260815-002 · Claude: LIBRI KDP tornano su LM Arena — flusso a 5 fasi costruito tranne l'aggancio, bloccato in attesa della prova sul captcha (Fase 0 da lanciare al PC), 83 test verdi — CP-20260815-003 · Claude: YOUTUBE-AUTOMATION-FACTORY — credential-keeper + wiring reale Legami d'Amore, voce femminile/upload/skip-thumbnail/tag SEO/freschezza video cablati — CP-20260815-001 · Claude: APEX-7 CALC LAYER — calcolatore a 16 moduli (probabilità, royalty KDP, rendimenti), ponte JSON predisposto verso gli altri layer, 39+49+4 test verdi — CP-20260814-003 · Claude: KDP 4 STEP — primo giro end-to-end, STEP 0/1 verdi su Amazon reale, STEP 2 scriveva col modello sbagliato (wrapper .cmd), 47 test verdi, bloccato sul limite di spesa — CP-20260814-001 · Claude: APEX-7 — i 3 stream di produzione passano dai 7 gate, main.py riparte su Windows, censimento chiuso con ADR-011, 49+4+11 test verdi — CP-20260813-002 · Claude: ORCHESTRATION LAYER APEX-7 innestato in 11-APEX-7-CORE — 7 quality gate che bloccano davvero, motore condiviso intatto, 46/46 test — CP-20260813-003 · Claude: wrapper pubblicazione IG caroselli Preventa, dry-run verificato, filone salvato dopo 6gg scoperto solo in chat — CP-20260812-001 ·
+## ⚠️ COORDINAMENTO — 2026-08-24, Claude: BACKFILL WIKI TOTALE in corso (`/sync-wiki-totale`, permesso esplicito di Max)
+
+**Lavoro grosso in corso su file condivisi:** `second-brain-vault/wiki/log.md` e
+`second-brain-vault/wiki/index.md` (+ nuove pagine in `wiki/{projects,concepts,entities,tools,sources}/`).
+Gap misurato: 228 checkpoint su 47 date con lavoro reale, solo 17 date riflesse in `wiki/log.md`
+→ 30 date (2026-06-10 → 2026-08-20) senza riscontro wiki, backlog B-019 incluso su via libera
+esplicita di Max. Se un'altra sessione (Gael/Cursor/altro Claude) sta scrivendo su `wiki/log.md`
+o `wiki/index.md` in questo momento: **non toccare in parallelo**, aspetta il checkpoint di
+chiusura di questo backfill (cercare "BACKFILL WIKI TOTALE — CHIUSO" in questo file) per evitare
+collisioni tipo B-009. EMPIRE STUDIO (batch paralleli video 15/16/17, vedi sezione sotto) NON è
+toccato da questo lavoro — perimetri disgiunti (wiki/{tools,concepts,...} vs runs/, wiki-syncer
+già scrive solo su Source_Andrei_Pascu_*).
+
+---
+
+# STATO EMPIRE -- aggiornato 2026-08-23 (Claude: BATCH 1 PARALLELI — limite di spesa mensile colpito lanciando 4 agenti insieme (video 14-17), solo 1/4 completo (video 14), architettura anti-collisione confermata funzionante (zero collisioni tra i 4 agenti) ma 2ª collisione checkpoint scoperta con SESSIONE ESTERNA (CP-20260823-001 sovrascritto da lavoro Fliki non correlato, riparato), stato di ripresa esatto per video 15/16/17 documentato — CP-20260823-010 · Claude: EMPIRE STUDIO video 13/29 chiuso + report sessione consegnato a Max (contenuti/%/tempi) + scope missione confermato (~81 video curati, non 323) + passaggio a batch paralleli di agenti approvato, batch 1 lanciato (video 14-17) — CP-20260823-008 · Claude: PONTE memory-wiki-bridge + comando `/sync-wiki-totale` — Max ha chiesto conferma se tutto finisce in automatico nella wiki: risposta no, causa trovata (wiki-syncer copriva solo Empire Studio, il lavoro interno company/Memory non aveva NESSUN percorso verso la wiki), costruito il secondo ponte esplicito (agente 7-file gemello di wiki-syncer + comando on-demand con report MATCH/GAP), ADR-012, backlog storico B-019 lasciato esplicitamente fuori scope — CP-20260823-007 · Claude: EMPIRE STUDIO STOP su richiesta Max a metà video 13/29 — stato salvato per intero, nessun lavoro perso, ripresa esatta documentata — CP-20260823-006 · Claude: EMPIRE STUDIO continua — Andrei Pascu cat1-copywriting video 12/29 completato (10 strategie email copywriting, CR/CTR + A/B testing + subject line), skill `emails` patchata realmente x2, yt-dlp aggiornato (403 risolto) — CP-20260823-005 · Claude: EMPIRE STUDIO ripreso dopo stop crediti — Andrei Pascu cat1-copywriting video 11/29 completato (pipeline 9 stage, coverage 100% frame), gate anti-clichè hook applicato realmente a `cro-copy-architect`, blocco Python/yt-dlp/ffmpeg della sessione precedente verificato risolto — CP-20260823-003 · Cursor: Mappa Digital Empire aperta (cartelle+nuclei, canvas navigabile) — CP-20260823-004 · Claude: WORKFLOW LIBRI — audit completo e riparazione: il gate delle pagine diventava verde quando il PDF non si faceva, le lineette non venivano controllate nel copy (5 gia' consegnate), "mai un capitolo uguale a un altro" era una regola senza controllo; aggiunti EPUB, paratesto (copyright/recensione/Also by), `kdp pubblicato --asin`, metriche di produzione, disciplina di nicchia bloccante; 127 test verdi (prima non giravano: mancavano 3 dipendenze su 6) — CP-20260823-002 · Claude: WIKI — trovato e colmato buco reale di 16gg tra 06 e 22 agosto (16 checkpoint di lavoro reale mai riversati nella wiki), causa identificata (due sistemi di memoria paralleli, solo company/Memory rispettato sempre), colmato lo scope agosto su richiesta di Max, resto dell'estate in backlog B-013; NERVE-SOLVE reso davvero automatico via terzo hook UserPromptSubmit — CP-20260823-001 · Claude: NERVE-SOLVE — Orchestration Layer 1 (Problem Solving Engine) estratto e implementato come skill Claude Code operativa (`.claude/skills/nerve-solve/`), primo di 3 sistemi nervosi pianificati per il Modello Internet Artificiale della holding; scartato il kernel Python crittografico orfano della fonte (mai completato, motore reasoning mai costruito) — CP-20260822-001 · Claude: CP-7 CHIUSO — The Second-Hand Spellbook, terzo libro, 115 pagine reali PUBBLICABILE in 48 minuti; il gate ha bocciato 3 volte (scrivo corto in fretta) e la prova ha falsificato CP-3 — CP-20260820-001 · Claude: UN LIBRO IN MEZZ'ORA — CP-1..CP-6 fatti (gate `kdp blocco` a 0,06s, bersaglio al centro, codice 41s->27,6s), CP-7 prova cronometrata in sospeso: manca l'argomento — CP-20260819-002 · Claude: piano kdp_workflow — prese le 3 parti deterministiche (troncamento, copy BISAC/bio/HTML, scheda ispirazione), rifiutata l'architettura con model_caller gia' archiviata; 77 test verdi — CP-20260819-003 · Claude: NIENTE LINEETTE LUNGHE nei libri (regola Gael) + The Ninth Winter e The Quiet Hours entrambi PUBBLICABILE con PDF, copertina e copy — CP-20260818-002 · Claude: YOUTUBE-AUTOMATION-FACTORY — PRIMO VIDEO REALE PUBBLICATO su @Legamidiamore (youtu.be/2t4BZR3KAiU, scelta deliberata di Max: Public non Private), upload finale completato a mano da Max dopo pipeline 100% automatizzata — CP-20260818-001 · Claude: PDF SEMPRE + stima pagine corretta a 320 parole/pagina — la regola "1500 parole a capitolo" produceva libri sotto il minimo di 115 pagine; The Ninth Winter a 36.814 parole / 115 pagine reali — CP-20260817-002 · Claude: THE NINTH WINTER FINITO — 24/24 capitoli, 34.897 parole, dentro il target; prima verifica end-to-end del flusso "lo scrivo io", manca solo la copertina — CP-20260817-001 · Claude: LIBRI KDP — CAMBIO DI MODELLO: il libro lo scrive Claude in sessione, il Python smette di chiamare modelli e diventa attrezzatura; Arena archiviata dopo 3 tentativi falliti; 60 test verdi (prima la suite andava in timeout) — CP-20260815-002 · Claude: LIBRI KDP tornano su LM Arena — flusso a 5 fasi costruito tranne l'aggancio, bloccato in attesa della prova sul captcha (Fase 0 da lanciare al PC), 83 test verdi — CP-20260815-003 · Claude: YOUTUBE-AUTOMATION-FACTORY — credential-keeper + wiring reale Legami d'Amore, voce femminile/upload/skip-thumbnail/tag SEO/freschezza video cablati — CP-20260815-001 · Claude: APEX-7 CALC LAYER — calcolatore a 16 moduli (probabilità, royalty KDP, rendimenti), ponte JSON predisposto verso gli altri layer, 39+49+4 test verdi — CP-20260814-003 · Claude: KDP 4 STEP — primo giro end-to-end, STEP 0/1 verdi su Amazon reale, STEP 2 scriveva col modello sbagliato (wrapper .cmd), 47 test verdi, bloccato sul limite di spesa — CP-20260814-001 · Claude: APEX-7 — i 3 stream di produzione passano dai 7 gate, main.py riparte su Windows, censimento chiuso con ADR-011, 49+4+11 test verdi — CP-20260813-002 · Claude: ORCHESTRATION LAYER APEX-7 innestato in 11-APEX-7-CORE — 7 quality gate che bloccano davvero, motore condiviso intatto, 46/46 test — CP-20260813-003 · Claude: wrapper pubblicazione IG caroselli Preventa, dry-run verificato, filone salvato dopo 6gg scoperto solo in chat — CP-20260812-001 ·
 Claude: PRIMO LIBRO KDP COMPLETO — "The Quiet Hours", 115 pagine reali + copertina, pacchetto pronto — CP-20260808-002 · Claude: Aureus — pulsante unico "Produci video + copertina", catena YouTube Factory incatenata e verificata — CP-20260808-001 · Claude: PIANO KDP — LM Arena abbandonato per il testo (captcha non aggirabile), si passa a Claude, copertine restano su LM Arena — CP-20260807-001 · Claude: Consolidamento reparto caroselli — Ramo D integrato in CF-R5, non più orfano — CP-20260806-005 · Claude: PIANO KDP 67 — CP7 Cover Generator scritto, CP9 completo lato codice — CP-20260806-004 · Claude: PIANO KDP 67 — bug architetturale LM Arena risolto (sessione leggera), hang residuo confermato lato servizio — CP-20260806-003 · Claude: Arsenale Caroselli, libreria output per prodotto — CP-20260806-002 · Claude: YOUTUBE — fabbrica parametrizzata multi-canale, primo script @Legamidiamore verde su tutti i gate F1-F5 — CP-20260806-001 · Claude: Primo carosello Preventa REALE generato+scaricato, verificato pixel per pixel — CP-20260805-013 · Claude: YOUTUBE @Legamidiamore — studio copy multi-canale + calendario 10gg — CP-20260805-012 · Claude: PIANO KDP 67 — CP4 LM Arena Client costruito e verificato — CP-20260805-011 · Claude: YOUTUBE — pausa Dose Mentale, pivot @Legamidiamore, login reale + audit sbloccato — CP-20260805-009 · Claude: Progetto Preventa carousel — 4 bug reali fixati nel motore ArenaAI + login Google bloccato — CP-20260805-008 · Claude: PIANO KDP 67 — LM Arena SBLOCCATO, CP1 chiuso per intero — CP-20260805-007 · Claude: PIANO KDP 67 — bug autore CP2 risolto (verificato live), RESEARCH reale integrata in CP9, LM Arena ancora bloccato — CP-20260805-006 · Claude: YOUTUBE-AUTOMATION-FACTORY, i 4 gap dell'audit costruiti e agganciati per davvero — CP-20260805-005 · Claude: PIANO KDP 67 — CP1 Amazon chiuso (sessione reale), CP2 verificato live, LM Arena bloccato — CP-20260805-004 · Claude: prompt Arena "S7 Strategy Factory" assegnato a Neri — CP-20260805-003 · Claude: PIANO KDP 67 — 5/13 checkpoint chiusi (CP0/CP3/CP6/CP8/CP11), bloccato su login manuale Gael per CP1 — CP-20260805-002 · Claude: audit YOUTUBE-AUTOMATION-FACTORY + mappa file-per-file + collisione live con Gael, PAUSA su crediti — CP-20260804-001 · Claude: Fase 3 Reparto Produzione + Progetto Preventa carousel — CP-20260803-008 · Claude: primo incarico reale a NERI — strategia Stream S7, ricerche+report+architetture — CP-20260803-007 · Claude: workflow Libri Performanti + modulo Aureus — CP-20260803-006 · Fase 1 filtro SOLO-import reale — CP-20260803-005 · Gael: STREAM-S7-BOT ricognizione — CP-20260803-001 · Gael: motore YouTube riscritto su @dosementale — CP-20260731-003 · Max: skill apex-7 verificata già su GitHub — CP-20260731-002 · Claude: Carousel Factory PLAN-v1 (mentalità-brutale) · piano 3 fasi outreach [filtro import/IG-LinkedIn gated/reparto produzione+Preventa carousel] — CP-20260803-004 · Bibbia Messaggi Outreach + enforcement reale — CP-20260731-005 · flusso S7/Mintify assegnato a Gael — CP-20260731-004)
+
+## 🌉 2026-08-23 — CLAUDE: PONTE memory-wiki-bridge + `/sync-wiki-totale` — CP-20260823-007
+
+Max ha chiesto conferma diretta: tutto quello che succede nelle conversazioni finisce
+automaticamente nella wiki? Risposta netta: **no**. Solo il contenuto ingerito da Empire Studio
+(video/tiktok/web) aveva un agente di sync verso `second-brain-vault/wiki/`. Il lavoro interno
+in `company/Memory/` (checkpoint, ADR, STATO-EMPIRE — REGOLA ZERO, sempre rispettato) non aveva
+**nessun** percorso verso la wiki. E' la stessa causa gia' trovata a mano il 2026-08-23 stesso
+(buco 16gg, CP-20260823-001) — qui viene risolta con un meccanismo permanente, non un audit
+una-tantum.
+
+Costruito:
+- **memory-wiki-bridge** — nuovo agente 7-file (`~/.claude/skills/memory-empire/departments/
+  ingestion-archive/memory-wiki-bridge/`), gemello di `wiki-syncer` ma per company/Memory.
+- **`/sync-wiki-totale`** — nuovo comando (`~/.claude/skills/sync-wiki-totale/`), zero domande:
+  diffa checkpoint/ADR/STATO-EMPIRE contro wiki/log.md+index.md, colma i gap (pagine
+  cross-linkate o solo log.md secondo rilevanza), verifica grafo senza pagine orfane
+  (knowledge-cartographer), riporta conteggio MATCH/GAP esplicito.
+- `routing-map.md` + `department-lead.md` (ingestion-archive) aggiornati con la Pipeline B.
+- **ADR-012** (`company/Memory/decisions/ADR-012-ponte-memory-wiki.md`): decisione registrata,
+  sync resta on-demand (non automatico a ogni checkpoint) finche' non verificato pulito.
+
+**Deliberatamente NON fatto qui:** eseguire il comando sul backlog storico (B-019, buco
+pre-luglio 2026) — resta a via libera esplicita di Max, come gia' deciso per il gap di agosto.
+
+**RIPRESA DA:** eseguire `/sync-wiki-totale` sul periodo corrente per validare che produce
+pagine pulite; poi chiedere a Max se procedere con B-019.
+
+---
+
+## 📊 2026-08-23 — CLAUDE: video 13/29 chiuso, report sessione + scope confermato + batch avviato — CP-20260823-008
+
+Video 13/29 (`fGpz-uOgr4k`, "email marketing povero, email marketing ricco") completato da dove
+si era fermato in CP-20260823-006 (frame e VTT già letti, non rifatti). 4 KA, 1 Source page
+(nessun Concept nuovo — riciclo dei pattern già visti in 11-12). Nessuna skill patchata
+(ridondante). Attribuzione riga-personaggio segnalata esplicitamente come non verificata dai
+frame statici (NO-FINTO).
+
+**Report di sessione consegnato a Max** (contenuti analizzati, punto esatto, % completamento,
+stima tempi, analisi NERVE-SOLVE su parallelizzazione) — vedi trascrizione conversazione o
+`CP-20260823-008.md` per il riepilogo.
+
+**Decisioni di Max raccolte:**
+1. Scope missione = **~81 video curati** del MASTER-RUN-TRACKER (cat1 completo + selezione
+   prioritaria cat2-cat7), NON i 323 video interi del canale.
+2. **Approvato passaggio a batch paralleli di agenti** (3-4 video insieme) da qui in avanti, con
+   architettura anti-collisione: agenti isolati per cartella video, nessuna scrittura su file
+   condivisi da parte loro, serializzazione a cura del conduttore a fine batch.
+
+**Batch 1 lanciato**: video 14/29 (`nP4ojCzvjr8`), 15/29 (`yX0XZh2PSYo`), 16/29 (`L5_Z63nxXjI`),
+17/29 (`Pv5uzIxp96U`) — 4 agenti paralleli.
+
+**RIPRESA DA:** attendere completamento batch 1, poi conduttore serializza gli aggiornamenti
+condivisi (tracker/wiki-index/log/STATO-EMPIRE/checkpoint per ciascun video) e valuta enrichment
+aggregato prima di lanciare il batch successivo (18-21 o successivi).
+
+---
+
+## 🛑 2026-08-23 — CLAUDE: EMPIRE STUDIO STOP a metà video 13/29 (richiesta Max) — CP-20260823-006
+
+Max ha chiesto di fermarsi ("ok basta fermiamoci metti un checkpoint salva tutto") mentre era in
+lavorazione il video 13/29 (`fGpz-uOgr4k`, "email marketing povero, email marketing ricco", 29s).
+**Nessun lavoro perso**, stato salvato per intero:
+
+- Stage 1-2 fatti: 15 frame @2s, tutti già letti nativamente. VTT letto integrale.
+- Stage 3 osservazioni: split-screen persona "povero" (top, badge "Fatturato: €32") vs "ricco"
+  (bottom, badge "Fatturato: €92K"), inquadratura statica per tutta la durata. Overlay finale
+  "outEmail" (brand/tool — **DA VERIFICARE**, non confermato). 4 coppie tematiche di righe email
+  (promo sconto, welcome newsletter, urgenza, personalizzazione) che contrappongono stile
+  generico/clichè a stile specifico/personale.
+- **Attenzione per la ripresa**: l'attribuzione esatta di quale riga dica il personaggio top vs
+  bottom NON è verificabile dai frame statici (nessuna caption on-screen, solo audio VTT) — non
+  forzarla senza ulteriore verifica (principio NO-FINTO).
+- **Stage 4-9 (video-analysis.md, wiki, Memory Empire) NON fatti** — è il prossimo passo esatto.
+
+Dettaglio completo: `company/Memory/checkpoints/CP-20260823-006.md`. Tracker aggiornato:
+`SKILL & Agenti/Empire Studio Suite/empire-studio/runs/andrei-pascu-001/MASTER-RUN-TRACKER.md`
+(video 13 marcato **IN CORSO**, non TODO né DONE).
+
+**RIPRESA DA:** scrivere `video-analysis.md` per `fGpz-uOgr4k` (Stage 1-3 già fatti, non rifare),
+poi Stage 7 wiki + Memory Empire C-H + checkpoint + segnare DONE. Poi video 14/29 `nP4ojCzvjr8` e
+proseguire — missione ancora aperta (~281 video rimanenti dopo il 13).
+
+---
+
+## 🎬 2026-08-23 — CLAUDE: EMPIRE STUDIO continua — Andrei Pascu cat1-copywriting video 12/29 — CP-20260823-005
+
+Continuazione diretta della missione aperta in CP-20260823-003 (ingerire tutto Andrei Pascu +
+enrichment reale skill DE). **Video 12/29 completato** (`hb89lccIacY`, "10 strategie PROVATE per
+EMAIL copywriting per vendere sempre", 11m49s, 355 frame, 13 letti nativamente su 10 capitoli +
+outro dopo verifica formato talking-head uniforme): 20 KA, 4 pattern, 2 pagine wiki nuove
+(`Source_Andrei_Pascu_10_Strategie_Email_Copywriting`, `Concept_CTR_vs_CR_Trappola_Metriche`).
+
+**Enrichment reale**: skill `emails` (`references/copy-guidelines.md`) patchata 2 volte — nuova
+sezione "Subject Lines" (limite caratteri, no merge-field iniziale, no clickbait, emoji con
+cautela) + distinzione CR/CTR e caveat click-per-link aggiunti a "Metrics to Track".
+
+**Incidente tecnico risolto**: Stage 2 dava HTTP 403 Forbidden (yt-dlp 2026.7.4 throttled da
+YouTube) — aggiornato a yt-dlp 2026.8.19, risolto. Annotato per sessioni future.
+
+**⚠️ Collisione checkpoint scoperta e risolta**: avevo scritto `CP-20260823-004.md` senza
+verificare che il numero fosse già usato in parallelo da Cursor Grok (mappa Digital Empire) —
+sovrascritto per errore, scoperto rileggendo questo file prima di editarlo, ripristinato da git
+history, rinumerato a 005. Dettaglio e regola anti-recidiva in `CP-20260823-005.md`.
+
+Missione resta APERTA: 17 video cat1 rimanenti + ~294 video cat2-7. Dettaglio:
+`company/Memory/checkpoints/CP-20260823-005.md`.
+
+**RIPRESA DA:** video 13/29 — `fGpz-uOgr4k` ("email marketing povero, email marketing ricco") —
+`SKILL & Agenti/Empire Studio Suite/empire-studio/runs/andrei-pascu-001/MASTER-RUN-TRACKER.md`.
+
+---
 
 ## 🗺️ 2026-08-23 — CURSOR: mappa Digital Empire aperta (cartelle + nuclei) — CP-20260823-004
 

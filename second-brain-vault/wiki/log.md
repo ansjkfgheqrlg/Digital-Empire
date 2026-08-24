@@ -1,5 +1,57 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-23 (Empire Studio — batch 1 paralleli: limite spesa colpito, video 14/29 completo, seconda collisione checkpoint riparata, Claude/Max)
+- INGEST: video 14/29 (`nP4ojCzvjr8`, "L'email marketing dal POV dei lettori", 28s) completato
+  da un agente parallelo — 14/14 frame letti, 6 KA, nessun concept nuovo (motivato). 1 pagina
+  Source nuova.
+- ESITO BATCH: lanciati 4 agenti paralleli (video 14-17), solo 1 completato per intero — gli
+  altri 3 terminati a metà per limite di spesa mensile dell'account (non un problema di
+  architettura: zero collisioni sui file condivisi tra i 4 agenti, isolamento verificato).
+  Stato esatto di ripresa per video 15/16/17 in `MASTER-RUN-TRACKER.md` e
+  `company/Memory/checkpoints/CP-20260823-010.md`.
+- COLLISIONE CHECKPOINT (2ª di oggi, causa diversa): `CP-20260823-001.md` sovrascritto da
+  un'altra sessione parallela (contenuto Fliki/YouTube non correlato) — riparato: originale
+  ripristinato da git history, contenuto Fliki spostato in `CP-20260823-009.md`. Nessun
+  contenuto perso.
+- WATCH-001: N_video=14 (solo video 14 pienamente confermato Memory Empire completo in questo
+  passaggio; 15/16/17 in stato intermedio, non ancora contati). Checkpoint: CP-20260823-010.
+
+## 2026-08-23 (Empire Studio — Andrei Pascu cat1-copywriting video 13/29 chiuso, avvio batch parallelo, Claude/Max)
+- INGEST: pipeline completa per `fGpz-uOgr4k` ("email marketing povero, email marketing ricco",
+  29s, 15/15 frame letti = coverage 100%). 4 KA, 1 pagina Source nuova (nessun Concept nuovo:
+  video ricicla pattern già catalogati nei video 11-12, non introduce contenuto tecnico nuovo).
+  Attribuzione riga-personaggio (povero/ricco) segnalata esplicitamente come non verificata dai
+  frame statici — nessuna caption on-screen, solo audio/VTT (principio NO-FINTO rispettato: non
+  si inventa un'attribuzione che non si può confermare).
+- DECISIONE MAX: scope missione confermato = ~81 video curati del tracker (non i 323 del canale
+  intero). Approvato passaggio a batch paralleli di agenti (3-4 video insieme) per velocizzare le
+  sessioni rimanenti, con architettura anti-collisione (agenti isolati per cartella video, nessuna
+  scrittura su file condivisi da parte loro, serializzazione dei tracker fatta dal conduttore).
+- WATCH-001: N_video=13, N_MemoryEmpire=13 → MATCH ✅. Checkpoint: CP-20260823-008.
+
+## 2026-08-23 (Ponte memory-wiki-bridge + /sync-wiki-totale, Claude/Max)
+- BUILD: Max ha chiesto conferma se tutto finisce automaticamente in wiki → no, solo Empire
+  Studio ci arrivava (wiki-syncer). company/Memory (checkpoint/ADR/STATO-EMPIRE, REGOLA ZERO)
+  non aveva nessun percorso verso la wiki — causa identica al buco 16gg trovato piu' sotto in
+  questo stesso log (entry `## 2026-08-23` backfill). Costruito nuovo agente 7-file
+  **memory-wiki-bridge** (gemello di wiki-syncer, reparto ingestion-archive di Memory Empire) +
+  comando **`/sync-wiki-totale`** (zero domande, report MATCH/GAP, verifica grafo senza pagine
+  orfane via knowledge-cartographer). ADR-012 registrato. Backlog storico B-019 (pre-luglio
+  2026) lasciato esplicitamente fuori scope, richiede via libera Max. → 1 pagina wiki nuova
+  (tools/Tool_Memory_Wiki_Bridge.md) + index.md aggiornato. CP-20260823-007.
+
+## 2026-08-23 (Empire Studio continua — Andrei Pascu cat1-copywriting video 12/29, Claude/Max)
+- INGEST: pipeline completa per `hb89lccIacY` ("10 strategie PROVATE per EMAIL copywriting per
+  vendere sempre", 11m49s, 355 frame, 13 letti nativamente su 10 capitoli + outro dopo verifica
+  formato uniforme talking-head). 20 KA, 4 pattern, 1 nuova Source page + 1 nuovo Concept page
+  (CTR vs CR — trappola di lettura metriche, generalizzabile oltre l'email).
+- ENRICHMENT REALE (non solo proposto): skill `emails` (`references/copy-guidelines.md`) patchata
+  2 volte — sezione "Subject Lines" nuova (limite caratteri, no nome iniziale, no clickbait, emoji)
+  + distinzione CR/CTR e caveat click-per-link aggiunti a "Metrics to Track".
+- NOTA TECNICA: yt-dlp 2026.7.4 dava 403 Forbidden su questo video — aggiornato a 2026.8.19,
+  risolto. Segnalato per sessioni future.
+- WATCH-001: N_video=12, N_MemoryEmpire=12 → MATCH ✅. Checkpoint: CP-20260823-005 (004 era già preso da Cursor Grok, mappa Digital Empire — collisione risolta, nessun contenuto perso).
+
 ## 2026-08-23 (Empire Studio ripreso — Andrei Pascu cat1-copywriting video 11/29, Claude/Max)
 - INGEST: run andrei-pascu-001 ripreso dopo blocco (mancava Python/yt-dlp/ffmpeg in sessione
   precedente, ora verificato presente). Pipeline completa per `nRm7JLsP1bc` ("Basta usare
