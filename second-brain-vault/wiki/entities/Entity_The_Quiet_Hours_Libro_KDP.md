@@ -32,6 +32,8 @@ riusa la stessa pipeline senza dover ririsolvere gli stessi bug.
 
 ## Connessioni
 - [[Tool_Pipeline_Libri_KDP]] — il motore che lo ha prodotto
+- [[Entity_The_Ninth_Winter_Libro_KDP]] — secondo libro, stessa pipeline, correzione calibrazione 320 parole/pagina
+- [[Entity_The_Second_Hand_Spellbook_Libro_KDP]] — terzo libro, stessa pipeline
 - [[projects/Piano_Maestro_EMPIRE_OS]]
 
 ## Status

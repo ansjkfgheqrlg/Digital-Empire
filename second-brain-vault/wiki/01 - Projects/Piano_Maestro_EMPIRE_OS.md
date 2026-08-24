@@ -3,7 +3,7 @@ Type: PROJECT
 Status: Active
 Tags: #empire-os #piano-maestro #holding #ecosistemi #agenti #memory-first
 Created: 2026-06-10
-Last updated: 2026-06-10
+Last updated: 2026-08-24
 ---
 
 # Piano Maestro EMPIRE OS — Digital Empire Group
@@ -52,6 +52,41 @@ CLAUDE.md di Digital Empire.
 2. **ADR-002** — memory-first: nessun task chiuso senza CP; nessun task parte senza interrogare Memory.
 3. **ADR-003** — migrazione = wrap, mai riscrittura; sistemi attivi (outreach) intoccabili.
 
+## Evoluzione V2 (2026-06-11 → 06-30) — pivot di scala (ADR-007)
+Dopo F1 (scaffolding `company/` completo, 92 check) e F2 (Backbone/ruflo operativo), Max ha
+dato una **direttiva di scala** ([[Concept_Decisioni_Architetturali_ADR|ADR-007]]): i
+reparti diventano team CF-grade da 6-10 agenti con workflow propri, i mega-reparti "aziende
+dentro l'azienda", e nascono due nuove strutture di governo:
+- **Genesi Core** (`company/Genesi-Core/`) — organo **ARCHITETTURA** (progetta la forma
+  giusta di ogni artefatto, dossier 14) + organo **FORGE** (costruisce il contenuto attorno
+  al blueprint, gemello di ARCHITETTURA), confine ferreo struttura/contenuto.
+- **MAXIMILIAN** (`company/MAXIMILIAN/`, dossier 12) — organo LX che incarna il giudizio di
+  Max: 8 agenti MX-*, gate **5-bis** ("Max approverebbe?") innestato nel ciclo a 9 passi
+  ([[Concept_Decisioni_Architetturali_ADR|ADR-006]]) dopo ogni BUILD, skill
+  `maximilian-standard-gate` (8 test binari deterministici).
+- **Board C-Suite V2 completo**: le 7 figure (CEO, Chief-Forge, CTO, COO, CMO, CRO, CFO)
+  ricostruite come cartelle-workflow CF-grade (10 agenti + ≥2 workflow ciascuna, ~70 agenti
+  totali), progettate da ARCHITETTURA e costruite da FORGE — prima prova che il Genesi Core
+  funziona davvero, ogni figura passata dal gate 5-bis.
+- **Ecosistemi V2 costruiti reparto-per-reparto (STEP 5)**: **04-MARKETING completo 6/6**
+  (114 file/44 agenti/22 workflow, incl. il wrap del Copy Workflow Orchestration Layer
+  attivo — [[Tool_Copy_Workflow_Orchestration]]), **02-INFO-BUSINESS completo 5/5**,
+  **03-CONTENT-FACTORY completo 9/9** (CF-R0 Director → CF-R8 Apprendimento, mega-reparto a
+  5 livelli gerarchici), **01-AGENCY 6/10** (A1-A6: Ricerca/Acquisizione/Preventivi/Delivery/
+  Copy interno/Marketing interno — A2 wrappa il runtime outreach LIVE per ADR-003, A7-A10
+  non confermati completi in questo backfill).
+
+Ogni build ha rispettato [[Concept_Decisioni_Architetturali_ADR|ADR-003]] (wrap, non
+riscrittura — verificato con `git diff` sui file v1/motori attivi ad ogni checkpoint) e ha
+attraversato struct-gate + review 5-bis MAXIMILIAN prima del commit.
+
+## Ecosistema 11 — APEX-7-CORE (motore di orchestrazione condiviso)
+Vedi [[Tool_APEX7_Core_Motore_Condiviso]]: motore comune di quality-gate/orchestrazione
+nato per curare la frammentazione di 6 implementazioni APEX-7 divergenti trovate nel repo
+([[Concept_Decisioni_Architetturali_ADR|ADR-010]], [[Concept_Decisioni_Architetturali_ADR|ADR-011]]).
+Pilota riuscito su [[Concept_YouTube_Automation_Factory]]; Stream-S7-Bot valutato e non
+migrato per non fare un downgrade funzionale su un sistema con soldi reali.
+
 ## Pending noti
 - Token FB scaduto (scraper outreach) — fase B0 dossier 01.
 - Catalogo InfoBusiness: prezzo Manuale Claude Code "NON LO SO" + doppio ruolo contraddittorio — bloccante B1 dossier 02.
@@ -61,9 +96,15 @@ CLAUDE.md di Digital Empire.
 - [[projects/Exponium/Exponium_Content_Factory_Studio]] — modello architettonico
 - [[Tool_ClaudeFlow_Orchestration]] — Ruflo
 - [[Concept_Pivot_Implementazioni_AI]] — offerta agency
-- [[Tool_Copy_Workflow_Orchestration]] — motore copy
+- [[Tool_Copy_Workflow_Orchestration]] — motore copy (wrappato in 04-MARKETING/L2.1)
 - [[Empire_Studio]] · [[Memory_Empire]] — ecosistema INTELLIGENCE
 - [[Agency_Empire_Landing]] — vetrina
+- [[Concept_Decisioni_Architetturali_ADR]] — tutte le decisioni ADR-001..012 di governo del piano
+- [[Tool_APEX7_Core_Motore_Condiviso]] — ecosistema 11, motore di orchestrazione condiviso
 
 ## 📍 Status
-- Created: 2026-06-10 · Fase corrente: **F1** (MEMORY costruita; prossimo: scaffolding company/ completo)
+- Created: 2026-06-10 · Aggiornato: 2026-08-24 (backfill storico 06-08/2026, permesso
+  esplicito Max) · Fase: V2 in costruzione reparto-per-reparto (STEP 5), Genesi Core e Board
+  C-Suite V2 completi, 3 ecosistemi V2 chiusi (04-MARKETING, 02-INFO-BUSINESS,
+  03-CONTENT-FACTORY), 01-AGENCY 6/10 — stato dei restanti ecosistemi (05, 06-split, 07, 08,
+  09) non verificato in questo backfill, richiede lettura diretta di STATO-EMPIRE.md corrente

@@ -1,5 +1,26 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-24 (Empire Studio — batch 1 chiuso: video 15/16/17 completati in ripresa, Claude)
+- INGEST: video 15/29 (`yX0XZh2PSYo`, "Merge Tag nell'email marketing", 91s) — completato:
+  mancava solo `enrichment-report.md` (video-analysis.md e wiki page già presenti da batch 1).
+  46/46 frame (coverage 100%). 7 KA, 3 pattern. Enrichment applicato: patch a
+  `emails/copy-guidelines.md` (fallback chaining generalizzato oltre il nome).
+- INGEST: video 16/29 (`L5_Z63nxXjI`, "Ho rivisto i VOSTRI copy", 11m55s) — Memory Empire
+  completo (4 file) + pagina wiki Source, partendo dal video-analysis.md già scritto dal batch 1.
+  20/358 frame campionati (coverage 100% dei 6 copy mostrati). 19 KA, 4 pattern — il più denso
+  del run cat1 fino a quel punto. Enrichment applicato: patch a
+  `cro-copy-architect/pattern-persuasione-cro.md` (nota scarsità/registro brand di lusso).
+- INGEST: video 17/29 (`Pv5uzIxp96U`, "Correggo i vostri copy", 33m00s) — pipeline completa da
+  zero (Stage 1-2 erano gli unici già fatti dal batch 1): video-analysis.md scritto da transcript
+  + 13/991 frame campionati, poi Memory Empire completo + pagina wiki Source. 24 KA, 5 pattern —
+  il più denso del run cat1. Conferma indipendente della REGOLA 1 APSOC ("mai soluzione in
+  headline") già esistente nel framework DE. Enrichment applicato: patch a
+  `cro-copy-architect/pattern-persuasione-cro.md` (ancoraggio multi-livello / tre scatole).
+- CHIUSURA BATCH 1: video 14-17/29 tutti completi (14 dal batch parallelo del 2026-08-23, 15-17
+  completati in questa sessione di ripresa). cat1-copywriting: 17/29 completati. Checkpoint di
+  chiusura: `company/Memory/checkpoints/CP-20260824-001.md` (verificare numerazione prima di
+  scrivere).
+
 ## 2026-08-23 (Empire Studio — batch 1 paralleli: limite spesa colpito, video 14/29 completo, seconda collisione checkpoint riparata, Claude/Max)
 - INGEST: video 14/29 (`nP4ojCzvjr8`, "L'email marketing dal POV dei lettori", 28s) completato
   da un agente parallelo — 14/14 frame letti, 6 KA, nessun concept nuovo (motivato). 1 pagina
@@ -359,3 +380,266 @@
 
 ## 2026-08-23
 - BACKFILL (buco reale trovato, non simulato): `log.md` non aveva NESSUNA entry tra 2026-08-06 e 2026-08-22 (16 giorni), mentre `company/Memory/checkpoints/` ha 16 checkpoint reali nello stesso periodo (libro KDP, primo video YouTube pubblicato, wrapper IG Preventa, fix self-healing WhatsApp, ecc.) — la causa è l'esistenza di due sistemi di memoria paralleli: `company/Memory/` (REGOLA ZERO) è stato rispettato sempre, la wiki (REGOLA FONDAMENTALE) no. Colmato lo scope concordato con Max (solo il gap 06→22 agosto, non tutta l'estate): 2 pagine nuove (entities/Entity_The_Quiet_Hours_Libro_KDP.md, tools/Tool_Pipeline_Libri_KDP.md — primo libro KDP mai completato, prima non aveva NESSUNA pagina) + 3 pagine aggiornate (entities/Entity_Legami_dAmore_Channel.md: primo video reale pubblicato + 3 in produzione + 4 bug fix; projects/Preventa/Preventa_Logica_Completa_Metodo.md: fix self-healing rete su invio WhatsApp; projects/Preventa/Progetto_Preventa_Carousel.md: wrapper pubblicazione IG dry-run) + index.md aggiornato. Il resto dell'estate (prima di giugno-luglio) NON è stato auditato — richiede via libera esplicita separata.
+
+---
+
+# BACKFILL STORICO 2026-06-10 → 2026-08-20 (eseguito 2026-08-24, `/sync-wiki-totale`, permesso esplicito di Max)
+
+Colma le 30 date con checkpoint reale in `company/Memory/checkpoints/` (228 checkpoint su 47
+date di lavoro reale) ma senza nessun riscontro in questo log — il gap storico lasciato
+esplicitamente fuori scope dal backfill del 2026-08-23 (B-019). Ordine cronologico
+(vecchio→nuovo). Dettaglio checkpoint per checkpoint in `company/Memory/checkpoints/CP-*.md`.
+
+## 2026-06-10 (Piano Maestro EMPIRE OS + GitHub monorepo, Claude/Max)
+- BUILD: prodotto il piano fondativo `PIANO-MAESTRO/` (10 dossier ecosistema via swarm 7
+  agenti paralleli) + scaffolding iniziale `company/Memory/` (ADR-001 EMPIRE OS 10
+  ecosistemi, ADR-002 memory-first, ADR-003 wrap-non-riscrittura). Workspace intero portato
+  su GitHub monorepo privato con sync bidirezionale Max↔Gael (ADR-004, `scripts/empire-sync.ps1`).
+  Skill `empire-context` creata e installata a livello progetto. → 1 pagina aggiornata
+  (projects/Piano_Maestro_EMPIRE_OS.md). CP-20260610-001/002/003.
+
+## 2026-06-11 (F1-F4 scaffolding + Backbone + metodo 9 passi, Gael/Max)
+- BUILD: F1 scaffolding `company/` completo (92 check gate verde) — organigramma, Mandato,
+  Board C-Suite v1, 10 ecosistemi, Backbone, Guilds/Sentinels. F2 Backbone operativo
+  (ruflo/claude-flow installato, BUS/BRAIN/Identity-HR). F3 migrazione asset (51
+  skill/workflow mappati, 8 wrapper L3). F4 AGENCY B1 infrastruttura + B2 wrap dei 4
+  workflow outreach esistenti (ADR-003) + gate F4 verde su ciclo dry-run end-to-end.
+- DECISIONE: **ADR-006** — Ciclo di Fase a 9 passi (RECALL→SPEC→PRE-MORTEM→BUILD→GATE→
+  REVIEW→TEST→COMMIT→RETRO), metodo ufficiale per Max e Gael. **ADR-007** — Piano V2,
+  direttiva di scala di Max (reparti=team CF-grade, organo MAXIMILIAN, ecosistema-Mandato).
+  CP-20260611-001..008.
+
+## 2026-06-13 (Errore Memory Empire riconosciuto e corretto, Max)
+- FIX: durante lo studio Andrei Pascu (Empire Studio), il pipeline comunicato a Max ometteva
+  gli stage Memory Empire — errore critico (invariante non negoziabile). Corretto: Memory
+  Empire reso invariante #0 nel session-init protocol di Empire Studio, agenti
+  compliance-auditor/error-triage/silent-observer aggiornati. Apre **ADR-008**. CP-20260613-001.
+
+## 2026-06-16 (Genesi Core: organi ARCHITETTURA+FORGE+MAXIMILIAN, dossier v2, Gael/Max)
+- BUILD: fix collisione git case-insensitive; F1-bis chiuso (0 cartelle vuote, gate verde).
+  V2-2 avviata: dossier **MAXIMILIAN** (12) + **MANDATO-ecosistema** (13); primi due lotti
+  dossier v2 scala (01-AGENCY, 04-MARKETING, 03-CONTENT-FACTORY, 02-INFO-BUSINESS).
+- BUILD: **Genesi Core** costruito in 4 STEP dallo stesso giorno — organo **ARCHITETTURA**
+  (30 file, progetta la forma di ogni artefatto), organo **FORGE** (34 file, costruisce il
+  contenuto attorno al blueprint), organo **MAXIMILIAN** (15 file, review-gate 5-bis "Max
+  approverebbe?"), blueprint Board C-Suite (70 agenti progettati su 7 figure). → 1 pagina
+  nuova (tools/Tool_APEX7_Core_Motore_Condiviso.md riferisce a questo lavoro indirettamente;
+  dettaglio Genesi Core in projects/Piano_Maestro_EMPIRE_OS.md, sezione Evoluzione V2).
+  CP-20260616-001..010.
+
+## 2026-06-17 (Board C-Suite V2: CEO/Chief-Forge/CTO/COO/CMO/CRO, Gael)
+- BUILD: STEP 4-heavy — FORGE costruisce il contenuto delle figure Board dai blueprint.
+  Batch 1 (CEO-Empire-Conductor, Chief-Forge), batch 2 (CTO, COO), batch 3 (CMO, CRO) — ogni
+  figura 10 agenti + 3 workflow CF-grade, review 5-bis MAXIMILIAN APPROVA su tutte.
+  CP-20260617-001..003.
+
+## 2026-06-18 (CFO chiude Board C-Suite 7/7 + 04-MARKETING completo 6/6, Max/Gael)
+- BUILD: CFO completato (Max) → **Board C-Suite V2 7/7 figure complete** (~70 agenti CF-grade).
+  STEP 5: costruiti tutti i 6 reparti di 04-MARKETING (L2.6 Conversion Architecture, L2.5
+  Brand & Creative, L2.2 Advertising, L2.3 Email & Lifecycle, L2.4 Analytics, L2.1
+  Copywriting — wrap del Copy Workflow Orchestration Layer attivo, ADR-003) →
+  **04-MARKETING primo ecosistema V2 intero** (114 file/44 agenti/22 workflow).
+  CP-20260618-001..007.
+
+## 2026-06-19 (03-CONTENT-FACTORY completo 9/9 reparti, Gael)
+- BUILD: costruiti gli 8 reparti CF-R0..CF-R8 del mega-reparto 03-CONTENT-FACTORY (Director,
+  Strategia&Brief, Brand-Kit Registry, Produzione Video, Produzione Testuale, Visual&Design/
+  Caroselli, QA&Gate, Pubblicazione, Apprendimento — CF-R5/CF-R6 chiusi il 06-23, CF-R8 il
+  06-30) → **9/9 reparti completi**, wrap di 3 motori attivi (hf-studio/heygen-studio,
+  carousel-factory, orchestratori Python pubblicazione, tutti ADR-003). CP-20260619-008..016.
+
+## 2026-06-22 (02-INFO-BUSINESS completo 5/5 + 01-AGENCY batch-1, Max)
+- BUILD: STEP 5 — 02-INFO-BUSINESS chiuso 5/5 reparti (PROD/LANC/VEND/COMM/STRA, 94 file/42
+  agenti/12 workflow). 01-AGENCY batch-1: A1-Ricerca, A2-Acquisizione (wrap del runtime
+  outreach LIVE — Outreach Workflow/LinkedIn/Instagram, ADR-003 esemplare), A3-Preventivi →
+  3/10 reparti. CP-20260622-001/002.
+
+## 2026-06-23 (01-AGENCY batch-2, A4-A6, Max)
+- BUILD: A4-Delivery, A5-Copywriting-Interno, A6-Marketing-Interno&Proof → **01-AGENCY 6/10**.
+  CP-20260623-001.
+
+## 2026-06-30 (primo video Andrei Pascu ingerito + PreventivoForge avviato, Max)
+- INGEST: Empire Studio — primo video della run andrei-pascu-001 ingerito integralmente
+  (9CuQI0Cr4Pg, FB Ads pannelli fonoassorbenti) → 2 pagine wiki (già presenti in index.md,
+  sezione Copywriting).
+- BUILD: primo cliente reale **PreventivoForge** avviato (Prof Autocad, poi rinominato
+  Novacar srl) — Half A (Max: scraper/parser/pricer/dealers, prezzo 18.000→21.540€
+  verificato) completata con agenti CF-grade + regole RBI + orchestration. → 1 pagina
+  aggiornata (01 - Projects/Project_Prof_Autocad_PreventivoForge.md). CP-20260630-001/002/003.
+
+## 2026-07-01 (PreventivoForge: Half B + scraping live risolto, Gael/Max)
+- BUILD: Half B completata (Gael — traduzione/copy deterministica, render PDF, QA Gate
+  A/B/C/D, 42 file agenti). Scraping LIVE mobile.de risolto: bypass Akamai Bot Manager via
+  Chrome reale + CDP invece di Playwright puro, parser sui dati veri
+  (`window.__INITIAL_STATE__`). Prova reale: Mercedes GLA 47.490€→51.915€, 4 gate verdi.
+  REGOLE-SACRE (14 regole PDF) + template Novacar + dealer reale + ecosistema Memory propri.
+  CP-20260701-001..004.
+
+## 2026-07-02 (PreventivoForge: App Desktop + PDF via CDP + .exe, Gael)
+- BUILD: App Desktop GUI (prima Tkinter), motore PDF migrato a CDP/Chrome (no Playwright,
+  .exe-ready). PDF rifatto sul modello Novacar (Gate IMG + Gate R, 14 REGOLE), primo .exe
+  costruito e validato con `--selftest`. CP-20260702-001..003.
+
+## 2026-07-03 (PreventivoForge: GUI premium + kill-switch + consegna, Gael/Max)
+- BUILD: GUI premium via pywebview (WebView2, priorità #1 di Max) con fallback Tkinter.
+  Kill-switch abbonamento (`licenza.py`, controllo remoto via Gist) cablato in run.py+app.py.
+  Storico automatico preventivi. **Consegna abbonabile pronta** — `CONSEGNA-NOVACAR.md`, .exe
+  frozen ri-testata 6/6 gate + 14/14 REGOLE. CP-20260703-001/002.
+
+## 2026-07-25 (Refinement agenti operativi APEX-7: misuratore + primi 2 promossi, Max)
+- BUILD: `empire/forge.py` — misuratore di quanto un agente è OPERATIVO vs DOCUMENTALE (6
+  criteri). Fotografia: 439 agenti, 55 operativo/324 parziale/60 documentale. Primi due
+  agenti promossi a operativo: AGENTE-CLOSER-A8, AGENTE-CRO-COPY-ARCHITECT. Filtro corredi
+  aggiunto (evals/failure-modes non contati come agenti). CP-20260725-001/002.
+
+## 2026-07-27 (Sync/preventa-agents Phase A-B, APEX-7 Level 2, audit YT-Factory + F1-F3 reali, Claude/Gael/Max)
+- FIX: conflitto sync GitHub risolto; `preventa-agents` ricostruito nel pattern
+  cartella-per-agente (8 agenti, facade `agents.py` riparata, 13/13 test) dopo un wipe
+  lasciato a metà; bug scraper multi-città (sovrascriveva invece di accumulare) fixato,
+  19 lead ALTA reali generati, Gate-CONTATTI chiudibile onestamente.
+- BUILD: APEX-7 portato a Level 2 operativo end-to-end su Stream S7 (Event Bus, memoria,
+  6 gate a rubrica, meta-agent, orchestrator — test 8/8 sezioni verdi).
+- AUDIT: YOUTUBE-AUTOMATION-FACTORY — scaffolding APEX-7 reale e testato ma **tutte e 6 le
+  fasi hardcoded** (canale/video/script/critic sempre gli stessi, gate strutturalmente
+  incapace di fallire). Corrette nella stessa giornata: F1 (scouting su dati reali, gate
+  Cash Cow bloccante), F2 (fetch live YouTube reale con cache), F3 (script da materiale
+  reale). Agente ANDREI-PASCU-MINER promosso a operativo. → 1 pagina aggiornata
+  (concepts/Concept_YouTube_Automation_Factory.md). CP-20260727-001..015.
+
+## 2026-07-28 (ADR-010 fusione APEX-7 + Preventa→Areus + Stream-S7 trading reale + YT-Factory F4-F7, Claude/Gael/Max)
+- DECISIONE: **ADR-010** — fusione delle implementazioni APEX-7 divergenti su un motore
+  condiviso multi-tenant (`11-APEX-7-CORE`), pilota su YouTube + Stream-S7-Bot.
+- BUILD: Preventa — prezzo €2.000 una tantum chiuso, migrazione da Google Sheets ad Areus
+  (CRM interno), modulo EmpireDesk `preventa.py`. Comando unico `/avvia-estate-wk`.
+  Stream S7: loop trading collegato al bus reale (bug doppia esecuzione fix, RiskManager
+  riscritto, feedback loop reale), poi parser Solana reale + position manager + fix spam
+  segnali (Gael, verificato su transazioni mainnet vere).
+- BUILD: YOUTUBE-AUTOMATION-FACTORY — F4 (spec Fliki multi-scena reale), F5 (metadati/tag
+  reali), F6 (audit onesto, mai metriche finte), dashboard riflette l'esito vero, decisione
+  motivata di **non migrare** Stream-S7-Bot al motore condiviso (implementazione più matura
+  su alcuni assi). → 1 pagina nuova (tools/Tool_APEX7_Core_Motore_Condiviso.md).
+  CP-20260728-001..013.
+
+## 2026-07-29 (Centro di comando empire-wide + outreach WhatsApp reale + pivot @dosementale, Claude/Gael/Max)
+- BUILD: `empire controllo` (porta d'uscita, modello Playwright non OAuth) e `empire
+  cantiere` (porta di costruzione, guida i 3 modelli operativi). TASK-YT-002..007 chiuse
+  (YouTube Factory: tutte le fasi P1 reali).
+- BUILD: Outreach Preventa — invio WhatsApp reale automatizzato (profilo Chromium
+  persistente, non storage_state: le chiavi di sessione WhatsApp Web vivono in IndexedDB),
+  flusso giornaliero `/avvia-outreach-preventa` con Gancio 4 import-focus.
+- CORREZIONE: il primo contenuto YouTube reale generato era ancora sul funnel morto
+  "Manuale Claude Code" — pivot deciso da Gael a **@dosementale** come canale sorgente
+  (replica per un canale da vendere già monetizzato, zero funnel). → 1 pagina aggiornata
+  (entities/Entity_Dose_Mentale_Channel.md). CP-20260729-001..010.
+
+## 2026-07-31 (Motore YouTube riscritto su @dosementale + Bibbia Messaggi Outreach, Gael/Claude/Max)
+- BUILD: `apex7_orchestrator.py` (F1-F5) riscritto per intero su @dosementale — prima era
+  solo il contenuto ad essere cambiato, il motore restava cablato sul Manuale Claude Code
+  (rischio concreto di sovrascrittura). Config Fliki bloccata `NON MODIFICARE` su richiesta
+  di Gael dopo un video approvato.
+- BUILD: **Bibbia dei Messaggi Outreach** (Effetto Barnum, Rainbow, 5 Pilastri) + team di 4
+  agenti + enforcement reale (`rule_keeper_lint.py`, lint deterministico agganciato prima di
+  ogni invio WhatsApp). → 3 pagine wiki già presenti in index.md (sezione Framework).
+  CP-20260731-001..005.
+
+## 2026-08-04 (Audit YOUTUBE-AUTOMATION-FACTORY: 6 claim verificati riga per riga, Claude/Max)
+- AUDIT: verificate riga per riga (non sui checkpoint) le 6 capacità che Max ricordava
+  "implementate perfettamente" — 2 reali ma isolate (mai chiamate dall'orchestratore), 2
+  rimosse per scelta (non mancanti), 2 parziali. Rilevata collisione live con una sessione
+  Gael attiva sugli stessi file → **pausa su richiesta esplicita di Max** (crediti).
+  Nessun file di produzione modificato. CP-20260804-001.
+
+## 2026-08-07 (PIANO KDP: LM Arena abbandonato per il testo, Gael)
+- DECISIONE: dopo 2 giorni di debug reale (captcha non aggirabile oltre il primo messaggio
+  di una sessione, anche con profilo persistente), Gael decide di abbandonare LM Arena per
+  la scrittura dei libri — resta solo per le copertine. Nuovo piano V2-Claude-Code (10
+  checkpoint). CP-20260807-001.
+
+## 2026-08-08 (Aureus pulsante YouTube + primo libro KDP completo, Gael/Claude)
+- BUILD: Aureus/EmpireDesk — pulsante unico "Produci video + copertina" per YouTube Factory
+  (`produci_video_completo.py`, incatena F1-F5 + Arena + Fliki).
+- BUILD: **primo libro KDP completo, "The Quiet Hours"** — 115 pagine reali + copertina,
+  pacchetto pronto (già in wiki, entities/Entity_The_Quiet_Hours_Libro_KDP.md). CP-20260808-001/002.
+
+## 2026-08-12 (Wrapper pubblicazione Instagram caroselli Preventa, Claude/Max)
+- BUILD: `publish_instagram.py` — wrappa il publisher IG reale esistente (ADR-003), dry-run
+  verificato sulle 8 slide del carosello #1. Già documentato in
+  projects/Preventa/Progetto_Preventa_Carousel.md (sezione "Aggiornamento 2026-08-12").
+  CP-20260812-001.
+
+## 2026-08-13 (Outreach self-healing + APEX-7 su 3 stream + orchestration layer 7 gate, Claude)
+- FIX: retry self-healing su `page.goto` in `send_message.py` (3 tentativi, 45s) per errori
+  di rete intermittenti nell'invio WhatsApp.
+- BUILD: i 3 consumatori di produzione (skill-forge, carousel-machine, cold-outreach)
+  passano ora dai 7 gate del motore condiviso; `main.py` di APEX-7-CORE riparato su Windows
+  (non partiva). **ADR-011** — censimento ADR-010 incompleto, 6 implementazioni APEX-7 non 4.
+  Layer di orchestrazione generalizzato innestato in `11-APEX-7-CORE/orchestration/` (audit
+  di uno zip di Max trovato con gate che non bloccavano nulla di reale — es. rendimento 500%
+  certificato). → 1 pagina nuova (tools/Tool_APEX7_Core_Motore_Condiviso.md). CP-20260813-001..003.
+
+## 2026-08-14 (Workflow KDP 4 step riparato + APEX-7 Calc Layer, Claude)
+- FIX: CLI Claude era uno stub mai installato; una volta riparato, il wrapper `.cmd` di npm
+  troncava i prompt multi-riga e ignorava silenziosamente `--model haiku` (si pagava il
+  modello di default). Flusso corretto per rispettare i 4 step dichiarati (nicchia scelta
+  una volta sola, comando `riprendi` per non perdere capitoli già scritti/pagati).
+- BUILD: APEX-7 Calc Layer — 16 moduli di calcolo puro (probabilità, royalty KDP, rendimenti)
+  dietro un'interfaccia JSON pensata per parlare con altri orchestration layer; corretti 2
+  errori finanziari reali trovati nello zip di Max. CP-20260814-001..003.
+
+## 2026-08-15 (Legami d'Amore wiring reale + decisione finale modello scrittura libri, Claude/Gael)
+- BUILD: YouTube Factory cablata su @Legamidiamore (voce femminile, upload, tag SEO a 4
+  livelli, agente permanente `credential-keeper`).
+- DECISIONE: dopo 3 tentativi di automazione falliti (Claude CLI/Haiku, LM Arena ×2), Gael
+  decide che **il libro lo scrive Claude in sessione** — il Python smette di chiamare
+  modelli e diventa attrezzatura di misura/impaginazione. 3 automazioni archiviate con `git
+  mv` (ADR-003, niente cancellato). → 1 pagina aggiornata (tools/Tool_Pipeline_Libri_KDP.md).
+  CP-20260815-001..003.
+
+## 2026-08-16 (Primo test reale F1→F5 legamidiamore, Claude)
+- BUILD: run reale end-to-end su @Legamidiamore, script scritto da Claude su materiale
+  reale (3 iterazioni fino a 12,6 min/critic 8.08), bug tag SEO inquinati da etichette
+  interne di pattern copy trovato e fixato. CP-20260816-001.
+
+## 2026-08-17 (Secondo libro KDP "The Ninth Winter" + bug calibrazione pagine, Claude)
+- BUILD: **"The Ninth Winter" completato** (24/24 capitoli, 34.897 parole) — prima verifica
+  end-to-end del modello "lo scrivo io" su un caso reale imperfetto. Scoperto e corretto un
+  bug di calibrazione: 300 parole/pagina dichiarate, 320 reali misurate su due libri veri —
+  il PDF viene ora generato sempre, non solo su richiesta. → 1 pagina nuova
+  (entities/Entity_The_Ninth_Winter_Libro_KDP.md). CP-20260817-001/002.
+
+## 2026-08-18 (Primo video YouTube pubblicato + regola niente lineette lunghe, Max/Claude)
+- MILESTONE: **primo video reale pubblicato dalla YouTube Automation Factory**, su
+  @Legamidiamore (youtu.be/2t4BZR3KAiU) — upload finale completato a mano da Max dopo che
+  l'automazione Playwright si è scontrata con "Verify it's you" di Google (blocco non
+  aggirabile per design). Scelta deliberata di Max: Public, non Private. Già in wiki
+  (entities/Entity_Legami_dAmore_Channel.md).
+- BUILD: regola "niente lineette lunghe" nei libri (Gael) applicata a mano su 193 righe —
+  The Ninth Winter e The Quiet Hours entrambi PUBBLICABILE con copertina/PDF/copy.
+  CP-20260818-001/002.
+
+## 2026-08-19 (3 video in produzione + piano "un libro in mezz'ora" CP1-6, Claude)
+- BUILD: 3 nuovi video @Legamidiamore in produzione (bug `duration: 720` bloccava ogni
+  generazione Fliki, fixato).
+- BUILD: piano "un libro in mezz'ora" — bersaglio pagine spostato al centro della finestra,
+  gate di blocco in 0,06s, riassunti a formato fisso, codice sceso da 41 a 27,6s (CP-1..6
+  verificati con misure reali). Piano concorrente di Gael (`kdp_workflow/`) valutato: presi
+  3 pezzi buoni (validatore troncamento, copy KDP arricchito, scheda ispirazione), rifiutata
+  l'architettura (già archiviata il 08-15 dopo 3 fallimenti, 5 bug reali trovati nel piano).
+  CP-20260819-001..003.
+
+## 2026-08-20 (Terzo libro KDP "The Second-Hand Spellbook", prova cronometrata, Claude)
+- BUILD: **CP-7 chiuso** — terzo libro completo in 48 minuti (non i 30 pianificati: il gate
+  ha bocciato 3 volte lo stesso difetto, capitoli scritti corti in fretta). L'assunzione
+  "320 parole/pagina" è stata falsificata dal libro stesso (stile diverso, scarto di 4,3
+  pagine) — corretta la regola: generare il PDF reale prima della consegna finale, non
+  fidarsi solo della stima. → 1 pagina nuova
+  (entities/Entity_The_Second_Hand_Spellbook_Libro_KDP.md). CP-20260820-001.
+
+## RIEPILOGO backfill 2026-08-24
+30/30 date con checkpoint reale coperte (log.md). 6 pagine wiki nuove (tools/
+Tool_APEX7_Core_Motore_Condiviso.md, concepts/Concept_Decisioni_Architetturali_ADR.md,
+entities/Entity_The_Ninth_Winter_Libro_KDP.md, entities/Entity_The_Second_Hand_Spellbook_Libro_KDP.md)
++ 6 pagine aggiornate (projects/Piano_Maestro_EMPIRE_OS.md, tools/Tool_Pipeline_Libri_KDP.md,
+concepts/Concept_YouTube_Automation_Factory.md, entities/Entity_Dose_Mentale_Channel.md,
+entities/Entity_The_Quiet_Hours_Libro_KDP.md, 01 - Projects/Project_Prof_Autocad_PreventivoForge.md).
+Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
