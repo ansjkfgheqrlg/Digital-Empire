@@ -1,0 +1,50 @@
+{
+  "kind": "single-video",
+  "id": "L5_Z63nxXjI",
+  "title": "Ho rivisto i VOSTRI copy",
+  "url": "https://www.youtube.com/watch?v=L5_Z63nxXjI",
+  "duration_sec": 715,
+  "uploader": "Andrei Pascu",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Challenge: Sell me a perfume"
+    },
+    {
+      "start": 78,
+      "title": "First comment"
+    },
+    {
+      "start": 222,
+      "title": "Second comment"
+    },
+    {
+      "start": 351,
+      "title": "Third comment"
+    },
+    {
+      "start": 463,
+      "title": "Fourth comment"
+    },
+    {
+      "start": 505,
+      "title": "Fifth comment"
+    },
+    {
+      "start": 604,
+      "title": "Sixth comment"
+    },
+    {
+      "start": 700,
+      "title": "How to improve your copywriting?"
+    }
+  ],
+  "subs": [
+    "runs\\andrei-pascu-001\\cat1-copywriting\\L5_Z63nxXjI\\L5_Z63nxXjI.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\andrei-pascu-001\\cat1-copywriting\\L5_Z63nxXjI\\L5_Z63nxXjI.webp"
+  ],
+  "ingested_at": "2026-08-23T19:28:57",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=L5_Z63nxXjI"
+}

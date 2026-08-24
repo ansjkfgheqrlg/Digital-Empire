@@ -60,6 +60,34 @@
    regolatori restano bloccanti come oggi. Questo documento aggiunge regole, non ne toglie.
 8. **Nessun run è "fatto" finché non è salvato in memoria** — `memory/` del progetto (checkpoint,
    decision log) **e** checkpoint Digital Empire in `company/Memory/checkpoints/`.
+9. **⛔ Clip/soggetti visivi: MAI un uomo da solo — regola permanente, Max 2026-08-23.**
+   È un canale di relazioni/legami maschio-femmina: ogni scena deve mostrare **solo donne**,
+   oppure **una coppia uomo+donna insieme**. Mai una scena con solo un uomo da solo (anche se lo
+   script in quel momento parla di comportamento maschile — la voce narra, l'immagine resta
+   sempre femminile o di coppia). Causa reale: video 02/03 (generati via Playwright, script su
+   segnali maschili) sono usciti con quasi tutte le clip di soli uomini — errore, non ripetere.
+   **Applicazione pratica:** nel flusso Playwright, usare sempre il campo "+ Add visual guide"
+   nella schermata Script-to-video con un testo tipo *"Every scene must show a woman, or a man
+   and a woman together as a couple. Never show a man alone."* prima di premere Generate.
+10. **⛔ Qualità video/voce/sottotitoli — regola permanente, Max 2026-08-23.** Il primo tentativo
+    (video 02/03, voce Karina, modello immagine di default, sottotitoli preset "Basic") è stato
+    giudicato scadente su più fronti:
+    - **Voce:** poco realistica. Nella UI Fliki, scegliere sempre dal tab **"Ultra"** (non
+      "Multilingual") in "Browse voices" — è il tier qualità più alta, non il primo disponibile.
+    - **Qualità immagine/video:** il modello di default nel pannello "AI image style" era "Z Image
+      Turbo" (0.05 credit/immagine, il più economico) — provare un modello di tier superiore se
+      disponibile nel dropdown "Model", non lasciare il default più economico.
+    - **Sottotitoli:** niente sfondo/blocco colorato dietro il testo, dimensione più piccola di
+      quella di default, **niente animazione karaoke/riempimento parola-per-parola**
+      (`highlightSubtitles`-style: NON va bene, nonostante fosse l'invariante storica sull'API —
+      su Playwright si usa la nuova preferenza, più semplice e leggibile), font **Montserrat** (o
+      il più simile disponibile), posizionati più in basso/centrati. Esplorare gli stili
+      sottotitoli reali disponibili nel pannello "Narrator & subtitles" di Fliki (non fermarsi al
+      primo/default "Basic") finché non si trova un preset che rispetta questi criteri, oppure
+      configurarlo manualmente via il pannello "Subtitles" nell'editor dopo la generazione.
+    - Questi 4 criteri (visual guide donna/coppia, voce Ultra, modello immagine non-economico,
+      sottotitoli puliti) vanno applicati a OGNI generazione futura via Playwright, non solo a
+      questo video — nessuna eccezione, nessuna dimenticanza.
 
 ---
 

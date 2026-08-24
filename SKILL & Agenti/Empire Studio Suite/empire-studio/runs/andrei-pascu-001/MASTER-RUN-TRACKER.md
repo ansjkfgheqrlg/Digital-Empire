@@ -1,6 +1,6 @@
 # MASTER RUN TRACKER — andrei-pascu-001
 ## Andrei Pascu: Ecosistema Completo YouTube (323 video)
-**Run creato:** 2026-06-13 | **Ultimo aggiornamento:** 2026-08-23
+**Run creato:** 2026-06-13 | **Ultimo aggiornamento:** 2026-08-24
 **Pipeline:** Empire Studio Suite v2.0 | **Sessioni attive:** Caveman Mode FULL
 
 ---
@@ -9,17 +9,23 @@
 
 | Categoria | Video totali | Completati | In corso | Pending |
 |-----------|-------------|-----------|---------|--------|
-| cat1-copywriting | 29 | 11 | 0 | 18 |
+| cat1-copywriting | 29 | 17 | 0 | 12 |
 | cat2-marketing | ~45 | 0 | 0 | TBD |
 | cat3-freelancer | ~60 | 0 | 0 | TBD |
 | cat4-ai | ~30 | 0 | 0 | TBD |
 | cat5-mindset | ~45 | 0 | 0 | TBD |
 | cat6-soldi | ~30 | 0 | 0 | TBD |
 | cat7-shortform | ~25 | 0 | 0 | TBD |
-| **TOTALE PRIORITÀ** | **~29** | **11** | **0** | **18** |
+| **TOTALE PRIORITÀ** | **~29** | **17** | **0** | **12** |
 
-**RIPRESA DA:** video 12/29 — `hb89lccIacY` ("10 strategie PROVATE per EMAIL copywriting") — Stage 1 (yt_ingest.py) da avviare
-**WATCH-001:** N_video=11 = N_MemoryEmpire=11 → MATCH ✅
+**SCOPE MISSIONE CONFERMATO (Max, 2026-08-23):** ~81 video curati totali (cat1 completo 29 + selezione prioritaria cat2-cat7 già elencata sotto), NON i 323 video interi del canale.
+
+**✅ BATCH 1 — CHIUSO (2026-08-24).** Lanciati 4 agenti paralleli il 2026-08-23: solo 1/4 completato per intero in parallelo (video 14), gli altri 3 morti a metà per "monthly spend limit" — non un fallimento del metodo, un limite di account (dettaglio incidente in `company/Memory/checkpoints/CP-20260823-010.md`). Video 15/16/17 completati in sessione di ripresa (2026-08-24), a partire esattamente dallo stato parziale lasciato dagli agenti (nessuno stage già fatto rifatto): video 15 (mancava solo enrichment-report.md), video 16 (Memory Empire completo da video-analysis.md già scritto), video 17 (video-analysis.md scritto da zero da transcript+frame campionati, poi Memory Empire completo). Batch 1 = 4/4 video completi.
+
+**MODALITÀ DA ORA (Max, 2026-08-23):** batch paralleli di agenti (3-4 video insieme). Ogni agente lavora isolato nella cartella del proprio video, nessuna scrittura su file condivisi (questo tracker, STATO-EMPIRE, wiki index/log, checkpoint) — il conduttore serializza gli aggiornamenti condivisi a fine batch. **Lezione batch 1**: verificare il budget/limite di spesa PRIMA di lanciare un batch, non solo l'architettura anti-collisione — per il batch 2, valutare dimensione ridotta (2-3 invece di 4).
+
+**RIPRESA DA:** proseguire con video 18/29 e successivi (cat1 rimanenti: 18-29, poi cat2-cat7 curati).
+**WATCH-001:** N_video=17 = N_MemoryEmpire=17 → MATCH ✅
 
 ---
 
@@ -40,12 +46,12 @@ Ordine di ingestion stabilito. Non modificare senza creare ADR.
 | 9 | `IWCHN_mE2Vo` | Copywriter Analizza Copywriting (Live) [ITA] | 1858 | ✅ | ✅ | **DONE** |
 | 10 | `Ahp_6rHSOsU` | Usa Google Docs come un copywriter PRO (8 consigli) | 334 | ✅ | ✅ | **DONE** |
 | 11 | `nRm7JLsP1bc` | Basta usare formule clichè di copywriting | 23 | ✅ | ✅ | **DONE** |
-| 12 | `hb89lccIacY` | 10 strategie PROVATE per EMAIL copywriting | ⬜ | ⬜ | ⬜ | **TODO** |
-| 13 | `fGpz-uOgr4k` | email marketing povero, email marketing ricco | ⬜ | ⬜ | ⬜ | **TODO** |
-| 14 | `nP4ojCzvjr8` | L'email marketing dal POV dei lettori | ⬜ | ⬜ | ⬜ | **TODO** |
-| 15 | `yX0XZh2PSYo` | Merge Tag nell'email marketing | ⬜ | ⬜ | ⬜ | **TODO** |
-| 16 | `L5_Z63nxXjI` | I reviewed YOUR copies | ⬜ | ⬜ | ⬜ | **TODO** |
-| 17 | `Pv5uzIxp96U` | I correct your copy | ⬜ | ⬜ | ⬜ | **TODO** |
+| 12 | `hb89lccIacY` | 10 strategie PROVATE per EMAIL copywriting | 355 | ✅ | ✅ | **DONE** |
+| 13 | `fGpz-uOgr4k` | email marketing povero, email marketing ricco | 15 | ✅ | ✅ | **DONE** |
+| 14 | `nP4ojCzvjr8` | L'email marketing dal POV dei lettori | 14 | ✅ | ✅ | **DONE** |
+| 15 | `yX0XZh2PSYo` | Merge Tag nell'email marketing | 46 | ✅ | ✅ | **DONE** |
+| 16 | `L5_Z63nxXjI` | Ho rivisto i VOSTRI copy | 358 | ✅ | ✅ | **DONE** |
+| 17 | `Pv5uzIxp96U` | Correggo i vostri copy | 991 | ✅ | ✅ | **DONE** |
 | 18 | `VbxTgp_fz8Y` | Revisione copy oF girl | ⬜ | ⬜ | ⬜ | **TODO** |
 | 19 | `3zJpI8-7TW4` | Buttons that sell: here's how to make CTAs | ⬜ | ⬜ | ⬜ | **TODO** |
 | 20 | `IYd-VOngDog` | La parte più importante (quasi segreta) nel copywriting | ⬜ | ⬜ | ⬜ | **TODO** |
@@ -221,13 +227,13 @@ memory-empire/memory/ingestions/YYYY-MM-DD-[titolo-slug].md
 
 | Sessione | Video # | Target |
 |----------|---------|--------|
-| Corrente | 11/29 | nRm7JLsP1bc (Basta formule clichè) — COMPLETATO |
-| Prossima | 12/29 | hb89lccIacY (10 strategie email copywriting) |
-| +2 | 13/29 | fGpz-uOgr4k (email marketing povero/ricco) |
-| +3 | 14/29 | nP4ojCzvjr8 (email marketing dal POV lettori) |
-| ... | ... | continua per 18 video rimanenti cat1 |
+| Corrente | 17/29 | Pv5uzIxp96U (Correggo i vostri copy) — COMPLETATO |
+| Batch 1 (parallelo) | 14-17/29 | nP4ojCzvjr8, yX0XZh2PSYo, L5_Z63nxXjI, Pv5uzIxp96U — 4 agenti in parallelo, poi chiuso in ripresa singola — COMPLETATO |
+| Batch 2+ | 18-29/29 | continua a batch da 2-3 (dimensione ridotta per lezione spend-limit), poi cat2-cat7 (selezione curata, vedi sotto) |
 
-**Stima totale sessioni cat1**: ~18 sessioni aggiuntive (1 video/sessione)
+**Stima**: ~12 video rimanenti in cat1 dopo il batch 1 + ~52 video curati cat2-7 = ~64 video, in
+batch da 3-4 → ~16-21 sessioni batch invece di ~64 sessioni singole (modalità approvata da Max,
+CP-20260823-008).
 **Stima totale sessioni run completo**: ~60-80 sessioni (tutte cat)
 
 ---

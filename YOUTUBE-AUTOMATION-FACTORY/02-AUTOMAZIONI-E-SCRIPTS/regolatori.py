@@ -262,7 +262,13 @@ def verifica_configurazione(payload: dict, flag_espliciti: dict | None = None) -
 # --------------------------------------------------------------------------------------
 # regolatore-qualita — si misura il FILE VERO, mai la risposta dell'API
 # --------------------------------------------------------------------------------------
-DURATA_MINIMA_S = 720
+# Target aggiornato da Max il 2026-08-23: 8-10 minuti reali (prima era "minimo 12 min",
+# nessun tetto massimo). Motivo reale: gli script da 2200+ parole/23 scene (12+ min) sono
+# rimasti bloccati indefinitamente sia via API che via Playwright — uno script accorciato a
+# 1384 parole/14 scene (8:45 reali) e' invece stato generato con successo. Finestra stretta
+# non e' solo preferenza stilistica, e' anche il range che si e' dimostrato affidabile.
+DURATA_MINIMA_S = 480
+DURATA_MASSIMA_S = 600
 
 
 def verifica_qualita(percorso_mp4: str) -> dict:
@@ -285,7 +291,9 @@ def verifica_qualita(percorso_mp4: str) -> dict:
 
     problemi = []
     if durata < DURATA_MINIMA_S:
-        problemi.append(f"durata {durata:.0f}s < {DURATA_MINIMA_S}s richiesti")
+        problemi.append(f"durata {durata:.0f}s < {DURATA_MINIMA_S}s richiesti (minimo)")
+    elif durata > DURATA_MASSIMA_S:
+        problemi.append(f"durata {durata:.0f}s > {DURATA_MASSIMA_S}s richiesti (massimo)")
     if not video:
         problemi.append("nessuno stream video")
     elif (video.get("width"), video.get("height")) != (1920, 1080):

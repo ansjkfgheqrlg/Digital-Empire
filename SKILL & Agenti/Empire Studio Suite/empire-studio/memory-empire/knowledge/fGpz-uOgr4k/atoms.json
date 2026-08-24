@@ -1,0 +1,11 @@
+{
+  "video_id": "fGpz-uOgr4k",
+  "total_atoms": 4,
+  "attribution_caveat": "Attribuzione riga-per-personaggio (povero/ricco) NON verificata dai frame statici, ipotesi basata su qualita' del contenuto. Segnalato esplicitamente in video-analysis.md.",
+  "atoms": [
+    {"id":"KA-01","source":"fGpz-uOgr4k#00:00:00","frame":"frame-001","category":"Copy / Anti-pattern promo","section":"S1","tags":["sconto","generico","hook"],"atom":"Esempio povero ipotizzato: '20% su una nuova collezione per ragazze' (sconto generico) vs riga con hook di personalita' diretto ('Se si veste cosi io le chiedo il numero')."},
+    {"id":"KA-02","source":"fGpz-uOgr4k#00:00:05","frame":"frame-003","category":"Copy / Anti-pattern welcome","section":"S1","tags":["welcome-email","permesso","debole"],"atom":"Esempio povero ipotizzato: 'Benvenuto nella newsletter. Posso scriverti una volta al giorno?' — welcome email che chiede permesso in modo burocratico invece di dare valore/personalita'."},
+    {"id":"KA-03","source":"fGpz-uOgr4k#00:00:10","frame":"frame-006","category":"Copy / Anti-pattern urgency","section":"S1","tags":["urgency","scarcity","cliche"],"atom":"Doppio esempio urgency cliche: 'Offerta imperdibile solo per te' e 'Ultima possibilita per risparmiare 20%' — scarcity generica senza specificita, vs tono caldo/personale ('Ho preparato una cosa per te')."},
+    {"id":"KA-04","source":"fGpz-uOgr4k#00:00:18","frame":"frame-010","category":"Copy / Personalizzazione","section":"S1","tags":["nome","personalizzazione","storytelling"],"atom":"Esempio ricco ipotizzato: nome usato a meta frase come domanda diretta ('Antonio, sai che giorno e oggi?') + promessa numerata + chiusura riflessiva, coerente con lo stile email lunghe/coinvolgenti gia' visto nel video 12."}
+  ]
+}
