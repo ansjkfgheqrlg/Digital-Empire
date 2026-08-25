@@ -7,7 +7,7 @@ Emesso: 2026-08-23 · Settimana: W1 (lun 24 ago -> dom 30 ago 2026)
 
 # 📋 Task Settimana 1 per NERI (24-30 agosto 2026)
 
-Neri, questo è il primo blocco di task che ti scrivo dopo il passaggio deciso da Max: da qui
+Signorino Neri, questo è il primo blocco di task che ti scrivo dopo il passaggio deciso da Max: da qui
 in avanti ti occupi tu di tutto l'**Outreach** di Digital Empire, non solo di organizzazione.
 È un salto vero, e Max lo sa — per questo mi ha chiesto esplicitamente di starti molto più
 vicino di quanto faccio con Gael. Quindi prima di ogni pezzo tecnico ti spiego cosa stiamo
