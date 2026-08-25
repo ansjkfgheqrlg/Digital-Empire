@@ -1,5 +1,5 @@
 {
-  "status": "apertura_chrome_reale",
-  "ts": "2026-08-11T10:11:12",
-  "messaggio": "Apro chrome.exe vero, non Playwright — attendo la porta di debug."
+  "status": "chrome_gia_aperto",
+  "ts": "2026-08-25T11:57:21",
+  "messaggio": "Riuso la finestra Chrome reale gia' aperta."
 }

@@ -1,6 +1,6 @@
 # MASTER RUN TRACKER — andrei-pascu-001
 ## Andrei Pascu: Ecosistema Completo YouTube (323 video)
-**Run creato:** 2026-06-13 | **Ultimo aggiornamento:** 2026-08-24
+**Run creato:** 2026-06-13 | **Ultimo aggiornamento:** 2026-08-25
 **Pipeline:** Empire Studio Suite v2.0 | **Sessioni attive:** Caveman Mode FULL
 
 ---
@@ -9,23 +9,25 @@
 
 | Categoria | Video totali | Completati | In corso | Pending |
 |-----------|-------------|-----------|---------|--------|
-| cat1-copywriting | 29 | 17 | 0 | 12 |
+| cat1-copywriting | 29 | 19 | 1 | 9 |
 | cat2-marketing | ~45 | 0 | 0 | TBD |
 | cat3-freelancer | ~60 | 0 | 0 | TBD |
 | cat4-ai | ~30 | 0 | 0 | TBD |
 | cat5-mindset | ~45 | 0 | 0 | TBD |
 | cat6-soldi | ~30 | 0 | 0 | TBD |
 | cat7-shortform | ~25 | 0 | 0 | TBD |
-| **TOTALE PRIORITÀ** | **~29** | **17** | **0** | **12** |
+| **TOTALE PRIORITÀ** | **~29** | **19** | **1** | **9** |
 
 **SCOPE MISSIONE CONFERMATO (Max, 2026-08-23):** ~81 video curati totali (cat1 completo 29 + selezione prioritaria cat2-cat7 già elencata sotto), NON i 323 video interi del canale.
 
-**✅ BATCH 1 — CHIUSO (2026-08-24).** Lanciati 4 agenti paralleli il 2026-08-23: solo 1/4 completato per intero in parallelo (video 14), gli altri 3 morti a metà per "monthly spend limit" — non un fallimento del metodo, un limite di account (dettaglio incidente in `company/Memory/checkpoints/CP-20260823-010.md`). Video 15/16/17 completati in sessione di ripresa (2026-08-24), a partire esattamente dallo stato parziale lasciato dagli agenti (nessuno stage già fatto rifatto): video 15 (mancava solo enrichment-report.md), video 16 (Memory Empire completo da video-analysis.md già scritto), video 17 (video-analysis.md scritto da zero da transcript+frame campionati, poi Memory Empire completo). Batch 1 = 4/4 video completi.
+**⚠️ PIANO 2 GIORNI (Max, 2026-08-24, via NERVE-SOLVE).** Vincolo duro: limite di spesa mensile colpito 2 volte in <24h (batch1: 1/4, batch2: 1/3), sempre dentro agenti Agent-tool paralleli, mai nel thread principale sequenziale (8/8 + poi altri completati in sequenza senza un solo fallimento). Decisione: **niente più batch paralleli**, solo esecuzione sequenziale nel thread principale. Livello 1 (quasi certo): completare cat1 al 100%. Livello 2 (stretch, dipende dal budget reale): proseguire su cat2-cat7. Dettaglio piano in checkpoint del 2026-08-24.
 
-**MODALITÀ DA ORA (Max, 2026-08-23):** batch paralleli di agenti (3-4 video insieme). Ogni agente lavora isolato nella cartella del proprio video, nessuna scrittura su file condivisi (questo tracker, STATO-EMPIRE, wiki index/log, checkpoint) — il conduttore serializza gli aggiornamenti condivisi a fine batch. **Lezione batch 1**: verificare il budget/limite di spesa PRIMA di lanciare un batch, non solo l'architettura anti-collisione — per il batch 2, valutare dimensione ridotta (2-3 invece di 4).
+**BATCH 2 — RISULTATO (2026-08-24):** 3 agenti paralleli lanciati (video 18-20), limite di spesa colpito di nuovo. Esito reale (migliore del batch 1): **video 20 completato per intero dall'agente stesso** (pipeline+ME+wiki tutti presenti e verificati su disco), video 18 quasi (video-analysis.md scritto, ME+wiki mancanti — completati in ripresa sequenziale il 2026-08-24), video 19 minimo (solo Stage 1-2, 218 frame estratti).
 
-**RIPRESA DA:** proseguire con video 18/29 e successivi (cat1 rimanenti: 18-29, poi cat2-cat7 curati).
-**WATCH-001:** N_video=17 = N_MemoryEmpire=17 → MATCH ✅
+**MODALITÀ DA ORA:** SOLO esecuzione sequenziale nel thread principale. Batch paralleli Agent-tool SOSPESI fino a chiarimento del vincolo di spesa (vedi piano 2 giorni sopra).
+
+**RIPRESA DA:** video 19/29 (`3zJpI8-7TW4`) — Stage 1-2 già fatti (218 frame estratti, non rifare), video-analysis.md + Memory Empire + wiki da fare. Poi video 21-29 (9 video mai iniziati), poi cat2-cat7 curati.
+**WATCH-001:** N_video=19 = N_MemoryEmpire=19 → MATCH ✅
 
 ---
 
@@ -52,9 +54,9 @@ Ordine di ingestion stabilito. Non modificare senza creare ADR.
 | 15 | `yX0XZh2PSYo` | Merge Tag nell'email marketing | 46 | ✅ | ✅ | **DONE** |
 | 16 | `L5_Z63nxXjI` | Ho rivisto i VOSTRI copy | 358 | ✅ | ✅ | **DONE** |
 | 17 | `Pv5uzIxp96U` | Correggo i vostri copy | 991 | ✅ | ✅ | **DONE** |
-| 18 | `VbxTgp_fz8Y` | Revisione copy oF girl | ⬜ | ⬜ | ⬜ | **TODO** |
-| 19 | `3zJpI8-7TW4` | Buttons that sell: here's how to make CTAs | ⬜ | ⬜ | ⬜ | **TODO** |
-| 20 | `IYd-VOngDog` | La parte più importante (quasi segreta) nel copywriting | ⬜ | ⬜ | ⬜ | **TODO** |
+| 18 | `VbxTgp_fz8Y` | Revisione copy oF girl | 41 | ✅ | ✅ | **DONE** |
+| 19 | `3zJpI8-7TW4` | Buttons that sell: here's how to make CTAs | 218 | ⬜ | ⬜ | **IN CORSO** (Stage 1-2 fatti, analysis+ME+wiki da fare) |
+| 20 | `IYd-VOngDog` | La parte più importante (quasi segreta) nel copywriting | 20 | ✅ | ✅ | **DONE** |
 | 21 | `wTpfKuHJhOE` | Hormozi writes his own copy | ⬜ | ⬜ | ⬜ | **TODO** |
 | 22 | `k_DXsUCIkr8` | The real script of the Wolf of Wall Street | ⬜ | ⬜ | ⬜ | **TODO** |
 | 23 | `NydMBZ2nUTE` | Copione Wolf of Wall Street | ⬜ | ⬜ | ⬜ | **TODO** |

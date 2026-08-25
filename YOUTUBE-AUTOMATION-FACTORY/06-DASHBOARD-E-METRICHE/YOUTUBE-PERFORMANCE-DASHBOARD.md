@@ -1,11 +1,11 @@
 # YouTube Automation Factory - Performance Dashboard
 
-- **Ultimo Run ID**: yt-20260819-144459-3fd40c
-- **Data Aggiornamento**: 2026-08-19 14:45:00
+- **Ultimo Run ID**: yt-20260825-115716-574dac
+- **Data Aggiornamento**: 2026-08-25 11:57:18
 - **Canale Target**: Legami d'Amore (`@Legamidiamore`)
-- **Video Replicato**: Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini
-- **Idea Script (Fase 3)**: 8 Segnali del Corpo che Rendono un UOMO Irresistibile (Senza Cambiare Aspetto)
-- **SEO Score Metadati (Fase 5)**: 92.5
+- **Video Replicato**: Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia
+- **Idea Script (Fase 3)**: 7 SEGNALI che una DONNA si sta innamorando (anche se non lo dice)
+- **SEO Score Metadati (Fase 5)**: 100.0
 - **Stato Fabbrica**: 🟡 PARZIALE (fermata alla fase 5, --phase limitato)
 
 ## 📊 Metriche di Esecuzione (esito REALE di questa run)
