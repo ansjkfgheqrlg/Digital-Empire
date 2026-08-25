@@ -1,0 +1,39 @@
+{
+  "checkpoint_id": "W3-DURABLE-EXECUTION",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T10:24:57.065663+00:00",
+  "status": "COMPLETED_WITH_VERSION_LIMITATION",
+  "supersedes_work_item_checkpoint": "memory_store/checkpoints/wi-002.json",
+  "deliverables": {
+    "migration": "migrations/versions/0001_core.sql",
+    "tables": 9,
+    "forced_rls_tables": 9,
+    "adapters": [
+      "unit_of_work",
+      "workflow_repository",
+      "task_queue",
+      "outbox"
+    ],
+    "evidence_pack": "quality/evidence/w3-evidence-pack.json"
+  },
+  "verification": {
+    "tests_total": 51,
+    "tests_passed": 51,
+    "real_postgres_integration": "PASS",
+    "tested_postgres": "17.11",
+    "target_postgres": "16",
+    "atomic_commit": "PASS",
+    "atomic_rollback": "PASS",
+    "tenant_rls": "PASS",
+    "optimistic_lock": "PASS",
+    "two_worker_claim": "PASS",
+    "stale_token_rejection": "PASS"
+  },
+  "remaining_preproduction": [
+    "PostgreSQL 16 rerun",
+    "process kill test",
+    "managed failover",
+    "PITR restore drill"
+  ],
+  "next_increment": "W4-GOVERNANCE-OPA-CAPABILITY-TOOL-GATEWAY"
+}

@@ -1,0 +1,39 @@
+{
+  "work_item": "WI-010",
+  "gate": "release",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "R1": {
+      "status": "PASS",
+      "evidence": [
+        "operations evidence complete for W11 scope"
+      ]
+    },
+    "R2": {
+      "status": "PASS",
+      "evidence": [
+        "quality/evidence/w11-evidence-pack.json"
+      ]
+    },
+    "R3": {
+      "status": "PASS",
+      "evidence": [
+        "production PRR NO_GO"
+      ]
+    },
+    "R4": {
+      "status": "PASS",
+      "evidence": [
+        "accountable owners explicitly unassigned, not faked"
+      ]
+    },
+    "R5": {
+      "status": "PASS",
+      "evidence": [
+        "seven blockers remain; no override"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

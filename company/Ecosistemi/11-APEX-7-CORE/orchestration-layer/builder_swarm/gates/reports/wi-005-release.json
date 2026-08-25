@@ -1,0 +1,39 @@
+{
+  "work_item": "WI-005",
+  "gate": "release",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "R1": {
+      "status": "PASS",
+      "evidence": [
+        "architecture and implementation reports"
+      ]
+    },
+    "R2": {
+      "status": "PASS",
+      "evidence": [
+        "quality/evidence/w6-evidence-pack.json"
+      ]
+    },
+    "R3": {
+      "status": "PASS",
+      "evidence": [
+        "workspace checkpoint only"
+      ]
+    },
+    "R4": {
+      "status": "PASS",
+      "evidence": [
+        "builder role separation"
+      ]
+    },
+    "R5": {
+      "status": "PASS",
+      "evidence": [
+        "no hard gate exception"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

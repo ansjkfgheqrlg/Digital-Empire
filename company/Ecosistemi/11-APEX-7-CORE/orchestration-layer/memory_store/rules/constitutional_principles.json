@@ -1,0 +1,48 @@
+{
+  "category": "Constitutional Principles",
+  "version": "1.0.0",
+  "rules": [
+    {
+      "id": "R-001",
+      "statement": "Control plane deterministico; cognition probabilistica ai bordi.",
+      "severity": "CRITICAL",
+      "enforcement": "BLOCK",
+      "tags": ["governance", "architecture"]
+    },
+    {
+      "id": "R-002",
+      "statement": "Default deny e least privilege in ogni concessione di capability.",
+      "severity": "CRITICAL",
+      "enforcement": "BLOCK",
+      "tags": ["security", "governance"]
+    },
+    {
+      "id": "R-003",
+      "statement": "PostgreSQL è l'unica autorità di stato workflow.",
+      "severity": "CRITICAL",
+      "enforcement": "BLOCK",
+      "tags": ["persistence", "state"]
+    },
+    {
+      "id": "R-004",
+      "statement": "RuFlo è executor sostituibile, mai source of truth.",
+      "severity": "HIGH",
+      "enforcement": "BLOCK",
+      "tags": ["integration", "ruflo"]
+    },
+    {
+      "id": "R-005",
+      "statement": "Output LLM è sempre non fidato e soggetto a quality gate.",
+      "severity": "HIGH",
+      "enforcement": "BLOCK",
+      "tags": ["quality", "security"]
+    },
+    {
+      "id": "R-006",
+      "statement": "Human sovereignty obbligatoria per azioni R2/R3, security e policy.",
+      "severity": "CRITICAL",
+      "enforcement": "BLOCK",
+      "tags": ["governance", "human-in-the-loop"]
+    }
+  ]
+}

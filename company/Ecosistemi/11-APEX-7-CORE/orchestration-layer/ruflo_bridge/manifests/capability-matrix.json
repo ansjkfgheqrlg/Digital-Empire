@@ -1,0 +1,28 @@
+{
+  "matrixVersion": "1.0",
+  "rufloVersion": "3.38.19",
+  "sourceCommit": "3c99b1c84a25948c42a163253bac6effed5fbbbb",
+  "capabilities": {
+    "system_health": {
+      "status": "DEGRADED_DIAGNOSTIC",
+      "evidence": ["tool present", "real MCP call passed"],
+      "limitations": ["swarm and neural checks can be unknown", "fresh workspace reports missing config and memory"]
+    },
+    "swarm_init": {"status": "SUPPORTED_SMOKE_CHAOS", "maxAgentsCertified": 4, "autoScaling": false},
+    "swarm_status": {"status": "SUPPORTED_SMOKE", "canonical": false},
+    "swarm_shutdown": {"status": "SUPPORTED_SMOKE", "cleanup": "best-effort"},
+    "agent_spawn": {"status": "SUPPORTED_SMOKE", "execution": false},
+    "agent_status": {"status": "SUPPORTED_SMOKE", "canonical": false},
+    "agent_terminate": {"status": "SUPPORTED_SMOKE", "cleanup": "best-effort"},
+    "agent_execute": {
+      "status": "EXECUTION_PENDING",
+      "negativePath": "PASS_NO_CREDENTIAL",
+      "reason": "No certified provider credential/model evaluation is available"
+    },
+    "memory_tools": {"status": "DISABLED"},
+    "federation": {"status": "DISABLED"},
+    "auto_scaling": {"status": "DISABLED"}
+  },
+  "productionRoutingEnabled": false,
+  "fallback": "LocalRuntime"
+}

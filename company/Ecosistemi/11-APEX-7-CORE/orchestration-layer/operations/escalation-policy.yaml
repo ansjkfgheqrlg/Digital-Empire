@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "severities": {
+    "SEV-1": {"examples":["cross-tenant leak","policy bypass","duplicate critical side effect","secret compromise"],"ack_minutes":5,"update_minutes":15},
+    "SEV-2": {"examples":["service unavailable","compensation failed","cost runaway"],"ack_minutes":15,"update_minutes":30},
+    "SEV-3": {"examples":["partial degradation","RuFlo down with LocalRuntime fallback"],"ack_minutes":60,"update_minutes":120},
+    "SEV-4": {"examples":["non-urgent defect"],"ack_minutes":480,"update_minutes":1440}
+  },
+  "outside_support_window": "page only security, data-integrity and cost-critical alerts"
+}

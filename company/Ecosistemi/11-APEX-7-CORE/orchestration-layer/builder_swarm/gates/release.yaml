@@ -1,0 +1,12 @@
+{
+  "gate_id": "release",
+  "owner_agent": "GATEKEEPER",
+  "maximum_attempts": 3,
+  "criteria": [
+    {"id": "R1", "description": "Architecture and implementation gates passed for the exact artifact hash.", "blocking": true, "evidence_required": ["architecture_gate_report", "implementation_gate_report"]},
+    {"id": "R2", "description": "Evidence Pack is complete, immutable and internally consistent.", "blocking": true, "evidence_required": ["evidence_pack"]},
+    {"id": "R3", "description": "Release has explicit promotion and rollback criteria.", "blocking": true, "evidence_required": ["release_plan", "rollback_plan"]},
+    {"id": "R4", "description": "Author and final approver are different identities.", "blocking": true, "evidence_required": ["approval_record"]},
+    {"id": "R5", "description": "No hard gate exception is open.", "blocking": true, "evidence_required": ["exception_register"]}
+  ]
+}

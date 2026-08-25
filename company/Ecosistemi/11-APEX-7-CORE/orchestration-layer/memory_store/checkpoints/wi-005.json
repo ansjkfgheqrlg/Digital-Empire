@@ -1,0 +1,96 @@
+{
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T10:39:35.881898+00:00",
+  "work_item": {
+    "work_item_id": "WI-005",
+    "title": "Implement recovery reconciliation and chaos",
+    "risk": "R2",
+    "status": "CREATED",
+    "attempt": 0,
+    "author_agent": null,
+    "required_gates": [
+      "architecture",
+      "implementation",
+      "release"
+    ],
+    "stages": [
+      {
+        "stage": "scope",
+        "agent": "BUILD-LEAD",
+        "depends_on": [],
+        "timeout_minutes": 10,
+        "state": "READY"
+      },
+      {
+        "stage": "architecture",
+        "agent": "ARCHITECT",
+        "depends_on": [
+          "scope"
+        ],
+        "timeout_minutes": 20,
+        "state": "BLOCKED"
+      },
+      {
+        "stage": "ruflo-certification",
+        "agent": "RUFLO-SCOUT",
+        "depends_on": [
+          "architecture"
+        ],
+        "timeout_minutes": 20,
+        "state": "BLOCKED"
+      },
+      {
+        "stage": "implementation",
+        "agent": "IMPLEMENTER",
+        "depends_on": [
+          "architecture"
+        ],
+        "timeout_minutes": 20,
+        "state": "BLOCKED"
+      },
+      {
+        "stage": "testing",
+        "agent": "TESTER",
+        "depends_on": [
+          "implementation"
+        ],
+        "timeout_minutes": 20,
+        "state": "BLOCKED"
+      },
+      {
+        "stage": "security",
+        "agent": "SECURITY",
+        "depends_on": [
+          "implementation"
+        ],
+        "timeout_minutes": 20,
+        "state": "BLOCKED"
+      },
+      {
+        "stage": "gate-review",
+        "agent": "GATEKEEPER",
+        "depends_on": [
+          "testing",
+          "security"
+        ],
+        "timeout_minutes": 15,
+        "state": "BLOCKED"
+      },
+      {
+        "stage": "release-candidate",
+        "agent": "RELEASE",
+        "depends_on": [
+          "gate-review"
+        ],
+        "timeout_minutes": 20,
+        "state": "BLOCKED"
+      }
+    ]
+  },
+  "governance": {
+    "author_cannot_approve": true,
+    "failed_gate_attempts_before_freeze": 3,
+    "production_credentials_allowed": false,
+    "ruflo_execution_enabled": false
+  }
+}

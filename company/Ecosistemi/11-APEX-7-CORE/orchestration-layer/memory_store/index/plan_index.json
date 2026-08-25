@@ -1,0 +1,48 @@
+{
+  "indexed_at": "2026-08-26T00:00:00Z",
+  "authority_level": "L7",
+  "plans": [
+    {
+      "level": "L1",
+      "file": "plans/level-01-general-blueprint.md",
+      "title": "LIVELLO 1 — Piano Generale e Visione Iniziale",
+      "status": "SUPERSEDED"
+    },
+    {
+      "level": "L2",
+      "file": "plans/level-02-contractual-architecture.md",
+      "title": "LIVELLO 2 — Architettura Logica Contrattuale",
+      "status": "SUPERSEDED"
+    },
+    {
+      "level": "L3",
+      "file": "plans/level-03-executable-nervous-system.md",
+      "title": "LIVELLO 3 — Sistema Nervoso Eseguibile",
+      "status": "SUPERSEDED"
+    },
+    {
+      "level": "L4",
+      "file": "plans/level-04-security-resilience-control.md",
+      "title": "LIVELLO 4 — Sicurezza, Resilienza e Controllo",
+      "status": "SUPERSEDED"
+    },
+    {
+      "level": "L5",
+      "file": "plans/level-05-quality-evidence-release.md",
+      "title": "LIVELLO 5 — Qualità, Evidenze e Release",
+      "status": "SUPERSEDED"
+    },
+    {
+      "level": "L6",
+      "file": "plans/level-06-production-operating-model.md",
+      "title": "LIVELLO 6 — Modello Operativo di Produzione",
+      "status": "SUPERSEDED"
+    },
+    {
+      "level": "L7",
+      "file": "plans/level-07-final-production-blueprint.md",
+      "title": "LIVELLO 7 — Blueprint Definitivo di Pre-Produzione",
+      "status": "AUTHORITATIVE"
+    }
+  ]
+}

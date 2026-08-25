@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ocp.local/schemas/v1/policy-decision.json",
+  "title": "PolicyDecision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "decision", "policy_bundle", "reasons", "constraints"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "decision": {"enum": ["ALLOW", "DENY", "REQUIRE_APPROVAL"]},
+    "policy_bundle": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+    "reasons": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "constraints": {
+      "type": "object", "additionalProperties": false,
+      "required": ["capabilities", "expires_at"],
+      "properties": {
+        "capabilities": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "expires_at": {"type": "string", "format": "date-time"}
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "workflow_operational_days": 90,
+  "audit_r2_r3_days": 365,
+  "raw_prompt_output_days": 30,
+  "metrics_days": 395,
+  "plans_and_adr": "project_lifetime_plus_archive",
+  "capability_token": "never_plaintext",
+  "backup_days": 35,
+  "deletion": {
+    "target_days": 30,
+    "derived_embeddings": "delete_with_source",
+    "backup_behavior": "expire_by_documented_retention; no false immediate-deletion claim",
+    "legal_hold": "blocks deletion and requires audit evidence"
+  }
+}

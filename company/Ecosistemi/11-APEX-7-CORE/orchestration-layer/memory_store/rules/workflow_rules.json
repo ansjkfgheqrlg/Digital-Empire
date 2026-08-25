@@ -1,0 +1,27 @@
+{
+  "category": "Workflow Governance",
+  "version": "1.0.0",
+  "rules": [
+    {
+      "id": "WF-001",
+      "statement": "Ogni richiesta di workflow deve avere correlation_id e workflow_id validi.",
+      "severity": "CRITICAL",
+      "enforcement": "BLOCK",
+      "tags": ["workflow", "tracing"]
+    },
+    {
+      "id": "WF-002",
+      "statement": "Operazioni di scrittura richiedono idempotency_key per evitare side-effect duplicati.",
+      "severity": "CRITICAL",
+      "enforcement": "BLOCK",
+      "tags": ["workflow", "idempotency"]
+    },
+    {
+      "id": "WF-003",
+      "statement": "Stato non determinabile passa a RECONCILING, mai a successo presunto.",
+      "severity": "HIGH",
+      "enforcement": "BLOCK",
+      "tags": ["recovery", "resilience"]
+    }
+  ]
+}

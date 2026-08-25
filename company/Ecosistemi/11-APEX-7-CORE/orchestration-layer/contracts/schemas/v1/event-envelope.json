@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ocp.local/schemas/v1/event-envelope.json",
+  "title": "EventEnvelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "event_type", "schema_version", "occurred_at", "tenant_id", "workflow_id", "trace_id", "producer", "sequence", "payload", "payload_hash"],
+  "properties": {
+    "event_id": {"type": "string", "format": "uuid"},
+    "event_type": {"type": "string", "pattern": "^[a-z][a-z0-9_.-]{2,127}$"},
+    "schema_version": {"const": "1.0"},
+    "occurred_at": {"type": "string", "format": "date-time"},
+    "tenant_id": {"type": "string", "minLength": 3, "maxLength": 64},
+    "workflow_id": {"type": "string", "format": "uuid"},
+    "trace_id": {"type": "string", "minLength": 16, "maxLength": 64},
+    "producer": {"type": "string", "minLength": 1, "maxLength": 128},
+    "sequence": {"type": "integer", "minimum": 1},
+    "payload": {"type": "object"},
+    "payload_hash": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"}
+  }
+}

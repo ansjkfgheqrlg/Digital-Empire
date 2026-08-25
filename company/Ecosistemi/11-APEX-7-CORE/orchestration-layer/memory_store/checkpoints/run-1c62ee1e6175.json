@@ -1,0 +1,131 @@
+{
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T10:53:24.580458+00:00",
+  "run_id": "run-1c62ee1e6175",
+  "work_item_id": "WI-ACT-001",
+  "status": "READY_TO_MERGE",
+  "attempt": 1,
+  "results": [
+    {
+      "stage": "scope",
+      "agent": "BUILD-LEAD",
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "evidence/scope.json",
+          "sha256": "021168269c9a168507137bd24dfa743a7c5cd69c0bef498f0de0f2e92eef0a1a",
+          "size": 185,
+          "idempotent": false,
+          "prompt_sha256": "8f72e2d153a9b073923becdd28aa8130169cc010ab2f0c495ea1f5e39e5177f5"
+        }
+      ],
+      "detail": ""
+    },
+    {
+      "stage": "architecture",
+      "agent": "ARCHITECT",
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "evidence/architecture.json",
+          "sha256": "d0843f61083f87c72befe5d6f4afab000b0cb17882a3e9608a8f9797eac3d8e9",
+          "size": 146,
+          "idempotent": false,
+          "prompt_sha256": "70b57841ec54cef78f225352fb30e6234789f327d8fe770731cb6f925d074651"
+        }
+      ],
+      "detail": ""
+    },
+    {
+      "stage": "ruflo-certification",
+      "agent": "RUFLO-SCOUT",
+      "status": "SKIPPED",
+      "evidence": [],
+      "detail": "Work item does not touch RuFlo"
+    },
+    {
+      "stage": "implementation",
+      "agent": "IMPLEMENTER",
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "reports/builder-team-capabilities.md",
+          "sha256": "b8a79112eb225a540e8bbe42d58093ff8b32b73802e21cd443eb70cd0b63838a",
+          "size": 1316,
+          "idempotent": false,
+          "prompt_sha256": "57923cd0d75416db72868dcc294948780783aeb1b54e865e343b6c95e4ac5d54"
+        }
+      ],
+      "detail": ""
+    },
+    {
+      "stage": "testing",
+      "agent": "TESTER",
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "evidence/test.json",
+          "sha256": "8fefef5f8877eaa22fa498b65fb55a166a7f166b966f1b74d0451d3690624ad7",
+          "size": 46,
+          "idempotent": false,
+          "prompt_sha256": "75bb1ff7dd2907b9e541ca9e7658dcf8dc891eb8aebbebc902d33090c14322c9"
+        }
+      ],
+      "detail": ""
+    },
+    {
+      "stage": "security",
+      "agent": "SECURITY",
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "evidence/security.json",
+          "sha256": "93f660efed64198a976b2b1547ef6c06afdc88cecceb7db6e60a65f84dc440c4",
+          "size": 85,
+          "idempotent": false,
+          "prompt_sha256": "5d00abfb0bde68558a6611042d47d1c6c8bd80adf63da4f16edf5381fd7372d1"
+        }
+      ],
+      "detail": ""
+    },
+    {
+      "stage": "gate-review",
+      "agent": "GATEKEEPER",
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "evidence/gate-attempt-1.json",
+          "sha256": "9700c4060055d21ca1c6cb65ac305ce38e9f1833f044290dd399c97465bf9aca",
+          "size": 143,
+          "idempotent": false,
+          "prompt_sha256": "f809632d287861d150db9a987f7132f1c6430e36a0141fe331c9ab91921c04f5"
+        }
+      ],
+      "detail": ""
+    },
+    {
+      "stage": "release-candidate",
+      "agent": "RELEASE",
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "release/evidence-pack.json",
+          "sha256": "d7dd2c6cf4f480ef0830789560808502dee4cc27b11182704776759792a0d38b",
+          "size": 930,
+          "idempotent": false,
+          "prompt_sha256": "2164e4d474f9f4313b8a74dcd770ecf2dc4bed174b8d8ddd9a464bb06fb91f30"
+        }
+      ],
+      "detail": ""
+    }
+  ],
+  "artifact_manifest": {
+    "path": "release/evidence-pack.json",
+    "sha256": "d7dd2c6cf4f480ef0830789560808502dee4cc27b11182704776759792a0d38b",
+    "size": 930,
+    "idempotent": false,
+    "prompt_sha256": "2164e4d474f9f4313b8a74dcd770ecf2dc4bed174b8d8ddd9a464bb06fb91f30"
+  },
+  "ruflo_execution": false,
+  "production_credentials": false
+}

@@ -1,0 +1,49 @@
+{
+  "checkpoint_id": "W0-BUILDER-SWARM",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T10:11:31.729012+00:00",
+  "status": "BOOTSTRAPPED",
+  "team_validation": [
+    "team:ORCHESTRATION-BUILD-TEAM@1.0.0",
+    "agents:8",
+    "gates:3",
+    "max_wip:3",
+    "max_concurrency:4"
+  ],
+  "plans": [
+    {
+      "path": "plans/level-01-general-blueprint.md",
+      "sha256": "f6d60634f2218c013e20d7f8dfc63f8bf80cb75bf1ba845eb3ac43e34180e467"
+    },
+    {
+      "path": "plans/level-02-contractual-architecture.md",
+      "sha256": "3bfad3029f77056bc7b86d925d57142d02375829b27ba03db13d9fc0ecef9a29"
+    },
+    {
+      "path": "plans/level-03-executable-nervous-system.md",
+      "sha256": "ed3a9d437d0152759b0604e198bc2ed0412156b57dffda485ac3d10948897af6"
+    },
+    {
+      "path": "plans/level-04-security-resilience-control.md",
+      "sha256": "81024681094e2668890f000cc55042e40323f6324ca1f1f91fc154130400ec29"
+    },
+    {
+      "path": "plans/level-05-quality-evidence-release.md",
+      "sha256": "69b42c51c39fb8cc30a972a6272177a0fd7b338770f44bbbbe9952bc2a82d3ba"
+    },
+    {
+      "path": "plans/level-06-production-operating-model.md",
+      "sha256": "f6271667f41c2a80999baac7bc03835c4328c5d887328923d8f0a5a03e2708b2"
+    },
+    {
+      "path": "plans/level-07-final-production-blueprint.md",
+      "sha256": "713b84fd5917932a25621c77c4f5fac2398e0ac943ccee210bf7272bd4f7ceb2"
+    }
+  ],
+  "constraints": {
+    "ruflo_enabled": false,
+    "production_credentials": false,
+    "external_side_effects": false,
+    "human_approval_required_for_activation": true
+  }
+}

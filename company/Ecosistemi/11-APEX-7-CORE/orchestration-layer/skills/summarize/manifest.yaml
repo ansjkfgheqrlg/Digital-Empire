@@ -1,0 +1,17 @@
+{
+  "apiVersion": "orchestration/v1",
+  "kind": "Skill",
+  "metadata": {"id": "summarize", "version": "1.0.0", "owner": "cognition-team"},
+  "spec": {
+    "status": "ACTIVE",
+    "riskClass": "R0",
+    "inputSchema": "schemas/input.json",
+    "outputSchema": "schemas/output.json",
+    "capabilities": [],
+    "timeoutSeconds": 60,
+    "budgets": {"maxTokens": 10000, "maxCostUsd": 0.5},
+    "idempotency": "required",
+    "sandbox": "in-memory",
+    "runtime": {"baseline": "local", "ruflo": "disabled"}
+  }
+}

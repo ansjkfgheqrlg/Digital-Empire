@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SummarizeOutput",
+  "type": "object",
+  "required": ["summary", "original_length", "summary_length", "compression_ratio"],
+  "properties": {
+    "summary": { "type": "string" },
+    "original_length": { "type": "integer" },
+    "summary_length": { "type": "integer" },
+    "compression_ratio": { "type": "number" }
+  }
+}

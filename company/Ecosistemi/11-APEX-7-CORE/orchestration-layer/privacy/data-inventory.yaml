@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "classes": {
+    "PUBLIC": {"examples": ["public documentation"], "default_retention_days": 3650},
+    "INTERNAL": {"examples": ["plans", "metrics", "ADRs"], "default_retention_days": 365},
+    "CONFIDENTIAL": {"examples": ["tenant prompts", "agent outputs"], "default_retention_days": 30},
+    "RESTRICTED": {"examples": ["PII", "credentials", "regulated data"], "default_retention_days": 0}
+  },
+  "never_persist": ["raw capability tokens", "provider API keys", "passwords", "session cookies"],
+  "stores": {
+    "postgres": ["workflow state", "audit", "approved memory metadata"],
+    "object_store": ["artifacts", "evidence"],
+    "telemetry": ["redacted logs", "metrics", "traces"],
+    "ruflo_local": ["non-canonical sandbox coordination only"]
+  }
+}

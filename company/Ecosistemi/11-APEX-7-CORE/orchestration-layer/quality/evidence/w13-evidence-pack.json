@@ -1,0 +1,133 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W13-API-WORKER-PERSISTENT-END-TO-END",
+  "artifacts": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "be35b9a0853b0e293fbe6ae4ecdfd3147308addca821dfb3ff5dae31a897103b"
+    },
+    {
+      "path": "deploy/compose/docker-compose.yml",
+      "sha256": "cb6cc7d4d9441da3aa702184ebce10711df2458e7782ff9006672c7fe263e7dd"
+    },
+    {
+      "path": "docs/adr/014-api-worker-local-completion.md",
+      "sha256": "a8f23ef9e74abdf9a090e0192ad1fc382903912ecd18908306edcbe97cf501e5"
+    },
+    {
+      "path": "docs/api/openapi.json",
+      "sha256": "df252ed7cea4a418f01c07f80fdc360fc737f2d6303400625a1e51e36e582a25"
+    },
+    {
+      "path": "scripts/bootstrap_local_operator.py",
+      "sha256": "2e960682ddee01af983983d3ad291724aada98f47bb5316da3da3700d92c4b5d"
+    },
+    {
+      "path": "scripts/ci_setup_postgres.sh",
+      "sha256": "72ab8964fc465e776647043a7b4c60c662790b20486ac2387f4953dec30eee02"
+    },
+    {
+      "path": "scripts/local_operator_client.py",
+      "sha256": "5c3909f101e575c7d18d479ddd2cb668954804586c9035f7cb9e7ec501ab8a48"
+    },
+    {
+      "path": "src/orchestrator/adapters/postgres/queue.py",
+      "sha256": "bfceab0ede0d8bcb0d63b67b144a0e31f3ccc8f6ad3b263774740ab7bb6f9e17"
+    },
+    {
+      "path": "src/orchestrator/adapters/postgres/repositories.py",
+      "sha256": "72c32da2f9e3a05d71b35c06e96d49f5e4d79a9d51ed823afb380d5c25397bce"
+    },
+    {
+      "path": "src/orchestrator/api/app.py",
+      "sha256": "701de2100555de55fe605c9a42704808aa7887458133b100972d6b483ef7f54e"
+    },
+    {
+      "path": "src/orchestrator/api/main.py",
+      "sha256": "7d74d2650989a7fbe7d159b2e1de3afd6a7a526fd9d034441f33fe7189bcfecf"
+    },
+    {
+      "path": "src/orchestrator/application/workflow_service.py",
+      "sha256": "8cd4c2c5d2dabcf3e99735a0d65e04e967ed3a64696057ff2b9c8e62da658f3a"
+    },
+    {
+      "path": "src/orchestrator/domain/workflow.py",
+      "sha256": "980b2757c696346321170f7af90331ab293631ce68e3368680aea46d1401a9d8"
+    },
+    {
+      "path": "src/orchestrator/identity/session.py",
+      "sha256": "de443a212095e99a481cc88767fca61c785faeab76367fc095d9dfc50d354f58"
+    },
+    {
+      "path": "src/orchestrator/worker/main.py",
+      "sha256": "9bae8fae5c3d529f16fcce6eaf53b97d6c4a1a32c58fb4aa02462378a1f8f764"
+    },
+    {
+      "path": "src/orchestrator/worker/outbox_main.py",
+      "sha256": "77759c7d2c63dfcef8576b93f39cd6e53d7c1324d70c5f36b1ac75452eb14f3d"
+    },
+    {
+      "path": "src/orchestrator/worker/service.py",
+      "sha256": "3bb1d587c016b68be43036112af619551c53ab71d4498904d813085b1d714fd8"
+    },
+    {
+      "path": "tests/integration/test_api_worker_real.py",
+      "sha256": "76708a5f2d09d5ee979d39cdc5ee158441feb3731864bc25d13074c85e1017e0"
+    },
+    {
+      "path": "tests/test_api_worker.py",
+      "sha256": "fb3c39c70b5ffe96f9c4bccfa110408d98b8dce3440265a0b60e14bcf3934a86"
+    },
+    {
+      "path": "tests/test_worker_service.py",
+      "sha256": "df9be7d7aaafc23a33943353a73ac6cd85812b4243e0dbcc5b62def2b656eb3d"
+    }
+  ],
+  "reports": [
+    {
+      "path": "quality/evidence/w13-test-report.json",
+      "sha256": "2cf74b705d8f8ed5023ae9f33836e3a496b38267aa2c92e326227c74659b88f0"
+    },
+    {
+      "path": "quality/evidence/w13-live-run.json",
+      "sha256": "6dff8bdaea50f40c8b826202c173457d1c7b5fc85f98ae012051f59489e9b9b1"
+    },
+    {
+      "path": "quality/evidence/w13-live-status.json",
+      "sha256": "cd3e13967dad64ab938cc6b740a1f05e1ee53a09cfdde54ad9c17f129b2aae86"
+    },
+    {
+      "path": "quality/evidence/w13-live-events.json",
+      "sha256": "c2797b36554b1ca1c0eb4fd94cb3d1b77f0f6b634a89ee12d59c5b8aec24c4e0"
+    },
+    {
+      "path": "quality/evidence/w13-local-pilot-prr.json",
+      "sha256": "879eecaa1d6cad8f2c6b57696831d8f5b51ba3cd4310b73bd2d99992c04ed1ea"
+    },
+    {
+      "path": "quality/evidence/w13-bandit.json",
+      "sha256": "d228086446faf30177da83841e82fe714face79eaacf20122d569379ffcc30bc"
+    },
+    {
+      "path": "quality/evidence/w13-pip-audit.json",
+      "sha256": "79c5b7b0fbc2d9742757fde587910633ba9b70c98d0855469b472074c6d706c1"
+    },
+    {
+      "path": "quality/evidence/w13-secret-scan.json",
+      "sha256": "c6f86dcbf02fb432f21a1fc2c1885ecbd38acc6d00404ff6c9eaeb66c1f5eda2"
+    },
+    {
+      "path": "quality/evidence/w13-package-build.json",
+      "sha256": "89b4fbc625c9261fcaa918a37c1ac222daa37a9770d9bf9f94fcdca4f7c21a5e"
+    }
+  ],
+  "pilot_package": {
+    "path": "release/candidate/ocp-0.1.0-pilot.tar.gz",
+    "sha256": "6d5858b68a0e14a328417edd9cbc77f6a91802b4f9fee63eed6545bf2572fec1",
+    "size": 196797
+  },
+  "local_pilot_prr": "GO_LOCAL_PILOT",
+  "production_prr": "NO_GO",
+  "production_credentials_used": false,
+  "created_at": "2026-08-23T17:27:58.966176+00:00"
+}

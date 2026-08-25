@@ -1,0 +1,125 @@
+services:
+  postgres:
+    image: postgres:16.6-bookworm
+    environment:
+      POSTGRES_DB: ocp
+      POSTGRES_USER: ocp_local
+      POSTGRES_PASSWORD: local-only-change-me
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ocp_local -d ocp"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  opa:
+    image: openpolicyagent/opa:1.19.1-static
+    command: ["run", "--server", "--addr=0.0.0.0:8181", "/policies"]
+    read_only: true
+    volumes:
+      - ../../policies:/policies:ro
+
+  migrate:
+    build:
+      context: ../..
+      dockerfile: deploy/pilot/Dockerfile
+    entrypoint: ["alembic"]
+    command: ["upgrade", "head"]
+    environment:
+      OCP_DATABASE_URL: postgresql+asyncpg://ocp_local:local-only-change-me@postgres:5432/ocp
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  pilot-api:
+    build:
+      context: ../..
+      dockerfile: deploy/pilot/Dockerfile
+    entrypoint: ["ocp-api"]
+    environment:
+      OCP_DATABASE_URL: postgresql+asyncpg://ocp_local:local-only-change-me@postgres:5432/ocp
+      OCP_OPA_URL: http://opa:8181
+      OCP_TENANT_ID: local-pilot
+      OCP_OPERATOR_ID: local-owner
+      OCP_OPERATOR_PUBLIC_KEY_B64: ${OCP_OPERATOR_PUBLIC_KEY_B64:?Generate an Ed25519 operator key}
+      OCP_CONTAINERIZED: "true"
+      OCP_BIND_HOST: 0.0.0.0
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      opa:
+        condition: service_started
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: ["no-new-privileges:true"]
+
+  pilot-worker:
+    build:
+      context: ../..
+      dockerfile: deploy/pilot/Dockerfile
+    entrypoint: ["ocp-worker"]
+    environment:
+      OCP_DATABASE_URL: postgresql+asyncpg://ocp_local:local-only-change-me@postgres:5432/ocp
+      OCP_OPA_URL: http://opa:8181
+      OCP_TENANT_ID: local-pilot
+      OCP_WORKER_ID: worker-local-1
+      OCP_REPOSITORY_ROOT: /fixtures/repository-01
+      OCP_ARTIFACT_ROOT: /artifacts
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      opa:
+        condition: service_started
+    volumes:
+      - ../../tests/fixtures:/fixtures:ro
+      - pilot-artifacts:/artifacts
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: ["no-new-privileges:true"]
+
+  pilot-outbox:
+    build:
+      context: ../..
+      dockerfile: deploy/pilot/Dockerfile
+    entrypoint: ["ocp-outbox"]
+    environment:
+      OCP_DATABASE_URL: postgresql+asyncpg://ocp_local:local-only-change-me@postgres:5432/ocp
+      OCP_TENANT_ID: local-pilot
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: ["no-new-privileges:true"]
+
+  pilot-cli:
+    build:
+      context: ../..
+      dockerfile: deploy/pilot/Dockerfile
+    profiles: ["manual"]
+    depends_on:
+      opa:
+        condition: service_started
+    command:
+      - --repository
+      - /fixtures/repository-01
+      - --artifacts
+      - /artifacts
+      - --file
+      - src/app.py
+      - --file
+      - README.md
+      - --opa-url
+      - http://opa:8181
+    volumes:
+      - ../../tests/fixtures:/fixtures:ro
+      - pilot-artifacts:/artifacts
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: ["no-new-privileges:true"]
+
+volumes:
+  postgres-data: {}
+  pilot-artifacts: {}

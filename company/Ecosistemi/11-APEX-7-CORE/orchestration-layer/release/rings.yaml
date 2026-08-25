@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "rings": [
+    {"id":"DEV","minimum":"unit tests"},
+    {"id":"TEST","minimum":"contracts, security and integration evidence"},
+    {"id":"SHADOW","minimum":"no side effects"},
+    {"id":"CANARY_5","minimum":"5 percent eligible R0/R1"},
+    {"id":"CANARY_25","minimum":"25 percent eligible R0/R1"},
+    {"id":"PILOT","minimum":"opt-in tenants, R0/R1 only"},
+    {"id":"PROD","minimum":"PRR GO"}
+  ],
+  "automatic_rollback": [
+    "hard gate failure", "security anomaly", "audit gap", "failure rate regression",
+    "latency regression", "cost regression", "schema drift"
+  ]
+}

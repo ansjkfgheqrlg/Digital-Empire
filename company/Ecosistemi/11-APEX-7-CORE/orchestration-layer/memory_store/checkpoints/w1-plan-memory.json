@@ -1,0 +1,55 @@
+{
+  "checkpoint_id": "W1-PLAN-MEMORY",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T10:14:06.076383+00:00",
+  "status": "COMPLETED",
+  "mode": "READ_ONLY",
+  "implementation": [
+    {
+      "path": "memory_store/plans/manifest.json",
+      "sha256": "bc8ee3f37a4ff1b7c6ff03bd8d54240e9644bd2edbd27611c92e60a2072dbc08"
+    },
+    {
+      "path": "memory_store/index/plan-index.json",
+      "sha256": "2ff842db2a899fefd469598e9f42f2446a3d4d16fc3b1ebd2054f0225b63b130"
+    },
+    {
+      "path": "src/plan_memory/manifest.py",
+      "sha256": "7683908d05000c32cebefc23802e7da33dc2dc3bc66128d686fadec9e74491d7"
+    },
+    {
+      "path": "src/plan_memory/index.py",
+      "sha256": "c94def71988cfdd0fc4478544384276829e60df4d13a7c48a80f71ab3c6c7e10"
+    },
+    {
+      "path": "src/plan_memory/cli.py",
+      "sha256": "68538ab3e80c0ba1497dd6e1a661587413f9ec65c1d56e9474fba0176851ffeb"
+    },
+    {
+      "path": "tests/test_plan_memory.py",
+      "sha256": "d8c6f5f7bfac523b9e780c0401235fd7cedf0d530dcba4ee778fc383e9e63963"
+    }
+  ],
+  "index": {
+    "algorithm": "BM25",
+    "chunks": 446,
+    "source_plans": 7,
+    "highest_approved_level": 7
+  },
+  "verification": {
+    "tests_total": 12,
+    "tests_passed": 12,
+    "manifest_integrity": "PASS",
+    "citation_hash_check": "PASS",
+    "supersession_rule": "PASS",
+    "tamper_rejection": "PASS",
+    "unsupported_query_behavior": "INSUFFICIENT_EVIDENCE"
+  },
+  "constraints": {
+    "writes_to_plan_sources": false,
+    "tool_capabilities": [],
+    "ruflo_enabled": false,
+    "semantic_embeddings_enabled": false
+  },
+  "next_increment": "W2-CONTRACTS-AND-DETERMINISTIC-DOMAIN"
+}

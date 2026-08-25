@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "profile": "LOCAL_SECURE_PILOT",
+  "method": "Ed25519 challenge-response",
+  "tests": {
+    "valid_signature": "PASS",
+    "replay_rejected": "PASS",
+    "expired_challenge_rejected": "PASS",
+    "wrong_signature_rejected": "PASS",
+    "anonymous_operator_rejected": "PASS"
+  },
+  "private_key_persisted": false,
+  "production_identity_claim": false
+}

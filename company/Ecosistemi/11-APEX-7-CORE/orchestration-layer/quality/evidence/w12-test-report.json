@@ -1,0 +1,36 @@
+{
+  "report_version": "1.0",
+  "increment": "W12-GO-LIVE-REHEARSAL-AND-PILOT-PACKAGE",
+  "result": "NON_PRODUCTION_REHEARSAL_PASS_PRODUCTION_NO_GO",
+  "test_definitions": 118,
+  "local_tests_executed": 109,
+  "local_tests_passed": 109,
+  "external_tests_skipped_this_run": 9,
+  "external_tests_last_verified_w10": "9/9 PASS",
+  "package": {
+    "release_id": "ocp-0.1.0-pilot",
+    "type": "NON_PRODUCTION_CLI_PILOT",
+    "reproducible": true,
+    "forbidden_key_material": 0,
+    "wheel": "orchestration_layer-0.1.0-py3-none-any.whl"
+  },
+  "container": {
+    "rootless_uid": 10001,
+    "read_only_compose": true,
+    "no_new_privileges": true,
+    "static_validation": "PASS",
+    "image_build": "NOT_EXECUTED_NO_CONTAINER_RUNTIME"
+  },
+  "rehearsal": {
+    "rings": ["DEV", "TEST", "SHADOW", "CANARY_5", "CANARY_25", "PILOT"],
+    "production_attempt": "BLOCKED_BY_PRR",
+    "rollback": "PASS",
+    "real_traffic": false,
+    "real_deployment": false
+  },
+  "prr": "NO_GO",
+  "ruflo_execution": false,
+  "r2_enabled": false,
+  "r3_enabled": false,
+  "production_credentials_used": false
+}

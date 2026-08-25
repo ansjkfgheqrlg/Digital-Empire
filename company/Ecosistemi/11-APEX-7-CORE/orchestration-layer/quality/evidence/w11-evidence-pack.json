@@ -1,0 +1,104 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W11-OPERATIONS-OBSERVABILITY-PRR",
+  "artifacts": [
+    {
+      "path": "docs/adr/011-production-readiness-no-go.md",
+      "sha256": "bd963eef41ed9bd06c8b3e3b1299e115672c4d308da94da92c86fdb9ac32c20a"
+    },
+    {
+      "path": "operations/dashboards/pilot-dashboard.json",
+      "sha256": "0123df48715a78a1374527b199db7db6896db0c01d36a6fea88770bcac7e50cd"
+    },
+    {
+      "path": "operations/escalation-policy.yaml",
+      "sha256": "47a4cd5e33e5a48b9eec049ac6b58cd6862864451439f4a5dd502fa2e9ee42d3"
+    },
+    {
+      "path": "operations/ownership.yaml",
+      "sha256": "55d4c034a52ab237ce72dc8cf834d744dc0d297efa4b27fd60e6e3bd8b350561"
+    },
+    {
+      "path": "operations/prr-checklist.json",
+      "sha256": "19b3a90e84281139754ef2523f32f986a516bbe86955922537b7aabba190f4bd"
+    },
+    {
+      "path": "operations/runbooks/RB-01-postgres-down.md",
+      "sha256": "886ee3fb240d1840c755923e6529ebf39e1b57c258b7a742f27c9e7818e1bf18"
+    },
+    {
+      "path": "operations/runbooks/RB-02-opa-down.md",
+      "sha256": "d6f85dc38f8269e0ad067564baf7c87859d43a9fe4ed4e12e9f76b7d215ab97e"
+    },
+    {
+      "path": "operations/runbooks/RB-03-ruflo-drift.md",
+      "sha256": "22a9b1ab709de77f1dfaf43910d8f31e9a36d38e39dd45fd66e433d19b7d8319"
+    },
+    {
+      "path": "operations/runbooks/RB-04-security-containment.md",
+      "sha256": "306b3926440a9da2a5e9040c6602b130195d3fe39ae4f634c249f58e0f226a3a"
+    },
+    {
+      "path": "operations/runbooks/RB-05-cost-runaway.md",
+      "sha256": "f3f9a680bda713dc096fffa1579181c0e6180adf96ba91acca93736cc319ae19"
+    },
+    {
+      "path": "operations/service-definition.yaml",
+      "sha256": "e5b16206cdc940bb16413eba9d9539d42fd8bc5ce2d21165504fad8c9b3e4777"
+    },
+    {
+      "path": "operations/slo.yaml",
+      "sha256": "793a5fa1943ecd012e52efc9c132a009bca409c22ad2bc71883bb06d9c1586fb"
+    },
+    {
+      "path": "src/orchestrator/observability/__init__.py",
+      "sha256": "56c74de1a64a4d77f9bdae4e5def19a2a0624a5faa855d6b1ad24c4d4b256d0e"
+    },
+    {
+      "path": "src/orchestrator/observability/health.py",
+      "sha256": "d5776601eae3a473ab85e2a61f8535c975b1e0e37024f21b9769149119b9d6dc"
+    },
+    {
+      "path": "src/orchestrator/observability/logging.py",
+      "sha256": "a595076e8b472646c11302968be506997aff2c60dc3b2e265add72a9b9aef3a9"
+    },
+    {
+      "path": "src/orchestrator/observability/metrics.py",
+      "sha256": "f28c00230d3893f936cc4b99c66a5023a1d77404dfd5b245f94a258bff2eddfe"
+    },
+    {
+      "path": "src/orchestrator/operations/__init__.py",
+      "sha256": "ab94eaa4a21c2e2ccb818a2b5b158a88b7d8e820bcb96798721dabed21b247f5"
+    },
+    {
+      "path": "src/orchestrator/operations/prr.py",
+      "sha256": "dea8c1ccfdd2f3ec2a777383f9e20d8b5d29cedfebd043aada65b7d931352980"
+    },
+    {
+      "path": "src/orchestrator/operations/prr_cli.py",
+      "sha256": "284e65dfc4a50175ff0ace42de85d5e56fd39998cc39ef7abe319bde82acc5a6"
+    },
+    {
+      "path": "src/orchestrator/operations/slo.py",
+      "sha256": "81c54513af6ba73639ba1c4a3c06597b9c09dbde0e2e652cf4502e4342e134c4"
+    },
+    {
+      "path": "tests/test_operations.py",
+      "sha256": "7428a0117406a5d9f92248334497ab99666d31a756b94c163655806c98548554"
+    }
+  ],
+  "reports": [
+    {
+      "path": "quality/evidence/w11-test-report.json",
+      "sha256": "76a60271706728cb5fc0f154719e85114d6bbd9a87c83586823fcc3744f27afc"
+    },
+    {
+      "path": "quality/evidence/w11-prr-result.json",
+      "sha256": "c7e18232f8af2afd7faca231b9f0fec128809ce3bba80e87622f585a490738e6"
+    }
+  ],
+  "prr_verdict": "NO_GO",
+  "production_deployment": false,
+  "production_credentials_used": false,
+  "created_at": "2026-08-23T16:33:17.615824+00:00"
+}

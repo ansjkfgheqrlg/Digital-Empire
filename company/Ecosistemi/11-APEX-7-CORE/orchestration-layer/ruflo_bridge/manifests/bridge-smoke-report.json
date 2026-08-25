@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "rufloVersion": "3.38.19",
+  "sourceCommit": "3c99b1c84a25948c42a163253bac6effed5fbbbb",
+  "supervisorState": "READY",
+  "swarmIdObserved": true,
+  "agentExecution": "NOT_EXECUTED_NO_PROVIDER_CREDENTIAL",
+  "durationMs": 907
+}

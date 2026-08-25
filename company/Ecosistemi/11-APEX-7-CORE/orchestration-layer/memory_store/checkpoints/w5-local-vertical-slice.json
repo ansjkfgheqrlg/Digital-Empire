@@ -1,0 +1,44 @@
+{
+  "checkpoint_id": "W5-LOCAL-VERTICAL-SLICE",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T10:35:16.698303+00:00",
+  "status": "COMPLETED",
+  "supersedes_work_item_checkpoint": "memory_store/checkpoints/wi-004.json",
+  "deliverables": {
+    "runtime": "LocalAgentRuntime",
+    "agents": [
+      "PLANNER",
+      "IMPLEMENTER",
+      "CRITIC",
+      "GATE"
+    ],
+    "skill": "repository-adr@1.0.0 ACTIVE",
+    "quality_chain": [
+      "schema",
+      "security",
+      "correctness",
+      "evidence",
+      "NERVE-SAVE"
+    ],
+    "live_artifact": "quality/evidence/w5-generated-adr.md",
+    "evidence_pack": "quality/evidence/w5-evidence-pack.json"
+  },
+  "verification": {
+    "tests_total": 74,
+    "tests_passed": 74,
+    "live_opa_slice": "PASS",
+    "workflow_status": "COMPLETED",
+    "gate": "PASS",
+    "quality_gates": "4/4",
+    "protected_span_preservation": "PASS",
+    "negative_security_tests": "PASS"
+  },
+  "constraints": {
+    "persistent_lifecycle_composition": false,
+    "container_sandbox": false,
+    "production_credentials": false,
+    "external_side_effects": false,
+    "ruflo_enabled": false
+  },
+  "next_increment": "W6-RECOVERY-RECONCILIATION-CHAOS"
+}

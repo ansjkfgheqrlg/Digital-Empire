@@ -1,0 +1,42 @@
+{
+  "report_version": "1.0",
+  "increment": "W4-GOVERNANCE-OPA-CAPABILITY-TOOL-GATEWAY",
+  "result": "PASS",
+  "python_tests_total": 67,
+  "python_tests_passed": 67,
+  "opa_tests_total": 11,
+  "opa_tests_passed": 11,
+  "opa": {
+    "version": "1.19.1",
+    "binary_sha256": "c9f985ce0d345f5484006ade2c695ed9e3f308e4441139e46695c5c182ac0839",
+    "format": "PASS",
+    "strict_check": "PASS",
+    "live_http_allow": "PASS",
+    "live_http_forbidden_deny": "PASS"
+  },
+  "postgres_capability_store": {
+    "real_database_test": "PASS",
+    "single_use": "PASS",
+    "task_binding": "PASS",
+    "replay_rejection": "PASS"
+  },
+  "tool_gateway": {
+    "path_traversal_rejected": true,
+    "unknown_tool_rejected": true,
+    "scope_mismatch_rejected": true,
+    "immutable_artifact_conflict_rejected": true,
+    "idempotent_same_content": true,
+    "shell_tool_available": false,
+    "network_tool_available": false
+  },
+  "remaining_preproduction": [
+    "signed OPA bundle distribution",
+    "OPA outage/cache chaos test",
+    "sandbox process/container isolation",
+    "KMS-backed artifact adapter",
+    "external penetration test"
+  ],
+  "production_credentials_used": false,
+  "external_side_effects": false,
+  "ruflo_enabled": false
+}

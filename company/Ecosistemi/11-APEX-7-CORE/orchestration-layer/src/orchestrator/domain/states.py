@@ -1,0 +1,67 @@
+from enum import StrEnum
+
+
+class RiskClass(StrEnum):
+    R0 = "R0"
+    R1 = "R1"
+    R2 = "R2"
+    R3 = "R3"
+
+
+class ActorType(StrEnum):
+    API = "API"
+    WORKER = "WORKER"
+    POLICY = "POLICY"
+    HUMAN = "HUMAN"
+    RECOVERY = "RECOVERY"
+    GATE = "GATE"
+    SYSTEM = "SYSTEM"
+
+
+class WorkflowStatus(StrEnum):
+    RECEIVED = "RECEIVED"
+    VALIDATING = "VALIDATING"
+    PLANNING = "PLANNING"
+    PLAN_REVIEW = "PLAN_REVIEW"
+    AWAITING_APPROVAL = "AWAITING_APPROVAL"
+    AUTHORIZED = "AUTHORIZED"
+    RUNNING = "RUNNING"
+    PAUSED = "PAUSED"
+    RECOVERING = "RECOVERING"
+    RECONCILING = "RECONCILING"
+    COMPENSATING = "COMPENSATING"
+    QUALITY_REVIEW = "QUALITY_REVIEW"
+    REMEDIATING = "REMEDIATING"
+    CANCEL_REQUESTED = "CANCEL_REQUESTED"
+    CANCELLING = "CANCELLING"
+    COMPLETED = "COMPLETED"
+    FAILED = "FAILED"
+    REJECTED = "REJECTED"
+    CANCELLED = "CANCELLED"
+    COMPENSATED = "COMPENSATED"
+    MANUAL_INTERVENTION = "MANUAL_INTERVENTION"
+
+    @property
+    def terminal(self) -> bool:
+        return self in {
+            self.COMPLETED,
+            self.FAILED,
+            self.REJECTED,
+            self.CANCELLED,
+            self.COMPENSATED,
+            self.MANUAL_INTERVENTION,
+        }
+
+
+class TaskStatus(StrEnum):
+    PENDING = "PENDING"
+    BLOCKED = "BLOCKED"
+    READY = "READY"
+    LEASED = "LEASED"
+    RUNNING = "RUNNING"
+    SUCCEEDED = "SUCCEEDED"
+    FAILED = "FAILED"
+    RETRY_WAIT = "RETRY_WAIT"
+    COMPENSATING = "COMPENSATING"
+    COMPENSATED = "COMPENSATED"
+    CANCELLED = "CANCELLED"

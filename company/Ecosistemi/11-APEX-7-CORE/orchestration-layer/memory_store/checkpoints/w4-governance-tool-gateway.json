@@ -1,0 +1,39 @@
+{
+  "checkpoint_id": "W4-GOVERNANCE-OPA-CAPABILITY-TOOL-GATEWAY",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T10:30:22.708030+00:00",
+  "status": "COMPLETED",
+  "supersedes_work_item_checkpoint": "memory_store/checkpoints/wi-003.json",
+  "deliverables": {
+    "policy": "policies/authorization.rego",
+    "policy_tests": 11,
+    "governance": [
+      "fail_closed_opa_adapter",
+      "single_use_capability_service",
+      "postgres_capability_store"
+    ],
+    "tool_gateway": [
+      "repo.read",
+      "artifact.write"
+    ],
+    "evidence_pack": "quality/evidence/w4-evidence-pack.json"
+  },
+  "verification": {
+    "python_tests_total": 67,
+    "python_tests_passed": 67,
+    "opa_tests": "11/11",
+    "opa_live_http": "PASS",
+    "postgres_single_use_grant": "PASS",
+    "path_traversal": "REJECTED",
+    "token_replay": "REJECTED",
+    "unknown_tool": "REJECTED"
+  },
+  "constraints": {
+    "shell_tool": false,
+    "network_tool": false,
+    "production_credentials": false,
+    "ruflo_enabled": false,
+    "external_side_effects": false
+  },
+  "next_increment": "W5-LOCAL-VERTICAL-SLICE"
+}

@@ -1,0 +1,45 @@
+{
+  "verdict": "NO_GO",
+  "passed": [
+    "ARCH_BLUEPRINT",
+    "TEST_REPORT",
+    "THREAT_MODEL",
+    "RESTORE_DRILL",
+    "SLO",
+    "SERVICE_DEFINITION"
+  ],
+  "blocked": [
+    {
+      "id": "OWNERS_ASSIGNED",
+      "reason": "Accountable human owners are UNASSIGNED"
+    },
+    {
+      "id": "ONCALL_STAFFED",
+      "reason": "Primary/secondary on-call staffing not confirmed"
+    },
+    {
+      "id": "EXTERNAL_PENTEST",
+      "reason": "Independent penetration test not executed"
+    },
+    {
+      "id": "PRODUCTION_KMS",
+      "reason": "Production KMS/HSM signing and object encryption not configured"
+    },
+    {
+      "id": "MANAGED_FAILOVER_PITR",
+      "reason": "Managed failover and PITR drill not executed"
+    },
+    {
+      "id": "POSTGRES_16",
+      "reason": "Target PostgreSQL 16 certification not executed"
+    },
+    {
+      "id": "CLOUD_IDP_RESIDENCY",
+      "reason": "Cloud, IdP, region and data residency not selected"
+    }
+  ],
+  "warnings": [
+    "RuFlo execution remains disabled; LocalRuntime is the only eligible path",
+    "R2 and R3 remain disabled at pilot go-live"
+  ]
+}

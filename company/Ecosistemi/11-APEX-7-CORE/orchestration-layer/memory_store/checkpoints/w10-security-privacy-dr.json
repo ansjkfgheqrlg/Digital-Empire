@@ -1,0 +1,51 @@
+{
+  "checkpoint_id": "W10-SECURITY-PRIVACY-DISASTER-RECOVERY",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T11:09:27.043081+00:00",
+  "status": "COMPLETED_WITH_PREPRODUCTION_BLOCKERS",
+  "supersedes_work_item_checkpoint": "memory_store/checkpoints/wi-009.json",
+  "deliverables": {
+    "security_scans": [
+      "Bandit",
+      "pip-audit",
+      "secret-scan",
+      "npm-audit",
+      "CycloneDX environment SBOM"
+    ],
+    "privacy": [
+      "deletion state machine",
+      "2 RLS tables",
+      "retention",
+      "control mapping"
+    ],
+    "dr": [
+      "backup script",
+      "restore script",
+      "real restore drill"
+    ],
+    "evidence_pack": "quality/evidence/w10-evidence-pack.json"
+  },
+  "verification": {
+    "tests": "105/105",
+    "bandit_findings": 0,
+    "dependency_vulnerabilities": 0,
+    "secret_findings": 0,
+    "deletion_tests": "7/7",
+    "deletion_rls": "PASS",
+    "policy_signature_test": "PASS",
+    "tables_restored": 11,
+    "forced_rls_restored": 11,
+    "state_audit_outbox_restored": true,
+    "restore_duration_ms": 276
+  },
+  "blockers": [
+    "external pentest",
+    "production KMS/HSM signing",
+    "object-store KMS/deletion",
+    "managed failover",
+    "PITR",
+    "PostgreSQL 16 rerun",
+    "cloud residency approval"
+  ],
+  "next_increment": "W11-OPERATIONS-PRODUCTION-READINESS-REVIEW"
+}

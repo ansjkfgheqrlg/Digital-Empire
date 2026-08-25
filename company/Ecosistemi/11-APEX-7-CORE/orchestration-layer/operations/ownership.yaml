@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "status": "INCOMPLETE",
+  "roles": {
+    "service_owner": "UNASSIGNED",
+    "tech_lead": "UNASSIGNED",
+    "primary_oncall": "UNASSIGNED",
+    "secondary_oncall": "UNASSIGNED",
+    "security_owner": "UNASSIGNED",
+    "privacy_owner": "UNASSIGNED",
+    "release_commander": "UNASSIGNED",
+    "ruflo_maintainer": "UNASSIGNED"
+  },
+  "rule": "No production GO while any accountable role is UNASSIGNED"
+}

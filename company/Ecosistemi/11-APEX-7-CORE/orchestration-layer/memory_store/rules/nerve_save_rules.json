@@ -1,0 +1,34 @@
+{
+  "category": "NERVE-SAVE Token Economy",
+  "version": "2.0.0",
+  "rules": [
+    {
+      "id": "NS-001",
+      "statement": "Classifica intent e assegna budget token PRIMA di generare.",
+      "severity": "HIGH",
+      "enforcement": "WARN",
+      "tags": ["token-economy", "budget"]
+    },
+    {
+      "id": "NS-002",
+      "statement": "Zero filler: nessun pattern dalla lista nera P1 sopravvive.",
+      "severity": "HIGH",
+      "enforcement": "BLOCK",
+      "tags": ["token-economy", "compression"]
+    },
+    {
+      "id": "NS-003",
+      "statement": "Se il contenuto è strutturabile, strutturalo in tabella o lista. La prosa è last resort.",
+      "severity": "MEDIUM",
+      "enforcement": "WARN",
+      "tags": ["token-economy", "format"]
+    },
+    {
+      "id": "NS-004",
+      "statement": "TES < 0.60 richiede riscrittura prima dell'emissione.",
+      "severity": "HIGH",
+      "enforcement": "BLOCK",
+      "tags": ["quality", "tes"]
+    }
+  ]
+}

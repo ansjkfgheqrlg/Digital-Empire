@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ocp.local/schemas/v1/gate-report.json",
+  "title": "GateReport",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "gate_id", "rubric_version", "verdict", "blocking_failures", "criteria", "attempt", "artifact_hash"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "gate_id": {"type": "string", "minLength": 1},
+    "rubric_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "verdict": {"enum": ["PASS", "REMEDIATE", "REJECT", "ESCALATE"]},
+    "blocking_failures": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "criteria": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "status", "evidence_refs", "confidence"],
+        "properties": {
+          "id": {"type": "string"},
+          "status": {"enum": ["PASS", "FAIL"]},
+          "evidence_refs": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    },
+    "attempt": {"type": "integer", "minimum": 1, "maximum": 3},
+    "artifact_hash": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"}
+  }
+}

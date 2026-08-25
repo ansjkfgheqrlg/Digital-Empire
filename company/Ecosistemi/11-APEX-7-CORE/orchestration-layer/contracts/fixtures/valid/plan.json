@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "PLAN-001",
+  "workflow_id": "018f4f62-7a6b-7d41-8ec8-8eb40f6bce31",
+  "tasks": [
+    {
+      "task_id": "analyze",
+      "role": "implementer",
+      "objective": "Analyze the repository fixture without modifying it.",
+      "depends_on": [],
+      "completion_criteria": ["Architecture evidence is recorded"],
+      "capabilities": ["repo.read"],
+      "budget": {"max_tokens": 8000, "max_cost_usd": 0.5, "timeout_seconds": 90},
+      "side_effect": {"mode": "NONE"}
+    },
+    {
+      "task_id": "write-adr",
+      "role": "implementer",
+      "objective": "Write the ADR to the scoped artifact path.",
+      "depends_on": ["analyze"],
+      "completion_criteria": ["ADR matches the output schema"],
+      "capabilities": ["repo.read", "artifact.write:adr/**"],
+      "budget": {"max_tokens": 10000, "max_cost_usd": 0.75, "timeout_seconds": 120},
+      "side_effect": {
+        "mode": "IDEMPOTENT",
+        "idempotency_key_template": "{tenant}:{workflow}:{task}",
+        "result_lookup": true,
+        "reconciliation_operation": "artifact.lookup"
+      }
+    },
+    {
+      "task_id": "quality-gate",
+      "role": "gate",
+      "objective": "Evaluate the ADR against the approved rubric.",
+      "depends_on": ["write-adr"],
+      "completion_criteria": ["Every blocking criterion has evidence"],
+      "capabilities": ["artifact.read"],
+      "budget": {"max_tokens": 3000, "max_cost_usd": 0.2, "timeout_seconds": 30},
+      "side_effect": {"mode": "NONE"}
+    }
+  ]
+}

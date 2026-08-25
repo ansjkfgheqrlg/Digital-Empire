@@ -1,0 +1,37 @@
+{
+  "report_version": "1.0",
+  "increment": "W5-LOCAL-VERTICAL-SLICE",
+  "result": "PASS",
+  "tests_total": 74,
+  "tests_passed": 74,
+  "live_slice": {
+    "policy": "OPA 1.19.1 over HTTP",
+    "status": "COMPLETED",
+    "agents": ["planner", "implementer", "critic", "gate"],
+    "quality": {"schema": true, "security": true, "correctness": true, "evidence": true},
+    "gate": "PASS",
+    "artifact": "quality/evidence/w5-generated-adr.md",
+    "event_count": 8,
+    "ruflo_enabled": false
+  },
+  "negative_tests": [
+    "input path traversal rejected",
+    "policy deny creates no artifact",
+    "unknown runtime role fails explicitly",
+    "evidence hash mismatch fails",
+    "secret pattern fails",
+    "NERVE-SAVE preserves number, negation and code",
+    "artifact overwrite conflict rejected",
+    "token replay rejected"
+  ],
+  "remaining_preproduction": [
+    "persist the full vertical-slice lifecycle through PostgreSQL application services",
+    "container/process sandbox",
+    "KMS-backed object store adapter",
+    "prompt evaluation holdout",
+    "recovery and chaos W6"
+  ],
+  "production_credentials_used": false,
+  "external_side_effects": false,
+  "ruflo_enabled": false
+}

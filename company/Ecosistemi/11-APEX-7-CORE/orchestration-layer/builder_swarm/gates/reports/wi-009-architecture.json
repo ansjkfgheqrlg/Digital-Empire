@@ -1,0 +1,41 @@
+{
+  "work_item": "WI-009",
+  "gate": "architecture",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "A1": {
+      "status": "PASS",
+      "evidence": [
+        "docs/adr/010-security-privacy-dr-boundaries.md"
+      ]
+    },
+    "A2": {
+      "status": "PASS",
+      "evidence": [
+        "deletion domain",
+        "privacy migration",
+        "backup/restore scripts"
+      ]
+    },
+    "A3": {
+      "status": "PASS",
+      "evidence": [
+        "RuFlo unchanged and disabled for execution"
+      ]
+    },
+    "A4": {
+      "status": "PASS",
+      "evidence": [
+        "RLS/legal hold/backup role/signature boundaries"
+      ]
+    },
+    "A5": {
+      "status": "PASS",
+      "evidence": [
+        "state-machine deletion and standard pg tools"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

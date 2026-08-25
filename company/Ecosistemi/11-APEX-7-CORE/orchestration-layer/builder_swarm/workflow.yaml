@@ -1,0 +1,28 @@
+{
+  "workflow_id": "BUILD-WORK-ITEM-V1",
+  "version": "1.0.0",
+  "required_gates": ["architecture", "implementation", "release"],
+  "states": [
+    "CREATED", "SCOPED", "DESIGNED", "IMPLEMENTING", "TESTING",
+    "SECURITY_REVIEW", "GATE_REVIEW", "READY_TO_MERGE", "REMEDIATING",
+    "FROZEN", "REJECTED"
+  ],
+  "rules": {
+    "author_cannot_approve": true,
+    "test_and_security_parallel": true,
+    "maximum_gate_attempts": 3,
+    "third_failure_action": "FREEZE_AND_ESCALATE_HUMAN",
+    "hard_gate_override": false,
+    "artifact_hash_required": true
+  },
+  "stages": [
+    {"id": "scope", "agent": "BUILD-LEAD", "depends_on": []},
+    {"id": "architecture", "agent": "ARCHITECT", "depends_on": ["scope"]},
+    {"id": "ruflo-certification", "agent": "RUFLO-SCOUT", "depends_on": ["architecture"], "conditional": "touches_ruflo"},
+    {"id": "implementation", "agent": "IMPLEMENTER", "depends_on": ["architecture"]},
+    {"id": "testing", "agent": "TESTER", "depends_on": ["implementation"]},
+    {"id": "security", "agent": "SECURITY", "depends_on": ["implementation"]},
+    {"id": "gate-review", "agent": "GATEKEEPER", "depends_on": ["testing", "security"]},
+    {"id": "release-candidate", "agent": "RELEASE", "depends_on": ["gate-review"]}
+  ]
+}

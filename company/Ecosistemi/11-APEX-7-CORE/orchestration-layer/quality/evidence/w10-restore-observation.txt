@@ -1,0 +1,7 @@
+/tmp/ocp-w10-dr/ocp.dump: OK
+drill-tenant
+tables=11
+forced_rls=11
+workflow_rows=1
+audit_rows=1
+outbox_rows=1

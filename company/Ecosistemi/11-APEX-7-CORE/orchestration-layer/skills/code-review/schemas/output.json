@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CodeReviewOutput",
+  "type": "object",
+  "required": ["review_summary", "files", "total_findings"],
+  "additionalProperties": false,
+  "properties": {
+    "review_summary": { "type": "string" },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "sha256", "lines_count", "findings"],
+        "properties": {
+          "path": { "type": "string" },
+          "sha256": { "type": "string" },
+          "lines_count": { "type": "integer" },
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["severity", "message"],
+              "properties": {
+                "severity": { "type": "string" },
+                "message": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "total_findings": { "type": "integer" }
+  }
+}

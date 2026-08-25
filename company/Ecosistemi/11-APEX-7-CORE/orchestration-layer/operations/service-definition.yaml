@@ -1,0 +1,13 @@
+{
+  "service": "Orchestration Control Plane",
+  "release": "0.1-pilot",
+  "tier": "Tier-2 internal pilot",
+  "enabled_risk_classes": ["R0", "R1"],
+  "r2": "disabled until separate approval",
+  "r3": "disabled",
+  "support_window": "08:00-20:00 business days",
+  "support_boundary": {
+    "included": ["workflow tracking", "policy enforcement", "auditable local execution", "recovery within tested scope"],
+    "excluded": ["downstream business correctness", "irreversible rollback", "24x7 support", "legal compliance certification"]
+  }
+}

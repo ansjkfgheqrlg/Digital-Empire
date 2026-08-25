@@ -1,0 +1,17 @@
+{
+  "apiVersion": "orchestration/v1",
+  "kind": "Skill",
+  "metadata": {"id": "repository-adr", "version": "1.0.0", "owner": "architecture-team"},
+  "spec": {
+    "status": "ACTIVE",
+    "riskClass": "R1",
+    "inputSchema": "schemas/input.json",
+    "outputSchema": "schemas/output.json",
+    "capabilities": ["repo.read", "artifact.write:adr/**"],
+    "timeoutSeconds": 120,
+    "budgets": {"maxTokens": 30000, "maxCostUsd": 2.0},
+    "idempotency": "required",
+    "sandbox": "repository-readonly-artifact-write",
+    "runtime": {"baseline": "local", "ruflo": "disabled"}
+  }
+}

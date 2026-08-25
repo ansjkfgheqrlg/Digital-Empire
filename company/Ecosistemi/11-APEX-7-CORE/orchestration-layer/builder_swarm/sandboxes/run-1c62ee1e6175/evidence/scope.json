@@ -1,0 +1,10 @@
+{
+  "work_item": "WI-ACT-001",
+  "title": "Generate Builder Team capability report",
+  "risk": "R1",
+  "non_scope": [
+    "production",
+    "external tools",
+    "RuFlo execution"
+  ]
+}

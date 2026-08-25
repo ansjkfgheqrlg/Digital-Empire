@@ -1,0 +1,35 @@
+{
+  "checkpoint_id": "W7-RUFLO-CERTIFICATION-AND-BRIDGE",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T10:48:38.577745+00:00",
+  "status": "BRIDGE_COMPLETED_EXECUTION_ACTIVATION_BLOCKED",
+  "supersedes_work_item_checkpoint": "memory_store/checkpoints/wi-006.json",
+  "deliverables": {
+    "source_commit": "3c99b1c84a25948c42a163253bac6effed5fbbbb",
+    "runtime_pin": "ruflo@3.38.19",
+    "mcp_tools_discovered": 333,
+    "required_tools_present": "8/8",
+    "schema_hashes": 8,
+    "bridge": [
+      "McpClient",
+      "SchemaGuard",
+      "Supervisor",
+      "RuntimeAdapter"
+    ],
+    "evidence_pack": "quality/evidence/w7-evidence-pack.json"
+  },
+  "verification": {
+    "typescript_tests": "7/7",
+    "npm_vulnerabilities": 0,
+    "real_mcp_smoke": "PASS",
+    "mcp_sigkill_restart": "PASS",
+    "agent_execute_negative_path": "FAIL_CLOSED_PASS",
+    "provider_backed_execution": "NOT_TESTED"
+  },
+  "activation": {
+    "production_routing_enabled": false,
+    "local_runtime_active": true,
+    "reason": "provider-backed execution and comparative canary are not certified"
+  },
+  "next_increment": "W8-BUILDER-SWARM-SANDBOX-ACTIVATION"
+}

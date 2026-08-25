@@ -1,0 +1,38 @@
+{
+  "report_version": "1.1",
+  "increment": "W3-DURABLE-EXECUTION",
+  "result": "PASS_WITH_VERSION_LIMITATION",
+  "tests_total": 51,
+  "tests_passed": 51,
+  "compileall": "PASS",
+  "real_postgres": {
+    "server": "PostgreSQL 17.11 ephemeral sandbox",
+    "target_production_version": "PostgreSQL 16",
+    "migration_from_empty_database": "PASS",
+    "tables_created": 9,
+    "forced_rls_tables": 9,
+    "runtime_superuser": false,
+    "runtime_bypassrls": false,
+    "integration_tests": 5,
+    "integration_tests_passed": 5
+  },
+  "proven": [
+    "state, audit and outbox commit atomically",
+    "rollback removes state, audit and outbox writes",
+    "forced RLS hides a known workflow id from another tenant",
+    "optimistic second writer is rejected",
+    "two open transactions cannot claim the same task",
+    "stale execution token cannot commit a result",
+    "tenant context is installed before repository access",
+    "migration SQL executes against a real PostgreSQL server"
+  ],
+  "remaining_for_preproduction": [
+    "repeat migration and integration suite on PostgreSQL 16 image",
+    "process-level kill test during a leased task",
+    "managed database failover",
+    "PITR and restore drill"
+  ],
+  "production_credentials_used": false,
+  "external_side_effects": false,
+  "ruflo_enabled": false
+}

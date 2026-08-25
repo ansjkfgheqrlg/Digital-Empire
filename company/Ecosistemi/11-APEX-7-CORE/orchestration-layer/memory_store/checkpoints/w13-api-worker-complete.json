@@ -1,0 +1,71 @@
+{
+  "checkpoint_id": "W13-API-WORKER-PERSISTENT-END-TO-END",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T17:27:58.966670+00:00",
+  "status": "LOCAL_ORCHESTRATION_LAYER_COMPLETE_PRODUCTION_NO_GO",
+  "deliverables": {
+    "api": [
+      "Ed25519 challenge",
+      "session",
+      "create/get/cancel/events/health/metrics"
+    ],
+    "worker": [
+      "durable claim",
+      "LocalRuntime execution",
+      "event-stream persistence",
+      "graceful stop"
+    ],
+    "outbox": [
+      "claim",
+      "stdout sink",
+      "published marking"
+    ],
+    "deployment": [
+      "rootless image",
+      "Compose API/worker/outbox/migrate",
+      "full CI"
+    ],
+    "package": "release/candidate/ocp-0.1.0-pilot.tar.gz",
+    "package_sha256": "6d5858b68a0e14a328417edd9cbc77f6a91802b4f9fee63eed6545bf2572fec1",
+    "evidence_pack": "quality/evidence/w13-evidence-pack.json"
+  },
+  "verification": {
+    "test_definitions": 132,
+    "full_suite": "131/131",
+    "cancel_integration": "1/1",
+    "real_live_process_workflow": "COMPLETED",
+    "ordered_audit_events": 8,
+    "outbox_delivered": 8,
+    "api_graceful_shutdown": "PASS",
+    "bandit_findings": 0,
+    "dependency_vulnerabilities": 0,
+    "secret_findings": 0,
+    "local_pilot_prr": "GO_LOCAL_PILOT",
+    "production_prr": "NO_GO"
+  },
+  "enabled": [
+    "loopback API",
+    "R0",
+    "R1",
+    "LocalRuntime",
+    "persistent worker",
+    "local outbox"
+  ],
+  "disabled": [
+    "anonymous",
+    "R2",
+    "R3",
+    "RuFlo generative execution",
+    "Internet exposure",
+    "production claim"
+  ],
+  "remaining_production_requirements": [
+    "real owners and on-call",
+    "external pentest",
+    "KMS/object storage",
+    "managed PostgreSQL 16 failover/PITR",
+    "cloud/IdP/residency",
+    "durable broker"
+  ],
+  "next_action": "Operate and observe local pilot; production requires a separate infrastructure and governance program"
+}

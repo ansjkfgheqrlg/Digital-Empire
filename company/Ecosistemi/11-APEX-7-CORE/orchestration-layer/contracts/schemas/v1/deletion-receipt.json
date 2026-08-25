@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ocp.local/schemas/v1/deletion-receipt.json",
+  "title": "DeletionReceipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["request_id", "tenant_id", "subject_ref_hashes", "systems", "backup_expiry_at", "version", "receipt_sha256"],
+  "properties": {
+    "request_id": {"type": "string"},
+    "tenant_id": {"type": "string", "minLength": 3, "maxLength": 64},
+    "subject_ref_hashes": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"}},
+    "systems": {"type": "object", "additionalProperties": {"enum": ["DELETED", "NOT_FOUND", "PURGED"]}},
+    "backup_expiry_at": {"type": "string", "format": "date-time"},
+    "version": {"type": "integer", "minimum": 1},
+    "receipt_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  }
+}

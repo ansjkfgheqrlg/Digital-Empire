@@ -1,0 +1,45 @@
+{
+  "work_item": "WI-005",
+  "gate": "architecture",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "A1": {
+      "status": "PASS",
+      "evidence": [
+        "docs/adr/006-reconcile-before-retry.md"
+      ]
+    },
+    "A2": {
+      "status": "PASS",
+      "evidence": [
+        "RetryPolicy",
+        "RecoveryCoordinator",
+        "CompensationCatalog",
+        "ChaosExperiment"
+      ]
+    },
+    "A3": {
+      "status": "PASS",
+      "evidence": [
+        "RuFlo disabled"
+      ]
+    },
+    "A4": {
+      "status": "PASS",
+      "evidence": [
+        "unknown outcome",
+        "cancel",
+        "grant revoke",
+        "manual intervention"
+      ]
+    },
+    "A5": {
+      "status": "PASS",
+      "evidence": [
+        "bounded catalog and six focused experiments"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

@@ -1,0 +1,39 @@
+{
+  "work_item": "WI-011",
+  "gate": "release",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "R1": {
+      "status": "PASS",
+      "evidence": [
+        "W12 engineering evidence"
+      ]
+    },
+    "R2": {
+      "status": "PASS",
+      "evidence": [
+        "quality/evidence/w12-evidence-pack.json"
+      ]
+    },
+    "R3": {
+      "status": "PASS",
+      "evidence": [
+        "production promotion blocked and rollback PASS"
+      ]
+    },
+    "R4": {
+      "status": "PASS",
+      "evidence": [
+        "PRR remains accountable to humans"
+      ]
+    },
+    "R5": {
+      "status": "PASS",
+      "evidence": [
+        "seven NO_GO blockers are not overridden"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

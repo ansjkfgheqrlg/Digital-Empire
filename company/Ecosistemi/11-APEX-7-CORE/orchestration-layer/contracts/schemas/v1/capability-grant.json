@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ocp.local/schemas/v1/capability-grant.json",
+  "title": "CapabilityGrant",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["jti", "issuer", "audience", "tenant_id", "workflow_id", "task_id", "execution_token_hash", "capabilities", "constraints", "not_before", "expires_at", "nonce"],
+  "properties": {
+    "jti": {"type": "string", "format": "uuid"},
+    "issuer": {"const": "orchestrator-control-plane"},
+    "audience": {"const": "tool-gateway"},
+    "tenant_id": {"type": "string", "minLength": 3, "maxLength": 64},
+    "workflow_id": {"type": "string", "format": "uuid"},
+    "task_id": {"type": "string", "format": "uuid"},
+    "execution_token_hash": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+    "capabilities": {"type": "array", "minItems": 1, "maxItems": 20, "uniqueItems": true, "items": {"type": "string"}},
+    "constraints": {"type": "object"},
+    "not_before": {"type": "string", "format": "date-time"},
+    "expires_at": {"type": "string", "format": "date-time"},
+    "nonce": {"type": "string", "minLength": 16, "maxLength": 256}
+  }
+}

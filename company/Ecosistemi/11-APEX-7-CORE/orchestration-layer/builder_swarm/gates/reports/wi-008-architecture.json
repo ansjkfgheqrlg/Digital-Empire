@@ -1,0 +1,42 @@
+{
+  "work_item": "WI-008",
+  "gate": "architecture",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "A1": {
+      "status": "PASS",
+      "evidence": [
+        "docs/adr/009-baseline-before-ruflo-comparison.md"
+      ]
+    },
+    "A2": {
+      "status": "PASS",
+      "evidence": [
+        "benchmark harness",
+        "memory eval",
+        "versioned dataset"
+      ]
+    },
+    "A3": {
+      "status": "PASS",
+      "evidence": [
+        "RuFlo comparison blocked rather than invented"
+      ]
+    },
+    "A4": {
+      "status": "PASS",
+      "evidence": [
+        "approved-only memory",
+        "invalid/adversarial cases"
+      ]
+    },
+    "A5": {
+      "status": "PASS",
+      "evidence": [
+        "deterministic baseline before provider benchmark"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

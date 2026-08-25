@@ -1,0 +1,16 @@
+{
+  "allow": {
+    "effect": "ALLOW",
+    "reasons": [
+      "POL_LOW_RISK_ALLOWED"
+    ]
+  },
+  "forbidden": {
+    "effect": "DENY",
+    "reasons": [
+      "POL_FORBIDDEN_CAPABILITY",
+      "POL_UNKNOWN_CAPABILITY"
+    ]
+  },
+  "policy_hash": "sha256:62a1dd01ec68c7b3df123c8ce7f57d27b71e60d590596595d7b3ec165b6841ba"
+}

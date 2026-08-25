@@ -1,0 +1,10 @@
+# Final ownership identities will replace role placeholders before PRR.
+/docs/adr/                 @architecture-owner
+/contracts/                @architecture-owner @security-owner
+/src/                      @implementation-owner
+/tests/                    @test-owner
+/policies/                 @security-owner
+/ruflo_bridge/             @ruflo-owner @security-owner
+/builder_swarm/gates/      @gate-owner
+/release/                  @release-owner
+/memory_store/             @memory-owner @security-owner

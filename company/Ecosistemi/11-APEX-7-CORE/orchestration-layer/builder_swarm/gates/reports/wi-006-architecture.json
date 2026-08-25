@@ -1,0 +1,42 @@
+{
+  "work_item": "WI-006",
+  "gate": "architecture",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "A1": {
+      "status": "PASS",
+      "evidence": [
+        "docs/adr/007-ruflo-bridge-quarantined.md"
+      ]
+    },
+    "A2": {
+      "status": "PASS",
+      "evidence": [
+        "AgentRuntime boundary",
+        "TypeScript MCP bridge"
+      ]
+    },
+    "A3": {
+      "status": "PASS",
+      "evidence": [
+        "real tool names and schema hashes"
+      ]
+    },
+    "A4": {
+      "status": "PASS",
+      "evidence": [
+        "supervisor",
+        "schema drift",
+        "feature flag off"
+      ]
+    },
+    "A5": {
+      "status": "PASS",
+      "evidence": [
+        "only eight required tools; memory/federation/autoscale disabled"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

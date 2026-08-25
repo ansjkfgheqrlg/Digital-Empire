@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "criteria": [
+    {"id":"ARCH_BLUEPRINT","kind":"file","path":"plans/level-07-final-production-blueprint.md"},
+    {"id":"TEST_REPORT","kind":"file","path":"quality/evidence/w10-test-report.json"},
+    {"id":"THREAT_MODEL","kind":"file","path":"docs/architecture/threat-model.md"},
+    {"id":"RESTORE_DRILL","kind":"file","path":"quality/evidence/w10-restore-drill.json"},
+    {"id":"SLO","kind":"file","path":"operations/slo.yaml"},
+    {"id":"SERVICE_DEFINITION","kind":"file","path":"operations/service-definition.yaml"},
+    {"id":"OWNERS_ASSIGNED","kind":"manual","status":"BLOCKED","reason":"Accountable human owners are UNASSIGNED"},
+    {"id":"ONCALL_STAFFED","kind":"manual","status":"BLOCKED","reason":"Primary/secondary on-call staffing not confirmed"},
+    {"id":"EXTERNAL_PENTEST","kind":"manual","status":"BLOCKED","reason":"Independent penetration test not executed"},
+    {"id":"PRODUCTION_KMS","kind":"manual","status":"BLOCKED","reason":"Production KMS/HSM signing and object encryption not configured"},
+    {"id":"MANAGED_FAILOVER_PITR","kind":"manual","status":"BLOCKED","reason":"Managed failover and PITR drill not executed"},
+    {"id":"POSTGRES_16","kind":"manual","status":"BLOCKED","reason":"Target PostgreSQL 16 certification not executed"},
+    {"id":"CLOUD_IDP_RESIDENCY","kind":"manual","status":"BLOCKED","reason":"Cloud, IdP, region and data residency not selected"},
+    {"id":"RUFLO","kind":"warning","reason":"RuFlo execution remains disabled; LocalRuntime is the only eligible path"},
+    {"id":"R2_R3","kind":"warning","reason":"R2 and R3 remain disabled at pilot go-live"}
+  ]
+}

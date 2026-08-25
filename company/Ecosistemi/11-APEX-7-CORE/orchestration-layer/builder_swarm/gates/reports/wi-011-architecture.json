@@ -1,0 +1,42 @@
+{
+  "work_item": "WI-011",
+  "gate": "architecture",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "A1": {
+      "status": "PASS",
+      "evidence": [
+        "docs/adr/012-nonproduction-pilot-package.md"
+      ]
+    },
+    "A2": {
+      "status": "PASS",
+      "evidence": [
+        "release controller",
+        "package builder",
+        "container/compose/CI"
+      ]
+    },
+    "A3": {
+      "status": "PASS",
+      "evidence": [
+        "RuFlo execution disabled"
+      ]
+    },
+    "A4": {
+      "status": "PASS",
+      "evidence": [
+        "PRR gate",
+        "rootless/read-only/no-new-privileges"
+      ]
+    },
+    "A5": {
+      "status": "PASS",
+      "evidence": [
+        "CLI-only pilot; no invented API service"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

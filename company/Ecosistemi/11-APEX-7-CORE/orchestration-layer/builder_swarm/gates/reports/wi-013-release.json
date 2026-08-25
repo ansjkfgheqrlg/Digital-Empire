@@ -1,0 +1,39 @@
+{
+  "work_item": "WI-013",
+  "gate": "release",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "R1": {
+      "status": "PASS",
+      "evidence": [
+        "live process and integration evidence"
+      ]
+    },
+    "R2": {
+      "status": "PASS",
+      "evidence": [
+        "quality/evidence/w13-evidence-pack.json"
+      ]
+    },
+    "R3": {
+      "status": "PASS",
+      "evidence": [
+        "GO_LOCAL_PILOT; production NO_GO"
+      ]
+    },
+    "R4": {
+      "status": "PASS",
+      "evidence": [
+        "single local operator only; no SoD claim"
+      ]
+    },
+    "R5": {
+      "status": "PASS",
+      "evidence": [
+        "R2/R3/RuFlo/production blockers retained"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

@@ -1,0 +1,85 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W12-GO-LIVE-REHEARSAL-AND-PILOT-PACKAGE",
+  "artifacts": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "e86063facec4bd35d38133c3c59a20a2ee8959fa9d855c7527532f9be9926766"
+    },
+    {
+      "path": "deploy/compose/docker-compose.yml",
+      "sha256": "abf5cf027dbce5c9a1b7135ef0134dbde9cc336ec19491b7b2f7f4ac41b16287"
+    },
+    {
+      "path": "deploy/pilot/Dockerfile",
+      "sha256": "e8c9efef7fa4097982d4019e7a7f3f74c1f680c305a600bfa51a7e7a10f14527"
+    },
+    {
+      "path": "deploy/pilot/README.md",
+      "sha256": "3c93f0bc1673b1d5f58c4935c86a96752d5c8262f1684e08b031357545078ada"
+    },
+    {
+      "path": "docs/adr/012-nonproduction-pilot-package.md",
+      "sha256": "a754d60fe4ba3dd933b299fa8edb70d245d59c569ec7a67b2b1668a23c61e642"
+    },
+    {
+      "path": "release/candidate/SHA256SUMS",
+      "sha256": "6b12cf5f18bb47c9051f1b6851abc28b7c5463881300a57a54b8aa2b64c45219"
+    },
+    {
+      "path": "release/candidate/manifest.json",
+      "sha256": "bc4cb14d596a4fcd2613927bf50c6993f4c6b8ae2875ce9d3c4448090a5022f0"
+    },
+    {
+      "path": "release/rings.yaml",
+      "sha256": "2c16c6a735053fba2846bd2cd2e08399a3f53ec1ff593e5339044464390d2ca7"
+    },
+    {
+      "path": "release/version.json",
+      "sha256": "823df50871a4aa1b7312f336ff0f74ad71424e6ffffb1aad5f8ea8bb1df5b8e8"
+    },
+    {
+      "path": "scripts/build_pilot_package.py",
+      "sha256": "f3485898b275b1c2a05101c4e7f487a790174a3f9d199463f8f6af7f70317bdc"
+    },
+    {
+      "path": "scripts/rehearse_rollout.py",
+      "sha256": "cd4b5f543d592fe22eabe5244f5b86dfb97c1eb7d6f71d13f6cbfb52df3a1745"
+    },
+    {
+      "path": "src/orchestrator/release/rollout.py",
+      "sha256": "39788b67e60b99131fd8d50dec8789e9050622077f519f5b98ebd8ba6d0f2ed1"
+    },
+    {
+      "path": "tests/test_release.py",
+      "sha256": "04d8a0829a056f73b117bcb5969fa3c0469bb8d45c62d70b2d42bd82e9ab5ca2"
+    }
+  ],
+  "reports": [
+    {
+      "path": "quality/evidence/w12-test-report.json",
+      "sha256": "3843bd844d719111351cd599a4691b382be930c217cc0d1768f87cae613991a3"
+    },
+    {
+      "path": "quality/evidence/w12-package-build.json",
+      "sha256": "a41272c7ce66574e9d09d6d670d60727b7172fe8ebe5a976ec7c26be0a71d488"
+    },
+    {
+      "path": "quality/evidence/w12-rollout-rehearsal.json",
+      "sha256": "e8fa774040da30d6beee1948eca82f2eeb38e34c5eaabc4a29a3f37ab609b8bb"
+    }
+  ],
+  "pilot_package": {
+    "path": "release/candidate/ocp-0.1.0-pilot.tar.gz",
+    "sha256": "23ee329d3261b9864a6c2e2f256b31f9ba92964e065558a86110146265573b8a",
+    "size": 183070
+  },
+  "prr_verdict": "NO_GO",
+  "production_deployment": false,
+  "real_traffic": false,
+  "ruflo_execution": false,
+  "r2_enabled": false,
+  "r3_enabled": false,
+  "production_credentials_used": false,
+  "created_at": "2026-08-23T16:43:20.172808+00:00"
+}

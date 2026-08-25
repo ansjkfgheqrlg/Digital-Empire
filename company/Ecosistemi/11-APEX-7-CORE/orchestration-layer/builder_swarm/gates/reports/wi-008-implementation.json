@@ -1,0 +1,41 @@
+{
+  "work_item": "WI-008",
+  "gate": "implementation",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "I1": {
+      "status": "PASS",
+      "evidence": [
+        "src/benchmarks",
+        "PlanIndex 1.1"
+      ]
+    },
+    "I2": {
+      "status": "PASS",
+      "evidence": [
+        "97/97 Python tests",
+        "quality/benchmarks/w9-baseline.json"
+      ]
+    },
+    "I3": {
+      "status": "PASS",
+      "evidence": [
+        "adversarial and insufficient-evidence tests"
+      ]
+    },
+    "I4": {
+      "status": "PASS",
+      "evidence": [
+        "reproducible JSON benchmark output"
+      ]
+    },
+    "I5": {
+      "status": "PASS",
+      "evidence": [
+        "production_credentials=false"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

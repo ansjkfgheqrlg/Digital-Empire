@@ -1,0 +1,42 @@
+{
+  "work_item": "WI-013",
+  "gate": "architecture",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "A1": {
+      "status": "PASS",
+      "evidence": [
+        "docs/adr/014-api-worker-local-completion.md"
+      ]
+    },
+    "A2": {
+      "status": "PASS",
+      "evidence": [
+        "API/WorkflowService/Worker/Outbox boundaries"
+      ]
+    },
+    "A3": {
+      "status": "PASS",
+      "evidence": [
+        "RuFlo execution disabled"
+      ]
+    },
+    "A4": {
+      "status": "PASS",
+      "evidence": [
+        "Ed25519 auth",
+        "RLS",
+        "idempotency",
+        "cancel claim guard"
+      ]
+    },
+    "A5": {
+      "status": "PASS",
+      "evidence": [
+        "LocalRuntime and stdout outbox for local scope"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

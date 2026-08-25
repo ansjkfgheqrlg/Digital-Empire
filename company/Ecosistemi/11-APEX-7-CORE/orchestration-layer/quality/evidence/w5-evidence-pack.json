@@ -1,0 +1,132 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W5-LOCAL-VERTICAL-SLICE",
+  "artifacts": [
+    {
+      "path": "prompts/critic/manifest.yaml",
+      "sha256": "ac21431347faa79cf0d17a7e866fd4358302e08bbe574d2aba627658f3eeb4a4"
+    },
+    {
+      "path": "prompts/critic/prompt.md",
+      "sha256": "bbf7b56c3b4e8632fcf5dff3f08e8e78bcd9814e49a91ccfc9507f63c3d5b953"
+    },
+    {
+      "path": "prompts/gate/manifest.yaml",
+      "sha256": "79414576ca6c7fc421d16a868f194085f38dcff7272ebc7ae145f8581ef5babe"
+    },
+    {
+      "path": "prompts/gate/prompt.md",
+      "sha256": "33be86eea77c250c391ecb4fac8acdf58e428927896b75852e5960ff793a9dc3"
+    },
+    {
+      "path": "prompts/implementer/manifest.yaml",
+      "sha256": "d3a84e35cd0c258ac0813d66958684203d87e14509ec7de82b765c3478a6f423"
+    },
+    {
+      "path": "prompts/implementer/prompt.md",
+      "sha256": "cffe6f6b73e16c290bcde1cd75f2cb785116bcf8b10320f8c53c8aedc2c18eed"
+    },
+    {
+      "path": "prompts/planner/manifest.yaml",
+      "sha256": "1bafa82dde1ea046c410a4fc56f52dbcb25088eef499d7402ab089928379aa17"
+    },
+    {
+      "path": "prompts/planner/prompt.md",
+      "sha256": "0243a9b51b10614c07effa7c8a16af50138b322cdeb2e6bda68302e4391de8b6"
+    },
+    {
+      "path": "skills/repository-adr/instructions.md",
+      "sha256": "a755fd6a3794c194ea3043df91056440a8f8a2ccbc73e50f5988f7aa2ce50ac7"
+    },
+    {
+      "path": "skills/repository-adr/manifest.yaml",
+      "sha256": "49264abc9c20c51178b7cd163de64f4dff9f288d176d086af9bc6a6ab8ffc67f"
+    },
+    {
+      "path": "skills/repository-adr/schemas/input.json",
+      "sha256": "c119d5756e60edc56d49e720fd471239f17397b69de81808b7ecb26a9b4a7ace"
+    },
+    {
+      "path": "skills/repository-adr/schemas/output.json",
+      "sha256": "91995ad9c0782f431ecf2d0fc8a139af271842c0936f30ac00ddbaae2d206551"
+    },
+    {
+      "path": "src/orchestrator/agents/__init__.py",
+      "sha256": "fb8a0fc90950e10e12d41c1eaa7f2dc16cdd5b2b93cd45a65bad6855158d5257"
+    },
+    {
+      "path": "src/orchestrator/agents/repository_adr.py",
+      "sha256": "8157e5284a586efe09f372a21802d47f3fc03c4e5ad53a6c5c05c64b708a0aca"
+    },
+    {
+      "path": "src/orchestrator/application/local_vertical_slice.py",
+      "sha256": "906a1085daa36ccc0d7e4704bfd5857a690d11d049fa7cb6c9423f62a909ab33"
+    },
+    {
+      "path": "src/orchestrator/local_slice_cli.py",
+      "sha256": "e219cdb54e221efaede5aedb3555b631299c3c4afbdbbcfbe4b9321389edeb19"
+    },
+    {
+      "path": "src/orchestrator/ports/agent_runtime.py",
+      "sha256": "f23d485c7f96d0450003b23345ad1a5d15996e156a8fd3e068fee4b4f602c794"
+    },
+    {
+      "path": "src/orchestrator/quality/__init__.py",
+      "sha256": "a14142ca9f7804b0ec3aa5376c271f324374ee1e456912baf3cde5dc9556781e"
+    },
+    {
+      "path": "src/orchestrator/quality/nerve_save.py",
+      "sha256": "58e3147e40ad6e01aa29c149807c611ce63535701d21e04a8df70f26ce7c64db"
+    },
+    {
+      "path": "src/orchestrator/quality/pipeline.py",
+      "sha256": "eb5092c43d5297495e3d173ee679828d3a89a73fbf74f88700898bfb2e8e8425"
+    },
+    {
+      "path": "src/orchestrator/runtime/__init__.py",
+      "sha256": "ce58037d65407a56681fb5c8547b31f02eec49db317ca84a956bb5a9852e7beb"
+    },
+    {
+      "path": "src/orchestrator/runtime/local.py",
+      "sha256": "5da6d77a88672d77c24ddeef81359e7e1531b77c33bdeefc1554107b14d495df"
+    },
+    {
+      "path": "src/orchestrator/runtime/models.py",
+      "sha256": "c0ed95aabd92ac87c8d719c691863b3ec89077475b8906be503ae462da75bcaa"
+    },
+    {
+      "path": "tests/fixtures/repository-01/README.md",
+      "sha256": "083bd5116c6ae8b99da14f83839ab958a2d3f50d46aa15da7c2cfd455089b665"
+    },
+    {
+      "path": "tests/fixtures/repository-01/src/app.py",
+      "sha256": "7760cf13783ad116dda2dc9bd2fd116e013ba20c7c0b53b4fa35eb8438e9d7f1"
+    },
+    {
+      "path": "tests/test_local_vertical_slice.py",
+      "sha256": "3fcf6a888a5064cfd5a37e61b1d2123b7e84d217154ed59a4738da002b5d9c89"
+    }
+  ],
+  "reports": [
+    {
+      "path": "quality/evidence/w5-test-report.json",
+      "sha256": "b713af15bed516da80c679135fc556c90f108d1a0b4702f79e1e0a9593126af1"
+    },
+    {
+      "path": "quality/evidence/w5-live-slice.json",
+      "sha256": "1d79e027b642e40ebc47560b9cb5ad7db41ca42553a99c6c3c1eaf1bf76f66b9"
+    },
+    {
+      "path": "quality/evidence/w5-generated-adr.md",
+      "sha256": "8886ea9437b8110fd69335545c5f0f0f6936b9d48b4d787ee1aed431a6c9469c"
+    }
+  ],
+  "runtime": {
+    "baseline": "LocalRuntime",
+    "agents": 4,
+    "ruflo_enabled": false
+  },
+  "production_credentials_used": false,
+  "external_side_effects": false,
+  "created_at": "2026-08-23T10:35:16.697862+00:00"
+}

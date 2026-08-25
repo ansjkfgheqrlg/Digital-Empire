@@ -1,0 +1,112 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W7-RUFLO-CERTIFICATION-AND-BRIDGE",
+  "artifacts": [
+    {
+      "path": "docs/adr/007-ruflo-bridge-quarantined.md",
+      "sha256": "35e65df8dfa464fbb30e1dfe0aed575dfd184d717bf165b5fac737820f842fc0"
+    },
+    {
+      "path": "ruflo_bridge/certification/bridge-smoke.mjs",
+      "sha256": "c5e343972133424edadb9cdb50cb41557f0fec45918374010a1453af883986b9"
+    },
+    {
+      "path": "ruflo_bridge/certification/chaos.mjs",
+      "sha256": "1367d6d229ea0c0133dd712394c9dc22b48c775e20e7d4c736facf24c2192ea7"
+    },
+    {
+      "path": "ruflo_bridge/certification/smoke.mjs",
+      "sha256": "a6b792d0bac2b36ce1864523134318ae16cbc510fbbe7cbe74b30b58eaa85a8a"
+    },
+    {
+      "path": "ruflo_bridge/manifests/bridge-smoke-report.json",
+      "sha256": "831a9f5e414b49e01ae8002a176068c4754059bc55e3b46d3ee03baf95f7946c"
+    },
+    {
+      "path": "ruflo_bridge/manifests/capability-matrix.json",
+      "sha256": "c764bce590a07288cfe97891a314b586448faba431837dd69f59932166c58090"
+    },
+    {
+      "path": "ruflo_bridge/manifests/chaos-report.json",
+      "sha256": "d85c40208feebe668dd8656b4da18bd14653e66c3d339d791bc280ebfce67225"
+    },
+    {
+      "path": "ruflo_bridge/manifests/smoke-report.json",
+      "sha256": "490bc41d3c41df71564b60bcc0fb9d140dbf61b6c55dfaedf4618bd2521b0d37"
+    },
+    {
+      "path": "ruflo_bridge/manifests/source-provenance.json",
+      "sha256": "f1047f4d6645ac613d20760c1e4b0e991c6a0e8ce1406d8d6f60953d5c6c3c6b"
+    },
+    {
+      "path": "ruflo_bridge/manifests/tool-schema-hashes.json",
+      "sha256": "1f9e9784fe4389b0312299da3e6b19b0e25b8182f91b2af854310c19ac138de4"
+    },
+    {
+      "path": "ruflo_bridge/package-lock.json",
+      "sha256": "87f5a1445c0e1a2b3dcac6b66ed34b6799c38f171b7c0ece5bfaccc76ca0d502"
+    },
+    {
+      "path": "ruflo_bridge/package.json",
+      "sha256": "4be4c08c3f5ae8122b385bf92f1ddc1298576b797df23b0e80b44a189ef709bd"
+    },
+    {
+      "path": "ruflo_bridge/src/bridge.ts",
+      "sha256": "7c6dd08118d9795d7ce060c1d540e9d1f165da3d463aa9243fa2f30a0190e7e9"
+    },
+    {
+      "path": "ruflo_bridge/src/index.ts",
+      "sha256": "136166faec4257a4af93d816e452af7ba979a4f0f45f80a5fcff50b4f734363e"
+    },
+    {
+      "path": "ruflo_bridge/src/mcp_client.ts",
+      "sha256": "1a36e9e44b4879643149defb21f54b79630649dbed607995cb52de6068487ef5"
+    },
+    {
+      "path": "ruflo_bridge/src/supervisor.ts",
+      "sha256": "129d083ca8912927e6204645301faf5c4ffb66539a4b63a8406e9289f1a7eb0e"
+    },
+    {
+      "path": "ruflo_bridge/src/types.ts",
+      "sha256": "0566574ab7bcfc20de3e85bdf2b0fc8d804391f75ca0ede5bff885bfcace7503"
+    },
+    {
+      "path": "ruflo_bridge/src/validator.ts",
+      "sha256": "091fa843c9aa84740b959e32b71b094d5317bc4f2be1abaf3a84a2e6203f1fd2"
+    },
+    {
+      "path": "ruflo_bridge/tests/bridge.test.ts",
+      "sha256": "38cf21801a5d209738d8e2335a7304be6adb2cb2f4fd82ebb7ecb4895ab4c763"
+    },
+    {
+      "path": "ruflo_bridge/tests/supervisor.test.ts",
+      "sha256": "b06f3bf3b6e8e66cb91c3218cb5d21f6feecda72e7611486f3abb3f0718334c7"
+    },
+    {
+      "path": "ruflo_bridge/tests/validator.test.ts",
+      "sha256": "cdb0084e9e1ad4068f0b7f1d29b1309ec8f90b8f5531f3c8b3f2445334093059"
+    },
+    {
+      "path": "ruflo_bridge/tsconfig.json",
+      "sha256": "2ac51dea5d69d0e06cc7610ebf8f6694fd0d368bc91a3da96a6dbbfcdd168065"
+    }
+  ],
+  "reports": [
+    {
+      "path": "quality/evidence/w7-test-report.json",
+      "sha256": "977b74943d589ff90194d481bc1dc9b8b2de9c0b7f4950cbe762c5d5a05d9cbc"
+    },
+    {
+      "path": "quality/evidence/w7-npm-audit.json",
+      "sha256": "f9a031af1fd5991a41d6dbf8c4fcafa5b596b094a7d17ad5dea052518cd16fb7"
+    }
+  ],
+  "source_commit": "3c99b1c84a25948c42a163253bac6effed5fbbbb",
+  "runtime_pin": "ruflo@3.38.19",
+  "bridge_unit_tests": "7/7",
+  "smoke_status": "SMOKE_PASS_EXECUTION_PENDING",
+  "chaos_status": "PASS",
+  "production_routing_enabled": false,
+  "production_credentials_used": false,
+  "created_at": "2026-08-23T10:48:38.576866+00:00"
+}

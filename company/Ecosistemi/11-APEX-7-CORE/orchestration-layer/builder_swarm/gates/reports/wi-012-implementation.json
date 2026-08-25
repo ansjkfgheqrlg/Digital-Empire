@@ -1,0 +1,40 @@
+{
+  "work_item": "WI-012",
+  "gate": "implementation",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "I1": {
+      "status": "PASS",
+      "evidence": [
+        "Ed25519 registry/challenge/verification"
+      ]
+    },
+    "I2": {
+      "status": "PASS",
+      "evidence": [
+        "114/114 local tests",
+        "identity 4/4"
+      ]
+    },
+    "I3": {
+      "status": "PASS",
+      "evidence": [
+        "replay/expiry/wrong signature/anonymous rejected"
+      ]
+    },
+    "I4": {
+      "status": "PASS",
+      "evidence": [
+        "package rebuilt; no production promotion"
+      ]
+    },
+    "I5": {
+      "status": "PASS",
+      "evidence": [
+        "private_key_persisted=false"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

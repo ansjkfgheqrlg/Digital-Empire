@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "experiments": [
+    {
+      "id": "CH-01-WORKER-KILL",
+      "injection": "process exits 137 after durable task claim",
+      "steady_state": "expired lease is reclaimed once; attempt increments; stale token rejected",
+      "result": "PASS_REAL_POSTGRES"
+    },
+    {
+      "id": "CH-02-UNKNOWN-OUTCOME",
+      "injection": "tool failure with outcome_known=false",
+      "steady_state": "RetryPolicy returns RECONCILE, never blind retry",
+      "result": "PASS_SIMULATED"
+    },
+    {
+      "id": "CH-03-OPA-DOWN",
+      "injection": "HTTP 500 or malformed OPA response",
+      "steady_state": "PolicyDecision is DENY",
+      "result": "PASS_SIMULATED"
+    },
+    {
+      "id": "CH-04-ARTIFACT-MISMATCH",
+      "injection": "compensation expected hash differs from stored artifact",
+      "steady_state": "artifact remains and compensation fails closed",
+      "result": "PASS_FILESYSTEM"
+    },
+    {
+      "id": "CH-05-CANCEL-GRANT",
+      "injection": "cancel workflow with running task",
+      "steady_state": "task grants revoked and token consumption denied",
+      "result": "PASS_SIMULATED"
+    },
+    {
+      "id": "CH-06-CIRCUIT-OPEN",
+      "injection": "failure threshold reached",
+      "steady_state": "calls rejected until one half-open probe; success closes circuit",
+      "result": "PASS_SIMULATED"
+    }
+  ],
+  "production_blast_radius": 0,
+  "production_credentials_used": false
+}

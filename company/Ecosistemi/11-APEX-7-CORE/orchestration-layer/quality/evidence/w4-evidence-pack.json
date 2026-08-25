@@ -1,0 +1,84 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W4-GOVERNANCE-OPA-CAPABILITY-TOOL-GATEWAY",
+  "artifacts": [
+    {
+      "path": "policies/authorization.rego",
+      "sha256": "62a1dd01ec68c7b3df123c8ce7f57d27b71e60d590596595d7b3ec165b6841ba"
+    },
+    {
+      "path": "policies/authorization_test.rego",
+      "sha256": "a491bc8548c1870c9e3c3c620ed7ed3311aa4e8b9d96eb163b100672ad02d5ce"
+    },
+    {
+      "path": "scripts/test-policy.sh",
+      "sha256": "9d5dfec8620c6f000d83fe644c8bff31bed57e438f0fa2b0b45cb63f11a9fba8"
+    },
+    {
+      "path": "src/orchestrator/adapters/postgres/grants.py",
+      "sha256": "134f8319a4db159b1d379915afe9a4baa2536e9f0811ae3fa9fc6b336f97339b"
+    },
+    {
+      "path": "src/orchestrator/governance/__init__.py",
+      "sha256": "94b76f258839739d386a6aafa7c8c96a00cf5b93547c80cdcb11f1eeb05799ae"
+    },
+    {
+      "path": "src/orchestrator/governance/grants.py",
+      "sha256": "d97b3a67ccc5d5f33d000c3063818fcbcf323ec4eb9d694106ffeefbe6151758"
+    },
+    {
+      "path": "src/orchestrator/governance/policy.py",
+      "sha256": "0029604dcdac6e99883dc7d1c074cb0dcfd42469254c0c02d2aa5c004d7a60bd"
+    },
+    {
+      "path": "src/tool_gateway/__init__.py",
+      "sha256": "2b62caf7ca341e29218fd0964de83b958a1b4463e001afd40e311ce5d5ab1756"
+    },
+    {
+      "path": "src/tool_gateway/gateway.py",
+      "sha256": "19a5e72d0544c1afb9be8f33015df092acb9eb9bae4373d56ed717b591584fdc"
+    },
+    {
+      "path": "src/tool_gateway/tools.py",
+      "sha256": "c416e1135f8965647720ca072711629e34667143b292f3d3e9a65c4b9334ce78"
+    },
+    {
+      "path": "tests/integration/test_opa_real.py",
+      "sha256": "8f5eddd82a120386449a30b1c32c14a88e7e5c1d800f15e7388daee14daa712e"
+    },
+    {
+      "path": "tests/integration/test_postgres_real.py",
+      "sha256": "6e96f6349e48e376343f63e3549a700725c092b9e1ad403b9dd4a9e66d6f74c6"
+    },
+    {
+      "path": "tests/test_governance.py",
+      "sha256": "4c92f613323cb6ab228e4d372887e5a4fd0aba212a4c32b4d467375ca2452ea3"
+    },
+    {
+      "path": "tests/test_tool_gateway.py",
+      "sha256": "13be2df6346f53cf339119a43ec72e52e05c2acc282e6600914826692fb3965f"
+    }
+  ],
+  "reports": [
+    {
+      "path": "quality/evidence/w4-test-report.json",
+      "sha256": "cbcd92d9a510d2e3bf85adc60d73e90fa48955052c01eeabd94c3c7f3519ccd1"
+    },
+    {
+      "path": "quality/evidence/w4-opa-test.txt",
+      "sha256": "6dce28bb7ba062df83e9eda66e8b5559b686b10e3dd55f5cfa8fcb7952396121"
+    },
+    {
+      "path": "quality/evidence/w4-opa-live-observation.json",
+      "sha256": "ad61181b5ada0ad3e10a89e90f33efc7be737850fb623e1381300789a0fa413e"
+    }
+  ],
+  "supply_chain": {
+    "opa_version": "1.19.1",
+    "opa_binary_sha256": "c9f985ce0d345f5484006ade2c695ed9e3f308e4441139e46695c5c182ac0839"
+  },
+  "production_credentials_used": false,
+  "external_side_effects": false,
+  "ruflo_enabled": false,
+  "created_at": "2026-08-23T10:30:22.707654+00:00"
+}

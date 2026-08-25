@@ -1,0 +1,43 @@
+{
+  "work_item": "WI-004",
+  "gate": "architecture",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "A1": {
+      "status": "PASS",
+      "evidence": [
+        "docs/adr/005-local-runtime-baseline.md"
+      ]
+    },
+    "A2": {
+      "status": "PASS",
+      "evidence": [
+        "AgentRuntimePort",
+        "ToolGateway",
+        "QualityPipeline"
+      ]
+    },
+    "A3": {
+      "status": "PASS",
+      "evidence": [
+        "RuFlo disabled and absent from runtime"
+      ]
+    },
+    "A4": {
+      "status": "PASS",
+      "evidence": [
+        "R1",
+        "single-use grants",
+        "no shell/network"
+      ]
+    },
+    "A5": {
+      "status": "PASS",
+      "evidence": [
+        "one bounded repository-adr skill"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "disclaimer": "Control mapping is engineering evidence, not legal certification.",
+  "controls": [
+    {"id":"ACCESS","implementation":["OIDC planned","RLS","capability grants"],"evidence":["integration tenant test","OPA tests"]},
+    {"id":"CHANGE","implementation":["Builder SoD","Evidence Pack"],"evidence":["gate reports","checkpoint hashes"]},
+    {"id":"RETENTION","implementation":["retention policy","deletion state machine"],"evidence":["deletion tests"]},
+    {"id":"RECOVERY","implementation":["pg_dump/restore drill","RPO/RTO record"],"evidence":["W10 DR report"]},
+    {"id":"INCIDENT","implementation":["runbooks planned","chaos evidence"],"evidence":["W6 experiments"]},
+    {"id":"VENDOR","implementation":["RuFlo pin/provenance","provider certification gate"],"evidence":["W7 manifests"]}
+  ]
+}

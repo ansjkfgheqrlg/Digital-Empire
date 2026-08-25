@@ -1,0 +1,74 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W6-RECOVERY-RECONCILIATION-CHAOS",
+  "artifacts": [
+    {
+      "path": "quality/chaos/w6-experiments.json",
+      "sha256": "473157306efeed7a9ed58e8df22690cc6dd69020697b4b32a20cc19ab98e157f"
+    },
+    {
+      "path": "scripts/chaos_claim_and_die.py",
+      "sha256": "9196ced36c5235e5587781b61278b533f50b883f66d011941b8b920560159ddf"
+    },
+    {
+      "path": "src/orchestrator/adapters/postgres/queue.py",
+      "sha256": "de81e905c1cba9c1afe803f20eef5ff4764cdcd5bb16e7965b74569daa3b4233"
+    },
+    {
+      "path": "src/orchestrator/chaos/__init__.py",
+      "sha256": "a2821902a0a06a7d3350774280a572a0d1c600c827dde5045a2ea01df33c15f6"
+    },
+    {
+      "path": "src/orchestrator/chaos/harness.py",
+      "sha256": "70a14dbf9194dae735da8be7d67db18233813010ccb00f33d70129b703cc8eed"
+    },
+    {
+      "path": "src/orchestrator/domain/transitions.py",
+      "sha256": "37355f3059fe0c15f20e1797a01486f2f4a25a85b25fe09b29629b479d9f7a4a"
+    },
+    {
+      "path": "src/orchestrator/recovery/__init__.py",
+      "sha256": "420a084a182d28dba07f54fc02e2c819eac99a8c3c2e43dccd6f921710862eaf"
+    },
+    {
+      "path": "src/orchestrator/recovery/artifact.py",
+      "sha256": "cf9e40523b94cd36417e08d6d9ecf0fb042c43d578be15e96086414a5f5d2254"
+    },
+    {
+      "path": "src/orchestrator/recovery/breaker.py",
+      "sha256": "a6cfbd472d51a7ea149fdb86da12898480ab2f60d533287342c5c6c06adc11c0"
+    },
+    {
+      "path": "src/orchestrator/recovery/catalog.py",
+      "sha256": "2017b8311a256137e5e1560b981e134811c8aaac4e0067546740bba33da99236"
+    },
+    {
+      "path": "src/orchestrator/recovery/coordinator.py",
+      "sha256": "9d7c4f02bd577678c5988ee7926f624828e7504cc2deeb945d33979a90da1ec9"
+    },
+    {
+      "path": "src/orchestrator/recovery/retry.py",
+      "sha256": "16bee330ca463e18edcca14e751042248b046b7ea8c808bfe1927e0468920fef"
+    },
+    {
+      "path": "tests/integration/test_postgres_real.py",
+      "sha256": "6f044e29364c528b7fe0777429eecf1f75b40bc4c9df67d36ce1e11c3dfffbda"
+    },
+    {
+      "path": "tests/test_recovery.py",
+      "sha256": "e85a8b2703c8947cb49f24c3914738ee2d49dff3f8202eb7960bc8049ed97812"
+    }
+  ],
+  "test_report": {
+    "path": "quality/evidence/w6-test-report.json",
+    "sha256": "d7f6c19204260f1eabf51c6f4c8436a9a329c83ddef831b2e1cc084cef42a0ea"
+  },
+  "chaos_manifest": {
+    "path": "quality/chaos/w6-experiments.json",
+    "sha256": "473157306efeed7a9ed58e8df22690cc6dd69020697b4b32a20cc19ab98e157f"
+  },
+  "production_blast_radius": 0,
+  "production_credentials_used": false,
+  "ruflo_enabled": false,
+  "created_at": "2026-08-23T10:39:35.957794+00:00"
+}

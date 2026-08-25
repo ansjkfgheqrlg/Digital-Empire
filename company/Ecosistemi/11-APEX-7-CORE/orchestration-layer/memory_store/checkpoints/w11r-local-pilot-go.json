@@ -1,0 +1,71 @@
+{
+  "checkpoint_id": "W11-REMEDIATION-LOCAL-PILOT",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T16:59:16.776099+00:00",
+  "status": "GO_LOCAL_PILOT_PRODUCTION_NO_GO",
+  "supersedes": "memory_store/checkpoints/w11-operations-prr.json",
+  "decision": {
+    "chosen_target": "LOCAL_SECURE_PILOT",
+    "identity": "Ed25519 challenge-response",
+    "anonymous_access": false,
+    "owner": "requesting-user-local-pilot",
+    "separation_of_duties": false
+  },
+  "verification": {
+    "test_definitions": 123,
+    "local_tests": "114/114",
+    "external_tests_last_verified": "9/9 W10",
+    "identity_tests": "4/4",
+    "local_prr": "GO_LOCAL_PILOT",
+    "local_blockers": 0,
+    "production_prr": "NO_GO",
+    "production_blockers": 7
+  },
+  "allowed": [
+    "loopback local pilot",
+    "R0",
+    "R1",
+    "LocalRuntime",
+    "no external side effects"
+  ],
+  "forbidden": [
+    "anonymous operator",
+    "R2",
+    "R3",
+    "RuFlo generative execution",
+    "Internet exposure",
+    "production claim"
+  ],
+  "production_blockers": [
+    {
+      "id": "OWNERS_ASSIGNED",
+      "reason": "Accountable human owners are UNASSIGNED"
+    },
+    {
+      "id": "ONCALL_STAFFED",
+      "reason": "Primary/secondary on-call staffing not confirmed"
+    },
+    {
+      "id": "EXTERNAL_PENTEST",
+      "reason": "Independent penetration test not executed"
+    },
+    {
+      "id": "PRODUCTION_KMS",
+      "reason": "Production KMS/HSM signing and object encryption not configured"
+    },
+    {
+      "id": "MANAGED_FAILOVER_PITR",
+      "reason": "Managed failover and PITR drill not executed"
+    },
+    {
+      "id": "POSTGRES_16",
+      "reason": "Target PostgreSQL 16 certification not executed"
+    },
+    {
+      "id": "CLOUD_IDP_RESIDENCY",
+      "reason": "Cloud, IdP, region and data residency not selected"
+    }
+  ],
+  "evidence_pack": "quality/evidence/w11r-evidence-pack.json",
+  "next_action": "Use local pilot only; choose managed production target and human owners before production PRR can change"
+}

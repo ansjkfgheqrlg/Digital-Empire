@@ -1,0 +1,73 @@
+{
+  "manifest_version": "1.0",
+  "authority_rule": "highest APPROVED level prevails; superseded plans remain immutable history",
+  "write_policy": "read-only sources; updates require a new approved checkpoint",
+  "plans": [
+    {
+      "level": 1,
+      "path": "plans/level-01-general-blueprint.md",
+      "status": "SUPERSEDED",
+      "sha256": "f6d60634f2218c013e20d7f8dfc63f8bf80cb75bf1ba845eb3ac43e34180e467",
+      "supersedes": []
+    },
+    {
+      "level": 2,
+      "path": "plans/level-02-contractual-architecture.md",
+      "status": "SUPERSEDED",
+      "sha256": "3bfad3029f77056bc7b86d925d57142d02375829b27ba03db13d9fc0ecef9a29",
+      "supersedes": [
+        1
+      ]
+    },
+    {
+      "level": 3,
+      "path": "plans/level-03-executable-nervous-system.md",
+      "status": "SUPERSEDED",
+      "sha256": "ed3a9d437d0152759b0604e198bc2ed0412156b57dffda485ac3d10948897af6",
+      "supersedes": [
+        2
+      ]
+    },
+    {
+      "level": 4,
+      "path": "plans/level-04-security-resilience-control.md",
+      "status": "SUPERSEDED",
+      "sha256": "81024681094e2668890f000cc55042e40323f6324ca1f1f91fc154130400ec29",
+      "supersedes": [
+        3
+      ]
+    },
+    {
+      "level": 5,
+      "path": "plans/level-05-quality-evidence-release.md",
+      "status": "SUPERSEDED",
+      "sha256": "69b42c51c39fb8cc30a972a6272177a0fd7b338770f44bbbbe9952bc2a82d3ba",
+      "supersedes": [
+        4
+      ]
+    },
+    {
+      "level": 6,
+      "path": "plans/level-06-production-operating-model.md",
+      "status": "SUPERSEDED",
+      "sha256": "f6271667f41c2a80999baac7bc03835c4328c5d887328923d8f0a5a03e2708b2",
+      "supersedes": [
+        5
+      ]
+    },
+    {
+      "level": 7,
+      "path": "plans/level-07-final-production-blueprint.md",
+      "status": "APPROVED",
+      "sha256": "713b84fd5917932a25621c77c4f5fac2398e0ac943ccee210bf7272bd4f7ceb2",
+      "supersedes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ]
+}

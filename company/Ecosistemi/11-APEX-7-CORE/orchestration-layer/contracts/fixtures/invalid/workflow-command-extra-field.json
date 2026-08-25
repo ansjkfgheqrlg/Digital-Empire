@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "tenant_id": "tenant_demo",
+  "workflow_type": "repository_adr",
+  "goal": "Analyze repository.",
+  "constraints": {
+    "max_tasks": 5,
+    "deadline_seconds": 300,
+    "max_tokens": 30000,
+    "max_cost_usd": 2.0
+  },
+  "idempotency_key": "demo-request-0001",
+  "requested_by": "user-demo",
+  "grant_admin": true
+}

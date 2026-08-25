@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orchestration-layer"
+version = "0.1.0"
+description = "Governed orchestration control plane"
+requires-python = ">=3.12"
+dependencies = [
+  "alembic>=1.13,<2",
+  "asyncpg>=0.29,<1",
+  "cryptography>=50,<51",
+  "fastapi>=0.115,<1",
+  "httpx>=0.28,<1",
+  "jsonschema>=4.23,<5",
+  "pydantic>=2.10,<3",
+  "prometheus-client>=0.21,<1",
+  "SQLAlchemy>=2.0,<3",
+  "uvicorn>=0.34,<1"
+]
+
+[project.optional-dependencies]
+security = [
+  "bandit>=1.8,<2",
+  "cyclonedx-bom>=4,<8",
+  "pip-audit>=2.7,<3"
+]
+test = ["PyYAML>=6,<7"]
+
+[project.scripts]
+builder-team = "builder_team.cli:main"
+builder-swarm = "builder_team.activation_cli:main"
+plan-memory = "plan_memory.cli:main"
+ocp-contract = "orchestrator.contract_cli:main"
+ocp-local-slice = "orchestrator.local_slice_cli:main"
+ocp-benchmark = "benchmarks.cli:main"
+ocp-prr = "orchestrator.operations.prr_cli:main"
+ocp-api = "orchestrator.api.main:main"
+ocp-worker = "orchestrator.worker.main:main"
+ocp-outbox = "orchestrator.worker.outbox_main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

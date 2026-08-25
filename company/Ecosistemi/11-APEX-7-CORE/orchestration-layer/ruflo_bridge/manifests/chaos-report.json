@@ -1,0 +1,10 @@
+{
+  "rufloVersion": "3.38.19",
+  "sourceCommit": "3c99b1c84a25948c42a163253bac6effed5fbbbb",
+  "initialHandshake": "PASS",
+  "sigkillSent": true,
+  "postKillCall": "REJECTED",
+  "restartHandshake": "PASS",
+  "healthAfterRestart": "unhealthy",
+  "status": "PASS"
+}

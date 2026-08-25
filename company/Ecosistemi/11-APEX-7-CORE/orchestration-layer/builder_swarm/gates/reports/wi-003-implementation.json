@@ -1,0 +1,42 @@
+{
+  "work_item": "WI-003",
+  "gate": "implementation",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "I1": {
+      "status": "PASS",
+      "evidence": [
+        "policies/authorization.rego",
+        "governance/grants.py",
+        "tool_gateway"
+      ]
+    },
+    "I2": {
+      "status": "PASS",
+      "evidence": [
+        "quality/evidence/w4-test-report.json"
+      ]
+    },
+    "I3": {
+      "status": "PASS",
+      "evidence": [
+        "OPA 11/11",
+        "path traversal/replay/scope tests"
+      ]
+    },
+    "I4": {
+      "status": "PASS",
+      "evidence": [
+        "failed call consumes token; fresh grant required"
+      ]
+    },
+    "I5": {
+      "status": "PASS",
+      "evidence": [
+        "no production credentials"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

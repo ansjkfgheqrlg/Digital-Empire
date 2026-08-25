@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SecurityAuditInput",
+  "type": "object",
+  "required": ["sources"],
+  "properties": {
+    "sources": { "type": "object" },
+    "artifact_path": { "type": "string", "default": "security/audit.json" }
+  }
+}

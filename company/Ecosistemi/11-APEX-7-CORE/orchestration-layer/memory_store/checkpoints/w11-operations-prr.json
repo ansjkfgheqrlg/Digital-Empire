@@ -1,0 +1,74 @@
+{
+  "checkpoint_id": "W11-OPERATIONS-OBSERVABILITY-PRR",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T16:33:17.616323+00:00",
+  "status": "ENGINEERING_COMPLETED_PRODUCTION_NO_GO",
+  "supersedes_work_item_checkpoint": "memory_store/checkpoints/wi-010.json",
+  "deliverables": {
+    "observability": [
+      "structured logging",
+      "Prometheus metrics",
+      "liveness/readiness"
+    ],
+    "operations": [
+      "service definition",
+      "SLO/error budget",
+      "severity",
+      "5 runbooks",
+      "dashboard"
+    ],
+    "prr": "quality/evidence/w11-prr-result.json",
+    "evidence_pack": "quality/evidence/w11-evidence-pack.json"
+  },
+  "verification": {
+    "test_definitions": 112,
+    "local_tests": "103/103",
+    "external_tests_last_verified": "9/9 W10",
+    "log_redaction": "PASS",
+    "metrics": "PASS",
+    "readiness": "PASS",
+    "error_budget": "PASS",
+    "prr_verdict": "NO_GO",
+    "prr_passed": 6,
+    "prr_blocked": 7
+  },
+  "production": {
+    "go": false,
+    "owners_assigned": false,
+    "oncall_staffed": false,
+    "r2_enabled": false,
+    "r3_enabled": false,
+    "ruflo_execution_enabled": false
+  },
+  "blockers": [
+    {
+      "id": "OWNERS_ASSIGNED",
+      "reason": "Accountable human owners are UNASSIGNED"
+    },
+    {
+      "id": "ONCALL_STAFFED",
+      "reason": "Primary/secondary on-call staffing not confirmed"
+    },
+    {
+      "id": "EXTERNAL_PENTEST",
+      "reason": "Independent penetration test not executed"
+    },
+    {
+      "id": "PRODUCTION_KMS",
+      "reason": "Production KMS/HSM signing and object encryption not configured"
+    },
+    {
+      "id": "MANAGED_FAILOVER_PITR",
+      "reason": "Managed failover and PITR drill not executed"
+    },
+    {
+      "id": "POSTGRES_16",
+      "reason": "Target PostgreSQL 16 certification not executed"
+    },
+    {
+      "id": "CLOUD_IDP_RESIDENCY",
+      "reason": "Cloud, IdP, region and data residency not selected"
+    }
+  ],
+  "next_increment": "W12-GO-LIVE-REHEARSAL-AND-PILOT-PACKAGE"
+}

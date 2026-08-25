@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "PLAN-BAD",
+  "workflow_id": "018f4f62-7a6b-7d41-8ec8-8eb40f6bce31",
+  "tasks": [
+    {
+      "task_id": "unsafe",
+      "role": "implementer",
+      "objective": "Do everything.",
+      "depends_on": [],
+      "completion_criteria": [],
+      "capabilities": ["host.root"],
+      "budget": {"max_tokens": 999999, "max_cost_usd": 9999, "timeout_seconds": 9999},
+      "side_effect": {"mode": "IDEMPOTENT", "result_lookup": false}
+    }
+  ]
+}

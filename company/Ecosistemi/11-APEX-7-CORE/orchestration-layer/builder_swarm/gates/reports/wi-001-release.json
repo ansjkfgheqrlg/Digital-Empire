@@ -1,0 +1,40 @@
+{
+  "work_item": "WI-001",
+  "gate": "release",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "R1": {
+      "status": "PASS",
+      "evidence": [
+        "wi-001-architecture.json",
+        "wi-001-implementation.json"
+      ]
+    },
+    "R2": {
+      "status": "PASS",
+      "evidence": [
+        "quality/evidence/w2-evidence-pack.json"
+      ]
+    },
+    "R3": {
+      "status": "PASS",
+      "evidence": [
+        "workspace checkpoint only; no deployment"
+      ]
+    },
+    "R4": {
+      "status": "PASS",
+      "evidence": [
+        "builder role separation enforced by registry"
+      ]
+    },
+    "R5": {
+      "status": "PASS",
+      "evidence": [
+        "no exceptions"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

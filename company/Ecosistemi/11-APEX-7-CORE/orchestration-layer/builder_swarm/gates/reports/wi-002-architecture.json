@@ -1,0 +1,43 @@
+{
+  "work_item": "WI-002",
+  "gate": "architecture",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "A1": {
+      "status": "PASS",
+      "evidence": [
+        "docs/adr/003-postgres-canonical-uow-outbox.md"
+      ]
+    },
+    "A2": {
+      "status": "PASS",
+      "evidence": [
+        "ports/unit_of_work.py",
+        "adapters/postgres"
+      ]
+    },
+    "A3": {
+      "status": "PASS",
+      "evidence": [
+        "ruflo_not_in_persistence"
+      ]
+    },
+    "A4": {
+      "status": "PASS",
+      "evidence": [
+        "RLS",
+        "lease",
+        "audit",
+        "outbox"
+      ]
+    },
+    "A5": {
+      "status": "PASS",
+      "evidence": [
+        "PostgreSQL queue; NATS deferred"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

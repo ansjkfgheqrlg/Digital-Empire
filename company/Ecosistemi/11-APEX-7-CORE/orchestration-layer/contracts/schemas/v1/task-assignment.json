@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ocp.local/schemas/v1/task-assignment.json",
+  "title": "TaskAssignment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "workflow_id", "task_id", "role", "objective", "allowed_capabilities", "context_refs", "budget", "output_schema", "execution_token"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "workflow_id": {"type": "string", "format": "uuid"},
+    "task_id": {"type": "string", "format": "uuid"},
+    "role": {"enum": ["planner", "implementer", "critic", "gate", "compensator"]},
+    "objective": {"type": "string", "minLength": 1, "maxLength": 8000},
+    "allowed_capabilities": {"type": "array", "maxItems": 20, "uniqueItems": true, "items": {"type": "string"}},
+    "context_refs": {"type": "array", "maxItems": 20, "uniqueItems": true, "items": {"type": "string", "maxLength": 2048}},
+    "budget": {
+      "type": "object", "additionalProperties": false,
+      "required": ["tokens", "seconds", "cost_usd"],
+      "properties": {
+        "tokens": {"type": "integer", "minimum": 1, "maximum": 50000},
+        "seconds": {"type": "integer", "minimum": 1, "maximum": 300},
+        "cost_usd": {"type": "number", "minimum": 0, "maximum": 20}
+      }
+    },
+    "output_schema": {"type": "string", "minLength": 1, "maxLength": 512},
+    "execution_token": {"type": "string", "minLength": 32, "maxLength": 512}
+  }
+}

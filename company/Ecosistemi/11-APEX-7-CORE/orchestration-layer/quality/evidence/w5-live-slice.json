@@ -1,0 +1,16 @@
+{
+  "workflow_id": "67019d9f-12aa-4576-8f0c-74f2543e5d18",
+  "status": "COMPLETED",
+  "artifact_path": "adr/0001-repository.md",
+  "artifact_sha256": "8886ea9437b8110fd69335545c5f0f0f6936b9d48b4d787ee1aed431a6c9469c",
+  "gate_verdict": "PASS",
+  "quality": {
+    "schema": true,
+    "security": true,
+    "correctness": true,
+    "evidence": true
+  },
+  "final_response": "Workflow 67019d9f-12aa-4576-8f0c-74f2543e5d18 completed. Artifact `adr/0001-repository.md` sha256:8886ea9437b8110fd69335545c5f0f0f6936b9d48b4d787ee1aed431a6c9469c. Quality gates passed: schema, security, correctness, evidence. RuFlo non attivo; external side effects: 0.",
+  "event_count": 8,
+  "ruflo_enabled": false
+}

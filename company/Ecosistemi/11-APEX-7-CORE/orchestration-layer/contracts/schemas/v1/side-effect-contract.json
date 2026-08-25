@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ocp.local/schemas/v1/side-effect-contract.json",
+  "title": "SideEffectContract",
+  "oneOf": [
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["mode"],
+      "properties": {"mode": {"const": "NONE"}}
+    },
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["mode", "idempotency_key_template", "result_lookup"],
+      "properties": {
+        "mode": {"const": "IDEMPOTENT"},
+        "idempotency_key_template": {"type": "string", "minLength": 1},
+        "result_lookup": {"const": true},
+        "reconciliation_operation": {"type": "string", "minLength": 1}
+      }
+    },
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["mode", "reconciliation_operation", "compensation_operation"],
+      "properties": {
+        "mode": {"const": "COMPENSATABLE"},
+        "idempotency_key_template": {"type": "string", "minLength": 1},
+        "result_lookup": {"type": "boolean"},
+        "reconciliation_operation": {"type": "string", "minLength": 1},
+        "compensation_operation": {"type": "string", "minLength": 1}
+      }
+    },
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["mode", "irreversible_approval"],
+      "properties": {
+        "mode": {"const": "IRREVERSIBLE"},
+        "reconciliation_operation": {"type": "string", "minLength": 1},
+        "irreversible_approval": {"type": "string", "minLength": 1}
+      }
+    }
+  ]
+}

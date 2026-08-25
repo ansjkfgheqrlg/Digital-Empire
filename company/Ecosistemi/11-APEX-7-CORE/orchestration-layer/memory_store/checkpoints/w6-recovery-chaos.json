@@ -1,0 +1,41 @@
+{
+  "checkpoint_id": "W6-RECOVERY-RECONCILIATION-CHAOS",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T10:39:35.958177+00:00",
+  "status": "COMPLETED",
+  "supersedes_work_item_checkpoint": "memory_store/checkpoints/wi-005.json",
+  "deliverables": {
+    "recovery": [
+      "RetryPolicy",
+      "CircuitBreaker",
+      "RecoveryCoordinator",
+      "CompensationCatalog"
+    ],
+    "cancellation": [
+      "CANCEL_REQUESTED",
+      "CANCELLING",
+      "grant revocation",
+      "RECONCILING"
+    ],
+    "chaos_experiments": 6,
+    "real_worker_kill": true,
+    "evidence_pack": "quality/evidence/w6-evidence-pack.json"
+  },
+  "verification": {
+    "tests_total": 88,
+    "tests_passed": 88,
+    "recovery_tests": 13,
+    "worker_exit_137_reclaim": "PASS",
+    "unknown_outcome_no_blind_retry": "PASS",
+    "artifact_hash_guard": "PASS",
+    "manual_intervention_path": "PASS"
+  },
+  "constraints": {
+    "managed_failover_tested": false,
+    "pitr_restore_tested": false,
+    "production_credentials": false,
+    "external_side_effects": false,
+    "ruflo_enabled": false
+  },
+  "next_increment": "W7-RUFLO-CERTIFICATION-AND-BRIDGE"
+}

@@ -1,0 +1,75 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W8-BUILDER-SWARM-SANDBOX-ACTIVATION",
+  "artifacts": [
+    {
+      "path": "builder_swarm/sandboxes/run-1c62ee1e6175/evidence/architecture.json",
+      "sha256": "d0843f61083f87c72befe5d6f4afab000b0cb17882a3e9608a8f9797eac3d8e9"
+    },
+    {
+      "path": "builder_swarm/sandboxes/run-1c62ee1e6175/evidence/gate-attempt-1.json",
+      "sha256": "9700c4060055d21ca1c6cb65ac305ce38e9f1833f044290dd399c97465bf9aca"
+    },
+    {
+      "path": "builder_swarm/sandboxes/run-1c62ee1e6175/evidence/scope.json",
+      "sha256": "021168269c9a168507137bd24dfa743a7c5cd69c0bef498f0de0f2e92eef0a1a"
+    },
+    {
+      "path": "builder_swarm/sandboxes/run-1c62ee1e6175/evidence/security.json",
+      "sha256": "93f660efed64198a976b2b1547ef6c06afdc88cecceb7db6e60a65f84dc440c4"
+    },
+    {
+      "path": "builder_swarm/sandboxes/run-1c62ee1e6175/evidence/test.json",
+      "sha256": "8fefef5f8877eaa22fa498b65fb55a166a7f166b966f1b74d0451d3690624ad7"
+    },
+    {
+      "path": "builder_swarm/sandboxes/run-1c62ee1e6175/release/evidence-pack.json",
+      "sha256": "d7dd2c6cf4f480ef0830789560808502dee4cc27b11182704776759792a0d38b"
+    },
+    {
+      "path": "builder_swarm/sandboxes/run-1c62ee1e6175/reports/builder-team-capabilities.md",
+      "sha256": "b8a79112eb225a540e8bbe42d58093ff8b32b73802e21cd443eb70cd0b63838a"
+    },
+    {
+      "path": "memory_store/checkpoints/run-1c62ee1e6175.json",
+      "sha256": "16ebb17cebe4ef7090fce69ef2af3468f24bee6feefd861296d6f48c5452cd78"
+    },
+    {
+      "path": "ruflo_bridge/certification/builder-swarm-registration.mjs",
+      "sha256": "6aef07b38b159057cfc2ccd37a47f134498568a3cc78d2abdf9be5524bf30a4a"
+    },
+    {
+      "path": "ruflo_bridge/manifests/builder-swarm-registration.json",
+      "sha256": "340fb5207ccf5006236cb6fe1e638665a3b36163835e993b54a832cb88946394"
+    },
+    {
+      "path": "src/builder_team/activation_cli.py",
+      "sha256": "05e86fa643da832b2e0eb3d4c5aea48029b1cd91163ebcfb762e344348592722"
+    },
+    {
+      "path": "src/builder_team/executor.py",
+      "sha256": "b2cf9a45864ad4e344902a95731175ea29cbf1972c21f6909799d1bb0bf4d408"
+    },
+    {
+      "path": "src/builder_team/sandbox.py",
+      "sha256": "1002fda608c73b7776e61b9fe1334269f5dba4cd47953119815bfd2ecbb15182"
+    },
+    {
+      "path": "tests/test_builder_activation.py",
+      "sha256": "9971e5b376300764983278b8fe78fd235384253cb64b45cbd5b2afb51b3221ca"
+    }
+  ],
+  "test_report": {
+    "path": "quality/evidence/w8-test-report.json",
+    "sha256": "742caf61b57c30288be8b631125c1964381010578e491d32b95614a8bdedc199"
+  },
+  "activation": {
+    "mode": "SANDBOX_ONLY",
+    "local_run": "run-1c62ee1e6175",
+    "ruflo_registration_roles": 8,
+    "generative_execution": false
+  },
+  "production_credentials_used": false,
+  "production_deployment": false,
+  "created_at": "2026-08-23T10:55:42.143372+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "plans": {
+    "immutable": true,
+    "hash_algorithm": "sha256",
+    "read_access": ["BUILD-LEAD", "ARCHITECT", "RUFLO-SCOUT", "IMPLEMENTER", "TESTER", "SECURITY", "GATEKEEPER", "RELEASE"],
+    "write_access": []
+  },
+  "checkpoints": {
+    "append_only_by_default": true,
+    "author_required": true,
+    "supersession_required_for_replacement": true
+  },
+  "untrusted_agent_output": {
+    "initial_status": "QUARANTINED",
+    "promotion_requires": ["evidence", "independent_gate"]
+  }
+}

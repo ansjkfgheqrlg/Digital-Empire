@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SecurityAuditOutput",
+  "type": "object",
+  "required": ["status", "vulnerabilities", "critical_count", "high_count"],
+  "properties": {
+    "status": { "type": "string", "enum": ["PASS", "FAIL"] },
+    "vulnerabilities": { "type": "array" },
+    "critical_count": { "type": "integer" },
+    "high_count": { "type": "integer" }
+  }
+}

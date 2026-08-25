@@ -1,0 +1,14 @@
+{
+  "title": "OCP Pilot Readiness",
+  "panels": [
+    {"metric":"ocp_workflow_total","view":"rate by risk/status"},
+    {"metric":"ocp_workflow_duration_seconds","view":"p50/p95/p99"},
+    {"metric":"ocp_task_attempt_total","view":"runtime result"},
+    {"metric":"ocp_policy_decision_total","view":"effect/reason"},
+    {"metric":"ocp_reconciliation_total","view":"outcome"},
+    {"metric":"ocp_compensation_total","view":"outcome"},
+    {"metric":"ocp_runtime_breaker_state","view":"current"},
+    {"metric":"ocp_budget_committed_usd_total","view":"cost trend"},
+    {"metric":"ocp_audit_sequence_gap_total","view":"hard-zero alert"}
+  ]
+}

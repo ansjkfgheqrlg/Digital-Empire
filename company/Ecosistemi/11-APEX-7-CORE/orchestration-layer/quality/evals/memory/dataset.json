@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "cases": [
+    {"id":"M01","query":"Qual è la decisione finale su PostgreSQL e RuFlo?","expected_heading":"Decisione finale","expected_status":"EVIDENCE_FOUND"},
+    {"id":"M02","query":"Quali agenti runtime sono ammessi nel pilot?","expected_heading":"10. Agenti runtime definitivi del pilot","expected_status":"EVIDENCE_FOUND"},
+    {"id":"M03","query":"Qual è la spawn policy e quanti agenti concorrenti?","expected_heading":"10.1 Spawn policy","expected_status":"EVIDENCE_FOUND"},
+    {"id":"M04","query":"Come funziona il Plan Memory Agent?","expected_heading":"12.2 Plan Memory Agent","expected_status":"EVIDENCE_FOUND"},
+    {"id":"M05","query":"Qual è la certification RuFlo?","expected_heading":"13.3 Certification","expected_status":"EVIDENCE_FOUND"},
+    {"id":"M06","query":"Quando RuFlo può essere promosso?","expected_heading":"13.5 Promotion","expected_status":"EVIDENCE_FOUND"},
+    {"id":"M07","query":"Qual è l'ordine dei quality gate?","expected_heading":"16.1 Gate order","expected_status":"EVIDENCE_FOUND"},
+    {"id":"M08","query":"Come opera NERVE-SAVE nel sistema finale?","expected_heading":"17. NERVE-SAVE nel sistema finale","expected_status":"EVIDENCE_FOUND"},
+    {"id":"M09","query":"Quali sono i limiti del Builder Swarm?","expected_heading":"18.2 Limiti","expected_status":"EVIDENCE_FOUND"},
+    {"id":"M10","query":"Quali sono le condizioni NO-GO?","expected_heading":"NO-GO immediato se","expected_status":"EVIDENCE_FOUND"},
+    {"id":"M11","query":"Qual è il piano per W9 quality memory performance?","expected_heading":"W9 — Quality/Memory/Performance","expected_status":"EVIDENCE_FOUND"},
+    {"id":"M12","query":"protocollo xylophonic-quasar-9173","expected_heading":null,"expected_status":"INSUFFICIENT_EVIDENCE"}
+  ]
+}

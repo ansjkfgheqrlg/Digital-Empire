@@ -1,0 +1,113 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W10-SECURITY-PRIVACY-DISASTER-RECOVERY",
+  "artifacts": [
+    {
+      "path": "contracts/schemas/v1/deletion-receipt.json",
+      "sha256": "dd4b1673cd1dbfb8b2265a7210ef41e9d69c3adb469c81069012be22e1898bcd"
+    },
+    {
+      "path": "docs/architecture/threat-model.md",
+      "sha256": "91341f2243f15070e3be2d16cd8e4b88af69cc7aad5b603ec0230a8125cce6ed"
+    },
+    {
+      "path": "migrations/versions/0002_privacy.py",
+      "sha256": "fc0247adc4bd6691012716d26c207540221e41f40f3ad83808e9a457b4e438d4"
+    },
+    {
+      "path": "migrations/versions/0002_privacy.sql",
+      "sha256": "1d77487bf9801f3b18084d7af54f3ec7a4b7589a80e9952e188542c5432afe9c"
+    },
+    {
+      "path": "privacy/controls/gdpr-soc2.yaml",
+      "sha256": "1ea17f4bffedd93b393caedbbe6b7aa015963592f92fd3d138f315d97fc69052"
+    },
+    {
+      "path": "privacy/data-inventory.yaml",
+      "sha256": "e5b3df95383cfbf9538c5679720be63fbdc95dffcec34ecd057bad563987b09d"
+    },
+    {
+      "path": "privacy/retention-policy.yaml",
+      "sha256": "90ca2337a7e82120c9e2c8b9ad6099122dff33aa1afd468057093d4c1a4c19f0"
+    },
+    {
+      "path": "quality/evidence/policy-bundle/SHA256SUMS",
+      "sha256": "5fbe482a1495c881c62d940ec361d854c867ae85c5f8607affb163b5cc6c7734"
+    },
+    {
+      "path": "quality/evidence/policy-bundle/opa-policy-bundle.sig",
+      "sha256": "3369f519715d268aecdb9da091819a0012ea362725d928ea50fe3740a31f1225"
+    },
+    {
+      "path": "quality/evidence/policy-bundle/opa-policy-bundle.tar.gz",
+      "sha256": "412379be57937c443c03dd4c1f78ba13d44df94431100f1c17bc5391bc040275"
+    },
+    {
+      "path": "quality/evidence/policy-bundle/test-public-key.pem",
+      "sha256": "0e03f9e9e3abbd2aaeb2867c2230dd284c5d59a81f856e7aeb374d054219ce1b"
+    },
+    {
+      "path": "scripts/backup-postgres.sh",
+      "sha256": "156ddac7cdf58cc4643f16de171a90cf57f12acd750547e17f4bf419b7e67756"
+    },
+    {
+      "path": "scripts/restore-drill.sh",
+      "sha256": "82895c5452df620551b61d12ffa8bfbafe045cc7b21edaa4d5772a433ff6ceac"
+    },
+    {
+      "path": "scripts/secret_scan.py",
+      "sha256": "8e51292d564f7d8a9cad8200564afbc645637ad16ecc107705e790420140bd7e"
+    },
+    {
+      "path": "src/orchestrator/privacy/__init__.py",
+      "sha256": "51b0917fc6473d9242a321461a55ead6d11d3cdb855d9b767ac6ce7f42e3f85d"
+    },
+    {
+      "path": "src/orchestrator/privacy/deletion.py",
+      "sha256": "b7b083ff640ecff17ed26821caf37a5235a1d535774ed1852d32b8ac7b095fd7"
+    },
+    {
+      "path": "tests/integration/test_postgres_real.py",
+      "sha256": "8cd25312937056f1e93035cfb86e4282d98bb3f49bd8eb73bd6fec98762f88f0"
+    },
+    {
+      "path": "tests/test_privacy.py",
+      "sha256": "57bf4cb57f62b0971be14162d8f377e3f506dc7743e1700d6d02b7084474e7ea"
+    }
+  ],
+  "reports": [
+    {
+      "path": "quality/evidence/w10-test-report.json",
+      "sha256": "32a5f5608a87a4f956892382fcb57b39f192d1db285fdc4f0e460840106128d2"
+    },
+    {
+      "path": "quality/evidence/w10-bandit.json",
+      "sha256": "3b5721f444c41b614c8ba517f77d2ac6da81f687eecf037db9e21df4a1733b01"
+    },
+    {
+      "path": "quality/evidence/w10-pip-audit.json",
+      "sha256": "7342f21e670a5163b99d739e626e052210dfb86114d44e80ac26505428a74aa1"
+    },
+    {
+      "path": "quality/evidence/w10-secret-scan.json",
+      "sha256": "c6f86dcbf02fb432f21a1fc2c1885ecbd38acc6d00404ff6c9eaeb66c1f5eda2"
+    },
+    {
+      "path": "quality/evidence/w10-restore-drill.json",
+      "sha256": "5909e32780f155412c3e51bf765cc69761115d00b3ca6e97a3a1c1bb4240d437"
+    },
+    {
+      "path": "quality/evidence/w10-restore-observation.txt",
+      "sha256": "668f159d990ac2d43097e9f6295641f8f68708513d397c7d93b296ec40673db6"
+    },
+    {
+      "path": "quality/evidence/w10-python-sbom.json",
+      "sha256": "421bb366c5fe08d5a18cd078ae09f22766b223ee8a9ece3305927c4d1f83edb5"
+    }
+  ],
+  "test_policy_signature_only": true,
+  "production_kms_signature": false,
+  "production_credentials_used": false,
+  "external_side_effects": false,
+  "created_at": "2026-08-23T11:09:27.042608+00:00"
+}

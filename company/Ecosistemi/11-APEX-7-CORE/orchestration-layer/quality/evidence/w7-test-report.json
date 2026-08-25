@@ -1,0 +1,56 @@
+{
+  "report_version": "1.0",
+  "increment": "W7-RUFLO-CERTIFICATION-AND-BRIDGE",
+  "result": "BRIDGE_PASS_EXECUTION_PENDING",
+  "source": {
+    "repository": "ruvnet/ruflo",
+    "commit": "3c99b1c84a25948c42a163253bac6effed5fbbbb",
+    "source_package": "claude-flow@3.38.19",
+    "runtime_package": "ruflo@3.38.19",
+    "node": "20.20.2"
+  },
+  "acquisition": {
+    "gh_repo_clone": "ATTEMPTED_BUT_AUTH_REQUIRED",
+    "fallback_public_git_clone": "PASS"
+  },
+  "mcp": {
+    "protocol": "2024-11-05",
+    "tools_discovered": 333,
+    "required_tools_present": 8,
+    "required_tools_missing": 0,
+    "schema_hashes_recorded": 8
+  },
+  "smoke": {
+    "system_health": "PASS_WITH_EXPECTED_DEGRADED_FRESH_WORKSPACE",
+    "swarm_init": "PASS",
+    "swarm_status": "PASS",
+    "agent_spawn": "PASS",
+    "agent_status": "PASS",
+    "agent_terminate": "PASS",
+    "swarm_shutdown": "PASS",
+    "agent_execute_without_credentials": "FAIL_CLOSED_PASS"
+  },
+  "chaos": {
+    "mcp_sigkill": "PASS",
+    "post_kill_call_rejected": "PASS",
+    "fresh_process_restart": "PASS",
+    "schema_revalidation_after_restart": "PASS"
+  },
+  "bridge": {
+    "typescript_compile": "PASS",
+    "unit_tests": "7/7",
+    "real_mcp_handshake": "PASS",
+    "real_swarm_init": "PASS",
+    "schema_drift_fail_closed": "PASS",
+    "production_routing_enabled": false
+  },
+  "blocking_for_activation": [
+    "provider-backed agent_execute success",
+    "normalized output contract validation against a real model",
+    "quality/cost comparison with LocalRuntime",
+    "execution timeout/cancel against a real provider",
+    "sandbox canary"
+  ],
+  "production_credentials_used": false,
+  "external_side_effects": false
+}

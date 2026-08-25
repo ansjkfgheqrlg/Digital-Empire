@@ -1,0 +1,20 @@
+{
+  "acquisition": [
+    {
+      "command": "gh repo clone ruvnet/ruflo /tmp/ruflo-w7 -- --depth 1",
+      "status": "FAILED_AUTH_REQUIRED",
+      "exit_code": 4
+    },
+    {
+      "command": "git clone --depth 1 https://github.com/ruvnet/ruflo.git /tmp/ruflo-w7",
+      "status": "PASS"
+    }
+  ],
+  "source_commit": "3c99b1c84a25948c42a163253bac6effed5fbbbb",
+  "source_commit_date": "2026-08-22T12:40:28-04:00",
+  "source_root_package": "claude-flow@3.38.19",
+  "npm_runtime_package": "ruflo@3.38.19",
+  "npm_integrity": "sha512-NHYAEHLnvabPtnnjlQkjF5W6lio4rLxcCz8YPmnDU72A+OJW1Wpzy+ZAQoFuY49etjqDAF/bjExGDI+ddjmeaA==",
+  "node_version": "20.20.2",
+  "note": "GitHub CLI was installed and attempted as requested; unauthenticated gh clone was rejected, so public HTTPS git clone was used as the audited fallback."
+}

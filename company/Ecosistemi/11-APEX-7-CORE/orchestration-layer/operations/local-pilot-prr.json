@@ -1,0 +1,18 @@
+{
+  "profile": "LOCAL_SECURE_PILOT",
+  "verdict_on_pass": "GO_LOCAL_PILOT",
+  "criteria": [
+    {"id":"BLUEPRINT","path":"plans/level-07-final-production-blueprint.md"},
+    {"id":"IDENTITY_CODE","path":"src/orchestrator/identity/operator.py"},
+    {"id":"IDENTITY_TEST","path":"quality/evidence/w11r-identity-test.json","json_status":"PASS"},
+    {"id":"POLICY","path":"policies/authorization.rego"},
+    {"id":"LOCAL_RUNTIME","path":"quality/evidence/w5-live-slice.json"},
+    {"id":"RECOVERY","path":"quality/evidence/w6-test-report.json"},
+    {"id":"SECURITY","path":"quality/evidence/w10-test-report.json"},
+    {"id":"PACKAGE","path":"release/candidate/ocp-0.1.0-pilot.tar.gz"},
+    {"id":"ROLLOUT","path":"quality/evidence/w12-rollout-rehearsal.json"},
+    {"id":"API_CONTRACT","path":"docs/api/openapi.json"},
+    {"id":"API_WORKER_LIVE","path":"quality/evidence/w13-live-run.json","json_field":"status_check","json_status":"PASS"},
+    {"id":"PROFILE","path":"operations/local-pilot-profile.yaml"}
+  ]
+}

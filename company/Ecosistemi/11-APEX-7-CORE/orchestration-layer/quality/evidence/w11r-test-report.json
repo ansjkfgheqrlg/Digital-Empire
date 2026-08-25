@@ -1,0 +1,32 @@
+{
+  "report_version": "1.0",
+  "increment": "W11-REMEDIATION-LOCAL-PILOT",
+  "result": "GO_LOCAL_PILOT_PRODUCTION_NO_GO",
+  "test_definitions": 123,
+  "local_tests_executed": 114,
+  "local_tests_passed": 114,
+  "external_tests_skipped_this_run": 9,
+  "external_tests_last_verified_w10": "9/9 PASS",
+  "identity": {
+    "method": "Ed25519 challenge-response",
+    "anonymous_access": "REJECTED",
+    "valid_signature": "PASS",
+    "replay_rejected": "PASS",
+    "expired_challenge_rejected": "PASS",
+    "wrong_signature_rejected": "PASS",
+    "private_key_persisted": false
+  },
+  "local_pilot_prr": {
+    "verdict": "GO_LOCAL_PILOT",
+    "blocked": 0,
+    "risk_classes": ["R0", "R1"],
+    "loopback_only": true,
+    "external_side_effects": false
+  },
+  "production_prr": {
+    "verdict": "NO_GO",
+    "blocked": 7
+  },
+  "production_credentials_used": false,
+  "production_deployment": false
+}

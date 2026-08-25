@@ -1,0 +1,128 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W2-CONTRACTS-AND-DETERMINISTIC-DOMAIN",
+  "source_state": "workspace-checkpoint",
+  "artifacts": [
+    {
+      "path": "contracts/fixtures/invalid/plan-unbounded-task.json",
+      "sha256": "094a66800ac7b6a3104359531e9fa21e31866bd136e8dde2e4962959e163a04d"
+    },
+    {
+      "path": "contracts/fixtures/invalid/workflow-command-extra-field.json",
+      "sha256": "be54e1c3edf1c1d7c6858fda4513f01195a7b9ee2d9e7d784a3069bb21089fb6"
+    },
+    {
+      "path": "contracts/fixtures/valid/plan.json",
+      "sha256": "77beb29ce2800d6f53b961ca9ff918ebff56abc61b27d1f502ffcc5bc3461226"
+    },
+    {
+      "path": "contracts/fixtures/valid/workflow-command.json",
+      "sha256": "b51246da086c754f11d9f17f162c3c4dce0da5921885a23eec3485e10b13f067"
+    },
+    {
+      "path": "contracts/schemas/v1/agent-result.json",
+      "sha256": "90ce2822831099d644ce734fe0f23e3984b3cacd90af77eeb3848107f9b215b3"
+    },
+    {
+      "path": "contracts/schemas/v1/capability-grant.json",
+      "sha256": "712c538f0ae8e4d067a25db85455213d2cc731f8561c7bb4edded557669cb4d8"
+    },
+    {
+      "path": "contracts/schemas/v1/event-envelope.json",
+      "sha256": "b5838da8cb324ea11f7562cdd4e5b32097154450499895282558b891568e8148"
+    },
+    {
+      "path": "contracts/schemas/v1/gate-report.json",
+      "sha256": "8df11825f135ad6c1c61991792499f7690b86b7c349619e39f714c5c7fd135e0"
+    },
+    {
+      "path": "contracts/schemas/v1/plan.json",
+      "sha256": "b0445bb35f71fa3404a8a2c8dba3217948cc1d3d2dc8014e18a157091f32266c"
+    },
+    {
+      "path": "contracts/schemas/v1/policy-decision.json",
+      "sha256": "7a7912d12707c06bdab524ba2274a2ba859028f91a152d8b68eb51d6c3da05a4"
+    },
+    {
+      "path": "contracts/schemas/v1/side-effect-contract.json",
+      "sha256": "c379d54f5a7b964ed95a033b7900ebbd44a8bba2d8a831bb40a29ab0be8a49b2"
+    },
+    {
+      "path": "contracts/schemas/v1/task-assignment.json",
+      "sha256": "51c16d021cee03aa18957f3f87db67768a67ecf3a31c7a6133ec9640c4c6da06"
+    },
+    {
+      "path": "contracts/schemas/v1/workflow-command.json",
+      "sha256": "a9c3eb8e2143a32a11cc46e0a654a5503218ee435111f37e7a755349582cd69a"
+    },
+    {
+      "path": "src/orchestrator/contract_cli.py",
+      "sha256": "40a1b062c20691dcce4c9b19ea52fdd5c45832f7d33135c023ca0380b0455845"
+    },
+    {
+      "path": "src/orchestrator/contracts.py",
+      "sha256": "78ab02b8b62be4cb690f562804e5dd79387b3c9b0dbade5abfaa0c9dd7159ffa"
+    },
+    {
+      "path": "src/orchestrator/domain/__init__.py",
+      "sha256": "b6d34558fd97440c939e1b4d642a4a513a0383da3d06be3a74a07cdd45fb4acd"
+    },
+    {
+      "path": "src/orchestrator/domain/budget.py",
+      "sha256": "7a5b60e90b09f5dbcc7b40f6eef3510b0b4cdf791c56d0aa93b07fe60e7744b9"
+    },
+    {
+      "path": "src/orchestrator/domain/errors.py",
+      "sha256": "961d8613268815392d7353bc3c3fb88384bb807e3bb5586024f70f46dd2323fd"
+    },
+    {
+      "path": "src/orchestrator/domain/events.py",
+      "sha256": "0b53700fb0e35d8f987528112c697f971661c4e4c15c8c2553851adc22fe89c3"
+    },
+    {
+      "path": "src/orchestrator/domain/plan.py",
+      "sha256": "811532d03f33f74dc06f0927559a51743722c6d002405360f65a94c01307cc14"
+    },
+    {
+      "path": "src/orchestrator/domain/side_effect.py",
+      "sha256": "ebe1a8bbb2950eb7960c7a9b9c1799f1054ccd3bda6299d06b8c9679f0e16785"
+    },
+    {
+      "path": "src/orchestrator/domain/states.py",
+      "sha256": "4ed25587eefd7ec152ff1ffc2d26377bc81b70c435f28cba4476b1911342ba73"
+    },
+    {
+      "path": "src/orchestrator/domain/task.py",
+      "sha256": "c9256c78197de9f43e0fa0037e7f98683a991517dacda0967d66ef1476739db5"
+    },
+    {
+      "path": "src/orchestrator/domain/transitions.py",
+      "sha256": "cc25ea333a77734f7b3e010e16af13d1acc990510063897b1e673b1949d6b8fe"
+    },
+    {
+      "path": "src/orchestrator/domain/workflow.py",
+      "sha256": "dacdc4013d5c02b4f93c53f8d68c7829901afb4bca5f9cf562e91a5fb8c38a2e"
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "sha256": "a834a93e9cebb2415d32e0b4947129af450e36f78f43e708250c69211169cc93"
+    },
+    {
+      "path": "tests/test_domain.py",
+      "sha256": "02167f0c1beba937bf7e4116915b607d204c844f9bba39bbef9603687a4f914f"
+    }
+  ],
+  "test_report": {
+    "path": "quality/evidence/w2-test-report.json",
+    "sha256": "6601c5bbe328d574af3acc79d06424e33aab4094f1e207a738e2979fc56b8740"
+  },
+  "architecture_gate": "builder_swarm/gates/reports/wi-001-architecture.json",
+  "implementation_gate": "builder_swarm/gates/reports/wi-001-implementation.json",
+  "ruflo": {
+    "enabled": false,
+    "reason": "not part of W2 deterministic domain"
+  },
+  "production_credentials_used": false,
+  "external_side_effects": false,
+  "created_at": "2026-08-23T10:18:42.264013+00:00"
+}

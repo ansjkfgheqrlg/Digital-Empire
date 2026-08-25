@@ -1,0 +1,39 @@
+{
+  "work_item": "WI-004",
+  "gate": "release",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "R1": {
+      "status": "PASS",
+      "evidence": [
+        "architecture and implementation gate evidence"
+      ]
+    },
+    "R2": {
+      "status": "PASS",
+      "evidence": [
+        "quality/evidence/w5-evidence-pack.json"
+      ]
+    },
+    "R3": {
+      "status": "PASS",
+      "evidence": [
+        "local baseline only; no deployment"
+      ]
+    },
+    "R4": {
+      "status": "PASS",
+      "evidence": [
+        "builder role separation"
+      ]
+    },
+    "R5": {
+      "status": "PASS",
+      "evidence": [
+        "no hard gate exception"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

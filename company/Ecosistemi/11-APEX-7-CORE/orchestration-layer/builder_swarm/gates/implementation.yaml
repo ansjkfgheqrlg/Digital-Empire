@@ -1,0 +1,12 @@
+{
+  "gate_id": "implementation",
+  "owner_agent": "GATEKEEPER",
+  "maximum_attempts": 3,
+  "criteria": [
+    {"id": "I1", "description": "Implementation matches approved contracts and file ownership.", "blocking": true, "evidence_required": ["artifact_manifest", "contract_report"]},
+    {"id": "I2", "description": "All required tests pass with raw reports preserved.", "blocking": true, "evidence_required": ["test_report"]},
+    {"id": "I3", "description": "No unresolved critical or high security finding exists.", "blocking": true, "evidence_required": ["security_report"]},
+    {"id": "I4", "description": "Rollback and migration behavior are explicit.", "blocking": true, "evidence_required": ["rollback_record_or_not_applicable"]},
+    {"id": "I5", "description": "No production credential or unrestricted capability was used.", "blocking": true, "evidence_required": ["capability_audit"]}
+  ]
+}

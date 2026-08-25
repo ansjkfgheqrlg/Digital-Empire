@@ -1,0 +1,7 @@
+{
+  "artifact": "reports/builder-team-capabilities.md",
+  "agents": 8,
+  "max_wip": 3,
+  "max_concurrency": 4,
+  "writes_outside_sandbox": false
+}

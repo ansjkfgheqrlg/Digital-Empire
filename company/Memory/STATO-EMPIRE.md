@@ -1,3 +1,47 @@
+## 🔧 2026-08-26 — EMPERATOR AGENT (Neri): nuovo orchestration-layer innestato in 11-APEX-7-CORE come canone (Fase 1) — CP-20260826-001
+
+Neri ha portato un progetto di orchestrazione costruito in Antigravity IDE
+(`C:\Users\olhad\.gemini\antigravity-ide\scratch\token-orchestration\orchestration-layer`):
+control plane W0→W13 — builder swarm, plan memory BM25 citation-first, contratti
+JSON Schema 2020-12, adapter Postgres 16, governance OPA/Rego default-deny, tool
+gateway a grant single-use, bridge RuFlo pinnato `ruflo@3.38.19`, chaos/recovery,
+API FastAPI + worker durevole, PRR (verdetto interno del progetto: NO_GO produzione,
+GO_LOCAL_PILOT). 148 test verdi, 11 skip (richiedono Postgres/OPA/RuFlo reali).
+
+**ADR-010/011 impongono un solo motore canonico** (`11-APEX-7-CORE`) e **vietano
+nuove linee fuori da quella cartella** — chiesto esplicitamente a Neri come trattare
+questa nuova linea prima di toccare nulla. Risposta: **sostituisce il canone**.
+
+**Fatto**: copiato in `company/Ecosistemi/11-APEX-7-CORE/orchestration-layer/`.
+**Non archiviato** il vecchio `orchestrator/`+`orchestration/`: un primo `git mv` in
+`_archivio_orchestration_v1/` ha rotto **7 test** — sono ancora agganciati in
+produzione a `calc/engine.py`, `arena_generator.py`, `main.py`. Ripristinato subito
+(ADR-003: sistema attivo intoccabile finché il sostituto non è validato E i
+consumatori migrati). Trovato e risolto un problema d'ambiente reale e indipendente
+dal mio intervento: un **install pip editable globale** orfano di
+`orchestration-layer` (residuo del build in Antigravity) collideva col nome
+`orchestrator` del motore attivo — rompeva i suoi test su qualunque sessione con
+quell'editable install presente. Disinstallato. Verificato in esecuzione reale:
+motore vecchio 92/92 verdi (invariato), nuovo motore 148 verdi.
+
+ADR-012 scritto con dettaglio completo, nota ⚠️ in testa a
+`11-APEX-7-CORE/README.md`.
+
+**Non fatto (dichiarato)**: nessun consumatore reale migrato al nuovo motore
+(rewiring da funzioni Python dirette a contratti JSON Schema + gateway OPA non è
+lavoro banale, farlo di corsa avrebbe rischiato di rompere in silenzio 3 stream di
+produzione già verificati in CP-20260813-002); bridge RuFlo non certificato in
+questo ambiente (serve `npm install` dentro `orchestration-layer/ruflo_bridge/`).
+
+**RIPRESA DA**: (1) decidere con Neri/Max l'ordine di migrazione dei 3 consumatori
+(`calc/engine.py` probabilmente per primo, è il più isolato); (2) certificare il
+bridge RuFlo; (3) solo dopo Fase 2 completa: archiviare il motore legacy con
+`git mv` (mai cancellare). Dettaglio completo in
+[ADR-012](decisions/ADR-012-orchestration-layer-canonico.md) e
+[CP-20260826-001](checkpoints/CP-20260826-001.md).
+
+---
+
 ## 📕 2026-08-25 — CLAUDE: TASK-KDP-W1 CHIUSO — ciclo KDP end-to-end, "The Winter Term" prodotto dal flusso riparato — CP-20260825-002
 
 **Gate soddisfatto.** `python -m engine.kdp pacchetto the-winter-term` esce **0**: manoscritto,

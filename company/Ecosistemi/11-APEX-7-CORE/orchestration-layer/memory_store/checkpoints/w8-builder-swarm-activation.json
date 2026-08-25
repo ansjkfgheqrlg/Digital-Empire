@@ -1,0 +1,31 @@
+{
+  "checkpoint_id": "W8-BUILDER-SWARM-SANDBOX-ACTIVATION",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T10:55:42.143766+00:00",
+  "status": "COMPLETED_SANDBOX_ONLY",
+  "supersedes_work_item_checkpoint": "memory_store/checkpoints/wi-007.json",
+  "deliverables": {
+    "builder_roles": 8,
+    "local_activation_run": "run-1c62ee1e6175",
+    "ruflo_registration": "8/8 PASS",
+    "testing_security_parallel": true,
+    "gate_freeze_attempts": 3,
+    "evidence_pack": "quality/evidence/w8-evidence-pack.json"
+  },
+  "verification": {
+    "python_tests": "94/94",
+    "typescript_tests": "7/7",
+    "activation_tests": "6/6",
+    "local_work_item": "READY_TO_MERGE",
+    "ruflo_registration_cleanup": "PASS",
+    "prompt_hash_per_stage": "PASS",
+    "sandbox_escape": "REJECTED"
+  },
+  "activation": {
+    "local_deterministic_builder": true,
+    "ruflo_coordination_registration": true,
+    "ruflo_generative_execution": false,
+    "production_deployment": false
+  },
+  "next_increment": "W9-QUALITY-MEMORY-PERFORMANCE-BENCHMARK"
+}

@@ -1,0 +1,78 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W3-DURABLE-EXECUTION",
+  "artifacts": [
+    {
+      "path": "alembic.ini",
+      "sha256": "332c869e4f660ed1348ea271ad8da144053f56193ccc324b4e29b658d3f2b0ac"
+    },
+    {
+      "path": "migrations/env.py",
+      "sha256": "3e79146fa25ed34f9fa0eb179a82ddb31b511856cf935dfeb70c5514a5f94c2b"
+    },
+    {
+      "path": "migrations/versions/0001_core.py",
+      "sha256": "037496c8403352abea678c23e6dd67061f68e2313daf5d9eb5255bc87170348a"
+    },
+    {
+      "path": "migrations/versions/0001_core.sql",
+      "sha256": "3bbe8bf7859ffecf4fb13384e2346e26312dd1c7f026a29231a994660fffd9ab"
+    },
+    {
+      "path": "scripts/test-postgres-integration.sh",
+      "sha256": "053c9f2177c7dc1ca526d55c55f181d793c958977c1d8835607bfe39593afb32"
+    },
+    {
+      "path": "src/orchestrator/adapters/postgres/__init__.py",
+      "sha256": "1b4847d870130f47835c6682c3a82b67bc810dc5821ec0d04eab60a97d185f8d"
+    },
+    {
+      "path": "src/orchestrator/adapters/postgres/outbox.py",
+      "sha256": "72184b27508178511850e284e0021ff9808f1d938300f2138391d45d266cb677"
+    },
+    {
+      "path": "src/orchestrator/adapters/postgres/queue.py",
+      "sha256": "cc35a56ed46cfcd05fe985544ae8900d7a9d66d917f9f90ac5fae4884dc96977"
+    },
+    {
+      "path": "src/orchestrator/adapters/postgres/repositories.py",
+      "sha256": "b5c85fa3c85b6f8e28cc95dd7a3dfc2faf08a15e819db5d788fdbe62336a864a"
+    },
+    {
+      "path": "src/orchestrator/adapters/postgres/uow.py",
+      "sha256": "d8a7c64d2d23e8e55105c39d20f7ee29485448ed0d42254e38c4e64e9e50d07d"
+    },
+    {
+      "path": "src/orchestrator/ports/__init__.py",
+      "sha256": "7e4745aa30a3bf5904256abfe6fdba9f3ebca7ce49a3b81c5ad4e861f3263c71"
+    },
+    {
+      "path": "src/orchestrator/ports/repositories.py",
+      "sha256": "976a3c2cb20c7a8c88ddfa76e179066e296498c9cc1bb6ca6763af22bdd1547a"
+    },
+    {
+      "path": "src/orchestrator/ports/unit_of_work.py",
+      "sha256": "ab9536a9f47ea9aa21d1234f80e3d3975ba926bf99fdd27fec6b79fdca294add"
+    },
+    {
+      "path": "tests/integration/test_postgres_real.py",
+      "sha256": "c916d1be2043615e9c0c3f7285088a9d4d1acb7ae43640161c8e52023838741b"
+    },
+    {
+      "path": "tests/test_postgres_adapter.py",
+      "sha256": "f9b95f3f4c7a791f09789796fc5b3b0af5ab8a29349c3dd37a0237fc8bdbbad4"
+    }
+  ],
+  "test_report": {
+    "path": "quality/evidence/w3-test-report.json",
+    "sha256": "dc529fc8f8a9b9f2bba73af7913d36afdbf2fa04ac64839e8130b70b9363c30d"
+  },
+  "database_observation": {
+    "path": "quality/evidence/w3-postgres-observation.txt",
+    "sha256": "13563f29a5d164029fd42f4069e11fe2509057102d09b208d904553f74284fef"
+  },
+  "production_credentials_used": false,
+  "external_side_effects": false,
+  "ruflo_enabled": false,
+  "created_at": "2026-08-23T10:24:57.065279+00:00"
+}

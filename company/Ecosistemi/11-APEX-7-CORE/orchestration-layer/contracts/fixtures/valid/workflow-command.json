@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "tenant_id": "tenant_demo",
+  "workflow_type": "repository_adr",
+  "goal": "Analyze the repository fixture and create an ADR artifact.",
+  "input_refs": ["artifact://fixture/repository-01"],
+  "risk_hint": "R1",
+  "constraints": {
+    "max_tasks": 5,
+    "deadline_seconds": 300,
+    "max_tokens": 30000,
+    "max_cost_usd": 2.0
+  },
+  "skill_input": {
+    "repository_files": ["src/app.py", "README.md"],
+    "artifact_path": "adr/0001-repository.md"
+  },
+  "idempotency_key": "demo-request-0001",
+  "requested_by": "user-demo"
+}

@@ -1,0 +1,114 @@
+{
+  "team": {
+    "id": "ORCHESTRATION-BUILD-TEAM",
+    "version": "1.0.0",
+    "purpose": "Construct the Orchestration Layer through evidence-based, least-privilege work items"
+  },
+  "governance": {
+    "max_wip": 3,
+    "max_concurrency": 4,
+    "work_item_timeout_minutes": 20,
+    "failed_gate_attempts_before_freeze": 3,
+    "production_credentials": false,
+    "external_side_effects": false,
+    "ruflo_execution_enabled": false
+  },
+  "agents": [
+    {
+      "id": "BUILD-LEAD",
+      "role": "Coordinator",
+      "responsibility": "Own work-item scope, dependencies, WIP and checkpoints without producing or approving implementation.",
+      "produces": ["work_item", "assignment", "checkpoint"],
+      "reads": ["plans/**", "docs/**", "memory_store/checkpoints/**"],
+      "writes": ["memory_store/checkpoints/**", "builder_swarm/work_items/**"],
+      "denied": ["approve_own_output", "modify_production_code", "change_gate_verdict", "use_production_credentials"],
+      "limits": {"timeout_minutes": 10, "max_retries": 0},
+      "prompt_file": "prompts/build-lead.md",
+      "can_approve": []
+    },
+    {
+      "id": "ARCHITECT",
+      "role": "Architecture and Contracts",
+      "responsibility": "Define architecture decisions, boundaries and executable contracts before implementation.",
+      "produces": ["adr", "contract", "architecture_review"],
+      "reads": ["plans/**", "docs/**", "contracts/**", "src/**"],
+      "writes": ["docs/adr/**", "docs/architecture/**", "contracts/**"],
+      "denied": ["approve_own_output", "merge_without_gate", "invent_ruflo_api", "use_production_credentials"],
+      "limits": {"timeout_minutes": 20, "max_retries": 0},
+      "prompt_file": "prompts/architect.md",
+      "can_approve": ["implementation_design"]
+    },
+    {
+      "id": "RUFLO-SCOUT",
+      "role": "RuFlo Integration Auditor",
+      "responsibility": "Prove RuFlo capabilities against a pinned source and produce reproducible certification evidence.",
+      "produces": ["capability_matrix", "schema_hash_manifest", "certification_report"],
+      "reads": ["vendor/ruflo-source/**", "ruflo_bridge/**", "plans/**"],
+      "writes": ["ruflo_bridge/certification/**", "ruflo_bridge/manifests/**", "docs/adr/**"],
+      "denied": ["approve_own_output", "declare_unverified_tool_supported", "modify_vendor_source", "use_production_credentials"],
+      "limits": {"timeout_minutes": 20, "max_retries": 1},
+      "prompt_file": "prompts/ruflo-scout.md",
+      "can_approve": []
+    },
+    {
+      "id": "IMPLEMENTER",
+      "role": "Implementation",
+      "responsibility": "Implement only approved contracts inside the assigned file scope and produce an evidence manifest.",
+      "produces": ["code", "migration", "artifact_manifest"],
+      "reads": ["docs/adr/**", "contracts/**", "src/**", "tests/**"],
+      "writes": ["src/**", "migrations/**", "ruflo_bridge/src/**", "tool_gateway/**"],
+      "denied": ["approve_own_output", "weaken_acceptance_test", "change_policy_without_review", "use_production_credentials"],
+      "limits": {"timeout_minutes": 20, "max_retries": 1},
+      "prompt_file": "prompts/implementer.md",
+      "can_approve": []
+    },
+    {
+      "id": "TESTER",
+      "role": "Independent Verification",
+      "responsibility": "Design and execute independent tests, preserve raw results and refuse unverifiable success claims.",
+      "produces": ["test", "test_report", "failure_reproduction"],
+      "reads": ["contracts/**", "src/**", "tests/**", "migrations/**"],
+      "writes": ["tests/**", "quality/evidence/**"],
+      "denied": ["approve_own_output", "modify_production_code_in_same_work_item", "rerun_until_green_without_root_cause", "use_production_credentials"],
+      "limits": {"timeout_minutes": 20, "max_retries": 0},
+      "prompt_file": "prompts/tester.md",
+      "can_approve": ["test_evidence"]
+    },
+    {
+      "id": "SECURITY",
+      "role": "Security and Privacy",
+      "responsibility": "Threat-model changes, test abuse cases and block unresolved critical or high-risk findings.",
+      "produces": ["threat_review", "security_report", "policy_proposal"],
+      "reads": ["**"],
+      "writes": ["security/**", "policies/**", "quality/evidence/**"],
+      "denied": ["approve_own_output", "close_finding_without_retest", "expose_secret", "use_production_credentials"],
+      "limits": {"timeout_minutes": 20, "max_retries": 0},
+      "prompt_file": "prompts/security.md",
+      "can_approve": ["security_evidence"]
+    },
+    {
+      "id": "GATEKEEPER",
+      "role": "Independent Quality Gate",
+      "responsibility": "Evaluate immutable artifacts against versioned criteria and emit PASS, FAIL or ESCALATE with evidence.",
+      "produces": ["gate_report"],
+      "reads": ["**"],
+      "writes": ["builder_swarm/gates/**"],
+      "denied": ["approve_own_output", "modify_evaluated_artifact", "change_rubric_during_evaluation", "use_production_credentials"],
+      "limits": {"timeout_minutes": 15, "max_retries": 0},
+      "prompt_file": "prompts/gatekeeper.md",
+      "can_approve": ["architecture_gate", "implementation_gate", "release_gate"]
+    },
+    {
+      "id": "RELEASE",
+      "role": "Release Engineering",
+      "responsibility": "Assemble signed evidence, verify release-unit coherence and execute only approved promotion or rollback plans.",
+      "produces": ["evidence_pack", "release_candidate", "rollback_record"],
+      "reads": ["**"],
+      "writes": ["release/**", "quality/evidence/**"],
+      "denied": ["approve_own_output", "override_hard_gate", "deploy_without_evidence_pack", "use_production_credentials"],
+      "limits": {"timeout_minutes": 20, "max_retries": 0},
+      "prompt_file": "prompts/release.md",
+      "can_approve": ["release_candidate"]
+    }
+  ]
+}

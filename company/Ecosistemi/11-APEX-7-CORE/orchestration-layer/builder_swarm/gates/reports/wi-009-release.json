@@ -1,0 +1,39 @@
+{
+  "work_item": "WI-009",
+  "gate": "release",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "R1": {
+      "status": "PASS",
+      "evidence": [
+        "security/privacy/DR evidence"
+      ]
+    },
+    "R2": {
+      "status": "PASS",
+      "evidence": [
+        "quality/evidence/w10-evidence-pack.json"
+      ]
+    },
+    "R3": {
+      "status": "PASS",
+      "evidence": [
+        "preproduction only; no deployment"
+      ]
+    },
+    "R4": {
+      "status": "PASS",
+      "evidence": [
+        "Builder Team separation"
+      ]
+    },
+    "R5": {
+      "status": "PASS",
+      "evidence": [
+        "external pentest/KMS/failover/PITR remain explicit blockers"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

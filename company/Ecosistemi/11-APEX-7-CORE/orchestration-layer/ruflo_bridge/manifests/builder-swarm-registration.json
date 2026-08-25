@@ -1,0 +1,62 @@
+{
+  "rufloVersion": "3.38.19",
+  "sourceCommit": "3c99b1c84a25948c42a163253bac6effed5fbbbb",
+  "providerCredentialsForwarded": false,
+  "generativeExecution": false,
+  "registered": [
+    {
+      "role": "BUILD-LEAD",
+      "agentId": "ocp-builder-build-lead",
+      "agentType": "coordinator",
+      "status": "registered"
+    },
+    {
+      "role": "ARCHITECT",
+      "agentId": "ocp-builder-architect",
+      "agentType": "architect",
+      "status": "registered"
+    },
+    {
+      "role": "RUFLO-SCOUT",
+      "agentId": "ocp-builder-ruflo-scout",
+      "agentType": "researcher",
+      "status": "registered"
+    },
+    {
+      "role": "IMPLEMENTER",
+      "agentId": "ocp-builder-implementer",
+      "agentType": "coder",
+      "status": "registered"
+    },
+    {
+      "role": "TESTER",
+      "agentId": "ocp-builder-tester",
+      "agentType": "tester",
+      "status": "registered"
+    },
+    {
+      "role": "SECURITY",
+      "agentId": "ocp-builder-security",
+      "agentType": "security-architect",
+      "status": "registered"
+    },
+    {
+      "role": "GATEKEEPER",
+      "agentId": "ocp-builder-gatekeeper",
+      "agentType": "reviewer",
+      "status": "registered"
+    },
+    {
+      "role": "RELEASE",
+      "agentId": "ocp-builder-release",
+      "agentType": "cicd-engineer",
+      "status": "registered"
+    }
+  ],
+  "swarmAgentCount": 8,
+  "maxAgents": 8,
+  "autoScaling": false,
+  "registration": "PASS",
+  "cleanup": "PASS",
+  "status": "PASS"
+}

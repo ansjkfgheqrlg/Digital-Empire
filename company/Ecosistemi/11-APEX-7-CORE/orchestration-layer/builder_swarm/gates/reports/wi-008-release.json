@@ -1,0 +1,39 @@
+{
+  "work_item": "WI-008",
+  "gate": "release",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "R1": {
+      "status": "PASS",
+      "evidence": [
+        "all local hard gates true"
+      ]
+    },
+    "R2": {
+      "status": "PASS",
+      "evidence": [
+        "quality/evidence/w9-evidence-pack.json"
+      ]
+    },
+    "R3": {
+      "status": "PASS",
+      "evidence": [
+        "baseline publication only"
+      ]
+    },
+    "R4": {
+      "status": "PASS",
+      "evidence": [
+        "Builder Team gate separation"
+      ]
+    },
+    "R5": {
+      "status": "PASS",
+      "evidence": [
+        "RuFlo comparison remains a blocker, not an exception"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

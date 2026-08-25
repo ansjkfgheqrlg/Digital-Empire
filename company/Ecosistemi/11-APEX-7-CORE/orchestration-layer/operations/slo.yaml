@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "pilot": {
+    "api_create_availability": 0.995,
+    "workflow_r0_r1_infrastructure_completion": 0.95,
+    "api_create_p95_ms": 300,
+    "task_claim_p95_ms": 250,
+    "worker_recovery_p95_seconds": 45,
+    "audit_completeness": 1.0,
+    "duplicate_side_effects": 0,
+    "tenant_security_bypass": 0
+  },
+  "burn_actions": {
+    "0.25": "REDUCE_RISK",
+    "0.50": "RELIABILITY_SPRINT",
+    "1.00": "FREEZE"
+  }
+}

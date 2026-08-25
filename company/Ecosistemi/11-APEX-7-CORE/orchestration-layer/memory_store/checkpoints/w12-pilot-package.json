@@ -1,0 +1,58 @@
+{
+  "checkpoint_id": "W12-GO-LIVE-REHEARSAL-AND-PILOT-PACKAGE",
+  "checkpoint_version": "1.0",
+  "created_at": "2026-08-23T16:43:20.173148+00:00",
+  "status": "PROGRAM_ENGINEERING_COMPLETE_PRODUCTION_NO_GO",
+  "supersedes_work_item_checkpoint": "memory_store/checkpoints/wi-011.json",
+  "deliverables": {
+    "release_id": "ocp-0.1.0-pilot",
+    "package": "release/candidate/ocp-0.1.0-pilot.tar.gz",
+    "package_sha256": "23ee329d3261b9864a6c2e2f256b31f9ba92964e065558a86110146265573b8a",
+    "package_files": 154,
+    "python_wheel": "orchestration_layer-0.1.0-py3-none-any.whl",
+    "container": "rootless Dockerfile",
+    "compose": "static validated",
+    "ci": "GitHub Actions definition",
+    "rollout_rehearsal": [
+      "DEV",
+      "TEST",
+      "SHADOW",
+      "CANARY_5",
+      "CANARY_25",
+      "PILOT",
+      "ROLLBACK"
+    ],
+    "evidence_pack": "quality/evidence/w12-evidence-pack.json"
+  },
+  "verification": {
+    "test_definitions": 118,
+    "local_tests": "109/109",
+    "external_tests_last_verified": "9/9 W10",
+    "release_tests": "6/6",
+    "package_reproducible": true,
+    "forbidden_material": 0,
+    "production_promotion_blocked": true,
+    "rollback": "PASS",
+    "real_deployment": false
+  },
+  "production": {
+    "prr": "NO_GO",
+    "go": false,
+    "local_cli_pilot_ready": true,
+    "api_worker_service_ready": false,
+    "ruflo_execution": false,
+    "r2": false,
+    "r3": false
+  },
+  "remaining_blockers": [
+    "assign human owners",
+    "staff on-call",
+    "external penetration test",
+    "production KMS/HSM and object encryption",
+    "managed failover and PITR",
+    "PostgreSQL 16 certification",
+    "cloud/IdP/region/data residency",
+    "implement and validate final API/worker service surface"
+  ],
+  "next_action": "Resolve PRR blockers; rerun W11 PRR before any production ring"
+}

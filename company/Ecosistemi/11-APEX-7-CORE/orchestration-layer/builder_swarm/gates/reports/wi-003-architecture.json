@@ -1,0 +1,42 @@
+{
+  "work_item": "WI-003",
+  "gate": "architecture",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "A1": {
+      "status": "PASS",
+      "evidence": [
+        "docs/adr/004-opa-single-use-capabilities.md"
+      ]
+    },
+    "A2": {
+      "status": "PASS",
+      "evidence": [
+        "governance policy port",
+        "tool gateway boundary"
+      ]
+    },
+    "A3": {
+      "status": "PASS",
+      "evidence": [
+        "RuFlo remains disabled"
+      ]
+    },
+    "A4": {
+      "status": "PASS",
+      "evidence": [
+        "default deny",
+        "task-bound grants",
+        "single-use tokens"
+      ]
+    },
+    "A5": {
+      "status": "PASS",
+      "evidence": [
+        "two tools only; no shell/network"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

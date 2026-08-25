@@ -1,0 +1,37 @@
+{
+  "report_version": "1.0",
+  "increment": "W13-API-WORKER-PERSISTENT-END-TO-END",
+  "result": "GO_LOCAL_PILOT_PRODUCTION_NO_GO",
+  "test_definitions": 132,
+  "latest_full_suite": "131/131 PASS",
+  "additional_cancel_integration": "1/1 PASS",
+  "api_unit_tests": "5/5",
+  "worker_unit_tests": "2/2",
+  "real_api_worker_integration": "2/2",
+  "live_process_run": {
+    "api": "PASS",
+    "worker": "PASS",
+    "outbox": "PASS",
+    "opa": "PASS",
+    "postgres": "PASS",
+    "workflow_status": "COMPLETED",
+    "ordered_events": "8/8",
+    "outbox_delivered": "8/8",
+    "graceful_shutdown": "PASS"
+  },
+  "security": {
+    "bandit_findings": 0,
+    "dependency_vulnerabilities": 0,
+    "secret_findings": 0,
+    "cryptography_upgrade": "45.0.7 -> 50.0.0 after audit findings",
+    "anonymous_access": "REJECTED",
+    "challenge_replay": "REJECTED",
+    "cancelled_task_claim": "REJECTED"
+  },
+  "local_pilot_prr": "GO_LOCAL_PILOT",
+  "production_prr": "NO_GO",
+  "r2": false,
+  "r3": false,
+  "ruflo_execution": false,
+  "production_credentials_used": false
+}

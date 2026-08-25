@@ -1,0 +1,20 @@
+{
+  "verdict": "GO_LOCAL_PILOT",
+  "passed": [
+    "BLUEPRINT",
+    "IDENTITY_CODE",
+    "IDENTITY_TEST",
+    "POLICY",
+    "LOCAL_RUNTIME",
+    "RECOVERY",
+    "SECURITY",
+    "PACKAGE",
+    "ROLLOUT",
+    "PROFILE"
+  ],
+  "blocked": [],
+  "warnings": [
+    "Local pilot only; not production or Internet-facing",
+    "Single operator means R2/R3 and separation-of-duties flows remain disabled"
+  ]
+}

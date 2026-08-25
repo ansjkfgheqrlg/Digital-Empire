@@ -1,0 +1,24 @@
+policies/authorization_test.rego:30:
+data.orchestration.authorization_test.test_forbidden_capability_denied: PASS (5.403668ms)
+policies/authorization_test.rego:104:
+data.orchestration.authorization_test.test_stale_plan_hash_denied: PASS (6.665499ms)
+policies/authorization_test.rego:18:
+data.orchestration.authorization_test.test_low_risk_allow: PASS (1.271621ms)
+policies/authorization_test.rego:58:
+data.orchestration.authorization_test.test_r2_valid_approval_allows: PASS (492.095µs)
+policies/authorization_test.rego:24:
+data.orchestration.authorization_test.test_default_deny_malformed_input: PASS (713.59µs)
+policies/authorization_test.rego:37:
+data.orchestration.authorization_test.test_unknown_capability_denied: PASS (1.331907ms)
+policies/authorization_test.rego:51:
+data.orchestration.authorization_test.test_r2_requires_approval: PASS (564.734µs)
+policies/authorization_test.rego:44:
+data.orchestration.authorization_test.test_budget_denied: PASS (2.940284ms)
+policies/authorization_test.rego:80:
+data.orchestration.authorization_test.test_r3_requires_step_up: PASS (4.992962ms)
+policies/authorization_test.rego:92:
+data.orchestration.authorization_test.test_r3_valid_step_up_allows: PASS (630.579µs)
+policies/authorization_test.rego:69:
+data.orchestration.authorization_test.test_same_author_approver_denied: PASS (6.235655ms)
+--------------------------------------------------------------------------------
+PASS: 11/11

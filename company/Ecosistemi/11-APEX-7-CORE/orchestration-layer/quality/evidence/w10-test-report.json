@@ -1,0 +1,48 @@
+{
+  "report_version": "1.0",
+  "increment": "W10-SECURITY-PRIVACY-DISASTER-RECOVERY",
+  "result": "PASS_WITH_PREPRODUCTION_BLOCKERS",
+  "tests_total": 105,
+  "tests_passed": 105,
+  "security": {
+    "bandit_loc": 3920,
+    "bandit_findings": 0,
+    "python_dependencies_audited": 22,
+    "known_dependency_vulnerabilities": 0,
+    "secret_scan_findings": 0,
+    "npm_vulnerabilities_from_w7": 0,
+    "policy_bundle_signature": "PASS_TEST_KEY",
+    "sbom": "environment-level CycloneDX JSON"
+  },
+  "privacy": {
+    "deletion_tests": "7/7",
+    "subject_refs_hashed": true,
+    "legal_hold_enforced": true,
+    "failed_system_blocks_verification": true,
+    "backup_expiry_required": true,
+    "receipt_schema_validated": true,
+    "real_postgres_deletion_rls": "PASS"
+  },
+  "dr": {
+    "postgres": "17.11 sandbox",
+    "tables_restored": 11,
+    "forced_rls_tables": 11,
+    "workflow_state_restored": true,
+    "audit_restored": true,
+    "outbox_restored": true,
+    "restore_duration_ms": 276,
+    "target_rto_minutes": 60,
+    "status": "PASS_SANDBOX"
+  },
+  "preproduction_blockers": [
+    "external penetration test",
+    "KMS/HSM policy-bundle signature",
+    "object-store KMS and deletion drill",
+    "managed PostgreSQL failover",
+    "PITR restore to chosen timestamp",
+    "PostgreSQL 16 target-version rerun",
+    "cloud data residency and subprocessor approval"
+  ],
+  "production_credentials_used": false,
+  "external_side_effects": false
+}

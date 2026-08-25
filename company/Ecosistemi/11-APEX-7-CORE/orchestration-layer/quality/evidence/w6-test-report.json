@@ -1,0 +1,39 @@
+{
+  "report_version": "1.0",
+  "increment": "W6-RECOVERY-RECONCILIATION-CHAOS",
+  "result": "PASS",
+  "tests_total": 88,
+  "tests_passed": 88,
+  "recovery_tests": 13,
+  "real_process_kill": {
+    "database": "PostgreSQL 17.11 ephemeral sandbox",
+    "worker_exit_code": 137,
+    "lease_seconds": 5,
+    "reclaimed": true,
+    "attempt_after_reclaim": 2,
+    "stale_result_rejected": true
+  },
+  "verified": [
+    "unknown outcome routes to reconciliation",
+    "transient retry requires budget, deadline, attempts and safe side effect",
+    "irreversible action is not blindly retried",
+    "cancel revokes active task grants",
+    "absent cancelled effect closes as CANCELLED",
+    "present effect compensates",
+    "unknown effect reaches MANUAL_INTERVENTION",
+    "artifact compensation requires matching hash and unreferenced state",
+    "circuit breaker opens, half-opens once and closes on success",
+    "chaos harness aborts and cleans up when steady state fails"
+  ],
+  "remaining_preproduction": [
+    "container-level worker kill under pilot deployment",
+    "managed PostgreSQL failover",
+    "network partition and latency injection",
+    "object-store reconciliation adapter",
+    "DLQ and operator manual-intervention queue",
+    "PITR restore drill"
+  ],
+  "production_credentials_used": false,
+  "external_side_effects": false,
+  "ruflo_enabled": false
+}

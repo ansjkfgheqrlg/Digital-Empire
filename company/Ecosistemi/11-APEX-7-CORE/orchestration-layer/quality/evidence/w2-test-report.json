@@ -1,0 +1,31 @@
+{
+  "report_version": "1.0",
+  "increment": "W2-CONTRACTS-AND-DETERMINISTIC-DOMAIN",
+  "environment": "sandbox",
+  "commands": [
+    "PYTHONPATH=src python -m orchestrator.contract_cli workflow-command contracts/fixtures/valid/workflow-command.json",
+    "PYTHONPATH=src python -m orchestrator.contract_cli plan contracts/fixtures/valid/plan.json",
+    "python -m unittest discover -s tests -v"
+  ],
+  "result": "PASS",
+  "tests_total": 33,
+  "tests_passed": 33,
+  "contracts": 9,
+  "valid_fixture_checks": 2,
+  "invalid_fixture_rejections": 2,
+  "hard_invariants_covered": [
+    "illegal transition rejection",
+    "actor authorization",
+    "transition guard enforcement",
+    "stale aggregate version rejection",
+    "bounded budget reservation",
+    "DAG cycle rejection",
+    "unknown dependency rejection",
+    "mandatory gate task",
+    "side-effect contract requirements",
+    "cancellation is non-terminal on request"
+  ],
+  "production_credentials_used": false,
+  "external_side_effects": false,
+  "ruflo_enabled": false
+}

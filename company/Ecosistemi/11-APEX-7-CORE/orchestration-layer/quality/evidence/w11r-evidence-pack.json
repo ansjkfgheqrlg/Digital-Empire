@@ -1,0 +1,73 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W11-REMEDIATION-LOCAL-PILOT",
+  "artifacts": [
+    {
+      "path": "docs/adr/013-local-pilot-readiness-profile.md",
+      "sha256": "90ac10842d1b7db915da7a56c2c81577bfdee67c90e6b5e7afb49e77795cac81"
+    },
+    {
+      "path": "operations/local-pilot-profile.yaml",
+      "sha256": "980d44a79f076243e64964c42aec8426a12c0be0482e962eeba74de8bdf890d3"
+    },
+    {
+      "path": "operations/local-pilot-prr.json",
+      "sha256": "13caa1d38aa9a2da5168ce2d9c53114fa702d2e6a78cd2307dc187f5f0b62f74"
+    },
+    {
+      "path": "src/orchestrator/identity/operator.py",
+      "sha256": "cc42ab4628ab0ea542ef88972e2734f2dbe044e4c86a5f99503f242f2711fc3a"
+    },
+    {
+      "path": "src/orchestrator/operations/prr.py",
+      "sha256": "f4b5e4b7bae6b81b8fe21a4f2780adb332256f8518ddab32db2b823c1386e877"
+    },
+    {
+      "path": "src/orchestrator/operations/prr_cli.py",
+      "sha256": "8d0d8a89f0c5844131fda0d784df1e0a87bdb68d600aeefffc99ef05dc7d83a1"
+    },
+    {
+      "path": "tests/test_local_identity.py",
+      "sha256": "4dc7eb0492f94b2c4732f417e70e6947d751ace88616cebef7ec27ab320a4eb0"
+    },
+    {
+      "path": "tests/test_operations.py",
+      "sha256": "df85af0cdecacbbb841c233c72403f13e835331eceba3e8b9fa0da1e212aebea"
+    }
+  ],
+  "reports": [
+    {
+      "path": "quality/evidence/w11r-test-report.json",
+      "sha256": "127590ff8c26fcc7c8342f7824487651c6b5b0d9e731ab18f3ad118ee39beca3"
+    },
+    {
+      "path": "quality/evidence/w11r-identity-test.json",
+      "sha256": "f305e372ddfd44eb2eeb1268378722291903e763141e3b93ba1f28d54b1f1d73"
+    },
+    {
+      "path": "quality/evidence/w11r-local-pilot-prr.json",
+      "sha256": "9f932da2180fff8fe3c5ff6b12587fa4b83ddc2b4e8abaf3112fa033e15c0fba"
+    },
+    {
+      "path": "quality/evidence/w11r-production-prr.json",
+      "sha256": "c7e18232f8af2afd7faca231b9f0fec128809ce3bba80e87622f585a490738e6"
+    },
+    {
+      "path": "quality/evidence/w11r-package-refresh.json",
+      "sha256": "6c304ea3139b963b0f87910670e303814a72e2a74eedef5bfde3b82d8d1846ab"
+    }
+  ],
+  "pilot_package": {
+    "path": "release/candidate/ocp-0.1.0-pilot.tar.gz",
+    "sha256": "9e5af80ce231245b8a4f4692ce77103c548ef173fc6bc3807cdd5114b868ecea",
+    "size": 185316
+  },
+  "local_pilot_prr": "GO_LOCAL_PILOT",
+  "production_prr": "NO_GO",
+  "anonymous_access": false,
+  "r2": false,
+  "r3": false,
+  "ruflo_execution": false,
+  "production_credentials_used": false,
+  "created_at": "2026-08-23T16:59:16.775588+00:00"
+}

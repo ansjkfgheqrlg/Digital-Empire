@@ -1,0 +1,9 @@
+{
+  "program": "OCP W0-W13",
+  "engineering_increments_completed": 14,
+  "local_orchestration_layer_complete": true,
+  "local_pilot_prr": "GO_LOCAL_PILOT",
+  "production_ready": false,
+  "production_prr": "NO_GO",
+  "checkpoint": "memory_store/checkpoints/w13-api-worker-complete.json"
+}

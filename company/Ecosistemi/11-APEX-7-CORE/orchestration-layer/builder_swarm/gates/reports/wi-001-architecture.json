@@ -1,0 +1,14 @@
+{
+  "work_item": "WI-001",
+  "gate": "architecture",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "A1": {"status": "PASS", "evidence": ["docs/adr/002-json-schema-and-deterministic-domain.md"]},
+    "A2": {"status": "PASS", "evidence": ["contracts/schemas/v1", "src/orchestrator/domain"]},
+    "A3": {"status": "PASS", "evidence": ["ruflo_not_in_domain"]},
+    "A4": {"status": "PASS", "evidence": ["side-effect-contract.json", "transitions.py"]},
+    "A5": {"status": "PASS", "evidence": ["standard_library_domain"]}
+  },
+  "blocking_failures": []
+}

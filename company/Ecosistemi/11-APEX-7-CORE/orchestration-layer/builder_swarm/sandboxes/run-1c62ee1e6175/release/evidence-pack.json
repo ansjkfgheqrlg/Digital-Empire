@@ -1,0 +1,46 @@
+{
+  "work_item": "WI-ACT-001",
+  "artifact": {
+    "path": "reports/builder-team-capabilities.md",
+    "sha256": "b8a79112eb225a540e8bbe42d58093ff8b32b73802e21cd443eb70cd0b63838a"
+  },
+  "stages": [
+    {
+      "stage": "scope",
+      "agent": "BUILD-LEAD",
+      "status": "PASS"
+    },
+    {
+      "stage": "architecture",
+      "agent": "ARCHITECT",
+      "status": "PASS"
+    },
+    {
+      "stage": "ruflo-certification",
+      "agent": "RUFLO-SCOUT",
+      "status": "SKIPPED"
+    },
+    {
+      "stage": "implementation",
+      "agent": "IMPLEMENTER",
+      "status": "PASS"
+    },
+    {
+      "stage": "testing",
+      "agent": "TESTER",
+      "status": "PASS"
+    },
+    {
+      "stage": "security",
+      "agent": "SECURITY",
+      "status": "PASS"
+    },
+    {
+      "stage": "gate-review",
+      "agent": "GATEKEEPER",
+      "status": "PASS"
+    }
+  ],
+  "promotion": "SANDBOX_ONLY",
+  "production_deployment": false
+}

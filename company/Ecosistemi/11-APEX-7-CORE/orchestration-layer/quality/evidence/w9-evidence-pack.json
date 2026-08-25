@@ -1,0 +1,55 @@
+{
+  "evidence_pack_version": "1.0",
+  "increment": "W9-QUALITY-MEMORY-PERFORMANCE-BENCHMARK",
+  "artifacts": [
+    {
+      "path": "docs/adr/009-baseline-before-ruflo-comparison.md",
+      "sha256": "ade0b47433338b325862aec59156842aa9aa36223bee20557540aececfd583d9"
+    },
+    {
+      "path": "memory_store/index/plan-index.json",
+      "sha256": "065cff61246014768b563ea90f416af845e46ac71718aa65b2150528d8e7bae4"
+    },
+    {
+      "path": "quality/benchmarks/w9-baseline.json",
+      "sha256": "eb7d82ac4d38bf695f0aecc479119cd0d15181af510fa0b933d654b534c71b7b"
+    },
+    {
+      "path": "quality/evals/memory/dataset.json",
+      "sha256": "794f14965761db44ddebed3f651ea9f2fd364ce5caf958661f635b86ed7037bc"
+    },
+    {
+      "path": "src/benchmarks/__init__.py",
+      "sha256": "f5cc4b06e2d8d37c3d4813873c052e536eeabcecde6ba19df671a6aa1211dc8f"
+    },
+    {
+      "path": "src/benchmarks/cli.py",
+      "sha256": "b034b228ab17c4a4fb7b83c1779b110d8d0cbf9622d0fbc61bd794295707efcc"
+    },
+    {
+      "path": "src/benchmarks/memory_eval.py",
+      "sha256": "6d750c14d43413f77d1623d91f30702feec22a44b48f45f863a89235ab3cc616"
+    },
+    {
+      "path": "src/benchmarks/w9.py",
+      "sha256": "1f6015e5d7b48517a519fbe632bef6ae67079f9c867401861e831d05503b91d1"
+    },
+    {
+      "path": "src/plan_memory/index.py",
+      "sha256": "14c9108ba02b07619d3d1f977ffc765593d93f9b4d2ed35801e13dbec3c2838d"
+    },
+    {
+      "path": "tests/test_benchmarks.py",
+      "sha256": "f74c4e0c2e0a6872aa68da28a0691740ea39067bb86d98c537860e571154b37a"
+    }
+  ],
+  "test_report": {
+    "path": "quality/evidence/w9-test-report.json",
+    "sha256": "5b1d000477fe07fdf009ddf5ed9f26d4177686bc74fd52c065ebfa026b52dde5"
+  },
+  "ruflo_comparison": "BLOCKED_NO_PROVIDER_EXECUTION",
+  "fabricated_results": false,
+  "production_credentials_used": false,
+  "external_side_effects": false,
+  "created_at": "2026-08-23T11:00:55.389597+00:00"
+}

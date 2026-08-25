@@ -1,0 +1,44 @@
+{
+  "work_item": "WI-005",
+  "gate": "implementation",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "I1": {
+      "status": "PASS",
+      "evidence": [
+        "recovery modules",
+        "expired lease reclaim"
+      ]
+    },
+    "I2": {
+      "status": "PASS",
+      "evidence": [
+        "quality/evidence/w6-test-report.json"
+      ]
+    },
+    "I3": {
+      "status": "PASS",
+      "evidence": [
+        "OPA fail closed",
+        "hash mismatch",
+        "stale token",
+        "grant revoke"
+      ]
+    },
+    "I4": {
+      "status": "PASS",
+      "evidence": [
+        "artifact compensation and process-kill lease recovery"
+      ]
+    },
+    "I5": {
+      "status": "PASS",
+      "evidence": [
+        "production_credentials=false",
+        "blast_radius=0"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

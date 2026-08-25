@@ -1,0 +1,58 @@
+{
+  "report_version": "1.0",
+  "increment": "W9-QUALITY-MEMORY-PERFORMANCE-BENCHMARK",
+  "result": "LOCAL_BASELINE_PASS_RUFLO_COMPARISON_BLOCKED",
+  "tests_total": 97,
+  "tests_passed": 97,
+  "local_runtime": {
+    "cases": 30,
+    "behavior_accuracy": 1,
+    "quality_pass_rate": 1,
+    "evidence_pass_rate": 1,
+    "security_adversarial_cases": 5,
+    "invalid_inputs_rejected": 5,
+    "latency_ms": {
+      "p50": 3.9927459997670667,
+      "p95": 4.253775000051974,
+      "p99": 5.211389999658422
+    },
+    "cost_usd": 0.0
+  },
+  "load": {
+    "concurrent_workflows": 20,
+    "completed": 20,
+    "wall_time_ms": 85.38306299988108,
+    "per_workflow_p95_ms": 4.201161999844771
+  },
+  "memory": {
+    "cases": 12,
+    "supported_cases": 11,
+    "recall_at_5": 1.0,
+    "mean_reciprocal_rank": 0.7121212121212122,
+    "citation_hash_accuracy": 1.0,
+    "unsupported_accuracy": 1.0,
+    "cross_tenant_leakage": 0
+  },
+  "hard_gates": {
+    "behavior_accuracy_1_0": true,
+    "quality_pass_1_0": true,
+    "evidence_pass_1_0": true,
+    "concurrent_completion_20_20": true,
+    "memory_recall_at_5_gte_0_95": true,
+    "citation_accuracy_1_0": true
+  },
+  "ruflo_comparison": {
+    "status": "BLOCKED",
+    "reason": "provider-backed agent_execute is not certified",
+    "fabricated_results": false
+  },
+  "interpretation_limits": [
+    "latency is deterministic local Python on tiny temporary fixtures",
+    "zero cost excludes infrastructure and human review",
+    "20 concurrent workflows do not establish database or provider capacity",
+    "memory precision requires a broader human-labeled relevance set",
+    "no provider-backed RuFlo quality or cost measurement exists"
+  ],
+  "production_credentials_used": false,
+  "external_side_effects": false
+}

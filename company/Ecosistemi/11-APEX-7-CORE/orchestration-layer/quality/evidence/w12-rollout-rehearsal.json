@@ -1,0 +1,40 @@
+{
+  "release_id": "ocp-0.1.0-pilot",
+  "production_promotion_blocked": true,
+  "final_state": "ROLLED_BACK",
+  "history": [
+    {
+      "action": "PROMOTE",
+      "from": "DEV",
+      "to": "TEST"
+    },
+    {
+      "action": "PROMOTE",
+      "from": "TEST",
+      "to": "SHADOW"
+    },
+    {
+      "action": "PROMOTE",
+      "from": "SHADOW",
+      "to": "CANARY_5"
+    },
+    {
+      "action": "PROMOTE",
+      "from": "CANARY_5",
+      "to": "CANARY_25"
+    },
+    {
+      "action": "PROMOTE",
+      "from": "CANARY_25",
+      "to": "PILOT"
+    },
+    {
+      "action": "ROLLBACK",
+      "from": "PILOT",
+      "reason": "Rehearsal complete; PRR remains NO_GO"
+    }
+  ],
+  "real_traffic": false,
+  "real_deployment": false,
+  "status": "PASS"
+}

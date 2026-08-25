@@ -1,0 +1,12 @@
+{
+  "gate_id": "architecture",
+  "owner_agent": "GATEKEEPER",
+  "maximum_attempts": 3,
+  "criteria": [
+    {"id": "A1", "description": "Scope and non-scope are explicit.", "blocking": true, "evidence_required": ["work_item", "acceptance_criteria"]},
+    {"id": "A2", "description": "Dependencies point through an approved port or ADR.", "blocking": true, "evidence_required": ["adr", "contract"]},
+    {"id": "A3", "description": "No unverified RuFlo API is treated as supported.", "blocking": true, "evidence_required": ["capability_matrix_or_not_applicable"]},
+    {"id": "A4", "description": "Security, tenancy, recovery and rollback impact are classified.", "blocking": true, "evidence_required": ["risk_review"]},
+    {"id": "A5", "description": "The design is the smallest implementation satisfying the requirement.", "blocking": false, "evidence_required": ["alternatives_considered"]}
+  ]
+}

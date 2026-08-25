@@ -1,0 +1,22 @@
+{
+  "profile": "LOCAL_SECURE_PILOT",
+  "network": "loopback_only",
+  "identity": "Ed25519 challenge-response operator registry",
+  "anonymous_access": false,
+  "owner": "requesting-user-local-pilot",
+  "owner_scope": "single operator; no separation of duties",
+  "risk_classes": ["R0", "R1"],
+  "r2": false,
+  "r3": false,
+  "external_side_effects": false,
+  "ruflo_execution": false,
+  "runtime": "LocalRuntime",
+  "production_claim": false,
+  "limitations": [
+    "not Internet-facing",
+    "not 24x7",
+    "not multi-operator",
+    "not production",
+    "no managed failover/PITR/KMS claim"
+  ]
+}

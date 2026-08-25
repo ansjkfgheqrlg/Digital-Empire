@@ -1,5 +1,12 @@
 # APEX-7 SYSTEM - Adaptive Prompt Execution Engine v7.0
 
+> ⚠️ **ADR-012 (2026-08-26)**: `orchestration-layer/` è il nuovo motore di orchestrazione
+> canonico (governance OPA, contratti JSON Schema, adapter Postgres, bridge RuFlo pinnato,
+> 148 test verdi). `orchestrator/` e `orchestration/` in questa cartella restano **ATTIVI e
+> agganciati in produzione** (`calc/engine.py`, `arena_generator.py`, `main.py`) — NON
+> cancellare/spostare finché i consumatori non sono migrati (ADR-003: wrap non riscrittura).
+> Vedi `decisions/ADR-012-orchestration-layer-canonico.md`.
+
 > **Da widget reattivo a sistema intelligente proattivo. 7 livelli evolutivi. Swarm + Memory.**
 
 Questo sistema implementa **esattamente** l'architettura che hai descritto nella FASE 0-5. Non è una risposta generica. È un ecosistema eseguibile.

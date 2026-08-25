@@ -1,0 +1,41 @@
+{
+  "work_item": "WI-012",
+  "gate": "architecture",
+  "attempt": 1,
+  "verdict": "PASS",
+  "criteria": {
+    "A1": {
+      "status": "PASS",
+      "evidence": [
+        "docs/adr/013-local-pilot-readiness-profile.md"
+      ]
+    },
+    "A2": {
+      "status": "PASS",
+      "evidence": [
+        "operator identity",
+        "dual PRR profiles"
+      ]
+    },
+    "A3": {
+      "status": "PASS",
+      "evidence": [
+        "RuFlo execution remains disabled"
+      ]
+    },
+    "A4": {
+      "status": "PASS",
+      "evidence": [
+        "anonymous rejected",
+        "single owner limited to R0/R1"
+      ]
+    },
+    "A5": {
+      "status": "PASS",
+      "evidence": [
+        "local pilot scope rather than fake production controls"
+      ]
+    }
+  },
+  "blocking_failures": []
+}

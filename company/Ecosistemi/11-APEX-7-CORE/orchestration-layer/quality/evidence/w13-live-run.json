@@ -1,0 +1,37 @@
+{
+  "run_version": "1.0",
+  "mode": "REAL_LOCAL_PROCESSES",
+  "components": [
+    "FastAPI",
+    "worker",
+    "outbox publisher",
+    "OPA 1.19.1",
+    "PostgreSQL 17.11"
+  ],
+  "workflow_id": "d5001f09-0f78-434c-b9eb-6802a353272f",
+  "tenant": "local-pilot-live",
+  "status": "COMPLETED",
+  "version": 7,
+  "sequence": 8,
+  "events": 8,
+  "event_sequences": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "artifact": "quality/evidence/w13-live-adr.md",
+  "artifact_sha256": "8886ea9437b8110fd69335545c5f0f0f6936b9d48b4d787ee1aed431a6c9469c",
+  "api_loopback": true,
+  "operator_auth": "Ed25519 challenge-response",
+  "outbox_events_observed": 8,
+  "graceful_shutdown": "PASS",
+  "r2": false,
+  "r3": false,
+  "ruflo_execution": false,
+  "status_check": "PASS"
+}

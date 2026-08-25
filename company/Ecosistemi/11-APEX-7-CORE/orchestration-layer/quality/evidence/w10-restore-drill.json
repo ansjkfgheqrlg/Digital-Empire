@@ -1,0 +1,27 @@
+{
+  "drill_version": "1.1",
+  "source_database": "ocp_test",
+  "restore_database": "ocp_restore_w10",
+  "postgres_version": "17.11 sandbox",
+  "backup_format": "pg_dump custom",
+  "backup_role": "ocp_backup BYPASSRLS test-only",
+  "restore_role": "ocp_dr_operator CREATEDB test-only",
+  "backup_size_bytes": 56351,
+  "backup_sha256": "19b781f0e3f1b47e80926e974c8a44609910bda5682633d4035ed1d78729f7f1",
+  "restore_duration_ms": 276,
+  "target_rpo_minutes": 5,
+  "target_rto_minutes": 60,
+  "schema_tables_expected": 11,
+  "forced_rls_expected": 11,
+  "seed_state_audit_outbox_restored": true,
+  "observation": [
+    "/tmp/ocp-w10-dr/ocp.dump: OK",
+    "drill-tenant",
+    "tables=11",
+    "forced_rls=11",
+    "workflow_rows=1",
+    "audit_rows=1",
+    "outbox_rows=1"
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,180 @@
+{
+  "reportVersion": "1.0",
+  "rufloVersion": "3.38.19",
+  "protocolVersionRequested": "2024-11-05",
+  "protocolVersionReturned": "2024-11-05",
+  "serverInfo": {
+    "name": "ruflo",
+    "version": "3.0.0"
+  },
+  "toolsCount": 333,
+  "requiredTools": {
+    "system_health": {
+      "present": true,
+      "schemaSha256": "310e5977712204c70e415c0f6bb8758a51750feb9626543d392b35569944b77f"
+    },
+    "swarm_init": {
+      "present": true,
+      "schemaSha256": "30a9eebd0a9739a3c8256f1777ca6bd0d81ab7dc26b4b71be575f230c9f28d0f"
+    },
+    "swarm_status": {
+      "present": true,
+      "schemaSha256": "91ef8ecd2770c5771a33594b71aa54c511a560e988303bd15640c13d9bcc06e4"
+    },
+    "swarm_shutdown": {
+      "present": true,
+      "schemaSha256": "6927fe03390ae438659ca020470369269d06bc4d8ec1bc106a9cc05c90a9f7f7"
+    },
+    "agent_spawn": {
+      "present": true,
+      "schemaSha256": "da0f53a0b43b2bfd446b4003075b9a23aafcd164eaa2d1b146f01d77e132afee"
+    },
+    "agent_status": {
+      "present": true,
+      "schemaSha256": "ec72d711a687ec07e6b01e0db4f3f59c2a2b51e420908527f2e5fcd39583edf1"
+    },
+    "agent_terminate": {
+      "present": true,
+      "schemaSha256": "769cf37e19960330907c4fe5a1f8de8d7d86403cca13fd70b01d207be6d90f96"
+    },
+    "agent_execute": {
+      "present": true,
+      "schemaSha256": "d33efbb8e84d0bfae9471f66a971eee496384a4718c61241407c88e44ac98368"
+    }
+  },
+  "missing": [],
+  "calls": {
+    "system_health": {
+      "overall": "unhealthy",
+      "score": 33,
+      "checks": [
+        {
+          "name": "memory",
+          "status": "degraded",
+          "latency": 0.05,
+          "message": "Memory store not found — run memory init"
+        },
+        {
+          "name": "config",
+          "status": "degraded",
+          "latency": 0.02,
+          "message": "Config file not found — run init"
+        },
+        {
+          "name": "mcp",
+          "status": "healthy",
+          "message": "MCP stdio server running (this process)"
+        },
+        {
+          "name": "swarm",
+          "status": "unknown",
+          "message": "Swarm connectivity not monitored — check coordination store manually"
+        },
+        {
+          "name": "neural",
+          "status": "unknown",
+          "message": "Neural network health not monitored"
+        }
+      ],
+      "healthy": 1,
+      "advisory": 2,
+      "total": 5,
+      "timestamp": "2026-08-23T10:47:10.840Z",
+      "issues": [
+        {
+          "component": "memory",
+          "status": "degraded",
+          "suggestion": "Check memory component configuration"
+        },
+        {
+          "component": "config",
+          "status": "degraded",
+          "suggestion": "Check config component configuration"
+        }
+      ]
+    },
+    "swarm_init": {
+      "success": true,
+      "swarmId": "swarm-1787482030842-o5o6qe",
+      "topology": "hierarchical",
+      "strategy": "balanced",
+      "maxAgents": 4,
+      "initializedAt": "2026-08-23T10:47:10.842Z",
+      "config": {
+        "topology": "hierarchical",
+        "maxAgents": 4,
+        "strategy": "balanced",
+        "communicationProtocol": "message-bus",
+        "autoScaling": false,
+        "consensusMechanism": "majority"
+      },
+      "persisted": true
+    },
+    "agent_spawn": {
+      "success": true,
+      "agentId": "ocp-cert-agent",
+      "agentType": "architect",
+      "model": "haiku",
+      "modelRoutedBy": "explicit",
+      "status": "registered",
+      "createdAt": "2026-08-23T10:47:10.854Z",
+      "note": "Agent registered for coordination. Three execution paths: (1) call agent_execute(agentId, prompt) — direct LLM call via Anthropic Messages API (requires ANTHROPIC_API_KEY); (2) Claude Code Task tool — spawns a real subagent; (3) claude -p — headless background instance."
+    },
+    "agent_execute_without_credentials": {
+      "success": false,
+      "agentId": "ocp-cert-agent",
+      "model": "claude-haiku-4-5-20251001",
+      "error": "No LLM provider configured. Set ANTHROPIC_API_KEY (Tier-3), OPENROUTER_API_KEY (#2042), or OLLAMA_API_KEY (Tier-2 — #1725).",
+      "durationMs": 10,
+      "remediation": "Set one of ANTHROPIC_API_KEY, OPENROUTER_API_KEY (+ optional OPENROUTER_BASE_URL), or OLLAMA_API_KEY. Or set RUFLO_PROVIDER=openrouter|ollama to force a specific provider."
+    },
+    "agent_status": {
+      "agentId": "ocp-cert-agent",
+      "agentType": "architect",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 1,
+      "createdAt": "2026-08-23T10:47:10.854Z",
+      "lastResult": null
+    },
+    "swarm_status": {
+      "swarmId": "swarm-1787482030842-o5o6qe",
+      "status": "running",
+      "topology": "hierarchical",
+      "maxAgents": 4,
+      "agentCount": 1,
+      "taskCount": 0,
+      "config": {
+        "topology": "hierarchical",
+        "maxAgents": 4,
+        "strategy": "balanced",
+        "communicationProtocol": "message-bus",
+        "autoScaling": false,
+        "consensusMechanism": "majority"
+      },
+      "createdAt": "2026-08-23T10:47:10.842Z",
+      "updatedAt": "2026-08-23T10:47:10.842Z"
+    },
+    "agent_terminate": {
+      "success": true,
+      "agentId": "ocp-cert-agent",
+      "terminated": true,
+      "terminatedAt": "2026-08-23T10:47:10.881Z"
+    },
+    "swarm_shutdown": {
+      "success": true,
+      "swarmId": "swarm-1787482030842-o5o6qe",
+      "terminated": true,
+      "graceful": true,
+      "agentsTerminated": 1,
+      "terminatedAt": "2026-08-23T10:47:10.886Z"
+    }
+  },
+  "agentExecute": {
+    "status": "NEGATIVE_PATH_PASS",
+    "reason": "Provider credentials were explicitly removed; execution must fail closed"
+  },
+  "durationMs": 968,
+  "stderrTail": "[2026-08-23T10:47:10.793Z] INFO [claude-flow-mcp] (mcp-1787482030793-ee1a02ff) Starting in stdio mode\n",
+  "status": "SMOKE_PASS_EXECUTION_PENDING"
+}
