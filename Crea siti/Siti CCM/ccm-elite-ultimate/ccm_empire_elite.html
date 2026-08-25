@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="it" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code Mastery | Tech-Lux Edition</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-ink: #1c1c1c;
+            --color-ink-2: #0a0a0a;
+            --color-paper: #fafafa;
+            --color-grey: #e8e8e6;
+            --color-orange: #fb4604;
+            --color-orange-bright: #ff6a2e;
+            --color-silver: #d9d4e1;
+            --color-border: rgba(249, 249, 249, 0.1);
+            --font-sans: 'Onest', sans-serif;
+        }
+
+        :root {
+            --background: #2a2a2a;
+            --foreground: #f9f9f9;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--foreground);
+            font-family: 'Onest', sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* GRAIN - Low Opacity Refined */
+        .grain-fine::before {
+            content: ""; position: fixed; inset: -50%; pointer-events: none; z-index: 100; opacity: 0.18; mix-blend-mode: overlay;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+        }
+        .grain-fine::after {
+            content: ""; position: fixed; inset: -50%; pointer-events: none; z-index: 101; opacity: 0.12; mix-blend-mode: hard-light;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='2.1' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.3 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+        }
+
+        .text-silver-orange {
+            background: linear-gradient(135deg, #ffffff 0%, #d9d4e1 20%, #fb4604 55%, #ff8a4a 78%, #ffffff 100%);
+            -webkit-background-clip: text; background-clip: text; color: transparent;
+        }
+        .text-silver-white {
+            background: linear-gradient(180deg, #ffffff 0%, #d9d4e1 100%);
+            -webkit-background-clip: text; background-clip: text; color: transparent;
+        }
+
+        .btn-orange {
+            display: inline-flex; align-items: center; gap: 0.55rem; padding: 1.1rem 2.5rem; border-radius: 14px;
+            font-weight: 700; color: #ffffff; background: #fb4604; border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 50px 0 rgba(251, 70, 4, 0.4), inset 0 1px 0 rgba(255,255,255,0.2); transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .btn-orange:hover { transform: translateY(-2px); filter: brightness(1.1); box-shadow: 0 0 70px 0 rgba(251, 70, 4, 0.5); }
+
+        .bubble-orange {
+            background: linear-gradient(135deg, #fb4604 0%, #ff6a2e 100%); color: #ffffff;
+            border-radius: 9999px; padding: 0.45rem 1.1rem; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;
+            display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 10px 30px -10px rgba(251,70,4,0.6);
+        }
+        .bubble-ink {
+            background: #1c1c1c; color: #f9f9f9; border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 9999px; padding: 0.45rem 1.1rem; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;
+            display: inline-flex; align-items: center; gap: 0.5rem;
+        }
+
+        .card-dark {
+            border: 1px solid rgba(249, 249, 249, 0.1);
+            background: radial-gradient(120% 80% at 0% 0%, rgba(251,70,4,0.12) 0%, transparent 55%), linear-gradient(180deg, #1a1a1a 0%, #111111 100%);
+            border-radius: 24px; padding: 2.75rem; box-shadow: 0 50px 100px -40px rgba(0,0,0,0.95);
+            transition: border-color 0.4s, transform 0.4s;
+        }
+        .card-dark:hover { border-color: rgba(251,70,4,0.4); transform: translateY(-4px); }
+
+        .card-paper {
+            border: 1px solid rgba(19,19,19,0.1); background: #ffffff; border-radius: 24px; padding: 2.75rem;
+            box-shadow: 0 40px 80px -40px rgba(0,0,0,0.15); color: #1c1c1c;
+        }
+
+        .marquee-container { border-bottom: 1px solid rgba(255,255,255,0.08); overflow: hidden; padding: 1.25rem 0; }
+        .marquee-inner { animation: marquee 40s linear infinite; display: flex; gap: 4rem; width: max-content; }
+        @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+        .reveal { opacity: 0; transform: translateY(30px); }
+
+        .silver-chip {
+            position: absolute; display: flex; align-items: center; gap: 0.6rem; padding: 0.8rem 1.25rem;
+            border-radius: 16px; background: radial-gradient(100% 100% at 0% 0%, #ffffff 0%, #f4f1f7 100%);
+            border: 1px solid rgba(255,255,255,0.95); color: #1c1c1c; font-size: 0.82rem; font-weight: 700;
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.3); z-index: 20;
+        }
+        .silver-chip .dot { width: 6px; height: 6px; border-radius: 9999px; background: #fb4604; box-shadow: 0 0 10px #fb4604; }
+
+        /* CHARTS */
+        .chart-donut { position: relative; width: 140px; height: 140px; border-radius: 50%; background: conic-gradient(#fb4604 calc(var(--val) * 1%), #222 0); }
+        .chart-donut::after { content: attr(data-val) "%"; position: absolute; inset: 12px; background: #1a1a1a; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.75rem; color: #fb4604; }
+        
+        .chart-bar-container { width: 100%; height: 12px; background: #222; border-radius: 6px; overflow: hidden; margin-top: 1rem; }
+        .chart-bar-fill { height: 100%; background: #fb4604; border-radius: 6px; width: 0; transition: width 2s cubic-bezier(0.22, 1, 0.36, 1); }
+
+        /* OBJECTION GRID */
+        .objection-card { border: 1px solid rgba(255,255,255,0.05); background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 16px; position: relative; overflow: hidden; }
+        .objection-card .watermark { position: absolute; bottom: -10px; right: -5px; font-size: 5rem; font-weight: 900; opacity: 0.03; font-style: italic; }
+
+        /* POWER DECK */
+        .deck-card { position: absolute; width: 100%; transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1); border: 2px solid rgba(251,70,4,0.1); }
+        .deck-wrapper:hover .deck-card:nth-child(1) { transform: rotate(-5deg) translate(-20px, -10px); }
+        .deck-wrapper:hover .deck-card:nth-child(2) { transform: rotate(0deg) translate(0px, -20px); }
+        .deck-wrapper:hover .deck-card:nth-child(3) { transform: rotate(5deg) translate(20px, -10px); }
+
+        /* MASTERY MAP (CIRCUIT) */
+        .circuit-node { position: relative; border-left: 3px solid #fb4604; padding-left: 2.5rem; padding-bottom: 3.5rem; }
+        .circuit-node::before { content: ""; position: absolute; left: -10px; top: 0; width: 17px; height: 17px; border-radius: 50%; background: #fb4604; box-shadow: 0 0 15px #fb4604; }
+    </style>
+</head>
+<body class="grain-fine">
+
+    <main class="relative">
+
+        <!-- HERO SECTION -->
+        <section class="bg-ink relative overflow-hidden">
+            <div class="marquee-container opacity-40">
+                <div class="marquee-inner text-[10px] font-bold uppercase tracking-[0.4em] text-white">
+                    <div class="flex items-center gap-10">
+                        <span>Claude Code Mastery 2026</span> <span class="text-orange">✦</span>
+                        <span>Tech-Lux Architecture</span> <span class="text-orange">✦</span>
+                        <span>Coorte Founding Members</span> <span class="text-orange">✦</span>
+                        <span>No-Code Engineering</span> <span class="text-orange">✦</span>
+                    </div>
+                    <div class="flex items-center gap-10">
+                        <span>Claude Code Mastery 2026</span> <span class="text-orange">✦</span>
+                        <span>Tech-Lux Architecture</span> <span class="text-orange">✦</span>
+                        <span>Coorte Founding Members</span> <span class="text-orange">✦</span>
+                        <span>No-Code Engineering</span> <span class="text-orange">✦</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-6xl mx-auto px-6 py-24 md:py-48 text-center relative z-10">
+                <div class="silver-chip -rotate-3 reveal" style="top: 15%; left: 0;"><span class="dot"></span> No-Code <strong>approach</strong></div>
+                <div class="silver-chip rotate-2 reveal" style="top: 25%; right: 0;"><span class="dot"></span> Posti <strong>limitati</strong></div>
+                <div class="silver-chip rotate-6 reveal" style="bottom: 20%; left: 10%;"><span class="dot"></span> <strong>30 giorni</strong> garanzia</div>
+                <div class="silver-chip -rotate-1 reveal" style="bottom: 10%; right: 5%;"><span class="dot"></span> <strong>Bonus 1:1</strong> incluso</div>
+
+                <div class="reveal">
+                    <span class="bubble-orange mb-10"><svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z"></path></svg> Il primo percorso italiano su Claude Code</span>
+                </div>
+
+                <h1 class="text-6xl md:text-8xl font-extrabold leading-[1.02] tracking-tighter mt-12 mb-10 reveal">
+                    <span class="text-silver-white">Da AI User a</span><br/>
+                    <span class="text-silver-orange">System Architect.</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto mb-14 leading-relaxed reveal">
+                    Per chi vuole smettere di "chattare" e iniziare a <strong class="text-orange">costruire sistemi</strong> deterministici che liberano tempo e generano profitto. In 6 settimane.
+                </p>
+
+                <div class="flex flex-col gap-6 items-center reveal">
+                    <a href="#offer" class="btn-orange text-xl scale-110">Accedi a Claude Code Mastery</a>
+                    <div class="flex items-center gap-6 text-[10px] uppercase font-bold tracking-[0.2em] text-white/40">
+                        <span class="flex items-center gap-2"><svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> Garanzia Builder 30gg</span>
+                        <span class="flex items-center gap-2"><svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg> Pagamento Sicuro</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCIENCE STATS -->
+        <section class="bg-ink py-32 section-border-t">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-24 reveal">
+                    <span class="bubble-ink mb-6">...La scienza parla chiaro:</span>
+                    <h2 class="text-4xl md:text-6xl font-bold mt-8">SISTEMI AI CUSTOM = <span class="text-orange italic">PIÙ MARGINE.</span></h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card-dark reveal">
+                        <div class="chart-donut mx-auto mb-10" style="--val: 89" data-val="89"></div>
+                        <h3 class="text-xl font-bold text-orange mb-4">Visione Leader</h3>
+                        <p class="text-white/60 text-sm leading-relaxed">89% dei leader crede nella costruzione AI proprietaria per scalare. Chi sa costruirli oggi, controlla il mercato.</p>
+                    </div>
+
+                    <div class="card-dark reveal" style="border-color: rgba(251,70,4,0.3)">
+                        <div class="text-6xl font-black text-orange-bright mb-4">+313%</div>
+                        <h3 class="text-xl font-bold text-white mb-4">Moltìplicatore</h3>
+                        <p class="text-white/80 text-sm leading-relaxed mb-6">Aumento di produttività media con workflow AI Strategici. Non è progresso, è un cambio di specie.</p>
+                        <div class="chart-bar-container"><div class="chart-bar-fill" data-width="313"></div></div>
+                    </div>
+
+                    <div class="card-dark reveal">
+                        <div class="chart-donut mx-auto mb-10" style="--val: 68" data-val="68"></div>
+                        <h3 class="text-xl font-bold text-orange mb-4">Mercato Vergine</h3>
+                        <p class="text-white/60 text-sm leading-relaxed">68% delle aziende non ha un workflow AI ripetibile. Questo è il debito tecnico che verrai pagato per risolvere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AUDIENCE SELECTION -->
+        <section class="bg-ink py-24 section-border-t">
+            <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+                <div class="card-dark reveal">
+                    <div class="bubble-orange mb-8 font-black">✔ PER TE SE</div>
+                    <ul class="space-y-4 text-white/90">
+                        <li class="flex gap-4"><span>✦</span> Hai usato ChatGPT ma ti sei fermato alla chat.</li>
+                        <li class="flex gap-4"><span>✦</span> Non sai programmare ma vuoi creare sistemi elitari.</li>
+                        <li class="flex gap-4"><span>✦</span> Cerchi una competenza monetizzabile da €500+ al giorno.</li>
+                    </ul>
+                </div>
+                <div class="card-dark reveal opacity-60">
+                    <div class="bubble-ink mb-8 font-black">X NON È PER TE SE</div>
+                    <ul class="space-y-4 text-white/50">
+                        <li class="flex gap-4"><span>✦</span> Cerchi la bacchetta magica per fare soldi facili.</li>
+                        <li class="flex gap-4"><span>✦</span> Sei un dev senior che vuole imparare microservizi complessi.</li>
+                        <li class="flex gap-4"><span>✦</span> Non hai 3 ore a settimana da dedicare alla pratica.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- POWER DECK (THE 4 PILLARS) -->
+        <section class="bg-ink py-32 section-border-t overflow-hidden">
+            <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+                <div class="reveal">
+                    <span class="bubble-orange mb-6">Il cuore del metodo</span>
+                    <h2 class="text-5xl md:text-7xl font-extrabold mb-10 text-white">I 4 Pilastri del <span class="text-silver-orange">Potere.</span></h2>
+                    <p class="text-xl text-white/60 mb-12">Non sono solo concetti, sono <strong>armi operative</strong>. Ogni sistema che costruirai poggia su questi 4 asset proprietari.</p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="p-6 border border-white/5 rounded-2xl bg-white/5">
+                            <h4 class="text-orange font-bold text-2xl mb-2 italic">I.C.R.O.</h4>
+                            <p class="text-xs text-white/50">L'anima del Context Engineering. Risultati deterministici.</p>
+                        </div>
+                        <div class="p-6 border border-white/5 rounded-2xl bg-white/5">
+                            <h4 class="text-orange font-bold text-2xl mb-2 italic">S.K.I.L.L.</h4>
+                            <p class="text-xs text-white/50">Il cervello della Entity Logic. Librerie verticali esperte.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative h-[600px] flex items-center justify-center deck-wrapper cursor-crosshair">
+                    <div class="card-dark deck-card" style="z-index:4; transform: scale(1);">
+                        <div class="text-7xl font-black text-orange/10 mb-6 italic">DAN</div>
+                        <h3 class="text-3xl font-bold text-white mb-4">Monetizzazione.</h3>
+                        <p class="text-white/60 leading-relaxed">Il metodo per trasformare il tuo portfolio in commesse reali da €500 a progetto.</p>
+                        <div class="absolute top-6 right-6 text-orange font-black text-3xl italic">D</div>
+                    </div>
+                    <div class="card-dark deck-card" style="z-index:3; transform: scale(0.95) translateY(40px);">
+                        <div class="text-7xl font-black text-orange/10 mb-6 italic">WORK</div>
+                        <h3 class="text-3xl font-bold text-white mb-4">Workflow Power.</h3>
+                        <p class="text-white/60 leading-relaxed">Connetti le skill in flussi automatici che divorano ore di lavoro manuale.</p>
+                        <div class="absolute top-6 right-6 text-orange font-black text-3xl italic">W</div>
+                    </div>
+                    <div class="card-dark deck-card" style="z-index:2; transform: scale(0.9) translateY(80px);">
+                        <div class="text-7xl font-black text-orange/10 mb-6 italic">SKILL</div>
+                        <h3 class="text-3xl font-bold text-white mb-4">Entity Logic.</h3>
+                        <p class="text-white/60 leading-relaxed">Costruisci librerie di competenze che Claude richiama on-demand.</p>
+                        <div class="absolute top-6 right-6 text-orange font-black text-3xl italic">S</div>
+                    </div>
+                    <div class="card-dark deck-card" style="z-index:1; transform: scale(0.85) translateY(120px);">
+                        <div class="text-7xl font-black text-orange/10 mb-6 italic">ICRO</div>
+                        <h3 class="text-3xl font-bold text-white mb-4">Context Logic.</h3>
+                        <p class="text-white/60 leading-relaxed">Definisci identità e regole per trasformare Claude in un operatore infallibile.</p>
+                        <div class="absolute top-6 right-6 text-orange font-black text-3xl italic">I</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MASTERY MAP (CURRICULUM) -->
+        <section class="bg-ink py-32 section-border-t">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-24 reveal">
+                    <span class="bubble-orange mb-6">Curriculum completo</span>
+                    <h2 class="text-4xl md:text-7xl font-extrabold text-white mt-8 mb-6">La <span class="text-silver-white">Mappa del</span> <span class="text-silver-orange">Potere.</span></h2>
+                    <p class="text-white/50 max-w-2xl mx-auto">Ogni nodo è un passo verso il tuo nuovo posizionamento. 21 lezioni verticali, 18 template scaricabili.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-x-20 reveal">
+                    <div>
+                        <div class="circuit-node">
+                            <h4 class="text-2xl font-bold text-white mb-2 underline decoration-orange decoration-4 underline-offset-8">Modulo 0: Setup & Primo Agente</h4>
+                            <p class="text-white/50 text-sm mb-4">Installazione GUIDATA (No-Code approach) e primo operatore AI in 10 minuti.</p>
+                            <ul class="flex flex-wrap gap-2"><li class="px-3 py-1 bg-white/5 rounded-full text-[10px] uppercase font-bold text-orange">Setup FS</li><li class="px-3 py-1 bg-white/5 rounded-full text-[10px] uppercase font-bold text-orange">First agent</li></ul>
+                        </div>
+                        <div class="circuit-node">
+                            <h4 class="text-2xl font-bold text-white mb-2 underline decoration-orange decoration-4 underline-offset-8">Modulo 1: Fondamenta I.C.R.O.</h4>
+                            <p class="text-white/50 text-sm mb-4">La "Lingua" di Claude: Context Mastery e risultati deterministici.</p>
+                        </div>
+                        <div class="circuit-node">
+                            <h4 class="text-2xl font-bold text-white mb-2 underline decoration-orange decoration-4 underline-offset-8">Modulo 2: Skill Builder logic</h4>
+                            <p class="text-white/50 text-sm mb-4">Framework S.K.I.L.L. per creare la tua libreria di 15+ micro-esperti.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="circuit-node">
+                            <h4 class="text-2xl font-bold text-white mb-2 underline decoration-orange decoration-4 underline-offset-8">Modulo 3: Workflow multi-step</h4>
+                            <p class="text-white/50 text-sm mb-4">Framework W.O.R.K. per orchestrazione agenti paralleli e sequenziali.</p>
+                        </div>
+                        <div class="circuit-node">
+                            <h4 class="text-2xl font-bold text-white mb-2 underline decoration-orange decoration-4 underline-offset-8">Modulo 4: Portfolio Building</h4>
+                            <p class="text-white/50 text-sm mb-4">Costruiamo 3 progetti reali: Content System, Business Report, Automation.</p>
+                        </div>
+                        <div class="circuit-node" style="border-left:0; padding-bottom:0;">
+                            <h4 class="text-3xl font-black text-orange-bright mb-2 italic">Modulo 5: Monetizzazione D.A.N.</h4>
+                            <p class="text-white/80 text-sm mb-4 font-bold">Definizione offerta & outreach strategico per ottenere la prima commessa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OBJECTION HANDLING GRID -->
+        <section class="bg-ink py-32 section-border-t">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-20 reveal">
+                    <h2 class="text-3xl md:text-5xl font-black text-white italic tracking-widest opacity-20 mb-4">--- GESTIONE OBIEZIONI // ELITE BUILDER</h2>
+                    <h3 class="text-4xl font-bold text-white">Sposta il tuo destino in 45 minuti.</h3>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- OBJECTION 1 -->
+                    <div class="col-span-full mb-10 text-center"><h4 class="text-xl font-bold text-orange uppercase tracking-tighter">1. "Non ho tempo per un altro corso..."</h4></div>
+                    <div class="objection-card reveal">
+                        <h5 class="font-bold text-white mb-2 tracking-tight">MOLTIPLICATORE DI TEMPO.</h5>
+                        <p class="text-xs text-white/50 leading-relaxed">Ogni ora qui te ne ridà 10 indietro. Non è un peso, è il sistema per smettere di fare tutto il resto a mano.</p>
+                        <div class="watermark">C</div>
+                    </div>
+                    <div class="objection-card reveal" style="border-color: rgba(251,70,4,0.2)">
+                        <h5 class="font-bold text-white mb-2 tracking-tight">AUTOMAZIONE 10X.</h5>
+                        <p class="text-xs text-white/50 leading-relaxed">Con W.O.R.K. riduci task da 4 ore a 12 minuti. Risultati tangibili fin dal Modulo 1.</p>
+                        <div class="watermark">P</div>
+                    </div>
+                    <div class="objection-card reveal">
+                        <h5 class="font-bold text-white mb-2 tracking-tight">LIBERTÀ OPERATIVA.</h5>
+                        <p class="text-xs text-white/50 leading-relaxed">Claude lavora in background. Tu ti occupi della strategia e della vendita. Riprendi il controllo.</p>
+                        <div class="watermark">B</div>
+                    </div>
+
+                    <!-- OBJECTION 2 -->
+                    <div class="col-span-full mt-20 mb-10 text-center"><h4 class="text-xl font-bold text-orange uppercase tracking-tighter">2. "Non sono un programmatore..."</h4></div>
+                    <div class="objection-card reveal">
+                        <h5 class="font-bold text-white mb-2 tracking-tight">LOGICA DI SISTEMA.</h5>
+                        <p class="text-xs text-white/50 leading-relaxed">Tu sei la mente, Claude è il braccio. Non devi scrivere codice, devi progettarlo.</p>
+                        <div class="watermark">C</div>
+                    </div>
+                    <div class="objection-card reveal" style="border-color: rgba(251,70,4,0.2)">
+                        <h5 class="font-bold text-white mb-2 tracking-tight">I.C.R.O. COME BUSSOLA.</h5>
+                        <p class="text-xs text-white/50 leading-relaxed">Risultati professionali senza conoscere Python o JS. È Context Engineering puro.</p>
+                        <div class="watermark">P</div>
+                    </div>
+                    <div class="objection-card reveal">
+                        <h5 class="font-bold text-white mb-2 tracking-tight">ELITE ARCHITECT.</h5>
+                        <p class="text-xs text-white/50 leading-relaxed">Sei chi costruisce i sistemi proprietari, non chi si limita a chattare con un bot pubblico.</p>
+                        <div class="watermark">B</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ECOSYSTEM & BONUSES -->
+        <section class="bg-paper py-32">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-24 reveal text-ink">
+                    <span class="bubble-orange mb-6">Ecosistema Elite</span>
+                    <h2 class="text-4xl md:text-6xl font-black mt-8">Ricevi asset per <span class="text-orange italic">€2.338.</span></h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card-paper reveal">
+                        <div class="text-xs font-bold text-orange mb-4 uppercase tracking-widest">Bonus 01</div>
+                        <h4 class="text-xl font-bold mb-4">15 Skill Pronte</h4>
+                        <p class="text-sm opacity-60">Libreria completa per Business, Content e Analisi. Importi e vai. (Valore €197)</p>
+                    </div>
+                    <div class="card-paper reveal">
+                        <div class="text-xs font-bold text-orange mb-4 uppercase tracking-widest">Bonus 02</div>
+                        <h4 class="text-xl font-bold mb-4">Portfolio Kit</h4>
+                        <p class="text-sm opacity-60">Template Notion duplicabile per chiudere i tuoi primi clienti in 1 ora. (Valore €147)</p>
+                    </div>
+                    <div class="card-paper reveal">
+                        <div class="text-xs font-bold text-orange mb-4 uppercase tracking-widest">Bonus 03</div>
+                        <h4 class="text-xl font-bold mb-4">Live Community</h4>
+                        <p class="text-sm opacity-60">3 mesi di accesso e call Q&A mensile per feedback diretto. (Valore €297)</p>
+                    </div>
+                    <div class="card-paper reveal border-2 border-orange border-dashed">
+                        <div class="text-xs font-bold text-orange mb-4 uppercase tracking-widest">Limited</div>
+                        <h4 class="text-xl font-bold mb-4">Sessione 1:1</h4>
+                        <p class="text-sm opacity-60">30 minuti privati con Max per il tuo posizionamento unico. (Valore €197)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="bg-ink-2 py-48 text-center relative section-border-t">
+            <div class="max-w-4xl mx-auto px-6 reveal">
+                <h2 class="text-5xl md:text-8xl font-black text-white leading-tight mb-12">Adesso hai <br/><span class="text-silver-orange italic">due opzioni.</span></h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-16 text-left">
+                    <div class="card-dark opacity-40">
+                        <h4 class="text-2xl font-bold mb-4">Opzione A</h4>
+                        <p class="text-sm text-white/50">Chiudi questa pagina. Torni alla routine. L'onda AI passa e tu continui a rincorrere il mercato.</p>
+                    </div>
+                    <div class="card-dark border-orange/40 bg-orange/5">
+                        <h4 class="text-2xl font-bold mb-4 text-orange">Opzione B</h4>
+                        <p class="text-sm text-white/90">Entri in Mastery. Tra 6 settimane sei un Architect con una competenza elitari e asset vendibili.</p>
+                    </div>
+                </div>
+
+                <a href="#offer" class="btn-orange text-2xl scale-125 mb-14">Deciso. Iniziamo.</a>
+                <p class="text-white/30 text-xs uppercase tracking-[0.3em] font-bold">FOUNDING MEMBERS COORTE 2026 // POSTI LIMITATI</p>
+            </div>
+        </section>
+
+        <footer class="bg-black py-12 text-center border-t border-white/5">
+            <p class="text-white/20 text-[10px] uppercase font-bold tracking-widest">Digital Empire &copy; 2026 · Claude Code Mastery · Tech-Lux Architecture</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Smooth Scroll Lenis
+        const lenis = new Lenis({ lerp: 0.1 });
+        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+        requestAnimationFrame(raf);
+
+        // GSAP Initialization
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Individual Reveals
+        gsap.utils.toArray(".reveal").forEach((el, i) => {
+            gsap.to(el, {
+                opacity: 1,
+                y: 0,
+                duration: 1.2,
+                ease: "expo.out",
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+
+        // Chart Bar Animation
+        gsap.utils.toArray(".chart-bar-fill").forEach((bar) => {
+            gsap.to(bar, {
+                width: bar.dataset.width / 4 + "%", // scaled visually
+                duration: 2,
+                ease: "power4.out",
+                scrollTrigger: {
+                    trigger: bar,
+                    start: "top 90%"
+                }
+            });
+        });
+
+        // Stats Donut Animation
+        gsap.utils.toArray(".chart-donut").forEach((chart) => {
+            let val = chart.dataset.val;
+            gsap.fromTo(chart, { "--val": 0 }, {
+                "--val": val,
+                duration: 2,
+                ease: "power4.out",
+                scrollTrigger: { trigger: chart, start: "top 90%" }
+            });
+        });
+    </script>
+</body>
+</html>

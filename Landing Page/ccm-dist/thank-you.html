@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="it" class="h-full antialiased dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Code Mastery · Ebook in Arrivo | Digital Empire</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'Onest',sans-serif; background:#0a0a0a; color:#f9f9f9; -webkit-font-smoothing:antialiased; line-height:1.6; }
+    h1,h2,h3,h4 { letter-spacing:-0.025em; font-weight:700; line-height:1.08; }
+    ::selection { background:#fb4604; color:#fff; }
+    a { text-decoration:none; color:inherit; }
+    img { display:block; max-width:100%; }
+
+    /* GRAIN */
+    .grain::before { content:""; position:fixed; inset:-50%; pointer-events:none; z-index:100; opacity:0.5; mix-blend-mode:overlay; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+    .grain::after { content:""; position:fixed; inset:-50%; pointer-events:none; z-index:101; opacity:0.25; mix-blend-mode:hard-light; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='2.1' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.3 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+
+    /* TEXT GRADIENTS */
+    .grad-orange { background:linear-gradient(135deg,#fff 0%,#d9d4e1 20%,#fb4604 55%,#ff8a4a 78%,#fff 100%); background-size:200% 200%; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+    .grad-white { background:linear-gradient(180deg,#fff 0%,#e8e3ef 35%,#b5afbd 72%,#8a8594 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+
+    /* BUTTONS */
+    @keyframes pulseGlow { 0%,100%{box-shadow:0 0 28px rgba(251,70,4,0.35),inset 0 1px 0 rgba(255,255,255,0.35);}50%{box-shadow:0 0 52px rgba(251,70,4,0.65),inset 0 1px 0 rgba(255,255,255,0.45);} }
+    @keyframes sheen { 0%{transform:translateX(-160%) skewX(-25deg);}100%{transform:translateX(160%) skewX(-25deg);} }
+    .btn-primary { position:relative; overflow:hidden; display:inline-flex; align-items:center; justify-content:center; gap:0.625rem; padding:1.1rem 2rem; border-radius:14px; font-family:'Onest',sans-serif; font-weight:700; font-size:1rem; letter-spacing:0.02em; color:#fff; text-shadow:0 1px 3px rgba(0,0,0,0.4); background:linear-gradient(135deg,#ff6a2e 0%,#fb4604 50%,#d83c03 100%); border:1px solid rgba(255,255,255,0.22); animation:pulseGlow 2.8s infinite ease-in-out; transition:transform 0.25s cubic-bezier(0.175,0.885,0.32,1.275); cursor:pointer; }
+    .btn-primary::before { content:""; position:absolute; inset:0; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.35),transparent); transform:translateX(-160%) skewX(-25deg); transition:transform 0.5s; }
+    .btn-primary:hover { transform:translateY(-2px) scale(1.02); }
+    .btn-primary:hover::before { animation:sheen 0.6s forwards; }
+    .btn-primary:disabled { opacity:0.5; cursor:not-allowed; animation:none; background:#555; border-color:transparent; transform:none; }
+    .btn-primary--lg { padding:1.25rem 2.5rem; font-size:1.075rem; border-radius:16px; }
+    .btn-outline { display:inline-flex; align-items:center; justify-content:center; gap:0.5rem; padding:1rem 1.75rem; border-radius:12px; font-family:'Onest',sans-serif; font-weight:500; font-size:0.9375rem; color:rgba(249,249,249,0.85); background:transparent; border:1.5px solid rgba(255,255,255,0.18); transition:border-color 0.2s,background 0.2s,color 0.2s; cursor:pointer; }
+    .btn-outline:hover { border-color:rgba(255,255,255,0.36); background:rgba(255,255,255,0.04); color:#fff; }
+
+    /* PILLS */
+    .pill-orange { background:linear-gradient(135deg,#fb4604,#ff6a2e); color:#fff; border-radius:9999px; padding:0.35rem 0.875rem; font-size:0.8125rem; font-weight:600; display:inline-flex; align-items:center; gap:0.375rem; box-shadow:0 6px 20px -8px rgba(251,70,4,0.7); }
+    .pill-silver { background:linear-gradient(135deg,#fff 0%,#d9d4e1 50%,#8a8594 100%); color:#1c1c1c; border-radius:9999px; padding:0.35rem 0.875rem; font-size:0.8125rem; font-weight:600; display:inline-flex; align-items:center; gap:0.375rem; }
+
+    /* PRE-HEADLINE */
+    .eyebrow { display:inline-flex; align-items:center; gap:0.5rem; font-size:0.6875rem; font-weight:600; letter-spacing:0.28em; text-transform:uppercase; color:#ff8a4a; }
+    .eyebrow::before,.eyebrow::after { content:""; width:24px; height:1px; background:linear-gradient(90deg,transparent,#ff6a2e,transparent); }
+
+    /* CARDS */
+    .card { border:1px solid rgba(249,249,249,0.12); background:radial-gradient(110% 80% at 0% 0%,rgba(251,70,4,0.08) 0%,transparent 55%),linear-gradient(180deg,#191919 0%,#111 100%); border-radius:20px; padding:2rem; box-shadow:0 32px 64px -32px rgba(0,0,0,0.95),0 1px 0 rgba(255,255,255,0.04) inset; }
+
+    /* MASTERCLASS OFFER CARD */
+    .offer-card { border:1px solid rgba(251,70,4,0.3); background:radial-gradient(140% 100% at 0% 0%,rgba(251,70,4,0.16) 0%,transparent 52%),linear-gradient(180deg,#141414 0%,#0a0a0a 100%); border-radius:24px; overflow:hidden; box-shadow:0 60px 120px -40px rgba(0,0,0,0.98),0 0 0 1px rgba(251,70,4,0.07),0 1px 0 rgba(255,255,255,0.04) inset; }
+    .offer-card-inner { padding:2rem 1.5rem; }
+    @media(min-width:768px) { .offer-card-inner { padding:2.5rem; } }
+
+    /* COUNTDOWN */
+    .cd-wrap { display:flex; align-items:center; justify-content:center; gap:0.5rem; }
+    .cd-box { border:1px solid rgba(255,255,255,0.1); background:linear-gradient(180deg,rgba(20,20,20,0.98) 0%,rgba(6,6,6,0.98) 100%); border-radius:12px; padding:0.875rem 0.625rem; min-width:68px; text-align:center; box-shadow:0 8px 24px -8px rgba(0,0,0,0.9),0 1px 0 rgba(255,255,255,0.04) inset; }
+    .cd-num { font-variant-numeric:tabular-nums; font-weight:800; font-size:2.25rem; line-height:1; color:#ff6a2e; text-shadow:0 0 24px rgba(251,70,4,0.45); letter-spacing:-0.02em; }
+    .cd-lbl { font-size:0.575rem; letter-spacing:0.22em; font-weight:700; text-transform:uppercase; color:rgba(255,255,255,0.45); margin-top:0.3rem; }
+    .cd-sep { font-size:1.5rem; font-weight:800; color:rgba(251,70,4,0.5); line-height:1; padding-bottom:0.5rem; }
+
+    /* CHECKLIST */
+    .check-item { display:flex; align-items:flex-start; gap:0.75rem; font-size:0.9375rem; color:rgba(255,255,255,0.8); line-height:1.55; }
+    .check-icon { width:1.25rem; height:1.25rem; border-radius:5px; background:rgba(251,70,4,0.15); border:1px solid rgba(251,70,4,0.4); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:0.15rem; }
+
+    /* PRICE DISPLAY */
+    .price-display { display:flex; align-items:flex-end; gap:0.25rem; justify-content:center; line-height:1; }
+    .price-num { font-size:4.5rem; font-weight:900; letter-spacing:-0.04em; }
+    .price-cur { font-size:2rem; font-weight:700; color:rgba(255,255,255,0.55); margin-bottom:0.5rem; }
+
+    /* DIVIDER */
+    .divider { display:flex; align-items:center; gap:1rem; margin:2.5rem auto; max-width:240px; }
+    .divider-line { flex:1; height:1px; background:linear-gradient(to right,transparent,rgba(255,255,255,0.18),transparent); }
+
+    /* PULSE DOT */
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.4;transform:scale(0.85);} }
+    .pulse { animation:pulse-dot 1.4s ease-in-out infinite; display:inline-block; width:7px; height:7px; border-radius:9999px; background:#fb4604; }
+
+    /* REVEAL */
+    .reveal { opacity:0; transform:translateY(24px); transition:opacity 0.65s cubic-bezier(0.22,1,0.36,1),transform 0.65s cubic-bezier(0.22,1,0.36,1); }
+    .reveal.visible { opacity:1; transform:none; }
+
+    /* LAYOUT UTILS */
+    .container { max-width:56rem; margin:0 auto; padding:0 1.25rem; }
+    .container-sm { max-width:42rem; margin:0 auto; padding:0 1.25rem; }
+    .section { padding:3.5rem 0; }
+    @media(min-width:768px) { .section { padding:5rem 0; } .container,.container-sm { padding:0 1.5rem; } }
+
+    /* GRID OFFER */
+    .offer-grid { display:flex; flex-direction:column; gap:2rem; }
+    @media(min-width:768px) { .offer-grid { display:grid; grid-template-columns:1.15fr 0.85fr; gap:2.5rem; align-items:start; } }
+
+    /* DIVIDER VERTICAL */
+    .vdivider { display:none; }
+    @media(min-width:768px) { .vdivider { display:block; width:1px; background:rgba(255,255,255,0.08); align-self:stretch; margin-top:0.5rem; } }
+  </style>
+</head>
+
+<body class="grain">
+<main>
+
+  <!-- ── CONFIRMATION HERO ───────────────────────────── -->
+  <div class="container-sm" style="padding-top:4rem; padding-bottom:0; text-align:center;">
+    <div class="reveal" style="margin-bottom:1.5rem;">
+      <span class="pill-orange"><i data-lucide="check-circle-2" style="width:0.875rem;height:0.875rem;"></i> Richiesta Confermata</span>
+    </div>
+    <div class="reveal" style="transition-delay:0.05s; margin-bottom:0.75rem;">
+      <div class="eyebrow">Ottimo lavoro</div>
+    </div>
+    <h1 class="reveal" style="transition-delay:0.1s; font-size:clamp(2rem,6vw,3.5rem); margin-bottom:1.75rem;">
+      <span class="grad-white">L'ebook è in viaggio.</span><br>
+      <span class="grad-orange">Controlla la tua inbox.</span>
+    </h1>
+
+    <div class="card reveal" style="transition-delay:0.15s; text-align:left; padding:1.5rem; max-width:480px; margin:0 auto;">
+      <div style="display:flex; gap:1rem; align-items:flex-start;">
+        <div style="width:2.75rem; height:2.75rem; flex-shrink:0; border-radius:12px; background:rgba(251,70,4,0.14); border:1px solid rgba(251,70,4,0.3); display:flex; align-items:center; justify-content:center;">
+          <i data-lucide="mail-check" style="width:1.25rem;height:1.25rem;color:#ff6a2e;"></i>
+        </div>
+        <div>
+          <p style="font-weight:700; color:#fff; margin-bottom:0.375rem; font-size:1.0625rem;">Claude Code Mastery in arrivo</p>
+          <p style="color:rgba(255,255,255,0.65); font-size:0.9rem; line-height:1.65; font-weight:300;">
+            Entro <strong style="color:#fff;">5 minuti</strong> riceverai il link per scaricare l'ebook. Controlla anche <strong style="color:#fff;">Spam</strong> e <strong style="color:#fff;">Promozioni</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── DIVIDER ──────────────────────────────────────── -->
+  <div class="divider">
+    <div class="divider-line"></div>
+    <i data-lucide="sparkles" style="width:0.875rem;height:0.875rem;color:#ff6a2e;flex-shrink:0;"></i>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ── MASTERCLASS OFFER ─────────────────────────────── -->
+  <div class="container section" style="padding-top:0;">
+
+    <!-- HEADER -->
+    <div class="reveal" style="text-align:center; margin-bottom:2rem;">
+      <span class="pill-silver" style="margin-bottom:1.25rem; gap:0.5rem;">
+        <span class="pulse"></span> OFFERTA RISERVATA · SOLO ORA
+      </span>
+      <h2 style="font-size:clamp(1.875rem,5vw,3rem); margin-top:1.25rem; margin-bottom:0.875rem;">
+        <span class="grad-white">Prima di andare,</span><br>
+        <span class="grad-orange">hai 48 ore per questo.</span>
+      </h2>
+      <p style="color:rgba(255,255,255,0.6); font-size:1rem; font-weight:300; max-width:38rem; margin:0 auto; line-height:1.75;">
+        Una <strong style="color:#ff8a4a;font-weight:600;">Masterclass live-replay di 3+ ore</strong> su Claude Code — ogni argomento dell'ebook <em style="color:rgba(255,255,255,0.8);">mostrato in pratica a schermo condiviso</em>, pagina dopo pagina.
+      </p>
+    </div>
+
+    <!-- LOCKED VIDEO -->
+    <div class="reveal" style="transition-delay:0.08s; margin-bottom:2rem;">
+      <div style="position:relative; width:100%; aspect-ratio:16/9; border-radius:18px; overflow:hidden; border:1px solid rgba(251,70,4,0.25); background:radial-gradient(ellipse at center, #1a1a1a 0%, #080808 100%); box-shadow:0 48px 96px -40px rgba(0,0,0,0.98), 0 0 0 1px rgba(251,70,4,0.08), 0 0 80px -20px rgba(251,70,4,0.12);">
+        <!-- blurred preview bg -->
+        <div style="position:absolute; inset:0; background:linear-gradient(135deg, rgba(251,70,4,0.08) 0%, transparent 50%, rgba(251,70,4,0.05) 100%);"></div>
+        <!-- fake content lines (blurred) -->
+        <div style="position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding:8% 10%; gap:4%; filter:blur(6px); opacity:0.18; pointer-events:none;">
+          <div style="height:10%; background:rgba(255,255,255,0.7); border-radius:4px; width:55%;"></div>
+          <div style="height:7%; background:rgba(255,255,255,0.5); border-radius:4px; width:80%;"></div>
+          <div style="height:7%; background:rgba(255,255,255,0.5); border-radius:4px; width:70%;"></div>
+          <div style="height:7%; background:rgba(251,70,4,0.9); border-radius:4px; width:40%;"></div>
+          <div style="height:7%; background:rgba(255,255,255,0.4); border-radius:4px; width:65%;"></div>
+          <div style="height:7%; background:rgba(255,255,255,0.4); border-radius:4px; width:75%;"></div>
+        </div>
+        <!-- dark overlay -->
+        <div style="position:absolute; inset:0; background:rgba(0,0,0,0.72); backdrop-filter:blur(2px);"></div>
+        <!-- orange glow center -->
+        <div style="position:absolute; inset:0; background:radial-gradient(ellipse at center, rgba(251,70,4,0.15) 0%, transparent 60%); pointer-events:none;"></div>
+        <!-- lock UI -->
+        <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1rem; z-index:2;">
+          <div style="width:5rem; height:5rem; border-radius:9999px; background:rgba(251,70,4,0.18); border:1.5px solid rgba(251,70,4,0.45); display:flex; align-items:center; justify-content:center; box-shadow:0 0 40px rgba(251,70,4,0.3), 0 0 80px rgba(251,70,4,0.12);">
+            <i data-lucide="lock" style="width:2rem; height:2rem; color:#ff6a2e;"></i>
+          </div>
+          <div style="text-align:center;">
+            <p style="font-size:1.0625rem; font-weight:700; color:#fff; margin-bottom:0.375rem; letter-spacing:-0.01em;">Masterclass bloccata</p>
+            <p style="font-size:0.8125rem; color:rgba(255,255,255,0.5); font-weight:300;">3+ ore su Claude Code · sblocca qui sotto</p>
+          </div>
+        </div>
+        <!-- duration badge -->
+        <div style="position:absolute; bottom:1rem; right:1rem; background:rgba(0,0,0,0.75); border:1px solid rgba(255,255,255,0.12); border-radius:8px; padding:0.375rem 0.75rem; display:flex; align-items:center; gap:0.4rem; z-index:3;">
+          <i data-lucide="clock" style="width:0.75rem; height:0.75rem; color:rgba(255,255,255,0.6);"></i>
+          <span style="font-size:0.75rem; font-weight:600; color:rgba(255,255,255,0.75);">3h 20m</span>
+        </div>
+        <!-- episodes badge -->
+        <div style="position:absolute; bottom:1rem; left:1rem; background:rgba(0,0,0,0.75); border:1px solid rgba(255,255,255,0.12); border-radius:8px; padding:0.375rem 0.75rem; display:flex; align-items:center; gap:0.4rem; z-index:3;">
+          <i data-lucide="layers" style="width:0.75rem; height:0.75rem; color:rgba(255,255,255,0.6);"></i>
+          <span style="font-size:0.75rem; font-weight:600; color:rgba(255,255,255,0.75);">9 moduli</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- OFFER CARD -->
+    <div class="offer-card reveal" style="transition-delay:0.1s;">
+      <!-- watermark -->
+      <div aria-hidden="true" style="position:absolute; top:-30px; right:-10px; font-size:clamp(100px,20vw,200px); line-height:1; font-weight:900; font-style:italic; letter-spacing:-0.04em; opacity:0.025; color:#fff; pointer-events:none; user-select:none;">CCM</div>
+
+      <div class="offer-card-inner" style="position:relative; z-index:1;">
+        <div class="offer-grid">
+
+          <!-- LEFT — content -->
+          <div>
+            <!-- badges -->
+            <div style="display:flex; align-items:center; gap:0.625rem; flex-wrap:wrap; margin-bottom:1.25rem;">
+              <span class="pill-orange" style="font-size:0.6875rem; padding:0.25rem 0.75rem; letter-spacing:0.05em;">MASTERCLASS PRATICA</span>
+              <span style="font-size:0.6875rem; font-weight:700; text-transform:uppercase; letter-spacing:0.18em; color:rgba(255,255,255,0.45);">Solo 15 €</span>
+            </div>
+
+            <!-- title -->
+            <h3 style="font-size:clamp(1.375rem,3.5vw,2rem); font-weight:900; line-height:1.1; margin-bottom:1rem;">
+              <span class="grad-white">Claude Code Mastery</span>
+              <br><span class="grad-orange">Masterclass Pratica</span>
+            </h3>
+
+            <!-- description -->
+            <p style="color:rgba(255,255,255,0.65); font-size:0.9375rem; line-height:1.72; font-weight:300; margin-bottom:1.5rem;">
+              <strong style="color:#fff;">3+ ore di formazione operativa</strong> su Claude Code. Ogni concetto dell'ebook viene <strong style="color:#fff;">mostrato a schermo</strong>, applicato su casi reali, spiegato passo per passo. Zero teoria senza pratica.
+            </p>
+
+            <!-- checklist -->
+            <ul style="display:flex; flex-direction:column; gap:0.75rem;">
+              <li class="check-item">
+                <div class="check-icon"><i data-lucide="check" style="width:0.7rem;height:0.7rem;color:#ff6a2e;"></i></div>
+                <span><strong style="color:#fff;">3+ ore</strong> di masterclass · ogni capitolo dell'ebook, applicato in pratica.</span>
+              </li>
+              <li class="check-item">
+                <div class="check-icon"><i data-lucide="check" style="width:0.7rem;height:0.7rem;color:#ff6a2e;"></i></div>
+                <span><strong style="color:#fff;">Schermo condiviso</strong> · comandi reali, hook, skill, agent che funzionano.</span>
+              </li>
+              <li class="check-item">
+                <div class="check-icon"><i data-lucide="check" style="width:0.7rem;height:0.7rem;color:#ff6a2e;"></i></div>
+                <span>Valore estremo a un prezzo simbolico di <strong style="color:#ff8a4a;">15 €</strong>.</span>
+              </li>
+            </ul>
+            <!-- launch date notice -->
+            <div style="margin-top:1.25rem; padding:0.875rem 1rem; border-radius:12px; background:rgba(251,70,4,0.08); border:1px solid rgba(251,70,4,0.22); display:flex; align-items:center; gap:0.625rem;">
+              <i data-lucide="calendar" style="width:1rem;height:1rem;color:#ff6a2e;flex-shrink:0;"></i>
+              <span style="font-size:0.875rem; color:rgba(255,255,255,0.75); font-weight:400;">La masterclass sarà disponibile dal <strong style="color:#fff;">29 aprile 2026</strong>. Riceverai accesso automatico via email.</span>
+            </div>
+          </div>
+
+          <!-- VERTICAL DIVIDER (desktop only) -->
+          <div class="vdivider"></div>
+
+          <!-- RIGHT — countdown + price -->
+          <div style="display:flex; flex-direction:column; align-items:center; gap:1.75rem; padding-top:0.25rem;">
+
+            <!-- countdown -->
+            <div style="width:100%; padding:1.5rem; border-radius:16px; background:rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.06); text-align:center;">
+              <p style="font-size:0.625rem; text-transform:uppercase; letter-spacing:0.22em; font-weight:700; color:rgba(255,255,255,0.45); margin-bottom:1rem; display:flex; align-items:center; justify-content:center; gap:0.4rem;">
+                <span class="pulse"></span> Offerta scade in
+              </p>
+              <div class="cd-wrap" id="cd-row">
+                <div class="cd-box"><div class="cd-num" id="cd-h">48</div><div class="cd-lbl">ORE</div></div>
+                <div class="cd-sep">:</div>
+                <div class="cd-box"><div class="cd-num" id="cd-m">00</div><div class="cd-lbl">MIN</div></div>
+                <div class="cd-sep">:</div>
+                <div class="cd-box"><div class="cd-num" id="cd-s">00</div><div class="cd-lbl">SEC</div></div>
+              </div>
+              <p id="cd-expired-msg" style="display:none; margin-top:0.75rem; font-size:0.8125rem; color:rgba(255,255,255,0.5);">L'offerta è terminata.</p>
+            </div>
+
+            <!-- price -->
+            <div style="text-align:center;">
+              <p style="font-size:0.625rem; text-transform:uppercase; letter-spacing:0.2em; font-weight:700; color:rgba(255,255,255,0.35); margin-bottom:0.25rem;">Prezzo masterclass</p>
+              <div class="price-display">
+                <span class="price-num grad-white">15</span>
+                <span class="price-cur">€</span>
+              </div>
+              <p style="font-size:0.6875rem; color:rgba(255,255,255,0.35); margin-top:0.25rem;">pagamento sicuro · Stripe</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CTAs -->
+        <div style="margin-top:2rem; padding-top:1.75rem; border-top:1px solid rgba(255,255,255,0.08);">
+          <div style="display:flex; flex-direction:column; gap:0.75rem; max-width:600px; margin:0 auto;">
+            <a href="https://buy.stripe.com/4gM8wRfAi4Zi6wn6Ardby01" target="_blank" rel="noopener noreferrer" id="mc-btn" class="btn-primary btn-primary--lg" style="width:100%;">
+              <i data-lucide="play" style="width:1.2rem;height:1.2rem;"></i>
+              Accedi alla Masterclass →
+            </a>
+            <div style="display:flex; flex-direction:column; gap:0.5rem;">
+              <button id="skip-btn" class="btn-outline" style="width:100%;">
+                No grazie, mi basta l'ebook
+                <i data-lucide="arrow-right" style="width:0.9rem;height:0.9rem;"></i>
+              </button>
+              <a href="https://formazione-systemarchitect.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-outline" style="width:100%; font-size:0.875rem;">
+                <i data-lucide="graduation-cap" style="width:0.875rem;height:0.875rem;"></i>
+                Scopri il corso completo
+                <i data-lucide="arrow-up-right" style="width:0.75rem;height:0.75rem;"></i>
+              </a>
+            </div>
+          </div>
+          <p style="text-align:center; font-size:0.6875rem; color:rgba(255,255,255,0.3); margin-top:1rem; display:flex; align-items:center; justify-content:center; gap:0.375rem;">
+            <i data-lucide="shield-check" style="width:0.8rem;height:0.8rem;"></i>
+            Pagamento sicuro su Stripe · disponibile dal 29.04.2026
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKIP SECTION -->
+    <div id="skip-section" style="display:none; max-width:420px; margin:2.5rem auto 0;" class="reveal visible">
+      <div class="card" style="text-align:center;">
+        <div style="width:2.75rem; height:2.75rem; margin:0 auto 1.25rem; border-radius:9999px; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; justify-content:center;">
+          <i data-lucide="mail" style="width:1.25rem;height:1.25rem;color:rgba(255,255,255,0.65);"></i>
+        </div>
+        <h3 class="grad-white" style="font-size:1.375rem; margin-bottom:0.625rem;">Nessun problema.</h3>
+        <p style="color:rgba(255,255,255,0.6); font-weight:300; line-height:1.7; font-size:0.9375rem; margin-bottom:1.5rem;">
+          Goditi l'ebook <strong style="color:#fff;">Claude Code Mastery</strong>. Se vorrai andare oltre, la masterclass e il corso <strong style="color:#fff;">Da AI User a System Architect</strong> saranno lì per te.
+        </p>
+        <div style="display:flex; flex-direction:column; gap:0.625rem;">
+          <a href="https://formazione-systemarchitect.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-outline">
+            Scopri il corso completo <i data-lucide="arrow-up-right" style="width:0.8rem;height:0.8rem;"></i>
+          </a>
+          <a href="/" class="btn-outline">
+            <i data-lucide="arrow-left" style="width:0.875rem;height:0.875rem;"></i> Torna alla home
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer style="padding:2rem 1.5rem; margin-top:2rem; text-align:center; color:rgba(255,255,255,0.25); font-size:0.6875rem; letter-spacing:0.2em; text-transform:uppercase; font-weight:500; border-top:1px solid rgba(255,255,255,0.05);">
+    © 2026 Digital Empire Labs
+  </footer>
+</main>
+
+<script>
+  lucide.createIcons();
+
+  // Reveal
+  const obs = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);} }), {threshold:0.08});
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // Countdown
+  const KEY = 'ccm_offer_start', WIN = 48*3600000;
+  let t0 = +localStorage.getItem(KEY) || 0;
+  if(!t0){t0=Date.now();try{localStorage.setItem(KEY,t0);}catch{}}
+  const deadline = t0 + WIN;
+  const pad = n => String(n).padStart(2,'0');
+
+  function tick(){
+    const diff = deadline - Date.now();
+    if(diff <= 0){
+      ['cd-h','cd-m','cd-s'].forEach(id => document.getElementById(id).textContent='00');
+      document.getElementById('cd-row').style.opacity='0.4';
+      document.getElementById('cd-expired-msg').style.display='block';
+      const btn = document.getElementById('mc-btn');
+      btn.removeAttribute('href');
+      btn.setAttribute('disabled','');
+      btn.innerHTML='<i data-lucide="lock" style="width:1.1rem;height:1.1rem;"></i> Offerta terminata';
+      lucide.createIcons();
+      return;
+    }
+    document.getElementById('cd-h').textContent = pad(Math.floor(diff/3600000));
+    document.getElementById('cd-m').textContent = pad(Math.floor(diff%3600000/60000));
+    document.getElementById('cd-s').textContent = pad(Math.floor(diff%60000/1000));
+    setTimeout(tick, 1000);
+  }
+  tick();
+
+  // Skip
+  document.getElementById('skip-btn').addEventListener('click', ()=>{
+    const s = document.getElementById('skip-section');
+    s.style.display = 'block';
+    setTimeout(()=>s.scrollIntoView({behavior:'smooth',block:'center'}), 60);
+  });
+</script>
+</body>
+</html>

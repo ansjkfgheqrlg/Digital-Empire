@@ -1,3 +1,35 @@
+## 🔄 2026-08-25 — CLAUDE: SYNC monorepo "aggiorna tutto" — 103 file su GitHub + 🔴 chiave Brevo pubblica da ruotare — CP-20260825-001
+
+Richiesta diretta di Max ("aggiorna tutto, git pull, git push"). Tutto il lavoro che stava
+solo sul disco è ora su `origin/main`: **103 file, ~2,8 MB di soli sorgenti** (il `.gitignore`
+del monorepo ha tenuto fuori `node_modules/`, `.next/`, `dist/`, `*.zip` — nessun blob).
+
+Tre filoni assorbiti:
+- **`Skill empire-premium-style/`** — la skill che ricostruisce qualsiasi sito nel design system
+  ultra-premium DE (token congelati, stack Next.js 16 + Tailwind v4 + Lenis + Framer Motion +
+  GSAP). Ora ha una pagina wiki: `tools/Tool_Empire_Premium_Style.md`.
+- **`Crea siti/Siti CCM/`** — 3 build Next.js della sale page CCM (`ccm-sale-page-empire`
+  completo, `ccm-elite-ultimate`, `ccm-full-empire` **parziale**) + pipeline Jinja2
+  `builder.py` (`data.json` + `template.html` → `index.html`).
+- **`Landing Page/`** — `ccm-empire` (home + masterclass + thank-you, Netlify), export statico,
+  5 varianti thank-you.
+
+**Deciso in corsa:** `Landing Page/ccm-empire/` era un **repo Git annidato senza remote** (un
+solo commit). Committarlo così avrebbe messo su GitHub un gitlink vuoto — un puntatore a un
+commit che nessun altro può clonare. Assorbito nel monorepo dopo aver salvato la sua storia in
+doppia copia (bundle `--all` + copia integrale di `.git`) nello scratchpad di sessione.
+
+**🔴 DA FARE SUBITO — non è un debito tecnico, è un'esposizione attiva:** la chiave API **Brevo**
+del form opt-in è in chiaro su un repo **PUBBLICO** (`gh repo view` → `isPrivate: false`) e ci sta
+dal **commit iniziale `57a0ba0b`**, non da oggi. Rimuoverla dal codice non basta: la storia Git
+pubblica è già indicizzabile → **va revocata e rigenerata su Brevo**. Backlog **B-020**.
+
+**RIPRESA DA**: (1) rotazione chiave Brevo + valutare endpoint server al posto del JS
+client-side; (2) `ccm-full-empire` è incompleto (mancano `layout.tsx`/`page.tsx`/sezioni) —
+decidere se è un ramo abbandonato a favore di `ccm-sale-page-empire` o se va finito.
+
+---
+
 ## 👤 2026-08-24 — EMPERATOR AGENT: Neri passa a operativo su tutto Outreach — 2 task W1 assegnate
 
 Max ha chiesto lo stesso trattamento fatto per Gael (task settimanali, non giornaliere) ma

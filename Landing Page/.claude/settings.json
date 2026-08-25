@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/gdiar/AppData/Roaming/**)",
+      "Read(//c/Users/gdiar/Desktop/Sito 1 Fabrizio/**)",
+      "Bash(powershell -Command ' *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\gdiar\\Desktop\\Sito 1 Fabrizio"
+    ]
+  }
+}

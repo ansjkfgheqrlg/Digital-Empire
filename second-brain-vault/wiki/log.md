@@ -643,3 +643,20 @@ entities/Entity_The_Ninth_Winter_Libro_KDP.md, entities/Entity_The_Second_Hand_S
 concepts/Concept_YouTube_Automation_Factory.md, entities/Entity_Dose_Mentale_Channel.md,
 entities/Entity_The_Quiet_Hours_Libro_KDP.md, 01 - Projects/Project_Prof_Autocad_PreventivoForge.md).
 Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
+
+## 2026-08-25 (Sync monorepo: build CCM + skill empire-premium-style su GitHub, Claude)
+- INGEST: assorbito nel monorepo tutto il lavoro non tracciato del working tree — 103 file,
+  ~2,8 MB di soli sorgenti (`.gitignore` ha tenuto fuori `node_modules/`, `.next/`, `dist/`,
+  `*.zip`). Tre filoni: **skill `empire-premium-style`** (10 file: design system ccm-premium,
+  token congelati, stack Next.js 16 + Tailwind v4 + Lenis + Framer Motion + GSAP),
+  **build CCM** (`ccm-sale-page-empire` completo, `ccm-elite-ultimate`, `ccm-full-empire`
+  parziale, + pipeline Jinja2 `builder.py` → `index.html` rigenerato),
+  **`Landing Page/`** (`ccm-empire` home/masterclass/thank-you + export statico + varianti
+  thank-you). → 1 pagina nuova (tools/Tool_Empire_Premium_Style.md) + index.md aggiornato.
+- BUILD: `Landing Page/ccm-empire/` era un **repo Git annidato senza remote** (1 solo commit):
+  committarlo avrebbe prodotto un gitlink vuoto, non clonabile da nessuno. Assorbito nel
+  monorepo dopo backup in doppia copia della sua storia (bundle + copia `.git`).
+- ⚠️ SICUREZZA: trovata **chiave API Brevo in chiaro su repo PUBBLICO** — non nuova, era in
+  `HEAD` dal commit iniziale `57a0ba0b` in 3 file già tracciati. Va **ruotata su Brevo**, non
+  solo rimossa dal codice (storia pubblica già indicizzabile). → backlog B-020.
+  CP-20260825-001.

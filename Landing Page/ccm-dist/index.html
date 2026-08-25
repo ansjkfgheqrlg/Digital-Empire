@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="it" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Code Mastery · Ebook Gratuito di 206 Pagine | Digital Empire</title>
+  <meta name="description" content="Il manuale completo e pratico su Claude Code. 206 pagine di formazione operativa: agent, hook, skill, MCP, slash command. Ottienilo gratis.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Claude Code Mastery · Ebook Gratuito">
+  <meta property="og:description" content="Il manuale completo e pratico su Claude Code. 206 pagine di formazione operativa.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'Onest',sans-serif; background:#1c1c1c; color:#f9f9f9; -webkit-font-smoothing:antialiased; line-height:1.6; }
+    h1,h2,h3,h4 { letter-spacing:-0.025em; line-height:1.08; font-weight:700; }
+    ::selection { background:#fb4604; color:#fff; }
+    a { text-decoration:none; color:inherit; }
+
+    /* GRAIN */
+    .grain::before { content:""; position:fixed; inset:-50%; pointer-events:none; z-index:100; opacity:0.5; mix-blend-mode:overlay; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+    .grain::after { content:""; position:fixed; inset:-50%; pointer-events:none; z-index:101; opacity:0.25; mix-blend-mode:hard-light; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='2.1' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.3 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+
+    /* TEXT GRADIENTS */
+    .grad-orange { background:linear-gradient(135deg,#fff 0%,#d9d4e1 20%,#fb4604 55%,#ff8a4a 78%,#fff 100%); background-size:200% 200%; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+    .grad-white { background:linear-gradient(180deg,#fff 0%,#e8e3ef 35%,#b5afbd 72%,#8a8594 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+    .grad-black { background:linear-gradient(180deg,#3a3a3a 0%,#1c1c1c 50%,#0a0a0a 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+
+    /* ANIMATIONS */
+    @keyframes pulseGlow { 0%,100%{box-shadow:0 0 28px rgba(251,70,4,0.35),inset 0 1px 0 rgba(255,255,255,0.35);}50%{box-shadow:0 0 52px rgba(251,70,4,0.65),inset 0 1px 0 rgba(255,255,255,0.45);} }
+    @keyframes sheen { 0%{transform:translateX(-160%) skewX(-25deg);}100%{transform:translateX(160%) skewX(-25deg);} }
+    @keyframes marquee { from{transform:translateX(0);}to{transform:translateX(-50%);} }
+    @keyframes book-float { 0%,100%{transform:rotate(-5deg) translateY(0);}50%{transform:rotate(-5deg) translateY(-10px);} }
+    @keyframes chip-float-a { 0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);} }
+    @keyframes chip-float-b { 0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);} }
+    @keyframes chip-float-c { 0%,100%{transform:translateY(0);}50%{transform:translateY(-7px);} }
+    @keyframes chip-float-d { 0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);} }
+
+    /* BUTTONS */
+    .btn { position:relative; overflow:hidden; display:inline-flex; align-items:center; justify-content:center; gap:0.6rem; padding:1.1rem 2rem; border-radius:14px; font-family:'Onest',sans-serif; font-weight:700; font-size:1rem; letter-spacing:0.02em; color:#fff; text-shadow:0 1px 3px rgba(0,0,0,0.4); background:linear-gradient(135deg,#ff6a2e 0%,#fb4604 50%,#d83c03 100%); border:1px solid rgba(255,255,255,0.22); animation:pulseGlow 2.8s infinite ease-in-out; transition:transform 0.25s cubic-bezier(0.175,0.885,0.32,1.275); cursor:pointer; white-space:nowrap; }
+    .btn::before { content:""; position:absolute; inset:0; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.35),transparent); transform:translateX(-160%) skewX(-25deg); transition:transform 0.5s; }
+    .btn:hover { transform:translateY(-2px) scale(1.02); }
+    .btn:hover::before { animation:sheen 0.6s forwards; }
+    .btn:disabled { opacity:0.55; cursor:not-allowed; animation:none; background:#555; border-color:transparent; transform:none; }
+    .btn--lg { padding:1.25rem 2.5rem; font-size:1.075rem; }
+    .btn-ghost { display:inline-flex; align-items:center; justify-content:center; gap:0.5rem; padding:1rem 1.75rem; border-radius:12px; font-family:'Onest',sans-serif; font-weight:500; font-size:0.9375rem; color:rgba(249,249,249,0.85); background:transparent; border:1.5px solid rgba(255,255,255,0.18); transition:border-color 0.2s,background 0.2s; white-space:nowrap; }
+    .btn-ghost:hover { border-color:rgba(255,255,255,0.36); background:rgba(255,255,255,0.04); }
+
+    /* PILLS */
+    .pill-o { background:linear-gradient(135deg,#fb4604,#ff6a2e); color:#fff; border-radius:9999px; padding:0.375rem 1rem; font-size:0.8125rem; font-weight:600; display:inline-flex; align-items:center; gap:0.375rem; box-shadow:0 6px 20px -8px rgba(251,70,4,0.65); }
+    .pill-s { background:linear-gradient(135deg,#fff 0%,#d9d4e1 50%,#8a8594 100%); color:#1c1c1c; border-radius:9999px; padding:0.375rem 1rem; font-size:0.8125rem; font-weight:600; display:inline-flex; align-items:center; gap:0.375rem; }
+    .pill-dark { background:#1c1c1c; color:#f9f9f9; border-radius:9999px; padding:0.375rem 1rem; font-size:0.8125rem; font-weight:600; display:inline-flex; align-items:center; gap:0.375rem; border:1px solid rgba(249,249,249,0.12); }
+
+    /* EYEBROW */
+    .eyebrow { display:inline-flex; align-items:center; gap:0.5rem; font-size:0.6875rem; font-weight:600; letter-spacing:0.28em; text-transform:uppercase; color:#ff8a4a; }
+    .eyebrow::before,.eyebrow::after { content:""; width:24px; height:1px; background:linear-gradient(90deg,transparent,#ff6a2e,transparent); }
+
+    /* MARQUEE */
+    .marquee-track { animation:marquee 28s linear infinite; display:flex; gap:2.5rem; width:max-content; white-space:nowrap; }
+
+    /* SILVER CHIPS */
+    .chip { position:absolute; display:inline-flex; align-items:center; gap:0.5rem; padding:0.625rem 0.875rem; border-radius:12px; background:radial-gradient(120% 100% at 0% 0%,#fff 0%,#f4f1f7 45%,#d9d4e1 100%); border:1px solid rgba(255,255,255,0.88); box-shadow:0 20px 40px -18px rgba(0,0,0,0.6),0 1px 0 rgba(255,255,255,0.9) inset,0 0 0 1px rgba(138,133,148,0.14); color:#1c1c1c; font-size:0.75rem; font-weight:600; pointer-events:none; z-index:5; white-space:nowrap; }
+    .chip .dot { width:6px; height:6px; border-radius:9999px; background:#fb4604; box-shadow:0 0 8px rgba(251,70,4,0.65); flex-shrink:0; }
+    .chip strong { color:#fb4604; }
+    .chip-a { animation:chip-float-a 5.5s ease-in-out infinite; }
+    .chip-b { animation:chip-float-b 6.5s ease-in-out infinite 0.8s; }
+    .chip-c { animation:chip-float-c 7s ease-in-out infinite 1.5s; }
+    .chip-d { animation:chip-float-d 6s ease-in-out infinite 2.2s; }
+    @media(max-width:1023px){.chip{display:none;}}
+
+    /* SILVER TOPIC CARDS */
+    .card-silver { border-radius:20px; padding:1.75rem; background:radial-gradient(120% 100% at 0% 0%,#ffffff 0%,#f4f1f7 45%,#d9d4e1 100%); border:1px solid rgba(255,255,255,0.88); box-shadow:0 32px 64px -28px rgba(0,0,0,0.5),0 1px 0 rgba(255,255,255,0.9) inset; transition:transform 0.4s cubic-bezier(0.22,1,0.36,1),box-shadow 0.4s; }
+    .card-silver:hover { transform:translateY(-4px); box-shadow:0 40px 72px -28px rgba(0,0,0,0.6),0 1px 0 rgba(255,255,255,0.9) inset; }
+
+    /* SECTIONS */
+    .section { padding:5rem 0; }
+    .section-sm { padding:3.5rem 0; }
+    .container { max-width:72rem; margin:0 auto; padding:0 1.25rem; }
+    @media(min-width:768px){ .container { padding:0 1.5rem; } }
+
+    /* CARDS */
+    .card-dark { border:1px solid rgba(249,249,249,0.12); background:radial-gradient(110% 80% at 0% 0%,rgba(251,70,4,0.08) 0%,transparent 55%),linear-gradient(180deg,#1a1a1a 0%,#111 100%); border-radius:20px; padding:1.75rem; box-shadow:0 32px 64px -32px rgba(0,0,0,0.9),0 1px 0 rgba(255,255,255,0.04) inset; transition:border-color 0.3s,transform 0.3s cubic-bezier(0.22,1,0.36,1); }
+    .card-dark:hover { border-color:rgba(251,70,4,0.45); transform:translateY(-3px); }
+    .card-paper { border:1px solid rgba(19,19,19,0.1); background:#fff; border-radius:20px; padding:1.75rem 2rem; box-shadow:0 32px 56px -24px rgba(19,19,19,0.2),0 1px 0 rgba(255,255,255,0.7) inset; transition:transform 0.4s cubic-bezier(0.22,1,0.36,1),border-color 0.4s,box-shadow 0.4s; }
+    .card-paper:hover { transform:translateY(-4px); border-color:rgba(251,70,4,0.25); }
+    .stat-card { border-radius:20px; padding:2.5rem 1.5rem; text-align:center; background:radial-gradient(120% 100% at 0% 0%,#fff 0%,#f4f1f7 45%,#d9d4e1 100%); border:1px solid rgba(255,255,255,0.88); box-shadow:0 32px 64px -28px rgba(0,0,0,0.5),0 1px 0 rgba(255,255,255,0.9) inset,0 0 0 1px rgba(138,133,148,0.12); transition:transform 0.4s cubic-bezier(0.22,1,0.36,1); }
+    .stat-card:hover { transform:translateY(-4px); }
+
+    /* HIGHLIGHT */
+    .hl { display:inline; padding:0.12em 0.28em; color:#fff; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.3' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.2 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.6'/></svg>"),linear-gradient(180deg,#ff6a2e 0%,#fb4604 55%,#c9370a 100%); background-size:160px 160px,100% 100%; background-blend-mode:overlay,normal; border-radius:3px; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+
+    /* FORM */
+    .form-input { width:100%; padding:1rem 1.125rem; background:rgba(0,0,0,0.03); border:1px solid rgba(0,0,0,0.09); border-radius:12px; font-family:'Onest',sans-serif; font-size:0.9375rem; font-weight:500; color:#1c1c1c; outline:none; transition:border-color 0.2s,background 0.2s; }
+    .form-input::placeholder { color:#7a7a7a; }
+    .form-input:focus { border-color:#fb4604; background:rgba(255,255,255,0.55); }
+    .form-input:disabled { opacity:0.5; }
+
+    /* STICKY CTA */
+    #sticky { position:fixed; bottom:0; left:0; right:0; z-index:200; background:rgba(8,8,8,0.94); backdrop-filter:blur(14px); border-top:1px solid rgba(255,255,255,0.08); padding:0.75rem 1.25rem; transform:translateY(100%); opacity:0; transition:transform 0.3s ease,opacity 0.3s ease; pointer-events:none; }
+    #sticky.show { transform:none; opacity:1; pointer-events:auto; }
+
+    /* REVEAL */
+    .reveal { opacity:0; transform:translateY(24px); transition:opacity 0.65s cubic-bezier(0.22,1,0.36,1),transform 0.65s cubic-bezier(0.22,1,0.36,1); }
+    .reveal.visible { opacity:1; transform:none; }
+
+    /* BG */
+    .bg-ink { background:#1c1c1c; }
+    .bg-dark { background:#0a0a0a; }
+    .bg-paper { background:#fafafa; color:#1c1c1c; }
+    .border-section { border-top:1px solid rgba(249,249,249,0.07); }
+    .bg-paper .border-section { border-top-color:rgba(0,0,0,0.08); }
+
+    /* HERO GRID */
+    .hero-grid { display:flex; flex-direction:column; gap:3rem; }
+    @media(min-width:1024px){ .hero-grid { display:grid; grid-template-columns:1.25fr 0.9fr; gap:3.5rem; align-items:center; } }
+
+    /* STATS GRID */
+    .stats-grid { display:grid; grid-template-columns:1fr; gap:1rem; }
+    @media(min-width:480px){ .stats-grid { grid-template-columns:repeat(3,1fr); } }
+
+    /* TOPICS GRID */
+    .topics-grid { display:grid; grid-template-columns:1fr; gap:1rem; }
+    @media(min-width:600px){ .topics-grid { grid-template-columns:repeat(2,1fr); } }
+    @media(min-width:900px){ .topics-grid { grid-template-columns:repeat(3,1fr); } }
+
+    /* AUDIENCE GRID */
+    .audience-grid { display:grid; grid-template-columns:1fr; gap:1.25rem; }
+    @media(min-width:640px){ .audience-grid { grid-template-columns:repeat(3,1fr); } }
+
+    /* BOOK */
+    .book-float { animation:book-float 6s ease-in-out infinite; filter:drop-shadow(0 32px 40px rgba(0,0,0,0.6)) drop-shadow(0 0 48px rgba(251,70,4,0.18)); }
+    .book-wrap { display:flex; align-items:center; justify-content:center; min-height:360px; }
+    @media(min-width:1024px){ .book-wrap { min-height:440px; } }
+
+    /* HERO BTNS */
+    .hero-btns { display:flex; flex-direction:column; gap:0.875rem; }
+    @media(min-width:480px){ .hero-btns { flex-direction:row; flex-wrap:wrap; } }
+    .hero-btns .btn, .hero-btns .btn-ghost { flex:1; min-width:200px; }
+  </style>
+</head>
+
+<body class="grain">
+
+  <!-- STICKY CTA -->
+  <div id="sticky">
+    <div style="max-width:420px; margin:0 auto; display:flex; justify-content:center;">
+      <a href="#form" class="btn btn--lg" style="width:100%;">
+        Scarica l'Ebook Gratis <i data-lucide="arrow-down" style="width:1rem;height:1rem;"></i>
+      </a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ── HERO ──────────────────────────────────────────── -->
+    <section class="bg-ink" id="hero">
+      <!-- Marquee -->
+      <div style="border-bottom:1px solid rgba(255,255,255,0.08); overflow:hidden; padding:0.75rem 0;">
+        <div class="marquee-track" style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.2em; font-weight:600; color:rgba(232,227,239,0.85);">
+          <span style="display:flex;align-items:center;gap:2.5rem;">
+            <span>Claude Code Mastery</span><span style="color:#fb4604;">✦</span>
+            <span>206 Pagine · Gratis</span><span style="color:#fb4604;">✦</span>
+            <span>Manuale Operativo</span><span style="color:#fb4604;">✦</span>
+            <span>Digital Empire</span><span style="color:#fb4604;">✦</span>
+          </span>
+          <span style="display:flex;align-items:center;gap:2.5rem;">
+            <span>Claude Code Mastery</span><span style="color:#fb4604;">✦</span>
+            <span>206 Pagine · Gratis</span><span style="color:#fb4604;">✦</span>
+            <span>Manuale Operativo</span><span style="color:#fb4604;">✦</span>
+            <span>Digital Empire</span><span style="color:#fb4604;">✦</span>
+          </span>
+          <span style="display:flex;align-items:center;gap:2.5rem;">
+            <span>Claude Code Mastery</span><span style="color:#fb4604;">✦</span>
+            <span>206 Pagine · Gratis</span><span style="color:#fb4604;">✦</span>
+            <span>Manuale Operativo</span><span style="color:#fb4604;">✦</span>
+            <span>Digital Empire</span><span style="color:#fb4604;">✦</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="container" style="padding-top:3.5rem; padding-bottom:4.5rem;">
+
+        <div class="hero-grid">
+          <!-- Copy -->
+          <div>
+            <div class="reveal" style="margin-bottom:1.5rem;">
+              <span class="pill-o"><i data-lucide="book-open" style="width:0.8rem;height:0.8rem;"></i> Ebook Gratuito · Edizione 2026</span>
+            </div>
+            <div class="eyebrow reveal" style="transition-delay:0.04s; margin-bottom:1rem;">Claude Code Mastery</div>
+            <h1 class="reveal" style="transition-delay:0.09s; font-size:clamp(2.25rem,6vw,4rem); margin-bottom:1.5rem;">
+              <span class="grad-white">Il manuale di 206 pagine</span><br>
+              <span class="grad-orange">che ti rende padrone<br>di Claude Code.</span>
+            </h1>
+            <p class="reveal" style="transition-delay:0.16s; font-size:1.0625rem; color:rgba(255,255,255,0.68); max-width:34rem; margin-bottom:2rem; line-height:1.78; font-weight:300;">
+              Una <strong style="color:#ff8a4a;font-weight:600;">guida completa e pratica</strong> che copre ogni concetto che conta di Claude Code. Dall'installazione al controllo totale di sub-agent, hook, skill e MCP. <span class="hl">Zero fumo, solo operatività.</span>
+            </p>
+            <ul class="reveal" style="transition-delay:0.22s; display:flex; flex-direction:column; gap:0.625rem; margin-bottom:2rem; max-width:34rem;">
+              <li style="display:flex;gap:0.875rem;align-items:flex-start;font-size:0.9375rem;color:rgba(255,255,255,0.78);font-weight:300;">
+                <div style="width:1.25rem;height:1.25rem;flex-shrink:0;border-radius:5px;background:rgba(251,70,4,0.12);border:1px solid rgba(251,70,4,0.45);display:flex;align-items:center;justify-content:center;margin-top:0.12rem;"><i data-lucide="check" style="width:0.7rem;height:0.7rem;color:#ff6a2e;"></i></div>
+                <span>206 pagine di formazione densa, senza riempitivi.</span>
+              </li>
+              <li style="display:flex;gap:0.875rem;align-items:flex-start;font-size:0.9375rem;color:rgba(255,255,255,0.78);font-weight:300;">
+                <div style="width:1.25rem;height:1.25rem;flex-shrink:0;border-radius:5px;background:rgba(251,70,4,0.12);border:1px solid rgba(251,70,4,0.45);display:flex;align-items:center;justify-content:center;margin-top:0.12rem;"><i data-lucide="check" style="width:0.7rem;height:0.7rem;color:#ff6a2e;"></i></div>
+                <span>Ogni concetto che conta: agent, hook, skill, MCP, slash command.</span>
+              </li>
+              <li style="display:flex;gap:0.875rem;align-items:flex-start;font-size:0.9375rem;color:rgba(255,255,255,0.78);font-weight:300;">
+                <div style="width:1.25rem;height:1.25rem;flex-shrink:0;border-radius:5px;background:rgba(251,70,4,0.12);border:1px solid rgba(251,70,4,0.45);display:flex;align-items:center;justify-content:center;margin-top:0.12rem;"><i data-lucide="check" style="width:0.7rem;height:0.7rem;color:#ff6a2e;"></i></div>
+                <span>Esempi concreti, comandi reali, workflow pronti da replicare.</span>
+              </li>
+              <li style="display:flex;gap:0.875rem;align-items:flex-start;font-size:0.9375rem;color:rgba(255,255,255,0.78);font-weight:300;">
+                <div style="width:1.25rem;height:1.25rem;flex-shrink:0;border-radius:5px;background:rgba(251,70,4,0.12);border:1px solid rgba(251,70,4,0.45);display:flex;align-items:center;justify-content:center;margin-top:0.12rem;"><i data-lucide="check" style="width:0.7rem;height:0.7rem;color:#ff6a2e;"></i></div>
+                <span>100% gratuito. Arriva subito nella tua email.</span>
+              </li>
+            </ul>
+            <div class="hero-btns reveal" style="transition-delay:0.28s;">
+              <a href="#form" class="btn btn--lg">
+                Scarica l'Ebook Gratis <i data-lucide="arrow-down" style="width:1.1rem;height:1.1rem;"></i>
+              </a>
+              <a href="https://formazione-systemarchitect.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+                Scopri il corso <i data-lucide="arrow-up-right" style="width:0.9rem;height:0.9rem;"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Book -->
+          <div class="book-wrap reveal" style="transition-delay:0.32s; position:relative;">
+            <span class="chip chip-a" style="top:8%;left:-5rem;"><span class="dot"></span><strong>206</strong> pagine</span>
+            <span class="chip chip-b" style="top:15%;right:-5rem;"><span class="dot"></span><strong>100%</strong> gratis</span>
+            <span class="chip chip-c" style="bottom:30%;left:-5.5rem;"><span class="dot"></span>Solo <strong>Claude Code</strong></span>
+            <span class="chip chip-d" style="bottom:10%;right:-5rem;"><span class="dot"></span>Edizione <strong>2026</strong></span>
+            <div style="position:relative;">
+              <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(251,70,4,0.2) 0%,transparent 65%);pointer-events:none;"></div>
+              <div class="book-float">
+                <div style="width:clamp(220px,28vw,300px);height:clamp(310px,40vw,420px);border-radius:6px;overflow:hidden;background:linear-gradient(135deg,#0f0f0f 0%,#1c1c1c 40%,#2a2a2a 100%);border:1px solid rgba(255,255,255,0.13);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.04),inset -2px 0 5px rgba(0,0,0,0.5);">
+                  <div style="position:absolute;left:0;top:0;bottom:0;width:10px;background:linear-gradient(to right,rgba(0,0,0,0.65),transparent);"></div>
+                  <div style="position:relative;z-index:1;display:flex;flex-direction:column;justify-content:space-between;height:100%;padding:1.75rem;">
+                    <div>
+                      <div style="font-size:0.575rem;text-transform:uppercase;letter-spacing:0.3em;color:rgba(255,255,255,0.45);font-weight:600;margin-bottom:0.875rem;">Digital Empire</div>
+                      <div style="width:2rem;height:2px;background:#fb4604;margin-bottom:1.25rem;"></div>
+                      <h3 style="font-size:clamp(1.75rem,4vw,2.25rem);font-weight:900;line-height:1.05;margin-bottom:0.5rem;">
+                        <span class="grad-white">Claude<br>Code<br></span><span class="grad-orange" style="font-style:italic;">Mastery</span>
+                      </h3>
+                    </div>
+                    <div>
+                      <div style="font-size:0.6rem;text-transform:uppercase;letter-spacing:0.2em;color:rgba(255,255,255,0.38);font-weight:600;margin-bottom:0.2rem;">Manuale Pratico</div>
+                      <div style="font-size:0.75rem;color:rgba(255,255,255,0.55);font-weight:500;">206 pagine · Edizione 2026</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS ──────────────────────────────────────────── -->
+    <section class="bg-ink section">
+      <div class="container">
+        <div class="reveal" style="text-align:center; margin-bottom:3rem;">
+          <span class="pill-s" style="margin-bottom:1.5rem;">Cosa contiene</span>
+          <h2 style="font-size:clamp(1.75rem,4vw,3rem); margin-top:1.25rem;">
+            <span class="grad-white">Un manuale serio,</span><br>
+            <span style="color:#fb4604;font-style:italic;font-weight:500;">scritto da chi usa Claude Code ogni giorno.</span>
+          </h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card reveal"><div id="c206" style="font-size:3.25rem;font-weight:700;color:#fb4604;line-height:1;">0</div><div style="margin-top:0.875rem;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.2em;color:#5a5560;font-weight:600;">Pagine operative</div></div>
+          <div class="stat-card reveal" style="transition-delay:0.08s;"><div id="c12" style="font-size:3.25rem;font-weight:700;color:#fb4604;line-height:1;">0+</div><div style="margin-top:0.875rem;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.2em;color:#5a5560;font-weight:600;">Macro-argomenti</div></div>
+          <div class="stat-card reveal" style="transition-delay:0.16s;"><div style="font-size:3.25rem;font-weight:700;color:#fb4604;line-height:1;">0€</div><div style="margin-top:0.875rem;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.2em;color:#5a5560;font-weight:600;">Il tuo investimento</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TOPICS ─────────────────────────────────────────── -->
+    <section class="bg-ink section border-section">
+      <div class="container">
+        <div class="reveal" style="text-align:center; margin-bottom:3rem;">
+          <span class="pill-o" style="margin-bottom:1.25rem;"><i data-lucide="list-checks" style="width:0.8rem;height:0.8rem;"></i> Contenuto</span>
+          <h2 style="font-size:clamp(1.75rem,4vw,3rem); margin-top:1.25rem; margin-bottom:1rem;">
+            <span class="grad-white">Tutto quello che conta</span><br>
+            <span class="grad-orange">su Claude Code. In un solo ebook.</span>
+          </h2>
+          <p style="color:rgba(255,255,255,0.6);font-size:1rem;max-width:38rem;margin:0 auto;font-weight:300;line-height:1.75;">
+            Il manuale è costruito <strong style="color:#ff8a4a;font-weight:600;">pagina dopo pagina</strong> per portarti dal setup alla padronanza totale dei sistemi agentici più avanzati.
+          </p>
+        </div>
+        <div class="topics-grid" id="topics"></div>
+      </div>
+    </section>
+
+    <!-- ── PER CHI È ──────────────────────────────────────── -->
+    <section class="bg-paper section border-section">
+      <div class="container">
+        <div class="reveal" style="text-align:center; margin-bottom:3rem;">
+          <span class="pill-dark" style="margin-bottom:1.25rem;"><i data-lucide="target" style="width:0.8rem;height:0.8rem;"></i> Per chi è</span>
+          <h2 style="font-size:clamp(1.75rem,4vw,3rem); margin-top:1.25rem;">
+            <span class="grad-black">È scritto per te</span><br>
+            <span style="color:#fb4604;font-style:italic;font-weight:500;">se vuoi fare sul serio con l'AI.</span>
+          </h2>
+        </div>
+        <div class="audience-grid" id="audience"></div>
+      </div>
+    </section>
+
+    <!-- ── CORSO CTA ──────────────────────────────────────── -->
+    <section class="bg-dark section border-section">
+      <div class="container" style="max-width:56rem;">
+        <div class="reveal">
+          <div class="card-dark" style="position:relative;overflow:hidden;padding:2rem;">
+            <div style="position:absolute;inset:0;background:radial-gradient(ellipse at top right,rgba(251,70,4,0.16) 0%,transparent 58%);pointer-events:none;"></div>
+            <div style="position:relative;z-index:1;display:flex;flex-direction:column;gap:1.5rem;align-items:flex-start;">
+              <div>
+                <span class="pill-s" style="margin-bottom:1rem;font-size:0.75rem;">PERCORSO AVANZATO</span>
+                <h3 class="grad-white" style="font-size:clamp(1.375rem,3vw,1.875rem);margin-top:0.875rem;margin-bottom:0.75rem;">Vuoi già andare oltre l'ebook?</h3>
+                <p style="color:rgba(255,255,255,0.65);font-weight:300;line-height:1.72;font-size:0.9375rem;">
+                  Il corso <strong style="color:#ff8a4a;font-weight:600;">Da AI User a System Architect</strong> è il percorso completo: architetture deterministiche, sistemi agentici reali, workflow aziendali.
+                </p>
+              </div>
+              <a href="https://formazione-systemarchitect.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+                Scopri il corso <i data-lucide="arrow-up-right" style="width:0.9rem;height:0.9rem;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FORM ───────────────────────────────────────────── -->
+    <section id="form" class="bg-dark section border-section">
+      <div class="container" style="max-width:34rem;">
+        <div class="reveal" style="text-align:center; margin-bottom:2.5rem;">
+          <span class="pill-o" style="margin-bottom:1.5rem;"><i data-lucide="download" style="width:0.8rem;height:0.8rem;"></i> Accesso gratuito</span>
+          <h2 style="font-size:clamp(2rem,5vw,3rem); margin-top:1.25rem; margin-bottom:0.875rem;">
+            <span class="grad-white">Ottieni subito</span><br>
+            <span class="grad-orange">Claude Code Mastery</span>
+          </h2>
+          <p style="color:rgba(255,255,255,0.55);font-size:1rem;font-weight:300;line-height:1.7;">
+            Inserisci nome e email. Riceverai l'ebook <strong style="color:#ff8a4a;font-weight:600;">entro pochi minuti</strong> nella tua casella di posta.
+          </p>
+        </div>
+        <div class="stat-card reveal" style="transition-delay:0.1s;padding:2rem 1.5rem;text-align:left;">
+          <h3 style="font-size:0.6875rem;font-weight:700;color:#4a4a4a;margin-bottom:1.5rem;text-transform:uppercase;letter-spacing:0.22em;text-align:center;">SCARICA IL PDF GRATUITO</h3>
+          <form id="brevo-form" style="display:flex;flex-direction:column;gap:0.875rem;">
+            <input type="text" id="nome" class="form-input" placeholder="il tuo nome" required>
+            <input type="email" id="email" class="form-input" placeholder="la tua email migliore" required>
+            <button type="submit" id="sub-btn" class="btn btn--lg" style="width:100%;">
+              scarica ora l'ebook <i data-lucide="arrow-right" style="width:0.9rem;height:0.9rem;"></i>
+            </button>
+            <p id="form-msg" style="text-align:center;font-size:0.875rem;font-weight:600;min-height:1.25em;"></p>
+            <p style="text-align:center;font-size:0.8125rem;color:#6a6a6a;font-weight:500;">niente spam. cancellati quando vuoi.</p>
+            <a href="https://formazione-systemarchitect.netlify.app/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:space-between;padding:0.875rem 1rem;border-radius:11px;background:rgba(0,0,0,0.04);border:1px solid rgba(0,0,0,0.09);color:#1c1c1c;transition:background 0.2s;">
+              <div>
+                <p style="font-weight:700;font-size:0.875rem;">Oppure scopri il corso completo</p>
+                <p style="font-size:0.6rem;text-transform:uppercase;letter-spacing:0.18em;font-weight:700;color:#5a5a5a;margin-top:0.2rem;">DA AI USER A SYSTEM ARCHITECT</p>
+              </div>
+              <i data-lucide="arrow-up-right" style="width:1rem;height:1rem;color:#5a5a5a;flex-shrink:0;"></i>
+            </a>
+          </form>
+          <div style="margin-top:1.25rem;display:flex;justify-content:center;">
+            <span style="font-size:0.75rem;font-weight:500;color:#4a4a4a;display:flex;align-items:center;gap:0.375rem;">
+              <i data-lucide="shield" style="width:0.875rem;height:0.875rem;"></i> i tuoi dati sono protetti
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="background:#0a0a0a;padding:2.5rem 1.5rem;text-align:center;color:rgba(255,255,255,0.25);font-size:0.6875rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:500;border-top:1px solid rgba(255,255,255,0.05);">
+      © 2026 Digital Empire Labs
+    </footer>
+  </main>
+
+  <script>
+    const TOPICS = [
+      {icon:'terminal',t:'Setup & Installazione',b:'Configurazione ottimale, autenticazione, modelli disponibili, IDE integration.'},
+      {icon:'square-slash',t:'Slash Command & Skill',b:'Creazione, struttura e attivazione dei comandi custom. Skill modulari che si auto-invocano.'},
+      {icon:'users',t:'Sub-Agent & Orchestration',b:'Delega intelligente, agent specializzati, gestione del contesto in parallelo.'},
+      {icon:'webhook',t:'Hook di sistema',b:'Automazioni deterministiche agganciate a eventi reali: before/after tool, stop.'},
+      {icon:'plug-zap',t:'MCP Server',b:'Collegamento a tool esterni reali, database, API, filesystem remoti.'},
+      {icon:'file-code-2',t:'CLAUDE.md & Memory',b:'Il file che definisce l\'identità operativa di Claude. Memory persistente, policy.'},
+      {icon:'settings-2',t:'Settings & Permessi',b:'Configurazione di settings.json, gestione tool permessi, env var, sicurezza.'},
+      {icon:'git-branch',t:'Workflow Git & PR',b:'Dal commit pulito alla review di una pull request. Claude come reviewer senior.'},
+      {icon:'gauge',t:'Performance & Context',b:'Gestione del context window, caching, compaction, parallel tool use.'},
+    ];
+    const AUDIENCE = [
+      {icon:'code-2',t:'Sviluppatori',b:'Che vogliono portare Claude Code nel proprio flusso quotidiano e smettere di usare AI come copia-incolla.'},
+      {icon:'briefcase',t:'Founder & Solopreneur',b:'Che costruiscono prodotti digitali e vogliono moltiplicare la propria capacità operativa.'},
+      {icon:'layers',t:'Team tecnici',b:'Che vogliono standardizzare l\'uso di Claude Code con skill, hook e CLAUDE.md condivisi.'},
+    ];
+
+    // Build topics
+    const tg = document.getElementById('topics');
+    TOPICS.forEach((t,i) => {
+      tg.innerHTML += `<div class="card-silver reveal" style="transition-delay:${(i%3)*0.07}s;">
+        <div style="width:2.75rem;height:2.75rem;border-radius:11px;background:rgba(251,70,4,0.1);border:1px solid rgba(251,70,4,0.28);display:flex;align-items:center;justify-content:center;margin-bottom:1.125rem;">
+          <i data-lucide="${t.icon}" style="width:1.1rem;height:1.1rem;color:#fb4604;"></i>
+        </div>
+        <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;color:#1c1c1c;">${t.t}</h3>
+        <p style="color:#3a3a3a;font-size:0.9rem;line-height:1.65;font-weight:300;">${t.b}</p>
+      </div>`;
+    });
+
+    // Build audience
+    const ag = document.getElementById('audience');
+    AUDIENCE.forEach((a,i) => {
+      ag.innerHTML += `<div class="card-paper reveal" style="transition-delay:${i*0.09}s;">
+        <div style="width:3rem;height:3rem;border-radius:12px;background:rgba(251,70,4,0.09);border:1px solid rgba(251,70,4,0.28);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+          <i data-lucide="${a.icon}" style="width:1.2rem;height:1.2rem;color:#fb4604;"></i>
+        </div>
+        <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;color:#1c1c1c;">${a.t}</h3>
+        <p style="color:#3a3a3a;font-size:0.9rem;line-height:1.65;">${a.b}</p>
+      </div>`;
+    });
+
+    lucide.createIcons();
+
+    // Reveal
+    const obs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);} }), {threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // CountUp
+    function countUp(el, target, suffix) {
+      const dur = 1400, t0 = performance.now();
+      const step = now => {
+        const p = Math.min((now-t0)/dur,1), ease = 1-Math.pow(1-p,3);
+        el.textContent = Math.round(ease*target)+(suffix||'');
+        if(p<1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }
+    const co = new IntersectionObserver(es => es.forEach(e => {
+      if(e.isIntersecting){
+        if(e.target.id==='c206') countUp(e.target,206,'');
+        if(e.target.id==='c12')  countUp(e.target,12,'+');
+        co.unobserve(e.target);
+      }
+    }), {threshold:0.5});
+    document.querySelectorAll('#c206,#c12').forEach(el => co.observe(el));
+
+    // Sticky CTA
+    const sticky = document.getElementById('sticky');
+    window.addEventListener('scroll', () => {
+      sticky.classList.toggle('show', document.getElementById('hero').getBoundingClientRect().bottom < 0);
+    }, {passive:true});
+
+    // Brevo form
+    const API_KEY='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', LIST_ID=3;
+    const msg = document.getElementById('form-msg'), sbtn = document.getElementById('sub-btn');
+    document.getElementById('brevo-form').addEventListener('submit', async e => {
+      e.preventDefault();
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if(!nome){msg.textContent='inserisci il tuo nome.';msg.style.color='#dc2626';return;}
+      if(!email||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){msg.textContent='email non valida.';msg.style.color='#dc2626';return;}
+      sbtn.disabled=true; msg.textContent='invio in corso...'; msg.style.color='#888';
+      try {
+        const r = await fetch('https://api.brevo.com/v3/contacts',{
+          method:'POST', headers:{Accept:'application/json','Content-Type':'application/json','api-key':API_KEY},
+          body:JSON.stringify({email,attributes:{FIRSTNAME:nome,SELECTED_GUIDE:'Claude Code Mastery'},listIds:[LIST_ID],updateEnabled:true})
+        });
+        if(r.ok||r.status===204){
+          try{localStorage.setItem('ccm_offer_start',String(Date.now()));}catch{}
+          window.location.href='/thank-you';
+        } else { msg.textContent='errore. riprova.'; msg.style.color='#dc2626'; sbtn.disabled=false; }
+      } catch { msg.textContent='errore di connessione. riprova.'; msg.style.color='#dc2626'; sbtn.disabled=false; }
+    });
+  </script>
+</body>
+</html>

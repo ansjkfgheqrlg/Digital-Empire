@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="it" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Code Mastery · Masterclass Pratica | Digital Empire</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'Onest',sans-serif; background:#0a0a0a; color:#f9f9f9; -webkit-font-smoothing:antialiased; line-height:1.6; }
+    h1,h2,h3,h4 { letter-spacing:-0.025em; line-height:1.08; font-weight:700; }
+    ::selection { background:#fb4604; color:#fff; }
+    a { text-decoration:none; color:inherit; }
+
+    /* GRAIN */
+    .grain::before { content:""; position:fixed; inset:-50%; pointer-events:none; z-index:100; opacity:0.5; mix-blend-mode:overlay; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+    .grain::after { content:""; position:fixed; inset:-50%; pointer-events:none; z-index:101; opacity:0.25; mix-blend-mode:hard-light; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='2.1' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.3 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+
+    /* GRADIENTS */
+    .grad-orange { background:linear-gradient(135deg,#fff 0%,#d9d4e1 20%,#fb4604 55%,#ff8a4a 78%,#fff 100%); background-size:200% 200%; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+    .grad-white { background:linear-gradient(180deg,#fff 0%,#e8e3ef 35%,#b5afbd 72%,#8a8594 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+
+    /* BUTTONS */
+    @keyframes pulseGlow { 0%,100%{box-shadow:0 0 28px rgba(251,70,4,0.35),inset 0 1px 0 rgba(255,255,255,0.35);}50%{box-shadow:0 0 52px rgba(251,70,4,0.65),inset 0 1px 0 rgba(255,255,255,0.45);} }
+    @keyframes sheen { 0%{transform:translateX(-160%) skewX(-25deg);}100%{transform:translateX(160%) skewX(-25deg);} }
+    .btn { position:relative; overflow:hidden; display:inline-flex; align-items:center; justify-content:center; gap:0.6rem; padding:1rem 1.75rem; border-radius:13px; font-family:'Onest',sans-serif; font-weight:700; font-size:0.9375rem; color:#fff; background:linear-gradient(135deg,#ff6a2e 0%,#fb4604 50%,#d83c03 100%); border:1px solid rgba(255,255,255,0.22); animation:pulseGlow 2.8s infinite ease-in-out; transition:transform 0.25s cubic-bezier(0.175,0.885,0.32,1.275); cursor:pointer; }
+    .btn::before { content:""; position:absolute; inset:0; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.35),transparent); transform:translateX(-160%) skewX(-25deg); transition:transform 0.5s; }
+    .btn:hover { transform:translateY(-2px) scale(1.02); }
+    .btn:hover::before { animation:sheen 0.6s forwards; }
+    .btn-outline { display:inline-flex; align-items:center; justify-content:center; gap:0.5rem; padding:0.875rem 1.5rem; border-radius:12px; font-family:'Onest',sans-serif; font-weight:500; font-size:0.875rem; color:rgba(249,249,249,0.82); background:transparent; border:1.5px solid rgba(255,255,255,0.18); transition:border-color 0.2s,background 0.2s; }
+    .btn-outline:hover { border-color:rgba(255,255,255,0.35); background:rgba(255,255,255,0.04); color:#fff; }
+
+    /* PILLS */
+    .pill-o { background:linear-gradient(135deg,#fb4604,#ff6a2e); color:#fff; border-radius:9999px; padding:0.375rem 1rem; font-size:0.8125rem; font-weight:600; display:inline-flex; align-items:center; gap:0.375rem; box-shadow:0 6px 18px -8px rgba(251,70,4,0.65); }
+    .pill-s { background:linear-gradient(135deg,#fff 0%,#d9d4e1 50%,#8a8594 100%); color:#1c1c1c; border-radius:9999px; padding:0.375rem 1rem; font-size:0.8125rem; font-weight:600; display:inline-flex; align-items:center; gap:0.375rem; }
+
+    /* EYEBROW */
+    .eyebrow { display:inline-flex; align-items:center; gap:0.5rem; font-size:0.6875rem; font-weight:600; letter-spacing:0.28em; text-transform:uppercase; color:#ff8a4a; }
+    .eyebrow::before,.eyebrow::after { content:""; width:22px; height:1px; background:linear-gradient(90deg,transparent,#ff6a2e,transparent); }
+
+    /* CARDS */
+    .card { border:1px solid rgba(249,249,249,0.11); background:radial-gradient(110% 80% at 0% 0%,rgba(251,70,4,0.07) 0%,transparent 55%),linear-gradient(180deg,#191919 0%,#101010 100%); border-radius:18px; padding:1.5rem; box-shadow:0 28px 56px -28px rgba(0,0,0,0.9),0 1px 0 rgba(255,255,255,0.04) inset; transition:border-color 0.3s,transform 0.3s cubic-bezier(0.22,1,0.36,1); }
+    .card:hover { border-color:rgba(251,70,4,0.4); transform:translateY(-2px); }
+
+    /* HIGHLIGHT */
+    .hl { display:inline; padding:0.1em 0.25em; color:#fff; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.3' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.2 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.6'/></svg>"),linear-gradient(180deg,#ff6a2e 0%,#fb4604 55%,#c9370a 100%); background-size:160px 160px,100% 100%; background-blend-mode:overlay,normal; border-radius:3px; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+
+    /* REVEAL */
+    .reveal { opacity:0; transform:translateY(24px); transition:opacity 0.65s cubic-bezier(0.22,1,0.36,1),transform 0.65s cubic-bezier(0.22,1,0.36,1); }
+    .reveal.visible { opacity:1; transform:none; }
+
+    /* LAYOUT */
+    .container { max-width:60rem; margin:0 auto; padding:0 1.25rem; }
+    @media(min-width:768px){ .container { padding:0 1.5rem; } }
+    .section { padding:3.5rem 0; }
+    @media(min-width:768px){ .section { padding:5rem 0; } }
+
+    /* MODULES GRID */
+    .modules-grid { display:grid; grid-template-columns:1fr; gap:0.875rem; }
+    @media(min-width:560px){ .modules-grid { grid-template-columns:repeat(2,1fr); } }
+    @media(min-width:840px){ .modules-grid { grid-template-columns:repeat(3,1fr); } }
+
+    /* CALL GRID */
+    .call-grid { display:flex; flex-direction:column; gap:1.5rem; }
+    @media(min-width:768px){ .call-grid { flex-direction:row; align-items:center; justify-content:space-between; gap:2rem; } }
+
+    /* CTA BUTTONS */
+    .cta-btns { display:flex; flex-direction:column; gap:0.625rem; width:100%; }
+    @media(min-width:768px){ .cta-btns { width:auto; min-width:220px; } }
+    .cta-btns .btn, .cta-btns .btn-outline { width:100%; }
+  </style>
+</head>
+
+<body class="grain">
+<main>
+
+  <!-- ── AVAILABILITY NOTICE ──────────────────────────── -->
+  <div style="background:rgba(251,70,4,0.09);border-bottom:1px solid rgba(251,70,4,0.2);padding:0.875rem 1.25rem;">
+    <div style="max-width:60rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:0.625rem;text-align:center;flex-wrap:wrap;">
+      <i data-lucide="calendar-clock" style="width:0.9rem;height:0.9rem;color:#ff6a2e;flex-shrink:0;"></i>
+      <p style="font-size:0.875rem;color:rgba(255,255,255,0.78);font-weight:500;">
+        La masterclass sarà disponibile dal <strong style="color:#ff8a4a;">29 aprile 2026</strong> · riceverai accesso via email.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── HERO ──────────────────────────────────────────── -->
+  <section class="section container" style="text-align:center; padding-bottom:0;">
+    <div class="reveal" style="margin-bottom:1.5rem;">
+      <span class="pill-o"><i data-lucide="key-round" style="width:0.8rem;height:0.8rem;"></i> Accesso Confermato</span>
+    </div>
+    <div class="eyebrow reveal" style="transition-delay:0.05s; margin-bottom:1rem;">Claude Code Mastery · Masterclass</div>
+    <h1 class="reveal" style="transition-delay:0.1s; font-size:clamp(2rem,6vw,3.5rem); margin-bottom:1.25rem;">
+      <span class="grad-white">Benvenuto nella</span><br>
+      <span class="grad-orange">Masterclass Pratica.</span>
+    </h1>
+    <p class="reveal" style="transition-delay:0.15s; color:rgba(255,255,255,0.62); font-size:1.0625rem; max-width:36rem; margin:0 auto 1.75rem; font-weight:300; line-height:1.78;">
+      <strong style="color:#ff8a4a;font-weight:600;">3+ ore di formazione applicata</strong> su Claude Code. Ogni capitolo dell'ebook,
+      <span class="hl">mostrato a schermo, step by step</span>.
+    </p>
+    <div class="reveal" style="transition-delay:0.2s; display:inline-flex; align-items:center; gap:0.625rem; padding:0.75rem 1.25rem; border-radius:12px; background:rgba(251,70,4,0.1); border:1px solid rgba(251,70,4,0.28); margin-bottom:2.5rem;">
+      <i data-lucide="calendar" style="width:1rem;height:1rem;color:#ff6a2e;flex-shrink:0;"></i>
+      <span style="font-size:0.9rem; color:rgba(255,255,255,0.8); font-weight:500;">Disponibile dal <strong style="color:#fff;">29 aprile 2026</strong> · accesso via email</span>
+    </div>
+  </section>
+
+  <!-- ── VIDEO ─────────────────────────────────────────── -->
+  <section class="container" style="padding-bottom:4rem;">
+    <div class="reveal" style="transition-delay:0.2s;">
+      <div style="position:relative;width:100%;aspect-ratio:16/9;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);background:radial-gradient(ellipse at center,#1a1a1a 0%,#080808 100%);box-shadow:0 48px 96px -40px rgba(0,0,0,0.98),0 0 0 1px rgba(251,70,4,0.09);">
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(251,70,4,0.09) 0%,transparent 58%);pointer-events:none;"></div>
+        <div style="position:relative;z-index:1;display:flex;align-items:center;justify-content:center;height:100%;text-align:center;padding:1.5rem;">
+          <div>
+            <div style="width:5rem;height:5rem;margin:0 auto;border-radius:9999px;background:rgba(251,70,4,0.18);border:1px solid rgba(251,70,4,0.38);display:flex;align-items:center;justify-content:center;box-shadow:0 0 40px rgba(251,70,4,0.28);">
+              <i data-lucide="play" style="width:1.875rem;height:1.875rem;color:#ff6a2e;margin-left:3px;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MODULES ────────────────────────────────────────── -->
+  <section class="container section" style="padding-top:0;">
+    <div class="reveal" style="text-align:center; margin-bottom:2.5rem;">
+      <span class="pill-s" style="margin-bottom:1rem; font-size:0.75rem;">Contenuto della Masterclass</span>
+      <h2 style="font-size:clamp(1.625rem,4vw,2.5rem); margin-top:1rem;">
+        <span class="grad-white">Ogni capitolo dell'ebook,</span><br>
+        <span class="grad-orange">in pratica a schermo condiviso.</span>
+      </h2>
+    </div>
+    <div class="modules-grid" id="modules"></div>
+  </section>
+
+  <!-- ── DIVIDER ────────────────────────────────────────── -->
+  <div style="max-width:200px; margin:0 auto 3.5rem; display:flex; align-items:center; gap:1rem;">
+    <div style="flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(255,255,255,0.16),transparent);"></div>
+    <i data-lucide="phone-call" style="width:0.875rem;height:0.875rem;color:#ff6a2e;flex-shrink:0;"></i>
+    <div style="flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(255,255,255,0.16),transparent);"></div>
+  </div>
+
+  <!-- ── CALL PROMO ─────────────────────────────────────── -->
+  <section class="container" style="padding-bottom:2rem;">
+    <div class="reveal">
+      <div class="card" style="position:relative;overflow:hidden;padding:2rem;">
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at top right,rgba(251,70,4,0.18) 0%,transparent 58%);pointer-events:none;"></div>
+        <div class="call-grid" style="position:relative;z-index:1;">
+          <div>
+            <span class="pill-s" style="margin-bottom:1rem;font-size:0.75rem;">
+              <i data-lucide="sparkles" style="width:0.75rem;height:0.75rem;"></i> Il prossimo passo
+            </span>
+            <h3 style="font-size:clamp(1.375rem,3vw,1.875rem); margin-top:1rem; margin-bottom:0.875rem;">
+              <span class="grad-white">Pronto a passare da</span><br>
+              <span class="grad-orange">AI User a System Architect?</span>
+            </h3>
+            <p style="color:rgba(255,255,255,0.65);font-weight:300;line-height:1.72;font-size:0.9375rem;">
+              Se la masterclass ti sta aprendo la mente, <strong style="color:#ff8a4a;font-weight:600;">il salto successivo</strong> è il corso completo. Prenota una <strong style="color:#fff;">chiamata strategica gratuita</strong>.
+            </p>
+          </div>
+          <div class="cta-btns">
+            <a href="https://chiamata-formazione.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn">
+              <i data-lucide="calendar-check" style="width:0.9rem;height:0.9rem;"></i>
+              Prenota la chiamata
+            </a>
+            <a href="https://formazione-systemarchitect.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-outline">
+              <i data-lucide="graduation-cap" style="width:0.875rem;height:0.875rem;"></i>
+              Vedi il corso
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATE REMINDER -->
+  <section class="container" style="padding-bottom:4rem; text-align:center;">
+    <div style="max-width:480px; margin:0 auto; padding:1.5rem; border-radius:16px; background:rgba(251,70,4,0.08); border:1px solid rgba(251,70,4,0.2);">
+      <i data-lucide="calendar-check" style="width:1.5rem;height:1.5rem;color:#ff6a2e;margin-bottom:0.75rem;"></i>
+      <p style="color:rgba(255,255,255,0.75); font-size:0.9375rem; line-height:1.7; font-weight:300;">
+        Hai acquistato l'accesso alla masterclass.<br>
+        Sarà disponibile il <strong style="color:#fff;">29 aprile 2026</strong>.<br>
+        <span style="color:rgba(255,255,255,0.5); font-size:0.875rem;">Riceverai il link di accesso via email.</span>
+      </p>
+    </div>
+  </section>
+
+  <footer style="padding:2rem 1.5rem; text-align:center; color:rgba(255,255,255,0.22); font-size:0.6875rem; letter-spacing:0.2em; text-transform:uppercase; font-weight:500; border-top:1px solid rgba(255,255,255,0.05);">
+    © 2026 Digital Empire Labs
+  </footer>
+</main>
+
+<script>
+  const MODULES = [
+    {n:'01',t:'Setup & Prime Mosse',d:'Installazione, configurazione, autenticazione, IDE.'},
+    {n:'02',t:'Slash Command & Skill',d:'Comandi custom e skill modulari in azione.'},
+    {n:'03',t:'Sub-Agent',d:'Delegare lavoro in parallelo con agent specializzati.'},
+    {n:'04',t:'Hook',d:'Automazioni deterministiche su eventi di sessione.'},
+    {n:'05',t:'MCP Server',d:'Collegare Claude a tool esterni e API reali.'},
+    {n:'06',t:'CLAUDE.md & Memory',d:'Identità operativa, memoria persistente, policy.'},
+    {n:'07',t:'Settings & Permessi',d:'settings.json, env var, policy di sicurezza.'},
+    {n:'08',t:'Workflow Git & PR',d:'Commit puliti, review di pull request, reviewer senior.'},
+    {n:'09',t:'Performance & Context',d:'Context window, caching, compaction, parallel tool.'},
+  ];
+  const mg = document.getElementById('modules');
+  MODULES.forEach((m,i) => {
+    mg.innerHTML += `<div class="card reveal" style="transition-delay:${(i%3)*0.07}s;">
+      <div style="font-size:0.625rem;text-transform:uppercase;letter-spacing:0.22em;color:#ff6a2e;font-weight:700;margin-bottom:0.375rem;">Modulo ${m.n}</div>
+      <h3 style="font-size:1.0625rem;font-weight:700;color:#fff;margin-bottom:0.375rem;">${m.t}</h3>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.875rem;font-weight:300;line-height:1.6;">${m.d}</p>
+    </div>`;
+  });
+
+  lucide.createIcons();
+
+  const obs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);} }), {threshold:0.08});
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
