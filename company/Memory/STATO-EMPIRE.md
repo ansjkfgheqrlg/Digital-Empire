@@ -1,3 +1,41 @@
+## 📕 2026-08-25 — CLAUDE: TASK-KDP-W1 CHIUSO — ciclo KDP end-to-end, "The Winter Term" prodotto dal flusso riparato — CP-20260825-002
+
+**Gate soddisfatto.** `python -m engine.kdp pacchetto the-winter-term` esce **0**: manoscritto,
+prompt copertina e copy KDP sono in **una cartella sola**, `LIBRI/libri_pronti/The_Winter_Term/`.
+
+Il libro esiste davvero: **The Winter Term**, dark academia mystery, 24/24 capitoli,
+**39.668 parole, 116 pagine REALI contate sul PDF** (minimo 115), in **43,2 minuti**. Dentro il
+pacchetto: docx, PDF, EPUB, `COPERTINA-PROMPT.md`, `KDP_METADATA.txt` col copy vero, REPORT,
+`validazione.json`.
+
+**Il ciclo non si chiudeva per 3 buchi del motore, tutti chiusi qui:**
+1. **Il copy Amazon non aveva nessun comando.** `salva_copy()` esisteva dal 15 agosto ma nel
+   flusso vivo non lo chiamava nessuno: nei 3 libri precedenti il copy è stato scritto **a mano
+   dentro `progetto.json`**, senza validazione in scrittura (è così che sono passate le lineette
+   nelle descrizioni di due libri già consegnati). Ora c'è `kdp copy <slug> --file copy.json`,
+   che valida **prima** di salvare e rifiuta senza scrivere.
+2. **Senza il .png non nasceva nessuna cartella.** Ora il pacchetto si crea comunque, con un
+   bloccante esplicito "Copertina assente" in `validazione.json` (senza nominarlo, un pacchetto
+   senza immagine sarebbe uscito `pubblicabile: true`: stessa forma del bug "pagine non contate").
+3. **Il prompt copertina non entrava mai nel pacchetto** (nessuno dei 3 pacchetti consegnati ce
+   l'ha). Ora ci entra sempre.
++ `kdp pacchetto <slug>`, verificatore del gate: distingue COMPLETO da CARICABILE SU KDP.
+
+135 test verdi (erano 127), 8 nuovi. `SKILL.md` e `SOP` allineate **nello stesso commit** (la
+divergenza fra documenti è il difetto già pagato il 23 agosto).
+
+**Il gate ha bocciato 2 volte su 7 e aveva ragione tutte e due**: capitoli scritti corti (1.440 e
+1.467 contro 1.600). Corretti su quei blocchi, non a fine libro. E la stima a 320 parole/pagina ha
+di nuovo sbagliato: 120,9 stimate contro **113 reali** alla prima consegna, servito un secondo giro.
+
+**RIPRESA DA (Gael)**: (1) genera il .png dal prompt in `COPERTINA-PROMPT.md`, poi
+`kdp consegna the-winter-term --cover <file.png>` e il libro è pubblicabile; (2) dopo l'upload,
+`kdp pubblicato --asin` — **i 3 libri precedenti sono ancora in `in_lavorazione/` a 24/24 perché
+quel passo non è mai stato fatto, ed è il motivo per cui il "Also by" esce vuoto su tutti**;
+(3) **B-018 va deciso prima del quinto libro**: quattro libri, quattro nicchie, quattro autori.
+
+---
+
 ## 🔄 2026-08-25 — CLAUDE: SYNC monorepo "aggiorna tutto" — 103 file su GitHub + 🔴 chiave Brevo pubblica da ruotare — CP-20260825-001
 
 Richiesta diretta di Max ("aggiorna tutto, git pull, git push"). Tutto il lavoro che stava

@@ -660,3 +660,23 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   `HEAD` dal commit iniziale `57a0ba0b` in 3 file già tracciati. Va **ruotata su Brevo**, non
   solo rimossa dal codice (storia pubblica già indicizzabile). → backlog B-020.
   CP-20260825-001.
+
+## 2026-08-25 (TASK-KDP-W1: il ciclo KDP si chiude end-to-end, quarto libro, Claude)
+- BUILD: chiusi i **tre buchi** che impedivano al flusso KDP di consegnare i suoi tre output
+  insieme. (1) Il copy Amazon non aveva **nessun comando**: `salva_copy()` c'era dal 15/08 ma
+  nel flusso vivo non lo chiamava nessuno, e nei primi tre libri il copy è stato scritto **a
+  mano dentro `progetto.json`** senza validazione (è così che sono passate le lineette lunghe
+  nelle descrizioni di due libri già consegnati). Ora `kdp copy <slug> --file copy.json` valida
+  prima di salvare e rifiuta senza scrivere. (2) La cartella finale nasceva **solo** col .png
+  di copertina: ora nasce comunque, con bloccante esplicito "Copertina assente" in
+  `validazione.json`. (3) `COPERTINA-PROMPT.md` ora entra sempre nel pacchetto. Nuovo
+  `kdp pacchetto <slug>`: COMPLETO (exit 0) contro CARICABILE SU KDP. 135 test verdi (erano
+  127, 8 nuovi). SKILL e SOP allineate nello stesso commit.
+- INGEST: **quarto libro prodotto**, "The Winter Term" (dark academia mystery, Maren Ashcroft):
+  24/24 capitoli, 39.668 parole, **116 pagine reali contate sul PDF**, 43,2 minuti dal primo
+  comando all'ultimo. → pagina `tools/Tool_Pipeline_Libri_KDP.md` aggiornata.
+- LEZIONE: il gate di blocco ha bocciato **2 volte su 7** e aveva ragione entrambe (capitoli a
+  1.440 e 1.467 parole contro il bersaglio 1.600). La stima a 320 parole/pagina ha sbagliato di
+  nuovo, 120,9 stimate contro 113 reali: solo il PDF conta. Scoperto anche che allungare un
+  libro finito può rompere la continuità (conflitto Dunleavy cap 17/18, riparato).
+  CP-20260825-002.

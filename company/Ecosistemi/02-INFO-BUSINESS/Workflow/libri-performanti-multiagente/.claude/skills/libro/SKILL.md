@@ -170,7 +170,23 @@ Controllo l'avanzamento quando serve:
 python -m engine.kdp stato <slug>
 ```
 
-### 5. La copertina torna da Gael
+### 5. Il copy KDP — **prima della consegna, non davanti alla form di caricamento**
+Scrivo `copy.json` nella cartella del libro e lo salvo col comando. Non si modifica a mano
+`progetto.json`: e' cosi' che i primi tre libri hanno preso il copy, e i difetti sono usciti
+solo alla consegna (3 lineette nella descrizione di The Ninth Winter, 2 in The Quiet Hours,
+**a pacchetto gia' consegnato**).
+
+```
+python -m engine.kdp copy <slug> --file LIBRI/in_lavorazione/<slug>/copy.json
+```
+
+Campi: `titolo_finale`, `sottotitolo`, `descrizione`, `keywords` (max 7), `categorie`,
+`codici_bisac` (max 3), `bio_autore`, `descrizione_html`, `prezzo_suggerito_usd`.
+I primi quattro sono **obbligatori**: senza, il comando rifiuta e non salva niente. Il copy
+passa dagli stessi controlli del libro (niente lineette lunghe, limiti della form KDP), e
+se sbaglia **esce 1 e il copy non viene scritto**: il difetto si ferma dove nasce.
+
+### 6. La copertina torna da Gael
 Gli chiedo il PNG. Poi:
 ```
 python -m engine.kdp consegna <slug> --cover <percorso.png>
@@ -181,12 +197,28 @@ titolo** — quello l'ha già disegnato il modello seguendo il prompt.
 > Se l'immagine arriva **senza testo** o col titolo **sbagliato**, e solo in quel caso:
 > `--scrivi-titolo` lo stampa sopra con un font vero. È la rete di sicurezza, non la norma.
 
-### 6. Consegna
+### 7. Consegna
 `consegna` produce il `.docx` KDP, il PDF, **l'EPUB**, conta le **pagine vere rileggendo il
 PDF** e scrive `REPORT.md` + `validazione.json`. Se è sotto le 115 pagine **si ferma e dice
 quanti capitoli mancano**.
 
 Il pacchetto finito esce in `LIBRI/libri_pronti/<Titolo>/`. Da lì lo carica Gael a mano.
+
+**La cartella nasce anche senza il PNG** (2026-08-25). `consegna <slug>` senza `--cover`
+crea comunque il pacchetto con dentro manoscritto, PDF, EPUB, `COPERTINA-PROMPT.md` e
+`KDP_METADATA.txt` col copy vero: i tre artefatti che il flusso produce da solo stanno in
+una cartella sola, subito, invece di restare sparsi finché non arriva l'immagine. Il libro
+però **non è pubblicabile**: `validazione.json` scrive "Copertina assente" fra i bloccanti
+ed esce 1. Quando Gael manda il PNG si rilancia `consegna <slug> --cover <file.png>` e la
+stessa cartella si aggiorna.
+
+Per sapere in un colpo solo se il pacchetto è a posto:
+```
+python -m engine.kdp pacchetto <slug>
+```
+Elenca i file attesi e distingue due stati che prima si confondevano: **COMPLETO** (i tre
+artefatti ci sono, exit 0) e **CARICABILE SU KDP** (c'è anche l'immagine). Un pacchetto
+completo senza immagine non è un difetto del flusso: è il punto in cui il lavoro passa a Gael.
 
 **Tre cose da sapere sul verdetto:**
 
@@ -200,7 +232,7 @@ Il pacchetto finito esce in `LIBRI/libri_pronti/<Titolo>/`. Da lì lo carica Gae
   è più del doppio o meno della metà lo dice: quel numero è già stato rilevato su Amazon e
   sta in `ispirazione.json`, non va deciso a sentimento.
 
-### 7. Quando il libro è su KDP
+### 8. Quando il libro è su KDP
 ```
 python -m engine.kdp pubblicato <slug> --asin B0XXXXXXXX [--prezzo 13.99]
 ```
@@ -269,7 +301,9 @@ python -m engine.kdp nicchia-confronta --keywords "..." [--applica]
 python -m engine.kdp nuovo "<Titolo>" --nicchia "<n>" [--autore "<nome>"] [--motivo "..."]
 python -m engine.kdp blocco <slug>                   # DOPO OGNI BLOCCO. <1 secondo.
 python -m engine.kdp stato [slug]                    # avanzamento + metriche di produzione
-python -m engine.kdp consegna <slug> --cover <png> [--scrivi-titolo] [--forza]
+python -m engine.kdp copy <slug> --file copy.json    # il copy KDP, validato prima di salvarlo
+python -m engine.kdp consegna <slug> [--cover <png>] [--scrivi-titolo] [--forza]
+python -m engine.kdp pacchetto <slug>                # i tre artefatti sono nella cartella?
 python -m engine.kdp pubblicato <slug> --asin B0XXXXXXXX [--prezzo 13.99]
 ```
 

@@ -31,9 +31,10 @@ def sanitize_title(title: str) -> str:
 class BookPackageResult:
     folder_path: Path
     manuscript_dest: Path
-    cover_dest: Path
+    cover_dest: Path | None
     metadata_dest: Path
     pdf_dest: Path | None = None
+    prompt_copertina_dest: Path | None = None
 
 
 def converti_in_pdf(docx_path: Path, pdf_path: Path | None = None) -> Path | None:
@@ -85,21 +86,31 @@ def conta_pagine_pdf(pdf_path: Path) -> int | None:
 def create_book_package(
     book_title: str,
     manuscript_path: Path,
-    cover_path: Path,
+    cover_path: Path | None,
     kdp_metadata_text: str,
     word_count: int,
     page_count: float,
     sostituisci: bool = False,
+    prompt_copertina_path: Path | None = None,
 ) -> BookPackageResult:
     """Crea LIBRI/libri_pronti/<Nome-Libro>/ con dentro libro e copertina APPENA
     generati per questo libro specifico. Solleva FileNotFoundError esplicito se
     manuscript_path o cover_path non esistono — mai un pacchetto con file finti o
-    riciclati da un altro libro."""
+    riciclati da un altro libro.
+
+    `cover_path=None` e' lecito (2026-08-25, TASK-KDP-W1): l'immagine la genera una
+    persona dal prompt, e prima di quel passaggio i tre artefatti che il flusso produce
+    da solo — manoscritto, prompt copertina, copy KDP — devono comunque stare **in una
+    cartella sola**. Prima non era cosi': senza .png il pacchetto non nasceva affatto e
+    i tre pezzi restavano sparsi fra `in_lavorazione/` e la chat. Il pacchetto senza
+    immagine NON e' pubblicabile, e chi lo dice e' `validazione.json`, non questa
+    funzione. Un `cover_path` valorizzato ma inesistente resta un errore duro: quello
+    era ed e' il guard-rail contro i file riciclati da un altro libro."""
     manuscript_path = Path(manuscript_path)
-    cover_path = Path(cover_path)
+    cover_path = Path(cover_path) if cover_path else None
     if not manuscript_path.exists():
         raise FileNotFoundError(f"Manoscritto non trovato: {manuscript_path}")
-    if not cover_path.exists():
+    if cover_path is not None and not cover_path.exists():
         raise FileNotFoundError(f"Copertina non trovata: {cover_path}")
 
     safe_title = sanitize_title(book_title)
@@ -128,7 +139,10 @@ def create_book_package(
                 return copia
 
             manuscript_path = _al_sicuro(manuscript_path)
-            cover_path = _al_sicuro(cover_path)
+            if cover_path is not None:
+                cover_path = _al_sicuro(cover_path)
+            if prompt_copertina_path is not None and Path(prompt_copertina_path).exists():
+                prompt_copertina_path = _al_sicuro(Path(prompt_copertina_path))
             shutil.rmtree(folder_path)
         else:
             # Libro DIVERSO con lo stesso titolo: non si sovrascrive mai il lavoro altrui.
@@ -137,9 +151,21 @@ def create_book_package(
     folder_path.mkdir(parents=True, exist_ok=False)
 
     manuscript_dest = folder_path / f"{safe_title}{manuscript_path.suffix}"
-    cover_dest = folder_path / f"Cover_{safe_title}{cover_path.suffix}"
     shutil.copy2(manuscript_path, manuscript_dest)
-    shutil.copy2(cover_path, cover_dest)
+    cover_dest: Path | None = None
+    if cover_path is not None:
+        cover_dest = folder_path / f"Cover_{safe_title}{cover_path.suffix}"
+        shutil.copy2(cover_path, cover_dest)
+
+    # Il prompt della copertina viaggia CON il libro. Fino al 2026-08-25 restava in
+    # `LIBRI/in_lavorazione/<slug>/copertina-prompt.md` e non entrava mai nel pacchetto:
+    # chi apriva la cartella finale aveva il manoscritto ma non il testo con cui generare
+    # l'immagine, e se lo faceva ridettare in chat. Nessuno dei tre pacchetti consegnati
+    # (Ninth Winter, Quiet Hours, Second-Hand Spellbook) ce l'ha dentro.
+    prompt_dest: Path | None = None
+    if prompt_copertina_path is not None and Path(prompt_copertina_path).exists():
+        prompt_dest = folder_path / "COPERTINA-PROMPT.md"
+        shutil.copy2(Path(prompt_copertina_path), prompt_dest)
 
     # PDF accanto al .docx: e' il formato in cui il libro si legge e si controlla prima di
     # pubblicarlo (richiesta esplicita di Gael, 2026-08-08).
@@ -167,7 +193,8 @@ def create_book_package(
         f"Word count: {word_count} — Pagine stimate: {page_count} @{config.WORDS_PER_PAGE_ESTIMATE}wpp\n"
         f"Manoscritto: {manuscript_dest.name}\n"
         f"PDF: {pdf_dest.name if pdf_dest else 'NON generato (serve Word installato)'}\n"
-        f"Copertina: {cover_dest.name}\n"
+        f"Copertina: {cover_dest.name if cover_dest else 'DA GENERARE — usa ' + (prompt_dest.name if prompt_dest else 'copertina-prompt.md') + ', poi: python -m engine.kdp consegna <slug> --cover <file.png>'}\n"
+        f"Prompt copertina: {prompt_dest.name if prompt_dest else 'assente'}\n"
         f"Quando pubblicato: sposta manualmente questa cartella in LIBRI/libri_pubblicati/\n",
         encoding="utf-8",
     )
@@ -181,6 +208,7 @@ def create_book_package(
         cover_dest=cover_dest,
         metadata_dest=metadata_dest,
         pdf_dest=pdf_dest,
+        prompt_copertina_dest=prompt_dest,
     )
 
 

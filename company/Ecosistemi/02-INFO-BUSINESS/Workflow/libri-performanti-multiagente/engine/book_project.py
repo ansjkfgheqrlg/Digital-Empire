@@ -148,6 +148,10 @@ class BookProject:
         self.outline_path = self.dir / "outline.md"
         self.riassunti_path = self.dir / "riassunti.md"
         self.ispirazione_path = self.dir / "ispirazione.json"
+        # Il prompt della copertina: lo scrive Claude in sessione (Fase 3 della skill),
+        # ma fino al 2026-08-25 il codice non lo conosceva affatto — quindi non finiva nel
+        # pacchetto e non era controllabile. E' uno dei tre artefatti del gate TASK-KDP-W1.
+        self.copertina_prompt_path = self.dir / "copertina-prompt.md"
 
     # --- creazione / lettura ------------------------------------------------ #
     @classmethod
@@ -446,160 +450,144 @@ class BookProject:
             print(f"[assembla] {len(trattini)} trattini segnalati nel testo — controlla il "
                   f"REPORT: in inglese molti sono corretti, non vanno cambiati alla cieca.")
 
-        if cover_path and Path(cover_path).exists():
+        # LA CARTELLA SI FA SEMPRE (2026-08-25, TASK-KDP-W1). Prima tutto questo blocco
+        # girava solo `if cover_path esiste`: senza il .png non nasceva nessun pacchetto,
+        # e manoscritto, prompt copertina e copy restavano sparsi fra `in_lavorazione/` e
+        # la chat finche' una persona non generava l'immagine. Ora la cartella nasce con i
+        # tre artefatti che il flusso produce da solo; la copertina mancante la dichiara
+        # `validazione.json` come bloccante, quindi il libro resta NON pubblicabile.
+        cover_presente = bool(cover_path and Path(cover_path).exists())
+        if cover_presente:
             esiti["Titolo sulla copertina"] = validators.valida_copertina_testo(
                 Path(cover_path), cfg["titolo"])
             for avviso in esiti["Titolo sulla copertina"]:
                 print(f"[assembla] copertina: {avviso}")
+        pacchetto = book_output_manager.create_book_package(
+            book_title=cfg["titolo"],
+            manuscript_path=docx_path,
+            cover_path=Path(cover_path) if cover_presente else None,
+            kdp_metadata_text=self._metadata_kdp(cfg, risultato),
+            word_count=risultato.word_count,
+            page_count=risultato.estimated_pages,
+            # Riconsegnare lo stesso libro deve aggiornare la sua cartella, non
+            # aggiungerne una nuova col timestamp: qui il libro lo conosciamo per slug.
+            sostituisci=True,
+            prompt_copertina_path=self.copertina_prompt_path,
+        )
+        out["pacchetto"] = str(pacchetto.folder_path)
+        if pacchetto.prompt_copertina_dest:
+            out["copertina_prompt"] = str(pacchetto.prompt_copertina_dest)
 
-            pacchetto = book_output_manager.create_book_package(
-                book_title=cfg["titolo"],
-                manuscript_path=docx_path,
-                cover_path=Path(cover_path),
-                kdp_metadata_text=self._metadata_kdp(cfg, risultato),
-                word_count=risultato.word_count,
-                page_count=risultato.estimated_pages,
-                # Riconsegnare lo stesso libro deve aggiornare la sua cartella, non
-                # aggiungerne una nuova col timestamp: qui il libro lo conosciamo per slug.
-                sostituisci=True,
-            )
-            out["pacchetto"] = str(pacchetto.folder_path)
+        # EPUB accanto al cartaceo (2026-08-23): e' il formato dell'ebook, cioe' il
+        # canale che nei generi che scriviamo fa il volume. Fino a oggi il pacchetto
+        # era solo .docx + PDF, quindi solo carta.
+        epub_dest = pacchetto.folder_path / f"{book_output_manager.sanitize_title(cfg['titolo'])}.epub"
+        percorso_epub, parole_epub = self._costruisci_epub(
+            cfg, capitoli_letti, contorno, epub_dest, cover=pacchetto.cover_dest)
+        out["epub"] = str(percorso_epub)
+        esiti["EPUB (ebook)"] = self._controlla_epub(parole_epub, risultato.word_count)
+        for avviso in esiti["EPUB (ebook)"]:
+            print(f"[assembla] epub: {avviso}")
 
-            # EPUB accanto al cartaceo (2026-08-23): e' il formato dell'ebook, cioe' il
-            # canale che nei generi che scriviamo fa il volume. Fino a oggi il pacchetto
-            # era solo .docx + PDF, quindi solo carta.
-            epub_dest = pacchetto.folder_path / f"{book_output_manager.sanitize_title(cfg['titolo'])}.epub"
-            percorso_epub, parole_epub = self._costruisci_epub(
-                cfg, capitoli_letti, contorno, epub_dest, cover=pacchetto.cover_dest)
-            out["epub"] = str(percorso_epub)
-            esiti["EPUB (ebook)"] = self._controlla_epub(parole_epub, risultato.word_count)
-            for avviso in esiti["EPUB (ebook)"]:
-                print(f"[assembla] epub: {avviso}")
-
-            # Scheda del concorrente: va nel pacchetto in due formati, JSON per il codice
-            # e testo per chi apre la cartella. Se manca si dice, non si finge.
-            scheda = self.ispirazione()
-            if scheda is None:
-                esiti["Scheda libro di ispirazione"] = [
-                    "assente: nessun ispirazione.json nel progetto. Non blocca, ma il "
-                    "libro non porta con se' il perche' e' stato fatto cosi'."]
-            else:
-                ok, mancanti = scheda.valida()
-                if not ok:
-                    esiti["Scheda libro di ispirazione"] = [
-                        f"incompleta, mancano: {', '.join(mancanti)}"]
-                ispirazione.salva(scheda, pacchetto.folder_path / "ISPIRAZIONE.json")
-                (pacchetto.folder_path / "ISPIRAZIONE.txt").write_text(
-                    scheda.testo(), encoding="utf-8")
-                out["ispirazione"] = str(pacchetto.folder_path / "ISPIRAZIONE.json")
-            for avviso in esiti.get("Scheda libro di ispirazione", []):
-                print(f"[assembla] ispirazione: {avviso}")
-
-            pagine_reali = (book_output_manager.conta_pagine_pdf(pacchetto.pdf_dest)
-                            if pacchetto.pdf_dest else None)
-            if pacchetto.pdf_dest:
-                esiti["Numerazione pagine"] = validators.valida_numerazione_pagine(pacchetto.pdf_dest)
-                for avviso in esiti["Numerazione pagine"]:
-                    print(f"[assembla] numerazione: {avviso}")
-                esiti["Parole spezzate a fine riga"] = validators.valida_sillabazione_pdf(
-                    pacchetto.pdf_dest, testo_sorgente=testo_completo)
-                for avviso in esiti["Parole spezzate a fine riga"][:3]:
-                    print(f"[assembla] sillabazione: {avviso}")
-
-            # --- REPORT di consegna (richiesta di Gael, 2026-08-10) ----------- #
-            report_path = pacchetto.folder_path / "REPORT.md"
-            report_path.write_text(
-                book_report.genera_report(
-                    cfg, stato, risultato, pagine_reali,
-                    {
-                        "PDF (da leggere)": pacchetto.pdf_dest,
-                        "Copertina": pacchetto.cover_dest,
-                        "Manoscritto Word": pacchetto.manuscript_dest,
-                        "Metadati KDP": pacchetto.metadata_dest,
-                    },
-                    esiti,
-                ),
-                encoding="utf-8",
-            )
-            out["report"] = str(report_path)
-
-            # --- Verdetto unico: pubblicabile o no ---------------------------- #
-            verdetto = report_validazione.ReportValidazione(pagine_reali=pagine_reali)
-            minimo = config.TARGET_PAGE_COUNT - config.TARGET_PAGE_COUNT_TOLERANCE
-            if pagine_reali is None:
-                # NON MISURATO NON E' A POSTO (2026-08-23). Prima la condizione era
-                # `if pagine_reali and pagine_reali < minimo`: con `None` — cioe' quando il
-                # PDF non si era potuto fare — il controllo spariva in silenzio e il libro
-                # usciva `pubblicabile: true` senza che nessuno avesse contato una pagina.
-                # E' il difetto originale del progetto (120 pagine dichiarate, 21 reali)
-                # rientrato dalla finestra, in un ramo che nessuno guardava.
-                verdetto.blocca(
-                    "Pagine reali NON CONTATE: il PDF non e' stato prodotto (serve Microsoft "
-                    "Word, lo pilota docx2pdf). Il conteggio pagine e' l'unico requisito KDP "
-                    "che questo pacchetto non puo' dimostrare, e la stima a "
-                    f"{config.WORDS_PER_PAGE_ESTIMATE} parole/pagina non lo sostituisce: sui "
-                    "tre libri veri ha sbagliato fino a 4,3 pagine, una volta dando per buono "
-                    "un libro da 113 pagine contro un minimo di 115."
-                )
-            elif pagine_reali < minimo:
-                verdetto.blocca(f"Pagine reali {pagine_reali}, il minimo per il target e' {minimo}")
-            for etichetta, voci in esiti.items():
-                gravita = GRAVITA_ESITI.get(etichetta, "avviso")
-                # "VERIFICA A MANO" = lo strumento non c'era, il controllo non e' girato.
-                # Non e' un difetto del libro e non blocca, ma non e' nemmeno un avviso da
-                # sfogliare: finisce in `verifiche_non_eseguite`, dove si vede che quel
-                # controllo NON ha detto di si'.
-                voci_vere = [v for v in voci if not v.startswith("VERIFICA A MANO")]
-                voci_manuali = [v for v in voci if v.startswith("VERIFICA A MANO")]
-                verdetto.aggiungi(etichetta, voci_vere, gravita)
-                verdetto.aggiungi(etichetta, voci_manuali, "non_verificato")
-
-            verdetto.salva(pacchetto.folder_path / "validazione.json")
-            out["pubblicabile"] = verdetto.pubblicabile
-            print(verdetto.riepilogo())
-            print(f"[assembla] report di consegna: {report_path.name}")
-            print(f"[assembla] pacchetto pronto: {pacchetto.folder_path}")
-            if not verdetto.pubblicabile and not forza:
-                raise RuntimeError(
-                    "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': "
-                    + "; ".join(verdetto.bloccanti)
-                )
+        # Scheda del concorrente: va nel pacchetto in due formati, JSON per il codice
+        # e testo per chi apre la cartella. Se manca si dice, non si finge.
+        scheda = self.ispirazione()
+        if scheda is None:
+            esiti["Scheda libro di ispirazione"] = [
+                "assente: nessun ispirazione.json nel progetto. Non blocca, ma il "
+                "libro non porta con se' il perche' e' stato fatto cosi'."]
         else:
-            # Senza copertina non si puo' fare il pacchetto, ma il PDF si fa lo stesso
-            # (richiesta di Gael, 2026-08-17: "i libri devi darmeli sempre in PDF").
-            # Non e' una comodita': la stima a 300 parole/pagina sbaglia sistematicamente
-            # per eccesso — su due libri veri il rapporto misurato e' ~320 — quindi il
-            # numero di pagine che conta si vede SOLO qui. Saperlo a meta' libro invece
-            # che alla consegna e' la differenza fra aggiungere una scena e riscrivere.
-            pdf_path = book_output_manager.converti_in_pdf(docx_path)
-            if pdf_path:
-                out["pdf"] = str(pdf_path)
-                pagine_reali = book_output_manager.conta_pagine_pdf(pdf_path)
-                out["pagine_reali"] = pagine_reali
-                minimo = config.TARGET_PAGE_COUNT - config.TARGET_PAGE_COUNT_TOLERANCE
-                if pagine_reali:
-                    stato_pagine = ("OK" if pagine_reali >= minimo
-                                    else f"SOTTO IL MINIMO di {minimo - pagine_reali}")
-                    print(f"[assembla] pagine reali dal PDF: {pagine_reali} "
-                          f"(minimo {minimo}) — {stato_pagine}")
-                for avviso in validators.valida_numerazione_pagine(pdf_path):
-                    print(f"[assembla] numerazione: {avviso}")
-                for avviso in validators.valida_sillabazione_pdf(
-                        pdf_path, testo_sorgente=testo_completo)[:3]:
-                    print(f"[assembla] sillabazione: {avviso}")
-            # L'EPUB si fa anche senza copertina, per lo stesso motivo del PDF: e' un
-            # formato in piu' da controllare, e va visto prima della consegna finale.
-            percorso_epub, parole_epub = self._costruisci_epub(
-                cfg, capitoli_letti, contorno,
-                docx_path.with_suffix(".epub"), cover=None)
-            out["epub"] = str(percorso_epub)
-            print(f"[assembla] EPUB creato: {percorso_epub.name} "
-                  f"({percorso_epub.stat().st_size / 1024:.0f} KB, {parole_epub} parole)")
-            for avviso in self._controlla_epub(parole_epub, risultato.word_count):
-                print(f"[assembla] epub: {avviso}")
-            print("[assembla] copertina non fornita — il pacchetto finale richiede il .png "
-                  "generato dal prompt in `copertina-prompt.md`, poi: "
-                  "python -m engine.kdp consegna <slug> --cover <file.png>")
+            ok, mancanti = scheda.valida()
+            if not ok:
+                esiti["Scheda libro di ispirazione"] = [
+                    f"incompleta, mancano: {', '.join(mancanti)}"]
+            ispirazione.salva(scheda, pacchetto.folder_path / "ISPIRAZIONE.json")
+            (pacchetto.folder_path / "ISPIRAZIONE.txt").write_text(
+                scheda.testo(), encoding="utf-8")
+            out["ispirazione"] = str(pacchetto.folder_path / "ISPIRAZIONE.json")
+        for avviso in esiti.get("Scheda libro di ispirazione", []):
+            print(f"[assembla] ispirazione: {avviso}")
+
+        pagine_reali = (book_output_manager.conta_pagine_pdf(pacchetto.pdf_dest)
+                        if pacchetto.pdf_dest else None)
+        if pacchetto.pdf_dest:
+            esiti["Numerazione pagine"] = validators.valida_numerazione_pagine(pacchetto.pdf_dest)
+            for avviso in esiti["Numerazione pagine"]:
+                print(f"[assembla] numerazione: {avviso}")
+            esiti["Parole spezzate a fine riga"] = validators.valida_sillabazione_pdf(
+                pacchetto.pdf_dest, testo_sorgente=testo_completo)
+            for avviso in esiti["Parole spezzate a fine riga"][:3]:
+                print(f"[assembla] sillabazione: {avviso}")
+
+        # --- REPORT di consegna (richiesta di Gael, 2026-08-10) ----------- #
+        report_path = pacchetto.folder_path / "REPORT.md"
+        report_path.write_text(
+            book_report.genera_report(
+                cfg, stato, risultato, pagine_reali,
+                {
+                    "PDF (da leggere)": pacchetto.pdf_dest,
+                    "Copertina": pacchetto.cover_dest,
+                    "Manoscritto Word": pacchetto.manuscript_dest,
+                    "Metadati KDP": pacchetto.metadata_dest,
+                },
+                esiti,
+            ),
+            encoding="utf-8",
+        )
+        out["report"] = str(report_path)
+
+        # --- Verdetto unico: pubblicabile o no ---------------------------- #
+        verdetto = report_validazione.ReportValidazione(pagine_reali=pagine_reali)
+        minimo = config.TARGET_PAGE_COUNT - config.TARGET_PAGE_COUNT_TOLERANCE
+        if pagine_reali is None:
+            # NON MISURATO NON E' A POSTO (2026-08-23). Prima la condizione era
+            # `if pagine_reali and pagine_reali < minimo`: con `None` — cioe' quando il
+            # PDF non si era potuto fare — il controllo spariva in silenzio e il libro
+            # usciva `pubblicabile: true` senza che nessuno avesse contato una pagina.
+            # E' il difetto originale del progetto (120 pagine dichiarate, 21 reali)
+            # rientrato dalla finestra, in un ramo che nessuno guardava.
+            verdetto.blocca(
+                "Pagine reali NON CONTATE: il PDF non e' stato prodotto (serve Microsoft "
+                "Word, lo pilota docx2pdf). Il conteggio pagine e' l'unico requisito KDP "
+                "che questo pacchetto non puo' dimostrare, e la stima a "
+                f"{config.WORDS_PER_PAGE_ESTIMATE} parole/pagina non lo sostituisce: sui "
+                "tre libri veri ha sbagliato fino a 4,3 pagine, una volta dando per buono "
+                "un libro da 113 pagine contro un minimo di 115."
+            )
+        elif pagine_reali < minimo:
+            verdetto.blocca(f"Pagine reali {pagine_reali}, il minimo per il target e' {minimo}")
+        if not cover_presente:
+            # La cartella ora nasce anche senza immagine, quindi il "manca la copertina"
+            # deve diventare una voce ESPLICITA del verdetto. Senza, un pacchetto senza
+            # copertina uscirebbe `pubblicabile: true` — lo stesso errore di forma del
+            # bug "pagine non contate" chiuso il 2026-08-23: un requisito che sparisce
+            # perche' nessuno lo nomina.
+            verdetto.blocca(
+                "Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, "
+                "ma non l'immagine. Genera il .png dal prompt in COPERTINA-PROMPT.md, poi: "
+                f"python -m engine.kdp consegna {self.slug} --cover <file.png>"
+            )
+        for etichetta, voci in esiti.items():
+            gravita = GRAVITA_ESITI.get(etichetta, "avviso")
+            # "VERIFICA A MANO" = lo strumento non c'era, il controllo non e' girato.
+            # Non e' un difetto del libro e non blocca, ma non e' nemmeno un avviso da
+            # sfogliare: finisce in `verifiche_non_eseguite`, dove si vede che quel
+            # controllo NON ha detto di si'.
+            voci_vere = [v for v in voci if not v.startswith("VERIFICA A MANO")]
+            voci_manuali = [v for v in voci if v.startswith("VERIFICA A MANO")]
+            verdetto.aggiungi(etichetta, voci_vere, gravita)
+            verdetto.aggiungi(etichetta, voci_manuali, "non_verificato")
+
+        verdetto.salva(pacchetto.folder_path / "validazione.json")
+        out["pubblicabile"] = verdetto.pubblicabile
+        print(verdetto.riepilogo())
+        print(f"[assembla] report di consegna: {report_path.name}")
+        print(f"[assembla] pacchetto pronto: {pacchetto.folder_path}")
+        if not verdetto.pubblicabile and not forza:
+            raise RuntimeError(
+                "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': "
+                + "; ".join(verdetto.bloccanti)
+            )
         return out
 
     def _metadata_kdp(self, cfg: dict, risultato) -> str:

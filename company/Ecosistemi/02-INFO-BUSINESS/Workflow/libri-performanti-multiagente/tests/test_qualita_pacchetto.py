@@ -481,3 +481,143 @@ def test_il_gate_prende_due_capitoli_uguali(tmp_path, monkeypatch):
     esito = gate_blocco.controlla(p)
     assert not esito.si_prosegue
     assert any("si ripetono" in b for b in esito.blocchi), esito.blocchi
+
+
+# --------------------------------------------------------------------------- #
+# 11. I TRE ARTEFATTI IN UNA CARTELLA SOLA (TASK-KDP-W1, 2026-08-25)
+#
+# Il difetto che questi test fissano non era un bug: era una forma del flusso.
+# Il pacchetto nasceva solo con il .png di copertina, il prompt della copertina non
+# ci entrava mai, e il copy KDP non aveva nessun comando che lo scrivesse — nei tre
+# libri consegnati e' stato messo a mano dentro progetto.json.
+# --------------------------------------------------------------------------- #
+
+def test_il_pacchetto_nasce_anche_senza_copertina(libro_minimo, monkeypatch):
+    """Prima: niente .png, niente cartella. I tre artefatti restavano sparsi."""
+    from engine import book_output_manager
+
+    progetto, _cover = libro_minimo
+    progetto.copertina_prompt_path.write_text("# Prompt\n\nA lighthouse at dusk.\n",
+                                              encoding="utf-8")
+    finto_pdf = progetto.dir / "finto.pdf"
+    finto_pdf.write_bytes(b"%PDF-1.4\n" + b"/Type /Page \n" * 130)
+    monkeypatch.setattr(book_output_manager, "converti_in_pdf",
+                        lambda docx, pdf=None: finto_pdf)
+
+    esito = progetto.assembla(None, forza=True)
+
+    cartella = Path(esito["pacchetto"])
+    assert cartella.is_dir()
+    assert (cartella / "COPERTINA-PROMPT.md").exists()
+    assert "lighthouse" in (cartella / "COPERTINA-PROMPT.md").read_text(encoding="utf-8")
+    assert not list(cartella.glob("Cover_*"))
+
+
+def test_senza_copertina_il_libro_non_e_pubblicabile(libro_minimo, monkeypatch):
+    """La cartella nasce, ma il verdetto deve DIRE che manca l'immagine: un requisito
+    che nessuno nomina e' un requisito che sparisce (stessa forma del bug 'pagine non
+    contate' chiuso il 2026-08-23)."""
+    from engine import book_output_manager
+
+    progetto, _cover = libro_minimo
+    finto_pdf = progetto.dir / "finto.pdf"
+    finto_pdf.write_bytes(b"%PDF-1.4\n" + b"/Type /Page \n" * 130)
+    monkeypatch.setattr(book_output_manager, "converti_in_pdf",
+                        lambda docx, pdf=None: finto_pdf)
+
+    esito = progetto.assembla(None, forza=True)
+    validazione = json.loads(
+        (Path(esito["pacchetto"]) / "validazione.json").read_text(encoding="utf-8"))
+    assert validazione["pubblicabile"] is False
+    assert any("Copertina assente" in b for b in validazione["bloccanti"]), validazione
+
+
+def test_una_copertina_indicata_ma_inesistente_resta_un_errore(libro_minimo):
+    """Il guard-rail contro i file riciclati da un altro libro non si tocca: `None` e'
+    lecito, un percorso sbagliato no."""
+    from engine import book_output_manager
+
+    progetto, _cover = libro_minimo
+    with pytest.raises(FileNotFoundError, match="Copertina non trovata"):
+        book_output_manager.create_book_package(
+            book_title="Libro Di Prova",
+            manuscript_path=_docx_finto(progetto),
+            cover_path=progetto.dir / "non_esiste.png",
+            kdp_metadata_text="x", word_count=1, page_count=1.0)
+
+
+def _docx_finto(progetto) -> Path:
+    p = progetto.dir / "finto.docx"
+    p.write_bytes(b"PK\x03\x04 finto docx")
+    return p
+
+
+def test_il_prompt_copertina_entra_anche_col_png(libro_minimo, monkeypatch):
+    """Il prompt viaggia col libro SEMPRE, non solo quando la copertina manca: serve a
+    rigenerare l'immagine fra sei mesi senza ripescare la chat."""
+    from engine import book_output_manager
+
+    progetto, cover = libro_minimo
+    progetto.copertina_prompt_path.write_text("# Prompt\n\nA bakery window.\n",
+                                              encoding="utf-8")
+    finto_pdf = progetto.dir / "finto.pdf"
+    finto_pdf.write_bytes(b"%PDF-1.4\n" + b"/Type /Page \n" * 130)
+    monkeypatch.setattr(book_output_manager, "converti_in_pdf",
+                        lambda docx, pdf=None: finto_pdf)
+
+    esito = progetto.assembla(cover, forza=True)
+    cartella = Path(esito["pacchetto"])
+    assert (cartella / "COPERTINA-PROMPT.md").exists()
+    assert list(cartella.glob("Cover_*"))
+
+
+# --- il comando `kdp copy`: valida PRIMA di scrivere ------------------------ #
+
+@pytest.fixture
+def progetto_per_copy(tmp_path, monkeypatch):
+    monkeypatch.setattr(book_project, "PROGETTI_DIR", tmp_path / "in_lavorazione")
+    return book_project.BookProject.crea("Libro Copy", "cozy mystery", capitoli=2)
+
+
+def _scrivi_copy(tmp_path, **override) -> Path:
+    copy = {
+        "titolo_finale": "Murder at Maple Bakery",
+        "sottotitolo": "A Small Town Cozy Mystery",
+        "descrizione": "Anna torna a casa e trova un cadavere nel forno.",
+        "keywords": ["cozy mystery", "amateur sleuth"],
+        "categorie": ["Fiction > Mystery"],
+    }
+    copy.update(override)
+    p = tmp_path / "copy.json"
+    p.write_text(json.dumps(copy), encoding="utf-8")
+    return p
+
+
+def test_kdp_copy_salva_il_copy_valido(progetto_per_copy, tmp_path):
+    codice = kdp.main(["copy", progetto_per_copy.slug,
+                       "--file", str(_scrivi_copy(tmp_path))])
+    assert codice == 0
+    assert progetto_per_copy.copy_kdp()["titolo_finale"] == "Murder at Maple Bakery"
+
+
+def test_kdp_copy_rifiuta_le_lineette_senza_salvare(progetto_per_copy, tmp_path):
+    """IL caso reale: 3 lineette nella descrizione di The Ninth Winter e 2 in quella di
+    The Quiet Hours sono uscite perche' il copy non passava da nessun controllo quando
+    veniva scritto. Qui il difetto si ferma dove nasce, e il copy NON viene salvato."""
+    file_copy = _scrivi_copy(tmp_path,
+                             descrizione="Anna torna a casa — e trova un cadavere.")
+    codice = kdp.main(["copy", progetto_per_copy.slug, "--file", str(file_copy)])
+    assert codice == 1
+    assert progetto_per_copy.copy_kdp() is None
+
+
+def test_kdp_copy_rifiuta_un_copy_incompleto(progetto_per_copy, tmp_path):
+    file_copy = _scrivi_copy(tmp_path, descrizione="")
+    assert kdp.main(["copy", progetto_per_copy.slug, "--file", str(file_copy)]) == 1
+    assert progetto_per_copy.copy_kdp() is None
+
+
+def test_kdp_copy_su_libro_inesistente_e_parametro_errato(tmp_path, monkeypatch):
+    monkeypatch.setattr(book_project, "PROGETTI_DIR", tmp_path / "in_lavorazione")
+    assert kdp.main(["copy", "libro-che-non-esiste",
+                     "--file", str(_scrivi_copy(tmp_path))]) == 2

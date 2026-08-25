@@ -213,8 +213,8 @@
       "owner": "Gael",
       "giorno": "Settimana 1 (24-30 ago 2026)",
       "titolo": "Workflow KDP: chiudere ciclo end-to-end (avvio->libro+prompt copertina+copy Amazon->cartella ordinata). Nord: 5-10 libri/settimana dopo che gira pulito",
-      "stato": "da_fare",
-      "note": "Cadenza passata da giornaliera a settimanale (richiesta Gael/Max 2026-08-23). Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
+      "stato": "fatto",
+      "note": "FATTO 2026-08-25 (CP-20260825-002). Gate soddisfatto: `python -m engine.kdp pacchetto the-winter-term` esce 0 = COMPLETO (manoscritto + prompt copertina + copy KDP nella stessa cartella `LIBRI/libri_pronti/The_Winter_Term/`). Libro reale prodotto dal flusso: 'The Winter Term', dark academia mystery, 24/24 capitoli, 39.668 parole, 116 pagine REALI contate sul PDF, in 43,2 minuti. Chiusi 3 buchi del motore che impedivano il ciclo: (1) `kdp copy` NUOVO - salva_copy() esisteva dal 15/08 ma nel flusso vivo non lo chiamava nessuno, il copy dei 3 libri precedenti era scritto a mano dentro progetto.json senza validazione; (2) il pacchetto ora nasce anche SENZA copertina (prima FileNotFoundError: senza .png nessuna cartella e i 3 pezzi restavano sparsi), con bloccante esplicito 'Copertina assente' in validazione.json; (3) COPERTINA-PROMPT.md ora entra sempre nel pacchetto (nessuno dei 3 pacchetti consegnati ce l'aveva). + `kdp pacchetto` NUOVO come verificatore del gate. 135 test verdi (erano 127), 8 nuovi. SKILL.md e SOP allineate nello stesso commit. RESTA A GAEL: generare il .png dal prompt, poi `kdp consegna the-winter-term --cover <png>` per renderlo pubblicabile. NOTA: scritto fuori dalla nicchia attiva con --motivo dichiarato, B-018 (una nicchia/un autore) va deciso prima del quinto libro. Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
     },
     {
       "id": "TASK-CAROSELLI-W1",

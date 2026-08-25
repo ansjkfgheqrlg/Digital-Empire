@@ -57,10 +57,14 @@ python -m engine.kdp nuovo "<Titolo>" --nicchia "<nicchia>" [--autore "<nome>"]
 python -m engine.kdp blocco <slug>       # DOPO OGNI BLOCCO DI CAPITOLI. <1 secondo.
 python -m engine.kdp stato [slug]        # avanzamento + metriche di produzione
 
-# --- FASI 5-6: copertina e consegna -----------------------------------------
-python -m engine.kdp consegna <slug> --cover <copertina.png> [--scrivi-titolo] [--forza]
+# --- FASE 5: il copy KDP (validato PRIMA di essere salvato) ------------------
+python -m engine.kdp copy <slug> --file <copy.json>
 
-# --- FASE 7: quando il libro è su KDP ---------------------------------------
+# --- FASI 6-7: copertina e consegna -----------------------------------------
+python -m engine.kdp consegna <slug> [--cover <copertina.png>] [--scrivi-titolo] [--forza]
+python -m engine.kdp pacchetto <slug>    # i tre artefatti sono nella stessa cartella?
+
+# --- FASE 8: quando il libro è su KDP ---------------------------------------
 python -m engine.kdp pubblicato <slug> --asin B0XXXXXXXX [--prezzo 13.99]
 ```
 

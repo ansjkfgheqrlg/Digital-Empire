@@ -371,6 +371,134 @@ def _cmd_stato(args) -> int:
     return OK
 
 
+def _cmd_copy(args) -> int:
+    """Salva il copy KDP del libro (Fase 5) e lo valida PRIMA di scriverlo.
+
+    PERCHE' ESISTE (2026-08-25, TASK-KDP-W1). `BookProject.salva_copy()` c'era dal
+    2026-08-15, ma nel flusso vivo non lo chiamava nessuno: nessun comando lo esponeva.
+    Risultato misurato sui tre libri consegnati: il copy e' stato scritto **a mano dentro
+    `progetto.json`**, cioe' modificando a mano un file di configurazione, e i difetti si
+    scoprivano solo alla consegna. Le lineette lunghe nella descrizione di The Ninth
+    Winter (3) e di The Quiet Hours (2) sono uscite proprio cosi', e quei due pacchetti
+    erano gia' stati consegnati.
+
+    Qui il copy entra da un file JSON, passa da `valida_copy_kdp` e, se ha problemi, NON
+    viene salvato: exit 1. Il posto giusto per fermare un difetto e' dove nasce."""
+    from . import validators
+    from .book_project import BookProject
+
+    progetto = BookProject(args.slug)
+    if not progetto.progetto_path.exists():
+        log.error("Nessun progetto '%s'. Vedi: python -m engine.kdp stato", args.slug)
+        return CONFIG_ERRATA
+
+    percorso = Path(args.file)
+    if not percorso.exists():
+        log.error("File del copy non trovato: %s", percorso)
+        return CONFIG_ERRATA
+    try:
+        copy = json.loads(percorso.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        log.error("Il file del copy non e' JSON valido (%s): %s", percorso.name, e)
+        return CONFIG_ERRATA
+    if not isinstance(copy, dict) or not copy:
+        log.error("Il copy deve essere un oggetto JSON con i campi KDP, non %s vuoto/errato.",
+                  type(copy).__name__)
+        return CONFIG_ERRATA
+
+    # I campi che la form di KDP chiede davvero al caricamento. Senza uno di questi il
+    # pacchetto esce col "minimo storico" e quel campo va inventato davanti alla form:
+    # e' esattamente il pezzo che si perdeva fra una sessione e l'altra.
+    obbligatori = ("titolo_finale", "descrizione", "keywords", "categorie")
+    mancanti = [c for c in obbligatori if not copy.get(c)]
+    if mancanti:
+        log.error("Copy incompleto, mancano: %s", ", ".join(mancanti))
+        return VALIDAZIONE_FALLITA
+
+    problemi = validators.valida_copy_kdp(copy)
+    if problemi:
+        log.error("Copy NON salvato: %d problemi da correggere.", len(problemi))
+        for p in problemi:
+            log.error("  - %s", p)
+        return VALIDAZIONE_FALLITA
+
+    progetto.salva_copy(copy)
+    print(f"[copy] salvato in {progetto.progetto_path}")
+    print(f"[copy] titolo: {copy['titolo_finale']}")
+    print(f"[copy] descrizione: {len(copy['descrizione'])} caratteri | "
+          f"keyword: {len(copy.get('keywords') or [])} | "
+          f"categorie: {len(copy.get('categorie') or [])}")
+    if copy.get("prezzo_suggerito_usd"):
+        print(f"[copy] prezzo suggerito: ${copy['prezzo_suggerito_usd']}")
+    return OK
+
+
+def _cmd_pacchetto(args) -> int:
+    """Verifica che la cartella finale contenga DAVVERO i tre artefatti del flusso.
+
+    E' la forma controllabile a macchina del gate TASK-KDP-W1: manoscritto, prompt della
+    copertina e copy KDP dentro UNA cartella. Distingue due stati diversi che prima si
+    confondevano:
+
+      - COMPLETO: ci sono i tre artefatti che il flusso produce da solo (exit 0)
+      - CARICABILE SU KDP: c'e' anche l'immagine di copertina, che la genera una persona
+
+    Un pacchetto completo ma senza immagine non e' un difetto del flusso: e' il punto
+    esatto in cui il lavoro passa a Gael."""
+    from . import book_output_manager
+    from .book_project import BookProject
+
+    progetto = BookProject(args.slug)
+    if not progetto.progetto_path.exists():
+        log.error("Nessun progetto '%s'. Vedi: python -m engine.kdp stato", args.slug)
+        return CONFIG_ERRATA
+    cfg = progetto._config()
+    cartella = config.LIBRI_PRONTI_DIR / book_output_manager.sanitize_title(cfg["titolo"])
+    if not cartella.is_dir():
+        log.error("Nessuna cartella finale per '%s' (attesa: %s). Serve prima la consegna: "
+                  "python -m engine.kdp consegna %s", cfg["titolo"], cartella, args.slug)
+        return VALIDAZIONE_FALLITA
+
+    titolo_file = book_output_manager.sanitize_title(cfg["titolo"])
+    attesi = {
+        "manoscritto (.docx)": cartella / f"{titolo_file}.docx",
+        "PDF (pagine reali)": cartella / f"{titolo_file}.pdf",
+        "EPUB (ebook)": cartella / f"{titolo_file}.epub",
+        "prompt copertina": cartella / "COPERTINA-PROMPT.md",
+        "metadati KDP": cartella / "KDP_METADATA.txt",
+        "report di consegna": cartella / "REPORT.md",
+        "verdetto": cartella / "validazione.json",
+    }
+    mancanti = [nome for nome, p in attesi.items() if not p.exists()]
+
+    # Il copy dev'essere quello vero, non il "minimo storico": un KDP_METADATA.txt senza
+    # descrizione e' un file presente che non serve a niente al caricamento.
+    copy = cfg.get("copy_kdp") or {}
+    if not copy.get("descrizione"):
+        mancanti.append("copy KDP reale (descrizione/keyword: c'e' solo il minimo storico)")
+
+    print(f"Pacchetto: {cartella}")
+    for nome, p in attesi.items():
+        segno = "OK  " if p.exists() else "MANCA"
+        print(f"  [{segno}] {nome}: {p.name}")
+    print(f"  [{'OK  ' if copy.get('descrizione') else 'MANCA'}] copy KDP nel progetto: "
+          f"{len(copy.get('descrizione') or '')} caratteri di descrizione")
+
+    copertina = next((p for p in cartella.glob("Cover_*") if p.is_file()), None)
+    if mancanti:
+        log.error("Pacchetto INCOMPLETO, mancano: %s", "; ".join(mancanti))
+        return VALIDAZIONE_FALLITA
+
+    print("\nCOMPLETO: manoscritto + prompt copertina + copy KDP sono nella stessa cartella.")
+    if copertina:
+        print(f"CARICABILE SU KDP: copertina presente ({copertina.name}).")
+    else:
+        print("NON ancora caricabile: manca l'immagine di copertina. Generala dal prompt "
+              f"in COPERTINA-PROMPT.md, poi: python -m engine.kdp consegna {args.slug} "
+              "--cover <file.png>")
+    return OK
+
+
 def _cmd_consegna(args) -> int:
     """Assembla il pacchetto finale e dice se il libro e' pubblicabile."""
     from . import copertina_kdp
@@ -509,6 +637,20 @@ def costruisci_parser() -> argparse.ArgumentParser:
     s = sub.add_parser("stato", help="a che punto sono i libri")
     s.add_argument("slug", nargs="?")
 
+    cp = sub.add_parser("copy",
+                        help="salva il copy KDP del libro (titolo, descrizione, keyword, "
+                             "categorie) validandolo prima di scriverlo")
+    cp.add_argument("slug")
+    cp.add_argument("--file", required=True,
+                    help="JSON col copy: titolo_finale, sottotitolo, descrizione, keywords, "
+                         "categorie, codici_bisac, bio_autore, descrizione_html, "
+                         "prezzo_suggerito_usd")
+
+    pk = sub.add_parser("pacchetto",
+                        help="verifica che la cartella finale contenga i tre artefatti "
+                             "(manoscritto, prompt copertina, copy KDP)")
+    pk.add_argument("slug")
+
     d = sub.add_parser("consegna", help="assembla il pacchetto finale (docx, pdf, copertina, report)")
     d.add_argument("slug")
     d.add_argument("--cover", help="percorso della copertina .png generata da te")
@@ -543,6 +685,7 @@ def main(argv: list[str] | None = None) -> int:
               "nicchia-stato": _cmd_nicchia, "nicchia-scegli": _cmd_nicchia,
               "nicchia-confronta": _cmd_nicchia, "nuovo": _cmd_nuovo,
               "stato": _cmd_stato, "blocco": _cmd_blocco,
+              "copy": _cmd_copy, "pacchetto": _cmd_pacchetto,
               "consegna": _cmd_consegna, "pubblicato": _cmd_pubblicato}
     try:
         return azioni[args.comando](args)

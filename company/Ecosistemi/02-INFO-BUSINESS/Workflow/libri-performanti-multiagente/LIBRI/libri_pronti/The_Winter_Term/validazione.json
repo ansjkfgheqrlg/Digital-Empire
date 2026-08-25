@@ -1,0 +1,20 @@
+{
+  "pubblicabile": false,
+  "pagine_reali": 116,
+  "bloccanti": [
+    "Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'immagine. Genera il .png dal prompt in COPERTINA-PROMPT.md, poi: python -m engine.kdp consegna the-winter-term --cover <file.png>"
+  ],
+  "errori": [],
+  "verifiche_non_eseguite": [],
+  "avvisi": [
+    "[Trattini nel testo (da rivedere a occhio)] riga 267: trattino in 'Ashworth-Kane' — contesto: '\"Nobody at this table has said that in six years,\" she said, to the ro'",
+    "[Trattini nel testo (da rivedere a occhio)] riga 277: trattino in 'Ashworth-Kane' — contesto: 'They went out slowly, in the way of people who want to be seen not to '",
+    "[Trattini nel testo (da rivedere a occhio)] riga 464: trattino in 'Ashworth-Kane' — contesto: 'Ten days later, when Teddy Ashworth-Kane crossed a room to shake her h'",
+    "[Trattini nel testo (da rivedere a occhio)] riga 493: trattino in 'Ashworth-Kane' — contesto: '\"Teddy Ashworth-Kane. I've been extremely rude and left it a week, and'",
+    "[Trattini nel testo (da rivedere a occhio)] riga 1649: trattino in 'ASHWORTH-KANE' — contesto: '13 JAN. ASHWORTH-KANE.'",
+    "[Trattini nel testo (da rivedere a occhio)] riga 1769: trattino in 'Ashworth-Kane' — contesto: 'Nobody moved for a second. Then Ivo put his hand flat on the back of t'",
+    "[Trattini nel testo (da rivedere a occhio)] riga 2119: trattino in 'Ashworth-Kane' — contesto: 'Teddy Ashworth-Kane had read it, three days before, in the Fenn Room, '",
+    "[Trattini nel testo (da rivedere a occhio)] riga 2351: trattino in 'Ashworth-Kane' — contesto: '\"Ashworth-Kane came to my door at eleven minutes to midnight on the fo'",
+    "[Scheda libro di ispirazione] assente: nessun ispirazione.json nel progetto. Non blocca, ma il libro non porta con se' il perche' e' stato fatto cosi'."
+  ]
+}

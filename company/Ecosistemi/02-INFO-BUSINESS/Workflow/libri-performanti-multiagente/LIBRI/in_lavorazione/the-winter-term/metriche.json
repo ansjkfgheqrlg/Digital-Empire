@@ -1,0 +1,91 @@
+{
+  "slug": "the-winter-term",
+  "eventi": [
+    {
+      "quando": "2026-08-25T20:06:13",
+      "cosa": "progetto_creato",
+      "nicchia": "dark academia mystery",
+      "autore": "Maren Ashcroft"
+    },
+    {
+      "quando": "2026-08-25T20:16:36",
+      "cosa": "blocco",
+      "esito": "bocciato",
+      "capitoli": 8,
+      "parole": 11523,
+      "media_per_capitolo": 1440,
+      "motivi": [
+        "a 1440 parole/capitolo il libro chiude a 34560 parole: 2240 sotto il minimo di 36800. Il bersaglio e' 1600 parole/capitolo (38400 totali, in mezzo alla finestra). Allunga QUESTI capitoli adesso, non i prossimi."
+      ]
+    },
+    {
+      "quando": "2026-08-25T20:17:41",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 8,
+      "parole": 12366,
+      "media_per_capitolo": 1546
+    },
+    {
+      "quando": "2026-08-25T20:35:22",
+      "cosa": "blocco",
+      "esito": "bocciato",
+      "capitoli": 16,
+      "parole": 23472,
+      "media_per_capitolo": 1467,
+      "motivi": [
+        "a 1467 parole/capitolo il libro chiude a 35208 parole: 1592 sotto il minimo di 36800. Il bersaglio e' 1600 parole/capitolo (38400 totali, in mezzo alla finestra). Allunga QUESTI capitoli adesso, non i prossimi."
+      ]
+    },
+    {
+      "quando": "2026-08-25T20:37:20",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 16,
+      "parole": 25576,
+      "media_per_capitolo": 1598
+    },
+    {
+      "quando": "2026-08-25T20:45:01",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 24,
+      "parole": 37031,
+      "media_per_capitolo": 1543
+    },
+    {
+      "quando": "2026-08-25T20:47:18",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 24,
+      "parole": 38696,
+      "media_per_capitolo": 1612
+    },
+    {
+      "quando": "2026-08-25T20:48:08",
+      "cosa": "consegna",
+      "esito": "non_pubblicabile",
+      "con_copertina": false,
+      "motivi": [
+        "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': Pagine reali 113, il minimo per il target e' 115; Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'"
+      ]
+    },
+    {
+      "quando": "2026-08-25T20:49:15",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 24,
+      "parole": 39668,
+      "media_per_capitolo": 1653
+    },
+    {
+      "quando": "2026-08-25T20:49:25",
+      "cosa": "consegna",
+      "esito": "non_pubblicabile",
+      "con_copertina": false,
+      "motivi": [
+        "Il pacchetto e' stato creato ma il libro NON e' pubblicabile cosi': Copertina assente: il pacchetto ha manoscritto, prompt copertina e copy, ma non l'immagine. Genera il .png dal prompt in COPERTINA-P"
+      ]
+    }
+  ]
+}

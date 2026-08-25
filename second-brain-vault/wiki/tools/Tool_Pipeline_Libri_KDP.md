@@ -95,6 +95,34 @@ Sblocca l'ecosistema Publishing (KDP) come revenue stream ripetibile: tre libri 
 con la stessa pipeline, ogni bug di calibrazione trovato su un libro si applica
 automaticamente al successivo (320 parole/pagina, niente lineette, gate di blocco veloce).
 
+## 2026-08-25 — Il ciclo si chiude end-to-end (TASK-KDP-W1)
+
+Fino a oggi la pipeline produceva un libro, ma i **tre output non arrivavano mai insieme**:
+il manoscritto stava in `libri_pronti/`, il prompt della copertina restava in
+`in_lavorazione/` e non entrava mai nel pacchetto, e il copy Amazon non aveva **nessun
+comando** che lo scrivesse. `salva_copy()` esisteva dal 2026-08-15 ma nel flusso vivo non lo
+chiamava nessuno: nei primi tre libri il copy è stato messo **a mano dentro `progetto.json`**,
+senza validazione al momento della scrittura. È così che sono passate le lineette lunghe nelle
+descrizioni di due libri **già consegnati**.
+
+Tre buchi chiusi e due comandi nuovi:
+- `kdp copy <slug> --file copy.json` — valida **prima** di salvare (campi obbligatori +
+  `valida_copy_kdp`), e se sbaglia non scrive niente. Il difetto si ferma dove nasce.
+- **La cartella finale nasce anche senza il .png**: prima `create_book_package` alzava
+  `FileNotFoundError` e senza copertina non esisteva alcun pacchetto. Ora il libro non è
+  comunque pubblicabile, ma lo dice `validazione.json` con un bloccante esplicito
+  "Copertina assente", invece di sparire in silenzio.
+- `COPERTINA-PROMPT.md` entra **sempre** nel pacchetto.
+- `kdp pacchetto <slug>` — verificatore: **COMPLETO** (tre artefatti, exit 0) contro
+  **CARICABILE SU KDP** (c'è anche l'immagine).
+
+Prova reale: **"The Winter Term"** (dark academia mystery), 24/24 capitoli, 39.668 parole,
+**116 pagine reali sul PDF**, 43,2 minuti. 135 test verdi (erano 127).
+
+Due conferme di calibrazione: il gate di blocco ha bocciato **2 volte su 7** per capitoli
+scritti corti (1.440 e 1.467 parole contro il bersaglio 1.600), e la stima a 320 parole/pagina
+ha sbagliato di nuovo (120,9 stimate contro **113 reali** alla prima consegna). Solo il PDF conta.
+
 ## Connessioni
 - [[Entity_The_Quiet_Hours_Libro_KDP]]
 - [[Entity_The_Ninth_Winter_Libro_KDP]]
