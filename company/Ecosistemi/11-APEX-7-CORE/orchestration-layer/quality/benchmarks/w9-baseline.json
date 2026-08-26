@@ -8,17 +8,17 @@
     "security_adversarial_cases": 5,
     "invalid_inputs_rejected": 5,
     "latency_ms": {
-      "p50": 34.914900083094835,
-      "p95": 64.0034000389278,
-      "p99": 64.52579994220287
+      "p50": 18.44879996497184,
+      "p95": 54.22479996923357,
+      "p99": 66.06480001937598
     },
     "cost_usd": 0.0
   },
   "load": {
     "concurrent_workflows": 20,
     "completed": 20,
-    "wall_time_ms": 947.9141000192612,
-    "per_workflow_p95_ms": 56.65790010243654
+    "wall_time_ms": 866.0826999694109,
+    "per_workflow_p95_ms": 52.99269990064204
   },
   "memory": {
     "dataset_version": "1.0",
@@ -138,7 +138,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 40.86680000182241,
+      "duration_ms": 66.06480001937598,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -150,7 +150,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 26.821100036613643,
+      "duration_ms": 34.58390000741929,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -162,7 +162,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 21.50430006440729,
+      "duration_ms": 22.552400012500584,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -174,7 +174,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 35.52849998231977,
+      "duration_ms": 36.86979995109141,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -186,7 +186,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 32.576900091953576,
+      "duration_ms": 29.501200071536005,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -198,7 +198,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 26.238800026476383,
+      "duration_ms": 54.22479996923357,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -210,7 +210,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 38.83740003220737,
+      "duration_ms": 24.81400000397116,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -222,7 +222,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 35.36889993119985,
+      "duration_ms": 35.328099969774485,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -234,7 +234,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 47.495200065895915,
+      "duration_ms": 26.070599909871817,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -246,7 +246,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 64.0034000389278,
+      "duration_ms": 36.673399969004095,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -258,7 +258,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 35.20539996679872,
+      "duration_ms": 48.948599956929684,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -270,7 +270,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 34.914900083094835,
+      "duration_ms": 28.481899993494153,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -282,7 +282,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 64.52579994220287,
+      "duration_ms": 13.024199986830354,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -294,7 +294,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 34.080800018273294,
+      "duration_ms": 11.978999944403768,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -306,7 +306,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 24.00810003746301,
+      "duration_ms": 11.852600029669702,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -318,7 +318,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 43.4918999671936,
+      "duration_ms": 25.43329994659871,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -330,7 +330,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 47.03040001913905,
+      "duration_ms": 24.885699967853725,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -342,7 +342,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 39.893100038170815,
+      "duration_ms": 18.44879996497184,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -354,7 +354,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 42.59269998874515,
+      "duration_ms": 20.187600050121546,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -366,7 +366,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 16.233599977567792,
+      "duration_ms": 14.36280005145818,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -378,7 +378,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 17.41169998422265,
+      "duration_ms": 12.681900057941675,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -390,7 +390,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 37.673099897801876,
+      "duration_ms": 15.919400029815733,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -402,7 +402,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 29.712700052186847,
+      "duration_ms": 14.895000029355288,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -414,7 +414,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 41.932899970561266,
+      "duration_ms": 14.250700012780726,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -426,7 +426,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 62.53339990507811,
+      "duration_ms": 14.260200085118413,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -438,7 +438,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 3.144600079394877,
+      "duration_ms": 1.039800001308322,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -450,7 +450,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 2.4244000669568777,
+      "duration_ms": 0.5064000142738223,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -462,7 +462,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 1.257500029169023,
+      "duration_ms": 0.6568999961018562,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -474,7 +474,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 2.1336000645533204,
+      "duration_ms": 0.6270000012591481,
       "cost_usd": 0.0,
       "ruflo": false
     },
@@ -486,7 +486,7 @@
       "behavior_correct": true,
       "quality_pass": true,
       "evidence_pass": true,
-      "duration_ms": 0.48209994565695524,
+      "duration_ms": 0.8586000185459852,
       "cost_usd": 0.0,
       "ruflo": false
     }
