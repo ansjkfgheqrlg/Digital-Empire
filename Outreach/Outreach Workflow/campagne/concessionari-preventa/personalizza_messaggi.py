@@ -115,12 +115,11 @@ def email1(nome_attivita: str, citta: str, gancio: dict) -> dict:
         f"{nome_attivita}, anche voi su Excel per i preventivi?",
     ]
     corpo = (
-        f"Buongiorno,\n"
-        f"vi scrivo perché sto sentendo diversi concessionari nella zona di {citta}.\n"
+        f"Buongiorno, sono {MITTENTE} di {BRAND}.\n"
+        f"Vi scrivo perché ho visto {nome_attivita} tra i concessionari della zona di {citta}.\n"
         f"Problema comune: 20-30 min per fare un preventivo decente e clienti che nel frattempo "
         f"chiedono altrove.\n"
-        f"Voi come li state gestendo ora? Ancora su Excel/gestionale o avete già velocizzato?\n"
-        f"{MITTENTE} - {BRAND}"
+        f"Voi come li state gestendo ora? Ancora su Excel/gestionale o avete già velocizzato?"
     )
     return {"oggetto_a": oggetti[0], "oggetto_b": oggetti[1], "oggetto_c": oggetti[2], "corpo": corpo}
 

@@ -289,6 +289,115 @@ def fase2_invio(daily_cap: int, dry_run: bool) -> dict:
     }
 
 
+def carica_lead_per_email(daily_cap: int) -> tuple[list[dict], int]:
+    """Lead NEW con email (estratta da estrai_email_lead.py) ma SENZA telefono mobile —
+    quindi non gia' coperti dal canale WhatsApp. Stesso filtro SOLO-import di
+    carica_lead_da_contattare(), stesso motivo (CP-20260803-004)."""
+    data = areus._load(areus.DEFAULT_STATE_PATH)
+    leads = data.get("leads", [])
+
+    oggi = date.today().isoformat()
+    gia_inviate_oggi = sum(
+        1 for l in leads
+        if (l.get("contattato_il") or "").startswith(oggi) and l.get("canale_contatto") == "email"
+    )
+    rimanenti = max(0, daily_cap - gia_inviate_oggi)
+
+    candidati = [
+        l for l in leads
+        if l.get("stage") == areus.STAGE_NEW
+        and (l.get("email") or "").strip()
+        and l.get("telefono_tipo") != "mobile"
+    ]
+    eligibili = [l for l in candidati if sembra_import_reale(l)]
+    scartati_no_import = len(candidati) - len(eligibili)
+    log.info(f"Filtro SOLO-import (email): {len(eligibili)}/{len(candidati)} lead con segnale import reale (scartati {scartati_no_import}).")
+
+    ordine = {"ALTA": 0, "MEDIA": 1, "BASSA": 2}
+    eligibili.sort(key=lambda l: ordine.get(l.get("priorita_lead"), 2))
+
+    pool = eligibili[: max(rimanenti * 4, rimanenti)]
+    return pool, rimanenti
+
+
+def fase2b_invio_email(daily_cap: int, dry_run: bool) -> dict:
+    """Canale Gmail (TASK-PREVENTA-CANALI-W1): lead senza numero WhatsApp mobile ma con
+    email estratta dal sito. Stesso gate Bibbia dei Messaggi di WhatsApp, stesso
+    circuit-breaker sui fallimenti consecutivi."""
+    log.info(f"FASE 2B — Invio Email (cap giornaliero: {daily_cap}, dry_run={dry_run})")
+
+    personalizza = _load_module(CAMPAIGN_DIR / "personalizza_messaggi.py", "personalizza_messaggi_email_gg")
+    invia_email = _load_module(BASE / "invia_email.py", "invia_email_gg")
+    rule_keeper = _load_module(RULE_KEEPER_DIR / "rule_keeper_lint.py", "rule_keeper_lint_email_gg")
+
+    lead_da_contattare, rimanenti_oggi = carica_lead_per_email(daily_cap)
+    log.info(f"Lead eligibili trovati (NEW + email + niente WhatsApp mobile + segnale import): {len(lead_da_contattare)}")
+
+    inviati = 0
+    falliti = 0
+    scartati_legittimi = 0
+    bocciati_bibbia = 0
+    fallimenti_consecutivi = 0
+    esiti_dettaglio = []
+    target = rimanenti_oggi if not dry_run else len(lead_da_contattare)
+
+    for i, lead in enumerate(lead_da_contattare):
+        if inviati >= target:
+            log.info(f"Cap raggiunto ({inviati}/{daily_cap} invii reali) — fermo qui.")
+            break
+
+        nome = lead.get("nome_attivita", "?")
+        email_dest = lead.get("email", "")
+        log.info(f"[{i+1}/{len(lead_da_contattare)}] {nome} ({email_dest})")
+
+        msg_data = personalizza.genera_messaggi(lead)
+        oggetto = msg_data["email1"]["oggetto_a"]
+        corpo = msg_data["email1"]["corpo"]
+
+        lint = rule_keeper.lint_messaggio(corpo, nome, lead.get("citta_ricerca", ""), tentativo_numero=1)
+        if lint["esito"] == "RESPINTO":
+            bocciati_bibbia += 1
+            motivi = "; ".join(f"P{v['pilastro']} {v['nome']}: {v['motivo']}" for v in lint["violazioni"])
+            log.warning(f"  BOCCIATO da Rule Keeper (non inviato): {motivi}")
+            esiti_dettaglio.append({"nome": nome, "email": email_dest, "esito": "bocciato_bibbia", "dettaglio": motivi})
+            continue
+
+        esito = invia_email.invia_sync(email_dest, oggetto, corpo, dry_run=dry_run)
+        esiti_dettaglio.append({"nome": nome, "email": email_dest, **esito})
+
+        if esito["esito"] == "inviato":
+            areus.mark_contacted_by_email(email_dest, canale="email", testo=corpo)
+            inviati += 1
+            fallimenti_consecutivi = 0
+            log.info(f"  OK inviato ({inviati}/{daily_cap})")
+        elif esito["esito"] == "dry_run_ok":
+            log.info("  OK dry-run (non inviato davvero)")
+            fallimenti_consecutivi = 0
+        elif esito["esito"] == "email_non_valida":
+            scartati_legittimi += 1
+            fallimenti_consecutivi = 0
+            log.info(f"  Scartato (email non valida): {nome}")
+        else:
+            falliti += 1
+            fallimenti_consecutivi += 1
+            log.warning(f"  Fallito: {esito['esito']} — {esito.get('dettaglio','')}")
+            if fallimenti_consecutivi >= MAX_FALLIMENTI_CONSECUTIVI:
+                log.error(f"STOP — {fallimenti_consecutivi} fallimenti consecutivi.")
+                break
+
+        if i < len(lead_da_contattare) - 1:
+            time.sleep(random.uniform(2.0, 5.0))  # niente sessione da proteggere (SMTP, non browser): pausa breve
+
+    return {
+        "inviati": inviati,
+        "falliti": falliti,
+        "scartati_legittimi": scartati_legittimi,
+        "bocciati_bibbia": bocciati_bibbia,
+        "eligibili": len(lead_da_contattare),
+        "dettaglio": esiti_dettaglio,
+    }
+
+
 def fase3_followup(daily_cap: int, dry_run: bool) -> dict:
     """Msg2/msg3 della sequenza 20/40/30 (Cluster F della Bibbia — 'i soldi non sono mai nel
     primo messaggio'). Fino a CP-20260805 questi messaggi esistevano solo come funzioni
@@ -407,6 +516,8 @@ def main():
     parser.add_argument("--solo-scraping", action="store_true", help="Esegue solo la fase 1")
     parser.add_argument("--solo-invio", action="store_true", help="Esegue solo la fase 2 (Areus già popolato)")
     parser.add_argument("--solo-followup", action="store_true", help="Esegue solo la fase 3 (msg2/msg3 su lead già CONTACTED)")
+    parser.add_argument("--solo-invio-email", action="store_true", help="Esegue solo la fase 2B (canale Gmail, lead senza WhatsApp mobile)")
+    parser.add_argument("--daily-cap-email", type=int, default=30, help="Max email da inviare oggi (fase 2B, canale Gmail)")
     parser.add_argument("--niente-followup", action="store_true", help="Salta la fase 3 (follow-up msg2/msg3)")
     parser.add_argument("--daily-cap", type=int, default=DAILY_CAP_DEFAULT, help="Max messaggi WhatsApp (msg1) da inviare oggi")
     parser.add_argument("--daily-cap-followup", type=int, default=DAILY_CAP_FOLLOWUP_DEFAULT, help="Max follow-up (msg2+msg3) da inviare oggi")
@@ -436,6 +547,17 @@ def main():
     risultato_scraping = None
     risultato_invio = None
     risultato_followup = None
+
+    if args.solo_invio_email:
+        risultato_email = fase2b_invio_email(args.daily_cap_email, args.dry_run_invio)
+        log.info("=" * 70)
+        log.info("RIEPILOGO INVIO EMAIL")
+        log.info(f"  Email inviate: {risultato_email['inviati']}/{args.daily_cap_email}")
+        log.info(f"  Falliti (tecnici): {risultato_email['falliti']}")
+        log.info(f"  Scartati (email non valida): {risultato_email.get('scartati_legittimi',0)}")
+        log.info(f"  Bocciati da Rule Keeper: {risultato_email.get('bocciati_bibbia',0)}")
+        log.info("=" * 70)
+        return
 
     if args.solo_followup:
         risultato_followup = fase3_followup(daily_cap_followup, dry_run_invio)

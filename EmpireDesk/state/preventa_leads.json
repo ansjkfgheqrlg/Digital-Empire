@@ -62,7 +62,9 @@
       "telefono_tipo": "mobile",
       "stage": "NEW",
       "note": "",
-      "aggiunto_il": "2026-07-29 16:13"
+      "aggiunto_il": "2026-07-29 16:13",
+      "email": "info@kaufmannautomobili.it",
+      "email_estratta_il": "2026-08-26 12:10"
     },
     {
       "nome_attivita": "SPRINT CAR - Vendiamo e acquistiamo auto in tutta Italia e all'estero",
@@ -82,7 +84,9 @@
       "telefono_tipo": "sconosciuto",
       "stage": "NEW",
       "note": "",
-      "aggiunto_il": "2026-07-29 16:13"
+      "aggiunto_il": "2026-07-29 16:13",
+      "email": "sprintcarsrls29@gmail.com",
+      "email_estratta_il": "2026-08-26 12:10"
     },
     {
       "nome_attivita": "Eurocar Brescia",
@@ -102,7 +106,9 @@
       "telefono_tipo": "mobile",
       "stage": "NEW",
       "note": "",
-      "aggiunto_il": "2026-07-29 16:13"
+      "aggiunto_il": "2026-07-29 16:13",
+      "email": "roberto@eurocarbrescia.com",
+      "email_estratta_il": "2026-08-26 12:10"
     },
     {
       "nome_attivita": "Auto usate Brescia Omar Forlini Srl Auto Km Zero",
@@ -142,7 +148,9 @@
       "telefono_tipo": "fisso",
       "stage": "NEW",
       "note": "",
-      "aggiunto_il": "2026-07-29 16:13"
+      "aggiunto_il": "2026-07-29 16:13",
+      "email": "eurocaritalia@pec.it",
+      "email_estratta_il": "2026-08-26 12:10"
     },
     {
       "nome_attivita": "AutoElite Sas - Auto usate a Brescia",
@@ -162,7 +170,9 @@
       "telefono_tipo": "fisso",
       "stage": "NEW",
       "note": "",
-      "aggiunto_il": "2026-07-29 16:14"
+      "aggiunto_il": "2026-07-29 16:14",
+      "email": "commerciale@autoelitebrescia.com",
+      "email_estratta_il": "2026-08-26 12:10"
     },
     {
       "nome_attivita": "Gruppo Carmeli - DR, Sportequipe, ICH-X - Brescia",
@@ -182,7 +192,9 @@
       "telefono_tipo": "fisso",
       "stage": "NEW",
       "note": "",
-      "aggiunto_il": "2026-07-29 16:14"
+      "aggiunto_il": "2026-07-29 16:14",
+      "email": "servizioclienti@gruppocarmeli.com",
+      "email_estratta_il": "2026-08-26 12:10"
     },
     {
       "nome_attivita": "AUTOBERLIN BRESCIA - Concessionaria Cirelli Motor Company",
@@ -262,7 +274,9 @@
       "telefono_tipo": "fisso",
       "stage": "NEW",
       "note": "",
-      "aggiunto_il": "2026-07-29 16:15"
+      "aggiunto_il": "2026-07-29 16:15",
+      "email": "info@barchetti.it",
+      "email_estratta_il": "2026-08-26 12:11"
     },
     {
       "nome_attivita": "AUTOUNICA",
@@ -366,7 +380,9 @@
       "canale_contatto": "whatsapp",
       "contattato_il": "2026-07-30 10:01",
       "msg2_inviato_il": "2026-08-20 14:18",
-      "msg2_testo": "Capito.\nNoi abbiamo fatto Preventa proprio per questo: non è un gestionale.\nIncollate il link dell'annuncio ed esce un PDF brandizzato Le Occasioni Euro con prezzi bloccati dal titolare. Pulito, inviabile su WA al volo.\nVuoi che ti mando un esempio fatto con un vostro annuncio?"
+      "msg2_testo": "Capito.\nNoi abbiamo fatto Preventa proprio per questo: non è un gestionale.\nIncollate il link dell'annuncio ed esce un PDF brandizzato Le Occasioni Euro con prezzi bloccati dal titolare. Pulito, inviabile su WA al volo.\nVuoi che ti mando un esempio fatto con un vostro annuncio?",
+      "email": "info@leoccasionieuro.com",
+      "email_estratta_il": "2026-08-26 12:11"
     },
     {
       "nome_attivita": "AutoMonza.it minicar | LIGIER MICROCAR CASALINI",
@@ -386,7 +402,9 @@
       "telefono_tipo": "fisso",
       "stage": "NEW",
       "note": "",
-      "aggiunto_il": "2026-07-30 08:53"
+      "aggiunto_il": "2026-07-30 08:53",
+      "email": "info@automonza.it",
+      "email_estratta_il": "2026-08-26 12:11"
     },
     {
       "nome_attivita": "Autolocatelli Opel Vedano al Lambro",
@@ -406,7 +424,9 @@
       "telefono_tipo": "sconosciuto",
       "stage": "NEW",
       "note": "",
-      "aggiunto_il": "2026-07-30 08:53"
+      "aggiunto_il": "2026-07-30 08:53",
+      "email": "web@locatelligroup.eu",
+      "email_estratta_il": "2026-08-26 12:11"
     },
     {
       "nome_attivita": "AUTO LG SRL - VENDITA E ACQUISTO AUTOMOBILI",
@@ -450,7 +470,9 @@
       "telefono_tipo": "fisso",
       "stage": "NEW",
       "note": "",
-      "aggiunto_il": "2026-07-30 08:53"
+      "aggiunto_il": "2026-07-30 08:53",
+      "email": "giorgio.cascella@motorsmonza.it",
+      "email_estratta_il": "2026-08-26 12:11"
     },
     {
       "nome_attivita": "2B Auto srl",
@@ -21017,5 +21039,5 @@
       "aggiunto_il": "2026-08-22 23:22"
     }
   ],
-  "aggiornato": "2026-08-22 23:22"
+  "aggiornato": "2026-08-26 12:11"
 }

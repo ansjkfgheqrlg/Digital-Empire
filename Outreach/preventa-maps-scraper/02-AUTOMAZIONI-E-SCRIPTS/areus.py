@@ -99,6 +99,7 @@ def upload_to_areus(leads: List[Dict], city: str, state_path: Optional[str] = No
             "indirizzo": lead.get("indirizzo", ""),
             "telefono": lead.get("telefono", ""),
             "sito_web": lead.get("sito_web", ""),
+            "email": lead.get("email", ""),
             "ha_sito": lead.get("ha_sito", ""),
             "numero_recensioni": lead.get("numero_recensioni", 0),
             "media_recensioni": lead.get("media_recensioni", 0),
@@ -139,6 +140,47 @@ def mark_contacted(telefono: str, canale: str = "", state_path: Optional[str] = 
     found = False
     for lead in data.get("leads", []):
         if normalize_phone(lead.get("telefono", "")) == key:
+            lead["stage"] = STAGE_CONTACTED
+            lead["canale_contatto"] = canale
+            lead["contattato_il"] = time.strftime("%Y-%m-%d %H:%M")
+            if testo:
+                lead["msg1_testo"] = testo
+            found = True
+    if found:
+        _save(path, data)
+    return found
+
+
+def set_email(sito_web: str, email: str, state_path: Optional[str] = None) -> bool:
+    """Scrive l'email estratta dal sito su tutti i lead che condividono quel `sito_web`
+    (chiave usata perche' molti lead import hanno il telefono vuoto/fisso: sito_web e'
+    l'unico campo comune tra scraper e email_extractor). Usato da estrai_email_lead.py."""
+    if not sito_web or not sito_web.strip():
+        return False
+    path = Path(state_path) if state_path else DEFAULT_STATE_PATH
+    data = _load(path)
+    found = False
+    for lead in data.get("leads", []):
+        if (lead.get("sito_web", "") or "").strip() == sito_web.strip():
+            lead["email"] = email
+            lead["email_estratta_il"] = time.strftime("%Y-%m-%d %H:%M")
+            found = True
+    if found:
+        _save(path, data)
+    return found
+
+
+def mark_contacted_by_email(email: str, canale: str = "email", state_path: Optional[str] = None, testo: Optional[str] = None) -> bool:
+    """Come `mark_contacted`, ma per lead raggiunti via email invece che WhatsApp
+    (chiave = email, non telefono: molti lead import hanno il telefono vuoto)."""
+    if not email or not email.strip():
+        return False
+    path = Path(state_path) if state_path else DEFAULT_STATE_PATH
+    data = _load(path)
+    key = email.strip().lower()
+    found = False
+    for lead in data.get("leads", []):
+        if (lead.get("email", "") or "").strip().lower() == key:
             lead["stage"] = STAGE_CONTACTED
             lead["canale_contatto"] = canale
             lead["contattato_il"] = time.strftime("%Y-%m-%d %H:%M")
