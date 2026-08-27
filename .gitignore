@@ -139,3 +139,13 @@ YOUTUBE-AUTOMATION-FACTORY/05-TEMPLATES-E-KIT/arena_debug_final.png
 
 # Profili browser Playwright/Selenium (cookie + sessioni loggate)
 **/browser-profile*/
+
+# --- CAROUSEL FACTORY: cartella di lavoro del motore di render ---
+# Il motore scrive qui a ogni run; la libreria vera dei caroselli finiti e'
+# "SKILL & Agenti/Workflow agency creative/Arsenale Caroselli/" (quella SI'
+# tracciata, e' il prodotto). Tracciare anche questa significa committare ogni
+# PNG due volte: ~5,4 MB per un solo carosello da 6 slide, che e' esattamente
+# il problema aperto in BACKLOG B-008. Aggiunta il 2026-08-27 (CP-20260825-003).
+# Nota: l'output del 2026-03-22 resta tracciato da prima di questa regola, non
+# lo si toglie dalla storia qui.
+Workfolw crea caroselli à/carousel-factory/output/

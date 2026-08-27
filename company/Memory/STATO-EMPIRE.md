@@ -42,6 +42,46 @@ bridge RuFlo; (3) solo dopo Fase 2 completa: archiviare il motore legacy con
 
 ---
 
+## 🟠 2026-08-27 — CLAUDE: TASK-CAROSELLI-W1 CHIUSO — un comando, un argomento, carosello reale nell'Arsenale — CP-20260825-003
+
+**Gate soddisfatto.** Un comando solo, un argomento, exit 0:
+
+```
+python "SKILL & Agenti/Workflow agency creative/caroselli.py" "<argomento>" --slide 6
+```
+
+Output reale: `Arsenale Caroselli/Preventa/2026-08-27_quanto-tempo-perdi-a-fare-un-preventivo/`
+— 6 PNG 1080x1080, `copy.json`, `caption.txt`. **Verificato guardando le slide**, non solo il
+log. Pipeline in un processo solo: argomento → copy via API → **validazione del copy** →
+piano → render → deposito → gate automatico. Nessun passaggio manuale in mezzo.
+
+**Cambio di motore, dichiarato.** La task indicava il Ramo D (Arena, browser). Verificato che
+è **fermo su questa macchina**: `playwright_stealth` non installato, `ArenaAI/session_data/`
+inesistente (serve login Google interattivo, ed è gitignorato quindi non arriva col repo), e
+comunque richiedeva **5 passaggi manuali per run** (attesa, `check_status` a mano, eventuale
+resume, download separato con il nome dello ZIP scritto a mano nel codice, scompattamento e
+`copy.json` a mano). Usato il **Ramo C** (render locale Puppeteer), che era progettato da
+giugno e mai costruito. Il Ramo D non è stato smontato: sta dietro `--engine arena`, che oggi
+esce dicendo cosa manca.
+
+**Il motore rendeva slide sbagliate in silenzio, da sempre.** Il primo smoke test ha stampato
+`✅ generato` e il PNG era rotto: font di sistema al posto di Anton, parole incollate. Tre bug
+veri, tutti invisibili nel log: il `@font-face` puntava a un percorso su disco e **Chrome
+blocca le sottorisorse `file://`** da una pagina creata con `page.setContent()`; la parola
+accent veniva concatenata fuori dal ciclo delle parole e mangiava gli spazi; lo screenshot
+partiva prima che i webfont fossero applicati. Tutti e tre corretti. 20 test verdi.
+
+**🔴 DA FARE SUBITO — B-021.** `SKILL & Agenti/Workflow agency creative/caroselli - agency/config.py`
+è **tracciato sul repo PUBBLICO** con `ARENA_EMAIL`, `ARENA_PASSWORD` e due API key **in
+chiaro**. È peggio di B-020: lì è una chiave, qui c'è la **password di un account**. La chiave
+Groq è già morta (401), **quella OpenRouter è viva** e ha generato il copy di oggi.
+
+**RIPRESA DA**: (1) ruotare password Arena e chiave OpenRouter, credenziali su `.env`;
+(2) **TASK-PUBLISHER-W1 è ora sbloccata** come previsto dalla task: prende in ingresso proprio
+una cartella dell'Arsenale, che ora ha forma stabile e verificata dal gate.
+
+---
+
 ## 📕 2026-08-25 — CLAUDE: TASK-KDP-W1 CHIUSO — ciclo KDP end-to-end, "The Winter Term" prodotto dal flusso riparato — CP-20260825-002
 
 **Gate soddisfatto.** `python -m engine.kdp pacchetto the-winter-term` esce **0**: manoscritto,

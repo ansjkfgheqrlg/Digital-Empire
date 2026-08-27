@@ -3,17 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <style>
+  /* I font arrivano incorporati come data: URI, non come percorso su disco.
+     Motivo (verificato, 2026-08-25): la pagina viene caricata con
+     page.setContent(), quindi il documento ha origine about:blank e Chrome
+     BLOCCA qualunque sottorisorsa file:// richiesta da li'. Con l'url su disco
+     il @font-face falliva sempre, in silenzio, e ogni slide usciva col sans di
+     sistema al posto di Anton. Vedi replaceBrandVars() in scripts/render.js. */
   @font-face {
     font-family: 'Hero';
-    src: url('{{FONT_PATH}}/{{FONT_HERO_FILE}}.ttf');
+    src: {{FONT_HERO_SRC}};
   }
   @font-face {
     font-family: 'Bold';
-    src: url('{{FONT_PATH}}/{{FONT_BOLD_FILE}}.ttf');
+    src: {{FONT_BOLD_SRC}};
   }
   @font-face {
     font-family: 'Regular';
-    src: url('{{FONT_PATH}}/{{FONT_REGULAR_FILE}}.ttf');
+    src: {{FONT_REGULAR_SRC}};
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }

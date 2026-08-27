@@ -680,3 +680,31 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   nuovo, 120,9 stimate contro 113 reali: solo il PDF conta. Scoperto anche che allungare un
   libro finito può rompere la continuità (conflitto Dunleavy cap 17/18, riparato).
   CP-20260825-002.
+
+## 2026-08-27 (TASK-CAROSELLI-W1: un comando, un argomento, carosello nell'Arsenale, Claude)
+- BUILD: nuovo comando unico `SKILL & Agenti/Workflow agency creative/caroselli.py`.
+  Prima il flusso esisteva ma era in cinque pezzi da lanciare a mano (avvio browser,
+  controllo stato, eventuale resume, download separato, scompattamento e `copy.json`
+  scritti a mano). Ora: argomento → copy via API → **validazione del copy prima del
+  render** (max 7 parole, accent presente nel testo, niente lineette lunghe: un copy
+  sbagliato viene rigenerato, non renderizzato) → render locale → deposito ordinato →
+  gate automatico che conta i PNG e ne controlla peso e dimensioni reali. 20 test verdi.
+- INGEST: primo carosello del Ramo C in `Arsenale Caroselli/Preventa/2026-08-27_quanto-tempo-perdi-a-fare-un-preventivo/`
+  (6 slide 1080x1080 + copy.json + caption). Nuovo brand `preventa` in carousel-factory,
+  con i colori reali già documentati (#101E3E, #FF4D00, #F6F7F9), non inventati.
+- BUILD: **cambio di motore dichiarato**. Il Ramo D (Arena browser), indicato dalla task,
+  è verificato fermo: `playwright_stealth` non installato, `session_data/` assente (serve
+  login Google interattivo), e comunque non compatibile con "nessun passaggio manuale".
+  Usato il Ramo C (render locale), progettato a giugno e mai costruito fino a oggi.
+  Reparto CF-R5 aggiornato: nuovo ordine `CF-2026-PREVENTA-002` + `ARCHITETTURA.md`.
+- LEZIONE: il renderer produceva slide sbagliate **in silenzio da sempre**. Tre bug reali,
+  zero errori nel log, visibili solo aprendo il PNG: `@font-face` su percorso disco
+  (Chrome blocca le sottorisorse `file://` da una pagina creata con `page.setContent()`,
+  quindi il font non si caricava mai), parola accent concatenata fuori dal ciclo delle
+  parole (spazi mangiati, "funzionail render"), screenshot scattato prima dei webfont.
+  Conferma diretta della regola in `ArenaAI/KNOWN-ISSUES.md`: un run senza eccezioni non è
+  un run riuscito. Trovato anche che `npm install` può uscire con **exit 0** lasciando
+  `node_modules/puppeteer` senza `package.json`.
+- ⚠️ SICUREZZA (B-021): `caroselli - agency/config.py` è tracciato sul repo **pubblico** con
+  `ARENA_EMAIL`, `ARENA_PASSWORD` e due API key in chiaro. Peggio di B-020: qui c'è la
+  password di un account. Chiave OpenRouter **viva**. CP-20260825-003.

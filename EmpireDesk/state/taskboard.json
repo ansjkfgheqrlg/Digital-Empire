@@ -221,8 +221,8 @@
       "owner": "Gael",
       "giorno": "Settimana 1 (24-30 ago 2026)",
       "titolo": "Carousel Factory: comando unico + argomento topic -> caroselli generati e salvati ordinati per prodotto. UFFICIALE da oggi, Claude assiste direttamente",
-      "stato": "da_fare",
-      "note": "Motore: SKILL & Agenti/Workflow agency creative/caroselli - preventa/. Output: Arsenale Caroselli/<Prodotto>/. Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
+      "stato": "fatto",
+      "note": "FATTO 2026-08-27 (CP-20260825-003). Comando unico: `python \"SKILL & Agenti/Workflow agency creative/caroselli.py\" \"<argomento>\" --slide 6`, exit 0. Output reale: Arsenale Caroselli/Preventa/2026-08-27_quanto-tempo-perdi-a-fare-un-preventivo/ (6 PNG 1080x1080 + copy.json + caption.txt), verificato guardando le slide, non solo il log. Pipeline in un processo solo: argomento -> copy via API -> validazione copy (max 7 parole, accent presente, niente lineette lunghe: un copy sbagliato viene rigenerato, non renderizzato) -> render locale -> deposito -> gate automatico (conta PNG, peso, dimensioni reali). MOTORE: usato il Ramo C (render locale Puppeteer) e NON il Ramo D (Arena) indicato nella task, perche' il D e' verificato fermo su questa macchina (playwright_stealth non installato, ArenaAI/session_data assente = serve login Google interattivo, e comunque richiede 5 passaggi manuali per run). Il D resta raggiungibile con --engine arena, che spiega cosa manca. Trovati e corretti 3 bug reali nel runtime carousel-factory che producevano slide sbagliate IN SILENZIO (font mai caricati per policy di origine su page.setContent, parole incollate, screenshot prima dei webfont). 20 test verdi. Ordine formale CF-2026-PREVENTA-002 + ARCHITETTURA.md CF-R5 aggiornata. ATTENZIONE B-021: caroselli - agency/config.py e' tracciato sul repo PUBBLICO con ARENA_EMAIL, ARENA_PASSWORD e 2 API key in chiaro (chiave OpenRouter viva). Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
     },
     {
       "id": "TASK-PUBLISHER-W1",

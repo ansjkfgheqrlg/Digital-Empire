@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs-extra');
 const path = require('path');
+const { pathToFileURL } = require('url');
 
 async function renderCarousel(carouselData) {
   const brand = carouselData.brand;
@@ -71,6 +72,28 @@ async function renderCarousel(carouselData) {
     await page.setViewport({ width: 1080, height: 1080 });
     await page.setContent(finalHTML, { waitUntil: 'networkidle0' });
 
+    // BUG REALE (2026-08-25): `networkidle0` NON aspetta i webfont. Lo
+    // screenshot partiva prima che @font-face avesse applicato Anton, quindi
+    // ogni slide usciva col sans di ripiego. Anche qui: zero errori nel log,
+    // difetto visibile solo aprendo il PNG.
+    //
+    // document.fonts.ready si risolve quando il font e' davvero applicabile.
+    // Verifichiamo anche che sia stato caricato per davvero e lo diciamo, invece
+    // di lasciare che un font mancante passi in silenzio: `Inter-Regular.ttf` in
+    // questo repo NON e' un font (e' una pagina HTML salvata con estensione
+    // .ttf, verificato dai magic bytes) ed era stato notato da nessuno.
+    await page.evaluate(() => document.fonts.ready);
+    const fontiCaricate = await page.evaluate(() =>
+      [...document.fonts].map(f => `${f.family}:${f.status}`)
+    );
+    // Solo `error` e' un difetto: `unloaded` significa che quella famiglia non
+    // e' usata da nessun elemento di QUESTA slide, e il browser non la carica
+    // apposta. Segnalarlo sarebbe un falso allarme a ogni singola slide.
+    const inErrore = fontiCaricate.filter(f => f.endsWith(':error'));
+    if (inErrore.length) {
+      console.warn(`   [!] font in errore: ${inErrore.join(', ')} — la slide uscira' con un font di ripiego`);
+    }
+
     // Screenshot
     const fileName = `slide-${String(slide.numero).padStart(2, '0')}.png`;
     await page.screenshot({
@@ -96,21 +119,85 @@ async function renderCarousel(carouselData) {
   console.log(`📊 ${carouselData.slides.length} slide create`);
 }
 
-// Applica gradiente per ogni singola parola (display:inline-block su ogni word)
-function applyWordGradients(text, gradient, shadowCSS) {
+// Applica gradiente per ogni singola parola (display:inline-block su ogni word).
+//
+// BUG REALE (2026-08-25): prima la parola accent veniva gestita FUORI di qui,
+// spezzando `testo_grande` con una regex e riconcatenando
+// `before + accentSpan + after`. Ma questa funzione fa
+// `split(' ').filter(w => w.length > 0).join(' ')`, che butta via gli spazi di
+// bordo: con testo_grande "funziona il render" e accent "funziona" usciva
+// **"funzionail render"**, parole incollate. Visibile solo guardando il PNG,
+// nessun errore nel log.
+//
+// Adesso l'accent e' una decisione presa DENTRO il ciclo delle parole: lo
+// spazio fra le parole lo mette sempre e solo il `join(' ')` finale, quindi la
+// classe di bug non puo' ripresentarsi.
+function applyWordGradients(text, gradient, shadowCSS, opts = {}) {
   if (!text) return '';
+  const { accent = '', accentColor = '', glow = '' } = opts;
   const shadow = shadowCSS ? `text-shadow: ${shadowCSS};` : '';
+  const accentWords = accent
+    ? accent.toLowerCase().split(/\s+/).filter(Boolean)
+    : [];
+  const spoglia = (w) => w.toLowerCase().replace(/[.,;:!?"'()«»]/g, '');
+
   return text
+    .replace(/\\n/g, '\n')   // "\n" letterale nel JSON = a capo voluto
     .split('\n')
     .map(line =>
       line.split(' ')
         .filter(w => w.length > 0)
-        .map(word =>
-          `<span style="display: inline-block; background: ${gradient}; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; ${shadow}">${word}</span>`
-        )
+        .map(word => {
+          if (accentWords.length && accentWords.includes(spoglia(word))) {
+            return `<span style="display: inline-block; -webkit-text-fill-color: ${accentColor}; color: ${accentColor}; text-shadow: ${glow};">${word}</span>`;
+          }
+          if (!gradient) {
+            return `<span style="display: inline-block; ${shadow}">${word}</span>`;
+          }
+          return `<span style="display: inline-block; background: ${gradient}; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; ${shadow}">${word}</span>`;
+        })
         .join(' ')
     )
     .join('<br>');
+}
+
+// Legge un font dal brand e lo restituisce come `src:` CSS gia' pronto,
+// incorporato in base64.
+//
+// Perche' incorporato e non un url() su disco: la pagina nasce da
+// page.setContent(), quindi ha origine about:blank e Chrome rifiuta le
+// sottorisorse file:// richieste da li'. Con l'url su disco il font non si
+// caricava MAI e nessuno se ne accorgeva, perche' il fallback e' silenzioso.
+//
+// Controlla anche che il file sia davvero un font guardando i magic bytes:
+// `Inter-Regular.ttf` in questo repo e' una pagina HTML salvata con estensione
+// .ttf (verificato), e incorporarla come base64 produrrebbe lo stesso identico
+// fallback silenzioso che stiamo togliendo di mezzo. Meglio dirlo e ripiegare
+// su un font di sistema dichiarato.
+function fontSrc(brandName, fontFile, ruolo) {
+  const ripiego = "local('Arial'), local('Helvetica'), sans-serif";
+  if (!fontFile) return ripiego;
+
+  const file = path.join(__dirname, '..', 'brands', brandName, 'assets', 'fonts', `${fontFile}.ttf`);
+  if (!fs.existsSync(file)) {
+    console.warn(`   [!] font ${ruolo}: ${fontFile}.ttf non esiste — uso un font di sistema`);
+    return ripiego;
+  }
+
+  const buf = fs.readFileSync(file);
+  // TrueType: 00 01 00 00 oppure "true"/"ttcf". OpenType/CFF: "OTTO". WOFF: "wOFF"/"wOF2".
+  const firma = buf.subarray(0, 4);
+  const firmeValide = [
+    Buffer.from([0x00, 0x01, 0x00, 0x00]),
+    Buffer.from('true'), Buffer.from('ttcf'), Buffer.from('OTTO'),
+    Buffer.from('wOFF'), Buffer.from('wOF2'),
+  ];
+  if (!firmeValide.some(f => firma.equals(f))) {
+    console.warn(`   [!] font ${ruolo}: ${fontFile}.ttf NON e' un font (primi byte: ${firma.toString('hex')}) — uso un font di sistema`);
+    return ripiego;
+  }
+
+  return `url(data:font/ttf;base64,${buf.toString('base64')}) format('truetype')`;
 }
 
 function replaceBrandVars(html, config) {
@@ -151,7 +238,9 @@ function replaceBrandVars(html, config) {
     '{{GRAIN_OPACITY}}': String(config.effects.grain_opacity),
     '{{VIGNETTE_INTENSITY}}': String(config.effects.vignette_intensity),
     '{{PADDING}}': config.layout.padding,
-    '{{FONT_PATH}}': path.join(__dirname, '..', 'brands', config.brand_name, 'assets', 'fonts').replace(/\\/g, '/'),
+    '{{FONT_HERO_SRC}}': fontSrc(config.brand_name, config.typography.font_hero, 'Hero'),
+    '{{FONT_BOLD_SRC}}': fontSrc(config.brand_name, config.typography.font_bold, 'Bold'),
+    '{{FONT_REGULAR_SRC}}': fontSrc(config.brand_name, config.typography.font_regular, 'Regular'),
     '{{FONT_HERO_FILE}}': config.typography.font_hero,
     '{{FONT_BOLD_FILE}}': config.typography.font_bold,
     '{{FONT_REGULAR_FILE}}': config.typography.font_regular,
@@ -176,45 +265,17 @@ function populateSlide(template, slide, config) {
   const shadowCSS = config.effects.text_shadow;
 
   // --- Costruisce TESTO_GRANDE_HTML con gradiente per-parola ---
-  let grandeHTML = '';
-  if (slide.testo_grande) {
-    if (useGradient) {
-      // Splitta il testo intorno alla parola accent
-      if (slide.testo_accent) {
-        const regex = new RegExp(`(${slide.testo_accent.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'i');
-        const parts = slide.testo_grande.split(regex);
-        const before = parts[0] || '';
-        const accentWord = parts[1] || '';
-        const after = parts[2] || '';
-
-        // Accent: usa il colore rosso sangue puro (non gradiente, per staccarsi)
-        const accentSpan = accentWord
-          ? `<span style="display: inline-block; -webkit-text-fill-color: ${accentColor}; color: ${accentColor}; text-shadow: ${config.effects.glow_accent};">${accentWord}</span>`
-          : '';
-
-        grandeHTML = applyWordGradients(before, gradient, shadowCSS)
-          + accentSpan
-          + applyWordGradients(after, gradient, shadowCSS);
-      } else {
-        grandeHTML = applyWordGradients(slide.testo_grande, gradient, shadowCSS);
-      }
-    } else {
-      // Senza gradiente: testo normale con accent span
-      let before = slide.testo_grande;
-      let after = '';
-      if (slide.testo_accent) {
-        const regex = new RegExp(`(${slide.testo_accent.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'i');
-        const parts = slide.testo_grande.split(regex);
-        before = parts[0] || '';
-        const accentWord = parts[1] || '';
-        after = parts[2] || '';
-        const accentSpan = `<span style="color: ${accentColor}; text-shadow: ${config.effects.glow_accent};">${accentWord}</span>`;
-        grandeHTML = (before + accentSpan + after).replace(/\\n/g, '<br>');
-      } else {
-        grandeHTML = before.replace(/\\n/g, '<br>');
-      }
-    }
-  }
+  // Un solo percorso, con o senza gradiente e con o senza accent: la parola
+  // accent e' un caso dentro il ciclo delle parole, non una concatenazione
+  // fatta fuori (vedi il commento su applyWordGradients per il bug che
+  // quella concatenazione produceva).
+  const grandeHTML = slide.testo_grande
+    ? applyWordGradients(slide.testo_grande, gradient, shadowCSS, {
+        accent: slide.testo_accent || '',
+        accentColor,
+        glow: config.effects.glow_accent,
+      })
+    : '';
 
   // --- Sostituzioni base ---
   template = template

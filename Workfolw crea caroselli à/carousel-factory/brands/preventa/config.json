@@ -1,0 +1,61 @@
+{
+  "_nota": "Colori NON inventati: presi da 'Crea siti/Preventa/index.html' e documentati in 'SKILL & Agenti/Workflow agency creative/caroselli - preventa/REGOLE.md'. Regola di brand: l'arancio e' SOLO accento/CTA, mai oltre il 10% della slide.",
+  "brand_name": "preventa",
+  "display_name": "Preventa",
+  "instagram": "@preventa.it",
+
+  "colors": {
+    "background": "#101E3E",
+    "background_alt": "#0B1530",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#F6F7F9",
+    "text_muted": "#8A97B5",
+    "accent_1": "#FF4D00",
+    "accent_2": "#F6F7F9",
+    "accent_3": "#0B1530"
+  },
+
+  "gradient": {
+    "hero_text": "linear-gradient(180deg, #FFFFFF 0%, #B9C4DC 100%)",
+    "use_gradient_text": true
+  },
+
+  "typography": {
+    "font_hero": "Poppins-Bold",
+    "font_bold": "Poppins-SemiBold",
+    "font_regular": "Poppins-Regular",
+    "size_hero": "92px",
+    "size_large": "62px",
+    "size_medium": "38px",
+    "size_small": "26px",
+    "line_height_hero": "1.02",
+    "line_height_body": "1.35",
+    "letter_spacing_hero": "-2px",
+    "text_transform_hero": "lowercase"
+  },
+
+  "effects": {
+    "grain_opacity": 0.12,
+    "grain_intensity": "low",
+    "text_shadow": "0 4px 30px rgba(0,0,0,0.45)",
+    "glow_accent": "0 0 45px rgba(255,77,0,0.35)",
+    "vignette": true,
+    "vignette_intensity": 0.5,
+    "image_overlay": "linear-gradient(180deg, rgba(16,30,62,0.72) 0%, rgba(11,21,48,0.94) 100%)",
+    "image_filter": "brightness(0.6) saturate(1.05)"
+  },
+
+  "layout": {
+    "canvas_width": 1080,
+    "canvas_height": 1080,
+    "padding": "72px",
+    "text_align": "left"
+  },
+
+  "logo": {
+    "show": false,
+    "position": "bottom-right",
+    "size": "70px",
+    "opacity": 0.65
+  }
+}

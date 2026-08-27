@@ -1,0 +1,51 @@
+{
+  "order_id": "CF-2026-PREVENTA-002",
+  "workflow": "WF-CAROSELLO",
+  "brand": "Preventa",
+  "brand_kit_path": "Workfolw crea caroselli à/carousel-factory/brands/preventa/config.json",
+  "ramo_attivo": "C",
+  "nota_ramo": "PRIMO ordine eseguito sul Ramo C (render locale Puppeteer, carousel-factory). Fino a oggi il Ramo C era progettato ma mai costruito, e l'unico ramo vivo era il D (Arena browser). Il D e' stato verificato FERMO su questa macchina il 2026-08-25: playwright_stealth non installato, ArenaAI/session_data assente (serve login Google interattivo, ed e' gitignorato). Vedi CP-20260825-003.",
+  "avviato_il": "2026-08-27T19:55:00Z",
+  "comando": "python \"SKILL & Agenti/Workflow agency creative/caroselli.py\" \"quanto tempo perdi a fare un preventivo a mano mentre il cliente scrive ad altri tre concessionari\" --slide 6",
+  "fasi": {
+    "00-dry-run": {
+      "stato": "non_applicabile",
+      "nota": "Il comando unico non ha uno step dry-run separato: copy, piano, render e gate girano in un solo processo senza interazione umana."
+    },
+    "brief": {
+      "stato": "completato",
+      "owner": "caroselli.py",
+      "contenuto": "Brief Preventa dall'anagrafe prodotti (posizionamento, pain point, 4 leve validate su outreach reale, prezzo 2000EUR una tantum, regola CTA no-DM).",
+      "script": "SKILL & Agenti/Workflow agency creative/caroselli_prodotti.json"
+    },
+    "01-slidecopy": {
+      "stato": "completato",
+      "owner": "caroselli.py::genera_copy (riusa Agents/ai_client.py del progetto Agency, ADR-003)",
+      "modello": "google/gemini-2.5-flash via OpenRouter (Groq in rotazione ha risposto 401: chiave morta)",
+      "nota": "Il copy passa da valida_copy() PRIMA del render: numero slide, tipo slide, max 7 parole, accent presente nel testo, niente lineette lunghe. Se non passa viene rigenerato, non renderizzato."
+    },
+    "03-design_04-render": {
+      "stato": "completato",
+      "owner": "cf-r5-render (Ramo C, carousel-factory/scripts/generate.js)",
+      "output_motore": "Workfolw crea caroselli à/carousel-factory/output/2026-08-27-preventivi-tempo-e-clienti-persi",
+      "durata": "secondi, nessuna sorveglianza umana, nessuna sessione autenticata"
+    },
+    "05-qa": {
+      "stato": "completato",
+      "owner": "caroselli.py::gate",
+      "tipo": "AUTOMATICO",
+      "nota": "Differenza rispetto a CF-2026-PREVENTA-001, dove GATE-FORMATO e GATE-BRAND erano dichiaratamente verificati A MANO. Qui il gate e' codice: conta i PNG, controlla peso minimo e dimensioni reali 1080x1080, verifica copy.json e caption non vuota. Exit 1 se fallisce.",
+      "esito": "PASS — 6 slide 1080x1080, copy.json e caption presenti"
+    },
+    "06-consegna": {
+      "stato": "completato",
+      "path": "SKILL & Agenti/Workflow agency creative/Arsenale Caroselli/Preventa/2026-08-27_quanto-tempo-perdi-a-fare-un-preventivo/",
+      "contenuto": "slide_01..06.png + slide-01..06.html (debug) + copy.json + caption.txt"
+    }
+  },
+  "gap_dichiarati": [
+    "CF-R6-QA-Gate (handoff successivo) non esiste ancora: l'ordine si ferma a consegnato.",
+    "La pubblicazione non e' agganciata: e' TASK-PUBLISHER-W1, deliberatamente fuori da questo ordine.",
+    "Il Ramo D (Arena) resta il ramo dichiarato per la resa visiva 'ultra grain 4K': non e' stato sostituito, e' stato messo dietro --engine arena con un errore che spiega cosa manca."
+  ]
+}

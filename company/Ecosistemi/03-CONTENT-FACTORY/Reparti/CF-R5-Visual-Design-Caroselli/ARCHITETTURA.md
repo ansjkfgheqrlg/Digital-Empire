@@ -35,10 +35,31 @@ CF-Director: usa sempre il canale L1-PROD (separazione gerarchica MEGA-REPARTO A
 ## Architettura engine: Canva MCP vs Render Locale vs Arena Agent Workspace
 
 CF-R5 orchestra quattro engine di produzione paralleli. La scelta è strutturata, non
-arbitraria. **Stato reale al 2026-08-06** (verificato, non presunto): Rami A/B/C sono
-progettati ma mai eseguiti (nessuna cartella `orders/` esisteva su disco prima di oggi).
-Il **Ramo D è l'unico verificato con un output reale** (primo carosello Preventa,
-[[CP-20260805-013]]) — vedi `orders/CF-2026-PREVENTA-001/` per lo state.json reale.
+arbitraria.
+
+> **⚠️ AGGIORNAMENTO STATO REALE — 2026-08-27 (CP-20260825-003).** Il quadro qui sotto
+> è cambiato: **il Ramo C è vivo e ha il primo ordine eseguito**
+> (`orders/CF-2026-PREVENTA-002/`), **il Ramo D è fermo**.
+>
+> | Ramo | Stato al 2026-08-06 | Stato oggi |
+> |---|---|---|
+> | C (render locale) | mai eseguito | ✅ **operativo**, primo ordine reale, gate automatico |
+> | D (Arena browser) | unico verificato | ⛔ **fermo su questa macchina** |
+>
+> Perché il Ramo D è fermo (verificato, non presunto): `playwright_stealth` non è
+> installato quindi ogni script muore all'import; `ArenaAI/session_data/` non esiste e
+> serve un login Google interattivo (la cartella è gitignorata, quindi non arriva col
+> repo); e anche funzionando richiede sorveglianza umana per ogni run (attesa, controllo
+> stato a mano, eventuale resume, download separato). Non è stato smontato niente: resta
+> raggiungibile con `--engine arena`, che oggi esce con un errore che spiega cosa manca.
+>
+> Il Ramo C ha inoltre richiesto **3 bug fix reali** nel runtime `carousel-factory`
+> (font mai caricati, parole incollate, screenshot prima dei webfont): vedi
+> `## Carousel-factory` più sotto e il checkpoint.
+
+**Stato al 2026-08-06** (storico, lasciato per contesto): Rami A/B/C progettati ma mai
+eseguiti, Ramo D unico verificato con un output reale (primo carosello Preventa,
+[[CP-20260805-013]]) — vedi `orders/CF-2026-PREVENTA-001/`.
 
 ```
                           [CF-R5-COORD decide engine]
@@ -69,6 +90,16 @@ immagini      [WRAPPA carousel-factory]        [WRAPPA caroselli - preventa/*.py
 **Il ramo C usa `render.mjs` che è parte del `carousel-factory`.
 Non si modifica `render.mjs`: si chiama come wrapper esterno. Dichiarazione obbligatoria:
 `[WRAPPA] carousel-factory/render.mjs — runtime originale non modificato.`**
+
+> **Nota 2026-08-27**: il file reale si chiama `scripts/render.js` (non `render.mjs`, che
+> non è mai esistito con quel nome). Il comando `caroselli.py` lo invoca come processo
+> esterno (`node scripts/generate.js <piano.json>`), quindi il wrap regge. **Ma il
+> runtime È stato modificato**, e va dichiarato invece di far finta: `render.js` aveva
+> tre difetti che rendevano ogni slide sbagliata in silenzio (font mai caricati per
+> policy di origine su `page.setContent`, parole incollate dallo split sull'accent,
+> screenshot scattato prima dei webfont). Erano bug, non personalizzazioni: ADR-003
+> vieta di duplicare o riscrivere un runtime, non di ripararlo. Nessuna logica di
+> business toccata.
 
 ### Ramo D — Arena Agent Workspace (dettaglio, ADR-003 wrap)
 
