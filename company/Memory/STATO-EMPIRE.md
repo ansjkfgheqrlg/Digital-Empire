@@ -1,3 +1,65 @@
+## 🛡️ 2026-08-27 — CLAUDE: le 3 task SECONDARIE W1 chiuse — Settimana 1 completa (6/6) — CP-20260827-002/003/004
+
+Chiuse tutte e tre le secondarie. Con le 3 primarie già chiuse, la **Settimana 1 è 6/6**.
+
+### ⚪ TASK-MEMORY-SYNC-W1 — le collisioni di checkpoint ora si fermano prima del commit
+Nuovo `.githooks/check_memory.py` + `pre-commit` + `installa.py`. Gate dimostrato con una
+collisione **vera** su due branch (due `git worktree --no-checkout` sullo stesso `.git`):
+sessione A committa `CP-20260828-001`, sessione B sceglie lo stesso ID su un altro branch →
+**`git commit exit = 1`**, branch B fermo, file mai entrato nella storia.
+
+**Scoperto perché il fix di luglio non veniva usato: era rotto, non ignorato.**
+`python -m empire mem write` moriva su `ModuleNotFoundError: No module named 'yaml'`.
+`pip install pyyaml` e funziona — **i 4 checkpoint di oggi sono scritti con quel comando.**
+Da lì la regola del nuovo controllo: **zero dipendenze oltre stdlib e git**.
+
+### ⚫ TASK-GITLFS-W1 — B-008 chiuso con una decisione applicata (ADR-013)
+**`.gitignore` mirato + guard 5MB, NON Git LFS.** Sui numeri: `.png` = **2167 MB su 10.679
+file** (~70% dei 3,1 GB). Il colpevole **non erano gli screenshot** come diceva B-008, ma le
+**copertine KDP**: 2,5-6,1 MB l'una × 3-4 copie per libro = ~15 MB a libro, che a 5-10
+libri/settimana fa **4-8 GB/anno**. LFS scartato con motivo: quota gratuita 1 GB esaurita in
+settimane (e oltre quota **il push fallisce**), e senza `git lfs install` su una macchina si
+scaricano **file-puntatore da 130 byte al posto delle immagini, senza errore evidente**.
+Gate: `git add -A` su una cartella con screenshot + copertina da 5,26 MB + un sorgente →
+`git log --stat` mostra **solo il sorgente**.
+
+### 🟤 TASK-ARENA-SESSION-W1 — un solo motore di sessione, due consumatori
+Nuovo `shared/arena_session.py`. Caroselli (`caroselli - agency/Core/browser_manager.py`,
+ora adattatore con API invariata — ADR-003) e `arena_thumbnail.py` usano **lo stesso
+modulo**: verificato con **run reali** (browser aperto davvero su arena.ai da entrambi) e
+confrontando l'**id dell'oggetto modulo in memoria**, non leggendo il codice.
+
+**Sbloccato un guasto reale**: `browser_manager.py` moriva all'import su `playwright_stealth`
+(non installato) — è **il motivo per cui il Ramo D/Arena dei caroselli risultava fermo** in
+CP-20260825-003. Ora lo stealth è opzionale. Resta un secondo blocco diverso:
+`arena_generator.py` importa `playwright_recaptcha`, pure assente → **B-029**.
+
+### Tre errori miei, corretti in corsa (valgono più dei successi)
+1. **Il guardrail della memoria ha fallito nel modo peggiore**: al primo test ha *rilevato*
+   la collisione e poi è **morto stampandola** (`UnicodeEncodeError` sui box-drawing in
+   console cp1252), lasciando passare il commit. Un guardrail che fallisce in silenzio è
+   peggio di nessun guardrail. Stessa forma di **B-013, già nel backlog**: la lezione era
+   scritta e l'ho ripetuta. Ora: solo ASCII nei messaggi.
+2. **Il modulo Arena ha riprodotto il bug che doveva impedire**: `stato_login()` diceva
+   `autenticato` appena vedeva una `textarea`, e ha dichiarato autenticati **due profili
+   vuoti** — su arena.ai la chat è usabile da sloggati. Smascherato dallo screenshot,
+   esattamente come il bug storico citato dalla task.
+3. **La correzione ha quasi ripetuto l'errore**: match sui cookie `auth` → di nuovo
+   "autenticato", perché **`arena-auth-prod-v1` esiste anche da anonimi**. Ora domina
+   `provisional_user_id` e in dubbio si risponde `non_autenticato`, **mai** `autenticato`.
+
+**⚠️ RESTA A MAX, ed è l'unico passo che non posso fare io:**
+`python .githooks/installa.py` **sulla sua macchina**. Senza, da lui i controlli non sono
+attivi — ed è esattamente lì che nascono le collisioni (due sessioni, due PC).
+
+**RIPRESA DA**: (1) Max attiva i hook; (2) decidere con lui se togliere dal tracciamento le
+copertine dei 4 libri esistenti (comando in ADR-013 — `git rm --cached` le cancellerebbe dal
+suo disco al primo pull, per questo non l'ho fatto); (3) B-029/B-030 al primo login Arena
+reale; (4) `pyyaml` fra le dipendenze dichiarate dell'`empire` CLI, o al primo ambiente
+pulito si torna ai checkpoint a mano.
+
+---
+
 ## 📤 2026-08-27 — CLAUDE: TASK-PUBLISHER-W1 CHIUSO — un comando pubblica una cartella di caroselli, dry-run verificato su Instagram — CP-20260827-001
 
 **Gate soddisfatto sul ramo previsto dalla task** ("pubblica **o** fa dry-run verificato,

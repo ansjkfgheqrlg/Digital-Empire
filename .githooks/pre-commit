@@ -1,0 +1,35 @@
+#!/bin/sh
+# Hook pre-commit del monorepo Digital Empire.
+#
+# Attivo solo se core.hooksPath punta a .githooks/ (lo fa `python .githooks/installa.py`).
+# I hook NON sono versionati da git di suo: per questo stanno qui e si attivano
+# con un comando, invece di vivere in .git/hooks dove nessuno li vedrebbe.
+#
+# Regola: ogni controllo qui dentro deve poter fallire senza bloccare il lavoro
+# per un proprio bug. Blocca il GUASTO, non lo strumento.
+
+set -u
+
+PY=""
+for c in python python3 py; do
+    if command -v "$c" >/dev/null 2>&1; then PY="$c"; break; fi
+done
+
+if [ -z "$PY" ]; then
+    echo "[pre-commit] python non trovato: controlli saltati, commit permesso."
+    exit 0
+fi
+
+fallito=0
+
+# 1) memoria condivisa: collisioni ID checkpoint (B-009) + CRLF (B-028)
+if [ -f .githooks/check_memory.py ]; then
+    "$PY" .githooks/check_memory.py || fallito=1
+fi
+
+# 2) blob grossi che non devono entrare nella storia normale (B-008)
+if [ -f .githooks/check_blob.py ]; then
+    "$PY" .githooks/check_blob.py || fallito=1
+fi
+
+exit $fallito

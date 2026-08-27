@@ -85,7 +85,27 @@ function Do-Push {
     if ($dirty) {
         git add -A 2>$null | Out-Null
         $who = git config user.name
-        git commit -m "sync($who): aggiornamento automatico $(Get-Date -Format 'yyyy-MM-dd HH:mm')" 2>$null | Out-Null
+        # NIENTE "2>$null | Out-Null" qui: dal 2026-08-27 esistono controlli
+        # pre-commit (.githooks/) che possono BLOCCARE il commit di proposito —
+        # collisione di ID checkpoint (B-009), CRLF nella memoria (B-028), blob
+        # oltre 5 MB (B-008). Con l'output soppresso e l'exit code non guardato,
+        # un commit bloccato spariva in silenzio: il sync diceva "ok" e il lavoro
+        # restava non committato e non pushato, senza che nessuno lo sapesse.
+        # E' esattamente il difetto che quei controlli esistono per impedire.
+        $out = git commit -m "sync($who): aggiornamento automatico $(Get-Date -Format 'yyyy-MM-dd HH:mm')" 2>&1
+        if ($LASTEXITCODE -ne 0) {
+            Warn-Conflict @"
+COMMIT BLOCCATO da un controllo pre-commit. Il lavoro NON e' committato ne' pushato.
+
+$out
+
+Cosa fare: leggi il messaggio qui sopra, correggi il problema (spesso basta
+  python .githooks/check_memory.py --fix
+) e rilancia. Non usare --no-verify: quei controlli fermano guasti che si
+scoprirebbero al merge, a ore di distanza.
+"@
+            return $false
+        }
     }
     # Offline? Il commit locale e' fatto (lavoro al sicuro), push al prossimo giro
     if (-not (Test-Online)) { Write-Output "EMPIRE-SYNC: offline, commit locale ok - push rimandato"; return $true }

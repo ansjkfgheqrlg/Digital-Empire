@@ -54,6 +54,22 @@ CHROME_EXE_CANDIDATI = [
 ]
 CDP_PORT = 9333
 
+# --- motore di sessione CONDIVISO (TASK-ARENA-SESSION-W1) --------------------
+# Il codice di sessione che stava qui (avvio Chrome reale via CDP, ricerca della
+# scheda arena.ai, attesa del login, modali "Agree"/"Accept Cookies") e' stato
+# promosso a `shared/arena_session.py` ed e' ora lo STESSO usato dal motore
+# caroselli (`caroselli - agency/Core/browser_manager.py`), che quelle lezioni non
+# le aveva: nessun controllo di login, modale Terms mai gestita, e un import
+# obbligatorio di playwright_stealth che lo faceva morire prima di partire.
+# Qui non cambia niente di comportamento: le funzioni sotto restano, ma delegano.
+_REPO = os.path.abspath(os.path.join(FACTORY_DIR, ".."))
+if _REPO not in sys.path:
+    sys.path.insert(0, _REPO)
+from shared.arena_session import ArenaSession  # noqa: E402
+
+#: Sessione condivisa viva, creata da main(). Le funzioni sotto la usano se c'e'.
+SESSIONE: "ArenaSession | None" = None
+
 
 def _pagina_arena(context, timeout_s: float = 15):
     """Trova la scheda arena.ai fra quelle gia' aperte, invece di assumere che sia
@@ -75,31 +91,31 @@ def _pagina_arena(context, timeout_s: float = 15):
     return pg
 
 
+def _sessione() -> ArenaSession:
+    """La sessione condivisa, creandola se serve (stesso profilo di sempre)."""
+    global SESSIONE
+    if SESSIONE is None:
+        SESSIONE = ArenaSession(profilo_dir=PROFILE_DIR, modo="cdp",
+                                cdp_port=CDP_PORT, log=print)
+    return SESSIONE
+
+
 def _cdp_attivo() -> bool:
-    try:
-        urllib.request.urlopen(f"http://localhost:{CDP_PORT}/json/version", timeout=2)
-        return True
-    except (urllib.error.URLError, OSError):
-        return False
+    """Delega al motore condiviso (era una copia identica di quella logica)."""
+    return _sessione()._cdp_attivo()
 
 
 def _avvia_chrome_reale():
-    """Apre il vero chrome.exe installato, non il Chromium bundled di Playwright — profilo
-    dedicato (PROFILE_DIR), separato dal Chrome personale di Max, ma un binario e un
-    fingerprint che Google riconosce come reali."""
-    exe = next((p for p in CHROME_EXE_CANDIDATI if os.path.exists(p)), None)
-    if not exe:
-        raise SystemExit(f"[!] chrome.exe non trovato nei percorsi noti: {CHROME_EXE_CANDIDATI}")
-    subprocess.Popen(
-        [exe, f"--remote-debugging-port={CDP_PORT}", f"--user-data-dir={PROFILE_DIR}",
-         "https://arena.ai"],
-        creationflags=subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP,
-    )
-    for _ in range(30):
-        if _cdp_attivo():
-            return
-        time.sleep(1)
-    raise SystemExit("[!] Chrome avviato ma la porta di debug non risponde entro 30s.")
+    """Chrome VERO come processo indipendente: ora vive in shared/arena_session.py.
+
+    Il motivo resta quello di Max (2026-08-06): con Playwright che lancia E chiude
+    Chrome, ogni crash dello script si portava via la finestra e la sessione di
+    login appena fatta. Con CDP la finestra sopravvive allo script.
+    """
+    try:
+        _sessione()._avvia_chrome_reale()
+    except RuntimeError as e:
+        raise SystemExit("[!] %s" % e)
 
 
 def write_status(status: str, **extra):
@@ -312,23 +328,21 @@ def run_attempt(page, brief, image_path, tentativo: int) -> list:
     enter_image_mode_and_send(page, brief, image_path)
     time.sleep(2)
 
-    # Terms of Use al primo utilizzo
-    try:
-        agree = page.get_by_role("button", name="Agree")
-        agree.wait_for(state="visible", timeout=4000)
-        agree.click()
-        time.sleep(1)
-    except Exception:
-        pass
+    # Terms of Use / cookie al primo utilizzo -> motore condiviso.
+    # (Il motore caroselli questa modale non la gestiva affatto: e' una delle
+    #  lezioni che la condivisione porta anche a lui.)
+    sess = _sessione()
+    sess.page = page
+    sess.gestisci_modali()
 
-    # Login richiesto? Chrome e' sempre una finestra vera ora (vedi main()): si aspetta sempre
-    # che Max lo faccia a mano, non c'e' piu' un caso headless da gestire separatamente.
-    google_btn = page.get_by_role("button", name="Continue with Google")
-    if google_btn.is_visible():
-        write_status("attesa_login", messaggio="Login manuale richiesto nella finestra Chrome aperta — attendo fino a 15 minuti")
-        try:
-            google_btn.wait_for(state="hidden", timeout=900000)
-        except Exception:
+    # Login richiesto? Ora la domanda si fa al motore condiviso, che risponde
+    # anche 'captcha' — prima qui un captcha era indistinguibile da "loggato",
+    # perche' si guardava solo il bottone Google.
+    stato = sess.stato_login()
+    if stato in ("login_richiesto", "captcha"):
+        write_status("attesa_login", stato=stato,
+                     messaggio="Login manuale richiesto nella finestra Chrome aperta - attendo fino a 15 minuti")
+        if not sess.attendi_login(timeout_s=900):
             write_status("timeout_login")
             return []
         write_status("login_completato")
@@ -385,28 +399,17 @@ def main():
     image_path = source_thumbnail_path(brief)
     write_status("avviato", miniatura_sorgente=image_path, titolo=brief["title"])
 
-    if not _cdp_attivo():
-        write_status("apertura_chrome_reale", messaggio="Apro chrome.exe vero, non Playwright — attendo la porta di debug.")
-        _avvia_chrome_reale()
-    else:
-        write_status("chrome_gia_aperto", messaggio="Riuso la finestra Chrome reale gia' aperta.")
+    write_status("apertura_chrome_reale" if not _cdp_attivo() else "chrome_gia_aperto",
+                 messaggio="Sessione Arena via motore condiviso shared/arena_session.py")
 
-    with sync_playwright() as p:
-        browser = p.chromium.connect_over_cdp(f"http://localhost:{CDP_PORT}")
-        context = browser.contexts[0] if browser.contexts else browser.new_context()
-        # _pagina_arena, non context.pages[0]: Chrome apre spesso piu' schede al lancio,
-        # pages[0] a volte era quella sbagliata e il codice rilanciava un goto() su una
-        # navigazione gia' in corso su un'altra scheda — causa reale dei timeout ripetuti.
-        page = _pagina_arena(context)
+    # Tutto l'avvio (Chrome reale via CDP, attesa della porta di debug, ricerca
+    # della scheda arena.ai, wait domcontentloaded, modali Agree/Accept Cookies)
+    # e' ora una sola chiamata al motore condiviso: era il blocco duplicato che
+    # nel motore caroselli non esisteva.
+    sess = _sessione()
+    try:
+        page = sess.apri()
         try:
-            page.wait_for_load_state("domcontentloaded", timeout=30000)
-            time.sleep(1.5)
-
-            try:
-                page.get_by_text("Accept Cookies", exact=True).click(timeout=4000)
-            except Exception:
-                pass
-
             select_direct_mode(page)
 
             saved = []
@@ -445,12 +448,14 @@ def main():
             write_status("completato" if saved else "fallito", immagini_salvate=saved,
                          regolatore_copertina=esito_copertina)
         finally:
-            # Nessuna chiamata a close() qui, di proposito: con connect_over_cdp la finestra e'
-            # di Max, non di questo script — Playwright deve solo disconnettersi (cosa che fa
-            # da solo all'uscita dal blocco `with sync_playwright()`), non chiudere un browser
-            # che non ha lanciato lui. E' esattamente il comportamento che il passaggio a CDP
-            # del 2026-08-06 doveva garantire: la finestra sopravvive allo script.
             pass
+    finally:
+        # `chiudi()` in modo CDP si limita a DISCONNETTERE Playwright: non chiude
+        # il browser, perche' quella finestra e' di Max e non di questo script.
+        # E' il comportamento che il passaggio a CDP del 2026-08-06 doveva
+        # garantire — la finestra (e la sessione di login) sopravvive allo script.
+        # Ora e' il motore condiviso a garantirlo, per tutti i consumatori.
+        sess.chiudi()
 
 
 if __name__ == "__main__":

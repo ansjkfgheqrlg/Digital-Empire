@@ -237,24 +237,24 @@
    "owner": "Gael",
    "giorno": "Settimana 1 (24-30 ago 2026) — SECONDARIA/fallback",
    "titolo": "Consolidare in un solo modulo condiviso le 3 automazioni Arena/browser duplicate (caroselli, arena_thumbnail YouTube, resti KDP-Arena) — riduce bug ricorrenti di profilo/login/hang",
-   "stato": "da_fare",
-   "note": "SECONDARIA: fare solo se una primaria (KDP/CAROSELLI/PUBLISHER) e' bloccata. Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
+   "stato": "fatto",
+   "note": "FATTO 2026-08-27 (CP-20260827-004). Gate: 2 consumatori su 3 usano LO STESSO modulo `shared/arena_session.py`, verificato con RUN REALI (browser aperto davvero su arena.ai da entrambi) e confrontando l'identita' dell'oggetto modulo in memoria: stesso file, stesso id, stessa classe. Consumatore 1 = caroselli (`caroselli - agency/Core/browser_manager.py`, ora ADATTATORE: API pubblica invariata, arena_generator.py non modificato - ADR-003). Consumatore 2 = arena_thumbnail (YOUTUBE-AUTOMATION-FACTORY), ricablato mantenendo i nomi come deleghe. Terzo consumatore (_archivio/lmarena_client.py) NON migrato di proposito: e' archiviato e non lo importa nessuno, sarebbe lavoro su codice morto. SBLOCCATO UN GUASTO REALE: browser_manager.py moriva all'import su `playwright_stealth` (non installato) - ecco perche' il Ramo D/Arena dei caroselli risultava fermo in CP-20260825-003; ora lo stealth e' opzionale. Resta un secondo blocco diverso: arena_generator.py importa `playwright_recaptcha`, pure assente -> B-029. Il modulo unifica le lezioni che stavano in una sola copia: ricerca della scheda arena.ai (causa reale dei timeout 6-9 ago), domcontentloaded mai networkidle, modale Terms of Use, attesa login umano, rilevamento captcha. ERRORE MIO CORRETTO IN CORSA: la prima stato_login() dichiarava 'autenticato' vedendo una textarea e ha detto autenticati due profili vuoti - su arena.ai la chat e' usabile da sloggati. Poi il match su 'auth' ha ripetuto l'errore perche' `arena-auth-prod-v1` c'e' anche da anonimi. Ora domina `provisional_user_id` e in dubbio risponde non_autenticato, mai autenticato. Ramo positivo non verificabile senza un login Arena reale -> B-030."
   },
   {
    "id": "TASK-MEMORY-SYNC-W1",
    "owner": "Gael",
    "giorno": "Settimana 1 (24-30 ago 2026) — SECONDARIA/fallback",
    "titolo": "Far rispettare per davvero l'anti-collisione checkpoint (B-009, riaccaduta 2026-08-23): un controllo che blocca il commit invece di scoprirla al merge",
-   "stato": "da_fare",
-   "note": "SECONDARIA: fare solo se una primaria e' bloccata. Vedi BACKLOG.md B-009. Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
+   "stato": "fatto",
+   "note": "FATTO 2026-08-27 (CP-20260827-002). Gate dimostrato con una collisione VERA su due branch (due git worktree --no-checkout sullo stesso .git): sessione A committa CP-20260828-001, sessione B sceglie lo stesso ID su un altro branch -> COMMIT BLOCCATO, `git commit exit = 1`, branch B fermo, file mai entrato nella storia. Intercettata PRIMA del commit, non al merge. Secondo controllo: CRLF nei file di company/Memory (B-028) - blocca ed ha `--fix` che normalizza e ri-stagea (verificato byte-identico all'originale). Nuovo: .githooks/check_memory.py + pre-commit + installa.py (core.hooksPath, perche' i hook non sono versionati e un hook committato non si attiva da solo). SCOPERTO PERCHE' IL FIX DI LUGLIO NON VENIVA USATO: `python -m empire mem write` moriva su ModuleNotFoundError 'yaml' - non era pigrizia, era rotto. pip install pyyaml e funziona; i 4 checkpoint di oggi sono scritti con quel comando. Da li' la regola: zero dipendenze oltre stdlib+git. ERRORE MIO: al primo test il controllo ha RILEVATO la collisione e poi e' morto stampandola (UnicodeEncodeError sui box-drawing in console cp1252), lasciando passare il commit - stessa forma di B-013, gia' nel backlog. Corretto: solo ASCII nei messaggi. RESTA A MAX: lanciare `python .githooks/installa.py` sulla SUA macchina, altrimenti da lui il controllo non e' attivo ed e' li' che nascono le collisioni."
   },
   {
    "id": "TASK-GITLFS-W1",
    "owner": "Gael",
    "giorno": "Settimana 1 (24-30 ago 2026) — SECONDARIA/fallback",
    "titolo": "Chiudere B-008: Git LFS o gitignore mirato per i blob (PDF/DOCX/PNG) prima che la produzione KDP/Caroselli/YouTube faccia ingrassare il repo senza controllo",
-   "stato": "da_fare",
-   "note": "SECONDARIA: fare solo se una primaria e' bloccata. Vedi BACKLOG.md B-008. Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
+   "stato": "fatto",
+   "note": "FATTO 2026-08-27 (CP-20260827-003, ADR-013). DECISIONE: .gitignore mirato + guard 5MB, NON Git LFS. Sui numeri reali: .png = 2167,5 MB su 10.679 file (~70% dei 3,1 GB di .git). Il motore della crescita NON sono gli screenshot (come diceva B-008) ma le COPERTINE KDP: 2,5-6,1 MB l'una x 3-4 copie per libro = ~15 MB a libro, che a 5-10 libri/settimana fa 4-8 GB/anno. LFS scartato con motivo: quota gratuita 1 GB si esaurisce in settimane e oltre quota il push FALLISCE; senza `git lfs install` su una macchina si scaricano file-puntatore da 130 byte al posto delle immagini senza errore evidente; e non risolve la duplicazione 3-4x. Criterio applicato: non 'e' pesante' ma 'si rigenera e non viaggia fra Max e Gael' - la copertina va su KDP, nel repo resta COPERTINA-PROMPT.md. Ignorati anche gli slide-*.html dei caroselli (628 KB l'uno: incorporano il font in base64, 6 volte per carosello). GATE: commit di prova, `git add -A` su una cartella con screenshot 0,17 MB + copertina 5,26 MB + un sorgente -> `git log --stat` mostra SOLO il sorgente; forzando con `git add -f` il guard blocca (exit 1). Soglia 5 MB scelta perche' il deliverable legittimo piu' grosso ci sta sotto: un guard senza falsi allarmi non viene disattivato. NON FATTO DI PROPOSITO: le copertine dei 4 libri gia' tracciati restano tracciate - `git rm --cached` le cancellerebbe dal disco di Max al primo pull. Comando in ADR-013, da eseguire con lui presente."
   },
   {
    "id": "TASK-PREVENTA-CANALI-W1",

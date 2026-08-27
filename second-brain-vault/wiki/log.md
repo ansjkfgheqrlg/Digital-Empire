@@ -1,5 +1,21 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-27 (task SECONDARIE W1 — infrastruttura Impero, Claude)
+- Settimana 1 chiusa **6/6** (3 primarie + 3 secondarie).
+- TASK-MEMORY-SYNC-W1: nuovo controllo pre-commit (`.githooks/`) che BLOCCA le collisioni
+  di ID checkpoint e i CRLF nella memoria. Gate dimostrato con una collisione vera su due
+  branch: `git commit exit = 1`. Scoperto che il fix di luglio non veniva usato perche
+  `empire mem write` era rotto (`No module named yaml`), non per pigrizia.
+- TASK-GITLFS-W1: **ADR-013** — gitignore mirato + guard 5MB, NON Git LFS. Il 70% dei 3,1 GB
+  di repo sono PNG, e il motore della crescita sono le copertine KDP (~15 MB a libro), non
+  gli screenshot come diceva B-008.
+- TASK-ARENA-SESSION-W1: `shared/arena_session.py`, un solo motore di sessione per caroselli
+  e arena_thumbnail (run reali su entrambi). Sbloccato il Ramo D dei caroselli, che moriva
+  all'import su `playwright_stealth`.
+- Nuova pagina: `concepts/Concept_Guardrail_Che_Si_Fanno_Rispettare.md` — il principio
+  ricavato: una regola che dipende dalla buona volonta non e un controllo.
+
+
 ## 2026-08-27 (TASK-PUBLISHER-W1 — workflow di pubblicazione consolidato, Claude)
 - INGEST: `Workflow pubblicazione automatica/` documentato per la prima volta in wiki →
   1 pagina creata (`tools/Tool_Workflow_Pubblicazione_Automatica.md`).

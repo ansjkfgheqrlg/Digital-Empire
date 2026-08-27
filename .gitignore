@@ -149,3 +149,34 @@ YOUTUBE-AUTOMATION-FACTORY/05-TEMPLATES-E-KIT/arena_debug_final.png
 # Nota: l'output del 2026-03-22 resta tracciato da prima di questa regola, non
 # lo si toglie dalla storia qui.
 Workfolw crea caroselli à/carousel-factory/output/
+
+# --- B-008 CHIUSO 2026-08-27 (ADR-013): ARTEFATTI DI PUBBLICAZIONE ---
+# Decisione presa sui numeri, non a intuito: .png = 2167 MB su 10679 file nella
+# storia (~70% dei 3,1 GB). Il motore della crescita sono le COPERTINE KDP:
+# 2,5-6 MB l'una, e ogni libro ne tiene 3-4 copie (copertina/copertina_kdp/
+# copertina_finale/Cover_X) = ~15 MB per libro. A 5-10 libri/settimana fa
+# 4-8 GB/anno. Ne' git normale ne' LFS gratuito (quota 1 GB) reggono quel ritmo.
+# Sono artefatti che vanno su KDP, non fra Max e Gael: il PROMPT per rigenerarli
+# (COPERTINA-PROMPT.md) resta tracciato, l'immagine no.
+# NOTA: vale per i file NUOVI. Le copertine dei 4 libri gia' tracciati restano
+# tracciate apposta - smettere di tracciarle le cancellerebbe dal disco di Max
+# al primo pull. Vedi ADR-013 per il comando, da eseguire con lui presente.
+**/LIBRI/**/copertina*.png
+**/LIBRI/**/Cover_*.png
+**/libri_pronti/**/*.pdf
+**/libri_pronti/**/*.epub
+**/libri_pronti/**/*.docx
+
+# Intermedi di render dei caroselli: ogni slide-NN.html pesa ~628 KB perche'
+# incorpora il font in base64, e ce n'e' uno per slide -> ~3,8 MB per carosello
+# di font ripetuto 6 volte. Il deliverable e' il PNG; l'HTML si rigenera.
+**/Arsenale Caroselli/**/slide-*.html
+
+# Screenshot di debug/diagnostica: prove locali di una sessione, non storia.
+**/_diagnostica/
+**/debug_screens*/
+**/debug_*.png
+**/*_diagnostic*.png
+
+# Prove/screenshot dei gate: locali, non storia del repo (coerente con ADR-013).
+shared/_prove/
