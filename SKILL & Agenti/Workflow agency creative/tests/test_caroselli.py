@@ -189,3 +189,69 @@ def test_render_dice_se_il_brand_non_esiste(tmp_path, monkeypatch):
 def test_prodotto_sconosciuto_elenca_quelli_veri():
     with pytest.raises(KeyError, match="Preventa"):
         caroselli._carica_prodotto("ProdottoCheNonEsiste")
+
+
+# --------------------------------------------------------------------------- #
+# Il ritentativo deve IMPARARE, non ripetere la stessa domanda
+# --------------------------------------------------------------------------- #
+
+def _finto_client(risposte: list[str], registro: list):
+    """Sostituisce Agents.ai_client.call_ai senza toccare la rete."""
+    import types
+
+    def call_ai(messages, **kwargs):
+        registro.append(messages)
+        return risposte[min(len(registro) - 1, len(risposte) - 1)]
+
+    modulo = types.ModuleType("Agents.ai_client")
+    modulo.call_ai = call_ai
+    pacchetto = types.ModuleType("Agents")
+    pacchetto.ai_client = modulo
+    return pacchetto, modulo
+
+
+def test_il_ritentativo_riporta_al_modello_i_problemi_trovati(monkeypatch):
+    """IL difetto, visto al secondo run reale del 2026-08-27: il comando
+    ritentava mandando lo stesso identico prompt, il modello sforava di nuovo il
+    limite di parole e il run moriva. Un tentativo cieco e' la stessa domanda
+    fatta piu' forte."""
+    cattivo = json.dumps({
+        "titolo": "titolo", "caption": "caption",
+        "slides": [
+            {"numero": 1, "tipo": "hook-cover", "testo_piccolo": "o",
+             "testo_grande": "una frase decisamente troppo lunga per stare in una slide",
+             "testo_accent": "frase"},
+            {"numero": 2, "tipo": "quote-block", "testo_piccolo": "o",
+             "testo_grande": "frase due", "testo_accent": "frase"},
+            {"numero": 3, "tipo": "cta-finale", "testo_piccolo": "o",
+             "testo_grande": "scopri preventa", "testo_accent": "scopri"},
+        ]})
+    buono = json.dumps(_copy_valido(3))
+
+    registro: list = []
+    pacchetto, modulo = _finto_client([cattivo, buono], registro)
+    monkeypatch.setitem(sys.modules, "Agents", pacchetto)
+    monkeypatch.setitem(sys.modules, "Agents.ai_client", modulo)
+
+    prodotto = {"brief": "b", "cta": "c", "tono": "t"}
+    dati = caroselli.genera_copy(prodotto, "argomento", 3, tentativi=3)
+
+    assert dati["titolo"] == "titolo breve"        # ha usato la seconda risposta
+    assert len(registro) == 2                       # e ha ritentato una volta sola
+    secondo_giro = registro[1]
+    assert secondo_giro[-1]["role"] == "user"
+    assert "max 7" in secondo_giro[-1]["content"]   # il difetto e' tornato al modello
+    assert secondo_giro[1]["role"] == "assistant"   # con la sua risposta sbagliata
+
+
+def test_se_il_copy_non_passa_mai_il_comando_lo_dice_e_non_renderizza(monkeypatch):
+    cattivo = json.dumps({"titolo": "t", "caption": "c", "slides": []})
+    registro: list = []
+    pacchetto, modulo = _finto_client([cattivo], registro)
+    monkeypatch.setitem(sys.modules, "Agents", pacchetto)
+    monkeypatch.setitem(sys.modules, "Agents.ai_client", modulo)
+
+    with pytest.raises(RuntimeError, match="dopo 2 tentativi"):
+        caroselli.genera_copy({"brief": "b", "cta": "c", "tono": "t"},
+                              "argomento", 3, tentativi=2)
+    assert len(registro) == 2

@@ -1,5 +1,20 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-27 (TASK-PUBLISHER-W1 — workflow di pubblicazione consolidato, Claude)
+- INGEST: `Workflow pubblicazione automatica/` documentato per la prima volta in wiki →
+  1 pagina creata (`tools/Tool_Workflow_Pubblicazione_Automatica.md`).
+- Nuovo comando unico `pubblica.py`: una cartella di caroselli già pronti → dry-run
+  verificato (default) o pubblicazione reale con `--live`. Gate chiuso sul ramo dry-run:
+  6 slide + caption validate, canale dedotto, browser reale su instagram.com, exit 2
+  (PASS PARZIALE — manca solo il login una tantum). Nessun post reale creato.
+- Verifica onesta dello stato del folder: `push_social.py` era una SIMULAZIONE dichiarata
+  obbligatoria dal CLAUDE.md locale, `main_orchestrator.py` non parte proprio, e il
+  `publish()` di Instagram ingoiava ogni eccezione. Tutto documentato in
+  `DIAGNOSI-PUBLISHER.md` + backlog B-023..B-027, invece di far finta che funzioni.
+- Collegamento reale con [[Progetto_Preventa_Carousel]]: la cartella pubblicata è
+  l'output di TASK-CAROSELLI-W1 chiuso lo stesso giorno.
+
+
 ## 2026-08-24 (Empire Studio — batch 1 chiuso: video 15/16/17 completati in ripresa, Claude)
 - INGEST: video 15/29 (`yX0XZh2PSYo`, "Merge Tag nell'email marketing", 91s) — completato:
   mancava solo `enrichment-report.md` (video-analysis.md e wiki page già presenti da batch 1).

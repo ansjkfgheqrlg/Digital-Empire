@@ -148,32 +148,61 @@ def _estrai_json(testo: str) -> dict:
     return json.loads(grezzo)
 
 
-def genera_copy(prodotto: dict, argomento: str, n_slide: int, tentativi: int = 2) -> dict:
+def genera_copy(prodotto: dict, argomento: str, n_slide: int, tentativi: int = 4) -> dict:
+    """Genera il copy e lo rigenera finche' non passa i controlli.
+
+    IL RITENTATIVO RIPORTA INDIETRO L'ERRORE (2026-08-27). La prima versione
+    ritentava a freddo, rimandando lo stesso identico prompt: al secondo run
+    reale il comando e' morto perche' il modello ha sforato il limite di parole
+    due volte di fila e nessuno gli aveva detto in cosa aveva sbagliato. Un
+    tentativo cieco non e' un tentativo, e' la stessa domanda fatta piu' forte.
+    Qui l'esito del controllo torna al modello come messaggio, quindi il giro
+    dopo sa esattamente quale slide correggere."""
     sys.path.insert(0, str(AGENCY_DIR))
     from Agents.ai_client import call_ai  # noqa: E402 - riuso il client Agency (ADR-003)
 
     prompt = _prompt_copy(prodotto, argomento, n_slide)
+    conversazione = [{"role": "user", "content": prompt}]
     ultimo_errore = None
+
     for tentativo in range(1, tentativi + 1):
         print(f"[copy] generazione (tentativo {tentativo}/{tentativi})...")
-        risposta = call_ai([{"role": "user", "content": prompt}],
-                           max_tokens=2000, temperature=0.8, label="copy")
+        risposta = call_ai(conversazione, max_tokens=2000, temperature=0.8, label="copy")
         if not risposta:
             ultimo_errore = "nessuna risposta dai modelli"
             continue
+
         try:
             dati = _estrai_json(risposta)
+            problemi = valida_copy(dati, n_slide)
         except json.JSONDecodeError as e:
-            ultimo_errore = f"JSON non valido: {e}"
-            print(f"[copy] {ultimo_errore} — ritento")
-            continue
-        problemi = valida_copy(dati, n_slide)
-        if problemi:
-            ultimo_errore = "; ".join(problemi)
-            print(f"[copy] copy rifiutato: {ultimo_errore} — ritento")
-            continue
-        return dati
-    raise RuntimeError(f"Copy non ottenuto dopo {tentativi} tentativi: {ultimo_errore}")
+            dati, problemi = None, [f"la risposta non era JSON valido: {e}"]
+
+        if not problemi:
+            return dati
+
+        ultimo_errore = "; ".join(problemi)
+        print(f"[copy] copy rifiutato: {ultimo_errore}")
+        if tentativo == tentativi:
+            break
+
+        # La correzione va chiesta indicando il difetto preciso, non ripetendo
+        # la richiesta iniziale. Si tiene solo l'ultimo scambio: rimandare tutta
+        # la cronologia a ogni giro gonfia i token senza aggiungere niente.
+        conversazione = [
+            {"role": "user", "content": prompt},
+            {"role": "assistant", "content": risposta[:4000]},
+            {"role": "user", "content":
+                "Il copy non e' stato accettato. Problemi rilevati dal controllo "
+                "automatico:\n- " + "\n- ".join(problemi) +
+                "\n\nRiscrivi il carosello COMPLETO correggendo esattamente questi punti e "
+                "lasciando invariato il resto. Ricorda: testo_grande al massimo 7 parole, "
+                "testo_accent deve essere UNA parola che compare identica dentro "
+                "testo_grande. Rispondi solo con il JSON."},
+        ]
+        print("[copy] rimando l'errore al modello e ritento")
+
+    raise RuntimeError(f"Copy non ottenuto dopo {tentativi} tentativi. Ultimo esito: {ultimo_errore}")
 
 
 _RE_LINEETTA = re.compile(r"[—–]|--")

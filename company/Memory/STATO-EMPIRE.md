@@ -1,3 +1,56 @@
+## 📤 2026-08-27 — CLAUDE: TASK-PUBLISHER-W1 CHIUSO — un comando pubblica una cartella di caroselli, dry-run verificato su Instagram — CP-20260827-001
+
+**Gate soddisfatto sul ramo previsto dalla task** ("pubblica **o** fa dry-run verificato,
+se Max non ha ancora dato ok per il live"). Il comando:
+
+```
+python pubblica.py "<cartella>"          # dry-run verificato (default, sicuro)
+python pubblica.py "<cartella>" --live   # pubblica davvero
+```
+
+Provato sull'output reale di TASK-CAROSELLI-W1 chiuso stamattina
+(`Arsenale Caroselli/Preventa/2026-08-27_quanto-tempo-perdi-a-fare-un-preventivo`):
+6 slide 1080x1080 + caption validate, canale dedotto `instagram -> @digitalempireagency.e`,
+**exit 2 = PASS PARZIALE**. Le due task ora si toccano davvero, non solo sulla carta.
+
+**Perché PARZIALE e non PASS**: la verifica di sessione non è una stampa — apre Chrome
+reale (151.0.7922.174), va su instagram.com, salva lo screenshot in `_diagnostica/`. Il
+browser parte e la pagina carica; quello che manca è la **sessione**: `session_data/` è
+assente su **tutti** i canali. Il `--live`, provato apposta, **si è rifiutato da solo**
+invece di sbattere sul login. Nessun post reale creato in questa sessione.
+
+**Il folder era peggio di come si presentava.** Verificato eseguendo, non leggendo:
+- 🔴 **`push_social.py` — che il `CLAUDE.md` locale dichiara OBBLIGATORIO — è finto**:
+  stampa "Pubblicazione completata con successo (SIMULATA)!" ed esce **0**, con la
+  `requests.post` commentata e senza media nel payload (**B-024**).
+- 🔴 **`main_orchestrator.py` non parte**: `OpenAIError` a *import time*, e stampa
+  "FLUSSO COMPLETATO CON SUCCESSO!" incondizionatamente (**B-025**).
+- 🔴 `Instagram/instagram_publisher.py::publish()` ingoia ogni eccezione e "riesce"
+  sempre → **non usato**. Il comando wrappa `scripts/ig_carousel_publish.py`, l'unico
+  con esito onesto `bool`.
+- Quel motore buono era inutilizzabile solo perché puntava a `C:\Users\Utente\...`
+  (un'altra macchina). Non toccato (ADR-003): gli passo un path assoluto.
+- 🔴 `TikTok/tiktok_publisher.py` non importa (**B-026**); `do_login()` cerca
+  `input[name="username"]` che IG 2026 non ha più (**B-027**).
+
+**🔴 Terza credenziale in chiaro sul repo pubblico**: `Instagram/config.py` ha
+`IG_PASSWORD` — dopo B-020 (Brevo) e B-021 (Arena) → **B-023**. Ordine che conta: va
+cambiata **prima** del login una tantum, o invalida la sessione appena creata.
+
+**Nota per TASK-MEMORY-SYNC-W1**: `python -m empire mem write` — il fix anti-collisione
+di B-009 che "nessuno usa" — **non girava** (`ModuleNotFoundError: No module named
+'yaml'`). Un `pip install pyyaml` e funziona: questo checkpoint è scritto con quel
+comando, non a mano. Le 5 collisioni non erano pigrizia, era lo strumento rotto.
+
+**RIPRESA DA**: (1) chiudere B-023 (password IG); (2) login una tantum
+`python Instagram/setup_session.py` — lo deve fare un umano, è l'account di Max — dopo
+il quale il dry-run deve dare **PASS/exit 0**; (3) solo con ok esplicito di Max, primo
+`--live` reale. Diagnosi completa in
+`SKILL & Agenti/Workflow pubblicazione automatica/DIAGNOSI-PUBLISHER.md`, dettaglio in
+[CP-20260827-001](checkpoints/CP-20260827-001.md).
+
+---
+
 ## 🔧 2026-08-26 — EMPERATOR AGENT (Neri): nuovo orchestration-layer innestato in 11-APEX-7-CORE come canone (Fase 1) — CP-20260826-001
 
 Neri ha portato un progetto di orchestrazione costruito in Antigravity IDE

@@ -1,0 +1,5 @@
+# Screenshot di diagnostica: prove locali di sessione, non storia del repo (B-008).
+_diagnostica/
+
+# Profili browser persistenti (gia' ignorati a livello di monorepo, esplicito qui).
+*/session_data/
