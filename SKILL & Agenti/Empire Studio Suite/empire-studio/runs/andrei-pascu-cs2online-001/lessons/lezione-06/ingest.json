@@ -1,0 +1,33 @@
+{
+  "lesson_number": 6,
+  "section": "AI - Le basi",
+  "title": "Lezione 6 - Cucinando il tuo contesto",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-6-cucinando-il-tuo-contesto-83c7l",
+  "slug": "lezione-6-cucinando-il-tuo-contesto-83c7l",
+  "vimeo_id": "1172331550",
+  "vimeo_embed": "https://player.vimeo.com/video/1172331550?app_id=122963",
+  "durata_secondi": 745,
+  "tipo": "PRATICA",
+  "tipo_motivazione": "Video confermato con visione diretta: contiene demo schermo reali (Excalidraw whiteboard, Finder, MarkEdit, VS Code, Claude.ai chat con PDF allegato, Gemini). Frame-by-frame applicato SOLO sui segmenti demo (non sui segmenti talking-head puro), per bilanciare fedeltà e costo. 43 frame totali visionati con visione nativa: 25 scan grezzo (30s) + 18 dense nei segmenti demo identificati.",
+  "video_scaricato": "video/lezione-06.mp4 (277MB, via yt-dlp + referer header, sessione autenticata)",
+  "risorse": {
+    "trascrizione_md": {"presente": true, "file_locale": "resources/trascrizione.md", "fonte": "https://drive.google.com/file/d/1uz8Lj2W9QHzC0i8Q4CxMD73RP-nlQf-J/view", "nota_correzione": "il link etichettato inizialmente come .md era in realta' l'allegato 'Pro e contro organizzare giornata' - corretto dopo verifica contenuto, vedi enrichment-report"},
+    "esempio_context_doc": {"file_locale": "resources/esempio-context-doc-skills-weaknesses-TEMPLATE.md", "nota": "esempio REALE (parzialmente redatto/censurato dall'autore) di documento di contesto 'skills, strengths, weaknesses' - mostrato anche a schermo nel video (frame t5m30s)"},
+    "pdf_lista_context_documents": {"file_locale": "resources/lista-context-documents.pdf"},
+    "pdf_prompt_onboarding_summary": {"file_locale": "resources/prompt-onboarding-summary.pdf"},
+    "pdf_lista_strumenti_aps": {"file_locale": "resources/lista-strumenti-aps.pdf"},
+    "pdf_pro_contro_giornata": {"file_locale": "resources/pro-contro-organizzare-giornata.pdf"},
+    "esempio_brand_guidelines_pdf": {"file_locale": "resources/esempio-brand-guidelines.pdf"},
+    "esempio_brand_guidelines_json": {"file_locale": "resources/esempio-brand-guidelines.json", "nota": "output REALE del workflow PDF-to-JSON mostrato nel video"},
+    "immagine": {"file_locale": "resources/schema-1.png"},
+    "workflow_citati": [
+      "Workflow 1 - Creare un documento di contesto personale in Markdown",
+      "Workflow 2 - Costruire una cartella di documenti di contesto (AI Contexting)",
+      "Workflow 3 - Convertire un PDF di brand guidelines in un JSON prompt tramite Claude",
+      "Workflow 4 - Scegliere il modello Claude giusto in base al task",
+      "Workflow 5 - Classificare i documenti di contesto per livello di frequenza di cambiamento"
+    ]
+  },
+  "data_ingestion": "2026-08-28",
+  "pipeline": "Empire Studio Suite - adattamento corso membership, prima lezione PRATICA del run"
+}

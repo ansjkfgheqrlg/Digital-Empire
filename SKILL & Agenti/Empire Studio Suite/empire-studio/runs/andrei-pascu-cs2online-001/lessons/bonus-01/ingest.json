@@ -1,0 +1,23 @@
+{
+  "lesson_number": "Bonus 1",
+  "section": "Lezioni BONUS",
+  "title": "Bonus 1 - Automatizzare processi",
+  "url": "https://www.andrei-copy.com/cs2online/bonus-1-automatizzare-processi-xcrw8",
+  "slug": "bonus-1-automatizzare-processi-xcrw8",
+  "vimeo_id": "1178066337",
+  "vimeo_embed": "https://player.vimeo.com/video/1178066337?app_id=122963",
+  "durata_secondi": 654,
+  "tipo": "TEORIA",
+  "tipo_motivazione": "Confermato con 8 frame campione (ogni 60-180s su 654s totali, copertura distribuita) - talking-head puro per l'intera durata, nessun demo schermo. Contenuto concettuale (framework SOP, aneddoti personali), coerente con l'assenza di demo.",
+  "risorse": {
+    "trascrizione_md": {"presente": false},
+    "workflow_citati": [
+      "Workflow 1 - Documentare e sistematizzare i propri processi",
+      "Workflow 2 - Aggiornamento periodico dell'AI nel lavoro",
+      "Workflow 3 - Onboarding nuovo cliente (esempio di processo da documentare)"
+    ],
+    "link_utili": ["https://claude.ai", "https://www.perplexity.ai", "https://lovable.dev", "https://www.linkedin.com/pulse/something-big-happening-matt-shumer-so5he", "https://x.com", "https://www.threads.net", "https://www.instagram.com", "https://www.youtube.com", "https://support.claude.com/en/articles/13947068-assign-tasks-to-claude-from-anywhere-in-cowork"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

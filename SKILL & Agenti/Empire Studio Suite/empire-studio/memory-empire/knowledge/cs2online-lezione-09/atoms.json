@@ -1,0 +1,15 @@
+{
+  "lesson_id": "cs2online-lezione-09",
+  "corso": "Claude Speedrun 2",
+  "total_atoms": 8,
+  "atoms": [
+    {"id":"KA-01","source":"cs2online-lezione-09#trascrizione","category":"Framework / 4 modi contesto","tags":["framework","allega-file","cowork","projects"],"atom":"4 modi per dare contesto a Claude, ordine di intelligenza crescente: allega tutto -> allega solo rilevante -> Cowork (cartella condivisa) -> Projects (lavori continuativi). Framework di scelta esplicito basato su durata/complessita' del task."},
+    {"id":"KA-02","source":"cs2online-lezione-09#frame-t3m00s","frame":"frame-t3m00s-finder-cartella-claude-reale.jpg","category":"Struttura cartelle confermata","tags":["finder","conferma-cross-lezione"],"atom":"Struttura cartelle personale confermata su schermo (Finder reale): 'Claude' > assets, B2B Client Work, Business Planning, Claude Speedrun, Productivity - coerente al 100% con quanto descritto verbalmente in lezione 6 (stesso autore, stessa struttura, conferma interna forte)."},
+    {"id":"KA-03","source":"cs2online-lezione-09#trascrizione","category":"Regola anti-spreco","tags":["cowork","token","context-window"],"atom":"Regola esplicita anti-spreco: con Cowork condividere SOLO la sottocartella cliente rilevante, mai l'intera cartella principale - altrimenti Claude 'spreca token e context window a cercare la roba che gli serve'."},
+    {"id":"KA-04","source":"cs2online-lezione-09#trascrizione","category":"Anti-pattern / link esterni","tags":["link-esterni","perplexity-eccezione"],"atom":"Link esterni sono 'uno dei modi peggiori' per dare contesto - preferire sempre un file (anche PDF) a un link. Unica eccezione dichiarata: Perplexity, con cui i link funzionano bene."},
+    {"id":"KA-05","source":"cs2online-lezione-09#trascrizione+frame-t8m00s","frame":"frame-t8m00s-claude-set-project-instructions.jpg","category":"Struttura Project","tags":["memory","instructions","files"],"atom":"Struttura di un Project Claude: chat raggruppate + memory automatica (si aggiorna da sola conversazione dopo conversazione) + instructions fisse (brevi, 'il grosso lavoro lo fanno i file e la memory') + files di contesto."},
+    {"id":"KA-06","source":"cs2online-lezione-09#cosa-hai-imparato","category":"Criterio scelta metodo","tags":["quando-usare-cosa"],"atom":"Criterio esplicito di scelta metodo: copy/lavoro testuale continuativo -> Projects; presentazioni/task pesanti/molti file -> Cowork; task one-time veloce -> chat singola con file allegati."},
+    {"id":"KA-07","source":"cs2online-lezione-09#trascrizione","category":"Warning / rilevanza file","tags":["rilevanza","no-file-a-caso"],"atom":"Warning ripetuto: non allegare file 'a caso per sentirti smart' - ogni file deve essere rilevante al task specifico, altrimenti 'lavori a vuoto'."},
+    {"id":"KA-08","source":"cs2online-lezione-09#link-utili","category":"Equivalenti cross-tool","tags":["perplexity-spaces","grok","gemini-gems"],"atom":"Equivalenti dei Projects Claude in altri tool: Perplexity Spaces, Grok (feature simile), Google Gemini Gems."}
+  ]
+}

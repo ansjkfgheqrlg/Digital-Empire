@@ -348,9 +348,13 @@ def main() -> int:
         return 0
 
     scrivi_stato("video", video_id=lavoro["video_id"], titolo=titolo_nostro, file=nome_file)
+    # BUG REALE trovato 2026-08-29: --canale non veniva inoltrato a fliki_client.py, che
+    # ricadeva sul suo default "dosementale" (voce MASCHILE) anche quando lavoro["canale"] era
+    # "legamidiamore" (voce femminile richiesta) — un video con voce sbagliata generato per
+    # davvero prima che la run fallisse per un problema di rete separato.
     code = esegui("VIDEO — Fliki (API reale, consuma crediti)", [
         sys.executable, os.path.join(SCRIPT_DIR, "fliki_client.py"),
-        "--file-name", nome_file, "--visuals", args.visuals,
+        "--file-name", nome_file, "--visuals", args.visuals, "--canale", lavoro["canale"],
     ])
     if code != 0:
         print("\n[!] Video non prodotto. La copertina generata resta valida: "

@@ -194,6 +194,79 @@ Groq è già morta (401), **quella OpenRouter è viva** e ha generato il copy di
 **RIPRESA DA**: (1) ruotare password Arena e chiave OpenRouter, credenziali su `.env`;
 (2) **TASK-PUBLISHER-W1 è ora sbloccata** come previsto dalla task: prende in ingresso proprio
 una cartella dell'Arsenale, che ora ha forma stabile e verificata dal gate.
+## 🗓️ 2026-08-26 — CLAUDE: PIANO EDITORIALE 70/30/3 @Legamidiamore CHIUSO — CP-20260826-003
+
+Piano editoriale mensile completo e operativo consegnato: 70 video reali, 30 giorni
+(27/08→25/09), 3 strategie testate in parallelo, PDF ultra-premium 20 pagine (argento/rosso +
+grana). Gate precondizione ("video 03 privato pulito") confermato passato da Max prima di
+iniziare. Nessuna collisione con Gael rilevata (`YOUTUBE-AUTOMATION-FACTORY/` non toccata dai
+suoi ultimi commit).
+
+**Refresh scraping reale ha corretto la cache di 3 settimane fa**: `@ciraolone` (oggi canale
+AI/tech) e `@linguaggiosegretodelcorpo-6589` (scuola di ballo) non sono piu' in nicchia — esclusi.
+Restano 3 canali reali (223 candidati validi), mappati 1:1 sulle 3 strategie. `MIN_VPH=20` di
+`cashcow_check.py` non raggiunto da nessun video reale in questa nicchia oggi — non usato come
+soglia assoluta nella selezione (ranking relativo per canale invece). 3 titoli con framing "dark
+psychology"/manipolazione esplicita scartati per scelta editoriale durante la selezione.
+
+Verifica end-to-end: 70/70 video_id unici e tracciabili nella cache fresca, 0 overlap con
+`video_prodotti.json`, spot-check live `yt-dlp` su 6 righe casuali tutte confermate online. Bug
+reale trovato in QA visiva (hashtag `#legamidamore` invece di `#legamidiamore`, ripetuto 70
+volte) e corretto prima della consegna. Dettaglio completo: [CP-20260826-003](checkpoints/CP-20260826-003.md).
+
+**RIPRESA DA**: nessun blocco. Il piano è pronto all'uso (`YOUTUBE-AUTOMATION-FACTORY/01-FLUSSI-E-PIANI/CALENDARIO-70-LEGAMIDIAMORE.md`
+o `piano_editoriale_70.csv`), primo checkpoint di performance a Giorno 7 (2026-09-02).
+
+---
+
+## 🎉 2026-08-26 — CLAUDE: EMPIRE STUDIO cat1-copywriting COMPLETATO 29/29 (100%) — CP-20260826-002
+
+Completamento ininterrotto del blocco video 25-29 (dopo il blocco 21-24 di CP-20260826-001), su
+richiesta esplicita di Max di non fermarsi e completare l'obiettivo in modo credit-efficient.
+**cat1-copywriting: 29/29 video completi** — pipeline + Memory Empire (4 file) + wiki Source
+verificati su disco per ognuno. 9/9 video completati oggi senza un solo fallimento in esecuzione
+sequenziale (video 21-29), confermando in modo definitivo la superiorità di affidabilità di
+questo metodo rispetto ai batch paralleli Agent-tool (che avevano fallito ripetutamente nei giorni
+precedenti). **Livello 1 del piano NERVE-SOLVE a 2 giorni raggiunto.**
+
+Contenuti degli ultimi 5 video: hook technique con nota di cautela su un attrito col gate
+anti-clichè esistente (video 25); personal branding format (video 26); primo video del run su
+delivery vocale/fisica, dominio scoperto senza skill DE dedicato (video 27); funnel di lancio
+evento con segmentazione a 4 tier, seconda conferma della tesi "AI non sostituisce, chi la usa
+meglio sì" già vista nel video 21 (video 28); micro-reel di chiusura, il più corto del run (video 29).
+
+**Segnalazioni aperte da riportare a Max** (nessuna richiede azione immediata, solo decisione):
+1. Tensione video 24 vs skill `beast-preventivi` (AP-05 "preventivo formato fattura" bloccante vs
+   Regola 4 del video, breakdown prezzi per componente) — non risolta automaticamente, dettaglio in
+   `memory-empire/knowledge/EBU57iVAutA/enrichment-report.md`.
+2. Due domini scoperti senza skill DE dedicato: delivery vocale/public speaking (video 27), funnel
+   di lancio evento/webinar (video 28) — solo segnalati, nessuna azione richiesta.
+
+**Prossimo passo:** decisione con Max se procedere sul Livello 2 del piano (cat2-cat7 curati, ~52
+video secondo lo scope missione confermato in CP-20260823-008) o chiudere qui la sessione.
+
+---
+
+## 🎬 2026-08-26 — CLAUDE: EMPIRE STUDIO cat1-copywriting a 24/29 + tensione reale trovata con skill `beast-preventivi` — CP-20260826-001
+
+Continuazione del piano NERVE-SOLVE a 2 giorni (deciso 2026-08-24): solo esecuzione sequenziale nel
+thread principale, niente batch Agent-tool paralleli (che avevano ripetutamente colpito il limite
+di spesa). Completati video 21-24/29 (Hormozi copy da solo, 2x script Wolf of Wall Street, preventivo)
+— pipeline + Memory Empire + wiki per tutti, 0 fallimenti su 4 video processati in sequenza.
+
+**Scoperta rilevante da segnalare a Max**: il video 24 (preventivo come strumento di vendita) rivela
+uno skill DE già esistente e maturo su questo stesso dominio, `beast-preventivi/`, mai emerso prima
+nel run. La maggior parte del video CONFERMA quello skill (in particolare "mostralo in call" e "dire
+il prezzo poi silenzio", quasi identici parola per parola). Ma la Regola 4 del video (scomporre un
+prezzo alto nei costi componente per componente, es. shooting €5.000 = affitto+attori+makeup+operatore)
+è in **tensione diretta** con l'anti-pattern AP-05 di quello skill ("preventivo formato fattura" =
+BLOCCANTE, perché il cliente valuta ogni voce singolarmente). **Non ho applicato nessuna patch** —
+proposta un'ipotesi di riconciliazione (itemizzazione fattura ≠ trasparenza costi operativi) ma non
+verificata né imposta unilateralmente su un file di regole "BLOCCANTI" già sistematizzato. Dettaglio:
+`SKILL & Agenti/Empire Studio Suite/empire-studio/memory-empire/knowledge/EBU57iVAutA/enrichment-report.md`.
+
+**cat1-copywriting: 24/29.** Prossimo: video 25 (`uqa06rlgmj4`), poi 26-29, poi valutazione cat2-cat7
+secondo il piano a 2 livelli.
 
 ---
 

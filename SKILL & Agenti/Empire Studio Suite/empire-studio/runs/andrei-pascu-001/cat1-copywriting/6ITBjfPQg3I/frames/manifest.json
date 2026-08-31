@@ -1,0 +1,24 @@
+{
+  "run": "andrei-pascu-001/cat1-copywriting/6ITBjfPQg3I",
+  "url": "https://www.youtube.com/watch?v=6ITBjfPQg3I",
+  "duration_sec": 4,
+  "video_file": "video.webm",
+  "frames": [
+    {
+      "file": "frames/frame-001.png",
+      "index": 1,
+      "timestamp_sec": 0.0,
+      "timestamp_hms": "0:00:00",
+      "chapter": "",
+      "trace": "6ITBjfPQg3I#0:00:00 + frames/frame-001.png"
+    },
+    {
+      "file": "frames/frame-002.png",
+      "index": 2,
+      "timestamp_sec": 2.0,
+      "timestamp_hms": "0:00:02",
+      "chapter": "",
+      "trace": "6ITBjfPQg3I#0:00:02 + frames/frame-002.png"
+    }
+  ]
+}

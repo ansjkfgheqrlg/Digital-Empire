@@ -1,0 +1,31 @@
+{
+  "lesson_number": 2,
+  "section": "AI - Le basi",
+  "title": "Lezione 2 - Termini che devi sapere",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-2-termini-che-devi-sapere-s527b",
+  "slug": "lezione-2-termini-che-devi-sapere-s527b",
+  "vimeo_id": "1172381465",
+  "vimeo_embed": "https://player.vimeo.com/video/1172381465?app_id=122963",
+  "tipo": "TEORIA",
+  "tipo_motivazione": "Lezione glossario/definizioni (system prompt, artifacts, projects, memory, reasoning, API, vibe coding, agent). Nessuna dimostrazione UI passo-passo nella descrizione ufficiale - solo esempi citati a voce. Frame-by-frame NON applicato.",
+  "risorse": {
+    "trascrizione_md": {"presente": false, "nota": "Non disponibile per questa lezione - confermata la regola 'solo alcune lezioni hanno .md scaricabile'. Contenuto coperto integralmente dal blocco ufficiale 'Cosa hai imparato' (26 bullet) + Glossario PDF/CSV."},
+    "glossario_pdf": {"file_locale": "resources/glossario.pdf", "pagine": 3, "fonte": "https://drive.google.com/file/d/1dr2QTWpC40X11EZupWVCBvrnjOTZuX79/view"},
+    "glossario_csv": {"file_locale": "resources/glossario.csv", "fonte": "https://drive.google.com/file/d/1fSAl6oJfxvjlYX5aEeKYcHQK8GihfI-g/view", "nota": "Struttura Termine,Definizione - fonte primaria autorevole per i knowledge atom di questa lezione"},
+    "immagine": {"file_locale": "resources/schema-1.png", "fonte": "https://drive.google.com/file/d/1EqEDzl58TVHmaW3nUJj87PuPK6Q_FSYy/view"},
+    "workflow_citati": [
+      "Workflow 1 - Creare un Artifact su Claude",
+      "Workflow 2 - Creare un Project su Claude per un cliente",
+      "Workflow 3 - Usare Extended Thinking (Chain of Thought) su Claude"
+    ],
+    "link_utili": [
+      "https://claude.ai", "https://claude.ai/download", "https://chatgpt.com",
+      "https://gemini.google.com", "https://grok.com", "https://ollama.com",
+      "https://docs.google.com", "https://sheets.google.com",
+      "https://platform.openai.com", "https://console.anthropic.com",
+      "https://mail.google.com", "https://zapier.com"
+    ]
+  },
+  "data_ingestion": "2026-08-27",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

@@ -1,0 +1,22 @@
+{
+  "lesson_number": 10,
+  "section": "AI - per produttivita e freelance",
+  "title": "Lezione 10 - Cliente manda audio Claude fa revisioni",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-10-cliente-manda-audio-claude-fa-revisioni-zgc9x",
+  "slug": "lezione-10-cliente-manda-audio-claude-fa-revisioni-zgc9x",
+  "vimeo_id": "1174234472",
+  "durata_secondi": 348,
+  "tipo": "PRATICA",
+  "tipo_motivazione": "Confermato con 9 frame: demo reale telefono con chat WhatsApp/audio, interfaccia ElevenLabs Speech-to-Text reale (file WhatsApp Audio visibile), Claude chat reale con prompt e file allegato.",
+  "risorse": {
+    "trascrizione_md": {"presente": false, "nota": "Link 'Scarica .md' presente in pagina ma punta alla pagina stessa (broken/placeholder), non a un file Drive reale - contenuto ricostruito da panoramica + Cosa hai imparato ufficiali + frame video"},
+    "workflow_citati": [
+      "Workflow 1 - Trasformare l'audio di un cliente in revisioni actionable con Claude",
+      "Workflow 2 - Front loading del contesto per ogni nuovo progetto"
+    ],
+    "alternative_elevenlabs": ["YouTube auto-transcript (gratis, trucco: carica audio su sfondo nero)", "Whisper (open source)", "Buzz (app desktop, basata su Whisper)", "Handy STT (open source, locale)", "oTranscribe (manuale)", "MacWhisper (locale, Mac)"],
+    "link_utili": ["https://claude.ai", "https://claude.ai/projects", "https://support.claude.com/en/articles/9517075-what-are-projects", "https://claude.com/product/cowork", "https://elevenlabs.io", "https://elevenlabs.io/audio-to-text", "https://www.whatsapp.com", "https://www.whatsapp.com/download", "https://arc.net"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

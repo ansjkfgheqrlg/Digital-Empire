@@ -1,0 +1,12 @@
+{
+  "lesson_id": "cs2online-bonus-05",
+  "corso": "Claude Speedrun 2",
+  "total_atoms": 5,
+  "atoms": [
+    {"id":"KA-01","source":"cs2online-bonus-05#cosa-hai-imparato+frame-t3m10s","frame":"frame-t3m10s-excalidraw-loop-diagram.jpg","category":"Concetto / progetto continuo","tags":["prompt-isolato","context-accumulato"],"atom":"Differenza tra prompt isolato (domanda singola -> risposta -> fine) e progetto continuo: nel progetto il loop prompt-risposta si ripete e Claude accumula context nel tempo, invece di ripartire da zero ogni volta."},
+    {"id":"KA-02","source":"cs2online-bonus-05#cosa-hai-imparato","category":"Vantaggi Projects Cowork","tags":["memoria","file-allegati","cartella-device"],"atom":"3 vantaggi chiave dei Projects in Cowork: (1) memoria specifica per progetto, (2) file allegati persistenti, (3) accesso diretto a una cartella sul device - non serve riallegare/ricondividere materiale a ogni nuovo task."},
+    {"id":"KA-03","source":"cs2online-bonus-05#cosa-hai-imparato","category":"Metodo organizzativo","tags":["cliente","cartella-condivisa"],"atom":"Metodo organizzativo di Andrei: un Project Cowork per singolo cliente, con cartella condivisa e tutti i file del cliente dentro quella cartella."},
+    {"id":"KA-04","source":"cs2online-bonus-05#cosa-hai-imparato","category":"Modalita' Claude","tags":["chat","cowork","claude-code"],"atom":"3 modalita' Claude distinte (chat, Cowork, Claude Code da terminale) - strategia consigliata: provarle tutte fino a sviluppare intuizione su quando usare quale, non esiste risposta univoca."},
+    {"id":"KA-05","source":"cs2online-bonus-05#cosa-hai-imparato","category":"Feature / import project","tags":["import","riutilizzo"],"atom":"Possibilita' di creare un nuovo Project in Cowork oppure importarne uno gia' esistente dalla chat normale - non serve ricominciare da zero se il progetto esiste gia' altrove."}
+  ]
+}

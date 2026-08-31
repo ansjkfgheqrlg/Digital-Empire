@@ -1,0 +1,5 @@
+﻿[2026-08-31 14:37:45] CONFLITTO DI SYNC
+Pull --rebase fallito: Updating 6a60976a..8e908c81 Created autostash: c92ac45f
+Il tuo lavoro e' al sicuro (committato in locale).
+Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
+Poi cancella questo file.

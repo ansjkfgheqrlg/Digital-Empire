@@ -1,0 +1,2070 @@
+{
+  "generato_il": "2026-08-26",
+  "canale": "@Legamidiamore",
+  "periodo": {
+    "inizio": "2026-08-27",
+    "fine": "2026-09-25",
+    "giorni": 30
+  },
+  "totale_video": 70,
+  "strategie": {
+    "A": {
+      "nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "target": "Uomini che vogliono capire i segnali (verbali e corporei) che una donna manda senza dirli apertamente.",
+      "formato": "Lista numerata, 45-90s, voce femminile calma, ritmo alto (1 segnale ogni 8-10s).",
+      "frequenza": "~28 video/30gg (volume piu' alto: fonte con 100 candidati reali, il pool piu' ampio).",
+      "kpi": "vph medio riga >= mediana del pool A alla generazione (5.1 vph); baseline MIN_VPH=20 di cashcow_check.py non raggiunta da nessun video reale in questa nicchia oggi, quindi non usata come soglia assoluta (vedi nota in candidate_pool).",
+      "volume": 28
+    },
+    "B": {
+      "nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "target": "Uomini che vogliono applicare attivamente una tecnica per aumentare la propria attrattivita', non solo riconoscere segnali passivi.",
+      "formato": "How-to imperativo, 45-90s, voce femminile diretta, tono da coach.",
+      "frequenza": "~14 video/30gg (volume basso DELIBERATAMENTE: il canale reale ha solo 23 candidati validi oggi, si usa il 61% del pool per lasciare margine).",
+      "kpi": "vph medio riga >= mediana del pool B alla generazione (0.46 vph, pool piu' piccolo e piu' lento del pool A/C — atteso, non un errore).",
+      "volume": 14
+    },
+    "C": {
+      "nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "target": "Uomini disillusi dal dating moderno, in cerca di una spiegazione 'perche' non funziona' piu' che di una tecnica.",
+      "formato": "Narrativa 'verita' scomoda', 45-90s, tono piu' serio/rivelatorio.",
+      "frequenza": "~28 video/30gg. Tono verificato il 2026-08-26 (fresh scrape): critica sociale sulla crisi relazionale maschile, NON dark psychology manipolativa come temuto nel calendario precedente (CALENDARIO-LEGAMIDIAMORE.md, 05/08) — confermato con Max prima di assegnare volume.",
+      "kpi": "vph medio riga >= mediana del pool C alla generazione (0.16 vph).",
+      "volume": 28
+    }
+  },
+  "righe": [
+    {
+      "giorno": 1,
+      "data_pubblicazione": "2026-08-27",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=8_RZCbkuIQk",
+      "video_id_sorgente": "8_RZCbkuIQk",
+      "titolo_originale": "7 tocchi che faranno innamorare perdutamente una donna matura di te #psicologia  #relazioni",
+      "vph_sorgente": 10.62,
+      "titolo_adattato": "7 Tocchi Che Fanno Innamorare Una Donna Di Te (Funzionano Davvero)",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "numero_secco",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Esistono 7 punti del corpo che, se tocchi nel modo giusto, cambiano tutto.",
+      "caption_descrizione": "Non e' magia, e' psicologia del contatto: 7 tocchi che una donna sente e ricorda. Guarda fino alla fine per il numero 7.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "linguaggiodelcorpo",
+        "attrazione",
+        "legamidiamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=8_RZCbkuIQk --phase 1"
+    },
+    {
+      "giorno": 1,
+      "data_pubblicazione": "2026-08-27",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=V8m6irmPZmM",
+      "video_id_sorgente": "V8m6irmPZmM",
+      "titolo_originale": "7 segnali che sei un uomo incredibilmente attraente",
+      "vph_sorgente": 2.33,
+      "titolo_adattato": "7 Segnali Che Dimostrano Che Sei Gia' Un Uomo Attraente (Anche Se Non Lo Sai)",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "genere_esplicito",
+        "numero_secco"
+      ],
+      "hook_3_secondi": "Forse sei gia' attraente e non te ne sei accorto. Ecco 7 prove.",
+      "caption_descrizione": "L'attrattivita' maschile ha segnali precisi — controlla quanti ne riconosci in te.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "attrazione",
+        "uomoattraente",
+        "legamidiamore",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=V8m6irmPZmM --phase 1"
+    },
+    {
+      "giorno": 1,
+      "data_pubblicazione": "2026-08-27",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=TcKrM6hOctg",
+      "video_id_sorgente": "TcKrM6hOctg",
+      "titolo_originale": "Perché gli uomini stanno scomparendo La verità sul gioco truccato 🛑",
+      "vph_sorgente": 2.28,
+      "titolo_adattato": "Perche' Sempre Piu' Uomini Scompaiono Dal Mercato Degli Appuntamenti (La Verita')",
+      "schemi_titolo_applicati": [
+        "genere_esplicito"
+      ],
+      "hook_3_secondi": "Gli uomini non stanno sparendo per caso. C'e' una ragione precisa.",
+      "caption_descrizione": "La verita' scomoda su perche' sempre piu' uomini si ritirano dagli appuntamenti.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "veritascomoda",
+        "uomini",
+        "legamidiamore",
+        "societa"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=TcKrM6hOctg --phase 1"
+    },
+    {
+      "giorno": 2,
+      "data_pubblicazione": "2026-08-28",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=CxdlEsEnZ9g",
+      "video_id_sorgente": "CxdlEsEnZ9g",
+      "titolo_originale": "Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+      "vph_sorgente": 10.27,
+      "titolo_adattato": "7 Cose Che Una Donna Dice Solo Quando Sta Iniziando Ad Innamorarsi Di Te",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "numero_secco",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Se sente qualcosa per te, lo dice senza accorgersene — in 7 modi precisi.",
+      "caption_descrizione": "Le parole tradiscono i sentimenti prima dei gesti. Ecco le 7 frasi che segnalano che sta iniziando a innamorarsi.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "linguaggioverbale",
+        "attrazione",
+        "legamidiamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=CxdlEsEnZ9g --phase 1"
+    },
+    {
+      "giorno": 2,
+      "data_pubblicazione": "2026-08-28",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=CzQ9UWUWp3c",
+      "video_id_sorgente": "CzQ9UWUWp3c",
+      "titolo_originale": "Perché l'80% degli uomini è diventato INVISIBILE La verità shock over 30",
+      "vph_sorgente": 1.78,
+      "titolo_adattato": "Perche' Dopo I 30 Anni Molti Uomini Diventano 'Invisibili' Nel Dating",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "numero_secco",
+        "comando_maiuscolo"
+      ],
+      "hook_3_secondi": "Dopo i 30, qualcosa cambia davvero nel modo in cui vieni notato.",
+      "caption_descrizione": "La verita' su perche' tanti uomini oltre i 30 anni si sentono invisibili — e cosa fare.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "uomini",
+        "veritascomoda",
+        "legamidiamore",
+        "societa"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=CzQ9UWUWp3c --phase 1"
+    },
+    {
+      "giorno": 3,
+      "data_pubblicazione": "2026-08-29",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=qHB80wbamBI",
+      "video_id_sorgente": "qHB80wbamBI",
+      "titolo_originale": "4 segnali che indicano che lei ti desidera segretamente: riconoscili prima che sia troppo tardi!",
+      "vph_sorgente": 5.77,
+      "titolo_adattato": "4 Segnali Che Lei Ti Desidera In Segreto (E Che Quasi Nessun Uomo Nota)",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "numero_secco",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Lei non te lo dira' mai a parole — ma il corpo parla comunque.",
+      "caption_descrizione": "4 segnali sottili di desiderio che passano inosservati. Riconoscerli prima che sia troppo tardi.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "desiderio",
+        "attrazione",
+        "legamidiamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=qHB80wbamBI --phase 1"
+    },
+    {
+      "giorno": 3,
+      "data_pubblicazione": "2026-08-29",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=l6iiReMUTC4",
+      "video_id_sorgente": "l6iiReMUTC4",
+      "titolo_originale": "6 Abilità Sociali Che Ti Rendono Incredibilmente Attraente Per Le Donne",
+      "vph_sorgente": 1.78,
+      "titolo_adattato": "6 Abilita' Sociali Che Ti Rendono Molto Piu' Attraente (Si Allenano)",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "numero_secco",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "L'attrazione si allena: ecco 6 abilita' sociali concrete.",
+      "caption_descrizione": "6 abilita' sociali allenabili che aumentano la tua attrattivita', spiegate passo per passo.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "abilitasociali",
+        "attrazione",
+        "legamidiamore",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=l6iiReMUTC4 --phase 1"
+    },
+    {
+      "giorno": 3,
+      "data_pubblicazione": "2026-08-29",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=iCaIzO1VB-I",
+      "video_id_sorgente": "iCaIzO1VB-I",
+      "titolo_originale": "Solitudine Maschile Il Falso Mito Che Ti Distrugge",
+      "vph_sorgente": 0.68,
+      "titolo_adattato": "Il Falso Mito Sulla Solitudine Maschile Che Fa Piu' Danni Della Solitudine Stessa",
+      "schemi_titolo_applicati": [
+        "allarme_negativo",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "C'e' un mito sulla solitudine maschile che fa piu' male della solitudine stessa.",
+      "caption_descrizione": "Il mito da sfatare sulla solitudine maschile, e perche' crederci peggiora le cose.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "solitudine",
+        "uomini",
+        "legamidiamore",
+        "societa"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=iCaIzO1VB-I --phase 1"
+    },
+    {
+      "giorno": 4,
+      "data_pubblicazione": "2026-08-30",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=XABjAjqfUxw",
+      "video_id_sorgente": "XABjAjqfUxw",
+      "titolo_originale": "Lei non può resisterti: il trucco per un'attrazione immediata per gli uomini",
+      "vph_sorgente": 5.42,
+      "titolo_adattato": "Il Trucco Psicologico Che Rende Un Uomo Irresistibile Fin Dal Primo Sguardo",
+      "schemi_titolo_applicati": [
+        "genere_esplicito"
+      ],
+      "hook_3_secondi": "C'e' un dettaglio che decide l'attrazione nei primi 5 secondi.",
+      "caption_descrizione": "Non e' l'aspetto fisico: e' un trucco psicologico preciso che puoi applicare da stasera.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "attrazione",
+        "primaimpressione",
+        "legamidiamore",
+        "psicologiadellamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=XABjAjqfUxw --phase 1"
+    },
+    {
+      "giorno": 4,
+      "data_pubblicazione": "2026-08-30",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=1nDqK1FUJgs",
+      "video_id_sorgente": "1nDqK1FUJgs",
+      "titolo_originale": "Quando fa questo… l’attrazione è già presente (Non te lo dirà mai)",
+      "vph_sorgente": 1.58,
+      "titolo_adattato": "Quando Lei Fa Questo, L'Attrazione E' Gia' Scattata (Anche Se Non Lo Ammette)",
+      "schemi_titolo_applicati": [
+        "parentesi",
+        "allarme_negativo",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "C'e' un gesto che rivela l'attrazione prima ancora che lei se ne accorga.",
+      "caption_descrizione": "Un gesto specifico che tradisce l'attrazione — e che lei non ammettera' mai a parole.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "attrazione",
+        "legamidiamore",
+        "tecnica"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=1nDqK1FUJgs --phase 1"
+    },
+    {
+      "giorno": 4,
+      "data_pubblicazione": "2026-08-30",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=RlxkUN3e3pc",
+      "video_id_sorgente": "RlxkUN3e3pc",
+      "titolo_originale": "Perché i bravi ragazzi spariscono La verità sul ritiro ⚠️",
+      "vph_sorgente": 0.55,
+      "titolo_adattato": "Perche' I 'Bravi Ragazzi' Finiscono Per Ritirarsi Dal Gioco (La Verita')",
+      "schemi_titolo_applicati": [],
+      "hook_3_secondi": "I bravi ragazzi non spariscono per caso. Ecco cosa succede davvero.",
+      "caption_descrizione": "La verita' psicologica dietro il ritiro dei 'bravi ragazzi' dal dating.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "uomini",
+        "veritascomoda",
+        "legamidiamore",
+        "societa"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=RlxkUN3e3pc --phase 1"
+    },
+    {
+      "giorno": 5,
+      "data_pubblicazione": "2026-08-31",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=AXvmuRR4cdY",
+      "video_id_sorgente": "AXvmuRR4cdY",
+      "titolo_originale": "Perché le donne tornano dopo averti rifiutato? | Psicologia femminile",
+      "vph_sorgente": 5.36,
+      "titolo_adattato": "Perche' Una Donna Torna Da Te Dopo Averti Rifiutato (La Psicologia Dietro)",
+      "schemi_titolo_applicati": [
+        "genere_esplicito"
+      ],
+      "hook_3_secondi": "Ti ha rifiutato... eppure torna. Ecco perche' succede davvero.",
+      "caption_descrizione": "Il rifiuto non e' sempre la fine: la psicologia spiega perche' lei puo' tornare, e quando.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "rifiuto",
+        "legamidiamore",
+        "psicologiadellamore",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=AXvmuRR4cdY --phase 1"
+    },
+    {
+      "giorno": 5,
+      "data_pubblicazione": "2026-08-31",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=vRHx6bAEHNU",
+      "video_id_sorgente": "vRHx6bAEHNU",
+      "titolo_originale": "Perché sei single da sempre La verità che ti blocca",
+      "vph_sorgente": 0.52,
+      "titolo_adattato": "Perche' Sei Single Da Sempre: La Verita' Psicologica Che Ti Blocca",
+      "schemi_titolo_applicati": [
+        "allarme_negativo",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Se sei single da sempre, il motivo probabilmente non e' quello che pensi.",
+      "caption_descrizione": "La vera causa psicologica dietro una lunga serie di 'da solo' — spiegata senza filtri.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "single",
+        "veritascomoda",
+        "legamidiamore",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=vRHx6bAEHNU --phase 1"
+    },
+    {
+      "giorno": 6,
+      "data_pubblicazione": "2026-09-01",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=8kQdIfI4MEc",
+      "video_id_sorgente": "8kQdIfI4MEc",
+      "titolo_originale": "Come farle pensare a te senza inviarle nemmeno un messaggio",
+      "vph_sorgente": 1.24,
+      "titolo_adattato": "Come Restare Nei Suoi Pensieri Senza Scriverle Nemmeno Un Messaggio",
+      "schemi_titolo_applicati": [
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Non serve scrivere per restare nella sua testa. Serve fare questo.",
+      "caption_descrizione": "La tecnica psicologica per restare presente nei suoi pensieri, senza inviare un solo messaggio.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "tecnica",
+        "attrazione",
+        "legamidiamore",
+        "psicologiadellamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=8kQdIfI4MEc --phase 1"
+    },
+    {
+      "giorno": 6,
+      "data_pubblicazione": "2026-09-01",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=kY02KtQfyX0",
+      "video_id_sorgente": "kY02KtQfyX0",
+      "titolo_originale": "6 segnali nascosti che indicano che una donna ti desidera (ma non lo dirà) | Psicologia femminile",
+      "vph_sorgente": 5.14,
+      "titolo_adattato": "6 Segnali Nascosti Che Una Donna Ti Desidera (Anche Se Non Lo Ammettera' Mai)",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "genere_esplicito",
+        "numero_secco",
+        "parentesi",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Non lo dira' mai a voce alta — ma questi 6 segnali la tradiscono.",
+      "caption_descrizione": "6 segnali nascosti di desiderio femminile che sfuggono alla maggior parte degli uomini.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "desiderio",
+        "attrazione",
+        "legamidiamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=kY02KtQfyX0 --phase 1"
+    },
+    {
+      "giorno": 7,
+      "data_pubblicazione": "2026-09-02",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=IkEmUmnSPI4",
+      "video_id_sorgente": "IkEmUmnSPI4",
+      "titolo_originale": "Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini",
+      "vph_sorgente": 5.07,
+      "titolo_adattato": "Il Trucco Dell'Attrazione Istantanea Che Pochi Uomini Conoscono",
+      "schemi_titolo_applicati": [
+        "genere_esplicito"
+      ],
+      "hook_3_secondi": "L'attrazione istantanea non e' fortuna: e' un meccanismo psicologico preciso.",
+      "caption_descrizione": "Ecco il trucco che genera attrazione istantanea — spiegato passo dopo passo.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "attrazione",
+        "legamidiamore",
+        "psicologiadellamore",
+        "segnalidilei"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=IkEmUmnSPI4 --phase 1"
+    },
+    {
+      "giorno": 7,
+      "data_pubblicazione": "2026-09-02",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=0r_fGgGXspg",
+      "video_id_sorgente": "0r_fGgGXspg",
+      "titolo_originale": "5 Segnali Infallibili che Lei è Attratta da Te Smetti di Sbagliare!",
+      "vph_sorgente": 0.5,
+      "titolo_adattato": "5 Segnali Infallibili Di Attrazione Che Continui A Interpretare Male",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "numero_secco",
+        "allarme_negativo",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Continui a sbagliare la lettura di questi 5 segnali. Ecco come leggerli davvero.",
+      "caption_descrizione": "5 segnali infallibili di attrazione, spiegati per smettere di fraintenderli.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "attrazione",
+        "legamidiamore",
+        "veritascomoda"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=0r_fGgGXspg --phase 1"
+    },
+    {
+      "giorno": 8,
+      "data_pubblicazione": "2026-09-03",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=VejNn26Ndlg",
+      "video_id_sorgente": "VejNn26Ndlg",
+      "titolo_originale": "Come una donna inizia a sentire la tua mancanza dopo che te ne sei andato",
+      "vph_sorgente": 4.55,
+      "titolo_adattato": "Cosa Succede Nella Mente Di Una Donna Quando Inizia A Sentire La Tua Mancanza",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "C'e' un momento preciso in cui inizia a mancarle — ecco quando.",
+      "caption_descrizione": "La psicologia dietro il momento esatto in cui una donna inizia a sentire la tua mancanza.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "mancanza",
+        "legamidiamore",
+        "psicologiadellamore",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=VejNn26Ndlg --phase 1"
+    },
+    {
+      "giorno": 8,
+      "data_pubblicazione": "2026-09-03",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=Lo9aL7U9F9s",
+      "video_id_sorgente": "Lo9aL7U9F9s",
+      "titolo_originale": "Perché nessuno ti risponde più La verità scioccante del 2026 🚫",
+      "vph_sorgente": 0.32,
+      "titolo_adattato": "Perche' Nel 2026 Sempre Meno Persone Rispondono Ai Messaggi (La Verita')",
+      "schemi_titolo_applicati": [
+        "numero_secco",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Non sei tu. E' cambiato il modo in cui le persone rispondono, punto.",
+      "caption_descrizione": "La verita' sul perche' le risposte ai messaggi sono crollate nel 2026 — e come adattarsi.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "dating2026",
+        "veritascomoda",
+        "legamidiamore",
+        "societa"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=Lo9aL7U9F9s --phase 1"
+    },
+    {
+      "giorno": 9,
+      "data_pubblicazione": "2026-09-04",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=chVKOBlEpDI",
+      "video_id_sorgente": "chVKOBlEpDI",
+      "titolo_originale": "Pensi che non sia interessata? Guarda prima questo",
+      "vph_sorgente": 4.45,
+      "titolo_adattato": "Pensi Che Non Sia Interessata? Guarda Questi Segnali Prima Di Arrenderti",
+      "schemi_titolo_applicati": [],
+      "hook_3_secondi": "Prima di pensare che non le interessi, guarda questo.",
+      "caption_descrizione": "A volte il disinteresse e' solo apparenza. Questi segnali dicono la verita'.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "dubbio",
+        "attrazione",
+        "legamidiamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=chVKOBlEpDI --phase 1"
+    },
+    {
+      "giorno": 9,
+      "data_pubblicazione": "2026-09-04",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=BZm_ajOnSt0",
+      "video_id_sorgente": "BZm_ajOnSt0",
+      "titolo_originale": "La Cruda Verità sull'Altezza Perché l'85% degli Uomini è Invisibile",
+      "vph_sorgente": 0.3,
+      "titolo_adattato": "La Cruda Verita' Sull'Altezza Nel Dating (E Perche' Conta Meno Di Quanto Pensi)",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "numero_secco"
+      ],
+      "hook_3_secondi": "L'altezza conta, ma non nel modo in cui pensi che conti.",
+      "caption_descrizione": "La verita' scomoda sull'altezza nel dating, ridimensionata con dati e psicologia reale.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "dating",
+        "veritascomoda",
+        "legamidiamore",
+        "societa"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=BZm_ajOnSt0 --phase 1"
+    },
+    {
+      "giorno": 10,
+      "data_pubblicazione": "2026-09-05",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=9UND8IgmOME",
+      "video_id_sorgente": "9UND8IgmOME",
+      "titolo_originale": "Dimentica il \"nessun contatto\": fa ancora più male del tuo silenzio | Psicologia femminile",
+      "vph_sorgente": 4.11,
+      "titolo_adattato": "Perche' Il 'No Contact' Le Fa Piu' Male Del Tuo Silenzio (Verita' Psicologica)",
+      "schemi_titolo_applicati": [],
+      "hook_3_secondi": "Il silenzio non e' la parte piu' dolorosa — e' quello che viene dopo.",
+      "caption_descrizione": "La psicologia del no-contact spiegata: perche' fa piu' male di quanto pensi.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "nocontact",
+        "legamidiamore",
+        "psicologiadellamore",
+        "rottura"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=9UND8IgmOME --phase 1"
+    },
+    {
+      "giorno": 10,
+      "data_pubblicazione": "2026-09-05",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=If2X61nvDpI",
+      "video_id_sorgente": "If2X61nvDpI",
+      "titolo_originale": "7 SEGNALI che lei è già ATTRATTA da te (ma non te lo dirà mai)",
+      "vph_sorgente": 0.94,
+      "titolo_adattato": "7 Segnali Che Lei E' Gia' Attratta Da Te (Prima Che Lo Dica A Parole)",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "numero_secco",
+        "parentesi",
+        "comando_maiuscolo",
+        "allarme_negativo",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "L'attrazione arriva prima delle parole — ecco 7 modi per riconoscerla.",
+      "caption_descrizione": "7 segnali concreti che l'attrazione e' gia' scattata, anche se lei non lo dira'.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "attrazione",
+        "legamidiamore",
+        "tecnica"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=If2X61nvDpI --phase 1"
+    },
+    {
+      "giorno": 10,
+      "data_pubblicazione": "2026-09-05",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=j3ywIxPFAfo",
+      "video_id_sorgente": "j3ywIxPFAfo",
+      "titolo_originale": "Come Capire Se Le Piaci Davvero Senza Fare Il Primo Passo I Segnali Inconsci Che Nessuno Ti Dice",
+      "vph_sorgente": 0.21,
+      "titolo_adattato": "Come Sapere Se Le Piaci Davvero Senza Fare Il Primo Passo (Segnali Inconsci)",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Ci sono segnali inconsci che rivelano tutto, prima ancora di parlare.",
+      "caption_descrizione": "I segnali inconsci che rivelano il suo interesse, senza bisogno di esporti per primo.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "segnaliinconsci",
+        "legamidiamore",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=j3ywIxPFAfo --phase 1"
+    },
+    {
+      "giorno": 11,
+      "data_pubblicazione": "2026-09-06",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=XHveMwvoB2M",
+      "video_id_sorgente": "XHveMwvoB2M",
+      "titolo_originale": "3 chiari segnali che una donna desidera segretamente l'intimità con te",
+      "vph_sorgente": 3.01,
+      "titolo_adattato": "3 Segnali Chiari Che Una Donna Desidera L'Intimita' (Anche Se Non Lo Dice)",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "genere_esplicito",
+        "numero_secco",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "3 segnali chiari, quasi impossibili da nascondere.",
+      "caption_descrizione": "Il desiderio di intimita' si manifesta in modi precisi. Ecco i 3 segnali da riconoscere.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "intimita",
+        "attrazione",
+        "legamidiamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=XHveMwvoB2M --phase 1"
+    },
+    {
+      "giorno": 11,
+      "data_pubblicazione": "2026-09-06",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=KmMx0CpFy5Y",
+      "video_id_sorgente": "KmMx0CpFy5Y",
+      "titolo_originale": "7 Segnali CHIARI che lei è attratta da te… ma sta per perdere interesse",
+      "vph_sorgente": 0.48,
+      "titolo_adattato": "Attratta Da Te, Ma Sta Per Perdere Interesse: 7 Segnali Da Non Ignorare",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "numero_secco",
+        "comando_maiuscolo",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "L'attrazione c'e' ancora, ma sta per svanire — questi 7 segnali te lo dicono.",
+      "caption_descrizione": "7 segnali che indicano che l'interesse sta calando, in tempo per intervenire.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "interesse",
+        "legamidiamore",
+        "tecnica"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=KmMx0CpFy5Y --phase 1"
+    },
+    {
+      "giorno": 11,
+      "data_pubblicazione": "2026-09-06",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=AiPPUVsy8TY",
+      "video_id_sorgente": "AiPPUVsy8TY",
+      "titolo_originale": "3 Test infallibili per capire se sta con te per i soldi",
+      "vph_sorgente": 0.21,
+      "titolo_adattato": "3 Modi Psicologici Per Capire Se Ti Ama Per Te O Per Altro",
+      "schemi_titolo_applicati": [
+        "numero_secco",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Ci sono 3 modi per capire cosa cerca davvero in te.",
+      "caption_descrizione": "3 test psicologici, non accusatori, per leggere le vere motivazioni in una relazione.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "veritascomoda",
+        "legamidiamore",
+        "societa",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=AiPPUVsy8TY --phase 1"
+    },
+    {
+      "giorno": 12,
+      "data_pubblicazione": "2026-09-07",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=VB9Dkd5w1MM",
+      "video_id_sorgente": "VB9Dkd5w1MM",
+      "titolo_originale": "Le donne sono fedeli a UNA cosa sola – e non è quello che fai per loro",
+      "vph_sorgente": 2.6,
+      "titolo_adattato": "L'Unica Cosa A Cui Una Donna Resta Davvero Fedele (Non E' Quello Che Pensi)",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "comando_maiuscolo"
+      ],
+      "hook_3_secondi": "Non e' quello che fai per lei. E' qualcos'altro.",
+      "caption_descrizione": "La fedelta' femminile ha una sola vera radice psicologica — e non e' quella che pensi.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "fedelta",
+        "legamidiamore",
+        "psicologiadellamore",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=VB9Dkd5w1MM --phase 1"
+    },
+    {
+      "giorno": 12,
+      "data_pubblicazione": "2026-09-07",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=wvMbDjmq1Tw",
+      "video_id_sorgente": "wvMbDjmq1Tw",
+      "titolo_originale": "Perché le donne moderne sono infelici in amore 5 Motivi",
+      "vph_sorgente": 0.15,
+      "titolo_adattato": "5 Motivi Psicologici Per Cui Tante Donne Sono Infelici In Amore Oggi",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "numero_secco"
+      ],
+      "hook_3_secondi": "L'infelicita' in amore oggi ha 5 cause psicologiche precise.",
+      "caption_descrizione": "5 ragioni psicologiche dietro l'infelicita' amorosa moderna, spiegate senza luoghi comuni.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "societa",
+        "veritascomoda",
+        "legamidiamore",
+        "psicologiadellamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=wvMbDjmq1Tw --phase 1"
+    },
+    {
+      "giorno": 13,
+      "data_pubblicazione": "2026-09-08",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=5Dq7kG9ORFk",
+      "video_id_sorgente": "5Dq7kG9ORFk",
+      "titolo_originale": "Le donne diventano dipendenti quando fai questo (senza toccarle)",
+      "vph_sorgente": 0.45,
+      "titolo_adattato": "Cosa Crea Un Legame Emotivo Forte Senza Bisogno Di Un Solo Contatto Fisico",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "parentesi"
+      ],
+      "hook_3_secondi": "Il legame piu' forte non nasce dal contatto fisico. Nasce da questo.",
+      "caption_descrizione": "La tecnica psicologica che crea connessione emotiva profonda, senza toccarla nemmeno una volta.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "connessioneemotiva",
+        "tecnica",
+        "legamidiamore",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=5Dq7kG9ORFk --phase 1"
+    },
+    {
+      "giorno": 13,
+      "data_pubblicazione": "2026-09-08",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=VQTyQXCR8Y8",
+      "video_id_sorgente": "VQTyQXCR8Y8",
+      "titolo_originale": "Segnali di Manipolazione L'Intimità Finta",
+      "vph_sorgente": 0.14,
+      "titolo_adattato": "Come Riconoscere L'Intimita' Finta E I Segnali Di Manipolazione Emotiva",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti"
+      ],
+      "hook_3_secondi": "Non tutta l'intimita' e' vera. Ecco come riconoscere quella finta.",
+      "caption_descrizione": "Come distinguere l'intimita' autentica dalla manipolazione emotiva — segnali da cui proteggersi.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "manipolazioneemotiva",
+        "consapevolezza",
+        "legamidiamore",
+        "societa"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=VQTyQXCR8Y8 --phase 1"
+    },
+    {
+      "giorno": 14,
+      "data_pubblicazione": "2026-09-09",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=OhbmC_CXL3w",
+      "video_id_sorgente": "OhbmC_CXL3w",
+      "titolo_originale": "🔥 Se una donna ti mostra questa specifica parte del suo corpo, cosa significa davvero?",
+      "vph_sorgente": 2.47,
+      "titolo_adattato": "Cosa Significa Davvero Se Una Donna Ti Mostra Questa Parte Del Corpo",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "C'e' un gesto specifico che rivela molto piu' di quanto sembri.",
+      "caption_descrizione": "Il linguaggio del corpo non mente: ecco cosa significa davvero questo gesto.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "linguaggiodelcorpo",
+        "segnalidilei",
+        "attrazione",
+        "legamidiamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=OhbmC_CXL3w --phase 1"
+    },
+    {
+      "giorno": 14,
+      "data_pubblicazione": "2026-09-09",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=02m975jf_5A",
+      "video_id_sorgente": "02m975jf_5A",
+      "titolo_originale": "IL POTERE DEL NO CONTACT CON UNA MANIPOLATRICE Ignorala e Guarda Cosa Succede",
+      "vph_sorgente": 0.13,
+      "titolo_adattato": "Perche' Il No Contact Funziona Davvero Con Chi Ti Manipola Emotivamente",
+      "schemi_titolo_applicati": [
+        "comando_maiuscolo"
+      ],
+      "hook_3_secondi": "Con chi manipola, il silenzio e' la risposta piu' potente.",
+      "caption_descrizione": "La psicologia del no-contact come strumento di protezione da dinamiche manipolative.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "nocontact",
+        "manipolazioneemotiva",
+        "legamidiamore",
+        "consapevolezza"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=02m975jf_5A --phase 1"
+    },
+    {
+      "giorno": 15,
+      "data_pubblicazione": "2026-09-10",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=DktUP9rCN0E",
+      "video_id_sorgente": "DktUP9rCN0E",
+      "titolo_originale": "7 punti del corpo che le donne desiderano essere toccati (e che gli uomini trascurano sistematicamen",
+      "vph_sorgente": 1.99,
+      "titolo_adattato": "7 Punti Del Corpo Che Le Donne Vogliono Che Tu Tocchi (E Che Ignori)",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "numero_secco",
+        "parentesi"
+      ],
+      "hook_3_secondi": "Ci sono 7 punti che la maggior parte degli uomini trascura completamente.",
+      "caption_descrizione": "7 punti del corpo spesso ignorati, ma decisivi per lei. Guarda fino alla fine.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "linguaggiodelcorpo",
+        "contatto",
+        "attrazione",
+        "legamidiamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=DktUP9rCN0E --phase 1"
+    },
+    {
+      "giorno": 15,
+      "data_pubblicazione": "2026-09-10",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=7nxChZi90IA",
+      "video_id_sorgente": "7nxChZi90IA",
+      "titolo_originale": "Cosa rende un uomo davvero attraente (Come diventare una calamita per le donne)",
+      "vph_sorgente": 0.44,
+      "titolo_adattato": "Cosa Rende Davvero Un Uomo Attraente (Non E' Quello Che Pensi)",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "parentesi"
+      ],
+      "hook_3_secondi": "Non e' l'aspetto. Ecco cosa rende davvero un uomo attraente.",
+      "caption_descrizione": "Il vero motore dell'attrattivita' maschile, spiegato con la psicologia, non con i miti.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "uomoattraente",
+        "attrazione",
+        "legamidiamore",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=7nxChZi90IA --phase 1"
+    },
+    {
+      "giorno": 15,
+      "data_pubblicazione": "2026-09-10",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=eYvgLsc47EM",
+      "video_id_sorgente": "eYvgLsc47EM",
+      "titolo_originale": "Falla Innamorare Ignorandola Il Segreto Psicologico Che Nessuno Ti Dice",
+      "vph_sorgente": 0.13,
+      "titolo_adattato": "Il Paradosso Psicologico Per Cui A Volte Allontanarsi Avvicina Davvero",
+      "schemi_titolo_applicati": [
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "A volte avvicinarsi allontana. E allontanarsi, paradossalmente, avvicina.",
+      "caption_descrizione": "Il paradosso psicologico della distanza in amore, spiegato senza trucchi manipolativi.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "attrazione",
+        "legamidiamore",
+        "psicologiadellamore",
+        "veritascomoda"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=eYvgLsc47EM --phase 1"
+    },
+    {
+      "giorno": 16,
+      "data_pubblicazione": "2026-09-11",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=PyUrlzY5xSU",
+      "video_id_sorgente": "PyUrlzY5xSU",
+      "titolo_originale": "🔥 Quando una donna ti desidera, ti rivela sempre questi 3 segnali | Psicologia femminile 🔥",
+      "vph_sorgente": 1.98,
+      "titolo_adattato": "3 Segnali Che Una Donna Rivela Sempre Quando Ti Desidera Davvero",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "genere_esplicito",
+        "numero_secco",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Ci sono 3 segnali che rivela sempre, senza eccezioni.",
+      "caption_descrizione": "Quando il desiderio e' reale, il corpo lo rivela sempre. Ecco i 3 segnali costanti.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "desiderio",
+        "attrazione",
+        "legamidiamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=PyUrlzY5xSU --phase 1"
+    },
+    {
+      "giorno": 16,
+      "data_pubblicazione": "2026-09-11",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=HmGyw0ZMneM",
+      "video_id_sorgente": "HmGyw0ZMneM",
+      "titolo_originale": "Il passato della partner conta davvero 7 Tattiche di inganno",
+      "vph_sorgente": 0.12,
+      "titolo_adattato": "Il Passato Di Una Persona Conta Davvero In Amore? La Verita' Psicologica",
+      "schemi_titolo_applicati": [
+        "numero_secco"
+      ],
+      "hook_3_secondi": "Il passato conta, ma non nel modo in cui te lo aspetti.",
+      "caption_descrizione": "Quanto conta davvero il passato di una persona in una relazione — spiegato con la psicologia.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "veritascomoda",
+        "legamidiamore",
+        "societa",
+        "psicologiadellamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=HmGyw0ZMneM --phase 1"
+    },
+    {
+      "giorno": 17,
+      "data_pubblicazione": "2026-09-12",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=VbVpAli50HU",
+      "video_id_sorgente": "VbVpAli50HU",
+      "titolo_originale": "Una volta che gli uomini capiranno questo delle donne, gli appuntamenti cambieranno per sempre",
+      "vph_sorgente": 1.94,
+      "titolo_adattato": "La Cosa Che, Una Volta Capita, Cambia Per Sempre Il Modo In Cui Corteggi",
+      "schemi_titolo_applicati": [
+        "genere_esplicito"
+      ],
+      "hook_3_secondi": "C'e' una cosa che, capita una volta, cambia tutto negli appuntamenti.",
+      "caption_descrizione": "Un solo concetto psicologico che, capito bene, trasforma ogni primo appuntamento.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "appuntamenti",
+        "attrazione",
+        "legamidiamore",
+        "psicologiadellamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=VbVpAli50HU --phase 1"
+    },
+    {
+      "giorno": 17,
+      "data_pubblicazione": "2026-09-12",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=TX42B5ersPw",
+      "video_id_sorgente": "TX42B5ersPw",
+      "titolo_originale": "Pensavo Di Non Essere Attraente... (Poi Ho Notato Queste 7 Cose)",
+      "vph_sorgente": 0.37,
+      "titolo_adattato": "Pensavo Di Non Essere Attraente, Finche' Non Ho Notato Queste 7 Cose",
+      "schemi_titolo_applicati": [
+        "numero_secco",
+        "parentesi"
+      ],
+      "hook_3_secondi": "Pensavo di non essere attraente. Poi ho notato 7 cose.",
+      "caption_descrizione": "Una storia in prima persona su come cambia la percezione di se' notando questi 7 segnali.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "autostima",
+        "attrazione",
+        "legamidiamore",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=TX42B5ersPw --phase 1"
+    },
+    {
+      "giorno": 17,
+      "data_pubblicazione": "2026-09-12",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=XKCVkE49eMU",
+      "video_id_sorgente": "XKCVkE49eMU",
+      "titolo_originale": "Come Capire la Mente Femminile e Smettere di Inseguire Il Segreto per Farsi Desiderare",
+      "vph_sorgente": 0.1,
+      "titolo_adattato": "Come Smettere Di Inseguire E Iniziare Ad Essere Desiderato Davvero",
+      "schemi_titolo_applicati": [],
+      "hook_3_secondi": "Smettere di inseguire non e' arrendersi. E' cambiare strategia.",
+      "caption_descrizione": "La psicologia di come smettere di inseguire e diventare la persona desiderata.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "desiderio",
+        "legamidiamore",
+        "psicologiadellamore",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=XKCVkE49eMU --phase 1"
+    },
+    {
+      "giorno": 18,
+      "data_pubblicazione": "2026-09-13",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=XuYWVuIRIWM",
+      "video_id_sorgente": "XuYWVuIRIWM",
+      "titolo_originale": "Come far eccitare un'amica... in soli 3 minuti! Psicologia femminile",
+      "vph_sorgente": 1.92,
+      "titolo_adattato": "Come Far Nascere Attrazione In Un'Amica In Pochi Minuti (Psicologia, Non Trucchi)",
+      "schemi_titolo_applicati": [
+        "numero_secco"
+      ],
+      "hook_3_secondi": "In pochi minuti puoi cambiare il modo in cui ti vede.",
+      "caption_descrizione": "Passare dalla friendzone all'attrazione e' questione di psicologia, non di fortuna.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "friendzone",
+        "attrazione",
+        "legamidiamore",
+        "psicologiadellamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=XuYWVuIRIWM --phase 1"
+    },
+    {
+      "giorno": 18,
+      "data_pubblicazione": "2026-09-13",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=JowWCGsgFeI",
+      "video_id_sorgente": "JowWCGsgFeI",
+      "titolo_originale": "Come Capire se una Donna è Attratta da Te (Segnali che Non Mente Mai)",
+      "vph_sorgente": 0.25,
+      "titolo_adattato": "Come Capire Se E' Davvero Attratta Da Te (I Segnali Che Non Mentono Mai)",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "genere_esplicito",
+        "parentesi",
+        "allarme_negativo",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Ci sono segnali che il corpo non riesce a nascondere. Mai.",
+      "caption_descrizione": "I segnali di attrazione che non mentono mai, anche quando le parole dicono altro.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "attrazione",
+        "legamidiamore",
+        "tecnica"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=JowWCGsgFeI --phase 1"
+    },
+    {
+      "giorno": 18,
+      "data_pubblicazione": "2026-09-13",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=7OyC5rHdvr8",
+      "video_id_sorgente": "7OyC5rHdvr8",
+      "titolo_originale": "8 Domande Trappola se rispondi così, hai già perso ⚠️",
+      "vph_sorgente": 0.1,
+      "titolo_adattato": "8 Domande Trappola Nelle Conversazioni (E Come Rispondere Senza Perdere Punti)",
+      "schemi_titolo_applicati": [
+        "numero_secco"
+      ],
+      "hook_3_secondi": "Alcune domande sono trappole psicologiche. Ecco come non caderci.",
+      "caption_descrizione": "8 domande trappola comuni nelle conversazioni e come gestirle senza sbagliare.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "conversazione",
+        "legamidiamore",
+        "attrazione",
+        "tecnica"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=7OyC5rHdvr8 --phase 1"
+    },
+    {
+      "giorno": 19,
+      "data_pubblicazione": "2026-09-14",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=n2lhUxDWY0Q",
+      "video_id_sorgente": "n2lhUxDWY0Q",
+      "titolo_originale": "7 Segnali che ha appena dormito con un altro | Psicologia Femminile",
+      "vph_sorgente": 1.5,
+      "titolo_adattato": "7 Segnali Comportamentali A Cui Prestare Attenzione Dopo Una Lunga Assenza",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "numero_secco"
+      ],
+      "hook_3_secondi": "Il comportamento cambia sempre piu' delle parole — ecco cosa notare.",
+      "caption_descrizione": "Non serve indagare: il comportamento rivela piu' di ogni parola. 7 segnali da osservare con calma.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "comportamento",
+        "legamidiamore",
+        "psicologiadellamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=n2lhUxDWY0Q --phase 1"
+    },
+    {
+      "giorno": 19,
+      "data_pubblicazione": "2026-09-14",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=YnV7IFkLuUk",
+      "video_id_sorgente": "YnV7IFkLuUk",
+      "titolo_originale": "L'Errore Fatale che distrugge gli uomini a 40 anni Smetti di farlo!",
+      "vph_sorgente": 0.1,
+      "titolo_adattato": "L'Errore Che Distrugge Le Possibilita' Di Molti Uomini Dopo I 40 Anni",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "numero_secco",
+        "allarme_negativo"
+      ],
+      "hook_3_secondi": "Dopo i 40, un solo errore puo' rovinare tutto. Ecco quale.",
+      "caption_descrizione": "L'errore psicologico piu' comune dopo i 40 anni — e come smettere di commetterlo.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "uomini",
+        "veritascomoda",
+        "legamidiamore",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=YnV7IFkLuUk --phase 1"
+    },
+    {
+      "giorno": 20,
+      "data_pubblicazione": "2026-09-15",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=AzJuqmi7_sY",
+      "video_id_sorgente": "AzJuqmi7_sY",
+      "titolo_originale": "Come comportarsi con una donna che ti ha ferito | Stoicismo",
+      "vph_sorgente": 1.48,
+      "titolo_adattato": "Come Comportarti (Con Dignita') Con Una Donna Che Ti Ha Ferito",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Non serve vendicarsi. Serve una strategia migliore.",
+      "caption_descrizione": "La calma stoica come arma psicologica dopo una ferita d'amore. Ecco come applicarla.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "stoicismo",
+        "resilienza",
+        "legamidiamore",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=AzJuqmi7_sY --phase 1"
+    },
+    {
+      "giorno": 20,
+      "data_pubblicazione": "2026-09-15",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=ZVbafCxosrU",
+      "video_id_sorgente": "ZVbafCxosrU",
+      "titolo_originale": "6 Errori che distruggono il flirt la soluzione è",
+      "vph_sorgente": 0.1,
+      "titolo_adattato": "6 Errori Che Distruggono Il Flirt Prima Ancora Che Inizi",
+      "schemi_titolo_applicati": [
+        "numero_secco",
+        "allarme_negativo"
+      ],
+      "hook_3_secondi": "Il flirt muore spesso nei primi secondi, per 6 errori precisi.",
+      "caption_descrizione": "6 errori comuni che uccidono il flirt sul nascere — e come evitarli.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "flirt",
+        "errori",
+        "legamidiamore",
+        "tecnica"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=ZVbafCxosrU --phase 1"
+    },
+    {
+      "giorno": 21,
+      "data_pubblicazione": "2026-09-16",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=RliwdVK63TQ",
+      "video_id_sorgente": "RliwdVK63TQ",
+      "titolo_originale": "Come Farle Cambiare Idea Anche Se All'Inizio Non Era Interessata",
+      "vph_sorgente": 0.25,
+      "titolo_adattato": "Come Far Cambiare Idea A Una Donna Che All'Inizio Non Era Interessata",
+      "schemi_titolo_applicati": [],
+      "hook_3_secondi": "Il primo 'no' non e' sempre definitivo. Ecco come cambia una prima impressione.",
+      "caption_descrizione": "La psicologia di come cambia una prima impressione, spiegata passo per passo.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "primaimpressione",
+        "tecnica",
+        "legamidiamore",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=RliwdVK63TQ --phase 1"
+    },
+    {
+      "giorno": 21,
+      "data_pubblicazione": "2026-09-16",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=wRepp7aPTcU",
+      "video_id_sorgente": "wRepp7aPTcU",
+      "titolo_originale": "BACIALA QUI E ti supplicherà di portarla a casa stasera. Psicologia dell'amore",
+      "vph_sorgente": 1.37,
+      "titolo_adattato": "Il Punto Esatto Da Baciare Che Accende L'Attrazione (Spiegazione Psicologica)",
+      "schemi_titolo_applicati": [
+        "comando_maiuscolo",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Non tutti i baci sono uguali — la posizione conta piu' di quanto pensi.",
+      "caption_descrizione": "La psicologia del bacio: un punto preciso che intensifica l'attrazione reciproca.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "attrazione",
+        "baci",
+        "legamidiamore",
+        "psicologiadellamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=wRepp7aPTcU --phase 1"
+    },
+    {
+      "giorno": 22,
+      "data_pubblicazione": "2026-09-17",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=FWFGk9fthJ0",
+      "video_id_sorgente": "FWFGk9fthJ0",
+      "titolo_originale": "Le donne più giovani ODIANO quando gli uomini più grandi fanno questo 😳 | 7 abitudini poco attraenti",
+      "vph_sorgente": 1.22,
+      "titolo_adattato": "7 Abitudini Che Rendono Un Uomo Meno Attraente (Anche Se Non Se Ne Accorge)",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "numero_secco",
+        "comando_maiuscolo"
+      ],
+      "hook_3_secondi": "Ci sono abitudini che tolgono attrazione senza che tu te ne accorga.",
+      "caption_descrizione": "7 abitudini comuni che spengono l'attrazione — riconoscile prima che sia tardi.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "attrazione",
+        "abitudini",
+        "legamidiamore",
+        "psicologiadellamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=FWFGk9fthJ0 --phase 1"
+    },
+    {
+      "giorno": 22,
+      "data_pubblicazione": "2026-09-17",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=RrB8zhxomVc",
+      "video_id_sorgente": "RrB8zhxomVc",
+      "titolo_originale": "Relazioni 2026 L'Unica Mossa Vincente è NON GIOCARE 🚪",
+      "vph_sorgente": 0.09,
+      "titolo_adattato": "Relazioni Nel 2026: L'Unica Mossa Vincente E' Smettere Di Giocare",
+      "schemi_titolo_applicati": [
+        "numero_secco",
+        "comando_maiuscolo"
+      ],
+      "hook_3_secondi": "Nel 2026 la strategia vincente e' una sola: smettere di giocare.",
+      "caption_descrizione": "Perche' nel 2026 l'autenticita' batte ogni gioco psicologico nelle relazioni.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "dating2026",
+        "veritascomoda",
+        "legamidiamore",
+        "societa"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=RrB8zhxomVc --phase 1"
+    },
+    {
+      "giorno": 23,
+      "data_pubblicazione": "2026-09-18",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=2q8baJHw53M",
+      "video_id_sorgente": "2q8baJHw53M",
+      "titolo_originale": "6 segnali che indicano che le donne ti trovano attraente (ma non lo dicono) #psicologia",
+      "vph_sorgente": 1.2,
+      "titolo_adattato": "6 Segnali Che Una Donna Ti Trova Attraente (Anche Se Non Lo Dira' Mai)",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "genere_esplicito",
+        "numero_secco",
+        "parentesi",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Non lo dira' mai a voce, ma questi 6 segnali parlano chiaro.",
+      "caption_descrizione": "L'attrazione femminile si nasconde in gesti piccoli. Ecco i 6 segnali da notare.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "attrazione",
+        "legamidiamore",
+        "psicologiadellamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=2q8baJHw53M --phase 1"
+    },
+    {
+      "giorno": 23,
+      "data_pubblicazione": "2026-09-18",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=PcQUfbRDZDQ",
+      "video_id_sorgente": "PcQUfbRDZDQ",
+      "titolo_originale": "Smetti di Fare il Bravo Ragazzo Il Trucco del Confine a Freddo per Farti Rispettare 🧊",
+      "vph_sorgente": 0.09,
+      "titolo_adattato": "Smetti Di Essere Solo Gentile: Il Confine Psicologico Che Ti Fa Rispettare",
+      "schemi_titolo_applicati": [],
+      "hook_3_secondi": "La gentilezza senza confini non genera rispetto. Genera l'opposto.",
+      "caption_descrizione": "Come porre un confine psicologico chiaro senza smettere di essere una brava persona.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "rispetto",
+        "confini",
+        "legamidiamore",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=PcQUfbRDZDQ --phase 1"
+    },
+    {
+      "giorno": 24,
+      "data_pubblicazione": "2026-09-19",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=WCW_GzBEdmE",
+      "video_id_sorgente": "WCW_GzBEdmE",
+      "titolo_originale": "😱 Mio suocero ha fatto quello che mio marito non ha mai osato fare | Storia vera",
+      "vph_sorgente": 1.16,
+      "titolo_adattato": "Una Storia Vera Che Spiega Meglio Di Mille Consigli Cosa Vuole Davvero Una Donna",
+      "schemi_titolo_applicati": [
+        "allarme_negativo"
+      ],
+      "hook_3_secondi": "A volte una storia vera insegna piu' di dieci consigli.",
+      "caption_descrizione": "Una storia vera sul gesto che fa davvero la differenza in una relazione.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "storievere",
+        "legamidiamore",
+        "psicologiadellamore",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=WCW_GzBEdmE --phase 1"
+    },
+    {
+      "giorno": 24,
+      "data_pubblicazione": "2026-09-19",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=QrYtxeuxZwk",
+      "video_id_sorgente": "QrYtxeuxZwk",
+      "titolo_originale": "5 Segreti Psicologici che Fanno Impazzire le Donne di Te",
+      "vph_sorgente": 0.24,
+      "titolo_adattato": "5 Principi Psicologici Che Aumentano Davvero Il Tuo Fascino",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "numero_secco",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "5 principi psicologici, non trucchi da manuale — ecco quali sono.",
+      "caption_descrizione": "5 principi di psicologia dell'attrazione applicabili da subito, spiegati uno per uno.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "fascino",
+        "tecnica",
+        "legamidiamore",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=QrYtxeuxZwk --phase 1"
+    },
+    {
+      "giorno": 24,
+      "data_pubblicazione": "2026-09-19",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=35-dXJiLisw",
+      "video_id_sorgente": "35-dXJiLisw",
+      "titolo_originale": "Smetti di Essere Sempre Disponibile L'Errore Che Ti Rende Invisibile",
+      "vph_sorgente": 0.08,
+      "titolo_adattato": "Perche' Essere Sempre Disponibile Ti Rende Meno Attraente (Non Piu')",
+      "schemi_titolo_applicati": [
+        "allarme_negativo",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "La disponibilita' totale non attira. Fa l'esatto contrario.",
+      "caption_descrizione": "La psicologia di perche' la disponibilita' costante riduce, invece di aumentare, l'attrazione.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "attrazione",
+        "veritascomoda",
+        "legamidiamore",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=35-dXJiLisw --phase 1"
+    },
+    {
+      "giorno": 25,
+      "data_pubblicazione": "2026-09-20",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=K_Xvm5xtH5o",
+      "video_id_sorgente": "K_Xvm5xtH5o",
+      "titolo_originale": "Si comporta in modo freddo... ma questi segnali indicano che è ossessionata da te",
+      "vph_sorgente": 1.06,
+      "titolo_adattato": "Fredda In Apparenza, Ma Questi Segnali Dicono Che In Realta' Pensa Solo A Te",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "La freddezza puo' essere una maschera — questi segnali lo dimostrano.",
+      "caption_descrizione": "Comportamento freddo non sempre significa disinteresse. Ecco i segnali contraddittori da leggere.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "segnalidilei",
+        "contraddizione",
+        "attrazione",
+        "legamidiamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=K_Xvm5xtH5o --phase 1"
+    },
+    {
+      "giorno": 25,
+      "data_pubblicazione": "2026-09-20",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=AeR7lnC8WA4",
+      "video_id_sorgente": "AeR7lnC8WA4",
+      "titolo_originale": "Stai Uccidendo l’Attrazione Senza Saperlo: (7 Errori da Evitare Ora)",
+      "vph_sorgente": 0.18,
+      "titolo_adattato": "7 Errori Che Uccidono L'Attrazione Senza Che Tu Te Ne Accorga",
+      "schemi_titolo_applicati": [
+        "numero_secco",
+        "parentesi"
+      ],
+      "hook_3_secondi": "Forse stai spegnendo l'attrazione senza saperlo. Ecco 7 errori comuni.",
+      "caption_descrizione": "7 errori comuni che eliminano l'attrazione — riconoscerli e' il primo passo per smettere.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "errori",
+        "attrazione",
+        "legamidiamore",
+        "tecnica"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=AeR7lnC8WA4 --phase 1"
+    },
+    {
+      "giorno": 25,
+      "data_pubblicazione": "2026-09-20",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=HAnjvUyv-nQ",
+      "video_id_sorgente": "HAnjvUyv-nQ",
+      "titolo_originale": "Relazioni 2026 Perché è un Gioco Truccato e come vincere",
+      "vph_sorgente": 0.08,
+      "titolo_adattato": "Perche' Le Relazioni Nel 2026 Sembrano Un Gioco Truccato (E Come Muoversi Davvero)",
+      "schemi_titolo_applicati": [
+        "numero_secco"
+      ],
+      "hook_3_secondi": "Le regole del dating sono cambiate. Ecco come muoversi davvero oggi.",
+      "caption_descrizione": "Come muoversi con lucidita' in un contesto di dating che sembra cambiato per sempre.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "dating2026",
+        "societa",
+        "legamidiamore",
+        "veritascomoda"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=HAnjvUyv-nQ --phase 1"
+    },
+    {
+      "giorno": 26,
+      "data_pubblicazione": "2026-09-21",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=IhCMUfkD_oM",
+      "video_id_sorgente": "IhCMUfkD_oM",
+      "titolo_originale": "Smetti di dire \"Sei bellissima\"... Dì invece queste 8 cose che lei sentirà.",
+      "vph_sorgente": 1.04,
+      "titolo_adattato": "8 Frasi Che Colpiscono Una Donna Molto Piu' Di 'Sei Bellissima'",
+      "schemi_titolo_applicati": [
+        "numero_secco"
+      ],
+      "hook_3_secondi": "Smetti di dirle che e' bella. Dille questo invece.",
+      "caption_descrizione": "8 frasi alternative, psicologicamente piu' efficaci del solito complimento sull'aspetto.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "complimenti",
+        "legamidiamore",
+        "psicologiadellamore",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=IhCMUfkD_oM --phase 1"
+    },
+    {
+      "giorno": 26,
+      "data_pubblicazione": "2026-09-21",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=NCWBYUCS2KU",
+      "video_id_sorgente": "NCWBYUCS2KU",
+      "titolo_originale": "Sei solo un partner di transizione 5 segnali per capire se ti sta usando per dimenticare l'ex",
+      "vph_sorgente": 0.07,
+      "titolo_adattato": "5 Segnali Per Capire Se Sei Solo Un Partner Di Transizione (Non Il Vero Obiettivo)",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "numero_secco",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "A volte non sei l'obiettivo. Sei la transizione verso qualcun altro.",
+      "caption_descrizione": "5 segnali psicologici per capire se sei un partner di transizione — e proteggerti.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "consapevolezza",
+        "legamidiamore",
+        "societa",
+        "veritascomoda"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=NCWBYUCS2KU --phase 1"
+    },
+    {
+      "giorno": 27,
+      "data_pubblicazione": "2026-09-22",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=cDsuI-bnIAc",
+      "video_id_sorgente": "cDsuI-bnIAc",
+      "titolo_originale": "10 cose che NON dovresti MAI fare per una donna - Psicologia femminile",
+      "vph_sorgente": 0.84,
+      "titolo_adattato": "10 Cose Che Non Dovresti Mai Fare Per Una Donna (Anche Se Sembrano Romantiche)",
+      "schemi_titolo_applicati": [
+        "genere_esplicito",
+        "numero_secco",
+        "comando_maiuscolo",
+        "allarme_negativo"
+      ],
+      "hook_3_secondi": "Alcune cose che fai per amore, in realta', allontanano.",
+      "caption_descrizione": "10 comportamenti apparentemente romantici che in psicologia fanno l'effetto opposto.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "erroricomuni",
+        "legamidiamore",
+        "psicologiadellamore",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=cDsuI-bnIAc --phase 1"
+    },
+    {
+      "giorno": 27,
+      "data_pubblicazione": "2026-09-22",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=QMLgtRlczqY",
+      "video_id_sorgente": "QMLgtRlczqY",
+      "titolo_originale": "Come Il Silenzio La Costringe A Inseguirti E Rispettarti",
+      "vph_sorgente": 0.06,
+      "titolo_adattato": "Perche' Il Silenzio, Usato Bene, Genera Piu' Rispetto Di Mille Parole",
+      "schemi_titolo_applicati": [],
+      "hook_3_secondi": "A volte il silenzio comunica piu' di qualsiasi discorso.",
+      "caption_descrizione": "La psicologia del silenzio come strumento di rispetto reciproco, non come punizione.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "rispetto",
+        "legamidiamore",
+        "tecnica",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=QMLgtRlczqY --phase 1"
+    },
+    {
+      "giorno": 28,
+      "data_pubblicazione": "2026-09-23",
+      "orario_pubblicazione": "20:30",
+      "strategia": "B",
+      "strategia_nome": "Tecnica & Comando",
+      "canale_sorgente": "PsicologiadellAttrazionee",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=BRMzetoc3UE",
+      "video_id_sorgente": "BRMzetoc3UE",
+      "titolo_originale": "7 segnali che ti scrive perché è gelosa (anche se non lo dirà mai)",
+      "vph_sorgente": 0.17,
+      "titolo_adattato": "7 Segnali Che Ti Scrive Per Gelosia (Anche Se Dira' Il Contrario)",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "numero_secco",
+        "parentesi",
+        "allarme_negativo",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "A volte scrive per un motivo che non ammettera' mai: la gelosia.",
+      "caption_descrizione": "7 segnali che rivelano quando un messaggio nasconde gelosia, non semplice curiosita'.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "gelosia",
+        "segnalidilei",
+        "legamidiamore",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=BRMzetoc3UE --phase 1"
+    },
+    {
+      "giorno": 28,
+      "data_pubblicazione": "2026-09-23",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=PEeGQOAKs7U",
+      "video_id_sorgente": "PEeGQOAKs7U",
+      "titolo_originale": "🏆 Sei stato scelto o solo SELEZIONATO La verità che ti cambierà la vita 💔",
+      "vph_sorgente": 0.06,
+      "titolo_adattato": "'Scelto' O Solo 'Selezionato'? La Differenza Psicologica Che Cambia Tutto",
+      "schemi_titolo_applicati": [
+        "comando_maiuscolo",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "C'e' una differenza enorme tra essere scelto ed essere solo selezionato.",
+      "caption_descrizione": "La differenza psicologica, spesso ignorata, tra essere davvero scelti e solo selezionati.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "veritascomoda",
+        "legamidiamore",
+        "societa",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=PEeGQOAKs7U --phase 1"
+    },
+    {
+      "giorno": 29,
+      "data_pubblicazione": "2026-09-24",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=1OPc6tk27_Q",
+      "video_id_sorgente": "1OPc6tk27_Q",
+      "titolo_originale": "🔥 4 segnali che indicano che lei ti desidera segretamente: riconoscili prima che sia troppo tardi!",
+      "vph_sorgente": 0.81,
+      "titolo_adattato": "4 Segnali Silenziosi Che Rivelano Il Desiderio Di Una Donna (Solo Corpo, Zero Parole)",
+      "schemi_titolo_applicati": [
+        "segnali_espliciti",
+        "numero_secco",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "Il corpo comunica desiderio anche quando le parole tacciono.",
+      "caption_descrizione": "4 segnali di solo linguaggio del corpo — nessuna parola, solo psicologia non verbale.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "linguaggiodelcorpo",
+        "desiderio",
+        "legamidiamore",
+        "attrazione"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=1OPc6tk27_Q --phase 1"
+    },
+    {
+      "giorno": 29,
+      "data_pubblicazione": "2026-09-24",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=GD2g0extf9w",
+      "video_id_sorgente": "GD2g0extf9w",
+      "titolo_originale": "6 Verità sulla Psicologia Femminile che ti Salveranno dai Fallimenti ⚠️",
+      "vph_sorgente": 0.06,
+      "titolo_adattato": "6 Verita' Sulla Psicologia Femminile Che Evitano Gli Errori Piu' Comuni",
+      "schemi_titolo_applicati": [
+        "numero_secco",
+        "interpellazione_diretta"
+      ],
+      "hook_3_secondi": "6 verita' che, se le conosci prima, ti evitano gli errori piu' comuni.",
+      "caption_descrizione": "6 verita' di base sulla psicologia femminile, spiegate per evitare i fallimenti piu' frequenti.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "psicologiafemminile",
+        "legamidiamore",
+        "veritascomoda",
+        "crescitapersonale"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=GD2g0extf9w --phase 1"
+    },
+    {
+      "giorno": 30,
+      "data_pubblicazione": "2026-09-25",
+      "orario_pubblicazione": "19:00",
+      "strategia": "A",
+      "strategia_nome": "Segnali & Decodifica",
+      "canale_sorgente": "PsicologiaFemminile-f8c",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=IWVC1FtczxU",
+      "video_id_sorgente": "IWVC1FtczxU",
+      "titolo_originale": "SE NASCONDE QUALCOSA, QUESTI CAMBIAMENTI COMINCIANO A MANIFESTARE",
+      "vph_sorgente": 0.73,
+      "titolo_adattato": "Se Ti Nasconde Qualcosa, Questi Cambiamenti Comportamentali Emergono Per Primi",
+      "schemi_titolo_applicati": [
+        "comando_maiuscolo"
+      ],
+      "hook_3_secondi": "Quando si nasconde qualcosa, il comportamento cambia prima delle parole.",
+      "caption_descrizione": "I primi segnali comportamentali che emergono quando c'e' qualcosa di non detto.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "comportamento",
+        "segnalidilei",
+        "legamidiamore",
+        "psicologiadellamore"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=IWVC1FtczxU --phase 1"
+    },
+    {
+      "giorno": 30,
+      "data_pubblicazione": "2026-09-25",
+      "orario_pubblicazione": "21:30",
+      "strategia": "C",
+      "strategia_nome": "Allarme & Verita' Sociale",
+      "canale_sorgente": "DinamicheSocialiAcademy",
+      "url_sorgente_reale": "https://www.youtube.com/watch?v=ByvZnDPxqvI",
+      "video_id_sorgente": "ByvZnDPxqvI",
+      "titolo_originale": "Le farfalle nello stomaco Sono un allarme",
+      "vph_sorgente": 0.06,
+      "titolo_adattato": "Le Farfalle Nello Stomaco Non Sono Sempre Amore: Ecco Cosa Sono Davvero",
+      "schemi_titolo_applicati": [],
+      "hook_3_secondi": "Le farfalle nello stomaco non sono sempre un buon segno.",
+      "caption_descrizione": "Cosa dice davvero la psicologia sulle farfalle nello stomaco — non e' sempre amore.",
+      "hashtag_set": [
+        "relazioni",
+        "psicologia",
+        "veritascomoda",
+        "legamidiamore",
+        "psicologiadellamore",
+        "societa"
+      ],
+      "note_esecuzione": "voce femminile Fliki tier Ultra; sottotitoli piccoli; SOLO donne o coppia in scena, mai un uomo da solo; pubblicazione PRIVATA di default; --upload richiede --video-folder con copertina reale (regola permanente 2026-08-18).",
+      "comando_cli": "python apex7_orchestrator.py run --canale legamidiamore --video-sorgente https://www.youtube.com/watch?v=ByvZnDPxqvI --phase 1"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "lesson_number": "Bonus 3",
+  "section": "Lezioni BONUS",
+  "title": "Bonus 3 - Come collegare Claude a qualsiasi cosa",
+  "url": "https://www.andrei-copy.com/cs2online/bonus-3--pjb6s",
+  "slug": "bonus-3--pjb6s",
+  "vimeo_id": "1178256579",
+  "vimeo_embed": "https://player.vimeo.com/video/1178256579?app_id=122963",
+  "durata_secondi": 1315,
+  "tipo": "PRATICA",
+  "tipo_motivazione": "Confermato con 28 frame (15 scan 90s + 13 dense). Prima meta' whiteboard concettuale (API vs MCP), seconda meta' demo schermo reale: Claude Connectors settings (ClickUp connesso, permessi granulari per tool), creazione task ClickUp da chat con permission prompt live, Zapier MCP 'Add tools' (Gmail/Sheets/Notion/ecc.), invio email da Claude, scheduling task Cowork.",
+  "video_scaricato": "video/bonus-03.mp4 (459MB, 21:55 min)",
+  "risorse": {
+    "trascrizione_md": {"presente": false},
+    "workflow_citati": [
+      "Workflow 1 - Aggiungere un connector esistente a Claude",
+      "Workflow 2 - Aggiungere un connector custom (non presente in Browse Connectors)",
+      "Workflow 3 - Creare un task su ClickUp direttamente da Claude",
+      "Workflow 4 - Collegare Zapier MCP per inviare email da Claude",
+      "Workflow 5 - Schedulare task ricorrenti con Cowork + ClickUp"
+    ],
+    "link_utili": ["https://claude.ai", "https://clickup.com", "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server", "https://zapier.com", "https://zapier.com/mcp", "https://n8n.io", "https://www.make.com", "https://stripe.com", "https://gmail.com", "https://www.figma.com", "https://miro.com", "https://www.notion.so", "https://asana.com", "https://www.squarespace.com"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

@@ -1,5 +1,159 @@
 # Wiki Log — Registro operazioni
 
+## 2026-08-29 (Empire Studio — cs2online: sezione "AI - Le basi" COMPLETA 9/9, Claude)
+- INGEST: proseguito in autonomia dopo l'ordine Max (Lezione 16 + Bonus 1-6), completate le
+  lezioni mancanti della prima sezione: Lezione 7 (Diversi tipi di contesto, teoria — gerarchia
+  vision/obiettivo/target/task), Lezione 8 (Context engineering, teoria — tesi "expertise per
+  l'input, non solo l'output"), Lezione 9 (Come dare contesto alle AI, pratica — 4 modi:
+  allega tutto/allega rilevante/Cowork/Projects, struttura cartelle confermata identica a
+  lezione 6). → 3 pagine nuove sources/Source_CS2_Lezione_0{7,8,9}_*.md.
+  **Sezione "AI - Le basi" ORA COMPLETA al 100% (9/9 lezioni).**
+- ENRICHMENT: nessuna nuova patch — tutti i pattern trovati (garbage-in-garbage-out, 6a-7a
+  variante) erano già confermati/applicati nelle sessioni precedenti dello stesso corso.
+  Stato: 17/40 lezioni cs2online completate. Tracker: `MASTER-RUN-TRACKER.md`.
+
+## 2026-08-29 (Empire Studio — cs2online: ordine Max completato, Lezione 16 + Bonus 1-6, Claude)
+- INGEST: completato l'ordine di lavoro richiesto da Max ("vai a lezione 16, poi tutte le Bonus,
+  fermati quando hai finito"). Lezioni processate in sequenza: 16 (Copy primary text ads),
+  Bonus 1 (Automatizzare processi, teoria), Bonus 2 (Advertising report, scoperto uso reportlab
+  già presente in `market-report-pdf` — convergenza indipendente), Bonus 3 (Collegare Claude a
+  qualsiasi cosa — MCP/Connectors/Zapier), Bonus 4 (Claude Skills — valida esternamente il
+  formato skill già usato da DE), Bonus 5 (Projects dentro Cowork), Bonus 6 (Automatizzare
+  processi con skills — lezione capstone, SKILL.md reale "sviluppo-preventivo" trascritto per
+  intero, gap trovato in `beast-preventivi` ma non applicato per anti-overfitting).
+  → 6 pagine nuove (sources/Source_CS2_Lezione_16_*.md, sources/Source_CS2_Bonus_0{3,4,5,6}_*.md).
+- ENRICHMENT: 1 patch reale (lezione 13, sessione precedente, voice-of-customer YouTube —
+  già loggata). Nessuna nuova patch in questa sessione: tutti i gap trovati (Bonus 6 pattern
+  refuse-if-missing-data) sono fonte singola/interna al corso, propriamente non applicati per
+  regola anti-overfitting DE.
+  Stato completo: 14/40 lezioni cs2online fatte. Tracker: `MASTER-RUN-TRACKER.md`.
+
+## 2026-08-29 (Empire Studio — cs2online salta a "AI per copywriting", PATCH reale skill, Claude)
+- INGEST: su richiesta Max, saltate lezioni 7-12 del run `andrei-pascu-cs2online-001`, priorità
+  spostata su sezione "AI - per copywriting". Lezione 13 ("Come faccio la ricerca di copywriting
+  con l'AI") completata: video 27:14 min, 38 frame visionati nativamente, demo end-to-end su
+  cliente reale (Simone Ferretti/SoundBox Studio: ClickUp → Gemini transcript → Claude Project →
+  Perplexity parallelo → MarkEdit). → sources/Source_CS2_Lezione_13_Ricerca_Copywriting_AI.md.
+- ENRICHMENT: **prima convergenza cross-run** del progetto Andrei Pascu — tecnica "ricerca
+  voice-of-customer da recensioni YouTube" confermata 3 volte indipendenti (2 video YouTube del
+  run `andrei-pascu-001` + questa lezione del corso a pagamento). **Patch reale applicata** a
+  `C:\Users\Utente\.claude\skills\copywriting\SKILL.md`, sezione "Customer Language Over Company
+  Language", con fonte dichiarata inline.
+
+## 2026-08-27 (Empire Studio — NUOVO RUN corso a pagamento Claude Speedrun 2, Claude)
+- INGEST: avviato run `andrei-pascu-cs2online-001` — corso membership a pagamento di Andrei Pascu
+  (andrei-copy.com/cs2online, distinto dai video YouTube già coperti in `andrei-pascu-001`).
+  Login autenticato via Playwright, 40 lezioni mappate (7 sezioni). Regola nuova di Max: solo
+  lezioni pratiche fanno frame-by-frame, lezioni teoriche archiviano testo/trascrizione/risorse.
+  Lezioni 1-6 completate (29/06 + LEZIONE 6 = prima PRATICA del run: video scaricato, 43 frame
+  visionati nativamente su segmenti demo Excalidraw/Finder/MarkEdit/VS Code/Claude.ai, workflow
+  PDF→JSON per brand guidelines documentato per intero). Pipeline + Memory Empire verificati
+  per tutte. → 6 pagine sources/Source_CS2_Lezione_0{1..6}_*.md.
+  ⚠️ Anomalia: skill `prompt-engegniring-skill` elencata nel sistema ma non trovata su disco —
+  segnalata a Max, non risolta. Tracker: `empire-studio/runs/andrei-pascu-cs2online-001/MASTER-RUN-TRACKER.md`.
+
+## 2026-08-26 (Piano editoriale 70 video/30gg/3 strategie @Legamidiamore CHIUSO, Claude)
+- UPDATE: `entities/Entity_Legami_dAmore_Channel.md` — piano editoriale mensile completo:
+  70 video reali, 3 strategie (A/B/C) mappate 1:1 su 3 canali competitor verificati con
+  scraping fresco oggi (2 dei 6 storici risultati fuori nicchia, esclusi). Deliverable PDF
+  20 pagine + calendario MD + dati JSON/CSV in `YOUTUBE-AUTOMATION-FACTORY/`. Dettaglio:
+  `company/Memory/checkpoints/CP-20260826-003.md`.
+
+## 2026-08-26 (Empire Studio — cat2-marketing AVVIATO, Livello 2 confermato da Max, Claude)
+- Max ha confermato via AskUserQuestion di procedere su Livello 2 (cat2-cat7, ~52 video curati),
+  sequenziale nel thread principale, senza fermate intermedie fino a fine budget/scope. URL siti e
+  corso a pagamento di Andrei Pascu ancora NON forniti — restano bloccanti per quella fase separata.
+- INGEST: video 1/cat2 (`VYyIF1r6tkw`, "The 2 most used funnels in social marketing", 5m36s) —
+  talking-head + lavagna digitale, 10/168 frame campionati (VTT integrale letto per intero). 9 KA,
+  4 pattern. Prima connessione diretta del run con la skill `copy-workflow/skills/funnel-designer`
+  (mai toccata in cat1): ROAS e soglie prezzo già coperti in dettaglio, nessuna patch necessaria.
+  1 gap reale registrato come PROPOSTA (non patchato, fonte singola, anti-overfitting): diagnosi
+  "funnel di contatti come stampella per prodotto/copy debole" mancante in `funnel-economics.md`
+  sezione "Segnali di Funnel Rotto".
+- INGEST: video 2/cat2 (`hnPa2zspu3k`, "L'ordine del funnel cambia tutto", 33s) — reel rapid-fire,
+  17/17 frame (coverage 100%). 6 KA, 3 pattern: 5 domande "cosa viene prima?" su step funnel, ordine
+  come vincolo strutturale non convenzione. Nessuna patch, contenuto già implicito in `funnel-designer`.
+- INGEST: video 3/cat2 (`8Pf7d57Q0Jk`, "Come generare contatti con le ads", 13m58s) — consulenza
+  reale con cliente (Vasco, fotovoltaico), ROAS ~15 reale. 10/419 frame campionati, VTT processato
+  con script dedup locale per efficienza. 14 KA, 5 pattern — il più denso di cat2 finora. 3 patch
+  reali applicate: `ads/SKILL.md` (3-Tier Campaign Lifecycle Esperimento/Evolvo/Awareness + criterio
+  spegnimento=ritorno), `ads/references/audience-targeting.md` (Content-Based Targeting), `lead-magnets/SKILL.md`
+  (lead magnet problema adiacente).
+
+## 2026-08-26 (Empire Studio — cat1-copywriting COMPLETATO 29/29, esecuzione sequenziale ininterrotta, Claude)
+- Continuazione diretta del blocco precedente (video 21-24), su richiesta esplicita di Max di non
+  fermarsi e completare l'obiettivo in modo credit-efficient. Completati i restanti 5 video del
+  run senza interruzioni: 25, 26, 27, 28, 29.
+- INGEST: video 25/29 (`uqa06rlgmj4`, "Come migliorare con gli hook (1 consiglio)", 57s) — street
+  interview reale, 29/29 frame. 8 KA, 3 pattern. Nota di cautela: la sotto-tecnica "citazione di
+  ricerca senza fonte" (KA-06) è in attrito diretto col gate anti-clichè esistente (video 11) —
+  segnalata, nessuna patch (il gate esistente è già corretto).
+- INGEST: video 26/29 (`eze4oqwb6aw`, "Sono un copywriter, è ovvio che...", 26s) — montaggio
+  personal branding, 13/13 frame. 3 KA (il più leggero del run fino a quel punto) — contenuto di
+  formato/branding, non tecnica di copy per clienti.
+- INGEST: video 27/29 (`-zUDxSdaKRY`, "6 livelli di tono di voce", 25s) — stessa frase ripetuta 6
+  volte con delivery diversa, badge onscreen. 13/13 frame. 7 KA, 3 pattern — primo video del run
+  su delivery vocale/fisica, dominio scoperto senza skill DE dedicato.
+- INGEST: video 28/29 (`_yUzEe29aTQ`, "copy.exe - adesso disponibile", 2m38s) — funnel lancio
+  evento live, 10/79 frame campionati. 7 KA, 4 pattern: segmentazione pubblico a 4 tier con
+  posizionamento esplicito, seconda conferma della tesi "AI non sostituisce" (video 21).
+- INGEST: video 29/29 (`6ITBjfPQg3I`, "scrittore professionale di PDF", 4s — il più corto del run)
+  — formato meme "Poi:", 2/2 frame. 2 KA.
+- **🎉 cat1-copywriting COMPLETATO: 29/29 (100%).** Tutti i video hanno pipeline + Memory Empire (4
+  file ciascuno) + pagina wiki Source completi e verificati su disco. MASTER-RUN-TRACKER,
+  STATO-EMPIRE, wiki/index.md aggiornati. Segnalazione aperta non risolta: tensione video
+  24/`beast-preventivi` (AP-05 vs breakdown prezzi) — da riportare a Max. Prossimo: decisione su
+  se procedere con cat2-cat7 curati (Livello 2 del piano NERVE-SOLVE a 2 giorni) o chiudere qui.
+
+## 2026-08-26 (Empire Studio — cat1-copywriting a 24/29, esecuzione sequenziale come da piano NERVE-SOLVE, Claude)
+- Continuazione del piano 2 giorni: solo esecuzione sequenziale nel thread principale (nessun batch
+  Agent-tool), come deciso il 2026-08-24/25 per evitare il limite di spesa.
+- INGEST: video 21/29 (`wTpfKuHJhOE`, "Hormozi si scrive i copy da solo", 47s) — pipeline completa.
+  24/24 frame (coverage 100%). 6 KA, 4 pattern. Nessuna patch (contenuto di posizionamento/mindset,
+  non tecnica operativa).
+- INGEST: video 22/29 (`k_DXsUCIkr8`, "Il vero script DI VENDITA the wolf of wall street", 54s) —
+  pipeline completa. 27/27 frame. 5 KA, 4 pattern: script storico Stratton Oakmont, validazione +
+  yes-ladder invece di confutazione dell'obiezione — dominio conversazionale, fuori scope per
+  `cro-copy-architect` (nessuna patch).
+- INGEST: video 23/29 (`NydMBZ2nUTE`, "Copione Wolf of Wall Street", 61s) — stessa fonte del video
+  22, estratto diverso (verificato non duplicato). 31/31 frame. 7 KA, 4 pattern: seconda conferma
+  indipendente del pattern yes-ladder + nuovo pattern "restringere progressivamente la richiesta".
+- INGEST: video 24/29 (`EBU57iVAutA`, "Se scrivi QUESTO nel tuo preventivo NON venderai", 8m46s, 5
+  capitoli ufficiali) — pipeline completa. 11/263 frame campionati sui capitoli. 16 KA, 4 pattern —
+  **scoperta rilevante**: rivela lo skill DE esistente `beast-preventivi`, molto più maturo su
+  questo stesso dominio. La maggior parte del video CONFERMA quello skill (specialmente "mostralo
+  in call" e "silenzio post-prezzo", quasi identici). **Tensione reale trovata e segnalata, non
+  risolta automaticamente**: la Regola 4 del video (breakdown prezzi per componente su servizi
+  complessi) è in apparente contraddizione con l'anti-pattern AP-05 di `beast-preventivi`
+  ("preventivo formato fattura" = bloccante). Dettaglio e ipotesi di riconciliazione (non
+  verificata) in `memory-empire/knowledge/EBU57iVAutA/enrichment-report.md`.
+- RISULTATO: cat1-copywriting **24/29 completati** (5 rimanenti: 25-29). MASTER-RUN-TRACKER,
+  STATO-EMPIRE, wiki/index.md aggiornati. Prossimo: video 25 (`uqa06rlgmj4`).
+
+## 2026-08-25 (Empire Studio — cat1-copywriting completato a 20/29, piano 2 giorni NERVE-SOLVE, Claude)
+- CONTESTO: Max ha chiesto un piano "one-shot" per finire l'intera missione (~81 video curati) in
+  2 giorni. Applicato NERVE-SOLVE (D2): identificato che il vincolo dominante è il limite di spesa
+  account (colpito 2 volte in <24h, sempre dentro Agent-tool paralleli, mai nel thread principale
+  sequenziale) — dichiarata onestamente l'impossibilità di garantire "100% certo" senza sapere se
+  il limite è mensile-esaurito o a finestra ricorrente (solo Max può verificarlo). Piano a 2 livelli:
+  Livello 1 (quasi certo) = cat1 completo; Livello 2 (stretch) = cat2-7 secondo budget disponibile.
+  Decisione: STOP batch paralleli, solo esecuzione sequenziale da qui in avanti.
+- INGEST: video 18/29 (`VbxTgp_fz8Y`, "Revisione copy oF girl", 82s) — completato in sessione
+  sequenziale (video-analysis.md già scritto da batch 2, Memory Empire + wiki costruiti da zero).
+  41/41 frame (coverage 100%). 10 KA, 4 pattern. Terza conferma nel run del Pain Point Implicito;
+  prima volta con "APSOC" mostrato letteralmente a schermo nel materiale sorgente esterno.
+- INGEST: video 19/29 (`3zJpI8-7TW4`, "Pulsanti che vendono: ecco come fare i CTA", 7m14s) —
+  pipeline completa da zero (solo Stage 1-2 fatti dal batch 2). 13/218 frame campionati. 17 KA,
+  5 pattern — primo video del run focalizzato solo su CTA, con guest expert (Gaia, designer).
+  Enrichment applicato: 2 patch a `cro-copy-architect/framework-apsoc-operativo.md` (formula CTA
+  superficiale/profondo + meccanismo; design visivo del pulsante — primo contenuto UI/UX nello
+  skill, con dato quantitativo ghost-button marcato DA VERIFICARE).
+- VERIFICATO: video 20/29 (`IYd-VOngDog`) risultava già completo per intero (pipeline+ME+wiki) da
+  un agente del batch 2 paralleli del 2026-08-24, sopravvissuto al limite di spesa prima di essere
+  interrotto — verificato su disco, aggiunto a index.md (non ancora fatto in precedenza).
+- RISULTATO: cat1-copywriting **20/29 completati** (9 rimanenti: 21-29). MASTER-RUN-TRACKER,
+  STATO-EMPIRE, wiki/index.md aggiornati. Prossimo: video 21 (`wTpfKuHJhOE`, Hormozi writes his
+  own copy), poi 22-29, poi cat2-cat7 curati.
 ## 2026-08-27 (task SECONDARIE W1 — infrastruttura Impero, Claude)
 - Settimana 1 chiusa **6/6** (3 primarie + 3 secondarie).
 - TASK-MEMORY-SYNC-W1: nuovo controllo pre-commit (`.githooks/`) che BLOCCA le collisioni

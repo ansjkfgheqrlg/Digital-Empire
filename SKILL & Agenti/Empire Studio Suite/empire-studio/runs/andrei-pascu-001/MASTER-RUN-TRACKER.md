@@ -9,14 +9,14 @@
 
 | Categoria | Video totali | Completati | In corso | Pending |
 |-----------|-------------|-----------|---------|--------|
-| cat1-copywriting | 29 | 19 | 1 | 9 |
-| cat2-marketing | ~45 | 0 | 0 | TBD |
+| cat1-copywriting | 29 | 29 | 0 | 0 |
+| cat2-marketing (curati) | 15 | 3 | 0 | 12 |
 | cat3-freelancer | ~60 | 0 | 0 | TBD |
 | cat4-ai | ~30 | 0 | 0 | TBD |
 | cat5-mindset | ~45 | 0 | 0 | TBD |
 | cat6-soldi | ~30 | 0 | 0 | TBD |
 | cat7-shortform | ~25 | 0 | 0 | TBD |
-| **TOTALE PRIORITÀ** | **~29** | **19** | **1** | **9** |
+| **TOTALE PRIORITÀ** | **~29** | **29** | **0** | **0** |
 
 **SCOPE MISSIONE CONFERMATO (Max, 2026-08-23):** ~81 video curati totali (cat1 completo 29 + selezione prioritaria cat2-cat7 già elencata sotto), NON i 323 video interi del canale.
 
@@ -26,8 +26,16 @@
 
 **MODALITÀ DA ORA:** SOLO esecuzione sequenziale nel thread principale. Batch paralleli Agent-tool SOSPESI fino a chiarimento del vincolo di spesa (vedi piano 2 giorni sopra).
 
-**RIPRESA DA:** video 19/29 (`3zJpI8-7TW4`) — Stage 1-2 già fatti (218 frame estratti, non rifare), video-analysis.md + Memory Empire + wiki da fare. Poi video 21-29 (9 video mai iniziati), poi cat2-cat7 curati.
-**WATCH-001:** N_video=19 = N_MemoryEmpire=19 → MATCH ✅
+**✅ CAT1-COPYWRITING COMPLETATO: 29/29 (100%).** Tutti i video hanno pipeline + Memory Empire + wiki completi e verificati.
+
+**✅ LIVELLO 2 AVVIATO (2026-08-26):** Max confermato via AskUserQuestion, procedere sequenziale senza fermate. cat2-marketing video 1/15 completo (`VYyIF1r6tkw`).
+**RIPRESA DA:** cat2-marketing video 4/15 — `j4UInmM9kKA` ("10 lead magnet per generare contatti"), Stage 1 da fare da zero. Nota: tematicamente vicino al video 3 appena fatto (lead magnet) — controllare sovrapposizione in enrichment.
+**WATCH-001:** N_video totale=32 (29 cat1 + 3 cat2) = N_MemoryEmpire=32 → MATCH ✅
+**SCOPE APERTO NON ANCORA SBLOCCATO:** analisi sito/i web Andrei Pascu (URL mancanti) + ingestion corso a pagamento (URL+credenziali mancanti) — chiesti a Max, in attesa.
+**⚠️ SEGNALAZIONE APERTA (video 24):** tensione reale trovata tra il video e lo skill esistente `beast-preventivi` (AP-05 "preventivo formato fattura" = anti-pattern bloccante) vs Regola 4 del video (breakdown prezzi per componente, raccomandato per servizi complessi). Non risolta automaticamente — dettaglio in `memory-empire/knowledge/EBU57iVAutA/enrichment-report.md`. Da riportare a Max.
+
+**✅ BACKFILL ME VIDEO 1-5 COMPLETATO (2026-08-27):** scoperto un gap — i 5 video piu' vecchi del run (#1-5, primi ingeriti giugno-luglio 2026, prima che il layer Memory Empire fosse attivo su questo progetto) avevano `video-analysis.md` completo ma NESSUNA cartella `memory-empire/knowledge/<id>/` (le spunte ✅ in tabella erano vere solo per la pipeline Empire Studio, non per Memory Empire). Chiuso oggi: creati i 4 file standard per ciascuno dei 5 video (`9CuQI0Cr4Pg`, `qOK4WP82Bvo`, `jgIgOPAnYNY`, `t67-j2LiXgQ`, `sTCwYnWmgcQ`), nessuna nuova visione (analisi esistente riusata integralmente). Scoperta maggiore: il framework proprietario APSOC di Andrei Pascu (video 3 e 4) e' quasi certamente l'origine/convergenza diretta del framework "APSOC" gia' centrale nella skill `cro-copy-architect` — solo segnalato, nessuna skill modificata. Dettaglio completo in `memory-empire/memory/ingestions/2026-08-27-andrei-pascu-backfill-video-1-5.md`.
+**WATCH-001 aggiornato:** N_video totale=32 (29 cat1 + 3 cat2) = N_MemoryEmpire=32 → MATCH ✅ (i 5 video del backfill erano gia' conteggiati nei 29 cat1, ora anche la cartella knowledge/ corrisponde davvero).
 
 ---
 
@@ -55,27 +63,30 @@ Ordine di ingestion stabilito. Non modificare senza creare ADR.
 | 16 | `L5_Z63nxXjI` | Ho rivisto i VOSTRI copy | 358 | ✅ | ✅ | **DONE** |
 | 17 | `Pv5uzIxp96U` | Correggo i vostri copy | 991 | ✅ | ✅ | **DONE** |
 | 18 | `VbxTgp_fz8Y` | Revisione copy oF girl | 41 | ✅ | ✅ | **DONE** |
-| 19 | `3zJpI8-7TW4` | Buttons that sell: here's how to make CTAs | 218 | ⬜ | ⬜ | **IN CORSO** (Stage 1-2 fatti, analysis+ME+wiki da fare) |
+| 19 | `3zJpI8-7TW4` | Pulsanti che vendono: ecco come fare i CTA | 218 | ✅ | ✅ | **DONE** |
 | 20 | `IYd-VOngDog` | La parte più importante (quasi segreta) nel copywriting | 20 | ✅ | ✅ | **DONE** |
-| 21 | `wTpfKuHJhOE` | Hormozi writes his own copy | ⬜ | ⬜ | ⬜ | **TODO** |
-| 22 | `k_DXsUCIkr8` | The real script of the Wolf of Wall Street | ⬜ | ⬜ | ⬜ | **TODO** |
-| 23 | `NydMBZ2nUTE` | Copione Wolf of Wall Street | ⬜ | ⬜ | ⬜ | **TODO** |
-| 24 | `EBU57iVAutA` | Se scrivi QUESTO nel tuo preventivo NON venderai | ⬜ | ⬜ | ⬜ | **TODO** |
-| 25 | `uqa06rlgmj4` | Come migliorare con gli hook (1 consiglio) | ⬜ | ⬜ | ⬜ | **TODO** |
-| 26 | `eze4oqwb6aw` | I'm a copywriter, obviously | ⬜ | ⬜ | ⬜ | **TODO** |
-| 27 | `-zUDxSdaKRY` | 6 livelli di tone of voice | ⬜ | ⬜ | ⬜ | **TODO** |
-| 28 | `_yUzEe29aTQ` | copy.exe - adesso disponibile | ⬜ | ⬜ | ⬜ | **TODO** |
-| 29 | `6ITBjfPQg3I` | scrittore professionale di PDF | ⬜ | ⬜ | ⬜ | **TODO** |
+| 21 | `wTpfKuHJhOE` | Hormozi si scrive i copy da solo | 24 | ✅ | ✅ | **DONE** |
+| 22 | `k_DXsUCIkr8` | Il vero script DI VENDITA the wolf of wall street | 27 | ✅ | ✅ | **DONE** |
+| 23 | `NydMBZ2nUTE` | Copione Wolf of Wall Street | 31 | ✅ | ✅ | **DONE** |
+| 24 | `EBU57iVAutA` | Se scrivi QUESTO nel tuo preventivo NON venderai | 263 | ✅ | ✅ | **DONE** ⚠️ tensione con skill `beast-preventivi` (AP-05 vs breakdown prezzi) segnalata, non risolta |
+| 25 | `uqa06rlgmj4` | Come migliorare con gli hook (1 consiglio) | 29 | ✅ | ✅ | **DONE** |
+| 26 | `eze4oqwb6aw` | Sono un copywriter, è ovvio che... | 13 | ✅ | ✅ | **DONE** |
+| 27 | `-zUDxSdaKRY` | 6 livelli di tono di voce | 13 | ✅ | ✅ | **DONE** |
+| 28 | `_yUzEe29aTQ` | copy.exe - adesso disponibile | 79 | ✅ | ✅ | **DONE** |
+| 29 | `6ITBjfPQg3I` | scrittore professionale di PDF | 2 | ✅ | ✅ | **DONE** — ULTIMO VIDEO CAT1 |
 
 ---
 
-## CAT2 — MARKETING / FUNNEL / ADS (video top-priority TBD)
+## CAT2 — MARKETING / FUNNEL / ADS (15 video curati)
 
-Iniziare dopo completamento cat1. Selezione ~15-20 video più educativi.
+**LIVELLO 2 AVVIATO 2026-08-26.** Ordine di ingestion = ordine della lista sotto.
 
-**Video prioritari identificati:**
-- `VYyIF1r6tkw` — The 2 most used funnels in social marketing
-- `hnPa2zspu3k` — The funnel order changes everything
+| # | ID | Titolo | Status |
+|---|----|--------|--------|
+| 1 | `VYyIF1r6tkw` | The 2 most used funnels in social marketing | **DONE** |
+| 2 | `hnPa2zspu3k` | The funnel order changes everything | **DONE** |
+| 3 | `8Pf7d57Q0Jk` | How to generate leads with ads | **DONE** |
+| 4 | `j4UInmM9kKA` | 10 lead magnet per generare contatti | pending |
 - `8Pf7d57Q0Jk` — How to generate leads with ads
 - `j4UInmM9kKA` — 10 lead magnet per generare contatti
 - `-a0uuA1lbSI` — The importance of having a good landing page

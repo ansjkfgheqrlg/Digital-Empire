@@ -1,0 +1,24 @@
+{
+  "lesson_number": "Bonus 4",
+  "section": "Lezioni BONUS",
+  "title": "Bonus 4 - Claude Skills",
+  "url": "https://www.andrei-copy.com/cs2online/bonus-4--aeaj5",
+  "slug": "bonus-4--aeaj5",
+  "vimeo_id": "1178102786",
+  "vimeo_embed": "https://player.vimeo.com/video/1178102786?app_id=122963",
+  "durata_secondi": 1206,
+  "tipo": "PRATICA",
+  "tipo_motivazione": "Confermato con 23 frame (14 scan 90s + 9 dense). Whiteboard/motion-graphic per l'analogia dei libri, poi demo reale creazione cartella skill, MarkEdit per SKILL.md e references, upload su Claude con dialog 'Upload skill' che mostra i requisiti ufficiali file.",
+  "video_scaricato": "video/bonus-04.mp4 (374MB, 20:06 min)",
+  "risorse": {
+    "trascrizione_md": {"presente": false},
+    "workflow_citati": [
+      "Workflow 1 - Creare una Claude Skill da zero",
+      "Workflow 2 - Usare una Claude Skill caricata",
+      "Workflow 3 - Metodo per implementare le Skills nel tuo lavoro"
+    ],
+    "link_utili": ["https://claude.ai"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

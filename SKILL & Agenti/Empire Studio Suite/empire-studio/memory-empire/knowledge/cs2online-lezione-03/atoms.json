@@ -1,0 +1,13 @@
+{
+  "lesson_id": "cs2online-lezione-03",
+  "corso": "Claude Speedrun 2",
+  "total_atoms": 6,
+  "atoms": [
+    {"id":"KA-01","source":"cs2online-lezione-03#cosa-hai-imparato","category":"Framework / 10 livelli utilizzo AI","tags":["framework","autovalutazione","posizionamento"],"atom":"Framework 10 livelli (0-10) di utilizzo AI: 0=sa che esiste, 1=la usa come Google, 2=giocherella senza workflow, 3=lavoro reale ma output generico 'che sa di AI' (90% delle persone bloccata qui), 4=costruisce contesto e ottiene output performanti (salto critico), 5=sistemi/automazioni senza intervento manuale, 6=crea applicazioni/integra API, 7=fine-tuning+RAG (migliaia €/mese), 8-10=big tech/governi. Obiettivo dichiarato del corso: portare lo studente da 0-3 a 4-5, verso il 6."},
+    {"id":"KA-02","source":"cs2online-lezione-03#cosa-hai-imparato","category":"Bias cognitivo applicato all'AI","tags":["dunning-kruger","auto-percezione"],"atom":"Effetto Dunning-Kruger applicato all'uso AI: il 90% è bloccato ai livelli 1-3, si percepisce competente ma non ha risultati misurabili reali (non più vendite, non più views)."},
+    {"id":"KA-03","source":"cs2online-lezione-03#cosa-hai-imparato","category":"Principio operativo / muro 3-4","tags":["context-engineering","salto-qualitativo"],"atom":"Il 'muro' tra livello 3 e 4 è concettuale non tecnico: l'AI non è un 'bottone magico', il salto richiede costruzione deliberata di contesto (info giuste, tante, ben strutturate — non PDF a caso). Conferma diretta del concetto Context Engineering già visto in lezione 2."},
+    {"id":"KA-04","source":"cs2online-lezione-03#cosa-hai-imparato","category":"Criterio decisionale / quando NON usare AI","tags":["criterio","efficienza"],"atom":"Criterio esplicito per NON usare l'AI: se per un task piccolo (es. 20 parole) l'AI fa peggio di farlo a mano, va fatto a mano — 'il punto non è usare l'AI per usare l'AI'."},
+    {"id":"KA-05","source":"cs2online-lezione-03#cosa-hai-imparato","category":"Principio / 2 motivi legittimi per usare AI","tags":["motivazione","use-case"],"atom":"2 motivi legittimi per usare l'AI: (1) risparmiare tempo significativo, (2) fare cose che altrimenti non si saprebbe fare (es. scrivere codice senza saper programmare)."},
+    {"id":"KA-06","source":"cs2online-lezione-03#cosa-hai-imparato","category":"Esempio pratico / automazione livello 5","tags":["automazione","zapier","esempio-concreto"],"atom":"Esempio automazione livello 5: cliente manda brief via email → Zapier passa a Claude → Claude produce bozza strategica → invio email automatico → lavoro pronto al risveglio, zero intervento manuale nel mezzo."}
+  ]
+}

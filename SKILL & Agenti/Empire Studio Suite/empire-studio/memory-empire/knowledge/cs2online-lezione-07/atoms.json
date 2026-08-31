@@ -1,0 +1,13 @@
+{
+  "lesson_id": "cs2online-lezione-07",
+  "corso": "Claude Speedrun 2",
+  "total_atoms": 6,
+  "atoms": [
+    {"id":"KA-01","source":"cs2online-lezione-07#trascrizione","category":"Framework / gerarchia obiettivi","tags":["vision","obiettivo","target","task"],"atom":"Gerarchia 4 livelli obiettivo (vision -> obiettivo -> target -> task) - l'autore condivide la propria vision aziendale scritta con Claude e col team, cosi' ogni prompt eredita automaticamente il contesto strategico."},
+    {"id":"KA-02","source":"cs2online-lezione-07#trascrizione","category":"Regola operativa (5a occorrenza corso)","tags":["garbage-in-garbage-out","no-delega-contesto"],"atom":"Regola esplicita ripetuta: 'crea il contesto tu, non farlo creare all'AI. Se fai slop su slop, ottieni slop' - applicato specificamente al NON delegare la scrittura del contesto stesso all'AI (non solo il copy finale)."},
+    {"id":"KA-03","source":"cs2online-lezione-07#trascrizione","category":"Categoria contesto / road block","tags":["difetti","limitazioni-risorse"],"atom":"Road block come categoria esplicita di contesto: difetti personali noti e limitazioni di risorse - beneficio dichiarato: Claude 'segnala dove tendo a sbagliare' perche' gliel'ha detto esplicitamente."},
+    {"id":"KA-04","source":"cs2online-lezione-07#cosa-hai-imparato","category":"Principio / selettivita'","tags":["over-engineering","selettivita"],"atom":"Principio di selettivita': non usare tutti i tipi di contesto sempre - chiedersi per ogni task specifico quali hanno senso, evitando over-engineering del contesto."},
+    {"id":"KA-05","source":"cs2online-lezione-07#cosa-hai-imparato","category":"Concetto / AI psychosis","tags":["ai-psychosis","over-reliance"],"atom":"Concetto 'AI psychosis' citato esplicitamente: non delegare all'AI compiti banali risolvibili 'col cervello in 2 secondi' - critica implicita all'over-reliance sull'AI."},
+    {"id":"KA-06","source":"cs2online-lezione-07#risorsa-vision-aps","category":"Risorsa allegata","tags":["vision-aps","documento-reale"],"atom":"Risorsa allegata 'Vision APS' (PDF 46MB) - presumibile documento reale della vision aziendale di Andrei Pascu, usato come esempio concreto del concetto 'vision' descritto nel testo. Non analizzato in dettaglio (file grande, riferimento salvato)."}
+  ]
+}

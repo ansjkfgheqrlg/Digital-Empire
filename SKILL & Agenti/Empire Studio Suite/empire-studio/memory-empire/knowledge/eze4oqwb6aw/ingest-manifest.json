@@ -1,0 +1,32 @@
+{
+  "video_id": "eze4oqwb6aw",
+  "title": "Sono un copywriter, è ovvio che...",
+  "channel": "Andrei Pascu",
+  "run": "andrei-pascu-001/cat1-copywriting",
+  "video_number": 26,
+  "category": "cat1-copywriting",
+  "duration_s": 26,
+  "duration_human": "0m26s",
+  "format": "day-in-the-life-montage-with-anaphoric-voiceover",
+  "stage1_date": "2026-08-26",
+  "stage2_date": "2026-08-26",
+  "stage3_date": "2026-08-26",
+  "frames_total": 13,
+  "frames_interval_s": 2,
+  "frame_naming": "3-digit (frame-001 to frame-013)",
+  "frames_read_natively": 13,
+  "no_finto_status": "PASS",
+  "chapters": 0,
+  "subtitles": ["it"],
+  "knowledge_atoms": 3,
+  "visual_passages": 13,
+  "sections": 6,
+  "patterns": 3,
+  "key_topics": [
+    "Struttura anaforica per reel di personal branding",
+    "Show don't tell applicato all'auto-narrazione professionale",
+    "Punchline anticlimatica come tecnica di umanizzazione"
+  ],
+  "brands_analyzed": ["Apple (menzionato, sales page iPhone + evento keynote)", "Magnum (cartellone pubblicitario osservato per caso)"],
+  "processing_notes": "Video molto breve (26s, 13 frame): coverage 100% nativa. Contenuto prevalentemente di FORMATO/personal branding, non tecnica di copywriting per terzi - il piu' leggero in KA di tutto il run finora (3 KA), coerente con la sua brevita' e natura di montaggio identitario. Nessuna sovrapposizione o gap con framework DE esistenti - nessuna patch applicata. Nessun problema tecnico Stage 1/2."
+}

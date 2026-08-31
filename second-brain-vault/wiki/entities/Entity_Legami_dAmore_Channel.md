@@ -1,9 +1,9 @@
 ---
 Type: ENTITY
-Status: ✅ Attivo — primo video reale pubblicato, 3 in produzione
+Status: ✅ Attivo — piano editoriale mensile 70 video pronto all'esecuzione
 Tags: #youtube #faceless-automation #relationship-niche #attivo
 Created: 2026-07-22
-Last updated: 2026-08-23
+Last updated: 2026-08-26
 ---
 
 # Legami d'amore (@Legamidiamore) — YouTube Channel
@@ -55,6 +55,26 @@ produzione+pubblicazione reale sulla stessa fabbrica F1-F6, riconfigurata per qu
 - **Credential-keeper** (nuovo agente, 2026-08-15): legge `.env`, mai chiede conferma — sblocca
   login persistente, voce femminile cablata, tag SEO a 4 livelli, tutto "ricordato per sempre"
   invece di riconfigurato ogni volta.
+
+## Piano editoriale mensile 70 video / 30 giorni / 3 strategie (2026-08-26)
+
+Dopo il gate "video 03 privato pulito" confermato passato, costruito un piano editoriale
+completo e immediatamente eseguibile: 70 video, 27/08→25/09, 3 strategie testate in parallelo,
+ognuna mappata su un canale competitor reale verificato con scraping fresco (non cache stale):
+- **A — Segnali & Decodifica** (28 video, @PsicologiaFemminile-f8c)
+- **B — Tecnica & Comando** (14 video, @PsicologiadellAttrazionee — volume basso deliberato,
+  solo 23 candidati reali disponibili sul canale)
+- **C — Allarme & Verità Sociale** (28 video, @DinamicheSocialiAcademy)
+
+**Correzione reale trovata nel refresh**: 2 dei 6 canali storicamente monitorati
+(`@ciraolone`, `@linguaggiosegretodelcorpo-6589`) sono risultati oggi fuori nicchia (rispettivamente
+canale AI/tech e scuola di ballo) — esclusi come fonte, mai usati.
+
+Deliverable: `06-DASHBOARD-E-METRICHE/piano-editoriale-70-legamidiamore-30gg.pdf` (20 pagine,
+stile Digital Empire argento/rosso + grana), `01-FLUSSI-E-PIANI/CALENDARIO-70-LEGAMIDIAMORE.md`,
+`memory/piano_editoriale_70.json`/`.csv`. Ogni riga è autosufficiente: comando CLI pronto
+(`apex7_orchestrator.py run --canale legamidiamore --video-sorgente <url> --phase 1`), nessuna
+decisione umana aggiuntiva richiesta. Dettaglio: [CP-20260826-003](../../../company/Memory/checkpoints/CP-20260826-003.md).
 
 ## Come Impatta DE
 Confermato: ASSET esistente reale (14.8k iscritti, monetizzato), problema di performance non di

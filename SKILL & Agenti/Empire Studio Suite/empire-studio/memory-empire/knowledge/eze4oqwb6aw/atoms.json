@@ -1,0 +1,9 @@
+{
+  "video_id": "eze4oqwb6aw",
+  "total_atoms": 3,
+  "atoms": [
+    {"id":"KA-01","source":"eze4oqwb6aw#00:00:00","frame":"frame-001,002","category":"Formato / Reel identitario - struttura anaforica","section":"S1","tags":["formato","anafora","personal-branding"],"atom":"Reel di personal branding costruito su una struttura anaforica ripetuta ('Sono un copywriter, e' ovvio che...') applicata a 5 vignette diverse, girate in luoghi/momenti reali differenti - montaggio di micro-scene con la stessa cornice verbale."},
+    {"id":"KA-02","source":"eze4oqwb6aw#00:00:04","frame":"frame-003,005,007,010","category":"Copy / Mix credenziali professionali autentiche","section":"S2-S5","tags":["credenziali","show-dont-tell"],"atom":"Lista di comportamenti professionali concreti (sales page preferita, lettura quotidiana, analisi eventi Apple, analisi copy incontrati per caso) presentati come naturali conseguenze dell'identita' dichiarata, ognuno mostrato fisicamente (show don't tell) invece di solo narrato."},
+    {"id":"KA-03","source":"eze4oqwb6aw#00:00:22","frame":"frame-012,013","category":"Copy / Punchline auto-ironica","section":"S6","tags":["punchline","umanizzazione","anticlimax"],"atom":"Chiusura anticlimatica: 'sono in chiamata col cliente perche' devo chiuderlo - sono 500 euro comunque' - rompe il pattern impressionante con un dettaglio modesto, tecnica di umanizzazione/bilanciamento credibilita-simpatia."}
+  ]
+}

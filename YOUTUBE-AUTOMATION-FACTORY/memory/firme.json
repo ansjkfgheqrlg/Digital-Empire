@@ -742,5 +742,299 @@
     ],
     "valida": true,
     "blocchi": []
+  },
+  {
+    "run_id": "yt-20260829-121424-18de43",
+    "artefatto": "script",
+    "esegue_L2": "script-writer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-originalita",
+        "esito": "BLOCCO"
+      }
+    ],
+    "valida": false,
+    "blocchi": [
+      {
+        "regolatore": "regolatore-originalita",
+        "motivo": "Trovate 4 sequenze di 8+ parole identiche al transcript sorgente: e' una copia, va riscritto."
+      }
+    ]
+  },
+  {
+    "run_id": "yt-20260829-121547-0cf13b",
+    "artefatto": "script",
+    "esegue_L2": "script-writer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-originalita",
+        "esito": "BLOCCO"
+      }
+    ],
+    "valida": false,
+    "blocchi": [
+      {
+        "regolatore": "regolatore-originalita",
+        "motivo": "Nessuna copia letterale, ma solo 0 elementi di valore aggiunto (minimo 3): senza valore aggiunto il video non ha ragione di esistere."
+      }
+    ]
+  },
+  {
+    "run_id": "yt-20260829-121839-28bd57",
+    "artefatto": "script",
+    "esegue_L2": "script-writer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-originalita",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
+  },
+  {
+    "run_id": "yt-20260829-121839-28bd57",
+    "artefatto": "metadati",
+    "esegue_L2": "metadata-optimizer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
+  },
+  {
+    "run_id": "yt-20260829-130012-cda5b8",
+    "artefatto": "script",
+    "esegue_L2": "script-writer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-originalita",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
+  },
+  {
+    "run_id": "yt-20260829-130012-cda5b8",
+    "artefatto": "metadati",
+    "esegue_L2": "metadata-optimizer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
+  },
+  {
+    "run_id": "yt-20260829-130213-401766",
+    "artefatto": "script",
+    "esegue_L2": "script-writer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-originalita",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
+  },
+  {
+    "run_id": "yt-20260829-130213-401766",
+    "artefatto": "metadati",
+    "esegue_L2": "metadata-optimizer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
+  },
+  {
+    "run_id": "yt-20260829-130623-a51e9c",
+    "artefatto": "script",
+    "esegue_L2": "script-writer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-originalita",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
+  },
+  {
+    "run_id": "yt-20260829-130623-a51e9c",
+    "artefatto": "metadati",
+    "esegue_L2": "metadata-optimizer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
+  },
+  {
+    "run_id": "yt-20260829-141708-53b7e4",
+    "artefatto": "script",
+    "esegue_L2": "script-writer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-originalita",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
+  },
+  {
+    "run_id": "yt-20260829-141708-53b7e4",
+    "artefatto": "metadati",
+    "esegue_L2": "metadata-optimizer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
+  },
+  {
+    "run_id": "yt-20260829-173247-26140f",
+    "artefatto": "script",
+    "esegue_L2": "script-writer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-originalita",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
+  },
+  {
+    "run_id": "yt-20260829-173247-26140f",
+    "artefatto": "metadati",
+    "esegue_L2": "metadata-optimizer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      }
+    ],
+    "valida": true,
+    "blocchi": []
   }
 ]

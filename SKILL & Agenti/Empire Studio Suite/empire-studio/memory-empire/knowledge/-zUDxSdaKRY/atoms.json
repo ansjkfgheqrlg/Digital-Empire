@@ -1,0 +1,13 @@
+{
+  "video_id": "-zUDxSdaKRY",
+  "total_atoms": 7,
+  "atoms": [
+    {"id":"KA-01","source":"-zUDxSdaKRY#00:00:00","frame":"frame-001","category":"Formato / Esercizio delivery progressivo","section":"intro","tags":["formato","delivery","esercizio"],"atom":"Stessa identica frase ripetuta 6 volte isolando la variabile delivery (tono, corpo, ritmo) dal testo - dimostra visivamente che lo stesso copy scritto converte diversamente a seconda della presentazione dal vivo."},
+    {"id":"KA-02","source":"-zUDxSdaKRY#00:00:00","frame":"frame-001,002","category":"Delivery / Livello 1 Insicuro","section":"L1","tags":["insicuro","eye-contact","postura"],"atom":"Livello 1 (peggiore): nessun contatto visivo, braccia conserte (postura chiusa/difensiva)."},
+    {"id":"KA-03","source":"-zUDxSdaKRY#00:00:04","frame":"frame-003","category":"Delivery / Livello 2 Normale","section":"L2","tags":["normale","ritmo"],"atom":"Livello 2: aggiunge contatto visivo ma parla troppo velocemente - miglioramento parziale non ancora efficace."},
+    {"id":"KA-04","source":"-zUDxSdaKRY#00:00:06","frame":"frame-004,005","category":"Delivery / Livello 3 Decente","section":"L3","tags":["decente","pause","proiezione"],"atom":"Livello 3: parla lento, mette pause. Difetti residui: non proietta la voce, e' fisicamente fermo."},
+    {"id":"KA-05","source":"-zUDxSdaKRY#00:00:10","frame":"frame-006,007,008","category":"Delivery / Livello 4 Persuasivo","section":"L4","tags":["persuasivo","tono","variazione"],"atom":"Livello 4: aggiunge variazione di tono (alza e abbassa). Persistono gli stessi 2 difetti: non proietta, resta fermo."},
+    {"id":"KA-06","source":"-zUDxSdaKRY#00:00:16","frame":"frame-009,010","category":"Delivery / Livello 5 Quasi perfetto","section":"L5","tags":["quasi-perfetto","proiezione","gesticolazione"],"atom":"Livello 5: aggiunge proiezione vocale corretta, mantiene pause+tono. Nuovo difetto: non gesticola, risultato 'troppo da film' (teatrale/artificiale)."},
+    {"id":"KA-07","source":"-zUDxSdaKRY#00:00:20","frame":"frame-011,012,013","category":"Delivery / Livello 6 Perfetto","section":"L6","tags":["perfetto","gesticolazione","confident"],"atom":"Livello 6 (finale): proietta, pause, GESTICOLA (differenza visiva netta, braccia si sbloccano), eye contact, confident. La gestualita' e' l'ultimo tassello che rende naturale una delivery tecnicamente corretta."}
+  ]
+}

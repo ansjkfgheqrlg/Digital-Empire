@@ -1,0 +1,23 @@
+{
+  "lesson_number": 4,
+  "section": "AI - Le basi",
+  "title": "Lezione 4 - 3 tipi di lavoro",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-4-3-tipi-di-lavoro-n4adw",
+  "slug": "lezione-4-3-tipi-di-lavoro-n4adw",
+  "vimeo_id": "1172390789",
+  "vimeo_embed": "https://player.vimeo.com/video/1172390789?app_id=122963",
+  "tipo": "TEORIA",
+  "tipo_motivazione": "Framework (umano/AI-assisted/AI-heavy) con esempi raccontati a voce (app Lovable, copy sales page), non demo schermo passo-passo. Frame-by-frame non applicato.",
+  "risorse": {
+    "trascrizione_md": {"presente": true, "file_locale": "resources/trascrizione.md", "fonte": "https://drive.google.com/file/d/1IlaL06Fzg1k_9TNRukUaD99eg4vF9P9a/view"},
+    "pdf": {"titolo": "Template Cosa delegare, cosa no", "fonte": "https://drive.google.com/file/d/1R_XomwPw1OIr3Isv6C_iQmiKWY-MEeag/view", "nota": "stesso file gia' scaricato in lezione 1, non riscaricato"},
+    "workflow_citati": [
+      "Workflow 1 - Classificare un task prima di eseguirlo",
+      "Workflow 2 - Creare primary text per ad partendo da un copy manuale (AI assisted)",
+      "Workflow 3 - Farsi costruire un'applicazione completa dall'AI (AI heavy)"
+    ],
+    "link_utili": ["https://lovable.dev/", "https://adsmanager.facebook.com/"]
+  },
+  "data_ingestion": "2026-08-28",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

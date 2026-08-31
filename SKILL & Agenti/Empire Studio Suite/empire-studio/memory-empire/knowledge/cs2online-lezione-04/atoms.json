@@ -1,0 +1,12 @@
+{
+  "lesson_id": "cs2online-lezione-04",
+  "corso": "Claude Speedrun 2",
+  "total_atoms": 5,
+  "atoms": [
+    {"id":"KA-01","source":"cs2online-lezione-04#trascrizione:apertura","category":"Framework / 3 tipi task","tags":["framework","classificazione-task"],"atom":"Framework 3 categorie di task rispetto al coinvolgimento AI: Umano (quasi senza AI), AI assisted (~50/50), AI heavy (quasi tutto AI) — decisione da prendere PRIMA di iniziare il task, non durante."},
+    {"id":"KA-02","source":"cs2online-lezione-04#trascrizione:esempi-pratici","category":"Esempio concreto / AI heavy","tags":["lovable","no-code","esempio"],"atom":"Esempio AI heavy: app fitness tracking creata con Lovable (no-code AI) in ~30 minuti totali di prompt, funzionante su iPhone (storico esercizi, chili, ripetizioni)."},
+    {"id":"KA-03","source":"cs2online-lezione-04#trascrizione:ai-assisted","category":"Regola operativa / copy e AI","tags":["copywriting","sales-page","qualita"],"atom":"'I copy per le sales page fatti interamente con l'AI vengono quasi sempre male' — l'autore scrive il copy principale a mano e usa l'AI solo per i derivati ripetitivi (primary text ads Meta, varianti)."},
+    {"id":"KA-04","source":"cs2online-lezione-04#trascrizione:limite-ai","category":"Principio / limiti AI","tags":["back-end","security","limite-tecnico"],"atom":"Il limite attuale dell'AI non è la capacità generale ma la gestione del back-end (database, automazioni, security) — il front-end (design visibile) è affidabile, il back-end no. Se l'app deve scalare (es. 100k utenti), raccomandato far revisionare la security da un esperto umano, 'anche a costo di pagare migliaia di euro'."},
+    {"id":"KA-05","source":"cs2online-lezione-04#cosa-hai-imparato","category":"Risorsa / tabella decisionale","tags":["tabella","decisione","pdf"],"atom":"Esiste una tabella decisionale ufficiale (PDF 'Cosa delegare, cosa no', riusato dalla lezione 1) per scegliere Umano/AI-assisted/AI-heavy caso per caso."}
+  ]
+}

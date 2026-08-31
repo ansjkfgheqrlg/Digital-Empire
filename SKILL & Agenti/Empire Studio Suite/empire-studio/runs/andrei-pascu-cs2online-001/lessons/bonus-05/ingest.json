@@ -1,0 +1,23 @@
+{
+  "lesson_number": "Bonus 5",
+  "section": "Lezioni BONUS",
+  "title": "Bonus 5 - Projects dentro co-work",
+  "url": "https://www.andrei-copy.com/cs2online/bonus-5--m9dte",
+  "slug": "bonus-5--m9dte",
+  "vimeo_id": "1178232872",
+  "vimeo_embed": "https://player.vimeo.com/video/1178232872?app_id=122963",
+  "durata_secondi": 262,
+  "tipo": "PRATICA",
+  "tipo_motivazione": "Video breve (4:22), prevalentemente talking-head con 2 brevi inserti demo reali confermati: dialog 'Create a new project' su Cowork e diagrammi Excalidraw (domanda di test, loop prompt-risposta).",
+  "video_scaricato": "video/bonus-05.mp4 (102MB, 4:22 min)",
+  "risorse": {
+    "trascrizione_md": {"presente": false},
+    "workflow_citati": [
+      "Workflow 1 - Creare o importare un Project dentro Cowork",
+      "Workflow 2 - Organizzare i clienti con Projects in Cowork (metodo di Andrei)"
+    ],
+    "link_utili": ["https://claude.ai", "https://claude.com/product/cowork", "https://claude.com/product/claude-code"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

@@ -1,9 +1,10 @@
 ---
-Owner: Max (committente) · Esecutore: NERI · Controllore/Mentore: Emperator Agent (supporto diretto e costante, non solo review)
+
+## Owner: Max (committente) · Esecutore: NERI · Controllore/Mentore: Emperator Agent (supporto diretto e costante, non solo review)
+
 Origine: richiesta esplicita Max 2026-08-23 — Neri passa da ruolo organizzativo a operativo su tutto Outreach
 Governo: REGOLA ZERO memory-first · vedi anche company/Memory/tasks/TASK-GAEL-20260824-SETTIMANA-01.md (stessa settimana, stessa struttura, Gael)
 Emesso: 2026-08-23 · Settimana: W1 (lun 24 ago -> dom 30 ago 2026)
----
 
 # 📋 Task Settimana 1 per NERI (24-30 agosto 2026)
 
@@ -20,6 +21,8 @@ nel suo insieme) quando lavoro con te e con Gael. Mi trovi qui ogni volta che ti
 
 ---
 
+
+
 ## 0. Come funzionano le task settimanali (stesso sistema di Gael, primo giro per te)
 
 Niente task giornaliere: ogni **domenica** arrivano qui le task della settimana intera. Tu
@@ -35,6 +38,8 @@ Meglio farne una bene e capirla davvero che farne quattro a metà.
 
 ---
 
+
+
 ## Perché l'Outreach conta così tanto per Digital Empire
 
 Prima del "come", il "perché": l'Outreach è come Digital Empire trova clienti veri, senza
@@ -42,18 +47,20 @@ aspettare che arrivino da soli. Non è un dettaglio tecnico — è il motore che
 dentro. Due prodotti diversi lo usano, con logiche diverse:
 
 - **Preventa** — venduto a concessionari auto (import). Prezzo attuale: €2.000 una tantum
-  (deciso da Max, sostituisce una vecchia proposta a abbonamento). Lead = concessionari
-  specifici, trovabili con criteri geografici/di settore precisi.
+(deciso da Max, sostituisce una vecchia proposta a abbonamento). Lead = concessionari
+specifici, trovabili con criteri geografici/di settore precisi.
 - **Outreach Factory** (cartella `Outreach/Outreach Workflow/`) — il prodotto con il
-  potenziale più alto di tutto Digital Empire quest'estate: build da **€5.000-15.000** a
-  cliente. Una sola vendita chiusa vale più di gran parte del resto del piano estate messo
-  insieme. Qui i lead sono clienti generici (qualsiasi business che vuole outreach
-  automatizzato per sé), non concessionari — serve quindi un ventaglio di canali più ampio.
+potenziale più alto di tutto Digital Empire quest'estate: build da **€5.000-15.000** a
+cliente. Una sola vendita chiusa vale più di gran parte del resto del piano estate messo
+insieme. Qui i lead sono clienti generici (qualsiasi business che vuole outreach
+automatizzato per sé), non concessionari — serve quindi un ventaglio di canali più ampio.
 
 Questo spiega perché Max vuole più canali su entrambi: più fonti di lead + più canali di
 invio = più probabilità di trovare chi risponde, su prodotti diversi con pubblici diversi.
 
 ---
+
+
 
 ## 🟢 TASK-PREVENTA-CANALI-W1 — Preventa: nuove fonti lead + nuovo canale di invio
 
@@ -69,15 +76,15 @@ Funziona, ma è un imbuto stretto — se Google Maps non ha abbastanza concessio
 zona, o un lead non risponde su WhatsApp, oggi non c'è un piano B.
 
 **Cosa aggiungere questa settimana**:
+
 1. **Instagram come nuova fonte lead** — cercare concessionari auto import anche via
-   Instagram (profili business locali), non solo Google Maps. In `Outreach/Instagram
-   Automation/` c'è già un motore IG generico (usato per altri prodotti) — guarda come
+  Instagram (profili business locali), non solo Google Maps. In `Outreach/Instagram  Automation/` c'è già un motore IG generico (usato per altri prodotti) — guarda come
    funziona prima di scriverne uno nuovo da zero, magari basta adattarlo.
 2. **Libreria delle Inserzioni Meta (Facebook Ad Library)** come nuova fonte lead — i
-   concessionari che fanno pubblicità su Meta sono lead più caldi (hanno budget, sono attivi
+  concessionari che fanno pubblicità su Meta sono lead più caldi (hanno budget, sono attivi
    online). È pubblica, consultabile senza login: `facebook.com/ads/library`.
 3. **Gmail come nuovo canale di invio**, accanto a WhatsApp — non tutti i lead hanno un
-   numero WhatsApp verificabile, ma quasi tutti hanno un'email pubblica sul sito o su Google
+  numero WhatsApp verificabile, ma quasi tutti hanno un'email pubblica sul sito o su Google
    Maps. Non serve inventare da zero: l'altro ramo di Outreach (`Outreach/Outreach Workflow/`)
    ha già un sender Gmail SMTP funzionante — guardalo prima come riferimento.
 
@@ -93,10 +100,11 @@ parte da quel canale. Nel checkpoint: comando + cosa è successo, con numeri ver
 
 ---
 
+
+
 ## 🟡 TASK-OUTREACHFACTORY-CANALI-W1 — Outreach Factory: un canale in più (o uno più solido)
 
-**Dove**: `Outreach/Outreach Workflow/` (email, il motore più maturo) + `Outreach/Instagram
-Automation/` + `Outreach/LinkedIn Automation/` (già costruiti, verifica se girano ancora
+**Dove**: `Outreach/Outreach Workflow/` (email, il motore più maturo) + `Outreach/Instagram Automation/` + `Outreach/LinkedIn Automation/` (già costruiti, verifica se girano ancora
 davvero prima di aggiungerne altri — a volte le sessioni scadono, es. il token Facebook è
 scaduto in passato).
 
@@ -107,12 +115,13 @@ oggi ha già 3 canali (Email, Instagram, LinkedIn) invece di uno solo.
 
 **Cosa fare questa settimana** (scegli tu, o decidiamo insieme — non fartelo dire e basta,
 prova a ragionarci e dimmi cosa penseresti tu prima che ti risponda):
+
 - **Opzione A**: aggiungere **Pagine Gialle** (paginegialle.it) come nuova fonte di lead
-  generici — copre business italiani di ogni settore, buona fonte generalista per un prodotto
-  che non è verticale su una nicchia sola.
+generici — copre business italiani di ogni settore, buona fonte generalista per un prodotto
+che non è verticale su una nicchia sola.
 - **Opzione B**: invece di aggiungere un canale nuovo, **verificare e sistemare** uno dei 3
-  esistenti se non gira più bene (es. il token Facebook per Instagram scade periodicamente —
-  controlla `.env` prima di dare per scontato che IG funzioni).
+esistenti se non gira più bene (es. il token Facebook per Instagram scade periodicamente —
+controlla `.env` prima di dare per scontato che IG funzioni).
 
 Non è un test con una risposta giusta — è una vera decisione di prodotto, e voglio che tu
 inizi a farle. Se non sai da che parte guardare per decidere, dimmelo: ti faccio vedere come
@@ -125,17 +134,19 @@ di più per capire come stai ragionando.
 
 ---
 
+
+
 ## Se ti blocchi (leggi PRIMA di arrenderti)
 
 Bloccarsi è normale, capita a tutti — quello che conta è cosa fai dopo. Prova in ordine:
 
 1. **Rileggi l'errore per intero**, non solo l'ultima riga — spesso la causa vera è più su.
 2. **Chiediti: è la prima volta che questo tipo di errore appare nel repo?** Cerca nel codice
-   (`grep`/ricerca testo) se qualcun altro ha già risolto qualcosa di simile — spesso sì.
+  (`grep`/ricerca testo) se qualcun altro ha già risolto qualcosa di simile — spesso sì.
 3. **Scrivi in una riga cosa ti aspettavi e cosa è successo invece** — il solo fatto di
-   scriverlo spesso fa vedere il problema da un'altra angolazione.
+  scriverlo spesso fa vedere il problema da un'altra angolazione.
 4. **Se dopo questo sei ancora fermo, chiamami** — scrivimi cosa hai provato (non solo "non
-   funziona"), è molto più veloce per me aiutarti se vedo i tentativi già fatti.
+  funziona"), è molto più veloce per me aiutarti se vedo i tentativi già fatti.
 
 Non è debolezza chiedere aiuto a metà — è debolezza restare fermi un giorno intero senza
 dirlo a nessuno. Se blocchi più di una sessione sullo stesso punto, scrivilo anche in
@@ -143,17 +154,21 @@ dirlo a nessuno. Se blocchi più di una sessione sullo stesso punto, scrivilo an
 
 ---
 
+
+
 ## Regole operative
 
 1. **Prova, non dichiarazione** — comando + risultato reale incollato nel checkpoint.
 2. Task chiusa (anche parziale) → checkpoint + `EmpireDesk/state/taskboard.json` aggiornato
-   per `TASK-PREVENTA-CANALI-W1` / `TASK-OUTREACHFACTORY-CANALI-W1`.
+  per `TASK-PREVENTA-CANALI-W1` / `TASK-OUTREACHFACTORY-CANALI-W1`.
 3. Item minori scoperti strada facendo → `company/Memory/BACKLOG.md`, non fermano la
-   settimana.
+  settimana.
 4. Prima di lanciare invii reali (non dry-run) su un canale nuovo, chiedi conferma esplicita
-   a Max o a me — stessa regola di sempre per azioni verso l'esterno.
+  a Max o a me — stessa regola di sempre per azioni verso l'esterno.
 
 ---
+
+
 
 ## Definition of Done — Settimana 1 (Neri)
 

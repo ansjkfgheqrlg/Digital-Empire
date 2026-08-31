@@ -1,0 +1,39 @@
+{
+  "lesson_number": 1,
+  "section": "AI - Le basi",
+  "title": "Lezione 1 - Introduzione all'intelligenza artificiale",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-1-introduzione-allintelligenza-artificiale-2lsrz",
+  "slug": "lezione-1-introduzione-allintelligenza-artificiale-2lsrz",
+  "vimeo_id": "1172361785",
+  "vimeo_embed": "https://player.vimeo.com/video/1172361785?app_id=122963",
+  "tipo": "TEORIA",
+  "tipo_motivazione": "Lezione di spiegazione concettuale (cos'e' un LLM, differenza modelli, principio 80/20). Nessuna dimostrazione UI/schermo nella descrizione ufficiale. Frame-by-frame NON applicato per regola Max 2026-08-27.",
+  "risorse": {
+    "trascrizione_md": {
+      "presente": true,
+      "fonte": "https://drive.google.com/file/d/1ugBEFFX-wktjNX1qW2UZJdZTgvkedpd1/view",
+      "file_locale": "resources/trascrizione.md",
+      "nota_qualita": "Dichiarato dalla piattaforma: 'corretta e sanificata con l'intelligenza artificiale, potrebbe contenere errori, non verificata da un essere umano' - trattare come fonte primaria ma non infallibile"
+    },
+    "immagini": [
+      {"file_locale": "resources/schema-1.png", "fonte": "https://drive.google.com/file/d/10vXPFIeJdUfbZ7HlTkeoH54nmH8w1JpC/view"},
+      {"file_locale": "resources/schema-2.png", "fonte": "https://drive.google.com/file/d/1Jta_wHfFGBybj9Mp-zqYB2TjgY9M7_qb/view"}
+    ],
+    "pdf": {
+      "titolo": "Template \"Cosa delegare, cosa no\"",
+      "file_locale": "resources/template-delega.pdf",
+      "fonte": "https://drive.google.com/file/d/1R_XomwPw1OIr3Isv6C_iQmiKWY-MEeag/view",
+      "pagine": 4
+    },
+    "quiz_esterno": "https://www.artificiale.art/",
+    "link_utili": [
+      "https://claude.ai",
+      "https://chatgpt.com",
+      "https://gemini.google.com",
+      "https://openai.com",
+      "https://www.anthropic.com"
+    ]
+  },
+  "data_ingestion": "2026-08-27",
+  "pipeline": "Empire Studio Suite - adattamento corso membership (non YouTube)"
+}

@@ -1,0 +1,13 @@
+{
+  "lesson_id": "cs2online-bonus-01",
+  "corso": "Claude Speedrun 2",
+  "total_atoms": 6,
+  "atoms": [
+    {"id":"KA-01","source":"cs2online-bonus-01#cosa-hai-imparato","category":"SOP / freelance","tags":["sop","standardizzazione"],"atom":"SOP applicate al freelance: un business sano non puo' funzionare senza processi standardizzati, vale anche per un singolo freelancer. Il 90% delle azioni in un business sono ripetitive e vanno documentate, non improvvisate."},
+    {"id":"KA-02","source":"cs2online-bonus-01#cosa-hai-imparato","category":"Metodo / integrazione AI","tags":["3-step","framework"],"atom":"Metodo a 3 step per integrare l'AI nei processi esistenti: (1) documenta i processi attuali per intero senza inventare nulla, (2) elimina gli step inutili, (3) implementa l'AI dove possibile."},
+    {"id":"KA-03","source":"cs2online-bonus-01#panoramica+cosa-hai-imparato","category":"Regola / gestione aggiornamenti AI","tags":["anti-ansia","cadenza-trimestrale"],"atom":"Regola anti-ansia da aggiornamento: non rincorrere ogni notizia AI quotidiana - aggiornarsi periodicamente (ogni trimestre o semestre) e SOLO ALLORA implementare le novita' nei propri sistemi. Distinzione tra 'stare dietro alle notizie' (passivo) e 'implementarle nel lavoro' (attivo, a cadenza fissa)."},
+    {"id":"KA-04","source":"cs2online-bonus-01#cosa-hai-imparato","category":"Aneddoto / ri-test periodico tool","tags":["perplexity","lovable","pattern"],"atom":"Esempio personale: AI provata nel 2023 per ricerca copy 'faceva schifo', riprovata mesi dopo -> scoperto Perplexity. Stesso pattern siti web: 'impossibile con l'AI' all'inizio, ripreso mesi dopo con Lovable e funzionava. Pattern: ri-testare periodicamente uno strumento scartato, non giudicarlo definitivamente da un primo tentativo negativo."},
+    {"id":"KA-05","source":"cs2online-bonus-01#cosa-hai-imparato","category":"Cadenza cambiamento business","tags":["cambiamento-annuale"],"atom":"Cambiamenti significativi all'intero business vanno fatti raramente (circa una volta all'anno), non continuamente."},
+    {"id":"KA-06","source":"cs2online-bonus-01#link-utili","category":"Riferimento esterno","tags":["matt-schumer","linkedin"],"atom":"Riferimento citato e tradotto: articolo LinkedIn di Matt Schumer 'Something Big is Happening' - solo citato come fonte, non riassunto nel materiale disponibile."}
+  ]
+}

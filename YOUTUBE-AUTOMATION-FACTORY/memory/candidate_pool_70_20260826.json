@@ -1,0 +1,5130 @@
+{
+  "generato_il": "2026-08-26T11:49:24.121895",
+  "min_age_hours": 24.0,
+  "nota_min_vph": "MIN_VPH=20.0 (cashcow_check.py) NON applicato come soglia assoluta: nessun video reale in questa nicchia oggi lo raggiunge (top reale ~10-11 vph). Selezione per riga fatta per ranking relativo dentro ogni canale, non per soglia globale.",
+  "canali_esclusi_fuori_nicchia_oggi": [
+    "ciraolone",
+    "linguaggiosegretodelcorpo-6589"
+  ],
+  "canali_riserva_campione_piccolo": [
+    "codicedonna"
+  ],
+  "scartati": {
+    "gia_prodotti": 0,
+    "troppo_recenti": 0,
+    "duplicati_cross_canale": 0
+  },
+  "n_pool_primario": 223,
+  "n_pool_riserva": 3,
+  "per_canale": {
+    "DinamicheSocialiAcademy": {
+      "ruolo": "primaria",
+      "fetched_at": "2026-08-26T11:46:25.064915",
+      "n_totale_cache": 100,
+      "n_candidati_validi": 100,
+      "candidati": [
+        {
+          "videoId": "TcKrM6hOctg",
+          "url": "https://www.youtube.com/watch?v=TcKrM6hOctg",
+          "title": "Perché gli uomini stanno scomparendo La verità sul gioco truccato 🛑",
+          "views": 10000.0,
+          "age_hours": 4380.0,
+          "vph": 2.28,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "CzQ9UWUWp3c",
+          "url": "https://www.youtube.com/watch?v=CzQ9UWUWp3c",
+          "title": "Perché l'80% degli uomini è diventato INVISIBILE La verità shock over 30",
+          "views": 7800.0,
+          "age_hours": 4380.0,
+          "vph": 1.78,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "iCaIzO1VB-I",
+          "url": "https://www.youtube.com/watch?v=iCaIzO1VB-I",
+          "title": "Solitudine Maschile Il Falso Mito Che Ti Distrugge",
+          "views": 2500.0,
+          "age_hours": 3650.0,
+          "vph": 0.68,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "RlxkUN3e3pc",
+          "url": "https://www.youtube.com/watch?v=RlxkUN3e3pc",
+          "title": "Perché i bravi ragazzi spariscono La verità sul ritiro ⚠️",
+          "views": 2000.0,
+          "age_hours": 3650.0,
+          "vph": 0.55,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "vRHx6bAEHNU",
+          "url": "https://www.youtube.com/watch?v=vRHx6bAEHNU",
+          "title": "Perché sei single da sempre La verità che ti blocca",
+          "views": 1900.0,
+          "age_hours": 3650.0,
+          "vph": 0.52,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "0r_fGgGXspg",
+          "url": "https://www.youtube.com/watch?v=0r_fGgGXspg",
+          "title": "5 Segnali Infallibili che Lei è Attratta da Te Smetti di Sbagliare!",
+          "views": 2200.0,
+          "age_hours": 4380.0,
+          "vph": 0.5,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco",
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "Lo9aL7U9F9s",
+          "url": "https://www.youtube.com/watch?v=Lo9aL7U9F9s",
+          "title": "Perché nessuno ti risponde più La verità scioccante del 2026 🚫",
+          "views": 1400.0,
+          "age_hours": 4380.0,
+          "vph": 0.32,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "BZm_ajOnSt0",
+          "url": "https://www.youtube.com/watch?v=BZm_ajOnSt0",
+          "title": "La Cruda Verità sull'Altezza Perché l'85% degli Uomini è Invisibile",
+          "views": 1300.0,
+          "age_hours": 4380.0,
+          "vph": 0.3,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "j3ywIxPFAfo",
+          "url": "https://www.youtube.com/watch?v=j3ywIxPFAfo",
+          "title": "Come Capire Se Le Piaci Davvero Senza Fare Il Primo Passo I Segnali Inconsci Che Nessuno Ti Dice",
+          "views": 780.0,
+          "age_hours": 3650.0,
+          "vph": 0.21,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "AiPPUVsy8TY",
+          "url": "https://www.youtube.com/watch?v=AiPPUVsy8TY",
+          "title": "3 Test infallibili per capire se sta con te per i soldi",
+          "views": 458.0,
+          "age_hours": 2190.0,
+          "vph": 0.21,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "wvMbDjmq1Tw",
+          "url": "https://www.youtube.com/watch?v=wvMbDjmq1Tw",
+          "title": "Perché le donne moderne sono infelici in amore 5 Motivi",
+          "views": 552.0,
+          "age_hours": 3650.0,
+          "vph": 0.15,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "VQTyQXCR8Y8",
+          "url": "https://www.youtube.com/watch?v=VQTyQXCR8Y8",
+          "title": "Segnali di Manipolazione L'Intimità Finta",
+          "views": 510.0,
+          "age_hours": 3650.0,
+          "vph": 0.14,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti"
+          ]
+        },
+        {
+          "videoId": "02m975jf_5A",
+          "url": "https://www.youtube.com/watch?v=02m975jf_5A",
+          "title": "IL POTERE DEL NO CONTACT CON UNA MANIPOLATRICE Ignorala e Guarda Cosa Succede",
+          "views": 486.0,
+          "age_hours": 3650.0,
+          "vph": 0.13,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "eYvgLsc47EM",
+          "url": "https://www.youtube.com/watch?v=eYvgLsc47EM",
+          "title": "Falla Innamorare Ignorandola Il Segreto Psicologico Che Nessuno Ti Dice",
+          "views": 482.0,
+          "age_hours": 3650.0,
+          "vph": 0.13,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "HmGyw0ZMneM",
+          "url": "https://www.youtube.com/watch?v=HmGyw0ZMneM",
+          "title": "Il passato della partner conta davvero 7 Tattiche di inganno",
+          "views": 433.0,
+          "age_hours": 3650.0,
+          "vph": 0.12,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "XKCVkE49eMU",
+          "url": "https://www.youtube.com/watch?v=XKCVkE49eMU",
+          "title": "Come Capire la Mente Femminile e Smettere di Inseguire Il Segreto per Farsi Desiderare",
+          "views": 373.0,
+          "age_hours": 3650.0,
+          "vph": 0.1,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "7OyC5rHdvr8",
+          "url": "https://www.youtube.com/watch?v=7OyC5rHdvr8",
+          "title": "8 Domande Trappola se rispondi così, hai già perso ⚠️",
+          "views": 357.0,
+          "age_hours": 3650.0,
+          "vph": 0.1,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "YnV7IFkLuUk",
+          "url": "https://www.youtube.com/watch?v=YnV7IFkLuUk",
+          "title": "L'Errore Fatale che distrugge gli uomini a 40 anni Smetti di farlo!",
+          "views": 428.0,
+          "age_hours": 4380.0,
+          "vph": 0.1,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "ZVbafCxosrU",
+          "url": "https://www.youtube.com/watch?v=ZVbafCxosrU",
+          "title": "6 Errori che distruggono il flirt la soluzione è",
+          "views": 349.0,
+          "age_hours": 3650.0,
+          "vph": 0.1,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "RrB8zhxomVc",
+          "url": "https://www.youtube.com/watch?v=RrB8zhxomVc",
+          "title": "Relazioni 2026 L'Unica Mossa Vincente è NON GIOCARE 🚪",
+          "views": 401.0,
+          "age_hours": 4380.0,
+          "vph": 0.09,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "PcQUfbRDZDQ",
+          "url": "https://www.youtube.com/watch?v=PcQUfbRDZDQ",
+          "title": "Smetti di Fare il Bravo Ragazzo Il Trucco del Confine a Freddo per Farti Rispettare 🧊",
+          "views": 264.0,
+          "age_hours": 2920.0,
+          "vph": 0.09,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "35-dXJiLisw",
+          "url": "https://www.youtube.com/watch?v=35-dXJiLisw",
+          "title": "Smetti di Essere Sempre Disponibile L'Errore Che Ti Rende Invisibile",
+          "views": 183.0,
+          "age_hours": 2190.0,
+          "vph": 0.08,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "HAnjvUyv-nQ",
+          "url": "https://www.youtube.com/watch?v=HAnjvUyv-nQ",
+          "title": "Relazioni 2026 Perché è un Gioco Truccato e come vincere",
+          "views": 346.0,
+          "age_hours": 4380.0,
+          "vph": 0.08,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "NCWBYUCS2KU",
+          "url": "https://www.youtube.com/watch?v=NCWBYUCS2KU",
+          "title": "Sei solo un partner di transizione 5 segnali per capire se ti sta usando per dimenticare l'ex",
+          "views": 270.0,
+          "age_hours": 3650.0,
+          "vph": 0.07,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "QMLgtRlczqY",
+          "url": "https://www.youtube.com/watch?v=QMLgtRlczqY",
+          "title": "Come Il Silenzio La Costringe A Inseguirti E Rispettarti",
+          "views": 234.0,
+          "age_hours": 3650.0,
+          "vph": 0.06,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "PEeGQOAKs7U",
+          "url": "https://www.youtube.com/watch?v=PEeGQOAKs7U",
+          "title": "🏆 Sei stato scelto o solo SELEZIONATO La verità che ti cambierà la vita 💔",
+          "views": 279.0,
+          "age_hours": 4380.0,
+          "vph": 0.06,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "comando_maiuscolo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "P2uch8nOdts",
+          "url": "https://www.youtube.com/watch?v=P2uch8nOdts",
+          "title": "Dark Psychology Come Distruggere i Suoi Shit Test in 3 Secondi 🧠",
+          "views": 182.0,
+          "age_hours": 2920.0,
+          "vph": 0.06,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "GD2g0extf9w",
+          "url": "https://www.youtube.com/watch?v=GD2g0extf9w",
+          "title": "6 Verità sulla Psicologia Femminile che ti Salveranno dai Fallimenti ⚠️",
+          "views": 265.0,
+          "age_hours": 4380.0,
+          "vph": 0.06,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "ByvZnDPxqvI",
+          "url": "https://www.youtube.com/watch?v=ByvZnDPxqvI",
+          "title": "Le farfalle nello stomaco Sono un allarme",
+          "views": 172.0,
+          "age_hours": 2920.0,
+          "vph": 0.06,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "rhnwxhZ69Lk",
+          "url": "https://www.youtube.com/watch?v=rhnwxhZ69Lk",
+          "title": "Il VERO Motivo per cui Lei Perde Interesse Non E' Colpa del Tuo Aspetto",
+          "views": 208.0,
+          "age_hours": 3650.0,
+          "vph": 0.06,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "CzB442kYssE",
+          "url": "https://www.youtube.com/watch?v=CzB442kYssE",
+          "title": "Mia Moglie È Cambiata Completamente Dopo i 40 — Ecco Perché Succede E Cosa Fare",
+          "views": 201.0,
+          "age_hours": 3650.0,
+          "vph": 0.06,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "HufyQstpYFM",
+          "url": "https://www.youtube.com/watch?v=HufyQstpYFM",
+          "title": "I Segnali Segreti della Manipolazione Femminile Esci Dalla Trappola del Narcisismo",
+          "views": 200.0,
+          "age_hours": 3650.0,
+          "vph": 0.05,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti"
+          ]
+        },
+        {
+          "videoId": "2vMWV2CXw8w",
+          "url": "https://www.youtube.com/watch?v=2vMWV2CXw8w",
+          "title": "Come abbracciare una ragazza per farla innamorare 4 Segreti",
+          "views": 200.0,
+          "age_hours": 3650.0,
+          "vph": 0.05,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "Go8p_2t9WLI",
+          "url": "https://www.youtube.com/watch?v=Go8p_2t9WLI",
+          "title": "Le 2 Parole che DISTRUGGONO l'Attrazione Quando ti lascia in visualizzato",
+          "views": 158.0,
+          "age_hours": 2920.0,
+          "vph": 0.05,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo",
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "PTfjm2tDA38",
+          "url": "https://www.youtube.com/watch?v=PTfjm2tDA38",
+          "title": "L'errore ormonale che uccide l'attrazione E come rimediare in 48 ore",
+          "views": 150.0,
+          "age_hours": 2920.0,
+          "vph": 0.05,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "HlXnR21GvXA",
+          "url": "https://www.youtube.com/watch?v=HlXnR21GvXA",
+          "title": "Donna di Alto Valore 7 Verità sulla Psicologia nel 2026",
+          "views": 175.0,
+          "age_hours": 3650.0,
+          "vph": 0.05,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "sPfd7Pr3sZo",
+          "url": "https://www.youtube.com/watch?v=sPfd7Pr3sZo",
+          "title": "Come farsi rispettare senza essere stronzi",
+          "views": 139.0,
+          "age_hours": 2920.0,
+          "vph": 0.05,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "30gBDVZtaJU",
+          "url": "https://www.youtube.com/watch?v=30gBDVZtaJU",
+          "title": "Cosa fare quando lei si allontana 1 errore fatale",
+          "views": 156.0,
+          "age_hours": 3650.0,
+          "vph": 0.04,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "--UT2BjuodM",
+          "url": "https://www.youtube.com/watch?v=--UT2BjuodM",
+          "title": "Come smettere di essere ignorati la verità nascosta",
+          "views": 150.0,
+          "age_hours": 3650.0,
+          "vph": 0.04,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "UPWF-Mi49Zs",
+          "url": "https://www.youtube.com/watch?v=UPWF-Mi49Zs",
+          "title": "Cambi vita e ti senti solo Il segreto del Corridoio",
+          "views": 146.0,
+          "age_hours": 3650.0,
+          "vph": 0.04,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "43TiGhLGjLU",
+          "url": "https://www.youtube.com/watch?v=43TiGhLGjLU",
+          "title": "Perché sei ossessionato da lei La verità psicologica che ti libererà",
+          "views": 173.0,
+          "age_hours": 4380.0,
+          "vph": 0.04,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "YzlZBJDlX5w",
+          "url": "https://www.youtube.com/watch?v=YzlZBJDlX5w",
+          "title": "I 5 Livelli del Contatto Fisico Come Capire se le Piaci Davvero",
+          "views": 144.0,
+          "age_hours": 3650.0,
+          "vph": 0.04,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "xGkSAEq6TMg",
+          "url": "https://www.youtube.com/watch?v=xGkSAEq6TMg",
+          "title": "Psicologia Relazioni L'Errore del 99% 🏆",
+          "views": 139.0,
+          "age_hours": 3650.0,
+          "vph": 0.04,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "idUip_7cLaE",
+          "url": "https://www.youtube.com/watch?v=idUip_7cLaE",
+          "title": "3 Errori Inconsci che Distruggono il Tuo Carisma E Come Risolverli Oggi",
+          "views": 136.0,
+          "age_hours": 3650.0,
+          "vph": 0.04,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "Y8KCFKgquec",
+          "url": "https://www.youtube.com/watch?v=Y8KCFKgquec",
+          "title": "Frasi psicologiche per creare una connessione profonda 8 Segreti",
+          "views": 132.0,
+          "age_hours": 3650.0,
+          "vph": 0.04,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "SSIiM-O-IRY",
+          "url": "https://www.youtube.com/watch?v=SSIiM-O-IRY",
+          "title": "6 Abitudini per un'Autostima Top La Svolta Segreta",
+          "views": 121.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "js61hDYa2bE",
+          "url": "https://www.youtube.com/watch?v=js61hDYa2bE",
+          "title": "Come Gestire i Test Emotivi e Farsi Rispettare",
+          "views": 117.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "zZ2GRBlbF48",
+          "url": "https://www.youtube.com/watch?v=zZ2GRBlbF48",
+          "title": "Come capire se lei ti sta per lasciare 7 Segni Infallibili 🚩",
+          "views": 113.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "pv5BZMrz4bA",
+          "url": "https://www.youtube.com/watch?v=pv5BZMrz4bA",
+          "title": "Dipendenza Affettiva La Verità Scomoda Per Poterne Uscire",
+          "views": 110.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "kVo6kX1x8Cg",
+          "url": "https://www.youtube.com/watch?v=kVo6kX1x8Cg",
+          "title": "Sentirsi inutili a 50 anni Ecco come ritrovare il tuo scopo",
+          "views": 109.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "_NtBcYiZciY",
+          "url": "https://www.youtube.com/watch?v=_NtBcYiZciY",
+          "title": "Smetti di farti calpestare Domina le Relazioni ora!",
+          "views": 126.0,
+          "age_hours": 4380.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "WKC5Wn_-80Q",
+          "url": "https://www.youtube.com/watch?v=WKC5Wn_-80Q",
+          "title": "Relazioni in crisi La dura verità sull'anima gemella",
+          "views": 104.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "Ae_sa6L6NEU",
+          "url": "https://www.youtube.com/watch?v=Ae_sa6L6NEU",
+          "title": "La Trappola delle Relazioni Perfette sui Social E Come Uscirne",
+          "views": 102.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "-H0bvTMLiMQ",
+          "url": "https://www.youtube.com/watch?v=-H0bvTMLiMQ",
+          "title": "Partner distante Parlare NON crea attrazione  Fai così",
+          "views": 102.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "tUPIH2KycXQ",
+          "url": "https://www.youtube.com/watch?v=tUPIH2KycXQ",
+          "title": "Come apparire più autorevoli con il corpo il segreto del V Taper",
+          "views": 100.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "oXN8TOzyX3w",
+          "url": "https://www.youtube.com/watch?v=oXN8TOzyX3w",
+          "title": "Ami troppo Il Paradosso del Salvatore nasconde un segreto",
+          "views": 98.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "bg4JUONFOcU",
+          "url": "https://www.youtube.com/watch?v=bg4JUONFOcU",
+          "title": "Il complimento psicologico che stravolge le regole",
+          "views": 97.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "4OJ9Vu9yK3o",
+          "url": "https://www.youtube.com/watch?v=4OJ9Vu9yK3o",
+          "title": "L'illusione del controllo perché forzare un 'Sì' ti farà perdere il suo rispetto",
+          "views": 95.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "IgaElHj-p90",
+          "url": "https://www.youtube.com/watch?v=IgaElHj-p90",
+          "title": "Il pericolo di parlare troppo il segreto che ignori",
+          "views": 94.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "YCu7ZI6qTrw",
+          "url": "https://www.youtube.com/watch?v=YCu7ZI6qTrw",
+          "title": "Come disinnescare un narcisista con la psicologia 5 mosse 🏆",
+          "views": 94.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "Hx5fU7HiXQ4",
+          "url": "https://www.youtube.com/watch?v=Hx5fU7HiXQ4",
+          "title": "Lasciare andare una persona senza perdonare la Verità #1",
+          "views": 94.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "5Z9zMzZ8utY",
+          "url": "https://www.youtube.com/watch?v=5Z9zMzZ8utY",
+          "title": "Sei uno Zombie Funzionale Come una relazione tossica ti uccide l'anima",
+          "views": 112.0,
+          "age_hours": 4380.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "0f9r7OUXOXo",
+          "url": "https://www.youtube.com/watch?v=0f9r7OUXOXo",
+          "title": "Gli opposti si attraggono Il segreto che nessuno ti dice",
+          "views": 93.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "bUIQ_frD_a4",
+          "url": "https://www.youtube.com/watch?v=bUIQ_frD_a4",
+          "title": "Smetti di Comprare l'Amore La Trappola della Relazione Transazionale",
+          "views": 92.0,
+          "age_hours": 3650.0,
+          "vph": 0.03,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "4dDoGxQRQ5A",
+          "url": "https://www.youtube.com/watch?v=4dDoGxQRQ5A",
+          "title": "Smetti di fare la VITTIMA Riprendi il Controllo ORA! ⚠️",
+          "views": 91.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "cKkhvPMTsxo",
+          "url": "https://www.youtube.com/watch?v=cKkhvPMTsxo",
+          "title": "Distanza a letto 3 errori nell'intimità da evitare",
+          "views": 90.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "WTagZYY4t9I",
+          "url": "https://www.youtube.com/watch?v=WTagZYY4t9I",
+          "title": "Perché scegli sempre chi ti distrugge La verità sulle Relazioni Tossiche",
+          "views": 107.0,
+          "age_hours": 4380.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "H8JFpaHxSms",
+          "url": "https://www.youtube.com/watch?v=H8JFpaHxSms",
+          "title": "Il Paradosso del Bravo Ragazzo l'amara verità",
+          "views": 84.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "CMT-fSRG1DM",
+          "url": "https://www.youtube.com/watch?v=CMT-fSRG1DM",
+          "title": "Litigi continui in coppia Esci dalla trappola così",
+          "views": 80.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "IzZ_6qM6ICs",
+          "url": "https://www.youtube.com/watch?v=IzZ_6qM6ICs",
+          "title": "Se Sei Sempre Online, Hai Già Perso",
+          "views": 77.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "G3dHHwCAoNU",
+          "url": "https://www.youtube.com/watch?v=G3dHHwCAoNU",
+          "title": "6 Chiavi Per Essere Sicuro Scopri Il Dono Raro",
+          "views": 76.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "5FcovoUcmRE",
+          "url": "https://www.youtube.com/watch?v=5FcovoUcmRE",
+          "title": "Smetti di elemosinare rispetto 4 passi per importi 🛡️",
+          "views": 76.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "10PaTu1NtfY",
+          "url": "https://www.youtube.com/watch?v=10PaTu1NtfY",
+          "title": "Sei stato ASSEGNATO La verità SHOCK che nessuno ti dice! 😱",
+          "views": 89.0,
+          "age_hours": 4380.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "comando_maiuscolo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "XNF-XVDJH3k",
+          "url": "https://www.youtube.com/watch?v=XNF-XVDJH3k",
+          "title": "Smetti di dare troppe spiegazioni la dura verità",
+          "views": 71.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "5Tl0MZ2Zy38",
+          "url": "https://www.youtube.com/watch?v=5Tl0MZ2Zy38",
+          "title": "Come capire se è amore vero o abitudine 10 Frasi Shock",
+          "views": 70.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "53qgmXPyFc4",
+          "url": "https://www.youtube.com/watch?v=53qgmXPyFc4",
+          "title": "Perché lei non ti cerca più Il killer silenzioso delle coppie 😱",
+          "views": 82.0,
+          "age_hours": 4380.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "HLAsUd7epbY",
+          "url": "https://www.youtube.com/watch?v=HLAsUd7epbY",
+          "title": "Perché Stai Perdendo la Sfida Contro lo Smartphone della Tua Ragazza",
+          "views": 66.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "IN4mC4DZ-hQ",
+          "url": "https://www.youtube.com/watch?v=IN4mC4DZ-hQ",
+          "title": "Lei ti usa per soldi La trappola mentale che ignori",
+          "views": 64.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "HDxLvS9h0GE",
+          "url": "https://www.youtube.com/watch?v=HDxLvS9h0GE",
+          "title": "5 segreti per il suo piacere scopri cosa brama",
+          "views": 63.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "5EbpuCRaQTk",
+          "url": "https://www.youtube.com/watch?v=5EbpuCRaQTk",
+          "title": "Indifferenza Strategica Il Segreto Che Ti Renderà",
+          "views": 62.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "Mv8vQnOLUrA",
+          "url": "https://www.youtube.com/watch?v=Mv8vQnOLUrA",
+          "title": "Come porre confini sani nelle relazioni tossiche 10 Verità",
+          "views": 62.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "zpokDYg0_h0",
+          "url": "https://www.youtube.com/watch?v=zpokDYg0_h0",
+          "title": "Manca passione L'errore che spegne il desiderio di coppia",
+          "views": 61.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "BnsyCii8r0g",
+          "url": "https://www.youtube.com/watch?v=BnsyCii8r0g",
+          "title": "5 Chiavi Per Leggerle La Mente Il Vero Segreto",
+          "views": 61.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "Mg6_PbDRjD0",
+          "url": "https://www.youtube.com/watch?v=Mg6_PbDRjD0",
+          "title": "Smetti di soffrire come uscire dalla prigione invisibile della tua mente",
+          "views": 73.0,
+          "age_hours": 4380.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "wGH5q3aSTT8",
+          "url": "https://www.youtube.com/watch?v=wGH5q3aSTT8",
+          "title": "Spengono l'attrazione 5 errori fatali Il numero 3",
+          "views": 59.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "uWXdoZuMqps",
+          "url": "https://www.youtube.com/watch?v=uWXdoZuMqps",
+          "title": "Smetti di competere  Il segreto della vera sicurezza",
+          "views": 56.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "tcGed28z9rU",
+          "url": "https://www.youtube.com/watch?v=tcGed28z9rU",
+          "title": "4 regole per un orgasmo unico liberati, la verità è",
+          "views": 56.0,
+          "age_hours": 3650.0,
+          "vph": 0.02,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "H5MZKqPn5wY",
+          "url": "https://www.youtube.com/watch?v=H5MZKqPn5wY",
+          "title": "La cruda verità sull'amore non credere a questo",
+          "views": 53.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "GCCuCfsFNCM",
+          "url": "https://www.youtube.com/watch?v=GCCuCfsFNCM",
+          "title": "Perché le app di incontri non funzionano la trappola",
+          "views": 51.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "9DtYIkoU0IM",
+          "url": "https://www.youtube.com/watch?v=9DtYIkoU0IM",
+          "title": "Uscire dal limbo emotivo la verità inaspettata",
+          "views": 51.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "FFYciqFHgNU",
+          "url": "https://www.youtube.com/watch?v=FFYciqFHgNU",
+          "title": "Ti usa in chat Perché le app di incontri non funzionano",
+          "views": 48.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "a0_ai34_1Rg",
+          "url": "https://www.youtube.com/watch?v=a0_ai34_1Rg",
+          "title": "Gelosia Retroattiva Perché Sei Ossessionato dal Passato del Tuo Partner e Come Smettere",
+          "views": 47.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "M2M4-BIu52M",
+          "url": "https://www.youtube.com/watch?v=M2M4-BIu52M",
+          "title": "Come i traumi infantili influenzano le relazioni adulte 3 Verità",
+          "views": 47.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "v7RblOpca9M",
+          "url": "https://www.youtube.com/watch?v=v7RblOpca9M",
+          "title": "Cambia sempre discorso Scopri la verità che ti nasconde",
+          "views": 43.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "d2V6A3fa0sg",
+          "url": "https://www.youtube.com/watch?v=d2V6A3fa0sg",
+          "title": "Fai tutto con lei Uccidi la relazione  Il segreto è...",
+          "views": 43.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "tm5bf8uErHM",
+          "url": "https://www.youtube.com/watch?v=tm5bf8uErHM",
+          "title": "Blocco Mentale A Letto Il Segreto Per Risolverlo",
+          "views": 41.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "ioNu5pujpHE",
+          "url": "https://www.youtube.com/watch?v=ioNu5pujpHE",
+          "title": "Litigare in coppia l'errore fatale che nascondi",
+          "views": 40.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "FGB5HC_8yhw",
+          "url": "https://www.youtube.com/watch?v=FGB5HC_8yhw",
+          "title": "Assegno di mantenimento la verità che ti nascondono",
+          "views": 34.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "eeTDWN6KCGU",
+          "url": "https://www.youtube.com/watch?v=eeTDWN6KCGU",
+          "title": "Lavorare troppo spegne l'attrazione  Il motivo",
+          "views": 33.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "Oe5REFXuP5k",
+          "url": "https://www.youtube.com/watch?v=Oe5REFXuP5k",
+          "title": "Litigare in coppia salva l'amore ecco il segreto",
+          "views": 29.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "DinamicheSocialiAcademy",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        }
+      ]
+    },
+    "PsicologiaFemminile-f8c": {
+      "ruolo": "primaria",
+      "fetched_at": "2026-08-26T11:45:26.773768",
+      "n_totale_cache": 100,
+      "n_candidati_validi": 100,
+      "candidati": [
+        {
+          "videoId": "8_RZCbkuIQk",
+          "url": "https://www.youtube.com/watch?v=8_RZCbkuIQk",
+          "title": "7 tocchi che faranno innamorare perdutamente una donna matura di te #psicologia  #relazioni",
+          "views": 31000.0,
+          "age_hours": 2920.0,
+          "vph": 10.62,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "CxdlEsEnZ9g",
+          "url": "https://www.youtube.com/watch?v=CxdlEsEnZ9g",
+          "title": "Se una donna sta sviluppando dei sentimenti per te, dirà queste 7 cose | Fatti di psicologia",
+          "views": 15000.0,
+          "age_hours": 1460.0,
+          "vph": 10.27,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "qHB80wbamBI",
+          "url": "https://www.youtube.com/watch?v=qHB80wbamBI",
+          "title": "4 segnali che indicano che lei ti desidera segretamente: riconoscili prima che sia troppo tardi!",
+          "views": 1800.0,
+          "age_hours": 312.0,
+          "vph": 5.77,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "XABjAjqfUxw",
+          "url": "https://www.youtube.com/watch?v=XABjAjqfUxw",
+          "title": "Lei non può resisterti: il trucco per un'attrazione immediata per gli uomini",
+          "views": 1300.0,
+          "age_hours": 240.0,
+          "vph": 5.42,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "AXvmuRR4cdY",
+          "url": "https://www.youtube.com/watch?v=AXvmuRR4cdY",
+          "title": "Perché le donne tornano dopo averti rifiutato? | Psicologia femminile",
+          "views": 1800.0,
+          "age_hours": 336.0,
+          "vph": 5.36,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "kY02KtQfyX0",
+          "url": "https://www.youtube.com/watch?v=kY02KtQfyX0",
+          "title": "6 segnali nascosti che indicano che una donna ti desidera (ma non lo dirà) | Psicologia femminile",
+          "views": 15000.0,
+          "age_hours": 2920.0,
+          "vph": 5.14,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco",
+            "parentesi",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "IkEmUmnSPI4",
+          "url": "https://www.youtube.com/watch?v=IkEmUmnSPI4",
+          "title": "Lei non può resisterti: il trucco per l'attrazione istantanea per gli uomini",
+          "views": 3700.0,
+          "age_hours": 730.0,
+          "vph": 5.07,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "VejNn26Ndlg",
+          "url": "https://www.youtube.com/watch?v=VejNn26Ndlg",
+          "title": "Come una donna inizia a sentire la tua mancanza dopo che te ne sei andato",
+          "views": 764.0,
+          "age_hours": 168.0,
+          "vph": 4.55,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "chVKOBlEpDI",
+          "url": "https://www.youtube.com/watch?v=chVKOBlEpDI",
+          "title": "Pensi che non sia interessata? Guarda prima questo",
+          "views": 6500.0,
+          "age_hours": 1460.0,
+          "vph": 4.45,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "9UND8IgmOME",
+          "url": "https://www.youtube.com/watch?v=9UND8IgmOME",
+          "title": "Dimentica il \"nessun contatto\": fa ancora più male del tuo silenzio | Psicologia femminile",
+          "views": 12000.0,
+          "age_hours": 2920.0,
+          "vph": 4.11,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "XHveMwvoB2M",
+          "url": "https://www.youtube.com/watch?v=XHveMwvoB2M",
+          "title": "3 chiari segnali che una donna desidera segretamente l'intimità con te",
+          "views": 2200.0,
+          "age_hours": 730.0,
+          "vph": 3.01,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "VB9Dkd5w1MM",
+          "url": "https://www.youtube.com/watch?v=VB9Dkd5w1MM",
+          "title": "Le donne sono fedeli a UNA cosa sola – e non è quello che fai per loro",
+          "views": 872.0,
+          "age_hours": 336.0,
+          "vph": 2.6,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "OhbmC_CXL3w",
+          "url": "https://www.youtube.com/watch?v=OhbmC_CXL3w",
+          "title": "🔥 Se una donna ti mostra questa specifica parte del suo corpo, cosa significa davvero?",
+          "views": 1800.0,
+          "age_hours": 730.0,
+          "vph": 2.47,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "DktUP9rCN0E",
+          "url": "https://www.youtube.com/watch?v=DktUP9rCN0E",
+          "title": "7 punti del corpo che le donne desiderano essere toccati (e che gli uomini trascurano sistematicamen",
+          "views": 2900.0,
+          "age_hours": 1460.0,
+          "vph": 1.99,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "parentesi"
+          ]
+        },
+        {
+          "videoId": "PyUrlzY5xSU",
+          "url": "https://www.youtube.com/watch?v=PyUrlzY5xSU",
+          "title": "🔥 Quando una donna ti desidera, ti rivela sempre questi 3 segnali | Psicologia femminile 🔥",
+          "views": 1000.0,
+          "age_hours": 504.0,
+          "vph": 1.98,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "VbVpAli50HU",
+          "url": "https://www.youtube.com/watch?v=VbVpAli50HU",
+          "title": "Una volta che gli uomini capiranno questo delle donne, gli appuntamenti cambieranno per sempre",
+          "views": 560.0,
+          "age_hours": 288.0,
+          "vph": 1.94,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "XuYWVuIRIWM",
+          "url": "https://www.youtube.com/watch?v=XuYWVuIRIWM",
+          "title": "Come far eccitare un'amica... in soli 3 minuti! Psicologia femminile",
+          "views": 4200.0,
+          "age_hours": 2190.0,
+          "vph": 1.92,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "n2lhUxDWY0Q",
+          "url": "https://www.youtube.com/watch?v=n2lhUxDWY0Q",
+          "title": "7 Segnali che ha appena dormito con un altro | Psicologia Femminile",
+          "views": 36.0,
+          "age_hours": 24.0,
+          "vph": 1.5,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "AzJuqmi7_sY",
+          "url": "https://www.youtube.com/watch?v=AzJuqmi7_sY",
+          "title": "Come comportarsi con una donna che ti ha ferito | Stoicismo",
+          "views": 285.0,
+          "age_hours": 192.0,
+          "vph": 1.48,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "wRepp7aPTcU",
+          "url": "https://www.youtube.com/watch?v=wRepp7aPTcU",
+          "title": "BACIALA QUI E ti supplicherà di portarla a casa stasera. Psicologia dell'amore",
+          "views": 999.0,
+          "age_hours": 730.0,
+          "vph": 1.37,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "comando_maiuscolo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "FWFGk9fthJ0",
+          "url": "https://www.youtube.com/watch?v=FWFGk9fthJ0",
+          "title": "Le donne più giovani ODIANO quando gli uomini più grandi fanno questo 😳 | 7 abitudini poco attraenti",
+          "views": 617.0,
+          "age_hours": 504.0,
+          "vph": 1.22,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "2q8baJHw53M",
+          "url": "https://www.youtube.com/watch?v=2q8baJHw53M",
+          "title": "6 segnali che indicano che le donne ti trovano attraente (ma non lo dicono) #psicologia",
+          "views": 3500.0,
+          "age_hours": 2920.0,
+          "vph": 1.2,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco",
+            "parentesi",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "WCW_GzBEdmE",
+          "url": "https://www.youtube.com/watch?v=WCW_GzBEdmE",
+          "title": "😱 Mio suocero ha fatto quello che mio marito non ha mai osato fare | Storia vera",
+          "views": 111.0,
+          "age_hours": 96.0,
+          "vph": 1.16,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "R2qlh9323R4",
+          "url": "https://www.youtube.com/watch?v=R2qlh9323R4",
+          "title": "Le 20 tattiche di Machiavelli per controllare le donne: la psicologia",
+          "views": 328.0,
+          "age_hours": 288.0,
+          "vph": 1.14,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "_AJvqB3aBhM",
+          "url": "https://www.youtube.com/watch?v=_AJvqB3aBhM",
+          "title": "Domande da porre a una donna per avere intimità senza essere rifiutati 😱 | Psicologia Oscura",
+          "views": 1600.0,
+          "age_hours": 1460.0,
+          "vph": 1.1,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "K_Xvm5xtH5o",
+          "url": "https://www.youtube.com/watch?v=K_Xvm5xtH5o",
+          "title": "Si comporta in modo freddo... ma questi segnali indicano che è ossessionata da te",
+          "views": 774.0,
+          "age_hours": 730.0,
+          "vph": 1.06,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "IhCMUfkD_oM",
+          "url": "https://www.youtube.com/watch?v=IhCMUfkD_oM",
+          "title": "Smetti di dire \"Sei bellissima\"... Dì invece queste 8 cose che lei sentirà.",
+          "views": 756.0,
+          "age_hours": 730.0,
+          "vph": 1.04,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "cDsuI-bnIAc",
+          "url": "https://www.youtube.com/watch?v=cDsuI-bnIAc",
+          "title": "10 cose che NON dovresti MAI fare per una donna - Psicologia femminile",
+          "views": 612.0,
+          "age_hours": 730.0,
+          "vph": 0.84,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "comando_maiuscolo",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "1OPc6tk27_Q",
+          "url": "https://www.youtube.com/watch?v=1OPc6tk27_Q",
+          "title": "🔥 4 segnali che indicano che lei ti desidera segretamente: riconoscili prima che sia troppo tardi!",
+          "views": 408.0,
+          "age_hours": 504.0,
+          "vph": 0.81,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "IWVC1FtczxU",
+          "url": "https://www.youtube.com/watch?v=IWVC1FtczxU",
+          "title": "SE NASCONDE QUALCOSA, QUESTI CAMBIAMENTI COMINCIANO A MANIFESTARE",
+          "views": 70.0,
+          "age_hours": 96.0,
+          "vph": 0.73,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "2r421IwR_Z0",
+          "url": "https://www.youtube.com/watch?v=2r421IwR_Z0",
+          "title": "11 segnali che indicano che non ti ha mai amato veramente: non ignorarli più | Psicologia femminile",
+          "views": 519.0,
+          "age_hours": 730.0,
+          "vph": 0.71,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco",
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "Q6Y1TBcaDUc",
+          "url": "https://www.youtube.com/watch?v=Q6Y1TBcaDUc",
+          "title": "Come le donne gestiscono il sesso quando non c'è un uomo nei paraggi | Psicologia femminile",
+          "views": 1500.0,
+          "age_hours": 2190.0,
+          "vph": 0.68,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "0B0FctUbsNQ",
+          "url": "https://www.youtube.com/watch?v=0B0FctUbsNQ",
+          "title": "Tutti i 177 Segreti della Psicologia Femminile (La Guida Più Completa su Internet)",
+          "views": 479.0,
+          "age_hours": 730.0,
+          "vph": 0.66,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "parentesi"
+          ]
+        },
+        {
+          "videoId": "AjKM3rbU1nE",
+          "url": "https://www.youtube.com/watch?v=AjKM3rbU1nE",
+          "title": "La Maggior Parte degli Uomini Maturi Non Si Accorge che Questa Domanda è un Segnale di Flirt",
+          "views": 435.0,
+          "age_hours": 672.0,
+          "vph": 0.65,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "9QfK1jmR7S8",
+          "url": "https://www.youtube.com/watch?v=9QfK1jmR7S8",
+          "title": "Il Segreto del Sesso Orale che Porta il Suo Piacere a un Livello Superiore",
+          "views": 447.0,
+          "age_hours": 730.0,
+          "vph": 0.61,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "uUotEIiJs-A",
+          "url": "https://www.youtube.com/watch?v=uUotEIiJs-A",
+          "title": "Una cosa che eccita le donne più del sesso (basato sulla scienza) | Psicologia femminile",
+          "views": 745.0,
+          "age_hours": 1460.0,
+          "vph": 0.51,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "parentesi"
+          ]
+        },
+        {
+          "videoId": "o4NYAGhU_1s",
+          "url": "https://www.youtube.com/watch?v=o4NYAGhU_1s",
+          "title": "Quando ti ferisce, non dire nulla: lascia che il silenzio la distrugga | Psicologia femminile",
+          "views": 1100.0,
+          "age_hours": 2190.0,
+          "vph": 0.5,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "FLHRJVIoWE4",
+          "url": "https://www.youtube.com/watch?v=FLHRJVIoWE4",
+          "title": "Se non è interessata, noterai subito questi 5 segnali | Psicologia femminile",
+          "views": 704.0,
+          "age_hours": 1460.0,
+          "vph": 0.48,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "wA0U4aFpP8k",
+          "url": "https://www.youtube.com/watch?v=wA0U4aFpP8k",
+          "title": "9 sensazioni che una donna prova quando te ne vai — #psicologiafemminile #psicologia  #relazioni",
+          "views": 1000.0,
+          "age_hours": 2190.0,
+          "vph": 0.46,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "Ub82lEJYnGM",
+          "url": "https://www.youtube.com/watch?v=Ub82lEJYnGM",
+          "title": "La maggior parte degli uomini IGNORA questi 7 segnali nella donna giusta | Psicologia femminile",
+          "views": 230.0,
+          "age_hours": 504.0,
+          "vph": 0.46,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "xi0ciaQsdLw",
+          "url": "https://www.youtube.com/watch?v=xi0ciaQsdLw",
+          "title": "Perché le donne tornano sempre da questo tipo di uomo",
+          "views": 643.0,
+          "age_hours": 1460.0,
+          "vph": 0.44,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "XF9AzPCcSZ4",
+          "url": "https://www.youtube.com/watch?v=XF9AzPCcSZ4",
+          "title": "7 motivi per cui gli uomini over 60 NON dovrebbero MAI avere una fidanzata (occhio al punto 7)",
+          "views": 212.0,
+          "age_hours": 504.0,
+          "vph": 0.42,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "parentesi",
+            "comando_maiuscolo",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "6kcIRGqAets",
+          "url": "https://www.youtube.com/watch?v=6kcIRGqAets",
+          "title": "5 Segnali che sta frequentando altre persone non ignorarli | Psicologia femminile",
+          "views": 590.0,
+          "age_hours": 1460.0,
+          "vph": 0.4,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "CUwZIfePdYo",
+          "url": "https://www.youtube.com/watch?v=CUwZIfePdYo",
+          "title": "Ho chiesto a 500 donne cosa le eccita (le risposte ti hanno scioccato)",
+          "views": 581.0,
+          "age_hours": 1460.0,
+          "vph": 0.4,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "parentesi",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "KhDJ35hGLpU",
+          "url": "https://www.youtube.com/watch?v=KhDJ35hGLpU",
+          "title": "6 scuse che le donne usano quando incontrano di nascosto un altro uomo | Psicologia femminile",
+          "views": 289.0,
+          "age_hours": 730.0,
+          "vph": 0.4,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "DuYWBOV9T9E",
+          "url": "https://www.youtube.com/watch?v=DuYWBOV9T9E",
+          "title": "OTTO COMPLIMENTI CHE LE FARANNO RICORDARE DI TE",
+          "views": 271.0,
+          "age_hours": 730.0,
+          "vph": 0.37,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "comando_maiuscolo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "F2Hm_3GIuME",
+          "url": "https://www.youtube.com/watch?v=F2Hm_3GIuME",
+          "title": "4 segnali che una donna sposata è segretamente attratta da te | psicologia femminile",
+          "views": 771.0,
+          "age_hours": 2190.0,
+          "vph": 0.35,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "R_owwVRG-38",
+          "url": "https://www.youtube.com/watch?v=R_owwVRG-38",
+          "title": "3 età in cui le donne hanno più bisogno di un uomo (la cruda verità spiegata)",
+          "views": 249.0,
+          "age_hours": 730.0,
+          "vph": 0.34,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "parentesi"
+          ]
+        },
+        {
+          "videoId": "bKgBOo7a4_U",
+          "url": "https://www.youtube.com/watch?v=bKgBOo7a4_U",
+          "title": "Quando ti vuole, ti fa queste 2 domande: non perdertele #psicologia #relazioni #virale",
+          "views": 729.0,
+          "age_hours": 2190.0,
+          "vph": 0.33,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "TC0tMnqqDcQ",
+          "url": "https://www.youtube.com/watch?v=TC0tMnqqDcQ",
+          "title": "Cosa rivela il comportamento di una donna dopo un tradimento | Psicologia femminile",
+          "views": 657.0,
+          "age_hours": 2190.0,
+          "vph": 0.3,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "YQBJEcXz_ZQ",
+          "url": "https://www.youtube.com/watch?v=YQBJEcXz_ZQ",
+          "title": "Quando una donna tradisce, lascia sempre queste 7 tracce | Psicologia femminile",
+          "views": 842.0,
+          "age_hours": 2920.0,
+          "vph": 0.29,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "L6WeO6fuESc",
+          "url": "https://www.youtube.com/watch?v=L6WeO6fuESc",
+          "title": "Come le donne gestiscono il sesso quando non c'è un uomo nei paraggi | Psicologia femminile",
+          "views": 376.0,
+          "age_hours": 1460.0,
+          "vph": 0.26,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "__GnYIs052Y",
+          "url": "https://www.youtube.com/watch?v=__GnYIs052Y",
+          "title": "5 segnali nascosti che indicano che ti sta già tradendo   che non hai mai notato",
+          "views": 348.0,
+          "age_hours": 1460.0,
+          "vph": 0.24,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco",
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "Te64ASNfA_Y",
+          "url": "https://www.youtube.com/watch?v=Te64ASNfA_Y",
+          "title": "7 Silenzi che avvicinano una donna matura a te | Psicologia femminile",
+          "views": 518.0,
+          "age_hours": 2190.0,
+          "vph": 0.24,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "HKPfwGTXDjE",
+          "url": "https://www.youtube.com/watch?v=HKPfwGTXDjE",
+          "title": "7 trucchi per far impazzire qualsiasi donna - Tutti gli uomini devono impararli | Psicologia",
+          "views": 688.0,
+          "age_hours": 2920.0,
+          "vph": 0.24,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "slwHStw81v4",
+          "url": "https://www.youtube.com/watch?v=slwHStw81v4",
+          "title": "8 cose che gli uomini fanno e che le donne trovano segretamente irresistibili",
+          "views": 514.0,
+          "age_hours": 2190.0,
+          "vph": 0.23,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "INBsohi95Z4",
+          "url": "https://www.youtube.com/watch?v=INBsohi95Z4",
+          "title": "Di' queste parole a un narcisista: non ti mancherà mai più di rispetto.",
+          "views": 168.0,
+          "age_hours": 730.0,
+          "vph": 0.23,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "64IEdHxO-3I",
+          "url": "https://www.youtube.com/watch?v=64IEdHxO-3I",
+          "title": "3 segnali inequivocabili che una donna desidera l'intimità con te",
+          "views": 468.0,
+          "age_hours": 2190.0,
+          "vph": 0.21,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "fr_qCSRuRaw",
+          "url": "https://www.youtube.com/watch?v=fr_qCSRuRaw",
+          "title": "10 consigli per il primo appuntamento che funzionano davvero per gli uomini",
+          "views": 442.0,
+          "age_hours": 2190.0,
+          "vph": 0.2,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "SBWO4k0W1Zs",
+          "url": "https://www.youtube.com/watch?v=SBWO4k0W1Zs",
+          "title": "7 segnali che una donna matura si sta lentamente innamorando di te | Psicologia femminile",
+          "views": 425.0,
+          "age_hours": 2190.0,
+          "vph": 0.19,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "FcYp0FiS0LU",
+          "url": "https://www.youtube.com/watch?v=FcYp0FiS0LU",
+          "title": "8 segnali che indicano che sei un uomo maturo affascinante (anche se non te ne rendi conto)",
+          "views": 392.0,
+          "age_hours": 2190.0,
+          "vph": 0.18,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco",
+            "parentesi",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "_gB9zm9-q-A",
+          "url": "https://www.youtube.com/watch?v=_gB9zm9-q-A",
+          "title": "La dipendenza dall'approvazione: perché ha bisogno dell'attenzione degli altri uomini",
+          "views": 259.0,
+          "age_hours": 1460.0,
+          "vph": 0.18,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "YkxmFdSpZE4",
+          "url": "https://www.youtube.com/watch?v=YkxmFdSpZE4",
+          "title": "Il Pattern di Attaccamento che Spinge le Donne a Tradire (Anche Quando Ti Amano)",
+          "views": 253.0,
+          "age_hours": 1460.0,
+          "vph": 0.17,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "parentesi",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "vB4PJspvQ6Y",
+          "url": "https://www.youtube.com/watch?v=vB4PJspvQ6Y",
+          "title": "Perché la tua donna non prende l'iniziativa a letto (e come convincerla a farlo) | #psicologia",
+          "views": 249.0,
+          "age_hours": 1460.0,
+          "vph": 0.17,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "parentesi"
+          ]
+        },
+        {
+          "videoId": "1QLB697xOoc",
+          "url": "https://www.youtube.com/watch?v=1QLB697xOoc",
+          "title": "5 segnali che indicano che ti sta usando come opzione stabile (e che sta ancora aspettando lui)",
+          "views": 373.0,
+          "age_hours": 2190.0,
+          "vph": 0.17,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco",
+            "parentesi",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "rEwS_ak5HKM",
+          "url": "https://www.youtube.com/watch?v=rEwS_ak5HKM",
+          "title": "Cosa dire a una donna che non smetterà mai di pensare #psicologia  #psicologiafemminile",
+          "views": 372.0,
+          "age_hours": 2190.0,
+          "vph": 0.17,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "kn2XRp7Px5c",
+          "url": "https://www.youtube.com/watch?v=kn2XRp7Px5c",
+          "title": "🔥 Quando una donna desidera un uomo più grande, lo mette alla prova con queste due domande 💫",
+          "views": 492.0,
+          "age_hours": 2920.0,
+          "vph": 0.17,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "5rT07zaHNDQ",
+          "url": "https://www.youtube.com/watch?v=5rT07zaHNDQ",
+          "title": "10 segnali che indicano che sta silenziosamente cancellando la tua identità | Psicologia femminile",
+          "views": 482.0,
+          "age_hours": 2920.0,
+          "vph": 0.17,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "PCch5k5m4TU",
+          "url": "https://www.youtube.com/watch?v=PCch5k5m4TU",
+          "title": "5 caratteristiche fisiche che le donne notano immediatamente negli uomini over 60 - Psicologia",
+          "views": 477.0,
+          "age_hours": 2920.0,
+          "vph": 0.16,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "9dOTmuXQmBg",
+          "url": "https://www.youtube.com/watch?v=9dOTmuXQmBg",
+          "title": "8 segnali che una donna è completamente impegnata con te (anche se non lo dice) | Psicologia",
+          "views": 470.0,
+          "age_hours": 2920.0,
+          "vph": 0.16,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco",
+            "parentesi",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "gnRNmOWSBP0",
+          "url": "https://www.youtube.com/watch?v=gnRNmOWSBP0",
+          "title": "7 parole che significano tutto per una donna matura",
+          "views": 311.0,
+          "age_hours": 2190.0,
+          "vph": 0.14,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "_g52hSoXHsA",
+          "url": "https://www.youtube.com/watch?v=_g52hSoXHsA",
+          "title": "Perché racconta tutto alle sue amiche tranne che a te | Psicologia femminile",
+          "views": 205.0,
+          "age_hours": 1460.0,
+          "vph": 0.14,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "HxOoGLuNCd8",
+          "url": "https://www.youtube.com/watch?v=HxOoGLuNCd8",
+          "title": "10 segnali d'allarme nelle donne che distruggono gli uomini per bene #psicologia #relazioni",
+          "views": 299.0,
+          "age_hours": 2190.0,
+          "vph": 0.14,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "9E6xwLsi2PI",
+          "url": "https://www.youtube.com/watch?v=9E6xwLsi2PI",
+          "title": "Il Segreto del Sesso Orale che Può Portare il Suo Piacere a un Livello Superiore",
+          "views": 182.0,
+          "age_hours": 1460.0,
+          "vph": 0.12,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "tdLqshv7BZA",
+          "url": "https://www.youtube.com/watch?v=tdLqshv7BZA",
+          "title": "Cosa succede nel cervello di una donna quando si sente emotivamente al sicuro?",
+          "views": 267.0,
+          "age_hours": 2190.0,
+          "vph": 0.12,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "hZ1sOrUyHW0",
+          "url": "https://www.youtube.com/watch?v=hZ1sOrUyHW0",
+          "title": "Perché le donne più giovani sono attratte dagli uomini più grandi? La psicologia che nessuno spiega.",
+          "views": 265.0,
+          "age_hours": 2190.0,
+          "vph": 0.12,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "rWAy0BQ8ATg",
+          "url": "https://www.youtube.com/watch?v=rWAy0BQ8ATg",
+          "title": "Non si sta allontanando, ti sta gestendo | Psicologia femminile",
+          "views": 261.0,
+          "age_hours": 2190.0,
+          "vph": 0.12,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "Zv74OrHqyRY",
+          "url": "https://www.youtube.com/watch?v=Zv74OrHqyRY",
+          "title": "7 segnali che indicano che sta allontanando l'intimità (il momento prima che se ne vada)",
+          "views": 170.0,
+          "age_hours": 1460.0,
+          "vph": 0.12,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco",
+            "parentesi"
+          ]
+        },
+        {
+          "videoId": "l-280XTBUN8",
+          "url": "https://www.youtube.com/watch?v=l-280XTBUN8",
+          "title": "Come gli uomini di successo possono individuare all'istante le donne interessate solo ai soldi",
+          "views": 160.0,
+          "age_hours": 1460.0,
+          "vph": 0.11,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "NcLCzUgq_9E",
+          "url": "https://www.youtube.com/watch?v=NcLCzUgq_9E",
+          "title": "10 errori che distruggono la sua percezione di te | #psicologiafemminile #psicologia  #relazioni",
+          "views": 238.0,
+          "age_hours": 2190.0,
+          "vph": 0.11,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "siE8J9X2Aac",
+          "url": "https://www.youtube.com/watch?v=siE8J9X2Aac",
+          "title": "7 fattori scatenanti che rendono una donna psicologicamente dipendente da te | Psicologia femminile",
+          "views": 219.0,
+          "age_hours": 2190.0,
+          "vph": 0.1,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "tmHpFY-cLtc",
+          "url": "https://www.youtube.com/watch?v=tmHpFY-cLtc",
+          "title": "Cosa ogni uomo deve capire prima di uscire con una madre single | Psicologia femminile",
+          "views": 218.0,
+          "age_hours": 2190.0,
+          "vph": 0.1,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "HljOB7i7Gqw",
+          "url": "https://www.youtube.com/watch?v=HljOB7i7Gqw",
+          "title": "Cosa spinge una donna a pensare a te quando non ci sei | Psicologia",
+          "views": 212.0,
+          "age_hours": 2190.0,
+          "vph": 0.1,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "vpXotWWmuYY",
+          "url": "https://www.youtube.com/watch?v=vpXotWWmuYY",
+          "title": "Il modello di attaccamento che spinge le donne a tradire (anche quando ti amano)",
+          "views": 139.0,
+          "age_hours": 1460.0,
+          "vph": 0.1,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "parentesi",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "M628zlXCMs8",
+          "url": "https://www.youtube.com/watch?v=M628zlXCMs8",
+          "title": "5 segnali nascosti che indicano che ti ha scelto per sicurezza, non per amore | Psicologia femminile",
+          "views": 204.0,
+          "age_hours": 2190.0,
+          "vph": 0.09,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "HZgqk3-yS2Y",
+          "url": "https://www.youtube.com/watch?v=HZgqk3-yS2Y",
+          "title": "Perché le donne dimenticano gli uomini che danno tutto — e non riescono a dimenticare questo",
+          "views": 192.0,
+          "age_hours": 2190.0,
+          "vph": 0.09,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "IqliM1JZgH8",
+          "url": "https://www.youtube.com/watch?v=IqliM1JZgH8",
+          "title": "Quando lei ti tradisce: cosa succede realmente a un uomo | Psicologia femminile",
+          "views": 177.0,
+          "age_hours": 2190.0,
+          "vph": 0.08,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "4NOKFVJYIeE",
+          "url": "https://www.youtube.com/watch?v=4NOKFVJYIeE",
+          "title": "Il suo lavoro sta lentamente distruggendo il vostro matrimonio (ecco come) | Psicologia femminile",
+          "views": 112.0,
+          "age_hours": 1460.0,
+          "vph": 0.08,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "parentesi",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "1dNCga8QA90",
+          "url": "https://www.youtube.com/watch?v=1dNCga8QA90",
+          "title": "5 chiavi per affrontare la mancanza di rispetto femminile nella tua relazione | Psicologia femminile",
+          "views": 165.0,
+          "age_hours": 2190.0,
+          "vph": 0.08,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "JQr6TYytbm4",
+          "url": "https://www.youtube.com/watch?v=JQr6TYytbm4",
+          "title": "Cosa distrugge davvero quando ti tradisce | #psicologiafemminile  #psicologia  #donne  #relazioni",
+          "views": 157.0,
+          "age_hours": 2190.0,
+          "vph": 0.07,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "n2gHSkgqJ80",
+          "url": "https://www.youtube.com/watch?v=n2gHSkgqJ80",
+          "title": "Quando abbracci una donna, fai queste 5 semplici cose per farla desiderare ancora di più.",
+          "views": 104.0,
+          "age_hours": 1460.0,
+          "vph": 0.07,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "o44LkA-OZuk",
+          "url": "https://www.youtube.com/watch?v=o44LkA-OZuk",
+          "title": "9 comportamenti che uccidono all'istante la sua attrazione  #psicologia  #psicologiafemminile",
+          "views": 204.0,
+          "age_hours": 2920.0,
+          "vph": 0.07,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "awGa_fVJcbg",
+          "url": "https://www.youtube.com/watch?v=awGa_fVJcbg",
+          "title": "6 segnali che un narcisista sta prendendo di mira la tua rovina",
+          "views": 150.0,
+          "age_hours": 2190.0,
+          "vph": 0.07,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "iy-wSDzt3s0",
+          "url": "https://www.youtube.com/watch?v=iy-wSDzt3s0",
+          "title": "Il cablaggio nascosto che porta le donne ad autosabotare l'amore",
+          "views": 97.0,
+          "age_hours": 1460.0,
+          "vph": 0.07,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "mHD8cvkvyjE",
+          "url": "https://www.youtube.com/watch?v=mHD8cvkvyjE",
+          "title": "Perché le donne sopra i 40 anni impazziscono (e distruggono le famiglie) | Psicologia femminile",
+          "views": 194.0,
+          "age_hours": 2920.0,
+          "vph": 0.07,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "parentesi",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "ZCo0e-eKfMo",
+          "url": "https://www.youtube.com/watch?v=ZCo0e-eKfMo",
+          "title": "7 limiti invalicabili che ogni uomo deve stabilire nei primi 30 giorni | Psicologia femminile",
+          "views": 172.0,
+          "age_hours": 2920.0,
+          "vph": 0.06,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "PZs3PdJ6VAs",
+          "url": "https://www.youtube.com/watch?v=PZs3PdJ6VAs",
+          "title": "Perché rimanere single è la decisione più intelligente che un uomo possa prendere #Psicologia",
+          "views": 123.0,
+          "age_hours": 2190.0,
+          "vph": 0.06,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "v5m_HpShWgM",
+          "url": "https://www.youtube.com/watch?v=v5m_HpShWgM",
+          "title": "6 meccanismi psicologici che tengono gli uomini soli per anni #psicologia  #uomini  #relazioni",
+          "views": 104.0,
+          "age_hours": 2190.0,
+          "vph": 0.05,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "K4DwTqVVXwU",
+          "url": "https://www.youtube.com/watch?v=K4DwTqVVXwU",
+          "title": "Cosa nota una donna matura di te nei primi 30 minuti #psicologia  #incontri  #relazioni #virale",
+          "views": 131.0,
+          "age_hours": 2920.0,
+          "vph": 0.04,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "OACBjxW38HM",
+          "url": "https://www.youtube.com/watch?v=OACBjxW38HM",
+          "title": "🔥Il segreto per costruire una relazione fantastica con la tua donna | #psicologiafemminile #consigli",
+          "views": 124.0,
+          "age_hours": 2920.0,
+          "vph": 0.04,
+          "canale_sorgente": "PsicologiaFemminile-f8c",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        }
+      ]
+    },
+    "PsicologiadellAttrazionee": {
+      "ruolo": "primaria",
+      "fetched_at": "2026-08-26T11:45:57.246415",
+      "n_totale_cache": 23,
+      "n_candidati_validi": 23,
+      "candidati": [
+        {
+          "videoId": "V8m6irmPZmM",
+          "url": "https://www.youtube.com/watch?v=V8m6irmPZmM",
+          "title": "7 segnali che sei un uomo incredibilmente attraente",
+          "views": 6800.0,
+          "age_hours": 2920.0,
+          "vph": 2.33,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "l6iiReMUTC4",
+          "url": "https://www.youtube.com/watch?v=l6iiReMUTC4",
+          "title": "6 Abilità Sociali Che Ti Rendono Incredibilmente Attraente Per Le Donne",
+          "views": 5200.0,
+          "age_hours": 2920.0,
+          "vph": 1.78,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "1nDqK1FUJgs",
+          "url": "https://www.youtube.com/watch?v=1nDqK1FUJgs",
+          "title": "Quando fa questo… l’attrazione è già presente (Non te lo dirà mai)",
+          "views": 4600.0,
+          "age_hours": 2920.0,
+          "vph": 1.58,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "parentesi",
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "8kQdIfI4MEc",
+          "url": "https://www.youtube.com/watch?v=8kQdIfI4MEc",
+          "title": "Come farle pensare a te senza inviarle nemmeno un messaggio",
+          "views": 903.0,
+          "age_hours": 730.0,
+          "vph": 1.24,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "If2X61nvDpI",
+          "url": "https://www.youtube.com/watch?v=If2X61nvDpI",
+          "title": "7 SEGNALI che lei è già ATTRATTA da te (ma non te lo dirà mai)",
+          "views": 634.0,
+          "age_hours": 672.0,
+          "vph": 0.94,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco",
+            "parentesi",
+            "comando_maiuscolo",
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "KmMx0CpFy5Y",
+          "url": "https://www.youtube.com/watch?v=KmMx0CpFy5Y",
+          "title": "7 Segnali CHIARI che lei è attratta da te… ma sta per perdere interesse",
+          "views": 1400.0,
+          "age_hours": 2920.0,
+          "vph": 0.48,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco",
+            "comando_maiuscolo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "5Dq7kG9ORFk",
+          "url": "https://www.youtube.com/watch?v=5Dq7kG9ORFk",
+          "title": "Le donne diventano dipendenti quando fai questo (senza toccarle)",
+          "views": 1300.0,
+          "age_hours": 2920.0,
+          "vph": 0.45,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "parentesi"
+          ]
+        },
+        {
+          "videoId": "7nxChZi90IA",
+          "url": "https://www.youtube.com/watch?v=7nxChZi90IA",
+          "title": "Cosa rende un uomo davvero attraente (Come diventare una calamita per le donne)",
+          "views": 1600.0,
+          "age_hours": 3650.0,
+          "vph": 0.44,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "parentesi"
+          ]
+        },
+        {
+          "videoId": "TX42B5ersPw",
+          "url": "https://www.youtube.com/watch?v=TX42B5ersPw",
+          "title": "Pensavo Di Non Essere Attraente... (Poi Ho Notato Queste 7 Cose)",
+          "views": 541.0,
+          "age_hours": 1460.0,
+          "vph": 0.37,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "parentesi"
+          ]
+        },
+        {
+          "videoId": "JowWCGsgFeI",
+          "url": "https://www.youtube.com/watch?v=JowWCGsgFeI",
+          "title": "Come Capire se una Donna è Attratta da Te (Segnali che Non Mente Mai)",
+          "views": 538.0,
+          "age_hours": 2190.0,
+          "vph": 0.25,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "parentesi",
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "RliwdVK63TQ",
+          "url": "https://www.youtube.com/watch?v=RliwdVK63TQ",
+          "title": "Come Farle Cambiare Idea Anche Se All'Inizio Non Era Interessata",
+          "views": 358.0,
+          "age_hours": 1460.0,
+          "vph": 0.25,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "QrYtxeuxZwk",
+          "url": "https://www.youtube.com/watch?v=QrYtxeuxZwk",
+          "title": "5 Segreti Psicologici che Fanno Impazzire le Donne di Te",
+          "views": 532.0,
+          "age_hours": 2190.0,
+          "vph": 0.24,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "AeR7lnC8WA4",
+          "url": "https://www.youtube.com/watch?v=AeR7lnC8WA4",
+          "title": "Stai Uccidendo l’Attrazione Senza Saperlo: (7 Errori da Evitare Ora)",
+          "views": 385.0,
+          "age_hours": 2190.0,
+          "vph": 0.18,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "parentesi"
+          ]
+        },
+        {
+          "videoId": "BRMzetoc3UE",
+          "url": "https://www.youtube.com/watch?v=BRMzetoc3UE",
+          "title": "7 segnali che ti scrive perché è gelosa (anche se non lo dirà mai)",
+          "views": 124.0,
+          "age_hours": 730.0,
+          "vph": 0.17,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "numero_secco",
+            "parentesi",
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "F35pjs9TSXw",
+          "url": "https://www.youtube.com/watch?v=F35pjs9TSXw",
+          "title": "Se Una Donna Fa Queste 3 Cose… Non Sei Solo Un Amico (Attenzione)",
+          "views": 582.0,
+          "age_hours": 3650.0,
+          "vph": 0.16,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "parentesi"
+          ]
+        },
+        {
+          "videoId": "7AdfLYdM_t4",
+          "url": "https://www.youtube.com/watch?v=7AdfLYdM_t4",
+          "title": "Tutti i segnali che indicano che una ragazza è interessata a te (ma non te lo dirà mai)",
+          "views": 309.0,
+          "age_hours": 2190.0,
+          "vph": 0.14,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "parentesi",
+            "allarme_negativo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "vG58uxZPR0w",
+          "url": "https://www.youtube.com/watch?v=vG58uxZPR0w",
+          "title": "Come farle sentire una TANTISSIMA mancanza di te",
+          "views": 376.0,
+          "age_hours": 2920.0,
+          "vph": 0.13,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "comando_maiuscolo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "K43D1U3Zyto",
+          "url": "https://www.youtube.com/watch?v=K43D1U3Zyto",
+          "title": "La chiave SEGRETA per sbloccare il cuore di una donna",
+          "views": 342.0,
+          "age_hours": 2920.0,
+          "vph": 0.12,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "kCpF7RBcd0s",
+          "url": "https://www.youtube.com/watch?v=kCpF7RBcd0s",
+          "title": "In realtà, far diventare una donna ossessionata da te è più semplice di quanto immagini",
+          "views": 401.0,
+          "age_hours": 3650.0,
+          "vph": 0.11,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "pknscQRS6_s",
+          "url": "https://www.youtube.com/watch?v=pknscQRS6_s",
+          "title": "Se Lei Fa Queste 9 Cose… Ti Pensa Molto Più di Quanto Ammette",
+          "views": 302.0,
+          "age_hours": 3650.0,
+          "vph": 0.08,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "So2J6-oBmas",
+          "url": "https://www.youtube.com/watch?v=So2J6-oBmas",
+          "title": "Come attirare una ragazza che non è interessata a te (davvero)",
+          "views": 296.0,
+          "age_hours": 3650.0,
+          "vph": 0.08,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "parentesi",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "hTcvOBwpb5I",
+          "url": "https://www.youtube.com/watch?v=hTcvOBwpb5I",
+          "title": "5 Cose che DEVI Davvero Fare per Attrarre le Donne (Senza Sembrare uno Stupido)",
+          "views": 144.0,
+          "age_hours": 2190.0,
+          "vph": 0.07,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "numero_secco",
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "9JBquV3H69Q",
+          "url": "https://www.youtube.com/watch?v=9JBquV3H69Q",
+          "title": "La tua ex sembrava perfetta… ma ti manipolava fin dall’inizio (segnali segreti)",
+          "views": 180.0,
+          "age_hours": 2920.0,
+          "vph": 0.06,
+          "canale_sorgente": "PsicologiadellAttrazionee",
+          "ruolo_canale": "primaria",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "parentesi",
+            "interpellazione_diretta"
+          ]
+        }
+      ]
+    },
+    "ciraolone": {
+      "ruolo": "escluso_fuori_nicchia",
+      "fetched_at": "2026-08-26T11:46:56.088683",
+      "n_totale_cache": 96,
+      "n_candidati_validi": 96,
+      "candidati": [
+        {
+          "videoId": "-RzPQSS3Bhw",
+          "url": "https://www.youtube.com/watch?v=-RzPQSS3Bhw",
+          "title": "KIMI K3 ✨ TUTORIAL per fare VIBE CODING con AI",
+          "views": 48000.0,
+          "age_hours": 730.0,
+          "vph": 65.75,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "UPpFfazE6J8",
+          "url": "https://www.youtube.com/watch?v=UPpFfazE6J8",
+          "title": "CLAUDE dalla A alla Z: IL CORSO PIÙ COMPLETO che troverai in giro (CHAT + COWORK + CODE)",
+          "views": 23000.0,
+          "age_hours": 730.0,
+          "vph": 31.51,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "iNeZXW29nYo",
+          "url": "https://www.youtube.com/watch?v=iNeZXW29nYo",
+          "title": "CAPCUT dalla A alla Z 🎬 CORSO COMPLETO sul VIDEO EDITOR GRATIS dove l'AI MONTA AL POSTO TUO",
+          "views": 1200.0,
+          "age_hours": 48.0,
+          "vph": 25.0,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "CYyh8HSqi24",
+          "url": "https://www.youtube.com/watch?v=CYyh8HSqi24",
+          "title": "Il mio TRAPIANTO di CAPELLI in TURCHIA 😱 I RISULTATI DOPO UN ANNO - ESTEMARK",
+          "views": 62000.0,
+          "age_hours": 4380.0,
+          "vph": 14.16,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "F24rPTsp2LI",
+          "url": "https://www.youtube.com/watch?v=F24rPTsp2LI",
+          "title": "CLAUDE CODE su VPS: il mio ASSISTENTE AI che lavora 24/7 su TELEGRAM",
+          "views": 3900.0,
+          "age_hours": 312.0,
+          "vph": 12.5,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "ycpuYGXRekU",
+          "url": "https://www.youtube.com/watch?v=ycpuYGXRekU",
+          "title": "HERMES: corso completo 🤖 L'AGENTE AI SEMPRE ACCESO che IMPARA DA SOLO!",
+          "views": 8400.0,
+          "age_hours": 730.0,
+          "vph": 11.51,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "uW4hp6YPWdc",
+          "url": "https://www.youtube.com/watch?v=uW4hp6YPWdc",
+          "title": "Corso GEMINI completo 🤖 TUTORIAL DEFINITIVO per usarlo al 100% (Gem, Canvas, Deep Research...)",
+          "views": 62000.0,
+          "age_hours": 6570.0,
+          "vph": 9.44,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "tm304La8BsA",
+          "url": "https://www.youtube.com/watch?v=tm304La8BsA",
+          "title": "OPENCLAW 🤖 CORSO COMPLETO sull'AGENTE AI che STA CAMBIANDO TUTTO",
+          "views": 20000.0,
+          "age_hours": 2190.0,
+          "vph": 9.13,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "qKgXJ30c6OI",
+          "url": "https://www.youtube.com/watch?v=qKgXJ30c6OI",
+          "title": "DAVINCI RESOLVE 🎬 Il CORSO DIVINO per MONTARE VIDEO come un NINJA 🥷",
+          "views": 40000.0,
+          "age_hours": 4380.0,
+          "vph": 9.13,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "_DD33afcNPc",
+          "url": "https://www.youtube.com/watch?v=_DD33afcNPc",
+          "title": "CLAUDE DESIGN 🤯 il CORSO COMPLETO per creare GRAFICHE, SITI, PRESENTAZIONI e PROTOTIPI!",
+          "views": 16000.0,
+          "age_hours": 2190.0,
+          "vph": 7.31,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "7jytbUcpYQE",
+          "url": "https://www.youtube.com/watch?v=7jytbUcpYQE",
+          "title": "PERPLEXITY - CORSO COMPLETO sull'AI che SA TUTTO",
+          "views": 5300.0,
+          "age_hours": 730.0,
+          "vph": 7.26,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "eus58qVxzSM",
+          "url": "https://www.youtube.com/watch?v=eus58qVxzSM",
+          "title": "COME INSTALLARE LINUX: GUIDA FACILE PER TUTTI",
+          "views": 2400.0,
+          "age_hours": 336.0,
+          "vph": 7.14,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "BLa9FkNL5a0",
+          "url": "https://www.youtube.com/watch?v=BLa9FkNL5a0",
+          "title": "CLAUDE COWORK 🤖 CORSO COMPLETO sull'AI che PUÒ FARE TUTTO!",
+          "views": 25000.0,
+          "age_hours": 3650.0,
+          "vph": 6.85,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "27e2xIEWAGA",
+          "url": "https://www.youtube.com/watch?v=27e2xIEWAGA",
+          "title": "CLAUDE CODE 👾 CORSO COMPLETO per PROGRAMMARE con AI - La RIVOLUZIONE del CODING!",
+          "views": 60000.0,
+          "age_hours": 8760.0,
+          "vph": 6.85,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "hhf-HWl0FWY",
+          "url": "https://www.youtube.com/watch?v=hhf-HWl0FWY",
+          "title": "CAPCUT in 15 MINUTI ⏱️ MONTARE VIDEO GRATIS con l'AI",
+          "views": 4700.0,
+          "age_hours": 730.0,
+          "vph": 6.44,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "XERERGHM1IA",
+          "url": "https://www.youtube.com/watch?v=XERERGHM1IA",
+          "title": "AFFINITY by CANVA 🤯 CORSO COMPLETO sulla più INCREDIBILE alternativa a PHOTOSHOP e ILLUSTRATOR",
+          "views": 38000.0,
+          "age_hours": 6570.0,
+          "vph": 5.78,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "uGx4VMjrNF0",
+          "url": "https://www.youtube.com/watch?v=uGx4VMjrNF0",
+          "title": "OLLAMA 🤯 INTELLIGENZA ARTIFICIALE GRATIS sul TUO COMPUTER - CORSO COMPLETO per tutti",
+          "views": 21000.0,
+          "age_hours": 3650.0,
+          "vph": 5.75,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "SMd35VhyG3E",
+          "url": "https://www.youtube.com/watch?v=SMd35VhyG3E",
+          "title": "DOCKER per TUTTI 🐳 Costruisci il tuo HOME SERVER da ZERO, GRATIS!",
+          "views": 16000.0,
+          "age_hours": 3650.0,
+          "vph": 4.38,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "2G15OeaOUsY",
+          "url": "https://www.youtube.com/watch?v=2G15OeaOUsY",
+          "title": "OBS STUDIO 📽️ il CORSO DEFINITIVO per REGISTRARE VIDEO e LIVE STREAMING!",
+          "views": 5900.0,
+          "age_hours": 1460.0,
+          "vph": 4.04,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "Y0T2R9Q7YeQ",
+          "url": "https://www.youtube.com/watch?v=Y0T2R9Q7YeQ",
+          "title": "LM STUDIO: l'AI sul TUO COMPUTER, GRATIS e PRIVATA - CORSO COMPLETO",
+          "views": 5700.0,
+          "age_hours": 1460.0,
+          "vph": 3.9,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "xl5kGbGflA8",
+          "url": "https://www.youtube.com/watch?v=xl5kGbGflA8",
+          "title": "SUNO 📻 FARE MUSICA CON AI - Corso Completo + Tricks",
+          "views": 29000.0,
+          "age_hours": 8030.0,
+          "vph": 3.61,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "1yzwzcnU8do",
+          "url": "https://www.youtube.com/watch?v=1yzwzcnU8do",
+          "title": "VISUAL STUDIO CODE: il CORSO COMPLETO anche se NON sai PROGRAMMARE 👨‍💻",
+          "views": 25000.0,
+          "age_hours": 7300.0,
+          "vph": 3.42,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "SQiCfL75okI",
+          "url": "https://www.youtube.com/watch?v=SQiCfL75okI",
+          "title": "Creare WEB APP con l'INTELLIGENZA ARTIFICIALE in 30 MINUTI (e puoi venderla!)",
+          "views": 4900.0,
+          "age_hours": 1460.0,
+          "vph": 3.36,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "8K28c2cog48",
+          "url": "https://www.youtube.com/watch?v=8K28c2cog48",
+          "title": "NOTEBOOK LM 🧠 Corso Completo all'IA di Google che ESTENDE il tuo Cervello",
+          "views": 16000.0,
+          "age_hours": 5110.0,
+          "vph": 3.13,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "YemB4Abi7Pk",
+          "url": "https://www.youtube.com/watch?v=YemB4Abi7Pk",
+          "title": "CLAUDE CODE 2.0: come creare un'app da ZERO (Guida COMPLETA) 🚀",
+          "views": 22000.0,
+          "age_hours": 7300.0,
+          "vph": 3.01,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "SjUfAyFhZag",
+          "url": "https://www.youtube.com/watch?v=SjUfAyFhZag",
+          "title": "CREARE un AGENTE VOCALE AI che RISPONDE AL TELEFONO 📞 24 ORE SU 24",
+          "views": 2000.0,
+          "age_hours": 672.0,
+          "vph": 2.98,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "uLPRSzsr62U",
+          "url": "https://www.youtube.com/watch?v=uLPRSzsr62U",
+          "title": "CHAT-GPT 🤖 CORSO COMPLETO - TUTTE le FUNZIONI in un UNICO VIDEO!!",
+          "views": 17000.0,
+          "age_hours": 5840.0,
+          "vph": 2.91,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "hh4Y2dKC2Z0",
+          "url": "https://www.youtube.com/watch?v=hh4Y2dKC2Z0",
+          "title": "Crea SITI e APP VERI con l'AI (anche GRATIS) - Tutorial Sticklight by Elementor",
+          "views": 1900.0,
+          "age_hours": 730.0,
+          "vph": 2.6,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "VE07twVKToQ",
+          "url": "https://www.youtube.com/watch?v=VE07twVKToQ",
+          "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
+          "views": 5300.0,
+          "age_hours": 2190.0,
+          "vph": 2.42,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "Q6DRwMdTnvM",
+          "url": "https://www.youtube.com/watch?v=Q6DRwMdTnvM",
+          "title": "TODOIST e il mio VERO METODO per ORGANIZZARE TUTTO (To-do list ADHD friendly)",
+          "views": 3400.0,
+          "age_hours": 1460.0,
+          "vph": 2.33,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "m-wKv8dBf6A",
+          "url": "https://www.youtube.com/watch?v=m-wKv8dBf6A",
+          "title": "BLACKMAGIC CAMERA 📽️ Trasforma il TELEFONO in una CINEPRESA professionale!",
+          "views": 11000.0,
+          "age_hours": 5110.0,
+          "vph": 2.15,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "7GygCE7SkA0",
+          "url": "https://www.youtube.com/watch?v=7GygCE7SkA0",
+          "title": "NOTION per TUTTI 🤓 CORSO COMPLETO per il LAVORO e la VITA!",
+          "views": 16000.0,
+          "age_hours": 8030.0,
+          "vph": 1.99,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "d6olCYdtpBA",
+          "url": "https://www.youtube.com/watch?v=d6olCYdtpBA",
+          "title": "TUTTI I (100+) PROGRAMMI INSTALLATI SUL MIO COMPUTER",
+          "views": 4200.0,
+          "age_hours": 2190.0,
+          "vph": 1.92,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "JaGGndt3nP4",
+          "url": "https://www.youtube.com/watch?v=JaGGndt3nP4",
+          "title": "Come INSTALLARE DAVINCI RESOLVE (GRATIS) sul computer",
+          "views": 16000.0,
+          "age_hours": 8760.0,
+          "vph": 1.83,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "i39PFvoCmYc",
+          "url": "https://www.youtube.com/watch?v=i39PFvoCmYc",
+          "title": "ELEVENLABS: CORSO COMPLETO per creare la tua VOCE AI (e farci video e podcast)",
+          "views": 2600.0,
+          "age_hours": 1460.0,
+          "vph": 1.78,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "QDyIKMUSd7s",
+          "url": "https://www.youtube.com/watch?v=QDyIKMUSd7s",
+          "title": "Come FORMATTARE e INSTALLARE WINDOWS 11 💾 da ZERO col METODO GIUSTO",
+          "views": 3900.0,
+          "age_hours": 2190.0,
+          "vph": 1.78,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "n9Ym0bonK1M",
+          "url": "https://www.youtube.com/watch?v=n9Ym0bonK1M",
+          "title": "CREA e VENDI un AGENTE VOCALE AI 📞 (TELEFONA DA SOLO!)",
+          "views": 5000.0,
+          "age_hours": 2920.0,
+          "vph": 1.71,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "zJLVGfqOnVo",
+          "url": "https://www.youtube.com/watch?v=zJLVGfqOnVo",
+          "title": "GPT-OSS 😱 CHAT-GPT adesso gira GRATIS sul computer (tutorial OLLAMA + LM Studio)",
+          "views": 14000.0,
+          "age_hours": 8760.0,
+          "vph": 1.6,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "mhi2srCIMrY",
+          "url": "https://www.youtube.com/watch?v=mhi2srCIMrY",
+          "title": "Come scegliere l'HOSTING MIGLIORE per il TUO SITO",
+          "views": 775.0,
+          "age_hours": 504.0,
+          "vph": 1.54,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "lZXkC318vnM",
+          "url": "https://www.youtube.com/watch?v=lZXkC318vnM",
+          "title": "PHOTOSHOP per TUTTI 🥷 2025: da ZERO a PRO col CORSO DEFINITIVO",
+          "views": 13000.0,
+          "age_hours": 8760.0,
+          "vph": 1.48,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "y-slBTplPjw",
+          "url": "https://www.youtube.com/watch?v=y-slBTplPjw",
+          "title": "N8N in 20 MINUTI ⚡ La TUA prima AUTOMAZIONE pronta SUBITO!",
+          "views": 2000.0,
+          "age_hours": 1460.0,
+          "vph": 1.37,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "lpNgYdlf_YA",
+          "url": "https://www.youtube.com/watch?v=lpNgYdlf_YA",
+          "title": "Come CREARE UN AGENTE AI 🆘 da zero, senza programmare",
+          "views": 9400.0,
+          "age_hours": 7300.0,
+          "vph": 1.29,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "Rwy44gWV5fU",
+          "url": "https://www.youtube.com/watch?v=Rwy44gWV5fU",
+          "title": "CREARE un SITO da ZERO con INTELLIGENZA ARTIFICIALE, senza abbonamenti! [Tutorial Website X5 + AI]",
+          "views": 7300.0,
+          "age_hours": 5840.0,
+          "vph": 1.25,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "jMG_gq4yQTY",
+          "url": "https://www.youtube.com/watch?v=jMG_gq4yQTY",
+          "title": "MCP + Claude 💥 Controlla TUTTO con l'INTELLIGENZA ARTIFICIALE",
+          "views": 10000.0,
+          "age_hours": 8030.0,
+          "vph": 1.25,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "9rQE15H5Mmk",
+          "url": "https://www.youtube.com/watch?v=9rQE15H5Mmk",
+          "title": "I nuovi AGENTI di NOTION lavorano AL POSTO TUO (anche a PC spento)",
+          "views": 1800.0,
+          "age_hours": 1460.0,
+          "vph": 1.23,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "b-PxFjusGKM",
+          "url": "https://www.youtube.com/watch?v=b-PxFjusGKM",
+          "title": "WORDPRESS sul COMPUTER 💾 (ovviamente GRATIS) con LOCAL!",
+          "views": 3600.0,
+          "age_hours": 2920.0,
+          "vph": 1.23,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "m_By_Z4tX_M",
+          "url": "https://www.youtube.com/watch?v=m_By_Z4tX_M",
+          "title": "Usa GMAIL come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
+          "views": 6300.0,
+          "age_hours": 5110.0,
+          "vph": 1.23,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "z0uBxIpFcTE",
+          "url": "https://www.youtube.com/watch?v=z0uBxIpFcTE",
+          "title": "FINALMENTE le BASI in OBSIDIAN 💣 Ciao ciao NOTION! 👋",
+          "views": 9500.0,
+          "age_hours": 8030.0,
+          "vph": 1.18,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "TB2x-Xxs0_Q",
+          "url": "https://www.youtube.com/watch?v=TB2x-Xxs0_Q",
+          "title": "Le API di CHAT-GPT 🐝 GUIDA FACILE per SBLOCCARE la VERA POTENZA dell'AI",
+          "views": 8500.0,
+          "age_hours": 7300.0,
+          "vph": 1.16,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "smZ1sJShhoo",
+          "url": "https://www.youtube.com/watch?v=smZ1sJShhoo",
+          "title": "Come CREARE un BOT TELEGRAM 🤖",
+          "views": 7300.0,
+          "age_hours": 6570.0,
+          "vph": 1.11,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "piCQm0GvDF0",
+          "url": "https://www.youtube.com/watch?v=piCQm0GvDF0",
+          "title": "PRESENTAZIONI con CANVA GRATIS 🎨 CORSO COMPLETO per TUTTI",
+          "views": 3200.0,
+          "age_hours": 2920.0,
+          "vph": 1.1,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "Q623fJEPvYo",
+          "url": "https://www.youtube.com/watch?v=Q623fJEPvYo",
+          "title": "Usa OUTLOOK come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
+          "views": 5400.0,
+          "age_hours": 5110.0,
+          "vph": 1.06,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "te-TTC3L_dU",
+          "url": "https://www.youtube.com/watch?v=te-TTC3L_dU",
+          "title": "HTML e CSS 👾 84 MINUTI per IMPARARLI da ZERO",
+          "views": 6100.0,
+          "age_hours": 5840.0,
+          "vph": 1.04,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "fvcye5DovP0",
+          "url": "https://www.youtube.com/watch?v=fvcye5DovP0",
+          "title": "RITOCCO FOTOGRAFICO FACILE e VELOCE con LUMINAR NEO 📸 FOTO PROFESSIONALI con AI",
+          "views": 1500.0,
+          "age_hours": 1460.0,
+          "vph": 1.03,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "O6LufsxEbcU",
+          "url": "https://www.youtube.com/watch?v=O6LufsxEbcU",
+          "title": "ADOBE ILLUSTRATOR - CORSO COMPLETO per creare GRAFICHE VETTORIALI DA ZERO (disegnamo un logo)",
+          "views": 4300.0,
+          "age_hours": 4380.0,
+          "vph": 0.98,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "9WCluVZLR-I",
+          "url": "https://www.youtube.com/watch?v=9WCluVZLR-I",
+          "title": "ADOBE INDESIGN - CORSO COMPLETO per IMPAGINARE BENE e VELOCEMENTE (facciamo un pieghevole)",
+          "views": 3500.0,
+          "age_hours": 3650.0,
+          "vph": 0.96,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "IC1V5u2YDzU",
+          "url": "https://www.youtube.com/watch?v=IC1V5u2YDzU",
+          "title": "NODE.JS per PERSONE NORMALI 🥷 Metti il turbo ai tuoi script anche se NON SAI PROGRAMMARE!",
+          "views": 7200.0,
+          "age_hours": 8030.0,
+          "vph": 0.9,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "rQzRbf4u6Kg",
+          "url": "https://www.youtube.com/watch?v=rQzRbf4u6Kg",
+          "title": "Imposto OBS di Paolo Coletti [TUTORIAL SETUP OBS STUDIO]",
+          "views": 4500.0,
+          "age_hours": 5110.0,
+          "vph": 0.88,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "ScDauFE4G0Q",
+          "url": "https://www.youtube.com/watch?v=ScDauFE4G0Q",
+          "title": "ELEMENTOR 🚀 CORSO COMPLETO per creare un SITO WORDPRESS da ZERO!! [ Anche con AI ]",
+          "views": 3800.0,
+          "age_hours": 4380.0,
+          "vph": 0.87,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "2-qotvLU_LE",
+          "url": "https://www.youtube.com/watch?v=2-qotvLU_LE",
+          "title": "FFMPEG 🎬 INSTALLARE e USARE il più POTENTE tool per i VIDEO al mondo!",
+          "views": 6800.0,
+          "age_hours": 8030.0,
+          "vph": 0.85,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "hiClKwWGzcU",
+          "url": "https://www.youtube.com/watch?v=hiClKwWGzcU",
+          "title": "API 😱 Collega TUTTE le AI ai tuoi TOOL - CORSO COMPLETO",
+          "views": 6600.0,
+          "age_hours": 8030.0,
+          "vph": 0.82,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "Zroe6lCMmvU",
+          "url": "https://www.youtube.com/watch?v=Zroe6lCMmvU",
+          "title": "AFFINITY: RIMUOVERE lo SFONDO (GRATIS) vs CANVA AI (VELOCE)",
+          "views": 4700.0,
+          "age_hours": 5840.0,
+          "vph": 0.8,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "uUVyzS6YoXk",
+          "url": "https://www.youtube.com/watch?v=uUVyzS6YoXk",
+          "title": "Come funziona IL TERMINALE del COMPUTER 🖥️ Se non sei esperto!",
+          "views": 6400.0,
+          "age_hours": 8030.0,
+          "vph": 0.8,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "iA_tVzJhFYQ",
+          "url": "https://www.youtube.com/watch?v=iA_tVzJhFYQ",
+          "title": "DATABASE NOTION 📊 CORSO AVANZATO per DOMARLI SENZA PAURA",
+          "views": 6300.0,
+          "age_hours": 8030.0,
+          "vph": 0.78,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "lkmL74sEcUw",
+          "url": "https://www.youtube.com/watch?v=lkmL74sEcUw",
+          "title": "LOGITECH MX MASTER 🎯 Il mio MOUSE per la PRODUTTIVITÀ",
+          "views": 3300.0,
+          "age_hours": 4380.0,
+          "vph": 0.75,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "PJzsN4OQFdo",
+          "url": "https://www.youtube.com/watch?v=PJzsN4OQFdo",
+          "title": "TUTTE LE AI IN UN POSTO SOLO 🤯 (Tutorial ChatLLM)",
+          "views": 6600.0,
+          "age_hours": 8760.0,
+          "vph": 0.75,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "tCqfQMlFXA8",
+          "url": "https://www.youtube.com/watch?v=tCqfQMlFXA8",
+          "title": "AFFINITY AI: HO TESTATO TUTTE le funzioni CANVA di Intelligenza Artificiale (Vale i soldi?)",
+          "views": 4900.0,
+          "age_hours": 6570.0,
+          "vph": 0.75,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "eyFCHNu0BhM",
+          "url": "https://www.youtube.com/watch?v=eyFCHNu0BhM",
+          "title": "Le API di GEMINI 🐝 GUIDA PASSO-PASSO per DOMINARE la VERA FORZA dell'AI",
+          "views": 5200.0,
+          "age_hours": 7300.0,
+          "vph": 0.71,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "PAox-zowrPk",
+          "url": "https://www.youtube.com/watch?v=PAox-zowrPk",
+          "title": "OTTIMIZZARE DAVINCI RESOLVE per COMPUTER VECCHI o meno potenti 👴",
+          "views": 6200.0,
+          "age_hours": 8760.0,
+          "vph": 0.71,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "2tXe8BJemyA",
+          "url": "https://www.youtube.com/watch?v=2tXe8BJemyA",
+          "title": "ANGIE ✨ L'AI di ELEMENTOR che lavora DENTRO WORDPRESS!",
+          "views": 1000.0,
+          "age_hours": 1460.0,
+          "vph": 0.68,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "r2HbQIEgVHE",
+          "url": "https://www.youtube.com/watch?v=r2HbQIEgVHE",
+          "title": "Come FACCIO FARE all'AI quello che DICO IO! 😠",
+          "views": 5400.0,
+          "age_hours": 8030.0,
+          "vph": 0.67,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "yQsQ_NzWOMw",
+          "url": "https://www.youtube.com/watch?v=yQsQ_NzWOMw",
+          "title": "PRESENTAZIONI DI GOOGLE: il corso per fare SLIDE PERFETTE (Gemini + Nano Banana)",
+          "views": 2800.0,
+          "age_hours": 4380.0,
+          "vph": 0.64,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "3Srnjvqq2FI",
+          "url": "https://www.youtube.com/watch?v=3Srnjvqq2FI",
+          "title": "Come INSTALLARE CANVA sul COMPUTER 💻 e perché dovresti farlo!",
+          "views": 4200.0,
+          "age_hours": 6570.0,
+          "vph": 0.64,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "EGu_XtwfeTc",
+          "url": "https://www.youtube.com/watch?v=EGu_XtwfeTc",
+          "title": "AI per YOUTUBER 🤖 Come usiamo ChatGPT e Gemini per creare VIDEO",
+          "views": 3600.0,
+          "age_hours": 5840.0,
+          "vph": 0.62,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "fPdpAwD1KtU",
+          "url": "https://www.youtube.com/watch?v=fPdpAwD1KtU",
+          "title": "Le API di CLAUDE 🐝 GUIDA FACILE per SBLOCCARE la VERA POTENZA dell'AI",
+          "views": 4300.0,
+          "age_hours": 7300.0,
+          "vph": 0.59,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "gkcW0RVr8k4",
+          "url": "https://www.youtube.com/watch?v=gkcW0RVr8k4",
+          "title": "PHOTOSHOP - CORSO COMPLETO per la GRAFICA e il FOTORITOCCO (dalle basi al progetto finale!)",
+          "views": 2100.0,
+          "age_hours": 3650.0,
+          "vph": 0.58,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "7KGGXPH58jQ",
+          "url": "https://www.youtube.com/watch?v=7KGGXPH58jQ",
+          "title": "La mia NUOVA FOTOCAMERA e il SETUP di REGISTRAZIONE 📷 BLACKMAGIC MICRO STUDIO CAMERA 4K G2",
+          "views": 2100.0,
+          "age_hours": 3650.0,
+          "vph": 0.58,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "7UxZgkVslWk",
+          "url": "https://www.youtube.com/watch?v=7UxZgkVslWk",
+          "title": "Imposto la fotocamera di Paolo Coletti [GUIDA SETUP Sony + Scheda di Acquisizione]",
+          "views": 3300.0,
+          "age_hours": 5840.0,
+          "vph": 0.57,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "GqV87iZdF7Q",
+          "url": "https://www.youtube.com/watch?v=GqV87iZdF7Q",
+          "title": "I 5 NODI N8N più USATI (e UTILI!) 😲",
+          "views": 3700.0,
+          "age_hours": 6570.0,
+          "vph": 0.56,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "t4tVGvDvFeI",
+          "url": "https://www.youtube.com/watch?v=t4tVGvDvFeI",
+          "title": "7 TOOL per ADHD",
+          "views": 4000.0,
+          "age_hours": 7300.0,
+          "vph": 0.55,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "eNjWkogHa3Y",
+          "url": "https://www.youtube.com/watch?v=eNjWkogHa3Y",
+          "title": "LUMINAR NEO 📸 FOTORITOCCO GRANDIOSO con INTELLIGENZA ARTIFICIALE facile e veloce",
+          "views": 3500.0,
+          "age_hours": 6570.0,
+          "vph": 0.53,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "pXFMxbutp24",
+          "url": "https://www.youtube.com/watch?v=pXFMxbutp24",
+          "title": "Scopriamo l'ATTREZZATURA di SARA TRECATE per FARE VIDEO 📽️ STUDIO TOUR",
+          "views": 3000.0,
+          "age_hours": 5840.0,
+          "vph": 0.51,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "WkcyAfNlgtg",
+          "url": "https://www.youtube.com/watch?v=WkcyAfNlgtg",
+          "title": "ADOBE EXPRESS - Alternativa POTENTE a CANVA per fare GRAFICA e VIDEO ONLINE (animiamo un logo)",
+          "views": 1800.0,
+          "age_hours": 3650.0,
+          "vph": 0.49,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "Kx2ELhIwsbg",
+          "url": "https://www.youtube.com/watch?v=Kx2ELhIwsbg",
+          "title": "Le API di GROQ (AI) sono GRATIS 🐝 GUIDA ESSENZIALE per RISPARMIARE con l'AI",
+          "views": 3200.0,
+          "age_hours": 6570.0,
+          "vph": 0.49,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "fVAj-swXtA4",
+          "url": "https://www.youtube.com/watch?v=fVAj-swXtA4",
+          "title": "NOTION AI 🤖 CORSO FINALE per AUTOMATIZZARE TUTTO con l'INTELLIGENZA ARTIFICIALE",
+          "views": 3800.0,
+          "age_hours": 8030.0,
+          "vph": 0.47,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "c-aU4k8W6jo",
+          "url": "https://www.youtube.com/watch?v=c-aU4k8W6jo",
+          "title": "WOW 💥 Caricare AUDIO e VIDEO in GEMINI",
+          "views": 3800.0,
+          "age_hours": 8030.0,
+          "vph": 0.47,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "C6O6YBh-Zcc",
+          "url": "https://www.youtube.com/watch?v=C6O6YBh-Zcc",
+          "title": "N8N ONLINE sul tuo CLOUD ☁️ AUTOMAZIONI con AI a BASSO COSTO!",
+          "views": 3700.0,
+          "age_hours": 8030.0,
+          "vph": 0.46,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "eaMPP_F4p-E",
+          "url": "https://www.youtube.com/watch?v=eaMPP_F4p-E",
+          "title": "PDFelement ⚡ l'IA che RIASSUME, TRADUCE e CONVERTE i tuoi PDF",
+          "views": 2800.0,
+          "age_hours": 6570.0,
+          "vph": 0.43,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "FZ0UzTnSd-k",
+          "url": "https://www.youtube.com/watch?v=FZ0UzTnSd-k",
+          "title": "Questo Tool AI ti fa PROGRAMMARE e CHATTARE (nello stesso posto) - DeepAgent Desktop + ChatLLM",
+          "views": 3100.0,
+          "age_hours": 7300.0,
+          "vph": 0.42,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "8BnMrwnY2-k",
+          "url": "https://www.youtube.com/watch?v=8BnMrwnY2-k",
+          "title": "Come CREARE UN AGENTE AI su TELEGRAM 🤯",
+          "views": 2600.0,
+          "age_hours": 6570.0,
+          "vph": 0.4,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "plpiC_qgBwA",
+          "url": "https://www.youtube.com/watch?v=plpiC_qgBwA",
+          "title": "Aggiungi la MUSICA a un VIDEO in 1 minuto 🎵 GRATIS con VLC!",
+          "views": 3400.0,
+          "age_hours": 8760.0,
+          "vph": 0.39,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "FXnK4QLoPBE",
+          "url": "https://www.youtube.com/watch?v=FXnK4QLoPBE",
+          "title": "Ho provato 19 AI PER FARE SITI e queste sono LE MIGLIORI...",
+          "views": 3300.0,
+          "age_hours": 8760.0,
+          "vph": 0.38,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "_rx777uRhFU",
+          "url": "https://www.youtube.com/watch?v=_rx777uRhFU",
+          "title": "Come INSTALLARE AFFINITY 3 by CANVA GRATIS 💻 GUIDA COMPLETA anti-errore",
+          "views": 2000.0,
+          "age_hours": 5840.0,
+          "vph": 0.34,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "yLWFNrhS0Ho",
+          "url": "https://www.youtube.com/watch?v=yLWFNrhS0Ho",
+          "title": "5 PLUGIN AI per WORDPRESS che fanno IL LAVORO SPORCO al posto TUO! 🤯",
+          "views": 2200.0,
+          "age_hours": 6570.0,
+          "vph": 0.33,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "4hBLTvJOaaQ",
+          "url": "https://www.youtube.com/watch?v=4hBLTvJOaaQ",
+          "title": "Aggiungi i SOTTOTITOLI ai tuoi VIDEO, GRATIS con VLC 🍿",
+          "views": 2600.0,
+          "age_hours": 8760.0,
+          "vph": 0.3,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "JwQwg7pQLXA",
+          "url": "https://www.youtube.com/watch?v=JwQwg7pQLXA",
+          "title": "DAVINCI RESOLVE 🔴 caricare i video SU YOUTUBE, automaticamente e maledettamente bene!",
+          "views": 2000.0,
+          "age_hours": 8030.0,
+          "vph": 0.25,
+          "canale_sorgente": "ciraolone",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        }
+      ]
+    },
+    "codicedonna": {
+      "ruolo": "riserva_campione_piccolo",
+      "fetched_at": "2026-08-26T11:48:03.912141",
+      "n_totale_cache": 3,
+      "n_candidati_validi": 3,
+      "candidati": [
+        {
+          "videoId": "nz7x8MXmTZg",
+          "url": "https://www.youtube.com/watch?v=nz7x8MXmTZg",
+          "title": "Se una Donna Tocca Qui… Non È Amicizia",
+          "views": 21.0,
+          "age_hours": 3650.0,
+          "vph": 0.01,
+          "canale_sorgente": "codicedonna",
+          "ruolo_canale": "riserva_campione_piccolo",
+          "schemi_titolo": [
+            "genere_esplicito"
+          ]
+        },
+        {
+          "videoId": "Avu5oh5AGTQ",
+          "url": "https://www.youtube.com/watch?v=Avu5oh5AGTQ",
+          "title": "7 Segnali Segreti che una Donna Nasconde Quando Ti Desidera",
+          "views": 8.0,
+          "age_hours": 3650.0,
+          "vph": 0.0,
+          "canale_sorgente": "codicedonna",
+          "ruolo_canale": "riserva_campione_piccolo",
+          "schemi_titolo": [
+            "segnali_espliciti",
+            "genere_esplicito",
+            "numero_secco",
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "-poAwQhM-zQ",
+          "url": "https://www.youtube.com/watch?v=-poAwQhM-zQ",
+          "title": "Se una Donna Fa Questo… Ti Sta Testando (Ma Nessuno Te Lo Dice)",
+          "views": 2.0,
+          "age_hours": 3650.0,
+          "vph": 0.0,
+          "canale_sorgente": "codicedonna",
+          "ruolo_canale": "riserva_campione_piccolo",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "parentesi",
+            "interpellazione_diretta"
+          ]
+        }
+      ]
+    },
+    "linguaggiosegretodelcorpo-6589": {
+      "ruolo": "escluso_fuori_nicchia",
+      "fetched_at": "2026-08-26T11:47:32.179768",
+      "n_totale_cache": 58,
+      "n_candidati_validi": 58,
+      "candidati": [
+        {
+          "videoId": "DMHAZuec8Fs",
+          "url": "https://www.youtube.com/watch?v=DMHAZuec8Fs",
+          "title": "1a lezione di valzer",
+          "views": 9800.0,
+          "age_hours": 87600.0,
+          "vph": 0.11,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "FdJLyPatfWU",
+          "url": "https://www.youtube.com/watch?v=FdJLyPatfWU",
+          "title": "\"La voce verde della calma\" di Ciro Imparato.",
+          "views": 734.0,
+          "age_hours": 70080.0,
+          "vph": 0.01,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "dATOuWStL0Y",
+          "url": "https://www.youtube.com/watch?v=dATOuWStL0Y",
+          "title": "8 mesi di gravidanza e tango",
+          "views": 260.0,
+          "age_hours": 61320.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "LF-SKdzLkwc",
+          "url": "https://www.youtube.com/watch?v=LF-SKdzLkwc",
+          "title": "Cosa ti piace di più di Arthur Murray?",
+          "views": 332.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "5nPfrbswTRY",
+          "url": "https://www.youtube.com/watch?v=5nPfrbswTRY",
+          "title": "Giuliano Scarpati presenta Arthur Murray",
+          "views": 325.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "81ZuKWWUneo",
+          "url": "https://www.youtube.com/watch?v=81ZuKWWUneo",
+          "title": "Come leggere 52 libri in un anno",
+          "views": 259.0,
+          "age_hours": 70080.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "mCv-yJ3xRjI",
+          "url": "https://www.youtube.com/watch?v=mCv-yJ3xRjI",
+          "title": "SUPER SHOWCASE ARTHUR MURRAY FIRENZE 2016",
+          "views": 313.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "L86u8YWGa6Q",
+          "url": "https://www.youtube.com/watch?v=L86u8YWGa6Q",
+          "title": "Arthur Murray Buonasera - Gabriele Paperini",
+          "views": 313.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "N9L13zrqpHs",
+          "url": "https://www.youtube.com/watch?v=N9L13zrqpHs",
+          "title": "Le sorelle bandiera all'Arthur Murray Firenze",
+          "views": 290.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "7EKW2BxdBr8",
+          "url": "https://www.youtube.com/watch?v=7EKW2BxdBr8",
+          "title": "Come essere più simpatico e piacere nei primi 5 secondi",
+          "views": 195.0,
+          "age_hours": 70080.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "mYYIeGckR6s",
+          "url": "https://www.youtube.com/watch?v=mYYIeGckR6s",
+          "title": "SUPER SHOWCASE ARTHUR MURRAY FIRENZE 2016",
+          "views": 233.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "bWW3h5KQzPg",
+          "url": "https://www.youtube.com/watch?v=bWW3h5KQzPg",
+          "title": "Johnny è un maestro Arthur Murray",
+          "views": 229.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "mT60INN7GKk",
+          "url": "https://www.youtube.com/watch?v=mT60INN7GKk",
+          "title": "OIDT FIRENZE 2016",
+          "views": 215.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "bJ7W-WiiKHY",
+          "url": "https://www.youtube.com/watch?v=bJ7W-WiiKHY",
+          "title": "4 modi per scegliere una biografia da leggere",
+          "views": 135.0,
+          "age_hours": 61320.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "OOUwQfeVn0s",
+          "url": "https://www.youtube.com/watch?v=OOUwQfeVn0s",
+          "title": "Giuliano Scarpati presenta il blog Arthur Murray Italia",
+          "views": 166.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "IGISbvQYnJU",
+          "url": "https://www.youtube.com/watch?v=IGISbvQYnJU",
+          "title": "Paperissima Arthur Murray",
+          "views": 155.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "U17bqPl7XZA",
+          "url": "https://www.youtube.com/watch?v=U17bqPl7XZA",
+          "title": "\"Solo applausi\" di Ciro Imparato.",
+          "views": 117.0,
+          "age_hours": 70080.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "HToWukfDJC8",
+          "url": "https://www.youtube.com/watch?v=HToWukfDJC8",
+          "title": "DANCING IN CIAO AMORE DOR",
+          "views": 158.0,
+          "age_hours": 96360.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "wW1tn0Zi4hw",
+          "url": "https://www.youtube.com/watch?v=wW1tn0Zi4hw",
+          "title": "Libri suggeriti di PNL (Programmazione Neuro Linguistica), e cosa potresti imparare",
+          "views": 98.0,
+          "age_hours": 61320.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "parentesi",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "2hbEy39LcmU",
+          "url": "https://www.youtube.com/watch?v=2hbEy39LcmU",
+          "title": "Benvenuto Arthur Murray",
+          "views": 139.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "X3Fpc8i4FeA",
+          "url": "https://www.youtube.com/watch?v=X3Fpc8i4FeA",
+          "title": "TV PASSIONI TOSCANATV",
+          "views": 149.0,
+          "age_hours": 96360.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "KwSEYOsQ1kc",
+          "url": "https://www.youtube.com/watch?v=KwSEYOsQ1kc",
+          "title": "Open International Dance Tour, American Style",
+          "views": 110.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "F0_Yq0cUn9g",
+          "url": "https://www.youtube.com/watch?v=F0_Yq0cUn9g",
+          "title": "Eventi Arthur Murray. Wow!",
+          "views": 107.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "n-hrdXreveo",
+          "url": "https://www.youtube.com/watch?v=n-hrdXreveo",
+          "title": "Open International Dance Tour per tutti i livelli",
+          "views": 104.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "c761HF-P87Y",
+          "url": "https://www.youtube.com/watch?v=c761HF-P87Y",
+          "title": "Ice Bucket Challenge Florence Italy september 2014 Piazza della Signoria",
+          "views": 113.0,
+          "age_hours": 96360.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "5v8OCe9dyxk",
+          "url": "https://www.youtube.com/watch?v=5v8OCe9dyxk",
+          "title": "Open International Dance Festival per tutte le età",
+          "views": 101.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "f_teXqYRmJY",
+          "url": "https://www.youtube.com/watch?v=f_teXqYRmJY",
+          "title": "Simpatia: come piacere al primo sguardo grazie al ballo",
+          "views": 76.0,
+          "age_hours": 70080.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "ZEyS28mEhQE",
+          "url": "https://www.youtube.com/watch?v=ZEyS28mEhQE",
+          "title": "OIDT 2016 FIRENZE",
+          "views": 95.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "HlwfJTFIM6o",
+          "url": "https://www.youtube.com/watch?v=HlwfJTFIM6o",
+          "title": "Giuliano Scarpati racconta il SUPERAMA a Las Vegas",
+          "views": 92.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "lVEQA7DGQHU",
+          "url": "https://www.youtube.com/watch?v=lVEQA7DGQHU",
+          "title": "L'errore più diffuso nella comunicazione tra uomini e donne. E come evitarlo",
+          "views": 64.0,
+          "age_hours": 61320.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "genere_esplicito",
+            "allarme_negativo"
+          ]
+        },
+        {
+          "videoId": "K2XJorfy9Mc",
+          "url": "https://www.youtube.com/watch?v=K2XJorfy9Mc",
+          "title": "Leadership: le 4 emozioni che distinguono i leader grazie al ballo",
+          "views": 72.0,
+          "age_hours": 70080.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "1iYDzRBlEGU",
+          "url": "https://www.youtube.com/watch?v=1iYDzRBlEGU",
+          "title": "Autorevolezza: come essere più credibili grazie al ballo",
+          "views": 70.0,
+          "age_hours": 70080.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "POk_OVlR3oM",
+          "url": "https://www.youtube.com/watch?v=POk_OVlR3oM",
+          "title": "Come il ballo ha cambiato la tua vita",
+          "views": 93.0,
+          "age_hours": 96360.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "-5jblPCV7Aw",
+          "url": "https://www.youtube.com/watch?v=-5jblPCV7Aw",
+          "title": "CIAO AMORE DOR. 1a serata romana: spettacolare!",
+          "views": 92.0,
+          "age_hours": 96360.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "uJseKkR-9oE",
+          "url": "https://www.youtube.com/watch?v=uJseKkR-9oE",
+          "title": "La legge dell'attrazione | Cos'è e come usarla | Giuliano Scarpati",
+          "views": 53.0,
+          "age_hours": 61320.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "JKsqL8TPyAc",
+          "url": "https://www.youtube.com/watch?v=JKsqL8TPyAc",
+          "title": "La lezione della salamandra  per l'efficacia personale",
+          "views": 53.0,
+          "age_hours": 70080.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "hdiL9RF6fH0",
+          "url": "https://www.youtube.com/watch?v=hdiL9RF6fH0",
+          "title": "19 06 RTV38   BALLANDO CON IL CUORE  CONTRO LA SLA",
+          "views": 69.0,
+          "age_hours": 96360.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "k79ElU3gJE4",
+          "url": "https://www.youtube.com/watch?v=k79ElU3gJE4",
+          "title": "Barbara D'Urso e i segreti del suo linguaggio del corpo",
+          "views": 41.0,
+          "age_hours": 61320.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "-Ax9Xn-5Bik",
+          "url": "https://www.youtube.com/watch?v=-Ax9Xn-5Bik",
+          "title": "Empatia: come capire ed essere capiti grazie al ballo",
+          "views": 45.0,
+          "age_hours": 70080.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "xRn2ULuwRTs",
+          "url": "https://www.youtube.com/watch?v=xRn2ULuwRTs",
+          "title": "Arthur Murray in Radio & TV, per Ballando con il cuore",
+          "views": 56.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "gqxPPk6SQBs",
+          "url": "https://www.youtube.com/watch?v=gqxPPk6SQBs",
+          "title": "1a lezione di ballo",
+          "views": 53.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "LFqovN7bvWM",
+          "url": "https://www.youtube.com/watch?v=LFqovN7bvWM",
+          "title": "Alessia Marcuzzi e 3 segreti del suo linguaggio del corpo",
+          "views": 34.0,
+          "age_hours": 61320.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "NhGUA3aHDFg",
+          "url": "https://www.youtube.com/watch?v=NhGUA3aHDFg",
+          "title": "THE LAW OF ATTRACTION. Florence, Italy",
+          "views": 50.0,
+          "age_hours": 96360.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "CtvDixHTxeA",
+          "url": "https://www.youtube.com/watch?v=CtvDixHTxeA",
+          "title": "OIDT FIRENZE 2016",
+          "views": 45.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco",
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "7E8PBAce86k",
+          "url": "https://www.youtube.com/watch?v=7E8PBAce86k",
+          "title": "1o giorno dell'International Dance Festival",
+          "views": 47.0,
+          "age_hours": 96360.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "pWR2sXes5Ow",
+          "url": "https://www.youtube.com/watch?v=pWR2sXes5Ow",
+          "title": "Passione: come entusiasmare chiunque grazie al ballo",
+          "views": 32.0,
+          "age_hours": 70080.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "-CBdnjrqdxo",
+          "url": "https://www.youtube.com/watch?v=-CBdnjrqdxo",
+          "title": "La vendita elegante",
+          "views": 31.0,
+          "age_hours": 70080.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "QT_X80ZS6-0",
+          "url": "https://www.youtube.com/watch?v=QT_X80ZS6-0",
+          "title": "BELEN RODRIGUEZ e le parole non dette",
+          "views": 27.0,
+          "age_hours": 61320.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "vki2O5slJ-4",
+          "url": "https://www.youtube.com/watch?v=vki2O5slJ-4",
+          "title": "Nuovo blog su comunicazione efficace e crescita personale",
+          "views": 30.0,
+          "age_hours": 70080.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "JrCifDPaUuA",
+          "url": "https://www.youtube.com/watch?v=JrCifDPaUuA",
+          "title": "SETTIMANA CUBANA! Da non perdere",
+          "views": 39.0,
+          "age_hours": 96360.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "comando_maiuscolo"
+          ]
+        },
+        {
+          "videoId": "3WZBxC-sm44",
+          "url": "https://www.youtube.com/watch?v=3WZBxC-sm44",
+          "title": "Che cosa ami dell'Arthur Murray?",
+          "views": 39.0,
+          "age_hours": 96360.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "xOhaYkfNkGs",
+          "url": "https://www.youtube.com/watch?v=xOhaYkfNkGs",
+          "title": "Novità della 2a settimana dell'International Dance Festival",
+          "views": 37.0,
+          "age_hours": 96360.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "wugrhpxt2pA",
+          "url": "https://www.youtube.com/watch?v=wugrhpxt2pA",
+          "title": "Inizia l'International Dance Festival 2017",
+          "views": 30.0,
+          "age_hours": 78840.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "numero_secco"
+          ]
+        },
+        {
+          "videoId": "g6oYdptxJr0",
+          "url": "https://www.youtube.com/watch?v=g6oYdptxJr0",
+          "title": "Strumenti linguistici della persuasione.",
+          "views": 21.0,
+          "age_hours": 61320.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "TXhV9uevDIk",
+          "url": "https://www.youtube.com/watch?v=TXhV9uevDIk",
+          "title": "Preparazione ballo",
+          "views": 29.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "Kd6VVXg9NLI",
+          "url": "https://www.youtube.com/watch?v=Kd6VVXg9NLI",
+          "title": "Cosa ti piace di più di AM",
+          "views": 14.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": [
+            "interpellazione_diretta"
+          ]
+        },
+        {
+          "videoId": "oOcG-Puo_5A",
+          "url": "https://www.youtube.com/watch?v=oOcG-Puo_5A",
+          "title": "Papere Arthur Murray",
+          "views": 11.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        },
+        {
+          "videoId": "Nu_vDgMmU0A",
+          "url": "https://www.youtube.com/watch?v=Nu_vDgMmU0A",
+          "title": "Benvenuta/o all'Arthur Murray",
+          "views": 6.0,
+          "age_hours": 87600.0,
+          "vph": 0.0,
+          "canale_sorgente": "linguaggiosegretodelcorpo-6589",
+          "ruolo_canale": "escluso_fuori_nicchia",
+          "schemi_titolo": []
+        }
+      ]
+    }
+  }
+}

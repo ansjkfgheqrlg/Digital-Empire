@@ -1,5 +1,6 @@
 {
-  "status": "chrome_gia_aperto",
-  "ts": "2026-08-25T11:57:21",
-  "messaggio": "Riuso la finestra Chrome reale gia' aperta."
+  "status": "tentativo_fallito",
+  "ts": "2026-08-29T13:05:07",
+  "n": 3,
+  "errore": "Locator.click: Target page, context or browser has been closed"
 }

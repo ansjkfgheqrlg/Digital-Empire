@@ -1,0 +1,251 @@
+{
+  "brand": {
+    "name": "Claude Speedrun",
+    "parent_company": "AP Sales / AP Formazione",
+    "motto": "La speranza non è una strategia",
+    "designer": "Gaia Andreetta",
+    "year": 2025,
+    "product_type": "Accelerated webinar/course on practical Claude AI usage",
+    "target": "Italian-speaking marketing agency owners/freelancers, 18–29, frustrated intermediate AI users"
+  },
+
+  "identity": {
+    "keywords": ["minimal", "dark", "modern", "grainy", "glassy", "bold-typography", "moody", "digital", "sleek", "futuristic", "high-energy"],
+    "aesthetic_references": ["Apple-level polish", "Frosted glass / glassmorphism", "Dark-mode-first UI", "2026 editorial brutalism meets luxury", "Ticket/pass visual motif"],
+    "tone": "Aggressive, confident, anti-guru, results-focused"
+  },
+
+  "design_principles": [
+    "Dark-mode-first: design on #131313, derive light variant if needed",
+    "Content > chrome: UI should recede, content should shine",
+    "Spatial hierarchy via surface layering, not drop shadows",
+    "Generous whitespace: when in doubt, add more space",
+    "Contrast-first glassmorphism: glass is decoration, legibility is law",
+    "One accent per viewport: max 1 orange element demanding attention at a time",
+    "Performance-aware effects: cap blur at 24px, max 2 blobs",
+    "Respect prefers-reduced-motion and prefers-color-scheme"
+  ],
+
+  "colors": {
+    "primary": {
+      "nero":    { "hex": "#131313", "role": "Primary background, dominant surface" },
+      "arancio": { "hex": "#FB4904", "role": "Primary accent, CTAs, logo mark, energy" },
+      "white":   { "hex": "#F9F9F9", "role": "Primary text on dark, hero typography" }
+    },
+    "secondary": {
+      "matte_black":    { "hex": "#28282B", "role": "Elevated surfaces, cards" },
+      "section_alt_bg": { "hex": "#1A1A1A", "role": "Alternating section background" },
+      "silver":         { "hex": "#D9D9D9", "role": "Secondary text, light-mode bg, muted UI" },
+      "dark_gray":      { "hex": "#A9A9A9", "role": "Captions, metadata, borders" }
+    },
+    "semantic": {
+      "success": "#22C55E",
+      "warning": "#FBBF24",
+      "error":   "#FB4904",
+      "info":    "#A9A9A9"
+    },
+    "gradients": {
+      "liquid_chrome": {
+        "type": "radial",
+        "stops": ["#FB4904", "#8B2500", "#131313"],
+        "description": "Liquid chrome grainy gradient — signature brand pattern"
+      },
+      "glass_surface": {
+        "type": "linear",
+        "angle": 135,
+        "stops": ["rgba(249,249,249,0.08)", "rgba(249,249,249,0.02)"],
+        "description": "Glassmorphism overlay for cards and panels"
+      },
+      "accent_fade": {
+        "type": "linear",
+        "angle": 180,
+        "stops": ["#FB4904", "rgba(251,73,4,0)"],
+        "description": "Accent fade for borders and highlights"
+      }
+    }
+  },
+
+  "typography": {
+    "primary_font": {
+      "family": "Articulat CF",
+      "fallback": ["Inter", "system-ui", "sans-serif"],
+      "weights": { "light": 300, "regular": 400, "bold": 700, "extrabold": 800 },
+      "usage": "Headlines, hero text, wordmark, high-impact display"
+    },
+    "secondary_font": {
+      "family": "Onest",
+      "fallback": ["Inter", "system-ui", "sans-serif"],
+      "weights": { "light": 300, "regular": 400, "medium": 500, "bold": 700 },
+      "usage": "Body text, UI elements, paragraphs, captions, overlines"
+    },
+    "scale": {
+      "display":  { "size": "clamp(3.5rem, 5vw, 4.5rem)", "weight": 800, "line_height": 1.05, "letter_spacing": "-0.02em", "font": "primary" },
+      "h1":       { "size_px": [36, 48], "weight": 700, "line_height": 1.2, "font": "primary" },
+      "h2":       { "size_px": [28, 36], "weight": 700, "line_height": 1.25, "font": "primary" },
+      "h3":       { "size_px": [24, 28], "weight": 600, "line_height": 1.3, "font": "primary" },
+      "overline": { "size_px": [11, 13], "weight": 500, "letter_spacing": "0.12em", "text_transform": "uppercase", "color": "#FB4904", "font": "secondary" },
+      "body":     { "size_px": [16, 18], "weight": 400, "line_height": 1.6, "font": "secondary" },
+      "button":   { "size_px": [16, 20], "weight": 600, "letter_spacing": "0.05em", "text_transform": "uppercase", "font": "secondary" },
+      "caption":  { "size_px": [12, 14], "weight": 300, "line_height": 1.5, "font": "secondary" }
+    },
+    "text_wrap": "balance",
+    "heading_max_width": "20ch",
+    "body_max_width": "65ch"
+  },
+
+  "layout": {
+    "container": { "max_width": "1280px", "padding_inline": "clamp(16px, 5vw, 64px)", "narrow": "768px", "wide": "1440px" },
+    "grid": { "system": "8pt", "columns": 12, "gutter": "24px", "gutter_mobile": "16px" },
+    "section_spacing": {
+      "between_sections": "clamp(80px, 10vw, 160px)",
+      "intra_section_group": "clamp(40px, 5vw, 64px)",
+      "intra_group_element": "clamp(16px, 2vw, 24px)"
+    },
+    "breakpoints": { "sm": "640px", "md": "768px", "lg": "1024px", "xl": "1280px", "2xl": "1536px" },
+    "approach": "mobile-first with min-width"
+  },
+
+  "surfaces": {
+    "glass_card": {
+      "background": "rgba(249, 249, 249, 0.05)",
+      "backdrop_filter": "blur(24px) saturate(1.2)",
+      "border": "1px solid rgba(249, 249, 249, 0.08)",
+      "border_radius": "16px",
+      "box_shadow": "0 8px 32px rgba(0, 0, 0, 0.4)"
+    },
+    "elevated_card": {
+      "background": "#28282B",
+      "border": "1px solid rgba(249, 249, 249, 0.06)",
+      "border_radius": "12px",
+      "box_shadow": "0 4px 24px rgba(0, 0, 0, 0.3)"
+    },
+    "accent_glow_card": {
+      "background": "rgba(251, 73, 4, 0.04)",
+      "border": "1px solid rgba(251, 73, 4, 0.15)",
+      "border_radius": "12px",
+      "box_shadow": "0 0 40px rgba(251, 73, 4, 0.08)"
+    },
+    "frosted_navbar": {
+      "background": "rgba(19, 19, 19, 0.6)",
+      "backdrop_filter": "blur(16px) saturate(1.4)",
+      "border_bottom": "1px solid rgba(249, 249, 249, 0.06)"
+    }
+  },
+
+  "effects": {
+    "grain": { "opacity": 0.15, "css": "SVG noise filter or canvas noise overlay" },
+    "glassmorphism": { "blur": "20px", "saturation": 1.2, "bg_opacity": 0.05, "border_opacity": 0.08 },
+    "glow": {
+      "accent_ambient": "0 0 80px rgba(251, 73, 4, 0.12)",
+      "accent_focused": "0 0 40px rgba(251, 73, 4, 0.25)",
+      "white_subtle": "0 0 60px rgba(249, 249, 249, 0.05)"
+    },
+    "aurora_blob": {
+      "description": "Ambient gradient blob for hero backgrounds",
+      "colors": ["#FB4904", "#8B2500"],
+      "blur": "120px",
+      "opacity": 0.15,
+      "animation": "slow drift, 20s infinite alternate",
+      "max_blobs": 2
+    }
+  },
+
+  "motion": {
+    "duration": { "fast": "150ms", "normal": "250ms", "slow": "400ms", "dramatic": "600ms" },
+    "easing": {
+      "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "enter":   "cubic-bezier(0, 0, 0.2, 1)",
+      "exit":    "cubic-bezier(0.4, 0, 1, 1)",
+      "spring":  "cubic-bezier(0.34, 1.56, 0.64, 1)"
+    },
+    "scroll_reveal": { "type": "fade-up", "y_offset": "24px", "duration": "0.6s", "stagger": "0.1s" },
+    "reduced_motion": "respect prefers-reduced-motion: disable transforms, keep opacity only"
+  },
+
+  "components": {
+    "navbar": { "height": "64px", "position": "fixed top", "surface": "frosted_navbar", "z_index": 50, "max_items": 5 },
+    "hero": {
+      "layout": "single column centered or split 60/40",
+      "min_height": "min(100svh, 900px)",
+      "heading_max_chars": 60,
+      "cta_group": "1 primary + 1 ghost, gap 12px"
+    },
+    "buttons": {
+      "primary":   { "bg": "#FB4904", "text": "#F9F9F9", "hover_bg": "#D93E03", "radius": "8px", "min_height": "44px" },
+      "secondary": { "bg": "transparent", "text": "#F9F9F9", "border": "1px solid rgba(249,249,249,0.2)", "hover_border": "1px solid #FB4904", "radius": "8px" },
+      "ghost":     { "bg": "transparent", "text": "#A9A9A9", "hover_text": "#F9F9F9" }
+    },
+    "inputs": {
+      "bg": "rgba(249,249,249,0.04)", "border": "1px solid rgba(249,249,249,0.1)",
+      "focus_border": "1px solid #FB4904", "text": "#F9F9F9", "placeholder": "#A9A9A9", "radius": "8px"
+    },
+    "badge": {
+      "bg": "rgba(251,73,4,0.1)", "text": "#FB4904", "border": "1px solid rgba(251,73,4,0.2)",
+      "radius": "9999px", "font_size": "12px", "text_transform": "uppercase"
+    }
+  },
+
+  "logo": {
+    "mark": "Running figure icon + decorative asterisk/starburst elements",
+    "wordmark": "'claude' in spaced lowercase + 'speedrun' below — ticket/pass visual motif",
+    "visual_motif": "Rounded-corner card with punched hole, evoking event ticket/pass",
+    "variants": {
+      "dark_bg": { "mark_color": "#F9F9F9", "accent_color": "#FB4904", "wordmark_color": "#131313_on_orange_bg" },
+      "light_bg": { "mark_color": "#131313", "accent_color": "#FB4904" }
+    },
+    "dont": ["Change logo colors outside brand palette", "Add drop shadows", "Rotate the logo", "Use wordmark without mark"]
+  },
+
+  "icon_style": {
+    "type": "Minimalist, abstract, geometric",
+    "fill": "Filled with slightly rounded edges, bold",
+    "color": "Monochrome — white on black or black on white"
+  },
+
+  "accessibility": {
+    "min_contrast": { "normal_text": "4.5:1", "large_text": "3:1", "ui_components": "3:1" },
+    "focus_ring": "2px solid #FB4904, offset 2px",
+    "interactive_min_size": "44px",
+    "skip_to_content": true
+  },
+
+  "css_variables": {
+    "--color-nero": "#131313",
+    "--color-matte-black": "#28282B",
+    "--color-section-alt": "#1A1A1A",
+    "--color-dark-gray": "#A9A9A9",
+    "--color-silver": "#D9D9D9",
+    "--color-white": "#F9F9F9",
+    "--color-accent": "#FB4904",
+
+    "--font-primary": "'Articulat CF', 'Inter', system-ui, sans-serif",
+    "--font-secondary": "'Onest', 'Inter', system-ui, sans-serif",
+
+    "--container-max": "1280px",
+    "--container-padding": "clamp(16px, 5vw, 64px)",
+    "--section-gap": "clamp(80px, 10vw, 160px)",
+    "--group-gap": "clamp(40px, 5vw, 64px)",
+    "--element-gap": "clamp(16px, 2vw, 24px)",
+    "--nav-height": "64px",
+
+    "--display-size": "clamp(3.5rem, 5vw, 4.5rem)",
+    "--overline-color": "#FB4904",
+    "--body-max-width": "65ch",
+    "--heading-max-width": "20ch",
+
+    "--radius-card": "12px",
+    "--radius-button": "8px",
+    "--radius-glass": "16px",
+    "--radius-full": "9999px",
+
+    "--glass-blur": "blur(24px)",
+    "--glass-bg": "rgba(249, 249, 249, 0.05)",
+    "--glass-border": "rgba(249, 249, 249, 0.08)",
+    "--grain-opacity": "0.15",
+
+    "--focus-ring": "2px solid #FB4904",
+    "--min-tap-target": "44px",
+    "--transition-default": "all 250ms cubic-bezier(0.4, 0, 0.2, 1)",
+    "--transition-slow": "all 400ms cubic-bezier(0.4, 0, 0.2, 1)"
+  }
+}
