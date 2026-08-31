@@ -1,3 +1,57 @@
+## 🏛️ 2026-08-31 — CLAUDE: AUDIT GENERALE eseguito + TASK-MAX "IMPERO OPERATIVO" emessa — AUD-20260831-001
+
+Max, prima di costruire EMPERATOR, ha chiesto la verita' sullo stato dell'Impero: e' tutto
+collegato, tutto attivo, tutto serve? **Audit fatto eseguendo i comandi, non leggendo i file.**
+
+### Numeri misurati oggi
+- `pytest empire/tests` -> **236 passed**. Il runtime di governo e' sano.
+- `empire forge scan` -> **436 agenti: 58 operativi (13.3%)**, 324 parziali, 54 documentali.
+  **C4-uscita mancante su 314 (72%)**: la maggior parte degli agenti non dichiara cosa produce.
+- `.claude/agents/` di progetto -> **0**. Contro **792 file di agenti in company/**.
+  Nessun agente Empire e' oggi invocabile: ne' Board, ne' direttori, ne' Sentinelle.
+- `empire flow status` -> 10 workflow, **0 step chiusi su tutti e 10**, finestra ferma al 26 luglio.
+  Il sistema nervoso esiste come motore e **non ha mai trasportato un passo reale**.
+- `empire trace stato` -> **25 tracce in tutta la vita del sistema**.
+- `empire registry orphans` -> **9.913 bloccanti su 22.469**. ADR-008 violata su scala industriale.
+- `empire doctor` -> **2 block**: link morto in `preventivo-template.md:10` + **ADR-001 violato**
+  (due ecosistemi numerati 08: `08-INTELLIGENCE` e `08-STREAM-S7-BOT` vuoto).
+- `empire controllo` -> **2 canali su 6 pronti**. Sessione IG 87gg, LinkedIn 105gg.
+- `empire estate` -> **NON FINITO** (case study Novacar assente + conform block).
+- Carta vs codice: **solo 3 ecosistemi su 14 hanno codice eseguibile**
+  (02-INFO-BUSINESS 559py, 11-APEX-7-CORE 161py, 12-STREAM 31py). Gli altri 11 sono organigramma.
+
+### Verdetto
+L'Impero e' **due strati che non si toccano a runtime**: i motori veri (Outreach 238py,
+YouTube Factory 91py, caroselli 53py, KDP 559py) vivono nelle cartelle storiche alla root;
+`company/` e' governance e organigramma. Il ponte (`skills-map.yaml` + `REGISTRO-IMPRESA.md`)
+e' un registro **che nessun processo legge per instradare lavoro**.
+**Non esiste un punto in cui un ordine entra e attraversa l'azienda.** E' esattamente **F9**
+della roadmap (agenti reali + Sentinels), mai iniziata — e F9 e' il prerequisito di EMPERATOR.
+
+### Decisione di Max: NIENTE SI SCARTA
+Direttiva esplicita — nessun agente cancellato perche' documentale, nessun ecosistema
+declassato perche' di carta, nessun workflow chiuso perche' non e' mai partito. Si rende
+**tutto** operativo. L'unica rimozione ammessa e' il duplicato accidentale.
+
+### Emessa TASK-MAX-20260831-IMPERO-OPERATIVO (9 blocchi + strumento zero)
+`company/Memory/tasks/TASK-MAX-20260831-IMPERO-OPERATIVO.md`
+STRUMENTO ZERO **EMPERATOR** (si costruisce per primo, e' lo strumento con cui il piano si
+esegue) -> **B0 igiene/sicurezza** -> **B1 contratto d'uscita universale** (il collo di
+bottiglia) -> **B2 agenti invocabili** -> **B3 flow vivo** -> B4 codice nei 14 ecosistemi ·
+B5 zero orfani · B6 sei canali (in parallelo, swarm) -> B7 consegna reale -> B8 auto-miglioramento.
+Ogni blocco ha un **gate a comando**, mai una dichiarazione.
+
+### 🔴 Resta a MAX, e nessuno puo' farlo al posto suo
+**Le 3 credenziali in chiaro sul repo PUBBLICO non sono ancora state ruotate**: B-020 (Brevo),
+B-021 (password Arena + OPENROUTER_API_KEY, **verificata ancora viva**), B-023 (password
+Instagram). Toglierle dal codice non basta: la storia git pubblica resta leggibile, vanno
+**revocate e rigenerate sui servizi**. La password IG va cambiata **prima** del login una
+tantum, o la sessione nuova nasce gia' morta.
+
+**RIPRESA DA**: costruire EMPERATOR (agente ufficiale + hook sul nome), poi B0.
+
+---
+
 ## 📋 2026-08-31 — CLAUDE: audit W1 verificato + TASK W2 emesse per Gael (4 blocchi)
 
 **Audit W1 su richiesta di Max: fatto rieseguendo il codice, non leggendo i checkpoint.**
