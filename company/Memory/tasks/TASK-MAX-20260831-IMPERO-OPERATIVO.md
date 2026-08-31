@@ -67,6 +67,22 @@ Max lavorera' solo con lui. Va costruito prima di B0.
 2. Risponde a "a che punto siamo" citando numeri presi dai comandi, non dai file.
 3. Sa avviare almeno un workflow reale end-to-end.
 
+**Esito 2026-08-31 — 2 su 3, dichiarato:**
+- ✅ **(1) Fatto e provato.** `.claude/agents/emperator.md` (agente ufficiale) +
+  `scripts/emperator_hook.py` registrato come `UserPromptSubmit` in `.claude/settings.json`.
+  Cinque prove eseguite: nome presente -> attiva (4.064 caratteri di contesto);
+  nome assente -> **tace** (0 byte); variante "imperatore" -> attiva; JSON rotto -> exit 0
+  senza guastare il prompt; settings.json ancora valido.
+  Due difetti trovati **nella prova** e corretti: la RIPRESA DA sbordava nella voce
+  precedente di STATO-EMPIRE (ora taglia sul separatore), e l'elenco task era alfabetico
+  quindi mostrava le TASK-NERI di inizio agosto (ora per data di modifica).
+- ✅ **(2) Fatto.** L'hook passa a ogni attivazione la fotografia viva (ultimo commit, stato
+  dell'albero, presenza di SYNC-CONFLICT, ultima voce di STATO-EMPIRE, RIPRESA DA, ultime
+  task) e la dottrina impone di misurare invece di ricordare.
+- ⬜ **(3) NON fatto.** EMPERATOR non ha ancora avviato un workflow reale end-to-end: dipende
+  da **B3**, dove `empire flow` deve chiudere il suo primo ciclo. Fino ad allora il gate
+  resta aperto, e va detto.
+
 ---
 
 ## BLOCCO 0 — IGIENE E SICUREZZA
@@ -342,7 +358,7 @@ Gael e Neri non collidono.
 
 | Blocco | Gate | Stato | Chiuso il |
 |---|---|---|---|
-| STRUMENTO ZERO — EMPERATOR | nome->attiva · risponde con numeri misurati · avvia 1 workflow | ⬜ | |
+| STRUMENTO ZERO — EMPERATOR | nome->attiva · risponde con numeri misurati · avvia 1 workflow | 🟡 **2 su 3** | 2026-08-31 |
 | B0 — Igiene e sicurezza | `doctor` 0 block · 3 credenziali revocate | ⬜ | |
 | B1 — Contratto d'uscita | `forge scan` 436/436 · C4 mancante 0 | ⬜ | |
 | B2 — Agenti invocabili | Board + 14 direttori + 5 Sentinelle chiamabili | ⬜ | |
