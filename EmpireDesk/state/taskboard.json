@@ -1,279 +1,311 @@
 {
- "tasks": [
-  {
-   "id": "tb-seed-01",
-   "owner": "Max",
-   "giorno": "G1 (sab 19-20)",
-   "titolo": "Decidere PREZZO Manuale con team-prezzi (chiude B-003, bloccante S2/S3/S4)",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-02",
-   "owner": "Max",
-   "giorno": "G1-G2",
-   "titolo": "Lista 7 concessionari: nome, stato relazione, canale contatto preferito",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-03",
-   "owner": "Max",
-   "giorno": "G2 (lun 21)",
-   "titolo": "Rivedere+approvare offerta \"Partenza Anticipata\" preparata da Claude/A5",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-04",
-   "owner": "Max",
-   "giorno": "G2-G4",
-   "titolo": "Contattare i 7 concessionari (call/whatsapp, script A8 in mano)",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-05",
-   "owner": "Max",
-   "giorno": "G3",
-   "titolo": "Approvare landing+prezzo funnel Manuale (review 10 minuti, non costruire)",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-06",
-   "owner": "Max",
-   "giorno": "G4-G5",
-   "titolo": "Decidere nicchia canale YouTube #1 (proposta analisi competitor di Gael)",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-07",
-   "owner": "Max",
-   "giorno": "G6-G7",
-   "titolo": "Push vendita Manuale sui canali personali caldi (post, storie, contatti diretti)",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-08",
-   "owner": "Max",
-   "giorno": "G2",
-   "titolo": "Scegliere il NOME nuovo di PreventivoForge dalla shortlist S6",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-09",
-   "owner": "Max",
-   "giorno": "G5",
-   "titolo": "Approvare promo-kit (landing+demo+case study) preparato da Gael/Claude",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-10",
-   "owner": "Gael",
-   "giorno": "G1",
-   "titolo": "(30min) Chiudere CF-R8 -> 03-CONTENT-FACTORY 9/9",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-11",
-   "owner": "Gael",
-   "giorno": "G1",
-   "titolo": "AUDIT ASSET P0.2: censire tutte le pagine (mentalita.brutale, crea.illtuo_impero, altre pagine lancio, sito)",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-12",
-   "owner": "Gael",
-   "giorno": "G2",
-   "titolo": "Funnel Manuale: landing empire-premium-style + checkout + 3 email",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-13",
-   "owner": "Claude",
-   "giorno": "G2-G3",
-   "titolo": "Batch riattivazione S3: 7 caroselli crea.illtuo_impero (carousel-factory) + bio->funnel",
-   "stato": "da_fare",
-   "note": "Riassegnato da Gael 2026-08-03 per ordine diretto Max. Vedi TASK-CLAUDE-20260803-CAROUSEL-APEX7-WORKFLOW.md"
-  },
-  {
-   "id": "tb-seed-14",
-   "owner": "Claude",
-   "giorno": "G3-G4",
-   "titolo": "Pipeline mentalita.brutale 100% auto: carousel-factory wrap -> gate QA auto -> scheduler -> report",
-   "stato": "da_fare",
-   "note": "Riassegnato da Gael 2026-08-03 per ordine diretto Max. Vedi TASK-CLAUDE-20260803-CAROUSEL-APEX7-WORKFLOW.md"
-  },
-  {
-   "id": "tb-seed-15",
-   "owner": "Gael",
-   "giorno": "G4-G5",
-   "titolo": "WF-YT v1: architettura workflow YouTube-Fliki + test 1 video end-to-end con API",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-16",
-   "owner": "Gael",
-   "giorno": "G6",
-   "titolo": "Analisi competitor nicchie YT (3 candidate, dati citati) -> proposta a Max",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-17",
-   "owner": "Gael",
-   "giorno": "G5-G6",
-   "titolo": "Promo-kit S6: landing rebrand + case study Novacar + lista concessionari import-DE",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "tb-seed-18",
-   "owner": "Gael",
-   "giorno": "G7",
-   "titolo": "Consolidamento settimana: CP + metriche reali -> RETRO",
-   "stato": "da_fare",
-   "note": ""
-  },
-  {
-   "id": "TASK-PREVENTA-AREUS-001",
-   "owner": "Gael",
-   "giorno": "2026-07-28",
-   "titolo": "Preventa->Areus: verificare wiring EmpireDesk + decidere integrazione Kanban Aureus",
-   "stato": "fatto",
-   "note": "FATTO da Claude 2026-07-28: (1) EmpireDesk --selftest verde, modulo preventa si registra; (2) run scraper reale (2 lead ALTA Milano) -> push Areus confermato, pannello li mostra, round-trip cambio stage NEW->CONTACTED->NEW testato; (3) sanity-check file ownership Gael (agents.py/run.py/orchestrator.py/integratore-areus/quality_gate.py/test_apex7.py) tutti puliti, nessun residuo Sheets, rimossa cartella orfana integratore-sheets/ (vuota, non tracciata); (4) DECISIONE: pannello Preventa resta STANDALONE per ora, non mappato nel Kanban SalesPipeline.tsx -- il tipo Lead del Kanban richiede email/contactPerson/value reali che i lead scraper freddi non hanno (niente email da Google Maps, niente nome titolare, value sarebbe un placeholder finto su lead non ancora umanamente qualificati). Lo stage enum resta compatibile apposta per un domani: quando un lead risponde con interesse reale, si promuove a mano nel Kanban (mapping, non redesign). Dettaglio in CP-20260728-0XX."
-  },
-  {
-   "id": "TASK-YT-001",
-   "owner": "Gael",
-   "giorno": "2026-07-28",
-   "titolo": "YT-Factory: retrofit execute_critic + agents.py sul motore condiviso 11-APEX-7-CORE (ADR-010)",
-   "stato": "fatto",
-   "note": "Apex7Orchestrator ora istanzia APEX7Memory(domain)/RuFLOOrchestrator(domain) (default 'youtube', parametrizzabile per i test). execute_critic mantiene la logica di scoring reale invariata ma persiste score/dimensioni/debolezze via shared_memory.log_critique() + un checkpoint ruflo.create_checkpoint() invece di restare locale al file YouTube. Caricamento moduli condivisi per file (importlib, non sys.path+import) per evitare collisione con i moduli locali memory.py/agents.py. agents.py (Conductor mock 'Legami d'amore', Plan 2) verificato: e' una pipeline parallela e non collegata alle 6 fasi reali F1-F6, non chiama execute_critic e non e' toccata dai gate TASK-YT-002..007 - lasciata invariata in questo lotto, candidata a decisione di ritiro insieme a TASK-YT-006. Gate: test_youtube_apex7.py 11/11 verde (confermato, incluso critique_id reale nel log) + test_multi_tenant.py 4/4 verde. Vedi CP-20260728-007."
-  },
-  {
-   "id": "TASK-YT-002",
-   "owner": "Gael",
-   "giorno": "2026-07-28",
-   "titolo": "YT-Factory: F4 Produzione, spec Fliki reale multi-scena da script.md di F3",
-   "stato": "fatto",
-   "note": "run_phase_4 legge working_memory['script_path'] reale e parsa le sezioni HOOK/INTRO/CORPO/CTA (esclusa 'Note SEO inline', metadato) in scene reali via nuovo _parse_script_scenes; video_id/title/hook_type da working_memory['script_idea_title']/['script_idea_hook_type'] (F3), non piu' hardcoded 'claude-code-001'. Gate eseguito: 2 candidati reali diversi -> video_id/title/hook_type/testo scene tutti diversi, schema produzione-spec PASS su entrambi (scene_count uguale a 4 in entrambe, onesto: F3 emette sempre le stesse 4 sezioni, il numero non e' piu' hardcoded a priori). test_youtube_apex7.py 11/11 verde. Vedi CP-20260728-008. || [ALTRA SESSIONE IN PARALLELO, stesso lotto risolto diversamente] FATTO da Claude 2026-07-29 (ordine Max: Estate prende il controllo dei modelli). run_phase_4 non e piu hardcoded (1 scena fissa): legge working_memory[script_path] (script.md reale di F3), nuova funzione module-level _scene_da_script parsa HOOK/INTRO/CORPO/CTA in scene multiple (taglia note di regia + timecode bullet, split a frase). video_id/title/hook_type reali dalla working_memory. Gate VERDE: 2 script diversi -> scene_count 9 vs 8 + testo diverso, validate_schemas produzione-spec PASS entrambi, test_youtube_apex7 11/11 OK. Vedi CP-20260729-003."
-  },
-  {
-   "id": "TASK-YT-003",
-   "owner": "Gael",
-   "giorno": "2026-07-28",
-   "titolo": "YT-Factory: F5 Pubblicazione, metadati/titolo/tag reali dal video+script scelti",
-   "stato": "fatto",
-   "note": "run_phase_5 riscritta: titolo da script_idea_title, descrizione da HOOK+INTRO+CTA reali di script.md (via _parse_script_scenes), tag da learned_rules.json['high_performing_tags'] + canale_cluster reale di F1 (aggiunto working_memory['canale_cluster'] in run_phase_1) + keyword tokenizzate dal titolo idea. brief-miniatura.json: concept/text_overlay derivati dall'HOOK reale. Gate SEO ora logga onestamente pass/fail reale invece di stampare sempre PASS. Gate eseguito: 2 candidati diversi -> title/tags diversi, seo_score.py --json reale: run A total=92.5 (nota onesta titolo 73 char fuori 20-70), run B total=100.0, pass_soglia_70 true su entrambe. test_youtube_apex7.py 11/11 verde. Vedi CP-20260728-009. || [ALTRA SESSIONE IN PARALLELO, stesso lotto risolto diversamente] FATTO da Claude 2026-07-29. run_phase_5 non piu hardcoded: titolo da working_memory[script_idea_title], descrizione+brief miniatura costruiti dalle sezioni REALI dello script (_sezioni_script), tag da learned_rules[high_performing_tags] + token del titolo reale + hook_type. Gate VERDE: 2 script diversi -> titolo e tag diversi, seo_score 100/100 pass_soglia_70=True entrambi, validate_schemas metadati+brief-miniatura PASS, test_youtube_apex7 11/11. Vedi CP-20260729-004."
-  },
-  {
-   "id": "TASK-YT-004",
-   "owner": "Gael",
-   "giorno": "2026-07-28",
-   "titolo": "YT-Factory: F6 Audit, gate onesto -- niente views_per_hour finti senza video reale pubblicato",
-   "stato": "fatto",
-   "note": "Nuovo manifest memory/published_videos.json (run_id/video_id/url/channel_handle/published_at), popolato solo per video davvero caricati. run_phase_6 riscritta: senza voce per la run -> return True senza scrivere (log onesto, non errore); voce troppo recente (<24h, riusa VIDEO_MATURITY_FLOOR_HOURS) -> nessuna scrittura; voce matura -> riusa _get_channel_videos (stesso fetch pubblico di F2) per calcolare views_per_hour reale. ctr/retention_rate = null esplicito (richiedono YouTube Studio, non fabbricati). Fix collaterale in self_improve.py (float(None) altrimenti esplode sui nuovi log null). Gate: (a) run senza manifest -> performance_logs.json invariato, 95 righe prima e dopo (diff zero); (b) run con manifest su video reale gia' cachato (@ciraolone) -> riga con views_per_hour=263.89 (non 35.5). Entry di test rimossa dopo la verifica (non era un video realmente pubblicato), file di produzione ripristinati puliti. test_youtube_apex7.py 11/11 verde. Vedi CP-20260728-010. || [ALTRA SESSIONE IN PARALLELO, stesso lotto risolto diversamente] FATTO da Claude 2026-07-29. run_phase_6 non appende piu views_per_hour 35.5 finto. Audit onesto su manifest memory/published_videos.json: senza voce reale per la run -> nessuna scrittura (self-improver non impara su dati inventati); voce troppo recente (<24h) -> nessuna scrittura; voce reale abbastanza vecchia -> views_per_hour CALCOLATO da fetch pubblico reale (_fetch_video_views), ctr/retention null (richiedono YouTube Studio, non si inventano). Gate VERDE: caso A (no manifest) e caso B (troppo recente) -> 0 righe aggiunte; test_youtube_apex7 11/11. Ramo fetch-reale documentato (serve un video davvero pubblicato). Vedi CP-20260729-005."
-  },
-  {
-   "id": "TASK-YT-005",
-   "owner": "Gael",
-   "giorno": "2026-07-28",
-   "titolo": "YT-Factory: Dashboard riflette l'esito reale (PASS/FAIL) della run corrente",
-   "stato": "fatto",
-   "note": "Nuovo Apex7Orchestrator.write_dashboard(), chiamato a fine execute_workflow (successo e fallimento): legge working_memory reale, scrive PASS/FAIL/N.D. per fase (non piu' sempre PASS). phase_results persistito in working_memory per sopravvivere a --resume. Fix collaterale: save_state() mancante sul ramo di fallimento (il messaggio diceva gia' 'Stato salvato' ma non lo faceva). Decisione presa: run_youtube_apex7.py RITIRATO (git rm) - unica altra scrittrice della dashboard, pipeline fantasma su 'Dose Mentale' mai collegata alle fasi reali, nessun codice/test lo importava. Aggiornato anche implementation_plan.md (voci 4-8). Gate: caso FAIL (canale fabbricato, cashcow index reale 15.0) -> dashboard mostra F1 FAIL e F2-F6 'non eseguita', stato fabbrica 'BLOCCATA ALLA FASE 1'; caso PASS (run reale F1-F6) -> 6/6 PASS, stato 'OPERATIVA'. test_youtube_apex7.py 11/11 verde. Vedi CP-20260728-011. || [ALTRA SESSIONE IN PARALLELO, stesso lotto risolto diversamente] FATTO da Claude 2026-07-29. Nuovo Apex7Orchestrator.write_dashboard() scrive la dashboard canonica dai dati REALI della run (canale/video scelti, esito vero per fase). execute_workflow traccia fasi_esito e chiama write_dashboard su successo E su fallimento (prima faceva sys.exit prima di scrivere -> dashboard non vedeva mai un FAIL). Ritirato il percorso fantasma run_youtube_apex7.py (Conductor mock, sempre 6x PASS su Dose Mentale): deprecato con banner, scrive su *-LEGACY.md, non clobbera piu la dashboard vera (non cancellato, vincolo additivo). Gate VERDE: caso PASS -> 6x verde RUN COMPLETA; caso F2 fallita -> F2 rosso FAIL + F3-F6 non eseguite, RUN FALLITA, exit 1; test_youtube_apex7 11/11. Dashboard committata a baseline onesto (0/6, nessuna run reale ancora). Vedi CP-20260729-006."
-  },
-  {
-   "id": "TASK-YT-006",
-   "owner": "Gael",
-   "giorno": "2026-07-28",
-   "titolo": "YT-Factory (cross-eco): ritiro reimplementazione APEX-7 indipendente in 12-STREAM-S7-BOT",
-   "stato": "fatto",
-   "note": "NON migrato - motivazione scritta (clausola esplicita del gate: 'o motivazione scritta se decidi di non farlo in questo giro'). Indagine (STATO-RIPRESA.md/APEX-7.md + python test_apex7.py baseline verde): non e' un mock hardcoded da ritirare come agents.py di YouTube, e' un'implementazione APEX-7 Level 2 matura (6 gate a rubrica/33 criteri, Event Bus con DLQ+replay, memory con lock/checkpoint/restore, gate L6->L7 self-giudicante) piu' avanzata di 11-APEX-7-CORE su questi assi. Migrarla sarebbe un downgrade funzionale, non un miglioramento, su un sistema di trading reale (Solana mainnet) appena chiuso da Gael lo stesso giorno (TASK-GAEL-20260728-STREAM-S7-BOT.md). Nessun file toccato in 12-STREAM-S7-BOT. Raccomandazione per Max nel checkpoint: eventualmente portare le funzionalita' mancanti di Stream-S7-Bot DENTRO 11-APEX-7-CORE, non il contrario - decisione architetturale sua, non presa qui. Vedi CP-20260728-012. [MERGE 2026-07-30: la sessione di Max aveva ri-assegnato questo lotto a Gael (non vedeva la decisione gia' presa). Verificato sul disco al merge: 12-STREAM-S7-BOT ha ancora la sua implementazione APEX-7 propria, zero import da 11-APEX-7-CORE, quindi 'NON migrato' e' lo stato reale e la decisione resta valida.]"
-  },
-  {
-   "id": "TASK-YT-007",
-   "owner": "Gael",
-   "giorno": "2026-07-28",
-   "titolo": "YT-Factory: aggiornare REGISTRO-IMPRESA.md + PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md",
-   "stato": "fatto",
-   "note": "Entrambi i file aggiornati allo stato reale (non aspirazionale): 07-BACKBONE-RUFLO-SKILLS.md sostituisce 'Fase 1 pilota in corso' con l'esito reale e misto (YouTube in uso reale, Stream-S7-Bot NON migrato con motivazione). REGISTRO-IMPRESA.md: riga STREAM-S7-BOT aggiornata (rimossa dicitura obsoleta 'in migrazione'), riga 11-APEX-7-CORE aggiornata con stato vero, NUOVA riga YOUTUBE-AUTOMATION-FACTORY aggiunta in PRODOTTI & RUNTIME VIVI (non esisteva ancora nonostante fosse un runtime reale). Trovato e corretto un bug reale durante la chiusura: test_apex7_orchestrator_e2e sovrascriveva silenziosamente la dashboard reale tracciata ad ogni run di test (write_dashboard() non aveva un path overridabile come state_file/decision_log_path). Fix: nuovo self.dashboard_path overridabile su Apex7Orchestrator, test isolato su test_templates_dir. test_youtube_apex7.py 11/11 verde, git status pulito sulla dashboard dopo i test. CON QUESTO SI CHIUDE L'INTERO TASK FORMALE TASK-GAEL-20260728-YOUTUBE-FACTORY.md (TASK-YT-001..007). Vedi CP-20260728-013. || [ALTRA SESSIONE IN PARALLELO, stesso lotto risolto diversamente] FATTO da Claude 2026-07-29. REGISTRO-IMPRESA.md: nuova riga YOUTUBE-AUTOMATION-FACTORY con stato reale F1-F6 sul motore condiviso 11-APEX-7-CORE + riga 11-APEX aggiornata (pilota lato YouTube completo). Dossier 07: blocco stato reale pilota 2026-07-29. Gate: entrambi citano 11-APEX-7-CORE motore condiviso YouTube+Stream-S7 + stato vero 6 fasi. Vedi CP-20260729-008."
-  },
-  {
-   "id": "TASK-KDP-W1",
-   "owner": "Gael",
-   "giorno": "Settimana 1 (24-30 ago 2026)",
-   "titolo": "Workflow KDP: chiudere ciclo end-to-end (avvio->libro+prompt copertina+copy Amazon->cartella ordinata). Nord: 5-10 libri/settimana dopo che gira pulito",
-   "stato": "fatto",
-   "note": "FATTO 2026-08-25 (CP-20260825-002). Gate soddisfatto: `python -m engine.kdp pacchetto the-winter-term` esce 0 = COMPLETO (manoscritto + prompt copertina + copy KDP nella stessa cartella `LIBRI/libri_pronti/The_Winter_Term/`). Libro reale prodotto dal flusso: 'The Winter Term', dark academia mystery, 24/24 capitoli, 39.668 parole, 116 pagine REALI contate sul PDF, in 43,2 minuti. Chiusi 3 buchi del motore che impedivano il ciclo: (1) `kdp copy` NUOVO - salva_copy() esisteva dal 15/08 ma nel flusso vivo non lo chiamava nessuno, il copy dei 3 libri precedenti era scritto a mano dentro progetto.json senza validazione; (2) il pacchetto ora nasce anche SENZA copertina (prima FileNotFoundError: senza .png nessuna cartella e i 3 pezzi restavano sparsi), con bloccante esplicito 'Copertina assente' in validazione.json; (3) COPERTINA-PROMPT.md ora entra sempre nel pacchetto (nessuno dei 3 pacchetti consegnati ce l'aveva). + `kdp pacchetto` NUOVO come verificatore del gate. 135 test verdi (erano 127), 8 nuovi. SKILL.md e SOP allineate nello stesso commit. RESTA A GAEL: generare il .png dal prompt, poi `kdp consegna the-winter-term --cover <png>` per renderlo pubblicabile. NOTA: scritto fuori dalla nicchia attiva con --motivo dichiarato, B-018 (una nicchia/un autore) va deciso prima del quinto libro. Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
-  },
-  {
-   "id": "TASK-CAROSELLI-W1",
-   "owner": "Gael",
-   "giorno": "Settimana 1 (24-30 ago 2026)",
-   "titolo": "Carousel Factory: comando unico + argomento topic -> caroselli generati e salvati ordinati per prodotto. UFFICIALE da oggi, Claude assiste direttamente",
-   "stato": "fatto",
-   "note": "FATTO 2026-08-27 (CP-20260825-003). Comando unico: `python \"SKILL & Agenti/Workflow agency creative/caroselli.py\" \"<argomento>\" --slide 6`, exit 0. Output reale: Arsenale Caroselli/Preventa/2026-08-27_quanto-tempo-perdi-a-fare-un-preventivo/ (6 PNG 1080x1080 + copy.json + caption.txt), verificato guardando le slide, non solo il log. Pipeline in un processo solo: argomento -> copy via API -> validazione copy (max 7 parole, accent presente, niente lineette lunghe: un copy sbagliato viene rigenerato, non renderizzato) -> render locale -> deposito -> gate automatico (conta PNG, peso, dimensioni reali). MOTORE: usato il Ramo C (render locale Puppeteer) e NON il Ramo D (Arena) indicato nella task, perche' il D e' verificato fermo su questa macchina (playwright_stealth non installato, ArenaAI/session_data assente = serve login Google interattivo, e comunque richiede 5 passaggi manuali per run). Il D resta raggiungibile con --engine arena, che spiega cosa manca. Trovati e corretti 3 bug reali nel runtime carousel-factory che producevano slide sbagliate IN SILENZIO (font mai caricati per policy di origine su page.setContent, parole incollate, screenshot prima dei webfont). 20 test verdi. Ordine formale CF-2026-PREVENTA-002 + ARCHITETTURA.md CF-R5 aggiornata. ATTENZIONE B-021: caroselli - agency/config.py e' tracciato sul repo PUBBLICO con ARENA_EMAIL, ARENA_PASSWORD e 2 API key in chiaro (chiave OpenRouter viva). Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
-  },
-  {
-   "id": "TASK-PUBLISHER-W1",
-   "owner": "Gael",
-   "giorno": "Settimana 1 (24-30 ago 2026)",
-   "titolo": "Consolidare Workflow pubblicazione automatica esistente in comando richiamabile (input: cartella caroselli -> pubblica/dry-run su canale reale). Sblocca sia Caroselli che futuro KDP/YouTube",
-   "stato": "fatto",
-   "note": "FATTO 2026-08-27 (CP-20260827-001). Gate soddisfatto sul ramo previsto dalla task (\"pubblica O fa dry-run verificato, se Max non ha ancora dato ok per il live\"). Comando unico: `python \"SKILL & Agenti/Workflow pubblicazione automatica/pubblica.py\" \"<cartella>\"` (dry-run verificato di default) / `--live` per pubblicare davvero. Provato sull'output REALE di TASK-CAROSELLI-W1 chiuso stamattina (Arsenale Caroselli/Preventa/2026-08-27_quanto-tempo-perdi-a-fare-un-preventivo): 6 slide 1080x1080 + caption validate, canale dedotto instagram -> @digitalempireagency.e, exit 2 = PASS PARZIALE. PARZIALE e non PASS perche' la verifica di sessione NON e' una stampa: apre Chrome reale (151.0.7922.174), va su instagram.com, screenshot in _diagnostica/ -- il browser parte e la pagina carica, manca solo la SESSIONE (session_data/ assente su TUTTI i canali). Il --live provato apposta si e' RIFIUTATO da solo invece di sbattere sul login: nessun post reale creato. Altri 5 run del gate tutti FAIL corretti (cartella senza slide -> elenca le candidate; carosello 2026-08-06 senza caption.txt -> blocca; cartella inesistente; --canale tiktok -> blocca col motivo). TROVATO IL FOLDER PEGGIO DI COME SI PRESENTAVA, verificato eseguendo: (1) push_social.py -- che il CLAUDE.md locale dichiara OBBLIGATORIO -- e' una SIMULAZIONE: stampa 'completata con successo (SIMULATA)' ed esce 0, requests.post commentata, media assenti dal payload (B-024); (2) main_orchestrator.py non parte proprio (OpenAIError a import time) e stampa 'FLUSSO COMPLETATO CON SUCCESSO!' incondizionatamente (B-025); (3) Instagram/instagram_publisher.py::publish() ingoia ogni eccezione e 'riesce' sempre -> NON usato, il comando wrappa scripts/ig_carousel_publish.py che ritorna un bool onesto; (4) quel motore buono era inutilizzabile solo perche' CAROSELLI_DIR puntava a C:/Users/Utente/... (altra macchina) -- non toccato (ADR-003), gli passo un path assoluto; (5) TikTok/tiktok_publisher.py non importa (B-026); do_login() cerca input[name=username] che IG 2026 non ha piu' (B-027). SICUREZZA B-023: Instagram/config.py ha IG_PASSWORD in chiaro sul repo PUBBLICO (terza dopo B-020 Brevo e B-021 Arena) -- da cambiare PRIMA del login una tantum, o invalida la sessione appena creata. NOTA per TASK-MEMORY-SYNC-W1: `python -m empire mem write` (il fix anti-collisione di B-009 'che nessuno usa') NON girava -- ModuleNotFoundError: No module named 'yaml'. pip install pyyaml e funziona: questo checkpoint e' scritto con quel comando, non a mano. Le 5 collisioni non erano pigrizia, era lo strumento rotto. RESTA DA FARE (umano, account di Max): `python Instagram/setup_session.py` -> il dry-run deve dare PASS/exit 0; poi --live solo con ok esplicito di Max. Diagnosi completa in Workflow pubblicazione automatica/DIAGNOSI-PUBLISHER.md"
-  },
-  {
-   "id": "TASK-ARENA-SESSION-W1",
-   "owner": "Gael",
-   "giorno": "Settimana 1 (24-30 ago 2026) — SECONDARIA/fallback",
-   "titolo": "Consolidare in un solo modulo condiviso le 3 automazioni Arena/browser duplicate (caroselli, arena_thumbnail YouTube, resti KDP-Arena) — riduce bug ricorrenti di profilo/login/hang",
-   "stato": "fatto",
-   "note": "FATTO 2026-08-27 (CP-20260827-004). Gate: 2 consumatori su 3 usano LO STESSO modulo `shared/arena_session.py`, verificato con RUN REALI (browser aperto davvero su arena.ai da entrambi) e confrontando l'identita' dell'oggetto modulo in memoria: stesso file, stesso id, stessa classe. Consumatore 1 = caroselli (`caroselli - agency/Core/browser_manager.py`, ora ADATTATORE: API pubblica invariata, arena_generator.py non modificato - ADR-003). Consumatore 2 = arena_thumbnail (YOUTUBE-AUTOMATION-FACTORY), ricablato mantenendo i nomi come deleghe. Terzo consumatore (_archivio/lmarena_client.py) NON migrato di proposito: e' archiviato e non lo importa nessuno, sarebbe lavoro su codice morto. SBLOCCATO UN GUASTO REALE: browser_manager.py moriva all'import su `playwright_stealth` (non installato) - ecco perche' il Ramo D/Arena dei caroselli risultava fermo in CP-20260825-003; ora lo stealth e' opzionale. Resta un secondo blocco diverso: arena_generator.py importa `playwright_recaptcha`, pure assente -> B-029. Il modulo unifica le lezioni che stavano in una sola copia: ricerca della scheda arena.ai (causa reale dei timeout 6-9 ago), domcontentloaded mai networkidle, modale Terms of Use, attesa login umano, rilevamento captcha. ERRORE MIO CORRETTO IN CORSA: la prima stato_login() dichiarava 'autenticato' vedendo una textarea e ha detto autenticati due profili vuoti - su arena.ai la chat e' usabile da sloggati. Poi il match su 'auth' ha ripetuto l'errore perche' `arena-auth-prod-v1` c'e' anche da anonimi. Ora domina `provisional_user_id` e in dubbio risponde non_autenticato, mai autenticato. Ramo positivo non verificabile senza un login Arena reale -> B-030."
-  },
-  {
-   "id": "TASK-MEMORY-SYNC-W1",
-   "owner": "Gael",
-   "giorno": "Settimana 1 (24-30 ago 2026) — SECONDARIA/fallback",
-   "titolo": "Far rispettare per davvero l'anti-collisione checkpoint (B-009, riaccaduta 2026-08-23): un controllo che blocca il commit invece di scoprirla al merge",
-   "stato": "fatto",
-   "note": "FATTO 2026-08-27 (CP-20260827-002). Gate dimostrato con una collisione VERA su due branch (due git worktree --no-checkout sullo stesso .git): sessione A committa CP-20260828-001, sessione B sceglie lo stesso ID su un altro branch -> COMMIT BLOCCATO, `git commit exit = 1`, branch B fermo, file mai entrato nella storia. Intercettata PRIMA del commit, non al merge. Secondo controllo: CRLF nei file di company/Memory (B-028) - blocca ed ha `--fix` che normalizza e ri-stagea (verificato byte-identico all'originale). Nuovo: .githooks/check_memory.py + pre-commit + installa.py (core.hooksPath, perche' i hook non sono versionati e un hook committato non si attiva da solo). SCOPERTO PERCHE' IL FIX DI LUGLIO NON VENIVA USATO: `python -m empire mem write` moriva su ModuleNotFoundError 'yaml' - non era pigrizia, era rotto. pip install pyyaml e funziona; i 4 checkpoint di oggi sono scritti con quel comando. Da li' la regola: zero dipendenze oltre stdlib+git. ERRORE MIO: al primo test il controllo ha RILEVATO la collisione e poi e' morto stampandola (UnicodeEncodeError sui box-drawing in console cp1252), lasciando passare il commit - stessa forma di B-013, gia' nel backlog. Corretto: solo ASCII nei messaggi. RESTA A MAX: lanciare `python .githooks/installa.py` sulla SUA macchina, altrimenti da lui il controllo non e' attivo ed e' li' che nascono le collisioni."
-  },
-  {
-   "id": "TASK-GITLFS-W1",
-   "owner": "Gael",
-   "giorno": "Settimana 1 (24-30 ago 2026) — SECONDARIA/fallback",
-   "titolo": "Chiudere B-008: Git LFS o gitignore mirato per i blob (PDF/DOCX/PNG) prima che la produzione KDP/Caroselli/YouTube faccia ingrassare il repo senza controllo",
-   "stato": "fatto",
-   "note": "FATTO 2026-08-27 (CP-20260827-003, ADR-013). DECISIONE: .gitignore mirato + guard 5MB, NON Git LFS. Sui numeri reali: .png = 2167,5 MB su 10.679 file (~70% dei 3,1 GB di .git). Il motore della crescita NON sono gli screenshot (come diceva B-008) ma le COPERTINE KDP: 2,5-6,1 MB l'una x 3-4 copie per libro = ~15 MB a libro, che a 5-10 libri/settimana fa 4-8 GB/anno. LFS scartato con motivo: quota gratuita 1 GB si esaurisce in settimane e oltre quota il push FALLISCE; senza `git lfs install` su una macchina si scaricano file-puntatore da 130 byte al posto delle immagini senza errore evidente; e non risolve la duplicazione 3-4x. Criterio applicato: non 'e' pesante' ma 'si rigenera e non viaggia fra Max e Gael' - la copertina va su KDP, nel repo resta COPERTINA-PROMPT.md. Ignorati anche gli slide-*.html dei caroselli (628 KB l'uno: incorporano il font in base64, 6 volte per carosello). GATE: commit di prova, `git add -A` su una cartella con screenshot 0,17 MB + copertina 5,26 MB + un sorgente -> `git log --stat` mostra SOLO il sorgente; forzando con `git add -f` il guard blocca (exit 1). Soglia 5 MB scelta perche' il deliverable legittimo piu' grosso ci sta sotto: un guard senza falsi allarmi non viene disattivato. NON FATTO DI PROPOSITO: le copertine dei 4 libri gia' tracciati restano tracciate - `git rm --cached` le cancellerebbe dal disco di Max al primo pull. Comando in ADR-013, da eseguire con lui presente."
-  },
-  {
-   "id": "TASK-PREVENTA-CANALI-W1",
-   "owner": "Neri",
-   "giorno": "Settimana 1 (24-30 ago 2026)",
-   "titolo": "Preventa: aggiungere fonti lead (Instagram + Libreria Inserzioni Meta, oltre Google Maps esistente) e canale invio Gmail (oltre WhatsApp esistente) — anche solo 1 delle 3 va bene per questa settimana",
-   "stato": "da_fare",
-   "note": "Primo task operativo di Neri (pivot da ruolo organizzativo, 2026-08-23). Emperator Agent lo segue da vicino. Dettaglio in TASK-NERI-20260824-SETTIMANA-01.md"
-  },
-  {
-   "id": "TASK-OUTREACHFACTORY-CANALI-W1",
-   "owner": "Neri",
-   "giorno": "Settimana 1 (24-30 ago 2026)",
-   "titolo": "Outreach Factory: aggiungere 1 canale nuovo (es. Pagine Gialle) o sistemare uno dei 3 esistenti (Email/IG/LinkedIn) se non gira piu bene",
-   "stato": "da_fare",
-   "note": "Prodotto flagship potenziale piu alto (PIANO-MAESTRO 23). Neri decide la strada e motiva la scelta nel checkpoint. Dettaglio in TASK-NERI-20260824-SETTIMANA-01.md"
-  }
- ],
- "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md + company/Memory/tasks/TASK-GAEL-20260824-SETTIMANA-01.md + TASK-NERI-20260824-SETTIMANA-01.md (cadenza settimanale da 2026-08-23)",
- "creato": "2026-07-21 08:20",
- "aggiornato": "2026-08-27"
+  "tasks": [
+    {
+      "id": "tb-seed-01",
+      "owner": "Max",
+      "giorno": "G1 (sab 19-20)",
+      "titolo": "Decidere PREZZO Manuale con team-prezzi (chiude B-003, bloccante S2/S3/S4)",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-02",
+      "owner": "Max",
+      "giorno": "G1-G2",
+      "titolo": "Lista 7 concessionari: nome, stato relazione, canale contatto preferito",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-03",
+      "owner": "Max",
+      "giorno": "G2 (lun 21)",
+      "titolo": "Rivedere+approvare offerta \"Partenza Anticipata\" preparata da Claude/A5",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-04",
+      "owner": "Max",
+      "giorno": "G2-G4",
+      "titolo": "Contattare i 7 concessionari (call/whatsapp, script A8 in mano)",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-05",
+      "owner": "Max",
+      "giorno": "G3",
+      "titolo": "Approvare landing+prezzo funnel Manuale (review 10 minuti, non costruire)",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-06",
+      "owner": "Max",
+      "giorno": "G4-G5",
+      "titolo": "Decidere nicchia canale YouTube #1 (proposta analisi competitor di Gael)",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-07",
+      "owner": "Max",
+      "giorno": "G6-G7",
+      "titolo": "Push vendita Manuale sui canali personali caldi (post, storie, contatti diretti)",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-08",
+      "owner": "Max",
+      "giorno": "G2",
+      "titolo": "Scegliere il NOME nuovo di PreventivoForge dalla shortlist S6",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-09",
+      "owner": "Max",
+      "giorno": "G5",
+      "titolo": "Approvare promo-kit (landing+demo+case study) preparato da Gael/Claude",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-10",
+      "owner": "Gael",
+      "giorno": "G1",
+      "titolo": "(30min) Chiudere CF-R8 -> 03-CONTENT-FACTORY 9/9",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-11",
+      "owner": "Gael",
+      "giorno": "G1",
+      "titolo": "AUDIT ASSET P0.2: censire tutte le pagine (mentalita.brutale, crea.illtuo_impero, altre pagine lancio, sito)",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-12",
+      "owner": "Gael",
+      "giorno": "G2",
+      "titolo": "Funnel Manuale: landing empire-premium-style + checkout + 3 email",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-13",
+      "owner": "Claude",
+      "giorno": "G2-G3",
+      "titolo": "Batch riattivazione S3: 7 caroselli crea.illtuo_impero (carousel-factory) + bio->funnel",
+      "stato": "da_fare",
+      "note": "Riassegnato da Gael 2026-08-03 per ordine diretto Max. Vedi TASK-CLAUDE-20260803-CAROUSEL-APEX7-WORKFLOW.md"
+    },
+    {
+      "id": "tb-seed-14",
+      "owner": "Claude",
+      "giorno": "G3-G4",
+      "titolo": "Pipeline mentalita.brutale 100% auto: carousel-factory wrap -> gate QA auto -> scheduler -> report",
+      "stato": "da_fare",
+      "note": "Riassegnato da Gael 2026-08-03 per ordine diretto Max. Vedi TASK-CLAUDE-20260803-CAROUSEL-APEX7-WORKFLOW.md"
+    },
+    {
+      "id": "tb-seed-15",
+      "owner": "Gael",
+      "giorno": "G4-G5",
+      "titolo": "WF-YT v1: architettura workflow YouTube-Fliki + test 1 video end-to-end con API",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-16",
+      "owner": "Gael",
+      "giorno": "G6",
+      "titolo": "Analisi competitor nicchie YT (3 candidate, dati citati) -> proposta a Max",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-17",
+      "owner": "Gael",
+      "giorno": "G5-G6",
+      "titolo": "Promo-kit S6: landing rebrand + case study Novacar + lista concessionari import-DE",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "tb-seed-18",
+      "owner": "Gael",
+      "giorno": "G7",
+      "titolo": "Consolidamento settimana: CP + metriche reali -> RETRO",
+      "stato": "da_fare",
+      "note": ""
+    },
+    {
+      "id": "TASK-PREVENTA-AREUS-001",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "Preventa->Areus: verificare wiring EmpireDesk + decidere integrazione Kanban Aureus",
+      "stato": "fatto",
+      "note": "FATTO da Claude 2026-07-28: (1) EmpireDesk --selftest verde, modulo preventa si registra; (2) run scraper reale (2 lead ALTA Milano) -> push Areus confermato, pannello li mostra, round-trip cambio stage NEW->CONTACTED->NEW testato; (3) sanity-check file ownership Gael (agents.py/run.py/orchestrator.py/integratore-areus/quality_gate.py/test_apex7.py) tutti puliti, nessun residuo Sheets, rimossa cartella orfana integratore-sheets/ (vuota, non tracciata); (4) DECISIONE: pannello Preventa resta STANDALONE per ora, non mappato nel Kanban SalesPipeline.tsx -- il tipo Lead del Kanban richiede email/contactPerson/value reali che i lead scraper freddi non hanno (niente email da Google Maps, niente nome titolare, value sarebbe un placeholder finto su lead non ancora umanamente qualificati). Lo stage enum resta compatibile apposta per un domani: quando un lead risponde con interesse reale, si promuove a mano nel Kanban (mapping, non redesign). Dettaglio in CP-20260728-0XX."
+    },
+    {
+      "id": "TASK-YT-001",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory: retrofit execute_critic + agents.py sul motore condiviso 11-APEX-7-CORE (ADR-010)",
+      "stato": "fatto",
+      "note": "Apex7Orchestrator ora istanzia APEX7Memory(domain)/RuFLOOrchestrator(domain) (default 'youtube', parametrizzabile per i test). execute_critic mantiene la logica di scoring reale invariata ma persiste score/dimensioni/debolezze via shared_memory.log_critique() + un checkpoint ruflo.create_checkpoint() invece di restare locale al file YouTube. Caricamento moduli condivisi per file (importlib, non sys.path+import) per evitare collisione con i moduli locali memory.py/agents.py. agents.py (Conductor mock 'Legami d'amore', Plan 2) verificato: e' una pipeline parallela e non collegata alle 6 fasi reali F1-F6, non chiama execute_critic e non e' toccata dai gate TASK-YT-002..007 - lasciata invariata in questo lotto, candidata a decisione di ritiro insieme a TASK-YT-006. Gate: test_youtube_apex7.py 11/11 verde (confermato, incluso critique_id reale nel log) + test_multi_tenant.py 4/4 verde. Vedi CP-20260728-007."
+    },
+    {
+      "id": "TASK-YT-002",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory: F4 Produzione, spec Fliki reale multi-scena da script.md di F3",
+      "stato": "fatto",
+      "note": "run_phase_4 legge working_memory['script_path'] reale e parsa le sezioni HOOK/INTRO/CORPO/CTA (esclusa 'Note SEO inline', metadato) in scene reali via nuovo _parse_script_scenes; video_id/title/hook_type da working_memory['script_idea_title']/['script_idea_hook_type'] (F3), non piu' hardcoded 'claude-code-001'. Gate eseguito: 2 candidati reali diversi -> video_id/title/hook_type/testo scene tutti diversi, schema produzione-spec PASS su entrambi (scene_count uguale a 4 in entrambe, onesto: F3 emette sempre le stesse 4 sezioni, il numero non e' piu' hardcoded a priori). test_youtube_apex7.py 11/11 verde. Vedi CP-20260728-008. || [ALTRA SESSIONE IN PARALLELO, stesso lotto risolto diversamente] FATTO da Claude 2026-07-29 (ordine Max: Estate prende il controllo dei modelli). run_phase_4 non e piu hardcoded (1 scena fissa): legge working_memory[script_path] (script.md reale di F3), nuova funzione module-level _scene_da_script parsa HOOK/INTRO/CORPO/CTA in scene multiple (taglia note di regia + timecode bullet, split a frase). video_id/title/hook_type reali dalla working_memory. Gate VERDE: 2 script diversi -> scene_count 9 vs 8 + testo diverso, validate_schemas produzione-spec PASS entrambi, test_youtube_apex7 11/11 OK. Vedi CP-20260729-003."
+    },
+    {
+      "id": "TASK-YT-003",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory: F5 Pubblicazione, metadati/titolo/tag reali dal video+script scelti",
+      "stato": "fatto",
+      "note": "run_phase_5 riscritta: titolo da script_idea_title, descrizione da HOOK+INTRO+CTA reali di script.md (via _parse_script_scenes), tag da learned_rules.json['high_performing_tags'] + canale_cluster reale di F1 (aggiunto working_memory['canale_cluster'] in run_phase_1) + keyword tokenizzate dal titolo idea. brief-miniatura.json: concept/text_overlay derivati dall'HOOK reale. Gate SEO ora logga onestamente pass/fail reale invece di stampare sempre PASS. Gate eseguito: 2 candidati diversi -> title/tags diversi, seo_score.py --json reale: run A total=92.5 (nota onesta titolo 73 char fuori 20-70), run B total=100.0, pass_soglia_70 true su entrambe. test_youtube_apex7.py 11/11 verde. Vedi CP-20260728-009. || [ALTRA SESSIONE IN PARALLELO, stesso lotto risolto diversamente] FATTO da Claude 2026-07-29. run_phase_5 non piu hardcoded: titolo da working_memory[script_idea_title], descrizione+brief miniatura costruiti dalle sezioni REALI dello script (_sezioni_script), tag da learned_rules[high_performing_tags] + token del titolo reale + hook_type. Gate VERDE: 2 script diversi -> titolo e tag diversi, seo_score 100/100 pass_soglia_70=True entrambi, validate_schemas metadati+brief-miniatura PASS, test_youtube_apex7 11/11. Vedi CP-20260729-004."
+    },
+    {
+      "id": "TASK-YT-004",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory: F6 Audit, gate onesto -- niente views_per_hour finti senza video reale pubblicato",
+      "stato": "fatto",
+      "note": "Nuovo manifest memory/published_videos.json (run_id/video_id/url/channel_handle/published_at), popolato solo per video davvero caricati. run_phase_6 riscritta: senza voce per la run -> return True senza scrivere (log onesto, non errore); voce troppo recente (<24h, riusa VIDEO_MATURITY_FLOOR_HOURS) -> nessuna scrittura; voce matura -> riusa _get_channel_videos (stesso fetch pubblico di F2) per calcolare views_per_hour reale. ctr/retention_rate = null esplicito (richiedono YouTube Studio, non fabbricati). Fix collaterale in self_improve.py (float(None) altrimenti esplode sui nuovi log null). Gate: (a) run senza manifest -> performance_logs.json invariato, 95 righe prima e dopo (diff zero); (b) run con manifest su video reale gia' cachato (@ciraolone) -> riga con views_per_hour=263.89 (non 35.5). Entry di test rimossa dopo la verifica (non era un video realmente pubblicato), file di produzione ripristinati puliti. test_youtube_apex7.py 11/11 verde. Vedi CP-20260728-010. || [ALTRA SESSIONE IN PARALLELO, stesso lotto risolto diversamente] FATTO da Claude 2026-07-29. run_phase_6 non appende piu views_per_hour 35.5 finto. Audit onesto su manifest memory/published_videos.json: senza voce reale per la run -> nessuna scrittura (self-improver non impara su dati inventati); voce troppo recente (<24h) -> nessuna scrittura; voce reale abbastanza vecchia -> views_per_hour CALCOLATO da fetch pubblico reale (_fetch_video_views), ctr/retention null (richiedono YouTube Studio, non si inventano). Gate VERDE: caso A (no manifest) e caso B (troppo recente) -> 0 righe aggiunte; test_youtube_apex7 11/11. Ramo fetch-reale documentato (serve un video davvero pubblicato). Vedi CP-20260729-005."
+    },
+    {
+      "id": "TASK-YT-005",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory: Dashboard riflette l'esito reale (PASS/FAIL) della run corrente",
+      "stato": "fatto",
+      "note": "Nuovo Apex7Orchestrator.write_dashboard(), chiamato a fine execute_workflow (successo e fallimento): legge working_memory reale, scrive PASS/FAIL/N.D. per fase (non piu' sempre PASS). phase_results persistito in working_memory per sopravvivere a --resume. Fix collaterale: save_state() mancante sul ramo di fallimento (il messaggio diceva gia' 'Stato salvato' ma non lo faceva). Decisione presa: run_youtube_apex7.py RITIRATO (git rm) - unica altra scrittrice della dashboard, pipeline fantasma su 'Dose Mentale' mai collegata alle fasi reali, nessun codice/test lo importava. Aggiornato anche implementation_plan.md (voci 4-8). Gate: caso FAIL (canale fabbricato, cashcow index reale 15.0) -> dashboard mostra F1 FAIL e F2-F6 'non eseguita', stato fabbrica 'BLOCCATA ALLA FASE 1'; caso PASS (run reale F1-F6) -> 6/6 PASS, stato 'OPERATIVA'. test_youtube_apex7.py 11/11 verde. Vedi CP-20260728-011. || [ALTRA SESSIONE IN PARALLELO, stesso lotto risolto diversamente] FATTO da Claude 2026-07-29. Nuovo Apex7Orchestrator.write_dashboard() scrive la dashboard canonica dai dati REALI della run (canale/video scelti, esito vero per fase). execute_workflow traccia fasi_esito e chiama write_dashboard su successo E su fallimento (prima faceva sys.exit prima di scrivere -> dashboard non vedeva mai un FAIL). Ritirato il percorso fantasma run_youtube_apex7.py (Conductor mock, sempre 6x PASS su Dose Mentale): deprecato con banner, scrive su *-LEGACY.md, non clobbera piu la dashboard vera (non cancellato, vincolo additivo). Gate VERDE: caso PASS -> 6x verde RUN COMPLETA; caso F2 fallita -> F2 rosso FAIL + F3-F6 non eseguite, RUN FALLITA, exit 1; test_youtube_apex7 11/11. Dashboard committata a baseline onesto (0/6, nessuna run reale ancora). Vedi CP-20260729-006."
+    },
+    {
+      "id": "TASK-YT-006",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory (cross-eco): ritiro reimplementazione APEX-7 indipendente in 12-STREAM-S7-BOT",
+      "stato": "fatto",
+      "note": "NON migrato - motivazione scritta (clausola esplicita del gate: 'o motivazione scritta se decidi di non farlo in questo giro'). Indagine (STATO-RIPRESA.md/APEX-7.md + python test_apex7.py baseline verde): non e' un mock hardcoded da ritirare come agents.py di YouTube, e' un'implementazione APEX-7 Level 2 matura (6 gate a rubrica/33 criteri, Event Bus con DLQ+replay, memory con lock/checkpoint/restore, gate L6->L7 self-giudicante) piu' avanzata di 11-APEX-7-CORE su questi assi. Migrarla sarebbe un downgrade funzionale, non un miglioramento, su un sistema di trading reale (Solana mainnet) appena chiuso da Gael lo stesso giorno (TASK-GAEL-20260728-STREAM-S7-BOT.md). Nessun file toccato in 12-STREAM-S7-BOT. Raccomandazione per Max nel checkpoint: eventualmente portare le funzionalita' mancanti di Stream-S7-Bot DENTRO 11-APEX-7-CORE, non il contrario - decisione architetturale sua, non presa qui. Vedi CP-20260728-012. [MERGE 2026-07-30: la sessione di Max aveva ri-assegnato questo lotto a Gael (non vedeva la decisione gia' presa). Verificato sul disco al merge: 12-STREAM-S7-BOT ha ancora la sua implementazione APEX-7 propria, zero import da 11-APEX-7-CORE, quindi 'NON migrato' e' lo stato reale e la decisione resta valida.]"
+    },
+    {
+      "id": "TASK-YT-007",
+      "owner": "Gael",
+      "giorno": "2026-07-28",
+      "titolo": "YT-Factory: aggiornare REGISTRO-IMPRESA.md + PIANO-MAESTRO/07-BACKBONE-RUFLO-SKILLS.md",
+      "stato": "fatto",
+      "note": "Entrambi i file aggiornati allo stato reale (non aspirazionale): 07-BACKBONE-RUFLO-SKILLS.md sostituisce 'Fase 1 pilota in corso' con l'esito reale e misto (YouTube in uso reale, Stream-S7-Bot NON migrato con motivazione). REGISTRO-IMPRESA.md: riga STREAM-S7-BOT aggiornata (rimossa dicitura obsoleta 'in migrazione'), riga 11-APEX-7-CORE aggiornata con stato vero, NUOVA riga YOUTUBE-AUTOMATION-FACTORY aggiunta in PRODOTTI & RUNTIME VIVI (non esisteva ancora nonostante fosse un runtime reale). Trovato e corretto un bug reale durante la chiusura: test_apex7_orchestrator_e2e sovrascriveva silenziosamente la dashboard reale tracciata ad ogni run di test (write_dashboard() non aveva un path overridabile come state_file/decision_log_path). Fix: nuovo self.dashboard_path overridabile su Apex7Orchestrator, test isolato su test_templates_dir. test_youtube_apex7.py 11/11 verde, git status pulito sulla dashboard dopo i test. CON QUESTO SI CHIUDE L'INTERO TASK FORMALE TASK-GAEL-20260728-YOUTUBE-FACTORY.md (TASK-YT-001..007). Vedi CP-20260728-013. || [ALTRA SESSIONE IN PARALLELO, stesso lotto risolto diversamente] FATTO da Claude 2026-07-29. REGISTRO-IMPRESA.md: nuova riga YOUTUBE-AUTOMATION-FACTORY con stato reale F1-F6 sul motore condiviso 11-APEX-7-CORE + riga 11-APEX aggiornata (pilota lato YouTube completo). Dossier 07: blocco stato reale pilota 2026-07-29. Gate: entrambi citano 11-APEX-7-CORE motore condiviso YouTube+Stream-S7 + stato vero 6 fasi. Vedi CP-20260729-008."
+    },
+    {
+      "id": "TASK-KDP-W1",
+      "owner": "Gael",
+      "giorno": "Settimana 1 (24-30 ago 2026)",
+      "titolo": "Workflow KDP: chiudere ciclo end-to-end (avvio->libro+prompt copertina+copy Amazon->cartella ordinata). Nord: 5-10 libri/settimana dopo che gira pulito",
+      "stato": "fatto",
+      "note": "FATTO 2026-08-25 (CP-20260825-002). Gate soddisfatto: `python -m engine.kdp pacchetto the-winter-term` esce 0 = COMPLETO (manoscritto + prompt copertina + copy KDP nella stessa cartella `LIBRI/libri_pronti/The_Winter_Term/`). Libro reale prodotto dal flusso: 'The Winter Term', dark academia mystery, 24/24 capitoli, 39.668 parole, 116 pagine REALI contate sul PDF, in 43,2 minuti. Chiusi 3 buchi del motore che impedivano il ciclo: (1) `kdp copy` NUOVO - salva_copy() esisteva dal 15/08 ma nel flusso vivo non lo chiamava nessuno, il copy dei 3 libri precedenti era scritto a mano dentro progetto.json senza validazione; (2) il pacchetto ora nasce anche SENZA copertina (prima FileNotFoundError: senza .png nessuna cartella e i 3 pezzi restavano sparsi), con bloccante esplicito 'Copertina assente' in validazione.json; (3) COPERTINA-PROMPT.md ora entra sempre nel pacchetto (nessuno dei 3 pacchetti consegnati ce l'aveva). + `kdp pacchetto` NUOVO come verificatore del gate. 135 test verdi (erano 127), 8 nuovi. SKILL.md e SOP allineate nello stesso commit. RESTA A GAEL: generare il .png dal prompt, poi `kdp consegna the-winter-term --cover <png>` per renderlo pubblicabile. NOTA: scritto fuori dalla nicchia attiva con --motivo dichiarato, B-018 (una nicchia/un autore) va deciso prima del quinto libro. Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
+    },
+    {
+      "id": "TASK-CAROSELLI-W1",
+      "owner": "Gael",
+      "giorno": "Settimana 1 (24-30 ago 2026)",
+      "titolo": "Carousel Factory: comando unico + argomento topic -> caroselli generati e salvati ordinati per prodotto. UFFICIALE da oggi, Claude assiste direttamente",
+      "stato": "fatto",
+      "note": "FATTO 2026-08-27 (CP-20260825-003). Comando unico: `python \"SKILL & Agenti/Workflow agency creative/caroselli.py\" \"<argomento>\" --slide 6`, exit 0. Output reale: Arsenale Caroselli/Preventa/2026-08-27_quanto-tempo-perdi-a-fare-un-preventivo/ (6 PNG 1080x1080 + copy.json + caption.txt), verificato guardando le slide, non solo il log. Pipeline in un processo solo: argomento -> copy via API -> validazione copy (max 7 parole, accent presente, niente lineette lunghe: un copy sbagliato viene rigenerato, non renderizzato) -> render locale -> deposito -> gate automatico (conta PNG, peso, dimensioni reali). MOTORE: usato il Ramo C (render locale Puppeteer) e NON il Ramo D (Arena) indicato nella task, perche' il D e' verificato fermo su questa macchina (playwright_stealth non installato, ArenaAI/session_data assente = serve login Google interattivo, e comunque richiede 5 passaggi manuali per run). Il D resta raggiungibile con --engine arena, che spiega cosa manca. Trovati e corretti 3 bug reali nel runtime carousel-factory che producevano slide sbagliate IN SILENZIO (font mai caricati per policy di origine su page.setContent, parole incollate, screenshot prima dei webfont). 20 test verdi. Ordine formale CF-2026-PREVENTA-002 + ARCHITETTURA.md CF-R5 aggiornata. ATTENZIONE B-021: caroselli - agency/config.py e' tracciato sul repo PUBBLICO con ARENA_EMAIL, ARENA_PASSWORD e 2 API key in chiaro (chiave OpenRouter viva). Dettaglio in TASK-GAEL-20260824-SETTIMANA-01.md"
+    },
+    {
+      "id": "TASK-PUBLISHER-W1",
+      "owner": "Gael",
+      "giorno": "Settimana 1 (24-30 ago 2026)",
+      "titolo": "Consolidare Workflow pubblicazione automatica esistente in comando richiamabile (input: cartella caroselli -> pubblica/dry-run su canale reale). Sblocca sia Caroselli che futuro KDP/YouTube",
+      "stato": "fatto",
+      "note": "FATTO 2026-08-27 (CP-20260827-001). Gate soddisfatto sul ramo previsto dalla task (\"pubblica O fa dry-run verificato, se Max non ha ancora dato ok per il live\"). Comando unico: `python \"SKILL & Agenti/Workflow pubblicazione automatica/pubblica.py\" \"<cartella>\"` (dry-run verificato di default) / `--live` per pubblicare davvero. Provato sull'output REALE di TASK-CAROSELLI-W1 chiuso stamattina (Arsenale Caroselli/Preventa/2026-08-27_quanto-tempo-perdi-a-fare-un-preventivo): 6 slide 1080x1080 + caption validate, canale dedotto instagram -> @digitalempireagency.e, exit 2 = PASS PARZIALE. PARZIALE e non PASS perche' la verifica di sessione NON e' una stampa: apre Chrome reale (151.0.7922.174), va su instagram.com, screenshot in _diagnostica/ -- il browser parte e la pagina carica, manca solo la SESSIONE (session_data/ assente su TUTTI i canali). Il --live provato apposta si e' RIFIUTATO da solo invece di sbattere sul login: nessun post reale creato. Altri 5 run del gate tutti FAIL corretti (cartella senza slide -> elenca le candidate; carosello 2026-08-06 senza caption.txt -> blocca; cartella inesistente; --canale tiktok -> blocca col motivo). TROVATO IL FOLDER PEGGIO DI COME SI PRESENTAVA, verificato eseguendo: (1) push_social.py -- che il CLAUDE.md locale dichiara OBBLIGATORIO -- e' una SIMULAZIONE: stampa 'completata con successo (SIMULATA)' ed esce 0, requests.post commentata, media assenti dal payload (B-024); (2) main_orchestrator.py non parte proprio (OpenAIError a import time) e stampa 'FLUSSO COMPLETATO CON SUCCESSO!' incondizionatamente (B-025); (3) Instagram/instagram_publisher.py::publish() ingoia ogni eccezione e 'riesce' sempre -> NON usato, il comando wrappa scripts/ig_carousel_publish.py che ritorna un bool onesto; (4) quel motore buono era inutilizzabile solo perche' CAROSELLI_DIR puntava a C:/Users/Utente/... (altra macchina) -- non toccato (ADR-003), gli passo un path assoluto; (5) TikTok/tiktok_publisher.py non importa (B-026); do_login() cerca input[name=username] che IG 2026 non ha piu' (B-027). SICUREZZA B-023: Instagram/config.py ha IG_PASSWORD in chiaro sul repo PUBBLICO (terza dopo B-020 Brevo e B-021 Arena) -- da cambiare PRIMA del login una tantum, o invalida la sessione appena creata. NOTA per TASK-MEMORY-SYNC-W1: `python -m empire mem write` (il fix anti-collisione di B-009 'che nessuno usa') NON girava -- ModuleNotFoundError: No module named 'yaml'. pip install pyyaml e funziona: questo checkpoint e' scritto con quel comando, non a mano. Le 5 collisioni non erano pigrizia, era lo strumento rotto. RESTA DA FARE (umano, account di Max): `python Instagram/setup_session.py` -> il dry-run deve dare PASS/exit 0; poi --live solo con ok esplicito di Max. Diagnosi completa in Workflow pubblicazione automatica/DIAGNOSI-PUBLISHER.md"
+    },
+    {
+      "id": "TASK-ARENA-SESSION-W1",
+      "owner": "Gael",
+      "giorno": "Settimana 1 (24-30 ago 2026) — SECONDARIA/fallback",
+      "titolo": "Consolidare in un solo modulo condiviso le 3 automazioni Arena/browser duplicate (caroselli, arena_thumbnail YouTube, resti KDP-Arena) — riduce bug ricorrenti di profilo/login/hang",
+      "stato": "fatto",
+      "note": "FATTO 2026-08-27 (CP-20260827-004). Gate: 2 consumatori su 3 usano LO STESSO modulo `shared/arena_session.py`, verificato con RUN REALI (browser aperto davvero su arena.ai da entrambi) e confrontando l'identita' dell'oggetto modulo in memoria: stesso file, stesso id, stessa classe. Consumatore 1 = caroselli (`caroselli - agency/Core/browser_manager.py`, ora ADATTATORE: API pubblica invariata, arena_generator.py non modificato - ADR-003). Consumatore 2 = arena_thumbnail (YOUTUBE-AUTOMATION-FACTORY), ricablato mantenendo i nomi come deleghe. Terzo consumatore (_archivio/lmarena_client.py) NON migrato di proposito: e' archiviato e non lo importa nessuno, sarebbe lavoro su codice morto. SBLOCCATO UN GUASTO REALE: browser_manager.py moriva all'import su `playwright_stealth` (non installato) - ecco perche' il Ramo D/Arena dei caroselli risultava fermo in CP-20260825-003; ora lo stealth e' opzionale. Resta un secondo blocco diverso: arena_generator.py importa `playwright_recaptcha`, pure assente -> B-029. Il modulo unifica le lezioni che stavano in una sola copia: ricerca della scheda arena.ai (causa reale dei timeout 6-9 ago), domcontentloaded mai networkidle, modale Terms of Use, attesa login umano, rilevamento captcha. ERRORE MIO CORRETTO IN CORSA: la prima stato_login() dichiarava 'autenticato' vedendo una textarea e ha detto autenticati due profili vuoti - su arena.ai la chat e' usabile da sloggati. Poi il match su 'auth' ha ripetuto l'errore perche' `arena-auth-prod-v1` c'e' anche da anonimi. Ora domina `provisional_user_id` e in dubbio risponde non_autenticato, mai autenticato. Ramo positivo non verificabile senza un login Arena reale -> B-030."
+    },
+    {
+      "id": "TASK-MEMORY-SYNC-W1",
+      "owner": "Gael",
+      "giorno": "Settimana 1 (24-30 ago 2026) — SECONDARIA/fallback",
+      "titolo": "Far rispettare per davvero l'anti-collisione checkpoint (B-009, riaccaduta 2026-08-23): un controllo che blocca il commit invece di scoprirla al merge",
+      "stato": "fatto",
+      "note": "FATTO 2026-08-27 (CP-20260827-002). Gate dimostrato con una collisione VERA su due branch (due git worktree --no-checkout sullo stesso .git): sessione A committa CP-20260828-001, sessione B sceglie lo stesso ID su un altro branch -> COMMIT BLOCCATO, `git commit exit = 1`, branch B fermo, file mai entrato nella storia. Intercettata PRIMA del commit, non al merge. Secondo controllo: CRLF nei file di company/Memory (B-028) - blocca ed ha `--fix` che normalizza e ri-stagea (verificato byte-identico all'originale). Nuovo: .githooks/check_memory.py + pre-commit + installa.py (core.hooksPath, perche' i hook non sono versionati e un hook committato non si attiva da solo). SCOPERTO PERCHE' IL FIX DI LUGLIO NON VENIVA USATO: `python -m empire mem write` moriva su ModuleNotFoundError 'yaml' - non era pigrizia, era rotto. pip install pyyaml e funziona; i 4 checkpoint di oggi sono scritti con quel comando. Da li' la regola: zero dipendenze oltre stdlib+git. ERRORE MIO: al primo test il controllo ha RILEVATO la collisione e poi e' morto stampandola (UnicodeEncodeError sui box-drawing in console cp1252), lasciando passare il commit - stessa forma di B-013, gia' nel backlog. Corretto: solo ASCII nei messaggi. RESTA A MAX: lanciare `python .githooks/installa.py` sulla SUA macchina, altrimenti da lui il controllo non e' attivo ed e' li' che nascono le collisioni."
+    },
+    {
+      "id": "TASK-GITLFS-W1",
+      "owner": "Gael",
+      "giorno": "Settimana 1 (24-30 ago 2026) — SECONDARIA/fallback",
+      "titolo": "Chiudere B-008: Git LFS o gitignore mirato per i blob (PDF/DOCX/PNG) prima che la produzione KDP/Caroselli/YouTube faccia ingrassare il repo senza controllo",
+      "stato": "fatto",
+      "note": "FATTO 2026-08-27 (CP-20260827-003, ADR-013). DECISIONE: .gitignore mirato + guard 5MB, NON Git LFS. Sui numeri reali: .png = 2167,5 MB su 10.679 file (~70% dei 3,1 GB di .git). Il motore della crescita NON sono gli screenshot (come diceva B-008) ma le COPERTINE KDP: 2,5-6,1 MB l'una x 3-4 copie per libro = ~15 MB a libro, che a 5-10 libri/settimana fa 4-8 GB/anno. LFS scartato con motivo: quota gratuita 1 GB si esaurisce in settimane e oltre quota il push FALLISCE; senza `git lfs install` su una macchina si scaricano file-puntatore da 130 byte al posto delle immagini senza errore evidente; e non risolve la duplicazione 3-4x. Criterio applicato: non 'e' pesante' ma 'si rigenera e non viaggia fra Max e Gael' - la copertina va su KDP, nel repo resta COPERTINA-PROMPT.md. Ignorati anche gli slide-*.html dei caroselli (628 KB l'uno: incorporano il font in base64, 6 volte per carosello). GATE: commit di prova, `git add -A` su una cartella con screenshot 0,17 MB + copertina 5,26 MB + un sorgente -> `git log --stat` mostra SOLO il sorgente; forzando con `git add -f` il guard blocca (exit 1). Soglia 5 MB scelta perche' il deliverable legittimo piu' grosso ci sta sotto: un guard senza falsi allarmi non viene disattivato. NON FATTO DI PROPOSITO: le copertine dei 4 libri gia' tracciati restano tracciate - `git rm --cached` le cancellerebbe dal disco di Max al primo pull. Comando in ADR-013, da eseguire con lui presente."
+    },
+    {
+      "id": "TASK-PREVENTA-CANALI-W1",
+      "owner": "Neri",
+      "giorno": "Settimana 1 (24-30 ago 2026)",
+      "titolo": "Preventa: aggiungere fonti lead (Instagram + Libreria Inserzioni Meta, oltre Google Maps esistente) e canale invio Gmail (oltre WhatsApp esistente) — anche solo 1 delle 3 va bene per questa settimana",
+      "stato": "da_fare",
+      "note": "Primo task operativo di Neri (pivot da ruolo organizzativo, 2026-08-23). Emperator Agent lo segue da vicino. Dettaglio in TASK-NERI-20260824-SETTIMANA-01.md"
+    },
+    {
+      "id": "TASK-OUTREACHFACTORY-CANALI-W1",
+      "owner": "Neri",
+      "giorno": "Settimana 1 (24-30 ago 2026)",
+      "titolo": "Outreach Factory: aggiungere 1 canale nuovo (es. Pagine Gialle) o sistemare uno dei 3 esistenti (Email/IG/LinkedIn) se non gira piu bene",
+      "stato": "da_fare",
+      "note": "Prodotto flagship potenziale piu alto (PIANO-MAESTRO 23). Neri decide la strada e motiva la scelta nel checkpoint. Dettaglio in TASK-NERI-20260824-SETTIMANA-01.md"
+    },
+    {
+      "id": "TASK-KDP-FIX-W2",
+      "owner": "Gael",
+      "giorno": "W2 (1-7 set)",
+      "titolo": "PRIMA DI TUTTO: 6 fix libri — 4 ASIN su KDP, 1 nicchia+1 autore (B-018), 4 pacchetti exit 0, falsi positivi trattino, stima pagine, magazzino >=7",
+      "stato": "da_fare",
+      "note": "TASK-GAEL-20260831-SETTIMANA-02.md - ordine obbligatorio: FIX -> PIANO -> 5LIBRI -> LANCI"
+    },
+    {
+      "id": "TASK-KDP-PIANO-W2",
+      "owner": "Gael",
+      "giorno": "W2 (1-7 set)",
+      "titolo": "Piano editoriale settimanale libri + team 3 agenti (SCOUT/EDITOR/GATE) + comandi /piano-libri e /libro-del-giorno",
+      "stato": "da_fare",
+      "note": "TASK-GAEL-20260831-SETTIMANA-02.md - ordine obbligatorio: FIX -> PIANO -> 5LIBRI -> LANCI"
+    },
+    {
+      "id": "TASK-KDP-5LIBRI-W2",
+      "owner": "Gael",
+      "giorno": "W2 (1-7 set)",
+      "titolo": "5 libri nuovi completi: kdp pacchetto exit 0, zero bloccanti, zero verifiche non eseguite",
+      "stato": "da_fare",
+      "note": "TASK-GAEL-20260831-SETTIMANA-02.md - ordine obbligatorio: FIX -> PIANO -> 5LIBRI -> LANCI"
+    },
+    {
+      "id": "TASK-LANCI-ECO-W2",
+      "owner": "Gael",
+      "giorno": "W2 (1-7 set)",
+      "titolo": "Ecosistema 14-LANCI: SOLO IL PIANO (L1 ricognizione -> L6 ADR proposto). Zero cartelle create prima dell'ok di Max",
+      "stato": "da_fare",
+      "note": "TASK-GAEL-20260831-SETTIMANA-02.md - ordine obbligatorio: FIX -> PIANO -> 5LIBRI -> LANCI"
+    }
+  ],
+  "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md + company/Memory/tasks/TASK-GAEL-20260824-SETTIMANA-01.md + TASK-NERI-20260824-SETTIMANA-01.md (cadenza settimanale da 2026-08-23)",
+  "creato": "2026-07-21 08:20",
+  "aggiornato": "2026-08-27"
 }

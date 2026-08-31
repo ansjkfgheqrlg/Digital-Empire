@@ -1,3 +1,52 @@
+## 📋 2026-08-31 — CLAUDE: audit W1 verificato + TASK W2 emesse per Gael (4 blocchi)
+
+**Audit W1 su richiesta di Max: fatto rieseguendo il codice, non leggendo i checkpoint.**
+`pytest tests/` nel workflow KDP -> **135 passed in 22.31s**. `kdp stato` -> 4 libri, 24/24
+capitoli, 36.871 / 37.168 / 38.128 / 39.668 parole. `kdp pacchetto the-winter-term` -> **exit 0
+COMPLETO**; sugli altri tre **exit 1** con la ragione giusta (nati prima del fix
+COPERTINA-PROMPT). Capitoli letti a campione: prosa vera. **Gael ha detto il vero: 6/6 task W1
+chiuse, tutte con comando e output incollati.**
+
+### Difetti trovati che le sue task non coprivano (misurati oggi)
+1. **4 libri scritti, 0 pubblicati.** `libri_pubblicati/` contiene solo `.gitkeep`, mentre tre
+   libri hanno `pubblicabile: True`, **0 bloccanti e 0 verifiche non eseguite**. La fabbrica
+   produce e non consegna: nessuna vendita, e quindi nessun dato su nicchia/prezzo/copertina.
+2. **B-018 aggravato**: `nicchia-stato` dice "libri nel catalogo: **0**" mentre i 4 libri stanno
+   in 4 nicchie con 3 nomi d'autore. "Also by" vuota su tutti e quattro.
+3. **66 avvisi trattino, 66 falsi positivi.** Su The_Quiet_Hours verificati uno per uno: 29/29
+   sono parole composte inglesi corrette (`spiral-bound`, `chain-link`, `hand-painted`). Un
+   canale di avvisi rumoroso al 100% e' il modo in cui una lineetta vera passa inosservata.
+4. **Stima pagine sbagliata in modo sistematico** (120,9 stimate vs 113 reali, "di nuovo" per
+   ammissione del commit). Sui 4 libri il rapporto parole/pagina non e' nemmeno monotono.
+5. **Magazzino a 1 argomento libero**: non regge una settimana a 1 libro/giorno.
+6. **Reparto Lanci = carta**: `IB-L2-LANC-Lanci-Campagne` ha 1.805 righe di documentazione,
+   9 agenti, 2 workflow — e **zero file eseguibili**. `scripts/README.md` dice "build in V2":
+   i 3 script non esistono.
+
+### Task W2 emesse — `company/Memory/tasks/TASK-GAEL-20260831-SETTIMANA-02.md`
+Ordine obbligatorio (direttiva Max: prima si ripara la fabbrica, poi si alza il ritmo):
+**TASK-KDP-FIX-W2** (6 fix, viene prima di tutto) -> **TASK-KDP-PIANO-W2** (piano editoriale
+settimanale sul modello di `piano_editoriale_70.json`, team 3 agenti SCOUT/EDITOR/GATE, comandi
+`/piano-libri` e `/libro-del-giorno`) -> **TASK-KDP-5LIBRI-W2** (5 pacchetti a exit 0) ->
+**TASK-LANCI-ECO-W2** (piano ecosistema `14-LANCI`, spezzato in L1-L6, **zero cartelle create**
+prima dell'ok di Max).
+
+### Sync di oggi
+- **Sesta collisione ID checkpoint (B-009)**: `CP-20260825-003` e `CP-20260826-001` esistevano
+  con contenuti diversi su due sessioni. I locali rinumerati in `CP-20260825-004` e
+  `CP-20260826-004`, riferimenti incrociati aggiornati.
+- **Controlli pre-commit di ADR-013 attivati sulla macchina di Max** (`core.hooksPath`). Al
+  primo giro hanno **bloccato un PDF da 44 MB** diretto nella storia: ora in `.gitignore` con
+  il motivo scritto. Il guard di Gael funziona sul serio.
+- Installati `python-docx`, `docx2pdf`, `pytesseract` sulla macchina di Max: senza, la suite
+  KDP non era eseguibile da qui.
+
+**RIPRESA DA**: Gael parte da **TASK-KDP-FIX-W2 / FIX-1** (caricare su KDP i 3 libri gia'
+pubblicabili + generare la copertina di The Winter Term). Se l'upload si blocca per un motivo
+esterno, deve dirlo subito a Max invece di aspettare fine settimana.
+
+---
+
 ## 🛡️ 2026-08-27 — CLAUDE: le 3 task SECONDARIE W1 chiuse — Settimana 1 completa (6/6) — CP-20260827-002/003/004
 
 Chiuse tutte e tre le secondarie. Con le 3 primarie già chiuse, la **Settimana 1 è 6/6**.

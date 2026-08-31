@@ -893,3 +893,14 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
 - ⚠️ SICUREZZA (B-021): `caroselli - agency/config.py` è tracciato sul repo **pubblico** con
   `ARENA_EMAIL`, `ARENA_PASSWORD` e due API key in chiaro. Peggio di B-020: qui c'è la
   password di un account. Chiave OpenRouter **viva**. CP-20260825-003.
+
+## 2026-08-31 (audit W1 Gael + task W2, Claude)
+- AUDIT: W1 di Gael verificata rieseguendo il codice (135 test verdi, 4 libri 24/24 capitoli,
+  `kdp pacchetto` exit 0/1 corretti). 6/6 task chiuse davvero.
+- INGEST: 6 difetti misurati non coperti dalle sue task — 0 libri pubblicati su 4 scritti,
+  B-018 aggravato (4 nicchie/3 autori, "Also by" vuota), 66 falsi positivi trattino, stima
+  pagine sbagliata, magazzino a 1 argomento, reparto Lanci senza file eseguibili.
+- TASK: emesse 4 task W2 per Gael (FIX -> PIANO -> 5LIBRI -> LANCI) in
+  `company/Memory/tasks/TASK-GAEL-20260831-SETTIMANA-02.md`.
+- SYNC: sesta collisione ID checkpoint (B-009) risolta rinumerando; hook pre-commit ADR-013
+  attivati sulla macchina di Max (hanno bloccato un PDF da 44 MB al primo giro).
