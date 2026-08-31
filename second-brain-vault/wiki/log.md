@@ -904,3 +904,24 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   `company/Memory/tasks/TASK-GAEL-20260831-SETTIMANA-02.md`.
 - SYNC: sesta collisione ID checkpoint (B-009) risolta rinumerando; hook pre-commit ADR-013
   attivati sulla macchina di Max (hanno bloccato un PDF da 44 MB al primo giro).
+
+## 2026-08-31 (audit generale Impero + nascita EMPERATOR, Claude)
+- AUDIT: stato dell'Impero misurato eseguendo i comandi, non leggendo i checkpoint
+  ([[AUD-20260831-001]]). 436 agenti, **58 operativi (13,3%)**, C4-uscita mancante su 314;
+  `.claude/agents/` vuoto contro 792 definizioni; `empire flow` con **0 step chiusi su 10
+  workflow**; 9.913 orfani bloccanti; `doctor` 2 block; `controllo` 2/6 canali; solo 3
+  ecosistemi su 14 con codice eseguibile. Runtime di governo sano: 236 test verdi.
+- SINTESI: motori veri e governance vera, ma i due strati **non si toccano a runtime** —
+  manca il punto in cui un ordine entra e attraversa l'azienda (F9 mai iniziata).
+- TASK: emessa `TASK-MAX-20260831-IMPERO-OPERATIVO` — STRUMENTO ZERO + 9 blocchi B0..B8,
+  ognuno con gate a comando. Direttiva di Max: **NIENTE SI SCARTA**, tutto va reso operativo.
+- TOOL: nato **EMPERATOR** (`.claude/agents/emperator.md` + `scripts/emperator_hook.py`),
+  primo agente realmente invocabile dell'Impero. Si attiva quando il suo nome compare in
+  una frase. → [[Tool_Emperator]]
+- FIX: due hook globali `UserPromptSubmit` erano scritti in sintassi bash (`pwd | grep`) e
+  **fallivano a ogni messaggio su Windows** — erano loro le righe "hook error". Contenuto
+  (WIKI-FIRST/Empire Studio/Memory Empire + NERVE-SOLVE) preservato parola per parola in
+  `~/.claude/hooks/empire_context/*.txt` e riparato. Backup dei settings prima di toccarli.
+- LEZIONE: un due-punti seguito da spazio in uno scalare YAML piatto rompe il frontmatter di
+  un agente, e Claude Code lo scarta **in silenzio**. Nessun errore, l'agente semplicemente
+  non esiste. Vale per ogni agente che verrà creato nel Blocco 2.
