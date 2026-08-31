@@ -110,10 +110,11 @@ di tuo.** Non è un'accusa — è un sintomo, e va risolto oggi.
 **Cosa succede:** ti preparo una guida tua, `SETUP-NERI.md`, passo per passo, un'azione per
 riga, con scritto **cosa devi vedere sullo schermo** dopo ogni passo per sapere che è andata.
 
-**In attesa di 3 informazioni da te o da Max:**
-1. Che computer usi — **Windows o Mac**
-2. Hai un **abbonamento Claude a pagamento**? (senza, non si parte)
-3. Hai già provato a installarlo, anche a metà?
+**I 3 dati sono arrivati (Max, 2026-08-31):** Windows · account fornito da Max (ognuno avrà
+il suo a breve) · mai installato prima, quindi si parte da zero pulito — la condizione migliore.
+
+**La guida è pronta: `SETUP-NERI.md`**, nella cartella principale del progetto. Otto passi,
+scritti per chi non è tecnico, con scritto dopo ognuno cosa devi vedere sullo schermo.
 
 **Il blocco è chiuso quando:** un tuo salvataggio arriva nel progetto e Max lo vede. Non
 quando dici "fatto". Quando si vede.

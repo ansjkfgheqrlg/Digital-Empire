@@ -940,3 +940,9 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   Scritta in lingua semplice con glossa a ogni termine e una sezione su come si scrive un ordine buono.
 - APERTO per Max: nome piattaforma, prezzo abbonamento, scelta lead magnet (3 opzioni, consigliata
   la terza: mini-strumento), 3 dati per l'installazione di Neri, cartella e dominio dei siti.
+- SETUP: consegnata `SETUP-NERI.md` (8 passi, Windows, linguaggio non tecnico, verifica
+  esplicita dopo ogni passo). Dati da Max: Windows, account condiviso in attesa di posti
+  individuali, nessun tentativo precedente. `SETUP-GAEL.md` resta valido per Gael, gia'
+  operativo (193 commit). Segnalato a Max il rischio dell'account condiviso: limiti d'uso
+  in comune (si tolgono la corrente a vicenda) e sospensione possibile per condivisione
+  credenziali -> fermerebbe tutti insieme. Consigliati posti separati subito.
