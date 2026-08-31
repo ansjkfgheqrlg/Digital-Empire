@@ -925,3 +925,18 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
 - LEZIONE: un due-punti seguito da spazio in uno scalare YAML piatto rompe il frontmatter di
   un agente, e Claude Code lo scarta **in silenzio**. Nessun errore, l'agente semplicemente
   non esiste. Vale per ogni agente che verrà creato nel Blocco 2.
+
+## 2026-08-31 (rifinitura EMPERATOR + task Neri SaaS, Emperator)
+- BUILD: `.claude/agents/emperator.md` + `scripts/emperator_hook.py` rifiniti su direttiva Max —
+  ego alzato, tono umano (ogni termine tecnico con glossa, ogni problema con la sua conseguenza),
+  postura coach col team con l'errore di pigrizia come nemico n.1 (esposti: Neri > Gael > Max),
+  perimetro privato PROGETTO EMPIRE, frase unica per gli estranei, auto-modifiche sempre dichiarate.
+- MISURA: Gael 193 commit (ultimo 27/08), **Neri 0 commit in assoluto** con 4 task dal 30/07.
+  Il suo lavoro non e' mai entrato nel repo: BLOCCO 0 = installazione, `SETUP-GAEL.md` non riusabile
+  (l'installazione ci sta in una riga sola, inservibile per chi non e' tecnico).
+- TASK: emessa `TASK-NERI-20260831-SAAS-YOUTUBE-AUTOMATION.md` — primo SaaS di Digital Empire,
+  6 blocchi: installazione, sales page, lead magnet + landing, logo, asset social, caroselli.
+  Skill `empire-premium-style`, riferimento aureo `Lancio corso skill beast/Leanding Page CCM/ccm-premium`.
+  Scritta in lingua semplice con glossa a ogni termine e una sezione su come si scrive un ordine buono.
+- APERTO per Max: nome piattaforma, prezzo abbonamento, scelta lead magnet (3 opzioni, consigliata
+  la terza: mini-strumento), 3 dati per l'installazione di Neri, cartella e dominio dei siti.

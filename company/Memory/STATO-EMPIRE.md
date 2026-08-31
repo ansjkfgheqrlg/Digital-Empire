@@ -4746,6 +4746,16 @@ prossima. Ti fermi solo a budget-guard 20% (chiudi pulito) o se un GATE è rosso
 - 2026-06-08 — Studio approfondito repo Content Factory Exponium (AION GROUP) →
   wiki `projects/Exponium/Exponium_Content_Factory_Studio.md`.
 
+- 2026-08-31 — **EMPERATOR operativo + TASK NERI "PACCHETTO SAAS YOUTUBE AUTOMATION"** (Claude/Emperator):
+  agente e hook rifiniti su ordine di Max (ego alzato, tono umano con glossa ai termini tecnici,
+  conseguenza sempre dichiarata, postura coach anti-pigrizia, perimetro privato, script per estranei,
+  auto-modifiche sempre dichiarate, task del team salvate in automatico).
+  MISURATO: Gael 193 commit (ultimo 27/08) -> operativo. **Neri 0 commit in assoluto** con 4 task
+  aperte dal 30/07 -> BLOCCO 0 installazione, in attesa di 3 dati (SO, abbonamento, tentativi).
+  Emessa `company/Memory/tasks/TASK-NERI-20260831-SAAS-YOUTUBE-AUTOMATION.md`: 6 blocchi
+  (installazione, sales page SaaS, lead magnet + landing, logo, asset social, caroselli),
+  stile `empire-premium-style`, riferimento `ccm-premium`.
+
 ## Lavori in corso
 - **GitHub monorepo + sync Max↔Gael (ADR-004, CP-002): ✅ LIVE** — repo privato
   `ansjkfgheqrlg/Digital-Empire`, push iniziale 966.63 MiB completato (2026-06-10 21:27).
