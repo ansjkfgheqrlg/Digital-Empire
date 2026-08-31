@@ -189,3 +189,6 @@ shared/_prove/
 # di Max, fuori dalla storia git. Aggiunto 2026-08-31.
 SKILL & Agenti/Empire Studio Suite/empire-studio/runs/andrei-pascu-cs2online-001/lessons/lezione-07/resources/vision-aps.pdf
 scripts/.emperator_hook.log
+
+# Cache locale strumenti. Non fa parte della storia del repo.
+.cache-tools/
