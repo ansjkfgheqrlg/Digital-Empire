@@ -188,3 +188,4 @@ shared/_prove/
 # aggiunge niente che i .md di knowledge/ non contengano gia'. Resta sul disco
 # di Max, fuori dalla storia git. Aggiunto 2026-08-31.
 SKILL & Agenti/Empire Studio Suite/empire-studio/runs/andrei-pascu-cs2online-001/lessons/lezione-07/resources/vision-aps.pdf
+scripts/.emperator_hook.log

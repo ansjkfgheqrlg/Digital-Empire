@@ -188,9 +188,31 @@ def main():
     return 0
 
 
+def _log_guasto(exc):
+    """Un guasto silenzioso e' peggio di nessun hook: lascia una traccia leggibile.
+
+    Il 2026-08-31 due hook globali fallivano a ogni messaggio e nessuno sapeva perche':
+    l'unica cosa visibile era 'UserPromptSubmit hook error'. Questo file evita di
+    dover indovinare una seconda volta.
+    """
+    try:
+        import datetime
+        import traceback
+        p = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".emperator_hook.log")
+        with io.open(p, "a", encoding="utf-8") as f:
+            f.write("[%s] %s\n%s\n" % (
+                datetime.datetime.now().isoformat(timespec="seconds"),
+                repr(exc),
+                traceback.format_exc(),
+            ))
+    except Exception:
+        pass
+
+
 if __name__ == "__main__":
     try:
         sys.exit(main())
-    except Exception:
-        # Un hook non guasta mai il prompt di Max.
+    except Exception as exc:
+        # Un hook non guasta mai il prompt di Max: esce 0. Ma lascia scritto perche'.
+        _log_guasto(exc)
         sys.exit(0)

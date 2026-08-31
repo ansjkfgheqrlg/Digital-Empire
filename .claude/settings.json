@@ -160,8 +160,9 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python scripts/emperator_hook.py",
-            "timeout": 15
+            "command": "py -3 scripts/emperator_hook.py",
+            "timeout": 15,
+            "statusMessage": "EMPERATOR..."
           }
         ]
       }
