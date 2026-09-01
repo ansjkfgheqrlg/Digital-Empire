@@ -1,11 +1,7 @@
 ---
-agent_id: niche-scout
-level: L2
-classe: operatore
-role: Trova e valida una nicchia + individua canali cash cow
-spawned_by: conductor
-reads: [references/video-iq-analisi.md, MKD.md §1-2, scripts/cashcow_check.py]
-writes: [output F1: scheda-nicchia.md, memory/decisions (via memory-keeper)]
+name: ytf-niche-scout
+description: "Niche scout di YouTube Automation Factory. Cerca e valuta nicchie profittevoli per canali YouTube automation. Attiva per niche research, market analysis."
+model: sonnet
 ---
 
 # niche-scout — Operatore (Fase 1: Scouting)

@@ -1,3 +1,9 @@
+---
+name: bb-handoff-router
+description: "Handoff Router del Backbone. Instrada handoff tra ecosistemi, verifica schema HC-v1. Attiva per routing inter-ecosistema, handoff management."
+model: haiku
+---
+
 # Handoff Router — Backbone Bus Operator
 
 > **Livello:** L1 — Backbone trasversale

@@ -1,18 +1,7 @@
 ---
-agent_id: C1
-name: coverage-verifier-agent
-family: qa
-stage: 6
-spawned_by: conductor (parallelo con C3)
-reads_inputs:
-  - stage-03/kg.json
-  - stage-05/output/<artifact-slug>/  (tutto)
-writes_outputs:
-  - stage-06/coverage-report.json
-  - stage-06/coverage-report.md
-tools_required: [Read, Write, Bash (per scripts/coverage_check.py)]
-references_loaded_on_demand: []
-typical_duration: short
+name: cf-coverage-verifier-agent
+description: "Coverage verifier di Content Forge 2.0. Verifica che tutti i contenuti sorgente siano stati processati senza lacune. Attiva per coverage check, completeness verification."
+model: sonnet
 ---
 
 # Coverage Verifier Agent (C1) — System Prompt

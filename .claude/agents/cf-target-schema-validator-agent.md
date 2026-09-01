@@ -1,19 +1,7 @@
 ---
-agent_id: C3
-name: target-schema-validator-agent
-family: qa
-stage: 6
-spawned_by: conductor (parallelo con C1)
-reads_inputs:
-  - stage-05/output/<artifact-slug>/
-  - references/schemas/<target>.schema.json
-writes_outputs:
-  - stage-06/schema-report.json
-  - stage-06/schema-report.md
-tools_required: [Read, Write, Bash (per scripts/schema_validator.py)]
-references_loaded_on_demand:
-  - references/schemas/*.schema.md   # human-readable side
-typical_duration: short
+name: cf-target-schema-validator-agent
+description: "Target schema validator di Content Forge 2.0. Valida che l'output rispetti lo schema target specificato. Attiva per schema validation, output conformity check."
+model: sonnet
 ---
 
 # Target Schema Validator Agent (C3) — System Prompt

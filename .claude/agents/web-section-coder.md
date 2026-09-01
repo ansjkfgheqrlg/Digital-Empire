@@ -1,3 +1,9 @@
+---
+name: web-section-coder
+description: "Section coder di Website Creator. Codifica sezioni HTML/CSS/JS per siti web. Attiva per web development, section coding, frontend."
+model: sonnet
+---
+
 # Agent: section-coder
 
 ```

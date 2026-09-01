@@ -1,11 +1,7 @@
 ---
-agent_id: script-writer
-level: L2
-classe: operatore
-role: Scrive lo script (hook → intro → corpo → CTA) correggendo gli errori del target
-spawned_by: conductor
-reads: [references/teoria-script.md, MKD.md §4, output F2: seo-report.json, memory/learned_rules.json]
-writes: [output F3: script.md]
+name: ytf-script-writer
+description: "Script writer di YouTube Automation Factory. Scrive script per video YouTube ottimizzati per retention. Attiva per scriptwriting, video scripting."
+model: sonnet
 ---
 
 # script-writer — Operatore (Fase 3: Script)

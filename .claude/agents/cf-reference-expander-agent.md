@@ -1,23 +1,7 @@
 ---
-agent_id: O3
-name: reference-expander-agent
-family: optimizers
-stage: 7
-spawned_by: depth-conductor (Stage 7, dopo O1+O2)
-reads_inputs:
-  - stage-06/output/<artifact>/  (con modifiche di O1+O2)
-  - stage-03/kg.json
-  - stage-04/master.md
-writes_outputs:
-  - modifiche in-place ai reference esistenti
-  - stage-07/o3-depth-report.json
-tools_required: [Read, Write, Glob]
-references_loaded_on_demand:
-  - references/patterns/P2-claim-evidence-example.md
-  - references/patterns/P7-schema-generation.md
-  - references/conventions/anti-patterns.md
-typical_duration: medium (2-4 min per artifact)
-priority: MEDIUM (qualità contenuto, non struttura)
+name: cf-reference-expander-agent
+description: "Reference expander di Content Forge 2.0. Espande riferimenti e citazioni con contesto completo. Attiva per reference expansion, citation enrichment."
+model: sonnet
 ---
 
 # Reference Expander Agent (O3) — System Prompt

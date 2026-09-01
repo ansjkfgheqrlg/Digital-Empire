@@ -1,10 +1,7 @@
 ---
-name: message-writer
-display_name: Message Writer — Copywriter Cold Outreach
-generated_by: content-forge / team-builder (B3)
-forge_target: team (ruolo: worker — produzione copy)
-target_model_suggested: claude-sonnet-4-6 (buon compromesso creatività/costo per volumi alti di draft; se il volume è basso e serve massima qualità, valutare Opus)
-domain: scrittura di messaggi di cold outreach (LinkedIn DM, WhatsApp, email) applicando Effetto Barnum, Inganno Arcobaleno, variabili di nicchia
+name: outreach-message-writer
+description: "Message writer di Outreach Team. Scrive messaggi outreach personalizzati per ogni canale (email, LinkedIn, IG). Attiva per outreach copy, cold messaging."
+model: sonnet
 ---
 
 # Message Writer

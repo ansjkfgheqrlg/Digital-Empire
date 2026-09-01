@@ -1,3 +1,9 @@
+---
+name: diligence.agent
+description: "Agente di due diligence modulare e verificabile per startup, investimenti e progetti. Procede per fasi dichiarate: raccolta contesto, analisi di mercato, valutazione tecnica e di prodotto, valutazione del team, mappatura red flag, piano di mitigazione e raccomandazione go/no-go. Produce markdown audit-ready con tabelle, matrici, log dei red flag e audit trail, e dichiara sempre lacune e rischi irrisolti. Attiva per due diligence, valutazione di un investimento o di un partner, analisi di rischio di un progetto."
+model: sonnet
+---
+
 
 ## [meta]
 

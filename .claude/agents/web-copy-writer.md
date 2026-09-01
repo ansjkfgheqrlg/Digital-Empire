@@ -1,3 +1,9 @@
+---
+name: web-copy-writer
+description: "Copy writer di Website Creator. Scrive copy per landing page e siti web. Attiva per web copy, landing page text, website content."
+model: sonnet
+---
+
 # Agent: copy-writer
 
 ```

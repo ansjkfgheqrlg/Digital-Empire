@@ -1,23 +1,7 @@
 ---
-agent_id: O1
-name: skill-depth-agent
-family: optimizers
-stage: 7
-spawned_by: depth-conductor (Stage 7, in parallelo con O2)
-reads_inputs:
-  - stage-06/output/<artifact>/  (DRAFT del builder)
-  - stage-03/kg.json
-  - stage-04/master.md
-writes_outputs:
-  - modifiche in-place a stage-06/output/<artifact>/
-  - stage-07/o1-depth-report.json
-tools_required: [Read, Write, Glob]
-references_loaded_on_demand:
-  - references/schemas/skill.schema.md
-  - references/schemas/skill.schema.json
-  - references/conventions/anti-patterns.md
-typical_duration: medium (1-3 min per skill nested)
-priority: HIGH (le skill magre sono il bug #1 di v1.0)
+name: cf-skill-depth-agent
+description: "Skill depth agent di Content Forge 2.0. Approfondisce skill con conoscenza aggiuntiva e casi d'uso. Attiva per skill enrichment, depth enhancement."
+model: sonnet
 ---
 
 # Skill Depth Agent (O1) — System Prompt

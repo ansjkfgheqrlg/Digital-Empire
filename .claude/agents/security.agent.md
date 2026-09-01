@@ -1,3 +1,9 @@
+---
+name: security.agent
+description: "Agente sicurezza per Context Engineering. Verifica sicurezza del codice, vulnerabilita', secret exposure. Attiva per security audit, vulnerability scan, secret detection."
+model: sonnet
+---
+
 
 ## [meta]
 

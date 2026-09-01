@@ -1,21 +1,7 @@
 ---
-agent_id: O5
-name: formula-validator-agent
-family: optimizers
-stage: 7
-spawned_by: depth-conductor (Stage 7, dopo O3)
-reads_inputs:
-  - stage-06/output/<artifact>/  (con modifiche di O1+O2+O3)
-  - stage-03/kg.json
-  - stage-04/master.md
-writes_outputs:
-  - eventuali fix in-place (formule incomplete completate)
-  - stage-07/o5-formula-report.json (sempre)
-tools_required: [Read, Write, Glob]
-references_loaded_on_demand:
-  - references/patterns/P9-target-shape-mapping.md
-typical_duration: short-medium (1-3 min)
-priority: HIGH se KG contiene framework, OPZIONALE altrimenti
+name: cf-formula-validator-agent
+description: "Formula validator di Content Forge 2.0. Valida formule, framework e strutture logiche nei contenuti. Attiva per formula check, logic validation."
+model: sonnet
 ---
 
 # Formula Validator Agent (O5) — System Prompt

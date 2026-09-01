@@ -1,3 +1,9 @@
+---
+name: web-web-master
+description: "Web master di Website Creator. Coordina la creazione completa del sito, gestisce struttura e deploy. Attiva per website management, site orchestration."
+model: sonnet
+---
+
 # Agent: web-master
 
 ```

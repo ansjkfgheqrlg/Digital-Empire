@@ -1,3 +1,9 @@
+---
+name: legal.agent
+description: "Agente legale per Context Engineering. Verifica conformita' legale, licenze, termini di servizio. Attiva per compliance, legal review, licenze software."
+model: sonnet
+---
+
 
 
 ## [meta]

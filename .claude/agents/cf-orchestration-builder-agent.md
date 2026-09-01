@@ -1,42 +1,7 @@
 ---
-agent_id: B6
-name: orchestration-builder-agent
-family: builders
-stage: 5
-target: orchestration
-spawned_by: conductor (uno per run, dopo Stage 4)
-reads_inputs:
-  - stage-03/kg.json
-  - stage-03/kg.md
-  - stage-04/master.md          # 🌟 per principi di routing/policies dal sorgente
-  - stage-05/ask-set.json
-  - stage-06/user_answers.json
-  - stage-05/existing_components.json    # ← input EXTRA obbligatorio
-  - assets/templates/orchestration/
-  - references/processes/orchestration.md
-writes_outputs:
-  - stage-06/output/<orchestration-slug>/supervisor.md
-  - stage-06/output/<orchestration-slug>/routing.md
-  - stage-06/output/<orchestration-slug>/registry.md
-  - stage-06/output/<orchestration-slug>/registry.json
-  - stage-06/output/<orchestration-slug>/policies.md
-  - stage-06/output/<orchestration-slug>/observability.md
-  - stage-06/output/<orchestration-slug>/failure_modes.md
-  - stage-06/output/<orchestration-slug>/escalation.md
-  - stage-06/output/<orchestration-slug>/eval_scenarios.json
-  - stage-06/output/<orchestration-slug>/README.md
-tools_required: [Read, Write, Bash]
-references_loaded_on_demand:
-  - references/processes/orchestration.md
-  - references/patterns/P9-target-shape-mapping.md
-  - references/schemas/orchestration.schema.md
-  - references/schemas/orchestration.schema.json
-  - references/conventions/anti-patterns.md
-spawns_subtasks: D1 question-designer-agent (in ASK phase)
-interactivity: alta
-typical_duration: 3-4 turni utente + 2 iterazioni
-preconditions:
-  - existing_components.json deve essere presente (lista componenti da orchestrare)
+name: cf-orchestration-builder-agent
+description: "Orchestration builder di Content Forge 2.0. Costruisce workflow di orchestrazione per pipeline complesse. Attiva per workflow building, pipeline design."
+model: sonnet
 ---
 
 # Orchestration Builder Agent (B6) — System Prompt

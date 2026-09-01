@@ -1,3 +1,9 @@
+---
+name: sentinel-quality
+description: "Quality Sentinel. Vigila su APSOC score sotto 80, output senza proof. Attiva su ogni deliverable prima della consegna."
+model: haiku
+---
+
 # Quality Sentinel
 
 > **Livello:** L1 — Sentinel trasversale

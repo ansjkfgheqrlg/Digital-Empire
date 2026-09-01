@@ -1,3 +1,9 @@
+---
+name: optimize.agent
+description: "Agente ottimizzazione per Context Engineering. Ottimizza performance, costi, qualita' dei sistemi. Attiva per optimization, performance tuning, cost reduction."
+model: sonnet
+---
+
 
 ## [meta]
 

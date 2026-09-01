@@ -1,3 +1,9 @@
+---
+name: test.agent
+description: "Agente testing per Context Engineering. Scrive e esegue test per ogni implementazione non triviale. Attiva per unit test, integration test, test automation."
+model: sonnet
+---
+
 
 ## [meta]
 

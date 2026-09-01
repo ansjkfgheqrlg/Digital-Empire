@@ -1,5 +1,7 @@
 ---
-description: Trasforma un sito esistente nello stile premium Digital Empire (ccm-premium). Uso — /empire-style <path-sito-sorgente>
+name: empire-style
+description: "Trasforma un sito esistente nello stile premium Digital Empire (ccm-style). Applica design system, colori, tipografia, animazioni. Attiva per restyling siti, brand application."
+model: sonnet
 ---
 
 Invoca la skill `empire-premium-style` passando come argomento il path del sito sorgente: $ARGUMENTS

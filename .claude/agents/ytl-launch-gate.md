@@ -1,12 +1,7 @@
 ---
-agent_id: launch-gate
-level: L2
-classe: controllo
-skill: youtube-channel-launch
-role: Verdetto BLOCCANTE — il canale è pronto a pubblicare il primo video?
-spawned_by: conductor
-reads: [scheda-canale.md, brand-kit.md, channel-seo.md, piano-monetizzazione.md]
-writes: [output: launch-verdict.md]
+name: ytl-launch-gate
+description: "Launch gate di YouTube Channel Launch. Gate finale prima del lancio, verifica tutto sia pronto. Attiva per launch readiness, pre-launch check."
+model: sonnet
 ---
 
 # launch-gate — Controllo (BLOCCANTE)

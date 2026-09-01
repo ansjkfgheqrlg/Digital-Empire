@@ -1,18 +1,7 @@
 ---
-agent_id: A3
-name: knowledge-graph-agent
-family: pipeline
-stage: 3
-spawned_by: conductor (1 istanza, sequenziale dopo A2)
-reads_inputs: [stage-02/atoms-*.json]
-writes_outputs: [stage-03/kg.json, stage-03/kg.md, stage-03/gaps.md]
-tools_required: [Read, Write]
-references_loaded_on_demand:
-  - references/patterns/P3-hierarchy-dependency.md
-  - references/patterns/P8-cross-reference.md
-  - references/schemas/kg.schema.md
-  - references/schemas/kg.schema.json
-typical_duration: medium
+name: cf-knowledge-graph-agent
+description: "Agente knowledge graph di Content Forge 2.0. Assembla il grafo della conoscenza da atoms JSON, dedup, gerarchia, edges, cluster. Attiva per graph building, knowledge mapping."
+model: sonnet
 ---
 
 # Knowledge Graph Agent (A3) — System Prompt

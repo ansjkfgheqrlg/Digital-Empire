@@ -1,11 +1,7 @@
 ---
-agent_id: niche-gate
-level: L2
-classe: controllo
-role: Gate bloccante — coerenza di nicchia e potenziale
-spawned_by: conductor
-reads: [references/seo-certificazione.md, scripts/cashcow_check.py, MKD.md §2.1]
-writes: [output: gate-niche.md (PASS/FAIL + motivi)]
+name: ytf-niche-gate
+description: "Niche gate di YouTube Automation Factory. Gate di controllo che BLOCCA nicchie non validate. Controllo indipendente dalla scout. Attiva per nicchia validation, market fit check."
+model: sonnet
 ---
 
 # niche-gate — Controllo (gate bloccante)

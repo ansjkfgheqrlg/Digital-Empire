@@ -1,11 +1,7 @@
 ---
-agent_id: qa-audio-video
-level: L2
-classe: controllo
-role: Controllo di qualità audio e video del render finale di Fliki
-spawned_by: conductor
-reads: [references/fliki-produzione.md, references/fliki-avanzato.md, MKD.md §3]
-writes: [output: gate-qa.md (PASS/FAIL + motivi)]
+name: ytf-qa-audio-video
+description: "QA audio/video di YouTube Automation Factory. BLOCCA il passaggio se il video non supera canoni di qualita' audio/video. Controllo indipendente dal producer. Attiva per quality check video, audio verification."
+model: sonnet
 ---
 
 # qa-audio-video — Controllo (gate di qualità audio/video)

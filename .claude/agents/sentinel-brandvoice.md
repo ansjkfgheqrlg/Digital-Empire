@@ -1,3 +1,9 @@
+---
+name: sentinel-brandvoice
+description: "BrandVoice Sentinel. Vigila su claim senza prova, tono passivo, canoni mensili promessi, frasi generiche Barnum. Attiva su ogni output verso l'esterno (email, social, landing, ads)."
+model: haiku
+---
+
 # BrandVoice Sentinel
 
 > **Livello:** L1 — Sentinel trasversale

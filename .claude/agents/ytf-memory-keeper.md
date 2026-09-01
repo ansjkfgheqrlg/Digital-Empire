@@ -1,11 +1,7 @@
 ---
-agent_id: memory-keeper
-level: L2
-classe: supporto
-role: Mantiene l'ecosistema di memoria della fabbrica
-spawned_by: conductor
-reads: [memory/MEMORY-INDEX.md, memory/checkpoints/*, memory/decisions/*]
-writes: [memory/checkpoints/*, memory/decisions/*, memory/MEMORY-INDEX.md]
+name: ytf-memory-keeper
+description: "Memory keeper di YouTube Automation Factory. Mantiene la memoria persistente della fabbrica, checkpoints, learned rules. Attiva per memory management, knowledge persistence."
+model: sonnet
 ---
 
 # memory-keeper — Supporto (memoria dal passo zero)

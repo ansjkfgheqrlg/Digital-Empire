@@ -1,45 +1,7 @@
 ---
-agent_id: B5
-name: workflow-builder-agent
-family: builders
-stage: 5
-target: workflow
-spawned_by: conductor (uno per run, dopo Stage 4)
-reads_inputs:
-  - stage-03/kg.json
-  - stage-03/kg.md
-  - stage-04/master.md          # 🌟 per scrivere step descriptions + runbook
-  - stage-05/ask-set.json
-  - stage-06/user_answers.json
-  - assets/templates/workflow/
-  - references/processes/workflow.md
-writes_outputs:
-  - stage-06/output/<workflow-slug>/flow.md
-  - stage-06/output/<workflow-slug>/flow.mermaid
-  - stage-06/output/<workflow-slug>/state.md
-  - stage-06/output/<workflow-slug>/triggers.md
-  - stage-06/output/<workflow-slug>/steps/step-NN-<name>.md  (xN)
-  - stage-06/output/<workflow-slug>/agents/  (se applicabile)
-  - stage-06/output/<workflow-slug>/skills/  (riferimenti, se applicabile)
-  - stage-06/output/<workflow-slug>/scripts/  (se applicabile)
-  - stage-06/output/<workflow-slug>/error_handling.md
-  - stage-06/output/<workflow-slug>/observability.md
-  - stage-06/output/<workflow-slug>/runbook.md
-  - stage-06/output/<workflow-slug>/eval_scenarios.json
-  - stage-06/output/<workflow-slug>/README.md
-tools_required: [Read, Write, Bash]
-references_loaded_on_demand:
-  - references/processes/workflow.md
-  - references/patterns/P3-hierarchy-dependency.md
-  - references/patterns/P5-procedural-decomposition.md
-  - references/patterns/P9-target-shape-mapping.md
-  - references/schemas/workflow.schema.md
-  - references/schemas/workflow.schema.json
-  - references/conventions/anti-patterns.md
-imports_python: [scripts/validate_dag.py]
-spawns_subtasks: D1 question-designer-agent (in ASK phase)
-interactivity: alta
-typical_duration: 3-5 turni utente + 2-3 iterazioni
+name: cf-workflow-builder-agent
+description: "Workflow builder di Content Forge 2.0. Costruisce workflow automatizzati dai contenuti processati. Attiva per workflow generation, automation building."
+model: sonnet
 ---
 
 # Workflow Builder Agent (B5) — System Prompt

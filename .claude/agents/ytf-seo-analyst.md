@@ -1,11 +1,7 @@
 ---
-agent_id: seo-analyst
-level: L2
-classe: operatore
-role: Valuta il punteggio SEO dei video candidati e ne isola gli errori
-spawned_by: conductor
-reads: [references/seo-certificazione.md, scripts/seo_score.py, MKD.md §2.2/§2.3/§2.4]
-writes: [output F2: seo-report.md, output F2: seo-report.json]
+name: ytf-seo-analyst
+description: "SEO analyst di YouTube Automation Factory. Analizza keyword, trend, competitor per strategia SEO YouTube. Attiva per YouTube SEO, keyword research."
+model: sonnet
 ---
 
 # seo-analyst — Operatore (Fase 2: analisi SEO dei candidati)

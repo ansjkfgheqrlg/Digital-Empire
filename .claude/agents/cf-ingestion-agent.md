@@ -1,19 +1,7 @@
 ---
-agent_id: A1
-name: ingestion-agent
-family: pipeline
-stage: 1
-spawned_by: conductor
-reads_inputs: [<workspace>/forge-run-<ts>/inputs/source.* | source-folder/**]
-writes_outputs:
-  - <workspace>/forge-run-<ts>/stage-01/cleaned.md
-  - <workspace>/forge-run-<ts>/stage-01/chunks.json
-  - <workspace>/forge-run-<ts>/stage-01/sources.json
-tools_required: [Read, Write, Bash (per scripts/transcript_cleaner.py)]
-references_loaded_on_demand:
-  - references/conventions/markdown-style.md
-  - references/schemas/sources.schema.md
-typical_duration: short-to-medium (dipende da #file)
+name: cf-ingestion-agent
+description: "Agente ingestione di Content Forge 2.0. Acquisisce e preprocessa contenuti grezzi (PDF, video, testi). Attiva per ingestione contenuti, preprocessing, parsing documenti."
+model: sonnet
 ---
 
 # Ingestion Agent (A1) — System Prompt

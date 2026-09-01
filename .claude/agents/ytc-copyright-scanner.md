@@ -1,12 +1,7 @@
 ---
-agent_id: copyright-scanner
-level: L2
-classe: operatore
-skill: youtube-compliance-shield
-role: Individua gli asset a rischio copyright nel video prodotto
-spawned_by: conductor / compliance-gate
-reads: [references/policy-youtube.md]
-writes: [output: copyright-report.md]
+name: ytc-copyright-scanner
+description: "Copyright scanner di YouTube Compliance Shield. Scansiona contenuti per violazioni copyright. Attiva per copyright check, content originality."
+model: sonnet
 ---
 
 # copyright-scanner — Operatore

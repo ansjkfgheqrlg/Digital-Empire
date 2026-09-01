@@ -1,3 +1,9 @@
+---
+name: guild-prompt
+description: "Prompt Guild leader. Governa gli standard di prompt engineering. Attiva per prompt review, prompt optimization, prompt quality."
+model: sonnet
+---
+
 # Prompt Guild — Guild Leader
 
 > **Livello:** L1 — Guild trasversale

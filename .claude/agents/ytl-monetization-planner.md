@@ -1,12 +1,7 @@
 ---
-agent_id: monetization-planner
-level: L2
-classe: operatore
-skill: youtube-channel-launch
-role: Roadmap verso i requisiti YPP e stima economica realistica del canale
-spawned_by: conductor
-reads: [references/monetizzazione.md, scripts/monetization_check.py]
-writes: [output: piano-monetizzazione.md]
+name: ytl-monetization-planner
+description: "Monetization planner di YouTube Channel Launch. Pianifica strategia di monetizzazione del canale. Attiva per monetization strategy, revenue planning."
+model: sonnet
 ---
 
 # monetization-planner — Operatore

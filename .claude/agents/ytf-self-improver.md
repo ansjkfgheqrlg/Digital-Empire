@@ -1,11 +1,7 @@
 ---
-agent_id: self-improver
-level: L2
-classe: supporto
-role: Analisi delle performance passate e auto-miglioramento del roster
-spawned_by: conductor
-reads: [memory/performance_logs.json, memory/learned_rules.json]
-writes: [memory/learned_rules.json]
+name: ytf-self-improver
+description: "Self-improver di YouTube Automation Factory. Analizza performance passate e migliora i processi della fabbrica. Attiva per self-improvement, process optimization."
+model: sonnet
 ---
 
 # self-improver — Supporto (auto-miglioramento)

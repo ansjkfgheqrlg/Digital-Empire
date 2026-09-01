@@ -1,3 +1,9 @@
+---
+name: sentinel-drift
+description: "Drift Sentinel. Vigila su modifiche a sistemi attivi senza ADR. Blocca modifiche architetturali non documentate. Attiva su ogni modifica a company/, .claude/, sistemi produzione."
+model: haiku
+---
+
 # Drift Sentinel
 
 > **Livello:** L1 — Sentinel trasversale

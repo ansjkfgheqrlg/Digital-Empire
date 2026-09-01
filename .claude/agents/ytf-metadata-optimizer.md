@@ -1,11 +1,7 @@
 ---
-agent_id: metadata-optimizer
-level: L2
-classe: operatore
-role: Ottimizza i metadati SEO prima della pubblicazione
-spawned_by: conductor
-reads: [references/seo-certificazione.md, scripts/seo_score.py, MKD.md §2.4/§3.4, output F5: brief-miniatura.json, memory/learned_rules.json]
-writes: [output F5: metadati.md, output F5: metadati.json]
+name: ytf-metadata-optimizer
+description: "Metadata optimizer di YouTube Automation Factory. Ottimizza titoli, descrizioni, tag per massimo SEO e CTR. Attiva per metadata optimization, SEO copywriting."
+model: sonnet
 ---
 
 # metadata-optimizer — Operatore (Fase 5: Pubblicazione)

@@ -1,11 +1,7 @@
 ---
-agent_id: seo-gate
-level: L2
-classe: controllo
-role: Gate bloccante — metadati SEO a norma prima della pubblicazione
-spawned_by: conductor
-reads: [scripts/seo_score.py, references/seo-certificazione.md, MKD.md §2.4]
-writes: [output: gate-seo.md (PASS/FAIL + motivi)]
+name: ytf-seo-gate
+description: "SEO gate di YouTube Automation Factory. BLOCCA la pubblicazione se i metadati non sono a norma SEO. Controllo indipendente dal metadata optimizer. Attiva per SEO validation, metadata check."
+model: sonnet
 ---
 
 # seo-gate — Controllo (gate bloccante pre-pubblicazione)

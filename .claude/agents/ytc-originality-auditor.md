@@ -1,12 +1,7 @@
 ---
-agent_id: originality-auditor
-level: L2
-classe: operatore
-skill: youtube-compliance-shield
-role: Misura quanto il video prodotto è trasformato rispetto all'originale replicato
-spawned_by: conductor / compliance-gate
-reads: [references/policy-youtube.md, scripts/originality_score.py]
-writes: [output: originality-report.md]
+name: ytc-originality-auditor
+description: "Originality auditor di YouTube Compliance Shield. Audita originalita' dei contenuti per evitare strike. Attiva per originality audit, uniqueness verification."
+model: sonnet
 ---
 
 # originality-auditor — Operatore

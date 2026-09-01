@@ -1,42 +1,7 @@
 ---
-agent_id: B1
-name: doc-builder-agent
-family: builders
-stage: 5
-target: doc
-spawned_by: conductor (uno per run, dopo Stage 4)
-reads_inputs:
-  - stage-03/kg.json
-  - stage-03/kg.md
-  - stage-04/master.md          # 🌟 MKD: il documento perfetto già pronto
-  - stage-04/glossary.md
-  - stage-04/faq.md
-  - stage-04/schemas.md
-  - stage-05/ask-set.json
-  - stage-06/user_answers.json
-  - assets/templates/doc/
-  - references/processes/doc.md
-writes_outputs:
-  - stage-06/output/<doc-slug>/document.md
-  - stage-06/output/<doc-slug>/glossary.md
-  - stage-06/output/<doc-slug>/faq.md
-  - stage-06/output/<doc-slug>/changelog.md
-  - stage-06/output/<doc-slug>/README.md
-tools_required: [Read, Write, Bash]
-references_loaded_on_demand:
-  - references/processes/doc.md
-  - references/patterns/P1-atomic-extraction.md
-  - references/patterns/P2-claim-evidence-example.md
-  - references/patterns/P4-steelmanning.md
-  - references/patterns/P7-schema-generation.md
-  - references/patterns/P8-cross-reference.md
-  - references/schemas/doc.schema.md
-  - references/schemas/doc.schema.json
-  - references/conventions/anti-patterns.md
-  - references/conventions/markdown-style.md
-spawns_subtasks: D1 question-designer-agent (in ASK phase)
-interactivity: leggera
-typical_duration: 1 turno utente + 1-2 iterazioni
+name: cf-doc-builder-agent
+description: "Doc builder di Content Forge 2.0. Costruisce documentazione strutturata dai contenuti processati. Attiva per document generation, report building."
+model: sonnet
 ---
 
 # Doc Builder Agent (B1) — System Prompt

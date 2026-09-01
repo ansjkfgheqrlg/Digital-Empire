@@ -1,3 +1,9 @@
+---
+name: deploy.agent
+description: "Agente deploy per Context Engineering. Gestisce deployment di sistemi e automazioni. Attiva per deploy, rilascio, messa in produzione."
+model: sonnet
+---
+
 
 ## [meta]
 

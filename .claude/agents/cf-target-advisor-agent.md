@@ -1,14 +1,7 @@
 ---
-agent_id: A4
-name: target-advisor-agent
-family: pipeline
-stage: 4
-spawned_by: conductor (solo se target non specificato)
-reads_inputs: [stage-03/kg.json, stage-03/kg.md]
-writes_outputs: [stage-04/recommendation.md]
-tools_required: [Read, Write]
-references_loaded_on_demand: [references/processes/*.md (solo i titoli/identity)]
-typical_duration: short
+name: cf-target-advisor-agent
+description: "Target advisor di Content Forge 2.0. Consiglia il target output ottimale per i contenuti processati. Attiva per target recommendation, output format advice."
+model: sonnet
 ---
 
 # Target Advisor Agent (A4) — System Prompt

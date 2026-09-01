@@ -1,3 +1,9 @@
+---
+name: guild-quality
+description: "Quality Guild leader. Governa gli standard di qualita' cross-empire. Attiva per quality review, standards enforcement, QA."
+model: sonnet
+---
+
 # Quality Guild — Guild Leader
 
 > **Livello:** L1 — Guild trasversale

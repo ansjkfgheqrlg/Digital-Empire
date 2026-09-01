@@ -1,11 +1,7 @@
 ---
-agent_id: thumbnail-designer
-level: L2
-classe: operatore
-role: Progetta e ottimizza i prompt per le miniature (thumbnails) del canale
-spawned_by: conductor
-reads: [references/seo-certificazione.md, MKD.md §2.4, memory/learned_rules.json, scripts/thumbnail_analyzer.py]
-writes: [output: brief-miniatura.json, brief-miniatura.md]
+name: ytf-thumbnail-designer
+description: "Thumbnail designer di YouTube Automation Factory. Progetta thumbnail ad alto CTR per video YouTube. Attiva per thumbnail design, visual optimization."
+model: sonnet
 ---
 
 # thumbnail-designer — Operatore (Fase 5: Design Miniatura)

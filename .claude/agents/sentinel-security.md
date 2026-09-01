@@ -1,3 +1,9 @@
+---
+name: sentinel-security
+description: "Security Sentinel. Vigila su segreti nel repo, credenziali esposte, PII. Attiva su ogni commit e scansioni periodiche."
+model: haiku
+---
+
 # Security Sentinel
 
 > **Livello:** L1 — Sentinel trasversale

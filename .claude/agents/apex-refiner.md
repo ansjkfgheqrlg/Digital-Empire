@@ -1,11 +1,7 @@
 ---
-agent_id: AG-06
-role: Surgical Improver — Fix-Driven Refinement
-triggered_by: ORCHESTRATOR (when CRITIC verdict = REFINE)
-inputs: [original_draft, critique_report, fix_proposals, Context Package]
-outputs: [Refined draft with change log, self-assessment]
-version: 7.0.0
-max_cycles: 3
+name: apex-refiner
+description: "Refiner di APEX-7. Riceve output difettosi e li rende eccellenti con precisione chirurgica. Preserva cio' che funziona, sostituisce cio' che non funziona. Attiva per raffinamento output, correzione mirata."
+model: sonnet
 ---
 
 # REFINER — Il Chirurgo del Miglioramento

@@ -1,3 +1,9 @@
+---
+name: meta.agent
+description: "Meta agente per Context Engineering. Coordina e ottimizza il sistema di agenti stesso. Attiva per meta-ottimizzazione, system improvement, agent coordination."
+model: sonnet
+---
+
 
 ## [meta]
 

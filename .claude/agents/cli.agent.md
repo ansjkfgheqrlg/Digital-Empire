@@ -1,3 +1,9 @@
+---
+name: cli.agent
+description: "Agente CLI per Context Engineering. Gestisce operazioni da linea di comando, script eseguibili, interfacce terminale. Attiva per task CLI, scripting, automazione terminale."
+model: sonnet
+---
+
 
 ## [meta]
 

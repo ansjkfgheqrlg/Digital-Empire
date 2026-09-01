@@ -1,10 +1,7 @@
 ---
-agent_id: AG-04
-role: Output Builder — Content Generation from Plans & Analysis
-triggered_by: ORCHESTRATOR (often parallel with ANALYST)
-inputs: [subtask, Context Package from ANALYST, critique from REFINER if looping]
-outputs: [Draft with metadata, self-review notes]
-version: 7.0.0
+name: apex-writer
+description: "Writer di APEX-7. Trasforma piani e analisi in output concreti e di valore. Ogni parola deve guadagnarsi il suo posto. Attiva per scrittura, produzione contenuti, output finali."
+model: sonnet
 ---
 
 # WRITER — Il Costruttore di Output

@@ -2,8 +2,8 @@
 # Fonte di verità per tutti gli agenti censiti in EMPIRE OS.
 # Aggiornare quando si aggiunge un agente. Schema: company/Gerarchia/README.md
 
-version: "1.0"
-updated: "2026-06-11"
+version: "1.1"
+updated: "2026-09-01"
 maintainer: "Identity-HR (Backbone)"
 
 # ── BOARD / C-SUITE (L0) ─────────────────────────────────────────
@@ -244,3 +244,410 @@ stats:
   status_ufficiali: 123  # tutti registrati in .claude/agents/ il 2026-09-01
   status_defined: 0
   note: "Tutti gli agenti ufficializzati in .claude/agents/ il 2026-09-01 per ordine di Max. Ogni agente ha il suo file .md con struttura completa. Sorgenti originali mantenuti intatti nelle posizioni precedenti."
+
+# ==========================================================
+# AGENTI UFFICIALI — 2026-09-01
+# Censimento nominale completo di .claude/agents/. Le sezioni board/backbone/
+# guilds/sentinels qui sopra restano la scheda ricca (tier, reports_to, schema);
+# questa e' l'anagrafe completa, un rigo per agente.
+# Gate: scripts/verify-agents.py --check
+# ==========================================================
+
+agenti_ufficiali:
+  data: "2026-09-01"
+  eseguita_da: Emperator (ordine di Max)
+  criterio: |
+    Un agente e' UFFICIALE quando:
+    1. esiste .claude/agents/<slug>.md
+    2. il frontmatter YAML e' parsabile (niente BOM, niente ': ' non quotato)
+    3. name == nome del file
+    4. description dice cosa fa e quando si attiva (>= 40 caratteri)
+    5. e' presente in questo elenco
+  stats:
+    totale: 123
+    content_forge: 25
+    context_engineering: 20
+    master_build_architecture: 17
+    youtube_factory: 14
+    apex_7: 8
+    board: 7
+    guilds: 5
+    sentinels: 5
+    youtube_launch: 5
+    website_creator: 4
+    outreach: 4
+    youtube_compliance: 4
+    standalone: 3
+    backbone: 2
+    frontmatter_valido: 123
+    errori_residui: 0
+  agenti:
+    - id: alignment.agent
+      famiglia: context-engineering
+      stato: active
+    - id: apex-analyst
+      famiglia: apex-7
+      stato: active
+    - id: apex-critic
+      famiglia: apex-7
+      stato: active
+    - id: apex-gate-agent
+      famiglia: apex-7
+      stato: active
+    - id: apex-meta-agent
+      famiglia: apex-7
+      stato: active
+    - id: apex-orchestrator
+      famiglia: apex-7
+      stato: active
+    - id: apex-planner
+      famiglia: apex-7
+      stato: active
+    - id: apex-refiner
+      famiglia: apex-7
+      stato: active
+    - id: apex-writer
+      famiglia: apex-7
+      stato: active
+    - id: architect-agent
+      famiglia: context-engineering
+      stato: active
+    - id: bb-handoff-router
+      famiglia: backbone
+      stato: active
+    - id: bb-memory-writer
+      famiglia: backbone
+      stato: active
+    - id: build-implementation
+      famiglia: context-engineering
+      stato: active
+    - id: cc-master
+      famiglia: standalone
+      stato: active
+    - id: ceo-empire-conductor
+      famiglia: board
+      stato: active
+    - id: cf-agent-builder-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-agent-depth-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-analyst-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-conductor
+      famiglia: content-forge
+      stato: active
+    - id: cf-coverage-verifier-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-custom-builder-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-doc-builder-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-failure-detector-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-formula-validator-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-humanizer-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-ingestion-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-knowledge-graph-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-mkd-builder-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-orchestration-builder-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-phase-planner-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-question-designer-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-reference-expander-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-skill-builder-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-skill-depth-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-target-advisor-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-target-schema-validator-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-team-builder-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-triage-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-wiki-builder-agent
+      famiglia: content-forge
+      stato: active
+    - id: cf-workflow-builder-agent
+      famiglia: content-forge
+      stato: active
+    - id: cfo-empire
+      famiglia: board
+      stato: active
+    - id: chief-forge
+      famiglia: board
+      stato: active
+    - id: cli.agent
+      famiglia: context-engineering
+      stato: active
+    - id: cmo-empire
+      famiglia: board
+      stato: active
+    - id: comms.agent
+      famiglia: context-engineering
+      stato: active
+    - id: coo-empire
+      famiglia: board
+      stato: active
+    - id: credential-keeper
+      famiglia: standalone
+      stato: active
+    - id: cro-empire
+      famiglia: board
+      stato: active
+    - id: cto-empire
+      famiglia: board
+      stato: active
+    - id: data.agent
+      famiglia: context-engineering
+      stato: active
+    - id: deploy-cloud
+      famiglia: context-engineering
+      stato: active
+    - id: deploy.agent
+      famiglia: context-engineering
+      stato: active
+    - id: diligence.agent
+      famiglia: context-engineering
+      stato: active
+    - id: doc.agent
+      famiglia: context-engineering
+      stato: active
+    - id: emperator
+      famiglia: standalone
+      stato: active
+    - id: empire-style
+      famiglia: website-creator
+      stato: active
+    - id: guild-copy-apsoc
+      famiglia: guilds
+      stato: active
+    - id: guild-cost
+      famiglia: guilds
+      stato: active
+    - id: guild-design
+      famiglia: guilds
+      stato: active
+    - id: guild-prompt
+      famiglia: guilds
+      stato: active
+    - id: guild-quality
+      famiglia: guilds
+      stato: active
+    - id: legal.agent
+      famiglia: context-engineering
+      stato: active
+    - id: lit.agent
+      famiglia: context-engineering
+      stato: active
+    - id: marketing.agent
+      famiglia: context-engineering
+      stato: active
+    - id: mba-agent-spec-builder
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-anti-pattern-hunter
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-conductor
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-context-boundary-architect
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-coverage-verifier-agent
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-failure-detector-agent
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-failure-mode-validator-agent
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-ingestion-agent
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-memory-ecosystem-builder
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-plan-builder
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-principle-codifier
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-principles-manager
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-ruflo-swarm-extractor
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-skill-depth-agent
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-swarm-builder
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-target-schema-validator-agent
+      famiglia: master-build-architecture
+      stato: active
+    - id: mba-topology-designer
+      famiglia: master-build-architecture
+      stato: active
+    - id: meta.agent
+      famiglia: context-engineering
+      stato: active
+    - id: monitor.agent
+      famiglia: context-engineering
+      stato: active
+    - id: optimize.agent
+      famiglia: context-engineering
+      stato: active
+    - id: outreach-case-study-forge
+      famiglia: outreach
+      stato: active
+    - id: outreach-followup-sequencer
+      famiglia: outreach
+      stato: active
+    - id: outreach-message-writer
+      famiglia: outreach
+      stato: active
+    - id: outreach-rule-keeper
+      famiglia: outreach
+      stato: active
+    - id: research.agent
+      famiglia: context-engineering
+      stato: active
+    - id: review-and-heal
+      famiglia: context-engineering
+      stato: active
+    - id: security.agent
+      famiglia: context-engineering
+      stato: active
+    - id: sentinel-brandvoice
+      famiglia: sentinels
+      stato: active
+    - id: sentinel-cost
+      famiglia: sentinels
+      stato: active
+    - id: sentinel-drift
+      famiglia: sentinels
+      stato: active
+    - id: sentinel-quality
+      famiglia: sentinels
+      stato: active
+    - id: sentinel-security
+      famiglia: sentinels
+      stato: active
+    - id: test.agent
+      famiglia: context-engineering
+      stato: active
+    - id: web-copy-writer
+      famiglia: website-creator
+      stato: active
+    - id: web-section-coder
+      famiglia: website-creator
+      stato: active
+    - id: web-web-master
+      famiglia: website-creator
+      stato: active
+    - id: ytc-compliance-gate
+      famiglia: youtube-compliance
+      stato: active
+    - id: ytc-copyright-scanner
+      famiglia: youtube-compliance
+      stato: active
+    - id: ytc-originality-auditor
+      famiglia: youtube-compliance
+      stato: active
+    - id: ytc-policy-checker
+      famiglia: youtube-compliance
+      stato: active
+    - id: ytf-conductor
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-memory-keeper
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-metadata-optimizer
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-niche-gate
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-niche-scout
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-performance-auditor
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-qa-audio-video
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-script-writer
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-self-improver
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-seo-analyst
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-seo-gate
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-thumbnail-designer
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-video-hunter
+      famiglia: youtube-factory
+      stato: active
+    - id: ytf-video-producer
+      famiglia: youtube-factory
+      stato: active
+    - id: ytl-brand-designer
+      famiglia: youtube-launch
+      stato: active
+    - id: ytl-channel-architect
+      famiglia: youtube-launch
+      stato: active
+    - id: ytl-channel-seo
+      famiglia: youtube-launch
+      stato: active
+    - id: ytl-launch-gate
+      famiglia: youtube-launch
+      stato: active
+    - id: ytl-monetization-planner
+      famiglia: youtube-launch
+      stato: active

@@ -1,3 +1,9 @@
+---
+name: research.agent
+description: "Agente ricerca per Context Engineering. Esplora codebase e riferimenti esterni prima della progettazione. Attiva per codebase exploration, research, analisi preliminare."
+model: sonnet
+---
+
 
 ## \[meta]
 

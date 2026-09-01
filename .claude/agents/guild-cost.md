@@ -1,3 +1,9 @@
+---
+name: guild-cost
+description: "Cost Guild leader. Governa le policy di costo e ottimizzazione budget. Attiva per cost optimization, budget policy, spending review."
+model: haiku
+---
+
 # Cost Guild — Guild Leader
 
 > **Livello:** L1 — Guild trasversale

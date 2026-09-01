@@ -1,3 +1,9 @@
+---
+name: comms.agent
+description: "Agente comunicazioni per Context Engineering. Gestisce comunicazioni strutturate tra agenti, formatta messaggi, coordina handoff. Attiva per comunicazione inter-agente, reporting."
+model: sonnet
+---
+
 
 ## [meta]
 

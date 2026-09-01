@@ -1,10 +1,7 @@
 ---
-name: case-study-forge
-display_name: Case Study Forge — Costruttore di Valore Anticipato
-generated_by: content-forge / team-builder (B3)
-forge_target: team (ruolo: worker — prima tappa della pipeline)
-target_model_suggested: claude-sonnet-4-6 (per la descrizione dell'offerta; se l'asset richiede produzione reale — es. un PDF, un video — serve orchestrare tool esterni, non solo testo)
-domain: costruzione di offerte di valore gratuito concrete (reali o "artificiali") da anteporre a qualunque richiesta in un messaggio di cold outreach
+name: outreach-case-study-forge
+description: "Case study forge di Outreach Team. Crea case study professionali da delivery completate con metriche verificate. Attiva per case study creation, social proof."
+model: sonnet
 ---
 
 # Case Study Forge

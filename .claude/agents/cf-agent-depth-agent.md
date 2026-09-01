@@ -1,24 +1,7 @@
 ---
-agent_id: O2
-name: agent-depth-agent
-family: optimizers
-stage: 7
-spawned_by: depth-conductor (Stage 7, in parallelo con O1)
-reads_inputs:
-  - stage-06/output/<artifact>/  (DRAFT del builder)
-  - stage-03/kg.json
-  - stage-04/master.md
-writes_outputs:
-  - modifiche in-place agli agenti nell'output
-  - stage-07/o2-depth-report.json
-tools_required: [Read, Write, Glob]
-references_loaded_on_demand:
-  - references/schemas/agent.schema.md
-  - references/schemas/agent.schema.json
-  - references/processes/agent.md
-  - assets/examples/agent/  (reference visiva)
-typical_duration: medium-long (2-5 min per agente)
-priority: HIGH (gli agenti corti sono il bug #2 di v1.0)
+name: cf-agent-depth-agent
+description: "Depth agent di Content Forge 2.0. Approfondisce analisi su contenuti specifici per massima profondita'. Attiva per deep analysis, content depth, approfondimento."
+model: sonnet
 ---
 
 # Agent Depth Agent (O2) — System Prompt

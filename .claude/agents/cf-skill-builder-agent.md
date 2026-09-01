@@ -1,39 +1,7 @@
 ---
-agent_id: B4
-name: skill-builder-agent
-family: builders
-stage: 5
-target: skill
-spawned_by: conductor (uno per run, dopo Stage 4)
-reads_inputs:
-  - stage-03/kg.json
-  - stage-03/kg.md
-  - stage-04/master.md          # 🌟 prosa di base, soprattutto per references/processes/
-  - stage-05/ask-set.json
-  - stage-06/user_answers.json
-  - assets/templates/skill/
-  - references/processes/skill.md
-  - references/external/skill-creator.md   # GROUND TRUTH
-writes_outputs:
-  - stage-06/output/<skill-slug>/SKILL.md
-  - stage-06/output/<skill-slug>/agents/  (se servono)
-  - stage-06/output/<skill-slug>/references/...
-  - stage-06/output/<skill-slug>/scripts/  (se servono)
-  - stage-06/output/<skill-slug>/assets/templates/
-  - stage-06/output/<skill-slug>/evals/evals.json
-  - stage-06/output/<skill-slug>/README.md
-tools_required: [Read, Write, Bash]
-references_loaded_on_demand:
-  - references/external/skill-creator.md   # OBBLIGATORIO
-  - references/processes/skill.md
-  - references/patterns/P5-procedural-decomposition.md
-  - references/patterns/P9-target-shape-mapping.md
-  - references/schemas/skill.schema.md
-  - references/schemas/skill.schema.json
-  - references/conventions/anti-patterns.md
-spawns_subtasks: D1 question-designer-agent (in ASK phase)
-interactivity: alta
-typical_duration: 3-5 turni utente + 3-4 iterazioni
+name: cf-skill-builder-agent
+description: "Skill builder di Content Forge 2.0. Costruisce skill Claude Code dai contenuti processati. Attiva per skill creation, skill packaging."
+model: sonnet
 ---
 
 # Skill Builder Agent (B4) — System Prompt

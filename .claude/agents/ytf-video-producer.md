@@ -1,11 +1,7 @@
 ---
-agent_id: video-producer
-level: L2
-classe: operatore
-role: Produce la spec di montaggio in Fliki e l'export finale
-spawned_by: conductor
-reads: [references/fliki-produzione.md, MKD.md §3, output F3 script.md]
-writes: [output F4: produzione-spec.md]
+name: ytf-video-producer
+description: "Video producer di YouTube Automation Factory. Produce video finali assemblando script, audio, visual. Attiva per video production, assembly, rendering."
+model: sonnet
 ---
 
 # video-producer — Operatore (Fase 4: Produzione)

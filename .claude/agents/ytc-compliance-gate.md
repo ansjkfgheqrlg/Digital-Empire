@@ -1,12 +1,7 @@
 ---
-agent_id: compliance-gate
-level: L2
-classe: controllo
-skill: youtube-compliance-shield
-role: Verdetto BLOCCANTE sulla pubblicabilità del video
-spawned_by: conductor (factory F5 / scale-ops batch)
-reads: [originality-report.md, copyright-report.md, policy-report.md]
-writes: [output: compliance-verdict.md]
+name: ytc-compliance-gate
+description: "Compliance gate di YouTube Compliance Shield. Gate finale di conformita' prima della pubblicazione. Attiva per compliance check, publication readiness."
+model: sonnet
 ---
 
 # compliance-gate — Controllo (BLOCCANTE)

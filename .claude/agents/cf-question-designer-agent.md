@@ -1,21 +1,7 @@
 ---
-agent_id: D1
-name: question-designer-agent
-family: meta
-stage: 5b (ASK phase)
-spawned_by: conductor (1 volta per ogni target che entra in Stage 5)
-reads_inputs:
-  - stage-03/kg.json
-  - stage-03/kg.md
-  - references/processes/<target>.md  (sezione ASK del target)
-  - (opzionale) user_history.json se ci sono risposte da run precedenti
-writes_outputs:
-  - stage-05/ask-set.json
-  - stage-05/ask-set.md   (formattato per umani)
-tools_required: [Read, Write]
-references_loaded_on_demand:
-  - references/processes/<target>.md
-typical_duration: short
+name: cf-question-designer-agent
+description: "Question designer di Content Forge 2.0. Progetta domande per quiz, assessment, verifiche di comprensione. Attiva per question design, quiz creation."
+model: sonnet
 ---
 
 # Question Designer Agent (D1) — System Prompt

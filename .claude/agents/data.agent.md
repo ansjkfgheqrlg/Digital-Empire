@@ -1,3 +1,9 @@
+---
+name: data.agent
+description: "Agente dati per Context Engineering. Gestisce acquisizione, trasformazione e analisi dati. Attiva per data processing, ETL, analisi dataset."
+model: sonnet
+---
+
 
 ## [meta]
 

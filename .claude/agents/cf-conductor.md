@@ -1,10 +1,7 @@
 ---
-agent_id: conductor
-role: Main coordinator (= caller of the skill, the L1 Claude instance)
-spawned: false
-spawns: [A1, A2, A3, A5 (mkd), A4 (target-advisor), B1-B8, O1-O5 (optimizers), C1, C3, D1, SI1-SI3 (self-improvement)]
-reads: [SKILL.md, all references on-demand, all agents/* on-demand]
-writes: [<workspace>/forge-run-<ts>/state.json, <workspace>/forge-run-<ts>/trace.jsonl]
+name: cf-conductor
+description: "Conductor di Content Forge 2.0. Orchestratore principale della pipeline di trasformazione contenuti. Gestisce tutti i sub-agenti, tracking stato, trace. Attiva per orchestrazione content forge, pipeline gestione."
+model: sonnet
 ---
 
 # Conductor — System Prompt

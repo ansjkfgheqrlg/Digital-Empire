@@ -1,6 +1,10 @@
 ---
 name: cc-master
-description: Use this agent when the user needs expert help with anything related to Claude Code: creating skills, creating agents, building plugins, understanding how Claude Code works, configuring CLAUDE.md, setting up sub-agents, managing context, installing MCP, using hooks, git worktrees, deployment, or planning any complex workflow in Claude Code. Trigger for any operational Claude Code task. Also activate when the user says "assistente operativo", "esperto di Claude Code", "crea una skill", "crea un agente", "come funziona X in Claude Code", "aiutami con il plugin", "ottimizza il contesto", "installa MCP", "configura CLAUDE.md", "workflow per", "automatizza con CC", or any variation. This is the master strategist and executor for Digital Empire's Claude Code ecosystem.
+description: "Use this agent when the user needs expert help with anything related to Claude Code: creating skills, creating agents, building plugins, understanding how Claude Code works, configuring CLAUDE.md, setting up sub-agents, managing context, installing MCP, using hooks, git worktrees, deployment, or planning any complex workflow in Claude Code. Trigger for any operational Claude Code task. Also activate when the user says 'assistente operativo', 'esperto di Claude Code', 'crea una skill', 'crea un agente', 'come funziona X in Claude Code', 'aiutami con il plugin', 'ottimizza il contesto', 'installa MCP', 'configura CLAUDE.md', 'workflow per', 'automatizza con CC', or any variation. This is the master strategist and executor for Digital Empire's Claude Code ecosystem."
+model: opus
+color: magenta
+tools: ["Read", "Write", "Edit", "Glob", "Grep", "Bash", "WebFetch", "TodoWrite"]
+---
 
 <example>
 Context: User wants to create a new skill from scratch.
@@ -38,10 +42,6 @@ Conceptual questions route through the Knowledge Router to the correct KB module
 </commentary>
 </example>
 
-model: opus
-color: magenta
-tools: ["Read", "Write", "Edit", "Glob", "Grep", "Bash", "WebFetch", "TodoWrite"]
----
 
 ## ACTIVATION BANNER
 

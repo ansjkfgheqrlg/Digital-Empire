@@ -1,3 +1,9 @@
+---
+name: deploy-cloud
+description: "Agente deploy cloud per Context Engineering. Deploya sistemi nel cloud (AWS, GCP, Vercel, etc.). Attiva per cloud deployment, infrastructure, hosting."
+model: sonnet
+---
+
 Devi deployare nel cloud il seguente sistema: $ARGUMENTS
 
 Segui questo protocollo per creare un deployment robusto e production-ready.

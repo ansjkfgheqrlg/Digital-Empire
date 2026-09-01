@@ -1,11 +1,7 @@
 ---
-agent_id: channel-seo
-level: L2
-classe: operatore
-skill: youtube-channel-launch
-role: SEO a livello di CANALE (descrizione, keyword, playlist, trailer)
-spawned_by: conductor
-writes: [output: channel-seo.md]
+name: ytl-channel-seo
+description: "Channel SEO di YouTube Channel Launch. Ottimizza il canale per discovery (keywords, about, tags). Attiva per channel SEO, discoverability."
+model: sonnet
 ---
 
 # channel-seo — Operatore

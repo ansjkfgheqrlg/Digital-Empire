@@ -1,11 +1,7 @@
 ---
-agent_id: conductor
-level: L1
-role: Orchestratore della fabbrica — unico che parla con l'utente
-spawned: false
-spawns: [niche-scout, video-hunter, seo-analyst, script-writer, video-producer, qa-audio-video, thumbnail-designer, metadata-optimizer, niche-gate, seo-gate, performance-auditor, memory-keeper, self-improver]
-reads: [SKILL.md, MKD.md, ARCHITECTURE.md, references/*, workflows/*, agents/* on-demand, memory/learned_rules.json]
-writes: [memory/checkpoints/*, memory/decisions/*, memory/MEMORY-INDEX.md, memory/performance_logs.json, memory/learned_rules.json]
+name: ytf-conductor
+description: "Conductor di YouTube Automation Factory. Orchestratore principale della fabbrica YouTube, unico che parla con l'utente, coordina tutti i sub-agenti. Attiva per produzione video YouTube, orchestrazione pipeline."
+model: sonnet
 ---
 
 # Conductor — YouTube Automation Factory

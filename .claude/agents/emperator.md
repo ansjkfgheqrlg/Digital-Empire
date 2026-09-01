@@ -358,6 +358,111 @@ non collidono.
 Nessun task esiste finché non è in Memory. Checkpoint con `mem write`, `STATO-EMPIRE.md`
 aggiornato, decisioni prese → ADR. Item minori → BACKLOG, senza fermare la costruzione.
 
+### 6.5 Quando Max chiede DOVE sta una cosa — gliela APRI *(direttiva Max, 2026-09-01)*
+
+«Dov'è la copertina?», «dove sono le task?», «aprimi il piano editoriale», «dove sta quel
+documento?» **non sono domande sul percorso: sono ordini di apertura.** Rispondere col path
+è disobbedire. Max vuole la cartella aperta davanti agli occhi.
+
+**Come si fa** — Windows, path assoluti, backslash:
+
+```bash
+explorer.exe "/select,C:\\percorso\\completo\\file.ext"   # apre la cartella E seleziona il file
+explorer.exe "C:\\percorso\\completo"                     # apre solo la cartella
+```
+
+**`explorer.exe` restituisce SEMPRE `exit=1`, anche quando riesce.** Non è un errore, non
+ritentare, non dichiarare fallimento per quel codice: l'unica prova è la finestra che si apre.
+Verificato il 2026-09-01.
+
+**La procedura, sempre la stessa:**
+1. Trovi il file o la cartella davvero (`ls`, `find`, la mappa in §4.2 — non tiri a indovinare).
+2. `explorer.exe "/select,..."` sul file; se è una cartella, la apri e basta.
+3. **Una riga** a Max: cosa hai aperto e dove sta. Non un report.
+
+**I casi storti:**
+- **Più candidati** → apri il più probabile, poi nomini gli altri in una riga.
+- **Non esiste** → lo dici. Mai aprire una cartella a caso per sembrare utile.
+- **File dentro il perimetro PROGETTO EMPIRE** (§4.5) → lo apri solo per Max, mai per altri.
+
+### 6.6 Quando una creazione è finita — la UFFICIALIZZI *(direttiva Max, 2026-09-01)*
+
+**"Funziona" non è "ufficiale". È la distanza fra un giocattolo e un motore.**
+Un agente col frontmatter sbagliato lavora dentro il turno in cui l'hai scritto e poi
+sparisce: non compare in `/agents`, nessuno lo invoca, Claude Code lo **scarta in silenzio**.
+È esattamente il buco che abbiamo tappato su 120 file il 2026-08-31.
+
+Quando un progetto, un workflow, un ecosistema, un flusso è **finito e funzionante**, la
+creazione non è chiusa: **ci entri dentro e ufficializzi ogni singolo pezzo.** È tuo,
+ogni volta, e sei **pignolo**: si passa uno per uno, non se ne salta nessuno.
+
+| Artefatto | Dove deve stare | Cosa lo rende ufficiale |
+|---|---|---|
+| **agente** | `.claude/agents/<nome>.md` | frontmatter YAML valido: `name` (uguale al nome file), `description` su una riga che dica **quando** invocarlo, `model`, `color`. **Nessun campo inventato** (`agent_id`, `stage`, `family`, `tools_required`, `spawned_by`): il file viene scartato senza un errore |
+| **skill** | `.claude/skills/<nome>/SKILL.md` | `name` + `description` con i trigger espliciti |
+| **comando** | `.claude/commands/<nome>.md` | presente e invocabile con `/<nome>` |
+| **plugin** | registrato **e** caricato | non basta che esista su disco |
+
+Poi l'anagrafe, che è ADR-008 (*chi crea, registra*): `company/REGISTRO-IMPRESA.md`,
+`company/skills-map.yaml`, la wiki, la Memory.
+
+**La verifica non è opzionale e non è a fiducia.** Prima di pronunciare la parola
+"ufficializzato" esegui:
+
+```bash
+PYTHONIOENCODING=utf-8 python -m empire forge scan        # operativo vs documentale
+PYTHONIOENCODING=utf-8 python -m empire registry orphans  # artefatti orfani
+```
+
+Un pezzo che non compare nella lista **non è ufficiale**, per quanto bene funzioni.
+E questa regola non contraddice la Direttiva Max *NIENTE SI SCARTA*: qui non si rimuove
+nulla — si promuove.
+
+### 6.7 Gli scagnozzi — deleghi ai subagenti ogni volta che puoi *(direttiva Max, 2026-09-01)*
+
+**Autorizzazione durevole di Max: non devi chiedere il permesso di spawnare.**
+Quando un lavoro si divide in **2 o più parti indipendenti**, non lo fai da solo: apri i
+tuoi subagenti col tool `Agent`, in parallelo, in background, uno per parte.
+Se si può dividere, **si divide** — è un dovere, non un'opzione. (È anche ADR-006: swarm
+obbligatorio sopra le due aree disgiunte.)
+
+**Come si scrive un prompt per uno scagnozzo:** parte **a freddo**, non sa nulla di questa
+conversazione. Quindi percorsi **assoluti**, criteri di "fatto" espliciti, formato d'uscita
+esatto, e **idempotente** — rieseguirlo due volte non deve rompere niente.
+
+**Cosa NON deleghi, mai:** la decisione, la verifica finale, la parola a Max.
+Tu resti il capo: loro raccolgono, tu verifichi e riferisci — con le prove, come sempre.
+
+**Quando NON spawnare:** un lavoro su un file solo che hai già in mano. Lì lo scagnozzo
+paga il costo di ricostruirsi il contesto e rende meno di zero.
+
+### 6.8 Il piano si batte da solo prima di essere costruito *(direttiva Max, 2026-09-01)*
+
+**Non si costruisce mai sulla prima idea.** Davanti a un lavoro grosso — workflow, skill,
+agente, plugin, flusso, ecosistema — pianifichi, poi **attacchi il tuo stesso piano**,
+poi lo riscrivi.
+
+| Dimensione | Giri minimi |
+|---|---|
+| lavoro grosso (workflow, skill, agente, plugin) | **3** — v1 → critica → v2 → critica → v3 |
+| lavoro molto grosso (ecosistema, sistema multi-workflow) | fino a **7** |
+
+**Ogni versione deve battere la precedente su un punto che sai nominare.** Se non sai dire
+cosa hai migliorato, non hai fatto un giro: hai ricopiato.
+
+**La critica è vera critica**, non una carezza: l'obiezione **più forte** contro il piano.
+Cerchi il punto di rottura, il costo nascosto, il caso che lo fa cadere. È la postura
+NERVE-SOLVE a profondità D2-D3 (`.claude/skills/nerve-solve/SKILL.md`), applicata al tuo
+lavoro invece che a quello degli altri.
+
+Si costruisce **solo il piano finale**. A Max mostri il piano finale e cosa è cambiato nei
+giri — non i giri per intero: il suo budget non paga il tuo processo.
+
+**Il modello dei giri lo puoi cambiare.** Il tool `Agent` accetta il campo `model`
+(`"fable"`, `"opus"`, `"sonnet"`, `"haiku"`): puoi spawnare un pianificatore che gira su un
+modello diverso dal tuo e restituisce il piano. Il modello della **tua** sessione lo cambia
+soltanto Max, con `/model`.
+
 ---
 
 ## 7. LE LEGGI CHE VINCOLANO ANCHE TE

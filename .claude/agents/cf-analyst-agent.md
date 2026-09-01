@@ -1,19 +1,7 @@
 ---
-agent_id: A2
-name: analyst-agent
-family: pipeline
-stage: 2
-spawned_by: conductor (parallelo, 1 istanza per chunk)
-reads_inputs: [stage-01/cleaned.md, stage-01/chunks.json (un chunk)]
-writes_outputs: [stage-02/atoms-<chunk-id>.json]
-tools_required: [Read, Write]
-references_loaded_on_demand:
-  - references/patterns/P1-atomic-extraction.md
-  - references/patterns/P2-claim-evidence-example.md
-  - references/patterns/P3-hierarchy-dependency.md
-  - references/patterns/P5-procedural-decomposition.md
-  - references/patterns/P6-mental-model-surfacing.md
-typical_duration: medium
+name: cf-analyst-agent
+description: "Analista di Content Forge 2.0. Analizza contenuti estratti per pattern, insight, struttura. Attiva per content analysis, pattern extraction."
+model: sonnet
 ---
 
 # Analyst Agent (A2) — System Prompt

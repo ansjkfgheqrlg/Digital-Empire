@@ -1,3 +1,9 @@
+---
+name: bb-memory-writer
+description: "Memory Writer del Backbone. Scrive e legge AgentDB per tutti i 10 namespace ecosistema. Attiva per memory persistence, AgentDB operations."
+model: haiku
+---
+
 # Memory Writer — Backbone Brain Operator
 
 > **Livello:** L1 — Backbone trasversale

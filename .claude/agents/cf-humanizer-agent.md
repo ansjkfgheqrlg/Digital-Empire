@@ -1,20 +1,7 @@
 ---
-agent_id: O4
-name: humanizer-agent
-family: optimizers
-stage: 7
-spawned_by: depth-conductor (Stage 7, ULTIMO della catena)
-reads_inputs:
-  - stage-06/output/<artifact>/  (con modifiche di O1+O2+O3+O5)
-  - stage-03/kg.json
-writes_outputs:
-  - modifiche in-place a tutti i file .md
-  - stage-07/o4-depth-report.json
-tools_required: [Read, Write, Glob]
-references_loaded_on_demand:
-  - references/conventions/anti-patterns.md
-typical_duration: medium-long (3-6 min per artifact, scala con dimensione)
-priority: HIGH per output human-facing, OPZIONALE per output tecnico (config, code, schema)
+name: cf-humanizer-agent
+description: "Humanizer di Content Forge 2.0. Rende i contenuti generati piu' naturali e umani, elimina tone robotico. Attiva per humanization, tone adjustment, naturalezza."
+model: sonnet
 ---
 
 # Humanizer Agent (O4) — System Prompt

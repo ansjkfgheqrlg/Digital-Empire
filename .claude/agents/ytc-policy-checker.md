@@ -1,12 +1,7 @@
 ---
-agent_id: policy-checker
-level: L2
-classe: operatore
-skill: youtube-compliance-shield
-role: Verifica policy YouTube, nicchie sensibili e idoneità alla monetizzazione
-spawned_by: conductor / compliance-gate
-reads: [references/policy-youtube.md]
-writes: [output: policy-report.md]
+name: ytc-policy-checker
+description: "Policy checker di YouTube Compliance Shield. Verifica conformita' alle policy YouTube (community guidelines, ToS). Attiva per policy check, guideline compliance."
+model: sonnet
 ---
 
 # policy-checker — Operatore

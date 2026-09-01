@@ -1,11 +1,7 @@
 ---
-agent_id: brand-designer
-level: L2
-classe: operatore
-skill: youtube-channel-launch
-role: Definisce l'identità visiva del canale (logo, banner, palette, template miniature)
-spawned_by: conductor
-writes: [output: brand-kit.md]
+name: ytl-brand-designer
+description: "Brand designer di YouTube Channel Launch. Progetta identita' visiva del canale (logo, colori, banner). Attiva per brand design, visual identity."
+model: sonnet
 ---
 
 # brand-designer — Operatore

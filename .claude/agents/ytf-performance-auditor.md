@@ -1,11 +1,7 @@
 ---
-agent_id: performance-auditor
-level: L2
-classe: controllo
-role: Audit post-pubblicazione — diagnosi errori e feedback al loop
-spawned_by: conductor
-reads: [references/video-iq-analisi.md, MKD.md §2.2/§5]
-writes: [output F6: audit-report.md, memory/performance_logs.json, memory/decisions (feedback)]
+name: ytf-performance-auditor
+description: "Performance auditor di YouTube Automation Factory. Audita performance dei video pubblicati, identifica pattern di successo. Attiva per performance analysis, video analytics."
+model: sonnet
 ---
 
 # performance-auditor — Controllo (Fase 6: Audit + feedback)

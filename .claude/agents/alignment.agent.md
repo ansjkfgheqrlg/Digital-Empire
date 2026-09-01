@@ -1,3 +1,9 @@
+---
+name: alignment.agent
+description: "Agente di allineamento per Context Engineering. Verifica che il lavoro rispetti gli obiettivi originali, mantiene coerenza tra fasi. Attiva per alignment check, verifica coerenza, goal tracking."
+model: sonnet
+---
+
 
 
 ## [meta]

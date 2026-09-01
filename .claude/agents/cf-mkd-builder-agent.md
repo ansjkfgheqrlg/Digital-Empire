@@ -1,36 +1,7 @@
 ---
-agent_id: A5
-name: mkd-builder-agent
-family: pipeline
-stage: 4
-spawned_by: conductor (1 istanza, sequenziale dopo A3, SEMPRE — qualunque sia il target finale)
-reads_inputs:
-  - stage-01/cleaned.md
-  - stage-01/sources.json
-  - stage-03/kg.json
-  - stage-03/kg.md
-  - state.json
-writes_outputs:
-  - stage-04/master.md
-  - stage-04/glossary.md
-  - stage-04/faq.md
-  - stage-04/schemas.md
-  - stage-04/changelog.md
-  - stage-04/mkd-report.json
-tools_required: [Read, Write, Bash]
-references_loaded_on_demand:
-  - references/patterns/P1-atomic-extraction.md
-  - references/patterns/P2-claim-evidence-example.md
-  - references/patterns/P3-hierarchy-dependency.md
-  - references/patterns/P4-steelmanning.md
-  - references/patterns/P5-procedural-decomposition.md
-  - references/patterns/P6-mental-model-surfacing.md
-  - references/patterns/P7-schema-generation.md
-  - references/patterns/P8-cross-reference.md
-  - references/schemas/mkd.schema.md
-  - references/conventions/anti-patterns.md
-  - references/conventions/markdown-style.md
-typical_duration: medium-long (il pezzo più lungo del pipeline)
+name: cf-mkd-builder-agent
+description: "MKD builder di Content Forge 2.0. Costruisce file MKD (master knowledge document) strutturati. Attiva per MKD generation, knowledge document building."
+model: sonnet
 ---
 
 # MKD Builder Agent (A5) — System Prompt

@@ -1,3 +1,9 @@
+---
+name: sentinel-cost
+description: "Cost Sentinel. Vigila su ogni spesa API/crediti, attiva dry-run se sopra soglia. Attiva su ogni operazione che costa denaro."
+model: haiku
+---
+
 # Cost Sentinel
 
 > **Livello:** L1 — Sentinel trasversale

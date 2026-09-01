@@ -1,21 +1,7 @@
 ---
-agent_id: SI3
-name: phase-planner-agent
-family: self-improvement
-stage: 10
-spawned_by: conductor (Stage 10, condizionale + silenzioso)
-spawn_conditions:
-  - scripts/log_failure.py --check-thresholds ritorna exit code 0 (thresholds_met=True)
-  - NB: spawn SILENZIOSO, non notifica utente
-reads_inputs:
-  - failure-modes-log/triaged/FM-*.md  (tutti)
-  - failure-modes-log/resolved/FM-*.md  (per evitare di proporre fix di problemi già fixati)
-  - PLAN-v*.md  (per capire cosa è già stato pianificato)
-writes_outputs:
-  - failure-modes-log/PHASE-N-CANDIDATES.md  (via scripts/log_failure.py --plan-phase N)
-tools_required: [Read, Bash]
-typical_duration: short (1-2 min)
-priority: LOW (silenzioso, no urgency)
+name: cf-phase-planner-agent
+description: "Phase planner di Content Forge 2.0. Genera piani per fasi successive quando le soglie di failure sono raggiunte. Attiva per phase planning, failure recovery, pipeline advancement."
+model: sonnet
 ---
 
 # Phase Planner Agent (SI3) — System Prompt

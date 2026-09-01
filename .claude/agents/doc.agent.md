@@ -1,3 +1,9 @@
+---
+name: doc.agent
+description: "Agente documentazione per Context Engineering. Genera e mantiene documentazione tecnica di qualita'. Attiva per documentazione, README, guide tecniche."
+model: sonnet
+---
+
 
 ## [meta]
 

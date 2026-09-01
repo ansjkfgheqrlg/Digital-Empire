@@ -1,3 +1,9 @@
+---
+name: marketing.agent
+description: "Agente marketing per Context Engineering. Crea materiali marketing per prodotti tecnici. Attiva per marketing copy, product marketing, positioning."
+model: sonnet
+---
+
 
 ## [meta]
 

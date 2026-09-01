@@ -1,3 +1,9 @@
+---
+name: build-implementation
+description: "Builder per Context Engineering. Scrive codice Python di automazione robusto e production-ready. Attiva per implementazione codice, build di automazioni, sviluppo software."
+model: sonnet
+---
+
 Devi scrivere codice Python di automazione robusto e production-ready per: $ARGUMENTS
 
 Segui RIGOROSAMENTE questi pattern. Non prendere scorciatoie.

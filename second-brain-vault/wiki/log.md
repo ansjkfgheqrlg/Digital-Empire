@@ -1,5 +1,21 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-01 (VERIFICA AGENTI — 4 agenti morti riparati, Emperator)
+- MISURAZIONE: su domanda diretta di Max, misurati gli agenti con lo stesso gate delle skill.
+  `registro-agenti.yaml` dichiarava 123 ufficiali senza che nessuno lo avesse verificato.
+  Trovati 12 difetti: 2 nel progetto (`cc-master` YAML rotto = non caricava, `diligence.agent`
+  con description = frammento JSON) e 10 in `~/.claude/agents/` — cartella **mai auditata prima**,
+  34 dei 35 agenti vivono solo li'.
+- DANNO REALE: 4 agenti non caricavano affatto. `outreach-deep-intel` coordinava Research +
+  CRO Audit + Insight (3 su 4 morti); la skill `opus` attivava `opus-director` (morto).
+  Due sistemi mutilati che si credevano interi, senza mai dare errore.
+- FIX: description quotate su 6 agenti, esempi di `cc-master` spostati nel corpo, `diligence.agent`
+  ridescritta dal suo corpo, 5 file globali rinominati per far combaciare file e `name:`.
+- NUOVO: `scripts/verify-agents.py` — gate permanente, gemello di `verify-skills.py`.
+  Esito: AGENTI PASS 597/597 su 158 agenti. SKILL PASS 850/850 su 170.
+- UPDATE: `registro-agenti.yaml` v1.1, sezione `agenti_ufficiali` col censimento nominale di tutti
+  e 123 gli agenti di progetto per famiglia. Checkpoint: CP-20260901-005.
+
 ## 2026-09-01 (EMPERATOR — auto-modifica: 4 direttive di Max)
 - CONFIG: 4 direttive permanenti innestate in Emperator su ordine di Max.
   File toccati: `scripts/emperator_hook.py` (blocco DOTTRINA, iniettato a ogni messaggio)

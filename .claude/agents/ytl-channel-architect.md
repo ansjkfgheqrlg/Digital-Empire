@@ -1,11 +1,7 @@
 ---
-agent_id: channel-architect
-level: L2
-classe: operatore
-skill: youtube-channel-launch
-role: Definisce nome, handle, posizionamento e format ripetibile del canale
-spawned_by: conductor
-writes: [output: scheda-canale.md]
+name: ytl-channel-architect
+description: "Channel architect di YouTube Channel Launch. Progetta struttura del canale (categorie, playlist, about). Attiva per channel setup, architecture planning."
+model: sonnet
 ---
 
 # channel-architect — Operatore

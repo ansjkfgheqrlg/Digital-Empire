@@ -1,3 +1,37 @@
+## 🔎 2026-09-01 — EMPERATOR: VERIFICA AGENTI — 4 agenti erano MORTI, riparati — gate PASS 597/597 — CP-20260901-005
+
+Max ha chiesto secco: "tutti gli agenti e tutte le skill sono ufficiali?". Ho misurato invece di
+citare il registro. **Le skill si', gli agenti no.** `registro-agenti.yaml` diceva
+`status_ufficiali: 123` — riga scritta a mano, mai verificata.
+
+**12 difetti trovati.** Progetto (123 agenti): `cc-master` con YAML rotto (**non caricava affatto**)
+e `diligence.agent` con `description: ", region=<region>, focus=<focus> } }"`, un frammento di JSON
+colato nel campo. **Globale `~/.claude/agents/` (35 agenti): mai auditata prima**, 34 dei 35 vivono
+solo li'. Dentro: 4 agenti morti per `": "` non quotato (`opus-director`, `outreach-cro-audit`,
+`outreach-insight`, `outreach-research`) + 5 file col nome diverso dal `name:`.
+
+**Il danno vero — due sistemi mutilati che si credevano interi:**
+- **Team DEEP-INTEL**: `outreach-deep-intel` dichiara di coordinare Research + CRO Audit +
+  Competitor + Insight. **Tre di quei quattro non caricavano.** L'orchestratore chiamava fantasmi.
+- **Sistema OPUS**: la skill `opus` attiva `opus-director` "per ogni progetto". Non caricava.
+
+Nessuno dei due dava errore: un frontmatter rotto degrada in silenzio.
+
+**Fatto:** description quotate su 6 agenti, esempi di `cc-master` spostati nel corpo (contenuto
+integro), `diligence.agent` descritta leggendo il suo corpo, 5 file globali rinominati,
+`registro-agenti.yaml` v1.1 con **censimento nominale di tutti e 123** (prima ne itemizzava 19,
+gli altri 104 esistevano solo dentro un contatore), nuovo gate `scripts/verify-agents.py`.
+
+```
+AGENTI: 158 (123 progetto + 35 globali)  CHECK: 597  FALLITI: 0  -> PASS
+SKILL:  170                              CHECK: 850  FALLITI: 0  -> PASS
+```
+
+**Lezione:** lo stesso bug — `": "` in uno scalare YAML non quotato — ha ucciso agenti E skill.
+E' il difetto sistemico dell'Impero. Un contatore non e' un censimento.
+
+---
+
 ## 👑 2026-09-01 — EMPERATOR: 4 direttive di Max innestate in me stesso — CP-20260901-004
 
 Max ha ordinato un'auto-modifica. Toccati i due file che mi governano, e come impone la regola

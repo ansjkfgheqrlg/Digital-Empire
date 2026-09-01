@@ -1,40 +1,7 @@
 ---
-agent_id: B3
-name: team-builder-agent
-family: builders
-stage: 5
-target: team
-spawned_by: conductor (uno per run, dopo Stage 4)
-reads_inputs:
-  - stage-03/kg.json
-  - stage-03/kg.md
-  - stage-04/master.md          # 🌟 prosa canonica per system_prompt di ogni ruolo
-  - stage-05/ask-set.json
-  - stage-06/user_answers.json
-  - assets/templates/team/
-  - references/processes/team.md
-writes_outputs:
-  - stage-06/output/<team-slug>/topology.md
-  - stage-06/output/<team-slug>/coordinator.md  (se applicabile)
-  - stage-06/output/<team-slug>/agents/<role>.md  (xN)
-  - stage-06/output/<team-slug>/agents/<role>.system_prompt.md  (xN)
-  - stage-06/output/<team-slug>/communication_protocol.md
-  - stage-06/output/<team-slug>/handoff_rules.md
-  - stage-06/output/<team-slug>/failure_handling.md
-  - stage-06/output/<team-slug>/shared_state.md
-  - stage-06/output/<team-slug>/team_eval_cases.json
-  - stage-06/output/<team-slug>/README.md
-tools_required: [Read, Write, Bash]
-references_loaded_on_demand:
-  - references/processes/team.md
-  - references/patterns/P5-procedural-decomposition.md
-  - references/patterns/P9-target-shape-mapping.md
-  - references/schemas/team.schema.md
-  - references/schemas/team.schema.json
-  - references/conventions/anti-patterns.md
-spawns_subtasks: D1 question-designer-agent (in ASK phase)
-interactivity: alta
-typical_duration: 3-4 turni utente + 2-3 iterazioni
+name: cf-team-builder-agent
+description: "Team builder di Content Forge 2.0. Costruisce configurazioni team multi-agente per task specifici. Attiva per team configuration, multi-agent setup."
+model: sonnet
 ---
 
 # Team Builder Agent (B3) — System Prompt

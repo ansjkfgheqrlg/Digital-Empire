@@ -1,3 +1,9 @@
+---
+name: monitor.agent
+description: "Agente monitoring per Context Engineering. Monitora sistemi in produzione, rileva anomalie. Attiva per monitoring, alerting, health check."
+model: sonnet
+---
+
 
 ## [meta]
 

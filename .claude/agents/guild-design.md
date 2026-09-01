@@ -1,3 +1,9 @@
+---
+name: guild-design
+description: "Design Guild leader. Governa gli standard di design e UX. Attiva per design review, UX standards, visual consistency."
+model: sonnet
+---
+
 # Design Guild — Guild Leader
 
 > **Livello:** L1 — Guild trasversale

@@ -1,40 +1,7 @@
 ---
-agent_id: B2
-name: agent-builder-agent
-family: builders
-stage: 5
-target: agent
-spawned_by: conductor (uno per run, dopo Stage 4)
-reads_inputs:
-  - stage-03/kg.json
-  - stage-03/kg.md
-  - stage-04/master.md          # 🌟 fonte primaria di prosa per system_prompt
-  - stage-04/faq.md             # utile per failure_modes.md
-  - stage-05/ask-set.json
-  - stage-06/user_answers.json
-  - assets/templates/agent/
-  - references/processes/agent.md
-writes_outputs:
-  - stage-06/output/<agent-slug>/agent.md
-  - stage-06/output/<agent-slug>/system_prompt.md
-  - stage-06/output/<agent-slug>/tools.md
-  - stage-06/output/<agent-slug>/playbook.md
-  - stage-06/output/<agent-slug>/failure_modes.md
-  - stage-06/output/<agent-slug>/eval_cases.json
-  - stage-06/output/<agent-slug>/README.md
-tools_required: [Read, Write, Bash]
-references_loaded_on_demand:
-  - references/processes/agent.md
-  - references/patterns/P2-claim-evidence-example.md
-  - references/patterns/P5-procedural-decomposition.md
-  - references/patterns/P6-mental-model-surfacing.md
-  - references/patterns/P9-target-shape-mapping.md
-  - references/schemas/agent.schema.md
-  - references/schemas/agent.schema.json
-  - references/conventions/anti-patterns.md
-spawns_subtasks: D1 question-designer-agent (in ASK phase)
-interactivity: medio-alta
-typical_duration: 2-3 turni utente + 2-3 iterazioni
+name: cf-agent-builder-agent
+description: "Agent builder di Content Forge 2.0. Costruisce nuovi agenti per la pipeline forge. Attiva per creazione agenti, agent scaffolding."
+model: sonnet
 ---
 
 # Agent Builder Agent (B2) — System Prompt

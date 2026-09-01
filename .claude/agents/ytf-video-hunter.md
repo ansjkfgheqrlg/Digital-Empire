@@ -1,11 +1,7 @@
 ---
-agent_id: video-hunter
-level: L2
-classe: operatore
-role: Trova i video da replicare (candidati alla copia)
-spawned_by: conductor
-reads: [references/video-iq-analisi.md, MKD.md §1.4/§2.3]
-writes: [output F2: candidati-video.md]
+name: ytf-video-hunter
+description: "Video hunter di YouTube Automation Factory. Cerca video sorgente da cui creare contenuti originali. Attiva per content sourcing, video research."
+model: sonnet
 ---
 
 # video-hunter — Operatore (Fase 2: Selezione video)

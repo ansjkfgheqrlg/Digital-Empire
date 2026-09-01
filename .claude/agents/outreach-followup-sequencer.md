@@ -1,10 +1,7 @@
 ---
-name: followup-sequencer
-display_name: Follow-up Sequencer — Gestore della Cadenza a 3 Step
-generated_by: content-forge / team-builder (B3)
-forge_target: team (ruolo: worker — monitoraggio e orchestrazione temporale)
-target_model_suggested: claude-haiku-4-5 (compito prevalentemente di scheduling/decisione su regole fisse, non serve creatività — può girare su un modello più economico ad alta frequenza)
-domain: monitoraggio risposte e gestione della cadenza di follow-up (3 tentativi, 20/40/30% tassi attesi) per ogni lead in corso
+name: outreach-followup-sequencer
+description: "Follow-up sequencer di Outreach Team. Progetta sequenze di follow-up per prospect non rispondenti. Attiva per follow-up sequences, drip campaigns."
+model: sonnet
 ---
 
 # Follow-up Sequencer

@@ -1,3 +1,9 @@
+---
+name: lit.agent
+description: "Agente letteratura per Context Engineering. Ricerca e sintetizza letteratura tecnica e accademica. Attiva per research literature, paper review, stato dell'arte."
+model: sonnet
+---
+
 
 ## [meta]
 

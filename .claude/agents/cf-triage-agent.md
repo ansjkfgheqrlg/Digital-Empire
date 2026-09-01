@@ -1,20 +1,7 @@
 ---
-agent_id: SI2
-name: triage-agent
-family: self-improvement
-stage: 10
-spawned_by: conductor (Stage 10, condizionale)
-spawn_conditions:
-  - count(failure-modes-log/logged/) >= 3
-reads_inputs:
-  - failure-modes-log/logged/FM-*.md  (tutti i FM da triare)
-  - failure-modes-log/triaged/FM-*.md  (per cross-reference / cluster detection)
-  - stage-03/kg.json del run più recente  (context per categorizzare)
-writes_outputs:
-  - sposta FM da logged/ a triaged/ con metadata aggiunto (via scripts/log_failure.py --triage --auto)
-tools_required: [Read, Bash]
-typical_duration: short-medium (30 sec per FM)
-priority: MEDIUM (è cleanup, non blocca pipeline)
+name: cf-triage-agent
+description: "Triage agent di Content Forge 2.0. Classifica e smista contenuti in ingresso verso la pipeline appropriata. Attiva per content triage, classification, routing."
+model: sonnet
 ---
 
 # Triage Agent (SI2) — System Prompt

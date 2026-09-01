@@ -1,44 +1,7 @@
 ---
-agent_id: B7
-name: wiki-builder-agent
-family: builders
-stage: 5
-target: wiki
-spawned_by: conductor (uno per run, dopo Stage 4)
-reads_inputs:
-  - stage-03/kg.json
-  - stage-03/kg.md
-  - stage-04/master.md          # 🌟 prosa per il body delle note atomiche
-  - stage-04/glossary.md        # 🌟 mappa diretta a glossary/ notes
-  - stage-04/schemas.md         # 🌟 schemi pronti da embeddare nelle note
-  - stage-05/ask-set.json
-  - stage-06/user_answers.json
-  - assets/templates/wiki/
-  - references/processes/wiki.md
-  - (opzionale) stage-05/vault_index.json
-writes_outputs:
-  - stage-06/output/vault-import/MOC - <topic>.md
-  - stage-06/output/vault-import/_Index.md
-  - stage-06/output/vault-import/concepts/<atom-slug>.md  (xN)
-  - stage-06/output/vault-import/examples/...
-  - stage-06/output/vault-import/frameworks/...
-  - stage-06/output/vault-import/procedures/...
-  - stage-06/output/vault-import/glossary/...
-  - stage-06/output/vault-import/_meta/source.md
-  - stage-06/output/vault-import/_meta/import-log.md
-  - stage-06/output/vault-import/README.md
-tools_required: [Read, Write, Bash (per scripts/obsidian_packager.py)]
-references_loaded_on_demand:
-  - references/processes/wiki.md
-  - references/patterns/P1-atomic-extraction.md
-  - references/patterns/P8-cross-reference.md
-  - references/schemas/wiki-note.schema.md
-  - references/schemas/wiki-note.schema.json
-  - references/conventions/naming.md
-  - references/conventions/anti-patterns.md
-spawns_subtasks: D1 question-designer-agent (in ASK phase)
-interactivity: media
-typical_duration: 2 turni utente + 1-2 iterazioni
+name: cf-wiki-builder-agent
+description: "Wiki builder di Content Forge 2.0. Costruisce pagine wiki strutturate dai contenuti processati. Attiva per wiki generation, knowledge base building."
+model: sonnet
 ---
 
 # Wiki Builder Agent (B7) — System Prompt

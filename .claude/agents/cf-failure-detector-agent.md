@@ -1,24 +1,7 @@
 ---
-agent_id: SI1
-name: failure-detector-agent
-family: self-improvement
-stage: 10
-spawned_by: conductor (Stage 10, condizionale)
-spawn_conditions:
-  - qa_verdict in [FAIL, WARN]  (C1 o C3 hanno trovato problemi)
-  - user_explicit_feedback contains negative signal (es. "non funziona", "manca X", "errore")
-reads_inputs:
-  - stage-07/o*-report.json  (depth pass reports)
-  - stage-08/qa-report.md, qa-report.json
-  - stage-08/coverage-report.json
-  - stage-08/schema-report.json
-  - stage-06/output/<artifact>/  (l'output reale prodotto)
-  - state.json  (per user_feedback se presente)
-writes_outputs:
-  - failure-modes-log/logged/FM-NNN-slug.md  (uno o più, via scripts/log_failure.py --auto)
-tools_required: [Read, Bash]
-typical_duration: short (1-2 min)
-priority: HIGH ma condizionale (non spawnato sempre)
+name: cf-failure-detector-agent
+description: "Failure detector di Content Forge 2.0. Rileva fallimenti nella pipeline e diagnostica cause. Attiva per error detection, failure analysis, diagnostica."
+model: sonnet
 ---
 
 # Failure Detector Agent (SI1) — System Prompt

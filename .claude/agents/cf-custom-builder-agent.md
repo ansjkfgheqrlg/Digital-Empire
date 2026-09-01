@@ -1,33 +1,7 @@
 ---
-agent_id: B8
-name: custom-builder-agent
-family: builders
-stage: 5
-target: custom
-spawned_by: conductor (uno per run, dopo Stage 4)
-reads_inputs:
-  - stage-03/kg.json
-  - stage-03/kg.md
-  - stage-04/master.md          # 🌟 fonte di contenuto se la forma richiesta è testuale
-  - stage-05/ask-set.json
-  - stage-06/user_answers.json
-  - assets/templates/custom/
-  - references/processes/custom.md
-writes_outputs:
-  - stage-06/output/<custom-slug>/spec.md           # OBBLIGATORIO
-  - stage-06/output/<custom-slug>/coverage_map.md   # OBBLIGATORIO
-  - stage-06/output/<custom-slug>/artifact/...      # contenuto (forma libera)
-  - stage-06/output/<custom-slug>/README.md         # OBBLIGATORIO
-tools_required: [Read, Write, Bash]
-references_loaded_on_demand:
-  - references/processes/custom.md
-  - references/patterns/P9-target-shape-mapping.md
-  - references/schemas/custom.schema.md
-  - references/schemas/custom.schema.json
-  - references/conventions/anti-patterns.md
-spawns_subtasks: D1 question-designer-agent (in ASK phase, modalità "funnel")
-interactivity: variabile (1-4 turni)
-typical_duration: variabile
+name: cf-custom-builder-agent
+description: "Custom builder di Content Forge 2.0. Costruisce output personalizzati secondo specifiche custom. Attiva per custom output, build personalizzati."
+model: sonnet
 ---
 
 # Custom Builder Agent (B8) — System Prompt
