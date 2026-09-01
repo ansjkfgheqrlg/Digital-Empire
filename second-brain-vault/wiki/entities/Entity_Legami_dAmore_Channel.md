@@ -29,7 +29,7 @@ produzione+pubblicazione reale sulla stessa fabbrica F1-F6, riconfigurata per qu
 - Video reale piu' virale nel campione scrape pubblico: "5 Segnali Che piaci ad una DONNA Ma Lo
   Nasconde" — 29.000 viste, 5.0 views/ora
 
-## Prossimi passi (completati/in corso — aggiornato 2026-08-23)
+## Prossimi passi (completati/in corso — aggiornato 2026-09-01)
 1. ✅ Studio copy competitor reali (Codice Donna, Psicologia dell'Attrazione, Psicologia Femminile,
    Linguaggio Segreto del Corpo — trovati via ricerca YouTube reale, non inventati)
 2. ✅ Calendario contenuti (`CALENDARIO-LEGAMIDIAMORE.md`)
@@ -37,11 +37,19 @@ produzione+pubblicazione reale sulla stessa fabbrica F1-F6, riconfigurata per qu
    competitor vagliato (fonte: 20260805 audit, script scritto 20260816), voce femminile
    realistica (Fliki), scelta deliberata di Max: **Public** (non Private, override esplicito
    sulla regola "sempre privato di default")
-4. 🟡 **3 nuovi video in produzione** (2026-08-19): script scritti e passati tutti i gate reali
-   (critic 8.10-8.37/10, SEO 92.5-100/100), 3 generazioni Fliki reali avviate — replica da
-   competitor `@PsicologiaFemminile-f8c` (catalogo proprio del canale troppo debole, mediana
-   0.34 vph). Upload non ancora fatto, in attesa delle copertine di Max (regola permanente:
-   nessun upload senza copertina).
+4. ✅ **Video-01 pubblicato PUBLIC** (2026-09-01): "5 SEGNALI che una Donna Vuole che TU Faccia
+   la Prima Mossa" — https://youtu.be/t8AFCU5VsUQ — era in PRIVATO, Max lo ha messo pubblico
+   direttamente da YouTube Studio.
+5. ✅ **Video-04 caricato PRIVATO** (2026-09-01): "7 Tocchi Che Fanno Innamorare Una Donna Di Te"
+   — upload via Playwright, auto-saved come privato. Copertina di Max gia' presente.
+6. 🟡 **Video-02 e Video-03 pronti in locale** — non caricati su YouTube. Video-02 (7:55, 5s
+   sotto minimo 8 min) e Video-03 (7:17, 43s sotto minimo). Da valutare se caricare.
+
+## Regole permanenti aggiunte il 2026-09-01 (direttive Max)
+- **MAI bozze/draft**: ogni video deve essere PRIVATO, mai in draft. Max odia le bozze.
+- **Copertina = prima priorita' assoluta**: prima di qualsiasi altra azione, bloccare Max con
+  "FERMO. FAI LA COPERTINA." + prompt Arena + aprire cartella. Non si procede senza.
+- **Ricordare gli errori**: ogni direttiva/errore va salvato permanentemente in workflow e wiki.
 
 ## Bug reali trovati e fixati durante la produzione (2026-08-15 → 08-19)
 - **Tag SEO inquinati**: `run_phase_5` leggeva anche le etichette interne di pattern copy

@@ -104,13 +104,48 @@ def upload_via_playwright(video_path, metadata, thumbnail_path, user_data_dir):
             page.wait_for_timeout(1000)
             
             # Caricamento miniatura — regola permanente: obbligatoria, gia' verificata esistente
-            # da main(). Selettore per ORDINE (2 input[type=file] nella wizard: [0] video gia'
-            # usato sopra, [1] miniatura) invece di un id — gli id di questa UI si sono rivelati
-            # stale piu' volte il 2026-08-17 (create-icon, next-button probabile lo stesso).
+            # da main(). AGGIORNATO 2026-09-01: il selettore nth(1) non trova piu' il secondo
+            # input[type=file] nella wizard attuale di Studio. Strategia aggiornata: scroll fino
+            # alla sezione "Thumbnail", cercare il bottone "Upload thumbnail"/"Carica miniatura"
+            # o un input file dedicato, con fallback sull'ordine se la UI cambia di nuovo.
             print(f"Inserimento miniatura: {thumbnail_path}...")
-            thumb_input = page.locator("input[type='file']").nth(1)
-            thumb_input.set_input_files(thumbnail_path)
-            page.wait_for_timeout(3000)
+            # Scroll giu' per rendere visibile la sezione thumbnail
+            page.evaluate("window.scrollBy(0, 400)")
+            page.wait_for_timeout(1000)
+            # Prova 1: cercare un input file specifico per la miniatura (attributo accept image)
+            thumb_input = None
+            img_input = page.locator("input[type='file'][accept*='image']")
+            if img_input.count() > 0:
+                thumb_input = img_input.first
+            else:
+                # Prova 2: bottone "Upload thumbnail" / "Carica miniatura" che rivela l'input
+                upload_thumb_btn = page.locator(
+                    "button:has-text('Upload thumbnail'), "
+                    "button:has-text('Carica miniatura'), "
+                    "#still-picker-add-button, "
+                    "[id*='thumbnail'] button"
+                ).first
+                try:
+                    upload_thumb_btn.click(timeout=5000)
+                    page.wait_for_timeout(1000)
+                    img_input = page.locator("input[type='file'][accept*='image']")
+                    if img_input.count() > 0:
+                        thumb_input = img_input.first
+                except Exception:
+                    pass
+            if not thumb_input:
+                # Prova 3: fallback al vecchio metodo nth(1) con timeout breve
+                try:
+                    fallback = page.locator("input[type='file']").nth(1)
+                    fallback.wait_for(state="attached", timeout=5000)
+                    thumb_input = fallback
+                except Exception:
+                    print("[AVVISO] Nessun input miniatura trovato — la miniatura va caricata manualmente in YouTube Studio.")
+            if thumb_input:
+                thumb_input.set_input_files(thumbnail_path)
+                page.wait_for_timeout(3000)
+            else:
+                print("[AVVISO] Proseguo senza miniatura. Caricarla manualmente dopo il salvataggio.")
 
             # Dichiarazione non per bambini — valore reale verificato dal vivo il 2026-08-17
             # via screenshot diagnostico: e' 'VIDEO_MADE_FOR_KIDS_NOT_MFK', non 'FALSE' come
@@ -119,15 +154,32 @@ def upload_via_playwright(video_path, metadata, thumbnail_path, user_data_dir):
             page.locator("tp-yt-paper-radio-button[name='VIDEO_MADE_FOR_KIDS_NOT_MFK']").click()
             page.wait_for_timeout(1000)
 
-            # Clic su Avanti per 3 volte (Dettagli -> Elementi -> Controlli). Per ruolo/testo,
-            # bilingue, non per id (#next-button non e' mai stato confermato valido nella wizard
-            # reale, solo assunto — stesso pattern di staleness di #create-icon).
-            for step in range(3):
-                print(f"Clic su pulsante Avanti/Next (Passo {step+1}/3)...")
-                page.locator(
-                    "button:has-text('Next'), button:has-text('Avanti')"
-                ).first.click()
-                page.wait_for_timeout(2000)
+            # Clic su Avanti fino alla schermata Visibilita'. La wizard di Studio ha un numero
+            # variabile di tab (era 4 fino a ~agosto 2026, diventato 5 con l'aggiunta di
+            # "Initial check" / "Monetization"). Invece di contare i click (fragile), clicchiamo
+            # Next finche' non arriviamo al tab Visibility/Visibilita'. Max 6 tentativi come
+            # guardia anti-loop. AGGIORNATO 2026-09-01 dopo timeout su nth(3) con wizard a 5 tab.
+            for step in range(6):
+                # Controlla se siamo gia' sul tab Visibility
+                vis_tab = page.locator(
+                    "[aria-label*='Visibility'], [aria-label*='Visibilit'],"
+                    "div.step-title:has-text('Visibility'), div.step-title:has-text('Visibilit')"
+                ).first
+                try:
+                    if vis_tab.is_visible():
+                        print(f"Raggiunto tab Visibility dopo {step} click Next.")
+                        break
+                except Exception:
+                    pass
+                print(f"Clic su pulsante Avanti/Next (Passo {step+1})...")
+                try:
+                    page.locator(
+                        "button:has-text('Next'), button:has-text('Avanti')"
+                    ).first.click(timeout=10000)
+                    page.wait_for_timeout(2000)
+                except Exception:
+                    print(f"[AVVISO] Next button non trovato al passo {step+1}, proseguo...")
+                    break
 
             # Schermata Visibilità: imposta come Privato
             print("Impostazione visibilità (Privato per sicurezza)...")

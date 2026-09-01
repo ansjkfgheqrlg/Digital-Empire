@@ -46,7 +46,10 @@
    la copertina da quella cartella — non da `arena_thumbnail.py`, non da un prompt AI generato
    da Claude. Se la cartella del video non contiene nessuna immagine, l'upload si **rifiuta**
    di procedere invece di caricare senza copertina.
-6. **Pubblicazione sempre PRIVATA.** Mai pubblico finché Max non lo chiede esplicitamente.
+6. **Pubblicazione sempre PRIVATA — MAI IN BOZZA/DRAFT.** Un video deve essere caricato come
+   PRIVATO, mai lasciato in stato "bozza" su YouTube Studio. Max odia le bozze: se un video
+   è in draft, è un errore da correggere immediatamente portandolo a PRIVATO.
+   Mai pubblico finché Max non lo chiede esplicitamente.
    `youtube_uploader_playwright.py` già imposta `PRIVATE` come visibilità di default
    (`tp-yt-paper-radio-button[name='PRIVATE']`). L'upload reale è comunque un'azione a parte,
    opt-in con un flag `--upload` previsto sulla Fase 5 dell'orchestratore — non automatico. *Nota
@@ -56,7 +59,20 @@
    estrae l'ID/URL reale del video caricato e lo registra in `memory/published_videos.json`. Il
    primo run reale con `--upload` va lanciato manualmente da un operatore umano, non da un agente
    in autonomia.*
-7. **Nessun gate esistente viene rimosso.** `niche-gate`, `seo-gate`, `qa-audio-video` e i
+7. **⛔ COPERTINA = PRIMA PRIORITA' ASSOLUTA — regola permanente, Max 2026-09-01.** Prima di
+   qualsiasi altra azione su un video, Emperator/Claude DEVE:
+   (a) Bloccare Max con la frase "FERMO. FAI LA COPERTINA." — non si procede senza.
+   (b) Dare il prompt per Arena direttamente in chat (copia-incolla pronto).
+   (c) Aprire la cartella `VIDEO-PRONTI/video-NN/` nel computer di Max (`start "" <path>`).
+   (d) Non passare ad altro finche' la copertina non e' nella cartella.
+   Se Max ha gia' messo la copertina nella cartella, non chiedere conferma: usarla e procedere.
+   Questo step viene PRIMA di upload, PRIMA di produzione video successivo, PRIMA di qualsiasi
+   altro task. Non e' negoziabile.
+8. **⛔ MAI video in BOZZA/DRAFT — regola permanente, Max 2026-09-01.** Max odia le bozze.
+   Ogni video caricato su YouTube Studio deve essere in stato PRIVATO, mai in bozza. Se un
+   video finisce in bozza per un errore tecnico, va corretto immediatamente portandolo a
+   PRIVATO. Verificare dopo ogni upload che lo stato sia PRIVATE, non DRAFT.
+9. **Nessun gate esistente viene rimosso.** `niche-gate`, `seo-gate`, `qa-audio-video` e i
    regolatori restano bloccanti come oggi. Questo documento aggiunge regole, non ne toglie.
 8. **Nessun run è "fatto" finché non è salvato in memoria** — `memory/` del progetto (checkpoint,
    decision log) **e** checkpoint Digital Empire in `company/Memory/checkpoints/`.

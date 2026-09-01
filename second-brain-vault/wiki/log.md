@@ -1,5 +1,15 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-01 (Legami d'Amore — pubblicazione + 3 nuove regole permanenti, Emperator)
+- UPDATE: Entity_Legami_dAmore_Channel.md aggiornata con stato reale dei 4 video pronti:
+  Video-01 reso PUBBLICO da Max, Video-04 caricato PRIVATO via Playwright (auto-save).
+- RULES: 3 nuove regole permanenti di Max salvate in WORKFLOW-LEGAMI-DAMORE-MASTER.md:
+  (1) MAI bozze/draft — sempre PRIVATO; (2) Copertina = prima priorita' assoluta — bloccare
+  Max con prompt + cartella aperta prima di qualsiasi altro task; (3) Salvare ogni errore/
+  direttiva permanentemente. Script youtube_uploader_playwright.py aggiornato per UI Studio
+  con 5 tab (era 4) + selettore miniatura robusto.
+- FIX: youtube_uploader_playwright.py — thumbnail locator (accept='image'), Next loop dinamico.
+
 ## 2026-08-29 (Empire Studio — cs2online: sezione "AI - Le basi" COMPLETA 9/9, Claude)
 - INGEST: proseguito in autonomia dopo l'ordine Max (Lezione 16 + Bonus 1-6), completate le
   lezioni mancanti della prima sezione: Lezione 7 (Diversi tipi di contesto, teoria — gerarchia
