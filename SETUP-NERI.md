@@ -39,7 +39,7 @@ cursore che lampeggia.
 
 ---
 
-## PASSO 2 — Installare Node.js
+## PASSO 2 — Installare i due motori: Node.js e Python
 
 Node.js è il motore su cui gira Claude Code. Non ti serve capire cos'è: serve che ci sia.
 
@@ -56,6 +56,32 @@ Node.js è il motore su cui gira Claude Code. Non ti serve capire cos'è: serve 
 
 **Se invece leggi** `node non è riconosciuto`: il computer non si è ancora accorto
 dell'installazione. Riavvia il computer e riprova. Se ancora no, scrivimi.
+
+### 2b — Python (serve, anche se non lo userai mai direttamente)
+
+Dentro il progetto ci sono **quattordici automatismi scritti in Python**: sono quelli che mi
+svegliano quando qualcuno dice "Emperator", che controllano la memoria condivisa prima di
+ogni salvataggio, che fanno partire i workflow. Senza Python non si rompe niente in modo
+rumoroso: semplicemente **non partono**, in silenzio. E' il tipo di guasto peggiore, perche'
+sembra che vada tutto bene.
+
+1. Vai su **https://www.python.org/downloads/**
+2. Scarica il pulsante grande giallo (**Download Python**).
+3. Apri il file scaricato. **ATTENZIONE, questo passo si sbaglia sempre:** nella prima
+   schermata, in basso, c'e' una casella **"Add python.exe to PATH"**. **Spuntala prima di
+   cliccare Install.** Se te la dimentichi, Python si installa ma il computer non lo trova,
+   e si deve rifare tutto da capo.
+4. Clicca **Install Now** e aspetta.
+5. **Chiudi e riapri il Terminale**, poi scrivi:
+   ```
+   py -3 --version
+   ```
+
+**Cosa devi vedere:** un numero, tipo `Python 3.13.2`.
+
+**Se leggi** `py non è riconosciuto`: e' quasi certamente la casella del punto 3 non
+spuntata. Rilancia il file scaricato, scegli **Modify**, e assicurati che PATH sia attivo.
+Se non ne vieni fuori, scrivimi: e' un intoppo comune, non un tuo errore.
 
 ---
 

@@ -946,3 +946,14 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   operativo (193 commit). Segnalato a Max il rischio dell'account condiviso: limiti d'uso
   in comune (si tolgono la corrente a vicenda) e sospensione possibile per condivisione
   credenziali -> fermerebbe tutti insieme. Consigliati posti separati subito.
+- FIX: `SETUP-NERI.md` era incompleto — non installava **Python**, ma
+  `.claude/settings.json` ha 14 automatismi che lo richiedono (`py -3`), incluso il grilletto
+  di Emperator e il controllo pre-commit della memoria. Senza, gli hook non partono **in
+  silenzio**: sembra tutto a posto e non lo e'. Aggiunto passo 2b con l'avvertenza sulla
+  casella "Add python.exe to PATH". Stessa lacuna presente in `SETUP-GAEL.md` (Gael e' gia'
+  operativo, quindi Python ce l'ha: nessuna azione).
+- VERIFICATO che l'Emperator migliorato arriva a Gael e Neri: `.claude/agents/emperator.md`,
+  `scripts/emperator_hook.py` e `.claude/settings.json` (con la registrazione del grilletto)
+  sono tutti e tre tracciati e pushati, piu' 314 file di skill. Le migliorie arrivano al loro
+  **prossimo avvio di sessione**, non durante. Restano fuori dal repo, per scelta: il file
+  privato del Progetto Empire e la memoria personale sulla macchina di Max.
