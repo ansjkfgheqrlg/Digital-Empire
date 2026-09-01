@@ -226,11 +226,21 @@ sentinels:
 # ── STATISTICHE ──────────────────────────────────────────────────
 
 stats:
-  totale_agenti: 19
+  totale_agenti: 123
   board: 7
   backbone: 2
   guilds: 5
   sentinels: 5
-  status_active: 7
-  status_defined: 12
-  note: "Gli agenti 'defined' sono censiti ma non ancora deployati come team ruflo."
+  context_engineering: 21
+  content_forge: 25
+  master_build_architecture: 17
+  youtube_factory: 14
+  youtube_launch: 5
+  youtube_compliance: 4
+  apex7: 8
+  outreach: 4
+  website_creator: 3
+  standalone: 3  # emperator, cc-master, credential-keeper
+  status_ufficiali: 123  # tutti registrati in .claude/agents/ il 2026-09-01
+  status_defined: 0
+  note: "Tutti gli agenti ufficializzati in .claude/agents/ il 2026-09-01 per ordine di Max. Ogni agente ha il suo file .md con struttura completa. Sorgenti originali mantenuti intatti nelle posizioni precedenti."

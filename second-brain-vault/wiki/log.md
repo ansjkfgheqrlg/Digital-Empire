@@ -1,5 +1,15 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-01 (UFFICIALIZZAZIONE AGENTI — 123 agenti registrati, Emperator)
+- MILESTONE: tutti i 123 agenti Digital Empire ufficializzati in `.claude/agents/`.
+  Da 1 (solo Emperator) a 123 in una sessione. Ordine di Max.
+  Categorie: Board (7), Context Engineering (21), YouTube Factory (14), YouTube Launch (5),
+  YouTube Compliance (4), Content Forge (25), Master Build Architecture (17), Apex-7 (8),
+  Outreach (4), Website Creator (3), Backbone (2), Guilds (5), Sentinels (5), Standalone (3).
+  Backbone/Guilds/Sentinels creati da zero dal registro YAML. Tutti gli altri copiati dai
+  sorgenti originali senza perdita di contenuto.
+- UPDATE: registro-agenti.yaml aggiornato: totale 123, status_ufficiali 123, status_defined 0.
+
 ## 2026-09-01 (Legami d'Amore — pubblicazione + 3 nuove regole permanenti, Emperator)
 - UPDATE: Entity_Legami_dAmore_Channel.md aggiornata con stato reale dei 4 video pronti:
   Video-01 reso PUBBLICO da Max, Video-04 caricato PRIVATO via Playwright (auto-save).
