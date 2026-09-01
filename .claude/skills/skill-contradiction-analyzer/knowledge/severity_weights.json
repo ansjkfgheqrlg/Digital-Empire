@@ -1,0 +1,36 @@
+﻿{
+  "version": "2.0.0",
+  "description": "Pesi per il calcolo della severity. Definisce i coefficienti per ogni componente del punteggio.",
+  "weights": {
+    "category_weight": 0.35,
+    "confidence_weight": 0.25,
+    "impact_weight": 0.25,
+    "opposition_strength_weight": 0.15
+  },
+  "opposition_strength_by_type": {
+    "negation": 10,
+    "antonym": 9,
+    "mutual_exclusion": 8,
+    "numerical_disjoint": 7,
+    "temporal_inversion": 7,
+    "conditional_opposition": 6,
+    "priority_paradox": 8,
+    "semantic_gradation": 5,
+    "scope_overlap": 5,
+    "resource_contention": 6,
+    "assumption_incompatible": 9,
+    "side_effect_destructive": 7,
+    "version_incompatible": 6,
+    "meta_invalidation": 10,
+    "inference_chain": 4,
+    "default_opposition": 5
+  },
+  "impact_weights": {
+    "BLOCKING": 10,
+    "CRITICAL": 8,
+    "WARNING": 5,
+    "INFO": 3,
+    "NEGLIGIBLE": 1
+  }
+}
+

@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://content-forge/schemas/sources.schema.json",
+  "title": "sources.json — output di A1 (multi-source tracciabilità)",
+  "type": "object",
+  "schema_version": "0.1.0-draft",
+  "required": [
+    "total_sources",
+    "total_words",
+    "input_mode",
+    "input_root",
+    "sources"
+  ],
+  "properties": {
+    "total_sources": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "total_words": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "total_words_after_cleaning": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "input_mode": {
+      "type": "string",
+      "enum": [
+        "single",
+        "folder_flat",
+        "folder_recursive",
+        "list",
+        "glob"
+      ]
+    },
+    "input_root": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "path",
+          "relative_path",
+          "word_count_cleaned",
+          "range_in_cleaned"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^src-[0-9]{3,}$"
+          },
+          "path": {
+            "type": "string"
+          },
+          "relative_path": {
+            "type": "string"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "word_count_original": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "word_count_cleaned": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "language_detected": {
+            "type": "string"
+          },
+          "type_detected": {
+            "type": "string",
+            "enum": [
+              "youtube_transcript",
+              "article",
+              "brief",
+              "mixed",
+              "unknown"
+            ]
+          },
+          "range_in_cleaned": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        }
+      }
+    },
+    "skipped_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "reason"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string",
+            "enum": [
+              "too_large",
+              "binary",
+              "ignored_by_forgeignore",
+              "wrong_extension",
+              "hidden"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

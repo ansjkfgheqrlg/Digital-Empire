@@ -1,6 +1,6 @@
 ---
-name: sales-call-closer
-description: Metodo e script psicologici per la chiusura di contratti ad alto ticket in chiamata.
+name: cro-call
+description: "Metodo e script psicologici per chiudere contratti ad alto ticket in call. Postura del dottore che diagnostica prima di proporre la cura, domande di scoperta, gestione obiezioni e chiusura. Usala per preparare o simulare una sales call, gestire un prospect in trattativa, strutturare la diagnosi e il preventivo dopo una discovery. Non usarla per scrivere copy (usa cro-copy-architect) o per fare ricerca sul target (usa cro-ricerca)."
 ---
 
 

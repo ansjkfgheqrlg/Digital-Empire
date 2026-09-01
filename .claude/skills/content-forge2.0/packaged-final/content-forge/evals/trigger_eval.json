@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "purpose": "Eval queries per testare l'accuratezza di triggering della skill content-forge.",
+    "format": "Lista di {query, should_trigger, category, language}. Usare con scripts/run_loop.py della skill-creator ufficiale, oppure mentalmente come sanity check della description.",
+    "created_in_phase": 5,
+    "skill_name": "content-forge"
+  },
+  "queries": [
+
+    {"id": "ST-01", "should_trigger": true, "language": "it", "category": "transcript-to-target",
+     "query": "ok allora ho 4 transcript di video YouTube su sistemi RAG avanzati, sono in transcripts_rag.md (circa 30k token, super disordinati con timestamp e cose tipo 'uh', 'cioè'), e vorrei trasformarli in una skill ufficiale per claude code che mi aiuti quando devo progettare sistemi di retrieval"},
+
+    {"id": "ST-02", "should_trigger": true, "language": "it", "category": "folder-input",
+     "query": "ho una cartella ~/Materiale/cold-outreach/ con dentro 8 trascrizioni di workshop diversi e 3 articoli (tutto .md), totale forse 60-70k parole. Vorrei estrarne un agente operativo che faccia outreach al posto mio integrato con linkedin e il mio crm hubspot"},
+
+    {"id": "ST-03", "should_trigger": true, "language": "it", "category": "wiki-second-brain",
+     "query": "ho questi appunti sparsi sul mio second brain in obsidian (path: /Users/marco/Vault/Inbox/raw-notes.md, sono ~12k parole tipo stream of consciousness), vorrei trasformarli in note atomiche evergreen con MOC e link interni, da importare nel vault"},
+
+    {"id": "ST-04", "should_trigger": true, "language": "en", "category": "workflow-build",
+     "query": "I have the full transcript of our lead-gen workflow internal training session in training_leadgen_2024.md, ~25k words. I want to turn this into an actual executable workflow: trigger on CSV upload, enrichment via apollo API, dedupe, scoring, manual approval gate, then send. Need state in filesystem JSON per lead."},
+
+    {"id": "ST-05", "should_trigger": true, "language": "it", "category": "team-of-agents",
+     "query": "ho letto un workshop di 3 ore su due-diligence M&A per startup tech (workshop_dd.md, 40k parole). Mi piacerebbe trasformarlo in un team di agenti coordinati, tipo un supervisor + analyst specializzati per legal, financial, tech, market — ognuno fa la sua parte e poi il supervisor consolida"},
+
+    {"id": "ST-06", "should_trigger": true, "language": "it", "category": "casual-natural",
+     "query": "senti ho questo pdf di 80 pagine che è il manuale interno della mia azienda su come gestire i ticket di supporto. l'ho convertito in .md (è support_handbook.md). lo voglio rendere più utile, tipo magari farne qualcosa di operativo che gli agenti del supporto possano usare al volo invece di leggere 80 pagine"},
+
+    {"id": "ST-07", "should_trigger": true, "language": "en", "category": "custom-injection",
+     "query": "I have a long markdown doc (~15k words) describing our customer success playbook. I want to inject the essence of it as a system prompt for my n8n agent — needs to be ≤3000 chars and keep {customer_tier} as a variable. Can you help"},
+
+    {"id": "ST-08", "should_trigger": true, "language": "it", "category": "orchestration",
+     "query": "io ho già 4 workflow n8n e 3 agenti claude che fanno cose diverse per la sales ops. ho anche un brief interno (sales_ops_arch.md, 18k parole) che descrive come dovrebbero collaborare. vorrei costruire un layer di orchestrazione sopra: un supervisor che decide quale componente invocare in base alla richiesta"},
+
+    {"id": "ST-09", "should_trigger": true, "language": "it", "category": "ambiguous-target",
+     "query": "ho una serie di 5 articoli che ho scritto sul mio blog su prompt engineering avanzato (sono tutti in blog/posts/*.md). vorrei fare qualcosa di più operativo con questo materiale ma non so ancora cosa esattamente, puoi aiutarmi a capire?"},
+
+    {"id": "ST-10", "should_trigger": true, "language": "en", "category": "expanded-doc",
+     "query": "I have this messy braindump in raw_thoughts.md about how to structure technical interviews for senior engineers, ~8k words full of half-finished ideas and tangents. I want a clean, expanded, well-structured document I can give to my hiring team — not a summary, an expansion with examples and frameworks."},
+
+    {"id": "SNT-01", "should_trigger": false, "language": "it", "category": "summarize-explicit",
+     "query": "puoi farmi un riassunto in 5 punti di questo articolo lungo? (articolo.md). solo il succo, non mi serve niente di lungo"},
+
+    {"id": "SNT-02", "should_trigger": false, "language": "it", "category": "file-operation-simple",
+     "query": "rinomina tutti i file in ./transcripts/ aggiungendo il prefisso 'old_' a quelli più vecchi di 90 giorni"},
+
+    {"id": "SNT-03", "should_trigger": false, "language": "en", "category": "translate",
+     "query": "translate this markdown file from italian to english, keep the structure identical (path: docs/it/guide.md)"},
+
+    {"id": "SNT-04", "should_trigger": false, "language": "it", "category": "format-cosmetic",
+     "query": "ho questo file .md scritto male, puoi rifare la formattazione (headings consistenti, liste con trattini invece di asterischi, code blocks con language hint)? Il contenuto deve rimanere identico"},
+
+    {"id": "SNT-05", "should_trigger": false, "language": "en", "category": "code-generation",
+     "query": "write me a Python function that takes a list of dicts and groups them by the 'category' field, returning a dict of lists"},
+
+    {"id": "SNT-06", "should_trigger": false, "language": "it", "category": "near-miss-summary",
+     "query": "ho il transcript di questo video di 1h, voglio i punti chiave principali e una tldr per condividerla con il team su slack. niente di troppo lungo"},
+
+    {"id": "SNT-07", "should_trigger": false, "language": "it", "category": "near-miss-extract",
+     "query": "ho un pdf con il manuale di un prodotto, estrai solo le tabelle dei dati tecnici e mettile in csv"},
+
+    {"id": "SNT-08", "should_trigger": false, "language": "en", "category": "near-miss-rag",
+     "query": "I want to set up a RAG pipeline with my company docs (~200 .md files in ./docs/). Use chromadb for vector store, openai for embeddings. Just need the indexing script."},
+
+    {"id": "SNT-09", "should_trigger": false, "language": "it", "category": "single-question",
+     "query": "che differenza c'è tra few-shot e chain-of-thought prompting? spiegamelo in modo semplice"},
+
+    {"id": "SNT-10", "should_trigger": false, "language": "it", "category": "vibe-coding",
+     "query": "ho appena letto questo articolo di andrej karpathy su LLM e vibe coding, super interessante. tu cosa ne pensi?"}
+  ]
+}

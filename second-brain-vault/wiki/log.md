@@ -1,5 +1,47 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-01 (EMPERATOR — auto-modifica: 4 direttive di Max)
+- CONFIG: 4 direttive permanenti innestate in Emperator su ordine di Max.
+  File toccati: `scripts/emperator_hook.py` (blocco DOTTRINA, iniettato a ogni messaggio)
+  e `.claude/agents/emperator.md` (nuove sezioni 6.5-6.8, da 420 a 526 righe).
+  (1) APRIRE: "dov'e' X" e ordine di apertura -> `explorer.exe "/select,<path>"`, non si
+  risponde col percorso. explorer.exe ritorna sempre exit=1 anche quando riesce.
+  (2) UFFICIALIZZAZIONE: finita una creazione, ogni agente/skill/comando/plugin va reso
+  ufficiale e verificato con `empire forge scan` + `registry orphans`. Rafforza ADR-008
+  e continua il lavoro del CP-20260901-003 (170 skill).
+  (3) SCAGNOZZI: autorizzazione durevole a spawnare subagenti quando il lavoro si divide
+  in 2+ parti indipendenti.
+  (4) PIANO A ITERAZIONI: piano -> autocritica -> v2 -> v3, minimo 3 giri, fino a 7 per
+  gli ecosistemi.
+- BACKLOG: aperto B-032 — `py -3` (3.12) non ha PyYAML, `python` (3.11) si: ogni comando
+  `empire` va lanciato con `python`. Causa precisa a monte di B-028.
+- Checkpoint: CP-20260901-004. STATO-EMPIRE aggiornato.
+
+## 2026-09-01 (UFFICIALIZZAZIONE SKILL — 170 skill ufficiali, Emperator)
+- MILESTONE: tutte le skill di Digital Empire ufficializzate. Criterio: SKILL.md presente,
+  frontmatter YAML parsabile, `name` == cartella, `description` con cosa-fa + quando-si-attiva
+  (>= 60 caratteri), registrazione in `company/skills-map.yaml`.
+  Audit su 296 SKILL.md (171 progetto + 125 globali): 85 non conformi -> 0.
+  38 senza frontmatter (famiglia `market-*`, `copy-workflow`, `omega-create`, `wiki-context`),
+  30 senza `name:` (`site` + 13 `site-*`, `opus`), 17 con `name:` divergente, 2 con BOM UTF-8,
+  4 con `": "` non quotato (YAML rotto), 2 con `description: >` vuota.
+- FIX STRUTTURALE: `.claude/skills/skill-creator/` era una copia corrotta che oscurava la skill
+  globale completa. Rimossa su ordine di Max; `/skill-creator` usa ora la versione integra.
+- NUOVO: `scripts/verify-skills.py` — gate permanente (`--check`). Esito: PASS 850/850 su 170 skill.
+- UPDATE: `company/skills-map.yaml` v1.2, sezione `ufficializzazione_skill` con le 170 skill
+  classificate per ecosistema e reparto. Checkpoint: CP-20260901-003.
+
+## 2026-09-01 (Empire Studio — cs2online: Lezione 17 completata, ripresa dopo crash, Emperator)
+- INGEST: Lezione 17 "Introduzione al vibe coding" — prima lezione sezione "AI - per coding e simili".
+  Reclassificata da TEORIA a PRATICA (14 workflow demo: VS Code setup, HTML5 boilerplate con Emmet,
+  CSS reset, JS base, Live Server, prompt JSON per Claude, GitHub upload, Imgur image hosting).
+  78 frame su disco (estrazione parziale pre-crash, ~3 min video), testo pagina completo (30+ bullet
+  "cosa hai imparato" + 14 workflow + 9 link utili). 18 Knowledge Atoms estratti.
+  → 1 pagina nuova: sources/Source_CS2_Lezione_17_Vibe_Coding.md
+- ENRICHMENT: nessuna patch — contenuto entry-level (HTML/CSS/JS vanilla) rispetto allo stack DE
+  (Next.js/Tailwind/shadcn/GSAP). Valore pedagogico per spiegare concetti base a non-tecnici.
+  Stato: **20/40 lezioni cs2online completate (50%)**. Tracker: MASTER-RUN-TRACKER.md.
+
 ## 2026-09-01 (UFFICIALIZZAZIONE AGENTI — 123 agenti registrati, Emperator)
 - MILESTONE: tutti i 123 agenti Digital Empire ufficializzati in `.claude/agents/`.
   Da 1 (solo Emperator) a 123 in una sessione. Ordine di Max.
@@ -977,3 +1019,40 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   sono tutti e tre tracciati e pushati, piu' 314 file di skill. Le migliorie arrivano al loro
   **prossimo avvio di sessione**, non durante. Restano fuori dal repo, per scelta: il file
   privato del Progetto Empire e la memoria personale sulla macchina di Max.
+
+## 2026-09-01
+- INGEST (Empire Studio + Memory Empire): Andrei Pascu cat2-marketing **video 4/15** —
+  `j4UInmM9kKA` "Usa questi 10 lead magnet per generare contatti (senza spendere 1 euro)",
+  20m32s, 616 frame @2s, 17 KA, 5 pattern, NO-FINTO PASS.
+  -> 1 pagina wiki creata (`sources/Source_Andrei_Pascu_10_Lead_Magnet.md`), index.md aggiornato.
+- SCOPERTA: il `MASTER-RUN-TRACKER.md` dava il video come "Stage 1 da fare da zero". Falso —
+  la pipeline Empire Studio era gia' stata eseguita il 2026-08-26 (`video-analysis.md` 20 KB).
+  Il gap vero era a valle: **Memory Empire e wiki mai chiusi**. Stesso mezzo-lavoro del batch 2.
+  Il tracker e' stato corretto con lo stato reale misurato su disco.
+- ENRICHMENT: **9 patch applicate, 0 cancellazioni** (+26 / -0 su git diff).
+  `lead-magnets/SKILL.md` (7): informazione gratis / implementazione a pagamento (Hormozi),
+  nuovo principio "Free Quality Is Read as Paid Quality", 4 format nuovi in tabella
+  (calcolatrice AI, challenge 7-14gg, GPT custom su WhatsApp, source files), anti-pattern
+  ebook lungo, calibrazione proporzionalita' dei campi optin, optin trattata come sales page
+  + vincolo strutturale a monte, distribuzione keyword-in-commenti -> DM.
+  `market-funnel/SKILL.md` (2): criteri Opt-in balance e Opt-in copy nello scoring, nota di
+  lettura sul ranking dei format.
+- NON arricchite, dichiarato: `cro-copy-architect` (gia' copre le opt-in page con APSOC),
+  `popups`, `signup`, `cro`, `free-tools`, `emails`, `ads`, `ad-creative`.
+- WATCH-001: 33 video Andrei processati = 33 cartelle `memory-empire/knowledge/` -> MATCH.
+
+- INGEST (Empire Studio + Memory Empire): Andrei Pascu cat2-marketing **video 5/15** —
+  `-a0uuA1lbSI` "L'importanza di avere una buona landing", 51s, **26/26 frame letti — coverage 100%**,
+  7 KA, 4 pattern, NO-FINTO PASS. Pipeline e Memory Empire chiusi nella stessa sessione, nessun gap.
+  -> 1 pagina wiki creata (`sources/Source_Andrei_Pascu_Importanza_Landing.md`), index.md aggiornato.
+- ENRICHMENT: **3 patch, +24 / -0.** `cro-strategy-social-(ig-tiktok)/SKILL.md`: nuova sezione
+  "Il gradino zero: dove porta il link in bio" — il funnel documentato della skill andava
+  Video -> commento keyword -> DM -> email -> call, **senza nessuna landing**, pur usando
+  "link in bio" come CTA in piu' punti della stessa skill. `market-landing/SKILL.md`: nuovo tipo
+  di pagina "Creator / Bio-Link Landing" (benchmark CR lasciati n/d — la fonte non ne da', non si
+  inventano) + nota sul riequilibrio dei pesi del framework a 7 punti.
+- SCOPERTA TRASVERSALE (registrata, non patchata): sta emergendo una catena nel run cat2 —
+  contenuto (reach) -> landing bio-link -> optin -> sales page. Video 5 riempie i primi due
+  gradini, video 4 (Regola 5) il terzo, video 2 aveva gia' stabilito che l'ordine e' un vincolo
+  strutturale. Se cat2 la conferma ancora, vale un ADR + pagina wiki di framework.
+- WATCH-001: 34 video Andrei = 34 cartelle `memory-empire/knowledge/` -> MATCH.

@@ -1,0 +1,91 @@
+# AG-7 — Polish Review Finale
+> Momento Anti-Gravity #7 | Fase 9.7 — Fine Polish Loop (dopo Pass 7)
+> Usa questo template dopo aver completato tutti i 7 pass del Polish Loop.
+
+---
+
+## Quando usare questo template
+
+**Fase:** 9.7 — dopo il completamento del Pass 7 (Detail Sweep) del Polish Loop
+**Obiettivo:** review critica finale — "cosa ancora sembra AI?" — prima del deploy
+
+---
+
+## Struttura del Prompt AG-7
+
+Questo è il prompt più importante. Porta tutto il contesto del progetto.
+
+```
+Sei il più critico dei direttori creativi. Il tuo lavoro è trovare i difetti
+che altri non vedono — specialmente quelli che tradiscono un'origine AI o un design non del tutto risolto.
+
+Ho appena completato un sito con queste caratteristiche:
+
+IDENTITÀ DEL SITO:
+Tipo: [tipo sito]
+Settore: [settore]
+Aesthetic axis: [nome movimento]
+Brand personality: [5 aggettivi]
+Audience: [descrizione]
+
+SCELTE DI DESIGN:
+Font display: [font] (peso: [peso usato per headings])
+Font body: [font] (peso: [peso usato per body])
+Color accent (silver-mixed): [valore HSL]
+Dark surface: [valore] | Light surface: [valore]
+Border radius strategy: [es. "2px luxury" / "8px modern"]
+Grain: [parametri — background-size, opacity]
+
+SEZIONI PRESENTI:
+[lista delle sezioni del sito, in ordine]
+
+POLISH LOOP COMPLETATO:
+Pass 1 Anti-AI: [issue trovate e fixate]
+Pass 2 Typography: [issue trovate e fixate]
+Pass 3 Spacing: [issue trovate e fixate]
+Pass 4 Color+Grain: [issue trovate e fixate]
+Pass 5 Component States: [issue trovate e fixate]
+Pass 6 Motion: [issue trovate e fixate]
+Pass 7 Detail Sweep: [issue trovate e fixate]
+
+COMPROMESSI FATTI (cose che non ho risolto al 100%):
+[lista di compromessi o decisioni sub-ottimali]
+
+---
+
+CHIEDO:
+1. SNIFF TEST: Descrivi questo sito come se fossi un visitatore esperto di design
+   che lo vede per la prima volta. In 5 righe. Poi: cosa tradisce ancora un'origine AI?
+   Sii specifico — non "il layout è generico" ma "la sezione X ha un problema specifico Y"
+
+2. IL 10% CHE MANCA: Ci sono 3 cose — piccole o grandi — che se implementate
+   porterebbero questo sito da "molto buono" a "irripetibile"?
+   Non deve essere fattibile in 1 ora — anche idee grandi sono benvenute.
+
+3. GERARCHIA VISIVA CHECK: Descrivi come si muove l'occhio dalla prima sezione
+   all'ultima. C'è un momento dove l'attenzione si perde o si confonde?
+   Qual è il punto più debole della gerarchia visiva?
+
+4. COPY + DESIGN INTEGRATION: Il design "serve" il copy o lo combatte?
+   C'è un punto dove il design distrae dal messaggio principale?
+   C'è un punto dove il copy non sfrutta abbastanza il design?
+
+5. CONFRONTO CON IL BENCHMARK: Se metti questo sito accanto al migliore sito
+   del settore [settore], qual è l'unica cosa che fa sembrare quello migliore?
+   E come la risolveresti in questo sito?
+
+6. SE AVESSI ANCORA 2 ORE: Cosa faresti — esattamente — in 2 ore per
+   massimizzare l'impatto prima del deploy? Lista ordinata per impatto.
+```
+
+---
+
+## Come usare l'output
+
+1. **Valuta** lo sniff test — il punto più doloroso è il più importante
+2. **Implementa** almeno 1 dei "3 cose che mancano" se il tempo lo permette
+3. **Fixa** il punto debole della gerarchia visiva (Pass 3 del Polish extra)
+4. **Risolvi** i conflitti copy/design prima del deploy
+5. **Esegui** la lista "2 ore" in ordine di priorità
+
+Di' a opus-director: "AG-7 completato" → Polish Loop COMPLETATO → Fase 10 SEO.

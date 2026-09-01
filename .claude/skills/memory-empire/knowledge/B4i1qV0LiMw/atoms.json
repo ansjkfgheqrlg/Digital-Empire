@@ -1,0 +1,130 @@
+[
+  {
+    "id": "A01",
+    "categoria": "Anti-pattern",
+    "claim": "Vibe design = prompt improvvisato → 20% output, 80% lavoro manuale. Stesso prompt CON sistema → 90% output.",
+    "trace": "frame-030 @ 0:58",
+    "rilevanza_DE": "alta",
+    "note": "Applicabile a ogni workflow DE: senza Design System / sistema strutturato, i prompt partono da zero ogni volta."
+  },
+  {
+    "id": "A02",
+    "categoria": "Anti-pattern",
+    "claim": "Senza metodo: 490.849 token spesi → 0 risultati utili.",
+    "trace": "frame-020 @ 0:38",
+    "rilevanza_DE": "alta",
+    "note": "Validazione concreta del costo del non-sistema. Utile come argomentazione nel marketing DE."
+  },
+  {
+    "id": "A03",
+    "categoria": "Design System",
+    "claim": "Il Design System è prerequisito assoluto: senza di esso ogni prompt riparte da zero ogni volta.",
+    "trace": "frame-160 @ 5:18",
+    "rilevanza_DE": "alta",
+    "note": "Parallelo diretto con exponium-context skill: avere il contesto azienda come prerequisito."
+  },
+  {
+    "id": "A04",
+    "categoria": "Design System",
+    "claim": "Il Design System in Claude Design include: Slides template, Type (3 livelli), Colors (8 categorie), Spacing, Components (4 tipi), Brand (logo+wordmark).",
+    "trace": "frame-160 @ 5:18",
+    "rilevanza_DE": "media",
+    "note": "Struttura replicabile per Digital Empire Design System in Claude Design."
+  },
+  {
+    "id": "A05",
+    "categoria": "Design System",
+    "claim": "Quick questions di setup chiedono: existing materials, cosa fa il prodotto, quali superfici (web/app/slides). La risposta guida il design system generato automaticamente.",
+    "trace": "frame-265 @ 8:48",
+    "rilevanza_DE": "media",
+    "note": "Il flusso di onboarding di Claude Design è replicabile come workflow DE per nuovi clienti CRO."
+  },
+  {
+    "id": "A06",
+    "categoria": "Template",
+    "claim": "I Design Files sono template riusabili cross-progetto. Un nuovo progetto seleziona il design system esistente come default → brand-aligned senza nessun setup.",
+    "trace": "frame-295 @ 9:48",
+    "rilevanza_DE": "alta",
+    "note": "Modello di riutilizzo: un template library DE potrebbe coprire tutti gli asset ricorrenti (slide, carousel, landing page)."
+  },
+  {
+    "id": "A07",
+    "categoria": "Template",
+    "claim": "Start with context sidebar = il meccanismo per mantenere brand consistency dentro una sessione design. Opzioni: Design System, Add screenshot, Codebase, Figma file.",
+    "trace": "frame-310 @ 10:18",
+    "rilevanza_DE": "media",
+    "note": "Funziona come context injection — parallelo a SKILL.md che carica il contesto in ogni sessione Claude Code."
+  },
+  {
+    "id": "A08",
+    "categoria": "Skills",
+    "claim": "La skill skill-creator (Anthropic GitHub: anthropics/skills) converte workflow ripetuti in SKILL.md slash command.",
+    "trace": "frame-500 @ 16:38",
+    "rilevanza_DE": "alta",
+    "note": "Strumento già citato in DE. Usare skill-creator per tutte le skill ricorrenti nell'agency e nei corsi."
+  },
+  {
+    "id": "A09",
+    "categoria": "Skills",
+    "claim": "La skill featuresheet:cheat-skill genera cheat sheet 1080×1350 PNG+PDF branded in un singolo prompt, con self-check visivo automatico.",
+    "trace": "frame-430 @ 14:18",
+    "rilevanza_DE": "alta",
+    "note": "Applicabile per Manuale Claude Code: ogni modulo può avere un cheat sheet branded come lead magnet / risorsa premium."
+  },
+  {
+    "id": "A10",
+    "categoria": "Skills",
+    "claim": "Self-check pattern: Claude Code genera PNG → lo legge visivamente → corregge errori automaticamente (es. apostrofi al posto di accenti) → ri-esporta. Nessun intervento umano.",
+    "trace": "frame-430 @ 14:18",
+    "rilevanza_DE": "alta",
+    "note": "Pattern applicabile a qualsiasi workflow DE che produce output visuale (slide, landing page, carousel). Da incorporare nelle skill image/canvas."
+  },
+  {
+    "id": "A11",
+    "categoria": "Lead Magnet",
+    "claim": "La keyword del lead magnet deve combaciar col regalo per massimizzare il tasso di risposta nei DM LinkedIn.",
+    "trace": "frame-677 @ 22:32",
+    "rilevanza_DE": "alta",
+    "note": "Regola pratica per i lead magnet DE. La skill lead-magnets dovrebbe includere questa regola esplicitamente."
+  },
+  {
+    "id": "A12",
+    "categoria": "Lead Magnet",
+    "claim": "Claude Code produce sia l'infografica (PDF/PNG) sia il LinkedIn post con CTA integrato nella stessa sessione.",
+    "trace": "frame-677 @ 22:32",
+    "rilevanza_DE": "alta",
+    "note": "Workflow completo: asset + distribuzione nello stesso prompt. Da implementare come skill DE."
+  },
+  {
+    "id": "A13",
+    "categoria": "Lead Magnet",
+    "claim": "Scarcity XX/100 nel lead magnet aumenta la conversione dell'infografica come CTA.",
+    "trace": "frame-695 @ 23:10",
+    "rilevanza_DE": "media",
+    "note": "Tattica semplice da aggiungere in ogni lead magnet LinkedIn DE."
+  },
+  {
+    "id": "A14",
+    "categoria": "Funnel LinkedIn",
+    "claim": "The Thought Leader Funnel: 5 stadi (Awareness → Authority → Intent → Conversion → Advocacy). Template cone/cylinder/moderno.",
+    "trace": "frame-650 @ 21:38",
+    "rilevanza_DE": "alta",
+    "note": "Framework funnel applicabile direttamente al posizionamento LinkedIn di Max / Digital Empire."
+  },
+  {
+    "id": "A15",
+    "categoria": "Funnel LinkedIn",
+    "claim": "The Founder Authority Stack: 7 layers. Most founders only ever build Layer 2. The ones who have built all seven.",
+    "trace": "frame-660 @ 21:58",
+    "rilevanza_DE": "alta",
+    "note": "Framework identity per costruire la presenza LinkedIn come fondatore — rilevante per personal brand DE."
+  },
+  {
+    "id": "A16",
+    "categoria": "Social Media Manager",
+    "claim": "Giovanni ha ~25 skills personalizzate nel progetto Claude Code Social Media Manager coprendo: YouTube, email, LinkedIn, Skool, ricerca, prompt engineering.",
+    "trace": "frame-508 @ 16:54",
+    "rilevanza_DE": "alta",
+    "note": "Modello di skill library da replicare per DE. Lista esatta: draft-to-youtube · email-digest · escaladraw-flowchart · humanizer · linkedin-post · pre-mortem · prompt-contracts · query-anthropic · research · reverse-prompting · schedule-meeting · scroll-journey · shorts · sign · skill-creator · skill-extraction-skool · skool-community-replies · skool-video-upload · step-back-prompting · video-extraction · write-skool-module · youtube-comments · youtube-description"
+  }
+]

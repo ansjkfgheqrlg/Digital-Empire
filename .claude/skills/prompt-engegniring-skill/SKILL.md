@@ -1,6 +1,6 @@
 ---
-name: prompt-engineering
-description: Linee guida avanzate per il prompt engineering ed il controllo del comportamento dei modelli.
+name: prompt-engegniring-skill
+description: "Linee guida avanzate di prompt engineering per i modelli Claude. Copre sintassi XML-first, gerarchia dei tag, controllo del comportamento del modello, prefill, chain of thought e tecniche di ottimizzazione. Usala quando serve scrivere o rifattorizzare un system prompt, migliorare l'affidabilita di un prompt esistente, o capire come strutturare le istruzioni per Claude."
 ---
 codeMarkdown  
 \# SCHEDA TECNICA DI OTTIMIZZAZIONE: CLAUDE (Opus/Sonnet)  

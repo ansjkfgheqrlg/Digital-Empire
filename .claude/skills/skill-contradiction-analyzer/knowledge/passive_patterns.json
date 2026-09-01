@@ -1,0 +1,71 @@
+﻿{
+  "version": "2.0.0",
+  "description": "Pattern per il riconoscimento di frasi passive in italiano e inglese. Le frasi passive sono comuni nelle skill (es. 'l'input deve essere validato') e vanno normalizzate.",
+  "patterns": {
+    "it": [
+      {
+        "id": "passive_must_be",
+        "regex": "(?P<object>\\w+(?:\\s+\\w+){0,3})\\s+(?:deve|devono|va|vanno)\\s+essere\\s+(?P<action>\\w+(?:ato|uto|ito|to|are|ere|ire))",
+        "modality": "MUST",
+        "transform": "[AGENT] MUST [{action}] [{object}]"
+      },
+      {
+        "id": "passive_is_required",
+        "regex": "(?:è|sono)\\s+(?:obbligatorio|necessario|richiesto|fondamentale|essenziale)\\s+(?P<action>\\w+(?:are|ere|ire))\\s+(?P<object>\\w+(?:\\s+\\w+){0,3})",
+        "modality": "MUST",
+        "transform": "[AGENT] MUST [{action}] [{object}]"
+      },
+      {
+        "id": "passive_should_be",
+        "regex": "(?P<object>\\w+(?:\\s+\\w+){0,3})\\s+(?:dovrebbe|dovrebbero)\\s+essere\\s+(?P<action>\\w+(?:ato|uto|ito|to|are|ere|ire))",
+        "modality": "SHOULD",
+        "transform": "[AGENT] SHOULD [{action}] [{object}]"
+      },
+      {
+        "id": "passive_must_not_be",
+        "regex": "(?P<object>\\w+(?:\\s+\\w+){0,3})\\s+(?:non\\s+(?:deve|devono|va|vanno)|non\\s+può\\s+essere|non\\s+possono\\s+essere)\\s+(?:essere\\s+)?(?P<action>\\w+(?:ato|uto|ito|to))",
+        "modality": "MUST_NOT",
+        "transform": "[AGENT] MUST_NOT [{action}] [{object}]"
+      },
+      {
+        "id": "passive_is_permitted",
+        "regex": "(?:è|sono)\\s+(?:permesso|consentito|possibile)\\s+(?P<action>\\w+(?:are|ere|ire))\\s+(?P<object>\\w+(?:\\s+\\w+){0,3})",
+        "modality": "MAY",
+        "transform": "[AGENT] MAY [{action}] [{object}]"
+      }
+    ],
+    "en": [
+      {
+        "id": "passive_must_be",
+        "regex": "(?P<object>[\\w\\s]+?)\\s+must\\s+be\\s+(?P<action>\\w+(?:ed|d))",
+        "modality": "MUST",
+        "transform": "[AGENT] MUST [{action}] [{object}]"
+      },
+      {
+        "id": "passive_is_required",
+        "regex": "it\\s+is\\s+(?:mandatory|required|necessary|essential)\\s+to\\s+(?P<action>\\w+)\\s+(?P<object>[\\w\\s]+)",
+        "modality": "MUST",
+        "transform": "[AGENT] MUST [{action}] [{object}]"
+      },
+      {
+        "id": "passive_should_be",
+        "regex": "(?P<object>[\\w\\s]+?)\\s+should\\s+be\\s+(?P<action>\\w+(?:ed|d))",
+        "modality": "SHOULD",
+        "transform": "[AGENT] SHOULD [{action}] [{object}]"
+      },
+      {
+        "id": "passive_must_not_be",
+        "regex": "(?P<object>[\\w\\s]+?)\\s+must\\s+not\\s+be\\s+(?P<action>\\w+(?:ed|d))",
+        "modality": "MUST_NOT",
+        "transform": "[AGENT] MUST_NOT [{action}] [{object}]"
+      },
+      {
+        "id": "passive_is_allowed",
+        "regex": "it\\s+is\\s+(?:allowed|permitted)\\s+to\\s+(?P<action>\\w+)\\s+(?P<object>[\\w\\s]+)",
+        "modality": "MAY",
+        "transform": "[AGENT] MAY [{action}] [{object}]"
+      }
+    ]
+  }
+}
+

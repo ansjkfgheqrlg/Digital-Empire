@@ -1,0 +1,29 @@
+{
+  "name": "Digital Empire Agency",
+  "handle": "@digitalempireagency.e",
+  "products": ["Outreach Factory", "Content Factory", "Second Brain", "The Engine Room"],
+  "colors": {
+    "bg": "#0A0A0A",
+    "bg_card": "#141414",
+    "primary": "#FF3D00",
+    "gold": "#FFB800",
+    "white": "#FFFFFF",
+    "grey": "#888888",
+    "border_primary": "rgba(255, 61, 0, 0.2)",
+    "border_subtle": "rgba(255, 255, 255, 0.06)"
+  },
+  "fonts": {
+    "display": "Space Grotesk",
+    "body": "Inter",
+    "google_import": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+  },
+  "dimensions": {
+    "width": 1080,
+    "height": 1350,
+    "aspect": "4:5",
+    "platform": "Instagram Feed"
+  },
+  "slide_count": 7,
+  "tone": "direct, bold, pragmatic, zero fluff",
+  "cta_default": "Commenta AI"
+}

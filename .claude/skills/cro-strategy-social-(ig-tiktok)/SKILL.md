@@ -1,5 +1,5 @@
 ---
-name: social-growth-engine
+name: cro-strategy-social-(ig-tiktok)
 description: Strategia TikTok & Instagram per agency lead generation B2B. Pianifica contenuti settimanali, genera idee per video/caroselli/stories, gestisce lead magnet e funnel, diagnostica metriche social, ottimizza hook rate con Hook Velocity, e prepara review settimanali. Usa questa skill ogni volta che l'utente chiede cosa pubblicare sui social, come generare lead da TikTok/Instagram, come migliorare hook rate o engagement, come creare o ruotare lead magnet, come impostare ManyChat, come fare la review settimanale delle metriche social, o come adattare contenuti cross-platform. Si attiva anche per richieste su calendario editoriale social, caroselli Instagram, stories strategy, o qualsiasi domanda sulla pipeline social→lead→call→cliente.
 ---
 
@@ -123,6 +123,21 @@ Video (TikTok/IG) → Commento keyword "AUDIT"
 → Email sequence (3-5 email)
 → Strategy call prenotata
 → Proposta Conversion Sprint
+
+### Il gradino zero: dove porta il link in bio
+
+Il funnel sopra parte dal commento-keyword. **Manca il caso di chi arriva dal profilo**, che e' la maggioranza del traffico organico: quelle persone cliccano il link in bio e devono atterrare da qualche parte.
+
+**Vincolo strutturale da cui nasce la regola:** spiegare cosa fai *dentro* i contenuti abbassa la reach. Reach e spiegazione sono due lavori in conflitto sullo stesso canale. Chi prova a farli entrambi nel video ottiene views che non si monetizzano, oppure un contenuto commerciale che non gira.
+
+**Divisione dei compiti, non compromesso:**
+- **Il contenuto** fa reach + **un solo elemento commerciale**: il CTA al link in bio. Non spiega il servizio.
+- **La landing da bio-link** fa spiegazione + contatto. E' li' che vive tutto quello che non puo' stare nel video.
+
+**Struttura minima della landing da bio-link** (5 blocchi, non una sales page):
+1. Chi sei · 2. Cosa fai · 3. Per chi lo offri · 4. Modulo per contattarti · 5. (opzionale) possibilita' di pagare direttamente sul sito
+
+Il modello e' volume x tasso di passaggio: la landing intercetta una frazione del traffico, quindi il contenuto resta ottimizzato per il volume e non va peggiorato per venderci dentro. *(Fonte: Andrei Pascu, video "L'importanza di avere una buona landing" `-a0uuA1lbSI`, 2026-09-01 - caso singolo, non validato su altre fonti.)*
 
 text
 

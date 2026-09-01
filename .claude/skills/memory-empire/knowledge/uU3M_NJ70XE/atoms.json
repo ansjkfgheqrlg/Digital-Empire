@@ -1,0 +1,103 @@
+{
+  "video_id": "uU3M_NJ70XE",
+  "generated_at": "2026-06-08",
+  "atom_count": 16,
+  "atoms": [
+    {
+      "id": "A01",
+      "category": "model_capability",
+      "claim": "Opus 4.8 scala lo sforzo cognitivo in 4 livelli UI: BASSO, MEDIO, ALTO, MOLTO ALTO. Default = ALTO. Claude Code aggiunge livello 'Xi' extra.",
+      "trace": "frame-0060 @ 1:58 + frame-0065 @ 2:08"
+    },
+    {
+      "id": "A02",
+      "category": "pricing_timing",
+      "claim": "Debutto 28 maggio 2026. Prezzo invariato 21.96€/mese. Fast Mode 2.5× veloce, 3× economico vs 4.7.",
+      "trace": "frame-0025 @ 0:48"
+    },
+    {
+      "id": "A03",
+      "category": "performance",
+      "claim": "4.8 ha 4× meno probabilità di non segnalare difetti rispetto a 4.7. Sincerità deliberata come feature.",
+      "trace": "frame-0120 @ 3:58"
+    },
+    {
+      "id": "A04",
+      "category": "feature_tiers",
+      "claim": "Flussi Dinamici (Dynamic Workflows) solo Enterprise/Team/Max. Livelli di sforzo base disponibili su tutti i piani.",
+      "trace": "frame-0065 @ 2:08"
+    },
+    {
+      "id": "A05",
+      "category": "technical_capability",
+      "claim": "Context window 1 milione di token. Disponibile su web, terminale, editor, app mobile.",
+      "trace": "frame-0160 @ 5:18"
+    },
+    {
+      "id": "A06",
+      "category": "anthropic_roadmap",
+      "claim": "PROJECT GLASSWING: mettere in sicurezza l'intero web. MOS = prossima famiglia > Opus, non ancora pubblica.",
+      "trace": "frame-0140 @ 4:38"
+    },
+    {
+      "id": "A07",
+      "category": "prompt_engineering",
+      "claim": "LEZIONE 1: calibra livello sforzo al task. Non usare sempre ALTO. BASSO=Q&A, MEDIO=analisi, ALTO=codice, MOLTO ALTO=debug difficile.",
+      "trace": "frame-0230 @ 7:38"
+    },
+    {
+      "id": "A08",
+      "category": "prompt_engineering",
+      "claim": "LEZIONE 2: istruzioni negative ('non fare X') meno efficaci in 4.8. Preferire istruzioni positive contestualizzate.",
+      "trace": "frame-0249 @ 8:16"
+    },
+    {
+      "id": "A09",
+      "category": "prompt_engineering",
+      "claim": "LEZIONE 3: dai contesto e motivazione, non divieto. 'Non usare lineette' → 'il mio stile non usa lineette, quindi rispetta il mio modo di scrivere'.",
+      "trace": "frame-0265 @ 8:48"
+    },
+    {
+      "id": "A10",
+      "category": "prompt_engineering",
+      "claim": "LEZIONE 4: chiedi al modello di pianificare prima di delegare l'esecuzione. Pattern: 'dimmi prima come lo faresti'.",
+      "trace": "frame-0279 @ 9:16"
+    },
+    {
+      "id": "A11",
+      "category": "prompt_code",
+      "claim": "Pattern plan-before-act per debug: 'Prima di toccare il codice dimmi la tua ipotesi, così la valuto.' Evita modifiche premature.",
+      "trace": "frame-0325 @ 10:48"
+    },
+    {
+      "id": "A12",
+      "category": "prompt_code",
+      "claim": "Pattern human-in-the-loop per architettura: 'fermati se trovi una scelta importante da farmi decidere.' Esplicito stop point.",
+      "trace": "frame-0340 @ 11:18"
+    },
+    {
+      "id": "A13",
+      "category": "prompt_analysis",
+      "claim": "Pattern source-attribution per analisi multi-documento: 'Cita per ogni punto da quale documento arriva.' Verificabilità garantita.",
+      "trace": "frame-0355 @ 11:48"
+    },
+    {
+      "id": "A14",
+      "category": "prompt_writing",
+      "claim": "Pattern style-sample per replicare tono personale: 'Te la giro perché capisca lo stile: [incolla testo precedente]'.",
+      "trace": "frame-0370 @ 12:18"
+    },
+    {
+      "id": "A15",
+      "category": "prompt_presentation",
+      "claim": "Pattern outline-first per deliverable strutturati: 'Dimmi prima la scaletta, poi la costruisci.' Risparmio token + controllo qualità.",
+      "trace": "frame-0395 @ 13:08"
+    },
+    {
+      "id": "A16",
+      "category": "limitation",
+      "claim": "CONTRO: livello alto può peggiorare task semplici (over-thinking). Identificare quando NON alzare il livello è skill critica.",
+      "trace": "frame-0455 @ 15:08"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 ---
-name: "CRO Copy Architect"
-description: "Sistema di scrittura copy per conversione. Framework primario APSOC. Specializzato in sales page, landing page, ads, email, video script, checkout copy. Usa dati dalla ricerca per scrivere copy che genera azioni misurabili."
+name: cro-copy-architect-knowledge-files
+description: "File di conoscenza di supporto per cro-copy-architect. Contiene i materiali di riferimento del framework APSOC applicato a sales page, landing page, ads, email, video script e checkout copy. Usala solo per consultare i knowledge file del sistema copy, non come skill operativa di scrittura, per cui va usata cro-copy-architect."
 ---
 
 **\# ✍️ CRO Copy Architect — Sistema di Scrittura Copy per Conversione**

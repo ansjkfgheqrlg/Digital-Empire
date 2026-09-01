@@ -1,6 +1,6 @@
 ---
-name: client-research-engine
-description: Sistema di ricerca profonda per copy che converte. Analisi audience e pain points.
+name: cro-ricerca
+description: "Sistema di ricerca profonda che estrae le parole reali, i problemi veri, le obiezioni e il linguaggio autentico del target da Reddit, commenti YouTube, recensioni e forum, prima di scrivere qualsiasi copy. Usala quando serve capire un pubblico, trovare pain point e voice of customer, o preparare i dati che alimentano cro-copy-architect. Senza questa ricerca il copy si basa su supposizioni."
 ---
 
 \# 🔍 Client Research Engine — Sistema di Ricerca Profonda per Copy che Converte

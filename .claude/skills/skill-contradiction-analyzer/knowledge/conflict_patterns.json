@@ -1,0 +1,65 @@
+﻿{
+  "version": "2.0.0",
+  "description": "Pattern di conflitto predefiniti. Espressioni regolari e pattern strutturali usati dai rilevatori veloci.",
+  "conflict_patterns": [
+    {
+      "id": "direct_negation",
+      "category": "direct_opposition",
+      "priority": 1,
+      "description": "Negazione diretta di un'azione",
+      "pattern_a": "devi|must|always|sempre|obbligatorio",
+      "pattern_b": "non devi|must not|never|mai|vietato|proibito",
+      "same_predicate_required": true
+    },
+    {
+      "id": "antonym_action",
+      "category": "direct_opposition",
+      "priority": 2,
+      "description": "Azioni antonime con stessa modalità",
+      "same_modality_required": true,
+      "use_antonym_db": true
+    },
+    {
+      "id": "exclusive_format",
+      "category": "mutual_exclusion",
+      "priority": 3,
+      "description": "Formati di output mutuamente esclusivi",
+      "trigger_keywords": ["JSON", "XML", "YAML", "CSV", "solo", "only", "esclusivamente"],
+      "use_mutual_exclusion_db": "output_format"
+    },
+    {
+      "id": "range_disjoint",
+      "category": "numerical_conflict",
+      "priority": 1,
+      "description": "Range numerici disgiunti (max < min)",
+      "pattern_a": "(?:massimo|max|non più di|al massimo)\\s+(\\d+)",
+      "pattern_b": "(?:minimo|min|almeno|non meno di)\\s+(\\d+)",
+      "requires_same_unit": true
+    },
+    {
+      "id": "order_inversion",
+      "category": "temporal_conflict",
+      "priority": 4,
+      "description": "Inversione dell'ordine delle operazioni",
+      "pattern": "(?:prima|before|first)\\s+(\\w+).*?(?:poi|then|after)\\s+(\\w+)",
+      "compare_order": true
+    },
+    {
+      "id": "conditional_opposition",
+      "category": "conditional_conflict",
+      "priority": 5,
+      "description": "Stessa condizione, azione opposta",
+      "pattern": "(?:se|when|if|quando)\\s+(.+?)(?:,|\\s+then|\\s+allora)\\s+(.+)",
+      "compare_condition": true
+    },
+    {
+      "id": "global_vs_local",
+      "category": "scope_conflict",
+      "priority": 8,
+      "description": "Regola globale vs eccezione locale",
+      "trigger_global": ["sempre", "in ogni caso", "globale", "always", "global"],
+      "trigger_local": ["in produzione", "in sviluppo", "in staging", "in production", "in development"]
+    }
+  ]
+}
+

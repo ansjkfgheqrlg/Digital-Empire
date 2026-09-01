@@ -1,5 +1,5 @@
 ---
-name: script-engine-lancio
+name: script-video-lancio-ccm
 description: >
   Script Engine per il lancio di Claude Code Mastery e Da AI User a System Architect.
   Usa questa skill OGNI VOLTA che l'utente chiede di creare script video per social

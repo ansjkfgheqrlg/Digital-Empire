@@ -1,0 +1,126 @@
+{
+  "agent_name": "cta-writer",
+  "model_under_test": "claude-sonnet-4",
+  "cases": [
+    {
+      "id": "happy-01",
+      "category": "happy",
+      "prompt": "Test case 1",
+      "expected_behavior": "Behavior 1",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "happy-02",
+      "category": "happy",
+      "prompt": "Test case 2",
+      "expected_behavior": "Behavior 2",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "happy-03",
+      "category": "happy",
+      "prompt": "Test case 3",
+      "expected_behavior": "Behavior 3",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "happy-04",
+      "category": "happy",
+      "prompt": "Test case 4",
+      "expected_behavior": "Behavior 4",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "edge-05",
+      "category": "edge",
+      "prompt": "Test case 5",
+      "expected_behavior": "Behavior 5",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "edge-06",
+      "category": "edge",
+      "prompt": "Test case 6",
+      "expected_behavior": "Behavior 6",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "edge-07",
+      "category": "edge",
+      "prompt": "Test case 7",
+      "expected_behavior": "Behavior 7",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "failure-08",
+      "category": "failure",
+      "prompt": "Test case 8",
+      "expected_behavior": "Behavior 8",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "failure-09",
+      "category": "failure",
+      "prompt": "Test case 9",
+      "expected_behavior": "Behavior 9",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    },
+    {
+      "id": "failure-10",
+      "category": "failure",
+      "prompt": "Test case 10",
+      "expected_behavior": "Behavior 10",
+      "assertions": [
+        {
+          "type": "max_tokens",
+          "value": 500
+        }
+      ]
+    }
+  ]
+}

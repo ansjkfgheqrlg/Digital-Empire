@@ -1,0 +1,123 @@
+{
+  "slug": "content-factory",
+  "date": "2026-06-29",
+  "product": "Content Factory",
+  "pillar": "Pain Point Attack",
+  "slides": [
+    {
+      "type": "hook",
+      "tag": "⚙ CONTENT FACTORY",
+      "icon": "",
+      "headline": "Il tuo competitor posta ogni giorno.\nTu?",
+      "subheadline": "Content Factory: la fabbrica che produce, scrive e pubblica per te."
+    },
+    {
+      "type": "problem",
+      "tag": "IL PROBLEMA",
+      "icon": "⏱",
+      "headline": "Ogni post ti ruba {3 ore.}\nE lo sai.",
+      "section_label": "Ogni settimana succede questo",
+      "items": [
+        "<strong>Cerchi idee,</strong> scrolli per ore.",
+        "<strong>Scrivi il copy,</strong> riscrivi 4 volte.",
+        "<strong>Pubblichi tardi,</strong> perdi il momento."
+      ]
+    },
+    {
+      "type": "truth",
+      "tag": "LA VERITÀ",
+      "icon": "◎",
+      "headline": "Non hai un\n{problema} di idee.\nHai un problema\ndi {esecuzione.}",
+      "subheadline": "Le idee le hai. È il tempo che ti manca per trasformarle in contenuti pubblicati.",
+      "quote": "L'esecuzione è la differenza tra chi cresce\ne chi resta fermo."
+    },
+    {
+      "type": "product_hook",
+      "tag": "⚙ CONTENT FACTORY",
+      "icon": "",
+      "headline": "E se i tuoi {contenuti} si\n{scrivessero}\nda soli?",
+      "subheadline": "Content Factory: la fabbrica che produce, scrive e pubblica per te."
+    },
+    {
+      "type": "solution",
+      "tag": "✦ LA SOLUZIONE",
+      "icon": "",
+      "headline": "Una {fabbrica}\ndi contenuti\nche lavora per te.",
+      "subheadline": "Ricerca, scrittura, grafica, pubblicazione. Tutto automatico. Tutto nella tua voce.",
+      "card": {
+        "tag": "CONTENT FACTORY",
+        "icon": "⚙",
+        "title": "La macchina che pubblica al posto tuo.",
+        "desc": "Un sistema end-to-end che cattura le tendenze, genera copy nella tua voce, crea le grafiche e pubblica sui tuoi canali. Tu approvi. Lui esegue.",
+        "checks": [
+          "<span class='chk-s'>Brand voice cucita su di te</span> — niente output generico.",
+          "<span class='chk-s'>Da idea a post in 4 minuti</span> — copy + grafica + caption.",
+          "<span class='chk-s'>Pubblicazione automatica</span> — Instagram, LinkedIn, X."
+        ],
+        "footer": "Trend Scraping · Brand Voice AI · Auto-Publishing"
+      }
+    },
+    {
+      "type": "how_it_works",
+      "tag": "COME FUNZIONA",
+      "icon": "⚡",
+      "headline": "3 step.\n{Zero} tuo tempo.",
+      "subheadline": "Il workflow completo dalla ricerca alla pubblicazione. Tu approvi, lui lavora.",
+      "steps": [
+        {
+          "title": "Ricerca",
+          "desc": "Scansiona trend, competitor e community. Trova ciò che funziona ora nel tuo settore."
+        },
+        {
+          "title": "Generazione",
+          "desc": "Crea copy, caption e grafica nella tua brand voice. Output pronti per la pubblicazione."
+        },
+        {
+          "title": "Pubblicazione",
+          "desc": "Programma e pubblica su Instagram, LinkedIn, X. Tu approvi, lui esegue."
+        }
+      ]
+    },
+    {
+      "type": "proof",
+      "tag": "IL RISULTATO",
+      "icon": "▲",
+      "headline": "Da {3 ore}\na {4 minuti}\nper post.",
+      "subheadline": "Il tempo che recuperi è il tempo che usi per costruire.",
+      "stats": [
+        {
+          "number": "97%",
+          "label": "TEMPO RISPARMIATO",
+          "desc": "Da 3 ore a 4 minuti per ogni post pubblicato."
+        },
+        {
+          "number": "120+",
+          "label": "OUTPUT MENSILE",
+          "desc": "Contenuti pronti al mese, multicanale."
+        },
+        {
+          "number": "5min",
+          "label": "TUO INTERVENTO",
+          "desc": "Solo per approvare. Il resto è automatico."
+        }
+      ],
+      "red_numbers": ["120+"]
+    },
+    {
+      "type": "cta",
+      "tag": "INIZIA ORA",
+      "icon": "⚡",
+      "headline": "Smetti di {scrivere.}\nInizia a {lanciare.}",
+      "subheadline": "La tua Content Factory pronta in 10 giorni. Installata, configurata, già a lavoro.",
+      "pricing": {
+        "label": "OFFERTA LIMITATA · PRIMI 5 CLIENTI",
+        "old": "€6.400",
+        "new": "€3.200",
+        "badge": "-50%",
+        "desc": "Setup completo · Brand voice import · 30gg supporto"
+      },
+      "action": "PRENOTA LA CALL GRATUITA →",
+      "sub_button": "Solo 30 minuti. Zero impegno. Solo chiarezza."
+    }
+  ]
+}

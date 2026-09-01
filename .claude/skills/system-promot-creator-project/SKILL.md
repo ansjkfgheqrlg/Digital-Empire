@@ -1,6 +1,6 @@
 ---
-name: system-prompt-creator
-description: Generatore di system prompt avanzati per la creazione di agenti digitali.
+name: system-promot-creator-project
+description: "Generatore di system prompt e progetti AI completi (custom instructions piu knowledge base) secondo l'architettura OMEGA Project Architect. Usala quando serve creare da zero un agente digitale, un Project di Claude, o un system prompt di livello architetturale con ruolo, vincoli, knowledge base e comportamenti definiti."
 ---
 # ══════════════════════════════════════════════════════════════════════
 # 🧬 OMEGA PROJECT ARCHITECT — SISTEMA DI GENERAZIONE PROGETTI AI

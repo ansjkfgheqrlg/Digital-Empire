@@ -1,0 +1,96 @@
+{
+  "slug": "outreach-factory",
+  "date": "2026-06-11",
+  "product": "Outreach Factory",
+  "pillar": "Pain Point Attack",
+  "slides": [
+    {
+      "type": "hook",
+      "tag": "⚡ OUTREACH AUTOMATION",
+      "headline": "300 email al giorno. Senza toccarle.",
+      "subheadline": "Mentre tu lavori sui clienti, il sistema trova i prossimi. 24/7, zero intervento umano.",
+      "accent_words": ["300"]
+    },
+    {
+      "type": "problem",
+      "tag": "IL PROBLEMA",
+      "headline": "L'outreach manuale ti uccide",
+      "items": [
+        "3-4 ore al giorno perse a cercare contatti e scrivere email",
+        "Gmail ti blocca dopo 50 invii perché sembri un bot",
+        "Ogni email uguale alle altre — zero personalizzazione, zero risposte"
+      ]
+    },
+    {
+      "type": "solution",
+      "tag": "LA SOLUZIONE",
+      "headline": "Outreach Factory",
+      "subheadline": "Un sistema AI installato sui tuoi server che gira 24/7.",
+      "benefits": [
+        {
+          "title": "Email personalizzate via AI",
+          "desc": "Ogni messaggio scritto su misura per il destinatario — tono, pain point, offerta"
+        },
+        {
+          "title": "Comportamento umano reale",
+          "desc": "Proxy residenziali + sessioni Chrome reali: Gmail non ti blocca"
+        },
+        {
+          "title": "Instagram DM inclusi",
+          "desc": "Lo stesso sistema gira anche su IG — più canali, stesso workflow"
+        }
+      ]
+    },
+    {
+      "type": "how_it_works",
+      "tag": "COME FUNZIONA",
+      "headline": "3 step, poi gira da solo",
+      "steps": [
+        {
+          "title": "Installi il sistema",
+          "desc": "Setup in 7 giorni sul tuo server. Codice tuo per sempre."
+        },
+        {
+          "title": "Definisci il target",
+          "desc": "ICP, offerta, tono di voce. Il sistema impara dal tuo brand."
+        },
+        {
+          "title": "Premi play",
+          "desc": "300+ email/giorno, personalizzate, con follow-up automatici inclusi."
+        }
+      ]
+    },
+    {
+      "type": "proof",
+      "tag": "I NUMERI",
+      "headline": "Cosa ottieni, in cifre",
+      "subheadline": "Zero canoni mensili. Solo costi API a consumo — pochi centesimi per lancio.",
+      "stats": [
+        { "number": "300+", "label": "email personalizzate al giorno" },
+        { "number": "7gg", "label": "setup completo e consegnato" },
+        { "number": "€0", "label": "canoni mensili per sempre" },
+        { "number": "100%", "label": "proprietà del codice" }
+      ]
+    },
+    {
+      "type": "differentiator",
+      "tag": "PERCHÉ NOI",
+      "headline": "Non un servizio. Un sistema.",
+      "subheadline": "Un'agenzia ti prende i soldi ogni mese. Noi ti consegniamo il motore.",
+      "items": [
+        "Zero canoni mensili — paghi una volta, usi per sempre",
+        "Codice tuo al 100% — nessun vendor lock-in",
+        "Installato sul tuo server in 7 giorni",
+        "Solo costi API OpenAI: centesimi per lancio",
+        "Supporto tecnico 90 giorni post-consegna incluso"
+      ]
+    },
+    {
+      "type": "cta",
+      "tag": "PROSSIMO PASSO",
+      "headline": "Hai un business da scalare nell'outreach?",
+      "action": "Commenta AI",
+      "sub": "Ti mando i dettagli in DM — call strategica gratuita"
+    }
+  ]
+}

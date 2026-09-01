@@ -1,0 +1,67 @@
+﻿{
+  "version": "2.0.0",
+  "description": "Ontologia dei domini operativi. Mappa ogni dominio ai concetti, verbi e sostantivi associati. Usata per classificare gli statement nel dominio corretto.",
+  "domains": {
+    "security": {
+      "label": "Sicurezza",
+      "keywords": ["sicurezza", "autenticazione", "autorizzazione", "crittografia", "HTTPS", "TLS", "token", "password", "vulnerabilità", "CORS", "CSRF", "XSS", "SQL injection", "security", "authentication", "authorization", "encryption", "auth", "certificate", "firewall", "sandbox"],
+      "predicates": ["autenticare", "autorizzare", "crittografare", "proteggere", "verificare identità", "validare token", "sanitizzare", "authenticate", "authorize", "encrypt", "protect", "secure"]
+    },
+    "performance": {
+      "label": "Performance",
+      "keywords": ["performance", "velocità", "latenza", "timeout", "cache", "throughput", "ottimizzazione", "bottleneck", "scalabilità", "rate limiting", "speed", "latency", "caching", "optimization", "scaling", "load", "response time"],
+      "predicates": ["ottimizzare", "cachare", "comprimere", "parallelizzare", "ridurre latenza", "aumentare throughput", "ottimizzare", "cache", "compress", "parallelize"]
+    },
+    "logging": {
+      "label": "Logging & Monitoring",
+      "keywords": ["log", "logging", "monitoraggio", "tracciamento", "audit", "metriche", "alert", "osservabilità", "tracing", "debug", "monitoring", "tracking", "metrics", "observability", "alerting"],
+      "predicates": ["loggare", "tracciare", "monitorare", "registrare", "notificare", "allertare", "log", "track", "monitor", "record", "alert"]
+    },
+    "input": {
+      "label": "Input",
+      "keywords": ["input", "dati in ingresso", "richiesta", "payload", "parametri", "query", "form", "upload", "request", "payload", "parameters"],
+      "predicates": ["ricevere", "leggere", "parsare", "decodificare", "validare input", "receive", "read", "parse", "decode", "validate input"]
+    },
+    "output": {
+      "label": "Output",
+      "keywords": ["output", "risposta", "response", "risultato", "report", "render", "formattazione", "serializzazione", "response", "result", "formatting", "serialization"],
+      "predicates": ["restituire", "formattare", "serializzare", "renderizzare", "scrivere risposta", "return", "format", "serialize", "render", "write response"]
+    },
+    "processing": {
+      "label": "Elaborazione",
+      "keywords": ["processare", "elaborare", "trasformare", "calcolare", "analizzare", "filtrare", "ordinare", "aggregare", "process", "transform", "calculate", "analyze", "filter", "sort", "aggregate"],
+      "predicates": ["processare", "elaborare", "trasformare", "calcolare", "analizzare", "filtrare", "ordinare"]
+    },
+    "storage": {
+      "label": "Storage",
+      "keywords": ["database", "file", "storage", "memoria", "persistenza", "salvataggio", "archiviazione", "DB", "database", "file", "memory", "persistence", "save", "archive"],
+      "predicates": ["salvare", "leggere", "scrivere", "caricare", "scaricare", "archiviare", "save", "read", "write", "load", "store"]
+    },
+    "validation": {
+      "label": "Validazione",
+      "keywords": ["validare", "verificare", "controllare", "validazione", "schema", "tipo", "constraint", "validate", "verify", "check", "validation", "schema", "type checking"],
+      "predicates": ["validare", "verificare", "controllare", "testare", "validate", "verify", "check", "test"]
+    },
+    "network": {
+      "label": "Rete",
+      "keywords": ["rete", "HTTP", "API", "endpoint", "richiesta", "connessione", "socket", "DNS", "proxy", "network", "request", "connection", "API", "REST", "GraphQL"],
+      "predicates": ["chiamare", "richiedere", "connettere", "inviare richiesta", "call", "request", "connect", "fetch"]
+    },
+    "error_handling": {
+      "label": "Gestione Errori",
+      "keywords": ["errore", "eccezione", "fallimento", "retry", "fallback", "circuit breaker", "error", "exception", "failure", "retry", "fallback", "recovery"],
+      "predicates": ["gestire errore", "ritentare", "fallback", "recuperare", "handle error", "retry", "recover", "fallback"]
+    },
+    "formatting": {
+      "label": "Formattazione",
+      "keywords": ["formato", "stile", "layout", "presentazione", "markdown", "HTML", "template", "format", "style", "layout", "presentation"],
+      "predicates": ["formattare", "stilizzare", "impaginare", "renderizzare", "format", "style", "layout", "render"]
+    },
+    "dependency": {
+      "label": "Dipendenze",
+      "keywords": ["dipendenza", "libreria", "pacchetto", "versione", "compatibilità", "import", "dependency", "library", "package", "version", "compatibility"],
+      "predicates": ["dipendere da", "richiedere", "importare", "necessitare", "depend on", "require", "import", "need"]
+    }
+  }
+}
+

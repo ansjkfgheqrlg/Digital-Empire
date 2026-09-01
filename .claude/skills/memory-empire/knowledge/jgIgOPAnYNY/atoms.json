@@ -1,0 +1,175 @@
+{
+  "video_id": "jgIgOPAnYNY",
+  "generated": "2026-07-09",
+  "total_atoms": 24,
+  "atoms": [
+    {
+      "id": "KA-001",
+      "claim": "Il processo di scrittura del copy si divide in 4 fasi sequenziali: Briefing → Ricerca → Scrittura → Revisione.",
+      "perche": "Separare le fasi separa il carico cognitivo — non si può pensare al prodotto, target, struttura e parole tutte insieme.",
+      "trace": "jgIgOPAnYNY#0:01:31 + frame-046.png",
+      "tags": ["processo", "framework", "copywriting"]
+    },
+    {
+      "id": "KA-002",
+      "claim": "Il Briefing è la fase zero — senza di esso il copywriter scrive alla cieca.",
+      "perche": "Definisce tutti i parametri del copy prima di scrivere una parola. Vale per copywriter freelance, imprenditori, content creator.",
+      "trace": "jgIgOPAnYNY#0:01:31 + frame-100.png",
+      "tags": ["briefing", "processo", "prerequisito"]
+    },
+    {
+      "id": "KA-003",
+      "claim": "Prodotto nel briefing = 'cosa stiamo vendendo' — include idee, personalità, video, servizi, non solo oggetti fisici.",
+      "perche": "Estende il concetto di prodotto a qualsiasi offerta digitale/personale — rilevante per personal brand e info-product.",
+      "trace": "jgIgOPAnYNY#0:01:31 + frame-100.png",
+      "tags": ["briefing", "prodotto", "personal-brand"]
+    },
+    {
+      "id": "KA-004",
+      "claim": "Il Pain Point è il problema che il prodotto risolve — obbligatorio nel briefing, non opzionale.",
+      "perche": "Senza pain point identificato, il copy non può agitare la sofferenza del target. Il pain precede la soluzione in APSOC.",
+      "trace": "jgIgOPAnYNY#0:02:10 + frame-100.png",
+      "tags": ["briefing", "pain-point", "psicologia"]
+    },
+    {
+      "id": "KA-005",
+      "claim": "L'USP risponde a 'perché il mio e non quello degli altri?' — ogni brand degno ha un USP diversificante.",
+      "perche": "Esempi: Razer (gaming hardcore), Logitech (versatility), iPhone (ecosystem/status). Senza USP il copy è generico.",
+      "trace": "jgIgOPAnYNY#0:02:55",
+      "tags": ["briefing", "USP", "posizionamento"]
+    },
+    {
+      "id": "KA-006",
+      "claim": "Il tipo di copy va definito upfront nel briefing: email, blog post, landing page, sales page, opt-in page, VSL, branding.",
+      "perche": "Ogni formato ha struttura, lunghezza e tono diversi. Confondere formati = copy che non converte.",
+      "trace": "jgIgOPAnYNY#0:03:30 + frame-100.png",
+      "tags": ["briefing", "formati", "copy"]
+    },
+    {
+      "id": "KA-007",
+      "claim": "Il Branding aziendale (tone of voice) deve essere rispettato — il copy NON può essere uguale per tutti i brand.",
+      "perche": "Andrei esempio: il suo stile è 'freddo/diretto' — non applicabile a un brand caldo/inclusivo senza danni al brand.",
+      "trace": "jgIgOPAnYNY#0:04:10 + frame-200.png",
+      "tags": ["briefing", "tone-of-voice", "brand"]
+    },
+    {
+      "id": "KA-008",
+      "claim": "Il Contesto funnel/consapevolezza determina il copy — audience fredda vs calda richiedono approcci opposti.",
+      "perche": "FB ad → audience fredda (non sa chi sei). Sales page → audience calda. Copy identico per entrambe = conversione zero.",
+      "trace": "jgIgOPAnYNY#0:05:30 + frame-200.png",
+      "tags": ["briefing", "funnel", "consapevolezza"]
+    },
+    {
+      "id": "KA-009",
+      "claim": "La Ricerca è l'elemento più sottovalutato del copywriting — più importante della scrittura stessa.",
+      "perche": "Andrei: 'Parte scrittura è la più semplice. La più difficile è sottovalutata: è la ricerca e il briefing.' Inverte l'assunzione comune.",
+      "trace": "jgIgOPAnYNY#0:09:23",
+      "tags": ["ricerca", "insight", "copywriting"]
+    },
+    {
+      "id": "KA-010",
+      "claim": "'Fate una buona ricerca → sarete automaticamente meglio del 90% di copywriter, assicurato 100%.'",
+      "perche": "La maggior parte dei copywriter salta la ricerca. Il differenziatore non è il talento, è il processo.",
+      "trace": "jgIgOPAnYNY#0:09:45",
+      "tags": ["ricerca", "differenziatore", "benchmark"]
+    },
+    {
+      "id": "KA-011",
+      "claim": "Metodo ricerca YouTube: cerca video recensioni del prodotto/categoria → estrai pain points e desideri espliciti del target.",
+      "perche": "Esempio candele: reviewer dice 'non dura tantissimo' → insight: il target vuole durabilità → va nel copy. Metodo replicabile.",
+      "trace": "jgIgOPAnYNY#0:11:00",
+      "tags": ["ricerca", "voice-of-customer", "metodo"]
+    },
+    {
+      "id": "KA-012",
+      "claim": "La ricerca serve a usare le stesse parole del target nel copy — voice of customer come fonte di linguaggio autentico.",
+      "perche": "Copy scritto con le parole del target risuona istantaneamente. Copy con parole del copywriter suona artificiale.",
+      "trace": "jgIgOPAnYNY#0:12:30",
+      "tags": ["ricerca", "voice-of-customer", "linguaggio"]
+    },
+    {
+      "id": "KA-013",
+      "claim": "'Chi non capisce qualcuno non può vendergli niente.' — la comprensione del target precede la persuasione.",
+      "perche": "Principio fondamentale. Copywriting = empatia applicata alla vendita.",
+      "trace": "jgIgOPAnYNY#0:10:00",
+      "tags": ["ricerca", "empatia", "principio"]
+    },
+    {
+      "id": "KA-014",
+      "claim": "Se non trovi recensioni in italiano → cerca nel mercato estero — il mercato internazionale ha sempre materiale.",
+      "perche": "Rimuove la scusa 'il mio mercato è troppo piccolo'. Il comportamento dei consumatori è trasferibile cross-market.",
+      "trace": "jgIgOPAnYNY#0:14:50",
+      "tags": ["ricerca", "mercato", "lingua"]
+    },
+    {
+      "id": "KA-015",
+      "claim": "APSOC è la formula proprietaria di Andrei Pascu: Attenzione → Problema → Soluzione → Obiezioni → Call To Action.",
+      "perche": "Formula strutturata e memorabile per qualsiasi copy. Differisce da AIDA — aggiunge esplicitamente O (obiezioni).",
+      "trace": "jgIgOPAnYNY#0:15:39 + frame-490.png",
+      "tags": ["APSOC", "formula", "scrittura"]
+    },
+    {
+      "id": "KA-016",
+      "claim": "A = Attenzione — fermare lo scroll con 3 tecniche: pain point, curiosità, valore.",
+      "perche": "Hook è il gate — se l'attenzione non viene catturata, il resto del copy non viene letto.",
+      "trace": "jgIgOPAnYNY#0:16:12 + frame-490.png",
+      "tags": ["APSOC", "attenzione", "hook"]
+    },
+    {
+      "id": "KA-017",
+      "claim": "P = Problema — agitare il dolore del target in modo che si riconosca ('Non sei stanco di vetri che non si puliscono?').",
+      "perche": "Domanda-problema usa empatia per creare identità condivisa col target. Pain agitato crea urgenza per la soluzione.",
+      "trace": "jgIgOPAnYNY#0:17:09 + frame-490.png",
+      "tags": ["APSOC", "problema", "agitazione"]
+    },
+    {
+      "id": "KA-018",
+      "claim": "S = Soluzione — presentare il prodotto come risposta diretta al problema agitato.",
+      "perche": "La soluzione deve legarsi direttamente al pain — non feature generiche ma risposta esatta al dolore identificato.",
+      "trace": "jgIgOPAnYNY#0:17:22 + frame-490.png",
+      "tags": ["APSOC", "soluzione", "prodotto"]
+    },
+    {
+      "id": "KA-019",
+      "claim": "O = Obiezioni — anticipare i dubbi e rispondere PRIMA che blocchino l'acquisto ('Agenti chimici tossici? → Tranquillo, sicuri').",
+      "perche": "La maggior parte del copy salta le obiezioni. Risponderle nel copy elimina la necessità di call di vendita. Riduce attrito.",
+      "trace": "jgIgOPAnYNY#0:17:31 + frame-490.png",
+      "tags": ["APSOC", "obiezioni", "attrito"]
+    },
+    {
+      "id": "KA-020",
+      "claim": "C = Call To Action — dire esattamente l'azione da compiere ('Link in bio, clicca il pulsante qui sotto per comprare adesso').",
+      "perche": "CTA vaga = conversione bassa. CTA specifica con verbo imperativo + dove + perché ora = massima conversione.",
+      "trace": "jgIgOPAnYNY#0:17:46 + frame-490.png",
+      "tags": ["APSOC", "CTA", "conversione"]
+    },
+    {
+      "id": "KA-021",
+      "claim": "'Se fai bene la tua ricerca, la scrittura sarà flowey' — la qualità di briefing+ricerca determina la facilità della scrittura.",
+      "perche": "Inverte la percezione: non è il talento di scrittura a fare la differenza, ma la preparazione.",
+      "trace": "jgIgOPAnYNY#0:15:23",
+      "tags": ["scrittura", "processo", "mindset"]
+    },
+    {
+      "id": "KA-022",
+      "claim": "'Scrivi da ubriaco, rivedi da sobrio' — le due fasi richiedono stati mentali opposti.",
+      "perche": "Scrittura = flusso libero senza autocensura. Revisione = analisi critica distaccata. Mescolarle produce copy mediocre.",
+      "trace": "jgIgOPAnYNY#0:19:27 + frame-568.png",
+      "tags": ["revisione", "processo", "regola"]
+    },
+    {
+      "id": "KA-023",
+      "claim": "Pausa obbligatoria di 1-2 ore tra scrittura e revisione — per svuotare il cervello e vedere con occhio fresco.",
+      "perche": "Il cervello dopo la scrittura è 'dentro' il copy — non vede i problemi. La pausa resetta la prospettiva critica.",
+      "trace": "jgIgOPAnYNY#0:19:13 + frame-568.png",
+      "tags": ["revisione", "pausa", "processo"]
+    },
+    {
+      "id": "KA-024",
+      "claim": "Funnel completo: FB ad (freddo) → opt-in page → email sequence → sales page (caldo) — ogni step ha diversa consapevolezza.",
+      "perche": "Sales page presuppone audience calda. Stesso copy nella FB ad (fredda) = incomprensibile, non converte.",
+      "trace": "jgIgOPAnYNY#0:05:50 + frame-200.png",
+      "tags": ["funnel", "consapevolezza", "strategia"]
+    }
+  ]
+}

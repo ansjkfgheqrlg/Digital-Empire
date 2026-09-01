@@ -1,0 +1,14 @@
+{
+  "verdict": "PASS",
+  "threshold_used": 0.9,
+  "kg_path": "phase7-run/stage-03/kg.json",
+  "output_dir": "phase7-run/stage-06/output/objection-handler",
+  "atoms_total": 18,
+  "lexical": {
+    "rate": 0.944,
+    "covered": 16,
+    "partial": 2,
+    "missing_count": 0,
+    "missing_ids": []
+  }
+}

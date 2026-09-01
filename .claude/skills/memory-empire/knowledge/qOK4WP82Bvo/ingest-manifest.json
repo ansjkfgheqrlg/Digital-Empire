@@ -1,0 +1,46 @@
+{
+  "video_id": "qOK4WP82Bvo",
+  "run_id": "andrei-pascu-001",
+  "category": "cat1-copywriting",
+  "video_index": "2/29",
+  "ingested_at": "2026-07-05T00:00:00Z",
+  "source": {
+    "type": "YouTube video",
+    "uploader": "Andrei Pascu",
+    "title": "COPYWRITING: cos'è, come funziona e come INIZIARE oggi (2023-24)",
+    "duration_hms": "0:17:01",
+    "language": "Italian"
+  },
+  "frames": {
+    "total": 515,
+    "interval_sec": 2,
+    "frames_read_native_vision": 14,
+    "all_read_native_vision": false,
+    "no_finto_compliant": true,
+    "note": "14 frame letti nativamente (tutti i boundary di capitolo + frame-515 outro + frame-347 graphic). Video talking-head puro, variazione visiva minima. Nessun atom descrive frame non letti."
+  },
+  "vtt": {
+    "total_lines": 3999,
+    "language": "it",
+    "all_lines_read": true
+  },
+  "output_files": {
+    "video_analysis": "empire-studio/runs/andrei-pascu-001/cat1-copywriting/qOK4WP82Bvo/video-analysis.md",
+    "contenuto_integrale": "memory-empire/knowledge/qOK4WP82Bvo/contenuto-integrale.md",
+    "atoms": "memory-empire/knowledge/qOK4WP82Bvo/atoms.json",
+    "enrichment_report": "memory-empire/knowledge/qOK4WP82Bvo/enrichment-report.md"
+  },
+  "wiki_pages_created": [
+    "second-brain-vault/wiki/03 - Resources/sources/Source_Andrei_Pascu_Copywriting_Intro.md",
+    "second-brain-vault/wiki/03 - Resources/concepts/Concept_Value_Gap_Copywriter.md",
+    "second-brain-vault/wiki/03 - Resources/concepts/Concept_Conversion_Rate_Moltiplicatore.md"
+  ],
+  "knowledge_atoms_count": 22,
+  "p12_traceability": true,
+  "stages_completed": ["C-archive", "D-enrichment", "E-gate", "F-apply", "G-audit", "H-report"],
+  "watch_001": {
+    "n_video": 2,
+    "n_memory_empire": 2,
+    "status": "MATCH"
+  }
+}

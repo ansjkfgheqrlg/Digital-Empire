@@ -1,0 +1,43 @@
+{
+  "video_id": "9CuQI0Cr4Pg",
+  "run_id": "andrei-pascu-001",
+  "category": "cat1-copywriting",
+  "video_index": "1/29",
+  "ingested_at": "2026-06-30T00:00:00Z",
+  "source": {
+    "type": "YouTube video",
+    "uploader": "Andrei Pascu",
+    "title": "Come scrivere copy per un'inserzione Facebook (pannelli fonoassorbenti — caso studio reale)",
+    "duration_hms": "0:18:09",
+    "language": "Italian"
+  },
+  "frames": {
+    "total": 545,
+    "interval_sec": 2,
+    "all_read_native_vision": true,
+    "no_finto_compliant": true
+  },
+  "vtt": {
+    "total_lines": 4161,
+    "language": "it",
+    "all_lines_read": true
+  },
+  "output_files": {
+    "video_analysis": "empire-studio/runs/andrei-pascu-001/cat1-copywriting/9CuQI0Cr4Pg/video-analysis.md",
+    "contenuto_integrale": "memory-empire/knowledge/9CuQI0Cr4Pg/contenuto-integrale.md",
+    "atoms": "memory-empire/knowledge/9CuQI0Cr4Pg/atoms.json",
+    "enrichment_report": "memory-empire/knowledge/9CuQI0Cr4Pg/enrichment-report.md"
+  },
+  "wiki_pages_created": [
+    "second-brain-vault/wiki/03 - Resources/sources/Source_Andrei_Pascu_FB_Ads_Copywriting.md",
+    "second-brain-vault/wiki/03 - Resources/concepts/Concept_Percorso_Delle_Informazioni.md"
+  ],
+  "knowledge_atoms_count": 20,
+  "p12_traceability": true,
+  "stages_completed": ["C-archive", "D-enrichment", "E-gate", "F-apply", "G-audit", "H-report"],
+  "watch_001": {
+    "n_video": 1,
+    "n_memory_empire": 1,
+    "status": "MATCH"
+  }
+}

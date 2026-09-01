@@ -1,6 +1,6 @@
 ---
-name: cc-master
-description: System expert for Claude Code: creating skills, creating agents, and managing project context.
+name: agente-max
+description: "Esperto di sistema per Claude Code applicato a Digital Empire. Crea skill, crea agenti, gestisce il contesto di progetto e la knowledge base partizionata (moduli K01-K09 caricati in modo selettivo invece del monolite). Usala quando serve costruire o rifattorizzare skill e agenti Claude Code, ridurre il consumo di contesto di un agente, o capire come e organizzata la knowledge base dell'Impero."
 ---
 # MEMORIA SESSIONE — CC-Master v2.0 Upgrade
 **Data:** 2026-03-08

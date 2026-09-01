@@ -1,0 +1,162 @@
+[
+  {
+    "id": "KA-001",
+    "categoria": "Framework",
+    "claim": "Percorso delle Informazioni: ogni touchpoint del funnel consegna UN SOLO pezzo di informazione, il più persuasivo per quel momento, nella SEQUENZA ottimale.",
+    "trace": "9CuQI0Cr4Pg#0:02:00 + frames/frame-061.png",
+    "rilevanza_DE": "alta",
+    "note": "Principio fondante di tutta la struttura copy. Applicabile a ogni touchpoint: FB ad, email, landing page."
+  },
+  {
+    "id": "KA-002",
+    "categoria": "Facebook Ads",
+    "claim": "Ordine di lettura FB ad: (1) testo sopra immagine → (2) CTA → (3) features → (4) immagine ULTIMA. L'immagine è letta per ultima nonostante sia visivamente dominante.",
+    "trace": "9CuQI0Cr4Pg#0:02:30 + frames/frame-075.png",
+    "rilevanza_DE": "alta",
+    "note": "Inverte l'assunzione comune che 'l'immagine è la prima cosa che si vede'. Il testo aggancia PRIMA."
+  },
+  {
+    "id": "KA-003",
+    "categoria": "Target Research",
+    "claim": "Target pannelli fonoassorbenti: YouTubers/Twitch streamers 18-35. Due desideri: (1) no eco, (2) stanza bella esteticamente.",
+    "trace": "9CuQI0Cr4Pg#0:06:15 + frames/frame-185.png",
+    "rilevanza_DE": "media",
+    "note": "Metodo target research applicabile a qualsiasi prodotto lifestyle/creator."
+  },
+  {
+    "id": "KA-004",
+    "categoria": "Copywriting Ethics",
+    "claim": "Soundproofing ≠ Sound absorbing. Pannelli = sound absorbing (riducono eco/riverbero), NON soundproofing (non bloccano suono attraverso muri). Over-promise = lies = copywriting controproducente.",
+    "trace": "9CuQI0Cr4Pg#0:07:00 + frames/frame-210.png",
+    "rilevanza_DE": "alta",
+    "note": "Principio generale: il copy deve essere honest e accurato. L'over-promise distrugge la fiducia."
+  },
+  {
+    "id": "KA-005",
+    "categoria": "Product Positioning",
+    "claim": "Pannelli fonoassorbenti: impatto acustico MINIMO a meno che siano numerosi/spessi/alta qualità. Valore primario reale = ESTETICA. Copy honesty richiede puntare sull'estetica.",
+    "trace": "9CuQI0Cr4Pg#0:10:40 + frames/frame-320.png",
+    "rilevanza_DE": "alta",
+    "note": "La ricerca prodotto rivela il VERO valore — che spesso non è quello più ovvio. Sempre fare product research onesta."
+  },
+  {
+    "id": "KA-006",
+    "categoria": "Research Strategy",
+    "claim": "Ricerca sempre in inglese PRIMA. EN market: info di qualità superiore, più dettagliate. Beneficio secondario: riduce rischio copia competitor italiani.",
+    "trace": "9CuQI0Cr4Pg#0:08:30 + frames/frame-255.png",
+    "rilevanza_DE": "alta",
+    "note": "Regola universale per qualsiasi ricerca prodotto/mercato. Prima EN, poi IT."
+  },
+  {
+    "id": "KA-007",
+    "categoria": "Research Tool",
+    "claim": "Moodboard = collezione di immagini per visualizzare il mondo estetico del target. Step necessario prima di scrivere copy per prodotti lifestyle/estetica.",
+    "trace": "9CuQI0Cr4Pg#0:09:00 + frames/frame-270.png",
+    "rilevanza_DE": "media",
+    "note": "Tool di ricerca visiva per allinearsi all'estetica del target prima di scrivere."
+  },
+  {
+    "id": "KA-008",
+    "categoria": "Copywriting Process",
+    "claim": "Sezione 'POTENZIALI FRASI': brainstorm bin separato per frasi durante la ricerca. NON copy finale — idee grezze da rivedere quando si scrive il copy.",
+    "trace": "9CuQI0Cr4Pg#0:09:30 + frames/frame-285.png",
+    "rilevanza_DE": "media",
+    "note": "Tecnica di cattura idee durante research phase. Mantiene il flusso senza distrarsi dalla ricerca."
+  },
+  {
+    "id": "KA-009",
+    "categoria": "AI Tool Usage",
+    "claim": "ChatGPT (o LLM) come fact-checker prodotto, NON copywriter. Usarlo per capire cosa fa il prodotto. Verificare SEMPRE con fonte reale — LLM sbaglia su numeri e specifiche.",
+    "trace": "9CuQI0Cr4Pg#0:10:52 + frames/frame-328.png",
+    "rilevanza_DE": "alta",
+    "note": "Posizione chiara: LLM = research assistant, non copy replacement. Fondamentale per qualsiasi skill DE che usa AI."
+  },
+  {
+    "id": "KA-010",
+    "categoria": "Strategic Positioning",
+    "claim": "INVERSIONE ESTETICA: ChatGPT lista benefici in ordine logico → estetica ULTIMA. Target YouTuber/streamer = motivato principalmente da estetica. Andrei INVERTE l'ordine ChatGPT: estetica PRIMA.",
+    "trace": "9CuQI0Cr4Pg#0:11:20 + frames/frame-340.png",
+    "rilevanza_DE": "alta",
+    "note": "Regola generale: il 'logico' e il 'persuasivo' non sono la stessa cosa. Studia il target, non l'AI."
+  },
+  {
+    "id": "KA-011",
+    "categoria": "Research Source",
+    "claim": "Amazon = fonte di ispirazione copy. Scegliere descrizioni dettagliate (non le liste bullet noiosissime). Attenzione: molte Amazon listing = over-promise = lies. Filtrare criticamente.",
+    "trace": "9CuQI0Cr4Pg#0:12:52 + frames/frame-386.png",
+    "rilevanza_DE": "media",
+    "note": "Amazon è validissima per linguaggio prodotto ma richiede discernimento qualitativo."
+  },
+  {
+    "id": "KA-012",
+    "categoria": "Research Source",
+    "claim": "YouTube video reviews = 'mano Divina' per il copywriter. I reviewer reali dicono cosa gli importa e perché hanno comprato = voice of customer autentica e non filtrata.",
+    "trace": "9CuQI0Cr4Pg#0:13:30 + frames/frame-405.png",
+    "rilevanza_DE": "alta",
+    "note": "Preferire YouTube reviews ad Amazon reviews: più verbosi, più dettagliati sul 'perché'."
+  },
+  {
+    "id": "KA-013",
+    "categoria": "Copywriting Process",
+    "claim": "Processo di scrittura copy: partire dalla versione più semplice → raffinare iterativamente. 'parto da un'idea molto base e poi lo rifinisco e lo rifinisco e lo rifinisco'.",
+    "trace": "9CuQI0Cr4Pg#0:15:07 + frames/frame-452.png",
+    "rilevanza_DE": "alta",
+    "note": "Anti-pattern: cercare la versione perfetta al primo colpo. Il buon copy = molte iterazioni."
+  },
+  {
+    "id": "KA-014",
+    "categoria": "Target Language",
+    "claim": "Linguaggio inclusivo per target multipli: 'gaming room' esclude streamer che pensano alla loro stanza come 'recording room'. Soluzione: 'la tua stanza in cui giochi o registri'.",
+    "trace": "9CuQI0Cr4Pg#0:14:42 + frames/frame-442.png",
+    "rilevanza_DE": "alta",
+    "note": "Ogni parola che esclude un sotto-target = perdita di reach. Preferire linguaggio inclusivo."
+  },
+  {
+    "id": "KA-015",
+    "categoria": "Copy Formula",
+    "claim": "Social Proof Hook Formula: 'Hai presente [cosa] che [aspirational group] hanno [dove]? Che hanno tutti? Sono questi.' Funziona per: assume consapevolezza, inserisce aspirazione, crea FOMO, reveal diretto.",
+    "trace": "9CuQI0Cr4Pg#0:15:31 + frames/frame-465.png",
+    "rilevanza_DE": "alta",
+    "note": "Formula replicabile su qualsiasi prodotto 'visto ma non comprato' con un aspirational group associato."
+  },
+  {
+    "id": "KA-016",
+    "categoria": "Copy Craft",
+    "claim": "Ripetizione di parola in copy breve = debolezza. Soluzione: sinonimo colloquiale. 'pannelli' → 'quadratini': più informale, quasi comico, più relatable per target young creator.",
+    "trace": "9CuQI0Cr4Pg#0:16:47 + frames/frame-504.png",
+    "rilevanza_DE": "alta",
+    "note": "La variazione lessicale colloquiale aumenta il 'feel' di naturalezza del copy."
+  },
+  {
+    "id": "KA-017",
+    "categoria": "Copy Craft",
+    "claim": "'coinvolgente' = parola chiave per creator target: evoca YouTube/streaming engagement. Scegliere parole che vivono nel vocabolario del target per doppio livello di risonanza.",
+    "trace": "9CuQI0Cr4Pg#0:17:18 + frames/frame-520.png",
+    "rilevanza_DE": "alta",
+    "note": "Parole con doppio significato per il target = amplificatore di risonanza."
+  },
+  {
+    "id": "KA-018",
+    "categoria": "Ad Structure",
+    "claim": "Struttura immagine FB ad (3 sezioni): TOP (gialla) = hook text | METÀ = foto prodotto/aspirazionale | BOTTOM (celeste) = product description + bullet list.",
+    "trace": "9CuQI0Cr4Pg#0:16:22 + frames/frame-487.png",
+    "rilevanza_DE": "alta",
+    "note": "Template strutturale per qualsiasi immagine FB ad con testo overlay."
+  },
+  {
+    "id": "KA-019",
+    "categoria": "Pedagogy",
+    "claim": "La 'Descrizione ad' (body text Facebook) è stata lasciata deliberatamente come homework per gli spettatori — il video era più lungo del previsto. Pedagogia: stop al momento giusto, fai praticare il learner.",
+    "trace": "9CuQI0Cr4Pg#0:17:25 + frames/frame-525.png",
+    "rilevanza_DE": "bassa",
+    "note": "Insight pedagogico sul formato video tutorial: il homework genera engagement nei commenti."
+  },
+  {
+    "id": "KA-020",
+    "categoria": "Sequencing Logic",
+    "claim": "Contraddizione apparente risolta: testo dice 'acustica E estetica' ma estetica è la priorità. L'immagine CONSEGNA l'estetica visivamente prima che il testo sia letto. Testo = credibilità acustica + rinforzo estetica.",
+    "trace": "9CuQI0Cr4Pg#0:15:59 + frames/frame-480.png",
+    "rilevanza_DE": "alta",
+    "note": "Il Percorso delle Informazioni è CROSS-media: testo + immagine lavorano in SEQUENZA, non in parallelo."
+  }
+]

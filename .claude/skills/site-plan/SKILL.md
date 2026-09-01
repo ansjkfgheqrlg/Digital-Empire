@@ -1,0 +1,235 @@
+---
+name: site-plan
+description: "Trasforma SITE-BRIEF.md in un'architettura informativa completa. Produce SITE-PLAN.md con sitemap, URL scheme, wireframe testuale sezione per sezione, inventario componenti e gerarchia di navigazione — il documento di riferimento per design, copy e build."
+---
+
+# Site Plan — Architettura Informativa
+
+Sei il responsabile dell'architettura informativa del sito. Il tuo compito è trasformare i requisiti del brief in una **struttura concreta e dettagliata** che guiderà il design, il copy e il build. Un piano solido elimina ambiguità e garantisce che tutti i componenti del sito lavorino insieme verso l'obiettivo principale.
+
+---
+
+## Processo
+
+### Step 1: Leggi i Documenti di Input
+
+Cerca e leggi nella CWD:
+- `SITE-BRIEF.md` — **obbligatorio**, interrompi se non esiste
+- `SITE-STACK.md` — per conoscere il percorso tecnico scelto
+- `BRAND-VOICE.md` — se presente, per allineare la struttura alla voce brand
+- `MARKETING-AUDIT.md` — se presente, per insights su cosa funziona
+
+### Step 2: Definisci la Sitemap
+
+Crea la mappa completa di tutte le pagine basandoti su `SITE-BRIEF.md`:
+
+**Struttura standard per tipo di sito:**
+
+*Landing Page:*
+- `/` — Home (unica pagina, sezioni verticali)
+
+*Business/Agenzia:*
+- `/` — Home
+- `/chi-siamo` — About
+- `/servizi` — Services (o pagina per servizio)
+- `/lavori` — Portfolio/Case Study
+- `/blog` — Blog (se richiesto)
+- `/contatti` — Contact
+
+*Portfolio:*
+- `/` — Home con hero e preview lavori
+- `/lavori` — Galleria completa
+- `/lavori/[slug]` — Case study singolo
+- `/chi-sono` — About
+- `/contatti` — Contact
+
+*E-commerce:*
+- `/` — Home
+- `/shop` — Catalogo prodotti
+- `/shop/[categoria]` — Categoria
+- `/prodotti/[slug]` — Prodotto singolo
+- `/carrello` — Cart
+- `/checkout` — Checkout
+- `/grazie` — Thank You
+
+*SaaS:*
+- `/` — Home
+- `/funzionalita` — Features
+- `/prezzi` — Pricing
+- `/casi-uso/[slug]` — Use Cases
+- `/blog` — Blog
+- `/docs` — Docs (link esterno)
+- `/login` e `/signup` — Auth pages
+
+*Blog/Content:*
+- `/` — Home / Latest posts
+- `/[categoria]` — Categoria
+- `/[slug]` — Articolo singolo
+- `/chi-siamo` — About
+- `/newsletter` — Subscribe page
+
+### Step 3: Progetta Ogni Pagina
+
+Per ogni pagina, definisci le sezioni nell'ordine corretto con priorità CRO:
+
+**Template wireframe per pagina:**
+```
+## Pagina: [nome] — [URL]
+
+**Obiettivo:** [cosa deve fare questa pagina]
+**CTA Primario:** [azione principale]
+**Utente che arriva qui:** [da dove arriva, cosa cerca]
+
+### Sezioni (dall'alto in basso):
+
+1. **NAVBAR** — [elementi: logo, link navigazione, CTA]
+2. **HERO** — [headline principale, subheadline, CTA primario, elemento visivo]
+3. **[sezione specifica]** — [descrizione contenuto]
+4. **[sezione]** — [descrizione]
+5. **CTA SECTION** — [call to action ripetuta prima del footer]
+6. **FOOTER** — [link, contatti, social, copyright]
+```
+
+### Step 4: Inventario Componenti
+
+Elenca tutti i componenti UI unici necessari nel sito:
+
+| Componente | Pagine in cui appare | Note |
+|-----------|---------------------|------|
+| Navbar | Tutte | Sticky, mobile hamburger menu |
+| Hero | Home, Landing | Varianti per ogni pagina |
+| Card Servizio | Home, Servizi | Icona + titolo + testo + link |
+| Testimonial | Home, Prezzi | Foto + nome + testo + stelle |
+| Pricing Table | Prezzi | Toggle mensile/annuale |
+| FAQ Accordion | Prezzi, FAQ | Apertura/chiusura animata |
+| Contact Form | Contatti | Nome, email, messaggio, submit |
+| Footer | Tutte | Link + social + copyright |
+
+### Step 5: Schema di Navigazione
+
+Definisci la navigazione principale e secondaria:
+
+**Navigazione Principale (desktop):**
+```
+Logo | Link1 | Link2 | Link3 | [CTA Button]
+```
+
+**Navigazione Mobile:**
+```
+Logo | [Hamburger]
+  └── Drawer/Menu a tutto schermo con stessi link
+```
+
+**Navigazione Footer:**
+```
+Colonna 1: Pagine principali
+Colonna 2: Risorse
+Colonna 3: Contatti + Social
+```
+
+### Step 6: URL Scheme e SEO Structure
+
+Definisci:
+- URL slug in italiano o inglese (coerente con il brief)
+- Gerarchia delle pagine (quale è la pagina di maggior peso SEO)
+- Internal linking strategy (quali pagine puntano a quali)
+- Pagine con potenziale per featured snippet (FAQ, how-to, comparazioni)
+
+### Step 7: Genera SITE-PLAN.md
+
+```markdown
+# SITE-PLAN.md — [Nome Progetto]
+
+**Data:** [data]
+**Basato su:** SITE-BRIEF.md
+**Stack:** [Percorso A/B/C da SITE-STACK.md]
+
+---
+
+## Sitemap Completa
+
+```
+[nome-sito]/
+├── /                          ← Home — [obiettivo]
+├── /[pagina-2]                ← [Nome] — [obiettivo]
+├── /[pagina-3]                ← [Nome] — [obiettivo]
+│   └── /[pagina-3/sotto]      ← [Nome] — [obiettivo]
+└── /[pagina-n]                ← [Nome] — [obiettivo]
+```
+
+**Pagine totali:** [n]
+**Template unici:** [n] (una homepage, una template interna, ecc.)
+
+---
+
+## Architettura di Navigazione
+
+### Navbar Principale
+```
+[Logo] | [Link 1] | [Link 2] | [Link 3] | [CTA: testo button]
+```
+
+### Footer
+```
+[Logo + tagline]
+Col 1: [link lista]     Col 2: [link lista]     Col 3: Contatti + Social
+[Copyright]
+```
+
+---
+
+## Wireframe Pagine
+
+[per ogni pagina, sezione dettagliata con layout e contenuti]
+
+---
+
+## Inventario Componenti
+
+| Componente | Tipo | Pagine | Stack Note |
+|-----------|------|--------|-----------|
+[tabella completa]
+
+---
+
+## Internal Linking Strategy
+
+[mappa di come le pagine si collegano tra loro]
+
+---
+
+## Note per il Design
+
+[vincoli estetici, mood richiesto, riferimenti visivi da SITE-BRIEF.md]
+
+---
+
+## Note per il Copy
+
+[tono di voce, parole chiave principali, lunghezza testi stimata per sezione]
+
+---
+
+## Note per il Build
+
+[componenti tecnici speciali, integrazioni, considerazioni stack-specific]
+
+---
+
+*Generato da /site plan — Digital Empire Site Creation System*
+```
+
+### Step 8: Aggiorna SITE-STATUS.md
+
+Segna Plan come completato. Indica prossimo passo: esegui `/site design` e `/site copy` in parallelo.
+
+---
+
+## Regole di Architettura
+
+- **Ogni pagina ha UNA sola CTA primaria** — nessuna pagina può avere due obiettivi ugualmente importanti
+- **Navbar massimo 5-6 voci** — più voci = paralisi della scelta
+- **Above the fold decide tutto** — il primo schermo di ogni pagina deve essere autoesplicativo
+- **Mobile-first nella struttura** — pensa prima a come funziona su 375px
+- **Sezioni nell'ordine CRO corretto:** Hero → Problema → Soluzione → Prova → Obiezioni → CTA → Footer
+- **URL slug semplici e descrittivi** — no ID numerici, no date nelle URL di pagine statiche

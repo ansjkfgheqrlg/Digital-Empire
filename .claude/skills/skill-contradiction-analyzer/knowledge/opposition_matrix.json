@@ -1,0 +1,44 @@
+﻿{
+  "version": "2.0.0",
+  "description": "Matrice di opposizione predicati — definisce le coppie di predicati opposti per rilevamento Categoria 1.",
+  "opposition_pairs": [
+    {"predicate_a": "usare", "predicate_b": "non usare", "type": "negation"},
+    {"predicate_a": "fare", "predicate_b": "non fare", "type": "negation"},
+    {"predicate_a": "includere", "predicate_b": "escludere", "type": "antonym"},
+    {"predicate_a": "attivare", "predicate_b": "disattivare", "type": "antonym"},
+    {"predicate_a": "abilitare", "predicate_b": "disabilitare", "type": "antonym"},
+    {"predicate_a": "aggiungere", "predicate_b": "rimuovere", "type": "antonym"},
+    {"predicate_a": "creare", "predicate_b": "eliminare", "type": "antonym"},
+    {"predicate_a": "salvare", "predicate_b": "eliminare", "type": "antonym"},
+    {"predicate_a": "aumentare", "predicate_b": "diminuire", "type": "antonym"},
+    {"predicate_a": "confermare", "predicate_b": "negare", "type": "antonym"},
+    {"predicate_a": "accettare", "predicate_b": "rifiutare", "type": "antonym"},
+    {"predicate_a": "validare", "predicate_b": "non validare", "type": "negation"},
+    {"predicate_a": "loggare", "predicate_b": "non loggare", "type": "negation"},
+    {"predicate_a": "processare", "predicate_b": "non processare", "type": "negation"},
+    {"predicate_a": "inviare", "predicate_b": "non inviare", "type": "negation"},
+    {"predicate_a": "trasmettere", "predicate_b": "bloccare", "type": "antonym"},
+    {"predicate_a": "aprire", "predicate_b": "chiudere", "type": "antonym"},
+    {"predicate_a": "avviare", "predicate_b": "fermare", "type": "antonym"},
+    {"predicate_a": "connettere", "predicate_b": "disconnettere", "type": "antonym"},
+    {"predicate_a": "caricare", "predicate_b": "scaricare", "type": "antonym"},
+    {"predicate_a": "crittografare", "predicate_b": "decrittografare", "type": "antonym"},
+    {"predicate_a": "comprimere", "predicate_b": "decomprimere", "type": "antonym"},
+    {"predicate_a": "iniziare", "predicate_b": "terminare", "type": "antonym"},
+    {"predicate_a": "permettere", "predicate_b": "vietare", "type": "antonym"},
+    {"predicate_a": "prioritizzare", "predicate_b": "ignorare", "type": "antonym"},
+    {"predicate_a": "ottimizzare", "predicate_b": "trascurare", "type": "antonym"}
+  ],
+  "modality_oppositions": [
+    ["MUST", "MUST_NOT"],
+    ["ALWAYS", "NEVER"],
+    ["SHOULD", "SHOULD_NOT"],
+    ["MUST", "NEVER"],
+    ["ALWAYS", "MUST_NOT"]
+  ],
+  "quantifier_oppositions": [
+    ["ALL", "NONE"],
+    ["ALL", "SOME"]
+  ]
+}
+

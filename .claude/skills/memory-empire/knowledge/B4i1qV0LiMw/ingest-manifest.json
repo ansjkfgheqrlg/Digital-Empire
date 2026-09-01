@@ -1,0 +1,47 @@
+{
+  "id": "B4i1qV0LiMw",
+  "kind": "youtube-video",
+  "title": "Claude Design È PAZZESCO: Ti Insegno A Usarlo Bene",
+  "url": "https://www.youtube.com/watch?v=B4i1qV0LiMw",
+  "uploader": "Giovanni Beggiato",
+  "channel": "Avanguardia+",
+  "duration_sec": 1414,
+  "duration_human": "23:34",
+  "frames_extracted": 707,
+  "frame_interval_sec": 2,
+  "ingested_at": "2026-06-09T21:34:10",
+  "analysis_completed_at": "2026-06-09",
+  "run_folder": "empire-studio/runs/run-20260609T213405/",
+  "artifacts": [
+    "contenuto-integrale.md",
+    "atoms.json",
+    "enrichment-report.md"
+  ],
+  "source_files": [
+    "runs/run-20260609T213405/ingest.json",
+    "runs/run-20260609T213405/video-analysis.md",
+    "runs/run-20260609T213405/B4i1qV0LiMw.it.vtt"
+  ],
+  "atoms_count": 16,
+  "chapters": [
+    {"start": 0, "title": "Introduction"},
+    {"start": 107, "title": "Claude Design Use Case (slides, carousels, landing page)"},
+    {"start": 283, "title": "Step 1"},
+    {"start": 464, "title": "How to build the Design System from scratch"},
+    {"start": 555, "title": "Step 2"},
+    {"start": 740, "title": "Step 3"},
+    {"start": 1014, "title": "How to use Skill Creator"},
+    {"start": 1243, "title": "End-to-end live demo"},
+    {"start": 1352, "title": "Step 4"}
+  ],
+  "topics": [
+    "Claude Design",
+    "Design System",
+    "skill-creator",
+    "featuresheet:cheat-skill",
+    "lead magnet LinkedIn",
+    "Social Media Manager Claude Code",
+    "self-check pattern",
+    "vibe design anti-pattern"
+  ]
+}

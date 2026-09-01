@@ -1,0 +1,11 @@
+ricordati che tu devi pensare solo a questa cartella, alla cartella Workflow pubblicazione automatica, devi agire soltanto in questo fonder. Non puoi uscire solo e uscire da questo fou Workspace  solo per acquisire contesto. Puoi uscire da questo folder solo per acquisire contesto e conoscenza. Non puoi modificare nient'altro al di fuori di questo folder Ovvero non puoi modificare nient'altro Che è al di fuori della cartella Tu lavori a in questa cartella solo in questa cartella  il tuo unico obiettivo e automatizzare La pubblicazione di tutti i miei contenuti.
+
+Tu hai Tre catene differenti:
+1. Pubblicazione dei caroselli Agency le trovi su drive E li devi pubblicare sulla pagina "digitalempireagency.e" 
+2. Pubblicazione dei reel Mentalità Brutale gli trovi sul drive E li devi pubblicare sulla pagina "mentalita.brutale" 
+3. Pubblicazione dei Caroselli Nella pagina Tiktok Codice dei potenti. Anche questi li trovi nel drive.
+4. Pubblicazioni Nella pagina Instagram Codice dei potenti Che è la stessa pagina Tic tok codice dei potenti Ma su Instagram e ogni volta che pubblichi sulla pagina Tiktok codice dei potenti, devi pubblicare anche nella pagina Instagram codice dei potenti, lo stesso identico carosello.
+5. Pubblicazione dei carotelli Agency Gli stessi che pubblichi nella pagina "digitalempireagency.e" Devi pubblicarli anche su linkedin.
+
+Tu lavori solamente su questo workspace Tutto il tuo lavoro È all'interno di questa cartella, è all'interno della cartella "Workflow pubblicazione automatica" E la tua unica missione Il tuo unico obiettivo è quello Di automatizzare la pubblicazione dei miei contenuti Automatizzare la pubblicazione dei contenuti della mia Agency, ovvero caroselli automatizzare la pubblicazione dei contenuti Della mia pagina mentalità brutale, Automatizzare i contenuti della mia pagina Tiktok Codice dei potenti Dove anche lì pubblico, caroselli (Per promuovere e vendere i miei Nella nicchia storia Antica) . Non devi mai editare Altri workspace. Non levi mai andare In altri workspace Puoi andarci solamente per acquisire contesto e conoscenza Ovvero magari per vedere qualche tecnica Python o qualche Metodo Python utilizzato in quegli altri metodi, quindi sempre per acquisirti Contesto o conoscenza Non puoi mai editare altri folder, altri workspace.
+

@@ -1,0 +1,16 @@
+{
+  "video_id": "uU3M_NJ70XE",
+  "title": "Claude Opus 4.8 è una Follia: 7 Casi d'Uso Reali (+ Prompt)",
+  "url": "https://www.youtube.com/watch?v=uU3M_NJ70XE",
+  "channel": "GabrySolution",
+  "duration_sec": 931,
+  "duration_hms": "15:31",
+  "ingested_at": "2026-06-08T15:17:48",
+  "frames_extracted": 466,
+  "frame_interval_sec": 2,
+  "analysis_method": "Claude Sonnet 4.6 native vision — 466 frames @ 2s intervals",
+  "chapters": 17,
+  "source_run": "empire-studio/runs/opus48-casi-uso",
+  "archived_at": "2026-06-08",
+  "archived_by": "memory-empire / ingestion-archive"
+}

@@ -1,0 +1,46 @@
+{
+  "prodotto": "Preventa",
+  "argomento": "tradurre a mano un annuncio tedesco e ricalcolare il prezzo in euro",
+  "titolo": "basta tradurre annunci tedeschi a mano",
+  "brand": "preventa",
+  "caption": "Importare auto dall'estero è un'opportunità, ma tradurre annunci tedeschi e ricalcolare i prezzi a mano è una tortura. 😩 Ogni minuto speso è un cliente che magari sta già parlando con un altro concessionario. Con Preventa, incolli il link e in pochi secondi hai un preventivo professionale, brandizzato e in italiano, con i tuoi prezzi bloccati. Niente più Excel disordinati o traduzioni maccheroniche. 🚀 Smettila di perdere tempo e vendite. Scopri come Preventa ti libera da questo incubo. 👇\n\n#preventa #concessionariauto #importauto #venditaauto #temporeale #clienti #efficienza #digitalempire #automotive",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "hook-cover",
+      "testo_piccolo": "ogni annuncio estero, un calcolo in più",
+      "testo_grande": "tradurre annunci tedeschi e ricalcolare: basta",
+      "testo_accent": "tradurre"
+    },
+    {
+      "numero": 2,
+      "tipo": "quote-block",
+      "testo_piccolo": "il problema reale di chi importa",
+      "testo_grande": "20-30 minuti per annuncio, il cliente aspetta",
+      "testo_accent": "minuti"
+    },
+    {
+      "numero": 3,
+      "tipo": "quote-block",
+      "testo_piccolo": "non solo traduzione, ma anche calcolo",
+      "testo_grande": "prezzi da convertire: un vero incubo",
+      "testo_accent": "incubo"
+    },
+    {
+      "numero": 4,
+      "tipo": "quote-block",
+      "testo_piccolo": "il tuo cliente cosa riceve?",
+      "testo_grande": "un excel sgrammaticato o un pdf professionale?",
+      "testo_accent": "sgrammaticato"
+    },
+    {
+      "numero": 5,
+      "tipo": "cta-finale",
+      "testo_piccolo": "smettila di tradurre e ricalcolare a mano",
+      "testo_grande": "incolla, clicca, vendi di più: seguici ora",
+      "testo_accent": "seguici"
+    }
+  ],
+  "generato_il": "2026-08-27",
+  "motore": "carousel-factory (render locale, Ramo C di CF-R5)"
+}

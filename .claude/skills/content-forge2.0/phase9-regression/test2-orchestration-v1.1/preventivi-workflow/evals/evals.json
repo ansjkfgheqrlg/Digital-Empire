@@ -1,0 +1,21 @@
+{
+  "skill_name": "preventivi-workflow",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/preventivo full cliente SaaS B2B"
+    },
+    {
+      "id": 2,
+      "prompt": "/preventivo ad cliente e-commerce"
+    },
+    {
+      "id": 3,
+      "prompt": "/preventivo sales-page coach"
+    },
+    {
+      "id": 4,
+      "prompt": "/preventivo email cliente startup"
+    }
+  ]
+}

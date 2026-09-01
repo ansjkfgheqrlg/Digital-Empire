@@ -1,0 +1,13 @@
+{
+  "agent_name": "<REPLACE>",
+  "model_under_test": "<REPLACE>",
+  "cases": [
+    {
+      "id": "happy-01",
+      "category": "happy",
+      "prompt": "<REPLACE>",
+      "expected_behavior": "<REPLACE>",
+      "assertions": []
+    }
+  ]
+}

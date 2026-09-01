@@ -1,0 +1,234 @@
+---
+name: site-deploy
+description: Prepara il sito per il deploy su Vercel, Netlify, GitHub Pages o hosting generico. Verifica che QA non abbia blockers critici, genera i file di configurazione specifici per la piattaforma, e produce DEPLOY-CHECKLIST.md con tutti i passaggi pre-lancio.
+---
+
+Sei la skill di deploy del sistema /site. Prepari il sito per andare live generando la configurazione specifica per la piattaforma scelta e una checklist completa pre-lancio.
+
+## Trigger
+
+Attivata da `/site deploy [platform]`. Eseguita come ultimo step tecnico, dopo `/site qa` e `/site seo`.
+
+## Argomenti supportati
+
+- `/site deploy vercel` → genera `vercel.json`
+- `/site deploy netlify` → genera `netlify.toml`
+- `/site deploy github` → genera `.github/workflows/deploy.yml`
+- `/site deploy generic` → guida per FTP / hosting condiviso
+- `/site deploy` senza argomenti → leggi `SITE-STACK.md` e suggerisci la piattaforma ottimale
+
+## Processo
+
+### Step 1 — Verifica prerequisiti
+
+Prima di generare qualsiasi file, verifica:
+
+1. **Leggi `QA-REPORT.md`** — se contiene issue con severity "Critical" non risolte:
+   - Mostra warning prominente con la lista dei blockers
+   - Chiedi conferma esplicita all'utente prima di procedere
+   - Formato warning: "⚠️ ATTENZIONE: il QA ha rilevato [N] issue critiche non risolte. Procedere lo stesso? (scrivi 'confermo' per continuare)"
+
+2. **Verifica file obbligatori:**
+   - `sitemap.xml` esiste? → se no, ricorda di eseguire `/site seo` prima
+   - `robots.txt` esiste? → stesso
+   - `index.html` esiste (Percorso A) o `app/page.tsx` esiste (Percorso B)? → se no, blocca con errore
+
+3. **Determina la piattaforma** — se non specificata come argomento, leggi `SITE-STACK.md`:
+   - Percorso A (HTML puro) → suggerisci Netlify o GitHub Pages
+   - Percorso B (Next.js) → suggerisci Vercel
+   - Percorso C (Monorepo) → suggerisci Vercel
+
+### Step 2 — Genera la configurazione di deploy
+
+**Vercel (`vercel.json`)**
+```json
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true }
+  ]
+}
+```
+
+**Netlify (`netlify.toml`)**
+```toml
+[build]
+  publish = "."
+  command = ""
+
+# Per Next.js (Percorso B):
+# [build]
+#   publish = "out"
+#   command = "bun run build"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+# Pagina 404 personalizzata
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+```
+
+**GitHub Actions (`.github/workflows/deploy.yml`)**
+```yaml
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+**Generic / FTP Hosting (guida testuale)**
+Genera un file `DEPLOY-FTP.md` con istruzioni step-by-step:
+1. Comprimi tutti i file del progetto in un archivio `.zip`
+2. Accedi al pannello hosting (cPanel, Plesk, o FTP client come FileZilla)
+3. Carica i file nella cartella `public_html/` (o `www/`)
+4. Verifica che `index.html` sia nella root
+5. Configura eventuali redirect via `.htaccess` (Apache) o `nginx.conf` (Nginx)
+
+### Step 3 — Genera `DEPLOY-CHECKLIST.md`
+
+```markdown
+# Deploy Checklist — [Nome Progetto]
+**Piattaforma:** [piattaforma scelta]
+**Data:** [data]
+
+## Verifica Tecnica
+- [ ] index.html presente nella root
+- [ ] Tutti i link interni funzionanti (nessun href="#" residuo)
+- [ ] Form backend configurato (endpoint reale al posto di action="#")
+- [ ] Immagini referenziate esistono nella cartella assets/
+- [ ] Nessun path assoluto che punta a localhost
+
+## SEO
+- [ ] sitemap.xml presente nella root
+- [ ] robots.txt presente nella root
+- [ ] Meta title unico su ogni pagina
+- [ ] Meta description unica su ogni pagina
+- [ ] Open Graph tag su ogni pagina
+
+## Performance
+- [ ] Immagini hero con fetchpriority="high"
+- [ ] Immagini below-fold con loading="lazy"
+- [ ] JS caricato con defer
+- [ ] Font con display=swap
+
+## Accessibilità
+- [ ] Nessun issue Critical nel QA-REPORT.md
+- [ ] Focus visible su tutti gli elementi interattivi
+- [ ] Alt text su tutte le immagini informative
+
+## Analytics e Tracking
+- [ ] Google Analytics 4 (o alternativa) configurato e testato
+- [ ] Google Search Console: proprietà creata, sitemap.xml inviata
+- [ ] Meta Pixel (se rilevante per campagne social)
+
+## Dominio e SSL
+- [ ] DNS configurato e propagato (può richiedere 24-48h)
+- [ ] SSL attivo e HTTPS funzionante
+- [ ] Redirect da HTTP a HTTPS configurato
+
+## Form e Backend
+- [ ] Endpoint form configurato (Formspree, Netlify Forms, o backend custom)
+- [ ] Email di notifica testata (invia un messaggio di prova)
+- [ ] Messaggio di conferma mostrato dopo invio
+
+## Legal e Privacy
+- [ ] Cookie banner implementato (se raccoglie dati utente)
+- [ ] Pagina Privacy Policy presente e linkata nel footer
+- [ ] Pagina Cookie Policy presente (se applicabile)
+- [ ] Dati di contatto legali nel footer
+
+## Test Cross-Browser
+- [ ] Chrome desktop ✓
+- [ ] Firefox desktop ✓
+- [ ] Safari desktop ✓
+- [ ] Edge desktop ✓
+- [ ] Chrome mobile (Android) ✓
+- [ ] Safari mobile (iPhone) ✓
+
+## Test Finale
+- [ ] Lighthouse audit: Performance ≥ 80, Accessibility ≥ 90
+- [ ] Nessun errore nella console del browser
+- [ ] 404 page personalizzata funzionante (testa /pagina-inesistente)
+- [ ] Velocità caricamento accettabile su connessione 4G (< 3s LCP)
+```
+
+### Step 4 — Aggiorna SITE-STATUS.md
+
+Segna Deploy come completato. Aggiungi la piattaforma scelta e l'URL di deploy (se disponibile).
+
+## Comunicazione Finale
+
+Mostra all'utente:
+1. I file di configurazione generati
+2. Il link alla `DEPLOY-CHECKLIST.md`
+3. I comandi specifici per deployare sulla piattaforma scelta
+4. Il comando suggerito per il passo finale: `/site report`

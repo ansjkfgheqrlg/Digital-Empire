@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;1,400;1,700&family=Space+Mono:wght@400;700&display=swap');
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  width:1080px;height:1350px;
+  background:
+    radial-gradient(ellipse at 90% 3%, rgba(210,42,4,.72) 0%, rgba(155,20,0,.40) 18%,
+                    rgba(80,8,0,.10) 42%, transparent 60%),
+    #0A0A0A;
+  position:relative;overflow:hidden;
+  font-family:'Space Grotesk',system-ui,sans-serif;
+  color:#fff;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* grain */
+body::before{
+  content:'';position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23g)' opacity='1'/%3E%3C/svg%3E") repeat;background-size:300px 300px;
+  opacity:.11;mix-blend-mode:screen;
+}
+
+/* slide shell */
+.slide{
+  width:1080px;height:1350px;
+  padding:60px 80px 54px;
+  display:flex;flex-direction:column;
+  position:relative;z-index:1;
+}
+
+/* red serif italic accent */
+.acc{
+  font-family:'Playfair Display',Georgia,serif;
+  font-style:italic;font-weight:400;
+  color:#FF3D00;font-size:inherit;
+  line-height:inherit;letter-spacing:-.01em;
+}
+
+/* topbar */
+.topbar{display:flex;align-items:center;flex-shrink:0;margin-bottom:0;}
+
+/* tag pill */
+.tag{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid rgba(255,255,255,.18);border-radius:999px;
+  padding:8px 18px 8px 13px;width:fit-content;
+  font-size:11.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
+  color:rgba(255,255,255,.78);background:rgba(255,255,255,.03);
+}
+.ti{font-size:12px;}
+
+/* content */
+.content{flex:1;display:flex;flex-direction:column;justify-content:center;gap:26px;}
+
+/* bottombar */
+.bottombar{display:flex;justify-content:space-between;align-items:flex-end;padding-top:14px;}
+.bl{display:flex;flex-direction:column;gap:3px;}
+.counter{font-size:13px;color:rgba(255,255,255,.32);font-weight:500;letter-spacing:.05em;}
+.swipe{font-size:12px;color:rgba(255,255,255,.28);}
+
+/* logo */
+.logo-block{display:flex;align-items:center;gap:9px;}
+.e-icon{
+  width:36px;height:36px;flex-shrink:0;
+  background:linear-gradient(145deg,#FF5200 0%,#CC1A00 100%);
+  border-radius:8px;display:flex;align-items:center;justify-content:center;
+  font-size:16px;font-weight:900;color:#fff;
+}
+.lt{font-size:13.5px;font-weight:600;color:rgba(255,255,255,.88);}
+
+/* typography */
+h1{font-size:100px;font-weight:800;line-height:.95;letter-spacing:-.03em;color:#fff;}
+h2{font-size:80px;font-weight:800;line-height:.97;letter-spacing:-.03em;color:#fff;}
+h3{font-size:52px;font-weight:800;line-height:1.0;letter-spacing:-.025em;color:#fff;}
+.sub{font-size:20px;color:rgba(255,255,255,.46);font-weight:400;line-height:1.55;}
+
+/* divider */
+.hr{width:100%;height:1px;background:rgba(255,255,255,.1);}
+
+/* mono label */
+.mono{
+  font-family:'Space Mono',monospace;font-size:11px;
+  color:rgba(255,255,255,.28);letter-spacing:.18em;text-transform:uppercase;
+}
+
+/* arrow list (problem) */
+.arr-list{display:flex;flex-direction:column;}
+.arr-item{
+  display:flex;align-items:baseline;gap:16px;
+  padding:16px 0;border-bottom:1px solid rgba(255,255,255,.05);
+}
+.arr-item:last-child{border-bottom:none;padding-bottom:0;}
+.arr{color:#FF3D00;font-size:17px;flex-shrink:0;font-weight:700;}
+.arr-text{font-size:19px;line-height:1.45;color:rgba(255,255,255,.80);}
+.arr-text strong{font-weight:700;color:#fff;}
+
+/* steps (how-it-works) */
+.steps{display:flex;flex-direction:column;gap:8px;}
+.step-row{
+  display:flex;align-items:center;gap:24px;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);
+  border-radius:14px;padding:20px 26px;
+}
+.step-num{
+  font-family:'Playfair Display',serif;font-style:italic;font-weight:400;
+  font-size:42px;color:#FF3D00;line-height:1;min-width:50px;flex-shrink:0;
+}
+.step-vl{width:1px;height:46px;background:rgba(255,255,255,.1);flex-shrink:0;}
+.step-body{flex:1;}
+.step-title{font-size:20px;font-weight:700;margin-bottom:3px;color:#fff;}
+.step-desc{font-size:15px;color:rgba(255,255,255,.44);line-height:1.5;}
+
+/* stat grids */
+.sg3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;}
+.sg2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.stat-box{
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);
+  border-radius:13px;padding:22px 18px;
+}
+.slabel{font-family:'Space Mono',monospace;font-size:10px;color:rgba(255,255,255,.3);
+         letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px;}
+.snum{font-size:54px;font-weight:800;line-height:1;letter-spacing:-.03em;color:#fff;}
+.snum.red{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;color:#FF3D00;}
+.sdesc{font-size:12.5px;color:rgba(255,255,255,.35);margin-top:8px;line-height:1.4;}
+
+/* product card (solution) */
+.prod-card{
+  background:linear-gradient(145deg,rgba(240,200,170,.18) 0%,rgba(180,90,50,.11) 55%,rgba(80,30,10,.07) 100%);
+  border:1px solid rgba(255,180,120,.14);border-radius:18px;padding:30px 34px;
+}
+.prod-chip{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,61,0,.13);border:1px solid rgba(255,61,0,.28);border-radius:999px;
+  padding:5px 13px;font-size:10.5px;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:#FF3D00;margin-bottom:14px;
+}
+.prod-title{font-size:26px;font-weight:800;line-height:1.2;margin-bottom:12px;}
+.prod-desc{font-size:15px;color:rgba(255,255,255,.50);line-height:1.6;margin-bottom:18px;}
+.chk-list{display:flex;flex-direction:column;gap:9px;}
+.chk-item{display:flex;align-items:flex-start;gap:10px;font-size:15px;line-height:1.4;color:rgba(255,255,255,.80);}
+.chk-mark{color:#FF3D00;font-size:13px;margin-top:2px;flex-shrink:0;}
+.chk-s{font-weight:700;color:#fff;}
+.prod-foot{
+  margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.07);
+  font-family:'Space Mono',monospace;font-size:11px;color:rgba(255,255,255,.25);
+  letter-spacing:.07em;text-transform:uppercase;
+}
+
+/* checklist (differentiator) */
+.diff-rows{display:flex;flex-direction:column;}
+.diff-row{
+  display:flex;align-items:center;gap:16px;
+  padding:15px 0;border-bottom:1px solid rgba(255,255,255,.05);
+}
+.diff-row:last-child{border-bottom:none;}
+.diff-icon{
+  width:30px;height:30px;border:1px solid rgba(255,61,0,.3);border-radius:7px;
+  display:flex;align-items:center;justify-content:center;font-size:12px;
+  color:#FF3D00;flex-shrink:0;background:rgba(255,61,0,.06);
+}
+.diff-text{font-size:19px;color:rgba(255,255,255,.82);line-height:1.3;}
+
+/* pricing card (cta) */
+.pricing{
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
+  border-radius:16px;padding:26px 30px;
+}
+.plabel{font-family:'Space Mono',monospace;font-size:10px;color:rgba(255,255,255,.28);
+         letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px;}
+.prow{display:flex;align-items:baseline;gap:14px;margin-bottom:8px;}
+.pold{font-size:24px;font-weight:400;color:rgba(255,255,255,.2);text-decoration:line-through;}
+.pnew{font-size:46px;font-weight:800;color:#fff;letter-spacing:-.03em;}
+.pbadge{
+  background:#FF3D00;color:#fff;font-size:12.5px;font-weight:800;
+  padding:4px 9px;border-radius:6px;letter-spacing:.04em;
+}
+.pdesc{font-family:'Space Mono',monospace;font-size:11.5px;color:rgba(255,255,255,.28);
+        letter-spacing:.06em;}
+
+/* cta button */
+.cta-btn{
+  background:linear-gradient(95deg,rgba(255,255,255,.88) 0%,rgba(255,110,40,.82) 100%);
+  border-radius:14px;padding:22px 36px;text-align:center;
+  font-size:19px;font-weight:800;color:#0A0A0A;letter-spacing:.05em;text-transform:uppercase;
+}
+.cta-sub{font-size:12.5px;color:rgba(255,255,255,.28);text-align:center;margin-top:9px;}
+
+/* quote (truth slide) */
+.quote{
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:17px;color:rgba(255,255,255,.38);
+  line-height:1.65;text-align:center;padding:0 12px;
+}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="topbar"><div class="tag"><span class="ti">⏱</span>IL PROBLEMA</div></div>
+  <div class="content">
+
+    <h2>Ogni post ti ruba <span class="acc">3 ore.</span><br>E lo sai.</h2>
+    <div class='mono'>Ogni settimana succede questo</div>
+    <div class="arr-list"><div class="arr-item"><div class="arr">&rarr;</div><div class="arr-text"><strong>Cerchi idee,</strong> scrolli per ore.</div></div><div class="arr-item"><div class="arr">&rarr;</div><div class="arr-text"><strong>Scrivi il copy,</strong> riscrivi 4 volte.</div></div><div class="arr-item"><div class="arr">&rarr;</div><div class="arr-text"><strong>Pubblichi tardi,</strong> perdi il momento.</div></div></div>
+  </div>
+  
+<div class="bottombar">
+  <div class="bl">
+    <div class="counter">2/8</div>
+    <div class="swipe">swipe &rarr;</div>
+  </div>
+  <div class="logo-block"><div class="e-icon">E</div><span class="lt">Digital Empire</span></div>
+</div>
+</div>
+</body>
+</html>

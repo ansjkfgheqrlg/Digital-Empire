@@ -1,6 +1,6 @@
 ---
-name: book-optimizer
-description: >
+name: book-optimizer-skill
+description: "Sistema editoriale in 3 fasi che trasforma un libro completo in una versione nettamente migliore. AUDIT (legge tutto e produce un backlog di miglioramenti prioritizzato), REVISE (applica i miglioramenti al testo integrale), PERFECT (riscrive con struttura, formattazione e rifinitura ottimali). Ogni fase si ferma e attende approvazione. Usala quando l'utente ha un manoscritto, un ebook o un libro da revisionare, migliorare, riscrivere o preparare alla pubblicazione."
 ---
 
 # Book Optimizer — 3-Phase Editorial System

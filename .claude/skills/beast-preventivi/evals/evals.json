@@ -1,0 +1,41 @@
+{
+  "skill_name": "beast-preventivi",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ho una call domani con un cliente e-commerce che vuole una landing page. In discovery mi ha detto che spende 500€/mese in Google ADS ma 'non arrivano clienti'. Budget non ancora definito. Come struturo il preventivo?",
+      "expected_output": "Guida alla struttura del preventivo per cliente e-commerce con problema 'ADS non converte'. Deve includere: identificazione del cliente come 'aware' (sa di avere un problema), struttura 8 sezioni con focus sulla sezione problema usando le parole del cliente, suggerimento per qualificare il budget in call, suggerimento pricing 3 opzioni con range orientativo, reminder presentazione in call.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Un cliente mi scrive su WhatsApp: 'Ciao, quanto costa una landing page?' Come rispondo?",
+      "expected_output": "Script di risposta che NON dà il prezzo ma invita a una call di discovery. Spiegazione del perché non dare mai il prezzo senza discovery (anti-pattern AP-02). Testo del messaggio pronto da inviare — breve, professionale, che apre alla call.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Ho appena finito una discovery call con Sara, titolare di uno studio dentistico a Milano. Vuole una landing page per acquisire nuovi pazienti per impianti dentali. Budget indicato: 'qualcosa tra 1.500 e 2.000€'. Ha detto 'il mio sito è datato e non mi porta pazienti'. Cliente consapevole del problema. Costruiamo il preventivo.",
+      "expected_output": "Preventivo quasi completo per studio dentistico: cover, USP con social proof specifico per healthcare/professionale, sezione problema usando le parole di Sara ('sito datato, non porta pazienti'), risultati attesi in termini di lead/pazienti mensili, 3 opzioni di pricing con Mid intorno a 1.800€, deliverables dettagliati, CTA con scadenza 7 gg. Nessuna voce di fattura — macro-deliverables per outcome.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Ho mandato il preventivo ieri (opzione Mid: 2.200€) e il cliente mi risponde: 'Interessante ma è un po' tanto. Potreste fare 1.800€?' Come rispondo?",
+      "expected_output": "Script di risposta per gestire obiezione prezzo senza fare sconto diretto. Opzioni: (1) proporre riduzione scope sull'opzione Essenziale adattata, (2) difendere il valore dell'opzione Mid con riferimento al calcolo del problema, (3) chiedere cosa si aspettava per capire il gap di valore percepito. Nessuna concessione immediata sul prezzo. Tono professionale, non difensivo.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Non ho ancora fatto la discovery call. Ho solo un'email del cliente che dice 'vorrei rinnovare il mio sito, è vecchio e non mi piace più'. Come mi preparo per la discovery? Che domande faccio?",
+      "expected_output": "Guida alla discovery call per cliente 'unaware' (disagio generico senza problema identificato). Lista di 8-10 domande da fare in call, con focus su: capire il problema reale sotto 'voglio rinnovare il sito', identificare budget con tecnica dell'ancoraggio, qualificare se è decision maker, scoprire urgenza reale. Warning esplicito: non fare preventivo prima della discovery. Script di apertura call incluso.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Sono un'agenzia di landing page. Voglio capire quanto chiedere per una landing page per un'azienda di consulenza B2B che vuole acquisire lead per un servizio da 5.000€/cliente. Non ho ancora fatto discovery.",
+      "expected_output": "Range di pricing orientativo per B2B lead gen con ticket alto + reminder che il prezzo definitivo dipende dalla discovery (scope, urgenza, decision maker). Ragionamento value-based: calcola il valore di 1 lead per quel cliente (pochi lead con ticket alto = valore alto per ogni conversione). Suggerisce di fare discovery prima, con domande specifiche da fare. Range indicativo: 2.500-5.000€ con motivazione.",
+      "files": []
+    }
+  ]
+}

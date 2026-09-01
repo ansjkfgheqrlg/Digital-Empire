@@ -1,0 +1,32 @@
+[*] alertdialog is visible.
+
+=== FULL DIALOG HTML ===
+<div class="lb-k g-ge" tabindex="0" role="alertdialog" aria-labelledby=":6a" aria-describedby=":6a.msg" style="left: 359px; top: 262.5px;"><div class="lb-k-V lb-k-V-xt"><span class="lb-k-V-r" id=":6a" role="heading">Creare in una cartella condivisa?</span><span class="lb-k-V-va a-k-V-va-qd-j" role="button" tabindex="0" aria-label="Chiudi" data-tooltip="Chiudi"><svg class="a-k-V-va-qd" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" focusable="false" fill="currentColor"><polygon class="a-s-fa-Ha-pa" points="10,1.01 8.99,0 5,3.99 1.01,0 0,1.01 3.99,5 0,8.99 1.01,10 5,6.01 8.99,10 10,8.99 6.01,5 "></polygon></svg></span></div><div class="lb-k-x" id=":6a.msg">L'elemento creato verrà condiviso con le stesse persone della cartella selezionata.</div><div class="lb-k-Gb"><button name="cancel" tabindex="0">Annulla</button><button name="ok" class="h-De-Vb h-De-Y" tabindex="0">Crea e condividi</button></div></div>
+
+=== FOUND 3 BUTTON-LIKE ELEMENTS ===
+[
+  {
+    "index": 0,
+    "tagName": "SPAN",
+    "className": "lb-k-V-va a-k-V-va-qd-j",
+    "role": "button",
+    "text": "",
+    "outerHTML": "<span class=\"lb-k-V-va a-k-V-va-qd-j\" role=\"button\" tabindex=\"0\" aria-label=\"Chiudi\" data-tooltip=\"Chiudi\"><svg class=\"a-k-V-va-qd\" x=\"0px\" y=\"0px\" width=\"10px\" height=\"10px\" viewBox=\"0 0 10 10\" focusable=\"false\" fill=\"currentColor\"><polygon class=\"a-s-fa-Ha-pa\" points=\"10,1.01 8.99,0 5,3.99 1.01,0 0,1.01 3.99,5 0,8.99 1.01,10 5,6.01 8.99,10 10,8.99 6.01,5 \"></polygon></svg></span>"
+  },
+  {
+    "index": 1,
+    "tagName": "BUTTON",
+    "className": "",
+    "role": null,
+    "text": "Annulla",
+    "outerHTML": "<button name=\"cancel\" tabindex=\"0\">Annulla</button>"
+  },
+  {
+    "index": 2,
+    "tagName": "BUTTON",
+    "className": "h-De-Vb h-De-Y",
+    "role": null,
+    "text": "Crea e condividi",
+    "outerHTML": "<button name=\"ok\" class=\"h-De-Vb h-De-Y\" tabindex=\"0\">Crea e condividi</button>"
+  }
+]

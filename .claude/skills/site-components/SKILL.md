@@ -1,0 +1,170 @@
+---
+name: site-components
+description: Genera o rigenera componenti UI isolati. Utile per iterazione post-lancio senza ricostruire l'intero sito. Ogni componente è un file HTML standalone con CSS e JS inline, completamente funzionante nel browser.
+---
+
+Sei la skill di generazione componenti del sistema /site. Crei o rigeneri singoli componenti UI in isolamento, applicando il design system del progetto esistente. Utile per aggiungere nuove sezioni al sito dopo il build iniziale.
+
+## Trigger
+
+Attivata da `/site components [nome-componente]`. Usabile in qualsiasi momento dopo `/site design` e `/site build`.
+
+## Componenti riconosciuti
+
+| Argomento | Componente Generato |
+|---|---|
+| `navbar` | Navbar responsive con hamburger menu e dropdown |
+| `hero` | Sezione hero con headline, subheadline, CTA, immagine |
+| `features` | Griglia feature card con icone |
+| `pricing` | Tabella prezzi con toggle mensile/annuale |
+| `testimonials` | Sezione testimonial con carousel o grid |
+| `faq` | Accordion FAQ con animazione apertura/chiusura |
+| `contact` | Form di contatto con validazione |
+| `footer` | Footer con colonne link e social |
+| `cta-banner` | Sezione CTA con background colorato |
+| `team` | Griglia team card con foto e bio |
+| `gallery` | Portfolio/gallery con lightbox |
+| `stats` | Sezione statistiche con counter animation |
+
+Se l'argomento non corrisponde a nessuno di questi, interpreta l'intenzione e genera il componente più appropriato — oppure chiedi chiarimento se l'intenzione è ambigua.
+
+## Processo
+
+### Step 1 — Leggi il design system esistente
+1. Leggi `SITE-DESIGN.md` — filosofia visiva, palette, tipografia, specifiche componenti
+2. Leggi `css/design-tokens.css` — nomi esatti delle custom properties
+3. Leggi la sezione rilevante di `SITE-COPY.md` — usa i testi già scritti per il componente richiesto
+4. Leggi `SITE-BUILD.md` — per capire cosa esiste già e non duplicare
+
+Se questi file non esistono nella CWD, segnala all'utente che il design system non è stato ancora generato e suggerisci di eseguire prima `/site design`.
+
+### Step 2 — Genera il componente
+
+Crea `components/[nome-componente].html` come file HTML standalone:
+- `<style>` inline nell'head con le regole CSS del componente (importa design-tokens.css)
+- `<script>` in fondo al body con il JS necessario (se il componente è interattivo)
+- Il file funziona aprendo direttamente nel browser senza server
+
+**Struttura base del file standalone:**
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componente: [Nome]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="[Google Fonts URL con &display=swap]" rel="stylesheet">
+  <link rel="stylesheet" href="../css/design-tokens.css">
+  <style>
+    /* Stili specifici del componente */
+  </style>
+</head>
+<body>
+
+  <!-- COMPONENTE: [NOME] -->
+  [HTML del componente]
+  <!-- /COMPONENTE -->
+
+  <script>
+    // JS del componente (se necessario)
+  </script>
+</body>
+</html>
+```
+
+### Step 3 — Specifiche per ogni componente
+
+**navbar**
+- Logo (testo o placeholder SVG), nav links dal piano, CTA button
+- Hamburger button per mobile con aria-expanded
+- CSS: sticky, cambio sfondo allo scroll via JS, transizioni hover
+- JS: toggle mobile menu, keyboard navigation, close on Escape
+
+**hero**
+- H1 dalla sezione HERO COPY di SITE-COPY.md (homepage)
+- Subheadline e CTA primario + secondario
+- Immagine con fetchpriority="high", width/height espliciti
+- Varianti: hero centrato, hero split (testo sinistra + immagine destra), hero con video background
+
+**features**
+- Grid 3 colonne (2 su tablet, 1 su mobile)
+- Ogni card: icona SVG + titolo + testo benefit
+- Testo da sezione Features di SITE-COPY.md
+- Hover effect: card si solleva (transform: translateY)
+
+**pricing**
+- Toggle mensile/annuale con switch CSS + JS
+- 2-3 card affiancate, quella "featured" con bordo accent e badge "Più popolare"
+- Lista features con checkmark SVG
+- CTA per ogni piano
+- Attributi data-monthly / data-annual sui prezzi per il toggle JS
+
+**testimonials**
+- Grid 3 colonne su desktop, 1 su mobile
+- Ogni card: citazione in `<blockquote>`, avatar (cerchio), nome + ruolo
+- Variante carousel: frecce prev/next, dots indicator, swipe touch su mobile
+- Default: grid statica (più semplice e accessibile)
+
+**faq**
+- Usa `<details>/<summary>` HTML nativo per accessibilità base
+- JS aggiunge: animazione smooth dell'apertura, comportamento accordion (chiude gli altri)
+- `aria-expanded` aggiornato dinamicamente
+- Domande da sezione FAQ di SITE-COPY.md
+
+**contact**
+- Campi: nome, email, telefono (opzionale), messaggio, submit
+- Ogni input ha `<label>` associato (non solo placeholder)
+- Validazione JS client-side con messaggi di errore inline
+- `novalidate` sul form + validazione custom per UX migliore
+- `action="#"` come placeholder — commento che indica di configurare l'endpoint
+
+**footer**
+- Layout grid: colonne link + colonna brand/social
+- Testo copyright con anno dinamico via JS
+- Social icons: SVG inline
+- Link da SITE-PLAN.md, testo da SITE-COPY.md
+
+**cta-banner**
+- Background con colore primario o gradiente accent
+- Headline grande, subheadline che rimuove obiezioni, CTA button
+- Opzione: pattern di sfondo sottile (dots, lines, noise)
+
+**team**
+- Grid card con foto (placeholder aspect-ratio 1:1), nome, ruolo, bio breve
+- Hover: overlay con link social (LinkedIn, email)
+- Variante: card orizzontali per team numerosi
+
+**gallery**
+- Grid masonry o grid uniforme
+- Click apre lightbox: overlay scuro, immagine grande, frecce navigazione, close button
+- Keyboard navigation nel lightbox (frecce, Escape per chiudere)
+- `loading="lazy"` su tutte le immagini della gallery
+
+**stats**
+- Griglia di numeri grandi con label
+- Counter animation con IntersectionObserver (conta up quando entra nel viewport)
+- Rispetta prefers-reduced-motion: mostra il numero finale direttamente senza animazione
+
+### Step 4 — Aggiorna SITE-BUILD.md
+
+Aggiungi il componente al registro:
+```markdown
+## Componenti Aggiuntivi (post-build)
+- `components/[nome].html` — [descrizione breve] — aggiunto il [data]
+```
+
+## Regole
+
+- Il file HTML standalone deve funzionare aprendo nel browser **senza server** e **senza build step**
+- Usa sempre i colori e i font dai design-tokens.css del progetto — mai colori hardcoded
+- Il testo viene da SITE-COPY.md — mai placeholder generici se il copy esiste
+- Ogni componente è **autonomo**: porta con sé tutto il CSS e JS necessario
+- Accessibilità: aria attributes, keyboard navigation, focus management — standard uguale agli agenti QA
+
+## Comunicazione Finale
+
+Al termine mostra:
+1. Il percorso del file generato
+2. Come aprirlo nel browser per preview
+3. Come integrarlo nel sito: snippet di codice da incollare nella pagina HTML target

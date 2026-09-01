@@ -1,6 +1,6 @@
 ---
 name: copy-architect
-description: Generatore di descrizioni e caption ad alto tasso di conversione per i caroselli ed i social.
+description: "Generatore di caption e descrizioni ad alto tasso di conversione per caroselli, Reels e post social di Digital Empire e Mentalita Brutale. Applica la regola 90/10 (90 per cento valore educativo, 10 per cento vendita), la struttura Hook, Corpo, Drop-off, CTA verso la Briefing Call gratuita, e il tone of voice DE. Usala quando serve scrivere o riscrivere la caption di un contenuto social gia prodotto."
 ---
 # Copy Architect Skill
 

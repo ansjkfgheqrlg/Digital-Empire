@@ -1,0 +1,102 @@
+﻿{
+  "version": "2.0.0",
+  "description": "Thesaurus di sinonimi e antonimi per italiano e inglese. Usato dal synonym_resolver per normalizzare predicati e rilevare opposizioni semantiche.",
+  "synonym_groups": [
+    {
+      "id": "CREATE",
+      "canonical": "creare",
+      "variants": ["creare", "generare", "produrre", "costruire", "realizzare", "formare", "sviluppare", "Generate", "Create", "Produce", "Build", "Make", "Develop", "Construct"]
+    },
+    {
+      "id": "VALIDATE",
+      "canonical": "validare",
+      "variants": ["validare", "verificare", "controllare", "testare", "convalidare", "ispezionare", "Validate", "Verify", "Check", "Test", "Inspect", "Confirm"]
+    },
+    {
+      "id": "SEND",
+      "canonical": "inviare",
+      "variants": ["inviare", "spedire", "trasmettere", "mandare", "inoltrare", "trasferire", "Send", "Transmit", "Forward", "Transfer", "Dispatch"]
+    },
+    {
+      "id": "DELETE",
+      "canonical": "eliminare",
+      "variants": ["eliminare", "cancellare", "rimuovere", "distruggere", "cestinare", "cancellare", "Delete", "Remove", "Destroy", "Wipe", "Erase", "Purge"]
+    },
+    {
+      "id": "FETCH",
+      "canonical": "recuperare",
+      "variants": ["recuperare", "ottenere", "prendere", "prelevare", "caricare", "Fetch", "Get", "Retrieve", "Load", "Pull", "Obtain"]
+    },
+    {
+      "id": "STORE",
+      "canonical": "salvare",
+      "variants": ["salvare", "memorizzare", "archiviare", "persistere", "registrare", "Save", "Store", "Persist", "Archive", "Record", "Write"]
+    },
+    {
+      "id": "LOG",
+      "canonical": "loggare",
+      "variants": ["loggare", "registrare", "tracciare", "monitorare", "Log", "Record", "Track", "Monitor", "Trace", "Audit"]
+    },
+    {
+      "id": "EXECUTE",
+      "canonical": "eseguire",
+      "variants": ["eseguire", "avviare", "lanciare", "run", "attivare", "Execute", "Run", "Launch", "Start", "Trigger", "Perform"]
+    },
+    {
+      "id": "STOP",
+      "canonical": "fermare",
+      "variants": ["fermare", "interrompere", "bloccare", "terminare", "arrestare", "Stop", "Halt", "Block", "Terminate", "Abort", "Cancel"]
+    },
+    {
+      "id": "FORMAT",
+      "canonical": "formattare",
+      "variants": ["formattare", "strutturare", "organizzare", "impaginare", "Format", "Structure", "Organize", "Layout", "Arrange"]
+    },
+    {
+      "id": "ENCRYPT",
+      "canonical": "crittografare",
+      "variants": ["crittografare", "cifrare", "codificare", "proteggere", "Encrypt", "Encode", "Cipher", "Protect", "Secure"]
+    },
+    {
+      "id": "COMPRESS",
+      "canonical": "comprimere",
+      "variants": ["comprimere", "ridurre", "minimizzare", "ottimizzare", "Compress", "Reduce", "Minimize", "Optimize", "Shrink", "Compact"]
+    }
+  ],
+  "antonym_pairs": [
+    ["creare", "eliminare"],
+    ["includere", "escludere"],
+    ["attivare", "disattivare"],
+    ["abilitare", "disabilitare"],
+    ["aggiungere", "rimuovere"],
+    ["aumentare", "diminuire"],
+    ["aprire", "chiudere"],
+    ["avviare", "fermare"],
+    ["connettere", "disconnettere"],
+    ["caricare", "scaricare"],
+    ["salvare", "eliminare"],
+    ["confermare", "negare"],
+    ["accettare", "rifiutare"],
+    ["crittografare", "decrittografare"],
+    ["comprimere", "decomprimere"],
+    ["permettere", "vietare"],
+    ["prioritizzare", "ignorare"],
+    ["create", "delete"],
+    ["include", "exclude"],
+    ["enable", "disable"],
+    ["add", "remove"],
+    ["increase", "decrease"],
+    ["open", "close"],
+    ["start", "stop"],
+    ["connect", "disconnect"],
+    ["upload", "download"],
+    ["save", "delete"],
+    ["confirm", "deny"],
+    ["accept", "reject"],
+    ["encrypt", "decrypt"],
+    ["compress", "decompress"],
+    ["allow", "forbid"],
+    ["prioritize", "ignore"]
+  ]
+}
+

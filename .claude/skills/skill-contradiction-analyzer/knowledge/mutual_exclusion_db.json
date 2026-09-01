@@ -1,0 +1,61 @@
+﻿{
+  "version": "2.0.0",
+  "description": "Database di coppie mutualmente esclusive: tool, formati, protocolli, pattern che non possono coesistere.",
+  "exclusive_groups": [
+    {
+      "id": "output_format",
+      "description": "Formati di output mutuamente esclusivi",
+      "members": ["JSON", "XML", "YAML", "CSV", "TOML", "HTML", "Plain Text", "Protobuf"],
+      "exclusivity": "strict"
+    },
+    {
+      "id": "http_library",
+      "description": "Librerie HTTP — tipicamente se ne usa una sola",
+      "members": ["fetch", "axios", "requests", "httpx", "got", "superagent", "node-fetch"],
+      "exclusivity": "soft"
+    },
+    {
+      "id": "serialization",
+      "description": "Formati di serializzazione",
+      "members": ["JSON.stringify", "XMLSerializer", "YAML.dump", "MessagePack", "protobuf.encode"],
+      "exclusivity": "strict"
+    },
+    {
+      "id": "database",
+      "description": "Tipi di database — tipicamente uno primario",
+      "members": ["PostgreSQL", "MySQL", "SQLite", "MongoDB", "Redis", "Elasticsearch", "DynamoDB"],
+      "exclusivity": "soft"
+    },
+    {
+      "id": "cache_strategy",
+      "description": "Strategie di caching incompatibili",
+      "members": ["cache-first", "network-first", "cache-only", "network-only"],
+      "exclusivity": "strict"
+    },
+    {
+      "id": "auth_method",
+      "description": "Metodi di autenticazione primari",
+      "members": ["OAuth2", "JWT", "API Key", "Basic Auth", "Session-based"],
+      "exclusivity": "soft"
+    },
+    {
+      "id": "logging_level_global",
+      "description": "Livelli di logging globali",
+      "members": ["DEBUG", "INFO", "WARN", "ERROR", "NONE"],
+      "exclusivity": "strict"
+    },
+    {
+      "id": "environment_mode",
+      "description": "Modalità ambiente",
+      "members": ["production", "development", "staging", "testing"],
+      "exclusivity": "strict"
+    },
+    {
+      "id": "error_strategy",
+      "description": "Strategie di gestione errori",
+      "members": ["fail-fast", "retry", "fallback", "ignore", "circuit-breaker"],
+      "exclusivity": "soft"
+    }
+  ]
+}
+

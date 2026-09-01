@@ -3,8 +3,8 @@
 # Regola (ADR-003): il codice/file RESTA dove si trova. Questo e' un registro, non uno spostamento.
 # Aggiorna questo file ogni volta che nasce una nuova skill o workflow.
 
-version: "1.1"
-updated: "2026-07-19"
+version: "1.2"
+updated: "2026-09-01"
 maintainer: "Chief-Forge (company/Board-CSuite/Chief-Forge.md)"
 # ADR-008: questa mappa + company/REGISTRO-IMPRESA.md = anagrafe unica.
 # Creare senza registrare = artefatto abusivo. Aggiornare = ultimo passo di ogni ciclo FORGE.
@@ -344,7 +344,6 @@ skills_and_workflows:
 
   # ── 07-FORGE / Skill + Agenti ────────────────────────────────
 
-  - id: skill-creator
     nome: Skill Creator (genera nuove skill)
     percorso: "SKILL & Agenti/SKILL/Skill - skill creator/"
     ecosistema: 07-FORGE
@@ -2383,3 +2382,880 @@ stats:
   knowledge: 9
   da_classificare: 3
   aggiornamento: "2026-07-22 — +4 voci da Arena: andrei-pascu-system e 3 per Preventa (scraper, outreach pack, launch kit)"
+
+# ==========================================================
+# UFFICIALIZZAZIONE SKILL — 2026-09-01
+# Ogni skill sotto .claude/skills/ ha SKILL.md con frontmatter YAML valido,
+# name == nome cartella e description con trigger espliciti.
+# Gate: scripts/verify-skills.py --check  (0 errori su 170 skill)
+# ==========================================================
+
+ufficializzazione_skill:
+  data: "2026-09-01"
+  eseguita_da: Emperator (ordine di Max)
+  criterio: |
+    Una skill e' UFFICIALE quando:
+    1. esiste .claude/skills/<slug>/SKILL.md
+    2. il frontmatter YAML e' parsabile (nessun ': ' non quotato, nessun BOM)
+    3. name == nome della cartella
+    4. description dice COSA fa e QUANDO si attiva (>= 60 caratteri)
+  stats:
+    skill_progetto: 170
+    skill_globali_non_duplicate: 0
+    totale_ufficiali: 170
+    frontmatter_valido: 170
+    errori_residui: 0
+  scope:
+    progetto: .claude/skills/            # prevale sul globale a parita' di nome
+    globale: ~/.claude/skills/
+  skill:
+    - id: ab-testing
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Growth
+      stato: active
+    - id: ad-creative
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Produzione
+      stato: active
+    - id: ads
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Acquisition
+      stato: active
+    - id: agency-scalping
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Acquisizione
+      stato: active
+    - id: agent-architecture
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Agenti
+      stato: active
+    - id: agent-coder
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Agenti
+      stato: active
+    - id: agent-factory
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Agenti
+      stato: active
+    - id: agent-planner
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Agenti
+      stato: active
+    - id: agent-researcher
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Agenti
+      stato: active
+    - id: agent-reviewer
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Agenti
+      stato: active
+    - id: agent-specification
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Agenti
+      stato: active
+    - id: agent-tester
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Agenti
+      stato: active
+    - id: agente-max
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Agenti
+      stato: active
+    - id: ai-seo
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: SEO
+      stato: active
+    - id: analytics
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Growth
+      stato: active
+    - id: apex-7
+      scope: progetto
+      ecosistema: 08-INTELLIGENCE
+      reparto: Intelligence
+      stato: active
+    - id: aso
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Acquisition
+      stato: active
+    - id: avvia-email
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Acquisizione
+      stato: active
+    - id: avvia-estate-wk
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Acquisizione
+      stato: active
+    - id: avvia-ig
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Acquisizione
+      stato: active
+    - id: avvia-linkedin
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Acquisizione
+      stato: active
+    - id: avvia-outreach-preventa
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Acquisizione
+      stato: active
+    - id: avvia-parallel
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Acquisizione
+      stato: active
+    - id: avvia-scraper
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Acquisizione
+      stato: active
+    - id: beast-preventivi
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Vendita
+      stato: active
+    - id: book-optimizer-skill
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Publishing
+      stato: active
+    - id: book-to-skill
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Publishing
+      stato: active
+    - id: brand-guidelines
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Strategia
+      stato: active
+    - id: canvas-design
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Produzione
+      stato: active
+    - id: carousel-empire
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Produzione
+      stato: active
+    - id: case-study-forge
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Delivery
+      stato: active
+    - id: churn-prevention
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Growth
+      stato: active
+    - id: client-handover
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Delivery
+      stato: active
+    - id: co-marketing
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Acquisition
+      stato: active
+    - id: cold-email
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Acquisizione
+      stato: active
+    - id: community-marketing
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Acquisition
+      stato: active
+    - id: competitor-profiling
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Strategia
+      stato: active
+    - id: competitors
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Strategia
+      stato: active
+    - id: content-forge
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Skill-Factory
+      stato: active
+    - id: content-forge2.0
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Skill-Factory
+      stato: active
+    - id: content-strategy
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Produzione
+      stato: active
+    - id: copy-architect
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Copy
+      stato: active
+    - id: copy-editing
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Copy
+      stato: active
+    - id: copy-workflow
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Copy
+      stato: active
+    - id: copywriting
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Copy
+      stato: active
+    - id: cro
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: CRO
+      stato: active
+    - id: cro-call
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Vendita
+      stato: active
+    - id: cro-copy-architect
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: CRO
+      stato: active
+    - id: cro-copy-architect-knowledge-files
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: CRO
+      stato: active
+    - id: cro-funnel-architect.md
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: CRO
+      stato: active
+    - id: cro-ricerca
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: CRO
+      stato: active
+    - id: cro-short-form-script-engine
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: CRO
+      stato: active
+    - id: cro-strategy-social-(ig-tiktok)
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: CRO
+      stato: active
+    - id: cro-youtube-lead-magnet
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: CRO
+      stato: active
+    - id: customer-research
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Strategia
+      stato: active
+    - id: delivery-playbook
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Delivery
+      stato: active
+    - id: directory-submissions
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Acquisition
+      stato: active
+    - id: discovery-call-brief
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Vendita
+      stato: active
+    - id: emails
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Acquisition
+      stato: active
+    - id: empire-context
+      scope: progetto
+      ecosistema: 10-MEMORY
+      reparto: Memoria
+      stato: active
+    - id: empire-premium-style
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: empire-studio
+      scope: progetto
+      ecosistema: 10-MEMORY
+      reparto: Memoria
+      stato: active
+    - id: free-tools
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Acquisition
+      stato: active
+    - id: frontend-design
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Design
+      stato: active
+    - id: github-automation
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Runtime
+      stato: active
+    - id: graphify
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Runtime
+      stato: active
+    - id: hooks-automation
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Runtime
+      stato: active
+    - id: icp-radar
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Acquisizione
+      stato: active
+    - id: image
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Produzione
+      stato: active
+    - id: impeccable
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Runtime
+      stato: active
+    - id: launch
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Lanci
+      stato: active
+    - id: lead-magnets
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Acquisition
+      stato: active
+    - id: market
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-ads
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-audit
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-brand
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-competitors
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-copy
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-emails
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-funnel
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-landing
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-launch
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-proposal
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-report
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-report-pdf
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-seo
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: market-social
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Marketing Suite
+      stato: active
+    - id: marketing-ideas
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Strategia
+      stato: active
+    - id: marketing-psychology
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Strategia
+      stato: active
+    - id: master-app-builder
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Runtime
+      stato: active
+    - id: master-build-architecture
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Architettura
+      stato: active
+    - id: memory-empire
+      scope: progetto
+      ecosistema: 10-MEMORY
+      reparto: Memoria
+      stato: active
+    - id: memory-management
+      scope: progetto
+      ecosistema: 10-MEMORY
+      reparto: Memoria
+      stato: active
+    - id: nerve-solve
+      scope: progetto
+      ecosistema: 08-INTELLIGENCE
+      reparto: Intelligence
+      stato: active
+    - id: nuovo-concessionario
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Vendita
+      stato: active
+    - id: ocp-control-plane
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Runtime
+      stato: active
+    - id: omega-create
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Skill-Factory
+      stato: active
+    - id: onboarding
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Delivery
+      stato: active
+    - id: opus
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: outreach-reply-triage
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Acquisizione
+      stato: active
+    - id: pair-programming
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Runtime
+      stato: active
+    - id: paywalls
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Growth
+      stato: active
+    - id: playwright-dev
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Runtime
+      stato: active
+    - id: popups
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Growth
+      stato: active
+    - id: prd-architect-os
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Architettura
+      stato: active
+    - id: preventivo-auto
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Vendita
+      stato: active
+    - id: pricing
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Growth
+      stato: active
+    - id: printing-press
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Publishing
+      stato: active
+    - id: printing-press-amend
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Publishing
+      stato: active
+    - id: printing-press-catalog
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Publishing
+      stato: active
+    - id: printing-press-import
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Publishing
+      stato: active
+    - id: printing-press-output-review
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Publishing
+      stato: active
+    - id: printing-press-polish
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Publishing
+      stato: active
+    - id: printing-press-publish
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Publishing
+      stato: active
+    - id: printing-press-reprint
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Publishing
+      stato: active
+    - id: printing-press-retro
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Publishing
+      stato: active
+    - id: printing-press-score
+      scope: progetto
+      ecosistema: 02-INFO-BUSINESS
+      reparto: Publishing
+      stato: active
+    - id: product-marketing
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Strategia
+      stato: active
+    - id: programmatic-seo
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Acquisition
+      stato: active
+    - id: prompt-engegniring-skill
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Skill-Factory
+      stato: active
+    - id: proposal-gate
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Vendita
+      stato: active
+    - id: referrals
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Acquisition
+      stato: active
+    - id: revops
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Growth
+      stato: active
+    - id: ruflo
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Runtime
+      stato: active
+    - id: sales-enablement
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Strategia
+      stato: active
+    - id: schema
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: SEO
+      stato: active
+    - id: script-video-lancio-ccm
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Copy
+      stato: active
+    - id: seo-audit
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: SEO
+      stato: active
+    - id: signup
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Growth
+      stato: active
+    - id: site
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-3d
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-animate
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-architecture
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-brief
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-build
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-components
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-copy
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-deploy
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-design
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-plan
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-premium-stack
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-qa
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-report
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-seo
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: site-stack
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: skill-builder
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Skill-Factory
+      stato: active
+    - id: skill-contradiction-analyzer
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Skill-Factory
+      stato: active
+    - id: sms
+      scope: progetto
+      ecosistema: 04-MARKETING
+      reparto: Acquisition
+      stato: active
+    - id: social
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Distribuzione
+      stato: active
+    - id: social-publisher
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Distribuzione
+      stato: active
+    - id: sparc-methodology
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Architettura
+      stato: active
+    - id: stream-chain
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Runtime
+      stato: active
+    - id: support-90
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Delivery
+      stato: active
+    - id: swarm-advanced
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Architettura
+      stato: active
+    - id: swarm-orchestration
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Architettura
+      stato: active
+    - id: sync-wiki-totale
+      scope: progetto
+      ecosistema: 10-MEMORY
+      reparto: Wiki
+      stato: active
+    - id: system-promot-creator-project
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Skill-Factory
+      stato: active
+    - id: theme-factory
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Design
+      stato: active
+    - id: upsell-mapper
+      scope: progetto
+      ecosistema: 01-AGENCY
+      reparto: Delivery
+      stato: active
+    - id: verification-quality
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Governance
+      stato: active
+    - id: video
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Produzione
+      stato: active
+    - id: web-builder
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: website-creator
+      scope: progetto
+      ecosistema: 06-PLATFORM
+      reparto: Siti
+      stato: active
+    - id: wiki-context
+      scope: progetto
+      ecosistema: 10-MEMORY
+      reparto: Wiki
+      stato: active
+    - id: workflow-agency-creative
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Distribuzione
+      stato: active
+    - id: workflow-automation
+      scope: progetto
+      ecosistema: 07-FORGE
+      reparto: Architettura
+      stato: active
+    - id: workflow-pubblicazione-auto
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: Distribuzione
+      stato: active
+    - id: youtube-automation-factory
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: YouTube
+      stato: active
+    - id: youtube-channel-launch
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: YouTube
+      stato: active
+    - id: youtube-compliance-shield
+      scope: progetto
+      ecosistema: 03-CONTENT-FACTORY
+      reparto: YouTube
+      stato: active

@@ -1,6 +1,6 @@
 ---
 name: website-creator
-description: Generatore automatico di pagine web basato sul design system di Digital Empire.
+description: "Generatore automatico di pagine web basato sul design system di Digital Empire. Produce sempre vanilla HTML piu CSS piu JS in un singolo file, zero framework e zero build step, con standard estetico da art director di lusso. Usala quando serve un sito o una landing page autonoma, pronta ad aprirsi nel browser senza toolchain."
 ---
 # System Prompt — Website Creator System
 

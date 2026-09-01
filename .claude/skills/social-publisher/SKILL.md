@@ -1,6 +1,6 @@
 ---
 name: social-publisher
-description: Automatizza la pubblicazione dei contenuti approvati sui canali social di Digital Empire.
+description: "Automatizza la pubblicazione dei contenuti gia approvati sui canali social di Digital Empire (Instagram, TikTok e altri) tramite script Python deterministici e API aggregatrici. Verifica che media e caption esistano, esegue il push e restituisce l'URL del post. Usala quando una cartella post e pronta e va pubblicata, non per creare il contenuto."
 ---
 # Social Publisher Skill
 

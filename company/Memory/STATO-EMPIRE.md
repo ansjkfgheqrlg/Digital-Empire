@@ -1,3 +1,125 @@
+## 👑 2026-09-01 — EMPERATOR: 4 direttive di Max innestate in me stesso — CP-20260901-004
+
+Max ha ordinato un'auto-modifica. Toccati i due file che mi governano, e come impone la regola
+AUTO-MODIFICHE lo dichiaro qui in chiaro:
+
+- `scripts/emperator_hook.py` → blocco `DOTTRINA`, iniettato a **ogni** messaggio dentro
+  Digital Empire (hook `UserPromptSubmit` di progetto). +4 sezioni.
+- `.claude/agents/emperator.md` → nuove §6.5, §6.6, §6.7, §6.8. Da 420 a 526 righe.
+
+**Le 4 direttive, attive da subito:**
+
+1. **APRIRE.** «Dov'è X?» è un **ordine di apertura**, non una domanda di percorso: si apre la
+   cartella vera con `explorer.exe "/select,<path assoluto>"`. `explorer.exe` ritorna **sempre
+   `exit=1` anche quando riesce** (verificato oggi): non è un errore, non si ritenta.
+2. **UFFICIALIZZAZIONE.** Finita una creazione che funziona, ogni agente / skill / comando /
+   plugin va reso **ufficiale** — frontmatter Claude Code valido, anagrafe, wiki, Memory — e
+   **verificato** con `empire forge scan` + `registry orphans`. Rafforza ADR-008.
+   Precedente diretto: CP-20260901-003 (170 skill) e i 120 agenti del 2026-08-31, che
+   funzionavano ma non comparivano in `/agents` per via di campi inventati nel frontmatter.
+3. **SCAGNOZZI.** Autorizzazione durevole a spawnare subagenti col tool `Agent` ogni volta che
+   il lavoro si divide in 2+ parti indipendenti. Prompt idempotenti e autosufficienti.
+   Non si delegano: decisione, verifica finale, parola a Max.
+4. **PIANO A ITERAZIONI.** Prima di un lavoro grosso: piano → autocritica con l'obiezione più
+   forte → v2 → v3. **Minimo 3 giri**, fino a **7** per gli ecosistemi. Ogni giro deve
+   migliorare un punto nominabile. Si costruisce solo il piano finale.
+
+**Verificato, non supposto:** hook rieseguito → JSON valido, 13.891 byte di contesto, stderr
+pulito, 4 blocchi presenti; frontmatter di `emperator.md` rivalidato dopo l'edit.
+Due bug di scrittura trovati e chiusi durante il lavoro (un `\f` diventato formfeed per il
+collasso dei backslash nella shell; un `SyntaxWarning` a ogni esecuzione dell'hook).
+
+**Trovato strada facendo → B-032:** `py -3` (Python 3.12) **non ha PyYAML**, quindi
+`py -3 -m empire ...` muore all'import. Solo `python` (3.11) regge gli strumenti di misura.
+Causa precisa a monte di B-028. **Regola operativa: ogni comando `empire` si lancia con
+`python`, mai con `py -3`.**
+
+**RIPRESA DA**: nessun blocco. Le direttive sono vive dal prossimo messaggio. Resta aperta la
+RIPRESA DA di CP-20260901-003 (STEP 4-heavy: completare la CFO).
+
+---
+
+## 🛠️ 2026-09-01 — EMPERATOR: UFFICIALIZZAZIONE SKILL — 170 skill ufficiali, gate PASS 850/850 — CP-20260901-003
+
+Secondo tempo del lavoro sugli agenti: dopo i 123 agenti registrati, **tutte le skill sono ora
+ufficiali**. Criterio: SKILL.md esistente, frontmatter YAML parsabile, `name` == cartella,
+`description` che dice cosa fa e quando si attiva (>= 60 caratteri), registrazione in
+`company/skills-map.yaml`.
+
+**Audit su 296 SKILL.md (171 progetto + 125 globali): 85 non conformi.**
+38 senza frontmatter (tutta la famiglia `market-*`, `copy-workflow`, `omega-create`, `wiki-context`),
+30 senza `name:` (`site` + 13 `site-*`, `opus`), 17 con `name:` diverso dalla cartella, 2 con BOM
+UTF-8 che impediva la lettura del frontmatter, 4 con `": "` non quotato che rompeva il YAML,
+2 con `description: >` vuota. **Il difetto grave non era la skill mancante: era la skill presente
+ma muta** — YAML rotto e BOM non danno errore, degradano in silenzio e la skill non si attiva.
+`agente-max` si presentava come "MEMORIA SESSIONE — CC-Master v2.0 Upgrade": era intitolata,
+non descritta.
+
+**Chiuso un difetto strutturale:** `.claude/skills/skill-creator/` era una copia corrotta della skill
+globale (markdown appiattito, frontmatter duplicato nel corpo, mancanti `scripts/` `references/`
+`eval-viewer/` che il testo richiama) e, essendo project-scoped, **oscurava la globale integra**.
+Su ordine di Max rimossa con `git rm -r` → `/skill-creator` risolve ora sulla versione completa.
+
+**Output:** 170 skill di progetto conformi + 125 globali allineate; `scripts/verify-skills.py`
+(**nuovo gate permanente**, exit 1 al primo difetto); `company/skills-map.yaml` v1.2 con la sezione
+`ufficializzazione_skill` — criterio, stats e le 170 skill classificate per ecosistema e reparto
+(ADR-008 rispettato: anagrafe unica, nessun registro parallelo).
+
+```
+SKILL: 170  CHECK: 850  FALLITI: 0
+GATE SKILL: PASS 850/850
+```
+
+**Prossimo passo:** commit + push. Poi torna in cima la RIPRESA DA gia' aperta (STEP 4-heavy: completare la CFO).
+
+---
+
+## 📚 2026-09-01 — CLAUDE: Empire Studio ripreso — chiuso Andrei Pascu cat2 4/15 — CP-20260901-001
+
+Max ha chiesto di riprendere lo studio delle lezioni di Andrei Pascu. Ripreso e chiuso il video 4/15
+di cat2-marketing (`j4UInmM9kKA`, "10 lead magnet", 20m32s).
+
+**Il tracker mentiva.** Diceva "Stage 1 da fare da zero": in realta' la pipeline Empire Studio era
+gia' stata eseguita il 26/08 (`video-analysis.md` 20 KB, 616 frame, 17 KA). Il gap vero era a valle —
+**Memory Empire e wiki mai chiusi** — lo stesso mezzo-lavoro del batch 2. Chiuso oggi senza nuova
+visione dei frame. Tracker corretto con lo stato misurato su disco + lezione operativa permanente:
+la riga "RIPRESA DA" non e' una fonte, lo stato si misura (3 comandi: analysis? knowledge? wiki?).
+
+**Enrichment: 9 patch, 0 cancellazioni** (`git diff --stat` = +26/-0) — record del run, sopra le 3
+del video 3. `lead-magnets/SKILL.md` (7): informazione gratis/implementazione a pagamento (Hormozi),
+principio "Free Quality Is Read as Paid Quality", 4 format nuovi (calcolatrice AI, challenge,
+GPT custom su WhatsApp, source files), anti-pattern ebook lungo, proporzionalita' dei campi optin,
+optin trattata come sales page + vincolo a monte, keyword-in-commenti -> DM.
+`market-funnel/SKILL.md` (2): criteri Opt-in balance e Opt-in copy, nota sul ranking dei format.
+
+**WATCH-001:** 33 video Andrei = 33 cartelle `memory-empire/knowledge/` -> MATCH (verificato a comando).
+
+### 🔴 Aperto per Max
+- **Doppia copia reale dell'intero Empire Studio** (`SKILL & Agenti/Empire Studio Suite/empire-studio/`
+  canonico + `.claude/skills/empire-studio/` mirror, con dentro anche i video.mp4 e le frames/).
+  Una sessione futura puo' leggere il mirror e ripartire da uno stato vecchio. Sync o eliminare una.
+- **Da prima, mai chiuse:** tensione video 24 cat1 vs skill `beast-preventivi`; URL sito + corso a
+  pagamento di Andrei Pascu (chiesti, mai arrivati — scope non sbloccato).
+
+**Poi chiuso anche il video 5/15** (`-a0uuA1lbSI`, "L importanza di avere una buona landing", 51s) —
+CP-20260901-002. Coverage frame 100% (26/26). Altre **3 patch, +24/-0**: il funnel documentato in
+`cro-strategy-social-(ig-tiktok)` andava Video -> commento keyword -> DM -> email -> call **senza
+nessuna landing**, pur usando "link in bio" come CTA in piu punti della stessa skill; aggiunta la
+sezione "Il gradino zero". In `market-landing` aggiunto il tipo di pagina Creator/Bio-Link Landing,
+assente dalla tassonomia (benchmark lasciati n/d: la fonte non ne da, non si inventano).
+
+**🔶 CANDIDATA AD ADR — decisione di Max.** Dal run cat2 sta emergendo una catena che non appartiene
+a nessuna singola skill: contenuto (reach) -> landing bio-link -> optin -> sales page. Il video 2
+aveva gia stabilito che l ordine del funnel e un vincolo strutturale; i video 4 e 5 hanno riempito
+i due gradini piu a monte. Se cat2 la conferma ancora, vale un ADR + pagina wiki di framework.
+Aprirlo ora o aspettare altre conferme?
+
+**WATCH-001**: 34 video Andrei = 34 cartelle knowledge -> MATCH.
+
+**RIPRESA DA**: cat2-marketing video 6/15 — `uwaFJ0A_xrg` "How to Make 1000 with Landing Pages".
+
+---
+
 ## 🏛️ 2026-08-31 — CLAUDE: AUDIT GENERALE eseguito + TASK-MAX "IMPERO OPERATIVO" emessa — AUD-20260831-001
 
 Max, prima di costruire EMPERATOR, ha chiesto la verita' sullo stato dell'Impero: e' tutto

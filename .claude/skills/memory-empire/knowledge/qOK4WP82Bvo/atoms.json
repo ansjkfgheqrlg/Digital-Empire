@@ -1,0 +1,178 @@
+[
+  {
+    "id": "KA-001",
+    "categoria": "Definizione",
+    "claim": "Copywriting = 'scrivere per vendere'. Non vendita face-to-face ma su testo scritto/digitale.",
+    "trace": "qOK4WP82Bvo#0:05:18 + frames/frame-160.png",
+    "rilevanza_DE": "alta",
+    "note": "Definizione operativa di base. Utile per onboarding nuovi clienti e contenuti educativi."
+  },
+  {
+    "id": "KA-002",
+    "categoria": "Storia",
+    "claim": "John Emory Powers (fine '800) = primo copywriter professionale. Scriveva per retailer su giornali: macchine da scrivere, abiti, oggetti casa. Stesso lavoro oggi su internet.",
+    "trace": "qOK4WP82Bvo#0:02:12 + frames/frame-067.png",
+    "rilevanza_DE": "media",
+    "note": "Utile per costruire credibilità storica nei contenuti educational."
+  },
+  {
+    "id": "KA-003",
+    "categoria": "Principi Fondamentali",
+    "claim": "Psicologia umana invariante: copy di 150 anni fa usa gli stessi principi di persuasione di oggi. Studiare classici ha valore pratico attuale.",
+    "trace": "qOK4WP82Bvo#0:02:45 (VTT)",
+    "rilevanza_DE": "alta",
+    "note": "Giustifica investimento nello studio di classici del direct response marketing."
+  },
+  {
+    "id": "KA-004",
+    "categoria": "Mercato",
+    "claim": "Mercato copywriting globale: $25B → $42.22B entro 2030. Crescita costante.",
+    "trace": "qOK4WP82Bvo#0:05:18 (VTT)",
+    "rilevanza_DE": "media",
+    "note": "Dato utile per hook in contenuti sulla opportunità di carriera."
+  },
+  {
+    "id": "KA-005",
+    "categoria": "Applicazioni",
+    "claim": "Copy si usa in: websites, Amazon product descriptions, social media ads (FB/IG), email marketing, radio/podcast ads, restaurant menus. Copywriting è trasversale a tutti i media.",
+    "trace": "qOK4WP82Bvo#0:05:30 (VTT)",
+    "rilevanza_DE": "media",
+    "note": "Lista completa tipi di copy — utile per scope di offerta agenzia."
+  },
+  {
+    "id": "KA-006",
+    "categoria": "Conversion Rate",
+    "claim": "Conversion 1%→2% = revenue raddoppiato (stesso traffico, stesso prodotto). Esempio: 1000 visitor, prodotto €10, 1%=€100 → 2%=€200. Il copy lavora sul CR, non sul traffico.",
+    "trace": "qOK4WP82Bvo#0:07:00 + frames/frame-211.png",
+    "rilevanza_DE": "alta",
+    "note": "Meccanismo core per spiegare ai clienti perché il copy giustifica pricing alto."
+  },
+  {
+    "id": "KA-007",
+    "categoria": "Conversion Rate",
+    "claim": "Casi reali: conversion 1%→34% = crescita esponenziale revenue misurabile. Non teoria: dati reali.",
+    "trace": "qOK4WP82Bvo#0:07:40 (VTT)",
+    "rilevanza_DE": "alta",
+    "note": "Proof point estremo per proposta commerciale."
+  },
+  {
+    "id": "KA-008",
+    "categoria": "Value Gap",
+    "claim": "Grafica value gap: dipendente genera €50k/mese per azienda, riceve €1.2k/mese. Divario ≈40x. Il dipendente cede il surplus di valore all'azienda.",
+    "trace": "qOK4WP82Bvo#0:11:32 + frames/frame-347.png",
+    "rilevanza_DE": "alta",
+    "note": "Visual potente per contenuti su dipendente vs freelance. Bar chart animato usato nel video."
+  },
+  {
+    "id": "KA-009",
+    "categoria": "Salary",
+    "claim": "Copywriter dipendente: €1200-1500/mese. Pagato per tempo (presenza), NON per valore generato. Tetto fisso indipendente dalla performance.",
+    "trace": "qOK4WP82Bvo#0:10:10 (VTT)",
+    "rilevanza_DE": "media",
+    "note": "Dato salary range mercato italiano 2023-24."
+  },
+  {
+    "id": "KA-010",
+    "categoria": "Freelance",
+    "claim": "Freelance copywriter: può far pagare €5k per singola landing page. Massimo realistico in Italia = €15k/mese.",
+    "trace": "qOK4WP82Bvo#0:11:00 (VTT)",
+    "rilevanza_DE": "alta",
+    "note": "Benchmark pricing mercato italiano freelance copywriting."
+  },
+  {
+    "id": "KA-011",
+    "categoria": "Pricing",
+    "claim": "4 metodi pagamento freelance: (1) per parola PESSIMO, (2) per ora PESSIMO, (3) % profitto ottimo/complesso, (4) prezzo fisso per copy BEST per beginners.",
+    "trace": "qOK4WP82Bvo#0:12:43 + frames/frame-382.png",
+    "rilevanza_DE": "alta",
+    "note": "Framework decisionale pricing per copywriter. Usabile direttamente in contenuti formativi."
+  },
+  {
+    "id": "KA-012",
+    "categoria": "Pricing",
+    "claim": "Pagare per parola/ora = errore concettuale: prezza il mezzo (tempo/parole) non il fine (vendite generate). 200 parole che generano €50k > 2000 parole che non convertono.",
+    "trace": "qOK4WP82Bvo#0:13:00 (VTT) + frames/frame-408.png",
+    "rilevanza_DE": "alta",
+    "note": "Argomento chiave da usare nelle proposte commerciali per giustificare prezzi fissi alti."
+  },
+  {
+    "id": "KA-013",
+    "categoria": "Mindset",
+    "claim": "Copywriter = moltiplicatore di revenue, non writer generico. Questa distinzione cambia posizionamento, pricing e come si misura il successo.",
+    "trace": "qOK4WP82Bvo#0:07:30 (VTT)",
+    "rilevanza_DE": "alta",
+    "note": "Reframe fondamentale per il posizionamento DE come agenzia copy."
+  },
+  {
+    "id": "KA-014",
+    "categoria": "Target",
+    "claim": "Target video: adolescenti/giovani adulti italiani che cercano reddito online. Discovery pathway: 'come guadagnare online da adolescente' → copywriting.",
+    "trace": "qOK4WP82Bvo#0:00:36 + frames/frame-019.png",
+    "rilevanza_DE": "media",
+    "note": "Utile per capire il target di Andrei Pascu e come replicare il funnel educativo."
+  },
+  {
+    "id": "KA-015",
+    "categoria": "Mercato Italiano",
+    "claim": "4 anni fa (2019-20) risorse italiano per copywriting quasi assenti. Andrei ha colmato il vuoto. 2023-24: mercato in crescita. Gap di primo mover.",
+    "trace": "qOK4WP82Bvo#0:09:15 (VTT)",
+    "rilevanza_DE": "media",
+    "note": "First mover advantage come leva narrativa per contenuti authority."
+  },
+  {
+    "id": "KA-016",
+    "categoria": "Formazione",
+    "claim": "Per imparare copywriting serve mentor con curriculum: psicologia, propaganda, marketing etico, acquisizione clienti. Non basta 'imparare a scrivere bene'.",
+    "trace": "qOK4WP82Bvo#0:15:05 (VTT)",
+    "rilevanza_DE": "alta",
+    "note": "Curriculum minimo per corso copywriting DE. Conferma che psicologia è prerequisito."
+  },
+  {
+    "id": "KA-017",
+    "categoria": "Didattica",
+    "claim": "Prop fisico on-camera (vaso verde) usato per anchor visivo della metafora conversion rate. Il prop crea mnemonico: 'il vaso non cambia, cambiano le vendite'.",
+    "trace": "qOK4WP82Bvo#0:12:42 + frames/frame-382.png",
+    "rilevanza_DE": "media",
+    "note": "Tecnica didattica: prop fisico come anchor concettuale in video educational."
+  },
+  {
+    "id": "KA-018",
+    "categoria": "CTA Pattern",
+    "claim": "Outro card: sfondo nero + logo AP triangolare blu + 'Il futuro è nostro.' + 'Ti aspetto nella mentorship.' Struttura: identità aspirazionale → offerta diretta.",
+    "trace": "qOK4WP82Bvo#0:17:01 + frames/frame-515.png",
+    "rilevanza_DE": "alta",
+    "note": "Pattern CTA replicabile: inclusione identitaria ('nostro') + transizione a tu + offerta senza pressione."
+  },
+  {
+    "id": "KA-019",
+    "categoria": "Insight Core",
+    "claim": "Il copy non cambia il prodotto: cambia quanti lo comprano. Questo separa il copywriting dalla scrittura generica e giustifica pricing premium.",
+    "trace": "qOK4WP82Bvo#0:07:00 (VTT) + frames/frame-211.png",
+    "rilevanza_DE": "alta",
+    "note": "Il 'one-liner' del copywriting. Usabile come hook nei contenuti DE."
+  },
+  {
+    "id": "KA-020",
+    "categoria": "Struttura Economica",
+    "claim": "Chi controlla il prezzo controlla la proporzione tra valore creato e compenso. Dipendente: prezzo fissato da altri → gap massimo. Freelance: prezzo fissato da sé → gap controllabile.",
+    "trace": "qOK4WP82Bvo#0:10:10-0:12:53 (VTT) + frames/frame-347.png",
+    "rilevanza_DE": "alta",
+    "note": "Framework per talk su freelancing e autonomia economica."
+  },
+  {
+    "id": "KA-021",
+    "categoria": "Pricing Avanzato",
+    "claim": "Percentuale del profitto (10% revenue): metodo più vantaggioso per il copywriter ma richiede accesso dati fatturato cliente + fiducia + contratto solido. Solo per senior con track record.",
+    "trace": "qOK4WP82Bvo#0:13:34 (VTT) + frames/frame-408.png",
+    "rilevanza_DE": "media",
+    "note": "Modello da proporre a clienti consolidati DE dopo risultati dimostrati."
+  },
+  {
+    "id": "KA-022",
+    "categoria": "Struttura Video",
+    "claim": "Struttura narrativa sales-education: Hook→Storia personale→Mercato→Meccanismo→Proof economica→Come iniziare→CTA. Schema replicabile per qualsiasi video educational con offerta finale.",
+    "trace": "qOK4WP82Bvo#0:00:00-0:17:01 (VTT completo) + frames/frame-001.png + frame-515.png",
+    "rilevanza_DE": "alta",
+    "note": "Template struttura video per corsi DE. Confermato funzionare su target italiano."
+  }
+]

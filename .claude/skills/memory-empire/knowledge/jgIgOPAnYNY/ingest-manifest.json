@@ -1,0 +1,53 @@
+{
+  "video_id": "jgIgOPAnYNY",
+  "title": "Come diventare un copywriter - copywriting tutorial COMPLETO",
+  "uploader": "Andrei Pascu",
+  "run": "andrei-pascu-001",
+  "category": "cat1-copywriting",
+  "index_in_run": 3,
+  "duration_sec": 1221,
+  "ingested_at": "2026-07-09",
+  "pipeline": "Empire Studio Suite",
+  "stages": {
+    "stage_1_ingest": "DONE",
+    "stage_2_frames": "DONE — 611 frame @ --interval 2",
+    "stage_3_vision": "DONE — 12 frame letti nativamente",
+    "stage_4_atoms": "DONE — 24 KA",
+    "stage_5_verifica": "DONE — PASS",
+    "stage_6_forge": "PENDING — richiede /forge separato",
+    "stage_7_wiki": "DONE — 3 pagine create"
+  },
+  "frames_total": 611,
+  "frames_read_native_vision": 12,
+  "all_read_native_vision": false,
+  "no_finto_compliant": true,
+  "no_finto_note": "12 frame letti su 611 — tutti boundary capitolo + punti grafici chiave (iPad notes). Video talking-head. Nessun atom descrive frame non letti.",
+  "vtt_lines_read": "completo (0:00–20:21)",
+  "knowledge_atoms_count": 24,
+  "chapters": [
+    {"start": 0, "title": "Introduzione"},
+    {"start": 79, "title": "Fasi di scrittura del copy"},
+    {"start": 91, "title": "Briefing del copywriter"},
+    {"start": 563, "title": "Ricerca per scrivere copy"},
+    {"start": 907, "title": "Come scrivere copy (formula APSOC)"},
+    {"start": 1134, "title": "Revisione del copy"}
+  ],
+  "key_frames": [
+    {"frame": "frame-001.png", "timestamp": "0:00:02", "content": "Intro studio scuro luce blu"},
+    {"frame": "frame-046.png", "timestamp": "0:01:32", "content": "iPad: FASI DI COMPOSIZIONE lista parziale"},
+    {"frame": "frame-100.png", "timestamp": "0:03:20", "content": "iPad: BRIEFING lista completa 7 voci"},
+    {"frame": "frame-200.png", "timestamp": "0:06:40", "content": "iPad: briefing parte bassa con domande guida blu"},
+    {"frame": "frame-490.png", "timestamp": "0:16:20", "content": "iPad: APSOC formula completa scritta"},
+    {"frame": "frame-568.png", "timestamp": "0:18:54", "content": "Title card cinematica REVISIONE DEL COPY"}
+  ],
+  "wiki_pages_created": [
+    "Source_Andrei_Pascu_Copywriting_Tutorial_Completo.md",
+    "Concept_APSOC_Formula.md",
+    "Concept_Briefing_Checklist_Copywriter.md"
+  ],
+  "watch_001": {
+    "n_video": 3,
+    "n_memory_empire": 3,
+    "status": "MATCH"
+  }
+}

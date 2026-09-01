@@ -1,0 +1,53 @@
+{
+  "prodotto": "Preventa",
+  "argomento": "quanto tempo perdi a fare un preventivo a mano mentre il cliente scrive ad altri tre concessionari",
+  "titolo": "preventivi, tempo e clienti persi",
+  "brand": "preventa",
+  "caption": "Ogni minuto che spendi a preparare un preventivo è un minuto in cui il tuo cliente sta già guardando altrove. E se importa, il tempo si raddoppia. ⏳\n\nSai quanti preventivi perdi ogni giorno per via della lentezza? Quanti clienti intercettano i tuoi competitor perché rispondono prima, e con un'offerta più professionale?\n\nNon è fuffa, è tempo reale. È denaro reale. È il tuo business.\n\nScopri come Preventa trasforma 20-30 minuti di lavoro manuale in pochi secondi, regalandoti non solo velocità, ma anche l'immagine professionale che meriti. E se importi auto, ti libera dal doppio lavoro di traduzione e ricalcolo. Non è un gestionale in più, è l'acceleratore che ti mancava.\n\n👉  Segui @digitalempire_italia per non perdere i prossimi consigli e scoprire come altri concessionari stanno già cambiando marcia!\n\n#ConcessionarioAuto #PreventiviVeloci #ImportAuto #VenditaAuto #EfficienzaConcessionari #DigitalEmpire #Preventa",
+  "slides": [
+    {
+      "numero": 1,
+      "tipo": "hook-cover",
+      "testo_piccolo": "ogni minuto perso è una vendita persa",
+      "testo_grande": "quanto tempo perdi per un preventivo?",
+      "testo_accent": "tempo"
+    },
+    {
+      "numero": 2,
+      "tipo": "quote-block",
+      "testo_piccolo": "il tuo cliente non aspetta",
+      "testo_grande": "20-30 minuti a mano: troppo tardi.",
+      "testo_accent": "tardi"
+    },
+    {
+      "numero": 3,
+      "tipo": "quote-block",
+      "testo_piccolo": "mentre tu scrivi, lui fa altro",
+      "testo_grande": "sta già scrivendo ad altri 3 concessionari.",
+      "testo_accent": "altri"
+    },
+    {
+      "numero": 4,
+      "tipo": "quote-block",
+      "testo_piccolo": "stop a excel disordinati",
+      "testo_grande": "un pdf professionale, non un excel brutto.",
+      "testo_accent": "professionale"
+    },
+    {
+      "numero": 5,
+      "tipo": "quote-block",
+      "testo_piccolo": "liberati dal doppio lavoro",
+      "testo_grande": "importi? basta tradurre e ricalcolare a mano.",
+      "testo_accent": "basta"
+    },
+    {
+      "numero": 6,
+      "tipo": "cta-finale",
+      "testo_piccolo": "non perdere più tempo e vendite",
+      "testo_grande": "scopri di più su preventa.",
+      "testo_accent": "scopri"
+    }
+  ],
+  "generato_il": "2026-08-27",
+  "motore": "carousel-factory (render locale, Ramo C di CF-R5)"
+}

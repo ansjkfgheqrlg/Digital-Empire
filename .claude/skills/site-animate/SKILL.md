@@ -1,0 +1,455 @@
+---
+name: site-animate
+description: "Aggiunge animazioni e motion design al sito già costruito. Seleziona la libreria ottimale in base allo stack (Motion per React, GSAP per HTML puro, Anime.js per micro-animazioni, Lottie per animazioni JSON). Implementa scroll triggers, page transitions, micro-interactions e counter animations. Attiva su: /site animate, aggiungi animazioni, motion design, scroll reveal, page transitions, counter animation, parallax, stagger animations, hover effects premium."
+---
+
+# Site Animate — Motion Design e Animazioni
+
+Sei il motion designer del progetto. Il tuo compito è rendere il sito **vivo, fluido e premium** con animazioni che migliorano l'esperienza senza appesantire il caricamento. La regola d'oro: le animazioni devono far sembrare il sito più veloce, non più lento.
+
+---
+
+## Prerequisiti
+
+Prima di avviare, cerca e leggi nella CWD:
+
+- `SITE-STACK.md` — **obbligatorio** (determina quale libreria usare)
+- `SITE-BUILD.md` — obbligatorio se esiste (manifest dei file)
+- `SITE-BRIEF.md` — per intensità animazioni (portfolio creativo vs corporate)
+- `index.html` e tutti i file `*.html` o `*.tsx` — da modificare
+
+Se `SITE-STACK.md` non esiste: interrompi con `"Esegui prima /site stack"`.
+Se non esistono file HTML/JSX: interrompi con `"Esegui prima /site build"`.
+
+---
+
+## Step 1 — Selezione Libreria (Albero Decisionale)
+
+Segui questo albero senza deviazioni:
+
+```
+Stack è React / Next.js?
+  ├── SÌ
+  │   ├── Portfolio creativo premium? → Motion (ex Framer Motion) + GSAP ScrollTrigger
+  │   └── SaaS / Business / Blog?    → Motion (ex Framer Motion)
+  └── NO (HTML puro — Percorso A)
+      ├── Animazioni complesse / timeline sequenziali? → GSAP
+      ├── Micro-animazioni / SVG animato?              → Anime.js
+      ├── File .json Lottie disponibili?               → lottie-web
+      └── Sito corporate sobrio?                       → CSS transitions pure (no JS)
+```
+
+**Installazione per ogni libreria:**
+
+```bash
+# Motion (React)
+bun add motion
+# oppure npm install motion
+
+# GSAP (HTML puro — CDN)
+# <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+# <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+# Anime.js (HTML puro — CDN)
+# <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+# Lottie
+bun add lottie-web
+# oppure CDN: <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+```
+
+---
+
+## Step 2 — Seleziona Animazioni per Tipo di Sito
+
+Applica SOLO le animazioni appropriate per il tipo di sito dal brief:
+
+| Tipo Sito | Animazioni da implementare |
+|-----------|---------------------------|
+| **Landing page / SaaS** | scroll reveal + counter animation + hero entrance |
+| **Portfolio creativo** | tutto: scroll reveal, magnetic buttons, cursor custom, page transitions, stagger |
+| **Business / Corporate** | solo scroll reveal sobrio + navbar scroll (niente di aggressivo) |
+| **E-commerce** | add-to-cart feedback, image zoom hover, skeleton loading |
+| **Blog / Content** | scroll reveal leggero solo sulle card |
+
+---
+
+## Step 3 — Implementazione Animazioni Standard
+
+### 3A. Scroll Reveal (SEMPRE incluso, tranne CSS-only)
+
+Elementi che appaiono entrando nel viewport. Varianti: fade-up, fade-in, scale-in.
+
+**Con GSAP (HTML puro):**
+```javascript
+// js/animations.js
+gsap.registerPlugin(ScrollTrigger);
+
+// Fade-up per sezioni
+gsap.utils.toArray('[data-animate="fade-up"]').forEach(el => {
+  gsap.fromTo(el,
+    { opacity: 0, y: 40 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 0.7,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 85%",
+        once: true
+      }
+    }
+  );
+});
+
+// Stagger per grid di card
+gsap.utils.toArray('.cards-grid').forEach(grid => {
+  const cards = grid.querySelectorAll('.card');
+  gsap.fromTo(cards,
+    { opacity: 0, y: 30 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 0.5,
+      stagger: 0.1,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: grid,
+        start: "top 80%",
+        once: true
+      }
+    }
+  );
+});
+```
+
+**Con Motion (React):**
+```tsx
+// components/AnimateIn.tsx
+import { motion } from 'motion';
+
+const fadeUpVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } }
+};
+
+export function AnimateIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+  return (
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: '-50px' }}
+      variants={fadeUpVariants}
+      transition={{ delay }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+```
+
+**Con CSS puro (corporate sobrio):**
+```css
+/* Nel design-tokens.css o styles.css */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+```
+```javascript
+// IntersectionObserver trigger
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+```
+
+---
+
+### 3B. Navbar Scroll Effect (SEMPRE incluso)
+
+```javascript
+// Aggiunge classe al navbar dopo 80px di scroll
+const navbar = document.querySelector('nav, header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 80) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+}, { passive: true });
+```
+
+```css
+/* In styles.css */
+nav.scrolled, header.scrolled {
+  background: var(--color-bg);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(8px);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+```
+
+---
+
+### 3C. Hero Entrance (per landing page e portfolio)
+
+**Con GSAP:**
+```javascript
+// Animazione sequenziale degli elementi hero
+const heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+heroTl
+  .fromTo('.hero-eyebrow',  { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5 })
+  .fromTo('.hero-headline', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.7 }, '-=0.2')
+  .fromTo('.hero-sub',      { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6 }, '-=0.3')
+  .fromTo('.hero-cta',      { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5 }, '-=0.2')
+  .fromTo('.hero-visual',   { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1, duration: 0.8 }, '-=0.5');
+```
+
+---
+
+### 3D. Counter Animation (per sezioni stats/numeri)
+
+```javascript
+// IntersectionObserver + countUp
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target, 10);
+  const duration = 1800; // ms
+  const start = performance.now();
+
+  function step(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    // Easing: easeOutQuart
+    const eased = 1 - Math.pow(1 - progress, 4);
+    el.textContent = Math.floor(eased * target).toLocaleString('it-IT');
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('[data-counter]').forEach(el => {
+  el.dataset.target = el.textContent;
+  el.textContent = '0';
+  counterObserver.observe(el);
+});
+```
+
+HTML da usare: `<span data-counter>147</span>`
+
+---
+
+### 3E. Hover Effects Premium (solo portfolio creativo)
+
+**Magnetic Button:**
+```javascript
+document.querySelectorAll('.btn-magnetic').forEach(btn => {
+  btn.addEventListener('mousemove', (e) => {
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+  });
+  btn.addEventListener('mouseleave', () => {
+    btn.style.transform = '';
+    btn.style.transition = 'transform 0.5s cubic-bezier(0.23, 1, 0.32, 1)';
+  });
+});
+```
+
+**Card Tilt (3D hover):**
+```javascript
+document.querySelectorAll('.card-tilt').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    card.style.transform = `perspective(600px) rotateX(${y * -8}deg) rotateY(${x * 8}deg) translateZ(10px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'perspective(600px) rotateX(0) rotateY(0) translateZ(0)';
+    card.style.transition = 'transform 0.5s ease';
+  });
+});
+```
+
+---
+
+### 3F. Page Transitions (solo React/Next.js)
+
+```tsx
+// app/layout.tsx — con AnimatePresence di Motion
+import { AnimatePresence, motion } from 'motion';
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="it">
+      <body>
+        <AnimatePresence mode="wait">
+          <motion.main
+            key={/* usePathname() */}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.25, ease: 'easeInOut' }}
+          >
+            {children}
+          </motion.main>
+        </AnimatePresence>
+      </body>
+    </html>
+  );
+}
+```
+
+---
+
+### 3G. Parallax Sottile (hero section)
+
+```javascript
+// Parallax leggero — SOLO elementi decorativi, mai testo leggibile
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  const heroBg = document.querySelector('.hero-bg-element');
+  if (heroBg) {
+    heroBg.style.transform = `translateY(${scrollY * 0.15}px)`;
+  }
+}, { passive: true });
+```
+
+---
+
+## Step 4 — Aggiungi Attributi HTML
+
+Aggiorna i file HTML/JSX esistenti aggiungendo i `data-*` attributes necessari per le animazioni:
+
+```html
+<!-- Sezioni principali — fade-up al scroll -->
+<section data-animate="fade-up">
+
+<!-- Grid di card — stagger -->
+<div class="cards-grid">
+  <div class="card">  <!-- GSAP trova le card auto -->
+
+<!-- Numeri statistiche — counter -->
+<span data-counter>147</span>
+
+<!-- Hero elements — vengono animati da heroTl via classe CSS -->
+<h1 class="hero-headline">
+<p class="hero-sub">
+<div class="hero-cta">
+<div class="hero-visual">
+```
+
+---
+
+## Step 5 — Genera il File di Output
+
+Crea il file dedicato per le animazioni:
+
+**`js/animations.js`** — file separato da `interactions.js`. Contiene SOLO le animazioni, ben commentato per sezione.
+
+Struttura:
+```javascript
+/**
+ * animations.js — Motion Design
+ * [Nome Progetto] — generato da /site animate
+ * Libreria: [GSAP | Motion | Anime.js | CSS]
+ */
+
+// ============================================
+// 1. SETUP E REGISTRAZIONE PLUGIN
+// ============================================
+// (importazioni o registrazione plugin)
+
+// ============================================
+// 2. HERO ENTRANCE
+// ============================================
+// (animazione ingresso hero)
+
+// ============================================
+// 3. SCROLL REVEAL
+// ============================================
+// (fade-up, stagger, scale-in)
+
+// ============================================
+// 4. NAVBAR SCROLL
+// ============================================
+// (già in interactions.js — skip se presente)
+
+// ============================================
+// 5. COUNTER ANIMATIONS
+// ============================================
+// (solo se presenti sezioni stats)
+
+// ============================================
+// 6. HOVER EFFECTS
+// ============================================
+// (magnetic, tilt — solo portfolio)
+
+// ============================================
+// 7. PAGE TRANSITIONS
+// ============================================
+// (solo React — in layout.tsx, non qui)
+```
+
+Includi il file nell'HTML prima della chiusura `</body>`, DOPO `interactions.js`:
+```html
+<script src="js/interactions.js" defer></script>
+<script src="js/animations.js" defer></script>
+```
+
+Per GSAP, aggiungi i CDN nell'`<head>` PRIMA dei CSS:
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+```
+
+---
+
+## Step 6 — Aggiorna SITE-STATUS.md
+
+Se esiste un file `SITE-STATUS.md` nella CWD, aggiorna la riga `Animate` come completato.
+
+---
+
+## Regole Critiche
+
+- **Le animazioni migliorano la percezione di velocità, non la rallentano.** Durate: scroll reveal 0.5–0.8s, hero entrance 0.4–0.7s per elemento. Mai oltre 1.2s.
+- **`js/animations.js` è separato da `interactions.js`** — responsabilità distinte, file distinti.
+- **Sempre `once: true`** nei scroll triggers — un elemento si anima una sola volta, non ogni volta che entra nel viewport.
+- **`passive: true`** su tutti i scroll listener — previene janking.
+- **Fallback obbligatorio:** se la libreria non carica (CDN down), il sito deve comunque funzionare. Gli elementi devono essere visibili anche senza animazioni (`opacity: 1` default, poi JS sovrascrive).
+- **Mobile:** disabilita animazioni complesse (magnetic, tilt, parallax) su touch device:
+  ```javascript
+  const isTouchDevice = () => window.matchMedia('(hover: none)').matches;
+  if (!isTouchDevice()) { /* inizializza hover effects */ }
+  ```
+- **Rispetta `prefers-reduced-motion`:**
+  ```javascript
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!prefersReducedMotion) { /* inizializza animazioni */ }
+  ```

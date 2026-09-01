@@ -1,0 +1,25 @@
+﻿{
+  "version": "2.0.0",
+  "description": "Mappa delle modalità deontiche multi-lingua (IT + EN). Usata per normalizzare espressioni di obbligo/permesso/divieto.",
+  "languages": {
+    "it": {
+      "MUST": ["devi", "deve", "devono", "è obbligatorio", "è necessario", "è imperativo", "obbligatoriamente", "si deve", "bisogna", "occorre", "è richiesto", "va sempre", "sempre"],
+      "MUST_NOT": ["non devi", "non deve", "non devono", "vietato", "proibito", "non è permesso", "non sono permessi", "è vietato", "non si deve", "non bisogna", "mai", "in nessun caso", "per nessuna ragione", "assolutamente non", "evita di"],
+      "SHOULD": ["dovresti", "dovrebbe", "dovrebbero", "è consigliato", "è raccomandato", "preferibilmente", "è meglio", "sarebbe bene", "è opportuno", "si consiglia di"],
+      "SHOULD_NOT": ["non dovresti", "non dovrebbe", "non dovrebbero", "è sconsigliato", "sarebbe meglio non", "sarebbe meglio evitare", "non è consigliato", "evita", "è preferibile non"],
+      "MAY": ["puoi", "può", "possono", "è possibile", "è permesso", "è consentito", "opzionalmente", "a discrezione", "se vuoi"],
+      "ALWAYS": ["sempre", "in ogni caso", "senza eccezioni", "incondizionatamente", "in tutte le situazioni", "costantemente"],
+      "NEVER": ["mai", "in nessun caso", "per nessuna ragione", "assolutamente mai", "giammai"]
+    },
+    "en": {
+      "MUST": ["must", "have to", "required to", "shall", "mandatory", "necessary to", "imperative", "always", "must always"],
+      "MUST_NOT": ["must not", "mustn't", "shall not", "prohibited", "forbidden", "not allowed", "not permitted", "never", "under no circumstances"],
+      "SHOULD": ["should", "ought to", "recommended", "preferably", "better to", "advisable", "it is best to"],
+      "SHOULD_NOT": ["should not", "shouldn't", "ought not", "not recommended", "better not to", "avoid", "not advisable"],
+      "MAY": ["may", "can", "could", "optional", "at discretion", "if desired", "allowed to"],
+      "ALWAYS": ["always", "in every case", "without exception", "unconditionally", "at all times", "consistently"],
+      "NEVER": ["never", "under no circumstances", "not ever", "absolutely not", "at no time"]
+    }
+  }
+}
+

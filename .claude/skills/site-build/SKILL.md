@@ -1,0 +1,297 @@
+---
+name: site-build
+description: "Genera il codice HTML/CSS/JS completo e funzionante del sito web. Legge SITE-PLAN.md, SITE-DESIGN.md e SITE-COPY.md, poi lancia 3 agenti specializzati: site-build-shell (eseguito prima, crea il template condiviso), poi site-build-pages e site-build-interactions in parallelo."
+---
+
+# Site Build — Generazione Codice Completo
+
+Sei il lead developer del progetto. Il tuo compito è produrre un **sito web funzionante, visivamente premium e tecnicamente corretto** — non un template generico, non codice da modificare pesantemente, ma codice pronto al deploy. Il sito deve aprirsi nel browser e impressionare immediatamente.
+
+---
+
+## Prerequisiti
+
+Prima di avviare il build, verifica che esistano:
+- `SITE-BRIEF.md` — per tipo sito e requisiti
+- `SITE-STACK.md` — **critico**: determina Percorso A/B/C e librerie da usare
+- `SITE-PLAN.md` — per struttura pagine e componenti
+- `SITE-COPY.md` — per i testi (se non presente, usa placeholder chiari)
+- `SITE-DESIGN.md` e `design-tokens.css` — se presenti, usa il sistema di design; se no, crealo on-the-fly
+
+Se `SITE-STACK.md` non esiste: interrompi e comunica "Esegui prima `/site stack`".
+
+---
+
+## Processo
+
+### Step 1: Leggi lo Stack
+
+Da `SITE-STACK.md`, determina:
+- **Percorso:** A (HTML puro) | B (Next.js/React) | C (Monorepo)
+- **Librerie UI:** shadcn/ui, DaisyUI, HeroUI, Flowbite, Mantine...
+- **Animazioni:** Motion, GSAP, Anime.js...
+- **Note speciali:** integrazioni, framework scelti
+
+### Step 2: Lancia site-build-shell (SERIALE — deve completare prima degli altri)
+
+L'agente `site-build-shell` crea:
+- Template HTML/JSX base con `<head>` completo (charset, viewport, CDN o imports)
+- Navbar component (desktop + mobile hamburger)
+- Footer component
+- CSS base: reset, variabili CSS / design tokens, utilities globali
+- JS skeleton: event listeners, mobile menu toggle
+
+Aspetta che `site-build-shell` abbia completato prima di procedere.
+
+### Step 3: Lancia in Parallelo
+
+Dopo che la shell è pronta, lancia simultaneamente:
+
+**Agente: `site-build-pages`**
+- Crea ogni pagina HTML/JSX interna (about, services, pricing, contact, blog, ecc.)
+- Ogni pagina estende il template shell
+- Implementa tutte le sezioni definite in `SITE-PLAN.md`
+- Usa i testi da `SITE-COPY.md`
+
+**Agente: `site-build-interactions`**
+- Crea `js/interactions.js` con tutti i comportamenti JavaScript
+- Mobile menu toggle
+- Scroll-based effects (header che cambia all'scroll)
+- Form validation client-side
+- Accordion/FAQ toggle
+- Tab components
+- Smooth scroll
+- Carousel/slider (se presente)
+- Counter animations (per statistiche)
+- Modal/lightbox (se richiesto)
+
+### Step 4: Assembla e Verifica
+
+Dopo che gli agenti hanno completato:
+1. Verifica che tutti i file HTML referenzino correttamente CSS e JS
+2. Verifica che i link interni tra pagine siano corretti
+3. Verifica che le immagini placeholder abbiano attributi `alt` corretti
+4. Genera `SITE-BUILD.md` con il manifest completo
+
+---
+
+## Standard di Codice per Percorso A (HTML Puro)
+
+### Struttura File
+
+```
+index.html
+[pagina].html
+css/
+  styles.css          ← stylesheet principale
+  design-tokens.css   ← variabili CSS (se non già presente)
+js/
+  main.js             ← entry point JS
+  interactions.js     ← comportamenti UI
+assets/
+  images/             ← placeholder con nomi descrittivi
+  fonts/              ← font locali se non da CDN
+```
+
+### Template HTML Base
+
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Page Title] | [Brand Name]</title>
+  <meta name="description" content="[meta description]">
+  <!-- Open Graph -->
+  <meta property="og:title" content="[OG title]">
+  <meta property="og:description" content="[OG description]">
+  <meta property="og:type" content="website">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Design Tokens + Custom CSS -->
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font (Google Fonts o Bunny Fonts) -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=[font]:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+  <!-- NAVBAR -->
+  <header id="navbar" class="...">...</header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- sezioni della pagina -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer>...</footer>
+
+  <!-- JavaScript -->
+  <script src="js/interactions.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+```
+
+### CSS Design Tokens (se non già presente)
+
+```css
+/* design-tokens.css */
+:root {
+  /* Colori */
+  --color-primary: [HEX];
+  --color-primary-dark: [HEX];
+  --color-secondary: [HEX];
+  --color-accent: [HEX];
+  --color-bg: [HEX];
+  --color-bg-secondary: [HEX];
+  --color-text: [HEX];
+  --color-text-muted: [HEX];
+  --color-border: [HEX];
+
+  /* Tipografia */
+  --font-display: '[Font Display]', serif;
+  --font-body: '[Font Body]', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-2xl: 8rem;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.15);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+}
+```
+
+---
+
+## Standard di Codice per Percorso B (Next.js/React)
+
+### Struttura File
+
+```
+app/
+  layout.tsx          ← root layout con navbar + footer
+  page.tsx            ← homepage
+  [slug]/
+    page.tsx          ← pagine interne
+components/
+  ui/                 ← shadcn/ui components (auto-generati)
+  layout/
+    Navbar.tsx
+    Footer.tsx
+  sections/
+    Hero.tsx
+    Features.tsx
+    Testimonials.tsx
+    [altre sezioni].tsx
+lib/
+  utils.ts            ← cn() e altre utilities
+public/
+  images/
+styles/
+  globals.css         ← Tailwind base + design tokens
+```
+
+### Regole React/Next.js
+
+- Usa **App Router** (Next.js 14+)
+- Componenti server dove possibile, `'use client'` solo dove necessario (interazioni)
+- Usa `cn()` da `@/lib/utils` per classi condizionali
+- Immagini con `next/image` sempre
+- Link con `next/link` sempre
+- Font con `next/font/google` nel layout root
+
+---
+
+## Regole di Design per il Build
+
+**Mai usare:**
+- Colori generici (azzurro Bootstrap, verde generico, viola gradiente AI)
+- Font generici (Inter come unico font, Arial, Roboto di default)
+- Layout simmetrici prevedibili a 2-3 colonne uguali
+- Stili "aziendali corporate" anni 2010
+
+**Sempre usare:**
+- Font con carattere — almeno un display font distintivo
+- Palette coerente da `design-tokens.css` o `SITE-DESIGN.md`
+- Composizione spaziale interessante — asimmetria, sovrapposizioni, spaziatura generosa
+- Sfondi con atmosfera — gradient mesh, texture sottili, pattern
+- Micro-dettagli — bordi, divisori, badge, icone coerenti
+
+---
+
+## Genera SITE-BUILD.md
+
+```markdown
+# SITE-BUILD.md — [Nome Progetto]
+
+**Data:** [data]
+**Stack:** [Percorso A/B/C]
+**Build completato da:** site-build-shell + site-build-pages + site-build-interactions
+
+---
+
+## Manifest File
+
+| File | Tipo | Dimensione Stimata | Note |
+|------|------|--------------------|------|
+| index.html | Pagina | - | Homepage |
+| [pagina].html | Pagina | - | [Descrizione] |
+| css/styles.css | Stylesheet | - | Principale |
+| css/design-tokens.css | Tokens | - | Variabili CSS |
+| js/main.js | Script | - | Entry point |
+| js/interactions.js | Script | - | UI behaviors |
+
+---
+
+## Inventario Componenti
+
+| Componente | File | Stato |
+|-----------|------|-------|
+| Navbar | [file] | ✅ Completato |
+| Hero | [file] | ✅ Completato |
+| [Componente] | [file] | ✅ Completato |
+
+---
+
+## Note di Build
+
+[Decisioni tecniche prese, limitazioni note, placeholder da sostituire]
+
+---
+
+## Prossimi Step Consigliati
+
+1. `/site animate` — aggiungi animazioni scroll e transizioni
+2. `/site seo` — inietta meta tag e schema strutturati
+3. `/site qa` — quality assurance completo
+
+---
+
+*Generato da /site build — Digital Empire Site Creation System*
+```
+
+### Aggiorna SITE-STATUS.md
+
+Segna Build come completato. Indica prossimi step: `/site animate` → `/site seo` → `/site qa`.

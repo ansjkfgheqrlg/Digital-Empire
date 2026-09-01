@@ -1,6 +1,6 @@
 ---
-name: youtube-script-factory
-description: >
+name: cro-youtube-lead-magnet
+description: "Fabbrica di script per video YouTube che portano lead all'agenzia CRO di Digital Empire. Costruisce script come conversazione uno-a-uno, una sola idea per video, hook nei primi secondi e CTA verso lead magnet o call. Usala quando serve uno script YouTube long-form, un video educativo che genera lead, o la struttura di un video di posizionamento per l'agenzia."
 ---
 # 🎬 YouTube Script Factory PRO
 

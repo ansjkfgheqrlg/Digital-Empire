@@ -1,5 +1,5 @@
 ---
-name: launch-funnel-architect
+name: cro-funnel-architect.md
 description: Progetta architetture complete di funnel di lancio per vendere info-prodotti e servizi — dal primo touchpoint alla vendita e al nurture post-vendita. Usa questa skill ogni volta che devi progettare un funnel di vendita, scegliere il tipo di funnel giusto per un prodotto/prezzo, definire biforcazioni e percorsi per lead diversi, configurare tag system e automazioni email per un lancio, diagnosticare un funnel che non converte, adattare un funnel a un caso specifico, o convertire un funnel live in evergreen. Attiva questa skill anche quando l'utente menziona landing page per opt-in, pagine upsell, webinar funnel, VSL funnel, sequenze di vendita, lead magnet, conversion rate del funnel, show rate, follow-up post-webinar, tag system per email marketing, automazioni per lanci, o qualsiasi architettura commerciale per info-prodotti, corsi online, servizi di consulenza o coaching — anche se non usa esplicitamente la parola "funnel".
 ---
 
