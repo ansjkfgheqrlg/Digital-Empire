@@ -1,3 +1,20 @@
+
+<!-- EMPIRE-MEM:BEGIN (generato da `empire mem state`) -->
+## 🧠 MEMORIA — istantanea automatica 2026-09-02 18:18
+
+- **atomi totali:** 7  ·  checkpoint: 7
+- **decisioni attive:** 0  ·  **backlog aperto:** 0  ·  **errori registrati:** 0
+
+**Ultimi 5 atomi:**
+- `CP-20260902-009` 2026-09-02 — L1 RICOGNIZIONE-LANCI chiusa: il reparto Lanci e' carta, misurato
+- `CP-20260902-002` 2026-09-02 — TASK-KDP-PIANO-W2 chiuso: piano editoriale settimanale, 3 agenti (SCOUT/EDITOR/GATE) e i comandi /piano-libri 
+- `CP-20260902-001` 2026-09-02 — TASK-KDP-FIX-W2 parziale: 4 fix su 6 chiusi, FIX-1 bloccato dall'esterno (upload KDP + copertina), FIX-6 sbloc
+- `CP-20260827-004` 2026-08-27 — TASK-ARENA-SESSION-W1 — un solo motore di sessione Arena: caroselli + arena_thumbnail sullo stesso modulo
+- `CP-20260827-003` 2026-08-27 — TASK-GITLFS-W1 — B-008 chiuso: gitignore mirato + guard 5MB, NON Git LFS (ADR-013)
+
+> Rigenerabile con `python -m empire mem state --write`. Tutto cio' che sta FUORI dai marcatori e' scritto a mano e non viene toccato.
+<!-- EMPIRE-MEM:END -->
+
 ## 🌙 2026-09-02 — CHIUSURA DI SESSIONE — CP-20260902-003
 
 Sessione lunga, chiusa da Max con ordine di pausa. Consegnato:
