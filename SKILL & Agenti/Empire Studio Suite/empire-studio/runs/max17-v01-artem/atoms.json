@@ -1,0 +1,322 @@
+[
+  {
+    "id": "KA-001",
+    "tipo": "regola",
+    "contenuto": "I modelli di image gen (ChatGPT Image, Nana Banana) generano una sola immagine alla volta: chiedere un carosello intero da 6 slide in un colpo solo fa sì che ogni slide venga creata da zero, senza consapevolezza delle altre slide, risultando in un carosello incoerente e generico.",
+    "fonte": "JdAQzAcWR6k#0:41-1:13",
+    "frame": "frame-016.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-002",
+    "tipo": "metodo",
+    "contenuto": "La soluzione al problema della coerenza tra slide e' fornire un 'visual anchor' per ogni slide generata: l'anchor e' semplicemente la prima slide (hook) fatta molto bene, allegata come immagine di riferimento a ogni prompt successivo, cosi' ogni nuova slide e' vincolata a rispettarne tipografia, colori e mood.",
+    "fonte": "JdAQzAcWR6k#1:14-1:29",
+    "frame": "frame-041.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-003",
+    "tipo": "metodo",
+    "contenuto": "The Stupid Simple Instagram Carousel System (slide riassuntiva finale, 4 passi): 1) Make sure the copy is good (40% of time); 2) Generate hook slide, this is your visual anchor (50% of time); 3) Build one slide at the time, using visual anchor as style reference (10% of time); 4) Use Canva Magic Layers to make small tweaks (like text or spacing).",
+    "fonte": "JdAQzAcWR6k#6:52-7:22",
+    "frame": "frame-207.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-004",
+    "tipo": "architettura",
+    "contenuto": "ChatGPT Project dedicato al copy chiamato 'Instagram Carousel Copy Writer', con due file caricati come Sources: slide-count.md e SKILL.md (nomi letti per intero nel tab Sources del progetto).",
+    "fonte": "JdAQzAcWR6k#2:11-2:20",
+    "frame": "frame-069.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-005",
+    "tipo": "file",
+    "contenuto": "I due file Sources del progetto Copy Writer sono a loro volta addestrati su un documento piu' ampio chiamato 'THE CAROUSEL BIBLE' (Google Doc), che raccoglie ricerca sulla psicologia dei caroselli e benchmark di performance citati con fonte.",
+    "fonte": "JdAQzAcWR6k#2:20-2:26",
+    "frame": "frame-072.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-006",
+    "tipo": "numero",
+    "contenuto": "Statistiche verificate citate in 'The Carousel Bible': Followers gained in 2 months = 70,000; Followers in one month = 54,000; Monthly views = 11 million (fonte citata nel doc: 'Everything I know about carousels'); Views in 30 days = 180 million (fonte: Steven Bisi); Revenue from 6 carousel posts = $20,000+ (fonte: 'Instagram Algorithm LOVES this').",
+    "fonte": "JdAQzAcWR6k#2:22 (frame statico, letto per intero)",
+    "frame": "frame-072.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-007",
+    "tipo": "regola",
+    "contenuto": "Quattro principi psicologici per cui i caroselli funzionano (da 'The Carousel Bible'): 1) Autonomy - l'utente controlla il ritmo di lettura; 2) Commitment Escalation - ogni swipe e' un micro-commitment crescente; 3) Dopamine Loops - l'anticipazione della slide successiva crea reward-seeking; 4) Reduced Cognitive Load - contenuto a bocconi e' piu' facile da processare e ricordare.",
+    "fonte": "JdAQzAcWR6k#2:22 (frame statico)",
+    "frame": "frame-072.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-008",
+    "tipo": "prompt",
+    "contenuto": "Prompt di copy reale usato nel progetto ChatGPT: 'I want to make a carousel about my morning routine and habits. I wake up everyday at 7 am, I have cold shower, I do a bit of stretching, I walk outside for 10 min to get sunlight in my eyes, I journal and pray for 10 min, I dont use my phone in the first hour of the morning because it disrupts the dopamine'.",
+    "fonte": "JdAQzAcWR6k#2:33-2:41",
+    "frame": "frame-080.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-009",
+    "tipo": "architettura",
+    "contenuto": "Formato di output fisso del progetto Copy Writer per ogni richiesta di carosello: intestazione con PLAYBOOK (es. Tip/Value), TIER (es. TOFU growth), SLIDE COUNT (con motivazione, es. 'because it fits the Magic 8 format: hook, why, 6 useful habits, CTA'), HOOK CATEGORY; poi per ogni slide 3 varianti di hook (HOOK A/B/C) + RECOMMENDED con motivazione + FINAL COPY.",
+    "fonte": "JdAQzAcWR6k#2:38 (frame statico)",
+    "frame": "frame-080.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-010",
+    "tipo": "prompt",
+    "contenuto": "Output copy generato per la hook slide (S1 COVER) del carosello Morning Routine: HOOK A 'I protect my first hour', HOOK B 'My dopamine-proof morning' (RECOMMENDED - 'more curiosity-driven, more modern, ties directly to the dopamine angle without sounding preachy'), HOOK C 'Your phone ruins your morning'. FINAL S1 COPY: 'My dopamine-proof morning / No phone. / No scrolling. / No cheap hits. / Just a clean start.'",
+    "fonte": "JdAQzAcWR6k#2:38-2:45 (frame statico)",
+    "frame": "frame-091.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-011",
+    "tipo": "prompt",
+    "contenuto": "Output copy S2 SECOND-CHANCE HOOK (THE PROBLEM) del carosello Morning Routine: 'Most people lose the day before they even get out of bed. / They wake up. / Grab the phone. / Train their brain to chase.' (testo successivo tagliato dal frame, non ricostruibile).",
+    "fonte": "JdAQzAcWR6k#2:45 (frame statico)",
+    "frame": "frame-091.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-012",
+    "tipo": "prompt",
+    "contenuto": "Output copy S3 FIRST VALUE DROP del carosello Morning Routine: '01 - WAKE UP AT 7AM / Same time. Every day. / Not because I'm perfect. Because your brain loves rhythm more than motivation.' (testo finale confermato anche dal tool Publer, frame-159).",
+    "fonte": "JdAQzAcWR6k#2:45-2:50 (frame statico) + conferma frame-159 @5:14",
+    "frame": "frame-091.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-013",
+    "tipo": "metodo",
+    "contenuto": "Ricerca del visual anchor: Artem non cerca ispirazione su Instagram ma su Pinterest, perche' la reference puo' essere letteralmente qualsiasi cosa (copertina di libro, poster) non necessariamente un altro carosello Instagram gia' esistente.",
+    "fonte": "JdAQzAcWR6k#3:16-3:25",
+    "frame": "frame-099.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-014",
+    "tipo": "file",
+    "contenuto": "Reference visiva scelta per il carosello Morning Routine: pin Pinterest 'Fun and Playful Instagram Carousel Canva Design Template', salvato nella bacheca 'Instagram Carousel Design', un carosello di esempio blu/nero/giallo-lime dal titolo 'My mantra before starting work' con slide '01 Start small.', '02 Do your best.', '03 Learn as you go.', '04 That's enough for today.'.",
+    "fonte": "JdAQzAcWR6k#3:26-3:29",
+    "frame": "frame-105.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-015",
+    "tipo": "prompt",
+    "contenuto": "PROMPT MASTER 1 - 'Slide 1 Prompt' (hook/cover), integrale: 'Create 5 different versions of slide 1 for an Instagram carousel. Use the attached references as visual inspiration only. Borrow from the references: - typography hierarchy - spacing - colour treatment - texture - visual pacing - layout logic. Do not copy: - exact text - exact branding - exact compositions. Carousel topic: [TOPIC]. Slide type: Cover / hook slide. Slide goal: Stop the scroll and make people want to swipe. Text for slide 1: [INSERT TEXT HERE]. Visual direction: [DESCRIBE WHAT SHOULD BE ON THE SLIDE]. Style direction: Make it feel raw, editorial, clear, useful, and highly readable. It should feel designed, but not overly polished or corporate. Format: 4:5 vertical Instagram carousel slide, 1080x1350. Rules: - keep the exact text only - make all text readable - do not add random words - do not copy the references directly - make each version visually distinct.",
+    "fonte": "JdAQzAcWR6k#3:34-4:19 (Google Doc, letto scorrendo su piu' frame)",
+    "frame": "frame-114.png,frame-118.png,frame-123.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-016",
+    "tipo": "prompt",
+    "contenuto": "PROMPT MASTER 2 - 'Slide [X] Prompt' (tutte le slide dalla 2 in poi), integrale: 'Create 3 versions of a slide [x] of my Instagram carousel. Use slide 1 as the visual anchor. Match slide 1's: - typography feel - spacing - colour treatment - texture - raw editorial mood - utility details - visual hierarchy - overall design language. Do not copy the references directly. Do not make this slide feel like a new carousel. It must feel like the same visual family as Slide 1. Carousel topic: [TOPIC]. Slide type: [SLIDE TYPE]. Slide goal: [SLIDE GOAL]. Text on slide: [SLIDE TEXT]. Visual direction: [DESCRIBE WHAT SHOULD BE ON THE SLIDE]. Format: 4:5 vertical Instagram carousel slide, 1080x1350. Rules: - keep the exact text only - make all text readable - do not add random words - keep it visually consistent with slide 1 - one clear idea only.",
+    "fonte": "JdAQzAcWR6k#4:24-4:28 (Google Doc, tab 'Rest of the slides')",
+    "frame": "frame-134.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-017",
+    "tipo": "metodo",
+    "contenuto": "Per ogni slide vengono generate piu' versioni (5 per la hook slide, 3 per le slide intermedie, 5 per l'ultima slide/CTA) e l'autore sceglie manualmente la migliore ogni volta, scartando le versioni che 'non sembrano giuste'.",
+    "fonte": "JdAQzAcWR6k#4:54-5:02",
+    "frame": "frame-153.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-018",
+    "tipo": "numero",
+    "contenuto": "Tempo dichiarato per l'intero ciclo di prompting del carosello Morning Routine (8 slide): circa 10 minuti, dopo i quali il carosello e' completo e viene scaricato in una cartella locale.",
+    "fonte": "JdAQzAcWR6k#5:02-5:09",
+    "frame": "frame-159.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-019",
+    "tipo": "prompt",
+    "contenuto": "Copy finale slide CTA (ultima slide, slide 8) del carosello Morning Routine: 'THE BEST HABIT / No phone for the first hour. / Comment MORNING and I'll send my full routine.'",
+    "fonte": "JdAQzAcWR6k#4:54-5:02 (frame statico)",
+    "frame": "frame-155.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-020",
+    "tipo": "prompt",
+    "contenuto": "Copy slide 'Journal + Pray' (etichettata 05 in overlay) del carosello Morning Routine: '10 minutes. / Write what's in my head. / Pray for what I can't control. / That's how I stop carrying noise into the rest of the day.'",
+    "fonte": "JdAQzAcWR6k#4:48 (frame statico)",
+    "frame": "frame-154.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-021",
+    "tipo": "comando",
+    "contenuto": "Strumento gratuito usato per l'anteprima del carosello su Instagram prima di pubblicare: publer.com/tools/instagram-post-preview (Publer, sezione Free Tools > Instagram Post Preview). Permette upload drag-and-drop di piu' immagini e mostra un'anteprima live del post Instagram con i puntini del carosello, senza richiedere login.",
+    "fonte": "JdAQzAcWR6k#5:09-5:15",
+    "frame": "frame-157.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-022",
+    "tipo": "metodo",
+    "contenuto": "Canva Magic Layers: percorso canva.com (homepage) > riga icone in alto (Magic Layers e' la prima icona) > upload dell'immagine generata da ChatGPT > l'immagine viene trasformata in layer editabili singolarmente (testo, forme, elementi grafici spostabili). Usato solo per micro-tweak (spostare un elemento, correggere una parola), non per rigenerare interi design.",
+    "fonte": "JdAQzAcWR6k#5:39-6:14",
+    "frame": "frame-171.png,frame-173.png,frame-176.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-023",
+    "tipo": "regola",
+    "contenuto": "Regola dichiarata sull'uso di Canva Magic Layers: 'I only use magic layers if the fix is very small. Otherwise, I'll let ChatGPT do all the heavy lifting.' - cioe' Magic Layers e' un correttivo minore, non il metodo principale di produzione.",
+    "fonte": "JdAQzAcWR6k#6:10-6:14",
+    "frame": "frame-176.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-024",
+    "tipo": "regola",
+    "contenuto": "Lo stesso sistema di prompt (visual anchor + prompt stack) funziona anche per infografiche LinkedIn, non solo per caroselli Instagram - cambia solo il topic e il formato, non la logica del metodo.",
+    "fonte": "JdAQzAcWR6k#6:14-6:18",
+    "frame": "frame-193.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-025",
+    "tipo": "prompt",
+    "contenuto": "Prompt dichiarato a voce per ricreare un'infografica LinkedIn di riferimento: 'recreate this infographic' (il testo digitato completo in chat e' piu' lungo e visibile a schermo ma parzialmente sfocato/troppo piccolo per una trascrizione integrale certa).",
+    "fonte": "JdAQzAcWR6k#6:34-6:38",
+    "frame": "frame-196.png",
+    "confidenza": "inferito"
+  },
+  {
+    "id": "KA-026",
+    "tipo": "file",
+    "contenuto": "Riferimento infografico LinkedIn copiato: 'How LLM-SEO Finds Your Brand' di Madhav Mistry - flowchart completo (User -> Query -> LLM Search Console -> Query Parsing -> Refined Question/First Answer -> Large Language Model con icone Gemini/Claude -> AI Instructions -> Choose a Path -> Extra Thinking Model LLMs: Claude 4 Sonnet, GPT-4o Reasoning, Gemini 2.5 Pro -> Deeper Reasoning Model -> Retrieval Agents Short-Term/Long-Term -> Retrieval Agent A/B -> Public Web Sources/Search Engines), footer 'Master the Layers -> Train the AI. Structure for retrieval. Publish for visibility.' / 'Structure -> Retrieve -> Cite | Repost it to your Network | Follow Madhav Mistry'.",
+    "fonte": "JdAQzAcWR6k#6:31-6:34 (frame statico)",
+    "frame": "frame-197.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-027",
+    "tipo": "prompt",
+    "contenuto": "Infografica LinkedIn generata come risultato ('recreate this infographic'): 'Google Search Changed. SEO Alone Is Not Enough.' - sottotitolo 'What AI Mode means for your website, and how to optimize for GEO', 4 sezioni: 1) OLD SEARCH VS NEW AI SEARCH (Old Search: Search->Click->website->info vs New AI Search: Question->AI answer->chat, 'Biggest shift in search in decades'); 2) WHAT GOOGLE SAYS ('No magic community required'); 3) YOUR GEO PLAYBOOK; 4) WHAT TO IGNORE; box 'Claude GEO Audit Skill' con esempio 'Change Our Services -> What does [X] do?'; CTA finale 'Comment SEARCH and I'll send the skill + full GEO playbook'.",
+    "fonte": "JdAQzAcWR6k#6:38 (frame statico, perfettamente leggibile)",
+    "frame": "frame-201.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-028",
+    "tipo": "numero",
+    "contenuto": "Post LinkedIn reale dell'autore (tool stack aziendale, Stripe + Mercury/Revolut Business) mostrato come prova sociale del formato infografico: 1,271 reazioni (incluso 'Ariel Cohen and 1,271 others'), 390 commenti, 28 repost.",
+    "fonte": "JdAQzAcWR6k#6:16-6:24 (frame statico)",
+    "frame": "frame-176.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-029",
+    "tipo": "numero",
+    "contenuto": "Il carosello Instagram gia' pubblicato dall'autore ('I AUTOMATED MY CAROUSELS WITH CHATGPT') ha ottenuto, dichiarato a voce, 'nearly 100,000 views'. Dagli Instagram Insights mostrati a schermo si leggono con certezza: Interactions 12,911; Comments 6,003; Shares 1,743 (il numero esatto di Views non e' leggibile con certezza per offuscamento/compressione dello screenshot).",
+    "fonte": "JdAQzAcWR6k#0:01-0:11",
+    "frame": "frame-004.png,frame-006.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-030",
+    "tipo": "metodo",
+    "contenuto": "Confronto diretto mostrato tra un carosello generato con prompt 'one shot' (tutte le 6-7 slide richieste in un solo prompt) e uno generato slide-per-slide con visual anchor, sullo stesso topic/brief: il one-shot risulta 'a bit messy, doesn't have any taste', lo slide-per-slide risulta 'very polished, consistent from slide to slide, looks something like a designer would make'.",
+    "fonte": "JdAQzAcWR6k#1:33-1:56",
+    "frame": "frame-053.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-031",
+    "tipo": "prompt",
+    "contenuto": "Prompt meta usato per generare un carosello dimostrativo sul metodo stesso (chat 'GPT Stage 2 Carousel'): 'can you generate a 5-7 slide carousel about how gpt image 2 can be used to fully automate instagram carousel and generate me those 5-7 slides, think through each slide, this carousel has to go mega viral on each word and visual asset must it earn its place I want this carousel to showcase the full capability of its model and how it can easily be integrated or to automate Instagram Carousels. The last slide must be a CTA like Comment the word image and I'll send you the exact guide to set this up or something along the lines of that. I will send them instructions and a prompt to automate this.'",
+    "fonte": "JdAQzAcWR6k#0:22 circa (frame statico, chat separata usata per pianificazione contenuti)",
+    "frame": "frame-023.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-032",
+    "tipo": "architettura",
+    "contenuto": "Framework a 5 step + prompt stack a 4 elementi, mostrato in una lavagna Excalidraw come esempio di 'metodo' da comunicare al pubblico: workflow 01 Pick an angle, 02 Build the slide outline, 03 Lock the visual style, 04 Generate each slide, 05 Critique and refine; prompt stack 01 STRATEGY PROMPT, 02 STYLE PROMPT, 03 SLIDE PROMPT, 04 CRITIQUE PROMPT.",
+    "fonte": "JdAQzAcWR6k#circa 1:00 (frame statico, contenuto dimostrativo/esempio, non il workflow realmente eseguito nel resto del video)",
+    "frame": "frame-051.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-033",
+    "tipo": "regola",
+    "contenuto": "Slogan riassuntivo mostrato sulla lavagna Excalidraw: 'The unlock is not the image. It's the system.' - il punto centrale del video e' il processo ripetibile (prompt stack + visual anchor), non un singolo prompt fortunato.",
+    "fonte": "JdAQzAcWR6k#circa 1:00 (frame statico)",
+    "frame": "frame-051.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-034",
+    "tipo": "numero",
+    "contenuto": "Community privata dell'autore (piattaforma Skool) con weekly call per domande; nome community non perfettamente leggibile a schermo. Post visibili in home: 'Welcome to [community] (con emoji mano)', 'My AI Stack Right Now (Continuously Updated)', 'System #002: Free Local Way to Transcribe Reels, TikToks and YT', 'Discovery #001: How to Use ChatGPT Image 2 to Automate Instagram [...]'.",
+    "fonte": "JdAQzAcWR6k#7:24-7:33",
+    "frame": "frame-224.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-035",
+    "tipo": "architettura",
+    "contenuto": "Identita' dell'autore confermata via LinkedIn mostrato a schermo: Artem Novitckii, Co-founder @ Aha!, 'Teaching how to build and scale AI Systems', Auckland (Nuova Zelanda).",
+    "fonte": "JdAQzAcWR6k#6:16 (frame statico, LinkedIn)",
+    "frame": "frame-176.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-036",
+    "tipo": "metodo",
+    "contenuto": "Prima di generare qualunque immagine, la copy deve essere definita per intero (numero di slide + testo di ogni slide) perche' e' il passo che la maggioranza delle persone salta, ma non va saltato: 'it doesn't matter how pretty your carousel is [if the copy is weak]'.",
+    "fonte": "JdAQzAcWR6k#2:02-2:11",
+    "frame": "frame-072.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-037",
+    "tipo": "regola",
+    "contenuto": "Ogni volta che ChatGPT non produce un risultato soddisfacente per una slide, la tecnica dichiarata e' semplicemente richiedere di nuovo finche' non si ottiene una versione soddisfacente, perche' quella specifica slide (la hook) e' 'the most important step' e definisce il mood dell'intero carosello.",
+    "fonte": "JdAQzAcWR6k#4:04-4:19",
+    "frame": "frame-119.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-038",
+    "tipo": "comando",
+    "contenuto": "Struttura cartelle: le 8 slide generate vengono scaricate in una singola cartella locale nominata dal topic (es. file slide-1.png ... slide-8.png visti nel file picker di Canva), poi caricate tutte insieme sia in Publer (per l'anteprima) sia in Canva (per eventuali micro-tweak con Magic Layers).",
+    "fonte": "JdAQzAcWR6k#5:09-5:39",
+    "frame": "frame-173.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-039",
+    "tipo": "numero",
+    "contenuto": "Ripartizione del tempo dichiarata per il metodo completo: copy 40% del tempo, generazione hook slide/visual anchor 50% del tempo (la fase piu' importante), costruzione slide successive 10% del tempo, piu' un passo opzionale extra di rifinitura con Canva Magic Layers.",
+    "fonte": "JdAQzAcWR6k#6:53-7:22",
+    "frame": "frame-216.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-040",
+    "tipo": "regola",
+    "contenuto": "Format tecnico fisso richiesto in entrambi i prompt master: '4:5 vertical Instagram carousel slide, 1080x1350' - stesso formato standard usato anche dalla skill DE carousel-empire (1080x1350px, 4:5 IG).",
+    "fonte": "JdAQzAcWR6k#3:38-4:19",
+    "frame": "frame-118.png",
+    "confidenza": "osservato"
+  }
+]

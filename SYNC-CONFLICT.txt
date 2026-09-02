@@ -1,12 +1,5 @@
-﻿[2026-09-02 19:50:24] CONFLITTO DI SYNC
-COMMIT BLOCCATO da un controllo pre-commit. Il lavoro NON e' committato ne' pushato.
-
-On branch main Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.   (use "git pull" to update your local branch)  Changes not staged for commit:   (use "git add <file>..." to update what will be committed)   (use "git restore <file>..." to discard changes in working directory)   (commit or discard the untracked or modified content in submodules) 	modified:   SKILL & Agenti/Orchestracion Layer - Problem solving/poc/ruflo-source (modified content)  no changes added to commit (use "git add" and/or "git commit -a")
-
-Cosa fare: leggi il messaggio qui sopra, correggi il problema (spesso basta
-  python .githooks/check_memory.py --fix
-) e rilancia. Non usare --no-verify: quei controlli fermano guasti che si
-scoprirebbero al merge, a ore di distanza.
+﻿[2026-09-02 20:12:16] CONFLITTO DI SYNC
+Rebase pre-push fallito: CONFLICT (modify/delete): SYNC-CONFLICT.txt deleted in HEAD and modified in f0a173fc (sync(Max): aggiornamento automatico 2026-09-02 20:12).  Version f0a173fc (sync(Max): aggiornamento automatico 2026-09-02 20:12) of SYNC-CONFLICT.txt left in tree.
 Il tuo lavoro e' al sicuro (committato in locale).
 Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
 Poi cancella questo file.
