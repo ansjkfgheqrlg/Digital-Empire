@@ -1,3 +1,30 @@
+## 🗓️ 2026-09-02 — CLAUDE: TASK-KDP-PIANO-W2 CHIUSO — piano settimanale, 3 agenti, 2 comandi — CP-20260902-002
+
+Seconda task della W2, chiusa col gate. **193 test verdi** (erano 182).
+
+**`/piano-libri`** -> 7 righe, **KDP-GATE PASS**, 0,19 $, in `LIBRI/_piani/piano_2026-08-31.json`.
+**`/libro-del-giorno`** senza parametri -> calcola da solo che oggi e' il **giorno 3** e apre
+*The Coven of Lost Ember* (nicchia 80,6 misurata oggi, autore Maren Ashcroft).
+
+**3 agenti ufficiali** in `agenti/`, formato standard IB-L2-LANC: **KDP-SCOUT** propone e
+**misura**, **KDP-EDITOR** trasforma in righe eseguibili, **KDP-GATE** verifica prima che
+qualcuno esegua. GATE **non usa nessun modello**: deterministico, costo zero, meno di un
+secondo — un controllo che costa e che puo' variare e' un controllo che prima o poi si salta.
+Se blocca, **non viene scritto niente** ed esce != 0, come `kdp copy`.
+
+Ogni riga ha 11 campi con numeri Amazon **reali e datati**, e l'angolo differenziante cita
+concorrenti **veri** letti dai `top_titoli` (*Family Magic*, *Cider Mill Coven*): un angolo
+che cita concorrenti generici e' un'invenzione.
+
+**Le due regole, verificate dal vivo**: col libro di oggi aperto e incompleto il comando lo
+**riprende** e rifiuta di aprirne un altro (Regola 6); senza piano si **ferma** e rimanda a
+`/piano-libri` invece di improvvisare — e' cosi' che e' nato B-018.
+
+**RIPRESA DA**: task 3 (5 libri) — **Gael da' il via prima**. Il piano c'e' e il libro del
+giorno 3 e' gia' aperto. Resta **FIX-1**, sulle mani di Gael.
+
+---
+
 ## 🧭 2026-09-02 — CLAUDE: FIX-6 chiuso — il magazzino ora si rifornisce DA SOLO (`kdp scout`)
 
 Chiuso l'ultimo fix che potevo chiudere io. **5 su 6**; resta aperto solo **FIX-1**, che e'

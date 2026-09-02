@@ -681,6 +681,15 @@ def costruisci_parser() -> argparse.ArgumentParser:
     sc.add_argument("--dry-run", action="store_true", help="mostra cosa farebbe, non scrive")
     sc.add_argument("--visibile", action="store_true", help="mostra il browser")
 
+    pi = sub.add_parser("piano",
+                        help="piano editoriale della settimana: SCOUT -> EDITOR -> GATE")
+    pi.add_argument("--giorni", type=int, default=7)
+    pi.add_argument("--dry-run", action="store_true", help="valida ma non scrive")
+
+    lg = sub.add_parser("libro-del-giorno",
+                        help="apre il libro di oggi dal piano della settimana. Non improvvisa.")
+    lg.add_argument("--giorno", type=int, default=None, help="forza un giorno del piano")
+
     dg = sub.add_parser("diagnosi",
                         help="referto onesto sul flusso: tempi, costi, dove si blocca, cosa e' rotto")
     dg.add_argument("--slug", default=None, help="un libro solo invece di tutti")
@@ -705,6 +714,21 @@ def costruisci_parser() -> argparse.ArgumentParser:
                     help="motivo se la nicchia si scosta da quella del catalogo")
 
     return cli
+
+
+def _cmd_piano(args) -> int:
+    """KDP-SCOUT -> KDP-EDITOR -> KDP-GATE. Se GATE blocca, non scrive niente."""
+    from . import piano
+    esito = piano.genera(giorni=args.giorni, dry_run=args.dry_run)
+    print(esito)
+    return OK if esito.ok else VALIDAZIONE_FALLITA
+
+
+def _cmd_libro_del_giorno(args) -> int:
+    from . import libro_del_giorno
+    esito = libro_del_giorno.apri(forza_giorno=args.giorno)
+    print(esito)
+    return OK if esito.ok else VALIDAZIONE_FALLITA
 
 
 def _cmd_scout(args) -> int:
@@ -757,7 +781,8 @@ def main(argv: list[str] | None = None) -> int:
               "copy": _cmd_copy, "pacchetto": _cmd_pacchetto,
               "consegna": _cmd_consegna, "pubblicato": _cmd_pubblicato,
               "diagnosi": _cmd_diagnosi, "auto": _cmd_auto,
-              "scout": _cmd_scout}
+              "scout": _cmd_scout, "piano": _cmd_piano,
+              "libro-del-giorno": _cmd_libro_del_giorno}
     try:
         return azioni[args.comando](args)
     except KeyboardInterrupt:

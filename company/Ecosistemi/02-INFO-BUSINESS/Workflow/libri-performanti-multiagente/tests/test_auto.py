@@ -316,3 +316,101 @@ class TestScout:
         monkeypatch.setattr(nicchia_attiva, "carica", lambda: None)
         e = scout.rifornisci(scrittore=ScrittoreFinto())
         assert not e.inseriti and "nessuna nicchia attiva" in e.errore
+
+
+# --------------------------------------------------------------------------- #
+# TASK-KDP-PIANO-W2 (2026-09-02): piano editoriale, KDP-GATE, libro del giorno
+# --------------------------------------------------------------------------- #
+def _riga(giorno=1, **over):
+    r = {
+        "giorno": giorno, "data_produzione": "2026-09-02",
+        "nicchia": "witch bookshop cozy", "punteggio_nicchia": 82.0,
+        "dati_amazon": {"punteggio": 82.0, "recensioni_mediana": 60,
+                        "prezzo_medio": 11.0, "concorrenti_deboli": 7,
+                        "concorrenti_analizzati": 16, "misurato_il": "2026-09-02"},
+        "titolo_lavoro": "The Ledger %d" % giorno, "autore": "Maren Ashcroft",
+        "premessa": " ".join(["parola"] * 40),
+        "struttura_prevista": {"capitoli": 24, "parole_per_capitolo": 1600,
+                               "parole_totali_bersaglio": 38400, "pagine_minime_reali": 115},
+        "angolo_differenziante": "A differenza di X e Y, qui il coven nasce dalla diffidenza.",
+        "comando_cli": 'python -m engine.kdp nuovo "The Ledger %d" --nicchia "x"' % giorno,
+    }
+    r.update(over)
+    return r
+
+
+class TestKdpGate:
+    """Chi scrive il piano non e' chi lo approva. Il gate fratello (`kdp blocco`) ha
+    bocciato 2 volte su 7 su The Winter Term e aveva ragione entrambe."""
+
+    def test_un_piano_completo_passa(self):
+        from engine import piano
+        assert piano.verifica([_riga(1), _riga(2)], giorni=2).ok
+
+    def test_blocca_un_campo_mancante(self):
+        from engine import piano
+        v = piano.verifica([_riga(1, angolo_differenziante="")], giorni=1)
+        assert not v.ok and any("angolo" in b for b in v.blocchi)
+
+    def test_blocca_un_numero_senza_data_di_misura(self):
+        """Il difetto del 2026-09-01: numeri di 19 giorni prima, nicchia da 83,1 a 72,9."""
+        from engine import piano
+        d = {"punteggio": 82.0}
+        v = piano.verifica([_riga(1, dati_amazon=d)], giorni=1)
+        assert not v.ok and any("data di misura" in b for b in v.blocchi)
+
+    def test_blocca_punteggio_incoerente(self):
+        from engine import piano
+        v = piano.verifica([_riga(1, punteggio_nicchia=99.0)], giorni=1)
+        assert not v.ok and any("non coincide" in b for b in v.blocchi)
+
+    def test_blocca_comando_non_compilato(self):
+        from engine import piano
+        v = piano.verifica([_riga(1, comando_cli="python -m engine.kdp nuovo")], giorni=1)
+        assert not v.ok and any("comando_cli" in b for b in v.blocchi)
+
+    def test_blocca_titoli_duplicati(self):
+        from engine import piano
+        v = piano.verifica([_riga(1), _riga(2, titolo_lavoro="The Ledger 1")], giorni=2)
+        assert not v.ok and any("duplicato" in b for b in v.blocchi)
+
+    def test_meno_righe_e_un_avviso_non_un_blocco(self):
+        """Meglio un piano da 4 righe vero che da 7 con tre inventate (Art.2)."""
+        from engine import piano
+        v = piano.verifica([_riga(1)], giorni=7)
+        assert v.ok and any("meno righe" in a or "invece di" in a for a in v.avvisi)
+
+    def test_raccoglie_TUTTI_i_problemi_non_solo_il_primo(self):
+        from engine import piano
+        v = piano.verifica([_riga(1, angolo_differenziante="", comando_cli="")], giorni=1)
+        assert len(v.blocchi) >= 2, "un gate che si ferma al primo errore costa tre giri"
+
+
+class TestLibroDelGiorno:
+    def test_senza_piano_si_ferma_e_non_inventa(self, libri, monkeypatch):
+        """B-018 e' nato cosi': un comando che improvvisa quando manca l'input."""
+        from engine import libro_del_giorno, piano
+        monkeypatch.setattr(piano, "carica_piano", lambda *a, **k: None)
+        e = libro_del_giorno.apri()
+        assert not e.ok and "piano" in e.errore.lower()
+
+    def test_prende_la_riga_del_giorno_giusto(self, libri, monkeypatch):
+        import datetime
+        from engine import libro_del_giorno, piano
+        monkeypatch.setattr(piano, "carica_piano",
+                            lambda *a, **k: {"settimana_dal": "2026-08-31",
+                                             "righe": [_riga(1), _riga(2), _riga(3)]})
+        e = libro_del_giorno.apri(oggi=datetime.date(2026, 9, 2))   # mercoledi = giorno 3
+        assert e.giorno == 3 and e.riga["titolo_lavoro"] == "The Ledger 3"
+
+    def test_regola_6_riprende_il_libro_aperto(self, libri, monkeypatch):
+        import datetime
+        from engine import libro_del_giorno, piano
+        from engine.book_project import BookProject
+        BookProject.crea("Un Libro Aperto", "x", "Maren Ashcroft", 24, 1600)
+        monkeypatch.setattr(piano, "carica_piano",
+                            lambda *a, **k: {"settimana_dal": "2026-08-31",
+                                             "righe": [_riga(1)]})
+        e = libro_del_giorno.apri(oggi=datetime.date(2026, 8, 31))
+        assert e.ripresa and e.slug == "un-libro-aperto"
+        assert not e.ok, "non deve aprire un secondo libro sopra uno incompleto"

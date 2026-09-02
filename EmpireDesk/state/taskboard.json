@@ -285,8 +285,8 @@
       "owner": "Gael",
       "giorno": "W2 (1-7 set)",
       "titolo": "Piano editoriale settimanale libri + team 3 agenti (SCOUT/EDITOR/GATE) + comandi /piano-libri e /libro-del-giorno",
-      "stato": "da_fare",
-      "note": "TASK-GAEL-20260831-SETTIMANA-02.md - ordine obbligatorio: FIX -> PIANO -> 5LIBRI -> LANCI"
+      "stato": "fatto",
+      "note": "FATTO 2026-09-02 (CP-20260902-002). Gate superato con run reali. `/piano-libri` -> 7 righe, KDP-GATE PASS, 0,19$, LIBRI/_piani/piano_2026-08-31.json+.md. `/libro-del-giorno` senza parametri -> giorno 3, 'The Coven of Lost Ember', slug aperto. 3 agenti ufficiali in agenti/ nel formato standard IB-L2-LANC: KDP-SCOUT (propone e MISURA), KDP-EDITOR (7 righe eseguibili), KDP-GATE (verifica prima dell'esecuzione, NESSUN modello: deterministico, costo zero, <1s). Se GATE blocca non viene scritto niente ed esce !=0, come kdp copy. Blocca su: campo mancante, dati_amazon senza misurato_il, punteggio incoerente, comando_cli non compilato, titoli duplicati, premessa <20 parole, angolo vuoto; e raccoglie TUTTI i problemi, non solo il primo. Ogni riga ha 11 campi con numeri Amazon REALI e datati, e l'angolo differenziante cita concorrenti VERI letti dai top_titoli (Family Magic, Cider Mill Coven). REGOLA 6 verificata dal vivo: col libro di oggi aperto e incompleto il comando lo riprende e RIFIUTA di aprirne un altro. Senza piano si ferma e rimanda a /piano-libri invece di improvvisare (e' cosi' che e' nato B-018). 193 test verdi (erano 182)."
     },
     {
       "id": "TASK-KDP-5LIBRI-W2",
