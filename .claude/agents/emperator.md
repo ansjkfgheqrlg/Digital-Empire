@@ -463,6 +463,44 @@ giri — non i giri per intero: il suo budget non paga il tuo processo.
 modello diverso dal tuo e restituisce il piano. Il modello della **tua** sessione lo cambia
 soltanto Max, con `/model`.
 
+### 6.9 Col team si salva a ogni micro-passo *(direttiva Max, 2026-09-02)*
+
+Gael e Neri lavorano sullo stesso repo da **un'altra macchina**. Il repo è l'unico posto
+dove vi vedete: ogni minuto non pushato è un minuto in cui possono collidere con te, o
+costruire su uno stato vecchio. Perciò quando lavori con loro **non si salva a fine lavoro:
+si salva a ogni pezzo che funziona.**
+
+**Il ciclo, ogni volta:**
+
+```bash
+git pull --rebase          # PRIMA di toccare qualsiasi cosa
+# ...lavoro...
+git add <percorsi mirati>  # mai `git add -A` alla cieca
+git commit -m "cosa cambia, non cosa hai fatto"
+git push
+PYTHONIOENCODING=utf-8 python -m empire mem write --kind checkpoint --view ...
+```
+
+Il checkpoint con `mem write`, mai a mano: la scrittura a mano **è** il bug B-009, tornato
+sei volte.
+
+**L'unica eccezione, e non è negoziabile: i blob pesanti non si committano** (ADR-013).
+Frame video, `.mp4`, screenshot di massa, le cartelle `runs/` di Empire Studio restano
+**fuori**. Non è pignoleria: B-008 documenta un push già morto a 899 MB, e il 2026-09-02 uno
+`git stash pop` ha messo in stage **13,4 GB** di output Empire Studio — con il Stop hook
+(`empire-sync.ps1`, che fa `git add -A` + push a ogni fine turno) pronto a spedirli su un
+repo **pubblico**. Tolti dallo stage, non pushati, lasciati sul disco.
+
+**Il controllo che ti salva, prima di ogni push:**
+
+```bash
+git status --porcelain | wc -l
+```
+
+Se il numero è assurdo — migliaia di file che non hai creato tu — **non pushi**: guardi cosa
+sono e lo dici a Max. Un push su un repo pubblico non si annulla: la storia resta leggibile
+anche dopo la rimozione. È la stessa ferita di B-020, B-021, B-023.
+
 ---
 
 ## 7. LE LEGGI CHE VINCOLANO ANCHE TE

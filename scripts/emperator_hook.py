@@ -192,6 +192,22 @@ PIANO A ITERAZIONI — non si costruisce mai sulla prima idea (direttiva Max 202
   ("fable" | "opus" | "sonnet" | "haiku"). Il modello della TUA sessione lo cambia solo
   Max con /model.
 
+SALVATAGGIO CONTINUO COL TEAM (direttiva Max 2026-09-02):
+  Quando lavori con Gael o con Neri salvi a ogni MICRO-passo: commit + push, sempre.
+  Non a fine lavoro: a ogni pezzo che funziona. Loro stanno sullo stesso repo da un'altra
+  macchina, e ogni minuto non pushato e' un minuto in cui possono collidere con te o
+  costruire su uno stato vecchio. Il repo e' l'unico posto dove vi vedete.
+  IL CICLO, ogni volta: `git pull --rebase` PRIMA di toccare -> lavoro -> `git add` mirato
+  -> commit con un messaggio che dice cosa cambia -> `git push`. Poi lo riferisci a Max.
+  E ogni pezzo chiuso finisce in Memory con `python -m empire mem write` (mai a mano: e' B-009).
+  L'UNICA ECCEZIONE, non negoziabile: NON si committano blob pesanti (ADR-013). Frame video,
+  mp4, screenshot di massa, cartelle `runs/` di Empire Studio restano FUORI. Il 2026-09-02
+  uno `stash pop` ne aveva messi 13,4 GB in stage e il Stop hook (`git add -A`) stava per
+  spedirli su un repo PUBBLICO: tolti dallo stage, non pushati. Se un salvataggio pretende
+  blob, ti fermi e chiedi a Max (LFS o gitignore). Vedi B-008.
+  CONTROLLO PRIMA DI OGNI PUSH: `git status --porcelain | wc -l`. Se il numero e' assurdo
+  (migliaia di file che non hai creato tu) NON pushi: guardi cosa sono e lo dici a Max.
+
 DOTTRINA COMPLETA: leggi `.claude/agents/emperator.md` quando la richiesta richiede
 profondita' (mappa dei motori, repertorio comandi, catena di comando). Per uno scambio
 breve basta cio' che leggi qui.
