@@ -277,8 +277,8 @@
       "owner": "Gael",
       "giorno": "W2 (1-7 set)",
       "titolo": "PRIMA DI TUTTO: 6 fix libri — 4 ASIN su KDP, 1 nicchia+1 autore (B-018), 4 pacchetti exit 0, falsi positivi trattino, stima pagine, magazzino >=7",
-      "stato": "da_fare",
-      "note": "TASK-GAEL-20260831-SETTIMANA-02.md - ordine obbligatorio: FIX -> PIANO -> 5LIBRI -> LANCI"
+      "stato": "in_corso",
+      "note": "PARZIALE 2026-09-01/02 (CP-20260902-001). 4 fix su 6 chiusi col gate, 179 test verdi (erano 135). FIX-1 BLOCCATO DALL'ESTERNO e dichiarato subito come chiesto da Max: l'upload su KDP e' un'azione irreversibile sull'account Amazon di una persona (la SOP stessa dice 'Gael carica su KDP'), e la copertina di The_Winter_Term non e' generabile qui (nessuna API immagini; profilo Arena presente ma verificato non_autenticato). libri_pubblicati/ resta vuoto, 0 ASIN. I 3 libri pubblicabili sono pronti all'upload. FIX-2 CHIUSO: nicchia 'witch bookshop cozy fantasy' 83,5 + autore unico Maren Ashcroft, scelti rimisurando tutte e 6 le candidate LO STESSO GIORNO (la prima scelta era su dati del 13 agosto ed era sbagliata: cozy fantasy bookshop e' passata da 83,1 a 72,9). Corretto un guardrail che difendeva il nulla: il margine di 12 punti per cambiare nicchia si applicava anche con 0 libri pubblicati, blindando il catalogo nella nicchia peggiore (61,1). B-018 chiuso. FIX-3 CHIUSO: 5 pacchetti su 5 a exit 0 (i 3 rossi erano nati prima del fix del 25/08, non difettosi). FIX-4 CHIUSO: 79 falsi positivi trattino -> 0, lineette lunghe ancora bloccate. Il colpevole era valida_trattini, non valida_lineette: l'approccio a lista di eccezioni non puo' coprire i composti inglesi, riscritta per cercare la forma reale del difetto. FIX-5 CHIUSO: stima pagine da errore max 8,0 a 1,2 pagine. Non era tarata male, era il modello sbagliato: le parole/pagina scendono al crescere dei PARAGRAFI (ogni paragrafo spreca la coda di una riga), quindi il divisore fisso non poteva funzionare. Nuovo modello a caratteri+paragrafi. FIX-6 SBLOCCATO MA NON FINITO: magazzino ancora a 0 argomenti liberi, ma la ricerca Amazon era rotta per tre guasti in fila ed ora funziona (sessione creata SENZA login perche' la ricerca e' pubblica; browser Playwright installato; messaggio d'errore che crashava su console cp1252 e NASCONDEVA l'errore vero, stessa forma di B-013). RESTA: FIX-1 (serve una persona), FIX-6 (>=7 argomenti), e Proof_of_Murder e' a 111 pagine sotto il minimo di 115. Sessione chiusa su richiesta di Max."
     },
     {
       "id": "TASK-KDP-PIANO-W2",
@@ -307,5 +307,5 @@
   ],
   "fonte": "PIANO-MAESTRO/16-PIANO-ESTATE-REVENUE.md + company/Memory/tasks/TASK-GAEL-20260824-SETTIMANA-01.md + TASK-NERI-20260824-SETTIMANA-01.md (cadenza settimanale da 2026-08-23)",
   "creato": "2026-07-21 08:20",
-  "aggiornato": "2026-08-27"
+  "aggiornato": "2026-09-02"
 }

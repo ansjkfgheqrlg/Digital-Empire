@@ -113,9 +113,19 @@ class StatoProgetto:
     parole_target: int
     prossimo_capitolo: int | None
     completo: bool
+    caratteri_scritti: int = 0
+    paragrafi_scritti: int = 0
 
     def __str__(self) -> str:
-        pagine = round(self.parole_scritte / config.WORDS_PER_PAGE_ESTIMATE, 1)
+        # Stima col modello misurato (FIX-5): conta lo spazio occupato, non le parole.
+        # Il divisore fisso parole/320 sbagliava fino a 8 pagine e in modo non monotono.
+        # Se i conteggi di struttura non ci sono (stato costruito da codice vecchio),
+        # si ricade sul divisore storico invece di mentire con uno zero.
+        if self.caratteri_scritti:
+            pagine = round(config.stima_pagine(self.caratteri_scritti,
+                                               self.paragrafi_scritti), 1)
+        else:
+            pagine = round(self.parole_scritte / config.WORDS_PER_PAGE_ESTIMATE, 1)
         pagine_target = round(self.parole_target / config.WORDS_PER_PAGE_ESTIMATE)
         # Il MINIMO che blocca la consegna vive in config, non in progetto.json: un libro
         # creato prima di un cambio di taratura porterebbe in giro un bersaglio vecchio e
@@ -274,10 +284,16 @@ class BookProject:
         cfg = self._config()
         scritti = self.capitoli_presenti()
         totali = cfg["capitoli_totali"]
-        parole = sum(len(self.path_capitolo(n).read_text(encoding="utf-8").split())
-                     for n in scritti)
+        parole = caratteri = paragrafi = 0
+        for n in scritti:
+            testo = self.path_capitolo(n).read_text(encoding="utf-8")
+            parole += len(testo.split())
+            caratteri += len(testo)
+            paragrafi += sum(1 for p in testo.split("\n\n") if p.strip())
         mancanti = [n for n in range(1, totali + 1) if n not in scritti]
         return StatoProgetto(
+            caratteri_scritti=caratteri,
+            paragrafi_scritti=paragrafi,
             slug=self.slug,
             titolo=cfg["titolo"],
             capitoli_scritti=scritti,

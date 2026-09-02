@@ -94,6 +94,49 @@ TARGET_PAGE_COUNT_TOLERANCE = 5  # accettato: 115-125 pagine
 TARGET_WORD_COUNT_MIN = (TARGET_PAGE_COUNT - TARGET_PAGE_COUNT_TOLERANCE) * WORDS_PER_PAGE_ESTIMATE
 TARGET_WORD_COUNT_MAX = (TARGET_PAGE_COUNT + TARGET_PAGE_COUNT_TOLERANCE) * WORDS_PER_PAGE_ESTIMATE
 
+
+# --------------------------------------------------------------------------- #
+# STIMA PAGINE — modello misurato (FIX-5, 2026-08-30)
+# --------------------------------------------------------------------------- #
+# Il divisore fisso parole/320 sbagliava fino a 8 pagine, e sbagliava in modo NON monotono:
+# il libro con piu' parole risultava avere meno pagine. Misurato sui 5 libri con PDF reale:
+#
+#   libro                       parole  paragrafi  parole/pagina  pagine reali
+#   Proof_of_Murder              37726        831          339,9           111
+#   The_Winter_Term              39668       1364          342,0           116
+#   The_Second-Hand_Spellbook    38128       1518          323,1           118
+#   The_Quiet_Hours              37168       1741          315,0           118
+#   The_Ninth_Winter             36871       1690          309,8           119
+#
+# Le parole per pagina scendono al crescere dei PARAGRAFI, in modo pulito: ogni paragrafo
+# chiude una riga e ne spreca la coda. Dialogo fitto = paragrafi corti = molte code sprecate
+# = piu' pagine a parita' di parole. Il divisore fisso ignorava proprio questo, ed e' per
+# questo che non poteva funzionare: non era tarato male, era il modello sbagliato.
+#
+# Modello: si conta lo spazio occupato, non le parole. Base in CARATTERI (la lunghezza media
+# delle parole varia fra libri e falsava il conto: a parita' di tutto, la base a parole
+# sbaglia fino a 3,9 pagine, quella a caratteri 1,2).
+CHARS_PER_PAGE = 2215.6          # caratteri che stanno in una pagina impaginata
+CHARS_WASTED_PER_PARAGRAPH = 39.6  # coda di riga sprecata da ogni fine paragrafo
+STIMA_PAGINE_ERRORE_MAX = 1.2    # errore massimo MISURATO sui 5 libri veri
+
+
+def stima_pagine(caratteri: int, paragrafi: int) -> float:
+    """Pagine stimate. E' una STIMA: l'errore misurato e' +/-%.1f pagine sui libri veri.
+
+    Resta vero che **solo il PDF conta** per la consegna: questa serve a sapere dove si sta
+    andando MENTRE si scrive, non a sostituire il conteggio reale.
+    """ % STIMA_PAGINE_ERRORE_MAX
+    if caratteri <= 0:
+        return 0.0
+    return (caratteri + CHARS_WASTED_PER_PARAGRAPH * max(0, paragrafi)) / CHARS_PER_PAGE
+
+
+def stima_pagine_da_testo(testo: str) -> float:
+    """Come `stima_pagine`, ma conta da sola caratteri e paragrafi del testo."""
+    paragrafi = sum(1 for p in testo.split("\n\n") if p.strip())
+    return stima_pagine(len(testo), paragrafi)
+
 # --------------------------------------------------------------------------- #
 # Story Validator (CP3) — niche story SI, diario/questionario NO. Liste reali
 # usate per un controllo deterministico a keyword, nessuna chiamata LLM.

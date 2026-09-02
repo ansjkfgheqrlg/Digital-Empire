@@ -1,23 +1,17 @@
 {
-  "keyword": "small town romance suspense",
-  "punteggio_iniziale": 77.7,
-  "scelta_il": "2026-08-13T17:58:12",
-  "motivazione": "recensioni mediane 324 -> 48.7/50 | 6 concorrenti sotto 100 recensioni su 20 -> 9.0/30 | prezzo medio $10.77 -> 20.0/20",
+  "keyword": "witch bookshop cozy fantasy",
+  "punteggio_iniziale": 83.5,
+  "scelta_il": "2026-09-01T20:51:48",
+  "motivazione": "Decisione di catalogo del 2026-09-01 (FIX-2). Tutte le candidate rimisurate LO STESSO GIORNO con lo stesso metodo, perche' i punteggi in magazzino erano del 13 agosto e nel frattempo erano cambiati molto (cozy fantasy bookshop: 83,1 allora, 72,9 oggi).\n  witch bookshop cozy fantasy    83,5  rec.mediana   62  deboli  9/20  prezzo 11,36\n  cozy mystery bakery small town 78,1  rec.mediana   55  deboli 10/16  prezzo  4,66\n  dark academia mystery          76,3  rec.mediana  223  deboli  5/20  prezzo  9,47\n  amish romance suspense         76,3  rec.mediana  154  deboli  7/16  prezzo  6,58\n  cozy fantasy bookshop          72,9  rec.mediana  518  deboli  4/16  prezzo  9,33\n  small town romance suspense    61,1  rec.mediana 1272  deboli  3/20  prezzo  8,89\nPERCHE' QUESTA: punteggio piu' alto; recensioni mediana 62 contro le 1272 della nicchia che si lascia, cioe' venti volte piu' facile posizionarsi; 9 concorrenti deboli su 20, il massimo insieme a cozy mystery bakery; e prezzo medio 11,36 dollari, il piu' alto, contro i 4,66 di cozy mystery bakery: a parita' di lavoro il margine per copia e' piu' che doppio.\nPERCHE' SI PUO' LASCIARE 'small town romance suspense': aveva ZERO libri pubblicati, quindi non c'era nessun pubblico ne' alcuna associazione fra titoli da perdere; ed e' oggi la PEGGIORE delle sei misurate (61,1).\nCONTINUITA' COL GIA' SCRITTO: 'The Second-Hand Spellbook' e' un cozy fantasy ambientato in una libreria di libri di magia usati, cioe' esattamente questo scaffale: appena caricato su KDP diventa il primo titolo del catalogo, non un esordio isolato.\nAUTORE UNICO DEL CATALOGO: Maren Ashcroft, che gia' firma The Second-Hand Spellbook e The Winter Term (2 libri su 5): e' il nome con piu' storia alle spalle.",
   "libri_pubblicati": [],
-  "controlli": [
+  "controlli": [],
+  "storico": [
     {
-      "quando": "2026-08-13T17:59:29",
-      "punteggio": 77.7,
-      "recensioni_mediana": 324.0,
-      "prezzo_medio": 10.77,
-      "concorrenti_deboli": 6
-    },
-    {
-      "quando": "2026-08-14T11:55:47",
-      "punteggio": 77.4,
-      "recensioni_mediana": 355.5,
-      "prezzo_medio": 15.96,
-      "concorrenti_deboli": 6
+      "keyword": "small town romance suspense",
+      "punteggio_finale": 77.4,
+      "libri_pubblicati": [],
+      "lasciata_il": "2026-09-01T20:51:48",
+      "motivo": "'witch bookshop cozy fantasy' ha fatto 83.5 contro 77.4 (soglia 77)"
     }
   ]
 }

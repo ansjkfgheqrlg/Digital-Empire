@@ -122,13 +122,30 @@ def cambia(keyword: str, punteggio: float, motivazione: str) -> Nicchia:
     if attuale is None:
         return imposta(keyword, punteggio, motivazione)
 
-    soglia = attuale.punteggio_corrente + MARGINE_PER_CAMBIARE
-    if punteggio < soglia:
-        raise NicchiaGiaScelta(
-            f"'{keyword}' fa {punteggio}, sotto la soglia di {soglia:.0f} che giustificherebbe "
-            f"di abbandonare '{attuale.keyword}' ({attuale.punteggio_corrente}/100) e i "
-            f"{len(attuale.libri_pubblicati)} libri costruiti li'. Si resta."
-        )
+    # IL MARGINE PROTEGGE UN INVESTIMENTO. Se non c'e' investimento, non protegge niente
+    # (2026-08-30, FIX-2). Il costo del cambio, scritto nella docstring qui sopra, e'
+    # "l'associazione fra i titoli, le recensioni che si spingono a vicenda e il pubblico
+    # gia' raggiunto": con ZERO libri pubblicati nessuna di quelle tre cose esiste ancora.
+    #
+    # Il caso non era teorico: il 2026-08-30 la nicchia attiva era 'small town romance
+    # suspense' con 0 libri e recensioni mediana 355,5 — la piu' DURA fra tutte quelle
+    # misurate — e la soglia fissa a 12 punti rendeva impossibile uscirne, bloccando il
+    # catalogo per sempre nella nicchia peggiore proprio perche' non ci si era ancora
+    # costruito niente. Il guardrail difendeva il nulla, al prezzo del catalogo.
+    #
+    # Con libri pubblicati il margine resta pieno: li' il costo e' reale.
+    soglia = attuale.punteggio_corrente + (
+        MARGINE_PER_CAMBIARE if attuale.libri_pubblicati else 0.0)
+    if punteggio < soglia or (not attuale.libri_pubblicati
+                              and punteggio <= attuale.punteggio_corrente):
+        quanti = len(attuale.libri_pubblicati)
+        motivo = (f"sotto la soglia di {soglia:.0f} che giustificherebbe di abbandonare "
+                  f"'{attuale.keyword}' ({attuale.punteggio_corrente}/100) e i {quanti} "
+                  f"libri costruiti li'." if quanti else
+                  f"e non batte '{attuale.keyword}' ({attuale.punteggio_corrente}/100). "
+                  f"Con 0 libri pubblicati il margine non si applica, ma la nicchia nuova "
+                  f"deve almeno essere migliore.")
+        raise NicchiaGiaScelta(f"'{keyword}' fa {punteggio}, {motivo} Si resta.")
 
     nuova = Nicchia(
         keyword=keyword, punteggio_iniziale=punteggio,

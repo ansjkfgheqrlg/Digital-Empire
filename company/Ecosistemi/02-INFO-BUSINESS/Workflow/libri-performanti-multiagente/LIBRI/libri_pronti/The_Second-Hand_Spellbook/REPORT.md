@@ -1,6 +1,6 @@
 # Report di consegna — The Second-Hand Spellbook
 
-_Generato il 23/08/2026 alle 12:09_
+_Generato il 01/09/2026 alle 20:43_
 
 ---
 
@@ -11,7 +11,7 @@ _Generato il 23/08/2026 alle 12:09_
 - **Nicchia**: cozy fantasy bookshop
 - **Capitoli**: 24
 - **Parole**: 38.114
-- **Pagine reali** (contate sul PDF impaginato): **118**
+- **Pagine reali** (contate sul PDF impaginato): **119**
 - **Formato**: 6.0x9.0 pollici
 
 ## File consegnati
@@ -56,13 +56,7 @@ _Dati grezzi dell'analisi: `LIBRI/_ricerca_nicchie/nicchie_20260820_135214.json`
 - ✅ **Capitoli che si ripetono**: nessun problema
 - ✅ **Capitoli simili (da rileggere)**: nessun problema
 - ✅ **Copy KDP (lo legge chi compra)**: nessun problema
-- ⚠️ **Trattini nel testo (da rivedere a occhio)**: 15 da verificare
-    - riga 5: trattino in 'rust-coloured' — contesto: 'She recognised it from the harbour at Fenn, before she had even read t'
-    - riga 52: trattino in 'coal-tar' — contesto: 'That was the thing that did it, in the end. Not the board and not the '
-    - riga 80: trattino in 'water-damaged' — contesto: 'It was a stock book, not accounts. Ilse's hand, small and upright and '
-    - riga 191: trattino in 'blind-stamped' — contesto: 'It came away easily. It was heavier than it looked, the way books alwa'
-    - riga 550: trattino in 'blind-stamped' — contesto: 'She stopped about two thirds of the way along, at a squat brown one wi'
-    - _...e altri 10_
+- ✅ **Trattini nel testo (da rivedere a occhio)**: nessun problema
 - ✅ **Prezzo rispetto alla nicchia**: nessun problema
 - ✅ **Titolo sulla copertina**: nessun problema
 - ✅ **EPUB (ebook)**: nessun problema

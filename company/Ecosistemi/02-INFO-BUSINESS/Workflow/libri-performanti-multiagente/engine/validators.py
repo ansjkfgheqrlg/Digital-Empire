@@ -66,29 +66,60 @@ _RE_SUFFISSO_LECITO = re.compile(
     rf"^\w+-({'|'.join(_SUFFISSI_LECITI)})$", re.IGNORECASE
 )
 
+# Le due forme REALI del difetto (FIX-4, 2026-08-30). Gli elenchi qui sopra restano perche'
+# altri controlli li usano, ma `valida_trattini` non lavora piu' per eccezioni.
+#
+# (a) parola tagliata a fine riga dall'impaginazione: '...impagina-' e a capo 'zione'
+_RE_SPEZZATA_FINE_RIGA = re.compile(r"\b([A-Za-z]{2,})-$")
+# (b) trattino lasciato staccato DENTRO la parola: 'impagina - zione'.
+#     Richiede minuscola-spazio-trattino-spazio-minuscola: cosi' non prende ne' gli incisi
+#     con trattino fra due parole intere, ne' gli elenchi.
+_RE_TRATTINO_STACCATO = re.compile(r"[a-z]{2,} - [a-z]{2,}")
+
 
 def valida_trattini(testo: str) -> list[str]:
-    """Cerca trattini che spezzano una parola a meta' (residui di impaginazione).
+    """Cerca SOLO la parola spezzata dall'impaginazione, non il trattino di composizione.
 
-    NON segnala i trattini grammaticalmente corretti — numeri composti ('twenty-nine'),
-    composti con prefisso noto ('check-up', 'second-cheapest', 'self-made') — perche' in
-    inglese e italiano sono obbligatori e toglierli produrrebbe testo sgrammaticato
-    (falso positivo reale trovato al primo uso su un libro vero, 2026-08-10).
+    RISCRITTA IL 2026-08-30 (FIX-4). Prima funzionava per lista di eccezioni: segnalava
+    ogni `parola-parola` e poi provava a perdonare i composti leciti tramite tre elenchi
+    (numeri, prefissi, suffissi). Misurato sui 4 libri consegnati: **66 avvisi, 66 falsi
+    positivi**, cioe' il 100%.
 
-    Restano leciti anche: elenchi puntati, righe di separazione, date, URL, intestazioni."""
+        The_Quiet_Hours 29 · The_Ninth_Winter 14 · The_Second-Hand_Spellbook 15 ·
+        The_Winter_Term 8 (otto volte lo stesso cognome, `Ashworth-Kane`)
+
+    Il difetto non era negli elenchi ma nell'idea: l'inglese forma composti col trattino in
+    modo produttivo (`spiral-bound`, `chain-link`, `pay-as-you-go`, `red-rimmed`, e ogni
+    cognome doppio), quindi nessuna lista potra' mai essere completa e ogni parola nuova
+    diventa un falso allarme. Un canale di avvisi rumoroso al 100% smette di essere letto,
+    ed e' cosi' che passa quello vero.
+
+    Ora si cerca il difetto REALE, che ha una forma sua e riconoscibile: la parola tagliata
+    a fine riga dall'impaginazione (`impagina-` a capo `zione`), oppure il trattino lasciato
+    staccato dentro la parola (`impagina - zione`). Un trattino fra due lettere nella stessa
+    riga e' ortografia inglese e non si tocca.
+
+    Le lineette lunghe (— – --) restano vietate e le blocca `valida_lineette`: quel
+    controllo NON e' stato allentato."""
     errori: list[str] = []
-    for n, riga in enumerate(testo.splitlines(), start=1):
+    righe = testo.splitlines()
+    for n, riga in enumerate(righe, start=1):
         spoglia = riga.strip()
         if not spoglia or _RE_ELENCO.match(spoglia) or _RE_TITOLO_MD.match(spoglia) \
                 or _RE_SEPARATORE.match(spoglia):
             continue
         ripulita = _RE_DATA.sub("DATA", _RE_URL.sub("URL", riga))
-        for m in _RE_PAROLA_TRATTINO.finditer(ripulita):
-            token = m.group()
-            if (_RE_NUMERO_COMPOSTO.match(token) or _RE_PREFISSO_LECITO.match(token)
-                    or _RE_SUFFISSO_LECITO.match(token)):
-                continue
-            errori.append(f"riga {n}: trattino in '{token}' — contesto: '{spoglia[:70]}'")
+
+        # (a) parola spezzata a fine riga: '...impagina-' e la riga dopo continua a lettera
+        m = _RE_SPEZZATA_FINE_RIGA.search(ripulita.rstrip())
+        if m and n < len(righe) and re.match(r"^\s*[a-z]", righe[n]):
+            errori.append(f"riga {n}: parola spezzata dall'impaginazione "
+                          f"'{m.group(1)}-' + '{righe[n].strip()[:20]}'")
+
+        # (b) trattino staccato dentro una parola: 'impagina - zione'
+        for m2 in _RE_TRATTINO_STACCATO.finditer(ripulita):
+            errori.append(f"riga {n}: trattino staccato in '{m2.group().strip()}' "
+                          f"— contesto: '{spoglia[:70]}'")
     if errori:
         logger.warning("valida_trattini: %d occorrenze", len(errori))
     return errori

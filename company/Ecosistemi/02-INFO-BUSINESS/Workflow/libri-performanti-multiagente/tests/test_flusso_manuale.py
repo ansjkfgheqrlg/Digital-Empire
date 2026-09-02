@@ -57,14 +57,29 @@ def test_seconda_scelta_rifiutata(stato_isolato):
 
 
 def test_cambio_rifiutato_senza_margine(stato_isolato):
-    """Un vantaggio di pochi punti non ripaga il costo di abbandonare il catalogo."""
+    """Un vantaggio di pochi punti non ripaga il costo di abbandonare il catalogo.
+
+    CONTRATTO PRECISATO IL 2026-09-01 (FIX-2): il margine protegge un investimento, quindi
+    vale quando ci sono libri pubblicati. Con zero libri non c'e' pubblico da perdere e
+    basta essere migliori — senza quella distinzione il catalogo restava bloccato per
+    sempre nella nicchia peggiore proprio perche' non ci si era ancora costruito niente.
+    Qui si verifica il caso col catalogo popolato, che e' quello che il margine difende.
+    """
     nicchia_attiva.imposta("small town romance suspense", 77.7, "motivo")
+    nicchia_attiva.registra_libro("Un Libro Pubblicato")
     soglia = 77.7 + nicchia_attiva.MARGINE_PER_CAMBIARE
 
     with pytest.raises(nicchia_attiva.NicchiaGiaScelta, match="sotto la soglia"):
         nicchia_attiva.cambia("cozy mystery cats", soglia - 0.1, "di poco meglio")
 
     assert nicchia_attiva.carica().keyword == "small town romance suspense"
+
+
+def test_con_catalogo_vuoto_il_margine_non_blocca(stato_isolato):
+    """L'altro lato dello stesso contratto: nicchia peggiore + 0 libri = si puo' uscire."""
+    nicchia_attiva.imposta("small town romance suspense", 61.1, "peggiore delle misurate")
+    nuova = nicchia_attiva.cambia("witch bookshop cozy fantasy", 83.5, "misurata oggi")
+    assert nuova.keyword == "witch bookshop cozy fantasy"
 
 
 def test_cambio_accettato_col_margine_e_storia_conservata(stato_isolato):

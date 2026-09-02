@@ -37,6 +37,21 @@ CLI di Claude → prompt troncati e limite di spesa); il codice di allora sta in
 ## Tutti i comandi, in ordine di flusso
 
 ```bash
+# --- IL COMANDO UNICO (2026-08-30): un libro completo, zero domande ----------
+python -m engine.kdp auto "<argomento>"   # senza argomento: lo prende dal magazzino
+python -m engine.kdp auto --budget 5 --modello claude-sonnet-5 --per-blocco 4
+#   Fa da solo: outline -> capitoli a blocchi (gate dopo ogni blocco, e se boccia
+#   RISCRIVE quel blocco) -> copy Amazon validato -> pacchetto completo.
+#   Si ferma da solo al tetto di spesa e salva quello che ha fatto.
+#   Restano umani: l'immagine di copertina e l'upload su KDP.
+#   ATTENZIONE al modello: si passa l'ID ESPLICITO. `--modello sonnet` NON da' Sonnet 5,
+#   da' claude-sonnet-4-6 (verificato 2026-08-30): e' il bug che uccise il tentativo
+#   del 13 agosto, ed e' ancora vivo negli alias.
+
+# --- IL REFERTO: come sta il flusso ------------------------------------------
+python -m engine.kdp diagnosi            # tempi reali, costi, dove si blocca, cosa e' rotto
+python -m engine.kdp diagnosi --json     # per un altro programma
+
 # --- una volta, per iniziare -------------------------------------------------
 pip install -r requirements.txt
 python -m playwright install chromium

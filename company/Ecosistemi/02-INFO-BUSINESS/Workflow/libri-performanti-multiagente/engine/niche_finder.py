@@ -160,7 +160,13 @@ def trova_nicchie(keywords: list[str], headless: bool = True,
             try:
                 v = valuta_keyword(p, kw, headless=headless)
             except Exception as exc:
-                print(f"  SALTATA — Amazon non ha risposto: {exc}")
+                # Solo ASCII e messaggio troncato: il 2026-08-30 questa riga ha fatto
+                # crashare il comando con UnicodeEncodeError su console cp1252, e il crash
+                # NASCONDEVA l'errore vero (mancava il browser di Playwright). Un messaggio
+                # d'errore che non riesce a stamparsi e' peggio dell'errore che descrive.
+                # Stessa forma di B-013.
+                print("  SALTATA - Amazon non ha risposto: %s"
+                      % str(exc).encode("ascii", "replace").decode("ascii")[:200])
                 continue
             risultati.append(v)
             print(f"  punteggio {v.punteggio}/100 — {v.motivazione}")

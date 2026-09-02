@@ -1,3 +1,51 @@
+## 🔧 2026-09-01/02 — CLAUDE: TASK-KDP-FIX-W2 parziale — 4 fix su 6, FIX-1 bloccato dall'esterno — CP-20260902-001
+
+Prima task della W2 (ordine di Max: prima di tutto il resto). **179 test verdi**, erano 135.
+
+| FIX | Esito |
+|---|---|
+| FIX-1 upload KDP | 🔴 **BLOCCATO (esterno)** |
+| FIX-2 nicchia + autore | ✅ `witch bookshop cozy fantasy` 83,5 + Maren Ashcroft |
+| FIX-3 pacchetti | ✅ **5/5 a exit 0** |
+| FIX-4 falsi positivi trattini | ✅ **79 → 0** |
+| FIX-5 stima pagine | ✅ errore max **8,0 → 1,2** pagine |
+| FIX-6 magazzino ≥7 | 🟠 sbloccato, non finito |
+
+**🔴 FIX-1 — dichiarato subito, come Max ha chiesto.** Due blocchi verificati, non supposti:
+l'upload su KDP è un'azione **irreversibile** sull'account Amazon di una persona (la SOP dice
+"Gael carica su KDP"), e la copertina di The_Winter_Term **non è generabile qui** — nessuna
+API immagini, profilo Arena presente ma controllato dal vivo: `non_autenticato`.
+`libri_pubblicati/` resta vuoto, 0 ASIN. **I 3 libri pubblicabili sono pronti all'upload**
+appena una persona può farlo.
+
+**FIX-2 — ho sbagliato una volta e l'ho corretto.** La prima scelta poggiava sui punteggi in
+magazzino, del **13 agosto**: rimisurando, `cozy fantasy bookshop` è passata da 83,1 a **72,9**
+(recensioni mediana da 33 a 518). Rimisurate tutte e sei **lo stesso giorno**. Vince
+`witch bookshop cozy fantasy`: mediana **62** contro le **1272** della nicchia lasciata (venti
+volte più facile entrare, ed è il motivo per cui aveva 0 libri) e prezzo medio **$11,36**, il
+più alto. *The Second-Hand Spellbook* è già su quello scaffale.
+**Guardrail corretto**: `cambia()` pretendeva 12 punti di margine *sempre*, ma il margine
+protegge "il pubblico già raggiunto" — che con 0 libri non esiste. Difendeva il nulla e
+blindava il catalogo nella nicchia **peggiore** (61,1). **B-018 chiuso.**
+
+**FIX-5 — non era tarata male, era il modello sbagliato.** Le parole/pagina scendono al
+crescere dei **paragrafi** (ognuno chiude una riga e ne spreca la coda): dialogo fitto = più
+pagine a parità di parole. Un divisore fisso non poteva funzionare. Nuovo modello a
+caratteri + paragrafi.
+
+**FIX-6 — la ricerca Amazon era rotta per tre guasti in fila, ora funziona**: sessione creata
+**senza login** (la ricerca è pubblica), browser Playwright installato, e un messaggio
+d'errore che **crashava su console cp1252 nascondendo l'errore vero** — stessa forma di B-013
+e dello stesso difetto che avevo fatto io il 27 agosto. Il magazzino resta però a 0 liberi.
+
+**Due volte i miei test hanno scritto sui dati di produzione** (un progetto-libro fantasma fra
+i libri veri, e la nicchia vera sostituita da "nicchia molto migliore"): entrambe ripristinate
+da git, e ora i fixture **verificano di aver agganciato** invece di fidarsi di `raising=False`.
+
+**RIPRESA DA**: (1) **FIX-1, serve una persona**: caricare i 3 libri e registrare gli ASIN;
+per The_Winter_Term prima il `.png`. (2) **FIX-6**: ≥7 argomenti nel magazzino, la ricerca ora
+gira. (3) *Proof_of_Murder* è a **111 pagine**, sotto il minimo di 115: allungarlo o scartarlo.
+(4) Solo dopo, TASK-KDP-PIANO-W2 — **Max vuole dare il via prima**.
 ## 🔎 2026-09-01 — EMPERATOR: VERIFICA AGENTI — 4 agenti erano MORTI, riparati — gate PASS 597/597 — CP-20260901-005
 
 Max ha chiesto secco: "tutti gli agenti e tutte le skill sono ufficiali?". Ho misurato invece di

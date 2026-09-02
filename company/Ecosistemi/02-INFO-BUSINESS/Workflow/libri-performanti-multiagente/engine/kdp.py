@@ -673,7 +673,58 @@ def costruisci_parser() -> argparse.ArgumentParser:
                     help="archivia anche un pacchetto non pubblicabile (resta scritto in "
                          "pubblicazione.json)")
 
+    dg = sub.add_parser("diagnosi",
+                        help="referto onesto sul flusso: tempi, costi, dove si blocca, cosa e' rotto")
+    dg.add_argument("--slug", default=None, help="un libro solo invece di tutti")
+    dg.add_argument("--json", action="store_true", help="output per un altro programma")
+
+    au = sub.add_parser("auto",
+                        help="produce un libro COMPLETO da un comando solo, senza chiedere niente")
+    au.add_argument("argomento", nargs="?", default=None,
+                    help="di cosa parla il libro. Se manca, lo prende dal magazzino.")
+    au.add_argument("--nicchia", default=None)
+    au.add_argument("--capitoli", type=int, default=None)
+    au.add_argument("--parole-per-capitolo", type=int, default=None)
+    au.add_argument("--budget", type=float, default=None,
+                    help="tetto di spesa in dollari (default 5). Superato, si ferma e salva.")
+    au.add_argument("--modello", default=None,
+                    help="ID ESPLICITO del modello (default claude-sonnet-5). "
+                         "Mai un alias: 'sonnet' restituisce claude-sonnet-4-6.")
+    au.add_argument("--per-blocco", type=int, default=None,
+                    help="capitoli per chiamata (default 4). Piu' alto = meno overhead, "
+                         "risposte piu' lunghe.")
+    au.add_argument("--motivo", default=None,
+                    help="motivo se la nicchia si scosta da quella del catalogo")
+
     return cli
+
+
+def _cmd_diagnosi(args) -> int:
+    from . import diagnosi
+    ref = diagnosi.esegui(args.slug)
+    if args.json:
+        print(diagnosi.come_json(ref))
+    else:
+        diagnosi.stampa(ref)
+    return VALIDAZIONE_FALLITA if ref.bloccanti else OK
+
+
+def _cmd_auto(args) -> int:
+    """Un comando, un libro. Dopo l'avvio non chiede niente."""
+    from . import auto
+
+    esito = auto.produci(
+        args.argomento,
+        nicchia=args.nicchia,
+        capitoli=args.capitoli,
+        parole_per_capitolo=args.parole_per_capitolo,
+        budget_usd=args.budget if args.budget is not None else auto.BUDGET_DEFAULT_USD,
+        modello=args.modello,
+        per_blocco=args.per_blocco or auto.CAPITOLI_PER_BLOCCO,
+        motivo_nicchia=args.motivo,
+    )
+    print(esito)
+    return OK if esito.ok else VALIDAZIONE_FALLITA
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -686,7 +737,8 @@ def main(argv: list[str] | None = None) -> int:
               "nicchia-confronta": _cmd_nicchia, "nuovo": _cmd_nuovo,
               "stato": _cmd_stato, "blocco": _cmd_blocco,
               "copy": _cmd_copy, "pacchetto": _cmd_pacchetto,
-              "consegna": _cmd_consegna, "pubblicato": _cmd_pubblicato}
+              "consegna": _cmd_consegna, "pubblicato": _cmd_pubblicato,
+              "diagnosi": _cmd_diagnosi, "auto": _cmd_auto}
     try:
         return azioni[args.comando](args)
     except KeyboardInterrupt:
