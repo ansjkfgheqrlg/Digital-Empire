@@ -1,0 +1,24 @@
+{
+  "lesson_number": 16,
+  "section": "AI - per copywriting",
+  "title": "Lezione 16 - Copy per primary text (ads) con Claude",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-16-copy-per-primary-text-ads-con-claude-wspxy",
+  "slug": "lezione-16-copy-per-primary-text-ads-con-claude-wspxy",
+  "vimeo_id": "1174238441",
+  "vimeo_embed": "https://player.vimeo.com/video/1174238441?app_id=122963",
+  "tipo": "PRATICA",
+  "tipo_motivazione": "Confermato con visione diretta: 40 frame (27 scan 30s + 13 dense). Demo reali: DaVinci Resolve (export audio da timeline multi-clip), Claude chat con prompt esatto e file allegato, sales page reale (Corso Copywriting Online, andrei-copy.com), GoFullPage capture, MarkEdit.",
+  "durata_secondi": 800,
+  "video_scaricato": "video/lezione-16.mp4 (295MB, 13:20 min)",
+  "risorse": {
+    "trascrizione_md": {"presente": false},
+    "workflow_citati": [
+      "Workflow 1 - Creare primary text, headline e description per Meta Ads usando Claude",
+      "Workflow 2 - Dare contesto a Claude su un prodotto/servizio senza scrivere tutto a mano",
+      "Workflow 3 - Esportare video come MP3 senza software di editing"
+    ],
+    "link_utili": ["https://claude.ai", "https://adsmanager.facebook.com", "https://snaptik.app", "https://www.tiktok.com", "https://www.blackmagicdesign.com/products/davinciresolve", "https://elevenlabs.io/speech-to-text", "https://chromewebstore.google.com/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl", "https://totheweb.com/learning_center/tools-convert-html-text-to-plain-text-for-content-review/", "https://github.com/MarkEdit-app/MarkEdit", "https://arc.net", "https://www.google.com/chrome"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

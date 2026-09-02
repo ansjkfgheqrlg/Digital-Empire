@@ -1,0 +1,25 @@
+{
+  "lesson_number": 9,
+  "section": "AI - Le basi",
+  "title": "Lezione 9 - Come dare contesto alle AI",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-9-come-dare-contesto-alle-ai-xmwmb",
+  "slug": "lezione-9-come-dare-contesto-alle-ai-xmwmb",
+  "vimeo_id": "1174245348",
+  "durata_secondi": 550,
+  "tipo": "PRATICA",
+  "tipo_motivazione": "Confermato con 10 frame: Excalidraw illustrativo + demo reale Finder (cartella 'Claude' personale con sottocartelle reali: assets, b2b Client work, Business planning, Claude Speedrun, Skills, Bolla) + dialog reale 'Set project instructions' su Claude.ai. ULTIMA lezione sezione 'AI - Le basi'.",
+  "risorse": {
+    "trascrizione_md": {"presente": true, "file_locale": "resources/trascrizione.md"},
+    "workflow_citati": [
+      "Workflow 1 - Dare contesto a Claude allegando tutti i file in chat",
+      "Workflow 2 - Dare contesto a Claude allegando solo i file rilevanti",
+      "Workflow 3 - Organizzare le cartelle sul computer per usare Cowork",
+      "Workflow 4 - Dare contesto a Claude tramite Cowork",
+      "Workflow 5 - Dare contesto a Claude tramite un Project",
+      "Workflow 6 - Scegliere il metodo giusto per dare contesto a Claude"
+    ],
+    "link_utili": ["https://claude.ai", "https://claude.ai/projects", "https://claude.com/product/cowork", "https://www.markdownguide.org", "https://www.perplexity.ai", "https://www.perplexity.ai/spaces", "https://grok.com", "https://gemini.google/overview/gems/"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

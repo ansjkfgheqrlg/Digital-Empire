@@ -1,0 +1,13 @@
+{
+  "lesson_id": "cs2online-lezione-10",
+  "corso": "Claude Speedrun 2",
+  "total_atoms": 6,
+  "atoms": [
+    {"id":"KA-01","source":"cs2online-lezione-10#frame-t1m20s+t2m40s+t4m00s","frame":"frame-t2m40s-elevenlabs-speech-to-text.jpg","category":"Workflow completo","tags":["whatsapp","elevenlabs","claude-project"],"atom":"Workflow completo audio-cliente->revisioni osservato: WhatsApp (scarica audio) -> ElevenLabs Speech-to-Text (trascrizione, lingua italiana) -> pulizia testo (rimuovere timestamp/speaker) -> Claude Project (allegato+contesto) -> output revisioni."},
+    {"id":"KA-02","source":"cs2online-lezione-10#cosa-hai-imparato","category":"Motivazione scelta tool","tags":["elevenlabs","precisione"],"atom":"Motivazione scelta ElevenLabs: dichiarato 'piu' preciso di altri tool su punteggiatura e riconoscimento parole' - variante di garbage-in-garbage-out applicata alla qualita' della trascrizione."},
+    {"id":"KA-03","source":"cs2online-lezione-10#cosa-hai-imparato","category":"Limite tecnico","tags":["no-audio-diretto"],"atom":"Non e' possibile allegare audio direttamente a Claude - va sempre trascritto in testo prima."},
+    {"id":"KA-04","source":"cs2online-lezione-10#panoramica","category":"Front loading contesto (applicazione specifica)","tags":["nuovo-cliente","riutilizzo"],"atom":"Principio 'front loading del contesto' applicato all'inizio di un progetto cliente: investire ore all'inizio per costruire il miglior contesto possibile, poi riutilizzarlo (Project o Cowork) in ogni conversazione futura senza ripartire da zero."},
+    {"id":"KA-05","source":"cs2online-lezione-10#cosa-hai-imparato-alternative","category":"Alternative gratuite","tags":["whisper","buzz","handy-stt","otranscribe","macwhisper"],"atom":"Alternative gratuite a ElevenLabs (dichiarate meno precise): trucco YouTube auto-transcript (audio su sfondo nero come video), Whisper (open source, forte su lingue/rumore/accenti), Buzz (app desktop basata su Whisper, esporta TXT/SRT/VTT), Handy STT (locale, no cloud), oTranscribe (manuale), MacWhisper (locale, solo Mac)."},
+    {"id":"KA-06","source":"cs2online-lezione-10#cosa-hai-imparato","category":"Memory per-Project","tags":["memory","conferma-cross-lezione"],"atom":"Memory per-Project confermata come vantaggio specifico: ogni Project ha memory separata, Claude 'si ricorda cose specifiche di quel progetto' - coerente con lezione 9."}
+  ]
+}

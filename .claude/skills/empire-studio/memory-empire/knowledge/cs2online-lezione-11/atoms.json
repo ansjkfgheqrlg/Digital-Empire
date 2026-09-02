@@ -1,0 +1,15 @@
+{
+  "lesson_id": "cs2online-lezione-11",
+  "corso": "Claude Speedrun 2",
+  "total_atoms": 8,
+  "atoms": [
+    {"id":"KA-01","source":"cs2online-lezione-11#panoramica+frame","frame":"frame-t5m00s-google-calendar-reale.jpg","category":"SOP domenicale","tags":["sop","planning-settimanale"],"atom":"SOP domenicale completa a 6 step per pianificazione settimanale: (1) Calendar impegni fissi, (2) esportare/collegare a Claude, (3) brain dump markdown senza filtro con vincoli espliciti, (4) allegare business plan, (5) allegare review settimana precedente, (6) prompt Opus+Extended Thinking -> documento task per fascia oraria."},
+    {"id":"KA-02","source":"cs2online-lezione-11#frame-t8m00s","frame":"frame-t8m00s-week1-operational-plan-output.jpg","category":"Output strutturato osservato","tags":["tabella","fascia-oraria","esecutore"],"atom":"Output strutturato specifico: tabella task/giorno/fascia oraria (8-12, 12-15, 15-18)/esecutore (umano, AI, o 50-50) - confermato visivamente nel documento 'WEEK 1 - OPERATIONAL PLAN'."},
+    {"id":"KA-03","source":"cs2online-lezione-11#cosa-hai-imparato","category":"Regola brain dump","tags":["senza-filtro","prioritizzazione-esterna"],"atom":"Regola per il brain dump: 'senza filtro' - buttare giu' tutto, poi lasciare che sia il contesto (business plan+calendario) a fare la prioritizzazione, non l'utente a pre-filtrare."},
+    {"id":"KA-04","source":"cs2online-lezione-11#cosa-hai-imparato","category":"Vincoli espliciti","tags":["scadenze","non-negoziabile"],"atom":"Vincoli specifici vanno scritti esplicitamente nel brain dump (es. 'il copy va consegnato entro mercoledi', senza negoziazione') - il documento stesso deve auto-spiegarsi a Claude."},
+    {"id":"KA-05","source":"cs2online-lezione-11#cosa-hai-imparato","category":"Scelta modello","tags":["opus-extended-thinking"],"atom":"Modello consigliato per pianificazione settimanale: Opus + Extended Thinking - coerente col pattern gia' visto (task complessi/riusati = modello piu' potente)."},
+    {"id":"KA-06","source":"cs2online-lezione-11#cosa-hai-imparato","category":"Regola iterazione output","tags":["responsabilita-input"],"atom":"Regola di iterazione: se l'output non soddisfa, la domanda giusta e' 'cosa aggiungere/togliere dal contesto', non lamentarsi del risultato - sposta la responsabilita' sull'input, coerente con lezione 8."},
+    {"id":"KA-07","source":"cs2online-lezione-11#cosa-hai-imparato","category":"4 livelli contesto (variante)","tags":["prompt","settimana","trimestre","business-permanente"],"atom":"4 livelli di contesto per la pianificazione (variante specifica della gerarchia di lezione 7): (1) prompt singolo, (2) settimana, (3) trimestre, (4) business permanente."},
+    {"id":"KA-08","source":"cs2online-lezione-11#cosa-hai-imparato","category":"Sicurezza cartella dedicata","tags":["cartella-dedicata","no-accesso-totale"],"atom":"Cartella dedicata alla condivisione con Claude - NON dare accesso a tutto il computer, stessa regola di sicurezza/efficienza gia' vista (lezioni 6, 9)."}
+  ]
+}

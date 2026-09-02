@@ -1,0 +1,77 @@
+{
+  "run_id": "test-youtube-001",
+  "generated_at": "2026-06-08T12:43:03",
+  "topology": "hierarchical",
+  "queen": "conductor/conductor",
+  "teams": {
+    "ingestion": [
+      "youtube-department/department-lead",
+      "youtube-department/video-single-ingester",
+      "youtube-department/yt-channel-ingester",
+      "youtube-department/yt-screening",
+      "tiktok-department/department-lead",
+      "tiktok-department/tiktok-ingester",
+      "tiktok-department/tiktok-trend-scout",
+      "web-department/department-lead",
+      "web-department/doc-extractor",
+      "web-department/site-crawler",
+      "web-department/web-researcher",
+      "projects-repos-workloads-department/department-lead",
+      "projects-repos-workloads-department/project-knowledge-extractor",
+      "projects-repos-workloads-department/repo-deep-study",
+      "projects-repos-workloads-department/workflow-deep-analyzer",
+      "projects-repos-workloads-department/workload-comparator"
+    ],
+    "processing": [
+      "processing-vision-department/context-mapper",
+      "processing-vision-department/department-lead",
+      "processing-vision-department/frame-extractor",
+      "processing-vision-department/knowledge-extractor",
+      "processing-vision-department/transcript-processor",
+      "processing-vision-department/video-watcher"
+    ],
+    "forge": [
+      "forge-wiki-department/content-forge-invoker",
+      "forge-wiki-department/department-lead",
+      "forge-wiki-department/knowledge-packager",
+      "forge-wiki-department/update-proposer",
+      "forge-wiki-department/wiki-writer"
+    ],
+    "governance": [
+      "strategy-department/content-type-strategist",
+      "strategy-department/department-strategist",
+      "strategy-department/meta-strategy-manager",
+      "strategy-department/strategy-applicator",
+      "strategy-department/strategy-controller",
+      "strategy-department/strategy-coordinator",
+      "strategy-department/strategy-improver",
+      "verification-control-department/compliance-auditor",
+      "verification-control-department/coverage-controller",
+      "verification-control-department/department-lead",
+      "verification-control-department/error-triage-controller",
+      "verification-control-department/real-tester",
+      "verification-control-department/silent-observer",
+      "verification-control-department/visual-verifier",
+      "memory-management-department/bug-error-tracker",
+      "memory-management-department/checkpoint-manager",
+      "memory-management-department/decision-codifier",
+      "memory-management-department/department-lead",
+      "memory-management-department/memory-architect",
+      "memory-management-department/memory-auditor",
+      "memory-management-department/session-archiver",
+      "memory-management-department/update-propagator"
+    ]
+  },
+  "pipeline": [
+    "strategy",
+    "ingestion",
+    "processing",
+    "verification",
+    "forge",
+    "wiki",
+    "update",
+    "memory-close"
+  ],
+  "ruflo_available": false,
+  "execution": "fallback: Conductor orchestra via Task/Agent + memory_manager"
+}

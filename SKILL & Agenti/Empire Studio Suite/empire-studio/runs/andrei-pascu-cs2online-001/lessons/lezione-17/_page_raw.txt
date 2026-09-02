@@ -1,0 +1,209 @@
+Vorremmo usare cookie non essenziali per avere un tracking dei nostri risultati e utenti sul sito.
+
+Puoi accettare, oppure puoi usare questo sito solo con i cookie essenziali.
+
+Trovi più informazioni qui.
+
+Gestisci cookies
+Solo essenziali
+Accetta
+AI - Le basi
+9 lezioni
+Lezione 1 - Introduzione all'intelligenza artificiale
+Lezione 2 - Termini che devi sapere
+Lezione 3 - Livelli di utilizzo dell'intelligenza artificiale
+Lezione 4 - 3 tipi di lavoro
+Lezione 5 - Diversi tipi di task
+Lezione 6 - Cucinando il tuo contesto
+Lezione 7 - Diversi tipi di contesto
+Lezione 8 - Context engineering
+Lezione 9 - Come dare contesto alle AI
+AI - per produttività e freelance
+3 lezioni
+Lezione 10 - Cliente manda audio Claude fa revisioni
+Lezione 11 - Come organizzo la mia settimana con Claude
+Lezione 12 - Come fare preventivi con Claude
+AI - per copywriting
+4 lezioni
+Lezione 13 - Come faccio in ricerca di copywriting con l'AI
+Lezione 14 - Come usare la modalità co-work
+Lezione 15 - Questionario di ricerca di copywriting con l'AI
+Lezione 16 - Copy per primary text (ads) con Claude
+AI - per coding e simili
+7 lezioni
+Lezione 17 - Introduzione al vibe coding
+Lezione 18 - Diagrammi o flow chart
+Lezione 19 - Come fare caroselli con immagini hostate su imgur
+Lezione 20 - Come scrivo piccoli codici Google Sites
+Lezione 21 - Come creare codici integrati con Google Sheets
+Lezione 22 - Codice per dashboard pubblica
+Lezione 23 - Codici per pop-up semplici e complessi
+AI - altri utilizzi
+1 lezione
+Lezione 24- Come facciamo brand guidelines con Claude
+Lezioni BONUS
+6 lezioni
+Bonus 1 - Automatizzare processi
+Bonus 2 - Come facciamo advertising report per tenere cliente in loop
+Bonus 3 - Come collegare Claude a qualsiasi cosa
+Bonus 4 - Claude Skills
+Bonus 5 - Projects dentro co-work
+Bonus 6 - Automatizzare processi con skills
+CS2
+10 lezioni
+Lezione 1 - Terminal: perché?
+Lezione 2 - Introduzione agli API & MCP
+Lezione 3 - Claude - Github - Lovable | COME FARE
+Lezione 4 - Brain talk
+Lezione 5 - Come scrivo copy con l’AI [replicando il mio TOV]
+Lezione 6 - Le mie chiavi API preferite
+Lezione 7 - Come editare video con l'AI [pt. 1]
+Lezione 8 - Come editare video con l'AI [pt. 2]
+Lezione 9 - Come editare video con AI [pt. 3]
+Lezione 10 - Come calcolare se guadagni dall'AI
+AI - PER CODING E SIMILI
+Lezione 17 - Introduzione al vibe coding
+Panoramica
+
+In questa lezione impari cos'è il vibe coding e come creare un sito web da zero usando Claude, senza saper programmare. Installi Visual Studio Code con l'estensione Live Server, capisci la struttura base di HTML5 (tag, elementi semantici come header/main/footer), CSS3 (reset, collegamento al foglio di stile) e JavaScript (variabili, getElementById, event listener). Impari a comunicare con Claude in formato JSON, a fargli generare un prompt ottimizzato e poi il codice del sito diviso in tre file separati. Carichi tutto su GitHub e scopri come inserire immagini tramite hosting esterno. Una panoramica pratica per partire.
+
+Cosa hai imparato
+
+Cos'è il vibe coding: generare codice (siti web, automazioni) sfruttando l'AI, senza saper programmare
+
+Per usare bene l'AI nel coding, serve capire almeno le basi di come funziona un sito web o un'automazione
+
+Scaricare e installare Visual Studio Code come interprete/editor di codice
+
+Creare il primo file HTML e chiamarlo index.html (perché gli hoster lo riconoscono come pagina principale)
+
+Creare un nuovo file in VS Code: cliccare nella cartella, scrivere il nome del file nella riga "New File"
+
+Usare la shortcut html:5 per generare automaticamente la struttura base di una pagina HTML
+
+Differenza tra <head> (collegamenti, CSS, SEO) e <body> (contenuto visibile della pagina)
+
+Usare i tag principali dell'HTML: <h1> fino a <h6> per i titoli, <p> per i paragrafi
+
+Usare il trucco lorem + numero di parole per generare testo placeholder in VS Code
+
+Installare l'estensione Live Server su VS Code per vedere le modifiche al sito in tempo reale
+
+Aprire il sito in locale con tasto destro → "Open with Live Server"
+
+Dividere lo schermo tra codice e browser per lavorare più comodi
+
+Strutturare il body in tre contenitori semantici: <header> (navbar), <main> (contenuto), <footer> (info legali, copyright)
+
+Perché usare i tag semantici: servono per accessibilità (screen reader per non vedenti), SEO e indicizzazione su Google
+
+Creare un file style.css separato per lo stile del sito
+
+Resettare il CSS di default con il reset universale: * { padding: 0; margin: 0; box-sizing: border-box; }
+
+Collegare il CSS all'HTML inserendo nel <head> il tag <link rel="stylesheet" href="./style.css">
+
+Cos'è padding (spaziatura interna), margin (spaziatura esterna) e box-sizing
+
+Modificare lo stile di un elemento tramite CSS (es. h1 { color: red; })
+
+Il ruolo di JavaScript: rendere le pagine dinamiche (bottoni, popup, interazioni)
+
+Usare gli ID per identificare i tag HTML e recuperarli con JavaScript tramite document.getElementById()
+
+Creare un file main.js e collegarlo alla fine del body (prima della chiusura </body>) con <script src="./main.js">
+
+Usare le variabili in JavaScript (let) per salvare elementi della pagina
+
+Aggiungere un event listener a un bottone per eseguire un'azione al click
+
+Modificare il contenuto di un tag con .innerHTML
+
+Per le automazioni, usare Python perché ha più librerie e possibilità (incluse le chiamate API)
+
+Cosa sono le API: prendono dati, li inviano a un server/database e ricevono una risposta
+
+Usare il formato JSON per comunicare con l'AI, perché lo capisce molto meglio del linguaggio naturale
+
+Il JSON funziona come una scaletta strutturata che divide il progetto in sezioni e sottosezioni
+
+Workflow vibe coding: prima farsi generare un prompt in formato JSON dall'AI, poi usare quel prompt per farle creare il sito
+
+Chiedere a Claude "È il miglior prompt che puoi darmi?" per farlo iterare e migliorare il risultato
+
+Rispondere alle domande di approfondimento di Claude (target, stile visivo, servizi extra) per ottenere un prompt più preciso
+
+Specificare a Claude le tecnologie da usare (HTML5, CSS3, JavaScript) nel prompt
+
+Copiare il prompt JSON finale, aprire una nuova chat e incollarlo per far generare il codice del sito
+
+Chiedere a Claude di separare il codice in tre file distinti (HTML, CSS, JS) se li genera in un file unico
+
+Tenere sempre HTML, CSS e JS in file separati: migliora la leggibilità, facilita le modifiche con l'AI e evita errori del server
+
+Copiare il codice generato da Claude nei rispettivi file su VS Code e aprire con Live Server per vedere il risultato
+
+Cos'è un code block: una piccola parte di codice che puoi individuare e modificare manualmente o con l'AI
+
+Differenza tra front-end (ciò che vede l'utente) e back-end (ciò che accade dietro le quinte, es. automazioni)
+
+Il form di contatto generato dall'AI non funziona da solo: va collegato a un back-end tramite API
+
+Come inserire immagini nel sito: non basta mandarle a Claude. Devi prima hostarle (es. su Imgur), copiare il link dell'immagine e passare quel link a Claude
+
+Testare la responsiveness del sito restringendo la finestra del browser
+
+Creare un account su GitHub come "social media dei programmatori" per salvare e gestire il codice
+
+Creare un repository su GitHub: cliccare New, dare un nome senza spazi né caratteri speciali (usare underscore), scegliere visibilità pubblica o privata
+
+Caricare i file su GitHub con drag and drop tramite "Upload an existing file", poi fare Commit Changes
+
+Usare GitHub per collegare il codice a un servizio di hosting e mettere il sito online (funziona anche con repo privati)
+
+Approccio reale al lavoro: usare un website builder (Squarespace, WordPress) per la struttura, e il codice generato dall'AI solo per personalizzazioni specifiche (code block custom)
+
+Non fare tutto in un singolo prompt: dividere il lavoro in chat separate (una per il copy, una per il branding, una per la struttura, ecc.) per dare a Claude il contesto giusto
+
+Gestione errori: copiare l'errore dalla console e incollarlo direttamente a Claude, senza cercare di spiegarlo tu — l'AI capisce subito dove intervenire
+
+Usare Ctrl+S / Cmd+S per salvare le modifiche ogni volta che si tocca un file
+
+Sfruttare la memoria della chat di Claude: tornare nella stessa conversazione per chiedere modifiche successive al sito
+
+Workflows
+Workflow 1 - Installare e configurare Visual Studio Code
+Workflow 2 - Creare la struttura base di un progetto web in VS Code
+Workflow 3 - Visualizzare il sito in tempo reale con Live Server
+Workflow 4 - Strutturare una pagina HTML con elementi semantici
+Workflow 5 - Rendere una pagina dinamica con JavaScript (esempio bottone)
+Workflow 6 - Creare un repository su GitHub e caricare i file
+Workflow 7 - Generare un prompt JSON ottimizzato con Claude per creare un sito web
+Workflow 8 - Generare il sito web da un prompt JSON con Claude
+Workflow 9 - Copiare il codice generato da Claude in VS Code e lanciare il sito
+Workflow 10 - Inserire un'immagine nel sito tramite hosting su Imgur
+Workflow 11 - Modificare un code block direttamente in VS Code
+Workflow 12 - Gestire errori dando l'output della console all'AI
+Workflow 13 - Fare modifiche continue al sito usando la memoria di Claude
+Workflow 14 - Approccio multi-chat per un sito completo (copy, branding, codice, immagini)
+Link utili
+
+Visual Studio Code — https://code.visualstudio.com/download IDE (interprete di codice) usato per scrivere e visualizzare il codice durante tutto il corso.
+
+Live Server (estensione VS Code di Ritwick Dey) — https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer Estensione per vedere in tempo reale le modifiche al sito web.
+
+Claude AI — https://claude.ai L'intelligenza artificiale usata per generare codice, prompt JSON e siti web.
+
+GitHub — https://github.com "Social media dei programmatori" — usato per caricare il codice in repository e collegarlo all'hosting.
+
+Imgur — https://imgur.com Servizio di image hosting usato per hostare immagini e ottenere un URL da passare a Claude.
+
+Squarespace — https://www.squarespace.com Website builder usato da Andrei per creare siti per sé e per i clienti, con code block custom.
+
+WordPress — https://wordpress.org Menzionato come alternativa a Squarespace per creare siti senza scrivere codice.
+
+Cursor — https://cursor.com Editor di codice AI-first (fork di VS Code) menzionato come alternativa con chat AI integrata che supporta anche Claude.
+
+Python — https://www.python.org Linguaggio consigliato per creare automazioni e fare chiamate API.
+
+Completa e continua

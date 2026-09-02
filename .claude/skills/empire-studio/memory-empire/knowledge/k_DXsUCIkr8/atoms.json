@@ -1,0 +1,11 @@
+{
+  "video_id": "k_DXsUCIkr8",
+  "total_atoms": 5,
+  "atoms": [
+    {"id":"KA-01","source":"k_DXsUCIkr8#00:00:00","frame":"frame-001","category":"Copy / Hook - esclusivita e tempismo","section":"S1","tags":["hook","esclusivita","urgenza"],"atom":"'Ho messo mano sul vero copione che usano in The Wolf of Wall Street, perche' il momento in cui lo leggete sul Wall Street Journal ormai e' troppo tardi' - framing di informazione privilegiata/anticipata rispetto a fonti mainstream."},
+    {"id":"KA-02","source":"k_DXsUCIkr8#00:00:09","frame":"frame-006","category":"Copy / Autorita - fonte storica reale","section":"S2","tags":["autorita","autenticita","storico"],"atom":"Stratton Oakmont (azienda del film) e' esistita realmente, i venditori usavano questo script per le chiamate - prova di autorita' basata su 'e' successo davvero', non solo su notorieta'."},
+    {"id":"KA-03","source":"k_DXsUCIkr8#00:00:19","frame":"frame-010,011,012","category":"Vendita / Gestione obiezione - validazione","section":"S3","tags":["obiezione","validazione","vendita"],"atom":"Script gestione obiezione 'gia' con un altro broker': valida esplicitamente ('sono pienamente d'accordo, rispondi ottimo, non vogliamo interferire') invece di confutare - distinto dalla controargomentazione aggressiva tipica."},
+    {"id":"KA-04","source":"k_DXsUCIkr8#00:00:32","frame":"frame-013,014","category":"Vendita / Chiusura soft - yes-ladder","section":"S4","tags":["soft-commitment","yes-ladder","permesso-futuro"],"atom":"Dopo la validazione, chiede un piccolo impegno futuro condizionato: 'se identifichiamo un'opportunita' con forte potenziale, saresti disposto ad ascoltarla? D'accordo?' - tecnica yes-ladder invece di pressione immediata."},
+    {"id":"KA-05","source":"k_DXsUCIkr8#00:00:40","frame":"frame-016,017,018,019","category":"Funnel / Reveal parziale come lead magnet","section":"S5","tags":["lead-magnet","reveal-parziale","funnel"],"atom":"Mostra solo un estratto (sezione 'se incontra un altro broker'), poi offre di inviare tutte le pagine e rimanda a un altro video - reveal parziale come meccanismo di lead generation."}
+  ]
+}

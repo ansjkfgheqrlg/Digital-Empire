@@ -1,0 +1,22 @@
+{
+  "lesson_number": 8,
+  "section": "AI - Le basi",
+  "title": "Lezione 8 - Context engineering",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-8-context-engineering-y8leg",
+  "slug": "lezione-8-context-engineering-y8leg",
+  "vimeo_id": "1174236344",
+  "durata_secondi": 696,
+  "tipo": "TEORIA",
+  "tipo_motivazione": "Confermato con 8 frame campione: talking-head + whiteboard illustrativo (confronto contesto si/no con esempio scheda allenamento), nessun tool operativo mostrato.",
+  "risorse": {
+    "trascrizione_md": {"presente": true, "file_locale": "resources/trascrizione.md"},
+    "workflow_citati": [
+      "Workflow 1 - Dare contesto completo a Claude prima di una richiesta (esempio: scheda allenamento)",
+      "Workflow 2 - Contestualizzare una richiesta di pianificazione con l'obiettivo a lungo termine",
+      "Workflow 3 - Creare un prompt via dictation su Mac"
+    ],
+    "link_utili": ["https://claude.ai", "https://chatgpt.com", "https://www.anthropic.com", "https://suno.com", "https://aistudio.google.com", "https://flux1ai.com"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

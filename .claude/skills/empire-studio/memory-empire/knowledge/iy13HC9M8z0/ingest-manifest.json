@@ -1,0 +1,48 @@
+{
+  "video_id": "iy13HC9M8z0",
+  "title": "Ho corretto il copywriting di ChatGPT",
+  "run": "andrei-pascu-001/cat1-copywriting",
+  "ingested_at": "2026-07-09",
+  "duration_sec": 509,
+  "duration_human": "8:29",
+  "frames_extracted": 255,
+  "frames_read_nativa": 13,
+  "no_finto_status": "PASS",
+  "knowledge_atoms": 26,
+  "visual_passages": 4,
+  "wiki_pages_created": 2,
+  "watch_001": {
+    "n_video": 7,
+    "n_memory_empire": 7,
+    "status": "MATCH"
+  },
+  "sections": [
+    {"n": 1, "label": "Intro + definizione copywriter", "start": "0:00:00", "end": "0:00:57", "ka_count": 3},
+    {"n": 2, "label": "Warm-up test ChatGPT", "start": "0:00:57", "end": "0:01:36", "ka_count": 1},
+    {"n": 3, "label": "Prompt 1 tazze + output + critica", "start": "0:01:36", "end": "0:04:07", "ka_count": 5},
+    {"n": 4, "label": "Prompt 2 specifico + output + analisi", "start": "0:04:07", "end": "0:05:48", "ka_count": 4},
+    {"n": 5, "label": "Perche AI non sostituisce il copywriter", "start": "0:05:48", "end": "0:07:25", "ka_count": 7},
+    {"n": 6, "label": "Come usare ChatGPT come tool", "start": "0:06:28", "end": "0:07:30", "ka_count": 4},
+    {"n": 7, "label": "CTA + outro", "start": "0:07:30", "end": "0:08:29", "ka_count": 2}
+  ],
+  "visual_passages_detail": [
+    {"id": "VP-001", "frame": "frame-010", "timestamp": "0:00:18", "type": "text-overlay", "desc": "Overlay giallo: COPYWRITER definizione"},
+    {"id": "VP-002", "frame": "frame-050", "timestamp": "0:01:38", "type": "chatgpt-screen", "desc": "ChatGPT warm-up prompts corso+consulenza"},
+    {"id": "VP-003", "frames": ["frame-070", "frame-090", "frame-110"], "timestamp": "0:02:18-0:03:38", "type": "chatgpt-screen", "desc": "Prompt 1 tazze + full output (3 frame continui)"},
+    {"id": "VP-004", "frame": "frame-150", "timestamp": "0:04:58", "type": "chatgpt-screen", "desc": "Prompt 2 specifico (tazza nera/temperatura) + output migliorato"}
+  ],
+  "pipeline_stages": {
+    "stage_1_ingest": "DONE",
+    "stage_2_frames": "DONE",
+    "stage_3_visione": "DONE",
+    "stage_4_atoms": "DONE",
+    "stage_5_verify": "PASS",
+    "stage_7_wiki": "DONE",
+    "memory_empire_c": "DONE",
+    "memory_empire_d": "DONE",
+    "memory_empire_e": "DONE",
+    "memory_empire_f": "DONE",
+    "memory_empire_g": "DONE",
+    "memory_empire_h": "DONE"
+  }
+}

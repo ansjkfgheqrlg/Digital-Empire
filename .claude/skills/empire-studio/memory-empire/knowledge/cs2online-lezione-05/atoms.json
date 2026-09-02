@@ -1,0 +1,12 @@
+{
+  "lesson_id": "cs2online-lezione-05",
+  "corso": "Claude Speedrun 2",
+  "total_atoms": 5,
+  "atoms": [
+    {"id":"KA-01","source":"cs2online-lezione-05#trascrizione:lista","category":"Tassonomia / 12 categorie task","tags":["tassonomia","reference"],"atom":"Lista ufficiale 12 categorie di task delegabili all'AI: Copywriting, Ricerca, Ideazione/brainstorming, Web dev/vibe coding, Analisi e strategia, Organizzazione/planning, Comunicazione, Revisione/editing, Automazioni, Problem solving, Analisi dati, Formattazione/struttura."},
+    {"id":"KA-02","source":"cs2online-lezione-05#trascrizione:ricerca","category":"Stack strumenti / Ricerca","tags":["perplexity","google-scholar","ricerca"],"atom":"Stack dichiarato per la ricerca: Perplexity (tool dedicato) + Google Scholar (solo paper scientifici) + AI generalista per sintesi finale — non un singolo tool onnicomprensivo."},
+    {"id":"KA-03","source":"cs2online-lezione-05#trascrizione:comunicazione","category":"Regola di sicurezza / comunicazione clienti","tags":["warning","affidabilita","clienti"],"atom":"Warning esplicito e ripetuto: 'controllate sempre quello che scrive l'AI, sempre' — riferito a email clienti, brief, documenti interni."},
+    {"id":"KA-04","source":"cs2online-lezione-05#trascrizione:analisi-dati","category":"Regola di sicurezza / analisi dati","tags":["warning","hallucination","spreadsheet"],"atom":"Warning specifico su analisi dati/spreadsheet: l'AI 'tende a inventarsi cose' in questo dominio — rischio di hallucination più alto qui che in altri task citati."},
+    {"id":"KA-05","source":"cs2online-lezione-05#trascrizione:ideazione","category":"Limite percepito / brainstorming","tags":["limite","preferenza-personale"],"atom":"Ideazione/brainstorming è il task che l'autore preferisce fare senza AI ('lo faccio spesso con la mia testa') — ammissione esplicita di limite percepito, non regola universale ('dipende da quanto tempo/energia hai')."}
+  ]
+}

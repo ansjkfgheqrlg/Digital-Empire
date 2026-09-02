@@ -1,0 +1,38 @@
+{
+  "kind": "single-video",
+  "id": "sTCwYnWmgcQ",
+  "title": "Come diventare un copywriter con ZERO esperienza",
+  "url": "https://www.youtube.com/watch?v=sTCwYnWmgcQ",
+  "duration_sec": 749,
+  "uploader": "Andrei Pascu",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Cos'è il copywriting"
+    },
+    {
+      "start": 132,
+      "title": "Quanto si guadagna come copywriter"
+    },
+    {
+      "start": 260,
+      "title": "Come si guadagna come copywriter"
+    },
+    {
+      "start": 392,
+      "title": "I 5 passi per diventare un copywriter"
+    },
+    {
+      "start": 629,
+      "title": "Come trovare clienti"
+    }
+  ],
+  "subs": [
+    "runs\\andrei-pascu-001\\cat1-copywriting\\sTCwYnWmgcQ\\sTCwYnWmgcQ.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\andrei-pascu-001\\cat1-copywriting\\sTCwYnWmgcQ\\sTCwYnWmgcQ.webp"
+  ],
+  "ingested_at": "2026-07-09T15:25:40",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=sTCwYnWmgcQ"
+}

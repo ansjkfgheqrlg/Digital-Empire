@@ -1,0 +1,3728 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.240 --> 00:00:02.190 align:start position:0%
+ 
+In<00:00:00.359><c> questo</c><00:00:00.560><c> video</c><00:00:00.719><c> ti</c><00:00:00.880><c> mostro</c><00:00:01.319><c> sette</c><00:00:01.800><c> casi</c>
+
+00:00:02.190 --> 00:00:02.200 align:start position:0%
+In questo video ti mostro sette casi
+ 
+
+00:00:02.200 --> 00:00:05.269 align:start position:0%
+In questo video ti mostro sette casi
+d'uso<00:00:02.600><c> reali</c><00:00:02.960><c> di</c><00:00:03.120><c> Cloud</c><00:00:03.600><c> Opus</c><00:00:04.160><c> 4.8,</c><00:00:05.000><c> il</c><00:00:05.080><c> nuovo</c>
+
+00:00:05.269 --> 00:00:05.279 align:start position:0%
+d'uso reali di Cloud Opus 4.8, il nuovo
+ 
+
+00:00:05.279 --> 00:00:07.590 align:start position:0%
+d'uso reali di Cloud Opus 4.8, il nuovo
+modello<00:00:05.680><c> di</c><00:00:05.839><c> Antropic</c><00:00:06.600><c> che</c><00:00:06.720><c> ha</c><00:00:06.879><c> un</c><00:00:07.000><c> giudizio</c>
+
+00:00:07.590 --> 00:00:07.600 align:start position:0%
+modello di Antropic che ha un giudizio
+ 
+
+00:00:07.600 --> 00:00:09.509 align:start position:0%
+modello di Antropic che ha un giudizio
+migliore,<00:00:08.280><c> più</c><00:00:08.480><c> autonomia</c><00:00:08.920><c> e</c><00:00:09.040><c> la</c><00:00:09.160><c> possibilità</c>
+
+00:00:09.509 --> 00:00:09.519 align:start position:0%
+migliore, più autonomia e la possibilità
+ 
+
+00:00:09.519 --> 00:00:11.669 align:start position:0%
+migliore, più autonomia e la possibilità
+di<00:00:09.719><c> decidere</c><00:00:10.280><c> quanto</c><00:00:10.679><c> deve</c><00:00:11.000><c> sforzarsi.</c>
+
+00:00:11.669 --> 00:00:11.679 align:start position:0%
+di decidere quanto deve sforzarsi.
+ 
+
+00:00:11.679 --> 00:00:14.070 align:start position:0%
+di decidere quanto deve sforzarsi.
+Facciamo<00:00:12.080><c> capire</c><00:00:13.080><c> un</c><00:00:13.280><c> intero</c><00:00:13.599><c> progetto</c><00:00:13.920><c> di</c>
+
+00:00:14.070 --> 00:00:14.080 align:start position:0%
+Facciamo capire un intero progetto di
+ 
+
+00:00:14.080 --> 00:00:16.189 align:start position:0%
+Facciamo capire un intero progetto di
+codice<00:00:14.440><c> che</c><00:00:14.679><c> non</c><00:00:14.879><c> ha</c><00:00:15.000><c> mai</c><00:00:15.240><c> avverto.</c><00:00:15.839><c> Andiamo</c><00:00:16.080><c> a</c>
+
+00:00:16.189 --> 00:00:16.199 align:start position:0%
+codice che non ha mai avverto. Andiamo a
+ 
+
+00:00:16.199 --> 00:00:18.510 align:start position:0%
+codice che non ha mai avverto. Andiamo a
+caccia<00:00:16.480><c> di</c><00:00:16.680><c> bug</c><00:00:17.160><c> che</c><00:00:17.400><c> ti</c><00:00:17.600><c> bloccano</c><00:00:18.039><c> da</c><00:00:18.199><c> ore</c><00:00:18.439><c> e</c>
+
+00:00:18.510 --> 00:00:18.520 align:start position:0%
+caccia di bug che ti bloccano da ore e
+ 
+
+00:00:18.520 --> 00:00:20.390 align:start position:0%
+caccia di bug che ti bloccano da ore e
+costruiamo<00:00:18.960><c> una</c><00:00:19.160><c> nuova</c><00:00:19.520><c> funzione</c><00:00:19.960><c> completa</c>
+
+00:00:20.390 --> 00:00:20.400 align:start position:0%
+costruiamo una nuova funzione completa
+ 
+
+00:00:20.400 --> 00:00:22.230 align:start position:0%
+costruiamo una nuova funzione completa
+dall'inizio<00:00:20.960><c> alla</c><00:00:21.160><c> fine</c><00:00:21.439><c> con</c><00:00:21.600><c> i</c><00:00:21.720><c> flussi</c>
+
+00:00:22.230 --> 00:00:22.240 align:start position:0%
+dall'inizio alla fine con i flussi
+ 
+
+00:00:22.240 --> 00:00:24.670 align:start position:0%
+dall'inizio alla fine con i flussi
+dinamici.<00:00:22.840><c> Gli</c><00:00:22.960><c> diamo</c><00:00:23.400><c> impasto</c><00:00:23.960><c> tre</c><00:00:24.400><c> report</c>
+
+00:00:24.670 --> 00:00:24.680 align:start position:0%
+dinamici. Gli diamo impasto tre report
+ 
+
+00:00:24.680 --> 00:00:26.509 align:start position:0%
+dinamici. Gli diamo impasto tre report
+da<00:00:24.840><c> confrontare</c><00:00:25.439><c> in</c><00:00:25.640><c> un</c><00:00:25.720><c> colpo</c><00:00:26.000><c> solo</c><00:00:26.279><c> e</c><00:00:26.400><c> gli</c>
+
+00:00:26.509 --> 00:00:26.519 align:start position:0%
+da confrontare in un colpo solo e gli
+ 
+
+00:00:26.519 --> 00:00:28.470 align:start position:0%
+da confrontare in un colpo solo e gli
+facciamo<00:00:26.840><c> riscrivere</c><00:00:27.359><c> unemail</c><00:00:27.800><c> perché</c><00:00:28.039><c> suoni</c>
+
+00:00:28.470 --> 00:00:28.480 align:start position:0%
+facciamo riscrivere unemail perché suoni
+ 
+
+00:00:28.480 --> 00:00:31.230 align:start position:0%
+facciamo riscrivere unemail perché suoni
+esattamente<00:00:29.400><c> come</c><00:00:29.800><c> scrivi</c><00:00:30.320><c> tu.</c><00:00:30.720><c> Infine</c><00:00:31.119><c> gli</c>
+
+00:00:31.230 --> 00:00:31.240 align:start position:0%
+esattamente come scrivi tu. Infine gli
+ 
+
+00:00:31.240 --> 00:00:33.150 align:start position:0%
+esattamente come scrivi tu. Infine gli
+lasciamo<00:00:31.599><c> riordinare</c><00:00:32.119><c> e</c><00:00:32.279><c> automatizzare</c><00:00:33.000><c> i</c>
+
+00:00:33.150 --> 00:00:33.160 align:start position:0%
+lasciamo riordinare e automatizzare i
+ 
+
+00:00:33.160 --> 00:00:35.310 align:start position:0%
+lasciamo riordinare e automatizzare i
+tuoi<00:00:33.360><c> file</c><00:00:33.760><c> con</c><00:00:33.960><c> cowork</c><00:00:34.480><c> e</c><00:00:34.640><c> trasformiamo</c><00:00:35.160><c> un</c>
+
+00:00:35.310 --> 00:00:35.320 align:start position:0%
+tuoi file con cowork e trasformiamo un
+ 
+
+00:00:35.320 --> 00:00:36.750 align:start position:0%
+tuoi file con cowork e trasformiamo un
+foglio<00:00:35.559><c> di</c><00:00:35.719><c> dati</c><00:00:36.120><c> grizzi</c><00:00:36.480><c> in</c><00:00:36.600><c> una</c>
+
+00:00:36.750 --> 00:00:36.760 align:start position:0%
+foglio di dati grizzi in una
+ 
+
+00:00:36.760 --> 00:00:38.910 align:start position:0%
+foglio di dati grizzi in una
+presentazione<00:00:37.600><c> pronta.</c><00:00:38.120><c> Sembra</c><00:00:38.440><c> pazzesco,</c>
+
+00:00:38.910 --> 00:00:38.920 align:start position:0%
+presentazione pronta. Sembra pazzesco,
+ 
+
+00:00:38.920 --> 00:00:40.790 align:start position:0%
+presentazione pronta. Sembra pazzesco,
+ma<00:00:39.040><c> è</c><00:00:39.160><c> la</c><00:00:39.280><c> realtà,</c><00:00:39.760><c> quindi</c><00:00:40.200><c> non</c><00:00:40.440><c> perdiamo</c>
+
+00:00:40.790 --> 00:00:40.800 align:start position:0%
+ma è la realtà, quindi non perdiamo
+ 
+
+00:00:40.800 --> 00:00:43.430 align:start position:0%
+ma è la realtà, quindi non perdiamo
+tempo<00:00:41.320><c> e</c><00:00:41.520><c> partiamo.</c><00:00:42.120><c> Il</c><00:00:42.200><c> debutto.</c><00:00:43.000><c> Il</c><00:00:43.120><c> 28</c>
+
+00:00:43.430 --> 00:00:43.440 align:start position:0%
+tempo e partiamo. Il debutto. Il 28
+ 
+
+00:00:43.440 --> 00:00:46.709 align:start position:0%
+tempo e partiamo. Il debutto. Il 28
+maggio<00:00:44.039><c> 2026</c><00:00:44.719><c> Opus</c><00:00:45.120><c> 4.8</c><00:00:45.879><c> è</c><00:00:46.039><c> uscito,</c><00:00:46.480><c> è</c>
+
+00:00:46.709 --> 00:00:46.719 align:start position:0%
+maggio 2026 Opus 4.8 è uscito, è
+ 
+
+00:00:46.719 --> 00:00:49.750 align:start position:0%
+maggio 2026 Opus 4.8 è uscito, è
+costruito<00:00:47.199><c> sulla</c><00:00:47.480><c> base</c><00:00:47.760><c> del</c><00:00:48.039><c> 4.7,</c><00:00:49.199><c> ma</c><00:00:49.440><c> con</c><00:00:49.640><c> un</c>
+
+00:00:49.750 --> 00:00:49.760 align:start position:0%
+costruito sulla base del 4.7, ma con un
+ 
+
+00:00:49.760 --> 00:00:51.990 align:start position:0%
+costruito sulla base del 4.7, ma con un
+giudizio<00:00:50.399><c> più</c><00:00:50.559><c> lucido,</c><00:00:51.079><c> maggiore</c><00:00:51.440><c> sincerità</c>
+
+00:00:51.990 --> 00:00:52.000 align:start position:0%
+giudizio più lucido, maggiore sincerità
+ 
+
+00:00:52.000 --> 00:00:53.990 align:start position:0%
+giudizio più lucido, maggiore sincerità
+su<00:00:52.199><c> quanto</c><00:00:52.480><c> il</c><00:00:52.559><c> lavoro</c><00:00:52.879><c> ha</c><00:00:53.039><c> davvero</c><00:00:53.359><c> portato</c><00:00:53.800><c> a</c>
+
+00:00:53.990 --> 00:00:54.000 align:start position:0%
+su quanto il lavoro ha davvero portato a
+ 
+
+00:00:54.000 --> 00:00:55.590 align:start position:0%
+su quanto il lavoro ha davvero portato a
+termine.<00:00:54.600><c> Questo</c><00:00:54.800><c> ricorda</c><00:00:55.079><c> un</c><00:00:55.199><c> po'</c><00:00:55.359><c> la</c>
+
+00:00:55.590 --> 00:00:55.600 align:start position:0%
+termine. Questo ricorda un po' la
+ 
+
+00:00:55.600 --> 00:00:58.910 align:start position:0%
+termine. Questo ricorda un po' la
+versione<00:00:55.960><c> di</c><00:00:56.480><c> GPT</c><00:00:57.000><c> 5.5</c><00:00:57.879><c> che</c><00:00:58.039><c> è</c><00:00:58.359><c> esattamente</c>
+
+00:00:58.910 --> 00:00:58.920 align:start position:0%
+versione di GPT 5.5 che è esattamente
+ 
+
+00:00:58.920 --> 00:01:01.590 align:start position:0%
+versione di GPT 5.5 che è esattamente
+come<00:00:59.239><c> 5.4</c><00:01:00.199><c> solo</c><00:01:00.559><c> più</c><00:01:00.719><c> matura,</c><00:01:01.239><c> quindi</c><00:01:01.440><c> è</c>
+
+00:01:01.590 --> 00:01:01.600 align:start position:0%
+come 5.4 solo più matura, quindi è
+ 
+
+00:01:01.600 --> 00:01:03.670 align:start position:0%
+come 5.4 solo più matura, quindi è
+costruito<00:01:02.079><c> sulle</c><00:01:02.399><c> ceneri</c><00:01:02.840><c> del</c><00:01:03.079><c> precedente.</c>
+
+00:01:03.670 --> 00:01:03.680 align:start position:0%
+costruito sulle ceneri del precedente.
+ 
+
+00:01:03.680 --> 00:01:05.710 align:start position:0%
+costruito sulle ceneri del precedente.
+Dettaglio<00:01:04.040><c> molto</c><00:01:04.320><c> importante,</c><00:01:04.879><c> il</c><00:01:05.040><c> prezzo</c><00:01:05.519><c> è</c>
+
+00:01:05.710 --> 00:01:05.720 align:start position:0%
+Dettaglio molto importante, il prezzo è
+ 
+
+00:01:05.720 --> 00:01:08.710 align:start position:0%
+Dettaglio molto importante, il prezzo è
+identico<00:01:06.119><c> al</c><00:01:06.360><c> 4.7,</c><00:01:06.920><c> 7.</c><00:01:07.240><c> Le</c><00:01:07.400><c> novità</c><00:01:07.759><c> sui</c><00:01:08.000><c> costi</c>
+
+00:01:08.710 --> 00:01:08.720 align:start position:0%
+identico al 4.7, 7. Le novità sui costi
+ 
+
+00:01:08.720 --> 00:01:10.310 align:start position:0%
+identico al 4.7, 7. Le novità sui costi
+riguarda<00:01:09.119><c> i</c><00:01:09.240><c> limiti</c><00:01:09.520><c> di</c><00:01:09.640><c> richieste,</c><00:01:10.080><c> cioè</c>
+
+00:01:10.310 --> 00:01:10.320 align:start position:0%
+riguarda i limiti di richieste, cioè
+ 
+
+00:01:10.320 --> 00:01:12.030 align:start position:0%
+riguarda i limiti di richieste, cioè
+quante<00:01:10.600><c> chiamate</c><00:01:10.960><c> puoi</c><00:01:11.200><c> fare</c><00:01:11.520><c> in</c><00:01:11.680><c> un</c><00:01:11.799><c> dato</c>
+
+00:01:12.030 --> 00:01:12.040 align:start position:0%
+quante chiamate puoi fare in un dato
+ 
+
+00:01:12.040 --> 00:01:13.830 align:start position:0%
+quante chiamate puoi fare in un dato
+intervallo,<00:01:12.560><c> sono</c><00:01:12.799><c> stati</c><00:01:13.159><c> alzati</c><00:01:13.680><c> per</c>
+
+00:01:13.830 --> 00:01:13.840 align:start position:0%
+intervallo, sono stati alzati per
+ 
+
+00:01:13.840 --> 00:01:15.749 align:start position:0%
+intervallo, sono stati alzati per
+reggere<00:01:14.119><c> il</c><00:01:14.280><c> maggior</c><00:01:14.880><c> consumo</c><00:01:15.400><c> dei</c><00:01:15.560><c> livelli</c>
+
+00:01:15.749 --> 00:01:15.759 align:start position:0%
+reggere il maggior consumo dei livelli
+ 
+
+00:01:15.759 --> 00:01:17.550 align:start position:0%
+reggere il maggior consumo dei livelli
+di<00:01:15.880><c> sforzo</c><00:01:16.200><c> più</c><00:01:16.360><c> alti.</c><00:01:16.759><c> Attenzione</c><00:01:17.200><c> a</c><00:01:17.360><c> non</c>
+
+00:01:17.550 --> 00:01:17.560 align:start position:0%
+di sforzo più alti. Attenzione a non
+ 
+
+00:01:17.560 --> 00:01:19.469 align:start position:0%
+di sforzo più alti. Attenzione a non
+confonderle<00:01:18.119><c> con</c><00:01:18.280><c> i</c><00:01:18.400><c> limiti</c><00:01:18.680><c> di</c><00:01:18.840><c> sessione,</c><00:01:19.320><c> la</c>
+
+00:01:19.469 --> 00:01:19.479 align:start position:0%
+confonderle con i limiti di sessione, la
+ 
+
+00:01:19.479 --> 00:01:21.190 align:start position:0%
+confonderle con i limiti di sessione, la
+finestra<00:01:19.920><c> a</c><00:01:20.040><c> ore</c><00:01:20.280><c> o</c><00:01:20.400><c> quelle</c><00:01:20.640><c> settimanale,</c>
+
+00:01:21.190 --> 00:01:21.200 align:start position:0%
+finestra a ore o quelle settimanale,
+ 
+
+00:01:21.200 --> 00:01:22.749 align:start position:0%
+finestra a ore o quelle settimanale,
+quelli<00:01:21.479><c> restano</c><00:01:21.840><c> invariati.</c><00:01:22.320><c> C'è</c><00:01:22.479><c> poi</c><00:01:22.640><c> un</c>
+
+00:01:22.749 --> 00:01:22.759 align:start position:0%
+quelli restano invariati. C'è poi un
+ 
+
+00:01:22.759 --> 00:01:24.550 align:start position:0%
+quelli restano invariati. C'è poi un
+dato<00:01:23.040><c> che</c><00:01:23.240><c> conta</c><00:01:23.479><c> parecchio</c><00:01:23.880><c> per</c><00:01:24.000><c> chi</c><00:01:24.159><c> lavora</c>
+
+00:01:24.550 --> 00:01:24.560 align:start position:0%
+dato che conta parecchio per chi lavora
+ 
+
+00:01:24.560 --> 00:01:26.710 align:start position:0%
+dato che conta parecchio per chi lavora
+a<00:01:24.720><c> ritmo.</c><00:01:25.079><c> La</c><00:01:25.200><c> nuova</c><00:01:25.479><c> modalità</c><00:01:26.159><c> veloce,</c>
+
+00:01:26.710 --> 00:01:26.720 align:start position:0%
+a ritmo. La nuova modalità veloce,
+ 
+
+00:01:26.720 --> 00:01:30.190 align:start position:0%
+a ritmo. La nuova modalità veloce,
+quella<00:01:26.920><c> del</c><00:01:27.240><c> 4.8,</c><00:01:28.280><c> gira</c><00:01:28.600><c> a</c><00:01:28.799><c> 2,5</c><00:01:29.520><c> volte</c><00:01:29.960><c> la</c>
+
+00:01:30.190 --> 00:01:30.200 align:start position:0%
+quella del 4.8, gira a 2,5 volte la
+ 
+
+00:01:30.200 --> 00:01:32.749 align:start position:0%
+quella del 4.8, gira a 2,5 volte la
+velocità<00:01:30.640><c> e</c><00:01:30.840><c> costa</c><00:01:31.240><c> tre</c><00:01:31.600><c> volte</c><00:01:31.920><c> meno</c><00:01:32.399><c> rispetto</c>
+
+00:01:32.749 --> 00:01:32.759 align:start position:0%
+velocità e costa tre volte meno rispetto
+ 
+
+00:01:32.759 --> 00:01:35.149 align:start position:0%
+velocità e costa tre volte meno rispetto
+ai<00:01:32.880><c> modelli</c><00:01:33.280><c> precedenti.</c><00:01:34.079><c> Quindi</c><00:01:34.439><c> non</c><00:01:34.720><c> solo</c><00:01:35.000><c> è</c>
+
+00:01:35.149 --> 00:01:35.159 align:start position:0%
+ai modelli precedenti. Quindi non solo è
+ 
+
+00:01:35.159 --> 00:01:37.469 align:start position:0%
+ai modelli precedenti. Quindi non solo è
+più<00:01:35.320><c> capace,</c><00:01:35.920><c> ma</c><00:01:36.079><c> su</c><00:01:36.240><c> questo</c><00:01:36.520><c> fronte</c><00:01:36.920><c> è</c><00:01:37.119><c> anche</c>
+
+00:01:37.469 --> 00:01:37.479 align:start position:0%
+più capace, ma su questo fronte è anche
+ 
+
+00:01:37.479 --> 00:01:39.190 align:start position:0%
+più capace, ma su questo fronte è anche
+più<00:01:37.720><c> rapido</c><00:01:38.079><c> ed</c><00:01:38.280><c> economico</c><00:01:38.799><c> rispetto</c><00:01:39.079><c> a</c>
+
+00:01:39.190 --> 00:01:39.200 align:start position:0%
+più rapido ed economico rispetto a
+ 
+
+00:01:39.200 --> 00:01:41.030 align:start position:0%
+più rapido ed economico rispetto a
+prima.<00:01:39.640><c> Il</c><00:01:39.720><c> livello</c><00:01:40.000><c> di</c><00:01:40.159><c> sforzo</c><00:01:40.479><c> e</c><00:01:40.600><c> i</c><00:01:40.720><c> flussi</c>
+
+00:01:41.030 --> 00:01:41.040 align:start position:0%
+prima. Il livello di sforzo e i flussi
+ 
+
+00:01:41.040 --> 00:01:43.069 align:start position:0%
+prima. Il livello di sforzo e i flussi
+dinamici<00:01:41.640><c> insieme</c><00:01:42.040><c> al</c><00:01:42.240><c> modello</c><00:01:42.680><c> sono</c><00:01:42.920><c> le</c>
+
+00:01:43.069 --> 00:01:43.079 align:start position:0%
+dinamici insieme al modello sono le
+ 
+
+00:01:43.079 --> 00:01:44.910 align:start position:0%
+dinamici insieme al modello sono le
+novità<00:01:43.479><c> maggiori.</c><00:01:44.000><c> La</c><00:01:44.119><c> prima</c><00:01:44.399><c> disponibile</c>
+
+00:01:44.910 --> 00:01:44.920 align:start position:0%
+novità maggiori. La prima disponibile
+ 
+
+00:01:44.920 --> 00:01:46.990 align:start position:0%
+novità maggiori. La prima disponibile
+anche<00:01:45.119><c> nella</c><00:01:45.360><c> versione</c><00:01:45.719><c> web</c><00:01:46.119><c> e</c><00:01:46.240><c> in</c><00:01:46.360><c> cork</c>
+
+00:01:46.990 --> 00:01:47.000 align:start position:0%
+anche nella versione web e in cork
+ 
+
+00:01:47.000 --> 00:01:48.830 align:start position:0%
+anche nella versione web e in cork
+lascia<00:01:47.280><c> decidere</c><00:01:47.719><c> quanto</c><00:01:48.159><c> impegno</c><00:01:48.600><c> vuoi</c>
+
+00:01:48.830 --> 00:01:48.840 align:start position:0%
+lascia decidere quanto impegno vuoi
+ 
+
+00:01:48.840 --> 00:01:50.749 align:start position:0%
+lascia decidere quanto impegno vuoi
+dedicare<00:01:49.280><c> a</c><00:01:49.439><c> un</c><00:01:49.600><c> compito,</c><00:01:50.159><c> cioè</c><00:01:50.399><c> quanta</c>
+
+00:01:50.749 --> 00:01:50.759 align:start position:0%
+dedicare a un compito, cioè quanta
+ 
+
+00:01:50.759 --> 00:01:52.870 align:start position:0%
+dedicare a un compito, cioè quanta
+capacità<00:01:51.320><c> di</c><00:01:51.479><c> ragionamento</c><00:01:52.079><c> il</c><00:01:52.280><c> modello</c><00:01:52.680><c> ci</c>
+
+00:01:52.870 --> 00:01:52.880 align:start position:0%
+capacità di ragionamento il modello ci
+ 
+
+00:01:52.880 --> 00:01:55.190 align:start position:0%
+capacità di ragionamento il modello ci
+mette.<00:01:53.280><c> La</c><00:01:53.399><c> seconda</c><00:01:53.880><c> dentro</c><00:01:54.200><c> Cloud</c><00:01:54.560><c> Code</c><00:01:55.040><c> si</c>
+
+00:01:55.190 --> 00:01:55.200 align:start position:0%
+mette. La seconda dentro Cloud Code si
+ 
+
+00:01:55.200 --> 00:01:57.270 align:start position:0%
+mette. La seconda dentro Cloud Code si
+chiama<00:01:55.600><c> flussi</c><00:01:56.119><c> dinamici</c><00:01:56.759><c> e</c><00:01:56.920><c> serve</c><00:01:57.159><c> ad</c>
+
+00:01:57.270 --> 00:01:57.280 align:start position:0%
+chiama flussi dinamici e serve ad
+ 
+
+00:01:57.280 --> 00:01:59.510 align:start position:0%
+chiama flussi dinamici e serve ad
+affrontare<00:01:57.880><c> problemi</c><00:01:58.280><c> di</c><00:01:58.479><c> grande</c><00:01:58.799><c> scala.</c><00:01:59.280><c> Una</c>
+
+00:01:59.510 --> 00:01:59.520 align:start position:0%
+affrontare problemi di grande scala. Una
+ 
+
+00:01:59.520 --> 00:02:01.310 align:start position:0%
+affrontare problemi di grande scala. Una
+precisazione<00:02:00.159><c> importante,</c><00:02:00.799><c> sui</c><00:02:01.000><c> flussi</c>
+
+00:02:01.310 --> 00:02:01.320 align:start position:0%
+precisazione importante, sui flussi
+ 
+
+00:02:01.320 --> 00:02:03.230 align:start position:0%
+precisazione importante, sui flussi
+dinamici<00:02:01.759><c> per</c><00:02:01.880><c> ora</c><00:02:02.119><c> sono</c><00:02:02.479><c> in</c><00:02:02.680><c> anteprima,</c>
+
+00:02:03.230 --> 00:02:03.240 align:start position:0%
+dinamici per ora sono in anteprima,
+ 
+
+00:02:03.240 --> 00:02:05.350 align:start position:0%
+dinamici per ora sono in anteprima,
+quindi<00:02:03.560><c> research</c><00:02:04.000><c> preview</c><00:02:04.520><c> e</c><00:02:04.719><c> disponibili</c>
+
+00:02:05.350 --> 00:02:05.360 align:start position:0%
+quindi research preview e disponibili
+ 
+
+00:02:05.360 --> 00:02:07.270 align:start position:0%
+quindi research preview e disponibili
+solo<00:02:05.680><c> su</c><00:02:05.920><c> Cloud</c><00:02:06.200><c> Code</c><00:02:06.560><c> con</c><00:02:06.759><c> il</c><00:02:06.880><c> piano</c>
+
+00:02:07.270 --> 00:02:07.280 align:start position:0%
+solo su Cloud Code con il piano
+ 
+
+00:02:07.280 --> 00:02:10.550 align:start position:0%
+solo su Cloud Code con il piano
+Enterprise<00:02:08.239><c> o</c><00:02:08.679><c> Team</c><00:02:09.119><c> o</c><00:02:09.319><c> Max.</c><00:02:09.959><c> Se</c><00:02:10.080><c> hai</c><00:02:10.200><c> un</c><00:02:10.319><c> piano</c>
+
+00:02:10.550 --> 00:02:10.560 align:start position:0%
+Enterprise o Team o Max. Se hai un piano
+ 
+
+00:02:10.560 --> 00:02:12.630 align:start position:0%
+Enterprise o Team o Max. Se hai un piano
+base<00:02:10.879><c> ancora</c><00:02:11.200><c> non</c><00:02:11.319><c> ritrovi.</c><00:02:11.800><c> Il</c><00:02:12.000><c> controllo</c><00:02:12.480><c> di</c>
+
+00:02:12.630 --> 00:02:12.640 align:start position:0%
+base ancora non ritrovi. Il controllo di
+ 
+
+00:02:12.640 --> 00:02:14.070 align:start position:0%
+base ancora non ritrovi. Il controllo di
+livello<00:02:12.920><c> dello</c><00:02:13.120><c> sforzo</c><00:02:13.560><c> invece</c><00:02:13.800><c> è</c>
+
+00:02:14.070 --> 00:02:14.080 align:start position:0%
+livello dello sforzo invece è
+ 
+
+00:02:14.080 --> 00:02:15.869 align:start position:0%
+livello dello sforzo invece è
+disponibile<00:02:14.680><c> su</c><00:02:14.879><c> tutti</c><00:02:15.040><c> i</c><00:02:15.120><c> piani.</c><00:02:15.440><c> In</c><00:02:15.560><c> pratica</c>
+
+00:02:15.869 --> 00:02:15.879 align:start position:0%
+disponibile su tutti i piani. In pratica
+ 
+
+00:02:15.879 --> 00:02:17.630 align:start position:0%
+disponibile su tutti i piani. In pratica
+scelto<00:02:16.160><c> il</c><00:02:16.280><c> modello</c><00:02:16.640><c> parti</c><00:02:16.879><c> in</c><00:02:16.959><c> automatico</c><00:02:17.480><c> a</c>
+
+00:02:17.630 --> 00:02:17.640 align:start position:0%
+scelto il modello parti in automatico a
+ 
+
+00:02:17.640 --> 00:02:19.509 align:start position:0%
+scelto il modello parti in automatico a
+livello<00:02:18.040><c> alto,</c><00:02:18.400><c> ma</c><00:02:18.560><c> puoi</c><00:02:18.800><c> cambiarlo</c><00:02:19.280><c> quando</c>
+
+00:02:19.509 --> 00:02:19.519 align:start position:0%
+livello alto, ma puoi cambiarlo quando
+ 
+
+00:02:19.519 --> 00:02:21.750 align:start position:0%
+livello alto, ma puoi cambiarlo quando
+vuoi.<00:02:20.000><c> La</c><00:02:20.080><c> scala</c><00:02:20.319><c> va</c><00:02:20.480><c> dal</c><00:02:20.680><c> basso</c><00:02:21.080><c> a</c><00:02:21.280><c> medio,</c>
+
+00:02:21.750 --> 00:02:21.760 align:start position:0%
+vuoi. La scala va dal basso a medio,
+ 
+
+00:02:21.760 --> 00:02:24.110 align:start position:0%
+vuoi. La scala va dal basso a medio,
+alto<00:02:22.200><c> a</c><00:02:22.400><c> molto</c><00:02:22.760><c> alto.</c><00:02:23.200><c> Troviamo</c><00:02:23.640><c> dentro</c><00:02:23.879><c> Cloud</c>
+
+00:02:24.110 --> 00:02:24.120 align:start position:0%
+alto a molto alto. Troviamo dentro Cloud
+ 
+
+00:02:24.120 --> 00:02:26.670 align:start position:0%
+alto a molto alto. Troviamo dentro Cloud
+Code<00:02:24.560><c> Xi</c><00:02:25.400><c> che</c><00:02:25.519><c> è</c><00:02:25.840><c> oltre</c><00:02:26.160><c> veramente</c><00:02:26.480><c> il</c>
+
+00:02:26.670 --> 00:02:26.680 align:start position:0%
+Code Xi che è oltre veramente il
+ 
+
+00:02:26.680 --> 00:02:28.350 align:start position:0%
+Code Xi che è oltre veramente il
+massimo.<00:02:27.120><c> Più</c><00:02:27.440><c> sali</c><00:02:27.760><c> più</c><00:02:27.879><c> il</c><00:02:28.000><c> modello</c><00:02:28.239><c> è</c>
+
+00:02:28.350 --> 00:02:28.360 align:start position:0%
+massimo. Più sali più il modello è
+ 
+
+00:02:28.360 --> 00:02:30.150 align:start position:0%
+massimo. Più sali più il modello è
+capace<00:02:28.800><c> ma</c><00:02:29.000><c> consuma</c><00:02:29.440><c> molto</c><00:02:29.640><c> di</c><00:02:29.720><c> più.</c><00:02:29.959><c> Più</c>
+
+00:02:30.150 --> 00:02:30.160 align:start position:0%
+capace ma consuma molto di più. Più
+ 
+
+00:02:30.160 --> 00:02:32.110 align:start position:0%
+capace ma consuma molto di più. Più
+scendi<00:02:30.519><c> più</c><00:02:30.680><c> le</c><00:02:30.840><c> risposte</c><00:02:31.239><c> sono</c><00:02:31.440><c> veloci.</c><00:02:32.000><c> Lo</c>
+
+00:02:32.110 --> 00:02:32.120 align:start position:0%
+scendi più le risposte sono veloci. Lo
+ 
+
+00:02:32.120 --> 00:02:33.710 align:start position:0%
+scendi più le risposte sono veloci. Lo
+stesso<00:02:32.360><c> comando</c><00:02:32.640><c> è</c><00:02:32.800><c> disponibile</c><00:02:33.480><c> sia</c>
+
+00:02:33.710 --> 00:02:33.720 align:start position:0%
+stesso comando è disponibile sia
+ 
+
+00:02:33.720 --> 00:02:35.869 align:start position:0%
+stesso comando è disponibile sia
+nell'app<00:02:34.280><c> sia</c><00:02:34.519><c> da</c><00:02:34.640><c> riga</c><00:02:34.840><c> di</c><00:02:34.959><c> comando.</c><00:02:35.440><c> Perché</c>
+
+00:02:35.869 --> 00:02:35.879 align:start position:0%
+nell'app sia da riga di comando. Perché
+ 
+
+00:02:35.879 --> 00:02:37.750 align:start position:0%
+nell'app sia da riga di comando. Perché
+i<00:02:36.040><c> test</c><00:02:36.560><c> ufficiali</c><00:02:37.080><c> vanno</c><00:02:37.319><c> presi</c><00:02:37.560><c> con</c><00:02:37.640><c> le</c>
+
+00:02:37.750 --> 00:02:37.760 align:start position:0%
+i test ufficiali vanno presi con le
+ 
+
+00:02:37.760 --> 00:02:39.229 align:start position:0%
+i test ufficiali vanno presi con le
+pinze?<00:02:38.239><c> Ora,</c><00:02:38.440><c> come</c><00:02:38.640><c> sempre,</c><00:02:38.879><c> andiamo</c><00:02:39.120><c> a</c>
+
+00:02:39.229 --> 00:02:39.239 align:start position:0%
+pinze? Ora, come sempre, andiamo a
+ 
+
+00:02:39.239 --> 00:02:40.869 align:start position:0%
+pinze? Ora, come sempre, andiamo a
+guardare<00:02:39.480><c> i</c><00:02:39.599><c> benchmark</c><00:02:40.120><c> che</c><00:02:40.280><c> sono</c><00:02:40.480><c> utili,</c><00:02:40.760><c> ma</c>
+
+00:02:40.869 --> 00:02:40.879 align:start position:0%
+guardare i benchmark che sono utili, ma
+ 
+
+00:02:40.879 --> 00:02:42.750 align:start position:0%
+guardare i benchmark che sono utili, ma
+vanno<00:02:41.159><c> sempre</c><00:02:41.400><c> presi</c><00:02:41.640><c> con</c><00:02:41.760><c> le</c><00:02:41.840><c> pinze</c><00:02:42.360><c> perché</c>
+
+00:02:42.750 --> 00:02:42.760 align:start position:0%
+vanno sempre presi con le pinze perché
+ 
+
+00:02:42.760 --> 00:02:44.430 align:start position:0%
+vanno sempre presi con le pinze perché
+ogni<00:02:43.040><c> nuovo</c><00:02:43.319><c> modello</c><00:02:43.879><c> batte</c><00:02:44.200><c> sempre</c>
+
+00:02:44.430 --> 00:02:44.440 align:start position:0%
+ogni nuovo modello batte sempre
+ 
+
+00:02:44.440 --> 00:02:46.110 align:start position:0%
+ogni nuovo modello batte sempre
+praticamente<00:02:44.840><c> quello</c><00:02:45.040><c> precedente,</c><00:02:45.680><c> ma</c><00:02:45.840><c> ormai</c>
+
+00:02:46.110 --> 00:02:46.120 align:start position:0%
+praticamente quello precedente, ma ormai
+ 
+
+00:02:46.120 --> 00:02:47.309 align:start position:0%
+praticamente quello precedente, ma ormai
+sappiamo<00:02:46.440><c> anche</c><00:02:46.560><c> che</c><00:02:46.680><c> i</c><00:02:46.760><c> modelli</c><00:02:47.080><c> sono</c>
+
+00:02:47.309 --> 00:02:47.319 align:start position:0%
+sappiamo anche che i modelli sono
+ 
+
+00:02:47.319 --> 00:02:49.270 align:start position:0%
+sappiamo anche che i modelli sono
+ottimizzati<00:02:48.040><c> per</c><00:02:48.239><c> fare</c><00:02:48.560><c> meglio</c><00:02:49.040><c> sui</c>
+
+00:02:49.270 --> 00:02:49.280 align:start position:0%
+ottimizzati per fare meglio sui
+ 
+
+00:02:49.280 --> 00:02:51.509 align:start position:0%
+ottimizzati per fare meglio sui
+benchmark.<00:02:49.800><c> Magari</c><00:02:50.040><c> la</c><00:02:50.159><c> versione</c><00:02:50.519><c> 4.8</c><00:02:51.319><c> è</c>
+
+00:02:51.509 --> 00:02:51.519 align:start position:0%
+benchmark. Magari la versione 4.8 è
+ 
+
+00:02:51.519 --> 00:02:54.430 align:start position:0%
+benchmark. Magari la versione 4.8 è
+davvero<00:02:51.920><c> più</c><00:02:52.120><c> forte</c><00:02:52.360><c> di</c><00:02:52.519><c> Codex</c><00:02:53.000><c> con</c><00:02:53.159><c> GPT</c><00:02:53.680><c> 5.5</c>
+
+00:02:54.430 --> 00:02:54.440 align:start position:0%
+davvero più forte di Codex con GPT 5.5
+ 
+
+00:02:54.440 --> 00:02:56.030 align:start position:0%
+davvero più forte di Codex con GPT 5.5
+nella<00:02:54.640><c> programmazione</c><00:02:55.120><c> autonoma,</c><00:02:55.599><c> ma</c><00:02:55.800><c> per</c><00:02:55.920><c> il</c>
+
+00:02:56.030 --> 00:02:56.040 align:start position:0%
+nella programmazione autonoma, ma per il
+ 
+
+00:02:56.040 --> 00:02:57.910 align:start position:0%
+nella programmazione autonoma, ma per il
+tuo<00:02:56.159><c> flusso</c><00:02:56.480><c> specifico</c><00:02:56.959><c> un</c><00:02:57.080><c> altro</c><00:02:57.280><c> strumento</c>
+
+00:02:57.910 --> 00:02:57.920 align:start position:0%
+tuo flusso specifico un altro strumento
+ 
+
+00:02:57.920 --> 00:02:59.509 align:start position:0%
+tuo flusso specifico un altro strumento
+magari<00:02:58.200><c> può</c><00:02:58.360><c> essere</c><00:02:58.599><c> migliore.</c><00:02:59.080><c> Quindi,</c><00:02:59.360><c> come</c>
+
+00:02:59.509 --> 00:02:59.519 align:start position:0%
+magari può essere migliore. Quindi, come
+ 
+
+00:02:59.519 --> 00:03:02.030 align:start position:0%
+magari può essere migliore. Quindi, come
+dico<00:02:59.760><c> sempre,</c><00:03:00.319><c> ok</c><00:03:00.720><c> benchmark,</c><00:03:01.239><c> ma</c><00:03:01.400><c> poi</c><00:03:01.680><c> testa</c>
+
+00:03:02.030 --> 00:03:02.040 align:start position:0%
+dico sempre, ok benchmark, ma poi testa
+ 
+
+00:03:02.040 --> 00:03:04.550 align:start position:0%
+dico sempre, ok benchmark, ma poi testa
+sempre<00:03:02.400><c> sul</c><00:03:02.640><c> campo.</c><00:03:03.239><c> Un</c><00:03:03.360><c> modello</c><00:03:03.799><c> più</c><00:03:04.000><c> sincero</c>
+
+00:03:04.550 --> 00:03:04.560 align:start position:0%
+sempre sul campo. Un modello più sincero
+ 
+
+00:03:04.560 --> 00:03:06.309 align:start position:0%
+sempre sul campo. Un modello più sincero
+su<00:03:04.720><c> ciò</c><00:03:04.959><c> che</c><00:03:05.159><c> fa.</c><00:03:05.480><c> Antropic</c><00:03:05.879><c> ha</c><00:03:06.000><c> dedicato</c>
+
+00:03:06.309 --> 00:03:06.319 align:start position:0%
+su ciò che fa. Antropic ha dedicato
+ 
+
+00:03:06.319 --> 00:03:07.990 align:start position:0%
+su ciò che fa. Antropic ha dedicato
+un'intera<00:03:06.680><c> sezione</c><00:03:07.120><c> all'interno</c><00:03:07.599><c> del</c><00:03:07.799><c> suo</c>
+
+00:03:07.990 --> 00:03:08.000 align:start position:0%
+un'intera sezione all'interno del suo
+ 
+
+00:03:08.000 --> 00:03:09.430 align:start position:0%
+un'intera sezione all'interno del suo
+paper<00:03:08.319><c> di</c><00:03:08.480><c> rilascio</c><00:03:09.000><c> ed</c><00:03:09.159><c> è</c><00:03:09.239><c> proprio</c>
+
+00:03:09.430 --> 00:03:09.440 align:start position:0%
+paper di rilascio ed è proprio
+ 
+
+00:03:09.440 --> 00:03:10.949 align:start position:0%
+paper di rilascio ed è proprio
+interessante<00:03:09.959><c> perché</c><00:03:10.159><c> è</c><00:03:10.319><c> proprio</c><00:03:10.640><c> uno</c><00:03:10.799><c> dei</c>
+
+00:03:10.949 --> 00:03:10.959 align:start position:0%
+interessante perché è proprio uno dei
+ 
+
+00:03:10.959 --> 00:03:12.390 align:start position:0%
+interessante perché è proprio uno dei
+difetti<00:03:11.280><c> che</c><00:03:11.400><c> si</c><00:03:11.519><c> notava</c><00:03:11.840><c> nella</c><00:03:12.040><c> versione</c>
+
+00:03:12.390 --> 00:03:12.400 align:start position:0%
+difetti che si notava nella versione
+ 
+
+00:03:12.400 --> 00:03:15.110 align:start position:0%
+difetti che si notava nella versione
+4.7.<00:03:13.280><c> Tutti</c><00:03:13.440><c> i</c><00:03:13.519><c> modelli</c><00:03:13.879><c> vengono</c><00:03:14.400><c> addestrati</c>
+
+00:03:15.110 --> 00:03:15.120 align:start position:0%
+4.7. Tutti i modelli vengono addestrati
+ 
+
+00:03:15.120 --> 00:03:17.830 align:start position:0%
+4.7. Tutti i modelli vengono addestrati
+a<00:03:15.440><c> non</c><00:03:16.000><c> promettere</c><00:03:16.760><c> cose</c><00:03:17.159><c> che</c><00:03:17.360><c> non</c><00:03:17.519><c> possono</c>
+
+00:03:17.830 --> 00:03:17.840 align:start position:0%
+a non promettere cose che non possono
+ 
+
+00:03:17.840 --> 00:03:19.789 align:start position:0%
+a non promettere cose che non possono
+mantenere.<00:03:18.640><c> Due</c><00:03:18.840><c> esempi</c><00:03:19.200><c> classici</c><00:03:19.640><c> di</c>
+
+00:03:19.789 --> 00:03:19.799 align:start position:0%
+mantenere. Due esempi classici di
+ 
+
+00:03:19.799 --> 00:03:21.949 align:start position:0%
+mantenere. Due esempi classici di
+affermazioni<00:03:20.440><c> da</c><00:03:20.640><c> evitare.</c><00:03:21.400><c> Esempio</c><00:03:21.680><c> numero</c>
+
+00:03:21.949 --> 00:03:21.959 align:start position:0%
+affermazioni da evitare. Esempio numero
+ 
+
+00:03:21.959 --> 00:03:24.030 align:start position:0%
+affermazioni da evitare. Esempio numero
+uno,<00:03:22.360><c> stima</c><00:03:22.799><c> dei</c><00:03:23.000><c> tempi</c><00:03:23.319><c> gonfiati.</c>
+
+00:03:24.030 --> 00:03:24.040 align:start position:0%
+uno, stima dei tempi gonfiati.
+ 
+
+00:03:24.040 --> 00:03:26.229 align:start position:0%
+uno, stima dei tempi gonfiati.
+Dichiarare<00:03:24.640><c> ci</c><00:03:24.799><c> vorranno</c><00:03:25.360><c> 4</c><00:03:25.599><c> ore</c><00:03:25.840><c> e</c><00:03:26.000><c> puoi</c>
+
+00:03:26.229 --> 00:03:26.239 align:start position:0%
+Dichiarare ci vorranno 4 ore e puoi
+ 
+
+00:03:26.239 --> 00:03:28.350 align:start position:0%
+Dichiarare ci vorranno 4 ore e puoi
+finire<00:03:26.640><c> in</c><00:03:26.799><c> 20</c><00:03:27.080><c> minuti.</c><00:03:27.599><c> Oppure</c><00:03:28.040><c> un</c><00:03:28.159><c> altro</c>
+
+00:03:28.350 --> 00:03:28.360 align:start position:0%
+finire in 20 minuti. Oppure un altro
+ 
+
+00:03:28.360 --> 00:03:30.309 align:start position:0%
+finire in 20 minuti. Oppure un altro
+esempio<00:03:28.680><c> è</c><00:03:29.040><c> lavoro</c><00:03:29.360><c> dichiarato</c><00:03:29.959><c> ma</c><00:03:30.120><c> non</c>
+
+00:03:30.309 --> 00:03:30.319 align:start position:0%
+esempio è lavoro dichiarato ma non
+ 
+
+00:03:30.319 --> 00:03:32.589 align:start position:0%
+esempio è lavoro dichiarato ma non
+fatto.<00:03:31.080><c> Dire</c><00:03:31.439><c> ho</c><00:03:31.599><c> finito,</c><00:03:31.920><c> ho</c><00:03:32.000><c> caricato</c><00:03:32.400><c> tutte</c>
+
+00:03:32.589 --> 00:03:32.599 align:start position:0%
+fatto. Dire ho finito, ho caricato tutte
+ 
+
+00:03:32.599 --> 00:03:34.390 align:start position:0%
+fatto. Dire ho finito, ho caricato tutte
+e<00:03:32.720><c> 50</c><00:03:33.040><c> le</c><00:03:33.200><c> modifiche</c><00:03:33.680><c> quando</c><00:03:33.840><c> in</c><00:03:34.000><c> realtà</c><00:03:34.239><c> ne</c>
+
+00:03:34.390 --> 00:03:34.400 align:start position:0%
+e 50 le modifiche quando in realtà ne
+ 
+
+00:03:34.400 --> 00:03:36.869 align:start position:0%
+e 50 le modifiche quando in realtà ne
+sono<00:03:34.560><c> state</c><00:03:34.840><c> caricate</c><00:03:35.439><c> solo</c><00:03:35.959><c> 15.</c><00:03:36.519><c> Se</c><00:03:36.680><c> ti</c><00:03:36.799><c> è</c>
+
+00:03:36.869 --> 00:03:36.879 align:start position:0%
+sono state caricate solo 15. Se ti è
+ 
+
+00:03:36.879 --> 00:03:39.149 align:start position:0%
+sono state caricate solo 15. Se ti è
+capitato<00:03:37.200><c> di</c><00:03:37.319><c> ricevere</c><00:03:37.760><c> risposte</c><00:03:38.400><c> così,</c><00:03:39.000><c> non</c>
+
+00:03:39.149 --> 00:03:39.159 align:start position:0%
+capitato di ricevere risposte così, non
+ 
+
+00:03:39.159 --> 00:03:41.830 align:start position:0%
+capitato di ricevere risposte così, non
+sei<00:03:39.400><c> il</c><00:03:39.519><c> solo.</c><00:03:39.959><c> La</c><00:03:40.080><c> versione</c><00:03:40.480><c> 4.8</c><00:03:41.159><c> è</c><00:03:41.439><c> molto</c><00:03:41.720><c> più</c>
+
+00:03:41.830 --> 00:03:41.840 align:start position:0%
+sei il solo. La versione 4.8 è molto più
+ 
+
+00:03:41.840 --> 00:03:43.509 align:start position:0%
+sei il solo. La versione 4.8 è molto più
+affidabile<00:03:42.319><c> su</c><00:03:42.480><c> questo.</c><00:03:42.799><c> Il</c><00:03:42.920><c> dato</c><00:03:43.120><c> concreto</c>
+
+00:03:43.509 --> 00:03:43.519 align:start position:0%
+affidabile su questo. Il dato concreto
+ 
+
+00:03:43.519 --> 00:03:46.429 align:start position:0%
+affidabile su questo. Il dato concreto
+di<00:03:43.680><c> Antropic</c><00:03:44.159><c> è</c><00:03:44.400><c> netto.</c><00:03:44.720><c> La</c><00:03:44.879><c> 4.8</c><00:03:45.799><c> ha</c><00:03:46.000><c> circa</c>
+
+00:03:46.429 --> 00:03:46.439 align:start position:0%
+di Antropic è netto. La 4.8 ha circa
+ 
+
+00:03:46.439 --> 00:03:49.789 align:start position:0%
+di Antropic è netto. La 4.8 ha circa
+quattro<00:03:46.959><c> volte</c><00:03:47.599><c> meno</c><00:03:47.920><c> probabilità</c><00:03:48.720><c> della</c><00:03:49.000><c> 4.7</c>
+
+00:03:49.789 --> 00:03:49.799 align:start position:0%
+quattro volte meno probabilità della 4.7
+ 
+
+00:03:49.799 --> 00:03:52.149 align:start position:0%
+quattro volte meno probabilità della 4.7
+di<00:03:49.959><c> lasciare</c><00:03:50.480><c> passare</c><00:03:51.280><c> un</c><00:03:51.439><c> difetto</c><00:03:51.959><c> nel</c>
+
+00:03:52.149 --> 00:03:52.159 align:start position:0%
+di lasciare passare un difetto nel
+ 
+
+00:03:52.159 --> 00:03:53.670 align:start position:0%
+di lasciare passare un difetto nel
+codice<00:03:52.640><c> che</c><00:03:52.799><c> ha</c><00:03:52.920><c> scritto</c><00:03:53.400><c> senza</c>
+
+00:03:53.670 --> 00:03:53.680 align:start position:0%
+codice che ha scritto senza
+ 
+
+00:03:53.680 --> 00:03:56.350 align:start position:0%
+codice che ha scritto senza
+segnalartelo.<00:03:54.720><c> Hanno</c><00:03:55.040><c> anche</c><00:03:55.280><c> test</c><00:03:55.720><c> specifici</c>
+
+00:03:56.350 --> 00:03:56.360 align:start position:0%
+segnalartelo. Hanno anche test specifici
+ 
+
+00:03:56.360 --> 00:03:58.910 align:start position:0%
+segnalartelo. Hanno anche test specifici
+per<00:03:56.599><c> misurare</c><00:03:57.120><c> i</c><00:03:57.319><c> comportamenti</c><00:03:58.200><c> fuori</c><00:03:58.560><c> riga,</c>
+
+00:03:58.910 --> 00:03:58.920 align:start position:0%
+per misurare i comportamenti fuori riga,
+ 
+
+00:03:58.920 --> 00:04:00.670 align:start position:0%
+per misurare i comportamenti fuori riga,
+come<00:03:59.079><c> per</c><00:03:59.200><c> esempio</c><00:03:59.400><c> l'inganno.</c><00:03:59.920><c> Qui</c><00:04:00.280><c> i</c><00:04:00.439><c> tasti</c>
+
+00:04:00.670 --> 00:04:00.680 align:start position:0%
+come per esempio l'inganno. Qui i tasti
+ 
+
+00:04:00.680 --> 00:04:03.949 align:start position:0%
+come per esempio l'inganno. Qui i tasti
+del<00:04:00.879><c> 4.8</c><00:04:01.560><c> sono</c><00:04:01.959><c> sostanzialmente</c><00:04:03.040><c> più</c><00:04:03.280><c> bassi</c>
+
+00:04:03.949 --> 00:04:03.959 align:start position:0%
+del 4.8 sono sostanzialmente più bassi
+ 
+
+00:04:03.959 --> 00:04:06.710 align:start position:0%
+del 4.8 sono sostanzialmente più bassi
+della<00:04:04.360><c> 4.7</c><00:04:04.920><c> 7</c><00:04:05.239><c> e</c><00:04:05.439><c> si</c><00:04:05.560><c> avvicinano</c><00:04:06.159><c> a</c><00:04:06.319><c> quelli</c><00:04:06.560><c> di</c>
+
+00:04:06.710 --> 00:04:06.720 align:start position:0%
+della 4.7 7 e si avvicinano a quelli di
+ 
+
+00:04:06.720 --> 00:04:08.830 align:start position:0%
+della 4.7 7 e si avvicinano a quelli di
+Mos,<00:04:07.280><c> il</c><00:04:07.439><c> modello</c><00:04:07.840><c> migliore</c><00:04:08.200><c> in</c><00:04:08.319><c> assoluto</c><00:04:08.680><c> che</c>
+
+00:04:08.830 --> 00:04:08.840 align:start position:0%
+Mos, il modello migliore in assoluto che
+ 
+
+00:04:08.840 --> 00:04:11.229 align:start position:0%
+Mos, il modello migliore in assoluto che
+ancora<00:04:09.120><c> non</c><00:04:09.319><c> è</c><00:04:09.439><c> rilasciato.</c><00:04:10.159><c> Mos</c><00:04:10.560><c> in</c><00:04:10.760><c> arrivo</c><00:04:11.120><c> e</c>
+
+00:04:11.229 --> 00:04:11.239 align:start position:0%
+ancora non è rilasciato. Mos in arrivo e
+ 
+
+00:04:11.239 --> 00:04:13.869 align:start position:0%
+ancora non è rilasciato. Mos in arrivo e
+dove<00:04:11.480><c> trovi</c><00:04:11.799><c> già</c><00:04:12.079><c> la</c><00:04:12.280><c> 4.8.</c><00:04:13.159><c> Nel</c><00:04:13.360><c> complesso</c><00:04:13.720><c> la</c>
+
+00:04:13.869 --> 00:04:13.879 align:start position:0%
+dove trovi già la 4.8. Nel complesso la
+ 
+
+00:04:13.879 --> 00:04:15.910 align:start position:0%
+dove trovi già la 4.8. Nel complesso la
+versione<00:04:14.120><c> di</c><00:04:14.280><c> Opus</c><00:04:14.640><c> 4.8</c><00:04:15.319><c> viene</c><00:04:15.560><c> descritta</c>
+
+00:04:15.910 --> 00:04:15.920 align:start position:0%
+versione di Opus 4.8 viene descritta
+ 
+
+00:04:15.920 --> 00:04:18.390 align:start position:0%
+versione di Opus 4.8 viene descritta
+come<00:04:16.040><c> un</c><00:04:16.199><c> passo</c><00:04:16.479><c> avanti</c><00:04:16.919><c> modesto</c><00:04:17.519><c> ma</c><00:04:17.759><c> concreto</c>
+
+00:04:18.390 --> 00:04:18.400 align:start position:0%
+come un passo avanti modesto ma concreto
+ 
+
+00:04:18.400 --> 00:04:20.909 align:start position:0%
+come un passo avanti modesto ma concreto
+rispetto<00:04:18.759><c> alla</c><00:04:18.959><c> 4.7.</c><00:04:19.720><c> C'è</c><00:04:19.919><c> ancora</c><00:04:20.320><c> strada</c><00:04:20.720><c> da</c>
+
+00:04:20.909 --> 00:04:20.919 align:start position:0%
+rispetto alla 4.7. C'è ancora strada da
+ 
+
+00:04:20.919 --> 00:04:22.550 align:start position:0%
+rispetto alla 4.7. C'è ancora strada da
+fare?<00:04:21.440><c> La</c><00:04:21.560><c> cosa</c><00:04:21.720><c> più</c><00:04:21.840><c> intrigante</c><00:04:22.360><c> è</c>
+
+00:04:22.550 --> 00:04:22.560 align:start position:0%
+fare? La cosa più intrigante è
+ 
+
+00:04:22.560 --> 00:04:24.950 align:start position:0%
+fare? La cosa più intrigante è
+l'annuncio<00:04:23.320><c> di</c><00:04:23.479><c> una</c><00:04:23.720><c> futura</c><00:04:24.280><c> famiglia</c><00:04:24.759><c> di</c>
+
+00:04:24.950 --> 00:04:24.960 align:start position:0%
+l'annuncio di una futura famiglia di
+ 
+
+00:04:24.960 --> 00:04:27.110 align:start position:0%
+l'annuncio di una futura famiglia di
+modelli<00:04:25.400><c> più</c><00:04:25.600><c> potente</c><00:04:25.960><c> di</c><00:04:26.120><c> Opus</c><00:04:26.600><c> chiamata</c>
+
+00:04:27.110 --> 00:04:27.120 align:start position:0%
+modelli più potente di Opus chiamata
+ 
+
+00:04:27.120 --> 00:04:28.790 align:start position:0%
+modelli più potente di Opus chiamata
+MOS.<00:04:27.680><c> Per</c><00:04:27.800><c> ora</c><00:04:28.000><c> la</c><00:04:28.160><c> usano</c><00:04:28.520><c> poche</c>
+
+00:04:28.790 --> 00:04:28.800 align:start position:0%
+MOS. Per ora la usano poche
+ 
+
+00:04:28.800 --> 00:04:30.510 align:start position:0%
+MOS. Per ora la usano poche
+organizzazioni,<00:04:29.479><c> come</c><00:04:29.639><c> sappiamo,</c><00:04:30.240><c> per</c><00:04:30.400><c> la</c>
+
+00:04:30.510 --> 00:04:30.520 align:start position:0%
+organizzazioni, come sappiamo, per la
+ 
+
+00:04:30.520 --> 00:04:32.110 align:start position:0%
+organizzazioni, come sappiamo, per la
+sicurezza<00:04:30.960><c> informatica,</c><00:04:31.479><c> il</c><00:04:31.600><c> cosiddetto</c>
+
+00:04:32.110 --> 00:04:32.120 align:start position:0%
+sicurezza informatica, il cosiddetto
+ 
+
+00:04:32.120 --> 00:04:34.150 align:start position:0%
+sicurezza informatica, il cosiddetto
+Project<00:04:32.600><c> Glasswing.</c><00:04:33.479><c> Col</c><00:04:33.759><c> progetto</c>
+
+00:04:34.150 --> 00:04:34.160 align:start position:0%
+Project Glasswing. Col progetto
+ 
+
+00:04:34.160 --> 00:04:36.390 align:start position:0%
+Project Glasswing. Col progetto
+Glasswing<00:04:34.919><c> l'obiettivo</c><00:04:35.400><c> è</c><00:04:35.639><c> prima</c><00:04:35.880><c> mettere</c><00:04:36.160><c> in</c>
+
+00:04:36.390 --> 00:04:36.400 align:start position:0%
+Glasswing l'obiettivo è prima mettere in
+ 
+
+00:04:36.400 --> 00:04:38.469 align:start position:0%
+Glasswing l'obiettivo è prima mettere in
+sicurezza<00:04:37.080><c> tutto</c><00:04:37.320><c> il</c><00:04:37.440><c> web,</c><00:04:37.960><c> quindi</c><00:04:38.240><c> tutte</c>
+
+00:04:38.469 --> 00:04:38.479 align:start position:0%
+sicurezza tutto il web, quindi tutte
+ 
+
+00:04:38.479 --> 00:04:40.469 align:start position:0%
+sicurezza tutto il web, quindi tutte
+queste<00:04:38.720><c> grandi</c><00:04:39.039><c> aziende</c><00:04:39.759><c> che</c><00:04:39.840><c> cosa</c><00:04:40.080><c> fanno?</c>
+
+00:04:40.469 --> 00:04:40.479 align:start position:0%
+queste grandi aziende che cosa fanno?
+ 
+
+00:04:40.479 --> 00:04:42.990 align:start position:0%
+queste grandi aziende che cosa fanno?
+Prendono<00:04:40.840><c> e</c><00:04:41.039><c> stanno</c><00:04:41.400><c> lanciando</c><00:04:42.080><c> Mos</c><00:04:42.680><c> cercare</c>
+
+00:04:42.990 --> 00:04:43.000 align:start position:0%
+Prendono e stanno lanciando Mos cercare
+ 
+
+00:04:43.000 --> 00:04:44.830 align:start position:0%
+Prendono e stanno lanciando Mos cercare
+di<00:04:43.360><c> tappare</c><00:04:43.880><c> tutte</c><00:04:44.080><c> le</c><00:04:44.199><c> falle,</c><00:04:44.440><c> così</c><00:04:44.639><c> da</c>
+
+00:04:44.830 --> 00:04:44.840 align:start position:0%
+di tappare tutte le falle, così da
+ 
+
+00:04:44.840 --> 00:04:47.189 align:start position:0%
+di tappare tutte le falle, così da
+rendersi,<00:04:45.240><c> diciamo,</c><00:04:45.800><c> a</c><00:04:45.960><c> prova</c><00:04:46.199><c> di</c><00:04:46.360><c> bomba</c><00:04:46.919><c> e</c>
+
+00:04:47.189 --> 00:04:47.199 align:start position:0%
+rendersi, diciamo, a prova di bomba e
+ 
+
+00:04:47.199 --> 00:04:49.909 align:start position:0%
+rendersi, diciamo, a prova di bomba e
+poi<00:04:47.479><c> dopo</c><00:04:48.120><c> rilasciare</c><00:04:48.720><c> Mitos</c><00:04:49.120><c> sul</c><00:04:49.360><c> mercato.</c>
+
+00:04:49.909 --> 00:04:49.919 align:start position:0%
+poi dopo rilasciare Mitos sul mercato.
+ 
+
+00:04:49.919 --> 00:04:51.270 align:start position:0%
+poi dopo rilasciare Mitos sul mercato.
+Piccola<00:04:50.199><c> nota</c><00:04:50.440><c> mi</c><00:04:50.520><c> sembra</c><00:04:50.720><c> che</c><00:04:50.840><c> addirittura</c><00:04:51.160><c> è</c>
+
+00:04:51.270 --> 00:04:51.280 align:start position:0%
+Piccola nota mi sembra che addirittura è
+ 
+
+00:04:51.280 --> 00:04:52.749 align:start position:0%
+Piccola nota mi sembra che addirittura è
+stata<00:04:51.440><c> Firefox</c><00:04:51.880><c> a</c><00:04:52.000><c> dichiarare</c><00:04:52.360><c> che</c><00:04:52.520><c> in</c><00:04:52.639><c> un</c>
+
+00:04:52.749 --> 00:04:52.759 align:start position:0%
+stata Firefox a dichiarare che in un
+ 
+
+00:04:52.759 --> 00:04:54.710 align:start position:0%
+stata Firefox a dichiarare che in un
+solo<00:04:52.960><c> mese</c><00:04:53.199><c> con</c><00:04:53.360><c> l'utilizzo</c><00:04:53.759><c> di</c><00:04:53.880><c> Vitos</c><00:04:54.479><c> hanno</c>
+
+00:04:54.710 --> 00:04:54.720 align:start position:0%
+solo mese con l'utilizzo di Vitos hanno
+ 
+
+00:04:54.720 --> 00:04:56.749 align:start position:0%
+solo mese con l'utilizzo di Vitos hanno
+chiuso<00:04:55.000><c> più</c><00:04:55.120><c> di</c><00:04:55.280><c> 140</c><00:04:55.880><c> falle,</c><00:04:56.320><c> una</c><00:04:56.440><c> cosa</c><00:04:56.600><c> del</c>
+
+00:04:56.749 --> 00:04:56.759 align:start position:0%
+chiuso più di 140 falle, una cosa del
+ 
+
+00:04:56.759 --> 00:04:58.270 align:start position:0%
+chiuso più di 140 falle, una cosa del
+genere.<00:04:57.240><c> Anropic</c><00:04:57.600><c> ci</c><00:04:57.759><c> dice</c><00:04:57.880><c> che</c><00:04:58.039><c> punta</c><00:04:58.199><c> a</c>
+
+00:04:58.270 --> 00:04:58.280 align:start position:0%
+genere. Anropic ci dice che punta a
+ 
+
+00:04:58.280 --> 00:05:00.029 align:start position:0%
+genere. Anropic ci dice che punta a
+rilasciare<00:04:58.680><c> il</c><00:04:58.800><c> Mitos</c><00:04:59.280><c> disponibile</c><00:04:59.720><c> a</c><00:04:59.880><c> tutti</c>
+
+00:05:00.029 --> 00:05:00.039 align:start position:0%
+rilasciare il Mitos disponibile a tutti
+ 
+
+00:05:00.039 --> 00:05:02.150 align:start position:0%
+rilasciare il Mitos disponibile a tutti
+i<00:05:00.160><c> clienti</c><00:05:00.720><c> nelle</c><00:05:01.039><c> prossime</c><00:05:01.360><c> settimane,</c><00:05:01.919><c> ma</c>
+
+00:05:02.150 --> 00:05:02.160 align:start position:0%
+i clienti nelle prossime settimane, ma
+ 
+
+00:05:02.160 --> 00:05:04.670 align:start position:0%
+i clienti nelle prossime settimane, ma
+non<00:05:02.360><c> si</c><00:05:02.479><c> sa</c><00:05:03.000><c> quando</c><00:05:03.600><c> ancora,</c><00:05:04.120><c> diciamo,</c><00:05:04.520><c> è</c>
+
+00:05:04.670 --> 00:05:04.680 align:start position:0%
+non si sa quando ancora, diciamo, è
+ 
+
+00:05:04.680 --> 00:05:06.909 align:start position:0%
+non si sa quando ancora, diciamo, è
+molto<00:05:04.960><c> generico.</c><00:05:05.680><c> Intanto</c><00:05:05.919><c> la</c><00:05:06.120><c> 4.8</c><00:05:06.720><c> è</c>
+
+00:05:06.909 --> 00:05:06.919 align:start position:0%
+molto generico. Intanto la 4.8 è
+ 
+
+00:05:06.919 --> 00:05:08.830 align:start position:0%
+molto generico. Intanto la 4.8 è
+disponibile<00:05:07.360><c> ovunque,</c><00:05:07.919><c> web,</c><00:05:08.280><c> terminale,</c>
+
+00:05:08.830 --> 00:05:08.840 align:start position:0%
+disponibile ovunque, web, terminale,
+ 
+
+00:05:08.840 --> 00:05:10.310 align:start position:0%
+disponibile ovunque, web, terminale,
+estensione<00:05:09.360><c> nell'editor,</c><00:05:09.960><c> la</c><00:05:10.080><c> trovi</c>
+
+00:05:10.310 --> 00:05:10.320 align:start position:0%
+estensione nell'editor, la trovi
+ 
+
+00:05:10.320 --> 00:05:12.110 align:start position:0%
+estensione nell'editor, la trovi
+direttamente<00:05:10.720><c> anche</c><00:05:10.919><c> nell'app</c><00:05:11.720><c> iPhone,</c>
+
+00:05:12.110 --> 00:05:12.120 align:start position:0%
+direttamente anche nell'app iPhone,
+ 
+
+00:05:12.120 --> 00:05:14.230 align:start position:0%
+direttamente anche nell'app iPhone,
+Android<00:05:12.520><c> o</c><00:05:12.680><c> direttamente</c><00:05:13.080><c> su</c><00:05:13.280><c> Mac</c><00:05:13.680><c> e</c><00:05:13.840><c> resta</c><00:05:14.120><c> la</c>
+
+00:05:14.230 --> 00:05:14.240 align:start position:0%
+Android o direttamente su Mac e resta la
+ 
+
+00:05:14.240 --> 00:05:15.870 align:start position:0%
+Android o direttamente su Mac e resta la
+finestra<00:05:14.600><c> di</c><00:05:14.759><c> contesto</c><00:05:15.120><c> di</c><00:05:15.240><c> 1</c><00:05:15.400><c> milione,</c><00:05:15.720><c> cioè</c>
+
+00:05:15.870 --> 00:05:15.880 align:start position:0%
+finestra di contesto di 1 milione, cioè
+ 
+
+00:05:15.880 --> 00:05:17.270 align:start position:0%
+finestra di contesto di 1 milione, cioè
+la<00:05:16.000><c> quantità</c><00:05:16.280><c> di</c><00:05:16.440><c> testo</c><00:05:16.720><c> che</c><00:05:16.840><c> il</c><00:05:16.960><c> modello</c>
+
+00:05:17.270 --> 00:05:17.280 align:start position:0%
+la quantità di testo che il modello
+ 
+
+00:05:17.280 --> 00:05:18.950 align:start position:0%
+la quantità di testo che il modello
+riesce<00:05:17.680><c> a</c><00:05:17.840><c> tenere</c><00:05:18.120><c> a</c><00:05:18.240><c> mente</c><00:05:18.479><c> in</c><00:05:18.639><c> una</c><00:05:18.759><c> sola</c>
+
+00:05:18.950 --> 00:05:18.960 align:start position:0%
+riesce a tenere a mente in una sola
+ 
+
+00:05:18.960 --> 00:05:21.070 align:start position:0%
+riesce a tenere a mente in una sola
+conversazione.<00:05:19.800><c> Dal</c><00:05:19.960><c> menù</c><00:05:20.160><c> di</c><00:05:20.319><c> scelta</c><00:05:20.800><c> puoi</c>
+
+00:05:21.070 --> 00:05:21.080 align:start position:0%
+conversazione. Dal menù di scelta puoi
+ 
+
+00:05:21.080 --> 00:05:23.350 align:start position:0%
+conversazione. Dal menù di scelta puoi
+passare<00:05:21.440><c> in</c><00:05:21.600><c> qualsiasi</c><00:05:22.080><c> momento</c><00:05:22.319><c> alla</c><00:05:22.560><c> 4.8,</c>
+
+00:05:23.350 --> 00:05:23.360 align:start position:0%
+passare in qualsiasi momento alla 4.8,
+ 
+
+00:05:23.360 --> 00:05:25.390 align:start position:0%
+passare in qualsiasi momento alla 4.8,
+indicata<00:05:23.800><c> come</c><00:05:24.000><c> l'opzione</c><00:05:24.560><c> più</c><00:05:24.840><c> capace</c><00:05:25.240><c> per</c>
+
+00:05:25.390 --> 00:05:25.400 align:start position:0%
+indicata come l'opzione più capace per
+ 
+
+00:05:25.400 --> 00:05:26.830 align:start position:0%
+indicata come l'opzione più capace per
+la<00:05:25.520><c> maggior</c><00:05:25.800><c> parte</c><00:05:25.919><c> dei</c><00:05:26.080><c> lavoratori.</c><00:05:26.759><c> I</c>
+
+00:05:26.830 --> 00:05:26.840 align:start position:0%
+la maggior parte dei lavoratori. I
+ 
+
+00:05:26.840 --> 00:05:29.350 align:start position:0%
+la maggior parte dei lavoratori. I
+difetti<00:05:27.280><c> della</c><00:05:27.560><c> 4.7</c><00:05:28.440><c> secondo</c><00:05:28.680><c> gli</c><00:05:28.800><c> utenti.</c><00:05:29.240><c> La</c>
+
+00:05:29.350 --> 00:05:29.360 align:start position:0%
+difetti della 4.7 secondo gli utenti. La
+ 
+
+00:05:29.360 --> 00:05:31.830 align:start position:0%
+difetti della 4.7 secondo gli utenti. La
+4.7<00:05:30.080><c> era</c><00:05:30.280><c> uscita</c><00:05:30.720><c> appena</c><00:05:31.120><c> un</c><00:05:31.280><c> mese</c><00:05:31.440><c> e</c><00:05:31.560><c> mezzo</c>
+
+00:05:31.830 --> 00:05:31.840 align:start position:0%
+4.7 era uscita appena un mese e mezzo
+ 
+
+00:05:31.840 --> 00:05:33.950 align:start position:0%
+4.7 era uscita appena un mese e mezzo
+prima,<00:05:32.199><c> il</c><00:05:32.360><c> 16</c><00:05:32.639><c> aprile</c><00:05:33.080><c> circa,</c><00:05:33.600><c> quindi</c><00:05:33.840><c> un</c>
+
+00:05:33.950 --> 00:05:33.960 align:start position:0%
+prima, il 16 aprile circa, quindi un
+ 
+
+00:05:33.960 --> 00:05:35.590 align:start position:0%
+prima, il 16 aprile circa, quindi un
+ritmo<00:05:34.240><c> di</c><00:05:34.319><c> rilascio</c><00:05:34.759><c> altissimo.</c><00:05:35.319><c> Eppure</c>
+
+00:05:35.590 --> 00:05:35.600 align:start position:0%
+ritmo di rilascio altissimo. Eppure
+ 
+
+00:05:35.600 --> 00:05:37.029 align:start position:0%
+ritmo di rilascio altissimo. Eppure
+parecchio<00:05:35.919><c> utenti</c><00:05:36.199><c> non</c><00:05:36.360><c> l'avevano</c><00:05:36.680><c> accolta</c>
+
+00:05:37.029 --> 00:05:37.039 align:start position:0%
+parecchio utenti non l'avevano accolta
+ 
+
+00:05:37.039 --> 00:05:38.909 align:start position:0%
+parecchio utenti non l'avevano accolta
+benissimo,<00:05:37.600><c> anzi</c><00:05:37.960><c> la</c><00:05:38.120><c> trattavano</c><00:05:38.560><c> peggio</c>
+
+00:05:38.909 --> 00:05:38.919 align:start position:0%
+benissimo, anzi la trattavano peggio
+ 
+
+00:05:38.919 --> 00:05:40.830 align:start position:0%
+benissimo, anzi la trattavano peggio
+della<00:05:39.160><c> versione</c><00:05:39.479><c> 4.6.</c><00:05:40.319><c> I</c><00:05:40.440><c> problemi</c><00:05:40.720><c> più</c>
+
+00:05:40.830 --> 00:05:40.840 align:start position:0%
+della versione 4.6. I problemi più
+ 
+
+00:05:40.840 --> 00:05:42.749 align:start position:0%
+della versione 4.6. I problemi più
+citati<00:05:41.160><c> sembravano</c><00:05:41.680><c> un</c><00:05:41.800><c> po'</c><00:05:41.880><c> pigra,</c><00:05:42.400><c> mollava</c>
+
+00:05:42.749 --> 00:05:42.759 align:start position:0%
+citati sembravano un po' pigra, mollava
+ 
+
+00:05:42.759 --> 00:05:44.510 align:start position:0%
+citati sembravano un po' pigra, mollava
+il<00:05:42.840><c> compito</c><00:05:43.240><c> troppo</c><00:05:43.479><c> presto</c><00:05:44.039><c> e</c><00:05:44.199><c> per</c><00:05:44.360><c> questo</c>
+
+00:05:44.510 --> 00:05:44.520 align:start position:0%
+il compito troppo presto e per questo
+ 
+
+00:05:44.520 --> 00:05:46.710 align:start position:0%
+il compito troppo presto e per questo
+era<00:05:44.720><c> nato</c><00:05:44.960><c> il</c><00:05:45.120><c> comando</c><00:05:45.680><c> obiettivo,</c><00:05:46.479><c> un</c>
+
+00:05:46.710 --> 00:05:46.720 align:start position:0%
+era nato il comando obiettivo, un
+ 
+
+00:05:46.720 --> 00:05:48.590 align:start position:0%
+era nato il comando obiettivo, un
+rimedio<00:05:47.080><c> per</c><00:05:47.319><c> spingere</c><00:05:47.759><c> a</c><00:05:47.960><c> insistere</c><00:05:48.360><c> più</c><00:05:48.479><c> a</c>
+
+00:05:48.590 --> 00:05:48.600 align:start position:0%
+rimedio per spingere a insistere più a
+ 
+
+00:05:48.600 --> 00:05:50.469 align:start position:0%
+rimedio per spingere a insistere più a
+lungo<00:05:48.919><c> verso</c><00:05:49.160><c> un</c><00:05:49.319><c> traguardo</c><00:05:49.800><c> preciso</c><00:05:50.240><c> che</c><00:05:50.360><c> ora</c>
+
+00:05:50.469 --> 00:05:50.479 align:start position:0%
+lungo verso un traguardo preciso che ora
+ 
+
+00:05:50.479 --> 00:05:51.950 align:start position:0%
+lungo verso un traguardo preciso che ora
+è<00:05:50.560><c> diventato</c><00:05:50.960><c> parte</c><00:05:51.240><c> integrante</c><00:05:51.759><c> del</c>
+
+00:05:51.950 --> 00:05:51.960 align:start position:0%
+è diventato parte integrante del
+ 
+
+00:05:51.960 --> 00:05:54.270 align:start position:0%
+è diventato parte integrante del
+modello.<00:05:52.479><c> Di</c><00:05:52.639><c> base</c><00:05:52.960><c> è</c><00:05:53.160><c> meno</c><00:05:53.400><c> pigra</c><00:05:53.720><c> e</c><00:05:53.880><c> regge</c>
+
+00:05:54.270 --> 00:05:54.280 align:start position:0%
+modello. Di base è meno pigra e regge
+ 
+
+00:05:54.280 --> 00:05:55.830 align:start position:0%
+modello. Di base è meno pigra e regge
+meglio<00:05:54.600><c> i</c><00:05:54.759><c> lavori</c><00:05:55.000><c> lunghi.</c><00:05:55.440><c> le</c><00:05:55.680><c> si</c>
+
+00:05:55.830 --> 00:05:55.840 align:start position:0%
+meglio i lavori lunghi. le si
+ 
+
+00:05:55.840 --> 00:05:57.670 align:start position:0%
+meglio i lavori lunghi. le si
+rimproverava<00:05:56.560><c> anche</c><00:05:56.800><c> un</c><00:05:57.039><c> eccesso</c><00:05:57.479><c> di</c>
+
+00:05:57.670 --> 00:05:57.680 align:start position:0%
+rimproverava anche un eccesso di
+ 
+
+00:05:57.680 --> 00:05:59.870 align:start position:0%
+rimproverava anche un eccesso di
+rigidità<00:05:58.360><c> sulle</c><00:05:58.680><c> restrizioni</c><00:05:59.080><c> di</c><00:05:59.240><c> sicurezza</c>
+
+00:05:59.870 --> 00:05:59.880 align:start position:0%
+rigidità sulle restrizioni di sicurezza
+ 
+
+00:05:59.880 --> 00:06:02.070 align:start position:0%
+rigidità sulle restrizioni di sicurezza
+e<00:06:00.280><c> un</c><00:06:00.479><c> consumo,</c><00:06:01.000><c> quindi</c><00:06:01.240><c> anche</c><00:06:01.400><c> un</c><00:06:01.520><c> costo</c><00:06:01.880><c> più</c>
+
+00:06:02.070 --> 00:06:02.080 align:start position:0%
+e un consumo, quindi anche un costo più
+ 
+
+00:06:02.080 --> 00:06:03.670 align:start position:0%
+e un consumo, quindi anche un costo più
+alto.<00:06:02.440><c> La</c><00:06:02.560><c> critica</c><00:06:02.840><c> di</c><00:06:02.919><c> più</c><00:06:03.080><c> divertente</c><00:06:03.520><c> è</c>
+
+00:06:03.670 --> 00:06:03.680 align:start position:0%
+alto. La critica di più divertente è
+ 
+
+00:06:03.680 --> 00:06:05.309 align:start position:0%
+alto. La critica di più divertente è
+stata<00:06:03.840><c> a</c><00:06:03.919><c> un</c><00:06:04.039><c> certo</c><00:06:04.240><c> punto</c><00:06:04.680><c> come</c><00:06:04.880><c> compagno</c><00:06:05.199><c> di</c>
+
+00:06:05.309 --> 00:06:05.319 align:start position:0%
+stata a un certo punto come compagno di
+ 
+
+00:06:05.319 --> 00:06:07.029 align:start position:0%
+stata a un certo punto come compagno di
+ragionamento<00:06:05.840><c> va</c><00:06:06.039><c> benissimo,</c><00:06:06.560><c> ma</c><00:06:06.680><c> a</c><00:06:06.840><c> volte</c>
+
+00:06:07.029 --> 00:06:07.039 align:start position:0%
+ragionamento va benissimo, ma a volte
+ 
+
+00:06:07.039 --> 00:06:09.270 align:start position:0%
+ragionamento va benissimo, ma a volte
+risultava<00:06:07.479><c> brusca</c><00:06:08.080><c> o</c><00:06:08.280><c> testarda,</c><00:06:08.960><c> cioè</c><00:06:09.160><c> si</c>
+
+00:06:09.270 --> 00:06:09.280 align:start position:0%
+risultava brusca o testarda, cioè si
+ 
+
+00:06:09.280 --> 00:06:10.909 align:start position:0%
+risultava brusca o testarda, cioè si
+incaponiva<00:06:09.759><c> mare</c><00:06:09.960><c> su</c><00:06:10.080><c> cose</c><00:06:10.280><c> su</c><00:06:10.440><c> cui</c><00:06:10.599><c> credeva</c>
+
+00:06:10.909 --> 00:06:10.919 align:start position:0%
+incaponiva mare su cose su cui credeva
+ 
+
+00:06:10.919 --> 00:06:11.990 align:start position:0%
+incaponiva mare su cose su cui credeva
+di<00:06:11.000><c> avere</c><00:06:11.199><c> ragione</c><00:06:11.479><c> anche</c><00:06:11.599><c> se</c><00:06:11.720><c> non</c><00:06:11.840><c> aveva</c>
+
+00:06:11.990 --> 00:06:12.000 align:start position:0%
+di avere ragione anche se non aveva
+ 
+
+00:06:12.000 --> 00:06:13.350 align:start position:0%
+di avere ragione anche se non aveva
+ragione.<00:06:12.400><c> Sono</c><00:06:12.560><c> difetti</c><00:06:12.840><c> che</c><00:06:12.919><c> la</c><00:06:13.039><c> community</c>
+
+00:06:13.350 --> 00:06:13.360 align:start position:0%
+ragione. Sono difetti che la community
+ 
+
+00:06:13.360 --> 00:06:16.029 align:start position:0%
+ragione. Sono difetti che la community
+ha<00:06:13.520><c> percepito</c><00:06:13.960><c> e</c><00:06:14.120><c> indovinate</c><00:06:14.520><c> un</c><00:06:14.599><c> po'</c><00:06:14.840><c> in</c><00:06:15.039><c> 4.8</c>
+
+00:06:16.029 --> 00:06:16.039 align:start position:0%
+ha percepito e indovinate un po' in 4.8
+ 
+
+00:06:16.039 --> 00:06:17.990 align:start position:0%
+ha percepito e indovinate un po' in 4.8
+non<00:06:16.199><c> c'è</c><00:06:16.400><c> più,</c><00:06:16.759><c> quindi</c><00:06:17.160><c> vediamo</c><00:06:17.479><c> che</c><00:06:17.599><c> Antropic</c>
+
+00:06:17.990 --> 00:06:18.000 align:start position:0%
+non c'è più, quindi vediamo che Antropic
+ 
+
+00:06:18.000 --> 00:06:19.670 align:start position:0%
+non c'è più, quindi vediamo che Antropic
+è<00:06:18.120><c> molto</c><00:06:18.400><c> recettiva</c><00:06:18.840><c> ai</c><00:06:19.039><c> feedback</c><00:06:19.520><c> che</c>
+
+00:06:19.670 --> 00:06:19.680 align:start position:0%
+è molto recettiva ai feedback che
+ 
+
+00:06:19.680 --> 00:06:21.589 align:start position:0%
+è molto recettiva ai feedback che
+riceve.<00:06:20.160><c> Colpa</c><00:06:20.400><c> del</c><00:06:20.560><c> modello</c><00:06:21.000><c> o</c><00:06:21.160><c> di</c><00:06:21.280><c> come</c><00:06:21.440><c> lo</c>
+
+00:06:21.589 --> 00:06:21.599 align:start position:0%
+riceve. Colpa del modello o di come lo
+ 
+
+00:06:21.599 --> 00:06:23.390 align:start position:0%
+riceve. Colpa del modello o di come lo
+usiamo?<00:06:22.080><c> Qui</c><00:06:22.440><c> entriamo</c><00:06:22.759><c> in</c><00:06:22.840><c> una</c><00:06:22.960><c> differenza</c>
+
+00:06:23.390 --> 00:06:23.400 align:start position:0%
+usiamo? Qui entriamo in una differenza
+ 
+
+00:06:23.400 --> 00:06:25.189 align:start position:0%
+usiamo? Qui entriamo in una differenza
+sostanziale.<00:06:24.240><c> Tra</c><00:06:24.400><c> un</c><00:06:24.560><c> modello</c><00:06:24.840><c> che</c><00:06:24.960><c> ha</c><00:06:25.039><c> dei</c>
+
+00:06:25.189 --> 00:06:25.199 align:start position:0%
+sostanziale. Tra un modello che ha dei
+ 
+
+00:06:25.199 --> 00:06:26.870 align:start position:0%
+sostanziale. Tra un modello che ha dei
+limiti<00:06:25.479><c> e</c><00:06:25.639><c> un</c><00:06:25.720><c> modello</c><00:06:26.000><c> usato</c><00:06:26.280><c> male</c><00:06:26.599><c> c'è</c>
+
+00:06:26.870 --> 00:06:26.880 align:start position:0%
+limiti e un modello usato male c'è
+ 
+
+00:06:26.880 --> 00:06:29.150 align:start position:0%
+limiti e un modello usato male c'è
+grande<00:06:27.160><c> differenza</c><00:06:27.720><c> e</c><00:06:27.880><c> a</c><00:06:28.000><c> volte</c><00:06:28.319><c> è</c><00:06:28.639><c> sottile</c><00:06:29.039><c> e</c>
+
+00:06:29.150 --> 00:06:29.160 align:start position:0%
+grande differenza e a volte è sottile e
+ 
+
+00:06:29.160 --> 00:06:30.909 align:start position:0%
+grande differenza e a volte è sottile e
+altre<00:06:29.400><c> volte</c><00:06:29.560><c> è</c><00:06:29.639><c> una</c><00:06:29.720><c> muraglia</c><00:06:30.039><c> cinese.</c><00:06:30.680><c> Non</c><00:06:30.759><c> è</c>
+
+00:06:30.909 --> 00:06:30.919 align:start position:0%
+altre volte è una muraglia cinese. Non è
+ 
+
+00:06:30.919 --> 00:06:32.469 align:start position:0%
+altre volte è una muraglia cinese. Non è
+sempre<00:06:31.199><c> colpa</c><00:06:31.440><c> del</c><00:06:31.599><c> modello,</c><00:06:31.960><c> a</c><00:06:32.080><c> volte</c><00:06:32.240><c> è</c><00:06:32.360><c> una</c>
+
+00:06:32.469 --> 00:06:32.479 align:start position:0%
+sempre colpa del modello, a volte è una
+ 
+
+00:06:32.479 --> 00:06:34.189 align:start position:0%
+sempre colpa del modello, a volte è una
+questione<00:06:32.759><c> di</c><00:06:32.919><c> metodo</c><00:06:33.280><c> e</c><00:06:33.440><c> la</c><00:06:33.560><c> risposta</c><00:06:33.919><c> non</c><00:06:34.039><c> è</c>
+
+00:06:34.189 --> 00:06:34.199 align:start position:0%
+questione di metodo e la risposta non è
+ 
+
+00:06:34.199 --> 00:06:37.309 align:start position:0%
+questione di metodo e la risposta non è
+la<00:06:34.360><c> 4.7</c><00:06:35.039><c> non</c><00:06:35.240><c> ci</c><00:06:35.360><c> riesce</c><00:06:35.960><c> aspetto</c><00:06:36.280><c> alla</c><00:06:36.479><c> 4.8.</c><00:06:37.199><c> a</c>
+
+00:06:37.309 --> 00:06:37.319 align:start position:0%
+la 4.7 non ci riesce aspetto alla 4.8. a
+ 
+
+00:06:37.319 --> 00:06:39.189 align:start position:0%
+la 4.7 non ci riesce aspetto alla 4.8. a
+volte<00:06:37.520><c> è</c><00:06:37.639><c> semplicemente</c><00:06:38.160><c> un</c><00:06:38.319><c> errore</c><00:06:38.639><c> nostro</c><00:06:39.000><c> e</c>
+
+00:06:39.189 --> 00:06:39.199 align:start position:0%
+volte è semplicemente un errore nostro e
+ 
+
+00:06:39.199 --> 00:06:40.710 align:start position:0%
+volte è semplicemente un errore nostro e
+questo<00:06:39.360><c> è</c><00:06:39.479><c> importante</c><00:06:39.840><c> dirlo.</c><00:06:40.240><c> Detto</c><00:06:40.440><c> questo,</c>
+
+00:06:40.710 --> 00:06:40.720 align:start position:0%
+questo è importante dirlo. Detto questo,
+ 
+
+00:06:40.720 --> 00:06:43.230 align:start position:0%
+questo è importante dirlo. Detto questo,
+la<00:06:40.880><c> 4.8</c><00:06:41.560><c> nasce</c><00:06:41.880><c> proprio</c><00:06:42.160><c> per</c><00:06:42.400><c> sistemare</c><00:06:43.000><c> quei</c>
+
+00:06:43.230 --> 00:06:43.240 align:start position:0%
+la 4.8 nasce proprio per sistemare quei
+ 
+
+00:06:43.240 --> 00:06:45.070 align:start position:0%
+la 4.8 nasce proprio per sistemare quei
+punti:<00:06:43.680><c> più</c><00:06:43.840><c> sincerità</c><00:06:44.360><c> e</c><00:06:44.520><c> capacità</c><00:06:44.919><c> di</c>
+
+00:06:45.070 --> 00:06:45.080 align:start position:0%
+punti: più sincerità e capacità di
+ 
+
+00:06:45.080 --> 00:06:47.029 align:start position:0%
+punti: più sincerità e capacità di
+correggersi,<00:06:45.840><c> più</c><00:06:46.000><c> autonomia</c><00:06:46.560><c> sui</c><00:06:46.759><c> lavori</c>
+
+00:06:47.029 --> 00:06:47.039 align:start position:0%
+correggersi, più autonomia sui lavori
+ 
+
+00:06:47.039 --> 00:06:48.710 align:start position:0%
+correggersi, più autonomia sui lavori
+lunghi,<00:06:47.479><c> un</c><00:06:47.639><c> tono</c><00:06:47.960><c> più</c><00:06:48.160><c> caldo</c><00:06:48.560><c> e</c>
+
+00:06:48.710 --> 00:06:48.720 align:start position:0%
+lunghi, un tono più caldo e
+ 
+
+00:06:48.720 --> 00:06:51.029 align:start position:0%
+lunghi, un tono più caldo e
+collaborativo<00:06:49.400><c> e</c><00:06:49.720><c> una</c><00:06:49.919><c> qualità</c><00:06:50.560><c> d'uso</c>
+
+00:06:51.029 --> 00:06:51.039 align:start position:0%
+collaborativo e una qualità d'uso
+ 
+
+00:06:51.039 --> 00:06:52.950 align:start position:0%
+collaborativo e una qualità d'uso
+migliore.<00:06:51.599><c> Usa</c><00:06:51.919><c> meglio</c><00:06:52.199><c> gli</c><00:06:52.400><c> strumenti,</c>
+
+00:06:52.950 --> 00:06:52.960 align:start position:0%
+migliore. Usa meglio gli strumenti,
+ 
+
+00:06:52.960 --> 00:06:54.870 align:start position:0%
+migliore. Usa meglio gli strumenti,
+ragiona<00:06:53.319><c> meglio,</c><00:06:53.680><c> fa</c><00:06:53.840><c> domande</c><00:06:54.160><c> più</c><00:06:54.319><c> sensate,</c>
+
+00:06:54.870 --> 00:06:54.880 align:start position:0%
+ragiona meglio, fa domande più sensate,
+ 
+
+00:06:54.880 --> 00:06:57.070 align:start position:0%
+ragiona meglio, fa domande più sensate,
+spreca<00:06:55.240><c> meno</c><00:06:55.440><c> risorse,</c><00:06:56.000><c> tutto</c><00:06:56.520><c> in</c><00:06:56.680><c> un'ottica</c>
+
+00:06:57.070 --> 00:06:57.080 align:start position:0%
+spreca meno risorse, tutto in un'ottica
+ 
+
+00:06:57.080 --> 00:06:58.710 align:start position:0%
+spreca meno risorse, tutto in un'ottica
+di<00:06:57.199><c> ottimizzazione,</c><00:06:57.919><c> anche</c><00:06:58.120><c> perché</c><00:06:58.360><c> sappiamo</c>
+
+00:06:58.710 --> 00:06:58.720 align:start position:0%
+di ottimizzazione, anche perché sappiamo
+ 
+
+00:06:58.720 --> 00:07:00.430 align:start position:0%
+di ottimizzazione, anche perché sappiamo
+che<00:06:58.840><c> i</c><00:06:59.000><c> limiti</c><00:06:59.440><c> di</c><00:06:59.560><c> Cloud</c><00:06:59.879><c> sono</c><00:07:00.080><c> veramente</c>
+
+00:07:00.430 --> 00:07:00.440 align:start position:0%
+che i limiti di Cloud sono veramente
+ 
+
+00:07:00.440 --> 00:07:02.830 align:start position:0%
+che i limiti di Cloud sono veramente
+stringenti,<00:07:01.000><c> quindi</c><00:07:01.319><c> consumo</c><00:07:01.919><c> vola.</c><00:07:02.479><c> Lezione</c>
+
+00:07:02.830 --> 00:07:02.840 align:start position:0%
+stringenti, quindi consumo vola. Lezione
+ 
+
+00:07:02.840 --> 00:07:04.830 align:start position:0%
+stringenti, quindi consumo vola. Lezione
+numero<00:07:03.120><c> uno,</c><00:07:03.520><c> lo</c><00:07:03.680><c> sforzo.</c><00:07:04.199><c> Per</c><00:07:04.360><c> tutto</c><00:07:04.599><c> questo</c>
+
+00:07:04.830 --> 00:07:04.840 align:start position:0%
+numero uno, lo sforzo. Per tutto questo
+ 
+
+00:07:04.840 --> 00:07:06.830 align:start position:0%
+numero uno, lo sforzo. Per tutto questo
+ho<00:07:05.000><c> ricavato</c><00:07:05.440><c> alcune</c><00:07:05.800><c> lezioni.</c><00:07:06.360><c> La</c><00:07:06.479><c> prima</c><00:07:06.720><c> che</c>
+
+00:07:06.830 --> 00:07:06.840 align:start position:0%
+ho ricavato alcune lezioni. La prima che
+ 
+
+00:07:06.840 --> 00:07:08.110 align:start position:0%
+ho ricavato alcune lezioni. La prima che
+andremo<00:07:07.039><c> a</c><00:07:07.120><c> vedere</c><00:07:07.319><c> è</c><00:07:07.440><c> per</c><00:07:07.560><c> l'appunto</c><00:07:07.960><c> lo</c>
+
+00:07:08.110 --> 00:07:08.120 align:start position:0%
+andremo a vedere è per l'appunto lo
+ 
+
+00:07:08.120 --> 00:07:10.029 align:start position:0%
+andremo a vedere è per l'appunto lo
+sforzo.<00:07:08.520><c> È</c><00:07:08.560><c> la</c><00:07:08.680><c> levola</c><00:07:09.080><c> numero</c><00:07:09.360><c> uno.</c><00:07:09.680><c> Diversi</c>
+
+00:07:10.029 --> 00:07:10.039 align:start position:0%
+sforzo. È la levola numero uno. Diversi
+ 
+
+00:07:10.039 --> 00:07:12.029 align:start position:0%
+sforzo. È la levola numero uno. Diversi
+difetti<00:07:10.599><c> di</c><00:07:10.800><c> prima,</c><00:07:11.240><c> quindi</c><00:07:11.440><c> la</c><00:07:11.599><c> preghirizia,</c>
+
+00:07:12.029 --> 00:07:12.039 align:start position:0%
+difetti di prima, quindi la preghirizia,
+ 
+
+00:07:12.039 --> 00:07:13.790 align:start position:0%
+difetti di prima, quindi la preghirizia,
+gli<00:07:12.120><c> eccessi</c><00:07:12.440><c> di</c><00:07:12.520><c> prudenza,</c><00:07:13.039><c> potevano</c><00:07:13.479><c> essere</c>
+
+00:07:13.790 --> 00:07:13.800 align:start position:0%
+gli eccessi di prudenza, potevano essere
+ 
+
+00:07:13.800 --> 00:07:16.150 align:start position:0%
+gli eccessi di prudenza, potevano essere
+in<00:07:13.960><c> realtà</c><00:07:14.360><c> un</c><00:07:14.520><c> problema</c><00:07:14.800><c> di</c><00:07:15.039><c> impostazione.</c>
+
+00:07:16.150 --> 00:07:16.160 align:start position:0%
+in realtà un problema di impostazione.
+ 
+
+00:07:16.160 --> 00:07:17.790 align:start position:0%
+in realtà un problema di impostazione.
+Se<00:07:16.240><c> affronti</c><00:07:16.599><c> un</c><00:07:16.720><c> compito</c><00:07:17.080><c> impegnativo</c><00:07:17.639><c> con</c>
+
+00:07:17.790 --> 00:07:17.800 align:start position:0%
+Se affronti un compito impegnativo con
+ 
+
+00:07:17.800 --> 00:07:19.790 align:start position:0%
+Se affronti un compito impegnativo con
+il<00:07:17.919><c> livello</c><00:07:18.240><c> su</c><00:07:18.400><c> basso</c><00:07:18.720><c> medio</c><00:07:19.039><c> è</c><00:07:19.240><c> normale</c><00:07:19.639><c> che</c>
+
+00:07:19.790 --> 00:07:19.800 align:start position:0%
+il livello su basso medio è normale che
+ 
+
+00:07:19.800 --> 00:07:21.869 align:start position:0%
+il livello su basso medio è normale che
+resti<00:07:20.039><c> indietro,</c><00:07:20.440><c> serve</c><00:07:20.720><c> più</c><00:07:20.879><c> sforzo.</c><00:07:21.680><c> Vale</c>
+
+00:07:21.869 --> 00:07:21.879 align:start position:0%
+resti indietro, serve più sforzo. Vale
+ 
+
+00:07:21.879 --> 00:07:23.629 align:start position:0%
+resti indietro, serve più sforzo. Vale
+anche<00:07:22.039><c> il</c><00:07:22.160><c> contrario.</c><00:07:22.759><c> Su</c><00:07:22.879><c> un</c><00:07:22.960><c> compito</c><00:07:23.280><c> banale</c>
+
+00:07:23.629 --> 00:07:23.639 align:start position:0%
+anche il contrario. Su un compito banale
+ 
+
+00:07:23.639 --> 00:07:24.990 align:start position:0%
+anche il contrario. Su un compito banale
+e<00:07:23.759><c> io</c><00:07:23.879><c> stesso</c><00:07:24.080><c> ho</c><00:07:24.199><c> provato</c><00:07:24.639><c> mettere</c><00:07:24.919><c> un</c>
+
+00:07:24.990 --> 00:07:25.000 align:start position:0%
+e io stesso ho provato mettere un
+ 
+
+00:07:25.000 --> 00:07:26.950 align:start position:0%
+e io stesso ho provato mettere un
+ragionamento<00:07:25.440><c> altissimo,</c><00:07:26.280><c> indovino</c><00:07:26.599><c> un</c><00:07:26.720><c> po',</c>
+
+00:07:26.950 --> 00:07:26.960 align:start position:0%
+ragionamento altissimo, indovino un po',
+ 
+
+00:07:26.960 --> 00:07:28.909 align:start position:0%
+ragionamento altissimo, indovino un po',
+a<00:07:27.120><c> volte</c><00:07:27.319><c> mi</c><00:07:27.479><c> ha</c><00:07:27.560><c> portato</c><00:07:28.000><c> anche</c><00:07:28.199><c> all'errore.</c>
+
+00:07:28.909 --> 00:07:28.919 align:start position:0%
+a volte mi ha portato anche all'errore.
+ 
+
+00:07:28.919 --> 00:07:30.990 align:start position:0%
+a volte mi ha portato anche all'errore.
+Incredibile,<00:07:29.360><c> ma</c><00:07:29.560><c> vero,</c><00:07:29.919><c> perché</c><00:07:30.319><c> andavamo</c><00:07:30.720><c> a</c>
+
+00:07:30.990 --> 00:07:31.000 align:start position:0%
+Incredibile, ma vero, perché andavamo a
+ 
+
+00:07:31.000 --> 00:07:33.710 align:start position:0%
+Incredibile, ma vero, perché andavamo a
+overcomplicare<00:07:31.840><c> il</c><00:07:32.039><c> tutto.</c><00:07:32.720><c> è</c><00:07:32.840><c> lì</c><00:07:33.000><c> che</c><00:07:33.160><c> pensi,</c>
+
+00:07:33.710 --> 00:07:33.720 align:start position:0%
+overcomplicare il tutto. è lì che pensi,
+ 
+
+00:07:33.720 --> 00:07:35.589 align:start position:0%
+overcomplicare il tutto. è lì che pensi,
+ma<00:07:33.879><c> è</c><00:07:34.000><c> facile</c><00:07:34.400><c> perché</c><00:07:34.639><c> non</c><00:07:34.800><c> lo</c><00:07:34.879><c> fa?</c><00:07:35.280><c> Quando</c>
+
+00:07:35.589 --> 00:07:35.599 align:start position:0%
+ma è facile perché non lo fa? Quando
+ 
+
+00:07:35.599 --> 00:07:37.510 align:start position:0%
+ma è facile perché non lo fa? Quando
+molte<00:07:35.919><c> volte</c><00:07:36.199><c> dobbiamo</c><00:07:36.560><c> andare</c><00:07:37.000><c> veramente</c><00:07:37.400><c> a</c>
+
+00:07:37.510 --> 00:07:37.520 align:start position:0%
+molte volte dobbiamo andare veramente a
+ 
+
+00:07:37.520 --> 00:07:39.550 align:start position:0%
+molte volte dobbiamo andare veramente a
+selezionare<00:07:38.039><c> l'impegno</c><00:07:38.520><c> giusto,</c><00:07:39.000><c> ok?</c><00:07:39.360><c> Quindi</c>
+
+00:07:39.550 --> 00:07:39.560 align:start position:0%
+selezionare l'impegno giusto, ok? Quindi
+ 
+
+00:07:39.560 --> 00:07:40.550 align:start position:0%
+selezionare l'impegno giusto, ok? Quindi
+se<00:07:39.639><c> dobbiamo</c><00:07:39.879><c> semplicemente</c><00:07:40.240><c> corregger</c>
+
+00:07:40.550 --> 00:07:40.560 align:start position:0%
+se dobbiamo semplicemente corregger
+ 
+
+00:07:40.560 --> 00:07:42.270 align:start position:0%
+se dobbiamo semplicemente corregger
+unemail,<00:07:41.000><c> mettere</c><00:07:41.240><c> l'impegno</c><00:07:41.639><c> altissimo,</c>
+
+00:07:42.270 --> 00:07:42.280 align:start position:0%
+unemail, mettere l'impegno altissimo,
+ 
+
+00:07:42.280 --> 00:07:43.790 align:start position:0%
+unemail, mettere l'impegno altissimo,
+non<00:07:42.400><c> ha</c><00:07:42.560><c> senso.</c><00:07:42.960><c> Quindi</c><00:07:43.199><c> qui</c><00:07:43.360><c> ci</c><00:07:43.479><c> vuole</c><00:07:43.639><c> un</c>
+
+00:07:43.790 --> 00:07:43.800 align:start position:0%
+non ha senso. Quindi qui ci vuole un
+ 
+
+00:07:43.800 --> 00:07:45.589 align:start position:0%
+non ha senso. Quindi qui ci vuole un
+equilibrio<00:07:44.159><c> tra</c><00:07:44.400><c> capacità,</c><00:07:45.000><c> consumo</c><00:07:45.440><c> e</c>
+
+00:07:45.589 --> 00:07:45.599 align:start position:0%
+equilibrio tra capacità, consumo e
+ 
+
+00:07:45.599 --> 00:07:48.189 align:start position:0%
+equilibrio tra capacità, consumo e
+velocità.<00:07:46.440><c> Il</c><00:07:46.560><c> punto</c><00:07:46.759><c> è</c><00:07:46.919><c> questo.</c><00:07:47.479><c> Se</c><00:07:47.759><c> sei</c><00:07:48.000><c> fra</c>
+
+00:07:48.189 --> 00:07:48.199 align:start position:0%
+velocità. Il punto è questo. Se sei fra
+ 
+
+00:07:48.199 --> 00:07:49.830 align:start position:0%
+velocità. Il punto è questo. Se sei fra
+quelli<00:07:48.440><c> che</c><00:07:48.680><c> aprono</c><00:07:48.919><c> lo</c><00:07:49.080><c> strumento,</c><00:07:49.520><c> iniziano</c>
+
+00:07:49.830 --> 00:07:49.840 align:start position:0%
+quelli che aprono lo strumento, iniziano
+ 
+
+00:07:49.840 --> 00:07:51.070 align:start position:0%
+quelli che aprono lo strumento, iniziano
+a<00:07:49.919><c> scrivere</c><00:07:50.199><c> e</c><00:07:50.319><c> non</c><00:07:50.440><c> toccano</c><00:07:50.800><c> mai</c><00:07:50.960><c> le</c>
+
+00:07:51.070 --> 00:07:51.080 align:start position:0%
+a scrivere e non toccano mai le
+ 
+
+00:07:51.080 --> 00:07:52.589 align:start position:0%
+a scrivere e non toccano mai le
+impostazioni,<00:07:51.759><c> prova</c><00:07:52.000><c> a</c><00:07:52.120><c> farlo.</c><00:07:52.479><c> La</c>
+
+00:07:52.589 --> 00:07:52.599 align:start position:0%
+impostazioni, prova a farlo. La
+ 
+
+00:07:52.599 --> 00:07:55.350 align:start position:0%
+impostazioni, prova a farlo. La
+differenza<00:07:53.159><c> tra</c><00:07:53.360><c> il</c><00:07:53.440><c> 4.8</c><00:07:54.080><c> al</c><00:07:54.280><c> minimo</c><00:07:54.520><c> e</c><00:07:54.639><c> il</c><00:07:54.720><c> 4.8</c>
+
+00:07:55.350 --> 00:07:55.360 align:start position:0%
+differenza tra il 4.8 al minimo e il 4.8
+ 
+
+00:07:55.360 --> 00:07:57.350 align:start position:0%
+differenza tra il 4.8 al minimo e il 4.8
+al<00:07:55.560><c> massimo</c><00:07:55.960><c> è</c><00:07:56.120><c> veramente</c><00:07:56.440><c> abissale</c><00:07:57.000><c> e</c><00:07:57.159><c> vale</c>
+
+00:07:57.350 --> 00:07:57.360 align:start position:0%
+al massimo è veramente abissale e vale
+ 
+
+00:07:57.360 --> 00:07:59.589 align:start position:0%
+al massimo è veramente abissale e vale
+la<00:07:57.440><c> pena</c><00:07:57.639><c> testarlo.</c><00:07:58.280><c> Lezione</c><00:07:58.759><c> due.</c><00:07:59.240><c> Digli</c>
+
+00:07:59.589 --> 00:07:59.599 align:start position:0%
+la pena testarlo. Lezione due. Digli
+ 
+
+00:07:59.599 --> 00:08:01.710 align:start position:0%
+la pena testarlo. Lezione due. Digli
+cosa<00:07:59.840><c> fare,</c><00:08:00.360><c> non</c><00:08:00.680><c> cosa</c><00:08:00.919><c> evitare.</c><00:08:01.520><c> Questa</c>
+
+00:08:01.710 --> 00:08:01.720 align:start position:0%
+cosa fare, non cosa evitare. Questa
+ 
+
+00:08:01.720 --> 00:08:03.670 align:start position:0%
+cosa fare, non cosa evitare. Questa
+indicazione<00:08:02.319><c> è</c><00:08:02.520><c> molto</c><00:08:02.800><c> interessante</c><00:08:03.280><c> perché</c>
+
+00:08:03.670 --> 00:08:03.680 align:start position:0%
+indicazione è molto interessante perché
+ 
+
+00:08:03.680 --> 00:08:06.029 align:start position:0%
+indicazione è molto interessante perché
+indicare<00:08:04.319><c> l'obiettivo</c><00:08:05.039><c> e</c><00:08:05.159><c> non</c><00:08:05.319><c> il</c><00:08:05.440><c> divieto</c><00:08:05.960><c> e</c>
+
+00:08:06.029 --> 00:08:06.039 align:start position:0%
+indicare l'obiettivo e non il divieto e
+ 
+
+00:08:06.039 --> 00:08:07.270 align:start position:0%
+indicare l'obiettivo e non il divieto e
+io<00:08:06.159><c> ci</c><00:08:06.280><c> sono</c><00:08:06.400><c> arrivato</c><00:08:06.680><c> sfogliando</c><00:08:07.120><c> la</c>
+
+00:08:07.270 --> 00:08:07.280 align:start position:0%
+io ci sono arrivato sfogliando la
+ 
+
+00:08:07.280 --> 00:08:09.270 align:start position:0%
+io ci sono arrivato sfogliando la
+documentazione<00:08:08.120><c> piena</c><00:08:08.400><c> di</c><00:08:08.599><c> esempi</c><00:08:09.000><c> e</c><00:08:09.159><c> di</c>
+
+00:08:09.270 --> 00:08:09.280 align:start position:0%
+documentazione piena di esempi e di
+ 
+
+00:08:09.280 --> 00:08:11.589 align:start position:0%
+documentazione piena di esempi e di
+prompt<00:08:09.720><c> fatti</c><00:08:09.960><c> da</c><00:08:10.120><c> Antropic.</c><00:08:10.680><c> quasi</c><00:08:11.080><c> nessuno</c>
+
+00:08:11.589 --> 00:08:11.599 align:start position:0%
+prompt fatti da Antropic. quasi nessuno
+ 
+
+00:08:11.599 --> 00:08:13.830 align:start position:0%
+prompt fatti da Antropic. quasi nessuno
+elencava<00:08:12.120><c> il</c><00:08:12.560><c> non</c><00:08:12.919><c> fare,</c><00:08:13.319><c> cosa</c><00:08:13.520><c> che</c><00:08:13.639><c> prima</c>
+
+00:08:13.830 --> 00:08:13.840 align:start position:0%
+elencava il non fare, cosa che prima
+ 
+
+00:08:13.840 --> 00:08:15.270 align:start position:0%
+elencava il non fare, cosa che prima
+invece<00:08:14.120><c> veniva</c><00:08:14.479><c> consigliato</c><00:08:14.879><c> su</c><00:08:15.039><c> tutti</c><00:08:15.199><c> i</c>
+
+00:08:15.270 --> 00:08:15.280 align:start position:0%
+invece veniva consigliato su tutti i
+ 
+
+00:08:15.280 --> 00:08:17.070 align:start position:0%
+invece veniva consigliato su tutti i
+modelli,<00:08:15.599><c> cioè</c><00:08:15.960><c> dare</c><00:08:16.199><c> l'esempio</c><00:08:16.759><c> è</c><00:08:16.919><c> anche</c>
+
+00:08:17.070 --> 00:08:17.080 align:start position:0%
+modelli, cioè dare l'esempio è anche
+ 
+
+00:08:17.080 --> 00:08:19.550 align:start position:0%
+modelli, cioè dare l'esempio è anche
+l'esempio<00:08:17.520><c> del</c><00:08:17.960><c> non</c><00:08:18.360><c> fare</c><00:08:18.759><c> assolutamente.</c>
+
+00:08:19.550 --> 00:08:19.560 align:start position:0%
+l'esempio del non fare assolutamente.
+ 
+
+00:08:19.560 --> 00:08:21.110 align:start position:0%
+l'esempio del non fare assolutamente.
+Questo<00:08:19.720><c> è</c><00:08:19.840><c> stato</c><00:08:20.000><c> molto</c><00:08:20.240><c> interessante</c><00:08:20.879><c> perché</c>
+
+00:08:21.110 --> 00:08:21.120 align:start position:0%
+Questo è stato molto interessante perché
+ 
+
+00:08:21.120 --> 00:08:22.230 align:start position:0%
+Questo è stato molto interessante perché
+ci<00:08:21.240><c> fa</c><00:08:21.360><c> capire</c><00:08:21.639><c> che</c><00:08:21.800><c> dobbiamo</c><00:08:22.080><c> far</c>
+
+00:08:22.230 --> 00:08:22.240 align:start position:0%
+ci fa capire che dobbiamo far
+ 
+
+00:08:22.240 --> 00:08:23.909 align:start position:0%
+ci fa capire che dobbiamo far
+concentrare<00:08:22.680><c> di</c><00:08:22.759><c> più</c><00:08:22.919><c> il</c><00:08:23.039><c> modello</c><00:08:23.599><c> su</c><00:08:23.720><c> quello</c>
+
+00:08:23.909 --> 00:08:23.919 align:start position:0%
+concentrare di più il modello su quello
+ 
+
+00:08:23.919 --> 00:08:25.950 align:start position:0%
+concentrare di più il modello su quello
+che<00:08:24.159><c> noi</c><00:08:24.440><c> vogliamo</c><00:08:24.840><c> come</c><00:08:25.080><c> obiettivo,</c><00:08:25.800><c> non</c>
+
+00:08:25.950 --> 00:08:25.960 align:start position:0%
+che noi vogliamo come obiettivo, non
+ 
+
+00:08:25.960 --> 00:08:27.589 align:start position:0%
+che noi vogliamo come obiettivo, non
+tanto<00:08:26.159><c> su</c><00:08:26.319><c> quello</c><00:08:26.479><c> da</c><00:08:26.599><c> evitare.</c><00:08:27.199><c> Questo</c><00:08:27.360><c> è</c><00:08:27.440><c> un</c>
+
+00:08:27.589 --> 00:08:27.599 align:start position:0%
+tanto su quello da evitare. Questo è un
+ 
+
+00:08:27.599 --> 00:08:29.350 align:start position:0%
+tanto su quello da evitare. Questo è un
+cambiamento<00:08:28.159><c> anche</c><00:08:28.319><c> nel</c><00:08:28.520><c> prompting</c><00:08:29.039><c> molto</c>
+
+00:08:29.350 --> 00:08:29.360 align:start position:0%
+cambiamento anche nel prompting molto
+ 
+
+00:08:29.360 --> 00:08:31.550 align:start position:0%
+cambiamento anche nel prompting molto
+importante.<00:08:29.960><c> Lezione</c><00:08:30.319><c> 3,</c><00:08:30.720><c> spiega</c><00:08:31.080><c> il</c><00:08:31.240><c> perché</c>
+
+00:08:31.550 --> 00:08:31.560 align:start position:0%
+importante. Lezione 3, spiega il perché
+ 
+
+00:08:31.560 --> 00:08:33.029 align:start position:0%
+importante. Lezione 3, spiega il perché
+di<00:08:31.720><c> ogni</c><00:08:31.919><c> richiesta.</c><00:08:32.479><c> Da</c><00:08:32.599><c> qui</c><00:08:32.719><c> la</c><00:08:32.839><c> terza</c>
+
+00:08:33.029 --> 00:08:33.039 align:start position:0%
+di ogni richiesta. Da qui la terza
+ 
+
+00:08:33.039 --> 00:08:35.350 align:start position:0%
+di ogni richiesta. Da qui la terza
+lezione,<00:08:33.519><c> motivare</c><00:08:34.000><c> l'istruzione.</c><00:08:34.839><c> Ok?</c><00:08:35.279><c> Ti</c>
+
+00:08:35.350 --> 00:08:35.360 align:start position:0%
+lezione, motivare l'istruzione. Ok? Ti
+ 
+
+00:08:35.360 --> 00:08:37.110 align:start position:0%
+lezione, motivare l'istruzione. Ok? Ti
+faccio<00:08:35.560><c> un</c><00:08:35.680><c> esempio,</c><00:08:36.159><c> invece</c><00:08:36.479><c> del</c><00:08:36.640><c> divieto,</c>
+
+00:08:37.110 --> 00:08:37.120 align:start position:0%
+faccio un esempio, invece del divieto,
+ 
+
+00:08:37.120 --> 00:08:38.870 align:start position:0%
+faccio un esempio, invece del divieto,
+voglio<00:08:37.399><c> che</c><00:08:37.519><c> sembri</c><00:08:37.880><c> scritto</c><00:08:38.159><c> davvero</c><00:08:38.479><c> da</c><00:08:38.680><c> me,</c>
+
+00:08:38.870 --> 00:08:38.880 align:start position:0%
+voglio che sembri scritto davvero da me,
+ 
+
+00:08:38.880 --> 00:08:40.630 align:start position:0%
+voglio che sembri scritto davvero da me,
+è<00:08:39.039><c> il</c><00:08:39.120><c> mio</c><00:08:39.279><c> stile</c><00:08:39.519><c> e</c><00:08:39.640><c> non</c><00:08:39.760><c> uso</c><00:08:40.000><c> mai</c><00:08:40.120><c> le</c><00:08:40.320><c> lineette</c>
+
+00:08:40.630 --> 00:08:40.640 align:start position:0%
+è il mio stile e non uso mai le lineette
+ 
+
+00:08:40.640 --> 00:08:42.430 align:start position:0%
+è il mio stile e non uso mai le lineette
+lunghe,<00:08:41.039><c> quindi</c><00:08:41.519><c> rispetta</c><00:08:41.880><c> il</c><00:08:42.000><c> mio</c><00:08:42.120><c> modo</c><00:08:42.279><c> di</c>
+
+00:08:42.430 --> 00:08:42.440 align:start position:0%
+lunghe, quindi rispetta il mio modo di
+ 
+
+00:08:42.440 --> 00:08:44.029 align:start position:0%
+lunghe, quindi rispetta il mio modo di
+scrivere.<00:08:42.880><c> Formulato</c><00:08:43.320><c> così,</c><00:08:43.560><c> il</c><00:08:43.719><c> modello</c>
+
+00:08:44.029 --> 00:08:44.039 align:start position:0%
+scrivere. Formulato così, il modello
+ 
+
+00:08:44.039 --> 00:08:46.070 align:start position:0%
+scrivere. Formulato così, il modello
+segue<00:08:44.399><c> più</c><00:08:44.600><c> volentieri</c><00:08:45.160><c> il</c><00:08:45.360><c> tutto</c><00:08:45.680><c> nei</c><00:08:45.880><c> vari</c>
+
+00:08:46.070 --> 00:08:46.080 align:start position:0%
+segue più volentieri il tutto nei vari
+ 
+
+00:08:46.080 --> 00:08:47.509 align:start position:0%
+segue più volentieri il tutto nei vari
+confronti.<00:08:46.480><c> A</c><00:08:46.560><c> me</c><00:08:46.680><c> piace</c><00:08:46.920><c> molto</c><00:08:47.200><c> Opus</c>
+
+00:08:47.509 --> 00:08:47.519 align:start position:0%
+confronti. A me piace molto Opus
+ 
+
+00:08:47.519 --> 00:08:49.910 align:start position:0%
+confronti. A me piace molto Opus
+rispetto<00:08:47.800><c> a</c><00:08:47.959><c> 5.5.</c><00:08:48.920><c> Se</c><00:08:49.080><c> non</c><00:08:49.240><c> spiego</c><00:08:49.519><c> il</c><00:08:49.680><c> perché,</c>
+
+00:08:49.910 --> 00:08:49.920 align:start position:0%
+rispetto a 5.5. Se non spiego il perché,
+ 
+
+00:08:49.920 --> 00:08:51.389 align:start position:0%
+rispetto a 5.5. Se non spiego il perché,
+specialmente<00:08:50.320><c> con</c><00:08:50.440><c> questa</c><00:08:50.600><c> versione</c><00:08:50.920><c> nuova,</c>
+
+00:08:51.389 --> 00:08:51.399 align:start position:0%
+specialmente con questa versione nuova,
+ 
+
+00:08:51.399 --> 00:08:53.710 align:start position:0%
+specialmente con questa versione nuova,
+non<00:08:51.640><c> sempre</c><00:08:52.040><c> esegue</c><00:08:52.399><c> il</c><00:08:52.519><c> tutto.</c><00:08:53.080><c> Invece</c><00:08:53.440><c> dare</c>
+
+00:08:53.710 --> 00:08:53.720 align:start position:0%
+non sempre esegue il tutto. Invece dare
+ 
+
+00:08:53.720 --> 00:08:56.590 align:start position:0%
+non sempre esegue il tutto. Invece dare
+un<00:08:53.880><c> perché</c><00:08:54.480><c> fa</c><00:08:54.680><c> capire</c><00:08:55.120><c> di</c><00:08:55.360><c> più</c><00:08:55.760><c> al</c><00:08:56.000><c> modello</c>
+
+00:08:56.590 --> 00:08:56.600 align:start position:0%
+un perché fa capire di più al modello
+ 
+
+00:08:56.600 --> 00:08:58.509 align:start position:0%
+un perché fa capire di più al modello
+come<00:08:56.880><c> mai</c><00:08:57.120><c> evitarlo,</c><00:08:57.720><c> invece</c><00:08:57.959><c> le</c><00:08:58.079><c> istruzioni</c>
+
+00:08:58.509 --> 00:08:58.519 align:start position:0%
+come mai evitarlo, invece le istruzioni
+ 
+
+00:08:58.519 --> 00:09:00.470 align:start position:0%
+come mai evitarlo, invece le istruzioni
+negative<00:08:59.040><c> lo</c><00:08:59.240><c> portano</c><00:08:59.600><c> sulla</c><00:08:59.959><c> sulla</c><00:09:00.120><c> cattiva</c>
+
+00:09:00.470 --> 00:09:00.480 align:start position:0%
+negative lo portano sulla sulla cattiva
+ 
+
+00:09:00.480 --> 00:09:02.110 align:start position:0%
+negative lo portano sulla sulla cattiva
+strada,<00:09:00.920><c> cosa</c><00:09:01.120><c> che</c><00:09:01.279><c> prima</c><00:09:01.440><c> invece</c><00:09:01.760><c> non</c><00:09:01.959><c> era</c>
+
+00:09:02.110 --> 00:09:02.120 align:start position:0%
+strada, cosa che prima invece non era
+ 
+
+00:09:02.120 --> 00:09:03.990 align:start position:0%
+strada, cosa che prima invece non era
+così.<00:09:02.519><c> Lezione</c><00:09:02.880><c> numero</c><00:09:03.120><c> quattro.</c><00:09:03.760><c> Prima</c>
+
+00:09:03.990 --> 00:09:04.000 align:start position:0%
+così. Lezione numero quattro. Prima
+ 
+
+00:09:04.000 --> 00:09:06.269 align:start position:0%
+così. Lezione numero quattro. Prima
+ragiona,<00:09:04.600><c> poi</c><00:09:04.839><c> agisce.</c><00:09:05.440><c> Questa</c><00:09:05.720><c> lezione</c><00:09:06.040><c> è</c>
+
+00:09:06.269 --> 00:09:06.279 align:start position:0%
+ragiona, poi agisce. Questa lezione è
+ 
+
+00:09:06.279 --> 00:09:08.230 align:start position:0%
+ragiona, poi agisce. Questa lezione è
+fondamentale<00:09:07.040><c> perché</c><00:09:07.399><c> cerca</c><00:09:07.640><c> di</c><00:09:07.760><c> capire</c><00:09:08.079><c> da</c>
+
+00:09:08.230 --> 00:09:08.240 align:start position:0%
+fondamentale perché cerca di capire da
+ 
+
+00:09:08.240 --> 00:09:10.509 align:start position:0%
+fondamentale perché cerca di capire da
+sé<00:09:08.560><c> domande</c><00:09:09.000><c> e</c><00:09:09.240><c> approcci</c><00:09:09.959><c> migliori</c><00:09:10.360><c> per</c>
+
+00:09:10.509 --> 00:09:10.519 align:start position:0%
+sé domande e approcci migliori per
+ 
+
+00:09:10.519 --> 00:09:11.910 align:start position:0%
+sé domande e approcci migliori per
+quello<00:09:10.680><c> che</c><00:09:10.839><c> deve</c><00:09:11.040><c> fare.</c><00:09:11.279><c> Cioè</c><00:09:11.480><c> prima</c><00:09:11.720><c> di</c><00:09:11.839><c> del</c>
+
+00:09:11.910 --> 00:09:11.920 align:start position:0%
+quello che deve fare. Cioè prima di del
+ 
+
+00:09:11.920 --> 00:09:13.710 align:start position:0%
+quello che deve fare. Cioè prima di del
+legare<00:09:12.200><c> un</c><00:09:12.360><c> pezzo</c><00:09:12.600><c> di</c><00:09:12.720><c> lavoro</c><00:09:13.320><c> a</c><00:09:13.519><c> un</c>
+
+00:09:13.710 --> 00:09:13.720 align:start position:0%
+legare un pezzo di lavoro a un
+ 
+
+00:09:13.720 --> 00:09:15.550 align:start position:0%
+legare un pezzo di lavoro a un
+assistente<00:09:14.120><c> secondario,</c><00:09:14.959><c> consultare</c><00:09:15.440><c> un</c>
+
+00:09:15.550 --> 00:09:15.560 align:start position:0%
+assistente secondario, consultare un
+ 
+
+00:09:15.560 --> 00:09:17.710 align:start position:0%
+assistente secondario, consultare un
+archivio<00:09:15.959><c> dati</c><00:09:16.320><c> o</c><00:09:16.519><c> compiere</c><00:09:16.839><c> un'azione,</c><00:09:17.560><c> si</c>
+
+00:09:17.710 --> 00:09:17.720 align:start position:0%
+archivio dati o compiere un'azione, si
+ 
+
+00:09:17.720 --> 00:09:19.670 align:start position:0%
+archivio dati o compiere un'azione, si
+mette<00:09:18.040><c> a</c><00:09:18.200><c> pensare,</c><00:09:18.760><c> diciamo</c><00:09:19.040><c> che</c><00:09:19.240><c> vuoi</c><00:09:19.480><c> che</c>
+
+00:09:19.670 --> 00:09:19.680 align:start position:0%
+mette a pensare, diciamo che vuoi che
+ 
+
+00:09:19.680 --> 00:09:21.670 align:start position:0%
+mette a pensare, diciamo che vuoi che
+ragioni<00:09:20.200><c> su</c><00:09:20.440><c> come</c><00:09:20.640><c> muoversi.</c><00:09:21.240><c> Altre</c><00:09:21.480><c> volte</c>
+
+00:09:21.670 --> 00:09:21.680 align:start position:0%
+ragioni su come muoversi. Altre volte
+ 
+
+00:09:21.680 --> 00:09:23.790 align:start position:0%
+ragioni su come muoversi. Altre volte
+invece<00:09:21.959><c> ti</c><00:09:22.079><c> serve</c><00:09:22.320><c> che</c><00:09:22.560><c> raccolga</c><00:09:23.160><c> prima</c><00:09:23.600><c> le</c>
+
+00:09:23.790 --> 00:09:23.800 align:start position:0%
+invece ti serve che raccolga prima le
+ 
+
+00:09:23.800 --> 00:09:25.910 align:start position:0%
+invece ti serve che raccolga prima le
+informazioni<00:09:24.399><c> e</c><00:09:24.600><c> poi</c><00:09:24.920><c> inizi</c><00:09:25.200><c> a</c><00:09:25.279><c> ragionare.</c>
+
+00:09:25.910 --> 00:09:25.920 align:start position:0%
+informazioni e poi inizi a ragionare.
+ 
+
+00:09:25.920 --> 00:09:27.990 align:start position:0%
+informazioni e poi inizi a ragionare.
+Per<00:09:26.079><c> questo</c><00:09:26.360><c> conta</c><00:09:26.920><c> sperimentare</c><00:09:27.680><c> con</c><00:09:27.880><c> le</c>
+
+00:09:27.990 --> 00:09:28.000 align:start position:0%
+Per questo conta sperimentare con le
+ 
+
+00:09:28.000 --> 00:09:29.630 align:start position:0%
+Per questo conta sperimentare con le
+istruzioni<00:09:28.399><c> e</c><00:09:28.480><c> con</c><00:09:28.600><c> il</c><00:09:28.720><c> livello</c><00:09:28.920><c> di</c><00:09:29.040><c> sforzo,</c>
+
+00:09:29.630 --> 00:09:29.640 align:start position:0%
+istruzioni e con il livello di sforzo,
+ 
+
+00:09:29.640 --> 00:09:31.150 align:start position:0%
+istruzioni e con il livello di sforzo,
+soprattutto<00:09:30.120><c> quando</c><00:09:30.320><c> sposti</c><00:09:30.640><c> i</c><00:09:30.720><c> flussi</c><00:09:31.000><c> al</c>
+
+00:09:31.150 --> 00:09:31.160 align:start position:0%
+soprattutto quando sposti i flussi al
+ 
+
+00:09:31.160 --> 00:09:34.389 align:start position:0%
+soprattutto quando sposti i flussi al
+4.7<00:09:31.800><c> al</c><00:09:31.959><c> 4.8.</c><00:09:33.040><c> Non</c><00:09:33.160><c> darli</c><00:09:33.480><c> per</c><00:09:33.680><c> scontati,</c>
+
+00:09:34.389 --> 00:09:34.399 align:start position:0%
+4.7 al 4.8. Non darli per scontati,
+ 
+
+00:09:34.399 --> 00:09:36.949 align:start position:0%
+4.7 al 4.8. Non darli per scontati,
+tienili<00:09:35.079><c> d'occhio</c><00:09:35.680><c> prima</c><00:09:36.000><c> di</c><00:09:36.200><c> capire</c><00:09:36.600><c> come</c><00:09:36.800><c> si</c>
+
+00:09:36.949 --> 00:09:36.959 align:start position:0%
+tienili d'occhio prima di capire come si
+ 
+
+00:09:36.959 --> 00:09:39.150 align:start position:0%
+tienili d'occhio prima di capire come si
+comporta.<00:09:37.519><c> Lezione</c><00:09:37.839><c> 5.</c><00:09:38.240><c> La</c><00:09:38.399><c> lunghezza</c><00:09:38.959><c> si</c>
+
+00:09:39.150 --> 00:09:39.160 align:start position:0%
+comporta. Lezione 5. La lunghezza si
+ 
+
+00:09:39.160 --> 00:09:42.470 align:start position:0%
+comporta. Lezione 5. La lunghezza si
+regola<00:09:39.480><c> da</c><00:09:39.640><c> sola.</c><00:09:40.240><c> La</c><00:09:40.480><c> 4.8</c><00:09:41.279><c> calibra</c><00:09:41.760><c> da</c><00:09:42.000><c> sé</c>
+
+00:09:42.470 --> 00:09:42.480 align:start position:0%
+regola da sola. La 4.8 calibra da sé
+ 
+
+00:09:42.480 --> 00:09:44.310 align:start position:0%
+regola da sola. La 4.8 calibra da sé
+quanto<00:09:42.839><c> scrivere,</c><00:09:43.480><c> valuta</c><00:09:43.800><c> la</c><00:09:43.959><c> complessità</c>
+
+00:09:44.310 --> 00:09:44.320 align:start position:0%
+quanto scrivere, valuta la complessità
+ 
+
+00:09:44.320 --> 00:09:46.310 align:start position:0%
+quanto scrivere, valuta la complessità
+del<00:09:44.519><c> compito</c><00:09:44.880><c> e</c><00:09:45.040><c> adatta</c><00:09:45.360><c> le</c><00:09:45.519><c> risposte,</c><00:09:46.000><c> invece</c>
+
+00:09:46.310 --> 00:09:46.320 align:start position:0%
+del compito e adatta le risposte, invece
+ 
+
+00:09:46.320 --> 00:09:48.630 align:start position:0%
+del compito e adatta le risposte, invece
+di<00:09:46.680><c> restare</c><00:09:47.120><c> su</c><00:09:47.320><c> una</c><00:09:47.440><c> quantità</c><00:09:48.000><c> fissa.</c><00:09:48.480><c> In</c>
+
+00:09:48.630 --> 00:09:48.640 align:start position:0%
+di restare su una quantità fissa. In
+ 
+
+00:09:48.640 --> 00:09:50.190 align:start position:0%
+di restare su una quantità fissa. In
+pratica,<00:09:48.959><c> risposte</c><00:09:49.399><c> brevi</c><00:09:49.680><c> per</c><00:09:49.800><c> le</c><00:09:49.880><c> richieste</c>
+
+00:09:50.190 --> 00:09:50.200 align:start position:0%
+pratica, risposte brevi per le richieste
+ 
+
+00:09:50.200 --> 00:09:51.949 align:start position:0%
+pratica, risposte brevi per le richieste
+semplici,<00:09:50.680><c> più</c><00:09:50.839><c> estese</c><00:09:51.360><c> per</c><00:09:51.480><c> le</c><00:09:51.640><c> analisi</c>
+
+00:09:51.949 --> 00:09:51.959 align:start position:0%
+semplici, più estese per le analisi
+ 
+
+00:09:51.959 --> 00:09:53.389 align:start position:0%
+semplici, più estese per le analisi
+aperte<00:09:52.240><c> che</c><00:09:52.360><c> richiedano</c><00:09:52.720><c> un</c><00:09:52.800><c> ragionamento.</c>
+
+00:09:53.389 --> 00:09:53.399 align:start position:0%
+aperte che richiedano un ragionamento.
+ 
+
+00:09:53.399 --> 00:09:55.350 align:start position:0%
+aperte che richiedano un ragionamento.
+Questo<00:09:53.600><c> è</c><00:09:53.720><c> veramente</c><00:09:54.200><c> molto</c><00:09:54.519><c> interessante.</c><00:09:55.279><c> E</c>
+
+00:09:55.350 --> 00:09:55.360 align:start position:0%
+Questo è veramente molto interessante. E
+ 
+
+00:09:55.360 --> 00:09:57.389 align:start position:0%
+Questo è veramente molto interessante. E
+ora<00:09:55.480><c> andiamo</c><00:09:55.640><c> a</c><00:09:55.760><c> vedere</c><00:09:56.160><c> sette</c><00:09:56.600><c> casi</c><00:09:56.920><c> d'uso</c>
+
+00:09:57.389 --> 00:09:57.399 align:start position:0%
+ora andiamo a vedere sette casi d'uso
+ 
+
+00:09:57.399 --> 00:09:59.870 align:start position:0%
+ora andiamo a vedere sette casi d'uso
+pratici<00:09:57.800><c> per</c><00:09:57.959><c> usare</c><00:09:58.519><c> Opus</c><00:09:58.880><c> 48.</c><00:09:59.480><c> andremo</c><00:09:59.760><c> a</c>
+
+00:09:59.870 --> 00:09:59.880 align:start position:0%
+pratici per usare Opus 48. andremo a
+ 
+
+00:09:59.880 --> 00:10:02.269 align:start position:0%
+pratici per usare Opus 48. andremo a
+vedere<00:10:00.160><c> i</c><00:10:00.320><c> vari</c><00:10:00.519><c> casi</c><00:10:00.760><c> d'uso</c><00:10:01.160><c> sia</c><00:10:01.360><c> su</c><00:10:01.560><c> cloud</c><00:10:02.079><c> da</c>
+
+00:10:02.269 --> 00:10:02.279 align:start position:0%
+vedere i vari casi d'uso sia su cloud da
+ 
+
+00:10:02.279 --> 00:10:04.630 align:start position:0%
+vedere i vari casi d'uso sia su cloud da
+web,<00:10:02.720><c> sia</c><00:10:02.880><c> su</c><00:10:03.040><c> Cloud</c><00:10:03.320><c> Code,</c><00:10:03.720><c> sia</c><00:10:03.880><c> su</c><00:10:04.040><c> cowork.</c>
+
+00:10:04.630 --> 00:10:04.640 align:start position:0%
+web, sia su Cloud Code, sia su cowork.
+ 
+
+00:10:04.640 --> 00:10:06.710 align:start position:0%
+web, sia su Cloud Code, sia su cowork.
+Per<00:10:04.760><c> ciascuno</c><00:10:05.200><c> trovi</c><00:10:05.560><c> quanto</c><00:10:05.880><c> ha</c><00:10:06.079><c> senso</c><00:10:06.560><c> il</c>
+
+00:10:06.710 --> 00:10:06.720 align:start position:0%
+Per ciascuno trovi quanto ha senso il
+ 
+
+00:10:06.720 --> 00:10:08.190 align:start position:0%
+Per ciascuno trovi quanto ha senso il
+livello<00:10:06.959><c> di</c><00:10:07.079><c> sforzo</c><00:10:07.399><c> consigliato</c><00:10:07.959><c> e</c><00:10:08.079><c> il</c>
+
+00:10:08.190 --> 00:10:08.200 align:start position:0%
+livello di sforzo consigliato e il
+ 
+
+00:10:08.200 --> 00:10:10.910 align:start position:0%
+livello di sforzo consigliato e il
+prompt,<00:10:08.680><c> mi</c><00:10:08.880><c> raccomando,</c><00:10:09.720><c> poi</c><00:10:09.959><c> dopo</c><00:10:10.440><c> testali</c>
+
+00:10:10.910 --> 00:10:10.920 align:start position:0%
+prompt, mi raccomando, poi dopo testali
+ 
+
+00:10:10.920 --> 00:10:12.910 align:start position:0%
+prompt, mi raccomando, poi dopo testali
+su<00:10:11.079><c> di</c><00:10:11.200><c> te,</c><00:10:11.480><c> insomma,</c><00:10:11.760><c> adattali.</c><00:10:12.279><c> Caso</c><00:10:12.480><c> d'uso</c>
+
+00:10:12.910 --> 00:10:12.920 align:start position:0%
+su di te, insomma, adattali. Caso d'uso
+ 
+
+00:10:12.920 --> 00:10:14.829 align:start position:0%
+su di te, insomma, adattali. Caso d'uso
+uno,<00:10:13.440><c> capire</c><00:10:13.760><c> un</c><00:10:13.880><c> progetto</c><00:10:14.200><c> di</c><00:10:14.320><c> codice</c><00:10:14.680><c> che</c>
+
+00:10:14.829 --> 00:10:14.839 align:start position:0%
+uno, capire un progetto di codice che
+ 
+
+00:10:14.839 --> 00:10:16.670 align:start position:0%
+uno, capire un progetto di codice che
+non<00:10:15.000><c> conosci.</c><00:10:15.560><c> Quando</c><00:10:15.839><c> entri</c><00:10:16.079><c> su</c><00:10:16.200><c> una</c><00:10:16.360><c> base</c><00:10:16.519><c> di</c>
+
+00:10:16.670 --> 00:10:16.680 align:start position:0%
+non conosci. Quando entri su una base di
+ 
+
+00:10:16.680 --> 00:10:18.670 align:start position:0%
+non conosci. Quando entri su una base di
+codice<00:10:16.920><c> nuovo</c><00:10:17.120><c> e</c><00:10:17.240><c> devi</c><00:10:17.560><c> orientarti,</c><00:10:18.399><c> prima</c><00:10:18.560><c> di</c>
+
+00:10:18.670 --> 00:10:18.680 align:start position:0%
+codice nuovo e devi orientarti, prima di
+ 
+
+00:10:18.680 --> 00:10:20.190 align:start position:0%
+codice nuovo e devi orientarti, prima di
+metterci<00:10:19.000><c> mano,</c><00:10:19.240><c> ecco</c><00:10:19.440><c> che</c><00:10:19.560><c> cosa</c><00:10:19.760><c> fare.</c>
+
+00:10:20.190 --> 00:10:20.200 align:start position:0%
+metterci mano, ecco che cosa fare.
+ 
+
+00:10:20.200 --> 00:10:22.389 align:start position:0%
+metterci mano, ecco che cosa fare.
+Sforzo<00:10:20.519><c> consigliato</c><00:10:21.200><c> alto,</c><00:10:21.800><c> digita</c><00:10:22.160><c> questo</c>
+
+00:10:22.389 --> 00:10:22.399 align:start position:0%
+Sforzo consigliato alto, digita questo
+ 
+
+00:10:22.399 --> 00:10:24.150 align:start position:0%
+Sforzo consigliato alto, digita questo
+prompt,<00:10:22.959><c> esplora</c><00:10:23.399><c> questo</c><00:10:23.600><c> progetto</c><00:10:24.040><c> e</c>
+
+00:10:24.150 --> 00:10:24.160 align:start position:0%
+prompt, esplora questo progetto e
+ 
+
+00:10:24.160 --> 00:10:25.790 align:start position:0%
+prompt, esplora questo progetto e
+spiegami<00:10:24.640><c> com'è</c><00:10:24.880><c> strutturato,</c><00:10:25.360><c> quali</c><00:10:25.600><c> sono</c><00:10:25.720><c> i</c>
+
+00:10:25.790 --> 00:10:25.800 align:start position:0%
+spiegami com'è strutturato, quali sono i
+ 
+
+00:10:25.800 --> 00:10:27.590 align:start position:0%
+spiegami com'è strutturato, quali sono i
+punti<00:10:26.000><c> di</c><00:10:26.120><c> ingresso,</c><00:10:26.760><c> come</c><00:10:26.920><c> scorrono</c><00:10:27.279><c> i</c><00:10:27.399><c> dati</c>
+
+00:10:27.590 --> 00:10:27.600 align:start position:0%
+punti di ingresso, come scorrono i dati
+ 
+
+00:10:27.600 --> 00:10:29.870 align:start position:0%
+punti di ingresso, come scorrono i dati
+e<00:10:27.760><c> dove</c><00:10:27.959><c> sta</c><00:10:28.120><c> la</c><00:10:28.240><c> logica</c><00:10:28.600><c> principale.</c><00:10:29.360><c> Per</c><00:10:29.519><c> ora</c>
+
+00:10:29.870 --> 00:10:29.880 align:start position:0%
+e dove sta la logica principale. Per ora
+ 
+
+00:10:29.880 --> 00:10:31.949 align:start position:0%
+e dove sta la logica principale. Per ora
+non<00:10:30.120><c> modificare</c><00:10:30.640><c> niente</c><00:10:31.160><c> prima</c><00:10:31.480><c> disegna</c><00:10:31.839><c> la</c>
+
+00:10:31.949 --> 00:10:31.959 align:start position:0%
+non modificare niente prima disegna la
+ 
+
+00:10:31.959 --> 00:10:34.389 align:start position:0%
+non modificare niente prima disegna la
+mappa.<00:10:32.440><c> Caso</c><00:10:32.680><c> d'uso</c><00:10:33.160><c> numero</c><00:10:33.440><c> due,</c><00:10:33.959><c> caccia</c><00:10:34.279><c> al</c>
+
+00:10:34.389 --> 00:10:34.399 align:start position:0%
+mappa. Caso d'uso numero due, caccia al
+ 
+
+00:10:34.399 --> 00:10:36.550 align:start position:0%
+mappa. Caso d'uso numero due, caccia al
+bug<00:10:34.839><c> difficile.</c><00:10:35.480><c> Quando</c><00:10:35.680><c> hai</c><00:10:35.800><c> un</c><00:10:35.920><c> errore</c><00:10:36.279><c> che</c>
+
+00:10:36.550 --> 00:10:36.560 align:start position:0%
+bug difficile. Quando hai un errore che
+ 
+
+00:10:36.560 --> 00:10:38.790 align:start position:0%
+bug difficile. Quando hai un errore che
+non<00:10:36.760><c> riesci</c><00:10:37.240><c> a</c><00:10:37.440><c> chiudere</c><00:10:37.880><c> e</c><00:10:38.040><c> ci</c><00:10:38.200><c> giri</c><00:10:38.480><c> intorno</c>
+
+00:10:38.790 --> 00:10:38.800 align:start position:0%
+non riesci a chiudere e ci giri intorno
+ 
+
+00:10:38.800 --> 00:10:40.910 align:start position:0%
+non riesci a chiudere e ci giri intorno
+a<00:10:38.880><c> un</c><00:10:38.959><c> po',</c><00:10:39.279><c> qui</c><00:10:39.519><c> questo</c><00:10:39.800><c> prompt</c><00:10:40.120><c> è</c><00:10:40.279><c> pazzesco.</c>
+
+00:10:40.910 --> 00:10:40.920 align:start position:0%
+a un po', qui questo prompt è pazzesco.
+ 
+
+00:10:40.920 --> 00:10:43.110 align:start position:0%
+a un po', qui questo prompt è pazzesco.
+Lo<00:10:41.040><c> sforzo</c><00:10:41.399><c> consigliato</c><00:10:41.839><c> è</c><00:10:42.079><c> molto</c><00:10:42.440><c> alto,</c><00:10:42.800><c> è</c><00:10:43.000><c> un</c>
+
+00:10:43.110 --> 00:10:43.120 align:start position:0%
+Lo sforzo consigliato è molto alto, è un
+ 
+
+00:10:43.120 --> 00:10:46.190 align:start position:0%
+Lo sforzo consigliato è molto alto, è un
+compito<00:10:43.440><c> che</c><00:10:44.000><c> più</c><00:10:44.560><c> ragiona</c><00:10:45.120><c> meglio</c><00:10:45.360><c> è.</c><00:10:45.839><c> Quindi</c>
+
+00:10:46.190 --> 00:10:46.200 align:start position:0%
+compito che più ragiona meglio è. Quindi
+ 
+
+00:10:46.200 --> 00:10:47.910 align:start position:0%
+compito che più ragiona meglio è. Quindi
+ho<00:10:46.399><c> questo</c><00:10:46.600><c> errore,</c><00:10:47.120><c> incollo</c><00:10:47.440><c> il</c><00:10:47.560><c> messaggio</c><00:10:47.839><c> e</c>
+
+00:10:47.910 --> 00:10:47.920 align:start position:0%
+ho questo errore, incollo il messaggio e
+ 
+
+00:10:47.920 --> 00:10:49.750 align:start position:0%
+ho questo errore, incollo il messaggio e
+il<00:10:48.040><c> codice</c><00:10:48.519><c> intorno,</c><00:10:49.000><c> trova</c><00:10:49.240><c> la</c><00:10:49.320><c> causa</c><00:10:49.560><c> alla</c>
+
+00:10:49.750 --> 00:10:49.760 align:start position:0%
+il codice intorno, trova la causa alla
+ 
+
+00:10:49.760 --> 00:10:51.910 align:start position:0%
+il codice intorno, trova la causa alla
+rice,<00:10:50.240><c> spiegami</c><00:10:50.720><c> perché</c><00:10:51.040><c> succede.</c><00:10:51.480><c> Proponimi</c>
+
+00:10:51.910 --> 00:10:51.920 align:start position:0%
+rice, spiegami perché succede. Proponimi
+ 
+
+00:10:51.920 --> 00:10:53.629 align:start position:0%
+rice, spiegami perché succede. Proponimi
+la<00:10:52.040><c> correzione</c><00:10:52.560><c> minima.</c><00:10:53.000><c> Prima</c><00:10:53.160><c> di</c><00:10:53.279><c> toccare</c>
+
+00:10:53.629 --> 00:10:53.639 align:start position:0%
+la correzione minima. Prima di toccare
+ 
+
+00:10:53.639 --> 00:10:55.629 align:start position:0%
+la correzione minima. Prima di toccare
+il<00:10:53.800><c> codice,</c><00:10:54.200><c> dimbi</c><00:10:54.480><c> la</c><00:10:54.600><c> tua</c><00:10:54.760><c> ipotesi,</c><00:10:55.240><c> così</c><00:10:55.480><c> la</c>
+
+00:10:55.629 --> 00:10:55.639 align:start position:0%
+il codice, dimbi la tua ipotesi, così la
+ 
+
+00:10:55.639 --> 00:10:57.629 align:start position:0%
+il codice, dimbi la tua ipotesi, così la
+valuto.<00:10:56.040><c> Vedrai</c><00:10:56.480><c> il</c><00:10:56.639><c> risultato</c><00:10:57.120><c> è</c><00:10:57.279><c> davvero</c>
+
+00:10:57.629 --> 00:10:57.639 align:start position:0%
+valuto. Vedrai il risultato è davvero
+ 
+
+00:10:57.639 --> 00:10:59.550 align:start position:0%
+valuto. Vedrai il risultato è davvero
+pazzesco.<00:10:58.279><c> Caso</c><00:10:58.480><c> d'uso</c><00:10:58.880><c> numero</c><00:10:59.120><c> tre,</c>
+
+00:10:59.550 --> 00:10:59.560 align:start position:0%
+pazzesco. Caso d'uso numero tre,
+ 
+
+00:10:59.560 --> 00:11:01.190 align:start position:0%
+pazzesco. Caso d'uso numero tre,
+costruire<00:11:00.079><c> una</c><00:11:00.279><c> funzione</c><00:11:00.760><c> completa</c>
+
+00:11:01.190 --> 00:11:01.200 align:start position:0%
+costruire una funzione completa
+ 
+
+00:11:01.200 --> 00:11:02.750 align:start position:0%
+costruire una funzione completa
+dall'inizio<00:11:01.600><c> alla</c><00:11:01.760><c> fine.</c><00:11:02.079><c> Quando</c><00:11:02.240><c> il</c><00:11:02.360><c> lavoro</c>
+
+00:11:02.750 --> 00:11:02.760 align:start position:0%
+dall'inizio alla fine. Quando il lavoro
+ 
+
+00:11:02.760 --> 00:11:05.430 align:start position:0%
+dall'inizio alla fine. Quando il lavoro
+tocca<00:11:03.160><c> più</c><00:11:03.440><c> file</c><00:11:03.800><c> e</c><00:11:03.959><c> più</c><00:11:04.160><c> passaggi</c><00:11:04.800><c> è</c><00:11:05.000><c> il</c><00:11:05.200><c> caso</c>
+
+00:11:05.430 --> 00:11:05.440 align:start position:0%
+tocca più file e più passaggi è il caso
+ 
+
+00:11:05.440 --> 00:11:07.590 align:start position:0%
+tocca più file e più passaggi è il caso
+ideale<00:11:05.880><c> per</c><00:11:06.000><c> i</c><00:11:06.120><c> flussi</c><00:11:06.480><c> dinamici.</c><00:11:07.240><c> Sforzo</c>
+
+00:11:07.590 --> 00:11:07.600 align:start position:0%
+ideale per i flussi dinamici. Sforzo
+ 
+
+00:11:07.600 --> 00:11:10.310 align:start position:0%
+ideale per i flussi dinamici. Sforzo
+consigliato<00:11:08.360><c> massimo</c><00:11:08.800><c> o</c><00:11:09.000><c> ancora</c><00:11:09.600><c> extra.</c>
+
+00:11:10.310 --> 00:11:10.320 align:start position:0%
+consigliato massimo o ancora extra.
+ 
+
+00:11:10.320 --> 00:11:12.590 align:start position:0%
+consigliato massimo o ancora extra.
+Ricorda,<00:11:10.760><c> i</c><00:11:10.880><c> flussi</c><00:11:11.200><c> dinamici</c><00:11:11.880><c> sono</c><00:11:12.240><c> solo</c><00:11:12.480><c> per</c>
+
+00:11:12.590 --> 00:11:12.600 align:start position:0%
+Ricorda, i flussi dinamici sono solo per
+ 
+
+00:11:12.600 --> 00:11:14.590 align:start position:0%
+Ricorda, i flussi dinamici sono solo per
+i<00:11:12.720><c> piani</c><00:11:13.120><c> massimi,</c><00:11:13.519><c> quindi</c><00:11:13.760><c> Enterprise,</c><00:11:14.320><c> Team</c>
+
+00:11:14.590 --> 00:11:14.600 align:start position:0%
+i piani massimi, quindi Enterprise, Team
+ 
+
+00:11:14.600 --> 00:11:16.790 align:start position:0%
+i piani massimi, quindi Enterprise, Team
+e<00:11:14.800><c> Max,</c><00:11:15.200><c> altrimenti</c><00:11:15.760><c> non</c><00:11:15.920><c> ce</c><00:11:16.040><c> l'hai.</c><00:11:16.320><c> Prompt</c>
+
+00:11:16.790 --> 00:11:16.800 align:start position:0%
+e Max, altrimenti non ce l'hai. Prompt
+ 
+
+00:11:16.800 --> 00:11:18.829 align:start position:0%
+e Max, altrimenti non ce l'hai. Prompt
+possibile.<00:11:17.399><c> Implementa,</c><00:11:18.279><c> inserisci</c><00:11:18.720><c> la</c>
+
+00:11:18.829 --> 00:11:18.839 align:start position:0%
+possibile. Implementa, inserisci la
+ 
+
+00:11:18.839 --> 00:11:20.230 align:start position:0%
+possibile. Implementa, inserisci la
+funzione<00:11:19.279><c> dall'inizio</c><00:11:19.800><c> alla</c><00:11:19.959><c> fine,</c>
+
+00:11:20.230 --> 00:11:20.240 align:start position:0%
+funzione dall'inizio alla fine,
+ 
+
+00:11:20.240 --> 00:11:22.389 align:start position:0%
+funzione dall'inizio alla fine,
+pianifica<00:11:20.839><c> i</c><00:11:21.000><c> passaggi,</c><00:11:21.560><c> scrivi</c><00:11:21.880><c> il</c><00:11:21.959><c> codice,</c>
+
+00:11:22.389 --> 00:11:22.399 align:start position:0%
+pianifica i passaggi, scrivi il codice,
+ 
+
+00:11:22.399 --> 00:11:24.430 align:start position:0%
+pianifica i passaggi, scrivi il codice,
+aggiungi<00:11:22.800><c> i</c><00:11:22.920><c> test</c><00:11:23.200><c> e</c><00:11:23.360><c> verifica</c><00:11:23.800><c> che</c><00:11:24.000><c> passino.</c>
+
+00:11:24.430 --> 00:11:24.440 align:start position:0%
+aggiungi i test e verifica che passino.
+ 
+
+00:11:24.440 --> 00:11:26.790 align:start position:0%
+aggiungi i test e verifica che passino.
+Aggiornami<00:11:24.920><c> a</c><00:11:25.040><c> ogni</c><00:11:25.320><c> tappa</c><00:11:25.800><c> e</c><00:11:26.120><c> fermati</c><00:11:26.639><c> se</c>
+
+00:11:26.790 --> 00:11:26.800 align:start position:0%
+Aggiornami a ogni tappa e fermati se
+ 
+
+00:11:26.800 --> 00:11:28.750 align:start position:0%
+Aggiornami a ogni tappa e fermati se
+trovi<00:11:27.079><c> una</c><00:11:27.240><c> scelta</c><00:11:27.600><c> importante</c><00:11:28.279><c> da</c><00:11:28.480><c> farmi</c>
+
+00:11:28.750 --> 00:11:28.760 align:start position:0%
+trovi una scelta importante da farmi
+ 
+
+00:11:28.760 --> 00:11:30.790 align:start position:0%
+trovi una scelta importante da farmi
+decidere.<00:11:29.240><c> Caso</c><00:11:29.440><c> d'uso</c><00:11:29.880><c> numero</c><00:11:30.360><c> quattro,</c>
+
+00:11:30.790 --> 00:11:30.800 align:start position:0%
+decidere. Caso d'uso numero quattro,
+ 
+
+00:11:30.800 --> 00:11:32.509 align:start position:0%
+decidere. Caso d'uso numero quattro,
+analizzare<00:11:31.279><c> e</c><00:11:31.440><c> confrontare</c><00:11:32.079><c> documenti</c>
+
+00:11:32.509 --> 00:11:32.519 align:start position:0%
+analizzare e confrontare documenti
+ 
+
+00:11:32.519 --> 00:11:34.350 align:start position:0%
+analizzare e confrontare documenti
+lunghi.<00:11:32.920><c> Questo</c><00:11:33.240><c> è</c><00:11:33.399><c> perfetto</c><00:11:33.760><c> per</c><00:11:33.920><c> farlo</c><00:11:34.200><c> da</c>
+
+00:11:34.350 --> 00:11:34.360 align:start position:0%
+lunghi. Questo è perfetto per farlo da
+ 
+
+00:11:34.360 --> 00:11:35.990 align:start position:0%
+lunghi. Questo è perfetto per farlo da
+direttamente<00:11:34.800><c> da</c><00:11:34.959><c> web</c><00:11:35.279><c> quando</c><00:11:35.519><c> devi</c><00:11:35.760><c> leggere</c>
+
+00:11:35.990 --> 00:11:36.000 align:start position:0%
+direttamente da web quando devi leggere
+ 
+
+00:11:36.000 --> 00:11:37.949 align:start position:0%
+direttamente da web quando devi leggere
+e<00:11:36.160><c> mettere</c><00:11:36.360><c> a</c><00:11:36.519><c> confronto</c><00:11:37.000><c> contratti</c><00:11:37.560><c> report</c><00:11:37.839><c> o</c>
+
+00:11:37.949 --> 00:11:37.959 align:start position:0%
+e mettere a confronto contratti report o
+ 
+
+00:11:37.959 --> 00:11:39.470 align:start position:0%
+e mettere a confronto contratti report o
+ricerche.<00:11:38.560><c> Qui</c><00:11:38.720><c> sfrutti</c><00:11:39.079><c> davvero</c><00:11:39.360><c> la</c>
+
+00:11:39.470 --> 00:11:39.480 align:start position:0%
+ricerche. Qui sfrutti davvero la
+ 
+
+00:11:39.480 --> 00:11:41.389 align:start position:0%
+ricerche. Qui sfrutti davvero la
+finestra<00:11:39.839><c> da</c><00:11:40.000><c> 1</c><00:11:40.120><c> milione</c><00:11:40.320><c> di</c><00:11:40.399><c> token.</c><00:11:41.040><c> Sforzo</c>
+
+00:11:41.389 --> 00:11:41.399 align:start position:0%
+finestra da 1 milione di token. Sforzo
+ 
+
+00:11:41.399 --> 00:11:43.150 align:start position:0%
+finestra da 1 milione di token. Sforzo
+consigliato<00:11:42.040><c> medio</c><00:11:42.360><c> oppure</c><00:11:42.680><c> alto.</c><00:11:43.040><c> Ti</c>
+
+00:11:43.150 --> 00:11:43.160 align:start position:0%
+consigliato medio oppure alto. Ti
+ 
+
+00:11:43.160 --> 00:11:44.910 align:start position:0%
+consigliato medio oppure alto. Ti
+incollo<00:11:43.480><c> tre</c><00:11:43.760><c> report,</c><00:11:44.320><c> confrontali,</c>
+
+00:11:44.910 --> 00:11:44.920 align:start position:0%
+incollo tre report, confrontali,
+ 
+
+00:11:44.920 --> 00:11:47.230 align:start position:0%
+incollo tre report, confrontali,
+evidenziali<00:11:45.680><c> dove</c><00:11:45.920><c> si</c><00:11:46.240><c> contraddicono</c><00:11:47.079><c> e</c>
+
+00:11:47.230 --> 00:11:47.240 align:start position:0%
+evidenziali dove si contraddicono e
+ 
+
+00:11:47.240 --> 00:11:49.110 align:start position:0%
+evidenziali dove si contraddicono e
+fammi<00:11:47.519><c> una</c><00:11:47.720><c> sintesi</c><00:11:48.160><c> di</c><00:11:48.320><c> una</c><00:11:48.519><c> pagina</c><00:11:48.839><c> con</c><00:11:49.000><c> i</c>
+
+00:11:49.110 --> 00:11:49.120 align:start position:0%
+fammi una sintesi di una pagina con i
+ 
+
+00:11:49.120 --> 00:11:50.710 align:start position:0%
+fammi una sintesi di una pagina con i
+cinque<00:11:49.560><c> punti</c><00:11:49.839><c> che</c><00:11:50.040><c> contano</c><00:11:50.320><c> per</c><00:11:50.480><c> prendere</c>
+
+00:11:50.710 --> 00:11:50.720 align:start position:0%
+cinque punti che contano per prendere
+ 
+
+00:11:50.720 --> 00:11:52.550 align:start position:0%
+cinque punti che contano per prendere
+una<00:11:50.880><c> decisione.</c><00:11:51.480><c> Cita</c><00:11:51.760><c> per</c><00:11:51.920><c> ogni</c><00:11:52.120><c> punto</c><00:11:52.399><c> da</c>
+
+00:11:52.550 --> 00:11:52.560 align:start position:0%
+una decisione. Cita per ogni punto da
+ 
+
+00:11:52.560 --> 00:11:54.350 align:start position:0%
+una decisione. Cita per ogni punto da
+quale<00:11:52.800><c> documento</c><00:11:53.360><c> arriva,</c><00:11:53.760><c> così</c><00:11:54.079><c> siete</c>
+
+00:11:54.350 --> 00:11:54.360 align:start position:0%
+quale documento arriva, così siete
+ 
+
+00:11:54.360 --> 00:11:56.550 align:start position:0%
+quale documento arriva, così siete
+sicuri<00:11:54.800><c> che</c><00:11:54.959><c> tutto</c><00:11:55.160><c> è</c><00:11:55.279><c> corretto.</c><00:11:55.800><c> Caso</c><00:11:56.000><c> d'uso</c>
+
+00:11:56.550 --> 00:11:56.560 align:start position:0%
+sicuri che tutto è corretto. Caso d'uso
+ 
+
+00:11:56.560 --> 00:11:59.150 align:start position:0%
+sicuri che tutto è corretto. Caso d'uso
+numero<00:11:57.120><c> 5:</c><00:11:57.760><c> scrivere</c><00:11:58.200><c> e</c><00:11:58.360><c> rivisionare</c><00:11:58.880><c> con</c><00:11:59.040><c> la</c>
+
+00:11:59.150 --> 00:11:59.160 align:start position:0%
+numero 5: scrivere e rivisionare con la
+ 
+
+00:11:59.160 --> 00:12:00.509 align:start position:0%
+numero 5: scrivere e rivisionare con la
+tua<00:11:59.279><c> voce.</c><00:11:59.760><c> Anche</c><00:11:59.959><c> qui</c><00:12:00.160><c> perfetto</c>
+
+00:12:00.509 --> 00:12:00.519 align:start position:0%
+tua voce. Anche qui perfetto
+ 
+
+00:12:00.519 --> 00:12:02.470 align:start position:0%
+tua voce. Anche qui perfetto
+direttamente<00:12:00.920><c> al</c><00:12:01.079><c> web.</c><00:12:01.440><c> Quando</c><00:12:01.639><c> crei</c><00:12:02.040><c> email,</c>
+
+00:12:02.470 --> 00:12:02.480 align:start position:0%
+direttamente al web. Quando crei email,
+ 
+
+00:12:02.480 --> 00:12:04.670 align:start position:0%
+direttamente al web. Quando crei email,
+articoli<00:12:03.000><c> o</c><00:12:03.200><c> post</c><00:12:03.639><c> e</c><00:12:03.760><c> vuoi</c><00:12:03.959><c> che</c><00:12:04.200><c> suonino</c>
+
+00:12:04.670 --> 00:12:04.680 align:start position:0%
+articoli o post e vuoi che suonino
+ 
+
+00:12:04.680 --> 00:12:06.190 align:start position:0%
+articoli o post e vuoi che suonino
+esattamente<00:12:05.079><c> come</c><00:12:05.279><c> scriveresti.</c><00:12:05.959><c> Ecco</c><00:12:06.079><c> che</c>
+
+00:12:06.190 --> 00:12:06.200 align:start position:0%
+esattamente come scriveresti. Ecco che
+ 
+
+00:12:06.200 --> 00:12:07.829 align:start position:0%
+esattamente come scriveresti. Ecco che
+cosa<00:12:06.399><c> fare.</c><00:12:06.720><c> Riscrivi</c><00:12:07.120><c> questa</c><00:12:07.360><c> email</c><00:12:07.639><c> così</c>
+
+00:12:07.829 --> 00:12:07.839 align:start position:0%
+cosa fare. Riscrivi questa email così
+ 
+
+00:12:07.839 --> 00:12:10.310 align:start position:0%
+cosa fare. Riscrivi questa email così
+che<00:12:07.959><c> sembri</c><00:12:08.360><c> scritta</c><00:12:08.839><c> da</c><00:12:09.040><c> me.</c><00:12:09.320><c> Ton</c><00:12:09.760><c> diretto</c>
+
+00:12:10.310 --> 00:12:10.320 align:start position:0%
+che sembri scritta da me. Ton diretto
+ 
+
+00:12:10.320 --> 00:12:12.550 align:start position:0%
+che sembri scritta da me. Ton diretto
+frasi<00:12:10.800><c> brevi.</c><00:12:11.320><c> Niente</c><00:12:11.560><c> frasi</c><00:12:11.839><c> fatte.</c><00:12:12.399><c> È</c><00:12:12.440><c> per</c>
+
+00:12:12.550 --> 00:12:12.560 align:start position:0%
+frasi brevi. Niente frasi fatte. È per
+ 
+
+00:12:12.560 --> 00:12:14.150 align:start position:0%
+frasi brevi. Niente frasi fatte. È per
+un<00:12:12.680><c> cliente</c><00:12:13.040><c> importante,</c><00:12:13.560><c> quindi</c><00:12:13.760><c> deve</c>
+
+00:12:14.150 --> 00:12:14.160 align:start position:0%
+un cliente importante, quindi deve
+ 
+
+00:12:14.160 --> 00:12:16.110 align:start position:0%
+un cliente importante, quindi deve
+restare<00:12:14.800><c> professionale.</c><00:12:15.480><c> Te</c><00:12:15.560><c> la</c><00:12:15.680><c> giro</c><00:12:15.959><c> in</c>
+
+00:12:16.110 --> 00:12:16.120 align:start position:0%
+restare professionale. Te la giro in
+ 
+
+00:12:16.120 --> 00:12:17.430 align:start position:0%
+restare professionale. Te la giro in
+modo<00:12:16.240><c> che</c><00:12:16.360><c> tu</c><00:12:16.519><c> capisca</c><00:12:16.880><c> lo</c><00:12:17.079><c> stile</c><00:12:17.279><c> da</c>
+
+00:12:17.430 --> 00:12:17.440 align:start position:0%
+modo che tu capisca lo stile da
+ 
+
+00:12:17.440 --> 00:12:19.230 align:start position:0%
+modo che tu capisca lo stile da
+replicare<00:12:17.920><c> e</c><00:12:18.079><c> qui,</c><00:12:18.240><c> tra</c><00:12:18.360><c> le</c><00:12:18.480><c> parentesi</c><00:12:18.839><c> quadre</c>
+
+00:12:19.230 --> 00:12:19.240 align:start position:0%
+replicare e qui, tra le parentesi quadre
+ 
+
+00:12:19.240 --> 00:12:22.350 align:start position:0%
+replicare e qui, tra le parentesi quadre
+incollate<00:12:19.720><c> il</c><00:12:19.880><c> testo.</c><00:12:20.360><c> Caso</c><00:12:20.560><c> d'uso</c><00:12:21.040><c> numero</c><00:12:21.639><c> 6:</c>
+
+00:12:22.350 --> 00:12:22.360 align:start position:0%
+incollate il testo. Caso d'uso numero 6:
+ 
+
+00:12:22.360 --> 00:12:24.750 align:start position:0%
+incollate il testo. Caso d'uso numero 6:
+automatizzare<00:12:23.079><c> i</c><00:12:23.240><c> file</c><00:12:23.760><c> su</c><00:12:23.880><c> cowork.</c><00:12:24.560><c> Quando</c>
+
+00:12:24.750 --> 00:12:24.760 align:start position:0%
+automatizzare i file su cowork. Quando
+ 
+
+00:12:24.760 --> 00:12:26.629 align:start position:0%
+automatizzare i file su cowork. Quando
+devi<00:12:25.000><c> mettere</c><00:12:25.320><c> ordine,</c><00:12:25.959><c> convertire</c><00:12:26.480><c> o</c>
+
+00:12:26.629 --> 00:12:26.639 align:start position:0%
+devi mettere ordine, convertire o
+ 
+
+00:12:26.639 --> 00:12:28.590 align:start position:0%
+devi mettere ordine, convertire o
+estrarre<00:12:27.040><c> i</c><00:12:27.120><c> dati</c><00:12:27.360><c> da</c><00:12:27.600><c> file</c><00:12:28.079><c> che</c><00:12:28.240><c> hai</c><00:12:28.440><c> in</c>
+
+00:12:28.590 --> 00:12:28.600 align:start position:0%
+estrarre i dati da file che hai in
+ 
+
+00:12:28.600 --> 00:12:31.150 align:start position:0%
+estrarre i dati da file che hai in
+locale,<00:12:29.199><c> ti</c><00:12:29.360><c> conviene</c><00:12:29.760><c> utilizzare</c><00:12:30.240><c> cowork</c>
+
+00:12:31.150 --> 00:12:31.160 align:start position:0%
+locale, ti conviene utilizzare cowork
+ 
+
+00:12:31.160 --> 00:12:33.230 align:start position:0%
+locale, ti conviene utilizzare cowork
+come<00:12:31.680><c> sforzo</c><00:12:32.160><c> medio</c><00:12:32.519><c> e</c><00:12:32.639><c> andiamo</c><00:12:32.880><c> su</c><00:12:33.000><c> questo</c>
+
+00:12:33.230 --> 00:12:33.240 align:start position:0%
+come sforzo medio e andiamo su questo
+ 
+
+00:12:33.240 --> 00:12:35.389 align:start position:0%
+come sforzo medio e andiamo su questo
+prompt.<00:12:33.680><c> Guarda</c><00:12:34.000><c> questa</c><00:12:34.240><c> cartella</c><00:12:34.839><c> e</c><00:12:35.000><c> quindi</c>
+
+00:12:35.389 --> 00:12:35.399 align:start position:0%
+prompt. Guarda questa cartella e quindi
+ 
+
+00:12:35.399 --> 00:12:37.189 align:start position:0%
+prompt. Guarda questa cartella e quindi
+allegategli<00:12:36.040><c> solo</c><00:12:36.320><c> quella</c><00:12:36.560><c> cartella,</c><00:12:37.040><c> mi</c>
+
+00:12:37.189 --> 00:12:37.199 align:start position:0%
+allegategli solo quella cartella, mi
+ 
+
+00:12:37.199 --> 00:12:39.269 align:start position:0%
+allegategli solo quella cartella, mi
+raccomando.<00:12:37.680><c> Raggruppa</c><00:12:38.199><c> i</c><00:12:38.320><c> file</c><00:12:38.600><c> per</c><00:12:38.800><c> tipo</c><00:12:39.120><c> e</c>
+
+00:12:39.269 --> 00:12:39.279 align:start position:0%
+raccomando. Raggruppa i file per tipo e
+ 
+
+00:12:39.279 --> 00:12:41.269 align:start position:0%
+raccomando. Raggruppa i file per tipo e
+per<00:12:39.440><c> mese,</c><00:12:39.839><c> rinominali</c><00:12:40.600><c> con</c><00:12:40.760><c> uno</c><00:12:40.920><c> schema</c>
+
+00:12:41.269 --> 00:12:41.279 align:start position:0%
+per mese, rinominali con uno schema
+ 
+
+00:12:41.279 --> 00:12:43.629 align:start position:0%
+per mese, rinominali con uno schema
+coerente<00:12:41.880><c> e</c><00:12:42.040><c> alla</c><00:12:42.240><c> fine</c><00:12:42.600><c> fammi</c><00:12:42.839><c> un</c><00:12:42.959><c> ripilgo</c><00:12:43.480><c> di</c>
+
+00:12:43.629 --> 00:12:43.639 align:start position:0%
+coerente e alla fine fammi un ripilgo di
+ 
+
+00:12:43.639 --> 00:12:45.790 align:start position:0%
+coerente e alla fine fammi un ripilgo di
+cosa<00:12:43.920><c> hai</c><00:12:44.120><c> spostato</c><00:12:44.639><c> e</c><00:12:44.800><c> perché.</c><00:12:45.199><c> Caso</c><00:12:45.440><c> d'uso</c>
+
+00:12:45.790 --> 00:12:45.800 align:start position:0%
+cosa hai spostato e perché. Caso d'uso
+ 
+
+00:12:45.800 --> 00:12:48.230 align:start position:0%
+cosa hai spostato e perché. Caso d'uso
+numero<00:12:46.320><c> 7,</c><00:12:46.760><c> trasformare</c><00:12:47.279><c> i</c><00:12:47.360><c> dati</c><00:12:47.560><c> grezzi</c><00:12:48.040><c> in</c>
+
+00:12:48.230 --> 00:12:48.240 align:start position:0%
+numero 7, trasformare i dati grezzi in
+ 
+
+00:12:48.240 --> 00:12:50.110 align:start position:0%
+numero 7, trasformare i dati grezzi in
+un<00:12:48.399><c> deliverable</c><00:12:49.199><c> pronto.</c><00:12:49.639><c> Qui</c><00:12:49.839><c> potete</c>
+
+00:12:50.110 --> 00:12:50.120 align:start position:0%
+un deliverable pronto. Qui potete
+ 
+
+00:12:50.120 --> 00:12:52.110 align:start position:0%
+un deliverable pronto. Qui potete
+utilizzare<00:12:50.519><c> cowork</c><00:12:51.000><c> o</c><00:12:51.160><c> web.</c><00:12:51.480><c> Io</c><00:12:51.680><c> di</c><00:12:51.839><c> solito</c>
+
+00:12:52.110 --> 00:12:52.120 align:start position:0%
+utilizzare cowork o web. Io di solito
+ 
+
+00:12:52.120 --> 00:12:54.590 align:start position:0%
+utilizzare cowork o web. Io di solito
+utilizzo<00:12:52.560><c> cowork</c><00:12:53.120><c> quando</c><00:12:53.560><c> da</c><00:12:53.760><c> un</c><00:12:53.880><c> foglio</c><00:12:54.240><c> o</c><00:12:54.440><c> da</c>
+
+00:12:54.590 --> 00:12:54.600 align:start position:0%
+utilizzo cowork quando da un foglio o da
+ 
+
+00:12:54.600 --> 00:12:56.310 align:start position:0%
+utilizzo cowork quando da un foglio o da
+appunti,<00:12:55.079><c> lo</c><00:12:55.199><c> utilizzo</c><00:12:55.519><c> molto</c><00:12:55.760><c> spesso</c><00:12:56.079><c> con</c><00:12:56.199><c> i</c>
+
+00:12:56.310 --> 00:12:56.320 align:start position:0%
+appunti, lo utilizzo molto spesso con i
+ 
+
+00:12:56.320 --> 00:12:58.269 align:start position:0%
+appunti, lo utilizzo molto spesso con i
+transcript<00:12:56.920><c> delle</c><00:12:57.120><c> call</c><00:12:57.360><c> che</c><00:12:57.560><c> faccio</c><00:12:58.000><c> e</c><00:12:58.160><c> vado</c>
+
+00:12:58.269 --> 00:12:58.279 align:start position:0%
+transcript delle call che faccio e vado
+ 
+
+00:12:58.279 --> 00:13:00.310 align:start position:0%
+transcript delle call che faccio e vado
+a<00:12:58.399><c> inserire</c><00:12:58.720><c> un</c><00:12:58.839><c> prompto.</c><00:13:00.000><c> Sforzo</c>
+
+00:13:00.310 --> 00:13:00.320 align:start position:0%
+a inserire un prompto. Sforzo
+ 
+
+00:13:00.320 --> 00:13:01.629 align:start position:0%
+a inserire un prompto. Sforzo
+consigliato<00:13:00.839><c> a</c><00:13:01.000><c> seconda</c><00:13:01.199><c> del</c><00:13:01.360><c> livello</c><00:13:01.560><c> di</c>
+
+00:13:01.629 --> 00:13:01.639 align:start position:0%
+consigliato a seconda del livello di
+ 
+
+00:13:01.639 --> 00:13:03.470 align:start position:0%
+consigliato a seconda del livello di
+complessità<00:13:02.240><c> medio</c><00:13:02.560><c> o</c><00:13:02.720><c> alto.</c><00:13:03.160><c> Da</c><00:13:03.279><c> questo</c>
+
+00:13:03.470 --> 00:13:03.480 align:start position:0%
+complessità medio o alto. Da questo
+ 
+
+00:13:03.480 --> 00:13:05.389 align:start position:0%
+complessità medio o alto. Da questo
+foglio<00:13:03.800><c> di</c><00:13:03.959><c> vendita</c><00:13:04.360><c> crea</c><00:13:04.639><c> una</c><00:13:04.800><c> presentazione</c>
+
+00:13:05.389 --> 00:13:05.399 align:start position:0%
+foglio di vendita crea una presentazione
+ 
+
+00:13:05.399 --> 00:13:07.710 align:start position:0%
+foglio di vendita crea una presentazione
+di<00:13:05.760><c> otto</c><00:13:06.240><c> slide,</c><00:13:07.000><c> numeri</c><00:13:07.320><c> chiavi</c><00:13:07.600><c> in</c>
+
+00:13:07.710 --> 00:13:07.720 align:start position:0%
+di otto slide, numeri chiavi in
+ 
+
+00:13:07.720 --> 00:13:09.629 align:start position:0%
+di otto slide, numeri chiavi in
+apertura,<00:13:08.240><c> un</c><00:13:08.399><c> grafico</c><00:13:08.760><c> per</c><00:13:08.920><c> trimestre,</c><00:13:09.440><c> una</c>
+
+00:13:09.629 --> 00:13:09.639 align:start position:0%
+apertura, un grafico per trimestre, una
+ 
+
+00:13:09.639 --> 00:13:11.150 align:start position:0%
+apertura, un grafico per trimestre, una
+slide<00:13:10.000><c> sui</c><00:13:10.240><c> rischi</c><00:13:10.480><c> e</c><00:13:10.639><c> una</c><00:13:10.839><c> con</c><00:13:11.000><c> tre</c>
+
+00:13:11.150 --> 00:13:11.160 align:start position:0%
+slide sui rischi e una con tre
+ 
+
+00:13:11.160 --> 00:13:13.509 align:start position:0%
+slide sui rischi e una con tre
+raccomandazioni<00:13:11.880><c> concrete.</c><00:13:12.680><c> Dimmi</c><00:13:13.240><c> prima</c>
+
+00:13:13.509 --> 00:13:13.519 align:start position:0%
+raccomandazioni concrete. Dimmi prima
+ 
+
+00:13:13.519 --> 00:13:15.430 align:start position:0%
+raccomandazioni concrete. Dimmi prima
+una<00:13:13.680><c> scaletta,</c><00:13:14.199><c> poi</c><00:13:14.399><c> la</c><00:13:14.519><c> costruisci.</c><00:13:15.320><c> Mi</c>
+
+00:13:15.430 --> 00:13:15.440 align:start position:0%
+una scaletta, poi la costruisci. Mi
+ 
+
+00:13:15.440 --> 00:13:17.509 align:start position:0%
+una scaletta, poi la costruisci. Mi
+raccomando,<00:13:15.800><c> questo</c><00:13:16.000><c> è</c><00:13:16.199><c> fondamentale</c><00:13:17.279><c> perché</c>
+
+00:13:17.509 --> 00:13:17.519 align:start position:0%
+raccomando, questo è fondamentale perché
+ 
+
+00:13:17.519 --> 00:13:19.150 align:start position:0%
+raccomando, questo è fondamentale perché
+se<00:13:17.639><c> gli</c><00:13:17.760><c> chiedete</c><00:13:18.079><c> prima</c><00:13:18.279><c> la</c><00:13:18.399><c> scaletta,</c>
+
+00:13:19.150 --> 00:13:19.160 align:start position:0%
+se gli chiedete prima la scaletta,
+ 
+
+00:13:19.160 --> 00:13:20.949 align:start position:0%
+se gli chiedete prima la scaletta,
+verificate<00:13:19.680><c> se</c><00:13:19.839><c> volete</c><00:13:20.040><c> le</c><00:13:20.160><c> modifiche</c><00:13:20.639><c> e</c><00:13:20.760><c> poi</c>
+
+00:13:20.949 --> 00:13:20.959 align:start position:0%
+verificate se volete le modifiche e poi
+ 
+
+00:13:20.959 --> 00:13:23.269 align:start position:0%
+verificate se volete le modifiche e poi
+costruisce<00:13:21.639><c> così</c><00:13:21.880><c> vi</c><00:13:22.079><c> consuma</c><00:13:22.480><c> meno</c><00:13:22.720><c> token,</c>
+
+00:13:23.269 --> 00:13:23.279 align:start position:0%
+costruisce così vi consuma meno token,
+ 
+
+00:13:23.279 --> 00:13:24.710 align:start position:0%
+costruisce così vi consuma meno token,
+altrimenti<00:13:23.639><c> senò</c><00:13:23.880><c> poi</c><00:13:24.000><c> dovete</c><00:13:24.360><c> farglielo</c>
+
+00:13:24.710 --> 00:13:24.720 align:start position:0%
+altrimenti senò poi dovete farglielo
+ 
+
+00:13:24.720 --> 00:13:26.430 align:start position:0%
+altrimenti senò poi dovete farglielo
+modificare<00:13:25.160><c> e</c><00:13:25.279><c> vi</c><00:13:25.399><c> deve</c><00:13:25.560><c> ricostruire</c><00:13:26.079><c> tutto</c><00:13:26.320><c> a</c>
+
+00:13:26.430 --> 00:13:26.440 align:start position:0%
+modificare e vi deve ricostruire tutto a
+ 
+
+00:13:26.440 --> 00:13:29.110 align:start position:0%
+modificare e vi deve ricostruire tutto a
+capo.<00:13:27.000><c> Ok?</c><00:13:27.600><c> Quindi</c><00:13:27.959><c> mi</c><00:13:28.120><c> raccomando,</c><00:13:28.760><c> molto</c>
+
+00:13:29.110 --> 00:13:29.120 align:start position:0%
+capo. Ok? Quindi mi raccomando, molto
+ 
+
+00:13:29.120 --> 00:13:31.030 align:start position:0%
+capo. Ok? Quindi mi raccomando, molto
+importante.<00:13:29.639><c> Altro</c><00:13:29.839><c> consiglio,</c><00:13:30.519><c> testate</c><00:13:30.920><c> i</c>
+
+00:13:31.030 --> 00:13:31.040 align:start position:0%
+importante. Altro consiglio, testate i
+ 
+
+00:13:31.040 --> 00:13:32.790 align:start position:0%
+importante. Altro consiglio, testate i
+vari<00:13:31.240><c> livelli</c><00:13:31.519><c> di</c><00:13:31.639><c> sforzo</c><00:13:32.079><c> e</c><00:13:32.240><c> vedrete</c><00:13:32.600><c> come</c>
+
+00:13:32.790 --> 00:13:32.800 align:start position:0%
+vari livelli di sforzo e vedrete come
+ 
+
+00:13:32.800 --> 00:13:35.910 align:start position:0%
+vari livelli di sforzo e vedrete come
+cambiano<00:13:33.160><c> le</c><00:13:33.320><c> risposte.</c><00:13:33.920><c> Opus</c><00:13:34.279><c> 4.8</c><00:13:35.320><c> Pro</c><00:13:35.680><c> e</c>
+
+00:13:35.910 --> 00:13:35.920 align:start position:0%
+cambiano le risposte. Opus 4.8 Pro e
+ 
+
+00:13:35.920 --> 00:13:37.629 align:start position:0%
+cambiano le risposte. Opus 4.8 Pro e
+contro.<00:13:36.440><c> Qui</c><00:13:36.600><c> vi</c><00:13:36.720><c> voglio</c><00:13:36.880><c> dare</c><00:13:37.040><c> dei</c><00:13:37.160><c> feedback</c>
+
+00:13:37.629 --> 00:13:37.639 align:start position:0%
+contro. Qui vi voglio dare dei feedback
+ 
+
+00:13:37.639 --> 00:13:39.310 align:start position:0%
+contro. Qui vi voglio dare dei feedback
+super<00:13:37.959><c> onesti</c><00:13:38.279><c> di</c><00:13:38.440><c> quello</c><00:13:38.600><c> che</c><00:13:38.680><c> ho</c><00:13:38.839><c> testato</c>
+
+00:13:39.310 --> 00:13:39.320 align:start position:0%
+super onesti di quello che ho testato
+ 
+
+00:13:39.320 --> 00:13:42.110 align:start position:0%
+super onesti di quello che ho testato
+anch'io<00:13:39.920><c> sulla</c><00:13:40.199><c> versione</c><00:13:40.519><c> 4.8</c><00:13:41.320><c> ho</c><00:13:41.639><c> amato</c>
+
+00:13:42.110 --> 00:13:42.120 align:start position:0%
+anch'io sulla versione 4.8 ho amato
+ 
+
+00:13:42.120 --> 00:13:43.829 align:start position:0%
+anch'io sulla versione 4.8 ho amato
+veramente<00:13:42.480><c> il</c><00:13:42.639><c> livello</c><00:13:42.880><c> di</c><00:13:43.000><c> sforzo</c><00:13:43.440><c> perché</c>
+
+00:13:43.829 --> 00:13:43.839 align:start position:0%
+veramente il livello di sforzo perché
+ 
+
+00:13:43.839 --> 00:13:45.750 align:start position:0%
+veramente il livello di sforzo perché
+tanti<00:13:44.160><c> task</c><00:13:44.519><c> che</c><00:13:44.680><c> facevo</c><00:13:44.959><c> già</c><00:13:45.160><c> prima</c><00:13:45.360><c> riesco</c><00:13:45.680><c> a</c>
+
+00:13:45.750 --> 00:13:45.760 align:start position:0%
+tanti task che facevo già prima riesco a
+ 
+
+00:13:45.760 --> 00:13:48.150 align:start position:0%
+tanti task che facevo già prima riesco a
+farli<00:13:46.160><c> molto</c><00:13:46.480><c> meglio</c><00:13:47.079><c> cambiando</c><00:13:47.800><c> il</c><00:13:47.920><c> livello</c>
+
+00:13:48.150 --> 00:13:48.160 align:start position:0%
+farli molto meglio cambiando il livello
+ 
+
+00:13:48.160 --> 00:13:49.509 align:start position:0%
+farli molto meglio cambiando il livello
+di<00:13:48.240><c> sforzo.</c><00:13:48.720><c> Per</c><00:13:48.800><c> esempio,</c><00:13:49.040><c> tutta</c><00:13:49.240><c> la</c><00:13:49.320><c> parte</c>
+
+00:13:49.509 --> 00:13:49.519 align:start position:0%
+di sforzo. Per esempio, tutta la parte
+ 
+
+00:13:49.519 --> 00:13:51.829 align:start position:0%
+di sforzo. Per esempio, tutta la parte
+di<00:13:49.720><c> scrittura</c><00:13:50.199><c> di</c><00:13:50.399><c> contenuti</c><00:13:51.000><c> che</c><00:13:51.240><c> faccio,</c>
+
+00:13:51.829 --> 00:13:51.839 align:start position:0%
+di scrittura di contenuti che faccio,
+ 
+
+00:13:51.839 --> 00:13:53.629 align:start position:0%
+di scrittura di contenuti che faccio,
+ragionamenti,<00:13:52.600><c> flussi,</c><00:13:52.920><c> eccetera</c><00:13:53.160><c> eccetera,</c>
+
+00:13:53.629 --> 00:13:53.639 align:start position:0%
+ragionamenti, flussi, eccetera eccetera,
+ 
+
+00:13:53.639 --> 00:13:55.710 align:start position:0%
+ragionamenti, flussi, eccetera eccetera,
+con<00:13:53.839><c> livelli</c><00:13:54.199><c> di</c><00:13:54.360><c> pensiero</c><00:13:54.839><c> più</c><00:13:55.079><c> alto</c><00:13:55.519><c> e</c><00:13:55.639><c> il</c>
+
+00:13:55.710 --> 00:13:55.720 align:start position:0%
+con livelli di pensiero più alto e il
+ 
+
+00:13:55.720 --> 00:13:58.150 align:start position:0%
+con livelli di pensiero più alto e il
+fatto<00:13:55.920><c> che</c><00:13:56.000><c> il</c><00:13:56.120><c> modello</c><00:13:56.759><c> è</c><00:13:57.079><c> molto,</c><00:13:57.600><c> diciamo,</c>
+
+00:13:58.150 --> 00:13:58.160 align:start position:0%
+fatto che il modello è molto, diciamo,
+ 
+
+00:13:58.160 --> 00:14:00.110 align:start position:0%
+fatto che il modello è molto, diciamo,
+più<00:13:58.360><c> onesto</c><00:13:58.839><c> e</c><00:13:59.040><c> anche</c><00:13:59.279><c> si</c><00:13:59.480><c> impegna</c><00:13:59.800><c> molto</c><00:14:00.000><c> di</c>
+
+00:14:00.110 --> 00:14:00.120 align:start position:0%
+più onesto e anche si impegna molto di
+ 
+
+00:14:00.120 --> 00:14:02.230 align:start position:0%
+più onesto e anche si impegna molto di
+più,<00:14:00.560><c> riesca</c><00:14:00.880><c> a</c><00:14:00.959><c> avere</c><00:14:01.320><c> dei</c><00:14:01.560><c> risultati</c>
+
+00:14:02.230 --> 00:14:02.240 align:start position:0%
+più, riesca a avere dei risultati
+ 
+
+00:14:02.240 --> 00:14:04.110 align:start position:0%
+più, riesca a avere dei risultati
+enormemente<00:14:02.839><c> migliori.</c><00:14:03.480><c> Faccio</c><00:14:03.639><c> un</c><00:14:03.720><c> esempio,</c>
+
+00:14:04.110 --> 00:14:04.120 align:start position:0%
+enormemente migliori. Faccio un esempio,
+ 
+
+00:14:04.120 --> 00:14:05.870 align:start position:0%
+enormemente migliori. Faccio un esempio,
+io<00:14:04.279><c> a</c><00:14:04.360><c> fine</c><00:14:04.519><c> mese</c><00:14:04.720><c> faccio</c><00:14:04.959><c> sempre</c><00:14:05.160><c> un</c><00:14:05.360><c> recap</c><00:14:05.720><c> di</c>
+
+00:14:05.870 --> 00:14:05.880 align:start position:0%
+io a fine mese faccio sempre un recap di
+ 
+
+00:14:05.880 --> 00:14:06.790 align:start position:0%
+io a fine mese faccio sempre un recap di
+tutti<00:14:06.040><c> i</c><00:14:06.120><c> dati</c><00:14:06.320><c> di</c><00:14:06.440><c> tutte</c><00:14:06.560><c> le</c><00:14:06.680><c> mie</c>
+
+00:14:06.790 --> 00:14:06.800 align:start position:0%
+tutti i dati di tutte le mie
+ 
+
+00:14:06.800 --> 00:14:08.949 align:start position:0%
+tutti i dati di tutte le mie
+piattaforme,<00:14:07.480><c> Instagram,</c><00:14:07.839><c> TikTok,</c><00:14:08.399><c> YouTube.</c>
+
+00:14:08.949 --> 00:14:08.959 align:start position:0%
+piattaforme, Instagram, TikTok, YouTube.
+ 
+
+00:14:08.959 --> 00:14:10.590 align:start position:0%
+piattaforme, Instagram, TikTok, YouTube.
+Questo<00:14:09.199><c> mese</c><00:14:09.440><c> è</c><00:14:09.600><c> stato</c><00:14:09.920><c> notevolmente</c>
+
+00:14:10.590 --> 00:14:10.600 align:start position:0%
+Questo mese è stato notevolmente
+ 
+
+00:14:10.600 --> 00:14:12.389 align:start position:0%
+Questo mese è stato notevolmente
+migliore<00:14:11.160><c> rispetto</c><00:14:11.600><c> ai</c><00:14:11.759><c> mesi</c><00:14:11.959><c> precedenti</c>
+
+00:14:12.389 --> 00:14:12.399 align:start position:0%
+migliore rispetto ai mesi precedenti
+ 
+
+00:14:12.399 --> 00:14:13.990 align:start position:0%
+migliore rispetto ai mesi precedenti
+perché<00:14:12.600><c> riesco</c><00:14:12.839><c> a</c><00:14:12.920><c> spingere</c><00:14:13.360><c> molto</c><00:14:13.600><c> di</c><00:14:13.680><c> più.</c>
+
+00:14:13.990 --> 00:14:14.000 align:start position:0%
+perché riesco a spingere molto di più.
+ 
+
+00:14:14.000 --> 00:14:15.430 align:start position:0%
+perché riesco a spingere molto di più.
+Contro<00:14:14.240><c> che</c><00:14:14.360><c> invece</c><00:14:14.600><c> ho</c><00:14:14.759><c> trovato,</c><00:14:15.199><c> a</c><00:14:15.320><c> mio</c>
+
+00:14:15.430 --> 00:14:15.440 align:start position:0%
+Contro che invece ho trovato, a mio
+ 
+
+00:14:15.440 --> 00:14:17.949 align:start position:0%
+Contro che invece ho trovato, a mio
+avviso,<00:14:15.720><c> è</c><00:14:16.120><c> uno</c><00:14:16.600><c> la</c><00:14:16.759><c> quantità</c><00:14:17.120><c> di</c><00:14:17.279><c> bug.</c><00:14:17.759><c> Ora,</c>
+
+00:14:17.949 --> 00:14:17.959 align:start position:0%
+avviso, è uno la quantità di bug. Ora,
+ 
+
+00:14:17.959 --> 00:14:19.069 align:start position:0%
+avviso, è uno la quantità di bug. Ora,
+nel<00:14:18.120><c> momento</c><00:14:18.279><c> in</c><00:14:18.360><c> cui</c><00:14:18.440><c> sto</c><00:14:18.600><c> girando</c><00:14:18.880><c> questo</c>
+
+00:14:19.069 --> 00:14:19.079 align:start position:0%
+nel momento in cui sto girando questo
+ 
+
+00:14:19.079 --> 00:14:20.749 align:start position:0%
+nel momento in cui sto girando questo
+video,<00:14:19.320><c> magari</c><00:14:19.639><c> è</c><00:14:19.800><c> così</c><00:14:20.079><c> perché</c><00:14:20.320><c> il</c><00:14:20.440><c> modello</c><00:14:20.680><c> è</c>
+
+00:14:20.749 --> 00:14:20.759 align:start position:0%
+video, magari è così perché il modello è
+ 
+
+00:14:20.759 --> 00:14:22.710 align:start position:0%
+video, magari è così perché il modello è
+uscito<00:14:21.000><c> da</c><00:14:21.240><c> 3</c><00:14:21.480><c> giorni</c><00:14:21.880><c> e</c><00:14:22.040><c> quindi</c><00:14:22.320><c> per</c><00:14:22.560><c> voi</c>
+
+00:14:22.710 --> 00:14:22.720 align:start position:0%
+uscito da 3 giorni e quindi per voi
+ 
+
+00:14:22.720 --> 00:14:24.389 align:start position:0%
+uscito da 3 giorni e quindi per voi
+invece<00:14:23.120><c> sarà</c><00:14:23.360><c> diverso</c><00:14:23.720><c> perché</c><00:14:23.959><c> come</c><00:14:24.120><c> sempre</c>
+
+00:14:24.389 --> 00:14:24.399 align:start position:0%
+invece sarà diverso perché come sempre
+ 
+
+00:14:24.399 --> 00:14:25.710 align:start position:0%
+invece sarà diverso perché come sempre
+quando<00:14:24.560><c> un</c><00:14:24.639><c> modello</c><00:14:24.880><c> viene</c><00:14:25.079><c> rilasciato</c><00:14:25.600><c> ci</c>
+
+00:14:25.710 --> 00:14:25.720 align:start position:0%
+quando un modello viene rilasciato ci
+ 
+
+00:14:25.720 --> 00:14:27.310 align:start position:0%
+quando un modello viene rilasciato ci
+sono<00:14:25.839><c> un</c><00:14:25.920><c> po'</c><00:14:26.040><c> di</c><00:14:26.120><c> criticità</c><00:14:26.759><c> che</c><00:14:26.920><c> dopo</c><00:14:27.120><c> vanno</c>
+
+00:14:27.310 --> 00:14:27.320 align:start position:0%
+sono un po' di criticità che dopo vanno
+ 
+
+00:14:27.320 --> 00:14:29.069 align:start position:0%
+sono un po' di criticità che dopo vanno
+a<00:14:27.399><c> diminuire.</c><00:14:28.000><c> Però</c><00:14:28.360><c> questo</c><00:14:28.560><c> è</c><00:14:28.680><c> quello</c><00:14:28.839><c> che</c><00:14:28.959><c> ho</c>
+
+00:14:29.069 --> 00:14:29.079 align:start position:0%
+a diminuire. Però questo è quello che ho
+ 
+
+00:14:29.079 --> 00:14:31.470 align:start position:0%
+a diminuire. Però questo è quello che ho
+riscontrato<00:14:29.560><c> io.</c><00:14:29.959><c> Secondo,</c><00:14:30.720><c> il</c><00:14:30.880><c> fatto</c><00:14:31.120><c> che</c>
+
+00:14:31.470 --> 00:14:31.480 align:start position:0%
+riscontrato io. Secondo, il fatto che
+ 
+
+00:14:31.480 --> 00:14:33.470 align:start position:0%
+riscontrato io. Secondo, il fatto che
+diventa<00:14:31.839><c> un</c><00:14:31.959><c> pochino</c><00:14:32.160><c> più</c><00:14:32.320><c> complesso</c><00:14:33.040><c> perché</c>
+
+00:14:33.470 --> 00:14:33.480 align:start position:0%
+diventa un pochino più complesso perché
+ 
+
+00:14:33.480 --> 00:14:35.949 align:start position:0%
+diventa un pochino più complesso perché
+non<00:14:33.720><c> tutti</c><00:14:34.279><c> riescono</c><00:14:34.959><c> effettivamente</c><00:14:35.759><c> a</c>
+
+00:14:35.949 --> 00:14:35.959 align:start position:0%
+non tutti riescono effettivamente a
+ 
+
+00:14:35.959 --> 00:14:37.790 align:start position:0%
+non tutti riescono effettivamente a
+capire<00:14:36.320><c> subito</c><00:14:36.759><c> il</c><00:14:36.920><c> livello</c><00:14:37.160><c> di</c><00:14:37.360><c> impegno.</c><00:14:37.759><c> È</c>
+
+00:14:37.790 --> 00:14:37.800 align:start position:0%
+capire subito il livello di impegno. È
+ 
+
+00:14:37.800 --> 00:14:39.670 align:start position:0%
+capire subito il livello di impegno. È
+vero<00:14:37.959><c> che</c><00:14:38.000><c> si</c><00:14:38.120><c> può</c><00:14:38.240><c> lasciare</c><00:14:38.639><c> quello</c><00:14:39.120><c> medio</c><00:14:39.519><c> e</c>
+
+00:14:39.670 --> 00:14:39.680 align:start position:0%
+vero che si può lasciare quello medio e
+ 
+
+00:14:39.680 --> 00:14:42.189 align:start position:0%
+vero che si può lasciare quello medio e
+quindi<00:14:40.079><c> si</c><00:14:40.279><c> abbastanza</c><00:14:40.680><c> sul</c><00:14:40.880><c> sicuro,</c><00:14:41.560><c> però</c><00:14:42.040><c> mi</c>
+
+00:14:42.189 --> 00:14:42.199 align:start position:0%
+quindi si abbastanza sul sicuro, però mi
+ 
+
+00:14:42.199 --> 00:14:43.590 align:start position:0%
+quindi si abbastanza sul sicuro, però mi
+sono<00:14:42.360><c> accorto</c><00:14:42.720><c> che</c><00:14:43.040><c> veramente</c><00:14:43.440><c> per</c>
+
+00:14:43.590 --> 00:14:43.600 align:start position:0%
+sono accorto che veramente per
+ 
+
+00:14:43.600 --> 00:14:45.269 align:start position:0%
+sono accorto che veramente per
+determinati<00:14:44.120><c> task</c><00:14:44.480><c> mettere</c><00:14:44.720><c> un</c><00:14:44.839><c> modello</c><00:14:45.120><c> di</c>
+
+00:14:45.269 --> 00:14:45.279 align:start position:0%
+determinati task mettere un modello di
+ 
+
+00:14:45.279 --> 00:14:47.350 align:start position:0%
+determinati task mettere un modello di
+impegno<00:14:45.680><c> più</c><00:14:45.920><c> basso</c><00:14:46.519><c> ti</c><00:14:46.680><c> porta</c><00:14:46.920><c> un</c><00:14:47.000><c> risultato</c>
+
+00:14:47.350 --> 00:14:47.360 align:start position:0%
+impegno più basso ti porta un risultato
+ 
+
+00:14:47.360 --> 00:14:49.030 align:start position:0%
+impegno più basso ti porta un risultato
+veramente<00:14:47.720><c> migliore.</c><00:14:48.240><c> Faccio</c><00:14:48.480><c> un</c><00:14:48.639><c> esempio,</c>
+
+00:14:49.030 --> 00:14:49.040 align:start position:0%
+veramente migliore. Faccio un esempio,
+ 
+
+00:14:49.040 --> 00:14:50.910 align:start position:0%
+veramente migliore. Faccio un esempio,
+io<00:14:49.320><c> faccio</c><00:14:49.519><c> sempre</c><00:14:49.759><c> il</c><00:14:49.880><c> test</c><00:14:50.160><c> delle</c><00:14:50.360><c> email.</c><00:14:50.800><c> Ho</c>
+
+00:14:50.910 --> 00:14:50.920 align:start position:0%
+io faccio sempre il test delle email. Ho
+ 
+
+00:14:50.920 --> 00:14:53.230 align:start position:0%
+io faccio sempre il test delle email. Ho
+cercato<00:14:51.199><c> di</c><00:14:51.759><c> eh</c><00:14:52.000><c> farmi</c><00:14:52.320><c> sistemare</c><00:14:52.880><c> alcune</c>
+
+00:14:53.230 --> 00:14:53.240 align:start position:0%
+cercato di eh farmi sistemare alcune
+ 
+
+00:14:53.240 --> 00:14:55.030 align:start position:0%
+cercato di eh farmi sistemare alcune
+email<00:14:53.519><c> n</c><00:14:53.720><c> risposta</c><00:14:54.399><c> con</c><00:14:54.560><c> un</c><00:14:54.680><c> modello</c><00:14:54.920><c> di</c>
+
+00:14:55.030 --> 00:14:55.040 align:start position:0%
+email n risposta con un modello di
+ 
+
+00:14:55.040 --> 00:14:57.230 align:start position:0%
+email n risposta con un modello di
+pensiero<00:14:55.600><c> molto</c><00:14:56.040><c> alto</c><00:14:56.600><c> il</c><00:14:56.720><c> risultato</c><00:14:57.079><c> era</c>
+
+00:14:57.230 --> 00:14:57.240 align:start position:0%
+pensiero molto alto il risultato era
+ 
+
+00:14:57.240 --> 00:14:58.629 align:start position:0%
+pensiero molto alto il risultato era
+terribile.<00:14:57.759><c> Mi</c><00:14:57.839><c> impiegava</c><00:14:58.199><c> un</c><00:14:58.320><c> sacco</c><00:14:58.519><c> di</c>
+
+00:14:58.629 --> 00:14:58.639 align:start position:0%
+terribile. Mi impiegava un sacco di
+ 
+
+00:14:58.639 --> 00:15:00.189 align:start position:0%
+terribile. Mi impiegava un sacco di
+tempo<00:14:58.920><c> e</c><00:14:59.040><c> il</c><00:14:59.160><c> risultato</c><00:14:59.480><c> era</c><00:14:59.720><c> veramente</c>
+
+00:15:00.189 --> 00:15:00.199 align:start position:0%
+tempo e il risultato era veramente
+ 
+
+00:15:00.199 --> 00:15:02.110 align:start position:0%
+tempo e il risultato era veramente
+terribile.<00:15:00.839><c> Viceversa,</c><00:15:01.360><c> con</c><00:15:01.519><c> un</c><00:15:01.639><c> livello</c><00:15:01.880><c> di</c>
+
+00:15:02.110 --> 00:15:02.120 align:start position:0%
+terribile. Viceversa, con un livello di
+ 
+
+00:15:02.120 --> 00:15:04.030 align:start position:0%
+terribile. Viceversa, con un livello di
+impegno<00:15:02.480><c> più</c><00:15:02.639><c> basso,</c><00:15:03.079><c> si</c><00:15:03.199><c> arrivava</c><00:15:03.519><c> subito</c>
+
+00:15:04.030 --> 00:15:04.040 align:start position:0%
+impegno più basso, si arrivava subito
+ 
+
+00:15:04.040 --> 00:15:05.509 align:start position:0%
+impegno più basso, si arrivava subito
+alla<00:15:04.279><c> versione</c><00:15:04.600><c> finale</c><00:15:05.040><c> e</c><00:15:05.120><c> in</c><00:15:05.240><c> maniera</c>
+
+00:15:05.509 --> 00:15:05.519 align:start position:0%
+alla versione finale e in maniera
+ 
+
+00:15:05.519 --> 00:15:07.069 align:start position:0%
+alla versione finale e in maniera
+veramente<00:15:05.839><c> molto</c><00:15:06.120><c> pulita.</c><00:15:06.600><c> Quindi</c><00:15:06.839><c> questo</c>
+
+00:15:07.069 --> 00:15:07.079 align:start position:0%
+veramente molto pulita. Quindi questo
+ 
+
+00:15:07.079 --> 00:15:08.629 align:start position:0%
+veramente molto pulita. Quindi questo
+rischia<00:15:07.360><c> di</c><00:15:07.480><c> essere</c><00:15:07.639><c> in</c><00:15:07.759><c> fase</c><00:15:07.959><c> iniziale</c><00:15:08.480><c> un</c>
+
+00:15:08.629 --> 00:15:08.639 align:start position:0%
+rischia di essere in fase iniziale un
+ 
+
+00:15:08.639 --> 00:15:10.430 align:start position:0%
+rischia di essere in fase iniziale un
+po'<00:15:08.759><c> un</c><00:15:08.880><c> ostacolo</c><00:15:09.519><c> per</c><00:15:09.680><c> tutti</c><00:15:09.839><c> i</c><00:15:09.920><c> vari</c><00:15:10.079><c> utenti</c>
+
+00:15:10.430 --> 00:15:10.440 align:start position:0%
+po' un ostacolo per tutti i vari utenti
+ 
+
+00:15:10.440 --> 00:15:12.829 align:start position:0%
+po' un ostacolo per tutti i vari utenti
+perché<00:15:10.720><c> ad</c><00:15:10.839><c> esempio</c><00:15:11.199><c> su</c><00:15:11.480><c> GPT</c><00:15:12.120><c> già</c><00:15:12.399><c> esiste</c>
+
+00:15:12.829 --> 00:15:12.839 align:start position:0%
+perché ad esempio su GPT già esiste
+ 
+
+00:15:12.839 --> 00:15:15.310 align:start position:0%
+perché ad esempio su GPT già esiste
+questo,<00:15:13.440><c> però</c><00:15:14.160><c> non</c><00:15:14.399><c> ci</c><00:15:14.600><c> noto</c><00:15:14.880><c> tutta</c><00:15:15.120><c> questa</c>
+
+00:15:15.310 --> 00:15:15.320 align:start position:0%
+questo, però non ci noto tutta questa
+ 
+
+00:15:15.320 --> 00:15:17.710 align:start position:0%
+questo, però non ci noto tutta questa
+enorme<00:15:15.639><c> differenza</c><00:15:16.040><c> nelle</c><00:15:16.279><c> risposte.</c><00:15:17.120><c> Sì,</c>
+
+00:15:17.710 --> 00:15:17.720 align:start position:0%
+enorme differenza nelle risposte. Sì,
+ 
+
+00:15:17.720 --> 00:15:20.470 align:start position:0%
+enorme differenza nelle risposte. Sì,
+c'è<00:15:18.480><c> ma</c><00:15:18.720><c> non</c><00:15:19.079><c> in</c><00:15:19.240><c> maniera</c><00:15:19.639><c> esorbitante,</c>
+
+00:15:20.470 --> 00:15:20.480 align:start position:0%
+c'è ma non in maniera esorbitante,
+ 
+
+00:15:20.480 --> 00:15:22.590 align:start position:0%
+c'è ma non in maniera esorbitante,
+mentre<00:15:20.759><c> su</c><00:15:20.959><c> Opus</c><00:15:21.560><c> c'è</c><00:15:21.800><c> un</c><00:15:21.880><c> impatto</c><00:15:22.240><c> veramente</c>
+
+00:15:22.590 --> 00:15:22.600 align:start position:0%
+mentre su Opus c'è un impatto veramente
+ 
+
+00:15:22.600 --> 00:15:23.710 align:start position:0%
+mentre su Opus c'è un impatto veramente
+notevole.<00:15:23.079><c> Questo</c><00:15:23.240><c> è</c><00:15:23.279><c> il</c><00:15:23.320><c> mio</c><00:15:23.440><c> onesto</c>
+
+00:15:23.710 --> 00:15:23.720 align:start position:0%
+notevole. Questo è il mio onesto
+ 
+
+00:15:23.720 --> 00:15:25.470 align:start position:0%
+notevole. Questo è il mio onesto
+pensiero.<00:15:24.320><c> Fatemi</c><00:15:24.680><c> sapere</c><00:15:24.880><c> anche</c><00:15:25.000><c> la</c><00:15:25.120><c> vostra.</c>
+
+00:15:25.470 --> 00:15:25.480 align:start position:0%
+pensiero. Fatemi sapere anche la vostra.
+ 
+
+00:15:25.480 --> 00:15:26.550 align:start position:0%
+pensiero. Fatemi sapere anche la vostra.
+Mi<00:15:25.560><c> raccomando,</c><00:15:25.839><c> se</c><00:15:25.959><c> il</c><00:15:26.040><c> video</c><00:15:26.160><c> vi</c><00:15:26.279><c> è</c><00:15:26.360><c> stato</c>
+
+00:15:26.550 --> 00:15:26.560 align:start position:0%
+Mi raccomando, se il video vi è stato
+ 
+
+00:15:26.560 --> 00:15:27.550 align:start position:0%
+Mi raccomando, se il video vi è stato
+utile,<00:15:26.800><c> lascia</c><00:15:27.040><c> un</c><00:15:27.120><c> bel</c><00:15:27.240><c> like</c><00:15:27.399><c> per</c>
+
+00:15:27.550 --> 00:15:27.560 align:start position:0%
+utile, lascia un bel like per
+ 
+
+00:15:27.560 --> 00:15:29.389 align:start position:0%
+utile, lascia un bel like per
+supportarmi,<00:15:28.160><c> iscriviti</c><00:15:28.519><c> al</c><00:15:28.680><c> canale</c><00:15:29.040><c> e</c><00:15:29.199><c> come</c>
+
+00:15:29.389 --> 00:15:29.399 align:start position:0%
+supportarmi, iscriviti al canale e come
+ 
+
+00:15:29.399 --> 00:15:32.800 align:start position:0%
+supportarmi, iscriviti al canale e come
+sempre<00:15:29.720><c> buona</c><00:15:29.959><c> soluzione</c><00:15:30.279><c> a</c><00:15:30.399><c> tutti.</c><00:15:30.680><c> Yeah.</c>
+

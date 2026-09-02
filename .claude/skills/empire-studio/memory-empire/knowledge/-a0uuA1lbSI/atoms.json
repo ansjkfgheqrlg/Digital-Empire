@@ -1,0 +1,101 @@
+{
+ "video_id": "-a0uuA1lbSI",
+ "total_atoms": 7,
+ "atoms": [
+  {
+   "id": "KA-01",
+   "source": "-a0uuA1lbSI#00:00:00",
+   "frame": "frame-001, frame-002",
+   "category": "Diagnosi / Views senza destinazione",
+   "section": "S1",
+   "tags": [
+    "diagnosi",
+    "views",
+    "monetizzazione",
+    "metafora-visiva"
+   ],
+   "atom": "Apertura come diagnosi sarcastica: 'Complimenti, appena fatto 30.000 views - non hanno nessun posto dove andare a pagarti.' Il problema non e' la produzione di contenuto (video virali, formati diversi, contenuti di valore) ma l'assenza di una destinazione dove il traffico possa convertire. La metafora visiva lo rende letterale: capsule sparse sul tavolo con overlay 'occhio 30K', nessun contenitore in campo."
+  },
+  {
+   "id": "KA-02",
+   "source": "-a0uuA1lbSI#00:00:09",
+   "frame": "frame-006, frame-008",
+   "category": "Diagnosi / La gente non ha capito cosa fai",
+   "section": "S1",
+   "tags": [
+    "posizionamento",
+    "chiarezza",
+    "audience"
+   ],
+   "atom": "Conseguenza diretta del volume senza destinazione: 'la gente non ha capito cosa fai'. L'audience accumulata dal contenuto virale non sa quale servizio venga offerto, quindi il volume non e' convertibile a prescindere dalla sua dimensione."
+  },
+  {
+   "id": "KA-03",
+   "source": "-a0uuA1lbSI#00:00:12",
+   "frame": "frame-009, frame-011",
+   "category": "Framework / Tensione reach vs spiegazione",
+   "section": "S2",
+   "tags": [
+    "reach",
+    "algoritmo",
+    "vincolo-strutturale",
+    "trade-off"
+   ],
+   "atom": "Punto centrale del video: non si puo' spiegare cosa si fa dentro i contenuti, perche' 'quello scende di views e tu continui a fare views'. Esiste una tensione strutturale tra il contenuto che genera reach e il contenuto che spiega l'offerta: due lavori in conflitto sullo stesso canale. Il creator resta intrappolato in un ciclo di views che non si monetizza mai, non per pigrizia ma per un vincolo del mezzo."
+  },
+  {
+   "id": "KA-04",
+   "source": "-a0uuA1lbSI#00:00:15",
+   "frame": "frame-012, frame-014",
+   "category": "Soluzione / La landing come destinazione",
+   "section": "S3",
+   "tags": [
+    "landing",
+    "bio-link",
+    "destinazione"
+   ],
+   "atom": "'Se non c'hai un posto dove mandare le persone e dire io sono questo e offro questo, e' inutile.' La soluzione e' spostare la spiegazione FUORI dal canale sociale, su una landing page dedicata, che risolve la tensione senza costare reach. Visivamente: il piattino metallico che entra in campo verso le capsule."
+  },
+  {
+   "id": "KA-05",
+   "source": "-a0uuA1lbSI#00:00:27",
+   "frame": "frame-015, frame-017",
+   "category": "Struttura / Contenuto minimo della landing",
+   "section": "S3",
+   "tags": [
+    "struttura",
+    "landing",
+    "cinque-blocchi",
+    "pagamento-diretto"
+   ],
+   "atom": "Struttura minima dichiarata, in 5 blocchi: (1) chi sei, (2) cosa fai, (3) per chi lo offri, (4) modulo per contattarti, (5) opzionale: possibilita' di pagarti direttamente sul sito. Nessuna menzione di social proof, obiezioni o long-form copy: e' esplicitamente una pagina minima di identita' e contatto, non una sales page."
+  },
+  {
+   "id": "KA-06",
+   "source": "-a0uuA1lbSI#00:00:36",
+   "frame": "frame-020, frame-022",
+   "category": "Meccanica / Volume per tasso di passaggio",
+   "section": "S4",
+   "tags": [
+    "volume",
+    "conversione",
+    "frazione"
+   ],
+   "atom": "'Alcune di quelle 10.000 persone capitano su questa pagina, e piu' sono meglio e'.' Il modello e' volume x tasso di passaggio: la landing non converte tutti, ne intercetta una frazione. Il contenuto continua a servire per il volume, la landing per la conversione. Nota: apre con 30.000 e poi dice 10.000 senza correggersi, riportato fedelmente."
+  },
+  {
+   "id": "KA-07",
+   "source": "-a0uuA1lbSI#00:00:41",
+   "frame": "frame-023, frame-024, frame-026",
+   "category": "Regola operativa / Divisione dei compiti",
+   "section": "S4",
+   "tags": [
+    "regola",
+    "cta",
+    "link-in-bio",
+    "divisione-compiti"
+   ],
+   "atom": "Regola di chiusura: 'nei tuoi content non devi spiegare cosa fai e ridurre le views, devi solamente fare il CTA per andare nel link in bio.' Divisione dei compiti netta: il contenuto fa reach + UN SOLO CTA al link in bio, la landing fa spiegazione + conversione. Il CTA e' l'unico elemento commerciale ammesso dentro il contenuto."
+  }
+ ]
+}

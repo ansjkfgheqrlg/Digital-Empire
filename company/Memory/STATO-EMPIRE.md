@@ -97,6 +97,47 @@ da git, e ora i fixture **verificano di aver agganciato** invece di fidarsi di `
 per The_Winter_Term prima il `.png`. (2) **FIX-6**: ≥7 argomenti nel magazzino, la ricerca ora
 gira. (3) *Proof_of_Murder* è a **111 pagine**, sotto il minimo di 115: allungarlo o scartarlo.
 (4) Solo dopo, TASK-KDP-PIANO-W2 — **Max vuole dare il via prima**.
+## 🔍 2026-09-02 — CLAUDE: studio siti Andrei Pascu, 6 report su 9 — CP-20260902-003
+
+Max ha ordinato lo studio a fondo di tutti i siti di Andrei Pascu: grafica, colori, posizione degli
+elementi, struttura e soprattutto il copy di ogni sezione col perche'. Nuovo reparto sul disco:
+`competitor/Andrei Pascu/site-study/`.
+
+**Catturate 9 pagine su 9** con uno strumento nuovo e riusabile (`scripts/site_capture.py`, Playwright):
+371 screenshot desktop+mobile e **1.832 blocchi di copy** estratti dal DOM, ognuno con hex del colore,
+font, dimensione, peso e posizione y. I colori sono letti da `getComputedStyle`, non stimati.
+**Report scritti: 6 su 9** (hub, funnel-operator 434 EUR, outheadline 98 EUR, outfunnel,
+copy/Mentorship 349-999 EUR, claude-speedrun 249 EUR). Mancano 06 manuale, 08 apsales, 09 linktree.
+
+### 🔴 La scoperta
+**`claude-speedrun.com` e' un concorrente diretto di Claude Code Mastery e usa il nostro identico
+linguaggio visivo**: accento **`#fb4604`** e font **`Onest`**, cioe' esattamente cio' che
+`empire-premium-style/SKILL.md` dichiara per `ccm-premium`. E' un corso su Claude per marketer
+italiani, 249 EUR, versione 2, 21 lezioni + 6 bonus con rilascio giornaliero, sezione "Skills",
+lezioni su terminale/API/MCP, 4,9/5 su 14 recensioni verificate, dietro 270K follower.
+
+**Chi sia arrivato prima non l'ho misurato e non lo invento**: servono le date (Wayback Machine su
+claude-speedrun.com + data di pubblicazione di ccm-premium). Certo e' che sul mercato italiano dei
+corsi su Claude c'e' gia' un concorrente attivo, e che le nostre due landing affiancate sembrano lo
+stesso brand. Il nostro vantaggio reale e' la **profondita' tecnica**: lui ha una lezione sul
+terminale e una su API/MCP dentro un corso di workflow marketing, noi abbiamo un corso intero.
+
+### Tre decisioni che aspettano Max
+1. **Verificare le date** delle due pagine prima di ogni conclusione sul `#fb4604`.
+2. **Differenziazione visiva di CCM**: differenziarsi o accettare consapevolmente la sovrapposizione.
+3. **Copiare il disclaimer GDPR** di Claude Speedrun — unico dell'ecosistema che nomina responsabilita'
+   sui dati dei clienti e conformita' privacy. Chi vende workflow AI ha quell'esposizione.
+
+### Nota tecnica
+Gli screenshot (371 file, 76 MB) restano su disco ma **fuori dal repo** (`.gitignore`): si rigenerano
+con lo script. Nel repo entrano report e dati testuali (1,4 MB).
+
+**RIPRESA DA**: scrivere i 3 report mancanti — `06-manuale-del-copywriter`, `08-apsales`,
+`09-linktree` (quest'ultimo e' la landing bio-link vera, da leggere accanto al video 5 cat2).
+Il materiale grezzo e' gia' catturato e verificato.
+
+---
+
 ## 🔎 2026-09-01 — EMPERATOR: VERIFICA AGENTI — 4 agenti erano MORTI, riparati — gate PASS 597/597 — CP-20260901-005
 
 Max ha chiesto secco: "tutti gli agenti e tutte le skill sono ufficiali?". Ho misurato invece di
@@ -131,7 +172,7 @@ E' il difetto sistemico dell'Impero. Un contatore non e' un censimento.
 
 ---
 
-## 👑 2026-09-01 — EMPERATOR: 4 direttive di Max innestate in me stesso — CP-20260901-004
+## 👑 2026-09-01 — EMPERATOR: 4 direttive di Max innestate in me stesso — CP-20260902-006
 
 Max ha ordinato un'auto-modifica. Toccati i due file che mi governano, e come impone la regola
 AUTO-MODIFICHE lo dichiaro qui in chiaro:
@@ -207,7 +248,7 @@ GATE SKILL: PASS 850/850
 
 ---
 
-## 📚 2026-09-01 — CLAUDE: Empire Studio ripreso — chiuso Andrei Pascu cat2 4/15 — CP-20260901-001
+## 📚 2026-09-01 — CLAUDE: Empire Studio ripreso — chiuso Andrei Pascu cat2 4/15 — CP-20260902-004
 
 Max ha chiesto di riprendere lo studio delle lezioni di Andrei Pascu. Ripreso e chiuso il video 4/15
 di cat2-marketing (`j4UInmM9kKA`, "10 lead magnet", 20m32s).
@@ -235,7 +276,7 @@ optin trattata come sales page + vincolo a monte, keyword-in-commenti -> DM.
   pagamento di Andrei Pascu (chiesti, mai arrivati — scope non sbloccato).
 
 **Poi chiuso anche il video 5/15** (`-a0uuA1lbSI`, "L importanza di avere una buona landing", 51s) —
-CP-20260901-002. Coverage frame 100% (26/26). Altre **3 patch, +24/-0**: il funnel documentato in
+CP-20260902-005. Coverage frame 100% (26/26). Altre **3 patch, +24/-0**: il funnel documentato in
 `cro-strategy-social-(ig-tiktok)` andava Video -> commento keyword -> DM -> email -> call **senza
 nessuna landing**, pur usando "link in bio" come CTA in piu punti della stessa skill; aggiunta la
 sezione "Il gradino zero". In `market-landing` aggiunto il tipo di pagina Creator/Bio-Link Landing,

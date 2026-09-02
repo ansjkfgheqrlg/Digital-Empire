@@ -1,0 +1,33 @@
+AGENCY — Digital Empire
+  Cosa: Sito Agency (ultimo deploy)
+  URL live: https://agency-empire-kohl.vercel.app
+  Sorgente: agency-empire/ (Next.js 16 + GSAP + Framer Motion + Lenis, deploy Vercel + Netlify backup)
+  Questo e' quello dentro agency-empire/ — confermato da vercel-output.txt e dal metadataBase in layout.tsx:30.
+
+  ---
+  CCM — Siti corso / landing / vendita
+  Cosa: Piattaforma corso (LMS)
+  URL live: https://formazione-systemarchitect.netlify.app/
+  Sorgente: formazione-empire/ (Netlify)
+  ────────────────────────────────────────
+  Cosa: Sales page CCM (premium)
+  URL live: Netlify — siteId 85b674dd (nome Netlify non nel codice)
+  Sorgente: Lancio corso skill beast/Leanding Page CCM/ccm-premium/
+  ────────────────────────────────────────
+  Cosa: Bridge page iCRO (lead magnet)
+  URL live: https://clever-cannoli-3a583d.netlify.app/
+  Sorgente: icro-empire/
+  ────────────────────────────────────────
+  Cosa: Pagina booking/chiamata
+  URL live: https://clinquant-pie-aab8d2.netlify.app/
+  Sorgente: (link usato in sticky-cta e call page)
+  ────────────────────────────────────────
+  Cosa: Pagina chiamata formazione
+  URL live: https://chiamata-formazione.netlify.app/
+  Sorgente: (link usato in CTA)
+  ────────────────────────────────────────
+  Cosa: CCM Empire (home + masterclass + thank-you)
+  URL live: deploy Netlify (nome sito non trovato)
+  Sorgente: Landing Page/ccm-empire/
+  Le sales page in Crea siti/Siti CCM/ (ccm-sale-page-empire, ccm-full-empire, ccm-elite-ultimate) non hanno URL di deploy — sono sorgenti
+   non ancora deployati o versioni locali.

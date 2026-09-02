@@ -1,0 +1,31 @@
+{
+  "lesson_number": 17,
+  "title": "Introduzione al vibe coding",
+  "slug": "lezione-17-introduzione-al-vibe-coding-3bgtt",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-17-introduzione-al-vibe-coding-3bgtt",
+  "section": "AI - per coding e simili",
+  "tipo": "PRATICA",
+  "tipo_note": "Classificato inizialmente come TEORIA (intro) nel tracker, ma confermato PRATICA: demo live VS Code, codice HTML/CSS/JS scritto a schermo, 14 workflow pratici, setup Live Server, GitHub. Frame estratti confermano screen-share VS Code.",
+  "vimeo_id": null,
+  "video_file": "video.mp4",
+  "frames_extracted": 78,
+  "frames_note": "Estrazione interrotta dal crash della sessione precedente — 78 frame coprono solo i primi ~3 min del video. Video completo resta su disco per eventuale re-estrazione.",
+  "risorse_scaricate": [],
+  "trascrizione_disponibile": false,
+  "panoramica_ufficiale": true,
+  "cosa_hai_imparato_ufficiale": true,
+  "link_utili": [
+    {"nome": "Visual Studio Code", "url": "https://code.visualstudio.com/download"},
+    {"nome": "Live Server (estensione VS Code)", "url": "https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"},
+    {"nome": "Claude AI", "url": "https://claude.ai"},
+    {"nome": "GitHub", "url": "https://github.com"},
+    {"nome": "Imgur", "url": "https://imgur.com"},
+    {"nome": "Squarespace", "url": "https://www.squarespace.com"},
+    {"nome": "WordPress", "url": "https://wordpress.org"},
+    {"nome": "Cursor", "url": "https://cursor.com"},
+    {"nome": "Python", "url": "https://www.python.org"}
+  ],
+  "run_id": "andrei-pascu-cs2online-001",
+  "processed_date": "2026-09-01",
+  "processed_by": "Emperator (sessione ripresa dopo crash)"
+}

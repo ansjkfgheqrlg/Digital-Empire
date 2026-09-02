@@ -1,0 +1,2606 @@
+{
+ "url": "https://claude-speedrun.com/",
+ "title": "Claude Speedrun | Sblocca la potenza dell'AI",
+ "meta_description": "Impara a usare Claude AI come Andrei Pascu: workflow reali, prompting avanzato e tutorial per freelancer e agenzie marketing italiane.",
+ "og_title": "Claude Speedrun | Sblocca la potenza dell'AI",
+ "lang": "it",
+ "page_height": 33756,
+ "page_width": 1440,
+ "body_bg": "#131313",
+ "body_font": "Onest, sans-serif",
+ "palette_text": [
+  [
+   "#f9f9f9",
+   121
+  ],
+  [
+   "#eeeeee",
+   46
+  ],
+  [
+   "#131313",
+   40
+  ],
+  [
+   "#ffffff",
+   35
+  ],
+  [
+   "#fb4604",
+   30
+  ],
+  [
+   "#39393c",
+   24
+  ],
+  [
+   "#8c8c8c",
+   16
+  ],
+  [
+   "#f9f9f9 @0.6",
+   12
+  ],
+  [
+   "#6b7280",
+   10
+  ],
+  [
+   "#fb4604 @0.8",
+   9
+  ],
+  [
+   "#f9f9f9 @0.5",
+   9
+  ],
+  [
+   "#1f2937",
+   9
+  ],
+  [
+   "#374151",
+   6
+  ],
+  [
+   "#f9f9f9 @0.7",
+   4
+  ],
+  [
+   "#f9f9f9 @0.9",
+   3
+  ],
+  [
+   "#fb4604 @0.1",
+   3
+  ],
+  [
+   "#131313 @0.8",
+   3
+  ],
+  [
+   "#783d2a",
+   2
+  ],
+  [
+   "#39393c @0.7",
+   2
+  ],
+  [
+   "#111827",
+   2
+  ],
+  [
+   "transparent",
+   1
+  ],
+  [
+   "#00751f",
+   1
+  ],
+  [
+   "#000000",
+   1
+  ],
+  [
+   "#bd4216",
+   1
+  ],
+  [
+   "#eeeeee @0.8",
+   1
+  ],
+  [
+   "#f9f9f9 @0.4",
+   1
+  ],
+  [
+   "#4ade80",
+   1
+  ],
+  [
+   "#393838",
+   1
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#fb4604",
+   26
+  ],
+  [
+   "#f9f9f9",
+   18
+  ],
+  [
+   "#000000",
+   14
+  ],
+  [
+   "#fb4604 @0.15",
+   12
+  ],
+  [
+   "#00751f",
+   12
+  ],
+  [
+   "#1a1a1a",
+   10
+  ],
+  [
+   "#1b1b1b",
+   9
+  ],
+  [
+   "#ffffff",
+   9
+  ],
+  [
+   "#131313 @0.2",
+   6
+  ],
+  [
+   "#f9f9f9 @0.4",
+   6
+  ],
+  [
+   "#fb4604 @0.1",
+   4
+  ],
+  [
+   "#262626",
+   4
+  ],
+  [
+   "#f9f9f9 @0.9",
+   4
+  ],
+  [
+   "#131313 @0.15",
+   4
+  ],
+  [
+   "#0a0a0a",
+   3
+  ],
+  [
+   "#f9f9f9 @0.2",
+   3
+  ],
+  [
+   "#eeeeee @0.3",
+   3
+  ],
+  [
+   "#131313",
+   2
+  ],
+  [
+   "#131313 @0.8",
+   2
+  ],
+  [
+   "#fb4604 @0.3",
+   1
+  ],
+  [
+   "#202021",
+   1
+  ],
+  [
+   "#fb4604 @0.05",
+   1
+  ],
+  [
+   "#fb4604 @0.2",
+   1
+  ],
+  [
+   "#141414",
+   1
+  ],
+  [
+   "#262626 @0.4",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "Onest, sans-serif",
+   366
+  ],
+  [
+   "ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif",
+   28
+  ]
+ ],
+ "type_scale": [
+  [
+   "16px / lh 25.6px / w400",
+   91
+  ],
+  [
+   "19.2px / lh 26.88px / w500",
+   42
+  ],
+  [
+   "13.33px / lh 19.995px / w400",
+   32
+  ],
+  [
+   "33.18px / lh 41.475px / w600",
+   27
+  ],
+  [
+   "23.04px / lh 31.104px / w600",
+   25
+  ],
+  [
+   "16px / lh 25.6px / w600",
+   15
+  ],
+  [
+   "16px / lh 24px / w400",
+   14
+  ],
+  [
+   "27.65px / lh 35.945px / w600",
+   13
+  ],
+  [
+   "12px / lh 16px / w700",
+   13
+  ],
+  [
+   "16px / lh 25.6px / w700",
+   11
+  ],
+  [
+   "14px / lh 20px / w700",
+   11
+  ],
+  [
+   "20px / lh 28px / w700",
+   10
+  ],
+  [
+   "12px / lh 16px / w900",
+   10
+  ],
+  [
+   "36px / lh 36px / w700",
+   10
+  ],
+  [
+   "14px / lh 20px / w600",
+   7
+  ],
+  [
+   "40px / lh 40px / w700",
+   7
+  ],
+  [
+   "13.33px / lh 19.995px / w600",
+   6
+  ],
+  [
+   "18px / lh 28px / w700",
+   4
+  ],
+  [
+   "27.65px / lh 35.945px / w800",
+   4
+  ],
+  [
+   "47.78px / lh 54.947px / w700",
+   4
+  ],
+  [
+   "33.18px / lh 41.475px / w800",
+   4
+  ],
+  [
+   "39.81px / lh 47.772px / w700",
+   3
+  ],
+  [
+   "16px / lh 25.6px / w800",
+   3
+  ],
+  [
+   "80px / lh 80px / w900",
+   3
+  ],
+  [
+   "16px / lh 24px / w600",
+   3
+  ],
+  [
+   "13.33px / lh 19.995px / w700",
+   3
+  ],
+  [
+   "12px / lh 16px / w600",
+   2
+  ],
+  [
+   "14px / lh 20px / w400",
+   2
+  ],
+  [
+   "16px / lh 24px / w700",
+   2
+  ],
+  [
+   "14px / lh 22.75px / w400",
+   2
+  ],
+  [
+   "104px / lh 88.4px / w900",
+   1
+  ],
+  [
+   "56px / lh 56px / w700",
+   1
+  ],
+  [
+   "104px / lh 104px / w900",
+   1
+  ],
+  [
+   "24px / lh 32px / w400",
+   1
+  ],
+  [
+   "24px / lh 32px / w700",
+   1
+  ],
+  [
+   "13.33px / lh 19.995px / w500",
+   1
+  ],
+  [
+   "47.78px / lh 54.947px / w800",
+   1
+  ],
+  [
+   "23.04px / lh 31.104px / w800",
+   1
+  ],
+  [
+   "12px / lh 16px / w400",
+   1
+  ],
+  [
+   "19.2px / lh 26.88px / w700",
+   1
+  ],
+  [
+   "20px / lh 28px / w400",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "400",
+   144
+  ],
+  [
+   "600",
+   98
+  ],
+  [
+   "700",
+   81
+  ],
+  [
+   "500",
+   43
+  ],
+  [
+   "900",
+   15
+  ],
+  [
+   "800",
+   13
+  ]
+ ],
+ "radii": [
+  [
+   "9999px",
+   65
+  ],
+  [
+   "12px",
+   56
+  ],
+  [
+   "16px",
+   30
+  ],
+  [
+   "16px 16px 8px",
+   1
+  ]
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Come un titolare d'agenzia usa realmente Claude nel suo lavoro (senza la roba hype)"
+  },
+  {
+   "tag": "h2",
+   "text": "Corso per marketer che vogliono trasformare Claude in un dipendente che non dorme, non beve e non chiede aumenti."
+  },
+  {
+   "tag": "h3",
+   "text": "Come usi l'AI:"
+  },
+  {
+   "tag": "h3",
+   "text": "\" L'AI è ganzo… Ma non ti cambia la vita… \""
+  },
+  {
+   "tag": "h1",
+   "text": "ASCOLTA BENE."
+  },
+  {
+   "tag": "h3",
+   "text": "Questi stronzi investono miliardi"
+  },
+  {
+   "tag": "h2",
+   "text": "Come io uso l'AI: luglio 2026"
+  },
+  {
+   "tag": "h3",
+   "text": "L'AI è più capace di quanto pensi… Ecco perché non ti è realmente utile"
+  },
+  {
+   "tag": "h3",
+   "text": "ERO CONFUSO QUANTO TE… Poi gli ai lord mi hanno illuminato"
+  },
+  {
+   "tag": "h3",
+   "text": "Ho trovato una tua foto:"
+  },
+  {
+   "tag": "h3",
+   "text": "Stai usando gli AI migliori???"
+  },
+  {
+   "tag": "h3",
+   "text": "La mia vita con ChatGPT:"
+  },
+  {
+   "tag": "h3",
+   "text": "Con Claude, invece…"
+  },
+  {
+   "tag": "h1",
+   "text": "Hai COMPETITOR e non lo sai"
+  },
+  {
+   "tag": "h3",
+   "text": "Negli ultimi 7 giorni sono uscite 18 notizie sull'AI"
+  },
+  {
+   "tag": "h3",
+   "text": "Voglio darti il vantaggio che ti serve"
+  },
+  {
+   "tag": "h3",
+   "text": "\"CAAAAZZO… Ma allora non è inutile…\""
+  },
+  {
+   "tag": "h3",
+   "text": "Strumenti"
+  },
+  {
+   "tag": "h3",
+   "text": "Ecco esattamente come l'AI sta aiutando la mia azienda… Oggi stesso."
+  },
+  {
+   "tag": "h3",
+   "text": "Il mio calendario"
+  },
+  {
+   "tag": "h3",
+   "text": "Ricerca per i clienti"
+  },
+  {
+   "tag": "h3",
+   "text": "Copy per Meta Ads"
+  },
+  {
+   "tag": "h3",
+   "text": "Per mesi mi sono sentito indietro con l'AI… E poi ho capito… Finalmente… E adesso voglio condividere con chiunque voglia la verità sull'AI…"
+  },
+  {
+   "tag": "h3",
+   "text": "ANDREI PASCU…. L'UOMO DEI TUOI SOGNI (sì, anche se sei etero)"
+  },
+  {
+   "tag": "h3",
+   "text": "Claude Speedrun"
+  },
+  {
+   "tag": "h3",
+   "text": "Perché quei €249 sono ancora sulla tua carta???"
+  },
+  {
+   "tag": "h3",
+   "text": "\"Andrei, chiunque tu sia… Senti. Parli tanto. Ma chi pensi di essere???\""
+  },
+  {
+   "tag": "h3",
+   "text": "Lista lezioni"
+  },
+  {
+   "tag": "h3",
+   "text": "Skills"
+  },
+  {
+   "tag": "h3",
+   "text": "Cosa dicono i membri"
+  },
+  {
+   "tag": "h3",
+   "text": "Claude Speedrun per chi lavora nel marketing"
+  },
+  {
+   "tag": "h3",
+   "text": "Non ti ho ancora convinto?..."
+  },
+  {
+   "tag": "h3",
+   "text": "Top motivi per comprare"
+  },
+  {
+   "tag": "h3",
+   "text": "La produttività NON è questo:"
+  },
+  {
+   "tag": "h3",
+   "text": "La produttività è questa:"
+  },
+  {
+   "tag": "h3",
+   "text": "PENSACI"
+  },
+  {
+   "tag": "h3",
+   "text": "Perché Claude e non altri?"
+  },
+  {
+   "tag": "h2",
+   "text": "Cosa ottieni se entri adesso"
+  },
+  {
+   "tag": "h2",
+   "text": "FAQ"
+  },
+  {
+   "tag": "h3",
+   "text": "Devo per forza usare Claude per fare il corso?"
+  },
+  {
+   "tag": "h3",
+   "text": "Tu sei un esperto di AI?"
+  },
+  {
+   "tag": "h3",
+   "text": "Le lezioni bonus sono già disponibili?"
+  },
+  {
+   "tag": "h3",
+   "text": "Nel corso usi solo Claude?"
+  },
+  {
+   "tag": "h3",
+   "text": "Come funzionano le nuove lezioni?"
+  },
+  {
+   "tag": "h3",
+   "text": "So già usare bene l'AI, Claude Speedrun è comunque utile?"
+  },
+  {
+   "tag": "h3",
+   "text": "Devo pagare Claude?"
+  },
+  {
+   "tag": "h3",
+   "text": "Per quanto tempo ho accesso?"
+  },
+  {
+   "tag": "h3",
+   "text": "Posso usarlo col piano free di Claude?"
+  },
+  {
+   "tag": "h3",
+   "text": "Come si fa a pagare con PayPal in 3 rate?"
+  },
+  {
+   "tag": "h3",
+   "text": "Ottengo accesso al corso subito?"
+  },
+  {
+   "tag": "h3",
+   "text": "Perché devo fare un account sul tuo sito?"
+  },
+  {
+   "tag": "h3",
+   "text": "Voglio fattura, possibile?"
+  },
+  {
+   "tag": "h3",
+   "text": "Per quanto tempo sarà disponibile il corso?"
+  },
+  {
+   "tag": "h3",
+   "text": "Posso guardare Claude Speedrun 2 su telefono/PC/tablet?"
+  },
+  {
+   "tag": "h3",
+   "text": "È un pagamento unico o pago in maniera ricorrente?"
+  },
+  {
+   "tag": "h3",
+   "text": "Disclaimer"
+  }
+ ],
+ "ctas": [
+  {
+   "text": "No, grazie",
+   "href": null,
+   "y": 825,
+   "x": 811,
+   "w": 100,
+   "h": 38,
+   "bg": "transparent",
+   "color": "#eeeeee",
+   "radius": "9999px",
+   "border": "1px solid rgb(51, 51, 51)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "400",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "✓ Accetta",
+   "href": null,
+   "y": 825,
+   "x": 922,
+   "w": 113,
+   "h": 38,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "9999px",
+   "border": "0px solid rgb(51, 51, 51)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "700",
+   "transform": "none",
+   "padding": "8px 20px"
+  },
+  {
+   "text": "Ottieni accesso",
+   "href": null,
+   "y": 848,
+   "x": 1265,
+   "w": 151,
+   "h": 44,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "9999px",
+   "border": "0px solid rgb(51, 51, 51)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(251, 70, 4, 0.35) 0px 0px 30px 0px",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "12px 24px"
+  },
+  {
+   "text": "Iscriviti",
+   "href": null,
+   "y": 1368,
+   "x": 496,
+   "w": 448,
+   "h": 60,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "0px solid rgb(51, 51, 51)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(251, 70, 4, 0.3) 0px 0px 30px 0px",
+   "font": "Onest, sans-serif",
+   "size": "18px",
+   "weight": "700",
+   "transform": "none",
+   "padding": "16px 24px"
+  },
+  {
+   "text": "Vedi novità",
+   "href": null,
+   "y": 1440,
+   "x": 496,
+   "w": 448,
+   "h": 64,
+   "bg": "transparent",
+   "color": "#00751f",
+   "radius": "12px",
+   "border": "2px solid rgb(0, 117, 31)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "18px",
+   "weight": "700",
+   "transform": "none",
+   "padding": "16px 24px"
+  },
+  {
+   "text": "RUBA WORKFLOW",
+   "href": null,
+   "y": 2889,
+   "x": 607,
+   "w": 226,
+   "h": 52,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "0px solid rgb(51, 51, 51)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "18px",
+   "weight": "700",
+   "transform": "uppercase",
+   "padding": "12px 28px"
+  },
+  {
+   "text": "Entra adesso",
+   "href": null,
+   "y": 3938,
+   "x": 638,
+   "w": 164,
+   "h": 50,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "0px solid rgb(51, 51, 51)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "16px",
+   "weight": "700",
+   "transform": "none",
+   "padding": "12px 32px"
+  },
+  {
+   "text": "Sì, mi ritrovo",
+   "href": null,
+   "y": 5695,
+   "x": 582,
+   "w": 125,
+   "h": 42,
+   "bg": "transparent",
+   "color": "#39393c @0.7",
+   "radius": "12px",
+   "border": "1px solid rgba(57, 57, 60, 0.3)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "10px 20px"
+  },
+  {
+   "text": "Non mi ritrovo",
+   "href": null,
+   "y": 5695,
+   "x": 722,
+   "w": 136,
+   "h": 42,
+   "bg": "transparent",
+   "color": "#39393c @0.7",
+   "radius": "12px",
+   "border": "1px solid rgba(57, 57, 60, 0.3)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "10px 20px"
+  },
+  {
+   "text": "Strumenti",
+   "href": null,
+   "y": 12447,
+   "x": 324,
+   "w": 261,
+   "h": 40,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "0px solid rgb(51, 51, 51)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "10px 12px"
+  },
+  {
+   "text": "Strategia",
+   "href": null,
+   "y": 12447,
+   "x": 589,
+   "w": 261,
+   "h": 40,
+   "bg": "#262626",
+   "color": "#f9f9f9",
+   "radius": "12px",
+   "border": "0px solid rgb(51, 51, 51)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "10px 12px"
+  },
+  {
+   "text": "Context",
+   "href": null,
+   "y": 12447,
+   "x": 855,
+   "w": 261,
+   "h": 40,
+   "bg": "#262626",
+   "color": "#f9f9f9",
+   "radius": "12px",
+   "border": "0px solid rgb(51, 51, 51)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "10px 12px"
+  },
+  {
+   "text": "ok, voglio partecipare e ti do i miei dannati €249",
+   "href": null,
+   "y": 14805,
+   "x": 471,
+   "w": 497,
+   "h": 59,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "0px solid rgb(51, 51, 51)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "19.2px",
+   "weight": "500",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "📖 Leggi la storia di Andrei Pascu Clicca per scoprire chi c'è dietro questo corso",
+   "href": null,
+   "y": 16903,
+   "x": 320,
+   "w": 337,
+   "h": 86,
+   "bg": "#fb4604 @0.05",
+   "color": "#f9f9f9",
+   "radius": "12px",
+   "border": "2px solid rgba(251, 70, 4, 0.3)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "transform": "none",
+   "padding": "16px 24px"
+  },
+  {
+   "text": "Iscriviti adesso",
+   "href": "https://buy.stripe.com/bJe28s3nc7240S39Ra4Ja1F",
+   "y": 17914,
+   "x": 502,
+   "w": 177,
+   "h": 60,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "0px solid rgb(51, 51, 51)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(251, 70, 4, 0.3) 0px 0px 40px 0px",
+   "font": "Onest, sans-serif",
+   "size": "16px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Cosa contiene il corso?",
+   "href": null,
+   "y": 17914,
+   "x": 695,
+   "w": 244,
+   "h": 60,
+   "bg": "transparent",
+   "color": "#f9f9f9",
+   "radius": "12px",
+   "border": "2px solid rgb(51, 51, 51)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "16px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Contenuto?",
+   "href": null,
+   "y": 19645,
+   "x": 959,
+   "w": 137,
+   "h": 40,
+   "bg": "#131313 @0.15",
+   "color": "#131313",
+   "radius": "9999px",
+   "border": "2px solid rgba(19, 19, 19, 0.3)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "700",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "Contenuto?",
+   "href": null,
+   "y": 19777,
+   "x": 959,
+   "w": 137,
+   "h": 40,
+   "bg": "#f9f9f9 @0.2",
+   "color": "#ffffff",
+   "radius": "9999px",
+   "border": "2px solid rgba(249, 249, 249, 0.3)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "700",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "Contenuto?",
+   "href": null,
+   "y": 19909,
+   "x": 959,
+   "w": 137,
+   "h": 40,
+   "bg": "#131313 @0.15",
+   "color": "#131313",
+   "radius": "9999px",
+   "border": "2px solid rgba(19, 19, 19, 0.3)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "700",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "Contenuto?",
+   "href": null,
+   "y": 20041,
+   "x": 959,
+   "w": 137,
+   "h": 40,
+   "bg": "#f9f9f9 @0.2",
+   "color": "#ffffff",
+   "radius": "9999px",
+   "border": "2px solid rgba(249, 249, 249, 0.3)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "700",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "Contenuto?",
+   "href": null,
+   "y": 20173,
+   "x": 959,
+   "w": 137,
+   "h": 40,
+   "bg": "#131313 @0.15",
+   "color": "#131313",
+   "radius": "9999px",
+   "border": "2px solid rgba(19, 19, 19, 0.3)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "700",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "Contenuto?",
+   "href": null,
+   "y": 20380,
+   "x": 959,
+   "w": 137,
+   "h": 40,
+   "bg": "#f9f9f9 @0.2",
+   "color": "#ffffff",
+   "radius": "9999px",
+   "border": "2px solid rgba(249, 249, 249, 0.3)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "700",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "Contenuto?",
+   "href": null,
+   "y": 20587,
+   "x": 959,
+   "w": 137,
+   "h": 40,
+   "bg": "#131313 @0.15",
+   "color": "#131313",
+   "radius": "9999px",
+   "border": "2px solid rgba(19, 19, 19, 0.3)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "700",
+   "transform": "none",
+   "padding": "8px 16px"
+  },
+  {
+   "text": "",
+   "href": null,
+   "y": 24665,
+   "x": 328,
+   "w": 40,
+   "h": 40,
+   "bg": "#131313 @0.8",
+   "color": "#f9f9f9",
+   "radius": "9999px",
+   "border": "1px solid rgb(51, 51, 51)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "",
+   "href": null,
+   "y": 24665,
+   "x": 1072,
+   "w": 40,
+   "h": 40,
+   "bg": "#131313 @0.8",
+   "color": "#f9f9f9",
+   "radius": "9999px",
+   "border": "1px solid rgb(51, 51, 51)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "transform": "none",
+   "padding": "0px"
+  },
+  {
+   "text": "Iscriviti adesso",
+   "href": null,
+   "y": 31438,
+   "x": 632,
+   "w": 177,
+   "h": 56,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "0px solid rgb(51, 51, 51)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(251, 70, 4, 0.3) 0px 0px 40px 0px",
+   "font": "Onest, sans-serif",
+   "size": "16px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 32px"
+  }
+ ],
+ "images": [
+  {
+   "tag": "img",
+   "src": "/assets/templar-mobile-Bos6xedI.webp",
+   "alt": "Cavaliere templare con ascia — Claude Speedrun 2",
+   "y": 0,
+   "x": 0,
+   "w": 875,
+   "h": 620
+  },
+  {
+   "tag": "img",
+   "src": "/assets/logo-full-BVZfkwIs.png",
+   "alt": "Claude Speedrun 2",
+   "y": 32,
+   "x": 40,
+   "w": 176,
+   "h": 88
+  },
+  {
+   "tag": "img",
+   "src": "/assets/logo-full-BVZfkwIs.png",
+   "alt": "Claude Speedrun Logo",
+   "y": 716,
+   "x": 632,
+   "w": 176,
+   "h": 88
+  },
+  {
+   "tag": "img",
+   "src": "/assets/hero-center-D-QA44aL.webp",
+   "alt": "Andrei",
+   "y": 996,
+   "x": 600,
+   "w": 240,
+   "h": 308
+  },
+  {
+   "tag": "img",
+   "src": "/assets/hero-left-DtNx8Py-.webp",
+   "alt": "Claude UI",
+   "y": 1020,
+   "x": 399,
+   "w": 257,
+   "h": 294
+  },
+  {
+   "tag": "img",
+   "src": "/assets/hero-right-BfHviJqm.webp",
+   "alt": "Andrei al lavoro",
+   "y": 1020,
+   "x": 785,
+   "w": 257,
+   "h": 294
+  },
+  {
+   "tag": "img",
+   "src": "/assets/workflow-5x-IQlfmH1e.png",
+   "alt": "5x",
+   "y": 1611,
+   "x": 463,
+   "w": 515,
+   "h": 368
+  },
+  {
+   "tag": "img",
+   "src": "/assets/workflow-andrei-sat-BcfcPfad.webp",
+   "alt": "Andrei",
+   "y": 1627,
+   "x": 308,
+   "w": 825,
+   "h": 1090
+  },
+  {
+   "tag": "img",
+   "src": "/__l5e/assets-v1/40df9959-178c-4234-9e93-dfbba80d988f/workflow-ticket-orange.webp",
+   "alt": "WORKFLOW update — copia i nuovi workflow che Andrei usa per fare cose velocemente... e guadagnare di più",
+   "y": 2460,
+   "x": 440,
+   "w": 560,
+   "h": 197
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3185,
+   "x": 704,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "tag": "img",
+   "src": "/assets/meme-sub-hero-ClRsDHM2.webp",
+   "alt": "Meme: reazione ai nuovi modelli AI",
+   "y": 3265,
+   "x": 464,
+   "w": 512,
+   "h": 301
+  },
+  {
+   "tag": "img",
+   "src": "/assets/chatgpt-icon-rleuyDCP.png",
+   "alt": "ChatGPT",
+   "y": 4873,
+   "x": 513,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "img",
+   "src": "/assets/openai-news-article-Btlg5z0r.png",
+   "alt": "OpenAI riceve 110 miliardi da Amazon, NVIDIA e SoftBank",
+   "y": 6466,
+   "x": 464,
+   "w": 512,
+   "h": 289
+  },
+  {
+   "tag": "img",
+   "src": "/assets/meme-1-CIRxe2wo.webp",
+   "alt": "Meme",
+   "y": 8883,
+   "x": 528,
+   "w": 384,
+   "h": 192
+  },
+  {
+   "tag": "img",
+   "src": "/assets/chatgpt-cancelled-BeniWrd3.webp",
+   "alt": "ChatGPT subscription cancelled",
+   "y": 9279,
+   "x": 496,
+   "w": 448,
+   "h": 260
+  },
+  {
+   "tag": "img",
+   "src": "/assets/meme-chatgpt-life-D7N4OQVy.webp",
+   "alt": "Meme vita con ChatGPT",
+   "y": 9903,
+   "x": 496,
+   "w": 448,
+   "h": 313
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 12058,
+   "x": 320,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 13579,
+   "x": 704,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "tag": "img",
+   "src": "/assets/claude-logo-C01R_jZX.webp",
+   "alt": "Claude logo",
+   "y": 13661,
+   "x": 705,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "tag": "img",
+   "src": "/assets/speedrun-logo-ChxHqqsA.webp",
+   "alt": "Claude Speedrun",
+   "y": 13799,
+   "x": 320,
+   "w": 320,
+   "h": 79
+  },
+  {
+   "tag": "img",
+   "src": "/assets/speedrun-icon-DDk6sWW5.webp",
+   "alt": "Claude Speedrun icon",
+   "y": 14404,
+   "x": 702,
+   "w": 36,
+   "h": 36
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14648,
+   "x": 475,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14690,
+   "x": 475,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14733,
+   "x": 475,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15071,
+   "x": 334,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "img",
+   "src": "/assets/competitor-chart-CSZjyN83.webp",
+   "alt": "Grafico TU vs Competitor — sei qui, i competitor sono avanti",
+   "y": 16001,
+   "x": 464,
+   "w": 512,
+   "h": 226
+  },
+  {
+   "tag": "img",
+   "src": "/assets/andrei-photo-96AFuG4a.jpg",
+   "alt": "Andrei Pascu",
+   "y": 16480,
+   "x": 322,
+   "w": 108,
+   "h": 108
+  },
+  {
+   "tag": "img",
+   "src": "/assets/logo-full-BVZfkwIs.png",
+   "alt": "Claude Speedrun Logo",
+   "y": 17180,
+   "x": 632,
+   "w": 176,
+   "h": 88
+  },
+  {
+   "tag": "img",
+   "src": "/__l5e/assets-v1/649d636a-90cc-42fb-9d99-e88f3d6277b3/ticket-grey-back.png",
+   "alt": "Biglietto Grigio",
+   "y": 17326,
+   "x": 577,
+   "w": 345,
+   "h": 490
+  },
+  {
+   "tag": "img",
+   "src": "/__l5e/assets-v1/9d3c53c0-40f1-4700-8d5f-b0bbd36e9663/ticket-orange-top.png",
+   "alt": "Biglietto Arancione",
+   "y": 17339,
+   "x": 534,
+   "w": 358,
+   "h": 522
+  },
+  {
+   "tag": "img",
+   "src": "/assets/speedrun-icon-DDk6sWW5.webp",
+   "alt": "",
+   "y": 19625,
+   "x": 344,
+   "w": 80,
+   "h": 80
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19657,
+   "x": 977,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "/assets/claude-logo-white-DXiSTRn2.webp",
+   "alt": "",
+   "y": 19757,
+   "x": 344,
+   "w": 80,
+   "h": 80
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19789,
+   "x": 977,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "/assets/speedrun-icon-DDk6sWW5.webp",
+   "alt": "",
+   "y": 19889,
+   "x": 344,
+   "w": 80,
+   "h": 80
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19921,
+   "x": 977,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "/assets/claude-logo-white-DXiSTRn2.webp",
+   "alt": "",
+   "y": 20021,
+   "x": 344,
+   "w": 80,
+   "h": 80
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20053,
+   "x": 977,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "/assets/speedrun-icon-DDk6sWW5.webp",
+   "alt": "",
+   "y": 20153,
+   "x": 344,
+   "w": 80,
+   "h": 80
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20185,
+   "x": 977,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "/assets/claude-logo-white-DXiSTRn2.webp",
+   "alt": "",
+   "y": 20360,
+   "x": 344,
+   "w": 80,
+   "h": 80
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20392,
+   "x": 977,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "/assets/speedrun-icon-DDk6sWW5.webp",
+   "alt": "",
+   "y": 20567,
+   "x": 344,
+   "w": 80,
+   "h": 80
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20599,
+   "x": 977,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 20765,
+   "x": 700,
+   "w": 40,
+   "h": 40
+  },
+  {
+   "tag": "img",
+   "src": "/assets/skill-01-Tbg9HzWW.webp",
+   "alt": "Skill di Claude Speedrun 2 in arrivo",
+   "y": 21206,
+   "x": 319,
+   "w": 193,
+   "h": 193
+  },
+  {
+   "tag": "img",
+   "src": "/assets/skill-02-Dvc76Lfp.webp",
+   "alt": "Skill di Claude Speedrun 2 in arrivo",
+   "y": 21206,
+   "x": 522,
+   "w": 193,
+   "h": 193
+  },
+  {
+   "tag": "img",
+   "src": "/assets/skill-03-CdDzbFo9.webp",
+   "alt": "Skill di Claude Speedrun 2 in arrivo",
+   "y": 21206,
+   "x": 725,
+   "w": 193,
+   "h": 193
+  },
+  {
+   "tag": "img",
+   "src": "/assets/skill-04-Bx9KsuWJ.webp",
+   "alt": "Skill di Claude Speedrun 2 in arrivo",
+   "y": 21206,
+   "x": 928,
+   "w": 193,
+   "h": 193
+  },
+  {
+   "tag": "img",
+   "src": "/assets/skill-05-Ch7VSsnJ.webp",
+   "alt": "Skill di Claude Speedrun 2 in arrivo",
+   "y": 21409,
+   "x": 319,
+   "w": 193,
+   "h": 193
+  },
+  {
+   "tag": "img",
+   "src": "/assets/skill-06-DnEvidjp.webp",
+   "alt": "Skill di Claude Speedrun 2 in arrivo",
+   "y": 21409,
+   "x": 522,
+   "w": 193,
+   "h": 193
+  },
+  {
+   "tag": "img",
+   "src": "/assets/skill-07-bzMtWFtD.webp",
+   "alt": "Skill di Claude Speedrun 2 in arrivo",
+   "y": 21409,
+   "x": 725,
+   "w": 193,
+   "h": 193
+  },
+  {
+   "tag": "img",
+   "src": "/assets/skill-08-BkjE46r9.webp",
+   "alt": "Skill di Claude Speedrun 2 in arrivo",
+   "y": 21409,
+   "x": 928,
+   "w": 193,
+   "h": 193
+  },
+  {
+   "tag": "img",
+   "src": "data:image/webp;base64,UklGRu4OAABXRUJQVlA4IOIOAADQhQCdASr0AfQBPm02lkkkLC8hIzi4oeANiWdu+F+sDE9wfD7+3fpf5A3hOs2bw9939OjcewrEsh3s0+z/vPsAYKHjH8vzsnRvWx/EP8D/3fVh/VXI+45B6y0ak6OjLO9Y8zOX01A3oeL3mqCfr4bbh",
+   "alt": "Skill di Claude Speedrun 2 in arrivo",
+   "y": 21612,
+   "x": 319,
+   "w": 193,
+   "h": 193
+  },
+  {
+   "tag": "img",
+   "src": "data:image/webp;base64,UklGRsIOAABXRUJQVlA4ILYOAABQhgCdASr0AfQBPm02mUkkIyWqore4cVANiWdu//C8+f06LhpHUh3GM/Ar/yP6r5A3hPrTb6+mh5J/0LHrxrZxMIP48hf9PM5/Y7q3q35inkn6P9yqGpnes+371lzh5eWeefNEv7uBBpBvLgzZIuP9K",
+   "alt": "Skill di Claude Speedrun 2 in arrivo",
+   "y": 21612,
+   "x": 522,
+   "w": 193,
+   "h": 193
+  },
+  {
+   "tag": "img",
+   "src": "/assets/skill-11-BgfIp4RG.webp",
+   "alt": "Skill di Claude Speedrun 2 in arrivo",
+   "y": 21612,
+   "x": 725,
+   "w": 193,
+   "h": 193
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22053,
+   "x": 637,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22053,
+   "x": 659,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22053,
+   "x": 681,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22053,
+   "x": 703,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22053,
+   "x": 725,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 341,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 359,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 377,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 395,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 413,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 613,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 631,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 649,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 667,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 685,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 885,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 903,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 921,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 939,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22170,
+   "x": 957,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22278,
+   "x": 613,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22329,
+   "x": 341,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22345,
+   "x": 885,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22363,
+   "x": 613,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22363,
+   "x": 631,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22363,
+   "x": 649,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22363,
+   "x": 667,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22363,
+   "x": 685,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22414,
+   "x": 341,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22414,
+   "x": 359,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22414,
+   "x": 377,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22414,
+   "x": 395,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22414,
+   "x": 413,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22420,
+   "x": 885,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22420,
+   "x": 903,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22420,
+   "x": 921,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22420,
+   "x": 939,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22420,
+   "x": 957,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22492,
+   "x": 885,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22567,
+   "x": 885,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22567,
+   "x": 903,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22567,
+   "x": 921,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22567,
+   "x": 939,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22567,
+   "x": 957,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22573,
+   "x": 613,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22658,
+   "x": 613,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22658,
+   "x": 631,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22658,
+   "x": 649,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22658,
+   "x": 667,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22658,
+   "x": 685,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22742,
+   "x": 341,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22742,
+   "x": 885,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22766,
+   "x": 613,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22817,
+   "x": 885,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22817,
+   "x": 903,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22817,
+   "x": 921,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22817,
+   "x": 939,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22817,
+   "x": 957,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 22890,
+   "x": 885,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "img",
+   "src": "/assets/section17-graphic-BeFFlXm7.webp",
+   "alt": "ORA vs CON Speedrun Claude — confronto risultati",
+   "y": 23121,
+   "x": 420,
+   "w": 600,
+   "h": 810
+  },
+  {
+   "tag": "img",
+   "src": "/assets/carousel-slide-1-C6bB0yRr.webp",
+   "alt": "Esempio lavoro marketing 1",
+   "y": 24242,
+   "x": 388,
+   "w": 664,
+   "h": 885
+  },
+  {
+   "tag": "img",
+   "src": "/assets/carousel-slide-2-B1mB7uRi.webp",
+   "alt": "Esempio lavoro marketing 2",
+   "y": 24242,
+   "x": 1068,
+   "w": 664,
+   "h": 885
+  },
+  {
+   "tag": "img",
+   "src": "/assets/carousel-slide-3-Dy3W8RVt.webp",
+   "alt": "Esempio lavoro marketing 3",
+   "y": 24242,
+   "x": 1748,
+   "w": 664,
+   "h": 885
+  },
+  {
+   "tag": "img",
+   "src": "/assets/carousel-slide-4-xxku8IOf.webp",
+   "alt": "Esempio lavoro marketing 4",
+   "y": 24242,
+   "x": -292,
+   "w": 664,
+   "h": 885
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24675,
+   "x": 338,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24675,
+   "x": 1082,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "video",
+   "src": "/videos/hypno.mp4",
+   "alt": "",
+   "y": 25490,
+   "x": 470,
+   "w": 500,
+   "h": 375
+  },
+  {
+   "tag": "img",
+   "src": "/assets/speedrun-logo-ChxHqqsA.webp",
+   "alt": "Speedrun Claude",
+   "y": 26063,
+   "x": 852,
+   "w": 129,
+   "h": 32
+  },
+  {
+   "tag": "video",
+   "src": "/assets/gattino-D7jb6OpF.mp4",
+   "alt": "",
+   "y": 26235,
+   "x": 420,
+   "w": 600,
+   "h": 338
+  },
+  {
+   "tag": "img",
+   "src": "/assets/meme-produttivita-yQ5a3SaA.webp",
+   "alt": "Produttività falsa: docce fredde, podcast mentre corri, guardare video su come lavorare",
+   "y": 26942,
+   "x": 420,
+   "w": 600,
+   "h": 600
+  },
+  {
+   "tag": "img",
+   "src": "/assets/produttivita-chart-v4UP4ksg.webp",
+   "alt": "Confronto produttività: 6 articoli giorno 1 vs 10 articoli giorno 2",
+   "y": 27865,
+   "x": 470,
+   "w": 500,
+   "h": 932
+  },
+  {
+   "tag": "img",
+   "src": "/assets/competitor-meme-CIFiBP6U.webp",
+   "alt": "Competitor meme: Ma come fa a fare così tanto...",
+   "y": 29153,
+   "x": 420,
+   "w": 600,
+   "h": 564
+  },
+  {
+   "tag": "img",
+   "src": "/assets/claude-icon-orange-CWb1Cvu5.webp",
+   "alt": "Claude",
+   "y": 29915,
+   "x": 735,
+   "w": 28,
+   "h": 28
+  },
+  {
+   "tag": "img",
+   "src": "/assets/claude-fanpage-CkTxWNvR.webp",
+   "alt": "Claude batte ChatGPT tra le app più scaricate",
+   "y": 30081,
+   "x": 420,
+   "w": 600,
+   "h": 156
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 30317,
+   "x": 582,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 30355,
+   "x": 582,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 30393,
+   "x": 582,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 30430,
+   "x": 582,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 30749,
+   "x": 495,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 30810,
+   "x": 495,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 30871,
+   "x": 495,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 30932,
+   "x": 495,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 30993,
+   "x": 495,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 31054,
+   "x": 495,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 31115,
+   "x": 495,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 31176,
+   "x": 495,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 31237,
+   "x": 495,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 31298,
+   "x": 495,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 31359,
+   "x": 495,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 31805,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 31881,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 31957,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32033,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32109,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32185,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32261,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32337,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32412,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32488,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32564,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32640,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32716,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32792,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32868,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32944,
+   "x": 1104,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "img",
+   "src": "/assets/logo-icon-DkFfTJr9.png",
+   "alt": "Claude Speedrun",
+   "y": 33545,
+   "x": 320,
+   "w": 32,
+   "h": 32
+  }
+ ],
+ "slices_desktop": 32,
+ "slices_mobile": 32,
+ "mobile_page_height": 36322
+}

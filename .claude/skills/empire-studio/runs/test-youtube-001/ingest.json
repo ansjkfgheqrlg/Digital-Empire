@@ -1,0 +1,30 @@
+{
+  "kind": "single-video",
+  "id": "jNQXAC9IVRw",
+  "title": "Me at the zoo",
+  "url": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+  "duration_sec": 19,
+  "uploader": "jawed",
+  "chapters": [
+    {
+      "start": 0.0,
+      "title": "Intro"
+    },
+    {
+      "start": 5.0,
+      "title": "The cool thing"
+    },
+    {
+      "start": 17.0,
+      "title": "End"
+    }
+  ],
+  "subs": [
+    "runs\\test-youtube-001\\jNQXAC9IVRw.en.vtt"
+  ],
+  "thumbnails": [
+    "runs\\test-youtube-001\\jNQXAC9IVRw.webp"
+  ],
+  "ingested_at": "2026-06-08T11:08:48",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=jNQXAC9IVRw"
+}

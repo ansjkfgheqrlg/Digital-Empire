@@ -1,0 +1,33 @@
+{
+  "video_id": "-zUDxSdaKRY",
+  "title": "6 livelli di tono di voce",
+  "channel": "Andrei Pascu",
+  "run": "andrei-pascu-001/cat1-copywriting",
+  "video_number": 27,
+  "category": "cat1-copywriting",
+  "duration_s": 25,
+  "duration_human": "0m25s",
+  "format": "static-talking-head-repeated-line-with-onscreen-delivery-badges",
+  "stage1_date": "2026-08-26",
+  "stage2_date": "2026-08-26",
+  "stage3_date": "2026-08-26",
+  "frames_total": 13,
+  "frames_interval_s": 2,
+  "frame_naming": "3-digit (frame-001 to frame-013)",
+  "frames_read_natively": 13,
+  "no_finto_status": "PASS",
+  "chapters": 0,
+  "subtitles": ["it"],
+  "knowledge_atoms": 7,
+  "visual_passages": 6,
+  "sections": 6,
+  "patterns": 3,
+  "key_topics": [
+    "Delivery vocale come variabile indipendente dal testo del copy",
+    "Scala progressiva a 6 livelli (insicuro a perfetto)",
+    "Eye contact, ritmo, pause, proiezione vocale, gesticolazione",
+    "Gestualita come ultimo elemento che rende naturale una delivery tecnicamente corretta"
+  ],
+  "brands_analyzed": [],
+  "processing_notes": "Video molto breve (25s, 13 frame): coverage 100% nativa. PARTICOLARITA': il VTT contiene la stessa identica frase ripetuta 6 volte (variabile isolata = delivery, non testo) - i Knowledge Atom sono quindi ancorati principalmente ai frame (badge + criteri onscreen), non al VTT testuale. Primo video del run su delivery vocale/fisica invece che testo scritto - dominio scoperto, nessuno skill DE esistente lo copre, nessuna patch applicata (non c'e' uno skill pertinente da patchare). Contenuto audio/prosodico reale non verificabile dai soli frame - dichiarato esplicitamente. Nessun problema tecnico Stage 1/2."
+}

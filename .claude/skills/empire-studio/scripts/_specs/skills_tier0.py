@@ -1,0 +1,63 @@
+# -*- coding: utf-8 -*-
+"""Skill Tier-0 (orchestrazione): governano altre skill e l'intero workflow."""
+
+T = "tier0-orchestration"
+
+SKILLS = [
+    {
+        "name": "empire-orchestration-skill", "tier": T,
+        "description": "Skill di orchestrazione di massimo livello: e' l'entrypoint /empire. Avvia la run, sceglie reparto e strategia, guida la pipeline a 9 stage attraverso tutti i reparti (ruflo swarm quando disponibile, altrimenti Conductor via Task). Governa tutte le altre skill.",
+        "tagline": "Il direttore d'orchestra: /empire avvia e coordina l'intero workflow.",
+        "does": ["Riceve /empire <input> e classifica (video/canale/web/repo).",
+                 "Avvia memory bootstrap e chiede il Strategy Manifest.",
+                 "Instrada al reparto giusto e guida i 9 stage fino alla wiki + report.",
+                 "Orchestra in parallelo Verification e Memory (controllori/archivisti)."],
+        "usage": ["/empire <link|path> [--dept=youtube|tiktok|web|projects] [--focus=...]"],
+        "controls": ["tutte le skill tier1 (di reparto)", "strategy-manifest-skill", "verification-skill", "memory-ecosystem-skill"],
+        "agents": ["conductor/conductor"],
+        "invariants": ["Memory-first (bootstrap prima di tutto).", "Strategy-first (Manifest prima dell'instradamento).",
+                       "Verifica prima di dichiarare 'fatto'.", "CLI-only, no API; visione = Claude."],
+        "trace": "risponde a 'questo e' un workflow intero coordinato da agenti e team'.",
+    },
+    {
+        "name": "strategy-manifest-skill", "tier": T,
+        "description": "Skill che governa la selezione e l'applicazione delle strategie: produce il Strategy Manifest (reparto + tipo contenuto + stile wiki) e lo impone ai reparti. Coordina il reparto Strategy.",
+        "tagline": "Sceglie e impone la strategia giusta per ogni run (non una generica).",
+        "does": ["Genera il Strategy Manifest via generate_strategy_manifest.py.",
+                 "Lo salva in memory/strategy-applications/ e lo distribuisce ai reparti.",
+                 "Coordina coordinator/applicator/controller/improver del reparto Strategy."],
+        "usage": ["python scripts/generate_strategy_manifest.py --input-type <t> --focus <f> --run <run-id>"],
+        "uses_scripts": ["scripts/generate_strategy_manifest.py"],
+        "controls": ["strategie tier1 di reparto"],
+        "agents": ["strategy-department/strategy-coordinator", "strategy-department/strategy-applicator"],
+        "trace": "risponde a 'tante strategie specifiche gestite da un team di agenti'.",
+    },
+    {
+        "name": "memory-ecosystem-skill", "tier": T,
+        "description": "Skill che governa l'intero ecosistema di memoria (16 categorie): garantisce l'aggiornamento dopo ogni azione, l'INDEX vivo, i nomi Windows-safe. Coordina il reparto Memory Management.",
+        "tagline": "Il sistema nervoso: ogni decisione/bug/sessione/aggiornamento e' registrato.",
+        "does": ["Espone memory_manager.py a tutti i reparti (checkpoint/decisioni/bug/...).",
+                 "Mantiene MEMORY-INDEX.md vivo e i nomi file Windows-safe.",
+                 "Coordina gli 8 agenti del reparto Memory Management."],
+        "usage": ["python scripts/memory_manager.py --checkpoint \"...\" --phase N",
+                  "python scripts/memory_manager.py --status"],
+        "uses_scripts": ["scripts/memory_manager.py"],
+        "agents": ["memory-management-department/department-lead", "memory-management-department/memory-auditor"],
+        "invariants": ["Memory-first (P10).", "Nomi Windows-safe (no 0x80070057).", "16 categorie reali."],
+        "trace": "risponde a 'un intero ecosistema di memoria gestito da agenti'.",
+    },
+    {
+        "name": "verification-skill", "tier": T,
+        "description": "Skill che governa la verifica e il controllo continui: esegue il validator anti-stub, coordina i controllori (visione reale, coverage, compliance CLI-only, real-test) e puo' bloccare gli handoff.",
+        "tagline": "I controllori: niente e' 'fatto' finche' non e' verificato.",
+        "does": ["Esegue validator.py (cancello anti-stub + nomi safe) sull'ecosistema.",
+                 "Coordina visual-verifier/coverage-controller/compliance-auditor/real-tester.",
+                 "Blocca gli handoff e apre ticket di errore quando una verifica fallisce."],
+        "usage": ["python scripts/validator.py", "python scripts/catalog_status.py"],
+        "uses_scripts": ["scripts/validator.py", "scripts/catalog_status.py"],
+        "controls": ["verifiche dei reparti"],
+        "agents": ["verification-control-department/department-lead", "verification-control-department/visual-verifier"],
+        "invariants": ["No-stub (AP01).", "No-finto.", "CLI-only.", "Real-test prima del via libera."],
+        "trace": "risponde a 'un intero reparto che deve verificare e controllori'.",
+    },
+]

@@ -1,0 +1,240 @@
+{
+ "video_id": "j4UInmM9kKA",
+ "total_atoms": 17,
+ "atoms": [
+  {
+   "id": "KA-01",
+   "source": "j4UInmM9kKA#00:00:05",
+   "frame": "frame-001",
+   "category": "Lead magnet / Template Canva personalizzabile",
+   "section": "S1",
+   "tags": [
+    "template",
+    "canva",
+    "smm",
+    "b2b-locale"
+   ],
+   "atom": "Idea #1: creare template Canva pronti per il settore del cliente target (per un SMM: template per i piatti di un ristorante, template per le schede di una palestra), consegnati come file modificabile in cambio dell'email. Applicabile anche a designer generici, non solo SMM. Andrei dichiara che in Italia lo fanno pochissimi."
+  },
+  {
+   "id": "KA-02",
+   "source": "j4UInmM9kKA#00:01:25",
+   "frame": "frame-041",
+   "category": "Lead magnet / Challenge a step (7-14 giorni)",
+   "section": "S2",
+   "tags": [
+    "challenge",
+    "abitudine",
+    "trip-wire"
+   ],
+   "atom": "Idea #2: sfidare il prospect a seguire un percorso a step (7 giorni di allenamento da 20 minuti, 7 ricette per la cena perfetta) prima di proporre l'acquisto alla fine. Meccanismo: chi ha gia' iniziato un percorso e' piu' motivato a continuarlo rispetto a chi deve partire da zero, e funziona in modo particolare dove va installata un'abitudine. Usabile anche come trip wire a pagamento (pochi euro). Andrei la definisce devastante se rispetta le 5 regole finali."
+  },
+  {
+   "id": "KA-03",
+   "source": "j4UInmM9kKA#00:03:15",
+   "frame": "frame-096",
+   "category": "Lead magnet / Calcolatrice custom generata con AI",
+   "section": "S3",
+   "tags": [
+    "calcolatrice",
+    "ai",
+    "mini-app",
+    "quantificazione"
+   ],
+   "atom": "Idea #3: costruire una mini-applicazione calcolatrice (fattibile con Claude/ChatGPT/Gemini senza saper programmare) che stima un beneficio quantitativo personalizzato dagli input del prospect (quante ore lavori, quanto guadagni al mese -> quanto tempo e denaro risparmieresti). Esempio esterno citato: Motion Calendar. Caso proprio dichiarato: cliente nel settore formazione per autori, con una calcolatrice piu' complessa."
+  },
+  {
+   "id": "KA-04",
+   "source": "j4UInmM9kKA#00:05:30",
+   "frame": "frame-217",
+   "category": "Posizionamento / Professione Funnel Operator",
+   "section": "S3",
+   "tags": [
+    "posizionamento",
+    "funnel-operator",
+    "promo",
+    "cro"
+   ],
+   "atom": "Digressione di posizionamento: il Funnel Operator (chi analizza e ottimizza il funnel esistente di un cliente) come carriera freelance piu' richiesta del 2026. Argomenti: clienti gia' consapevoli del problema (niente cold outreach al buio), progetti da migliaia di euro perche' l'impatto percepito (es. +50% fatturato) giustifica il prezzo, skill apprendibili da zero grazie all'AI. Andrei usa esplicitamente CRO per indicare l'ottimizzazione del funnel e prezza 2-3.000 euro il singolo intervento. Segmento promozionale di un corso proprio in prelancio: contenuto misto educativo/promozionale."
+  },
+  {
+   "id": "KA-05",
+   "source": "j4UInmM9kKA#00:07:15",
+   "frame": "frame-256",
+   "category": "Lead magnet / Webinar strutturato",
+   "section": "S4",
+   "tags": [
+    "webinar",
+    "struttura",
+    "slide-rapide"
+   ],
+   "atom": "Idea #4: i webinar non sono morti, lo sono i webinar mediocri. Critica esplicita alla registrazione schermo con 'ehm' e racconto della propria vita. Struttura corretta mostrata: lo script E' la presentazione, slide che scorrono molto velocemente (~400 slide in un singolo webinar) invece di una slide statica al minuto. Esempio applicativo per interior designer: 'Scopri qual e' lo stile adatto alla tua casa' con i 5 stili piu' comuni spiegati per personalita', chiusura con proposta di call."
+  },
+  {
+   "id": "KA-06",
+   "source": "j4UInmM9kKA#00:08:35",
+   "frame": "frame-325",
+   "category": "Lead magnet / Swipe file",
+   "section": "S5",
+   "tags": [
+    "swipe-file",
+    "esempi",
+    "autorita"
+   ],
+   "atom": "Idea #5: raccogliere e distribuire una collezione di esempi di alta qualita' nel proprio dominio (un copywriter distribuisce i migliori copy passati; a un pubblico di video editor si danno esempi di editing eccellente). Doppio effetto: utilita' pratica diretta piu' posizionamento come provider di soluzioni."
+  },
+  {
+   "id": "KA-07",
+   "source": "j4UInmM9kKA#00:09:30",
+   "frame": null,
+   "category": "Framework / Ciclo del rinforzo",
+   "section": "S5",
+   "tags": [
+    "ciclo-del-rinforzo",
+    "fiducia",
+    "framework-trasversale"
+   ],
+   "atom": "Framework trasversale a tutte le 10 idee: si compra quando (1) si ha un problema, (2) si e' convinti che il prodotto lo risolva, (3) ci si fida di chi vende. Chi ha appena scoperto il brand non si fida ancora: il lead magnet deve CHIUDERE un ciclo del rinforzo dando una soluzione concreta e facendo percepire progresso reale. Un lead magnet che non chiude il ciclo equivale a budget advertising sprecato, a prescindere dal volume di lead raccolti."
+  },
+  {
+   "id": "KA-08",
+   "source": "j4UInmM9kKA#00:10:55",
+   "frame": "frame-400",
+   "category": "Lead magnet / Ebook breve (checklist, cheat guide)",
+   "section": "S6",
+   "tags": [
+    "ebook",
+    "checklist",
+    "cheat-sheet",
+    "anti-pattern"
+   ],
+   "atom": "Idea #6: ebook qui NON significa documento lungo stile libro. Anti-pattern esplicito: se il contenuto sarebbe da 10+ pagine scritte, cancellare l'idea e farci un webinar sopra, perche' nessuno legge 10 pagine di uno sconosciuto. Significa manualetto, checklist o cheat guide breve; esempio citato: un Google Sheets con la checklist delle azioni da fare quando si pubblicano ads su Ads Manager. Criterio: utilita' alta e sforzo di utilizzo basso, altrimenti il lead magnet e' sprecato anche se ben scritto."
+  },
+  {
+   "id": "KA-09",
+   "source": "j4UInmM9kKA#00:13:00",
+   "frame": null,
+   "category": "Lead magnet / GPT o agent custom su WhatsApp",
+   "section": "S7",
+   "tags": [
+    "gpt-custom",
+    "agent",
+    "whatsapp",
+    "attrito"
+   ],
+   "atom": "Idea #7 (numerata a voce, assente dai titoli ufficiali dei capitoli): creare un GPT/agent con istruzioni specifiche per la propria categoria, opzionalmente addestrato per qualificare il lead e spingerlo a fissare la call (diventa un mezzo venditore). Consiglio operativo forte: distribuirlo su WhatsApp invece di richiedere ChatGPT Plus, perche' azzera l'attrito d'accesso (WhatsApp ce l'hanno tutti)."
+  },
+  {
+   "id": "KA-10",
+   "source": "j4UInmM9kKA#00:13:20",
+   "frame": "frame-441",
+   "category": "Lead magnet / Quiz con punteggio segmentato a 3 livelli",
+   "section": "S8",
+   "tags": [
+    "quiz",
+    "segmentazione",
+    "tre-livelli",
+    "video-personalizzato"
+   ],
+   "atom": "Idea #8: quiz 'quante ne sai su X' (per un agente immobiliare: i fattori che influenzano il prezzo di una casa) che produce un punteggio collegato a un video di risposta segmentato per livello, basso/medio/alto, pattern a 3 livelli che Andrei dichiara di usare sistematicamente. Ogni livello propone un CTA calibrato sulla competenza percepita. Calibrazione onesta dello stesso Andrei: il quiz e' tra i format piu' DEBOLI per chiudere il ciclo del rinforzo, ma utile su argomenti grandi per abbassare la soglia d'ingresso. Corollario: si possono impilare piu' livelli di lead magnet (optin 1, optin 2 piu' potente, poi la call)."
+  },
+  {
+   "id": "KA-11",
+   "source": "j4UInmM9kKA#00:14:45",
+   "frame": "frame-460",
+   "category": "Lead magnet / Source files di progetto",
+   "section": "S9",
+   "tags": [
+    "source-files",
+    "psd",
+    "after-effects",
+    "audience-creative"
+   ],
+   "atom": "Idea #9: distribuire i file sorgente di un progetto creativo (PSD di Photoshop, progetti After Effects/Premiere con intro e animazioni). Funziona specificamente su audience creative e tecniche; citato come pattern comune e ad alta efficacia in quel segmento, alternativa diretta al solito ebook da 50 pagine che nessuno legge."
+  },
+  {
+   "id": "KA-12",
+   "source": "j4UInmM9kKA#00:15:22",
+   "frame": "frame-486",
+   "category": "Lead magnet / Liste e raccolte curate (caso reale con numeri)",
+   "section": "S10",
+   "tags": [
+    "liste",
+    "raccolte",
+    "organico",
+    "keyword-dm",
+    "numeri-reali"
+   ],
+   "atom": "Idea #10: distribuire una raccolta curata (cartella di canzoni virali per Instagram e TikTok) con riscatto a bassissimo attrito. Caso reale dichiarato: DM automatico attivato scrivendo la keyword 'cartella' nei commenti, circa 2000 follower e circa 2000 cartelle inviate, zero euro di ads. Andrei stima che chiedendo anche nome, cognome e telefono il volume si sarebbe dimezzato (1000 o 500) restando comunque alto. Principio: reward alto piu' sforzo richiesto minimo uguale volume di lead altissimo anche senza budget."
+  },
+  {
+   "id": "KA-13",
+   "source": "j4UInmM9kKA#00:16:15",
+   "frame": "frame-486",
+   "category": "Regola 1 / Se devi dare valore, dai valore",
+   "section": "S11",
+   "tags": [
+    "regola",
+    "qualita",
+    "proxy",
+    "percezione"
+   ],
+   "atom": "Regola 1: la qualita' del lead magnet gratuito viene letta dal prospect come proxy della qualita' del prodotto a pagamento: se fa schifo la roba free, si assume che faccia schifo anche quella a pagamento. Il fatto che sia gratis non e' un'attenuante agli occhi di chi non ti conosce, perche' il lead magnet e' l'unico dato che ha su di te. Se prometti di insegnare come fare 10.000 euro al mese, devi insegnarlo davvero."
+  },
+  {
+   "id": "KA-14",
+   "source": "j4UInmM9kKA#00:17:00",
+   "frame": null,
+   "category": "Regola 2 / Formato piu' intrattenente, mai la scorciatoia",
+   "section": "S11",
+   "tags": [
+    "regola",
+    "formato",
+    "scorciatoia",
+    "costo-differito"
+   ],
+   "atom": "Regola 2: scegliere sempre il formato piu' intrigante e intrattenente, non quello piu' comodo da produrre (meglio un webinar editato bene di un ebook lungo scritto male; se fai il webinar, editalo e investici). Principio generale dichiarato: piu' te la fai facile quando crei il contenuto, piu' ti rendi la vita difficile dopo. La scorciatoia non elimina il costo, lo sposta sulle conversioni future. Prova portata a supporto: 3700 ordini sul sito in organico con zero euro di ads."
+  },
+  {
+   "id": "KA-15",
+   "source": "j4UInmM9kKA#00:18:00",
+   "frame": null,
+   "category": "Regola 3 / Mostra l'informazione, vendi l'implementazione",
+   "section": "S11",
+   "tags": [
+    "regola",
+    "hormozi",
+    "informazione-vs-implementazione"
+   ],
+   "atom": "Regola 3, attribuita esplicitamente ad Alex Hormozi: dare gratis l'informazione e la diagnosi (perche' non riesci a perdere grasso; i 10 errori comuni di gestione aziendale) e vendere a pagamento l'implementazione (la scheda, la dieta, la consulenza operativa). Risolve la paura di dire troppo: il valore venduto e' l'esecuzione, non il sapere. Effetto secondario: permette di essere generosi senza limiti nel contenuto gratuito, il che rinforza il ciclo del rinforzo (KA-07)."
+  },
+  {
+   "id": "KA-16",
+   "source": "j4UInmM9kKA#00:19:00",
+   "frame": null,
+   "category": "Regola 4 / Equilibrio tra valore dato e dati richiesti",
+   "section": "S11",
+   "tags": [
+    "regola",
+    "optin",
+    "campi-form",
+    "proporzionalita"
+   ],
+   "atom": "Regola 4: la richiesta di informazioni personali nell'optin deve essere PROPORZIONATA al valore percepito del lead magnet. Una calcolatrice con tre campi che chiede nome, cognome, telefono, indirizzo ed eta' crea uno squilibrio che uccide la conversione. Non e' 'chiedi il minimo assoluto': un lead magnet piu' sostanzioso puo' legittimamente giustificare una richiesta piu' corposa, a patto di venderla nell'optin."
+  },
+  {
+   "id": "KA-17",
+   "source": "j4UInmM9kKA#00:19:40",
+   "frame": "frame-616",
+   "category": "Regola 5 / L'optin va trattata come una sales page",
+   "section": "S11",
+   "tags": [
+    "regola",
+    "optin",
+    "sales-page",
+    "vincolo-a-monte"
+   ],
+   "atom": "Regola 5: la pagina di opt-in va scritta con lo stesso impegno di una sales page vera (anche mille parole), non come un form minimale dato per scontato, perche' si sta chiedendo a uno sconosciuto di cedere informazioni private, operazione che richiede persuasione quanto una vendita. Corollario strutturale esplicito: l'optin viene PRIMA della sales page nel funnel, quindi se l'optin e' rotta la sales page non riceve mai traffico sufficiente e non puo' compensare a valle, per quanto sia scritta bene. Investi nell'optin tanto quanto investiresti nella sales page."
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+  "lesson_number": 7,
+  "section": "AI - Le basi",
+  "title": "Lezione 7 - Diversi tipi di contesto",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-7-diversi-tipi-di-contesto-2xbzj",
+  "slug": "lezione-7-diversi-tipi-di-contesto-2xbzj",
+  "vimeo_id": "1174247298",
+  "durata_secondi": 390,
+  "tipo": "TEORIA",
+  "tipo_motivazione": "Confermato con 7 frame campione: talking-head + whiteboard Excalidraw illustrativo (numeri obiettivi, 'contesto tecnico' scritto), nessun tool operativo mostrato (no software demo, no click-through). Coerente con la convenzione gia' usata per lezione 3 (whiteboard=teoria, non pratica).",
+  "risorse": {
+    "trascrizione_md": {"presente": true, "file_locale": "resources/trascrizione.md"},
+    "pdf_vision_aps": {"file_locale": "resources/vision-aps.pdf", "nota": "documento reale 46MB - probabile vision aziendale interna di Andrei Pascu usata come esempio di contesto 'vision' menzionato nel testo"},
+    "pdf_lista_tipi_contesto": {"file_locale": "resources/lista-tipi-contesto.pdf"},
+    "workflow_citati": [
+      "Workflow 1 - Come costruire un contesto completo per Claude",
+      "Workflow 2 - Come farsi organizzare la settimana da Claude"
+    ],
+    "link_utili": ["https://claude.ai", "https://chatgpt.com", "https://www.json.org/json-it.html", "https://www.markdownguide.org"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

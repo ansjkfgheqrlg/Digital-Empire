@@ -1,0 +1,24 @@
+{
+  "lesson_number": "Bonus 6",
+  "section": "Lezioni BONUS",
+  "title": "Bonus 6 - Automatizzare processi con skills",
+  "url": "https://www.andrei-copy.com/cs2online/bonus-6--346en",
+  "slug": "bonus-6--346en",
+  "vimeo_id": "1178259409",
+  "vimeo_embed": "https://player.vimeo.com/video/1178259409?app_id=122963",
+  "durata_secondi": 1236,
+  "tipo": "PRATICA",
+  "tipo_motivazione": "ULTIMA lezione del run cs2online, lezione capstone. Confermata con 28 frame (14 scan 90s + 14 dense). Demo end-to-end completa: draw.io flowchart processo acquisizione/onboarding cliente con icone AI sugli step automatizzabili, Obsidian SKILL.md reale e leggibile per intero (skill 'sviluppo-preventivo'), file struttura-preventivo.md, generazione preventivo via Claude con parametro 'effort max' sullo step di validazione.",
+  "video_scaricato": "video/bonus-06.mp4 (412MB, 20:36 min)",
+  "risorse": {
+    "trascrizione_md": {"presente": false},
+    "workflow_citati": [
+      "Workflow 1 - Documentare un processo con un diagram maker",
+      "Workflow 2 - Processo di acquisizione e onboarding clienti",
+      "Workflow 3 - Creare una skill in Obsidian per automatizzare lo sviluppo di un preventivo"
+    ],
+    "link_utili": ["https://claude.ai", "https://obsidian.md", "https://www.markdownguide.org", "https://wisprflow.ai/", "https://app.diagrams.net", "https://miro.com"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership, ULTIMA lezione BONUS (6/6)"
+}

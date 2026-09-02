@@ -1,0 +1,28 @@
+{
+  "lesson_number": 13,
+  "section": "AI - per copywriting",
+  "title": "Lezione 13 - Come faccio in ricerca di copywriting con l'AI",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-13-come-faccio-in-ricerca-di-copywriting-con-lai-ryx39",
+  "slug": "lezione-13-come-faccio-in-ricerca-di-copywriting-con-lai-ryx39",
+  "vimeo_id": "1171986942",
+  "vimeo_embed": "https://player.vimeo.com/video/1171986942?app_id=122963",
+  "durata_secondi": 1634,
+  "tipo": "PRATICA",
+  "tipo_motivazione": "Video confermato con visione diretta (38 frame: 28 scan a 60s + 19 dense mirati). Demo end-to-end reale con cliente vero (Simone Ferretti / SoundBox Studio): ClickUp client-overview doc, trascrizione call Gemini, CRM profilo cliente, setup Project Claude, setup Space Perplexity, ricerca in parallelo Claude+Perplexity con prompt identico mostrato, editing MarkEdit del documento finale con citazioni scientifiche.",
+  "video_scaricato": "video/lezione-13.mp4 (601MB, 27:14 min)",
+  "risorse": {
+    "trascrizione_md": {"presente": false, "nota": "nessuna risorsa Drive allegata - contenuto ricostruito da panoramica ufficiale + Cosa hai imparato (18 bullet) + frame video"},
+    "workflow_citati": [
+      "Workflow 1 - Processo completo: da cliente chiuso a ricerca di copywriting pronta",
+      "Workflow 2 - Setup di un Project su Claude per un cliente",
+      "Workflow 3 - Setup di uno Space su Perplexity per un cliente",
+      "Workflow 4 - Editing manuale del documento di ricerca generato dall'AI",
+      "Workflow 5 - Struttura del prompt di ricerca di copywriting",
+      "Workflow 6 - Conversione documenti in Markdown per contesto AI",
+      "Workflow 7 - Trascrizione e riassunto chiamate con Gemini per creare contesto"
+    ],
+    "link_utili": ["https://www.perplexity.ai/", "https://claude.ai", "https://github.com/MarkEdit-app/MarkEdit", "https://workspace.google.com/", "https://meet.google.com/", "https://gemini.google.com/", "https://chatgpt.com/", "https://www.youtube.com/"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

@@ -192,3 +192,17 @@ scripts/.emperator_hook.log
 
 # Cache locale strumenti. Non fa parte della storia del repo.
 .cache-tools/
+
+# Nome riservato Windows: git non puo indicizzarlo
+nul
+**/nul
+
+# Frame estratti da Empire Studio: artefatti rigenerabili (yt_ingest + estrazione a 2s).
+# 12.747 file, 2,4 GB. Restano su disco, fuori dal repo.
+**/frames/frame-*.png
+# Binario di build, 72 MB
+.claude/skills/workflow-pubblicazione-auto/DE_Publisher.exe
+# Risorsa PDF del corso, 46 MB: resta in locale
+.claude/skills/empire-studio/runs/andrei-pascu-cs2online-001/lessons/lezione-07/resources/vision-aps.pdf
+# GIF demo del plugin ruflo, 5,3 MB: asset di documentazione, non sorgente
+.claude/skills/ruflo/ruflo-plugins.gif

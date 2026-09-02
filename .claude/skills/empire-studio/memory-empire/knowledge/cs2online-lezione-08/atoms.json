@@ -1,0 +1,14 @@
+{
+  "lesson_id": "cs2online-lezione-08",
+  "corso": "Claude Speedrun 2",
+  "total_atoms": 7,
+  "atoms": [
+    {"id":"KA-01","source":"cs2online-lezione-08#trascrizione","category":"Principio / expertise input vs output","tags":["input","expertise"],"atom":"Riformulazione del principio 'expertise per giudicare l'AI': non serve essere esperti solo per giudicare l'OUTPUT, serve esserlo per costruire un buon INPUT - se correggi sempre l'output, l'uso dell'AI perde senso."},
+    {"id":"KA-02","source":"cs2online-lezione-08#trascrizione","category":"Definizione / context engineering","tags":["context-engineering","prompt-engineering"],"atom":"Definizione operativa di context engineering: concentrarsi nel costruire le informazioni contestuali che accompagnano il messaggio, per permettere all'AI di prendere decisioni migliori - distinto dal prompt engineering (2022-2023), focalizzato solo sul testo della richiesta."},
+    {"id":"KA-03","source":"cs2online-lezione-08#cosa-hai-imparato","category":"Principio / quantita' contesto","tags":["no-limite-superiore"],"atom":"Principio 'non esiste troppo contesto': piu' informazioni contestuali dai, migliore e' l'output - nessun limite superiore dichiarato."},
+    {"id":"KA-04","source":"cs2online-lezione-08#trascrizione+cosa-hai-imparato","category":"Responsabilita' utente","tags":["no-investigazione-ai"],"atom":"L'AI non e' progettata per investigare attivamente sull'utente - e' programmata per rispondere subito. La responsabilita' di fornire il contesto e' sempre dell'utente, mai dell'AI."},
+    {"id":"KA-05","source":"cs2online-lezione-08#cosa-hai-imparato","category":"Limite feature memory","tags":["memory","non-sostituisce-contesto"],"atom":"La memory delle chat passate (feature nativa Claude) NON sostituisce un buon contesto esplicito - 'non puoi affidarti al fatto che l'AI si ricordi cose dette prima'."},
+    {"id":"KA-06","source":"cs2online-lezione-08#trascrizione","category":"Aneddoto personale","tags":["dictation","prompt-informale"],"atom":"Aneddoto: i prompt dell'autore sono 'fatti in modo molto informale' via dictation vocale Mac (10 minuti di parlato) - il lavoro pesante lo fa il contesto pre-costruito, non la forma del prompt."},
+    {"id":"KA-07","source":"cs2online-lezione-08#trascrizione","category":"Contesto per tipo AI","tags":["multimodale"],"atom":"Il contesto varia per tipo di AI: documenti Markdown per LLM testuali; immagini stesse come contesto per generatori di immagini (es. Flux)."}
+  ]
+}

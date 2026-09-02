@@ -1,0 +1,31 @@
+{
+  "video_id": "6ITBjfPQg3I",
+  "title": "scrittore professionale di PDF",
+  "channel": "Andrei Pascu",
+  "run": "andrei-pascu-001/cat1-copywriting",
+  "video_number": 29,
+  "category": "cat1-copywriting",
+  "duration_s": 4,
+  "duration_human": "0m04s",
+  "format": "static-talking-head-meme-caption",
+  "stage1_date": "2026-08-26",
+  "stage2_date": "2026-08-26",
+  "stage3_date": "2026-08-26",
+  "frames_total": 2,
+  "frames_interval_s": 2,
+  "frame_naming": "3-digit (frame-001 to frame-002)",
+  "frames_read_natively": 2,
+  "no_finto_status": "PASS",
+  "chapters": 0,
+  "subtitles": ["en"],
+  "knowledge_atoms": 2,
+  "visual_passages": 1,
+  "sections": 1,
+  "patterns": 1,
+  "key_topics": [
+    "Formato meme 'Poi:' payoff differito",
+    "Credibilita per accumulo di tempo investito"
+  ],
+  "brands_analyzed": [],
+  "processing_notes": "Video piu' corto dell'intero run (4s, 2 frame identici). VTT senza contenuto vocale reale ('a' singolo carattere) - dichiarato esplicitamente. Contenuto quasi interamente nell'overlay testuale (formato meme 'Poi:'). Chiude cat1-copywriting a 29/29 (100%). Nessuna patch applicata - contenuto di personal branding minimo, coerente con la coda di reel brevi 25-29. Nessun problema tecnico Stage 1/2."
+}

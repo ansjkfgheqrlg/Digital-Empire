@@ -1,0 +1,22 @@
+{
+  "lesson_number": 3,
+  "section": "AI - Le basi",
+  "title": "Lezione 3 - Livelli di utilizzo dell'intelligenza artificiale",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-3-livelli-di-utilizzo-dellintelligenza-artificiale-srtyp",
+  "slug": "lezione-3-livelli-di-utilizzo-dellintelligenza-artificiale-srtyp",
+  "vimeo_id": "1172370851",
+  "vimeo_embed": "https://player.vimeo.com/video/1172370851?app_id=122963",
+  "tipo": "TEORIA",
+  "tipo_motivazione": "Framework di autovalutazione (10 livelli) con esempi citati a voce, non dimostrazione UI passo-passo.",
+  "risorse": {
+    "trascrizione_md": {"presente": false},
+    "pdf": {"titolo": "Come organizzare le cartelle per contesto sul proprio computer", "file_locale": "resources/organizzare-cartelle-contesto.pdf", "pagine": 2, "fonte": "https://drive.google.com/file/d/1W53iOew1xnjMA-HPEUtoVxpMbLAWvL3T/view"},
+    "immagini": [
+      {"file_locale": "resources/schema-livelli-1.png", "fonte": "https://drive.google.com/file/d/1tykBtM0vNy4OSAOczGPUeQJKHEon3QU7/view"},
+      {"file_locale": "resources/schema-livelli-2.png", "fonte": "https://drive.google.com/file/d/1bFUwVfxOVTLqraJlK4b5tUHg3xetXH3q/view"}
+    ],
+    "link_utili": ["https://chat.openai.com", "https://claude.ai", "https://sora.com", "https://zapier.com", "https://linkedin.com", "https://platform.openai.com", "https://docs.anthropic.com/en/api/getting-started", "https://openai.com", "https://anthropic.com", "https://x.ai", "https://deepmind.google", "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect"]
+  },
+  "data_ingestion": "2026-08-27",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

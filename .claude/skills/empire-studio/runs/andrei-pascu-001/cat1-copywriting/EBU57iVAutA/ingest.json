@@ -1,0 +1,38 @@
+{
+  "kind": "single-video",
+  "id": "EBU57iVAutA",
+  "title": "Se scrivi QUESTO nel tuo preventivo NON venderai",
+  "url": "https://www.youtube.com/watch?v=EBU57iVAutA",
+  "duration_sec": 526,
+  "uploader": "Andrei Pascu",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Il potere del preventivo"
+    },
+    {
+      "start": 68,
+      "title": "Il preventivo sbagliato"
+    },
+    {
+      "start": 109,
+      "title": "Il preventivo buono: struttura"
+    },
+    {
+      "start": 201,
+      "title": "Partita Iva"
+    },
+    {
+      "start": 321,
+      "title": "Regole per un buon preventivo"
+    }
+  ],
+  "subs": [
+    "runs\\andrei-pascu-001\\cat1-copywriting\\EBU57iVAutA\\EBU57iVAutA.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\andrei-pascu-001\\cat1-copywriting\\EBU57iVAutA\\EBU57iVAutA.webp"
+  ],
+  "ingested_at": "2026-08-26T01:03:52",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=EBU57iVAutA"
+}

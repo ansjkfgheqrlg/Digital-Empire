@@ -1,0 +1,40 @@
+{
+  "video_id": "-a0uuA1lbSI",
+  "title": "L'importanza di avere una buona landing",
+  "channel": "Andrei Pascu",
+  "run": "andrei-pascu-001/cat2-marketing",
+  "video_number": 5,
+  "category": "cat2-marketing",
+  "duration_s": 51,
+  "duration_human": "51s",
+  "format": "reel-verticale-due-tracce-con-metafora-fisica-sul-tavolo",
+  "stage1_date": "2026-09-01",
+  "stage2_date": "2026-09-01",
+  "stage3_date": "2026-09-01",
+  "stageC_date": "2026-09-01",
+  "frames_total": 26,
+  "frames_interval_s": 2,
+  "frame_naming": "3-digit (frame-001 to frame-026)",
+  "frames_read_natively": 26,
+  "coverage": "100%",
+  "no_finto_status": "PASS",
+  "chapters": 0,
+  "subtitles": [
+    "it"
+  ],
+  "knowledge_atoms": 7,
+  "visual_passages": 26,
+  "sections": 4,
+  "patterns": 4,
+  "key_topics": [
+    "30K views senza destinazione = views non monetizzabili",
+    "Tensione strutturale: spiegare cosa fai dentro i contenuti abbassa le views",
+    "La landing sposta la spiegazione fuori dal canale social",
+    "Struttura minima a 5 blocchi: chi sei, cosa fai, per chi, modulo contatto, pagamento diretto (opz.)",
+    "Volume x tasso: la landing intercetta una frazione del traffico",
+    "Divisione dei compiti: il content fa reach + un solo CTA al link in bio, la landing fa spiegazione + conversione",
+    "Metafora fisica come tecnica di short-form (capsule = views, piattino = landing)"
+  ],
+  "incongruenza_riportata": "Andrei apre citando 30.000 views e poi dice 'alcune di quelle 10.000 persone' senza correggersi. Riportato fedelmente, non normalizzato.",
+  "processing_notes": "Video corto: coverage frame 100% (26/26), nessun campionamento - stesso trattamento del video 2 cat2 (hnPa2zspu3k, 33s, 17/17). Pipeline Stage 1-5 + Memory Empire C-H eseguiti nella stessa sessione, senza gap."
+}

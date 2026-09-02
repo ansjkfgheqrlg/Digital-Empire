@@ -1,0 +1,231 @@
+{
+  "video_id": "IWCHN_mE2Vo",
+  "total_atoms": 25,
+  "atoms": [
+    {
+      "id": "KA-01",
+      "source": "IWCHN_mE2Vo#00:04:25",
+      "frame": "frame-0160",
+      "category": "Tool / Competitive Research",
+      "section": "S2",
+      "tags": ["meta-ads-library", "competitive-research", "tool-gratuito", "italia"],
+      "atom": "Meta Ads Library e gratuito e mostra TUTTE le ads attive su Meta technologies. Andrei: 'strumento fantastico che e assurdo il fatto che nessuno ne parli in Italia — solo questo dovresti essere licenziato e fallire' se non lo usi."
+    },
+    {
+      "id": "KA-02",
+      "source": "IWCHN_mE2Vo#00:04:50",
+      "frame": "frame-0160",
+      "category": "Tool / Feature",
+      "section": "S2",
+      "tags": ["saved-searches", "monitoring", "ads-library", "workflow"],
+      "atom": "Saved Searches = salva combinazioni di ricerca (paese + categoria + keyword) per monitoraggio competitivo rapido e sistematico senza rifare la ricerca ogni volta."
+    },
+    {
+      "id": "KA-03",
+      "source": "IWCHN_mE2Vo#00:05:00",
+      "frame": "frame-0160",
+      "category": "Tool / Coverage",
+      "section": "S2",
+      "tags": ["ads-library", "eu-law", "7-anni", "trasparenza"],
+      "atom": "Ad Library coverage: (1) tutte le ads attive su Meta, (2) ads su social/elections ultimi 7 anni, (3) qualsiasi ad mostrata in EU nell'ultimo anno. EU = massima trasparenza imposta per legge."
+    },
+    {
+      "id": "KA-04",
+      "source": "IWCHN_mE2Vo#00:08:19",
+      "frame": "frame-0240",
+      "category": "Tool / Search Technique",
+      "section": "S2",
+      "tags": ["multi-keyword", "search", "50-parole", "targeting-research"],
+      "atom": "Multi-keyword search: inserisci fino a 50 parole diverse simultaneamente (es: tastiera, mouse Pad, keycaps, case, cuffie, luci RGB, gaming) per trovare ads che contengono almeno uno di quei termini. Piu keywords = meno risultati ma piu mirati."
+    },
+    {
+      "id": "KA-05",
+      "source": "IWCHN_mE2Vo#00:08:48",
+      "frame": "frame-0240",
+      "category": "Tool / Search Technique",
+      "section": "S2",
+      "tags": ["filtri", "mercato-vasto", "nicchia", "gaming"],
+      "atom": "Quando il mercato e vasto (es: gaming), usare i filtri e critico. Con un solo keyword si trovano migliaia di ads; con multi-keyword di nicchia si trovano le ads 'generalmente fatte un po' meglio' perche piu specifiche."
+    },
+    {
+      "id": "KA-06",
+      "source": "IWCHN_mE2Vo#00:12:07",
+      "frame": "frame-0380",
+      "category": "Strategia / Ad Format",
+      "section": "S3",
+      "tags": ["video-ads", "photo-ads", "conversion", "retargeting", "format"],
+      "atom": "Regola empirica Andrei: 'Le ADS video sono quelle che convertono. Le ad foto sono retargeting forse un annuncio veloce. Le foto non funzionano bene per la maggior parte delle categorie.' Filtra sempre per Media Type: Videos per trovare ads di conversione."
+    },
+    {
+      "id": "KA-07",
+      "source": "IWCHN_mE2Vo#00:12:39",
+      "frame": "frame-0380",
+      "category": "Tool / Filter",
+      "section": "S3",
+      "tags": ["inactive-ads", "ads-library", "research", "cosa-ha-funzionato"],
+      "atom": "Filtro Inactive ads = ads non piu in esecuzione = ads che brand ha testato e poi stoppato. Studio delle inactive rivela cosa non ha funzionato e per inferenza cosa ha funzionato meglio rispetto alle active."
+    },
+    {
+      "id": "KA-08",
+      "source": "IWCHN_mE2Vo#00:12:40",
+      "frame": "frame-0380",
+      "category": "Tool / Filter Stack",
+      "section": "S3",
+      "tags": ["filter-stack", "ricerca-competitiva", "98-risultati", "workflow"],
+      "atom": "Stack filtri ottimale: Paese + Platform (Instagram) + Active Status (Active) + Media Type (Videos) + Language (Italian) + Launch Date. Riduce da migliaia a ~98 risultati specifici e recenti. Gaming Italy con questo stack = 98 ads."
+    },
+    {
+      "id": "KA-09",
+      "source": "IWCHN_mE2Vo#00:12:44",
+      "frame": "frame-0380",
+      "category": "Pattern / Ad Analysis",
+      "section": "S3",
+      "tags": ["laurea-online", "consistenza", "pattern", "brand-professionale", "test"],
+      "atom": "Case Laurea Online: stesso brand con 3 versioni dello stesso ad (template viola gaming) tutte lanciate nello stesso periodo = brand che testa multiple creative sistematicamente. Questo pattern = brand professionalmente gestito vs template unico."
+    },
+    {
+      "id": "KA-10",
+      "source": "IWCHN_mE2Vo#00:18:21",
+      "frame": "frame-0615",
+      "category": "Tool / Intelligence",
+      "section": "S4",
+      "tags": ["eu-transparency", "targeting-intelligence", "age", "gender", "reach", "excluded-regions"],
+      "atom": "EU Ad Transparency (cliccando 'See ad details') rivela per ogni ad: (1) eta target esatta, (2) genere target, (3) regioni ESCLUSE dal targeting, (4) EU Reach = conti Meta unici che l'hanno vista. Strumento legale obbligatorio — intelligence gratuita per competitor."
+    },
+    {
+      "id": "KA-11",
+      "source": "IWCHN_mE2Vo#00:20:30",
+      "frame": "frame-0615",
+      "category": "Tool / Intelligence",
+      "section": "S4",
+      "tags": ["eu-reach", "budget-proxy", "1770", "25000", "spend-estimation"],
+      "atom": "EU Reach come proxy di budget: 'IN PIU TI REGALIAMO' Women 30-55 = Reach 1,770. Un ad con EU Reach 25,000 indica investimento significativamente maggiore. EU Reach non e impression — e conti unici esposti all'ad."
+    },
+    {
+      "id": "KA-12",
+      "source": "IWCHN_mE2Vo#00:20:30",
+      "frame": "frame-0615",
+      "category": "Strategia / Targeting",
+      "section": "S4",
+      "tags": ["geographic-exclusion", "toscana", "veneto", "distribuzione", "strategia"],
+      "atom": "Esclusione geografica nel targeting (rivelata da EU Transparency): i brand escludono deliberatamente province/regioni specifiche. Motivi possibili: distributori locali, franchising, evitare cannibale traffico fisico. Informazione preziosissima per capire strategia distributiva competitor."
+    },
+    {
+      "id": "KA-13",
+      "source": "IWCHN_mE2Vo#00:23:57",
+      "frame": "frame-0780",
+      "category": "Business / Freelance",
+      "section": "S5",
+      "tags": ["dan-lock", "gap", "finding-clients", "corso-copywriting", "acquisizione"],
+      "atom": "Dan Lock Gap: i grandi corsi di copywriting insegnano come scrivere ma NON come trovare clienti. 'Invia delle mail, fai queste cinque cose' = consiglio generico. Chi risolve ENTRAMBI (copy + acquisizione) ha vantaggio enorme nel mercato italiano."
+    },
+    {
+      "id": "KA-14",
+      "source": "IWCHN_mE2Vo#00:26:40",
+      "frame": "frame-0780",
+      "category": "Business / Opportunita",
+      "section": "S5",
+      "tags": ["imprenditori-italiani", "opportunita", "mercato", "copy-trasformazione"],
+      "atom": "Target primario per copywriter: imprenditori italiani 'che non sanno cosa fanno, non ne hanno idea ma sono pieni di soldi'. Proponi soluzione copy specifica → 'gli cambi l'esistenza praticamente'. Mercato ampio: Meta Advantage campaign accessibile a tutti ma copy scadente."
+    },
+    {
+      "id": "KA-15",
+      "source": "IWCHN_mE2Vo#00:26:53",
+      "frame": "frame-0780",
+      "category": "Business / Mercato",
+      "section": "S5",
+      "tags": ["advantage-campaign", "meta-automated", "noise", "differenziazione"],
+      "atom": "Advantage Flash Campaign (Meta automated) = chiunque puo fare ads. 'Lo fa chiunque cioè chiunque fa le ad quindi e un grande mercato.' Il copywriter si differenzia in un mare di ads automatizzate. Piu automation = piu valore della copy manuale esperta."
+    },
+    {
+      "id": "KA-16",
+      "source": "IWCHN_mE2Vo#00:30:24",
+      "frame": "frame-0900",
+      "category": "Critica / Fashion Copy",
+      "section": "S6",
+      "tags": ["carisma-shoes", "fashion", "brand-identity", "posizionamento", "video-moda"],
+      "atom": "Carisma Shoes: 'non ho posizionato quest'ad sembra che sia...' — ad fashion che non si identifica nel testo. Nel settore moda il video funziona 'pero non e il tipo di content che funziona piu' genericamente. Fashion video deve comunicare brand identity, non solo estetica."
+    },
+    {
+      "id": "KA-17",
+      "source": "IWCHN_mE2Vo#00:38:49",
+      "frame": "frame-1162",
+      "category": "Pattern / Ad Template",
+      "section": "S6",
+      "tags": ["template-ads", "palestra", "smc", "opportunita-vendita", "detection"],
+      "atom": "Template Ads Detection: molti SMB (specialmente palestre) prendono un template, inseriscono video proprio, usano stessa copy structure. 'Hanno preso un template hanno messo il video' = individua business SENZA copywriter professionista = hot prospect per servizi copy."
+    },
+    {
+      "id": "KA-18",
+      "source": "IWCHN_mE2Vo#00:38:51",
+      "frame": "frame-1162",
+      "category": "Analisi / Ad Spend",
+      "section": "S6",
+      "tags": ["eu-reach-25000", "budget-mismatch", "palestra", "margine-miglioramento"],
+      "atom": "EU Reach 25,000 per ad di palestra/settore locale = investimento significativo. Andrei: 'dovrebbero averci investito di piu'. Alto reach + bassa qualita copy = massimo margine di miglioramento per copywriter. Usa questo come argomento di vendita."
+    },
+    {
+      "id": "KA-19",
+      "source": "IWCHN_mE2Vo#00:38:44",
+      "frame": "frame-1162",
+      "category": "Pattern / A/B Test",
+      "section": "S6",
+      "tags": ["ab-test", "copy-invariante", "creative-test", "la-palestra", "maestro-lucio"],
+      "atom": "La Palestra ssd a rl: stesso testo in due versioni (Maestro Lucio Cuomo, stessa struttura 'aumentare forza resistenza dal 17 settembre') → A/B test sulla creative visuale, NON sulla copy. Brand non testa la copy = enorme opportunita di ottimizzazione."
+    },
+    {
+      "id": "KA-20",
+      "source": "IWCHN_mE2Vo#00:45:54",
+      "frame": "frame-1380",
+      "category": "Strategia / Email",
+      "section": "S7",
+      "tags": ["email-marketing", "ecommerce", "staple", "fondamentale"],
+      "atom": "Email marketing per e-commerce: 'dovrebbe essere staple'. Non opzionale — fondamentale. Brand e-commerce senza email marketing integrato = enorme opportunita di revenue non sfruttata. Andrei lo afferma come regola assoluta."
+    },
+    {
+      "id": "KA-21",
+      "source": "IWCHN_mE2Vo#00:35:39",
+      "frame": "frame-1063",
+      "category": "Lifestyle / Positioning",
+      "section": "S7",
+      "tags": ["digital-nomad", "location-independence", "copy-skill", "viaggio", "soldi"],
+      "atom": "Andrei posiziona copywriting come enabler di digital nomad freedom: 'io faccio soldi mentre viaggio' e 'poterlo fare senza dover costantemente refreshare il conto in banca'. Copy skill = location independence. Narrazione che attrae giovani nel target corso cm5."
+    },
+    {
+      "id": "KA-22",
+      "source": "IWCHN_mE2Vo#00:52:50",
+      "frame": "frame-1578",
+      "category": "Critica / Creative Approach",
+      "section": "S8",
+      "tags": ["costume-creativo", "chiarezza", "creativita", "melone", "comprensibile"],
+      "atom": "Brand meloni: uomo in costume regale al supermercato = shock value. 'E sicuramente molto meglio che fare una immagine pero grande grande danno che non si capisca nulla nel video.' Regola: CREATIVITA != CHIAREZZA. Ad memorabile ma incomprensibile NON converte."
+    },
+    {
+      "id": "KA-23",
+      "source": "IWCHN_mE2Vo#00:52:48",
+      "frame": "frame-1578",
+      "category": "Copy / Prodotto",
+      "section": "S8",
+      "tags": ["melone", "benefit-driven", "salute", "licopene", "food-copy"],
+      "atom": "Melone brand: copy educativa sui benefici ('ricco di sodio potassio, licopene che aiuta previene le malattie cardiache'). Struttura: theatrical hook (costume regale) → benefici health → CTA. Per commodity agricole: differenziazione tramite origin story + benefici salute."
+    },
+    {
+      "id": "KA-24",
+      "source": "IWCHN_mE2Vo#00:58:47",
+      "frame": "frame-1762",
+      "category": "Copy / Food & Restaurant",
+      "section": "S8",
+      "tags": ["corte-cab", "ristorante", "food-copy", "vaniglia", "cinematic", "premium"],
+      "atom": "Ristorante Corte CAB: copy alta qualita — descrizione poetica piatti ('macaron al lampone cestino di frutta e sable alla mandorla'), video close-up 'VANIGLIA' cinematic. 'Questa e un'ottima strategia da considerare ragazzi' — naming ingredienti precisi + visual lusso = premium positioning."
+    },
+    {
+      "id": "KA-25",
+      "source": "IWCHN_mE2Vo#00:59:04",
+      "frame": "frame-1762",
+      "category": "Strategia / Settore",
+      "section": "S8",
+      "tags": ["food-restaurant", "asmr-visual", "impiattamento", "ingredienti", "lusso"],
+      "atom": "Strategia ottimale food/ristoranti: video ASMR-style con dettagli visivi di preparazione/impiattamento + testo ingredienti precisi. Non serve spiegare — basta mostrare in modo irresistibile. Contro-intuitivo rispetto alla copy testuale classica."
+    }
+  ]
+}

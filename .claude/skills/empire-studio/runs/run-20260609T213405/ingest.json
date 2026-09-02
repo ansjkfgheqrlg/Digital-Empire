@@ -1,0 +1,54 @@
+{
+  "kind": "single-video",
+  "id": "B4i1qV0LiMw",
+  "title": "Claude Design È PAZZESCO: Ti Insegno A Usarlo Bene",
+  "url": "https://www.youtube.com/watch?v=B4i1qV0LiMw",
+  "duration_sec": 1414,
+  "uploader": "Giovanni Beggiato",
+  "chapters": [
+    {
+      "start": 0.0,
+      "title": "Introduction"
+    },
+    {
+      "start": 107.0,
+      "title": "Claude Design Use Case (slides, carousels, landing page)"
+    },
+    {
+      "start": 283.0,
+      "title": "Step 1"
+    },
+    {
+      "start": 464.0,
+      "title": "How to build the Design System from scratch"
+    },
+    {
+      "start": 555.0,
+      "title": "Step 2"
+    },
+    {
+      "start": 740.0,
+      "title": "Step 3"
+    },
+    {
+      "start": 1014.0,
+      "title": "How to use Skill Creator"
+    },
+    {
+      "start": 1243.0,
+      "title": "End-to-end live demo"
+    },
+    {
+      "start": 1352.0,
+      "title": "Step 4"
+    }
+  ],
+  "subs": [
+    "runs\\run-20260609T213405\\B4i1qV0LiMw.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\run-20260609T213405\\B4i1qV0LiMw.webp"
+  ],
+  "ingested_at": "2026-06-09T21:34:10",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=B4i1qV0LiMw"
+}

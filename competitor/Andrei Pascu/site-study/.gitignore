@@ -1,0 +1,3 @@
+# Screenshot grezzi: 371 file, 76 MB. Restano su disco, fuori dal repo.
+# Rigenerabili con: python scripts/site_capture.py <url> --slug <nome>
+capture/**/*.png

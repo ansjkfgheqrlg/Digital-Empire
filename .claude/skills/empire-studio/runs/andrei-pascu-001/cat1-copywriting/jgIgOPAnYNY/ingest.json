@@ -1,0 +1,42 @@
+{
+  "kind": "single-video",
+  "id": "jgIgOPAnYNY",
+  "title": "Come diventare un copywriter - copywriting tutorial COMPLETO",
+  "url": "https://www.youtube.com/watch?v=jgIgOPAnYNY",
+  "duration_sec": 1221,
+  "uploader": "Andrei Pascu",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Introduzione"
+    },
+    {
+      "start": 79,
+      "title": "Fasi di scrittura del copy"
+    },
+    {
+      "start": 91,
+      "title": "Briefing del copywriter"
+    },
+    {
+      "start": 563,
+      "title": "Ricerca per scrivere copy"
+    },
+    {
+      "start": 907,
+      "title": "Come scrivere copy (formula APSOC)"
+    },
+    {
+      "start": 1134,
+      "title": "Revisione del copy"
+    }
+  ],
+  "subs": [
+    "runs\\andrei-pascu-001\\cat1-copywriting\\jgIgOPAnYNY\\jgIgOPAnYNY.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\andrei-pascu-001\\cat1-copywriting\\jgIgOPAnYNY\\jgIgOPAnYNY.webp"
+  ],
+  "ingested_at": "2026-07-05T11:25:18",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=jgIgOPAnYNY"
+}

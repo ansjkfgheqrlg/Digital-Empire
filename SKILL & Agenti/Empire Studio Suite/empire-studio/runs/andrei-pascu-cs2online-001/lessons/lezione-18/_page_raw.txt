@@ -1,0 +1,110 @@
+Vorremmo usare cookie non essenziali per avere un tracking dei nostri risultati e utenti sul sito.
+
+Puoi accettare, oppure puoi usare questo sito solo con i cookie essenziali.
+
+Trovi più informazioni qui.
+
+Gestisci cookies
+Solo essenziali
+Accetta
+AI - Le basi
+9 lezioni
+Lezione 1 - Introduzione all'intelligenza artificiale
+Lezione 2 - Termini che devi sapere
+Lezione 3 - Livelli di utilizzo dell'intelligenza artificiale
+Lezione 4 - 3 tipi di lavoro
+Lezione 5 - Diversi tipi di task
+Lezione 6 - Cucinando il tuo contesto
+Lezione 7 - Diversi tipi di contesto
+Lezione 8 - Context engineering
+Lezione 9 - Come dare contesto alle AI
+AI - per produttività e freelance
+3 lezioni
+Lezione 10 - Cliente manda audio Claude fa revisioni
+Lezione 11 - Come organizzo la mia settimana con Claude
+Lezione 12 - Come fare preventivi con Claude
+AI - per copywriting
+4 lezioni
+Lezione 13 - Come faccio in ricerca di copywriting con l'AI
+Lezione 14 - Come usare la modalità co-work
+Lezione 15 - Questionario di ricerca di copywriting con l'AI
+Lezione 16 - Copy per primary text (ads) con Claude
+AI - per coding e simili
+7 lezioni
+Lezione 17 - Introduzione al vibe coding
+Lezione 18 - Diagrammi o flow chart
+Lezione 19 - Come fare caroselli con immagini hostate su imgur
+Lezione 20 - Come scrivo piccoli codici Google Sites
+Lezione 21 - Come creare codici integrati con Google Sheets
+Lezione 22 - Codice per dashboard pubblica
+Lezione 23 - Codici per pop-up semplici e complessi
+AI - altri utilizzi
+1 lezione
+Lezione 24- Come facciamo brand guidelines con Claude
+Lezioni BONUS
+6 lezioni
+Bonus 1 - Automatizzare processi
+Bonus 2 - Come facciamo advertising report per tenere cliente in loop
+Bonus 3 - Come collegare Claude a qualsiasi cosa
+Bonus 4 - Claude Skills
+Bonus 5 - Projects dentro co-work
+Bonus 6 - Automatizzare processi con skills
+CS2
+10 lezioni
+Lezione 1 - Terminal: perché?
+Lezione 2 - Introduzione agli API & MCP
+Lezione 3 - Claude - Github - Lovable | COME FARE
+Lezione 4 - Brain talk
+Lezione 5 - Come scrivo copy con l’AI [replicando il mio TOV]
+Lezione 6 - Le mie chiavi API preferite
+Lezione 7 - Come editare video con l'AI [pt. 1]
+Lezione 8 - Come editare video con l'AI [pt. 2]
+Lezione 9 - Come editare video con AI [pt. 3]
+Lezione 10 - Come calcolare se guadagni dall'AI
+AI - PER CODING E SIMILI
+Lezione 18 - Diagrammi o flow chart
+Panoramica
+
+In questa lezione impari a costruire diagrammi (flowchart) per comunicare processi a persone e macchine — Claude, automazioni, software. Parti dal concetto di trigger (cosa fa scattare un'azione: un evento, un orario, un click) e arrivi alle quattro forme base: terminator (inizio/fine), process (azione), decision (condizione sì/no che splitta il percorso), database (per iniettare dati o prompt nel flusso). Costruisci due esempi pratici: il flusso ordine di una barista e un'automazione di assistenza clienti con AI. Risultato: sai tradurre un processo in un diagramma chiaro da dare a Claude o a qualsiasi tool.
+
+Cosa hai imparato
+
+Come funziona il concetto di trigger → azione: un evento scatena un processo (es. "io urlo, tu ti spaventi")
+
+Tre tipi di trigger nelle automazioni: evento esterno (es. lavoro finito), orario ricorrente (es. ogni giorno alle 13), azione dell'utente (es. click su un pulsante)
+
+Come collegare un singolo trigger a più azioni in sequenza (es. click → apri pagina → aspetta 3 secondi → invia mail)
+
+Cos'è un diagramma e a cosa serve: rappresentazione visuale di un processo, usato per comunicare con persone e con le macchine (AI, software, automazioni)
+
+Perché conviene fare un diagramma invece di spiegare a parole: quando il processo è complesso, un grafico è più chiaro di una descrizione scritta
+
+Usare Excalidraw e Miro come tool per creare diagrammi
+
+Le tre forme base di un diagramma: terminator (ovale, inizio/fine processo), process (rettangolo, un'azione), decision (rombo, condizione con più output)
+
+Come costruire un diagramma step by step: partire dal trigger, aggiungere azioni, inserire condizioni con sì/no, far convergere i path alla fine
+
+Esempio pratico completo: diagramma per una barista che riceve un ordine → prepara il caffè → decide asporto o tavolo → azione diversa per ogni caso → step finale comune
+
+Come usare la forma "database" per iniettare dati o informazioni dentro un processo (es. un prompt custom, un context window aziendale)
+
+Esempio pratico di automazione reale: gestione ticket di assistenza con AI — il cliente chatta con un assistente AI che usa un prompt custom, se il problema si risolve si chiude il ticket, altrimenti si passa a un umano
+
+Come esportare un diagramma in PDF e mandarlo a Claude per fargli costruire il processo (automazione, codice, app)
+
+Workflows
+Workflow 1 - Come creare un diagramma di processo con le forme corrette
+Workflow 2 - Come costruire un diagramma per un'automazione di assistenza clienti AI
+Workflow 3 - Come comunicare un processo complesso a Claude usando un diagramma
+Link utili
+
+Excalidraw — https://excalidraw.com Lavagna digitale gratuita per disegnare diagrammi con stile "hand-drawn". Andrei la usa brevemente prima di passare a Miro.
+
+Miro — https://miro.com Piattaforma di collaborazione visiva per diagrammi e flowchart. È lo strumento principale usato da Andrei e dalla sua azienda per creare diagrammi.
+
+Claude (citato come "Cloud") — https://claude.ai Assistente AI di Anthropic. Menzionato come esempio di AI a cui inviare diagrammi esportati in PDF e come base per costruire assistenti AI per ticket di assistenza.
+
+OpenAI — https://openai.com Menzionato di sfuggita come alternativa a Claude per costruire un assistente AI ("fatto con Cloud, con OpenAI o whatever").
+
+Completa e continua

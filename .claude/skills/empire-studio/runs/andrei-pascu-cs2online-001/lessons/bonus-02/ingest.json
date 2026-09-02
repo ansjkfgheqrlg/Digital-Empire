@@ -1,0 +1,24 @@
+{
+  "lesson_number": "Bonus 2",
+  "section": "Lezioni BONUS",
+  "title": "Bonus 2 - Come facciamo advertising report per tenere cliente in loop",
+  "url": "https://www.andrei-copy.com/cs2online/bonus-2-come-facciamo-advertising-report-per-tenere-cliente-in-loop-7j6dx",
+  "slug": "bonus-2-come-facciamo-advertising-report-per-tenere-cliente-in-loop-7j6dx",
+  "vimeo_id": "1178254593",
+  "vimeo_embed": "https://player.vimeo.com/video/1178254593?app_id=122963",
+  "durata_secondi": 917,
+  "tipo": "PRATICA",
+  "tipo_motivazione": "Confermato con 16 scan + 9 dense = 25 frame. Workflow end-to-end reale: whiteboard concettuale, Obsidian per contesto/istruzioni, GitHub per brand guidelines JSON, Claude Cowork con validazione dati + generazione PDF via reportlab (Python), PDF finale a 7 pagine 'AP SALES - Advertising Report' verificato.",
+  "video_scaricato": "video/bonus-02.mp4 (295MB, 15:17 min)",
+  "risorse": {
+    "trascrizione_md": {"presente": false},
+    "workflow_citati": [
+      "Workflow 1 - Creare il sistema di Advertising Report da zero",
+      "Workflow 2 - Generare un Advertising Report con Claude Cowork",
+      "Workflow 3 - Riutilizzare il sistema per i report successivi"
+    ],
+    "link_utili": ["https://claude.ai", "https://obsidian.md", "https://github.com", "https://gemini.google.com"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

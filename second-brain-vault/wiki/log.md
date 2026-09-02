@@ -1072,3 +1072,26 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   gradini, video 4 (Regola 5) il terzo, video 2 aveva gia' stabilito che l'ordine e' un vincolo
   strutturale. Se cat2 la conferma ancora, vale un ADR + pagina wiki di framework.
 - WATCH-001: 34 video Andrei = 34 cartelle `memory-empire/knowledge/` -> MATCH.
+
+## 2026-09-02
+- STUDIO COMPETITOR (nuovo reparto): avviato lo **studio forense dei siti di Andrei Pascu** su ordine di
+  Max — grafica, colori con hex esatti, tipografia misurata, posizione elementi, teardown del copy
+  sezione per sezione col perche'. Cartella `competitor/Andrei Pascu/site-study/`.
+- CATTURATE 9 pagine su 9: andrei-copy.com (hub), /funnel-operator, /outheadline, /outfunnel, /copy,
+  /manuale-del-copywriter, claude-speedrun.com, apsales.eu, linktr.ee/andrei.bsns.
+  **371 screenshot** desktop+mobile, **1.832 blocchi di copy** estratti dal DOM con colore, font,
+  dimensione, peso e posizione y di ognuno. Strumento nuovo e riusabile: `scripts/site_capture.py`.
+- REPORT SCRITTI: **6 su 9** — 01 hub, 02 funnel-operator (434 EUR), 03 outheadline (98 EUR),
+  04 outfunnel, 05 copy/Mentorship (349-999 EUR), 07 claude-speedrun (249 EUR).
+  Mancano 06 manuale, 08 apsales, 09 linktree: materiale grezzo gia' pronto.
+- 🔴 SCOPERTA: **claude-speedrun.com e' un concorrente diretto di Claude Code Mastery** e usa
+  **`#fb4604` + font Onest**, cioe' esattamente il design system che `empire-premium-style/SKILL.md`
+  dichiara per `ccm-premium`. Corso su Claude per marketer italiani, 249 EUR, v2, 21 lezioni +
+  6 bonus, rilascio giornaliero, sezione "Skills", 4,9/5 su 14 recensioni verificate.
+  **Chi sia arrivato prima non e' stato misurato**: servono le date (Wayback). Tre azioni per Max
+  nel checkpoint CP-20260902-001.
+- SCOPERTE DI SISTEMA: un prodotto = una pelle cromatica dentro griglia comune (blu istituzionale,
+  rosso/verde, teal, giallo-ambra, arancione), col blu `#0062ff` come colore costante dell'azione;
+  la lunghezza del copy e' funzione del prezzo; nessuna garanzia di rimborso su nessuna pagina;
+  piu' la pagina e' lunga piu' grassetta (dal 13% all'80% del corpo); incoerenza numerica diffusa
+  sulla prova sociale (sei cifre per tre metriche).

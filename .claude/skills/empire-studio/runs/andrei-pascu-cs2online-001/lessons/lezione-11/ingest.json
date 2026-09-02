@@ -1,0 +1,24 @@
+{
+  "lesson_number": 11,
+  "section": "AI - per produttivita e freelance",
+  "title": "Lezione 11 - Come organizzo la mia settimana con Claude",
+  "url": "https://www.andrei-copy.com/cs2online/lezione-11-come-organizzo-la-mia-settimana-con-claude-5982m",
+  "slug": "lezione-11-come-organizzo-la-mia-settimana-con-claude-5982m",
+  "vimeo_id": "1171993545",
+  "durata_secondi": 584,
+  "tipo": "PRATICA",
+  "tipo_motivazione": "Confermato con 10 frame: Google Calendar reale (settimana con eventi veri), brain dump markdown reale (7 task personali), output finale 'WEEK 1 - OPERATIONAL PLAN' con tabella oraria.",
+  "risorse": {
+    "trascrizione_md": {"presente": false},
+    "workflow_citati": [
+      "Workflow 1 - Preparare il calendario settimanale su Google Calendar",
+      "Workflow 2 - Creare il brain dump dei task settimanali",
+      "Workflow 3 - Aggiornare il documento della settimana precedente con ciò che hai completato",
+      "Workflow 4 - Generare il piano settimanale completo con Claude",
+      "Workflow 5 - Strutturare i quattro livelli di contesto per Claude"
+    ],
+    "link_utili": ["https://claude.ai", "https://workspace.google.com", "https://calendar.google.com", "https://support.google.com/calendar/answer/37111", "https://github.com/MarkEdit-app/MarkEdit", "https://chat.openai.com", "https://www.markdownguide.org"]
+  },
+  "data_ingestion": "2026-08-29",
+  "pipeline": "Empire Studio Suite - adattamento corso membership"
+}

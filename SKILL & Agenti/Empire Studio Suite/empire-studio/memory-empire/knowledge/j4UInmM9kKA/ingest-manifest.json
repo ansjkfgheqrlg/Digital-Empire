@@ -1,0 +1,55 @@
+{
+  "video_id": "j4UInmM9kKA",
+  "title": "Usa questi 10 lead magnet per generare contatti (senza spendere 1€)",
+  "channel": "Andrei Pascu",
+  "run": "andrei-pascu-001/cat2-marketing",
+  "video_number": 4,
+  "category": "cat2-marketing",
+  "duration_s": 1232,
+  "duration_human": "20m32s",
+  "format": "talking-head-listicle-con-separatori-numerici-animati",
+  "stage1_date": "2026-08-26",
+  "stage2_date": "2026-08-26",
+  "stage3_date": "2026-08-26",
+  "stageC_date": "2026-09-01",
+  "frames_total": 616,
+  "frames_interval_s": 2,
+  "frame_naming": "3-digit (frame-001 to frame-616)",
+  "frames_read_natively": 11,
+  "no_finto_status": "PASS",
+  "chapters": 10,
+  "subtitles": [
+    "it"
+  ],
+  "knowledge_atoms": 17,
+  "visual_passages": 11,
+  "sections": 11,
+  "patterns": 5,
+  "key_topics": [
+    "10 format di lead magnet operativi con esempi per settore",
+    "Template Canva personalizzabili per il settore del cliente",
+    "Challenge a step 7/14 giorni (anche come trip wire a pagamento)",
+    "Calcolatrice custom generata con AI (Claude/ChatGPT/Gemini)",
+    "Webinar strutturato a slide rapide (~400 slide) vs webinar mediocre",
+    "Swipe file come dimostrazione di competenza",
+    "Ciclo del rinforzo: problema + convinzione + fiducia",
+    "Ebook = checklist/cheat sheet breve, mai libro lungo",
+    "GPT/agent custom distribuito su WhatsApp per azzerare l'attrito",
+    "Quiz con punteggio e risposta segmentata a 3 livelli",
+    "Source files di progetto (PSD, After Effects) per audience creative",
+    "Liste/raccolte curate con riscatto via keyword nei commenti",
+    "5 regole: valore reale, formato piu' intrattenente, informazione gratis + implementazione a pagamento, equilibrio dati richiesti, optin trattata come sales page"
+  ],
+  "numeri_reali_dichiarati": [
+    "~2000 follower + ~1000-2000 cartelle inviate in organico, €0 in ads (caso lead magnet #10)",
+    "3700 ordini sul sito in organico, €0 spesi in ads (dichiarato a supporto della Regola 2)",
+    "~400 slide in un singolo webinar (esempio di struttura corretta)",
+    "5-6 anni di esperienza marketing dichiarati come base delle regole"
+  ],
+  "fonti_esterne_citate": [
+    "Alex Hormozi (Regola 3: mostra l'informazione, vendi l'implementazione)",
+    "Motion Calendar (esempio di calcolatrice di risparmio come lead magnet)"
+  ],
+  "segmento_promozionale": "Digressione estesa (00:05:30-00:07:12) e chiusura sul corso proprio 'Funnel Operator' in prelancio — contenuto misto educativo/promozionale, dichiarato.",
+  "processing_notes": "Pipeline Empire Studio Stage 1-5 eseguita il 2026-08-26; Memory Empire Stage C-H NON eseguito allora (gap scoperto il 2026-09-01 in ripresa sessione, stesso pattern del mezzo-lavoro batch-2 gia' registrato nel MASTER-RUN-TRACKER). Chiuso oggi senza nuova visione: video-analysis.md esistente riusato integralmente, VTT ri-processato per intero con dedup riga-per-riga CON timestamp conservati (miglioria rispetto al video 3, dove i timestamp erano andati persi nel dedup). Frame ri-estratti (616/616, identici per conteggio a quelli del 26/08)."
+}
