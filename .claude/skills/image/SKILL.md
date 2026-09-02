@@ -92,6 +92,12 @@ Need volume at low cost?
 └── Flux Schnell, Gemini Flash, Stable Diffusion (self-hosted)
 ```
 
+### Visual Anchor — Style Consistency Across a Series
+
+When generating multiple images that must share one coherent look (a carousel, a multi-step tutorial, a slide deck) — not just "on-brand" but genuinely consistent frame-to-frame — the same principle behind multi-image reference has an operational refinement worth naming explicitly: **generate the first image of the series extremely well, then pass that same image back in as the reference for every subsequent generation**, instead of requesting the whole series in one prompt. A single prompt asking for N images at once produces images that are each invented independently, with no awareness of each other — the result reads as inconsistent even when the brief and style direction are identical. Generating one image at a time, anchored to the first, keeps typography, color treatment, texture, and mood locked across the whole series (validated externally: `JdAQzAcWR6k` — Artem Novitckii, applied to Instagram carousels via ChatGPT Image, 0:41-1:29 — full reusable prompt templates for this pattern are in `carousel-empire/SKILL.md`, "Modalità Alternativa — Stile AI-Generativo con Visual Anchor").
+
+Works with any model that supports multi-image reference (Gemini/Nano Banana Pro, Flux — see Model Comparison above). Spend the most time getting the first image right — it defines the visual identity for everything that follows.
+
 ### Prompting Basics
 
 A strong image prompt follows: **Subject + Setting + Style + Lighting + Composition + Technical**

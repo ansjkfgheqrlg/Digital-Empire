@@ -12,6 +12,8 @@ description: "Crea o aggiorna il profilo ICP (Ideal Customer Profile) per una ni
 Definire o aggiornare il profilo ICP per una nicchia di mercato.
 L'ICP determina la soglia di qualifica dei lead: senza ICP chiaro, qualifier.py non sa cosa cercare.
 
+**Principio guida**: un'audience piccola e precisa batte una grande e generica — 92% di ICP match su 31.000 follower concentrati contro 2% su un'audience generica di 200.000. La metrica che conta non è la dimensione del pubblico/database, è la concentrazione di buyer reali al suo interno (fonte: -gq8euRvNR4 — Paolo Trivellato, 01:20-03:10).
+
 ## Input atteso
 
 - Nome nicchia (es: "dentisti privati nord Italia", "ecommerce moda <50 dipendenti")

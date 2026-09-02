@@ -202,6 +202,126 @@ Leggi ogni PNG generato con visione nativa. Checklist per ogni slide:
 
 ---
 
+## Modalità Alternativa — Stile AI-Generativo con Visual Anchor
+
+Il workflow sopra (Step 2-4) usa HTML + Playwright con template fisso: stessa identica composizione grafica ogni volta, cambia solo il testo. Deterministico e brand-safe — resta la modalità di **default** per il 90% dei casi. Per contenuti che richiedono uno stile illustrato/collage (texture, scarabocchi, asset grafici non riproducibili in HTML/CSS) esiste un secondo pattern, validato esternamente, da usare come ramo alternativo allo Step 2 solo su richiesta esplicita.
+
+### Il principio: slide-per-slide, non carosello intero
+
+I modelli di image gen (Gemini/Nano Banana, GPT Image) generano una sola immagine alla volta. Chiedere un carosello intero da 6-8 slide in un solo prompt produce slide incoerenti tra loro, ognuna "inventata da zero" senza consapevolezza delle altre. La soluzione: generare **una slide alla volta**, non l'intero carosello in un colpo solo (fonte: JdAQzAcWR6k — Artem Novitckii, 0:41-1:13).
+
+### Il Visual Anchor
+
+La **slide 1** (hook/cover), una volta generata bene, diventa l'**immagine di riferimento** (visual anchor) allegata a ogni prompt delle slide successive. Ogni nuova slide è vincolata a rispettarne tipografia, colori, texture e mood — è il passo a cui dedicare più tempo (50% del ciclo secondo la fonte), perché definisce lo stile dell'intero carosello (fonte: JdAQzAcWR6k — Artem Novitckii, 1:14-1:29).
+
+### I due prompt master (riusabili, con placeholder)
+
+**Prompt Slide 1 (hook/cover) — integrale:**
+```
+Create 5 different versions of slide 1 for an Instagram carousel.
+
+Use the attached references as visual inspiration only.
+
+Borrow from the references:
+- typography hierarchy
+- spacing
+- colour treatment
+- texture
+- visual pacing
+- layout logic
+
+Do not copy:
+- exact text
+- exact branding
+- exact compositions
+
+Carousel topic:
+[TOPIC]
+
+Slide type:
+Cover / hook slide.
+
+Slide goal:
+Stop the scroll and make people want to swipe.
+
+Text for slide 1:
+[INSERT TEXT HERE]
+
+Visual direction:
+[DESCRIBE WHAT SHOULD BE ON THE SLIDE]
+
+Style direction:
+Make it feel raw, editorial, clear, useful, and highly readable. It should
+feel designed, but not overly polished or corporate.
+
+Format:
+4:5 vertical Instagram carousel slide, 1080x1350.
+
+Rules:
+- keep the exact text only
+- make all text readable
+- do not add random words
+- do not copy the references directly
+- make each version visually distinct
+```
+
+**Prompt Slide [X] (tutte le slide dalla 2 in poi, usa la Slide 1 come visual anchor) — integrale:**
+```
+Create 3 versions of a slide [x] of my Instagram carousel.
+
+Use slide 1 as the visual anchor.
+
+Match slide 1's:
+- typography feel
+- spacing
+- colour treatment
+- texture
+- raw editorial mood
+- utility details
+- visual hierarchy
+- overall design language
+
+Do not copy the references directly.
+Do not make this slide feel like a new carousel.
+It must feel like the same visual family as Slide 1.
+
+Carousel topic:
+[TOPIC]
+
+Slide type:
+[SLIDE TYPE]
+
+Slide goal:
+[SLIDE GOAL]
+
+Text on slide:
+[SLIDE TEXT]
+
+Visual direction:
+[DESCRIBE WHAT SHOULD BE ON THE SLIDE]
+
+Format:
+4:5 vertical Instagram carousel slide, 1080x1350.
+
+Rules:
+- keep the exact text only
+- make all text readable
+- do not add random words
+- keep it visually consistent with slide 1
+- one clear idea only
+```
+
+(fonte: JdAQzAcWR6k — Artem Novitckii, 3:34-4:28, prompt master integrali letti da Google Doc)
+
+### Quando usarlo e come
+
+- Genera ogni slide con 3-5 versioni e scegli manualmente la migliore ("pick the best of N") — non affidarti alla prima generazione.
+- Il blocco "Do not copy: exact text / exact branding / exact compositions" è disciplina anti-plagio quando usi un'immagine di terzi (es. Pinterest) come riferimento stilistico iniziale — mantienilo sempre nel prompt.
+- Applica comunque il Self-Check Visivo dello Step 5 a ogni slide generata con questo metodo, prima di procedere alla successiva.
+- Modello consigliato: quello con supporto multi-image reference più solido disponibile nella skill `image` (vedi `image/SKILL.md`, tabella "Model Comparison") — passa la slide 1 generata come immagine allegata ad ogni prompt successivo.
+
+---
+
 ## Esempi Contenuto per Prodotto
 
 ### Outreach Factory

@@ -1,0 +1,99 @@
+{
+  "video_id": "-gq8euRvNR4",
+  "title": "I grew my agency to $1.2M ARR using only LinkedIn.. (copy me)",
+  "channel": "Paolo Trivellato",
+  "url": "https://www.youtube.com/watch?v=-gq8euRvNR4",
+  "run": "max17-v04-trivellato",
+  "run_path": "empire-studio/runs/max17-v04-trivellato",
+  "category": "max17-linkedin-growth-system",
+  "duration_s": 1129,
+  "duration_human": "18m49s",
+  "language": "en",
+  "format": "talking-head in webcam over shared Miro board (\"Miro - Paolo\", view-only), tutto il contenuto operativo scritto sulla board",
+  "upload_date": "2026-07-17",
+  "view_count_at_ingest": 27316,
+  "like_count_at_ingest": 1214,
+  "ingested_at": "2026-09-02",
+  "stageC_date": "2026-09-02",
+  "frames": {
+    "total_dense": 565,
+    "interval_sec": 2.0,
+    "unique_scenes": 105,
+    "frames_read_natively": 105,
+    "all_read_native_vision": true,
+    "coverage_pct": 100,
+    "frames_skipped_below_threshold": 460,
+    "frames_unreadable": 0,
+    "frames_partially_unreadable": 5,
+    "no_finto_status": "PASS",
+    "note": "scene_detector.py, soglia 3.0. 105/105 frame unici guardati in ordine cronologico (dettaglio in coverage.md). 5 frame parzialmente illeggibili dichiarati (frame-018, frame-030/031, frame-034, frame-419, frame-476/477) — nessuno completamente illeggibile/nero/corrotto."
+  },
+  "transcript": {
+    "file": "-gq8euRvNR4.en.vtt",
+    "language": "en",
+    "kind": "auto-generated rolling captions",
+    "used_for": "conferma formulazione esatta di frasi pronunciate a voce e distinzione dati osservati-a-schermo vs dati solo-audio",
+    "all_lines_read": true,
+    "timestamps_preserved": true
+  },
+  "knowledge_atoms": 60,
+  "atoms_by_relevance": {"alta": 31, "media": 21, "bassa": 8},
+  "atoms_by_confidence": {"osservato": 60, "inferito": 0},
+  "output_files": {
+    "video_analysis": "empire-studio/runs/max17-v04-trivellato/video-analysis.md",
+    "coverage": "empire-studio/runs/max17-v04-trivellato/coverage.md",
+    "contenuto_integrale": "memory-empire/knowledge/-gq8euRvNR4/contenuto-integrale.md",
+    "atoms": "memory-empire/knowledge/-gq8euRvNR4/atoms.json",
+    "ingestion_log": "memory-empire/memory/ingestions/2026-09-02-paolo-trivellato-linkedin-agency.md",
+    "audit_log": "memory-empire/memory/audit/2026-09-02--gq8euRvNR4-stage-g.md"
+  },
+  "wiki_pages_created": [
+    "second-brain-vault/wiki/sources/Source_Paolo_Trivellato_LinkedIn_Agency_1M.md"
+  ],
+  "wiki_pages_updated": [
+    "second-brain-vault/wiki/index.md",
+    "second-brain-vault/wiki/log.md"
+  ],
+  "key_topics": [
+    "Sistema a 3 componenti che girano insieme: contenuto che attrae buyer (non follower), profilo come sales page, due meccanismi di conversione",
+    "Metrica 'buyer concentration' al posto del follower count: 92% ICP match su 31K follower vs 2% su un'audience generica di 200K",
+    "Due formati di contenuto validati: Named Problem Posts e Surfaced Problem Posts, con 'The One-Sentence Post Test' come gate di qualita'",
+    "Profilo LinkedIn ricostruito come landing page di vendita: tabella Mistake/Fix su headline, custom button, featured section",
+    "Meccanismo 1 - Lead Magnet Posts: commento + richiesta di connessione per ricevere una risorsa, 300-1.000 connessioni ICP qualificate per post",
+    "Meccanismo 2 - Profile View Outreach: chi visita ripetutamente il profilo e' un segnale di buying-intent, script esatto fornito parola per parola",
+    "Discrepanza dichiarata: tasso di risposta al Profile View Outreach 40-50% a schermo vs 20-50% a voce",
+    "Compound Effect: la persona giusta segue -> vede ogni post per ~6 mesi -> legge i case study -> arriva alla call gia' calda",
+    "Il sistema funziona gia' a 5.000 follower, non serve aspettare 31.000 ('Start Selling Before the Audience Feels Big Enough')",
+    "Nessun esempio di post reale mostrato a schermo, nessun CRM/tool terzo mostrato, nessuna timeline mensile con valori numerici"
+  ],
+  "numeri_reali_dichiarati": [
+    "$1.2M ARR attribuito interamente a LinkedIn, $1.294.700 fatturato preciso in un anno",
+    "31.000 follower totali, 92% ICP match (vs 2% su audience generica di 200.000)",
+    "300-1.000 connessioni ICP qualificate generate per post lead-magnet",
+    "40-50% tasso di risposta al Profile View Outreach a schermo, 20-50% a voce (discrepanza dichiarata, non risolta)",
+    "20-30 qualified sales calls/mese promesse come servizio dall'agenzia dell'autore"
+  ],
+  "tool_citati": [
+    "Miro (board condivisa, modalita' 'View only') - unico strumento di presentazione mostrato, nessun CRM o software di gestione lead/outreach mostrato a schermo"
+  ],
+  "avvertenza_metodologica": "Il video non mostra mai uno screenshot di un post reale pubblicato (i due esempi di Named/Surfaced Problem Post sono raccontati solo a voce con cifre esplicitamente definite 'mock' dall'autore), non mostra il profilo LinkedIn reale dell'autore, non mostra analytics nativi di LinkedIn, e non mostra alcuna conversazione DM reale ne' un CRM di gestione lead. Il grafico di crescita $1.2M non ha valori mensili leggibili.",
+  "limiti_dichiarati_dal_video": [
+    "Tasso di risposta al Profile View Outreach dichiarato in due modi diversi (40-50% a schermo, 20-50% a voce) senza che il video risolva la discrepanza",
+    "Cifre degli esempi di post (Named/Surfaced Problem) dichiarate 'mock' dallo stesso autore",
+    "Nessun giorno/orario esatto di pubblicazione, solo la regola generale 'stessi giorni, stesso orario'",
+    "Nessuna ripartizione del fatturato per cliente/servizio, nessun tasso di conversione da call a cliente chiuso"
+  ],
+  "segmento_promozionale": "Presentazione servizio agenzia (0:34-0:52, headline parzialmente leggibile + 5 settori serviti) e CTA finale (18:41-18:49) verso il link in descrizione per prenotare una call. Contenuto misto educativo/promozionale, dichiarato.",
+  "p12_traceability": true,
+  "stages_completed": ["C-archive", "D-enrichment", "E-gate", "F-apply", "G-audit", "H-report"],
+  "enrichment_summary": {
+    "skill_valutate": 2,
+    "skill_patchate": 2,
+    "skill_non_toccate": 0,
+    "skill_non_esistenti_dichiarate": 0,
+    "patch_totali": 2,
+    "cancellazioni": 0
+  },
+  "processing_notes": "Pipeline Empire Studio Stage 1-5 gia' eseguita in sessione precedente (video-analysis.md, atoms.json originale 60 KA, coverage.md gia' su disco, coverage 105/105 frame unici, NO-FINTO PASS). Memory Empire Stage C-H chiuso il 2026-09-02, senza nuova visione dei frame: video-analysis.md e atoms.json esistenti riusati e normalizzati allo schema Memory Empire (id/categoria/claim/trace/confidenza/rilevanza_DE). Nessun commit git eseguito in questa sessione.",
+  "gap_verificato": "Verificato di persona in questa sessione: .claude/skills/avvia-linkedin/SKILL.md e' un puro launcher (21 righe) che apre un CMD con run_today.py per 20 connessioni + 20 messaggi + 30 commenti/giorno — nessuna menzione di audit profilo, headline, custom button, featured section o monitoraggio profile-view. .claude/skills/icp-radar/SKILL.md esiste e definisce criteri di qualifica ICP per nicchia, ma non menzionava esplicitamente il principio 'audience piccola e concentrata batte audience larga e generica' prima della patch."
+}
