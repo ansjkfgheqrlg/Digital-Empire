@@ -53,3 +53,24 @@
 | B-030 | **`ArenaSession.stato_login()`: il ramo 'autenticato' non e' mai stato verificato su un profilo davvero loggato** | Il modulo condiviso decide lo stato della sessione dai cookie. Il ramo NEGATIVO e' verificato dal vivo (2026-08-27): `provisional_user_id` = identita' anonima, ed e' dominante perche' si e' scoperto che `arena-auth-prod-v1` - il cookie che *sembra* di autenticazione - **e' presente anche su un profilo sloggato**, quindi da solo non prova niente. Il ramo POSITIVO invece e' inferito, non provato: il 2026-08-27 non esisteva nessun profilo Arena autenticato su questa macchina con cui confrontare. Conseguenza accettata e dichiarata nel codice: in dubbio risponde `non_autenticato`/`ignoto`, mai `autenticato` - sbagliare per prudenza costa un login inutile, sbagliare al contrario costa un run che muore a meta'. Da confermare al primo login Arena reale: guardare quali cookie compaiono e stringere `COOKIE_SESSIONE` sul nome esatto | al primo login Arena reale | ⬜ |
 | B-031 | **`empire mem write` non legge UTF-8 da stdin su Windows** | Verificato il 2026-08-27 scrivendo i checkpoint: `cat corpo.md | python -m empire mem write --body -` muore con `UnicodeEncodeError: surrogates not allowed` appena il testo contiene accenti, emoji o box-drawing - cioe' praticamente ogni checkpoint scritto in italiano. Aggirato in sessione mettendo `PYTHONIOENCODING=utf-8` davanti al comando, ed e' cosi' che sono stati scritti CP-20260827-001..004. Fix vero: leggere stdin come binario e decodificarlo esplicitamente in UTF-8 dentro il CLI (`sys.stdin.buffer.read().decode('utf-8')`) invece di affidarsi al codec di default della console. Stessa famiglia di B-028: lo strumento anti-collisione esiste e funziona, ma ogni asperita' che incontra e' un motivo in piu' per tornare a scrivere i checkpoint a mano - ed e' cosi' che B-009 e' riaccaduto 5 volte | insieme a B-028, prima che qualcuno riprovi a usarlo senza conoscere il trucco | ⬜ |
 | B-032 | **`py -3` e `python` sono due interpreti diversi: solo uno regge `empire`** | Verificato il 2026-09-01: `py -3` risolve a **Python 3.12** che **non ha PyYAML** → `py -3 -m empire ...` muore con `ModuleNotFoundError: No module named 'yaml'` prima di eseguire qualsiasi comando. `python` risolve a **Python 3.11** (Store, `PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0`) e ha PyYAML, quindi `python -m empire mem write` funziona. È la stessa ferita di B-028 ("probabile vero motivo per cui la regola `usa mem write` veniva ignorata: non era pigrizia, era rotto") ma con la causa **precisa**: non manca il pacchetto, manca *nell'interprete che le regole invitano a usare*. Gli hook non ne soffrono (`emperator_hook.py` è solo stdlib e gira con `py -3`). Fix: `py -3 -m pip install pyyaml` per allineare i due, **oppure** dichiarare ovunque `python` come interprete degli strumenti di misura. Regola operativa intanto: **ogni comando `empire` si lancia con `python`, mai con `py -3`** | insieme a B-028, prima che una sessione ricada nella scrittura a mano dei checkpoint | ⬜ |
+
+- **B-033** — `memory-empire/knowledge/` esiste in **3 copie**: due ferme al 2026-07-09
+  (`.claude/skills/memory-empire/`, `Empire Studio Suite/memory-empire/`) e una viva con 53
+  cartelle (`Empire Studio Suite/empire-studio/memory-empire/`). Chi ingerisce senza verificare
+  scrive in un archivio morto. Da consolidare in uno solo, con le altre due ridotte a puntatore.
+  Trovato durante CP-20260902-001. Non blocca l'ingestione: si scrive nella viva.
+
+- **B-034** — PROPOSTA (da approvare da Max, non costruita): skill nuova `live-verification`.
+  Prende una lista di claim CRO da verificare (spedizioni, form, CTA, recensioni, prezzo) e
+  restituisce un blocco "Verificato dal vivo / Smentito dal vivo" con browser realmente
+  renderizzato, riusabile da `market-audit`, `cro-ricerca` e `market-competitors`. Origine:
+  video `yJOCyyP77bA` (Giovanni Beggiato / Gentes AI, batch max17 2/8) — il sistema mostrato
+  smentisce dal vivo claim che un fetch statico avrebbe dato per veri (hreflang, traduzioni JS).
+  Non costruita in questa sessione: solo proposta, il gap concreto e' gia' stato patchato
+  direttamente dentro `market-audit/SKILL.md` (§1.1b).
+
+- **B-035** — PROPOSTA (da approvare da Max, non costruita): valutare un MCP browser
+  (Playwright) a livello progetto. Oggi `.mcp.json` di progetto ha solo `claude-flow`
+  (risultato disconnesso in sessione, CONNECT_TIMEOUT) — nessun MCP di tipo browser-automation,
+  il che limita ogni audit `market-*` alla lettura statica via `WebFetch`. Origine: video
+  `yJOCyyP77bA`, stessa sessione di B-034. Decisione di stack, non una patch di skill.

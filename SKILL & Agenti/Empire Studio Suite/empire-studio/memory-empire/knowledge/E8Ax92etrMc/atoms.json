@@ -1,0 +1,466 @@
+[
+  {
+    "id": "KA-001",
+    "categoria": "Metodo SEO",
+    "claim": "A third of the questions that your customers are actually asking have zero search volume. Not low, but zero.",
+    "trace": "E8Ax92etrMc#00:00 + frames/frame-001.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-002",
+    "categoria": "Metodo SEO",
+    "claim": "Finding these missing questions is a big part of the SEO game now because you don't want to rank for a specific keyword now, you want to rank for a topic. The way to become the topical authority figure is answer as many of these questions as you can — that's how you'll get cited and recommended by things like GPT search and Google AI overviews.",
+    "trace": "E8Ax92etrMc#00:12 + frames/frame-007.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-003",
+    "categoria": "Metodo SEO",
+    "claim": "Fonti dove le domande sono già scritte: Reddit, tue recensioni e recensioni dei clienti, autocomplete, People Also Ask, fan out queries, e altre.",
+    "trace": "E8Ax92etrMc#00:34 + frames/frame-017.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-004",
+    "categoria": "Tool",
+    "claim": "Screenshot Reddit reale, thread r/AskPortland: 'How much does a plumber typically cost?' — usato come b-roll illustrativo delle fonti di domande.",
+    "trace": "E8Ax92etrMc#00:38 + frames/frame-020.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-005",
+    "categoria": "Metodo SEO",
+    "claim": "Ho costruito una skill e un workflow con Claude che estrae queste domande d'oro da Reddit, People Also Ask, autocomplete e altri posti, e dice esattamente cosa farne (FAQ in fondo a service page, blog, o video).",
+    "trace": "E8Ax92etrMc#00:50 + frames/frame-025.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-006",
+    "categoria": "Metodo SEO",
+    "claim": "THE POINT OF THIS VIDEO — The tools aren't wrong. They're incomplete. So you go somewhere else for the rest. It's already written down.",
+    "trace": "E8Ax92etrMc#01:10 + frames/frame-036.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-007",
+    "categoria": "Metodo SEO",
+    "claim": "Le domande vanno classificate su un asse transazionale/informazionale: se la domanda implica vicinanza all'acquisto va sulla service page; se è puramente informazionale serve contenuto dedicato (blog o video).",
+    "trace": "E8Ax92etrMc#01:39 + frames/frame-055.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-008",
+    "categoria": "Metodo SEO",
+    "claim": "By default, Claude doesn't have access to Reddit/reviews/PAA/autocomplete/fan-out — servono connessioni esterne: DataForSEO (spiegato in altri video del canale) e un secondo tool per Reddit.",
+    "trace": "E8Ax92etrMc#02:10 + frames/frame-070.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-009",
+    "categoria": "Tool",
+    "claim": "Zernio — piattaforma di connettori per Claude/agenti. Landing: 'Ship Your Reddit Integration In Minutes, Not Months — Stop wrestling with Reddit's API. Zernio handles OAuth, rate limits, subreddit rules, and API changes — so you can focus on building your product.'",
+    "trace": "E8Ax92etrMc#03:04 + frames/frame-093.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-010",
+    "categoria": "Tool",
+    "claim": "Zernio — piattaforme disponibili: Twitter/X, TikTok, LinkedIn, YouTube, Discord, Bluesky, Snapchat, Instagram, WhatsApp, Facebook, Threads, Pinterest, Telegram, Google Business, Slack, Google Ads, TikTok Ads, LinkedIn Ads, Pinterest Ads, X Ads, OpenAI Ads, Meta Ads, Reddit. Telephony: Phone Numbers, SMS & MMS, Voice & Calls. APIs: Posting, Comments, Messaging, Analytics, Ads, Comment to DM. For Agents: AI Agents, Claude Code, Cursor, Codex, OpenClaw, Hermes.",
+    "trace": "E8Ax92etrMc#02:58 + frames/frame-090.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-011",
+    "categoria": "Soglia",
+    "claim": "Zernio: connettere fino a 2 account è completamente gratis.",
+    "trace": "E8Ax92etrMc#03:04 + frames/frame-093.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-012",
+    "categoria": "Comando/Setup",
+    "claim": "import Zernio from \"@zernio/node\"; const zernio = new Zernio(process.env.ZERNIO_API_KEY) — snippet SDK visibile sulla landing Zernio.",
+    "trace": "E8Ax92etrMc#03:04 + frames/frame-093.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-013",
+    "categoria": "Comando/Setup",
+    "claim": "Setup Reddit su Zernio: create account → 'create a new connection' → cercare Reddit → autenticare/autorizzare l'account Reddit → click 'Allow'.",
+    "trace": "E8Ax92etrMc#03:10 + frames/frame-096.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-014",
+    "categoria": "Comando/Setup",
+    "claim": "Collegare Zernio a Claude: Settings → Customize → Connectors → 'Add new' → 'Add custom connector'. Campo 'Remote MCP server URL' → mcp.zernio.com/mcp. Campo 'Name' → libero (es. Zernio). Nessuna advanced setting necessaria se loggati a Zernio nello stesso browser. Confermare 'Connect' nel popup.",
+    "trace": "E8Ax92etrMc#03:23 + frames/frame-100.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-015",
+    "categoria": "File/Artefatto",
+    "claim": "URL connettore MCP custom esatto: mcp.zernio.com/mcp",
+    "trace": "E8Ax92etrMc#03:43 + frames/frame-100.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-016",
+    "categoria": "Tool",
+    "claim": "Pannello Claude Settings → Skills (account di Nico), elenco skill presenti: internal-link-architect, onpage-optimizer, keyword-fanout-map, ai-visibility-checker, seo-content-writer, site-brief-builder, seo-gsc-analyzer, revive-content, blog-to-video, cite-me, local-page-auditor, local-citations-auditor. Menu Add: 'Create with Claude / Write skill instructions / Upload a skill'.",
+    "trace": "E8Ax92etrMc#03:34 + frames/frame-108.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-017",
+    "categoria": "File/Artefatto",
+    "claim": "File regalato in community gratuita: keyword-language.zip — 'is essentially a skill plus a set of really detailed instructions for all this'.",
+    "trace": "E8Ax92etrMc#04:23 + frames/frame-138.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-018",
+    "categoria": "Tool",
+    "claim": "Interfaccia chat Claude usata: modello selezionato 'Opus 5', effort 'High'. Icona/connettore 'vidiQ' visibile accanto al selettore modello (non spiegata nel video).",
+    "trace": "E8Ax92etrMc#04:34 + frames/frame-138.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-019",
+    "categoria": "Prompt",
+    "claim": "I want you to unzip the file, understand all of the instructions, and then run those instructions on the plumbing market in Austin, Texas.",
+    "trace": "E8Ax92etrMc#05:02 + frames/frame-152.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-020",
+    "categoria": "Metodo SEO",
+    "claim": "The more broad you go here, the better, which usually is something that I do not say, but in this case, we want to find as many of these questions that people are asking.",
+    "trace": "E8Ax92etrMc#04:59 + frames/frame-150.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-021",
+    "categoria": "Metrica",
+    "claim": "Report esempio 'Site Plan from Customer Language — Roofing, Dallas, Texas': 1.713 raw lines of customer language, 37 canonical questions, 26 FAQs for service pages, 14 blog posts, 4 videos, 941 reviews read.",
+    "trace": "E8Ax92etrMc#05:08 + frames/frame-155.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-022",
+    "categoria": "Soglia",
+    "claim": "15 of the 37 questions have zero Google search volume. Every one came from a real customer. — soglia esplicita: il volume zero non è motivo di scarto se la domanda proviene da linguaggio cliente reale.",
+    "trace": "E8Ax92etrMc#05:08 + frames/frame-155.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-023",
+    "categoria": "Metodo SEO",
+    "claim": "Questions that are objections become FAQs on the service page that has to overcome them. Questions with real demand become their own page, linked from that FAQ. Questions that need showing rather than telling become videos. Nothing is discarded.",
+    "trace": "E8Ax92etrMc#05:08 + frames/frame-155.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-024",
+    "categoria": "Metrica",
+    "claim": "Reddit: 502 threads across 111 subreddits. Esempi domande: 'Roof leaking - what to do in short term everywhere is' (r/HomeImprovement); 'Got a leak in my roof. Wondering what my next step would'; 'Roof leak, is this an emergency?' (r/homeowners); 'Leaking roof in the middle of winter, what should I do?' (r/DIY); 'Best way to seal roof leak from the inside'; 'Roofers can't find source of leak and at a loss'.",
+    "trace": "E8Ax92etrMc#05:08 + frames/frame-024.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-025",
+    "categoria": "Metrica",
+    "claim": "People Also Ask: 40 questions, Google's own expansion. Esempi: 'How often should you replace a roof?'; 'Is $30,000 too much for a roof?'; 'How long do shingles on a roof last?'; 'Is a 20 year old roof too old?'; 'Is $25,000 a lot for a new roof?'; 'What is the 25% rule for roofing?'.",
+    "trace": "E8Ax92etrMc#05:08 + frames/frame-024.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-026",
+    "categoria": "Metrica",
+    "claim": "Autocomplete: 150 suggestions. Esempi: 'why is my roof leaking water'; '...when it rains'; '...after heavy rain'; '...when it's not raining'; '...in minecraft'; '...in winter'.",
+    "trace": "E8Ax92etrMc#05:08 + frames/frame-024.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-027",
+    "categoria": "Metrica",
+    "claim": "Fan-out: 80 related searches + AI Overview structure. Esempi: 'How much does a roof cost'; 'How long does a roof last asphalt shingles'; 'How long does a shingle roof last on a house'.",
+    "trace": "E8Ax92etrMc#05:08 + frames/frame-024.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-028",
+    "categoria": "Metodo SEO",
+    "claim": "Reddit came through the site:reddit.com SERP fallback on this run, so thread comment counts are not available and the demand signal is weaker. — limite tecnico dichiarato esplicitamente a schermo.",
+    "trace": "E8Ax92etrMc#05:08 + frames/frame-024.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-029",
+    "categoria": "Metodo SEO",
+    "claim": "Fan-out query: quando un motore di ricerca AI (Google AI overviews, ChatGPT) riceve una domanda complessa, non la elabora direttamente ma si pone internamente domande correlate successive (fan out queries), nascoste ma recuperabili tramite DataForSEO, per costruire una risposta più completa che possa citarti.",
+    "trace": "E8Ax92etrMc#08:12 + frames/frame-247.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-030",
+    "categoria": "Metodo SEO",
+    "claim": "Fan-out: What the engine breaks your question into. Take one mixed question and look at what Google's own AI Overview does with it. The sections it needs are the outline of the piece you should build, and the references tell you who is being cited for it today.",
+    "trace": "E8Ax92etrMc#11:24 + frames/frame-343.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-031",
+    "categoria": "Metrica",
+    "claim": "Esempio fan-out: query 'metal roof vs shingle?' scomposta dall'AI Overview in 4 sezioni: 1. Cost & Installation, 2. Lifespan & Durability, 3. Energy Efficiency & Climate, 4. Maintenance & Weight. 'Currently cited': roofmaxx.com, sheffieldmetals.com, nerdwallet.com, reddit.com. '4 sections, so this is article-sized rather than a one-paragraph FAQ.'",
+    "trace": "E8Ax92etrMc#11:24 + frames/frame-343.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-032",
+    "categoria": "Metodo SEO",
+    "claim": "Legenda routing 1/4 — 'answered here, FAQ, terminal': A real objection with no standalone demand. Nobody ranks a page for it, but leaving it unanswered costs the job, and a direct question-and-answer pair is what AI engines quote.",
+    "trace": "E8Ax92etrMc#11:26 + frames/frame-344.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-033",
+    "categoria": "Metodo SEO",
+    "claim": "Legenda routing 2/4 — 'links to full post, FAQ that links out': An objection that also has demand. A short answer on the service page to unblock the sale, then a link to the full piece.",
+    "trace": "E8Ax92etrMc#11:26 + frames/frame-344.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-034",
+    "categoria": "Metodo SEO",
+    "claim": "Legenda routing 3/4 — 'post, Its own page': Upstream research. Earns a page when demand is real, or when the AI Overview splits the answer into two or more sections, which means it cannot be answered in a paragraph.",
+    "trace": "E8Ax92etrMc#11:26 + frames/frame-344.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-035",
+    "categoria": "Metodo SEO",
+    "claim": "Legenda routing 4/4 — 'video, Video': The answer is something in your hands, and the live [demonstration] — l'intento di ricerca richiede dimostrazione visiva.",
+    "trace": "E8Ax92etrMc#11:26 + frames/frame-344.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-036",
+    "categoria": "Metodo SEO",
+    "claim": "The plan, service page by service page. Left column is what gets added to the page itself. Right column is what gets built and linked from it. Every line carries the evidence that earned it.",
+    "trace": "E8Ax92etrMc#11:26 + frames/frame-344.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-037",
+    "categoria": "Metrica",
+    "claim": "Sezione piano 'Roof replacement': 'What is the cheapest way to replace a roof?' Google N/A, AI wins 142. 'How long does a roof replacement take?' Google 1.600, AI wins 78, tag 'links to full post', PAA: 'The objection that stops people booking'. 'How long does a roof last?' (post) Google 12.100, AI 3.553, AI Overview 2 sections, PAA x2, split in 'Lifespan by Material' e 'Factors That Change Roof Life'.",
+    "trace": "E8Ax92etrMc#09:48 + frames/frame-295.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-038",
+    "categoria": "Metrica",
+    "claim": "Sezione piano 'Roof repair' — FAQ block on this page: 3: 'Can you fix a roof leak without replacing the whole roof?' (answered here) Google N/A, AI wins 30; 'How serious is a small roof leak?' (answered here) Google 0/15, AI wins 4; 'How much does roof repair cost?' (links to full post) Google 720/255. Linked from this page: 2 video — 'Why is my roof leaking when it rains?' Google 10/16, AI Overview 2 sections; 'How do I stop a roof leak until a roofer arrives?' Google N/A, AI wins 0.",
+    "trace": "E8Ax92etrMc#09:42 + frames/frame-292.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-039",
+    "categoria": "Metrica",
+    "claim": "Sezione piano 'Storm & hail damage repair' — FAQ block: 3: 'Will insurance replace my roof after a hailstorm?'; 'Is this actually hail damage?'; 'How much does hail damage roof repair cost?' (66 storm threads, 'the deductible question sits under all of them'). Linked: 1 video — 'How can I tell if my roof has hail damage?' Google 260, AI Overview 3 sections, PAA x2 + 85 hail-and-storm threads.",
+    "trace": "E8Ax92etrMc#06:00 + frames/frame-342.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-040",
+    "categoria": "Metrica",
+    "claim": "Sezione piano 'Roof inspection' — FAQ block on this page: 4, prima voce: 'How much should a roof inspection cost?' Google 10/0.",
+    "trace": "E8Ax92etrMc#06:00 + frames/frame-342.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-041",
+    "categoria": "Metrica",
+    "claim": "What else goes on the service pages: From 941 reviews, unprompted — tabella 'Share of 1-2★ reviews (44)' vs 'Share of 5★ reviews (880)': Price shock/second opinion 4,5%/0,5%; Explained what they were doing 11,4%/14,1%; Turned up when they said they would 0,0%/8,1%; Cleaned up after themselves 4,5%/6,6%; Stood behind the work 15,9%/3,5%; Never called back 0,0%/0,0%; Had to come back and redo it 4,5%/0,8%; Handled the paperwork or claim 34,1%/25,2%.",
+    "trace": "E8Ax92etrMc#10:40 + frames/frame-321.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-042",
+    "categoria": "Soglia",
+    "claim": "Attributes nobody was asked about. A wide gap between the two columns is a differentiator worth putting on the page. A narrow gap means it's table stakes and wins you nothing. With only 44 reviews at 1-2 stars, the left column is a small sample and should be read as direction, not precision.",
+    "trace": "E8Ax92etrMc#10:40 + frames/frame-321.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-043",
+    "categoria": "Metrica",
+    "claim": "Footer dati sentiment: 502 Reddit threads · 941 on-topic reviews from up to 5 competitors · 40 People Also Ask questions · 150 autocomplete suggestions · 80 related searches. Volume figures are monthly averages. A Google figure of 0 means it wasn't queried, and genuinely zero. n/a means it could not be queried, because Google Ads rejects keywords over ten words.",
+    "trace": "E8Ax92etrMc#10:40 + frames/frame-321.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-044",
+    "categoria": "Metodo SEO",
+    "claim": "Esempio Reddit citato dal narratore per giustificare una FAQ: 'Should I sign with a door to door roofer after a storm?' (answered here) — 'The scam and fraud thread cluster, plus Hail damage — what should I be wary of'.",
+    "trace": "E8Ax92etrMc#09:48 + frames/frame-292.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-045",
+    "categoria": "Metodo SEO",
+    "claim": "Verifica manuale dell'intento video-dominante: cercando 'how to do a bicep curl' su Google, i primi risultati sono video (YouTube 'Bicep Curls for Beginners' BowFlex, 'How to bicep curl' Oliver Sjostrom) e la tab si sposta su 'Short videos' — prova visiva che per certe query serve un video, non un testo.",
+    "trace": "E8Ax92etrMc#08:06 + frames/frame-244.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-046",
+    "categoria": "Tool",
+    "claim": "Community 'AI Ranking (FREE)', corso 'AI Search Kickstarter': Lesson 1 SEO in 2026, Lesson 2 DataWise, Lesson 3 Review Your Site, Lesson 4 Fixing Your Site, Lesson 5 AI Visibility, Lesson 6 Write Content That AI Loves, Lesson 7 What To Do Next.",
+    "trace": "E8Ax92etrMc#11:32 + frames/frame-347.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-047",
+    "categoria": "Metodo SEO",
+    "claim": "Lesson 6 | Write Content That AI Loves — 5 rules: 1. use real questions as your H2s and H3s, not generic labels; 2. back every claim with a high-quality source linked from the contextual keyword; 3. add your own experience because that is the one thing AI cannot copy; 4. include one or two tables; 5. internally link to other sections of your site.",
+    "trace": "E8Ax92etrMc#11:40 + frames/frame-357.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-048",
+    "categoria": "Metodo SEO",
+    "claim": "Common mistakes to skip: rewriting for the sake of it, chasing an arbitrary word count, and stuffing your prompt with 25 personas. Context beats prompt complexity.",
+    "trace": "E8Ax92etrMc#11:40 + frames/frame-357.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-049",
+    "categoria": "Metodo SEO",
+    "claim": "Walkthrough Lesson 6 (flusso diverso, ChatGPT non Claude): use DataWise's People Also Ask to pull dozens of real questions around your keyword, pick a clustered set for one post, then run the Cite-Me Prompt in ChatGPT (linked below). Go phase by phase: research, then structure with Canvas, then draft with...",
+    "trace": "E8Ax92etrMc#11:44 + frames/frame-358.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-050",
+    "categoria": "Metrica",
+    "claim": "The First Live Run — statistiche reali riportate a fine video: 5.895 raw lines of customer language, 203.065 Reddit comments behind them, 1.404 reviews read, $0,59 total cost.",
+    "trace": "E8Ax92etrMc#12:34 + frames/frame-378.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-051",
+    "categoria": "Metrica",
+    "claim": "Eight minutes, most of it waiting on the review API. — tempo di esecuzione dichiarato per la run reale.",
+    "trace": "E8Ax92etrMc#12:34 + frames/frame-378.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-052",
+    "categoria": "Soglia",
+    "claim": "Costo del report: 'the only cost is really coming from data for SEO... I've done this flow a couple of times and it ranges from 50 cents all the way to like 80 cents, but I find that the average is around 59 cents.'",
+    "trace": "E8Ax92etrMc#12:16 + frames/frame-378.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-053",
+    "categoria": "Soglia",
+    "claim": "Cadenza consigliata: 'Once every 6 months will be great because you should get some new questions when they come up' (se usato per il proprio business, non continuativamente).",
+    "trace": "E8Ax92etrMc#12:47 + frames/frame-378.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-054",
+    "categoria": "Metodo SEO",
+    "claim": "Why it's shaped like this — You're not ranking for a keyword. You're ranking for the topic. The old way: One page, one keyword, optimised hard. Repeat 12 times and hope. What actually works now: Answer every real question in the topic, properly, in their words, and link it together. Google and the AI engines both decide who covers a subject completely.",
+    "trace": "E8Ax92etrMc#12:54 + frames/frame-388.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-055",
+    "categoria": "Metodo SEO",
+    "claim": "That's why the output is a connected plan, not a list. The service page can't win the topic on its own.",
+    "trace": "E8Ax92etrMc#12:54 + frames/frame-388.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-056",
+    "categoria": "Metodo SEO",
+    "claim": "Il report d'esempio mostrato in dettaglio è intitolato 'Roofing, Dallas, Texas' mentre il prompt digitato in video chiede 'the plumbing market in Austin, Texas' — incoerenza tra ciò che viene detto a voce ('I specifically chose Texas and plumbing') e ciò che appare a schermo (Roofing). ➕ Inferenza: il report di dettaglio è un esempio precostituito usato per illustrare l'anatomia dell'output, non l'output live della demo.",
+    "trace": "E8Ax92etrMc#05:30 + frames/frame-155.png",
+    "confidenza": "inferito",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-057",
+    "categoria": "Tool",
+    "claim": "DataForSEO — fonte dati esterna per Google reviews, People Also Ask, autocomplete, related/fan-out searches, AI Overview structure, volumi di ricerca. Collegamento a Claude non mostrato in questo video, solo rimandato: 'I'll leave a video for you below into how to connect Claude with data for SEO... it's about a minute long.'",
+    "trace": "E8Ax92etrMc#02:27 + frames/frame-076.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-058",
+    "categoria": "File/Artefatto",
+    "claim": "Report title header esatto: 'Site Plan from Customer Language' / 'Roofing, Dallas, Texas. Every question below came from something a real customer wrote.' / 'Reddit via site:reddit.com SERP fallback · Google reviews, People Also Ask, autocomplete, related searches and AI Overview structure (DataForSEO)'.",
+    "trace": "E8Ax92etrMc#05:08 + frames/frame-155.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "kind": "single-video",
+  "id": "DTCyvo6cC54",
+  "title": "Every Level of a Claude Second Brain Explained",
+  "url": "https://www.youtube.com/watch?v=DTCyvo6cC54",
+  "duration_sec": 1859,
+  "uploader": "Nate Herk | AI Automation",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Intro"
+    },
+    {
+      "start": 205,
+      "title": "The 5 Levels Overview"
+    },
+    {
+      "start": 259,
+      "title": "Level 1"
+    },
+    {
+      "start": 491,
+      "title": "Level 2"
+    },
+    {
+      "start": 783,
+      "title": "Level 3"
+    },
+    {
+      "start": 1167,
+      "title": "Level 4"
+    },
+    {
+      "start": 1525,
+      "title": "Level 5"
+    },
+    {
+      "start": 1728,
+      "title": "Finding Your Level"
+    },
+    {
+      "start": 1841,
+      "title": "Final Thoughts"
+    }
+  ],
+  "subs": [
+    "runs\\max17-v08-herk-brain\\DTCyvo6cC54.en.vtt"
+  ],
+  "thumbnails": [
+    "runs\\max17-v08-herk-brain\\DTCyvo6cC54.webp"
+  ],
+  "ingested_at": "2026-09-02T12:55:15",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=DTCyvo6cC54"
+}

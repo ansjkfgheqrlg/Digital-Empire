@@ -102,7 +102,7 @@ BRAND_TITLE = f"PreventivoForge — {_BRAND['display_name']}"
 
 # Versione mostrata nell'header: serve a capire A COLPO D'OCCHIO quale build sta girando
 # (senza questo non si distingue una copia vecchia da una nuova).
-APP_VERSION = "v2.1 · 13 lug 2026"
+APP_VERSION = "v2.2 · 2 set 2026"
 
 
 # --------------------------------------------------------------------------- #

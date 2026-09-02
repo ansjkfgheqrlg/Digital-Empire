@@ -206,3 +206,14 @@ nul
 .claude/skills/empire-studio/runs/andrei-pascu-cs2online-001/lessons/lezione-07/resources/vision-aps.pdf
 # GIF demo del plugin ruflo, 5,3 MB: asset di documentazione, non sorgente
 .claude/skills/ruflo/ruflo-plugins.gif
+
+# Empire Studio — scarti pesanti delle run di ingestione video (ADR-013).
+# I frame sono gia' esclusi (riga ~202). Qui si escludono i residui di yt-dlp:
+# download parziali, metadati grezzi (~900 KB a video) e thumbnail.
+# Restano tracciati gli artefatti di conoscenza: video-analysis.md, atoms.json,
+# coverage.md, scenes.json/scenes.md, ingest.json, i sottotitoli.
+**/runs/**/*.part
+**/runs/**/*.ytdl
+**/runs/**/*.info.json
+**/runs/**/*.webp
+**/runs/**/video.mp4

@@ -94,6 +94,11 @@ def _translate_words(text: str) -> str:
         if translated is None:
             # parola mai vista → prova a scomporre il composto tedesco nei suoi mattoni
             translated = _decompose(p.lower())
+        if translated is None and len(p) >= 4:
+            # ultimo tentativo: la parola È un mattone del glossario usato di norma solo
+            # per i composti (es. "Kamera", "Leder"). Senza questo, parole tedesche comuni
+            # restavano intatte nel titolo dell'annuncio. (E14)
+            translated = _lookup(MORPHEMES, p.lower())
         if translated is not None:
             rebuilt.append(_preserve_case(p, translated))
         else:
@@ -177,7 +182,10 @@ def build_specs_it(listing: dict[str, Any]) -> dict[str, Any]:
             specs[label] = value
 
     put("Marca", listing.get("make"))
-    put("Modello", listing.get("model"))
+    _model = listing.get("model")
+    if _model and str(_model).strip().lower() in _MODEL_PLACEHOLDERS:
+        _model = None                      # segnaposto mobile.de: meglio niente che tedesco (E15)
+    put("Modello", _model)
     if listing.get("variant"):
         put("Allestimento", listing.get("variant"))
     put("Anno", listing.get("year"))
@@ -210,10 +218,18 @@ def build_specs_it(listing: dict[str, Any]) -> dict[str, Any]:
 # --------------------------------------------------------------------------- #
 # Copy: titolo, highlights, descrizione — composti dai fatti (no invenzione)
 # --------------------------------------------------------------------------- #
+# mobile.de scrive questi al posto del modello quando l'auto non è nel suo elenco:
+# non sono nomi, sono segnaposto → nel titolo non ci vanno (uscirebbe "Fiat Andere Ellenator"). (E15)
+_MODEL_PLACEHOLDERS = {"andere", "sonstige", "sonstiges", "other", "altro"}
+
+
 def build_title_it(listing: dict[str, Any]) -> str:
     """Titolo IT SENZA prezzo (il prezzo lo aggiunge Max in price.final_title)."""
+    model = listing.get("model")
+    if model and str(model).strip().lower() in _MODEL_PLACEHOLDERS:
+        model = None
     name = " ".join(
-        str(p) for p in (listing.get("make"), listing.get("model"), listing.get("variant")) if p
+        str(p) for p in (listing.get("make"), model, listing.get("variant")) if p
     )
     return " ".join(name.split()).strip() or "Autovettura"
 
@@ -245,10 +261,7 @@ def build_highlights_it(listing: dict[str, Any], equipment_it: list[str]) -> lis
 
 def build_description_it(listing: dict[str, Any], equipment_it: list[str]) -> str:
     """Descrizione di vendita in italiano, composta dai fatti. Nessun dato inventato."""
-    make = listing.get("make") or "vettura"
-    model = listing.get("model") or ""
-    variant = listing.get("variant") or ""
-    name = " ".join(x for x in (make, model, variant) if x).strip()
+    name = build_title_it(listing)   # stesso nome del titolo (niente segnaposto "Andere")
 
     frasi: list[str] = []
     apertura = f"{name} in ottime condizioni, disponibile presso la nostra concessionaria."
@@ -288,6 +301,12 @@ def build_description_it(listing: dict[str, Any], equipment_it: list[str]) -> st
 # --------------------------------------------------------------------------- #
 def translate(ctx: RunContext, dealer: dict[str, Any]) -> dict[str, Any]:
     listing = load_json(ctx.listing_path)
+
+    # L'allestimento (`trimLine` di mobile.de) è tedesco all'origine ("Leder", "Sport") e finisce
+    # in titolo + descrizione + scheda: va tradotto SULLA FONTE, prima dei campi derivati,
+    # altrimenti riaffiora in 3 punti e il Gate B blocca il preventivo. (E13, stessa lezione di E6)
+    if listing.get("variant"):
+        listing["variant"] = _t(listing["variant"])
 
     equipment_it = translate_equipment(listing.get("equipment_de", []))
     specs_it = build_specs_it(listing)
@@ -335,7 +354,7 @@ def _merge_content(ctx: RunContext, listing: dict[str, Any], content: dict[str, 
         "source_id": listing.get("source_id"),
         "make": listing.get("make"),
         "model": listing.get("model"),
-        "variant": listing.get("variant"),
+        "variant": listing.get("variant"),   # già tradotto sulla fonte in translate()
         "generated_at": existing.get("generated_at"),
         "_meta": {**(existing.get("_meta") or {}), "text_by": "op-translator-copy (Gael)"},
         "content": content,                       # prodotto qui (Half B)

@@ -25,6 +25,8 @@ Identify competitors across three tiers:
 | **Indirect Competitors** | Different product, same problem solved | Search for the problem being solved, check alternative approaches | 2-3 |
 | **Aspirational Competitors** | Market leaders the brand aspires to become | Industry leaders, category creators, well-known brands | 1-2 |
 
+**Regola: mai concorrenti inventati.** Ogni competitor elencato in `COMPETITOR-REPORT.md` deve avere una fonte verificabile citata in linea (es. Google Places, registro imprese/camera di commercio, ricerca web con URL, review platform). Un nome di competitor senza fonte citabile non va incluso nel report (fonte: yJOCyyP77bA -- Giovanni Beggiato, 0:58).
+
 ### 1.2 Competitor Discovery Methods
 
 Use multiple methods to identify competitors:

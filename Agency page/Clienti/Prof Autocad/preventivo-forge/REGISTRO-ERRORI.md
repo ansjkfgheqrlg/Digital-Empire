@@ -29,6 +29,32 @@ Vale per Max, Gael e Claude. (Allineato all'ISPETTORATO GENERALE — REGISTRO-ER
    mancare sul PC cliente e tu non riesci a riprodurre il guasto, cambia architettura verso qualcosa di
    GARANTITO e testabile (es. Chrome, già richiesto). "Quel che vedo io = quel che vede il cliente." (E11)
 13. **Verifica il deliverable ESTRAENDO lo zip come il cliente**, non solo la cartella dist. Avvia QUELL'exe. (E11)
+14. **La sorgente è di qualcun altro e cambia senza avvisare.** Il fallimento in campo di un'app che
+   "funzionava da un mese" è, per default, un cambio del sito sorgente — non un guasto del PC cliente.
+   Prima cosa da fare: riprodurre col LINK DEL CLIENTE sulla nostra macchina e leggere il log, non
+   indagare sul suo PC. (E12)
+15. **Mai legarsi a UN SOLO punto di estrazione dati.** Supportare più formati (vecchio + nuovo) e far
+   dipendere il "successo" dai DATI ottenuti, non dal nome della variabile che li conteneva. (E12)
+16. **Ogni campo di testo che arriva dalla sorgente va tradotto ALLA FONTE**, prima di costruire i
+   campi derivati (titolo, descrizione, scheda). Un campo tradotto "a valle" riaffiora in tedesco
+   negli altri punti che lo usano. (E13, stessa lezione di E6)
+17. **Un gate verde non è la prova che il PDF è pulito**: verificare anche i campi che il gate non
+   guarda (es. il titolo con prezzo prodotto da S4). Guardare il PDF, non solo i log. (E13)
+
+---
+
+## Errori registrati (2026-09-02) — guasto in campo Novacar
+
+| ID | Sintomo | Causa radice | Fix | Regola |
+|----|---------|--------------|-----|--------|
+| **E12** | **Il cliente non genera più NESSUN preventivo** dopo un mese di funzionamento ("Non riuscito: scraping da mobile.de fallito (anti-bot Akamai o link non valido)"). Sembrava: build vecchia sul PC del cliente, oppure blocco Akamai, oppure licenza | **Nessuna delle tre. mobile.de è passato a Next.js (App Router) e ha ELIMINATO `window.__INITIAL_STATE__`**, dove stavano tutti i dati dell'auto. La pagina si scarica benissimo (nessun blocco), ma lo scraper cercava una variabile che non esiste più → `got_state` mai vero → 3 tentativi → errore con messaggio fuorviante che accusava Akamai. Riprodotto sul PC di Max con la v2.1: stesso fallimento, quindi NON era il PC del cliente | `scraper.py`: nuovo estrattore del payload RSC di Next.js (`self.__next_f.push([1,"…"])` → riga `"listing":{…}`), con risoluzione dei riferimenti flight (`"$43"` = descrizione), URL foto ricostruite (`?rule=mo-1600.jpg`, senza `.jpg` mobile.de serve AVIF) e normalizzazione alla vecchia forma `.ad` → **il parser S2 resta invariato**. Il vecchio formato resta supportato come primo tentativo. Condizione di successo (`_has_ad_payload`) ora accetta ENTRAMBI i formati | R14, R15 |
+| **E13** | Preventivo bloccato dal Gate B ("tedesco residuo: Leder") e, una volta sbloccato, **titolo del PDF in tedesco**: "Smart ForTwo **Leder** 22.560 €" | L'allestimento (`trimLine` di mobile.de) non veniva tradotto: finiva grezzo in titolo, descrizione e scheda. In più `pricer.py` componeva `final_title` dai campi RAW pur avendo il titolo italiano già pronto (il commento diceva il contrario del codice) | `translate_copy.translate()` traduce `variant` **sulla fonte**, prima dei derivati; `pricer.price()` usa `content.title_it` quando esiste. Aggiunto a glossario `gepäckraumabtrennung` | R16, R17 |
+| **E15** | Titolo del preventivo "Fiat **Andere** Ellenator" | `Andere` ("altro") è il SEGNAPOSTO che mobile.de mette quando il modello non è nel suo elenco: non è un nome, e finiva in titolo, descrizione e scheda | `build_title_it()` scarta i segnaposto (`andere/sonstige/other`); descrizione e scheda usano lo stesso nome → "Fiat Ellenator" | R16 |
+| **E14** | Parole tedesche comuni intatte nel titolo ("MG MG3 … Navigatore **Kamera**") | `Kamera`, `Leder` ecc. stavano solo in `MORPHEMES`, tabella usata **soltanto** per scomporre i composti: una parola isolata che coincide con un morfema non veniva mai cercata lì | `_translate_words()`: ultimo tentativo su `MORPHEMES` per token ≥4 caratteri. Verificato che NON traduce sigle/inglese (GT Line, Business Edition, Style restano intatti) | R16 |
+
+**Collaudo del fix (2026-09-02):** 4 auto diverse, pipeline completa fino a GATE_R:
+Smart ForTwo (23 foto), MG MG3, Mercedes-Benz E 300, Volkswagen Polo GTI — **tutte verdi**, PDF generato.
+Tempo scraping: ~16 s (prima: 60 s di tentativi e poi errore).
 
 ---
 

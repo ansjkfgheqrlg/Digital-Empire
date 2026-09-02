@@ -1,0 +1,74 @@
+{
+  "kind": "single-video",
+  "id": "T7PPX5M6Puo",
+  "title": "Claude Code + Codex: Il Setup di cui NESSUNO Parla",
+  "url": "https://www.youtube.com/watch?v=T7PPX5M6Puo",
+  "duration_sec": 1852,
+  "uploader": "Riccardo Belli Contarini",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Introduzione"
+    },
+    {
+      "start": 30,
+      "title": "Chi è Martes AI e cosa facciamo"
+    },
+    {
+      "start": 83,
+      "title": "Claude Code vs Codex: punti di forza e debolezze"
+    },
+    {
+      "start": 196,
+      "title": "Il metodo: chi costruisce e chi giudica"
+    },
+    {
+      "start": 240,
+      "title": "Plugin Codex per Claude Code e i 5 comandi chiave"
+    },
+    {
+      "start": 380,
+      "title": "I due modi migliori per usarli insieme"
+    },
+    {
+      "start": 504,
+      "title": "Come installare il plugin Codex passo passo"
+    },
+    {
+      "start": 650,
+      "title": "Review di un'app reale pronta per la produzione"
+    },
+    {
+      "start": 842,
+      "title": "Review di un secondo progetto prima del lancio"
+    },
+    {
+      "start": 1158,
+      "title": "Audit di sicurezza approfondito con Codex"
+    },
+    {
+      "start": 1415,
+      "title": "Creare il piano con Claude e farlo contestare da Codex"
+    },
+    {
+      "start": 1579,
+      "title": "Altri comandi utili: security review e codex transfer"
+    },
+    {
+      "start": 1669,
+      "title": "Quanto costa questa combo e quale piano conviene"
+    },
+    {
+      "start": 1805,
+      "title": "Chiusura e come lavorare con Martes AI"
+    }
+  ],
+  "subs": [
+    "runs\\max17-v06-belli-codex\\T7PPX5M6Puo.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\max17-v06-belli-codex\\T7PPX5M6Puo.webp"
+  ],
+  "ingested_at": "2026-09-02T12:50:58",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=T7PPX5M6Puo"
+}

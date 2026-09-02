@@ -21,6 +21,24 @@ Before launching subagents, perform these discovery steps:
 
 Use `WebFetch` to retrieve the homepage and up to 5 key interior pages (pricing, about, product/features, blog, contact). Store raw content for subagent consumption.
 
+### 1.1b Live Verification Pass (Browser Reale)
+
+Prima di lanciare i 5 subagent, verifica dal vivo i claim piu critici del sito target con un browser realmente renderizzato, non solo con l'HTML statico di `WebFetch`. Un audit basato solo su fetch statico puo affermare cose false su un sito che in browser si comporta diversamente: contenuto iniettato via JavaScript, elementi che appaiono solo dopo un'interazione, dati che il fetch statico non vede (fonte: yJOCyyP77bA -- Giovanni Beggiato, 13:28).
+
+**Cosa si controlla nel browser reale:**
+- Rendering effettivo vs HTML statico: il DOM dopo il rendering JS mostra elementi (traduzioni, hreflang, testi, prezzi) assenti dal solo HTML grezzo?
+- CTA cliccabili: i pulsanti/i link principali (es. "Prenota ora", "Aggiungi al carrello") e il numero di telefono sono realmente cliccabili e portano dove promettono?
+- Percorso di checkout/contatto fino in fondo: segui il flusso reale (aggiungi al carrello -> checkout, oppure invia il modulo di contatto) fino al punto piu avanzato raggiungibile senza pagare o inviare davvero.
+- Elementi che appaiono solo con JS: popup, banner, spese di spedizione o altre informazioni rivelate solo dopo un'azione (scroll, click, inserimento indirizzo).
+
+**Come si registra l'esito:** in due liste esplicite nel report finale, prima dell'aggregazione:
+- **Verificato dal vivo** -- claim confermati con un gesto reale nel browser (es. "spedizione gratis sopra soglia X: confermato, appare al checkout dopo l'indirizzo").
+- **Smentito dal vivo** -- claim che il fetch statico avrebbe dato per veri o per falsi, e che il browser reale contraddice (es. "hreflang assenti nel fetch statico, ma presenti nel DOM renderizzato").
+
+**Perche serve:** un audit basato su HTML statico puo affermare cose false su un sito che in browser si comporta diversamente -- e il fetch statico non ha modo di distinguere un vero difetto da un limite proprio del fetch. Esempio osservato: un fetch statico avrebbe segnalato hreflang assenti e categorie non tradotte come difetti reali del sito, entrambi smentiti dal rendering effettivo nel browser (fonte: yJOCyyP77bA -- Giovanni Beggiato, 13:28).
+
+Se non e disponibile un MCP browser (Playwright/Puppeteer) nel progetto -- oggi non ce n'e uno configurato in `.mcp.json` -- dichiara esplicitamente questo limite nel report finale invece di presentare i claim statici come verificati.
+
 ### 1.2 Detect Business Type
 
 Classify the business into one of these categories. This classification shapes every subagent's analysis focus:
@@ -94,6 +112,8 @@ Evaluates:
 - Pricing relative to likely competitors
 - Feature differentiation signals
 - Review/reputation presence on third-party sites
+
+**Regola: mai concorrenti inventati.** Ogni competitor citato deve avere una fonte verificabile riportata nel report (es. Google Places, registro imprese, ricerca web con URL). Se un competitor non ha una fonte citabile, non va incluso nell'elenco (fonte: yJOCyyP77bA -- Giovanni Beggiato, 0:58).
 
 **Scores:** Competitive Positioning (0-100)
 

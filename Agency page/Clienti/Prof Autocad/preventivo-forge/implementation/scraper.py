@@ -8,8 +8,14 @@ di Playwright anche in headful. Soluzione che passa in AUTOMATICO: si lancia **G
 (non pilotato da Playwright) con la porta DevTools, e ci si collega via CDP (`connect_over_cdp`) per
 leggere la pagina già renderizzata. Fingerprint = browser vero → Akamai passa (IP residenziale).
 
-I dati veri NON sono in JSON-LD (mobile.de espone solo Organization/Breadcrumb): stanno in
-`window.__INITIAL_STATE__ → search.vip.ads.<id>.data.ad`. Il parser (S2) li normalizza.
+I dati veri NON sono in JSON-LD (mobile.de espone solo Organization/Breadcrumb).
+
+DOVE STANNO I DATI — due formati, entrambi supportati:
+  1. `window.__INITIAL_STATE__ → search.vip.ads.<id>.data.ad`  (sito "vecchio", fino a lug 2026)
+  2. payload RSC di Next.js: `self.__next_f.push([1,"..."])` → riga `"listing":{...}`
+     (sito nuovo, da ago/set 2026: mobile.de è passato a Next.js App Router e
+     `window.__INITIAL_STATE__` NON esiste più. Vedi E12 in REGISTRO-ERRORI.md.)
+Il parser (S2) li normalizza: il formato 2 viene riportato alla forma del formato 1.
 
 Modi:
   - live (default): Chrome reale + CDP.
@@ -122,7 +128,8 @@ def _fetch_live_cdp(ctx: RunContext, cfg: dict[str, Any]) -> tuple[str, str | No
                     if cur:
                         html = cur
                         low = cur.lower()
-                        if "window.__initial_state__" in low:
+                        # due formati accettati: __INITIAL_STATE__ (vecchio) e payload Next.js (nuovo)
+                        if _has_ad_payload(cur):
                             got_state = True
                         challenge = any(m in low for m in CHALLENGE_MARKERS) or "zugriff verweigert" in low
                         if got_state and not challenge:
@@ -275,7 +282,9 @@ def _build_raw(ctx: RunContext, html: str, base_url: str, method: str,
     soup = BeautifulSoup(html, "lxml")
     warnings: list[str] = []
 
-    ad = _extract_initial_state(html)          # dati veri mobile.de (primario)
+    ad = _extract_initial_state(html)          # formato 1 (sito vecchio)
+    if not ad:
+        ad = _extract_next_flight(html)        # formato 2 (Next.js/RSC, sito nuovo)
     jsonld = _extract_jsonld(soup, warnings)   # fallback
     dom = _extract_dom(soup, warnings)         # fallback
 
@@ -285,7 +294,8 @@ def _build_raw(ctx: RunContext, html: str, base_url: str, method: str,
         image_urls = _extract_image_urls(soup, jsonld, base_url, warnings)
 
     if not ad:
-        warnings.append("window.__INITIAL_STATE__ non trovato: parser userà JSON-LD/DOM (dati ridotti)")
+        warnings.append("dati annuncio non trovati (né __INITIAL_STATE__ né payload Next.js): "
+                        "parser userà JSON-LD/DOM (dati ridotti)")
 
     raw: dict[str, Any] = {
         "source_url": ctx.source_url,
@@ -370,10 +380,189 @@ def _images_from_ad(ad: dict) -> list[str]:
         if not src and g.get("srcSet"):
             src = g["srcSet"].split(",")[-1].strip().split(" ")[0]
         if src:
-            src = re.sub(r"rule=mo-\d+w?", "rule=mo-1600", src)
+            # NB: `(?=$|&)` protegge `rule=mo-1600.jpg` del payload nuovo — senza,
+            # veniva riscritto in `rule=mo-1600` e mobile.de serviva AVIF, che poi
+            # veniva salvato come .jpg e faceva fallire il Gate IMG / il PDF.
+            src = re.sub(r"rule=mo-\d+w?(?=$|&)", "rule=mo-1600", src)
             if src not in out:
                 out.append(src)
     return out
+
+
+# --- payload Next.js / RSC (mobile.de nuovo, da ago-set 2026) --------------- #
+# mobile.de ha smesso di esporre `window.__INITIAL_STATE__`: l'annuncio ora arriva nel
+# payload React Server Components iniettato come `self.__next_f.push([1,"<flight>"])`.
+# Dentro il flight c'è la riga `"listing":{...}` con TUTTO (attributi, optional, foto,
+# prezzo, venditore). La descrizione è un RIFERIMENTO (`"$43"`) a una riga di testo.
+_NEXT_PUSH_RE = re.compile(r"self\.__next_f\.push\((\[.*?\])\)", re.S)
+
+
+def _flight_buffer(html: str) -> str:
+    """Concatena i chunk RSC in un unico buffer di testo."""
+    parts: list[str] = []
+    for raw in _NEXT_PUSH_RE.findall(html):
+        try:
+            arr = json.loads(raw)
+        except Exception:
+            continue
+        if isinstance(arr, list) and len(arr) > 1 and isinstance(arr[1], str):
+            parts.append(arr[1])
+    return "".join(parts)
+
+
+def _flight_rows(buf: str) -> dict[str, str]:
+    """Righe del flight: `<id>:<json>` oppure `<id>:T<hexlen>,<testo>` (len in BYTE utf-8)."""
+    rows: dict[str, str] = {}
+    data = buf.encode("utf-8", "surrogatepass")
+    i, n = 0, len(data)
+    while i < n:
+        j = data.find(b":", i)
+        if j < 0:
+            break
+        rid = data[i:j].decode("utf-8", "ignore")
+        if not rid or len(rid) > 8 or not re.fullmatch(r"[0-9a-fA-F]+", rid):
+            nl = data.find(b"\n", i)
+            if nl < 0:
+                break
+            i = nl + 1
+            continue
+        k = j + 1
+        if data[k:k + 1] == b"T":                      # riga di TESTO con lunghezza esplicita
+            c = data.find(b",", k)
+            try:
+                length = int(data[k + 1:c].decode("ascii"), 16)
+            except Exception:
+                length = 0
+            rows.setdefault(rid, data[c + 1:c + 1 + length].decode("utf-8", "ignore"))
+            i = c + 1 + length
+            if data[i:i + 1] == b"\n":
+                i += 1
+            continue
+        nl = data.find(b"\n", k)
+        if nl < 0:
+            nl = n
+        rows.setdefault(rid, data[k:nl].decode("utf-8", "ignore"))
+        i = nl + 1
+    return rows
+
+
+def _brace_slice(s: str, start: int) -> str | None:
+    """Ritaglia l'oggetto JSON bilanciato che comincia in `start` (rispetta stringhe ed escape)."""
+    depth, in_str, esc = 0, False, False
+    for i in range(start, len(s)):
+        ch = s[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                return s[start:i + 1]
+    return None
+
+
+def _flight_listing(buf: str) -> dict | None:
+    """Trova l'oggetto `listing` completo (quello con attributi + marca)."""
+    best: dict | None = None
+    best_len = 0
+    for m in re.finditer(r'"listing"\s*:\s*\{', buf):
+        start = buf.index("{", m.end() - 1)
+        chunk = _brace_slice(buf, start)
+        if not chunk:
+            continue
+        try:
+            d = json.loads(chunk)
+        except Exception:
+            continue
+        if isinstance(d, dict) and d.get("attributes") and (d.get("make") or d.get("makeKey")):
+            if len(chunk) > best_len:
+                best, best_len = d, len(chunk)
+    return best
+
+
+def _flight_deref(val: Any, rows: dict[str, str]) -> Any:
+    """Risolve i riferimenti del flight (es. htmlDescription = "$43")."""
+    if isinstance(val, str) and re.fullmatch(r"\$[0-9a-fA-F]{1,6}", val):
+        return rows.get(val[1:], "")
+    return val
+
+
+def _flight_localized(v: Any) -> Any:
+    """make/model ora sono {"id","localized"}, non più stringhe."""
+    if isinstance(v, dict):
+        return v.get("localized") or v.get("name") or v.get("id")
+    return v
+
+
+def _flight_image_urls(listing: dict) -> list[str]:
+    """Le foto ora sono {"uri": "img.classistatic.de/.../<uuid>"}: senza schema né dimensione.
+    `?rule=mo-1600.jpg` = versione grande in JPEG (senza `.jpg` mobile.de serve AVIF)."""
+    out: list[str] = []
+    for img in listing.get("images") or []:
+        uri = (img.get("uri") if isinstance(img, dict) else str(img or "")).strip()
+        if not uri:
+            continue
+        if uri.startswith("//"):
+            uri = "https:" + uri
+        elif not uri.startswith("http"):
+            uri = "https://" + uri
+        if "?" not in uri:
+            uri = uri + "?rule=mo-1600.jpg"
+        if uri not in out:
+            out.append(uri)
+    return out
+
+
+def _extract_next_flight(html: str) -> dict | None:
+    """Estrae l'annuncio dal payload Next.js e lo riporta alla forma del vecchio `.ad`,
+    così il parser S2 (`_from_initial_state`) resta identico."""
+    buf = _flight_buffer(html)
+    if not buf:
+        return None
+    listing = _flight_listing(buf)
+    if not listing:
+        return None
+    rows = _flight_rows(buf)
+
+    ad = dict(listing)
+    ad["make"] = _flight_localized(listing.get("make")) or listing.get("makeKey")
+    ad["model"] = _flight_localized(listing.get("model")) or listing.get("modelKey")
+
+    price = listing.get("price") or {}
+    grs = price.get("grs") if isinstance(price.get("grs"), dict) else {}
+    amount = grs.get("amount", price.get("grossAmount"))
+    ad["price"] = {
+        "grossAmount": float(amount) if amount is not None else None,
+        "currency": grs.get("currency") or "EUR",
+        "localized": grs.get("localized"),
+        "vat": price.get("vat") or price.get("type"),
+    }
+
+    ad["htmlDescription"] = _flight_deref(listing.get("htmlDescription"), rows) or ""
+    ad["features"] = [f for f in (listing.get("features") or []) if isinstance(f, str)]
+    ad["galleryImages"] = [{"src": u} for u in _flight_image_urls(listing)]
+    return ad
+
+
+def _has_ad_payload(html: str) -> bool:
+    """Vero se la pagina contiene GIÀ i dati dell'auto (uno dei due formati).
+    Controllo economico: gira nel loop di attesa a ogni giro."""
+    low = html.lower()
+    if "window.__initial_state__" in low:
+        return True
+    if "self.__next_f" not in low:
+        return False
+    # nel sorgente il JSON è dentro una stringa JS → le virgolette sono escapate
+    return ('\\"listing\\":{' in html or '"listing":{' in html)
 
 
 # --- fallback JSON-LD / DOM ------------------------------------------------- #

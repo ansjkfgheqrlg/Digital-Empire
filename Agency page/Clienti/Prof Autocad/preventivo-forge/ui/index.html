@@ -65,8 +65,9 @@
     border:1px solid var(--silver-200); border-radius:11px; padding:13px 14px;
     transition:border-color .16s ease, box-shadow .16s ease, background .16s ease; outline:none; user-select:text; font-family:inherit; }
   .input::placeholder{ color:#9aa6b1; }
-  .input:hover{ background:#fff; }
-  .input:focus{ background:#fff; border-color:var(--accent); box-shadow:0 0 0 4px rgba(91,111,125,.14); }
+  /* NB: background-COLOR, non la shorthand: `background:#fff` cancellerebbe la grana. */
+  .input:hover{ background-color:#fff; }
+  .input:focus{ background-color:#fff; border-color:var(--accent); box-shadow:0 0 0 4px rgba(91,111,125,.14); }
   textarea.input{ resize:vertical; min-height:112px; line-height:1.5; }
   .row{ display:flex; gap:14px; align-items:flex-end; margin-top:14px; }
   .row .grow{ flex:1; }
@@ -131,6 +132,56 @@
   .log::-webkit-scrollbar-thumb,.arch-grid::-webkit-scrollbar-thumb{ background:#c2cdd4; border-radius:8px; }
   .log::-webkit-scrollbar-thumb{ background:#3c4750; }
   .log::-webkit-scrollbar-track,.arch-grid::-webkit-scrollbar-track{ background:transparent; }
+
+  /* =========================================================================
+     GRANA — texture dentro OGNI elemento. Trasparente, senza colore proprio,
+     senza pellicole sovrapposte allo schermo.
+
+     Ogni tassello contiene due rumori simmetrici dalla stessa turbolenza:
+     granuli neri sopra la meta' e granuli bianchi sotto la meta'. Compensandosi,
+     la tinta media della superficie resta identica a prima (verificato a pixel:
+     scostamento < 1 livello su 255). Nessun mix-blend-mode, nessun ::before
+     fisso a schermo intero: la grana sta NEL fondo dell'elemento, sotto il
+     testo, che resta perfettamente nitido.
+     ========================================================================= */
+  body{
+    background-image:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.80' numOctaves='4' stitchTiles='stitch' seed='3'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.80' numOctaves='4' stitchTiles='stitch' seed='3'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.069'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.069'/></svg>"),
+      radial-gradient(1200px 600px at 15% -10%, #ffffff 0%, rgba(255,255,255,0) 55%),
+      linear-gradient(160deg,#eef1f4 0%, #e2e7eb 60%, #d7dee3 100%);
+    background-size:200px 200px, 100% 100%, 100% 100%;
+    background-attachment:fixed, fixed, fixed;
+  }
+  header{
+    background-image:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='190' height='190'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch' seed='5'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch' seed='5'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.075'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.075'/></svg>"),
+      linear-gradient(135deg,#2c363e 0%, #39464f 60%, #43525c 100%);
+    background-size:190px 190px, 100% 100%;
+  }
+  .card{      background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.90' numOctaves='4' stitchTiles='stitch' seed='7'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.90' numOctaves='4' stitchTiles='stitch' seed='7'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.063'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.063'/></svg>");   background-size:180px 180px; }
+  .arch-card{ background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.90' numOctaves='4' stitchTiles='stitch' seed='7'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.90' numOctaves='4' stitchTiles='stitch' seed='7'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.063'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.063'/></svg>");   background-size:180px 180px; }
+  .input{     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='170' height='170'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='4' stitchTiles='stitch' seed='11'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='4' stitchTiles='stitch' seed='11'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.060'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.060'/></svg>");  background-size:170px 170px; }
+  .arch-thumb{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='170' height='170'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='4' stitchTiles='stitch' seed='11'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='4' stitchTiles='stitch' seed='11'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.060'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.060'/></svg>");  background-size:170px 170px; }
+  .log{       background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='175' height='175'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='4' stitchTiles='stitch' seed='13'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='4' stitchTiles='stitch' seed='13'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.078'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.078'/></svg>");    background-size:175px 175px; background-attachment:local; }
+  .progress{  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='170' height='170'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='4' stitchTiles='stitch' seed='11'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='4' stitchTiles='stitch' seed='11'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.060'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.060'/></svg>");  background-size:140px 140px; }
+  .hbtn{      background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='1.00' numOctaves='4' stitchTiles='stitch' seed='19'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='1.00' numOctaves='4' stitchTiles='stitch' seed='19'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.066'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.066'/></svg>");   background-size:150px 150px; }
+  .brand .ver{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='1.00' numOctaves='4' stitchTiles='stitch' seed='19'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='1.00' numOctaves='4' stitchTiles='stitch' seed='19'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.066'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.066'/></svg>");   background-size:130px 130px; }
+  .btn{
+    background-image:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='1.00' numOctaves='4' stitchTiles='stitch' seed='17'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='1.00' numOctaves='4' stitchTiles='stitch' seed='17'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.072'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.072'/></svg>"),
+      linear-gradient(180deg,#556775 0%, #3f4f5a 100%);
+    background-size:150px 150px, 100% 100%;
+  }
+  .arch-open{ background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='1.00' numOctaves='4' stitchTiles='stitch' seed='17'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='1.00' numOctaves='4' stitchTiles='stitch' seed='17'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.072'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.072'/></svg>");    background-size:150px 150px; }
+  /* il select ha gia' la freccia come background-image: la grana le sta accanto */
+  select.input{
+    background-image:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%237b8894' stroke-width='2.2'><path d='M6 9l6 6 6-6'/></svg>"),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='170' height='170'><filter id='d' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='4' stitchTiles='stitch' seed='11'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  4 0 0 0 -2.08'/></filter><filter id='l' x='0%25' y='0%25' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='4' stitchTiles='stitch' seed='11'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.92'/></filter><rect width='100%25' height='100%25' filter='url(%23d)' opacity='0.060'/><rect width='100%25' height='100%25' filter='url(%23l)' opacity='0.060'/></svg>");
+    background-repeat:no-repeat, repeat;
+    background-position:right 12px center, 0 0;
+    background-size:14px 14px, 170px 170px;
+  }
 </style>
 </head>
 <body>

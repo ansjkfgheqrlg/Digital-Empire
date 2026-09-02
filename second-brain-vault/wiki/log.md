@@ -1119,3 +1119,84 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   la lunghezza del copy e' funzione del prezzo; nessuna garanzia di rimborso su nessuna pagina;
   piu' la pagina e' lunga piu' grassetta (dal 13% all'80% del corpo); incoerenza numerica diffusa
   sulla prova sociale (sei cifre per tre metriche).
+
+
+- INGEST (Empire Studio + Memory Empire): **batch max17, video 3/8** — `E8Ax92etrMc`
+  "Steal My Claude Code Keyword Research System to Rank #1 on Google" (Nico | AI Ranking, 13m20s, EN),
+  **400/400 frame letti — coverage 100%**, 58 KA (27 alta rilevanza DE), NO-FINTO PASS.
+  Chiusura di un gap a valle: pipeline Stage 1-5 gia' fatta, layer Memory Empire e wiki mai chiusi
+  — stesso pattern di `j4UInmM9kKA` il 2026-09-01. Nessuna nuova visione dei frame.
+  -> `memory-empire/knowledge/E8Ax92etrMc/` (contenuto-integrale 41 KB mai riassunto + atoms + manifest + enrichment-report),
+  **1 pagina wiki creata** (`sources/Source_Nico_AI_Ranking_Claude_Keyword_Research.md`), index.md aggiornato (nuova sezione "SEO & AI Search").
+- CONTENUTO: keyword research che parte dalle 5 fonti dove le domande sono gia' scritte (Reddit, recensioni
+  proprie **e di fino a 5 competitor**, People Also Ask, autocomplete, fan-out) invece che dai keyword tool.
+  **15 domande canoniche su 37 a volume di ricerca zero**, tutte da linguaggio cliente reale. Routing a 4
+  destinazioni (FAQ terminale / FAQ che linka fuori / pagina propria / video). Stack: Claude Opus 5 +
+  DataForSEO + Zernio MCP per Reddit, $0,59 a run, cadenza consigliata 1 volta ogni 6 mesi.
+- ENRICHMENT: **6 skill SEO valutate, 4 patchate, +70 / -0.**
+  `ai-seo/SKILL.md` (+27): la sezione "Query Fan-Out" diceva solo "brainstorm the 5-10 related queries" —
+  aggiunto il fan-out come **dato recuperabile** (AI Overview structure) con la soglia **1 blocco = FAQ /
+  2+ sezioni = pagina propria**, il box "currently cited" come set competitivo reale, il volume zero
+  non-scartabile con le convenzioni `0` vs `n/a`, e la tabella di routing a 4 destinazioni.
+  `market-seo/SKILL.md` (+27): il Content Gap Analysis usava due sole fonti Google — aggiunte Reddit,
+  recensioni proprie e dei competitor, autocomplete, deduplica in canonical questions, piu' la **gap
+  analysis 1-2 stelle vs 5 stelle** (gap ampio = differenziatore, gap stretto = table stakes).
+  `seo-audit/SKILL.md` (+12): "no major gaps in coverage" non e' falsificabile con un keyword tool.
+  `programmatic-seo/SKILL.md` (+4): il volume e' il gate giusto per il *pattern*, sbagliato per le *pagine
+  dentro* il pattern — col proprio freno anti-thin-content.
+- NON arricchite, dichiarato: `site-seo` (opera su contenuto gia' deciso: meta tag, JSON-LD, sitemap — il
+  video non tocca quel perimetro) e `schema` (il video non parla **mai** di structured data; l'unica
+  connessione immaginabile e' gia' coperta dalla riga `FAQPage | FAQ content | mainEntity`).
+- RISERVA SULLA FONTE: nessun risultato di ranking o traffico mostrato, fonte singola e autopromozionale,
+  e il report scorso in video ("Roofing, Dallas") **non e' l'output del prompt digitato in demo**
+  ("plumbing, Austin") — numeri diversi. Registrato in manifest, atoms (KA-056) e pagina wiki.
+- DEBITO APERTO: RULES §6 non eseguita (nessun checkpoint in `company/Memory/`, `STATO-EMPIRE.md` non
+  aggiornato) e **nessun commit git**, come da vincolo di sessione. Le altre 5 run del batch max17
+  (v04-trivellato, v05-jaye, v06-belli, v07-rizzo, v08-herk) hanno lo stesso gap: verificato, layer
+  Memory Empire assente per tutte.
+
+- AGENTE CREATO: **CONOSCENZA-EMPIRE** (`.claude/agents/conoscenza-empire.md`, ID registro
+  `KNOW-EMPIRE-001`), direttiva Max 2026-09-02. Gerarchia **LX -- accanto al Mandato e all'organo
+  MAXIMILIAN, sopra il Board C-Suite**, supervisore EMPERATOR. Biblioteca vivente dell'Impero:
+  possiede le 7 fonti di conoscenza (archivio video vivo, wiki, formazione su disco, framework
+  proprietari, piani/ADR, competitor, skill/agenti) e le distribuisce a qualunque agente/skill/
+  workflow sempre con la fonte esatta -- legge della fonte + 3 divieti (non inventa, non confonde
+  fatto e inferenza, non appiana contraddizioni). Secondo mestiere: quando arriva conoscenza nuova,
+  dice le 5 destinazioni (cosa migliorare / skill nuova / agente nuovo / workflow nuovo / esistente
+  da potenziare, con nomi veri). Registrazione in `company/REGISTRO-IMPRESA.md` sezione ORGANI gia'
+  fatta (riga KNOW-EMPIRE-001). **1 pagina wiki creata**: `tools/Tool_Conoscenza_Empire_Agente.md`
+  (cross-link a Piano Maestro EMPIRE OS, indice ADR, memory-wiki-bridge, Memory Empire, NERVE-SOLVE),
+  index.md aggiornato (sezione "AI Orchestration").
+
+- INGEST (Empire Studio + Memory Empire): **batch max17, video 2/8** -- `yJOCyyP77bA`
+  "Ho creato un intero team di marketing AI con Claude Code in 20 minuti" (Giovanni Beggiato / Gentes AI, 19m54s, IT),
+  **165/165 frame unici letti -- coverage 100%**, 77 KA (21 alta rilevanza DE), NO-FINTO PASS.
+  Chiusura di un gap a valle: pipeline Empire Studio gia' fatta in sessioni precedenti, layer Memory
+  Empire e wiki mai chiusi -- stesso pattern di `E8Ax92etrMc` oggi. Nessuna nuova visione dei frame.
+  -> `memory-empire/knowledge/yJOCyyP77bA/` (contenuto-integrale mai riassunto + atoms + manifest + enrichment-report),
+  **1 pagina wiki creata** (`sources/Source_Giovanni_Beggiato_Team_Marketing_AI.md`), index.md aggiornato
+  (nuova sezione "Marketing AI & Agency Teams").
+- CONTENUTO: team di 6 agenti Claude Code specialisti (Stratega, Analista Concorrenza, Specialista SEO,
+  Copywriter, Esperto Conversioni, Media Buyer) + 1 orchestratore. Da un solo URL e un solo prompt
+  ("attiva il mio marketing team su questo URL") produce pagella, mappa opportunita', campagne ads,
+  funnel, piano SEO, sequenza email, calendario social, piano 90 giorni + PDF cliente in 20 minuti.
+  Regola di squadra: ogni voto cita il sito, mai numeri inventati, difetti provati nel browser vero.
+  Verifica dal vivo dimostrata sul caso reale (Marco Calzature): browser renderizzato (Chrome via MCP)
+  smentisce claim del fetch statico (hreflang, traduzioni JS, spedizioni), voto Conversione ricalcolato
+  6.0->6.5 dentro lo stesso deliverable dopo la verifica.
+- ENRICHMENT: **2 artefatti reali valutati (`market-audit`, `market-competitors`) + 1 dichiarato assente
+  (`market-competitive` come file standalone -- non esiste, verificato con `find` su `.claude/skills/`
+  e `.claude/agents/`). 2 file patchati, +22 / -0.**
+  `market-audit/SKILL.md` (+18): nuovo paragrafo 1.1b "Live Verification Pass (Browser Reale)" subito
+  dopo 1.1 "Fetch the Target URL" (che oggi usa solo `WebFetch`) -- cosa controllare nel browser reale
+  (rendering vs statico, CTA cliccabili, checkout/contatto fino in fondo, elementi solo-JS), come
+  registrare l'esito (liste "Verificato dal vivo" / "Smentito dal vivo"), dichiarazione esplicita che
+  oggi `.mcp.json` di progetto non ha un MCP browser configurato (solo `claude-flow`, disconnesso).
+  `market-audit/SKILL.md` (+2): dentro "Subagent 3: market-competitive", regola "mai concorrenti
+  inventati -- fonte verificabile obbligatoria per ogni competitor citato".
+  `market-competitors/SKILL.md` (+2): stessa regola, applicata a `COMPETITOR-REPORT.md`.
+- NON costruito, dichiarato: skill nuova `live-verification` e agente nuovo `competitor-kyc` --
+  proposte reali del video, non costruite di iniziativa. Registrate **B-034** e **B-035** in
+  `company/Memory/BACKLOG.md`, da approvare da Max.
+- DEBITO APERTO: nessun checkpoint in `company/Memory/`, `STATO-EMPIRE.md` non aggiornato (fuori dal
+  perimetro esplicito di questo brief) e **nessun commit git**, come da vincolo di sessione.

@@ -58,13 +58,19 @@ def price(ctx: RunContext, dealer: dict[str, Any]) -> dict[str, Any]:
         fixed_2=pr.get("fixed_2", 1500.0),
     )
 
-    # titolo: usa il nome IT se Half B l'ha già prodotto, altrimenti i campi raw
+    # titolo: usa il nome IT se Half B l'ha già prodotto, altrimenti i campi raw.
+    # (Prima leggeva SEMPRE i campi raw: con un allestimento tedesco — es. `trimLine`
+    # "Leder" — la parola finiva nel titolo del PDF pur avendo il Gate B verde. E13)
     listing_it = load_json(ctx.listing_it_path) if ctx.listing_it_path.exists() else {}
     content = listing_it.get("content") or {}
     make = listing.get("make")
     model = listing.get("model")
-    variant = listing.get("variant")
-    final_title = build_title(make, model, variant, breakdown["final_eur"])
+    variant = listing_it.get("variant") or listing.get("variant")
+    title_it = str(content.get("title_it") or "").strip()
+    if title_it:
+        final_title = f"{' '.join(title_it.split())} {format_eur(breakdown['final_eur'])} €"
+    else:
+        final_title = build_title(make, model, variant, breakdown["final_eur"])
 
     price_block = {
         "listed_eur": breakdown["listed_eur"],

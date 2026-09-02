@@ -119,6 +119,10 @@ You can layer multiple playbooks (e.g., "Best coworking spaces in San Diego").
 - Volume distribution (head vs. long tail)
 - Trend direction
 
+**Calibration — volume is a filter, not the whole gate.** Aggregate volume is the right test for a *pattern* (is there a market for "[service] in [city]" at all?). It is the wrong test for the individual pages inside the pattern. Questions harvested from real customer language — Reddit threads, review text, People Also Ask, autocomplete, fan-out — frequently return a search volume of 0 and are still worth answering, because coverage of the topic is what gets retrieved by both Google's fan-out and the AI engines. In one published run, 15 of 37 canonical questions had zero Google volume and every one came from something a customer had actually written. Two conventions to keep in the keyword sheet: `0` means queried and genuinely zero; `n/a` means it could not be queried at all, because Google Ads rejects keywords over ten words.
+
+**Where a zero-volume question belongs.** Not every one of them earns a URL — that is how you get thin pages. Use the AI Overview's own structure as the cut: if the answer comes back as a single block, it is an FAQ entry on an existing page; if the AI Overview splits it into **two or more sections**, it cannot be answered in a paragraph and has earned its own page. This keeps the "quality over quantity" principle intact while still capturing demand the volume column cannot see. (fonte: E8Ax92etrMc — Nico | AI Ranking, 05:08 e 11:24)
+
 ### 2. Data Requirements
 
 **Identify data sources:**

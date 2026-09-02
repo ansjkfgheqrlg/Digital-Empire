@@ -273,6 +273,33 @@ Methodology for identifying content gaps:
 |---|---|---|---|---|
 | [Topic] | High/Med/Low | High/Med/Low | Blog/Guide/Tool/Page | 1-5 |
 
+#### Customer-language mining (fonti oltre PAA e related searches)
+
+I passi 4-5 sopra usano due fonti Google. Ce ne sono altre tre dove le domande dei clienti sono gia' scritte, e che i keyword tool classici non mostrano:
+
+| Fonte | Cosa tira fuori | Come si raccoglie |
+|---|---|---|
+| **Reddit** | Il problema formulato con le parole del cliente, prima che diventi una query pulita | Thread di settore; in mancanza di accesso API, fallback `site:reddit.com` sulla SERP — funziona, ma perdi i comment count e il segnale di domanda e' piu' debole (limite da dichiarare nel report) |
+| **Recensioni Google — proprie e di fino a 5 competitor** | Obiezioni e attriti che nessuno scrive mai su Google come query | Estrazione delle recensioni on-topic, poi clustering per attributo ricorrente |
+| **Autocomplete** | Le varianti reali di formulazione della stessa domanda | Suggerimenti su prefisso di query |
+
+Le domande cosi' raccolte vanno **deduplicate in "canonical questions"** prima di entrare nella tabella dei gap.
+
+**Calibrazione della colonna "Search Volume Potential":** un volume di ricerca pari a zero non squalifica la riga. In una run pubblicata, 15 domande canoniche su 37 avevano volume Google zero ed erano tutte tratte da qualcosa che un cliente aveva scritto davvero. Distingui sempre `0` (interrogato, genuinamente zero) da `n/a` (non interrogabile — Google Ads rifiuta keyword sopra le dieci parole, che e' esattamente la forma di una domanda vera). Una riga a volume zero puo' comunque meritare una FAQ sulla pagina servizio; non merita quasi mai una pagina propria. (fonte: E8Ax92etrMc — Nico | AI Ranking, 05:08 e 11:18)
+
+#### Gap analysis sulle recensioni: differenziatore vs table stakes
+
+Le recensioni non servono solo come social proof: la distribuzione degli attributi citati **spontaneamente** dice cosa mettere in pagina. Confronta, per ogni attributo ricorrente, la quota di menzioni nelle recensioni 1-2 stelle contro quella nelle 5 stelle:
+
+| Lettura | Significato | Azione |
+|---|---|---|
+| **Gap ampio** tra le due colonne | L'attributo separa chi e' contento da chi non lo e' | E' un differenziatore reale: va detto esplicitamente in pagina |
+| **Gap stretto** | Tutti lo citano, o nessuno | E' table stakes: metterlo in pagina non fa guadagnare nulla |
+
+Esempio reale su 941 recensioni (44 a 1-2 stelle, 880 a 5 stelle): *"Stood behind the work"* 15,9% vs 3,5% — gap ampio, differenziatore. *"Cleaned up after themselves"* 4,5% vs 6,6% — gap stretto, table stakes.
+
+**Avvertenza sul campione:** con poche decine di recensioni negative la colonna 1-2 stelle e' un campione piccolo e va letta "come direzione, non come precisione". Dichiarala nel report invece di presentare le percentuali come misure. (fonte: E8Ax92etrMc — Nico | AI Ranking, 10:40)
+
 ### Step 7: Featured Snippet Optimization
 
 Identify opportunities to capture featured snippets:

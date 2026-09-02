@@ -1,0 +1,106 @@
+{
+  "video_id": "yJOCyyP77bA",
+  "title": "Ho creato un intero team di marketing AI con Claude Code in 20 minuti",
+  "channel": "Giovanni Beggiato (Gentes AI)",
+  "url": "https://www.youtube.com/watch?v=yJOCyyP77bA",
+  "run": "max17-v02-beggiato-team",
+  "run_path": "empire-studio/runs/max17-v02-beggiato-team",
+  "category": "max17-marketing-ai-teams",
+  "duration_s": 1194,
+  "duration_human": "19m54s",
+  "language": "it",
+  "format": "talking-head + slide Excalidraw + screen-share IDE (Antigravity) + scroll di deliverable HTML/PDF",
+  "upload_date": "2026-07-29",
+  "view_count_at_ingest": 4381,
+  "ingested_at": "2026-09-02",
+  "stageC_date": "2026-09-02",
+  "frames": {
+    "total_dense": 597,
+    "interval_sec": 2.0,
+    "unique_scenes": 165,
+    "frames_read_natively": 165,
+    "all_read_native_vision": true,
+    "coverage_pct": 100,
+    "frames_skipped_below_threshold": 432,
+    "frames_unreadable": 0,
+    "no_finto_status": "PASS",
+    "note": "scene_detector.py, soglia 3.0. Righe 1-23 di scenes.md guardate in sessione precedente (documentate in notes_working.md), righe 24-165 guardate integralmente in questa sessione a blocchi di 5. Dettaglio in coverage.md."
+  },
+  "transcript": {
+    "file": "yJOCyyP77bA.it.vtt / transcript_clean.txt",
+    "language": "it",
+    "kind": "auto-generated rolling captions",
+    "raw_lines": 994,
+    "unique_words_after_merge": 3154,
+    "blocks_30s": 40,
+    "all_lines_read": true,
+    "timestamps_preserved": true,
+    "dedup_artifact": "empire-studio/runs/max17-v02-beggiato-team/transcript_dedup_ts.md"
+  },
+  "knowledge_atoms": 77,
+  "atoms_by_relevance": {"alta": 21, "media": 51, "bassa": 5},
+  "atoms_by_confidence": {"osservato": 76, "inferito": 1},
+  "output_files": {
+    "video_analysis": "empire-studio/runs/max17-v02-beggiato-team/video-analysis.md",
+    "coverage": "empire-studio/runs/max17-v02-beggiato-team/coverage.md",
+    "transcript_dedup": "empire-studio/runs/max17-v02-beggiato-team/transcript_dedup_ts.md",
+    "contenuto_integrale": "memory-empire/knowledge/yJOCyyP77bA/contenuto-integrale.md",
+    "atoms": "memory-empire/knowledge/yJOCyyP77bA/atoms.json",
+    "ingestion_log": "memory-empire/memory/ingestions/2026-09-02-giovanni-beggiato-team-marketing-ai.md",
+    "audit_log": "memory-empire/memory/audit/2026-09-02-yJOCyyP77bA-stage-g.md"
+  },
+  "wiki_pages_created": [
+    "second-brain-vault/wiki/sources/Source_Giovanni_Beggiato_Team_Marketing_AI.md"
+  ],
+  "wiki_pages_updated": [
+    "second-brain-vault/wiki/index.md",
+    "second-brain-vault/wiki/log.md"
+  ],
+  "key_topics": [
+    "Team di 6 agenti specialisti (Stratega, Analista Concorrenza, Specialista SEO, Copywriter, Esperto Conversioni, Media Buyer) + 1 orchestratore, tutti in parallelo",
+    "Regola 'mai concorrenti inventati': P.IVA dal sito -> Registro Imprese -> codice ATECO -> concorrenti reali",
+    "Pattern architetturale: skill per ogni deliverable (11 skill in team-marketing-AI/skills/) + cartella squadra/ con i file agente .md",
+    "File agente reale letto: copywriter-pmi.md (frontmatter name/description/tools, corpo con checklist di riconoscimento testo debole)",
+    "Prompt di attivazione singolo in linguaggio naturale: 'Per favore attiva il mio marketing team su questo URL: <url>'",
+    "Verifiche dal vivo con browser renderizzato (Chrome via MCP): click, add-to-cart, checkout abbandonato -- smentiscono claim che un fetch statico avrebbe dato per veri (hreflang, traduzioni JS, spedizioni)",
+    "Voto ricalcolato dentro lo stesso deliverable (Conversione 6.0->6.5) dopo la verifica dal vivo",
+    "Blocco 'Ipotesi dichiarate' come pattern di trasparenza epistemica verso il cliente",
+    "Mappa delle opportunita: matrice impatto/sforzo a 4 quadranti (Fai subito/Pianifica/Opzionale/Lascia stare), 12 mosse ordinate",
+    "Deliverable doppio: HTML aggregato per uso interno (8 tab) + PDF impaginato per il cliente"
+  ],
+  "numeri_reali_dichiarati": [
+    "Durata totale del processo (dal link al piano completo): 20 minuti",
+    "Voto finale Marco Calzature: 5.6/10 (Messaggio 6.0, Trovabilita 5.0, Conversione 6.5, Concorrenza 3.5, Crescita 7.0)",
+    "6 concorrenti reali trovati con fonte citata (Turci 4.9/1176, Velasca 4.8/542, Musto 4.8/406, GHIGO 4.4/476, Walter 4.6/299, Pepperina 4.8/187)",
+    "Volumi di ricerca mensili mancanti: sneakers donna 90.500, ballerine donna 60.500, sandali donna 40.500",
+    "Budget ads raccomandato: 1.200 EUR/mese (40 EUR/giorno: 14/14/12 tra Meta A, Meta B, Google)",
+    "Community Skool Avanguardia Plus: 91 membri al momento della registrazione"
+  ],
+  "tool_citati": [
+    "Antigravity IDE (VS Code-like) -- interfaccia usata per lanciare il run",
+    "Chrome via MCP -- browser controllato per le verifiche dal vivo (nome del provider MCP non mostrato)",
+    "API non nominate per volumi di ricerca, registro imprese, Google Places -- il narratore dichiara di averle ma non ne mostra i nomi a schermo, rimanda alla community a pagamento",
+    "Company Brain -- second-brain locale dell'autore, root filesystem del sistema"
+  ],
+  "avvertenza_metodologica": "Il video mostra un solo run pulito, mai un secondo tentativo o una correzione manuale in diretta, pur dichiarando a parole che il processo normale prevede iterazioni ('non e mai one-shot'). Il salto tra 'incolliamo il link' (12:40) e 'ho questi due output' (12:46) non mostra il tempo reale di esecuzione. L'orchestratore stesso e il codice degli altri 4 file agente non vengono mai mostrati.",
+  "limiti_dichiarati_dal_video": [
+    "Nessun nome di provider API mostrato a schermo (registro imprese, volumi di ricerca, Google Places)",
+    "Solo 1 file agente su 6 aperto e mostrato (copywriter-pmi.md), e solo parzialmente (sezione 'Come riscrivi' tagliata fuori frame)",
+    "Nessuna configurazione di orchestrazione multi-agente mostrata (subagent standard? Task tool? script esterno?)",
+    "Registro imprese non interrogato per questa run specifica (KYC dichiarato 'in corso' nel deliverable), quindi la regola 'mai concorrenti inventati' si appoggia in questo caso solo su Google Places + ricerca web, non sulla catena P.IVA->ATECO completa promessa a parole"
+  ],
+  "segmento_promozionale": "Presentazione agenzia Gentes AI (00:12-00:57) e CTA finale (18:59-19:54) verso la community Skool 'Avanguardia Plus' e il corso 'Claude Code Corso Completo (4h)'. Contenuto misto educativo/promozionale, dichiarato.",
+  "p12_traceability": true,
+  "stages_completed": ["C-archive", "D-enrichment", "E-gate", "F-apply", "G-audit", "H-report"],
+  "enrichment_summary": {
+    "skill_valutate": 2,
+    "skill_patchate": 2,
+    "skill_non_toccate": 0,
+    "skill_non_esistenti_dichiarate": 1,
+    "patch_totali": 3,
+    "righe_aggiunte": 51,
+    "cancellazioni": 0
+  },
+  "processing_notes": "Pipeline Empire Studio Stage 1-5 gia' eseguita in sessioni precedenti (video-analysis.md, atoms.json, coverage.md gia' su disco, coverage 165/165 frame unici, NO-FINTO PASS). Memory Empire Stage C-H chiuso il 2026-09-02, senza nuova visione dei frame: video-analysis.md e atoms.json esistenti riusati e normalizzati/espansi, transcript_clean.txt ri-processato con merge per sovrapposizione di parole e timestamp conservati (994 righe grezze -> 3.154 parole uniche in 40 blocchi da 30s). Nessun commit git eseguito in questa sessione.",
+  "gap_verificato": "Verificato di persona in questa sessione (non solo dichiarato dal video-analysis.md preesistente): .claude/skills/market-audit/SKILL.md Phase 1 usava solo WebFetch (sezione 1.1 'Fetch the Target URL'), nessun passaggio di verifica browser reale prima del lancio dei 5 subagent; .mcp.json a livello di progetto contiene solo il server claude-flow (disconnesso in sessione), nessun MCP Playwright/Puppeteer configurato."
+}

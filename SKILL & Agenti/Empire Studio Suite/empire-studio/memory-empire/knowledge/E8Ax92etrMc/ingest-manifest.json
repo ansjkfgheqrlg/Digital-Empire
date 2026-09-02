@@ -1,0 +1,110 @@
+{
+  "video_id": "E8Ax92etrMc",
+  "title": "Steal My Claude Code Keyword Research System to Rank #1 on Google",
+  "channel": "Nico | AI Ranking",
+  "url": "https://www.youtube.com/watch?v=E8Ax92etrMc",
+  "run": "max17-v03-nico-seo",
+  "run_path": "empire-studio/runs/max17-v03-nico-seo",
+  "category": "max17-seo-ai-search",
+  "duration_s": 800,
+  "duration_human": "13m20s",
+  "language": "en",
+  "format": "screen-share-walkthrough + talking-head PiP + scroll di un report HTML",
+  "ingested_at": "2026-09-02",
+  "stage1_date": "2026-09-02",
+  "stage2_date": "2026-09-02",
+  "stage3_date": "2026-09-02",
+  "stageC_date": "2026-09-02",
+  "frames": {
+    "total": 400,
+    "interval_sec": 2,
+    "frame_naming": "3-digit (frame-001 to frame-400)",
+    "frames_read_natively": 400,
+    "all_read_native_vision": true,
+    "coverage_pct": 100,
+    "frames_skipped": 0,
+    "frames_unreadable": 0,
+    "no_finto_status": "PASS",
+    "note": "Lettura in 20 batch sequenziali da 20 frame, ordine stretto 001->400. Verifica secondaria su 24 frame chiave per confermare testo esatto (nomi tool, URL, prompt, numeri) prima della trascrizione finale."
+  },
+  "vtt": {
+    "file": "E8Ax92etrMc.en.vtt",
+    "language": "en",
+    "kind": "auto-generated captions",
+    "raw_lines": 3080,
+    "unique_lines_after_dedup": 385,
+    "all_lines_read": true,
+    "timestamps_preserved": true
+  },
+  "knowledge_atoms": 58,
+  "atoms_by_relevance": {"alta": 27, "media": 27, "bassa": 4},
+  "atoms_by_confidence": {"osservato": 57, "inferito": 1},
+  "output_files": {
+    "video_analysis": "empire-studio/runs/max17-v03-nico-seo/video-analysis.md",
+    "coverage": "empire-studio/runs/max17-v03-nico-seo/coverage.md",
+    "transcript_dedup": "empire-studio/runs/max17-v03-nico-seo/transcript_dedup_ts.md",
+    "contenuto_integrale": "memory-empire/knowledge/E8Ax92etrMc/contenuto-integrale.md",
+    "atoms": "memory-empire/knowledge/E8Ax92etrMc/atoms.json",
+    "enrichment_report": "memory-empire/knowledge/E8Ax92etrMc/enrichment-report.md",
+    "ingestion_log": "memory-empire/memory/ingestions/2026-09-02-nico-ai-ranking-keyword-research-claude.md",
+    "audit_log": "memory-empire/memory/audit/2026-09-02-E8Ax92etrMc-stage-g.md"
+  },
+  "wiki_pages_created": [
+    "second-brain-vault/wiki/sources/Source_Nico_AI_Ranking_Claude_Keyword_Research.md"
+  ],
+  "wiki_pages_updated": [
+    "second-brain-vault/wiki/index.md",
+    "second-brain-vault/wiki/log.md"
+  ],
+  "key_topics": [
+    "Customer-language mining: Reddit + recensioni proprie e di fino a 5 competitor + People Also Ask + autocomplete + fan-out",
+    "Le domande a volume di ricerca ZERO non vengono scartate (15/37 nel dataset esempio)",
+    "Routing a 4 categorie: FAQ terminale / FAQ-che-linka-fuori / pagina propria / video",
+    "Numero di sezioni dell'AI Overview come soglia formato: 2+ sezioni -> serve una pagina, non un paragrafo FAQ",
+    "Fan-out queries recuperabili come dato (AI Overview structure via DataForSEO), non da brainstorming",
+    "Box 'currently cited' dell'AI Overview come lettura competitiva per query",
+    "Gap analysis sentiment recensioni 1-2 stelle vs 5 stelle: gap ampio = differenziatore, gap stretto = table stakes",
+    "Verifica manuale dell'intento video-dominante sulla SERP prima di instradare al formato video",
+    "Convenzioni di lettura dati: Google 0 = interrogato e genuinamente zero; n/a = non interrogabile (Google Ads rifiuta keyword oltre 10 parole)",
+    "Zernio come connettore MCP per Reddit (mcp.zernio.com/mcp), 2 account gratis",
+    "Template di deliverable 'Site Plan from Customer Language' a 10 sezioni",
+    "Tesi: non si ranka per una keyword, si ranka per il topic (topical authority)"
+  ],
+  "numeri_reali_dichiarati": [
+    "Report esempio Roofing/Dallas: 1.713 raw lines, 37 canonical questions, 26 FAQ, 14 blog post, 4 video, 941 recensioni lette",
+    "15 domande su 37 (circa 40%) a volume di ricerca Google zero",
+    "502 thread Reddit su 111 subreddit, 40 domande PAA, 150 suggerimenti autocomplete, 80 related/fan-out searches",
+    "Recensioni: 941 on-topic da fino a 5 competitor; 44 a 1-2 stelle, 880 a 5 stelle",
+    "Run reale ('The First Live Run'): 5.895 raw lines, 203.065 commenti Reddit, 1.404 recensioni lette",
+    "Costo run reale: $0,59 (range dichiarato $0,50-$0,80), 8 minuti di esecuzione",
+    "Cadenza consigliata: 1 run ogni 6 mesi per business",
+    "Zernio: 2 account collegati gratis"
+  ],
+  "tool_citati": [
+    "Claude (claude.ai) — modello Opus 5, effort High",
+    "DataForSEO — pay-per-call, connettore Claude gia' trattato in altri video del canale",
+    "Zernio — mcp.zernio.com/mcp, connettore MCP custom per Reddit",
+    "keyword-language.zip — Claude Skill regalata, contenuto interno mai mostrato",
+    "AI Ranking (FREE) — community stile Skool, corso 'AI Search Kickstarter'",
+    "DataWise — citato solo nella Lesson 6, flusso diverso (ChatGPT), nessuna demo",
+    "vidiQ — icona visibile nella chat, mai spiegata"
+  ],
+  "avvertenza_metodologica": "Il report scorso in dettaglio nel video ('Roofing, Dallas, Texas', frame-155 -> frame-360) NON e' l'output del prompt digitato in demo ('the plumbing market in Austin, Texas', frame-152). I numeri della card finale 'The First Live Run' (5.895 righe, 1.404 recensioni) sono diversi da quelli del report mostrato (1.713 righe, 941 recensioni). Il report d'esempio va letto come repertorio didattico dell'anatomia del deliverable, non come prova dell'esecuzione live. Marcato come inferenza in video-analysis.md e in atoms.json (KA-056).",
+  "limiti_dichiarati_dal_video": [
+    "Il passaggio prompt -> report (chiamate MCP, ragionamento, log) non e' mai mostrato: taglio netto tra frame-152 e frame-155",
+    "Il contenuto interno di keyword-language.zip non e' mai mostrato",
+    "Reddit e' passato dal fallback site:reddit.com su questa run: niente comment count, segnale di domanda piu' debole (ammesso a schermo)",
+    "Nessun risultato di ranking o traffico reale (prima/dopo) a supporto dell'efficacia del metodo"
+  ],
+  "segmento_promozionale": "Aside di circa 20 secondi (11:47-12:11) sulla community gratuita 'AI Ranking (FREE)' e sul corso 'AI Search Kickstarter'; il file keyword-language.zip e' distribuito li'. Contenuto misto educativo/promozionale, dichiarato.",
+  "p12_traceability": true,
+  "stages_completed": ["C-archive", "D-enrichment", "E-gate", "F-apply", "G-audit", "H-report"],
+  "enrichment_summary": {
+    "skill_valutate": 6,
+    "skill_patchate": 4,
+    "skill_non_toccate": 2,
+    "patch_totali": 4,
+    "cancellazioni": 0
+  },
+  "processing_notes": "Pipeline Empire Studio Stage 1-5 eseguita il 2026-09-02 (ingest, 400 frame @2s, visione nativa 400/400, 58 atoms, coverage report). Memory Empire Stage C-H chiuso lo stesso giorno, senza nuova visione: video-analysis.md e atoms.json esistenti riusati integralmente, VTT ri-processato con dedup riga-per-riga e timestamp conservati (stesso metodo del video j4UInmM9kKA). Nessun commit git eseguito in questa sessione."
+}

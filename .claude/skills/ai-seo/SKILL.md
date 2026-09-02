@@ -105,6 +105,33 @@ Google's own example: a user asking "how to fix lawns" triggers fan-out queries 
 
 **Action**: when planning content, brainstorm the 5–10 related queries the AI is likely to fan out to and make sure your content (or your site as a whole) covers them.
 
+#### Retrieving the fan-out instead of guessing it
+
+Brainstorming the fan-out is the fallback. The fan-out is also **retrievable as data**: the section structure Google's AI Overview builds for a query is exposed by SERP APIs (DataForSEO's "AI Overview structure" is the one demonstrated in the field), alongside People Also Ask, autocomplete and related searches. Pulling it gives you three things a brainstorm cannot:
+
+| What comes back | How to read it |
+|---|---|
+| The **sections** the AI Overview splits the question into | That list is the outline of the piece you should build — roughly one H2 per section |
+| The **number** of sections | A format threshold, not just an outline (below) |
+| The **"currently cited" domains** per question | Who the engine quotes for that question *today* — the real competitive set for the answer, which is frequently not the set that ranks |
+
+**Section count as a format threshold.** If the AI Overview answers in one block, it is a paragraph-sized answer and belongs in an FAQ. If it splits the answer into **two or more sections**, the question cannot be answered in a paragraph and has earned its own page. Worked example: `metal roof vs shingle?` fans out into 4 sections (Cost & Installation, Lifespan & Durability, Energy Efficiency & Climate, Maintenance & Weight) — *"4 sections, so this is article-sized rather than a one-paragraph FAQ."* (fonte: E8Ax92etrMc — Nico | AI Ranking, 11:24)
+
+**Zero search volume is not a reason to drop a question.** Fan-out variants and questions harvested from real customer language routinely come back with a Google volume of 0. In one published run, **15 of 37** canonical questions had zero volume and every one of them came from something a customer actually wrote. They still get answered, because retrieval rewards topical coverage, not per-query volume. Two reading conventions worth carrying into any keyword sheet: `0` means the term was queried and is genuinely zero, while `n/a` means it could not be queried at all — Google Ads rejects keywords over ten words, which is exactly the shape of a real customer question. (fonte: E8Ax92etrMc — Nico | AI Ranking, 05:08 e 11:18)
+
+#### Routing a question to a format
+
+Once you have the questions, each one needs a home. Four destinations, decided by demand plus the fan-out reading above:
+
+| Route | When to use it | Why |
+|---|---|---|
+| **FAQ, terminal** | A real objection with no standalone demand | Nobody ranks a page for it, but leaving it unanswered costs the sale — and a direct question-and-answer pair is the shape AI engines quote |
+| **FAQ that links out** | An objection that *also* has demand | Short answer on the commercial page to unblock the decision, then a link to the full piece |
+| **Its own page** | Demand is real, **or** the AI Overview splits the answer into 2+ sections | It cannot be answered in a paragraph |
+| **Video** | The answer is something shown rather than told | Verify before committing: run the query on Google and check whether the SERP is video-dominated (e.g. `how to do a bicep curl` returns an AI Overview, then a video carousel, then a "Short videos" tab) |
+
+Nothing is discarded. A question with no route is a question that has not been read properly — objections become FAQs on the page that has to overcome them, questions with real demand become their own page linked from that FAQ, and questions that need showing rather than telling become videos. (fonte: E8Ax92etrMc — Nico | AI Ranking, 05:08 e 11:26)
+
 ---
 
 ## AI Visibility Audit

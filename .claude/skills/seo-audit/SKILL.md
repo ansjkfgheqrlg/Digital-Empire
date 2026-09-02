@@ -332,6 +332,18 @@ Three equivalent placement methods: HTML `<link>` in `<head>`, HTTP `Link` heade
 - No keyword cannibalization
 - Logical topical clusters
 
+**Customer-language coverage** (how to actually find the gaps above)
+
+"No major gaps in coverage" is unfalsifiable against a keyword tool alone — the tool only shows terms that have volume. Check the site against the places the questions are already written down:
+
+| Source | What to check |
+|---|---|
+| Reddit threads in the niche | Are the recurring problems, phrased as customers phrase them, answered anywhere on the site? |
+| The site's own Google reviews — and competitors' | Which objections and attritions come up unprompted, and does any page address them? |
+| People Also Ask / autocomplete / related searches | Are these questions covered, or only the head term? |
+
+Findings here are a legitimate audit result even at zero search volume: a question with no measurable volume that a customer actually asked still costs the sale when the page leaves it unanswered, and a direct question-and-answer pair is the shape AI engines quote. When logging these, distinguish `0` (queried, genuinely zero) from `n/a` (not queryable — Google Ads rejects keywords over ten words) so the report is not read as "no demand". (fonte: E8Ax92etrMc — Nico | AI Ranking, 05:08 e 11:26)
+
 ---
 
 ## Content Quality Assessment

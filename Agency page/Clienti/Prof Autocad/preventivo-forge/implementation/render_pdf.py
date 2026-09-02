@@ -42,7 +42,10 @@ def render(ctx: RunContext, dealer: dict[str, Any]) -> Path:
 
     html = _render_html(ctx, listing, content, price, dealer, prev)
 
-    make_model = f"{listing.get('make') or ''}-{listing.get('model') or 'auto'}"
+    # nome file dal titolo ITALIANO (se c'è): con i campi raw usciva "preventivo_fiat-andere.pdf",
+    # dove "Andere" è il segnaposto tedesco di mobile.de. (E15)
+    make_model = str(content.get("title_it") or "").strip() or \
+        f"{listing.get('make') or ''}-{listing.get('model') or 'auto'}"
     out_path = ctx.dir / f"preventivo_{slugify(make_model)}.pdf"
 
     engine = _html_to_pdf(html, out_path, ctx)
