@@ -1,0 +1,123 @@
+{
+  "video_id": "DTCyvo6cC54",
+  "title": "Every Level of a Claude Second Brain Explained",
+  "channel": "Nate Herk | AI Automation",
+  "url": "https://www.youtube.com/watch?v=DTCyvo6cC54",
+  "run": "max17-v08-herk-brain",
+  "run_path": "empire-studio/runs/max17-v08-herk-brain",
+  "category": "max17-second-brain-architecture",
+  "duration_s": 1859,
+  "duration_human": "30m59",
+  "language": "en",
+  "format": "talking-head + slide deck (title cards, diagnostic slides) + screen-share Claude Code (VS Code) + Obsidian graph view + Excalidraw hand-drawn diagrams + Qdrant Cloud dashboard + LightRAG webui",
+  "ingested_at": "2026-09-02",
+  "stageC_date": "2026-09-02",
+  "frames": {
+    "total_dense": 930,
+    "interval_sec": 2.0,
+    "unique_scenes": 130,
+    "frames_read_natively": 130,
+    "all_read_native_vision": true,
+    "coverage_pct": 100,
+    "frames_skipped_below_threshold": 800,
+    "frames_unreadable": 0,
+    "frames_partially_unreadable": 2,
+    "frames_editorially_blurred_by_author": {
+      "count": 10,
+      "range": "frame-732.png -> frame-756.png",
+      "timestamp_range": "24:22-25:10",
+      "reason": "Blur/motion-blur editoriale VOLONTARIO dell'autore sul proprio grafo LightRAG di produzione, dichiarato a voce nel video: \"I'm going to have to blur some of this stuff out because this is legitimately my entire second brain in our business.\" NON e' un limite della pipeline di estrazione frame di Empire Studio: i frame sorgente sono stati estratti ed esaminati normalmente, il contenuto e' sfocato nel video stesso dall'editing dell'autore per motivi di privacy aziendale. Un frame in questa finestra (frame-745/746/749.png @ 24:48-24:56) e' rimasto leggibile perche' lo zoom si e' fermato temporaneamente su un nodo con pannello proprieta' aperto ('7-Day AIS Challenge'), letto e riportato integralmente.",
+      "distinct_from": "frame-232.png @ 7:42 (slide 'Table-stakes and plumbing', motion-blur di transizione editoriale generico, solo titolo leggibile) — caso diverso, non legato a privacy."
+    },
+    "no_finto_status": "PASS",
+    "note": "Estrazione con scene_detector.py, soglia dedup 3.0. Tutti i 130 frame unici letti nativamente in ordine cronologico a blocchi di 5, seguendo scenes.md (frame-001 -> frame-930). Dettaglio completo in coverage.md della run sorgente."
+  },
+  "transcript": {
+    "file": "DTCyvo6cC54.en.vtt / transcript_clean.txt",
+    "language": "en",
+    "kind": "auto-generated rolling captions (WebVTT, cascading word-by-word)",
+    "raw_lines": 8384,
+    "clean_lines": 1047,
+    "all_lines_read": true,
+    "timestamps_preserved": true,
+    "note": "Nessun file .it.srt presente su disco per questo video; usato solo l'inglese disponibile."
+  },
+  "knowledge_atoms": 55,
+  "atoms_by_relevance_DE": {"alta": 20, "media": 17, "bassa": 18},
+  "atoms_by_confidence": {"osservato": 53, "inferito": 2},
+  "output_files": {
+    "video_analysis": "empire-studio/runs/max17-v08-herk-brain/video-analysis.md",
+    "coverage": "empire-studio/runs/max17-v08-herk-brain/coverage.md",
+    "transcript_clean": "empire-studio/runs/max17-v08-herk-brain/transcript_clean.txt",
+    "contenuto_integrale": "memory-empire/knowledge/DTCyvo6cC54/contenuto-integrale.md",
+    "atoms": "memory-empire/knowledge/DTCyvo6cC54/atoms.json",
+    "enrichment_report": "memory-empire/knowledge/DTCyvo6cC54/enrichment-report.md",
+    "ingestion_log": "memory-empire/memory/ingestions/2026-09-02-nate-herk-second-brain-levels.md",
+    "audit_log": "memory-empire/memory/audit/2026-09-02-DTCyvo6cC54-stage-g.md"
+  },
+  "wiki_pages_created": [
+    "second-brain-vault/wiki/sources/Source_Nate_Herk_Claude_Second_Brain_Levels.md"
+  ],
+  "wiki_pages_updated": [
+    "second-brain-vault/wiki/index.md",
+    "second-brain-vault/wiki/log.md"
+  ],
+  "skills_agents_patched": [
+    ".claude/skills/sync-wiki-totale/SKILL.md",
+    ".claude/agents/conoscenza-empire.md"
+  ],
+  "key_topics": [
+    "Five levels = five questions: L1 esatto/nome file, L2 topic aggregato, L3 significato diverso dalle parole, L4 catene di relazioni (CRM), L5 consolidamento autonomo mentre l'utente e' assente",
+    "Two jobs: Saving (Notes IN) vs Finding (Notes OUT) — 'la scala misura solo una cosa: riesci a ritrovarlo?'",
+    "Level 1: cartella piatta + CLAUDE.md 20 righe, $0, nessun database",
+    "Level 2: wiki curata mantenuta dall'AI (raw/ -> pages/ -> log.md) + auto-memory sidecar MEMORY.md, two-bucket test (globale/sempre-vero vs specifico/mutevole)",
+    "Level 3: ricerca semantica/embeddings, Smart Connections (Obsidian, gratis) e Qdrant Cloud (free tier) mostrati dal vivo, demo keyword vs semantic 'posting frequency' -> 'content cadence'",
+    "Level 4: knowledge graph tipizzato (LightRAG, self-hosted, produzione reale dell'autore su Localhost:9621) — dichiarato esplicitamente 'skip rung' per la maggior parte delle persone, criterio 'skip on question-shape, not cost'",
+    "Level 5: always-on Brain-OS (gbrain, progetto di Garry Tan/YC) — mai mostrato in azione, solo narrato, 'real burden' (server 24/7)",
+    "The Four Cs: Context -> Connections -> Capabilities -> Cadence, ordine ma non forzato",
+    "Regola guida ripetuta: 'reverse engineer based on the question' e 'your whole project doesn't fit into one level'",
+    "Pagine wiki reali lette integralmente: concepts/context-window.md (autocompact, token compounding, context rot), concepts/agentic-workflows.md (WAT framework, accuracy compounding), techniques/ai-video-production-pipeline.md (pipeline elevenlabs+heygen+ffmpeg)"
+  ],
+  "numeri_reali_dichiarati": [
+    "Message 1 ~500 token, message 30 ~11.500 token (31x), 98.5% dei token spesi a rileggere history vecchia (context-window.md)",
+    "Fresh session con overhead tipico gia' a 51.000 token in un benchmark",
+    "Agent workflow multiplier: multi-agente consuma 7-10x piu' token di single-agent",
+    "Accuracy compounding: 5 step al 90% di accuratezza ciascuno = ~59% cumulativo",
+    "Qdrant collection Docs: 18.828 points, vector 384, Cosine; Images: 5.417 points, vector 512, Cosine",
+    "Nodo LightRAG '7-Day AIS Challenge': Degree 7, 7 relazioni dirette nel subgraph",
+    "AI Automation Society (community Skool): 405.1k membri, 2.4k online, 16 admin",
+    "Status bar Claude Code durante troubleshooting LightRAG: 96k/1000k token, 5h:16%"
+  ],
+  "tool_citati": [
+    "Claude Code v2.1.179, Opus 4.8 (1M context) [xhigh], piano Claude Max",
+    "Obsidian (app, visualizzatore) + Smart Connections (plugin, ricerca semantica gratuita)",
+    "Qdrant Cloud (free tier)",
+    "LightRAG (open source, self-hosted, v1.5.9, produzione reale su Localhost:9621)",
+    "Codex (harness alternativo che legge AGENTS.md)",
+    "Hermes Agent + Gbrain (Garry Tan/YC) + G-stack (Livello 5, solo citati, mai mostrati)",
+    "trigger-dev, vercel, modal, n8n, perplexity, firecrawl (citati solo nella pagina wiki agentic-workflows.md)",
+    "elevenlabs, heygen, ionmotion, ffmpeg, playwright (citati solo nella pagina wiki ai-video-production-pipeline.md)"
+  ],
+  "avvertenza_metodologica": "Il Livello 5 (gbrain) non ha mai una demo dal vivo nel video: e' interamente narrato a voce, nessun frame dei 130 mostra la sua UI/config/log. Buona parte del grafo LightRAG di produzione (24:22-25:10) e' sfocata volontariamente dall'autore per privacy aziendale, dichiarato a voce esplicitamente prima del blur -- annotato come blur editoriale intenzionale, non limite di estrazione (vedi frames.frames_editorially_blurred_by_author sopra). Un dettaglio tecnico (LightRAG su Localhost:9621, quindi istanza locale non cloud) emerge solo da una sessione di troubleshooting terminale mostrata per scelta/errore editoriale, mai dichiarato a voce -- marcato inferito nell'atom corrispondente (KA-034).",
+  "limiti_dichiarati_dal_video": [
+    "Nessuna demo tecnica di come vengono davvero estratte entita' e relazioni tipizzate per il knowledge graph (solo output finale + troubleshooting UI)",
+    "Nessun costo server quantificato per Level 4/5, solo qualificatori 'cheap to run' vs 'real burden'",
+    "Nessuna demo di setup locale/open-source per chi non vuole condividere dati con Anthropic (promesso in video futuri)",
+    "wiki/raw/, wiki/pages/, wiki/_hot.md, wiki/_index.md nominati nel CLAUDE.md ma mai aperti come screenshot",
+    "relationships.sample.json, extraction.config.md, schema.md dentro knowledge-graph/ visibili solo come nomi file in sidebar, mai aperti"
+  ],
+  "segmento_promozionale": "Promo audio della community gratuita AI Automation Society (AIS) e del corso '7-Day AI OS Challenge' a meta' Level 1 (~7:32), schermata mostrata piu' tardi (8:44, 20:48-20:58, 30:50). Contenuto misto educativo/promozionale, dichiarato.",
+  "p12_traceability": true,
+  "stages_completed": ["C-archive", "D-enrichment", "E-gate", "F-apply", "G-audit", "H-report"],
+  "enrichment_summary": {
+    "artefatti_valutati": 2,
+    "artefatti_patchati": 2,
+    "artefatti_non_toccati_per_vincolo_esplicito": "tutti gli altri (perimetro limitato dal brief a sync-wiki-totale e conoscenza-empire)",
+    "patch_totali": 2,
+    "righe_aggiunte_sync_wiki_totale": 12,
+    "righe_aggiunte_conoscenza_empire": 16,
+    "cancellazioni": 0
+  },
+  "processing_notes": "Pipeline Empire Studio Stage 1-5 gia' eseguita in sessioni precedenti (video-analysis.md, atoms.json 55 KA, coverage.md gia' su disco, coverage 130/130 frame unici, NO-FINTO PASS). Memory Empire Stage C-H chiuso il 2026-09-02, senza nuova visione dei frame: video-analysis.md e atoms.json esistenti riusati e normalizzati/espansi in contenuto-integrale.md. Il confronto con Digital Empire era gia' presente per intero in video-analysis.md (sezione CONFRONTO CON DIGITAL EMPIRE, verificata sulla wiki reale a 1.831 pagine) ed e' stato riusato, con l'aggiunta di una nuova dimensione -- il livello di maturita' per area sulla scala Nate Herk 1-5 -- richiesta esplicitamente per questo ciclo. Nessun commit git eseguito in questa sessione.",
+  "gap_verificato": "Verificato di persona in questa sessione (non solo dichiarato dal video-analysis.md preesistente): second-brain-vault/wiki/ conta 1.831 pagine markdown cercabili solo per nome file/wikilink/grep testuale -- nessun plugin di ricerca semantica (Smart Connections o analogo), nessun vector DB configurato, nessun knowledge graph di conoscenza aziendale (graphify-out/ esiste ma indicizza codice via AST, dominio diverso). .claude/skills/sync-wiki-totale/SKILL.md non conteneva alcuna valutazione del livello di maturita' per area prima di questa patch. .claude/agents/conoscenza-empire.md non conteneva alcuna nota sulla natura lessicale (non semantica) della ricerca prima di questa patch -- verificato con lettura integrale di entrambi i file prima di scrivere qualunque riga."
+}
