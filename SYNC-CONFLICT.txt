@@ -1,4 +1,4 @@
-﻿[2026-09-02 20:28:57] CONFLITTO DI SYNC
+﻿[2026-09-02 20:29:54] CONFLITTO DI SYNC
 Rebase pre-push fallito: CONFLICT (modify/delete): SYNC-CONFLICT.txt deleted in HEAD and modified in f0a173fc (sync(Max): aggiornamento automatico 2026-09-02 20:12).  Version f0a173fc (sync(Max): aggiornamento automatico 2026-09-02 20:12) of SYNC-CONFLICT.txt left in tree.
 Il tuo lavoro e' al sicuro (committato in locale).
 Risolvi a mano: git pull --rebase  ->  risolvi i conflitti  ->  git push
