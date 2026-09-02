@@ -1,0 +1,562 @@
+[
+  {
+    "id": "KA-001",
+    "categoria": "Opinione dichiarata",
+    "claim": "La domanda 'meglio Claude Code o Codex?' e' sbagliata. La domanda giusta e' come ottenere il massimo da entrambi, perche' ogni nuovo modello cambierebbe la classifica e ricomincerebbe la guerra.",
+    "trace": "T7PPX5M6Puo#00:00 + frames/frame-001.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-002",
+    "categoria": "Opinione dichiarata",
+    "claim": "Belli si presenta come ingegnere informatico, fondatore/gestore di Martes AI, azienda che aiuta le imprese a scalare implementando l'IA nei processi, partendo dalla formazione del personale su strumenti come Claude Code e Claude Cowork.",
+    "trace": "T7PPX5M6Puo#00:32 + frames/frame-020.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-003",
+    "categoria": "Costo",
+    "claim": "Martes AI ha lavorato con piu' di 65 aziende e portato in produzione piu' di 75 soluzioni di intelligenza artificiale (statistica aziendale, non riferita al costo Claude/Codex).",
+    "trace": "T7PPX5M6Puo#00:57 + frames/frame-030.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-004",
+    "categoria": "Opinione dichiarata",
+    "claim": "Claude Code e' fortissimo su copywriting, design e gusto estetico; e' molto forte a pianificare e avere una visione complessiva del progetto anche quando non si ha un'idea chiara; scrive tanto codice e in fretta.",
+    "trace": "T7PPX5M6Puo#01:24 + frames/frame-039.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-005",
+    "categoria": "Opinione dichiarata",
+    "claim": "Claude Code ha tutto l'ecosistema di skills, plugin, MCP, hook che secondo Belli e' superiore a quello di Codex.",
+    "trace": "T7PPX5M6Puo#01:41 + frames/frame-044.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-006",
+    "categoria": "Opinione dichiarata",
+    "claim": "Codex esegue alla lettera: se gli dici di fare 1 2 3 4 5, fa esattamente 1 2 3 4 5, mentre Claude Code ci mette sempre un po' della sua idea/iniziativa.",
+    "trace": "T7PPX5M6Puo#01:50 + frames/frame-044.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-007",
+    "categoria": "Opinione dichiarata",
+    "claim": "Codex sta iniziando a spopolare anche fra developer senior perche' riesce a trovare piu' edge case (es. il pulsantino in alto a destra che fa crashare l'app) e vede conseguenze di secondo e terzo ordine per ogni cosa che fa.",
+    "trace": "T7PPX5M6Puo#02:00 + frames/frame-075.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-008",
+    "categoria": "Opinione dichiarata",
+    "claim": "La debolezza principale di Claude Code secondo Belli e' che 'si entusiasma': dichiara 'fatto' senza aver testato end-to-end, salta gli edge case, da' sempre ragione all'utente e si scrive i test da solo. E' 'innamorato del codice'.",
+    "trace": "T7PPX5M6Puo#02:28 + frames/frame-075.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-009",
+    "categoria": "Opinione dichiarata",
+    "claim": "Le debolezze di Codex: sul copy e sul design 'non ci siamo'; va sfruttato al meglio con istruzioni molto precise; e' un po' piu' lento secondo l'esperienza di Belli.",
+    "trace": "T7PPX5M6Puo#02:40 + frames/frame-081.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-010",
+    "categoria": "Opinione dichiarata",
+    "claim": "Ad agosto 2026, i limiti di utilizzo di Codex si sforano molto piu' lentamente rispetto a quelli di Claude Code, secondo l'esperienza di Belli.",
+    "trace": "T7PPX5M6Puo#03:04 + frames/frame-093.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-011",
+    "categoria": "Regola/principio",
+    "claim": "Principio cardine del video, scritto a lavagna: CHI COSTRUISCE E' DIVERSO DA CHI GIUDICA. Si vuole sfruttare la caratteristica di Codex di non essere innamorato del codice altrui.",
+    "trace": "T7PPX5M6Puo#03:16 + frames/frame-093.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-012",
+    "categoria": "Regola/principio",
+    "claim": "Il piano lo scrive Claude, viene contestato da Codex (adversarial review), Claude produce piano v2, il ciclo si ripete finche' Codex non ha piu' niente da ridire. L'obiettivo e' capire cosa sta succedendo, non essere 'pipecoder seriali', altrimenti il progetto diventa un mostro incontrollabile.",
+    "trace": "T7PPX5M6Puo#03:29 + frames/frame-106.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-013",
+    "categoria": "Configurazione osservata",
+    "claim": "Il video si basa sulla repository GitHub ufficiale fatta da OpenAI chiamata 'Codex Plugin', che permette di utilizzare Codex all'interno di Claude Code.",
+    "trace": "T7PPX5M6Puo#04:00 + frames/frame-121.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-014",
+    "categoria": "Comando/sintassi",
+    "claim": "/codex:review — legge e basta le modifiche non committate su Git, dice cosa non va. Non accetta testo libero, non e' indirizzabile su un punto preciso.",
+    "trace": "T7PPX5M6Puo#04:22 + frames/frame-121.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-015",
+    "categoria": "Comando/sintassi",
+    "claim": "/codex:adversarial-review — come review ma puntabile: si puo' dire cosa contestare (anche un piano, non solo codice) e Codex attacca quella scelta specifica.",
+    "trace": "T7PPX5M6Puo#05:10 + frames/frame-122.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-016",
+    "categoria": "Comando/sintassi",
+    "claim": "/codex:rescue — prende il problema e lo prova a risolvere: indaga, prova una correzione, sblocca il punto dove ci si era fermati. Utile quando Claude Code si impappina e non riesce a risolvere una cosa.",
+    "trace": "T7PPX5M6Puo#05:27 + frames/frame-125.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-017",
+    "categoria": "Comando/sintassi",
+    "claim": "/codex:transfer — prende la conversazione in corso con Claude Code e la porta dentro Codex, continuando da dove si era rimasti invece di ripartire da zero.",
+    "trace": "T7PPX5M6Puo#05:47 + frames/frame-127.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-018",
+    "categoria": "Comando/sintassi",
+    "claim": "/codex:status e /codex:result — le review lunghe girano in background; status dice se Codex ha finito o meno, result restituisce i risultati quando ha finito.",
+    "trace": "T7PPX5M6Puo#06:06 + frames/frame-129.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-019",
+    "categoria": "Flusso operativo",
+    "claim": "Pattern 1 'Far controllare l'app prima di mandarla online': app pronta -> /codex:review -> TU REVISIONI LA REVIEW (umano nel mezzo) -> Claude sistema quello che esce -> online. Codex legge tutto il branch contro main mentre l'utente continua a lavorare.",
+    "trace": "T7PPX5M6Puo#06:34-07:21 + frames/frame-192.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-020",
+    "categoria": "Flusso operativo",
+    "claim": "Pattern 2 'Il piano prima di scrivere una riga': piano scritto con Claude -> /codex:adversarial-review sul piano -> le critiche tornano a Claude -> piano v2 -> ciclo finche' Codex non ha piu' obiezioni -> solo allora si scrive il codice.",
+    "trace": "T7PPX5M6Puo#07:21-08:04 + frames/frame-222.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-021",
+    "categoria": "Regola/principio",
+    "claim": "Differenza chiave fra review e rescue: review guarda solo le modifiche non committate su Git ('come un Google Drive per il codice'); se l'app e' gia' finita e committata, review non trova nulla da dire. Per un'app gia' completa bisogna usare rescue. Belli dice che tutti i video online sbagliano questa distinzione.",
+    "trace": "T7PPX5M6Puo#10:55-11:29 + frames/frame-338.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-022",
+    "categoria": "Configurazione osservata",
+    "claim": "Requisiti ufficiali del plugin (README GitHub): ChatGPT subscription (incl. Free) oppure OpenAI API key (l'uso consuma la quota Codex); Node.js 18.18 o superiore.",
+    "trace": "T7PPX5M6Puo#04:00 + frames/frame-125.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-023",
+    "categoria": "Comando/sintassi",
+    "claim": "Installazione: /plugin marketplace add openai/codex-plugin-cc -> risposta 'Successfully added marketplace: openai-codex'.",
+    "trace": "T7PPX5M6Puo#08:53 + frames/frame-284.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-024",
+    "categoria": "Comando/sintassi",
+    "claim": "Installazione: /plugin install codex@openai-codex -> risposta 'Installed codex. Plugin is now active.'",
+    "trace": "T7PPX5M6Puo#08:53 + frames/frame-284.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-025",
+    "categoria": "Comando/sintassi",
+    "claim": "Installazione: /reload-plugins -> risposta osservata 'Reloaded: 8 plugins · 18 skills · 7 agents · 4 hooks · 5 plugin MCP servers · 8 plugin LSP servers'.",
+    "trace": "T7PPX5M6Puo#08:53 + frames/frame-295.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-026",
+    "categoria": "Comando/sintassi",
+    "claim": "Installazione: /codex:setup esegue uno shell command (node '.../scripts/codex-companion.mjs' setup --json) e verifica se Codex CLI e' pronto.",
+    "trace": "T7PPX5M6Puo#09:29 + frames/frame-295.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-027",
+    "categoria": "Configurazione osservata",
+    "claim": "Se Codex non e' installato, /codex:setup propone un menu: '1. Install Codex (Recommended) — Runs npm install -g @openai/codex, then re-checks setup status. 2. Skip for now — Leaves Codex uninstalled; the setup output is reported as-is.'",
+    "trace": "T7PPX5M6Puo#09:29 + frames/frame-319.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-028",
+    "categoria": "Comando/sintassi",
+    "claim": "Installazione manuale alternativa di Codex CLI: npm install -g @openai/codex. Login manuale: codex login.",
+    "trace": "T7PPX5M6Puo#09:44 + frames/frame-125.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-029",
+    "categoria": "Configurazione osservata",
+    "claim": "Tabella di stato finale osservata dopo /codex:setup: Ready ✅ · Node v24.19.0 · npm 11.17.4 · Codex CLI codex-cli@0.148.0 (advanced runtime available) · Auth ✅ ChatGPT login active for engineering@martes-ai.com (verified) · Session runtime: direct startup, no shared runtime yet · Review gate: disabled.",
+    "trace": "T7PPX5M6Puo#14:04 + frames/frame-423.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-030",
+    "categoria": "Configurazione osservata",
+    "claim": "Output di /codex:setup suggerisce come step opzionale successivo: 'run /codex:setup --enable-review-gate to require a fresh review before setup...' — opzione mai attivata nel video.",
+    "trace": "T7PPX5M6Puo#14:04 + frames/frame-423.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-031",
+    "categoria": "Costo",
+    "claim": "Consiglio dato a voce: avere il piano Claude Max da $100 (non i $200) e aggiungere Codex con il piano ChatGPT da $20 — bastano $20 in piu', non il doppio.",
+    "trace": "T7PPX5M6Puo#09:55-10:24 + frames/frame-309.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-032",
+    "categoria": "Flusso operativo",
+    "claim": "Caso reale 1: audit di MaReply, clone di ManyChat costruito dal CTO di Martes AI (automazioni 'Commenta X, ti mando Y in DM' su Instagram, incluse reel schedulati che ManyChat non offre). Martes AI pagava ManyChat 80$/mese e le API erano troppo limitate, quindi l'hanno ricostruito in-house.",
+    "trace": "T7PPX5M6Puo#11:32-12:29 + frames/frame-365.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-033",
+    "categoria": "Comando/sintassi",
+    "claim": "Prompt usato per l'audit di MaReply: '/codex:rescue --background Fai un audit completo di questa app. E' molto utente e custodisce gli account Instagram dei clienti. Concentrati su potenziali falle. Siccome voglio lanciarla in Prod. Ad esempio, se un utente puo' vedere e toccare i dati di un altro, come sono protetti gli accessi di Instagram, cosa puo' far partire un DM sbagliato doppio, eccetera eccetera.'",
+    "trace": "T7PPX5M6Puo#15:12-15:34 + frames/frame-448.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-034",
+    "categoria": "Regola/principio",
+    "claim": "Claude Code aveva gia' revisionato MaReply dicendo che era pronta per la produzione. Codex, interpellato con /codex:rescue, ha trovato 0 falle critiche, 2 alte, 2 medie, 2 basse — falle che Claude Code non aveva trovato.",
+    "trace": "T7PPX5M6Puo#16:57-16:59 + frames/frame-448.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-035",
+    "categoria": "Regola/principio",
+    "claim": "Finding alto #1 su MaReply: l'autenticazione email/password non verifica l'email. Un attaccante puo' pre-registrare l'email della vittima con una password sua, impedendole di registrarsi normalmente; se ottiene il token di invito, dirotta l'account. Impatto: accesso al workspace della vittima incluse conversazioni Instagram e automazioni. Fix: rendere obbligatoria la verifica email prima di considerare l'account utilizzabile, rifiutare inviti su email non verificata.",
+    "trace": "T7PPX5M6Puo#17:00-17:46 + frames/frame-448.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-036",
+    "categoria": "Regola/principio",
+    "claim": "Finding alto #2 su MaReply: DM duplicati per assenza di claim atomico prima dell'invio. L'endpoint che manda il DM Instagram non controlla l'ID del destinatario: un admin, una sessione rubata o un client difettoso puo' chiamarlo ripetutamente. Impatto: spam, doppio consumo del budget Meta, possibile abuso del dominio per phishing e danno reputazionale.",
+    "trace": "T7PPX5M6Puo#18:04-18:52 + frames/frame-448.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-037",
+    "categoria": "Flusso operativo",
+    "claim": "Caso reale 2: form di candidatura interattivo (clone di Typeform, Cloudflare + Airtable come CRM) per le posizioni aperte di Martes AI. Belli lo compila dal vivo per mostrarne la complessita' (domande dinamiche per formatore vs sviluppatore).",
+    "trace": "T7PPX5M6Puo#19:00-19:59 + frames/frame-382.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-038",
+    "categoria": "Comando/sintassi",
+    "claim": "Su /codex:rescue e' possibile impostare --model e --effort (minimal, low, medium, high, xhigh); esempio verbale: 'meno meno model GPT 5.6 Sol' con 'effort xi' (xhigh) per un'analisi piu' pesante.",
+    "trace": "T7PPX5M6Puo#20:35-21:05 + frames/frame-630.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-039",
+    "categoria": "Regola/principio",
+    "claim": "Findings alti sul form candidature (functions/api/candidature.js): 1) endpoint pubblico onRequestPOST senza autenticazione/rate limiting/CAPTCHA; 2) upload completamente fidato lato server, nessuna verifica di dimensione/estensione/MIME reale dei file; 3) nessun limite server-side sulla dimensione dei campi; 4) React/ReactDOM/Babel caricati da unpkg.com senza SRI ne' CSP configurata.",
+    "trace": "T7PPX5M6Puo#22:02-22:20 + frames/frame-648.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-040",
+    "categoria": "Regola/principio",
+    "claim": "Findings medi sul form candidature: validazione solo client-side; CORS completamente permissivo (Access-Control-Allow-Origin: *); errori Airtable esposti al chiamante; possibile formula/CSV injection su export Airtable; accesso dati dipendente dai permessi della base Airtable; assenza di informativa privacy/consenso/retention (GDPR); log di errori upstream senza redazione PII; allowlist allegati incoerente fra frontend e backend; ID record Airtable esposti al client; dipendenza wrangler non fissata/lockfile assente.",
+    "trace": "T7PPX5M6Puo#22:20-23:22 + frames/frame-676.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-041",
+    "categoria": "Opinione dichiarata",
+    "claim": "Belli dichiara esplicitamente che non implementera' tutti i fix suggeriti da Codex: rifiuta di correggere il 'doppio DM' su MaReply perche' lo considera comportamento accettabile (l'utente potrebbe voler ricevere di nuovo la risorsa). Lo cita come esempio di non essere un Vibe coder: ogni segnalazione va letta e filtrata dall'umano.",
+    "trace": "T7PPX5M6Puo#22:34-22:58 + frames/frame-648.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-042",
+    "categoria": "Flusso operativo",
+    "claim": "Caso reale 3: piano PLAN.md per un clone di Bitly (accorciatore di link con tracciamento), scritto con Claude in modalita' pianificazione ('Fable 5' nel linguaggio di Belli, 'Opus 5 [1M context]' nell'interfaccia).",
+    "trace": "T7PPX5M6Puo#23:22-24:20 + frames/frame-734.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-043",
+    "categoria": "Configurazione osservata",
+    "claim": "PLAN.md — Modello dati su Cloudflare D1: tabella links (code TEXT PRIMARY KEY, url TEXT NOT NULL, created_at INTEGER, owner_id TEXT, clicks INTEGER DEFAULT 0); tabella clicks (id INTEGER PRIMARY KEY AUTOINCREMENT, code TEXT riferito a links.code, ts INTEGER, country TEXT da request.cf.country, city TEXT da request.cf.city). Stack: Cloudflare Workers + D1 + React.",
+    "trace": "T7PPX5M6Puo#24:26 + frames/frame-699.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-044",
+    "categoria": "Configurazione osservata",
+    "claim": "PLAN.md §5 Redirect e tracciamento: GET /:code -> SELECT url FROM links WHERE code=? -> se non trovato, 404; se trovato, scrivi riga su clicks (code, ts, referer/user-agent da header, ip da request.cf-connecting-ip) -> UPDATE links SET clicks=clicks+1 WHERE code=? -> risposta 301 Moved Permanently con Location verso la destinazione (corretto per i motori di ricerca). I passi di logging girano dentro ctx.waitUntil() per non bloccare il redirect.",
+    "trace": "T7PPX5M6Puo#24:50-24:54 + frames/frame-702.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-045",
+    "categoria": "Configurazione osservata",
+    "claim": "PLAN.md §6 Parsing user agent per la colonna 'dispositivo' della dashboard: se contiene 'Mobile' -> mobile; se contiene 'Tablet'/'iPad' -> tablet; altrimenti -> desktop. Browser cercato nell'ordine Edg, Chrome, Safari, Firefox.",
+    "trace": "T7PPX5M6Puo#24:50 + frames/frame-718.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-046",
+    "categoria": "Comando/sintassi",
+    "claim": "Comando usato per contestare il piano: '/codex:adversarial-review --background contesta questo piano, voglio creare un sosia di Bitly' con il file allegato via @plan.md (tag file) oppure tasto destro -> copia il percorso.",
+    "trace": "T7PPX5M6Puo#24:34-25:03 + frames/frame-748.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-047",
+    "categoria": "Regola/principio",
+    "claim": "Verdetto Codex Adversarial Review sul piano Bitly: 'needs attention'. Sintesi: il piano lascia aperti isolamento tra utenti, accuratezza dei dati e gestione dei dati personali; plan.md:46-58 compromette il tracciamento, funzione centrale del prodotto.",
+    "trace": "T7PPX5M6Puo#25:08 + frames/frame-755.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-048",
+    "categoria": "Regola/principio",
+    "claim": "Finding critical sul piano Bitly: le API stats/delete non impongono l'ownership del link (plan.md:46-58). Il piano non richiede che GET /stats o DELETE verifichino owner_id, quindi chiunque potrebbe modificare/cancellare link altrui. Fix: verificare sessione + owner_id su ogni chiamata.",
+    "trace": "T7PPX5M6Puo#25:08 + frames/frame-755.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-049",
+    "categoria": "Regola/principio",
+    "claim": "Finding high sul piano Bitly: i redirect 301 (permanenti) restano in cache nel browser/CDN anche dopo la cancellazione di un link (plan.md:72-74). Fix: usare 302 con cache breve o Cache-Control:no-store, oppure purge cache Cloudflare alla cancellazione.",
+    "trace": "T7PPX5M6Puo#25:08 + frames/frame-755.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-050",
+    "categoria": "Regola/principio",
+    "claim": "Finding high sul piano Bitly: il contatore di click viene gonfiato da eventi duplicati (prefetch/preload/richieste multiple del browser).",
+    "trace": "T7PPX5M6Puo#25:08 + frames/frame-755.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-051",
+    "categoria": "Regola/principio",
+    "claim": "Finding medium sul piano Bitly: ogni click registra IP, user-agent, referer e geolocalizzazione senza finalita'/retention/minimizzazione dichiarate (rischio privacy); esistono 2 API pubbliche create/delete con requisiti di autenticazione non chiariti (superficie di abuso).",
+    "trace": "T7PPX5M6Puo#25:08 + frames/frame-755.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-052",
+    "categoria": "Flusso operativo",
+    "claim": "Belli passa le obiezioni Codex a Claude: 'controlla queste obiezioni che ha fatto Codex al nostro piano @PLAN.md per ricreare Bitly.' Claude valuta punto per punto e dichiara: 4 obiezioni su 5 hanno un nucleo valido.",
+    "trace": "T7PPX5M6Puo#25:19-26:14 + frames/frame-772.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-053",
+    "categoria": "Regola/principio",
+    "claim": "Risposta di Claude sull'obiezione ownership: 'fondata, la piu' importante' — vera lacuna, chiunque legge il codice/URL puo' cancellare link altrui.",
+    "trace": "T7PPX5M6Puo#25:44-25:49 + frames/frame-776.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-054",
+    "categoria": "Regola/principio",
+    "claim": "Risposta di Claude sull'obiezione 301: 'fondata' — verificato che il 301 viene cachato indefinitamente dal browser; nota aggiuntiva: Bitly stesso usa 302 dal 2016 per questo motivo.",
+    "trace": "T7PPX5M6Puo#25:49 + frames/frame-776.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-055",
+    "categoria": "Regola/principio",
+    "claim": "Risposta di Claude sull'obiezione contatore duplicati: 'fondata ma gonfiata, fix banale' — 'high' e' eccessivo (perdita di poche unita' di conteggio, non integrita' critica). Fix: contare visitatori unici via hash IP+user-agent+salt giornaliero (come Plausible) invece di richieste totali; aggiungere FOREIGN KEY(code) REFERENCES links(code) per risolvere i click orfani.",
+    "trace": "T7PPX5M6Puo#25:49-26:14 + frames/frame-776.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-056",
+    "categoria": "Regola/principio",
+    "claim": "Risposta di Claude sull'ordine di implementazione: 'respingo in gran parte' — costruire l'API POST prima dell'auth completa e' normale sviluppo incrementale; il rischio reale e' gia' coperto fixando il punto ownership; accetta solo di scambiare l'ordine dei passi 3 e 4.",
+    "trace": "T7PPX5M6Puo#26:14 + frames/frame-776.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-057",
+    "categoria": "Comando/sintassi",
+    "claim": "Dopo la validazione di Claude, comando finale: 'bene, applica tali correzioni Fable' -> il piano viene aggiornato (v2) prima di scrivere qualsiasi codice applicativo. Poi si cambia modello con /model tornando a Opus per lo sviluppo vero e proprio.",
+    "trace": "T7PPX5M6Puo#26:18-26:29 + frames/frame-776.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "alta"
+  },
+  {
+    "id": "KA-058",
+    "categoria": "Opinione dichiarata",
+    "claim": "I tre comandi preferiti dichiarati esplicitamente da Belli: /codex:rescue (per gli audit), /codex:adversarial-review sui piani ('fondamentale'), /codex:transfer (quando Claude si impappina). /codex:review e /codex:status/result sono definiti 'di contorno', secondari.",
+    "trace": "T7PPX5M6Puo#26:48-27:39 + frames/frame-846.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-059",
+    "categoria": "Regola/principio",
+    "claim": "Prima di andare in produzione Belli dichiara di fare sia una 'security review' con Claude Code sia un controllo con Codex, come doppio passaggio pre-produzione.",
+    "trace": "T7PPX5M6Puo#24:39-24:45 + frames/frame-746.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-060",
+    "categoria": "Comando/sintassi",
+    "claim": "/codex:transfer (dal README): crea un thread Codex persistente dalla sessione Claude Code corrente e stampa un comando 'codex resume <session-id>'. Da usare quando si inizia una conversazione di debug/implementazione in Claude Code e si vuole continuarla in Codex senza ripartire da zero.",
+    "trace": "T7PPX5M6Puo#05:47 + frames/frame-617.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-061",
+    "categoria": "Comando/sintassi",
+    "claim": "Esempi /codex:rescue dal README: '/codex:rescue investigate why the tests started failing the smallest safe patch'; '/codex:rescue --resume apply the top fix from the last run'; '/codex:rescue --model gpt-5.1-mini --effort medium investigate the flaky integration test'; '/codex:rescue --model spark fix the issue quickly'; '/codex:rescue --background investigate the regression'.",
+    "trace": "T7PPX5M6Puo#04:00 + frames/frame-609.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-062",
+    "categoria": "Configurazione osservata",
+    "claim": "Note dal README su /codex:rescue: se non si passano --model o --effort, Codex sceglie i suoi default; se si scrive 'spark', il plugin lo mappa a gpt-5.1-codex-spark; le richieste di rescue successive possono continuare l'ultimo task Codex nella stessa repo.",
+    "trace": "T7PPX5M6Puo#04:00 + frames/frame-609.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-063",
+    "categoria": "Costo",
+    "claim": "Lavagna finale costi: 'TUTTO SU UNO SOLO' — $200 solo Claude (nessuno che lo controlla), $200 solo Codex (nessuno che serve bene). 'LA COPPIA' — $100 Claude Max (serve) + $20 Codex (controlla) = $120 AL MESE. Venti dollari in piu', non il doppio, perche' Codex legge e critica e scrive quasi mai: l'auditor costa molto meno che generare.",
+    "trace": "T7PPX5M6Puo#27:44-28:47 + frames/frame-846.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-064",
+    "categoria": "Costo",
+    "claim": "Sulla lavagna: 'e per provarlo basta anche il piano ChatGPT gratuito'. Confermato con una ricerca a schermo: Codex e' disponibile sul piano ChatGPT Free ma con limiti di utilizzo stretti; Cost: $0/mese; Access: incluso con account ChatGPT; Limits: i limiti piu' bassi di ogni tier, adatto a test rapidi piu' che a sviluppo pesante. Fonte citata: pagina ufficiale 'Codex Pricing' — Codex incluso in Free, Go, Plus, Pro, Business, Enterprise.",
+    "trace": "T7PPX5M6Puo#29:16-29:34 + frames/frame-879.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-065",
+    "categoria": "Regola/principio",
+    "claim": "Raccomandazione finale: usare il piano Free di ChatGPT per testare la combo con qualsiasi piano Claude gia' posseduto (minimo richiesto per Claude Code: piano Pro da $20), verificare se si notano miglioramenti passando le review una o due volte, e solo se il miglioramento e' netto passare a pagare Codex separatamente.",
+    "trace": "T7PPX5M6Puo#29:12-30:03 + frames/frame-908.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "media"
+  },
+  {
+    "id": "KA-066",
+    "categoria": "Opinione dichiarata",
+    "claim": "Chiusura del video: pitch per Martes AI — coaching one-to-one e one-to-many, formazione aziendale in loco, analisi processi per costruire soluzioni AI custom, con CTA a prenotare una call.",
+    "trace": "T7PPX5M6Puo#30:05-30:44 + frames/frame-913.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-067",
+    "categoria": "Configurazione osservata",
+    "claim": "Setup mostrato interamente su Mac + Visual Studio Code con l'estensione Claude Code, terminale integrato di VS Code. Prerequisiti dichiarati: VS Code e Claude Code gia' installati.",
+    "trace": "T7PPX5M6Puo#08:41-08:53 + frames/frame-274.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-068",
+    "categoria": "Opinione dichiarata",
+    "claim": "Nomenclatura informale usata da Belli nei grafici a schermo: 'Fable 5' per un modello Claude (probabile riferimento a Opus, visto nell'interfaccia reale come 'Opus 5 [1M context]') e 'GPT-5.6 Sol' per un modello Codex/GPT — nomi non ufficiali, nickname personali di Belli.",
+    "trace": "T7PPX5M6Puo#00:03 + frames/frame-008.png",
+    "confidenza": "inferito",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-069",
+    "categoria": "Regola/principio",
+    "claim": "Durante l'attesa di un job Codex in background, Claude Code mostra lo stato passo-passo: es. 'L'audit e' ancora in corso (27 secondi trascorsi, fase running). Codex ha appena finito di mappare la struttura dell'app e lo stato git, sta iniziando a leggere i file.'",
+    "trace": "T7PPX5M6Puo#15:47-16:00 + frames/frame-627.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  },
+  {
+    "id": "KA-070",
+    "categoria": "Regola/principio",
+    "claim": "Formato del report di status di un job Codex completato: 'Codex Job Status — task-<id> · completed · rescue · Codex Task. Summary: Audit completato in sola lettura. Non sono stati eseguiti fix contro l'endpoint live. Status: Done. Codex session id: <uuid>. Codex resume command: codex resume <session-id>.'",
+    "trace": "T7PPX5M6Puo#16:41-16:48 + frames/frame-635.png",
+    "confidenza": "osservato",
+    "rilevanza_DE": "bassa"
+  }
+]

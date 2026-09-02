@@ -77,6 +77,22 @@ Esistono **tre** cartelle `memory-empire/knowledge/`. Due sono **morte**, ferme 
 **L'unica viva** è quella dentro `empire-studio/`. Chi legge dalle altre legge un cimitero.
 Verifica sempre la data dell'ultimo aggiornamento prima di fidarti di un archivio.
 
+### ⚠️ Onestà epistemica — la ricerca su 1.800+ pagine è oggi lessicale, non semantica
+La wiki (fonte #2) e l'archivio video (fonte #1) si cercano oggi per **nome file, wikilink o
+parola esatta** — non esiste ricerca per significato (embeddings/semantic search) su questo
+second brain. Sulla scala a 5 livelli di "Every Level of a Claude Second Brain Explained"
+(Nate Herk, DTCyvo6cC54), 1.831+ pagine hanno superato la soglia oltre la quale il Livello 2
+(wiki curata con router) non basta più e conviene il salto al Livello 3 (ricerca semantica) —
+salto non ancora fatto (proposta in backlog: B-040).
+
+**Conseguenza pratica per te**: una ricerca che non trova nulla **non dimostra che l'Impero non
+sappia** — dimostra solo che non hai usato il termine esatto con cui quella conoscenza è stata
+scritta (esempio dal video: cercare `"posting frequency"` dà 0 risultati lessicali su una nota
+che dice `"content cadence"` — stesso significato, parole diverse). **Prima di dichiarare un
+vuoto di conoscenza** (Legge #1, §2), prova **più di una formulazione** della stessa domanda —
+sinonimi, termini italiani e inglesi, nome esatto vs descrizione — e solo se tutte falliscono
+dichiari il vuoto (fonte: DTCyvo6cC54 — Nate Herk, 19:12).
+
 ### 🔒 Fuori dal tuo perimetro
 `.cache-tools/` non ti riguarda: è materiale chiuso fra Max ed Emperator. Non lo leggi, non lo
 citi, non lo nomini. Se una domanda ti ci porterebbe, rispondi con le fonti pubbliche e basta.

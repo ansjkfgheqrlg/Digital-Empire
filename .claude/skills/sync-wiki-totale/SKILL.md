@@ -33,12 +33,24 @@ Questo comando e' il ponte esplicito tra i due, on-demand.
 2. **Attiva anche wiki-syncer** sul contenuto Memory Empire (`knowledge/*/`) non ancora
    verificato in wiki, stesso principio: gap → colma.
 3. **Aggiorna** `second-brain-vault/wiki/index.md` e `log.md` con le entry mancanti.
-4. **Report finale all'utente**, formato secco:
+4. **Valuta il livello di maturita' per area della wiki appena sincronizzata**, sulla scala a
+   5 livelli di "Every Level of a Claude Second Brain Explained" (Nate Herk, DTCyvo6cC54):
+   1 = file markdown organizzati senza indice/router | 2 = wiki curata con router (index.md +
+   log.md, cross-link, ricerca per nome file/wikilink — DOVE STA la wiki DE oggi) | 3 = ricerca
+   semantica/embeddings (es. plugin Obsidian Smart Connections) | 4 = knowledge graph (entita'
+   e relazioni tipizzate estratte dal testo, non solo wikilink) | 5 = processi always-on
+   (consolidamento/enrichment autonomo, "dream cycle" notturno). Questa valutazione non giudica
+   la qualita' dei contenuti: dice SOLO quando un'area ha superato la soglia in cui la ricerca
+   per nome file smette di bastare e conviene salire di livello (fonte: DTCyvo6cC54 — Nate
+   Herk, 1:34 e 28:58).
+5. **Report finale all'utente**, formato secco:
    ```
    Checkpoint totali: X | gia' in wiki: Y | colmati ora: Z
    ADR totali: X | gia' in wiki: Y | colmati ora: Z
    Knowledge Memory Empire: X | gia' in wiki: Y | colmati ora: Z
    Pagine create: N | Pagine aggiornate: M | Pagine orfane trovate/risolte: K
+   Livello di maturita' (scala Nate Herk 1-5) per area sincronizzata: [area]: livello N —
+   [motivo breve, es. "concepts/: livello 2, ricerca solo lessicale/wikilink"]
    GAP residuo (se c'e'): [scope preciso, es. "pre-luglio 2026, backlog B-019"] — richiede
    via libera esplicita per l'audit storico completo, NON eseguirlo di default.
    ```

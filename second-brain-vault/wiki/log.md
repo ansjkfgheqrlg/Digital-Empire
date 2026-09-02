@@ -1200,3 +1200,36 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   `company/Memory/BACKLOG.md`, da approvare da Max.
 - DEBITO APERTO: nessun checkpoint in `company/Memory/`, `STATO-EMPIRE.md` non aggiornato (fuori dal
   perimetro esplicito di questo brief) e **nessun commit git**, come da vincolo di sessione.
+
+- INGEST (Empire Studio + Memory Empire): **batch max17, video 4/8** -- `-gq8euRvNR4`
+  "I grew my agency to $1.2M ARR using only LinkedIn.. (copy me)" (Paolo Trivellato, 18m49s, EN),
+  **105/105 frame unici letti -- coverage 100%**, 60 KA (31 alta rilevanza DE), NO-FINTO PASS.
+  Chiusura di un gap a valle: pipeline Empire Studio gia' fatta in sessione precedente, layer Memory
+  Empire e wiki mai chiusi, consigli dell'analisi mai applicati -- stesso pattern di `yJOCyyP77bA` e
+  `E8Ax92etrMc` oggi. Nessuna nuova visione dei frame.
+  -> `memory-empire/knowledge/-gq8euRvNR4/` (contenuto-integrale mai riassunto + atoms + manifest),
+  **1 pagina wiki creata** (`sources/Source_Paolo_Trivellato_LinkedIn_Agency_1M.md`), index.md aggiornato
+  (nuova sezione "LinkedIn & Outreach Growth").
+- CONTENUTO: sistema a 3 componenti (contenuto che attrae buyer non follower, profilo come sales page,
+  due meccanismi di conversione) dietro $1.294.700/anno attribuiti interamente a LinkedIn, 31.000
+  follower, $0 ads, zero cold outreach. Metrica centrale: buyer concentration (92% ICP match su 31K
+  follower vs 2% su un'audience generica di 200K) al posto del follower count. Tabella Mistake/Fix
+  completa per il profilo (headline/custom button/featured section), meccanismo Lead Magnet Post
+  (300-1.000 connessioni ICP qualificate per post) e meccanismo Profile View Outreach (script esatto
+  word-for-word, tasso di risposta riportato con discrepanza dichiarata: 40-50% a schermo vs 20-50%
+  a voce, non risolta a favore dell'una o dell'altra).
+- ENRICHMENT: **2 skill reali patchate (`avvia-linkedin`, `icp-radar`), 1 skill candidata letta per
+  intero e scartata come non pertinente (`cold-email`). 2 file patchati, +29 / -0.**
+  `avvia-linkedin/SKILL.md` (+13): nuova sezione "Fase 0 -- Il profilo come sales page" con la tabella
+  Mistake/Fix completa, a monte delle 20 connessioni/20 messaggi/30 commenti giornalieri gia' eseguiti.
+  `avvia-linkedin/SKILL.md` (+9): nuova sezione "Fase 0b -- Segnale profile-view", script esatto e
+  tasso di risposta con entrambe le cifre dichiarate nel video.
+  `avvia-linkedin/SKILL.md` (+5): nuova sezione "Gate di qualita' sui post -- The One-Sentence Post Test".
+  `icp-radar/SKILL.md` (+2): principio "audience piccola e precisa batte una grande e generica",
+  inserito nello Scopo dello skill che definisce i criteri di qualifica ICP per nicchia.
+- NON costruito, dichiarato: skill nuova `linkedin-profile-audit`, agente nuovo `outreach-profile-signal`
+  e workflow "Lead Magnet Post -> Connessione -> DM" -- proposte reali del video, non costruite di
+  iniziativa. Registrate **B-036**, **B-037** e **B-038** in `company/Memory/BACKLOG.md`, da
+  approvare da Max.
+- DEBITO APERTO: nessun checkpoint in `company/Memory/`, `STATO-EMPIRE.md` non aggiornato (fuori dal
+  perimetro esplicito di questo brief) e **nessun commit git**, come da vincolo di sessione.

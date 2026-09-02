@@ -1,0 +1,646 @@
+[
+  {
+    "id": "KA-001",
+    "tipo": "standard",
+    "contenuto": "Post su X di Thariq (@trq212), presentato come 'Anthropic Lead Engineer': titolo 'The New Rules of Context Engineering', sottotitolo 'For the Claude 5 generation'. Questa e' la fonte ufficiale esterna citata da cui discende l'intero video.",
+    "fonte": "8NSyI-npJCU#0:02",
+    "frame": "frame-002.png",
+    "confidenza": "osservato",
+    "natura": "ufficiale",
+    "natura_nota": "Fonte primaria esterna citata: post X di Thariq, presentato come Anthropic Lead Engineer."
+  },
+  {
+    "id": "KA-002",
+    "tipo": "opinione",
+    "contenuto": "Framework ARMS (Applications, Routines, Memory, Skills) - modello didattico proprietario di Jay E, presentato come 'la struttura stabile intorno all'agente'. Diagramma: 4 icone (Memory=cassetto viola, Routines=orologio arancione, Apps=dispositivo blu, Skills=libro arancione) su un tavolo con mascotte robot.",
+    "fonte": "8NSyI-npJCU#0:24",
+    "frame": "frame-013.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-003",
+    "tipo": "regola",
+    "contenuto": "Definizione dal PDF guida: 'An agent is an AI that can do real work: read and write files, use tools, and finish tasks, not just answer questions. Out of the box, every conversation starts from zero. An operating system is the standing structure around the agent: what it shows you, what it runs on a schedule, what it remembers, and what it can reliably do.'",
+    "fonte": "8NSyI-npJCU#21:24",
+    "frame": "frame-643.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-004",
+    "tipo": "file",
+    "contenuto": "Path completo del PDF guida: C:\\Users\\jedoe\\Documents\\App R\\.CC\\Lessons\\Agentic OS\\Resources\\arms-agentic-os-guide.pdf - titolo 'A RoboNuggets Guide - Set up your Agentic OS'.",
+    "fonte": "8NSyI-npJCU#21:20",
+    "frame": "frame-641.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-005",
+    "tipo": "comando",
+    "contenuto": "Prompt Claude Code usato per generare il PDF guida: 'Make a PDF guide with /robo on how to set up an Agentic OS' seguito da '/align 10'.",
+    "fonte": "8NSyI-npJCU#8:30",
+    "frame": "frame-256.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-006",
+    "tipo": "standard",
+    "contenuto": "Skills Directory nativa di Claude con filtro 'Anthropic': /skill-creator (Anthropic, 143.9K stelle) - 'Create new skills, modify and improve existing skills...'; /morning (Anthropic, 9.9K) - 'Render the user's morning brief as a rich HTML artifact...'; /canvas-design (1.9M); /web-artifacts-builder (1.2M).",
+    "fonte": "8NSyI-npJCU#5:52",
+    "frame": "frame-177.png",
+    "confidenza": "osservato",
+    "natura": "ufficiale",
+    "natura_nota": "Skills Directory nativa di Claude Code, UI reale con skill Anthropic taggate."
+  },
+  {
+    "id": "KA-007",
+    "tipo": "comando",
+    "contenuto": "Prompt: '/skill-creator Create a skill for something like this and name it \"clean-up\": codex tip: set an automation that keeps your computer running smoothly. - kill all headless instances after test runs - clear cache - audit computer for further opportunities'.",
+    "fonte": "8NSyI-npJCU#6:20",
+    "frame": "frame-191.png",
+    "confidenza": "osservato",
+    "natura": "ufficiale",
+    "natura_nota": "Uso reale della skill ufficiale /skill-creator; il TARGET creato (skill 'clean-up') e' pero' proprietario di Jay."
+  },
+  {
+    "id": "KA-008",
+    "tipo": "opinione",
+    "contenuto": "Regola euristica personale di Jay: 'SOPs. Do a task twice, make it into a skill.' - Level 1: Pre-built Skills OR Build your own.",
+    "fonte": "8NSyI-npJCU#6:40",
+    "frame": "frame-201.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-009",
+    "tipo": "file",
+    "contenuto": "SKILL.md della skill 'clean-up': name: clean-up; description: gestisce la routine System Care (ID #0493) - job di manutenzione Windows giornaliero che termina processi headless/bun orfani, pulisce file temp vecchi, logga un report salute. Trigger: 'clean-up', 'clean up my computer', 'run system care', ecc. Sezione 'The pieces': Script C:\\ROBO\\projects\\jctc\\ID 0493-system-care\\system-care.ps1; Schedule: Task Scheduler 'Robo System Care' giornaliero 7:00am; Log: system-care-log.txt. Sezione 'What one run does': 1) kill browser headless/webdriver/node/bun orfani, 2) elimina temp file >7gg, 3) appende report (RAM freed, disk free, top RAM/CPU processes).",
+    "fonte": "8NSyI-npJCU#7:08",
+    "frame": "frame-215.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-010",
+    "tipo": "file",
+    "contenuto": "Struttura cartella reale .claude/skills/roles/: sottocartelle components/, drafts/, icons/, reference/; file apps.md, backgrounds.md, brand-book.html, courses.md, infographics.md, life.md, SKILL.md, slides.md.",
+    "fonte": "8NSyI-npJCU#7:30",
+    "frame": "frame-226.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-011",
+    "tipo": "configurazione",
+    "contenuto": "Output artefatto 'BRAND BOOK - The ROBO style': palette 4 colori con 1 accento (nero #131311, arancione #F17404 accento principale, giallo #F6C427 accento secondario - valori esatti a bassa confidenza), sistema tipografico 'Three voices, CLEAR jobs' con corpo testo sempre peso 400.",
+    "fonte": "8NSyI-npJCU#8:00",
+    "frame": "frame-242.png",
+    "confidenza": "inferito",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-012",
+    "tipo": "comando",
+    "contenuto": "Prompt integrale 'SKILLS Level 3 - Turn thick skills into a skill tree': 'Look through my skills folder (.claude/skills) and find my thick skills - any skill where one SKILL.md file is doing all the work (roughly 150+ lines or several different jobs mixed into one file). Before restructuring anything, ask me these in one batch: 1) Which skills do I actually use most weeks? 2) Are any skills off-limits? 3) How aggressive should the split be? Then restructure each thick skill into a skill tree: SKILL.md becomes a short router (lists, when it triggers, table pointing to the right file for each job); each distinct job/reference/template moves into its own file (references/, templates/, or plain .md); the router tells the agent to read ONLY the file that matches the task. Rules: do not change what any skill does, only how it is organized; keep every trigger and rule; a good split makes SKILL.md shorter, not longer; show before/after line counts.'",
+    "fonte": "8NSyI-npJCU#8:52",
+    "frame": "frame-267.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-013",
+    "tipo": "regola",
+    "contenuto": "Soglia esplicita per definire una skill 'grassa' da spezzare: 'roughly 150+ lines or several different jobs mixed into one file'.",
+    "fonte": "8NSyI-npJCU#8:52",
+    "frame": "frame-267.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-014",
+    "tipo": "configurazione",
+    "contenuto": "Skills Deck della dashboard con modello+effort assegnato per skill: /sprint-planning = Sonnet Medium (in popup config) e Opus X-High (in vista deck); /newsletter = Opus X-High; /games = Opus X-High; /clean-up = Fable X-High.",
+    "fonte": "8NSyI-npJCU#1:14",
+    "frame": "frame-038.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-015",
+    "tipo": "comando",
+    "contenuto": "Comando CLI headless reale: 'claude -p /clean-up --model fable --effort xhigh --permission-mode bypassPermissions'.",
+    "fonte": "8NSyI-npJCU#9:54",
+    "frame": "frame-297.png",
+    "confidenza": "osservato",
+    "natura": "ufficiale",
+    "natura_nota": "Comando CLI headless reale di Claude Code (claude -p, --model, --effort, --permission-mode sono flag di prodotto verificabili)."
+  },
+  {
+    "id": "KA-016",
+    "tipo": "configurazione",
+    "contenuto": "Report standard di una esecuzione headless: MODEL/EFFORT/DURATION/EXIT/FINISHED nell'header, seguito da riepilogo testuale e poi 'FULL TERMINAL OUTPUT' col comando e note sui permessi.",
+    "fonte": "8NSyI-npJCU#9:52",
+    "frame": "frame-295.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-017",
+    "tipo": "regola",
+    "contenuto": "Nota sintassi permessi in settings.json/settings.local.json: 'Write(.claude/**) is not matched by file permission checks - only Edit(path) rules are. Use Edit(.claude/**) instead (Edit rules cover all file-editing tools).' Ripetuta per Write(.vscode/**) e MultiEdit(.claude/**).",
+    "fonte": "8NSyI-npJCU#9:52",
+    "frame": "frame-296.png",
+    "confidenza": "osservato",
+    "natura": "ufficiale",
+    "natura_nota": "Sintassi permessi settings.json/settings.local.json (Write() vs Edit()) e' comportamento di prodotto reale, non invenzione di Jay."
+  },
+  {
+    "id": "KA-018",
+    "tipo": "comando",
+    "contenuto": "Prompt integrale 'SKILLS Level 3 - Run skills from your OS with claude -p': 'I want to run my Claude Code skills from buttons in my own software, without opening a chat window. This works through headless mode: the command claude -p \"prompt\" runs one prompt and exits. Ask me first: 1) which app should hold the buttons; 2) which 3-5 skills deserve a button; 3) options vs defaults. Then build it: one button per skill, e.g. claude -p /clean-up --model claude-sonnet-5; buttons with options get a picker; show run status; if plain HTML with no server, add the smallest local helper that shells out claude -p. Log every run to runs.log. Walk me through one real button press end to end before calling it done.'",
+    "fonte": "8NSyI-npJCU#10:14",
+    "frame": "frame-308.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-019",
+    "tipo": "opinione",
+    "contenuto": "Introduzione pilastro Memory: 'Context builds up as you work. Where it lives.' Level 1: Filedump - a workspace is just a folder.",
+    "fonte": "8NSyI-npJCU#10:48",
+    "frame": "frame-325.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-020",
+    "tipo": "file",
+    "contenuto": "Struttura cartella root C:\\ROBO (leggibilita' parziale): cartelle di primo livello incluse agents, .claude, codex, content, dashboard, design, excalidraw, generations, hermes, shared, temp, tools, .gitignore; file root AGENTS.md, CLAUDE.md, COMMUNITY.md, CONTENT.md e altri file .md per dominio.",
+    "fonte": "8NSyI-npJCU#11:04",
+    "frame": "frame-336.png",
+    "confidenza": "inferito",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-021",
+    "tipo": "comando",
+    "contenuto": "Prompt integrale 'MEMORY Level 2 - Build router files for your workspace': 'My workspace has grown... Build me router files instead of reorganizing my folders. A router file is a short markdown index that points an agent to where things live. Ask me first: 1) 3-4 main areas of my work; 2) which files/folders I touch most; 3) anything private to exclude. Then: 1) explore and map what lives where; 2) write one master router at the root (CLAUDE.md if Claude Code) - who I am in one line, main areas, table area->folder->index file; 3) write one short index per area (like CONTENT.md or CLIENTS.md) listing key files; 4) keep every index a page - pointers, not documentation; 5) end the master router with the rule: when a file moves or a new project starts, update the router in the same turn - a stale pointer is worse than no pointer.'",
+    "fonte": "8NSyI-npJCU#13:30",
+    "frame": "frame-406.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-022",
+    "tipo": "file",
+    "contenuto": "Contenuto di CONTENT.md (albero decisionale pipeline contenuti, ricostruito su piu' frame): sezione CHOICE con step 1 (a3x new ideas: vidiq/x/google/arXiv - skills master-content-selection, real-tweet/youtube-numerize - files topic-shortlist.csv), step 2 (select idea - skills master-content-selection - files shared/projects/); sezione PRODUCTION con step 3 (research and write flow - skills master-writing/notewise/graphity - files outline.docx - thinking project_content_pipeline_review v2) e step 4 (reference creator-benchmark.md, files strategy.md, feedback project_content_review_us_english.md).",
+    "fonte": "8NSyI-npJCU#12:52",
+    "frame": "frame-387.png",
+    "confidenza": "inferito",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-023",
+    "tipo": "configurazione",
+    "contenuto": "Second Brain: tassonomia ad anelli concentrici. Anello esterno APPLICATIONS, poi ROUTINES, poi MEMORY, anello interno SKILLS, centro hub CLAUDE.md.",
+    "fonte": "8NSyI-npJCU#12:22",
+    "frame": "frame-372.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-024",
+    "tipo": "configurazione",
+    "contenuto": "5 cluster dipartimentali che si diramano dal centro CLAUDE.md dentro l'anello SKILLS: CONTENT (viola), BUSINESS (viola), PERSONAL (giallo), PRODUCT (ciano), COMMUNITY (ciano), con conteggi file indicativi (Content ~999/10999, Business 1543/2783, Personal 23579, Community 3242 - cifre a bassa confidenza).",
+    "fonte": "8NSyI-npJCU#12:50",
+    "frame": "frame-374.png",
+    "confidenza": "inferito",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-025",
+    "tipo": "configurazione",
+    "contenuto": "Second Brain indicizza 60.601 file totali (campo di ricerca 'Search 60,601 files...').",
+    "fonte": "8NSyI-npJCU#11:18",
+    "frame": "frame-340.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-026",
+    "tipo": "opinione",
+    "contenuto": "Introduzione pilastro Routines: 'For when you've mastered Skills and Memory, you can now schedule them into automated ROUTINES.' Level 1: Local routines - run while the PC is on.",
+    "fonte": "8NSyI-npJCU#14:36",
+    "frame": "frame-439.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-027",
+    "tipo": "configurazione",
+    "contenuto": "Configurazione completa Routine 'YouTube to Substack daily': Description (turn any new RoboNuggets YouTube video into a 3x write draft via the newsletter skill, log it, ping Jay on Telegram every run); Status Active, next run 8:00 AM; Folder C:\\ROBO; Repeats every day 8:00 AM. Instructions: automazione non presidiata, opera solo in C:\\ROBO, non pubblica/posta/invia email mai, produce solo bozza per review; goal, key paths (project A-0313-substack-newsletter, drafts template, skill newsletter/SKILL.md, log newsletter-log.json).",
+    "fonte": "8NSyI-npJCU#15:10",
+    "frame": "frame-456.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-028",
+    "tipo": "standard",
+    "contenuto": "Funzione nativa 'Routines' di Claude Code: 'Create templated routines that can be kicked off on schedule, by API, or webhook.' Suggerimenti chip: 'Summarize my open PRs every weekday morning', 'Triage new issues and flag duplicates each morning', 'Draft release notes whenever a PR merges'. Nota: 'Local routines only run while your computer is awake and online.' Lista esempio: YouTube to substack daily (8:00 AM), Daily inbox digest team (9:00 AM), Morning sync conflict check (7:00 AM).",
+    "fonte": "8NSyI-npJCU#15:58",
+    "frame": "frame-480.png",
+    "confidenza": "osservato",
+    "natura": "ufficiale",
+    "natura_nota": "Funzione nativa 'Routines' di Claude Code (schedule/API/webhook), UI reale."
+  },
+  {
+    "id": "KA-029",
+    "tipo": "opinione",
+    "contenuto": "Routines Level 2: 'Always-on - Hermes in the cloud' - diagramma laptop <-> nuvola etichettata 'Hermes', un agente cloud open-source sempre attivo.",
+    "fonte": "8NSyI-npJCU#16:40",
+    "frame": "frame-501.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-030",
+    "tipo": "comando",
+    "contenuto": "Prompt integrale 'ROUTINES Level 3 - Two-machine sync with Syncthing': 'One prompt, sent to Claude Code on BOTH machines... You are setting up one half of a two-machine sync... first detect which machine you are on. Goal: keep one shared folder in sync using Syncthing. Ask me first: 1) which folder to sync; 2) other machine name/OS and network (LAN/Tailscale/internet); 3) what must NEVER sync (secrets, node_modules, temp). Then: 1) install Syncthing, start on boot; 2) add folder with ignore file; 3) show Device ID, add other machine as trusted device; 4) share folder, wait for accept; 5) verify with a test file; 6) report setup and how to check status. Security rule: never expose the Syncthing web UI to the internet. Local access only.'",
+    "fonte": "8NSyI-npJCU#17:38",
+    "frame": "frame-530.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-031",
+    "tipo": "file",
+    "contenuto": "Sito ufficiale di Syncthing (syncthing.net) mostrato come strumento reale di riferimento: 'Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes.'",
+    "fonte": "8NSyI-npJCU#17:18",
+    "frame": "frame-520.png",
+    "confidenza": "osservato",
+    "natura": "riferimento-esterno",
+    "natura_nota": "Sito ufficiale di un tool open-source reale (Syncthing) - non e' materiale Anthropic ne' costruzione di Jay, e' un riferimento esterno verificabile."
+  },
+  {
+    "id": "KA-032",
+    "tipo": "configurazione",
+    "contenuto": "Elenco Routines produttive di Jay con motore di esecuzione: morning sync conflict check, 07:00 client health scan (Hermes), 08:00 YouTube to substack daily (Desktop), 09:00 daily inbox digest team (Desktop), 11:00 deliverables status sweep (Hermes), 13:00 community pulse digest (Hermes), 16:30 content pipeline check (Hermes), 18:00 client report drafts (Hermes). Footer: 'Claude Desktop 3 · Hermes 14'.",
+    "fonte": "8NSyI-npJCU#17:00",
+    "frame": "frame-511.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-033",
+    "tipo": "standard",
+    "contenuto": "Le 6 regole 'Then/Now' di context engineering (trascrizione integrale dall'artefatto newsletter generato dalla routine, attribuite a Tariq/Anthropic): 1) Then rules, Now judgment (dal muro di regole a una riga di giudizio su codice che si legge come il contesto); 2) Then examples, Now interfaces (un campo ben nominato insegna meglio degli esempi); 3) Then everything upfront, Now progressive disclosure (un CLAUDE.md pesante consuma token a ogni sessione); 4) Then repeating yourself, Now simple tool descriptions (ripetere era un workaround per modelli deboli); 5) Then memory in CLAUDE.md, Now auto memory (i fatti vanno nel sistema di memoria, non nel file di guida); 6) Then simple specs, Now rich references (il riferimento a piu' alta fedelta' e' un documento ricco letto come codice, es. brand book HTML).",
+    "fonte": "8NSyI-npJCU#15:40",
+    "frame": "frame-472.png",
+    "confidenza": "osservato",
+    "natura": "ufficiale",
+    "natura_nota": "Le 6 regole Then->Now attribuite a Thariq/Anthropic: unico blocco di contenuto con fonte esterna ufficiale dichiarata a schermo."
+  },
+  {
+    "id": "KA-034",
+    "tipo": "standard",
+    "contenuto": "Claim riportato nell'artefatto newsletter: 'The engineer is Tariq, and the article is at 4.3 million views. They stripped what Anthropic did to themselves. They stripped over 80% of Claude Code's system prompt, and the coding advice did not drop a point.'",
+    "fonte": "8NSyI-npJCU#15:40",
+    "frame": "frame-472.png",
+    "confidenza": "osservato",
+    "natura": "ufficiale",
+    "natura_nota": "Claim numerici (4.3M views, 80% system prompt) attribuiti a Thariq nello stesso artefatto delle 6 regole - riportati, non verificati indipendentemente in questo run."
+  },
+  {
+    "id": "KA-035",
+    "tipo": "opinione",
+    "contenuto": "Introduzione pilastro Apps Level 2: 'Search what exists - CLI, MCP, API' - diagramma robot con linee tratteggiate verso icone generiche di app.",
+    "fonte": "8NSyI-npJCU#19:08",
+    "frame": "frame-571.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-036",
+    "tipo": "file",
+    "contenuto": "SKILL.md della skill 'search-connectors': 'API for X. Any MCP server for X. Given an app or service, find the best ways to hook into it. Quick pass, not an audit.' Workflow: 1) identify the app (official docs/GitHub first, outrank everything); 2) community pass in ordine CLI->API->MCP (github search, modelcontextprotocol/servers); 3) health check (last commit, stars, archived); 4) report format fisso; 5) end with one recommendation + install offer.",
+    "fonte": "8NSyI-npJCU#19:12",
+    "frame": "frame-577.png",
+    "confidenza": "inferito",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-037",
+    "tipo": "comando",
+    "contenuto": "Esecuzione '/search-connectors for Adobe Premiere Pro' - output: Official (Adobe): CLI none, API UXP scripting (Premiere 25.6+), MCP none ufficiale; Community: CLI nulla di sano, MCP hetpatel-11/Premiere-Pro-MCP (462 stelle, aggiornato ieri, 282 tool); raccomandazione finale sul repo hetpatel + fonti citate.",
+    "fonte": "8NSyI-npJCU#19:42",
+    "frame": "frame-587.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-038",
+    "tipo": "file",
+    "contenuto": "Repository GitHub reale mostrato a schermo: hetpatel-11/Adobe_Premiere_Pro_MCP - pubblico, 462 star, 98 fork, 143 commit. Descrizione: 'Adobe Premiere Pro MCP. 282 tools for AI-driven video editing via MCP, for Codex, Claude, and other MCP clients.'",
+    "fonte": "8NSyI-npJCU#19:48",
+    "frame": "frame-595.png",
+    "confidenza": "osservato",
+    "natura": "riferimento-esterno",
+    "natura_nota": "Repository GitHub pubblico reale, verificabile indipendentemente - non e' materiale Anthropic ne' costruzione di Jay."
+  },
+  {
+    "id": "KA-039",
+    "tipo": "file",
+    "contenuto": "Repository GitHub reale mostrato a schermo: mvanhorn/cli-printing-press - pubblico, 297 branch, 97 tag, 1.851 commit, 4.5k star. Descrizione: 'Every API has a secret identity. This finds it, absorbs every feature from every competing tool, then builds the GOAT CLI - designed for AI agents first, with SQLite sync, offline search, and compound insight commands.'",
+    "fonte": "8NSyI-npJCU#20:08",
+    "frame": "frame-602.png",
+    "confidenza": "osservato",
+    "natura": "riferimento-esterno",
+    "natura_nota": "Repository GitHub pubblico reale, verificabile indipendentemente - non e' materiale Anthropic ne' costruzione di Jay."
+  },
+  {
+    "id": "KA-040",
+    "tipo": "opinione",
+    "contenuto": "Apps Level 3: 'Build your own - connectors and apps' - stesso diagramma con un nuovo box 'NEW' collegato al robot, chiude la progressione a 3 livelli.",
+    "fonte": "8NSyI-npJCU#20:24",
+    "frame": "frame-613.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-041",
+    "tipo": "configurazione",
+    "contenuto": "Layout completo della dashboard 'Rubric Agentic OS': colonna sinistra Micro Apps + Calendar; centro anello di icone app con visualizzazione particellare 'click to open second brain'; colonna destra Email + Skills Deck + Routines.",
+    "fonte": "8NSyI-npJCU#0:00",
+    "frame": "frame-001.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-042",
+    "tipo": "file",
+    "contenuto": "Elenco Micro Apps: Generations ('Every image and video you have generated'), Teleprompter ('Scripts you read on camera'), Second Brain ('Your whole workspace as a living map'), Excalidraw ('Hand-drawn diagrams ready to copy onto your canvas').",
+    "fonte": "8NSyI-npJCU#0:54",
+    "frame": "frame-033.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-043",
+    "tipo": "opinione",
+    "contenuto": "Esempio cliente 'Stropro Agentic OS' - dashboard personalizzata per servizi finanziari in Australia: Market Clock, Capital Deployed $1.6Bn+, Issuance Pipeline, Adviser Desk 18 requests. Confermato dal sito reale stropro.com.",
+    "fonte": "8NSyI-npJCU#2:34",
+    "frame": "frame-078.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-044",
+    "tipo": "opinione",
+    "contenuto": "Esempio cliente 'Beetogreen Agentic OS' - flotta e-bike: HR Requests 24, Skills Deck /fleet-report /mobility-calc /onboarding-pack /iso-report, Kilometres Ridden 482,000, Fleet Health (bikes deployed 1540, bikes due a service 47).",
+    "fonte": "8NSyI-npJCU#2:40",
+    "frame": "frame-081.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-045",
+    "tipo": "opinione",
+    "contenuto": "Struttura del corso a pagamento 'The Claude Living Masterclass': BONUS Agentic AI Fundamentals; Volume A - Setup and Foundations (The Operating System Mindset: ARMS); Volume B - Skills; Volume C - Memory (C1 How Claude Memory Works, C2 Claude MD best practices, C3 The two Claude MDs, C4 Use /init, C5 Memory MD explained, C6 Automatic memory).",
+    "fonte": "8NSyI-npJCU#3:00",
+    "frame": "frame-091.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-046",
+    "tipo": "opinione",
+    "contenuto": "Modulo corso 'Agents-as-a-Service': 'The DOTS Framework', Pricing & Closing Techniques, Making It Official (Contracts & Invoicing), Milestone Your First Proposal, Delivering Results.",
+    "fonte": "8NSyI-npJCU#3:06",
+    "frame": "frame-094.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-047",
+    "tipo": "standard",
+    "contenuto": "Pannello nativo Claude Code Settings -> Customize con categorie: Skills, Connectors (selezionato), Plugins, Memory; sezione Desktop app: General, Extensions, Developer.",
+    "fonte": "8NSyI-npJCU#18:52",
+    "frame": "frame-567.png",
+    "confidenza": "osservato",
+    "natura": "ufficiale",
+    "natura_nota": "Pannello Settings->Customize nativo di Claude Code (categorie Skills/Connectors/Plugins/Memory)."
+  },
+  {
+    "id": "KA-048",
+    "tipo": "standard",
+    "contenuto": "Selettore modello nella chat nativa di Claude Code: opzioni 'Auto', 'Fable 5', 'Extra' visibili in basso nella barra di input.",
+    "fonte": "8NSyI-npJCU#18:46",
+    "frame": "frame-564.png",
+    "confidenza": "osservato",
+    "natura": "ufficiale",
+    "natura_nota": "Selettore modello nativo in chat Claude Code (Auto/Fable 5/Extra)."
+  },
+  {
+    "id": "KA-049",
+    "tipo": "configurazione",
+    "contenuto": "Popup di configurazione skill: griglia Model x Effort con righe Haiku/Sonnet/Opus/Fable e colonne Low/Medium/High/Max; per /sprint-planning lo slider e' posizionato su Sonnet-Medium.",
+    "fonte": "8NSyI-npJCU#0:14",
+    "frame": "frame-008.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-050",
+    "tipo": "regola",
+    "contenuto": "Gerarchia dichiarata della piramide ARMS: base piu' larga = SKILLS (fondazione), poi MEMORY, poi ROUTINES, punta piu' stretta = APPS (piu' visibile ma meno fondamentale).",
+    "fonte": "8NSyI-npJCU#5:24",
+    "frame": "frame-163.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-051",
+    "tipo": "opinione",
+    "contenuto": "Diagramma 'Level 2: Thin Skills, Rich References' - un box skill.md con 3 frecce verso file/immagine/documento separati, illustra il pattern 'router breve + reference file'.",
+    "fonte": "8NSyI-npJCU#9:04",
+    "frame": "frame-273.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-052",
+    "tipo": "file",
+    "contenuto": "Micro-app 'Excalidraw Landing Pad' (path C:/ROBO/output/excalidraw-landing-pad/index.html): libreria di diagrammi pronti con bottoni Copy Elements/Download - 'Pixel Agents - Blue', 'ARMS Pyramid + Levels', 'Section 04 How - Pixels vs Words'.",
+    "fonte": "8NSyI-npJCU#20:56",
+    "frame": "frame-629.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-053",
+    "tipo": "opinione",
+    "contenuto": "Micro-app 'Generations' aperta in locale (localhost): galleria di immagini/video generati da Jay, incluse le stesse illustrazioni pixel-art 'Then/Now' e 'Level Up' usate come grafiche in questo stesso video - conferma meta che le illustrazioni sono auto-prodotte, non materiale Anthropic.",
+    "fonte": "8NSyI-npJCU#20:32",
+    "frame": "frame-617.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-054",
+    "tipo": "opinione",
+    "contenuto": "Diagramma Memory Level 2 'Routers + a tree of files' - albero semplice (radice + 3 rami + 2 foglie ciascuno), stesso pattern router gia' visto per le Skills.",
+    "fonte": "8NSyI-npJCU#12:16",
+    "frame": "frame-369.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-055",
+    "tipo": "file",
+    "contenuto": "Slide credenziali: loghi di brand con cui Jay ha lavorato - Unilever, Fresh, Microsoft, Virgin, Ogilvy, Knorr, Lipton.",
+    "fonte": "8NSyI-npJCU#0:32",
+    "frame": "frame-017.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-056",
+    "tipo": "file",
+    "contenuto": "Slide formazione: University of Technology Sydney - Master of Data Science and Innovation.",
+    "fonte": "8NSyI-npJCU#0:34",
+    "frame": "frame-018.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-057",
+    "tipo": "opinione",
+    "contenuto": "Sito agenzia 'RoboLabs' di Jay: 'The Era of AI is Here / RoboLabs helps you lead it', nav Services/Process/Solutions/Let's Talk.",
+    "fonte": "8NSyI-npJCU#0:36",
+    "frame": "frame-019.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-058",
+    "tipo": "configurazione",
+    "contenuto": "Esempio di ricerca live nella cartella ROBO tramite Windows Explorer (query 'clean up'), UI nativa 'Search Results in ROBO'.",
+    "fonte": "8NSyI-npJCU#14:22",
+    "frame": "frame-432.png",
+    "confidenza": "osservato",
+    "natura": "riferimento-esterno",
+    "natura_nota": "Funzione nativa di Windows Explorer (ricerca file) - non e' uno standard Claude/Anthropic ne' una costruzione di Jay."
+  },
+  {
+    "id": "KA-059",
+    "tipo": "opinione",
+    "contenuto": "Community classroom RoboNuggets: moduli Start Here, Agentic AI Series ('leapfrog series... Zero to your first Agentic team'), Agents-as-a-Service ('step-by-step system for launching your AI solutions'), AI Deals Bundle, Community Vault, Affiliate Program, Agentic AI Foundations, Claude Code Masterclass ('The Claude Living Masterclass'), Hermes Agent Masterclass ('most powerful open-source 24/7 Agent on the planet').",
+    "fonte": "8NSyI-npJCU#16:32",
+    "frame": "frame-497.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-060",
+    "tipo": "opinione",
+    "contenuto": "Claim di corso non verificato: Hermes descritto come 'the most powerful open-source 24/7 Agent on the planet'.",
+    "fonte": "8NSyI-npJCU#16:36",
+    "frame": "frame-499.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-061",
+    "tipo": "opinione",
+    "contenuto": "Illustrazioni pixel-art 'FASTER' (arancione) e 'CHEAPER' (verde) e fabbrica di robot-lavoratori: metafora visiva del valore promesso dall'Agentic OS (velocita' + riduzione costi).",
+    "fonte": "8NSyI-npJCU#0:20",
+    "frame": "frame-011.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-062",
+    "tipo": "regola",
+    "contenuto": "Regola di sicurezza dal prompt Syncthing: 'never expose the Syncthing web UI to the internet. Local access only.'",
+    "fonte": "8NSyI-npJCU#17:38",
+    "frame": "frame-530.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-063",
+    "tipo": "regola",
+    "contenuto": "Regola di manutenzione dal prompt router: 'a stale pointer is worse than no pointer' - il router master va aggiornato nello stesso turno in cui un file si sposta o parte un nuovo progetto.",
+    "fonte": "8NSyI-npJCU#13:30",
+    "frame": "frame-406.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-064",
+    "tipo": "file",
+    "contenuto": "README del PDF guida: 'What this is. A setup guide for your agentic operating system... How to use it. Read the overview below, then set up one part at a time with pages 3 to 6. Each part has a copy-paste prompt... Finish with the 7-day plan on page 7. The shortcut. Inside the RoboNuggets community at skool.com/robonuggets...'",
+    "fonte": "8NSyI-npJCU#8:28",
+    "frame": "frame-255.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-065",
+    "tipo": "configurazione",
+    "contenuto": "Skills Deck e Routines table della dashboard: /sprint-planning, /newsletter, /games, /clean-up con effort X-High; tabella Routines con orari 08:00-21:30 e stati done/Desktop/NEXT/QUEUED; footer 'Claude Desktop 5 · Hermes 14 · Data 20 Aug, 02:56 PM'.",
+    "fonte": "8NSyI-npJCU#1:14",
+    "frame": "frame-039.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-066",
+    "tipo": "regola",
+    "contenuto": "Il video non etichetta mai esplicitamente un 'Apps Level 1' a schermo (a differenza degli altri 3 pilastri che hanno Level 1 chiaramente mostrato) - gap dichiarato nella sezione 'cosa il video non mostra'.",
+    "fonte": "8NSyI-npJCU#19:08",
+    "frame": "frame-571.png",
+    "confidenza": "inferito",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-067",
+    "tipo": "configurazione",
+    "contenuto": "Controlli UI del pannello Second Brain: 'View raw / Open on device / Copy path' su ogni nodo file; menu con tab Explore/Nodes/Edges; controlli layout Force/Circle/Hex/Rings; slider Link spring, Circle/Hex size; bottoni Expand all/Collapse all.",
+    "fonte": "8NSyI-npJCU#0:16",
+    "frame": "frame-009.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-068",
+    "tipo": "opinione",
+    "contenuto": "Claim di apertura del video (hook di marketing, non verificabile): 'by the end of it, you'll be using agents better than 99% of people.'",
+    "fonte": "8NSyI-npJCU#0:27",
+    "frame": "frame-016.png",
+    "confidenza": "inferito",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-069",
+    "tipo": "file",
+    "contenuto": "YouTube Studio widget nella dashboard: 170,000 subscribers, 8.5M lifetime views, 5 longforms this month.",
+    "fonte": "8NSyI-npJCU#1:14",
+    "frame": "frame-038.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  },
+  {
+    "id": "KA-070",
+    "tipo": "opinione",
+    "contenuto": "Pagina About community RoboNuggets: 1.2k Members, 51 Online, 4 Admins, badge 'Official member of the Claude Partner Network'.",
+    "fonte": "8NSyI-npJCU#2:52",
+    "frame": "frame-087.png",
+    "confidenza": "osservato",
+    "natura": "proprietario"
+  }
+]

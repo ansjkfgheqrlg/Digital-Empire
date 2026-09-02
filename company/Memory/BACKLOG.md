@@ -74,3 +74,27 @@
   (risultato disconnesso in sessione, CONNECT_TIMEOUT) — nessun MCP di tipo browser-automation,
   il che limita ogni audit `market-*` alla lettura statica via `WebFetch`. Origine: video
   `yJOCyyP77bA`, stessa sessione di B-034. Decisione di stack, non una patch di skill.
+
+- **B-036** — PROPOSTA (da approvare da Max, non costruita): skill nuova che applichi la
+  tabella Mistake/Fix del profilo LinkedIn come sales page (headline = chi aiuti + risultato,
+  custom button = link a calendario, featured section = case study/testimonial/metodologia)
+  come deliverable di audit — sui profili del team DE e, in prospettiva, dei clienti CRO.
+  Origine: video `-gq8euRvNR4` (Paolo Trivellato, batch max17 4/8). Non costruita in questa
+  sessione: il gap concreto è già stato patchato direttamente dentro `avvia-linkedin/SKILL.md`
+  (Fase 0), che copre l'uso operativo ma non un deliverable di audit dedicato/parametrizzato.
+
+- **B-037** — PROPOSTA (da approvare da Max, non costruita): agente `outreach-profile-signal`
+  che monitori i profile-view su LinkedIn (segnale di buying-intent: chi visita ripetutamente
+  il profilo si è mosso per primo) e triggeri l'invio del messaggio soft del Meccanismo 2,
+  adattato alla Bibbia dei Messaggi DE invece dello script fisso del video. Nessun agente
+  outreach esistente (`outreach-message-writer`, `outreach-followup-sequencer`, team
+  DEEP-INTEL) intercetta oggi questo segnale. Origine: video `-gq8euRvNR4`, stessa sessione
+  di B-036.
+
+- **B-038** — PROPOSTA (da approvare da Max, non costruita): workflow "Lead Magnet Post →
+  Connessione → DM" — a partire da un post LinkedIn con call-to-comment, automatizza l'invio
+  della risorsa gratuita a chi commenta e invia richiesta di connessione, loggando ogni nuova
+  connessione come lead qualificato nel CRM (Areus o equivalente). Aggiungerebbe un canale
+  organico "in entrata" che oggi manca del tutto: tutto lo stack outreach DE (Preventa, Areus,
+  scraping) parte sempre da liste fredde/scraping, mai da engagement spontaneo su un post.
+  Origine: video `-gq8euRvNR4`, stessa sessione di B-036/B-037.
