@@ -1,0 +1,144 @@
+{
+  "run": "andrei-pascu-001/cat2-marketing/hnPa2zspu3k",
+  "url": "https://www.youtube.com/watch?v=hnPa2zspu3k",
+  "duration_sec": 33,
+  "video_file": "video.mp4",
+  "frames": [
+    {
+      "file": "frames/frame-001.png",
+      "index": 1,
+      "timestamp_sec": 0.0,
+      "timestamp_hms": "0:00:00",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:00 + frames/frame-001.png"
+    },
+    {
+      "file": "frames/frame-002.png",
+      "index": 2,
+      "timestamp_sec": 2.0,
+      "timestamp_hms": "0:00:02",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:02 + frames/frame-002.png"
+    },
+    {
+      "file": "frames/frame-003.png",
+      "index": 3,
+      "timestamp_sec": 4.0,
+      "timestamp_hms": "0:00:04",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:04 + frames/frame-003.png"
+    },
+    {
+      "file": "frames/frame-004.png",
+      "index": 4,
+      "timestamp_sec": 6.0,
+      "timestamp_hms": "0:00:06",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:06 + frames/frame-004.png"
+    },
+    {
+      "file": "frames/frame-005.png",
+      "index": 5,
+      "timestamp_sec": 8.0,
+      "timestamp_hms": "0:00:08",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:08 + frames/frame-005.png"
+    },
+    {
+      "file": "frames/frame-006.png",
+      "index": 6,
+      "timestamp_sec": 10.0,
+      "timestamp_hms": "0:00:10",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:10 + frames/frame-006.png"
+    },
+    {
+      "file": "frames/frame-007.png",
+      "index": 7,
+      "timestamp_sec": 12.0,
+      "timestamp_hms": "0:00:12",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:12 + frames/frame-007.png"
+    },
+    {
+      "file": "frames/frame-008.png",
+      "index": 8,
+      "timestamp_sec": 14.0,
+      "timestamp_hms": "0:00:14",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:14 + frames/frame-008.png"
+    },
+    {
+      "file": "frames/frame-009.png",
+      "index": 9,
+      "timestamp_sec": 16.0,
+      "timestamp_hms": "0:00:16",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:16 + frames/frame-009.png"
+    },
+    {
+      "file": "frames/frame-010.png",
+      "index": 10,
+      "timestamp_sec": 18.0,
+      "timestamp_hms": "0:00:18",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:18 + frames/frame-010.png"
+    },
+    {
+      "file": "frames/frame-011.png",
+      "index": 11,
+      "timestamp_sec": 20.0,
+      "timestamp_hms": "0:00:20",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:20 + frames/frame-011.png"
+    },
+    {
+      "file": "frames/frame-012.png",
+      "index": 12,
+      "timestamp_sec": 22.0,
+      "timestamp_hms": "0:00:22",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:22 + frames/frame-012.png"
+    },
+    {
+      "file": "frames/frame-013.png",
+      "index": 13,
+      "timestamp_sec": 24.0,
+      "timestamp_hms": "0:00:24",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:24 + frames/frame-013.png"
+    },
+    {
+      "file": "frames/frame-014.png",
+      "index": 14,
+      "timestamp_sec": 26.0,
+      "timestamp_hms": "0:00:26",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:26 + frames/frame-014.png"
+    },
+    {
+      "file": "frames/frame-015.png",
+      "index": 15,
+      "timestamp_sec": 28.0,
+      "timestamp_hms": "0:00:28",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:28 + frames/frame-015.png"
+    },
+    {
+      "file": "frames/frame-016.png",
+      "index": 16,
+      "timestamp_sec": 30.0,
+      "timestamp_hms": "0:00:30",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:30 + frames/frame-016.png"
+    },
+    {
+      "file": "frames/frame-017.png",
+      "index": 17,
+      "timestamp_sec": 32.0,
+      "timestamp_hms": "0:00:32",
+      "chapter": "",
+      "trace": "hnPa2zspu3k#0:00:32 + frames/frame-017.png"
+    }
+  ]
+}
