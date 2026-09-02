@@ -1,0 +1,46 @@
+{
+  "kind": "single-video",
+  "id": "JdAQzAcWR6k",
+  "title": "How to Create VIRAL Carousels in ChatGPT (No Coding)",
+  "url": "https://www.youtube.com/watch?v=JdAQzAcWR6k",
+  "duration_sec": 460,
+  "uploader": "Artem Novitckii",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Preview of the carousels"
+    },
+    {
+      "start": 29,
+      "title": "Why most AI carousels fail"
+    },
+    {
+      "start": 73,
+      "title": "Part 1: The visual anchor solution"
+    },
+    {
+      "start": 118,
+      "title": "Part 2: How to build it (4-step system)"
+    },
+    {
+      "start": 325,
+      "title": "Part 3: Polishing with Canva Magic Layers"
+    },
+    {
+      "start": 374,
+      "title": "Part 4: Same system for LinkedIn"
+    },
+    {
+      "start": 411,
+      "title": "Summary"
+    }
+  ],
+  "subs": [
+    "runs\\max17-v01-artem\\JdAQzAcWR6k.en.vtt"
+  ],
+  "thumbnails": [
+    "runs\\max17-v01-artem\\JdAQzAcWR6k.webp"
+  ],
+  "ingested_at": "2026-09-02T12:39:44",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=JdAQzAcWR6k"
+}
