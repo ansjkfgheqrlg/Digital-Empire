@@ -98,3 +98,30 @@
   organico "in entrata" che oggi manca del tutto: tutto lo stack outreach DE (Preventa, Areus,
   scraping) parte sempre da liste fredde/scraping, mai da engagement spontaneo su un post.
   Origine: video `-gq8euRvNR4`, stessa sessione di B-036/B-037.
+
+- **B-039** — **115 delle 170 SKILL.md superano le 150 righe (68%).** Peggiori: `cro-youtube-lead-magnet`
+  5.160 righe, `cro-call` 5.146, `cro-strategy-social-(ig-tiktok)` 3.942, `printing-press` 3.639,
+  `cro-funnel-architect.md` 2.771. Una skill si carica **intera** quando si attiva: migliaia di righe
+  caricate per rispondere a una domanda che ne richiede decine sono budget bruciato a ogni
+  invocazione. Rimedio proposto: refactoring a router + file dedicati (progressive disclosure),
+  affidabile a `skill-creator` e `chief-forge`, che esistono già — **nessuna skill o agente
+  nuovo serve**. Da approvare da Max prima di partire: tocca 115 file. Origine: video `8NSyI-npJCU`
+  (Jay E | RoboNuggets, batch max17 5/8) — soglia "150+ righe" presa dal suo prompt "Skills Level 3",
+  non uno standard Anthropic. Non costruito in questa sessione per vincolo esplicito del task
+  (refactoring di 115 file, non da eseguire di slancio).
+
+- **B-040** — PROPOSTA (da approvare da Max, non costruita): ricerca semantica sulla wiki
+  (salto al Livello 3). Con 1.831 pagine in `second-brain-vault/wiki/` la ricerca resta
+  lessicale: si trova solo cio' di cui si conosce gia' il nome file o il wikilink esatto.
+  Opzione a costo zero indicata dal video: plugin Obsidian "Smart Connections" installato
+  direttamente sulla vault esistente (ricerca per significato/embeddings, locale, gratuito).
+  Impatto diretto su `conoscenza-empire`, che oggi puo' dichiarare un vuoto di conoscenza che
+  in realta' e' solo un termine mancato — patchato in questa stessa sessione con la nota di
+  onesta' epistemica corrispondente. Origine: video `DTCyvo6cC54` (Nate Herk | AI Automation,
+  batch max17 8/8).
+
+- **B-041** — PROPOSTA (da approvare da Max, non costruita): logica di pruning della wiki
+  (two-bucket test: cosa resta consultabile come conoscenza core, cosa si archivia perche'
+  specifico/mutevole). Una wiki che cresce e non pota diventa rumore — rischio concreto con
+  1.831 pagine e nessun criterio esplicito scritto oggi in `second-brain-vault/wiki/` su cosa
+  NON va mai ingerito. Origine: video `DTCyvo6cC54`, stessa sessione di B-040.

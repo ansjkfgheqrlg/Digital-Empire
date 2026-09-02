@@ -1273,3 +1273,46 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   approvare da Max.
 - DEBITO APERTO: nessun checkpoint in `company/Memory/`, `STATO-EMPIRE.md` non aggiornato (fuori dal
   perimetro esplicito di questo brief) e **nessun commit git**, come da vincolo di sessione.
+
+- INGEST (Empire Studio + Memory Empire): **batch max17, video 8/8** -- `DTCyvo6cC54`
+  "Every Level of a Claude Second Brain Explained" (Nate Herk | AI Automation, 30m59, EN),
+  **130/130 frame unici letti -- coverage 100%**, 55 KA (20 alta rilevanza DE), NO-FINTO PASS.
+  Chiusura di un gap a valle: pipeline Empire Studio gia' fatta in sessione precedente, layer Memory
+  Empire e wiki mai chiusi, consigli dell'analisi mai applicati -- stesso pattern di `yJOCyyP77bA`,
+  `E8Ax92etrMc` e `-gq8euRvNR4` gia' chiusi oggi. Nessuna nuova visione dei frame.
+  -> `memory-empire/knowledge/DTCyvo6cC54/` (contenuto-integrale mai riassunto + atoms + manifest +
+  enrichment-report), **1 pagina wiki creata**
+  (`sources/Source_Nate_Herk_Claude_Second_Brain_Levels.md`), index.md aggiornato (nuova sezione
+  "Second Brain & Knowledge Architecture").
+- CONTENUTO: tassonomia a 5 livelli di retrieval per un second brain su Claude Code (L1 parola
+  esatta/nome file, L2 wiki curata con router+auto-memory, L3 ricerca semantica/embeddings, L4
+  knowledge graph tipizzato, L5 always-on/gbrain), ognuno risposta a una domanda diversa non a un
+  budget diverso: "reverse engineer based on the question", "your whole project doesn't fit into
+  one level". Ogni livello ha una cartella demo con CLAUDE.md integrale mostrato a schermo (letti
+  parola per parola). Confronto verificato sulla wiki reale DE (1.831 pagine, non solo dichiarato):
+  DE opera prevalentemente a Livello 1-2 (company/Memory + second-brain-vault/wiki), oltre la soglia
+  in cui il video consiglia di valutare il salto al Livello 3 -- nessuna ricerca semantica
+  configurata sulla wiki DE oggi.
+- ENRICHMENT: **2 artefatti reali valutati e patchati (`sync-wiki-totale`, `conoscenza-empire`),
+  perimetro limitato esplicitamente dal brief a questi due soli file. 2 file patchati, +28 righe
+  nette / -0 cancellazioni di contenuto (1 rinumerazione di marcatore di lista, non una rimozione).**
+  `.claude/skills/sync-wiki-totale/SKILL.md` (+12): nuovo step di valutazione del "livello di
+  maturita' per area della wiki" sulla scala a 5 livelli del video, aggiunto al report MATCH/GAP
+  standard prima dello step "Report finale all'utente" -- dice quando un'area ha superato la soglia
+  in cui cercare per nome file non basta piu'.
+  `.claude/agents/conoscenza-empire.md` (+16): nuovo box "Onesta' epistemica" nella sezione COSA
+  POSSIEDI -- la ricerca su 1.800+ pagine della wiki DE e' oggi lessicale non semantica; prima di
+  dichiarare un vuoto di conoscenza va provata piu' di una formulazione della domanda (esempio dal
+  video: "posting frequency" -> 0 risultati lessicali su una nota che dice "content cadence").
+- NON costruito, dichiarato: nessuna skill/agente nuovo proposto in questo ciclo (il brief chiedeva
+  solo le due patch sopra). Registrate **B-040** (ricerca semantica sulla wiki, plugin Obsidian Smart
+  Connections gratuito) e **B-041** (logica di pruning two-bucket della wiki) in
+  `company/Memory/BACKLOG.md`, da approvare da Max.
+- NOTA METODOLOGICA: il grafo LightRAG di produzione dell'autore (24:22-25:10) e' volutamente
+  sfocato dall'autore stesso per privacy aziendale, dichiarato a voce prima del blur -- annotato
+  esplicitamente in ingest-manifest.json come intervento editoriale intenzionale, non un limite di
+  estrazione frame di Empire Studio.
+- DEBITO APERTO: nessun checkpoint in `company/Memory/checkpoints/`, `STATO-EMPIRE.md` non
+  aggiornato -- fuori dal perimetro esplicito di questo brief (che elencava Stage C/D-F/G/H/Backlog
+  come le uniche consegne richieste), coerente col pattern gia' registrato su `E8Ax92etrMc` e
+  `yJOCyyP77bA`. **Nessun commit git**, come da vincolo di sessione.

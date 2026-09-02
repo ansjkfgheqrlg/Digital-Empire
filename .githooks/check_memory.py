@@ -67,6 +67,27 @@ def git(*args, binary=False):
     return r.stdout if binary else r.stdout.decode("utf-8", "replace")
 
 
+def identico_in_storia(path):
+    """True se il file che sto committando e' IDENTICO a una versione gia' in storia
+    git allo stesso percorso.
+
+    PERCHE' ESISTE (2026-09-02, un'ora di commit bloccati):
+    quando si integra il lavoro di un altro con un merge, il SUO checkpoint rientra
+    nel commit di merge come file "aggiunto". Il controllo di collisione guardava solo
+    il NOME e lo scambiava per due sessioni che avevano scelto lo stesso numero.
+    Stesso nome + stesso contenuto = lo STESSO checkpoint, non una collisione: B-009
+    e' due lavori diversi sullo stesso ID, e questo non lo e'.
+    Il confronto e' sull'hash del blob, non sul testo: niente falsi negativi da CRLF.
+    """
+    mio = git("rev-parse", ":" + path).strip()
+    if not mio:
+        return False
+    for commit in git("log", "--all", "--format=%H", "--", path).split()[:50]:
+        if git("rev-parse", "%s:%s" % (commit, path)).strip() == mio:
+            return True
+    return False
+
+
 def file_aggiunti_staged():
     """Solo i file NUOVI in staging (A). Modificare un checkpoint esistente e' lecito."""
     out = git("diff", "--cached", "--name-only", "--diff-filter=A", "-z")
@@ -152,6 +173,11 @@ def controlla(fix=False, tutto=False):
             nome = os.path.basename(p)
             # "disco" e' il file che sto committando io: non e' una collisione
             dove = {d for d in esistenti.get(nome, set()) if d != "disco"}
+            # Stesso nome MA stesso contenuto = lo stesso checkpoint che rientra da un
+            # merge, non due sessioni in collisione. Vedi identico_in_storia().
+            if dove and identico_in_storia(p):
+                avvisi.append("%s rientra identico da un merge: non e' una collisione" % nome)
+                dove = set()
             if dove:
                 problemi.append(
                     "COLLISIONE ID CHECKPOINT: %s esiste gia' in %s.\n"
