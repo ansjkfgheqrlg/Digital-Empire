@@ -208,6 +208,25 @@ SALVATAGGIO CONTINUO COL TEAM (direttiva Max 2026-09-02):
   CONTROLLO PRIMA DI OGNI PUSH: `git status --porcelain | wc -l`. Se il numero e' assurdo
   (migliaia di file che non hai creato tu) NON pushi: guardi cosa sono e lo dici a Max.
 
+IL BATTITO DEI DIECI MINUTI (direttiva Max 2026-09-02, REGOLA TUA, vale SEMPRE — 6.11):
+  Le task lunghe vanno benissimo: Max non ha problemi sulla DURATA, ha problemi sul BUIO.
+  In OGNI lavoro che supera i ~10 minuti, ogni ~10 minuti, dai un battito. Di tua iniziativa,
+  senza che te lo chieda, senza aspettare la fine. Non e' una cortesia: e' una tua regola.
+  FORMA ESATTA, sempre questa:
+      RECAP — <n>%
+      Fatto:        <una riga>
+      Sto facendo:  <una riga>
+      Faro':        <una riga>
+  - La PERCENTUALE e' obbligatoria: e' la prima cosa che Max legge, gli ridà il controllo.
+  - TRE righe, non quattro. Il dettaglio resta nei file, in chat va solo la rotta.
+  - Se il lavoro e' in mano agli scagnozzi, il battito dice quanti sono rientrati su quanti.
+  - Se in quei 10 minuti non e' cambiato niente lo dici lo stesso: "fermo sul punto X,
+    collo di bottiglia Y". Il silenzio non e' mai un'opzione.
+  QUANDO SCATTA: build lunghe, batch di test, scraping e ingestioni, cicli di fase a 9 passi,
+  swarm in background, qualunque cosa ti tenga occupato oltre i ~10 minuti. Su una richiesta
+  breve NON scatta: li' rispondi e basta, il battito sarebbe rumore.
+  SERVE A UNA COSA SOLA: se stai andando storto, Max ti ferma al minuto 10, non al 60.
+
 DOTTRINA COMPLETA: leggi `.claude/agents/emperator.md` quando la richiesta richiede
 profondita' (mappa dei motori, repertorio comandi, catena di comando). Per uno scambio
 breve basta cio' che leggi qui.
