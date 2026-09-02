@@ -1,3 +1,35 @@
+## 🌙 2026-09-02 — CHIUSURA DI SESSIONE — CP-20260902-003
+
+Sessione lunga, chiusa da Max con ordine di pausa. Consegnato:
+
+- **PROGETTO EMPIRE completo**: `manifest.md` + **88 fogli / 26.046 righe** di archivio.
+  Il piano ha finalmente i numeri: il team regge **2 motori pieni + 1 ridotto, non 7**;
+  SRL = gate a **85-100k**, non una data; SaaS Lanci per primo; immobiliare e investimenti
+  con gate chiusi e conti alla mano.
+- **La scoperta che riscrive la tesi**: *Digital Empire produce e non pubblica.* 7 video e
+  4 libri finiti in magazzino, `libri_pubblicati/` vuota, **zero vendite documentate**.
+  Il collo di bottiglia e' **l'ultimo metro**, non la produzione.
+- **5 direttive di Max innestate** (memoria + hook + emperator.md §6.10-6.12) e
+  **`conoscenza-empire`** creato — organo LX, 124 agenti totali, wiki e anagrafe chiuse.
+- **Batch 17 video: 2 chiusi.** `scene_detector.py` costruito (4.309 → 1.066 frame, −75%).
+  Nico → 4 skill SEO arricchite. Beggiato → trovato che `market-audit` guarda i siti solo in
+  HTML statico, mai in browser reale.
+- **15 MB fermati** prima del monorepo condiviso (ADR-013 salvo).
+
+**Report di performance nel checkpoint** (§6.12, primo della serie): 4 errori miei con i
+rispettivi antidoti, e 5 cose imparate su Max. La piu' utile: *regge la verita' scomoda meglio
+della lode — con lui l'onesta' e' piu' veloce della diplomazia.*
+
+**RIPRESA DA**, in ordine:
+1. **Portare il primo carico di conoscenza dentro Sentinelle, Board e Guild** — `conoscenza-empire`
+   esiste ma non ha ancora alimentato nessuno. E' il debito piu' esplicitamente richiesto da Max.
+2. **Scrivere L0 — La Tesi** del Progetto Empire. Una pagina, quella che leggera' Gael.
+   Il materiale e' completo, manca solo la mano.
+3. Batch video da `max17-v04-trivellato` — un video alla volta, chiuso con Memory Empire,
+   wiki e CONSIGLI prima del successivo.
+
+---
+
 ## 🏗️ 2026-09-02 — EMPERATOR: restyling sito agenzia, F1 chiusa lato codice — CP-20260902-008
 
 Max ha ordinato di chiudere tutto il chiudibile sul sito dell'agenzia (`agency-empire-landing`),
@@ -19,7 +51,7 @@ raggi **19 → 8**, colori di testo **77 → 64**, opacità del bianco da 18 gra
 Il criterio F4 "≤20 colori" è **irraggiungibile senza violare il rischio 3 del piano** (i 3 sistemi
 devono restare cromaticamente distinti): il criterio va riscritto come "≤20 colori NEUTRI".
 
-**Non deployato da me**: `vercel whoami` dà token scaduto e `vercel login` è interattivo.
+**PUBBLICATO** su **https://digital-empire-agency.netlify.app** (progetto Netlify `digital-empire-agency`, id `f4c62358-b3ff-4ef3-ba6d-f1b28f04b695`, team maxignatovic980). Il deploy va fatto con `netlify deploy --prod --dir out --no-build --site <id>`: **senza `--no-build` fallisce**, perché Netlify riconosce Next e prova a ricostruire invece di caricare l'export già pronto. Vercel resta indietro: token scaduto e `vercel login` è interattivo, quindi `agency-empire-landing.vercel.app` serve ancora la versione vecchia.
 
 ⚠️ **RIPRESA DA / SERVE MAX**: (1) destinazione delle CTA — oggi atterrano su una pagina
 intitolata "Claude Code Mastery"; finché non è risolta il `noindex` resta su. (2) ID GA4 + Clarity.
