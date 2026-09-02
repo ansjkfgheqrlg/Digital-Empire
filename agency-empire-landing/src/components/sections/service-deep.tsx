@@ -76,7 +76,7 @@ export function OutreachDeep() {
           </div>
 
           <Reveal delay={0.18}>
-            <div className="rounded-2xl overflow-hidden" style={{
+            <div className="rounded-xl overflow-hidden" style={{
               background: "linear-gradient(152deg, #4e1400 0%, #862200 26%, #c24000 56%, #7e2000 82%, #280a00 100%)",
               border: "1px solid rgba(255,120,60,0.38)",
               boxShadow: ["0 28px 64px -18px rgba(0,0,0,0.55)", "0 0 44px -16px rgba(150,44,0,0.32)", "0 2px 0 rgba(255,255,255,0.16) inset"].join(", "),
@@ -91,7 +91,7 @@ export function OutreachDeep() {
                     <span className="w-2 h-2 rounded-full shrink-0 mt-[7px]" style={{ background: "rgba(255,160,100,0.85)" }} />
                     <div>
                       <div className="text-[0.95rem] font-bold text-white leading-tight mb-0.5">Step {i + 1}: {step.t}</div>
-                      <div className="text-[0.95rem] text-white/80 leading-snug">{step.d}</div>
+                      <div className="text-[0.95rem] text-white/75 leading-snug">{step.d}</div>
                     </div>
                   </div>
                 ))}
@@ -110,7 +110,7 @@ export function ContentDeep() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <Reveal delay={0.1}>
-            <div className="rounded-2xl overflow-hidden" style={{
+            <div className="rounded-xl overflow-hidden" style={{
               background: "linear-gradient(152deg, #3c1e00 0%, #6e3800 28%, #b06200 58%, #6c3c00 82%, #200e00 100%)",
               border: "1px solid rgba(255,180,80,0.36)",
               boxShadow: ["0 28px 64px -18px rgba(0,0,0,0.48)", "0 0 40px -14px rgba(120,72,0,0.30)", "0 2px 0 rgba(255,255,255,0.14) inset"].join(", "),
@@ -122,12 +122,12 @@ export function ContentDeep() {
               <div className="flex flex-col gap-5">
                 {contentSteps.map((step, i) => (
                   <div key={i} className="flex items-start gap-4">
-                    <span className="w-8 h-8 rounded-lg flex items-center justify-center text-[0.9rem] font-black text-white shrink-0" style={{ background: "rgba(255,180,80,0.22)", border: "1px solid rgba(255,190,90,0.42)" }}>
+                    <span className="w-8 h-8 rounded-xl flex items-center justify-center text-[0.9rem] font-black text-white shrink-0" style={{ background: "rgba(255,180,80,0.22)", border: "1px solid rgba(255,190,90,0.42)" }}>
                       {step.n}
                     </span>
                     <div>
                       <div className="text-[0.95rem] font-bold text-white leading-tight mb-1">{step.t}</div>
-                      <div className="text-[0.95rem] text-white/80 leading-snug">{step.d}</div>
+                      <div className="text-[0.95rem] text-white/75 leading-snug">{step.d}</div>
                     </div>
                   </div>
                 ))}
@@ -172,21 +172,21 @@ export function BrainDeep() {
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div>
             <Reveal>
-              <span className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.20em] text-white/85 rounded-full px-3 py-1.5 mb-6" style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.18)" }}>
+              <span className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.20em] text-white/90 rounded-full px-3 py-1.5 mb-6" style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.18)" }}>
                 ⊟ Service #03 · Memoria AI
               </span>
             </Reveal>
             <Reveal delay={0.1}>
               <h2 className="text-[2.1rem] md:text-[2.9rem] font-black leading-[1.06] tracking-tight text-white mb-6 mt-3">
                 Second Brain:<br />
-                <span className="text-white/85" style={{ fontFamily: "var(--font-serif), Georgia, serif", fontStyle: "italic", fontWeight: 400 }}>l&apos;AI non dimentica più.</span>
+                <span className="text-white/90" style={{ fontFamily: "var(--font-serif), Georgia, serif", fontStyle: "italic", fontWeight: 400 }}>l&apos;AI non dimentica più.</span>
               </h2>
             </Reveal>
             <Reveal delay={0.17}>
-              <p className="text-white/85 text-[1.02rem] leading-relaxed mb-4">
+              <p className="text-white/90 text-[1.02rem] leading-relaxed mb-4">
                 Ogni tool AI che usi ha un problema fondamentale: dimentica tutto. Ogni sessione reimposta. Brand voice, ICP, decisioni strategiche, clienti — tutto evaporato. Mesi di lavoro che non entrano mai nell&apos;intelligenza artificiale che usi ogni giorno.
               </p>
-              <p className="text-white/85 text-[1.02rem] leading-relaxed mb-4">
+              <p className="text-white/90 text-[1.02rem] leading-relaxed mb-4">
                 Prima c&apos;era il RAG: ricerca vettoriale su documenti, potente ma meccanico.{" "}
                 <strong className="text-white">Poi è arrivato il Second Brain</strong>: una knowledge base interconnessa visualizzabile come grafo di relazioni. Andrej Karpathy ha chiamato questo approccio{" "}
                 <span className="text-orange-pure font-bold">Context Engineering</span>: l&apos;arte di costruire il contesto giusto perché ogni conversazione con un LLM sia davvero calibrata sulla tua realtà.
@@ -205,7 +205,7 @@ export function BrainDeep() {
           </div>
 
           <Reveal delay={0.18}>
-            <div className="rounded-2xl overflow-hidden" style={{
+            <div className="rounded-xl overflow-hidden" style={{
               background: "linear-gradient(152deg, #020c22 0%, #081a3c 26%, #102e6c 54%, #082048 80%, #020a18 100%)",
               border: "1px solid rgba(100,160,255,0.30)",
               boxShadow: ["0 28px 64px -18px rgba(0,0,0,0.70)", "0 0 40px -14px rgba(0,36,150,0.28)", "0 2px 0 rgba(255,255,255,0.12) inset"].join(", "),
@@ -220,7 +220,7 @@ export function BrainDeep() {
                     <span className="w-2 h-2 rounded-full shrink-0 mt-[7px]" style={{ background: "rgba(100,180,255,0.78)" }} />
                     <div>
                       <div className="text-[0.95rem] font-bold text-white leading-tight mb-0.5">Step {i + 1}: {step.t}</div>
-                      <div className="text-[0.95rem] text-white/80 leading-snug">{step.d}</div>
+                      <div className="text-[0.95rem] text-white/75 leading-snug">{step.d}</div>
                     </div>
                   </div>
                 ))}

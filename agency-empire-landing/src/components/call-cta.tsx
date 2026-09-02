@@ -17,7 +17,7 @@ export function CallCTA({
   className?: string;
 }) {
   const base =
-    "group inline-flex items-center gap-2.5 px-6 py-[14px] rounded-[12px] font-semibold text-[15px] transition-all duration-300";
+    "group inline-flex items-center gap-2.5 px-6 py-[14px] rounded-xl font-semibold text-[15px] transition-all duration-300";
 
   const styles =
     variant === "dark"
@@ -34,7 +34,7 @@ export function CallCTA({
       <Phone className="h-4 w-4 opacity-80 group-hover:opacity-100" strokeWidth={2} />
       <span className="flex flex-col items-start leading-tight text-left">
         <span>{label}</span>
-        <span className={cn("text-[10px] uppercase tracking-[0.18em] font-bold mt-0.5", variant === "dark" ? "text-white/70" : "text-ink/50")}>
+        <span className={cn("text-[10px] uppercase tracking-[0.18em] font-bold mt-0.5", variant === "dark" ? "text-white/60" : "text-ink/50")}>
           {sublabel}
         </span>
       </span>

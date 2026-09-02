@@ -100,7 +100,7 @@ export function Bonuses() {
                 <h3 className="text-lg font-bold mb-3 text-[#0a0a0a]">
                   {b.title}
                 </h3>
-                <p className="text-[#1c1c1c]/80 text-sm leading-relaxed mb-6 flex-1 font-medium">
+                <p className="text-[#1c1c1c]/85 text-sm leading-relaxed mb-6 flex-1 font-medium">
                   {b.desc}
                 </p>
                 <div className="text-xs font-black uppercase tracking-wider text-[#fb4604]">

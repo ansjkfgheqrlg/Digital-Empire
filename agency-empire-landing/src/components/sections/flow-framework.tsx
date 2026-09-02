@@ -59,7 +59,7 @@ export function FlowFramework() {
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="text-white/80 text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
+            <p className="text-white/75 text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
               Quattro fasi che ogni workflow che costruiamo attraversa in ordine. Niente
               improvvisazione: un processo testato su decine di automazioni reali.
             </p>
@@ -98,7 +98,7 @@ export function FlowFramework() {
                     <h3 className="text-[20px] md:text-[24px] font-bold text-silver-white mb-2 leading-tight">
                       {s.title}
                     </h3>
-                    <p className="text-white/82 text-[15px] leading-relaxed">
+                    <p className="text-white/90 text-[15px] leading-relaxed">
                       {s.desc}
                     </p>
                   </div>

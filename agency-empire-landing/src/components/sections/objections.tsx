@@ -116,7 +116,7 @@ export function Objections() {
                 {g.cards.map((c, i) => (
                   <Reveal key={i} delay={0.15 + i * 0.1}>
                     <div
-                      className={`relative overflow-hidden p-8 rounded-2xl border h-full transition-all duration-300 hover:-translate-y-1.5 ${
+                      className={`relative overflow-hidden p-8 rounded-xl border h-full transition-all duration-300 hover:-translate-y-1.5 ${
                         c.isGold
                           ? "bg-gradient-to-br from-orange-pure/10 via-orange-pure/5 to-transparent border-orange-pure/40 shadow-[0_8px_30px_-12px_rgba(251,70,4,0.35)]"
                           : "bg-white/60 border-[#1c1c1c]/10 hover:border-[#1c1c1c]/25 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.12)]"

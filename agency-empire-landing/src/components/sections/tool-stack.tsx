@@ -53,7 +53,7 @@ export function ToolStack() {
         </Reveal>
 
         <Reveal delay={0.2}>
-          <p className="text-white/82 text-lg max-w-3xl leading-relaxed mb-14">
+          <p className="text-white/90 text-lg max-w-3xl leading-relaxed mb-14">
             Ti mostriamo lo stack esatto che gira dentro ogni sistema AI che installiamo. Nessun componente nascosto,
             nessun vendor lock-in. Hai il codice sorgente di tutto —{" "}
             <span className="text-silver-orange font-semibold">puoi vedere, modificare e gestire ogni pezzo.</span>
@@ -63,29 +63,24 @@ export function ToolStack() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
           {tools.map((t, i) => (
             <Reveal key={i} delay={0.1 + (i % 6) * 0.06}>
+              {/* B3 — erano 12 card a gradiente arancione con testo nero su sezione scura:
+                  il contrasto peggiore della pagina e 12 rettangoli che gridano insieme.
+                  Griglia sobria, nome in monospaziato (D4): l'etichetta tecnica dice
+                  "qui si misura" senza doverlo scrivere. */}
               <div
-                className="relative rounded-2xl p-6 h-full overflow-hidden transition-transform duration-500 hover:-translate-y-1.5"
+                className="relative rounded-xl p-6 h-full transition-colors duration-300"
                 style={{
-                  background:
-                    "linear-gradient(135deg, #e9e3da 0%, #d8cfc2 35%, #fb4604 100%)",
-                  border: "1px solid rgba(251,70,4,0.35)",
-                  boxShadow:
-                    "inset 0 1px 0 rgba(255,255,255,0.55), 0 14px 40px -18px rgba(251,70,4,0.45), 0 0 0 1px rgba(255,255,255,0.2)",
+                  background: "rgba(249,249,249,0.035)",
+                  border: "1px solid rgba(249,249,249,0.10)",
                 }}
               >
-                <div
-                  aria-hidden="true"
-                  className="pointer-events-none absolute inset-0 rounded-2xl"
-                  style={{
-                    background:
-                      "radial-gradient(circle at 85% 90%, rgba(251,70,4,0.6) 0%, transparent 55%)",
-                    mixBlendMode: "soft-light",
-                  }}
-                />
-                <h3 className="relative text-[18px] md:text-[20px] font-black text-[#1c1c1c] mb-3 tracking-tight">
+                <h3
+                  className="relative text-[13px] font-bold text-orange-pure mb-3 uppercase tracking-[0.12em]"
+                  style={{ fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace" }}
+                >
                   {t.name}
                 </h3>
-                <p className="relative text-[13px] md:text-[14px] leading-relaxed text-[#2a2a2a]">
+                <p className="relative text-[14px] leading-relaxed text-white/60">
                   {t.desc}
                 </p>
               </div>
@@ -94,7 +89,7 @@ export function ToolStack() {
         </div>
 
         <Reveal delay={0.5}>
-          <p className="mt-14 text-center text-[12px] uppercase tracking-[0.22em] font-black text-white/78">
+          <p className="mt-14 text-center text-[12px] uppercase tracking-[0.22em] font-black text-white/75">
             <span className="text-orange-pure">→</span> Tutto lo stack è tuo · Codice sorgente consegnato a setup completato
           </p>
         </Reveal>

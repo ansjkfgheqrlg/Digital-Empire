@@ -151,7 +151,7 @@ export function Results() {
             </h2>
           </Reveal>
           <Reveal delay={0.18}>
-            <p className="text-white/80 mt-5 text-[1.05rem] md:text-[1.15rem] max-w-2xl mx-auto leading-relaxed font-medium">
+            <p className="text-white/75 mt-5 text-[1.05rem] md:text-[1.15rem] max-w-2xl mx-auto leading-relaxed font-medium">
               Non ti chiediamo di crederci sulla parola. Ti diamo motivi concreti
               per fidarti — e ti mostriamo il sistema{" "}
               <strong className="text-silver-orange font-semibold">dal vivo</strong>,
@@ -167,7 +167,7 @@ export function Results() {
             return (
               <Reveal key={p.title} delay={0.12 + i * 0.07}>
                 <div
-                  className="res-card h-full rounded-2xl px-6 py-6"
+                  className="res-card h-full rounded-xl px-6 py-6"
                   style={{
                     background: "rgba(255,255,255,0.035)",
                     border: "1px solid rgba(255,255,255,0.10)",
@@ -191,7 +191,7 @@ export function Results() {
                   <h3 className="text-[17px] font-bold text-white leading-snug mb-2">
                     {p.title}
                   </h3>
-                  <p className="text-[13.5px] text-white/80 leading-relaxed">
+                  <p className="text-[13.5px] text-white/75 leading-relaxed">
                     {p.desc}
                   </p>
                 </div>
@@ -203,7 +203,7 @@ export function Results() {
           <Reveal delay={0.12 + pillars.length * 0.07}>
             <a
               href="#prenota"
-              className="res-card h-full rounded-2xl px-6 py-6 flex flex-col justify-between group"
+              className="res-card h-full rounded-xl px-6 py-6 flex flex-col justify-between group"
               style={{
                 background:
                   "linear-gradient(150deg, rgba(251,70,4,0.16) 0%, rgba(124,32,0,0.22) 100%)",
@@ -238,7 +238,7 @@ export function Results() {
               <h3 className="text-[24px] md:text-[30px] font-bold text-white leading-[1.15] mt-3">
                 Vuoi vederlo dal vivo?
               </h3>
-              <p className="text-white/80 mt-4 text-[1rem] leading-relaxed max-w-md">
+              <p className="text-white/75 mt-4 text-[1rem] leading-relaxed max-w-md">
                 In chiamata ti mostriamo il sistema che gira{" "}
                 <strong className="text-silver-white font-semibold">
                   in 5 minuti
@@ -270,7 +270,7 @@ export function Results() {
 
                 Tienilo dentro al wrapper "aspect-video" qui sotto per mantenere il 16:9. */}
             <div
-              className="relative w-full aspect-video rounded-2xl overflow-hidden"
+              className="relative w-full aspect-video rounded-xl overflow-hidden"
               style={{
                 border: "1.5px solid rgba(251,80,4,0.50)",
                 background:
@@ -291,13 +291,13 @@ export function Results() {
                 >
                   <PlayCircle className="h-8 w-8 text-white" strokeWidth={1.8} />
                 </div>
-                <span className="text-[11px] font-bold uppercase tracking-[0.20em] text-white/85">
+                <span className="text-[11px] font-bold uppercase tracking-[0.20em] text-white/90">
                   Demo del sistema
                 </span>
               </div>
               {/* Label angolo */}
               <span
-                className="absolute top-3 left-3 text-[10px] font-black uppercase tracking-[0.16em] px-2.5 py-1 rounded-md text-white"
+                className="absolute top-3 left-3 text-[10px] font-black uppercase tracking-[0.16em] px-2.5 py-1 rounded-xl text-white"
                 style={{
                   background: "rgba(0,0,0,0.45)",
                   border: "1px solid rgba(255,255,255,0.18)",
@@ -339,7 +339,7 @@ export function Results() {
                   {caseStudies.map((c, i) => (
                     <Reveal key={i} delay={0.1 + i * 0.08}>
                       <article
-                        className="res-card h-full rounded-2xl px-6 py-6 flex flex-col"
+                        className="res-card h-full rounded-xl px-6 py-6 flex flex-col"
                         style={{
                           background: "rgba(255,255,255,0.035)",
                           border: "1px solid rgba(255,255,255,0.10)",
@@ -351,7 +351,7 @@ export function Results() {
                             {c.cliente}
                           </span>
                           <span
-                            className="text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-md shrink-0"
+                            className="text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-xl shrink-0"
                             style={{
                               border: "1px solid rgba(255,255,255,0.22)",
                               color: "rgba(255,255,255,0.85)",
@@ -366,7 +366,7 @@ export function Results() {
                           <div className="text-[10.5px] uppercase tracking-[0.18em] font-black text-silver-orange mb-1">
                             Il problema
                           </div>
-                          <p className="text-[13.5px] text-white/80 leading-relaxed">
+                          <p className="text-[13.5px] text-white/75 leading-relaxed">
                             {c.problema}
                           </p>
                         </div>
@@ -415,7 +415,7 @@ export function Results() {
                   {testimonials.map((t, i) => (
                     <Reveal key={i} delay={0.1 + i * 0.08}>
                       <figure
-                        className="res-card h-full rounded-2xl px-6 py-6 flex flex-col"
+                        className="res-card h-full rounded-xl px-6 py-6 flex flex-col"
                         style={{
                           background: "rgba(255,255,255,0.035)",
                           border: "1px solid rgba(255,255,255,0.10)",
@@ -441,7 +441,7 @@ export function Results() {
                           <div className="text-[14px] font-bold text-white leading-tight">
                             {t.autore}
                           </div>
-                          <div className="text-[12px] text-white/70 font-medium mt-0.5">
+                          <div className="text-[12px] text-white/60 font-medium mt-0.5">
                             {t.ruolo}
                           </div>
                         </figcaption>

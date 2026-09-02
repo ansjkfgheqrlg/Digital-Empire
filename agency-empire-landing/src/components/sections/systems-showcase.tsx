@@ -184,7 +184,7 @@ export function SystemsShowcase() {
             </h2>
           </Reveal>
           <Reveal delay={0.18}>
-            <p className="text-white/80 mt-5 text-[1.05rem] md:text-[1.15rem] max-w-2xl mx-auto leading-relaxed font-medium">
+            <p className="text-white/75 mt-5 text-[1.05rem] md:text-[1.15rem] max-w-2xl mx-auto leading-relaxed font-medium">
               Implementazioni AI verticali — ognuna automatizza un&apos;area precisa del tuo business.
               Girano sui <strong className="text-white font-semibold">tuoi server</strong>, con il
               <strong className="text-white font-semibold"> codice sorgente incluso</strong>. Nessun canone, nessuna dipendenza.
@@ -199,7 +199,7 @@ export function SystemsShowcase() {
             return (
               <Reveal key={s.id} delay={0.15 + si * 0.11}>
                 <article
-                  className="ss-card rounded-2xl overflow-hidden flex flex-col"
+                  className="ss-card rounded-xl overflow-hidden flex flex-col"
                   style={{
                     backgroundImage: [GRAIN(s.seed), ...s.bgLayers].join(", "),
                     backgroundSize: "200px 200px, 100% 100%, 100% 100%, 100% 100%",
@@ -219,7 +219,7 @@ export function SystemsShowcase() {
                     style={{ borderBottom: "1px solid rgba(255,255,255,0.09)" }}>
                     <div className="flex items-center justify-between mb-2.5">
                       <span
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[10.5px] font-black uppercase tracking-[0.16em]"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[10.5px] font-black uppercase tracking-[0.16em]"
                         style={{
                           background: s.badgeBg,
                           border: `1px solid ${s.badgeBorder}`,
@@ -235,7 +235,7 @@ export function SystemsShowcase() {
                         <span className="text-[10px] font-black uppercase tracking-[0.18em] text-green-300">live</span>
                       </span>
                     </div>
-                    <p className="text-[14px] font-semibold text-white/85 italic leading-snug"
+                    <p className="text-[14px] font-semibold text-white/90 italic leading-snug"
                       style={{ fontFamily: "var(--font-serif), Georgia, serif" }}>
                       {s.tagline}
                     </p>
@@ -260,8 +260,8 @@ export function SystemsShowcase() {
                         style={{ color: s.accentLight }}>
                         {s.metricUnit}
                       </div>
-                      <div className="text-[12px] text-white/70 font-medium">{s.metricSub}</div>
-                      <div className="text-[10px] uppercase tracking-[0.14em] font-semibold text-white/50 mt-1.5">
+                      <div className="text-[12px] text-white/60 font-medium">{s.metricSub}</div>
+                      <div className="text-[10px] uppercase tracking-[0.14em] font-semibold text-white/60 mt-1.5">
                         Capacità del sistema · esempio di configurazione
                       </div>
                     </div>
@@ -270,7 +270,7 @@ export function SystemsShowcase() {
                         style={{ letterSpacing: "-0.03em" }}>
                         {s.uptime}
                       </div>
-                      <div className="text-[10px] uppercase tracking-[0.18em] text-white/65 font-bold">
+                      <div className="text-[10px] uppercase tracking-[0.18em] text-white/60 font-bold">
                         {s.uptimeLabel}
                       </div>
                     </div>
@@ -337,7 +337,7 @@ export function SystemsShowcase() {
                     <div className="flex flex-wrap gap-1.5">
                       {s.stack.map(t => (
                         <span key={t}
-                          className="text-[10px] font-bold uppercase tracking-[0.10em] px-2.5 py-1 rounded-md"
+                          className="text-[10px] font-bold uppercase tracking-[0.10em] px-2.5 py-1 rounded-xl"
                           style={{
                             border: "1px solid rgba(255,255,255,0.28)",
                             color: "rgba(255,255,255,0.88)",

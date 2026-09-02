@@ -83,7 +83,7 @@ export function BuilderNotTrainer() {
               </h2>
             </Reveal>
 
-            <div className="space-y-4 text-white/82 text-[0.97rem] leading-relaxed">
+            <div className="space-y-4 text-white/90 text-[0.97rem] leading-relaxed">
               <Reveal delay={0.18}>
                 <p>
                   Non ti sto vendendo codici scritti in laboratorio la notte scorsa o accrocchi
@@ -116,7 +116,7 @@ export function BuilderNotTrainer() {
               return (
                 <Reveal key={i} delay={0.2 + i * 0.10}>
                   <div
-                    className="bnt-stat relative rounded-2xl px-7 py-5 flex items-center gap-5 overflow-hidden"
+                    className="bnt-stat relative rounded-xl px-7 py-5 flex items-center gap-5 overflow-hidden"
                     style={{
                       background: s.bg,
                       border: `1.5px solid ${s.border}`,

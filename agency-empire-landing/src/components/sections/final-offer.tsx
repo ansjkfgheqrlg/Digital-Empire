@@ -27,7 +27,7 @@ export function FinalOffer() {
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 relative">
         <Reveal>
           <div
-            className="relative rounded-[28px] p-[3px] overflow-hidden"
+            className="relative rounded-xl p-[3px] overflow-hidden"
             style={{
               background:
                 "linear-gradient(135deg, #f5f0e6 0%, #c9c1b3 20%, #fb4604 45%, #ffb488 60%, #c9c1b3 80%, #6a6258 100%)",
@@ -36,7 +36,7 @@ export function FinalOffer() {
             }}
           >
           <div
-            className="relative rounded-[25px] p-8 md:p-14 overflow-hidden"
+            className="relative rounded-xl p-8 md:p-14 overflow-hidden"
             style={{
               background:
                 "linear-gradient(135deg, #fbf7f0 0%, #f3ece0 18%, #efe3d0 32%, #f5d9b8 48%, #ffc89c 60%, #f0d9c2 75%, #e8ddd0 88%, #ddd5c8 100%)",
@@ -46,7 +46,7 @@ export function FinalOffer() {
           >
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 rounded-3xl"
+              className="pointer-events-none absolute inset-0 rounded-xl"
               style={{
                 background:
                   "radial-gradient(ellipse at 85% 100%, rgba(251,70,4,0.22) 0%, transparent 55%), radial-gradient(ellipse at 15% 0%, rgba(255,255,255,0.5) 0%, transparent 50%)",
@@ -54,7 +54,7 @@ export function FinalOffer() {
             />
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 rounded-3xl opacity-[0.18] mix-blend-overlay"
+              className="pointer-events-none absolute inset-0 rounded-xl opacity-[0.18] mix-blend-overlay"
               style={{
                 backgroundImage:
                   "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")",
@@ -63,7 +63,7 @@ export function FinalOffer() {
             <Reveal delay={0.1}>
               <div className="flex flex-col items-center text-center mb-10">
                 <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
+                  className="w-14 h-14 rounded-xl flex items-center justify-center mb-5"
                   style={{
                     background:
                       "radial-gradient(circle at 30% 30%, #1c1c1c 0%, #0a0a0a 70%)",
@@ -87,7 +87,7 @@ export function FinalOffer() {
 
             <Reveal delay={0.2}>
               <div
-                className="relative rounded-2xl overflow-hidden mb-10 aspect-[4/3] md:aspect-[16/7] flex items-center justify-center"
+                className="relative rounded-xl overflow-hidden mb-10 aspect-[4/3] md:aspect-[16/7] flex items-center justify-center"
                 style={{
                   background:
                     "linear-gradient(135deg, #1c1a17 0%, #0a0908 100%)",
@@ -118,14 +118,14 @@ export function FinalOffer() {
                 <div className="absolute bottom-3 left-3 w-5 h-5 border-l-2 border-b-2 border-white/25 rounded-bl" />
                 <div className="absolute bottom-3 right-3 w-5 h-5 border-r-2 border-b-2 border-white/25 rounded-br" />
 
-                <Bot className="hidden md:block absolute top-6 left-10 h-4 w-4 text-white/25" strokeWidth={1.5} />
+                <Bot className="hidden md:block absolute top-6 left-10 h-4 w-4 text-white/30" strokeWidth={1.5} />
                 <Cpu className="hidden md:block absolute top-8 right-12 h-4 w-4 text-orange-pure/60" strokeWidth={1.5} />
                 <Workflow className="hidden md:block absolute bottom-7 left-12 h-4 w-4 text-orange-pure/55" strokeWidth={1.5} />
-                <Terminal className="hidden md:block absolute bottom-6 right-10 h-4 w-4 text-white/25" strokeWidth={1.5} />
-                <Zap className="hidden md:block absolute top-1/2 left-6 h-3.5 w-3.5 text-white/20 -translate-y-1/2" strokeWidth={1.5} />
-                <Sparkles className="hidden md:block absolute top-1/2 right-6 h-3.5 w-3.5 text-white/20 -translate-y-1/2" strokeWidth={1.5} />
+                <Terminal className="hidden md:block absolute bottom-6 right-10 h-4 w-4 text-white/30" strokeWidth={1.5} />
+                <Zap className="hidden md:block absolute top-1/2 left-6 h-3.5 w-3.5 text-white/30 -translate-y-1/2" strokeWidth={1.5} />
+                <Sparkles className="hidden md:block absolute top-1/2 right-6 h-3.5 w-3.5 text-white/30 -translate-y-1/2" strokeWidth={1.5} />
 
-                <div className="absolute top-3 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.3em] font-black text-white/70 flex items-center gap-2">
+                <div className="absolute top-3 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.3em] font-black text-white/60 flex items-center gap-2">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-orange-pure animate-pulse" />
                   Sistema Online
                 </div>
@@ -171,7 +171,7 @@ export function FinalOffer() {
 
               <Reveal delay={0.4}>
                 <div
-                  className="relative rounded-2xl p-7 text-center overflow-hidden"
+                  className="relative rounded-xl p-7 text-center overflow-hidden"
                   style={{
                     background:
                       "linear-gradient(160deg, #1c1a17 0%, #0a0908 100%)",
@@ -196,7 +196,7 @@ export function FinalOffer() {
                   >
                     da €2.500
                   </div>
-                  <div className="text-[12px] font-medium text-white/65 mb-4 leading-relaxed">
+                  <div className="text-[12px] font-medium text-white/60 mb-4 leading-relaxed">
                     <span className="block text-[10px] uppercase tracking-[0.2em] font-black text-white/75 mb-1.5">
                       Secondo il sistema scelto
                     </span>
@@ -205,8 +205,8 @@ export function FinalOffer() {
                   <div className="text-[11px] uppercase tracking-[0.24em] font-black text-orange-pure mb-6">
                     Pagamento unico · Zero canoni
                   </div>
-                  <CallCTA variant="dark" className="w-full justify-center" />
-                  <div className="mt-4 text-[11px] uppercase tracking-[0.18em] font-bold text-white/70">
+                  <CallCTA variant="dark" className="w-full justify-center" label="Partiamo dal mio processo" sublabel="Ti diciamo in call se ha senso o no" />
+                  <div className="mt-4 text-[11px] uppercase tracking-[0.18em] font-bold text-white/60">
                     Garanzia 30 giorni · Rateizzazione disponibile
                   </div>
                 </div>

@@ -94,7 +94,7 @@ export function SecondBrainInside() {
             </h2>
           </Reveal>
           <Reveal delay={0.18}>
-            <p className="text-white/82 mt-4 text-[1.05rem] max-w-xl mx-auto leading-relaxed font-medium">
+            <p className="text-white/90 mt-4 text-[1.05rem] max-w-xl mx-auto leading-relaxed font-medium">
               Tre layer tecnici che si sovrappongono per dare all&apos;AI una memoria permanente,
               contestuale e sempre aggiornata sul tuo business.
             </p>
@@ -107,7 +107,7 @@ export function SecondBrainInside() {
             return (
               <Reveal key={i} delay={0.15 + i * 0.10}>
                 <div
-                  className="sbi-card rounded-2xl p-6 h-full flex flex-col"
+                  className="sbi-card rounded-xl p-6 h-full flex flex-col"
                   style={{
                     backgroundImage: [GRAIN(f.seed), f.bg].join(", "),
                     backgroundSize: "200px 200px, 100% 100%, 100% 100%",

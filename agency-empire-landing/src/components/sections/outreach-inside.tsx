@@ -103,7 +103,7 @@ export function OutreachInside() {
             return (
               <Reveal key={i} delay={0.15 + i * 0.10}>
                 <div
-                  className="oi-card rounded-2xl p-6 h-full flex flex-col"
+                  className="oi-card rounded-xl p-6 h-full flex flex-col"
                   style={{
                     backgroundImage: [GRAIN(f.seed), f.bg].join(", "),
                     backgroundSize: "200px 200px, 100% 100%, 100% 100%",

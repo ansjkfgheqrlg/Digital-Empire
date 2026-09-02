@@ -122,7 +122,7 @@ export function PricingROI() {
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="text-white/80 text-lg max-w-2xl mx-auto mt-5 leading-relaxed">
+            <p className="text-white/75 text-lg max-w-2xl mx-auto mt-5 leading-relaxed">
               Scegli uno o più sistemi. Con Engine Room prendi tutto insieme e risparmi €2.000 sul totale.
             </p>
           </Reveal>
@@ -135,7 +135,7 @@ export function PricingROI() {
             return (
               <Reveal key={i} delay={0.1 + i * 0.08}>
                 <article
-                  className="flex flex-col h-full rounded-[22px] p-7"
+                  className="flex flex-col h-full rounded-xl p-7"
                   style={{
                     backgroundImage: [GRAIN(s.seed), ...s.bgLayers].join(", "),
                     backgroundSize: "200px 200px, 100% 100%, 100% 100%",
@@ -193,7 +193,7 @@ export function PricingROI() {
                   </p>
 
                   {/* Description */}
-                  <p className="text-[0.88rem] text-white/80 leading-relaxed mb-5">
+                  <p className="text-[0.88rem] text-white/75 leading-relaxed mb-5">
                     {s.desc}
                   </p>
 
@@ -262,7 +262,7 @@ export function PricingROI() {
             </div>
 
             <article
-              className="rounded-[22px] p-8 md:p-10"
+              className="rounded-xl p-8 md:p-10"
               style={{
                 backgroundImage: [
                   GRAIN("3"),
@@ -286,7 +286,7 @@ export function PricingROI() {
                 <div className="flex-shrink-0">
                   <div className="flex items-center gap-4 mb-4">
                     <span
-                      className="grid place-items-center w-14 h-14 rounded-2xl"
+                      className="grid place-items-center w-14 h-14 rounded-xl"
                       style={{
                         background: "linear-gradient(135deg, rgba(251,70,4,0.45) 0%, rgba(180,40,0,0.65) 100%)",
                         border: "1px solid rgba(251,100,50,0.60)",
@@ -307,7 +307,7 @@ export function PricingROI() {
                       </h3>
                     </div>
                   </div>
-                  <p className="text-[0.94rem] text-white/80 leading-relaxed max-w-sm">
+                  <p className="text-[0.94rem] text-white/75 leading-relaxed max-w-sm">
                     Tutti e tre i motori centralizzati in un&apos;unica Dashboard premium. I lead caldi dell&apos;outreach,
                     i contenuti ottimizzati e la memoria del business lavorano in sinergia totale — ogni motore alimenta gli altri in tempo reale.
                   </p>
@@ -354,7 +354,7 @@ export function PricingROI() {
                     className="inline-flex items-center gap-2 text-[0.95rem] font-black uppercase tracking-[0.12em] text-white group"
                     style={{
                       background: "linear-gradient(135deg, #fb4604 0%, #ff6a2e 100%)",
-                      borderRadius: 12,
+                      borderRadius: "var(--radius-xl)",
                       padding: "0.85rem 1.75rem",
                       boxShadow: "0 0 32px rgba(251,70,4,0.45), inset 0 1px 0 rgba(255,255,255,0.22)",
                       transition: "filter 0.25s, transform 0.25s",
@@ -395,7 +395,7 @@ export function PricingROI() {
                       Outreach Factory · una tantum
                     </div>
                     <div className="text-[1.6rem] font-black text-white leading-none">€4.000</div>
-                    <div className="text-[0.8rem] text-white/70 mt-1">Lo paghi una volta. Il codice resta tuo.</div>
+                    <div className="text-[0.8rem] text-white/60 mt-1">Lo paghi una volta. Il codice resta tuo.</div>
                   </div>
                   <div
                     className="rounded-xl px-5 py-4"
@@ -405,12 +405,12 @@ export function PricingROI() {
                       SaaS di outreach · ricorrente
                     </div>
                     <div className="text-[1.6rem] font-black text-white leading-none">€200<span className="text-[0.9rem] font-bold text-white/60">/mese</span></div>
-                    <div className="text-[0.8rem] text-white/70 mt-1">€2.400/anno. Per sempre. Non è mai tuo.</div>
+                    <div className="text-[0.8rem] text-white/60 mt-1">€2.400/anno. Per sempre. Non è mai tuo.</div>
                   </div>
                 </div>
 
                 {/* Payback */}
-                <p className="text-white/82 leading-relaxed text-[15px]">
+                <p className="text-white/90 leading-relaxed text-[15px]">
                   €4.000 una tantum vs €200/mese fanno{" "}
                   <strong className="text-silver-white font-bold">~20 mesi per pareggiare</strong>.
                   Ma dopo i 20 mesi il SaaS continui a pagarlo a vita — il tuo sistema no:{" "}
@@ -427,7 +427,7 @@ export function PricingROI() {
         {/* Bottom CTA strip */}
         <Reveal delay={0.5}>
           <div className="mt-12 flex flex-col items-center gap-5 text-center">
-            <CallCTA variant="dark" />
+            <CallCTA variant="dark" label="Fai il conto sul mio caso" sublabel="30 min · Con i tuoi numeri, non con esempi" />
             <div className="flex items-center gap-6 text-xs uppercase tracking-widest text-white/75 font-bold">
               <span className="flex items-center gap-2">
                 <Shield className="h-3.5 w-3.5 text-orange-pure" /> Garanzia 30 Giorni

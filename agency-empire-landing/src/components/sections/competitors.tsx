@@ -24,9 +24,9 @@ const facts = [
   },
   {
     icon: Clock,
-    big: "Adesso",
-    label: "La finestra per posizionarti",
-    desc: "Posizionarti PRIMA che il mercato saturi è un vantaggio. Dopo, entri come commodity. La finestra si sta chiudendo.",
+    big: "Non te lo dicono",
+    label: "Il vantaggio di chi ha già automatizzato",
+    desc: "Un vantaggio operativo non si annuncia: si accumula in silenzio. Quando lo vedi nei loro numeri, ha già mesi di distacco.",
   },
 ];
 
@@ -65,7 +65,7 @@ export function Competitors() {
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="text-white/82 text-lg max-w-3xl mx-auto mt-8 leading-relaxed">
+            <p className="text-white/90 text-lg max-w-3xl mx-auto mt-8 leading-relaxed">
               Non esiste mercato senza concorrenza. Esistono solo competitor visibili e competitor nascosti. E oggi i competitor che contano{" "}
               <strong className="text-silver-orange">stanno installando sistemi AI proprietari</strong> mentre tu sei ancora a mandare DM a mano.
             </p>
@@ -78,7 +78,7 @@ export function Competitors() {
             return (
               <Reveal key={i} delay={0.15 + i * 0.08}>
                 <div
-                  className="relative rounded-2xl p-6 h-full text-center overflow-hidden"
+                  className="relative rounded-xl p-6 h-full text-center overflow-hidden"
                   style={{
                     background:
                       "linear-gradient(160deg, #2c2a27 0%, #1c1a17 50%, #0d0c0b 100%)",
@@ -103,10 +103,10 @@ export function Competitors() {
                   >
                     {f.big}
                   </div>
-                  <div className="text-[11px] uppercase tracking-[0.18em] font-black text-white/80 mb-3">
+                  <div className="text-[11px] uppercase tracking-[0.18em] font-black text-white/75 mb-3">
                     {f.label}
                   </div>
-                  <p className="text-[13.5px] leading-relaxed text-white/88">{f.desc}</p>
+                  <p className="text-[13.5px] leading-relaxed text-white/90">{f.desc}</p>
                 </div>
               </Reveal>
             );
@@ -115,7 +115,7 @@ export function Competitors() {
 
         <Reveal delay={0.3}>
           <div
-            className="relative max-w-3xl mx-auto rounded-2xl p-8 md:p-10 text-center overflow-hidden"
+            className="relative max-w-3xl mx-auto rounded-xl p-8 md:p-10 text-center overflow-hidden"
             style={{
               background:
                 "linear-gradient(160deg, #d9d6cf 0%, #b8b4ac 45%, #7a7770 100%)",
@@ -156,10 +156,12 @@ export function Competitors() {
         </Reveal>
 
         <Reveal delay={0.4}>
-          <p className="text-center text-white/82 text-[15px] max-w-2xl mx-auto mt-10 leading-relaxed">
-            Puoi ignorarlo. Oppure puoi diventare tu quel competitor che gli altri rincorrono. <br />
+          <p className="text-center text-white/90 text-[15px] max-w-2xl mx-auto mt-10 leading-relaxed">
+            Hai presente chi fa il tuo stesso lavoro e chiude più contratti di te, senza lavorare più ore?
+            Sta usando strumenti che tu non usi. <br />
             <span className="text-silver-orange font-semibold">
-              La finestra è aperta per altri 12 mesi. Dopo è chiusa.
+              Da noi non trovi countdown, timer o posti limitati. L'unica scadenza vera è il vantaggio
+              che qualcun altro sta accumulando adesso.
             </span>
           </p>
         </Reveal>

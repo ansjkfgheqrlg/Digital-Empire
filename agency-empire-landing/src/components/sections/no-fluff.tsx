@@ -36,7 +36,7 @@ export function NoFluff() {
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="text-[#2a2a2a]/78 text-lg max-w-3xl mx-auto mt-6 leading-relaxed">
+            <p className="text-[#1c1c1c]/72 text-lg max-w-3xl mx-auto mt-6 leading-relaxed">
               Un SaaS ti chiede €200 al mese per sempre. Noi installiamo una volta,{" "}
               <strong className="text-silver-black">poi il sistema è tuo</strong>. Nessun canone ricorrente dopo il setup.
               Solo costi API minimi a consumo (pochi centesimi per operazione).{" "}
@@ -48,7 +48,7 @@ export function NoFluff() {
         <div className="grid md:grid-cols-2 gap-5">
           <Reveal delay={0.2}>
             <div
-              className="rounded-2xl p-7 h-full"
+              className="rounded-xl p-7 h-full"
               style={{
                 background: "linear-gradient(160deg, #ffffff 0%, #f1ede6 100%)",
                 border: "1px solid rgba(28,28,28,0.12)",
@@ -63,7 +63,7 @@ export function NoFluff() {
               </div>
               <ul className="space-y-3">
                 {out.map((o, i) => (
-                  <li key={i} className="flex items-start gap-3 text-[#2a2a2a]/80 text-[14px] leading-relaxed">
+                  <li key={i} className="flex items-start gap-3 text-[#1c1c1c]/85 text-[14px] leading-relaxed">
                     <X className="h-4 w-4 text-[#1c1c1c]/40 shrink-0 mt-[3px]" />
                     <span className="line-through decoration-[#1c1c1c]/25">{o}</span>
                   </li>
@@ -74,7 +74,7 @@ export function NoFluff() {
 
           <Reveal delay={0.3}>
             <div
-              className="rounded-2xl p-7 h-full"
+              className="rounded-xl p-7 h-full"
               style={{
                 background:
                   "linear-gradient(160deg, rgba(251,70,4,0.08) 0%, rgba(251,70,4,0.02) 60%, transparent 100%)",

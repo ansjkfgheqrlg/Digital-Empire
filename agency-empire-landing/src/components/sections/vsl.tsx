@@ -2,7 +2,6 @@
 
 import { ArrowRight, Shield } from "lucide-react";
 import { Reveal } from "@/components/reveal";
-import { CallCTA } from "@/components/call-cta";
 
 const BOOKING_URL = "#prenota";
 
@@ -65,12 +64,20 @@ export function VSL() {
     <section
       className="section section-border-t relative overflow-hidden"
       style={{
-        backgroundImage: "url('/vsl-bg.png')",
+        // WebP q82: 3,18 MB -> 388 KB. La grana rossa e' rumore ad alta frequenza:
+        // se comparisse banding, rigenerare a q88.
+        backgroundImage: "url('/vsl-bg.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
+      {/* Velo scuro: alza il contrasto del testo sul fondo rosso granuloso. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{ background: "rgba(20,10,6,0.34)" }}
+      />
       <style>{`
         @keyframes pulse-dot {
           0%, 100% { opacity: 1; transform: scale(1); }
@@ -100,7 +107,7 @@ export function VSL() {
             <span className="bubble-orange mb-6">Sistema live · Tre implementazioni attive</span>
           </Reveal>
           <Reveal delay={0.12}>
-            <p className="text-[11px] font-black uppercase tracking-[0.28em] text-white/70 mt-7 mb-4"
+            <p className="text-[11px] font-black uppercase tracking-[0.28em] text-white/60 mt-7 mb-4"
               style={{ textShadow: "0 1px 8px rgba(0,0,0,0.9)" }}>
               Digital Empire · Come funziona il sistema
             </p>
@@ -131,7 +138,7 @@ export function VSL() {
 
                 {/* Node card */}
                 <div
-                  className="node-card flex-1 rounded-2xl flex flex-col overflow-hidden"
+                  className="node-card flex-1 rounded-xl flex flex-col overflow-hidden"
                   style={{
                     backgroundImage: n.bgImage,
                     backgroundSize: "100% 100%, 100% 100%",
@@ -148,7 +155,7 @@ export function VSL() {
                   {/* INPUT */}
                   <div className="px-5 pt-5 pb-4"
                     style={{ borderBottom: "1px solid rgba(255,255,255,0.10)" }}>
-                    <div className="text-[10px] uppercase tracking-[0.24em] font-black text-white/70 mb-2">
+                    <div className="text-[10px] uppercase tracking-[0.24em] font-black text-white/60 mb-2">
                       Input
                     </div>
                     <div className="flex flex-wrap gap-1.5">
@@ -187,10 +194,10 @@ export function VSL() {
                       }}>
                       {n.metric}
                     </div>
-                    <div className="text-[11.5px] font-bold uppercase tracking-[0.18em] text-white/80 mb-2">
+                    <div className="text-[11.5px] font-bold uppercase tracking-[0.18em] text-white/75 mb-2">
                       {n.metricSub}
                     </div>
-                    <div className="text-[10px] uppercase tracking-[0.14em] font-semibold text-white/55 mb-6">
+                    <div className="text-[10px] uppercase tracking-[0.14em] font-semibold text-white/60 mb-6">
                       Capacità del sistema
                     </div>
 
@@ -204,13 +211,13 @@ export function VSL() {
                           boxShadow: "0 0 14px rgba(255,255,255,0.55)",
                         }} />
                     </div>
-                    <div className="text-[11.5px] font-semibold text-white/80">{n.barLabel}</div>
+                    <div className="text-[11.5px] font-semibold text-white/75">{n.barLabel}</div>
                   </div>
 
                   {/* OUTPUT */}
                   <div className="px-5 py-4"
                     style={{ borderTop: "1px solid rgba(255,255,255,0.10)" }}>
-                    <div className="text-[10px] uppercase tracking-[0.24em] font-black text-white/70 mb-2.5">
+                    <div className="text-[10px] uppercase tracking-[0.24em] font-black text-white/60 mb-2.5">
                       Output
                     </div>
                     <div className="flex flex-col gap-2">
@@ -245,7 +252,7 @@ export function VSL() {
           <div className="hidden md:flex items-center justify-between mt-5 px-1">
             <div className="flex items-center gap-2">
               <span className="live-dot w-1.5 h-1.5 rounded-full bg-green-400" />
-              <span className="text-[11px] font-black uppercase tracking-[0.22em] text-white/80">
+              <span className="text-[11px] font-black uppercase tracking-[0.22em] text-white/75">
                 All systems online
               </span>
             </div>
@@ -253,7 +260,7 @@ export function VSL() {
               {nodes.map(n => (
                 <div key={n.id} className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full" style={{ background: n.color, opacity: 0.85 }} />
-                  <span className="text-[11px] font-mono font-semibold text-white/70">
+                  <span className="text-[11px] font-mono font-semibold text-white/60">
                     <span style={{ color: n.color }}>{n.metric}</span>{" "}
                     {n.metricSub.split(" ")[0]}
                   </span>
@@ -268,7 +275,7 @@ export function VSL() {
           <div className="flex flex-col gap-4 md:hidden">
             {nodes.map((n, i) => (
               <div key={n.id}>
-                <div className="node-card rounded-2xl overflow-hidden"
+                <div className="node-card rounded-xl overflow-hidden"
                   style={{
                     backgroundImage: n.bgImage,
                     backgroundSize: "100% 100%, 100% 100%",
@@ -290,10 +297,10 @@ export function VSL() {
                       style={{ letterSpacing: "-0.045em" }}>
                       {n.metric}
                     </div>
-                    <div className="text-[11.5px] font-bold uppercase tracking-[0.16em] text-white/80 mb-1.5">
+                    <div className="text-[11.5px] font-bold uppercase tracking-[0.16em] text-white/75 mb-1.5">
                       {n.metricSub}
                     </div>
-                    <div className="text-[10px] uppercase tracking-[0.14em] font-semibold text-white/55 mb-4">
+                    <div className="text-[10px] uppercase tracking-[0.14em] font-semibold text-white/60 mb-4">
                       Capacità del sistema
                     </div>
 
@@ -302,7 +309,7 @@ export function VSL() {
                       <div className="h-1.5 rounded-full"
                         style={{ width: `${n.bar}%`, background: "rgba(255,255,255,0.85)" }} />
                     </div>
-                    <div className="text-[11.5px] font-semibold text-white/80 mb-4">{n.barLabel}</div>
+                    <div className="text-[11.5px] font-semibold text-white/75 mb-4">{n.barLabel}</div>
 
                     <div className="flex flex-wrap gap-1.5">
                       {n.outputs.map(out => (
@@ -334,15 +341,16 @@ export function VSL() {
         {/* ── CTAs ── */}
         <Reveal delay={0.36}>
           <div className="flex flex-col items-center gap-5 mt-14">
-            <div className="flex flex-col sm:flex-row gap-3 items-center justify-center w-full sm:w-auto">
+            {/* B6 — erano due CTA gemelle affiancate, stessa destinazione:
+                nessuna gerarchia, quindi nessuna scelta. Ne resta una. */}
+            <div className="flex items-center justify-center w-full sm:w-auto">
               <a href={BOOKING_URL} className="btn-orange group w-full sm:w-auto justify-center"
                 style={{ padding: "1.1rem 2.5rem", fontSize: "1.05rem", fontWeight: 700 }}>
-                Prenota una Chiamata Strategica
+                Vediamo se ha senso lavorare insieme
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </a>
-              <CallCTA variant="dark" className="!bg-black/60 !border-white/40 backdrop-blur-md w-full sm:w-auto justify-center" />
             </div>
-            <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-white/80"
+            <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-white/75"
               style={{ textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>
               <Shield className="h-3.5 w-3.5" /> Setup in 7 giorni · Zero canoni · Codice tuo per sempre
             </div>

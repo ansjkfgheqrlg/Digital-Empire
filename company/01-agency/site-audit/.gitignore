@@ -1,0 +1,3 @@
+# Screenshot grezzi della cattura: rigenerabili con
+#   python "competitor/Andrei Pascu/site-study/scripts/site_capture.py" <url> --slug <nome> --out company/01-agency/site-audit/capture
+capture/**/*.png

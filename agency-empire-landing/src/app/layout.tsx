@@ -16,10 +16,32 @@ const instrumentSerif = Instrument_Serif({
   style: ["normal", "italic"],
 });
 
+const SITE_URL = "https://agency-empire-landing.vercel.app";
+const TITLE = "Digital Empire | Sistemi AI Proprietari per la Tua Operatività";
+const DESCRIPTION =
+  "Installiamo sistemi AI sul tuo server: Outreach Factory, Content Factory e Second Brain. Zero canoni mensili. Codice tuo per sempre. Setup in 7 giorni.";
+
 export const metadata: Metadata = {
-  title: "Digital Empire | Sistemi AI Proprietari per la Tua Operatività",
-  description: "Installiamo sistemi AI sul tuo server: Outreach Factory, Content Factory e Second Brain. Zero canoni mensili. Codice tuo per sempre. Setup in 7 giorni.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/" },
+  // TODO(F1-E4): togliere `robots` quando la pagina di prenotazione avra' il brand
+  // giusto. Indicizzare prima manderebbe traffico su "Claude Code Mastery".
   robots: { index: false, follow: false },
+  openGraph: {
+    type: "website",
+    locale: "it_IT",
+    url: SITE_URL,
+    siteName: "Digital Empire",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export const viewport: Viewport = { themeColor: "#2a2a2a" };

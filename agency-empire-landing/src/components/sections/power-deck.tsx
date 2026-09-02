@@ -76,7 +76,7 @@ export function PowerDeck() {
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="text-white/82 text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
+            <p className="text-white/90 text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
               Ogni implementazione include <strong className="text-silver-orange">sei componenti distinti</strong> — non
               solo il codice, ma tutto quello che serve per far girare il sistema in autonomia dal giorno uno.
             </p>
@@ -89,7 +89,7 @@ export function PowerDeck() {
             return (
               <Reveal key={i} delay={0.15 + i * 0.06} variant="scale">
                 <div
-                  className="relative rounded-2xl p-6 h-full overflow-hidden hover-lift"
+                  className="relative rounded-xl p-6 h-full overflow-hidden hover-lift"
                   style={{
                     background:
                       "linear-gradient(160deg, #2c2a27 0%, #1c1a17 50%, #0d0c0b 100%)",
@@ -100,7 +100,7 @@ export function PowerDeck() {
                 >
                   <div
                     aria-hidden="true"
-                    className="pointer-events-none absolute inset-0 rounded-2xl"
+                    className="pointer-events-none absolute inset-0 rounded-xl"
                     style={{
                       background:
                         "linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 40%, transparent 70%, rgba(251,70,4,0.08) 100%)",
@@ -126,7 +126,7 @@ export function PowerDeck() {
                     <h3 className="text-[18px] md:text-[20px] font-black text-silver-white mb-3 leading-tight">
                       {a.t}
                     </h3>
-                    <p className="text-[13.5px] text-white/70 leading-relaxed">{a.d}</p>
+                    <p className="text-[13.5px] text-white/60 leading-relaxed">{a.d}</p>
                   </div>
                 </div>
               </Reveal>
@@ -135,7 +135,7 @@ export function PowerDeck() {
         </div>
 
         <Reveal delay={0.5}>
-          <p className="text-center text-white/82 text-[15px] max-w-2xl mx-auto mt-12 leading-relaxed">
+          <p className="text-center text-white/90 text-[15px] max-w-2xl mx-auto mt-12 leading-relaxed">
             <span className="text-orange-pure">→</span> Tutto consegnato al completamento del setup.{" "}
             <span className="text-silver-orange font-semibold">Il sistema è tuo per sempre.</span>
           </p>

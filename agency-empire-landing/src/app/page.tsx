@@ -30,6 +30,11 @@ import { AboutStory } from "@/components/sections/about-story";
 import { StickyCTA } from "@/components/sticky-cta";
 import { Header } from "@/components/header";
 import { Results } from "@/components/sections/results";
+import { SelfCheck } from "@/components/sections/self-check";
+import { Alternatives } from "@/components/sections/alternatives";
+import { CapacityMath } from "@/components/sections/capacity-math";
+import { ScopeLimits } from "@/components/sections/scope-limits";
+import { YourTime } from "@/components/sections/your-time";
 
 export default function Home() {
   return (
@@ -42,6 +47,7 @@ export default function Home() {
       <ScienceStats />
       <Audience />
       <Problems />
+      <SelfCheck />
       <Competitors />
       <ListenUp />
       <div className="divider-silver-orange" aria-hidden="true" />
@@ -58,6 +64,8 @@ export default function Home() {
       <SecondBrainInside />
       <Results />
       <NoFluff />
+      <Alternatives />
+      <ScopeLimits />
       <ToolStack />
       <div className="divider-silver-orange" aria-hidden="true" />
       <PowerDeck />
@@ -65,7 +73,9 @@ export default function Home() {
       <WhoGuides />
       <BuilderNotTrainer />
       <Bonuses />
+      <CapacityMath />
       <PricingROI />
+      <YourTime />
       <Clarity />
       <MyPromise />
       <Objections />
@@ -81,12 +91,20 @@ export default function Home() {
           <div className="text-white/30 text-xs uppercase tracking-[0.3em] font-bold">
             Digital Empire &copy; 2026 · Implementazioni AI Proprietarie
           </div>
-          <div className="flex gap-10 text-white/20 text-[10px] uppercase tracking-widest font-bold">
+          <div className="flex gap-10 text-white/30 text-[10px] uppercase tracking-widest font-bold">
             <a href="#" className="hover:text-orange transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-orange transition-colors">Termini e Condizioni</a>
           </div>
-          <div className="text-white/10 text-[9px] uppercase tracking-widest leading-relaxed max-w-md">
-            I risultati promessi dipendono dall'impegno individuale. Questo sito non fa parte di Facebook o Facebook Inc. Inoltre, questo sito NON è approvato da Facebook in alcun modo.
+          {/* S5 — responsabilità sui dati: vendiamo sistemi che trattano i dati dei
+              clienti dei nostri clienti. È l'unica esposizione legale reale di questa pagina.
+              TODO(N1): P.IVA, sede e contatto PEC + pagine legali vere al posto degli href="#". */}
+          <div className="text-white/30 text-[10px] leading-relaxed max-w-2xl normal-case tracking-normal">
+            I sistemi che installiamo elaborano dati per tuo conto. La titolarità di quei dati
+            resta tua, insieme agli obblighi che ne derivano: base giuridica del trattamento,
+            informativa ai tuoi contatti e rispetto del GDPR nelle comunicazioni che il sistema
+            invia. Ti consegniamo la configurazione e la documentazione per farlo; la verifica
+            degli output generati dall'AI prima dell'uso commerciale resta un tuo passaggio.
+            Non promettiamo risultati economici specifici.
           </div>
         </div>
       </footer>

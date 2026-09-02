@@ -95,7 +95,7 @@ export function Hero() {
             <span
               className="block font-black text-silver-white"
               style={{
-                fontSize: "clamp(82px, 13.5vw, 148px)",
+                fontSize: "clamp(46px, 13.5vw, 148px)",
                 letterSpacing: "-0.05em",
                 lineHeight: 0.88,
               }}
@@ -119,7 +119,7 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={0.3}>
-          <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg md:text-xl text-white/60 max-w-3xl mx-auto mb-10 leading-relaxed">
             Ogni giorno ripeti gli stessi task: cerchi lead a mano, pubblichi contenuti uno a uno, scrivi email di follow-up.{" "}
             <strong className="text-white/90 font-semibold">Sei tu il collo di bottiglia del tuo business.</strong>{" "}
             Noi costruiamo sistemi AI che girano H24 senza di te:{" "}
@@ -136,10 +136,17 @@ export function Hero() {
             </div>
             <a
               href="#prenota"
-              className="text-sm font-medium text-white/70 hover:text-white transition-colors"
+              className="text-sm font-medium text-white/60 hover:text-white transition-colors"
             >
               Vedi prezzi e pacchetti ↓
             </a>
+            {/* A1 — riga di qualificazione: squalifica, dichiara la fascia di prezzo
+                senza nominarla, e prova che clienti in quella fascia esistono. */}
+            <p className="text-[13px] leading-relaxed text-white/60 max-w-md text-center">
+              Lavoriamo con chi fattura già e perde ore in operatività manuale.
+              Se stai ancora validando il prodotto, non siamo noi — e te lo diciamo prima
+              della call, non durante.
+            </p>
             <div className="flex items-center gap-4 text-xs uppercase tracking-widest text-white/75 font-semibold">
               <span className="flex items-center gap-1.5"><Shield className="h-3.5 w-3.5 text-orange-pure" /> Setup in 7 giorni · Garanzia di funzionamento · Zero dipendenze</span>
             </div>

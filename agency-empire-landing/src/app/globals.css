@@ -177,7 +177,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 1rem 2rem;
-  border-radius: 12px;
+  border-radius: var(--radius-xl);
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: -0.01em;
@@ -224,7 +224,7 @@
   background:
     radial-gradient(120% 80% at 0% 0%, rgba(251,70,4,0.09) 0%, transparent 55%),
     linear-gradient(180deg, #1a1a1a 0%, #121212 100%);
-  border-radius: 20px;
+  border-radius: var(--radius-xl);
   padding: 2.5rem 2.25rem;
   box-shadow: 0 40px 80px -40px rgba(0,0,0,0.9);
 }
@@ -232,7 +232,7 @@
 .card-paper {
   border: 1px solid rgba(19,19,19,0.12);
   background: #ffffff;
-  border-radius: 22px;
+  border-radius: var(--radius-xl);
   padding: 2.5rem 2.25rem;
   box-shadow: 0 40px 70px -32px rgba(19,19,19,0.22);
 }
@@ -273,7 +273,7 @@
   align-items: center;
   gap: 0.55rem;
   padding: 0.7rem 1rem;
-  border-radius: 14px;
+  border-radius: var(--radius-xl);
   background: radial-gradient(120% 100% at 0% 0%, #ffffff 0%, #f4f1f7 45%, #d9d4e1 100%);
   border: 1px solid rgba(255,255,255,0.9);
   color: #1c1c1c;
@@ -287,7 +287,7 @@
 ====================================== */
 .card-silver-orange {
   position: relative;
-  border-radius: 22px;
+  border-radius: var(--radius-xl);
   padding: 2.5rem 2.25rem;
   background:
     linear-gradient(
@@ -333,7 +333,7 @@
 
 .stat-card-silver {
   position: relative;
-  border-radius: 22px;
+  border-radius: var(--radius-xl);
   padding: 2.5rem 2.25rem;
   background:
     radial-gradient(120% 100% at 0% 0%, #ffffff 0%, #f4f1f7 45%, #d9d4e1 100%);
@@ -372,7 +372,7 @@
 ====================================== */
 .card-orange {
   position: relative;
-  border-radius: 22px;
+  border-radius: var(--radius-xl);
   padding: 2.5rem 2.25rem;
   background: linear-gradient(135deg, #fb4604 0%, #ff6a2e 55%, #ff8a4a 100%);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -386,7 +386,7 @@
 
 .card-silver {
   position: relative;
-  border-radius: 22px;
+  border-radius: var(--radius-xl);
   padding: 2.5rem 2.25rem;
   background: radial-gradient(120% 100% at 0% 0%, #ffffff 0%, #f4f1f7 45%, #d9d4e1 100%);
   border: 1px solid rgba(255, 255, 255, 0.85);
@@ -401,7 +401,7 @@
 ====================================== */
 .card-glass {
   position: relative;
-  border-radius: 22px;
+  border-radius: var(--radius-xl);
   padding: 2.5rem 2.25rem;
   background: linear-gradient(
     155deg,

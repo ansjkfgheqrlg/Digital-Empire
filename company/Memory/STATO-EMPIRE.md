@@ -1,3 +1,96 @@
+## 🏗️ 2026-09-02 — EMPERATOR: restyling sito agenzia, F1 chiusa lato codice — CP-20260902-008
+
+Max ha ordinato di chiudere tutto il chiudibile sul sito dell'agenzia (`agency-empire-landing`),
+partendo dall'audit e dal piano, e ha chiesto di aggiungerci le sezioni buone di `claude-speedrun.com`.
+
+**5 sezioni nuove** montate in pagina: micro-sondaggio di auto-diagnosi (S3), tabella comparativa a
+4 colonne con un punto concesso all'avversario (A2), formula `capacità = lavoro utile / ore-persona`
+col grafico e il costo del non fare (S2+A8), "facciamo tre cose, queste cinque no" (A6), i 3 momenti
+in cui serviamo il cliente (A9).
+
+**13 interventi sul codice esistente**: H1 non si taglia più su mobile, scarsità inventata rimossa
+in entrambi i punti e sostituita con l'urgenza competitiva senza scadenza, riga di qualificazione
+nell'hero, CTA gemelle fuse, 4 CTA con 4 etichette diverse, stack tecnico da 12 card a gradiente a
+griglia sobria monospaziata, footer senza il disclaimer Facebook e con la responsabilità dati/GDPR,
+813 righe morte cancellate, `vsl-bg` 3,18 MB → 388 KB, robots/sitemap/OpenGraph.
+
+**Misurato, non supposto** (ri-cattura con `site_capture.py`, lo stesso strumento usato su apsales):
+raggi **19 → 8**, colori di testo **77 → 64**, opacità del bianco da 18 gradini a 4.
+Il criterio F4 "≤20 colori" è **irraggiungibile senza violare il rischio 3 del piano** (i 3 sistemi
+devono restare cromaticamente distinti): il criterio va riscritto come "≤20 colori NEUTRI".
+
+**Non deployato da me**: `vercel whoami` dà token scaduto e `vercel login` è interattivo.
+
+⚠️ **RIPRESA DA / SERVE MAX**: (1) destinazione delle CTA — oggi atterrano su una pagina
+intitolata "Claude Code Mastery"; finché non è risolta il `noindex` resta su. (2) ID GA4 + Clarity.
+(3) P.IVA e sede per le pagine legali (oggi `href="#"`) — vanno online **prima** del tracciamento.
+(4) Contenuti F3: caso studio con numeri, demo 5 min, 3 foto, termini garanzia, PDF campione.
+C1/C3 restano fermi per progetto: il piano vieta le fusioni strutturali senza ≥7 giorni di dati.
+
+---
+
+## 👑 2026-09-02 — EMPERATOR: 5 direttive innestate + nasce CONOSCENZA-EMPIRE — CP-20260902-002
+
+Max ha dato cinque direttive con una condizione: *"non voglio piu' ripetertelo"*. Quindi non
+appunti, **innesti**. Auto-modifica dichiarata come impone la regola:
+
+- **Memoria persistente**: 4 file nuovi + 4 righe in `MEMORY.md`.
+- **`.claude/agents/emperator.md`**: nuove **§6.10** (chi studia, consiglia — 5 domande
+  obbligatorie a ogni ingestione), **§6.11** (battito dei 10 minuti: percentuale + 3 righe),
+  **§6.12** (memoria di Emperator e studio di Max). 563 → 640 righe.
+- **`scripts/emperator_hook.py`**: DOTTRINA estesa, iniettata a ogni messaggio.
+  **Verificato**: exit 0, JSON valido, 17.055 byte, 3 direttive su 3 presenti.
+- **`.claude/agents/conoscenza-empire.md`** — **organo nuovo, livello LX**, accanto a Mandato
+  e MAXIMILIAN. La biblioteca vivente: possiede tutta la formazione dell'Impero e la
+  distribuisce a chiunque, **sempre con la fonte**. Non esegue, alimenta. Tre divieti: non
+  inventa (il vuoto si dichiara), non confonde letto e dedotto, **non appiana le
+  contraddizioni fra fonti**. 124 agenti totali. Frontmatter validato.
+- **`company/REGISTRO-IMPRESA.md`**: riga in §1 ORGANI (ADR-008 rispettata).
+
+**Debito che resta, ed e' il punto 2 della direttiva:** `conoscenza-empire` esiste ma **non ha
+ancora alimentato nessuno**. Sentinelle, Board e Guild hanno ancora pochissima conoscenza.
+
+**RIPRESA DA**: portare il primo carico di conoscenza dentro gli agenti di gerarchia alta.
+Poi il batch 17 video (1 chiuso, 6 con frame pronti, 9 mai ingeriti) — e da oggi ogni video
+si chiude anche con la sezione **CONSIGLI** (§6.10), non solo con l'archiviazione.
+
+---
+
+## 🎬 2026-09-02 — EMPERATOR: batch 17 video, primo ciclo chiuso + rilevatore di scene — CP-20260902-001
+
+Max ha consegnato **17 video YouTube (16h31m)** su agency, brand, vendita, storytelling,
+caroselli, Claude Code, agenti e SEO. Da usare sia per Digital Empire sia per il piano privato.
+
+**Fatto:**
+- **7 run ingerite, 4.309 frame densi estratti** (1 ogni 2s). v08 fallita (0 frame).
+- **`scripts/scene_detector.py` costruito e provato**: riduce i frame ai soli cambi reali di
+  schermata — **4.309 → 1.066 (−75,3%)**. Nessun frame cancellato; `scenes.md` dichiara per
+  ogni frame tenuto quanti duplicati rappresenta e quanti secondi resta a video.
+- **Ciclo completo chiuso su 1 video** (`E8Ax92etrMc`, Nico | AI Ranking): archivio integrale
+  in Memory Empire, **4 skill SEO arricchite (+70 righe, 0 cancellazioni)**, 2 skill non
+  toccate con motivazione scritta, pagina wiki + index + log.
+- **Guard git**: il sync automatico era bloccato da un hook pre-commit — stava per portare nel
+  monorepo un `video.mp4.part` da **11 MB** più 12 blob. `.gitignore` esteso ai residui yt-dlp,
+  13 file tolti dall'indice. ADR-013 rispettato.
+
+**Misurato, non supposto:** tetto di **6 immagini per messaggio** (75 vengono scartate in blocco);
+gli agenti di visione in background muoiono per **watchdog a 600s**. La visione frame-per-frame
+su 29.738 frame non è eseguibile: da qui il rilevatore.
+
+**Trovato:** **tre** archivi `memory-empire/knowledge/`, due morti al 2026-07-09 e uno vivo
+(`empire-studio/memory-empire/`, 52 cartelle). Chi ingerisce senza controllare scrive in un
+archivio morto. → **B-033**.
+
+**Errore ammesso:** ho estratto sette video prima di chiuderne uno. Per RULES §1 un video senza
+Memory Empire non è "fatto" — v01, v02, v04-v08 sono in quello stato.
+
+**RIPRESA DA**: v02-beggiato-team (165 frame unici, italiano, transcript pronto). Regola nuova
+e vincolante: **un video alla volta, nessuno nuovo finché Memory Empire + wiki non sono chiusi
+sul precedente.** Restano 9 video mai ingeriti, di cui due da 4h+ (56% del lavoro totale) che
+vogliono una sessione dedicata ciascuno.
+
+---
+
 ## 🎯 2026-09-02 — EMPERATOR: studio siti Andrei Pascu CHIUSO 9/9 + commit sbloccato — CP-20260902-007
 
 **Lo studio dei siti e' finito: 9 report su 9**, 2.362 righe in `competitor/Andrei Pascu/site-study/reports/`.

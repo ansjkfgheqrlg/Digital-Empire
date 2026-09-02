@@ -85,7 +85,7 @@ export function MyPromise() {
         </Reveal>
 
         <Reveal delay={0.45}>
-          <p className="mt-4 text-[12px] uppercase tracking-[0.24em] font-black text-white/78">
+          <p className="mt-4 text-[12px] uppercase tracking-[0.24em] font-black text-white/75">
             → 30 giorni · Il sistema funziona o rimborsiamo · Nessuna domanda
           </p>
         </Reveal>

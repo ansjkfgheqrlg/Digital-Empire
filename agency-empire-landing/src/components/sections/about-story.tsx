@@ -104,7 +104,7 @@ export function AboutStory() {
             </h2>
           </Reveal>
 
-          <div className="space-y-7 text-white/80 text-[17px] leading-[1.7] font-medium">
+          <div className="space-y-7 text-white/75 text-[17px] leading-[1.7] font-medium">
             <Reveal delay={0.2}>
               <p>
                 Tutto è iniziato con <strong className="text-silver-white">YouTube</strong>. Poi, come capita a chi entra
@@ -142,7 +142,7 @@ export function AboutStory() {
 
             <Reveal delay={0.35}>
               <div
-                className="relative my-10 p-7 rounded-2xl overflow-hidden"
+                className="relative my-10 p-7 rounded-xl overflow-hidden"
                 style={{
                   background:
                     "linear-gradient(160deg, #2c2a27 0%, #1c1a17 50%, #0d0c0b 100%)",
@@ -274,7 +274,7 @@ export function AboutStory() {
               </h2>
             </Reveal>
             <Reveal delay={0.2}>
-              <p className="text-white/85 text-[16px] max-w-2xl mx-auto mt-6 leading-relaxed">
+              <p className="text-white/90 text-[16px] max-w-2xl mx-auto mt-6 leading-relaxed">
                 Niente sales junior. Niente account manager. Quando lavori con noi,{" "}
                 <strong className="text-silver-orange">parli con chi ha le mani sul codice e sui prompt.</strong>
               </p>
@@ -284,7 +284,7 @@ export function AboutStory() {
           <div className="grid md:grid-cols-3 gap-5">
             <Reveal delay={0.25}>
               <div
-                className="relative rounded-2xl p-7 h-full overflow-hidden hover-lift"
+                className="relative rounded-xl p-7 h-full overflow-hidden hover-lift"
                 style={{
                   background:
                     "linear-gradient(160deg, #3a2a20 0%, #2a1a10 50%, #1a0d08 100%)",
@@ -312,7 +312,7 @@ export function AboutStory() {
                 <h3 className="text-[26px] font-black text-silver-white mb-3 leading-tight">
                   Maximilian
                 </h3>
-                <p className="text-white/88 text-[14.5px] leading-relaxed">
+                <p className="text-white/90 text-[14.5px] leading-relaxed">
                   Sei anni di marketing. Tre di AI a tempo pieno. È la testa dietro ogni System AI che installiamo —
                   architetto dei flussi, voce del copy, ossessionato dai dettagli che gli altri non vedono.
                 </p>
@@ -321,7 +321,7 @@ export function AboutStory() {
 
             <Reveal delay={0.35}>
               <div
-                className="relative rounded-2xl p-7 h-full overflow-hidden hover-lift"
+                className="relative rounded-xl p-7 h-full overflow-hidden hover-lift"
                 style={{
                   background:
                     "linear-gradient(160deg, #2c2a27 0%, #1c1a17 50%, #0d0c0b 100%)",
@@ -349,7 +349,7 @@ export function AboutStory() {
                 <h3 className="text-[26px] font-black text-silver-white mb-3 leading-tight">
                   Gael
                 </h3>
-                <p className="text-white/88 text-[14.5px] leading-relaxed">
+                <p className="text-white/90 text-[14.5px] leading-relaxed">
                   Il mio socio alla pari. La persona con cui mi confronto su{" "}
                   <em className="text-silver-white">ogni</em> decisione che conta. Ci siamo conosciuti sotto un cielo
                   d&apos;estate al campeggio Tahiti di Follonica — non lo scriviamo per nostalgia, ma perché certe
@@ -360,7 +360,7 @@ export function AboutStory() {
 
             <Reveal delay={0.45}>
               <div
-                className="relative rounded-2xl p-7 h-full overflow-hidden hover-lift"
+                className="relative rounded-xl p-7 h-full overflow-hidden hover-lift"
                 style={{
                   background:
                     "linear-gradient(160deg, #2c2a27 0%, #1c1a17 50%, #0d0c0b 100%)",
@@ -388,7 +388,7 @@ export function AboutStory() {
                 <h3 className="text-[26px] font-black text-silver-white mb-3 leading-tight">
                   Leonardo
                 </h3>
-                <p className="text-white/88 text-[14.5px] leading-relaxed">
+                <p className="text-white/90 text-[14.5px] leading-relaxed">
                   Una delle tre teste di Digital Empire. Energia, esecuzione, presenza costante nelle stanze dove si
                   decide cosa spediamo e come. Quando lavori con noi, anche lui è uno di quelli con cui ti troverai a
                   costruire.
@@ -398,7 +398,7 @@ export function AboutStory() {
           </div>
 
           <Reveal delay={0.55}>
-            <p className="text-center text-white/80 text-[15px] max-w-2xl mx-auto mt-14 leading-relaxed">
+            <p className="text-center text-white/75 text-[15px] max-w-2xl mx-auto mt-14 leading-relaxed">
               <span className="text-silver-orange">→</span> Tre persone, una visione, zero burocrazia.{" "}
               <strong className="text-silver-white">Per scelta, non per limite.</strong>
             </p>
@@ -449,7 +449,7 @@ export function AboutStory() {
             ].map((s, i) => (
               <Reveal key={i} delay={0.2 + i * 0.1}>
                 <div
-                  className="relative rounded-2xl p-7 h-full hover-lift"
+                  className="relative rounded-xl p-7 h-full hover-lift"
                   style={{
                     background:
                       "linear-gradient(160deg, #ffffff 0%, #f5f3ee 100%)",
@@ -470,7 +470,7 @@ export function AboutStory() {
 
           <Reveal delay={0.5}>
             <div
-              className="relative max-w-3xl mx-auto rounded-2xl p-10 md:p-12 text-center overflow-hidden"
+              className="relative max-w-3xl mx-auto rounded-xl p-10 md:p-12 text-center overflow-hidden"
               style={{
                 background:
                   "linear-gradient(155deg, #ebe7e0 0%, #d4cec3 50%, #a8a093 100%)",
@@ -549,7 +549,7 @@ export function AboutStory() {
 
           <Reveal delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
-              <CallCTA variant="light" />
+              <CallCTA variant="light" label="Voglio parlare con chi lo costruisce" sublabel="Nessun commerciale in mezzo" />
             </div>
           </Reveal>
 

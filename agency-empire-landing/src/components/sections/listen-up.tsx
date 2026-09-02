@@ -29,12 +29,6 @@ export function ListenUp() {
             </p>
           </Reveal>
 
-          <Reveal delay={0.2}>
-            <p>
-              Ogni mattina la stessa routine: DM da mandare, contenuti da creare, informazioni da trovare. Ti svegli già in ritardo sul lavoro che conta davvero.
-            </p>
-          </Reveal>
-
           <Reveal delay={0.3}>
             <p>
               E ogni volta che guardi un competitor crescere più veloce di te, sai già la risposta:
@@ -53,13 +47,6 @@ export function ListenUp() {
             <p className="text-[19px] md:text-[22px] leading-relaxed">
               Non è fortuna.{" "}
               <span className="hl-block">È un sistema. E noi lo costruiamo per te.</span>
-            </p>
-          </Reveal>
-
-          <Reveal delay={0.5}>
-            <p>
-              Online trovi mille SaaS a canone mensile, tool generici che non conoscono il tuo brand, agenzie che ti vendono consulenza infinita.{" "}
-              <strong className="text-silver-orange">Tutto rumore. Nessuna soluzione reale.</strong>
             </p>
           </Reveal>
 

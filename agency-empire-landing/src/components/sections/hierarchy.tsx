@@ -54,7 +54,7 @@ export function Hierarchy() {
                     border: l.premium
                       ? "1px solid rgba(251,70,4,0.45)"
                       : "1px solid rgba(19,19,19,0.18)",
-                    borderRadius: 999,
+                    borderRadius: 9999,
                     padding: "0.3rem 0.85rem",
                   }}
                 >

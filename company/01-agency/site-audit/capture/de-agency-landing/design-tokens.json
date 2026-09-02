@@ -1,0 +1,3311 @@
+{
+ "url": "https://agency-empire-landing.vercel.app/",
+ "title": "Digital Empire | Sistemi AI Proprietari per la Tua Operatività",
+ "meta_description": "Installiamo sistemi AI sul tuo server: Outreach Factory, Content Factory e Second Brain. Zero canoni mensili. Codice tuo per sempre. Setup in 7 giorni.",
+ "og_title": null,
+ "lang": "it",
+ "page_height": 38683,
+ "page_width": 1509,
+ "body_bg": "#2a2a2a",
+ "body_font": "Onest, sans-serif",
+ "palette_text": [
+  [
+   "#ffffff",
+   157
+  ],
+  [
+   "#fb4604",
+   118
+  ],
+  [
+   "transparent",
+   104
+  ],
+  [
+   "#1c1c1c",
+   60
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.9)",
+   52
+  ],
+  [
+   "#0a0a0a",
+   48
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+   45
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.75)",
+   37
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+   33
+  ],
+  [
+   "#2a2a2a",
+   27
+  ],
+  [
+   "#f9f9f9",
+   24
+  ],
+  [
+   "#111111",
+   17
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.7)",
+   17
+  ],
+  [
+   "#ffffff @0.88",
+   16
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.82)",
+   13
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.85)",
+   12
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.65)",
+   9
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.72)",
+   9
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.82)",
+   8
+  ],
+  [
+   "#1c1c1c @0.035",
+   8
+  ],
+  [
+   "#fb7040",
+   7
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.88)",
+   7
+  ],
+  [
+   "lab(17.062 -0.0000298023 0.0000119209 / 0.78)",
+   7
+  ],
+  [
+   "lab(86.9953 -47.2691 25.0054)",
+   6
+  ],
+  [
+   "#ffaa88",
+   6
+  ],
+  [
+   "#ffd090",
+   6
+  ],
+  [
+   "#a8d4ff",
+   6
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.85)",
+   6
+  ],
+  [
+   "#ffffff @0.92",
+   5
+  ],
+  [
+   "#ffffff @0.95",
+   5
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.75)",
+   5
+  ],
+  [
+   "lab(17.062 -0.0000298023 0.0000119209 / 0.8)",
+   5
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.55)",
+   4
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.65)",
+   4
+  ],
+  [
+   "#fb4604 @0.08",
+   4
+  ],
+  [
+   "#a0afdc @0.75",
+   3
+  ],
+  [
+   "#d6def8 @0.94",
+   3
+  ],
+  [
+   "#131313 @0.75",
+   3
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+   3
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.88)",
+   3
+  ],
+  [
+   "#ffffff @0.68",
+   3
+  ],
+  [
+   "#ffffff @0.6",
+   3
+  ],
+  [
+   "#ffffff @0.72",
+   3
+  ],
+  [
+   "#90c0ff",
+   3
+  ],
+  [
+   "#f0c060",
+   3
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+   3
+  ],
+  [
+   "#131313 @0.55",
+   2
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.78)",
+   2
+  ],
+  [
+   "#ff8855",
+   2
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+   2
+  ],
+  [
+   "#ff7040",
+   1
+  ],
+  [
+   "#ffd080",
+   1
+  ],
+  [
+   "#a0d0ff",
+   1
+  ],
+  [
+   "#dce4fa @0.98",
+   1
+  ],
+  [
+   "#7a2a05",
+   1
+  ],
+  [
+   "#888888",
+   1
+  ],
+  [
+   "#b04030",
+   1
+  ],
+  [
+   "#4858a0",
+   1
+  ],
+  [
+   "#2a7040",
+   1
+  ],
+  [
+   "#904060",
+   1
+  ],
+  [
+   "#806020",
+   1
+  ],
+  [
+   "#704888",
+   1
+  ],
+  [
+   "#ffffff @0.5",
+   1
+  ],
+  [
+   "#78b8f0",
+   1
+  ],
+  [
+   "#9090e8",
+   1
+  ],
+  [
+   "#60c8e0",
+   1
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.6)",
+   1
+  ],
+  [
+   "#fb9650 @0.9",
+   1
+  ],
+  [
+   "#ffffff @0.35",
+   1
+  ],
+  [
+   "lab(17.062 -0.0000298023 0.0000119209 / 0.75)",
+   1
+  ],
+  [
+   "lab(17.062 -0.0000298023 0.0000119209 / 0.6)",
+   1
+  ],
+  [
+   "lab(79.8756 24.4858 33.8933 / 0.8)",
+   1
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.72)",
+   1
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.8)",
+   1
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.5)",
+   1
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.3)",
+   1
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+   1
+  ]
+ ],
+ "palette_bg": [
+  [
+   "#1c1c1c",
+   19
+  ],
+  [
+   "#ffffff @0.1",
+   16
+  ],
+  [
+   "#fafafa",
+   11
+  ],
+  [
+   "#0a0a0a",
+   10
+  ],
+  [
+   "#fb4604",
+   8
+  ],
+  [
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+   8
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.4)",
+   8
+  ],
+  [
+   "lab(78.503 -64.9265 39.7492)",
+   7
+  ],
+  [
+   "#ffffff",
+   7
+  ],
+  [
+   "#ffffff @0.16",
+   5
+  ],
+  [
+   "#e8e8e6",
+   5
+  ],
+  [
+   "#ffffff @0.035",
+   5
+  ],
+  [
+   "#000000 @0.28",
+   5
+  ],
+  [
+   "#ff7040",
+   4
+  ],
+  [
+   "#ffd080",
+   4
+  ],
+  [
+   "#a0d0ff",
+   4
+  ],
+  [
+   "#ffffff @0.04",
+   4
+  ],
+  [
+   "#ffa064 @0.85",
+   4
+  ],
+  [
+   "#64b4ff @0.78",
+   4
+  ],
+  [
+   "#1c1c1c @0.05",
+   4
+  ],
+  [
+   "#ffffff @0.14",
+   3
+  ],
+  [
+   "#ffb450 @0.22",
+   3
+  ],
+  [
+   "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+   3
+  ],
+  [
+   "lab(5.88233 -0.00000745058 0 / 0.9)",
+   2
+  ],
+  [
+   "#131313 @0.45",
+   2
+  ],
+  [
+   "#d9d6cf @0.1",
+   2
+  ],
+  [
+   "#2a2a2a",
+   1
+  ],
+  [
+   "#060404 @0.14",
+   1
+  ],
+  [
+   "oklab(0 0 0 / 0.6)",
+   1
+  ],
+  [
+   "#dc6432 @0.28",
+   1
+  ],
+  [
+   "#8c94dc @0.22",
+   1
+  ],
+  [
+   "#3cb45a @0.22",
+   1
+  ],
+  [
+   "#ffffff @0.08",
+   1
+  ],
+  [
+   "#5096e6 @0.22",
+   1
+  ],
+  [
+   "#6e6edc @0.2",
+   1
+  ],
+  [
+   "#3cb4d2 @0.18",
+   1
+  ],
+  [
+   "#000000 @0.45",
+   1
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.5)",
+   1
+  ],
+  [
+   "#fb4604 @0.16",
+   1
+  ],
+  [
+   "#22c55e @0.04",
+   1
+  ],
+  [
+   "#22c55e @0.12",
+   1
+  ],
+  [
+   "lab(10.2682 0.0000149012 0 / 0.05)",
+   1
+  ]
+ ],
+ "fonts": [
+  [
+   "Onest, sans-serif",
+   895
+  ],
+  [
+   "\"Instrument Serif\", \"Instrument Serif Fallback\", Georgia, serif",
+   64
+  ],
+  [
+   "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+   6
+  ]
+ ],
+ "type_scale": [
+  [
+   "11px / lh 16.5px / w800",
+   64
+  ],
+  [
+   "11px / lh 16.5px / w900",
+   61
+  ],
+  [
+   "14px / lh 22.75px / w400",
+   38
+  ],
+  [
+   "10px / lh 15px / w900",
+   37
+  ],
+  [
+   "14px / lh 21px / w600",
+   33
+  ],
+  [
+   "10px / lh 15px / w700",
+   21
+  ],
+  [
+   "18px / lh 22.5px / w900",
+   21
+  ],
+  [
+   "13.5px / lh 21.9375px / w400",
+   15
+  ],
+  [
+   "10.5px / lh 15.75px / w900",
+   15
+  ],
+  [
+   "13px / lh 17.875px / w500",
+   15
+  ],
+  [
+   "13.6px / lh 20.4px / w400",
+   15
+  ],
+  [
+   "15px / lh 24.375px / w400",
+   14
+  ],
+  [
+   "18px / lh 29.25px / w400",
+   13
+  ],
+  [
+   "16.8px / lh 21px / w700",
+   12
+  ],
+  [
+   "20px / lh 21.6px / w900",
+   12
+  ],
+  [
+   "130px / lh 130px / w900",
+   12
+  ],
+  [
+   "15.2px / lh 19px / w700",
+   11
+  ],
+  [
+   "15.2px / lh 20.9px / w400",
+   11
+  ],
+  [
+   "12px / lh 18px / w900",
+   10
+  ],
+  [
+   "16px / lh 24px / w400",
+   9
+  ],
+  [
+   "11px / lh 16.5px / w700",
+   9
+  ],
+  [
+   "12.5px / lh 18.75px / w500",
+   9
+  ],
+  [
+   "13.5px / lh 16.875px / w700",
+   9
+  ],
+  [
+   "12.5px / lh 17.1875px / w400",
+   9
+  ],
+  [
+   "14.08px / lh 22.88px / w400",
+   9
+  ],
+  [
+   "14px / lh 22.75px / w500",
+   9
+  ],
+  [
+   "16px / lh 24px / w700",
+   8
+  ],
+  [
+   "20px / lh 32.5px / w400",
+   8
+  ],
+  [
+   "16px / lh 26px / w900",
+   8
+  ],
+  [
+   "14.72px / lh 23.92px / w400",
+   8
+  ],
+  [
+   "20px / lh 28px / w700",
+   8
+  ],
+  [
+   "24px / lh 32px / w700",
+   8
+  ],
+  [
+   "12px / lh 16px / w700",
+   8
+  ],
+  [
+   "58px / lh 63.8px / w900",
+   8
+  ],
+  [
+   "17px / lh 28.9px / w500",
+   8
+  ],
+  [
+   "18px / lh 29.25px / w700",
+   7
+  ],
+  [
+   "52px / lh 65px / w700",
+   7
+  ],
+  [
+   "24px / lh 30px / w700",
+   7
+  ],
+  [
+   "16.32px / lh 26.52px / w400",
+   7
+  ],
+  [
+   "10px / lh 15px / w600",
+   6
+  ],
+  [
+   "11px / lh 16.5px / w600",
+   6
+  ],
+  [
+   "48px / lh 60px / w700",
+   6
+  ],
+  [
+   "15.68px / lh 25.48px / w400",
+   6
+  ],
+  [
+   "15.68px / lh 25.48px / w700",
+   6
+  ],
+  [
+   "14.4px / lh 23.4px / w400",
+   6
+  ],
+  [
+   "17px / lh 23.375px / w700",
+   6
+  ],
+  [
+   "20px / lh 25px / w900",
+   6
+  ],
+  [
+   "14.08px / lh 21.12px / w400",
+   6
+  ],
+  [
+   "15px / lh 18.75px / w600",
+   5
+  ],
+  [
+   "10px / lh 12.5px / w700",
+   5
+  ],
+  [
+   "20px / lh 32.5px / w700",
+   5
+  ],
+  [
+   "16px / lh 26px / w400",
+   5
+  ],
+  [
+   "16px / lh 26px / w500",
+   5
+  ],
+  [
+   "15px / lh 22.5px / w500",
+   5
+  ],
+  [
+   "12.48px / lh 18.72px / w600",
+   4
+  ],
+  [
+   "12.48px / lh 18.72px / w900",
+   4
+  ],
+  [
+   "68px / lh 68px / w900",
+   4
+  ],
+  [
+   "12px / lh 19.5px / w500",
+   4
+  ],
+  [
+   "26px / lh 28.6px / w900",
+   4
+  ],
+  [
+   "15.04px / lh 24.44px / w400",
+   4
+  ],
+  [
+   "18px / lh 27px / w900",
+   4
+  ],
+  [
+   "32px / lh 32px / w900",
+   4
+  ],
+  [
+   "11px / lh 15.125px / w700",
+   4
+  ],
+  [
+   "16.32px / lh 26.52px / w700",
+   4
+  ],
+  [
+   "10px / lh 15px / w500",
+   4
+  ],
+  [
+   "18px / lh 28px / w800",
+   4
+  ],
+  [
+   "12px / lh 16px / w900",
+   4
+  ],
+  [
+   "140px / lh 140px / w400",
+   4
+  ],
+  [
+   "32px / lh 40px / w400",
+   4
+  ],
+  [
+   "58px / lh 60.9px / w400",
+   4
+  ],
+  [
+   "14.5px / lh 23.5625px / w400",
+   4
+  ],
+  [
+   "12.5px / lh 18.75px / w600",
+   3
+  ],
+  [
+   "11.5px / lh 17.25px / w700",
+   3
+  ],
+  [
+   "11.5px / lh 17.25px / w600",
+   3
+  ],
+  [
+   "36px / lh 36px / w500",
+   3
+  ],
+  [
+   "11px / lh 11.88px / w800",
+   3
+  ],
+  [
+   "48px / lh 48px / w700",
+   3
+  ],
+  [
+   "10.88px / lh 16.32px / w800",
+   3
+  ],
+  [
+   "17.6px / lh 26.4px / w900",
+   3
+  ],
+  [
+   "52px / lh 65px / w400",
+   3
+  ],
+  [
+   "20px / lh 25px / w800",
+   3
+  ],
+  [
+   "15px / lh 24.375px / w500",
+   3
+  ],
+  [
+   "18.4px / lh 29.9px / w600",
+   3
+  ],
+  [
+   "14px / lh 19.25px / w600",
+   3
+  ],
+  [
+   "57.6px / lh 57.6px / w900",
+   3
+  ],
+  [
+   "11.5px / lh 17.25px / w900",
+   3
+  ],
+  [
+   "12px / lh 18px / w500",
+   3
+  ],
+  [
+   "24px / lh 24px / w900",
+   3
+  ],
+  [
+   "15px / lh 20.625px / w800",
+   3
+  ],
+  [
+   "46.4px / lh 49.184px / w900",
+   3
+  ],
+  [
+   "46.4px / lh 49.184px / w400",
+   3
+  ],
+  [
+   "46.4px / lh 58px / w700",
+   3
+  ],
+  [
+   "46.4px / lh 58px / w400",
+   3
+  ],
+  [
+   "14.4px / lh 21.6px / w900",
+   3
+  ],
+  [
+   "13.6px / lh 20.4px / w700",
+   3
+  ],
+  [
+   "13px / lh 19.5px / w900",
+   3
+  ],
+  [
+   "48px / lh 60px / w500",
+   3
+  ],
+  [
+   "18px / lh 29.25px / w600",
+   3
+  ],
+  [
+   "40px / lh 40px / w900",
+   3
+  ],
+  [
+   "24px / lh 32px / w900",
+   3
+  ],
+  [
+   "9.92px / lh 14.88px / w800",
+   3
+  ],
+  [
+   "14.4px / lh 21.6px / w400",
+   3
+  ],
+  [
+   "36px / lh 36px / w900",
+   3
+  ],
+  [
+   "11.52px / lh 17.28px / w600",
+   3
+  ],
+  [
+   "14px / lh 21px / w700",
+   3
+  ],
+  [
+   "15px / lh 24.375px / w700",
+   3
+  ],
+  [
+   "20px / lh 32.5px / w500",
+   3
+  ],
+  [
+   "17px / lh 28.9px / w700",
+   3
+  ],
+  [
+   "58px / lh 60.9px / w900",
+   3
+  ],
+  [
+   "18px / lh 30.6px / w500",
+   3
+  ],
+  [
+   "18px / lh 30.6px / w700",
+   3
+  ],
+  [
+   "26px / lh 32.5px / w900",
+   3
+  ],
+  [
+   "14px / lh 20px / w500",
+   2
+  ],
+  [
+   "16px / lh 24px / w600",
+   2
+  ],
+  [
+   "20px / lh 32.5px / w600",
+   2
+  ],
+  [
+   "45.9px / lh 49.572px / w400",
+   2
+  ],
+  [
+   "48px / lh 60px / w400",
+   2
+  ],
+  [
+   "48px / lh 48px / w500",
+   2
+  ],
+  [
+   "15px / lh 24.375px / w600",
+   2
+  ],
+  [
+   "22px / lh 35.75px / w400",
+   2
+  ],
+  [
+   "48px / lh 55.2px / w700",
+   2
+  ],
+  [
+   "48px / lh 55.2px / w400",
+   2
+  ],
+  [
+   "18.4px / lh 29.9px / w500",
+   2
+  ],
+  [
+   "16.8px / lh 27.3px / w500",
+   2
+  ],
+  [
+   "64px / lh 65.28px / w900",
+   2
+  ],
+  [
+   "64px / lh 65.28px / w400",
+   2
+  ],
+  [
+   "24px / lh 33px / w700",
+   2
+  ],
+  [
+   "15.52px / lh 25.22px / w400",
+   2
+  ],
+  [
+   "52px / lh 65px / w500",
+   2
+  ],
+  [
+   "11.2px / lh 16.8px / w700",
+   2
+  ],
+  [
+   "25.6px / lh 25.6px / w900",
+   2
+  ],
+  [
+   "12.8px / lh 19.2px / w400",
+   2
+  ],
+  [
+   "13px / lh 19.5px / w700",
+   2
+  ],
+  [
+   "30px / lh 36px / w900",
+   2
+  ],
+  [
+   "60px / lh 60px / w800",
+   2
+  ],
+  [
+   "42px / lh 50.4px / w600",
+   1
+  ],
+  [
+   "148px / lh 130.24px / w900",
+   1
+  ],
+  [
+   "88px / lh 88px / w800",
+   1
+  ],
+  [
+   "12px / lh 16px / w600",
+   1
+  ],
+  [
+   "38px / lh 57px / w800",
+   1
+  ],
+  [
+   "16.8px / lh 25.2px / w700",
+   1
+  ],
+  [
+   "12px / lh 16px / w400",
+   1
+  ],
+  [
+   "34px / lh 36.72px / w700",
+   1
+  ],
+  [
+   "52px / lh 54.6px / w700",
+   1
+  ],
+  [
+   "52px / lh 54.6px / w400",
+   1
+  ],
+  [
+   "160px / lh 160px / w400",
+   1
+  ],
+  [
+   "30px / lh 42px / w500",
+   1
+  ],
+  [
+   "30px / lh 42px / w700",
+   1
+  ],
+  [
+   "88px / lh 83.6px / w900",
+   1
+  ],
+  [
+   "28px / lh 38.5px / w700",
+   1
+  ],
+  [
+   "28px / lh 38.5px / w400",
+   1
+  ],
+  [
+   "16px / lh 20.8px / w400",
+   1
+  ],
+  [
+   "30px / lh 34.5px / w700",
+   1
+  ],
+  [
+   "16px / lh 26px / w600",
+   1
+  ],
+  [
+   "72px / lh 72px / w900",
+   1
+  ],
+  [
+   "18px / lh 29.25px / w900",
+   1
+  ],
+  [
+   "51.2px / lh 53.76px / w900",
+   1
+  ],
+  [
+   "51.2px / lh 53.76px / w400",
+   1
+  ],
+  [
+   "15.52px / lh 25.22px / w700",
+   1
+  ],
+  [
+   "15.52px / lh 25.22px / w600",
+   1
+  ],
+  [
+   "11.52px / lh 17.28px / w900",
+   1
+  ],
+  [
+   "9.92px / lh 14.88px / w900",
+   1
+  ],
+  [
+   "32px / lh 40px / w900",
+   1
+  ],
+  [
+   "48px / lh 48px / w900",
+   1
+  ],
+  [
+   "20px / lh 30px / w600",
+   1
+  ],
+  [
+   "11.52px / lh 17.28px / w700",
+   1
+  ],
+  [
+   "15.2px / lh 22.8px / w900",
+   1
+  ],
+  [
+   "14.4px / lh 14.4px / w700",
+   1
+  ],
+  [
+   "58px / lh 63.8px / w500",
+   1
+  ],
+  [
+   "14px / lh 20px / w600",
+   1
+  ],
+  [
+   "19px / lh 30.875px / w500",
+   1
+  ],
+  [
+   "19px / lh 30.875px / w700",
+   1
+  ],
+  [
+   "88px / lh 88px / w900",
+   1
+  ],
+  [
+   "10px / lh 16.25px / w900",
+   1
+  ],
+  [
+   "68px / lh 69.36px / w900",
+   1
+  ],
+  [
+   "68px / lh 69.36px / w400",
+   1
+  ],
+  [
+   "56px / lh 58.8px / w900",
+   1
+  ],
+  [
+   "56px / lh 58.8px / w400",
+   1
+  ],
+  [
+   "17px / lh 28.9px / w600",
+   1
+  ],
+  [
+   "18px / lh 30.6px / w600",
+   1
+  ],
+  [
+   "16px / lh 26px / w700",
+   1
+  ],
+  [
+   "34px / lh 40.8px / w900",
+   1
+  ],
+  [
+   "34px / lh 40.8px / w400",
+   1
+  ],
+  [
+   "19px / lh 30.4px / w400",
+   1
+  ],
+  [
+   "19px / lh 30.4px / w700",
+   1
+  ],
+  [
+   "9px / lh 14.625px / w400",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "900",
+   271
+  ],
+  [
+   "400",
+   236
+  ],
+  [
+   "700",
+   195
+  ],
+  [
+   "500",
+   90
+  ],
+  [
+   "800",
+   87
+  ],
+  [
+   "600",
+   86
+  ]
+ ],
+ "radii": [
+  [
+   "16px",
+   100
+  ],
+  [
+   "3.35544e+07px",
+   65
+  ],
+  [
+   "16.8px",
+   51
+  ],
+  [
+   "9999px",
+   32
+  ],
+  [
+   "22px",
+   25
+  ],
+  [
+   "9.6px",
+   17
+  ],
+  [
+   "12px",
+   16
+  ],
+  [
+   "14px",
+   4
+  ],
+  [
+   "999px",
+   3
+  ],
+  [
+   "50%",
+   3
+  ],
+  [
+   "20px",
+   3
+  ],
+  [
+   "24px",
+   2
+  ],
+  [
+   "4px",
+   1
+  ],
+  [
+   "28px",
+   1
+  ],
+  [
+   "25px",
+   1
+  ],
+  [
+   "4px 0px 0px",
+   1
+  ],
+  [
+   "0px 4px 0px 0px",
+   1
+  ],
+  [
+   "0px 0px 0px 4px",
+   1
+  ],
+  [
+   "0px 0px 4px",
+   1
+  ]
+ ],
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Automatizziamo la tua operatività con AI Workflows."
+  },
+  {
+   "tag": "h2",
+   "text": "Tre sistemi. Un'unica operatività che gira da sola."
+  },
+  {
+   "tag": "h2",
+   "text": "AUTOMAZIONE AI PROPRIETARIA = più tempo, più margine."
+  },
+  {
+   "tag": "h3",
+   "text": "SETUP COMPLETO"
+  },
+  {
+   "tag": "h3",
+   "text": "EMAIL AL GIORNO"
+  },
+  {
+   "tag": "h3",
+   "text": "CANONI MENSILI"
+  },
+  {
+   "tag": "h2",
+   "text": "Ideato su misura per Creator, Coach & Business Owner."
+  },
+  {
+   "tag": "h2",
+   "text": "Il problema non è “non avere tempo”. È fare a mano ciò che un sistema AI fa da solo."
+  },
+  {
+   "tag": "h3",
+   "text": "L'operatività manuale"
+  },
+  {
+   "tag": "h3",
+   "text": "Con un sistema AI proprietario"
+  },
+  {
+   "tag": "h2",
+   "text": "Mentre leggi questa pagina, un tuo competitor sta automatizzando."
+  },
+  {
+   "tag": "h2",
+   "text": "ASCOLTA BENE."
+  },
+  {
+   "tag": "h2",
+   "text": "In quale livello sei oggi? E dove vuoi essere domani?"
+  },
+  {
+   "tag": "h3",
+   "text": "Operatività Manuale"
+  },
+  {
+   "tag": "h3",
+   "text": "SaaS di Terze Parti"
+  },
+  {
+   "tag": "h3",
+   "text": "Sistema AI Proprietario"
+  },
+  {
+   "tag": "h2",
+   "text": "Perché Digital Empire?"
+  },
+  {
+   "tag": "h3",
+   "text": "Proprietà totale. Zero dipendenze."
+  },
+  {
+   "tag": "h3",
+   "text": "Un problema. Una soluzione precisa."
+  },
+  {
+   "tag": "h3",
+   "text": "Setup in 7 giorni. Poi gira da solo."
+  },
+  {
+   "tag": "h2",
+   "text": "Framework F.L.O.W."
+  },
+  {
+   "tag": "h3",
+   "text": "Flusso. Mappiamo tutto."
+  },
+  {
+   "tag": "h3",
+   "text": "Logica. Progettiamo il sistema."
+  },
+  {
+   "tag": "h3",
+   "text": "Output. Costruiamo e testiamo."
+  },
+  {
+   "tag": "h3",
+   "text": "Watch. Monitoriamo e ottimizziamo."
+  },
+  {
+   "tag": "h2",
+   "text": "Ogni sistema, nel dettaglio."
+  },
+  {
+   "tag": "h2",
+   "text": "Outreach automatico su Gmail e Social."
+  },
+  {
+   "tag": "h2",
+   "text": "Cosa include la tua piattaforma di Outreach."
+  },
+  {
+   "tag": "h3",
+   "text": "Core Automation Engine"
+  },
+  {
+   "tag": "h3",
+   "text": "Proxy & Account Setup"
+  },
+  {
+   "tag": "h3",
+   "text": "Dashboard UI & CRM"
+  },
+  {
+   "tag": "h2",
+   "text": "Fabbrica di Contenuti social su pilota automatico."
+  },
+  {
+   "tag": "h2",
+   "text": "Cosa produce la tua fabbrica di contenuti."
+  },
+  {
+   "tag": "h3",
+   "text": "Caroselli Instagram"
+  },
+  {
+   "tag": "h3",
+   "text": "Script Video AI"
+  },
+  {
+   "tag": "h3",
+   "text": "Caption + Hashtag"
+  },
+  {
+   "tag": "h3",
+   "text": "Upload Google Drive"
+  },
+  {
+   "tag": "h3",
+   "text": "Pubblicazione Programmata"
+  },
+  {
+   "tag": "h3",
+   "text": "Batch Produzione Multipla"
+  },
+  {
+   "tag": "h2",
+   "text": "Second Brain: l'AI non dimentica più."
+  },
+  {
+   "tag": "h2",
+   "text": "Cosa include il tuo Second Brain."
+  },
+  {
+   "tag": "h3",
+   "text": "Knowledge Base a Grafo"
+  },
+  {
+   "tag": "h3",
+   "text": "Integrazione LLM Avanzata"
+  },
+  {
+   "tag": "h3",
+   "text": "Workflow di Aggiornamento"
+  },
+  {
+   "tag": "h2",
+   "text": "Fatti, non slogan."
+  },
+  {
+   "tag": "h3",
+   "text": "Codice sorgente consegnato"
+  },
+  {
+   "tag": "h3",
+   "text": "90 giorni di supporto dedicato"
+  },
+  {
+   "tag": "h3",
+   "text": "Garanzia 30 giorni"
+  },
+  {
+   "tag": "h3",
+   "text": "Setup in 7 giorni"
+  },
+  {
+   "tag": "h3",
+   "text": "Zero canoni mensili"
+  },
+  {
+   "tag": "h3",
+   "text": "Vuoi vederlo dal vivo?"
+  },
+  {
+   "tag": "h2",
+   "text": "Non vendiamo abbonamenti. Vendiamo asset."
+  },
+  {
+   "tag": "h2",
+   "text": "Niente black box. Ogni tool spiegato e consegnato."
+  },
+  {
+   "tag": "h3",
+   "text": "Claude AI"
+  },
+  {
+   "tag": "h3",
+   "text": "Gmail API"
+  },
+  {
+   "tag": "h3",
+   "text": "Playwright"
+  },
+  {
+   "tag": "h3",
+   "text": "Proxy Residenziali"
+  },
+  {
+   "tag": "h3",
+   "text": "APSOC Framework"
+  },
+  {
+   "tag": "h3",
+   "text": "n8n"
+  },
+  {
+   "tag": "h3",
+   "text": "OpenAI API"
+  },
+  {
+   "tag": "h3",
+   "text": "Supabase"
+  },
+  {
+   "tag": "h3",
+   "text": "Google Drive"
+  },
+  {
+   "tag": "h3",
+   "text": "Slack / CRM"
+  },
+  {
+   "tag": "h3",
+   "text": "React / Next.js"
+  },
+  {
+   "tag": "h3",
+   "text": "Obsidian / Notion"
+  },
+  {
+   "tag": "h2",
+   "text": "Non solo il sistema. L'infrastruttura completa."
+  },
+  {
+   "tag": "h3",
+   "text": "Il sistema AI completo"
+  },
+  {
+   "tag": "h3",
+   "text": "Pannello di controllo custom"
+  },
+  {
+   "tag": "h3",
+   "text": "Configurazione proxy residenziali"
+  },
+  {
+   "tag": "h3",
+   "text": "APSOC Framework calibrato"
+  },
+  {
+   "tag": "h3",
+   "text": "Integrazione Slack / CRM"
+  },
+  {
+   "tag": "h3",
+   "text": "90 giorni di supporto dedicato"
+  },
+  {
+   "tag": "h2",
+   "text": "“Ok ma chi siete?”"
+  },
+  {
+   "tag": "h2",
+   "text": "Prendo quello che uso io ogni singolo giorno e lo adatto a te."
+  },
+  {
+   "tag": "h2",
+   "text": "Non solo il codice. L'infrastruttura pronta a girare da sola."
+  },
+  {
+   "tag": "h3",
+   "text": "Configurazione proxy residenziali"
+  },
+  {
+   "tag": "h3",
+   "text": "Integrazione Slack / CRM"
+  },
+  {
+   "tag": "h3",
+   "text": "Supporto tecnico dedicato"
+  },
+  {
+   "tag": "h3",
+   "text": "Formazione team inclusa"
+  },
+  {
+   "tag": "h2",
+   "text": "Un sistema AI proprietario. Un asset permanente."
+  },
+  {
+   "tag": "h3",
+   "text": "Outreach Factory"
+  },
+  {
+   "tag": "h3",
+   "text": "Second Brain"
+  },
+  {
+   "tag": "h3",
+   "text": "Content Factory"
+  },
+  {
+   "tag": "h3",
+   "text": "Engine Room"
+  },
+  {
+   "tag": "h3",
+   "text": "La matematica"
+  },
+  {
+   "tag": "h2",
+   "text": "Cosa succede esattamente dopo la chiamata."
+  },
+  {
+   "tag": "h3",
+   "text": "Chiamata Strategica gratuita"
+  },
+  {
+   "tag": "h3",
+   "text": "Proposta Tecnica personalizzata"
+  },
+  {
+   "tag": "h3",
+   "text": "Contratto & onboarding"
+  },
+  {
+   "tag": "h3",
+   "text": "Setup & installazione completa"
+  },
+  {
+   "tag": "h3",
+   "text": "Calibrazione & go-live"
+  },
+  {
+   "tag": "h3",
+   "text": "Supporto tecnico dedicato"
+  },
+  {
+   "tag": "h2",
+   "text": "Se il sistema non funziona come promesso, lo sistemiamo."
+  },
+  {
+   "tag": "h2",
+   "text": "Le 4 obiezioni che demoliamo prima di iniziare."
+  },
+  {
+   "tag": "h3",
+   "text": "“ChatGPT fa già tutto questo, gratis.”"
+  },
+  {
+   "tag": "h3",
+   "text": "“Ma Instagram mi banna se automatizzo.”"
+  },
+  {
+   "tag": "h3",
+   "text": "“Il copy generato dall’AI sembra robotico.”"
+  },
+  {
+   "tag": "h3",
+   "text": "“Diventerei dipendente da voi per sempre.”"
+  },
+  {
+   "tag": "h2",
+   "text": "Domande frequenti."
+  },
+  {
+   "tag": "h3",
+   "text": "In quanto tempo il sistema è operativo?"
+  },
+  {
+   "tag": "h3",
+   "text": "Ho bisogno di un server dedicato?"
+  },
+  {
+   "tag": "h3",
+   "text": "Cosa succede se Instagram cambia qualcosa?"
+  },
+  {
+   "tag": "h3",
+   "text": "Posso acquistare un solo sistema invece di tutti e tre?"
+  },
+  {
+   "tag": "h3",
+   "text": "C'è una garanzia?"
+  },
+  {
+   "tag": "h3",
+   "text": "Continui come prima"
+  },
+  {
+   "tag": "h3",
+   "text": "Implementi il sistema"
+  },
+  {
+   "tag": "h2",
+   "text": "Pronto a far lavorare il sistema per te?"
+  },
+  {
+   "tag": "h3",
+   "text": "AI Proprietaria"
+  },
+  {
+   "tag": "h2",
+   "text": "Noi siamo Digital Empire."
+  },
+  {
+   "tag": "h2",
+   "text": "Sei anni fa ero un ragazzo ossessionato da Internet."
+  },
+  {
+   "tag": "h2",
+   "text": "Poi un giorno ho deciso di non lavorare più da solo."
+  },
+  {
+   "tag": "h2",
+   "text": "Tre persone. Zero filtri tra te e chi costruisce."
+  },
+  {
+   "tag": "h3",
+   "text": "Maximilian"
+  },
+  {
+   "tag": "h3",
+   "text": "Gael"
+  },
+  {
+   "tag": "h3",
+   "text": "Leonardo"
+  },
+  {
+   "tag": "h2",
+   "text": "Installiamo sistemi AI che lavorano mentre dormi."
+  },
+  {
+   "tag": "h3",
+   "text": "Outreach Factory"
+  },
+  {
+   "tag": "h3",
+   "text": "Content Factory"
+  },
+  {
+   "tag": "h3",
+   "text": "Second Brain"
+  },
+  {
+   "tag": "h2",
+   "text": "Vuoi entrare in Empire?"
+  }
+ ],
+ "ctas": [
+  {
+   "text": "Prenota",
+   "href": "https://chiamata-formazione.netlify.app/",
+   "y": -62,
+   "x": 1184,
+   "w": 88,
+   "h": 41,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, sans-serif",
+   "size": "14px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "8.8px 17.6px"
+  },
+  {
+   "text": "Prenota una Chiamata Gratuita",
+   "href": "https://chiamata-formazione.netlify.app/",
+   "y": 800,
+   "x": 561,
+   "w": 318,
+   "h": 58,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, sans-serif",
+   "size": "16px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Prenota una Chiamata",
+   "href": "https://chiamata-formazione.netlify.app/",
+   "y": 910,
+   "x": 621,
+   "w": 254,
+   "h": 58,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, sans-serif",
+   "size": "16px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "16px 32px"
+  },
+  {
+   "text": "Prenota una Chiamata Strategica",
+   "href": "#prenota",
+   "y": 1943,
+   "x": 375,
+   "w": 366,
+   "h": 62,
+   "bg": "#fb4604",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid rgba(255, 255, 255, 0.12)",
+   "shadow": "rgba(251, 70, 4, 0.35) 0px 0px 40px 0px, rgba(255, 255, 255, 0.18) 0px 1px 0px 0px inset",
+   "font": "Onest, sans-serif",
+   "size": "16.8px",
+   "weight": "700",
+   "transform": "none",
+   "padding": "17.6px 40px"
+  },
+  {
+   "text": "Prenota una Chiamata Gratuita 30 MIN · GRATUITA · ZERO IMPEGNO",
+   "href": "https://chiamata-formazione.netlify.app/",
+   "y": 1943,
+   "x": 753,
+   "w": 312,
+   "h": 63,
+   "bg": "oklab(0 0 0 / 0.6)",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.4)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 24px"
+  },
+  {
+   "text": "IL RISCHIO È NOSTRO Garanzia, codice tuo, zero canoni. Cosa ti trattiene? PRENOTA UNA CHIAMATA",
+   "href": "#prenota",
+   "y": 16028,
+   "x": 915,
+   "w": 357,
+   "h": 207,
+   "bg": "transparent",
+   "color": "#f9f9f9",
+   "radius": "16px",
+   "border": "1px solid rgba(251, 80, 4, 0.4)",
+   "shadow": "rgba(150, 35, 0, 0.55) 0px 18px 44px -22px",
+   "font": "Onest, sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "transform": "none",
+   "padding": "24px"
+  },
+  {
+   "text": "Prenota una Chiamata Gratuita 30 MIN · GRATUITA · ZERO IMPEGNO",
+   "href": "https://chiamata-formazione.netlify.app/",
+   "y": 24995,
+   "x": 564,
+   "w": 312,
+   "h": 63,
+   "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 24px"
+  },
+  {
+   "text": "Prenota una Chiamata Gratuita 30 MIN · GRATUITA · ZERO IMPEGNO",
+   "href": "https://chiamata-formazione.netlify.app/",
+   "y": 31682,
+   "x": 548,
+   "w": 344,
+   "h": 70,
+   "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 24px"
+  },
+  {
+   "text": "Prenota una Chiamata Gratuita 30 MIN · GRATUITA · ZERO IMPEGNO",
+   "href": "https://chiamata-formazione.netlify.app/",
+   "y": 33081,
+   "x": 769,
+   "w": 539,
+   "h": 63,
+   "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+   "color": "#ffffff",
+   "radius": "12px",
+   "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 24px"
+  },
+  {
+   "text": "Prenota una Chiamata Gratuita 30 MIN · GRATUITA · ZERO IMPEGNO",
+   "href": "https://chiamata-formazione.netlify.app/",
+   "y": 38174,
+   "x": 564,
+   "w": 312,
+   "h": 63,
+   "bg": "lab(10.2682 0.0000149012 0 / 0.05)",
+   "color": "#1c1c1c",
+   "radius": "12px",
+   "border": "1px solid lab(10.2682 0.0000149012 0 / 0.25)",
+   "shadow": "none",
+   "font": "Onest, sans-serif",
+   "size": "15px",
+   "weight": "600",
+   "transform": "none",
+   "padding": "14px 24px"
+  }
+ ],
+ "images": [
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 181,
+   "x": 594,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 821,
+   "x": 830,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 919,
+   "x": 458,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 931,
+   "x": 826,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1611,
+   "x": 528,
+   "w": 44,
+   "h": 18
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1611,
+   "x": 868,
+   "w": 44,
+   "h": 18
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1967,
+   "x": 684,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 1967,
+   "x": 778,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 2027,
+   "x": 497,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3960,
+   "x": 269,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 3960,
+   "x": 769,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4881,
+   "x": 335,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4881,
+   "x": 584,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4881,
+   "x": 833,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 4881,
+   "x": 1082,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7653,
+   "x": 281,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7653,
+   "x": 613,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7653,
+   "x": 945,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 7667,
+   "x": 1221,
+   "w": 80,
+   "h": 90
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9525,
+   "x": 202,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9525,
+   "x": 577,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 9525,
+   "x": 951,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10070,
+   "x": 189,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10070,
+   "x": 564,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10070,
+   "x": 938,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10116,
+   "x": 189,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10116,
+   "x": 564,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10116,
+   "x": 938,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10162,
+   "x": 189,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10162,
+   "x": 564,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10162,
+   "x": 938,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10208,
+   "x": 189,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10208,
+   "x": 564,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10208,
+   "x": 938,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10253,
+   "x": 189,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10253,
+   "x": 564,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10253,
+   "x": 938,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10508,
+   "x": 488,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10508,
+   "x": 862,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 10508,
+   "x": 1237,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11287,
+   "x": 168,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11354,
+   "x": 168,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11421,
+   "x": 168,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11967,
+   "x": 269,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11967,
+   "x": 601,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 11967,
+   "x": 933,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14372,
+   "x": 168,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14439,
+   "x": 168,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 14506,
+   "x": 168,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15052,
+   "x": 269,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15052,
+   "x": 601,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15052,
+   "x": 933,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15318,
+   "x": 257,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15318,
+   "x": 589,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15318,
+   "x": 921,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15864,
+   "x": 205,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15864,
+   "x": 578,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 15864,
+   "x": 952,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16065,
+   "x": 205,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16065,
+   "x": 578,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16193,
+   "x": 1130,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16389,
+   "x": 986,
+   "w": 32,
+   "h": 32
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16500,
+   "x": 168,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16502,
+   "x": 350,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 16774,
+   "x": 614,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17200,
+   "x": 759,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17202,
+   "x": 261,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17258,
+   "x": 759,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17259,
+   "x": 261,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17294,
+   "x": 261,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17315,
+   "x": 759,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17329,
+   "x": 261,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17350,
+   "x": 759,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17386,
+   "x": 261,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 17408,
+   "x": 759,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19491,
+   "x": 205,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19491,
+   "x": 580,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19491,
+   "x": 954,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19753,
+   "x": 205,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19753,
+   "x": 580,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 19753,
+   "x": 954,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 21185,
+   "x": 793,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 21301,
+   "x": 793,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 21418,
+   "x": 793,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23425,
+   "x": 212,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23425,
+   "x": 587,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23425,
+   "x": 961,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23664,
+   "x": 198,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23664,
+   "x": 573,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23664,
+   "x": 947,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23715,
+   "x": 198,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23715,
+   "x": 573,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23715,
+   "x": 947,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23745,
+   "x": 947,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23766,
+   "x": 198,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23766,
+   "x": 573,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23796,
+   "x": 947,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23817,
+   "x": 198,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23817,
+   "x": 573,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23847,
+   "x": 947,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23867,
+   "x": 198,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 23867,
+   "x": 573,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24183,
+   "x": 626,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24183,
+   "x": 719,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24197,
+   "x": 226,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24279,
+   "x": 626,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24279,
+   "x": 719,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24284,
+   "x": 1186,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24418,
+   "x": 626,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24418,
+   "x": 719,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 24685,
+   "x": 217,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 25019,
+   "x": 589,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 25079,
+   "x": 400,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 25691,
+   "x": 283,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 25691,
+   "x": 781,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 25910,
+   "x": 283,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 25910,
+   "x": 781,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 26130,
+   "x": 283,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 26130,
+   "x": 781,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 27633,
+   "x": 608,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 28186,
+   "x": 576,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 28740,
+   "x": 568,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 29294,
+   "x": 575,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 31186,
+   "x": 1143,
+   "w": 48,
+   "h": 48
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 31708,
+   "x": 576,
+   "w": 18,
+   "h": 18
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 31774,
+   "x": 550,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32059,
+   "x": 708,
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32274,
+   "x": 144,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32282,
+   "x": 1272,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32512,
+   "x": 128,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32512,
+   "x": 1298,
+   "w": 14,
+   "h": 14
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32744,
+   "x": 152,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32748,
+   "x": 1280,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32943,
+   "x": 107,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 32978,
+   "x": 107,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 33012,
+   "x": 107,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 33047,
+   "x": 107,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 33081,
+   "x": 107,
+   "w": 12,
+   "h": 12
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 33104,
+   "x": 907,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 36374,
+   "x": 211,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 36374,
+   "x": 586,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 36374,
+   "x": 960,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "tag": "svg",
+   "src": "",
+   "alt": "",
+   "y": 38197,
+   "x": 589,
+   "w": 16,
+   "h": 16
+  }
+ ],
+ "slices_desktop": 43,
+ "slices_mobile": 48,
+ "mobile_page_height": 64255
+}

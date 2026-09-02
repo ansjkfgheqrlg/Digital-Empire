@@ -58,7 +58,7 @@ export function Clarity() {
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="text-[#2a2a2a]/75 text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
+            <p className="text-[#1c1c1c]/72 text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
               Dal primo contatto al sistema in produzione: 7 giorni. Ecco la sequenza precisa, passo per passo.
             </p>
           </Reveal>
@@ -69,7 +69,7 @@ export function Clarity() {
             const Icon = s.icon;
             return (
               <Reveal key={i} delay={0.15 + i * 0.06}>
-                <div className="card-paper rounded-2xl p-6 h-full flex gap-5 hover-lift">
+                <div className="card-paper rounded-xl p-6 h-full flex gap-5 hover-lift">
                   <div
                     className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center"
                     style={{
@@ -87,7 +87,7 @@ export function Clarity() {
                     <h3 className="text-lg font-black text-silver-black mb-2 leading-tight">
                       {s.title}
                     </h3>
-                    <p className="text-[#2a2a2a]/78 text-sm leading-relaxed">{s.desc}</p>
+                    <p className="text-[#1c1c1c]/72 text-sm leading-relaxed">{s.desc}</p>
                   </div>
                 </div>
               </Reveal>
@@ -97,7 +97,7 @@ export function Clarity() {
 
         <Reveal delay={0.5}>
           <div className="mt-12 text-center">
-            <p className="text-[13px] uppercase tracking-[0.2em] font-bold text-[#2a2a2a]/60">
+            <p className="text-[13px] uppercase tracking-[0.2em] font-bold text-[#1c1c1c]/60">
               <span className="text-orange-pure">→</span> Codice sorgente tuo · Zero canoni mensili · Garanzia 30 giorni
             </p>
           </div>

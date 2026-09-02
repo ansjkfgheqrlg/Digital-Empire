@@ -45,7 +45,7 @@ export function Audience() {
           {/* YES card */}
           <Reveal delay={0.18}>
             <div
-              className="rounded-2xl p-7 h-full"
+              className="rounded-xl p-7 h-full"
               style={{
                 background: "linear-gradient(145deg, #1f0800 0%, #3d0f00 25%, #621a00 52%, #3d0f00 76%, #1a0500 100%)",
                 border: "2px solid rgba(210,218,232,0.68)",
@@ -87,7 +87,7 @@ export function Audience() {
           {/* NO card */}
           <Reveal delay={0.28}>
             <div
-              className="rounded-2xl p-7 h-full"
+              className="rounded-xl p-7 h-full"
               style={{
                 background: "linear-gradient(145deg, #060a14 0%, #0c1426 30%, #161e3a 58%, #0c1428 80%, #060810 100%)",
                 border: "2px solid rgba(210,218,232,0.68)",

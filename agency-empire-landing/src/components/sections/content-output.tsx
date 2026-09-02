@@ -97,7 +97,7 @@ export function ContentOutput() {
           {deliverables.map((d, i) => (
             <Reveal key={i} delay={0.12 + i * 0.07}>
               <div
-                className="co-card rounded-2xl p-6 h-full flex flex-col"
+                className="co-card rounded-xl p-6 h-full flex flex-col"
                 style={{
                   backgroundImage: [GRAIN(d.seed), d.bg].join(", "),
                   backgroundSize: "200px 200px, 100% 100%",

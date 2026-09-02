@@ -46,7 +46,7 @@ export function WhoGuides() {
             <p>
               Negli ultimi anni nell&apos;ecosistema AI abbiamo costruito{" "}
               <span
-                className="inline-block px-2 py-0.5 rounded font-black"
+                className="inline-block px-2 py-0.5 rounded-xl font-black"
                 style={{ background: "#fb4604", color: "#fff" }}
               >
                 50+ sistemi
