@@ -1,5 +1,29 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-02 (STUDIO SITI ANDREI PASCU — completato 9/9)
+- COMPLETAMENTO: scritti i 3 report mancanti dello studio forense dei siti di Andrei Pascu.
+  `competitor/Andrei Pascu/site-study/reports/` passa da 6 a **9 report su 9** (2.362 righe totali).
+  - `06-manuale-del-copywriter.md` — eBook 79 EUR, 11.067px. La pagina piu' corta a pagamento
+    dell'ecosistema: a meta' pagina regala un'anteprima vera del libro, e da li' vende quella.
+    L'anteprima sostituisce garanzia e testimonianze (entrambe assenti dalla pagina).
+  - `08-apsales.md` — **agenzia CRO B2B/SaaS: il concorrente diretto della nostra agenzia**.
+    Unica pagina dell'ecosistema con una garanzia (di rimedio, non di rimborso), unica con
+    tabella comparativa contro le alternative d'acquisto, font monospaziato come linguaggio
+    della misura (240 usi), zero border-radius. Difetto grosso: zero risultati numerici pubblicati.
+  - `09-linktree.md` — il bio-link vero: Linktree stock, 3 link, zero copy, zero raccolta email,
+    **55 CTA su 58 portano ad altri profili Linktree**. Contraddice la sua stessa lezione (video 5 cat2).
+- SCOPERTA: `claude-speedrun.com` e' linkato dalla **nav di andrei-copy.com** ed e' il terzo link
+  del bio-link ("Claude Speedrun 2"). E' un prodotto suo, misurato nel DOM. Resta da verificare
+  solo la cronologia delle date (Wayback) prima di ogni conclusione sul `#fb4604`.
+- SCOPERTA: lo storico del bio-link espone **21 etichette usate in 4 anni**, tra cui due prodotti
+  mai censiti: **`outViral`** e **`Timer`**. Lo studio copre 9 pagine di un ecosistema da almeno 11.
+- CORREZIONE: la regola "lunghezza copy = funzione del prezzo" era sbagliata. Misurato:
+  79 EUR su 11.067px contro 98 EUR su 21.119px. Vale invece: **la lunghezza e' funzione di quanto
+  lavoro deve fare la pagina** — se un campione gratuito convince, la pagina si dimezza.
+- UPDATE: `site-study/README.md` — tabella a 9/9 e scoperte trasversali da 6 a 10.
+- Checkpoint: CP-20260902-007.
+
+
 ## 2026-09-01 (VERIFICA AGENTI — 4 agenti morti riparati, Emperator)
 - MISURAZIONE: su domanda diretta di Max, misurati gli agenti con lo stesso gate delle skill.
   `registro-agenti.yaml` dichiarava 123 ufficiali senza che nessuno lo avesse verificato.

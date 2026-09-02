@@ -1,3 +1,47 @@
+## 🎯 2026-09-02 — EMPERATOR: studio siti Andrei Pascu CHIUSO 9/9 + commit sbloccato — CP-20260902-007
+
+**Lo studio dei siti e' finito: 9 report su 9**, 2.362 righe in `competitor/Andrei Pascu/site-study/reports/`.
+Scritti oggi i tre che mancavano: `06-manuale-del-copywriter` (eBook 79 EUR), `08-apsales` (agenzia CRO),
+`09-linktree` (il bio-link vero).
+
+### 🔴 La scoperta che riguarda i nostri soldi
+**`apsales.eu` e' il concorrente diretto dell'agenzia di Digital Empire.** Non un adiacente: agenzia
+di Conversion Rate Optimization italiana, target B2B/SaaS, landing + consulenza, **niente retainer**,
+garanzia di rimedio (*"se le conversioni non aumentano rimettiamo mano alla pagina, gratis"*),
+filtro d'ingresso dichiarato (*"solo per chi investe da 5.000 a 100.000 EUR al mese in ads"*),
+tabella comparativa contro agenzia generalista / freelancer / assumere.
+
+**Il loro buco e' la nostra apertura: non pubblicano un solo risultato numerico.** Dieci loghi cliente,
+zero CVR, zero casi studio. Un solo caso studio nostro con baseline e delta ci mette sopra di loro
+sull'asse su cui **loro** hanno scelto di competere (la statistica).
+
+### Altre due cose misurate
+- **`claude-speedrun.com` e' un prodotto suo**: e' nella nav di `andrei-copy.com` e nel bio-link
+  ("Claude Speedrun 2"). Resta aperta **solo** la domanda sulle date rispetto a `ccm-premium`.
+- **L'ecosistema ha almeno 11 pagine, non 9**: lo storico del bio-link espone `outViral` e `Timer`,
+  mai catturati.
+
+### Il commit fermo da ieri e' passato
+Bloccato da **due** hook (blob pesanti + collisioni ID checkpoint + CRLF). Ma il problema vero erano
+**2.567 MB in staging**, di cui **2.407 MB di frame PNG** di Empire Studio: l'hook guarda il singolo
+file sopra 5 MB e avrebbe lasciato passare 2,4 GB in file da 2,5 MB l'uno. Frame, `.exe`, `.pdf` e `.gif`
+esclusi via `.gitignore` (restano su disco, rigenerabili). Committati **44,3 MB in 1.041 file**
+(`380ac213`), push fatto. Collisione con un'altra sessione sullo stesso ID `CP-20260902-001` risolta
+separando i due contenuti: nessuna riga persa.
+
+### Aperto per Max
+1. Date `claude-speedrun.com` vs `ccm-premium` (Wayback) prima di ogni conclusione sul `#fb4604`.
+2. Differenziazione visiva di Claude Code Mastery.
+3. Disclaimer GDPR da copiare.
+4. **NUOVO — agenzia**: decidere se mettiamo in pagina tabella comparativa, riga di qualificazione e
+   **almeno un caso studio con numeri**.
+5. **NUOVO**: catturare `outViral` e `Timer`.
+
+**RIPRESA DA**: innestare nelle skill le mosse misurate nei 9 report (`market-landing`, `market-funnel`,
+`beast-preventivi`, `empire-premium-style`, `lead-magnets`). Oggi sono documentate, non ancora operative.
+
+---
+
 ## 🗓️ 2026-09-02 — CLAUDE: TASK-KDP-PIANO-W2 CHIUSO — piano settimanale, 3 agenti, 2 comandi — CP-20260902-002
 
 Seconda task della W2, chiusa col gate. **193 test verdi** (erano 182).

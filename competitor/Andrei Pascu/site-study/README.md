@@ -14,7 +14,7 @@ Fa parte del **Reparto Competitor Research** di Digital Empire (ecosistema #1: A
 
 ---
 
-## Stato: 6 report su 9
+## Stato: 9 report su 9 ✅
 
 | # | Pagina | Altezza | Blocchi copy | Report |
 |---|--------|---------|--------------|--------|
@@ -23,12 +23,14 @@ Fa parte del **Reparto Competitor Research** di Digital Empire (ecosistema #1: A
 | 03 | [/outheadline](reports/03-outheadline.md) — 98 € | 21.119px | 241 | ✅ |
 | 04 | [/outfunnel](reports/04-outfunnel.md) | 26.993px | 163 | ✅ |
 | 05 | [/copy](reports/05-copy-mentorship.md) — 349/999 € | 26.952px | 337 | ✅ |
-| 06 | /manuale-del-copywriter | 11.067px | 139 | ⬜ **da fare** |
+| 06 | [/manuale-del-copywriter](reports/06-manuale-del-copywriter.md) — 79 € | 11.067px | 139 | ✅ |
 | 07 | [claude-speedrun.com](reports/07-claude-speedrun.md) — 249 € | 33.756px | 380 | ✅ 🔴 |
-| 08 | apsales.eu — sito agenzia | 12.565px | 168 | ⬜ **da fare** |
-| 09 | linktr.ee/andrei.bsns | 1.287px | 119 | ⬜ **da fare** |
+| 08 | [apsales.eu](reports/08-apsales.md) — **agenzia CRO** | 12.565px | 168 | ✅ 🔴 |
+| 09 | [linktr.ee/andrei.bsns](reports/09-linktree.md) — bio-link | 1.287px | 119 | ✅ |
 
-**Materiale grezzo catturato: 9 pagine su 9.** Mancano solo i report scritti per 06, 08, 09.
+**9 pagine su 9 catturate e studiate.** 371 screenshot · 1.832 blocchi di copy · 2.362 righe di report.
+
+> ⚠️ **L'ecosistema però ha almeno 11 pagine.** Lo storico del bio-link (report 09) rivela due prodotti mai catturati: **`outViral`** (terzo membro della famiglia `out*`) e **`Timer`**. Da aggiungere al prossimo giro.
 
 ---
 
@@ -77,14 +79,28 @@ Il blu `#0062ff` resta **il colore dell'azione** su tutte le pagine — e viene 
 ### 3. La lunghezza del copy è funzione del prezzo
 98 € → dimostrazione · 249 € → workflow reali · 434 € → 12.000px di biografia · 999 € → ecosistema + testimonianze video.
 
-### 4. Nessuna garanzia di rimborso, su nessuna pagina
-Sostituita dall'assistenza (*"non sei più solo"*) o da uno storico verificabile (*"5 aggiornamenti gratuiti in 4 anni"*).
+### 4. Nessuna garanzia di rimborso su nessun info-prodotto — ma sull'agenzia sì
+Sui 7 prodotti informativi: sostituita dall'assistenza (*"non sei più solo"*), da uno storico verificabile (*"5 aggiornamenti gratuiti in 4 anni"*) o **dall'anteprima gratuita del prodotto stesso** (`manuale-del-copywriter`).
+Su `apsales.eu`, invece, la garanzia esiste ed è di **rimedio, non di rimborso**: *"Se le conversioni non aumentano, rimettiamo mano alla pagina. Gratis, a condizioni chiare."*
+**Regola:** il B2B compra la garanzia di rimedio, il B2C la garanzia di rimborso — e chi vende informazione può sostituirle entrambe con un campione del prodotto.
 
 ### 5. Più la pagina è lunga, più grassetta
 Rapporto grassetto/corpo: 13% nell'hub → 52% in `/copy` → 69% in `outfunnel` → 80% in `outheadline`. Chi scorre in diagonale deve capire tutto leggendo solo i grassetti.
 
 ### 6. Incoerenza numerica diffusa
-`3700` / `3600+` / `3100` ordini · `1000+` / `1500+` / `2000+` studenti. Sei cifre per tre metriche, tra pagine dello stesso store e a volte nella stessa pagina.
+`3700` / `3600+` / `3100` ordini · `1000+` / `1500+` / `2000+` studenti · **`270 mila` (andrei-copy) contro `250.000` (apsales) follower**. **Otto cifre per quattro metriche**, tra pagine dello stesso store e a volte nella stessa pagina.
+
+### 7. La lunghezza del copy non dipende dal prezzo, ma da quanto lavoro deve fare la pagina
+Correzione alla scoperta #3, imposta dai dati: 79 € su 11.067px contro 98 € su 21.119px. Il `manuale-del-copywriter` è corto perché **a metà pagina regala un'anteprima vera del prodotto**, e da lì in poi vende quella. Se un campione fa il lavoro, la pagina si dimezza.
+
+### 8. Quando fa sul serio, abbandona Squarespace/Framer
+Due pagine su nove hanno un design system vero — `claude-speedrun.com` e `apsales.eu` — ed entrambe sono i progetti recenti. Segni riconoscibili: `oklch`, raggi coerenti (o zero raggi), poche famiglie di font, **nessun banner "stiamo aggiornando il brand"**. Le sette pagine storiche hanno 5 font, 8 raggi diversi e un avviso di cantiere fisso in basso a sinistra.
+
+### 9. `claude-speedrun.com` è un prodotto suo — misurato, non dedotto
+Il link è **nella barra di navigazione di `andrei-copy.com`** (`<a href="https://claude-speedrun.com">Claude Speedrun</a>`, presente su tutte le pagine) ed è il terzo link del suo bio-link (`Claude Speedrun 2`). Resta aperta solo la domanda sulle **date**: chi ha usato per primo `#fb4604` + Onest, lui o `ccm-premium`. Si risponde con Wayback Machine, non con il ragionamento.
+
+### 10. Il punto d'ingresso del funnel è la cosa meno curata dell'ecosistema
+Il bio-link (report 09) è un Linktree stock: 3 link, zero copy, zero raccolta email, **55 CTA su 58 che portano ad altri profili Linktree**. Contraddice la lezione che lui stesso insegna nel video 5 cat2. È la conferma pratica che quel gradino lo salta anche chi lo insegna.
 
 ---
 
