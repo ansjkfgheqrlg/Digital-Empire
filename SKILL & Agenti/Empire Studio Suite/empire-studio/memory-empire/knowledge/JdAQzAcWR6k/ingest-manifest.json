@@ -1,0 +1,102 @@
+{
+  "video_id": "JdAQzAcWR6k",
+  "title": "How to Create VIRAL Carousels in ChatGPT (No Coding)",
+  "channel": "Artem Novitckii",
+  "url": "https://www.youtube.com/watch?v=JdAQzAcWR6k",
+  "run": "max17-v01-artem",
+  "run_path": "empire-studio/runs/max17-v01-artem",
+  "category": "max17-marketing-ai-teams",
+  "duration_s": 460,
+  "duration_human": "7m40s",
+  "language": "en",
+  "format": "talking-head + screen-share ChatGPT/Pinterest/Google Docs/Canva/Publer + Excalidraw whiteboard teaser",
+  "ingested_at": "2026-09-02T12:39:44",
+  "stageC_date": "2026-09-02",
+  "frames": {
+    "total_dense": 230,
+    "interval_sec": 2.0,
+    "unique_scenes": 117,
+    "frames_read_natively": 117,
+    "all_read_native_vision": true,
+    "coverage_pct": 100,
+    "frames_skipped_below_threshold": 113,
+    "frames_unreadable": 0,
+    "no_finto_status": "PASS",
+    "note": "scene_detector.py, soglia 3.0. Ingest condotto in due sessioni per errore di rete nella prima (nessun file arrivato su disco, ma tutti i 117 frame gia' osservati in memoria) - entrambe le sessioni hanno riletto integralmente tutti i 117 frame per sicurezza (regola NO-FINTO), a blocchi di 5 Read per messaggio. Dettaglio in coverage.md."
+  },
+  "transcript": {
+    "file": "JdAQzAcWR6k.en.vtt",
+    "language": "en",
+    "kind": "auto-generated rolling captions",
+    "raw_lines": 1865,
+    "all_lines_read": true,
+    "timestamps_preserved": true,
+    "read_in_blocks": "righe 1-994 e 995-1865, 2 blocchi"
+  },
+  "knowledge_atoms": 40,
+  "atoms_by_relevance": {"alta": 9, "media": 13, "bassa": 18},
+  "atoms_by_confidence": {"osservato": 39, "inferito": 1},
+  "output_files": {
+    "video_analysis": "empire-studio/runs/max17-v01-artem/video-analysis.md",
+    "coverage": "empire-studio/runs/max17-v01-artem/coverage.md",
+    "contenuto_integrale": "memory-empire/knowledge/JdAQzAcWR6k/contenuto-integrale.md",
+    "atoms": "memory-empire/knowledge/JdAQzAcWR6k/atoms.json",
+    "ingestion_log": "memory-empire/memory/ingestions/2026-09-02-artem-novitckii-caroselli-chatgpt.md",
+    "audit_log": "memory-empire/memory/audit/2026-09-02-JdAQzAcWR6k-stage-g.md"
+  },
+  "wiki_pages_created": [
+    "second-brain-vault/wiki/sources/Source_Artem_Novitckii_Caroselli_ChatGPT.md"
+  ],
+  "wiki_pages_updated": [
+    "second-brain-vault/wiki/index.md",
+    "second-brain-vault/wiki/log.md"
+  ],
+  "key_topics": [
+    "Perche' i caroselli AI 'one-shot' falliscono: i modelli di image gen generano una sola immagine alla volta, un carosello intero in un prompt produce slide incoerenti tra loro",
+    "Il pattern 'visual anchor': la slide 1 (hook) generata bene diventa l'immagine di riferimento allegata a ogni prompt delle slide successive",
+    "The Stupid Simple Instagram Carousel System (4 step): copy 40% del tempo, hook/visual anchor 50%, slide successive 10%, Canva Magic Layers opzionale per micro-tweak",
+    "ChatGPT Project dedicato al copy ('Instagram Carousel Copy Writer') con Sources caricate, output strutturato Playbook/Tier/Slide Count/Hook A-B-C + Recommended",
+    "Due prompt master riusabili con placeholder, recuperati integralmente: 'Slide 1 Prompt' (hook/cover, 5 versioni) e 'Slide [X] Prompt' (slide successive, 3 versioni, 'use slide 1 as the visual anchor')",
+    "Ricerca del visual anchor su Pinterest (non Instagram) prima di generare: la reference puo' essere qualsiasi cosa, libro/poster/altro carosello",
+    "Blocco anti-plagio esplicito nei prompt: 'Do not copy: exact text / exact branding / exact compositions' quando si usa un riferimento di terzi",
+    "Publer Instagram Post Preview (tool gratuito, no login) come step di anteprima pre-pubblicazione",
+    "Canva Magic Layers per micro-tweak su immagini generate (mai per rigenerare interi design)",
+    "Stesso prompt stack riusato per infografiche LinkedIn, cambiando solo il topic"
+  ],
+  "numeri_reali_dichiarati": [
+    "Tempo per l'intero ciclo di prompting del carosello 'Morning Routine' (8 slide): ~10 minuti",
+    "Statistiche Instagram Insights del carosello gia' pubblicato: Interactions 12.911, Comments 6.003, Shares 1.743 (Views non leggibile con certezza, dichiarato a voce 'nearly 100,000')",
+    "Post LinkedIn di prova sociale: 1.271 reazioni, 390 commenti, 28 repost",
+    "Ripartizione tempo del metodo: copy 40%, hook/visual anchor 50%, slide successive 10%",
+    "Statistiche terze citate (non verificate da questa sessione, solo riportate dal documento fonte del video): 70.000 follower in 2 mesi, 54.000 in 1 mese, 11 milioni views/mese, 180 milioni views/30gg, $20.000+ da 6 post carosello"
+  ],
+  "tool_citati": [
+    "ChatGPT Image (generazione immagini) e 'Nana Banana'/Gemini (citata a voce come alternativa, mai mostrata dal vivo)",
+    "ChatGPT Project 'Instagram Carousel Copy Writer' con Sources slide-count.md e SKILL.md",
+    "Pinterest (ricerca visual reference)",
+    "Google Docs (contenitore dei due prompt master e di 'The Carousel Bible')",
+    "Publer (publer.com/tools/instagram-post-preview) - anteprima gratuita",
+    "Canva Magic Layers - micro-tweak su immagini generate"
+  ],
+  "avvertenza_metodologica": "Il video mostra un solo ciclo di produzione pulito (carosello Morning Routine), nessun secondo tentativo o errore corretto in diretta oltre alla scelta manuale tra N versioni per slide. Il quinto prompt del video (LinkedIn 'recreate this infographic') NON e' recuperato integralmente - solo frammenti leggibili tra motion blur e testo minuscolo, dichiarato esplicitamente come tale in ogni punto in cui compare. Le statistiche di terzi citate in 'The Carousel Bible' (tabella performance benchmarks) non sono verificate indipendentemente, solo riportate come citate dal documento fonte del video.",
+  "limiti_dichiarati_dal_video": [
+    "Nessun costo/pricing dichiarato per ChatGPT Plus/Team, Canva Pro o Publer",
+    "Nessun timer reale del rendering delle immagini ChatGPT (solo 'Thought for Xm Ys' nell'interfaccia)",
+    "File slide-count.md e SKILL.md del progetto Copy Writer mai aperti a schermo (solo nome visibile)",
+    "Nessuna generazione con Nana Banana/Gemini mostrata dal vivo, solo citata a voce",
+    "Contenuto completo delle slide 4, 6 e 7 del carosello Morning Routine mai mostrato a schermo intero"
+  ],
+  "p12_traceability": true,
+  "stages_completed": ["C-archive", "D-enrichment", "E-gate", "F-apply", "G-audit", "H-report"],
+  "enrichment_summary": {
+    "skill_valutate": 2,
+    "skill_patchate": 2,
+    "skill_non_toccate": 0,
+    "skill_non_esistenti_dichiarate": 0,
+    "patch_totali": 2,
+    "righe_aggiunte": 126,
+    "cancellazioni": 0
+  },
+  "gap_verificato": "Verificato di persona in questa sessione: carousel-empire/SKILL.md (251 righe prima della patch) genera sempre le 7 slide in un solo passaggio via generate_carousel.py con template HTML fisso - nessun concetto di generazione slide-per-slide con visual anchor. image/SKILL.md (340 righe prima della patch) menziona 'multi-image reference' come capacita' tecnica di Gemini/Flux ma non descrive esplicitamente il pattern operativo 'genera la prima immagine della serie, poi usala come reference per tutte le successive'.",
+  "processing_notes": "Pipeline Empire Studio Stage 1-5 gia' eseguita in sessione precedente (video-analysis.md, atoms.json a 40 KA, coverage.md gia' su disco, coverage 117/117 frame unici, NO-FINTO PASS). Memory Empire Stage C-H chiuso il 2026-09-02, senza nuova visione dei frame: video-analysis.md e atoms.json esistenti riusati e normalizzati/espansi in contenuto-integrale.md. Nessun commit git eseguito in questa sessione."
+}
