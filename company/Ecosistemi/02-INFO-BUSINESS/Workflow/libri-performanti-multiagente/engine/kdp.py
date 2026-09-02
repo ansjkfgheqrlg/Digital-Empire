@@ -673,6 +673,14 @@ def costruisci_parser() -> argparse.ArgumentParser:
                     help="archivia anche un pacchetto non pubblicabile (resta scritto in "
                          "pubblicazione.json)")
 
+    sc = sub.add_parser("scout",
+                        help="riempie il magazzino da solo: propone sotto-nicchie, le MISURA "
+                             "su Amazon, scrive le premesse e inserisce")
+    sc.add_argument("--quante", type=int, default=7, help="argomenti da inserire (default 7)")
+    sc.add_argument("--nicchia", default=None, help="default: la nicchia attiva del catalogo")
+    sc.add_argument("--dry-run", action="store_true", help="mostra cosa farebbe, non scrive")
+    sc.add_argument("--visibile", action="store_true", help="mostra il browser")
+
     dg = sub.add_parser("diagnosi",
                         help="referto onesto sul flusso: tempi, costi, dove si blocca, cosa e' rotto")
     dg.add_argument("--slug", default=None, help="un libro solo invece di tutti")
@@ -697,6 +705,16 @@ def costruisci_parser() -> argparse.ArgumentParser:
                     help="motivo se la nicchia si scosta da quella del catalogo")
 
     return cli
+
+
+def _cmd_scout(args) -> int:
+    """Rifornisce il magazzino da solo. Ordine di Gael: gli argomenti settimanali si
+    trovano in autonomia, non a mano."""
+    from . import scout
+    esito = scout.rifornisci(quante=args.quante, nicchia=args.nicchia,
+                             dry_run=args.dry_run, headless=not args.visibile)
+    print(esito)
+    return OK if esito.inseriti and not esito.errore else VALIDAZIONE_FALLITA
 
 
 def _cmd_diagnosi(args) -> int:
@@ -738,7 +756,8 @@ def main(argv: list[str] | None = None) -> int:
               "stato": _cmd_stato, "blocco": _cmd_blocco,
               "copy": _cmd_copy, "pacchetto": _cmd_pacchetto,
               "consegna": _cmd_consegna, "pubblicato": _cmd_pubblicato,
-              "diagnosi": _cmd_diagnosi, "auto": _cmd_auto}
+              "diagnosi": _cmd_diagnosi, "auto": _cmd_auto,
+              "scout": _cmd_scout}
     try:
         return azioni[args.comando](args)
     except KeyboardInterrupt:

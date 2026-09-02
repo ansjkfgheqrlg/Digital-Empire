@@ -259,3 +259,60 @@ def test_l_argomento_dal_magazzino_e_testo_non_un_repr(libri, monkeypatch):
     assert "A Death in the Drawer" in outline
     assert "Una pasticcera trova un corpo" in outline
     assert "Argomento(" not in outline, "e' finito il repr della dataclass nel prompt"
+
+
+# --------------------------------------------------------------------------- #
+# FIX-6 / KDP-SCOUT (2026-09-02): il magazzino si rifornisce da solo
+# --------------------------------------------------------------------------- #
+class TestScout:
+    """Ordine di Gael: 'gli argomenti settimanali li devi trovare in autonomia ogni
+    settimana'. Il punto delicato e' che i numeri devono essere MISURATI, mai inventati."""
+
+    class _Valutazione:
+        def __init__(self, keyword, punteggio):
+            self.keyword, self.punteggio = keyword, punteggio
+            self.recensioni_mediana, self.prezzo_medio = 60.0, 11.0
+            self.concorrenti_deboli, self.n_risultati = 7, 16
+
+    def _scrittore(self, keywords, idee):
+        class S(ScrittoreFinto):
+            def genera(s, prompt, etichetta=""):
+                s.prompt_ricevuti.append(prompt)
+                testo = json.dumps(keywords if "SOTTO-NICCHIA" in prompt or
+                                   "keyword di SOTTO-NICCHIA" in prompt else idee)
+                return Esito(ok=True, testo=testo, prompt=prompt, parole=50)
+        return S()
+
+    def test_scarta_le_keyword_sotto_il_punteggio_minimo(self, monkeypatch, tmp_path):
+        from engine import magazzino, niche_finder, scout
+        monkeypatch.setattr(magazzino, "MAGAZZINO_PATH", tmp_path / "m.json", raising=False)
+        monkeypatch.setattr(niche_finder, "trova_nicchie", lambda *a, **k: [
+            self._Valutazione("witch bookshop cozy", 82.0),
+            self._Valutazione("nicchia morta", 10.0),
+        ])
+        s = self._scrittore(["witch bookshop cozy", "nicchia morta"], [])
+        e = scout.rifornisci(quante=5, nicchia="witch bookshop cozy fantasy",
+                             dry_run=True, scrittore=s)
+        assert e.keyword_promosse == 1, "la nicchia a 10/100 non deve passare"
+        assert any("sotto il minimo" in x for x in e.scartati)
+
+    def test_i_dati_amazon_sono_quelli_MISURATI_e_portano_la_data(self, monkeypatch, tmp_path):
+        from engine import magazzino, niche_finder, scout
+        monkeypatch.setattr(magazzino, "MAGAZZINO_PATH", tmp_path / "m.json", raising=False)
+        monkeypatch.setattr(niche_finder, "trova_nicchie", lambda *a, **k: [
+            self._Valutazione("witch bookshop cozy", 82.0)])
+        idee = [{"keyword": "witch bookshop cozy", "titolo_lavoro": "The Ledger",
+                 "premessa": "Una witch eredita una bookshop e trova un mystery."}]
+        s = self._scrittore(["witch bookshop cozy"], idee)
+        e = scout.rifornisci(quante=5, dry_run=True, nicchia="witch bookshop cozy fantasy",
+                             scrittore=s)
+        assert e.inseriti, "nessun argomento prodotto"
+        dati = e.inseriti[0].dati_amazon
+        assert dati["punteggio"] == 82.0, "il punteggio non e' quello misurato"
+        assert dati["misurato_il"], "manca la data: i numeri vecchi hanno gia' fatto danni"
+
+    def test_senza_nicchia_attiva_lo_dice_invece_di_inventarla(self, monkeypatch, tmp_path):
+        from engine import nicchia_attiva, scout
+        monkeypatch.setattr(nicchia_attiva, "carica", lambda: None)
+        e = scout.rifornisci(scrittore=ScrittoreFinto())
+        assert not e.inseriti and "nessuna nicchia attiva" in e.errore

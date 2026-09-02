@@ -48,6 +48,15 @@ python -m engine.kdp auto --budget 5 --modello claude-sonnet-5 --per-blocco 4
 #   da' claude-sonnet-4-6 (verificato 2026-08-30): e' il bug che uccise il tentativo
 #   del 13 agosto, ed e' ancora vivo negli alias.
 
+# --- IL MAGAZZINO SI RIFORNISCE DA SOLO (2026-09-02) -------------------------
+python -m engine.kdp scout                 # 7 argomenti nuovi nella nicchia attiva
+python -m engine.kdp scout --quante 10 --dry-run
+#   Propone sotto-nicchie, le MISURA su Amazon davvero, scarta quelle sotto 60/100,
+#   scrive titolo di lavoro + premessa e inserisce passando dal validatore.
+#   I dati_amazon di ogni argomento sono i numeri REALI della sua sotto-nicchia,
+#   con la data di misura: mai ereditati, mai stimati. Costo ~0,20 $ a run.
+#   Da lanciare una volta a settimana, prima che il magazzino si svuoti.
+
 # --- IL REFERTO: come sta il flusso ------------------------------------------
 python -m engine.kdp diagnosi            # tempi reali, costi, dove si blocca, cosa e' rotto
 python -m engine.kdp diagnosi --json     # per un altro programma

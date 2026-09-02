@@ -1,3 +1,27 @@
+## 🧭 2026-09-02 — CLAUDE: FIX-6 chiuso — il magazzino ora si rifornisce DA SOLO (`kdp scout`)
+
+Chiuso l'ultimo fix che potevo chiudere io. **5 su 6**; resta aperto solo **FIX-1**, che e'
+sulle mani di Gael (upload KDP + copertina).
+
+**Ordine di Gael**: *"gli argomenti settimanali li devi trovare in autonomia ogni settimana"*.
+Quindi non un riempimento a mano ma un comando: **`python -m engine.kdp scout`**.
+Propone sotto-nicchie dentro la nicchia attiva, le **misura su Amazon davvero**, scarta
+quelle sotto 60/100, scrive titolo e premessa, e inserisce passando dal validatore del
+magazzino (che pretende `dati_amazon` non vuoto e una premessa che sia una storia).
+
+Run reale: **10 keyword misurate, 8 promosse, 8 argomenti inseriti, 0,19 $**. Il magazzino
+passa da **0 a 8 argomenti liberi** (gate: >=7), tutti con punteggio reale **e data di
+misura** — perche' il 1 settembre una decisione di catalogo era stata presa su numeri di 19
+giorni prima, e una nicchia nel frattempo era passata da 83,1 a 72,9.
+
+I migliori trovati: `paranormal bookshop cozy mystery` 83,3 · `cottage witch fantasy book`
+83,1 · `found family witch coven story` 80,6. **182 test verdi.**
+
+**RIPRESA DA**: (1) **FIX-1, serve Gael**: 3 libri pronti all'upload, il quarto aspetta il
+`.png`; (2) task 2 — TASK-KDP-PIANO-W2, via dato da Gael.
+
+---
+
 ## 🔧 2026-09-01/02 — CLAUDE: TASK-KDP-FIX-W2 parziale — 4 fix su 6, FIX-1 bloccato dall'esterno — CP-20260902-001
 
 Prima task della W2 (ordine di Max: prima di tutto il resto). **179 test verdi**, erano 135.
