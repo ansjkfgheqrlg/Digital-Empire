@@ -1,0 +1,95 @@
+{
+  "video_id": "8NSyI-npJCU",
+  "title": "The NEW Agentic OS standard for Claude 5 Models is here (Full Breakdown)",
+  "channel": "Jay E | RoboNuggets",
+  "url": "https://www.youtube.com/watch?v=8NSyI-npJCU",
+  "run": "max17-v05-jaye-agenticos",
+  "run_path": "empire-studio/runs/max17-v05-jaye-agenticos",
+  "category": "max17-claude-code-agentic-os",
+  "duration_s": 1298,
+  "duration_human": "21m38s",
+  "language": "en",
+  "format": "talking-head + custom dashboard screen-share (\"Rubric Agentic OS\") + Claude Code native UI + Excalidraw diagrams + PDF/HTML artifacts",
+  "ingested_at": "2026-09-02T12:48:58",
+  "stageC_date": "2026-09-02",
+  "frames": {
+    "total_dense": 649,
+    "interval_sec": 2.0,
+    "unique_scenes": 181,
+    "frames_read_natively": 181,
+    "all_read_native_vision": true,
+    "coverage_pct": 100,
+    "frames_skipped_below_threshold": 468,
+    "frames_unreadable": 0,
+    "no_finto_status": "PASS",
+    "note": "scene detector soglia 3.0. 181/181 frame unici letti in ordine cronologico a blocchi di 5, incrociati con .en.vtt e con i capitoli di ingest.json. Dettaglio in runs/max17-v05-jaye-agenticos/coverage.md."
+  },
+  "transcript": {
+    "file": "8NSyI-npJCU.en.vtt",
+    "language": "en",
+    "kind": "auto-generated captions",
+    "note": "Letti per intero 0:00-2:37 per calibrare tono/contesto; il resto del parlato ricostruito dal testo on-screen (piu' affidabile dei sottotitoli auto-generati per nomi propri e comandi)."
+  },
+  "knowledge_atoms": 70,
+  "atoms_by_natura": {"ufficiale": 10, "proprietario": 56, "riferimento-esterno": 4},
+  "atoms_by_confidence": {"osservato": 62, "inferito": 8},
+  "output_files": {
+    "video_analysis": "empire-studio/runs/max17-v05-jaye-agenticos/video-analysis.md",
+    "coverage": "empire-studio/runs/max17-v05-jaye-agenticos/coverage.md",
+    "contenuto_integrale": "memory-empire/knowledge/8NSyI-npJCU/contenuto-integrale.md",
+    "atoms": "memory-empire/knowledge/8NSyI-npJCU/atoms.json",
+    "ingestion_log": "memory-empire/memory/ingestions/2026-09-02-jay-e-agentic-os-claude5.md",
+    "audit_log": "memory-empire/memory/audit/2026-09-02-8NSyI-npJCU-stage-g.md"
+  },
+  "wiki_pages_created": [
+    "second-brain-vault/wiki/sources/Source_Jay_E_Agentic_OS_Claude5.md"
+  ],
+  "wiki_pages_updated": [
+    "second-brain-vault/wiki/index.md",
+    "second-brain-vault/wiki/log.md"
+  ],
+  "AVVERTENZA_FONTE_PARZIALMENTE_PROMOZIONALE": "Questo video e' in parte materiale promozionale: e' un teaser/derivato del corso a pagamento 'The Claude Living Masterclass' venduto nella community Skool 'RoboNuggets' e dell'agenzia di consulenza 'RoboLabs' dello stesso autore. L'UNICO contenuto con fonte ufficiale esterna verificabile e' un post su X di Thariq (@trq212, presentato come 'Anthropic Lead Engineer'), riassunto nel video in 6 regole 'Then->Now' di context engineering -- il post originale completo non e' mai mostrato, solo un riassunto generato dalla routine 'newsletter' dell'autore. Tutto il resto (framework ARMS, piramide, schema Level 1/2/3, dashboard 'Rubric Agentic OS', 'Rubric Second Brain', agente cloud 'Hermes', esempi cliente Stropro/Beetogreen, claim numerici come '99% delle persone' o '4.3M views') e' costruzione proprietaria dell'autore, presentata nel video come 'standard' ma senza alcuna fonte Anthropic verificabile. Vedi contenuto-integrale.md per la separazione integrale in due parti (ufficiale vs proprietario) e atoms.json campo 'natura' per la classificazione atomo-per-atomo.",
+  "key_topics": [
+    "Le 6 regole Then->Now di context engineering attribuite a Thariq/Anthropic (unico contenuto a fonte ufficiale verificabile)",
+    "Framework ARMS (Applications, Routines, Memory, Skills) - costruzione didattica proprietaria di Jay E",
+    "Schema Level 1/2/3 di maturita' progressiva per ciascun pilastro (euristica di Jay, non standard Anthropic)",
+    "Soglia esplicita '150+ righe = skill grassa da spezzare in router + file dedicati' (regola pratica di Jay, riusata come base per BACKLOG B-039 di Digital Empire)",
+    "Funzioni native di Claude Code confermate a schermo: Skills Directory, /skill-creator, modalita' headless claude -p, Routines native, Settings->Customize, selettore modello Auto/Fable/Extra",
+    "Dashboard custom 'Rubric Agentic OS' e 'Rubric Second Brain' (software costruito da Jay con Claude Code, non prodotto Anthropic)",
+    "Agente cloud 'Hermes' always-on (prodotto open-source promosso nel corso, claim 'most powerful' non verificato)",
+    "Esempi cliente commerciali: Stropro Agentic OS (servizi finanziari), Beetogreen Agentic OS (flotta e-bike)"
+  ],
+  "numeri_reali_dichiarati": [
+    "649 frame densi estratti, 181 frame unici, 468 duplicati esclusi",
+    "Claim riportato (non verificato indipendentemente): articolo di Thariq a 4.3 milioni di visualizzazioni, 80% del system prompt di Claude Code tagliato",
+    "Community RoboNuggets: 1.2k membri, 51 online, 4 admin",
+    "YouTube Studio widget dashboard: 170.000 iscritti, 8.5M visualizzazioni lifetime, 5 longform questo mese",
+    "Repository GitHub reali confermati: hetpatel-11/Adobe_Premiere_Pro_MCP (462 stelle), mvanhorn/cli-printing-press (4.5k stelle)"
+  ],
+  "tool_citati": [
+    "Claude Code (dashboard nativa, Skills Directory, Routines, Settings, CLI headless claude -p)",
+    "Syncthing (syncthing.net) - tool open-source reale di sync file, non Anthropic/RoboNuggets",
+    "Excalidraw - libreria diagrammi",
+    "Hermes - agente cloud open-source promosso nel corso, setup/hosting/costi mai spiegati a schermo",
+    "GitHub (repo MCP reali mostrati: hetpatel-11/Adobe_Premiere_Pro_MCP, mvanhorn/cli-printing-press)"
+  ],
+  "limiti_dichiarati_dal_video": [
+    "Il post originale completo di Thariq non e' mai mostrato per intero, solo il titolo e un riassunto generato da Jay",
+    "APPS Level 1 non e' mai etichettato esplicitamente a schermo (a differenza degli altri 3 pilastri)",
+    "Il CLAUDE.md master router di Jay non e' mai aperto/mostrato per intero",
+    "Il codice sorgente della dashboard 'Rubric Agentic OS' non e' mostrato, solo il risultato visuale",
+    "Setup tecnico di Hermes (installazione, hosting, costi) non spiegato",
+    "Nessuna menzione di costi/pricing dei modelli/effort level usati nella dashboard",
+    "Metriche dichiarate (4.3M views, 80% system prompt tagliato) non verificabili indipendentemente da questo video"
+  ],
+  "segmento_promozionale": "Intro con credenziali/agenzia RoboLabs (0:30-0:44), struttura del corso a pagamento 'The Claude Living Masterclass' (3:00-3:26) inclusa la sezione commerciale 'Agents-as-a-Service', modulo community classroom con 'Hermes Agent Masterclass' (16:32-17:02). L'intero framework ARMS presentato nel corpo del video (3:54-21:06) e' materiale dello stesso corso.",
+  "p12_traceability": true,
+  "stages_completed": ["C-archive", "D-enrichment", "E-gate", "F-apply", "G-audit", "H-report"],
+  "enrichment_summary": {
+    "patch_applicate": 2,
+    "patch_1": "CLAUDE.md radice DE: aggiunta regola 'puntatore aggiornato nello stesso turno' (2-4 righe, solo aggiunta, line endings preservati)",
+    "patch_2": "company/Memory/ROUTINES.md creato ex-novo: indice delle automazioni schedulate realmente trovate su disco in DE",
+    "skill_non_toccate_per_direttiva": "115 SKILL.md sopra le 150 righe - refactoring NON eseguito in questo ciclo, solo registrato in BACKLOG.md come B-039 (da approvare da Max, tocca 115 file)"
+  },
+  "processing_notes": "video-analysis.md (62KB), atoms.json (70 atomi) e coverage.md (181/181 frame unici) gia' su disco da sessione precedente, riusati senza rivedere i frame. Stage C-H eseguito in questa sessione: archivio integrale in due parti nette (ufficiale/proprietario), atoms.json arricchito con campo 'natura' (ufficiale/proprietario/riferimento-esterno), enrichment limitato a 2 patch piccole approvate dal task, nessuna modifica a skill/agenti, nessun commit git."
+}

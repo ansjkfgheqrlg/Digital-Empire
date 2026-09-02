@@ -1,0 +1,101 @@
+{
+  "video_id": "T7PPX5M6Puo",
+  "title": "Claude Code + Codex: Il Setup di cui NESSUNO Parla",
+  "channel": "Riccardo Belli Contarini (Martes AI)",
+  "url": "https://www.youtube.com/watch?v=T7PPX5M6Puo",
+  "run": "max17-v06-belli-codex",
+  "run_path": "empire-studio/runs/max17-v06-belli-codex",
+  "category": "max17-cross-model-review",
+  "duration_s": 1852,
+  "duration_human": "30m52s",
+  "language": "it",
+  "format": "talking-head + lavagna scritta a mano (whiteboard) + screen-share VS Code/terminale",
+  "ingested_at": "2026-09-02",
+  "stageC_date": "2026-09-02",
+  "frames": {
+    "total_dense": 926,
+    "interval_sec": 2.0,
+    "unique_scenes": 197,
+    "frames_read_natively": 197,
+    "all_read_native_vision": true,
+    "coverage_pct": 100,
+    "frames_skipped_below_threshold": 729,
+    "frames_unreadable": 0,
+    "no_finto_status": "PASS",
+    "note": "scene_detector.py, soglia 3.0, riduzione 78.7%. Coverage certificata in sessione precedente (video-analysis.md, atoms.json, coverage.md gia' su disco). Nessuna nuova visione dei frame in questa sessione di chiusura ciclo."
+  },
+  "transcript": {
+    "file": "T7PPX5M6Puo.it.vtt",
+    "language": "it",
+    "kind": "auto-generated rolling captions",
+    "all_lines_read": true,
+    "timestamps_preserved": true,
+    "note": "850 segmenti puliti dopo deduplicazione, letta integralmente in sessione precedente (vedi coverage.md)"
+  },
+  "knowledge_atoms": 70,
+  "atoms_by_relevance": {"alta": 31, "media": 27, "bassa": 12},
+  "atoms_by_confidence": {"osservato": 69, "inferito": 1},
+  "output_files": {
+    "video_analysis": "empire-studio/runs/max17-v06-belli-codex/video-analysis.md",
+    "coverage": "empire-studio/runs/max17-v06-belli-codex/coverage.md",
+    "atoms_originali": "empire-studio/runs/max17-v06-belli-codex/atoms.json",
+    "contenuto_integrale": "memory-empire/knowledge/T7PPX5M6Puo/contenuto-integrale.md",
+    "atoms_normalizzati": "memory-empire/knowledge/T7PPX5M6Puo/atoms.json",
+    "adr_proposta": "company/Memory/decisions/ADR-PROPOSTA-cross-model-review.md",
+    "ingestion_log": "memory-empire/memory/ingestions/2026-09-02-riccardo-belli-claude-codex.md",
+    "audit_log": "memory-empire/memory/audit/2026-09-02-T7PPX5M6Puo-stage-g.md"
+  },
+  "wiki_pages_created": [
+    "second-brain-vault/wiki/sources/Source_Riccardo_Belli_Claude_Codex_Setup.md"
+  ],
+  "wiki_pages_updated": [
+    "second-brain-vault/wiki/index.md",
+    "second-brain-vault/wiki/log.md"
+  ],
+  "key_topics": [
+    "Principio cardine 'CHI COSTRUISCE ≠ CHI GIUDICA' — piano scritto da Claude, contestato da Codex (adversarial review), ciclo fino a convergenza, sempre umano nel mezzo",
+    "Plugin ufficiale OpenAI 'Codex Plugin' dentro Claude Code: 5 comandi (/codex:review, /codex:adversarial-review, /codex:rescue, /codex:transfer, /codex:status|result)",
+    "Due pattern d'uso: Pattern 1 'controllare l'app prima di mandarla online' (review/rescue), Pattern 2 'il piano prima di scrivere una riga' (adversarial-review)",
+    "3 casi reali su 3: Claude Code aveva dichiarato 'pronto per la produzione' 2 app (MaReply, form candidature) — Codex ha trovato falle Alte in entrambe; sul piano Bitly, Claude stesso conferma 4/5 obiezioni Codex fondate",
+    "Costo combo: $100 Claude Max + $20 Codex/ChatGPT = $120/mese ('venti dollari in più, non il doppio')",
+    "VERDETTO: il setup completo non serve a DE (ADR-006 + sentinel esistenti coprono gia' il principio) — il gap reale e unico e' che i giudici di DE oggi condividono la famiglia di modello di chi produce"
+  ],
+  "numeri_reali_dichiarati": [
+    "MaReply: 0 falle critiche, 2 alte, 2 medie, 2 basse trovate da Codex su app gia' dichiarata pronta da Claude",
+    "Form candidature: 4 findings alti, 10 medi, 1 info trovati da Codex",
+    "Piano Bitly: 1 critical, 2 high, 2 medium — 4/5 confermate fondate da Claude stesso",
+    "Costi: $200/mese solo Claude o solo Codex vs $120/mese combo (Claude Max $100 + Codex Plus $20)",
+    "Requisito minimo Claude per la combo: piano Pro $20/mese; Codex disponibile anche su ChatGPT Free (limiti stretti)",
+    "Martes AI: 65+ aziende clienti, 75+ soluzioni AI in produzione (agosto 2026)"
+  ],
+  "tool_citati": [
+    "Codex Plugin (openai/codex-plugin-cc) — repo GitHub ufficiale OpenAI, licenza Apache-2.0",
+    "Codex CLI (codex-cli@0.148.0 osservato)",
+    "VS Code + estensione Claude Code",
+    "Cloudflare Workers + D1 (progetto Bitly-clone)",
+    "Airtable come CRM (form candidature)",
+    "Instagram API (MaReply, clone ManyChat)"
+  ],
+  "avvertenza_metodologica": "Tutte le prove sono aneddotiche/narrative su 3 progetti reali di una sola agenzia (Martes AI), nessun benchmark quantitativo aggregato, nessun tasso di falsi positivi su campione piu' ampio. /codex:review non viene mai eseguito dal vivo. Nessuna gestione del disaccordo mostrata oltre il caso Bitly (4/5 accettate). Solo ambiente Mac + VS Code dimostrato.",
+  "limiti_dichiarati_dal_video": [
+    "Nessun costo per singola esecuzione, solo costo mensile flat dei piani",
+    "I 7 agenti e 4 hook installati dal plugin non vengono mai elencati individualmente",
+    "--enable-review-gate menzionato una sola volta, mai attivato ne' spiegato",
+    "security-review nativa di Claude Code citata a voce ma output non ripreso a schermo"
+  ],
+  "segmento_promozionale": "Presentazione agenzia Martes AI (0:00-1:16) e CTA finale (27:44-30:45) verso coaching/formazione aziendale e prenotazione call. Contenuto misto educativo/promozionale, dichiarato.",
+  "p12_traceability": true,
+  "stages_completed": ["C-archive", "D-enrichment-proposal-only", "E-gate", "F-no-implementation", "G-audit", "H-report"],
+  "enrichment_summary": {
+    "skill_valutate": 0,
+    "skill_patchate": 0,
+    "agenti_creati": 0,
+    "tool_installati": 0,
+    "adr_attivi_modificati": 0,
+    "adr_proposte_create": 1,
+    "backlog_voci_create": 1,
+    "nota": "Il verdetto del video-analysis.md preesistente conclude che il setup completo non serve a DE: nessuna skill patchata, nessun agente creato, nessun tool installato/configurato. Unico artefatto di enrichment: una PROPOSTA di ADR (non attiva) per audit cross-model in fase GATE su deliverable ad alto rischio."
+  },
+  "processing_notes": "Pipeline Empire Studio Stage 1-5 gia' eseguita in sessione precedente (video-analysis.md, atoms.json, coverage.md gia' su disco, coverage 197/197 frame unici, NO-FINTO PASS). Memory Empire Stage C-H chiuso il 2026-09-02, senza nuova visione dei frame: video-analysis.md e atoms.json esistenti riusati e normalizzati/espansi. Nessun commit git eseguito in questa sessione. Nessuno strumento installato o configurato, nessun agente creato, nessuna skill modificata, nessun ADR attivo toccato — solo una proposta di ADR scritta per approvazione di Max.",
+  "gap_verificato": "Verificato: prima di questa sessione non esisteva alcuna cartella memory-empire/knowledge/T7PPX5M6Puo/, nessuna pagina wiki, nessun log di ingestione. Per le regole di Empire Studio il video non era 'fatto' nonostante l'analisi visiva fosse gia' completa."
+}

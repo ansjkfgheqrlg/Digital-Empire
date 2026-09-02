@@ -545,6 +545,11 @@ Sto facendo:  <una riga>
 Farò:         <una riga>
 ```
 
+- **Va IN CIMA al messaggio. Sempre.** Prima dell'analisi, prima dei risultati, prima di
+  qualunque cosa. Un battito in fondo al messaggio non è un battito: è una nota a piè di
+  pagina, e Max deve scorrere per trovarlo. **Vale soprattutto quando hai qualcosa di
+  bello da raccontare** — è lì che la tentazione di metterlo dopo è più forte, ed è lì che
+  la regola si rompe. Il servizio viene prima dello spettacolo.
 - **La percentuale è obbligatoria**: è quello che Max legge per primo, e gli ridà il controllo
   senza doverlo ricostruire.
 - **Tre righe. Non quattro.** Il dettaglio resta nei file, non in chat.

@@ -1,5 +1,45 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-02 (EMPIRE STUDIO -- chiusura ciclo JdAQzAcWR6k, batch max17 1/8, con applicazione consigli)
+- INGEST (Empire Studio + Memory Empire): **batch max17, video 1/8** -- `JdAQzAcWR6k`
+  "How to Create VIRAL Carousels in ChatGPT (No Coding)" (Artem Novitckii, 7m40s, EN),
+  **117/117 frame unici letti -- coverage 100%**, 40 KA (9 alta rilevanza DE), NO-FINTO PASS.
+  Chiusura di un gap a valle: pipeline Empire Studio gia' fatta in sessione precedente (i 4 prompt master
+  gia' trascritti in `video-analysis.md`), layer Memory Empire, wiki **e patch alle skill mai eseguiti**
+  -- stesso pattern di `yJOCyyP77bA`/`E8Ax92etrMc`/`-gq8euRvNR4`, con l'aggravante che qui i consigli
+  dell'analisi non erano mai stati applicati. Nessuna nuova visione dei frame.
+  -> `memory-empire/knowledge/JdAQzAcWR6k/` (contenuto-integrale mai riassunto, 16 parti + atoms + manifest
+  + enrichment-report), **1 pagina wiki creata** (`sources/Source_Artem_Novitckii_Caroselli_ChatGPT.md`),
+  index.md aggiornato (nuova sezione "Social Content & Caroselli").
+- CONTENUTO: perche' i caroselli AI "one-shot" falliscono -- un modello di image gen genera una sola
+  immagine alla volta, un carosello intero in un prompt produce slide incoerenti tra loro. Soluzione:
+  **visual anchor** (la slide 1/hook curata bene diventa immagine di riferimento per ogni slide
+  successiva, 50% del tempo del ciclo) + generazione **slide-per-slide** invece che tutto in un colpo.
+  I due prompt master ("Slide 1 Prompt", 5 versioni; "Slide [X] Prompt", 3 versioni, "use slide 1 as
+  the visual anchor") recuperati parola per parola con placeholder riusabili. Il quinto prompt del video
+  (LinkedIn "recreate this infographic") **non integrale** -- solo frammenti, dichiarato esplicitamente.
+- ENRICHMENT: **2/2 artefatti richiesti dal brief valutati ed entrambi patchati, +126 / -0.**
+  `carousel-empire/SKILL.md` (+120): nuova sezione "Modalita' Alternativa -- Stile AI-Generativo con
+  Visual Anchor" dopo lo Step 7 "Report Finale" -- principio slide-per-slide, definizione di visual
+  anchor, i due prompt master integrali, regole operative (pick-best-of-N, blocco anti-plagio "Do not
+  copy"). Il template HTML/Playwright a schema fisso **resta il default per il 90% dei casi** -- ramo
+  esplicitamente alternativo, non sostituzione.
+  `image/SKILL.md` (+6): nuova sottosezione "Visual Anchor -- Style Consistency Across a Series" --
+  la skill citava gia' "multi-image reference" come capacita' tecnica di Gemini/Flux ma mai come tecnica
+  operativa nominata esplicitamente (prima immagine della serie come reference per le successive).
+  Line endings verificati: entrambi i file erano LF puro prima e dopo, nessuna conversione accidentale.
+- CONFERMA INDIPENDENTE: **ArenaAI**, il motore caroselli Playwright gia' in produzione su
+  @digitalempireagency.e (vedi `concepts/Reparto_Produzione_Digital_Empire.md`), usa gia' la stessa
+  catena "slide N ancorata alla slide N-1 via allegato immagine precedente" -- il pattern non era ignoto
+  a DE, solo non documentato dentro `carousel-empire`. Aggiunto come cross-link nella pagina wiki.
+- NON costruito, dichiarato: skill `carousel-visual-scout`, agente/sotto-fase `carousel-copy-strategist`,
+  mockup feed IG stile Publer nello Step 5 di `carousel-empire` -- proposte reali del video-analysis.md,
+  fuori dal perimetro esplicito del brief (limitato a `carousel-empire` e `image`, ai due concetti
+  slide-per-slide e visual anchor). Non registrate in BACKLOG.md in questa sessione, segnalate in
+  `enrichment-report.md` e nel log di ingestione perche' restino visibili.
+- DEBITO APERTO: nessun checkpoint in `company/Memory/`, `STATO-EMPIRE.md` non aggiornato (fuori dal
+  perimetro esplicito di questo brief) e **nessun commit git**, come da vincolo di sessione.
+
 ## 2026-09-02 (STUDIO SITI ANDREI PASCU — completato 9/9)
 - COMPLETAMENTO: scritti i 3 report mancanti dello studio forense dei siti di Andrei Pascu.
   `competitor/Andrei Pascu/site-study/reports/` passa da 6 a **9 report su 9** (2.362 righe totali).

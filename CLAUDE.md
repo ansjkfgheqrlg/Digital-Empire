@@ -147,3 +147,7 @@ Rules:
 - If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
 - Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
 - After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+
+## REGOLA PUNTATORI: MAI STALE
+
+Quando un file viene spostato o rinominato, il puntatore che lo indica (qui, in company/Memory/INDEX.md, nella wiki) va aggiornato **nello stesso turno** in cui avviene lo spostamento, mai rimandato: un puntatore vecchio e' peggio di nessun puntatore, perche' manda a sbattere invece di far cercare. (fonte: 8NSyI-npJCU, 13:30)

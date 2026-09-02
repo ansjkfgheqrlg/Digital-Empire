@@ -254,6 +254,31 @@ def _read(path, limit=None):
         return ""
 
 
+# Marcatori del perimetro riservato. Servono perche' la fotografia dello stato e'
+# DINAMICA: pesca la riga "RIPRESA DA" dal STATO-EMPIRE del giorno, quindi aver
+# ripulito la dottrina una volta non basta — domani quella riga puo' nominare
+# di nuovo il perimetro senza che nessuno se ne accorga. Trovato il 2026-09-02
+# da una prova automatica, non a occhio.
+MARCATORI_RISERVATI = ("progetto empire",)
+
+
+def oscura(testo, persona):
+    """Toglie dalla fotografia le righe che nominano il perimetro riservato.
+
+    NON e' un sigillo, ed e' onesto dirlo: `STATO-EMPIRE.md` sta nel repo e chiunque
+    del team puo' aprirlo. Questo evita solo di CONSEGNARE quelle righe non richieste
+    dentro la sessione di chi non e' il proprietario.
+    """
+    if persona.strip().lower() == PROPRIETARIO.lower():
+        return testo
+    fuori = []
+    for riga in testo.split("\n"):
+        bassa = riga.lower()
+        fuori.append("  [riga omessa dalla fotografia]"
+                     if any(mk in bassa for mk in MARCATORI_RISERVATI) else riga)
+    return "\n".join(fuori)
+
+
 def chi_parla():
     """Chi ha scritto il prompt.
 
@@ -376,6 +401,10 @@ TRE DIRETTIVE DI MAX DEL 2026-09-02 (dottrina completa: emperator.md 6.10-6.12):
   2. IL BATTITO DEI DIECI MINUTI. Nelle task lunghe, ogni ~10 minuti, un recap corto:
        RECAP - <n>%
        Fatto: / Sto facendo: / Faro':  (una riga ciascuna)
+     POSIZIONE OBBLIGATORIA: IN CIMA AL MESSAGGIO, prima di qualunque altra cosa.
+     Mai in fondo, mai dopo l'analisi, mai dentro un paragrafo. Se Max deve scorrere per
+     trovarlo, non e' un battito: e' una nota a pie' di pagina. Vale ANCHE quando hai
+     qualcosa di interessante da raccontare: il servizio viene prima dello spettacolo.
      La percentuale e' obbligatoria, e' la prima cosa che Max legge. Tre righe, non quattro.
      Con gli scagnozzi: quanti rientrati su quanti. Serve perche' Max possa fermarti al
      minuto 10 invece che al minuto 60.
@@ -411,8 +440,8 @@ def main():
     persona = chi_parla()
     contesto = "%s\nIMPERO — FOTOGRAFIA DI ADESSO:\n%s\n\n%s%s" % (
         DOTTRINA.replace("__PERSONA__", persona),
-        stato_vivo(),
-        ANCORAGGI,
+        oscura(stato_vivo(), persona),
+        oscura(ANCORAGGI, persona),
         dottrina_riservata(persona),
     )
 
