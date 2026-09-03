@@ -266,7 +266,7 @@ TRE DIRETTIVE DI MAX DEL 2026-09-02 (dottrina completa: emperator.md 6.10-6.12):
 """
 
 
-def stato_libro(persona):
+def stato_libro(persona, sessione):
     """Dice se il hook di apertura ha davvero caricato il libro su questa macchina.
 
     Il file-spia lo scrive `emperator_boot.py` nella cartella temporanea di sistema —
@@ -275,7 +275,7 @@ def stato_libro(persona):
     """
     try:
         import emperator_boot
-        with io.open(emperator_boot.marcatore_path(), encoding="utf-8") as f:
+        with io.open(emperator_boot.marcatore_path(sessione), encoding="utf-8") as f:
             d = json.load(f)
         if not d.get("caratteri"):
             raise ValueError("libro vuoto")
@@ -285,7 +285,7 @@ def stato_libro(persona):
         n = int(d.get("sveglie", 0)) + 1
         d["sveglie"] = n
         try:
-            with io.open(emperator_boot.marcatore_path(), "w", encoding="utf-8") as f:
+            with io.open(emperator_boot.marcatore_path(sessione), "w", encoding="utf-8") as f:
                 json.dump(d, f)
         except Exception:
             pass
@@ -322,7 +322,7 @@ def main():
     persona = chi_parla()
     contesto = "%s\nIMPERO — FOTOGRAFIA DI ADESSO:\n%s\n" % (
         SVEGLIA.replace("__PERSONA__", persona)
-               .replace("__STATO_LIBRO__", stato_libro(persona)),
+               .replace("__STATO_LIBRO__", stato_libro(persona, dati.get("session_id") or "")),
         oscura(stato_vivo(), persona),
     )
 

@@ -39,22 +39,30 @@ import emperator_hook as eh  # noqa: E402  (helpers condivisi: una sola implemen
 LIBRO = os.path.join(eh.ROOT, ".claude", "agents", "emperator.md")
 
 
-def marcatore_path():
-    """File-spia che dice all'hook per messaggio se il libro e' stato caricato.
+def marcatore_path(sessione=""):
+    """File-spia che dice all'hook per messaggio se IL LIBRO E' ARRIVATO IN QUESTA SESSIONE.
 
     Vive nella cartella temporanea di sistema, MAI nel repo: non deve sporcare git
     ne' finire in un push (ADR-013, e la ferita di B-008).
+
+    LA CHIAVE DI SESSIONE E' OBBLIGATORIA, ed e' una correzione pagata: nella prima
+    versione (2026-09-03) il file era uno solo per repo. Risultato misurato lo stesso
+    giorno: una chat aperta PRIMA che il caricamento esistesse si vedeva scritto
+    "dottrina caricata" perche' un'altra sessione (o una prova) aveva scritto il file.
+    Un successo dichiarato e non verificato — esattamente cio' che la Legge Suprema
+    vieta. Adesso ogni sessione ha il suo file e nessuno risponde per gli altri.
     """
     import hashlib
     import tempfile
     firma = hashlib.md5(eh.ROOT.encode("utf-8", "replace")).hexdigest()[:10]
-    return os.path.join(tempfile.gettempdir(), "emperator-boot-%s.json" % firma)
+    sess = "".join(c for c in str(sessione) if c.isalnum() or c in "-_")[:64] or "senza-sessione"
+    return os.path.join(tempfile.gettempdir(), "emperator-boot-%s-%s.json" % (firma, sess))
 
 
-def scrivi_marcatore(caratteri):
+def scrivi_marcatore(caratteri, sessione=""):
     try:
         import datetime
-        with io.open(marcatore_path(), "w", encoding="utf-8") as f:
+        with io.open(marcatore_path(sessione), "w", encoding="utf-8") as f:
             json.dump({
                 "quando": datetime.datetime.now().isoformat(timespec="seconds"),
                 "caratteri": caratteri,
@@ -112,6 +120,16 @@ e resta valida per tutta la sessione.
 
 
 def main():
+    # Claude Code passa session_id nel payload del hook. Senza, si ricade su una
+    # chiave generica: meglio un segnale grezzo che nessun segnale.
+    sessione = ""
+    try:
+        grezzo = sys.stdin.buffer.read().decode("utf-8", "replace")
+        if grezzo:
+            sessione = json.loads(grezzo).get("session_id") or ""
+    except Exception:
+        sessione = ""
+
     persona = eh.chi_parla()
     libro = leggi_libro()
 
@@ -125,7 +143,7 @@ def main():
             "fingere di avere la dottrina: senza quel file sei una sintesi di te stesso.\n"
             % (LIBRO, persona)
         )
-        scrivi_marcatore(0)
+        scrivi_marcatore(0, sessione)
     else:
         contesto = "%s%s%s\n%s\n%s" % (
             TESTATA.replace("__PERSONA__", persona),
@@ -134,7 +152,7 @@ def main():
             eh.oscura(eh.ANCORAGGI, persona),
             eh.dottrina_riservata(persona).strip(),
         )
-        scrivi_marcatore(len(libro))
+        scrivi_marcatore(len(libro), sessione)
 
     risposta = {
         "hookSpecificOutput": {

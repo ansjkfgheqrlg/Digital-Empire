@@ -855,6 +855,22 @@ proprio perché è sempre lì.
 - Costo: ~57.000 caratteri **una volta ogni 25 messaggi**, contro 34.762 ripetuti **sempre**.
 - Se il file-spia manca del tutto (apertura non partita, macchina diversa), la sveglia ordina
   la lettura **subito**, non fra 25 messaggi.
+- **Il file-spia è per SESSIONE, non per macchina.** Ogni chat ha il suo, agganciato al
+  `session_id` che Claude Code passa agli hook.
+
+> ⚠️ **L'errore e il suo antidoto, 2026-09-03.** Nella prima versione il file-spia era **uno
+> solo per repo**. Risultato, visto in diretta da Max un'ora dopo: questa stessa conversazione
+> — nata *prima* che il caricamento all'apertura esistesse, e che il libro non l'aveva mai
+> ricevuto — si vedeva scritto in cima *«dottrina integrale caricata»*, perché un'altra
+> sessione (in realtà una prova) aveva scritto il file. **Un successo dichiarato e non
+> verificato**, cioè la malattia esatta che la Legge Suprema vieta (§3), commessa dallo
+> strumento costruito per impedirla.
+> **Antidoto, in vigore:** il file-spia porta il `session_id`. Una sessione non risponde mai
+> per un'altra. Provato nei due sensi: sessione mai caricata → `NON RISULTA CARICATA`;
+> sessione caricata → data e caratteri veri.
+> **La lezione che vale oltre questo caso:** un segnale di stato condiviso fra processi diversi
+> mente sempre, prima o poi. Se un segnale dice *«è stato fatto»*, deve dire anche **da chi** e
+> **per chi**, o non è una prova: è un'eco.
 - E resta la regola generale: **se non vedi più la dottrina, la riapri.** Non aspetti il
   contatore. Il contatore è la rete sotto la rete.
 
