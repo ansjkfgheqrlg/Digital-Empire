@@ -474,7 +474,7 @@ def build(page, title_block) -> None:
             "È la cosa che si nota per ultima e si ricorda per prima: rende le superfici materiche invece "
             "che digitali. Non è un effetto, è la texture della carta su cui stampiamo tutto.",
         )
-        + '<div class="body stack">'
+        + '<div class="body stack-tight">'
         + '<div class="unit"><div class="grainrow">'
         '<div><div class="gspec g0"><span class="tag">Assente</span></div>'
         '<div class="gcap">Digitale, piatto, indistinguibile da qualunque altro fondo scuro.</div></div>'
@@ -491,13 +491,13 @@ def build(page, title_block) -> None:
         "reticolo e sembra un filtro.</p></div>"
         + '<div class="unit"><div class="kicker"><span class="n">B</span>Perch&eacute; la teniamo alta, e loro no</div>'
         + '<p class="note">Nello studio del settore la texture c&rsquo;è anche dagli altri, ma sussurrata: '
-        "il concorrente diretto usa un <strong>reticolo sottile appena percettibile</strong> sulle sezioni scure, "
-        "il sito hub di Andrei Pascu una <strong>mezzatinta a punti quasi invisibile</strong>. Sono scelte "
-        "difensive: aggiungono materia sperando che nessuno se ne accorga.</p>"
+        "il concorrente diretto usa un <strong>reticolo appena percettibile</strong> sulle sezioni scure, "
+        "il sito hub di Andrei Pascu una <strong>mezzatinta quasi invisibile</strong>: aggiungono materia "
+        "sperando che nessuno se ne accorga.</p>"
         + '<p class="note" style="margin-top:3mm"><strong>Noi facciamo l&rsquo;opposto: la nostra grana si vede, '
         "e si deve vedere.</strong> È la sola parte del sistema che nessuno può copiarci per sbaglio, perché "
-        "copiarla richiede di decidere che il rumore è un pregio. Chi la spegne per far sembrare una pagina "
-        "«più pulita» ci lascia con un arancione che è anche del concorrente.</p></div>"
+        "copiarla richiede di decidere che il rumore è un pregio. Chi la spegne ci lascia con un "
+        "arancione che è anche del concorrente.</p></div>"
         + '<div class="unit"><div class="kicker"><span class="n">C</span>Le quattro regole</div>'
         + '<ul class="clean">'
         "<li><strong>Non si spegne mai.</strong> Nessuna superficie di marca esce senza grana: né una slide, "

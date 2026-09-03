@@ -233,7 +233,7 @@ ul.clean li strong { color: var(--ink); font-weight: 600; }
 
 /* campioni di grana: stessa superficie, tre intensita' */
 .grainrow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6mm; }
-.gspec { position: relative; height: 25mm; border-radius: 3px; overflow: hidden; background: #1c1c1c; }
+.gspec { position: relative; height: 22mm; border-radius: 3px; overflow: hidden; background: #1c1c1c; }
 .gspec::after {
   content: ""; position: absolute; inset: 0;
   background-image: url("__GRAIN__");

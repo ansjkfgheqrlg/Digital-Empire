@@ -8,11 +8,11 @@ Last updated: 2026-09-03
 
 # BRAND GUIDELINES CCM — Claude Code Mastery
 
-Il sistema visivo e verbale del lancio di **Claude Code Mastery**, in 17 pagine A4.
+Il sistema visivo e verbale del lancio di **Claude Code Mastery**, in 18 pagine A4.
 
 ## Il file da mandare in giro
 
-`CCM-Brand-Guidelines.pdf` — 17 pagine, 0,86 MB.
+`CCM-Brand-Guidelines.pdf` — 18 pagine, 0,88 MB. Copertina, indice, **15 capitoli**, colophon.
 
 ## Come si rigenera
 
@@ -26,7 +26,7 @@ Motore: HTML + Chromium `page.pdf()` via Playwright. Font Onest e IBM Plex Mono 
 | File | Cosa contiene |
 |---|---|
 | `build_brand_guidelines.py` | CSS, impaginato, grana, stampa |
-| `content.py` | testo e struttura delle 17 pagine |
+| `content.py` | testo e struttura delle 18 pagine |
 | `_preview/` | screenshot pagina per pagina (fuori da git) |
 
 Si cambia il copy toccando solo `content.py`.
@@ -54,6 +54,14 @@ flottanti, le card. Da qui la decisione che vincola tutto il resto del documento
 > **L'arancione smette di essere la nostra identita' e resta il colore dell'azione.
 > L'argento su fondo inchiostro diventa la firma.**
 
+## La grana ha un capitolo suo (cap. 11)
+
+Non e' un dettaglio tecnico ma la firma materica del marchio, e il documento la tratta come tale:
+tre campioni a confronto (assente / 13% da stampa / piena da schermo), i valori esatti dei due
+strati, e il confronto misurato con gli altri — il concorrente diretto usa un reticolo appena
+percettibile, il sito hub di Andrei Pascu una mezzatinta quasi invisibile. **Loro la nascondono,
+noi la dichiariamo.**
+
 ## Regole di impaginazione rispettate
 
 - Fondo chiaro e grana leggera, mai massimalista (riferimento AP Sales dato da Max).
@@ -66,8 +74,8 @@ flottanti, le card. Da qui la decisione che vincola tutto il resto del documento
 ## Verifica automatica
 
 Ogni pagina e' misurata: il fondo dell'ultimo elemento contro il margine utile.
-Alla consegna: **17 pagine su 17 in norma**, nessuna che trabocca, nessuna sotto l'80%
-di riempimento.
+Alla consegna: **18 pagine su 18 in norma**, nessuna che trabocca, nessuna sotto la soglia
+di riempimento. Le due copertine sono escluse dal controllo: hanno il titolo centrato per scelta.
 
 ## Connessioni
 
