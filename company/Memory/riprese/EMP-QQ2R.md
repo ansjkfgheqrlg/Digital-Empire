@@ -75,7 +75,13 @@ sul disco prima di lanciare le sentinelle:**
 | `max17-v12` | `pUu4G2lINnk` | Insane Claude Design Skills | **DOPPIONE di v11-Roberts, già chiuso** — stesso id/titolo/durata, non lanciare |
 | `max17-v13` | `BSUHmVcaO1g` | Se usi ancora i prompt... | **DOPPIONE di v07-Rizzo, già chiuso** — stesso id/titolo/durata, non lanciare |
 | `max17-v14` | `P-BQ-AGS0ck` | "Become a Master Storyteller" | **CHIUSO 2026-09-03 22:xx** — CP-20260903-019 |
-| `max17-v16` | `gUnQK6bWHkI` | Micro-personal-brand da milioni | genuinamente nuovo, 859 frame, verificato unico — **IN CORSO** |
+| `max17-v16` | `gUnQK6bWHkI` | MiK Cosentino — micro-infobusiness | **CHIUSO 2026-09-04 00:xx** — CP-20260904-001 |
+
+**LOTTO v01-v16: CHIUSO PER INTERO.** v16 era un evento dal vivo (non uno screen-share):
+copertura dichiarata onesta 20/858 frame (2,3%) + trascrizione audio 100% — motivato, non
+un taglio di corner (slide/lavagna restano ferme sul palco fino a 128s, il contenuto denso
+sta nel parlato). Tesi del video: infobusiness da €500 front-end + mastermind €30-46k/anno,
+cap 50 persone, finestra di vendita 1 settimana su 4 (scarsita' reale dichiarata, non finta).
 
 **AUTOCORREZIONE 2026-09-03 22:xx — mi ero sbagliato IO su Vishen, non il checkpoint
 originale.** Avevo scritto sopra "il video vero di Vishen non risulta scaricato da nessuna
@@ -106,15 +112,16 @@ non ho l'indirizzo da nessuna parte.
 ## 4. IL PROSSIMO PASSO ESATTO
 
 1. ~~Recuperare le tre sentinelle morte~~ — **FATTO 2026-09-03 21:3x**, vedi §3.
-2. ~~v14 (Vishen/Master Storyteller)~~ — **FATTO 2026-09-03 22:xx**, CP-20260903-019.
+2. ~~v14 (Vishen/Master Storyteller)~~ — **FATTO**, CP-20260903-019.
    ~~v12, v13~~ — non servivano, doppioni di Roberts/Rizzo già chiusi.
-3. **In corso ora: v16** (micro-personal-brand, 859 frame) — una sentinella e' morta per
-   errore di connessione a meta', rilanciata da dove poteva riprendere (scenes.json gia'
-   fatto). Ultimo video del lotto v01-v16.
-4. Poi il mostro da 4h17 (Beggiato-guida-agenzia, `rvpRQD43wdY`, trascrizioni già in
-   `runs/max-17-2026-09/subs/`) e Justin Sung 4h55 (link da ritrovare).
+3. ~~v16 (MiK Cosentino)~~ — **FATTO**, CP-20260904-001. **Lotto v01-v16 chiuso per intero.**
+4. **PROSSIMO: solo 2 video restano fuori dal lotto originale** — il mostro da 4h17
+   (Beggiato-guida-agenzia, `rvpRQD43wdY`, trascrizioni già in `runs/max-17-2026-09/subs/`)
+   e Justin Sung 4h55 (link da ritrovare, non ce l'ho da nessuna parte).
 5. Poi valutare il pattern trovato in §3 (auto-dichiarazione non verificata prima del
    crash di sessione) — serve un controllo strutturale, non solo correzioni a mano.
+6. **Fase 2 (dopo, esplicitamente rimandata da Max)**: implementare tutti i consigli dati
+   negli studi — non partire da soli, Max lo chiede a parte.
 
 **Massimo 2-3 sentinelle in parallelo quando leggono immagini.** Con 3 la sessione è saltata
 due volte in due giorni.
