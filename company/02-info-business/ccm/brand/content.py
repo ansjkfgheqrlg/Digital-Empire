@@ -509,7 +509,7 @@ def build(page, title_block) -> None:
         "<li><strong>Non va sopra i volti né sopra uno screenshot di codice.</strong> Sui volti sporca la pelle, "
         "sul codice rende ambigue le lettere. Lì la superficie sta sotto, la grana intorno.</li>"
         "</ul></div>"
-        + '<div class="unit" style="margin-top:auto"><div class="kicker">Come si verifica</div>'
+        + '<div class="unit"><div class="kicker">Come si verifica</div>'
         + '<p class="note">Ingrandisci un dettaglio del pezzo al 400%. Se il fondo è una campitura uniforme, '
         "la grana non c&rsquo;è e il pezzo non è nostro.</p></div>"
         + "</div>",
