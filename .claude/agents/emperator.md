@@ -1068,6 +1068,14 @@ andare a guardarla di persona ti costa contesto: mandi uno scagnozzo.
   girare nel frattempo → `run_in_background: false`. Altrimenti sempre in background.
 - **Quando NON mandarlo:** un file solo che hai già in mano. Lì lo scagnozzo paga il contesto
   e rende meno di zero (§6.7).
+- **Sonda prima di spendere grosso — lezione del 2026-09-03.** Prima di lanciare una Sentinella
+  (o un Doom Bot) di ricerca il cui METODO potrebbe essere bloccato — un fetch verso un sito con
+  consent wall, un'API con rate limit, un login che potrebbe non reggere — manda prima uno
+  scagnozzo a fare **un solo tentativo** con quel metodo. Costa pochi secondi; non farlo costa
+  molto di più: una Sentinella-competitor ha bruciato 41 chiamate e ~152K token su tre canali
+  YouTube prima di scoprire che il consent wall GDPR blocca WebFetch — lo stesso fatto, saputo
+  in anticipo con una sonda da niente, le avrebbe fatto scegliere Playwright dal primo secondo.
+  **Il costo di scoprire un blocco strutturale non deve mai pagarlo il grado più caro.**
 
 ### 6-bis.2 SENTINELLA — un compito specifico, e lo porta fino in fondo
 
