@@ -1,3 +1,15 @@
+> ## ✅ APPROVATA — 2026-09-03
+> Max ha approvato questa proposta il 2026-09-03. E' diventata **ADR-017 — Il lavoro ad alto
+> rischio lo rilegge un motore di famiglia diversa**, attiva in **pilota su Preventa Outreach**
+> (perimetro stretto per scelta: l'istruttoria qui sotto dichiara di non avere prove sufficienti
+> per un'estensione totale, e quella cautela e' stata rispettata).
+>
+> **La regola vigente e' `ADR-017-revisione-modello-diverso.md`.** Questo file resta agli atti
+> come istruttoria completa: contiene i tre casi di prova, i costi dichiarati e le alternative
+> scartate. Non seguirlo come regola: seguire ADR-017.
+
+---
+
 # ADR-PROPOSTA — Audit cross-model in fase GATE per i deliverable ad alto rischio
 
 > **STATO: PROPOSTA — da approvare da Max.** Questo file non è un ADR attivo: non modifica ADR-006,

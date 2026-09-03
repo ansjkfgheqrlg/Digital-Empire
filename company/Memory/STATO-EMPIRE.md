@@ -8509,3 +8509,37 @@ prossima. Ti fermi solo a budget-guard 20% (chiudi pulito) o se un GATE è rosso
      B-002/B-003 prezzi via team-prezzi
    - F5: prossima fase roadmap (vedi PIANO-MAESTRO/08-ROADMAP-FASI.md) dopo fine swarm F1-bis
 7. **YouTube ingestion** @Legamidiamore + @dosementale -- task 7.0/F-MB1, sessione dedicata
+
+---
+
+## 2026-09-03 — DELEGA PIENA DI MAX: costruito quello che mancava (CP-20260903-003)
+
+**Ordine:** *"approvo tutto, prendi il controllo, fai tutto. Basta che l'azienda migliora,
+non deve mai peggiorare."*
+
+**Fatto (solo aggiunte, 0 righe cancellate, verificato con git diff --numstat):**
+- **I 10 guardiani riempiti**: 5 sentinelle da 39 righe a 319-376; 5 guild; Board C-Suite
+  +697 righe. Prima dicevano cosa bloccare senza contenere un solo criterio per farlo.
+- **ADR-016 ULTIMO METRO** — `scripts/ultimo_metro.py` + skill `ultimo-metro`.
+  Prima misura: **25 pezzi finiti mai usciti, 2.137 MB, il piu' vecchio fermo da 135 giorni,
+  23 caricabili subito.**
+- **B-040 parziale** — `scripts/cerca_wiki.py`: la memoria di 1.547 pagine smette di essere
+  cieca (sinonimi del mestiere, rarita' della parola, deduplica).
+- **Costo delle skill misurato per la prima volta** — `scripts/peso_skill.py`: 377 skill,
+  129 sopra soglia, **859.425 gettoni di cui 697.241 (81%) nelle skill sopra soglia**.
+- **ADR-017** — revisione con un motore di famiglia diversa, in pilota su Preventa Outreach.
+- **ADR-018** — conflitto ADR-012 dichiarato e disambiguato.
+
+**⚠️ TRE DECISIONI ASPETTANO MAX:**
+1. **B-047 (urgente, aperto da 8 giorni)** — due motori di orchestrazione entrambi canonici:
+   `11-APEX-7-CORE` (ADR-010/011) e `orchestration-layer` (ADR-012 del 26 ago, che dichiara
+   da se' di contraddirli, Fase 2 mai iniziata). Tre strade in ADR-018 §4. Riguarda il lavoro
+   di Neri: raccomandazione strada A, ma non prima di parlarne con lui.
+2. **B-043** — **Digital Empire non misura un solo euro**: ne' ricavi, ne' costi effettivi,
+   ne' una metrica del percorso di vendita. E' la ragione per cui nessuno si era accorto che
+   il magazzino era pieno e le vendite zero. Va deciso cosa misurare per primo.
+3. **I 23 pezzi caricabili oggi** — servono gli accessi ai negozi: nessuno puo' farlo al posto
+   di Max.
+
+**RIPRESA DA:** le tre decisioni sopra. Lavoro tecnico pronto senza decisioni: refactoring
+mirato delle 5 skill piu' care (misurate), depositi dell'Ultimo Metro estesi ai caroselli.

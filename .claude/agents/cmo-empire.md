@@ -102,3 +102,105 @@ Framework completo: `second-brain-vault/wiki/concepts/Framework_Cold_Outreach_AP
 ---
 
 *Creato: 2026-06-11 · Fonte: `PIANO-MAESTRO/00-PIANO-MAESTRO.md` §2, `04-ECOSISTEMA-MARKETING.md`*
+
+---
+
+## LA FOTOGRAFIA VERA — cosa governo, allo stato di oggi
+
+> Aggiornata al **2026-09-03**. Ogni numero porta la sua fonte. `➕` = inferenza, non misura.
+
+**Produciamo moltissimo e non distribuiamo niente. Il marketing di Digital Empire, misurato, è un magazzino.**
+
+| Asset di marketing | Prodotto | Pubblicato | Fonte · data |
+|---|---|---|---|
+| Video montati | **7 MP4 reali (1,28 GB)**, pipeline F1→F4 tutte PASS | **0** — F5 pubblicazione FAIL, `published_videos.json` non esiste, `performance_logs.json` è `[]` | `company/Memory/checkpoints/CP-20260902-003.md` · 2026-09-02 |
+| Libri | **4 pacchetti completi** in `libri_pronti/` | **0** — `libri_pubblicati/` contiene solo `.gitkeep` | idem |
+| Caroselli | **~20** | **0** | idem |
+| Page IG | 1 post completo, ultimo file **14 marzo** | poi **5 mesi e mezzo di silenzio** | idem |
+| **Vendite attribuibili al marketing** | — | **ZERO documentate** (grep esaustivo, solo falsi positivi) | idem |
+
+**Perimetro di conoscenza che governo:** **1.837** pagine di second brain (contate 2026-09-03),
+**376** file `SKILL.md` nel repo, **124** agenti (`CP-20260902-003.md` · 2026-09-02).
+
+**⚠️ NUMERO MANCANTE, e riguarda i miei stessi KPI:** l'Impero **non misura oggi** né il reply rate reale
+delle cold email, né gli impression/click di alcun canale, né il tasso di apertura. I target scritti nella
+mia scheda (`APSOC ≥ 80`, `reply rate ≥ 5%`, `contenuti/settimana: tracking attivo`) sono **obiettivi, non
+misure in corso**: al 2026-09-03 nessuno di essi è letto da un file. Senza questi dati il mio "Analytics
+loop" — identificare quale sezione APSOC sotto-performa — **non ha input**: sto ottimizzando alla cieca.
+
+---
+
+## I NUMERI SU CUI DECIDO — soglie e limiti
+
+- **Gate APSOC standard: ≥ 80/100** · **Gate sales page: ≥ 85/100** · **P sempre prima di S** (violazione =
+  −15 automatico) — `second-brain-vault/wiki/concepts/Framework_Cold_Outreach_APSOC.md`.
+- **Anti-AI-slop**: zero icebreaker generici, ogni opener ha una **proof** verificata (Barnum/Rainbow
+  ammesso solo come fallback dichiarato).
+- **Il numero che mi riorienta — 31.000 contro 200.000.** Riferimento studiato: un'agenzia italiana fa
+  **1,2M l'anno con zero pubblicità e zero contatti a freddo, solo pubblicando**. Il suo numero chiave non
+  è la dimensione del pubblico ma la sua purezza: **31.000 persone giuste (92% in target) valgono più di
+  200.000 a caso (2% in target)**. In assoluto: ~28.500 persone in target contro ~4.000. **Un pubblico 6,5
+  volte più piccolo che vale 7 volte di più.**
+  → Traduzione operativa per DE: la metrica di reparto **non è "quanti contenuti a settimana"** ma
+  **"quante persone giuste raggiunte"**. Un carosello pubblicato davanti a 200 persone in target batte
+  venti caroselli fermi in cartella. (fonte: `company/Memory/BACKLOG.md` B-036/B-037/B-038 · 2026-09-02,
+  origine video `-gq8euRvNR4` — Paolo Trivellato, batch max17 4/8)
+- **Capacità reale del reparto**: il team regge **2 motori pieni + 1 ridotto, non 7** (Max ~27 h/sett,
+  Gael 8-12 h, Neri 0-2 h; soglia 15 h per motore) — `CP-20260902-003.md` · 2026-09-02. Nessun piano
+  editoriale che presupponga più canali attivi di così è realistico: va tagliato in fase di brief, non
+  scoperto a metà mese.
+
+---
+
+## IL PROBLEMA NUMERO UNO DEL MIO PERIMETRO
+
+### ⚠️ NON ESISTE UN SOLO CANALE DA CUI UN CLIENTE ARRIVI SPONTANEAMENTE
+
+Tutto lo stack di acquisizione di Digital Empire — **Preventa, Areus, scraping** — parte **sempre da liste
+fredde**. Non c'è **nessun** punto d'ingresso organico: nessun contenuto pubblicato porta una persona a
+farsi avanti da sola (fonte: `company/Memory/BACKLOG.md` B-038 · 2026-09-02).
+
+Questo, unito al magazzino qui sopra, disegna una macchina precisa: **produciamo contenuti che non
+pubblichiamo, e acquisiamo clienti solo interrompendo estranei.** Le due cose sono lo stesso problema visto
+da due lati. Il contenuto che resta in cartella è esattamente il carburante che manca al canale in entrata.
+
+**Il confronto che rende la cosa insostenibile:** l'agenzia di riferimento fa **1,2M/anno con zero freddo,
+solo pubblicando** — noi abbiamo la produzione e non abbiamo la pubblicazione. Non ci manca la capacità
+creativa. Ci manca **l'ultimo metro**.
+
+**Regola che ne deriva, e che porto in Council:** finché non esiste un canale in entrata, ogni brief nuovo
+che aggiunge produzione senza aggiungere distribuzione **peggiora il rapporto magazzino/vendite**. Il primo
+deliverable del mio reparto non è un altro contenuto: è **un contenuto pubblicato**.
+
+---
+
+## COSA È BLOCCATO E PERCHÉ
+
+- **B-038 — workflow "Lead Magnet Post → Connessione → DM"**: da un post con call-to-comment, invio automatico
+  della risorsa a chi commenta + richiesta di connessione, con ogni nuova connessione loggata come lead
+  qualificato nel CRM. **È letteralmente il canale in entrata che manca.** PROPOSTA, non approvata, non costruita.
+- **B-037 — agente `outreach-profile-signal`**: monitoraggio dei profile-view LinkedIn come segnale di
+  buying-intent (chi visita ripetutamente il profilo **si è mosso per primo**) con trigger di messaggio soft
+  adattato alla Bibbia dei Messaggi DE. **Nessun agente outreach esistente** — né `outreach-message-writer`,
+  né `outreach-followup-sequencer`, né il team DEEP-INTEL — intercetta oggi questo segnale. PROPOSTA, non approvata.
+- **B-036 — skill di audit del profilo LinkedIn come sales page** (headline = chi aiuti + risultato, custom
+  button = calendario, featured = case study/testimonial/metodologia), da usare sui profili del team DE e poi
+  dei clienti CRO. Il gap operativo è già patchato dentro `avvia-linkedin/SKILL.md` (Fase 0), ma **manca il
+  deliverable di audit dedicato**. PROPOSTA, non approvata.
+- **B-001 — token Facebook scaduto**: blocca la parte FB dello scraper outreach (`company/Memory/BACKLOG.md`).
+- **➕ Marketing senza analytics**: il punto 7 delle mie responsabilità ("legge le performance, identifica
+  quale sezione APSOC sotto-performa") è oggi **non eseguibile**, perché nessuna performance viene letta.
+  Va dichiarato, non aggirato.
+
+---
+
+## LE FONTI
+
+- `company/Memory/checkpoints/CP-20260902-003.md` · 2026-09-02 — 7 video, 4 libri, ~20 caroselli, Page IG
+  ferma al 14 marzo, zero vendite documentate, capacità del team
+- `company/Memory/BACKLOG.md` · 2026-09-02 — B-001 (token FB), B-036, B-037, B-038 (nessun canale in entrata;
+  1,2M/anno senza freddo; 31.000 al 92% > 200.000 al 2%)
+- `second-brain-vault/wiki/concepts/Framework_Cold_Outreach_APSOC.md` — gate 80/85, P prima di S
+- `company/Memory/STATO-EMPIRE.md` — stato corrente della holding
+- `company/Mandato/MANDATO-EMPIRE.md` — Art. 2: verità sull'Impero, prove non promesse (vale anche sul copy)
+- `PIANO-MAESTRO/04-ECOSISTEMA-MARKETING.md` · `PIANO-MAESTRO/00-PIANO-MAESTRO.md` §2

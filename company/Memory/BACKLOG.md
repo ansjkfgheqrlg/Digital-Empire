@@ -125,3 +125,64 @@
   specifico/mutevole). Una wiki che cresce e non pota diventa rumore — rischio concreto con
   1.831 pagine e nessun criterio esplicito scritto oggi in `second-brain-vault/wiki/` su cosa
   NON va mai ingerito. Origine: video `DTCyvo6cC54`, stessa sessione di B-040.
+
+---
+
+## Aggiornamenti del 2026-09-03 (ordine di Max: *"approvo tutto, prendi il controllo"*)
+
+- **B-040 — PARZIALMENTE CHIUSA.** Costruito `scripts/cerca_wiki.py`: indice su 1.547 pagine,
+  dizionario dei sinonimi del mestiere, radici (taglio delle desinenze), peso per rarita' della
+  parola, normalizzazione per stazza della pagina, deduplica dei doppioni, riga di contesto nei
+  risultati. Verificato: *"quanto spesso pubblicare"* ora trova *"Come generare oltre 50.000 a
+  settimana postando ogni giorno"*, che prima era invisibile; *"gestione delle obiezioni sul
+  prezzo"* ora restituisce cinque pagine sulle obiezioni, dove prima dava pagine di lancio corsi.
+  **Resta aperta la parte semantica vera** (embeddings): richiede o un modello locale non
+  installato, o mandare 1.837 pagine private a un servizio esterno — decisione di Max, non presa.
+
+- **B-042 — CHIUSA, diventata ADR-017.** La proposta di revisione con un modello di famiglia
+  diversa e' stata approvata da Max il 2026-09-03 e attivata in **pilota su Preventa Outreach**
+  (perimetro stretto perche' l'istruttoria stessa dichiarava di non avere prove sufficienti per
+  un'estensione totale). Vedi `decisions/ADR-017-revisione-modello-diverso.md`.
+
+- **B-043 — NUOVA, la piu' grave emersa oggi.** **Digital Empire non misura un solo euro:**
+  ne' ricavi, ne' costi effettivi, ne' una sola metrica del percorso di vendita (contatti,
+  chiamate, preventivi, chiusure). Scoperta lavorando ai file del Board: il CFO sorveglia i costi
+  di un'azienda che non ha mai misurato un incasso, il CRO ha uno `stato_pipeline` che e'
+  un'opinione, il CMO ha un ciclo di analisi senza dati in ingresso. **E' la ragione per cui
+  nessuno si era accorto che il magazzino era pieno e le vendite zero.** Nessuna decisione presa:
+  va deciso da Max cosa iniziare a misurare per primo.
+
+- **B-044 — NUOVA.** Non esiste un caricatore automatico per Amazon KDP: i libri pronti vanno
+  caricati a mano. Costruirlo o rinunciarci e' una decisione aperta (origine: ADR-016).
+
+- **B-045 — NUOVA.** I caroselli non sono sorvegliati dall'Ultimo Metro: sono sparsi in cartelle
+  senza schema comune. Va prima deciso dove vive un carosello finito (origine: ADR-016).
+
+- **B-046 — Rinumerare uno dei due ADR-012 e correggere i quindici puntatori.**
+  Due file portano il numero 012 (`ponte-memory-wiki` del 23 ago, di Max; `orchestration-layer-canonico`
+  del 26 ago, di Neri). Quindici file citano "ADR-012" senza dire quale. Da fare **a mano**, un
+  puntatore alla volta, e **solo dopo** la decisione di Max su quale motore di orchestrazione sia
+  canonico (ADR-018 §4) — perche' quella decisione potrebbe rendere uno dei due un ADR superato,
+  e allora la rinumerazione sarebbe lavoro diverso.
+  I quindici: `company/Memory/STATO-EMPIRE.md`, `company/Memory/INDEX.md`,
+  `company/Memory/checkpoints/CP-20260826-001.md`, `company/Memory/checkpoints/CP-20260823-007.md`,
+  `company/Ecosistemi/11-APEX-7-CORE/README.md`,
+  `company/Ecosistemi/11-APEX-7-CORE/orchestration-layer/docs/adr/012-nonproduction-pilot-package.md`,
+  `company/Board-CSuite/CTO/state/README.md`, `company/Board-CSuite/CTO/agenti/cto-memoria.md`,
+  `company/Board-CSuite/CTO/agenti/cto-conductor.md`, `.claude/agents/sentinel-drift.md`,
+  `.claude/agents/guild-quality.md`, `.claude/skills/ocp-control-plane/SKILL.md`,
+  `.claude/skills/ruflo/v3/@claude-flow/hooks/src/workers/index.ts`, piu' i due ADR stessi.
+  Origine: ADR-018.
+
+- **B-047 — DECISIONE APERTA PER MAX, la piu' urgente: due motori di orchestrazione sono
+  entrambi canonici.** `11-APEX-7-CORE` (per ADR-010/011) e `orchestration-layer` (per
+  ADR-012 del 26 ago, che dichiara da se' di contraddirli, con la Fase 2 di migrazione mai
+  iniziata). Aperto da otto giorni. Tre strade con i loro costi in ADR-018 §4. Raccomandazione
+  di Emperator: strada A, ma non prima di averne parlato con Neri.
+
+- **B-048 — La soglia di 0,50 EUR per chiamata non ha nessuna fonte in casa.** Esisteva solo
+  dentro il file che la applicava: nessun documento dell'Impero la stabilisce. Declassata a
+  soglia di attenzione non normata dentro `sentinel-cost`. Va decisa da Max o eliminata.
+  Seconda incoerenza nella stessa area: `cfo-empire.md` dice allarme al 70%, i principi e i KPI
+  del CFO dicono 80%, il README del Cost Sentinel dice 60/80/95/100. Applicata la scala a quattro
+  gradini; il 70% va sanato. Origine: lavoro sulle sentinelle del 2026-09-03.

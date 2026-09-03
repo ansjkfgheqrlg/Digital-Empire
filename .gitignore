@@ -217,3 +217,8 @@ nul
 **/runs/**/*.info.json
 **/runs/**/*.webp
 **/runs/**/video.mp4
+
+# Indice di ricerca della wiki: 88 MB rigenerabili in 10 secondi con
+#   python scripts/cerca_wiki.py --ricostruisci
+# Non va nella storia git (ADR-013: blob pesanti fuori dalla storia).
+second-brain-vault/wiki/.indice-ricerca.json

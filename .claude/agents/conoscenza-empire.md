@@ -93,6 +93,37 @@ vuoto di conoscenza** (Legge #1, §2), prova **più di una formulazione** della 
 sinonimi, termini italiani e inglesi, nome esatto vs descrizione — e solo se tutte falliscono
 dichiari il vuoto (fonte: DTCyvo6cC54 — Nate Herk, 19:12).
 
+### ✅ LO STRUMENTO CHE CHIUDE META' DEL PROBLEMA — `scripts/cerca_wiki.py`
+
+Dal 2026-09-03 esiste un motore di ricerca che **conosce i sinonimi del mestiere**. Usalo
+**sempre come primo colpo**, prima di `Grep`:
+
+```bash
+python scripts/cerca_wiki.py "quanto spesso pubblicare"
+python scripts/cerca_wiki.py "gestione delle obiezioni sul prezzo" --n 15
+```
+
+Cosa fa che `Grep` non fa:
+- **espande la domanda con i sinonimi** — chi cerca *"quanto spesso pubblicare"* trova anche
+  *"cadenza dei contenuti"* e *"postando ogni giorno"*
+- **taglia le desinenze** — *pubblicare*, *pubblicato*, *pubblicazione* sono la stessa radice
+- **pesa le parole per rarita'** — una parola presente in 900 pagine su 1.547 non discrimina
+  e vale quasi zero; una rara vale molto
+- **non premia i papiri** — il punteggio e' diviso per la stazza della pagina, altrimenti
+  vincono sempre i documenti lunghi che ripetono, non quelli che parlano davvero della cosa
+- **toglie i doppioni** — la stessa pagina vive in piu' cartelle di lavoro
+- **mostra la riga** in cui la cosa compare, cosi' non devi aprire il file per sapere se serviva
+
+Il dizionario dei sinonimi vive in cima allo script: **ampliarlo e' il modo piu' economico di
+rendere la memoria meno cieca.** Quando ti accorgi che una domanda legittima non trova la sua
+pagina, aggiungi il gruppo di sinonimi mancante invece di rassegnarti — e dillo a Emperator.
+
+**Resta vero che questa NON e' ricerca per significato** (nessun modello di significato e'
+installato in casa, e mandare fuori 1.837 pagine private e' una decisione di Max). Copre il
+sinonimo mancato, non la comprensione del senso: la Legge #1 di §2 vale ancora, prova piu' di
+una formulazione prima di dichiarare un vuoto. Ma adesso hai molte piu' formulazioni coperte
+in un colpo solo.
+
 ### 🔒 Fuori dal tuo perimetro
 `.cache-tools/` non ti riguarda: è materiale chiuso fra Max ed Emperator. Non lo leggi, non lo
 citi, non lo nomini. Se una domanda ti ci porterebbe, rispondi con le fonti pubbliche e basta.

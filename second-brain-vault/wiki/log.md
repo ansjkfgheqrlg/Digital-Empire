@@ -1180,40 +1180,74 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   piu' la pagina e' lunga piu' grassetta (dal 13% all'80% del corpo); incoerenza numerica diffusa
   sulla prova sociale (sei cifre per tre metriche).
 
-
-- INGEST (Empire Studio + Memory Empire): **batch max17, video 3/8** — `E8Ax92etrMc`
-  "Steal My Claude Code Keyword Research System to Rank #1 on Google" (Nico | AI Ranking, 13m20s, EN),
-  **400/400 frame letti — coverage 100%**, 58 KA (27 alta rilevanza DE), NO-FINTO PASS.
-  Chiusura di un gap a valle: pipeline Stage 1-5 gia' fatta, layer Memory Empire e wiki mai chiusi
-  — stesso pattern di `j4UInmM9kKA` il 2026-09-01. Nessuna nuova visione dei frame.
-  -> `memory-empire/knowledge/E8Ax92etrMc/` (contenuto-integrale 41 KB mai riassunto + atoms + manifest + enrichment-report),
-  **1 pagina wiki creata** (`sources/Source_Nico_AI_Ranking_Claude_Keyword_Research.md`), index.md aggiornato (nuova sezione "SEO & AI Search").
-- CONTENUTO: keyword research che parte dalle 5 fonti dove le domande sono gia' scritte (Reddit, recensioni
-  proprie **e di fino a 5 competitor**, People Also Ask, autocomplete, fan-out) invece che dai keyword tool.
-  **15 domande canoniche su 37 a volume di ricerca zero**, tutte da linguaggio cliente reale. Routing a 4
-  destinazioni (FAQ terminale / FAQ che linka fuori / pagina propria / video). Stack: Claude Opus 5 +
-  DataForSEO + Zernio MCP per Reddit, $0,59 a run, cadenza consigliata 1 volta ogni 6 mesi.
-- ENRICHMENT: **6 skill SEO valutate, 4 patchate, +70 / -0.**
-  `ai-seo/SKILL.md` (+27): la sezione "Query Fan-Out" diceva solo "brainstorm the 5-10 related queries" —
-  aggiunto il fan-out come **dato recuperabile** (AI Overview structure) con la soglia **1 blocco = FAQ /
-  2+ sezioni = pagina propria**, il box "currently cited" come set competitivo reale, il volume zero
-  non-scartabile con le convenzioni `0` vs `n/a`, e la tabella di routing a 4 destinazioni.
-  `market-seo/SKILL.md` (+27): il Content Gap Analysis usava due sole fonti Google — aggiunte Reddit,
-  recensioni proprie e dei competitor, autocomplete, deduplica in canonical questions, piu' la **gap
-  analysis 1-2 stelle vs 5 stelle** (gap ampio = differenziatore, gap stretto = table stakes).
-  `seo-audit/SKILL.md` (+12): "no major gaps in coverage" non e' falsificabile con un keyword tool.
-  `programmatic-seo/SKILL.md` (+4): il volume e' il gate giusto per il *pattern*, sbagliato per le *pagine
-  dentro* il pattern — col proprio freno anti-thin-content.
-- NON arricchite, dichiarato: `site-seo` (opera su contenuto gia' deciso: meta tag, JSON-LD, sitemap — il
-  video non tocca quel perimetro) e `schema` (il video non parla **mai** di structured data; l'unica
-  connessione immaginabile e' gia' coperta dalla riga `FAQPage | FAQ content | mainEntity`).
-- RISERVA SULLA FONTE: nessun risultato di ranking o traffico mostrato, fonte singola e autopromozionale,
-  e il report scorso in video ("Roofing, Dallas") **non e' l'output del prompt digitato in demo**
-  ("plumbing, Austin") — numeri diversi. Registrato in manifest, atoms (KA-056) e pagina wiki.
-- DEBITO APERTO: RULES §6 non eseguita (nessun checkpoint in `company/Memory/`, `STATO-EMPIRE.md` non
-  aggiornato) e **nessun commit git**, come da vincolo di sessione. Le altre 5 run del batch max17
-  (v04-trivellato, v05-jaye, v06-belli, v07-rizzo, v08-herk) hanno lo stesso gap: verificato, layer
-  Memory Empire assente per tutte.
+
+
+- INGEST (Empire Studio + Memory Empire): **batch max17, video 3/8** — `E8Ax92etrMc`
+
+  "Steal My Claude Code Keyword Research System to Rank #1 on Google" (Nico | AI Ranking, 13m20s, EN),
+
+  **400/400 frame letti — coverage 100%**, 58 KA (27 alta rilevanza DE), NO-FINTO PASS.
+
+  Chiusura di un gap a valle: pipeline Stage 1-5 gia' fatta, layer Memory Empire e wiki mai chiusi
+
+  — stesso pattern di `j4UInmM9kKA` il 2026-09-01. Nessuna nuova visione dei frame.
+
+  -> `memory-empire/knowledge/E8Ax92etrMc/` (contenuto-integrale 41 KB mai riassunto + atoms + manifest + enrichment-report),
+
+  **1 pagina wiki creata** (`sources/Source_Nico_AI_Ranking_Claude_Keyword_Research.md`), index.md aggiornato (nuova sezione "SEO & AI Search").
+
+- CONTENUTO: keyword research che parte dalle 5 fonti dove le domande sono gia' scritte (Reddit, recensioni
+
+  proprie **e di fino a 5 competitor**, People Also Ask, autocomplete, fan-out) invece che dai keyword tool.
+
+  **15 domande canoniche su 37 a volume di ricerca zero**, tutte da linguaggio cliente reale. Routing a 4
+
+  destinazioni (FAQ terminale / FAQ che linka fuori / pagina propria / video). Stack: Claude Opus 5 +
+
+  DataForSEO + Zernio MCP per Reddit, $0,59 a run, cadenza consigliata 1 volta ogni 6 mesi.
+
+- ENRICHMENT: **6 skill SEO valutate, 4 patchate, +70 / -0.**
+
+  `ai-seo/SKILL.md` (+27): la sezione "Query Fan-Out" diceva solo "brainstorm the 5-10 related queries" —
+
+  aggiunto il fan-out come **dato recuperabile** (AI Overview structure) con la soglia **1 blocco = FAQ /
+
+  2+ sezioni = pagina propria**, il box "currently cited" come set competitivo reale, il volume zero
+
+  non-scartabile con le convenzioni `0` vs `n/a`, e la tabella di routing a 4 destinazioni.
+
+  `market-seo/SKILL.md` (+27): il Content Gap Analysis usava due sole fonti Google — aggiunte Reddit,
+
+  recensioni proprie e dei competitor, autocomplete, deduplica in canonical questions, piu' la **gap
+
+  analysis 1-2 stelle vs 5 stelle** (gap ampio = differenziatore, gap stretto = table stakes).
+
+  `seo-audit/SKILL.md` (+12): "no major gaps in coverage" non e' falsificabile con un keyword tool.
+
+  `programmatic-seo/SKILL.md` (+4): il volume e' il gate giusto per il *pattern*, sbagliato per le *pagine
+
+  dentro* il pattern — col proprio freno anti-thin-content.
+
+- NON arricchite, dichiarato: `site-seo` (opera su contenuto gia' deciso: meta tag, JSON-LD, sitemap — il
+
+  video non tocca quel perimetro) e `schema` (il video non parla **mai** di structured data; l'unica
+
+  connessione immaginabile e' gia' coperta dalla riga `FAQPage | FAQ content | mainEntity`).
+
+- RISERVA SULLA FONTE: nessun risultato di ranking o traffico mostrato, fonte singola e autopromozionale,
+
+  e il report scorso in video ("Roofing, Dallas") **non e' l'output del prompt digitato in demo**
+
+  ("plumbing, Austin") — numeri diversi. Registrato in manifest, atoms (KA-056) e pagina wiki.
+
+- DEBITO APERTO: RULES §6 non eseguita (nessun checkpoint in `company/Memory/`, `STATO-EMPIRE.md` non
+
+  aggiornato) e **nessun commit git**, come da vincolo di sessione. Le altre 5 run del batch max17
+
+  (v04-trivellato, v05-jaye, v06-belli, v07-rizzo, v08-herk) hanno lo stesso gap: verificato, layer
+
+  Memory Empire assente per tutte.
+
 
 - AGENTE CREATO: **CONOSCENZA-EMPIRE** (`.claude/agents/conoscenza-empire.md`, ID registro
   `KNOW-EMPIRE-001`), direttiva Max 2026-09-02. Gerarchia **LX -- accanto al Mandato e all'organo
@@ -1339,3 +1373,20 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
 
 ## 2026-09-03
 - DOTTRINA: gerarchia forze Emperator (scagnozzo/sentinella/doom bot) + assetto God Emperor Doom -> 1 pagina concept creata, ADR-015, emperator.md §6-bis/§6-ter, hook DOTTRINA allineata
+
+## 2026-09-03 — Delega piena di Max: costruito l'apparato che mancava
+
+- **COSTRUITO**: organo ULTIMO METRO (ADR-016) — l'occhio che vede il lavoro finito e mai
+  uscito. Prima misura: 25 pezzi fermi, 2.137 MB, il piu' vecchio da 135 giorni.
+  → `scripts/ultimo_metro.py`, skill `ultimo-metro`, `company/Memory/ULTIMO-METRO.md`
+- **COSTRUITO**: motore di ricerca della memoria con sinonimi del mestiere
+  → `scripts/cerca_wiki.py` — 1.547 pagine indicizzate, chiude parzialmente B-040
+- **COSTRUITO**: misura del costo delle skill → `scripts/peso_skill.py`
+  (377 skill, 81% dei gettoni concentrati nelle 129 sopra soglia)
+- **ARRICCHITI**: 10 guardiani (5 sentinelle + 5 guild) + 6 dirigenti del Board — da gusci
+  vuoti a organi che possiedono i criteri e i numeri del proprio perimetro
+- **DECISIONI**: ADR-016 (ultimo metro), ADR-017 (revisione con motore di famiglia diversa,
+  in pilota), ADR-018 (conflitto ADR-012 dichiarato)
+- **SCOPERTO**: due motori di orchestrazione entrambi canonici da 8 giorni; i criteri delle
+  sentinelle esistevano gia' in `company/Sentinels/` ma nessun agente li citava; Digital
+  Empire non misura un solo euro
