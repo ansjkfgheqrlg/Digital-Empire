@@ -1,3 +1,26 @@
+## 🎬 2026-09-03 — EMPERATOR: YouTube — video-05 in caricamento, 3 video sbloccati sulle pubblicita' — CP-20260903-004/006/007
+
+Ordine di Max: recap YouTube + produrre un video senza fermarsi. Video-05 prodotto (Fliki reale,
+272 MB), copertina fatta da Max, script SEO 100/100. Upload su YouTube Studio inciampato piu'
+volte (3x "Upload interrupted" reale) — causa vera trovata: i MIEI script di controllo aprivano
+altre finestre sullo stesso profilo Chrome e interferivano con quella che stava caricando
+davvero. **Alla chiusura sessione: video-05 in caricamento a ~22% e salgono, browser NON va
+toccato finche' non arriva a stato finale** (dettagli in CP-20260903-007).
+
+**Trovato e chiuso un bug che costava soldi**: 3 video pubblici avevano le pubblicita' spente
+(zero incasso, mai nessuno le aveva attivate dopo l'upload — Google le lascia OFF di default).
+2 sistemati e confermati Ads ON, 1 bloccato per un claim copyright reale sulla musica (non un
+nostro errore). **Nuova regola permanente di Max: ogni video deve guadagnare**, mai piu' lasciato
+spento — automatizzato in `youtube_uploader_playwright.py` (`ads_on_after_upload()`), insieme al
+fix del bug Visibilita' (falso positivo) e alla chiusura prematura del browser dopo il Save.
+
+**RIPRESA DA**: (1) controllare stato finale di video-05 e attivargli le pubblicita' se non
+gia' fatto; (2) riconciliare la Memory con lo stato reale del canale (video/viste non tracciati,
+trovato un video a 3.715 viste mai censito); (3) batch video-06/07, piano 70gg a giorno 8 con
+solo 5 video reali prodotti. Vedi [CP-20260903-007](checkpoints/CP-20260903-007.md).
+
+---
+
 ## 👑 2026-09-03 — EMPERATOR: il perimetro esce dal repo, e Gael e Neri possono finalmente usarmi — CP-20260902-010 + CP-20260903-002
 
 **Origine.** Gael ha chiesto al suo Claude cosa fosse «Emperator». Risposta onesta e corretta:

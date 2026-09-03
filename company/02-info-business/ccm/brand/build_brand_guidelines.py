@@ -152,7 +152,7 @@ h2.title .soft { color: var(--text-3); font-weight: 300; }
 }
 .page.dark .lead { color: rgba(244,242,246,0.66); }
 
-.body { flex: 1; margin-top: 14mm; display: flex; flex-direction: column; }
+.body { flex: 1; margin-top: 14mm; padding-bottom: 5mm; display: flex; flex-direction: column; }
 .unit { break-inside: avoid; page-break-inside: avoid; }
 .stack > * + * { margin-top: 11mm; }
 .stack-tight > * + * { margin-top: 7.5mm; }
@@ -233,7 +233,7 @@ ul.clean li strong { color: var(--ink); font-weight: 600; }
 
 /* campioni di grana: stessa superficie, tre intensita' */
 .grainrow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6mm; }
-.gspec { position: relative; height: 34mm; border-radius: 3px; overflow: hidden; background: #1c1c1c; }
+.gspec { position: relative; height: 25mm; border-radius: 3px; overflow: hidden; background: #1c1c1c; }
 .gspec::after {
   content: ""; position: absolute; inset: 0;
   background-image: url("__GRAIN__");
@@ -377,7 +377,7 @@ ul.clean li strong { color: var(--ink); font-weight: 600; }
 .page.cover .meta .vl { font-size: 10px; color: rgba(244,242,246,0.85); margin-top: 1.5mm; }
 
 /* ---------------------------------------------------------------- indice */
-.toc-row { display: flex; align-items: baseline; gap: 5mm; padding: 4.6mm 0; break-inside: avoid; }
+.toc-row { display: flex; align-items: baseline; gap: 5mm; padding: 3.5mm 0; break-inside: avoid; }
 .toc-row .n { font-size: 9px; color: var(--orange); width: 8mm; flex: none; font-weight: 600; }
 .toc-row .t { font-size: 11px; font-weight: 500; }
 .toc-row .d { flex: 1; }

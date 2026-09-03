@@ -59,6 +59,10 @@ def scrivi_marcatore(caratteri):
                 "quando": datetime.datetime.now().isoformat(timespec="seconds"),
                 "caratteri": caratteri,
                 "libro": LIBRO,
+                # Contatore delle sveglie dall'ultimo caricamento. Serve alla rilettura
+                # periodica: il libro caricato all'apertura si allontana man mano che la
+                # conversazione cresce, e a un certo punto va riaperto (dottrina 6.14).
+                "sveglie": 0,
             }, f)
     except Exception:
         pass

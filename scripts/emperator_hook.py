@@ -63,6 +63,19 @@ LIBRO_OK = """\
 STATO: dottrina integrale caricata all'apertura (__QUANDO__, __CARATTERI__ caratteri).
 """
 
+# Ogni quante sveglie si ordina di riaprire il libro. 25 messaggi e' il punto in cui
+# la dottrina caricata all'apertura comincia a essere "lontana" in una chat lunga.
+# Costo: ~57.000 caratteri una volta ogni 25 messaggi, contro 34.762 ripetuti SEMPRE.
+RILETTURA_OGNI = 25
+
+RILETTURA = """\
+RILETTURA PERIODICA — sono passati __N__ messaggi da quando la dottrina e' stata caricata.
+In una conversazione lunga il testo dell'apertura si allontana, e il rischio non e' teorico:
+il 2026-09-03 hai disobbedito per tre volte di fila a una regola che ti veniva ripetuta ad
+ogni messaggio. PRIMA di rispondere riapri `.claude/agents/emperator.md` e rileggilo tutto.
+Poi una riga sobria ("riletta la dottrina") e si va avanti: non e' un'impresa, e' il minimo.
+"""
+
 LIBRO_ASSENTE = """\
 ATTENZIONE — NON RISULTA CARICATA. Il hook di apertura non ha lasciato traccia in
 questa macchina. Prima di rispondere a __PERSONA__ apri e leggi TUTTO
@@ -266,9 +279,23 @@ def stato_libro(persona):
             d = json.load(f)
         if not d.get("caratteri"):
             raise ValueError("libro vuoto")
-        return (LIBRO_OK
-                .replace("__QUANDO__", str(d.get("quando", "?")))
-                .replace("__CARATTERI__", "{:,}".format(int(d["caratteri"])).replace(",", ".")))
+
+        # Il contatore vive nel file-spia: sopravvive fra un messaggio e l'altro,
+        # che e' esattamente cio' che questo processo, da solo, non puo' fare.
+        n = int(d.get("sveglie", 0)) + 1
+        d["sveglie"] = n
+        try:
+            with io.open(emperator_boot.marcatore_path(), "w", encoding="utf-8") as f:
+                json.dump(d, f)
+        except Exception:
+            pass
+
+        testo = (LIBRO_OK
+                 .replace("__QUANDO__", str(d.get("quando", "?")))
+                 .replace("__CARATTERI__", "{:,}".format(int(d["caratteri"])).replace(",", ".")))
+        if n % RILETTURA_OGNI == 0:
+            testo += "\n" + RILETTURA.replace("__N__", str(n))
+        return testo
     except Exception:
         return LIBRO_ASSENTE.replace("__PERSONA__", persona)
 

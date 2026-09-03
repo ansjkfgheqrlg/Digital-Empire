@@ -38,11 +38,12 @@ def build(page, title_block) -> None:
         ("07", "L&rsquo;argento è la firma", "09"),
         ("08", "Tipografia", "10"),
         ("09", "I componenti", "11"),
-        ("10", "Superfici e grana", "12"),
-        ("11", "Le applicazioni del lancio", "13"),
-        ("12", "Il confronto misurato", "14"),
-        ("13", "Cosa non facciamo", "15"),
-        ("14", "Checklist di conformità", "16"),
+        ("10", "Superfici", "12"),
+        ("11", "La grana", "13"),
+        ("12", "Le applicazioni del lancio", "14"),
+        ("13", "Il confronto misurato", "15"),
+        ("14", "Cosa non facciamo", "16"),
+        ("15", "Checklist di conformità", "17"),
     ]
     rows = "".join(
         f'<div class="toc-row"><span class="n mono">{n}</span><span class="t">{t}</span>'
@@ -53,7 +54,7 @@ def build(page, title_block) -> None:
         title_block(
             "",
             "Indice",
-            'Quattordici capitoli. <span class="soft">Ogni regola è verificabile.</span>',
+            'Quindici capitoli. <span class="soft">Ogni regola è verificabile.</span>',
             "Non è un catalogo di gusti. Ogni capitolo chiude con qualcosa che si controlla a occhio o "
             "con un contagocce: o la regola è rispettata, o non lo è. Le regole che non si possono "
             "verificare non sono entrate in questo documento.",
@@ -430,8 +431,8 @@ def build(page, title_block) -> None:
     page(
         title_block(
             "10",
-            "Superfici e grana",
-            'Tre fondi che si alternano, <span class="soft">e una texture che non si spegne mai.</span>',
+            "Superfici",
+            'Tre fondi. <span class="soft">Un cambio di fondo è un evento.</span>',
         )
         + '<div class="body stack">'
         + '<div class="unit"><div class="grid3">'
@@ -452,14 +453,10 @@ def build(page, title_block) -> None:
         + '<p class="note">Un cambio di fondo è un evento: annuncia che cambia il discorso. Se i fondi si '
         "alternano a ogni sezione, non annunciano più niente. <strong>Da due a tre inversioni in tutta una "
         "pagina lunga</strong>, non una ogni schermata.</p></div>"
-        + '<div class="unit"><div class="kicker"><span class="n">B</span>La grana</div>'
-        + '<p class="note">Due strati sovrapposti, sempre attivi, su tutto: uno a <span class="mono">0.55</span> '
-        'in <span class="mono">overlay</span>, uno a <span class="mono">0.28</span> in '
-        '<span class="mono">hard-light</span>. È la cosa che rende le nostre superfici materiche invece che '
-        "digitali, e nessun concorrente italiano sullo stesso argomento ce l&rsquo;ha.</p>"
-        + '<p class="note" style="margin-top:3mm"><strong>In stampa non si usa il filtro SVG.</strong> Chromium lo '
-        "rasterizza e il file supera i 16 MB: nei PDF la grana è un PNG ripetuto, come in questo documento. "
-        "Sopra al testo piccolo si scende al 13% di opacità, altrimenti sporca la lettura.</p></div>"
+        + '<div class="unit"><div class="kicker"><span class="n">B</span>Quale fondo, quando</div>'
+        + '<p class="note">L&rsquo;inchiostro apre e chiude sempre: è la voce della casa. La carta sta dove si '
+        "legge a lungo, e non è un ripiego ma un riposo. Il grigio esiste per una ragione sola: senza di lui "
+        "l&rsquo;alternanza nero-bianco diventa un lampeggio, e a metà pagina il lettore smette di vederla.</p></div>"
         + '<div class="unit" style="margin-top:auto"><div class="kicker">Come si verifica</div>'
         + '<p class="note">Conta i cambi di fondo del pezzo. Più di tre in una pagina significa che nessuno di '
         "quei cambi sta dicendo qualcosa.</p></div>"
@@ -468,10 +465,63 @@ def build(page, title_block) -> None:
         num=12,
     )
 
-    # ===================================================================== 11 applicazioni
+    # ===================================================================== 11 la grana
     page(
         title_block(
             "11",
+            "La grana",
+            'La materia è nostra. <span class="soft">Loro la nascondono.</span>',
+            "È la cosa che si nota per ultima e si ricorda per prima: rende le superfici materiche invece "
+            "che digitali. Non è un effetto, è la texture della carta su cui stampiamo tutto.",
+        )
+        + '<div class="body stack">'
+        + '<div class="unit"><div class="grainrow">'
+        '<div><div class="gspec g0"><span class="tag">Assente</span></div>'
+        '<div class="gcap">Digitale, piatto, indistinguibile da qualunque altro fondo scuro.</div></div>'
+        '<div><div class="gspec g1"><span class="tag">13% — stampa</span></div>'
+        '<div class="gcap">Sotto al testo piccolo. Si sente al tatto e non sporca la lettura.</div></div>'
+        '<div><div class="gspec g2"><span class="tag">Piena — schermo</span></div>'
+        '<div class="gcap">Titoli, copertine, superfici senza testo lungo. Qui è dichiarata.</div></div>'
+        "</div></div>"
+        + '<div class="unit"><div class="kicker"><span class="n">A</span>Com&rsquo;è fatta, esattamente</div>'
+        + '<p class="note">Due strati sovrapposti, sempre attivi, su tutto il documento e su tutto il sito: '
+        'uno a <span class="mono">0.55</span> in <span class="mono">overlay</span>, uno a '
+        '<span class="mono">0.28</span> in <span class="mono">hard-light</span>. Due strati e non uno: '
+        "il primo dà il corpo, il secondo rompe la regolarità del primo. Con uno solo si vede il "
+        "reticolo e sembra un filtro.</p></div>"
+        + '<div class="unit"><div class="kicker"><span class="n">B</span>Perch&eacute; la teniamo alta, e loro no</div>'
+        + '<p class="note">Nello studio del settore la texture c&rsquo;è anche dagli altri, ma sussurrata: '
+        "il concorrente diretto usa un <strong>reticolo sottile appena percettibile</strong> sulle sezioni scure, "
+        "il sito hub di Andrei Pascu una <strong>mezzatinta a punti quasi invisibile</strong>. Sono scelte "
+        "difensive: aggiungono materia sperando che nessuno se ne accorga.</p>"
+        + '<p class="note" style="margin-top:3mm"><strong>Noi facciamo l&rsquo;opposto: la nostra grana si vede, '
+        "e si deve vedere.</strong> È la sola parte del sistema che nessuno può copiarci per sbaglio, perché "
+        "copiarla richiede di decidere che il rumore è un pregio. Chi la spegne per far sembrare una pagina "
+        "«più pulita» ci lascia con un arancione che è anche del concorrente.</p></div>"
+        + '<div class="unit"><div class="kicker"><span class="n">C</span>Le quattro regole</div>'
+        + '<ul class="clean">'
+        "<li><strong>Non si spegne mai.</strong> Nessuna superficie di marca esce senza grana: né una slide, "
+        "né una thumbnail, né un PDF, né una storia.</li>"
+        "<li><strong>Scende al 13% sotto il testo piccolo.</strong> Sopra i 14px sta piena; sotto, se resta piena, "
+        "il lettore si stanca senza sapere perché.</li>"
+        "<li><strong>In stampa è un PNG ripetuto, mai un filtro SVG.</strong> Chromium rasterizza il filtro e "
+        "il file passa i 16 MB. Questo documento: 18 pagine con grana, sotto il megabyte.</li>"
+        "<li><strong>Non va sopra i volti né sopra uno screenshot di codice.</strong> Sui volti sporca la pelle, "
+        "sul codice rende ambigue le lettere. Lì la superficie sta sotto, la grana intorno.</li>"
+        "</ul></div>"
+        + '<div class="unit" style="margin-top:auto"><div class="kicker">Come si verifica</div>'
+        + '<p class="note">Ingrandisci un dettaglio del pezzo al 400%. Se il fondo è una campitura uniforme, '
+        "la grana non c&rsquo;è e il pezzo non è nostro.</p></div>"
+        + "</div>",
+        kind="dark",
+        head="11 · Grana",
+        num=13,
+    )
+
+    # ===================================================================== 11 applicazioni
+    page(
+        title_block(
+            "12",
             "Le applicazioni del lancio",
             'Quattro superfici. <span class="soft">Stesse regole, misure diverse.</span>',
         )
@@ -501,8 +551,8 @@ def build(page, title_block) -> None:
         "<li>Nessuna linea di separazione: lo stacco si fa con lo spazio, come in questo documento.</li>"
         "</ul></div>"
         + "</div>",
-        head="11 · Applicazioni",
-        num=13,
+        head="12 · Applicazioni",
+        num=14,
     )
 
     # ===================================================================== 12 confronto
@@ -530,7 +580,7 @@ def build(page, title_block) -> None:
     body += "</div>"
     page(
         title_block(
-            "12",
+            "13",
             "Il confronto misurato",
             'Dove siamo uguali, <span class="soft">e dove possiamo vincere.</span>',
             "Righe in arancione: il terreno su cui possiamo distinguerci scegliendo. Righe neutre: il terreno su "
@@ -542,8 +592,8 @@ def build(page, title_block) -> None:
         "pubblico che paga. Sulla profondità tecnica lo battiamo già oggi — lui ha una lezione sul terminale, noi "
         "un corso intero. <strong>La riga che ci manca è l&rsquo;ultima: lui dichiara 14 recensioni vere, noi zero.</strong> "
         "Nessuna scelta grafica di questo documento vale quanto le prime dieci testimonianze reali del lancio.</p></div></div>",
-        head="12 · Confronto",
-        num=14,
+        head="13 · Confronto",
+        num=15,
     )
 
     # ===================================================================== 13 cosa non facciamo
@@ -569,7 +619,7 @@ def build(page, title_block) -> None:
     )
     page(
         title_block(
-            "13",
+            "14",
             "Cosa non facciamo",
             'Sei divieti. <span class="soft">Valgono più di sei permessi.</span>',
             "La restrizione è la prova di competenza più economica che esista: dice al lettore che abbiamo "
@@ -579,8 +629,8 @@ def build(page, title_block) -> None:
         + '<div class="unit" style="margin-top:auto"><div class="kicker">Come si verifica</div>'
         + '<p class="note">Apri l&rsquo;ultimo pezzo pubblicato e cerca uno solo di questi sei. Se lo trovi, '
         "quel pezzo non è uscito da queste linee — e va corretto prima del prossimo, non dopo.</p></div></div>",
-        head="13 · Limiti",
-        num=15,
+        head="14 · Limiti",
+        num=16,
     )
 
     # ===================================================================== 14 checklist
@@ -604,15 +654,15 @@ def build(page, title_block) -> None:
     )
     page(
         title_block(
-            "14",
+            "15",
             "Checklist di conformità",
             'Dodici controlli. <span class="soft">Prima che il pezzo esca.</span>',
             "Nessuno di questi richiede una discussione sul gusto: si guardano e si rispondono. Un pezzo che non "
             "passa tutti e dodici non è pronto, anche se è bello.",
         )
         + f'<div class="body">{items}</div>',
-        head="14 · Controllo",
-        num=16,
+        head="15 · Controllo",
+        num=17,
     )
 
     # ===================================================================== colophon
