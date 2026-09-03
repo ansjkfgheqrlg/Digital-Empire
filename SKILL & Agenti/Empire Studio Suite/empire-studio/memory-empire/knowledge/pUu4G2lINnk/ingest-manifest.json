@@ -1,0 +1,71 @@
+{
+  "video_id": "pUu4G2lINnk",
+  "title": "Insane Claude Design Skills You Actually Need To Build Beautiful Sites",
+  "channel": "Jack Roberts",
+  "url": "https://www.youtube.com/watch?v=pUu4G2lINnk",
+  "run": "max17-v11-roberts-design",
+  "run_path": "empire-studio/runs/max17-v11-roberts-design",
+  "category": "max17-cross-model-review",
+  "topic": "design system estratto da referimento / sitemap AI / hero image generation / design loop critic / mobile audit / de-slopification copy / UI sniping / SEO",
+  "duration_s": 1376,
+  "duration_human": "22m56s",
+  "language": "en",
+  "format": "talking-head + deck HTML servito in locale (127.0.0.1:5497) + screen-share (refers.design, Relume, Claude Desktop, Higgsfield, Savee, 21st.dev, Flaticon, claude-seo, Vercel) + b-roll del Claude Code OS personale dell'autore",
+  "ingested_at": "2026-09-03",
+  "stageC_date": "2026-09-03",
+  "frames": {
+    "total_dense": 688,
+    "interval_sec": 2.0,
+    "unique_scenes": 270,
+    "frames_cited_by_number_in_text": 108,
+    "frames_cited_fullscreen": 89,
+    "frames_cited_via_zoom_crop": 19,
+    "zoom_crops_made_not_cited_in_prose": 2,
+    "scenes_covered": 108,
+    "scenes_not_covered": 162,
+    "all_read_native_vision": false,
+    "coverage_pct_scenes": 40.0,
+    "coverage_pct_total_frames": 15.7,
+    "frames_unreadable": 0,
+    "no_finto_status": "PASS con copertura parziale dichiarata E discrepanza di conteggio dichiarata, non corretta silenziosamente",
+    "note": "L'intestazione originale di video-analysis.md (scritta dalla sessione che ha fatto la visione) dichiarava 182/270 frame guardati. La verifica Stage 5 eseguita in una sessione separata (questa) ha potuto tracciare con evidenza P12 (citazione esplicita frame-NNN.png nel testo, incrociata con scenes.json) solo 108/270. Il numero 182 non e' stato confermato ne' smentito con gli artefatti su disco: riportato come non dimostrato. Ogni capitolo (9, da ingest.json) ha copertura maggiore di zero. Dettaglio completo, capitolo per capitolo, in coverage.md."
+  },
+  "transcript": {
+    "file": "pUu4G2lINnk.en.vtt",
+    "clean_file": "transcript_clean.txt",
+    "language": "en",
+    "kind": "auto-generated captions",
+    "segments_clean": 760,
+    "all_lines_read": true,
+    "timestamps_preserved": true
+  },
+  "knowledge_atoms": 67,
+  "knowledge_atoms_osservati": 66,
+  "knowledge_atoms_inferiti": 1,
+  "prompts_transcribed_verbatim": 9,
+  "output_files": {
+    "video_analysis": "empire-studio/runs/max17-v11-roberts-design/video-analysis.md",
+    "atoms": "empire-studio/runs/max17-v11-roberts-design/atoms.json",
+    "coverage": "empire-studio/runs/max17-v11-roberts-design/coverage.md",
+    "contenuto_integrale": "empire-studio/memory-empire/knowledge/pUu4G2lINnk/contenuto-integrale.md",
+    "enrichment_report": "empire-studio/memory-empire/knowledge/pUu4G2lINnk/enrichment-report.md",
+    "wiki_page": "second-brain-vault/wiki/sources/Source_Jack_Roberts_7_Claude_Design_Skills.md"
+  },
+  "key_artifacts_extracted": [
+    "Le sette skill/livelli: Reference, The Whole Map, The Scroll-Stopper, Mobile, De-slopification, Icons+Showstoppers, SEO-ification",
+    "Il file DESIGN.md di refers.design: struttura completa (tokens colore con descrizione di ruolo in prosa, tokens tipografici, type scale) trascritta con zoom 4x",
+    "L'invariante del Design Loop: 'a critic that shares memory with the builder is grading its own homework' — adattamento dichiarato del Gauntlet Loop di Matt Shumer",
+    "I 4 meccanismi della skill Design Loop (teardown in bar.md, tre critici a brief distinti, preflight, model tiering)",
+    "La tabella dei 6 Signs of AI writing (tell + prima/dopo + regola)",
+    "9 prompt trascritti verbatim (Relume, Claude Desktop, Higgsfield MCP, componente su misura, mobile, UI sniping, SEO in 5 mosse, deploy, invocazione /design loop)",
+    "Il deliverable SEO reale di Glaido (351 keyword, tabella KEYWORD/VOL/DEMAND/DIFFICULTY/VERDICT/WHY)",
+    "Il pannello 'Dream Review' del Claude Code OS personale dell'autore (cron notturno che analizza 7 giorni di log e propone fix con risparmio stimato)"
+  ],
+  "patches_applied": [],
+  "patches_proposed_not_applied": [
+    ".claude/agents/guild-design.md - proposta (non scritta): l'invariante del Design Loop come regola di review esplicita (il critico non deve condividere la memoria del costruttore) — gap verificato con grep, reale",
+    ".claude/skills/site-design/SKILL.md - proposta (non scritta): 390px come larghezza operativa esplicita dell'audit mobile, accanto alla riga esistente 'Mobile-first nei token' (riga 509) — gap verificato con grep, reale",
+    ".claude/skills/copy-editing/SKILL.md - proposta (non scritta): estendere la tabella di sostituzione esistente (righe 327-334, gia' in produzione, copre 3/6 parole bandite) con i 3 tell strutturali mancanti (three-item flourish, empty superlatives, m-dash pileup, numeri inventati) nel formato tell+regola+esempio prima/dopo — gap verificato, PIU' STRETTO di quanto dichiarato dall'analisi originale (la tabella lessicale esiste gia')"
+  ],
+  "trace": "Empire Studio - run max17-v11-roberts-design, ingest yt-dlp 2026-09-02/03, visione + atomi (sessione precedente, interrotta per limite di sessione), verifica coverage + wiki + memory close 2026-09-03 (questa sessione, ripresa da company/Memory/riprese/EMP-QQ2R.md)"
+}

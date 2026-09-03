@@ -1,5 +1,42 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-03 (EMPIRE STUDIO — chiusura ciclo pUu4G2lINnk, batch max17 v11, sentinella studia-roberts ripresa)
+- INGEST (Empire Studio + Memory Empire): batch `max17`, video `pUu4G2lINnk` "Insane Claude
+  Design Skills You Actually Need To Build Beautiful Sites" (Jack Roberts, 22m56, EN). Sentinella
+  `studia-roberts` morta per limite di sessione con visione+analisi gia' completa su disco
+  (`video-analysis.md` 1199 righe, `atoms.json` 67 KA) -- mancava `coverage.md` (buco stage-5) e
+  gli stage 6-9 (wiki, consigli, memory close). Scritto in questa sessione: `coverage.md` (verifica
+  onesta della copertura, non solo compilazione del numero dichiarato in testa a
+  `video-analysis.md`), **1 pagina wiki creata**
+  (`sources/Source_Jack_Roberts_7_Claude_Design_Skills.md`), index.md aggiornato (sezione
+  "Metodologie di Sviluppo") -> `empire-studio/knowledge/pUu4G2lINnk/` (contenuto integrale).
+- VERIFICA STAGE 5 -- discrepanza trovata e dichiarata, non corretta in silenzio: l'intestazione
+  di `video-analysis.md` dichiarava "182/270 frame unici guardati". Il conteggio delle citazioni
+  esplicite `frame-NNN.png` nel corpo del testo, incrociato con `scenes.json`, da **108/270
+  (40,0%)**, non 182. Non ho potuto confermare il numero piu' alto con evidenza tracciabile (P12):
+  riportato come "non dimostrato", non come falso -- dettaglio completo in `coverage.md`. Ogni
+  capitolo del video (9, da `ingest.json`) ha comunque copertura maggiore di zero.
+- CONTENUTO: sette skill (Reference -> Sitemap -> Hero -> Mobile -> Copy -> Dettagli UI -> SEO)
+  per costruire siti che convertono, non solo belli. Il pezzo di maggior valore: l'invariante del
+  **Design Loop** ("un critico che condivide la memoria del costruttore giudica i suoi stessi
+  compiti", adattamento dichiarato del Gauntlet Loop di Matt Shumer -- lo stesso citato nel video
+  di Rizzo dello stesso batch) e la tabella dei **6 Signs of AI writing** (regola + esempio
+  prima/dopo per ciascuno). Demo reale: sito Ridgeline (copertura tetti) costruito dal vivo con
+  Relume + Higgsfield + refers.design.
+- CONSIGLI verificati con grep prima di essere scritti (non dichiarati per fiducia): (1) nessun
+  file in `.claude/agents/` (guild-design, sentinel-quality, apex-critic) formula l'invariante
+  "il critico non deve condividere la memoria del costruttore" -- gap reale; (2) nessun agente/
+  skill ha il numero operativo "390px" per l'audit mobile -- gap reale ma la disciplina
+  mobile-first esiste gia' in `site-design/SKILL.md`; (3) la tabella "Signs of AI writing" del
+  video e' PIU' STRETTA di quanto sembrasse: `copy-editing/SKILL.md` (righe 327-334) ha gia' una
+  tabella di sostituzione lessicale che copre 3 delle stesse parole bandite (Leverage, Robust,
+  Seamless) -- quello che manca e' il livello frase (tell strutturali: three-item flourish,
+  empty superlatives, m-dash pileup, numeri inventati), non la lista di parole. **0 patch
+  applicate**, 4 proposte in "Consigli" nella pagina wiki, coerente col perimetro del checkpoint
+  `EMP-QQ2R` (nessuna modifica a skill/agenti condivisi mentre altre sentinelle lavoravano in
+  parallelo sullo stesso repo).
+- Checkpoint: vedi `company/Memory/checkpoints/` (numero assegnato a fine lavoro).
+
 ## 2026-09-03 (EMPIRE STUDIO — chiusura ciclo BSUHmVcaO1g, batch max17 v07, sentinella studia-rizzo ripresa)
 - INGEST (Empire Studio + Memory Empire): batch `max17`, video `BSUHmVcaO1g` "Se usi ancora i
   prompt... devi vedere questa evoluzione" (Simone Rizzo, 31m23s, IT). Sentinella `studia-rizzo`
