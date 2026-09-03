@@ -67,20 +67,29 @@ non risultava vero sul disco. Le sentinelle di recupero hanno verificato tutto c
 prima di fidarsi e corretto i manifest — ma il pattern (auto-dichiarazione non verificata
 prima del crash) è **da controllare strutturalmente**, non solo corretto caso per caso.
 
-**Quattro video con i fotogrammi pronti e mai guardati — PROSSIMI:**
+**CORREZIONE 2026-09-03 22:0x — il "quattro video mai guardati" era sbagliato, verificato
+sul disco prima di lanciare le sentinelle:**
 
-| Run | Titolo | Fotogrammi |
-|---|---|---|
-| `max17-v12` | Insane Claude Design Skills — costruire siti belli | 345 |
-| `max17-v13` | Se usi ancora i prompt... devi vedere questa evoluzione | 472 |
-| `max17-v14` | Become a Master Storyteller (il trucco della dopamina) | 390 |
-| `max17-v16` | Come creare un micro-personal brand da milioni di euro | 859 |
+| Run | id | Titolo reale | Stato vero |
+|---|---|---|---|
+| `max17-v12` | `pUu4G2lINnk` | Insane Claude Design Skills | **DOPPIONE di v11-Roberts, già chiuso** — stesso id/titolo/durata, non lanciare |
+| `max17-v13` | `BSUHmVcaO1g` | Se usi ancora i prompt... | **DOPPIONE di v07-Rizzo, già chiuso** — stesso id/titolo/durata, non lanciare |
+| `max17-v14` | `P-BQ-AGS0ck` | Become a Master Storyteller | genuinamente nuovo, 390 frame — **DA FARE** |
+| `max17-v16` | `gUnQK6bWHkI` | Micro-personal-brand da milioni | genuinamente nuovo, 859 frame, verificato unico — **DA FARE** |
+
+**`max17-v09-vishen-story` non contiene Vishen**: dentro c'è lo stesso video di v14
+(`P-BQ-AGS0ck`, Master Storyteller), scaricato parziale il 2026-09-02 (30MB vs 78MB di v14).
+Il video vero di Vishen (Mindvalley) **non risulta scaricato da nessuna parte** — va
+recuperato con un task di ricerca a parte, non e' un video "mai iniziato" come diceva la
+versione precedente di questo checkpoint: è un video **mai nemmeno trovato**.
+
+**Causa probabile**: un batch di ingest lanciato il 2026-09-03 13:31 (v12,v13,v14 hanno
+tutti lo stesso timestamp) ha ri-scaricato url già usate — bug nella lista sorgente, non
+nel motore di ingest. Da controllare quando si torna sull'ingest, non ora (Fase 1 = studio).
 
 **Due video mai scaricati:** `rvpRQD43wdY` (**Beggiato, guida agenzia, 4h17** — le
 trascrizioni ci sono già in `runs/max-17-2026-09/subs/`) e **Justin Sung 4h55**, di cui
 non ho l'indirizzo da nessuna parte.
-
-**`max17-v09-vishen-story`** (779 fotogrammi) — mai iniziato.
 
 ---
 

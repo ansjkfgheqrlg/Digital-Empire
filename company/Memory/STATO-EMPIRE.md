@@ -1,8 +1,20 @@
-## ⚠️ COORDINAMENTO — 2026-09-03 21:5x — EMPERATOR, giro 2 EMP-QQ2R (mai fermarsi)
+## ⚠️ CORREZIONE + COORDINAMENTO — 2026-09-03 22:0x — EMPERATOR, giro 2 EMP-QQ2R vero
 
-3 sentinelle in swarm su `runs/max17-v12`, `runs/max17-v13`, `runs/max17-v14` — video mai
-guardati, pipeline da zero (frame gia' estratti). Nessuno tocchi queste 3 cartelle finche'
-non arriva CP con esito. `max17-v16` (859 frame, il piu' pesante) resta per il giro dopo.
+**Il piano di 10 minuti fa era sbagliato — controllato PRIMA di lanciare, non dopo.**
+`runs/max17-v12` (id `pUu4G2lINnk`) e `runs/max17-v13` (id `BSUHmVcaO1g`) NON sono video
+nuovi: sono **doppioni** — v12 e' lo stesso video gia' chiuso come Roberts (v11), v13 e' lo
+stesso video gia' chiuso come Rizzo (v07), stesso id/titolo/durata, scaricati una seconda
+volta il 2026-09-03 13:31 (probabile bug dell'ingest, url ripetuta nel batch). **Non li
+lancio**, sarebbe stato lavoro doppio e wiki duplicata.
+
+**Trovato anche**: `runs/max17-v09-vishen-story` non contiene affatto Vishen — dentro c'e'
+lo stesso video di v14 ("Become a Master Storyteller", id `P-BQ-AGS0ck`), scaricato parziale
+il 2026-09-02 (30MB contro i 78MB completi di v14). Il video vero di Vishen non risulta mai
+scaricato da nessuna parte. Va cercato/riscaricato — task separato, non blocca questo giro.
+
+**Giro vero, 2 sentinelle** (non 3): `runs/max17-v14` (Storyteller, 390 frame) e
+`runs/max17-v16` (Micro-personal-brand, id `gUnQK6bWHkI`, 859 frame — verificato unico,
+non compare in nessun altro run). Nessuno tocchi queste 2 cartelle finche' non arriva CP.
 Codice di ripresa: **EMP-QQ2R**. Ordine di Max: Fase 1 = solo studio, Fase 2 (implementazione
 dei consigli) rimandata a dopo, esplicito.
 
