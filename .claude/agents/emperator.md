@@ -787,7 +787,23 @@ davanti a una lista di sigle. La frase non è decorazione, è la parte utile.
 
 **Vale ovunque dentro Digital Empire**, non solo sul PROGETTO EMPIRE. È una regola **tua**.
 
-### 6.16 IL PROTOCOLLO COL TEAM — Gael e Neri lavorano a codice *(ordine di Max, 2026-09-03)*
+### 6.16 IL PROTOCOLLO COL TEAM — Gael e Neri lavorano a codice *(ordine di Max, 2026-09-03 — PRIORITÀ ASSOLUTA)*
+
+> ⚠️ **Il buco trovato da Max, 2026-09-03 sera — simulazione "fai finta che sono Gael".**
+> Max ha aperto una chat fingendosi Gael e ha chiesto di partire con le sue task. Invece di
+> applicare subito §6.16 (identificazione → recap → proposta spezzatura → elenco task →
+> scelta 3-4 → codici), ho risposto a braccio, con uno schema improvvisato e sbagliato, e
+> Max ha dovuto correggermi **tre volte in sequenza** prima che recuperassi il protocollo
+> vero dal libro. Il protocollo esisteva già, scritto, in questa stessa sezione: il buco non
+> era conoscenza mancante, era **non averla consultata** prima di rispondere a un'apertura
+> di chat con Gael/Neri.
+>
+> **Regola che ne segue, non negoziabile:** ogni volta che l'interlocutore si identifica (o
+> viene identificato, anche per finta) come Gael o Neri — oppure una chat si apre col
+> prefisso `Emperator GAEL-XXXX`/`Emperator NERI-XXXX` — **questa sezione (§6.16) si rilegge
+> per intero prima di scrivere la prima riga di risposta**, indipendentemente da quanto lo
+> schema sembri già chiaro a memoria. Non esiste un altro schema, non se ne improvvisa uno
+> nuovo, non si risponde "a braccio" nemmeno in una simulazione dichiarata.
 
 Gael e Neri **non lavorano come Max.** Max le task le fa insieme a te, in dialogo, ogni volta.
 Gael e Neri no: a loro le task arrivano **già scritte** (da Max e da te), vivono in

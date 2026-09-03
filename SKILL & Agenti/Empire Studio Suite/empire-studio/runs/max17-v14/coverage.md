@@ -29,28 +29,28 @@ A differenza di altri run del lotto (dove si è tentato di leggere il 100% dei `
 286, 291, 296, 301, 306, 311, 316, 322, 326, 331, 336, 341, 345, 351, 356, 361, 365, 372, 376,
 381, 386
 
-**Verifica mirata aggiuntiva (5)**:
-050, 124, 210 *(già nel campione sistematico, riletto per verifica mirata)*, 283, 389
-
-*(nota: 210 compare in entrambi gli elenchi — è stato aperto una sola volta, contato una sola volta nel totale 83)*
+**Verifica mirata aggiuntiva (5, tutti distinti dal campione sistematico — verificato programmaticamente, nessuna sovrapposizione)**:
+050, 124, 210, 283, 389
 
 ## Copertura per capitolo (`ingest.json`, 10 capitoli)
 
-| Capitolo | Timestamp | Durata | Frame-scena disponibili (`scenes.json`) | Frame guardati | Copertura |
-|---|---|---|---|---|---|
-| Why Some Speakers Get Forgotten | 0:00–2:34 | 154s | 40 | 9 | 22,5% |
-| Learn HSTSS | 2:34–3:22 | 48s | 12 | 3 | 25,0% |
-| Craft The Hook | 3:22–8:18 | 296s | 74 | 15 | 20,3% |
-| Add The Stakes | 8:18–10:04 | 106s | 27 | 6 | 22,2% |
-| The Story Of The Couch | 10:04–14:03 | 239s | 60 | 14 | 23,3% |
-| Find The Turn | 14:03–18:49 | 286s | 72 | 16 | 22,2% |
-| Build The Scene | 18:49–19:57 | 68s | 17 | 4 | 23,5% |
-| Land The Shadow (Shatter) | 19:57–21:27 | 90s | 23 | 6 | 26,1% |
-| Scale It Like Silva Ultra Mind | 21:27–24:07 | 160s | 40 | 8 | 20,0% |
-| Avoid These Mistakes | 24:07–25:55 | 108s | 27 | 7 | 25,9% |
-| **Totale** | | 1555s | **~338*** | **83*** | **~24,6%** |
+Contata programmaticamente (script Python, in questa sessione) incrociando `scenes.json` con i confini reali dei 10 capitoli e con l'elenco esatto degli 83 frame guardati:
 
-*I conteggi per capitolo sono una stima ottenuta mappando i timestamp dei frame-scena e dei frame guardati sui confini di `ingest.json` (arrotondamento sui secondi); la somma dei "frame-scena disponibili" per capitolo può differire di 1-2 unità dal totale esatto 338 per effetto di arrotondamento ai confini di capitolo. **Ogni capitolo ha copertura non-zero e superiore al 20%**, distribuzione deliberatamente uniforme per il campionamento a intervalli fissi (non concentrata su un solo capitolo).
+| Capitolo | Timestamp | Frame-scena (`scenes.json`) | Frame guardati | Copertura |
+|---|---|---|---|---|
+| Why Some Speakers Get Forgotten | 0:00–2:34 | 38 | 8 | 21,1% |
+| Learn HSTSS | 2:34–3:22 | 10 | 4 | 40,0% |
+| Craft The Hook | 3:22–8:18 | 63 | 15 | 23,8% |
+| Add The Stakes | 8:18–10:04 | 22 | 6 | 27,3% |
+| The Story Of The Couch | 10:04–14:03 | 54 | 13 | 24,1% |
+| Find The Turn | 14:03–18:49 | 62 | 15 | 24,2% |
+| Build The Scene | 18:49–19:57 | 17 | 3 | 17,6% |
+| Land The Shadow (Shatter) | 19:57–21:27 | 16 | 5 | 31,2% |
+| Scale It Like Silva Ultra Mind | 21:27–24:07 | 35 | 8 | 22,9% |
+| Avoid These Mistakes | 24:07–25:55 | 21 | 6 | 28,6% |
+| **Totale** | | **338** | **83** | **24,6%** |
+
+**Ogni capitolo ha copertura non-zero, tra 17,6% e 40,0%** — nessuna sezione del video è rimasta completamente scoperta. Il capitolo più debole è **Build The Scene** (17,6%, il più breve dopo Learn HSTSS, solo 3 frame guardati) e merita una seconda passata se serve materiale aggiuntivo su questo passo specifico.
 
 ## Perché il campionamento sistematico è dichiarato onesto (non "NO-FINTO")
 
