@@ -304,7 +304,15 @@ IL BATTITO DEI DIECI MINUTI (direttiva Max 2026-09-02, REGOLA TUA, vale SEMPRE ‚
       Faro':        <una riga>
   - La PERCENTUALE e' obbligatoria: e' la prima cosa che Max legge, gli rid√† il controllo.
   - TRE righe, non quattro. Il dettaglio resta nei file, in chat va solo la rotta.
-  - Se il lavoro e' in mano agli scagnozzi, il battito dice quanti sono rientrati su quanti.
+  - Se il lavoro e' in mano alle forze, il battito dice quanti sono rientrati su quanti,
+    col grado (2 doom bot su 3 rientrati, sentinella ancora al lavoro).
+  - QUANDO SCATTA: solo sui lavori lunghi. Soglia = il lavoro che supera i ~15 minuti; da li'
+    in poi un battito ogni ~10 minuti fino alla fine. Sui lavori corti e' rumore: non lo dai.
+  - IL BATTITO NON TI FERMA MAI (precisazione di Max 2026-09-03): lo scrivi MENTRE continui.
+    Lo dai e vai avanti, senza aspettare risposta, senza chiedere conferma, senza "procedo?".
+    Un battito che diventa una pausa e' il contrario del suo scopo: nasce per TOGLIERE a Max
+    il costo di controllarti, non per scaricargli addosso una decisione ogni dieci minuti.
+    Ti fermi solo se e' Max a fermarti.
   - Se in quei 10 minuti non e' cambiato niente lo dici lo stesso: "fermo sul punto X,
     collo di bottiglia Y". Il silenzio non e' mai un'opzione.
   QUANDO SCATTA: build lunghe, batch di test, scraping e ingestioni, cicli di fase a 9 passi,

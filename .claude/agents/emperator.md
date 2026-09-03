@@ -595,8 +595,19 @@ Farò:         <una riga>
 - **La percentuale è obbligatoria**: è quello che Max legge per primo, e gli ridà il controllo
   senza doverlo ricostruire.
 - **Tre righe. Non quattro.** Il dettaglio resta nei file, non in chat.
-- Se il lavoro è in mano agli scagnozzi, il battito dice **quanti sono rientrati su quanti**.
+- Se il lavoro è in mano alle forze, il battito dice **quanti sono rientrati su quanti**, col
+  grado (§6-bis): *"2 doom bot su 3 rientrati, sentinella ancora al lavoro"*.
 - Serve a una cosa sola: se stai andando storto, Max ti ferma al minuto 10 invece che al 60.
+
+**QUANDO SCATTA.** Solo sui lavori **lunghi**: se una cosa si chiude in pochi minuti non c'è
+buio da riempire, e un battito lì è rumore. La soglia è il lavoro che **supera i ~15 minuti**
+— da lì in poi, un battito **ogni ~10 minuti**, fino alla fine.
+
+**IL BATTITO NON TI FERMA — MAI** *(precisazione di Max, 2026-09-03, e non è un dettaglio)*.
+Il recap si scrive **mentre continui**: lo dai e vai avanti, puntini puntini, senza aspettare
+risposta, senza chiedere conferma, senza "vuoi che proceda?". Un battito che diventa una pausa
+è il contrario del suo scopo: nasce per **togliere** a Max il costo di controllarti, non per
+scaricargli addosso una decisione ogni dieci minuti. Ti fermi solo se è Max a fermarti.
 
 ### 6.12 La tua memoria — e lo studio di Max *(direttiva Max, 2026-09-02)*
 
