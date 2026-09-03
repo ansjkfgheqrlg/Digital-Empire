@@ -1570,3 +1570,42 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
 - METODO riusabile: PDF via HTML + Chromium `page.pdf()`, contenuto separato dal motore,
   verifica automatica del riempimento pagina (18/18 in norma). Grana come PNG ripetuto,
   mai filtro SVG (Chromium lo rasterizza: oltre 16 MB).
+
+## 2026-09-03 (EMPIRE STUDIO — chiusura ciclo P-BQ-AGS0ck, batch max17 v14)
+- INGEST (Empire Studio + Memory Empire): batch `max17`, video `P-BQ-AGS0ck` "Become a Master
+  Storyteller (The Dopamine Trick Elite Speakers Use)" (Vishen Lakhiani, 25m55, EN), processato
+  da zero — nessun lavoro precedente esisteva per questo run. `scene_detector.py` rilanciato con
+  `--interval 4.0`: 338/389 frame unici (riduzione solo 13,1%, la più bassa del lotto max17 —
+  video quasi interamente talking-head con gesti continui, non uno screen-recording con
+  schermate ferme). Campionamento **sistematico dichiarato** (78 frame ogni 20s esatti + 5
+  verifiche mirate), non un tentativo di 100%: **83/338 frame guardati (24,6%)**, copertura
+  non-zero su tutti i 10 capitoli (17,6%-40,0% per capitolo). `transcript_clean.txt` scritto da
+  zero (script Python di dedup del `.vtt`, 674 righe pulite) e letto per intero.
+  `video-analysis.md`, `atoms.json` (35 KA, tutti `osservato`), `coverage.md` scritti da zero
+  con numeri contati sul disco in questa sessione.
+- CORREZIONE a `company/Memory/riprese/EMP-QQ2R.md`: il checkpoint dichiarava che "il video vero
+  di Vishen (Mindvalley) non risulta scaricato da nessuna parte" e andava recuperato con un task
+  di ricerca a parte. **Falso**: questo video *è* il video di Vishen — confermato sia a voce
+  ("my name is Vishen Lakhiani, I'm the founder of Mindvalley") sia dai metadati YouTube
+  (`P-BQ-AGS0ck.info.json`: `uploader`/`channel` = "Vishen", `uploader_id` = "@vishen").
+  `max17-v09-vishen-story` (30MB, parziale) e questo run `max17-v14` (78MB, completo) sono lo
+  stesso identico video, non due video diversi.
+- CONTENUTO: framework di storytelling a 5 passi **HSTSS** — mnemonica ufficiale "Heroes Start
+  Their Stories Somewhere", mnemonica "edgy" per gli studenti "Holy Sh*t That's So Smart" →
+  Hook/Stake(s)/Turn/Scene/Shatter, rivelata a video una riga per capitolo tramite un effetto di
+  reveal progressivo (pixelato → leggibile). Illustrato con la storia reale del fondatore
+  (quasi-senzatetto a Berkeley dopo la bolla dot-com, poi scoperta dell'intuizione tramite un
+  corso di meditazione oggi rivenduto da Mindvalley come "Silva Ultramind" per 40M$/anno).
+  Tecnica di hook più riusabile: **"idea collision"** (scontrare due idee incompatibili nella
+  stessa frase). Identità reali confermate a video correggono la trascrizione automatica: il
+  figlio di Naveen Jain citato è **Ankur Jain, Founder/CEO of Bilt Rewards** (non "Uncle Jane"),
+  l'autore di "Executive ESP" citato è **Prof. John Mihalasky** (non "Mihalaski").
+- **0 patch applicate** a skill/agenti esistenti (perimetro del checkpoint `EMP-QQ2R`, nessuna
+  modifica a sistemi condivisi mentre altre sentinelle lavoravano in parallelo su v16) — 5
+  proposte in "Consigli" della pagina wiki, verificate con grep prima di essere scritte (skill
+  `mnemonic-forge`, agente di story-mining per `case-study-forge`, workflow "fatto aziendale →
+  storia HSTSS", potenziamento di `cro-copy-architect` con la tecnica idea collision).
+- WIKI: 1 pagina creata (`sources/Source_Vishen_Lakhiani_Master_Storyteller_HSTSS.md`), cross-link
+  a 3 pagine esistenti ([[Concept_Hook_Anti_Cliche_Checklist]], [[Framework_Barnum_Rainbow_5Pilastri]],
+  [[Source_Artem_Novitckii_Caroselli_ChatGPT]]), `index.md` aggiornato con nuova sezione
+  "Storytelling & Public Speaking".
