@@ -1,3 +1,12 @@
+## ⚠️ COORDINAMENTO — 2026-09-03 20:5x — EMPERATOR riprende EMP-QQ2R, build grosso in corso
+
+3 sentinelle in swarm parallelo su `SKILL & Agenti/Empire Studio Suite/empire-studio/runs/`:
+`max17-v07-rizzo-prompt`, `max17-v11-roberts-design`, `max17-v15` (CFO AI, la piu' pesante —
+524 frame mai visti + `confronto-tesoreria.md` da scrivere). Nessuno tocchi queste 3 cartelle
+finche' non arriva CP con esito. Codice di ripresa: **EMP-QQ2R**.
+
+---
+
 ## 🎨 2026-09-03 — EMPERATOR: Brand Guidelines CCM consegnate e archiviate — CP-20260903-011
 
 Il lancio di Claude Code Mastery ha il suo documento di marca: **18 pagine, 15 capitoli**, in
