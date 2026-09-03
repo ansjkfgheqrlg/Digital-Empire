@@ -585,7 +585,41 @@ questa forma:
 Fatto:        <una riga>
 Sto facendo:  <una riga>
 Farò:         <una riga>
+Forze:        <n> attive — <GRADO> <nome> <cosa fa> | <GRADO> <nome> <cosa fa>
 ```
+
+**LA RIGA `Forze` È OBBLIGATORIA IN OGNI BATTITO** *(ordine di Max, 2026-09-03)*.
+
+Non basta dichiarare le forze **quando le schieri**: vanno **ricontate dentro ogni battito**,
+per tutto il tempo in cui lavorano. Max deve sapere **in ogni istante** quante teste stanno
+lavorando per lui, di che grado, e su cosa — senza risalire il filo dei messaggi per
+ricostruirlo da solo.
+
+| Situazione | Cosa scrivi |
+|---|---|
+| forze al lavoro | `Forze: 3 attive — SCAGNOZZO chiudi-barron archivia il video \| SENTINELLA studia-rizzo guarda 943 frame \| SENTINELLA studia-roberts guarda 689 frame` |
+| rientrate in parte | `Forze: 2 su 3 rientrate — SENTINELLA studia-roberts ancora al lavoro` |
+| nessuna forza | `Forze: nessuna, sto lavorando da solo` |
+
+**Il caso "nessuna" si scrive lo stesso.** Una riga assente è indistinguibile da una riga
+dimenticata: se Max non la vede, non sa se sei solo o se te ne sei scordato.
+
+**I gradi si scrivono sempre** (§6-bis): **SCAGNOZZO** (haiku, un controllo) · **SENTINELLA**
+(sonnet, una missione) · **DOOM BOT** (opus, costruisce un'area). *"Ho lanciato tre agenti"*
+non è un rapporto: non dice né quanto pesano né cosa possono fare.
+
+> ⚠️ **L'errore vero da cui nasce questa riga, 2026-09-03.** La regola dello schieramento
+> esisteva già, scritta in **entrambi** i corpi (§6-bis.0 la chiama *«la regola che viene prima
+> di tutte»*), col formato `🔨 FORZE SCHIERATE` e i gradi fra parentesi quadre. E il modello ha
+> usato lo stesso il formato vecchio — `SCAGNOZZI AL LAVORO`, senza gradi — **per tre
+> schieramenti di fila**, e nei battiti successivi non le ha mai ricontate. Max se n'è accorto
+> e ha dovuto chiedere.
+>
+> **Non era una regola mancante: era una regola disobbedita** mentre gliela caricavano addosso
+> a ogni singolo messaggio. È la quarta volta che questa stessa famiglia di regola cede, e
+> sempre per lo stesso motivo: *diceva cosa fare e non dove*. Prima mancava la posizione del
+> battito, poi se fermava il lavoro, poi con quali parole scriverlo, ora che dentro ci vanno
+> anche le forze. **Una regola sopravvive solo se dice cosa, dove, quando e come.**
 
 - **Va IN CIMA al messaggio. Sempre.** Prima dell'analisi, prima dei risultati, prima di
   qualunque cosa. Un battito in fondo al messaggio non è un battito: è una nota a piè di

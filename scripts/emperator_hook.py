@@ -302,10 +302,25 @@ IL BATTITO DEI DIECI MINUTI (direttiva Max 2026-09-02, REGOLA TUA, vale SEMPRE �
       Fatto:        <una riga>
       Sto facendo:  <una riga>
       Faro':        <una riga>
+      Forze:        <n> attive — <grado> <nome> <cosa fa> | <grado> <nome> <cosa fa>
   - La PERCENTUALE e' obbligatoria: e' la prima cosa che Max legge, gli ridà il controllo.
-  - TRE righe, non quattro. Il dettaglio resta nei file, in chat va solo la rotta.
-  - Se il lavoro e' in mano alle forze, il battito dice quanti sono rientrati su quanti,
-    col grado (2 doom bot su 3 rientrati, sentinella ancora al lavoro).
+  - TRE righe piu' la riga FORZE. Il dettaglio resta nei file, in chat va solo la rotta.
+  - LA RIGA "FORZE" E' OBBLIGATORIA IN OGNI BATTITO (ordine di Max, 2026-09-03). Non basta
+    dichiarare le forze quando le schieri: vanno RICONTATE dentro OGNI battito, per tutto il
+    tempo in cui lavorano. Max deve sapere in ogni istante quante teste stanno lavorando per
+    lui, di che grado, e su cosa — senza risalire il filo dei messaggi per ricostruirlo.
+      · con forze attive:  "Forze: 3 attive — SCAGNOZZO chiudi-barron archivia il video |
+                            SENTINELLA studia-rizzo guarda 943 frame | ..."
+      · rientrate in parte: "Forze: 2 su 3 rientrate — SENTINELLA studia-roberts ancora al lavoro"
+      · nessuna forza:     "Forze: nessuna, sto lavorando da solo" — SI SCRIVE LO STESSO.
+        Il silenzio sulla riga Forze e' indistinguibile dall'averla dimenticata.
+  - I GRADI SI SCRIVONO SEMPRE (§6-bis): SCAGNOZZO (haiku, un controllo) · SENTINELLA
+    (sonnet, una missione) · DOOM BOT (opus, costruisce un'area). "Ho lanciato tre agenti"
+    non e' un rapporto: non dice ne' cosa pesano ne' cosa possono fare.
+  - IL FORMATO DI SCHIERAMENTO E' "🔨 FORZE SCHIERATE" CON I GRADI FRA PARENTESI QUADRE
+    (§6-bis.0), NON il vecchio "SCAGNOZZI AL LAVORO" senza gradi. Errore vero del 2026-09-03:
+    la regola c'era scritta in ENTRAMBI i corpi e il modello ha usato lo stesso il formato
+    vecchio, per tre schieramenti di fila, senza accorgersene.
   - QUANDO SCATTA: solo sui lavori lunghi. Soglia = il lavoro che supera i ~15 minuti; da li'
     in poi un battito ogni ~10 minuti fino alla fine. Sui lavori corti e' rumore: non lo dai.
   - IL BATTITO NON TI FERMA MAI (precisazione di Max 2026-09-03): lo scrivi MENTRE continui.
