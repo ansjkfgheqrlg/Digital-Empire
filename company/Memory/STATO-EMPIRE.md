@@ -8543,3 +8543,29 @@ non deve mai peggiorare."*
 
 **RIPRESA DA:** le tre decisioni sopra. Lavoro tecnico pronto senza decisioni: refactoring
 mirato delle 5 skill piu' care (misurate), depositi dell'Ultimo Metro estesi ai caroselli.
+
+## 2026-09-03, secondo turno — TESORERIA + decisione motore (CP-20260903-004)
+
+**Ordine di Max:** *"iniziamo a misurare tutto. Fai un intero ecosistema di agenti e un
+vero reparto ufficiale... la prima domanda risolvi tu da solo... continua tutto lo studio
+dei video."*
+
+**Fatto:**
+- **ADR-020 — nasce la TESORERIA**, quattordicesimo ecosistema. Motore
+  `scripts/tesoreria.py` (collaudato), skill `tesoreria`, 5 agenti, dati ad accodamento in
+  `company/Memory/tesoreria/`. **Chiude B-043**, il buco di misurazione piu' grave
+  dell'azienda. Il motore e' stato costruito PRIMA della documentazione, apposta: la
+  piramide EMPIRE OS e' progetto al 100% e zero codice, e questo reparto non doveva
+  diventarne un altro pezzo.
+- **ADR-019 — motore di orchestrazione canonico: `orchestration-layer`.** Chiude B-047.
+  Misurato: 133 file contro 28, 24 test contro 3, e sta dentro 11-APEX-7-CORE.
+  **Nessuno script dell'azienda chiama nessuno dei due motori**: la Fase 2 riguardava zero
+  consumatori. Il lavoro di Neri vince sui numeri, non per cortesia — e va detto a Neri
+  cosi'.
+
+**IN CORSO — tre scagnozzi sui video:** chiusura di Barron (archivio + biblioteca),
+analisi di Roberts (689 frame, design) e di Rizzo (943 frame, prompt). Erano gli ultimi
+tre video con i frame pronti mai guardati da nessuno.
+
+**RIPRESA DA:** registrare il primo movimento vero in tesoreria (un registro vuoto e un
+registro che non esiste si assomigliano troppo); poi B-049, il percorso di vendita.

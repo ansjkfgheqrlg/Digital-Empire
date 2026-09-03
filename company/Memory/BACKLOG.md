@@ -186,3 +186,28 @@
   Seconda incoerenza nella stessa area: `cfo-empire.md` dice allarme al 70%, i principi e i KPI
   del CFO dicono 80%, il README del Cost Sentinel dice 60/80/95/100. Applicata la scala a quattro
   gradini; il 70% va sanato. Origine: lavoro sulle sentinelle del 2026-09-03.
+
+## Aggiornamenti del 2026-09-03, secondo turno (delega piena di Max)
+
+- **B-043 — CHIUSA.** Nasce il reparto TESORERIA (ADR-020): motore `scripts/tesoreria.py`,
+  skill `tesoreria`, 5 agenti, dati in `company/Memory/tesoreria/`. Digital Empire adesso
+  puo' contare ogni euro che entra e ogni euro che esce, e avere il quadro in qualunque
+  momento. Collaudato con 5 movimenti di prova (verificato che una rettifica non venga
+  contata due volte), poi ripulito: i file dell'azienda partono vuoti.
+
+- **B-047 — CHIUSA.** Decisione presa da Emperator per delega esplicita di Max (ADR-019):
+  il motore di orchestrazione canonico e' **`orchestration-layer`**. Ragioni misurate oggi:
+  133 file di codice contro 28, 24 test contro 3, e sta gia' DENTRO `11-APEX-7-CORE`
+  (quindi nessuna violazione territoriale: ADR-011 vietava le linee divergenti FUORI).
+  **Il fatto che ha chiuso la questione: nessuno script dell'azienda chiama nessuno dei
+  due motori.** Le citazioni stanno tutte nei documenti di memoria, mai nel codice. La
+  Fase 2 di migrazione riguardava zero consumatori. Era una guerra per un trono su cui
+  non si e' mai seduto nessuno.
+  Condizione scritta nell'ADR: se entro tre mesi nessun lavoro reale usa il motore, l'ADR
+  si riapre e la domanda diventa se all'Impero serva un motore di orchestrazione.
+
+- **B-049 — NUOVA. Il percorso di vendita non e' misurato.** La tesoreria conta i soldi,
+  non cio' che li precede: contatti generati, chiamate fatte, preventivi mandati, tasso di
+  chiusura, tempo fra primo contatto e incasso. **Resta il buco piu' grande del CRO**, il
+  cui `stato_pipeline` e' oggi un'opinione. Va chiuso con lo stesso metodo della tesoreria:
+  prima uno strumento che gira, poi il reparto attorno. Origine: ADR-020 par. 5.

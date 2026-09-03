@@ -289,7 +289,7 @@ def stampa_report(d):
     print("  LA CASSA:")
     print("    entrato davvero      %14s EUR" % euro(d["incassato"]))
     print("    uscito               %14s EUR" % euro(d["uscite"]))
-    print("    -" * 33)
+    print("    " + "-" * 33)
     segno = "+" if d["cassa"] >= 0 else ""
     print("    IN CASSA             %14s EUR" % (segno + euro(d["cassa"])))
     print("")

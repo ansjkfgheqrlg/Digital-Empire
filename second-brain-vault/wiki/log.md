@@ -1390,3 +1390,16 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
 - **SCOPERTO**: due motori di orchestrazione entrambi canonici da 8 giorni; i criteri delle
   sentinelle esistevano gia' in `company/Sentinels/` ma nessun agente li citava; Digital
   Empire non misura un solo euro
+
+## 2026-09-03 (secondo turno) — Nasce la Tesoreria, chiuso il conflitto sul motore
+
+- **COSTRUITO**: reparto TESORERIA (ADR-020), quattordicesimo ecosistema. Digital Empire
+  non misurava un solo euro: ne' incassi, ne' costi effettivi, ne' una metrica di vendita.
+  Ora ha un motore che registra ogni movimento e da' il quadro in qualunque momento.
+  -> `scripts/tesoreria.py`, skill `tesoreria`, 5 agenti, `company/Ecosistemi/14-TESORERIA/`
+- **DECISO**: ADR-019, il motore di orchestrazione canonico e' `orchestration-layer`
+  (133 file contro 28, 24 test contro 3). Scoperta che ha chiuso la questione: nessuno
+  script dell'azienda chiamava nessuno dei due motori.
+- **PRINCIPIO NUOVO**: un canone senza consumatori non e' un canone, e' un'opinione con un
+  numero d'ordine. Prima di dichiarare qualcosa ufficiale, chiedersi chi lo chiamera'
+  lunedi'.
