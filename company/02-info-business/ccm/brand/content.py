@@ -133,6 +133,9 @@ def build(page, title_block) -> None:
         + '<p class="note">A chi cerca la scorciatoia, a chi vuole «guadagnare con l&rsquo;AI» senza costruire '
         "niente, a chi non ha intenzione di aprire un terminale. Dirlo in pagina ci costa qualche iscritto e ci "
         "risparmia le richieste di rimborso.</p></div>"
+        + '<div class="unit" style="margin-top:auto"><div class="kicker">Come si verifica</div>'
+        + '<p class="note">Prendi una frase qualunque del pezzo e chiediti a quale dei quattro punti '
+        "appartiene. Se non appartiene a nessuno, quella frase sta occupando spazio che serviva a un&rsquo;altra.</p></div>"
         + "</div>",
         head="02 · Posizionamento",
         num=4,
@@ -173,6 +176,9 @@ def build(page, title_block) -> None:
         "<li>L&rsquo;accento arancione cade su <em>Mastery</em>, mai su <em>Claude</em>: il prodotto è nostro, "
         "il modello è di qualcun altro.</li>"
         "</ul></div>"
+        + '<div class="unit" style="margin-top:auto"><div class="kicker">Come si verifica</div>'
+        + '<p class="note">Cerca nel pezzo la prima occorrenza del nome: deve essere per esteso. Poi guarda '
+        "quale parola è arancione nel titolo: se è «Claude», va spostata.</p></div>"
         + "</div>",
         head="03 · Nome",
         num=5,
@@ -249,7 +255,7 @@ def build(page, title_block) -> None:
             "questa pagina è un errore, non una variante.",
         )
         + f'<div class="body"><div class="swatches">{cards}</div>'
-        + '<div class="unit" style="margin-top:12mm"><div class="kicker">Come si verifica</div>'
+        + '<div class="unit" style="margin-top:auto"><div class="kicker">Come si verifica</div>'
         + '<p class="note">Contagocce sul pezzo finito: ogni colore campionato deve corrispondere a uno di questi '
         "otto valori, oppure essere uno di questi otto con un&rsquo;opacità applicata. Le opacità ammesse sono quattro: "
         '<span class="mono">90% · 75% · 60% · 30%</span>. Nient&rsquo;altro.</p></div></div>',
@@ -405,7 +411,7 @@ def build(page, title_block) -> None:
             'Sei mattoni. <span class="soft">Ognuno con una regola d&rsquo;uso.</span>',
         )
         + f'<div class="body"><div class="grid3" style="gap:8mm 7mm">{grid}</div>'
-        + '<div class="unit" style="margin-top:11mm"><div class="kicker">Le pillole flottanti</div>'
+        + '<div class="unit" style="margin-top:auto"><div class="kicker">Le pillole flottanti</div>'
         + '<div class="chipbox">'
         '<span class="silver-chip" style="top:2mm;left:0"><span class="dot"></span>6 Moduli</span>'
         '<span class="silver-chip" style="top:12mm;left:44mm"><span class="dot"></span>18 Template</span>'
@@ -531,7 +537,7 @@ def build(page, title_block) -> None:
             "cui lui è avanti oggi, e va guardato senza raccontarsi storie.",
         )
         + f'<div class="body">{body}'
-        + '<div class="unit" style="margin-top:12mm"><div class="kicker">La conclusione operativa</div>'
+        + '<div class="unit" style="margin-top:auto"><div class="kicker">La conclusione operativa</div>'
         + '<p class="note">Sul tono non lo inseguiamo: il suo registro gli funziona e a noi taglierebbe fuori il '
         "pubblico che paga. Sulla profondità tecnica lo battiamo già oggi — lui ha una lezione sul terminale, noi "
         "un corso intero. <strong>La riga che ci manca è l&rsquo;ultima: lui dichiara 14 recensioni vere, noi zero.</strong> "
@@ -557,7 +563,7 @@ def build(page, title_block) -> None:
          "I gradienti sono per i titoli. Sotto un paragrafo diventano rumore e uccidono la leggibilità."),
     ]
     items = "".join(
-        f'<div class="unit" style="margin-bottom:7mm"><div class="kicker"><span class="n">✕</span>{t}</div>'
+        f'<div class="unit" style="margin-bottom:10.5mm"><div class="kicker"><span class="n">✕</span>{t}</div>'
         f'<p class="note">{w}</p></div>'
         for t, w in nos
     )
@@ -569,7 +575,10 @@ def build(page, title_block) -> None:
             "La restrizione è la prova di competenza più economica che esista: dice al lettore che abbiamo "
             "scelto, e che sappiamo perché.",
         )
-        + f'<div class="body">{items}</div>',
+        + f'<div class="body">{items}'
+        + '<div class="unit" style="margin-top:auto"><div class="kicker">Come si verifica</div>'
+        + '<p class="note">Apri l&rsquo;ultimo pezzo pubblicato e cerca uno solo di questi sei. Se lo trovi, '
+        "quel pezzo non è uscito da queste linee — e va corretto prima del prossimo, non dopo.</p></div></div>",
         head="13 · Limiti",
         num=15,
     )

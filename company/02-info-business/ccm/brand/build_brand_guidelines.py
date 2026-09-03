@@ -210,23 +210,23 @@ ul.clean li strong { color: var(--ink); font-weight: 600; }
 .ramp-label { display: flex; justify-content: space-between; font-size: 8px; color: var(--text-3); margin-top: 2mm; }
 
 /* specimen: il gradiente si mostra come campione etichettato, mai come fondo di testo */
-.spec { border-radius: 3px; padding: 7mm; }
+.spec { border-radius: 3px; padding: 6mm; }
 .spec .label {
   font-size: 8px; letter-spacing: 0.16em; text-transform: uppercase;
   color: rgba(244,242,246,0.45); margin-bottom: 4mm;
 }
 .silver-word {
-  font-size: 34px; font-weight: 700; letter-spacing: -0.03em;
+  font-size: 31px; font-weight: 700; letter-spacing: -0.03em;
   background: linear-gradient(180deg, #ffffff 0%, #e8e3ef 35%, #b5afbd 72%, #8a8594 100%);
   -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
 }
 .silverorange-word {
-  font-size: 34px; font-weight: 700; font-style: italic; letter-spacing: -0.03em;
+  font-size: 31px; font-weight: 700; font-style: italic; letter-spacing: -0.03em;
   background: linear-gradient(135deg, #ffffff 0%, #d9d4e1 20%, #fb4604 55%, #ff8a4a 78%, #ffffff 100%);
   -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
 }
 .silverblack-word {
-  font-size: 34px; font-weight: 700; letter-spacing: -0.03em;
+  font-size: 31px; font-weight: 700; letter-spacing: -0.03em;
   background: linear-gradient(180deg, #3a3a3a 0%, #1c1c1c 50%, #0a0a0a 100%);
   -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
 }
@@ -326,7 +326,7 @@ ul.clean li strong { color: var(--ink); font-weight: 600; }
 .vs .band { background: rgba(251,70,4,0.05); }
 
 /* ---------------------------------------------------------------- checklist */
-.check { display: flex; gap: 4mm; align-items: flex-start; margin-bottom: 5.6mm; break-inside: avoid; }
+.check { display: flex; gap: 4mm; align-items: flex-start; margin-bottom: 7.6mm; break-inside: avoid; }
 .check .box {
   width: 3.6mm; height: 3.6mm; border-radius: 1px; flex: none; margin-top: 1.4mm;
   border: 1.4px solid var(--ink);
@@ -359,7 +359,7 @@ ul.clean li strong { color: var(--ink); font-weight: 600; }
 .page.cover .meta .vl { font-size: 10px; color: rgba(244,242,246,0.85); margin-top: 1.5mm; }
 
 /* ---------------------------------------------------------------- indice */
-.toc-row { display: flex; align-items: baseline; gap: 5mm; padding: 2.5mm 0; break-inside: avoid; }
+.toc-row { display: flex; align-items: baseline; gap: 5mm; padding: 4.6mm 0; break-inside: avoid; }
 .toc-row .n { font-size: 9px; color: var(--orange); width: 8mm; flex: none; font-weight: 600; }
 .toc-row .t { font-size: 11px; font-weight: 500; }
 .toc-row .d { flex: 1; }
