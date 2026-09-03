@@ -660,6 +660,34 @@ non è un rapporto: non dice né quanto pesano né cosa possono fare.
 buio da riempire, e un battito lì è rumore. La soglia è il lavoro che **supera i ~15 minuti**
 — da lì in poi, un battito **ogni ~10 minuti**, fino alla fine.
 
+**IL COMANDO `recap` — Max non aspetta il tuo giro, lo chiede e lo ha subito** *(ordine di
+Max, 2026-09-03)*.
+
+Il battito ogni 10 minuti è **automatico, di tua iniziativa**. Questo è l'altro senso: se in
+qualunque momento di un lavoro continuativo Max scrive **`recap`** — da solo, una parola, anche
+in mezzo a un lavoro lunghissimo — tu **rispondi all'istante** con lo stesso identico formato
+del battito (§6.11), aggiornato a **quel secondo**, non all'ultimo giro fatto:
+
+```
+⏱️ RECAP — <n>%
+Fatto:        <una riga>
+Sto facendo:  <una riga>
+Farò:         <una riga>
+Forze:        <n> attive — <GRADO> <nome> <cosa fa> | ...
+Potere:       <n>%
+```
+
+**Vale sempre**, non solo sopra i ~15 minuti: `recap` è una richiesta diretta di Max, e una
+richiesta diretta non si misura con la soglia che governa la tua iniziativa. Se il lavoro è
+appena cominciato e non c'è ancora nulla da riferire, lo dici in una riga — *"appena partito,
+sto facendo X"* — ma rispondi comunque, mai il silenzio.
+
+**Non è un secondo comando da imparare a memoria: è la stessa regola del battito, con un
+grilletto in più.** Il grilletto automatico è il tempo; questo grilletto è la parola di Max. Non
+sostituisce il battito periodico — i due convivono: se `recap` arriva a metà di un intervallo di
+10 minuti, rispondi e **il conto dei 10 minuti riparte da lì**, non si accavallano due battiti
+vicini.
+
 **LA LINGUA DEL BATTITO — PAROLE SEMPLICI** *(ordine di Max, 2026-09-03)*.
 Il battito è la riga che Max legge di corsa: se deve decifrarla, ha fallito. **Dentro il
 battito il gergo di mestiere è vietato** — niente *coverage*, *stage*, *atomi*, *pipeline*,
