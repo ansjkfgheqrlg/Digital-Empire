@@ -2091,6 +2091,30 @@ Mai prima. Mai da solo.
 
 Basata su quello che ha detto in call, usando **LE SUE PAROLE**.
 
+**OBBLIGATORIO — apri con una citazione diretta, non con una parafrasi.**
+La pagina 2 si apre con 2-4 righe **fra virgolette**, trascritte il piu' fedelmente possibile da
+quello che il prospect ha detto in call (se la call e' registrata, si trascrive letteralmente; se
+no, si usano gli appunti presi durante la fase di discovery e si scrive "come mi hai detto in
+call:").
+
+```
+"[Frase esatta del prospect sul suo problema, 2-4 righe]"
+— [Nome prospect], call del [data]
+```
+
+**Perche' e' obbligatorio (bias di coerenza cognitiva):** le persone vogliono restare coerenti con
+cio' che hanno detto. Un documento che riparte dalle TUE parole invita a discutere la tua analisi;
+un documento che riparte dalle SUE parole lo mette nella posizione di confermare se stesso. Questo
+vale doppio quando il documento verra' letto anche da un socio, un capo o un coniuge **che non
+erano in call**: quelle persone non hanno vissuto la parte emotiva della conversazione, non
+condividono l'urgenza, e leggono solo numeri e fatti. La citazione diretta e' l'unico pezzo del
+documento che riporta l'emozione della call dentro una stanza dove tu non ci sei.
+(fonte: 5swDtQFyIws - Will Barron, 20:47-22:20)
+
+**Errore da evitare:** riformulare in "linguaggio da agenzia" cio' che il prospect ha detto in
+linguaggio suo. Se ha detto "certi mesi non arriva niente e non capisco perche'", nel documento ci
+va quella frase - non "flusso di lead non prevedibile con stagionalita' non presidiata".
+
 ### Metriche Attuali
 
 Tutti i numeri dalla call:

@@ -37,7 +37,10 @@ Brief JSON:
   "budget_signal": "ha citato cifre? reaction al pricing?",
   "competitor_menzionati": [""],
   "domande_irrisolte": ["cose da chiarire prima del preventivo"],
-  "prossimo_passo_concordato": "string"
+  "prossimo_passo_concordato": "string",
+  "trigger_evento": "l'evento specifico che ha spinto il prospect a prenotare ORA (cliente perso, obiettivo mancato, concorrente comparso). Se manca: campo vuoto, non inventato",
+  "prossimo_passo_data_ora": "YYYY-MM-DD HH:MM | null se non fissata in call",
+  "prossimo_passo_in_calendario": true
 }
 ```
 
@@ -54,6 +57,13 @@ Brief JSON:
 - ambiente_server compilato? Se no: il countdown delivery 7gg non puo' partire
 - budget_signal presente? Se no: pricing a catalogo senza possibilita' di adattamento
 - almeno 1 dolore quantificato? Se no: T-problem-audit dovra' stimarlo (segnala)
+- `prossimo_passo_data_ora` compilato con data E ora precise, gia' messe nel calendario di
+  entrambi? Se no: la discovery call NON e' chiusa (fonte: 5swDtQFyIws - Will Barron, 19:41-19:57,
+  *"altrimenti la discovery call non e' stata completata"*). Non blocca la scrittura del brief, ma
+  va segnalato come primo punto delle `domande_irrisolte`, perche' un "ti faccio sapere" senza data
+  e' la causa piu' comune di trattative che muoiono da sole dopo una call andata bene.
+- `trigger_evento` compilato? Se no: segnala. Senza il "perche' proprio ora" il preventivo non ha
+  urgenza propria e T-proposal-writer dovra' costruirla dal nulla (fonte: 5swDtQFyIws, 17:28).
 
 ## Connessioni
 

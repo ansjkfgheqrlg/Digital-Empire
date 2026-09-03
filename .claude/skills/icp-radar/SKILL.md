@@ -42,6 +42,17 @@ icp:
       - "grande azienda con IT department (procurement lento)"
       - "concorrente diretto"
 
+  trigger_evento:   # (fonte: 5swDtQFyIws - Will Barron, 05:34-07:14 e 17:28)
+    # L'evento che ha spinto il cliente ad agire ORA. Non si indovina: si ricava dai clienti
+    # gia' vinti, chiedendosi per ognuno "cosa e' successo poco prima che ci cercasse?".
+    # Un ICP senza trigger dice CHI e' il cliente ma non QUANDO e' comprabile.
+    lista_trigger_osservati:
+      - "esempio: ha perso un cliente importante nell'ultimo trimestre"
+      - "esempio: ha mancato un obiettivo di fatturato dichiarato"
+      - "esempio: e' comparso un concorrente diretto sul suo mercato"
+    segnale_ricercabile: "come quel trigger si riconosce da fuori (sito, annunci di lavoro, LinkedIn, recensioni recenti)"
+    dolore_specifico: "il dolore comune ai clienti gia' vinti, nelle LORO parole, non nelle nostre"
+
   score_threshold: 70  # su 100; lead sotto non passa in A2
 
   scoring_matrix:
@@ -69,6 +80,24 @@ icp:
 1. Dopo ogni win/loss: aggiorna score_matrix con peso effettivo
 2. Dopo 10 lead qualificati: confronta % closed con score; abbassa/alza threshold
 3. Se FORGE segnala KPI A1 sotto soglia per 2 cicli: riscrivere angolo_outreach
+
+## Test del riconoscimento in 1 secondo (fonte: 5swDtQFyIws - Will Barron, 03:24-05:34)
+
+Un ICP e' scritto bene se il prospect, leggendo il messaggio che ne deriva, pensa "questo sono io"
+entro un secondo. Il modo di verificarlo e' scrivere le due versioni del messaggio e confrontarle:
+
+- **Versione generica (da scartare)**: "aiuto gli imprenditori ad aumentare il fatturato".
+  Equivale alla frase-sintomo mostrata nel video come errore capitale: *"lavoriamo con chiunque
+  abbia bisogno di quello che facciamo"* - sembra tenere aperte le opzioni, in realta' non parla
+  a nessuno.
+- **Versione operativa (da tenere)**: segmento + fascia numerica + risultato con tempo +
+  meccanismo + dolore riconoscibile. Esempio reale mostrato a schermo nel video: *"aiuto titolari
+  di aziende di servizi che fatturano tra $20.000 e $200.000 al mese a trovare e chiudere piu'
+  contratti nei prossimi 30 giorni, o ti restituisco i soldi. Lo facciamo con un sistema di
+  vendita semplice che elimina le montagne russe del fatturato su cui probabilmente sei adesso."*
+
+Se la scheda ICP non permette di scrivere la seconda versione, mancano dei campi: quasi sempre
+`trigger_evento` o `dolore_specifico`. Vanno riempiti prima di passare la scheda ad A1-RICERCA.
 
 ## Connessioni
 
