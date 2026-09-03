@@ -19,6 +19,41 @@ def upload_mock(video_path, metadata, thumbnail_path):
     print("Video ID Generato: mock-playwright-vid-12345")
     return {"status": "success", "video_id": "mock-playwright-vid-12345"}
 
+def ads_on_after_upload(page, video_id):
+    """Attiva 'Watch Page ads & YouTube Premium' per un video appena caricato.
+    Trovato dal vivo il 2026-09-03 (ordine di Max): Google lascia le pubblicita' SPENTE
+    di default su ogni nuovo upload — senza questo passo il video non guadagna mai un euro,
+    ed e' successo in silenzio su 3 video pubblici prima che qualcuno se ne accorgesse.
+    Il click diretto via JS (evaluate) e' voluto: i controlli di Playwright falliscono qui
+    per instabilita' del layout durante il processing, il click nativo del DOM no.
+    """
+    page.goto(f"https://studio.youtube.com/video/{video_id}/monetization/ads",
+               wait_until="domcontentloaded", timeout=45000)
+    page.wait_for_timeout(3000)
+    off_trigger = page.locator("text=Off").first
+    if off_trigger.count() == 0:
+        print("[ADS] Gia' attive o pagina non nello stato atteso, salto.")
+        return
+    off_trigger.click(timeout=8000)
+    page.wait_for_timeout(1000)
+    page.locator("tp-yt-paper-radio-button").filter(has_text="On").first.click(timeout=8000)
+    page.wait_for_timeout(1000)
+    page.locator("button:has-text('Next')").first.click(timeout=8000)
+    page.wait_for_timeout(2000)
+    # Questionario obbligatorio "Tell us what's in your video" — autocertificazione onesta:
+    # per i video di questo canale (consigli/psicologia relazionale) nessuna categoria si
+    # applica mai, quindi "None of the above" e' la risposta corretta, non una scorciatoia.
+    page.locator("text=Inappropriate language").first.click(timeout=8000)
+    page.wait_for_timeout(1200)
+    page.get_by_text("None of the above", exact=False).first.click(timeout=8000)
+    page.wait_for_timeout(1500)
+    page.locator("button:has-text('Submit')").first.evaluate("el => el.click()")
+    page.wait_for_timeout(3000)
+    save_btn = page.locator("button:has-text('Save')").first
+    save_btn.evaluate("el => el.click()")
+    page.wait_for_timeout(3000)
+    print("[ADS] Pubblicita' attivate e salvate.")
+
 def upload_via_playwright(video_path, metadata, thumbnail_path, user_data_dir):
     try:
         from playwright.sync_api import sync_playwright
@@ -251,6 +286,16 @@ def upload_via_playwright(video_path, metadata, thumbnail_path, user_data_dir):
             match = re.search(r"/video/([\w-]+)/", page.url)
             video_id = match.group(1) if match else None
             video_url = f"https://www.youtube.com/watch?v={video_id}" if video_id else None
+
+            # REGOLA PERMANENTE di Max (2026-09-03, GRAVISSIMA): ogni video deve guadagnare.
+            # Trovati dal vivo 3 video pubblici con le pubblicita' spente (zero incasso) perche'
+            # nessuno lo aveva mai attivato dopo l'upload — Google lo lascia OFF di default.
+            # Da qui in poi lo attiviamo SEMPRE, per ogni video, appena ha un ID reale.
+            if video_id:
+                try:
+                    ads_on_after_upload(page, video_id)
+                except Exception as e:
+                    print(f"[AVVISO] Impostazione pubblicita' fallita, va fatta a mano: {e}")
 
             if not video_id:
                 print(f"[AVVISO] Salvataggio eseguito ma nessun ID video reale trovato nell'URL "
