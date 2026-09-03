@@ -1,0 +1,849 @@
+[00:00:00] Quasi tutte le aziende hanno già tutto
+[00:00:02] quello che serve per tenere le loro
+[00:00:04] finanze sotto controllo ogni giorno. I
+[00:00:07] dati ci sono, il gestionale è acceso ed
+[00:00:10] hanno anche chi lo aggiorna
+[00:00:11] quotidianamente. Il problema è che da
+[00:00:13] questi dati risulta difficile capire
+[00:00:16] come veramente stia andando l'azienda,
+[00:00:18] perché serve una persona che li analizzi
+[00:00:20] così che la direzione possa capire cosa
+[00:00:22] sta succedendo davvero. Ed è proprio per
+[00:00:24] questo che ho costruito un AI CFO che
+[00:00:27] tiene sotto controllo l'azienda 247.
+[00:00:30] Analizza tutto il conto economico,
+[00:00:32] capisce chi ti deve dei soldi, dove sta
+[00:00:34] andando il margine, cosa sta facendo il
+[00:00:37] ciclo di cassa e dove l'azienda si sta
+[00:00:39] allontanando dal budget allocato senza
+[00:00:42] che nessuno lo noti. E tutto quello che
+[00:00:44] ricava lo trasforma poi in un report con
+[00:00:47] le azioni per la leadership già messe in
+[00:00:50] ordine di priorità. Ma prima di
+[00:00:52] mostrarti come costruirlo, se sei nuovo
+[00:00:54] al canale sono Joe con la mia agenzia di
+[00:00:56] intelligenza artificiale Gente Sei.
+[00:00:58] Facciamo consulenza ad aziende che vanno
+[00:00:59] dai €10.000 al mese fino ai 50 milioni
+[00:01:02] di euro l'anno ed oppio una community
+[00:01:04] privata di imprenditori e freel che
+[00:01:06] vogliono applicare ya nel loro business
+[00:01:08] o rivenderlo ad altri. Detto questo,
+[00:01:11] cominciamo. Vi faccio vedere
+[00:01:12] immediatamente cosa andremo a fare di
+[00:01:14] modo tale che abbiate delle aspettative.
+[00:01:16] Allora, questo sarà il report finale.
+[00:01:18] Partiremo con questa che è la CFO
+[00:01:20] Review. avremo i nostri alert, quindi
+[00:01:22] ehm quello che il CFO dovrebbe poter
+[00:01:25] vedere, avere sottomano per poi prendere
+[00:01:27] delle azioni. Quindi il fatto che i
+[00:01:30] clienti pagano ora 93 giorni, un anno fa
+[00:01:32] era 76, il fatto che abbiamo
+[00:01:34] un'esposizione, abbiamo dei crediti
+[00:01:36] scaduti, abbiamo due esposizioni sopra
+[00:01:39] la soglia con queste tipologie di
+[00:01:41] clienti. Avremo poi l'executive summary
+[00:01:44] con fatturato rispetto all'anno scorso
+[00:01:47] ebita, flussi di cassa, come vanno i
+[00:01:50] margini e lo vedremo poi come farlo e
+[00:01:53] cosa succede ai giorni di incasso e come
+[00:01:56] sono cambiati nel corso del tempo.
+[00:01:58] Quindi questo permette al CFO di avere
+[00:02:00] una visione di insieme di come sta
+[00:02:02] andando l'azienda. Poi abbiamo
+[00:02:04] ovviamente tre raccomandazioni che l'AI
+[00:02:06] appunto suggerisce di modo tale che
+[00:02:10] possa esserci anche dire la decisione
+[00:02:13] più importante risiede. Abbiamo poi un
+[00:02:15] overview dei nostri KPI, quindi ricavi
+[00:02:17] margine lordo e Bag, giorni di incasso,
+[00:02:19] crediti scaduti, copertura a costi fissi
+[00:02:21] e poi abbiamo gli insight di quello che
+[00:02:24] succede effettivamente qua dentro,
+[00:02:25] quindi come il margine lordo si è
+[00:02:27] comportato e dove è arrivato il
+[00:02:30] problema. Quindi in questo caso gennaio
+[00:02:32] 2026 e poi un breakdown di quello che è
+[00:02:35] la costituzione dei servizi che questa
+[00:02:37] azienda di trasporto in questo caso
+[00:02:39] offre, ma vale per qualsiasi cosa e qual
+[00:02:41] è il margine per servizio che stiamo
+[00:02:43] offrendo. Avremo poi un insight su
+[00:02:45] quello che sono i crediti, quindi quali
+[00:02:47] sono quelli scaduti e chi dovremmo
+[00:02:50] chiamare in ordine sulla base
+[00:02:51] dell'impatto sulla nostra azienda. poi
+[00:02:54] una serie di azioni raccomandate e
+[00:02:56] prossimi passi che vogliamo compiere per
+[00:02:59] riuscire a sanare la situazione della
+[00:03:01] nostra azienda. Quindi questo sarà
+[00:03:02] quello che andremo a costruire in questo
+[00:03:04] video e partiremo proprio dalle basi,
+[00:03:07] quindi la prima cosa che faremo sarà
+[00:03:09] capire dove risiedono i nostri dati per
+[00:03:12] poi importarli dentro cloud code. Quindi
+[00:03:15] cominciamo. La prima cosa che andremo
+[00:03:16] quindi a fare sarà capire dove abbiamo i
+[00:03:19] dati finanziari della nostra azienda e
+[00:03:21] ci tengo a specificare subito una cosa.
+[00:03:23] Quello che andremo a costruire ora
+[00:03:25] funziona che voi utilizziate Cloud Code
+[00:03:28] o Codex? non importa e che voi
+[00:03:30] utilizziate, come nel mio caso,
+[00:03:32] Quickbooks o qualsiasi altra tipologia
+[00:03:35] di software per la gestione dei dati.
+[00:03:37] L'importante è che questi abbiano una
+[00:03:39] connessione API o che in qualche modo si
+[00:03:41] possa interagire con la piattaforma, ma
+[00:03:43] tutto quello che faremo è agnostico
+[00:03:46] rispetto alla tipologia di piattaforme
+[00:03:48] che andremo ad utilizzare. Allora,
+[00:03:49] voglio farvi vedere innanzitutto che
+[00:03:51] tipologie di dati abbiamo e cioè io sto
+[00:03:53] usando adesso una cosa in Sandbox,
+[00:03:55] qualsiasi cosa una vera azienda abbia.
+[00:03:57] Quindi abbiamo il nostro PNL, le nostre
+[00:04:00] spese, quello che è pagato, quello che è
+[00:04:03] pagato. Poi entrando nel dettaglio
+[00:04:05] abbiamo qui tutta la parte di
+[00:04:07] accounting, tutta la parte di receips,
+[00:04:09] tutta la parte di transazioni bancarie.
+[00:04:11] Se poi andassimo direttamente in sales e
+[00:04:14] get paid, avremmo addirittura le nostre
+[00:04:16] fatture verso i clienti e ovviamente
+[00:04:19] sono tutti dati sintetici. Una volta che
+[00:04:21] li premiamo, vedete c'è quanto eh devono
+[00:04:24] pagarci, quanto è stata mandata, quanto
+[00:04:27] quando avrebbe dovuto essere pagata,
+[00:04:29] stato di attività e poi una serie di
+[00:04:32] dati che sono totalmente inventati.
+[00:04:34] Bene, quindi questa diventa la nostra
+[00:04:35] source of truthia la nostra fonte di
+[00:04:38] verità. E cosa vuol dire? Vuol dire che
+[00:04:40] qualsiasi cosa noi andremo a fare con
+[00:04:42] Cloud dovrà fare in modo che i dati di
+[00:04:45] Cloud rispecchino esattamente questi
+[00:04:47] perché questi sono i dati corretti.
+[00:04:49] Quindi la prima cosa che andremo a fare
+[00:04:51] sarà quindi quella di collegare
+[00:04:54] Quickbooks in questo caso con il nostro
+[00:04:56] cloud. E come facciamo a farlo? Allora,
+[00:04:59] andiamo in questo URL
+[00:05:01] developer.intinintuit.com/dashboard.
+[00:05:04] In alto a destra troverete my Hub,
+[00:05:06] quindi lo premeremo e premeremo AB
+[00:05:09] Dashboard. Premeremo ora il plus. Vedete
+[00:05:12] la mia test app perché è quella che
+[00:05:14] avevo fatto prima. Come nome gli daremo,
+[00:05:17] non lo so, qualcosa tipo accounting,
+[00:05:20] add permissions. Metteremo queste due,
+[00:05:24] gli diremo confirm. E queste sono poi le
+[00:05:26] credenziali che noi utilizzeremo per
+[00:05:28] l'autentificazione. Quindi adesso
+[00:05:30] salvatele da qualche parte e poi
+[00:05:31] procederemo. Una cosa che dovremmo fare
+[00:05:34] ora è prendere l'URL di ritorno perché
+[00:05:36] altrimenti Quickbook non risponde.
+[00:05:38] Quindi noi andremo a fare open app,
+[00:05:40] arriveremo in questa sezione, premeremo
+[00:05:42] settings e in questa sezione qui andremo
+[00:05:45] a prendere redirect URI e quello che
+[00:05:48] andremo ad incollare qui sarà
+[00:05:50] http/localhost
+[00:05:54] 2.8000/cback.
+[00:05:58] Save. Perfetto, quindi i cambiamenti in
+[00:06:01] app dovrebbero essere andati con
+[00:06:03] successo. Ed ora possiamo aprire la
+[00:06:05] nostra desktop app con il nostro AI CFO.
+[00:06:08] È una cartella che ho fatto vuota dove
+[00:06:11] eh adesso ovviamente qui potremmo andare
+[00:06:14] ad aggiustare il ehm modello, insomma. E
+[00:06:19] qui potremmo cominciare a creare
+[00:06:21] all'interno di files il nostro do
+[00:06:25] invvile e metterci dentro le nostre
+[00:06:27] credenziali. E qui gli diremo crea un
+[00:06:29] DOT INV. Io per pigrizia gli faccio ehm
+[00:06:33] diciamo fare tutto direttamente con un
+[00:06:36] QBO
+[00:06:38] client ID ed un QBO
+[00:06:44] client secret
+[00:06:48] con questi valori e qui gli incollo i
+[00:06:52] valori, quindi ID
+[00:06:55] Secret. Perfetto, premiamo Enter e
+[00:06:58] quindi qui poi una volta che lui ha
+[00:07:01] eseguito
+[00:07:03] dentro al nostro files dovremmo andare a
+[00:07:06] vedere il nostro do invv e qui se tutto
+[00:07:09] va bene abbiamo il nostro QBO client ID
+[00:07:11] e client secret. Ottimo. Perfetto.
+[00:07:14] Quindi ora abbiamo fatto il collegamento
+[00:07:16] a Quickbooks. A questo punto però c'è
+[00:07:18] una cosa molto importante che dobbiamo
+[00:07:20] fare adesso e cioè bisogna uniformare
+[00:07:23] tutto quello che succederà dentro Cloud.
+[00:07:25] Che cosa vuol dire? Vuol dire che le
+[00:07:26] nostre fatture generalmente, dato che
+[00:07:29] vengono da fornitori diversi, clienti
+[00:07:31] diversi, eccetera eccetera eccetera,
+[00:07:34] generalmente ognuno ha un proprio
+[00:07:36] formato e quindi noi dobbiamo trovare il
+[00:07:38] modo di dire a cloud: "Hei, non importa
+[00:07:41] il formato che potrebbe anche cambiare
+[00:07:43] in futuro, quello che è importante è che
+[00:07:46] questi dati in questo ordine siano
+[00:07:48] contenuti all'interno della tua logica e
+[00:07:50] che tu possa sempre riordinare il tutto
+[00:07:53] con una certa struttura. Quindi quello
+[00:07:55] che andremo a fare adesso e per farlo ho
+[00:07:57] preparato un file Notion che vi lascerò,
+[00:08:00] credo sia il secondo link sotto in
+[00:08:01] descrizione. Ci sono una serie di
+[00:08:04] promptono di cominciare a fare un po' di
+[00:08:06] diciamo modellamento dei dati sulla
+[00:08:08] parte finanziaria. Quindi la prima cosa
+[00:08:11] che andremo a fare è appunto costruirci
+[00:08:14] dentro cloud il nostro piccolo modellino
+[00:08:17] di Python. Quindi adesso andremo qua
+[00:08:20] dentro e io incollerò questo
+[00:08:23] promptemente.
+[00:08:25] Ora metto opus al volo. Ah, quello che
+[00:08:28] gli diciamo è: "Costruisci il modello
+[00:08:30] dati di un sistema di analisi
+[00:08:32] finanziaria in Python usando la libreria
+[00:08:34] standard." Tradotto, per fare questo non
+[00:08:37] vengono utilizzate i PI, stiamo
+[00:08:39] utilizzando quello che già c'è dentro
+[00:08:41] cloud. Ok? Quindi contesto, i dati
+[00:08:44] finanziari arriveranno da fonti diversi
+[00:08:46] nel tempo. Oggi un gestionale via API,
+[00:08:47] domani un export in foglio di calcolo,
+[00:08:49] dopodomani un altro gestionale. Le
+[00:08:51] metriche e i prompt devono cambiare
+[00:08:53] quando cambia la fonte. Serve quindi uno
+[00:08:55] strato intermedio che tutte le fonti
+[00:08:57] attraversano e da cui esce sempre la
+[00:08:59] stessa forma. Quindi che cosa andiamo a
+[00:09:01] creare? Andiamo a creare questo modello
+[00:09:03] dpy che che definisce sostanzialmente i
+[00:09:06] nostri contenitori e quindi sono i
+[00:09:09] quattro tipi come datacs. Quindi
+[00:09:11] diciamo, ok, la voce voglio sempre che
+[00:09:13] sia una stringa, descrizione anche
+[00:09:15] importo un float number. E quindi qui
+[00:09:17] gli diamo una serie di cose che gli
+[00:09:20] permettono di dire: "Ok, quando farai in
+[00:09:23] gestione dei dati, assicurati sempre che
+[00:09:26] ognuna di queste voci sia sempre nel
+[00:09:29] formato corretto", quindi non abbiamo il
+[00:09:31] rischio di avere date in numero oppure
+[00:09:34] in testo e via dicendo. Poi abbiamo non
+[00:09:37] negotiable, abbiamo funzioni di
+[00:09:40] collegamento e poi abbiamo le due
+[00:09:43] funzioni che devono ritornare la nostra
+[00:09:45] contabilità. Quindi abbiamo un carica da
+[00:09:47] CSV e abbiamo un carica da Quickbook.
+[00:09:50] Gli lo stiamo, diciamo, equipaggiando
+[00:09:52] con tutto quello che gli serve.
+[00:09:54] Perfetto. Quindi ci dice che ora tutto è
+[00:09:57] stato fatto. Abbiamo fatto il nostro
+[00:09:59] modello e ora possiamo controllarlo qua
+[00:10:01] dentro, no? Cioè, se volessimo andare,
+[00:10:04] questo sarebbe il nostro piccolo
+[00:10:05] modellino di analisi finanziaria.
+[00:10:06] Vedete? Sarà tutto sotto se volete
+[00:10:08] soffermarvi a leggerla. Ci ho messo un
+[00:10:10] po' a fare questo video, quindi appunto
+[00:10:13] è tutto qua sotto, ve lo lascio
+[00:10:14] gratuitamente. Allora, che cosa dobbiamo
+[00:10:17] fare adesso? Beh, a questo punto abbiamo
+[00:10:19] fatto un modello di ingestione, ok?
+[00:10:22] Allora, ora dovremmo fare questo nel
+[00:10:25] commento e potremmo eh rannare, ok?
+[00:10:30] Questo allora qui ci chiede: "Vuoi che
+[00:10:33] implementi carica da CSV?" in realtà al
+[00:10:35] momento non vogliamo farlo. Torniamo nel
+[00:10:37] nostro Notion e quello che vogliamo fare
+[00:10:40] ora è collegare Quickbooks e scaricare i
+[00:10:43] dati. Quindi quello che facciamo ora è
+[00:10:45] copiare questo comando e quindi gli
+[00:10:47] diremo sostanzialmente: "Hei, eh collega
+[00:10:51] QuickBooks online al modello di dati in
+[00:10:53] Python". E queste sono le cose che tu
+[00:10:57] devi fare. Allora, la prima parte è una
+[00:10:59] parte di autentificazione, potete
+[00:11:01] leggerla, andate a discutere. La seconda
+[00:11:03] pure, è una classe, diciamo, client py
+[00:11:06] dove cominciamo a fare delle ehm, come
+[00:11:09] dire, delle clasterizzazioni.
+[00:11:11] La terza invece che è più interessante è
+[00:11:15] come deve estrarre questi dati. Allora,
+[00:11:18] qui gli diciamo che lo scopo di adesso è
+[00:11:22] estrarre e basta, non è al momento fare
+[00:11:25] ancora dei conti perché vogliamo tenere
+[00:11:27] le due fasi abbastanza distinte,
+[00:11:29] altrimenti rischiamo di andare a far
+[00:11:32] allucinare il nostro modello. E vediamo
+[00:11:35] dopo alla fine anche un passaggio che
+[00:11:36] facciamo antiallucinazione.
+[00:11:39] Ehm e quindi gli diciamo anche cosa deve
+[00:11:41] fare, quindi l'estrazione è l'unica
+[00:11:44] parte che dipende da rete, quindi dalla
+[00:11:46] connessione con Quickbooks e da un
+[00:11:48] token. Avere il dato grezzo sul disco
+[00:11:51] permette di rifare i conti senza
+[00:11:53] chiamare le API. Quindi quello che gli
+[00:11:55] diciamo poi è se un numero non torna
+[00:11:57] apri il file grezzo. Tradotto, che cosa
+[00:11:59] gli stiamo dicendo di fare e perché
+[00:12:01] stiamo già cominciando a fare un po' di
+[00:12:05] ottimizzazione
+[00:12:06] di token in questo caso? Ed è così che
+[00:12:09] dovreste cominciare a ragionare eh
+[00:12:11] quando utilizzate l'AI quello che gli
+[00:12:13] diciamo è sì, è vero che tu hai i dati
+[00:12:15] lì, ma e e poi ci saranno delle logiche
+[00:12:18] se vedete i prompt dentro. Esistono
+[00:12:21] anche delle modalità tali per cui se i
+[00:12:22] dati non sono 7 miliardi dove allora
+[00:12:25] siamo costretti, no, ad avere diciamo in
+[00:12:29] cloud questi dati qui, perché se avete
+[00:12:31] software SQL, siete una compagnia da
+[00:12:34] qualche cazziliardo, allora è necessario
+[00:12:36] fare tutto in cloud. Ma per la piccola
+[00:12:38] media impresa i dati non sono poi così
+[00:12:41] tanti da non poter essere contenuti
+[00:12:43] dentro al PC. Quindi quello che facciamo
+[00:12:45] è scarichiamo i dati, cominciamo a
+[00:12:48] lavorarli in qualsivoglia formato,
+[00:12:51] stacchiamo il tutto da connessioni API
+[00:12:53] varie di modo tale da non doverle non
+[00:12:56] doverle pagare o poterle lavorare con il
+[00:12:58] minor tempo possibile e dopo cominciamo
+[00:13:01] a validare che il dato venga gestito
+[00:13:04] nella maniera corretta da Cloud. Solo
+[00:13:06] una volta che ci siamo assicurati di
+[00:13:07] questo, allora il grezzo verrà
+[00:13:08] cancellato e ricominceremo a fare
+[00:13:11] un'analisi o un collegamento, scusate,
+[00:13:13] uno a uno con il nostro cloud. Questo è
+[00:13:15] appunto un piccolo trucchetto che
+[00:13:17] permette di efficientare token, ma ce ne
+[00:13:19] sono, insomma, moltissimi altri. Gli
+[00:13:21] chiediamo poi cose estrarre: Piano dei
+[00:13:23] conti, clienti, fornitori, articoli, eh
+[00:13:25] fatture di vendita, incassi, insomma
+[00:13:27] mille altre cose. Questo, ripeto, una
+[00:13:29] demo eh che permette a voi di avere
+[00:13:32] un'idea di cosa Cloud possa fare, però
+[00:13:34] ecco, costo standard, correzione per lo
+[00:13:36] sconto, riposizionamento,
+[00:13:38] eh input che non stanno dentro al
+[00:13:40] gestionale,
+[00:13:41] quindi per esempio sconto contrattuale
+[00:13:43] che è nel contratto, non in Quickbooks e
+[00:13:46] va messo in file separati. Quindi stiamo
+[00:13:48] dando al nostro sistema il modo di
+[00:13:52] ragionare ancora prima di cominciare a
+[00:13:54] fare i conti. E io vedo una marea di
+[00:13:56] persone, soprattutto su YouTube, eh dire
+[00:13:59] "No, ok, dobbiamo fare questo, dobbiamo
+[00:14:01] prima cominciare subito a dirgli "Ok,
+[00:14:03] fammi tutto e fallo perfetto". Equivale
+[00:14:05] a dire a Cloud: "Ehi, investi €10.000 e
+[00:14:08] trasformali in 1 milione". non funziona.
+[00:14:10] Bisogna dargli un processo strutturato
+[00:14:13] perché lui possa ingerire i vari eh
+[00:14:15] dati. Bene, adesso qui lui sta andando e
+[00:14:18] poi vi faccio vedere una volta che ha
+[00:14:19] finito. Perfetto, mi dice che mancano
+[00:14:22] questi due, quindi ah premiamo run and
+[00:14:25] terminal. Perfetto, collegato. E ora
+[00:14:28] premeremo questo e gli diremo ok,
+[00:14:30] perfetto, dovrei avere autorizzato la
+[00:14:33] parte rimanente e ehm crea pure il
+[00:14:36] carica da CSB. Voglio velocemente
+[00:14:38] mostrarvi che cosa faremo adesso. Quello
+[00:14:40] che faremo sarà accendere i nostri
+[00:14:43] canali di collegamento, no? Sono tre
+[00:14:45] cose che potremmo oannare nella nostra
+[00:14:47] chat normale o nel ehm terminale.
+[00:14:51] Quindi, come si accede? È semplicemente
+[00:14:52] questo pulsantino qui. Vediamo se lo
+[00:14:54] vedete. No, un secondo solo che lo
+[00:14:56] faccio vedere.
+[00:14:59] Eh, eccolo qui. Questo è il terminale e
+[00:15:04] quindi saranno cose che appunto potremmo
+[00:15:08] ehm potremmo inserire lì dentro per
+[00:15:11] autorizzare il tutto. Quindi il primo
+[00:15:13] servirà per aprire il consenso nel
+[00:15:16] browser e salvare il token. Il secondo
+[00:15:18] servirà come verifica, quindi stamperà
+[00:15:20] il nome della nostra azienda. Il terzo
+[00:15:23] permetterà di scaricare i vari file
+[00:15:25] grezzi e quindi questo è quello che
+[00:15:27] andremo a fare. Solo dopo che lo andremo
+[00:15:30] a fare andremo poi a creare la logica
+[00:15:34] che permette di collegare tutti i dati
+[00:15:37] che non sono nel nostro gestionale e con
+[00:15:41] appunto i vari dati a livello di
+[00:15:44] cliente. Un esempio può essere il fido
+[00:15:46] bancario che abbiamo per un cliente, lo
+[00:15:49] sconto o il margine, sono tutti dati che
+[00:15:52] dobbiamo in qualche modo derivare. Va
+[00:15:54] bene, procediamo quindi ora con i tre
+[00:15:57] comandi di cui parlavamo.
+[00:16:03] Quindi prendiamo, incolliamo.
+[00:16:05] Perfetto, ci dice tutto collegato,
+[00:16:07] possiamo chiudere. Quindi torniamo.
+[00:16:10] Secondo comando. Ora dovrebbe darci il
+[00:16:14] nome della nostra azienda una volta che
+[00:16:17] il token, appunto, è refreshato. Bene,
+[00:16:19] quindi qui ci dice tutto a posto e ora
+[00:16:24] estrarremo tutto quanto quello che
+[00:16:26] avremo dentro Quickbooks per riuscire a
+[00:16:29] poi fare i nostri controlli con il
+[00:16:32] codice e quindi staccandoci da quella
+[00:16:34] che poi è la stocasticità dell'AI perché
+[00:16:36] ovviamente i conti, diciamo, vogliamo
+[00:16:38] farli con il codice e non con lei o con
+[00:16:41] un ragionamento. Ecco. Ottimo. Quindi,
+[00:16:44] estrazione completata.
+[00:16:46] Ed ora quello che faremo e dato che
+[00:16:49] tutto funziona, sarà andare ad integrare
+[00:16:52] dentro la logica del nostro CFO e solo
+[00:16:56] dopo potremmo cominciare a fare i conti
+[00:16:59] e quindi vedere che, diciamo, aziona nel
+[00:17:01] vivo. Dovremmo andare ad integrare tutti
+[00:17:03] quelli che sono i parametri che sono
+[00:17:05] fuori. Qui, come vi dicevo prima, ho
+[00:17:07] fatto qualche esempio e cioè sconto che
+[00:17:10] hai concesso ad uno specifico cliente,
+[00:17:12] margine di listino, magari è in un
+[00:17:14] listino diverso e non in Quickbooks,
+[00:17:16] oppure il budget sta in un foglio magari
+[00:17:19] separato che la leadership ha redatto
+[00:17:21] magari in una mensilità diversa. Il fido
+[00:17:25] invece sta nella lettera della banca e
+[00:17:26] quindi ci sono tutta una serie di
+[00:17:28] parametri e vedete qui sono dettagliati
+[00:17:31] che io ho ehm diciamo considerato nella
+[00:17:34] creazione di questo di modo tale che noi
+[00:17:37] riuscissimo ad avere che il nostro CFO
+[00:17:40] alla fine o supporto a CFO avrà,
+[00:17:44] diciamo, quante più informazioni
+[00:17:46] corrette per dare una immagine corretta
+[00:17:48] di quello che è l'andamento della nostra
+[00:17:50] azienda. Di nuovo, anche in questo caso
+[00:17:53] non stiamo parlando di eh rimuovere
+[00:17:56] persone o rimuovere i CFO, stiamo
+[00:17:58] parlando di strumenti che, se vengono
+[00:18:01] utilizzati correttamente possono
+[00:18:03] aumentare drasticamente l'impatto che un
+[00:18:07] determinato CFO, un determinato team di
+[00:18:10] analisi finanziaria può avere
+[00:18:11] all'interno della nostra azienda. Perché
+[00:18:13] se rimuoviamo tutta quella parte di
+[00:18:16] calcolo e possibili errori e riusciamo a
+[00:18:18] standardizzarla, possiamo avere che il
+[00:18:20] nostro magari team, al posto che
+[00:18:22] focalizzarsi sul fare i conti, si
+[00:18:24] focalizza sul capire quali sono le leve
+[00:18:26] che possono andare a migliorare questi
+[00:18:27] conti o cercare di entrare nel
+[00:18:29] dettaglio, insomma, di questi dati. E
+[00:18:31] l'AI può essere un buono sparring
+[00:18:34] partner da cui partire per cominciare a
+[00:18:36] fare tutta questa tipologia di insight.
+[00:18:38] Ed è il motivo per cui poi tutta questa
+[00:18:40] logica verrà inglobata, diciamo, in
+[00:18:43] qualcosa che ci aiuterà a interpretare i
+[00:18:46] dati in un determinato modo che siano
+[00:18:48] utili per noi per fare reporting alla
+[00:18:51] leadership, quindi in questo caso magari
+[00:18:52] al CEO. Ok? E qui vedete che eh
+[00:18:56] ovviamente lei comincerà ad interagire
+[00:18:59] con noi. Noi abbiamo fatto un'azienda di
+[00:19:00] trasporti, adesso non voglio entrare nel
+[00:19:02] complicato o nel tecnico, questo è
+[00:19:04] proprio un modo per vedere insomma come
+[00:19:07] costruire un AICFO
+[00:19:09] di supporto. Però vedete su che base
+[00:19:12] costruisco il budget, i ricavi del 26,
+[00:19:15] eh, e gli diciamo ok, il ritmo attuale,
+[00:19:17] il margine di listino, senza questo
+[00:19:20] margine i margini [sbuffare] per
+[00:19:21] servizio escono tutti uguali. Come
+[00:19:23] procediamo? te li do per servizio, unico
+[00:19:25] margine per tutti, lascia vuoto. Allora,
+[00:19:28] noi gli diremo magari ok, te li diamo
+[00:19:30] per
+[00:19:32] eh gli sconti contrattuali dei clienti
+[00:19:34] sono informazione che rende il margine
+[00:19:36] utile. Come procediamo? E allora qui gli
+[00:19:38] diremo te li do per i principali. Quindi
+[00:19:41] vedete che poi qui l'Iagliore
+[00:19:48] possibile. Poi ovviamente avremo anche
+[00:19:50] la possibilità di andare a modificare
+[00:19:52] questi valori una volta che tutto
+[00:19:53] funziona. Perfetto. E con questo la
+[00:19:55] nostra prima fase di import
+[00:20:00] che è riuscita ad importare le varie
+[00:20:03] cose. i primi 10 valgono il 47% del
+[00:20:05] fatturato e ha già cominciato
+[00:20:08] ad ehm elaborare qualche pattern
+[00:20:11] all'interno del nostro DB. La nostra
+[00:20:13] fase due ora è la costruzione di quello
+[00:20:17] che noi chiamiamo il motore del calcolo
+[00:20:20] e quindi della logica delle metriche.
+[00:20:22] Allora, questo è un prompt abbastanza
+[00:20:23] lungo, potete andarlo a vedere in
+[00:20:25] dettaglio, ma in maniera semplice,
+[00:20:29] dettaglia come voglio che questi conti
+[00:20:31] vengano eseguiti e quindi quali
+[00:20:34] tipologie di funzioni. Quindi conto
+[00:20:35] economico, conto economico periodo,
+[00:20:37] quindi contabilità dal oppure uno
+[00:20:40] scadenziario, documenti scaduti. Quindi
+[00:20:43] voglio che mi segnali questo. e voglio
+[00:20:48] che cominci a fare un'analisi clienti
+[00:20:50] che elabori un punteggio di rischio,
+[00:20:53] reditività per servizio. Quindi vedete
+[00:20:56] qui, insomma, ci sono diverse voci e
+[00:20:59] quello che noi stiamo cercando di creare
+[00:21:01] ora, giusto perché sia chiaro, è noi
+[00:21:03] stiamo cercando di staccare il fatto che
+[00:21:07] noi stiamo utilizzando l'EI dal fatto
+[00:21:09] che l'AI debba calcolare le cose. Noi
+[00:21:11] vogliamo che sia il codice a calcolare
+[00:21:13] le cose perché uno perché non consuma
+[00:21:15] token, no?
+[00:21:16] perché sono formule matematiche, ma due
+[00:21:19] perché passiamo da quella che viene
+[00:21:21] definita stocasticità a quello che viene
+[00:21:23] definito determinismo. Cosa vuol dire?
+[00:21:25] Vuol dire che le hai, proprio perché
+[00:21:27] come scopo a indovinare il token
+[00:21:29] successivo,
+[00:21:31] indovinerà il numero. Lo calcola, ma lo
+[00:21:34] calcola con una probabilità di
+[00:21:35] sbagliare. Questa probabilità di
+[00:21:37] sbagliare va a zero se abbiamo il
+[00:21:40] codice, perché il codice fa esattamente
+[00:21:42] sempre la stessa operazione, la
+[00:21:43] controlla. Quindi questo è esattamente
+[00:21:45] quello che noi ora stiamo andando a fare
+[00:21:48] e infatti alla fine di questo prompto,
+[00:21:51] a parità di dati due esecuzioni devono
+[00:21:55] eseguire un output identico riga per
+[00:21:57] riga, devi dove ordini per punteggio,
+[00:22:00] aggiungi un criterio di parità, nome,
+[00:22:02] eccetera e e quindi quello che facciamo
+[00:22:05] è e c'è scritto proprio all'inizio del
+[00:22:07] video, ehm da questo momento in poi
+[00:22:10] nessun prompt andrà a sommare, dividere
+[00:22:13] o fare conto
+[00:22:14] ma lo farà appunto il nostro codice.
+[00:22:17] Quindi qui stiamo creando tra virgolette
+[00:22:20] il nostro livello di analista prima di
+[00:22:24] poi passare all'interpretabilità
+[00:22:27] dei dati che è riuscito a calcolare.
+[00:22:29] Quindi non facciamo nient'altro che
+[00:22:30] andare qui, incollare il nostro piccolo
+[00:22:32] prompt. Abbiamo anche, come vedete qui,
+[00:22:34] tutta una serie di KPI che abbiamo
+[00:22:36] inserito all'interno e poi avrete modo
+[00:22:39] di vederli tutti nella dashboard. Ora
+[00:22:41] faccio andare il prompt e una volta che
+[00:22:43] ha finito vi mostro che cosa è successo.
+[00:22:45] Perfetto, questo è esattamente quello
+[00:22:46] che mi aspettavo e quel è il motivo per
+[00:22:49] cui stiamo separando la costruzione dei
+[00:22:53] vari blocchi. Allora, il test del
+[00:22:55] determinismo ha trovato un bug reale.
+[00:22:58] Confrontavo 12 mesi di budget contro 8
+[00:23:01] di consuntivo e quindi questo era il
+[00:23:03] delta che usciva con questo scostamento.
+[00:23:06] Quindi, ehm, da questo a questo, stessa
+[00:23:10] famiglia di errori, eccetera, che cosa
+[00:23:12] dicono i numeri, due decisioni di
+[00:23:14] progetto, il punteggio di rischio è
+[00:23:17] parziale e lo dichiara, il feo non è
+[00:23:20] compilato, quindi la componente di
+[00:23:22] esposizione non è calcolabile e invece
+[00:23:25] poi percentuali di recupero sono in
+[00:23:28] recupero atteso. Il limite che resta
+[00:23:30] oggi restituisce margini tra questo e
+[00:23:32] questo su tutti gli otto servizi. Ed è
+[00:23:34] il motivo è perché non abbiamo inserito
+[00:23:36] queste cose qui all'inizio, no? Quindi
+[00:23:38] quello quando abbiamo creato la logica
+[00:23:40] del nostro sistema abbiamo detto: "Ok,
+[00:23:41] ti mettiamo noi vari sconti a seconda
+[00:23:44] del tipologia di cliente". Va bene? Ora
+[00:23:48] tutto questo ha fatto sì che noi
+[00:23:51] riusciamo ad avere costruito ora un
+[00:23:53] qualcosa che macini dei dati in maniera
+[00:23:56] deterministica. Che cosa manca? E questo
+[00:23:59] è sostanzialmente il core del video,
+[00:24:02] perché se l'avessi chiamato eh ok, come
+[00:24:05] lavorare i dati con cloud, forse nessuno
+[00:24:08] avrebbe cliccato, forse ICFO va un po'
+[00:24:10] meglio come titolo. Ma ora la parte che
+[00:24:13] manca è qui. Abbiamo il calcolo, abbiamo
+[00:24:16] il punteggio di rischi, abbiamo la
+[00:24:17] logica, è tutto deterministico, abbiamo
+[00:24:20] lo scadenziario, abbiamo le percentuali,
+[00:24:23] tutto è mappato come vogliamo. Non
+[00:24:25] abbiamo ancora insegnato al nostro
+[00:24:28] futuro CFO come gestire alert e segnali.
+[00:24:32] Quindi quello che gli dobbiamo dire
+[00:24:34] adesso è bene, una volta che leggi i
+[00:24:36] numeri, quali numeri sono numeri che
+[00:24:39] dovresti segnalarmi come rischio
+[00:24:42] imminente o potenziale rischio per la
+[00:24:44] mia azienda?
+[00:24:46] E quindi quello che siamo andati a fare
+[00:24:49] non è stato altro che costruire una
+[00:24:52] logica che ci permettesse di
+[00:24:54] identificare quello che è il rischio. E
+[00:24:56] questo è quello che voi dovrete fare
+[00:24:57] nella vostra organizzazione perché
+[00:24:59] perché a seconda del settore in cui
+[00:25:02] siete, a seconda di quello che state
+[00:25:04] vendo, avrete ovviamente delle eh
+[00:25:07] diciamo metodologie diverse per
+[00:25:09] identificare i rischi. Per esempio, se
+[00:25:12] avete un'azienda di lusso, non lo so, il
+[00:25:15] target di profitto dovrebbe essere
+[00:25:17] almeno almeno il 30%. Se avete
+[00:25:19] un'azienda di trasporto, ovviamente il
+[00:25:21] profitto è più basso perché abbiamo più
+[00:25:22] costi operativi e quindi magari siete
+[00:25:25] più vicini al 10, che so io, eh, e via
+[00:25:28] dicendo. Se gestite una farmacia, ma
+[00:25:30] magari non avete, non lo so, della parte
+[00:25:33] di cosmesi o di prodotti per la pelle
+[00:25:38] che allora incrementano il margine, se è
+[00:25:40] puro medicinale, siete tra il 5 e il 10,
+[00:25:43] con parte di cosmesi, andate fino al 30
+[00:25:45] o 25, quindi insomma avrete vari metodi
+[00:25:49] per decidere in base alla tipologia di
+[00:25:51] business che state avendo se il vostro
+[00:25:54] target è in qualche modo salutare come
+[00:25:56] numero, se non lo è. Poi a seconda di
+[00:25:58] come voi opererete dentro la vostra
+[00:26:00] azienda, avrete anche dei segnali
+[00:26:02] diversi. Quindi ecco, quello che ci
+[00:26:03] tenevo a comunicare è che bisogna
+[00:26:06] insegnare in un secondo momento qual è
+[00:26:09] la parte di alert. Dirgli slal f non
+[00:26:12] funziona ancora, non siamo ancora lì,
+[00:26:14] diciamo, con l'AI. Quindi quello che
+[00:26:17] faremo ora è, e se volete andare a
+[00:26:19] vedere tutto nel dettaglio, io ho fatto
+[00:26:21] quello che ritenevo un buon draft per un
+[00:26:24] AI CFO. potete andare a vederlo e a
+[00:26:28] implementarlo. Quindi quello che faremo
+[00:26:30] ora è ehm incollare questo e poi vi
+[00:26:33] mostro cosa succede. E altra cosa che ci
+[00:26:35] tenevo a dirvi è mi raccomando, ehm voi
+[00:26:38] ora questo è un parametro che dovreste
+[00:26:40] sempre tenere sotto controllo, perché se
+[00:26:43] io stessi facendo la costruzione,
+[00:26:45] diciamo, di questa secondo le best
+[00:26:46] practices, quando supero il 25% 20% del
+[00:26:50] contesto, dovrei utilizzare il comando
+[00:26:53] slcacca compact per compattare il
+[00:26:55] contesto e permettere a cloud, quindi,
+[00:26:57] di ehm agire in maniera molto più
+[00:27:00] efficiente. Eh, quindi io ora non lo sto
+[00:27:02] facendo, ma mi raccomando, se voi eh
+[00:27:04] state utilizzando questo dovete
+[00:27:06] ricordarvi di farlo. Bene, ora che avete
+[00:27:08] quindi il motore, avete tutto quello che
+[00:27:10] vi serve per poter cominciare a creare i
+[00:27:13] vostri analisti. Questi verranno fatti
+[00:27:15] sulla base di delle logic che voi
+[00:27:16] inserirete. A me piacciono molto logiche
+[00:27:19] molto matematiche di normalizzazione, di
+[00:27:21] controllo del dato, molto granulari,
+[00:27:24] quindi quelle sono quelle che io ho
+[00:27:26] creato. Però a questo punto voi avete
+[00:27:29] tutti gli strumenti per fare il vostro
+[00:27:32] analista finanziario. Quello che farò
+[00:27:34] adesso sarà quindi scaricare due skill
+[00:27:36] che mi sono fatto. Vi faccio vedere che
+[00:27:38] cosa fanno. Uno è un analista
+[00:27:40] finanziario. Questo estrae da
+[00:27:42] Quickbooks, normalizza tutto e calcola,
+[00:27:45] produce 12 tabelle del mio command
+[00:27:48] center e si ferma lì. Non non fa altre
+[00:27:51] cose. La seconda skill che vado a
+[00:27:53] scaricare è il mio AI CFO. Questo non
+[00:27:57] tocca i conti, quindi non sta
+[00:27:59] calcolando. È super importante questo.
+[00:28:02] Da fatta l'analisi e comincia solo dopo.
+[00:28:06] E quindi questo AI CFO comincerà ad
+[00:28:09] interpretare le tabelle su quello che io
+[00:28:11] ritengo essere un buon modo di farlo e
+[00:28:14] su quello che ho imparato magari in big
+[00:28:15] tech, insomma, quando dovevo fare
+[00:28:17] reportistica alla leadership. Quindi, eh
+[00:28:19] 12 tabelle, quella più importante,
+[00:28:21] traduce in impatto, traduce con impatti
+[00:28:24] su cassa, margine, trasformina azioni e
+[00:28:27] via dicendo. Quindi questo è il
+[00:28:29] passaggio pre eh creazione della nostra
+[00:28:32] dashboard. Quindi ora me le vado a
+[00:28:34] scaricare, vado dentro la mia community
+[00:28:36] libreria Skill AI CFO e lo trovate qui
+[00:28:40] sulla sinistra e poi qua dentro avremo
+[00:28:42] le nostre due skill che io ora scarico.
+[00:28:45] Quindi vado in cloud e dico "He
+[00:28:47] all'interno del mio desktop ci sono
+[00:28:50] delle skill dtz zip e che mi piacerebbe
+[00:28:53] che tu importassi all'interno di questo
+[00:28:56] progetto sono una lista finanziario e un
+[00:28:58] AI CFO. Dimmi una volta che lo hai
+[00:29:01] fatto. Perfetto. Quindi ora Cloud andrà
+[00:29:04] ad importare il lo zip file e metterà le
+[00:29:08] skill qua dentro.
+[00:29:10] E [sbuffare] una volta che lo ha fatto
+[00:29:12] ovviamente noi avremmo modo di vederle
+[00:29:14] nel nostro dot, quindi questo è quello
+[00:29:17] che anche creerà e farà in maniera
+[00:29:19] totalmente autonoma.
+[00:29:22] Vedete? Cerca i file zip sul desktop.
+[00:29:24] Ora va dentro, trovato, eccetera
+[00:29:27] eccetera. Vi faccio vedere quando ha
+[00:29:29] finito e quindi ora ci siamo. Abbiamo
+[00:29:31] estratto le nostre skill, ve le faccio
+[00:29:33] vedere anche al volo, così avete
+[00:29:36] un'idea. Skill, vedete, ICFO e analista.
+[00:29:39] Allora, poi ho delle reference, ho degli
+[00:29:41] asset, quindi insomma è una cosa un po'
+[00:29:43] complessa, ci ho messo un po' a fare
+[00:29:44] questa roba qui, però vedete che qui
+[00:29:47] direttore finanziario che legge le
+[00:29:48] analisi già fatte, eccetera, e poi qua
+[00:29:51] cosa cosa fai, cosa non fai, come le
+[00:29:53] prendi, da dove le prendi e quindi
+[00:29:55] questo è tutto il dettaglio, insomma,
+[00:29:57] della skill. c'è un sacco di roba dentro
+[00:29:59] con asset riferimenti e poi abbiamo
+[00:30:03] anche ehm il nostro analista finanziario
+[00:30:07] invece che è un po' diverso, no? Quindi
+[00:30:10] questo è quello che andrà ad eh estrarre
+[00:30:13] le cose. Quindi vedete che qui gli ho
+[00:30:14] fatto un po' di architettura, no? quindi
+[00:30:16] cosa fai, come normalizzi, come calcoli
+[00:30:19] e via dicendo. Quindi queste sono le due
+[00:30:21] skill che andremo ad analizzare, ad
+[00:30:24] utilizzare, perdonatemi. Allora, ora eh
+[00:30:27] per farglielo fare e voglio farvi vedere
+[00:30:29] qual è il risultato, colgo eh
+[00:30:31] l'occasione per fare due cose in uno e
+[00:30:33] quindi creare immediatamente la
+[00:30:35] dashboard, che è quello che gli ho detto
+[00:30:37] alla fine. Quindi quello che gli dico io
+[00:30:39] ora è: "Ehi, per favore, sotto vedi
+[00:30:42] anche un promptare la dashboard? Quello
+[00:30:45] che ti chiederei per favore è adesso
+[00:30:48] prendi le due skill, fai fine tuning del
+[00:30:51] tutto con il progetto, quindi integra le
+[00:30:54] cose che magari sono mancanti e poi
+[00:30:57] producimi la dashboard proprio come
+[00:31:00] specificato sotto. E qui gli metto
+[00:31:04] quindi costruzione
+[00:31:06] dashboard. È una
+[00:31:10] Ok? e lo e ovviamente sarà quello. E
+[00:31:13] dopo l'ultima cosa che gli ho messo che
+[00:31:15] avrete qua sotto anche è il prompt
+[00:31:19] antiallucinazione.
+[00:31:20] Quindi queste due cose voglio metterle
+[00:31:22] assieme e voglio anche spiegarvi perché
+[00:31:25] velocemente perché qui noi non vogliamo
+[00:31:28] produrre la dashboard che poi abbia dati
+[00:31:31] magari sbagliati, quindi noi abbiamo
+[00:31:33] fatto due cose e se vi ricordate. La
+[00:31:36] prima è quella che noi abbiamo
+[00:31:38] cominciato a fare un codice
+[00:31:39] deterministico,
+[00:31:41] però adesso perché dobbiamo mettere un
+[00:31:43] altro cancello di verifica? perché c'è
+[00:31:45] l'interpretazione del dato. Quindi non
+[00:31:47] vogliamo che nella parte in cui ci siamo
+[00:31:50] distaccati dal codice deterministico,
+[00:31:53] allora abbiamo cominciato poi ad
+[00:31:55] introdurre degli errori. Quindi questo è
+[00:31:57] quello che in poche parole stiamo
+[00:31:59] facendo. Ora eh voi avete appunto tutto
+[00:32:02] quanto. Ora io ranno il prompt e poi vi
+[00:32:06] faccio vedere il risultato alla fine di
+[00:32:08] modo tale che voi possiate vedere che
+[00:32:10] cosa c'è. Ok, allora ci siamo. Tra
+[00:32:12] l'altro questa è una delle cose che
+[00:32:14] avevo preparato quando facevo
+[00:32:15] reportistica o simile concettualmente,
+[00:32:18] quindi vi mostro una cosa abbastanza
+[00:32:21] veritiera, [risate] chiamiamola così.
+[00:32:23] Allora, e quindi ve la apro qui che è un
+[00:32:25] po' più chiara. Vedete che la ehm review
+[00:32:29] parte da CFO Alert. Fatemi mettere il
+[00:32:32] mio faccione di qua, così vediamo tutti
+[00:32:35] bene. CFO Alert con i clienti pagano in
+[00:32:38] media 93 giorni. Un anno fa erano 76 e
+[00:32:41] poi Insights, poi esposizione, 31 dei
+[00:32:45] crediti era già scaduto, quindi in
+[00:32:47] questo caso eh qui giro di telefonate o
+[00:32:50] possiamo pensare ad automazioni AI, no?
+[00:32:53] Follow fatture non pagate, che il 5% dei
+[00:32:56] soldi di un'azienda sono lì, media dati
+[00:32:58] US più o meno. E quindi qui abbiamo un
+[00:33:00] overview di tutte gli alert che un CFO
+[00:33:03] dovrebbe avere sottomano per poter poi
+[00:33:05] prendere azioni con il team. Poi
+[00:33:08] executive summary, abbiamo il fatturato
+[00:33:11] con delle raccomandazioni di che cosa
+[00:33:13] l'AI raccomanda. Possiamo ovviamente
+[00:33:15] interfacciarci con questi KPI sotto,
+[00:33:19] quindi sottomano li abbiamo subito,
+[00:33:21] quindi ricavi, margine lordo e bit,
+[00:33:23] giorni di incasso, crediti scaduti,
+[00:33:25] copertura, costi fissi e via dicendo. E
+[00:33:28] dopo la parte che a me piace, quindi il
+[00:33:29] margine. Questa è una cosa che è un po'
+[00:33:31] difficile da fare, ma quando cominciamo
+[00:33:33] a vederla è effettivamente molto utile
+[00:33:36] lato business, no? Quindi, quando
+[00:33:39] abbiamo avuto il problema con il
+[00:33:40] margine, che cosa è successo? E qui
+[00:33:43] abbiamo il breakdown dei nostri servizi,
+[00:33:45] ehm, che ci permettono appunto di vedere
+[00:33:47] dove dovremmo eh andare. Ehm, quindi
+[00:33:51] scadenza crediti,
+[00:33:53] eh da chi chiamare con ordine di
+[00:33:56] priorità, azioni raccomandate, prossimi
+[00:33:59] passi e metodologia. Quindi questo è
+[00:34:02] quello che voi potreste avere
+[00:34:04] automatizzato in maniera giornaliera,
+[00:34:07] settimanale, mensile, annuale, quello
+[00:34:09] che volete. Basta semplicemente poi
+[00:34:12] prendere questo, metterlo nel cloud e
+[00:34:14] creare una routine. Quindi ora avete
+[00:34:17] costruito il vostro primo AI CFO che
+[00:34:19] potrà essere a supporto delle funzioni
+[00:34:22] di finance e rimpiazzare tutta quella
+[00:34:25] parte di estrazione del dato che è
+[00:34:27] abbastanza macchinosa e noiosa. La parte
+[00:34:30] di analisi invece è molto importante che
+[00:34:32] abbiamo un primo input dalle AI che può
+[00:34:35] direzionarci, ma che poi ovviamente ci
+[00:34:37] sia un umano che direziona in maniera
+[00:34:40] definitiva la decisione finale, perché
+[00:34:42] parliamo qui di AI enhancement e non di
+[00:34:45] rimpiazzare lavori vari. Quindi spero il
+[00:34:48] video vi sia piaciuto, se vi è piaciuto
+[00:34:49] iscrivetevi al canale che aiuta e ci
+[00:34:51] vediamo alla prossima.
