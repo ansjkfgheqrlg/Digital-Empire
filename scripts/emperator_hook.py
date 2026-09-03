@@ -313,6 +313,17 @@ IL BATTITO DEI DIECI MINUTI (direttiva Max 2026-09-02, REGOLA TUA, vale SEMPRE �
     Un battito che diventa una pausa e' il contrario del suo scopo: nasce per TOGLIERE a Max
     il costo di controllarti, non per scaricargli addosso una decisione ogni dieci minuti.
     Ti fermi solo se e' Max a fermarti.
+  - LINGUA DEL BATTITO — PAROLE SEMPLICI (ordine di Max, 2026-09-03). Il battito e' la riga
+    che Max legge di corsa: se deve decifrarla, hai fallito. Vietato dentro il battito il
+    gergo di mestiere — niente "coverage", "stage", "atomi", "pipeline", "patch", "ingest",
+    "frame", "run", "swarm". Si dice la COSA, non il suo nome tecnico:
+        NO  "coverage.md mancante, Stages C-H non chiusi su v10"
+        SI  "il video di Barron l'ho guardato ma non l'ho ancora archiviato"
+        NO  "8 skill patchate + 1 agente nuovo registrato"
+        SI  "8 strumenti dell'azienda ora sanno una cosa in piu', e c'e' un agente nuovo"
+    Il nome tecnico puo' seguire fra parentesi se serve a ritrovare il file, mai sostituire
+    la frase in italiano. Vale per il battito E per i report a Max. Regola generale: se una
+    riga non si capisce senza sapere come e' costruita la macchina, va riscritta.
   - Se in quei 10 minuti non e' cambiato niente lo dici lo stesso: "fermo sul punto X,
     collo di bottiglia Y". Il silenzio non e' mai un'opzione.
   QUANDO SCATTA: build lunghe, batch di test, scraping e ingestioni, cicli di fase a 9 passi,

@@ -603,6 +603,27 @@ Farò:         <una riga>
 buio da riempire, e un battito lì è rumore. La soglia è il lavoro che **supera i ~15 minuti**
 — da lì in poi, un battito **ogni ~10 minuti**, fino alla fine.
 
+**LA LINGUA DEL BATTITO — PAROLE SEMPLICI** *(ordine di Max, 2026-09-03)*.
+Il battito è la riga che Max legge di corsa: se deve decifrarla, ha fallito. **Dentro il
+battito il gergo di mestiere è vietato** — niente *coverage*, *stage*, *atomi*, *pipeline*,
+*patch*, *ingest*, *frame*, *run*, *swarm*. Si dice **la cosa**, non il suo nome tecnico:
+
+| ❌ Come NON si scrive | ✅ Come si scrive |
+|---|---|
+| «coverage.md mancante, Stages C-H non chiusi su v10» | «il video di Barron l'ho guardato ma non l'ho ancora archiviato» |
+| «8 skill patchate + 1 agente nuovo registrato» | «8 strumenti dell'azienda ora sanno una cosa in più, e c'è un agente nuovo» |
+| «frame estratti con scene_detector, soglia 3.0» | «ho tolto le schermate uguali: da 4.300 a 1.000» |
+
+Il nome tecnico può **seguire fra parentesi** se serve a ritrovare il file — mai sostituire la
+frase in italiano. **Vale per il battito e per ogni report a Max.** La regola generale, che
+copre anche i casi non elencati: *se una riga non si capisce senza sapere com'è costruita la
+macchina, va riscritta.*
+
+**Perché è una regola e non un gusto:** il gergo fa sembrare il lavoro più serio a chi lo
+scrive e lo rende opaco a chi lo legge. Max non deve imparare il mio vocabolario per sapere a
+che punto sono: sono io che devo parlare il suo. Un rapporto che il proprietario non capisce
+non è un rapporto — è rumore ben impaginato.
+
 **IL BATTITO NON TI FERMA — MAI** *(precisazione di Max, 2026-09-03, e non è un dettaglio)*.
 Il recap si scrive **mentre continui**: lo dai e vai avanti, puntini puntini, senza aspettare
 risposta, senza chiedere conferma, senza "vuoi che proceda?". Un battito che diventa una pausa
