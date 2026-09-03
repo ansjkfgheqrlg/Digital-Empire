@@ -1450,3 +1450,5 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
 - DEBITO APERTO: nessun checkpoint in `company/Memory/checkpoints/`, `STATO-EMPIRE.md` non
   aggiornato — fuori dal perimetro esplicito del brief, coerente col pattern gia' registrato su
   `DTCyvo6cC54`, `E8Ax92etrMc` e `yJOCyyP77bA`. **Nessun commit git.**
+
+- ADR-016: dottrina integrale all apertura (67k una volta) + sveglia leggera (2k a messaggio); Emperator al 100% per Max, Gael e Neri

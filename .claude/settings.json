@@ -122,6 +122,16 @@
             "timeout": 90
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "py -3 scripts/emperator_boot.py",
+            "timeout": 20,
+            "statusMessage": "EMPERATOR — dottrina integrale..."
+          }
+        ]
       }
     ],
     "Stop": [
