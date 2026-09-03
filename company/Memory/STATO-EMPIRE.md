@@ -1,3 +1,35 @@
+## ⚠️ COORDINAMENTO — 2026-09-03 21:5x — EMPERATOR, giro 2 EMP-QQ2R (mai fermarsi)
+
+3 sentinelle in swarm su `runs/max17-v12`, `runs/max17-v13`, `runs/max17-v14` — video mai
+guardati, pipeline da zero (frame gia' estratti). Nessuno tocchi queste 3 cartelle finche'
+non arriva CP con esito. `max17-v16` (859 frame, il piu' pesante) resta per il giro dopo.
+Codice di ripresa: **EMP-QQ2R**. Ordine di Max: Fase 1 = solo studio, Fase 2 (implementazione
+dei consigli) rimandata a dopo, esplicito.
+
+---
+
+## 🔧 2026-09-03 22:1x — EMPERATOR: pivot piano @Legamidiamore, causa vera trovata — ADR-021 / CP-018
+
+Ordine di Max dopo l'analisi (CP-016): "cosa facciamo per migliorare? Decidi tu, procedi."
+
+Causa reale isolata: non erano le strategie sbagliate, era la coda di produzione mai rifornita —
+`coda_produzione.json` accetta solo script scritti a mano e dal lancio del piano (27/8) ne e' stato
+scritto uno solo. Promettere 70 video/30gg su un collo di bottiglia da ~1 script/settimana era il
+vero difetto del piano, non il mix A/B/C.
+
+**Deciso (ADR-021)**: strategie sequenziali, non parallele. Solo A attiva ora; B e C in pausa
+dichiarata (non cancellate) finche' A non tiene ≥3 video/settimana per 3 settimane — verifica
+fissata al 2026-09-24. Trovato e rimesso in coda uno script gia' pronto dal 23/8
+(`chVKOBlEpDI`, zero costo). Creato `copy_intelligence_legamidiamore.json`, che non era mai
+esistito.
+
+**RIPRESA DA**: (1) produrre chVKOBlEpDI (in coda, pronto); (2) verifica cadenza A al 24/9;
+(3) Max deve ancora decidere se pubblicare i 2 video fermi in Privato (segnalato in CP-016, non
+ancora toccato); (4) debiti invariati da CP-013/016 (Memory↔canale, video-06/07).
+Vedi [CP-20260903-018](checkpoints/CP-20260903-018.md).
+
+---
+
 ## 👑 2026-09-03 21:3x — EMPERATOR: 3 sentinelle morte recuperate, EMP-QQ2R avanza
 
 Swarm di 3 agenti paralleli ha chiuso end-to-end i 3 video bloccati da limite di sessione:
