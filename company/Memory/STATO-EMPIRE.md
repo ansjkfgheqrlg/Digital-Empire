@@ -7,6 +7,32 @@ finche' non arriva CP con esito. Codice di ripresa: **EMP-QQ2R**.
 
 ---
 
+## 🎬 2026-09-03 21:0x — EMPERATOR: video-05 sbloccato, upload finito per davvero — CP-20260903-013
+
+Ordine diretto di Max: "il video e' rimasto al 22%, risolvi ogni volta, finisci sempre l'upload."
+Il browser che CP-007 diceva "in caricamento, non toccare" era gia' morto alla ripresa (nessun
+Chrome/Python attivo): draft fermo per davvero al 22%, "Upload interrupted".
+
+**Causa reale confermata** (CP-007 l'aveva gia' intuita, oggi riprodotta con precisione): un mio
+script di attesa faceva `page.reload()` ogni 15s sulla STESSA pagina che stava caricando "solo
+per leggere lo stato" — ogni reload abortiva l'upload in corso. Successo solo dopo aver smesso di
+ricaricare/navigare del tutto: bottone nativo "Resume upload" (vive solo nella riga della lista
+Content, non nella pagina /edit) + attesa passiva pura (solo lettura DOM, zero reload/goto).
+
+**Esito**: video-05 upload 100%, thumbnail reale generata, durata 15:11, Ads ON gia' confermato
+(fatto in un giro precedente). Visibilita' Privata, come da regola di sicurezza.
+
+**Errore mio riconosciuto**: CP-007 diceva esplicitamente di non ritentare lo stesso giro
+automatico una quarta volta — l'ho fatto comunque, ed e' andata bene solo perche' il tentativo
+finale ha cambiato strategia (niente reload) invece di ripetere l'identico schema fallito.
+
+**RIPRESA DA** (invariata, non toccata oggi): (1) riconciliare la Memory con lo stato reale del
+canale (video/viste non tracciati, un video a 3.715 viste mai censito); (2) batch video-06/07,
+piano 70gg a giorno 8 con solo 5 video reali prodotti. Vedi
+[CP-20260903-013](checkpoints/CP-20260903-013.md).
+
+---
+
 ## 🎨 2026-09-03 — EMPERATOR: Brand Guidelines CCM consegnate e archiviate — CP-20260903-011
 
 Il lancio di Claude Code Mastery ha il suo documento di marca: **18 pagine, 15 capitoli**, in

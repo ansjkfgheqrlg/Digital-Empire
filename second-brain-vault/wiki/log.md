@@ -1,5 +1,35 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-03 (EMPIRE STUDIO — chiusura ciclo BSUHmVcaO1g, batch max17 v07, sentinella studia-rizzo ripresa)
+- INGEST (Empire Studio + Memory Empire): batch `max17`, video `BSUHmVcaO1g` "Se usi ancora i
+  prompt... devi vedere questa evoluzione" (Simone Rizzo, 31m23s, IT). Sentinella `studia-rizzo`
+  morta per limite di sessione con visione+analisi gia' completa su disco (`video-analysis.md`
+  922 righe, `atoms.json` 71 KA, `coverage.md`, 133/224 scene = 176/942 frame letti, NO-FINTO
+  PASS con copertura parziale dichiarata) -- mancavano solo Stage 6-9 (wiki, consigli, memory
+  close). Nessuna nuova visione dei frame in questa sessione: solo lettura del lavoro gia' fatto
+  e chiusura del ciclo. -> `empire-studio/memory-empire/knowledge/BSUHmVcaO1g/` (contenuto
+  integrale + atoms + manifest + enrichment-report, tutti reali), **1 pagina wiki creata**
+  (`sources/Source_Simone_Rizzo_Loop_Engineering.md`), index.md aggiornato (sezione "Metodologie
+  di Sviluppo").
+- CONTENUTO: pila a quattro livelli Prompt -> Context -> Harness -> Loop Engineering, ognuno nato
+  per risolvere il fallimento del precedente. Il pezzo di maggior valore per DE: i **5 Livelli di
+  Verifica** (Deterministico / Regole-vincoli / Verita' terrena ritardata / LLM giudice /
+  Checkpoint umano) come griglia per sapere quanto fidarsi di un ciclo autonomo prima che serva
+  un umano nel giro, e la sintassi esatta di `/loop [interval] [prompt]` e
+  `/goal [<condition>|clear]` con le due regole operative (condizione di terminazione obbligatoria
+  dopo `|`, goal valutabile dall'agente stesso -- senza la prima un obiettivo impossibile produce
+  un ciclo infinito che brucia token). Demo reale: script di prodotto fra matrici ottimizzato in
+  10 tentativi tracciati per intero in `OPTIMIZATION_LOG.md`, 320x speedup finale via GPU tensor
+  core.
+- CORREZIONE su un file trovato inesatto: `ingest-manifest.json` (scritto prima dell'interruzione
+  di sessione) dichiarava gia' "fatti" una pagina wiki e due patch a `guild-prompt.md` e
+  `prompt-engegniring-skill/SKILL.md` che **non esistevano su disco** -- ne' la pagina ne' le due
+  patch erano mai state scritte. Corretto il manifest a "proposto, non applicato" e le due patch
+  spostate nella sezione "Consigli" della pagina wiki come proposte, senza toccare i due file
+  condivisi (perimetro dichiarato nel checkpoint `EMP-QQ2R`: nessuna modifica a skill/agenti
+  condivisi mentre altre due sentinelle lavoravano in parallelo sullo stesso repo).
+- Checkpoint: vedi `company/Memory/checkpoints/` (numero assegnato a fine lavoro).
+
 ## 2026-09-03 (EMPERATOR — perimetro fuori dal repo + Gael e Neri abilitati)
 - SICUREZZA: il blocco riservato della dottrina viveva in due file TRACCIATI, quindi
   finiva nella sessione di Gael e Neri ogni volta che pronunciavano il nome (18.355 byte).

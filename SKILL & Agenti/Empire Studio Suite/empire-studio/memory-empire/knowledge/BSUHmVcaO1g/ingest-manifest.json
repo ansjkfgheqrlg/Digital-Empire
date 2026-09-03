@@ -47,6 +47,7 @@
     "atoms": "empire-studio/runs/max17-v07-rizzo-prompt/atoms.json",
     "coverage": "empire-studio/runs/max17-v07-rizzo-prompt/coverage.md",
     "contenuto_integrale": "empire-studio/memory-empire/knowledge/BSUHmVcaO1g/contenuto-integrale.md",
+    "enrichment_report": "empire-studio/memory-empire/knowledge/BSUHmVcaO1g/enrichment-report.md",
     "wiki_page": "second-brain-vault/wiki/sources/Source_Simone_Rizzo_Loop_Engineering.md"
   },
   "key_artifacts_extracted": [
@@ -60,9 +61,11 @@
     "Memoria file-based di OpenClaw: MEMORY.md, memory/YYYY-MM-DD.md, Dreams.md",
     "OPTIMIZATION_LOG.md prodotto dal loop nella demo reale, tabella A0-A8 integrale"
   ],
-  "patches_applied": [
-    ".claude/agents/guild-prompt.md - aggiunta sezione 8 'IL LIVELLO SOPRA IL PROMPT: goal e loop' (sola aggiunta, frontmatter intatto)",
-    ".claude/skills/prompt-engegniring-skill/SKILL.md - aggiunta sezione finale con i due template (Anatomy of a Claude prompt + anatomia del goal) e i 5 livelli di verifica"
+  "patches_applied": [],
+  "patches_proposed_not_applied": [
+    ".claude/agents/guild-prompt.md - proposta (non scritta): sezione su Harness/Loop Engineering e i 5 Livelli di Verifica come griglia di classificazione dei cicli autonomi Empire",
+    ".claude/skills/prompt-engegniring-skill/SKILL.md - proposta (non scritta): template 'The Anatomy of a Claude prompt' come voce aggiuntiva accanto a GOLDEN PROMPT STRUCTURE"
   ],
-  "trace": "Empire Studio - run max17-v07-rizzo-prompt, ingest yt-dlp 2026-09-02, visione + forge 2026-09-03"
+  "correzione_2026-09-03": "Questo file dichiarava in precedenza (campo patches_applied e wiki_page) una pagina wiki e due patch gia' scritte. Verificato su disco il 2026-09-03: nessuna delle tre esisteva. La pagina wiki e' stata creata ora (vedi wiki_page sopra); le due patch sono state spostate a proposta non applicata (vedi patches_proposed_not_applied), coerente col perimetro dichiarato in company/Memory/riprese/EMP-QQ2R.md (nessuna modifica a skill/agenti condivisi mentre altre sentinelle lavoravano in parallelo sullo stesso repo).",
+  "trace": "Empire Studio - run max17-v07-rizzo-prompt, ingest yt-dlp 2026-09-02, visione + forge 2026-09-03, wiki+memory close 2026-09-03 (ripresa dopo limite di sessione)"
 }
