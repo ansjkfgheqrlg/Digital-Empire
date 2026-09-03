@@ -90,17 +90,17 @@ che è pubblica e resta leggibile. Stessa classe di B-020/021/023.
 
 
 <!-- EMPIRE-MEM:BEGIN (generato da `empire mem state`) -->
-## 🧠 MEMORIA — istantanea automatica 2026-09-03 19:20
+## 🧠 MEMORIA — istantanea automatica 2026-09-03 19:41
 
-- **atomi totali:** 8  ·  checkpoint: 8
+- **atomi totali:** 9  ·  checkpoint: 9
 - **decisioni attive:** 0  ·  **backlog aperto:** 0  ·  **errori registrati:** 0
 
 **Ultimi 5 atomi:**
+- `CP-20260903-009` 2026-09-03 — L3 ARCHITETTURA-LANCI chiusa: 7 reparti su 8 sono WRAP, il solo NUOVO e' il prezzo
 - `CP-20260903-008` 2026-09-03 — L2 ASSORBIMENTO-LANCI chiusa: il lancio esiste gia', tranne il lancio
 - `CP-20260902-009` 2026-09-02 — L1 RICOGNIZIONE-LANCI chiusa: il reparto Lanci e' carta, misurato
 - `CP-20260902-002` 2026-09-02 — TASK-KDP-PIANO-W2 chiuso: piano editoriale settimanale, 3 agenti (SCOUT/EDITOR/GATE) e i comandi /piano-libri 
 - `CP-20260902-001` 2026-09-02 — TASK-KDP-FIX-W2 parziale: 4 fix su 6 chiusi, FIX-1 bloccato dall'esterno (upload KDP + copertina), FIX-6 sbloc
-- `CP-20260827-004` 2026-08-27 — TASK-ARENA-SESSION-W1 — un solo motore di sessione Arena: caroselli + arena_thumbnail sullo stesso modulo
 
 > Rigenerabile con `python -m empire mem state --write`. Tutto cio' che sta FUORI dai marcatori e' scritto a mano e non viene toccato.
 <!-- EMPIRE-MEM:END -->
