@@ -211,3 +211,65 @@
   chiusura, tempo fra primo contatto e incasso. **Resta il buco piu' grande del CRO**, il
   cui `stato_pipeline` e' oggi un'opinione. Va chiuso con lo stesso metodo della tesoreria:
   prima uno strumento che gira, poi il reparto attorno. Origine: ADR-020 par. 5.
+
+## Dallo studio di Will Barron, "Sistemi di vendita" (5swDtQFyIws) — 2026-09-03
+
+> NOTA DI SERVIZIO: lo scagnozzo che ha chiuso questo ciclo aveva numerato le proprie
+> proposte B-042..B-045, **numeri gia' occupati**. Rinumerate qui da Emperator in
+> B-050..B-053. Lezione per i prossimi: **il numero di pratica si prende leggendo il
+> backlog, non ricominciando da dove sembra libero.**
+
+**La diagnosi che le tiene insieme:** il fatturato oscilla perche' **la consegna e' un
+processo scritto e la vendita no**. Digital Empire ha gia' lo script migliore per la
+chiamata (`cro-call`, 5.170 righe, piu' profondo della fonte), ma **non ha niente nei due
+tratti che la circondano**: fra "ha prenotato" e "e' in chiamata" non tocca il potenziale
+cliente, e dopo la chiamata non blocca ne' misura niente. Un sistema di vendita non e' una
+chiamata fatta bene: e' la catena che la precede e la segue, e la catena si spezza dove
+nessuno guarda.
+
+- **B-050 — PROPOSTA: skill `pre-call-indoctrination`.** Fra la prenotazione e la chiamata
+  oggi DE non fa nulla (la checklist pre-chiamata ha 10 punti, **tutti dalla nostra parte,
+  nessuno verso il cliente**). La skill coprirebbe: email di conferma, pagina con video,
+  verifica preliminare, risposte alle 4 obiezioni classiche. Verificato assente: la ricerca
+  su `indottrin|indoctrinat|pre-call` trova solo `cro-call` (preparazione nostra) e
+  `discovery-call-brief` (dopo la chiamata).
+
+- **B-051 — PROPOSTA: agente `sales-funnel-auditor`.** Legge le schede post-chiamata di
+  `cro-call` e i brief di `discovery-call-brief` e restituisce **la conversione per fase**:
+  contatto→incontro, incontro→scoperta, scoperta→proposta, proposta→chiuso. Nessun agente
+  in `.claude/agents/` lo fa oggi: `cro-empire` supervisiona senza misurare, `cfo-empire`
+  conta i costi e non le conversioni. **Si sovrappone a B-049** (il percorso di vendita non
+  e' misurato): vanno decisi insieme, e probabilmente sono lo stesso lavoro.
+
+- **B-052 — PROPOSTA: workflow "dopo la chiamata".** Documento di sintesi + prossimo passo
+  gia' in calendario come **unica azione non completabile a meta'**. Fa partire anche il
+  timer di 48 ore che `proposal-gate` gia' pretende e che **oggi nessuno avvia**.
+
+- **B-053 — DECISIONE APERTA PER MAX (tensione reale, non risolta):** pubblicare il prezzo
+  **prima** della chiamata, come fa la fonte (mette gli 8.000 dollari nelle domande
+  frequenti), contro la **Regola Assoluta n.6 di `cro-call`** che vieta il prezzo prima
+  della diagnosi. Le due posizioni sono entrambe difendibili e **si escludono**: la fonte
+  filtra chi non puo' permetterselo prima di sprecare una chiamata, la nostra regola evita
+  che il prezzo venga giudicato senza il valore accanto. Nessuna delle due e' stata
+  misurata su dati DE. Va decisa, non appianata.
+
+**Applicato subito, non proposto (+64 righe, 0 cancellazioni):**
+`cro-call` +24 (citazione diretta obbligatoria in apertura di Pagina 2, con modello,
+principio di coerenza, caso socio/capo/coniuge, errore del "linguaggio da agenzia");
+`icp-radar` +29 (campo `trigger_evento` + prova del riconoscimento in 1 secondo);
+`discovery-call-brief` +11 (campi `trigger_evento`, `prossimo_passo_data_ora`,
+`prossimo_passo_in_calendario` + 2 punti di controllo).
+
+**"Niente da fare" dichiarato, e vale quanto le proposte:** `proposal-gate` non toccato
+(il suo criterio 1 impone gia' il problema con le parole del cliente: un criterio
+quasi-duplicato allunga il controllo senza stringerlo). `beast-preventivi`,
+`cro-copy-architect`, `cold-email` non toccati: **su contatto a freddo e copy l'Impero e'
+gia' piu' avanti della fonte**, che da' principi senza testi.
+
+- **B-054 — DA CORREGGERE, errore trovato oggi.** Uno scagnozzo ha dichiarato che «nessun
+  hook pre-commit risulta installato». **Falso, e verificato:** `git config core.hooksPath`
+  vale `.githooks`, dove vivono `check_memory.py` e `check_blob.py`. Lo stesso guardiano ha
+  bloccato un commit di Emperator il 2026-09-03 alle 12:5x per CRLF in `company/Memory/`.
+  L'errore nasce dal cercare in `.git/hooks/` invece che nella cartella configurata.
+  **Da scrivere nei prompt degli scagnozzi e in `guild-prompt`:** i guardiani di questo
+  repo stanno in `.githooks/`, non in `.git/hooks/`.

@@ -43,9 +43,16 @@ def upload_via_playwright(video_path, metadata, thumbnail_path, user_data_dir):
     USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 
     with sync_playwright() as p:
-        # Avviamo Chromium caricando la sessione in cui l'utente ha già fatto login su YouTube Studio
+        # Avviamo il Chrome VERO installato sul PC (channel="chrome"), non il Chromium bundled di
+        # Playwright — richiesta di Max (2026-09-03) dopo che l'ennesimo "Verify it's you" ha
+        # bloccato un upload. Il Chromium di Playwright ha un fingerprint (build, header, canvas)
+        # diverso da quello che Google vede normalmente su questo account; il Chrome reale, con lo
+        # stesso profilo persistente gia' usato per il login manuale, e' la stessa identica
+        # impronta che Google gia' conosce e fida. Non elimina la verifica (Google puo' comunque
+        # chiederla per motivi suoi), ma la rende molto meno frequente.
         browser_context = p.chromium.launch_persistent_context(
             user_data_dir=user_data_dir,
+            channel="chrome",
             headless=False,  # Mostra l'interfaccia grafica per monitorare o intervenire in caso di captcha
             args=["--disable-blink-features=AutomationControlled"], # Evita rilevamento robot
             viewport={"width": 1440, "height": 900},

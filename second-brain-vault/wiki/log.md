@@ -1403,3 +1403,50 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
 - **PRINCIPIO NUOVO**: un canone senza consumatori non e' un canone, e' un'opinione con un
   numero d'ordine. Prima di dichiarare qualcosa ufficiale, chiedersi chi lo chiamera'
   lunedi'.
+
+## 2026-09-03 — Chiusura ciclo Will Barron (l'ultimo video rimasto a meta')
+
+- INGEST: Will Barron — "If You Don't Understand Sales Systems, You Don't Understand Business"
+  (5swDtQFyIws, 24m06, EN, batch max17 v10) → 1 pagina wiki creata
+  `sources/Source_Will_Barron_Sistema_Vendita_5_Fasi.md`, `index.md` e `log.md` aggiornati.
+  Il video era stato guardato per intero e analizzato il 2026-09-02 (218/218 frame unici,
+  NO-FINTO PASS) ma il ciclo non era mai stato chiuso: mancavano l'archivio in Memory Empire e la
+  pagina in biblioteca. Era l'unico degli 8 video del batch rimasto a meta'.
+- ARCHIVIO INTEGRALE (nell'UNICA memory-empire viva, quella dentro `empire-studio/` — trappola
+  B-033 rispettata, le due copie morte ferme al 2026-07-09 non sono state toccate):
+  `empire-studio/memory-empire/knowledge/5swDtQFyIws/` con `contenuto-integrale.md` (40 KB, 10
+  parti: walkthrough cronologico, le 5 fasi una per una, ogni schema riprodotto, i testi mostrati
+  a schermo verbatim, tutti i numeri con fonte, i 7 errori, le regole operative, cosa il video NON
+  mostra, confronto con DE, indice atomi), `atoms.json` (55 KA), `ingest-manifest.json`,
+  `enrichment-report.md`.
+- CONTENUTO: sistema di vendita a 5 fasi ICP → Meetings → Indoctrinate → Discovery Call →
+  Business Case; i 6 passaggi della discovery call (Pain, Trigger, Future Reality, ROI, Budget,
+  Next Step); "Questions first, Solutions later"; il business case che apre con le parole esatte
+  del prospect (bias di coerenza cognitiva) e chiude con "Fast, Easy, Cost effective".
+- PATCH APPLICATE (3 file, +64 righe, 0 cancellazioni di contenuto, frontmatter mai toccato,
+  line endings preservati: LF dove era LF, CRLF dove era CRLF):
+  `.claude/skills/cro-call/SKILL.md` (+24): nella Pagina 2 del documento strategico, la citazione
+  diretta fra virgolette diventa obbligatoria in apertura, con il motivo (bias di coerenza
+  cognitiva), il caso del socio/capo/coniuge che non era in call, e l'errore di tradurre le parole
+  del prospect in linguaggio da agenzia.
+  `.claude/skills/icp-radar/SKILL.md` (+29): nuovo campo `trigger_evento` nella scheda ICP (il
+  profilo diceva CHI e' il cliente, non QUANDO diventa comprabile) + sezione "Test del
+  riconoscimento in 1 secondo".
+  `.claude/skills/discovery-call-brief/SKILL.md` (+11): campi `trigger_evento`,
+  `prossimo_passo_data_ora`, `prossimo_passo_in_calendario` e due nuovi punti di gate — senza data
+  e ora precise in calendario la discovery call non e' chiusa.
+- NON PATCHATO, DICHIARATO: `proposal-gate` (il suo criterio 1 impone gia' il problema descritto
+  con le parole del cliente: un criterio quasi-duplicato avrebbe allungato il gate senza
+  stringerlo) e tutto il blocco copy/outreach (APSOC, Barnum/Rainbow, Bibbia dei Messaggi): su
+  quel terreno l'Impero e' gia' piu' avanti della fonte, che dà principi senza testi.
+- IL BUCO VERO TROVATO (verificato leggendo i file, non dedotto): fra "il prospect ha prenotato" e
+  "il prospect e' in call" Digital Empire non fa nulla — la checklist pre-call di `cro-call` ha 10
+  punti tutti lato nostro. E nessuno misura il tasso di conversione per fase del funnel di vendita.
+- NON costruito, dichiarato: **B-042** skill `pre-call-indoctrination`, **B-043** agente
+  `sales-funnel-auditor`, **B-044** workflow post-call → business case + next step in calendario,
+  **B-045** decisione candidata ad ADR (pubblicare il prezzo prima della call, come fa Barron con
+  gli $8.000 in FAQ, contro la Regola Assoluta #6 di `cro-call`). Da riportare in
+  `company/Memory/BACKLOG.md` al primo passaggio su Memory: fuori dal perimetro di questo brief.
+- DEBITO APERTO: nessun checkpoint in `company/Memory/checkpoints/`, `STATO-EMPIRE.md` non
+  aggiornato — fuori dal perimetro esplicito del brief, coerente col pattern gia' registrato su
+  `DTCyvo6cC54`, `E8Ax92etrMc` e `yJOCyyP77bA`. **Nessun commit git.**

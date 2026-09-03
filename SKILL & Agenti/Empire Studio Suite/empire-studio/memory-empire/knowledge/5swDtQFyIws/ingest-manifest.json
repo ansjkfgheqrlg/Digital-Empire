@@ -1,0 +1,136 @@
+{
+  "video_id": "5swDtQFyIws",
+  "title": "If You Don't Understand Sales Systems, You Don't Understand Business",
+  "channel": "Will Barron (salesman.com)",
+  "url": "https://www.youtube.com/watch?v=5swDtQFyIws",
+  "run": "max17-v10-barron-sales",
+  "run_path": "empire-studio/runs/max17-v10-barron-sales",
+  "category": "max17-sales-systems",
+  "duration_s": 1446,
+  "duration_human": "24m06",
+  "language": "en",
+  "published_at": "2026-08-30",
+  "format": "talking-head a webcam fissa + card grafiche testuali animate (Sales System bar costruita progressivamente, diagrammi Delivery-vs-Sales, grafico boom-bust, Venn a 3 cerchi, Reality Bridge) + mockup di email, landing page di conferma e pagina FAQ",
+  "ingested_at": "2026-09-02",
+  "stageC_date": "2026-09-03",
+  "frames": {
+    "total_dense": 723,
+    "interval_sec": 2.0,
+    "unique_scenes": 218,
+    "frames_read_natively": 218,
+    "all_read_native_vision": true,
+    "coverage_pct": 100,
+    "frames_skipped_below_threshold": 505,
+    "frames_unreadable": 0,
+    "frames_editorially_blurred_by_author": {
+      "count": 3,
+      "range": "frame-012.png -> frame-014.png",
+      "timestamp_range": "0:22-0:26",
+      "reason": "Card teaser 'LATER IN THE VIDEO' sfocata INTENZIONALMENTE dalla produzione come effetto di anteprima del grafico boom-bust che comparira' a 8:16. Non e' un limite della pipeline di estrazione frame di Empire Studio: i frame sono stati estratti ed esaminati normalmente, il contenuto e' sfocato nel video stesso per scelta editoriale."
+    },
+    "no_finto_status": "PASS",
+    "no_finto_incident": "Nel primo passaggio di visione un limite di sistema ha restituito '[media removed: request limit]' per i frame 001-479 (le prime 157 voci di scenes.md) e le descrizioni scritte per quei frame erano basate su inferenza dal transcript, non su visione reale — violazione della regola NO-FINTO. Il problema e' stato individuato prima della stesura degli output finali e tutti i 218 frame unici sono stati ri-osservati singolarmente con conferma visiva per ciascuno. Secondo errore minore individuato e corretto in fase di stesura di atoms.json: l'atomo KA-055 conteneva una frase presa dalla skill cro-call di Digital Empire (qualificazione budget con 'ancora di pricing') erroneamente attribuita al video, sostituita col contenuto reale del transcript a quel timestamp. Entrambi gli incidenti restano dichiarati in coverage.md, video-analysis.md e contenuto-integrale.md.",
+    "note": "Estrazione con soglia dedup 3.0 (riduzione 69.8%). Nessun frame cancellato: i 505 duplicati restano su disco in frames/. Dettaglio completo in coverage.md della run sorgente."
+  },
+  "transcript": {
+    "file": "5swDtQFyIws.en.vtt / transcript_clean.txt",
+    "language": "en",
+    "kind": "auto-generated rolling captions (WebVTT roll-up con duplicazione di riga)",
+    "raw_size_kb": 271,
+    "all_lines_read": true,
+    "timestamps_preserved": true,
+    "note": "Convertito con script Python in transcript_clean.txt (dedup delle righe a scorrimento, marcatori temporali ogni ~15s) e letto integralmente 00:00 -> 24:00. Nessun sottotitolo italiano disponibile per questo video."
+  },
+  "knowledge_atoms": 55,
+  "atoms_by_type": {"framework": 17, "regola": 15, "numero": 9, "errore": 8, "fase": 6},
+  "atoms_by_confidence": {"osservato": 54, "inferito": 1},
+  "atoms_schema_note": "Gli atomi di questo run NON hanno il campo rilevanza_DE (schema: id, tipo, contenuto, fonte, frame, confidenza). Dichiarato per non far credere a una classificazione di rilevanza che qui non esiste.",
+  "output_files": {
+    "video_analysis": "empire-studio/runs/max17-v10-barron-sales/video-analysis.md",
+    "coverage": "empire-studio/runs/max17-v10-barron-sales/coverage.md",
+    "transcript_clean": "empire-studio/runs/max17-v10-barron-sales/transcript_clean.txt",
+    "contenuto_integrale": "memory-empire/knowledge/5swDtQFyIws/contenuto-integrale.md",
+    "atoms": "memory-empire/knowledge/5swDtQFyIws/atoms.json",
+    "enrichment_report": "memory-empire/knowledge/5swDtQFyIws/enrichment-report.md"
+  },
+  "wiki_pages_created": [
+    "second-brain-vault/wiki/sources/Source_Will_Barron_Sistema_Vendita_5_Fasi.md"
+  ],
+  "wiki_pages_updated": [
+    "second-brain-vault/wiki/index.md",
+    "second-brain-vault/wiki/log.md"
+  ],
+  "skills_agents_patched": [
+    ".claude/skills/cro-call/SKILL.md",
+    ".claude/skills/icp-radar/SKILL.md",
+    ".claude/skills/discovery-call-brief/SKILL.md"
+  ],
+  "skills_agents_evaluated_not_patched": {
+    ".claude/skills/proposal-gate/SKILL.md": "Il criterio 1 del gate impone gia' 'il problema descritto con le parole/dati del cliente'. Un criterio quasi-duplicato avrebbe allungato il gate senza stringerlo.",
+    ".claude/agents/*": "Nessun agente esistente misura la conversione per fase del funnel di vendita interno (ricerca su 'tasso di conversione per fase' e 'pipeline...conversione': zero risultati). Il gap diventa proposta B-043, non una patch forzata su un agente esistente."
+  },
+  "key_topics": [
+    "Sales System a 5 fasi: ICP -> Meetings -> Indoctrinate -> Discovery Call -> Business Case, barra costruita progressivamente a schermo e ricapitolata a 23:26",
+    "Diagnosi centrale: il delivery e' un processo documentato e ripetibile, le vendite nella stessa azienda sono ad-hoc — e' questo gap a causare il ciclo boom-and-bust del fatturato",
+    "ICP: si ricava dai clienti gia' vinti cercando dolore specifico + trigger (l'evento che li ha fatti agire ORA), non solo settore e dimensione",
+    "Meetings: Right Person + Right Timing + Right Message; un solo obiettivo per touchpoint (prenotare un meeting, mai pitchare); sopra i $5-10k niente outreach di massa 'AI slop'",
+    "Indoctrinate: il tratto scoperto fra 'ha prenotato' e 'e' in call' — email + landing con video + audit + FAQ che pre-gestisce le obiezioni; neutralizza il 'sales shield'",
+    "Discovery Call: 'Questions first, Solutions later', analogia del dottore, 6 passaggi (Pain, Trigger, Future Reality, ROI, Budget, Next Step)",
+    "Reality Bridge: il servizio si posiziona come ponte fra Current Reality dolorosa e Future Reality desiderata; copre sia chi fugge dal dolore sia chi insegue l'upside",
+    "Business Case: le parole esatte del prospect (bias di coerenza cognitiva) -> ROI -> solo alla fine la soluzione 'Fast, Easy, Cost effective'; serve a chi non era in call (socio, capo, coniuge)",
+    "Next Step: senza data e ora precise nel calendario di entrambi, 'la discovery call non e' stata completata'",
+    "Testi integrali mostrati a schermo e archiviati verbatim: 2 email a confronto, email di indottrinamento, landing di conferma, 4 voci FAQ (prezzo, bio, pertinenza, perche' pagare)"
+  ],
+  "numeri_reali_dichiarati": [
+    "1.100+ imprenditori seguiti (claim a voce, nessuna prova a schermo)",
+    "$1,4 miliardi generati dai clienti che usano i suoi sistemi (claim a voce)",
+    "ICP di esempio: service-based businesses da $20.000 a $200.000 al mese (mostrato a schermo, frame-160)",
+    "Soglia $5.000-10.000 di prezzo servizio sopra cui l'outreach di massa non funziona",
+    "+10-20% di conversione dichiarato per il solo step del business case (a voce, senza campione ne' metodologia)",
+    "$8.000 USD prezzo Salesman.com Mentorship 6 mesi (pubblicato nella FAQ pre-call, unico numero verificabile dall'esterno)",
+    "ROI positivo promesso entro 30 giorni",
+    "$1.000.000/anno soglia che molte service business non superano",
+    "Bio FAQ: 6 anni di vendita dispositivi medici, 2 service business, 1.000+ imprenditori formati, 77.000 iscritti Salesman.com, 11.000 iscritti Will Barron, 300.000 business/mese",
+    "Metadati ingest (non citati a video): 25.634 view, 360 like, 15.200 follower canale"
+  ],
+  "tool_citati": [
+    "Nessuno strumento software nominato in tutto il video: nessun CRM, nessuna piattaforma di outreach, nessun tool di tracking. Solo un generico 'automation and tools' per l'outreach e il nome di un prodotto proprio ('Selling Systems Audit') mai spiegato."
+  ],
+  "avvertenza_metodologica": "I numeri di autorita' (1.100 imprenditori, $1,4 miliardi, 300.000 business/mese) sono claim dell'autore senza prova mostrata a schermo. L'uplift 10-20% del business case e' dichiarato a voce senza campione, periodo o metodologia: trattato come ipotesi da testare in casa, mai scritto come benchmark dentro una skill. Il video non mostra nessun case study reale con nome cliente, prima/dopo o screenshot di risultati: tutti gli esempi numerici sono dimostrativi.",
+  "limiti_dichiarati_dal_video": [
+    "Discrepanza mai chiarita: a 0:16 si promettono 'the six components of the sales system', la grafica finale ne mostra 5 — il 'sei' ricompare piu' avanti riferito ai soli 6 passaggi interni della Discovery Call (unico atomo marcato inferito, KA-054)",
+    "Nessuna grafica dedicata ai 6 passaggi della discovery call: solo narrazione verbale 16:41-19:57",
+    "Nessun case study reale, nessun nome cliente, nessun prima/dopo verificabile",
+    "Nessuna spiegazione di come si costruisce concretamente il 'Selling Systems Audit' mostrato nella landing page",
+    "Nessuna gestione delle obiezioni sollevate DURANTE la call: il video le rimanda tutte alla FAQ pre-call",
+    "Nessun tasso di conversione per fase, pur essendo un video su un 'sistema': l'unico numero di conversione dichiarato e' l'uplift 10-20% del business case",
+    "La psicologia di vendita del founder come seconda causa del tetto di $1M/anno e' dichiarata fuori scope e rimandata a un altro video"
+  ],
+  "segmento_promozionale": "Il video e' contenuto educativo con CTA finale a prenotare una call (24:00-24:06) e mostra a schermo i propri artefatti commerciali reali (email di indottrinamento, landing di conferma, FAQ con prezzo $8.000 della propria mentorship). Il materiale promozionale coincide con il materiale didattico: dichiarato.",
+  "tensione_aperta": "Barron pubblica il prezzo nella FAQ PRIMA della call ($8.000) usandolo come filtro di qualificazione; cro-call Regola Assoluta #6 impone 'il prezzo va sempre presentato DOPO il valore, mai prima, mai da solo'. Le due posizioni non sono conciliabili per decreto. Nessuna patch applicata su questo punto: registrata come proposta di ADR (B-045), la scelta e' di Max.",
+  "p12_traceability": true,
+  "stages_completed": ["C-archive", "D-enrichment", "E-gate", "F-apply", "H-report"],
+  "enrichment_summary": {
+    "artefatti_valutati": 5,
+    "artefatti_patchati": 3,
+    "artefatti_non_toccati_con_motivazione": 2,
+    "patch_totali": 5,
+    "righe_aggiunte_cro_call": 24,
+    "righe_aggiunte_icp_radar": 29,
+    "righe_aggiunte_discovery_call_brief": 11,
+    "righe_totali_aggiunte": 64,
+    "cancellazioni_di_contenuto": 0,
+    "righe_riscritte_identiche": 1,
+    "nota_riga_riscritta": "In discovery-call-brief la riga '\"prossimo_passo_concordato\": \"string\"' e' stata riscritta identica con la virgola finale, necessaria per aggiungere i tre campi successivi al JSON. Nessun contenuto rimosso.",
+    "line_endings": "icp-radar e discovery-call-brief erano LF-only e sono rimasti LF-only; cro-call/SKILL.md era interamente CRLF (5.146 righe) ed e' rimasto interamente CRLF (5.170 righe). Verificato con conteggio binario prima e dopo.",
+    "frontmatter_yaml": "Non toccato in nessuno dei tre file."
+  },
+  "backlog_proposto_non_costruito": [
+    "B-042 — Skill pre-call-indoctrination (email di conferma + pagina con video + audit pre-call + FAQ sulle 4 obiezioni classiche)",
+    "B-043 — Agente sales-funnel-auditor (tassi di conversione per fase: lead->meeting, meeting->discovery, discovery->business case, business case->chiuso)",
+    "B-044 — Workflow post-call -> business case + next step in calendario come singola azione non completabile a meta'",
+    "B-045 — Decisione candidata ad ADR: pubblicare o no il prezzo prima della call (tensione Barron vs cro-call Regola Assoluta #6)"
+  ],
+  "processing_notes": "Pipeline Empire Studio Stage 1-5 gia' eseguita il 2026-09-02 (video-analysis.md, atoms.json 55 KA, coverage.md, scenes.json/scenes.md, 723 frame su disco). Memory Empire Stage C-H chiuso il 2026-09-03 senza nuova visione dei frame: video-analysis.md e atoms.json esistenti riusati, normalizzati ed espansi in contenuto-integrale.md. Questo era l'ultimo video del batch max17 rimasto senza archiviazione in memory-empire/knowledge/ e senza pagina wiki — il ciclo era stato interrotto a meta'. Archivio scritto nell'UNICA memory-empire viva, quella dentro empire-studio/ (trappola B-033: le copie in C:/Users/Utente/.claude/skills/memory-empire/ e in 'SKILL & Agenti/Empire Studio Suite/memory-empire/' sono morte, ferme al 2026-07-09, e non sono state toccate). Nessun commit git eseguito in questa sessione.",
+  "gap_verificato": "Verificato di persona in questa sessione leggendo i file, non solo dichiarato dal video-analysis.md preesistente: cro-call/SKILL.md (5.146 righe) alla Pagina 2 del documento strategico diceva 'usando LE SUE PAROLE' senza prescrivere la citazione diretta ne' spiegarne il motivo; la sua checklist pre-call (10 punti, righe 209-272) e' interamente lato nostro e non prevede una sola azione verso il prospect fra prenotazione e call; icp-radar/SKILL.md (77 righe, lette integralmente) non aveva nessun campo trigger; discovery-call-brief/SKILL.md (63 righe, lette integralmente) aveva prossimo_passo_concordato come stringa libera e un gate pre-output che controllava ambiente_server, budget_signal e dolore quantificato ma non la data del prossimo step; nessun agente in .claude/agents/ misura la conversione per fase."
+}
