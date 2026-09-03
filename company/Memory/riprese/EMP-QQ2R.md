@@ -74,18 +74,28 @@ sul disco prima di lanciare le sentinelle:**
 |---|---|---|---|
 | `max17-v12` | `pUu4G2lINnk` | Insane Claude Design Skills | **DOPPIONE di v11-Roberts, già chiuso** — stesso id/titolo/durata, non lanciare |
 | `max17-v13` | `BSUHmVcaO1g` | Se usi ancora i prompt... | **DOPPIONE di v07-Rizzo, già chiuso** — stesso id/titolo/durata, non lanciare |
-| `max17-v14` | `P-BQ-AGS0ck` | Become a Master Storyteller | genuinamente nuovo, 390 frame — **DA FARE** |
-| `max17-v16` | `gUnQK6bWHkI` | Micro-personal-brand da milioni | genuinamente nuovo, 859 frame, verificato unico — **DA FARE** |
+| `max17-v14` | `P-BQ-AGS0ck` | "Become a Master Storyteller" | **CHIUSO 2026-09-03 22:xx** — CP-20260903-019 |
+| `max17-v16` | `gUnQK6bWHkI` | Micro-personal-brand da milioni | genuinamente nuovo, 859 frame, verificato unico — **IN CORSO** |
 
-**`max17-v09-vishen-story` non contiene Vishen**: dentro c'è lo stesso video di v14
-(`P-BQ-AGS0ck`, Master Storyteller), scaricato parziale il 2026-09-02 (30MB vs 78MB di v14).
-Il video vero di Vishen (Mindvalley) **non risulta scaricato da nessuna parte** — va
-recuperato con un task di ricerca a parte, non e' un video "mai iniziato" come diceva la
-versione precedente di questo checkpoint: è un video **mai nemmeno trovato**.
+**AUTOCORREZIONE 2026-09-03 22:xx — mi ero sbagliato IO su Vishen, non il checkpoint
+originale.** Avevo scritto sopra "il video vero di Vishen non risulta scaricato da nessuna
+parte" giudicando solo dal titolo testuale ("Become a Master Storyteller" ≠ "Vishen story").
+**Falso.** La sentinella che ha guardato davvero `max17-v14` per intero conferma: e' Vishen
+Lakhiani (fondatore Mindvalley) in persona, parlato + `info.json` (uploader `@vishen`)
+verificati. E' lo stesso identico video del `max17-v09-vishen-story` originale (id
+`P-BQ-AGS0ck` in entrambi), solo che v09 ne aveva un download parziale (30MB) e v14 quello
+completo (78MB). **Vishen era gia' su disco, non mancava nulla.** Lezione: un titolo
+testuale da solo non basta a giudicare "contenuto sbagliato" — verificare uploader/id prima
+di dichiarare un buco che non c'e'. La cartella `v09-vishen-story` ora e' ridondante (v14 la
+sostituisce, download completo) — puo' restare come doppione minore, non blocca nulla.
 
-**Causa probabile**: un batch di ingest lanciato il 2026-09-03 13:31 (v12,v13,v14 hanno
-tutti lo stesso timestamp) ha ri-scaricato url già usate — bug nella lista sorgente, non
-nel motore di ingest. Da controllare quando si torna sull'ingest, non ora (Fase 1 = studio).
+**Resta valido invece** (verificato su id, non su titolo): v12/v13 sono doppioni reali di
+Roberts/Rizzo, stesso id+durata esatti, non solo titolo simile.
+
+**Causa probabile del doppio-download v12/v13/v14**: un batch di ingest lanciato il
+2026-09-03 13:31 (stesso timestamp su tutti e tre) ha ri-scaricato url già usate — bug
+nella lista sorgente, non nel motore di ingest. Da controllare quando si torna sull'ingest,
+non ora (Fase 1 = studio).
 
 **Due video mai scaricati:** `rvpRQD43wdY` (**Beggiato, guida agenzia, 4h17** — le
 trascrizioni ci sono già in `runs/max-17-2026-09/subs/`) e **Justin Sung 4h55**, di cui
@@ -96,11 +106,14 @@ non ho l'indirizzo da nessuna parte.
 ## 4. IL PROSSIMO PASSO ESATTO
 
 1. ~~Recuperare le tre sentinelle morte~~ — **FATTO 2026-09-03 21:3x**, vedi §3.
-2. **Ora: i quattro con i fotogrammi pronti (v12, v13, v14, v16).** Max 2-3 sentinelle in
-   parallelo (regola di sotto).
-3. Poi il mostro da 4h17 (Beggiato-guida-agenzia, `rvpRQD43wdY`, trascrizioni già in
-   `runs/max-17-2026-09/subs/`).
-4. Poi valutare il pattern trovato in §3 (auto-dichiarazione non verificata prima del
+2. ~~v14 (Vishen/Master Storyteller)~~ — **FATTO 2026-09-03 22:xx**, CP-20260903-019.
+   ~~v12, v13~~ — non servivano, doppioni di Roberts/Rizzo già chiusi.
+3. **In corso ora: v16** (micro-personal-brand, 859 frame) — una sentinella e' morta per
+   errore di connessione a meta', rilanciata da dove poteva riprendere (scenes.json gia'
+   fatto). Ultimo video del lotto v01-v16.
+4. Poi il mostro da 4h17 (Beggiato-guida-agenzia, `rvpRQD43wdY`, trascrizioni già in
+   `runs/max-17-2026-09/subs/`) e Justin Sung 4h55 (link da ritrovare).
+5. Poi valutare il pattern trovato in §3 (auto-dichiarazione non verificata prima del
    crash di sessione) — serve un controllo strutturale, non solo correzioni a mano.
 
 **Massimo 2-3 sentinelle in parallelo quando leggono immagini.** Con 3 la sessione è saltata

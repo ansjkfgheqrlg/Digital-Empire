@@ -1,0 +1,282 @@
+[
+  {
+    "id": "KA-001",
+    "tipo": "regola",
+    "contenuto": "Tesi centrale del video: 'Great storytelling is making people feel the idea, not just understand it.' Esistono due tipi di speaker: quelli che ricevono applausi ma vengono dimenticati appena il pubblico esce dalla stanza, e quelli che commuovono il pubblico fino alle lacrime e vengono ricordati anni dopo. La differenza sta in un framework a 5 passi.",
+    "fonte": "P-BQ-AGS0ck#0:00-0:43",
+    "frame": "frame-001.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-002",
+    "tipo": "architettura",
+    "contenuto": "Framework a 5 passi HSTSS, mnemonica ufficiale 'Heroes Start Their Stories Somewhere' e versione 'edgy' per gli studenti 'Holy Sh*t That's So Smart'. Mappa completa: Heroes/Holy = Hook, Start/Sh*t = Stake(s), Their/That's = Turn, Stories/So = Scene, Somewhere/Smart = Shatter.",
+    "fonte": "P-BQ-AGS0ck#2:39-3:20",
+    "frame": "frame-041.png,frame-046.png,frame-050.png,frame-051.png,frame-356.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-003",
+    "tipo": "metodo",
+    "contenuto": "Passo 1 - HOOK: definizione 'The hook is how you capture the person's attention and leave them hanging.' Tecnica chiave: 'idea collision', prendere due idee fondamentalmente diverse (es. leader religioso + shot di vodka) e scontrarle nella stessa frase per creare un hook potente.",
+    "fonte": "P-BQ-AGS0ck#3:21-4:45",
+    "frame": "frame-081.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-004",
+    "tipo": "prompt",
+    "contenuto": "Esempio integrale di hook raccontato dall'autore: nel 2009 a Calgary, prima di salire sul palco con il Dalai Lama, entra nel bar dell'hotel e ordina due shot di vodka per il nervosismo. Versione accorciata per i social (primi 3 secondi): 'I can't believe the Dalai Lama made me kick back shots of vodka.'",
+    "fonte": "P-BQ-AGS0ck#3:29-5:29",
+    "frame": "frame-081.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-005",
+    "tipo": "regola",
+    "contenuto": "Citazione di Jay Shetty su hook per i social: 'The first 3 seconds, hook them. And then all the way up to 11th second, go deeper in the hook. That's when you start the story.' Applicazione: sui social l'hook sta nei primi 3 secondi, poi altri 8 secondi di contesto prima di proseguire con la storia.",
+    "fonte": "P-BQ-AGS0ck#5:01-5:18",
+    "frame": "frame-091.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-006",
+    "tipo": "regola",
+    "contenuto": "Il framework HSTSS si applica anche a Stage Talk e Presentation, non solo a contenuti social: con un pubblico presente in sala si ha piu' tempo per stabilire l'hook rispetto ai 3 secondi dei social.",
+    "fonte": "P-BQ-AGS0ck#5:56-6:11",
+    "frame": "frame-086.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-007",
+    "tipo": "prompt",
+    "contenuto": "Secondo esempio di hook: intervista dal vivo a Londra con il miliardario Naveen Jain, che ha detto 'I don't buy that I need to spend all my free time with my kids... I make my kids see me working.' Idea collision: rompe l'aspettativa sociale che un genitore presente debba essere sempre focalizzato sui figli invece che sul lavoro.",
+    "fonte": "P-BQ-AGS0ck#6:13-7:15",
+    "frame": "frame-106.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-008",
+    "tipo": "architettura",
+    "contenuto": "Correzione a trascrizione automatica: il figlio di Naveen Jain citato come 'uno dei piu' giovani miliardari' e' Ankur Jain, Founder and CEO of Bilt Rewards (lower-third reale mostrato a video), non 'Uncle Jane' come trascritto dall'ASR automatico di YouTube.",
+    "fonte": "P-BQ-AGS0ck#6:38-6:44",
+    "frame": "frame-101.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-009",
+    "tipo": "metodo",
+    "contenuto": "Passo 2 - STAKES: definizione 'In a movie, the stakes are the opportunity where the hero might fail.' Esempi citati: Star Wars (Luke Skywalker perde la mano) e Avengers Infinity War (Thanos fa lo schiocco e sparisce meta' della popolazione, mostrato con fotogramma reale del film).",
+    "fonte": "P-BQ-AGS0ck#8:22-8:41",
+    "frame": "frame-131.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-010",
+    "tipo": "regola",
+    "contenuto": "Le stakes portano umilta' e rendono lo speaker 'relatable': collegano il pubblico attraverso la vulnerabilita', non solo l'ammirazione. Titolo overlay: 'The Power of Stakes - Brings humility.'",
+    "fonte": "P-BQ-AGS0ck#9:13-9:19",
+    "frame": "frame-141.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-011",
+    "tipo": "prompt",
+    "contenuto": "Storia integrale delle stakes ('The Story of the Couch'): laureato in informatica all'Universita' del Michigan nel 1999, trasferito in Silicon Valley con un sogno di startup software, presta 30.000 dollari dal padre. Lo scoppio della bolla dot-com lo lascia senza soldi: perde tutto, non trova investitori, brucia i 30.000 dollari, finisce quasi senza casa.",
+    "fonte": "P-BQ-AGS0ck#10:14-11:07",
+    "frame": "frame-151.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-012",
+    "tipo": "prompt",
+    "contenuto": "Dettaglio della stake, con descrizione sensoriale: vive per mesi su un divano a due posti (non tre) affittato per 200 dollari al mese da uno studente di Berkeley, gambe che penzolano fuori dal divano troppo corto, divano che puzzava con una macchia gialla mai identificata, dorme con un asciugamano sopra per non toccarla.",
+    "fonte": "P-BQ-AGS0ck#11:07-11:59",
+    "frame": "frame-171.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-013",
+    "tipo": "architettura",
+    "contenuto": "La storia del divano e' illustrata con una scena interamente ricostruita/drammatizzata (non talking-head ne' grafica testuale): divano marrone/beige con macchia gialla visibile sul cuscino centrale, asciugamano grigio piegato accanto, cesto di vestiti e due borse impilate, armadio a rotelle con vestiti appesi, poster 'THE UNIVERSITY OF BERKELEY - Adventure Starts Here' sulla parete.",
+    "fonte": "P-BQ-AGS0ck#11:20 (frame statico)",
+    "frame": "frame-171.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-014",
+    "tipo": "regola",
+    "contenuto": "Regola sulle stakes: 'All of you have some story from your past, some moment of misery that you can share that might help other people navigate their pain.' Non bisogna inventare le stakes: devono essere reali.",
+    "fonte": "P-BQ-AGS0ck#12:55-13:05",
+    "frame": "frame-195.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-015",
+    "tipo": "regola",
+    "contenuto": "'Rules of the Stakes': non descrivere solo la situazione, descrivere il sentimento. Bullet list overlay: 'Describe the feeling - Describe the shame - Describe the guilt - Describe the anger.' Applicazione: Vishen approfondisce la vergogna di aver mentito ai genitori sul fatto di avere un vero appartamento, quando in realta' dormiva sul divano.",
+    "fonte": "P-BQ-AGS0ck#13:18-13:52",
+    "frame": "frame-201.png,frame-210.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-016",
+    "tipo": "metodo",
+    "contenuto": "Passo 3 - TURN: definizione 'The turn is the turn that changed the story.' Spesso nel turn e' contenuta una lezione ('Often in the turn is a lesson that is baked in').",
+    "fonte": "P-BQ-AGS0ck#14:00-14:25",
+    "frame": "frame-216.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-017",
+    "tipo": "prompt",
+    "contenuto": "Continuazione della storia (il turn): dopo il fondo del barile, trova lavoro in un'azienda della Silicon Valley senza stipendio base, solo commissioni al 20% sulle vendite - un mese intero a zero vendite. Nel 2001 digita su Google 'Google, why does my life suck so bad?', 'Google, why am I so pathetic?', 'Google, why am I such a loser?'.",
+    "fonte": "P-BQ-AGS0ck#14:39-15:22",
+    "frame": "frame-231.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-018",
+    "tipo": "architettura",
+    "contenuto": "Il turn e' illustrato con uno screenshot vintage accurato del motore di ricerca Google dell'anno 2000 (logo Google d'epoca, box di ricerca con testo 'Why does my l...', link 'Google Web Directory', copyright '2000 Google'), effetto nostalgico coerente con l'ambientazione temporale della storia (2001).",
+    "fonte": "P-BQ-AGS0ck#15:20 (frame statico)",
+    "frame": "frame-231.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-019",
+    "tipo": "file",
+    "contenuto": "Il turn porta alla scoperta del corso di meditazione Silva Ultramind. Uno screenshot reale e attuale dei risultati di ricerca Google per 'Silva Method' mostra come secondo risultato la pagina mindvalley.com/ultramind/lesson-1, titolo 'Silva Ultramind System Free Meditation Class', sottotitolo 'Master dynamic meditation with this online meditation class by Vishen Lakhiani' - conferma che il prodotto e' tuttora venduto da Mindvalley.",
+    "fonte": "P-BQ-AGS0ck#15:36-15:44 (frame statico)",
+    "frame": "frame-236.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-020",
+    "tipo": "metodo",
+    "contenuto": "Tecnica di intuizione appresa dal corso Silva: usare le pagine gialle (San Francisco Public Library) e una tecnica meditativa per 'sentire' quali nomi chiamare mentre si scorre l'elenco telefonico con un dito, raddoppiando le vendite da un giorno all'altro e ottenendo 4 promozioni in 3 mesi fino a VP of Sales.",
+    "fonte": "P-BQ-AGS0ck#16:09-16:25",
+    "frame": "frame-245.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-021",
+    "tipo": "regola",
+    "contenuto": "Citazioni di autorita' a supporto dell'intuizione come strumento decisionale: Steve Jobs nel discorso di laurea a Stanford ('have the courage to follow your heart and intuition'); Prof. John Mihalasky, autore del libro 'Executive ESP', ha condotto uno studio secondo cui i CEO e i founder che usano l'intuizione generano piu' fatturato senza saperlo.",
+    "fonte": "P-BQ-AGS0ck#16:44-17:11",
+    "frame": "frame-256.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-022",
+    "tipo": "metodo",
+    "contenuto": "Passo 4 - SCENE: definizione 'The scene is where you make something visualizable.' Regola: non descrivere solo la situazione, dipingere il quadro con dettagli sensoriali (tempo atmosferico, tappeto, salotto) che sembrano irrilevanti ma trasportano l'audience nel momento. Applicato raccontando la scena del capo russo che batte la mano sul tavolo sorpreso dai risultati di vendita.",
+    "fonte": "P-BQ-AGS0ck#18:55-19:51",
+    "frame": "frame-286.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-023",
+    "tipo": "metodo",
+    "contenuto": "Passo 5 - SHATTER: definizione, rompere una convinzione superata ('shattering the glass ceiling'), il momento in cui si lascia la lezione. Titolo overlay 'Move 05' individua questo passo come 'mossa numero 5' della sequenza.",
+    "fonte": "P-BQ-AGS0ck#20:00-20:03",
+    "frame": "frame-301.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-024",
+    "tipo": "regola",
+    "contenuto": "Tecnica del 'Mic Drop Moment': prima di elencare tutte le prove scientifiche e le citazioni a supporto di una lezione, dare al pubblico una singola frase ad effetto che riassume l'insegnamento. Citazione mic-drop usata dall'autore: 'I realized that sometimes the greatest secret of success of all is to know how to sit still and listen to that still gentle voice within, the voice of your intuition.'",
+    "fonte": "P-BQ-AGS0ck#21:14-21:24",
+    "frame": "frame-316.png,frame-322.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-025",
+    "tipo": "regola",
+    "contenuto": "Mic drop finale sull'intero video (chiusura della sezione framework): 'Nobody changes their life because of a fact. People changed their life because they heard a story that give them hope for who they could become.'",
+    "fonte": "P-BQ-AGS0ck#23:40-23:52",
+    "frame": "frame-361.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-026",
+    "tipo": "numero",
+    "contenuto": "Il corso Silva Ultramind, rilanciato da Vishen nel 2018 dopo aver ottenuto i diritti dai figli del creatore Jose Silva (morto nel 1999) e ripubblicato con la sua voce e stile narrativo attraverso Mindvalley, genera dichiaratamente 40 milioni di dollari l'anno di fatturato ed e' il programma numero 1 su Mindvalley da 9 anni.",
+    "fonte": "P-BQ-AGS0ck#21:44-22:20",
+    "frame": "frame-326.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-027",
+    "tipo": "file",
+    "contenuto": "Prova visiva del prodotto originale pre-Mindvalley: copertina fotografata di un cofanetto DVD fisico 'THE SILVA METHOD MASTERY COURSE', sottotitolo 'Tapping the Secrets of the Mind for Total Self-Mastery', editore Nightingale-Conant, autori accreditati Robert B. Stone, Laura Silva, Kain Samiya.",
+    "fonte": "P-BQ-AGS0ck#21:40 (frame statico)",
+    "frame": "frame-326.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-028",
+    "tipo": "numero",
+    "contenuto": "Prova social del successo YouTube del canale Mindvalley/Vishen: screenshot reale di pagina canale con miniature 'HEAL YOURSELF WITH THIS - Marisa Peer' (3,1M views), 'OUR ROLE IN EVOLUTION - Neale Donald Walsch' (3,1M views), 'MASTER PUBLIC SPEAKING NOW - Eric Edmeades' (2,8M views), oltre a titoli di Christie Marie Sheldon ed Esther Perel.",
+    "fonte": "P-BQ-AGS0ck#22:56 (frame statico)",
+    "frame": "frame-345.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-029",
+    "tipo": "architettura",
+    "contenuto": "Identita' e credenziali dell'autore, confermate sia a voce sia dai metadati del file (info.json: uploader 'Vishen', channel 'Vishen', uploader_id '@vishen'): Vishen Lakhiani, fondatore di Mindvalley, autore del bestseller NYT 'The Code of the Extraordinary Mind' (copertina reale mostrata a video, '10 Unconventional Laws to Redefine Your Life & Succeed On Your Own Terms').",
+    "fonte": "P-BQ-AGS0ck#1:24-2:07 + info.json",
+    "frame": "frame-351.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-030",
+    "tipo": "architettura",
+    "contenuto": "Recap finale del framework applicato all'intero video stesso: Hook (i primi 10 secondi del video), Stakes (la storia del quasi-senzatetto), Turn multipli (il libro n.1, la scoperta dell'intuizione), Scene (la vodka col Dalai Lama, il capo russo), Shatter (il mic-drop finale sull'intuizione).",
+    "fonte": "P-BQ-AGS0ck#23:02-23:20",
+    "frame": "frame-351.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-031",
+    "tipo": "regola",
+    "contenuto": "Regola finale sui punti mancanti del framework: ogni punto ha uno scopo preciso. Se manca lo stake, si rischia di sembrare arroganti/inarrivabili. Se manca il turn ma c'e' uno stake forte, il pubblico resta triste senza sollievo. Se manca la scena, il pubblico non 'ci va' con te anche con turn/stake ottimi. Se manca lo shatter, non c'e' lezione chiara da portare a casa.",
+    "fonte": "P-BQ-AGS0ck#24:04-24:50",
+    "frame": "frame-372.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-032",
+    "tipo": "regola",
+    "contenuto": "Distinzione tra relatability e respect: hook e stakes costruiscono relatability (il pubblico si affeziona), mentre turn, scene e shatter costruiscono respect (il pubblico percepisce l'autore come qualcuno capace di trasmettere un'idea potente). Servono entrambi: relatable ma non rispettato, o rispettato ma non relatable, non bastano da soli.",
+    "fonte": "P-BQ-AGS0ck#24:52-25:22",
+    "frame": "frame-376.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-033",
+    "tipo": "architettura",
+    "contenuto": "Device narrativo/di montaggio centrale del video: la tabella mnemonica HSTSS (Holy/Sh*t/That's/So/Smart -> Hook/Stake/Turn/Scene/Shatter) viene rivelata progressivamente, una riga per capitolo completato: a 3:20 solo la prima riga (Holy-Hook) e' leggibile, le altre restano pixelate; a 5:00 due righe scoperte; a 18:36 tre righe (Hook/Stake/Turn); a 23:36 tutte e cinque le righe sono leggibili.",
+    "fonte": "P-BQ-AGS0ck#3:20 / 5:00 / 18:36 / 23:36 (frame statici multipli)",
+    "frame": "frame-051.png,frame-126.png,frame-280.png,frame-356.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-034",
+    "tipo": "numero",
+    "contenuto": "Metadati del video (P-BQ-AGS0ck.info.json): upload 2026-07-25, 86.971 views, 4.116 like al momento del download, tag includono 'vishen', 'mindvalley', 'storytelling', 'public speaking', 'leadership', 'alex hormozi', 'daniel priestley', 'kallaway'.",
+    "fonte": "P-BQ-AGS0ck (info.json)",
+    "frame": "P-BQ-AGS0ck.info.json",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-035",
+    "tipo": "architettura",
+    "contenuto": "Easter egg di prodotto non commentato a voce: in un b-roll che mostra un Apple Store con tre iPhone in vetrina (illustrazione generica), l'iPhone centrale ha sulla home screen l'icona viola dell'app Mindvalley visibile tra le app installate, accanto a Messaggi/Calendario/Foto/Telefono.",
+    "fonte": "P-BQ-AGS0ck#2:00 (frame statico)",
+    "frame": "frame-031.png",
+    "confidenza": "osservato"
+  }
+]

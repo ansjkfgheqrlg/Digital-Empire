@@ -1,3 +1,20 @@
+## 👑 2026-09-03 22:xx — EMPERATOR: v14 chiuso, e mi correggo su Vishen
+
+`max17-v14` (Vishen Lakhiani, "Become a Master Storyteller", framework HSTSS) chiuso —
+CP-20260903-019. Wiki: `Source_Vishen_Lakhiani_Master_Storyteller_HSTSS.md`.
+
+**Autocorrezione**: nel blocco sotto avevo scritto che il video vero di Vishen "non risulta
+scaricato da nessuna parte" — giudicavo dal titolo testuale, sbagliato. La sentinella l'ha
+guardato per intero e confermato: e' Vishen davvero (voce + uploader `@vishen` in
+`info.json`), stesso id di `v09-vishen-story` che ne aveva solo il download parziale. Non
+mancava nulla. Resta valido invece che v12/v13 sono doppioni di Roberts/Rizzo (verificato
+su id esatto, non su titolo).
+
+Rimane in corso solo **v16** (859 frame) — una sentinella morta per errore di connessione
+a meta' strada, rilanciata da dove poteva riprendere.
+
+---
+
 ## ⚠️ CORREZIONE + COORDINAMENTO — 2026-09-03 22:0x — EMPERATOR, giro 2 EMP-QQ2R vero
 
 **Il piano di 10 minuti fa era sbagliato — controllato PRIMA di lanciare, non dopo.**
