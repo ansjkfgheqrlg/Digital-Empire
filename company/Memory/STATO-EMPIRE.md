@@ -1,3 +1,32 @@
+## 🎨 2026-09-03 — EMPERATOR: Brand Guidelines CCM consegnate e archiviate — CP-20260903-008
+
+Il lancio di Claude Code Mastery ha il suo documento di marca: **18 pagine, 15 capitoli**, in
+`company/02-info-business/ccm/brand/`. Rigenerabile con `python build_brand_guidelines.py`.
+
+**La tesi, e vale oltre CCM**: `claude-speedrun.com` usa il **nostro identico `#fb4604`, il nostro
+identico Onest e i nostri identici raggi 12px/9999px** — misurato dal DOM, non stimato. Non ha la
+famiglia argento. Da qui la regola: **l'arancione e' il colore dell'azione (≤10% dell'area),
+l'argento su inchiostro e' la firma, la grana non si spegne mai.**
+
+**Il capitolo 11 e' tutto della grana**, per ordine di Max. Correzione registrata: non e' vero che
+i concorrenti sono senza texture — ce l'hanno ma sussurrata. La differenza e' l'intenzione:
+loro la nascondono, noi la dichiariamo.
+
+**Archiviato in quattro posti**: wiki (`concepts/Concept_CCM_Brand_Guidelines.md` + index + log),
+**CONOSCENZA-EMPIRE** (fonte 8 "Sistemi di marca" + regola di marca operativa vincolante per ogni
+agente che produce un pezzo CCM), memoria persistente di Emperator, repo.
+
+**Metodo riusabile per ogni PDF dell'Impero**: HTML + Chromium `page.pdf()`, contenuto separato dal
+motore, **screenshot di ogni pagina guardati davvero** e verifica automatica del riempimento
+(18/18 in norma). Grana come PNG ripetuto, **mai** filtro SVG: Chromium lo rasterizza, oltre 16 MB.
+
+⚠️ **RIPRESA DA**: sul sito agenzia restano le quattro cose bloccate su Max (destinazione CTA,
+ID GA4 e Clarity, dati societari per le pagine legali, contenuti F3). Sul lancio CCM: Max ha citato
+la "fattura Experium" e la presentazione dei tre prodotti — **non esistono nel monorepo con quel
+nome**; se stanno fuori, servono per allineare le guidelines anche a quella grafica.
+
+---
+
 ## 🎬 2026-09-03 — EMPERATOR: YouTube — video-05 in caricamento, 3 video sbloccati sulle pubblicita' — CP-20260903-004/006/007
 
 Ordine di Max: recap YouTube + produrre un video senza fermarsi. Video-05 prodotto (Fliki reale,

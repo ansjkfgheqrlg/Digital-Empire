@@ -8,6 +8,11 @@ Last updated: 2026-09-03
 
 # CCM Brand Guidelines — il sistema visivo e verbale del lancio
 
+- **Categoria**: Framework normativo
+- **Origine**: Digital Empire — costruito da Emperator il 2026-09-03 su valori misurati, non scelti
+- **Applicabilità per DE**: vincolante su ogni pezzo di marca CCM (copy, thumbnail, carosello, slide, email, landing, PDF); il metodo di produzione PDF è riusabile su tutti i documenti stampati dell'Impero
+- **Mastery level**: Esperto — i valori sono verificati alla fonte
+
 ## Overview
 
 Documento normativo di **Claude Code Mastery** in 18 pagine A4, 15 capitoli. Non è un catalogo di gusti: ogni capitolo chiude con un blocco **"Come si verifica"**, e nessuna regola è entrata nel documento se non era controllabile a occhio o col contagocce.

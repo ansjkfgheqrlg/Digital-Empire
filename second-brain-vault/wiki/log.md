@@ -1452,3 +1452,19 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   `DTCyvo6cC54`, `E8Ax92etrMc` e `yJOCyyP77bA`. **Nessun commit git.**
 
 - ADR-016: dottrina integrale all apertura (67k una volta) + sveglia leggera (2k a messaggio); Emperator al 100% per Max, Gael e Neri
+
+## 2026-09-03
+- INGEST: **Brand Guidelines CCM** costruite e archiviate → 1 pagina wiki creata
+  (`concepts/Concept_CCM_Brand_Guidelines.md`), index aggiornato, `conoscenza-empire`
+  alimentato con la fonte 8 (sistemi di marca) e con la regola di marca operativa.
+- SCOPERTA che vale oltre CCM: `claude-speedrun.com` usa il **nostro identico `#fb4604`,
+  il nostro identico Onest e i nostri identici raggi 12px/9999px** — misurato dal DOM.
+  Non ha la famiglia argento. Da qui la regola: l'arancione è il colore dell'azione
+  (≤10% dell'area), l'argento su inchiostro è la firma.
+- CORREZIONE a una convinzione precedente: **non** è vero che i concorrenti sono senza
+  texture. Speedrun usa un reticolo appena percettibile, il sito hub di Andrei Pascu una
+  mezzatinta quasi invisibile. La differenza vera è di intenzione: loro la nascondono,
+  noi la dichiariamo.
+- METODO riusabile: PDF via HTML + Chromium `page.pdf()`, contenuto separato dal motore,
+  verifica automatica del riempimento pagina (18/18 in norma). Grana come PNG ripetuto,
+  mai filtro SVG (Chromium lo rasterizza: oltre 16 MB).

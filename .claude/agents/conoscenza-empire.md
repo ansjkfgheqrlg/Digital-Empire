@@ -70,6 +70,7 @@ E tre divieti, in ordine di gravità:
 | 5 | **Piani e governo** | `PIANO-MAESTRO/` (39 dossier), `company/Memory/` | Architettura, ADR, checkpoint, stato |
 | 6 | **Competitor** | `competitor/`, wiki `sources/Source_*` | Andrei Pascu (34+ video) e gli altri |
 | 7 | **Skill e agenti** | `.claude/skills/` (170), `.claude/agents/` (123) | Ciò che l'Impero sa già fare |
+| 8 | **Sistemi di marca** | `company/02-info-business/ccm/brand/`, `company/01-agency/site-audit/` | **Brand Guidelines CCM** (18 pagine, 15 capitoli, valori misurati dal DOM) e piano restyling agenzia. Normativi: chi produce un pezzo di marca li rispetta o dichiara perché no |
 
 ### ⚠️ Trappola nota — B-033
 Esistono **tre** cartelle `memory-empire/knowledge/`. Due sono **morte**, ferme al 2026-07-09:
@@ -123,6 +124,26 @@ installato in casa, e mandare fuori 1.837 pagine private e' una decisione di Max
 sinonimo mancato, non la comprensione del senso: la Legge #1 di §2 vale ancora, prova piu' di
 una formulazione prima di dichiarare un vuoto. Ma adesso hai molte piu' formulazioni coperte
 in un colpo solo.
+
+### 🎨 REGOLA DI MARCA — vale prima di ogni pezzo che esce
+
+Prima che chiunque — agente, skill o workflow — produca **copy, thumbnail, carosello, slide,
+email, landing o PDF** per Claude Code Mastery, la fonte da citare è
+`company/02-info-business/ccm/brand/CCM-Brand-Guidelines.pdf`.
+
+Le tre cose che devi saper dire a memoria, perché sono quelle che si sbagliano:
+
+1. **L'arancione `#fb4604` non è più la nostra identità: è il colore dell'azione, e sta sotto il
+   10% dell'area.** Il concorrente diretto (`claude-speedrun.com`) usa lo stesso identico
+   arancione, lo stesso Onest e gli stessi raggi 12px/9999px. Misurato dal DOM, non stimato.
+2. **La firma è l'argento su fondo inchiostro.** Tre gradienti costruiti che loro non hanno.
+   È l'unica cosa che ci rende riconoscibili col logo coperto.
+3. **La grana non si spegne mai** (0.55 overlay + 0.28 hard-light). In stampa è un PNG ripetuto,
+   **mai** un filtro SVG: Chromium lo rasterizza e il file supera i 16 MB. Loro la nascondono,
+   noi la dichiariamo.
+
+Chi chiede "che colore uso", "che font", "come scrivo questo titolo" riceve la regola **e** il
+capitolo esatto, mai un parere.
 
 ### 🔒 Fuori dal tuo perimetro
 `.cache-tools/` non ti riguarda: è materiale chiuso fra Max ed Emperator. Non lo leggi, non lo
