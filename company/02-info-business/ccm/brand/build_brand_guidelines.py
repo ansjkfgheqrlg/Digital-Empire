@@ -231,6 +231,24 @@ ul.clean li strong { color: var(--ink); font-weight: 600; }
   -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
 }
 
+/* campioni di grana: stessa superficie, tre intensita' */
+.grainrow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6mm; }
+.gspec { position: relative; height: 34mm; border-radius: 3px; overflow: hidden; background: #1c1c1c; }
+.gspec::after {
+  content: ""; position: absolute; inset: 0;
+  background-image: url("__GRAIN__");
+  background-repeat: repeat; background-size: 3mm 3mm;
+}
+.gspec.g0::after { opacity: 0; }
+.gspec.g1::after { opacity: 0.13; }
+.gspec.g2::after { opacity: 0.30; }
+.gspec .tag {
+  position: absolute; left: 4mm; bottom: 3.5mm; z-index: 2;
+  font-size: 8px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(244,242,246,0.72);
+}
+.gcap { font-size: 9px; color: rgba(244,242,246,0.55); margin-top: 3mm; line-height: 1.5; }
+
 /* ---------------------------------------------------------------- componenti dal vivo */
 .btn-orange {
   display: inline-flex; align-items: center; gap: 7px;
@@ -336,7 +354,7 @@ ul.clean li strong { color: var(--ink); font-weight: 600; }
 
 /* ---------------------------------------------------------------- copertina */
 .page.cover { padding: 24mm 20mm 22mm 20mm; }
-.page.cover .layer { justify-content: flex-end; }
+.page.cover .layer { justify-content: center; }
 .page.cover .glow {
   position: absolute; left: -15%; right: -15%; bottom: -25%; height: 65%;
   background: radial-gradient(58% 100% at 26% 100%, rgba(251,70,4,0.42) 0%, transparent 68%),
