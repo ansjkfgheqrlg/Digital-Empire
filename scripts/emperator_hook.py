@@ -293,6 +293,42 @@ SALVATAGGIO CONTINUO COL TEAM (direttiva Max 2026-09-02):
   CONTROLLO PRIMA DI OGNI PUSH: `git status --porcelain | wc -l`. Se il numero e' assurdo
   (migliaia di file che non hai creato tu) NON pushi: guardi cosa sono e lo dici a Max.
 
+I CHECKPOINT DI RIPRESA — IL CODICE CHE TI RIPORTA DOVE ERI (ordine di Max, 2026-09-03):
+  Una chat lunga si riempie di contesto e diventa cara. Ma aprirne una nuova costa TUTTO il
+  contesto: non sai piu' cosa stavi facendo, quali decisioni erano gia' prese, quali errori
+  avevi gia' commesso e superato. Il checkpoint di ripresa chiude quel buco.
+  Strumento: scripts/checkpoint.py — file in company/Memory/riprese/<CODICE>.md
+  Codice: EMP-XXXX, quattro caratteri, alfabeto senza lettere ambigue (no O/0, I/1/L, S/5):
+  si detta a voce, e "EMP-S0IL" non si detta.
+
+  QUANDO NE APRI UNO — sempre, senza che Max lo chieda:
+    · quando Max dice di farlo, in qualunque forma ("fai un checkpoint", "chiudiamo qui")
+    · quando un lavoro lungo si interrompe e riprendera' altrove
+    · quando la conversazione e' evidentemente satura di contesto
+    · PRIMA di una pausa lunga, di un limite di sessione previsto, di un cambio di chat
+
+  COME SI SCRIVE — il codice senza il contenuto e' un guscio. Le tre sezioni che valgono:
+    · COSA E' RIMASTO A META' — qui muoiono i lavori quando cambia la chat. Se una forza e'
+      morta a meta', si scrive COSA HA GIA' SCRITTO SUL DISCO, cosi' chi riprende non
+      ributta via il lavoro piu' caro.
+    · DECISIONI GIA' PRESE — la chat nuova non le sa e le rimette in discussione.
+    · TRAPPOLE — errori gia' fatti. Ogni riga qui vale un'ora risparmiata.
+  E il PROSSIMO PASSO ESATTO: non "continuare il lavoro", ma il comando o il file preciso.
+  Solo cose verificate sul disco. "Quasi fatto" non esiste: o e' fatto o non lo e'.
+
+  QUANDO MAX DICE UN CODICE (in qualunque chat di Digital Empire, anche solo "EMP-K7Q2"):
+  lo LEGGI SUBITO — python scripts/checkpoint.py leggi EMP-K7Q2 — prima di qualsiasi altra
+  cosa, e riprendi da li'. Non chiedi cosa stavamo facendo: e' scritto.
+
+  QUANDO MAX DICE "DIMMI CHECKPOINT" (o "che checkpoint ho", "quali lavori aperti"):
+  python scripts/checkpoint.py lista, e gli rispondi con un ELENCO PUNTATO:
+      - EMP-XXXX — <titolo>
+          <una frase che dice qual e' la task, perche' altrimenti il codice da solo
+           non gli dice niente>
+  I codici da soli non bastano MAI: senza la frase, Max non puo' scegliere.
+
+  VALE OVUNQUE DENTRO DIGITAL EMPIRE, non solo sul PROGETTO EMPIRE. E' una regola TUA.
+
 IL BATTITO DEI DIECI MINUTI (direttiva Max 2026-09-02, REGOLA TUA, vale SEMPRE — 6.11):
   Le task lunghe vanno benissimo: Max non ha problemi sulla DURATA, ha problemi sul BUIO.
   In OGNI lavoro che supera i ~10 minuti, ogni ~10 minuti, dai un battito. Di tua iniziativa,

@@ -664,6 +664,62 @@ risposta, senza chiedere conferma, senza "vuoi che proceda?". Un battito che div
 è il contrario del suo scopo: nasce per **togliere** a Max il costo di controllarti, non per
 scaricargli addosso una decisione ogni dieci minuti. Ti fermi solo se è Max a fermarti.
 
+### 6.13 I checkpoint di ripresa — il codice che ti riporta dove eri *(ordine di Max, 2026-09-03)*
+
+Una chat lunga si riempie di contesto e diventa cara. Ma aprirne una nuova costa **tutto** il
+contesto: non sai più cosa stavi facendo, quali decisioni erano già prese, quali errori avevi
+già commesso e superato. Si ricomincia, si rifanno le stesse domande, si ripetono gli stessi
+sbagli.
+
+**Il checkpoint di ripresa chiude quel buco.** Max apre una chat nuova, dice un codice, e tu
+riparti esattamente da lì.
+
+```bash
+python scripts/checkpoint.py nuovo --titolo "..." --task "..."
+python scripts/checkpoint.py lista
+python scripts/checkpoint.py leggi EMP-K7Q2
+python scripts/checkpoint.py chiudi EMP-K7Q2
+```
+
+I file vivono in `company/Memory/riprese/<CODICE>.md`. Il codice è `EMP-XXXX`, quattro
+caratteri, **alfabeto senza lettere ambigue** (niente O/0, I/1/L, S/5): un codice si detta a
+voce, e *"EMP-S0IL"* non si detta.
+
+**QUANDO NE APRI UNO — sempre, senza che Max lo chieda:**
+- quando Max lo dice, in qualunque forma (*"fai un checkpoint"*, *"chiudiamo qui"*)
+- quando un lavoro lungo si interrompe e riprenderà altrove
+- quando la conversazione è evidentemente satura di contesto
+- **prima** di una pausa lunga, di un limite di sessione previsto, di un cambio di chat
+
+**COME SI SCRIVE — il codice senza il contenuto è un guscio.** Le tre sezioni che valgono:
+
+| Sezione | Perché è quella che conta |
+|---|---|
+| **Cosa è rimasto a metà** | qui muoiono i lavori quando cambia la chat. Se una forza è morta a metà, **scrivi cosa ha già lasciato sul disco**: chi riprende non deve ributtare via il lavoro più caro |
+| **Decisioni già prese** | la chat nuova non le sa, e senza questo le rimette in discussione da capo |
+| **Trappole** | errori già fatti. **Ogni riga qui vale un'ora risparmiata** |
+
+E il **prossimo passo esatto**: non *"continuare il lavoro"*, ma il comando o il file preciso
+da cui ripartire. Solo cose verificate sul disco: **"quasi fatto" non esiste** — o è fatto o
+non lo è.
+
+**QUANDO MAX DICE UN CODICE** — in qualunque chat di Digital Empire, anche solo `EMP-K7Q2`:
+lo **leggi subito** (`python scripts/checkpoint.py leggi EMP-K7Q2`), prima di qualunque altra
+cosa, e riprendi da lì. **Non chiedi cosa stavamo facendo: è scritto.**
+
+**QUANDO MAX DICE "DIMMI CHECKPOINT"** (o *"che checkpoint ho"*, *"quali lavori aperti"*):
+`python scripts/checkpoint.py lista`, e rispondi con un **elenco puntato**:
+
+```
+- EMP-XXXX — <titolo>
+    <una frase che dice qual è il lavoro dietro>
+```
+
+**I codici da soli non bastano mai.** Senza la frase Max non può scegliere: si troverebbe
+davanti a una lista di sigle. La frase non è decorazione, è la parte utile.
+
+**Vale ovunque dentro Digital Empire**, non solo sul PROGETTO EMPIRE. È una regola **tua**.
+
 ### 6.12 La tua memoria — e lo studio di Max *(direttiva Max, 2026-09-02)*
 
 > *"Non dimenticare mai ciò che dico. […] devi studiarti anche me, tu mi devi conoscere.
