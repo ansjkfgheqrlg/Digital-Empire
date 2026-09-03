@@ -1,0 +1,62 @@
+{
+  "kind": "single-video",
+  "id": "sno_IcNbYFM",
+  "title": "Ho creato un CFO AI che controlla l'azienda H24 con Claude",
+  "url": "https://www.youtube.com/watch?v=sno_IcNbYFM",
+  "duration_sec": 2092,
+  "uploader": "Giovanni Beggiato",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Introduzione"
+    },
+    {
+      "start": 76,
+      "title": "Demo del report finale dell'AI CFO"
+    },
+    {
+      "start": 195,
+      "title": "Connessione a QuickBooks via API"
+    },
+    {
+      "start": 441,
+      "title": "Creazione del modello dati Python"
+    },
+    {
+      "start": 642,
+      "title": "Collegamento QuickBooks e download dati"
+    },
+    {
+      "start": 956,
+      "title": "Integrazione parametri esterni (sconti, budget, fidi)"
+    },
+    {
+      "start": 1214,
+      "title": "Costruzione del motore di calcolo deterministico"
+    },
+    {
+      "start": 1472,
+      "title": "Logica degli alert e segnali di rischio"
+    },
+    {
+      "start": 1654,
+      "title": "Import delle skill (Analista Finanziario + AI CFO)"
+    },
+    {
+      "start": 1829,
+      "title": "Creazione della dashboard e prompt anti-allucinazione"
+    },
+    {
+      "start": 1932,
+      "title": "Risultato finale e considerazioni conclusive"
+    }
+  ],
+  "subs": [
+    "runs\\max17-v15\\sno_IcNbYFM.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\max17-v15\\sno_IcNbYFM.webp"
+  ],
+  "ingested_at": "2026-09-03T13:27:23",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=sno_IcNbYFM"
+}

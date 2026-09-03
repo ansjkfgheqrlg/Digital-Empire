@@ -22,6 +22,8 @@ pagina wiki — il ciclo si chiude qui)
 | `.claude/skills/discovery-call-brief/SKILL.md` | 63 (integrale) | **PATCHATO** |
 | `.claude/skills/proposal-gate/SKILL.md` | 76 (integrale) | **NON toccato** — vedi sotto |
 | `.claude/agents/` (elenco completo) + ricerca su "conversione per fase", "pipeline" | elenco + grep mirato | **NON toccato** — nessun agente pertinente esistente, il gap diventa proposta |
+| `.claude/skills/cro-funnel-architect.md/SKILL.md` | grep mirato + lettura del contesto (riga 2237) | **NON toccato** — falso vicino |
+| `.claude/skills/agency-scalping/agents/domain/sales-coach-agent.md` | grep mirato + lettura del contesto (righe 19-33) | **NON toccato** — falso vicino |
 
 ### Verifica del gap (fatta di persona in questa sessione)
 
@@ -49,6 +51,19 @@ pagina wiki — il ciclo si chiude qui)
   **zero risultati**. La sezione "Tracking & Scoring post-call" di `cro-call` esiste ma è
   per-singola-call e per-venditore (scheda post-call, scoring a 6 criteri, analisi pipeline con
   benchmark CR 25-35%), non un cruscotto continuo di sistema.
+
+- **I due falsi vicini, controllati uno per uno** (una ricerca lenta su tutto `.claude/` ha
+  restituito questi due file dopo la prima passata: entrambi aperti e letti nel punto esatto del
+  match, non archiviati sulla fiducia).
+  - `cro-funnel-architect.md/SKILL.md` riga 2237 usa la parola "indottrinamento", ma nel contesto
+    della sequenza post-lead-magnet: *"Email benvenuto (entro 2 min) | Consegna PDF +
+    indottrinamento"*. È il tratto **lead → lista**, non il tratto **prenotazione → call**: un
+    prospect che scarica un PDF e uno che ha già una call in calendario sono in due momenti diversi
+    e vogliono cose diverse. La meccanica però esiste già lì (email entro 2 minuti, tag, redirect),
+    quindi è l'infrastruttura da riusare se B-050 viene approvata — non un motivo per non farla.
+  - `agency-scalping/agents/domain/sales-coach-agent.md` nomina "Checklist Pre-Call: ricerca da
+    fare prima di ogni call" (riga 22) e "audit pre-call" (riga 30): di nuovo **lato nostro**,
+    esattamente come la checklist di `cro-call`. Nessuna azione verso il prospect.
 
 **Verdetto**: gap reale su tre fronti patchabili in modo additivo (citazione verbatim nel
 documento strategico, trigger nell'ICP, data/ora del prossimo step nel brief) + due gap che
@@ -156,9 +171,11 @@ nicchie di outreach, ma non risulta un ICP scritto e vincolante per l'agenzia st
 prenotazione e call: 1 email di conferma con link a una pagina, la pagina di conferma con video di
 benvenuto + audit/questionario che il prospect compila prima (equivalente del "Selling Systems
 Audit"), e un blocco FAQ costruito sulle 4 obiezioni classiche del ticket DE (prezzo → chi siete →
-funziona per il mio caso → perché non lo faccio da solo). Verificato che non esista: ricerca su
-`indottrin|indoctrinat|pre-call|precall` in `.claude/skills` e `.claude/agents` — gli unici match
-sono `cro-call` (checklist di ricerca lato nostro) e `discovery-call-brief` (post-call). Input
+funziona per il mio caso → perché non lo faccio da solo). Verificato che non esista, con i quattro candidati aperti e letti
+uno per uno: `cro-call` (checklist di ricerca lato nostro), `discovery-call-brief` (post-call),
+`cro-funnel-architect` (indottrinamento **post-lead-magnet**, tratto lead→lista, non
+prenotazione→call) e `agency-scalping/sales-coach-agent` ("audit pre-call" = di nuovo ricerca lato
+nostro). Nessuno tocca il prospect fra la prenotazione e la call. Input
 naturale: la scheda ICP + il pricing a catalogo già fissato in `proposal-gate` (EUR 4.000 / 3.500 /
 2.500 / 8.000), così la FAQ può dichiarare il prezzo prima della call come fa Barron.
 
@@ -235,13 +252,13 @@ backlog.
 
 ## Backlog registrato (proposte, non costruite)
 
-- **B-042** — Skill `pre-call-indoctrination` (email di conferma + pagina con video + audit
+- **B-050** — Skill `pre-call-indoctrination` (email di conferma + pagina con video + audit
   pre-call + FAQ sulle 4 obiezioni classiche). Origine: 5swDtQFyIws, fase 3 del sistema.
-- **B-043** — Agente `sales-funnel-auditor` (tassi di conversione per fase del funnel di vendita
+- **B-051** — Agente `sales-funnel-auditor` (tassi di conversione per fase del funnel di vendita
   interno). Origine: 5swDtQFyIws, KA-003 + KA-024.
-- **B-044** — Workflow `post-call → business case + next step in calendario` come singola azione
+- **B-052** — Workflow `post-call → business case + next step in calendario` come singola azione
   non completabile a metà. Origine: 5swDtQFyIws, KA-033.
-- **B-045** — Decisione da prendere (candidata ad ADR): pubblicare o no il prezzo prima della call.
+- **B-053** — Decisione da prendere (candidata ad ADR): pubblicare o no il prezzo prima della call.
   Tensione fra il modello Barron (prezzo in FAQ = filtro) e `cro-call` Regola Assoluta #6 (prezzo
   dopo il valore). Origine: 5swDtQFyIws, KA-010.
 

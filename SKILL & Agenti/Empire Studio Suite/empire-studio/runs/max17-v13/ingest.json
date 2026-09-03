@@ -1,0 +1,87 @@
+{
+  "kind": "single-video",
+  "id": "BSUHmVcaO1g",
+  "title": "Se usi ancora i prompt... devi vedere questa evoluzione",
+  "url": "https://www.youtube.com/watch?v=BSUHmVcaO1g",
+  "duration_sec": 1883,
+  "uploader": "Simone Rizzo",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Cos'è il Loop Engineering e l'hype del momento"
+    },
+    {
+      "start": 29,
+      "title": "Il nuovo paradigma lanciato dai creatori di Claude Code e OpenClow"
+    },
+    {
+      "start": 85,
+      "title": "L'evoluzione: dal Prompt Engineering al Context Engineering"
+    },
+    {
+      "start": 279,
+      "title": "Quando il Large Language Model diventa un Agente AI"
+    },
+    {
+      "start": 361,
+      "title": "Il problema del \"Context Rot\" e il degradamento delle performance"
+    },
+    {
+      "start": 465,
+      "title": "Cos'è l'Harness Engineering e l'estensione tramite File System"
+    },
+    {
+      "start": 591,
+      "title": "Come funziona la memoria persistente in OpenClow"
+    },
+    {
+      "start": 693,
+      "title": "Test pratici: differenze tra Prompt, Context e Harness Engineering"
+    },
+    {
+      "start": 812,
+      "title": "L'introduzione al Loop Engineering: un loop su loop sul loop"
+    },
+    {
+      "start": 895,
+      "title": "Esempi di automazione con Loop Engineering (GitHub issue e bug fixing)"
+    },
+    {
+      "start": 1005,
+      "title": "Il progetto Auto Research di Andrej Karpathy"
+    },
+    {
+      "start": 1083,
+      "title": "I 4 step fondamentali del Loop Engineering"
+    },
+    {
+      "start": 1145,
+      "title": "Come settare i comandi /loop e /gol su Claude"
+    },
+    {
+      "start": 1226,
+      "title": "L'importanza delle condizioni di terminazione e i 5 livelli di verifica"
+    },
+    {
+      "start": 1313,
+      "title": "I loop con verità terrena ritardata (il caso dei post social)"
+    },
+    {
+      "start": 1434,
+      "title": "Usare l'LLM come giudice (il caso del cloning di interfacce web)"
+    },
+    {
+      "start": 1672,
+      "title": "Demo reale: ottimizzazione del prodotto fra matrici tramite Loop Engineering"
+    }
+  ],
+  "subs": [
+    "runs\\max17-v13\\BSUHmVcaO1g.en-US.vtt",
+    "runs\\max17-v13\\BSUHmVcaO1g.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\max17-v13\\BSUHmVcaO1g.webp"
+  ],
+  "ingested_at": "2026-09-03T13:27:53",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=BSUHmVcaO1g"
+}

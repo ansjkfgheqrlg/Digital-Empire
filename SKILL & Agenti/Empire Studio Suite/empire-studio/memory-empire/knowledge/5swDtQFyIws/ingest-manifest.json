@@ -67,7 +67,9 @@
   ],
   "skills_agents_evaluated_not_patched": {
     ".claude/skills/proposal-gate/SKILL.md": "Il criterio 1 del gate impone gia' 'il problema descritto con le parole/dati del cliente'. Un criterio quasi-duplicato avrebbe allungato il gate senza stringerlo.",
-    ".claude/agents/*": "Nessun agente esistente misura la conversione per fase del funnel di vendita interno (ricerca su 'tasso di conversione per fase' e 'pipeline...conversione': zero risultati). Il gap diventa proposta B-043, non una patch forzata su un agente esistente."
+    ".claude/agents/*": "Nessun agente esistente misura la conversione per fase del funnel di vendita interno (ricerca su 'tasso di conversione per fase' e 'pipeline...conversione': zero risultati). Il gap diventa proposta B-051, non una patch forzata su un agente esistente.",
+    ".claude/skills/cro-funnel-architect.md/SKILL.md": "Falso vicino, controllato leggendo il punto esatto del match (riga 2237): usa la parola 'indottrinamento' ma nel tratto lead -> lista (email di benvenuto entro 2 min dopo il download di un lead magnet), non nel tratto prenotazione -> call. La meccanica esistente e' pero' l'infrastruttura da riusare se B-050 viene approvata.",
+    ".claude/skills/agency-scalping/agents/domain/sales-coach-agent.md": "Falso vicino, controllato leggendo il contesto (righe 19-33): 'Checklist Pre-Call: ricerca da fare prima di ogni call' e 'audit pre-call' sono di nuovo attivita' lato nostro, come la checklist di cro-call. Nessuna azione verso il prospect."
   },
   "key_topics": [
     "Sales System a 5 fasi: ICP -> Meetings -> Indoctrinate -> Discovery Call -> Business Case, barra costruita progressivamente a schermo e ricapitolata a 23:26",
@@ -107,7 +109,7 @@
     "La psicologia di vendita del founder come seconda causa del tetto di $1M/anno e' dichiarata fuori scope e rimandata a un altro video"
   ],
   "segmento_promozionale": "Il video e' contenuto educativo con CTA finale a prenotare una call (24:00-24:06) e mostra a schermo i propri artefatti commerciali reali (email di indottrinamento, landing di conferma, FAQ con prezzo $8.000 della propria mentorship). Il materiale promozionale coincide con il materiale didattico: dichiarato.",
-  "tensione_aperta": "Barron pubblica il prezzo nella FAQ PRIMA della call ($8.000) usandolo come filtro di qualificazione; cro-call Regola Assoluta #6 impone 'il prezzo va sempre presentato DOPO il valore, mai prima, mai da solo'. Le due posizioni non sono conciliabili per decreto. Nessuna patch applicata su questo punto: registrata come proposta di ADR (B-045), la scelta e' di Max.",
+  "tensione_aperta": "Barron pubblica il prezzo nella FAQ PRIMA della call ($8.000) usandolo come filtro di qualificazione; cro-call Regola Assoluta #6 impone 'il prezzo va sempre presentato DOPO il valore, mai prima, mai da solo'. Le due posizioni non sono conciliabili per decreto. Nessuna patch applicata su questo punto: registrata come proposta di ADR (B-053), la scelta e' di Max.",
   "p12_traceability": true,
   "stages_completed": ["C-archive", "D-enrichment", "E-gate", "F-apply", "H-report"],
   "enrichment_summary": {
@@ -126,10 +128,10 @@
     "frontmatter_yaml": "Non toccato in nessuno dei tre file."
   },
   "backlog_proposto_non_costruito": [
-    "B-042 — Skill pre-call-indoctrination (email di conferma + pagina con video + audit pre-call + FAQ sulle 4 obiezioni classiche)",
-    "B-043 — Agente sales-funnel-auditor (tassi di conversione per fase: lead->meeting, meeting->discovery, discovery->business case, business case->chiuso)",
-    "B-044 — Workflow post-call -> business case + next step in calendario come singola azione non completabile a meta'",
-    "B-045 — Decisione candidata ad ADR: pubblicare o no il prezzo prima della call (tensione Barron vs cro-call Regola Assoluta #6)"
+    "B-050 — Skill pre-call-indoctrination (email di conferma + pagina con video + audit pre-call + FAQ sulle 4 obiezioni classiche)",
+    "B-051 — Agente sales-funnel-auditor (tassi di conversione per fase: lead->meeting, meeting->discovery, discovery->business case, business case->chiuso)",
+    "B-052 — Workflow post-call -> business case + next step in calendario come singola azione non completabile a meta'",
+    "B-053 — Decisione candidata ad ADR: pubblicare o no il prezzo prima della call (tensione Barron vs cro-call Regola Assoluta #6)"
   ],
   "processing_notes": "Pipeline Empire Studio Stage 1-5 gia' eseguita il 2026-09-02 (video-analysis.md, atoms.json 55 KA, coverage.md, scenes.json/scenes.md, 723 frame su disco). Memory Empire Stage C-H chiuso il 2026-09-03 senza nuova visione dei frame: video-analysis.md e atoms.json esistenti riusati, normalizzati ed espansi in contenuto-integrale.md. Questo era l'ultimo video del batch max17 rimasto senza archiviazione in memory-empire/knowledge/ e senza pagina wiki — il ciclo era stato interrotto a meta'. Archivio scritto nell'UNICA memory-empire viva, quella dentro empire-studio/ (trappola B-033: le copie in C:/Users/Utente/.claude/skills/memory-empire/ e in 'SKILL & Agenti/Empire Studio Suite/memory-empire/' sono morte, ferme al 2026-07-09, e non sono state toccate). Nessun commit git eseguito in questa sessione.",
   "gap_verificato": "Verificato di persona in questa sessione leggendo i file, non solo dichiarato dal video-analysis.md preesistente: cro-call/SKILL.md (5.146 righe) alla Pagina 2 del documento strategico diceva 'usando LE SUE PAROLE' senza prescrivere la citazione diretta ne' spiegarne il motivo; la sua checklist pre-call (10 punti, righe 209-272) e' interamente lato nostro e non prevede una sola azione verso il prospect fra prenotazione e call; icp-radar/SKILL.md (77 righe, lette integralmente) non aveva nessun campo trigger; discovery-call-brief/SKILL.md (63 righe, lette integralmente) aveva prossimo_passo_concordato come stringa libera e un gate pre-output che controllava ambiente_server, budget_signal e dolore quantificato ma non la data del prossimo step; nessun agente in .claude/agents/ misura la conversione per fase."

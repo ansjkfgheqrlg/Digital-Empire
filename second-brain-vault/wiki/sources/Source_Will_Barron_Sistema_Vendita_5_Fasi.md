@@ -157,7 +157,10 @@ che Barron descrive solo come principio.
 **Dove sta il buco vero — verificato leggendo i file, non dedotto:**
 1. **Fra "ha prenotato" e "è in call": zero.** La checklist pre-call di `cro-call` ha 10 punti,
    tutti lato nostro (sito, social, ads, case study, setup tecnico): **nessuna azione verso il
-   prospect**. La Fase 3 del video non è coperta da nessuna skill.
+   prospect**. Controllati anche i due falsi vicini: `cro-funnel-architect` ha un
+   "indottrinamento" ma è quello **post-lead-magnet** (email di benvenuto dopo il download, tratto
+   lead→lista), e l'"audit pre-call" di `agency-scalping/sales-coach-agent` è di nuovo ricerca
+   nostra. La Fase 3 del video non è coperta da nessuna skill.
 2. **Nessun tasso di conversione per fase.** Non sappiamo dove il processo perde le persone: la
    sezione Tracking & Scoring di `cro-call` misura la singola call e il singolo venditore, non il
    sistema.
@@ -166,9 +169,9 @@ che Barron descrive solo come principio.
    concentration]], che aveva già arricchito questa stessa skill — ma non risulta un ICP scritto
    che regoli chi viene accettato in discovery call.
 
-**Proposte non costruite (da approvare):** skill `pre-call-indoctrination` (B-042), agente
-`sales-funnel-auditor` (B-043), workflow `post-call → business case + next step in calendario`
-(B-044).
+**Proposte non costruite (da approvare):** skill `pre-call-indoctrination` (B-050), agente
+`sales-funnel-auditor` (B-051), workflow `post-call → business case + next step in calendario`
+(B-052).
 
 ## Tensione aperta con la dottrina DE
 
@@ -176,7 +179,7 @@ Barron **pubblica il prezzo prima della call** ($8.000 nella FAQ) e lo usa come 
 qualificazione che protegge il calendario. `cro-call` Regola Assoluta #6 dice l'opposto: *"il
 prezzo va sempre presentato DOPO il valore, mai prima, mai da solo."* Le due posizioni non sono
 conciliabili per decreto e nessuna patch è stata applicata su questo punto: registrata come
-proposta di ADR (B-045). È una decisione di Max, non di un video.
+proposta di ADR (B-053). È una decisione di Max, non di un video.
 
 ## Nota di trasparenza
 
