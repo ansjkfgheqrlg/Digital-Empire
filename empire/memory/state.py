@@ -71,5 +71,8 @@ def prepend(*, write: bool = False) -> str:
         i = 1 if lines and lines[0].startswith("# ") else 0
         new = "".join(lines[:i]) + "\n" + block + "\n" + "".join(lines[i:])
 
-    p.write_text(new, encoding="utf-8")
+    # newline="\n": vedi la nota in render.py::write_view. Qui pesa anche di piu' —
+    # questo file e' STATO-EMPIRE.md, ed e' esattamente quello che il 2026-08-23 stava
+    # per duplicare per ~6500 righe perche' git lo vedeva riscritto da capo. B-028.
+    p.write_text(new, encoding="utf-8", newline="\n")
     return block

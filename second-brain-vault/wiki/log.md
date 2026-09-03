@@ -1,5 +1,25 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-03 (EMPERATOR — perimetro fuori dal repo + Gael e Neri abilitati)
+- SICUREZZA: il blocco riservato della dottrina viveva in due file TRACCIATI, quindi
+  finiva nella sessione di Gael e Neri ogni volta che pronunciavano il nome (18.355 byte).
+  Spostato in ~/.claude/emperator-private/, fuori dal repository. Due lucchetti: il file
+  deve esistere E git user.name dev'essere il proprietario.
+  Aggiunto oscura(): la fotografia dello stato e dinamica e pescava il perimetro dal
+  RIPRESA DA del giorno. Guardia permanente: scripts/test_emperator_isolamento.py, 4 casi,
+  ha trovato 2 fughe non viste a occhio.
+- CAUSA VERA del mancato uso: SETUP-GAEL.md, 61 righe, non nominava Emperator NEMMENO UNA
+  VOLTA (SETUP-NERI.md sono 289 righe che lo insegnano). Aggiunta la sezione 0: cos e,
+  come si accende, verifica py -3, e il perche concreto. Corretta la sezione 5 che diceva
+  git add -A durante un conflitto — la mossa che stava per spedire 13,4 GB su GitHub.
+- DIFETTO CHIUSO: .githooks/check_memory.py bloccava ogni commit per un ora con una falsa
+  COLLISIONE ID (confrontava i nomi, mai i contenuti: scambiava per collisione il
+  checkpoint di Gael che rientrava identico da un merge). Aggiunta identico_in_storia().
+- DIRETTIVA 6 — TUTTO PASSA DA EMPERATOR: il lavoro dell Impero passa da lui, anche
+  quello di Gael e Neri. Capo dei sistemi, non capo delle persone.
+- LIMITE DICHIARATO: ferma le iniezioni da adesso, NON cancella la storia git pubblica.
+- Checkpoint: CP-20260902-010 e CP-20260903-002.
+
 ## 2026-09-02 (EMPIRE STUDIO -- chiusura ciclo JdAQzAcWR6k, batch max17 1/8, con applicazione consigli)
 - INGEST (Empire Studio + Memory Empire): **batch max17, video 1/8** -- `JdAQzAcWR6k`
   "How to Create VIRAL Carousels in ChatGPT (No Coding)" (Artem Novitckii, 7m40s, EN),
@@ -1316,3 +1336,6 @@ Dettaglio completo: `company/Memory/checkpoints/CP-20260824-*.md`.
   aggiornato -- fuori dal perimetro esplicito di questo brief (che elencava Stage C/D-F/G/H/Backlog
   come le uniche consegne richieste), coerente col pattern gia' registrato su `E8Ax92etrMc` e
   `yJOCyyP77bA`. **Nessun commit git**, come da vincolo di sessione.
+
+## 2026-09-03
+- DOTTRINA: gerarchia forze Emperator (scagnozzo/sentinella/doom bot) + assetto God Emperor Doom -> 1 pagina concept creata, ADR-015, emperator.md §6-bis/§6-ter, hook DOTTRINA allineata

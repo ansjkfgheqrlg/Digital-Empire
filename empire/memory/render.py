@@ -169,5 +169,11 @@ def write_view(atom: Atom, *, overwrite: bool = False) -> Path:
     p.parent.mkdir(parents=True, exist_ok=True)
     if p.exists() and not overwrite:
         return p
-    p.write_text(render(atom), encoding="utf-8")
+    # newline="\n" NON e' un dettaglio: senza, su Windows write_text traduce ogni \n in
+    # \r\n e la vista esce in CRLF mentre tutto il repo e' LF. Git allora vede il file
+    # RISCRITTO DA CAPO invece che modificato, e al merge non sa piu' cosa tenere.
+    # E' B-028, misurato: un checkpoint di 12 righe cambiate risultava 100 insertions /
+    # 90 deletions. Ed e' la stessa forma del guaio che il 2026-08-23 stava per duplicare
+    # ~6500 righe di STATO-EMPIRE. Chiuso il 2026-09-03.
+    p.write_text(render(atom), encoding="utf-8", newline="\n")
     return p

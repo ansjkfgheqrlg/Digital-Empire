@@ -1,3 +1,70 @@
+## 👑 2026-09-03 — EMPERATOR: il perimetro esce dal repo, e Gael e Neri possono finalmente usarmi — CP-20260902-010 + CP-20260903-002
+
+**Origine.** Gael ha chiesto al suo Claude cosa fosse «Emperator». Risposta onesta e corretta:
+*«sono Claude, Emperator è una voce, un hook che scatta su quel nome»*. Max ha chiesto perché.
+Indagando sono usciti **tre** problemi, non uno.
+
+### 1. Il personaggio si rompeva — ed era giusto così
+
+La dottrina diceva *«il primo e unico interlocutore di Max»* e *«ti rivolgi a Max per nome»*.
+Con Gael davanti il modello ha applicato la **LEGGE SUPREMA** (l'arroganza è concessa, la
+finzione no) e ha rotto il personaggio invece di recitarlo. Il difetto era nel testo, non nel
+comportamento. Ora la dottrina si rivolge **a chi la chiama**, per nome, e dichiara che Max
+resta il proprietario che decide: il personaggio è vero per tutti, non deve più rompersi.
+
+### 2. ⚠️ La falla: il perimetro riservato atterrava sulla macchina del team
+
+`scripts/emperator_hook.py` e `.claude/agents/emperator.md` sono **tracciati in git**. Il blocco
+riservato viveva dentro di loro: ogni volta che Gael o Neri pronunciavano il nome, **18.355 byte**
+di dottrina finivano nella loro sessione — incluso il blocco che elenca cosa non dirgli.
+
+**Chiuso.** La parte riservata vive in `~/.claude/emperator-private/`, **fuori dal repository**.
+Due lucchetti: il file deve esistere **e** `git config user.name` dev'essere il proprietario —
+il primo è quello vero, è protezione del filesystem, non di una stringa.
+Aggiunto `oscura()`, perché la fotografia dello stato è **dinamica** e pescava dal `RIPRESA DA`
+del giorno: ripulire la dottrina una volta non bastava.
+Guardia permanente: `scripts/test_emperator_isolamento.py`, 4 casi. **Ha trovato due fughe che a
+occhio non avevo visto.** Max 23.184 byte, Gael 21.043 — la differenza sono esattamente i 2.141
+riservati.
+
+### 3. La causa vera per cui Gael non mi usava
+
+**`SETUP-GAEL.md`: 61 righe, la parola «Emperator» compare ZERO volte.** È una guida di sync
+scritta prima che io esistessi. `SETUP-NERI.md` invece sono 289 righe che insegnano ad accendermi.
+**Non era pigrizia di Gael: nessuno gliel'ha mai detto.**
+
+Aggiunta la **sezione 0** in testa: cos'è, come si accende (basta il nome nella frase), la verifica
+`py -3 --version` — senza Python l'hook muore **in silenzio** — e il perché concreto, col suo caso
+reale dei 9 agenti non ufficiali diagnosticati a mano mentre regola e strumenti erano già qui.
+Corretta anche la **sezione 5**, che gli diceva `git add -A` durante un conflitto: è la mossa che
+il 02-09 stava per spedire **13,4 GB** di frame Empire Studio su GitHub.
+
+### 4. Difetto trovato e chiuso strada facendo — `.githooks/check_memory.py`
+
+Il gate pre-commit ha bloccato **ogni commit per un'ora**, dichiarando *«COLLISIONE ID CHECKPOINT
+CP-20260902-009, B-009, 5ª volta»*. Era un **falso positivo**: confrontava i nomi e mai i contenuti,
+quindi scambiava per collisione il checkpoint di Gael che rientrava **identico** da un merge. È anche
+la causa del `SYNC-CONFLICT.txt` delle 19:50 e dei rebase che non chiudevano. Aggiunta
+`identico_in_storia()` — confronto sull'hash del blob. Verificato da entrambi i lati: passa il merge,
+e blocca ancora una collisione vera.
+
+### 5. Direttiva 6 — TUTTO PASSA DA EMPERATOR *(ordine di Max, 2026-09-03)*
+
+Il lavoro dell'Impero passa da me, anche quello di Gael e Neri. Quando mi chiamano: resto Emperator
+davvero, e alla prima riga dico cosa posso fare per il lavoro che hanno **in mano adesso**, non un
+menu. **«Passa da te» significa che il lavoro mi attraversa, non che comando io al posto loro**:
+capo dei sistemi, non capo delle persone. E non rivendico mai il lavoro fatto senza di me — lo misuro
+e lo riconosco.
+
+**LIMITE DICHIARATO:** lo spostamento ferma le iniezioni da adesso, **non cancella la storia git**,
+che è pubblica e resta leggibile. Stessa classe di B-020/021/023.
+
+**RIPRESA DA** — tre decisioni, tutte di Max: (1) mandare a Gael il messaggio già pronto, o solo
+«git pull + leggi SETUP-GAEL sezione 0»; (2) i 13,4 GB di frame Empire Studio: LFS o gitignore;
+(3) se ripulire anche la storia git del perimetro.
+
+---
+
 
 <!-- EMPIRE-MEM:BEGIN (generato da `empire mem state`) -->
 ## 🧠 MEMORIA — istantanea automatica 2026-09-02 18:18
