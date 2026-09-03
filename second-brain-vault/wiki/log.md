@@ -1,5 +1,38 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-04 (EMPIRE STUDIO — chiusura ciclo gUnQK6bWHkI, batch max17 v16, sentinella-v16-brand)
+- INGEST (Empire Studio + Memory Empire): batch `max17`, video `gUnQK6bWHkI` "Come creare un
+  MICRO-PERSONAL BRAND da milioni di euro" (MiK Cosentino, 57m10s, IT). Una sentinella gemella era
+  MORTA a meta' per un errore di CONNESSIONE (non un errore di merito) prima di questa sessione:
+  aveva prodotto solo `scenes.json`/`scenes.md` (segmentazione strutturale non-visiva, verificati
+  in questa sessione contro `frames/manifest.json`, nessuna discrepanza), mai un solo frame
+  guardato. `video-analysis.md`, `atoms.json` (29 KA), `coverage.md` scritti da zero in questa
+  sessione.
+- FORMATO DIVERSO DAL RESTO DEL LOTTO: non un tutorial a schermo condiviso ma la registrazione di
+  un intervento DAL VIVO a un evento (palco, platea, lavagna a fogli mobili). Copertura dichiarata
+  di conseguenza: **20/858 frame guardati nativamente (2,3%, campionamento mirato)** + trascrizione
+  audio **100% letta** (`.vtt` da 12.048 righe grezze deduplicato meccanicamente a 1.504 righe,
+  nessun contenuto alterato). Motivazione: per lunghi tratti (fino a 128s consecutivi) lo stesso
+  disegno a mano resta fisicamente visibile sul palco — verificato di persona confrontando
+  `frame-159.png` (10:32) e `frame-324.png` (21:32), stesso disegno "SUPPLY/DOMANDA", non un bug
+  di sincronizzazione del tool (controllato contro `frames/manifest.json`).
+- CONTENUTO: tesi centrale = non serve un pubblico gigantesco, serve tagliare volontariamente la
+  supply (front-end ~500 euro, mastermind a due livelli 30k/46k euro/anno, cap 50 persone) con un
+  ciclo mensile a 4 settimane (3 di contenuto, 1 di apertura/chiusura cancelli, lista d'attesa vera,
+  dichiarazione pubblica di sold-out). Rilettura aggiornata di "1000 True Fans" di Kevin Kelly con
+  uno studio proprietario su 1.300 infobusiness (media ~2.000 follower Instagram tra chi supera
+  10.000 euro/mese). Contributo piu' riproducibile: le Storie in Evidenza lette come sales letter
+  a 14 card (dolore->scoperta->risultato->CTA), testo integrale in `frame-663.png`.
+- Pagina wiki creata: `sources/Source_MiK_Cosentino_Micro_Personal_Brand.md`. index.md aggiornato
+  (nuova sezione "Personal Brand & Infobusiness").
+- Nessuna patch a skill/agenti condivisi in questa sessione (perimetro del checkpoint `EMP-QQ2R`,
+  fase di studio, nessuna modifica a sistemi condivisi mentre altre sentinelle lavorano in
+  parallelo sullo stesso repo). 5 gap verificati con grep (non a fiducia) e proposti senza
+  applicarli: `cro-strategy-social-(ig-tiktok)`, skill nuova `instagram-highlights-sales-letter`,
+  agente/funzione `pricing-fan-math`, `market-launch`, `icp-radar`.
+- Memory close: `SKILL & Agenti/Empire Studio Suite/empire-studio/memory-empire/knowledge/gUnQK6bWHkI/`.
+- Checkpoint: vedi `company/Memory/checkpoints/` (numero assegnato a fine lavoro).
+
 ## 2026-09-03 (EMPIRE STUDIO — chiusura ciclo sno_IcNbYFM, batch max17 v15, sentinella-cfo-ai ripresa)
 - INGEST (Empire Studio + Memory Empire): batch `max17`, video `sno_IcNbYFM` "Ho creato un CFO AI
   che controlla l'azienda H24 con Claude" (Giovanni Beggiato, 34m52s, IT). Sentinella

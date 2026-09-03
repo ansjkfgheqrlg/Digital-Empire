@@ -1,0 +1,234 @@
+[
+  {
+    "id": "KA-001",
+    "tipo": "regola",
+    "contenuto": "Tesi di apertura contro la paura 'l'AI uccidera' gli infoprodotti': il rapporto umano e' l'ingrediente magico dietro cio' che le persone comprano, perche' le informazioni si trovano gratis ovunque - quello che cambia e' come una singola persona le distilla per il pubblico. Prova indiretta: 40-50.000 studenti nel corso degli anni, 'se le informazioni bastassero sarebbero tutti ricchi'.",
+    "fonte": "gUnQK6bWHkI#1:58-2:36",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-002",
+    "tipo": "definizione",
+    "contenuto": "Distinzione tra 'personal brand' generico (essere un influencer enorme) e 'micro personal brand': obiettivo del secondo e' acquisire clienti alto-spendenti ogni giorno sfruttando quello che si ha gia' (sapere, telefono, autorevolezza istantanea), diventando la scelta ovvia per il proprio pubblico senza bisogno di un seguito enorme.",
+    "fonte": "gUnQK6bWHkI#3:12-3:33",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-003",
+    "tipo": "numero",
+    "contenuto": "Fatturato storico dichiarato: piu' di 35 milioni di euro di infobusiness personale (relatore, fratello, azienda) accumulati in oltre 12 anni. Il relatore dichiara di aver smesso di guardare il fatturato per guardare solo il profitto netto, e di aver scelto di non spingere oltre una certa soglia l'infobusiness (rifiuta l'idea di fare 30 milioni lavorando 10 ore al giorno, preferendo profitti minori lavorando 3 ore al giorno).",
+    "fonte": "gUnQK6bWHkI#5:30-7:00",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-004",
+    "tipo": "numero",
+    "contenuto": "Caso studio datato 'Iros', agosto 2025: con quasi tutta la rete vendita in ferie, lancio di un piccolo test webinar via Instagram con budget minimo (1-2 venditori disponibili). Risultato dichiarato: investiti 7.000 euro di ads, ricavati 149.000 euro in 4 giorni (finestra di vendita + post-vendita). Da questo episodio nasce l'intuizione alla base del resto del metodo esposto nel talk.",
+    "fonte": "gUnQK6bWHkI#7:09-7:56",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-005",
+    "tipo": "regola",
+    "contenuto": "Il problema strutturale dell'infobusiness secondo il relatore: la maggior parte degli infobusiness ha 'supply tendenzialmente infinita' (un corso si vende teoricamente all'infinito), mentre i business con supply reale limitata (eventi dal vivo con posti fisici contati, mercato degli orologi di lusso discontinuati) generano automaticamente piu' domanda e sono percepiti a maggior valore. Illustrato con un disegno a mano su flip-chart (triangolo con 'SUPPLY' in alto e 'DOMANDA' sulla diagonale), rimasto fisicamente visibile sul palco per un lungo tratto del video.",
+    "fonte": "gUnQK6bWHkI#10:09-13:20",
+    "frame": "frame-159.png,frame-324.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-006",
+    "tipo": "architettura",
+    "contenuto": "Struttura dichiarata dell'infobusiness personale del relatore dopo aver tagliato volontariamente la supply: prodotto di front-end a circa 500 euro di media, Mastermind su due livelli (30.000 euro/anno e 46.000 euro/anno), tetto massimo dichiarato di 50 persone nel mastermind (25+20 iscritti al momento del talk). Il solo mastermind e' dichiarato come business da 1,5 milioni di euro netti senza spesa pubblicitaria, con clienti che restano anche 10 anni.",
+    "fonte": "gUnQK6bWHkI#13:44-14:18",
+    "frame": "frame-208.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-007",
+    "tipo": "metodo",
+    "contenuto": "Ciclo operativo mensile a 4 settimane per creare domanda su una supply artificialmente limitata: settimane 1-3 = creazione/aumento della domanda (contenuti, nessuna pressione di vendita), settimana 4 = evento (webinar live o workshop) -> apertura cancelli -> chiusura con urgenza e scarsita' reale -> dichiarazione pubblica di sold-out -> chi resta fuori si mette in lista d'attesa vera (puo' pagare ma inizia il ciclo successivo). Il ciclo si ripete ogni mese. Il canale YouTube resta l'unico funnel 'evergreen' per chi non vuole aspettare i cancelli.",
+    "fonte": "gUnQK6bWHkI#14:22-19:03",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-008",
+    "tipo": "numero",
+    "contenuto": "Case study Instagram DM -> Inner Circle, tutto in un mese: follower risponde a una storia chiedendo come entrare, il relatore risponde 'Inner Circle', lei si autocandida. Passaggi: chat breve su Pain and Desire -> invio di un 'offer doc' (Google Doc con l'offerta, preparato prima di parlare con qualcuno) -> acquisto a 15.000 euro del percorso -> 21 giorni dopo guadagna 30.000 euro applicando una strategia del percorso in un webinar live -> fa coaching one-to-one incluso nel pacchetto -> entra nell'Inner Circle a 46.000 euro/anno. Tutto partito da Instagram.",
+    "fonte": "gUnQK6bWHkI#19:56-23:12",
+    "frame": "n/a (solo audio, screenshot DM descritto verbalmente riga per riga nella trascrizione)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-009",
+    "tipo": "storia",
+    "contenuto": "Origin story del relatore: 2012 primo evento dal vivo, 1000 volantini distribuiti in piazza, presenti solo 4 persone, zero vendite. 2014 primi video su Facebook (origine di quello che fa oggi su Instagram/YouTube). Primo corso registrato in un monolocale a Roma (Via della Maglianella 203) condiviso col fratello: lavagna Ikea da 9,90 euro, un solo faro, niente microfono, un Rolex finto comprato a Ponte di Vivo. 18 mesi dopo sul palco con Russell Brunson dopo il primo milione di euro fatto con un funnel. 2016 primo evento dal vivo proprio, 300 persone a Roma, corso 'Liberati dalle catene'.",
+    "fonte": "gUnQK6bWHkI#23:58-26:47",
+    "frame": "n/a (solo audio, foto d'archivio proiettate non lette a schermo intero in questa sessione)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-010",
+    "tipo": "metodo",
+    "contenuto": "Rilettura del saggio 'The 1000 True Fans' di Kevin Kelly (cofondatore di Wired, 2008): tesi originale, se hai 1000 persone che ti amano davvero e ognuna spende 100 dollari l'anno, sono 100.000 dollari l'anno - basta un pubblico vero, non enorme. Esempi citati da Kelly: musicista con 800 fan, ceramista con 600 clienti abituali, scrittore con newsletter da 1200 persone, personal trainer con 900 iscritti che guadagna oltre 10.000 dollari l'anno.",
+    "fonte": "gUnQK6bWHkI#27:42-30:31",
+    "frame": "frame-418.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-011",
+    "tipo": "numero",
+    "contenuto": "Aggiornamento 2026 dichiarato dal relatore alla tesi di Kevin Kelly: studio incrociato su 1.300 infobusiness che usano Ulama (software di infobusiness.com per vendere corsi/consulenze) - chi fa piu' di 10.000 euro al mese ha in media circa 2.000 follower su Instagram. Conclusione pratica: dato che i prezzi medi sono molto piu' alti di 100 dollari, bastano molti meno di 1000 fan veri per arrivare a 10.000 euro/mese. Baseline mostrata: 10.000 follower, prezzo medio clienti Ulama circa 2.000 euro su 400 nicchie diverse, quindi bastano circa 5 clienti al mese per pareggiare il calcolo di Kelly.",
+    "fonte": "gUnQK6bWHkI#29:14-31:00",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-012",
+    "tipo": "numero",
+    "contenuto": "Case study clienti citati per nome: cliente non nominato di corsi stampa 3D, da zero a 18.000 euro/mese in 2 mesi. Giulia, bloccata a 10.000 euro/mese, in 8 mesi arriva a 100.000 euro, oggi fa milioni di euro l'anno. Marco, bloccato a un certo punto, aiutato a rivedere prezzi/delivery/rete vendita, poi scalato.",
+    "fonte": "gUnQK6bWHkI#31:24-31:56",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-013",
+    "tipo": "prova sociale",
+    "contenuto": "Testimonianza reale mostrata a schermo: Marco Scardeoni & Partners (Tax, Legal & Labour, sedi Milano e altre citta'), screenshot messaggio 'E questo grazie a te... il concept negli eventi che faccio sta spopolando ed in tre mesi ho chiuso il 400% in piu'...'.",
+    "fonte": "gUnQK6bWHkI#~28:12 (slide statica)",
+    "frame": "frame-470.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-014",
+    "tipo": "framework",
+    "contenuto": "Instagram Authority Funnel - 3 segreti dichiarati per costruire un micro personal brand autorevole: (1) non serve una grande audience, serve una nicchia affamata; (2) il profilo Instagram e' letteralmente un funnel travestito; (3) costruire un micro personal brand e' paradossalmente piu' facile quando non si e' ancora nessuno, perche' non si ha un pregresso di errori percepiti dal pubblico.",
+    "fonte": "gUnQK6bWHkI#33:57-34:19",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-015",
+    "tipo": "framework",
+    "contenuto": "Formula M+M+M (Mercato + Messaggio + Matematica): primo filtro da mettere in ordine quando si guarda un infobusiness. Mercato = qual e' il mercato e la sofisticazione/consapevolezza del pubblico con cui parlare. Concetto illustrato con metafora del golf ('buca di conversione'): 4 zone di consapevolezza del pubblico - (1) nessuna consapevolezza ne' del problema ne' della soluzione, (2) consapevolezza del problema ma non delle soluzioni esistenti, (3) consapevolezza sia del problema sia della soluzione, (4) gia' cliente di un concorrente (i piu' facili da convertire). Raccomandazione: spostare le persone di una zona alla volta verso la buca, non attaccare i 'guru' di riferimento ma fare partnership.",
+    "fonte": "gUnQK6bWHkI#34:24-37:00",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-016",
+    "tipo": "regola",
+    "contenuto": "Filosofia di pricing con analogia Tesla/Elon Musk: Musk non parti' dal modello accessibile ma dalla Tesla Roadster (fino a 200.000 dollari con optional), poi finanzio' con quei ricavi la Model X, poi la Model S, poi la Model 3 su grande scala. Argomento: se anche un miliardario ha scelto di partire dal prezzo alto, un infobusiness non ha motivo di partire chiedendo 1.000 euro invece di 25.000.",
+    "fonte": "gUnQK6bWHkI#38:18-39:14",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-017",
+    "tipo": "numero",
+    "contenuto": "Matematica del pricing: con 200 lead in CRM, per fare 20.000 euro/mese vendendo a 100 euro servirebbe convertire il 100% dei lead (mai visto in 12 anni di attivita', secondo il relatore); vendendo invece a 5.000 euro bastano 4 clienti (coerente con un tasso di conversione realistico di circa il 2%, citato come riferimento generico). Prezzo piu' alto = piu' profitto, meno clienti, meno stress, piu' tempo libero (slide mostrata a schermo).",
+    "fonte": "gUnQK6bWHkI#39:44-40:59",
+    "frame": "frame-599.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-018",
+    "tipo": "numero",
+    "contenuto": "Case study finale sulla sezione prezzo: cliente con 2.229 follower su Instagram, passato da 10.000 euro/mese a 40.000 euro/mese in un mese, con due sole vendite, dopo aver rivisto prezzi e messaggio - prima ancora di iniziare a lavorare sul personal brand vero e proprio. Il mastermind da lui acquistato (46.000 euro/anno, pagato in unica soluzione) viene recuperato in sole due settimane.",
+    "fonte": "gUnQK6bWHkI#41:01-41:35",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-019",
+    "tipo": "metodo",
+    "contenuto": "Scomposizione del profilo Instagram come funnel: nome e cognome chiari (non un tag/username incomprensibile), allineamento tra nome del profilo e identita' reale, bio con proof numerica (es. 'oltre 500 milioni fatti dai nostri clienti', cifra che il relatore dichiara di aver smesso di aggiornare con precisione), link a YouTube descritto come 'funnel evergreen fatto a ragnatela' - ogni video costruito per intersecarsi con tutti gli altri, cosi' che chi atterra su YouTube ci passi molte ore prima ancora di conoscere il relatore di persona.",
+    "fonte": "gUnQK6bWHkI#41:56-43:41",
+    "frame": "frame-540.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-020",
+    "tipo": "metodo",
+    "contenuto": "Step 2 del funnel Instagram: le 'Storie in Evidenza' funzionano come una sales letter scritta a step, una sequenza di card che raccontano dolore -> scoperta -> risultato -> call to action finale ('scrivi [parola codice] e ti mando tutto'). Testo integrale delle 14 card mostrate a schermo, quasi identico parola per parola a quanto recitato a voce nella stessa sezione del talk (sizzle letter).",
+    "fonte": "gUnQK6bWHkI#43:59-45:09",
+    "frame": "frame-663.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-021",
+    "tipo": "framework",
+    "contenuto": "La 'macchina del contenuto': 4 tipologie fisse di contenuto pubblicate con cadenza dichiarata di 1-2 caroselli al mese e 3 reel a settimana. (1) Contenuto di attenzione: unico obiettivo prendere l'attenzione, non convertire (esempio: video da 1,5 milioni di views, 83.000 like, 2.600 commenti, 34.000 condivisioni). (2) Contenuto di educazione (esempio: 'Come ho attratto 62.000 nuovi follower usando solamente il mio telefono'). (3) Contenuto di autorevolezza, con casi studio a supporto. (4) Contenuto di conversione con CTA esplicita a commentare una parola per ricevere una risorsa gratuita (esempio: 1.128 commenti in circa 3 giorni).",
+    "fonte": "gUnQK6bWHkI#45:49-47:24",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-022",
+    "tipo": "comando",
+    "contenuto": "Strumenti dichiarati per l'ideazione dei contenuti: un 'agente' personale che recupera le news calde del settore per i contenuti di attenzione, e un custom GPT (regalato gratuitamente al pubblico durante il talk, 'non c'e' ne' email ne' niente, si installa su ChatGPT') che genera 25 topic virali del momento per i contenuti di educazione.",
+    "fonte": "gUnQK6bWHkI#49:04-49:50",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-023",
+    "tipo": "numero",
+    "contenuto": "Risultati complessivi dichiarati per l'ultimo mese e mezzo prima del talk: 60 milioni di visualizzazioni, 110.000 nuovi follower, circa 11-12.000 lead raccolti, circa una quindicina di clienti paganti del primo percorso di front-end.",
+    "fonte": "gUnQK6bWHkI#47:44-48:01",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-024",
+    "tipo": "framework",
+    "contenuto": "8 Segreti per diventare un leader da seguire (elenco integrale mostrato a schermo): 1) Diventa Attraente e Vivi la vita che loro vorrebbero; 2) Sii sicuro di te stesso e NON aver paura dei nemici; 3) Devi essere polarizzante e mai noioso; 4) Padroneggia l'arte della Persuasione; 5) Fatti Pagare (...e anche tanto); 6) Ogni Leader Ha Una Storia Passata da Raccontare; 7) Usa Parabole e Metafore SEMPRE; 8) Mostra i tuoi difetti e lati deboli al pubblico. Lista non recitata integralmente a voce nella sezione corrispondente della trascrizione (che ne copre solo alcuni punti in modo discorsivo) - confermata solo dal frame.",
+    "fonte": "gUnQK6bWHkI#~51:16 (slide statica)",
+    "frame": "frame-773.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-025",
+    "tipo": "framework",
+    "contenuto": "Framework di storytelling per la vendita uno-a-tanti da palco: Introduzione -> Viaggio -> Conflitto -> Momento di realizzazione -> Framework (cosa mi sono portato a casa, cosa mi ha permesso di raggiungere). Imparato dal relatore stando fisicamente sul palco per anni, con menzione dell'evento con Mirko Gasparotto (2016, primo grande evento dal vivo costruito da zero per un terzo, target iniziale 500 persone).",
+    "fonte": "gUnQK6bWHkI#53:19-54:14",
+    "frame": "frame-798.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-026",
+    "tipo": "regola",
+    "contenuto": "Tre errori tipici nella vendita uno-a-tanti da palco, individuati dal relatore nel proprio primo tentativo fallito (una piazza in Sicilia, zero vendite): 1) la 'sindrome del maestrino' (insegnare troppa tecnica e annoiare); 2) andare 'a sentimento' senza struttura; 3) non ascoltare la platea prima di presentare (il relatore dichiara di aver ascoltato il pubblico di questo stesso evento la sera prima per costruire il contenuto del talk).",
+    "fonte": "gUnQK6bWHkI#54:32-55:05",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-027",
+    "tipo": "numero",
+    "contenuto": "Numero dichiarato per l'ultimo evento dal vivo del relatore: chiuso con 150.000 euro di vendite fatte direttamente da palco.",
+    "fonte": "gUnQK6bWHkI#55:36-55:40",
+    "frame": "n/a (solo audio)",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-028",
+    "tipo": "regola",
+    "contenuto": "Messaggio di chiusura del talk: la 'grande verita'' che il relatore vuole lasciare al pubblico e' che non serve un pubblico gigantesco per ottenere risultati - le vere barriere sono le false credenze interne (paura di parlare in camera, mancanza di tempo percepita), non la dimensione dell'audience. Chiusura testuale: 'vendere uno a tanti, costruire un personal brand... ha trasformato la mia vita e son certo che potra' trasformare anche la vostra.'",
+    "fonte": "gUnQK6bWHkI#55:56-57:07",
+    "frame": "frame-858.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-029",
+    "tipo": "meta",
+    "contenuto": "Formato reale del video: non e' un tutorial/screen-share come gli altri video del lotto max17, ma la registrazione di un intervento dal vivo a un evento (platea seduta a tavoli, palco con schermo di proiezione e lavagna a fogli mobili usata piu' volte, organizzatore dell'evento citato piu' volte per nome, 'Mario'). Conseguenza per la copertura video: un disegno a mano su flip-chart (es. il grafico supply/domanda) resta fisicamente visibile sul palco per minuti interi dopo essere stato disegnato, quindi frame nominalmente distanti nel tempo (es. frame-159 a 10:32 e frame-324 a 21:32) possono mostrare lo stesso identico contenuto visivo senza che questo sia un errore di sincronizzazione del tool di estrazione (verificato contro frames/manifest.json).",
+    "fonte": "gUnQK6bWHkI (osservazione strutturale su tutto il video)",
+    "frame": "frame-001.png,frame-159.png,frame-324.png",
+    "confidenza": "osservato"
+  }
+]

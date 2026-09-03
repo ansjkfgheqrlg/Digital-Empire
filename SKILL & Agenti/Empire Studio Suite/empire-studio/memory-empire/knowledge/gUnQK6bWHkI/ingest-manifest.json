@@ -1,0 +1,106 @@
+{
+  "video_id": "gUnQK6bWHkI",
+  "title": "Come creare un MICRO-PERSONAL BRAND da milioni di euro",
+  "channel": "MiK Cosentino",
+  "url": "https://www.youtube.com/watch?v=gUnQK6bWHkI",
+  "run": "max17-v16",
+  "run_path": "empire-studio/runs/max17-v16",
+  "category": "max17-personal-brand-infobusiness",
+  "duration_s": 3430,
+  "duration_human": "57m10s",
+  "language": "it",
+  "format": "intervento dal vivo a un evento (palco + platea + lavagna a fogli mobili) - NON screen-share/tutorial come il resto del lotto",
+  "ingested_at": "2026-09-03T13:27:13",
+  "stageC_date": "2026-09-04",
+  "predecessor_note": "Una sentinella gemella era morta a meta' lavoro per un errore di CONNESSIONE (non un errore di merito) prima di questa sessione. Aveva prodotto solo scenes.json/scenes.md (segmentazione strutturale non-visiva, verificata in questa sessione contro frames/manifest.json, nessuna discrepanza trovata) - non aveva ancora guardato un solo frame ne' scritto video-analysis.md/atoms.json/coverage.md. Tutta la visione (frame + trascrizione) e' stata condotta in questa sessione da zero.",
+  "frames": {
+    "total_dense": 858,
+    "interval_sec": 4.0,
+    "unique_scenes": 273,
+    "frames_read_natively": 20,
+    "all_read_native_vision": false,
+    "coverage_pct": 2.3,
+    "coverage_pct_of_unique_scenes": 7.3,
+    "frames_skipped_below_threshold": 585,
+    "frames_unreadable": 0,
+    "no_finto_status": "PASS_WITH_DECLARED_PARTIAL_COVERAGE",
+    "note": "Campionamento mirato dichiarato esplicitamente, non copertura totale - motivato dalla natura di evento dal vivo (un disegno a mano su flip-chart resta visibile sul palco per fino a 128s consecutivi, verificato con frames/manifest.json su frame-159 vs frame-324 che mostrano lo stesso disegno a 11 minuti di distanza nominale). Compensato con lettura audio al 100%. Dettaglio completo in runs/max17-v16/coverage.md, inclusa la tabella dei 20 frame guardati e il motivo di ciascuna scelta."
+  },
+  "transcript": {
+    "file": "gUnQK6bWHkI.it.vtt",
+    "language": "it",
+    "kind": "auto-generated rolling captions",
+    "raw_lines": 12048,
+    "cleaned_lines": 1504,
+    "cleaning_method": "script Python locale di deduplica meccanica dei cue a scorrimento (nessun contenuto riscritto o inventato, solo rimozione di righe duplicate consecutive)",
+    "all_lines_read": true,
+    "timestamps_preserved": true,
+    "read_in_blocks": "righe 1-400, 400-800, 800-1200, 1200-1504, 4 blocchi"
+  },
+  "knowledge_atoms": 29,
+  "atoms_by_relevance": {"alta": 12, "media": 12, "bassa": 5},
+  "atoms_by_confidence": {"osservato": 29, "inferito": 0},
+  "output_files": {
+    "video_analysis": "empire-studio/runs/max17-v16/video-analysis.md",
+    "coverage": "empire-studio/runs/max17-v16/coverage.md",
+    "contenuto_integrale": "memory-empire/knowledge/gUnQK6bWHkI/contenuto-integrale.md",
+    "atoms": "memory-empire/knowledge/gUnQK6bWHkI/atoms.json",
+    "ingestion_log": "second-brain-vault/wiki/log.md (voce 2026-09-04)"
+  },
+  "wiki_pages_created": [
+    "second-brain-vault/wiki/sources/Source_MiK_Cosentino_Micro_Personal_Brand.md"
+  ],
+  "wiki_pages_updated": [
+    "second-brain-vault/wiki/index.md",
+    "second-brain-vault/wiki/log.md"
+  ],
+  "key_topics": [
+    "Micro personal brand: acquisire clienti alto-spendenti ogni giorno senza bisogno di un seguito enorme, sfruttando sapere/telefono/autorevolezza istantanea",
+    "Il problema strutturale dell'infobusiness: supply tendenzialmente infinita, risolto tagliandola volontariamente (front-end ~500 euro, mastermind a due livelli 30k/46k euro/anno, cap 50 persone)",
+    "Ciclo mensile a 4 settimane: 3 settimane di creazione domanda, 1 settimana di apertura/chiusura cancelli con urgenza reale, dichiarazione pubblica di sold-out, lista d'attesa vera",
+    "Rilettura 2026 di '1000 True Fans' di Kevin Kelly con studio proprietario su 1.300 infobusiness Ulama (media ~2.000 follower Instagram tra chi supera 10.000 euro/mese)",
+    "Pricing: analogia Tesla/Elon Musk (partire dal prezzo alto), matematica conversione 100 vs 5000 euro per cliente",
+    "Instagram Authority Funnel: 3 segreti (nicchia affamata, profilo come funnel travestito, piu' facile partire da zero) + formula M+M+M + buca di conversione a 4 zone",
+    "Storie in Evidenza come sales letter a 14 card (dolore->scoperta->risultato->CTA), testo quasi identico a quanto recitato a voce",
+    "Macchina del contenuto a 4 tipologie fisse: attenzione, educazione, autorevolezza, conversione, con esempi numerici per ciascuna",
+    "8 Segreti per diventare un leader da seguire (piramide del potere)",
+    "Framework storytelling per la vendita uno-a-tanti da palco: Introduzione-Viaggio-Conflitto-Momento di realizzazione-Framework"
+  ],
+  "numeri_reali_dichiarati": [
+    "35+ milioni di euro di infobusiness personale storico (12+ anni)",
+    "7.000 euro di ads -> 149.000 euro in 4 giorni (caso Iros, agosto 2025)",
+    "Front-end ~500 euro, Mastermind 30.000/46.000 euro l'anno, cap 50 persone, 1.5 milioni netti/anno",
+    "Caso DM Instagram: 15.000 -> 30.000 -> 46.000 euro/anno in 1 mese",
+    "1.300 infobusiness Ulama, media ~2.000 follower Instagram tra chi supera 10.000 euro/mese",
+    "Cliente stampa 3D: 0 -> 18.000 euro/mese in 2 mesi",
+    "Giulia: 10.000 -> 100.000 euro in 8 mesi",
+    "Marco Scardeoni & Partners: +400% in 3 mesi (testimonianza a schermo)",
+    "Cliente 2.229 follower: 10.000 -> 40.000 euro/mese in 1 mese, mastermind 46.000 euro recuperato in 2 settimane",
+    "Contenuto attenzione: 1.5 milioni views, 83.000 like, 2.600 commenti, 34.000 condivisioni",
+    "Contenuto educazione: 62.000 nuovi follower",
+    "Contenuto conversione: 1.128 commenti in ~3 giorni",
+    "Ultimo mese e mezzo: 60 milioni views, 110.000 follower, 11-12.000 lead, ~15 clienti paganti",
+    "150.000 euro di vendite dall'ultimo evento dal vivo"
+  ],
+  "tool_citati": [
+    "Instagram (profilo, storie in evidenza, DM, commenti-a-DM)",
+    "Ulama (software proprietario infobusiness.com per vendere corsi/consulenze)",
+    "YouTube (funnel evergreen 'a ragnatela')",
+    "Custom GPT proprietario (25 topic virali del momento, regalato al pubblico)",
+    "CRM/ManyChat (automazione DM su commento 'codice')",
+    "Google Doc ('offer doc' per il case study DM)"
+  ],
+  "avvertenza_metodologica": "Video di formato diverso dal resto del lotto max17 (intervento dal vivo, non tutorial/screen-share). Copertura frame dichiarata parziale (20/858, 2.3%) con motivazione strutturale verificata (oggetti fisici su palco restano visibili per minuti, non e' un bug di sincronizzazione - controllato contro frames/manifest.json). Compensato con lettura audio integrale al 100%. Tutti i numeri finanziari sono dichiarazioni verbali dell'autore, non verificate indipendentemente da Digital Empire in questa sessione (nessuna dashboard/CRM vista a schermo).",
+  "limiti_dichiarati_dal_video": [
+    "Nessuna dashboard/CRM/Ulama mostrata a schermo intero con i numeri dichiarati",
+    "Profilo Instagram del relatore mai letto per intero a schermo in questa sessione",
+    "Custom GPT '25 topic virali' mai mostrato in output a schermo",
+    "Acronimo 'O.T.S.C.B' (frame-663) mai spiegato ne' a voce ne' su schermo",
+    "Cifra esatta sulla lavagna accanto a 'F.E.' (frame-208) non leggibile con certezza"
+  ],
+  "p12_traceability": true,
+  "stages_completed": ["C-archive"],
+  "stages_not_completed": ["D-enrichment", "E-gate", "F-apply", "G-audit", "H-report"],
+  "stages_not_completed_reason": "Perimetro esplicito del checkpoint EMP-QQ2R per questo giro: Fase 1 = studio (video-analysis, atoms, coverage, wiki, consigli). I 5 gap verso skill esistenti sono stati identificati e verificati con grep (non a fiducia) e riportati come proposte in video-analysis.md/wiki, ma NESSUNA patch e' stata applicata a skill/agenti condivisi, per non collidere con altre sentinelle in lavoro parallelo sullo stesso repo (regola di coordinamento EMP-QQ2R).",
+  "processing_notes": "Pipeline Empire Studio Stage 0-2 (memory bootstrap, ingest, frame extraction) gia' eseguita da una sentinella precedente morta per errore di connessione - solo scenes.json/scenes.md erano su disco, verificati in questa sessione contro frames/manifest.json (nessuna discrepanza). Stage 3 (visione Claude) condotto da zero in questa sessione con campionamento dichiarato. Stage 4 (atomi), 6 (wiki) eseguiti in questa sessione. Stage 5 (verifica) limitato all'incrocio interno frame/manifest/trascrizione descritto in coverage.md, nessun agente verification-control dedicato invocato separatamente. Nessun commit git eseguito in questa sessione (solo git add dei file toccati, per istruzione esplicita)."
+}
