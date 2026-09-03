@@ -1,0 +1,69 @@
+import sys, re
+from playwright.sync_api import sync_playwright
+
+if sys.platform.startswith("win"):
+    sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
+
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+
+with sync_playwright() as p:
+    ctx = p.chromium.launch_persistent_context(
+        user_data_dir="../chrome-profile-youtube",
+        channel="chrome",
+        headless=False,
+        args=["--disable-blink-features=AutomationControlled"],
+        viewport={"width": 1440, "height": 900},
+        user_agent=USER_AGENT,
+    )
+    page = ctx.new_page()
+    page.goto("https://studio.youtube.com/channel/UC0J2KtEiGnDZnzHlc2Vajpg/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D", wait_until="domcontentloaded", timeout=60000)
+    page.wait_for_timeout(6000)
+    row = page.locator("ytcp-video-row").filter(has_text="7 SEGNALI che una DONNA si sta inn").first
+    row.scroll_into_view_if_needed(timeout=10000)
+    page.wait_for_timeout(1000)
+    row.hover(timeout=5000)
+    page.wait_for_timeout(500)
+    page.screenshot(path="../memory/_row_state.png")
+    btn = row.locator("button:has-text('Edit draft')").first
+    print("edit draft count:", btn.count())
+    btn.click(timeout=15000, force=True)
+    page.wait_for_timeout(4000)
+    page.screenshot(path="../memory/_after_editdraft_click.png")
+
+    private_radio = page.locator("tp-yt-paper-radio-button[name='PRIVATE']")
+    for step in range(8):
+        if private_radio.count() > 0 and private_radio.first.is_visible():
+            print(f"Radio PRIVATE visibile dopo {step} tentativi.")
+            break
+        # Prova anche il layout a pagina singola: cerca sezione Visibility diretta
+        vis_section = page.get_by_text("Visibility", exact=False).first
+        print(f"Tentativo {step+1}: radio non visibile ancora. Provo Next...")
+        next_btn = page.locator("button:has-text('Next'), button:has-text('Avanti')").first
+        if next_btn.count() > 0:
+            try:
+                next_btn.click(timeout=8000)
+                page.wait_for_timeout(2000)
+                continue
+            except Exception as e:
+                print("Next non cliccabile:", e)
+        # niente Next: forse siamo sulla pagina singola "Video details", scrolliamo giu'
+        page.mouse.wheel(0, 800)
+        page.wait_for_timeout(1500)
+        if private_radio.count() > 0 and private_radio.first.is_visible():
+            print(f"Radio PRIVATE trovato scrollando, tentativo {step}.")
+            break
+    page.screenshot(path="../memory/_visibility_search.png")
+
+    if private_radio.count() > 0 and private_radio.first.is_visible():
+        private_radio.first.click(timeout=10000)
+        page.wait_for_timeout(1000)
+        print("PRIVATE selezionato.")
+        save_btn = page.locator("button:has-text('Save'), button:has-text('Salva'), button:has-text('Publish'), button:has-text('Pubblica')").first
+        save_btn.click(timeout=10000)
+        page.wait_for_timeout(4000)
+        print("Salvato.")
+    else:
+        print("[ERRORE] Radio PRIVATE non trovato in nessun layout.")
+    page.screenshot(path="../memory/_resume_v2_final.png")
+    print("URL finale:", page.url)
+    ctx.close()

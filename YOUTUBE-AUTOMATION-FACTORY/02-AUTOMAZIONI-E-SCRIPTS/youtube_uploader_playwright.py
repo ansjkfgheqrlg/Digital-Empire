@@ -163,18 +163,17 @@ def upload_via_playwright(video_path, metadata, thumbnail_path, user_data_dir):
 
             # Clic su Avanti fino alla schermata Visibilita'. La wizard di Studio ha un numero
             # variabile di tab (era 4 fino a ~agosto 2026, diventato 5 con l'aggiunta di
-            # "Initial check" / "Monetization"). Invece di contare i click (fragile), clicchiamo
-            # Next finche' non arriviamo al tab Visibility/Visibilita'. Max 6 tentativi come
-            # guardia anti-loop. AGGIORNATO 2026-09-01 dopo timeout su nth(3) con wizard a 5 tab.
-            for step in range(6):
-                # Controlla se siamo gia' sul tab Visibility
-                vis_tab = page.locator(
-                    "[aria-label*='Visibility'], [aria-label*='Visibilit'],"
-                    "div.step-title:has-text('Visibility'), div.step-title:has-text('Visibilit')"
-                ).first
+            # "Initial check" / "Monetization"). BUG REALE trovato il 2026-09-03: il vecchio
+            # controllo cercava il testo "Visibility" nello STEPPER in alto — ma quel testo e'
+            # sempre presente (e' l'etichetta del tab, visibile anche quando sei ancora su
+            # Details), quindi il controllo dava falso positivo dopo 0 click e il codice provava
+            # subito a cliccare il radio Private, che non esiste ancora su quella schermata
+            # (timeout). Fix: aspetta che il radio PRIVATE stesso sia visibile, non l'etichetta.
+            private_radio = page.locator("tp-yt-paper-radio-button[name='PRIVATE']")
+            for step in range(8):
                 try:
-                    if vis_tab.is_visible():
-                        print(f"Raggiunto tab Visibility dopo {step} click Next.")
+                    if private_radio.count() > 0 and private_radio.first.is_visible():
+                        print(f"Radio PRIVATE visibile dopo {step} click Next.")
                         break
                 except Exception:
                     pass
@@ -190,20 +189,56 @@ def upload_via_playwright(video_path, metadata, thumbnail_path, user_data_dir):
 
             # Schermata Visibilità: imposta come Privato
             print("Impostazione visibilità (Privato per sicurezza)...")
-            page.locator(
-                "tp-yt-paper-radio-button[name='PRIVATE'], "
-                "tp-yt-paper-radio-button:has-text('Private'), "
-                "tp-yt-paper-radio-button:has-text('Privato')"
-            ).first.click()
-            page.wait_for_timeout(1000)
+            if private_radio.count() > 0 and private_radio.first.is_visible():
+                # Percorso A: wizard a tab (Details -> ... -> Visibility), radio gia' in pagina.
+                private_radio.first.click(timeout=10000)
+                page.wait_for_timeout(1000)
+                print("Clic su pulsante Salva/Save...")
+                page.locator(
+                    "button:has-text('Save'), button:has-text('Salva'), "
+                    "button:has-text('Publish'), button:has-text('Pubblica')"
+                ).first.click()
+                page.wait_for_timeout(5000)
+            else:
+                # Percorso B, trovato dal vivo il 2026-09-03: quando l'upload atterra sulla
+                # pagina singola "Video details" (niente stepper, niente Next), la visibilita'
+                # si imposta dal pannello destro: un box "Visibility" con dentro lo stato
+                # corrente (es. "Pending") che, cliccato, apre un popup "Save or publish" con
+                # Private gia' selezionato di default. Serve confermare con "Done" e poi "Save".
+                print("Wizard a tab non trovato, provo il pannello Visibility del pannello destro...")
+                page.locator("[class*='visibility'], #visibility").first.click(timeout=8000)
+                page.wait_for_timeout(1500)
+                popup_private = page.locator("tp-yt-paper-radio-button[name='PRIVATE']")
+                if popup_private.count() > 0:
+                    popup_private.first.click(timeout=5000)
+                    page.wait_for_timeout(500)
+                page.locator("button:has-text('Done')").first.click(timeout=8000)
+                page.wait_for_timeout(1500)
+                print("Clic su pulsante Salva/Save...")
+                page.locator("button:has-text('Save')").first.click(timeout=8000)
+                page.wait_for_timeout(5000)
 
-            # Clic su Salva/Pubblica — per ruolo/testo, bilingue, non per id.
-            print("Clic su pulsante Salva/Save...")
-            page.locator(
-                "button:has-text('Save'), button:has-text('Salva'), "
-                "button:has-text('Publish'), button:has-text('Pubblica')"
-            ).first.click()
-            page.wait_for_timeout(5000)
+            # BUG REALE trovato il 2026-09-03: dopo il Save, Studio mostra il proprio popup
+            # ("Your private video is still uploading. Keep this browser tab open until
+            # uploading completes.") — e il codice chiudeva il browser_context 5 secondi dopo,
+            # cioe' esattamente quello che Google dice di NON fare. Un file da 270+ MB puo'
+            # metterci 10-15 minuti reali. Restiamo sulla pagina e aspettiamo che il popup
+            # sparisca (o che il testo "Uploading" non sia piu' presente) prima di chiudere,
+            # fino a un tetto di 20 minuti — non blocca all'infinito se qualcosa va storto.
+            print("Attendo fine upload reale (Google chiede di non chiudere il tab)...")
+            upload_deadline = time.time() + 20 * 60
+            while time.time() < upload_deadline:
+                try:
+                    still_uploading = page.get_by_text("still uploading", exact=False).count() > 0 \
+                        or page.get_by_text("ancora caricando", exact=False).count() > 0
+                except Exception:
+                    still_uploading = False
+                if not still_uploading:
+                    print("Upload completato (popup 'still uploading' non piu' presente).")
+                    break
+                page.wait_for_timeout(15000)
+            else:
+                print("[AVVISO] Tetto di 20 minuti raggiunto, procedo comunque.")
 
             # ID reale, non un placeholder: Studio reindirizza a
             # https://studio.youtube.com/video/<VIDEO_ID>/edit dopo il salvataggio. Senza
