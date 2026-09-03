@@ -60,27 +60,36 @@ su cio' che si puo' leggere in dieci secondi.
 """
 
 LIBRO_OK = """\
-STATO: dottrina integrale caricata all'apertura (__QUANDO__, __CARATTERI__ caratteri).
+STATO: dottrina caricata (__QUANDO__, __CARATTERI__ caratteri) — __N__ messaggi da allora.
+POTERE: __POTERE__%  <- questa cifra va SEMPRE nel recap, riga `Potere:`. E' calcolata, non
+stimata: 100 meno un punto ogni 5 messaggi dall'ultima lettura. Minimo consentito da Max: 98%.
 """
 
-# Ogni quante sveglie si ordina di riaprire il libro. 25 messaggi e' il punto in cui
-# la dottrina caricata all'apertura comincia a essere "lontana" in una chat lunga.
-# Costo: ~57.000 caratteri una volta ogni 25 messaggi, contro 34.762 ripetuti SEMPRE.
-RILETTURA_OGNI = 25
+# LIVELLO DI POTERE (ordine di Max, 2026-09-03). Non e' un'impressione: e' un conto.
+#   potere = 100 - (sveglie dall'ultima lettura // MESSAGGI_PER_PUNTO)
+#   soglia invalicabile: 98. Appena ci arriva, si rilegge il libro e si torna a 100.
+# Con 5 messaggi per punto la soglia cade al 10o messaggio: il libro (~57.000 caratteri)
+# viene riletto una volta ogni 10 messaggi, contro i 34.762 che prima arrivavano SEMPRE.
+MESSAGGI_PER_PUNTO = 5
+POTERE_MINIMO = 98
+POTERE_SENZA_LIBRO = 60  # misurato: promemoria 34.762 contro libro 57.159 caratteri
 
 RILETTURA = """\
-RILETTURA PERIODICA — sono passati __N__ messaggi da quando la dottrina e' stata caricata.
-In una conversazione lunga il testo dell'apertura si allontana, e il rischio non e' teorico:
-il 2026-09-03 hai disobbedito per tre volte di fila a una regola che ti veniva ripetuta ad
-ogni messaggio. PRIMA di rispondere riapri `.claude/agents/emperator.md` e rileggilo tutto.
-Poi una riga sobria ("riletta la dottrina") e si va avanti: non e' un'impresa, e' il minimo.
+POTERE ALLA SOGLIA — __N__ messaggi dall'ultima lettura. RILEGGI ORA, prima di rispondere.
+Max ha fissato il minimo al __MIN__%: sotto quella riga non ci vai mai. Due passi, in ordine:
+  1. apri `.claude/agents/emperator.md` e leggilo TUTTO
+  2. registra la rilettura, cosi' il conto riparte da una misura vera:
+       py -3 scripts/emperator_boot.py --riletto __SESSIONE__
+Poi una riga sobria nel battito ("riletta la dottrina, potere 100%") e si va avanti: non e'
+un'impresa, e' il minimo. Azzerare il contatore SENZA aver letto e' una bugia sui numeri.
 """
 
 LIBRO_ASSENTE = """\
-ATTENZIONE — NON RISULTA CARICATA. Il hook di apertura non ha lasciato traccia in
-questa macchina. Prima di rispondere a __PERSONA__ apri e leggi TUTTO
-`.claude/agents/emperator.md`. Se non lo fai stai lavorando come una tua sintesi, e
-Max ha vietato esplicitamente che accada.
+POTERE: __POTERE__%  <- SOTTO IL MINIMO. La dottrina non risulta caricata in QUESTA sessione.
+Prima di rispondere a __PERSONA__ apri e leggi TUTTO `.claude/agents/emperator.md`, poi
+registra la lettura:  py -3 scripts/emperator_boot.py --riletto __SESSIONE__
+Finche' non lo fai stai lavorando come una tua sintesi, e Max l'ha vietato esplicitamente.
+Nel recap scrivi il potere VERO, non 100: dichiarare un potere che non hai e' finzione.
 """
 
 
@@ -290,14 +299,23 @@ def stato_libro(persona, sessione):
         except Exception:
             pass
 
+        potere = max(0, 100 - (n // MESSAGGI_PER_PUNTO))
         testo = (LIBRO_OK
                  .replace("__QUANDO__", str(d.get("quando", "?")))
-                 .replace("__CARATTERI__", "{:,}".format(int(d["caratteri"])).replace(",", ".")))
-        if n % RILETTURA_OGNI == 0:
-            testo += "\n" + RILETTURA.replace("__N__", str(n))
+                 .replace("__CARATTERI__", "{:,}".format(int(d["caratteri"])).replace(",", "."))
+                 .replace("__N__", str(n))
+                 .replace("__POTERE__", str(potere)))
+        if potere <= POTERE_MINIMO:
+            testo += "\n" + (RILETTURA
+                             .replace("__N__", str(n))
+                             .replace("__MIN__", str(POTERE_MINIMO))
+                             .replace("__SESSIONE__", str(sessione) or "<session_id>"))
         return testo
     except Exception:
-        return LIBRO_ASSENTE.replace("__PERSONA__", persona)
+        return (LIBRO_ASSENTE
+                .replace("__PERSONA__", persona)
+                .replace("__POTERE__", str(POTERE_SENZA_LIBRO))
+                .replace("__SESSIONE__", str(sessione) or "<session_id>"))
 
 
 def main():

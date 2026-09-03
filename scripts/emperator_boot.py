@@ -119,6 +119,20 @@ e resta valida per tutta la sessione.
 """
 
 
+def riletto(sessione):
+    """Azzera il contatore: il libro e' stato riaperto e riletto ADESSO.
+
+    Lo invoca Emperator stesso dopo una rilettura (il comando esatto glielo passa la
+    sveglia, gia' compilato col session_id). Serve perche' il potere torni a 100 su una
+    misura vera — un contatore azzerato senza aver letto sarebbe una bugia, e le bugie
+    sui numeri sono la cosa che la Legge Suprema vieta (dottrina §3).
+    """
+    libro = leggi_libro()
+    scrivi_marcatore(len(libro), sessione)
+    print("EMPERATOR: rilettura registrata — potere 100%%, %d caratteri." % len(libro))
+    return 0
+
+
 def main():
     # Claude Code passa session_id nel payload del hook. Senza, si ricade su una
     # chiave generica: meglio un segnale grezzo che nessun segnale.
@@ -167,6 +181,10 @@ def main():
 
 if __name__ == "__main__":
     try:
+        # `--riletto <session_id>`: non e' un avvio di sessione, e' la registrazione
+        # di una rilettura fatta a mano dentro la conversazione.
+        if len(sys.argv) >= 2 and sys.argv[1] == "--riletto":
+            sys.exit(riletto(sys.argv[2] if len(sys.argv) > 2 else ""))
         sys.exit(main())
     except Exception as exc:  # non si rompe MAI l'apertura della sessione
         eh._log_guasto(exc)
