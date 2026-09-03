@@ -3,9 +3,14 @@
   "canale_predefinito": "legamidiamore",
   "coda": [
     {
+      "video_sorgente_id": "chVKOBlEpDI",
+      "canale": "legamidiamore",
+      "nota": "ADR-021 (2026-09-03): script gia' scritto il 23/8, destinazione @Legamidiamore, mai messo in coda — trovato fermo senza motivo tecnico durante l'audit del piano. 9,7 minuti stimati (~1358 parole), sopra il gate reale DURATA_MINIMA_S=480s (regolatori.py). Strategia A (fonte @PsicologiaFemminile-f8c, 7.8 viste/ora reali). Zero costo di scrittura: pronto a produrre subito."
+    },
+    {
       "video_sorgente_id": "CxdlEsEnZ9g",
       "canale": "legamidiamore",
-      "nota": "Script adattato pronto (CP-20260806-001, primo script reale @Legamidiamore). Sorgente competitor @PsicologiaFemminile-f8c, 13.000 viste / 17.8 viste-ora, in cache dal 2026-08-06."
+      "nota": "Script adattato pronto (CP-20260806-001, primo script reale @Legamidiamore). Sorgente competitor @PsicologiaFemminile-f8c, 13.000 viste / 17.8 viste-ora, in cache dal 2026-08-06. Gia' prodotto e pubblicato il 2026-09-03 (CP-20260903-013) — voce lasciata per storico, la coda la salta da sola."
     },
     {
       "video_sorgente_id": "eax7OPi1q0M",

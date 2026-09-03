@@ -7,6 +7,21 @@
     "giorni": 30
   },
   "totale_video": 70,
+  "_revisione_20260903": {
+    "data": "2026-09-03",
+    "rif": "ADR-021",
+    "motivo": "a giorno 8, 2 video prodotti su 19 pianificati (89.5% ritardo), causa reale isolata: coda_produzione.json accetta solo script scritti a mano, ne e stato scritto uno solo dal lancio del piano (27/8). Non e un problema di qualita delle 3 strategie, e un problema di capacita di scrittura mai misurata prima di promettere 70/30gg.",
+    "decisione": "le 3 strategie non partono piu in parallelo. Sequenza: A sola finche non tiene >=3 video/settimana per 3 settimane consecutive, poi si riapre B, poi eventualmente C (con un secondo controllo di tono, non solo quello del 26/8).",
+    "strategia_A": "ATTIVA — unica strategia in produzione da oggi",
+    "strategia_B": "IN PAUSA — riapre dopo 3 settimane di cadenza A sostenuta, non cancellata",
+    "strategia_C": "IN PAUSA — riapre dopo B, con secondo controllo di tono obbligatorio prima di riprendere volume (40% del piano originale su un tema sensibile)",
+    "volume_70_30gg": "sospeso come target immediato: resta orizzonte di lungo periodo (100 candidati pool A), il target operativo ora e la cadenza reale misurata settimana per settimana",
+    "prossima_verifica": "2026-09-24 — se A ha tenuto >=3 video/settimana per 3 settimane, riapre B; altrimenti si rivede di nuovo il piano",
+    "fix_collaterali_stesso_giro": [
+      "chVKOBlEpDI.md aggiunto a coda_produzione.json (script pronto dal 23/8, mai messo in coda)",
+      "memory/copy_intelligence_legamidiamore.json creato (non esisteva, run_phase_3 lo leggeva a vuoto)"
+    ]
+  },
   "strategie": {
     "A": {
       "nome": "Segnali & Decodifica",
