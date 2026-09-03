@@ -1,4 +1,4 @@
-## 🎨 2026-09-03 — EMPERATOR: Brand Guidelines CCM consegnate e archiviate — CP-20260903-010
+## 🎨 2026-09-03 — EMPERATOR: Brand Guidelines CCM consegnate e archiviate — CP-20260903-011
 
 Il lancio di Claude Code Mastery ha il suo documento di marca: **18 pagine, 15 capitoli**, in
 `company/02-info-business/ccm/brand/`. Rigenerabile con `python build_brand_guidelines.py`.
