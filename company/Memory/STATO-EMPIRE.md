@@ -1,9 +1,46 @@
-## ⚠️ COORDINAMENTO — 2026-09-03 20:5x — EMPERATOR riprende EMP-QQ2R, build grosso in corso
+## 👑 2026-09-03 21:3x — EMPERATOR: 3 sentinelle morte recuperate, EMP-QQ2R avanza
 
-3 sentinelle in swarm parallelo su `SKILL & Agenti/Empire Studio Suite/empire-studio/runs/`:
-`max17-v07-rizzo-prompt`, `max17-v11-roberts-design`, `max17-v15` (CFO AI, la piu' pesante —
-524 frame mai visti + `confronto-tesoreria.md` da scrivere). Nessuno tocchi queste 3 cartelle
-finche' non arriva CP con esito. Codice di ripresa: **EMP-QQ2R**.
+Swarm di 3 agenti paralleli ha chiuso end-to-end i 3 video bloccati da limite di sessione:
+Rizzo (loop engineering), Roberts (7 Claude Design Skills), CFO-AI (Giovanni Beggiato).
+Dettaglio: CP-20260903-014/015/017. Wiki: 3 nuove `sources/` + 1 nuova `tools/Tool_Tesoreria_Digital_Empire.md`.
+
+**Deliverable atteso da Max consegnato**: `runs/max17-v15/confronto-tesoreria.md` — confronta
+il CFO artificiale del video con la Tesoreria costruita oggi (ADR-020). 5 consigli concreti,
+nessuna patch applicata (fuori perimetro, decide Max): soglie in codice, campo data-scadenza
+scadenzario, verifica automatica su risposte in prosa, test di determinismo, terzo tipo di
+dato "parametro esterno".
+
+**Difetto sistemico trovato 2 volte** (Rizzo + Roberts, sessioni diverse): sentinelle morte
+dichiaravano lavoro fatto (patch, N frame coperti) non vero sul disco. Corretto caso per
+caso, ma serve un controllo strutturale — non ancora costruito.
+
+**RIPRESA DA** (EMP-QQ2R, invariata): 4 video con frame pronti mai guardati (v12,v13,v14,v16,
+max 2-3 sentinelle in parallelo), poi il mostro Beggiato-agenzia 4h17. Sul resto — sito
+agenzia (CTA/GA4/Clarity/legale/F3) e "fattura Experium"/3 prodotti CCM — ancora bloccato
+su Max, invariato.
+
+---
+
+## 📊 2026-09-03 21:3x — EMPERATOR: analisi completa @Legamidiamore — CP-20260903-016
+
+Ordine di Max: non solo produrre, anche analizzare — contenuti, SEO, analytics, competitor,
+strategie del piano. Report unico in
+`YOUTUBE-AUTOMATION-FACTORY/06-DASHBOARD-E-METRICHE/ANALISI-COMPLETA-20260903.md`.
+
+**Scoperta che ribalta la lettura**: il canale non e' nuovo — 3.003.036 view lifetime, 14.810
+iscritti, picco virale ago2024-inizio2025 poi crollo quasi verticale. Gli ultimi 28gg (13.156
+view) sono 6.300 sotto la media storica: si sta rianimando un canale caduto, non partendo da zero.
+Trovato anche un rebrand silenzioso (intero catalogo storico ritradotto EN→IT dopo il 29/8, mai
+misurato) proprio nella finestra del calo.
+
+**Numeri veri vs creduti**: SEO score dichiarato 100, reale ricalcolato 61,2/100 (sottotitoli
+assenti, confermato in Studio). Dichiarazione compliance "AI use" mai data. Piano 70 video:
+89,5% di ritardo giorni 1-8, Strategie B e C ferme a zero. 2 video pronti fermi in Privato senza
+motivo. `memory/video_prodotti.json` da riscrivere (3 voci su 5 estranee al canale).
+
+**RIPRESA DA**: (1) Max decide quali delle 8 raccomandazioni eseguire (le due a costo zero:
+pubblicare i 2 video fermi, dichiarare AI-use); (2) tutti i debiti gia' aperti in CP-013 restano
+validi. Vedi [CP-20260903-016](checkpoints/CP-20260903-016.md).
 
 ---
 

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "KA-001",
+    "tipo": "regola",
+    "contenuto": "Impianto architetturale del sistema AI CFO in tre fasi nettamente separate: 1) Estrazione - solo dati grezzi da QuickBooks salvati su disco, nessun calcolo; 2) Calcolo deterministico - un motore Python (non l'AI) fa tutte le somme, divisioni, punteggi; 3) Interpretazione - solo dopo, un agente AI (skill ai-cfo) legge i numeri gia' calcolati e li trasforma in report, verificato da uno script anti-invenzione che blocca la consegna se un numero non risale a un dato calcolato davvero.",
+    "fonte": "sno_IcNbYFM#0:00-2:59",
+    "frame": "frame-046.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-002",
+    "tipo": "regola",
+    "contenuto": "Principio dichiarato piu' volte nel video: 'il codice fa i conti, l'AI li interpreta'. Motivazione tecnica esplicita: il codice non consuma token per fare aritmetica (sono formule matematiche), e passa da 'stocasticita'' a 'determinismo' - un LLM indovina il token successivo con una probabilita' di sbagliare diversa da zero, mentre il codice fa sempre la stessa identica operazione.",
+    "fonte": "sno_IcNbYFM#21:01-22:17",
+    "frame": "frame-241.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-003",
+    "tipo": "numero",
+    "contenuto": "Demo del report finale (CFO Review, azienda fittizia Vento Logistica S.r.l. - Verona, dati al 22 agosto 2026, fonte Command Center/QuickBooks Online, periodo 12 mesi mobili): 5 CFO Alert con badge di gravita'. CRITICO: clienti pagano 93 giorni in media (76 un anno fa), 18 giorni oltre soglia 75 valgono 211.635 euro fermi nei crediti. CRITICO: esposizione 132.727 euro su cliente NordEst Commerce contro soglia 60.000, 19 fatture aperte di cui 43.863 gia' scadute. ALTO: 31% dei crediti gia' scaduto (328.028 su 1.074.203 aperti, limite 25%). ALTO: altre due esposizioni sopra soglia (ValDistribuzione 80.984, GardaMetal 61.136). MEDIO: NordEst Commerce vale il 12% del fatturato, la sua perdita toglierebbe 229.353 euro di margine.",
+    "fonte": "sno_IcNbYFM#1:16 (frame statico) + conferma finale a 32:04-32:36",
+    "frame": "frame-020.png,frame-490.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-004",
+    "tipo": "numero",
+    "contenuto": "Executive summary del report demo: fatturato 12 mesi 4.198.187 euro (+17,4%), EBITDA +41,3% a 442.393 euro, cassa disponibile 205.053 euro (3,9 mesi di costi fissi). Margine mensile rotto a gennaio: da 26,84% (dicembre) a 20,61% (gennaio), mai piu' tornato sopra 25%, ultimo mese pieno al 22,68%. Media 12 mesi 25,53% nasconde il problema perche' contiene ancora il buon secondo semestre 2025. Divario fra 22,68% e la media vale 119.648 euro/anno. Giorni di incasso passati da 76,5 a 93,4, immobilizzando altri 123.070 euro. Frase di sintesi: 'Non e' un problema commerciale: vendiamo di piu', al prezzo sbagliato, e incassiamo piu' tardi.'",
+    "fonte": "sno_IcNbYFM#1:16 (frame statico)",
+    "frame": "frame-020.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-005",
+    "tipo": "metodo",
+    "contenuto": "Prima di costruire qualsiasi cosa, viene mostrata la fonte dati reale: QuickBooks Online Sandbox con PNL, spese pagate/da pagare, Accounting, Receipts, transazioni bancarie, e sezione Sales/Get Paid con le fatture clienti (importo dovuto, importo mandato, data di scadenza attesa, stato attivita'). Dichiarato esplicitamente come 'source of truth': qualsiasi cosa venga fatta con l'AI deve rispecchiare esattamente questi dati.",
+    "fonte": "sno_IcNbYFM#3:53-4:49",
+    "frame": "frame-074.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-006",
+    "tipo": "comando",
+    "contenuto": "Registrazione app QuickBooks per l'accesso API: developer.intuit.com/dashboard, sezione 'My Apps Dashboard', creazione nuova app con permessi Accounting, ottenimento di Client ID e Client Secret. Passaggio critico dichiarato: prendere il redirect URI dalla sezione Settings dell'app e impostarlo a http://localhost:8000/callback, altrimenti QuickBooks non risponde alla richiesta OAuth.",
+    "fonte": "sno_IcNbYFM#5:01-5:58",
+    "frame": "frame-077.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-007",
+    "tipo": "architettura",
+    "contenuto": "Ambiente di sviluppo usato: non la CLI 'Claude Code' da terminale ma la app desktop Claude (interfaccia scura) con una tab 'Code' dedicata al coding agentico dentro un progetto locale chiamato 'AI CFO YouTube'. La home dell'app mostra statistiche di utilizzo personale: 700 sessioni, 98.076 messaggi, 64,2M token totali, 41 giorni attivi, streak corrente 6 giorni, streak piu' lungo 24 giorni, ora di picco 9:00, modello preferito Opus 5.",
+    "fonte": "sno_IcNbYFM#6:04-6:20",
+    "frame": "frame-092.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-008",
+    "tipo": "regola",
+    "contenuto": "Motivazione dichiarata per creare uno strato intermedio comune fra i dati e i calcoli: 'I dati finanziari arriveranno da fonti diverse nel tempo. Oggi un gestionale via API, domani un export in foglio di calcolo, dopodomani un altro gestionale. Le metriche e i prompt devono cambiare quando cambia la fonte. Serve quindi uno strato intermedio che tutte le fonti attraversano e da cui esce sempre la stessa forma.'",
+    "fonte": "sno_IcNbYFM#8:16-8:59",
+    "frame": "frame-115.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-009",
+    "tipo": "prompt",
+    "contenuto": "Prompt 1 (dal documento Notion 'AI CFO - tutti i prompt'): 'Costruisci il modello dati di un sistema di analisi finanziaria in Python usando la libreria standard' (nessuna dipendenza esterna). Contesto nel prompt: dati finanziari da fonti diverse nel tempo, serve strato intermedio comune. Richiede: quattro dataclass 'non negotiable' (voce=stringa, descrizione, importo=float, sempre nello stesso formato), funzioni di collegamento, e due funzioni obbligatorie che devono restituire la contabilita': carica_da_csv e carica_da_quickbooks.",
+    "fonte": "sno_IcNbYFM#7:32-8:00 (Notion, frame statico)",
+    "frame": "frame-115.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-010",
+    "tipo": "prompt",
+    "contenuto": "Prompt 2 - 'Collegare QuickBooks e scaricare i dati' (Notion): tre parti, autenticazione OAuth 2.0, classe client Python per le chiamate API, ed estrazione pura senza calcoli. Frase chiave: 'Al momento non vogliamo ancora fare dei conti perche' vogliamo tenere le due fasi abbastanza distinte, altrimenti rischiamo di andare a far allucinare il nostro modello.' Cose da estrarre: piano dei conti, clienti, fornitori, articoli, fatture di vendita, incassi.",
+    "fonte": "sno_IcNbYFM#10:15-13:29",
+    "frame": "frame-157.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-011",
+    "tipo": "regola",
+    "contenuto": "Motivazione per salvare il dato grezzo su disco invece di ricalcolare sempre dall'API: 'Avere il dato grezzo sul disco permette di rifare i conti senza chiamare le API... se un numero non torna, apri il file grezzo.' Regola generalizzata per la piccola-media impresa: 'i dati non sono poi cosi' tanti da non poter essere contenuti dentro al PC' (a differenza di aziende con software SQL e volumi enormi, dove serve tutto in cloud). Questo e' dichiarato un trucco per efficientare i token.",
+    "fonte": "sno_IcNbYFM#11:48-13:19",
+    "frame": "frame-157.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-012",
+    "tipo": "comando",
+    "contenuto": "Tre comandi terminale lanciati in sequenza dal terminale integrato nell'app Claude per collegare QuickBooks: (1) apre il consenso OAuth nel browser e salva il token; (2) verifica stampando il nome dell'azienda collegata; (3) scarica i file grezzi. Output confermato: 'tutto collegato', poi nome azienda confermato, poi 'estrazione completata'.",
+    "fonte": "sno_IcNbYFM#14:51-16:44",
+    "frame": "frame-165.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-013",
+    "tipo": "regola",
+    "contenuto": "Cinque input finanziari rilevanti che non esistono nel gestionale (QuickBooks) e vanno aggiunti a mano in file separati: sconto contrattuale concesso a uno specifico cliente (e' nel contratto, non nel gestionale), margine di listino per servizio, budget dell'anno redatto dalla leadership in un foglio a parte, fido bancario concesso per cliente (sta nella lettera della banca).",
+    "fonte": "sno_IcNbYFM#17:03-18:11",
+    "frame": "frame-217.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-014",
+    "tipo": "regola",
+    "contenuto": "Dichiarazione di postura sull'AI nel lavoro finanziario: 'Non stiamo parlando di rimuovere persone o rimuovere i CFO, stiamo parlando di strumenti che, se vengono utilizzati correttamente, possono aumentare drasticamente l'impatto che un determinato CFO, un determinato team di analisi finanziaria puo' avere all'interno della nostra azienda.' Ripetuta a fine video: 'parliamo qui di AI enhancement e non di rimpiazzare lavori vari', con la decisione finale sempre affidata a un umano.",
+    "fonte": "sno_IcNbYFM#17:53-18:16 e 34:30-34:45",
+    "frame": "frame-217.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-015",
+    "tipo": "prompt",
+    "contenuto": "Prompt 3 - 'Il motore delle metriche' (Notion, FASE 2): prompt lungo che richiede le funzioni del motore di calcolo deterministico - conto economico, conto economico per periodo, scadenziario/documenti scaduti, punteggio di rischio clienti, redditivita' per servizio, fra le altre. Include un vincolo esplicito di riproducibilita' bit-per-bit: 'a parita' di dati due esecuzioni devono eseguire un output identico riga per riga, dove ordini per punteggio aggiungi un criterio di parita' (nome, ecc.)'.",
+    "fonte": "sno_IcNbYFM#21:53-22:00",
+    "frame": "frame-241.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-016",
+    "tipo": "regola",
+    "contenuto": "Il test di determinismo ha trovato un bug reale (documentato per iscritto nel Notion, non solo dichiarato a voce): confrontando 12 mesi di budget contro 8 mesi di consuntivo usciva uno scostamento del -40,8% (falso, un calendario non un risultato). Corretto usando solo i mesi in comune: budget anno intero 4.431.983, budget periodo confrontabile (8 mesi) 2.711.483, consuntivo periodo 2.625.149, scostamento corretto -86.334 euro (-3,2%). Seconda correzione: agosto 2026 tagliato al giorno 20, introdotti i flag mese_parziale e consuntivo_al. Terza correzione: doppio arrotondamento di una percentuale sul fatturato in punti diversi del codice, corretto arrotondando una volta sola. Determinismo confermato con la stessa impronta SHA-256 su tutte e 13 le funzioni, prima e dopo le modifiche.",
+    "fonte": "sno_IcNbYFM#22:55-23:20 (voce) + Notion (frame statico)",
+    "frame": "frame-343.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-017",
+    "tipo": "regola",
+    "contenuto": "Due decisioni di progetto dichiarate esplicitamente nel documento Notion sul motore delle metriche: il punteggio di rischio e' parziale e lo dichiara (il fido non e' compilato, quindi la componente esposizione - 30 punti su 100 - non e' calcolabile; il punteggio si normalizza sul massimo effettivamente calcolabile invece di far sembrare tutti a basso rischio); le percentuali di recupero attese sono scritte in una variabile RECUPERO_ATTESO 'in cima al modulo, non dentro le formule' - motivazione: 'Un numero scritto dentro una formula diventa invisibile: chi legge il risultato non ha modo di sapere che una parte di quel risultato e' una scelta e non una misura.'",
+    "fonte": "sno_IcNbYFM#Notion, frame statico",
+    "frame": "frame-353.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-018",
+    "tipo": "regola",
+    "contenuto": "Limite dichiarato della funzione redditivita_servizi(): restituisce margini fra 25,2% e 26,0% su tutti e otto i servizi perche', senza margini di listino dichiarati per servizio, il ricarico viene distribuito in proporzione ai ricavi - il codice stesso porta un commento 'NON DICE' a chiarirlo esplicitamente nel codice/documentazione.",
+    "fonte": "sno_IcNbYFM#Notion, frame statico",
+    "frame": "frame-353.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-019",
+    "tipo": "metodo",
+    "contenuto": "Le soglie di rischio/allerta dipendono dal settore, non sono universali: un'azienda di lusso dovrebbe avere un target di profitto di almeno il 30%, un'azienda di trasporto ha margini piu' bassi per via dei costi operativi (vicino al 10%), una farmacia pura sta fra il 5-10% ma con reparto cosmesi puo' arrivare al 25-30%. Ogni azienda deve definire le proprie soglie in base al proprio settore.",
+    "fonte": "sno_IcNbYFM#25:12-25:49",
+    "frame": "frame-353.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-020",
+    "tipo": "prompt",
+    "contenuto": "Prompt 4 - 'Allerte e Command Center' (Notion): 'Cosa fai: insegni al motore quando un numero e' un problema, e impacchetti tutte le tabelle in un file solo che l'agente leggera'.' 'Perche': un alert senza soglia scritta non e' un alert, e' un'opinione. Qui le soglie diventano un elenco visibile che chiunque puo' discutere. E' anche il confine del sistema: da questo punto in poi non si calcola piu' niente, si interpreta soltanto.' Chiede di aggiungere al motore la funzione alert(contabilita) e scrivere costruisci_command_center.py.",
+    "fonte": "sno_IcNbYFM#Notion, frame statico",
+    "frame": "frame-364.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-021",
+    "tipo": "numero",
+    "contenuto": "Dieci soglie di allerta dichiarate per intero nel prompt 4 (Notion, dizionario in cima al modulo con un commento per ognuna): concentrazione su singolo cliente 20% (attenzione gia' dal 10%); esposizione su singolo cliente 60.000 EUR; quota di crediti gia' scaduti 25%; crediti oltre 90 giorni 12% del totale; giorni medi di incasso 75; ciclo di cassa 60 giorni; calo del margine lordo anno su anno 1,5 punti; EBITDA minimo 6% dei ricavi; copertura dei costi fissi 3 mesi; scostamento dal budget 10%.",
+    "fonte": "sno_IcNbYFM#Notion, frame statico",
+    "frame": "frame-415.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-022",
+    "tipo": "regola",
+    "contenuto": "Ogni alert deve avere sei campi obbligatori: gravita' (critico/alto/medio), titolo (una frase che si legge da sola), valore (il numero misurato, col confronto), soglia (il limite superato), impatto (cosa significa in euro o in giorni, quantificato), azione (cosa si fa, in modo verificabile).",
+    "fonte": "sno_IcNbYFM#Notion, frame statico",
+    "frame": "frame-415.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-023",
+    "tipo": "regola",
+    "contenuto": "Beggiato segnala una tensione di coerenza al modello: aveva scritto per metriche.py 'nessun aggettivo, nessuna raccomandazione' ma il campo azione degli alert ora contiene frasi come 'vanno chiamati i dieci clienti con lo scaduto piu' alto entro questa settimana'. Il modello aggiorna la docstring del modulo per dichiarare esplicitamente che un alert scatta solo quando un numero misurato supera una soglia scritta, e che il testo dell'alert e' la soglia 'vestita' col numero, non un'opinione libera.",
+    "fonte": "sno_IcNbYFM#26:32 (frame statico)",
+    "frame": "frame-399.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-024",
+    "tipo": "architettura",
+    "contenuto": "FASE 3. L'agente (Notion): 'Il motore adesso produce numeri. Manca chi li legge, e servono due teste diverse, non una.' Due skill gia' pronte, scaricabili dalla community privata 'Avanguardia Plus' su Skool (skool.com/avanguardia-plus, lezione 'AI CFO'), non costruite da zero nel video ma scaricate come .zip e installate.",
+    "fonte": "sno_IcNbYFM#Notion, frame statico",
+    "frame": "frame-360.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-025",
+    "tipo": "architettura",
+    "contenuto": "Skill 'analista-finanziario': 'estrae da QuickBooks, normalizza e calcola. Produce le dodici tabelle del Command Center e si ferma li'. Nessun aggettivo, nessuna raccomandazione: i giorni per farsi pagare sono 93 e' il suo lavoro, i giorni per farsi pagare sono preoccupanti no.' Skill 'ai-cfo': 'non tocca mai i conti. Da' per fatta l'analisi e comincia dopo: legge le dodici tabelle, decide qual e' la cosa piu' importante, la traduce in impatto sulla cassa o sul margine, e la trasforma in azioni con un responsabile e una data. Consegna sempre e solo una dashboard HTML.' Frase evidenziata: 'La linea fra le due e' il punto di tutto il sistema. Se una sconfina, o i numeri diventano opinioni, o le opinioni diventano numeri.' Ogni skill porta anche sette documenti di riferimento (come ragiona un CFO con esempi, quadri di analisi, glossario delle metriche, specifica della dashboard, formule con i loro limiti, modello dati, trappole note di QuickBooks, modello HTML della dashboard).",
+    "fonte": "sno_IcNbYFM#Notion, frame statico",
+    "frame": "frame-360.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-026",
+    "tipo": "metodo",
+    "contenuto": "Installazione delle skill mostrata dal vivo: prompt in chat 'Hey, all'interno del mio desktop ci sono delle skill.zip che mi piacerebbe che tu importassi all'interno di questo progetto. Sono una lista finanziaria e un AI CFO. Dimmi una volta che lo hai fatto.' Claude cerca sul Desktop, trova skill-ai-cfo.zip, elenca il contenuto prima di estrarlo dichiarando il motivo esplicito ('sono istruzioni che finirebbero nel mio contesto, quindi le guardo prima di installarle'), verifica che siano legittime e coerenti col sistema, le installa come skill di progetto: 10 file in tutto dentro .claude/skills/, struttura ai-cfo/{assets/, references/, SKILL.md} e analista-finanziario/{references/, SKILL.md}.",
+    "fonte": "sno_IcNbYFM#28:40-29:33",
+    "frame": "frame-445.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-027",
+    "tipo": "file",
+    "contenuto": "Contenuto del SKILL.md della skill ai-cfo, letto per intero a schermo. Name: ai-cfo. Description: 'Direttore finanziario che legge analisi gia' fatte e le trasforma in decisioni. Usa ogni volta che arrivano risultati finanziari da interpretare: KPI, conto economico, margini, scadenziario clienti o fornitori, punteggio di rischio, previsione incassi, ciclo del circolante, budget contro consuntivo, alert, pacchetti di reporting direzionale o export di dashboard. Si attiva anche a frasi come cosa vuol dire questo per l'azienda, guarda questi numeri da CFO, cosa devo fare, com'e' andato il mese. NON fa contabilita', non registra documenti, non riconcilia, non ricalcola: presuppone che l'analisi sia gia' stata fatta.'",
+    "fonte": "sno_IcNbYFM#29:44 (frame statico)",
+    "frame": "frame-447.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-028",
+    "tipo": "regola",
+    "contenuto": "Claude stesso segnala una discrepanza fra le skill scaricate e il progetto reale prima di procedere: le skill descrivono percorsi diversi da quelli reali (labs/ai-cfo/engine/... nelle skill contro analisi/ + costruisci_command_center.py nella radice del progetto reale), e citano due script che non esistono ancora nel progetto: verifica_dati.py (dichiarato dalla skill come 'passo 4 della procedura': controlla le coerenze contabili e blocca la consegna se un test fallisce) e pubblica_su_sheets.py (con un suo file dati/parametri/fogli_google.json). Beggiato chiede di allineare le skill al codice reale scrivendo verifica_dati.py prima di proseguire.",
+    "fonte": "sno_IcNbYFM#30:24 (frame statico)",
+    "frame": "frame-461.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-029",
+    "tipo": "prompt",
+    "contenuto": "Prompt 5 - 'La dashboard' (Notion): 'Cosa fai: produci la pagina che finisce davanti alla direzione, un file HTML solo, che si apre anche senza rete.' 'Perche': chi dirige la legge nei primi trenta secondi oppure non la legge. Quindi la difficolta' non e' metterci dentro tutto: e' togliere tutto quello che non porta a una decisione. Meta' di questo prompt dice cosa NON mettere.' Output: salva in output/cfo-review-AAAA-MM-GG.html e apri.",
+    "fonte": "sno_IcNbYFM#Notion, frame statico",
+    "frame": "frame-364.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-030",
+    "tipo": "prompt",
+    "contenuto": "Prompt 6 - 'Il controllo antinvenzione', dichiarato a voce come 'il prompt piu' importante di tutti - e' quello che ti permette di mettere la dashboard davanti a qualcuno senza doverla accompagnare con dei distinguo.' Chiede di scrivere verifica_dashboard.py, che controlla che ogni numero scritto nella dashboard esista davvero nei dati, e insegna a risalire a un numero quando c'e' un dubbio.",
+    "fonte": "sno_IcNbYFM#31:41-31:53 (voce) + Notion",
+    "frame": "frame-482.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-031",
+    "tipo": "metodo",
+    "contenuto": "PARTE A del prompt anti-invenzione - 'il cancello automatico', 6 passi dichiarati per intero: (1) estrai ogni numero dal testo dell'HTML, ignorando CSS, SVG e attributi (coordinate e larghezze, non dati); (2) costruisci l'insieme dei valori noti scavando ricorsivamente in command_center.json a qualunque profondita'; (3) espandi l'insieme con le combinazioni elementari che un CFO fa a mente (valore x100 e /100 per percentuali, valore assoluto, arrotondamenti, migliaia, giorni x fatturato giornaliero, punti percentuali x ricavi, differenze e somme fra coppie di KPI); (4) ignora i numeri che compaiono per forza e non sono dati (anni, giorni del mese, percentuali di sezione, numeri delle barre); (5) confronta con tolleranza relativa dello 0,6%; (6) elenca quello che non trova, va guardato a mano, uno per uno, e o si giustifica o si corregge. Esce con codice 1 se resta anche un solo numero senza origine, bloccando la pipeline.",
+    "fonte": "sno_IcNbYFM#Notion, frame statico",
+    "frame": "frame-482.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-032",
+    "tipo": "regola",
+    "contenuto": "Motivazione esplicita per il doppio cancello (codice deterministico + controllo anti-invenzione separato): 'Perche' dobbiamo mettere un altro cancello di verifica? Perche' c'e' l'interpretazione del dato. Non vogliamo che nella parte in cui ci siamo distaccati dal codice deterministico allora abbiamo cominciato poi ad introdurre degli errori.'",
+    "fonte": "sno_IcNbYFM#31:33-31:57",
+    "frame": "frame-482.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-033",
+    "tipo": "numero",
+    "contenuto": "Tabella margine per linea di servizio del risultato finale (8 righe, ricavi/quota/margine): Trasporto nazionale 2.014.763 euro/25,9%/25,18%; Groupage nazionale 1.695.771/21,8%/25,32%; Trasporto internazionale UE 1.535.869/19,8%/25,17%; Deposito e magazzino 871.923/11,2%/25,64%; Handling, picking, imballo 633.863/8,2%/25,33%; Pratiche doganali 499.293/6,4%/25,99%; Distribuzione last mile 336.964/4,3%/25,22%; Consulenza logistica 187.290/2,4%/25,44%. Nota nella pagina: margini tutti fra 25,17% e 25,99% perche' il costo del venduto e' ripartito in proporzione ai ricavi, non usabile per decidere finche' i margini di listino non sono dichiarati.",
+    "fonte": "sno_IcNbYFM#32:04-32:28 (frame statico)",
+    "frame": "frame-484.png,frame-488.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-034",
+    "tipo": "numero",
+    "contenuto": "Sezione 5-CREDITI del risultato finale: 'Un milione fuori, un terzo gia' in ritardo'. Scadenziario crediti 1.074.203 euro aperti totali a barre per fascia di ritardo. Tabella 'Da chiamare per primi' con 6 clienti sintetici: TartaroComponenti 11.708 euro/625gg ('ferma dal 2024, qui si decide se svalutare'); CastelDesign 8.400/494gg; BentivoglioOfficine 8.871/311gg; un cliente a 16.809/49gg ('importo piu' alto della lista, ritardo ancora recuperabile'); NordEst Commerce 13.782/68gg ('il cliente piu' grande, la telefonata la fa la direzione'); GardaTrade 4.101/441gg ('importo piccolo ma vecchissimo: chiudere la posizione').",
+    "fonte": "sno_IcNbYFM#33:52-34:00 (frame statico)",
+    "frame": "frame-509.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-035",
+    "tipo": "numero",
+    "contenuto": "Sezione 4-MARGINE del risultato finale: '4 - MARGINE, Il margine si e' rotto a gennaio, e la media annuale lo nasconde' - grafico mensile del margine lordo con marcatore 'rottura gennaio', media pre-rottura 26,7% vs media post-rottura 22,8%.",
+    "fonte": "sno_IcNbYFM#34:08 (frame statico)",
+    "frame": "frame-513.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-036",
+    "tipo": "architettura",
+    "contenuto": "La demo del report mostrata all'inizio del video (1:16, frame-020) e il risultato finale ricostruito in diretta e mostrato a fine video (32:04-32:36, frame-484/488/490) hanno numeri identici cifra per cifra (93 giorni, NordEst 132.727 euro, 31% crediti, fatturato 4.198.187 euro, EBITDA 41,3%/442.393 euro...): non e' un mockup diverso mostrato per hype, e' lo stesso identico file HTML finale mostrato in anteprima e poi ricostruito davvero nel corso del video.",
+    "fonte": "sno_IcNbYFM#1:16 e 32:04-32:36 (confronto diretto fra due frame)",
+    "frame": "frame-020.png,frame-490.png",
+    "confidenza": "inferito"
+  },
+  {
+    "id": "KA-037",
+    "tipo": "regola",
+    "contenuto": "Nel prompt 3 e nel prompt di aggiornamento parametri, il flusso non e' un prompt unico eseguito ciecamente: Claude fa domande di chiarimento e Beggiato risponde a botta e risposta (es. 'senza questo margine i margini per servizio escono tutti uguali. Come procediamo? te li do per servizio, unico margine per tutti, lascia vuoto' - risposta: darli per i principali).",
+    "fonte": "sno_IcNbYFM#19:12-19:41",
+    "frame": "frame-249.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-038",
+    "tipo": "numero",
+    "contenuto": "Risultato dichiarato dopo l'integrazione dei parametri esterni sui clienti principali: 'i primi 10 valgono il 47% del fatturato' e il sistema comincia a 'elaborare qualche pattern all'interno del DB'.",
+    "fonte": "sno_IcNbYFM#19:57-20:11",
+    "frame": "frame-255.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-039",
+    "tipo": "regola",
+    "contenuto": "Raccomandazione esplicita sull'uso del contesto della chat: quando si supera il 25-20% del contesto occupato, bisogna usare il comando /compact per compattare il contesto e permettere all'AI di agire in modo piu' efficiente - dichiarata come best practice anche se non applicata in diretta durante la registrazione.",
+    "fonte": "sno_IcNbYFM#26:39-27:04",
+    "frame": "frame-392.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-040",
+    "tipo": "regola",
+    "contenuto": "Comando terminale eseguito per rigenerare il command center dai dati QuickBooks: cd \"/Users/giovannibeggiato/Desktop/AI CFO YouTube\" && python3 costruisci_command_center.py --da quickbooks --al 2026-08-22 - conferma che il motore di calcolo e' uno script Python invocabile da riga di comando, separato dall'agente conversazionale.",
+    "fonte": "sno_IcNbYFM#26:04 (frame statico)",
+    "frame": "frame-392.png",
+    "confidenza": "osservato"
+  }
+]

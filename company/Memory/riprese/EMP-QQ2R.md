@@ -50,25 +50,24 @@ Artem · Beggiato · Nico · Trivellato · Jay E · Belli · Herk · Barron · *
 
 ## 3. COSA È RIMASTO A METÀ
 
-**Tre sentinelle morte insieme per limite di sessione (reset 16:30 del 2026-09-03), tutte
-a un passo dalla fine.** Il loro lavoro parziale è sul disco:
+**AGGIORNAMENTO 2026-09-03 21:3x — le 3 sentinelle morte sono state recuperate.** Swarm di
+3 agenti paralleli (`studia-rizzo`, `studia-roberts`, `sentinella-cfo-ai`), tutte chiuse
+end-to-end. Dettaglio: CP-20260903-014 (Rizzo), CP-20260903-015 (Roberts), CP-20260903-017
+(CFO-AI). Pagine wiki: `Source_Simone_Rizzo_Loop_Engineering.md`,
+`Source_Jack_Roberts_7_Claude_Design_Skills.md`, `Source_Giovanni_Beggiato_CFO_AI_Claude.md`
++ nuova `tools/Tool_Tesoreria_Digital_Empire.md`. Il deliverable speciale
+`runs/max17-v15/confronto-tesoreria.md` è scritto: 5 consigli concreti per la Tesoreria
+(soglie in codice, campo data-scadenza scadenzario, verifica automatica su risposte in
+prosa, test di determinismo, terzo tipo di dato "parametro esterno") — nessuna patch
+applicata, restano da decidere.
 
-| Sentinella | Video | Stato reale | Ultima parola prima di morire |
-|---|---|---|---|
-| `studia-rizzo` | `max17-v07-rizzo-prompt` (943 fotogrammi, prompt) | analisi scritta | *"Ora atoms.json e coverage.md"* |
-| `studia-roberts` | `max17-v11-roberts-design` (689 fotogrammi, design) | analisi scritta | *"Ora atoms.json e coverage.md"* |
-| `sentinella-cfo-ai` | `max17-v15` (524 fotogrammi, **CFO AI**) | formati letti, niente scritto | *"Ora scrivo i deliverable"* |
+**Trovato due volte lo stesso difetto sistemico** (Rizzo + Roberts, sessioni diverse): le
+sentinelle morte avevano dichiarato lavoro fatto (patch applicate, N frame coperti) che
+non risultava vero sul disco. Le sentinelle di recupero hanno verificato tutto con grep/diff
+prima di fidarsi e corretto i manifest — ma il pattern (auto-dichiarazione non verificata
+prima del crash) è **da controllare strutturalmente**, non solo corretto caso per caso.
 
-**PRIMA DI RILANCIARLE: guardare cosa c'è già sul disco.** Due su tre hanno l'analisi fatta:
-rifarla da capo sarebbe buttare via il lavoro più caro (la lettura dei fotogrammi).
-
-```bash
-ls "SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v07-rizzo-prompt/"
-ls "SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v11-roberts-design/"
-ls "SKILL & Agenti/Empire Studio Suite/empire-studio/runs/max17-v15/"
-```
-
-**Quattro video con i fotogrammi pronti e mai guardati:**
+**Quattro video con i fotogrammi pronti e mai guardati — PROSSIMI:**
 
 | Run | Titolo | Fotogrammi |
 |---|---|---|
@@ -87,12 +86,13 @@ non ho l'indirizzo da nessuna parte.
 
 ## 4. IL PROSSIMO PASSO ESATTO
 
-1. **Recuperare le tre sentinelle morte**, partendo da ciò che hanno già scritto. La più
-   preziosa è `sentinella-cfo-ai`: doveva **confrontare** il CFO artificiale del video con
-   la Tesoreria costruita oggi, e produrre `confronto-tesoreria.md` dentro
-   `runs/max17-v15/`. Quel confronto non esiste in nessun altro run.
-2. Poi i quattro con i fotogrammi pronti (v12, v13, v14, v16).
-3. Poi il mostro da 4h17.
+1. ~~Recuperare le tre sentinelle morte~~ — **FATTO 2026-09-03 21:3x**, vedi §3.
+2. **Ora: i quattro con i fotogrammi pronti (v12, v13, v14, v16).** Max 2-3 sentinelle in
+   parallelo (regola di sotto).
+3. Poi il mostro da 4h17 (Beggiato-guida-agenzia, `rvpRQD43wdY`, trascrizioni già in
+   `runs/max-17-2026-09/subs/`).
+4. Poi valutare il pattern trovato in §3 (auto-dichiarazione non verificata prima del
+   crash di sessione) — serve un controllo strutturale, non solo correzioni a mano.
 
 **Massimo 2-3 sentinelle in parallelo quando leggono immagini.** Con 3 la sessione è saltata
 due volte in due giorni.

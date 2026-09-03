@@ -1,5 +1,40 @@
 # Wiki Log — Registro operazioni
 
+## 2026-09-03 (EMPIRE STUDIO — chiusura ciclo sno_IcNbYFM, batch max17 v15, sentinella-cfo-ai ripresa)
+- INGEST (Empire Studio + Memory Empire): batch `max17`, video `sno_IcNbYFM` "Ho creato un CFO AI
+  che controlla l'azienda H24 con Claude" (Giovanni Beggiato, 34m52s, IT). Sentinella
+  `sentinella-cfo-ai` morta per limite di sessione prima ancora di iniziare a scrivere ("formati
+  letti, niente scritto") -- ripresa da zero in questa sessione: `scenes.json`/`scenes.md`
+  rigenerati (non esistevano su disco, a differenza di v01/v07), 82/226 frame unici letti a
+  gruppi di 5-6, `video-analysis.md`, `atoms.json` (40 KA), `coverage.md` scritti da zero.
+- BUG TROVATO E CORRETTO NEL TOOLING: `scripts/scene_detector.py` lanciato una prima volta coi
+  default assumeva un intervallo di estrazione di 2.0s mentre questo run usa 4.0s -- timestamp
+  di `scenes.md` dimezzati e sbagliati. Rilanciato con `--interval 4`: stessa selezione di 226
+  frame unici, timestamp corretti e coerenti con `ingest.json` (0:00-34:48).
+- CONTENUTO: sistema a tre fasi mai mescolate (estrazione da QuickBooks via OAuth -> motore di
+  calcolo deterministico Python, un test di riproducibilita' SHA-256 ha trovato 2 bug reali
+  (mismatch di calendario budget/consuntivo, doppio arrotondamento) -> interpretazione affidata
+  a due skill Claude separate, `analista-finanziario` e `ai-cfo`, con un cancello anti-invenzione
+  automatico `verifica_dashboard.py` che blocca la consegna se un numero della dashboard non
+  risale a un dato calcolato davvero). Tutti i 6 prompt del video (documento Notion pubblico)
+  recuperati e trascritti per intero.
+- DELIVERABLE SPECIALE, unico di questo run: `confronto-tesoreria.md` (non esiste in nessun
+  altro run del lotto max17) -- confronto punto per punto fra il CFO AI del video e la
+  **Tesoreria** di Digital Empire (ADR-020, nata lo stesso giorno, 2026-09-03, registro
+  verificato vuoto eseguendo `python scripts/tesoreria.py report`). 5 consigli concreti presi dal
+  video: dizionario di soglie di allerta in codice, campo data-scadenza per uno scadenzario
+  crediti reale, cancello anti-invenzione sulle risposte in prosa degli agenti Tesoreria, test di
+  determinismo/regressione su `calcola()`, terzo tipo di dato "parametro esterno" (budget/fido/
+  margini) accanto a entrate e spese. **2 pagine wiki create**
+  (`sources/Source_Giovanni_Beggiato_CFO_AI_Claude.md`, prima pagina wiki mai scritta per la
+  Tesoreria: `tools/Tool_Tesoreria_Digital_Empire.md`), index.md aggiornato (sezione nuova
+  "Finance AI & Tesoreria" + voce in "Tool & Sistemi Operativi") -> per
+  `SKILL & Agenti/Empire Studio Suite/empire-studio/knowledge/sno_IcNbYFM/` (contenuto integrale).
+- Nessuna patch a skill/agenti condivisi in questa sessione (perimetro del checkpoint `EMP-QQ2R`,
+  nessuna modifica a sistemi condivisi mentre altre due sentinelle lavoravano in parallelo sullo
+  stesso repo).
+- Checkpoint: vedi `company/Memory/checkpoints/` (numero assegnato a fine lavoro).
+
 ## 2026-09-03 (EMPIRE STUDIO — chiusura ciclo pUu4G2lINnk, batch max17 v11, sentinella studia-roberts ripresa)
 - INGEST (Empire Studio + Memory Empire): batch `max17`, video `pUu4G2lINnk` "Insane Claude
   Design Skills You Actually Need To Build Beautiful Sites" (Jack Roberts, 22m56, EN). Sentinella
