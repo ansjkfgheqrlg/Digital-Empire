@@ -1103,5 +1103,32 @@
         "motivo": "Trovate 3 sequenze di 8+ parole identiche al transcript sorgente: e' una copia, va riscritto."
       }
     ]
+  },
+  {
+    "run_id": "yt-20260904-111630-a011de",
+    "artefatto": "script",
+    "esegue_L2": "script-writer",
+    "approva_L1": "capo-copy",
+    "regolatori_L3": [
+      {
+        "regolatore": "regolatore-nicchia",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-copy",
+        "esito": "passa"
+      },
+      {
+        "regolatore": "regolatore-originalita",
+        "esito": "BLOCCO"
+      }
+    ],
+    "valida": false,
+    "blocchi": [
+      {
+        "regolatore": "regolatore-originalita",
+        "motivo": "Nessuna copia letterale, ma solo 2 elementi di valore aggiunto (minimo 3): senza valore aggiunto il video non ha ragione di esistere."
+      }
+    ]
   }
 ]

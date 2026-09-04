@@ -1,7 +1,7 @@
 # YouTube Automation Factory - Performance Dashboard
 
-- **Ultimo Run ID**: yt-20260904-110618-cd4de5
-- **Data Aggiornamento**: 2026-09-04 11:06:18
+- **Ultimo Run ID**: yt-20260904-111630-a011de
+- **Data Aggiornamento**: 2026-09-04 11:16:31
 - **Canale Target**: Legami d'Amore (`@Legamidiamore`)
 - **Video Replicato**: Pensi che non sia interessata? Guarda prima questo
 - **Idea Script (Fase 3)**: N/D (Fase 3 non raggiunta)
