@@ -50,8 +50,7 @@ persona "trovarsi vicino a te" più di una volta in contesti diversi, rispondi c
 tranquilla — un saluto, una domanda semplice — invece di far finta di niente.
 
 **3. Il suo corpo comincia a seguire il tuo.**
-C'è un canale che lavora sotto la soglia del linguaggio parlato, invisibile ma costante: gli psicologi lo
-chiamano rispecchiamento comportamentale. Quando qualcuno si sente davvero a suo agio con
+C'è un canale che lavora sotto la soglia del linguaggio parlato, invisibile ma costante: gli psicologi lo chiamano rispecchiamento comportamentale. Quando qualcuno si sente davvero a suo agio con
 un'altra persona, il suo sistema nervoso comincia ad allinearsi in modo automatico ai suoi ritmi
 fisici — cambi postura, e un attimo dopo lo fa anche lei; rallenti il tono della voce, e la sua
 cadenza si adatta. Non è imitazione consapevole: sono i neuroni specchio, che si attivano proprio

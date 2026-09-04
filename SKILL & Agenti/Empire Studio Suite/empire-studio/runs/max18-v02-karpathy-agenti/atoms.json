@@ -1,0 +1,346 @@
+[
+  {
+    "id": "KA-001",
+    "tipo": "architettura",
+    "contenuto": "Il pattern 'LLM Wiki' di Andrej Karpathy ha TRE STRATI: 1) FONTI GREZZE (trascrizioni, documenti, email: si leggono e non si toccano mai); 2) IL WIKI (note markdown collegate che l'AI aggiorna da sola, una per cliente e una per concetto); 3) LO SCHEMA (le regole su com'e' organizzato il wiki e come va mantenuto). La promessa: invece di rispiegare tutto a ogni chat, una base di conoscenza in file markdown che l'AI mantiene da sola.",
+    "fonte": "LCNk5e5EiCA#1:59-3:40",
+    "frame": "frame-017.png, frame-044.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-002",
+    "tipo": "architettura",
+    "contenuto": "Le TRE OPERAZIONI che l'AI esegue sul wiki: INGEST (materiale nuovo entra, l'AI legge e aggiorna le note), QUERY (una domanda sul business, l'AI risponde leggendo il wiki E CITA le note da cui prende la risposta), LINT (controllo delle contraddizioni, dei dati vecchi e delle note orfane senza collegamenti).",
+    "fonte": "LCNk5e5EiCA#3:41-4:32",
+    "frame": "frame-017.png, frame-075.png, frame-097.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-003",
+    "tipo": "regola",
+    "contenuto": "Divisione del lavoro dichiarata come principio del pattern: 'L'UMANO CURA LE FONTI E FA LE DOMANDE, L'AI FA IL RESTO'. L'umano non scrive le note del wiki, le fa scrivere; il suo lavoro e' curare cosa entra in fonti/ e formulare le domande.",
+    "fonte": "LCNk5e5EiCA#4:43-4:47",
+    "frame": "frame-017.png, frame-095.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-004",
+    "tipo": "fonte",
+    "contenuto": "Fonte primaria del pattern: post di Andrej Karpathy su X intitolato 'LLM Knowledge Bases' (URL a schermo x.com/karpathy/status/2039800565266...), datato dall'autore del video 'aprile 2026'. Il post descrive tre parti: Data ingest (documenti sorgente indicizzati in una directory raw/, poi un LLM 'compila' incrementalmente un wiki di file .md con riassunti, backlink e articoli per concetto), IDE (Obsidian come frontend, 'the LLM writes and maintains all of the data of the wiki, I rarely touch it directly'), Q&A ('once your wiki is big enough - e.g. mine is ~100 articles and ~400K words - you can ask your LLM agent all kinds of complex questions [...] I thought I had to reach for fancy RAG, but the LLM has been pretty good about auto-maintaining').",
+    "fonte": "LCNk5e5EiCA#0:18 + #1:48 (post letto a schermo)",
+    "frame": "frame-007.png, frame-037.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-005",
+    "tipo": "strumento",
+    "contenuto": "Karpathy usa l'estensione Obsidian Web Clipper per convertire articoli web in .md, piu' una hotkey per scaricare in locale tutte le immagini correlate cosi' che l'LLM possa referenziarle. Menziona anche plugin Obsidian per rendering alternativi (es. Marp per le slide).",
+    "fonte": "LCNk5e5EiCA#0:18 (post letto a schermo)",
+    "frame": "frame-007.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-006",
+    "tipo": "architettura",
+    "contenuto": "Struttura del Company Brain (il pattern Karpathy calato su un'azienda): company-brain/ con CLAUDE.md (lo schema), fonti/ (strato 1, intoccabile), clienti/ (il wiki, una nota per cliente), offerta/offerta.md (i prezzi, unico posto), proposte/ (il wiki, una nota per proposta generata), index.md (il catalogo, una riga per nota per categoria), log.md (il registro append-only), .claude/skills/ (le automazioni), .env (le chiavi API). Claim di sintesi: 'DAI UNA CALL, TORNA UNA NOTA'.",
+    "fonte": "LCNk5e5EiCA#5:07-6:50",
+    "frame": "frame-009.png, frame-107.png, frame-204.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-007",
+    "tipo": "prompt",
+    "contenuto": "PROMPT 1 (Company Brain), recuperato parola per parola dallo schermo, sintassi a tag pseudo-HTML: <obiettivo> 'Crea la struttura di un Company Brain seguendo il pattern LLM Wiki di Andrej Karpathy: tre strati (fonti grezze immutabili, wiki in markdown mantenuto dall'AI, schema di regole) e tre operazioni (ingest, query, lint). Il cervello e' la memoria dell'azienda: clienti, offerta e proposte vivono come note di testo collegate che Claude Code legge e aggiorna.' </obiettivo> + <struttura> (albero di cartelle con commento per ogni voce) + <CLAUDE.md deve contenere> (chi e' l'azienda, la mappa dei tre strati, il testo delle tre operazioni, le tre regole).",
+    "fonte": "LCNk5e5EiCA#0:12 + #10:09 (prompt letto a schermo in due punti)",
+    "frame": "frame-005.png, frame-204.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-008",
+    "tipo": "regola",
+    "contenuto": "REGOLA 1 del CLAUDE.md: 'i prezzi vivono SOLO in offerta/offerta.md. Mai inventare un numero, mai copiarli altrove.' E' la regola di single-source-of-truth che impedisce la deriva dei listini tra documenti generati.",
+    "fonte": "LCNk5e5EiCA#10:09 (prompt a schermo) + #14:45 (conferma nell'output)",
+    "frame": "frame-204.png, frame-296.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-009",
+    "tipo": "regola",
+    "contenuto": "REGOLA 2 del CLAUDE.md: 'ogni proposta generata scrive SEMPRE una nota nuova in proposte/ con data, cliente, importo, stato e link, piu' l'aggiornamento di index.md e log.md. Nessuna proposta senza nota.' Il documento commerciale non e' finito quando esiste il PDF: e' finito quando la memoria ne ha traccia.",
+    "fonte": "LCNk5e5EiCA#10:09 (prompt a schermo) + #14:45",
+    "frame": "frame-204.png, frame-296.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-010",
+    "tipo": "regola",
+    "contenuto": "REGOLA 3 del CLAUDE.md: 'mai leggere o mostrare il contenuto di .env, solo i nomi delle chiavi'. Regola di sicurezza scritta dentro lo schema del cervello, non lasciata al buon senso dell'agente. (L'ultima parola della riga esce dal bordo dello schermo in entrambi i frame: 'chiavi' e' ricostruito per senso.)",
+    "fonte": "LCNk5e5EiCA#10:09 (prompt a schermo) + #14:45",
+    "frame": "frame-204.png, frame-296.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-011",
+    "tipo": "regola",
+    "contenuto": "Regola anti-sovrascrittura dentro l'operazione INGEST: 'Se qualcosa contraddice cio' che gia' sai, segnalalo, non sovrascriverlo in silenzio.' La contraddizione e' un evento da dichiarare, non da risolvere autonomamente.",
+    "fonte": "LCNk5e5EiCA#10:09 (prompt a schermo)",
+    "frame": "frame-204.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-012",
+    "tipo": "file",
+    "contenuto": "Contenuto reale generato dal Prompt 1, letto nell'output di Claude: clienti/_template.md con i campi nome, azienda, email, telefono, contesto, problema, note decisorie, budget, fonte; proposte/_template.md con cliente, data, importo, stato, link, nota; offerta/offerta.md con un listino demo di lead generation a quattro voci (Setup, Starter, Growth, Scale).",
+    "fonte": "LCNk5e5EiCA#14:45",
+    "frame": "frame-296.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-013",
+    "tipo": "metodo",
+    "contenuto": "Dimostrazione A/B eseguita dal vivo: due finestre IDE affiancate, ognuna con una sessione Claude Code (bypass permissions attivo). A sinistra il progetto 'Prova No Brain' (cartella vuota), a destra 'Brain-Karpathy' (con .claude, .env, clienti, fonti, offerta, proposte, CLAUDE.md, index.md, log.md). Stesso transcript di call, stessa richiesta ('generami una proposta per questo cliente'), confronto degli output.",
+    "fonte": "LCNk5e5EiCA#6:51-8:52",
+    "frame": "frame-138.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-014",
+    "tipo": "regola",
+    "contenuto": "La differenza vera tra agente con memoria e agente senza NON e' estetica ma di VERIFICABILITA'. L'agente senza cervello chiude chiedendo all'umano di confermare due scelte che ha inventato lui ('ho messo la stima trimestrale a ~3.000 euro [...] se preferisci non mostrare quel totale stimato, lo tolgo'). L'agente col cervello chiude con una check-list di cinque controlli superati contro un file che esiste: copertina con logo e data OK, tre paragrafi presi dalla call OK, prezzi identici a offerta/offerta.md OK, nessuna opzione pre-evidenziata OK, pagina firma coi campi presenti OK.",
+    "fonte": "LCNk5e5EiCA#8:03 (entrambi gli output letti a schermo)",
+    "frame": "frame-162.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-015",
+    "tipo": "regola",
+    "contenuto": "Ordine di lavoro dichiarato: 'PRIMA DISEGNO IL FLUSSO, POI GENERO'. Il flusso a 4 stadi (LA FONTE -> IL CERVELLO -> PANDADOC -> LA MEMORIA) viene disegnato a mano prima di scrivere una riga di prompt. Post-it sulla slide: 'Il flusso lo disegno io, poi Claude genera' e 'Claude scrive piu' veloce, ma il progetto e' mio'.",
+    "fonte": "LCNk5e5EiCA#11:08-11:20",
+    "frame": "frame-224.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-016",
+    "tipo": "architettura",
+    "contenuto": "Il flusso di business in 4 stadi: 1) LA FONTE - la trascrizione della call entra (in demo copia-incolla, in produzione collegabile a un note-taker tipo Fathom o Fireflies); 2) IL CERVELLO - Claude trasforma la call in note e aggiunge i prezzi letti da offerta.md; 3) PANDADOC - produce il documento firmabile; 4) LA MEMORIA - registra la proposta come nota.",
+    "fonte": "LCNk5e5EiCA#11:08-12:42",
+    "frame": "frame-224.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-017",
+    "tipo": "metodo",
+    "contenuto": "Metodo di integrazione con un'API esterna in tre mosse, dichiarato come 'OGNI PEZZO TESTATO DA SOLO': (1) TESTA IL PEZZO - uno script isolato inspect_template.py che stampa cosa il template si aspetta davvero (ruolo: Client, token: client.name, pricing: Prezzi), perche' 'i nomi nel codice devono combaciare col template'; l'anti-pattern esplicito e' 'indovinare + vibe coding che rompe tutto'. (2) LA SKILL in tre file: pandadoc.py (il client: crea, legge, aspetta la bozza), create_proposal.py (orchestra il tutto), SKILL.md (il comando /genera-proposta).",
+    "fonte": "LCNk5e5EiCA#16:21",
+    "frame": "frame-328.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-018",
+    "tipo": "regola",
+    "contenuto": "IL DETTAGLIO ASINCRONO, isolato come trappola a se' stante nella slide: 'PandaDoc non crea il documento all'istante: risponde uploaded, tu aspetti draft'. La sequenza corretta e' POST /documents -> stato uploaded -> attesa -> stato draft -> solo allora si puo' agire. Anti-pattern dichiarato: 'mandarlo prima = fallisce'.",
+    "fonte": "LCNk5e5EiCA#16:21",
+    "frame": "frame-328.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-019",
+    "tipo": "file",
+    "contenuto": "Struttura reale della skill generata, letta nell'Explorer dell'IDE e coincidente con la slide di architettura: .claude/skills/genera-proposta/ contenente scripts/ (con __pycache__/, create_proposal.py, inspect_template.py, pandadoc.py) e SKILL.md.",
+    "fonte": "LCNk5e5EiCA#17:15",
+    "frame": "frame-345.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-020",
+    "tipo": "prompt",
+    "contenuto": "Clausola anti-allucinazione inserita in coda al Prompt 2, letta a schermo: 'Se una parte di queste istruzioni e' ambigua o sembra contraddittoria, fermati e spiegami il dubbio invece di indovinare. Non aggiungere librerie, file o funzionalita' extra non richieste.' (chiusa dal tag </in_caso_di_dubbio>). Al prompt sono allegati l'URL della dashboard PandaDoc e uno screenshot del template.",
+    "fonte": "LCNk5e5EiCA#16:06",
+    "frame": "frame-323.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-021",
+    "tipo": "definizione",
+    "contenuto": "Definizione di 'skill' data dall'autore: 'la skill non e' altro che un modo di dire a Claude: automatizza questo workflow, perche' gli step sono sempre quelli, e quindi abbiamo automatizzato un piccolo pezzo di processo.'",
+    "fonte": "LCNk5e5EiCA#16:57-17:10",
+    "frame": null,
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-022",
+    "tipo": "numero",
+    "contenuto": "Limiti reali delle due chiavi API PandaDoc, letti integralmente nella pagina Dev Center > Configuration: SANDBOX KEY - gratuita, tutti i documenti includono un prefisso developer, massimo 10 richieste al minuto. PRODUCTION KEY - pieno controllo sui nomi dei documenti, nessun watermark sui PDF, fino a 300 chiamate al minuto, richiede 'Request a demo'. Nella stessa pagina: Webhooks fino a 100 per account. Badge account: 'Trial 14' (14 giorni di prova).",
+    "fonte": "LCNk5e5EiCA#16:03",
+    "frame": "frame-322.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-023",
+    "tipo": "regola",
+    "contenuto": "Conseguenza operativa della chiave sandbox, dichiarata nel Notion dei prerequisiti: 'con la chiave sandbox i documenti escono marcati [DEV] e l'invio a email esterne fallisce con 403. Per una bozza in dashboard basta la sandbox; per l'invio vero serve la chiave production (o un invio a un'email della tua organizzazione).' Questo spiega perche' in tutto il video nessun documento viene realmente inviato a un cliente.",
+    "fonte": "LCNk5e5EiCA#8:54 (Notion letto a schermo)",
+    "frame": "frame-179.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-024",
+    "tipo": "checklist",
+    "contenuto": "Prerequisiti una-tantum del sistema, elencati nel Notion: (1) template PandaDoc gia' pronto nell'account - brandizzato, coi token (nome cliente, azienda, problema, contesto), le opzioni di prezzo come righe opzionali NON preselezionate, valuta EUR, e il pagamento con carta via Stripe se lo si vuole offrire - 'queste cose si impostano in UI, non via API'; (2) la chiave API giusta; (3) una trascrizione di discovery call, anche finta, pronta da mettere in fonti/; (4) Obsidian installato e puntato sulla cartella, per vedere il grafo; (5) .env con PANDADOC_API_KEY e PANDADOC_TEMPLATE_ID, 'mai a schermo'.",
+    "fonte": "LCNk5e5EiCA#8:54 (Notion letto a schermo)",
+    "frame": "frame-179.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-025",
+    "tipo": "regola",
+    "contenuto": "Le opzioni di prezzo nel template PandaDoc vanno configurate come righe opzionali NON preselezionate, e nel documento finale nessuna delle due deve essere pre-evidenziata: e' uno dei cinque controlli che l'agente col cervello dichiara di aver superato. Il testo stampato sul PDF lo rende esplicito al cliente: 'nessuna delle due e' quella giusta, dipende da come vuoi distribuire l'investimento'.",
+    "fonte": "LCNk5e5EiCA#8:03 + #19:06 (PDF letto a schermo)",
+    "frame": "frame-162.png, frame-383.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-026",
+    "tipo": "numero",
+    "contenuto": "Il listino reale usato nella demo, identico su tre fonti indipendenti dentro il video (transcript-fonte, check dell'agente, PDF finale): OPZIONE STANDARD - setup 1.000 euro una tantum (infrastruttura Instantly, estrazione lead Apify, enrichment Claude, scrittura sequenze) + retainer 500 euro/mese per 2 mesi (gestione campagna e report KPI) = 2.000 euro sui tre mesi. OPZIONE PERFORMANCE - setup ridotto a 600 euro + 80 euro per ogni meeting prenotato (stima ~30 meeting a trimestre), 'si paga sul meeting prenotato, mai su quanto chiudi tu'. Pagamento per entrambe: 50% alla firma, 50% a fine campagna.",
+    "fonte": "LCNk5e5EiCA#18:46-19:22 + #8:03 + #19:06",
+    "frame": "frame-387.png, frame-162.png, frame-383.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-027",
+    "tipo": "regola",
+    "contenuto": "PREZZA SUL VALORE, NON SUL COSTO: lo stesso identico agente vale 3.000 euro per l'Azienda A e 15.000 euro per l'Azienda B - 'stesso agente, valore diverso'. Anti-pattern esplicito sulla slide: 'non prezzare a ore'. Chiusura del video: 'nessuna azienda di successo prezza mai al costo'.",
+    "fonte": "LCNk5e5EiCA#19:24 + #24:31-24:45",
+    "frame": "frame-389.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-028",
+    "tipo": "numero",
+    "contenuto": "Il costo di produzione reale di questo tipo di automazione, dichiarato a voce e scritto sulla lavagna: circa 100-200 dollari al mese di abbonamento Claude + circa 59 dollari di PandaDoc + 'un paio di altre cose'. E' proprio la bassezza di questo costo a rendere il cost-based pricing una trappola: 'il costo e' una strategia che vi fara' perdere e vi fara' sempre piu' schiacciare i margini'.",
+    "fonte": "LCNk5e5EiCA#20:28-20:56 (parlato) + #21:00 (lavagna)",
+    "frame": "frame-420.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-029",
+    "tipo": "formula",
+    "contenuto": "PRIMO METODO di value-based pricing, il TEMPO, scritto a mano sulla lavagna: VALORE -> VBP -> TEMPO -> (TEMPO PERSONA PROPOSTA) x (NUMERO PROPOSTE AL MESE). L'autore la qualifica esplicitamente come 'una proxy', non come il calcolo definitivo.",
+    "fonte": "LCNk5e5EiCA#21:13-21:46 (parlato) + #21:30-22:00 (lavagna)",
+    "frame": "frame-430.png, frame-440.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-030",
+    "tipo": "formula",
+    "contenuto": "SECONDO METODO, il ROI - dichiarato come additivo e non alternativo al primo: 'non e' un o, ma e' un e'. Catena scritta a mano sulla lavagna e detta a voce: 10 ore/mese liberate -> in quelle 10 ore la persona prende 2 clienti -> cliente medio 2.500 euro -> 2 x 2.500 = 5.000 euro/mese di upside (+ va aggiunto il valore orario di chi paghi) => l'automazione si prezza intorno ai 6.000 euro/mese. L'autore avverte mentre lo fa: 'facciamo numeri a casissimo' e 'ovviamente molto molto semplificato'.",
+    "fonte": "LCNk5e5EiCA#21:59-23:16 (parlato) + #22:30-24:00 (lavagna)",
+    "frame": "frame-450.png, frame-460.png, frame-480.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-031",
+    "tipo": "numero",
+    "contenuto": "STRUTTURA DI PREZZO ENTRY LEVEL, dalla slide e confermata a voce: SETUP una tantum da 1.000 a 5.000 euro; RETAINER al mese da 500 a 2.000 euro. La slide li marca esplicitamente come 'range indicativi'. A voce l'autore aggiunge la condizione: si parte da questi prezzi 'dopo ovviamente averne fatte un po'', non alla prima automazione.",
+    "fonte": "LCNk5e5EiCA#19:24 (slide) + #23:47-23:59 (parlato)",
+    "frame": "frame-389.png, frame-480.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-032",
+    "tipo": "regola",
+    "contenuto": "QUANDO SERVE UN RETAINER (criterio, non preferenza): quando l'automazione va MANTENUTA perche' deve cambiare forma nel tempo. Esempio dato: aziende che vendono macchinari pesanti su piu' mercati - inglese, italiano, francese, tedesco - dove le proposte devono uscire in lingue diverse e, a seconda del tipo di macchinario, prendere forme diverse. Le quattro sigle EN/IT/FR/DE sono scritte a mano sulla lavagna a 24:27.",
+    "fonte": "LCNk5e5EiCA#24:05-24:31 (parlato) + #24:27 (lavagna)",
+    "frame": "frame-490.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-033",
+    "tipo": "regola",
+    "contenuto": "LE TRE CONDIZIONI perche' il value-based pricing regga, dette subito dopo il calcolo del ROI e prima di qualunque cifra: 'dovete avere un business che ne ha bisogno, dovete avere un mercato che ve lo permette, dovete avere un avatar che e' disposto a pagare'. Aggiunta sulla scalabilita': 'per scalarle non e' poi cosi' semplice come farle one-shot'.",
+    "fonte": "LCNk5e5EiCA#23:16-23:32",
+    "frame": null,
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-034",
+    "tipo": "numero",
+    "contenuto": "L'ordine di grandezza del valore, con la riserva dell'autore incorporata: 'un one day training di 8 ore su AI puo' arrivare a costare 10-15.000. Un'automazione del genere puo' arrivare a costare anche 10.000 euro. Sara' forse la prima che venderete? Assolutamente no.' La cifra del titolo del video e' quindi un tetto teorico dichiarato con riserva, non un prezzo realizzato mostrato in un documento.",
+    "fonte": "LCNk5e5EiCA#19:57-20:16",
+    "frame": null,
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-035",
+    "tipo": "beneficio",
+    "contenuto": "IL BENEFICIO VENDUTO AL CLIENTE, dalla slide: '3 GIORNI -> 1 ORA', con la frase esatta da usare in offerta: 'la proposta pronta appena arriva il lead, la rivedi e premi invia'. Non si vende l'automazione, si vende la compressione del tempo tra call e proposta firmabile.",
+    "fonte": "LCNk5e5EiCA#19:24",
+    "frame": "frame-389.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-036",
+    "tipo": "limite",
+    "contenuto": "Limite del pattern dichiarato dall'autore stesso: 'questa infrastruttura e' molto molto buona per una conoscenza di tipo personale [...] va molto bene se siete un solo founder'. Lo scaling a contesto aziendale (piu' persone che scrivono nello stesso cervello) e' nominato e rinviato a un corso a pagamento nella community, NON dimostrato nel video.",
+    "fonte": "LCNk5e5EiCA#4:33-5:06",
+    "frame": null,
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-037",
+    "tipo": "convenzione",
+    "contenuto": "Convenzione di naming dei file mostrata a disco: le fonti grezze sono nominate con data ISO + slug (2026-07-10-call-rossi-marketing.md), le note di proposta con slug cliente + data (proposte/rossi-marketing-2026-07-23.md). La data nella fonte e' quella dell'evento (la call del 10 luglio), la data nella proposta e' quella della generazione (23 luglio).",
+    "fonte": "LCNk5e5EiCA#18:36 + #8:03",
+    "frame": "frame-373.png, frame-162.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-038",
+    "tipo": "strumento",
+    "contenuto": "Stack di lavoro mostrato: IDE = Google Antigravity (cercato su Google a schermo, descritto come 'agentic development environment [...] designed to orchestrate autonomous artificial intelligence agents'), con Claude Code installato come estensione VS Code di Anthropic dal marketplace Open VSX. L'autore precisa che 'non cambia assolutamente nulla' rispetto alla desktop app di Claude Code. Modalita' di esecuzione usata in tutto il video: 'bypass permissions'.",
+    "fonte": "LCNk5e5EiCA#9:21-10:09",
+    "frame": "frame-188.png, frame-198.png, frame-138.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-039",
+    "tipo": "metodo",
+    "contenuto": "Verifica di coerenza fatta dall'autore in chiusura del test dal vivo: dopo aver generato la proposta, TORNA nel file grezzo dentro fonti/ e confronta i prezzi scritti nella call con quelli finiti sul PDF, dichiarando la corrispondenza. La verifica non e' delegata all'agente: si controlla l'output contro la fonte immutabile.",
+    "fonte": "LCNk5e5EiCA#18:32-19:22",
+    "frame": "frame-387.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-040",
+    "tipo": "contesto",
+    "contenuto": "Cornice commerciale verificata a schermo: agenzia Gentes AI (gentes.ai), headline 'AI Growth Partner for B2C Service Businesses', tre fasi di servizio (Audit - call gratuita 30 minuti; Engineering; Training & Launch) e due linee (Lead Generation: reactivation/ad campaigns/content systems; Voice AI: receptionist/lead qualification/appointment setting). Team a schermo: Giovanni Beggiato CEO Strategy & Systems ('Led AI initiatives at Amazon delivering $4M+ in savings, Won CEO Award, top 2% of employees worldwide'), Jean-Marc Herrada COO ('worked with P&G in Manufacturing and Supply Chain, leading teams of 40 people and $100M projects'). Community Skool 'Avanguardia Plus': 91 membri, 6 online, 2 admin al momento della registrazione.",
+    "fonte": "LCNk5e5EiCA#0:30-0:45 + #4:57",
+    "frame": "frame-011.png, frame-012.png, frame-013.png, frame-014.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-041",
+    "tipo": "limite",
+    "contenuto": "Cosa NON e' dimostrato nel video, verificato frame per frame: (1) nessun documento e' mai stato inviato davvero a un cliente - tutti hanno prefisso [DEV] e restano in stato DRAFT nella dashboard PandaDoc (contatori: Your drafts 1, Waiting for others 0, Finalized 0); (2) il cliente e' dichiaratamente finto; (3) nessun euro incassato e' mostrato; (4) il codice di pandadoc.py / create_proposal.py / inspect_template.py non e' MAI ingrandito a schermo, compaiono solo i nomi dei file; (5) il CLAUDE.md generato non e' mai aperto a schermo - se ne conosce il contenuto solo dal prompt che lo commissiona e dal riassunto che Claude ne fa.",
+    "fonte": "LCNk5e5EiCA#12:57 + #17:15 + #14:45 (verifica incrociata su piu' frame)",
+    "frame": "frame-260.png, frame-345.png, frame-296.png",
+    "confidenza": "osservato"
+  },
+  {
+    "id": "KA-042",
+    "tipo": "cautela",
+    "contenuto": "Cautela di lettura sull'output 'senza cervello': l'autore lo liquida a voce come 'quasi AI slop' e dice che 'non ha nemmeno il nostro logo'. Guardando il frame, l'artifact e' in realta' un documento impaginato con gerarchia tipografica e il nome 'Gentes.AI' presente come testo. Cio' che manca davvero e' il logo IMMAGINE, il template brandizzato e il canale di firma/pagamento. La differenza che il video dimostra davvero e' funzionale (firma + pagamento + nota di memoria + autoverifica sui prezzi), non estetica: il claim 'AI slop' e' retorica dell'autore, non un fatto verificato a schermo.",
+    "fonte": "LCNk5e5EiCA#7:37-8:00 vs frame-155 guardato",
+    "frame": "frame-155.png",
+    "confidenza": "inferito"
+  },
+  {
+    "id": "KA-043",
+    "tipo": "cautela",
+    "contenuto": "Il vault Obsidian personale dell'autore mostrato in Galaxy view riporta '3515 notes' e contiene cartelle (_showcase, areas, code, concepts, data, docs, engine, entities, labs, outputs, projects, scripts, self, sources, workspace, piu' CLAUDE, CONVENTIONS, README) molto piu' articolate delle 4 del Company Brain demo. Il video non lo dichiara, ma la struttura letta a schermo indica che il sistema reale dell'autore e' gia' oltre lo stadio che insegna qui. Testo piccolo: confidenza media sul numero esatto di note.",
+    "fonte": "LCNk5e5EiCA#0:21 + #1:03",
+    "frame": "frame-008.png, frame-022.png",
+    "confidenza": "inferito"
+  }
+]

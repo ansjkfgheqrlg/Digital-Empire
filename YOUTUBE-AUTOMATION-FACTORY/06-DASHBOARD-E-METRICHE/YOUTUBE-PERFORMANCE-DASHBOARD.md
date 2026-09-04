@@ -1,21 +1,21 @@
 # YouTube Automation Factory - Performance Dashboard
 
-- **Ultimo Run ID**: yt-20260904-111630-a011de
-- **Data Aggiornamento**: 2026-09-04 11:16:31
+- **Ultimo Run ID**: yt-20260904-114812-d39ea7
+- **Data Aggiornamento**: 2026-09-04 11:48:12
 - **Canale Target**: Legami d'Amore (`@Legamidiamore`)
 - **Video Replicato**: Pensi che non sia interessata? Guarda prima questo
-- **Idea Script (Fase 3)**: N/D (Fase 3 non raggiunta)
-- **SEO Score Metadati (Fase 5)**: N/D
-- **Stato Fabbrica**: 🔴 BLOCCATA ALLA FASE 3
+- **Idea Script (Fase 3)**: Pensi che TU non le Piaci? Guarda Questo PRIMA di Rinunciare
+- **SEO Score Metadati (Fase 5)**: 100.0
+- **Stato Fabbrica**: 🟡 PARZIALE (fermata alla fase 5, --phase limitato)
 
 ## 📊 Metriche di Esecuzione (esito REALE di questa run)
 | Fase | Componente | Stato | Esito Gate | Criterio |
 |---|---|---|---|---|
 | F1 | Canale target | Completata | 🟢 PASS | Dati reali del canale fisso @dosementale (Cash Cow Index riportato, non bloccante) |
 | F2 | Selezione | Completata | 🟢 PASS | Video maturo (>=24h), non gia' replicato, con velocity >= 3.0x la mediana del canale |
-| F3 | Script | Fallita | 🔴 FAIL | Critic score reale >= 7.5 (motore condiviso 11-APEX-7-CORE) |
-| F4 | Produzione | Non eseguita | ⚪ N/D | Schema produzione-spec valido, scene reali da script.md |
-| F5 | Pubblicazione | Non eseguita | ⚪ N/D | SEO score reale (seo_score.py); upload reale via --upload (opt-in, altrimenti solo preparazione metadati) |
+| F3 | Script | Completata | 🟢 PASS | Critic score reale >= 7.5 (motore condiviso 11-APEX-7-CORE) |
+| F4 | Produzione | Completata | 🟢 PASS | Schema produzione-spec valido, scene reali da script.md |
+| F5 | Pubblicazione | Completata | 🟢 PASS | SEO score reale (seo_score.py); upload reale via --upload (opt-in, altrimenti solo preparazione metadati) |
 | F6 | Audit | Non eseguita | ⚪ N/D | Manifest published_videos.json (video reale pubblicato) |
 
 ## 🧠 Note

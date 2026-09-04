@@ -1,6 +1,6 @@
 {
   "status": "tentativo_fallito",
-  "ts": "2026-08-29T13:05:07",
+  "ts": "2026-09-04T11:47:35",
   "n": 3,
-  "errore": "Locator.click: Target page, context or browser has been closed"
+  "errore": "Locator.count: Target page, context or browser has been closed"
 }

@@ -1,0 +1,83 @@
+{
+  "kind": "single-video",
+  "id": "LCNk5e5EiCA",
+  "title": "Claude Code + Karpathy = Agenti AI da 10.000€",
+  "url": "https://www.youtube.com/watch?v=LCNk5e5EiCA",
+  "duration_sec": 1503,
+  "uploader": "Giovanni Beggiato",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "10,000 AI agents: what we build today"
+    },
+    {
+      "start": 43,
+      "title": "Karpathy's pattern: what an LLM wiki is"
+    },
+    {
+      "start": 119,
+      "title": "The three layers: raw sources, atomic notes, schema"
+    },
+    {
+      "start": 221,
+      "title": "The three AI operations: ingest, query, lint"
+    },
+    {
+      "start": 307,
+      "title": "The structure of the company brain we build"
+    },
+    {
+      "start": 411,
+      "title": "Generic output vs company brain output"
+    },
+    {
+      "start": 533,
+      "title": "Setup: Claude Code and the first prompt"
+    },
+    {
+      "start": 668,
+      "title": "The flow: call, brain, signable document"
+    },
+    {
+      "start": 763,
+      "title": "PandaDoc: template, dynamic variables and signature"
+    },
+    {
+      "start": 910,
+      "title": "Building the proposal generation skill"
+    },
+    {
+      "start": 1047,
+      "title": "Live test: from call transcript to proposal"
+    },
+    {
+      "start": 1162,
+      "title": "How to price: cost based or value based"
+    },
+    {
+      "start": 1261,
+      "title": "Value based pricing: how to calculate the value"
+    },
+    {
+      "start": 1319,
+      "title": "ROI: what the saved time is worth"
+    },
+    {
+      "start": 1424,
+      "title": "Entry level pricing and when you need a retainer"
+    },
+    {
+      "start": 1482,
+      "title": "Wrap up"
+    }
+  ],
+  "subs": [
+    "runs\\max18-v02\\LCNk5e5EiCA.en-US.vtt",
+    "runs\\max18-v02\\LCNk5e5EiCA.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\max18-v02\\LCNk5e5EiCA.webp"
+  ],
+  "ingested_at": "2026-09-04T11:23:28",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=LCNk5e5EiCA"
+}

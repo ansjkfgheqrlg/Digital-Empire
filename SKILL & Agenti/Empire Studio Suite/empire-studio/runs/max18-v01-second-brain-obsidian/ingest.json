@@ -1,0 +1,98 @@
+{
+  "kind": "single-video",
+  "id": "RnoC5IlOUhs",
+  "title": "CORSO COMPLETO SECOND BRAIN 2h: Claude + Obsidian",
+  "url": "https://www.youtube.com/watch?v=RnoC5IlOUhs",
+  "duration_sec": 8330,
+  "uploader": "Giovanni Beggiato",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Introduzione alla Company Brain"
+    },
+    {
+      "start": 300,
+      "title": "ROI e vantaggi competitivi per le aziende"
+    },
+    {
+      "start": 600,
+      "title": "Conoscenza sparsa e costi nascosti"
+    },
+    {
+      "start": 1050,
+      "title": "Costo della conoscenza sparsa, Arbitraggio e Vantaggio competitivo con l'AI"
+    },
+    {
+      "start": 1500,
+      "title": "Demo della Company Brain con 22.000 note"
+    },
+    {
+      "start": 1867,
+      "title": "Installazione e basi di Obsidian"
+    },
+    {
+      "start": 2125,
+      "title": "Wikilink, backlink e ontologia delle note"
+    },
+    {
+      "start": 2922,
+      "title": "Le 11 cartelle della Company Brain"
+    },
+    {
+      "start": 3665,
+      "title": "Tassonomia ed Ontologia nell'AI"
+    },
+    {
+      "start": 3853,
+      "title": "Creazione delle 11 cartelle in Obsidian + Claude"
+    },
+    {
+      "start": 4210,
+      "title": "Canon aziendale e note atomiche"
+    },
+    {
+      "start": 4468,
+      "title": "Costruzione degli Hub (Hub And Spoke) e degli indici"
+    },
+    {
+      "start": 5064,
+      "title": "Problematica dei file orfani in Obsidian (ed il _index)"
+    },
+    {
+      "start": 5365,
+      "title": "Gate di qualità e script di controllo"
+    },
+    {
+      "start": 6039,
+      "title": "GitHub e Google Drive per version control del cervello"
+    },
+    {
+      "start": 6735,
+      "title": "Prompting del cervello, e miglioramento continuo"
+    },
+    {
+      "start": 7080,
+      "title": "Architettura RAG e database vettoriali"
+    },
+    {
+      "start": 7500,
+      "title": "Layer visivo con HTML e Notion"
+    },
+    {
+      "start": 7800,
+      "title": "Memoria viva con sessioni e giornale"
+    },
+    {
+      "start": 8100,
+      "title": "Sistema completo e conclusioni"
+    }
+  ],
+  "subs": [
+    "runs\\max18-v01-second-brain-obsidian\\RnoC5IlOUhs.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\max18-v01-second-brain-obsidian\\RnoC5IlOUhs.webp"
+  ],
+  "ingested_at": "2026-09-04T11:23:56",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=RnoC5IlOUhs"
+}

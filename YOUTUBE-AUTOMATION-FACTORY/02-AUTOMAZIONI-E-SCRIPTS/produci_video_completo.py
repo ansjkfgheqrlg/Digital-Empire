@@ -223,7 +223,8 @@ def preflight(lavoro: dict | None, motivo: str, salta_copertina: bool, salta_vid
         ok = False
 
     if salta_copertina:
-        print("[–] Copertina saltata su richiesta (--salta-copertina)")
+        print("[–] Copertina: la fa Max a mano (default). Lo script si ferma al video "
+              "e consegna cartella + titolo + indicazioni.")
     else:
         try:
             import playwright  # noqa: F401
@@ -285,11 +286,25 @@ def main() -> int:
                          "Default: quello della voce in coda / canale_predefinito.")
     ap.add_argument("--video-sorgente", default=None,
                     help="URL o videoId da replicare, invece del prossimo lavoro in coda.")
-    ap.add_argument("--salta-copertina", action="store_true", help="Non generare la copertina.")
+    ap.add_argument("--salta-copertina", action="store_true",
+                    help="(ormai ridondante) Non generare la copertina. E' gia' il comportamento "
+                         "di default: la copertina la fa Max a mano.")
+    ap.add_argument("--con-copertina", action="store_true",
+                    help="ORDINE ESPLICITO DI MAX RICHIESTO. Genera la copertina via Arena. "
+                         "REGOLA PERMANENTE (Max, 2026-08-29 e ribadita 2026-09-04): la copertina "
+                         "la fa SEMPRE Max a mano, mai la macchina. Il compito dello script e' "
+                         "fermarsi al video e consegnare cartella + titolo + due righe di indicazioni.")
     ap.add_argument("--salta-video", action="store_true", help="Non generare il video (niente crediti Fliki).")
     ap.add_argument("--visuals", choices=["ai", "stock"], default="ai",
                     help="Passato a fliki_client.py (default: ai, come in produzione).")
     args = ap.parse_args()
+
+    # REGOLA PERMANENTE DI MAX: la copertina la fa lui, a mano. Il default e' quindi
+    # "niente Arena", e per generarla serve un ordine esplicito (--con-copertina).
+    # Prima questo era invertito e la macchina ci provava da sola: e' stato un errore
+    # ripetuto, corretto qui alla radice invece che nella memoria di chi lancia lo script.
+    if not args.con_copertina:
+        args.salta_copertina = True
 
     print(f"🏭 YouTube Automation Factory — produzione completa · {time.strftime('%Y-%m-%d %H:%M:%S')}")
     lavoro, motivo = scegli_lavoro(args.canale, args.video_sorgente)
