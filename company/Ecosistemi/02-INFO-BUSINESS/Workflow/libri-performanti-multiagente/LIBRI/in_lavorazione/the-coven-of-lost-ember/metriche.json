@@ -8,6 +8,25 @@
       "autore": "Maren Ashcroft",
       "da_piano": true,
       "giorno": 3
+    },
+    {
+      "quando": "2026-09-04T11:05:50",
+      "cosa": "blocco",
+      "esito": "bocciato",
+      "capitoli": 8,
+      "parole": 11092,
+      "media_per_capitolo": 1386,
+      "motivi": [
+        "a 1386 parole/capitolo il libro chiude a 33264 parole: 3536 sotto il minimo di 36800. Il bersaglio e' 1600 parole/capitolo (38400 totali, in mezzo alla finestra). Allunga QUESTI capitoli adesso, non i prossimi."
+      ]
+    },
+    {
+      "quando": "2026-09-04T11:08:28",
+      "cosa": "blocco",
+      "esito": "ok",
+      "capitoli": 8,
+      "parole": 12787,
+      "media_per_capitolo": 1598
     }
   ]
 }
