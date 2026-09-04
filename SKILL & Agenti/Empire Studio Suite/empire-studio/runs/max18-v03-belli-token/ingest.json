@@ -1,0 +1,98 @@
+{
+  "kind": "single-video",
+  "id": "1Dyld3y-V7Y",
+  "title": "Dammi 36 Minuti e Ti Farò Risparmiare MILIONI di Token su Claude",
+  "url": "https://www.youtube.com/watch?v=1Dyld3y-V7Y",
+  "duration_sec": 2161,
+  "uploader": "Riccardo Belli Contarini",
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Introduzione"
+    },
+    {
+      "start": 96,
+      "title": "Gli strumenti di misurazione: /context, /usage, status line"
+    },
+    {
+      "start": 272,
+      "title": "clear ad ogni cambio di task"
+    },
+    {
+      "start": 319,
+      "title": "Modello ed effort si scelgono solo all'inizio"
+    },
+    {
+      "start": 367,
+      "title": "Perché /compact è un errore"
+    },
+    {
+      "start": 473,
+      "title": "rewind e il file di hand-off al posto del compact"
+    },
+    {
+      "start": 699,
+      "title": "Il diagramma ASCII prima di costruire qualsiasi cosa di grafico"
+    },
+    {
+      "start": 815,
+      "title": "Spegni gli MCP che non usi"
+    },
+    {
+      "start": 841,
+      "title": "Il CLAUDE.md trattato come un indice"
+    },
+    {
+      "start": 917,
+      "title": "Un CLAUDE.md per ogni cartella"
+    },
+    {
+      "start": 1005,
+      "title": "Archivia le skill inutilizzate e accorcia le descrizioni"
+    },
+    {
+      "start": 1070,
+      "title": "L'hook che estrae il testo dai PDF"
+    },
+    {
+      "start": 1217,
+      "title": "Quale modello scegliere in base al task"
+    },
+    {
+      "start": 1347,
+      "title": "Controlla hook e task schedulati dimenticati"
+    },
+    {
+      "start": 1408,
+      "title": "Cose da non fare: screenshot, prompt troppo corti, tool fuffa"
+    },
+    {
+      "start": 1458,
+      "title": "Usa l'output style invece dei \"compressori\" di contesto"
+    },
+    {
+      "start": 1492,
+      "title": "CLI invece di MCP"
+    },
+    {
+      "start": 1771,
+      "title": "CodeGraph e Graphify per i grafi di conoscenza"
+    },
+    {
+      "start": 1843,
+      "title": "Trasforma in codice ciò che è ripetibile"
+    },
+    {
+      "start": 1994,
+      "title": "Sottoagenti: quando usarli e i sottoagenti Haiku"
+    }
+  ],
+  "subs": [
+    "runs\\max18-v03-belli-token\\1Dyld3y-V7Y.it.vtt"
+  ],
+  "thumbnails": [
+    "runs\\max18-v03-belli-token\\1Dyld3y-V7Y.webp"
+  ],
+  "ingested_at": "2026-09-04T11:56:51",
+  "trace": "yt-dlp ingest of https://www.youtube.com/watch?v=1Dyld3y-V7Y"
+}
