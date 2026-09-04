@@ -9014,3 +9014,19 @@ dei fatti contro la fonte (`script-writer` §8), sorgenti in altre lingue col co
 
 **RIPRESA DA:** A4/L04 «Editing Video Automatico con AI All in One» (`47e15a85`, 30:34, già
 trascritta) — tocca il terreno di Fliki e del `video-producer`.
+
+### 🛑 PAUSA DICHIARATA — 2026-09-05, ordine di Max: «per oggi basta»
+
+Tutto salvato e pushato (`64ab63c1`). Nessun processo lasciato acceso: il nastro
+`corso_prepara.py` non è più in esecuzione. Stato del materiale già a casa, verificato uno
+per uno con ffprobe:
+
+- **8 lezioni pronte** (video + parlato, durata verificata), di cui 4 già studiate;
+- **1 lezione sospetta** — `1f659f44` («18 Tecniche Avanzate del Metodo Copia e Incolla»):
+  dichiara 1.122 s, il file scaricato ne dura 1.595. **È lo stesso webinar di vendita** che
+  aveva inquinato L02: il controllo nuovo l'ha fermata da solo, in produzione, senza che
+  nessuno guardasse. Va riscaricata prima di studiarla, non forzata;
+- **1 lezione fallita** — `8be966ce` («Montaggio Video Pro con Premiere Pro»): scaricamento
+  non riuscito, da rilanciare.
+
+Il blocco ⚠️ COORDINAMENTO più sopra **resta valido**: il perimetro dello studio è ancora mio.
