@@ -71,3 +71,36 @@ video che nessuno guarda.** Non firmare mai per riempire il calendario.
 Scrive `DEC-video-NNN` via `memory-keeper` con: video scelto, velocity reale, i 5 criteri con
 esito, gli scartati e il perché. Se scarta **tutti**, lo scrive lo stesso: serve al
 `self-improver` per capire se la nicchia si sta esaurendo.
+
+---
+
+## 8. Sorgenti in un'altra lingua (A4-L02-04 · imparata dallo studio, 2026-09-05)
+
+Un video sorgente **non italiano** è ammesso, ed è anzi un pozzo dove i concorrenti italiani non
+pescano: il transcript si scarica come sempre e la riscrittura in italiano avviene nello stesso
+passaggio della traduzione.
+
+**Ma va dichiarato, perché disattiva il nostro controllo principale.** `verifica_originalita`
+(`regolatori.py:153-178`) misura le sequenze di parole condivise con la fonte. Fra due lingue
+diverse quelle sequenze sono **sempre zero**, e lo dice il codice stesso alle righe 156-158:
+*«se il video sorgente è in inglese e il nostro in italiano, la sovrapposizione letterale sarà
+sempre zero e NON è una prova di originalità»*.
+
+Quindi, quando firmi un candidato in un'altra lingua:
+
+1. **Scrivilo nel pacchetto**, in chiaro: `lingua sorgente: <lingua>` — chi legge il verdetto di
+   originalità deve sapere che quel verde non vale.
+2. **Pretendi il controllo semantico**: `capo-copy` legge fonte e script affiancati e dichiara se
+   la struttura è ricalcata (stesso ordine di argomenti, stessi esempi, stesse transizioni). Una
+   traduzione riorganizzata resta una traduzione.
+3. **Pretendi le fonti esterne** (`transcript-collector` §8): su una sorgente in un'altra lingua
+   sono il modo più solido di rendere il pezzo nostro, perché portano materiale che nella fonte
+   non c'è.
+4. **Verifica i nomi propri due volte**: la traduzione automatica traslittera e storpia i nomi
+   stranieri più di quanto sbagli sulle frasi.
+
+Non apre da sola nuove sorgenti: l'estensione del pool a canali non italiani è una decisione di
+`capo-strategia` (si lega alla leva multilingua, §8 di quella scheda). Questa regola dice **come**
+si lavora se e quando quella decisione arriva.
+
+Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L02-riscrivere-testi/`.

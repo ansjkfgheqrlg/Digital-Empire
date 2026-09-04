@@ -1,3 +1,23 @@
+## 🟠 2026-09-05 — IL RECAP HA UNA FORMA SOLA: automodifica della dottrina — CP-20260905-002
+
+**Codice di ripresa: EMP-RCAP.** Ordine diretto di Max: *"li dai sempre in modo diverso"*.
+Il contenuto del battito era gia' giusto, la forma no — e un battito che cambia veste va
+riletto invece che scorso. Da adesso lo schema e' **unico e non negoziabile**:
+
+    **⏱️ RECAP — <n>%**   (grassetto, riga vuota sotto)
+    🟠 **Fatto:** / 🟠 **Sto facendo:** / 🟠 **Farò:** / 🟠 **Forze:** / 🟠 **Assetto:** / 🟠 **Potere:**
+
+Sei voci sempre tutte e in quest'ordine, pallino arancione (`#fb4604`, il colore dell'Impero)
+davanti a ognuna, `GOD EMPEROR DOOM` in grassetto, testo dopo l'etichetta su una riga sola.
+
+Innestata in **entrambi** i posti (lezione del 2026-09-02: la dottrina da sola non basta):
+`.claude/agents/emperator.md` §6.11 con blocco normativo + i due template riscritti, e
+`scripts/emperator_hook.py` con il blocco `FORMA DEL RECAP` nella sveglia per messaggio
+(2.216 → 2.743 caratteri). Verificato per esecuzione, non a occhio.
+
+Quarta falla della stessa famiglia (posizione → non-interruzione → lingua → forma): conferma
+che una regola sopravvive solo se dice **cosa, dove, quando e come**.
+
 ## 🎬 2026-09-05 — HIGGSFIELD + ELEVENLABS: studio chiuso, piano approvato, mese di prova definito — CP-20260905-001
 
 **Codice di ripresa: EMP-HGFD.** Dossier: `PIANO-MAESTRO/28-DOSSIER-HIGGSFIELD-ELEVENLABS.md`
@@ -8966,3 +8986,31 @@ il pacchetto conta le parole, dichiara BASTA/NON BASTA e sotto soglia pretende �
 **Il nastro gira:** `corso_prepara.py` ha già pronto e trascritto 6 lezioni di A4.
 **Stato studio: 2/167 (1,2%) · categoria A4: 2/21 (9,5%).**
 **RIPRESA DA:** A4/L02 «Scrivere e (ri)scrivere testi originali con A.I» (`81e4e28a`, pronta).
+
+## 2026-09-05 — A4/L02 e A4/L03 chiuse + il nastro riparato (CP-20260905-009)
+
+**Studio AI TUBE PRO (EMP-V6DE): 4 lezioni su 167 (2,4%), categoria A4 al 19,0% (4/21).**
+Registro: **15 regole, tutte a norma, 13 applicate, 2 in attesa del gate A4** (binario B).
+
+**Il guasto grosso, riparato:** il nastro portava a casa **il video sbagliato**. La lezione L02
+è arrivata due volte con un altro video (l'intro di un altro modulo da 119 s, poi un webinar di
+vendita da 1.595 s) contro i 935 s dichiarati, e risultava «pronta». Cause: la durata veniva
+letta prendendo il massimo dei `mm:ss` della pagina (spesso di un'altra lezione) e il flusso
+veniva preso a caso fra i lettori della pagina. Ora la durata si chiede al lettore vero, **i
+flussi candidati si misurano con ffprobe prima di scaricare** (7 candidati, scelto il 927 s
+contro 935 attesi) e il file scaricato si verifica: fuori tolleranza → `1-sospetto`, e non si
+trascrive. Le altre 6 lezioni già a casa: ricontrollate una per una, tutte corrette.
+
+**Il buco più grave trovato nella fabbrica (L02):** sappiamo misurare se un testo è **copiato**,
+non abbiamo niente che dica se è ancora **vero** (`grep` su tutta la fabbrica: zero controlli dei
+fatti). Tappato a mano in `script-writer` §8; il rimedio vero è un regolatore dei fatti → **B-056**,
+si apre con un ADR.
+
+**Applicato oggi (binario A):** divieto di impersonare testate (`regolatore-copy` §8), rilettura
+dei fatti contro la fonte (`script-writer` §8), sorgenti in altre lingue col controllo semantico
+(`capo-ricerca` §8), catalogo `comandi-riscrittura.md`, criteri e obbligo di fissare la voce
+(`voice-caster` §8), `lessico-pronuncia.md` vivo + `qa-audio-video` §8, caso TTS in
+`scelta-strumenti.md`.
+
+**RIPRESA DA:** A4/L04 «Editing Video Automatico con AI All in One» (`47e15a85`, 30:34, già
+trascritta) — tocca il terreno di Fliki e del `video-producer`.

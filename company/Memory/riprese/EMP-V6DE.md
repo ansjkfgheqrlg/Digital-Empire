@@ -33,7 +33,12 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 - **Lezione A4/L00 chiusa end-to-end** (commit `6f56588b`): appunti, report a sei voci,
   3 regole estratte **e già applicate** alla fabbrica, riverificate 3/3, test 11/11 verdi.
 - **Lezione A4/L01 chiusa end-to-end** (CP-20260904-008): 4 regole, 3 applicate (binario A),
-  1 in attesa del gate A4. **Registro: 7 regole, tutte a norma, 6/7 applicate.**
+  1 in attesa del gate A4.
+- **Lezioni A4/L02 e A4/L03 chiuse** (CP-20260905-009): 8 regole, 6 applicate.
+  **Registro: 15 regole, tutte a norma, 13 applicate, 2 in attesa del gate A4 (binario B).**
+- **Ingestione riparata**: portava a casa il video sbagliato (L02 arrivata due volte con un altro
+  video). Ora la durata si chiede al lettore vero, i flussi si misurano con ffprobe PRIMA di
+  scaricare, e un file fuori tolleranza diventa `1-sospetto` e non si trascrive.
 - **Il nastro gira**: `corso_prepara.py` lanciato il 2026-09-04 alle 21:48 ha già scaricato e
   trascritto **6 lezioni** di A4. Non va rilanciato: guarda `runs/corso-aitubepro/*/stato.json`.
 
@@ -47,7 +52,8 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 
 ## 3. COSA È RIMASTO A METÀ
 
-- **165 lezioni su 167 da studiare** (1,2% fatto). Fatte `A4/L00` e `A4/L01`; A4 al 9,5% (2/21).
+- **163 lezioni su 167 da studiare** (2,4% fatto). Fatte `A4/L00`, `L01`, `L02`, `L03`;
+  A4 al 19,0% (4/21).
 - `corso_prepara.py` **eseguito il 2026-09-04**: 6 lezioni di A4 già pronte a nastro.
 - **DURATE.md non esiste**: il censimento delle durate previsto dal piano non è stato fatto
   (la durata si legge lezione per lezione durante lo scaricamento, e finisce in `stato.json`).
@@ -55,8 +61,9 @@ eseguibili** applicate alla `YOUTUBE-AUTOMATION-FACTORY`. Piano approvato da Max
 
 ## 4. IL PROSSIMO PASSO ESATTO
 
-**A4/L02 «Scrivere e (ri)scrivere testi originali con A.I»** (`81e4e28a`, già trascritta): è la
-lezione che chiude il cerchio aperto da L01 e riguarda `script-writer` e `regolatore-originalita`.
+**A4/L04 «Editing Video Automatico con AI All in One»** (`47e15a85`, 30:34, già trascritta,
+4.190 parole): è la lezione dello strumento all-in-one, tocca il terreno di Fliki e del
+`video-producer`.
 
 ```bash
 cd "SKILL & Agenti/Empire Studio Suite/empire-studio/scripts"
@@ -90,6 +97,10 @@ B1 Masterclass 2026 (7) → B2 Crypto (10) → poi le altre.
 
 ## 6. TRAPPOLE — errori già fatti, non rifarli
 
+- **Il portale serve anche video che NON sono la lezione** (promo, webinar di vendita). Il
+  2026-09-04 la lezione `81e4e28a` e' arrivata a casa due volte col video sbagliato. La difesa
+  e' gia' nel codice — durata dal lettore, flussi misurati con ffprobe prima di scaricare, stato
+  `1-sospetto` — ma se una lezione risulta sospetta **non forzarla**: si riscarica.
 - **Non fidarsi dell'elenco di `scene_detector.py` su una lezione operativa.** Il 2026-09-04 ha
   dichiarato «schermo fermo per 96 secondi» mentre passavano cinque schermate diverse, fra cui il
   secondo strumento della lezione: la miniatura in scala di grigi confonde le pagine a fondo

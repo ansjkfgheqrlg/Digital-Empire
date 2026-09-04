@@ -58,3 +58,44 @@ Regole di struttura:
 
 ## 7. Memory
 Segna nello `CP` di fase quale hook-type è stato usato e quali errori corretti (serve al `performance-auditor` per il confronto post-pubblicazione).
+
+---
+
+## 8. I fatti presi dalla sorgente (A4-L02-02 · imparata dallo studio, 2026-09-05)
+
+**Il buco che questa regola chiude, misurato il 2026-09-05:** cercato su tutta la fabbrica
+(`grep -ril` su ogni `.md` e `.py`) *verifica dei fatti*, *fact-check*, *controllo dei fatti*:
+**zero risultati**. Abbiamo un regolatore che misura se il testo è **troppo simile** alla fonte
+(`regolatori.py:153`, n-grammi). **Non ne abbiamo nessuno che dica se è ancora vero.**
+
+Riscrivere «con parole proprie» è esattamente l'operazione durante la quale una data si sposta,
+un'età cambia, una frase viene attribuita a chi non l'ha detta. Il regolatore dell'originalità,
+davanti a un fatto storpiato, dà **via libera**: meno somiglianza, meno n-grammi condivisi.
+
+### Cosa fare, prima di consegnare lo script
+
+Estrai dalla fonte l'elenco dei fatti che hai riportato, e rileggili **uno per uno contro la
+fonte**. Sono cinque famiglie:
+
+| famiglia | esempi | errore tipico del modello |
+|---|---|---|
+| **nomi propri** | persone, luoghi, aziende, opere | nome giusto, cognome sbagliato; nomi fusi |
+| **date e durate** | anni, giorni, «da 50 anni» | anno spostato di uno, «ieri» che diventa «oggi» |
+| **cifre** | età, prezzi, quantità, percentuali | arrotondamenti inventati |
+| **citazioni fra virgolette** | dichiarazioni | parole riscritte *dentro* le virgolette, o attribuite a un'altra persona |
+| **relazioni** | «il figlio di», «la moglie di», ruoli | parentele e ruoli scambiati |
+
+**Regola dura sulle virgolette:** una citazione o è **identica** alla fonte, o non sta fra
+virgolette. Non esiste una citazione «riscritta con parole proprie».
+
+**Se un fatto non è verificabile nella fonte, si toglie.** Un testo più corto e vero batte un
+testo più lungo e incerto — e le parole che mancano si recuperano dalle fonti esterne
+(`transcript-collector` §8), mai inventandole.
+
+Nel consegnare lo script dichiara: **quanti fatti hai riverificato e quanti ne hai tolti.**
+
+> **Debito dichiarato:** il controllo giusto sarebbe un regolatore automatico dei fatti, gemello
+> di quello dell'originalità. È un organo nuovo dell'architettura e si apre con un ADR, non
+> dentro una lezione: annotato in `BACKLOG.md`. Finché non esiste, questo controllo è tuo.
+
+Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L02-riscrivere-testi/`.

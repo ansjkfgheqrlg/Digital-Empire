@@ -75,3 +75,29 @@ scrive: va segnalato al `self-improver`, non corretto un testo alla volta.
 ## Connessioni
 - [[capo-copy]] — firma i testi, questo regolatore ne è la condizione
 - [[copy-researcher]] — mantiene lo studio su cui si basa la verifica 2
+
+---
+
+## 8. Divieto di impersonare (A4-L02-01 · imparata dallo studio, 2026-09-05)
+
+**Causa di BLOCCO, senza discussione:** un testo non può presentarsi come una testata, un ente o
+un giornalista reale che non siamo.
+
+Vale in tre punti della catena, non solo nel testo finito:
+1. **nel testo pubblicato** — mai «come vi racconta la RAI», mai la firma di un giornale;
+2. **nel comando dato al modello** — un «scrivi come se fossi un giornalista del Corriere»
+   produce un testo che imita quel registro *e* quella pretesa di autorità: si scrive
+   «con tono giornalistico», che è un'altra cosa;
+3. **nelle citazioni** — riportare che *«il Corriere scrive che…»* è lecito solo se il Corriere
+   lo scrive davvero e il link è nelle fonti. Attribuire una frase a una testata è una
+   dichiarazione di fatto, non uno stile.
+
+Da dove viene questa regola: nella lezione A4/L02 il comando «scrivimi questo testo come se fosse
+un giornalista **RAI**» viene dato due volte, e ritirato dodici secondi dopo dall'autore stesso
+(«non possiamo dire che siamo la RAI, perché non lo siamo»). Il buon senso è arrivato — con
+dodici secondi di ritardo. Qui non aspettiamo il buon senso: è scritto.
+
+**Cosa NON è vietato:** il registro giornalistico, il tono da telegiornale, la struttura della
+notizia. È vietato il **nome** di qualcun altro.
+
+Fonte: `company/Memory/studi/aitubepro/A4-metodo-ai-tube/L02-riscrivere-testi/`.
