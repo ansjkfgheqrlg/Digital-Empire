@@ -330,10 +330,13 @@ def consegna_a_max(mp4: str, titolo: str, lavoro: dict) -> str | None:
         "## Tags",
         ", ".join(tags),
         "",
-        "## Copertina - LA FA MAX",
-        "Il file .png della copertina va messo dentro questa stessa cartella.",
-        'Titolo che deve leggersi nella copertina: "%s"' % titolo_finale,
-        "Formato 16:9, testo grande e leggibile anche in miniatura piccola.",
+        "## Copertina - LA FA MAX (brief completo, da consegnare SEMPRE senza che lo chieda)",
+        "",
+        '**Titolo:** "%s"' % titolo_finale,
+        "**Formato:** 16:9, stampo Legami d'Amore, testo oro/ambra.",
+        "**Leggibilita':** il titolo deve leggersi anche in miniatura piccola.",
+        "**Dove:** il file .png va messo dentro questa stessa cartella.",
+        "**Dopo:** upload in privato con le pubblicita' attive.",
         "",
         "## Upload",
         "Quando la copertina e' in cartella, l'upload parte con:",
@@ -349,8 +352,13 @@ def consegna_a_max(mp4: str, titolo: str, lavoro: dict) -> str | None:
     print("=" * 70)
     print("  Cartella:  %s" % dest)
     print("  Dentro:    video.mp4 - copy.md - metadata.json")
-    print("  Manca:     LA COPERTINA (la fa Max, va messa in questa cartella)")
+    print("")
+    print("  --- BRIEF COPERTINA PER MAX (la fa lui, sempre) ---")
     print("  Titolo:    %s" % titolo_finale)
+    print("  Formato:   16:9, stampo Legami d'Amore, testo oro/ambra")
+    print("  Leggibile: il titolo deve leggersi anche in miniatura piccola")
+    print("  Dove:      il .png va messo in questa stessa cartella")
+    print("  Poi:       avvisa e parte l'upload in privato con le pubblicita' attive")
     try:
         subprocess.Popen(["explorer", dest])
     except OSError:

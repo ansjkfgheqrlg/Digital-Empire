@@ -105,6 +105,25 @@ def _gestisci_step_monetization(page):
             _dump_step_monetization(page, "opzione-non-trovata")
             return False
 
+    page.wait_for_timeout(1500)
+
+    # Il menu a tendina va CHIUSO con "Done": finche' resta aperto, il pulsante Next del
+    # wizard rimane disabilitato e lo step non risulta compilato. Verificato dallo screenshot
+    # diagnostico del 2026-09-04: radio "On" gia' selezionato, menu ancora aperto, Next grigio.
+    # Senza questa conferma con Done, scegliere l'opzione non serve a niente.
+    for etichetta in ("Done", "Fine", "Salva", "Save"):
+        try:
+            btn = page.get_by_text(etichetta, exact=True).first
+            if btn.count() > 0 and btn.is_visible():
+                btn.click(timeout=4000)
+                print("[MONETIZZAZIONE] Menu confermato con '%s'." % etichetta)
+                break
+        except Exception:
+            continue
+    else:
+        print("[MONETIZZAZIONE] Nessun pulsante di conferma trovato: il menu resta aperto.")
+        _dump_step_monetization(page, "done-non-trovato")
+
     page.wait_for_timeout(1800)
 
     # Scelto "On", Studio chiede l'autocertificazione sui contenuti. Per i video di questo
@@ -148,6 +167,59 @@ def _dump_step_monetization(page, motivo="generico"):
         print("[MONETIZZAZIONE] DOM salvato (%s): %s" % (motivo, os.path.abspath(out)))
     except OSError as e:
         print("[MONETIZZAZIONE] Salvataggio DOM fallito: %s" % e)
+
+
+def _id_dalla_lista_contenuti(page, titolo):
+    """Recupera l'id di un video appena caricato cercandolo per titolo nella lista contenuti.
+
+    Serve perche' dopo il Save, Studio non sempre redirige a /video/<id>/edit: il 2026-09-04
+    l'upload e' andato a buon fine ma l'URL era ancora quello del canale, quindi l'id restava
+    None -> ads_on_after_upload() non partiva -> VIDEO SENZA PUBBLICITA'. E' lo stesso identico
+    modo in cui 3 video pubblici erano rimasti a guadagno zero senza che nessuno se ne accorgesse.
+    Qui l'id si legge dall'href della riga: il click sul titolo viene intercettato da un overlay
+    della lista, l'attributo no.
+    """
+    import re as _re
+    try:
+        url = page.url
+        if "/channel/" not in url:
+            page.goto("https://studio.youtube.com", wait_until="domcontentloaded", timeout=45000)
+            page.wait_for_timeout(3000)
+            url = page.url
+        if "/channel/" not in url:
+            return None
+        cid = url.split("/channel/")[1].split("/")[0]
+        page.goto("https://studio.youtube.com/channel/%s/videos/upload" % cid,
+                  wait_until="domcontentloaded", timeout=45000)
+        page.wait_for_timeout(5000)
+    except Exception as e:
+        print("[ID] Lista contenuti non raggiungibile: %s" % e)
+        return None
+
+    ago = (titolo or "")[:40].lower()
+    righe = page.locator("ytcp-video-row")
+    try:
+        n = righe.count()
+    except Exception:
+        return None
+    for i in range(min(n, 15)):
+        try:
+            if ago and ago not in righe.nth(i).inner_text(timeout=4000).lower():
+                continue
+        except Exception:
+            continue
+        for sel in ('a[href*="/video/"]', "a#video-title", "a#thumbnail-container"):
+            try:
+                loc = righe.nth(i).locator(sel).first
+                if loc.count() > 0:
+                    href = loc.get_attribute("href") or ""
+                    m = _re.search(r"/video/([\w-]+)", href)
+                    if m:
+                        print("[ID] Recuperato dalla lista contenuti: %s" % m.group(1))
+                        return m.group(1)
+            except Exception:
+                continue
+    return None
 
 
 def ads_on_after_upload(page, video_id):
@@ -420,6 +492,10 @@ def upload_via_playwright(video_path, metadata, thumbnail_path, user_data_dir):
                 pass  # se il redirect non arriva in tempo, si prova comunque a leggere l'URL corrente
             match = re.search(r"/video/([\w-]+)/", page.url)
             video_id = match.group(1) if match else None
+            if not video_id:
+                # Ripiego: l'id si trova comunque nella lista contenuti. Senza questo, un
+                # redirect mancato basta a lasciare il video senza pubblicita' (vedi sotto).
+                video_id = _id_dalla_lista_contenuti(page, metadata.get("title", ""))
             video_url = f"https://www.youtube.com/watch?v={video_id}" if video_id else None
 
             # REGOLA PERMANENTE di Max (2026-09-03, GRAVISSIMA): ogni video deve guadagnare.

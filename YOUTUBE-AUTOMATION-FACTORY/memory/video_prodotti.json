@@ -36,12 +36,30 @@
     "source_video_id": "chVKOBlEpDI",
     "titolo_nostro": "Pensi che TU non le Piaci? Guarda Questo PRIMA di Rinunciare",
     "file": "pensi-che-tu-non-le-piaci-guarda-questo-prima-di-rinunciare.mp4",
-    "prodotto_il": "2026-09-04T12:18:26"
+    "prodotto_il": "2026-09-04T12:18:26",
+    "youtube_id": "RUg6TgSd79s",
+    "youtube_url": "https://www.youtube.com/watch?v=RUg6TgSd79s",
+    "visibilita": "privato",
+    "pubblicita": "attive",
+    "cartella_consegna": "video-06"
   },
   {
     "source_video_id": "qHB80wbamBI",
     "titolo_nostro": "4 Segnali Che Lei Ti Desidera In Segreto (E Che Quasi Nessun Uomo Nota)",
     "file": "4-segnali-che-lei-ti-desidera-in-segreto-e-che-quasi-nessun.mp4",
-    "prodotto_il": "2026-09-04T14:37:19"
+    "prodotto_il": "2026-09-04T14:37:19",
+    "youtube_id": "QwtZ2e2MY1c",
+    "youtube_url": "https://www.youtube.com/watch?v=QwtZ2e2MY1c",
+    "visibilita": "privato",
+    "pubblicita": "attive",
+    "cartella_consegna": "video-07"
+  },
+  {
+    "source_video_id": "XABjAjqfUxw",
+    "titolo_nostro": "Il Trucco Psicologico Che Rende Un Uomo Irresistibile Fin Dal Primo Sguardo",
+    "file": "il-trucco-psicologico-che-rende-un-uomo-irresistibile-fin-da.mp4",
+    "prodotto_il": "2026-09-04T15:02:00",
+    "cartella_consegna": "video-08",
+    "nota": "Generazione Fliki riuscita ma polling caduto per rete (3 timeout su api.fliki.ai): job riagganciato con fliki_poll_only.py, nessun credito speso due volte. In attesa della copertina di Max."
   }
 ]

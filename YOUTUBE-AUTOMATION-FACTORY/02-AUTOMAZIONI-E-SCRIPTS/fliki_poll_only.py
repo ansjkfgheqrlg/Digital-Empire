@@ -75,6 +75,11 @@ def main(file_id: str, out_name: str, max_wait_s: int = 3600):
         print(f"[status] {status} (progress={res.get('progress')}, {waited}s trascorsi)", flush=True)
         if status == "success":
             download = res["download"]
+            # Il nome arriva senza estensione (fliki_client.py la aggiunge da se'):
+            # senza questa riga il file finiva sul disco come "nome" invece di "nome.mp4"
+            # e nessuno script a valle lo trovava (successo il 2026-09-04 su XABjAjqfUxw).
+            if not out_name.lower().endswith(".mp4"):
+                out_name += ".mp4"
             out_path = os.path.join(VIDEOS_DIR, out_name)
             r2 = urllib.request.Request(download, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(r2, timeout=120) as resp2:
